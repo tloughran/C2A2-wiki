@@ -2509,15 +2509,68 @@ var VoiceGuide = (function() {
   // circles, which is why every other tab was a dead end for "show me the
   // cards". A tab now DECLARES its items, so walking and reading work anywhere
   // -- adding a tab is a few selectors, not a subsystem.
-  function itemSpec() { var am = activeManifest(); return (am && am.m.items) || null; }
+  // A tab's `items` may be ONE spec or a LIST of them, because on several tabs
+  // what is walkable depends on which sub-view is showing: Community Explorer
+  // is a graph under one sub-tab and a card grid under the other, and they are
+  // not the same roster. Each spec may carry `when`, and the first whose
+  // predicate holds wins; a spec with no `when` is the fallback. Declaring the
+  // condition keeps "which roster" a data question -- the alternative is a
+  // per-tab branch in here, which is the bespoke work the item model exists to
+  // avoid.
+  function specWhen(sp) {
+    if (!sp.when) { return true; }
+    var d = ifDoc(); if (!d) { return false; }
+    if (sp.when.active) { var a = d.querySelector(sp.when.active); return !!(a && a.classList.contains('active')); }
+    return true;
+  }
+  function itemSpec() {
+    var am = activeManifest(), it = am && am.m.items;
+    if (!it) { return null; }
+    if (!Array.isArray(it)) { return it; }
+    for (var i = 0; i < it.length; i++) { if (specWhen(it[i])) { return it[i]; } }
+    return null;
+  }
   function itemNoun() { var sp = itemSpec(); return (sp && sp.noun) || 'item'; }
-  function domItems(sp) {
+  // Declared, not derived: noun + 's' gave "60 communitys". English plurals are
+  // not a rule the shell should be guessing at, and every tab that needs an
+  // irregular one already has a place to say so.
+  function itemNouns(n) {
+    var sp = itemSpec();
+    if (n === 1) { return itemNoun(); }
+    return (sp && sp.plural) || (itemNoun() + 's');
+  }
+  // Items do not always live in the tab's own document. Community Explorer's
+  // cards are a separate app in a NESTED same-origin iframe, so the roster is
+  // two documents deep. Which document is a declared property of the spec, so
+  // the walker never has to know that any particular tab nests.
+  function specDoc(sp) {
     var d = ifDoc();
+    if (!d || !sp || !sp.frame) { return d; }
+    var fr = d.querySelector(sp.frame);
+    try { return (fr && fr.contentDocument) || null; } catch (e) { return null; }
+  }
+  // What the page says its FULL set is, when the page renders only part of it.
+  // The cards app draws the first 60 of 1006; reporting 60 unqualified is the
+  // same lie the graph's counter told when a cut was active ("4184 of 4184
+  // shown" with two nodes on screen). Declared per tab, read off the page's own
+  // status line, so the number we speak is the page's own claim.
+  function specTotal(sp) {
+    if (!sp || !sp.total) { return null; }
+    var d = specDoc(sp), el = d && d.querySelector(sp.total.sel);
+    if (!el) { return null; }
+    var m = new RegExp(sp.total.re).exec(el.textContent || '');
+    return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;
+  }
+  function domItems(sp) {
+    var d = specDoc(sp);
     if (!d || !sp.select) { return []; }
     var els = [].slice.call(d.querySelectorAll(sp.select)), out = [];
     for (var i = 0; i < els.length; i++) {
       var el = els[i];
-      if (!el.offsetParent && getComputedStyle(el).display === 'none') { continue; }   // not on screen
+      // getComputedStyle must come from the element's OWN view: in a nested
+      // frame the shell's window would be asked about a foreign element.
+      var view = el.ownerDocument && el.ownerDocument.defaultView;
+      if (!el.offsetParent && view && view.getComputedStyle(el).display === 'none') { continue; }   // not on screen
       var lab = '';
       if (sp.label && sp.label.sel) { var h = el.querySelector(sp.label.sel); lab = h ? (h.textContent || '').trim() : ''; }
       if (!lab) { lab = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60); }
@@ -2531,6 +2584,67 @@ var VoiceGuide = (function() {
     if (!sp || sp.kind === 'none') { return []; }
     if (sp.kind === 'dom') { return domItems(sp); }
     return revealedNodes();
+  }
+  // ---- sub-views: a tab that is more than one place ----------------------
+  //
+  // Declared per tab as {name, aka, enter, active}: `enter` is the control that
+  // switches to it, `active` the element whose .active class means we are there.
+  // Six tabs work this way, so the alternative to declaring it is six branches.
+  function tabViews() { var am = activeManifest(); return (am && am.m.views) || []; }
+  function viewNames() { return tabViews().map(function (v) { return v.name; }); }
+  function activeViewName() {
+    var vs = tabViews(), d = ifDoc();
+    if (!vs.length || !d) { return ''; }
+    for (var i = 0; i < vs.length; i++) {
+      var a = d.querySelector(vs[i].active || vs[i].enter);
+      if (a && a.classList.contains('active')) { return vs[i].name; }
+    }
+    return '';
+  }
+  // Returns the view's name on success, '' if nothing matched.
+  function enterView(label) {
+    var vs = tabViews(), d = ifDoc(), want = String(label || '').toLowerCase().trim();
+    if (!vs.length || !d) { return ''; }
+    for (var i = 0; i < vs.length; i++) {
+      var names = [vs[i].name].concat(vs[i].aka || []).map(function (s) { return String(s).toLowerCase(); });
+      if (names.indexOf(want) === -1) { continue; }
+      var btn = d.querySelector(vs[i].enter);
+      if (!btn) { return ''; }
+      btn.click();
+      // The roster changed underneath the cursor; leaving it pointing at an
+      // index in the OLD list is how `next` silently walks the wrong thing.
+      cursorId = null; currentItemEl = null; currentItemLabel = '';
+      return vs[i].name;
+    }
+    return '';
+  }
+
+  // A sub-view can be a whole app that loads on first entry (the cards grid is
+  // a nested document that fetches its own data), so the roster is not there
+  // the instant we click. Announce when it IS -- silence, or a confident "0
+  // cards", are both worse than a second line a moment later. Same
+  // show-then-correct shape the zoom verb already uses.
+  function announceView(name) {
+    var tries = 0;
+    (function poll() {
+      var n = activeItems().length;
+      if (n) { return show(name + ' view  |  ' + itemsPhrase(n), 'ok'); }
+      if (++tries > 24) { return show(name + ' view  |  nothing walkable here yet', 'err'); }
+      setTimeout(poll, 250);
+    })();
+  }
+
+  // "60 communities" when that is all there is; "60 of 1006 communities" when it
+  // is not. The cursor needs the same fact in a different shape -- "1 of 60 of
+  // 1006" is unspeakable -- so the position keeps the drawn count and carries
+  // the true total as an aside.
+  function itemsPhrase(n) {
+    var t = specTotal(itemSpec());
+    return (t !== null && t > n) ? (n + ' of ' + t + ' ' + itemNouns(t)) : (n + ' ' + itemNouns(n));
+  }
+  function cursorPhrase(idx, n) {
+    var t = specTotal(itemSpec());
+    return (idx + 1) + ' of ' + n + ' ' + itemNouns(n) + ((t !== null && t > n) ? ' (' + t + ' in all)' : '');
   }
   function revealedNodes() {
     var w = ifWin(), d = ifDoc();
@@ -2568,13 +2682,15 @@ var VoiceGuide = (function() {
     if (item.el) { selectDomItem(item.el, item.label); } else { currentItemEl = null; currentItemLabel = ''; call('openNodeByLabel', item.label); }
     journal.record(TAB, { dim: 'selection', before: before, after: readDim('selection') });
     // Announcing is not decoration: with no screen, this IS the result.
-    return show(item.label + '  |  ' + (idx + 1) + ' of ' + list.length + ' ' + itemNoun() + 's', 'ok');
+    return show(item.label + '  |  ' + cursorPhrase(idx, list.length), 'ok');
   }
 
   var currentItemEl = null, currentItemLabel = '';
   function selectDomItem(el, label) {
     currentItemLabel = label || '';
-    var d = ifDoc();
+    // The item's OWN document, which on a nested tab is not ifDoc(): the marker
+    // style and the previous-selection sweep both have to land where the item is.
+    var d = el.ownerDocument;
     if (!d) { return; }
     if (!d.getElementById('ccl-current-style')) {
       var st = d.createElement('style');
@@ -2627,7 +2743,9 @@ var VoiceGuide = (function() {
     if (!d) { return null; }
     // Read whatever the cursor is ON. On a content tab that is the selected
     // section; on the graph it is the open article. Same script either way.
-    var el = currentItemEl && d.contains(currentItemEl) ? currentItemEl : null;
+    // The cursor's element may live in a NESTED frame, so ask its own document
+    // whether it is still attached rather than the tab's.
+    var el = (currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl)) ? currentItemEl : null;
     if (!el) {
       el = d.getElementById('right-page-content');
       if (!el || !panelVisible(d)) { return null; }
@@ -2702,7 +2820,13 @@ var VoiceGuide = (function() {
     // Name what is actually being read: on a content tab that is the section
     // the cursor is on, not a right-panel title that does not exist there.
     var d = ifDoc();
-    var title = (currentItemEl && d.contains(currentItemEl) && currentItemLabel)
+    // ownerDocument, not ifDoc: a card lives one frame deeper than the tab, and
+    // asking the tab whether it contains it is always false -- so `read` named
+    // the card "this article". Fourth member of the family that has already bitten
+    // activeTabSrc, activeTabBtn and activeSrc: anything asking WHICH DOCUMENT
+    // must ask the element, not the shell.
+    var attached = currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl);
+    var title = (attached && currentItemLabel)
       ? currentItemLabel
       : ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
     stopSpeaking();
@@ -2781,6 +2905,7 @@ var VoiceGuide = (function() {
       else if (matchAny(el, defrSel)) { deferred.push(key); }
     });
     var r = CL.auditCoverage(declared, liveKeys, excluded.concat(deferred));
+    var frames = auditFrames(m, d);
     // Gestures cannot be swept -- they have no element. The gate verifies the
     // DECLARATION instead (see auditGestures): a tab that declares nothing
     // fails, and a gesture claiming coverage by a verb the tab lacks fails.
@@ -2788,14 +2913,49 @@ var VoiceGuide = (function() {
     // A knob bound to a selector that no longer exists is the OTHER drift
     // direction: the manifest promises a control the tab has dropped.
     var staleBinds = binds.filter(function (sel) { return !d.querySelector(sel); });
+    var frameBad = frames.filter(function (f) { return f.uncovered.length || f.error; });
     return {
-      ok: r.ok && staleBinds.length === 0 && g.ok,
+      ok: r.ok && staleBinds.length === 0 && g.ok && frameBad.length === 0,
       tab: am.key, total: liveKeys.length,
       covered: declared.length, excluded: excluded.length,
       uncovered: r.unbound, deferred: deferred, staleBinds: staleBinds, live: liveKeys,
-      gestures: g.counts, gestureProblems: g.problems
+      gestures: g.counts, gestureProblems: g.problems, frames: frames
     };
   };
+
+  // A tab whose content is a NESTED app (Community Explorer's cards) hides most
+  // of its operable surface from a sweep of the tab document -- 21 controls
+  // there, 2294 one frame down. Sweeping only the outer document would report a
+  // clean tab while the thing the user is actually looking at is undeclared, so
+  // declared frames are swept too.
+  //
+  // The assertion here is "nothing UNDECLARED", not an exact count: the nested
+  // app's overview view is a 158x11 heatmap of buttons, so a count would go red
+  // on every data refresh and the gate would be trained to be ignored. Controls
+  // matching the frame's item selector count as covered -- they are genuinely
+  // reachable, by pick/next/previous/read.
+  function auditFrames(m, d) {
+    var decls = m.frames || [], out = [];
+    for (var i = 0; i < decls.length; i++) {
+      var fd = decls[i], doc = null;
+      try { var fr = d.querySelector(fd.sel); doc = fr && fr.contentDocument; } catch (e) { doc = null; }
+      if (!doc) { out.push({ sel: fd.sel, error: 'declared frame not reachable: ' + fd.sel, uncovered: [] }); continue; }
+      var live = [].slice.call(doc.querySelectorAll(CONTROL_SEL));
+      if (!live.length) { out.push({ sel: fd.sel, error: 'declared frame has no controls -- not loaded?', uncovered: [] }); continue; }
+      var cov = fd.covered_by_items ? [fd.covered_by_items] : [];
+      var exc = (fd.controls_excluded || []).map(function (c) { return typeof c === 'string' ? c : c.match; });
+      var def = (fd.controls_deferred || []).map(function (c) { return typeof c === 'string' ? c : c.match; });
+      var nCov = 0, nExc = 0, nDef = 0, unc = [];
+      live.forEach(function (el) {
+        if (matchAny(el, cov)) { nCov++; }
+        else if (matchAny(el, exc)) { nExc++; }
+        else if (matchAny(el, def)) { nDef++; }
+        else { unc.push(controlKey(el)); }
+      });
+      out.push({ sel: fd.sel, total: live.length, covered: nCov, excluded: nExc, deferred: nDef, uncovered: unc });
+    }
+    return out;
+  }
 
   // ---- second filter families: edge types, layers, content tags ----------
   //
@@ -2907,11 +3067,34 @@ var VoiceGuide = (function() {
   // ---- execute a plan ----
   function execute(p) {
     if (p.ok === false) {
-      if (p.error === 'ambiguous') { return show('Ambiguous "' + p.term + '": ' + candList(p.candidates), 'err'); }
+      if (p.error === 'ambiguous') {
+        // "graph" names a destination on two tabs, so `go graph` came back
+        // ambiguous -- while the user was standing on the tab whose graph they
+        // meant. Being HERE is the disambiguation: a sub-view of the active tab
+        // is the most specific reading of the word, so it wins. (Only for `go`;
+        // ambiguity in any other verb is still a real question.)
+        if (p.verb === 'go') {
+          var av = enterView(p.term);
+          if (av) { announceView(av); return show('go ' + av, 'ok'); }
+        }
+        return show('Ambiguous "' + p.term + '": ' + candList(p.candidates), 'err');
+      }
       if (p.error === 'unresolved') {
         // For `go`, name what IS reachable -- a voice user cannot scan the bar.
         if (p.verb === 'go') {
-          return show('no tab called "' + p.term + '". Here: ' + allTabButtons().map(btnName).slice(0, 8).join(', '), 'err');
+          // A tab may hold SUB-VIEWS of its own (Community Explorer is a graph
+          // OR a card grid), and its roster changes with them, so reaching one
+          // is still going somewhere and rides on `go` rather than a new verb --
+          // the same call made for tab order. It is resolved HERE, not in
+          // switchTab, because destinations.json is a build artifact listing
+          // TABS: a sub-view is per-tab and live, so the engine will always call
+          // its name unresolved and hand it back. That also settles precedence
+          // for free -- a sub-view can never shadow a real tab.
+          var v = enterView(p.term);
+          if (v) { announceView(v); return show('go ' + v, 'ok'); }
+          var vs = viewNames();
+          return show('no tab called "' + p.term + '". Here: ' + allTabButtons().map(btnName).slice(0, 8).join(', ') +
+                      (vs.length ? ('. On this view: ' + vs.join(', ')) : ''), 'err');
         }
         return show('Could not find "' + p.term + '".', 'err');
       }
@@ -3118,7 +3301,9 @@ var VoiceGuide = (function() {
     // `what` is the question "am I looking at what I asked for?" -- so it must
     // answer from the render, not from the filter state that produced it.
     var items = activeItems();
-    var itemNote = items.length ? ('  |  ' + items.length + ' ' + itemNoun() + 's here') : '';
+    var itemNote = items.length ? ('  |  ' + itemsPhrase(items.length) + ' here') : '';
+    var vNote = activeViewName();
+    if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
     var res = show('view: ' + name + pos + (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote) + cutNote + viewSuffix(), 'ok');
     var nv = nodesShown();

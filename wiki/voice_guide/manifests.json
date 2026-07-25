@@ -671,6 +671,193 @@
           "reason": "transient; no state"
         }
       ]
+    },
+    "community_explorer": {
+      "aka": [
+        "community explorer",
+        "community_explorer",
+        "communities",
+        "community"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "stop"
+      ],
+      "_caps_note": "Reaching and walking the cards is this increment. The tab's OWN graph filters, search and camera are declared deferred below with the increment that takes them: the graph here is a different artifact from the Sociogram (no groupVisibility, no rebuildGraph), so inheriting those verbs would advertise controls that do not exist.",
+      "knobs": [],
+      "views": [
+        {
+          "name": "graph",
+          "aka": [
+            "map",
+            "network",
+            "the graph"
+          ],
+          "enter": "#tab-graph",
+          "active": "#tab-graph"
+        },
+        {
+          "name": "cards",
+          "aka": [
+            "card",
+            "cards view",
+            "communities",
+            "the cards"
+          ],
+          "enter": "#tab-cards",
+          "active": "#tab-cards"
+        }
+      ],
+      "_views_note": "Two sub-views with two different rosters. `go cards` rides on the existing `go` rather than adding a verb, the same call made for tab order. The cards view lazy-loads a nested app, so entry announces the roster when it arrives rather than claiming zero.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": "#tab-cards"
+          },
+          "frame": "#cardsview iframe",
+          "select": "#cc-card-grid > button.cc-card",
+          "label": {
+            "sel": ".cc-card-name"
+          },
+          "noun": "community",
+          "plural": "communities",
+          "total": {
+            "sel": "#cc-card-status",
+            "re": "([\\d,]+) communit"
+          },
+          "_note": "The grid renders CARD_LIMIT (60) of the matching set; the page's own status line carries the true total, so `what` says '60 of 1006' rather than '60'."
+        },
+        {
+          "kind": "none",
+          "noun": "community",
+          "_note": "The graph sub-view: its nodes are D3-bound but this artifact is not the Sociogram (different globals), so a graph roster is its own increment rather than a reused one."
+        }
+      ],
+      "frames": [
+        {
+          "sel": "#cardsview iframe",
+          "_note": "The cards sub-view is a separate application one document deeper, with four views of its own (cards / map / PRS / overview). Swept here so its surface is declared rather than invisible: 21 controls live in the tab, 2294 live in here.",
+          "covered_by_items": "#cc-card-grid > button.cc-card",
+          "controls_excluded": [
+            {
+              "match": "#ai-query-input, #run-ai-query, #clear-ai-query, #clear-ai-conversation, #allow-external-search",
+              "reason": "the nested app's Ask-AI pipeline SPENDS against the broker. Voice reaches paid retrieval only through the deliberate `ask` verb, never as a side effect of walking cards -- the same rule pinPlainSearch enforces on the tab's own search box."
+            },
+            {
+              "match": "#download-csv, #download-json, #copy-share-link",
+              "reason": "file downloads and clipboard writes are not things a voice session should do unasked"
+            }
+          ],
+          "controls_deferred": [
+            {
+              "match": "#search-input, #apply-search, #clear-search, #cc-prs-search",
+              "reason": "find/clear inside a nested app: the shell's find writes the TAB's search box, not this one",
+              "next": "community explorer increment 2"
+            },
+            {
+              "match": "#country-select, #subtype-select, #source-select, #sort-select, #manual-only, #geo-only, #toggle-filter-panel, #reset-filters, #page-size, #type-pills button.pill",
+              "reason": "the cards app's own filter/sort dimension, which needs a journal entry of its own before it is writable by voice",
+              "next": "community explorer increment 2"
+            },
+            {
+              "match": "nav.cc-tabs > button.cc-tab",
+              "reason": "the nested app's four views are a second level of sub-view; `go` reaches the tab's two, not these",
+              "next": "community explorer increment 3"
+            },
+            {
+              "match": "#cc-view-overview button, #cc-view-prs button, #cc-view-map button, #results-body button, #detail-panel button, #pagination button, #cc-reader button",
+              "reason": "the map / PRS / overview views and the results table: a 158x11 heatmap of buttons and a paged table, none of it reachable until those views are. Declared by selector rather than counted -- the count is data-driven and would go red on every vault refresh.",
+              "next": "community explorer increment 3"
+            }
+          ]
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#search-ai-mode, #search-external",
+          "reason": "Ask-AI and wider search SPEND against the broker; voice reaches paid retrieval only via `ask`"
+        },
+        {
+          "match": "#tabs-help, #help-close",
+          "reason": "the tab's own help overlay; `help` answers from the manifest instead"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#tab-graph, #tab-cards",
+          "reason": "reachable BY NAME via `go graph` / `go cards`, but the sweep matches elements not verbs, so they are listed here to stay visible in the count",
+          "next": "n/a -- covered by the views declaration above"
+        },
+        {
+          "match": "#typefilters input[type=checkbox], #q3only",
+          "reason": "the graph's eight type filters plus the quality gate: this artifact has no groupVisibility, so the filters dimension needs its own bind here",
+          "next": "community explorer increment 2"
+        },
+        {
+          "match": "#search-input, #btn-search, #btn-clear",
+          "reason": "find/clear on the tab's graph",
+          "next": "community explorer increment 2"
+        },
+        {
+          "match": "#btn-hold, #btn-names, #btn-fit",
+          "reason": "hold forces / show names / fit -- the camera and layout knobs, same family as the Sociogram's",
+          "next": "community explorer increment 2"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll_cards",
+          "label": "Scroll the card grid",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the cards scrolls each into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "open_card",
+          "label": "Click a card to open its G-P-R-S profile",
+          "status": "covered",
+          "by": [
+            "pick",
+            "read"
+          ],
+          "note": "The cursor marks the card and `read` speaks it."
+        },
+        {
+          "id": "switch_subview",
+          "label": "Switch between the graph and the cards",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "`go cards` / `go graph`."
+        },
+        {
+          "id": "drag_node",
+          "label": "Drag a graph node",
+          "status": "excluded",
+          "reason": "positional; the layout is not state the voice guide reasons about"
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node for its tooltip",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ]
     }
   }
 }

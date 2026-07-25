@@ -575,6 +575,92 @@ is mouse-first with a voice veneer. This policy is the check on that drift.
    after a CCL cut ("the rest faded").
 5. The 6 remaining deferred controls.
 
+## J. Items grew three declarations (Community Explorer, 2026-07-25)
+
+Phase 1 gave a tab ONE item spec: a selector, a label, a noun. Community
+Explorer needed three things that spec could not express, and each is now a
+declared property rather than a branch — which is the whole bet of the item
+model, so it is worth naming what they cost.
+
+**1. `items` may be a LIST, and a spec may carry `when`.** What is walkable
+depends on which sub-view is showing: Community Explorer is a graph under one
+sub-tab and a card grid under the other, and they are not the same roster. The
+first spec whose `when` holds wins; one with no `when` is the fallback. The only
+predicate implemented is `{"active": "<sel>"}` — the element carries `.active` —
+because that is the only one a real tab has needed. Six of the thirteen tabs
+have sub-views, so the alternative was six branches.
+
+**2. `frame`.** Items are not always in the tab's own document. The cards are a
+separate application one iframe deeper — same-origin, so reachable, but
+`ifDoc()` is the wrong document. `specDoc(sp)` resolves it. This immediately
+exposed a **fourth** instance of the "which document / which view is active"
+family that already bit `activeTabSrc`, `activeTabBtn` and `activeSrc`: the
+reader asked `ifDoc().contains(el)` and got false for every card, so `read`
+called the card "this article". Anything asking which document must ask the
+element (`ownerDocument`), not the shell. **Assume a fifth exists.**
+
+**3. `total` — and it is a HONESTY declaration, not a convenience.** The grid
+renders `CARD_LIMIT` = 60 of 1006 matching communities. A count taken from the
+DOM is wrong by a factor of seventeen, and this is the same failure the graph's
+counter had under a cut ("4184 of 4184 shown" over two visible nodes). `total`
+names a selector and a regex over the page's OWN status line, so the number
+spoken is the page's own claim: *"60 of 1006 communities here"*, and the cursor
+carries it as an aside — *"1 of 60 communities (1006 in all)"* — because "1 of
+60 of 1006" is unspeakable.
+
+`plural` joined them for a duller reason: `noun + 's'` said "60 communitys".
+English plurals are not a rule the shell should be inferring.
+
+### Sub-views ride on `go`, and are resolved on UNRESOLVED
+A tab's sub-views are declared as `views: [{name, aka, enter, active}]`. No new
+verb — the same call §D made for tab order. Two placement notes that were not
+obvious:
+
+- Resolution happens where the engine reports **`unresolved`**, not in
+  `switchTab`. `destinations.json` is a build artifact listing TABS; a sub-view
+  is per-tab and live, so the engine will always hand its name back unresolved.
+  That also settles precedence for free — a sub-view can never shadow a tab.
+- It also runs on **`ambiguous`**: `go graph` came back ambiguous between two
+  tabs *while the user was standing on the one they meant*. Being there is the
+  disambiguation, so a sub-view of the active tab wins. `go` only — ambiguity in
+  any other verb is a real question.
+
+Entering a sub-view **clears the cursor**, and announces the roster when it
+arrives rather than when it is asked for: the cards are a whole app that loads
+on first entry, so a confident "0 communities" would be a lie with a timer on it.
+
+### §9 enforcement now reaches into declared frames
+A tab whose content is a nested app hides most of its operable surface one
+document down: **21 controls in Community Explorer, 2294 in the cards frame.**
+Sweeping only the tab document would have reported a clean tab while the thing
+the user is looking at was entirely undeclared. `frames: [{sel, covered_by_items,
+controls_excluded, controls_deferred}]` extends the sweep.
+
+The assertion there is **"nothing UNDECLARED", not an exact count** — a
+deliberate departure from §9's exact-deferred rule. The nested overview view is
+a 158x11 heatmap of buttons, so an exact count would go red on every data
+refresh, and a gate that cries wolf on data churn is a gate people learn to
+widen. Counts are reported; undeclared controls fail. Current state: 60 covered
+by items, 8 excluded, 2226 deferred, **0 uncovered**.
+
+Two spend surfaces were **excluded rather than deferred**, which is the stronger
+word: the nested app's Ask-AI pipeline (`#run-ai-query`, `#allow-external-search`
+and friends) and the tab's own `#search-ai-mode`. Both bill the broker. Voice
+reaches paid retrieval only through the deliberate `ask` verb, never as a side
+effect of walking cards — the same rule `pinPlainSearch` enforces.
+
+### What the harness gained
+`F6b` asserts the picked card is **actually on screen in the nested frame**, not
+merely tagged — it failed on first run (card at 879px in a 784px viewport,
+frame scrolled 0) because `scrollIntoView` is smooth and had not landed. It
+settles first, like `settledInView` does for the graph's framing. Marking an
+element the user cannot see is exactly the "spoken claim with no render behind
+it" this suite exists to catch.
+
+**Not done here, deferred by name in the manifest:** the tab's own graph filters,
+search and camera (increment 2); the cards app's filters, sort and its own
+search (increment 2); its map / PRS / overview views (increment 3).
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

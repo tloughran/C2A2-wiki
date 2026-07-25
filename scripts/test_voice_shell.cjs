@@ -425,13 +425,27 @@ async function auditTab(page, tabName, expectDeferred, expectGestureDeferred) {
   // coverage by a verb the tab does not have), and the deferred count is
   // exact so an unreachable modality cannot sit quietly in the list.
   if (a.gestureProblems && a.gestureProblems.length) { problems.push('GESTURES: ' + a.gestureProblems.join(' | ')); }
+  // A tab whose content is a nested app hides most of its surface one document
+  // down (21 controls in the tab, 2294 in the frame). Asserted as "nothing
+  // UNDECLARED" rather than an exact count: the nested overview is a 158x11
+  // heatmap of buttons, so a count would go red on every data refresh and the
+  // gate would be trained to be ignored.
+  let frameNote = '';
+  (a.frames || []).forEach(function (f) {
+    if (f.error) { problems.push('FRAME ' + f.sel + ': ' + f.error); return; }
+    if (f.uncovered.length) {
+      problems.push('FRAME ' + f.sel + ' UNCOVERED (' + f.uncovered.length + '): ' + f.uncovered.slice(0, 10).join(', '));
+    }
+    frameNote += '  ||  frame ' + f.sel + ': ' + f.total + ' controls, ' + f.covered + ' covered, ' +
+                 f.excluded + ' excluded, ' + f.deferred + ' deferred, ' + f.uncovered.length + ' uncovered';
+  });
   const gd = (a.gestures && a.gestures.deferred) || 0;
   if (expectGestureDeferred !== undefined && gd !== expectGestureDeferred) {
     problems.push('gestures deferred=' + gd + ' expected ' + expectGestureDeferred);
   }
   record('audit ' + tabName, problems.length === 0,
     problems.join(' | ') || (a.total + ' controls: ' + a.covered + ' covered, ' + a.excluded + ' excluded, ' +
-      a.deferred.length + ' deferred, 0 uncovered  ||  gestures: ' + JSON.stringify(a.gestures)));
+      a.deferred.length + ' deferred, 0 uncovered  ||  gestures: ' + JSON.stringify(a.gestures) + frameNote));
 }
 
 // ------------------------------------------------------------------- rows ----
@@ -822,6 +836,87 @@ async function main() {
     { ok: false, spoken: /Not available on this view/ });
   const shotE = await page.screenshot(path.join(SHOTS, 'E-items.png'));
 
+  // ---- Phase F: a tab with SUB-VIEWS, and items one document deeper --------
+  //
+  // "Show me the cards" was the motivating failure, and Community Explorer is
+  // where it is hardest: the cards are a separate app in a NESTED iframe, they
+  // are only there under one of two sub-views, and the grid draws 60 of 1006 --
+  // so a count taken from the DOM is a lie by a factor of seventeen. All three
+  // are declared, not branched on, which is what makes the next tab cheap.
+  process.stdout.write('\nPhase F -- sub-views, a nested roster, and an honest total (Community Explorer)\n');
+  await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
+  await sleep(2000);
+  await row(page, 'F1 go community explorer', 'go community explorer', { ok: true, spoken: /go community explorer/i });
+  await sleep(6000);
+  await assertManifest(page, 'community_explorer', 'community_explorer.html');
+  await row(page, 'F2 what -> names the sub-view it is on, not just the tab', 'what',
+    { ok: true, spoken: /graph view/ });
+  await row(page, 'F3 go banana -> names the SUB-VIEWS as well as the tabs', 'go banana',
+    { ok: false, spoken: /On this view: graph, cards/ });
+  await row(page, 'F4 go cards -> a sub-view is reachable by name, on `go`', 'go cards',
+    { ok: true, spoken: /^go cards$/ });
+  // The nested app loads and fetches its own data; the shell announces the
+  // roster when it arrives, so wait for that rather than asserting on nothing.
+  await poll(function () {
+    return page.eval(
+      "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument;" +
+      "var fr=d&&d.querySelector('#cardsview iframe'); var id=fr&&fr.contentDocument;" +
+      "return !!(id && id.querySelector('#cc-card-grid > button.cc-card'));");
+  }, 60000, 500, 'nested cards grid rendered');
+  await row(page, 'F5 what -> counts the cards HONESTLY: drawn, and how many there really are', 'what',
+    { ok: true, spoken: /cards view\s+\|\s+\d+ of \d+ communities here/ });
+  const honest = await runCmd(page, 'what');
+  const mF = /(\d+) of (\d+) communities here/.exec(honest.spoken || '');
+  record('F5a the two numbers differ -- the render is a truncation, and it says so',
+    !!mF && parseInt(mF[2], 10) > parseInt(mF[1], 10), honest.spoken);
+  await row(page, 'F6 pick first -> walks a roster that lives TWO documents down', 'pick first',
+    { ok: true, spoken: /\|\s+1 of \d+ communities \(\d+ in all\)/ });
+  const cardSel = await page.eval(
+    "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument;" +
+    "var fr=d&&d.querySelector('#cardsview iframe'); var id=fr&&fr.contentDocument;" +
+    "var e=id&&id.querySelector('.ccl-current .cc-card-name'); return e?e.textContent.trim():null;");
+  record('F6a the card is marked IN THE NESTED DOCUMENT', !!cardSel, 'current card: ' + cardSel);
+  // Marking it is not enough: the point of scrolling to the cursor is that a
+  // sighted user can follow what the voice is doing, and the grid starts well
+  // below a masthead and a filter panel. Assert the card is ON SCREEN in the
+  // nested frame -- the same "check the render, not the claim" rule the graph
+  // rows follow with nodes-in-view.
+  // scrollIntoView is SMOOTH, so like the graph's framing this settles before it
+  // is read -- see settledInView, which exists for the same reason.
+  const cardOnScreen = function () { return page.eval(
+    "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument;" +
+    "var fr=d&&d.querySelector('#cardsview iframe'); var id=fr&&fr.contentDocument; var iw=fr&&fr.contentWindow;" +
+    "var cur=id&&id.querySelector('.ccl-current'); if(!cur||!iw){return false;}" +
+    "var r=cur.getBoundingClientRect(); return r.top >= 0 && r.top < iw.innerHeight;"); };
+  let cardSettled = false;
+  try { cardSettled = await poll(cardOnScreen, 5000, 250, 'picked card scrolled on screen'); }
+  catch (e) { cardSettled = false; }
+  const cardSeen = await page.eval(
+    "var f=document.getElementById('content-frame'); var d=f&&f.contentDocument;" +
+    "var fr=d&&d.querySelector('#cardsview iframe'); var id=fr&&fr.contentDocument; var iw=fr&&fr.contentWindow;" +
+    "var cur=id&&id.querySelector('.ccl-current'); if(!cur||!iw){return null;}" +
+    "var r=cur.getBoundingClientRect();" +
+    "return { top: Math.round(r.top), vh: iw.innerHeight, scrolled: id.scrollingElement.scrollTop };");
+  record('F6b the picked card is actually ON SCREEN, not just tagged',
+    cardSettled && !!cardSeen,
+    cardSeen ? ('card top ' + cardSeen.top + 'px of ' + cardSeen.vh + ' viewport, frame scrolled ' + cardSeen.scrolled + 'px') : 'no marked card');
+  await row(page, 'F7 next -> moves along it', 'next', { ok: true, spoken: /\|\s+2 of \d+ communities/ });
+  const readF = await runCmd(page, 'read');
+  record('F7a read speaks THE CARD the cursor is on, across the frame boundary',
+    /\d+ words/.test(readF.spoken || '') && !/no text/i.test(readF.spoken || ''), readF.spoken);
+  await runCmd(page, 'stop');
+  // The state worth LOOKING at: a card marked and scrolled to, two documents down.
+  const shotFc = await page.screenshot(path.join(SHOTS, 'F-cards.png'));
+  // The gate that makes the declaration honest: 21 controls in the tab, 2294 in
+  // the nested app, and every one of them covered, excluded or deferred by name.
+  await auditTab(page, 'community_explorer', 17, 0);
+  await row(page, 'F8 go graph -> back to the other sub-view', 'go graph', { ok: true, spoken: /^go graph$/ });
+  await sleep(1500);
+  await row(page, 'F9 what -> the roster changed with the view', 'what', { ok: true, spoken: /graph view/ });
+  await row(page, 'F10 only levin -> still no Sociogram pretence on a different graph', 'only levin',
+    { ok: false, spoken: /Not available on this view/ });
+  const shotF = await page.screenshot(path.join(SHOTS, 'F-subviews.png'));
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -829,7 +924,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');
