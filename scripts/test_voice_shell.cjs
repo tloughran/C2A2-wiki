@@ -621,7 +621,15 @@ async function main() {
   // the right text was handed to the right system.
   const readRes = await runCmd(page, 'read');
   record('A24 read takes the open article, by word count', /reading .+\s*\|\s*\d+ words/.test(readRes.spoken || ''), readRes.spoken);
+  record('A24b read offers an interrupt that actually WORKS (mic is muted, so "say stop" would be false)',
+    /press Stop or type/.test(readRes.spoken || '') && !/say "stop"/.test(readRes.spoken || ''), readRes.spoken);
+  record('A24c a visible Stop control appears while reading',
+    await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display !== 'none';"),
+    'ccl-stop visible during playback');
   await row(page, 'A25 stop -> interruptible', 'stop', { ok: true, spoken: /^stopped$/ });
+  record('A25a the Stop control goes away again',
+    await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display === 'none';"),
+    'ccl-stop hidden after stop');
   await row(page, 'A26 close, then read -> honest refusal, not silence', 'close', { ok: true });
   await row(page, 'A27 read with nothing open says so', 'read',
     { ok: false, spoken: /nothing is open to read/ });
