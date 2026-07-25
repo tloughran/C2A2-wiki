@@ -140,3 +140,6 @@ hep-det/
 __pycache__/
 *.pyc
 .writetest_*
+
+# Increment-0 spike: auto-mints a realtime session on load. LOCAL ONLY -- never commit or publish.
+wiki/spike.html
