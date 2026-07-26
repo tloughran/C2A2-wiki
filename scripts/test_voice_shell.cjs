@@ -1166,6 +1166,24 @@ async function main() {
     { ok: false, spoken: /On this view: schedule, sociogram, explorer/ });
   const shotH = await page.screenshot(path.join(SHOTS, 'H-agent-map.png'));
 
+  // ---- Idle listening cutoff: what can honestly be checked without a session --
+  //
+  // The 10s behaviour itself needs a LIVE realtime session to observe, and
+  // minting one costs money -- so it is NOT verified here and must be checked by
+  // hand. Saying that plainly beats a row that asserts something adjacent and
+  // reads like coverage. What IS checkable headlessly: the control exists, it
+  // starts hidden (it may only appear once silence has switched listening off),
+  // and resume with no session is a harmless no-op rather than a throw.
+  const idleUi = await page.eval(
+    "var r = document.getElementById('vg-resume');" +
+    "if (!r) { return 'no resume button'; }" +
+    "if (r.style.display !== 'none') { return 'resume button visible with no session'; }" +
+    "if (!window.VoiceGuide || typeof window.VoiceGuide.resume !== 'function') { return 'VoiceGuide.resume missing'; }" +
+    "try { window.VoiceGuide.resume(); } catch (e) { return 'resume threw with no session: ' + e.message; }" +
+    "return document.getElementById('vg-resume').style.display === 'none' ? 'ok' : 'resume revealed itself with no session';");
+  record('I1 the Resume control exists, starts hidden, and is inert with no session',
+    idleUi === 'ok', 'vg-resume: ' + idleUi);
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');

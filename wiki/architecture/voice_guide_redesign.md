@@ -991,6 +991,41 @@ animation's transport — **playback over a canvas timeline, deliberately kept
 distinct from the reader's playback**, since collapsing them would let `stop`
 mean two different things.
 
+## P. Silence ends listening (Tom, 2026-07-26)
+
+A live session left listening is not neutral. It keeps hearing the room long
+after the user has forgotten it is on, and then speaks up in the middle of
+something it was never addressed by. So after **10 seconds** of quiet the mic
+mutes itself and a **Resume conversation** button appears — the complement to
+*End conversation*, so coming back is one deliberate click rather than a session
+that was quietly listening the whole time.
+
+**Muted, not closed.** Closing loses the conversation and makes resuming slow
+enough that people stop using it. Muted means no audio is captured and no input
+tokens are billed — but **the connection does stay open**, which is worth saying
+plainly rather than implying a paused session costs nothing.
+
+**Two independent reasons the mic may be off, and they must not fight.** The page
+is READING (§K3, the command layer's call) and the session has gone IDLE. One
+boolean each, and the track follows both: `micWanted && !idlePaused`. With a
+single flag, a read ending would hand the mic back to a session the user had
+walked away from — precisely what this exists to prevent. For the same reason
+the idle clock is **not armed while reading**: no speech event can arrive with
+the mic already off, so it would guarantee a pause partway through every article
+and leave the user talking into a dead mic afterwards.
+
+**Any sign of life from either side restarts the clock** — every event on the
+data channel, not just the user's voice. Counting only the user would cut off
+someone who is listening to a long answer.
+
+### Not verified by the harness — check this one by hand
+
+The 10-second behaviour needs a LIVE realtime session to observe, and minting
+one costs money. `I1` asserts only what is honestly checkable headlessly: the
+control exists, starts hidden, and `resume()` with no session is an inert no-op.
+**The timing itself is unverified.** 10s may prove twitchy for someone thinking
+mid-sentence; it is one constant (`IDLE_MS`) if it wants to be 20 or 30.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

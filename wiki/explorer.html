@@ -1089,6 +1089,13 @@ function showReaderHelp() {
   #vg-toggle:hover { background: #dcbd5c; }
   #vg-toggle.live { background: #C45B5B; color: #fff; }
   #vg-toggle.live:hover { background: #d16b6b; }
+  #vg-resume {
+    width: 100%; padding: 11px; border-radius: 8px; cursor: pointer;
+    font-size: 14px; font-weight: 700; font-family: -apple-system, sans-serif;
+    background: transparent; color: #C9A84C; border: 1px solid #C9A84C;
+    margin-top: 8px; transition: background 0.15s;
+  }
+  #vg-resume:hover { background: rgba(201,168,76,0.12); }
   #vg-keyrow { display: none; margin-bottom: 12px; }
   #vg-keyrow.show { display: block; }
   #vg-keyrow label { display: block; font-size: 11px; color: #8a8a98; margin-bottom: 5px; }
@@ -1127,6 +1134,10 @@ function showReaderHelp() {
              data-1p-ignore data-lpignore="true">
     </div>
     <button id="vg-toggle" onclick="VoiceGuide.toggle()">Start conversation</button>
+    <!-- Appears only once silence has switched listening off; the complement to
+         End conversation, so coming back is one deliberate click rather than a
+         session that was quietly listening the whole time. -->
+    <button id="vg-resume" style="display:none" onclick="VoiceGuide.resume()">Resume conversation</button>
     <div id="vg-transcript"></div>
     <div id="vg-hint">Uses the OpenAI Realtime API. Interrupt any time &mdash; just talk over it.</div>
   </div>
@@ -1159,12 +1170,69 @@ var VoiceGuide = (function() {
     if (!responseActive) { fn(); return; }   // nothing being said -> read now
     _afterResponse = fn;                      // otherwise hand over on response.done
   };
-  window.CCLSetMic = function (on) {
+  // ---- WHO IS ALLOWED TO MUTE THE MIC, AND WHY -----------------------------
+  //
+  // TWO independent reasons the mic may be off, and they must not fight: the
+  // page is READING (the command layer's call, so the guide does not answer the
+  // article), and the session has gone IDLE (below). One boolean each, and the
+  // track follows both -- otherwise a read ending would hand the mic back to a
+  // session the user had walked away from, which is the whole thing being
+  // prevented here.
+  var micWanted = true, idlePaused = false;
+  function applyMic() {
     try {
       if (!micStream || !micStream.getAudioTracks) { return; }
-      micStream.getAudioTracks().forEach(function (t) { t.enabled = !!on; });
+      var on = micWanted && !idlePaused;
+      micStream.getAudioTracks().forEach(function (t) { t.enabled = on; });
     } catch (e) { /* no session */ }
-  };
+  }
+  window.CCLSetMic = function (on) { micWanted = !!on; applyMic(); };
+
+  // ---- IDLE LISTENING CUTOFF (Tom, 2026-07-26) ------------------------------
+  //
+  // A live session left listening is not neutral: it keeps hearing the room long
+  // after the user has forgotten it is on, and then speaks up in the middle of
+  // something it was never addressed by. So silence ends listening on its own,
+  // and coming back is one deliberate click.
+  //
+  // The mic is muted rather than the session closed: closing loses the
+  // conversation and makes resuming slow enough that people would stop using it.
+  // Muted means no audio is captured and no input tokens are billed, though the
+  // connection does stay open -- worth saying plainly rather than implying the
+  // session costs nothing while paused.
+  var IDLE_MS = 10000;
+  var idleTimer = null;
+  function clearIdle() { if (idleTimer) { clearTimeout(idleTimer); idleTimer = null; } }
+  // Any sign of life from EITHER side restarts the clock -- the user speaking,
+  // the guide answering, a command running. Counting only the user's voice would
+  // cut off someone who is listening to a long answer.
+  function noteActivity() {
+    if (!live || idlePaused) { return; }
+    clearIdle();
+    // While the page reads, the mic is already off by the reader's request and
+    // no speech event can arrive. Arming the timer here would guarantee a pause
+    // partway through every article, and the user would come back to a dead mic.
+    if (!micWanted) { return; }
+    idleTimer = setTimeout(pauseListening, IDLE_MS);
+  }
+  function pauseListening() {
+    if (!live || idlePaused) { return; }
+    clearIdle();
+    idlePaused = true;
+    applyMic();
+    var r = el('vg-resume'); if (r) { r.style.display = ''; }
+    setStatus('Listening paused after ' + Math.round(IDLE_MS / 1000) + 's of quiet. Press Resume to talk again.');
+    dbg('idle -> listening paused (mic muted, session still open)');
+  }
+  function resumeListening() {
+    if (!live) { return; }
+    idlePaused = false;
+    applyMic();
+    var r = el('vg-resume'); if (r) { r.style.display = 'none'; }
+    setStatus('Listening. Speak now &mdash; interrupt any time.', 'ok');
+    noteActivity();
+  }
+  window.CCLNoteActivity = noteActivity;
   var responseActive = false, pendingCreate = false, _pendCreateTimer = null, _hangTimer = null;
 
   // Diagnostic event log for the realtime voice loop. OFF unless the URL carries
@@ -2095,6 +2163,9 @@ var VoiceGuide = (function() {
     try { m = JSON.parse(ev.data); } catch (e) { return; }
     // Trace every event except the high-frequency audio/transcript deltas.
     if (DEBUG && m.type && m.type.indexOf('.delta') === -1) dbg('ev ' + m.type);
+    // Anything arriving on this channel means the conversation is alive -- the
+    // user speaking, the guide answering, a tool returning. Restart the clock.
+    noteActivity();
     switch (m.type) {
       case 'conversation.item.input_audio_transcription.completed':
         if (m.transcript) addLine('You', m.transcript.trim());
@@ -2267,6 +2338,9 @@ var VoiceGuide = (function() {
         el('vg-launch').classList.add('live');
         el('vg-transcript').classList.add('show');
         setStatus('Listening. Speak now &mdash; interrupt any time.', 'ok');
+        micWanted = true; idlePaused = false;
+        var rb = el('vg-resume'); if (rb) { rb.style.display = 'none'; }
+        noteActivity();
       };
       dc.onmessage = handleEvent;
 
@@ -2293,6 +2367,10 @@ var VoiceGuide = (function() {
 
   function stop(silent) {
     live = false; connecting = false;
+    // Leave nothing armed against a dead session, and clear the paused state so
+    // the next Start does not inherit a muted mic.
+    clearIdle(); idlePaused = false; micWanted = true;
+    var rb0 = el('vg-resume'); if (rb0) { rb0.style.display = 'none'; }
     // If a grid run is in flight, signal it to unwind -- otherwise it spins
     // through per-cell timeouts on a dead channel and blocks the next Start.
     if (_test.running) _test.abort = true;
@@ -2319,6 +2397,7 @@ var VoiceGuide = (function() {
       el('vg-panel').classList.toggle('open');
     },
     toggle: function() { if (live || connecting) stop(); else start(); },
+    resume: function() { resumeListening(); },
     getRemoteStream: function() { return remoteStream; }
   };
 })();
