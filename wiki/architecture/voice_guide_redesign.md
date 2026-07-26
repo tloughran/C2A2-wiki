@@ -942,6 +942,55 @@ page an unmentioned link does not exist. In the manifests they moved from
 `controls_excluded` to `dim_coverage` (dim `tab`) — covered, not excluded —
 with only the genuinely unreachable ones left excluded.
 
+## O. Agent Map — the first tab that needed a declaration and no code (2026-07-26)
+
+Tom asked whether the Agent Map's sub-tabs should be navigable now, since
+sub-views were built generically. They were not — and the reason is the
+distinction worth keeping straight:
+
+- **Links are shell-side and generic** (§N). Every page gets them free, because
+  an anchor is an anchor and its meaning is universal.
+- **Sub-views are DECLARED per tab.** There is no universal DOM signature for
+  "sub-tab": Community Explorer uses `#tab-graph` / `#tab-cards`, the Agent Map
+  uses `.subtab-btn[data-view]`. Detecting them by heuristic would mean guessing,
+  and a wrong guess advertises navigation that does not work — the exact class of
+  dishonesty this build keeps repairing.
+
+Agent Map was simply one of the nine tabs with no manifest at all, so it degraded
+to shell caps. Declaring it took **no new engine code** — the first real proof
+the phase-1/phase-2 machinery ports, which is the whole premise of the fan-out.
+
+### Its roster genuinely differs per view
+
+The items-list-with-`when` form earns its keep a second time, and the honest
+answer is not uniform across the three:
+
+- **Explorer** — `.exp-table tbody tr[data-task]`, 33 agents, with `#exp-count`
+  ("N / M agents") as the total, so a filtered table cannot silently report its
+  subset as the whole.
+- **Schedule** — the agents here are drawn into a **canvas** and are not DOM, so
+  they are not walkable. What IS addressable is the legend: 6 **categories**. The
+  declaration says `category`, not `agent`, rather than pretending otherwise.
+- **Sociogram** — `kind: none`. A ~25 MB nested artifact with its own globals;
+  a roster there is the same work as the Community Explorer graph and prs_3d,
+  not a reuse of the Sociogram's bespoke adapter. Also flagged in the manifest:
+  entering it is a real download, not a toggle.
+
+### What the audit caught while writing it
+
+Every id in the first draft of `controls_deferred` was a guess, and the sweep
+named all six it missed (`#btn-pause`, `#btn-narrate`, `#speed-select`, and the
+three sub-tab buttons). The sub-tab buttons then moved to `dim_coverage` — the
+sweep matches ELEMENTS while the coverage is a VERB, the same bookkeeping links
+needed. Final: **3 covered / 10 deferred / 0 uncovered**, gestures clean.
+
+Deferred by name for *agent map increment 2*: the Explorer's filter box and
+category select (a filters dimension over a TABLE, which nothing binds yet),
+column sorting (an ordering dimension nothing declares), and the schedule
+animation's transport — **playback over a canvas timeline, deliberately kept
+distinct from the reader's playback**, since collapsing them would let `stop`
+mean two different things.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

@@ -935,6 +935,170 @@
           "reason": "transient; no state"
         }
       ]
+    },
+    "agents_tab": {
+      "aka": [
+        "agent map",
+        "agents",
+        "agents_tab",
+        "agent activity",
+        "the agents"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "stop"
+      ],
+      "_caps_note": "A three-view tab with no graph of its own to filter: what it CAN do is be moved between views, walked and read. `go schedule|sociogram|explorer` rides the existing sub-view declaration -- the same machinery Community Explorer uses, which is why this tab needed a manifest rather than new code (Tom, 2026-07-26: 'Agent Map has subtabs: should those be now navigable?'). They were not, because sub-views are DECLARED per tab and this tab was one of the nine still undeclared.",
+      "knobs": [],
+      "views": [
+        {
+          "name": "schedule",
+          "aka": [
+            "the schedule",
+            "week",
+            "weekly schedule",
+            "calendar"
+          ],
+          "enter": ".subtab-btn[data-view=\"schedule\"]",
+          "active": ".subtab-btn[data-view=\"schedule\"]"
+        },
+        {
+          "name": "sociogram",
+          "aka": [
+            "agent sociogram",
+            "the sociogram",
+            "map"
+          ],
+          "enter": ".subtab-btn[data-view=\"sociogram\"]",
+          "active": ".subtab-btn[data-view=\"sociogram\"]"
+        },
+        {
+          "name": "explorer",
+          "aka": [
+            "the explorer",
+            "table",
+            "agent table",
+            "list"
+          ],
+          "enter": ".subtab-btn[data-view=\"explorer\"]",
+          "active": ".subtab-btn[data-view=\"explorer\"]"
+        }
+      ],
+      "_views_note": "The sociogram sub-view LAZILY fetches a ~25 MB artifact on first entry -- going there is a real download, not a toggle. Left as a declared destination anyway because the user asking for it is the whole point; it is simply slow the first time.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": ".subtab-btn[data-view=\"explorer\"]"
+          },
+          "select": ".exp-table tbody tr[data-task]",
+          "label": {
+            "sel": ".exp-name"
+          },
+          "noun": "agent",
+          "total": {
+            "sel": "#exp-count",
+            "re": "([\\d,]+) / [\\d,]+ agents"
+          },
+          "_note": "Rows are re-rendered on every filter/sort, so the roster is read live rather than cached. The table shows the FILTERED count and #exp-count carries 'N / M agents', so `what` can say which."
+        },
+        {
+          "kind": "dom",
+          "when": {
+            "active": ".subtab-btn[data-view=\"schedule\"]"
+          },
+          "select": "#legend-items .legend-item",
+          "label": {
+            "sel": ".legend-label"
+          },
+          "noun": "category",
+          "_note": "The schedule view draws its agents into a CANVAS, so the agents themselves are not DOM and cannot be walked until the canvas/data-bound adapter exists (prs_3d increment). What IS addressable is the legend: the categories, with counts. Declared honestly as categories rather than pretending the agents are reachable here.",
+          "plural": "categories"
+        },
+        {
+          "kind": "none",
+          "noun": "agent",
+          "_note": "The sociogram sub-view is a ~25 MB nested artifact with its own globals -- a graph roster there is the same work as the Community Explorer graph and prs_3d, not a reuse of the Sociogram's bespoke adapter."
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#exp-search, #exp-cat",
+          "reason": "the Explorer's own filter box and category select -- a filters dimension over a TABLE, which nothing binds yet",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#btn-play, #btn-pause, #btn-reset, #btn-narrate, #speed-select, #progress-bar-wrap",
+          "reason": "the schedule animation's transport: play/pause/reset/narrate/speed/scrub. A playback dimension over a canvas TIMELINE, deliberately distinct from the reader's playback -- collapsing the two would let `stop` mean two things",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#btn-skip, #btn-mute",
+          "reason": "the narration strip's own voice controls; a second speaker inside a tab, which needs the one-reader question answered before it is wired",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": ".exp-table th",
+          "reason": "column sorting -- an ordering dimension nothing else declares yet",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#det-close, #legend-resize-handle, #narr-resize-handle, #det-resize-handle",
+          "reason": "detail-panel close and the pane drag handles",
+          "next": "agent map increment 2"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the agent table",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the rows scrolls them into view."
+        },
+        {
+          "id": "subtab_click",
+          "label": "Switch sub-view",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "go schedule | go sociogram | go explorer"
+        },
+        {
+          "id": "canvas_hover",
+          "label": "Hover an agent on the schedule canvas",
+          "status": "deferred",
+          "reason": "canvas-drawn, not DOM; needs the data-bound item adapter",
+          "planned": "agent map increment 2"
+        },
+        {
+          "id": "drag_resize",
+          "label": "Drag a pane divider",
+          "status": "excluded",
+          "reason": "pure layout; no state a spoken command should own"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": ".subtab-btn[data-view]",
+          "note": "The three sub-view buttons, reached by name with `go schedule|sociogram|explorer`. The sweep matches ELEMENTS and the coverage is a VERB, so they are declared here rather than left to look uncovered."
+        }
+      ]
     }
   }
 }

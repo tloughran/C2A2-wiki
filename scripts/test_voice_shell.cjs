@@ -1126,6 +1126,46 @@ async function main() {
   await assertManifest(page, 'start_here', 'start_here.html');
   const shotG = await page.screenshot(path.join(SHOTS, 'G-inpage-nav.png'));
 
+  // ---- Phase H: Agent Map -- sub-views on a SECOND tab ---------------------
+  //
+  // Tom asked whether the Agent Map's sub-tabs should be navigable now, since
+  // sub-views were built generically for Community Explorer. They were not:
+  // sub-views are DECLARED per tab and this was one of the nine tabs with no
+  // manifest at all, so it degraded to shell caps. That is the machinery working
+  // as designed, not a bug -- but it is the first proof that the design ports,
+  // since this tab needed a declaration and NO new code.
+  //
+  // Its roster genuinely differs per view, which is why the items-list-with-when
+  // form earns its keep a second time: a table of agents under Explorer, and
+  // under Schedule only the legend's CATEGORIES -- the agents there are drawn
+  // into a canvas and are honestly not reachable yet.
+  process.stdout.write('\nPhase H -- a second tab with sub-views (Agent Map)\n');
+  await activateTab(page, 'agents_tab.html');
+  await sleep(6000);
+  await assertManifest(page, 'agents_tab', 'agents_tab.html');
+  await auditTab(page, 'agents_tab', 10, 1);
+  await row(page, 'H1 what -> names the sub-view it booted into', 'what',
+    { ok: true, spoken: /schedule view/ });
+  await row(page, 'H2 go explorer -> a sub-view on a tab that never had one', 'go explorer',
+    { ok: true, spoken: /^go explorer$/ });
+  await sleep(1500);
+  await row(page, 'H3 what -> the roster CHANGED with the view', 'what',
+    { ok: true, spoken: /explorer view.*\d+ agents here/ });
+  await row(page, 'H4 pick first -> walks the agent table', 'pick first',
+    { ok: true, spoken: /1 of \d+ agents/ });
+  await row(page, 'H5 next', 'next', { ok: true, spoken: /2 of \d+ agents/ });
+  await row(page, 'H6 go schedule -> back, and the roster changes again', 'go schedule',
+    { ok: true, spoken: /^go schedule$/ });
+  await sleep(1500);
+  // The honest half: the schedule view's agents are canvas-drawn, so what is
+  // addressable there is the legend's categories. Saying "categories" and not
+  // "agents" is the declaration refusing to overclaim.
+  await row(page, 'H7 what -> categories, NOT a pretence that canvas agents are walkable', 'what',
+    { ok: true, spoken: /schedule view\s*\|\s*\d+ categories here/ });
+  await row(page, 'H8 an unknown destination names this tab\'s three views', 'go banana',
+    { ok: false, spoken: /On this view: schedule, sociogram, explorer/ });
+  const shotH = await page.screenshot(path.join(SHOTS, 'H-agent-map.png'));
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -1133,7 +1173,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');
