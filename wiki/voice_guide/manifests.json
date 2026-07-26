@@ -976,7 +976,7 @@
           "aka": [
             "agent sociogram",
             "the sociogram",
-            "map"
+            "agent map sociogram"
           ],
           "enter": ".subtab-btn[data-view=\"sociogram\"]",
           "active": ".subtab-btn[data-view=\"sociogram\"]"
@@ -987,13 +987,14 @@
             "the explorer",
             "table",
             "agent table",
-            "list"
+            "list",
+            "agent explorer"
           ],
           "enter": ".subtab-btn[data-view=\"explorer\"]",
           "active": ".subtab-btn[data-view=\"explorer\"]"
         }
       ],
-      "_views_note": "The sociogram sub-view LAZILY fetches a ~25 MB artifact on first entry -- going there is a real download, not a toggle. Left as a declared destination anyway because the user asking for it is the whole point; it is simply slow the first time.",
+      "_views_note": "Three of these names -- sociogram, explorer, and the old aka `map` -- also name real TABS, which made them unreachable: destinations.json is authoritative and sub-views resolve only on `unresolved`, so `go sociogram` matched the Sociogram TOOL every time and threw the user across the app (Tom, 2026-07-26). Fixed in the shell, not by renaming: standing on a tab, that tab's own view wins, and `go <name> tab` forces the tab. `map` was still dropped as an alias because it collides with this tab's OWN name. The sociogram sub-view LAZILY fetches a ~25 MB artifact on first entry -- going there is a real download, not a toggle.",
       "items": [
         {
           "kind": "dom",

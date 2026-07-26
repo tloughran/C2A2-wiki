@@ -2466,7 +2466,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=e1de6abca9"></script>
+<script src="lib/c2a2-commandline.js?v=6a5b9f7081"></script>
 <script>
 (function () {
   'use strict';
@@ -3006,6 +3006,72 @@ var VoiceGuide = (function() {
     return '';
   }
   // Returns the view's name on success, '' if nothing matched.
+  // Views of ANY tab, not just the active one -- needed to resolve "the
+  // sociogram view of the agent map" while standing somewhere else entirely.
+  function viewsForSrc(src) {
+    if (!src || !manifests || !manifests.tabs) { return []; }
+    var file = String(src).split('/').pop().replace(/\.html$/, ''), tabs = manifests.tabs;
+    for (var key in tabs) {
+      var aka = tabs[key].aka || [], hit = (key === file);
+      for (var i = 0; !hit && i < aka.length; i++) { if (aka[i] === file) { hit = true; } }
+      if (hit) { return tabs[key].views || []; }
+    }
+    return [];
+  }
+  function viewMatches(vs, term) {
+    var t = String(term || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    for (var i = 0; i < vs.length; i++) {
+      var names = [vs[i].name].concat(vs[i].aka || []).map(function (s) { return String(s).toLowerCase(); });
+      if (names.indexOf(t) !== -1) { return vs[i].name; }
+    }
+    return '';
+  }
+  // Does this term name a view of the tab the user is STANDING ON? Saying "tab"
+  // explicitly opts out, which is how the escape hatch stays honest: `go
+  // sociogram tab` is unresolvable as a tab name, so it falls to the unresolved
+  // branch below and is forced there.
+  function matchLocalView(term) {
+    if (/\btab\b/i.test(String(term || ''))) { return ''; }
+    return viewMatches(tabViews(), term);
+  }
+  // "<view> of <tab>" / "<tab> <view>", from anywhere. Tom got stuck exactly
+  // here: having finally reached the Agent Map's sociogram view, he moved to
+  // another tab and could not ask for it back, because no phrasing addressed a
+  // view and a tab at once.
+  function matchCompound(term) {
+    var t = String(term || '').toLowerCase().replace(/\s+/g, ' ').trim()
+      .replace(/\b(view|tab|of|the|inside|in|on)\b/g, ' ').replace(/\s+/g, ' ').trim();
+    var w = t.split(' ');
+    if (w.length < 2) { return null; }
+    for (var i = 1; i < w.length; i++) {
+      var a = w.slice(0, i).join(' '), b = w.slice(i).join(' ');
+      // Try both orders: "sociogram agent map" and "agent map sociogram".
+      var pairs = [[b, a], [a, b]];
+      for (var k = 0; k < pairs.length; k++) {
+        var btn = tabButton(pairs[k][0]);
+        if (!btn) { continue; }
+        var v = viewMatches(viewsForSrc(btn.getAttribute('data-src')), pairs[k][1]);
+        if (v) { return { btn: btn, view: v, tab: btnName(btn) }; }
+      }
+    }
+    return null;
+  }
+  // Entering a view on a tab that is not loaded yet: switch, wait for the
+  // document, then click. One-shot listener so a later navigation cannot
+  // inherit a stale intention.
+  function enterViewAfterLoad(name) {
+    var f = document.getElementById('content-frame');
+    if (!f) { return; }
+    var fired = false;
+    var onLoad = function () {
+      if (fired) { return; }
+      fired = true;
+      f.removeEventListener('load', onLoad);
+      setTimeout(function () { var v = enterView(name); if (v) { announceView(v); } }, 500);
+    };
+    f.addEventListener('load', onLoad);
+    setTimeout(function () { f.removeEventListener('load', onLoad); }, 20000);
+  }
   function enterView(label) {
     var vs = tabViews(), d = ifDoc(), want = String(label || '').toLowerCase().trim();
     if (!vs.length || !d) { return ''; }
@@ -3506,6 +3572,24 @@ var VoiceGuide = (function() {
           // TABS: a sub-view is per-tab and live, so the engine will always call
           // its name unresolved and hand it back. That also settles precedence
           // for free -- a sub-view can never shadow a real tab.
+          // "<name> tab" is an EXPLICIT request for the tab, and it lands here
+          // because no tab is literally called "sociogram tab". This is the
+          // escape hatch the switchTab branch advertises, so it has to be real:
+          // it forces the tab even when the current tab owns that view name.
+          var bare = p.term.replace(/\b(tab|the)\b/gi, ' ').replace(/\s+/g, ' ').trim();
+          if (/\btab\b/i.test(p.term) && bare) {
+            var tb = tabButton(bare);
+            if (tb) { lastTabBtn = activeTabBtn(); tb.click(); return show('go ' + btnName(tb), 'ok'); }
+          }
+          // Then a view named together with the tab that owns it, which is the
+          // only way to reach another tab's view from here.
+          var cx = matchCompound(p.term);
+          if (cx) {
+            lastTabBtn = activeTabBtn();
+            cx.btn.click();
+            enterViewAfterLoad(cx.view);
+            return show('go ' + cx.tab + ' -> ' + cx.view + ' view', 'ok');
+          }
           var v = enterView(p.term);
           if (v) { announceView(v); return show('go ' + v, 'ok'); }
           // THEN the page's own links, for the same reason and in the same
@@ -3718,6 +3802,26 @@ var VoiceGuide = (function() {
       return show('go ' + btnName(row[idx]) + '  |  ' + (idx + 1) + ' of ' + row.length, 'ok');
     }
     if (p.action === 'switchTab') {
+      // BEING THERE IS THE DISAMBIGUATION.
+      //
+      // Sub-views resolve only at the engine's `unresolved` branch, so a tab
+      // name always wins -- which made the Agent Map's own `sociogram`,
+      // `explorer` and `map` views unreachable BY NAME: saying "sociogram" while
+      // standing on the Agent Map threw the user across the app to the Sociogram
+      // tool, every time, and no phrasing could stop it (Tom, 2026-07-26).
+      // Precedence "a sub-view can never shadow a real tab" is right in general
+      // and exactly wrong when the user is ALREADY on the tab that owns the
+      // name. So: standing on a tab, its own view wins -- and the assumption is
+      // said out loud with the way to reach the tab instead, per the
+      // act-on-a-reading rule.
+      var localView = p.term ? matchLocalView(p.term) : '';
+      if (localView) {
+        var v0 = enterView(localView);
+        if (v0) {
+          announceView(v0);
+          return show('go ' + v0 + ' (this tab\'s ' + v0 + ' view -- say "go ' + p.label + ' tab" for the whole ' + p.label + ')', 'ok');
+        }
+      }
       var btn = tabButton(p.label);
       // Name what IS reachable: a voice user cannot scan the tab bar.
       if (!btn) {

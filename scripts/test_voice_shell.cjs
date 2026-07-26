@@ -1164,6 +1164,41 @@ async function main() {
     { ok: true, spoken: /schedule view\s*\|\s*\d+ categories here/ });
   await row(page, 'H8 an unknown destination names this tab\'s three views', 'go banana',
     { ok: false, spoken: /On this view: schedule, sociogram, explorer/ });
+  // H9-H12: NAME COLLISIONS BETWEEN A SUB-VIEW AND A REAL TAB.
+  //
+  // Three of this tab's view names -- sociogram, explorer, and the old alias
+  // `map` -- also name real TABS. destinations.json is authoritative and
+  // sub-views resolve only on `unresolved`, so `go sociogram` matched the
+  // Sociogram TOOL every time: standing on the Agent Map and asking for its
+  // sociogram view threw the user across the app, repeatedly, with no phrasing
+  // that could stop it (Tom, 2026-07-26). "A sub-view can never shadow a real
+  // tab" is right in general and exactly wrong when the user is already ON the
+  // tab that owns the name.
+  await row(page, 'H9 standing on the tab, its OWN view wins over the same-named tab', 'go sociogram',
+    { ok: true, spoken: /this tab's sociogram view/ });
+  await sleep(2500);
+  await assertManifest(page, 'agents_tab', 'agents_tab.html');
+  await row(page, 'H9a and what agrees it is the sub-view, not the tool', 'what',
+    { ok: true, spoken: /Agent Map.*sociogram view/ });
+  // The message above ADVERTISES "go <name> tab". An advertised phrase that does
+  // not work is the failure mode this build keeps repairing, so it is held here.
+  await row(page, 'H10 the advertised escape hatch is real: reach the whole tool', 'go sociogram tab',
+    { ok: true, spoken: /^go Sociogram$/ });
+  await tabReady(page, 'sociogram');
+  await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
+  // Tom's last failure: having reached the view, he moved away and could not ask
+  // for it back, because nothing addressed a view and a tab at once.
+  await row(page, 'H11 a view of ANOTHER tab, named together, from anywhere', 'go sociogram view of the agent map',
+    { ok: true, spoken: /go Agent Map -> sociogram view/ });
+  await sleep(9000);
+  await assertManifest(page, 'agents_tab', 'agents_tab.html');
+  await row(page, 'H11a it really landed in that sub-view, not just on the tab', 'what',
+    { ok: true, spoken: /Agent Map.*sociogram view/ });
+  await row(page, 'H12 the other word order works too', 'go agent map explorer',
+    { ok: true, spoken: /go Agent Map -> explorer view/ });
+  await sleep(2500);
+  await row(page, 'H12a and it walks that roster', 'what',
+    { ok: true, spoken: /explorer view.*\d+ agents here/ });
   const shotH = await page.screenshot(path.join(SHOTS, 'H-agent-map.png'));
 
   // ---- Idle listening cutoff: what can honestly be checked without a session --

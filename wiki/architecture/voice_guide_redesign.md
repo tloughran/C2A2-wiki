@@ -1044,6 +1044,54 @@ control exists, starts hidden, and `resume()` with no session is an inert no-op.
 agreed it was twitchy — but 30s of true dead air is a different quantity from
 30s since the last event, so the number and the rule changed together.
 
+## Q. When a sub-view and a tab share a name (Tom, 2026-07-26)
+
+Tom narrated this as the guide having "no memory" — it kept taking him to the
+Sociogram tool instead of the Agent Map's sociogram view, "sometimes it told me
+there was one, sometimes there was no such thing". None of that was memory. It
+was a **name collision I introduced**, and the model's flailing was the symptom.
+
+`Sociogram` is a real tab. I also named an Agent Map sub-view `sociogram`, plus
+`explorer` (three tabs contain that word) and an alias `map` (the tab's own
+name). Tabs resolve from `destinations.json` and sub-views resolve only at the
+engine's `unresolved` branch — so those three names **could never reach the
+sub-view**, from anywhere, by any phrasing.
+
+**"A sub-view can never shadow a real tab" is right in general and exactly wrong
+when the user is already standing on the tab that owns the name.** Being there
+IS the disambiguation — the principle already applied to `ambiguous`; it simply
+never fired here, because `sociogram` was never ambiguous, it was a clean tab
+match.
+
+Three changes, all in the shell rather than by renaming (renaming would hide the
+collision instead of handling it):
+
+1. **Standing on a tab, its own view wins**, and the assumption is spoken with
+   the alternative: *"this tab's sociogram view — say 'go Sociogram tab' for the
+   whole Sociogram"*.
+2. **`go <name> tab` forces the tab.** This is the phrase the message above
+   advertises, so it had to be real: no tab is literally called "sociogram tab",
+   which means it lands in `unresolved` and is forced there. Verified before
+   being advertised — an advertised phrase that does not work is the failure this
+   build keeps repairing.
+3. **`go <view> of <tab>` / `go <tab> <view>`**, from anywhere. Tom's last
+   failure was exactly this: having finally reached the view, he moved away and
+   could not ask for it back, because nothing addressed a view and a tab at once.
+   Cross-tab entry defers the view click to the frame's `load`, one-shot, so a
+   later navigation cannot inherit a stale intention.
+
+The engine change is one field: the `switchTab` plan now carries the RAW term
+beside the resolved label, because the shell cannot notice a collision it cannot
+see the words of.
+
+`map` was still dropped as an alias — it collides with the tab's own name, where
+no disambiguation rule can help.
+
+**The general lesson for the fan-out:** every remaining tab's sub-view names must
+be checked against the tab roster as they are declared. Three of the first six I
+wrote collided, and the audit could not catch it — the sweep checks that controls
+are *covered*, not that names are *distinct*.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

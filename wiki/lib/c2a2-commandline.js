@@ -685,7 +685,14 @@
         // Carry the verb so the shell can answer "which tabs, then?" -- an
         // unknown tab fails in the RESOLVER, never reaching the dispatcher.
         if (!r.ok) { r.verb = 'go'; return r; }
-        return { ok: true, kind: 'shell', action: 'switchTab', tab: r.id, label: r.label, journal: { dim: 'tab' } };
+        // Carry the RAW term alongside the resolved tab. A tab always wins here
+        // -- destinations.json is authoritative and sub-views resolve only on
+        // `unresolved` -- so a sub-view whose name is also a tab name ("the Agent
+        // Map's sociogram view") could never be reached: `go sociogram` matched
+        // the Sociogram TAB every time and the user was thrown across the app
+        // (Tom, 2026-07-26). The shell needs the original words to notice that
+        // the user is standing on a tab whose own view they just named.
+        return { ok: true, kind: 'shell', action: 'switchTab', tab: r.id, label: r.label, term: op.args[0], journal: { dim: 'tab' } };
       }
       case 'back':
         return { ok: true, kind: 'shell', action: 'back', journal: { dim: 'tab' } };
