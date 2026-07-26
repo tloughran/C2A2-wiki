@@ -1629,7 +1629,7 @@ var VoiceGuide = (function() {
       "  read | read details | stop                                             -- read the open article aloud (provenance held back; `read details` for it), or interrupt",
       "  find <text> | clear                                                    -- highlight-search across the graph",
       "  focus <a> ~ <b> [~ <c>...]                                            -- show the links between named groups",
-      "  go <tab> | go next | go previous | go first | go last | back           -- switch tabs; next/previous walk the row left to right",
+      "  go <tab> | go <link text> | go next|previous|first|last | back        -- switch tabs, or FOLLOW A LINK ON THE PAGE by its text; next/previous walk the tab row left to right",
       "  fit | zoom in | zoom out | pan left|right|up|down                      -- fit everything, step the zoom, or move the view",
       "  undo | redo | reset | restore                                          -- step history; restore = put the view back how it was",
       "  what | where | help                                                    -- ask about the current view",
@@ -1640,6 +1640,7 @@ var VoiceGuide = (function() {
       "If something is genuinely unavailable, say it in one clause and offer the nearest thing you CAN do -- never a paragraph about how you work.",
       "NEVER CLAIM VISIBILITY THE RESULT DOES NOT STATE. `ok` means the command RAN, not that the user can see anything. TWO DIFFERENT NUMBERS, AND THEY ARE NOT INTERCHANGEABLE: `shown` is how many nodes passed the FILTER -- it is true no matter where the camera is pointing, so it says what your COMMAND did, and you may report it ('showing 2,205 of 4,184'). `inView` is how many are actually inside the user's screen. ANY claim that something is visible, on screen, or 'there now' must rest on `inView` and NEVER on `shown`. If `inView` is 0, the user is looking at empty space no matter how large `shown` is: say so plainly and offer 'fit'. You have no camera and no idea where the middle of their screen is -- `inView` is the only thing that knows, so never guess past it. If `shown` is 0 or a `warning` is present, say plainly that nothing is on screen and offer the next step; do NOT say done, done for you, or that it is now visible. If the result carries neither number, describe only what `did` literally says.",
       "TAKE THE INITIATIVE -- NEVER AGREE AND THEN WAIT. If the user asks for something open-ended ('can we tour the detector?', 'show me around', 'where should I start?'), do NOT answer 'sure' and stop. START: pick a sensible first move, ISSUE the command, and say where you have begun and how to steer -- 'Starting with the Sociogram since we are here; stop me or redirect any time.' Then keep going: after each step take the next one unless the user redirects. Ending a turn with an offer and no action is the one habit to break; a tour that waits for permission at every step is not a tour.",
+      "LINKS ARE DOORS, AND YOU CAN OPEN THEM. Pages carry their own links -- 'See all 15 framings', 'Narrative Connectome' -- and most are NOT tabs, so they are reachable only by their own text: `go see all 15 framings`. `what` lists the links on the current page; use it before saying something cannot be reached. Two kinds are reported but NOT followed, and the result says which: a link that opens a new browser window (you cannot see into one) and a link that leaves the wiki. For those, say plainly that the user has to open it themselves. Never claim a page has no links without running `what`.",
       "MOVING AROUND. The tabs sit in a row, left to right, and the user cannot see it. 'go next' and 'go previous' walk that row in its visible order; 'go first' and 'go last' jump to its ends; 'go <name>' reaches any tab by name. `what` tells you which tab you are on and its position in the row. Use these to run a tour in order rather than guessing names.",
       "ACT ON A REASONABLE READING RATHER THAN HANDING THE QUESTION BACK. This is a voice tool: the user cannot see a list of options, so a returned question costs them far more than a stated assumption. If you can form a defensible reading of what they meant, ISSUE THE COMMAND and say what you assumed -- 'taking the philosophy ones as McGilchrist and Kastrup -- Rohr is arguable'. Soft language belongs on the INTERPRETATION, never on the outcome: what is on screen is reported exactly. A wrong guess costs one 'undo', so guess. Ask only when the reading is a genuine coin-flip (the engine says 'ambiguous') or when acting would be irreversible -- aim for well under one question in ten replies.",
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- name a couple and ask which they mean. On 'unresolved' say you could not find that, and offer the nearest thing you CAN do. On 'unsupported_here' say it is not available on this view and offer what the tab is for. When the result itself carries a 'taking X as Y' assumption, pass that on -- the user should always be able to hear when you guessed.",
@@ -1666,7 +1667,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab; also go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read the open article aloud), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-search), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read the open article aloud), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2774,6 +2775,82 @@ var VoiceGuide = (function() {
     var fr = d.querySelector(sp.frame);
     try { return (fr && fr.contentDocument) || null; } catch (e) { return null; }
   }
+  // ---- LINKS: a page's own doorways, reachable by voice everywhere ---------
+  //
+  // Both content manifests EXCLUDED links with the reason "voice reaches those
+  // by name via `go`". That was wrong, and Tom found it by having to reach for
+  // the mouse: "See all 15 framings" is not a tab, so `go` never could reach it.
+  // A link is a door the page itself put on screen, and clicking one is the most
+  // ordinary thing a reader does -- under the north star ("anything a user would
+  // ordinarily do can be said") it is not an optional per-tab extra.
+  //
+  // So this is SHELL-side and generic: any page gets it, with no declaration and
+  // no per-tab work. Declaring it per manifest would have made a universal
+  // capability wait its turn behind twelve fan-out increments.
+  //
+  // WHAT COUNTS AS FOLLOWABLE. Anchors the page uses to move WITHIN the app:
+  // data-target (the postMessage launch links), onclick handlers (openTool), and
+  // plain same-origin hrefs. Deliberately NOT followed:
+  //   - target="_blank" -- opens a NEW BROWSER TAB, which the guide cannot see
+  //     into or navigate; following one would strand the session behind a page
+  //     it cannot perceive, and popup blocking makes it unreliable besides.
+  //   - anything off this origin -- voice must not be a way to send the user to
+  //     an external site, and page content is not a trustworthy instruction.
+  // Both are still REPORTED, with what they are and why they are hand-work, so
+  // the limit is stated rather than the link silently not existing.
+  function linkKind(a) {
+    if ((a.getAttribute('target') || '') === '_blank') { return 'newtab'; }
+    var href = a.getAttribute('href') || '';
+    if (/^(https?:)?\/\//i.test(href)) {
+      try { if (new URL(href, a.ownerDocument.baseURI).origin !== location.origin) { return 'external'; } }
+      catch (e) { return 'external'; }
+    }
+    if (/^(mailto|tel):/i.test(href)) { return 'external'; }
+    return 'follow';
+  }
+  function pageLinks() {
+    var sp = itemSpec();
+    // Look where the ITEMS live: on a tab whose content is a nested app, the
+    // links the user can see are down there too, not in the tab's own document.
+    var d = (sp && sp.frame) ? specDoc(sp) : ifDoc();
+    if (!d) { return []; }
+    var els = [].slice.call(d.querySelectorAll('a[href], a[data-target], a[onclick]')), out = [];
+    for (var i = 0; i < els.length; i++) {
+      var a = els[i], text = (a.textContent || '').replace(/\s+/g, ' ').trim();
+      if (!text) { continue; }
+      var view = a.ownerDocument && a.ownerDocument.defaultView;
+      if (!a.offsetParent && view && view.getComputedStyle(a).display === 'none') { continue; }
+      // TWO STRINGS ON PURPOSE. `text` is everything the anchor contains and is
+      // what MATCHING runs against -- Start Here's "door" links wrap a whole
+      // paragraph, and the phrase a user would actually say ("open the review
+      // cards") sits at the END of it, so matching on a shortened form would
+      // miss the very links most in need of a spoken name. `label` is what gets
+      // SPOKEN: trailing arrow glyphs removed, because "go see all 15 framings
+      // right-arrow" is what read aloud, and clipped so a paragraph does not
+      // become a sentence of confirmation.
+      var label = text.replace(/[\s→←↗»›>]+$/, '').trim();
+      if (label.length > 60) { label = label.slice(0, 57).replace(/\s+\S*$/, '') + '...'; }
+      out.push({ label: label || text, text: text, kind: linkKind(a), el: a });
+    }
+    return out;
+  }
+  function followableLinks() {
+    return pageLinks().filter(function (l) { return l.kind === 'follow'; });
+  }
+  // Same matching shape as the tab resolver: exact first, then contained, so
+  // "framings" finds "See all 15 framings" without a tab ever being shadowed.
+  function matchLinks(term) {
+    var t = (term || '').toLowerCase().replace(/\s+/g, ' ').trim(), all = pageLinks(), i, exact = [], part = [];
+    if (!t) { return []; }
+    for (i = 0; i < all.length; i++) {
+      // Match on the FULL text (see pageLinks): the spoken phrase can sit
+      // anywhere inside a link that wraps a paragraph.
+      var full = all[i].text.toLowerCase(), lab = all[i].label.toLowerCase();
+      if (full === t || lab === t) { exact.push(all[i]); }
+      else if (full.indexOf(t) !== -1) { part.push(all[i]); }
+    }
+    return exact.length ? exact : part;
+  }
   // What the page says its FULL set is, when the page renders only part of it.
   // The cards app draws the first 60 of 1006; reporting 60 unqualified is the
   // same lie the graph's counter told when a cut was active ("4184 of 4184
@@ -3329,9 +3406,28 @@ var VoiceGuide = (function() {
           // for free -- a sub-view can never shadow a real tab.
           var v = enterView(p.term);
           if (v) { announceView(v); return show('go ' + v, 'ok'); }
-          var vs = viewNames();
+          // THEN the page's own links, for the same reason and in the same
+          // place: they are live and per-page, so the engine can only ever hand
+          // their names back unresolved. Resolving them LAST means a link can
+          // never shadow a real tab or a sub-view.
+          var hits = matchLinks(p.term);
+          if (hits.length === 1) {
+            var hit = hits[0];
+            if (hit.kind !== 'follow') {
+              return show('"' + hit.label + '" ' + (hit.kind === 'newtab'
+                ? 'opens in a new browser window, which I cannot see into -- open that one yourself'
+                : 'goes outside the wiki, so I will not follow it -- open it yourself if you want it'), 'err');
+            }
+            hit.el.click();
+            return show('go ' + hit.label, 'ok');
+          }
+          if (hits.length > 1) {
+            return show('Ambiguous "' + p.term + '": ' + hits.slice(0, 4).map(function (l) { return l.label; }).join(' | '), 'err');
+          }
+          var vs = viewNames(), ls = followableLinks();
           return show('no tab called "' + p.term + '". Here: ' + allTabButtons().map(btnName).slice(0, 8).join(', ') +
-                      (vs.length ? ('. On this view: ' + vs.join(', ')) : ''), 'err');
+                      (vs.length ? ('. On this view: ' + vs.join(', ')) : '') +
+                      (ls.length ? ('. Links on this page: ' + ls.slice(0, 5).map(function (l) { return l.label; }).join(', ')) : ''), 'err');
         }
         return show('Could not find "' + p.term + '".', 'err');
       }
@@ -3568,6 +3664,14 @@ var VoiceGuide = (function() {
     // answer from the render, not from the filter state that produced it.
     var items = activeItems();
     var itemNote = items.length ? ('  |  ' + itemsPhrase(items.length) + ' here') : '';
+    // A voice user cannot scan the page for its doors, so `what` has to say they
+    // are there -- an unmentioned link is, to them, a link that does not exist.
+    var lk = followableLinks();
+    if (lk.length) {
+      itemNote += '  |  ' + lk.length + ' link' + (lk.length > 1 ? 's' : '') + ': ' +
+                  lk.slice(0, 4).map(function (l) { return '"' + l.label + '"'; }).join(', ') +
+                  (lk.length > 4 ? ', ...' : '');
+    }
     var vNote = activeViewName();
     if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';

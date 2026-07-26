@@ -891,6 +891,57 @@ keeps falling out: **when a fix is verified, check that the assertion runs
 through the surface the user actually uses**, not merely through the function
 that was edited.
 
+## N. Links are doors, and they belong to every page (Tom, 2026-07-26)
+
+Both content manifests EXCLUDED the page's links, with the reason *"voice
+reaches those by name via `go`"*. That reason is false for every link that is
+not a tab — which is most of them. "See all 15 framings" is a page, not a tab,
+so `go` never could reach it, and Tom found the hole the only way left: with the
+mouse.
+
+Under the north star (*anything a user would ordinarily do can be said*),
+clicking a link is not an optional per-tab extra. It is one of the two or three
+most ordinary things a reader does.
+
+### N1. Shell-side and generic, deliberately
+
+Link-following is implemented once in the shell and works on **any** page with
+no declaration and no per-tab work. Declaring it per manifest would have parked
+a universal capability behind twelve fan-out increments — the same mistake as
+the reader living inside one tab (§the phase-1 note).
+
+It rides on **`go`**, resolved at the engine's `unresolved` branch **after**
+tabs and sub-views — the third thing to use that seam, for the third time for
+the same reason: links are live and per-page, so the engine can only hand their
+names back. Resolving them last means a link can never shadow a real
+destination, and precedence is settled without a rule.
+
+### N2. Two strings per link, on purpose
+
+Start Here's "door" links wrap a whole paragraph, and the phrase a person would
+actually say ("open the review cards") sits at the END of it. So matching runs
+against the anchor's FULL text, while the SPOKEN label strips trailing arrow
+glyphs — "go see all 15 framings right-arrow" is what the raw text reads aloud
+as — and clips at 60 characters so a paragraph does not become a sentence of
+confirmation.
+
+### N3. What is named but never followed
+
+- **`target="_blank"`** — opens a new browser window the guide cannot see into
+  or navigate; following one strands the session behind a page it cannot
+  perceive.
+- **Off-origin** — voice must not be a way to send someone to an external site,
+  and page content is not a trustworthy instruction.
+
+Both are still **reported by name, with the reason**, and the user is told to
+open them by hand. Silently omitting them would be the old lie in a new place:
+the user would hear that a link plainly on their screen is not there.
+
+`what` now lists the followable links, because to someone who cannot see the
+page an unmentioned link does not exist. In the manifests they moved from
+`controls_excluded` to `dim_coverage` (dim `tab`) — covered, not excluded —
+with only the genuinely unreachable ones left excluded.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

@@ -1037,6 +1037,29 @@ async function main() {
   await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
   await sleep(2500);
   await assertManifest(page, 'start_here', 'start_here.html');
+  // G0a-G0e: FOLLOWING A LINK BY VOICE. Both content manifests excluded links
+  // with the reason "voice reaches those by name via `go`" -- false for every
+  // link that is not a tab, which is most of them, and Tom found it by having to
+  // reach for the mouse to open the framings page (2026-07-26). Links resolve
+  // AFTER tabs and sub-views, so one can never shadow a real destination.
+  const whatLinks = await runCmd(page, 'what');
+  record('G0a what lists the page\'s links -- a link nobody mentions does not exist to a voice user',
+    /\d+ links: "See all 15 framings"/.test(whatLinks.spoken || ''), whatLinks.spoken);
+  await row(page, 'G0b go <link text> follows it', 'go see all 15 framings',
+    { ok: true, spoken: /go See all 15 framings/ });
+  await sleep(3000);
+  await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
+  // The two kinds that are NAMED but never followed. Silently omitting them
+  // would be the old lie in a new place: the user would hear that a link they
+  // can plainly see is not there.
+  await row(page, 'G0c a new-window link is named and refused, with the reason', 'go macintyre tradition page',
+    { ok: false, spoken: /opens in a new browser window.*open that one yourself/ });
+  await row(page, 'G0d an unknown term names the links that ARE here', 'go nonexistent thing',
+    { ok: false, spoken: /Links on this page: / });
+  await page.eval("var b=document.getElementById('nav-back'); if(b && !b.disabled){b.click();} return 1;");
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+
   const linkText = await page.eval(
     IFRAME_DOC + "var a = d.querySelector('a[data-target=\"fifteen\"]');" +
     "if (!a) { return '(link missing)'; } a.click(); return a.textContent.replace(/\\s+/g,' ').trim();");

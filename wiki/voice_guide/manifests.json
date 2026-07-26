@@ -640,8 +640,8 @@
       },
       "controls_excluded": [
         {
-          "match": "a, button",
-          "reason": "the page's own links and buttons are navigation into other tabs, which voice reaches by name via `go`"
+          "match": "a[target=_blank]",
+          "reason": "opens a NEW BROWSER WINDOW the guide cannot see into or navigate; reported by name when asked for, never followed"
         }
       ],
       "gestures": [
@@ -669,6 +669,13 @@
           "label": "Hover",
           "status": "excluded",
           "reason": "transient; no state"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": "a[href], a[data-target], a[onclick]",
+          "note": "The page's own doorways, reached by name with `go <link text>` -- resolved after tabs and sub-views so a link can never shadow either. These were EXCLUDED with the reason 'voice reaches those by name via go', which was false for every link that is not a tab: `See all 15 framings` is a page, not a tab, so go could never reach it and Tom had to use the mouse (2026-07-26). Link-following is shell-side and generic, so this declaration is bookkeeping for the sweep, not a per-tab implementation."
         }
       ]
     },
@@ -708,11 +715,7 @@
       "controls_excluded": [
         {
           "match": "a[target=_blank]",
-          "reason": "raw .md vault files opened in a NEW BROWSER TAB -- they leave the explorer entirely, so voice must not follow them as a side effect of walking sections"
-        },
-        {
-          "match": "a.tool",
-          "reason": "in-page shortcuts into other tabs (openTool). Voice reaches every one of those BY NAME via `go`, which is the covered path"
+          "reason": "raw .md vault files opened in a NEW BROWSER WINDOW -- the guide cannot see into one, so following it would strand the session behind a page it cannot perceive. Named on request, never followed."
         },
         {
           "match": "#doc-close",
@@ -736,6 +739,13 @@
           "label": "Hover",
           "status": "excluded",
           "reason": "transient; no state"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": "a[href], a[data-target], a[onclick]",
+          "note": "The page's own doorways, reached by name with `go <link text>` -- resolved after tabs and sub-views so a link can never shadow either. These were EXCLUDED with the reason 'voice reaches those by name via go', which was false for every link that is not a tab: `See all 15 framings` is a page, not a tab, so go could never reach it and Tom had to use the mouse (2026-07-26). Link-following is shell-side and generic, so this declaration is bookkeeping for the sweep, not a per-tab implementation."
         }
       ]
     },
