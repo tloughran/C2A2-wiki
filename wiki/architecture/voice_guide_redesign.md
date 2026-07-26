@@ -764,6 +764,80 @@ numeric ordinals are not in `pick`'s vocabulary at all (`random|first|last`),
 so "the third one" cannot be said; and `what is this` after a pick describes
 the TAB, never the picked ITEM.
 
+## L. The frame is the truth (second live review, 2026-07-26)
+
+### L1. `inView` — the guide had no idea where the middle of the screen was
+
+It reported `shown`, a FILTER result that is true no matter where the camera is
+pointing, and called that visible — while the tab's own status line read **0 in
+view** and Tom was looking at empty space. The count already existed; the shell
+simply never passed it on.
+
+`inView` is now **added to** `shown`, never substituted for it. The older
+comment arguing for `shown` is still right — in-view alone would report a
+correct filter as a small number merely because the viewport is tight — so the
+two now answer their two different questions: `shown` says what the COMMAND
+did, `inView` is the only thing any claim about VISIBILITY may rest on. At zero
+the bar says so outright and offers `fit`. The prompt states the split, in
+those terms.
+
+### L2. The SIXTH which-document instance, and the end of that family
+
+Start Here's "See all 15 framings" postMessages the shell to swap the frame
+while the Start Here chapter button stays lit. Every reader of view identity
+asked a BUTTON for its `data-src`, and a button only changes when a button is
+clicked — so in-page navigation was **invisible to the shell**. The guide could
+not see the new page, would not believe the user who said they had opened it,
+and `read` read the OLD document's cursor.
+
+`frameSrc()` derives identity from the iframe's actual `location.pathname`,
+with the button as fallback for the moment before the frame's first load. Both
+`activeSrc()` (the CCL/manifest path) and `activeTabSrc()` (where_am_i,
+describe_view, the four `!== wiki_narration.html` gates) share the ONE
+implementation — a second copy is precisely how these readers drifted apart
+five times before. **This is the last form the family can take**: derived from
+the frame, identity is right by construction no matter who navigated or how.
+
+The last button-derived answers were in `what` itself, which named the view
+"Start here (1 of 3)" while walking the framings page's sixteen sections —
+correct counts under the wrong name, the same species of lie. When frame and lit
+button disagree the frame wins: the page is named from its own `<title>` and a
+row position belonging to another document is dropped.
+
+`what_is_c2a2` is now a declared tab (`section.angle`, sixteen of them: fifteen
+numbered framings plus a Tech appendix that shares the class). The noun is
+`section`, not `framing`, so counting sixteen never contradicts the link's
+promise of fifteen.
+
+### L3. Frame history, because `location.replace` left one-way doors
+
+`setFrame` uses `location.replace` deliberately — browser Back would otherwise
+rewind the iframe while the tab bar kept its own state. The cost was that a page
+reached by an in-page link had **no way back at all**, since no tab button
+corresponds to it.
+
+So the shell keeps its own stack over FRAME DOCUMENTS — the thing a user
+experiences as "where I was" — with ← → in the command strip. They sit there
+rather than floating over the iframe because an overlay would cover whatever the
+tab puts in that corner (the Sociogram's filter panel). Moving through the stack
+re-syncs the chrome, so the bar cannot disagree with the frame. **The `back`
+verb rides the same stack**, or `back` would mean two different things depending
+on whether it was said or clicked.
+
+Also fixed en route: `syncShellToFrame` was bound `{once: true}`, so it ran for
+the FIRST frame load only — which is why a mid-session in-page navigation left
+the tab bar stale.
+
+### L4. Harness
+
+**Phase G** navigates by an in-page LINK, which no phase had ever done — every
+earlier phase clicked a tab button, which is exactly why nothing caught this.
+It asserts the resolved manifest, the spoken name, that `read` reads THIS
+document, and that button and verb share one history. **A2b** holds the empty
+screen: with the camera stranded, `shown` must stay unmoved while the
+visibility claim flips — asserted as a relationship, not two literals, so it
+keeps meaning something when an earlier row's filter state changes.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

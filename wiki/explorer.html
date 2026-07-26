@@ -355,6 +355,9 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 #ccl-stop { background:#C45B5B; color:#fff; border:none; border-radius:4px; padding:3px 10px; margin-right:8px; cursor:pointer; font-size:12px; font-weight:700; }
+.nav-btn { background:transparent; color:#9a9aa8; border:1px solid #3a3a4a; border-radius:4px; padding:2px 8px; margin-right:4px; cursor:pointer; font-size:13px; line-height:1.2; flex-shrink:0; }
+.nav-btn:hover:not(:disabled) { color:#C9A84C; border-color:#C9A84C; }
+.nav-btn:disabled { opacity:0.32; cursor:default; }
 #ccl-readhelp { background:transparent; color:#8a8a98; border:1px solid #3a3a4a; border-radius:50%; width:19px; height:19px; padding:0; margin-right:8px; cursor:pointer; font-size:12px; font-weight:700; line-height:1; flex-shrink:0; }
 #ccl-readhelp:hover { color:#C9A84C; border-color:#C9A84C; }
 #ccl-bar .ccl-sigil { color: #5B7FA5; font-weight: 700; }
@@ -424,6 +427,11 @@
 
 <!-- CCL command bar: type a command (e.g. "only levin friston"); press "/" to focus. -->
 <div id="ccl-bar">
+  <!-- Frame history. Deliberately in the shell's own strip rather than floating
+       over the iframe: an overlay would sit on top of whatever the tab puts in
+       that corner (the Sociogram's filter panel, for one). -->
+  <button id="nav-back" class="nav-btn" title="Back to the previous page in this frame" disabled>&#8592;</button>
+  <button id="nav-fwd" class="nav-btn" title="Forward" disabled>&#8594;</button>
   <button id="ccl-stop" style="display:none">&#9632; Stop reading</button>
   <!-- Always visible, not only while reading: the thing people most need to
        know (the guide goes deaf during a read) has to be learnable BEFORE
@@ -446,6 +454,34 @@
     try { frame.contentWindow.location.replace(url); }
     catch (e) { frame.setAttribute('src', url); }
   }
+  // THE IFRAME IS THE TRUTH ABOUT WHICH DOCUMENT IS SHOWING -- the button is not.
+  //
+  // Everything that asked "which view is this?" used to read a BUTTON's data-src,
+  // and a button only changes when a button is clicked. In-page navigation moves
+  // the iframe without touching any button: Start Here's "See all 15 framings"
+  // posts a message that swaps the frame to what_is_c2a2.html while chap-intro
+  // stays lit, so the shell went on insisting it was on Start Here. The guide
+  // then could not see the new page, would not believe the user who said they
+  // had opened it, and `read` read the OLD document's cursor (Tom, 2026-07-26).
+  //
+  // That is the SIXTH instance of this family (after activeTabSrc, activeTabBtn,
+  // activeSrc, the reader's title, and the hidden-row write) and the last one
+  // that can exist in this form: derived from the frame, view identity is right
+  // by construction no matter who navigated or how. Callers still fall back to
+  // the button, because the frame is unreadable until its first document loads.
+  //
+  // Returns a data-src-shaped path (no leading slash) so every existing
+  // `.split('/').pop()` comparison keeps working unchanged.
+  function frameSrc() {
+    try {
+      var p = frame && frame.contentWindow && frame.contentWindow.location.pathname;
+      if (!p || p === '/' || /\/$/.test(p)) { return ''; }
+      return p.replace(/^\/+/, '');
+    } catch (e) { return ''; }   // not loaded yet, or cross-origin
+  }
+  // Two IIFEs below need this and cannot see each other's scope. Sharing the ONE
+  // implementation is the point: a second copy is how the readers drifted apart.
+  window.CCLFrameSrc = frameSrc;
   var buttons = document.querySelectorAll('.tab-btn');
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function(e) {
@@ -580,6 +616,55 @@
   }
   frame.addEventListener('load', syncShellToFrame, { once: true });
   window.addEventListener('pageshow', function(e) { if (e.persisted) syncShellToFrame(); });
+
+  // ── IN-FRAME NAVIGATION HISTORY ──
+  // setFrame uses location.replace ON PURPOSE (see above): browser Back would
+  // otherwise rewind the iframe while the tab bar kept its own state, and the
+  // two would disagree. The cost of that choice is that the user has NO way back
+  // from a page reached by an in-page link -- Start Here's "See all 15 framings"
+  // is a one-way door, since no tab button corresponds to it.
+  //
+  // So the shell keeps its OWN stack rather than borrowing the browser's. Same
+  // reason as before: this history is over FRAME DOCUMENTS, which is the thing
+  // the user experiences as "where I was", and moving through it re-syncs the
+  // chrome, so the bar can never disagree with the frame.
+  var navStack = [], navIdx = -1, navMoving = false;
+  function syncNavButtons() {
+    var b = document.getElementById('nav-back'), f = document.getElementById('nav-fwd');
+    if (b) { b.disabled = navIdx <= 0; }
+    if (f) { f.disabled = navIdx < 0 || navIdx >= navStack.length - 1; }
+  }
+  function navRecord() {
+    var cur = frameSrc();
+    if (!cur) { return; }
+    if (navMoving) { navMoving = false; }            // a back/forward move: index already set
+    else if (navStack[navIdx] !== cur) {              // a new destination truncates any forward tail
+      navStack = navStack.slice(0, navIdx + 1);
+      navStack.push(cur);
+      navIdx = navStack.length - 1;
+    }
+    syncNavButtons();
+  }
+  function navGo(delta) {
+    var want = navIdx + delta;
+    if (want < 0 || want >= navStack.length) { return false; }
+    navIdx = want;
+    navMoving = true;
+    setFrame(navStack[navIdx] + '?v=' + Date.now());
+    syncNavButtons();
+    return true;
+  }
+  // Every frame load records, and re-syncs the chrome. syncShellToFrame was
+  // `{once:true}` above -- it only ever ran for the FIRST load, which is why a
+  // mid-session in-page navigation left the tab bar stale.
+  frame.addEventListener('load', function () { navRecord(); syncShellToFrame(); });
+  var navBackBtn = document.getElementById('nav-back');
+  var navFwdBtn = document.getElementById('nav-fwd');
+  if (navBackBtn) { navBackBtn.addEventListener('click', function () { navGo(-1); }); }
+  if (navFwdBtn) { navFwdBtn.addEventListener('click', function () { navGo(1); }); }
+  syncNavButtons();
+  // The `back` verb rides the same stack, so voice and the button agree.
+  window.CCLNavGo = navGo;
 
   // ── START-HERE LAUNCH LINKS ──
   // start_here.html posts {source:'c2a2-start-here', action:'navigate', target}.
@@ -1553,7 +1638,7 @@ var VoiceGuide = (function() {
       "STATING A LIMIT IS ALWAYS ALLOWED -- AND REQUIRED WHEN ASKED. If someone asks about something outside the explorer's state, say so in ONE clause and stop: 'I can only see the explorer's state, not your room.' The rule below bans narrating your own PLUMBING; it never bans the truth. When those two pull against each other, the truth wins every time.",
       "NEVER NARRATE THE MECHANISM. The tools, the checking, and your own capabilities are INVISIBLE to the user. Do not announce a check, do not describe the tools, do not stall. BANNED openings, verbatim and in every paraphrase: \'Let me check\', \'Let me take a look\', \'I will run a quick check\', \'One moment\', \'I do not have direct visual input\', \'the best way for me to understand what is on your screen\', \'I am going to\'. If you need to know the view, call run_command(\'what\') SILENTLY and answer from what it returns -- the call is not an event worth mentioning. Speak only the ANSWER.",
       "If something is genuinely unavailable, say it in one clause and offer the nearest thing you CAN do -- never a paragraph about how you work.",
-      "NEVER CLAIM VISIBILITY THE RESULT DOES NOT STATE. `ok` means the command RAN, not that the user can see anything. If the result carries `shown`, your confirmation must be built on that number -- e.g. 'showing 2,205 of 4,184'. If `shown` is 0 or a `warning` is present, say plainly that nothing is on screen and offer the next step; do NOT say done, done for you, or that it is now visible. If the result carries no `shown`, describe only what `did` literally says.",
+      "NEVER CLAIM VISIBILITY THE RESULT DOES NOT STATE. `ok` means the command RAN, not that the user can see anything. TWO DIFFERENT NUMBERS, AND THEY ARE NOT INTERCHANGEABLE: `shown` is how many nodes passed the FILTER -- it is true no matter where the camera is pointing, so it says what your COMMAND did, and you may report it ('showing 2,205 of 4,184'). `inView` is how many are actually inside the user's screen. ANY claim that something is visible, on screen, or 'there now' must rest on `inView` and NEVER on `shown`. If `inView` is 0, the user is looking at empty space no matter how large `shown` is: say so plainly and offer 'fit'. You have no camera and no idea where the middle of their screen is -- `inView` is the only thing that knows, so never guess past it. If `shown` is 0 or a `warning` is present, say plainly that nothing is on screen and offer the next step; do NOT say done, done for you, or that it is now visible. If the result carries neither number, describe only what `did` literally says.",
       "TAKE THE INITIATIVE -- NEVER AGREE AND THEN WAIT. If the user asks for something open-ended ('can we tour the detector?', 'show me around', 'where should I start?'), do NOT answer 'sure' and stop. START: pick a sensible first move, ISSUE the command, and say where you have begun and how to steer -- 'Starting with the Sociogram since we are here; stop me or redirect any time.' Then keep going: after each step take the next one unless the user redirects. Ending a turn with an offer and no action is the one habit to break; a tour that waits for permission at every step is not a tour.",
       "MOVING AROUND. The tabs sit in a row, left to right, and the user cannot see it. 'go next' and 'go previous' walk that row in its visible order; 'go first' and 'go last' jump to its ends; 'go <name>' reaches any tab by name. `what` tells you which tab you are on and its position in the row. Use these to run a tour in order rather than guessing names.",
       "ACT ON A REASONABLE READING RATHER THAN HANDING THE QUESTION BACK. This is a voice tool: the user cannot see a list of options, so a returned question costs them far more than a stated assumption. If you can form a defensible reading of what they meant, ISSUE THE COMMAND and say what you assumed -- 'taking the philosophy ones as McGilchrist and Kastrup -- Rohr is arguable'. Soft language belongs on the INTERPRETATION, never on the outcome: what is on screen is reported exactly. A wrong guess costs one 'undo', so guess. Ask only when the reading is a genuine coin-flip (the engine says 'ambiguous') or when acting would be irreversible -- aim for well under one question in ten replies.",
@@ -1828,6 +1913,12 @@ var VoiceGuide = (function() {
     // `.tab-btn.active` fallback reached into the HIDDEN tools row and returned
     // its still-active Sociogram button, so where_am_i/describe_view reported
     // (and described) the Sociogram while the user was on a chapter page.
+    // Frame first here too (see CCLFrameSrc): the four callers that gate on
+    // `!== 'wiki_narration.html'`, plus where_am_i and describe_view, all get a
+    // truer answer from the document that is actually loaded than from a button
+    // that in-page navigation never touched.
+    var fs = (typeof window.CCLFrameSrc === 'function') ? window.CCLFrameSrc() : '';
+    if (fs) { return fs; }
     var row2 = document.getElementById('row2');
     var row2edu = document.getElementById('row2-edu');
     var btn = null;
@@ -2269,11 +2360,35 @@ var VoiceGuide = (function() {
   // group-level filtering only -- so reporting it unqualified said "4184 of
   // 4184 shown" while two nodes were on screen. Report what is DRAWN, and name
   // the filter pass separately rather than letting the two numbers contradict.
+  // The tab already computes how many nodes are inside the CAMERA, and says so in
+  // its own status line; the shell simply never passed it on. So the guide had no
+  // idea where the middle of the screen was: it reported `shown` -- a filter
+  // result, true regardless of where the camera is pointing -- and called that
+  // visible, while the status line next to it read 0 in view and Tom was looking
+  // at empty space (2026-07-26).
+  function nodesInView() {
+    var d = ifDoc(), el = d && d.getElementById('graph-status');
+    if (!el) { return null; }
+    var m = /([\d,]+)\s+in view/.exec(el.textContent || '');
+    return m ? parseInt(m[1].replace(/,/g, ''), 10) : null;
+  }
+  // ADDED to `shown`, never substituted for it. The two answer different
+  // questions and the older comment above is still right: in-view alone would
+  // report a correct filter as a small number merely because the viewport is
+  // tight. So `shown` keeps saying what the COMMAND did, and in-view is what any
+  // claim about VISIBILITY has to rest on.
   function viewSuffix() {
     var n = nodesShown();
     if (n === null) { return ''; }
-    if (cutIds) { return '  |  ' + cutIds.length + ' nodes drawn (' + n.shown + ' pass the filters)'; }
-    return '  |  ' + n.shown + ' of ' + n.total + ' nodes shown';
+    var base = cutIds
+      ? '  |  ' + cutIds.length + ' nodes drawn (' + n.shown + ' pass the filters)'
+      : '  |  ' + n.shown + ' of ' + n.total + ' nodes shown';
+    var iv = nodesInView();
+    if (iv === null) { return base; }
+    // Say the empty screen out loud. A count of zero here is the one case where
+    // every other number in the line is true and the user can still see nothing.
+    if (iv === 0) { return base + '  |  NONE of them are on screen right now -- say "fit" to bring them back'; }
+    return base + '  |  ' + iv + ' on screen';
   }
   function setSearch(v) { var d = ifDoc(), el = d && d.getElementById('search-input'); if (el) { el.value = v; } }
   // CCL find/clear are PLAIN highlight-search: never route through the Sociogram's
@@ -2292,6 +2407,10 @@ var VoiceGuide = (function() {
   // is why declaring start_here alone did nothing: the tab could never be
   // identified. activeTabBtn already knows which row is visible; use it.
   function activeSrc() {
+    // Frame first, button second -- see CCLFrameSrc. The button is only the
+    // answer before the frame has loaded anything.
+    var fs = (typeof window.CCLFrameSrc === 'function') ? window.CCLFrameSrc() : '';
+    if (fs) { return fs; }
     var btn = activeTabBtn();
     return btn ? (btn.getAttribute('data-src') || '') : '';
   }
@@ -3346,7 +3465,15 @@ var VoiceGuide = (function() {
       }
       lastTabBtn = activeTabBtn(); btn.click(); return show('go ' + p.label, 'ok');
     }
-    if (p.action === 'back') { if (lastTabBtn) { lastTabBtn.click(); lastTabBtn = null; return show('back', 'ok'); } return show('nothing to go back to', 'err'); }
+    // The frame stack first: it is the only history that knows about pages with
+    // no tab button, which is exactly where `back` used to strand people (open
+    // the fifteen framings, then there was nothing to go back TO). Falls through
+    // to the old one-slot button memory when the frame stack has nowhere to go.
+    if (p.action === 'back') {
+      if (typeof window.CCLNavGo === 'function' && window.CCLNavGo(-1)) { lastTabBtn = null; return show('back', 'ok'); }
+      if (lastTabBtn) { lastTabBtn.click(); lastTabBtn = null; return show('back', 'ok'); }
+      return show('nothing to go back to', 'err');
+    }
   }
   function execJournal(p) {
     if (p.action === 'undo') { var u = journal.undo(TAB); if (!u) { return show('nothing to undo', 'err'); } writeDim(u.dim, u.value); return show('undid (' + u.dim + ')' + frameSuffix(), 'ok'); }
@@ -3359,6 +3486,21 @@ var VoiceGuide = (function() {
     var b = activeTabBtn(), name = b ? btnName(b) : '(unknown)', on = onGroups();
     var row = visibleRowButtons(), pos = '';
     for (var ri = 0; ri < row.length; ri++) { if (row[ri] === b) { pos = '  (' + (ri + 1) + ' of ' + row.length + ', left to right)'; } }
+    // The NAME and the row position were the last button-derived answers here.
+    // Reached by an in-page link, the frame holds a page no button points at, so
+    // `what` said "view: Start here (1 of 3)" while walking the sixteen sections
+    // of the framings page -- correct counts under the wrong name, which is the
+    // same species of lie as the counts themselves being wrong. When the frame
+    // and the lit button disagree, the FRAME wins: name the page from its own
+    // <title>, and drop a row position that belongs to a different document.
+    var fs = (typeof window.CCLFrameSrc === 'function') ? window.CCLFrameSrc() : '';
+    var btnSrc = b ? (b.getAttribute('data-src') || '') : '';
+    if (fs && btnSrc && fs.split('/').pop() !== btnSrc.split('/').pop()) {
+      var fd = ifDoc();
+      var ft = (fd && fd.title ? fd.title : '').split(/\s+[—-]\s+/)[0].trim();
+      name = ft || fs.split('/').pop().replace(/\.html$/, '').replace(/[_-]+/g, ' ');
+      pos = '';
+    }
     // `what` is the question "am I looking at what I asked for?" -- so it must
     // answer from the render, not from the filter state that produced it.
     var items = activeItems();
@@ -3369,6 +3511,10 @@ var VoiceGuide = (function() {
     var res = show('view: ' + name + pos + (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote) + cutNote + viewSuffix(), 'ok');
     var nv = nodesShown();
     if (nv) { res.shown = nv.shown; res.total = nv.total; }
+    // Structured, not just prose: the guide is told in its prompt that any claim
+    // about what is VISIBLE must be built on this field and never on `shown`.
+    var iv = nodesInView();
+    if (iv !== null) { res.inView = iv; }
     return res;
   }
 

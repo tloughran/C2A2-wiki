@@ -672,6 +672,73 @@
         }
       ]
     },
+    "what_is_c2a2": {
+      "aka": [
+        "what is c2a2",
+        "fifteen framings",
+        "15 framings",
+        "framings",
+        "the framings",
+        "what_is_c2a2"
+      ],
+      "tier": "T1",
+      "_reached_note": "Not a tab and not in destinations.json -- it is reached from Start Here's \"See all 15 framings\" link, which postMessages the shell to swap the frame while the Start Here chapter button stays lit. Before frameSrc() the shell could not see this page at all, so the guide insisted it was still on Start Here, disbelieved the user who said otherwise, and `read` read the OLD document's cursor (Tom, 2026-07-26). Declared here so arriving by that link lands on a real manifest instead of degrading to shell caps.",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "stop"
+      ],
+      "knobs": [],
+      "items": {
+        "kind": "dom",
+        "select": "section.angle",
+        "label": {
+          "sel": "h2"
+        },
+        "noun": "section",
+        "_note": "16 section.angle blocks: fifteen NUMBERED framings plus a 'Tech -- Under the Hood' appendix that shares the class. Walking all sixteen rather than filtering to :has(.idx) so the appendix stays reachable; the noun is `section`, not `framing`, so counting sixteen never contradicts the link's promise of fifteen framings. The h2 label carries its own index ('1.'), so the spoken name is already numbered."
+      },
+      "controls_excluded": [
+        {
+          "match": "a[target=_blank]",
+          "reason": "raw .md vault files opened in a NEW BROWSER TAB -- they leave the explorer entirely, so voice must not follow them as a side effect of walking sections"
+        },
+        {
+          "match": "a.tool",
+          "reason": "in-page shortcuts into other tabs (openTool). Voice reaches every one of those BY NAME via `go`, which is the covered path"
+        },
+        {
+          "match": "#doc-close",
+          "reason": "closes the page's own markdown overlay; the overlay is opened only by an excluded link, so nothing voice can do ever leaves it open"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the page",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the sections scrolls them into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "hover",
+          "label": "Hover",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ]
+    },
     "community_explorer": {
       "aka": [
         "community explorer",

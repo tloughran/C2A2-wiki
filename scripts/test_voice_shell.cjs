@@ -289,6 +289,9 @@ function runCmd(page, cmd) {
     "var r = window.CCLRun(" + JSON.stringify(cmd) + ");" +
     "var el = document.getElementById('ccl-result');" +
     "return { spoken: (r && r.spoken) || null, ok: !!(r && r.ok), shown: (r && typeof r.shown === 'number') ? r.shown : null," +
+    // inView is the CAMERA count -- the only field a claim about visibility may
+    // rest on. Carried separately from `shown` precisely because they disagree.
+    "         inView: (r && typeof r.inView === 'number') ? r.inView : null," +
     "         total: (r && typeof r.total === 'number') ? r.total : null, bar: el ? el.textContent : null, cls: el ? el.className : null };"
   );
 }
@@ -554,6 +557,21 @@ async function main() {
   await derangeCamera(page);
   const stranded = await settledInView(page);
   record('A2a precondition: the camera really was stranded', stranded === 0, 'in-view before the reveal was ' + stranded);
+  // THE EMPTY SCREEN, SAID OUT LOUD. With the camera stranded, every number the
+  // guide used to report was true and the user could still see nothing: `shown`
+  // is a filter result and knows nothing about where the camera points, so the
+  // guide "had no idea where the middle of my screen is" and called things
+  // visible that were not (Tom, 2026-07-26). `shown` must NOT move -- the filter
+  // really did pass 4 -- while the visibility claim flips.
+  const strandedWhat = await runCmd(page, 'what');
+  // Asserting the RELATIONSHIP, not two literals: whatever the filter passed, it
+  // stays passed while the camera is elsewhere, and only the visibility claim
+  // flips. A hardcoded pair would break every time an earlier row's filter state
+  // changed, and would say nothing about the thing that was actually wrong.
+  record('A2b what admits the screen is empty while the filter count stays honest',
+    /NONE of them are on screen/.test(strandedWhat.spoken || '') &&
+    strandedWhat.inView === 0 && strandedWhat.shown > 0,
+    strandedWhat.spoken.slice(0, 90) + ' ...  [inView=' + strandedWhat.inView + ' shown=' + strandedWhat.shown + ']');
   await row(page, 'A2a a reveal reframes a camera left in empty space', 'only levin friston',
     { ok: true, spoken: /centred/, inView: function (v) { return v === 4; } });
   await row(page, 'A2a2 undo again, back to boot', 'undo',
@@ -1007,6 +1025,57 @@ async function main() {
     { ok: false, spoken: /Not available on this view/ });
   const shotF = await page.screenshot(path.join(SHOTS, 'F-subviews.png'));
 
+  // ---- Phase G: a page reached by an IN-PAGE LINK, and the way back ---------
+  //
+  // Start Here's "See all 15 framings" postMessages the shell to swap the frame
+  // while the Start Here chapter button stays lit. Nothing in the shell watched
+  // the frame, so: the guide could not see the new page, would not believe the
+  // user who said they had opened it, and `read` read the OLD document's cursor
+  // (Tom, 2026-07-26). Every phase before this one navigated by clicking a tab
+  // button, which is exactly why no phase caught it.
+  process.stdout.write('\nPhase G -- in-page navigation, frame-derived identity, and frame history\n');
+  await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+  const linkText = await page.eval(
+    IFRAME_DOC + "var a = d.querySelector('a[data-target=\"fifteen\"]');" +
+    "if (!a) { return '(link missing)'; } a.click(); return a.textContent.replace(/\\s+/g,' ').trim();");
+  record('G1 the framings link is where the user says it is', /15 framings/.test(linkText), 'clicked: ' + linkText);
+  await sleep(3000);
+  // The whole point: identity now follows the FRAME, so a page with no tab
+  // button of its own still resolves to its own manifest.
+  await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
+  await row(page, 'G2 what -> names the page it is ACTUALLY on, not the lit chapter', 'what',
+    { ok: true, spoken: /view: What Is C2A2\?/ });
+  const gWhat = await runCmd(page, 'what');
+  record('G2a and it drops a row position that belongs to a different document',
+    !/left to right/.test(gWhat.spoken || ''), gWhat.spoken);
+  await row(page, 'G3 pick first -> walks THIS page, numbered by its own headings', 'pick first',
+    { ok: true, spoken: /1\.Fulfillment.*\|\s*1 of 16 sections/ });
+  await row(page, 'G4 next', 'next', { ok: true, spoken: /2 of 16 sections/ });
+  const gRead = await runCmd(page, 'read');
+  record('G5 read reads THIS document, not the previous one',
+    /reading 2\.Accelerator/.test(gRead.spoken || ''), gRead.spoken);
+  await runCmd(page, 'stop');
+
+  // The way back. setFrame uses location.replace on purpose, so there was no
+  // browser history to lean on and a page like this was a one-way door.
+  const backOk = await page.eval("var b=document.getElementById('nav-back'); if(!b||b.disabled){return 'disabled';} b.click(); return 'clicked';");
+  record('G6 the back button is live on a page reached by a link', backOk === 'clicked', 'nav-back: ' + backOk);
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+  await row(page, 'G7 and the guide agrees it is back on Start Here', 'what',
+    { ok: true, spoken: /view: Start here.*3 sections here/ });
+  const fwdOk = await page.eval("var f=document.getElementById('nav-fwd'); if(!f||f.disabled){return 'disabled';} f.click(); return 'clicked';");
+  record('G8 forward is offered only after going back', fwdOk === 'clicked', 'nav-fwd: ' + fwdOk);
+  await sleep(2500);
+  await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
+  // Voice and the button must share ONE history, or `back` means two things.
+  await row(page, 'G9 the back VERB rides the same stack as the button', 'back', { ok: true, spoken: /^back$/ });
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+  const shotG = await page.screenshot(path.join(SHOTS, 'G-inpage-nav.png'));
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -1014,7 +1083,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');
