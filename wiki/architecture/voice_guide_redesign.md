@@ -661,6 +661,109 @@ it" this suite exists to catch.
 search and camera (increment 2); the cards app's filters, sort and its own
 search (increment 2); its map / PRS / overview views (increment 3).
 
+## K. The soft layer, made hard (Tom's live review, 2026-07-26)
+
+Tom's first end-to-end run found four symptoms that reduce to **two root causes
+and two honesty gaps**. All four were in the SHELL; none were in the item model.
+
+### K1. `go <tool tab>` produced a state no human click can produce
+
+The `.tab-btn` click handler set the frame and moved `.active` inside its own
+row — and nothing else. A human can never reach that path, because a human
+cannot click a button in a hidden row. **Voice can.** So `go sociogram` from a
+chapter page loaded the Sociogram into the iframe while `#row2` stayed hidden
+and `.chap-btn.active` stayed on the chapter. Everything downstream —
+`activeTabBtn` → `activeSrc` → `activeManifest` — then resolved to the CHAPTER:
+every graph verb answered "not available on this view" while the user was
+looking straight at the graph.
+
+The severe form is not the refusal but the **fabrication**: `what` read the
+Sociogram's real filters and node counts out of the iframe and narrated them
+under the title "Start here". No prompt rule can defend against that, because
+the instrument itself was lying. This is the **fifth** instance of the
+which-document family and the first that is a bad **write** rather than a bad
+read — so the fix is `revealOwningRow()`, at the single place the state
+changes, shared with `syncShellToFrame` so the two cannot drift apart again.
+The drift between those two was the bug.
+
+**Assume a sixth.** The family has now bitten `activeTabSrc`, `activeTabBtn`,
+`activeSrc`, the reader's title, and the row/chapter state.
+
+### K2. Synonyms belong in the grammar, not in the model's good intentions
+
+`pick first` had always worked. Every way Tom actually SAID it did not:
+`pick first card`, `pick first section`, `what is this` → `too_many_args`;
+`open the first card` → a ten-verb word list. A guide that accepts exactly one
+blessed word per intent is a command line with a microphone attached.
+
+Leaving the paraphrase to the model was the standing design, and it is what
+failed: the common phrasings then depend on the model's worst day. So the
+mapping is now **data in `verbs.json`, deterministic and under test** — the
+model's latitude sits ON TOP of that for genuinely novel phrasing, not
+underneath it as the only line of defence (§5, "if code can answer, code
+answers").
+
+- **`filler`** — words the grammar does not need (`the`, `this`, `is`,
+  `section`, `card`, `node`…). Stripped ONLY on the arity-error branch of
+  `none` / `opt` / `one`, and NEVER for `text` / `many` verbs, so a search
+  string, tab name or group list cannot lose a token.
+- **`aliases`** — `select` / `choose` → `pick`, `search` / `highlight` →
+  `find`, `quiet` → `stop`. **Context-sensitive where the word is genuinely
+  ambiguous**: `open levin` still opens a node's article, `open first` moves
+  the cursor, disambiguated by ARGUMENT SHAPE via `when_arg_in` — never by
+  guessing.
+- **`near`** — the graceful fallback when a verb has no meaning here at all:
+  offered only where the near verb is really in this tab's caps.
+
+Two invariants are enforced at grammar-compile time, so a bad declaration dies
+at load with a named reason: **a filler word may not also be an enum value**
+(put `out` in the list and `zoom out` becomes `missing_arg`), and **an alias
+may not silently shadow a real verb** without `when_arg_in` (aliasing `back`
+would have quietly broken `go back` — caught by this rule while writing it).
+
+### K3. The reader promised an interrupt nobody had built
+
+The bar said `say "stop" to interrupt` for a month. **Nothing routed a spoken
+"stop" to `run_command`** — the prompt asked the model to "act on a clear
+instruction" without ever saying that acting meant calling the tool, and a
+voice model hearing "stop" reads it as barge-in on its own speech. Typed `stop`
+worked, which is why it survived review. Two contradictory comments sat in the
+same function, one claiming the mic stays live and the next claiming it is off.
+
+**Tom's call: mute during reading.** The mic is muted at read start and handed
+back on stop, on end, and on speech error. Consequences, stated plainly rather
+than discovered later: the guide is **deaf for the whole article**, so the
+on-screen **Stop reading** button is the only interrupt, and the message names
+it. In exchange the guide stops listening to wiki prose read AT it — a token
+cost and a live injection surface, since any sentence in an article can read as
+an instruction.
+
+A `?` beside the command bar opens reader instructions in the shell's existing
+help modal. **Every sentence in that help text describes behaviour held by a
+row in `test_voice_shell.cjs`** — help drifting ahead of the build is exactly
+how "say stop" came to be advertised for a month.
+
+### K4. What the harness gained, and the row that would have caught it
+
+`D8-D10` arrive at a tool tab **by voice, from a chapter page** — which nothing
+had ever done; every earlier row reached the Sociogram by clicking a button
+already on screen. They assert the **resolved manifest**, not the spoken line,
+because the old bug said "go Sociogram" perfectly while leaving the shell
+pointing at Start Here.
+
+`E7-E11` hold Tom's verbatim phrasings, the mic contract (spied at the
+`CCLSetMic` seam, which is engine-independent), and the `?`.
+
+Two rows were **reversed, not deleted**: `A24b` used to demand the words
+`say "stop" to interrupt`, and `A24c` asserted a visible Stop button during
+playback — which passed only because nothing tore the reader down when speech
+FAILED, so headless it sat offering to stop a read that was never happening.
+
+**Still not addressable, and named rather than absorbed:** `open card 1` —
+numeric ordinals are not in `pick`'s vocabulary at all (`random|first|last`),
+so "the third one" cannot be said; and `what is this` after a pick describes
+the TAB, never the picked ITEM.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

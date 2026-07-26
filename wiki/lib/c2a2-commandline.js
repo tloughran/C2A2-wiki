@@ -49,7 +49,36 @@
       if (byVerb[spec.verb]) { throw new Error('CCL grammar: duplicate verb "' + spec.verb + '"'); }
       byVerb[spec.verb] = spec;
     }
-    return { byVerb: byVerb, dimensions: verbsJson.dimensions, verbs: verbsJson.verbs };
+    const filler = Array.isArray(verbsJson.filler) ? verbsJson.filler : [];
+    const aliases = Array.isArray(verbsJson.aliases) ? verbsJson.aliases : [];
+
+    // Two invariants, enforced HERE so a bad declaration dies at load with a
+    // named reason rather than quietly changing what a command means.
+    for (const w of filler) {
+      // A filler word that is also an enum value would delete the argument it
+      // is part of: put "out" in the list and `zoom out` becomes missing_arg.
+      for (const spec of verbsJson.verbs) {
+        if (spec.enum && spec.enum.indexOf(w) !== -1) {
+          throw new Error('CCL grammar: filler "' + w + '" is also a value of ' + spec.verb + ' -- it would eat the argument');
+        }
+      }
+    }
+    for (const a of aliases) {
+      if (!a || !a.say || !a.means) { throw new Error('CCL grammar: alias needs {say, means}'); }
+      if (!byVerb[a.means]) { throw new Error('CCL grammar: alias "' + a.say + '" points at unknown verb "' + a.means + '"'); }
+      // An alias that shadows a real verb silently redefines it. Allowed ONLY
+      // when argument shape tells the two apart (`open first` vs `open levin`).
+      if (byVerb[a.say] && !Array.isArray(a.when_arg_in)) {
+        throw new Error('CCL grammar: alias "' + a.say + '" shadows the verb of the same name; give it when_arg_in or drop it');
+      }
+      if (Array.isArray(a.when_arg_in) && !a.when_arg_in.length) {
+        throw new Error('CCL grammar: alias "' + a.say + '" has an empty when_arg_in, so it can never fire');
+      }
+    }
+    return {
+      byVerb: byVerb, dimensions: verbsJson.dimensions, verbs: verbsJson.verbs,
+      filler: filler, aliases: aliases
+    };
   }
 
   // ---- helpers -------------------------------------------------------------
@@ -77,6 +106,48 @@
     return out;
   }
 
+  // VOICE TOLERANCE, applied only where a parse has ALREADY failed on arity.
+  //
+  // People put the noun back in ("pick first section", "pick first card") and
+  // use a copula ("what is this"). Each of those returned too_many_args --
+  // rejected one redundant word away from a command that works, which is what
+  // made Start Here's sections feel unreachable while a bare `pick first` had
+  // been working all along. The redundant noun carries NO information the
+  // grammar lacks, so this is normalization, not a guess: it is silent, and
+  // nothing is narrated back. (Contrast the resolver's "taking X as Y", which
+  // narrates because it really did choose between live candidates.)
+  //
+  // Narrow by construction: the caller only reaches this on the arity-error
+  // branch of `none` / `opt` / `one`. `text` and `many` verbs never call it, so
+  // a search string, a tab name, or a group list cannot be silently eaten.
+  function stripFiller(rest, grammar) {
+    const filler = grammar && grammar.filler;
+    if (!filler || !filler.length || !rest) { return rest; }
+    return rest.split(' ').filter(function (w) { return filler.indexOf(w) === -1; }).join(' ').trim();
+  }
+
+  // Pick / select / choose / open are one intent in ordinary speech, and a
+  // guide that accepts only the blessed word is not conversational -- it is a
+  // command line with a microphone. The mapping is DATA (verbs.json aliases)
+  // and deterministic, so the common phrasings cannot fail on a model's bad
+  // day; the model's own latitude handles what is genuinely novel, on top of
+  // this rather than instead of it.
+  //
+  // `strippedRest` is the argument AFTER filler removal, because shape is what
+  // separates the two senses of a shadowing alias: `open first` is a cursor
+  // move, `open levin` opens that node's article. Anything not listed in
+  // when_arg_in keeps the original verb untouched.
+  function resolveAlias(verb, strippedRest, grammar) {
+    const aliases = grammar && grammar.aliases;
+    if (!aliases || !aliases.length) { return verb; }
+    for (const a of aliases) {
+      if (a.say !== verb) { continue; }
+      if (Array.isArray(a.when_arg_in) && a.when_arg_in.indexOf(strippedRest) === -1) { continue; }
+      return a.means;
+    }
+    return verb;
+  }
+
   function err(code, echo, extra) {
     const out = { ok: false, error: code, echo: echo };
     if (extra) { for (const k in extra) { out[k] = extra[k]; } }
@@ -98,13 +169,21 @@
     const verb = (sp === -1 ? echo : echo.slice(0, sp)).toLowerCase();
     const rest = sp === -1 ? '' : echo.slice(sp + 1).trim();
 
-    const spec = grammar.byVerb[verb];
+    // Synonyms resolve before anything else, so every check below sees the one
+    // canonical verb. A shadowing alias (`open`) fires only when the argument
+    // shape says so, which is why the stripped form is computed first.
+    const stripped = stripFiller(rest, grammar);
+    const spec = grammar.byVerb[resolveAlias(verb, stripped, grammar)];
     if (!spec) { return err('unknown_verb', echo, { verb: verb }); }
+
+    // Free-text and list verbs keep every word the user said: a search string,
+    // a tab name and a group list must never have a token quietly removed.
+    const bare = (spec.args === 'text' || spec.args === 'many') ? rest : stripped;
 
     switch (spec.args) {
 
       case 'none': {
-        if (rest) { return err('too_many_args', echo, { verb: verb }); }
+        if (rest && bare) { return err('too_many_args', echo, { verb: verb }); }
         // const-valued verbs (fit/read/stop) carry their fixed value as the arg
         const args = Object.prototype.hasOwnProperty.call(spec, 'const') ? [spec['const']] : [];
         return ok(spec, args, echo);
@@ -113,21 +192,22 @@
       // 0 or 1 token: `all` means every group, `all tags` every member of that
       // family. One verb, two scopes, no new vocabulary to learn.
       case 'opt': {
-        if (!rest) {
+        if (!bare) {
           var dflt = Object.prototype.hasOwnProperty.call(spec, 'const') ? [spec['const']] : [];
           return ok(spec, dflt, echo);
         }
-        if (rest.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
-        return ok(spec, [rest], echo);
+        if (bare.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
+        return ok(spec, [bare], echo);
       }
 
       case 'one': {
         if (!rest) { return err('missing_arg', echo, { verb: verb }); }
-        if (rest.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
-        if (spec.enum && spec.enum.indexOf(rest) === -1) {
+        if (!bare) { return err('missing_arg', echo, { verb: verb }); }
+        if (bare.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
+        if (spec.enum && spec.enum.indexOf(bare) === -1) {
           return err('bad_enum', echo, { verb: verb, allowed: spec.enum });
         }
-        return ok(spec, [rest], echo);
+        return ok(spec, [bare], echo);
       }
 
       case 'text': {
@@ -554,8 +634,17 @@
     'what', 'where', 'help',
   ];
 
-  function unsupported(op, caps) {
-    return { ok: false, error: 'unsupported_here', verb: op.verb, supported: caps.slice().sort() };
+  // A verb that means something HERE under another name is worth naming, once.
+  // "open the first card" on a content tab is not a confused request -- picking
+  // an item IS opening it -- but it used to come back as a ten-verb word list,
+  // which on a voice-only surface is close to no answer at all. Data, not a
+  // branch: a verb declares `near`, and it is offered only when the near verb
+  // is actually supported on this view.
+  function unsupported(op, caps, grammar) {
+    const out = { ok: false, error: 'unsupported_here', verb: op.verb, supported: caps.slice().sort() };
+    const spec = grammar && grammar.byVerb ? grammar.byVerb[op.verb] : null;
+    if (spec && spec.near && caps.indexOf(spec.near) !== -1) { out.near = spec.near; }
+    return out;
   }
 
   // Resolve every term of a multi-term filter/focus op against the roster.
@@ -581,7 +670,7 @@
     ctx = ctx || {};
     const caps = ctx.caps || SOCIOGRAM_CAPS;
     if (!op || op.ok !== true) { return op; }                 // pass parse errors through
-    if (caps.indexOf(op.verb) === -1) { return unsupported(op, caps); }
+    if (caps.indexOf(op.verb) === -1) { return unsupported(op, caps, ctx.grammar); }
 
     switch (op.verb) {
       case 'go': {
@@ -702,7 +791,7 @@
         return { ok: true, kind: 'read', action: op.verb };
 
       default:
-        return unsupported(op, caps);
+        return unsupported(op, caps, ctx.grammar);
     }
   }
 

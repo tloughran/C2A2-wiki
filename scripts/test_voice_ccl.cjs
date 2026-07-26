@@ -140,10 +140,63 @@ check('unknown verb -> unknown_verb (with verb echoed)', function () {
   assert.strictEqual(op.error, 'unknown_verb');
   assert.strictEqual(op.verb, 'florb');
 });
-check('none-verb with trailing args -> too_many_args ("undo that")', function () {
-  assert.strictEqual(CCL.parse('undo that', grammar).error, 'too_many_args');
+// "undo that" USED to be an arity error. It is the phrasing a person actually
+// says, and "that" adds nothing the grammar needs, so it is now normalized away
+// rather than rejected. The arity rule itself is unchanged -- a word carrying
+// real content still fails, which the row below this one holds.
+check('none-verb with a filler word -> accepted, not rejected ("undo that")', function () {
+  const op = CCL.parse('undo that', grammar);
+  assert.strictEqual(op.ok, true);
+  assert.strictEqual(op.verb, 'undo');
+});
+check('none-verb with a CONTENTFUL trailing arg still -> too_many_args', function () {
+  assert.strictEqual(CCL.parse('undo everything', grammar).error, 'too_many_args');
 });
 check('fit with args -> too_many_args', function () { assert.strictEqual(CCL.parse('fit now', grammar).error, 'too_many_args'); });
+
+// ---- the phrasings a person actually says (2026-07-26 live review) ----------
+// Every one of these came back as a hard error while a bare `pick first` had
+// been working the whole time, which is what made Start Here's sections feel
+// unreachable. They are listed verbatim because they are evidence, not guesses.
+check('spoken phrasings reach the cursor: noun, article and copula tolerated', function () {
+  ['pick first', 'pick first card', 'pick first section', 'pick the first card',
+   'select first', 'choose the first section', 'open the first card', 'open first'
+  ].forEach(function (said) {
+    const op = CCL.parse(said, grammar);
+    assert.strictEqual(op.ok, true, said + ' did not parse');
+    assert.strictEqual(op.verb, 'pick', said + ' -> ' + op.verb);
+    assert.deepStrictEqual(op.args, ['first'], said + ' args');
+  });
+});
+check('"what is this" is the same question as "what"', function () {
+  const op = CCL.parse('what is this', grammar);
+  assert.strictEqual(op.ok, true);
+  assert.strictEqual(op.verb, 'what');
+});
+// The alias must NOT swallow the sense it shadows: `open <node>` still opens an
+// article. Shape decides, so this can never become a coin-flip.
+check('"open levin" is still the article verb, not the cursor', function () {
+  const op = CCL.parse('open levin', grammar);
+  assert.strictEqual(op.verb, 'open');
+  assert.deepStrictEqual(op.args, ['levin']);
+});
+// The blast radius of filler stripping: free-text and list verbs keep every
+// word. If this ever fails, a search or a filter is silently losing a term.
+check('filler is NEVER stripped from free-text or list arguments', function () {
+  assert.deepStrictEqual(CCL.parse('find the card', grammar).args, ['the card']);
+  assert.deepStrictEqual(CCL.parse('go community explorer', grammar).args, ['community explorer']);
+  assert.deepStrictEqual(CCL.parse('only levin friston', grammar).args, ['levin', 'friston']);
+});
+check('grammar rejects a filler word that is also an enum value', function () {
+  const bad = JSON.parse(JSON.stringify(VERBS));
+  bad.filler = (bad.filler || []).concat(['out']);          // would break `zoom out`
+  assert.throws(function () { CCL.compileGrammar(bad); }, /would eat the argument/);
+});
+check('grammar rejects an alias that silently shadows a real verb', function () {
+  const bad = JSON.parse(JSON.stringify(VERBS));
+  bad.aliases = (bad.aliases || []).concat([{ say: 'back', means: 'previous' }]);
+  assert.throws(function () { CCL.compileGrammar(bad); }, /shadows the verb/);
+});
 check('one-verb missing arg -> missing_arg ("zoom")', function () { assert.strictEqual(CCL.parse('zoom', grammar).error, 'missing_arg'); });
 check('one-verb extra arg -> too_many_args ("zoom in out")', function () { assert.strictEqual(CCL.parse('zoom in out', grammar).error, 'too_many_args'); });
 check('zoom enum enforced ("zoom sideways" -> bad_enum)', function () {

@@ -43,6 +43,25 @@
       "fingerprint": "semantic"
     }
   },
+  "_filler_note": "Words a person says that the grammar does not need. Spoken English puts the noun back in ('pick first section', 'pick first card') and uses a copula ('what is this'); every one of those used to return too_many_args -- a hard error one redundant word away from a command that already worked, which is what made the first tab's items feel unreachable in Tom's 2026-07-26 review. The rescue is deliberately NARROW: it fires ONLY after a parse has already failed on arity, and NEVER on `text` or `many` verbs, so a search string (`find levin`), a tab name (`go community explorer`) or a group list (`only levin friston`) can never be silently eaten. Generic item nouns only -- no word here may also be a real group, tradition or tab name, which is why `community` is absent and `section`/`card` are safe.",
+  "_aliases_note": "The SOFT layer, made hard. A conversational guide cannot require one blessed word per intent -- people say pick / select / choose / open for the same act -- but leaving that to the model means the common phrasings fail whenever the model does, which is exactly how `open the first card` died in Tom's 2026-07-26 review. Synonyms therefore resolve HERE, deterministically and under test; the model's latitude sits on TOP of this for genuinely novel phrasing, not underneath it as the only line of defence. CONTEXT-SENSITIVE where the word is genuinely ambiguous: `open levin` opens a node's article on the Sociogram, while `open first` means pick -- disambiguated by ARGUMENT SHAPE (after filler stripping), never by guessing. `when_arg_in` restricts the rewrite to those shapes; without it the alias is unconditional.",
+  "aliases": [
+    { "say": "select", "means": "pick" },
+    { "say": "choose", "means": "pick" },
+    { "say": "open", "means": "pick", "when_arg_in": ["first", "last", "random"] },
+    { "say": "highlight", "means": "find" },
+    { "say": "search", "means": "find" },
+    { "say": "quiet", "means": "stop" },
+    { "say": "silence", "means": "stop" },
+    { "say": "continue", "means": "next" },
+    { "say": "forward", "means": "next" }
+  ],
+  "filler": [
+    "the", "a", "an", "this", "that", "it", "is", "are", "please",
+    "one", "item", "items", "thing", "things",
+    "section", "sections", "card", "cards", "article", "articles",
+    "node", "nodes", "entry", "entries", "row", "rows"
+  ],
   "verbs": [
     {
       "verb": "go",
@@ -104,6 +123,8 @@
       "verb": "open",
       "dim": "selection",
       "op": "set",
+      "_near_note": "On a content tab, picking an item IS opening it. Offered ONLY where `pick` is actually in that tab's caps, so this can never advertise a verb the view lacks.",
+      "near": "pick",
       "args": "text",
       "kind": "value",
       "inverse": "close"

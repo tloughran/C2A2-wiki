@@ -635,14 +635,28 @@ async function main() {
   // the right text was handed to the right system.
   const readRes = await runCmd(page, 'read');
   record('A24 read takes the open article, by word count', /reading .+\s*\|\s*\d+ words/.test(readRes.spoken || ''), readRes.spoken);
-  record('A24b the offered interrupt is one that WORKS (mic stays live, so voice stop is real)',
-    /say "stop" to interrupt/.test(readRes.spoken || ''), readRes.spoken);
+  // REVERSED 2026-07-26 (Tom's call). This row used to demand the words
+  // 'say "stop" to interrupt' -- and passed for a month while NOTHING routed a
+  // spoken stop to run_command. A test can only hold a promise the build keeps,
+  // so it now holds the opposite: name the button, never ask the user to speak
+  // at a microphone that is muted.
+  record('A24b the offered interrupt is one that WORKS (the button, not a voice command)',
+    /Stop reading/.test(readRes.spoken || '') && !/say "stop"/i.test(readRes.spoken || ''), readRes.spoken);
   record('A24d the reader waits for a live guide rather than talking over it',
     await page.eval("return typeof window.CCLDeferSpeak === 'function' || !document.getElementById('vg-launch');"),
     'CCLDeferSpeak hook present (or no voice UI on this build)');
-  record('A24c a visible Stop control appears while reading',
-    await page.eval("var b=document.getElementById('ccl-stop'); return !!b && b.style.display !== 'none';"),
-    'ccl-stop visible during playback');
+  // Was "a visible Stop appears while reading". That passed only because nothing
+  // tore the reader down when speech FAILED -- so headless, where there is no
+  // speech engine at all, the button sat there offering to stop a read that was
+  // never happening. The utterance's onerror now ends the read properly, which
+  // means visibility is no longer observable in this environment. What is still
+  // checkable, and is what actually matters, is that the control and its help
+  // exist and are wired to something.
+  record('A24c the Stop control and its instructions exist and are wired',
+    await page.eval(
+      "var s=document.getElementById('ccl-stop'), h=document.getElementById('ccl-readhelp');" +
+      "return !!s && !!h && typeof window.showReaderHelp === 'function';"),
+    'ccl-stop + ccl-readhelp present, showReaderHelp defined');
   // The speech script is a pure text transformation over the real article DOM,
   // so it IS testable headlessly -- unlike the voice itself.
   const script = await page.eval(
@@ -807,6 +821,32 @@ async function main() {
   await row(page, 'D6 go next -> walk it left to right', 'go next', { ok: true, spoken: /2 of \d+/ });
   await sleep(2000);
   await row(page, 'D7 go previous -> and back', 'go previous', { ok: true, spoken: /1 of \d+/ });
+
+  // D8-D10: ARRIVING AT A TOOL TAB BY VOICE, which nothing had ever done -- every
+  // earlier row reached the Sociogram by clicking a button that was already on
+  // screen. `go sociogram` from a chapter page clicks a button in a HIDDEN row,
+  // a thing no human can do, and the shell used to leave the chapter selected
+  // and the row hidden. Everything downstream then resolved to the CHAPTER:
+  // graph verbs came back unsupported (Tom, 2026-07-26 -- "zooming isn't
+  // available in this view" while looking straight at the Sociogram), and worse,
+  // `what` read the Sociogram's real filters out of the iframe and narrated them
+  // under the title "Start here". Assert the RESOLVED MANIFEST, not the spoken
+  // line: the old bug said "go Sociogram" perfectly and still left the shell
+  // pointing at Start Here.
+  await page.eval("var b = document.getElementById('chap-intro'); if (b) { b.click(); } return true;");
+  await sleep(2500);
+  await assertManifest(page, 'start_here', 'start_here.html');
+  await row(page, 'D8 go sociogram FROM a chapter page', 'go sociogram', { ok: true, spoken: /go sociogram/i });
+  await tabReady(page, 'sociogram');
+  await assertManifest(page, 'sociogram', SOCIOGRAM_SRC);
+  const shellChrome = await page.eval(
+    "var r2=document.getElementById('row2'), c=document.querySelector('.chap-btn.active');" +
+    "return { rowShown: !!r2 && r2.style.display !== 'none', chap: c ? c.textContent.replace(/\\s+/g,' ').trim() : '(none)' };");
+  record('D9 the visible chrome agrees: tools row shown, chapter follows the tab',
+    shellChrome.rowShown === true && /Accelerator Tools/.test(shellChrome.chap),
+    'row2 shown: ' + shellChrome.rowShown + ', chapter: ' + shellChrome.chap);
+  await row(page, 'D10 and the graph verbs actually work once you are there', 'zoom in',
+    { ok: true, spoken: /zoom in/ });
   const shotD = await page.screenshot(path.join(SHOTS, 'D-chapter.png'));
 
   // ---- Phase E: the item model on a CONTENT tab ---------------------------
@@ -834,6 +874,56 @@ async function main() {
   await row(page, 'E5 stop', 'stop', { ok: true, spoken: /^stopped$/ });
   await row(page, 'E6 only levin -> still honestly unsupported on a content tab', 'only levin',
     { ok: false, spoken: /Not available on this view/ });
+
+  // E7-E9: the phrasings from Tom's 2026-07-26 live review. `pick first` had
+  // always worked; every way he actually SAID it was rejected, which is what
+  // made the sections feel unreachable. Held here, on a real tab, because the
+  // engine test can prove the parse but not that the cursor moved.
+  await row(page, 'E7 "open the first card" reaches the cursor (open ~ pick, by arg shape)', 'open the first card',
+    { ok: true, spoken: /1 of \d+ sections/ });
+  await row(page, 'E8 "choose the last section" -- a synonym plus a redundant noun', 'choose the last section',
+    { ok: true, spoken: /3 of 3 sections/ });
+  await row(page, 'E9 "what is this" asks the same question as "what"', 'what is this',
+    { ok: true, spoken: /\d+ sections here/ });
+
+  // E10: THE READER'S PROMISE. The bar used to say 'say "stop" to interrupt'
+  // while nothing routed a spoken stop anywhere -- an advertised capability the
+  // build did not have. The mic is muted during a read (Tom's call, 2026-07-26),
+  // so the message must name the button, and must NOT tell anyone to speak.
+  const readPromise = await runCmd(page, 'read');
+  record('E10 the reading message names the interrupt that actually works',
+    /Stop reading/.test(readPromise.spoken || '') && !/say "stop"/i.test(readPromise.spoken || ''),
+    readPromise.spoken);
+  // The MUTE itself, spied at the seam rather than inferred. Deliberately not
+  // asserting that #ccl-stop is on screen: headless Chrome has no speech engine,
+  // so the utterance errors immediately and the (correct) teardown hides the
+  // button again before anything can observe it. The mic contract does not
+  // depend on an engine, so that is what is held here.
+  const micCalls = await page.eval(
+    "var real = window.CCLSetMic, seen = [];" +
+    "window.CCLSetMic = function (on) { seen.push(!!on); return real.apply(this, arguments); };" +
+    "window.CCLRun('read'); var out = seen.slice(); window.CCLSetMic = real; return out;");
+  // The trailing `true` seen headless is the no-speech-engine teardown handing
+  // the mic straight back, which is correct: nothing is being read, so nothing
+  // should stay muted. The claim under test is only that starting a read mutes.
+  record('E10a reading mutes the mic (the guide goes deaf on purpose)',
+    Array.isArray(micCalls) && micCalls.indexOf(false) !== -1,
+    'CCLSetMic calls during read: ' + JSON.stringify(micCalls));
+  const micBack = await page.eval(
+    "var real = window.CCLSetMic, seen = [];" +
+    "window.CCLSetMic = function (on) { seen.push(!!on); return real.apply(this, arguments); };" +
+    "window.CCLRun('stop'); var out = seen.slice(); window.CCLSetMic = real; return out;");
+  record('E10b stop hands the mic back (a session that read once is not deaf forever)',
+    Array.isArray(micBack) && micBack.indexOf(true) !== -1,
+    'CCLSetMic calls during stop: ' + JSON.stringify(micBack));
+  const helpWired = await page.eval(
+    "var b=document.getElementById('ccl-readhelp'); if(!b){return 'no ? button';}" +
+    "b.click(); var m=document.getElementById('help-modal'), t=document.getElementById('help-title');" +
+    "var open = m && m.style.display === 'flex'; var title = t ? t.textContent : '';" +
+    "if (typeof closeHelp === 'function') { closeHelp(); }" +
+    "return open ? title : 'modal did not open';");
+  record('E11 the ? opens reader instructions', helpWired === 'Reading aloud', 'help title: ' + helpWired);
+
   const shotE = await page.screenshot(path.join(SHOTS, 'E-items.png'));
 
   // ---- Phase F: a tab with SUB-VIEWS, and items one document deeper --------
