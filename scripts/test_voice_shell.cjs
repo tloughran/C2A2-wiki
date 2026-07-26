@@ -1058,6 +1058,30 @@ async function main() {
     /reading 2\.Accelerator/.test(gRead.spoken || ''), gRead.spoken);
   await runCmd(page, 'stop');
 
+  // G5b-G5d: THE PATH THE VOICE GUIDE ACTUALLY ANSWERS FROM.
+  //
+  // Everything above this drives window.CCLRun. The guide's `what` and `where`
+  // deliberately bypassed CCLRun for the bus, so this whole phase could pass --
+  // and did -- while the guide told Tom "you're now on the Start here page,
+  // under the 'intro' tab" with the framings page in front of him, and then
+  // argued when he said otherwise. `intro` was chap.id minus its prefix: the
+  // frame-derived src reached activeTabSrc and was thrown away one function
+  // later. Testing the path I had fixed instead of the path the user talks to
+  // is exactly how this shipped, so the perception verbs are now held here.
+  const vgWhere = await page.eval("return window.VGWhere();");
+  record('G5b where_am_i names the page the user is on, not the lit chapter',
+    !!vgWhere && vgWhere.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgWhere.title || ''),
+    JSON.stringify(vgWhere));
+  record('G5c and it never falls back to a chapter id while a frame document exists',
+    !!vgWhere && vgWhere.tab !== 'intro' && !/Start here/i.test(vgWhere.title || ''),
+    'tab=' + (vgWhere && vgWhere.tab) + ' title=' + (vgWhere && vgWhere.title));
+  // A page with no bus listener answers supported:false -- that is honest and
+  // expected. What must NOT happen is it identifying itself as somewhere else.
+  const vgDesc = await page.eval("return window.VGDescribe().then(function (d) { return d; });");
+  record('G5d describe_view carries the right identity even when the tab cannot answer',
+    !!vgDesc && vgDesc.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgDesc.title || ''),
+    JSON.stringify(vgDesc));
+
   // The way back. setFrame uses location.replace on purpose, so there was no
   // browser history to lean on and a page like this was a one-way door.
   const backOk = await page.eval("var b=document.getElementById('nav-back'); if(!b||b.disabled){return 'disabled';} b.click(); return 'clicked';");
@@ -1066,6 +1090,9 @@ async function main() {
   await assertManifest(page, 'start_here', 'start_here.html');
   await row(page, 'G7 and the guide agrees it is back on Start Here', 'what',
     { ok: true, spoken: /view: Start here.*3 sections here/ });
+  const vgBack = await page.eval("return window.VGWhere();");
+  record('G7a where_am_i agrees too -- one answer, not two',
+    !!vgBack && vgBack.tab === 'start_here', JSON.stringify(vgBack));
   const fwdOk = await page.eval("var f=document.getElementById('nav-fwd'); if(!f||f.disabled){return 'disabled';} f.click(); return 'clicked';");
   record('G8 forward is offered only after going back', fwdOk === 'clicked', 'nav-fwd: ' + fwdOk);
   await sleep(2500);

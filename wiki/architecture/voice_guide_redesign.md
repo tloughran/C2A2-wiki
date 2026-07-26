@@ -838,6 +838,59 @@ screen: with the camera stranded, `shown` must stay unmoved while the
 visibility claim flips — asserted as a relationship, not two literals, so it
 keeps meaning something when an earlier row's filter state changes.
 
+## M. L2 was only half a fix — and the harness said otherwise (Tom's recording, 2026-07-26)
+
+Tom recorded a live session and asked whether it was a failed test of §L2. **It
+was.** Standing on the fifteen-framings page, the guide said *"You're now on the
+'Start here' page, under the 'intro' tab"* and then argued with him when he said
+he was not. Phase G was green the whole time.
+
+### M1. The frame truth was reached, then thrown away one function later
+
+`activeTabSrc()` correctly returned `what_is_c2a2.html`. `tabForSrc()` searches
+`TABS`, which has no entry for a page reached by an in-page link, so it returned
+null — and `whereAmI()` dropped straight through to `.chap-btn.active`. The word
+`intro` in the guide's answer was literally `chap.id` minus its prefix.
+
+A page with no TABS entry and no button is **still where the user is**, so it is
+now named from its own document (`<title>`, first clause). The chapter is the
+answer only when there is no frame document at all. `describeView()`'s base
+follows the same rule.
+
+### M2. The real defect: ONE verb, TWO implementations
+
+`run_command` intercepted `what` and `where` **before** `window.CCLRun` and sent
+them to the bus instead. So every fix made to the CCL answer — naming the page
+from the frame, dropping a row position belonging to another document, the whole
+item model, `inView` — was reachable from the **typed bar** and invisible to the
+**voice guide**, which is the surface that actually gets used. §2 of this
+document says one code path; the perception verbs had quietly forked from it.
+
+`what` now calls the engine FIRST and always, and **merges** the bus descriptor
+when the tab supplies one. Merge, not replace: the bus is genuinely richer where
+it exists (live counts, dominant cluster). The payoff is that every future
+manifest declaration becomes visible to the voice guide for free, which was the
+premise of the whole fan-out and had silently not been true.
+
+### M3. The testing lesson, which is the durable one
+
+**I asserted the path I had fixed rather than the path the user talks to.**
+Phase G drives `window.CCLRun`; the guide's `what`/`where` bypassed it. Nothing
+headless could reach the perception verbs at all, so the suite could not have
+caught this no matter how many rows it had.
+
+`window.VGWhere` / `window.VGDescribe` now expose them read-only (no session, no
+broker, no mic — `describeView` is the same postMessage with the same 700ms
+timeout the live path uses), and `G5b-G5d` + `G7a` hold them. G5c is written as
+the negative the recording produced: **never** a chapter id or "Start here"
+while a frame document exists.
+
+This is the same shape as the two gaps before it — nothing had ever arrived at a
+tool tab by voice; nothing had ever navigated by an in-page link. The rule that
+keeps falling out: **when a fix is verified, check that the assertion runs
+through the surface the user actually uses**, not merely through the function
+that was edited.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

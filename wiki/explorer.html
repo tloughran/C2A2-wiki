@@ -1939,10 +1939,33 @@ var VoiceGuide = (function() {
     return b ? b.textContent.trim() : (src || 'unknown');
   }
   // Shell-only: which tab/chapter is active. Never needs tab cooperation.
+  // The frame's own <title>, first clause only:
+  // "What Is C2A2? — Fifteen angles" -> "What Is C2A2?".
+  function frameTitle() {
+    try {
+      var d = document.getElementById('content-frame').contentDocument;
+      var t = (d && d.title) ? d.title : '';
+      return t.split(/\s+[—-]\s+/)[0].trim();
+    } catch (e) { return ''; }
+  }
   function whereAmI() {
     var src = activeTabSrc();
     var t = tabForSrc(src);
     if (t) return { ok: true, tab: t.key, src: src, title: labelForSrc(src) };
+    // A page reached by an IN-PAGE LINK has no TABS entry and no button of its
+    // own, and `tabForSrc` returning null used to drop straight through to the
+    // lit chapter -- so standing on the fifteen-framings page the guide said
+    // "you're on the Start here page, under the intro tab" and argued with the
+    // user who said otherwise (Tom's recording, 2026-07-26). `intro` was
+    // literally chap.id minus its prefix. The frame fix reached activeTabSrc
+    // and was then THROWN AWAY right here, one function downstream.
+    //
+    // It is still where the user is, so name it from the document itself. The
+    // chapter is the answer only when there is no frame document at all.
+    if (src) {
+      return { ok: true, tab: src.split('/').pop().replace(/\.html$/, ''), src: src,
+               title: frameTitle() || labelForSrc(src) };
+    }
     var chap = document.querySelector('.chap-btn.active');
     return { ok: true,
              tab: chap ? chap.id.replace('chap-', '') : 'unknown', src: '',
@@ -1953,7 +1976,12 @@ var VoiceGuide = (function() {
   function describeView() {
     var src = activeTabSrc();
     var t = tabForSrc(src);
-    var base = { tab: t ? t.key : (src || 'unknown'), title: labelForSrc(src) };
+    // Same rule as whereAmI: a page with no TABS entry is named from its own
+    // document, not from a filename and not from the lit chapter.
+    var base = t
+      ? { tab: t.key, title: labelForSrc(src) }
+      : { tab: src ? src.split('/').pop().replace(/\.html$/, '') : 'unknown',
+          title: (src && frameTitle()) || labelForSrc(src) };
     return new Promise(function(resolve) {
       var win;
       try { win = document.getElementById('content-frame').contentWindow; } catch (e) { win = null; }
@@ -1978,6 +2006,16 @@ var VoiceGuide = (function() {
     });
   }
   function assign(dst, src) { for (var k in src) if (src.hasOwnProperty(k)) dst[k] = src[k]; return dst; }
+
+  // The perception verbs, exposed READ-ONLY for scripts/test_voice_shell.cjs.
+  // These are what the voice guide actually answers navigation questions from,
+  // and until now nothing headless could reach them: the harness drove CCLRun,
+  // which `what` and `where` deliberately bypassed. So the suite was green while
+  // the guide told Tom he was on a page he had left. Costs nothing -- no session,
+  // no broker, no mic; describeView is a postMessage to the tab with a 700ms
+  // timeout, exactly as the live path runs it.
+  window.VGWhere = whereAmI;
+  window.VGDescribe = describeView;
 
   // Bus responses / pushes from the active tab (separate from the c2a2-start-here
   // listener above so neither has to know about the other).
@@ -2078,7 +2116,32 @@ var VoiceGuide = (function() {
           // window.CCLRun -- the SAME parse->plan->execute path the typed command
           // bar uses (redesign section 2, one code path).
           if (/^what\b/i.test(cmd)) {
-            pending = describeView().then(function (dv) { return { ok: true, command: cmd, view: dv }; });
+            // TWO IMPLEMENTATIONS OF ONE VERB was the real defect behind Tom's
+            // recording. `what` forked away from window.CCLRun to the bus, so
+            // every fix made to the CCL answer -- naming the page from the frame,
+            // dropping a row position from another document, the whole item
+            // model, `inView` -- was reachable from the TYPED bar and invisible
+            // to the voice guide, which is the surface that actually gets used.
+            // Phase G asserted the path I had fixed rather than the path the user
+            // talks to, so it passed while the guide argued that he was still on
+            // Start Here.
+            //
+            // Now the engine answers FIRST and always, and the bus descriptor is
+            // added when the tab supplies one. The bus is genuinely richer where
+            // it exists (live counts, dominant cluster) -- so this merges, it
+            // does not replace. Every future manifest becomes visible to the
+            // guide for free, which is the whole premise of the fan-out.
+            var rw = (typeof window.CCLRun === 'function') ? window.CCLRun(cmd) : null;
+            pending = describeView().then(function (dv) {
+              var out = { ok: true, command: cmd, view: dv };
+              if (rw) {
+                out.did = rw.spoken;
+                if (typeof rw.shown === 'number') { out.shown = rw.shown; }
+                if (typeof rw.total === 'number') { out.total = rw.total; }
+                if (typeof rw.inView === 'number') { out.inView = rw.inView; }
+              }
+              return out;
+            });
           } else if (/^where\b/i.test(cmd)) {
             pending = Promise.resolve(whereAmI());
           } else if (typeof window.CCLRun === 'function') {
