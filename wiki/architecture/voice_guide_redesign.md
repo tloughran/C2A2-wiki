@@ -995,7 +995,7 @@ mean two different things.
 
 A live session left listening is not neutral. It keeps hearing the room long
 after the user has forgotten it is on, and then speaks up in the middle of
-something it was never addressed by. So after **10 seconds** of quiet the mic
+something it was never addressed by. So after **30 seconds** of quiet the mic
 mutes itself and a **Resume conversation** button appears — the complement to
 *End conversation*, so coming back is one deliberate click rather than a session
 that was quietly listening the whole time.
@@ -1014,17 +1014,35 @@ the idle clock is **not armed while reading**: no speech event can arrive with
 the mic already off, so it would guarantee a pause partway through every article
 and leave the user talking into a dead mic afterwards.
 
-**Any sign of life from either side restarts the clock** — every event on the
-data channel, not just the user's voice. Counting only the user would cut off
-someone who is listening to a long answer.
+### What is measured is DEAD AIR, not time since the last packet
+
+The first cut restarted the clock on every data-channel event, which made the
+window mean "quiet since the last thing that happened". Tom named the flaw: a
+user pausing five seconds after a five-second answer was already partway through
+their allowance, when nothing about that is idle.
+
+The clock now runs **only in the gap after someone finishes speaking**, and is
+held down entirely while either party has the floor:
+
+| event | effect |
+|---|---|
+| `input_audio_buffer.speech_started` | hold — the user is talking |
+| `input_audio_buffer.speech_stopped` | **arm** — dead air begins here |
+| `response.created` | hold — the guide is talking |
+| `response.done` | **arm** — the gap starts here |
+
+Long answers and long questions therefore cost nothing against the budget; only
+silence does. Both boundaries matter: arming only on the user's side would start
+counting during the guide's own answer.
 
 ### Not verified by the harness — check this one by hand
 
 The 10-second behaviour needs a LIVE realtime session to observe, and minting
 one costs money. `I1` asserts only what is honestly checkable headlessly: the
 control exists, starts hidden, and `resume()` with no session is an inert no-op.
-**The timing itself is unverified.** 10s may prove twitchy for someone thinking
-mid-sentence; it is one constant (`IDLE_MS`) if it wants to be 20 or 30.
+**The timing itself is unverified.** 30s (`IDLE_MS`) after Tom tried 10s and
+agreed it was twitchy — but 30s of true dead air is a different quantity from
+30s since the last event, so the number and the rule changed together.
 
 ## I. Still open, reserved to Tom
 

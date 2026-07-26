@@ -1200,21 +1200,35 @@ var VoiceGuide = (function() {
   // Muted means no audio is captured and no input tokens are billed, though the
   // connection does stay open -- worth saying plainly rather than implying the
   // session costs nothing while paused.
-  var IDLE_MS = 10000;
+  var IDLE_MS = 30000;
   var idleTimer = null;
   function clearIdle() { if (idleTimer) { clearTimeout(idleTimer); idleTimer = null; } }
-  // Any sign of life from EITHER side restarts the clock -- the user speaking,
-  // the guide answering, a command running. Counting only the user's voice would
-  // cut off someone who is listening to a long answer.
-  function noteActivity() {
+  // WHAT IS BEING MEASURED IS DEAD AIR, not time since the last packet.
+  //
+  // The first cut restarted the clock on EVERY data-channel event, which made
+  // the window mean "quiet since the last thing that happened" -- so a user
+  // pausing five seconds after a five-second answer was already halfway through
+  // it (Tom, 2026-07-26). The clock now runs only in the gap AFTER someone
+  // finishes speaking, and is held down entirely while either party is talking:
+  //
+  //   holdIdle()  <- user starts speaking, or the guide's response opens
+  //   armIdle()   <- user stops speaking, or the guide's response completes
+  //
+  // Long answers and long questions therefore cost nothing against the budget;
+  // only silence does.
+  function holdIdle() { clearIdle(); }
+  function armIdle() {
     if (!live || idlePaused) { return; }
     clearIdle();
-    // While the page reads, the mic is already off by the reader's request and
-    // no speech event can arrive. Arming the timer here would guarantee a pause
-    // partway through every article, and the user would come back to a dead mic.
+    // While the page reads, the mic is already off at the reader's request and
+    // no speech event can arrive. Arming here would guarantee a pause partway
+    // through every article, and the user would come back to a dead mic.
     if (!micWanted) { return; }
     idleTimer = setTimeout(pauseListening, IDLE_MS);
   }
+  // Kept as the name other code calls; it means "the floor is open, start
+  // counting from now".
+  function noteActivity() { armIdle(); }
   function pauseListening() {
     if (!live || idlePaused) { return; }
     clearIdle();
@@ -2163,10 +2177,17 @@ var VoiceGuide = (function() {
     try { m = JSON.parse(ev.data); } catch (e) { return; }
     // Trace every event except the high-frequency audio/transcript deltas.
     if (DEBUG && m.type && m.type.indexOf('.delta') === -1) dbg('ev ' + m.type);
-    // Anything arriving on this channel means the conversation is alive -- the
-    // user speaking, the guide answering, a tool returning. Restart the clock.
-    noteActivity();
+    // Deliberately NOT restarting the idle clock on every event -- see armIdle.
+    // Only the four speech boundaries below move it.
     switch (m.type) {
+      // The user has the floor: stop counting until they stop.
+      case 'input_audio_buffer.speech_started':
+        holdIdle();
+        break;
+      // They stopped. THIS is where dead air begins.
+      case 'input_audio_buffer.speech_stopped':
+        armIdle();
+        break;
       case 'conversation.item.input_audio_transcription.completed':
         if (m.transcript) addLine('You', m.transcript.trim());
         break;
@@ -2251,10 +2272,12 @@ var VoiceGuide = (function() {
       }
       case 'response.created':
         responseActive = true;
+        holdIdle();          // the guide has the floor
         clearTimeout(_hangTimer);
         break;
       case 'response.done':
         responseActive = false;
+        armIdle();           // it finished talking; the gap starts here
         // The page's reader waits for the guide to finish speaking, so the two
         // voices hand over instead of colliding. Deliberate two-voice design
         // (Tom, 2026-07-25): the guide introduces, the page reads.
