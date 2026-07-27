@@ -1,0 +1,3434 @@
+{
+  "_about": "Recovered from C2A2_Explorer_Complete_User_Guide.pdf (117pp, captured 2026-07-26). Plates and captions are authoritative; reach-recipes are NOT yet present.",
+  "schema": "c2a2-guide-manifest/1",
+  "recovered_from": "C2A2_Explorer_Complete_User_Guide.pdf",
+  "captured": "2026-07-26",
+  "counts": {
+    "plates": 110,
+    "duplicate_hashes": 0,
+    "reach_exact": 18,
+    "reach_page_only": 92,
+    "volatile": 15,
+    "cost_model": 4
+  },
+  "plates": [
+    {
+      "slug": "a01-shell-default",
+      "file": "a01-shell-default.png",
+      "section": "1.1",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Default view on load",
+      "caption": "The Explorer opens here, on Community Accelerator Tools > Sociogram — not on Start here. Row 1 holds the five chapters and the Record button; row 2 holds the sub-tools for the active chapter. Both rows persist throughout.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "2547cdeaf52e47b0441f62c67af5e88f803ed4712a7a3ef5d69c9f8d3a00592f",
+      "pdf_page": 4,
+      "web": {
+        "1x": "web/1x/a01-shell-default.webp",
+        "2x": "web/2x/a01-shell-default.webp",
+        "bytes_1x": 36612,
+        "bytes_2x": 100690
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a02-shell-help-overlay",
+      "file": "a02-shell-help-overlay.png",
+      "section": "1.2",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Help overlay (?)",
+      "caption": "The '?' at the right of the sub-tab row opens a help overlay for the tool currently loaded. Every major tool has its own.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "4475941dee89946db7c237828067cbfc05617c505b5946088e90d230d49edfc0",
+      "pdf_page": 5,
+      "web": {
+        "1x": "web/1x/a02-shell-help-overlay.webp",
+        "2x": "web/2x/a02-shell-help-overlay.webp",
+        "bytes_1x": 21848,
+        "bytes_2x": 73526
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a03-shell-record-active-STAGED",
+      "file": "a03-shell-record-active-STAGED.png",
+      "section": "1.3",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Record — active state (staged)",
+      "caption": "STAGED: the Record button's active appearance, shown without starting a real capture. Record calls the browser screen-capture API, so the real state is an actual screen recording.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "62819772279ef930270e8fd4c635841a9fe47b59018a3a4a108acb69b4a008b4",
+      "pdf_page": 6,
+      "web": {
+        "1x": "web/1x/a03-shell-record-active-STAGED.webp",
+        "2x": "web/2x/a03-shell-record-active-STAGED.webp",
+        "bytes_1x": 36408,
+        "bytes_2x": 99714
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a04-shell-record-modal-STAGED",
+      "file": "a04-shell-record-modal-STAGED.png",
+      "section": "1.4",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Record — completion modal (staged)",
+      "caption": "STAGED: the 'Recording Complete' modal offering 'Save to Downloads', revealed from the page's own markup.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "f60b476c80f26ad73930694878128e8c15073e120e67380675c2bc965c8f9382",
+      "pdf_page": 7,
+      "web": {
+        "1x": "web/1x/a04-shell-record-modal-STAGED.webp",
+        "2x": "web/2x/a04-shell-record-modal-STAGED.webp",
+        "bytes_1x": 15500,
+        "bytes_2x": 57828
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d10-mobile-shell-default",
+      "file": "d10-mobile-shell-default.png",
+      "section": "1.5",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "On a phone",
+      "caption": "At 390 px the wordmark and Record button drop away and the chapter tabs scroll sideways. The Sociogram prints its own caveat: 'Mobile preview - pan and tap nodes - filters require a larger screen.'",
+      "viewport": [
+        390,
+        844
+      ],
+      "sha256": "27bc37c624312dcc931e0e1c83d2b72d3f341b424c759791c7e08f6ad56f6378",
+      "pdf_page": 8,
+      "web": {
+        "1x": "web/1x/d10-mobile-shell-default.webp",
+        "2x": "web/2x/d10-mobile-shell-default.webp",
+        "bytes_1x": 11150,
+        "bytes_2x": 34904
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d11-mobile-starthere",
+      "file": "d11-mobile-starthere.png",
+      "section": "1.6",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Start here on a phone",
+      "caption": "Reading pages adapt well to a narrow screen.",
+      "viewport": [
+        390,
+        844
+      ],
+      "sha256": "aee89fddc7b38e809393e0c081685a5456f8624e7e84daad2f2fdbc59e7fc1ab",
+      "pdf_page": 9,
+      "web": {
+        "1x": "web/1x/d11-mobile-starthere.webp",
+        "2x": "web/2x/d11-mobile-starthere.webp",
+        "bytes_1x": 13980,
+        "bytes_2x": 38580
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d12-mobile-community",
+      "file": "d12-mobile-community.png",
+      "section": "1.7",
+      "section_title": "THE EXPLORER SHELL",
+      "title": "Community Explorer on a phone",
+      "caption": "The graph tools remain usable for panning and tapping, without the filter rail.",
+      "viewport": [
+        390,
+        844
+      ],
+      "sha256": "032844eac8d72e51a7954d4a5ce432050d576697481e698cdb2cb6cf7cd3dac2",
+      "pdf_page": 10,
+      "web": {
+        "1x": "web/1x/d12-mobile-community.webp",
+        "2x": "web/2x/d12-mobile-community.webp",
+        "bytes_1x": 12692,
+        "bytes_2x": 34464
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d00-starthere-full-path",
+      "file": "d00-starthere-full-path.png",
+      "section": "2.1",
+      "section_title": "START HERE — THE THREE STOPS",
+      "title": "The whole route",
+      "caption": "The intended entry point: 'about thirty minutes, three stops'. Orient, Decode the names, Where's the beef. Each stop links out to a destination page reachable from nowhere else.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "fccc5a27a5bfd4fc735defab7eab2433aa4ad599af05c989a0df16d2e9d41bb4",
+      "pdf_page": 11,
+      "web": {
+        "1x": "web/1x/d00-starthere-full-path.webp",
+        "2x": "web/2x/d00-starthere-full-path.webp",
+        "bytes_1x": 36514,
+        "bytes_2x": 105458
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a05-starthere-top",
+      "file": "a05-starthere-top.png",
+      "section": "2.2",
+      "section_title": "START HERE — THE THREE STOPS",
+      "title": "Stop 1 — Orient",
+      "caption": "'A first look at this system raises a fair question: is there really something here…' The page does not argue the point; it walks you to three places to judge directly.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "38fefedb25c95b15b0daf0d0933aed107487063debfcf3b803d4b2cbe90037c2",
+      "pdf_page": 12,
+      "web": {
+        "1x": "web/1x/a05-starthere-top.webp",
+        "2x": "web/2x/a05-starthere-top.webp",
+        "bytes_1x": 19922,
+        "bytes_2x": 55984
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a06-starthere-scroll1",
+      "file": "a06-starthere-scroll1.png",
+      "section": "2.3",
+      "section_title": "START HERE — THE THREE STOPS",
+      "title": "Stop 2 — Decode the names",
+      "caption": "Fifteen thinkers by last name, each with a one-line handle, because everything deeper refers to them that way. Links to the full Who's Who and to the Sociogram.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "ece6140c693a9cccebf3b8ca164f48f796bc6bf143915b5afa431f38958b8900",
+      "pdf_page": 13,
+      "web": {
+        "1x": "web/1x/a06-starthere-scroll1.webp",
+        "2x": "web/2x/a06-starthere-scroll1.webp",
+        "bytes_1x": 23642,
+        "bytes_2x": 67122
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a06-starthere-scroll2",
+      "file": "a06-starthere-scroll2.png",
+      "section": "2.4",
+      "section_title": "START HERE — THE THREE STOPS",
+      "title": "Stop 3 — Where's the beef",
+      "caption": "Two free-form dives of about ten minutes each: the review cards, and one worked example.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "a327f724e755b989df93d8fa81b71f52b6e44c1cd4110956b24c2f5d5fc99784",
+      "pdf_page": 14,
+      "web": {
+        "1x": "web/1x/a06-starthere-scroll2.webp",
+        "2x": "web/2x/a06-starthere-scroll2.webp",
+        "bytes_1x": 19404,
+        "bytes_2x": 53858
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d01-what-is-c2a2",
+      "file": "d01-what-is-c2a2.png",
+      "section": "3.1",
+      "section_title": "START HERE > WHAT IS C2A2",
+      "title": "Fifteen angles — opening",
+      "caption": "Reached from 'See all 15 framings'. The page states that C2A2 resists a single description and offers a constellation of frameworks instead.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "8cd2ab16ffb5978fb4b82c15667c76a52bfcccb0e4dbe24d60d71d61d8f87342",
+      "pdf_page": 15,
+      "web": {
+        "1x": "web/1x/d01-what-is-c2a2.webp",
+        "2x": "web/2x/d01-what-is-c2a2.webp",
+        "bytes_1x": 52056,
+        "bytes_2x": 146942
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='fifteen']",
+          "loads": "what_is_c2a2.html"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d01-what-is-c2a2-s1",
+      "file": "d01-what-is-c2a2-s1.png",
+      "section": "3.2",
+      "section_title": "START HERE > WHAT IS C2A2",
+      "title": "Angle 01 — the MacIntyre framing",
+      "caption": "The page names this 'the telos that orders every other angle below': a concrete response to MacIntyre's Gifford Lectures call to reconceive the university so rival traditions can be made answerable to one another. If you read one angle, read this one.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "0f0622405fae285d3b4412eb5367f996bb4ba3c2d3a1d58256042c9c3b9b03c9",
+      "pdf_page": 16,
+      "web": {
+        "1x": "web/1x/d01-what-is-c2a2-s1.webp",
+        "2x": "web/2x/d01-what-is-c2a2-s1.webp",
+        "bytes_1x": 55570,
+        "bytes_2x": 158510
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='fifteen']",
+          "loads": "what_is_c2a2.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d01-what-is-c2a2-s2",
+      "file": "d01-what-is-c2a2-s2.png",
+      "section": "3.3",
+      "section_title": "START HERE > WHAT IS C2A2",
+      "title": "Further angles",
+      "caption": "Angle 02 gives the name itself — an accelerator/detector for traditions, with the accelerator bringing lineages into contact and the detector instrumenting the collision. The remaining angles continue down the page.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "e6d8e96fbf93da992e4a8dca00803d33c3290919d7c1a7166f55a69d7b2dada9",
+      "pdf_page": 17,
+      "web": {
+        "1x": "web/1x/d01-what-is-c2a2-s2.webp",
+        "2x": "web/2x/d01-what-is-c2a2-s2.webp",
+        "bytes_1x": 55200,
+        "bytes_2x": 155016
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='fifteen']",
+          "loads": "what_is_c2a2.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d02-whos-who",
+      "file": "d02-whos-who.png",
+      "section": "4.1",
+      "section_title": "START HERE > WHO'S WHO",
+      "title": "The cast",
+      "caption": "Reached from 'See the full Who's Who'. Start here is explicit that this comes before the deeper material, since everything refers to these figures by last name alone.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "d8db9509076d81e86ef485c18c8fd4e6e091f40628ae5f5e43827fef32dc6614",
+      "pdf_page": 18,
+      "web": {
+        "1x": "web/1x/d02-whos-who.webp",
+        "2x": "web/2x/d02-whos-who.webp",
+        "bytes_1x": 39218,
+        "bytes_2x": 112200
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[href='whos_who.html']",
+          "loads": "whos_who.html"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d02-whos-who-s1",
+      "file": "d02-whos-who-s1.png",
+      "section": "4.2",
+      "section_title": "START HERE > WHO'S WHO",
+      "title": "Continued",
+      "caption": "The remainder of the roster, including the companion traditions — Aquinas's Summa, MacIntyre, Rohr and Wright.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "989b56389f5a7ad716428b96d4d6004f1c985350a5912ebc587a05b51680690c",
+      "pdf_page": 19,
+      "web": {
+        "1x": "web/1x/d02-whos-who-s1.webp",
+        "2x": "web/2x/d02-whos-who-s1.webp",
+        "bytes_1x": 33132,
+        "bytes_2x": 94714
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[href='whos_who.html']",
+          "loads": "whos_who.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d03-review-log",
+      "file": "d03-review-log.png",
+      "section": "5.1",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Historical preservation archive",
+      "caption": "Reached from 'Read the review cards' — the page Start here calls 'where's the beef'. 292 cards, 78 review dates, 12 decision emails, 511 PRS triples, 54 bridges, 54 findings, spanning to 2026-07-21. Five streams across the top, with Expand all / Collapse all.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "a31574bcf8ef2993675e9a62116be1248b75545da4a168c3a925207a3451e8ad",
+      "pdf_page": 20,
+      "web": {
+        "1x": "web/1x/d03-review-log.webp",
+        "2x": "web/2x/d03-review-log.webp",
+        "bytes_1x": 52798,
+        "bytes_2x": 145560
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d03-review-log-s1",
+      "file": "d03-review-log-s1.png",
+      "section": "5.2",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Cards, chronological",
+      "caption": "Each card carries a proposal id, the tradition it belongs to, an APPROVED status and the source title. Grouped by review date.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "27b5b5d999fd4975a273d3c8b3fa88d85ccd5126753276ed9a5a496f8f99cd96",
+      "pdf_page": 21,
+      "web": {
+        "1x": "web/1x/d03-review-log-s1.webp",
+        "2x": "web/2x/d03-review-log-s1.webp",
+        "bytes_1x": 51974,
+        "bytes_2x": 143940
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d03-review-log-s2",
+      "file": "d03-review-log-s2.png",
+      "section": "5.3",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Further into the stream",
+      "caption": "The archive continues at length; only the opening is shown here.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "7048f056719cb865801e7a7a13a7776b689f40725a6e540ecb74024019786922",
+      "pdf_page": 22,
+      "web": {
+        "1x": "web/1x/d03-review-log-s2.webp",
+        "2x": "web/2x/d03-review-log-s2.webp",
+        "bytes_1x": 56080,
+        "bytes_2x": 156074
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d05-reviewlog-your-responses",
+      "file": "d05-reviewlog-your-responses.png",
+      "section": "5.4",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Your Responses",
+      "caption": "The decision responses, rendered verbatim from the original decision emails.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "855698f66b690b9190229171ceeee5d252b820d57a068cddd799cc09b7875c39",
+      "pdf_page": 23,
+      "web": {
+        "1x": "web/1x/d05-reviewlog-your-responses.webp",
+        "2x": "web/2x/d05-reviewlog-your-responses.webp",
+        "bytes_1x": 39456,
+        "bytes_2x": 111862
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d05-reviewlog-prs-triples",
+      "file": "d05-reviewlog-prs-triples.png",
+      "section": "5.5",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "PRS Triples",
+      "caption": "511 distinct triples across 15 traditions. The stream opens as one card per thinker with its own count — Levin 71, Carroll 54, McGilchrist 51, down to MacIntyre 5. Expand a thinker to list that tradition's triples.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "51c535d1e2301f5213c029135d8eb61a7d557df2954c9dce40b3df95b55a348d",
+      "pdf_page": 24,
+      "web": {
+        "1x": "web/1x/d05-reviewlog-prs-triples.webp",
+        "2x": "web/2x/d05-reviewlog-prs-triples.webp",
+        "bytes_1x": 21810,
+        "bytes_2x": 61260
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d06-reviewlog-prs-triple-popup",
+      "file": "d06-reviewlog-prs-triple-popup.png",
+      "section": "5.6",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "PRS Triples — a single triple, opened",
+      "caption": "Clicking any triple opens it in a pop-up reader showing the full record: Label, Problem, Resource, Solution, date added, source and confidence, with the originating file named at the foot (here traditions/levin/prs_triplets.md). The header reads '1 / 511' — the reader is not scoped to the thinker you clicked.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "bddaa34ca3f3e53d0198e250a8ff2883a88205b0866de0da0c65bee42e7d7b23",
+      "pdf_page": 25,
+      "web": {
+        "1x": "web/1x/d06-reviewlog-prs-triple-popup.webp",
+        "2x": "web/2x/d06-reviewlog-prs-triple-popup.webp",
+        "bytes_1x": 19948,
+        "bytes_2x": 57316
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d07-reviewlog-prs-triple-popup-next",
+      "file": "d07-reviewlog-prs-triple-popup-next.png",
+      "section": "5.7",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "PRS Triples — paging the full set",
+      "caption": "Prev and Next (or the left and right arrow keys) walk the entire set of 511 one at a time, across all fifteen traditions, without returning to the list. Close with the x.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "7b04e17943dffcb7e1eb94e348eb10d327c0a6abc2356ad67c5f3c2400ce4f27",
+      "pdf_page": 26,
+      "web": {
+        "1x": "web/1x/d07-reviewlog-prs-triple-popup-next.webp",
+        "2x": "web/2x/d07-reviewlog-prs-triple-popup-next.webp",
+        "bytes_1x": 19114,
+        "bytes_2x": 54620
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d05-reviewlog-bridges",
+      "file": "d05-reviewlog-bridges.png",
+      "section": "5.8",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Bridges",
+      "caption": "54 records in the bridges stream.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "0929280d23e2ca88ab228a7840d3b977c9439197657809fbfc0d0604183c9ce3",
+      "pdf_page": 27,
+      "web": {
+        "1x": "web/1x/d05-reviewlog-bridges.webp",
+        "2x": "web/2x/d05-reviewlog-bridges.webp",
+        "bytes_1x": 28650,
+        "bytes_2x": 79872
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d05-reviewlog-findings",
+      "file": "d05-reviewlog-findings.png",
+      "section": "5.9",
+      "section_title": "START HERE > REVIEW LOG — THE EVIDENCE",
+      "title": "Findings",
+      "caption": "54 records in the findings stream, with a flag filter.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "b70d2c7a1d98396e53a6e6019b0a894b1ff51ff613e6dc95d618797a04011fa0",
+      "pdf_page": 28,
+      "web": {
+        "1x": "web/1x/d05-reviewlog-findings.webp",
+        "2x": "web/2x/d05-reviewlog-findings.webp",
+        "bytes_1x": 37652,
+        "bytes_2x": 103082
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='review-cards']",
+          "loads": "review_log.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d04-summa-commentary",
+      "file": "d04-summa-commentary.png",
+      "section": "6.1",
+      "section_title": "START HERE > SUMMA COMMENTARY — THE WORKED EXAMPLE",
+      "title": "Contemporary parallels to Aquinas, day by day",
+      "caption": "Reached from 'Take one worked example'. Start here poses it as the answer to 'what can that mind do?'",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "969591d94865bb1c235ec48a23f9bd17dc8736dde0c6404b802ffc9412a5f351",
+      "pdf_page": 29,
+      "web": {
+        "1x": "web/1x/d04-summa-commentary.webp",
+        "2x": "web/2x/d04-summa-commentary.webp",
+        "bytes_1x": 88606,
+        "bytes_2x": 240532
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='summa-commentary']",
+          "loads": "summa_commentary.html"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "d04-summa-commentary-s1",
+      "file": "d04-summa-commentary-s1.png",
+      "section": "6.2",
+      "section_title": "START HERE > SUMMA COMMENTARY — THE WORKED EXAMPLE",
+      "title": "Into the commentary",
+      "caption": "The day-by-day structure running from the Introduction through the Prima Pars.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "ff5f3be6030f6153226d0e20062c60ac36e8f428c545e3e2ad562e19059ef51b",
+      "pdf_page": 30,
+      "web": {
+        "1x": "web/1x/d04-summa-commentary-s1.webp",
+        "2x": "web/2x/d04-summa-commentary-s1.webp",
+        "bytes_1x": 86920,
+        "bytes_2x": 237666
+      },
+      "reach": [
+        {
+          "chapter": "chap-intro"
+        },
+        {
+          "frameClick": "a.launch[data-target='summa-commentary']",
+          "loads": "summa_commentary.html"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a10-community-graph",
+      "file": "a10-community-graph.png",
+      "section": "7.1",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Graph view",
+      "caption": "Opens on the Graph sub-tab. Hold Forces, Show Names, Fit All, and a search field with Search / Clear.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "ae8743d25807a7eb0fcba352cb77b768113b8b881713e75831f10cc5669e801a",
+      "pdf_page": 31,
+      "web": {
+        "1x": "web/1x/a10-community-graph.webp",
+        "2x": "web/2x/a10-community-graph.webp",
+        "bytes_1x": 36104,
+        "bytes_2x": 102738
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a11-community-graph-help",
+      "file": "a11-community-graph-help.png",
+      "section": "7.2",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Graph — help overlay",
+      "caption": "The '?' beside Graph / Cards explains what the graph plots and how to read it.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "5222412bb5dca241b6fa74aa8b2685b16200d4bf063fb9d0022c511f46f67b26",
+      "pdf_page": 32,
+      "web": {
+        "1x": "web/1x/a11-community-graph-help.webp",
+        "2x": "web/2x/a11-community-graph-help.webp",
+        "bytes_1x": 27650,
+        "bytes_2x": 83144
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a12-community-graph-node-detail",
+      "file": "a12-community-graph-node-detail.png",
+      "section": "7.3",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Graph — node selected",
+      "caption": "Clicking a node opens its detail panel. One representative selection.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "afca736b26eaaf75a6a146099aef95046c5a6f594573fbf39e6d466b2bc90afe",
+      "pdf_page": 33,
+      "web": {
+        "1x": "web/1x/a12-community-graph-node-detail.webp",
+        "2x": "web/2x/a12-community-graph-node-detail.webp",
+        "bytes_1x": 46290,
+        "bytes_2x": 137858
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a13-community-graph-search",
+      "file": "a13-community-graph-search.png",
+      "section": "7.4",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Graph — search results",
+      "caption": "A search filters the graph in place; Clear restores it.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "63ec6b9a1ba8c6637b30d0d4792490ea0e46fcefdddf1af6eaf1d2c40c8bfc19",
+      "pdf_page": 34,
+      "web": {
+        "1x": "web/1x/a13-community-graph-search.webp",
+        "2x": "web/2x/a13-community-graph-search.webp",
+        "bytes_1x": 26030,
+        "bytes_2x": 75124
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a14-community-cards-top",
+      "file": "a14-community-cards-top.png",
+      "section": "7.5",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Cards view — controls",
+      "caption": "Free-text search across names, type and subtype labels, geography, verified hosts, narrative descriptions and all PRS fields, plus a plain-language ask. Counts: 1,006 communities, 11 types, 158 subtypes, 155 countries. Note the caveat on the right: every record is inferred seed until a community claims it.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "c67d658a8381084d8d4e806b1b1133ddbb25b59a32ef2980260496ec4739f63b",
+      "pdf_page": 35,
+      "web": {
+        "1x": "web/1x/a14-community-cards-top.webp",
+        "2x": "web/2x/a14-community-cards-top.webp",
+        "bytes_1x": 73892,
+        "bytes_2x": 199710
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a17-community-cards-records",
+      "file": "a17-community-cards-records.png",
+      "section": "7.6",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Cards — the directory",
+      "caption": "Below the filter panel sit the Cards / Map / PRS / Overview sub-views and the directory itself — the first 60 of 1,006. Each card shows type, geography, a P/R/S summary and a 'View G-P-R-S profile' link. These sub-views live in a nested frame and are invisible in a short window.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "9e5d2c0d9138b816a22cfdd8c5208a8bac2f0201f82fab9a5ae9f310df17c524",
+      "pdf_page": 36,
+      "web": {
+        "1x": "web/1x/a17-community-cards-records.webp",
+        "2x": "web/2x/a17-community-cards-records.webp",
+        "bytes_1x": 73892,
+        "bytes_2x": 199686
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a16-community-cards-map",
+      "file": "a16-community-cards-map.png",
+      "section": "7.7",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Cards — Map",
+      "caption": "The same result set plotted geographically.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "e6d12270d843bc2c7b67509cb36f96ed235ac858626af917a4960444764d0bec",
+      "pdf_page": 37,
+      "web": {
+        "1x": "web/1x/a16-community-cards-map.webp",
+        "2x": "web/2x/a16-community-cards-map.webp",
+        "bytes_1x": 38350,
+        "bytes_2x": 102566
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a16-community-cards-prs",
+      "file": "a16-community-cards-prs.png",
+      "section": "7.8",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Cards — PRS",
+      "caption": "The result set as Problem / Resource / Solution records.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "84aa4fee88f6a258fd28040c2190572c583d22a1a16b89a3b0d597b2179c7bf6",
+      "pdf_page": 38,
+      "web": {
+        "1x": "web/1x/a16-community-cards-prs.webp",
+        "2x": "web/2x/a16-community-cards-prs.webp",
+        "bytes_1x": 45288,
+        "bytes_2x": 122926
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a16-community-cards-overview",
+      "file": "a16-community-cards-overview.png",
+      "section": "7.9",
+      "section_title": "COMMUNITY EXPLORER",
+      "title": "Cards — Overview",
+      "caption": "Aggregate view over the current result set.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "b47cc66ad9b228ffb12a1e4c6c7515aac9bf9692bdb2718e08f2d2ce2cc605ed",
+      "pdf_page": 39,
+      "web": {
+        "1x": "web/1x/a16-community-cards-overview.webp",
+        "2x": "web/2x/a16-community-cards-overview.webp",
+        "bytes_1x": 47616,
+        "bytes_2x": 124376
+      },
+      "reach": [
+        {
+          "chapter": "chap-community"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c01-rcdoc-contents",
+      "file": "c01-rcdoc-contents.png",
+      "section": "8.1",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Contents",
+      "caption": "Opens on CONTENTS. The sidebar switches between CONTENTS, THINKERS and SOLVED; an 'Ask Claude' chat sits at the foot.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "0addcbb158aac23e0fdfdeeb519548f4ad8fa2d4bdd203633b533e34f58d829f",
+      "pdf_page": 40,
+      "web": {
+        "1x": "web/1x/c01-rcdoc-contents.webp",
+        "2x": "web/2x/c01-rcdoc-contents.webp",
+        "bytes_1x": 48588,
+        "bytes_2x": 148026
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c02-rcdoc-thinkers",
+      "file": "c02-rcdoc-thinkers.png",
+      "section": "8.2",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Thinkers",
+      "caption": "A tab per thinker: Levin, Hoffman, Carroll, Hawkins, Wolfram, Friston, Fredrickson, Kastrup and Loughran.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "8ff05ea72174480e79153f52760a4895ebe63eb2b57e1d893fa7f6385aea6146",
+      "pdf_page": 41,
+      "web": {
+        "1x": "web/1x/c02-rcdoc-thinkers.webp",
+        "2x": "web/2x/c02-rcdoc-thinkers.webp",
+        "bytes_1x": 51758,
+        "bytes_2x": 150782
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c03-rcdoc-thinker-hoffman",
+      "file": "c03-rcdoc-thinker-hoffman.png",
+      "section": "8.3",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Thinker selected",
+      "caption": "One representative thinker.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "993d46588602a7716e4c0834035f4613ee62cad429510fe973a567c10e48ef0d",
+      "pdf_page": 42,
+      "web": {
+        "1x": "web/1x/c03-rcdoc-thinker-hoffman.webp",
+        "2x": "web/2x/c03-rcdoc-thinker-hoffman.webp",
+        "bytes_1x": 52382,
+        "bytes_2x": 153352
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c04-rcdoc-solved",
+      "file": "c04-rcdoc-solved.png",
+      "section": "8.4",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Solved",
+      "caption": "The SOLVED view.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "ab31944fb860c0bc19d38fe2c509fa78a2811ade3357f4bb1f147baa940dc4f8",
+      "pdf_page": 43,
+      "web": {
+        "1x": "web/1x/c04-rcdoc-solved.webp",
+        "2x": "web/2x/c04-rcdoc-solved.webp",
+        "bytes_1x": 52442,
+        "bytes_2x": 156434
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c05-rcdoc-solved-item",
+      "file": "c05-rcdoc-solved-item.png",
+      "section": "8.5",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Solved — item selected",
+      "caption": "One representative solved item opened.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "1b1ab10a5a0def84830354170451922ad362381317523966c09f49a007cc06fd",
+      "pdf_page": 44,
+      "web": {
+        "1x": "web/1x/c05-rcdoc-solved-item.webp",
+        "2x": "web/2x/c05-rcdoc-solved-item.webp",
+        "bytes_1x": 52160,
+        "bytes_2x": 152720
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c06-rcdoc-lower",
+      "file": "c06-rcdoc-lower.png",
+      "section": "8.6",
+      "section_title": "COMMUNITY EDUCATION — RC DOCUMENT EXPLORER",
+      "title": "Lower page",
+      "caption": "The document area below the first screen.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "08e0557887c4a61015ee37f82d92069da897387e4f3279db3471d450881c1862",
+      "pdf_page": 45,
+      "web": {
+        "1x": "web/1x/c06-rcdoc-lower.webp",
+        "2x": "web/2x/c06-rcdoc-lower.webp",
+        "bytes_1x": 56940,
+        "bytes_2x": 165060
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "rc_document_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c10-physics-concepts",
+      "file": "c10-physics-concepts.png",
+      "section": "9.1",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "Concepts (Student mode)",
+      "caption": "Opens in Student mode on Concepts: 75 concepts, 6 topic areas, 6 physicists. Cards carry a definition and, where one exists, a simulation link.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "69d9d46eaa49a84ab23092c837647a23855b5e6252da55e164f5113574c030e9",
+      "pdf_page": 46,
+      "web": {
+        "1x": "web/1x/c10-physics-concepts.webp",
+        "2x": "web/2x/c10-physics-concepts.webp",
+        "bytes_1x": 26522,
+        "bytes_2x": 76024
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c11-physics-physicists",
+      "file": "c11-physics-physicists.png",
+      "section": "9.2",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "Physicists",
+      "caption": "Newton, Maxwell, Boltzmann, Einstein, Feynman and Wolfram.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "ec75bdbf13874f274f2b6eff2ee9aff98f8720ae336f82bc0e80344fa87ec973",
+      "pdf_page": 47,
+      "web": {
+        "1x": "web/1x/c11-physics-physicists.webp",
+        "2x": "web/2x/c11-physics-physicists.webp",
+        "bytes_1x": 32788,
+        "bytes_2x": 93528
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c12-physics-progress",
+      "file": "c12-physics-progress.png",
+      "section": "9.3",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "Progress",
+      "caption": "The Progress sidebar.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "589e2252d3f04e1e834bb735741637273a208b20e4e6991c94ecc10abeabeb27",
+      "pdf_page": 48,
+      "web": {
+        "1x": "web/1x/c12-physics-progress.webp",
+        "2x": "web/2x/c12-physics-progress.webp",
+        "bytes_1x": 29756,
+        "bytes_2x": 86124
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c13-physics-instructor-mode",
+      "file": "c13-physics-instructor-mode.png",
+      "section": "9.4",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "Instructor mode",
+      "caption": "The same material in Instructor mode.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "d2ec7adc21d9ee2685b6fd14cd3321ba426c91ae91436a351f6d4f4893ca5607",
+      "pdf_page": 49,
+      "web": {
+        "1x": "web/1x/c13-physics-instructor-mode.webp",
+        "2x": "web/2x/c13-physics-instructor-mode.webp",
+        "bytes_1x": 26726,
+        "bytes_2x": 76360
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c15-physics-summary-modal",
+      "file": "c15-physics-summary-modal.png",
+      "section": "9.5",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "Full summary modal",
+      "caption": "'Read full summary' opens a long-form summary. Note: it must be dismissed before the AI answer bar below is usable.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "014313d003eba44dfd4f5cb8c810ffb5622526a585dc52f83b58b99087af4123",
+      "pdf_page": 50,
+      "web": {
+        "1x": "web/1x/c15-physics-summary-modal.webp",
+        "2x": "web/2x/c15-physics-summary-modal.webp",
+        "bytes_1x": 39770,
+        "bytes_2x": 114044
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c16-physics-explain",
+      "file": "c16-physics-explain.png",
+      "section": "9.6",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "AI — Explain differently",
+      "caption": "Returns a fresh explanation. Runs through the shared C2A2 pipeline, labelled 'no key needed'.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "59c35399308a8444cb47225094d75eec9d92fbb1783a6bcaa3d017be0715415e",
+      "pdf_page": 51,
+      "web": {
+        "1x": "web/1x/c16-physics-explain.webp",
+        "2x": "web/2x/c16-physics-explain.webp",
+        "bytes_1x": 30664,
+        "bytes_2x": 87024
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "model"
+    },
+    {
+      "slug": "c17-physics-problem",
+      "file": "c17-physics-problem.png",
+      "section": "9.7",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "AI — Give me a problem",
+      "caption": "Generates a practice problem with staged hints.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "c5103cfcb995be3e0abcb4e7dde7c94e7629fe4b7aa4fcd034725c25b7d2b74a",
+      "pdf_page": 52,
+      "web": {
+        "1x": "web/1x/c17-physics-problem.webp",
+        "2x": "web/2x/c17-physics-problem.webp",
+        "bytes_1x": 29396,
+        "bytes_2x": 82708
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "model"
+    },
+    {
+      "slug": "c18-physics-analogy",
+      "file": "c18-physics-analogy.png",
+      "section": "9.8",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "AI — Find an analogy",
+      "caption": "Returns an analogy for the concept.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "7d095ce91c10c960a70e94e01e62a48dca1eb5b7f133566ce7f198022a452080",
+      "pdf_page": 53,
+      "web": {
+        "1x": "web/1x/c18-physics-analogy.webp",
+        "2x": "web/2x/c18-physics-analogy.webp",
+        "bytes_1x": 32706,
+        "bytes_2x": 93176
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "model"
+    },
+    {
+      "slug": "c18b-physics-simulate",
+      "file": "c18b-physics-simulate.png",
+      "section": "9.9",
+      "section_title": "COMMUNITY EDUCATION — PHYSICS EXPLORER",
+      "title": "AI — Simulate",
+      "caption": "The answer bar carries Explain, Problem, Analogy and Simulate, an 'Ask AI' toggle and Clear. The separate 'PhET Simulation' links on the concept cards leave the site for external hosts.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "68acc94bb9b701955febb17e89aaa8eb5b7512bfc6336b39d2e91e01fa66c4fd",
+      "pdf_page": 54,
+      "web": {
+        "1x": "web/1x/c18b-physics-simulate.webp",
+        "2x": "web/2x/c18b-physics-simulate.webp",
+        "bytes_1x": 31112,
+        "bytes_2x": 88230
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "physics_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "model"
+    },
+    {
+      "slug": "c20-commentary-top",
+      "file": "c20-commentary-top.png",
+      "section": "10.1",
+      "section_title": "COMMUNITY EDUCATION — TRV COMMENTARY",
+      "title": "Opening view",
+      "caption": "A SUMMA DAYS selector covering 192 days with ALL / NONE, plus Fit, Freeze and Labels.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "8b7d3ed859273fee47849571c408a59eeb43c53c580f04d1577fbe0b3d8cb72d",
+      "pdf_page": 55,
+      "web": {
+        "1x": "web/1x/c20-commentary-top.webp",
+        "2x": "web/2x/c20-commentary-top.webp",
+        "bytes_1x": 30458,
+        "bytes_2x": 83876
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "commentary-explorer/commentary_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c21-commentary-selection",
+      "file": "c21-commentary-selection.png",
+      "section": "10.2",
+      "section_title": "COMMUNITY EDUCATION — TRV COMMENTARY",
+      "title": "Selection made",
+      "caption": "Selecting a point opens the associated commentary.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "2a762e8ea28a1c00454a969d16f3a79651374d04d7003621e4f7b5605b785f90",
+      "pdf_page": 56,
+      "web": {
+        "1x": "web/1x/c21-commentary-selection.webp",
+        "2x": "web/2x/c21-commentary-selection.webp",
+        "bytes_1x": 30470,
+        "bytes_2x": 83350
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "commentary-explorer/commentary_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c22-commentary-labels",
+      "file": "c22-commentary-labels.png",
+      "section": "10.3",
+      "section_title": "COMMUNITY EDUCATION — TRV COMMENTARY",
+      "title": "Labels toggled",
+      "caption": "Labels annotate the plotted points.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "09fdb2446e78deba91a220d6295855fe41928ce74077834198baec26fee4fb27",
+      "pdf_page": 57,
+      "web": {
+        "1x": "web/1x/c22-commentary-labels.webp",
+        "2x": "web/2x/c22-commentary-labels.webp",
+        "bytes_1x": 23104,
+        "bytes_2x": 58590
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "commentary-explorer/commentary_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c23-commentary-days-panel",
+      "file": "c23-commentary-days-panel.png",
+      "section": "10.4",
+      "section_title": "COMMUNITY EDUCATION — TRV COMMENTARY",
+      "title": "Summa Days panel",
+      "caption": "The day selector expanded.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "014901dff731d24484300b0fd200622750e2738eff43780dfa2cc34bb74f32c1",
+      "pdf_page": 58,
+      "web": {
+        "1x": "web/1x/c23-commentary-days-panel.webp",
+        "2x": "web/2x/c23-commentary-days-panel.webp",
+        "bytes_1x": 23038,
+        "bytes_2x": 58744
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "commentary-explorer/commentary_explorer.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "c30-heartbeat-pulse",
+      "file": "c30-heartbeat-pulse.png",
+      "section": "11.1",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "Pulse",
+      "caption": "A five-step spine from raw sources to shared graph, each marked LIVE or PLANNED, above the monitored source lanes — 19 feeds across 7 lanes. Tabs: Pulse, History, My Lens, Roadmap.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "fe530861e23cec9b482d99be2cba35a9d90001d6bb0ff3e3599552ed1bb7ff43",
+      "pdf_page": 59,
+      "web": {
+        "1x": "web/1x/c30-heartbeat-pulse.webp",
+        "2x": "web/2x/c30-heartbeat-pulse.webp",
+        "bytes_1x": 50522,
+        "bytes_2x": 135200
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "c37-heartbeat-pulse-lower",
+      "file": "c37-heartbeat-pulse-lower.png",
+      "section": "11.2",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "Pulse — lower area",
+      "caption": "Source monitoring and signal detail below the first screen.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "44c36aed0af964e8f7c1589066eb3a8793993324282223a88c0e6016de40ccb6",
+      "pdf_page": 60,
+      "web": {
+        "1x": "web/1x/c37-heartbeat-pulse-lower.webp",
+        "2x": "web/2x/c37-heartbeat-pulse-lower.webp",
+        "bytes_1x": 21678,
+        "bytes_2x": 59650
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "c31-heartbeat-history",
+      "file": "c31-heartbeat-history.png",
+      "section": "11.3",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "History",
+      "caption": "Past heartbeat snapshots.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "986783391d358f4cdcef6555588e0fa6ab3d93af2e1ba56e4a076df517db2548",
+      "pdf_page": 61,
+      "web": {
+        "1x": "web/1x/c31-heartbeat-history.webp",
+        "2x": "web/2x/c31-heartbeat-history.webp",
+        "bytes_1x": 55950,
+        "bytes_2x": 149076
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "c36-heartbeat-history-snapshot",
+      "file": "c36-heartbeat-history-snapshot.png",
+      "section": "11.4",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "History — snapshot selected",
+      "caption": "One representative snapshot opened.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "cb872d8de49fbfc7a650eb0a81461e001237571d3fbf3948de7c80f1a86944f3",
+      "pdf_page": 62,
+      "web": {
+        "1x": "web/1x/c36-heartbeat-history-snapshot.webp",
+        "2x": "web/2x/c36-heartbeat-history-snapshot.webp",
+        "bytes_1x": 74178,
+        "bytes_2x": 205592
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "c32-heartbeat-mylens",
+      "file": "c32-heartbeat-mylens.png",
+      "section": "11.5",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "My Lens",
+      "caption": "Local-autonomy controls: filter by source, hidden sources, hidden tags, keywords and minimum relevance; Rank & deliver sets boosted tags, sort and digest cadence. The consent checkboxes govern sharing and are unchecked by default; the lens is stored on your device.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "67f43cf6f1824deba8f3df48754da2920e612e85de8420ae462f522f3b199508",
+      "pdf_page": 63,
+      "web": {
+        "1x": "web/1x/c32-heartbeat-mylens.webp",
+        "2x": "web/2x/c32-heartbeat-mylens.webp",
+        "bytes_1x": 47856,
+        "bytes_2x": 129710
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "c33-heartbeat-roadmap",
+      "file": "c33-heartbeat-roadmap.png",
+      "section": "11.6",
+      "section_title": "COMMUNITY EDUCATION — AI HEARTBEAT",
+      "title": "Roadmap",
+      "caption": "The planned stages of the heartbeat system.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "02483658fd195198610ce42c2b2872ecf1c5a4624511bb4d685c0ae7e7a43ea4",
+      "pdf_page": 64,
+      "web": {
+        "1x": "web/1x/c33-heartbeat-roadmap.webp",
+        "2x": "web/2x/c33-heartbeat-roadmap.webp",
+        "bytes_1x": 51074,
+        "bytes_2x": 143048
+      },
+      "reach": [
+        {
+          "chapter": "chap-education"
+        },
+        {
+          "tab": "heartbeat/index.html",
+          "row": "row2-edu"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b01-sociogram-top",
+      "file": "b01-sociogram-top.png",
+      "section": "12.1",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Default view",
+      "caption": "The wiki knowledge graph: 4,385 file nodes, 114,182 edges. Top strip: Hold, Names, Fit All, layout Mode, Score mode, Brightness, a Since slider and a settings gear. Left rail selects files; the Edges legend is top right; narration and search run along the foot.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "284cf6f0c79b4168f8e17749878bebba90a21cb9c6c4b999a8af38f318b8f4a7",
+      "pdf_page": 65,
+      "web": {
+        "1x": "web/1x/b01-sociogram-top.webp",
+        "2x": "web/2x/b01-sociogram-top.webp",
+        "bytes_1x": 36496,
+        "bytes_2x": 100322
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b02-sociogram-filters1",
+      "file": "b02-sociogram-filters1.png",
+      "section": "12.2",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Left rail — traditions",
+      "caption": "The fifteen tradition filters, each with its own '?', above the Structure group.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "eb8153175a3402b1db6717f372a5a9f60d9075d69eebd6bc4653b69fb3d3a944",
+      "pdf_page": 66,
+      "web": {
+        "1x": "web/1x/b02-sociogram-filters1.webp",
+        "2x": "web/2x/b02-sociogram-filters1.webp",
+        "bytes_1x": 37482,
+        "bytes_2x": 103042
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b02-sociogram-filters2",
+      "file": "b02-sociogram-filters2.png",
+      "section": "12.3",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Left rail — continued",
+      "caption": "Further structure and content-tag filters.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "2ced715a3d32d2ebfcb801598e95f26726c130ab4ecb9d29c7c17db0a5c9a7dc",
+      "pdf_page": 67,
+      "web": {
+        "1x": "web/1x/b02-sociogram-filters2.webp",
+        "2x": "web/2x/b02-sociogram-filters2.webp",
+        "bytes_1x": 37542,
+        "bytes_2x": 102716
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b02-sociogram-filters3",
+      "file": "b02-sociogram-filters3.png",
+      "section": "12.4",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Left rail — foot",
+      "caption": "The end of the rail.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "efcb9709725ebe54c390aa4c95c7bed70d7e4fe883d2fd9ead2860c892828ad4",
+      "pdf_page": 68,
+      "web": {
+        "1x": "web/1x/b02-sociogram-filters3.webp",
+        "2x": "web/2x/b02-sociogram-filters3.webp",
+        "bytes_1x": 37414,
+        "bytes_2x": 102630
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b03-sociogram-edge-help",
+      "file": "b03-sociogram-edge-help.png",
+      "section": "12.5",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Edge help",
+      "caption": "Explains the edge types — Wikilink, Mention, Reference — and whether an edge crosses or stays within a category.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "d3934f0b376fc26624baa3d312d5e33966058880bda89830b665d17f41a1746d",
+      "pdf_page": 69,
+      "web": {
+        "1x": "web/1x/b03-sociogram-edge-help.webp",
+        "2x": "web/2x/b03-sociogram-edge-help.webp",
+        "bytes_1x": 43110,
+        "bytes_2x": 119004
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b04-sociogram-tag-help",
+      "file": "b04-sociogram-tag-help.png",
+      "section": "12.6",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Content-tag help",
+      "caption": "Each group and tag carries its own '?' giving a definition in place.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "dc35121212c6f96344cb1d260ebd0fbfbd97f8c67349aabbdef7a82bbf63728a",
+      "pdf_page": 70,
+      "web": {
+        "1x": "web/1x/b04-sociogram-tag-help.webp",
+        "2x": "web/2x/b04-sociogram-tag-help.webp",
+        "bytes_1x": 43440,
+        "bytes_2x": 120496
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b05-sociogram-settings",
+      "file": "b05-sociogram-settings.png",
+      "section": "12.7",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Settings dialog",
+      "caption": "Text-to-speech provider and voice (Browser, Kokoro or OpenAI) and the AI provider (C2A2 broker, Groq, Ollama or OpenAI direct). This is where you supply your own key once the free semantic queries run out.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "e276081028bb0a69b7214a9925dcc7ed9e7245464d105e40f8d61a053aec5631",
+      "pdf_page": 71,
+      "web": {
+        "1x": "web/1x/b05-sociogram-settings.webp",
+        "2x": "web/2x/b05-sociogram-settings.webp",
+        "bytes_1x": 13760,
+        "bytes_2x": 43938
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b06-sociogram-search-result",
+      "file": "b06-sociogram-search-result.png",
+      "section": "12.8",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Search result",
+      "caption": "A plain search filters the graph immediately and costs nothing. The 'Ask AI' checkbox instead sends the query to a language model, against a limited free allowance.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "a4f200b860d8b5e01a2cd6415271bd1a25063fc12c7655c863833025dbdaf7b5",
+      "pdf_page": 72,
+      "web": {
+        "1x": "web/1x/b06-sociogram-search-result.webp",
+        "2x": "web/2x/b06-sociogram-search-result.webp",
+        "bytes_1x": 16600,
+        "bytes_2x": 43016
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b07-sociogram-node-detail",
+      "file": "b07-sociogram-node-detail.png",
+      "section": "12.9",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "Node detail panel",
+      "caption": "Clicking a node opens the file in the right reading panel with its title and path.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "91c1de9358ea83fdca0b78c201dad2acd4495671687ea47a12ac92915b0687f4",
+      "pdf_page": 73,
+      "web": {
+        "1x": "web/1x/b07-sociogram-node-detail.webp",
+        "2x": "web/2x/b07-sociogram-node-detail.webp",
+        "bytes_1x": 46542,
+        "bytes_2x": 125732
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b08-sociogram-file-reader",
+      "file": "b08-sociogram-file-reader.png",
+      "section": "12.10",
+      "section_title": "ACCELERATOR TOOLS — SOCIOGRAM",
+      "title": "File reader — left panel",
+      "caption": "A second file opened alongside, so two can be read at once. Each panel has a dismiss and a pop-out control.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "474dc17c2aa7535817eba73135067361d56fc9ba91be7c20d6ecbc84c2618896",
+      "pdf_page": 74,
+      "web": {
+        "1x": "web/1x/b08-sociogram-file-reader.webp",
+        "2x": "web/2x/b08-sociogram-file-reader.webp",
+        "bytes_1x": 46348,
+        "bytes_2x": 125982
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "wiki_narration.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b10-connectome-top",
+      "file": "b10-connectome-top.png",
+      "section": "13.1",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "Default view",
+      "caption": "The 3-D PRS connectome, with Reset View, a Labels toggle, and search with Clear / Reset.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "776734d5ce0e97163a631f3b76598eb625e71302bf0e69d82f402e04ab574eff",
+      "pdf_page": 75,
+      "web": {
+        "1x": "web/1x/b10-connectome-top.webp",
+        "2x": "web/2x/b10-connectome-top.webp",
+        "bytes_1x": 47868,
+        "bytes_2x": 138894
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b11-connectome-filters1",
+      "file": "b11-connectome-filters1.png",
+      "section": "13.2",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "Filters — continued",
+      "caption": "The filter column below the first screen.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "c34a95988da48d7ec2c27bcd4068d0300b449adff5eb28f127d88a429dc65966",
+      "pdf_page": 76,
+      "web": {
+        "1x": "web/1x/b11-connectome-filters1.webp",
+        "2x": "web/2x/b11-connectome-filters1.webp",
+        "bytes_1x": 47758,
+        "bytes_2x": 137930
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b11-connectome-filters2",
+      "file": "b11-connectome-filters2.png",
+      "section": "13.3",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "Filters — foot",
+      "caption": "The remainder of the column.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "c13ac34e14f22fd23959f0cc49274f9495fdac5a917e2918c9f409a3959b1a5f",
+      "pdf_page": 77,
+      "web": {
+        "1x": "web/1x/b11-connectome-filters2.webp",
+        "2x": "web/2x/b11-connectome-filters2.webp",
+        "bytes_1x": 47958,
+        "bytes_2x": 138644
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b12-connectome-filter-help",
+      "file": "b12-connectome-filter-help.png",
+      "section": "13.4",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "Filter help",
+      "caption": "What the filters select and how the layout is built.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "7cc8c30da6ff4f3123ddb8e5f3cee8a8017dd6ff8bd7ad5ec06d63dec0f3ae99",
+      "pdf_page": 78,
+      "web": {
+        "1x": "web/1x/b12-connectome-filter-help.webp",
+        "2x": "web/2x/b12-connectome-filter-help.webp",
+        "bytes_1x": 51396,
+        "bytes_2x": 148602
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b13-connectome-legend-help",
+      "file": "b13-connectome-legend-help.png",
+      "section": "13.5",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "Legend help",
+      "caption": "The legend's own '?' defines the plotted categories.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "a64e04ee75ee916e670a498644779f99c9e6436cb3b100dba64c3ee142c1c1a6",
+      "pdf_page": 79,
+      "web": {
+        "1x": "web/1x/b13-connectome-legend-help.webp",
+        "2x": "web/2x/b13-connectome-legend-help.webp",
+        "bytes_1x": 49496,
+        "bytes_2x": 142770
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b14-connectome-prs-detail",
+      "file": "b14-connectome-prs-detail.png",
+      "section": "13.6",
+      "section_title": "ACCELERATOR TOOLS — NARRATIVE CONNECTOME",
+      "title": "PRS detail panel",
+      "caption": "Selecting a point opens its PRS record.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "aa786d3a7c7d5da812278722b1d31e89d7f283aab9334b4e8306cad2741cd737",
+      "pdf_page": 80,
+      "web": {
+        "1x": "web/1x/b14-connectome-prs-detail.webp",
+        "2x": "web/2x/b14-connectome-prs-detail.webp",
+        "bytes_1x": 48724,
+        "bytes_2x": 144182
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "prs_3d.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b20-agentmap-schedule",
+      "file": "b20-agentmap-schedule.png",
+      "section": "14.1",
+      "section_title": "ACCELERATOR TOOLS — AGENT MAP",
+      "title": "Schedule",
+      "caption": "Opens on Schedule, with Play, Pause, Reset, Narrate, a speed selector from 10x to 720x, skip and mute.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "3db76715ac349536fe31bba3a67c9464cb503110d8d01e6cb438def65291b4c7",
+      "pdf_page": 81,
+      "web": {
+        "1x": "web/1x/b20-agentmap-schedule.webp",
+        "2x": "web/2x/b20-agentmap-schedule.webp",
+        "bytes_1x": 16328,
+        "bytes_2x": 39346
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "agents_tab.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b21-agentmap-sociogram",
+      "file": "b21-agentmap-sociogram.png",
+      "section": "14.2",
+      "section_title": "ACCELERATOR TOOLS — AGENT MAP",
+      "title": "Sociogram",
+      "caption": "The agents plotted as a sociogram.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "19d62001171d980b982ac36929899e09ba3d60770dc7f964c7eaf1f6925670b7",
+      "pdf_page": 82,
+      "web": {
+        "1x": "web/1x/b21-agentmap-sociogram.webp",
+        "2x": "web/2x/b21-agentmap-sociogram.webp",
+        "bytes_1x": 83840,
+        "bytes_2x": 253786
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "agents_tab.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b22-agentmap-explorer",
+      "file": "b22-agentmap-explorer.png",
+      "section": "14.3",
+      "section_title": "ACCELERATOR TOOLS — AGENT MAP",
+      "title": "Explorer",
+      "caption": "A sortable table: sessions, events, eval+apply counts, E/A ratio, errors, tool coverage and last run, with a category filter.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "dbe6c4b72cb3fffdfd4d68a57d2033dde337adb6ac718d82fddfd0a713b7c296",
+      "pdf_page": 83,
+      "web": {
+        "1x": "web/1x/b22-agentmap-explorer.webp",
+        "2x": "web/2x/b22-agentmap-explorer.webp",
+        "bytes_1x": 32600,
+        "bytes_2x": 82940
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "agents_tab.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b23-agentmap-detail-drawer",
+      "file": "b23-agentmap-detail-drawer.png",
+      "section": "14.4",
+      "section_title": "ACCELERATOR TOOLS — AGENT MAP",
+      "title": "Agent detail drawer",
+      "caption": "Selecting a row opens the drawer, which can be dragged and resized.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "f3b8bcebab1d5d54057320b3746af5b97ca7dd6b0a567c9ec1c308f27611c4bd",
+      "pdf_page": 84,
+      "web": {
+        "1x": "web/1x/b23-agentmap-detail-drawer.webp",
+        "2x": "web/2x/b23-agentmap-detail-drawer.webp",
+        "bytes_1x": 34084,
+        "bytes_2x": 87240
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "agents_tab.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b24-agentmap-narrate",
+      "file": "b24-agentmap-narrate.png",
+      "section": "14.5",
+      "section_title": "ACCELERATOR TOOLS — AGENT MAP",
+      "title": "Narration running",
+      "caption": "Narrate plays the schedule back with spoken commentary.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "7f73d13fe83095b4bf50eb1f4af5225513acaa8e466fd3e28781e4f707fc2995",
+      "pdf_page": 85,
+      "web": {
+        "1x": "web/1x/b24-agentmap-narrate.webp",
+        "2x": "web/2x/b24-agentmap-narrate.webp",
+        "bytes_1x": 25704,
+        "bytes_2x": 68846
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "agents_tab.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b30-metabolism-raster",
+      "file": "b30-metabolism-raster.png",
+      "section": "15.1",
+      "section_title": "ACCELERATOR TOOLS — METABOLISM",
+      "title": "Raster (per-agent runs)",
+      "caption": "Three selectors drive it: view, metric (events, output tokens, total tokens, cache reads, thinking steps, duration and several yield measures) and colour (by category or cache-read share).",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "509eb1c9fa67ced238fca360991bdcb41831356a9420eb770932663473976e84",
+      "pdf_page": 86,
+      "web": {
+        "1x": "web/1x/b30-metabolism-raster.webp",
+        "2x": "web/2x/b30-metabolism-raster.webp",
+        "bytes_1x": 34682,
+        "bytes_2x": 93974
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "metabolism/metabolism_view.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b31-metabolism-waveform",
+      "file": "b31-metabolism-waveform.png",
+      "section": "15.2",
+      "section_title": "ACCELERATOR TOOLS — METABOLISM",
+      "title": "Waveform (system pulse)",
+      "caption": "The same metric as a single system-wide pulse.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "ebd5d277c21dd048df2e30019b9d69020b05c50c148005faeb7c80c398796d97",
+      "pdf_page": 87,
+      "web": {
+        "1x": "web/1x/b31-metabolism-waveform.webp",
+        "2x": "web/2x/b31-metabolism-waveform.webp",
+        "bytes_1x": 15352,
+        "bytes_2x": 45028
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "metabolism/metabolism_view.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b32-metabolism-returned-vs-sent",
+      "file": "b32-metabolism-returned-vs-sent.png",
+      "section": "15.3",
+      "section_title": "ACCELERATOR TOOLS — METABOLISM",
+      "title": "Returned vs sent (tokens)",
+      "caption": "Tokens returned against tokens sent.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "1f6a23e5c6d57676077a0295f20ad0d0950ac0dc9561ff1c3dd154e77b05ef0d",
+      "pdf_page": 88,
+      "web": {
+        "1x": "web/1x/b32-metabolism-returned-vs-sent.webp",
+        "2x": "web/2x/b32-metabolism-returned-vs-sent.webp",
+        "bytes_1x": 19102,
+        "bytes_2x": 55314
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "metabolism/metabolism_view.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b33-metabolism-lower",
+      "file": "b33-metabolism-lower.png",
+      "section": "15.4",
+      "section_title": "ACCELERATOR TOOLS — METABOLISM",
+      "title": "Lower panel",
+      "caption": "The explanatory panel beneath the plot.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "c67ab722926498b5fbefd283312806f5f54e784e568b1d02e8d3048e2b92ec0c",
+      "pdf_page": 89,
+      "web": {
+        "1x": "web/1x/b33-metabolism-lower.webp",
+        "2x": "web/2x/b33-metabolism-lower.webp",
+        "bytes_1x": 24572,
+        "bytes_2x": 67400
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "metabolism/metabolism_view.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": true,
+      "cost": "free"
+    },
+    {
+      "slug": "b40-curriculum-contents",
+      "file": "b40-curriculum-contents.png",
+      "section": "16.1",
+      "section_title": "ACCELERATOR TOOLS — CURRICULUM TOOLS",
+      "title": "Contents",
+      "caption": "The Summa Explorer. Left pane offers Contents and Sociogram, a 'Show article level' toggle and 'Collapse all'; the tree runs Part > Question > Article with live completion counts.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "0863547527905278eaaf144c8585db6a12d716fc6c29f6fca02da457608e98da",
+      "pdf_page": 90,
+      "web": {
+        "1x": "web/1x/b40-curriculum-contents.webp",
+        "2x": "web/2x/b40-curriculum-contents.webp",
+        "bytes_1x": 24346,
+        "bytes_2x": 69794
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "summa_explorer.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b41-curriculum-sociogram",
+      "file": "b41-curriculum-sociogram.png",
+      "section": "16.2",
+      "section_title": "ACCELERATOR TOOLS — CURRICULUM TOOLS",
+      "title": "Sociogram",
+      "caption": "The same corpus as a graph.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "907ae024cce5e3a530de089fe8cc4ad30f204ca88df87952f18eeeb8a24f6a59",
+      "pdf_page": 91,
+      "web": {
+        "1x": "web/1x/b41-curriculum-sociogram.webp",
+        "2x": "web/2x/b41-curriculum-sociogram.webp",
+        "bytes_1x": 31010,
+        "bytes_2x": 85356
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "summa_explorer.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b43a-curriculum-question-expanded",
+      "file": "b43a-curriculum-question-expanded.png",
+      "section": "16.3",
+      "section_title": "ACCELERATOR TOOLS — CURRICULUM TOOLS",
+      "title": "Question expanded",
+      "caption": "Expanding a question reveals its articles.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "162df287339c72b1b8baacca3318a15088cfea42da9443ff4fc6292f7b4a6082",
+      "pdf_page": 92,
+      "web": {
+        "1x": "web/1x/b43a-curriculum-question-expanded.webp",
+        "2x": "web/2x/b43a-curriculum-question-expanded.webp",
+        "bytes_1x": 23416,
+        "bytes_2x": 67250
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "summa_explorer.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b44-curriculum-article-open",
+      "file": "b44-curriculum-article-open.png",
+      "section": "16.4",
+      "section_title": "ACCELERATOR TOOLS — CURRICULUM TOOLS",
+      "title": "Article open — Transcript",
+      "caption": "Opening an article loads it in the reading pane. Transcript is the default; the mode row also offers Contemporary Synthesis and an Index return. That row stays hidden until an article is open.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "26de00e332590bc073c73101ae955fc3c32d7967e0c8451ba462e9c71ab040d3",
+      "pdf_page": 93,
+      "web": {
+        "1x": "web/1x/b44-curriculum-article-open.webp",
+        "2x": "web/2x/b44-curriculum-article-open.webp",
+        "bytes_1x": 50182,
+        "bytes_2x": 137632
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "summa_explorer.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b42-curriculum-synthesis",
+      "file": "b42-curriculum-synthesis.png",
+      "section": "16.5",
+      "section_title": "ACCELERATOR TOOLS — CURRICULUM TOOLS",
+      "title": "Article — Contemporary Synthesis",
+      "caption": "The same article in synthesis mode.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "79e9e7588f3fd5828881439ee1c9ca1f26273c7a1c9d6c726d420e8c290f9e64",
+      "pdf_page": 94,
+      "web": {
+        "1x": "web/1x/b42-curriculum-synthesis.webp",
+        "2x": "web/2x/b42-curriculum-synthesis.webp",
+        "bytes_1x": 53916,
+        "bytes_2x": 156568
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "summa_explorer.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b50-intertradition-top",
+      "file": "b50-intertradition-top.png",
+      "section": "17.1",
+      "section_title": "ACCELERATOR TOOLS — INTER-TRADITION STUDY",
+      "title": "Opening view",
+      "caption": "A single long reading page.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "be9a74e6ca0ae8c7167d630ba4808371bb63b8d2620e2e5217fdc1f8d1bb1d84",
+      "pdf_page": 95,
+      "web": {
+        "1x": "web/1x/b50-intertradition-top.webp",
+        "2x": "web/2x/b50-intertradition-top.webp",
+        "bytes_1x": 44504,
+        "bytes_2x": 123392
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "interT_study.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b51-intertradition-help",
+      "file": "b51-intertradition-help.png",
+      "section": "17.2",
+      "section_title": "ACCELERATOR TOOLS — INTER-TRADITION STUDY",
+      "title": "Help overlay",
+      "caption": "'? What is this' explains what the page collects and how to read it.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "659ece53f7821bb975d84ae797960f5541c53bf9c26a488c6f23db20bfe8843b",
+      "pdf_page": 96,
+      "web": {
+        "1x": "web/1x/b51-intertradition-help.webp",
+        "2x": "web/2x/b51-intertradition-help.webp",
+        "bytes_1x": 37374,
+        "bytes_2x": 109192
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "interT_study.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b52-intertradition-reading1",
+      "file": "b52-intertradition-reading1.png",
+      "section": "17.3",
+      "section_title": "ACCELERATOR TOOLS — INTER-TRADITION STUDY",
+      "title": "Reading — first section",
+      "caption": "Into the body of the study.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "b070e5b6708ddc8d57506a890f097cfc33554b2d8c6907ae0dceafb144d0222a",
+      "pdf_page": 97,
+      "web": {
+        "1x": "web/1x/b52-intertradition-reading1.webp",
+        "2x": "web/2x/b52-intertradition-reading1.webp",
+        "bytes_1x": 48106,
+        "bytes_2x": 139508
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "interT_study.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b52-intertradition-reading2",
+      "file": "b52-intertradition-reading2.png",
+      "section": "17.4",
+      "section_title": "ACCELERATOR TOOLS — INTER-TRADITION STUDY",
+      "title": "Reading — middle",
+      "caption": "A representative section further down.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "60c45827750409e0347451121bc16d2bc53c5eade69fb98597742c69f79ed21a",
+      "pdf_page": 98,
+      "web": {
+        "1x": "web/1x/b52-intertradition-reading2.webp",
+        "2x": "web/2x/b52-intertradition-reading2.webp",
+        "bytes_1x": 44584,
+        "bytes_2x": 123834
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "interT_study.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "b52-intertradition-reading3",
+      "file": "b52-intertradition-reading3.png",
+      "section": "17.5",
+      "section_title": "ACCELERATOR TOOLS — INTER-TRADITION STUDY",
+      "title": "Reading — later section",
+      "caption": "A later section; the page continues well beyond.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "4bd32da68970ceaa7db9068f2f9bb52607642c42be506d71728fa6430ff0649e",
+      "pdf_page": 99,
+      "web": {
+        "1x": "web/1x/b52-intertradition-reading3.webp",
+        "2x": "web/2x/b52-intertradition-reading3.webp",
+        "bytes_1x": 35938,
+        "bytes_2x": 101618
+      },
+      "reach": [
+        {
+          "chapter": "chap-tools"
+        },
+        {
+          "tab": "interT_study.html",
+          "row": "row2"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a20-interactions-collapsed",
+      "file": "a20-interactions-collapsed.png",
+      "section": "18.1",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Four-level scaffold, collapsed",
+      "caption": "Opens with all four interaction levels collapsed, above 'The Road Ahead'. The chapter carries its own note that this section is a scaffold under active development.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "3057366a547d3aee1a62f12b25e9d7a83368a817212b4b7477daff0e827b6108",
+      "pdf_page": 100,
+      "web": {
+        "1x": "web/1x/a20-interactions-collapsed.webp",
+        "2x": "web/2x/a20-interactions-collapsed.webp",
+        "bytes_1x": 15114,
+        "bytes_2x": 40724
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": true,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a21-interactions-level1-open",
+      "file": "a21-interactions-level1-open.png",
+      "section": "18.2",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level One — Intrapersonal Integration",
+      "caption": "Marked UNDER CONSTRUCTION and deliberately inert: the header suppresses the click. Not a fault.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "909bd93dae74f5c4cc90cfbbbc90822e879fa739e8da2be5fc6adf403bd8f16f",
+      "pdf_page": 101,
+      "web": {
+        "1x": "web/1x/a21-interactions-level1-open.webp",
+        "2x": "web/2x/a21-interactions-level1-open.webp",
+        "bytes_1x": 15074,
+        "bytes_2x": 40754
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a21-interactions-level2-open",
+      "file": "a21-interactions-level2-open.png",
+      "section": "18.3",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Two — Small-Group Tradition",
+      "caption": "'…in working things out with others.' Expanded.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "f9dcece7152dcedcda3a1ea7bdfab9ca261529c06923aa2a63b2853a7c9927b9",
+      "pdf_page": 102,
+      "web": {
+        "1x": "web/1x/a21-interactions-level2-open.webp",
+        "2x": "web/2x/a21-interactions-level2-open.webp",
+        "bytes_1x": 18528,
+        "bytes_2x": 50144
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a21-interactions-level3-open",
+      "file": "a21-interactions-level3-open.png",
+      "section": "18.4",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Three — Inter-Tradition Dialogue",
+      "caption": "'…in richly-informed mutual exchange with others.'",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "5dd91ae041412584ffad4145f5aad10358ab7a95573c18cc44e78801a913bfe3",
+      "pdf_page": 103,
+      "web": {
+        "1x": "web/1x/a21-interactions-level3-open.webp",
+        "2x": "web/2x/a21-interactions-level3-open.webp",
+        "bytes_1x": 14318,
+        "bytes_2x": 43330
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a21-interactions-level4-open",
+      "file": "a21-interactions-level4-open.png",
+      "section": "18.5",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Four — Meta-Traditional Encounter",
+      "caption": "'…in pursuit of wisdom and the common good.'",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "5492ef8cc0e177b17f72164f37c1d99f87a3fc00a3eb9b1fa12256ae05f5d336",
+      "pdf_page": 104,
+      "web": {
+        "1x": "web/1x/a21-interactions-level4-open.webp",
+        "2x": "web/2x/a21-interactions-level4-open.webp",
+        "bytes_1x": 19276,
+        "bytes_2x": 55734
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a26-interactions-level-cards",
+      "file": "a26-interactions-level-cards.png",
+      "section": "18.6",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "The level cards",
+      "caption": "Expanding the levels reveals the individual cards beneath them — eleven in total, two marked 'coming'.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "8168a3ad110d1bb0e382a9b35627008581558e84fc81dd73b0991324fd00cb55",
+      "pdf_page": 105,
+      "web": {
+        "1x": "web/1x/a26-interactions-level-cards.webp",
+        "2x": "web/2x/a26-interactions-level-cards.webp",
+        "bytes_1x": 40460,
+        "bytes_2x": 107590
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a27-interactions-level2-signal-stream",
+      "file": "a27-interactions-level2-signal-stream.png",
+      "section": "18.7",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Two — the signal stream",
+      "caption": "The first of three interactives embedded in the level cards. Level Two's 'In practice' row carries a live signal stream (level2_signal_stream.html) showing builders becoming mutually informed.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "2874418c071100f65aa6cbed9cae8b568024f653695bbd2d1a10192a444ffb17",
+      "pdf_page": 106,
+      "web": {
+        "1x": "web/1x/a27-interactions-level2-signal-stream.webp",
+        "2x": "web/2x/a27-interactions-level2-signal-stream.webp",
+        "bytes_1x": 38238,
+        "bytes_2x": 102488
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a28-interactions-level3-readout",
+      "file": "a28-interactions-level3-readout.png",
+      "section": "18.8",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Three — the DET readout",
+      "caption": "The second: Level Three embeds a two-act walkthrough of the DET algorithm (intertradition-readout.html) — Act 1 prepares the pair, Act 2 interacts and reads the outcome. It has its own transport (Play, Prev, Next, Restart and a speed slider) stepping through 18 stages, each with a card and a physics analogue. A further row is marked MORE COMING — the program-timeline view of all 40 steps.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "02e2577fbae876af7fe300752b0b1b4d690bfe04b1b4660d40e62108e2cde0d6",
+      "pdf_page": 107,
+      "web": {
+        "1x": "web/1x/a28-interactions-level3-readout.webp",
+        "2x": "web/2x/a28-interactions-level3-readout.webp",
+        "bytes_1x": 36372,
+        "bytes_2x": 101634
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a29-interactions-level4-matrix",
+      "file": "a29-interactions-level4-matrix.png",
+      "section": "18.9",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Level Four — the 40-step matrix",
+      "caption": "The third: Level Four embeds the full DET 40-step structure matrix (intertradition-matrix.html), the complete method made visible.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "71f0b05118b5b7d32963bbf1ed454caa72442e5b8ee98f4f659a486dc456b9b1",
+      "pdf_page": 108,
+      "web": {
+        "1x": "web/1x/a29-interactions-level4-matrix.webp",
+        "2x": "web/2x/a29-interactions-level4-matrix.webp",
+        "bytes_1x": 39686,
+        "bytes_2x": 116596
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a22-interactions-devpath-open",
+      "file": "a22-interactions-devpath-open.png",
+      "section": "18.10",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "The Road Ahead",
+      "caption": "Expands to the 32 development pathways.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "8a413e0cf9a9c9be5e9962c04c0181ce225ec60858bc8033be32769a028687c6",
+      "pdf_page": 109,
+      "web": {
+        "1x": "web/1x/a22-interactions-devpath-open.webp",
+        "2x": "web/2x/a22-interactions-devpath-open.webp",
+        "bytes_1x": 11988,
+        "bytes_2x": 39088
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a22b-interactions-pathway-list",
+      "file": "a22b-interactions-pathway-list.png",
+      "section": "18.11",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "The 32 pathways",
+      "caption": "Grouped as Infrastructure Spine, Core Interaction, Content Surfacing and Presentation. Each row carries a number, a status badge — DRAFTED or OUTLINED — and a one-line description. A star marks the ISME demo critical path for the 8-10 July 2026 presentation.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "13680d1b7050672e8119b55d4a0478716e549b9c54f22b11ef57ca0b4bc54f69",
+      "pdf_page": 110,
+      "web": {
+        "1x": "web/1x/a22b-interactions-pathway-list.webp",
+        "2x": "web/2x/a22b-interactions-pathway-list.webp",
+        "bytes_1x": 27026,
+        "bytes_2x": 78536
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a24-interactions-pathway-reader",
+      "file": "a24-interactions-pathway-reader.png",
+      "section": "18.12",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Pathway reader",
+      "caption": "Clicking a pathway opens its full document in a reader, showing the status badges, the source path (here architecture/00_broker.md) and the complete text. One representative pathway.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "fd4b01b494b1c5468b055e34babc591fa525638b0d9cc895cae50e6490e84bef",
+      "pdf_page": 111,
+      "web": {
+        "1x": "web/1x/a24-interactions-pathway-reader.webp",
+        "2x": "web/2x/a24-interactions-pathway-reader.webp",
+        "bytes_1x": 58548,
+        "bytes_2x": 166928
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a25-interactions-pathway-reader-next",
+      "file": "a25-interactions-pathway-reader-next.png",
+      "section": "18.13",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Pathway reader — Next Step",
+      "caption": "Prev and Next Step page through all 32 pathways without returning to the list.",
+      "viewport": [
+        1440,
+        1600
+      ],
+      "sha256": "985cc13a079fb532646fbfbef3c83049c9b4400d0db98c3f490c05c20097ec2e",
+      "pdf_page": 112,
+      "web": {
+        "1x": "web/1x/a25-interactions-pathway-reader-next.webp",
+        "2x": "web/2x/a25-interactions-pathway-reader-next.webp",
+        "bytes_1x": 61996,
+        "bytes_2x": 176468
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    },
+    {
+      "slug": "a23-interactions-lower",
+      "file": "a23-interactions-lower.png",
+      "section": "18.14",
+      "section_title": "COMMUNITY INTERACTIONS",
+      "title": "Lower page",
+      "caption": "The remainder of the chapter, below the pathway list.",
+      "viewport": [
+        1440,
+        900
+      ],
+      "sha256": "972d5a6fce391c96f3a232c95e9420f0f82b816e18bc7c6ace1c15927bd60fcc",
+      "pdf_page": 113,
+      "web": {
+        "1x": "web/1x/a23-interactions-lower.webp",
+        "2x": "web/2x/a23-interactions-lower.webp",
+        "bytes_1x": 23282,
+        "bytes_2x": 63354
+      },
+      "reach": [
+        {
+          "chapter": "chap-interaction"
+        }
+      ],
+      "reach_exact": false,
+      "volatile": false,
+      "cost": "free"
+    }
+  ],
+  "derivatives": {
+    "quality": 86,
+    "total_bytes_1x": 4154486,
+    "total_bytes_2x": 11689136
+  },
+  "_reach": "reach drives the app to the plate. reach_exact=false means these steps reach the plate PAGE but not its exact state -- the within-page steps were lost with the capture harness and are deliberately not guessed. Every selector here is asserted against wiki/explorer.html and wiki/start_here.html by build_reach.py, which fails the run rather than writing a stale manifest."
+}

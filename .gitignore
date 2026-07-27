@@ -137,3 +137,8 @@ hep-det/
 __pycache__/
 *.pyc
 .writetest_*
+
+# tools/guide: the 1440-px PNG plates are build inputs, not shipped assets.
+# They are regenerated from the PDF by tools/guide/recover_from_pdf.py;
+# what ships (and what is committed) is tools/guide/web/.
+tools/guide/shots/
