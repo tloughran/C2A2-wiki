@@ -653,7 +653,14 @@
   // branch: a verb declares `near`, and it is offered only when the near verb
   // is actually supported on this view.
   function unsupported(op, caps, grammar) {
-    const out = { ok: false, error: 'unsupported_here', verb: op.verb, supported: caps.slice().sort() };
+    // Carry the ARGUMENT through. A rejected verb is not always a rejected
+    // request: "Prima Pars, Question 18, Article 1" came back as "that kind of
+    // search isn't supported here" because the guide chose `find` for what was
+    // an ADDRESS, and the words the user actually said were dropped at the door
+    // (Tom, 2026-07-27). The shell can only offer a better reading if it still
+    // has them.
+    const out = { ok: false, error: 'unsupported_here', verb: op.verb, supported: caps.slice().sort(),
+                  term: (op.args && op.args.length === 1 && typeof op.args[0] === 'string') ? op.args[0] : null };
     const spec = grammar && grammar.byVerb ? grammar.byVerb[op.verb] : null;
     if (spec && spec.near && caps.indexOf(spec.near) !== -1) { out.near = spec.near; }
     return out;

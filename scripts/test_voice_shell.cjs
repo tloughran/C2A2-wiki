@@ -1361,6 +1361,21 @@ async function main() {
     "var s = d.querySelector('.a-row.sel');" +
     "return s ? s.getAttribute('data-ref') : null;");
   record('K2 it really opened THAT article, by ref', /\.Q4\.A2$/.test(String(at)), String(at));
+  // TOM'S EXACT EXCHANGE (2026-07-27). Standing in the Summa explorer he said
+  // "Prima Pars, Question 18, Article 1" and was told "that kind of search isn't
+  // supported here" -- because the guide chose `find`, which this tab does not
+  // have, so the address was rejected at the door and never reached the
+  // resolver. The words were his; the verb was the model's guess. A named place
+  // is a place whatever verb it arrives under.
+  await row(page, 'K1a a coordinate sent under the WRONG verb still lands',
+    'find Prima Pars, Question 18, Article 1',
+    { ok: true, spoken: /^go /, notSpoken: /not supported|Not available/ });
+  await sleep(1500);
+  const at18 = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var s = d.querySelector('.a-row.sel');" +
+    "return s ? s.getAttribute('data-ref') : null;");
+  record('K1b and it is the article he asked for', String(at18) === 'I.Q18.A1', String(at18));
   await row(page, 'K3 a coordinate that does not exist says so plainly',
     'go to question 4000, article 9',
     { ok: false, spoken: /there is no|no tab called/ });

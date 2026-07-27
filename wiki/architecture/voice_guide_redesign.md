@@ -1277,6 +1277,43 @@ way: you drag across a paragraph and *then* turn to the guide. Rows now cover
 focus moving to the command box and the voice panel opening. The selection
 survives both, which is how we know the mechanism was never the problem.
 
+### S2. "That kind of search isn't supported here" — the third instance
+
+> **Guide:** Where would you like to go from here?
+> **Tom:** Prima Pars, Question 18, Article 1.
+> **Guide:** That kind of search isn't supported here.
+
+Standing *in* the Summa explorer, asking for an article that exists
+(`I.Q18.A1`, "The life of God"). The coordinate resolver worked; it was never
+reached. The guide chose **`find`** — a text search of the graph, not in this
+tab's caps — so the request was rejected at the door as an unsupported VERB, and
+the words Tom actually said were dropped there.
+
+**Same root cause a third time: the capability was real and the model was never
+told.** `go`'s description still said only "switch tab, follow a page link, walk
+the tab row." Nothing about addressing a place. Three for three now — items,
+highlights, coordinates — and the shape is always the same: build the mechanism,
+green the harness, forget that the only thing standing between the user and it is
+a sentence in a tool description.
+
+Fixed in three places, because one is not enough:
+
+1. **`go` advertises coordinates**, with Tom's own phrasing as the example.
+2. **A standing instruction**: a location is a `go`, never a `find` — naming the
+   exact failure so the model can recognise it.
+3. **A named place is a place whatever verb it arrives under.** `unsupported_here`
+   now carries the ARGUMENT through, and if what the user said parses as a
+   coordinate on this tab, the shell goes there instead of erroring. The words
+   were the user's; the verb was the model's guess, and the standing instruction
+   already says to act on a reasonable reading rather than hand the question back.
+
+The harness now runs Tom's exact utterance under the wrong verb (`find Prima
+Pars, Question 18, Article 1`) and asserts it lands on `I.Q18.A1`.
+
+**The lesson worth keeping:** a prompt-visible capability is part of the feature,
+not documentation of it. A green harness only proves the mechanism exists — the
+guide will refuse, fluently and plausibly, for anything it was not told about.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not
