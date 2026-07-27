@@ -470,6 +470,12 @@ async function row(page, name, cmd, expect) {
   if (expect.spoken && !expect.spoken.test(r.spoken || '')) {
     problems.push('spoken ' + JSON.stringify(r.spoken) + ' !~ ' + expect.spoken);
   }
+  // Some of what a guide says is wrong by being PRESENT -- offering links from a
+  // pane that is not on screen, say. A positive match cannot catch that, and the
+  // row it hid went green for a whole run.
+  if (expect.notSpoken && expect.notSpoken.test(r.spoken || '')) {
+    problems.push('spoken ' + JSON.stringify(r.spoken) + ' should NOT match ' + expect.notSpoken);
+  }
   if (expect.ok !== undefined && r.ok !== expect.ok) {
     problems.push('ok=' + r.ok + ' expected ' + expect.ok);
   }
@@ -1200,6 +1206,125 @@ async function main() {
   await row(page, 'H12a and it walks that roster', 'what',
     { ok: true, spoken: /explorer view.*\d+ agents here/ });
   const shotH = await page.screenshot(path.join(SHOTS, 'H-agent-map.png'));
+
+  // ---- Phase J: Curriculum Tools -- a roster that lives BEHIND the click ----
+  //
+  // Every tab so far had its roster already on screen, so `pick` marking an item
+  // was enough. Summa's contents tree is 5 parts -> 611 questions -> 2747
+  // articles, all built EAGERLY into the DOM and hidden by collapsed containers.
+  // Two things broke there, and both were shell-side rather than declarations:
+  //
+  //   1. domItems' visibility test asked whether the element's OWN computed
+  //      display was none, which cannot see an ancestor's. Every one of the 2747
+  //      rows has offsetParent null and display `flex`, so a collapsed tree
+  //      enumerated the entire vault. J2 is the regression test and it does not
+  //      hard-code a number: it counts the visible rows in the page itself and
+  //      asserts the guide says the same, so it stays true as the Summa grows.
+  //   2. `pick` MARKS; it has never clicked. On a closed tree that reaches
+  //      nothing at all. `open` existed but was wired to openNodeByLabel -- a
+  //      global on wiki_narration.html alone -- which is why no tab since the
+  //      Sociogram could have it in caps.
+  process.stdout.write('\nPhase J -- a roster behind the click (Curriculum Tools / Summa)\n');
+  await activateTab(page, 'summa_explorer.html');
+  await sleep(6000);
+  await assertManifest(page, 'curriculum_tools', 'summa_explorer.html');
+  await auditTab(page, 'curriculum_tools', 3, 0);
+
+  // The guide's count vs the page's own truth. Without the getClientRects fix
+  // this reads in the thousands while a human sees five closed parts.
+  const visRows = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var els = d.querySelectorAll('.part-header, .q-row, .a-row.avail'), n = 0;" +
+    "for (var i = 0; i < els.length; i++) { if (els[i].getClientRects().length) { n++; } }" +
+    "return { visible: n, built: els.length };");
+  record('J0 the page really does build far more rows than it shows',
+    visRows.built > 2000 && visRows.visible < visRows.built,
+    visRows.visible + ' visible of ' + visRows.built + ' built');
+  await row(page, 'J1 what -> names the contents view', 'what',
+    { ok: true, spoken: /contents view/ });
+  await row(page, 'J2 the roster is what is ON SCREEN, not what is in the DOM', 'what',
+    { ok: true, spoken: new RegExp('\\b' + visRows.visible + ' entries here') });
+  await row(page, 'J3 pick first -> walks the tree', 'pick first',
+    { ok: true, spoken: /1 of \d+ entries/ });
+  // Write-returns-the-READ on a knob bound to a pair of BUTTONS rather than a
+  // select. switchMode returns early while nothing is open, so the honest answer
+  // is that the mode did not move -- not the value we asked for. This row has to
+  // come BEFORE anything is opened, or its premise is quietly false.
+  await row(page, 'J4 set mode with nothing open reports the truth, not the intent',
+    'set mode synthesis', { ok: true, spoken: /transcript/ });
+  await row(page, 'J5 open (bare) -> activates the row the cursor is on', 'open',
+    { ok: true, spoken: /opened Day 1/ });
+  await sleep(1200);
+  // Same knob, same command, different answer -- because the page can now honour
+  // it. Nothing in the manifest changed between J4 and J6.
+  await row(page, 'J6 and now the same set MOVES, because the page can honour it',
+    'set mode synthesis', { ok: true, spoken: /synthesis/ });
+  // The heart of it: opening a CONTAINER grows the roster and the guide says by
+  // how much. Expanding a question and loading an article are the same verb on
+  // the same tree, and with no screen they would otherwise sound identical.
+  await row(page, 'J7 open by NAME -> a question expands, and the roster grows out loud',
+    'open the nature and extent of sacred doctrine',
+    { ok: true, spoken: /opened .*sacred doctrine.*\|\s*now \d+ entries/i });
+  // Now that a question is open, an ARTICLE row exists to be opened -- and the
+  // page marks the one it loaded with `.a-row.sel`, which is what the spec
+  // declares `selected` as and therefore what the guide reads back. Reading our
+  // own click instead would report an unavailable article (no handler at all) as
+  // a success. The label is taken from the page and checked for uniqueness
+  // first: many articles are titled "Article 1", and a test that tripped the
+  // ambiguity guard would be testing the wrong thing.
+  const art = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var rows = d.querySelectorAll('.part-header, .q-row, .a-row.avail'), seen = {}, arts = [];" +
+    "for (var i = 0; i < rows.length; i++) {" +
+    "  if (!rows[i].getClientRects().length) { continue; }" +
+    "  var h = rows[i].querySelector('.part-name, .q-title-text, .a-title-text');" +
+    "  var t = h ? h.textContent.trim() : '';" +
+    "  seen[t] = (seen[t] || 0) + 1;" +
+    "  if (rows[i].classList.contains('a-row')) { arts.push(t); }" +
+    "}" +
+    "for (var j = 0; j < arts.length; j++) { if (seen[arts[j]] === 1) { return arts[j]; } }" +
+    "return null;");
+  record('J7a the expanded question really put article rows on screen', !!art, String(art));
+  await row(page, 'J7b open that article by name', 'open ' + art,
+    { ok: true, spoken: /opened /i });
+  await sleep(1500);
+  const sel = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var s = d.querySelector('.a-row.sel'), c = d.getElementById('content-area');" +
+    "return { sel: s ? (s.textContent || '').trim().slice(0, 40) : null," +
+    " showing: !!(c && c.style.display !== 'none') };");
+  record('J7c the guide reads the PAGE\'s own marker, not the click it just made',
+    !!sel.sel && sel.showing, JSON.stringify(sel));
+  await row(page, 'J8 open with nothing to match says so, and says what there is to choose from',
+    'open a question that does not exist',
+    { ok: false, spoken: /nothing here is called/ });
+  // `read` must speak the ARTICLE, not the tree row that opened it. The row's own
+  // text is "A1Article 1Day 2" -- the which-document family's exact shape, and
+  // the reader has already been caught calling a card "this article".
+  // THE WORD COUNT IS THE ASSERTION. A first pass of this row matched /reading/
+  // and went green while the guide was reading the tree row -- "A1 Article 1
+  // Day 2", which it reported as 5 words. A Summa article is never five words,
+  // so the number is what distinguishes the door from the room; matching the
+  // verb only tests that something was said.
+  await row(page, 'J9 read -> speaks the ARTICLE, not the five-word row that opened it', 'read',
+    { ok: true, spoken: /reading .*\|\s*([1-9]\d{2,}) words/ });
+  await row(page, 'J10 stop', 'stop', { ok: true, spoken: /stopped/ });
+  await row(page, 'J11 close -> back to the index, via the control the spec declared', 'close',
+    { ok: true, spoken: /closed/ });
+  // The collision, exercised where it actually bites: `sociogram` names a real
+  // TAB and this tab's own sub-view. Standing here, the view wins -- 69c312d's
+  // rule, now proven on a second tab that did not exist when it was written.
+  await row(page, 'J12 standing here, this tab\'s own sociogram view wins over the tool', 'go sociogram',
+    { ok: true, spoken: /this tab's sociogram view/ });
+  await sleep(3000);
+  await assertManifest(page, 'curriculum_tools', 'summa_explorer.html');
+  // Also a row that first passed while it should not have: it asserted the view
+  // name only, and went green while `what` offered the 2656 article links from a
+  // landing pane that is not on screen in this view. A door you cannot see is
+  // not a door, so the assertion is now that they are GONE.
+  await row(page, 'J13 the hidden pane\'s 2656 links are not offered as doors here', 'what',
+    { ok: true, spoken: /sociogram view/, notSpoken: /\d{3,} links/ });
+  const shotJ = await page.screenshot(path.join(SHOTS, 'J-summa-tree.png'));
 
   // ---- Idle listening cutoff: what can honestly be checked without a session --
   //

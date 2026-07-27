@@ -215,6 +215,18 @@
         return ok(spec, [rest], echo);  // whole remainder = one free-text arg
       }
 
+      // Free text that MAY be omitted. `open` earns this: on a tab that walks a
+      // roster, "pick first ... open" is the ordinary shape -- you go to a thing
+      // and then open the thing you are on -- and requiring the name back would
+      // make the user say what the guide just said to them. Whether a bare
+      // `open` is meaningful is not the parser's call, so it passes an empty
+      // arg list along and plan() decides: a tab whose items declare how they
+      // open reads it as "the one under the cursor", and the graph still
+      // answers missing_arg exactly as before.
+      case 'text-opt': {
+        return ok(spec, rest ? [rest] : [], echo);
+      }
+
       case 'many': {
         if (!rest) { return err('missing_arg', echo, { verb: verb }); }
         return ok(spec, rest.split(' '), echo);
@@ -723,7 +735,16 @@
       }
 
       case 'open': {
-        const r = resolveNode(op.args[0], ctx.nodes);
+        const term = op.args.length ? op.args[0] : '';
+        // A tab whose items declare how they OPEN resolves the name against
+        // what is ON SCREEN, not against the vault index: a Summa question is
+        // not a node, so resolving it there could only ever fail ("Could not
+        // find the nature and extent of sacred doctrine"). The matching itself
+        // stays in the shell, which is the only side that can see the rows and
+        // already reports ambiguity honestly -- two matchers would drift.
+        if (ctx.activates) { return { ok: true, kind: 'selection', action: 'open', label: term, journal: { dim: 'selection' } }; }
+        if (!term) { return { ok: false, error: 'missing_arg', verb: 'open' }; }
+        const r = resolveNode(term, ctx.nodes);
         if (!r.ok) { return r; }
         return { ok: true, kind: 'selection', action: 'open', id: r.id, label: r.label, group: r.group, journal: { dim: 'selection' } };
       }

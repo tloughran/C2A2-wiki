@@ -208,7 +208,19 @@ check('zoom in / zoom out accepted', function () {
   assert.deepStrictEqual(CCL.parse('zoom in', grammar).args, ['in']);
   assert.deepStrictEqual(CCL.parse('zoom out', grammar).args, ['out']);
 });
-check('text-verb missing arg -> missing_arg ("open")', function () { assert.strictEqual(CCL.parse('open', grammar).error, 'missing_arg'); });
+// `open` moved from `text` to `text-opt` when Summa's contents tree arrived:
+// there, "pick first ... open" is the ordinary shape, and demanding the name
+// back would make the user repeat what the guide had just said to them. The
+// PARSER cannot know whether a bare `open` is meaningful -- that depends on
+// whether the tab's items declare how they open -- so the decision moved to
+// plan(), and these three rows pin the whole contract rather than one end of it.
+check('bare "open" parses -- the parser does not decide whether it is meaningful', function () {
+  const op = CCL.parse('open', grammar);
+  assert.strictEqual(op.error, undefined);
+  assert.deepStrictEqual(op.args, []);
+});
+// (the two plan-level halves of this contract live in section 9, below, where
+// a planner CTX exists)
 check('many-verb missing arg -> missing_arg ("show")', function () { assert.strictEqual(CCL.parse('show', grammar).error, 'missing_arg'); });
 check('focus with one term -> focus_needs_two', function () { assert.strictEqual(CCL.parse('focus levin', grammar).error, 'focus_needs_two'); });
 check('set with no value -> missing_arg ("set view")', function () {
@@ -416,6 +428,19 @@ check('journal: record rejects a malformed entry', function () {
 
 const CTX = { caps: CCL.SOCIOGRAM_CAPS, roster: ROSTER, tabs: DEST.tabs, nodes: DEST.nodes };
 function planCmd(str) { return CCL.plan(CCL.parse(str, grammar), CTX); }
+
+// The other two thirds of the bare-`open` contract (the parse half is in
+// section 3): who decides, and both answers.
+check('bare "open" is still missing_arg where there is no roster to be relative to', function () {
+  assert.strictEqual(CCL.plan(CCL.parse('open', grammar), CTX).error, 'missing_arg');
+});
+check('bare "open" on a tab that activates its items means the one under the cursor', function () {
+  const ctx = { caps: CCL.SOCIOGRAM_CAPS, roster: [], tabs: [], nodes: [], activates: true };
+  const p = CCL.plan(CCL.parse('open', grammar), ctx);
+  assert.strictEqual(p.ok, true);
+  assert.strictEqual(p.kind, 'selection');
+  assert.strictEqual(p.label, '');
+});
 
 check('plan: parse errors pass straight through', function () {
   const p = CCL.plan(CCL.parse('florb', grammar), CTX);

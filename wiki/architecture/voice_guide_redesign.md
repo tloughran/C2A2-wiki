@@ -1092,6 +1092,92 @@ be checked against the tab roster as they are declared. Three of the first six I
 wrote collided, and the audit could not catch it — the sweep checks that controls
 are *covered*, not that names are *distinct*.
 
+## R. A roster that lives behind the click (Curriculum Tools / Summa, 2026-07-27)
+
+Every tab through the Agent Map had its roster already on screen, so `pick`
+*marking* an item was enough. Summa's contents tree is the first that does not:
+5 parts → 611 questions → 2747 articles, all built **eagerly** into the DOM and
+hidden inside collapsed containers. Standing on it, the guide could reach
+nothing at all — and two of the four defects were in the shell, not the
+declaration, which is the useful part.
+
+**1. The visibility test was only ever half a test.** `domItems` skipped a row
+when its **own** computed display was `none` — blind to an ancestor's. Summa
+hides `.q-list` / `.a-list` wholesale, so all 2747 rows had `offsetParent` null
+and `display: flex`, and a collapsed tree enumerated the entire vault. Now
+`getClientRects().length` — empty inside a `display:none` subtree, non-empty for
+the visible `position:fixed` element that `offsetParent` was ANDed in to protect.
+The same half-test was live in `pageLinks`, where it offered the landing pane's
+**2656** article links while that pane was off screen; fixing it dropped the
+tab's honest link count to 572.
+
+**2. `pick` marks; it has never clicked.** `open` existed for that but was wired
+straight to `openNodeByLabel`, a global on `wiki_narration.html` alone — which is
+why every tab since the Sociogram had to leave `open` out of its caps. Opening
+things was never graph-shaped; the shell had simply assumed the graph. Now
+declared per item spec:
+
+- **`activate`** — how this roster's items open (`"click"`). Sets `ctx.activates`,
+  which tells the planner that `open <name>` names something **on screen**, not a
+  node in the vault index. Matching stays shell-side, the only place that can see
+  the rows, so there is one matcher rather than two that drift.
+- **`selected`** — the page's own marker for what it loaded (`.a-row.sel`), so
+  `readDim('selection')` reads the page rather than reporting our own click.
+  91 articles have no transcript and carry no handler at all; without this, a
+  click on one would read back as success.
+- **`close`** — the control `close` clicks. The audit now counts it as covered by
+  that declaration rather than demanding it be declared twice.
+- **`reads`** — where the page **puts** what a row opens (`#content-area`).
+  Seventh instance of the which-document family, and the first whose answer is
+  not "ask the element which document it is in" but *"ask the page where it put
+  the thing"*: the row is a door, not the room. `read` spoke the door — "A1
+  Article 1 Day 2", **5 words** — and called it the article. With `reads`: 3069.
+- **`requires_knob`** — a roster only well-defined with a knob in a position.
+  Summa's `show-articles` checkbox does not merely hide rows: with it off,
+  clicking a question *jumps to its first available article* instead of
+  expanding. The identical spoken command would mean two things depending on a
+  checkbox the user cannot see, so the spec says what it needs, the shell puts it
+  there, and says so (Tom's call: bind it, force it on before `pick`).
+
+**A button group is a knob.** The Transcript / Contemporary-Synthesis pair is a
+*setting* — it changes how the open article renders, not which one you are on —
+but knobs could bind only a `<select>` or a checkbox, and its winning class is
+`.on`, not the `.active` a view's test hard-codes. Declaring it as a sub-view
+would have been mis-declaring it to fit the machinery. `bind.buttons` +
+`on_class` instead, portable to every button-group toggle left in the fan-out.
+
+**`open` became `text-opt`.** "Pick first … open" is the ordinary shape; demanding
+the name back would make the user repeat what the guide just said. The parser
+cannot know whether a bare `open` is meaningful, so it passes an empty arg list
+and `plan()` decides — `activates` reads it as "the one under the cursor", and the
+graph still answers `missing_arg` exactly as before.
+
+**One flat roster, not three levels.** `when` can only ask which sub-view is
+active, and nothing on the page says which *level* a user is walking — because a
+sighted user is not at a level either, they are looking at an open tree. So the
+roster is the visible rows at all three levels, `next` walks the visual reading
+order, and `open` on a part or question expands it, growing the roster. That
+growth is **reported**, because expanding a container and loading an article are
+the same verb on the same tree and would otherwise sound identical.
+
+**No `total` declared, deliberately.** `#stats-line` counts *articles* (2656 of
+2747 available) while the roster counts *rows*; wiring it up would make `what` say
+"24 of 2747 entries" — false in unit, not merely imprecise. Deferred by name.
+
+**Two of my own test rows went green over live defects.** `/reading/i` matched
+while the reader spoke a five-word row, and a `what` row asserting only the view
+name passed while 2656 invisible links were being offered. Both now assert the
+number and the *absence* respectively — `row()` gained `notSpoken`, because some
+of what a guide says is wrong by being **present**, and no positive match can
+catch that.
+
+**The name check paid off immediately.** `sociogram` names a real tab and this
+tab's own sub-view — the third collision in seven manifests. It is a true
+sub-view (the Sociogram tool pre-cut to Summa nodes via
+`applySummaSociogramPreset`), so §Q's rule settled it with no new code: standing
+here, the view wins. Entering it lazily fetches ~28.7 MB — a real download, not a
+toggle.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

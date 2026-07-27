@@ -2466,7 +2466,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=6a5b9f7081"></script>
+<script src="lib/c2a2-commandline.js?v=167d2503e2"></script>
 <script>
 (function () {
   'use strict';
@@ -2604,15 +2604,43 @@ var VoiceGuide = (function() {
   }
   // T1 knob read/write: a bound <select>.value or checkbox.checked in the iframe.
   // bool knobs read/write 'on'/'off'; the write fires 'change' so the tab redraws.
+  // A BUTTON GROUP is a knob too. Summa's Transcript / Contemporary-Synthesis
+  // pair is a setting, not a place -- it changes how the open article is
+  // rendered, not which one you are on -- but it is drawn as two buttons, and
+  // knobs could only bind a <select> or a checkbox. Rather than mis-declare it
+  // as a sub-view (whose `active` test is a hard-coded class this pair does not
+  // use, `.on`), the bind kind is generalised: the winning class is declared,
+  // because what a page calls "currently chosen" is the page's business.
+  function btnOnClass(bind) { return bind.on_class || 'active'; }
   function readKnob(bind) {
     var d = ifDoc(); if (!d || !bind) { return null; }
     if (bind.select)   { var s = d.querySelector(bind.select);   return s ? s.value : null; }
     if (bind.checkbox) { var c = d.querySelector(bind.checkbox); return c ? (c.checked ? 'on' : 'off') : null; }
+    if (bind.buttons) {
+      for (var i = 0; i < bind.buttons.length; i++) {
+        var b = d.querySelector(bind.buttons[i].sel);
+        if (b && b.classList.contains(btnOnClass(bind))) { return bind.buttons[i].v; }
+      }
+      return null;
+    }
     return null;
   }
   function writeKnob(bind, value) {
     var d = ifDoc(), w = ifWin(); if (!d || !bind) { throw new Error('this view has no bound control'); }
     var el, ev;
+    if (bind.buttons) {
+      // Clicking is the page's own path -- these buttons carry onclick handlers
+      // that fetch, so writing a property and firing `change` would do nothing.
+      for (var i = 0; i < bind.buttons.length; i++) {
+        if (bind.buttons[i].v === value) {
+          el = d.querySelector(bind.buttons[i].sel);
+          if (!el) { throw new Error('control not found'); }
+          el.click();
+          return;
+        }
+      }
+      throw new Error('no such value');
+    }
     if (bind.select)   { el = d.querySelector(bind.select);   if (!el) { throw new Error('control not found'); } el.value = value; }
     else if (bind.checkbox) { el = d.querySelector(bind.checkbox); if (!el) { throw new Error('control not found'); } el.checked = (value === 'on'); }
     else { throw new Error('unbindable knob'); }
@@ -2920,8 +2948,11 @@ var VoiceGuide = (function() {
     for (var i = 0; i < els.length; i++) {
       var a = els[i], text = (a.textContent || '').replace(/\s+/g, ' ').trim();
       if (!text) { continue; }
-      var view = a.ownerDocument && a.ownerDocument.defaultView;
-      if (!a.offsetParent && view && view.getComputedStyle(a).display === 'none') { continue; }
+      // Same half-test domItems had, and the same fix: an ancestor's display is
+      // invisible to getComputedStyle on the child. Summa hides its whole
+      // landing pane while the sociogram view is up, and the guide went on
+      // offering the 2656 article links inside it as doors on the current page.
+      if (!a.getClientRects().length) { continue; }
       // TWO STRINGS ON PURPOSE. `text` is everything the anchor contains and is
       // what MATCHING runs against -- Start Here's "door" links wrap a whole
       // paragraph, and the phrase a user would actually say ("open the review
@@ -2971,10 +3002,18 @@ var VoiceGuide = (function() {
     var els = [].slice.call(d.querySelectorAll(sp.select)), out = [];
     for (var i = 0; i < els.length; i++) {
       var el = els[i];
-      // getComputedStyle must come from the element's OWN view: in a nested
-      // frame the shell's window would be asked about a foreign element.
-      var view = el.ownerDocument && el.ownerDocument.defaultView;
-      if (!el.offsetParent && view && view.getComputedStyle(el).display === 'none') { continue; }   // not on screen
+      // NOT ON SCREEN. The old test asked whether the element's OWN computed
+      // display was none, which is blind to an element hidden by an ANCESTOR --
+      // and Summa's contents tree hides whole containers (`.q-list`, `.a-list`
+      // are `display: none` until opened) with all 2747 article rows eagerly
+      // built inside them. Every one of those rows has offsetParent null and
+      // its own display still `flex`, so the AND never fired and a collapsed
+      // tree enumerated its entire vault. getClientRects is empty for anything
+      // inside a display:none SUBTREE, and stays non-empty for a visible
+      // position:fixed element -- which is the case offsetParent was ANDed in
+      // to protect. Every earlier tab hid items by their own display, so this
+      // was never wrong before; it was only ever half a test.
+      if (!el.getClientRects().length) { continue; }
       var lab = '';
       if (sp.label && sp.label.sel) { var h = el.querySelector(sp.label.sel); lab = h ? (h.textContent || '').trim() : ''; }
       if (!lab) { lab = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60); }
@@ -2988,6 +3027,35 @@ var VoiceGuide = (function() {
     if (!sp || sp.kind === 'none') { return []; }
     if (sp.kind === 'dom') { return domItems(sp); }
     return revealedNodes();
+  }
+  // ---- ACTIVATE: clicking the thing, not merely marking it ----------------
+  //
+  // `pick` has only ever MARKED an item -- outline it, scroll it into view --
+  // and on every tab so far that was enough, because the whole roster was
+  // already on screen and `read` could speak it where it stood. Summa's
+  // contents tree is the first roster that lives BEHIND the click: parts and
+  // questions start closed, so a guide that can only mark reaches nothing at
+  // all, and no amount of walking opens anything.
+  //
+  // The `open` verb already existed for exactly this, but was wired straight to
+  // `openNodeByLabel` -- a global that lives on wiki_narration.html and nowhere
+  // else. That is why every tab since has had to leave `open` out of its caps:
+  // not because opening things is graph-shaped, but because the shell had
+  // assumed the graph. So the action is DECLARED per item spec (`activate`),
+  // beside `frame` and `total`, and a tab that says how to open its items gets
+  // `open`/`close` without a line of new per-tab code.
+  function matchItems(term) {
+    var t = (term || '').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (!t) { return []; }
+    // Same shape as matchLinks and the tab resolver: exact first, then
+    // contained, so "sacred doctrine" finds the question without a shorter
+    // label ever shadowing it.
+    var all = activeItems(), exact = [], part = [], i;
+    for (i = 0; i < all.length; i++) {
+      var lab = (all[i].label || '').toLowerCase();
+      if (lab === t) { exact.push(all[i]); } else if (lab.indexOf(t) !== -1) { part.push(all[i]); }
+    }
+    return exact.length ? exact : part;
   }
   // ---- sub-views: a tab that is more than one place ----------------------
   //
@@ -3132,9 +3200,71 @@ var VoiceGuide = (function() {
     out.sort(function (a, b) { return a.label < b.label ? -1 : (a.label > b.label ? 1 : 0); });
     return out;
   }
+  // `open` on a tab that declared how its items open. The graph path below is
+  // untouched: a tab with no `activate` still routes to openNodeByLabel, so
+  // this adds a road rather than moving one.
+  function execSelection(p) {
+    var sp = itemSpec(), act = sp && sp.activate;
+    if (!act) {
+      return execMut('selection', function () {
+        if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); }
+      }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
+    }
+    if (p.action !== 'open') {
+      var cd = specDoc(sp), ce = sp.close && cd && cd.querySelector(sp.close);
+      if (!ce) { return show('this view has no way to close what is open', 'err'); }
+      return execMut('selection', function () { ce.click(); }, 'closed', false);
+    }
+    var el = null, label = p.label;
+    if (label) {
+      var hits = matchItems(label);
+      if (!hits.length) { return show('nothing here is called "' + label + '"  |  ' + itemsPhrase(activeItems().length) + ' to choose from', 'err'); }
+      // Say the ambiguity out loud rather than picking one: with no screen, a
+      // silent choice among six is indistinguishable from the right answer.
+      if (hits.length > 1) {
+        return show('"' + label + '" matches ' + hits.length + ': ' +
+          hits.slice(0, 6).map(function (h) { return h.label; }).join('; ') +
+          (hits.length > 6 ? '; ...' : ''), 'err');
+      }
+      el = hits[0].el; label = hits[0].label;
+    } else {
+      // Bare `open` means the thing the cursor is already on -- the ordinary
+      // shape of walking to something and then opening it.
+      var attached = currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl);
+      if (!attached) { return show('nothing is picked -- say "pick first", or name what to open', 'err'); }
+      el = currentItemEl; label = currentItemLabel;
+    }
+    // The roster GROWS when what you opened was a container. Saying so is the
+    // only feedback a voice user gets that the click did anything: expanding a
+    // part and loading an article are the same verb on the same tree, and they
+    // sound identical otherwise.
+    var before = activeItems().length;
+    return execMut('selection', function () {
+      selectDomItem(el, label);
+      el.click();
+      var after = activeItems().length;
+      return after === before ? '' : ('  |  now ' + itemsPhrase(after));
+    }, 'opened ' + label, false);
+  }
+  // A spec may declare that its roster is only well-defined with a knob in a
+  // particular position. Summa's `articles` checkbox does not merely hide rows:
+  // with it OFF, clicking a question jumps straight to that question's first
+  // available article instead of expanding it -- so the identical command would
+  // mean two different things depending on a checkbox the voice user cannot
+  // see. Rather than branch on it, the spec says what it needs, the shell puts
+  // it there, and says so.
+  function ensureSpecKnob(sp) {
+    var req = sp && sp.requires_knob;
+    if (!req) { return ''; }
+    var bind = knobBind(req.id);
+    if (!bind || readKnob(bind) === req.v) { return ''; }
+    writeKnob(bind, req.v);
+    return '  |  turned ' + req.id + ' ' + req.v;
+  }
   function execCursor(p) {
+    var pre = ensureSpecKnob(itemSpec());
     var list = activeItems();
-    if (!list.length) { return show('nothing is revealed to pick from', 'err'); }
+    if (!list.length) { return show('nothing is revealed to pick from' + pre, 'err'); }
     var at = -1, i;
     for (i = 0; i < list.length; i++) { if (list[i].id === cursorId) { at = i; break; } }
     var idx;
@@ -3152,7 +3282,7 @@ var VoiceGuide = (function() {
     if (item.el) { selectDomItem(item.el, item.label); } else { currentItemEl = null; currentItemLabel = ''; call('openNodeByLabel', item.label); }
     journal.record(TAB, { dim: 'selection', before: before, after: readDim('selection') });
     // Announcing is not decoration: with no screen, this IS the result.
-    return show(item.label + '  |  ' + cursorPhrase(idx, list.length), 'ok');
+    return show(item.label + '  |  ' + cursorPhrase(idx, list.length) + pre, 'ok');
   }
 
   var currentItemEl = null, currentItemLabel = '';
@@ -3219,6 +3349,19 @@ var VoiceGuide = (function() {
     if (!el) {
       el = d.getElementById('right-page-content');
       if (!el || !panelVisible(d)) { return null; }
+    }
+    // A row that OPENS something is not the something. Summa's tree row is a
+    // DOOR -- "A1 Article 1 Day 2", five words -- while the article it loads
+    // renders into a pane elsewhere on the page, and `read` cheerfully spoke the
+    // door. Seventh instance of the which-document family, and the first whose
+    // answer is not "ask the element which document it is in" but "ask the page
+    // where it PUT the thing". Declared, because only the page knows: `reads` is
+    // consulted when it is actually showing, which is also how we know something
+    // is open at all.
+    var rsp = itemSpec();
+    if (rsp && rsp.reads) {
+      var rd = specDoc(rsp), re = rd && rd.querySelector(rsp.reads);
+      if (re && re.getClientRects().length) { el = re; }
     }
     var nodes = el.children.length ? [].slice.call(el.children) : [el];
     var body = [], meta = [], skipped = 0;
@@ -3368,7 +3511,19 @@ var VoiceGuide = (function() {
     if (!live.length) { return { ok: false, error: 'no controls found -- tab not loaded?', tab: am.key }; }
 
     var m = am.m;
-    var binds = (m.knobs || []).map(function (k) { return k.bind.select || k.bind.checkbox; });
+    // A button-group knob binds N controls, not one. The audit has to see every
+    // one of them, or the very declaration that MAKES a control reachable would
+    // leave it counted as uncovered.
+    var binds = (m.knobs || []).reduce(function (acc, k) {
+      if (k.bind.buttons) { return acc.concat(k.bind.buttons.map(function (b) { return b.sel; })); }
+      acc.push(k.bind.select || k.bind.checkbox);
+      return acc;
+    }, []);
+    // A control named by an item spec is covered BY that declaration -- Summa's
+    // back-to-index is what `close` clicks, and listing it separately would mean
+    // declaring the same button twice and letting the two copies disagree.
+    var itemSpecs = m.items ? (Array.isArray(m.items) ? m.items : [m.items]) : [];
+    itemSpecs.forEach(function (sp) { if (sp.close) { binds.push(sp.close); } });
     var dimSel = (m.dim_coverage || []).map(function (c) { return c.match; });
     var exclSel = (m.controls_excluded || []).map(function (c) { return typeof c === 'string' ? c : c.match; });
     // DEFERRED is a third category, deliberately not a synonym for excluded:
@@ -3520,7 +3675,18 @@ var VoiceGuide = (function() {
     var w = ifWin(), d = ifDoc();
     try {
       if (dim === 'filters') { return w && w.groupVisibility ? Object.assign({}, w.groupVisibility) : null; }
-      if (dim === 'selection') { var n = w && w.currentRightNode; return n ? { label: n.label, id: n.id } : null; }
+      if (dim === 'selection') {
+        // Read the PAGE's own marker, not the click we just made. Summa sets
+        // `.sel` on the article row it actually loaded, so a click that failed
+        // (an unavailable article has no handler at all) reads back as nothing
+        // selected instead of reporting our own intention as success.
+        var ssp = itemSpec();
+        if (ssp && ssp.selected) {
+          var sd = specDoc(ssp), se = sd && sd.querySelector(ssp.selected);
+          return se ? { label: (se.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80) } : null;
+        }
+        var n = w && w.currentRightNode; return n ? { label: n.label, id: n.id } : null;
+      }
     } catch (e) { return null; }
     return null;
   }
@@ -3533,7 +3699,18 @@ var VoiceGuide = (function() {
     }
     if (dim === 'cut') { writeCut(value); return; }
     if (dim === 'filters') { var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI(); }
-    else if (dim === 'selection') { if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); } }
+    else if (dim === 'selection') {
+      // Restore (undo/redo) has to travel the same road the command did.
+      var wsp = itemSpec();
+      if (wsp && wsp.activate) {
+        var wd = specDoc(wsp);
+        if (!value) { var wc = wsp.close && wd && wd.querySelector(wsp.close); if (wc) { wc.click(); } return; }
+        var wh = matchItems(value.label)[0];
+        if (wh && wh.el) { wh.el.click(); }
+        return;
+      }
+      if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); }
+    }
   }
   // Batch filter path (redesign section 7): mutate groupVisibility once, sync the
   // checkbox UI, one rebuildGraph -- never N sequential toggleGroup rebuilds.
@@ -3635,7 +3812,7 @@ var VoiceGuide = (function() {
     try {
       switch (p.kind) {
         case 'filters':   return execFilters(p);
-        case 'selection': return execMut('selection', function () { if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); } }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
+        case 'selection': return execSelection(p);
         // kind stays 'highlight' (the dispatcher route); the DIMENSION it
         // writes is `cut`, which is what the journal and `what` speak of.
         case 'highlight': return execHighlight(p);
@@ -3952,7 +4129,12 @@ var VoiceGuide = (function() {
     var knobs = am ? (am.m.knobs || []) : [];
     TAB = am ? am.key : 'sociogram';   // journal + reset are per-tab keyed
     var families = am ? (am.m.families || []) : [];
-    var ctx = { caps: caps, knobs: knobs, families: families, roster: roster(), tabs: dest.tabs, nodes: dest.nodes };
+    // `activates` tells the planner that `open` names something ON SCREEN here,
+    // not a node in the vault index -- read from the spec that is live RIGHT NOW,
+    // because on a tab with sub-views the answer changes with the view.
+    var actSpec = itemSpec();
+    var ctx = { caps: caps, knobs: knobs, families: families, roster: roster(), tabs: dest.tabs, nodes: dest.nodes,
+                activates: !!(actSpec && actSpec.activate) };
     execute(CL.plan(CL.parse(text, grammar), ctx));
     return lastResult;
   }

@@ -125,7 +125,8 @@
       "op": "set",
       "_near_note": "On a content tab, picking an item IS opening it. Offered ONLY where `pick` is actually in that tab's caps, so this can never advertise a verb the view lacks.",
       "near": "pick",
-      "args": "text",
+      "_args_note": "MAY be omitted. On a tab whose items declare how they open, a bare `open` means the row the cursor is already on -- walking to a thing and then opening it is the ordinary shape, and asking for the name back would make the user repeat what the guide had just said to them. The PARSER cannot know whether that is meaningful, so it passes an empty arg list and plan() decides: the graph path still answers missing_arg, because there `open` has nothing to be relative to.",
+      "args": "text-opt",
       "kind": "value",
       "inverse": "close"
     },

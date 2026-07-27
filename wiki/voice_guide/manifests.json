@@ -1100,6 +1100,241 @@
           "note": "The three sub-view buttons, reached by name with `go schedule|sociogram|explorer`. The sweep matches ELEMENTS and the coverage is a VERB, so they are declared here rather than left to look uncovered."
         }
       ]
+    },
+    "curriculum_tools": {
+      "aka": [
+        "curriculum tools",
+        "summa",
+        "summa explorer",
+        "the summa",
+        "curriculum dashboard",
+        "summa_explorer"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "open",
+        "close",
+        "read",
+        "stop",
+        "set"
+      ],
+      "_caps_note": "The first tab whose roster lives BEHIND the click. Parts and questions start closed, so `pick`/`next` -- which only ever MARKED an item -- could reach nothing here at all: with the tree collapsed there is nothing revealed to pick from, and no verb that opens it. So this tab is the one that made `open` general. `open` existed already but was wired to openNodeByLabel, a global that lives on wiki_narration.html and nowhere else, which is why every tab since the Sociogram has had to leave it out of caps. It is now DECLARED per item spec (`activate`), the same way `frame` and `total` are.",
+      "knobs": [
+        {
+          "id": "articles",
+          "label": "Show article rows",
+          "aka": [
+            "rows"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#show-articles"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ],
+          "_note": "Not a display preference. With it OFF, clicking a QUESTION stops expanding and jumps straight to that question's first available article (onClickQuestion) -- so the identical spoken command would mean two different things depending on a checkbox the voice user cannot see. The items spec therefore declares `requires_knob` and the shell puts it ON before walking, out loud (Tom, 2026-07-27: bind it, force it on before pick)."
+        },
+        {
+          "id": "mode",
+          "label": "Summa-in-1-year Transcript",
+          "aka": [
+            "version",
+            "text"
+          ],
+          "kind": "enum",
+          "bind": {
+            "on_class": "on",
+            "buttons": [
+              {
+                "v": "transcript",
+                "sel": "#btn-transcript"
+              },
+              {
+                "v": "synthesis",
+                "sel": "#btn-synthesis"
+              }
+            ]
+          },
+          "values": [
+            {
+              "v": "transcript",
+              "aka": [
+                "transcript",
+                "the transcript",
+                "summa in a year",
+                "original",
+                "reading"
+              ]
+            },
+            {
+              "v": "synthesis",
+              "aka": [
+                "synthesis",
+                "contemporary",
+                "contemporary synthesis",
+                "the synthesis",
+                "commentary"
+              ]
+            }
+          ],
+          "_note": "A SETTING, not a place: it changes how the open article is rendered, not which article you are on -- so it is a knob rather than a sub-view. It is drawn as two buttons, which knobs could not bind (a <select> or a checkbox only), and its winning class is `.on`, not the `.active` a view's test hard-codes. Declaring it as a view would have been mis-declaring it to fit the machinery; the `buttons` bind kind is the honest fix and is portable to every button-group toggle in the fan-out. Both sides are gated on the entry actually HAVING that file (switchMode returns early otherwise), and neither does anything until an article is open."
+        }
+      ],
+      "views": [
+        {
+          "name": "contents",
+          "aka": [
+            "the contents",
+            "table of contents",
+            "tree",
+            "index",
+            "toc"
+          ],
+          "enter": "#subtab-contents",
+          "active": "#subtab-contents"
+        },
+        {
+          "name": "sociogram",
+          "aka": [
+            "summa sociogram",
+            "the sociogram",
+            "summa map",
+            "summa graph"
+          ],
+          "enter": "#subtab-sociogram",
+          "active": "#subtab-sociogram"
+        }
+      ],
+      "_views_note": "`sociogram` names a real TAB as well, the third such collision in six manifests, and it is a TRUE sub-view rather than a name to rename away: it pulls in the Sociogram tool pre-cut to Summa nodes via applySummaSociogramPreset (Tom, 2026-07-27: 'just as under the Agent Map'). No new mechanism was needed -- 69c312d already settled this exact case: standing on a tab, that tab's own view wins, `go sociogram tab` forces the tool, and `go sociogram of curriculum tools` works from anywhere. Entering it LAZILY fetches wiki_narration.html, a ~28.7 MB artifact, on first entry: going there is a real download, not a toggle -- the same warning the Agent Map's sociogram view carries.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": "#subtab-contents"
+          },
+          "select": ".part-header, .q-row, .a-row.avail",
+          "label": {
+            "sel": ".part-name, .q-title-text, .a-title-text"
+          },
+          "noun": "entry",
+          "plural": "entries",
+          "activate": "click",
+          "selected": ".a-row.sel",
+          "reads": "#content-area",
+          "close": "#btn-back-index",
+          "requires_knob": {
+            "id": "articles",
+            "v": "on",
+            "why": "with it off, a question click jumps to an article instead of expanding, so `open` would have two meanings"
+          },
+          "_note": "ONE FLAT ROSTER OF VISIBLE ROWS at all three levels, not three level-scoped rosters. `when` can only ask which sub-view is active, and nothing on this page says which LEVEL a user is walking -- there is no such state to read, because a sighted user is not at a level either, they are looking at an open tree. So `next` walks exactly the visual reading order and `open` on a part or a question expands it, which makes the roster GROW as you go. That growth is reported, because expanding a container and loading an article are the same verb on the same tree and would otherwise sound identical.\nNO `total` DECLARED, deliberately. #stats-line counts ARTICLES (2656 of 2747 available) while this roster counts ROWS; wiring it up would make `what` say '24 of 2747 entries', which is false in unit rather than merely imprecise. Speaking the availability line honestly is its own declaration -- curriculum tools increment 2.\n`.a-row.avail` only: 91 articles have no transcript yet and carry NO click handler at all, so offering them would be offering a door that does not open.",
+          "_reads_note": "Where the page PUTS what a row opens. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article. The row is a door, not the room; only the page knows which pane it renders into."
+        },
+        {
+          "kind": "none",
+          "when": {
+            "active": "#subtab-sociogram"
+          },
+          "_note": "The Summa sociogram is the wiki_narration graph one document down, pre-cut to Summa nodes. Its nodes are walkable in principle -- revealedNodes() already knows this exact artifact -- but that reader is hard-wired to the tab's OWN document (ifWin/ifDoc) and does not take a frame the way domItems does. Generalising it is the prs_3d increment's job, not this one's, so the view is reachable and honest about being unwalkable rather than silently returning an empty roster."
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#left-resizer, .resizer",
+          "reason": "the pane splitter: positional, drag-only, and not state the voice guide reasons about -- same family as dragging a graph node"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#subtab-contents, #subtab-sociogram",
+          "reason": "reachable BY NAME via `go contents` / `go sociogram`, but the sweep matches elements and not verbs, so they are listed here to stay visible in the count",
+          "next": "n/a -- covered by the views declaration above"
+        },
+        {
+          "match": ".ctrl-sm",
+          "reason": "Collapse All: closes the whole tree at once. Real and useful, but it is the inverse of `open` and wants its own verb rather than a knob -- and with no `total` yet, a voice user who collapsed everything would hear only 'nothing is revealed to pick from'",
+          "next": "curriculum tools increment 2"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "expand_part",
+          "label": "Click a part or question to expand it",
+          "status": "covered",
+          "by": [
+            "open",
+            "pick"
+          ],
+          "note": "`open` clicks the row the same way a mouse does; the roster grows and the result line says by how much."
+        },
+        {
+          "id": "open_article",
+          "label": "Click an available article to load it",
+          "status": "covered",
+          "by": [
+            "open",
+            "read"
+          ],
+          "note": "Same verb as expanding -- the tree does not distinguish them and neither does the guide."
+        },
+        {
+          "id": "scroll_tree",
+          "label": "Scroll the contents tree",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking scrolls each row into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "switch_subview",
+          "label": "Switch between Contents and the Summa sociogram",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "`go contents` / `go sociogram`."
+        },
+        {
+          "id": "drag_splitter",
+          "label": "Drag the divider between the tree and the reading pane",
+          "status": "excluded",
+          "reason": "positional; pane width is not state the guide reasons about"
+        },
+        {
+          "id": "hover_row",
+          "label": "Hover a row for its highlight",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ]
     }
   }
 }
