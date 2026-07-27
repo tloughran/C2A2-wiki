@@ -37,6 +37,7 @@
         "next",
         "previous",
         "read",
+        "summarize",
         "stop"
       ],
       "knobs": [],
@@ -625,6 +626,7 @@
         "next",
         "previous",
         "read",
+        "summarize",
         "stop"
       ],
       "_caps_note": "A content tab: no graph, so no filters/cut/camera. What it CAN do is be walked and read, which is the whole point of the item model.",
@@ -700,6 +702,7 @@
         "next",
         "previous",
         "read",
+        "summarize",
         "stop"
       ],
       "knobs": [],
@@ -767,6 +770,7 @@
         "next",
         "previous",
         "read",
+        "summarize",
         "stop"
       ],
       "_caps_note": "Reaching and walking the cards is this increment. The tab's OWN graph filters, search and camera are declared deferred below with the increment that takes them: the graph here is a different artifact from the Sociogram (no groupVisibility, no rebuildGraph), so inheriting those verbs would advertise controls that do not exist.",
@@ -955,6 +959,7 @@
         "next",
         "previous",
         "read",
+        "summarize",
         "stop"
       ],
       "_caps_note": "A three-view tab with no graph of its own to filter: what it CAN do is be moved between views, walked and read. `go schedule|sociogram|explorer` rides the existing sub-view declaration -- the same machinery Community Explorer uses, which is why this tab needed a manifest rather than new code (Tom, 2026-07-26: 'Agent Map has subtabs: should those be now navigable?'). They were not, because sub-views are DECLARED per tab and this tab was one of the nine still undeclared.",
@@ -1123,6 +1128,7 @@
         "open",
         "close",
         "read",
+        "summarize",
         "stop",
         "set"
       ],
@@ -1245,7 +1251,7 @@
           "plural": "entries",
           "activate": "click",
           "selected": ".a-row.sel",
-          "reads": "#content-area",
+          "reads": "#md-body",
           "close": "#btn-back-index",
           "requires_knob": {
             "id": "articles",
@@ -1253,7 +1259,7 @@
             "why": "with it off, a question click jumps to an article instead of expanding, so `open` would have two meanings"
           },
           "_note": "ONE FLAT ROSTER OF VISIBLE ROWS at all three levels, not three level-scoped rosters. `when` can only ask which sub-view is active, and nothing on this page says which LEVEL a user is walking -- there is no such state to read, because a sighted user is not at a level either, they are looking at an open tree. So `next` walks exactly the visual reading order and `open` on a part or a question expands it, which makes the roster GROW as you go. That growth is reported, because expanding a container and loading an article are the same verb on the same tree and would otherwise sound identical.\nNO `total` DECLARED, deliberately. #stats-line counts ARTICLES (2656 of 2747 available) while this roster counts ROWS; wiring it up would make `what` say '24 of 2747 entries', which is false in unit rather than merely imprecise. Speaking the availability line honestly is its own declaration -- curriculum tools increment 2.\n`.a-row.avail` only: 91 articles have no transcript yet and carry NO click handler at all, so offering them would be offering a door that does not open.",
-          "_reads_note": "Where the page PUTS what a row opens. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article. The row is a door, not the room; only the page knows which pane it renders into.",
+          "_reads_note": "Where the page PUTS what a row opens -- the RENDERED MARKDOWN, not the pane around it. #content-area was the first guess and it wrapped the article in the page's own chrome: the reader opened with the ref, the title, the day, and then read the two mode buttons aloud ('Summa-in-1-year Transcript', 'Contemporary Synthesis?') before reaching a word of Aquinas. It also hid every per-block filter, because the whole article arrived as ONE child node whose textContent carried the provenance blockquotes and headings inside it. #md-body is the markdown itself, so its children are the blocks and the reader can tell prose from furniture. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article.",
           "read_variants": [
             {
               "say": [
@@ -1376,7 +1382,20 @@
               }
             ]
           },
-          "_locate_note": "An ADDRESS, which is none of the things `go` already resolves -- not a tab, not a sub-view, not a link. Summa's refs are I.Q4.A2 and only Summa knows that, so the scheme is declared and the shell only knows how to read `locate`. A level left unsaid is taken from where the user already is (the part of the question currently open) and the guess is SAID, because a wrong part is a plausible-sounding wrong answer rather than an obvious failure. `open_first` opens closed ancestors, since a target inside a collapsed container is addressable but not reachable -- marking it silently would be pointing at a shut door."
+          "_locate_note": "An ADDRESS, which is none of the things `go` already resolves -- not a tab, not a sub-view, not a link. Summa's refs are I.Q4.A2 and only Summa knows that, so the scheme is declared and the shell only knows how to read `locate`. A level left unsaid is taken from where the user already is (the part of the question currently open) and the guess is SAID, because a wrong part is a plausible-sounding wrong answer rather than an obvious failure. `open_first` opens closed ancestors, since a target inside a collapsed container is addressable but not reachable -- marking it silently would be pointing at a shut door.",
+          "search": {
+            "source": "indexData",
+            "id": "{part_code}.Q{question}",
+            "fields": [
+              "question_title"
+            ],
+            "noun": "question",
+            "target": ".q-row[data-qkey=\"{part_code}.Q{question}\"]",
+            "open_first": [
+              ".part-section[data-part-code=\"{part_code}\"] .part-header"
+            ]
+          },
+          "_search_note": "What a docent knows without knowing everything: not the Summa by heart, but roughly where things live, and how to look (Tom, 2026-07-27: 'take me to a question on angelic knowledge'). The tab already holds all 611 question titles in its own indexData at boot, so this is a plain title match -- deliberately NOT a model call or an embedding. Deterministic, free, testable, and it never bills the broker. QUESTIONS ONLY in this increment: article titles are mostly null in the index (the row renders 'Article N'), so searching them would return a list of indistinguishable numbers. Resolved LAST in the `go` chain, after tabs, views, coordinates, renderings and links, because it is the broadest net and must never shadow something named outright. One clear winner lands; anything else is named back, since silently choosing among four is indistinguishable from being right when there is no screen."
         },
         {
           "kind": "none",

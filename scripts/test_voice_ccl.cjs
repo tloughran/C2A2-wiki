@@ -558,6 +558,7 @@ check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', f
   const samples = {
     go: 'go sociogram', back: 'back', zoom: 'zoom in', pan: 'pan left',
     pick: 'pick random', next: 'next', previous: 'previous', read: 'read', stop: 'stop',
+    summarize: 'summarize',
     show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
     find: 'find x', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',

@@ -1170,6 +1170,45 @@ var VoiceGuide = (function() {
     if (!responseActive) { fn(); return; }   // nothing being said -> read now
     _afterResponse = fn;                      // otherwise hand over on response.done
   };
+  // ---- HANDING OVER WITHOUT CLIPPING --------------------------------------
+  //
+  // `response.done` means the response is COMPLETE, not that its audio has
+  // finished PLAYING: the tail is still in the local jitter buffer. The first
+  // fix for that was a flat 900ms wait, and the reader still spoke over the
+  // guide for about half a second (Tom, 2026-07-27) -- because how much audio
+  // is left is not a constant, so no constant can be right. Measure it instead:
+  // watch the assistant's own output track and hand over when it has actually
+  // gone quiet. The cap exists so a stuck meter can never strand the reader.
+  var outAnalyser = null, outBuf = null;
+  function armOutputMeter(stream) {
+    try {
+      if (!audioCtx) { audioCtx = new AudioContext(); }
+      var src = audioCtx.createMediaStreamSource(stream);
+      outAnalyser = audioCtx.createAnalyser();
+      outAnalyser.fftSize = 512;
+      outBuf = new Uint8Array(outAnalyser.fftSize);
+      src.connect(outAnalyser);   // analyser only -- NOT to destination, or the voice doubles
+    } catch (e) { outAnalyser = null; dbg('output meter unavailable: ' + e); }
+  }
+  var QUIET_RMS = 0.012, QUIET_FOR_MS = 220, DRAIN_CAP_MS = 4000, DRAIN_STEP_MS = 50;
+  function whenOutputQuiet(cb) {
+    if (!outAnalyser) { setTimeout(cb, 900); return; }   // no meter: the old constant
+    var quiet = 0, waited = 0;
+    var tick = function () {
+      var rms = 0;
+      try {
+        outAnalyser.getByteTimeDomainData(outBuf);
+        var sum = 0;
+        for (var i = 0; i < outBuf.length; i++) { var v = (outBuf[i] - 128) / 128; sum += v * v; }
+        rms = Math.sqrt(sum / outBuf.length);
+      } catch (e) { return cb(); }
+      quiet = rms < QUIET_RMS ? quiet + DRAIN_STEP_MS : 0;
+      waited += DRAIN_STEP_MS;
+      if (quiet >= QUIET_FOR_MS || waited >= DRAIN_CAP_MS) { return cb(); }
+      setTimeout(tick, DRAIN_STEP_MS);
+    };
+    setTimeout(tick, DRAIN_STEP_MS);
+  }
   // ---- WHO IS ALLOWED TO MUTE THE MIC, AND WHY -----------------------------
   //
   // TWO independent reasons the mic may be off, and they must not fight: the
@@ -1728,6 +1767,8 @@ var VoiceGuide = (function() {
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- name a couple and ask which they mean. On 'unresolved' say you could not find that, and offer the nearest thing you CAN do. On 'unsupported_here' say it is not available on this view and offer what the tab is for. When the result itself carries a 'taking X as Y' assumption, pass that on -- the user should always be able to hear when you guessed.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
       "WHILE THE PAGE IS READING, YOUR MICROPHONE IS MUTED AND YOU CANNOT HEAR ANYTHING -- not the article, not the user. This is deliberate: it keeps you from acting on wiki prose read AT you, and the article is long. The user interrupts with the on-screen 'Stop reading' button, NOT by talking to you, so never tell them to say 'stop' or ask them to tell you when to continue -- they cannot reach you until they press it. Say your one handover line and then expect silence until they are back.",
+      "YOU CAN SUMMARIZE. `summarize` returns the TEXT itself rather than a description of the view -- the highlight the user left if there is one, otherwise the open article in whichever rendering is showing. Give back ABOUT 50 WORDS, in your own voice, spoken immediately: no preamble, no handover to the page reader, no quoting at length. It works on a dragged passage and on a whole transcript alike, and these run to about 3000 words, so a summary is often what the user actually wants instead of a reading. If they ask what a section or a day is about, or say \"give me the gist\", that is `summarize`, not `read`.",
+      "YOU CAN LOOK THINGS UP BY WHAT THEY ARE ABOUT. On a tab that indexes its own titles, `go <topic>` searches them -- \"go a question on angelic knowledge\" lands on The medium of angelic knowledge. So when the user asks for a subject rather than a place (\"take me to something on the will\", \"is there a question about memory?\"), ISSUE IT as `go <their words>` instead of saying you do not know the contents. You do not have to have the text memorised, any more than a docent does; the tab knows its own titles and will either land or name the candidates back for you to offer. If several come back, read out two or three and ask which -- never pick one silently.",
       "A RENDERING IS NOT A TAB. Some tabs hold ONE thing readable more than one way -- the Summa has a transcript and a contemporary commentary of the same article -- and those are not places in the tab row. When the user says \"take me to the contemporary synthesis\" or \"the corresponding commentary\", that is `go <rendering>` or `read the <rendering>`, and it applies to whatever is already open. Do not answer that there is no such tab: it is true, useless, and sends them away from something that is right in front of them (Tom, 2026-07-27). `what` lists the renderings a tab has.",
       "A LOCATION IS A `go`, NEVER A `find`. When the user names a place in a structured text -- \"Prima Pars, Question 18, Article 1\", \"question 4 article 2\", \"the Supplementum\" -- that is an ADDRESS and it belongs to `go`, which resolves coordinates on any tab that declares them. `find` is a text SEARCH of the graph and is not even available on most tabs, so choosing it turns a place the user can reach into \"that kind of search is not supported here\" (Tom, 2026-07-27, standing in the Summa explorer and asking for an article that exists). Pass what they said through to `go` as they said it; the tab knows its own numbering.",
       "THE USER'S OWN HIGHLIGHT IS SOMETHING YOU CAN SEE. When they have text selected on the page, `what` reports it (\"you have N words selected\") and a bare `read` reads THAT rather than the whole article. So when they say anything about what they highlighted, selected, marked or 'this bit here' -- READ IT. Do not say you cannot see their selection; do not reach for `find`, which is a text SEARCH of the graph and a different thing entirely. `read all` is how they get the whole article back. This was invisible to you until 2026-07-27 and the honest-sounding refusal it produced is exactly what it is here to stop.",
@@ -1752,7 +1793,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2252,6 +2293,16 @@ var VoiceGuide = (function() {
               out.total = r.total;
               if (r.shown === 0) { out.warning = 'NOTHING IS SHOWING -- the view is empty. Say so; do not report success.'; }
             }
+            // `summarize` is the one command that hands TEXT back rather than a
+            // description of the view. The guide could never summarise anything
+            // because it had never been given anything to summarise (Tom,
+            // 2026-07-27) -- every other result is a status line. Summarising is
+            // a judgement call and belongs to the model; fetching the words is
+            // not, and belongs here.
+            if (typeof r.text === 'string') {
+              out.text = r.text;
+              out.instruction = 'Summarize THIS TEXT in about 50 words and SPEAK the summary yourself, in your own voice. Do not read it out, do not hand it to the page reader, do not quote it at length.';
+            }
             pending = Promise.resolve(out);
           } else {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
@@ -2286,10 +2337,9 @@ var VoiceGuide = (function() {
         // (Tom, 2026-07-25): the guide introduces, the page reads.
         if (_afterResponse) {
           var _fn = _afterResponse; _afterResponse = null;
-          // response.done means the response is COMPLETE, not that its audio
-          // has finished playing -- the tail is still in the local buffer,
-          // which is why the two voices still clipped. Let it drain first.
-          setTimeout(function () { try { _fn(); } catch (e) { dbg('deferred speak error: ' + e); } }, 900);
+          // Wait for the assistant's audio to actually go QUIET, not for a
+          // constant that was only ever a guess at how long its tail is.
+          whenOutputQuiet(function () { try { _fn(); } catch (e) { dbg('deferred speak error: ' + e); } });
         }
         if (pendingCreate) { clearTimeout(_pendCreateTimer); pendingCreate = false; dbg('flushing deferred response.create'); requestResponseCreate(); }
         break;
@@ -2348,6 +2398,7 @@ var VoiceGuide = (function() {
       pc.ontrack = function(e) {
         el('vg-audio').srcObject = e.streams[0];
         remoteStream = e.streams[0];
+        armOutputMeter(e.streams[0]);
         // If a recording is already running, capture the assistant's voice too.
         if (window.isRecording && window.addStreamToRecMix) window.addStreamToRecMix(remoteStream);
       };
@@ -2469,7 +2520,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=b2de8ca34b"></script>
+<script src="lib/c2a2-commandline.js?v=f43e0824eb"></script>
 <script>
 (function () {
   'use strict';
@@ -3140,6 +3191,75 @@ var VoiceGuide = (function() {
     hit.click();
     return show('go ' + label + (assumed.length ? ('  |  taking that as ' + assumed.join(', ')) : ''), 'ok');
   }
+  // ---- SEARCH BY TITLE: what a docent knows without knowing everything ----
+  //
+  // "Take me to a question on angelic knowledge." A human docent does not have
+  // the Summa memorised either -- they know roughly where things live and they
+  // look (Tom, 2026-07-27). The tab already holds every title it could look
+  // through: 611 question titles in its own index, loaded at boot. So this is
+  // a plain title match, declared per tab, and deliberately NOT a model call or
+  // an embedding: the answer is deterministic, free, and testable, and the four
+  // capabilities before it all failed for want of advertising rather than want
+  // of cleverness.
+  //
+  // Resolved LAST in the `go` chain -- after tabs, views, coordinates,
+  // renderings and links -- because it is the broadest net in the room and must
+  // never shadow something the user named exactly.
+  var SEARCH_STOP = /\b(take|me|to|a|an|the|on|about|of|for|find|go|question|section|please|some|any|is|there)\b/g;
+  function searchSpec() { var sp = itemSpec(); return (sp && sp.search) || null; }
+  function fillTpl(tpl, row) { return tpl.replace(/\{(\w+)\}/g, function (_, k) { return row[k]; }); }
+  function searchHits(term) {
+    var spec = searchSpec();
+    if (!spec) { return []; }
+    var w = ifWin(), src = w && w[spec.source];
+    if (!src) { return []; }
+    var phrase = (term || '').toLowerCase().replace(/[.,;:?"]/g, ' ').replace(/\s+/g, ' ').trim();
+    var toks = phrase.replace(SEARCH_STOP, ' ').replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+    if (!toks.length) { return []; }
+    var seen = {}, out = [];
+    Object.keys(src).forEach(function (k) {
+      var row = src[k];
+      if (!row) { return; }
+      var id = fillTpl(spec.id, row);
+      if (seen[id]) { return; }
+      var hay = spec.fields.map(function (f) { return row[f] || ''; }).join(' ').toLowerCase();
+      if (!hay) { return; }
+      // Two tiers only, and both are explainable out loud: the phrase itself, or
+      // every word of it somewhere in the title. Anything looser turns "angelic
+      // knowledge" into half the Prima Pars.
+      var tier = hay.indexOf(toks.join(' ')) !== -1 ? 1
+               : toks.every(function (t) { return hay.indexOf(t) !== -1; }) ? 2 : 0;
+      if (!tier) { return; }
+      seen[id] = true;
+      out.push({ id: id, row: row, tier: tier, label: (row[spec.fields[0]] || '').trim() });
+    });
+    out.sort(function (a, b) { return (a.tier - b.tier) || (a.label.length - b.label.length); });
+    return out;
+  }
+  function execSearch(hits, term) {
+    var spec = searchSpec(), d = specDoc(itemSpec()) || ifDoc();
+    var noun = spec.noun || 'result';
+    // ONE CLEAR WINNER ONLY. A tier-1 phrase hit standing alone is what the user
+    // meant; anything else gets named back, because silently choosing among
+    // four is indistinguishable from being right when there is no screen.
+    var top = hits[0], soleBest = hits.length === 1 || (top.tier === 1 && hits[1].tier > 1);
+    if (!soleBest) {
+      return show(hits.length + ' ' + noun + 's on "' + term + '": ' +
+        hits.slice(0, 5).map(function (h) { return '"' + h.label + '"'; }).join('; ') +
+        (hits.length > 5 ? ('; and ' + (hits.length - 5) + ' more') : '') +
+        '  -- say the one you want', 'err');
+    }
+    var el = d.querySelector(fillTpl(spec.target, top.row));
+    if (!el) { return show('found "' + top.label + '" but cannot reach it on this view', 'err'); }
+    (spec.open_first || []).forEach(function (o) {
+      var ae = d.querySelector(fillTpl(o, top.row));
+      if (ae && ae.getClientRects().length && !ae.classList.contains('open')) { ae.click(); }
+    });
+    selectDomItem(el, top.label);
+    el.click();
+    return show('go ' + top.label + '  |  ' + (hits.length > 1 ? (hits.length - 1) + ' other ' + noun +
+      (hits.length > 2 ? 's' : '') + ' mention that too' : 'the only ' + noun + ' on that'), 'ok');
+  }
   function matchItems(term) {
     var t = (term || '').toLowerCase().replace(/\s+/g, ' ').trim();
     if (!t) { return []; }
@@ -3424,6 +3544,16 @@ var VoiceGuide = (function() {
   // outright: code blocks and tables (unreadable aloud) and rule separators.
   var META_RE = /^(maintained by|last updated|source|confidence|date added|tags?|status|authored[_ ]by|authored[_ ]at|id|path|file)\b\s*[:|]/i;
   var RULE_RE = /^[-\u2013\u2014_*=\s]{3,}$/;
+  // Headings the PAGE needs and a listener does not. "Transcript." announced
+  // between the title and the first sentence is furniture read aloud.
+  var SCAFFOLD_RE = /^(transcript|synthesis|contents|notes?|sources?|references?|metadata|front matter)$/i;
+  // ASR TIMESTAMPS. Every paragraph of a Summa transcript opens with one --
+  // [00:00:05] -- and a speech engine reads it as a string of numbers before
+  // each and every sentence. They are an artefact of how the text was captured,
+  // never part of what was said (Tom, 2026-07-27). Stripped anywhere they
+  // appear, not only at the start, because the cleanup notes drop them inline.
+  var STAMP_RE = /\[\s*\d{1,2}:\d{2}(?::\d{2})?\s*\]/g;
+  function stripStamps(s) { return s.replace(STAMP_RE, ' ').replace(/\s+/g, ' ').trim(); }
 
   function panelVisible(d) {
     var panel = d.getElementById('right-panel');
@@ -3459,7 +3589,11 @@ var VoiceGuide = (function() {
       var s;
       try { s = d.defaultView.getSelection(); } catch (e) { continue; }
       if (!s || s.isCollapsed || !s.rangeCount) { continue; }
-      var text = (s.toString() || '').replace(/\s+/g, ' ').trim();
+      // The same cleanup the reader gets. A user dragging across a transcript
+      // drags the [00:04:12] stamps with it -- they are in the page, so they are
+      // in the selection -- and neither reading them aloud nor feeding them to a
+      // summary is what the drag meant.
+      var text = stripStamps((s.toString() || '').replace(/\s+/g, ' ').trim());
       if (text.length < SEL_MIN) { continue; }
       return { text: text, words: text.split(/\s+/).length, doc: d };
     }
@@ -3491,20 +3625,41 @@ var VoiceGuide = (function() {
       if (re && re.getClientRects().length) { el = re; }
     }
     var nodes = el.children.length ? [].slice.call(el.children) : [el];
-    var body = [], meta = [], skipped = 0;
+    var body = [], meta = [], skipped = 0, tookTitle = false;
     nodes.forEach(function (n) {
       var tag = n.tagName, t = (n.textContent || '').replace(/\s+/g, ' ').trim();
       if (!t) { return; }
       if (tag === 'PRE' || tag === 'CODE' || tag === 'TABLE') { skipped++; return; }  // unreadable aloud
       if (RULE_RE.test(t)) { return; }                                               // horizontal rules
+      // A BLOCKQUOTE AT THE TOP OF THESE FILES IS PROVENANCE, NOT PROSE. Summa
+      // transcripts open with three of them -- the episode URL, the series and
+      // day, and a paragraph of ASR-correction notes ("Suman / Suma / suma ->
+      // Summa") -- and the reader spoke every word of it before reaching the
+      // text (Tom, 2026-07-27). Held back with the rest of the metadata rather
+      // than dropped, so `read details` can still reach it.
+      if (tag === 'BLOCKQUOTE') { meta.push(endPunct(t)); return; }
       if (META_RE.test(t)) { meta.push(endPunct(t)); return; }                        // provenance, held back
-      if (/^H[1-6]$/.test(tag)) { body.push(endPunct(t.replace(/[:.]+$/, ''))); return; }
-      body.push(endPunct(t));
+      if (/^H[1-6]$/.test(tag)) {
+        // ONE TITLE, THEN THE TEXT. The first heading names what is being read;
+        // after that, scaffolding headings are furniture the page needs and a
+        // listener does not -- nobody wants "Transcript." announced between the
+        // title and the first sentence.
+        if (!tookTitle) { tookTitle = true; body.push(endPunct(t.replace(/[:.]+$/, ''))); return; }
+        if (SCAFFOLD_RE.test(t)) { return; }
+        body.push(endPunct(t.replace(/[:.]+$/, '')));
+        return;
+      }
+      body.push(endPunct(stripStamps(t)));
     });
     return { body: body.join(' '), meta: meta.join(' '), metaCount: meta.length, skipped: skipped };
   }
   // Kept for callers that only need to know whether there is anything at all.
   function articleText() { var sc = speechScript(); return sc && sc.body ? sc.body : null; }
+  // Exposed for the harness: what the reader WOULD say. Asserting on the
+  // rendered script is the only way to catch the reader announcing furniture --
+  // timestamps, provenance blockquotes, a scaffold heading -- since headless
+  // Chrome never actually speaks.
+  window.CCLSpeechScript = speechScript;
   function setMic(on) { try { if (typeof window.CCLSetMic === 'function') { window.CCLSetMic(on); } } catch (e) { /* no session */ } }
 
   // ---- the reader belongs to the SHELL, not to one tab --------------------
@@ -4049,6 +4204,12 @@ var VoiceGuide = (function() {
           if (hits.length > 1) {
             return show('Ambiguous "' + p.term + '": ' + hits.slice(0, 4).map(function (l) { return l.label; }).join(' | '), 'err');
           }
+          // LAST OF ALL: search the tab's own titles. Broadest net in the room,
+          // so it runs only once every exact thing has failed -- a fuzzy title
+          // match must never shadow a tab, a view, a coordinate, a rendering or
+          // a link the user named outright.
+          var sh = searchHits(p.term);
+          if (sh.length) { return execSearch(sh, p.term); }
           var vs = viewNames(), ls = followableLinks();
           // Renderings belong in this list too. Saying "the sections here are
           // contents and sociogram" while the tab also holds a transcript and a
@@ -4303,6 +4464,25 @@ var VoiceGuide = (function() {
   }
   function execRead(p) {
     if (p.action === 'help') { return show('verbs: only/show/hide/all/none, open/close, find/clear/focus, fit, go/back, undo/redo, what', 'ok'); }
+    // SUMMARIZE HANDS BACK THE WORDS. Everything else here returns a description
+    // of the view; this returns the text itself, because summarising is the one
+    // thing the model is better at than any code we could write -- and it could
+    // not do it, having never been given anything to work from. Same source
+    // rules as `read`, so "summarize this" after a drag means the drag.
+    if (p.action === 'summarize') {
+      var wantMetaS = (p.mode === 'details' || p.mode === 'metadata');
+      var selS = wantMetaS ? null : liveSelection();
+      var scS = speechScript();
+      var textS = selS ? selS.text : (scS ? (wantMetaS ? scS.meta : scS.body) : '');
+      if (!textS) {
+        return show(selS ? 'that selection has nothing in it'
+          : 'nothing is open to summarize -- open an article first', 'err');
+      }
+      var srcS = selS ? 'your selection' : 'the open text';
+      var rS = show('summarizing ' + srcS + '  |  ' + textS.split(/\s+/).length + ' words', 'ok');
+      rS.text = textS;
+      return rS;
+    }
     var b = activeTabBtn(), name = b ? btnName(b) : '(unknown)', on = onGroups();
     var row = visibleRowButtons(), pos = '';
     for (var ri = 0; ri < row.length; ri++) { if (row[ri] === b) { pos = '  (' + (ri + 1) + ' of ' + row.length + ', left to right)'; } }

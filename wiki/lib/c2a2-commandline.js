@@ -641,7 +641,7 @@
     'find', 'clear', 'focus',
     'fit', 'zoom', 'pan',
     'pick', 'next', 'previous',
-    'read', 'stop',
+    'read', 'stop', 'summarize',
     'undo', 'redo', 'reset', 'restore',
     'what', 'where', 'help',
   ];
@@ -824,6 +824,14 @@
 
       case 'what': case 'where': case 'help':
         return { ok: true, kind: 'read', action: op.verb };
+
+      // A PERCEPTION verb, not a playback one: it changes nothing, and what it
+      // returns is TEXT for the model to compress rather than a description of
+      // the view. `summarize` with no argument means whatever is in front of the
+      // user -- their own highlight if they left one, otherwise the open article
+      // in whichever rendering is showing.
+      case 'summarize':
+        return { ok: true, kind: 'read', action: 'summarize', mode: op.args.length ? op.args[0] : null };
 
       default:
         return unsupported(op, caps, ctx.grammar);

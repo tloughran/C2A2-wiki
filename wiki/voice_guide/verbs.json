@@ -322,6 +322,15 @@
       "kind": "action",
       "inverse": null,
       "spend": true
+    },
+    {
+      "verb": "summarize",
+      "dim": "@read",
+      "op": "summarize",
+      "args": "opt",
+      "kind": "read",
+      "inverse": null,
+      "_note": "PERCEPTION, not playback: it changes nothing, and what it returns is TEXT for the model to compress rather than a description of the view. Bare `summarize` takes the highlight the user left if there is one, otherwise the open article in whichever rendering is showing; `summarize details` takes the held-back provenance. The guide could not summarise anything before this because it had never been handed anything TO summarise -- every other result is a status line (Tom, 2026-07-27). Summarising is a judgement call and belongs to the model; fetching the words is not, and belongs to the shell (redesign section 5: if code can answer, code answers)."
     }
   ]
 }

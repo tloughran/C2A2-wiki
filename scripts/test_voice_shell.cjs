@@ -1457,6 +1457,75 @@ async function main() {
   await row(page, 'K9 read all -> the way back to the whole thing', 'read all',
     { ok: true, spoken: /reading .*\|\s*\d+ words/, notSpoken: /your selection/ });
   await runCmd(page, 'stop');
+  // K12-K15: SEARCH BY WHAT IT IS ABOUT. Tom's queued ask, and what a docent
+  // actually does -- not knowing the Summa by heart, but knowing where things
+  // live and how to look. Plain title matching over the tab's own 611 question
+  // titles: no model call, no embedding, no broker spend.
+  await row(page, 'K12 several matches are NAMED back, never silently narrowed to one',
+    'go a question on angelic knowledge',
+    { ok: false, spoken: /questions on .*medium of angelic knowledge/i });
+  await row(page, 'K13 naming one of them exactly lands on it',
+    'go the medium of angelic knowledge',
+    { ok: true, spoken: /^go The medium of angelic knowledge/ });
+  await sleep(1200);
+  const q55 = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var e = d.querySelector('.ccl-current');" +
+    "return e ? e.getAttribute('data-qkey') : null;");
+  record('K14 and it is that question, by key', String(q55) === 'I.Q55', String(q55));
+  // The broadest net runs LAST: a word that is also a real destination must
+  // still reach the destination, not a question whose title happens to contain it.
+  await row(page, 'K15 search never shadows something the user named outright', 'go contents',
+    { ok: true, spoken: /^go contents/ });
+  await row(page, 'K16 a topic with nothing on it falls through to the honest list',
+    'go a question on quantum chromodynamics',
+    { ok: false, spoken: /no tab called/ });
+
+  // K17-K20: WHAT THE READER ACTUALLY SAYS. Tom, listening to it: it starts at
+  // the top and reads a pile of metadata, with timestamps all through the text.
+  // A Summa transcript opens with three provenance blockquotes -- the episode
+  // URL, the series and day, and a paragraph of ASR-correction notes -- then a
+  // `## Transcript` scaffold heading, then every paragraph begins [00:00:05].
+  await runCmd(page, 'go to question 4, article 2');
+  await sleep(1500);
+  await runCmd(page, 'set mode transcript');
+  await sleep(1500);
+  const spoken = await page.eval("return window.CCLSpeechScript ? window.CCLSpeechScript().body : null;");
+  record('K17 no ASR timestamps survive into the speech', !/\[\s*\d{1,2}:\d{2}/.test(String(spoken)),
+    (String(spoken).match(/\[\s*\d{1,2}:\d{2}[^\]]*\]/g) || []).slice(0, 3).join(' '));
+  record('K18 the provenance blockquotes are not read as prose',
+    !/Auto-generated captions|Episode:|Series:/.test(String(spoken)),
+    String(spoken).slice(0, 90));
+  record('K19 the scaffold heading is not announced between title and text',
+    !/(^|\.\s)Transcript(\.|\s)/.test(String(spoken)), String(spoken).slice(0, 90));
+  record('K20 and the text itself is still all there',
+    String(spoken).split(/\s+/).length > 2000, String(spoken).split(/\s+/).length + ' words');
+
+  // K21-K23: SUMMARIZE. The guide could not do it because it had never been
+  // handed anything to summarise -- every other result is a status line.
+  // Clear the highlight left by K7 first: summarize prefers a selection, exactly
+  // as read does, so leaving one up would test the wrong source (it did).
+  await page.eval("var d = document.getElementById('content-frame').contentDocument;" +
+    "d.defaultView.getSelection().removeAllRanges(); return true;");
+  const sum = await page.eval(
+    "var r = window.CCLRun('summarize');" +
+    "return { ok: r.ok, spoken: r.spoken, words: r.text ? r.text.split(/\\s+/).length : 0," +
+    "         stamps: r.text ? /\\[\\s*\\d{1,2}:\\d{2}/.test(r.text) : null };");
+  record('K21 summarize hands the TEXT back, not a description of the view',
+    sum.ok && sum.words > 2000, JSON.stringify({ spoken: sum.spoken, words: sum.words }));
+  record('K22 and it is the cleaned text -- what the guide summarises is what it would read',
+    sum.stamps === false, 'timestamps present: ' + sum.stamps);
+  // Same source rules as `read`: after a drag, "summarize this" means the drag.
+  await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var p = d.querySelector('#content-area p');" +
+    "var r = d.createRange(); r.selectNodeContents(p);" +
+    "var s = d.defaultView.getSelection(); s.removeAllRanges(); s.addRange(r); return true;");
+  await row(page, 'K23 summarize takes the highlight when there is one', 'summarize',
+    { ok: true, spoken: /summarizing your selection\s*\|\s*\d+ words/ });
+  await page.eval("var d = document.getElementById('content-frame').contentDocument;" +
+    "d.defaultView.getSelection().removeAllRanges(); return true;");
+
   // K10: THE READER RETURNS CONTROL BY ITSELF. Tom asked for this to be checked
   // rather than assumed: reaching the end of an article is as much an end of
   // reading as pressing Stop, and if it did not restore the mic the session
