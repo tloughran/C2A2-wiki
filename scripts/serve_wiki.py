@@ -53,6 +53,22 @@ class WikiHandler(http.server.SimpleHTTPRequestHandler):
 
     vault_dir = DEFAULT_VAULT
 
+    def end_headers(self):
+        # NEVER CACHE ANYTHING FROM THE REVIEW SERVER. This server exists for one
+        # job: the constitutional local visual review before a push. A cached
+        # explorer.html defeats that job completely and silently -- the reviewer
+        # is looking at the previous commit while the file on disk says
+        # otherwise, and every conclusion drawn is about code that is no longer
+        # there. The iframe-asset rule already covers assets INSIDE a tab; this
+        # is the same hazard one level up, on the shell page itself, which
+        # nothing was force-freshing because nothing could.
+        # (2026-07-27: a fix shipped, the harness was green, and it "still did
+        # not work" in the browser. The server was serving the right tree.)
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
+        self.send_header("Pragma", "no-cache")
+        self.send_header("Expires", "0")
+        super().end_headers()
+
     def guess_type(self, path):
         # SimpleHTTPRequestHandler serves .md with no charset, so browsers fall
         # back to Latin-1 and mojibake every non-ASCII char (em/en dashes, arrows).

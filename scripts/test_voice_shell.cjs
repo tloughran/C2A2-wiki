@@ -525,6 +525,23 @@ async function row(page, name, cmd, expect) {
 // run (fresh profile, empty cache) and still ship a stale asset to a browser
 // that has the old c2a2-commandline.js cached. Only a content hash catches
 // that, so the gate runs here rather than living in a human's memory.
+// A syntax error inside one of explorer.html's inline <script> blocks does not
+// announce itself: the block simply never runs, and the first symptom is some
+// unrelated global missing an hour later ("window.VGWhere is not a function").
+// One apostrophe inside a single-quoted instruction string did exactly that on
+// 2026-07-27. Parsing the blocks up front turns a mystery into a line number.
+function inlineJsGate() {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  const blocks = html.match(/<script(?![^>]*\bsrc=)[^>]*>[\s\S]*?<\/script>/g) || [];
+  const src = blocks.map(function (b) { return b.replace(/^<script[^>]*>/, '').replace(/<\/script>$/, ''); }).join('\n;\n');
+  try {
+    new (require('vm').Script)(src, { filename: 'explorer.html:inline' });
+    record('explorer.html inline JS parses', true, blocks.length + ' script blocks');
+  } catch (e) {
+    record('explorer.html inline JS parses', false, e.message);
+  }
+}
+
 function stampGate() {
   return new Promise(function (resolve) {
     const p = spawn('python3', [path.join(ROOT, 'wiki/heartbeat/backend/stamp_assets.py'), '--target', 'all', '--check'],
@@ -832,6 +849,7 @@ async function main() {
     { ok: false, spoken: /Not available on this view/ });
   const shotC = await page.screenshot(path.join(SHOTS, 'C-sociogram-return.png'));
 
+  inlineJsGate();
   await stampGate();
 
   // ---- Phase D: chapter pages and moving around -----------------------------
@@ -1385,6 +1403,25 @@ async function main() {
   // silently still leaves "what am I looking at?" answered wrongly.
   await row(page, 'K7a what -> reports the highlight as part of what is on screen', 'what',
     { ok: true, spoken: /you have \d+ words selected/ });
+  // THE PATH A PERSON ACTUALLY TAKES. K7/K7a select and ask in the same breath,
+  // with focus never leaving the article -- which is not how anyone uses this.
+  // You drag across a paragraph and THEN turn to the guide: you click its box,
+  // or press its button. Tom: "still can't pick up highlighted sections"
+  // (2026-07-27), with the harness green, because the harness had tested the
+  // half that never happens.
+  await page.eval(
+    "var i = document.getElementById('ccl-input'); i.focus(); i.click(); return true;");
+  await sleep(400);
+  await row(page, 'K7b the highlight survives turning to the guide (focus in the command box)', 'what',
+    { ok: true, spoken: /you have \d+ words selected/ });
+  await page.eval(
+    "var b = document.getElementById('vg-launch'); if (b) { b.click(); } return true;");
+  await sleep(600);
+  await row(page, 'K7c and survives opening the voice panel', 'what',
+    { ok: true, spoken: /you have \d+ words selected/ });
+  await page.eval(
+    "var b = document.getElementById('vg-close'); if (b) { b.click(); } return true;");
+  await sleep(400);
   await row(page, 'K8 read -> the highlight wins, and is NAMED so it is never a silent swap', 'read',
     { ok: true, spoken: /reading your selection\s*\|\s*\d+ words/ });
   await runCmd(page, 'stop');

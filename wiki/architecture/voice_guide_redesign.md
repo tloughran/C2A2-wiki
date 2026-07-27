@@ -1240,6 +1240,43 @@ the page in synthesis mode, so `read the commentary` read at once and the row
 the already-showing path got its own row — asking for what is up must not pretend
 to turn to it.
 
+### S1. "Still can't pick up highlighted sections" — with the harness green
+
+Tom said it did not work while 210 rows said it did. The harness was right about
+the mechanism and useless about the situation, and the two real causes were both
+upstream of the code that had been tested.
+
+**The guide was never told.** The mechanism existed; the model's tool description
+said only *"read|stop (read the open article aloud)"*. Worse, the single
+occurrence of the word **highlight** in its instructions meant something else
+entirely — `find/clear`, a text search of the graph — so the nearest thing to the
+user's request pointed at the wrong verb. A capability the model cannot see is a
+capability that does not exist, and it will produce an honest-sounding refusal
+instead. Both the tool description and a standing instruction now name it, and
+say plainly not to reach for `find`.
+
+**The review server had no cache headers.** `serve_wiki.py` exists for exactly
+one job — the constitutional local visual review before a push — and a cached
+`explorer.html` defeats that job silently: the reviewer draws conclusions about
+the previous commit while the file on disk says otherwise. The iframe-asset rule
+already covers assets *inside* a tab; this is the same hazard one level up, on
+the shell page, which nothing was force-freshing because nothing could. Now
+`no-store` on every response.
+
+**And the fix broke the page.** One apostrophe — `user's` — inside a
+**single-quoted** instruction string terminated it, and the whole VoiceGuide
+block stopped parsing. It does not announce itself: the block simply never runs,
+and the first symptom is an unrelated global missing much later (*"window.VGWhere
+is not a function"*). The harness caught it, which is the point of it, but the
+gate now parses every inline block up front so this turns into a line number
+rather than a mystery.
+
+**What the harness had actually tested was the half that never happens** — select
+and ask in the same breath, focus never leaving the article. Nobody uses it that
+way: you drag across a paragraph and *then* turn to the guide. Rows now cover
+focus moving to the command box and the voice panel opening. The selection
+survives both, which is how we know the mechanism was never the problem.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not
