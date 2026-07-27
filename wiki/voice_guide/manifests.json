@@ -1477,6 +1477,272 @@
           "reason": "transient; no state"
         }
       ]
+    },
+    "prs_3d": {
+      "aka": [
+        "narrative connectome",
+        "prs connectome",
+        "connectome",
+        "prs",
+        "narrative_connectome",
+        "prs_3d",
+        "3d"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "open",
+        "close",
+        "read",
+        "summarize",
+        "stop",
+        "set"
+      ],
+      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. No camera verbs and no `find`: both are still wired to the Sociogram's own globals (fitAll / zoomBehavior / #graph-svg, and a search path that ends in el.click()), and generalising either is its own increment rather than something to fake here.",
+      "knobs": [
+        {
+          "id": "edges",
+          "label": "Edges (threads)",
+          "aka": [
+            "threads",
+            "thread",
+            "lines"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-edges"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ],
+          "_note": "The P-R-S threads within one narrative. A bool rather than a member of the Sociogram's `edges` FAMILY on purpose: that family is a `showEdgeType` map batch-written through refreshSimLinks, and this tab has three independent booleans and one applyPRSFilters. Inheriting the family binds would be the exact mistake the Community Explorer manifest was warned off (2026-07-26)."
+        },
+        {
+          "id": "coils",
+          "label": "Coils",
+          "aka": [
+            "coil",
+            "synergistic",
+            "bridges"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-coils"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "generative",
+          "label": "Generative",
+          "aka": [
+            "chains",
+            "chain"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-generative"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ]
+        }
+      ],
+      "_knobs_note": "Three booleans, no `views`. NO SUB-VIEWS AT ALL here, which is worth saying out loud because the standing trap of this fan-out is a view whose name is also a tab: three of the first six collided (2026-07-26). This tab has one surface, so there is nothing to collide.",
+      "items": {
+        "kind": "data",
+        "source": "meshes",
+        "where": {
+          "userData.type": "prs"
+        },
+        "visible": "visible",
+        "id": {
+          "path": "userData.triplet.id"
+        },
+        "label": {
+          "path": "userData.triplet.label",
+          "fallback": {
+            "path": "userData.triplet.problem",
+            "clip": 60
+          }
+        },
+        "dedupe": true,
+        "noun": "narrative",
+        "plural": "narratives",
+        "activate": {
+          "call": "prsSearchClickResult",
+          "arg": "id"
+        },
+        "selected": {
+          "path": "selectedMesh.userData.triplet.id"
+        },
+        "close": "#info-panel .close-btn",
+        "reads": "#info-content",
+        "total": {
+          "sel": "#prs-count",
+          "re": "\\/\\s*(\\d+)\\s+triplets"
+        },
+        "_note": "ONE ITEM IS THREE MESHES. A PRS narrative is drawn as a problem, a resource and a solution sharing one triplet id, so without `dedupe` the guide would walk every narrative three times and report a count the page itself contradicts -- updatePrsCount dedupes by triplet id for exactly this reason, and `total` reads that same line so the two numbers cannot drift.\n`visible` is the page's own three.js flag, which is what applyPRSFilters writes: it is the same question getClientRects answers in the DOM, asked where this page keeps the answer.\n`activate` names prsSearchClickResult, which is what the page's OWN search results call -- so voice opens a narrative by the same road a click does, including the camera move onto it. That matters more here than anywhere: with 507 nodes in three dimensions, selecting something off-screen and saying nothing would be indistinguishable from doing nothing.\nNO SORT, unlike the Sociogram's alphabetical roster. Source order is the order the page built them, grouped by tradition and then by date; the labels open \"P1 (Text, referenced in ...)\" so sorting them alphabetically would produce an order that means nothing to anyone.",
+        "_selected_note": "A window PATH, not a selector, because a canvas has nothing to carry a class. Same rule as Summa's `.a-row.sel` -- read the PAGE's marker rather than the click we just made -- and it is what closes the FIFTH which-document instance the 2026-07-27 handoff said to expect: `read` decides what to call the thing by asking whether the marked ELEMENT is still attached, which a canvas roster can never answer yes to, so the reader fell through to #right-page-title (absent here) and called a narrative \"this article\".",
+        "_label_note": "222 OF THE 453 NARRATIVES HAVE NO LABEL AT ALL -- the field is present and empty in the source data, and the page's own info panel opens with a blank <h3> for them. Without the fallback the guide skipped every one: it said \"231 narratives here\" over a tab drawing 453, and half the artifact was unreachable by voice because of a gap in the data rather than anything about the tab. The fallback is the narrative's PROBLEM, clipped: it is always present, it is what the node actually is, and it is the one string a user could plausibly say back (\"open positive geometry\"). Clipping can make two narratives share a handle; matchItems then names both and asks, which is the right failure. Fixing the underlying data is a job for the generator, not for the guide -- but the guide must not pretend the unnamed ones are not there."
+      },
+      "dim_coverage": [
+        {
+          "dim": "selection",
+          "match": "#info-panel .close-btn",
+          "note": "close -- the narrative panel. Named by the items spec, so the audit counts it there."
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#prs-brightness",
+          "reason": "continuous field; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted, same as the Sociogram's brightness slider"
+        },
+        {
+          "match": "#prs-year-slider",
+          "reason": "continuous field, the same exclusion the Sociogram's #date-slider carries. The DISCRETE year filter beside it (the per-decade checkboxes) is the reachable form of the same idea and is deferred, not excluded"
+        },
+        {
+          "match": "#prs-help-btn, .prs-help-close, .prs-pop-btn",
+          "reason": "help popovers -- 'How filters work', 'What is this view?', and their close buttons: chrome, no view state"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "[id^='prs-chk-']",
+          "reason": "the whole filter surface -- All/per-tradition, All/per-discipline, All/per-decade. Knob-shaped in appearance and NOT knobs: they are a filters dimension, and the shell's `filters` dim is hard-wired to the Sociogram's groupVisibility + syncFilterUI. This tab keeps three separate maps (prsFilterState / prsDiscState / prsYearState) behind one applyPRSFilters, so show/hide/only needs a generalised filters dim rather than a borrowed bind. The three declared knobs above match this selector too and are counted as covered, because binds are tested first",
+          "next": "a generalised filters dim -- the same increment that unblocks Community Explorer's 8 type filters"
+        },
+        {
+          "match": "#prs-search-box, #prs-search-clear, #prs-search-reset",
+          "reason": "find / clear / reset. The tab has a real search (prsSearch dims non-matching meshes), but the shell's highlight dim reads a class stamp off SVG opacities and `search` ends in el.click() -- both DOM-shaped, neither reaches a canvas",
+          "next": "connectome increment 2"
+        },
+        {
+          "match": "#btn-labels",
+          "reason": "a BOOL DRAWN AS ONE BUTTON that toggles its own .active class. The three bind kinds are checkbox, select and a button GROUP (v -> sel); a single button fits none of them, and declaring it as a group of two entries pointing at the same selector would be mis-declaring it to fit the machinery -- the thing the `buttons` bind was invented to avoid",
+          "next": "connectome increment 2 -- a `toggle` bind kind, which several flat tabs will want"
+        },
+        {
+          "match": "#prs-left-page .close-btn",
+          "reason": "the LEFT page, which only an edge click opens (showEdgeInfo puts the source narrative there and the target on the right). `close` covers the right panel only, exactly the asymmetry the Sociogram's dismissLeftPage deferral names",
+          "next": "connectome increment 2, with edge selection"
+        },
+        {
+          "match": "#header .controls button:not(#btn-labels)",
+          "reason": "Reset View -- a camera. execCamera is wired to fitAll / zoomBehavior / #graph-svg, all three of them Sociogram globals; this tab orbits a THREE.PerspectiveCamera through updateCameraPosition",
+          "next": "a generalised camera dim -- connectome increment 2"
+        }
+      ],
+      "_coverage_note": "Authored 2026-07-27 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML: the tradition, discipline and decade checkboxes are all innerHTML-written at boot, so the static file shows a fraction of the real surface. Deferred is not a synonym for excluded -- everything under controls_deferred is IN scope and reachable by hand today, and the shell test asserts the count exactly so a new control cannot quietly join the list.",
+      "gestures": [
+        {
+          "id": "node_click",
+          "label": "Click a node (open its narrative)",
+          "status": "covered",
+          "by": [
+            "open",
+            "close",
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "The roster IS the nodes, so walking it and opening one are the same surface a mouse reaches."
+        },
+        {
+          "id": "double_click_center",
+          "label": "Double-click a node to centre the camera on it",
+          "status": "covered",
+          "by": [
+            "open",
+            "pick"
+          ],
+          "note": "prsSearchClickResult moves the camera onto what it selects, so opening by voice already does what the double-click does."
+        },
+        {
+          "id": "edge_click",
+          "label": "Click an edge (its two endpoint narratives, side by side)",
+          "status": "deferred",
+          "reason": "coils, generative chains and threads carry no addressable id, so voice cannot name one -- the same gap the Sociogram's edge_click declares",
+          "planned": "connectome increment 2"
+        },
+        {
+          "id": "orbit",
+          "label": "Drag to orbit the camera",
+          "status": "deferred",
+          "reason": "camera; execCamera is Sociogram-specific (see the Reset View deferral)",
+          "planned": "connectome increment 2"
+        },
+        {
+          "id": "wheel_zoom",
+          "label": "Wheel / pinch to zoom",
+          "status": "deferred",
+          "reason": "same camera",
+          "planned": "connectome increment 2"
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node for its tooltip",
+          "status": "excluded",
+          "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        }
+      ]
     }
   }
 }

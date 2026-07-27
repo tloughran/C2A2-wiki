@@ -52,6 +52,12 @@ const HEADFUL = argv.indexOf('--headful') !== -1;
 
 const SOCIOGRAM_SRC = 'wiki_narration.html';
 const METABOLISM_SRC = 'metabolism/metabolism_view.html';
+// EXACT, not a floor. Everything the Narrative Connectome defers is in scope and
+// reachable by hand today -- the filter checkboxes, the search box, the labels
+// toggle, the left page's close, Reset View -- and the point of pinning the
+// number is that a new control cannot join that list without reddening the gate.
+// Raise it only together with the manifest entry that explains the new one.
+const PRS_DEFERRED = 43;
 
 // ---------------------------------------------------------------- tiny CDP ---
 
@@ -1574,6 +1580,183 @@ async function main() {
     { ok: true, spoken: /sociogram view/, notSpoken: /\d{3,} links/ });
   const shotJ = await page.screenshot(path.join(SHOTS, 'J-summa-tree.png'));
 
+  // ---- Phase L: a roster with NO ELEMENTS AT ALL (Narrative Connectome) -----
+  //
+  // Every tab up to here handed the walker something in the DOM: a row, a card,
+  // a d3 circle. The Connectome draws its 507 narratives into a WebGL canvas --
+  // the whole tab is one <div id="canvas-container"> -- so domItems has nothing
+  // to enumerate and getClientRects has nothing to be asked about. The Sociogram
+  // reads like the same case and is not: d3 leaves an SVG circle per node
+  // behind, which is exactly why revealedNodes could query `.node-circle` and
+  // pass for the general adapter. It never was one; it was the SVG case, and L0
+  // is the row that says so out loud before anything else is claimed.
+  //
+  // So the roster comes from the page's own data through declared dotted paths,
+  // and `open` is a declared CALL rather than a click. Three things can lie here
+  // and each has its own row: the count (three meshes per narrative -- L2), what
+  // is open (the page's `selectedMesh`, not our own call -- L7), and what the
+  // reader CALLS what it reads (L5, the fifth which-document instance, which the
+  // 2026-07-27 handoff predicted).
+  process.stdout.write('\nPhase L -- a roster with no elements (Narrative Connectome)\n');
+  await activateTab(page, 'prs_3d.html');
+  await poll(function () {
+    return page.eval(IFRAME_DOC +
+      "if (!d || d.readyState !== 'complete') { return false; }" +
+      "return !!(w && w.meshes && w.meshes.length && typeof w.prsSearchClickResult === 'function');");
+  }, 120000, 500, 'connectome tab ready');
+  await sleep(1500);
+  await assertManifest(page, 'prs_3d', 'prs_3d.html');
+
+  // THE PREMISE OF THE WHOLE PHASE. If this row ever goes false the tab has
+  // grown a DOM roster and the data adapter is no longer the thing under test.
+  const canvasOnly = await page.eval(IFRAME_DOC +
+    "return { circles: d.querySelectorAll('.node-circle').length," +
+    "         canvases: d.querySelectorAll('canvas').length," +
+    "         meshes: w.meshes.length," +
+    "         triplets: w.PRS_TRIPLETS.length };");
+  record('L0 the narratives are drawn, not built: a canvas and no per-node DOM',
+    canvasOnly.circles === 0 && canvasOnly.canvases >= 1 && canvasOnly.meshes > 0,
+    JSON.stringify(canvasOnly));
+  await auditTab(page, 'prs_3d', PRS_DEFERRED, 3);
+
+  await row(page, 'L1 what -> names the narratives and the page\'s own total', 'what',
+    { ok: true, spoken: /\d+ narratives here/ });
+  // ONE ITEM IS THREE MESHES -- a problem, a resource and a solution sharing one
+  // triplet id. Without dedupe the guide walks each narrative three times and
+  // reports a number the page itself contradicts. Computed from the page rather
+  // than hard-coded, so it stays true as the dataset grows.
+  const trip = await page.eval(IFRAME_DOC +
+    "var seen = {}, n = 0;" +
+    "w.meshes.forEach(function (m) {" +
+    "  if (m.userData && m.userData.type === 'prs' && m.visible) {" +
+    "    var id = m.userData.triplet.id; if (!seen[id]) { seen[id] = 1; n++; } } });" +
+    "return { distinct: n, meshes: w.meshes.filter(function (m) { return m.userData && m.userData.type === 'prs' && m.visible; }).length };");
+  record('L1a the page really does draw three meshes per narrative',
+    trip.meshes === trip.distinct * 3, JSON.stringify(trip));
+  await row(page, 'L2 the roster counts NARRATIVES, not the meshes they are drawn with', 'what',
+    { ok: true, spoken: new RegExp('\\b' + trip.distinct + ' narratives here') });
+  // 222 OF THE 453 SHIP AN EMPTY LABEL. The first run of L2 was red at 231 --
+  // the guide had silently dropped every unnamed narrative, saying "231
+  // narratives here" over a tab drawing 453 and putting half the artifact out
+  // of voice's reach for a gap in the DATA rather than anything about the tab.
+  // The count above is the guard; this pair proves the unnamed ones are not
+  // merely counted but actually reachable, under the handle the fallback builds.
+  const unnamed = await page.eval(IFRAME_DOC +
+    "var out = null, n = 0;" +
+    "w.PRS_TRIPLETS.forEach(function (t) { if (!t.label) { n++; if (!out) { out = t; } } });" +
+    "if (!out) { return null; }" +
+    "var h = String(out.problem).slice(0, 60).replace(/\\s+\\S*$/, '');" +
+    "return { count: n, handle: h };");
+  record('L2a the source really does leave narratives unnamed',
+    !!unnamed && unnamed.count > 0, JSON.stringify(unnamed && unnamed.count));
+  await row(page, 'L2b and an unnamed one is still reachable, by what it is about',
+    'open ' + unnamed.handle, { ok: true, spoken: /^opened / });
+  await sleep(600);
+  await runCmd(page, 'close');
+  await row(page, 'L3 pick first -> walks a roster that has no elements', 'pick first',
+    { ok: true, spoken: /1 of \d+ narratives/ });
+  // The page's OWN marker, not the call we just made. prsSearchClickResult can
+  // find nothing and return silently; reading our own intention back would
+  // report that as a success.
+  const picked = await page.eval(IFRAME_DOC +
+    "var m = w.selectedMesh;" +
+    "return { id: m ? m.userData.triplet.id : null, panel: d.getElementById('info-panel').style.display };");
+  record('L4 picking OPENED it, because on a canvas marking has no other meaning',
+    !!picked.id && picked.panel === 'block', JSON.stringify(picked));
+  // THE FIFTH WHICH-DOCUMENT INSTANCE. `read` decides what to call what it is
+  // reading by asking whether the marked ELEMENT is still attached -- a question
+  // a canvas roster can never answer yes to. It fell straight through to
+  // #right-page-title, which this tab does not have, and called a PRS narrative
+  // "this article", exactly as it once called a Community Explorer card one.
+  // Asserting the verb only would go green on the bug; the assertion is the NAME.
+  const label = await page.eval(IFRAME_DOC + "return w.selectedMesh.userData.triplet.label;");
+  await row(page, 'L5 read -> names the NARRATIVE, not "this article"', 'read',
+    { ok: true, spoken: new RegExp('reading ' + label.slice(0, 24).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')),
+      notSpoken: /this article/ });
+  await runCmd(page, 'stop');
+  // What the reader would actually say: the panel's fields, not the tab's chrome.
+  // #content-area was the shape of this mistake on Summa -- the pane AROUND the
+  // thing reads the buttons aloud before a word of the text.
+  const lScript = await page.eval("return window.CCLSpeechScript ? window.CCLSpeechScript().body : null;");
+  record('L6 and it reads the narrative panel, problem through solution',
+    /Problem/.test(String(lScript)) && /Resource/.test(String(lScript)) && /Solution/.test(String(lScript)),
+    String(lScript).slice(0, 110));
+  await row(page, 'L7 next -> the cursor moves and says where it is', 'next',
+    { ok: true, spoken: /2 of \d+ narratives/ });
+
+  await row(page, 'L8 open by name lands on that narrative', 'open ' + label,
+    { ok: true, spoken: /^opened /});
+  await sleep(600);
+  const opened = await page.eval(IFRAME_DOC + "return w.selectedMesh ? w.selectedMesh.userData.triplet.label : null;");
+  record('L8a and the page agrees it is the one that is open',
+    String(opened) === String(label), String(opened).slice(0, 60));
+  await row(page, 'L9 open with nothing to match says so, and says what there is to choose from',
+    'open a narrative that does not exist',
+    { ok: false, spoken: /nothing here is called/ });
+  // set on this tab, where the knobs are the three edge classes. Write-returns-
+  // the-read: the spoken value has to be the checkbox's, not the one we asked for.
+  await row(page, 'L10 set coils off', 'set coils off', { ok: true, spoken: /off/ });
+  const coils = await page.eval(IFRAME_DOC +
+    "return { box: d.getElementById('prs-chk-coils').checked, flag: w.showCoils };");
+  record('L10a the tab really turned them off, box and flag together',
+    coils.box === false && coils.flag === false, JSON.stringify(coils));
+
+  // A FILTER THE GUIDE DOES NOT OWN still moves the roster, because `visible` is
+  // read live off the page rather than cached at pick time. Driven by clicking
+  // the tab's own checkbox -- the filters dimension is deferred here, so this is
+  // deliberately the mouse doing what voice cannot yet do.
+  const shrunk = await page.eval(IFRAME_DOC +
+    "var boxes = [].slice.call(d.querySelectorAll('#prs-tradition-filters input[type=checkbox]'));" +
+    "var keep = boxes[0];" +
+    "boxes.forEach(function (b) { if (b !== keep && b.checked) { b.click(); } });" +
+    "var seen = {}, n = 0;" +
+    "w.meshes.forEach(function (m) { if (m.userData && m.userData.type === 'prs' && m.visible) {" +
+    "  var id = m.userData.triplet.id; if (!seen[id]) { seen[id] = 1; n++; } } });" +
+    "return { visible: n, all: " + trip.distinct + " };");
+  record('L11 a filter the guide does not own really did cut the page down',
+    shrunk.visible > 0 && shrunk.visible < shrunk.all, JSON.stringify(shrunk));
+  // The honest total survives the cut, in the same breath as the count. This is
+  // the same defect the graph counter had ("4184 of 4184 shown" with two nodes
+  // on screen) and the same fix: say the page's own number, read off the page's
+  // own status line, so what survived a filter can never pass for the whole set.
+  await row(page, 'L11a the roster follows the page, and never passes a cut off as the whole set', 'what',
+    { ok: true, spoken: new RegExp('\\b' + shrunk.visible + ' of ' + canvasOnly.triplets + ' narratives here') });
+  await row(page, 'L11b and walking a cut page says both numbers', 'pick first',
+    { ok: true, spoken: new RegExp('1 of ' + shrunk.visible + ' narratives \\(' + canvasOnly.triplets + ' in all\\)') });
+  // What was picked may be gone now. Bare `open` resolves through the LIVE
+  // roster for exactly this reason: opening something the page has stopped
+  // drawing is the plausible-sounding wrong answer, not a near miss.
+  const goneCase = await page.eval(IFRAME_DOC +
+    "var seen = {};" +
+    "for (var i = 0; i < w.meshes.length; i++) { var m = w.meshes[i];" +
+    "  if (m.userData && m.userData.type === 'prs' && !m.visible) { return m.userData.triplet.label; } }" +
+    "return null;");
+  record('L12 the cut really did hide some narratives', !!goneCase, String(goneCase).slice(0, 50));
+  await row(page, 'L12a and one of them is no longer offered by name', 'open ' + goneCase,
+    { ok: false, spoken: /nothing here is called/ });
+  // Put the tab back so nothing downstream inherits a cut page.
+  await page.eval(IFRAME_DOC +
+    "var r = d.getElementById('prs-search-reset'); if (r) { r.click(); }" +
+    "var c = d.getElementById('prs-chk-coils'); if (c && !c.checked) { c.click(); }" +
+    "return true;");
+  await sleep(800);
+  await row(page, 'L13 close -> puts the narrative panel away, via the control the spec declared', 'close',
+    { ok: true, spoken: /closed/ });
+  const closed = await page.eval(IFRAME_DOC +
+    "return { panel: d.getElementById('info-panel').style.display, sel: !!w.selectedMesh };");
+  record('L13a and the page agrees nothing is open', closed.panel === 'none' && closed.sel === false,
+    JSON.stringify(closed));
+  const shotL = await page.screenshot(path.join(SHOTS, 'L-connectome.png'));
+
+  // Back to the Sociogram once more: the data adapter added a road beside
+  // revealedNodes rather than moving it, and a tab that declares no `activate`
+  // must still route `pick` through openNodeByLabel exactly as it always did.
+  await activateTab(page, SOCIOGRAM_SRC);
+  await tabReady(page, 'sociogram');
+  await sleep(1200);
+  await row(page, 'L14 the graph roster is untouched by the data adapter', 'pick first',
+    { ok: true, spoken: /1 of \d+/ });
+
   // ---- Idle listening cutoff: what can honestly be checked without a session --
   //
   // The 10s behaviour itself needs a LIVE realtime session to observe, and
@@ -1599,7 +1782,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH, shotJ, shotL].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');

@@ -3075,12 +3075,102 @@ var VoiceGuide = (function() {
     }
     return out;
   }
+  // ---- ITEMS THAT ARE NOT ELEMENTS ---------------------------------------
+  //
+  // The Narrative Connectome draws its 507 narratives into a WebGL canvas: the
+  // whole tab is one <div id="canvas-container"> and there is no per-node DOM
+  // at all, so domItems has nothing to enumerate and getClientRects has nothing
+  // to ask. The Sociogram is nominally the same shape and got away with it
+  // because d3 leaves an SVG circle per node behind -- which is why
+  // revealedNodes could read `.node-circle` and call it the general case. It
+  // never was; it was the SVG case.
+  //
+  // So the roster is read from the page's OWN data instead: a declared array on
+  // the iframe window, with declared dotted paths for the id, the label and the
+  // visibility flag the page itself maintains. Paths, not expressions -- the
+  // manifest describes where things are, it does not carry code to run, so a
+  // declaration can never become a way to execute something in the tab.
+  function pathGet(o, p) {
+    var parts = String(p).split('.');
+    for (var i = 0; i < parts.length && o != null; i++) { o = o[parts[i]]; }
+    return o;
+  }
+  function dataItems(sp) {
+    var w = ifWin(), arr = null;
+    if (!w || !sp.source) { return []; }
+    try { arr = w[sp.source]; } catch (e) { return []; }
+    if (!arr || typeof arr.length !== 'number') { return []; }
+    var out = [], seen = {}, where = sp.where || {}, i, k;
+    for (i = 0; i < arr.length; i++) {
+      var o = arr[i];
+      if (!o) { continue; }
+      // The page's own visibility flag, which is what a filter WRITES here --
+      // three.js sets mesh.visible and the renderer obeys it, so this is the
+      // same question "is it on screen" that getClientRects answers in the DOM.
+      if (sp.visible && !pathGet(o, sp.visible)) { continue; }
+      var ok = true;
+      for (k in where) { if (pathGet(o, k) !== where[k]) { ok = false; break; } }
+      if (!ok) { continue; }
+      var id = sp.id && sp.id.path ? pathGet(o, sp.id.path) : null;
+      if (!id) { continue; }
+      var lab = sp.label && sp.label.path ? pathGet(o, sp.label.path) : null;
+      // A THING WITH NO NAME IS STILL ON SCREEN. 222 of the Connectome's 453
+      // narratives ship an empty `label` -- the page draws them, a mouse can
+      // click them, and its own info panel opens with a blank heading. Skipping
+      // them made the guide say "231 narratives here" over a tab drawing 453,
+      // which is the same lie in unit that `total` exists to prevent, and it
+      // put half the tab out of reach of a voice user for a gap in the DATA.
+      // So a spec may declare where else to look, and the fallback is the
+      // narrative's own problem statement: always present, and the one string
+      // that says what the node actually is.
+      if (!lab && sp.label && sp.label.fallback) {
+        lab = pathGet(o, sp.label.fallback.path);
+        var clip = sp.label.fallback.clip;
+        if (lab && clip && String(lab).length > clip) {
+          lab = String(lab).slice(0, clip).replace(/\s+\S*$/, '') + '...';
+        }
+      }
+      if (!lab) { continue; }
+      // ONE ITEM IS THREE MESHES. A PRS narrative is drawn as a problem, a
+      // resource and a solution sharing one triplet id, and offering all three
+      // would make `next` walk each narrative three times and make the count
+      // disagree with the page's own "Showing N / 507 triplets". The page
+      // dedupes by triplet id in updatePrsCount for exactly this reason.
+      if (sp.dedupe) { if (seen[id]) { continue; } seen[id] = 1; }
+      out.push({ id: String(id), label: String(lab).replace(/\s+/g, ' ').trim() });
+    }
+    // NOT SORTED, unlike the Sociogram's roster. Source order here is the order
+    // the page built them -- grouped by tradition, then by date -- and walking
+    // that is walking the artifact. Sorting labels that open "P1 (Text, ...)"
+    // alphabetically would produce an order that means nothing to anybody.
+    return out;
+  }
   // The revealed roster for the ACTIVE tab, whatever kind it is.
   function activeItems() {
     var sp = itemSpec();
     if (!sp || sp.kind === 'none') { return []; }
     if (sp.kind === 'dom') { return domItems(sp); }
+    if (sp.kind === 'data') { return dataItems(sp); }
     return revealedNodes();
+  }
+  // What the PAGE says is open, for a roster with no elements to mark. Same
+  // rule as `selected` on a dom spec (read the page's marker, not our own
+  // click); the only difference is that the marker is a window path rather
+  // than a selector, because there is nothing in the DOM to carry a class.
+  function selectedDataId(sp) {
+    var w = ifWin();
+    if (!w || !sp || !sp.selected || !sp.selected.path) { return null; }
+    try { var v = pathGet(w, sp.selected.path); return v == null ? null : String(v); }
+    catch (e) { return null; }
+  }
+  // Opening an item that is not an element: the page is asked to do it, by a
+  // function the tab DECLARES. The Sociogram's openNodeByLabel stays the
+  // default for a tab that declares nothing, so this adds a road rather than
+  // moving one -- the same rule `activate: "click"` followed for dom rosters.
+  function activateData(sp, item) {
+    var act = sp && sp.activate;
+    if (act && act.call) { return call(act.call, act.arg === 'id' ? item.id : item.label); }
+    call('openNodeByLabel', item.label);
   }
   // ---- ACTIVATE: clicking the thing, not merely marking it ----------------
   //
@@ -3367,7 +3457,7 @@ var VoiceGuide = (function() {
       btn.click();
       // The roster changed underneath the cursor; leaving it pointing at an
       // index in the OLD list is how `next` silently walks the wrong thing.
-      cursorId = null; currentItemEl = null; currentItemLabel = '';
+      cursorId = null; currentItemEl = null; currentItemLabel = ''; currentItemId = '';
       return vs[i].name;
     }
     return '';
@@ -3431,7 +3521,7 @@ var VoiceGuide = (function() {
       if (!ce) { return show('this view has no way to close what is open', 'err'); }
       return execMut('selection', function () { ce.click(); }, 'closed', false);
     }
-    var el = null, label = p.label;
+    var el = null, label = p.label, hit = null;
     if (label) {
       var hits = matchItems(label);
       if (!hits.length) { return show('nothing here is called "' + label + '"  |  ' + itemsPhrase(activeItems().length) + ' to choose from', 'err'); }
@@ -3442,7 +3532,17 @@ var VoiceGuide = (function() {
           hits.slice(0, 6).map(function (h) { return h.label; }).join('; ') +
           (hits.length > 6 ? '; ...' : ''), 'err');
       }
-      el = hits[0].el; label = hits[0].label;
+      hit = hits[0]; el = hit.el; label = hit.label;
+    } else if (sp.kind === 'data') {
+      // A canvas roster has no element to have kept, so "what the cursor is on"
+      // is an id rather than a node that might have been detached. Resolved
+      // back through the LIVE roster: a filter can hide what was picked, and
+      // opening something the page has since stopped drawing would be the same
+      // plausible-sounding wrong answer a stale element gives in the DOM.
+      if (!currentItemId) { return show('nothing is picked -- say "pick first", or name what to open', 'err'); }
+      hit = activeItems().filter(function (x) { return x.id === currentItemId; })[0];
+      if (!hit) { return show('what was picked is no longer shown -- say "pick first", or name what to open', 'err'); }
+      label = hit.label;
     } else {
       // Bare `open` means the thing the cursor is already on -- the ordinary
       // shape of walking to something and then opening it.
@@ -3456,8 +3556,8 @@ var VoiceGuide = (function() {
     // sound identical otherwise.
     var before = activeItems().length;
     return execMut('selection', function () {
-      selectDomItem(el, label);
-      el.click();
+      if (sp.kind === 'data') { selectDataItem(sp, hit); }
+      else { selectDomItem(el, label); el.click(); }
       var after = activeItems().length;
       return after === before ? '' : ('  |  now ' + itemsPhrase(after));
     }, 'opened ' + label, false);
@@ -3495,15 +3595,30 @@ var VoiceGuide = (function() {
     var item = list[idx];
     cursorId = item.id;
     var before = readDim('selection');
-    if (item.el) { selectDomItem(item.el, item.label); } else { currentItemEl = null; currentItemLabel = ''; call('openNodeByLabel', item.label); }
+    if (item.el) { selectDomItem(item.el, item.label); }
+    else { selectDataItem(itemSpec(), item); }
     journal.record(TAB, { dim: 'selection', before: before, after: readDim('selection') });
     // Announcing is not decoration: with no screen, this IS the result.
     return show(item.label + '  |  ' + cursorPhrase(idx, list.length) + pre, 'ok');
   }
 
-  var currentItemEl = null, currentItemLabel = '';
+  var currentItemEl = null, currentItemLabel = '', currentItemId = '';
+  // The cursor landing on an item with no element. There is nothing to outline
+  // and nothing to scroll, so marking IS opening here: the page's own
+  // selection is the only visible answer a canvas can give, and it is what the
+  // Sociogram has always done on `pick` (openNodeByLabel) for the same reason.
+  // Only a `data` roster remembers what it landed on -- the graph path keeps
+  // clearing the pair exactly as it did, so nothing about that tab moves.
+  function selectDataItem(sp, item) {
+    currentItemEl = null;
+    var isData = sp && sp.kind === 'data';
+    currentItemLabel = isData ? item.label : '';
+    currentItemId = isData ? item.id : '';
+    activateData(sp, item);
+  }
   function selectDomItem(el, label) {
     currentItemLabel = label || '';
+    currentItemId = '';
     // The item's OWN document, which on a nested tab is not ifDoc(): the marker
     // style and the previous-selection sweep both have to land where the item is.
     var d = el.ownerDocument;
@@ -3607,6 +3722,20 @@ var VoiceGuide = (function() {
     // The cursor's element may live in a NESTED frame, so ask its own document
     // whether it is still attached rather than the tab's.
     var el = (currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl)) ? currentItemEl : null;
+    // WHERE THE PAGE PUT IT, asked FIRST rather than as an override. This used
+    // to sit below the fallback, which was fine only while every tab that
+    // declared `reads` also had an element under the cursor: the Connectome has
+    // neither an element nor a `right-page-content`, so the fallback returned
+    // null and `read` answered "nothing readable in this one" while the
+    // narrative was on screen -- with the declaration that names the pane sitting
+    // right there, never consulted. Existing tabs are unaffected: `reads` won
+    // anyway when it was showing, this only stops the fallback from refusing
+    // before the question is asked.
+    var rsp0 = itemSpec();
+    if (rsp0 && rsp0.reads) {
+      var rd0 = specDoc(rsp0), re0 = rd0 && rd0.querySelector(rsp0.reads);
+      if (re0 && re0.getClientRects().length) { el = re0; }
+    }
     if (!el) {
       el = d.getElementById('right-page-content');
       if (!el || !panelVisible(d)) { return null; }
@@ -3835,7 +3964,17 @@ var VoiceGuide = (function() {
     // activeTabSrc, activeTabBtn and activeSrc: anything asking WHICH DOCUMENT
     // must ask the element, not the shell.
     var attached = currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl);
-    var title = sel ? 'your selection' : ((attached && currentItemLabel)
+    // THE FIFTH INSTANCE of the which-document family, and the handoff of
+    // 2026-07-27 said to expect it. `attached` asks whether the marked ELEMENT
+    // is still in its document -- a question a canvas roster can never answer
+    // yes to, because it never had an element. So the Narrative Connectome's
+    // reader fell straight through to `right-page-title` (which that tab does
+    // not have) and called a PRS narrative "this article", exactly as `read`
+    // once called a Community Explorer card one. A data item is "still the one
+    // showing" when the PAGE still says so, so ask the page.
+    var tsp = itemSpec();
+    var dataOpen = tsp && tsp.kind === 'data' && currentItemId && selectedDataId(tsp) === currentItemId;
+    var title = sel ? 'your selection' : (((attached || dataOpen) && currentItemLabel)
       ? currentItemLabel
       : ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim());
     // Name the rendering when one was asked for: "the commentary of Article 2"
@@ -4080,6 +4219,16 @@ var VoiceGuide = (function() {
         // (an unavailable article has no handler at all) reads back as nothing
         // selected instead of reporting our own intention as success.
         var ssp = itemSpec();
+        // Same question, two shapes, because a canvas has no element to carry a
+        // class: a dom roster marks the row it loaded, a data roster keeps the
+        // thing it opened on its own window (three.js `selectedMesh`). Both are
+        // the PAGE's answer rather than ours, which is the whole point.
+        if (ssp && ssp.selected && ssp.selected.path) {
+          var sid = selectedDataId(ssp);
+          if (!sid) { return null; }
+          var srow = activeItems().filter(function (x) { return x.id === sid; })[0];
+          return { id: sid, label: srow ? srow.label : sid };
+        }
         if (ssp && ssp.selected) {
           var sd = specDoc(ssp), se = sd && sd.querySelector(ssp.selected);
           return se ? { label: (se.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80) } : null;
@@ -4105,7 +4254,10 @@ var VoiceGuide = (function() {
         var wd = specDoc(wsp);
         if (!value) { var wc = wsp.close && wd && wd.querySelector(wsp.close); if (wc) { wc.click(); } return; }
         var wh = matchItems(value.label)[0];
-        if (wh && wh.el) { wh.el.click(); }
+        if (!wh) { return; }
+        // Undo travels the road the command did, whichever road that was.
+        if (wsp.kind === 'data') { selectDataItem(wsp, wh); return; }
+        if (wh.el) { wh.el.click(); }
         return;
       }
       if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); }
@@ -4310,7 +4462,7 @@ var VoiceGuide = (function() {
     show(msg + (frame ? frameSuffix() : ''), 'ok');
   }
   function execFilters(p) {
-    currentItemEl = null; currentItemLabel = '';
+    currentItemEl = null; currentItemLabel = ''; currentItemId = '';
     // A filter change SUPERSEDES a cut (a stale cut would hide nodes the new
     // filter means to show). That is a state change in its own right, so it
     // gets its OWN journal entry: undo steps back through cut-then-filter

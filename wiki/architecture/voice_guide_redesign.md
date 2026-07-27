@@ -1314,6 +1314,128 @@ Pars, Question 18, Article 1`) and asserts it lands on `I.Q18.A1`.
 not documentation of it. A green harness only proves the mechanism exists — the
 guide will refuse, fluently and plausibly, for anything it was not told about.
 
+## T. A roster with no elements (Narrative Connectome, 2026-07-27)
+
+The Connectome draws its 453 narratives into a WebGL canvas. The whole tab is one
+`<div id="canvas-container">`; there is no per-node DOM at all. So `domItems` had
+nothing to enumerate, `getClientRects` had nothing to be asked about, and
+`selectDomItem` had nothing to outline.
+
+**The Sociogram is not the precedent it looks like.** `revealedNodes()` reads
+`.node-circle` and pulls each node's data off the d3 datum — which works because
+d3 leaves an SVG circle behind for every node. It was never the general
+canvas adapter; it was the SVG case wearing the general case's name. This is the
+same mistake `open` made before §R: a capability wired to one page's globals,
+sitting in the position of the shared road.
+
+### The declaration
+
+`items.kind: "data"` — the roster is read from the page's OWN data through
+declared dotted **paths**, never an expression:
+
+```
+kind: "data",  source: "meshes",  where: { "userData.type": "prs" },
+visible: "visible",
+id:    { path: "userData.triplet.id" },
+label: { path: "userData.triplet.label",
+         fallback: { path: "userData.triplet.problem", clip: 60 } },
+dedupe: true,
+activate: { call: "prsSearchClickResult", arg: "id" },
+selected: { path: "selectedMesh.userData.triplet.id" }
+```
+
+Paths and not expressions on purpose: a manifest says where things ARE, so a
+declaration can never become a way to run code inside a tab.
+
+- **`visible`** is the page's own three.js flag — the same question
+  `getClientRects` answers in the DOM, asked where this page keeps the answer.
+  Read live on every call, so a filter the guide does not own still moves the
+  roster (harness L11).
+- **`dedupe`** because ONE NARRATIVE IS THREE MESHES (problem, resource,
+  solution, one triplet id). Without it the guide walks everything three times
+  and reports a number the page itself contradicts; `updatePrsCount` dedupes the
+  same way, and `total` reads that same status line so the two cannot drift.
+- **`activate`** names `prsSearchClickResult`, which is what the page's own
+  search results call — so voice opens a narrative by the same road a click
+  does, camera move included. That matters more here than anywhere: with 453
+  nodes in three dimensions, selecting something off-screen silently is
+  indistinguishable from doing nothing.
+- **`selected`** is a window PATH rather than a selector, because a canvas has
+  nothing to carry a class. Same rule as Summa's `.a-row.sel`: read the PAGE's
+  marker, never the call we just made.
+
+`pick` MARKS everywhere else; here marking has no other meaning, so on a data
+roster it opens. That is not new behaviour invented for this tab — it is what
+the Sociogram has always done on `pick`, for the same reason.
+
+### The fifth which-document, exactly where the handoff said to look
+
+`read` decides what to CALL what it is reading by asking whether the marked
+ELEMENT is still attached to its document — a question a canvas roster can never
+answer yes to. So it fell straight through to `#right-page-title`, which this tab
+does not have, and called a PRS narrative *"this article"* — the same sentence it
+once said about a Community Explorer card. A data item is "still the one showing"
+when the PAGE still says so, so the title now asks the page. **Assume a sixth.**
+
+A second, quieter instance in the same function: `speechScript` consulted the
+declared `reads` pane only AFTER its fallback had already returned null, which
+was invisible while every tab declaring `reads` also had an element under the
+cursor. Here it meant `read` answered *"nothing readable in this one"* with the
+narrative on screen and the declaration naming its pane sitting right there,
+never consulted. `reads` is asked first now.
+
+### What the first green run caught that no assertion had thought to ask
+
+**222 of the 453 narratives ship an empty `label`.** The field is present and
+blank in the source; the page's own info panel opens with an empty `<h3>` for
+them. The roster skipped every one, so the guide said *"231 narratives here"*
+over a tab drawing 453 — the same lie in unit that `total` exists to prevent,
+and half the artifact unreachable by voice because of a gap in the DATA rather
+than anything about the tab. The fallback names them by their **problem**,
+clipped: always present, and the one string that says what the node actually is
+("open positive geometry" lands). Clipping can make two share a handle;
+`matchItems` then names both and asks, which is the right failure.
+
+Fixing the underlying labels is the generator's job, not the guide's. **The
+guide's job was to stop pretending the unnamed ones were not there.**
+
+### Deliberately NOT declared
+
+- **The filter surface** (All / per-tradition / per-discipline / per-decade, 43
+  controls). They are a filters DIMENSION, and the shell's `filters` dim is
+  hard-wired to the Sociogram's `groupVisibility` + `syncFilterUI`; this tab
+  keeps three separate maps behind one `applyPRSFilters`. Borrowing the bind is
+  the exact mistake the Community Explorer manifest was warned off. **A
+  generalised filters dim is the next real increment, and it unblocks two tabs.**
+- **The camera** (Reset View, orbit, wheel zoom). `execCamera` is `fitAll` /
+  `zoomBehavior` / `#graph-svg` — three Sociogram globals.
+- **`find`** — the tab has a real search, but the highlight dim reads a class
+  stamp off SVG opacities and `search` ends in `el.click()`.
+- **`#btn-labels`**, a bool drawn as ONE button toggling its own `.active`. The
+  three bind kinds are checkbox, select, and a button GROUP (`v -> sel`); one
+  button fits none, and declaring it as a two-entry group pointing at the same
+  selector would be mis-declaring it to fit the machinery — the thing the
+  `buttons` bind was invented to avoid. A `toggle` bind kind is owed, and several
+  flat tabs will want it.
+
+Audit: 53 controls — 4 covered, 6 excluded, **43 deferred, 0 uncovered**;
+gestures 2 covered / 3 deferred / 1 excluded. Harness **Phase L, 26 rows**,
+including L14: the Sociogram roster is untouched, because the data adapter added
+a road beside `revealedNodes` rather than moving one.
+
+**No prompt change was needed** and this is worth stating rather than skipping:
+every verb the tab uses was already advertised, and the tab was already a
+destination. The standing lesson (a capability the model was never told about
+does not exist) applies to NEW capabilities — this increment added a new
+implementation of old ones. If the guide refuses something here in live use,
+that conclusion is now falsified and the prompt is the first suspect.
+
+**One convention note, not forked silently:** `manifests.json._about` says
+adding a T1 tab is one entry "plus a knowledge default file". Only the Sociogram
+has knowledge files; the six tabs declared since have none, and
+`derive_tab_help.py` explicitly tolerates that ("partial rollout is safe"). This
+tab follows the six. Either the sentence or the practice should be reconciled.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not
