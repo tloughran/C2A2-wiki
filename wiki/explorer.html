@@ -3044,6 +3044,99 @@ var VoiceGuide = (function() {
   // assumed the graph. So the action is DECLARED per item spec (`activate`),
   // beside `frame` and `total`, and a tab that says how to open its items gets
   // `open`/`close` without a line of new per-tab code.
+  // ---- COORDINATES: addressing a place in a structured text ---------------
+  //
+  // "Go to question 4, article 2" is what a person says to a guide holding the
+  // book, and it is none of the things `go` already resolves: not a tab, not a
+  // sub-view, not a link. It is an ADDRESS, and the tab that has one declares
+  // it -- levels with the words a person says for them, and targets that turn a
+  // filled-in coordinate into a selector. The shell knows nothing about Summa;
+  // it knows how to read `locate`.
+  //
+  // The words are matched anywhere in the phrase, so "go to question 4, article
+  // 2", "q4 a2" and "article 2 of question 4" are the same address. A level the
+  // user leaves out is taken from where they already are, and the guess is
+  // always SAID -- the result contract's "taking X as Y", which matters most
+  // here because a wrong part is a plausible-sounding wrong answer.
+  function locateSpec() { var sp = itemSpec(); return (sp && sp.locate) || null; }
+  function matchLocate(term) {
+    var spec = locateSpec();
+    if (!spec) { return null; }
+    var t = (term || '').toLowerCase().replace(/[.,;:]/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!t) { return null; }
+    var got = {}, any = false;
+    spec.levels.forEach(function (lv) {
+      for (var i = 0; i < lv.say.length; i++) {
+        var w = lv.say[i].toLowerCase();
+        // "question 4" and the spoken-shorthand "q4" alike.
+        var re = new RegExp('\\b' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s*(\\d+)\\b');
+        var m = re.exec(t);
+        if (m) { got[lv.name] = m[1]; any = true; return; }
+      }
+      // A level may also be named rather than numbered (Summa's parts are
+      // "Prima Pars", not "part 1" -- though people say both).
+      (lv.values || []).forEach(function (val) {
+        (val.aka || []).forEach(function (a) {
+          if (new RegExp('\\b' + a.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b').test(t)) {
+            got[lv.name] = val.v; any = true;
+          }
+        });
+      });
+    });
+    if (!any) { return null; }
+    // WHICH LEVELS THE USER ACTUALLY SAID, kept apart from the ones filled in
+    // for them. Without the distinction, "question 4000, article 9" found
+    // neither and quietly fell back to the part-only target -- answering "go
+    // Prima Pars" with ok:true for a place that does not exist. That is the
+    // plausible-sounding wrong answer this whole design keeps trying to avoid,
+    // and it appeared in the first run of the very test written to catch it.
+    return { spec: spec, got: got, said: Object.keys(got) };
+  }
+  function execLocate(loc) {
+    var spec = loc.spec, got = loc.got, d = specDoc(itemSpec()) || ifDoc(), assumed = [];
+    // Fill what was not said from where the user already is.
+    spec.levels.forEach(function (lv) {
+      if (got[lv.name] || !lv.context) { return; }
+      var el = d.querySelector(lv.context.sel);
+      var val = el && (lv.context.attr ? el.getAttribute(lv.context.attr) : el.textContent);
+      if (val && lv.context.re) { var m = new RegExp(lv.context.re).exec(val); val = m ? m[1] : null; }
+      if (val) { got[lv.name] = val; assumed.push(lv.name + ' ' + val); }
+    });
+    // Deepest target whose levels are all known wins -- naming a question and an
+    // article means the article, not the question it sits in.
+    var hit = null, used = null, said = loc.said || [];
+    for (var i = 0; i < spec.targets.length; i++) {
+      var tg = spec.targets[i];
+      if (!tg.needs.every(function (n) { return got[n]; })) { continue; }
+      // Never answer with LESS than was asked for. A target that drops a level
+      // the user named is a different place, not a near miss.
+      if (!said.every(function (n) { return tg.needs.indexOf(n) !== -1; })) { continue; }
+      var sel = tg.sel.replace(/\{(\w+)\}/g, function (_, k) { return got[k]; });
+      var el = d.querySelector(sel);
+      if (el) { hit = el; used = tg; break; }
+    }
+    if (!hit) {
+      // Name it back exactly as asked, including the level that was assumed --
+      // "no question 4000 in part I" tells the user which of the two to correct.
+      var asked = spec.levels.filter(function (lv) { return got[lv.name]; })
+        .map(function (lv) { return lv.name + ' ' + got[lv.name]; }).join(', ');
+      return show('there is no ' + (asked || 'such place') + ' here', 'err');
+    }
+    // Opening a closed ancestor is part of GOING there: a target inside a
+    // collapsed container is addressable but not reachable, and a guide that
+    // marked it and said nothing would be pointing at a shut door.
+    (used.open_first || []).forEach(function (o) {
+      var anc = o.replace(/\{(\w+)\}/g, function (_, k) { return got[k]; });
+      var ae = d.querySelector(anc);
+      if (ae && ae.getClientRects().length && !ae.classList.contains('open')) { ae.click(); }
+    });
+    var label = '';
+    if (used.label) { var le = hit.querySelector(used.label); label = le ? (le.textContent || '').trim() : ''; }
+    if (!label) { label = (hit.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60); }
+    selectDomItem(hit, label);
+    hit.click();
+    return show('go ' + label + (assumed.length ? ('  |  taking that as ' + assumed.join(', ')) : ''), 'ok');
+  }
   function matchItems(term) {
     var t = (term || '').toLowerCase().replace(/\s+/g, ' ').trim();
     if (!t) { return []; }
@@ -3338,6 +3431,37 @@ var VoiceGuide = (function() {
   }
   function endPunct(t) { return /[.!?:;,]$/.test(t) ? t : t + '.'; }
 
+  // ---- THE USER'S OWN HIGHLIGHT ------------------------------------------
+  //
+  // Dragging across a paragraph is the most ordinary reading gesture there is,
+  // and the guide could not perceive it at all: `getSelection` appeared nowhere
+  // in this file. It was never deferred or excluded -- it was never scoped, and
+  // Tom found it by doing the obvious thing (2026-07-27). It belongs to the
+  // SHELL and not to any tab, for the same reason links do: every page has text,
+  // so declaring it per tab would make a universal capability queue behind the
+  // fan-out.
+  //
+  // Which document: the one the user dragged in, which on a nested tab is not
+  // the tab's own -- the which-document family again, so both are asked, nearest
+  // first. A COLLAPSED selection (a bare caret, or the click that opened a row)
+  // is not a highlight, and neither is a stray word, so there is a floor: below
+  // it, `read` means what it has always meant.
+  var SEL_MIN = 25;
+  function liveSelection() {
+    var sp = itemSpec(), docs = [ifDoc()], i;
+    if (sp && sp.frame) { docs.push(specDoc(sp)); }
+    for (i = 0; i < docs.length; i++) {
+      var d = docs[i];
+      if (!d || !d.defaultView || !d.defaultView.getSelection) { continue; }
+      var s;
+      try { s = d.defaultView.getSelection(); } catch (e) { continue; }
+      if (!s || s.isCollapsed || !s.rangeCount) { continue; }
+      var text = (s.toString() || '').replace(/\s+/g, ' ').trim();
+      if (text.length < SEL_MIN) { continue; }
+      return { text: text, words: text.split(/\s+/).length, doc: d };
+    }
+    return null;
+  }
   function speechScript() {
     var d = ifDoc();
     if (!d) { return null; }
@@ -3397,6 +3521,12 @@ var VoiceGuide = (function() {
       // pressing Stop, and it must restore the mic the same way -- otherwise a
       // session that reads to completion is deaf from then on.
       if (onDone) { u.onend = onDone; u.onerror = onDone; }
+      // Held so the harness can fire the end-of-speech path deliberately:
+      // headless Chrome has no voices, so waiting for real speech to finish
+      // would mean this half is never tested at all -- and "the reader puts
+      // itself away" is exactly the half nobody notices until a session has
+      // gone deaf.
+      window.CCLLastUtterance = u;
       window.speechSynthesis.speak(u);
       return true;
     },
@@ -3425,13 +3555,98 @@ var VoiceGuide = (function() {
     var b = document.getElementById('ccl-stop');
     if (b) { b.style.display = on ? '' : 'none'; }
   }
+  // The reader's own state, for the harness. Whether it put itself away is not
+  // visible from the outside otherwise, and it is the half nobody notices until
+  // a session has silently gone deaf.
+  // Puts the reader into the state a real utterance would hold it in. Only the
+  // harness calls it: headless Chrome has no voices, so speech ends the instant
+  // it begins and the mid-read state is otherwise unobservable.
+  window.CCLForceReaderOpen = function () { speaking = true; setMic(false); stopButton(true); };
+  window.CCLReaderState = function () {
+    var b = document.getElementById('ccl-stop');
+    return { speaking: speaking, stopShown: !!(b && b.style.display !== 'none') };
+  };
+  // A variant is a name for a RENDERING of what is already open, declared per
+  // item spec as {say, knob, v}. It is not a new dimension: it writes a knob the
+  // tab already has, so `set mode commentary` and `read the commentary` end in
+  // the same state, and only one of them is a thing a person would actually say.
+  function readVariant(term) {
+    var t = (term || '').toLowerCase().trim();
+    if (!t) { return null; }
+    var sp = itemSpec(), vs = (sp && sp.read_variants) || [], i, j;
+    for (i = 0; i < vs.length; i++) {
+      for (j = 0; j < vs[i].say.length; j++) {
+        if (vs[i].say[j] === t) { return vs[i]; }
+      }
+    }
+    return null;
+  }
+  // The page FETCHES when the mode changes, so reading straight after the click
+  // would read whatever was on screen a moment ago -- the previous rendering,
+  // confidently announced as the new one. Wait for the page's own signals (its
+  // spinner down, the pane non-empty and CHANGED) before handing over, and say
+  // plainly if it never arrives rather than reading the stale text anyway.
+  function readAfterVariant(rv, p) {
+    var bind = knobBind(rv.knob);
+    if (!bind) { return show('this view has no ' + rv.knob + ' control', 'err'); }
+    var sp = itemSpec(), d = specDoc(sp) || ifDoc();
+    var pane = sp && sp.reads ? d.querySelector(sp.reads) : null;
+    var beforeText = pane ? (pane.textContent || '').slice(0, 400) : '';
+    var already = readKnob(bind) === rv.v;
+    if (!already) {
+      try { writeKnob(bind, rv.v); }
+      catch (e) { return show('could not switch to the ' + rv.say[0] + ': ' + (e && e.message || e), 'err'); }
+      // THE PAGE MAY REFUSE. Not every Summa article has a contemporary
+      // commentary, and switchMode returns early rather than failing, so the
+      // knob simply does not move. Reading on regardless would speak the
+      // transcript and call it the commentary; timing out would blame the
+      // network for an editorial fact. Ask the knob what happened.
+      if (readKnob(bind) !== rv.v) {
+        return show('this one has no ' + rv.say[0] + ' -- nothing was read', 'err');
+      }
+    }
+    // Nothing to wait for if it was already showing.
+    if (already) { return execPlayback({ action: p.action, mode: null, _variant: rv.say[0] }); }
+    var waited = 0, STEP = 120, LIMIT = 8000;
+    var tick = function () {
+      var spin = d.getElementById && d.getElementById('spinner');
+      var busy = spin && spin.style.display !== 'none' && spin.getClientRects().length;
+      var now  = pane ? (pane.textContent || '').slice(0, 400) : '';
+      var ready = !busy && now && now !== beforeText;
+      if (ready || waited >= LIMIT) {
+        if (!ready) { return show('the ' + rv.say[0] + ' did not load in time -- nothing was read', 'err'); }
+        // Re-enter the ordinary path with the variant consumed, so there is ONE
+        // reader and the selection/metadata rules keep applying.
+        return execPlayback({ action: p.action, mode: null, _variant: rv.say[0] });
+      }
+      waited += STEP;
+      setTimeout(tick, STEP);
+    };
+    setTimeout(tick, STEP);
+    return show('turning to the ' + rv.say[0] + '...', 'ok');
+  }
   function execPlayback(p) {
     var w = ifWin();
     if (p.action === 'stop') { stopSpeaking(); return show('stopped', 'ok'); }
+    // A DECLARED VARIANT names a different rendering of the SAME thing -- Summa's
+    // transcript and its contemporary commentary are one article read two ways,
+    // and a human guide asked for "the commentary" would turn to it and read,
+    // not explain that a toggle exists (Tom, 2026-07-27). So the variant sets
+    // the knob and then reads, and because the page FETCHES, the read waits for
+    // the fetch rather than reading whatever was on screen a moment ago.
+    var rv = readVariant(p.mode);
+    if (rv) { return readAfterVariant(rv, p); }
     var sc = speechScript();
-    if (!sc) { return show('nothing is open to read -- pick a node first', 'err'); }
     var wantMeta = (p.mode === 'details' || p.mode === 'metadata');
-    var text = wantMeta ? sc.meta : sc.body;
+    // The user's own highlight WINS. Having dragged across a paragraph, "read"
+    // can only mean that paragraph -- asking for the whole article instead would
+    // be ignoring the one thing they just pointed at. `read all` is the way back
+    // to the whole thing, and the selection is always named out loud so it can
+    // never be a silent substitution.
+    var wantAll = (p.mode === 'all' || p.mode === 'page' || p.mode === 'whole');
+    var sel = (wantMeta || wantAll) ? null : liveSelection();
+    if (!sc && !sel) { return show('nothing is open to read -- pick a node first', 'err'); }
+    var text = sel ? sel.text : (wantMeta ? sc.meta : sc.body);
     if (!text) { return show(wantMeta ? 'there is no metadata held back for this one' : 'nothing readable in this one', 'err'); }
     if (!window.speechSynthesis) { return show('this browser has no text-to-speech', 'err'); }
     // Name what is actually being read: on a content tab that is the section
@@ -3443,9 +3658,12 @@ var VoiceGuide = (function() {
     // activeTabSrc, activeTabBtn and activeSrc: anything asking WHICH DOCUMENT
     // must ask the element, not the shell.
     var attached = currentItemEl && currentItemEl.ownerDocument && currentItemEl.ownerDocument.contains(currentItemEl);
-    var title = (attached && currentItemLabel)
+    var title = sel ? 'your selection' : ((attached && currentItemLabel)
       ? currentItemLabel
-      : ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim();
+      : ((d.getElementById('right-page-title') || {}).textContent || 'this article').trim());
+    // Name the rendering when one was asked for: "the commentary of Article 2"
+    // is the only way to hear that the turn actually happened.
+    if (p._variant && !sel) { title = 'the ' + p._variant + ' of ' + title; }
     stopSpeaking();
     speaking = true;
     // THE MIC IS MUTED WHILE THE PAGE READS (Tom's call, 2026-07-26), which
@@ -3470,8 +3688,12 @@ var VoiceGuide = (function() {
     if (typeof window.CCLDeferSpeak === 'function') { window.CCLDeferSpeak(start); } else { start(); }
     // The mic is OFF while the page reads, so telling the user to *say* stop
     // would be false. Name the interrupt that actually works.
-    var held = (!wantMeta && sc.metaCount) ? ('  |  ' + sc.metaCount + ' lines of metadata held back -- say "read details" for them') : '';
-    var skip = (!wantMeta && sc.skipped) ? ('  |  skipped ' + sc.skipped + ' block' + (sc.skipped > 1 ? 's' : '') + ' that do not read aloud') : '';
+    // With a selection there is no held-back metadata and nothing was skipped --
+    // the user chose the text themselves. What they DO need is the way back to
+    // the whole article, since they may not remember they left a highlight up.
+    var held = (!sel && !wantMeta && sc.metaCount) ? ('  |  ' + sc.metaCount + ' lines of metadata held back -- say "read details" for them') : '';
+    var skip = (!sel && !wantMeta && sc.skipped) ? ('  |  skipped ' + sc.skipped + ' block' + (sc.skipped > 1 ? 's' : '') + ' that do not read aloud') : '';
+    if (sel) { held = '  |  say "read all" for the whole thing'; }
     return show('reading ' + title + (wantMeta ? ' (metadata)' : '') + '  |  ' + text.split(' ').length +
                 ' words -- press Stop reading (the guide cannot hear you until you do)' + held + skip, 'ok');
   }
@@ -3769,6 +3991,14 @@ var VoiceGuide = (function() {
           }
           var v = enterView(p.term);
           if (v) { announceView(v); return show('go ' + v, 'ok'); }
+          // A COORDINATE, where the page has one. "go to question 4, article 2"
+          // is what a person says to a human guide holding the book, and it is
+          // not a link, a view or a tab -- it is an address. Declared per tab
+          // (`locate`) because only Summa knows its refs are I.Q4.A2; resolved
+          // here for the same reason sub-views are, and AFTER them, so a
+          // coordinate can never shadow a place.
+          var loc = matchLocate(p.term);
+          if (loc) { return execLocate(loc); }
           // THEN the page's own links, for the same reason and in the same
           // place: they are live and per-page, so the engine can only ever hand
           // their names back unresolved. Resolving them LAST means a link can
@@ -4054,6 +4284,16 @@ var VoiceGuide = (function() {
       itemNote += '  |  ' + lk.length + ' link' + (lk.length > 1 ? 's' : '') + ': ' +
                   lk.slice(0, 4).map(function (l) { return '"' + l.label + '"'; }).join(', ') +
                   (lk.length > 4 ? ', ...' : '');
+    }
+    // A HIGHLIGHT THE USER LEFT ON THE PAGE is part of what they are looking at,
+    // and `what` never mentioned it -- which is how "can't detect highlights or
+    // selections" was true even after `read` learned to use one (Tom,
+    // 2026-07-27). Said before the links, because it is the thing most recently
+    // pointed at, and quoted short so it is recognisable without being read out.
+    var lsel = liveSelection();
+    if (lsel) {
+      itemNote += '  |  you have ' + lsel.words + ' words selected ("' +
+                  lsel.text.slice(0, 40) + (lsel.text.length > 40 ? '...' : '') + '") -- say "read" for it';
     }
     var vNote = activeViewName();
     if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }

@@ -296,6 +296,19 @@ function runCmd(page, cmd) {
   );
 }
 
+// Some results arrive LATER than the command that asked for them: turning to the
+// commentary has to wait for the page's own fetch, and a test that read the
+// status line immediately would be asserting the intent rather than the result.
+async function waitStatus(page, re, limitMs) {
+  const limit = limitMs || 10000;
+  for (let waited = 0; waited <= limit; waited += 150) {
+    const bar = await page.eval("var el = document.getElementById('ccl-result'); return el ? el.textContent : '';");
+    if (re.test(bar || '')) { return bar; }
+    await sleep(150);
+  }
+  return await page.eval("var el = document.getElementById('ccl-result'); return el ? el.textContent : '';");
+}
+
 function readDom(page, sel, prop) {
   return page.eval(
     IFRAME_DOC +
@@ -1311,6 +1324,106 @@ async function main() {
   await row(page, 'J10 stop', 'stop', { ok: true, spoken: /stopped/ });
   await row(page, 'J11 close -> back to the index, via the control the spec declared', 'close',
     { ok: true, spoken: /closed/ });
+  // ---- Phase K: the highlight, the two renderings, and the address ---------
+  //
+  // All three come from Tom doing the ordinary thing and finding it missing
+  // (2026-07-27): highlighting a paragraph and asking for it back, asking for
+  // "the commentary" rather than a toggle, and naming a place in the book the
+  // way anyone holding it would -- "question 4, article 2".
+  process.stdout.write('\nPhase K -- highlights, renderings, and coordinates\n');
+  // K1-K3: THE ADDRESS. Nothing is open; the coordinate has to open its own way
+  // in, because a target inside a collapsed container is addressable but not
+  // reachable.
+  await row(page, 'K1 a coordinate is not a tab, a view or a link -- and it lands',
+    'go to question 4, article 2',
+    { ok: true, spoken: /^go .+/ });
+  await sleep(1500);
+  const at = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var s = d.querySelector('.a-row.sel');" +
+    "return s ? s.getAttribute('data-ref') : null;");
+  record('K2 it really opened THAT article, by ref', /\.Q4\.A2$/.test(String(at)), String(at));
+  await row(page, 'K3 a coordinate that does not exist says so plainly',
+    'go to question 4000, article 9',
+    { ok: false, spoken: /there is no|no tab called/ });
+  // K4-K5: THE TWO RENDERINGS. One article, read two ways -- and the second read
+  // must wait for the page's fetch rather than speaking the first one again.
+  // The mode is a PAGE-level toggle and survives loading another article, so the
+  // starting rendering is stated rather than assumed -- the first cut of this row
+  // asked for the commentary while the page was already showing it, and read
+  // "failed" for being right.
+  await row(page, 'K3a start from the transcript, explicitly', 'set mode transcript',
+    { ok: true, spoken: /transcript/ });
+  await sleep(1200);
+  await row(page, 'K4 read the commentary -> turns to it first', 'read the commentary',
+    { ok: true, spoken: /turning to the commentary/ });
+  const barCom = await waitStatus(page, /reading the commentary of/, 12000);
+  record('K5 and then reads THAT rendering, naming it', /reading the commentary of .*\|\s*\d+ words/.test(barCom), barCom);
+  await runCmd(page, 'stop');
+  // Asking for what is already showing must not pretend to turn to it -- it
+  // reads, at once, and says which rendering it is reading.
+  await row(page, 'K5a asking again for what is already up just reads it', 'read the commentary',
+    { ok: true, spoken: /reading the commentary of/, notSpoken: /turning to/ });
+  await runCmd(page, 'stop');
+  await row(page, 'K6 read the transcript -> turns back', 'read the transcript',
+    { ok: true, spoken: /turning to the transcript/ });
+  const barTr = await waitStatus(page, /reading the transcript of/, 12000);
+  record('K6a and reads the transcript, not the commentary it had just read',
+    /reading the transcript of .*\|\s*\d+ words/.test(barTr), barTr);
+  await runCmd(page, 'stop');
+  // K7-K9: THE USER'S OWN HIGHLIGHT. Selected in the page exactly as a mouse
+  // drag would, then asked for by the ordinary word.
+  const selWords = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "var p = d.querySelector('#content-area p, #content-area div, #content-area');" +
+    "var r = d.createRange(); r.selectNodeContents(p);" +
+    "var s = d.defaultView.getSelection(); s.removeAllRanges(); s.addRange(r);" +
+    "return s.toString().replace(/\\s+/g, ' ').trim().split(' ').length;");
+  record('K7 a selection exists in the page, as a mouse drag would leave it', selWords > 5, selWords + ' words');
+  // DETECTING it, not just reading from it: the original complaint was that the
+  // guide could not perceive a highlight at all, and a `read` that uses one
+  // silently still leaves "what am I looking at?" answered wrongly.
+  await row(page, 'K7a what -> reports the highlight as part of what is on screen', 'what',
+    { ok: true, spoken: /you have \d+ words selected/ });
+  await row(page, 'K8 read -> the highlight wins, and is NAMED so it is never a silent swap', 'read',
+    { ok: true, spoken: /reading your selection\s*\|\s*\d+ words/ });
+  await runCmd(page, 'stop');
+  await row(page, 'K9 read all -> the way back to the whole thing', 'read all',
+    { ok: true, spoken: /reading .*\|\s*\d+ words/, notSpoken: /your selection/ });
+  await runCmd(page, 'stop');
+  // K10: THE READER RETURNS CONTROL BY ITSELF. Tom asked for this to be checked
+  // rather than assumed: reaching the end of an article is as much an end of
+  // reading as pressing Stop, and if it did not restore the mic the session
+  // would be deaf from then on.
+  const afterStop = await page.eval(
+    "var b = document.getElementById('ccl-stop');" +
+    "return { stopShown: !!(b && b.style.display !== 'none') };");
+  record('K10 stop puts the reader away -- the Stop control is hidden again',
+    afterStop.stopShown === false, JSON.stringify(afterStop));
+  // Now the half that matters more: reading to the END must put it away too,
+  // with nobody pressing anything. Driven through the page's own utterance
+  // handler rather than by waiting on real speech, because headless Chrome has
+  // no voices and would never finish. THE MIC HALF IS NOT OBSERVABLE HERE --
+  // setMic needs a live session -- so this asserts the reader's own teardown and
+  // the mic restore is checked by hand.
+  await runCmd(page, 'read all');
+  const auto = await page.eval(
+    "var u = window.CCLLastUtterance;" +
+    "var wired = !!(u && typeof u.onend === 'function' && typeof u.onerror === 'function');" +
+    "if (!wired) { return { wired: false }; }" +
+    // Force the reader open, then fire the page's OWN end-of-speech handler and
+    // watch it tear down. Forcing is necessary and is stated: headless Chrome
+    // has no voices, so a real utterance ends the instant it starts and the open
+    // state cannot be observed from out here.
+    "window.CCLForceReaderOpen();" +
+    "var mid = window.CCLReaderState();" +
+    "u.onend();" +
+    "return { wired: true, mid: mid, after: window.CCLReaderState() };");
+  record('K11 reaching the end of the article closes the reader by itself',
+    auto.wired && auto.mid && auto.mid.stopShown === true &&
+    auto.after && auto.after.stopShown === false && auto.after.speaking === false,
+    JSON.stringify(auto));
+
   // The collision, exercised where it actually bites: `sociogram` names a real
   // TAB and this tab's own sub-view. Standing here, the view wins -- 69c312d's
   // rule, now proven on a second tab that did not exist when it was written.

@@ -1253,7 +1253,130 @@
             "why": "with it off, a question click jumps to an article instead of expanding, so `open` would have two meanings"
           },
           "_note": "ONE FLAT ROSTER OF VISIBLE ROWS at all three levels, not three level-scoped rosters. `when` can only ask which sub-view is active, and nothing on this page says which LEVEL a user is walking -- there is no such state to read, because a sighted user is not at a level either, they are looking at an open tree. So `next` walks exactly the visual reading order and `open` on a part or a question expands it, which makes the roster GROW as you go. That growth is reported, because expanding a container and loading an article are the same verb on the same tree and would otherwise sound identical.\nNO `total` DECLARED, deliberately. #stats-line counts ARTICLES (2656 of 2747 available) while this roster counts ROWS; wiring it up would make `what` say '24 of 2747 entries', which is false in unit rather than merely imprecise. Speaking the availability line honestly is its own declaration -- curriculum tools increment 2.\n`.a-row.avail` only: 91 articles have no transcript yet and carry NO click handler at all, so offering them would be offering a door that does not open.",
-          "_reads_note": "Where the page PUTS what a row opens. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article. The row is a door, not the room; only the page knows which pane it renders into."
+          "_reads_note": "Where the page PUTS what a row opens. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article. The row is a door, not the room; only the page knows which pane it renders into.",
+          "read_variants": [
+            {
+              "say": [
+                "transcript",
+                "reading",
+                "summa"
+              ],
+              "knob": "mode",
+              "v": "transcript"
+            },
+            {
+              "say": [
+                "commentary",
+                "synthesis",
+                "contemporary commentary",
+                "contemporary synthesis"
+              ],
+              "knob": "mode",
+              "v": "synthesis"
+            }
+          ],
+          "_read_variants_note": "One article, two renderings. Asked for 'the commentary', a human guide turns to it and reads -- they do not explain that a toggle exists, and then wait to be asked again (Tom, 2026-07-27). A variant is NOT a new dimension: it writes the `mode` knob the tab already has, so `set mode synthesis` and `read the commentary` end in the same state. The read waits for the page's fetch, because reading straight after the click would speak the PREVIOUS rendering and announce it as the new one.",
+          "locate": {
+            "levels": [
+              {
+                "name": "part",
+                "say": [
+                  "part"
+                ],
+                "values": [
+                  {
+                    "v": "I",
+                    "aka": [
+                      "prima pars",
+                      "first part",
+                      "part one"
+                    ]
+                  },
+                  {
+                    "v": "I-II",
+                    "aka": [
+                      "prima secundae",
+                      "first of the second"
+                    ]
+                  },
+                  {
+                    "v": "II-II",
+                    "aka": [
+                      "secunda secundae",
+                      "second of the second"
+                    ]
+                  },
+                  {
+                    "v": "III",
+                    "aka": [
+                      "tertia pars",
+                      "third part"
+                    ]
+                  },
+                  {
+                    "v": "Suppl",
+                    "aka": [
+                      "supplementum",
+                      "supplement"
+                    ]
+                  }
+                ],
+                "context": {
+                  "sel": ".q-row.open, .q-row.live",
+                  "attr": "data-qkey",
+                  "re": "^(.+?)\\.Q"
+                }
+              },
+              {
+                "name": "question",
+                "say": [
+                  "question",
+                  "q"
+                ]
+              },
+              {
+                "name": "article",
+                "say": [
+                  "article",
+                  "a"
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "needs": [
+                  "part",
+                  "question",
+                  "article"
+                ],
+                "sel": ".a-row[data-ref=\"{part}.Q{question}.A{article}\"]",
+                "label": ".a-title-text",
+                "open_first": [
+                  ".part-section[data-part-code=\"{part}\"] .part-header",
+                  ".q-row[data-qkey=\"{part}.Q{question}\"]"
+                ]
+              },
+              {
+                "needs": [
+                  "part",
+                  "question"
+                ],
+                "sel": ".q-row[data-qkey=\"{part}.Q{question}\"]",
+                "label": ".q-title-text",
+                "open_first": [
+                  ".part-section[data-part-code=\"{part}\"] .part-header"
+                ]
+              },
+              {
+                "needs": [
+                  "part"
+                ],
+                "sel": ".part-section[data-part-code=\"{part}\"] .part-header",
+                "label": ".part-name"
+              }
+            ]
+          },
+          "_locate_note": "An ADDRESS, which is none of the things `go` already resolves -- not a tab, not a sub-view, not a link. Summa's refs are I.Q4.A2 and only Summa knows that, so the scheme is declared and the shell only knows how to read `locate`. A level left unsaid is taken from where the user already is (the part of the question currently open) and the guess is SAID, because a wrong part is a plausible-sounding wrong answer rather than an obvious failure. `open_first` opens closed ancestors, since a target inside a collapsed container is addressable but not reachable -- marking it silently would be pointing at a shut door."
         },
         {
           "kind": "none",

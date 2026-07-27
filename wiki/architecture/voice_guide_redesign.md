@@ -1178,6 +1178,68 @@ sub-view (the Sociogram tool pre-cut to Summa nodes via
 here, the view wins. Entering it lazily fetches ~28.7 MB — a real download, not a
 toggle.
 
+## S. The highlight, the two renderings, and the address (Tom, 2026-07-27)
+
+Three things a human guide holding the book does without being asked, found by
+Tom doing the ordinary thing: *"can't detect highlights or selections"*, *"read
+the transcript, please? or read the corresponding commentary?"*, and *"go to
+question 4, article 2, and read the transcript; then the commentary."* His
+standard for scope is the right one — **anything a human guide could do**.
+
+**The user's own highlight.** `getSelection` appeared **nowhere** in the shell.
+Not deferred, not excluded — never scoped. It belongs to the shell, not to a tab,
+for the same reason links do: every page has text. `read` now prefers a live
+selection, **names it** ("reading your selection | 3286 words") so it can never
+be a silent substitution, and offers `read all` back to the whole thing. A
+collapsed caret or a stray word is not a highlight, so there is a 25-character
+floor. `what` reports it too — that was the actual complaint, and a `read` that
+uses a selection silently still answers *"what am I looking at?"* wrongly.
+
+**Two renderings of one article.** Asked for "the commentary", a human guide
+turns to it and reads; they do not explain that a toggle exists and wait to be
+asked again. `read_variants` declares `{say, knob, v}` — not a new dimension, it
+writes the `mode` knob the tab already has, so `set mode synthesis` and `read the
+commentary` end in the same state and only one of them is a thing a person says.
+Two failure modes are answered honestly rather than papered over: the read
+**waits for the page's fetch** (reading straight after the click would speak the
+previous rendering and announce it as the new one), and when the page *refuses* —
+not every article has a commentary, and `switchMode` returns early — it says
+**"this one has no commentary"** rather than timing out and blaming the network
+for an editorial fact.
+
+**An address.** "Question 4, article 2" is none of the things `go` resolved: not
+a tab, not a sub-view, not a link. `locate` declares levels (with the words
+people say for them, and named values — Summa's parts are *Prima Pars*, not
+"part 1") and targets that turn a filled coordinate into a selector. Resolved
+after sub-views, so a coordinate can never shadow a place. A level left unsaid is
+taken from where the user already is and the guess is **said** ("taking that as
+part I"). `open_first` opens closed ancestors, because a target inside a
+collapsed container is addressable but not reachable — marking it silently would
+be pointing at a shut door.
+
+**The first run of the test written to catch the plausible-wrong-answer caught
+one.** `go to question 4000, article 9` found neither, fell through to the
+part-only target, and answered **"go Prima Pars", ok:true** — a real place, for a
+coordinate that does not exist. Fixed by keeping what the user **said** separate
+from what was **assumed**: a target that drops a named level is a different
+place, not a near miss. Now: *"there is no part I, question 4000, article 9
+here"*, which names the assumed level too, so the user knows which half to fix.
+
+**The reader puts itself away — now asserted, not assumed.** Tom asked for this
+to be checked. `u.onend`/`u.onerror` → `stopSpeaking()` → `setMic(true)` was
+correctly wired and had never been tested. Headless Chrome has **no voices**, so
+a real utterance ends the instant it starts and the mid-read state cannot be
+observed; the harness therefore forces the reader open and fires the page's own
+end-of-speech handler. **The mic half remains unobservable** (`setMic` needs a
+live session) and is checked by hand — stated here rather than covered by a row
+that asserts something adjacent.
+
+Two more test premises were false rather than the code being wrong: Phase J left
+the page in synthesis mode, so `read the commentary` read at once and the row
+"failed" for being right. The starting rendering is now stated explicitly, and
+the already-showing path got its own row — asking for what is up must not pretend
+to turn to it.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not
