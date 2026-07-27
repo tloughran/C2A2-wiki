@@ -1395,6 +1395,20 @@ async function main() {
   await runCmd(page, 'stop');
   // Asking for what is already showing must not pretend to turn to it -- it
   // reads, at once, and says which rendering it is reading.
+  // "Take me to the corresponding section of the contemporary synthesis" came
+  // back as "there is no tab called Contemporary Synthesis" -- true, useless,
+  // and it sent Tom away from something already in front of him. A rendering is
+  // not a place in the tab row, but going to one is exactly what it feels like.
+  await runCmd(page, 'set mode transcript');
+  await sleep(1000);
+  await row(page, 'K5b take me to the contemporary synthesis -> turns to it, does not deny it exists',
+    'go to the corresponding section of the contemporary synthesis',
+    { ok: true, spoken: /^go commentary/, notSpoken: /no tab called/ });
+  await sleep(1200);
+  const mode = await page.eval(
+    "var d = document.getElementById('content-frame').contentDocument;" +
+    "return d.getElementById('btn-synthesis').classList.contains('on') ? 'synthesis' : 'transcript';");
+  record('K5c and the page really is showing it', mode === 'synthesis', mode);
   await row(page, 'K5a asking again for what is already up just reads it', 'read the commentary',
     { ok: true, spoken: /reading the commentary of/, notSpoken: /turning to/ });
   await runCmd(page, 'stop');

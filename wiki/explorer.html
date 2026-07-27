@@ -1728,6 +1728,7 @@ var VoiceGuide = (function() {
       "READING THE RESULT. run_command returns { did } on success -- say it back briefly. On error 'ambiguous' it returns candidates -- name a couple and ask which they mean. On 'unresolved' say you could not find that, and offer the nearest thing you CAN do. On 'unsupported_here' say it is not available on this view and offer what the tab is for. When the result itself carries a 'taking X as Y' assumption, pass that on -- the user should always be able to hear when you guessed.",
       "COLOR IS NOT A RELIABLE IDENTIFIER -- never resolve a color to a category. Several categories share near-identical colors (Friston/Architecture are the closest pair; also Hoffman/Hawkins, Kastrup/Agents, Stump/Master, McGilchrist/Loughran). If the user names a color, do NOT say which category it is -- say which categories share it and ask which one they mean.",
       "WHILE THE PAGE IS READING, YOUR MICROPHONE IS MUTED AND YOU CANNOT HEAR ANYTHING -- not the article, not the user. This is deliberate: it keeps you from acting on wiki prose read AT you, and the article is long. The user interrupts with the on-screen 'Stop reading' button, NOT by talking to you, so never tell them to say 'stop' or ask them to tell you when to continue -- they cannot reach you until they press it. Say your one handover line and then expect silence until they are back.",
+      "A RENDERING IS NOT A TAB. Some tabs hold ONE thing readable more than one way -- the Summa has a transcript and a contemporary commentary of the same article -- and those are not places in the tab row. When the user says \"take me to the contemporary synthesis\" or \"the corresponding commentary\", that is `go <rendering>` or `read the <rendering>`, and it applies to whatever is already open. Do not answer that there is no such tab: it is true, useless, and sends them away from something that is right in front of them (Tom, 2026-07-27). `what` lists the renderings a tab has.",
       "A LOCATION IS A `go`, NEVER A `find`. When the user names a place in a structured text -- \"Prima Pars, Question 18, Article 1\", \"question 4 article 2\", \"the Supplementum\" -- that is an ADDRESS and it belongs to `go`, which resolves coordinates on any tab that declares them. `find` is a text SEARCH of the graph and is not even available on most tabs, so choosing it turns a place the user can reach into \"that kind of search is not supported here\" (Tom, 2026-07-27, standing in the Summa explorer and asking for an article that exists). Pass what they said through to `go` as they said it; the tab knows its own numbering.",
       "THE USER'S OWN HIGHLIGHT IS SOMETHING YOU CAN SEE. When they have text selected on the page, `what` reports it (\"you have N words selected\") and a bare `read` reads THAT rather than the whole article. So when they say anything about what they highlighted, selected, marked or 'this bit here' -- READ IT. Do not say you cannot see their selection; do not reach for `find`, which is a text SEARCH of the graph and a different thing entirely. `read all` is how they get the whole article back. This was invisible to you until 2026-07-27 and the honest-sounding refusal it produced is exactly what it is here to stop.",
       "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
@@ -3583,6 +3584,25 @@ var VoiceGuide = (function() {
     }
     return null;
   }
+  // The same declaration, reached by the other verb. `read the commentary` reads
+  // it; `go to the commentary` turns to it and stops there -- which is what "take
+  // me to" means and is a different thing from being read to.
+  function matchRendering(term) {
+    var t = (term || '').toLowerCase().replace(/\b(the|corresponding|section|of|to|its|a)\b/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+    return readVariant(t) || readVariant((term || '').toLowerCase().trim());
+  }
+  function execRendering(rv) {
+    var bind = knobBind(rv.knob);
+    if (!bind) { return show('this view has no ' + rv.knob + ' control', 'err'); }
+    if (readKnob(bind) === rv.v) { return show('already showing the ' + rv.say[0], 'ok'); }
+    try { writeKnob(bind, rv.v); }
+    catch (e) { return show('could not turn to the ' + rv.say[0] + ': ' + (e && e.message || e), 'err'); }
+    // The page may refuse -- not every article has one -- and the knob is the
+    // only honest witness to whether the turn happened.
+    if (readKnob(bind) !== rv.v) { return show('this one has no ' + rv.say[0], 'err'); }
+    return show('go ' + rv.say[0] + '  |  say "read" for it', 'ok');
+  }
   // The page FETCHES when the mode changes, so reading straight after the click
   // would read whatever was on screen a moment ago -- the previous rendering,
   // confidently announced as the new one. Wait for the page's own signals (its
@@ -4001,6 +4021,16 @@ var VoiceGuide = (function() {
           // coordinate can never shadow a place.
           var loc = matchLocate(p.term);
           if (loc) { return execLocate(loc); }
+          // A NAMED RENDERING IS SOMEWHERE TO GO. "Take me to the corresponding
+          // section of the contemporary synthesis" got "there is no tab called
+          // Contemporary Synthesis" (Tom, 2026-07-27) -- true, and useless. The
+          // synthesis is not a tab or a view; it is the other rendering of the
+          // article already open, which the tab declares as a knob. The user
+          // said `go` because going is what it FEELS like: the same passage,
+          // read the other way. Same principle as the coordinate under `find`:
+          // the words are the user's, the verb is the guess.
+          var rend = matchRendering(p.term);
+          if (rend) { return execRendering(rend); }
           // THEN the page's own links, for the same reason and in the same
           // place: they are live and per-page, so the engine can only ever hand
           // their names back unresolved. Resolving them LAST means a link can
@@ -4020,8 +4050,14 @@ var VoiceGuide = (function() {
             return show('Ambiguous "' + p.term + '": ' + hits.slice(0, 4).map(function (l) { return l.label; }).join(' | '), 'err');
           }
           var vs = viewNames(), ls = followableLinks();
+          // Renderings belong in this list too. Saying "the sections here are
+          // contents and sociogram" while the tab also holds a transcript and a
+          // commentary is a true sentence that leaves out the thing the user
+          // asked for -- which is how a correct answer still sends someone away.
+          var sp0 = itemSpec(), rvs = (sp0 && sp0.read_variants) || [];
           return show('no tab called "' + p.term + '". Here: ' + allTabButtons().map(btnName).slice(0, 8).join(', ') +
                       (vs.length ? ('. On this view: ' + vs.join(', ')) : '') +
+                      (rvs.length ? ('. Ways to read what is open: ' + rvs.map(function (r) { return r.say[0]; }).join(', ')) : '') +
                       (ls.length ? ('. Links on this page: ' + ls.slice(0, 5).map(function (l) { return l.label; }).join(', ')) : ''), 'err');
         }
         return show('Could not find "' + p.term + '".', 'err');
