@@ -1319,6 +1319,16 @@ guide will refuse, fluently and plausibly, for anything it was not told about.
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not
   available through this page's TTS providers (browser / Kokoro / OpenAI) —
   pick the nearest and audition.
+- **READER QUALITY IS MARGINAL** (Tom, 2026-07-27, after signing off on the
+  reading fixes: *"the quality of the in-house reader is marginal; we should
+  explore better options down the road"*). This is about the VOICE, not the
+  script — what it reads is now right (one title, then the text, no timestamps
+  or provenance), and it is the browser's own `speechSynthesis` doing the
+  speaking. Worth keeping distinct from the item above: that one is which voice
+  the GUIDE uses, this one is which engine the PAGE reads with. The two-voice
+  design means they can be answered separately, and the reader is the one people
+  spend minutes listening to. Not scheduled; explore when the reading arc is
+  otherwise done.
 - **§16.4 mixed-authorship undo**: the marquee makes this concrete rather than
   theoretical, since it is a large deliberate mouse edit of a voice-written
   dimension.
