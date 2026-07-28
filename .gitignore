@@ -64,6 +64,9 @@ handoffs/
 # Scripts live in scripts/ and ARE tracked; only the generated findings/state/briefs are ignored.
 janitor/
 reviewer-review/
+# Voice-guide FAQ agent — state.json + report.md are generated; the FAQ itself
+# (wiki/voice_guide_faq.json) IS tracked/published. See CLAUDE.md.
+voice_faq/
 wiki/review/.stale_review_pages/
 
 # Logs
@@ -137,3 +140,6 @@ hep-det/
 __pycache__/
 *.pyc
 .writetest_*
+
+# Increment-0 spike: auto-mints a realtime session on load. LOCAL ONLY -- never commit or publish.
+wiki/spike.html

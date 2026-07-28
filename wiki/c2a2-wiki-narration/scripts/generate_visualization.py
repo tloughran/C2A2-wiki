@@ -3635,6 +3635,150 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(fitAll, 800);
   setTimeout(fitAll, 2500);
 });
+
+// ── STATE BUS (Sociogram tab side) ──────────────────────────────────────────
+// Answers the shell guide's describe_view query with the live view descriptor.
+// Contract: wiki/architecture/voice_guide_state_bus.md. Speaks category NAMES,
+// never colours (colour is decorative here -- many categories share one hue, so
+// it is never a reliable identifier). All state is read live at query time.
+(function() {
+  function groupMeta() {
+    // group key -> {label, color, role}; built from the embedded filter groups.
+    var m = {};
+    function add(list, role) {
+      if (!list) return;
+      list.forEach(function(g) { m[g.key] = { label: g.label || g.key, color: g.color || '', role: role }; });
+    }
+    if (typeof TRADITION_GROUPS !== 'undefined') add(TRADITION_GROUPS, 'tradition');
+    if (typeof STRUCTURE_GROUPS !== 'undefined') add(STRUCTURE_GROUPS, 'structure');
+    return m;
+  }
+  function labelFor(group, meta) { return (meta[group] && meta[group].label) || group || 'uncategorized'; }
+  function panelOpen(id) {
+    var el = document.getElementById(id);
+    return !!(el && el.style.display && el.style.display !== 'none');
+  }
+  function nodeBrief(n, meta) {
+    if (!n) return null;
+    return { id: n.id, label: n.label || n.id, category: labelFor(n.group, meta) };
+  }
+  // node_selected: right panel only. edge_selected: source in left page + target in right.
+  function selectedState(meta) {
+    var rightOpen = panelOpen('right-panel');
+    var leftOpen  = panelOpen('left-page-viewer');
+    var haveL = (typeof currentLeftNode !== 'undefined') && currentLeftNode;
+    var haveR = (typeof currentRightNode !== 'undefined') && currentRightNode;
+    if (leftOpen && rightOpen && haveL && haveR) {
+      return { kind: 'edge', endpoints: [ nodeBrief(currentLeftNode, meta), nodeBrief(currentRightNode, meta) ] };
+    }
+    if (rightOpen && haveR) { var b = nodeBrief(currentRightNode, meta); b.kind = 'node'; return b; }
+    return null;
+  }
+  function activeFilters() {
+    var trads = [], structs = [], anyHidden = false;
+    function scan(list, into) {
+      if (!list) return;
+      list.forEach(function(g) {
+        var on = (typeof groupVisibility === 'undefined') || groupVisibility[g.key] !== false;
+        if (on) into.push(g.label || g.key); else anyHidden = true;
+      });
+    }
+    scan(typeof TRADITION_GROUPS !== 'undefined' ? TRADITION_GROUPS : null, trads);
+    scan(typeof STRUCTURE_GROUPS !== 'undefined' ? STRUCTURE_GROUPS : null, structs);
+    return { traditions: trads, structure: structs, anyHidden: anyHidden };
+  }
+  function dominantAndLegend(meta) {
+    var set = (typeof activeNodes !== 'undefined' && activeNodes && activeNodes.length)
+              ? activeNodes : (typeof NODES !== 'undefined' ? NODES : []);
+    var total = set.length || 1, tally = {};
+    for (var i = 0; i < set.length; i++) { var g = set[i].group || ''; tally[g] = (tally[g] || 0) + 1; }
+    var rows = [];
+    Object.keys(tally).forEach(function(g) {
+      rows.push({ label: labelFor(g, meta), color: (meta[g] && meta[g].color) || '',
+                  role: (meta[g] && meta[g].role) || 'other',
+                  count: tally[g], share: Math.round((tally[g] / total) * 100) / 100 });
+    });
+    rows.sort(function(a, b) { return b.count - a.count; });
+    return {
+      dominant: rows.slice(0, 5).map(function(r) { return { label: r.label, share: r.share, color: r.color }; }),
+      legend:   rows.map(function(r) { return { label: r.label, color: r.color, role: r.role }; })
+    };
+  }
+  function buildDescriptor() {
+    var meta = groupMeta();
+    var dl = dominantAndLegend(meta);
+    var vNodes = (typeof activeNodes !== 'undefined' && activeNodes) ? activeNodes.length
+               : (typeof NODES !== 'undefined' ? NODES.length : 0);
+    var tNodes = (typeof nodeTotalForScope === 'function') ? nodeTotalForScope() : vNodes;
+    var tEdges = (typeof _lastEdgeTotal !== 'undefined' && _lastEdgeTotal) ? _lastEdgeTotal
+               : ((typeof edgeTotalForScope === 'function') ? edgeTotalForScope() : null);
+    var pEdges = (typeof _lastEdgePass !== 'undefined') ? _lastEdgePass : null;
+    return {
+      tab: 'wiki_narration.html', title: 'Sociogram', view: 'graph', supported: true,
+      state: {
+        selected: selectedState(meta),
+        filters: activeFilters(),
+        counts: { visibleNodes: vNodes, totalNodes: tNodes, passingEdges: pEdges, totalEdges: tEdges },
+        legend: dl.legend,
+        dominant: dl.dominant
+      },
+      capabilities: ['focus', 'isolate', 'search', 'select_node']
+    };
+  }
+  var _answered = false;   // has the shell guide asked (describe_view) at least once?
+  window.addEventListener('message', function(e) {
+    var d = e.data;
+    if (!d || d.source !== 'c2a2-voice' || d.type !== 'describe_view') return;
+    _answered = true;
+    var payload;
+    try { payload = buildDescriptor(); }
+    catch (err) { payload = { tab: 'wiki_narration.html', title: 'Sociogram', supported: false, error: String(err) }; }
+    try {
+      (e.source || window.parent).postMessage(
+        { source: 'c2a2-tab', type: 'view_descriptor', requestId: d.requestId, payload: payload }, '*');
+    } catch (e2) {}
+  });
+
+  // ── view_changed emitter ────────────────────────────────────────────────
+  // describe_view is pull-on-demand, but a node select or filter toggle WITHOUT
+  // a tab re-nav can leave the guide's cached view stale. We poll a cheap
+  // SEMANTIC fingerprint (selection + which filters are off + visible-node count
+  // only -- never layout, which changes every force tick) and push view_changed
+  // when it changes, so the shell can invalidate the live session. Silent until
+  // the guide has asked at least once (_answered) AND only inside the shell
+  // iframe, so voice-off costs nothing. The shell debounces + gates further.
+  (function() {
+    if (window.parent === window) return;   // only meaningful embedded in the shell
+    var last = null;
+    function fingerprint() {
+      var sel = '';
+      try {
+        if ((typeof currentLeftNode !== 'undefined') && currentLeftNode) sel += 'L:' + currentLeftNode.id + ';';
+        if ((typeof currentRightNode !== 'undefined') && currentRightNode) sel += 'R:' + currentRightNode.id + ';';
+      } catch (e) {}
+      var filt = '';
+      try {
+        if ((typeof groupVisibility !== 'undefined') && groupVisibility) {
+          var ks = Object.keys(groupVisibility).sort();
+          for (var i = 0; i < ks.length; i++) if (groupVisibility[ks[i]] === false) filt += ks[i] + ',';
+        }
+      } catch (e) {}
+      var vn = ((typeof activeNodes !== 'undefined') && activeNodes) ? activeNodes.length : -1;
+      return sel + '|' + filt + '|' + vn;
+    }
+    setInterval(function() {
+      var fp;
+      try { fp = fingerprint(); } catch (e) { return; }
+      if (fp === last) return;
+      var first = (last === null);
+      last = fp;
+      if (first || !_answered) return;   // skip the initial state and pre-ask changes
+      try {
+        window.parent.postMessage({ source: 'c2a2-tab', type: 'view_changed', payload: buildDescriptor() }, '*');
+      } catch (e) {}
+    }, 800);
+  })();
+})();
 </script>
 </body>
 </html>"""
