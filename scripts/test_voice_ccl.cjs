@@ -871,6 +871,26 @@ check('rotate: turn and orbit resolve to it deterministically, not by model luck
 // do exactly that), so the word maps to the thing that exists rather than
 // growing a second road to it. Asserted at the PARSE layer, where the rewrite
 // happens, so the row does not depend on any particular node resolving.
+// spin -- the only verb that leaves something running.
+check('spin: bare means left, and the three forms are the only ones', function () {
+  assert.strictEqual(planPrs('spin').dir, 'left');
+  for (const dir of ['left', 'right', 'off']) {
+    const p = planPrs('spin ' + dir);
+    assert.strictEqual(p.ok, true, 'spin ' + dir + ' did not plan');
+    assert.strictEqual(p.kind, 'camera');
+    assert.strictEqual(p.dir, dir);
+  }
+});
+// `opt` never checked its enum, because no verb using it had one until now --
+// so `spin banana` parsed clean and would have reached the shell as a
+// direction, which is how a typo becomes a silent no-op.
+check('spin: an optional argument still has to be one of the allowed ones', function () {
+  assert.strictEqual(CCL.parse('spin banana', grammar).error, 'bad_enum');
+});
+check('opt: verbs WITHOUT an enum are untouched by that check', function () {
+  assert.strictEqual(CCL.parse('read details', grammar).args[0], 'details');
+  assert.strictEqual(CCL.parse('all tags', grammar).args[0], 'tags');
+});
 check('center: the word means open, because opening already centres', function () {
   for (const say of ['center something', 'centre something']) {
     assert.strictEqual(CCL.parse(say, grammar).verb, 'open', say);

@@ -257,6 +257,21 @@
       ]
     },
     {
+      "verb": "spin",
+      "dim": "camera",
+      "op": "set",
+      "args": "opt",
+      "kind": "value",
+      "inverse": "@journal",
+      "const": "left",
+      "enum": [
+        "left",
+        "right",
+        "off"
+      ],
+      "_note": "The one camera verb that leaves something RUNNING. Bare `spin` turns left, which is the direction a turntable goes; `spin off` stops it, and so does `stop` -- see the shell. Not journalled: a camera is the canonical continuous field (section 14.4 bars hashing them, not reaching them), and a spin has no single position to step back to."
+    },
+    {
       "verb": "read",
       "dim": "playback",
       "op": "set",

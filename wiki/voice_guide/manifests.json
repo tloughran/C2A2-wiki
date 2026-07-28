@@ -1516,7 +1516,8 @@
         "undo",
         "redo",
         "reset",
-        "restore"
+        "restore",
+        "spin"
       ],
       "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. The FILTER dimension is declared too (see `filters`), so this tab cuts data by voice on all three of its axes. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
       "knobs": [
@@ -1741,9 +1742,10 @@
           "status": "covered",
           "by": [
             "rotate",
+            "spin",
             "fit"
           ],
-          "note": "rotate left|right swings round the vertical axis, up|down raises and lowers the eye, in the page's own clamped range."
+          "note": "rotate left|right swings round the vertical axis, up|down raises and lowers the eye, in the page's own clamped range. `spin left|right` is the same turn left running -- the one command here that does not end when the sentence does, which is why it has its own off switch and why `stop` halts it too."
         },
         {
           "id": "wheel_zoom",

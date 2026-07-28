@@ -1957,7 +1957,78 @@ async function main() {
   await row(page, 'L31 a term that matches no axis is named, not quietly ignored',
     'only quantum chromodynamics', { ok: false, spoken: /could not find "quantum chromodynamics"/i });
   await runCmd(page, 'all');
+
+  // ---- L32-L38: SPIN, the one verb that leaves something running -----------
+  //
+  // Every other command in this language is over when the sentence is. A spin
+  // is still happening, which raises three questions no other verb has had to
+  // answer -- what stops it, what happens when you leave, and whether anyone is
+  // told it is running. A leak here is worse than a wrong answer: a timer
+  // turning a view nobody is looking at is invisible from inside the guide.
+  await row(page, 'L32 spin -> bare means left, and it says how to end it', 'spin',
+    { ok: true, spoken: /spinning left -- say "stop"/ });
+  const spin0 = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  await sleep(700);
+  const spin1 = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  record('L32a the view really is turning, on its own, between two commands',
+    Number(spin1) > Number(spin0), JSON.stringify([spin0, spin1]));
+  // A MOVING VIEW IS STATE. `what` is the only way anyone learns state here, so
+  // a guide asked "where are we" while this runs must not describe a still
+  // picture of something that is turning.
+  await row(page, 'L32b what says the view is moving', 'what',
+    { ok: true, spoken: /the view is spinning left/ });
+  await row(page, 'L33 spin off -> the precise form', 'spin off',
+    { ok: true, spoken: /stopped spinning/ });
+  const held0 = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  await sleep(500);
+  const held1 = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  record('L33a and it really stopped -- no timer left turning it',
+    Number(held0) === Number(held1), JSON.stringify([held0, held1]));
+  await row(page, 'L33b spin off with nothing spinning says so rather than claiming a stop',
+    'spin off', { ok: false, spoken: /nothing is spinning/ });
+  // `stop` stops it too, and NAMES what it stopped. The standing rule is that
+  // `stop` must not come to mean two things -- that rule is against SILENT
+  // ambiguity, and naming the outcome is the opposite of silent. A user
+  // watching a view turn while a paragraph is read says "stop" once, meaning
+  // both; making them learn `spin off` for the second would be a vocabulary test.
+  await runCmd(page, 'spin right');
+  await row(page, 'L34 stop halts the spin as well, and says which', 'stop',
+    { ok: true, spoken: /stopped spinning/ });
+  const afterStopSpin = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  await sleep(400);
+  record('L34a and nothing is still turning afterwards',
+    Number(await page.eval(IFRAME_DOC + "return w.cameraTheta;")) === Number(afterStopSpin),
+    String(afterStopSpin));
+  await runCmd(page, 'pick first');
+  await runCmd(page, 'spin left');
+  await row(page, 'L35 reading and spinning at once -> one stop, both named, no guessing',
+    'read', { ok: true, spoken: /reading /});
+  // THE READER IS FORCED OPEN, and that is stated rather than hidden: headless
+  // Chrome has no voices, so a real utterance ends the instant it starts and
+  // the both-are-running case cannot otherwise be observed from out here. Same
+  // device, and the same reason, as K11.
+  await page.eval("window.CCLForceReaderOpen(); return true;");
+  await row(page, 'L35a one stop halts both, and names both', 'stop',
+    { ok: true, spoken: /stopped reading and spinning/ });
+  // `stop` has been the one unconditionally safe word since the reader shipped.
+  // Saying it twice must not start punishing the user for it.
+  await row(page, 'L35b saying it again is still safe, and still says stopped',
+    'stop', { ok: true, spoken: /^stopped$/ });
+  // LEAVING THE TAB STOPS IT. A spin left running in a hidden iframe is a timer
+  // nobody can see, writing to a window nobody is looking at -- and on this tab
+  // it would go on turning a 1359-mesh scene for the rest of the session.
   const shotL = await page.screenshot(path.join(SHOTS, 'L-connectome.png'));
+  await runCmd(page, 'spin left');
+  await activateTab(page, SOCIOGRAM_SRC);
+  await tabReady(page, 'sociogram');
+  await sleep(900);
+  const leaked = await page.eval(
+    "var r = window.CCLRun('what');" +
+    "return { spoken: r.spoken, mentionsSpin: /spinning/.test(r.spoken || '') };");
+  record('L36 leaving the tab stopped the spin -- no timer survives the switch',
+    leaked.mentionsSpin === false, JSON.stringify(leaked).slice(0, 160));
+  await row(page, 'L36a and the flat tab refuses spin in words, as it refuses rotate',
+    'spin left', { ok: false, spoken: /not available on this view\. supported: /i });
 
   // Back to the Sociogram once more: the data adapter added a road beside
   // revealedNodes rather than moving it, and a tab that declares no `activate`

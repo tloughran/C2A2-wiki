@@ -1793,7 +1793,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), spin left|right|off (THE SAME TURN, LEFT RUNNING -- a slow turntable, about one revolution every 22 seconds. It is the only command that is still happening after you have finished speaking, so SAY THAT IT IS RUNNING and that "stop" ends it. Offer it when someone wants to take the shape of a 3D view in without steering, or asks to "look around" it; `stop` halts it and names what it halted, and leaving the tab stops it too), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2520,7 +2520,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=67271d556f"></script>
+<script src="lib/c2a2-commandline.js?v=d8d320885c"></script>
 <script>
 (function () {
   'use strict';
@@ -4055,7 +4055,23 @@ var VoiceGuide = (function() {
   }
   function execPlayback(p) {
     var w = ifWin();
-    if (p.action === 'stop') { stopSpeaking(); return show('stopped', 'ok'); }
+    // STOP MEANS STOP WHAT IS MOVING, and says which. The standing rule is that
+    // `stop` must not come to mean two things (agent map, 2026-07-26) -- but
+    // that rule is against SILENT ambiguity, and naming what was halted is the
+    // opposite of silent. A user watching a view turn while a paragraph is read
+    // to them says "stop" once and means both; making them learn `spin off` to
+    // get the second one would be a vocabulary test, not a guide.
+    if (p.action === 'stop') {
+      var wasReading = speaking, wasSpinning = spinning();
+      stopSpeaking();
+      spinStop();
+      // Always "stopped", never "nothing was running": `stop` has been the one
+      // unconditionally safe word in this language since the reader shipped,
+      // and making its answer depend on state would punish the user for saying
+      // it twice. What gets ADDED is only ever what was actually halted.
+      return show('stopped' + (wasReading && wasSpinning ? ' reading and spinning'
+                : (wasSpinning ? ' spinning' : '')), 'ok');
+    }
     // A DECLARED VARIANT names a different rendering of the SAME thing -- Summa's
     // transcript and its contemporary commentary are one article read two ways,
     // and a human guide asked for "the commentary" would turn to it and read,
@@ -4701,6 +4717,53 @@ var VoiceGuide = (function() {
   // clamp the honest answer is that nothing moved, which is the same rule the
   // graph's zoom already followed.
   function cameraSpec() { var am = activeManifest(); return (am && am.m.camera) || null; }
+  // ---- SPIN: the one verb that leaves something running --------------------
+  //
+  // Every other command in this language does its thing and is over. A spin is
+  // still happening after the sentence ends, which raises three questions no
+  // other verb has had to answer, and each is settled here rather than left to
+  // discover:
+  //
+  //   1. WHAT STOPS IT. `spin off` is the precise form, and `stop` stops it too.
+  //      The standing rule (agent map, 2026-07-26) is that `stop` must not come
+  //      to mean two things -- but that rule is about SILENT ambiguity, and the
+  //      answer here is not silent: `stop` halts whatever is actually moving and
+  //      NAMES what it halted, so "stopped reading and spinning" is one
+  //      unambiguous outcome rather than a guess between two.
+  //   2. WHAT HAPPENS WHEN YOU LEAVE. It stops. A spin left running in a hidden
+  //      iframe is a timer nobody can see, turning a view nobody is looking at;
+  //      the tick checks it is still on the same window and stops itself if not.
+  //   3. WHETHER IT IS JOURNALLED. No. A camera is the canonical continuous
+  //      field (section 14.4), and a spin has no single position to undo to.
+  //
+  // rAF is deliberately NOT used: it belongs to the iframe's own render loop,
+  // and driving from the shell on an interval means the spin cannot outlive the
+  // shell's knowledge of it. 24 steps a second at 0.012 rad is about one full
+  // turn every 22 seconds -- a look-around, not a fairground ride.
+  var spinTimer = null, spinDir = null, spinWin = null;
+  var SPIN_MS = 42, SPIN_STEP = 0.012;
+  function spinStop() {
+    if (spinTimer) { clearInterval(spinTimer); }
+    spinTimer = null; spinDir = null; spinWin = null;
+  }
+  function spinning() { return !!spinTimer; }
+  function spinStart(dir, spec) {
+    spinStop();
+    var w = ifWin();
+    if (!w || !spec || !spec.orbit) { return false; }
+    spinDir = dir; spinWin = w;
+    spinTimer = setInterval(function () {
+      // Still the same document? A tab switch replaces the window, and a spin
+      // that kept writing to the old one would be invisible and immortal.
+      if (ifWin() !== spinWin) { spinStop(); return; }
+      try {
+        pathSet(spinWin, spec.orbit.theta,
+          Number(pathGet(spinWin, spec.orbit.theta)) + (dir === 'left' ? SPIN_STEP : -SPIN_STEP));
+        if (spec.apply) { call(spec.apply); }
+      } catch (e) { spinStop(); }
+    }, SPIN_MS);
+    return true;
+  }
   function execCameraDeclared(spec, p) {
     var w = ifWin();
     if (!w) { return show('this view has no camera', 'err'); }
@@ -4723,6 +4786,16 @@ var VoiceGuide = (function() {
       var r2 = Number(pathGet(w, dz.path));
       return show(r2 === r0 ? ('zoom ' + p.dir + ' -- already as far ' + (p.dir === 'in' ? 'in' : 'out') + ' as this view goes')
                             : ('zoom ' + p.dir), r2 === r0 ? 'err' : 'ok');
+    }
+    if (p.action === 'spin') {
+      if (!spec.orbit) { return show('this view does not turn', 'err'); }
+      if (p.dir === 'off') {
+        if (!spinning()) { return show('nothing is spinning', 'err'); }
+        spinStop();
+        return show('stopped spinning', 'ok');
+      }
+      if (!spinStart(p.dir, spec)) { return show('this view does not turn', 'err'); }
+      return show('spinning ' + p.dir + ' -- say "stop" when you have seen enough', 'ok');
     }
     if (p.action === 'rotate') {
       var ob = spec.orbit;
@@ -4934,6 +5007,10 @@ var VoiceGuide = (function() {
     // filters and items were alternatives; here they are the same view seen two
     // ways, and dropping the count to make room for thirty-four group names
     // took away the one thing a listener was actually asking for.
+    // A MOVING VIEW IS STATE, and `what` is the only way anyone here learns the
+    // state. Left unsaid, a guide asked "where are we?" would describe a still
+    // picture of something that is turning.
+    if (spinning()) { itemNote += '  |  the view is spinning ' + spinDir + ' -- say "stop" to hold it'; }
     var fSum = filterSummary();
     var filterNote = fSum ? ('  |  ' + fSum + itemNote)
                           : (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote);

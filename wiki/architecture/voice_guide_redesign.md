@@ -1589,6 +1589,59 @@ deferred / 1 excluded. Gate: **157 engine + 290 shell green**.
 (`#graph-status`), the `cut` dim, and `find`'s class-stamp read. Community
 Explorer's eight type filters are the next customer for what this section built.
 
+## W. The verb that does not end (Tom, 2026-07-27: *"wish I had added 'spin continuously'"*)
+
+Mechanically trivial — an interval stepping `cameraTheta`. What made it worth a
+section is that **it is the first command in this language that is still
+happening after the sentence is over**, and that raises three questions no other
+verb has had to answer. Each is settled in code rather than left to be
+discovered:
+
+**1. What stops it.** `spin off` is the precise form, and **`stop` stops it too.**
+The standing rule from the agent map (§O, 2026-07-26) is that `stop` must not
+come to mean two things — but that rule is against *silent* ambiguity, and the
+answer here is not silent: `stop` halts whatever is moving and NAMES it, so
+*"stopped reading and spinning"* is one unambiguous outcome rather than a guess
+between two. A user watching a view turn while a paragraph is read to them says
+"stop" once and means both; making them learn `spin off` for the second would be
+a vocabulary test, not a guide.
+
+`stop` still answers **"stopped"** when nothing was running. A first pass had it
+say *"nothing was running"*, which is more informative and broke three green
+rows for a good reason: `stop` has been the one unconditionally safe word in this
+language since the reader shipped, and making its answer depend on state punishes
+saying it twice. Only what was actually halted gets *added* to the message.
+
+**2. What happens when you leave.** It stops. A spin left running in a hidden
+iframe is a timer nobody can see, turning a 1359-mesh scene nobody is looking at
+for the rest of the session. The tick checks it is still on the same window and
+stops itself if not — driven from the SHELL on an interval rather than the
+iframe's own rAF, precisely so the spin cannot outlive the shell's knowledge of
+it. L36 is the row that would catch a leak.
+
+**3. Whether anyone is told.** `what` says it. A moving view is state, and `what`
+is the only way state is learned here — a guide asked "where are we?" while this
+runs must not describe a still picture of something that is turning.
+
+Not journalled: a camera is the canonical continuous field (§14.4), and a spin
+has no single position to step back to. Rate is 0.012 rad every 42 ms — about one
+revolution every 22 seconds, a look-around rather than a fairground ride.
+
+### A latent hole the new verb exposed
+
+`spin` is the first verb to use `args: "opt"` **with an enum**, and the parser's
+`opt` branch never checked one — `one` always had. So `spin banana` parsed clean
+and would have arrived at the shell as a direction: a typo becoming a silent
+no-op, which is this design's least favourite failure. `opt` now checks, and the
+enum-less users of it (`all`, `none`, `read`, `summarize`) are unaffected and
+have a row saying so.
+
+Advertised as what it is for: taking in the shape of a 3D view without steering,
+and the answer to *"look around it"* — with the instruction to say out loud that
+it is running and that "stop" ends it.
+
+Gate: **160 engine + 303 shell green**.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

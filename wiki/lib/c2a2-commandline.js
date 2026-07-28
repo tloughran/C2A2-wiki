@@ -197,6 +197,14 @@
           return ok(spec, dflt, echo);
         }
         if (bare.indexOf(' ') !== -1) { return err('too_many_args', echo, { verb: verb }); }
+        // An OPTIONAL argument still has to be one of the allowed ones where the
+        // verb declares a set. `one` has always checked this; `opt` never did,
+        // because no verb using it carried an enum until `spin left|right|off`
+        // -- and without the check `spin banana` parsed clean and reached the
+        // shell as a direction, which is how a typo becomes a silent no-op.
+        if (spec.enum && spec.enum.indexOf(bare) === -1) {
+          return err('bad_enum', echo, { verb: verb, allowed: spec.enum });
+        }
         return ok(spec, [bare], echo);
       }
 
@@ -829,6 +837,13 @@
       // caps keep it off every tab that has nothing to turn.
       case 'rotate':
         return { ok: true, kind: 'camera', action: 'rotate', dir: op.args[0], journal: { dim: 'camera' } };
+
+      // spin left|right|off -- rotate that does not stop. Every other verb in
+      // this language does one thing and is over; this one leaves the view
+      // MOVING, which is a different kind of state and the reason it is the
+      // only camera verb with an off switch of its own.
+      case 'spin':
+        return { ok: true, kind: 'camera', action: 'spin', dir: op.args[0], journal: { dim: 'camera' } };
 
       case 'undo': case 'redo': case 'reset': case 'restore':
         return { ok: true, kind: 'journal', action: op.verb };
