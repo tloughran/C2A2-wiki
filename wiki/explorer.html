@@ -2520,7 +2520,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=d8d320885c"></script>
+<script src="lib/c2a2-commandline.js?v=ce22cfda30"></script>
 <script>
 (function () {
   'use strict';
@@ -2585,19 +2585,54 @@ var VoiceGuide = (function() {
   // items. It costs one apply per key instead of the graph's single batch; over
   // 1359 meshes that is microseconds, and correct-by-construction is worth more
   // here than a batch path that has to be kept in step with three handlers.
-  function filtersSpec() { var am = activeManifest(); return (am && am.m.filters) || null; }
+  // A FILTER PANEL CAN BELONG TO ONE SUB-VIEW. Community Explorer's eight type
+  // checkboxes are the graph's; on the cards sub-view the whole left panel is
+  // display:none and the cards app filters by its own controls. The elements
+  // are still in the document, so a spec with no `when` would advertise them
+  // there and write to something nobody is looking at. Same predicate the item
+  // rosters already use -- declared, not branched on.
+  function filtersSpec() {
+    var am = activeManifest(), f = (am && am.m.filters) || null;
+    return (f && specWhen(f)) ? f : null;
+  }
+  // TWO NAMES FOR ONE KEY, and they are not the same job. `slug` must reproduce
+  // the PAGE's own id convention (prs_3d builds `prs-chk-disc-` + name with
+  // whitespace hyphenated), so it may not touch anything else or the selector
+  // stops resolving. `clean` is what a PERSON says: "Civic & Political" is a
+  // group name, not a spoken token, and `civic-&-political` read back aloud is
+  // nobody's idea of an answer. Sections declare which one they want.
   function slug(s) { return String(s).trim().toLowerCase().replace(/\s+/g, '-'); }
+  function cleanLeaf(s) {
+    return String(s).trim().toLowerCase().replace(/&/g, ' and ')
+      .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+  // WHERE A SECTION'S KEYS COME FROM. prs_3d keeps a key->bool map on its
+  // window and the roster was read straight off it -- which was one page's
+  // convention (a `var` global, map-shaped) sitting in the position of the
+  // shared road for the second time. Community Explorer's equivalent is a
+  // top-level `const activeTypes = new Set(...)`: a lexical binding, so
+  // `window.activeTypes` is undefined, and a Set, so `st[k] !== false` means
+  // nothing. Its keys are however written on the checkboxes themselves, which
+  // needs no page access at all -- and that is the tell that reading the
+  // CONTROLS is the general case and reading the state was the special one.
+  function sectionKeys(sec, d) {
+    if (sec.keys && sec.keys.sel) {
+      return [].slice.call(d.querySelectorAll(sec.keys.sel)).map(function (el) {
+        return sec.keys.attr ? el.getAttribute(sec.keys.attr) : el.value;
+      }).filter(function (k) { return k; });
+    }
+    var w = ifWin(), st = null;
+    try { st = w && w[sec.state]; } catch (e) { return []; }
+    return st ? Object.keys(st) : [];
+  }
   // The roster the engine resolves against, plus everything needed to write it
   // back: which section, which key in the page's own state, which checkbox.
   function declaredRoster() {
     var spec = filtersSpec(), w = ifWin(), d = ifDoc(), out = [];
     if (!spec || !w || !d) { return out; }
     (spec.sections || []).forEach(function (sec) {
-      var st;
-      try { st = w[sec.state]; } catch (e) { return; }
-      if (!st) { return; }
-      Object.keys(st).forEach(function (k) {
-        var vars = { k: k, slug: slug(k) };
+      sectionKeys(sec, d).forEach(function (k) {
+        var vars = { k: k, slug: slug(k), clean: cleanLeaf(k) };
         // The spoken leaf is not always the state key: decades are numbers in
         // the page and "the 1990s" out loud, and a discipline is two words in
         // the page and one token to a parser. Declared per section rather than
@@ -2609,11 +2644,19 @@ var VoiceGuide = (function() {
     });
     return out;
   }
+  // READ THE CHECKBOX, not the page's state object. Both are meant to say the
+  // same thing and on prs_3d they do -- but the checkbox is the RENDERED truth,
+  // which is the contract every other read on this surface already follows, and
+  // it is the only one of the two that exists on a page keeping its state in a
+  // lexical `const`. The state path stays as the fallback for a section whose
+  // control is genuinely absent from the document.
   function declaredFilterRead() {
-    var w = ifWin(), rows = declaredRoster(), map = {};
+    var w = ifWin(), d = ifDoc(), rows = declaredRoster(), map = {};
     if (!rows.length) { return null; }
     rows.forEach(function (r) {
-      var st = w[filterSectionState(r.section)];
+      var cb = d && d.querySelector(r.sel);
+      if (cb) { map[r.key] = !!cb.checked; return; }
+      var st = w && w[filterSectionState(r.section)];
       map[r.key] = st ? st[r.stateKey] !== false : true;
     });
     return map;
@@ -2634,16 +2677,28 @@ var VoiceGuide = (function() {
       cb.dispatchEvent(new d.defaultView.Event('change', { bubbles: true }));
     });
   }
-  // all / none, through each section's OWN master checkbox -- one dispatch per
+  // all / none, through each section's OWN master control -- one dispatch per
   // section instead of one per key, and the page's handler does the sweep.
+  //
+  // TWO SHAPES, BOTH DECLARED. prs_3d has one master CHECKBOX whose `change`
+  // does all and none; Community Explorer has two `<span class="allnone">` that
+  // are neither buttons nor checkboxes and whose road is `.click()`. So `all`
+  // is either a selector (one checkbox) or `{on, off}` (two click targets),
+  // and the shell asks the element what it is rather than the manifest saying
+  // twice. A span is also invisible to the audit sweep, which is why the
+  // manifest names them in a note: nothing else in the gate would.
   function declaredFilterAll(on) {
     var spec = filtersSpec(), d = ifDoc();
     if (!spec || !d) { return; }
     (spec.sections || []).forEach(function (sec) {
-      var cb = sec.all && d.querySelector(sec.all);
-      if (!cb) { return; }
-      cb.checked = !!on;
-      cb.dispatchEvent(new d.defaultView.Event('change', { bubbles: true }));
+      var t = sec.all;
+      if (t && typeof t === 'object') { t = on ? t.on : t.off; }
+      var el = t && d.querySelector(t);
+      if (!el) { return; }
+      if (el.tagName === 'INPUT' && el.type === 'checkbox') {
+        el.checked = !!on;
+        el.dispatchEvent(new d.defaultView.Event('change', { bubbles: true }));
+      } else { el.click(); }
     });
   }
   // WHAT A CUT SOUNDS LIKE. The graph names its groups one by one, which works
@@ -3184,6 +3239,18 @@ var VoiceGuide = (function() {
       if (!el.getClientRects().length) { continue; }
       var lab = '';
       if (sp.label && sp.label.sel) { var h = el.querySelector(sp.label.sel); lab = h ? (h.textContent || '').trim() : ''; }
+      // THE SVG CASE THE DOM/DATA SPLIT LEFT OUT, exactly as the comment below
+      // dataItems predicted in writing. A d3 tab is elements in the DOM *with
+      // data bound to them*: clickable and measurable like a dom roster, named
+      // like a data one. A <circle> has no text, so the textContent fallback
+      // would give every node the empty string and the tab would enumerate a
+      // roster of nameless things -- the Connectome's empty-label bug arriving
+      // from the other direction. d3 parks the datum on the element itself, so
+      // this needs nothing from the page and is a DOM read like any other.
+      if (!lab && sp.label && sp.label.datum) {
+        var dv = pathGet(el.__data__, sp.label.datum);
+        lab = dv == null ? '' : String(dv).replace(/\s+/g, ' ').trim();
+      }
       if (!lab) { lab = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 60); }
       out.push({ id: 'item:' + i, label: lab, el: el });
     }
@@ -3634,6 +3701,15 @@ var VoiceGuide = (function() {
   function execSelection(p) {
     var sp = itemSpec(), act = sp && sp.activate;
     if (!act) {
+      // Same leak `fit` had, from the same cause: caps are per TAB and rosters
+      // are per SUB-VIEW, so a tab can declare `open` for one view and land
+      // here on the other. Ask the page before calling, or the refusal names
+      // the Sociogram's openNodeByLabel on a tab that has never heard of it.
+      var ow = ifWin(), ofn = p.action === 'open' ? 'openNodeByLabel' : 'dismissRightPanel';
+      if (!ow || typeof ow[ofn] !== 'function') {
+        return show(p.action === 'open' ? 'this view has no way to open what you name'
+                                        : 'this view has no way to close what is open', 'err');
+      }
       return execMut('selection', function () {
         if (p.action === 'open') { call('openNodeByLabel', p.label); } else { call('dismissRightPanel'); }
       }, p.action === 'open' ? ('opened ' + p.label) : 'closed panel', p.action === 'open');
@@ -3679,7 +3755,7 @@ var VoiceGuide = (function() {
     var before = activeItems().length;
     return execMut('selection', function () {
       if (sp.kind === 'data') { selectDataItem(sp, hit); }
-      else { selectDomItem(el, label); el.click(); }
+      else { selectDomItem(el, label); clickItem(el); }
       var after = activeItems().length;
       return after === before ? '' : ('  |  now ' + itemsPhrase(after));
     }, 'opened ' + label, false);
@@ -3737,6 +3813,17 @@ var VoiceGuide = (function() {
     currentItemLabel = isData ? item.label : '';
     currentItemId = isData ? item.id : '';
     activateData(sp, item);
+  }
+  // `click()` IS AN HTMLElement METHOD, and an SVG node is not one. Every dom
+  // roster so far was rows, cards and buttons, so `el.click()` was the item
+  // road; the first d3 tab to declare `activate: "click"` got "el.click is not
+  // a function" and the guide reported a failure to open something a mouse
+  // opens fine. A dispatched MouseEvent is what a mouse actually delivers and
+  // reaches an addEventListener handler either way -- which is what d3 binds --
+  // so this is still the mouse's road, spelled the way SVG requires.
+  function clickItem(el) {
+    if (typeof el.click === 'function') { el.click(); return; }
+    el.dispatchEvent(new (el.ownerDocument.defaultView || window).MouseEvent('click', { bubbles: true, cancelable: true }));
   }
   function selectDomItem(el, label) {
     currentItemLabel = label || '';
@@ -4402,7 +4489,7 @@ var VoiceGuide = (function() {
         if (!wh) { return; }
         // Undo travels the road the command did, whichever road that was.
         if (wsp.kind === 'data') { selectDataItem(wsp, wh); return; }
-        if (wh.el) { wh.el.click(); }
+        if (wh.el) { clickItem(wh.el); }
         return;
       }
       if (!value) { call('dismissRightPanel'); } else { call('openNodeByLabel', value.label); }
@@ -4517,6 +4604,19 @@ var VoiceGuide = (function() {
                       (vs.length ? ('. On this view: ' + vs.join(', ')) : '') +
                       (rvs.length ? ('. Ways to read what is open: ' + rvs.map(function (r) { return r.say[0]; }).join(', ')) : '') +
                       (ls.length ? ('. Links on this page: ' + ls.slice(0, 5).map(function (l) { return l.label; }).join(', ')) : ''), 'err');
+        }
+        // A FILTER TERM THAT DID NOT RESOLVE IS A QUESTION ABOUT THIS VIEW'S
+        // AXES, and "Could not find levin" answers a different one. Until a tab
+        // declared filters it could not get here at all -- the verb was absent
+        // from its caps and the refusal named what the tab DID have -- so the
+        // moment `only` became real on a second tab, every miss fell into the
+        // generic net. Two honest answers instead: this view has no axes, or
+        // these are the axes it has.
+        if (['show', 'hide', 'only'].indexOf(p.verb) !== -1) {
+          var fr = roster();
+          if (!fr.length) { return show('filters are not available on this view', 'err'); }
+          return show('"' + p.term + '" is not something this view filters by  |  ' +
+                      (filterSummary() || fr.slice(0, 8).map(leafOf).join(', ')), 'err');
         }
         return show('Could not find "' + p.term + '".', 'err');
       }
@@ -4716,7 +4816,14 @@ var VoiceGuide = (function() {
   // canonical continuous field. What IS asserted is the read-back -- at a
   // clamp the honest answer is that nothing moved, which is the same rule the
   // graph's zoom already followed.
-  function cameraSpec() { var am = activeManifest(); return (am && am.m.camera) || null; }
+  // Gated by `when` for the same reason the filters are: a camera can belong to
+  // one sub-view. Community Explorer's Fit All sits in a header group the tab
+  // hides on the cards sub-view, and a hidden button still answers `.click()`
+  // -- so an ungated spec would report "fit" for a graph nobody is looking at.
+  function cameraSpec() {
+    var am = activeManifest(), c = (am && am.m.camera) || null;
+    return (c && specWhen(c)) ? c : null;
+  }
   // ---- SPIN: the one verb that leaves something running --------------------
   //
   // Every other command in this language does its thing and is over. A spin is
@@ -4770,7 +4877,16 @@ var VoiceGuide = (function() {
     var apply = function () { if (spec.apply) { call(spec.apply); } };
     if (p.action === 'fit') {
       if (!spec.fit) { return show('this view cannot be fit to everything', 'err'); }
-      call(spec.fit);
+      // A function the page exports, or a button the page draws. Community
+      // Explorer's fit is an anonymous listener on #btn-fit -- there is no name
+      // to call and, under the no-page-edits rule, no way to give it one. The
+      // click IS the road, which is the same answer `activate: "click"` and the
+      // all/none spans already reached from the other side.
+      if (typeof spec.fit === 'object' && spec.fit.click) {
+        var fd = ifDoc(), fb = fd && fd.querySelector(spec.fit.click);
+        if (!fb) { return show('this view cannot be fit to everything', 'err'); }
+        fb.click();
+      } else { call(spec.fit); }
       return show('fit', 'ok');
     }
     if (p.action === 'zoom') {
@@ -4850,7 +4966,15 @@ var VoiceGuide = (function() {
     // `rotate` needs no branch here: caps are per-tab, so a flat tab refuses it
     // in the engine with the same unsupported_here that names what it DOES
     // have. A second, hand-written refusal would be a second thing to keep true.
-    if (p.action === 'fit') { call('fitAll'); return show('fit', 'ok'); }
+    // Ask before calling. With sub-view gating, a tab CAN reach this fallback
+    // having declared a camera that is simply not the current view's -- and
+    // `call` would then surface "this view has no fitAll()", leaking the
+    // Sociogram's internal name into an answer about a different page.
+    if (p.action === 'fit') {
+      var fw = ifWin();
+      if (!fw || typeof fw.fitAll !== 'function') { return show('this view cannot be fit to everything', 'err'); }
+      call('fitAll'); return show('fit', 'ok');
+    }
     var w = ifWin(), d = ifDoc();
     var svgEl = d && d.getElementById('graph-svg');
     if (!w || !svgEl || !w.zoomBehavior || !w.d3) { return show('this view has no camera', 'err'); }
@@ -5130,6 +5254,15 @@ var VoiceGuide = (function() {
   // Resolver introspection for the headless shell test (scripts/test_voice_shell.cjs):
   // which manifest the ACTIVE tab resolved to, and the caps that follow from it.
   // Read-only, no side effects -- the section-9 coverage audit consumes it too.
+  // THE ROSTER, AS THE SHELL SEES IT. A count is not enough to catch the one
+  // failure this class of adapter actually has: a roster of the right SIZE
+  // whose every entry is nameless. That is what a <circle> gives you without
+  // `label.datum`, and what 222 of the Connectome's narratives gave with it --
+  // and neither is visible from a spoken string or an element count. Ids and
+  // labels only; nothing here reaches into the page.
+  window.CCLItems = function () {
+    return activeItems().map(function (x) { return { id: x.id, label: x.label }; });
+  };
   window.CCLDebug = function () {
     var am = activeManifest();
     // The roster rides along: on a tab with a DECLARED filter dimension it is

@@ -1642,6 +1642,109 @@ it is running and that "stop" ends it.
 
 Gate: **160 engine + 303 shell green**.
 
+## X. The roster reader that was still one page's convention (Community Explorer, 2026-07-28)
+
+Three prior entries called Community Explorer increment 2 **cheap**, because §V had
+built the `filters` dimension and this tab's eight type checkboxes are visibly the
+same shape. Half of that was true. The grammar, the verbs and the engine needed
+**nothing** — as promised. The shell's roster **reader** could not read this page
+at all.
+
+### The fifth instance, and it was in the shell
+
+§V generalised filters off the Sociogram's `groupVisibility` — and landed on
+`prs_3d`'s conventions instead: state at `window[sec.state]`, shaped as
+key→boolean, addressed by an id template. Community Explorer keeps the same
+information in `const activeTypes = new Set(...)`: a **lexical** binding, so
+`window.activeTypes` is `undefined`, and a **Set**, so `st[k] !== false` is
+meaningless. The generalisation had swapped one page's globals for another's.
+
+| assumed | actually |
+|---|---|
+| state on the window | a top-level `const` — invisible to any path |
+| a key→boolean map | a `Set` — membership, not a false-valued key |
+| checkboxes by id template | no ids; `[data-type]` attributes |
+| one master checkbox for all/none | two `<span class="allnone">` — not even buttons |
+
+**The fix is that none of it needed the page.** A section may declare `keys` — a
+selector and an attribute — and the roster comes off the **controls**. Reads come
+off `.checked`. `all` is either a checkbox or `{on, off}` click targets. Which
+means the general case was always *read the controls*, and reading a window map
+was `prs_3d`'s special case wearing the shared road's clothes.
+
+Reading `.checked` is also the honest read by this surface's own standing rule:
+report the RENDERED truth, never the write we just made.
+
+### The SVG case, arriving exactly where §T said it would
+
+§T's comment says `revealedNodes` reading `.node-circle` *"never was the general
+case; it was the SVG case"* — and then split items into `dom` (elements) and
+`data` (a window array), which leaves the hybrid out. A d3 tab is elements in the
+DOM **with data bound to them**: clickable and measurable like `dom`, named like
+`data`. `#graph circle` selects exactly the nodes (links are `line`, labels are
+`text`), so the roster needs no class the page does not have — but a `<circle>`
+has no text, and the `textContent` fallback would have made all 156 nodes
+nameless. `label: {datum: "name"}` reads `el.__data__`; two lines, and it serves
+every future d3 tab. The harness asserts **0 nameless**, because a roster of the
+right size whose every entry is blank is invisible to a count.
+
+Two more things only running it could say:
+
+- **`click()` is an `HTMLElement` method.** Every dom roster so far was rows,
+  cards and buttons, so `el.click()` was the item road; the first SVG roster got
+  `el.click is not a function` and the guide reported a failure to open something
+  a mouse opens fine. A dispatched `MouseEvent` is what a mouse actually
+  delivers, and reaches the `addEventListener` handler d3 binds — still the
+  mouse's road, spelled the way SVG requires.
+- **`unresolved` was one error code answering several questions.** With filters
+  real on a second tab, `only levin` there stopped being *unsupported* and became
+  *unresolved* — which fell into the generic `Could not find "levin"`. True, and
+  about the wrong thing: the question behind a filter miss is always *then what
+  can I say here?*. The engine now carries the verb (exactly as `go` already
+  did), and the shell answers either "filters are not available on this view" or
+  the axes themselves. The Connectome's own row got better for free.
+
+### Caps are per TAB, rosters are per SUB-VIEW
+
+Everything added here is gated `when: #tab-graph`, because the cards sub-view is
+where a spec that forgot to say so looks identical: the checkboxes are still in
+the document and `#btn-fit` still answers `.click()`. Gating created its own
+small hazard — a tab can now reach the undeclared fallbacks having declared a
+camera and a roster that simply are not this view's — and those fallbacks called
+`fitAll` / `openNodeByLabel` unguarded, so the refusal leaked the **Sociogram's**
+function names onto a page that has never heard of them. Both now ask before
+calling. Three rows assert the refusals on the cards view.
+
+### Deliberately NOT declared
+
+- **`find` / clear.** Search here **highlights** and never filters (`applyLens`
+  dims non-matches to 0.08; `rebuild()` silently resets it — 2026-05-29 lock), so
+  the shell's `find`, whose class stamp is read off SVG opacities, would call
+  every dimmed node gone. The cut dimension has to learn *highlighted, not
+  hidden* first. This is the trap the §V handoff flagged as `find`'s, arriving on
+  a different tab than expected.
+- **`zoom` / `pan`.** The page's d3 zoom behaviour and svg selection are
+  top-level `const`s. The remaining road is synthetic wheel/mouse events on
+  `#graph` (d3 v7 binds `wheel.zoom` / `mousedown.zoom` on the selection and
+  parks the transform on the element as `__zoom`) — which would be *literally*
+  the mouse's road, and fits this thread's rule better than calling `scaleBy`.
+  Reasoned from d3's behaviour, **not run**: prove one dispatched wheel before
+  declaring a `d3zoom` camera kind. `fit` is the one camera verb reachable today,
+  and it is a button click.
+- **`#btn-hold` / `#btn-names`.** Toggle BUTTONS carrying `.on` — one button
+  standing for one boolean. No bind kind fits, and the `toggle` kind is
+  Connectome increment 3, whose `#btn-labels` is the same shape. **That makes
+  inc 3 a prerequisite for finishing this tab's knobs, not a parallel track.**
+
+**The whole increment is shell + manifest.** Not one line of
+`community_explorer.html` or the nested `community/` app changed — Tom's standing
+constraint, and both page-side edits an earlier session had proposed turned out
+to be unnecessary.
+
+Coverage: 21 controls — **10 covered, 4 excluded, 7 deferred, 0 uncovered**
+(was 17 deferred); gestures 4 covered / 2 deferred / 2 excluded.
+Gate: **161 engine + 328 shell green**.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

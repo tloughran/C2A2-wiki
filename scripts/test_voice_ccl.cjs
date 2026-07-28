@@ -513,6 +513,14 @@ check('plan: a term it had to guess at still EXECUTES, carrying the assumption',
 check('plan: unresolved-only filter term -> unresolved (never a silent no-op)', function () {
   assert.strictEqual(planCmd('only zzzznope').error, 'unresolved');
 });
+// The verb rides along for the same reason it does on `go`: unresolved is one
+// error code for several questions, and the shell can only answer the right one
+// if it knows which verb asked. Without this, a tab that HAS filters answered a
+// miss with "Could not find X" -- true, and about the wrong thing.
+check('plan: an unresolved filter term names the verb that failed', function () {
+  assert.strictEqual(planCmd('only zzzznope').verb, 'only');
+  assert.strictEqual(planCmd('hide zzzznope').verb, 'hide');
+});
 check('plan: partially-resolved filter proceeds with resolved, reports unresolved', function () {
   const p = planCmd('only levin zzzznope');
   assert.deepStrictEqual(p.keys, ['traditions/levin']);

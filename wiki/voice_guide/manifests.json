@@ -771,10 +771,36 @@
         "previous",
         "read",
         "summarize",
-        "stop"
+        "stop",
+        "open",
+        "close",
+        "set",
+        "fit",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "undo",
+        "redo",
+        "reset",
+        "restore"
       ],
-      "_caps_note": "Reaching and walking the cards is this increment. The tab's OWN graph filters, search and camera are declared deferred below with the increment that takes them: the graph here is a different artifact from the Sociogram (no groupVisibility, no rebuildGraph), so inheriting those verbs would advertise controls that do not exist.",
-      "knobs": [],
+      "_caps_note": "Increment 1 reached and walked the cards. Increment 2 adds the GRAPH sub-view's own dimensions: the eight type filters (show/hide/only/all/none and the journal verbs that ride on them), the Q3 gate as a knob, Fit All, and a roster of the graph's nodes with open/close. Still absent and still deferred below with their real blockers: find (the tab's search HIGHLIGHTS rather than filters, so the Sociogram's opacity-derived read would call a dimmed node gone), and zoom/pan (d3's behaviour is a lexical const here, so the only road is synthetic wheel/mouse events on #graph).\nCaps are per TAB and the rosters here are per SUB-VIEW, so `open` and `fit` are advertised on the cards view too and refuse there by name. That refusal is the honest one, not a leak of the Sociogram's function names -- see the `when` gates on `filters` and `camera`.",
+      "knobs": [
+        {
+          "id": "exemplary",
+          "label": "Exemplary (Q3) only",
+          "aka": ["q3", "quality"],
+          "kind": "bool",
+          "bind": { "checkbox": "#q3only" },
+          "values": [
+            { "v": "on", "aka": ["on", "yes", "exemplary", "q3", "only"] },
+            { "v": "off", "aka": ["off", "no", "all", "everything"] }
+          ],
+          "_note": "The one deferred control that needed nothing built: a real <input type=checkbox> in the tab's own document, the same shape metabolism's `logy` already uses. It composes with the type filters by AND (nodeVisible tests both), so `set exemplary on` narrows whatever cut is already up rather than replacing it."
+        }
+      ],
       "views": [
         {
           "name": "graph",
@@ -819,9 +845,21 @@
           "_note": "The grid renders CARD_LIMIT (60) of the matching set; the page's own status line carries the true total, so `what` says '60 of 1006' rather than '60'."
         },
         {
-          "kind": "none",
+          "kind": "dom",
+          "when": {
+            "active": "#tab-graph"
+          },
+          "select": "#graph circle",
+          "label": {
+            "datum": "name"
+          },
           "noun": "community",
-          "_note": "The graph sub-view: its nodes are D3-bound but this artifact is not the Sociogram (different globals), so a graph roster is its own increment rather than a reused one."
+          "plural": "communities",
+          "activate": "click",
+          "selected": "#rightpanel.open #rp-content h3",
+          "close": "#rp-close",
+          "reads": "#rp-content",
+          "_note": "THE SVG CASE: elements in the DOM with data bound to them. `#graph circle` selects exactly the nodes and nothing else -- gLinks appends `line`, gLabels appends `text`, gNodes is the only thing appending `circle`, and there is no <circle> in the markup or the CSS -- so the roster is non-positional without the page gaining a class it does not have. A <circle> carries no text, hence `label.datum`: d3 parks the node object on the element, so the name is a DOM read.\n`activate: \"click\"` reaches the page's own `.on('click', (ev,n) => showNode(n))` with the right node object, which is why showNode taking an object rather than an id costs nothing. `selected` is scoped to `#rightpanel.open` because the panel keeps its last contents after it is closed -- the `.open` class is the page's own marker for what is actually up, and reading the h3 without it would report a stale heading as the current selection.\nNO `total`, deliberately, and this is the opposite call from the cards spec above. #stats reads 'N communities - M edges' where N is the VISIBLE count: rebuild() does .exit().remove(), so DOM presence IS the filter truth and drawn == matching. Declaring it as `total` would produce 'N of N' forever, which is a number that cannot disagree with itself and therefore says nothing.\nDO NOT infer visibility from opacity here. applyLens dims non-matching nodes to 0.08 instead of removing them, because search on this tab HIGHLIGHTS and never filters (2026-05-29 lock); getClientRects is the right test and an opacity-derived one would read a dimmed node as gone."
         }
       ],
       "frames": [
@@ -873,6 +911,54 @@
           "reason": "the tab's own help overlay; `help` answers from the manifest instead"
         }
       ],
+      "filters": {
+        "when": {
+          "active": "#tab-graph"
+        },
+        "sections": [
+          {
+            "name": "types",
+            "keys": {
+              "sel": "#typefilters input[data-type]",
+              "attr": "data-type"
+            },
+            "checkbox": "#typefilters input[data-type=\"{k}\"]",
+            "leaf": "{clean}",
+            "all": {
+              "on": "#types-all",
+              "off": "#types-none"
+            }
+          }
+        ],
+        "_note": "ONE AXIS, EIGHT LEAVES, AND NOT ONE LINE OF STATE READ FROM THE PAGE. The roster comes from `keys` -- the checkboxes' own data-type attributes -- because this page keeps its truth in `const activeTypes = new Set(...)`: a lexical binding, so window.activeTypes is undefined, and a Set, so the key->boolean shape the shell used to assume means nothing here. The controls carry the same information and need no page access, which is the tell that reading the CONTROLS was always the general case and reading a window map was prs_3d's special one.\n`leaf` is `{clean}` rather than the default slug: these keys are display names ('Civic & Political'), and `civic-&-political` is a group name, not something to say or hear. `{slug}` still exists and still means 'reproduce the page's own id convention' -- prs_3d needs exactly that and must not get this.\n`all` is `{on, off}` because all and none are two `<span class=\"allnone\">` here, not one master checkbox: spans, so not even buttons, and the road is `.click()`. Note that a span is INVISIBLE to the audit sweep (CONTROL_SEL matches inputs, buttons and roles) -- these two are named here because nothing in the gate would otherwise know they exist.\n`when` scopes the whole dimension to the graph sub-view: on the cards view the left panel is display:none and the cards app filters by its own controls, so an ungated spec would advertise eight checkboxes nobody is looking at.",
+        "_read_note": "Reads come back off `.checked`, not off a state object -- the RENDERED truth, which is the contract every other read on this surface follows and the only one of the two that exists on this page at all."
+      },
+      "camera": {
+        "when": {
+          "active": "#tab-graph"
+        },
+        "fit": {
+          "click": "#btn-fit"
+        },
+        "_note": "ONE VERB, AND IT IS A BUTTON. Fit All is an anonymous listener on #btn-fit -- there is no exported name to call, and under the no-page-edits rule there is no way to give it one, so the camera spec names the click. That is the mouse's road, which this thread prefers to a function call anyway.\nNO zoom / pan / rotate / spin. The page's d3 zoom behaviour and its svg selection are top-level `const`s, invisible to a window path, so the remaining road is synthetic wheel/mouse events dispatched at #graph (d3 v7 binds wheel.zoom and mousedown.zoom on the selection, and parks the current transform on the element as `__zoom`). Reasoned from d3's behaviour, not run -- deferred below until one dispatched wheel event proves it.\n`when` gates the whole spec: #btn-fit lives in a header group the tab hides on the cards sub-view, and a hidden button still answers .click(), so an ungated camera would report 'fit' for a graph nobody is looking at."
+      },
+      "dim_coverage": [
+        {
+          "dim": "filters",
+          "match": "#typefilters input[data-type]",
+          "note": "the eight type filters, reached by show/hide/only/all/none through the declared `filters` section. The all/none spans are not swept (they are spans) and are named in the filters note instead."
+        },
+        {
+          "dim": "camera",
+          "match": "#btn-fit",
+          "note": "Fit All -- what `fit` clicks, declared as the tab's camera spec"
+        },
+        {
+          "dim": "selection",
+          "match": "#rp-close",
+          "note": "close -- the right panel. Named by the graph items spec, so the audit counts it there. (A span, so not actually swept; listed for the reader.)"
+        }
+      ],
       "controls_deferred": [
         {
           "match": "#tab-graph, #tab-cards",
@@ -880,19 +966,14 @@
           "next": "n/a -- covered by the views declaration above"
         },
         {
-          "match": "#typefilters input[type=checkbox], #q3only",
-          "reason": "the graph's eight type filters plus the quality gate: this artifact has no groupVisibility, so the filters dimension needs its own bind here",
-          "next": "community explorer increment 2"
-        },
-        {
           "match": "#search-input, #btn-search, #btn-clear",
-          "reason": "find/clear on the tab's graph",
-          "next": "community explorer increment 2"
+          "reason": "find/clear on the tab's graph. NOT the same shape as the Sociogram's: search here HIGHLIGHTS and never filters (applyLens dims non-matches to 0.08 and rebuild() silently resets it -- 2026-05-29 lock), so the shell's `find`, whose class stamp is read off SVG opacities, would call every dimmed node gone. The cut dimension has to learn 'highlighted, not hidden' before this is honest.",
+          "next": "voice guide: a highlight-that-is-not-a-cut, alongside the Sociogram's find generalisation"
         },
         {
-          "match": "#btn-hold, #btn-names, #btn-fit",
-          "reason": "hold forces / show names / fit -- the camera and layout knobs, same family as the Sociogram's",
-          "next": "community explorer increment 2"
+          "match": "#btn-hold, #btn-names",
+          "reason": "hold forces / show names: toggle BUTTONS carrying `.on`, one button standing for one boolean. No current bind kind fits -- a checkbox has no element here, and a button GROUP would need a second button for the off state that does not exist.",
+          "next": "the `toggle` bind kind (Narrative Connectome increment 3, whose #btn-labels is the same shape)"
         }
       ],
       "gestures": [
@@ -925,6 +1006,32 @@
             "go"
           ],
           "note": "`go cards` / `go graph`."
+        },
+        {
+          "id": "open_node",
+          "label": "Click a graph node for its G-P-R-S panel",
+          "status": "covered",
+          "by": [
+            "pick",
+            "open",
+            "read",
+            "close"
+          ],
+          "note": "`activate: \"click\"` on the graph roster reaches the page's own click handler, so voice opens a node by the same road a mouse does."
+        },
+        {
+          "id": "open_edge",
+          "label": "Click an edge for the pair it joins",
+          "status": "deferred",
+          "planned": "an edge roster -- the same gap the Narrative Connectome defers, and it should be solved once for both",
+          "note": "showEdge writes the same right panel showNode does, but a <line> is not in the node roster and has no label of its own."
+        },
+        {
+          "id": "zoom_pan",
+          "label": "Wheel to zoom, drag to pan the graph",
+          "status": "deferred",
+          "planned": "a d3-zoom camera kind driven by synthetic wheel/mouse events -- prove one dispatched wheel before declaring it",
+          "note": "The page's zoom behaviour and svg selection are top-level consts, so there is no window path to step; `fit` is the one camera verb reachable today."
         },
         {
           "id": "drag_node",

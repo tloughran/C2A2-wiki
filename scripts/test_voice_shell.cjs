@@ -873,8 +873,13 @@ async function main() {
   await sleep(2500);
   await row(page, 'D2 what -> names the view and its position in the row', 'what',
     { ok: true, spoken: /\(\d+ of \d+, left to right\)/ });
-  await row(page, 'D3 only levin -> unsupported here, NOT a Sociogram pretence', 'only levin',
-    { ok: false, spoken: /Not available on this view/ });
+  // This tab now HAS filters (increment 2), so the refusal moved: it is no
+  // longer "that verb is not supported here" but "that is not one of MY
+  // groups", and it names its own axis. Still the same guarantee under test --
+  // no Sociogram pretence -- asserted at the point where the pretence would now
+  // be easiest, because the verb finally works on this tab.
+  await row(page, 'D3 only levin -> a Sociogram tradition is not one of THIS tab\'s groups', 'only levin',
+    { ok: false, spoken: /not something this view filters by.*types:/ });
   await row(page, 'D4 go banana -> names what IS reachable', 'go banana',
     { ok: false, spoken: /no tab called "banana"\. Here: .+/ });
   await row(page, 'D5 go first -> jump to the start of the visible row', 'go first', { ok: true, spoken: /1 of \d+/ });
@@ -1060,12 +1065,115 @@ async function main() {
   const shotFc = await page.screenshot(path.join(SHOTS, 'F-cards.png'));
   // The gate that makes the declaration honest: 21 controls in the tab, 2294 in
   // the nested app, and every one of them covered, excluded or deferred by name.
-  await auditTab(page, 'community_explorer', 17, 0);
+  await auditTab(page, 'community_explorer', 7, 2);
+  // THE DIMENSIONS ARE THE GRAPH'S, NOT THE TAB'S. Everything increment 2 added
+  // is declared `when: #tab-graph`, and the cards view is where a spec that
+  // forgot to say so would look identical -- the checkboxes are still in the
+  // document, #btn-fit still answers .click(). So the refusals are asserted
+  // HERE, before switching back, and they must name this page rather than
+  // leaking the Sociogram's function names (the bug the `when` gate created and
+  // the two `typeof` guards close).
+  await row(page, 'F7b only civic on the CARDS view -> the filters belong to the graph', 'only civic',
+    { ok: false, spoken: /filters are not available on this view/ });
+  await row(page, 'F7c fit on the CARDS view -> refuses without naming fitAll', 'fit',
+    { ok: false, spoken: /cannot be fit to everything/ });
+  await row(page, 'F7d close on the CARDS view -> refuses without naming dismissRightPanel', 'close',
+    { ok: false, spoken: /no way to close what is open/ });
   await row(page, 'F8 go graph -> back to the other sub-view', 'go graph', { ok: true, spoken: /^go graph$/ });
   await sleep(1500);
   await row(page, 'F9 what -> the roster changed with the view', 'what', { ok: true, spoken: /graph view/ });
-  await row(page, 'F10 only levin -> still no Sociogram pretence on a different graph', 'only levin',
-    { ok: false, spoken: /Not available on this view/ });
+  await row(page, 'F10 only levin -> a tradition is not a community type here', 'only levin',
+    { ok: false });
+  // ---- Phase F (increment 2): the graph sub-view's own dimensions ----------
+  //
+  // The tab was reachable and its cards were walkable; the GRAPH was declared
+  // `kind: "none"` and had no filters, no knob and no camera. What made that
+  // expensive was not the tab -- it was that the shell's roster reader had been
+  // generalised off prs_3d's conventions (a `var` window map) and could not
+  // read a page keeping its truth in `const activeTypes = new Set(...)`. So
+  // these rows are really a test of the SHELL: keys read off the controls,
+  // truth read back off `.checked`, all/none through two spans, a label read
+  // off the bound datum, and `fit` as a click.
+  const ceCircles = function () { return page.eval(
+    IFRAME_DOC + "return d ? d.querySelectorAll('#graph circle').length : -1;"); };
+  const ceStats = function () { return page.eval(
+    IFRAME_DOC + "var e = d && d.querySelector('#stats'); return e ? e.textContent : null;"); };
+  const ceTypesOn = function () { return page.eval(
+    IFRAME_DOC + "var b = d ? [].slice.call(d.querySelectorAll('#typefilters input[data-type]')) : [];" +
+    "return b.filter(function (i) { return i.checked; }).length;"); };
+
+  const bootCircles = await ceCircles();
+  record('F11 the graph draws a roster at all', bootCircles > 0, bootCircles + ' circles under #graph');
+  // THE BUG THIS ROW EXISTS FOR: a <circle> has no textContent, so before
+  // label.datum every one of these would have come back nameless -- the
+  // Connectome's 222 empty labels arriving from the other direction, and
+  // invisible to any row that only counted the roster.
+  const named = await page.eval(
+    "var r = window.CCLItems ? window.CCLItems() : null;" +
+    "if (!r) { return null; }" +
+    "return { n: r.length, blank: r.filter(function (x) { return !x.label; }).length," +
+    "         first: r.length ? r[0].label : null };");
+  record('F11a every node has a NAME, read off the bound datum',
+    !!named && named.n > 0 && named.blank === 0 && !!named.first,
+    named ? (named.n + ' items, ' + named.blank + ' nameless, first: ' + JSON.stringify(named.first)) : 'CCLItems missing');
+  await row(page, 'F11b what -> counts communities, not nodes', 'what',
+    { ok: true, spoken: /graph view/ });
+
+  await row(page, 'F12 only civic -> a display name reached by its short form', 'only civic',
+    { ok: true, spoken: /types: civic-and-political/ });
+  const onlyCivic = await ceCircles(), onlyCivicOn = await ceTypesOn();
+  record('F12a the write travelled the checkbox and the graph REBUILT',
+    onlyCivicOn === 1 && onlyCivic > 0 && onlyCivic < bootCircles,
+    onlyCivicOn + ' of 8 types checked, ' + onlyCivic + ' circles (was ' + bootCircles + ')  |  ' + (await ceStats()));
+
+  await row(page, 'F13 none -> through a <span>, which is not a checkbox and not a button', 'none',
+    { ok: true });
+  const noneCircles = await ceCircles(), noneOn = await ceTypesOn();
+  record('F13a none really emptied it -- the span click IS the road',
+    noneOn === 0 && noneCircles === 0, noneOn + ' types checked, ' + noneCircles + ' circles');
+
+  await row(page, 'F14 all -> the other span', 'all', { ok: true });
+  const allOn = await ceTypesOn(), allCircles = await ceCircles();
+  record('F14a all restored every type', allOn === 8 && allCircles === bootCircles,
+    allOn + ' of 8 types checked, ' + allCircles + ' circles');
+
+  // undo has to step back through a dimension whose BEFORE was read off the
+  // checkboxes rather than a state object -- the read-back change is what this
+  // asserts, not the journal.
+  await row(page, 'F15 undo -> back to none, off a read that never touched the page', 'undo',
+    { ok: true, spoken: /undid \(filters\)/ });
+  record('F15a undo restored the emptied cut', (await ceTypesOn()) === 0, 'types checked: ' + (await ceTypesOn()));
+  await row(page, 'F16 redo -> forward again', 'redo', { ok: true });
+  record('F16a redo restored all eight', (await ceTypesOn()) === 8, 'types checked: ' + (await ceTypesOn()));
+
+  await row(page, 'F17 set exemplary on -> the one deferred control that needed nothing built',
+    'set exemplary on', { ok: true, spoken: /exemplary on/, dom: { '#q3only': { prop: 'checked', value: 'on' } } });
+  const q3Circles = await ceCircles();
+  record('F17a the quality gate composes with the type cut by AND',
+    q3Circles > 0 && q3Circles < bootCircles, q3Circles + ' circles of ' + bootCircles);
+  await row(page, 'F17b set exemplary off -> and back', 'set exemplary off',
+    { ok: true, dom: { '#q3only': { prop: 'checked', value: 'off' } } });
+
+  // `open <name>` on a d3 roster: matched by the datum's name, activated by the
+  // page's own click handler, and read back off the page's own marker -- the
+  // right panel, scoped to `.open` so a closed panel's stale heading cannot be
+  // reported as the current selection.
+  const firstName = named && named.first;
+  await row(page, 'F18 open <a community> -> by the name the datum carries',
+    'open ' + firstName, { ok: true, spoken: /^opened / });
+  const panel = await page.eval(
+    IFRAME_DOC + "var e = d && d.querySelector('#rightpanel.open #rp-content h3');" +
+    "return e ? (e.textContent || '').trim() : null;");
+  record('F18a the PAGE opened it, and the panel says so',
+    !!panel && panel.length > 0, 'panel heading: ' + JSON.stringify(panel));
+  await row(page, 'F19 close -> the page\'s own close, not ours', 'close', { ok: true });
+  const ceShut = await page.eval(
+    IFRAME_DOC + "return !!(d && d.querySelector('#rightpanel') && !d.querySelector('#rightpanel.open'));");
+  record('F19a the panel is actually shut', ceShut === true, 'rightpanel.open present: ' + !ceShut);
+
+  await row(page, 'F20 fit -> a camera verb that is a button click', 'fit', { ok: true, spoken: /^fit$/ });
+  await row(page, 'F20a zoom in -> not declared, and refuses by what this view IS', 'zoom in',
+    { ok: false });
   const shotF = await page.screenshot(path.join(SHOTS, 'F-subviews.png'));
 
   // ---- Phase G: a page reached by an IN-PAGE LINK, and the way back ---------
@@ -1953,9 +2061,13 @@ async function main() {
   record('L30a and the boxes came back with the state, because undo took the same road',
     undone.stateOn === undone.boxesOn && undone.stateOn > 1, JSON.stringify(undone));
   await runCmd(page, 'all');
-  // A word that names nothing is said back rather than silently dropped.
-  await row(page, 'L31 a term that matches no axis is named, not quietly ignored',
-    'only quantum chromodynamics', { ok: false, spoken: /could not find "quantum chromodynamics"/i });
+  // A word that names nothing is said back rather than silently dropped -- and
+  // since increment 2 it is said back WITH the axes it could have named. On a
+  // tab with three of them "could not find X" was true and unhelpful; the
+  // question behind the miss is always "then what can I say here?".
+  await row(page, 'L31 a term that matches no axis is named, and the axes are named back',
+    'only quantum chromodynamics',
+    { ok: false, spoken: /"quantum chromodynamics" is not something this view filters by.*traditions:.*disciplines:.*years:/ });
   await runCmd(page, 'all');
 
   // ---- L32-L38: SPIN, the one verb that leaves something running -----------

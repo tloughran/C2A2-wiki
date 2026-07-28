@@ -736,7 +736,11 @@
         }
         const res = resolveTerms(op.args, ctx.roster);
         if (res.ambiguous) { return res.ambiguous; }
-        if (!res.keys.length) { return { ok: false, error: 'unresolved', term: op.args.join(' ') }; }
+        // Carry the verb, for the same reason `go` does two cases up: an
+        // unresolved term fails HERE, and without the verb the shell cannot
+        // tell "that is not one of my groups" from "that is not a tab" and
+        // answers both with the same shrug.
+        if (!res.keys.length) { return { ok: false, error: 'unresolved', term: op.args.join(' '), verb: op.verb }; }
         return { ok: true, kind: 'filters', action: action, keys: res.keys, unresolved: res.unresolved,
                  guesses: res.guesses, journal: { dim: 'filters' } };
       }
