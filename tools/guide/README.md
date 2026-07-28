@@ -80,14 +80,52 @@ state — the precise failure mode the plan was written about. So:
 
 Closing those 92 is the next real increment, and it needs the live site, not the PDF.
 
-### NOTE — an asymmetry the assertions surfaced
+### NOTE — two asymmetries the assertions surfaced
 
-Three of the four Start Here launch links carry a `data-target` and post
-`{source:'c2a2-start-here', action:'navigate', target}` to the shell, which swaps the frame
-*and* hides the sub-tab rows. **Who's Who carries no `data-target`** — it is a plain
+**Two link classes, not one.** Start Here reaches its four otherwise-unreachable pages via
+`a.launch` (What Is C2A2, Who's Who) *and* `a.door` (Review Log, Summa Commentary). An
+earlier version of `build_reach.py` claimed `a.launch` for all four and its assertion still
+passed, because it checked whether `data-target="review-cards"` appeared **anywhere in the
+file** rather than on the anchor. `anchor_exists()` now requires the class and the attribute
+on the same tag. A selector that matches nothing fails here instead of in the browser.
+
+**Who's Who is wired differently from its three siblings.** The other three carry a
+`data-target` and post `{source:'c2a2-start-here', action:'navigate', target}` to the shell,
+which swaps the frame *and* hides the sub-tab rows. Who's Who is a plain
 `href="whos_who.html"` that navigates the iframe directly, so the shell's row state is never
 updated, and `explorer.html`'s message switch has no `whos_who` case to add one. Recorded,
-not fixed: it is a live-site behaviour change and needs its own review.
+not fixed: a live-site behaviour change needs its own review.
+
+## The gate — one contract, both directions
+
+```bash
+python3 tools/guide/check_coverage.py
+```
+
+The guide and the voice guide both describe how to reach a view, and must not drift. They do
+**not** share a file to achieve that: this manifest is generated and rebuilt on every
+recapture, while `wiki/voice_guide/manifests.json` is hand-authored and changes only when a
+tab gains a control. Merging them would make every regeneration collide with a human edit,
+and within months no one could answer who owns a given line. They share an assertion instead.
+
+- **Direction A** — no plate may claim a route the app does not have. Catches a guide gone
+  stale against a renamed tab.
+- **Direction B** — no destination the app declares may go undocumented. Catches the more
+  valuable failure: a page nobody wrote up. This is the direction that finds pages like the
+  four only Start Here reaches — the gap two hand-run capture passes both missed.
+
+Destinations come from `wiki/explorer.html` and `wiki/start_here.html` directly, never from
+`voice_guide/destinations.json`, which is generated from `explorer.html` — reading the
+generated copy would let both sides agree while both were wrong.
+
+Currently **20 destinations, 20 documented, 0 gaps**. A destination may be undocumented, but
+only via the `UNDOCUMENTED` allowlist with a written reason; an empty allowlist is the
+healthy state and a growing one is the signal the guide has fallen behind.
+
+Verified by mutation, not by assertion: a renamed documented tab goes red in both
+directions; a new tab and a new Start Here door each go red under Direction B; allowlisting
+is the only thing that silences either; and re-introducing the `a.launch`/`a.door` mix-up
+above fails `build_reach.py` by name.
 
 Slug prefixes (`a01`, `b05`, `d06`) are **capture-stage identifiers, not section numbers** —
 `d10-mobile-shell-default` sits in section 1.5. Order comes from the manifest, never from the

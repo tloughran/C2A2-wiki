@@ -46,15 +46,36 @@ SECTION_ROUTE = {
     '18': ('chap-interaction', None, None),
 }
 
-# Sections 3-6 are the four pages no sub-tab reaches. They are opened by `a.launch` inside
-# start_here.html. Three post {source:'c2a2-start-here', action:'navigate', target} to the
-# shell; Who's Who carries no data-target and navigates the frame directly -- see NOTES.
+# Sections 3-6 are the four pages no sub-tab reaches, opened by links inside start_here.html.
+# There are TWO link classes, not one: `a.launch` for the inline calls to action and `a.door`
+# for the two big section doors. Getting this wrong is easy and silent, so the assertion below
+# checks the class and the attribute on the SAME anchor rather than anywhere in the file.
+# Three post {source:'c2a2-start-here', action:'navigate', target} to the shell; Who's Who
+# carries no data-target and navigates the frame directly -- see NOTES in README.md.
+#   section: (css class, distinguishing attribute, page it loads, postMessage target or None)
 START_HERE_LAUNCH = {
-    '3': ("a.launch[data-target='fifteen']", 'what_is_c2a2.html', 'fifteen'),
-    '4': ("a.launch[href='whos_who.html']", 'whos_who.html', None),
-    '5': ("a.launch[data-target='review-cards']", 'review_log.html', 'review-cards'),
-    '6': ("a.launch[data-target='summa-commentary']", 'summa_commentary.html', 'summa-commentary'),
+    '3': ('launch', ('data-target', 'fifteen'), 'what_is_c2a2.html', 'fifteen'),
+    '4': ('launch', ('href', 'whos_who.html'), 'whos_who.html', None),
+    '5': ('door', ('data-target', 'review-cards'), 'review_log.html', 'review-cards'),
+    '6': ('door', ('data-target', 'summa-commentary'), 'summa_commentary.html', 'summa-commentary'),
 }
+
+
+def anchor_exists(html, cls, attr, value):
+    """True only if ONE anchor carries both the class and the attribute.
+
+    Substring checks are what let a wrong selector pass review: `data-target="review-cards"`
+    is present in start_here.html, but on an a.door, not the a.launch an earlier version of
+    this file claimed. A selector that matches nothing must fail here, not in the browser.
+    """
+    for m in re.finditer(r'<a\b([^>]*)>', html):
+        tag = m.group(1)
+        cm = re.search(r'class="([^"]*)"', tag)
+        if not cm or cls not in cm.group(1).split():
+            continue
+        if re.search(r'\b%s="%s"' % (re.escape(attr), re.escape(value)), tag):
+            return True
+    return False
 
 # Declared in IN_APP_GUIDE_PLAN.md Part 4. Their content legitimately changes every run, so
 # a pixel diff on them is noise; the weekly job must diff structure only.
@@ -89,11 +110,9 @@ def main(wiki=WIKI):
         if row:
             require('id="%s"' % row in explorer, 'row id %s not in explorer.html' % row)
 
-    for sec, (selector, page, post_target) in sorted(START_HERE_LAUNCH.items()):
-        attr = re.search(r"\[([a-z-]+)='([^']+)'\]", selector)
-        require('class="launch"' in start_here, 'a.launch is gone from start_here.html')
-        require('%s="%s"' % (attr.group(1), attr.group(2)) in start_here,
-                'start_here.html no longer has %s' % selector)
+    for sec, (cls, (attr, value), page, post_target) in sorted(START_HERE_LAUNCH.items()):
+        require(anchor_exists(start_here, cls, attr, value),
+                'start_here.html has no <a class="%s" %s="%s">' % (cls, attr, value))
         require(os.path.exists(os.path.join(WIKI, page)), 'missing on disk: wiki/%s' % page)
         if post_target:
             require("case '%s':" % post_target in explorer,
@@ -114,9 +133,9 @@ def main(wiki=WIKI):
         sec = entry['section'].split('.')[0]
         steps = []
         if sec in START_HERE_LAUNCH:
-            selector, page, post_target = START_HERE_LAUNCH[sec]
+            cls, (attr, value), page, post_target = START_HERE_LAUNCH[sec]
             steps.append({'chapter': 'chap-intro'})
-            steps.append({'frameClick': selector, 'loads': page})
+            steps.append({'frameClick': "a.%s[%s='%s']" % (cls, attr, value), 'loads': page})
         else:
             chapter, row, src = SECTION_ROUTE[sec]
             steps.append({'chapter': chapter})

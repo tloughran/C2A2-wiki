@@ -532,7 +532,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -564,7 +564,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -596,7 +596,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -628,7 +628,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -660,7 +660,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -692,7 +692,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -724,7 +724,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -756,7 +756,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -788,7 +788,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='review-cards']",
+          "frameClick": "a.door[data-target='review-cards']",
           "loads": "review_log.html"
         }
       ],
@@ -820,7 +820,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='summa-commentary']",
+          "frameClick": "a.door[data-target='summa-commentary']",
           "loads": "summa_commentary.html"
         }
       ],
@@ -852,7 +852,7 @@
           "chapter": "chap-intro"
         },
         {
-          "frameClick": "a.launch[data-target='summa-commentary']",
+          "frameClick": "a.door[data-target='summa-commentary']",
           "loads": "summa_commentary.html"
         }
       ],
