@@ -53,3 +53,16 @@ If the church is a real corporate substance whose members retain their distinct 
 **Synthesis claim:** Non-competitive causality is the shared skeleton, but the two accounts locate the non-competition differently, and the difference is substantive. Stump's is *synchronic* -- at a single instant, one act with two sufficient descriptions -- and rests on Aquinas's primary/secondary causation. Wright's is *diachronic* -- the work is done now and taken up later, preserved and transfigured in a consummation that has not yet occurred. Stump needs no eschatology; Wright's whole warrant is eschatological. They are not the same claim and should not be merged, but each supplies what the other lacks: Stump the metaphysics of how one act can be two agents', Wright the account of why present work is not thereby rendered redundant.
 
 **Open question the wiki cannot yet answer:** Does Wright's 'preserved and transfigured' require Stump's metaphysics to be coherent, or does it float free? If human work is taken up into new creation, either it is God's act too (Stump's structure, and the eschatology is decoration) or it is genuinely the agent's contribution to a result God completes (and the non-competition is temporal rather than metaphysical). The wiki has been treating these as one position. They may be rivals.
+
+---
+
+## Wright's 2 John reading (elect-lady-as-corporate-person)
+*Sewing Agent, 2026-07-26*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md` (PROP-2026-07-26-003).
+
+**Why it sits here:** Wright reads the 'elect lady' of 2 John as a church addressed as a single corporate person, on near-primary (his own spoken) authority. Stump's metaphysics of corporate/composite substance needs exactly this kind of scriptural instance where a community is treated grammatically and theologically as one bearer of address.
+
+**Synthesis claim:** A tradition's canonical texts can supply not just doctrine but *individuation criteria* for corporate persons — 2 John personifies the community as a unified addressee, giving Stump's corporate-substance thesis a textual (not merely metaphysical) foothold.
+
+**Open question the wiki cannot yet answer:** Is the church-as-corporate-person a strong metaphysical claim (a genuine composite substance with its own persistence conditions) or a scriptural personification device? Wright supplies the text; Stump would have to supply the metaphysics — and they have not been made to meet.

@@ -587,3 +587,50 @@ Excluding `architecture/lit_search_results/` and `architecture/daily_sync/`: **8
 7. **Programmatic flag carried up from PROP-2026-07-13-004, needs a ruling.** VERSES AI halted all AI R&D on 2026-06-18 and Friston resigned as CSO on 2026-06-27. This is commentary *about* Friston, not material *from* him, so the standing quality filter generates no proposal — but the C2A2 framework explicitly treats a program's institutional track record as evidence about the program. The collapse of active inference's flagship commercial instantiation is exactly that kind of data point. Recommend deciding whether institutional/programmatic events become a first-class node type distinct from PRS triplets. It is the second week this has been raised without a home to put it in.
 
 *Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-19.*
+
+
+---
+
+## Sewing Agent Run — 2026-07-26 (Sunday, autonomous scheduled run)
+
+**Connectivity snapshot (full vault):** 2,943 orphan / 667 sparse / 57 connected / 3,667 total. CSV row appended to `architecture/metrics/connectivity_log.csv` in series-continuous FULL count. **Filtered (excluding `lit_search_results/` and `daily_sync/` machine dumps): 878 orphan / 667 sparse / 57 connected / 1,602 total.** The machine dumps are 56% of pages and ~70% of orphans — see attention item 1.
+
+**Pages processed (10):** all are this week's never-connected inbox proposals (0 backlinks each, before and after — agentic calls are routing *signal*, not backlinks; the target agents create the backlinks on action). Selected for freshness (all created 2026-07-21 → 2026-07-26) and tradition spread, deliberately keeping the week's genuine cross-tradition contact event (the Trace cluster).
+
+- `2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md` (PROP-2026-07-26-003) — bl 0→0 — 3 calls
+- `2026-07-26_rohr_in-love-with-scripture.md` (PROP-2026-07-26-001) — bl 0→0 — 4 calls
+- `2026-07-25_wolfram_theory-of-bugs.md` (PROP-2026-07-25-001) — bl 0→0 — 4 calls
+- `2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time.md` (PROP-2026-07-24-001) — bl 0→0 — 4 calls
+- `2026-07-22_carroll_mindscape-361-bassler-bacterial-communication.md` — bl 0→0 — 4 calls
+- `2026-07-22_kastrup_ai-awakening-chandaria.md` — bl 0→0 — 4 calls
+- `2026-07-22_kastrup_timalsina-suffering-joy.md` — bl 0→0 — 3 calls
+- `2026-07-22_mcgilchrist_ai-never-brain.md` — bl 0→0 — 5 calls
+- `2026-07-21_hoffman_traces-of-consciousness-primary.md` (PROP-2026-07-21-002) — bl 0→0 — 4 calls
+- `2026-07-21_hoffman_trace-institute-whitepaper.md` (PROP-2026-07-21-001) — bl 0→0 — 4 calls
+
+**Not selected this run (queued):** `2026-07-26_rohr_contemplative-exemplars-weekly-summary.md` (PROP-2026-07-26-002) and `2026-07-22_mcgilchrist_commencement-2026.md` — both substantive and orphaned, dropped only to hold the batch at 10 and preserve tradition spread. Queue first next run. No proposal carried a `content_verified: false` / "do not ingest" guard this week (contrast the 2026-07-19 Wright item that was correctly skipped).
+
+**Agentic calls injected: 39** — Friston ×7, Carroll ×3, Hoffman ×4, Kastrup ×3, Arkani-Hamed ×3, Loughran ×4, Stump ×3, Rohr ×3, Wright ×1, Levin ×3, Hawkins ×2, Wolfram ×3, Fredrickson ×1. Every call cites a specific PROP id, named PRS candidate, CROSS entry, or the concrete content it routes on — none are generic. (Re-verified after write: 0 boilerplate calls shipped.)
+
+**Bridge notes written: 16** — 4 CREATED, 12 APPENDED. One of the four fills a previously zero-byte stub.
+
+- **CREATED:** `carroll_levin` (quorum sensing: emergent agency without remainder — does "the collective has a goal" ever pay a predictive dividend over "the molecules do this"?), `fredrickson_kastrup` (is Trika's *ananda* the same property as broaden-and-build's joy, or only homonymous?), `friston_hoffman` (**a trace kernel is a Markov blanket with the surroundings integrated out** — the strongest untested formal bridge in the batch), `hoffman_mcgilchrist` (**FILLS a zero-byte stub**: the interface/represented cut and the left/right-hemisphere cut may be the same boundary from two sides).
+- **APPENDED:** `stump_wright`, `wright_rohr` (consolidated across the two same-day Scripture proposals), `rohr_stump`, `friston_wolfram` (bug ↔ free energy), `carroll_hoffman` (Trace-cluster contact event, consolidated across all three Trace pages), `arkanihamed_carroll` (emergent space / residual time), `carroll_friston` (colony-scale inference), `friston_kastrup`, `hoffman_kastrup`, `kastrup_rohr`, `friston_mcgilchrist`, `arkanihamed_hoffman` (consolidated across both Trace docs).
+
+**Verification (fail-loud):** all 10 pages carry exactly one `## Agentic Calls` section, one 2026-07-26 datestamp, and intact `---` YAML frontmatter; every page's byte-size grew versus a pre-run snapshot (append-only confirmed, no shrinkage). All 16 bridge files are non-empty and carry exactly one `Sewing Agent, 2026-07-26` stamp. `synthesis/` was backed up before writing; zero-byte stubs 10 → 9. CSV row written once (guarded against double-write). No content deleted or overwritten; no probe/test files left in the vault. No JS touched, so no `node --check` needed.
+
+### Worth Tom's attention
+
+1. **Metric inflation — now the FIFTH consecutive flag, still one line of config.** Full 3,667 pages / 2,943 orphans; excluding `lit_search_results/` and `daily_sync/`, **1,602 pages / 878 orphans.** The machine dumps are 56% of all pages and ~70% of all orphans and grow every week, so the headline "+184 orphans this week" is mostly them, not real disconnection. Recommend either excluding those two trees from the connectivity metric (with a break-marker in the CSV so the series discontinuity is legible) or splitting the CSV into two columns (curated vs. machine). This has been raised 2026-06-23 through 2026-07-19 without action.
+
+2. **This week produced a genuine inter-tradition *contact event*, not just parallel commentary — and it is the most study-ready item in months.** In the July AMA (PROP-2026-07-24-001) a listener asked Carroll directly to evaluate Hoffman's "Trace" mathematics (Markov-chain derivation of SR/GR from a consciousness-first base), and in the *same week* both primary Trace documents landed (PROP-2026-07-21-001/002). Physics-first and consciousness-first spacetime-derivation programs are now pointed at each other on the record. The `friston_hoffman` bridge sharpens *why* this is tractable: **a trace kernel Q_A is structurally a Markov blanket with the exterior integrated out.** If that identification holds, Friston's and Hoffman's formal results become mutually importable, and Recursive Trace Logic = hierarchical active inference. **Concrete next step:** have the Friston and Hoffman agents each state whether Q_A is *identical* to the blanket-marginalized generative model or differs in a load-bearing way (Hoffman's is exact-and-unique; the blanket is usually an approximation). This is a real, decidable formal question, not a metaphor.
+
+3. **Two same-day Scripture proposals (Rohr PROP-2026-07-26-001, Wright PROP-2026-07-26-003) put the network's most contested seam — how to read a text — into sharp relief.** Rohr reads revelation as second-personal self-disclosure of a Person; Wright anchors the same texts critically-realistically and adjudicates tradition-disputes by fit-with-the-narrative. The `wright_rohr` bridge frames this as a division of labor (referential control vs. participatory uptake) rather than a contradiction, and `rohr_stump` notes Rohr may supply the *initiation mechanism* Stump's second-personal knowledge leaves abstract. Worth a master-agent ruling on whether "second-personal / participatory reading" becomes a first-class hermeneutic axis alongside critical-realism.
+
+4. **Three of this week's ten proposals are AI-in-principle arguments from three different traditions arriving within days of each other** — McGilchrist ("AI cannot in principle do what the brain does," hemispheric), Kastrup/Chandaria ("what is the *thing* that is conscious?"), and Wolfram (irreducibility bounds verification of AI-generated code). This is a convergent cluster the pattern detector should probably see as one signal: three independent programs drawing a machine-cognition demarcation line, each locating the barrier differently (embodied attention / biological substrate / computational reducibility). None of the three yet lives in `cross_program_index.md` as a joint entry.
+
+5. **`friston_wolfram` "bug as free energy" is a candidate CROSS entry with an operational payoff, not just an analogy.** The bridge asks whether a codebase has a conserved free-energy-like quantity that testing/verification must pay down, with computational irreducibility setting a hard floor. Given the project's own verification-over-generation throughline (PRS-11/36/38/39/42) and Tom's active vibe-coding practice, this one is unusually close to actionable tooling. Recommend the master agent open a CROSS entry and the Wolfram/Friston agents state whether the quantity is definable.
+
+6. **Zero-byte bridge stubs: 10 → 9.** Filled `hoffman_mcgilchrist` this run (real material existed — the interface/hemisphere boundary parallel). Remaining: `arkanihamed_loughran`, `carroll_hawkins`, `carroll_loughran`, `hawkins_loughran`, `hawkins_wolfram`, `hoffman_loughran`, `kastrup_loughran`, `loughran_mcgilchrist`, `mcgilchrist_wright`. Seven of nine are `*_loughran` pairs — consistent with the standing read that the set was scaffolded from a full pairwise matrix and never populated. Filling beats deleting where real material exists; the delete command remains available if you want the noise gone: `cd "wiki/synthesis" && find . -name '*_bridge.md' -size 0 -delete`
+
+*Autonomous scheduled run. Append-only; no deletions. All additions italic-datestamped 2026-07-26.*

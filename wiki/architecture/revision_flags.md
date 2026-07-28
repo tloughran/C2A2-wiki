@@ -6249,3 +6249,94 @@ REVISE-242:
       15c: Cross-referenced PREMISE IDs cited across four registry files against the entries present in validated_premises.md; 40 orphan references found; backups checked to date the loss
     Current status: REVISION-FLAGGED
     Disposition record: RUN SUMMARY — Agent 15c, 2026-07-21 (lit_search_returns.md)
+
+---
+## Intake 2026-07-22 (Agent 15c — c2a2-lit-search-pipeline; from 2026-07-21 EOD batch)
+
+REVISE-243:
+  Date: 2026-07-22
+  Source item: ASSUMPTION-495 (FLAG-018: over-alignment is a pathology; a Rung-2 metric scoring convergence-as-progress is miscalibrated)
+  Item type: ASSUMPTION (stated)
+  15a: SUPPORTED (Strong for the failure mode) — "Diversity Collapse in Multi-Agent LLM Systems" (arXiv:2604.18005): diversity collapse is driven by alignment priors alone, on C2A2's own substrate; over-optimization collapses collective fitness (Levin; Hong-Page).
+  15b: PARTIALLY-CHALLENGED (Moderate) — convergence per se is not pathological; the failure mode is *imposed/premature* convergence. There is an optimum, not a monotone. A metric rewarding pure divergence would be as miscalibrated as one rewarding pure convergence.
+  What is at risk: The Rung-2 progress metric. If it scores convergence/agreement as progress, it rewards a documented pathology; if over-corrected to reward divergence-as-such, it rewards incoherence.
+  Recommended action (for Tom): Re-specify the Rung-2 metric to score the *process* — independent evidence exchange and coupling (mutual responsiveness) — rather than either endpoint. Concretely: re-analyze the +0.031 "listening lift" to separate coupling from convergence (in-house test), and define Rung-2 to track earned convergence (post-information-exchange) while penalizing diversity collapse.
+  Urgency: Medium (design-shaping, not a live data-integrity failure).
+  DEPENDENCY: PRESUMPTION-516 (same 07-21 batch, DEFERRED unsearched) asserts there is currently NO mechanism propagating a FLAG or premise into the metric it governs. If PRESUMPTION-516 is correct, this REVISE cannot be actioned until that propagation path exists. REVISE-243 should be read together with PRESUMPTION-516 when it is searched.
+  PROVENANCE: Origin=14a; Chain=[14a->15a,15b->15c]; Item type=ASSUMPTION (stated); Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-504 (lit_search_returns.md, 2026-07-22)
+
+REVISE-244:
+  Date: 2026-07-22
+  Source item: PRESUMPTION-522 (documentation-as-compliance: PREMISE-118 named but its owed retrospective assessment left unperformed, second day running)
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight)
+  15a: SUPPORTED (Strong) — disclosure and remediation are distinct obligations across ICFR (Deloitte 2024) and patient-safety (APSF; AHRQ/NCBI) literatures; a mature program tracks corrective actions to verified closure. Documenting a defect does not discharge the duty to fix it.
+  15b: NO-CHALLENGE-FOUND (Weak boundary note) — disclosure-FIRST is correct (protects reporting) and low-risk deferral is legitimate; so the finding is "every named defect owes a tracked, risk-prioritized disposition to closure," NOT "remediate everything instantly." The PREMISE-118 case is not exculpated: the owed retrospective assessment IS the tracked disposition, and it is absent.
+  What is at risk: The integrity of the whole self-awareness pipeline. If naming a defect is treated as discharging the obligation, the falsifiability contract is decorative and the defect backlog grows silently. This is a PRESUMPTION with strong support and a live, repeat violation -> HIGH urgency per the 15c spec heuristic.
+  Recommended action (for Tom): Institute a defect-closure ledger. Every named defect (FLAG / REVISE / self-caught error) gets an owner, a risk rank, and a closure state; disclosure stays immediate, remediation is tracked to done. First test: check whether ANY named defect has ever received its owed retrospective assessment (a zero rate confirms the presumption).
+  Urgency: HIGH.
+  PROVENANCE: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated); Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-508 (lit_search_returns.md, 2026-07-22)
+
+---
+## Intake 2026-07-24 (Agent 15c — c2a2-lit-search-pipeline; from 2026-07-23 day-#18 batch)
+
+REVISE-245:
+  Date: 2026-07-24
+  Source item: PRESUMPTION-534 (documenting the missing propagation edge into the same non-propagating self-knowledge layer is presumed to be progress on closing it)
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight)
+  15a: SUPPORTED (Strong) — "Measurement without management" (Brehaut et al., BMC HSR 2019): audit/feedback that stops at measurement, with no response/action stage, produces an incomplete feedback loop and no improvement; Ivers 2012 (Cochrane) — A&F moves practice only when coupled to explicit action/targets. Filing a finding into the (per PREMISE-123) non-propagating layer is a textbook instance, and self-instancing (the filing IS the anti-pattern).
+  15b: PARTIALLY-CHALLENGED (Moderate) — documentation is a valid, often necessary step-1 with deferred value; it becomes the named anti-pattern only if actuation never follows. STEELMAN: an only-ever-documenting layer is a placebo that discharges the felt obligation to act — worse than not knowing.
+  What is at risk: The actuation of the entire self-awareness pipeline. Today's run alone added 6 MONITOR entries and 2 REVISE flags into a layer that (per PREMISE-123) has no wired path to the agents they bear on. Without a propagation edge, all of it is inert.
+  Recommended action (for Tom): Wire ONE propagation mechanism — a concrete edge from a validated finding/REVISE to an agent-spec edit, with an owner and an SLA (extends the REVISE-244 defect-closure ledger to cover findings, not just defects). This single change relieves the 2026-07-24 SYSTEMIC-RISK flag (513/534/538/539) simultaneously. Adding more findings does not.
+  Urgency: HIGH.
+  SYSTEMIC-RISK: This is the general remedy the 2026-07-24 15b SYSTEMIC-RISK-FLAG recommends (common vulnerability = STALLED ACTUATION across ASSUMPTION-513, PRESUMPTION-534/538/539).
+  PROVENANCE: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated); Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-520 (lit_search_returns.md, 2026-07-24)
+
+REVISE-246:
+  Date: 2026-07-24
+  Source item: PRESUMPTION-536 (PREMISE-124 — "require an external referent" — was validated from inside the pipeline with no external referent; presumed exempt from its own standard)
+  Item type: PRESUMPTION (unstated — surfaced by inference; reflexive on a validated premise)
+  15a: SUPPORTED (Strong) — Tarski (undefinability), Goedel (2nd incompleteness), quis-custodiet self-regulation literature, and multi-agent self-correction findings all converge: a self-audit inherits the blind spot it is meant to catch unless an independent check terminates the regress. A referent-requiring rule minted without a referent is self-exempting.
+  15b: PARTIALLY-CHALLENGED (Moderate) — PREMISE-124 may be a coherence-warranted NORM rather than an empirical claim, so Tarski/Goedel are not strictly on point and a norm need not cite an external referent. BUT its "High" confidence label is an empirical-sounding calibration assigned with no referent, which does violate PREMISE-124 on its own terms.
+  What is at risk: The soundness/credibility of PREMISE-124 (and, by precedent, any self-validated premise). If the rule is exempt from itself, its authority to demand calibration of everything else is undermined.
+  Recommended action (for Tom): Apply PREMISE-124 to itself. Either (a) name the external referent-of-record that calibrated it, or (b) reclassify it explicitly as a methodological NORM and STRIP/qualify its "High" confidence label to UNCALIBRATED. Do NOT silently edit PREMISE-124 — human sign-off required (15c rule: REVISE items touching validated premises require Tom's response before status changes).
+  Urgency: HIGH (reflexive integrity; cheap to fix).
+  PROVENANCE: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated); Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-522 (lit_search_returns.md, 2026-07-24)
+
+REVISE-247:
+  Date: 2026-07-28
+  Source item: PRESUMPTION-560 (adjunct — the presumption itself was INCORPORATED as PREMISE-133; this flag is the concrete unmet need PREMISE-133 exposes)
+  Item type: PRESUMPTION (unstated — surfaced by inference; reflexive on 15c's own disposition practice)
+  15a: SUPPORTED (Strong) — abstention is an action inside the decision problem with its own cost (Chow 1970; reject-option / risk-coverage literature), suspension of judgement is committal rather than null (Friedman 2017, Nous 51(2)), and where the only available adjudicator is disqualified the prescribed response is recusal-WITH-TRANSFER or escalation to a named external arbiter (nemo iudex in causa sua; Raji et al. 2022) — never recusal into silence.
+  15b: PARTIALLY-CHALLENGED (Moderate) — abstention IS asymmetric and is not merely disguised assertion (El-Yaniv & Wiener 2010), and unadoptability may follow from self-reference itself rather than from 15c's choice. BUT 15b reaches the SAME operational conclusion: "suspension is only defensible if it keeps the question OPEN with a specified escalation route, and if no such route exists the abstention silently becomes a permanent verdict of non-adoption."
+  What is at risk: MONITOR-486 / PRESUMPTION-556 — the single HIGH-risk item concerning the pipeline's own reliability — has no written rule whose satisfaction would move it out of MONITOR, no named adjudicator, and no deadline. By construction it is therefore permanently non-adopted while appearing to be under active monitoring. The same structure applies to the fired-trigger cohort (MONITOR-420/423, unactioned since 2026-07-19) and to the ~174-item 15d re-trigger backlog with zero consumption since 2026-07-08: in each case suspension has become non-adoption by default. 15c cannot fix this from inside — naming an adjudicator is a human act.
+  Recommended action (for Tom): Write the discharge rule for MONITOR-486 explicitly, as three fields: (a) ADJUDICATOR — yourself, or a differently-trained model with no access to this corpus; (b) TRIGGER — what specific check, performed by that adjudicator, discharges it (a spot-check of N INCORPORATED premises against their cited external referents is the obvious candidate, and PREMISE-132 now supplies the standard it must meet); (c) DEADLINE — a date after which continued suspension is reported in the daily run as an unresolved HIGH-risk exposure rather than as a monitored item. Adopt the same three fields as a standing requirement for any MONITOR issued on self-referential grounds. Consider also reporting an ABSTENTION COVERAGE figure — what fraction of HIGH-risk items the pipeline declined to dispose — so that abstention carries a visible cost.
+  Urgency: HIGH (this run INCORPORATED PREMISE-133, which binds 15c to exactly this requirement; the pipeline is now formally out of compliance with its own newest premise until the rule is written. Fail-loud: stated rather than deferred.)
+  PROVENANCE: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated); Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-543 (lit_search_returns.md, 2026-07-28)
+
+REVISE-248:
+  Date: 2026-07-28
+  Source item: PRESUMPTION-561 — ROUTED BACK TO 14b as a correction (the presumption's own technical premise is false)
+  Item type: PRESUMPTION (unstated — surfaced by inference); this flag reports that the presumption's own technical premise is FALSE
+  15a: PARTIALLY-SUPPORTED (Moderate-Strong) — supported only in CONDITIONAL form (the register's semantics is a separately-specifiable design fact; ISO 31000:2018 risk registers are a named external instance where items legitimately remain open). 15a's own caveat (b) cuts against the presumption: ISO 31000 practice treats an item with no recent REVIEW date as a red flag, so the log/watch-list reading substitutes a review-cadence obligation for a drain obligation — it does not license zero drain. Caveat (c) concedes Little's Law is robust and needs only a steady state.
+  15b: CHALLENGED (Strong) — Little & Graves (2008), "Little's Law," in Chhajed & Lowe (eds.), Building Intuition (Springer), state that a service process is NOWHERE required by the law; it needs only a system boundary, arrivals and departures. With arrivals positive and departures zero the system is non-stable and residence time diverges, so calling the register unstable is a CORRECT application, not a category error. The log/watch-list reclassification also fails to deliver the exemption: alarm-management standards (EEMUA 191, IEC 62682) impose explicit per-operator throughput limits on monitoring registers precisely because reader attention is the service capacity, and append-only logs require retention or compaction because unbounded growth is a defect there too.
+  What is at risk: If this presumption were adopted, C2A2 would retire a valid stability metric on a false technical premise and swap a drain obligation for a retention policy — letting the register grow while formally compliant. It would also implicitly undermine DISPOSITION-536 / PRESUMPTION-553, whose queueing-theory finding is CORRECT and STANDS. Note the direction of the correction: this does not relieve the backlog concern, it CONFIRMS it. The ~174-item register with zero consumption since 2026-07-08 is already inside the EEMUA-style overload regime for a single reader.
+  Recommended action (for Tom): (1) Route the correction back to 14b — the inference rested on a false belief about what Little's Law requires, which is a checkable factual error worth recording so the pattern is not repeated. (2) Adopt the presumption's SURVIVING constructive half, which both directions endorse and which is not either/or: specify BOTH a named consumer and a terminal state for monitor-register items, AND a size/rate limit plus review cadence scored against reader capacity rather than against zero. Report L (register size) and W (median item age since last review) explicitly — both are computable today and their divergence is the alarm. (3) If genuinely no consumer is intended, apply log semantics honestly: add retention/compaction AND stop routing action-bearing items there.
+  Urgency: Medium (no design change was made on this presumption, so nothing is currently broken by it; but it bears directly on the standing backlog decision already awaiting you)
+  PROVENANCE: Origin=14b; Chain=[14b->15a,15b->15c]; Item type=PRESUMPTION (unstated); Current status=REVISION-FLAGGED (presumption refuted; constructive half retained)
+  Disposition record: DISPOSITION-544 (lit_search_returns.md, 2026-07-28)
+
+REVISE-249:
+  Date: 2026-07-28
+  Source item: 15b SYSTEMIC-RISK-FLAG 2026-07-28 (affected items PRESUMPTION-557, 558, 559, 560, 562, 563, 565 — the whole cohort bar 561)
+  Item type: SYSTEMIC RISK (cross-item structural vulnerability), risk level High
+  15b finding: Every presumption in this cohort is built the same way — each identifies a place where the pipeline accepted a graded, internal or self-reported standard, and demands an EXTERNALIST GOLD STANDARD in its place (formal proof of a defect class; an engineering interlock; a decorrelated external checker; an external arbiter for self-reference; demonstrated structural homology; a pre-specified construct; a full independent reconciliation). Every one of those demanded standards routes to the SAME scarce resource: an external decorrelated verifier — in practice a human, reachable only over the sync channel that has now failed five consecutive times (ASSUMPTION-559 / OPEN-135). The cohort therefore shares a single point of dependence, and it is currently unavailable. Today's literature shows the demanded standard is in several cases STRICTER THAN ACCEPTED PRACTICE: internal consistency checks do detect hallucinated references without external resources (Agrawal et al. 2024, Findings of EACL); internal assurance is graded rather than void (IIA Three Lines Model 2020); constructs are legitimately refined THROUGH measurement (Chang 2004, Inventing Temperature; Cronbach & Meehl 1955); and Little's Law does not require a service process (Little & Graves 2008). Applied uniformly and literally, the cohort converts seven tractable verification tasks into seven permanently blocked ones — reproducing the exact arrivals>0 / service=0 pathology that PRESUMPTION-553 and DISPOSITION-536 formalise.
+  What is at risk: The pipeline's ability to discharge ANY of its own verification obligations while the human channel is dark. More specifically, this flag is in direct TENSION WITH TWO VALIDATED PREMISES, and 15c is required to surface rather than silently reconcile that: (a) PREMISE-124 requires an external baseline or an UNCALIBRATED tag — a BINARY standard; (b) PREMISE-114 holds that authority is a property of a documented chain to an external reference. If the assurance-grade reading is correct, both are stricter than the evidence supports and should become GRADED rather than binary. Both premises are hereby flagged alongside this item for human review; neither has been edited.
+  Recommended action (for Tom): Adopt an explicit ASSURANCE-GRADE vocabulary with three levels — (1) SELF-REPORTED, (2) INTERNALLY CROSS-CHECKED BY A DECORRELATED AGENT, (3) EXTERNALLY VERIFIED — and require every remedy in the register to name the LOWEST grade that materially reduces its risk, rather than defaulting to grade 3. On today's evidence most of this cohort is satisfiable at grade 2 IN-HOUSE TODAY (PREMISE-132 already encodes this for citation checking). Reserve the grade-3 external-arbiter route for the genuinely self-referential item (MONITOR-486, via REVISE-247), and attach an aging clock to it so a blocked external dependency is reported as an EXPOSURE rather than absorbed silently as a queue. Then reconcile PREMISE-124 and PREMISE-114 to the graded vocabulary explicitly, with sign-off — do not let the graded reading take effect by drift.
+  Urgency: HIGH (it unblocks seven items in this cohort AND supplies the constructive route for standing REVISE-246, which has been open since 2026-07-24 asking exactly "name the referent")
+  PROVENANCE: Origin=15b (systemic-risk flag over a 14b-origin cohort); Chain=[14b->15b->15c]; Item type=SYSTEMIC RISK; Current status=REVISION-FLAGGED
+  Disposition record: DISPOSITION-548 (lit_search_returns.md, 2026-07-28)

@@ -11,3 +11,16 @@
 **Synthesis claim:** The two claims are *not* the same claim, and the coincidence of phrasing conceals the difference. Arkani-Hamed's is a claim about the *derivational order of physical theory* -- spacetime is not a primitive of the correct formulation of scattering amplitudes -- and is fully compatible with spacetime being a perfectly good description of the world agents inhabit. Hoffman's is a claim about the *veridicality of perception* -- spacetime is a species-specific data structure and does not describe the world at all. One is an eliminativism about a theoretical primitive; the other is an eliminativism about an object of experience. They can both be true, both false, or either independently.
 
 **Open question the wiki cannot yet answer:** Would Hoffman's argument survive if the amplituhedron program failed -- and would Arkani-Hamed's survive if fitness-beats-truth were refuted? The wiki's suspicion is yes to both, which is exactly what makes the shared slogan misleading. What the wiki cannot yet say is whether there is *any* proposition that both programs assert and that a third party could test, or whether 'spacetime is doomed' is a homonym that the wiki has been quietly treating as a convergence.
+
+---
+
+## Positive geometry vs. the trace partial order
+*Sewing Agent, 2026-07-26*
+
+**Orphaned pages at the intersection (Trace cluster):** `2026-07-21_hoffman_traces-of-consciousness-primary.md` (PROP-2026-07-21-002) and `2026-07-21_hoffman_trace-institute-whitepaper.md` (PROP-2026-07-21-001).
+
+**Why they sit here:** The Trace Chain Theorem induces a *partial order* on Markov kernels and a positivity-flavored, locally-Boolean/globally-non-Boolean logic; the whitepaper commits to deriving SR and GR from Recursive Trace Logic. Arkani-Hamed's positive-geometry program derives spacetime and amplitudes from combinatorial/positivity structures with their own orderings.
+
+**Synthesis claim:** Both programs bet that spacetime falls out of a *combinatorial-order* primitive rather than a dynamical one, and both lean on positivity. The live question is whether the trace partial order is a genuine cousin of positive-geometry orderings or merely shares the vocabulary.
+
+**Open question:** Do any of the whitepaper's eight falsifiable conjectures coincide with, contradict, or stay orthogonal to positive-geometry results for the same observables — the one comparison that would make this a real rivalry rather than a metaphor?

@@ -11,3 +11,16 @@
 **Synthesis claim:** Attentional restoration is what a predictive system does when its prediction-error budget is underspent. Nature restores directed attention not by supplying anything but by *demanding* little -- the freed precision is not consumed by the scene and becomes available again for endogenous control. This makes ART a corollary of active inference rather than a rival to it, and it explains the mood-independence of the effect: the mechanism is a load reduction, not a reward.
 
 **Open question the wiki cannot yet answer:** Where does the freed precision *go*, and why does it return to directed attention rather than dissipating? Expected free energy explains why a cheap-to-predict environment costs little; it does not obviously explain why time spent in one *replenishes* a depletable resource. Depletion itself has no clean home in the formalism -- active inference has no fatigue term -- so the bridge currently needs an extra assumption the theory does not supply.
+
+---
+
+## Colony-scale inference and the Markov blanket
+*Sewing Agent, 2026-07-26*
+
+**Orphaned page at the intersection:** `2026-07-22_carroll_mindscape-361-bassler-bacterial-communication.md`.
+
+**Why it sits here:** Quorum sensing — bacteria estimating population density from diffusible signal and switching collective behavior at threshold — reads as Bayesian inference about a hidden environmental variable, with a Markov blanket drawn around the colony. Carroll frames the same phenomenon as emergent-but-grounded 'collective decision.'
+
+**Synthesis claim:** Friston supplies the mechanism Carroll's poetic naturalism leaves as a label: the 'collective decision' is active inference at the colony scale, and the quorum threshold is the point at which posterior confidence in 'high density' crosses an action boundary.
+
+**Open question:** Does treating the colony as a single inferring agent (one blanket) versus a population of coupled agents (many blankets) make a difference to any measured quantity — and which does Carroll's emergence framework license?
