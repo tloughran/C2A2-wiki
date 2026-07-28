@@ -673,16 +673,16 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <span style="width:1px;height:20px;background:#3a3a4a;"></span>
       <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;" title="Free: positions are emergent, no encoded meaning. Discipline×Year: X = thinker's discipline, Y = file date — spatial position carries readable meaning.">Mode:
         <select id="layout-mode" onchange="setLayoutMode(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
-          <option value="free" selected>Free</option>
-          <option value="discipline-year">Discipline × Year</option>
+          <option value="free">Free</option>
+          <option value="discipline-year" selected>Discipline × Year</option>
         </select>
       </label>
       <label style="font-size:11px;display:flex;align-items:center;gap:4px;cursor:pointer;" title="Picks which edges count as 'top' when there are more edges than fit on screen. Zoom in to see weaker edges.">Score:
         <select id="score-mode" onchange="setScoreMode(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
-          <option value="balanced" selected>Balanced</option>
+          <option value="balanced">Balanced</option>
           <option value="connected">Connected</option>
           <option value="cross-tradition">Cross-tradition</option>
-          <option value="editorial">Editorial</option>
+          <option value="editorial" selected>Editorial</option>
         </select>
       </label>
       <button id="btn-edge-help" onclick="toggleEdgeHelp(event)" style="width:18px;height:18px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:11px;font-weight:600;cursor:pointer;padding:0;line-height:16px;text-align:center;" title="How adaptive edge density works">?</button>
@@ -980,6 +980,10 @@ var activeNodes = [];
 // Live d3 selection of the currently rendered (budget-joined) edge <line>s.
 // Owned by applyEdgeFilters(); read by the simulation tick handler.
 var linkSel = null;
+// Live d3 selection of the rendered node <circle>s. Owned by rebuildGraph().
+// Module-scoped for the same reason linkSel is: paintPositions() is now called
+// from outside the tick closure (by the voice wave), so it needs both handles.
+var nodeSel = null;
 var playSpeed = 1;
 var isMuted = false;
 var brightness = 1;
@@ -1053,7 +1057,10 @@ var ALL_DATES = [];                            // populated at init from NODES
 // Visible edge count = top-N by score from cut-survivors, where N grows with
 // zoom. Mode picks the score formula. Switching mode/zoom/cuts re-evaluates
 // visibility without rerunning the force simulation — positions stay stable.
-var scoreMode = 'balanced';                  // 'balanced' | 'connected' | 'cross-tradition' | 'editorial'
+// Default is 'editorial' (Tom, 2026-07-27): on first load the edges that survive
+// the budget should be the ones a reader is meant to follow, not the ones a hub
+// node happens to have. Keep this in sync with the <option selected> above.
+var scoreMode = 'editorial';                 // 'balanced' | 'connected' | 'cross-tradition' | 'editorial'
 var BASE_EDGE_BUDGET = 2500;                 // edges visible at 1× zoom
 var currentZoomScale = 1.0;                  // updated by the zoom handler
 var _edgeRebuildTimer = null;                // debounces the expensive edge rebuild
@@ -1163,7 +1170,12 @@ document.addEventListener('click', function(ev) {
 //     X = its discipline angle, Y = its date. Spatial position becomes
 //     readable: same horizontal band → same discipline; same vertical
 //     band → same era.
-var layoutMode = 'free';
+// Default is 'discipline-year' (Tom, 2026-07-27): the graph should open already
+// saying something — X = discipline, Y = era — rather than as an emergent blob a
+// viewer has to be told to re-read. initGraph() installs the encx/ency forces
+// when this is the mode, so setting it here is enough. Keep in sync with the
+// <option selected> above.
+var layoutMode = 'discipline-year';
 
 // Mirror the THINKER_DISC table from prs_3d.html so the Sociogram can compute
 // X-targets for tradition files. Update both tables together when adding a tradition.
@@ -1726,10 +1738,13 @@ function applyEdgeFilters() {
       .attr('stroke-width', function(d) { return d.layer ? 0.9 : 0.6; })
       .attr('stroke-dasharray', function(d) { return (!d.layer && d.bridge === 'same') ? '3,3' : null; })
       .attr('opacity', _edgeOpacity)
-      .attr('x1', function(d) { return d.source.x; })
-      .attr('y1', function(d) { return d.source.y; })
-      .attr('x2', function(d) { return d.target.x; })
-      .attr('y2', function(d) { return d.target.y; });
+      /* Through the paint layer, not d.x directly: an edge set rebuilt while
+         the voice wave is running would otherwise join at un-displaced ends and
+         visibly detach from its own nodes for a frame. */
+      .attr('x1', function(d) { return wpx(d.source); })
+      .attr('y1', function(d) { return wpy(d.source); })
+      .attr('x2', function(d) { return wpx(d.target); })
+      .attr('y2', function(d) { return wpy(d.target); });
   }
   // Step 5: status indicator + dynamic banner counts (Pass G)
   // Three-part readout: shown (top-N rendered, the ONLY edges in the DOM) /
@@ -2099,6 +2114,223 @@ function hideTooltip() {
   document.getElementById('tooltip').style.display = 'none';
 }
 
+// ── PAINT LAYER ──
+//
+// The ONE place node and edge coordinates are written to the DOM. It reads two
+// things and adds them: d.x/d.y, which belong to the force simulation and are
+// authoritative, and d._wx/d._wy, which belong to the voice wave below and are
+// transient.
+//
+// THE WAVE MUST NEVER BE ADDED INTO d.x/d.y. The simulation reads those back on
+// every tick and integrates them as real positions, so a displacement written
+// there would be absorbed into the layout and kept — the graph would drift a
+// little further from its own solution every time the guide opened its mouth,
+// and nothing would ever put it back. Displacement is a fact about the paint,
+// not about the layout, and this is where that distinction is enforced.
+function wpx(d) { return d.x + (d._wx || 0); }
+function wpy(d) { return d.y + (d._wy || 0); }
+function paintPositions() {
+  // linkSel is the live budget-joined selection owned by applyEdgeFilters.
+  if (linkSel) {
+    linkSel.attr('x1', function(d) { return wpx(d.source); })
+           .attr('y1', function(d) { return wpy(d.source); })
+           .attr('x2', function(d) { return wpx(d.target); })
+           .attr('y2', function(d) { return wpy(d.target); });
+  }
+  if (nodeSel) {
+    nodeSel.attr('cx', wpx).attr('cy', wpy);
+  }
+}
+
+// ── VOICE WAVE ──
+//
+// A travelling wave through the graph, driven by the amplitude of the voice
+// guide's actual speech. The point is not decoration: it gives the guide a body
+// in the room it is describing, and the body's ORIGIN is the thing being talked
+// about, so the motion carries reference rather than mood.
+//
+// THIS FILE IS THE RECEIVER AND IS INERT ON ITS OWN. Nothing here starts by
+// itself; a driver has to push samples in. The driver lives in the shell
+// (explorer.html), which already builds an AnalyserNode on the guide's WebRTC
+// output track in armOutputMeter() and can reach these globals directly, the
+// iframe being same-origin. Until that lands, VoiceWave.demo() drives a
+// synthetic envelope so the receiver can be tuned and reviewed standalone.
+//
+// WHAT IS DELIBERATELY NOT HERE:
+//   - No transform on graphG. That attribute belongs to d3.zoom, which rewrites
+//     it wholesale on every zoom event; a "breath" scale written there would be
+//     erased by the next wheel tick and would fight panning in between. If a
+//     whole-body breath is wanted later it belongs on nodeG/linkG, not graphG.
+//   - No amplitude invented when there is no audio. See VoiceWave.speak.
+var WAVE_MAX_PX    = 14;    // peak displacement, GRAPH units (link distance is 60)
+var WAVE_LENGTH    = 220;   // graph units between crests -- deliberately in graph
+                            // space, not screen space, so zooming in shows you a
+                            // longer wave rather than a rescaled picture of one
+var WAVE_SPEED     = 1.15;  // crests per second passing a fixed point
+var WAVE_REACH     = 1400;  // graph units; e-folding distance of the envelope
+var WAVE_ATTACK    = 0.28;  // per-frame approach to a louder sample
+var WAVE_RELEASE   = 0.09;  // ...and to a quieter one. Slower: speech is gappy,
+                            // and releasing as fast as it attacks reads as
+                            // strobing rather than as breathing.
+var WAVE_SAMPLE_TTL = 260;  // ms a sample stays good. The driver going away must
+                            // settle the graph, not freeze it mid-crest.
+
+var _waveTarget = 0;        // most recent RMS from the driver, 0..1
+var _waveAmp = 0;           // smoothed amplitude actually painted
+var _waveLastSample = 0;    // performance.now() of that sample
+var _waveOrigin = null;     // node object, or {x, y}, or null for viewport centre
+var _waveRAF = null;
+var _waveT0 = 0;
+var _waveDemoUntil = 0;
+
+function _waveNow() {
+  return (window.performance && window.performance.now) ? window.performance.now() : Date.now();
+}
+
+function _waveOriginXY() {
+  if (_waveOrigin && _waveOrigin.x != null && isFinite(_waveOrigin.x)) {
+    return { x: _waveOrigin.x, y: _waveOrigin.y };
+  }
+  // Nothing named: emanate from the middle of what is actually on screen, which
+  // is the honest default -- the guide is talking about the view, not a node.
+  var svg = document.getElementById('graph-svg');
+  if (!svg) return { x: 0, y: 0 };
+  try {
+    var t = d3.zoomTransform(svg);
+    var p = t.invert([svg.clientWidth / 2, svg.clientHeight / 2]);
+    return { x: p[0], y: p[1] };
+  } catch (e) {
+    return { x: svg.clientWidth / 2, y: svg.clientHeight / 2 };
+  }
+}
+
+function _waveClear() {
+  if (activeNodes) {
+    activeNodes.forEach(function(d) { d._wx = 0; d._wy = 0; });
+  }
+  paintPositions();
+}
+
+function _waveTick() {
+  var now = _waveNow();
+  // A sample older than TTL means the driver stopped talking (or went away);
+  // either way the target is silence and the graph settles.
+  var target = (now - _waveLastSample < WAVE_SAMPLE_TTL) ? _waveTarget : 0;
+  var demoing = now < _waveDemoUntil;
+  if (demoing) { target = _waveDemoSample(now); }
+  var k = (target > _waveAmp) ? WAVE_ATTACK : WAVE_RELEASE;
+  _waveAmp += (target - _waveAmp) * k;
+
+  // A demo's phrase envelope sits at exactly 0 between phrases, so the quiet
+  // test has to know a demo is still running or it would end after one phrase.
+  if (_waveAmp < 0.004 && target === 0 && !demoing) {
+    _waveRAF = null;
+    _waveAmp = 0;
+    _waveClear();               // settle exactly on the simulation's own answer
+    return;
+  }
+  _waveRAF = requestAnimationFrame(_waveTick);
+
+  // A hidden tab must not be animated: it is a per-frame DOM write nobody can
+  // see. Amplitude keeps decaying above so returning to the tab finds it at rest.
+  if (document.hidden) { return; }
+
+  var o = _waveOriginXY();
+  var phaseT = ((now - _waveT0) / 1000) * WAVE_SPEED;
+  var amp = _waveAmp * WAVE_MAX_PX;
+  var TWO_PI = Math.PI * 2;
+  var i, d, dx, dy, r, env, disp;
+  for (i = 0; i < activeNodes.length; i++) {
+    d = activeNodes[i];
+    dx = d.x - o.x; dy = d.y - o.y;
+    r = Math.sqrt(dx * dx + dy * dy);
+    if (r < 0.001) { d._wx = 0; d._wy = 0; continue; }
+    env = Math.exp(-r / WAVE_REACH);
+    disp = amp * env * Math.sin(TWO_PI * (r / WAVE_LENGTH - phaseT));
+    d._wx = (dx / r) * disp;
+    d._wy = (dy / r) * disp;
+  }
+  paintPositions();
+}
+
+function _waveDemoSample(now) {
+  // Speech-shaped: a syllable rate under a slower phrase envelope. Only ever
+  // reached from VoiceWave.demo(), never from a real session.
+  var t = (now - _waveT0) / 1000;
+  var syl = 0.5 + 0.5 * Math.sin(t * 2 * Math.PI * 3.2);
+  var phrase = Math.max(0, Math.sin(t * 2 * Math.PI * 0.18));
+  return Math.min(1, syl * phrase);
+}
+
+function _waveStart() {
+  if (_waveRAF) return;
+  if (!window.VoiceWave.enabled) return;
+  if (!activeNodes || !activeNodes.length) return;
+  _waveT0 = _waveNow();
+  _waveRAF = requestAnimationFrame(_waveTick);
+}
+
+window.VoiceWave = {
+  // Off entirely for anyone who has asked the OS for less motion. Also the
+  // single kill switch: set false and the next sample is ignored.
+  enabled: !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches),
+
+  // Push one amplitude sample, 0..1, at whatever rate the driver has one.
+  //
+  // THE DRIVER MUST PASS A MEASURED NUMBER. There are two speech paths in the
+  // shell and only one of them has audio a page can see: the realtime WebRTC
+  // voice, via the analyser in armOutputMeter(). The article reader is
+  // window.speechSynthesis, which exposes no stream at all. If the reader is
+  // ever wired to this, whatever envelope it sends is a GUESS about a sound
+  // this page cannot hear, and it must be named as one at the call site --
+  // a wave that looks measured but is not would be the visualization lying
+  // about its own body.
+  speak: function (rms) {
+    if (!this.enabled) return;
+    var v = Number(rms);
+    if (!isFinite(v)) return;
+    _waveTarget = Math.max(0, Math.min(1, v));
+    _waveLastSample = _waveNow();
+    _waveStart();
+  },
+
+  // Where the wave comes from. A node id, a node object, an {x, y} in graph
+  // coordinates, or null for the centre of the current view. This is the part
+  // that makes the motion mean something: it should be whatever the guide is
+  // talking about at that moment.
+  origin: function (ref) {
+    if (ref == null) { _waveOrigin = null; return true; }
+    if (typeof ref === 'string') {
+      var n = nodeById[ref];
+      if (!n) return false;
+      _waveOrigin = n;
+      return true;
+    }
+    if (ref.x != null && isFinite(ref.x)) { _waveOrigin = ref; return true; }
+    return false;
+  },
+
+  // Stop being spoken to. The wave rides its release down rather than cutting,
+  // so the graph settles instead of snapping.
+  silent: function () {
+    _waveTarget = 0;
+    _waveDemoUntil = 0;
+  },
+
+  // Standalone driver for review before the shell side exists. Console:
+  //   VoiceWave.origin('traditions/levin/index.md'); VoiceWave.demo(12)
+  demo: function (seconds) {
+    if (!this.enabled) { return 'VoiceWave disabled (prefers-reduced-motion)'; }
+    var now = _waveNow();
+    _waveT0 = now;
+    _waveDemoUntil = now + (Number(seconds) || 8) * 1000;
+    _waveLastSample = now;
+    _waveTarget = 0;
+    _waveStart();
+    return 'synthetic envelope, ' + ((_waveDemoUntil - now) / 1000) + 's';
+  }
+};
+
 // ── GRAPH ──
 var graphG = null;
 var linkG = null;
@@ -2181,7 +2413,10 @@ function rebuildGraph() {
     return true;
   });
   var activeIds = {};
-  activeNodes.forEach(function(n) { activeIds[n.id] = true; });
+  // Drop any stale voice-wave displacement: a node that left the active set
+  // mid-wave and comes back would otherwise carry a frozen offset until the
+  // next wave frame, or forever if the guide has stopped talking.
+  activeNodes.forEach(function(n) { activeIds[n.id] = true; n._wx = 0; n._wy = 0; });
 
   // Filter edges — activeLinks holds the FULL cut-surviving edge set, uncapped.
   // It is the honest "pass" pool: applyEdgeFilters() counts it and joins only
@@ -2227,7 +2462,7 @@ function rebuildGraph() {
   // Edge <line> elements are created by applyEdgeFilters() (budgeted DOM join),
   // invoked at the end of rebuildGraph once the simulation exists.
 
-  var node = nodeG.selectAll('circle')
+  nodeSel = nodeG.selectAll('circle')
     .data(activeNodes)
     .join('circle')
     .attr('class', 'node-circle')
@@ -2282,17 +2517,7 @@ function rebuildGraph() {
         .force('encx', d3.forceX(function(d) { return targetX(d, width); }).strength(0.06))
         .force('ency', d3.forceY(function(d) { return targetY(d, height); }).strength(0.06));
     }
-    simulation.on('tick', function() {
-        // linkSel is the live budget-joined selection owned by applyEdgeFilters.
-        if (linkSel) {
-          linkSel.attr('x1', function(d) { return d.source.x; })
-                 .attr('y1', function(d) { return d.source.y; })
-                 .attr('x2', function(d) { return d.target.x; })
-                 .attr('y2', function(d) { return d.target.y; });
-        }
-        node.attr('cx', function(d) { return d.x; })
-            .attr('cy', function(d) { return d.y; });
-      });
+    simulation.on('tick', paintPositions);
     if (holdForces) simulation.stop();
   }
 

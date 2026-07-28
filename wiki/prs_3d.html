@@ -516,7 +516,27 @@ var isMouseDown = false;
 var mouseDownPos = { x: 0, y: 0 };
 var cameraTheta = Math.PI * 0.25;
 var cameraPhi = Math.PI * 0.35;
-var cameraRadius = 50;
+// CAMERA_HOME_RADIUS is the load AND the Reset View distance, so "reset" really
+// does return you to what you first saw. 65 rather than the old 50 is roughly
+// one wheel-notch further out (Tom, 2026-07-27): the whole helix should be in
+// frame before anyone touches anything.
+var CAMERA_HOME_RADIUS = 65;
+var cameraRadius = CAMERA_HOME_RADIUS;
+// The connectome drifts on its own until someone takes hold of it -- an idle
+// view should read as a live object, not a still. Any mousedown or wheel is a
+// hand on the wheel and ends the drift for good (Reset View restarts it).
+// ~0.0009 rad/frame is about two minutes per revolution: slow enough that the
+// parallax reads as depth rather than as motion. Honours prefers-reduced-motion.
+//
+// CONTRACT WITH THE VOICE GUIDE: `autoSpin` is a deliberate top-level global so
+// the shell can clear it. The guide's `spin` verb drives this same cameraTheta
+// on its own interval and reports "stopped spinning" on `spin off` -- if the
+// idle drift kept turning underneath that, the guide would be saying something
+// untrue about the room. So the shell must set `w.autoSpin = false` both when a
+// spin starts and when one is stopped. Until it does, `spin off` here leaves a
+// slow drift running.
+var AUTO_SPIN_RATE = 0.0009;
+var autoSpin = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 var cameraTarget = new THREE.Vector3(0, zHeight / 2, 0);
 var lastMouse = { x: 0, y: 0 };
 
@@ -1444,13 +1464,15 @@ function updateCameraPosition() {
 function resetCamera() {
   cameraTheta = Math.PI * 0.25;
   cameraPhi = Math.PI * 0.35;
-  cameraRadius = 50;
+  cameraRadius = CAMERA_HOME_RADIUS;
   cameraTarget.set(0, zHeight / 2, 0);
+  autoSpin = true;             // Reset View means the whole opening state, spin included
   updateCameraPosition();
 }
 
 // ── EVENTS ──
 function onMouseDown(e) {
+  autoSpin = false;
   isMouseDown = true;
   mouseDownPos = { x: e.clientX, y: e.clientY };
   lastMouse = { x: e.clientX, y: e.clientY };
@@ -1549,6 +1571,7 @@ function onDoubleClick(e) {
 }
 
 function onWheel(e) {
+  autoSpin = false;
   cameraRadius = Math.max(15, Math.min(120, cameraRadius + e.deltaY * 0.05));
   updateCameraPosition();
   e.preventDefault();
@@ -1795,6 +1818,13 @@ function updateYearLabels() {
 // ── ANIMATE ──
 function animate() {
   requestAnimationFrame(animate);
+
+  // Idle drift of the whole view (see AUTO_SPIN_RATE). Advancing cameraTheta is
+  // the same quantity a drag advances, so taking hold mid-drift is continuous.
+  if (autoSpin) {
+    cameraTheta += AUTO_SPIN_RATE;
+    updateCameraPosition();
+  }
 
   // Slow rotation of nodes for visual interest
   meshes.forEach(function(m) {
