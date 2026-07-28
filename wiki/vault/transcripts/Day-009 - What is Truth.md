@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-009 - What is Truth - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-13T04:20:32"
+last_qc_at: "2026-07-21T04:20:35"
 last_qc_outcome: "pass"
 tags: [summa, day/009, pars/I]
 ---
@@ -24,7 +24,7 @@ tags: [summa, day/009, pars/I]
 
 > Episode: <https://www.youtube.com/watch?v=r8RXqHb0NQw
 
-> 
+>
 
 > Series: *Summa in a Year* by Austin Habash (Think Catholic). Day 9 of 308 published episodes.
 

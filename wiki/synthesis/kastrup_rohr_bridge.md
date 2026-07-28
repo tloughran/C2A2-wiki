@@ -28,3 +28,16 @@ Kastrup's idealism is *dissociative* — the many alters are real boundaries wit
 - Cross-link from `traditions/kastrup/wiki.md` and `traditions/rohr/wiki.md` under *paradigm-bridge candidates*.
 - The "separateness: wound or feature?" open question is shared with `synthesis/wright_rohr_bridge.md` (exile section) and with the daimon/individuation thread in PROP-2026-05-20-003 — consider a single master note on individuation-vs-reunion across the idealist and contemplative traditions.
 - PROP-2026-05-24-005 also flags Hoffman (interfaces) and Levin (scale-free cognition); the cosmic-Christ ↔ conscious-agents pairing could extend to a three-way idealist-cluster node.
+
+---
+
+## Joy as ground, without insulting the sufferer
+*Sewing Agent, 2026-07-26*
+
+**Orphaned page at the intersection:** `2026-07-22_kastrup_timalsina-suffering-joy.md`.
+
+**Why it sits here:** Kastrup, drawing on his own catastrophic tinnitus, accepts a joy-grounded consciousness-first view but refuses to call existence *inherently blissful*, wary of insulting those in unspeakable suffering. Rohr's contemplative tradition also holds joy-as-ground alongside real suffering (the wounds of God revealed first), and has language for that tension Kastrup lacks.
+
+**Synthesis claim:** Rohr supplies a resolution Kastrup gropes for: joy-as-ground need not deny suffering if the ground is a *wounded* love (solidarity-in-suffering) rather than a bliss that overlooks it. That reframes 'inherent joy' as inherent compassionate presence, which does not insult the sufferer.
+
+**Open question:** Can an idealist metaphysics distinguish 'the ground is joy' from 'the ground is love that suffers-with' — and does Kastrup's dissociation model have room for the second without collapsing into the first?

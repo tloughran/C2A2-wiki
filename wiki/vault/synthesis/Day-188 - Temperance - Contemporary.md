@@ -18,7 +18,7 @@ evidence_strength_summary: "Precision-weighting / homeostatic regulation as temp
 mind_first_reframe: "Temperance is well-calibrated interoceptive precision — the embodied agent tracking its necessary appetitive set-points by need rather than maximization — and Aquinas's demotion of it as 'merely individual' is only half right, since internal self-regulation is the homeostatic floor on which collective goods stand."
 central_theme_thread: "Temperance is the agent computing the good under the scarcity of its own body — the most constitutive perspective-limitation there is — working out salvation at the level of the flesh by ordering embodiment toward the whole rather than escaping it."
 tags: [synthesis, day/188, theme/self-regulation-and-scale]
-last_qc_at: "2026-07-16T16:19:24"
+last_qc_at: "2026-07-22T10:27:33"
 last_qc_outcome: "pass"
 ---
 

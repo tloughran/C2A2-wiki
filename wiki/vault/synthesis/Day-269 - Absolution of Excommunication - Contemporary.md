@@ -16,7 +16,7 @@ evidence_strength_summary: "The binding/loosing symmetry and absolution-as-re-co
 mind_first_reframe: "Absolution is reframed as re-coupling: the same jurisdictional power that drew the boundary now dissolves it, restoring the member to the collective field (Levin PRS-07) — the Markov blanket re-incorporates what it had excluded (Friston) — so the body's boundary is permeable by design, ordered to reintegration."
 central_theme_thread: "Re-inclusion is the telos the cut was for: the same power that bound looses, returning the perspective-limited member to the whole — disorder resolved into a deeper reorder."
 tags: [synthesis, day/269, theme/absolution-as-re-coupling]
-last_qc_at: "2026-07-18T02:26:54"
+last_qc_at: "2026-07-23T18:27:49"
 last_qc_outcome: "pass"
 ---
 

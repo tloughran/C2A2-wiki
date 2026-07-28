@@ -16,7 +16,7 @@ evidence_strength_summary: "Excommunication-as-response-to-defection is empirica
 mind_first_reframe: "Excommunication is reframed as a collective agent's response to a member that has decoupled from the whole's shared goals — the body's recognition and ratification of a defection (Levin PRS-02) or dissociation (PRS-11) — drawn, when medicinal, so that the cut prompts re-coupling rather than loss."
 central_theme_thread: "Perspective-limitation can harden into defection: a part pursuing its own goal against the whole. Excommunication is the whole's painful boundary-drawing around that part, ordered — when rightly done — to its return to loving unity, not its destruction."
 tags: [synthesis, day/268, theme/excommunication-as-medicinal-decoupling]
-last_qc_at: "2026-07-18T02:26:48"
+last_qc_at: "2026-07-23T18:27:49"
 last_qc_outcome: "pass"
 ---
 

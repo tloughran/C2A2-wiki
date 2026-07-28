@@ -1,0 +1,213 @@
+{
+  "seed": false,
+  "generated": "2026-07-22",
+  "generated_at": "2026-07-22T12:19:47Z",
+  "window": "weekly",
+  "metrics": {
+    "sources_reached": 19,
+    "items_checked": 207,
+    "high_relevance": 10,
+    "primary_themes": "Capability Jump + Governance Policy"
+  },
+  "signals": [
+    {
+      "title": "The agent evaluation gap: Enterprise AI organizations have a reality-alignment problem, not a coverage problem — and most are shipping to production anyway",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/ai/the-agent-evaluation-gap-enterprise-ai-organizations-have-a-reality-alignment-problem-not-a-coverage-problem-and-most-are-shipping-to-production-anyway",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Across 157 enterprises, organizations are granting AI agents more autonomy while trusting the evaluations meant to gate that autonomy less. Half have already shipped an agent that passed their internal evaluations and then failed a customer in production; only one in twenty fully trusts automated evaluation today; and the most-cited weakness is that evaluations do not align with real-world outcomes.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Thu, 16 Jul 2026 16:40:48 GMT",
+      "first_seen_at": "2026-07-22T12:19:44.359967+00:00",
+      "long_summary": "Many enterprises are increasingly giving AI agents greater autonomy, despite a significant lack of trust in the evaluation processes that govern this autonomy. A study across 157 organizations revealed that half of them have deployed AI agents that successfully passed internal evaluations but subsequently failed to meet customer expectations in production. Currently, only 5% of enterprises fully trust automated evaluations, with the most common concern being that these evaluations fail to align with actual real-world results. This highlights a critical issue where the processes for assessing AI capability do not adequately reflect its operational effectiveness, leading to potential failures in customer experience. Understanding these gaps is essential for the community as it navigates the challenges of ensuring AI's performance meets real-world demands.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "The AI context gap: Enterprise AI organizations have a trust problem, not a retrieval problem — and most are still building the fix",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix",
+      "relevance": 3,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "Across 101 enterprises, the infrastructure that feeds AI agents their business context is being built faster than it can be trusted. Retrieval-augmented generation is already the default context source, and provider-native retrieval has quietly overtaken the dedicated vector databases that define the category — yet a majority of enterprises have already watched their agents produce confident, wrong answers traced to missing or inconsistent context.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Thu, 16 Jul 2026 17:06:08 GMT",
+      "first_seen_at": "2026-07-22T12:19:44.355981+00:00",
+      "long_summary": "Many enterprises are quickly building the infrastructure necessary for AI agents to access business context, but this development is outpacing their ability to ensure its reliability. Currently, retrieval-augmented generation is the standard for sourcing context, with default provider-native retrieval surpassing specialized vector databases. However, despite these advancements, a significant number of businesses have experienced AI agents providing confident yet incorrect responses due to gaps or inconsistencies in context. This underscores a trust issue rather than a mere retrieval issue, highlighting that the foundational trust in AI outputs needs addressing as organizations implement these technologies. For the community aiming to stay informed about AI developments, recognizing these trust challenges is essential for understanding and improving the effectiveness of AI solutions.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Agentic orchestration: Enterprise AI organizations have a deployment problem, not a platform problem — and most are calling chatbots agents",
+      "source": "VentureBeat AI",
+      "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "misuse_security",
+        "governance_policy"
+      ],
+      "summary": "Across 101 enterprises, agent orchestration is consolidating onto model-provider platforms — Anthropic’s Claude leads by a wide margin — chosen for the gravity of the underlying model and judged on reliable multi-step execution. But the ambition runs well ahead of the reality: most deployed “agents” are still chatbot wrappers, the control plane enterprises expect is deliberately hybrid to avoid lock-in, and real-time fiscal control over token burn remains the exception.",
+      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 15 Jul 2026 22:24:17 GMT",
+      "first_seen_at": "2026-07-22T12:19:44.363721+00:00",
+      "long_summary": "Across 101 enterprises, there is a noticeable trend towards consolidating agent orchestration on model-provider platforms, with Anthropic’s Claude being the most popular due to its strong model foundation and effective multi-step execution. However, the deployment of these agents often falls short of expectations, as many currently serve merely as chatbot interfaces. Additionally, the desired control mechanisms for managing these systems are often hybrid, balancing flexibility and preventing vendor lock-in. Real-time monitoring and control over operational costs related to token usage remain uncommon. This situation highlights the gap between the potential of AI technologies and their actual implementation in enterprises. Understanding these challenges is important for a community staying informed about AI's evolution and the practicalities of its deployment in various contexts.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "CASE: Causal Alignment and Structural Enforcement for Improving Chain-of-Thought Faithfulness",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2607.18820",
+      "relevance": 2,
+      "tags": [
+        "capability_jump"
+      ],
+      "summary": "Chain-of-thought (CoT) reasoning is widely used to improve both the performance and interpretability of large language models (LLMs), yet the generated reasoning may not faithfully support the final answer. We study this problem from a causal perspective, where a faithful CoT process should follow the chain $Z\\rightarrow X\\rightarrow Y$, with $Z$, $X$, and $Y$ denoting the instruction, reasoning chain, and final answer, respectively.",
+      "implication": "Reassess role boundaries and human override for community deployments. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.534835+00:00",
+      "long_summary": "The study explores chain-of-thought (CoT) reasoning in large language models (LLMs), highlighting the concern that the reasoning generated may not always support the final answer reliably. It approaches the issue from a causal lens, proposing that a faithful CoT process should adhere to the chain structure denoted as $Z\\rightarrow X\\rightarrow Y$, where $Z$ represents the instruction, $X$ the reasoning chain, and $Y$ the final answer. This perspective aims to enhance the validity and interpretability of the reasoning provided by LLMs. Understanding these dynamics is important for the community to better assess and improve the reliability of AI-generated reasoning, aiding in responsible AI development.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Find Before You Fine-Tune: A Diagnostic Study of Small LLMs for Cybersecurity QA",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2607.18725",
+      "relevance": 2,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "Large Language Models (LLMs) are increasingly fine-tuned for critical-domain Question-Answering (QA), yet choosing which small model to adapt, before paying the cost of adaptation, remains difficult. Fine-tuning can improve domain alignment, but it may also erode prior knowledge, weaken instruction-following, or increase hallucination, especially when labeled data are scarce or rapidly evolving as in cybersecurity.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.525574+00:00",
+      "long_summary": "Choosing the right small Large Language Model (LLM) for fine-tuning in critical-domain Question-Answering (QA) is challenging, particularly in cybersecurity, where the landscape and labeled data are changing rapidly. Fine-tuning seeks to improve performance but comes with risks such as loss of prior knowledge, diminished ability to follow instructions, or an increase in hallucinations. This is becoming increasingly pressing as the demand for LLM applications in sensitive areas like cybersecurity continues to rise, making it crucial for developers to consider these trade-offs before adaptation. Understanding these challenges is vital for the community to navigate the complexities of AI model deployment in real-world scenarios.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Using Fine-Tuned LLMs to Identify Indicators of Vulnerability in UK Police Incident Logs",
+      "source": "arXiv cs.CL",
+      "url": "https://arxiv.org/abs/2607.18446",
+      "relevance": 2,
+      "tags": [
+        "misuse_security"
+      ],
+      "summary": "Purpose: Understanding how much of routine policing involves vulnerable people could inform resourcing, training, and multi-agency response, yet administrative data provide limited insight. We explore whether an LLM-based classification pipeline, developed on open-source US police data, can be adapted to estimate the prevalence of four vulnerability indicators - mental ill health, substance misuse, alcohol dependence, and homelessness - in UK police incident narratives, and when outputs can be treated as defensible measurements.",
+      "implication": "Prioritize provenance checks and misinformation/abuse response protocols. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.501580+00:00",
+      "long_summary": "The study investigates the adaptation of a large language model (LLM)-based classification pipeline, originally developed using open-source US police data, to analyze UK police incident logs for indicators of vulnerability. Specifically, it focuses on identifying four types of vulnerability: mental ill health, substance misuse, alcohol dependence, and homelessness. By applying this LLM approach, the research aims to gain insights into the extent of routine policing that involves vulnerable individuals, potentially guiding resource allocation, training, and coordinated responses among various agencies. Furthermore, the study raises questions about how to treat its outputs as defensible measurements in the context of police incident narratives. This research is significant for communities aiming to understand the intersection of AI and policing, highlighting the potential for AI tools to inform better policing strategies and support vulnerable populations.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "On the Limits of Support-Preserving Alignment and Bounded Filtering",
+      "source": "arXiv cs.LG",
+      "url": "https://arxiv.org/abs/2607.18295",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "misuse_security"
+      ],
+      "summary": "We study whether alignment schemes that reshape a base model's output distribution, combined with bounded safety filters, can drive the probability of harmful behavior to zero in modern large language models. Recent research suggests that harmful behaviors can persist under preference-based alignment and that external filtering can be computationally hard in the worst case, but it remains unclear whether practical alignment pipelines that largely preserve internal representations can eliminate harmful behavior entirely rather than merely suppressing its most visible forms.",
+      "implication": "Reassess role boundaries and human override for community deployments. Prioritize provenance checks and misinformation/abuse response protocols. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.351803+00:00",
+      "long_summary": "The study investigates whether alignment methods that adjust the output distribution of large language models, alongside safety filters with limitations, can reduce the likelihood of harmful behaviors to zero. Previous findings indicate that harmful actions can continue even with alignment focused on user preferences, and that external filtering may pose significant computational challenges under certain conditions. However, the research addresses the uncertainty surrounding whether it is feasible for practical alignment processes to completely eradicate harmful behavior or if they can only reduce its more apparent expressions. This inquiry is significant for a community engaged in AI development and safety, as understanding the limitations and efficacy of these alignment methods is crucial for future advancements in responsible AI deployment.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "Probabilistic Concept-Aware Steering for Trustworthy LLM Inference",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2607.18259",
+      "relevance": 2,
+      "tags": [],
+      "summary": "Steering vectors (SVs), an inference-time intervention technique for large language models (LLMs), guide the generation process by adding a concept-specific direction vector to intermediate activations during inference. However, existing SV methods frequently yield representation-incoherent behaviors that undermine interpretability and fine-grained control, largely because prior work has focused on binary positive-negative steering evaluation while employing discrete clustering metrics that fail to capture the continuous spectrum of semantic alignment.",
+      "implication": "High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.186202+00:00",
+      "long_summary": "Steering vectors (SVs) are proposed as a technique for influencing the inference process of large language models (LLMs) by introducing a concept-specific direction to their intermediate activations. However, current SV approaches often lead to behaviors that are difficult to interpret and control, primarily because previous methodologies have concentrated on binary evaluations of steering—positive or negative. These methods employ discrete clustering metrics that do not adequately address the complex, continuous nature of semantic alignment. This concept of probabilistic concept-aware steering aims to enhance the interpretability and control in LLM inference, moving beyond simple binary metrics. Understanding these developments is crucial for the community, as it highlights ongoing efforts to improve the reliability and transparency of AI systems.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "From Agent Failure Paths to Quantified Residual Risk: A Compositional Framework for Resilient Agentic AI",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2607.18243",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy"
+      ],
+      "summary": "Agentic AI is crossing trust boundaries faster than current risk models can represent. Existing approaches provide one of two partial views.",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.164783+00:00",
+      "long_summary": "Agentic AI is evolving quickly, outpacing current risk models' ability to represent its trust boundaries. Current strategies offer only partial perspectives on the risks associated with these advancements. This matter is essential for a community keeping up with AI, as understanding the limitations of existing risk models is crucial for developing more effective governance and policy frameworks.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    },
+    {
+      "title": "AI Tool Discovery at Scale: All You Need is DNS",
+      "source": "arXiv cs.AI",
+      "url": "https://arxiv.org/abs/2607.18242",
+      "relevance": 2,
+      "tags": [
+        "capability_jump",
+        "governance_policy",
+        "market_platform"
+      ],
+      "summary": "The coming era of autonomous AI agents demands a discovery mechanism capable of navigating millions of tools, yet existing solutions buckle under O(N) complexity and centralized governance. Instead of building another fragile overlay, we propose ToolDNS, a radical framework that retrofits semantic tool discovery onto the Internet's most resilient substrate: the Domain Name System (DNS).",
+      "implication": "Reassess role boundaries and human override for community deployments. Update constitutional clauses and compliance mappings for community operators. Monitor adoption pressure and revise formation cadence for tool onboarding. High relevance to C2A2 operations; include in next leadership brief.",
+      "published_at": "Wed, 22 Jul 2026 00:00:00 -0400",
+      "first_seen_at": "2026-07-22T12:19:42.162776+00:00",
+      "long_summary": "The text discusses the need for an efficient discovery mechanism for navigating numerous tools in the emerging era of autonomous AI agents, which current solutions struggle with due to their O(N) complexity and centralized governance. The authors introduce ToolDNS, a novel framework that leverages the Domain Name System (DNS) to enable semantic tool discovery. This approach aims to offer a robust and decentralized solution rather than creating another fragile system. This is important for the community to understand as it highlights innovative strategies for enhancing AI capabilities while addressing challenges related to scalability and governance.",
+      "summary_provenance": {
+        "model": "openai/gpt-4o-mini",
+        "generated": "2026-07-22",
+        "kind": "machine-generated"
+      }
+    }
+  ],
+  "schema_ver": 1
+}

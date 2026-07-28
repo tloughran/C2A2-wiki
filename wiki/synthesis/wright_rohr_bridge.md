@@ -101,3 +101,16 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Synthesis claim:** The two readings converge and the convergence is not trivial, because both are refusing the same third option: the Beatitudes as a moral checklist. Wright refuses it from the front (they announce a state of affairs, they do not impose conditions); Rohr refuses it from the back (they form an identity, they do not score a performance). What Rohr adds to Wright is the *mechanism* -- announcement becomes formation through practice, which is how a declaration about who is blessed turns into people who are. What Wright adds to Rohr is the guard-rail: the metanoia program cannot be a technique for *earning* blessedness without collapsing into the checklist both reject.
 
 **Open question the wiki cannot yet answer:** Rohr's 'poverty of spirit as living without need for one's own righteousness' is a striking convergence with Wright's non-meritorious reading and neither cites the other. Is it? Or does Rohr's metanoia-program framing quietly reintroduce the works the announcement was meant to displace -- and if it does, is that a defect or the point? Hold this open until Week Two lands; the series is unfinished and the wiki should not adjudicate on Week One.
+
+---
+
+## Two readings of the same covenantal self-disclosure
+*Sewing Agent, 2026-07-26*
+
+**Orphaned pages at the intersection:** `2026-07-26_rohr_in-love-with-scripture.md` (PROP-2026-07-26-001) and `2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md` (PROP-2026-07-26-003) — arriving the same day.
+
+**Why they sit here:** Rohr reads Scripture as second-personal self-disclosure of a Person ('God disclosing Godself, not ideas about God'); Wright anchors the same texts historically and critically-realistically and adjudicates tradition-disputes by fit-with-the-narrative. Same texts, two hermeneutics — participatory/contemplative vs. critical-realist.
+
+**Synthesis claim:** The Scripture seam is not a contradiction but a division of labor: Wright secures referential control (what the text meant in its second-temple context), Rohr secures participatory uptake (what reading-in-love requires of the reader). A tradition needs both to transmit a text as *revelation* rather than as either data or sentiment.
+
+**Open question:** Can a single account hold Rohr's 'revelation = self-disclosure of a Person' without loosening Wright's historical referential constraint — or do the two hermeneutics impose incompatible success criteria on 'right reading'?
