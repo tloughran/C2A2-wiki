@@ -54,7 +54,11 @@
     { "say": "quiet", "means": "stop" },
     { "say": "silence", "means": "stop" },
     { "say": "continue", "means": "next" },
-    { "say": "forward", "means": "next" }
+    { "say": "forward", "means": "next" },
+    { "say": "turn", "means": "rotate" },
+    { "say": "orbit", "means": "rotate" },
+    { "say": "center", "means": "open" },
+    { "say": "centre", "means": "open" }
   ],
   "filler": [
     "the", "a", "an", "this", "that", "it", "is", "are", "please",
@@ -226,6 +230,20 @@
     },
     {
       "verb": "pan",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ]
+    },
+    {
+      "verb": "rotate",
       "dim": "camera",
       "op": "set",
       "args": "one",

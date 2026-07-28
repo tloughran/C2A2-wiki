@@ -819,6 +819,17 @@
       case 'pan':
         return { ok: true, kind: 'camera', action: 'pan', dir: op.args[0], journal: { dim: 'camera' } };
 
+      // rotate left|right|up|down -- the THIRD axis, and the first one that only
+      // means anything on a tab drawn in three dimensions. Zoom moves the camera
+      // along its own sightline and pan slides the thing it is looking at; on a
+      // flat graph that is the whole camera, which is why the dimension stopped
+      // at two verbs. An orbit camera can also go AROUND, and a 3D tab without
+      // it is a room the guide can walk up to but never walk around (Tom,
+      // 2026-07-27). Not a new mechanism: same dim, same discrete-step rule, and
+      // caps keep it off every tab that has nothing to turn.
+      case 'rotate':
+        return { ok: true, kind: 'camera', action: 'rotate', dir: op.args[0], journal: { dim: 'camera' } };
+
       case 'undo': case 'redo': case 'reset': case 'restore':
         return { ok: true, kind: 'journal', action: op.verb };
 

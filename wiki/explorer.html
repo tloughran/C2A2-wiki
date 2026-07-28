@@ -1793,7 +1793,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2520,7 +2520,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=f43e0824eb"></script>
+<script src="lib/c2a2-commandline.js?v=67271d556f"></script>
 <script>
 (function () {
   'use strict';
@@ -3094,6 +3094,14 @@ var VoiceGuide = (function() {
     var parts = String(p).split('.');
     for (var i = 0; i < parts.length && o != null; i++) { o = o[parts[i]]; }
     return o;
+  }
+  // The write half, used only by the declared camera. Same rule as pathGet: a
+  // manifest names WHERE a value lives, so reaching it can never become a way
+  // to run something -- the last segment is assigned, nothing is evaluated.
+  function pathSet(o, p, v) {
+    var parts = String(p).split('.');
+    for (var i = 0; i < parts.length - 1 && o != null; i++) { o = o[parts[i]]; }
+    if (o != null) { o[parts[parts.length - 1]] = v; }
   }
   function dataItems(sp) {
     var w = ifWin(), arr = null;
@@ -4523,8 +4531,103 @@ var VoiceGuide = (function() {
   }
   // Camera verbs cancel any pending settle re-frame -- otherwise the timer
   // lands afterwards and silently undoes what the user just asked for.
+  // ---- A CAMERA THAT IS NOT THE GRAPH'S -----------------------------------
+  //
+  // Everything below the declared branch is the Sociogram: `fitAll`,
+  // `zoomBehavior`, `#graph-svg`, `currentZoomScale` -- four globals of one
+  // page, sitting in the position of the shared road. That is the same shape of
+  // mistake `open` made before Summa and `revealedNodes` made before the
+  // Connectome, and it is why a tab genuinely built around an orbiting camera
+  // could not be turned, moved or zoomed by voice at all (Tom, 2026-07-27:
+  // "no zoom and pan and center, rotate commands in PRS").
+  //
+  // So a tab DECLARES its camera, and the declaration is paths and step sizes
+  // rather than code -- same rule as the item spec. An orbit camera is three
+  // numbers and a point (theta, phi, radius, target) plus the function that
+  // applies them, which is all any of these verbs need to touch.
+  //
+  // The steps are DISCRETE and the position is not journalled: section 14.4
+  // bars hashing continuous fields, not reaching them, and a camera is the
+  // canonical continuous field. What IS asserted is the read-back -- at a
+  // clamp the honest answer is that nothing moved, which is the same rule the
+  // graph's zoom already followed.
+  function cameraSpec() { var am = activeManifest(); return (am && am.m.camera) || null; }
+  function execCameraDeclared(spec, p) {
+    var w = ifWin();
+    if (!w) { return show('this view has no camera', 'err'); }
+    var apply = function () { if (spec.apply) { call(spec.apply); } };
+    if (p.action === 'fit') {
+      if (!spec.fit) { return show('this view cannot be fit to everything', 'err'); }
+      call(spec.fit);
+      return show('fit', 'ok');
+    }
+    if (p.action === 'zoom') {
+      var dz = spec.dolly;
+      if (!dz) { return show('this view does not zoom', 'err'); }
+      var r0 = Number(pathGet(w, dz.path));
+      var r1 = p.dir === 'in' ? r0 / dz.factor : r0 * dz.factor;
+      if (dz.clamp) { r1 = Math.max(dz.clamp[0], Math.min(dz.clamp[1], r1)); }
+      pathSet(w, dz.path, r1);
+      apply();
+      // Read back, never report the factor asked for: at the near or far limit
+      // the truthful answer is that the view did not move.
+      var r2 = Number(pathGet(w, dz.path));
+      return show(r2 === r0 ? ('zoom ' + p.dir + ' -- already as far ' + (p.dir === 'in' ? 'in' : 'out') + ' as this view goes')
+                            : ('zoom ' + p.dir), r2 === r0 ? 'err' : 'ok');
+    }
+    if (p.action === 'rotate') {
+      var ob = spec.orbit;
+      if (!ob) { return show('this view does not turn', 'err'); }
+      // Left/right go round the vertical axis; up/down raise and lower the eye.
+      // VIEW-relative in the same sense pan is: "rotate left" swings the camera
+      // to the left, so what was on the left comes toward the middle.
+      if (p.dir === 'left' || p.dir === 'right') {
+        pathSet(w, ob.theta, Number(pathGet(w, ob.theta)) + (p.dir === 'left' ? ob.step : -ob.step));
+      } else {
+        var ph0 = Number(pathGet(w, ob.phi));
+        var ph1 = ph0 + (p.dir === 'up' ? -ob.step : ob.step);
+        if (ob.phi_clamp) { ph1 = Math.max(ob.phi_clamp[0], Math.min(ob.phi_clamp[1], ph1)); }
+        pathSet(w, ob.phi, ph1);
+        if (ph1 === ph0) { apply(); return show('rotate ' + p.dir + ' -- already as far ' + p.dir + ' as this view tips', 'err'); }
+      }
+      apply();
+      return show('rotate ' + p.dir, 'ok');
+    }
+    if (p.action === 'pan') {
+      var pn = spec.pan;
+      if (!pn || !w.THREE) { return show('this view does not pan', 'err'); }
+      var cam = pathGet(w, pn.camera), tgt = pathGet(w, pn.target);
+      if (!cam || !tgt) { return show('this view does not pan', 'err'); }
+      // The camera's OWN right and up, off its world matrix -- panning in world
+      // axes would send the view sideways in a direction that has nothing to do
+      // with what the user is looking at, and after any rotation that is most
+      // of them. Step scales with the viewing distance so it feels the same
+      // close in and far out, exactly as the graph's step scales with zoom.
+      // THE MATRIX IS A FRAME BEHIND unless we ask for it. three.js composes it
+      // during render, so `pan left` straight after `rotate left` read the
+      // camera's right vector from BEFORE the turn and slid the view sideways
+      // in a frame the user was no longer in -- off by exactly the rotate step,
+      // which is how the harness caught it (pan right stopped undoing pan left).
+      if (typeof cam.updateMatrixWorld === 'function') { cam.updateMatrixWorld(true); }
+      var right = new w.THREE.Vector3().setFromMatrixColumn(cam.matrix, 0);
+      var up = new w.THREE.Vector3().setFromMatrixColumn(cam.matrix, 1);
+      var step = Number(pathGet(w, spec.dolly.path)) * pn.step;
+      // VIEW-relative, the same rule the graph follows: to SEE what lies to the
+      // left, the camera moves left.
+      var mv = { left: [right, -1], right: [right, 1], up: [up, 1], down: [up, -1] }[p.dir];
+      tgt.addScaledVector(mv[0], mv[1] * step);
+      apply();
+      return show('pan ' + p.dir, 'ok');
+    }
+    return show('this view has no camera', 'err');
+  }
   function execCamera(p) {
     frameToken++;
+    var cs = cameraSpec();
+    if (cs) { return execCameraDeclared(cs, p); }
+    // `rotate` needs no branch here: caps are per-tab, so a flat tab refuses it
+    // in the engine with the same unsupported_here that names what it DOES
+    // have. A second, hand-written refusal would be a second thing to keep true.
     if (p.action === 'fit') { call('fitAll'); return show('fit', 'ok'); }
     var w = ifWin(), d = ifDoc();
     var svgEl = d && d.getElementById('graph-svg');

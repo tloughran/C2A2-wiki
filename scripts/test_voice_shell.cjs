@@ -57,7 +57,7 @@ const METABOLISM_SRC = 'metabolism/metabolism_view.html';
 // toggle, the left page's close, Reset View -- and the point of pinning the
 // number is that a new control cannot join that list without reddening the gate.
 // Raise it only together with the manifest entry that explains the new one.
-const PRS_DEFERRED = 43;
+const PRS_DEFERRED = 42;
 
 // ---------------------------------------------------------------- tiny CDP ---
 
@@ -1617,7 +1617,7 @@ async function main() {
   record('L0 the narratives are drawn, not built: a canvas and no per-node DOM',
     canvasOnly.circles === 0 && canvasOnly.canvases >= 1 && canvasOnly.meshes > 0,
     JSON.stringify(canvasOnly));
-  await auditTab(page, 'prs_3d', PRS_DEFERRED, 3);
+  await auditTab(page, 'prs_3d', PRS_DEFERRED, 1);
 
   await row(page, 'L1 what -> names the narratives and the page\'s own total', 'what',
     { ok: true, spoken: /\d+ narratives here/ });
@@ -1746,6 +1746,96 @@ async function main() {
     "return { panel: d.getElementById('info-panel').style.display, sel: !!w.selectedMesh };");
   record('L13a and the page agrees nothing is open', closed.panel === 'none' && closed.sel === false,
     JSON.stringify(closed));
+  // ---- L15-L22: THE CAMERA, on a tab that is actually built around one ------
+  //
+  // Deferred for exactly one session on the grounds that execCamera was
+  // Sociogram-specific (fitAll / zoomBehavior / #graph-svg / currentZoomScale --
+  // four globals of one page sitting in the position of the shared road). Tom's
+  // answer was the right one: a tab built around an orbiting camera that voice
+  // cannot turn is a room the guide can walk up to and never walk around.
+  //
+  // Every row asserts the PAGE's numbers, never the spoken string alone -- a
+  // camera that narrates a turn it did not make is the exact failure mode this
+  // harness exists for, and it is invisible to anyone who cannot see the screen.
+  // HOME FIRST. Everything above has opened narratives, and opening moves the
+  // camera onto what it opened -- so the position at this point is not the
+  // page's home and comparing against it would test the wrong thing (the first
+  // run of L18a and L21a both did exactly that, and read as camera bugs).
+  await runCmd(page, 'fit');
+  const cam0 = await page.eval(IFRAME_DOC +
+    "return { theta: w.cameraTheta, phi: w.cameraPhi, r: w.cameraRadius," +
+    "         tx: w.cameraTarget.x, ty: w.cameraTarget.y, tz: w.cameraTarget.z," +
+    "         px: w.camera.position.x, py: w.camera.position.y };");
+  await row(page, 'L15 rotate left', 'rotate left', { ok: true, spoken: /rotate left/ });
+  const camR = await page.eval(IFRAME_DOC +
+    "return { theta: w.cameraTheta, px: w.camera.position.x, py: w.camera.position.y };");
+  record('L15a the camera really swung, and the page applied it',
+    camR.theta !== cam0.theta && camR.px !== cam0.px,
+    JSON.stringify({ theta: [cam0.theta, camR.theta], moved: camR.px !== cam0.px }));
+  await row(page, 'L16 rotate right puts it back', 'rotate right', { ok: true, spoken: /rotate right/ });
+  const camB = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  record('L16a every move has its opposite, and this one is exact',
+    Math.abs(Number(camB) - cam0.theta) < 1e-9, JSON.stringify([cam0.theta, camB]));
+  // The page's own drag handler clamps phi to 0.1 .. PI*0.85. Voice must not be
+  // able to put the camera anywhere the mouse cannot -- and at the limit it must
+  // SAY nothing moved rather than reporting the step it asked for.
+  await runCmd(page, 'rotate up');
+  await runCmd(page, 'rotate up');
+  await runCmd(page, 'rotate up');
+  await runCmd(page, 'rotate up');
+  const camU = await page.eval(IFRAME_DOC + "return w.cameraPhi;");
+  record('L17 tipping up stops where the page\'s own drag handler stops it',
+    Number(camU) >= 0.1 - 1e-9 && Number(camU) <= 0.1 + 1e-9, String(camU));
+  await row(page, 'L17a and at the limit it says so, instead of reporting a step it did not take',
+    'rotate up', { ok: false, spoken: /already as far up as this view tips/ });
+  // Zoom is the viewing distance on an orbit camera, clamped as onWheel clamps it.
+  await runCmd(page, 'fit');
+  await row(page, 'L18 zoom in', 'zoom in', { ok: true, spoken: /^zoom in/ });
+  const camZ = await page.eval(IFRAME_DOC + "return w.cameraRadius;");
+  record('L18a the viewing distance really closed', Number(camZ) < cam0.r,
+    JSON.stringify([cam0.r, camZ]));
+  for (let i = 0; i < 6; i++) { await runCmd(page, 'zoom in'); }
+  const camZmin = await page.eval(IFRAME_DOC + "return w.cameraRadius;");
+  record('L19 zoom stops at the page\'s own near limit, not somewhere the mouse cannot reach',
+    Number(camZmin) === 15, String(camZmin));
+  await row(page, 'L19a and says nothing moved rather than claiming the step',
+    'zoom in', { ok: false, spoken: /already as far in as this view goes/ });
+  // Pan moves what the camera LOOKS AT, along the camera's own right and up --
+  // world axes would send the view sideways in a direction unrelated to what is
+  // on screen, which after any rotation is nearly always.
+  await runCmd(page, 'fit');
+  await runCmd(page, 'rotate left');
+  const preP = await page.eval(IFRAME_DOC + "return { tx: w.cameraTarget.x, tz: w.cameraTarget.z };");
+  await row(page, 'L20 pan left', 'pan left', { ok: true, spoken: /^pan left/ });
+  const postP = await page.eval(IFRAME_DOC + "return { tx: w.cameraTarget.x, tz: w.cameraTarget.z };");
+  record('L20a it moved what the camera is looking at, in the camera\'s own frame',
+    postP.tx !== preP.tx || postP.tz !== preP.tz, JSON.stringify({ before: preP, after: postP }));
+  await runCmd(page, 'pan right');
+  const backP = await page.eval(IFRAME_DOC + "return { tx: w.cameraTarget.x, tz: w.cameraTarget.z };");
+  record('L20b and pan right undoes it, so the dimension is symmetric here too',
+    Math.abs(backP.tx - preP.tx) < 1e-6 && Math.abs(backP.tz - preP.tz) < 1e-6,
+    JSON.stringify({ start: preP, back: backP }));
+  // fit is the way back to the whole thing, and it is the page's own resetCamera
+  // rather than anything the shell computes.
+  await row(page, 'L21 fit -> the way back to the whole thing', 'fit', { ok: true, spoken: /^fit/ });
+  const camF = await page.eval(IFRAME_DOC +
+    "return { theta: w.cameraTheta, phi: w.cameraPhi, r: w.cameraRadius, tx: w.cameraTarget.x };");
+  record('L21a and it is the page\'s own reset, to the page\'s own home position',
+    Math.abs(camF.theta - cam0.theta) < 1e-9 && Math.abs(camF.phi - cam0.phi) < 1e-9 &&
+    camF.r === cam0.r && Math.abs(camF.tx - cam0.tx) < 1e-9,
+    JSON.stringify({ home: cam0.r, now: camF }));
+  // `center` is not a camera verb: opening something already moves the camera
+  // onto it, which is what the page's OWN search results do. The word maps to
+  // the thing that exists rather than growing a second road to it.
+  const beforeC = await page.eval(IFRAME_DOC + "return w.cameraRadius;");
+  await row(page, 'L22 "center X" is open, and opening really does move the camera',
+    'center ' + label, { ok: true, spoken: /^opened / });
+  const afterC = await page.eval(IFRAME_DOC +
+    "return { r: w.cameraRadius, sel: w.selectedMesh ? w.selectedMesh.userData.triplet.label : null };");
+  record('L22a the camera closed on it and the page says it is the one open',
+    Number(afterC.r) !== Number(beforeC) && String(afterC.sel) === String(label),
+    JSON.stringify({ r: [beforeC, afterC.r] }));
+  await runCmd(page, 'close');
   const shotL = await page.screenshot(path.join(SHOTS, 'L-connectome.png'));
 
   // Back to the Sociogram once more: the data adapter added a road beside
@@ -1756,6 +1846,15 @@ async function main() {
   await sleep(1200);
   await row(page, 'L14 the graph roster is untouched by the data adapter', 'pick first',
     { ok: true, spoken: /1 of \d+/ });
+  // The Sociogram's own camera must be untouched too -- the declared branch is a
+  // road beside execCamera's, not a replacement for it.
+  await row(page, 'L14a and so is its camera, which declares nothing and takes the old road',
+    'zoom in', { ok: true, spoken: /zoom in/ });
+  // And a flat tab SAYS it cannot turn. Silence here would be the worst answer:
+  // with no screen, a rotate that quietly does nothing is indistinguishable from
+  // one that worked.
+  await row(page, 'L14b rotate on a flat tab is refused in words, and told what it CAN do',
+    'rotate left', { ok: false, spoken: /not available on this view\. supported: /i });
 
   // ---- Idle listening cutoff: what can honestly be checked without a session --
   //

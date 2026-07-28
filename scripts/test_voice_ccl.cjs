@@ -825,12 +825,75 @@ check('pan: all four directions plan, and only those four', function () {
   }
   assert.strictEqual(CCL.parse('pan sideways', grammar).error, 'bad_enum');
 });
+// rotate -- the THIRD axis, and the first that only means anything on a tab
+// drawn in three dimensions. Zoom moves the camera along its sightline and pan
+// slides what it looks at; on a flat graph that is the whole camera, which is
+// why the dimension stopped at two verbs. The Connectome is an orbit camera and
+// could not be turned by voice at all (Tom, 2026-07-27).
+// Planned against the CONNECTOME's caps, not the Sociogram's: rotate is only
+// in caps where there is something to turn, so the default CTX refusing it is
+// the design working rather than a gap.
+const PRS_CTX = { caps: MANIFEST.tabs.prs_3d.caps, roster: [], tabs: DEST.tabs, nodes: [] };
+function planPrs(str) { return CCL.plan(CCL.parse(str, grammar), PRS_CTX); }
+check('rotate: all four directions plan, and only those four', function () {
+  for (const dir of ['left', 'right', 'up', 'down']) {
+    const p = planPrs('rotate ' + dir);
+    assert.strictEqual(p.ok, true, 'rotate ' + dir + ' did not plan');
+    assert.strictEqual(p.kind, 'camera');
+    assert.strictEqual(p.dir, dir);
+  }
+  assert.strictEqual(CCL.parse('rotate sideways', grammar).error, 'bad_enum');
+});
 check('camera: the dimension is symmetric -- every move has its opposite', function () {
   const pairs = [['zoom in', 'zoom out'], ['pan left', 'pan right'], ['pan up', 'pan down']];
   for (const [a, b] of pairs) {
     assert.strictEqual(planCmd(a).ok, true, a);
     assert.strictEqual(planCmd(b).ok, true, b);
   }
+  for (const [a, b] of [['rotate left', 'rotate right'], ['rotate up', 'rotate down']]) {
+    assert.strictEqual(planPrs(a).ok, true, a);
+    assert.strictEqual(planPrs(b).ok, true, b);
+  }
+});
+// The soft layer, same rule as pick/select/choose: people say "turn it round"
+// and "orbit left" for the one act, and leaving that to the model means the
+// common phrasing fails whenever the model does.
+check('rotate: turn and orbit resolve to it deterministically, not by model luck', function () {
+  for (const say of ['turn left', 'orbit right']) {
+    const p = planPrs(say);
+    assert.strictEqual(p.ok, true, say + ' did not plan');
+    assert.strictEqual(p.kind, 'camera');
+    assert.strictEqual(p.action, 'rotate');
+  }
+});
+// `center` is NOT a camera verb, and that is the whole point: opening something
+// on a 3D tab already moves the camera onto it (the page's own search results
+// do exactly that), so the word maps to the thing that exists rather than
+// growing a second road to it. Asserted at the PARSE layer, where the rewrite
+// happens, so the row does not depend on any particular node resolving.
+check('center: the word means open, because opening already centres', function () {
+  for (const say of ['center something', 'centre something']) {
+    assert.strictEqual(CCL.parse(say, grammar).verb, 'open', say);
+  }
+});
+// A flat tab must SAY it cannot turn rather than silently doing nothing. Caps
+// are per-tab, so the engine refuses before the shell is ever reached.
+check('rotate: a tab without it in caps gets unsupported_here, naming what it does have', function () {
+  const flat = CCL.plan(CCL.parse('rotate left', grammar),
+    { caps: MANIFEST.tabs.start_here.caps, groups: [], tabs: [], nodes: [] });
+  assert.strictEqual(flat.ok, false);
+  assert.strictEqual(flat.error, 'unsupported_here');
+});
+check('rotate: the Connectome declares the cap its gesture now claims', function () {
+  const prs = MANIFEST.tabs.prs_3d;
+  const orbit = prs.gestures.filter(function (g) { return g.id === 'orbit'; })[0];
+  assert.strictEqual(orbit.status, 'covered');
+  for (const v of orbit.by) { assert.ok(prs.caps.indexOf(v) !== -1, 'gesture claims uncapped verb ' + v); }
+  // And the declaration the shell reads is really there, with the page's own
+  // limits rather than invented ones -- a camera voice could put somewhere the
+  // mouse cannot reach is a worse bug than one that will not move.
+  assert.ok(prs.camera && prs.camera.apply && prs.camera.fit, 'no camera declaration');
+  assert.deepStrictEqual(prs.camera.dolly.clamp, [15, 120]);
 });
 check('zoom: the Sociogram now declares the cap its gesture claims', function () {
   const soc = MANIFEST.tabs.sociogram;

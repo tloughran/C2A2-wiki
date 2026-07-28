@@ -1407,8 +1407,8 @@ guide's job was to stop pretending the unnamed ones were not there.**
   keeps three separate maps behind one `applyPRSFilters`. Borrowing the bind is
   the exact mistake the Community Explorer manifest was warned off. **A
   generalised filters dim is the next real increment, and it unblocks two tabs.**
-- **The camera** (Reset View, orbit, wheel zoom). `execCamera` is `fitAll` /
-  `zoomBehavior` / `#graph-svg` — three Sociogram globals.
+- ~~**The camera**~~ — deferred for exactly one session, and undeferred the same
+  day. See §U.
 - **`find`** — the tab has a real search, but the highlight dim reads a class
   stamp off SVG opacities and `search` ends in `el.click()`.
 - **`#btn-labels`**, a bool drawn as ONE button toggling its own `.active`. The
@@ -1435,6 +1435,81 @@ adding a T1 tab is one entry "plus a knowledge default file". Only the Sociogram
 has knowledge files; the six tabs declared since have none, and
 `derive_tab_help.py` explicitly tolerates that ("partial rollout is safe"). This
 tab follows the six. Either the sentence or the practice should be reconciled.
+
+## U. The third axis (Tom, 2026-07-27: *"no zoom and pan and center, rotate commands in PRS"*)
+
+§T deferred the camera on the grounds that `execCamera` was Sociogram-specific.
+That was true and it was not a good enough reason: **a tab built around an
+orbiting camera that voice cannot turn is a room the guide can walk up to and
+never walk around.** Undeferred the same day.
+
+Four asks, four different answers, and the differences are the point:
+
+| ask | what it needed |
+|---|---|
+| **zoom**, **pan**, **fit** | *nothing in the language.* All three were already verbs with plan cases. Only the executor was hard-wired. |
+| **rotate** | one verbs.json entry and one plan case — the `camera` dim already existed. |
+| **center** | *nothing at all.* Opening a narrative already moves the camera onto it. An alias, not a mechanism. |
+
+### The declared camera
+
+`execCamera` was `fitAll` / `zoomBehavior` / `#graph-svg` / `currentZoomScale` —
+four globals of one page in the position of the shared road, the third time that
+exact shape has been found (`open` before §R, `revealedNodes` before §T).
+
+An orbit camera is **three numbers and a point**: theta round the vertical axis,
+phi raising and lowering the eye, radius as viewing distance, and a target it
+looks at — plus the page's own function that applies them. So the declaration is
+paths and step sizes:
+
+```
+apply: "updateCameraPosition",  fit: "resetCamera",
+dolly: { path: "cameraRadius", factor: 1.5, clamp: [15, 120] },
+orbit: { theta: "cameraTheta", phi: "cameraPhi", step: 0.4,
+         phi_clamp: [0.1, 2.6704] },
+pan:   { camera: "camera", target: "cameraTarget", step: 0.25 }
+```
+
+**The numbers are the page's own, not invented.** The clamps mirror `onWheel`
+(15–120) and the drag handler's phi guard (0.1 … π×0.85), so voice can never put
+the camera somewhere the mouse cannot reach — and at a limit it SAYS nothing
+moved rather than reporting the step it asked for, which is the same read-back
+rule the graph's zoom already followed. The orbit step is about what an 80-pixel
+drag does at the page's own 0.005 rad/px; the pan step scales with viewing
+distance, as the graph's scales with zoom.
+
+`rotate` is a sibling of `zoom` and `pan`, not a third mechanism — same dim, same
+discrete-step rule, same journal exemption (§14.4 bars *hashing* continuous
+fields, not reaching them). Caps keep it off every flat tab, where the engine
+refuses it with the `unsupported_here` that names what that tab does have; no
+hand-written second refusal, because that would be a second thing to keep true.
+
+### What the harness caught that no amount of reading would have
+
+**Pan straight after rotate panned in the frame the user had just left.**
+three.js composes `camera.matrix` during render, so reading the camera's right
+and up vectors gets a matrix one frame stale — off by exactly the rotate step.
+It surfaced as `pan right` no longer undoing `pan left`; the angle between the
+two moves was 0.4 rad, the orbit step, to the digit. `updateMatrixWorld(true)`
+before the read.
+
+Panning along *world* axes instead would have hidden this and been wrong in a
+worse way: after any rotation, "left" in world space has nothing to do with
+what is on screen.
+
+### Advertised, because a capability the model was not told about does not exist
+
+Two sentences in the tool description, and they are part of the feature:
+`rotate` is named as **the answer to occlusion** ("say it whenever the user wants
+to see something from another side, or says a node is hidden behind another —
+turning is the answer, zooming is not"), and `open` now says that on a 3D tab it
+also CENTRES, so *"centre on X"* is `open X` and not a camera command. §S's
+lesson, applied before the live review rather than after it.
+
+Audit: 53 controls — 5 covered, 6 excluded, **42 deferred, 0 uncovered**;
+gestures **4 covered / 1 deferred / 1 excluded** (only edge_click remains).
+Gate: **157 engine + 272 shell green**, including L14a — the Sociogram's camera
+declares nothing and still takes the old road.
 
 ## I. Still open, reserved to Tom
 

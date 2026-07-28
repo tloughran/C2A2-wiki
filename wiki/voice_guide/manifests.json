@@ -1503,9 +1503,13 @@
         "read",
         "summarize",
         "stop",
-        "set"
+        "set",
+        "fit",
+        "zoom",
+        "pan",
+        "rotate"
       ],
-      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. No camera verbs and no `find`: both are still wired to the Sociogram's own globals (fitAll / zoomBehavior / #graph-svg, and a search path that ends in el.click()), and generalising either is its own increment rather than something to fake here.",
+      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
       "knobs": [
         {
           "id": "edges",
@@ -1647,6 +1651,11 @@
           "dim": "selection",
           "match": "#info-panel .close-btn",
           "note": "close -- the narrative panel. Named by the items spec, so the audit counts it there."
+        },
+        {
+          "dim": "camera",
+          "match": "#header .controls button:not(#btn-labels)",
+          "note": "Reset View -- what `fit` calls (resetCamera), declared per the tab's camera spec"
         }
       ],
       "controls_excluded": [
@@ -1683,11 +1692,6 @@
           "match": "#prs-left-page .close-btn",
           "reason": "the LEFT page, which only an edge click opens (showEdgeInfo puts the source narrative there and the target on the right). `close` covers the right panel only, exactly the asymmetry the Sociogram's dismissLeftPage deferral names",
           "next": "connectome increment 2, with edge selection"
-        },
-        {
-          "match": "#header .controls button:not(#btn-labels)",
-          "reason": "Reset View -- a camera. execCamera is wired to fitAll / zoomBehavior / #graph-svg, all three of them Sociogram globals; this tab orbits a THREE.PerspectiveCamera through updateCameraPosition",
-          "next": "a generalised camera dim -- connectome increment 2"
         }
       ],
       "_coverage_note": "Authored 2026-07-27 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML: the tradition, discipline and decade checkboxes are all innerHTML-written at boot, so the static file shows a fraction of the real surface. Deferred is not a synonym for excluded -- everything under controls_deferred is IN scope and reachable by hand today, and the shell test asserts the count exactly so a new control cannot quietly join the list.",
@@ -1725,16 +1729,22 @@
         {
           "id": "orbit",
           "label": "Drag to orbit the camera",
-          "status": "deferred",
-          "reason": "camera; execCamera is Sociogram-specific (see the Reset View deferral)",
-          "planned": "connectome increment 2"
+          "status": "covered",
+          "by": [
+            "rotate",
+            "fit"
+          ],
+          "note": "rotate left|right swings round the vertical axis, up|down raises and lowers the eye, in the page's own clamped range."
         },
         {
           "id": "wheel_zoom",
           "label": "Wheel / pinch to zoom",
-          "status": "deferred",
-          "reason": "same camera",
-          "planned": "connectome increment 2"
+          "status": "covered",
+          "by": [
+            "zoom",
+            "fit"
+          ],
+          "note": "zoom in|out steps the viewing distance between the page's own 15 and 120; `fit` is the way back to the whole thing."
         },
         {
           "id": "hover",
@@ -1742,7 +1752,35 @@
           "status": "excluded",
           "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
         }
-      ]
+      ],
+      "camera": {
+        "kind": "orbit",
+        "apply": "updateCameraPosition",
+        "fit": "resetCamera",
+        "dolly": {
+          "path": "cameraRadius",
+          "factor": 1.5,
+          "clamp": [
+            15,
+            120
+          ]
+        },
+        "orbit": {
+          "theta": "cameraTheta",
+          "phi": "cameraPhi",
+          "step": 0.4,
+          "phi_clamp": [
+            0.1,
+            2.6704
+          ]
+        },
+        "pan": {
+          "camera": "camera",
+          "target": "cameraTarget",
+          "step": 0.25
+        },
+        "_note": "AN ORBIT CAMERA IS THREE NUMBERS AND A POINT. theta swings round the vertical axis, phi raises and lowers the eye, radius is the viewing distance, and cameraTarget is what it looks at; updateCameraPosition is the page's own function that turns the four into a camera position. Every camera verb is a step on one of them, so the declaration is paths and step sizes rather than code -- the same rule the item spec follows.\nThe numbers are the PAGE's, not invented: the clamps mirror onWheel (15..120) and the drag handler's phi guard (0.1 .. PI*0.85), so voice can never put the camera somewhere the mouse cannot. The orbit step is 0.4 rad, about what an 80-pixel drag does at the page's own 0.005 rad/px; the pan step is a quarter of the current viewing distance, so it feels the same close in and far out, exactly as the graph's pan scales with zoom.\nPAN USES THE CAMERA'S OWN RIGHT AND UP, read off its world matrix. Panning along world axes would send the view sideways in a direction unrelated to what the user is looking at -- which after any rotation is nearly always."
+      }
     }
   }
 }
