@@ -1511,6 +1511,84 @@ gestures **4 covered / 1 deferred / 1 excluded** (only edge_click remains).
 Gate: **157 engine + 272 shell green**, including L14a — the Sociogram's camera
 declares nothing and still takes the old road.
 
+## V. The data cut, on a tab that is not the graph (Tom, 2026-07-27)
+
+> *"checking/unchecking boxes (using that data-cutting tool) isn't supported. It is,
+> in the sociogram, and we used that same arch here… can we cheaply import that
+> option here also, for voice data cutting?"*
+
+He was right about the architecture and right that it should be cheap. **The
+engine needed nothing.** `resolveGroups` already resolves a flat roster of
+`section/leaf` keys — which is exactly why `only levin` and `only traditions`
+both work on the graph. What was Sociogram-specific was the SHELL reading that
+roster off one page's `groupVisibility`, with `syncFilterUI`'s `[data-group]`
+sweep and `toggleAll` beside it.
+
+**Fourth instance of the one-page's-globals-in-the-shared-road shape** (`open`
+§R, `revealedNodes` §T, `execCamera` §U), and the most consequential: the filter
+panel was 37 of this tab's 53 controls and the whole of what remained deferred.
+
+### Declared
+
+Three sections, each naming the page's own state object, its checkbox pattern,
+and its master box. Roster keys come out as `traditions/levin`,
+`disciplines/cognitive-science`, `years/1990s`.
+
+**Writes go through the checkbox, not the state object.** The shell sets
+`checked` and dispatches `change`, so the page's own `prsToggleThinker` /
+`prsToggleDisc` / `prsToggleYear` run. That is not ceremony: disciplines must
+redraw wedge geometry (`applyDiscFilters`) and years the decade rings
+(`applyYearFilters`) *before* the node pass, and each handler keeps its master
+box in step. Writing the state object directly would have set the data cut and
+left the drawing behind it — the exact class of bug this design keeps finding.
+Cost is one apply per key instead of the graph's single batch; over 1359 meshes
+that is microseconds, and correct-by-construction is worth more than a batch path
+that must be kept in step with three handlers. `all`/`none` go through each
+section's master box, so the page does its own sweep.
+
+`leaf` exists because the spoken name is not always the state key: decades are
+numbers in the page and "the 1990s" out loud; a discipline is two words in the
+page and must be ONE token to a parser that splits on spaces, so it slugs to
+`cognitive-science` — and `only cognitive` still lands by prefix.
+
+### Two things only a live run could have told us
+
+**1. `only X` means only X *within X's own axis*.** On the graph there is one
+axis — a node is in exactly one group — so `set` zeroing the whole roster is
+right. Here three axes compose with AND, and zeroing the roster turned every
+discipline and decade off too: `only levin` drew **nothing at all**. The reset is
+now scoped to the sections the user actually named, which is also what the tab's
+own help popover says the panel does ("each section filters independently…
+across sections a data point must pass every active section"). Cuts therefore
+stack, which is what makes this a data-cutting tool rather than a switch.
+
+**2. Thirty-four group names read aloud is not a report.** The graph names its
+groups one by one, which works at a handful and buries the one number a listener
+wanted at 34 — and worse, `what` had an either/or that dropped the item count to
+make room for them. Now per AXIS, with the common cases collapsed:
+
+```
+set -> traditions: levin | disciplines: all 13 | years: all 5 | 47 of 453 narratives
+```
+
+Filters and items were alternatives on the graph; here they are one view seen two
+ways, so `what` says both.
+
+### Advertised
+
+The tool description now states that a tab may have several independent axes,
+that `only` narrows one and leaves the others alone **so cuts stack**, that an
+axis can be named whole, and that the result names each axis and the surviving
+count — *"relay THAT rather than what you asked for"*.
+
+Audit: 53 controls — **42 covered**, 6 excluded, **5 deferred, 0 uncovered**
+(search, the labels toggle, the edge panel's close). Gestures 5 covered / 1
+deferred / 1 excluded. Gate: **157 engine + 290 shell green**.
+
+**Still one-page-specific and now conspicuous:** `nodesShown`/`nodesInView`
+(`#graph-status`), the `cut` dim, and `find`'s class-stamp read. Community
+Explorer's eight type filters are the next customer for what this section built.
+
 ## I. Still open, reserved to Tom
 
 - **Voice**: one voice throughout; wants Anthropic *Airy* or nearest. Not

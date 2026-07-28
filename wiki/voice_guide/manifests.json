@@ -1507,9 +1507,18 @@
         "fit",
         "zoom",
         "pan",
-        "rotate"
+        "rotate",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "undo",
+        "redo",
+        "reset",
+        "restore"
       ],
-      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
+      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. The FILTER dimension is declared too (see `filters`), so this tab cuts data by voice on all three of its axes. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
       "knobs": [
         {
           "id": "edges",
@@ -1656,6 +1665,11 @@
           "dim": "camera",
           "match": "#header .controls button:not(#btn-labels)",
           "note": "Reset View -- what `fit` calls (resetCamera), declared per the tab's camera spec"
+        },
+        {
+          "dim": "filters",
+          "match": "[id^='prs-chk-']",
+          "note": "the whole filter panel -- All/per-tradition, All/per-discipline, All/per-decade -- reached by show/hide/only/all/none through the declared `filters` sections. The three edge knobs match this selector too and are covered as knobs, which is tested first."
         }
       ],
       "controls_excluded": [
@@ -1673,11 +1687,6 @@
         }
       ],
       "controls_deferred": [
-        {
-          "match": "[id^='prs-chk-']",
-          "reason": "the whole filter surface -- All/per-tradition, All/per-discipline, All/per-decade. Knob-shaped in appearance and NOT knobs: they are a filters dimension, and the shell's `filters` dim is hard-wired to the Sociogram's groupVisibility + syncFilterUI. This tab keeps three separate maps (prsFilterState / prsDiscState / prsYearState) behind one applyPRSFilters, so show/hide/only needs a generalised filters dim rather than a borrowed bind. The three declared knobs above match this selector too and are counted as covered, because binds are tested first",
-          "next": "a generalised filters dim -- the same increment that unblocks Community Explorer's 8 type filters"
-        },
         {
           "match": "#prs-search-box, #prs-search-clear, #prs-search-reset",
           "reason": "find / clear / reset. The tab has a real search (prsSearch dims non-matching meshes), but the shell's highlight dim reads a class stamp off SVG opacities and `search` ends in el.click() -- both DOM-shaped, neither reaches a canvas",
@@ -1751,6 +1760,20 @@
           "label": "Hover a node for its tooltip",
           "status": "excluded",
           "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        },
+        {
+          "id": "filter_checkbox",
+          "label": "Check or uncheck a filter box (the data cut)",
+          "status": "covered",
+          "by": [
+            "show",
+            "hide",
+            "only",
+            "all",
+            "none",
+            "undo"
+          ],
+          "note": "only levin | hide disciplines | only cognitive | show the 1990s | none. Voice sets the box and dispatches change, so the page's own handler runs -- the same road the mouse takes."
         }
       ],
       "camera": {
@@ -1780,6 +1803,31 @@
           "step": 0.25
         },
         "_note": "AN ORBIT CAMERA IS THREE NUMBERS AND A POINT. theta swings round the vertical axis, phi raises and lowers the eye, radius is the viewing distance, and cameraTarget is what it looks at; updateCameraPosition is the page's own function that turns the four into a camera position. Every camera verb is a step on one of them, so the declaration is paths and step sizes rather than code -- the same rule the item spec follows.\nThe numbers are the PAGE's, not invented: the clamps mirror onWheel (15..120) and the drag handler's phi guard (0.1 .. PI*0.85), so voice can never put the camera somewhere the mouse cannot. The orbit step is 0.4 rad, about what an 80-pixel drag does at the page's own 0.005 rad/px; the pan step is a quarter of the current viewing distance, so it feels the same close in and far out, exactly as the graph's pan scales with zoom.\nPAN USES THE CAMERA'S OWN RIGHT AND UP, read off its world matrix. Panning along world axes would send the view sideways in a direction unrelated to what the user is looking at -- which after any rotation is nearly always."
+      },
+      "filters": {
+        "sections": [
+          {
+            "name": "traditions",
+            "state": "prsFilterState",
+            "checkbox": "#prs-chk-{k}",
+            "all": "#prs-chk-all"
+          },
+          {
+            "name": "disciplines",
+            "state": "prsDiscState",
+            "checkbox": "#prs-chk-disc-{slug}",
+            "all": "#prs-chk-all-discs"
+          },
+          {
+            "name": "years",
+            "state": "prsYearState",
+            "checkbox": "#prs-chk-year-{k}",
+            "all": "#prs-chk-all-years",
+            "leaf": "{k}s"
+          }
+        ],
+        "_note": "THREE INDEPENDENT AXES, ONE FLAT ROSTER -- which is exactly what the engine already wanted. resolveGroups resolves `section/leaf` keys, so declaring the sections gives `only levin`, `hide disciplines`, `only cognitive`, `none` and the ambiguity hedge with no new grammar and no new verbs. The Sociogram namespaces its own keys the same way (traditions/levin, structure/architecture); the difference was never the shape of the roster, only that the shell read it from one page's `groupVisibility`.\nWRITES GO THROUGH THE CHECKBOX, not the state object: the shell sets `checked` and dispatches `change`, so the page's own prsToggleThinker / prsToggleDisc / prsToggleYear run with their own apply chains. That matters here and is not ceremony -- disciplines must redraw the wedge meshes (applyDiscFilters) and years the decade rings (applyYearFilters) BEFORE the node pass, and the traditions handler keeps the All box in step. Writing prsFilterState directly would set the data cut and leave the drawing behind it, which is the class of bug this whole design keeps finding.\n`leaf` exists because the spoken name is not always the state key. Decades are numbers in the page and \"the 1990s\" out loud, so years declare `{k}s`; disciplines are two words in the page and must be ONE token to a parser that splits on spaces, so they slug to `cognitive-science` -- and `only cognitive` still lands by prefix.",
+        "_all_note": "`all` and `none` go through each section's own master checkbox rather than sweeping every key, so the page does its own sweep -- one dispatch per section instead of thirty-four, and no chance of the master box disagreeing with the boxes under it."
       }
     }
   }

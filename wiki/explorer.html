@@ -1793,7 +1793,7 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (filter the graph by tradition/structure name), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
@@ -2558,7 +2558,121 @@ var VoiceGuide = (function() {
     if (!w || typeof w[fn] !== 'function') { throw new Error('this view has no ' + fn + '()'); }
     return w[fn].apply(w, args);
   }
-  function roster() { var w = ifWin(); try { return w && w.groupVisibility ? Object.keys(w.groupVisibility) : []; } catch (e) { return []; } }
+  // ---- FILTERS THAT ARE NOT groupVisibility -------------------------------
+  //
+  // The Sociogram's filter dimension was three globals of one page --
+  // `groupVisibility`, `syncFilterUI`'s `[data-group]` sweep, `toggleAll` --
+  // sitting in the position of the shared road. FOURTH time (after `open`,
+  // `revealedNodes` and `execCamera`), and the most consequential: 43 of the
+  // Connectome's 53 controls are its filter panel, and Community Explorer's
+  // eight type filters are the same gap. Tom, looking at a checkbox panel that
+  // reads like the Sociogram's: "we used that same arch here... can we cheaply
+  // import that option here also, for voice data cutting?"
+  //
+  // The ENGINE needed nothing. `resolveGroups` already works on a flat roster
+  // of `section/leaf` keys, which is why `only levin` and `only traditions`
+  // both work on the graph -- so a tab that can produce such a roster gets the
+  // whole filter vocabulary (show/hide/only/all/none, section terms, the
+  // ambiguity hedge) with no new grammar and no new verbs.
+  //
+  // WRITES TRAVEL THE MOUSE'S ROAD. Rather than assigning the page's state
+  // object and then trying to reproduce everything its handler does, the shell
+  // sets the checkbox and dispatches `change` -- so the page's own
+  // prsToggleThinker / prsToggleDisc / prsToggleYear run, with their own apply
+  // chains (disciplines redraw wedges, years redraw rings, both then re-run the
+  // node pass) and their own master-checkbox bookkeeping. Voice does what a
+  // click does, which is the same principle `activate: "click"` follows for dom
+  // items. It costs one apply per key instead of the graph's single batch; over
+  // 1359 meshes that is microseconds, and correct-by-construction is worth more
+  // here than a batch path that has to be kept in step with three handlers.
+  function filtersSpec() { var am = activeManifest(); return (am && am.m.filters) || null; }
+  function slug(s) { return String(s).trim().toLowerCase().replace(/\s+/g, '-'); }
+  // The roster the engine resolves against, plus everything needed to write it
+  // back: which section, which key in the page's own state, which checkbox.
+  function declaredRoster() {
+    var spec = filtersSpec(), w = ifWin(), d = ifDoc(), out = [];
+    if (!spec || !w || !d) { return out; }
+    (spec.sections || []).forEach(function (sec) {
+      var st;
+      try { st = w[sec.state]; } catch (e) { return; }
+      if (!st) { return; }
+      Object.keys(st).forEach(function (k) {
+        var vars = { k: k, slug: slug(k) };
+        // The spoken leaf is not always the state key: decades are numbers in
+        // the page and "the 1990s" out loud, and a discipline is two words in
+        // the page and one token to a parser. Declared per section rather than
+        // guessed, and the map back to the real key is kept here.
+        var leaf = sec.leaf ? fillTpl(sec.leaf, vars) : slug(k);
+        out.push({ key: sec.name + '/' + leaf, section: sec.name, stateKey: k,
+                   sel: fillTpl(sec.checkbox, vars), all: sec.all });
+      });
+    });
+    return out;
+  }
+  function declaredFilterRead() {
+    var w = ifWin(), rows = declaredRoster(), map = {};
+    if (!rows.length) { return null; }
+    rows.forEach(function (r) {
+      var st = w[filterSectionState(r.section)];
+      map[r.key] = st ? st[r.stateKey] !== false : true;
+    });
+    return map;
+  }
+  function filterSectionState(name) {
+    var spec = filtersSpec(), secs = (spec && spec.sections) || [], i;
+    for (i = 0; i < secs.length; i++) { if (secs[i].name === name) { return secs[i].state; } }
+    return null;
+  }
+  function declaredFilterWrite(value) {
+    var d = ifDoc(), rows = declaredRoster();
+    if (!d) { return; }
+    rows.forEach(function (r) {
+      if (!Object.prototype.hasOwnProperty.call(value, r.key)) { return; }
+      var cb = d.querySelector(r.sel);
+      if (!cb || !!cb.checked === !!value[r.key]) { return; }
+      cb.checked = !!value[r.key];
+      cb.dispatchEvent(new d.defaultView.Event('change', { bubbles: true }));
+    });
+  }
+  // all / none, through each section's OWN master checkbox -- one dispatch per
+  // section instead of one per key, and the page's handler does the sweep.
+  function declaredFilterAll(on) {
+    var spec = filtersSpec(), d = ifDoc();
+    if (!spec || !d) { return; }
+    (spec.sections || []).forEach(function (sec) {
+      var cb = sec.all && d.querySelector(sec.all);
+      if (!cb) { return; }
+      cb.checked = !!on;
+      cb.dispatchEvent(new d.defaultView.Event('change', { bubbles: true }));
+    });
+  }
+  // WHAT A CUT SOUNDS LIKE. The graph names its groups one by one, which works
+  // at a handful and does not at thirty-four: reading "traditions/arkanihamed,
+  // traditions/carroll, ..." out loud tells a listener nothing and buries the
+  // one number they wanted. Per AXIS instead, with the common cases collapsed
+  // ("all 16", "none") and only a genuinely partial axis spelled out -- which is
+  // also how the panel reads to someone looking at it.
+  function filterSummary() {
+    var spec = filtersSpec();
+    if (!spec) { return null; }
+    var gv = readDim('filters') || {}, bySec = {}, out = [];
+    declaredRoster().forEach(function (r) { (bySec[r.section] = bySec[r.section] || []).push(r); });
+    (spec.sections || []).forEach(function (sec) {
+      var rs = bySec[sec.name] || [];
+      if (!rs.length) { return; }
+      var on = rs.filter(function (r) { return gv[r.key]; });
+      if (on.length === rs.length) { out.push(sec.name + ': all ' + rs.length); return; }
+      if (!on.length) { out.push(sec.name + ': none'); return; }
+      out.push(sec.name + ': ' + on.slice(0, 4).map(function (r) { return leafOf(r.key); }).join(', ') +
+        (on.length > 4 ? (' and ' + (on.length - 4) + ' more') : ''));
+    });
+    return out.length ? out.join('  |  ') : null;
+  }
+  function roster() {
+    var dr = declaredRoster();
+    if (dr.length) { return dr.map(function (r) { return r.key; }); }
+    var w = ifWin(); try { return w && w.groupVisibility ? Object.keys(w.groupVisibility) : []; } catch (e) { return []; }
+  }
   function onGroups() { var gv = readDim('filters') || {}, on = []; for (var k in gv) { if (gv[k]) { on.push(k); } } return on; }
   // The RENDERED truth, read back off the graph's own status line -- not the
   // groupVisibility we just wrote. Reporting our own write is how "show
@@ -4220,7 +4334,11 @@ var VoiceGuide = (function() {
   function readDim(dim) {
     var w = ifWin(), d = ifDoc();
     try {
-      if (dim === 'filters') { return w && w.groupVisibility ? Object.assign({}, w.groupVisibility) : null; }
+      if (dim === 'filters') {
+        var df = declaredFilterRead();
+        if (df) { return df; }
+        return w && w.groupVisibility ? Object.assign({}, w.groupVisibility) : null;
+      }
       if (dim === 'selection') {
         // Read the PAGE's own marker, not the click we just made. Summa sets
         // `.sel` on the article row it actually loaded, so a click that failed
@@ -4254,7 +4372,10 @@ var VoiceGuide = (function() {
       return;
     }
     if (dim === 'cut') { writeCut(value); return; }
-    if (dim === 'filters') { var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI(); }
+    if (dim === 'filters') {
+      if (filtersSpec()) { declaredFilterWrite(value); return; }
+      var w = ifWin(); for (var k in value) { if (Object.prototype.hasOwnProperty.call(value, k)) { w.groupVisibility[k] = value[k]; } } syncFilterUI();
+    }
     else if (dim === 'selection') {
       // Restore (undo/redo) has to travel the same road the command did.
       var wsp = itemSpec();
@@ -4483,11 +4604,28 @@ var VoiceGuide = (function() {
     var before = readDim('filters');
     if (!before) { return show('filters are not available on this view', 'err'); }
     if (bootFilters === null) { bootFilters = before; }   // capture the boot default once
-    if (p.action === 'all') { call('toggleAll', true); }
-    else if (p.action === 'none') { call('toggleAll', false); }
+    var declared = !!filtersSpec();
+    if (p.action === 'all') { if (declared) { declaredFilterAll(true); } else { call('toggleAll', true); } }
+    else if (p.action === 'none') { if (declared) { declaredFilterAll(false); } else { call('toggleAll', false); } }
     else {
       var target, x;
-      if (p.action === 'set') { target = {}; for (var k in before) { target[k] = false; } for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = true; } }
+      // `only X` MEANS ONLY X WITHIN X'S OWN AXIS. On the graph there is one
+      // axis -- a node is in exactly one group -- so zeroing the whole roster is
+      // right. This tab has THREE that compose with AND (its own help popover
+      // says so: "each section filters independently... across sections a data
+      // point must pass every active section"), so zeroing the roster turned
+      // every discipline and every decade off too and `only levin` drew nothing
+      // at all. Scope the reset to the sections the user actually named; the
+      // ones they said nothing about are left exactly as they were.
+      if (p.action === 'set' && filtersSpec()) {
+        var rowsBy = {}, named = {};
+        declaredRoster().forEach(function (r) { rowsBy[r.key] = r.section; });
+        for (x = 0; x < p.keys.length; x++) { named[rowsBy[p.keys[x]]] = true; }
+        target = Object.assign({}, before);
+        for (var kk in target) { if (named[rowsBy[kk]]) { target[kk] = false; } }
+        for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = true; }
+      }
+      else if (p.action === 'set') { target = {}; for (var k in before) { target[k] = false; } for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = true; } }
       else { target = Object.assign({}, before); for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = (p.action === 'union'); } }
       writeDim('filters', target);
     }
@@ -4496,8 +4634,16 @@ var VoiceGuide = (function() {
     // Lead with what the graph SHOWS. An empty result is stated plainly rather
     // than dressed as a successful filter change -- the user asked to see
     // something, and "0 nodes in view" is the honest answer to that.
+    // WHAT THE PAGE NOW SHOWS. The graph has a status line to read this off;
+    // a tab with a declared filter dimension has its item roster and its own
+    // total instead, which is the same claim from the same source rule (say
+    // the page's number, never the write we just made).
     var n = nodesShown();
-    var head = (n && n.shown === 0 && p.action !== 'none') ? 'nothing matched -- 0 nodes shown. ' : '';
+    if (!n && declared) {
+      var shownN = activeItems().length, totalN = specTotal(itemSpec());
+      n = { shown: shownN, total: totalN === null ? shownN : totalN };
+    }
+    var head = (n && n.shown === 0 && p.action !== 'none') ? ('nothing matched -- 0 ' + (declared ? itemNouns(0) : 'nodes') + ' shown. ') : '';
     var framed = frameSuffix();
     // Own the guess out loud. The interpretation is soft ("taking X to mean Y");
     // the outcome that follows it never is.
@@ -4508,7 +4654,10 @@ var VoiceGuide = (function() {
         return 'taking "' + g.term + '" as ' + leafOf(g.chose) + (alt ? ' (could be ' + alt + ')' : '');
       }).join('; ') + '. ';
     }
-    var res = show(hedge + head + p.action + ' -> ' + on.length + ' groups on: ' + on.join(', ') + viewSuffix() + framed + extra, 'ok');
+    var fSumF = filterSummary();
+    var body = fSumF ? (fSumF + '  |  ' + itemsPhrase(n ? n.shown : activeItems().length))
+                     : (on.length + ' groups on: ' + on.join(', '));
+    var res = show(hedge + head + p.action + ' -> ' + body + viewSuffix() + framed + extra, 'ok');
     // The counts ride on the RESULT OBJECT too, not only inside the prose, so
     // the voice tool output can carry them as data the model must relay. A
     // spoken confirmation should never be able to outrun the render.
@@ -4781,7 +4930,14 @@ var VoiceGuide = (function() {
     var vNote = activeViewName();
     if (vNote) { itemNote = '  |  ' + vNote + ' view' + itemNote; }
     var cutNote = cutIds ? ('  |  cut to ' + cutIds.length + ' nodes' + (cutQuery ? (' matching "' + cutQuery + '"') : '')) : '';
-    var res = show('view: ' + name + pos + (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote) + cutNote + viewSuffix(), 'ok');
+    // BOTH, on a tab with declared axes. The graph's either/or was fine while
+    // filters and items were alternatives; here they are the same view seen two
+    // ways, and dropping the count to make room for thirty-four group names
+    // took away the one thing a listener was actually asking for.
+    var fSum = filterSummary();
+    var filterNote = fSum ? ('  |  ' + fSum + itemNote)
+                          : (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote);
+    var res = show('view: ' + name + pos + filterNote + cutNote + viewSuffix(), 'ok');
     var nv = nodesShown();
     if (nv) { res.shown = nv.shown; res.total = nv.total; }
     // Structured, not just prose: the guide is told in its prompt that any claim
@@ -4899,7 +5055,12 @@ var VoiceGuide = (function() {
   // Read-only, no side effects -- the section-9 coverage audit consumes it too.
   window.CCLDebug = function () {
     var am = activeManifest();
-    return { src: activeSrc(), tab: am && am.key, caps: am ? am.m.caps : null, knobs: am ? (am.m.knobs || []).map(function (k) { return k.id; }) : null };
+    // The roster rides along: on a tab with a DECLARED filter dimension it is
+    // built from three of the page's own state maps, and the only way to check
+    // that the section namespace came out right is to look at it.
+    return { src: activeSrc(), tab: am && am.key, caps: am ? am.m.caps : null,
+             knobs: am ? (am.m.knobs || []).map(function (k) { return k.id; }) : null,
+             roster: roster() };
   };
   input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); var v = input.value.trim(); if (v) { run(v); } } });
   document.addEventListener('keydown', function (e) {

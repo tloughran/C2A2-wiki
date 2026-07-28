@@ -57,7 +57,7 @@ const METABOLISM_SRC = 'metabolism/metabolism_view.html';
 // toggle, the left page's close, Reset View -- and the point of pinning the
 // number is that a new control cannot join that list without reddening the gate.
 // Raise it only together with the manifest entry that explains the new one.
-const PRS_DEFERRED = 42;
+const PRS_DEFERRED = 5;
 
 // ---------------------------------------------------------------- tiny CDP ---
 
@@ -1620,7 +1620,7 @@ async function main() {
   await auditTab(page, 'prs_3d', PRS_DEFERRED, 1);
 
   await row(page, 'L1 what -> names the narratives and the page\'s own total', 'what',
-    { ok: true, spoken: /\d+ narratives here/ });
+    { ok: true, spoken: /\d+ narratives\b/ });
   // ONE ITEM IS THREE MESHES -- a problem, a resource and a solution sharing one
   // triplet id. Without dedupe the guide walks each narrative three times and
   // reports a number the page itself contradicts. Computed from the page rather
@@ -1634,7 +1634,7 @@ async function main() {
   record('L1a the page really does draw three meshes per narrative',
     trip.meshes === trip.distinct * 3, JSON.stringify(trip));
   await row(page, 'L2 the roster counts NARRATIVES, not the meshes they are drawn with', 'what',
-    { ok: true, spoken: new RegExp('\\b' + trip.distinct + ' narratives here') });
+    { ok: true, spoken: new RegExp('\\b' + trip.distinct + ' narratives\\b') });
   // 222 OF THE 453 SHIP AN EMPTY LABEL. The first run of L2 was red at 231 --
   // the guide had silently dropped every unnamed narrative, saying "231
   // narratives here" over a tab drawing 453 and putting half the artifact out
@@ -1720,7 +1720,7 @@ async function main() {
   // on screen) and the same fix: say the page's own number, read off the page's
   // own status line, so what survived a filter can never pass for the whole set.
   await row(page, 'L11a the roster follows the page, and never passes a cut off as the whole set', 'what',
-    { ok: true, spoken: new RegExp('\\b' + shrunk.visible + ' of ' + canvasOnly.triplets + ' narratives here') });
+    { ok: true, spoken: new RegExp('\\b' + shrunk.visible + ' of ' + canvasOnly.triplets + ' narratives\\b') });
   await row(page, 'L11b and walking a cut page says both numbers', 'pick first',
     { ok: true, spoken: new RegExp('1 of ' + shrunk.visible + ' narratives \\(' + canvasOnly.triplets + ' in all\\)') });
   // What was picked may be gone now. Bare `open` resolves through the LIVE
@@ -1836,6 +1836,127 @@ async function main() {
     Number(afterC.r) !== Number(beforeC) && String(afterC.sel) === String(label),
     JSON.stringify({ r: [beforeC, afterC.r] }));
   await runCmd(page, 'close');
+
+  // ---- L23-L31: THE DATA CUT, by voice ------------------------------------
+  //
+  // Tom, looking at a checkbox panel that reads like the Sociogram's: "we used
+  // that same arch here... can we cheaply import that option here also, for
+  // voice data cutting?" The panel is 37 of this tab's 53 controls, and it was
+  // the whole of what was still deferred.
+  //
+  // The ENGINE needed nothing: resolveGroups already resolves `section/leaf`
+  // keys, which is why `only levin` and `only traditions` both work on the
+  // graph. What was Sociogram-specific was the shell reading the roster off one
+  // page's `groupVisibility` -- the fourth time a single page's globals have
+  // been found sitting in the position of the shared road.
+  //
+  // Every row here asserts the PAGE's own state. A filter that narrates a cut
+  // it did not make is the exact failure this harness exists for, and it is
+  // invisible to anyone who cannot see the screen.
+  await runCmd(page, 'all');
+  const rosterSeen = await page.eval(
+    "var r = window.CCLDebug ? window.CCLDebug() : null;" +
+    "return r && r.roster ? { n: r.roster.length, sample: r.roster.slice(0, 3)," +
+    "  sections: r.roster.map(function (k) { return k.split('/')[0]; })" +
+    "    .filter(function (v, i, a) { return a.indexOf(v) === i; }) } : null;");
+  record('L23 the roster is one flat namespace over all three axes',
+    !!rosterSeen && rosterSeen.sections.length === 3 &&
+    rosterSeen.sections.indexOf('traditions') !== -1 &&
+    rosterSeen.sections.indexOf('disciplines') !== -1 &&
+    rosterSeen.sections.indexOf('years') !== -1,
+    JSON.stringify(rosterSeen));
+  // `only <one tradition>` -- the ordinary data cut, and the write has to have
+  // gone through the page's handler: the checkbox, the state map, the meshes
+  // and the page's own counter all have to agree, or something was skipped.
+  await row(page, 'L24 only levin -> one tradition', 'only levin',
+    { ok: true, spoken: /set -> traditions: levin/ });
+  const cut1 = await page.eval(IFRAME_DOC +
+    "var seen = {}, n = 0, others = 0;" +
+    "w.meshes.forEach(function (m) { if (m.userData && m.userData.type === 'prs' && m.visible) {" +
+    "  var id = m.userData.triplet.id; if (!seen[id]) { seen[id] = 1; n++; }" +
+    "  if (m.userData.thinker !== 'levin') { others++; } } });" +
+    "return { visible: n, foreign: others, box: d.getElementById('prs-chk-levin').checked," +
+    "         state: w.prsFilterState.levin, otherState: w.prsFilterState.hoffman," +
+    "         line: d.getElementById('prs-count').textContent };");
+  record('L24a checkbox, state map, meshes and the page\'s own counter all agree',
+    cut1.box === true && cut1.state === true && cut1.otherState === false &&
+    cut1.foreign === 0 && cut1.visible > 0 &&
+    cut1.line.indexOf('Showing ' + cut1.visible + ' /') === 0,
+    JSON.stringify(cut1));
+  await row(page, 'L24b and the guide reports what the page now draws, not the write it made',
+    'what', { ok: true, spoken: new RegExp('traditions: levin') });
+  // A SECTION TERM, free with the roster shape: "hide disciplines" is one op
+  // over fifteen keys, and it must reach the WEDGE meshes too -- disciplines
+  // redraw geometry (applyDiscFilters) before the node pass, which is the whole
+  // reason writes go through the checkbox rather than the state object.
+  await runCmd(page, 'all');
+  await row(page, 'L25 hide disciplines -> a section term, one op over every key in it',
+    'hide disciplines', { ok: true, spoken: /diff -> .*disciplines: none/ });
+  const discs = await page.eval(IFRAME_DOC +
+    "var offAll = Object.keys(w.prsDiscState).every(function (k) { return w.prsDiscState[k] === false; });" +
+    "var wedges = w.discMeshes.filter(function (m) { return m.visible && m.userData && m.userData.discipline; }).length;" +
+    "var trads = Object.keys(w.prsFilterState).every(function (k) { return w.prsFilterState[k] === true; });" +
+    "return { discsOff: offAll, wedgesShown: wedges, traditionsUntouched: trads };");
+  record('L25a the wedges went with it, and the OTHER axes were left alone',
+    discs.discsOff === true && discs.wedgesShown === 0 && discs.traditionsUntouched === true,
+    JSON.stringify(discs));
+  // A two-word name has to be ONE token to a parser that splits on spaces, so
+  // the roster slugs it -- and the prefix match still lets a person say the
+  // short form they would actually say.
+  await runCmd(page, 'all');
+  await row(page, 'L26 only cognitive -> a two-word discipline reached by its short form',
+    'only cognitive', { ok: true, spoken: /disciplines: cognitive-science/ });
+  const disc1 = await page.eval(IFRAME_DOC +
+    "var on = Object.keys(w.prsDiscState).filter(function (k) { return w.prsDiscState[k]; });" +
+    "return { on: on };");
+  record('L26a and it is the one discipline, named in full by the page',
+    disc1.on.length === 1 && /cognitive science/i.test(disc1.on[0]), JSON.stringify(disc1));
+  // Decades are numbers in the page and "the 1990s" out loud. Declared, not
+  // guessed -- the `leaf` template is what closes that gap.
+  await runCmd(page, 'all');
+  await row(page, 'L27 show the 1990s -> the spoken form of a numeric key', 'only 1990s',
+    { ok: true, spoken: /years: 1990s/ });
+  const yr = await page.eval(IFRAME_DOC +
+    "var on = Object.keys(w.prsYearState).filter(function (k) { return w.prsYearState[k]; });" +
+    "return { on: on, rings: w.decadeRings.filter(function (r) { return r.ring && r.ring.visible; }).length };");
+  record('L27a the decade really is the only one on, and its rings followed',
+    yr.on.length === 1 && String(yr.on[0]) === '1990', JSON.stringify(yr));
+  // `none` through each section's own master box: the page does its own sweep,
+  // and an empty result is SAID plainly rather than dressed as a success.
+  await row(page, 'L28 none -> nothing left, and it says so instead of claiming a filter change',
+    'none', { ok: true, spoken: /none -> traditions: none.*disciplines: none.*years: none/ });
+  const noneState = await page.eval(IFRAME_DOC +
+    "var vis = w.meshes.filter(function (m) { return m.userData && m.userData.type === 'prs' && m.visible; }).length;" +
+    "return { visible: vis, masters: [d.getElementById('prs-chk-all').checked," +
+    "  d.getElementById('prs-chk-all-discs').checked, d.getElementById('prs-chk-all-years').checked] };");
+  record('L28a every mesh is gone and no master box is left claiming otherwise',
+    noneState.visible === 0 && noneState.masters.every(function (b) { return b === false; }),
+    JSON.stringify(noneState));
+  await row(page, 'L28b and with nothing shown the roster says so rather than offering a cursor',
+    'pick first', { ok: false, spoken: /nothing is revealed to pick from/ });
+  await row(page, 'L29 all -> everything back', 'all', { ok: true, spoken: /all -> traditions: all \d+/ });
+  const allState = await page.eval(IFRAME_DOC +
+    "var seen = {}, n = 0;" +
+    "w.meshes.forEach(function (m) { if (m.userData && m.userData.type === 'prs' && m.visible) {" +
+    "  var id = m.userData.triplet.id; if (!seen[id]) { seen[id] = 1; n++; } } });" +
+    "return n;");
+  record('L29a and it is the whole set again', Number(allState) === canvasOnly.triplets,
+    JSON.stringify([allState, canvasOnly.triplets]));
+  // Undo travels the same road the command did -- which on this tab means back
+  // through the checkboxes, so the page re-runs its own handlers on the way.
+  await runCmd(page, 'only levin');
+  await row(page, 'L30 undo steps the cut back', 'undo', { ok: true, spoken: /undid \(filters\)/ });
+  const undone = await page.eval(IFRAME_DOC +
+    "var on = Object.keys(w.prsFilterState).filter(function (k) { return w.prsFilterState[k]; }).length;" +
+    "var boxes = [].slice.call(d.querySelectorAll('#prs-tradition-filters input')).filter(function (b) { return b.checked; }).length;" +
+    "return { stateOn: on, boxesOn: boxes };");
+  record('L30a and the boxes came back with the state, because undo took the same road',
+    undone.stateOn === undone.boxesOn && undone.stateOn > 1, JSON.stringify(undone));
+  await runCmd(page, 'all');
+  // A word that names nothing is said back rather than silently dropped.
+  await row(page, 'L31 a term that matches no axis is named, not quietly ignored',
+    'only quantum chromodynamics', { ok: false, spoken: /could not find "quantum chromodynamics"/i });
+  await runCmd(page, 'all');
   const shotL = await page.screenshot(path.join(SHOTS, 'L-connectome.png'));
 
   // Back to the Sociogram once more: the data adapter added a road beside
