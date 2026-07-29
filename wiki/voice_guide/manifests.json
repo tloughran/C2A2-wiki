@@ -1904,7 +1904,9 @@
           "phi_clamp": [
             0.1,
             2.6704
-          ]
+          ],
+          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer.",
+          "idle": "autoSpin"
         },
         "pan": {
           "camera": "camera",

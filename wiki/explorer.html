@@ -4152,6 +4152,7 @@ var VoiceGuide = (function() {
       var wasReading = speaking, wasSpinning = spinning();
       stopSpeaking();
       spinStop();
+      idleQuiet();
       // Always "stopped", never "nothing was running": `stop` has been the one
       // unconditionally safe word in this language since the reader shipped,
       // and making its answer depend on state would punish the user for saying
@@ -4853,9 +4854,43 @@ var VoiceGuide = (function() {
     if (spinTimer) { clearInterval(spinTimer); }
     spinTimer = null; spinDir = null; spinWin = null;
   }
-  function spinning() { return !!spinTimer; }
+  // A PAGE MAY TURN WITHOUT THE SHELL HAVING STARTED IT. prs_3d opens drifting
+  // on its own, so `spinTimer` being null does not mean the view is still: it
+  // means *we* are not the one turning it. `spinning()` therefore has to answer
+  // "is this view turning", not "did I start it" -- otherwise `spin off` reports
+  // "nothing is spinning" at a screen the user can plainly see rotating, and
+  // `stop` claims a stop that does not happen. Both are the shell's own timer
+  // being idle turned into a false sentence about the room.
+  //
+  // Declared as a path (`orbit.idle`), never a hardcoded `w.autoSpin`: that
+  // global belongs to prs_3d, and a shell reaching for it by name would be the
+  // sixth instance of one page's convention sitting in the shared road's spot.
+  // Any tab that drifts on its own can now say so in one manifest key.
+  function idlePath() {
+    var c = cameraSpec();
+    return (c && c.orbit && c.orbit.idle) ? c.orbit.idle : null;
+  }
+  function idleTurning() {
+    var p = idlePath(), w = ifWin();
+    if (!p || !w) { return false; }
+    try { return !!pathGet(w, p); } catch (e) { return false; }
+  }
+  // Only ever called where the user asked for stillness -- `spin off`, `stop`,
+  // and the start of a deliberate spin. Deliberately NOT inside spinStop(),
+  // which also runs on tab switch: quieting there would reach past the window
+  // we are abandoning and still the drift on the tab just arrived at.
+  function idleQuiet() {
+    var p = idlePath(), w = ifWin();
+    if (!p || !w) { return false; }
+    try { pathSet(w, p, false); return true; } catch (e) { return false; }
+  }
+  function spinning() { return !!spinTimer || idleTurning(); }
   function spinStart(dir, spec) {
     spinStop();
+    // A commanded spin REPLACES the page's own drift rather than adding to it;
+    // otherwise "spin left" on a view already drifting right is two rotations
+    // fighting, and the speed the user gets is neither of the two we named.
+    idleQuiet();
     var w = ifWin();
     if (!w || !spec || !spec.orbit) { return false; }
     spinDir = dir; spinWin = w;
@@ -4874,6 +4909,21 @@ var VoiceGuide = (function() {
   function execCameraDeclared(spec, p) {
     var w = ifWin();
     if (!w) { return show('this view has no camera', 'err'); }
+    // TAKING THE CAMERA STOPS THE PAGE DRIFTING IT. prs_3d's own rule is that
+    // the opening drift ends at "any mousedown or wheel" -- a commanded move is
+    // that same interaction arriving by the guide's road rather than the
+    // mouse's, so it ends the drift for the same reason. Without this, a `pan
+    // left` is quietly undone over the next few seconds by something the user
+    // never asked for, and `what` describes a position that is already stale.
+    //
+    // `fit` included, and it is the one that needed deciding. It calls the
+    // page's own resetCamera(), which sets autoSpin back on -- Reset View means
+    // the whole opening state, drift included, and that is right for the BUTTON.
+    // Asked out loud, "fit" is a request to see the whole thing, and a view that
+    // immediately rotates away from what it just framed has not honoured it. So
+    // the page's function runs unchanged (the road is still the mouse's) and the
+    // drift is quieted after it, below. `spin` quiets its own, in spinStart.
+    if (p.action !== 'fit' && p.action !== 'spin') { idleQuiet(); }
     var apply = function () { if (spec.apply) { call(spec.apply); } };
     if (p.action === 'fit') {
       if (!spec.fit) { return show('this view cannot be fit to everything', 'err'); }
@@ -4887,6 +4937,10 @@ var VoiceGuide = (function() {
         if (!fb) { return show('this view cannot be fit to everything', 'err'); }
         fb.click();
       } else { call(spec.fit); }
+      // AFTER the page's own reset, never before: resetCamera() turns the drift
+      // back on as part of restoring the opening state, so quieting first would
+      // be undone by the very call we are quieting for.
+      idleQuiet();
       return show('fit', 'ok');
     }
     if (p.action === 'zoom') {
@@ -4908,6 +4962,7 @@ var VoiceGuide = (function() {
       if (p.dir === 'off') {
         if (!spinning()) { return show('nothing is spinning', 'err'); }
         spinStop();
+        idleQuiet();
         return show('stopped spinning', 'ok');
       }
       if (!spinStart(p.dir, spec)) { return show('this view does not turn', 'err'); }
@@ -5134,7 +5189,13 @@ var VoiceGuide = (function() {
     // A MOVING VIEW IS STATE, and `what` is the only way anyone here learns the
     // state. Left unsaid, a guide asked "where are we?" would describe a still
     // picture of something that is turning.
-    if (spinning()) { itemNote += '  |  the view is spinning ' + spinDir + ' -- say "stop" to hold it'; }
+    // `spinDir` is only set when the SHELL started it. A view drifting on its
+    // own is turning in no direction the user asked for, so naming one would be
+    // inventing it -- say that it is turning and stop there.
+    if (spinning()) {
+      itemNote += spinDir ? ('  |  the view is spinning ' + spinDir + ' -- say "stop" to hold it')
+                          : '  |  the view is turning slowly on its own -- say "stop" to hold it';
+    }
     var fSum = filterSummary();
     var filterNote = fSum ? ('  |  ' + fSum + itemNote)
                           : (on.length ? ('  |  filters on: ' + on.join(', ')) : itemNote);

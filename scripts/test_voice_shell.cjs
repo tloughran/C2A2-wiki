@@ -1932,6 +1932,16 @@ async function main() {
     Math.abs(camF.theta - cam0.theta) < 1e-9 && Math.abs(camF.phi - cam0.phi) < 1e-9 &&
     camF.r === cam0.r && Math.abs(camF.tx - cam0.tx) < 1e-9,
     JSON.stringify({ home: cam0.r, now: camF }));
+  // AND IT HOLDS STILL. resetCamera() restores the opening state including the
+  // idle drift -- correct for the Reset View button, wrong for someone who just
+  // ASKED to see the whole thing and would watch it rotate away. The shell
+  // quiets the drift after the page's own call, so `fit` frames it and leaves
+  // it framed. Without this row, L21a above passes or fails on whether the read
+  // lands inside a single animation frame, which is how this was found.
+  await sleep(400);
+  const camF2 = await page.eval(IFRAME_DOC + "return w.cameraTheta;");
+  record('L21b and fit leaves the view still, not drifting off what it just framed',
+    Number(camF2) === Number(camF.theta), JSON.stringify([camF.theta, camF2]));
   // `center` is not a camera verb: opening something already moves the camera
   // onto it, which is what the page's OWN search results do. The word maps to
   // the thing that exists rather than growing a second road to it.
