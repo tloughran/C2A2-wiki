@@ -9,6 +9,20 @@
 set -euo pipefail
 export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
 
+# 0) File-descriptor ceiling. The macOS kqueue watcher (rs/src/kqueue_watcher.rs)
+#    holds one fd per watched DIRECTORY and budgets only its *file* watches, on the
+#    documented assumption that "dirs are few". The bridge falsifies that: it gives
+#    every Cowork per-run sandbox its own top-level project dir (2787 dirs on
+#    2026-07-29). Under launchd the soft RLIMIT_NOFILE is 256, so on 2026-07-27 the
+#    watcher hit EMFILE partway through registration, stopped delivering events, and
+#    left the HTTP thread answering /health 200 — a 53h silent ingest stall that the
+#    liveness-only watchdog could not see. 8192 is well under kern.maxfilesperproc
+#    (10240). Set HERE, not in the plist, so manual runs and `launchctl kickstart`
+#    inherit it too. This raises the ceiling; bounding the watch tree is the real
+#    fix and belongs in openstory-bridge.sh.
+ulimit -n 8192 || { echo "[backend] FATAL: could not raise RLIMIT_NOFILE" >&2; exit 1; }
+echo "[backend] fd limit: $(ulimit -n)"
+
 OS_ROOT="$HOME/Documents/Non-Claude Projects/OpenStory"
 cd "$OS_ROOT"
 
