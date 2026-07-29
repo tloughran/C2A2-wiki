@@ -57,15 +57,65 @@ process_base() {
   done < <(find "$base" -type f -name '*.jsonl' -print0 | sort -z)
 }
 
+# Flatten a Cowork SANDBOX base, whose first path segment is not a project.
+#
+# WHY (2026-07-29): a Cowork session spawns one sandboxed run per agent, each with
+# its own .claude/projects root, inside which the "project" directory is the
+# sandbox's own cwd — "-Users-…-local-<id>-out-6mnt2m". That name is unique per
+# run, so process_base minted a brand-new top-level project for every one of them:
+# 2765 project dirs holding exactly one transcript each, out of 2787 total.
+#
+# That was not merely untidy. OpenStory's macOS watcher holds one fd per watched
+# DIRECTORY and budgets only its file watches ("dirs are few" — kqueue_watcher.rs),
+# so the dir explosion is what drove it into EMFILE and silently killed ingest for
+# 53h on 2026-07-27. It also made sessions.project_id meaningless for 87% of rows,
+# which degrades every consumer that groups by project (metabolism lanes, Agent Map).
+#
+# So: attribute these runs to the Cowork SESSION that owns them — the {inner} uuid,
+# the second path segment under COWORK_ROOT. The transcript's own file stem is left
+# untouched, which matters: sessions.id IS that stem and is the table's PRIMARY KEY,
+# so re-deriving the project UPDATEs project_id in place rather than orphaning the
+# old row and inserting a duplicate.
+#
+# Deliberately NOT rewritten into {project}/{session}/subagents/agent-{id}.jsonl.
+# That shape is real and OpenStory parses it natively, but it derives session id
+# from the file stem too — renaming 2765 transcripts to agent-{id} would orphan
+# 2765 existing rows and re-ingest them under new ids. The runs that genuinely have
+# that structure already carry it (see the ditto branch below); inventing it for
+# runs that don't would be fabricating parentage, not recording it.
+process_cowork_sandbox_base() {
+  local base="$1" inner="$2"
+  [ -d "$base" ] || return 0
+  while IFS= read -r -d '' f; do
+    local rel="${f#"$base"/}"
+    case "$rel" in */*) ;; *) continue ;; esac
+    local rest="${rel#*/}"      # drop the sandbox-cwd segment, keep the remainder
+    link_one "$f" "cowork-$inner" "$rest"
+  done < <(find "$base" -type f -name '*.jsonl' -print0 | sort -z)
+}
+
 # Source 1: Claude Code (~/.claude/projects/{project}/{session}.jsonl)
 process_base "$CC_ROOT"
 
 # Source 2: Cowork store. Each session nests its own projects root at
 # {uuid1}/{uuid2}/local_{id}/.claude/projects (~depth 5), so don't bound depth —
 # enumerate every .claude/projects base wherever it appears and flatten each.
+#
+# Two kinds of base live under there and they need opposite treatment:
+#   agent/local_ditto_{inner}/…  — the session's own agent. Its projects root
+#       ALREADY holds a real cwd-derived project plus the native
+#       {project}/{session}/subagents/agent-*.jsonl layout, so it goes through
+#       process_base verbatim and keeps that structure.
+#   local_{runId}/…              — a per-run sandbox, whose "project" is a temp
+#       out-dir. Attributed to its owning Cowork session instead.
 if [ -d "$COWORK_ROOT" ]; then
   while IFS= read -r -d '' ccp; do
-    process_base "$ccp"
+    rel="${ccp#"$COWORK_ROOT"/}"
+    inner="${rel#*/}"; inner="${inner%%/*}"   # {outer}/{inner}/… -> {inner}
+    case "$ccp" in
+      */agent/local_ditto_*/.claude/projects) process_base "$ccp" ;;
+      *) process_cowork_sandbox_base "$ccp" "$inner" ;;
+    esac
   done < <(find "$COWORK_ROOT" -type d -path '*/.claude/projects' -print0 | sort -z)
 fi
 
