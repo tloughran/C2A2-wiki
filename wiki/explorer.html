@@ -1410,7 +1410,15 @@ var VoiceGuide = (function() {
     // costs nothing and is there afterwards.
     try {
       var s = wvSummary();
-      if (s.n) {
+      if (s.n && !s.voicePct) {
+        // A response that carried no audio AT ALL -- a tool call, or one the
+        // user barged in on and cancelled. Perfectly correct, and it must not
+        // be reported in the same shape as a spoken one: `voice 0%, level
+        // 0/0/0` reads like a fault, and a line that looks like a fault when
+        // nothing faulted is what costs someone an afternoon later.
+        console.log('[wave] ' + (s.spanMs / 1000).toFixed(1) + 's  no audio in this response ' +
+          '(tool call or cancelled)  ended: ' + _wvReason);
+      } else if (s.n) {
         console.log('[wave] ' + (s.spanMs / 1000).toFixed(1) + 's  voice ' + s.voicePct +
           '%  rms med ' + s.med + ' peak ' + s.peak + '  level ' + s.lvLo + '/' + s.lvMed +
           '/' + s.lvHi + '  ended: ' + _wvReason);
