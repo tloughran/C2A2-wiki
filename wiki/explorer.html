@@ -1191,23 +1191,109 @@ var VoiceGuide = (function() {
     } catch (e) { outAnalyser = null; dbg('output meter unavailable: ' + e); }
   }
   var QUIET_RMS = 0.012, QUIET_FOR_MS = 220, DRAIN_CAP_MS = 4000, DRAIN_STEP_MS = 50;
+  // ONE reader of that analyser, used by two callers. The handover below asks
+  // "is it under the threshold yet"; the wave driver further down asks "how loud
+  // is it right now". Two copies of the same five lines could drift apart, and
+  // then the graph would be moving to a different sound than the one the
+  // handover is listening to. Returns null -- never 0 -- when there is nothing
+  // to measure, so "silent" and "no meter" can never be confused.
+  function outputRms() {
+    if (!outAnalyser) { return null; }
+    try {
+      outAnalyser.getByteTimeDomainData(outBuf);
+      var sum = 0;
+      for (var i = 0; i < outBuf.length; i++) { var v = (outBuf[i] - 128) / 128; sum += v * v; }
+      return Math.sqrt(sum / outBuf.length);
+    } catch (e) { return null; }
+  }
   function whenOutputQuiet(cb) {
     if (!outAnalyser) { setTimeout(cb, 900); return; }   // no meter: the old constant
     var quiet = 0, waited = 0;
     var tick = function () {
-      var rms = 0;
-      try {
-        outAnalyser.getByteTimeDomainData(outBuf);
-        var sum = 0;
-        for (var i = 0; i < outBuf.length; i++) { var v = (outBuf[i] - 128) / 128; sum += v * v; }
-        rms = Math.sqrt(sum / outBuf.length);
-      } catch (e) { return cb(); }
+      var rms = outputRms();
+      if (rms === null) { return cb(); }
       quiet = rms < QUIET_RMS ? quiet + DRAIN_STEP_MS : 0;
       waited += DRAIN_STEP_MS;
       if (quiet >= QUIET_FOR_MS || waited >= DRAIN_CAP_MS) { return cb(); }
       setTimeout(tick, DRAIN_STEP_MS);
     };
     setTimeout(tick, DRAIN_STEP_MS);
+  }
+  // ---- THE GUIDE'S VOICE, DRIVING THE SOCIOGRAM'S WAVE ---------------------
+  //
+  // The Sociogram draws a travelling wave through the graph while the guide is
+  // speaking (`VoiceWave` in wiki_narration.html). Its one hard rule is that the
+  // driver must pass a MEASURED amplitude. A wave that looks like it is tracking
+  // a voice while actually running off a timer would be the visualization lying
+  // about its own body, and nobody watching could tell.
+  //
+  // This is the only speech path in the shell that HAS a stream to measure --
+  // the realtime WebRTC voice, through the analyser armed above. The article
+  // reader is window.speechSynthesis, which exposes no audio at all; any
+  // envelope for it would be a guess about a sound this page cannot hear. So it
+  // is deliberately not wired here. It gets a VISIBLY DIFFERENT wave when it
+  // gets one -- a distinct signature is the honest label -- not this one
+  // relabelled.
+  var _wvTimer = null, _wvQuiet = 0, _wvSince = 0;
+  var WV_MS = 33;      // ~30Hz. The receiver interpolates, so this is a sampling
+                       // rate, not a frame rate; it does not have to match rAF.
+  // A DISPLAY GAIN on a measured number, not a substitute for one. Speech RMS on
+  // this analyser sits near the bottom of 0..1, and at 1:1 the wave would be
+  // invisible. The receiver clamps at 1, so loud passages simply peak.
+  var WV_GAIN = 6;
+
+  // The one guard that matters. A view exposing `VoiceWave.enabled` is a view
+  // that can be spoken to, and `enabled` is already false under prefers-reduced-
+  // motion -- so "wrong tab" and "this user asked for less motion" are the same
+  // check, and neither needs a tab name.
+  function waveWin() {
+    try {
+      var w = _ifWin();   // this module's own frame handle; the command layer's
+                          // ifWin() is private to its IIFE and not reachable here
+      return (w && w.VoiceWave && w.VoiceWave.enabled) ? w : null;
+    } catch (e) { return null; }
+  }
+  function waveStart() {
+    if (_wvTimer) { return; }
+    if (!outAnalyser) { return; }   // nothing to measure -> nothing to draw
+    if (!waveWin()) { return; }
+    _wvQuiet = 0; _wvSince = 0;
+    _wvTimer = setInterval(function () {
+      var w = waveWin(), rms = outputRms();
+      // The tab can change and the meter can go away under us. Either means we
+      // no longer know how loud the guide is, and the honest move is to stop --
+      // not to keep painting the last number we happened to have.
+      if (!w || rms === null) { waveStop(); return; }
+      w.VoiceWave.speak(rms * WV_GAIN);
+      // `response.done` means the response is COMPLETE, not that its audio has
+      // finished PLAYING -- the same fact whenOutputQuiet() exists for. Ending
+      // the wave there would take the body away while the voice is still going,
+      // which is the 900ms-constant mistake in a different costume. So the end
+      // of the wave is measured too: it ends when the sound does, on the same
+      // thresholds the handover uses. The cap is the stuck-meter backstop.
+      if (responseActive) { _wvQuiet = 0; _wvSince = 0; return; }
+      _wvSince += WV_MS;
+      _wvQuiet = rms < QUIET_RMS ? _wvQuiet + WV_MS : 0;
+      if (_wvQuiet >= QUIET_FOR_MS || _wvSince >= DRAIN_CAP_MS) { waveStop(); }
+    }, WV_MS);
+  }
+  function waveStop() {
+    if (_wvTimer) { clearInterval(_wvTimer); _wvTimer = null; }
+    // Say "quiet" rather than merely stopping: the receiver rides its release
+    // down onto the simulation's own positions, so the graph settles instead of
+    // being abandoned mid-crest until the sample times out.
+    var w = waveWin();
+    if (w) { try { w.VoiceWave.silent(); } catch (e) {} }
+  }
+  // Where the wave comes from -- the part that makes the motion MEAN something,
+  // rather than just prove the guide is talking. The receiver REFUSES a
+  // reference it cannot resolve instead of falling back to the view centre, so a
+  // wrong guess reads as "no change" and never as a claim about the wrong node.
+  // Reached as VoiceGuide.wave.origin(); no caller wires it yet.
+  function waveOrigin(ref) {
+    var w = waveWin();
+    if (!w) { return false; }
+    try { return w.VoiceWave.origin(ref); } catch (e) { return false; }
   }
   // ---- WHO IS ALLOWED TO MUTE THE MIC, AND WHY -----------------------------
   //
@@ -2327,6 +2413,7 @@ var VoiceGuide = (function() {
       case 'response.created':
         responseActive = true;
         holdIdle();          // the guide has the floor
+        waveStart();         // ...and the graph moves while it holds it
         clearTimeout(_hangTimer);
         break;
       case 'response.done':
@@ -2447,6 +2534,11 @@ var VoiceGuide = (function() {
     // Leave nothing armed against a dead session, and clear the paused state so
     // the next Start does not inherit a muted mic.
     clearIdle(); idlePaused = false; micWanted = true;
+    // The session going away is not the guide finishing a sentence: no stream,
+    // so no measurement, so no wave. Without this the drain never completes
+    // (responseActive is still true if a response was cut off mid-flight) and a
+    // 30Hz timer outlives the connection it was measuring.
+    responseActive = false; waveStop();
     var rb0 = el('vg-resume'); if (rb0) { rb0.style.display = 'none'; }
     // If a grid run is in flight, signal it to unwind -- otherwise it spins
     // through per-cell timeouts on a dead channel and blocks the next Start.
@@ -2475,7 +2567,21 @@ var VoiceGuide = (function() {
     },
     toggle: function() { if (live || connecting) stop(); else start(); },
     resume: function() { resumeListening(); },
-    getRemoteStream: function() { return remoteStream; }
+    getRemoteStream: function() { return remoteStream; },
+    // The wave driver, reachable from the command layer's script block and from
+    // the harness. One name for it -- a second global alias would be a second
+    // road to the same door.
+    wave: {
+      start: waveStart, stop: waveStop, origin: waveOrigin,
+      running: function () { return !!_wvTimer; },
+      rms: function () { return outputRms(); },
+      gain: WV_GAIN,
+      // The real entry point (pc.ontrack calls it), exposed so the harness can
+      // arm the meter from a SYNTHETIC stream of known loudness. Testing this
+      // path otherwise costs a live realtime session, and a test that has to be
+      // paid for is a test that stops being run.
+      arm: armOutputMeter
+    }
   };
 })();
 

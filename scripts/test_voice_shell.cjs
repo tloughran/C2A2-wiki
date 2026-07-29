@@ -177,6 +177,11 @@ async function startChrome() {
     '--window-size=1600,1000', '--hide-scrollbars',
     // The Sociogram is a 45MB single file with a 4k-node force sim.
     '--js-flags=--max-old-space-size=4096',
+    // Phase W arms the output meter from a synthetic tone. In the real page the
+    // AudioContext is created inside a click; from CDP there is no gesture, and
+    // a suspended context would read as silence and make the wave rows pass for
+    // the wrong reason. Output is still muted by --mute-audio above.
+    '--autoplay-policy=no-user-gesture-required',
     'about:blank'
   ];
   if (!HEADFUL) { flags.unshift('--headless=new'); }
@@ -2169,6 +2174,116 @@ async function main() {
   // one that worked.
   await row(page, 'L14b rotate on a flat tab is refused in words, and told what it CAN do',
     'rotate left', { ok: false, spoken: /not available on this view\. supported: /i });
+
+  // ---- Phase W: the wave, and the rule that it must be MEASURED ------------
+  //
+  // The wave in the Sociogram is the guide's body. The whole of its honesty is
+  // one claim: it moves because a voice is actually making a sound, not because
+  // something somewhere is talking. So the rows that matter most here are the
+  // ones about having NOTHING to measure -- a wave that runs off a timer would
+  // look identical to a working one, and nobody watching could tell.
+  //
+  // A live realtime session costs money, so the meter is armed from a SYNTHETIC
+  // tone of known loudness, through the same armOutputMeter() that pc.ontrack
+  // calls. The audio is real and really measured; only its source is not the
+  // model. That is the difference between a seam and a stub.
+  process.stdout.write('\nPhase W -- the wave, driven by a measured voice\n');
+  const wPremise = await page.eval(IFRAME_DOC +
+    "return { has: !!(w && w.VoiceWave), enabled: !!(w && w.VoiceWave && w.VoiceWave.enabled)," +
+    "         api: !!(window.VoiceGuide && window.VoiceGuide.wave) };");
+  record('W0 this view has a body to move, and the shell has a driver for it',
+    wPremise.has && wPremise.enabled && wPremise.api, JSON.stringify(wPremise));
+
+  // NOTHING TO MEASURE -> NOTHING TO DRAW. This is the row the feature exists
+  // for. With no output meter armed there is no number, and the correct amount
+  // of wave is none of it -- not a plausible envelope, not a decayed last value.
+  const wNoMeter = await page.eval(
+    "var W = window.VoiceGuide.wave;" +
+    "W.stop();" +
+    "var rms = W.rms();" +
+    "W.start();" +
+    "return { rms: rms, running: W.running() };");
+  record('W1 with no stream to listen to, the driver refuses to start at all',
+    wNoMeter.rms === null && wNoMeter.running === false, JSON.stringify(wNoMeter));
+
+  // Arm from a real tone. The amplitude is chosen so the RMS sits well above
+  // the QUIET_RMS floor the handover uses -- so "loud" and "quiet" are separated
+  // by the page's own threshold rather than by one this harness invented -- and
+  // ALSO low enough that rms x gain stays under 1. At speaking loudness it would
+  // clamp, and a clamped value would let any gain at all pass W3a below.
+  await page.eval(
+    "var c = new AudioContext();" +
+    "var osc = c.createOscillator(), g = c.createGain(), dest = c.createMediaStreamDestination();" +
+    "osc.frequency.value = 220; g.gain.value = 0.08;" +
+    "osc.connect(g); g.connect(dest); osc.start();" +
+    "window.__wvTone = { ctx: c, gain: g };" +
+    "window.VoiceGuide.wave.arm(dest.stream);" +
+    "var p = [c.resume()]; if (window.audioCtx) { p.push(window.audioCtx.resume()); }" +
+    "return Promise.all(p).then(function () { return true; });");
+  await sleep(400);
+  const wRms = await page.eval("return window.VoiceGuide.wave.rms();");
+  record('W2 armed on a real stream, the meter reads a real number',
+    typeof wRms === 'number' && wRms > 0.012, String(wRms));
+
+  await page.eval("window.VoiceGuide.wave.start(); return true;");
+  await sleep(300);
+  const wRun = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.wave.running()," +
+    "         target: w._waveTarget, amp: w._waveAmp, rms: window.VoiceGuide.wave.rms()," +
+    "         gain: window.VoiceGuide.wave.gain };");
+  record('W3 the graph is being spoken to, and it is moving',
+    wRun.running === true && wRun.target > 0 && wRun.amp > 0,
+    JSON.stringify(wRun));
+  // The x6 is a DISPLAY gain on a measured number, not a substitute for one:
+  // what the receiver holds has to be this analyser's reading scaled, clamped at
+  // 1, and nothing else. If these two ever come apart, the wave has started
+  // describing a sound that was not made.
+  record('W3a and what it is holding is this analyser\'s reading, scaled and clamped',
+    wRun.target < 1 && Math.abs(wRun.target - Math.min(1, wRun.rms * wRun.gain)) < 0.05,
+    JSON.stringify({ target: wRun.target, expected: Math.min(1, wRun.rms * wRun.gain) }));
+
+  // THE END OF THE WAVE IS MEASURED TOO. `response.done` means the response is
+  // complete, not that its audio has stopped playing -- so the driver does not
+  // stop there; it stops when the sound does, on the same threshold the reader
+  // handover uses. Killing the tone stands in for the tail draining.
+  await page.eval("window.__wvTone.gain.gain.value = 0; return true;");
+  await poll(function () {
+    return page.eval("return window.VoiceGuide.wave.running() === false;");
+  }, 6000, 100, 'the wave to notice the voice stopped');
+  const wQuiet = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+  record('W4 when the voice goes quiet the wave stops itself, and says so to the graph',
+    wQuiet.running === false && wQuiet.target === 0, JSON.stringify(wQuiet));
+
+  // Where the wave comes from is what makes it mean something rather than just
+  // prove the guide is talking. The receiver REFUSES a reference it cannot
+  // resolve instead of falling back to the view centre -- so a wrong guess reads
+  // as "no change", never as a claim about the wrong node.
+  const anyNode = await page.eval(IFRAME_DOC +
+    "for (var k in w.nodeById) { if (Object.prototype.hasOwnProperty.call(w.nodeById, k)) { return k; } }" +
+    "return null;");
+  const wOrigin = await page.eval(
+    "var W = window.VoiceGuide.wave;" +
+    "return { good: W.origin(" + JSON.stringify(anyNode) + ")," +
+    "         bad: W.origin('no/such/node.md') };");
+  record('W5 the wave can be pointed at a node, and refuses one that is not there',
+    wOrigin.good === true && wOrigin.bad === false, JSON.stringify(wOrigin));
+
+  // A VIEW WITH NO BODY. The guard is `VoiceWave.enabled` on the framed window,
+  // which is one check covering both "wrong tab" and "this user asked for less
+  // motion" -- and on a tab that cannot wave, the driver must decline rather
+  // than run a 30Hz timer writing into a window that has no receiver.
+  await activateTab(page, METABOLISM_SRC);
+  await sleep(900);
+  const wFlat = await page.eval(
+    "var W = window.VoiceGuide.wave;" +
+    "W.start();" +
+    "return { running: W.running(), origin: W.origin('anything') };");
+  record('W6 a view with no wave in it is declined, not driven blindly',
+    wFlat.running === false && wFlat.origin === false, JSON.stringify(wFlat));
+  await activateTab(page, SOCIOGRAM_SRC);
+  await tabReady(page, 'sociogram');
+  await sleep(900);
 
   // ---- Idle listening cutoff: what can honestly be checked without a session --
   //
