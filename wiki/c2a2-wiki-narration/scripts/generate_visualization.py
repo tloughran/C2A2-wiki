@@ -2166,12 +2166,27 @@ var WAVE_MAX_PX    = 14;    // peak displacement, GRAPH units (link distance is 
 var WAVE_LENGTH    = 220;   // graph units between crests -- deliberately in graph
                             // space, not screen space, so zooming in shows you a
                             // longer wave rather than a rescaled picture of one
-var WAVE_SPEED     = 1.15;  // crests per second passing a fixed point
+var WAVE_SPEED     = 1.15;  // crests per second at REST. Loudness scales this --
+                            // see WAVE_RATE_LO/HI. It was a constant until
+                            // 2026-07-28, and a constant is what Tom saw: "a
+                            // roughly 1-Hz pulse ... nothing resembling the
+                            // dynamics of a human voice". The voice was driving
+                            // height alone, so the rhythm was a metronome no
+                            // matter how good the envelope got.
+var WAVE_RATE_LO   = 0.55;  // rate multiplier at silence...
+var WAVE_RATE_HI   = 1.90;  // ...and at full voice. A speaker's energy changes
+                            // how FAST the ripples come, not just how big they
+                            // are, which is the difference between a pulse and
+                            // a voice.
 var WAVE_REACH     = 1400;  // graph units; e-folding distance of the envelope
 var WAVE_ATTACK    = 0.28;  // per-frame approach to a louder sample
-var WAVE_RELEASE   = 0.09;  // ...and to a quieter one. Slower: speech is gappy,
-                            // and releasing as fast as it attacks reads as
-                            // strobing rather than as breathing.
+var WAVE_RELEASE   = 0.22;  // ...and to a quieter one. Still slower than the
+                            // attack -- releasing as fast as it attacks reads
+                            // as strobing -- but 0.09 was a ~185ms time
+                            // constant, and syllables run 125-250ms, so the one
+                            // source of variation in the signal was being
+                            // filtered out on arrival. 0.22 is ~75ms: syllables
+                            // survive, individual samples still do not.
 var WAVE_SAMPLE_TTL = 260;  // ms a sample stays good. The driver going away must
                             // settle the graph, not freeze it mid-crest.
 
@@ -2182,6 +2197,11 @@ var _waveOrigin = null;     // node object, or {x, y}, or null for viewport cent
 var _waveRAF = null;
 var _waveT0 = 0;
 var _waveDemoUntil = 0;
+// Phase is ACCUMULATED, not computed from elapsed time, because the rate is no
+// longer constant: `elapsed * speed` would jump the crests backwards or forwards
+// every time the speed changed, and the whole graph would flick.
+var _wavePhase = 0;
+var _waveLastFrame = 0;
 
 function _waveNow() {
   return (window.performance && window.performance.now) ? window.performance.now() : Date.now();
@@ -2235,8 +2255,16 @@ function _waveTick() {
   // see. Amplitude keeps decaying above so returning to the tab finds it at rest.
   if (document.hidden) { return; }
 
+  // Louder means FASTER as well as taller. dt is clamped because coming back to
+  // a tab that was hidden hands us one enormous frame, and integrating it would
+  // spin the wave through several crests in one paint.
+  var dt = _waveLastFrame ? Math.min(100, now - _waveLastFrame) : 16;
+  _waveLastFrame = now;
+  var rate = WAVE_RATE_LO + (WAVE_RATE_HI - WAVE_RATE_LO) * _waveAmp;
+  _wavePhase += (dt / 1000) * WAVE_SPEED * rate;
+
   var o = _waveOriginXY();
-  var phaseT = ((now - _waveT0) / 1000) * WAVE_SPEED;
+  var phaseT = _wavePhase;
   var amp = _waveAmp * WAVE_MAX_PX;
   var TWO_PI = Math.PI * 2;
   var i, d, dx, dy, r, env, disp;
@@ -2267,6 +2295,7 @@ function _waveStart() {
   if (!window.VoiceWave.enabled) return;
   if (!activeNodes || !activeNodes.length) return;
   _waveT0 = _waveNow();
+  _wavePhase = 0; _waveLastFrame = 0;
   _waveRAF = requestAnimationFrame(_waveTick);
 }
 

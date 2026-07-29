@@ -1237,10 +1237,35 @@ var VoiceGuide = (function() {
   var _wvTimer = null, _wvQuiet = 0, _wvLast = 0;
   var WV_MS = 33;      // ~30Hz. The receiver interpolates, so this is a sampling
                        // rate, not a frame rate; it does not have to match rAF.
-  // A DISPLAY GAIN on a measured number, not a substitute for one. Speech RMS on
-  // this analyser sits near the bottom of 0..1, and at 1:1 the wave would be
-  // invisible. The receiver clamps at 1, so loud passages simply peak.
-  var WV_GAIN = 6;
+  // TURNING A MEASURED RMS INTO A VISIBLE ENVELOPE.
+  //
+  // The first version was `rms * 6`, and the trace from Tom's live session says
+  // why that was not enough: median loud sample 0.1012, peak 0.1959. Barely a
+  // 2:1 range, so after the gain the envelope lived between 0.6 and 1.0 -- the
+  // top third of the scale, never near the bottom, clipping only 3% of the
+  // time. A fixed gain cannot fix that: it slides the window, it does not widen
+  // it, and picking a bigger number only clips more.
+  //
+  // So normalise against a RUNNING PEAK instead. The loudest thing heard
+  // recently maps to 1, the quiet floor maps to 0, and the utterance uses the
+  // whole range whoever is speaking and however loud. The peak decays so one
+  // shout does not flatten the next minute.
+  //
+  // THIS IS STILL A MEASURED NUMBER. Nothing is invented: silence reads 0, and
+  // every value between is this analyser's reading placed against this
+  // analyser's recent maximum. What changes is the scale, not the source.
+  var WV_PEAK_DECAY = 0.995;   // per sample at ~30Hz: the peak halves in ~4.6s
+  var WV_GAMMA = 0.65;         // <1 lifts the middle, where speech actually is
+  var _wvPeak = 0;
+  function wvLevel(rms) {
+    if (rms > _wvPeak) { _wvPeak = rms; } else { _wvPeak *= WV_PEAK_DECAY; }
+    // Never divide by a peak that is itself near silence, or room tone would be
+    // amplified into a voice. Below the floor there is nothing to show.
+    var ceil = Math.max(_wvPeak, QUIET_RMS * 4);
+    var v = (rms - QUIET_RMS) / (ceil - QUIET_RMS);
+    if (!(v > 0)) { return 0; }
+    return Math.pow(v > 1 ? 1 : v, WV_GAMMA);
+  }
   // HOW MUCH MEASURED SILENCE MEANS THE UTTERANCE IS OVER.
   //
   // NOT QUIET_FOR_MS (220). That threshold answers a different question -- "has
@@ -1262,31 +1287,35 @@ var VoiceGuide = (function() {
   // Console:  VoiceGuide.wave.trace()
   var _wvTrace = [], _wvTraceAt = 0, _wvReason = null;
   var WV_TRACE_MS = 100, WV_TRACE_MAX = 900;   // ~90s at 10Hz
-  // The one line that answers the open question: is the envelope SATURATING?
-  // rms x WV_GAIN is clamped at 1 by the receiver, so if most samples are at
-  // the ceiling the wave has no dynamics left to show and the gain, not the
-  // voice, is what the graph is drawing.
+  // The line that told us the first mapping was wrong, and that has to keep
+  // telling us about the second one. `range` is the number that matters now:
+  // the spread of the LEVEL actually sent, which is what the graph draws. A
+  // narrow range is the flat wave, whatever the rms underneath it looks like.
   function wvSummary() {
     var s = _wvTrace;
     if (!s.length) { return { n: 0 }; }
     var vals = s.map(function (x) { return x.rms; }).sort(function (a, b) { return a - b; });
+    var lv = s.map(function (x) { return x.lv; }).filter(function (v) { return v > 0; })
+              .sort(function (a, b) { return a - b; });
     var loud = vals.filter(function (v) { return v >= QUIET_RMS; });
-    var clip = vals.filter(function (v) { return v * WV_GAIN >= 1; }).length;
+    var r4 = function (v) { return Math.round(v * 10000) / 10000; };
     return {
       n: s.length,
       spanMs: s[s.length - 1].t - s[0].t,
-      med: Math.round((loud.length ? loud[Math.floor(loud.length / 2)] : 0) * 10000) / 10000,
-      peak: Math.round(vals[vals.length - 1] * 10000) / 10000,
+      med: r4(loud.length ? loud[Math.floor(loud.length / 2)] : 0),
+      peak: r4(vals[vals.length - 1]),
       voicePct: Math.round(loud.length / vals.length * 100),
-      clipPct: Math.round(clip / vals.length * 100),
-      gain: WV_GAIN
+      lvMed: r4(lv.length ? lv[Math.floor(lv.length / 2)] : 0),
+      lvLo: r4(lv.length ? lv[Math.floor(lv.length * 0.1)] : 0),
+      lvHi: r4(lv.length ? lv[Math.floor(lv.length * 0.9)] : 0)
     };
   }
-  function wvTrace(rms, active) {
+  function wvTrace(rms, lv, active) {
     var now = Date.now();
     if (now - _wvTraceAt < WV_TRACE_MS) { return; }
     _wvTraceAt = now;
-    _wvTrace.push({ t: now, rms: Math.round(rms * 10000) / 10000, active: !!active, quiet: _wvQuiet });
+    _wvTrace.push({ t: now, rms: Math.round(rms * 10000) / 10000,
+                    lv: Math.round(lv * 10000) / 10000, active: !!active, quiet: _wvQuiet });
     if (_wvTrace.length > WV_TRACE_MAX) { _wvTrace.shift(); }
   }
 
@@ -1319,7 +1348,7 @@ var VoiceGuide = (function() {
   function speechStart() {
     if (_wvTimer) { return; }
     if (!outAnalyser) { return; }   // nothing to measure; callers fall back
-    _wvQuiet = 0; _wvLast = 0;
+    _wvQuiet = 0; _wvLast = 0; _wvPeak = 0;
     _wvTrace = []; _wvTraceAt = 0; _wvReason = null;
     _wvTimer = setInterval(function () {
       var rms = outputRms();
@@ -1327,9 +1356,10 @@ var VoiceGuide = (function() {
       // the guide is, and the honest move is to stop -- not to keep painting
       // the last number we happened to have.
       if (rms === null) { speechEnd('meter gone'); return; }
+      var lv = wvLevel(rms);
       var w = waveWin();
-      if (w) { w.VoiceWave.speak(rms * WV_GAIN); }
-      wvTrace(rms, responseActive);
+      if (w) { w.VoiceWave.speak(lv); }
+      wvTrace(rms, lv, responseActive);
       // THE ONLY THING THAT ENDS THE WAVE IS MEASURED QUIET.
       //
       // `response.done` means the response is COMPLETE, not that its audio has
@@ -1382,8 +1412,8 @@ var VoiceGuide = (function() {
       var s = wvSummary();
       if (s.n) {
         console.log('[wave] ' + (s.spanMs / 1000).toFixed(1) + 's  voice ' + s.voicePct +
-          '%  rms med ' + s.med + ' peak ' + s.peak + '  x' + s.gain + ' -> clipped ' +
-          s.clipPct + '%  ended: ' + _wvReason);
+          '%  rms med ' + s.med + ' peak ' + s.peak + '  level ' + s.lvLo + '/' + s.lvMed +
+          '/' + s.lvHi + '  ended: ' + _wvReason);
       }
     } catch (e) {}
     // THIS is the moment the guide stopped talking, measured rather than
@@ -2689,7 +2719,9 @@ var VoiceGuide = (function() {
       start: speechStart, stop: speechEnd, origin: waveOrigin,
       running: function () { return !!_wvTimer; },
       rms: function () { return outputRms(); },
-      gain: WV_GAIN,
+      // Read-only: the running peak the level is measured against. Reading it
+      // must not move it, which is why this is not wvLevel().
+      peak: function () { return _wvPeak; },
       // What the meter ACTUALLY read, at 10Hz, plus why the wave stopped. Two
       // live sessions have disagreed about this analyser's behaviour during
       // speech; one more guess is worth less than one trace.
@@ -2699,10 +2731,10 @@ var VoiceGuide = (function() {
         return {
           reason: _wvReason, running: !!_wvTimer, samples: s.length,
           spanMs: sum.spanMs || 0, med: sum.med, peak: sum.peak,
-          voicePct: sum.voicePct, clipPct: sum.clipPct, gain: WV_GAIN,
+          voicePct: sum.voicePct, lvLo: sum.lvLo, lvMed: sum.lvMed, lvHi: sum.lvHi,
           loud: s.filter(function (x) { return x.rms >= QUIET_RMS; }).length,
           rows: s.map(function (x) {
-            return (x.t - t0) + ' ' + x.rms + (x.active ? ' active' : '') +
+            return (x.t - t0) + ' ' + x.rms + ' -> ' + x.lv + (x.active ? ' active' : '') +
                    (x.quiet ? ' q' + x.quiet : '');
           })
         };

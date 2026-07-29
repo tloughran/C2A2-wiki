@@ -2230,17 +2230,32 @@ async function main() {
   const wRun = await page.eval(IFRAME_DOC +
     "return { running: window.VoiceGuide.speech.running()," +
     "         target: w._waveTarget, amp: w._waveAmp, rms: window.VoiceGuide.speech.rms()," +
-    "         gain: window.VoiceGuide.speech.gain };");
+    "         peak: window.VoiceGuide.speech.peak() };");
   record('W3 the graph is being spoken to, and it is moving',
     wRun.running === true && wRun.target > 0 && wRun.amp > 0,
     JSON.stringify(wRun));
-  // The x6 is a DISPLAY gain on a measured number, not a substitute for one:
-  // what the receiver holds has to be this analyser's reading scaled, clamped at
-  // 1, and nothing else. If these two ever come apart, the wave has started
-  // describing a sound that was not made.
-  record('W3a and what it is holding is this analyser\'s reading, scaled and clamped',
-    wRun.target < 1 && Math.abs(wRun.target - Math.min(1, wRun.rms * wRun.gain)) < 0.05,
-    JSON.stringify({ target: wRun.target, expected: Math.min(1, wRun.rms * wRun.gain) }));
+  // THE LOUDEST THING HEARD RECENTLY IS THE TOP OF THE SCALE. A fixed gain slid
+  // the window instead of widening it -- Tom's live trace had the envelope
+  // living between 0.6 and 1.0 of full scale, never near the bottom -- so the
+  // level is normalised against a running peak. On a steady tone the peak IS
+  // the current reading, so the top of the range is in use.
+  record('W3a a steady voice sits at the top of the range, because it is the loudest thing heard',
+    wRun.target > 0.9 && Math.abs(wRun.peak - wRun.rms) < 0.02,
+    JSON.stringify({ target: wRun.target, peak: wRun.peak, rms: wRun.rms }));
+  // ...AND A QUIETER PASSAGE IS VISIBLY LOWER. This is the row the whole remap
+  // is for: under the old fixed gain a 2:1 change in rms moved the envelope
+  // from 1.0 to 0.6, which is most of the reason the wave read as a metronome
+  // with no dynamics. Normalised, the same 2:1 drop uses most of the range.
+  await page.eval("window.__wvTone.gain.gain.value = 0.03; return true;");
+  await sleep(250);
+  const wSoft = await page.eval(IFRAME_DOC +
+    "return { target: w._waveTarget, rms: window.VoiceGuide.speech.rms()," +
+    "         peak: window.VoiceGuide.speech.peak() };");
+  record('W3a2 and a quieter passage drops most of the way down, not a third of the way',
+    wSoft.target < 0.6 && wSoft.target > 0 && wSoft.rms < wRun.rms,
+    JSON.stringify({ loud: wRun.target, soft: wSoft.target, rms: [wRun.rms, wSoft.rms] }));
+  await page.eval("window.__wvTone.gain.gain.value = 0.08; return true;");
+  await sleep(250);
 
   // A LONG UTTERANCE IS NOT A STUCK ONE. This row is here because the first
   // version had a 4-second cap borrowed from whenOutputQuiet, and Tom found it
@@ -2308,6 +2323,16 @@ async function main() {
   record('W4b and it says WHY it stopped, with the readings behind it',
     /^quiet \d+ms$/.test(String(wWhy.reason)) && wWhy.loud > 0 && wWhy.peak > 0.012,
     JSON.stringify({ reason: wWhy.reason, samples: wWhy.samples, loud: wWhy.loud, peak: wWhy.peak }));
+  // The trace has to report the LEVEL, not only the rms, because the level is
+  // what the graph draws -- and a narrow level range is the flat wave no matter
+  // how healthy the rms underneath it looks. That is the mistake the first
+  // mapping made and the log line missed.
+  // (A steady tone normalises to ~1 throughout, so this row proves the level is
+  // REPORTED and reaches the top of the scale -- not that it spreads. W3a2 is
+  // the spread row; only a varying voice can show that.)
+  record('W4c and the trace reports the level actually sent, reaching the top of the scale',
+    wWhy.lvHi > 0.9 && wWhy.lvLo < wWhy.lvHi && /-> /.test(String(wWhy.rows[0])),
+    JSON.stringify({ lo: wWhy.lvLo, med: wWhy.lvMed, hi: wWhy.lvHi, row: wWhy.rows[0] }));
 
   // Where the wave comes from is what makes it mean something rather than just
   // prove the guide is talking. The receiver REFUSES a reference it cannot
