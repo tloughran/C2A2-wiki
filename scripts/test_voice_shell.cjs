@@ -2246,14 +2246,26 @@ async function main() {
   // complete, not that its audio has stopped playing -- so the driver does not
   // stop there; it stops when the sound does, on the same threshold the reader
   // handover uses. Killing the tone stands in for the tail draining.
-  await page.eval("window.__wvTone.gain.gain.value = 0; return true;");
-  await poll(function () {
-    return page.eval("return window.VoiceGuide.wave.running() === false;");
-  }, 6000, 100, 'the wave to notice the voice stopped');
   const wQuiet = await page.eval(IFRAME_DOC +
-    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+    "window.__wvTone.gain.gain.value = 0;" +
+    "var W = window.VoiceGuide.wave, t0 = Date.now();" +
+    "return new Promise(function (res) {" +
+    "  var iv = setInterval(function () {" +
+    "    if (W.running() && Date.now() - t0 < 8000) { return; }" +
+    "    clearInterval(iv);" +
+    "    res({ ms: Date.now() - t0, running: W.running(), target: w._waveTarget });" +
+    "  }, 25);" +
+    "});");
   record('W4 when the voice goes quiet the wave stops itself, and says so to the graph',
     wQuiet.running === false && wQuiet.target === 0, JSON.stringify(wQuiet));
+  // AND IT DRAINS IN REAL TIME. The drain is a DURATION (220ms of measured
+  // quiet), not a count of ticks -- a hidden page has its timers throttled to
+  // about 1Hz, and counting WV_MS per tick made the same 220ms take 6799ms with
+  // the explorer in a background tab. Under CDP the page is visible and cannot
+  // reproduce that, so this row exists to state the intent: if the drain ever
+  // starts measuring itself in ticks again, this is the row that says so.
+  record('W4a and the drain is 220ms of measured quiet, not a count of ticks',
+    wQuiet.ms >= 220 && wQuiet.ms < 900, wQuiet.ms + 'ms');
 
   // Where the wave comes from is what makes it mean something rather than just
   // prove the guide is talking. The receiver REFUSES a reference it cannot

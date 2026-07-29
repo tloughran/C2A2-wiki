@@ -1234,7 +1234,7 @@ var VoiceGuide = (function() {
   // is deliberately not wired here. It gets a VISIBLY DIFFERENT wave when it
   // gets one -- a distinct signature is the honest label -- not this one
   // relabelled.
-  var _wvTimer = null, _wvQuiet = 0, _wvSince = 0;
+  var _wvTimer = null, _wvQuiet = 0, _wvSince = 0, _wvLast = 0;
   var WV_MS = 33;      // ~30Hz. The receiver interpolates, so this is a sampling
                        // rate, not a frame rate; it does not have to match rAF.
   // A DISPLAY GAIN on a measured number, not a substitute for one. Speech RMS on
@@ -1257,7 +1257,7 @@ var VoiceGuide = (function() {
     if (_wvTimer) { return; }
     if (!outAnalyser) { return; }   // nothing to measure -> nothing to draw
     if (!waveWin()) { return; }
-    _wvQuiet = 0; _wvSince = 0;
+    _wvQuiet = 0; _wvSince = 0; _wvLast = 0;
     _wvTimer = setInterval(function () {
       var w = waveWin(), rms = outputRms();
       // The tab can change and the meter can go away under us. Either means we
@@ -1271,9 +1271,18 @@ var VoiceGuide = (function() {
       // which is the 900ms-constant mistake in a different costume. So the end
       // of the wave is measured too: it ends when the sound does, on the same
       // thresholds the handover uses. The cap is the stuck-meter backstop.
+      //
+      // COUNT REAL TIME, NOT TICKS. A hidden page has its timers throttled to
+      // about 1Hz, so `+= WV_MS` would count 33ms per second and the 220ms drain
+      // would take seven seconds (measured, 2026-07-28: 6799ms with the explorer
+      // in a background tab). Assuming how much time has passed is the same
+      // mistake as assuming how long the audio tail is; measure that too.
+      var now = Date.now();
+      var dt = _wvLast ? Math.max(0, now - _wvLast) : WV_MS;
+      _wvLast = now;
       if (responseActive) { _wvQuiet = 0; _wvSince = 0; return; }
-      _wvSince += WV_MS;
-      _wvQuiet = rms < QUIET_RMS ? _wvQuiet + WV_MS : 0;
+      _wvSince += dt;
+      _wvQuiet = rms < QUIET_RMS ? _wvQuiet + dt : 0;
       if (_wvQuiet >= QUIET_FOR_MS || _wvSince >= DRAIN_CAP_MS) { waveStop(); }
     }, WV_MS);
   }
