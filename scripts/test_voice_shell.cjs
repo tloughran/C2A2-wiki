@@ -2190,7 +2190,7 @@ async function main() {
   process.stdout.write('\nPhase W -- the wave, driven by a measured voice\n');
   const wPremise = await page.eval(IFRAME_DOC +
     "return { has: !!(w && w.VoiceWave), enabled: !!(w && w.VoiceWave && w.VoiceWave.enabled)," +
-    "         api: !!(window.VoiceGuide && window.VoiceGuide.wave) };");
+    "         api: !!(window.VoiceGuide && window.VoiceGuide.speech.start) };");
   record('W0 this view has a body to move, and the shell has a driver for it',
     wPremise.has && wPremise.enabled && wPremise.api, JSON.stringify(wPremise));
 
@@ -2198,7 +2198,7 @@ async function main() {
   // for. With no output meter armed there is no number, and the correct amount
   // of wave is none of it -- not a plausible envelope, not a decayed last value.
   const wNoMeter = await page.eval(
-    "var W = window.VoiceGuide.wave;" +
+    "var W = window.VoiceGuide.speech;" +
     "W.stop();" +
     "var rms = W.rms();" +
     "W.start();" +
@@ -2217,20 +2217,20 @@ async function main() {
     "osc.frequency.value = 220; g.gain.value = 0.08;" +
     "osc.connect(g); g.connect(dest); osc.start();" +
     "window.__wvTone = { ctx: c, gain: g };" +
-    "window.VoiceGuide.wave.arm(dest.stream);" +
+    "window.VoiceGuide.speech.arm(dest.stream);" +
     "var p = [c.resume()]; if (window.audioCtx) { p.push(window.audioCtx.resume()); }" +
     "return Promise.all(p).then(function () { return true; });");
   await sleep(400);
-  const wRms = await page.eval("return window.VoiceGuide.wave.rms();");
+  const wRms = await page.eval("return window.VoiceGuide.speech.rms();");
   record('W2 armed on a real stream, the meter reads a real number',
     typeof wRms === 'number' && wRms > 0.012, String(wRms));
 
-  await page.eval("window.VoiceGuide.wave.start(); return true;");
+  await page.eval("window.VoiceGuide.speech.start(); return true;");
   await sleep(300);
   const wRun = await page.eval(IFRAME_DOC +
-    "return { running: window.VoiceGuide.wave.running()," +
-    "         target: w._waveTarget, amp: w._waveAmp, rms: window.VoiceGuide.wave.rms()," +
-    "         gain: window.VoiceGuide.wave.gain };");
+    "return { running: window.VoiceGuide.speech.running()," +
+    "         target: w._waveTarget, amp: w._waveAmp, rms: window.VoiceGuide.speech.rms()," +
+    "         gain: window.VoiceGuide.speech.gain };");
   record('W3 the graph is being spoken to, and it is moving',
     wRun.running === true && wRun.target > 0 && wRun.amp > 0,
     JSON.stringify(wRun));
@@ -2253,7 +2253,7 @@ async function main() {
   // utterance, where response.created holds it open for the first seconds too.
   await sleep(6000);
   const wLong = await page.eval(IFRAME_DOC +
-    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+    "return { running: window.VoiceGuide.speech.running(), target: w._waveTarget };");
   record('W3b a voice that keeps going keeps the wave going -- no clock cuts it off',
     wLong.running === true && wLong.target > 0, JSON.stringify(wLong));
 
@@ -2266,14 +2266,14 @@ async function main() {
   await page.eval("window.__wvTone.gain.gain.value = 0; return true;");
   await sleep(700);
   const wGap = await page.eval(IFRAME_DOC +
-    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+    "return { running: window.VoiceGuide.speech.running(), target: w._waveTarget };");
   record('W3c a pause between sentences does not end the utterance',
     wGap.running === true, JSON.stringify(wGap));
   // ...and the voice coming back is picked up by the timer that never stopped.
   await page.eval("window.__wvTone.gain.gain.value = 0.08; return true;");
   await sleep(300);
   const wResume = await page.eval(IFRAME_DOC +
-    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+    "return { running: window.VoiceGuide.speech.running(), target: w._waveTarget };");
   record('W3d and when the voice comes back the wave is already there',
     wResume.running === true && wResume.target > 0, JSON.stringify(wResume));
 
@@ -2284,7 +2284,7 @@ async function main() {
   // the tail draining.
   const wQuiet = await page.eval(IFRAME_DOC +
     "window.__wvTone.gain.gain.value = 0;" +
-    "var W = window.VoiceGuide.wave, t0 = Date.now();" +
+    "var W = window.VoiceGuide.speech, t0 = Date.now();" +
     "return new Promise(function (res) {" +
     "  var iv = setInterval(function () {" +
     "    if (W.running() && Date.now() - t0 < 8000) { return; }" +
@@ -2304,7 +2304,7 @@ async function main() {
     wQuiet.ms >= 2500 && wQuiet.ms < 3400, wQuiet.ms + 'ms');
   // The stop is self-describing, because the next thing that goes wrong live
   // will be diagnosed from a console line rather than from a theory.
-  const wWhy = await page.eval("return window.VoiceGuide.wave.trace();");
+  const wWhy = await page.eval("return window.VoiceGuide.speech.trace();");
   record('W4b and it says WHY it stopped, with the readings behind it',
     /^quiet \d+ms$/.test(String(wWhy.reason)) && wWhy.loud > 0 && wWhy.peak > 0.012,
     JSON.stringify({ reason: wWhy.reason, samples: wWhy.samples, loud: wWhy.loud, peak: wWhy.peak }));
@@ -2317,7 +2317,7 @@ async function main() {
     "for (var k in w.nodeById) { if (Object.prototype.hasOwnProperty.call(w.nodeById, k)) { return k; } }" +
     "return null;");
   const wOrigin = await page.eval(
-    "var W = window.VoiceGuide.wave;" +
+    "var W = window.VoiceGuide.speech;" +
     "return { good: W.origin(" + JSON.stringify(anyNode) + ")," +
     "         bad: W.origin('no/such/node.md') };");
   record('W5 the wave can be pointed at a node, and refuses one that is not there',
@@ -2325,19 +2325,30 @@ async function main() {
 
   // A VIEW WITH NO BODY. The guard is `VoiceWave.enabled` on the framed window,
   // which is one check covering both "wrong tab" and "this user asked for less
-  // motion" -- and on a tab that cannot wave, the driver must decline rather
-  // than run a 30Hz timer writing into a window that has no receiver.
+  // motion". The loop still RUNS on such a tab -- the idle clock needs to know
+  // when the guide stopped talking no matter what is on screen -- but it must
+  // paint nothing and claim nothing, and it must not throw for want of a
+  // receiver. Switching tabs mid-answer breaking the idle clock would be the
+  // same class of bug as arming it at response.done.
   await activateTab(page, METABOLISM_SRC);
   await sleep(900);
+  await page.eval("window.__wvTone.gain.gain.value = 0.08; return true;");
+  await sleep(300);
   const wFlat = await page.eval(
-    "var W = window.VoiceGuide.wave;" +
+    "var W = window.VoiceGuide.speech;" +
     "W.start();" +
-    "return { running: W.running(), origin: W.origin('anything') };");
-  record('W6 a view with no wave in it is declined, not driven blindly',
-    wFlat.running === false && wFlat.origin === false, JSON.stringify(wFlat));
+    "return { running: W.running(), origin: W.origin('anything'), rms: W.rms() };");
+  record('W6 a view with no body is still measured, but nothing is painted and nothing is claimed',
+    wFlat.origin === false && wFlat.rms > 0.012, JSON.stringify(wFlat));
+  // Coming back, the same uninterrupted loop starts painting again.
   await activateTab(page, SOCIOGRAM_SRC);
   await tabReady(page, 'sociogram');
   await sleep(900);
+  const wBack = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.speech.running(), target: w._waveTarget };");
+  record('W6a and coming back mid-answer resumes the wave without restarting the watch',
+    wBack.running === true && wBack.target > 0, JSON.stringify(wBack));
+  await page.eval("window.VoiceGuide.speech.stop('harness done'); window.__wvTone.gain.gain.value = 0; return true;");
 
   // ---- Idle listening cutoff: what can honestly be checked without a session --
   //

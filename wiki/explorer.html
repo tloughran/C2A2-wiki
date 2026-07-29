@@ -1281,20 +1281,34 @@ var VoiceGuide = (function() {
       return (w && w.VoiceWave && w.VoiceWave.enabled) ? w : null;
     } catch (e) { return null; }
   }
-  function waveStart() {
+  // ONE MEASUREMENT OF "THE GUIDE IS SPEAKING", TWO CONSUMERS.
+  //
+  // The graph's body is one of them. The other is the idle clock, and it had
+  // the identical bug for the identical reason (Tom, live, 2026-07-28): a long
+  // answer tripped "haven't heard from you in a while" and paused listening
+  // WHILE THE GUIDE WAS TALKING. armIdle() ran at response.done -- generation
+  // complete, audio still playing for another half-minute -- so the guide's own
+  // speech was counted as dead air. The comment above armIdle already says the
+  // clock is "held down entirely while either party is talking"; response.done
+  // simply is not the moment the guide stops talking, any more than it was the
+  // moment the wave should stop.
+  //
+  // So the loop runs whenever a response is open, on EVERY tab, and paints only
+  // where there is something to paint. Switching tabs mid-answer must not break
+  // the idle clock.
+  function speechStart() {
     if (_wvTimer) { return; }
-    if (!outAnalyser) { return; }   // nothing to measure -> nothing to draw
-    if (!waveWin()) { return; }
+    if (!outAnalyser) { return; }   // nothing to measure; callers fall back
     _wvQuiet = 0; _wvLast = 0;
     _wvTrace = []; _wvTraceAt = 0; _wvReason = null;
     _wvTimer = setInterval(function () {
-      var w = waveWin(), rms = outputRms();
-      // The tab can change and the meter can go away under us. Either means we
-      // no longer know how loud the guide is, and the honest move is to stop --
-      // not to keep painting the last number we happened to have.
-      if (!w) { waveStop('tab changed'); return; }
-      if (rms === null) { waveStop('meter gone'); return; }
-      w.VoiceWave.speak(rms * WV_GAIN);
+      var rms = outputRms();
+      // The meter can go away under us. That means we no longer know how loud
+      // the guide is, and the honest move is to stop -- not to keep painting
+      // the last number we happened to have.
+      if (rms === null) { speechEnd('meter gone'); return; }
+      var w = waveWin();
+      if (w) { w.VoiceWave.speak(rms * WV_GAIN); }
       wvTrace(rms, responseActive);
       // THE ONLY THING THAT ENDS THE WAVE IS MEASURED QUIET.
       //
@@ -1327,16 +1341,21 @@ var VoiceGuide = (function() {
       // While a response is active the guide is between words, not finished --
       // a 300ms pause mid-sentence must not be read as the end of speaking.
       if (responseActive) { _wvQuiet = 0; return; }
-      if (_wvQuiet >= WV_END_MS) { waveStop('quiet ' + _wvQuiet + 'ms'); }
+      if (_wvQuiet >= WV_END_MS) { speechEnd('quiet ' + _wvQuiet + 'ms'); }
     }, WV_MS);
   }
-  function waveStop(reason) {
+  // `armed` is false only for the session going away, where there is no gap to
+  // start counting because there is no conversation left.
+  function speechEnd(reason, armed) {
     if (_wvTimer) { _wvReason = reason || 'stopped'; clearInterval(_wvTimer); _wvTimer = null; }
     // Say "quiet" rather than merely stopping: the receiver rides its release
     // down onto the simulation's own positions, so the graph settles instead of
     // being abandoned mid-crest until the sample times out.
     var w = waveWin();
     if (w) { try { w.VoiceWave.silent(); } catch (e) {} }
+    // THIS is the moment the guide stopped talking, measured rather than
+    // inferred -- so this is where the idle clock is allowed to start.
+    if (armed !== false) { armIdle(); }
   }
   // Where the wave comes from -- the part that makes the motion MEAN something,
   // rather than just prove the guide is talking. The receiver REFUSES a
@@ -2466,12 +2485,19 @@ var VoiceGuide = (function() {
       case 'response.created':
         responseActive = true;
         holdIdle();          // the guide has the floor
-        waveStart();         // ...and the graph moves while it holds it
+        speechStart();       // ...and we watch for when it actually gives it up
         clearTimeout(_hangTimer);
         break;
       case 'response.done':
         responseActive = false;
-        armIdle();           // it finished talking; the gap starts here
+        // NOT armIdle() here. response.done means generation is complete, not
+        // that the guide has stopped speaking -- on a long answer the audio
+        // plays for another half-minute, and arming here counted the guide's
+        // own voice as dead air (Tom, live, 2026-07-28). speechEnd() arms it,
+        // on measured silence. The fallback is for a session with no output
+        // meter at all, where there is nothing to measure and the old
+        // behaviour is still better than never arming the clock.
+        if (!_wvTimer) { armIdle(); }
         // The page's reader waits for the guide to finish speaking, so the two
         // voices hand over instead of colliding. Deliberate two-voice design
         // (Tom, 2026-07-25): the guide introduces, the page reads.
@@ -2591,7 +2617,7 @@ var VoiceGuide = (function() {
     // so no measurement, so no wave. Without this the drain never completes
     // (responseActive is still true if a response was cut off mid-flight) and a
     // 30Hz timer outlives the connection it was measuring.
-    responseActive = false; waveStop('session ended');
+    responseActive = false; speechEnd('session ended', false);
     var rb0 = el('vg-resume'); if (rb0) { rb0.style.display = 'none'; }
     // If a grid run is in flight, signal it to unwind -- otherwise it spins
     // through per-cell timeouts on a dead channel and blocks the next Start.
@@ -2621,11 +2647,13 @@ var VoiceGuide = (function() {
     toggle: function() { if (live || connecting) stop(); else start(); },
     resume: function() { resumeListening(); },
     getRemoteStream: function() { return remoteStream; },
-    // The wave driver, reachable from the command layer's script block and from
-    // the harness. One name for it -- a second global alias would be a second
-    // road to the same door.
-    wave: {
-      start: waveStart, stop: waveStop, origin: waveOrigin,
+    // The speech watcher, reachable from the command layer's script block and
+    // from the harness. One name for it -- a second global alias would be a
+    // second road to the same door. It is `speech`, not `wave`, because the
+    // graph is only one of the two things that need to know when the guide has
+    // actually stopped talking; the idle clock is the other.
+    speech: {
+      start: speechStart, stop: speechEnd, origin: waveOrigin,
       running: function () { return !!_wvTimer; },
       rms: function () { return outputRms(); },
       gain: WV_GAIN,
