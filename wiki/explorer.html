@@ -1262,6 +1262,26 @@ var VoiceGuide = (function() {
   // Console:  VoiceGuide.wave.trace()
   var _wvTrace = [], _wvTraceAt = 0, _wvReason = null;
   var WV_TRACE_MS = 100, WV_TRACE_MAX = 900;   // ~90s at 10Hz
+  // The one line that answers the open question: is the envelope SATURATING?
+  // rms x WV_GAIN is clamped at 1 by the receiver, so if most samples are at
+  // the ceiling the wave has no dynamics left to show and the gain, not the
+  // voice, is what the graph is drawing.
+  function wvSummary() {
+    var s = _wvTrace;
+    if (!s.length) { return { n: 0 }; }
+    var vals = s.map(function (x) { return x.rms; }).sort(function (a, b) { return a - b; });
+    var loud = vals.filter(function (v) { return v >= QUIET_RMS; });
+    var clip = vals.filter(function (v) { return v * WV_GAIN >= 1; }).length;
+    return {
+      n: s.length,
+      spanMs: s[s.length - 1].t - s[0].t,
+      med: Math.round((loud.length ? loud[Math.floor(loud.length / 2)] : 0) * 10000) / 10000,
+      peak: Math.round(vals[vals.length - 1] * 10000) / 10000,
+      voicePct: Math.round(loud.length / vals.length * 100),
+      clipPct: Math.round(clip / vals.length * 100),
+      gain: WV_GAIN
+    };
+  }
   function wvTrace(rms, active) {
     var now = Date.now();
     if (now - _wvTraceAt < WV_TRACE_MS) { return; }
@@ -1353,6 +1373,19 @@ var VoiceGuide = (function() {
     // being abandoned mid-crest until the sample times out.
     var w = waveWin();
     if (w) { try { w.VoiceWave.silent(); } catch (e) {} }
+    // SAY WHAT WAS MEASURED, EVERY TIME, WITHOUT BEING ASKED. Diagnosing this
+    // by hand meant typing a console incantation at exactly the right moment,
+    // against a ring buffer the next utterance overwrites -- so the evidence
+    // was gone by the time anyone knew they wanted it. One line per utterance
+    // costs nothing and is there afterwards.
+    try {
+      var s = wvSummary();
+      if (s.n) {
+        console.log('[wave] ' + (s.spanMs / 1000).toFixed(1) + 's  voice ' + s.voicePct +
+          '%  rms med ' + s.med + ' peak ' + s.peak + '  x' + s.gain + ' -> clipped ' +
+          s.clipPct + '%  ended: ' + _wvReason);
+      }
+    } catch (e) {}
     // THIS is the moment the guide stopped talking, measured rather than
     // inferred -- so this is where the idle clock is allowed to start.
     if (armed !== false) { armIdle(); }
@@ -2660,13 +2693,14 @@ var VoiceGuide = (function() {
       // What the meter ACTUALLY read, at 10Hz, plus why the wave stopped. Two
       // live sessions have disagreed about this analyser's behaviour during
       // speech; one more guess is worth less than one trace.
+      summary: wvSummary,
       trace: function () {
-        var s = _wvTrace, t0 = s.length ? s[0].t : 0;
+        var s = _wvTrace, t0 = s.length ? s[0].t : 0, sum = wvSummary();
         return {
           reason: _wvReason, running: !!_wvTimer, samples: s.length,
-          spanMs: s.length ? s[s.length - 1].t - t0 : 0,
+          spanMs: sum.spanMs || 0, med: sum.med, peak: sum.peak,
+          voicePct: sum.voicePct, clipPct: sum.clipPct, gain: WV_GAIN,
           loud: s.filter(function (x) { return x.rms >= QUIET_RMS; }).length,
-          peak: s.reduce(function (m, x) { return x.rms > m ? x.rms : m; }, 0),
           rows: s.map(function (x) {
             return (x.t - t0) + ' ' + x.rms + (x.active ? ' active' : '') +
                    (x.quiet ? ' q' + x.quiet : '');
