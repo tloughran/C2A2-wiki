@@ -2257,10 +2257,31 @@ async function main() {
   record('W3b a voice that keeps going keeps the wave going -- no clock cuts it off',
     wLong.running === true && wLong.target > 0, JSON.stringify(wLong));
 
+  // A PAUSE IS NOT AN ENDING. The second live failure: the wave died about a
+  // second into a several-second answer, both times. Speech has gaps at every
+  // sentence boundary, and once the driver stops, nothing restarts it until the
+  // next response.created -- so one 250ms pause costs the whole rest of the
+  // answer. QUIET_FOR_MS is the reader-handover threshold, where being late is
+  // free and being early is a collision; here the asymmetry runs the other way.
+  await page.eval("window.__wvTone.gain.gain.value = 0; return true;");
+  await sleep(700);
+  const wGap = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+  record('W3c a pause between sentences does not end the utterance',
+    wGap.running === true, JSON.stringify(wGap));
+  // ...and the voice coming back is picked up by the timer that never stopped.
+  await page.eval("window.__wvTone.gain.gain.value = 0.08; return true;");
+  await sleep(300);
+  const wResume = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+  record('W3d and when the voice comes back the wave is already there',
+    wResume.running === true && wResume.target > 0, JSON.stringify(wResume));
+
   // THE END OF THE WAVE IS MEASURED TOO. `response.done` means the response is
   // complete, not that its audio has stopped playing -- so the driver does not
-  // stop there; it stops when the sound does, on the same threshold the reader
-  // handover uses. Killing the tone stands in for the tail draining.
+  // stop there; it stops when the sound does, after a silence long enough that
+  // no utterance could still be running. Killing the tone for good stands in for
+  // the tail draining.
   const wQuiet = await page.eval(IFRAME_DOC +
     "window.__wvTone.gain.gain.value = 0;" +
     "var W = window.VoiceGuide.wave, t0 = Date.now();" +
@@ -2271,16 +2292,22 @@ async function main() {
     "    res({ ms: Date.now() - t0, running: W.running(), target: w._waveTarget });" +
     "  }, 25);" +
     "});");
-  record('W4 when the voice goes quiet the wave stops itself, and says so to the graph',
+  record('W4 when the voice goes quiet for good the wave stops itself, and says so to the graph',
     wQuiet.running === false && wQuiet.target === 0, JSON.stringify(wQuiet));
-  // AND IT DRAINS IN REAL TIME. The drain is a DURATION (220ms of measured
+  // AND IT ENDS IN REAL TIME. The ending is a DURATION (WV_END_MS of measured
   // quiet), not a count of ticks -- a hidden page has its timers throttled to
-  // about 1Hz, and counting WV_MS per tick made the same 220ms take 6799ms with
+  // about 1Hz, and counting WV_MS per tick made a 220ms drain take 6799ms with
   // the explorer in a background tab. Under CDP the page is visible and cannot
-  // reproduce that, so this row exists to state the intent: if the drain ever
+  // reproduce that, so this row exists to state the intent: if the ending ever
   // starts measuring itself in ticks again, this is the row that says so.
-  record('W4a and the drain is 220ms of measured quiet, not a count of ticks',
-    wQuiet.ms >= 220 && wQuiet.ms < 900, wQuiet.ms + 'ms');
+  record('W4a and the ending is 2500ms of measured quiet, not a count of ticks',
+    wQuiet.ms >= 2500 && wQuiet.ms < 3400, wQuiet.ms + 'ms');
+  // The stop is self-describing, because the next thing that goes wrong live
+  // will be diagnosed from a console line rather than from a theory.
+  const wWhy = await page.eval("return window.VoiceGuide.wave.trace();");
+  record('W4b and it says WHY it stopped, with the readings behind it',
+    /^quiet \d+ms$/.test(String(wWhy.reason)) && wWhy.loud > 0 && wWhy.peak > 0.012,
+    JSON.stringify({ reason: wWhy.reason, samples: wWhy.samples, loud: wWhy.loud, peak: wWhy.peak }));
 
   // Where the wave comes from is what makes it mean something rather than just
   // prove the guide is talking. The receiver REFUSES a reference it cannot

@@ -1241,6 +1241,34 @@ var VoiceGuide = (function() {
   // this analyser sits near the bottom of 0..1, and at 1:1 the wave would be
   // invisible. The receiver clamps at 1, so loud passages simply peak.
   var WV_GAIN = 6;
+  // HOW MUCH MEASURED SILENCE MEANS THE UTTERANCE IS OVER.
+  //
+  // NOT QUIET_FOR_MS (220). That threshold answers a different question -- "has
+  // the tail drained enough that the reader may start" -- where being 200ms
+  // early is a collision and being 200ms late costs nothing. Here the cost is
+  // reversed: a 250ms pause between two sentences is not the end of speaking,
+  // and treating it as one kills the wave for the whole rest of the answer,
+  // because nothing restarts it until the next response.created. Tom's live
+  // "hello" died about a second in, mid-message, both times.
+  //
+  // Stopping the timer is only an optimisation anyway. speak(0) is an honest
+  // report -- "the voice is quiet right now" -- and the receiver settles the
+  // graph on its own. So the driver keeps measuring through the gaps and only
+  // shuts down after a silence long enough that no utterance is still running.
+  var WV_END_MS = 2500;
+  // A ring of what the meter actually read, so the next live session diagnoses
+  // instead of guessing. Two live sessions have now disagreed about what this
+  // analyser reads during speech, and no amount of reading the code settles it.
+  // Console:  VoiceGuide.wave.trace()
+  var _wvTrace = [], _wvTraceAt = 0, _wvReason = null;
+  var WV_TRACE_MS = 100, WV_TRACE_MAX = 900;   // ~90s at 10Hz
+  function wvTrace(rms, active) {
+    var now = Date.now();
+    if (now - _wvTraceAt < WV_TRACE_MS) { return; }
+    _wvTraceAt = now;
+    _wvTrace.push({ t: now, rms: Math.round(rms * 10000) / 10000, active: !!active, quiet: _wvQuiet });
+    if (_wvTrace.length > WV_TRACE_MAX) { _wvTrace.shift(); }
+  }
 
   // The one guard that matters. A view exposing `VoiceWave.enabled` is a view
   // that can be spoken to, and `enabled` is already false under prefers-reduced-
@@ -1258,13 +1286,16 @@ var VoiceGuide = (function() {
     if (!outAnalyser) { return; }   // nothing to measure -> nothing to draw
     if (!waveWin()) { return; }
     _wvQuiet = 0; _wvLast = 0;
+    _wvTrace = []; _wvTraceAt = 0; _wvReason = null;
     _wvTimer = setInterval(function () {
       var w = waveWin(), rms = outputRms();
       // The tab can change and the meter can go away under us. Either means we
       // no longer know how loud the guide is, and the honest move is to stop --
       // not to keep painting the last number we happened to have.
-      if (!w || rms === null) { waveStop(); return; }
+      if (!w) { waveStop('tab changed'); return; }
+      if (rms === null) { waveStop('meter gone'); return; }
       w.VoiceWave.speak(rms * WV_GAIN);
+      wvTrace(rms, responseActive);
       // THE ONLY THING THAT ENDS THE WAVE IS MEASURED QUIET.
       //
       // `response.done` means the response is COMPLETE, not that its audio has
@@ -1282,6 +1313,8 @@ var VoiceGuide = (function() {
       // session closing (stop()), the tab changing or the meter going away (the
       // guard above). A track that has ended reads as 128s, which IS quiet.
       //
+      // AND THE SILENCE HAS TO BE LONG, not merely detectable -- see WV_END_MS.
+      //
       // COUNT REAL TIME, NOT TICKS. A hidden page has its timers throttled to
       // about 1Hz, so `+= WV_MS` would count 33ms per second and the 220ms drain
       // would take seven seconds (measured, 2026-07-28: 6799ms with the explorer
@@ -1294,11 +1327,11 @@ var VoiceGuide = (function() {
       // While a response is active the guide is between words, not finished --
       // a 300ms pause mid-sentence must not be read as the end of speaking.
       if (responseActive) { _wvQuiet = 0; return; }
-      if (_wvQuiet >= QUIET_FOR_MS) { waveStop(); }
+      if (_wvQuiet >= WV_END_MS) { waveStop('quiet ' + _wvQuiet + 'ms'); }
     }, WV_MS);
   }
-  function waveStop() {
-    if (_wvTimer) { clearInterval(_wvTimer); _wvTimer = null; }
+  function waveStop(reason) {
+    if (_wvTimer) { _wvReason = reason || 'stopped'; clearInterval(_wvTimer); _wvTimer = null; }
     // Say "quiet" rather than merely stopping: the receiver rides its release
     // down onto the simulation's own positions, so the graph settles instead of
     // being abandoned mid-crest until the sample times out.
@@ -2558,7 +2591,7 @@ var VoiceGuide = (function() {
     // so no measurement, so no wave. Without this the drain never completes
     // (responseActive is still true if a response was cut off mid-flight) and a
     // 30Hz timer outlives the connection it was measuring.
-    responseActive = false; waveStop();
+    responseActive = false; waveStop('session ended');
     var rb0 = el('vg-resume'); if (rb0) { rb0.style.display = 'none'; }
     // If a grid run is in flight, signal it to unwind -- otherwise it spins
     // through per-cell timeouts on a dead channel and blocks the next Start.
@@ -2596,6 +2629,22 @@ var VoiceGuide = (function() {
       running: function () { return !!_wvTimer; },
       rms: function () { return outputRms(); },
       gain: WV_GAIN,
+      // What the meter ACTUALLY read, at 10Hz, plus why the wave stopped. Two
+      // live sessions have disagreed about this analyser's behaviour during
+      // speech; one more guess is worth less than one trace.
+      trace: function () {
+        var s = _wvTrace, t0 = s.length ? s[0].t : 0;
+        return {
+          reason: _wvReason, running: !!_wvTimer, samples: s.length,
+          spanMs: s.length ? s[s.length - 1].t - t0 : 0,
+          loud: s.filter(function (x) { return x.rms >= QUIET_RMS; }).length,
+          peak: s.reduce(function (m, x) { return x.rms > m ? x.rms : m; }, 0),
+          rows: s.map(function (x) {
+            return (x.t - t0) + ' ' + x.rms + (x.active ? ' active' : '') +
+                   (x.quiet ? ' q' + x.quiet : '');
+          })
+        };
+      },
       // The real entry point (pc.ontrack calls it), exposed so the harness can
       // arm the meter from a SYNTHETIC stream of known loudness. Testing this
       // path otherwise costs a live realtime session, and a test that has to be
