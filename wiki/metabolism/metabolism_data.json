@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "generated": "2026-07-28T06:05:35.423467-04:00",
+    "generated": "2026-07-29T06:04:33.525957-04:00",
     "source": "openstory-db",
-    "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
+    "db_path": "/sessions/trusting-gallant-einstein/mnt/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
     "db_mtime": "2026-07-27T06:09:36.540788",
     "lanes": 33,
     "total_runs": 2201,
@@ -32510,8 +32510,8 @@
       "date": "2026-07-21",
       "links_added": 41,
       "links_removed": 0,
-      "files_added": 78,
-      "commits": 10,
+      "files_added": 81,
+      "commits": 12,
       "prs_added": 0,
       "prs_articulated": 0,
       "signals": 0
@@ -32520,8 +32520,8 @@
       "date": "2026-07-22",
       "links_added": 0,
       "links_removed": 0,
-      "files_added": 0,
-      "commits": 2,
+      "files_added": 4,
+      "commits": 8,
       "prs_added": 0,
       "prs_articulated": 0,
       "signals": 0
@@ -32531,7 +32531,57 @@
       "links_added": 0,
       "links_removed": 0,
       "files_added": 0,
+      "commits": 8,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0
+    },
+    {
+      "date": "2026-07-24",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
       "commits": 1,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0
+    },
+    {
+      "date": "2026-07-25",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 1,
+      "commits": 25,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0
+    },
+    {
+      "date": "2026-07-26",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
+      "commits": 9,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0
+    },
+    {
+      "date": "2026-07-27",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
+      "commits": 13,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0
+    },
+    {
+      "date": "2026-07-28",
+      "links_added": 9,
+      "links_removed": 5,
+      "files_added": 142,
+      "commits": 13,
       "prs_added": 0,
       "prs_articulated": 0,
       "signals": 0

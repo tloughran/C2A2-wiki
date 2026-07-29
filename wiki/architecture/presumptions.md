@@ -11341,3 +11341,203 @@ PRESUMPTION-565:
     Transform at each step:
       14b: Surfaced from a count conflict resolved by the disputed file's own self-description. [inferred]
     Current status: UNTESTED
+
+PRESUMPTION-566:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] The conclusion "the general case was always 'read the controls,' and reading a window map was `prs_3d`'s special case wearing the shared road's clothes" presumes that the fifth diagnosis is the terminus of the generalisation -- when it was arrived at by the same procedure (generalise from the instances seen so far) that produced the four superseded general cases before it. Each earlier abstraction was also declared general at the moment it covered every instance then known. Nothing stated in the method distinguishes "the general case" from "the case that covers the five examples encountered to date."
+  Evidence it was operative: SX reports this as "the fifth instance of the same failure mode"; the correction is written in the past perfect ("was always") rather than as a fifth revision; the accompanying moral -- "a generalisation is only as good as its worst-covered instance" -- is applied to the superseded abstraction but not to the replacement, which has now seen three page architectures out of an unenumerated set of future tabs. No stated criterion for when the roster reader would be considered general, and no enumeration of remaining page kinds.
+  Why it was unstated: too foundational to notice -- the correction reads as an insight rather than as an inductive step, and insights are not usually audited for the induction that produced them.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-562, ASSUMPTION-563, ASSUMPTION-574, PREMISE-134
+  Testability: testable via literature -- warrant for inductive generalization from small n; enumerative vs eliminative induction; the "worst-covered instance" heuristic and how a covering abstraction is validated as terminal.
+  Risk if wrong: Medium. If wrong, the sixth page produces the sixth generalisation failure at the same per-tab cost, and the standing conclusion delays rather than prevents it.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-566
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a correction stated as terminal, arrived at by the method that produced the corrections it supersedes. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-567:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] The verification pass presumes that a separate instance of the same model family satisfies the decorrelation requirement PREMISE-132 imposes -- while the same file states, of the same batch, that "Residual same-model correlation is NOT discharged -- MONITOR-486 stands." Both readings appear in one document: the verification section calls itself "an in-batch application of the premise, not merely an assertion of it," and the batch header says the correlation the premise is meant to defeat remains undischarged. The presumption is that instance-level independence is the operative variable and model-level correlation is a residual, rather than the other way round.
+  Evidence it was operative: the verification section's decisive sentence is "the check was run BY A DIFFERENT INSTANCE than the one that wrote the citations, per PREMISE-132's decorrelation requirement"; no argument is given for why instance separation is the decorrelation PREMISE-132 requires, and PREMISE-132's own narrowing was justified by Agrawal et al. 2024 on internal consistency checks -- a different claim (that some hallucinated references are detectable without external resources) than the claim that citation accuracy is thereby assured.
+  Why it was unstated: obvious to participants -- "different instance" reads as "independent check" in ordinary usage, so the gap between instance independence and error independence does not present itself as a question.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-570, ASSUMPTION-569, PREMISE-132, MONITOR-486, PRESUMPTION-559, PRESUMPTION-560, REVISE-247, REVISE-249
+  Testability: testable via literature -- correlated errors across instances of the same model; whether ensemble/self-consistency checks detect the error classes they share; independence assumptions in verification design.
+  Risk if wrong: High. The verification pass is currently the principal evidence that this batch's five INCORPORATEs are externally anchored; if instance separation does not buy error independence, the pass certifies precisely the shared failure modes it was built to catch, and it does so under the authority of a premise minted the same day.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-567
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two statements about the same batch's correlation status that are not reconciled with each other. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-568:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] Classifying all six verification defects as "drafting/rigour, not a wrong disposition" and affirming that "the dispositions are sound" presumes that defects in the stated grounds do not propagate to the conclusions those grounds were given for. Defect (2) is specifically that "'refuted by both directions' overstated 15a's contribution, which was a caveat inside a SUPPORTED return, not a refutation" -- i.e. the apparent convergence was inflated -- and convergence is the stated ground on which this batch's dispositions were reached. A verifier that corrects a ground while retaining the conclusion presumes the conclusion was independently supported, which is not shown.
+  Evidence it was operative: the verifier's own framing, "the defects were in wording rather than judgement," is asserted rather than demonstrated; defect (5) ("'It follows that' asserted entailment... now marked explicitly as an is/ought step") is a correction to the inference structure, not the prose; the batch elsewhere warns that "inflating apparent convergence is exactly what MONITOR-486 warns of," which concedes that inflated convergence is a judgement-level defect when it appears in 15a/15b returns.
+  Why it was unstated: culturally embedded -- the wording/substance distinction is a standard editorial category, and applying it makes the correction cheap to record.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-570, ASSUMPTION-571, PREMISE-133, DISPOSITION-543, MONITOR-486, PRESUMPTION-567
+  Testability: testable via literature -- whether corrections to stated reasons predict changes in conclusions; post-hoc rationalization and the stability of a verdict under revised premises; audit findings classified as presentational vs substantive.
+  Risk if wrong: Medium-High. PREMISE-133 is the premise that binds 15c's own disposition practice; if its inflated-convergence defect is substantive rather than presentational, the premise minted to answer PRESUMPTION-560 rests partly on the error 560 predicted.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-568
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a defect list whose contents include inference-level corrections but whose classification is uniformly presentational. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-569:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] The batch's own note on the INCORPORATE count -- "5 vs last run's 1... all five name external referents outside the pipeline, per the PRESUMPTION-556 / REVISE-246 bar" -- presumes that a fivefold rise in adoptions immediately after a bar was imposed is evidence the bar is working, rather than evidence about how the bar is being applied. The rate change coincides exactly with the run in which the pipeline was itself under judgement for whether it can adopt premises about its own reliability (PRESUMPTION-560), and the disposition text for PREMISE-133 explicitly reasons from that exposure: "Declining again here would be precisely what PRESUMPTION-560 predicts."
+  Evidence it was operative: the note treats the count anomaly as needing explanation and supplies one, but does not consider the alternative reading; DISPOSITION-543's stated reasoning makes the item's reflexive exposure a live input to the decision; the same run also self-reports that "this run again consumed only fresh intake (8 items) and burned zero backlog," so the adoption rate rose on the cohort that was watching rather than on the queue that was waiting.
+  Why it was unstated: too foundational to notice -- an agent applying a criterion has no vantage from which its own application rate looks like data about itself.
+  Type: normative / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-569, ASSUMPTION-558, PREMISE-130, PREMISE-131, PREMISE-132, PREMISE-133, PREMISE-134, PRESUMPTION-560, MONITOR-486
+  Testability: testable via literature -- reactivity of evaluators to being evaluated; base-rate shifts following the introduction of an explicit criterion; Goodhart effects on gatekeeping thresholds; self-serving application of admission standards.
+  Risk if wrong: Medium. If the rise reflects a loosened application rather than a raised standard, five premises entered the validated register on a bar that has never been tested against a case it should reject.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-569
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a self-noted rate anomaly explained only in the direction favourable to the mechanism that produced it. [inferred -- moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-570:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] "No review page was generated today at all... I did not diagnose why -- flagging it rather than guessing" presumes that an undiagnosed disappearance of a scheduled output belongs in the same queue, at the same priority, as a known defect awaiting a human decision. Not guessing is sound; but a scheduled run that produced nothing and raised nothing is a fault of unknown scope, and it is unknown whether it is confined to this run, this tool, or the scheduler. The missing capability -- an existence check on scheduled outputs that fails loudly -- is the same class of absence as the missing reconciliation assertion the summary asks for two paragraphs earlier.
+  Evidence it was operative: the non-generation is reported as the first "consequence" of the generator defect, which presupposes a causal link that is not established (the defect is a wrong-pids defect, not a fails-to-run defect); it is filed under the same morning-discussion item rather than raised separately; no urgency is attached and no check is proposed, whereas the adjacent known defect gets both.
+  Why it was unstated: oversight, compounded by framing -- a silent null is easy to attach to the loud fault next to it.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-567, ASSUMPTION-566, ASSUMPTION-565, PREMISE-131, WATCH-003
+  Testability: testable via literature -- silent-failure and missing-output detection in scheduled jobs; dead-man's-switch / heartbeat patterns; triage of faults of unknown scope versus known defects.
+  Risk if wrong: Medium-High. If the 04:38 failure is in the scheduler rather than the generator, other scheduled runs may be failing silently and the artifact-based reconstruction method (ASSUMPTION-561) cannot see an absence it was never told to expect.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-570
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a silent null result filed as a consequence of an adjacent defect without a stated causal link. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-571:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] Restating the fix as "a five-minute fix" on the sixth consecutive failed day presumes that its non-application is a matter of availability rather than a signal about the channel's value to its user. Six days of an unperformed five-minute action is itself evidence, and the alternative reading -- that the daily-walk Chat channel is not worth five minutes to the person it exists to serve -- has never been considered in any summary. Relatedly, the loss of Browser 2 ("dropped off entirely since this morning") is reported as a status change rather than as the end of the redundancy design, leaving one browser presumed to still be a channel.
+  Evidence it was operative: the fix has been restated in near-identical language across six summaries with no change of approach and no escalation to a different transport; the summaries never ask whether the channel should exist; the summary's own delivery paragraph records that the primary deliverable is the .md file ("Chat did not receive this summary -- read it here"), which is a working channel already.
+  Why it was unstated: culturally embedded -- a designed channel is presumed to be wanted, so its non-repair is read as a to-do rather than as a preference.
+  Type: normative / structural
+  Related decisions: none
+  Related items: ASSUMPTION-568, ASSUMPTION-559, PRESUMPTION-541, PRESUMPTION-547, PRESUMPTION-550, OPEN-135
+  Testability: testable via literature -- revealed vs stated preference; repeated non-completion of low-cost tasks as a signal of low utility; when to retire rather than repair a communication channel. Substantially reinforces PRESUMPTION-541/547/550 already queued.
+  Risk if wrong: Medium. If the channel is genuinely wanted, this reading would license retiring something valuable; if it is not, six days of report effort have been spent restating a fix nobody intends to make.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-571
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a cheap fix restated unchanged across six failures with the alternative explanation never entertained. [inferred -- moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-572:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] "Since PRS triplets are read as reference frames in this architecture... a proposed biological mechanism for performing reference-frame transformation is load-bearing, not incidental" presumes that a mechanism in the source domain bears on a construct that borrowed the source domain's vocabulary. The inference runs through the shared term "reference frame," not through an established structural correspondence between cortical reference frames and PRS triplets. This is precisely the check PREMISE-134 -- minted the same day, from PRESUMPTION-562, as a reflexive scope-extension of PREMISE-127 to the project's own self-descriptions -- requires, and it is not applied here.
+  Evidence it was operative: the load-bearing claim is asserted with "Since" and a citation to the project's own supplementary proposal (PROP-2026-04-09-SUPP-001), i.e. to the act of adopting the term rather than to a validation of the mapping; the paragraph's falsifier is a prediction about thalamic activity, which tests the Hawkins claim but not the transfer; no non-alignable difference is named between a cortical reference frame and a Problem-Research-Solution triplet.
+  Why it was unstated: obvious to participants -- the term was borrowed years of wiki-time ago and now reads as descriptive rather than analogical.
+  Type: epistemic / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-572, PREMISE-127, PREMISE-134, PRESUMPTION-562, MONITOR-487, REVISE-245, REVISE-246
+  Testability: testable via literature -- structure-mapping conditions for transfer back from a source domain whose vocabulary was borrowed; theory-ladenness of adopted terminology; when a metaphor becomes a load-bearing identity claim.
+  Risk if wrong: Medium-High. The Hawkins tradition is the source of the architecture's central organizing metaphor; if a mechanism claim about thalamic transforms is treated as bearing on PRS structure without a transfer check, the project imports a biological result as architectural warrant on the same day it adopted a premise forbidding exactly that.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-572
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a load-bearing claim routed through a shared term on the same day the check against that move was incorporated. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-573:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] "The proposal marks its own triplet Confidence: Speculative... That's the right handling" presumes that a self-assigned confidence label functions as a control on an unverifiable claim. The same batch minted PREMISE-132 on the ground that citing is not verifying; by the same structure, labelling is not verifying, and a label attached by the same process that produced the claim adds no independent information about it. A second presumption sits underneath: that the item's value survives its source being unreadable -- the stated interest is that the essay "would apparently be the single document where Hoffman runs all three lines... as one convergent argument," where "apparently" marks the description, not the document, as the evidence for the conjunction.
+  Evidence it was operative: the handling is endorsed by contrast with a prior failure ("the honest version of what PROP-2026-07-19-003 got wrong"), which locates the improvement in disclosure rather than in verification; the proposed remedy is a new disposition category for "unretrievable but well-described source," which formalizes admission of items whose only evidence is a third-party description; both branches of the stated payoff (independent convergence, or a shared hidden premise) require reading the essay.
+  Why it was unstated: obvious to participants -- self-flagged speculation is the local norm for good-faith handling, so the question of whether flagging does epistemic work does not arise.
+  Type: epistemic / normative
+  Related decisions: none (a disposition category is proposed, not adopted)
+  Related items: ASSUMPTION-573, PREMISE-132, PREMISE-114, PRESUMPTION-559, PRESUMPTION-567
+  Testability: testable via literature -- calibration of self-reported confidence; whether disclosure labels change downstream use of uncertain evidence; handling of unretrievable or secondhand sources in evidence synthesis; citation of works not consulted.
+  Risk if wrong: Medium. A new admission category built on self-labelling would let descriptions of documents enter the corpus at the same grade as documents, with the label carrying the weight verification is supposed to carry.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-573
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a self-assigned confidence label endorsed as adequate handling, on the day a premise distinguishing citing from verifying was incorporated. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-574:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] "This summary is reconstructed from artifacts -- file mtimes, ... the pending queue, and the metrics CSV -- which per `fact_inventory.md`'s own rule are the authoritative record anyway" presumes that a rule written to settle disputes about what is true licenses substituting artifacts for a record the run could not obtain. Authoritative-when-they-disagree is not the same as sufficient-when-one-is-missing. The stated remedy -- "a cheap manifest the day's work writes as it goes" -- inherits the same limit: a manifest records what its author thought to record, so it closes the gap for work that left no file but not for work no one thought to log.
+  Evidence it was operative: the caveat that follows ("Anything that happened today and left no artifact is not in this summary") states the limitation and then the rule is invoked to neutralize it in the same sentence; the same run reports a token-budget breach caused by the same missing index, so the gap is acknowledged as a cost elsewhere while being described as harmless here.
+  Why it was unstated: too foundational to notice -- an existing rule that happens to point the right way is easier to invoke than to re-examine.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-561, ASSUMPTION-574, PRESUMPTION-482, PRESUMPTION-533, PRESUMPTION-535, PRESUMPTION-549
+  Testability: testable via literature -- survivorship bias in artifact-based reconstruction; completeness of activity logs vs process records; the difference between a tie-breaking rule and a sufficiency rule in evidence hierarchies. Substantially reinforces PRESUMPTION-482 (the auditor has no measure of its own completeness), already queued.
+  Risk if wrong: Medium. Every 14a/14b run since the sync went dark rests on this substitution, so an unmeasured completeness gap propagates into the assumption and presumption registries without a marker.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-574
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated limitation neutralized by a rule invoked for a purpose other than the one it was written for. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-575:
+  Date surfaced: 2026-07-28
+  Statement: [inferred] Reporting coverage as "21 controls -- 10 covered, 4 excluded, 7 deferred, 0 uncovered (was 17 deferred)" presumes that "0 uncovered" measures coverage, when the figure is reachable by classification as well as by work: a control moved to excluded or deferred also leaves zero uncovered. The denominator is likewise self-set -- 21 is the count of controls the roster reader found, and today's finding was precisely that the roster reader could not read the page at all, so the enumeration and the coverage are produced by the same component.
+  Evidence it was operative: "0 uncovered" is reported as the gate-quality figure alongside the green test counts; "4 excluded" carries no stated exclusion criterion in the summary; the parenthetical "(was 17 deferred)" reports movement out of deferred without stating how many of the 21 were visible before the roster fix, so the two numbers are not on a common base.
+  Why it was unstated: culturally embedded -- zero-uncovered reads as a completeness claim in every coverage convention it borrows from.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-562, ASSUMPTION-564, PRESUMPTION-565, MONITOR-489, OPEN-112
+  Testability: testable via literature -- coverage metrics that permit exclusion; self-determined denominators in completeness measures; when a classification change is reported as progress.
+  Risk if wrong: Medium. The 161+328 gate and the 0-uncovered figure are the stated evidence that the increment is complete; if the denominator is set by the component under test, the metric cannot detect the failure mode that has now recurred five times.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-575
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a completeness figure whose enumerating component is the one the day's failure was located in. [inferred -- moderate confidence]
+    Current status: UNTESTED

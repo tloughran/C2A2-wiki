@@ -10089,3 +10089,255 @@ ASSUMPTION-560:
     Transform at each step:
       14a: Extracted from the Agent 16 status bullet and the morning-handoff transcript's stated counting-artifact resolution. [stated]
     Current status: UNTESTED
+
+ASSUMPTION-561:
+  Date identified: 2026-07-28
+  Statement: "One substantial build increment, one clean agent run, and one important non-event." No attended Cowork session occurred (autonomous day #23); "Key Decisions Made: None. `decisions.md` is unmodified since 2026-07-20"; "New Open Questions: None recorded... the file still ends at OPEN-139." Method stated explicitly: "No session transcript was read. `list_sessions` returns 2,613 sessions with no timestamps exposed, so today's interactive session could not be isolated reliably. This summary is reconstructed from artifacts."
+  Context: 2026-07-28 cowork_to_chat summary, opening section, "Key Decisions Made", "New Open Questions", and the fail-loud run notes.
+  Type: architectural / empirical
+  Related decisions: none (23rd consecutive day with no new DECISION)
+  Related items: ASSUMPTION-549, PRESUMPTION-482, PRESUMPTION-533, PRESUMPTION-535, PRESUMPTION-549
+  Testability: testable empirically / in-house -- confirm no pre-EOD 07-28 changelog or snapshot existed; confirm decisions.md unchanged since 07-20 and open_questions.md unchanged since 07-23.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-561
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated day-type, the stated null results for decisions and open questions, and the stated reconstruction method. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-562:
+  Date identified: 2026-07-28
+  Statement: CCL Community Explorer increment 2 shipped, and the diagnosis inverts three earlier entries that had called it "cheap": "the grammar, the verbs and the engine needed *nothing*. The shell's roster reader could not read the page at all -- the fifth instance of the same failure mode, and the first one located in the shell rather than in a manifest." Cause: "SV generalised filters off the Sociogram's `groupVisibility` and landed on `prs_3d`'s conventions instead... Community Explorer holds the same information in `const activeTypes = new Set(...)`: lexically bound... and a Set." Fix: "a section may now declare `keys` (a selector + an attribute) and the roster comes off the controls, with reads off `.checked`." Conclusion recorded: "the general case was always 'read the controls,' and reading a window map was `prs_3d`'s special case wearing the shared road's clothes." Gate: "161 engine + 328 shell green"; coverage "21 controls -- 10 covered, 4 excluded, 7 deferred, 0 uncovered (was 17 deferred)"; "Not one line of `community_explorer.html` or the nested `community/` app changed."
+  Context: 2026-07-28 cowork summary item 1; `architecture/voice_guide_redesign.md` SX.
+  Type: architectural / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-543, PRESUMPTION-566, PRESUMPTION-575
+  Testability: testable empirically / in-house -- read voice_guide_redesign.md SX; re-run the 161+328 gate; diff community_explorer.html against its prior revision to confirm zero page-side edits.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-562
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated increment report, its stated root cause, its stated fix and its stated gate/coverage figures. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-563:
+  Date identified: 2026-07-28
+  Statement: "Two things only running it could have said": (1) "`click()` is an `HTMLElement` method. The first SVG roster got `el.click is not a function`, and the guide reported failure to open something a mouse opens fine. A dispatched `MouseEvent` is what a mouse actually delivers and reaches d3's `addEventListener` handler." (2) "`unresolved` was one error code answering several questions. With filters real on a second tab, `only levin` there stopped being *unsupported* and became *unresolved*, and fell into a generic 'Could not find.' The engine now carries the verb."
+  Context: 2026-07-28 cowork summary item 1, the two run-only findings.
+  Type: architectural / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-562, PRESUMPTION-566
+  Testability: testable empirically / in-house -- confirm the dispatched-MouseEvent path in the engine and the verb-carrying error taxonomy in the shell; confirm the Connectome row's improvement.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-563
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated claim that these two findings were only obtainable by execution rather than by reasoning. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-564:
+  Date identified: 2026-07-28
+  Statement: Three capabilities were "deliberately not declared, with reasons on the record": "`find`/clear (this page's search *highlights* -- `applyLens` dims to 0.08 -- so the cut dimension must learn 'highlighted, not hidden' first); `zoom`/`pan` (reasoned from d3 v7's behaviour but not run -- prove one dispatched wheel before declaring a `d3zoom` camera kind); `#btn-hold`/`#btn-names` (toggle buttons carrying `.on`; this makes Connectome increment 3 a prerequisite, not a parallel track)."
+  Context: 2026-07-28 cowork summary item 1, final paragraph; "What's Next" items 2 and 3.
+  Type: methodological / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-562, ASSUMPTION-563, PREMISE-129
+  Testability: testable empirically / in-house -- confirm the three non-declarations in SX; confirm whether a dispatched wheel event on `#graph` is subsequently run before a `d3zoom` kind is declared.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-564
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated non-declarations and the stated reason for each, including the reasoned-but-not-run reservation. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-565:
+  Date identified: 2026-07-28
+  Statement: "Agent 16 re-checked both watch items -- the first re-check since intake. Both executed properly and both came back NOT MET." WATCH-002 (Wright): "source URL fetched (HTTP 200, 53KB); `entry-content` holds exactly one element, a YouTube embed figure... `article:modified_time` still 2026-07-17 -- page unchanged since publication. New this check: the embed is YouTube video `vshC_TxwrVo`, not audio-only. Auto-captions are a transcript route the original check method never contemplated, and the check method has been extended to include it." WATCH-003 (Rohr): "`review/archive/` unchanged at 16 files... No review pass has run since 07-23, so this item structurally cannot move until you next review."
+  Context: 2026-07-28 cowork summary item 2; `deferred/watch_list.md` (both items updated today).
+  Type: empirical / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-560, ASSUMPTION-566, ASSUMPTION-567, OPEN-133, WATCH-002, WATCH-003
+  Testability: testable empirically / in-house -- read deferred/watch_list.md for the 07-28 run entries and the extended check method; re-fetch the WATCH-002 source and confirm the YouTube id.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-565
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated Agent 16 re-check results, the stated new transcript route, and the stated structural coupling of WATCH-003 to the review pass. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-566:
+  Date identified: 2026-07-28
+  Statement: "`tools/generate_review_page.py` is unmodified since 2026-05-18. Line 304 still reads: `const pids = {[f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]!r};` ... That is exactly the defect -- pids synthesized as `run_date` + a sequence counter, with no reference to the actual card set. This is the fourth consecutive day it has been the top item, and today's pending set makes it worse rather than better: 18 real proposals spanning 07-21 through 07-28, against which the generator would emit 18 sequential `PROP-2026-07-28-NNN` ids of which two exist." Fix stated: "emit pids from the real card set, and add a reconciliation assertion that recomputes decision records against the actual proposal list and can fail (there is currently no `assert` anywhere in the file)."
+  Context: 2026-07-28 cowork summary, "For Morning Discussion" item 1.
+  Type: architectural / empirical
+  Related decisions: none
+  Related items: ASSUMPTION-550, ASSUMPTION-551, PREMISE-128, PREMISE-130, PREMISE-131, PRESUMPTION-557, PRESUMPTION-558
+  Testability: testable empirically / in-house -- read line 304 of tools/generate_review_page.py; confirm mtime 2026-05-18; grep the file for `assert`; count pending proposals against the pid range the generator would emit.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-566
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the quoted source line, the stated unmodified-since date, the stated 18-vs-2 arithmetic, and the stated two-part fix. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-567:
+  Date identified: 2026-07-28
+  Statement: "No review page was generated today at all. `review/` still tops out at `2026-07-27_review.html` (written 07-27 04:38). The 04:38 scheduled run produced nothing today. I did not diagnose why -- flagging it rather than guessing."
+  Context: 2026-07-28 cowork summary, "For Morning Discussion" item 1, first consequence.
+  Type: empirical / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-566, ASSUMPTION-565, PRESUMPTION-570
+  Testability: testable empirically / in-house -- list review/*.html and confirm the newest is 2026-07-27; inspect the 04:38 scheduled task's run record for an error or a silent no-op.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-567
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated absence of today's review page and the explicit statement that the cause was flagged rather than diagnosed. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-568:
+  Date identified: 2026-07-28
+  Statement: "The Chat sync failed again -- sixth consecutive day, and it's now costing you both directions." Morning: "This morning's Chat->Cowork scrape (14:02) hit the claude.ai login screen on *both* connected Chrome instances... 'No Chat context is available to Cowork sessions for 2026-07-28.'" Evening: "Browser delivery: ATTEMPTED AND FAILED... only one browser is now connected (`Browser 1`, macOS, local -- `Browser 2` has dropped off entirely since this morning). Navigated to `https://claude.ai/recents` at 18:42 EDT; the site redirected to `https://claude.ai/login?from=logout`." Consequence stated: "the walk conversation has had no Cowork context since 07-24, *and* Cowork has been running on 07-27's Chat context all day." Fix stated as five minutes.
+  Context: 2026-07-28 cowork summary "For Morning Discussion" item 2 and the fail-loud run notes; 2026-07-28_chat_summary.md.
+  Type: methodological / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-536, ASSUMPTION-547, ASSUMPTION-559, PRESUMPTION-541, PRESUMPTION-547, PRESUMPTION-550, PRESUMPTION-571, OPEN-135
+  Testability: testable empirically / in-house -- sign one Chrome into claude.ai, leave it running with the extension connected at scheduled times, and observe whether either direction resumes.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-568
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the two stated failure records (14:02 scrape, 18:42 delivery), the stated drop of Browser 2, and the stated bidirectional consequence. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-569:
+  Date identified: 2026-07-28
+  Statement: The 15a/15b/15c pipeline dispositioned eight items (PRESUMPTION-557..563, 565) with a batch mix of "5 INCORPORATE (PREMISE-130,131,132,133,134) - 3 MONITOR (487,488,489) - 3 REVISE (247,248,249) - 1 SYSTEMIC-RISK-FLAG (High) - 0 NOVELTY"; running totals "PREMISE -> 134 - MONITOR -> 489 - REVISE -> 249 - DISPOSITION -> 548." Decorrelation claimed with two stated signals: "(a) 15b REFUTED 15a on PRESUMPTION-561 on a checkable factual point; (b) both directions independently refuted the same 14b sub-argument on PRESUMPTION-565. The searches were not merely agreeing. Residual correlation (same model family) still applies -- MONITOR-486 stands." On the count jump: "all five name external referents outside the pipeline, per the PRESUMPTION-556 / REVISE-246 bar."
+  Context: `architecture/lit_search_returns.md`, 2026-07-28 run header, dispositions 540-548 and the running-totals footer.
+  Type: methodological / empirical
+  Related decisions: none
+  Related items: ASSUMPTION-552, ASSUMPTION-555, ASSUMPTION-558, MONITOR-486, PRESUMPTION-567, PRESUMPTION-569
+  Testability: testable empirically / in-house -- count lit_search_results/{for,against}/ files for the eight items; read DISPOSITION-540..548 and confirm the register landings and totals.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-569
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated batch mix, stated running totals, and the stated decorrelation signals and their stated residual caveat. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-570:
+  Date identified: 2026-07-28
+  Statement: For the first time, a verification pass was run by a separate instance: "VERIFICATION PASS -- 2026-07-28, independent agent (decorrelated instance, not 15a/15b/15c)... Structural checks 1-6 PASS... CITATION SPOT-CHECK (7 of the batch's load-bearing citations re-checked against primary venues): all 7 verified exact, including page ranges and the two quantitative figures... No fabricated or misattributed citation. This matters reflexively: the same batch minted PREMISE-132 ('citing is not verifying'), and the check was run BY A DIFFERENT INSTANCE than the one that wrote the citations, per PREMISE-132's decorrelation requirement -- an in-batch application of the premise, not merely an assertion of it." Six defects were found and corrected in PREMISE-133, "all drafting/rigour, not a wrong disposition," and "Recorded rather than quietly fixed, per PREMISE-006."
+  Context: `architecture/lit_search_returns.md`, VERIFICATION PASS section, 2026-07-28.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-554, ASSUMPTION-558, PREMISE-132, PREMISE-006, MONITOR-486, PRESUMPTION-559, PRESUMPTION-567, PRESUMPTION-568
+  Testability: testable empirically / in-house -- read the verification section; independently re-check two of the seven citations; confirm the six corrections are present in PREMISE-133 and in DISPOSITION-543.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-570
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated verification-pass results, the stated decorrelation rationale, and the stated defect list and its stated classification. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-571:
+  Date identified: 2026-07-28
+  Statement: Two fail-loud self-corrections were stated. (1) "FAIL-LOUD NOTE: incorporating PREMISE-133 puts the pipeline formally out of compliance with its own newest premise, because MONITOR-486 has no discharge rule as of this run. Stated, not deferred. See REVISE-247." (2) PRESUMPTION-561 was refuted: "The presumption's central technical premise is FALSE. Little's Law does not presuppose a service process or an obligatory consumer -- it needs only a system boundary, arrivals and departures -- so applying it to a register with positive arrivals and zero departures is a correct application, not a category error." Disposition REVISE-248, with direction stated: "this CONFIRMS rather than relieves the backlog concern (DISPOSITION-536 / PRESUMPTION-553 stands)." A second 14b inferential error was recorded inside MONITOR-489 (PRESUMPTION-565's non-uniform-direction sub-argument, "refuted CONVERGENTLY by both directions").
+  Context: `architecture/lit_search_returns.md`, DISPOSITION-543, DISPOSITION-544, DISPOSITION-547.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: PRESUMPTION-561, PRESUMPTION-565, PREMISE-133, REVISE-247, REVISE-248, MONITOR-486, MONITOR-489, DISPOSITION-536
+  Testability: testable empirically / in-house -- read REVISE-247/248 and MONITOR-489; verify Little & Graves 2008 on whether the law requires a service process; confirm whether MONITOR-486 acquires a discharge rule.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-571
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated non-compliance note and the two stated refutations of prior 14b inferences. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-572:
+  Date identified: 2026-07-28
+  Statement: "The Hawkins proposal lands directly on the concept C2A2 leans on hardest. PROP-2026-07-28-001... contains a claim the Hawkins wiki does not hold anywhere: the thalamus is a reference-frame transformer, not a relay -- converting egocentric sensory coordinates to object-centric ones, with cortico-thalamic feedback specifying *which* transform. Since PRS triplets are read as reference frames in this architecture (PROP-2026-04-09-SUPP-001), a proposed biological mechanism for performing reference-frame transformation is load-bearing, not incidental. It's also falsifiable: thalamic activity should track cortically-inferred object identity/pose, not sensory input alone." Second triplet: "hierarchy re-purposed to encode composition rather than abstraction... which answers the standing objection that 'every column models whole objects' makes hierarchy explanatorily idle."
+  Context: 2026-07-28 cowork summary, "For Morning Discussion" item 3; `inbox/proposals/pending/2026-07-28_hawkins_heterarchy-thalamic-transform-explainer.md`.
+  Type: empirical / architectural
+  Related decisions: none
+  Related items: PREMISE-127, PREMISE-134, PRESUMPTION-572, PROP-2026-04-09-SUPP-001
+  Testability: testable via literature -- arXiv:2507.05888 and the thalamic reference-frame-transformation claim against the thalamus-as-relay literature; the stated falsifier is an empirical prediction about thalamic activity.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-572
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated claim, its stated load-bearing status for the PRS-as-reference-frame reading, and its stated falsifier. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-573:
+  Date identified: 2026-07-28
+  Statement: "The Hoffman proposal is the one to be careful with -- and its author says so. PROP-2026-07-28-002 flags an unpublished 2025 Hoffman essay... listed on the Trace Institute publications page with no link, DOI, or PDF. The essay text was not retrievable, and the proposal marks its own triplet Confidence: Speculative and labels it 'a hypothesis about the source, not an extraction from it.' That's the right handling, and it's the honest version of what PROP-2026-07-19-003 got wrong." Stated reason it matters: "it would apparently be the single document where Hoffman runs all three lines -- amplituhedron/'spacetime is doomed,' Fitness-Beats-Truth, and trace logic -- as one convergent argument... if the three lines are genuinely independent, it's convergence-across-independent-methods... if they aren't, it exposes a shared hidden premise." Proposal put to Tom: "Worth deciding whether 'unretrievable but well-described source' gets its own disposition category, distinct from both APPROVE and DENY."
+  Context: 2026-07-28 cowork summary, "For Morning Discussion" item 4; `inbox/proposals/pending/2026-07-28_hoffman_spacetime-headset-essay.md`.
+  Type: epistemic / methodological
+  Related decisions: none (proposed, not adopted)
+  Related items: PREMISE-132, PRESUMPTION-573, WATCH-002, WATCH-003
+  Testability: testable empirically / in-house (whether the category is adopted; whether the essay is later retrievable) and via literature (handling of unretrievable sources; convergence across independent methods as an evidence form).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-573
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated non-retrievability, the stated self-assigned confidence, and the stated proposal for a third disposition category. [stated]
+    Current status: UNTESTED
+
+ASSUMPTION-574:
+  Date identified: 2026-07-28
+  Statement: A methodological generalization was stated as possibly applying past the voice guide: "The failure today was a *generalisation that had only ever seen two examples* -- it abstracted the Sociogram's conventions, met `prs_3d`, and encoded that page's globals as the shared road. Five instances in, the actual general case turned out to be 'read the rendered controls,' which is also the epistemically honest one. There's a straight line from that to the external-referent rule you've been circling (MONITOR-486, PREMISE-129): a generalisation is only as good as its worst-covered instance, and the check has to be *run against the world*, not asserted. Might be worth stating once as policy rather than rediscovering per-tab." Stated alongside: "Token budget breached. Per-task budget is 4,000 tokens; this run used roughly 45,000 in gathering... Surfacing rather than hiding it"; and the stated warrant for artifact reconstruction, "which per `fact_inventory.md`'s own rule are the authoritative record anyway. Anything that happened today and left no artifact is not in this summary." Carried-and-unresolved items were restated unchanged, including metric inflation at a 7th consecutive flag and the ~174-item monitor backlog.
+  Context: 2026-07-28 cowork summary, "For Morning Discussion" items 5 and 6, and the fail-loud run notes.
+  Type: methodological / epistemic
+  Related decisions: none (proposed, not adopted)
+  Related items: ASSUMPTION-558, ASSUMPTION-561, PREMISE-129, PREMISE-132, MONITOR-486, PRESUMPTION-566, PRESUMPTION-574, OPEN-112
+  Testability: testable empirically / in-house (whether the policy is stated once rather than rediscovered; whether the connectivity metric is split) and via literature (when an inductive generalization is warranted from n instances).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-574
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the stated cross-domain moral, the stated budget breach, the stated warrant for artifact-based reconstruction, and the restated carried items. [stated]
+    Current status: UNTESTED

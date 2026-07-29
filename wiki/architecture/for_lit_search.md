@@ -13733,3 +13733,105 @@ ITEM: PRESUMPTION-565 — [QUEUED] [SEARCHED-15a: 2026-07-28] [SEARCHED-15b: 202
 # ASSUMPTION-558 [IN-HOUSE] — whether the external-referent policy is adopted and whether a decorrelated spot-check is actually performed (paired with PRESUMPTION-559).
 # ASSUMPTION-559 [IN-HOUSE] — restore login on one Chrome, leave the extension connected at scheduled times, observe whether syncs resume.
 # ASSUMPTION-560 [IN-HOUSE] — read deferred/watch_list.md 07-27 log and WATCH-002/003 due dates; recompute the network counters (paired with PRESUMPTION-565).
+
+# ================================================================
+# 2026-07-28 intake — Agents 14a / 14b (EOD self-awareness pipeline)
+# 8 items [QUEUED] to 15a/15b · 2 REINFORCING · 14 ASSUMPTIONs routed IN-HOUSE
+# ================================================================
+
+ITEM: PRESUMPTION-566 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → INCORPORATE → PREMISE-135 (convergent narrowed form; the procedure-parity inference itself excluded as a scope guard (Norton: no schema-level warrant either way))] — Priority Medium
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Moderate-Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] "The general case was always 'read the controls'" presumes the fifth diagnosis is terminal, though it was reached by the same generalise-from-instances-seen procedure that produced the four abstractions it supersedes. The stated moral — "a generalisation is only as good as its worst-covered instance" — is applied to the superseded abstraction but not to its replacement.
+  Risk if wrong: Medium. Search targets: warrant for inductive generalization from small n; enumerative vs eliminative induction; how a covering abstraction is validated as terminal rather than merely current; the reference-class problem for "the general case".
+  In-house adjunct: enumerate the remaining page kinds the roster reader must cover and state the criterion under which it would be considered general.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-566 · Item type PRESUMPTION (unstated) · Transform: surfaced from a correction stated as terminal, arrived at by the method it supersedes · Current status UNTESTED
+
+ITEM: PRESUMPTION-567 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (HIGH) → MONITOR-490 inst. A (strong/strong conflict, both directions cite NUREG/CR-5485 for opposite conclusions; read as consecutive clauses of one method — residual must be SIZED not named; no new premise, already governed by PREMISE-111/119/120)] — Priority High
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Strong) | 15b CHALLENGED(Strong) — protocol status CONTESTED (Low confidence)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] The verification pass presumes a separate instance of the same model family satisfies PREMISE-132's decorrelation requirement, while the same file states of the same batch that "residual same-model correlation is NOT discharged — MONITOR-486 stands." Instance-level independence is treated as the operative variable and model-level correlation as a residual.
+  Risk if wrong: High. Search targets: correlated errors across instances of the same model or model family; whether self-consistency / ensemble checks detect shared error classes; independence assumptions in verification and audit design; what "decorrelated" requires to be load-bearing.
+  In-house adjunct: re-run the citation spot-check with a different model family (or by hand) on the same 7 citations and compare findings.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-567 · Item type PRESUMPTION (unstated) · Transform: surfaced from two unreconciled statements about the same batch's correlation status · Current status UNTESTED
+
+ITEM: PRESUMPTION-568 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (Medium-High) → MONITOR-491 (decisive test (re-derive the disposition from corrected grounds) is unrun)] — Priority Medium-High
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Moderate-Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Classifying all six verification defects as "drafting/rigour, not a wrong disposition" presumes defects in the stated grounds do not propagate to the conclusions. Defect (2) is an inflation of apparent convergence, and convergence is the stated ground of the disposition; defect (5) is an is/ought correction to the inference structure.
+  Risk if wrong: Medium-High. Search targets: stability of a verdict under revised premises; post-hoc rationalization in expert judgement; audit findings classified presentational vs substantive and the rate at which reclassification changes conclusions.
+  In-house adjunct: re-derive DISPOSITION-543 from the corrected grounds alone and check whether INCORPORATE still follows.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-568 · Item type PRESUMPTION (unstated) · Transform: surfaced from a defect list containing inference-level corrections uniformly classified as presentational · Current status UNTESTED
+
+ITEM: PRESUMPTION-569 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → REVISE → REVISE-250 (both directions refute the 'fivefold rise' framing the presumption SHARES with the 07-28 note (n=1 vs 5 inside Poisson variation); constructive half retained)] — Priority Medium
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Moderate-Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] The note explaining "5 INCORPORATE vs last run's 1" by the external-referent bar presumes a fivefold rise in adoptions immediately after a bar was imposed is evidence the bar works, rather than data about how it is applied — on the run in which the pipeline was itself under judgement for whether it can adopt premises about its own reliability.
+  Risk if wrong: Medium. Search targets: evaluator reactivity to being evaluated; base-rate shifts following introduction of an explicit criterion; self-serving application of admission standards; Goodhart effects on gatekeeping thresholds.
+  In-house adjunct: apply the external-referent bar retrospectively to the last 20 MONITOR dispositions and count how many would now clear it.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-569 · Item type PRESUMPTION (unstated) · Transform: surfaced from a self-noted rate anomaly explained only in the direction favourable to its own mechanism · Current status UNTESTED
+
+ITEM: PRESUMPTION-570 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (HIGH) → MONITOR-490 inst. B (no new premise — the absence watchdog is already mandated by PREMISE-100/102/109/110; propagation failure, not a literature gap)] — Priority Medium-High
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Moderate-Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Filing "no review page was generated today at all... I did not diagnose why" as a consequence of the pids defect presumes an undiagnosed silent null belongs in the same queue at the same priority as a known defect. The defect is a wrong-pids defect, not a fails-to-run defect; no causal link is established, and no existence check on scheduled outputs is proposed.
+  Risk if wrong: Medium-High. Search targets: silent-failure and missing-output detection in scheduled jobs; heartbeat / dead-man's-switch patterns; triage of faults of unknown scope vs known defects; absence-of-evidence detection in monitoring.
+  In-house adjunct: inspect the 04:38 scheduled task's run record; determine whether the failure is in the generator, the orchestrator or the scheduler; check whether other scheduled outputs are also missing today.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-570 · Item type PRESUMPTION (unstated) · Transform: surfaced from a silent null filed as a consequence of an adjacent loud fault without a stated causal link · Current status UNTESTED
+
+ITEM: PRESUMPTION-572 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (Medium-High) → MONITOR-492 (subordinate to PREMISE-134; 15a's Gentner sources are the same primaries underpinning PREMISE-127/134, so this is an application, not independent corroboration)] — Priority Medium-High
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Moderate-Strong, w/ CORRELATION DISCLOSURE) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] "Since PRS triplets are read as reference frames in this architecture... a proposed biological mechanism for performing reference-frame transformation is load-bearing" routes the inference through a shared term rather than an established structural correspondence. PREMISE-134 — minted the same day as the reflexive scope-extension of PREMISE-127 to the project's own self-descriptions — requires exactly this check, and it is not applied.
+  Risk if wrong: Medium-High. Search targets: structure-mapping conditions for transfer back into a domain that borrowed the source vocabulary; theory-ladenness of adopted terminology; when a metaphor hardens into a load-bearing identity claim; reification of borrowed technical terms.
+  In-house adjunct: name the alignable relations and the non-alignable differences between a cortical reference frame and a Problem-Research-Solution triplet before the Hawkins claim is treated as load-bearing (pairs with ASSUMPTION-572 and MONITOR-487).
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-572 · Item type PRESUMPTION (unstated) · Transform: surfaced from a load-bearing claim routed through a shared term on the day the check against that move was incorporated · Current status UNTESTED
+
+ITEM: PRESUMPTION-573 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (HIGH) → MONITOR-490 inst. C (no new premise — PREMISE-103 already states no confidence label over metadata-only material is well-founded; violation of PREMISE-103/107/124)] — Priority Medium
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] Endorsing a self-assigned "Confidence: Speculative" as "the right handling" presumes a label attached by the same process that produced the claim functions as a control. By the structure of PREMISE-132 (citing is not verifying), labelling is not verifying. Underneath: that the item's value survives its source being unreadable, when a third-party description is the only evidence the conjunction exists.
+  Risk if wrong: Medium. Search targets: calibration of self-reported confidence; whether disclosure labels change downstream use of uncertain evidence; handling of unretrievable / secondhand sources in evidence synthesis; citation of works not consulted.
+  In-house adjunct: (adoption question) — if an "unretrievable but well-described source" category is created, what evidence grade does it carry and what discharges it?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-573 · Item type PRESUMPTION (unstated) · Transform: surfaced from a self-assigned confidence label endorsed as adequate handling on the day citing-is-not-verifying was incorporated · Current status UNTESTED
+
+ITEM: PRESUMPTION-575 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 2026-07-29] [DISPOSITIONED-15c: 2026-07-29 → MONITOR (HIGH) → MONITOR-490 inst. D (general form refuted (ISO 27001 SoA: justified self-scoping is the standard's required output), local form — the roster reader could not read the page — undefeated; PREMISE-124 already names the seeded denominator)] — Priority Medium
+  15-pipeline result (2026-07-29): 15a SUPPORTED(Strong) | 15b PARTIALLY-CHALLENGED(Moderate)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: [inferred] "21 controls — 10 covered, 4 excluded, 7 deferred, 0 uncovered" presumes zero-uncovered measures coverage, when the figure is reachable by classification as well as by work. The denominator is self-set: 21 is what the roster reader found, and today's finding was that the roster reader could not read the page at all.
+  Risk if wrong: Medium. Search targets: coverage metrics that permit exclusion; self-determined denominators in completeness measures; classification change reported as progress; test-coverage gaming.
+  In-house adjunct: state the exclusion criterion for the 4 excluded controls and enumerate the page's controls independently of the roster reader.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-575 · Item type PRESUMPTION (unstated) · Transform: surfaced from a completeness figure whose enumerating component is where the day's failure was located · Current status UNTESTED
+
+# ---- REINFORCING (2026-07-28): not re-queued; decisive prior item already in the queue ----
+#   PRESUMPTION-571 (a "five-minute fix" restated unchanged across six failures presumes non-application is an availability problem, not a signal about the channel's value; Browser 2's loss ends the redundancy design) -> reinforces PRESUMPTION-541/547/550, already queued. Adds the revealed-preference reading, which is new; decisive literature (fallback decay, shared preconditions) is already queued under 550. See ASSUMPTION-568, OPEN-135.
+#   PRESUMPTION-574 (artifact reconstruction warranted by invoking fact_inventory.md's authoritative-record rule; a tie-breaking rule read as a sufficiency rule; the proposed manifest inherits the same limit) -> reinforces PRESUMPTION-482 (the auditor has no measure of its own completeness) and PRESUMPTION-533/535/549, already queued. See ASSUMPTION-561, ASSUMPTION-574.
+
+# ---- INTERNAL-EMPIRICAL (2026-07-28): routed to IN-HOUSE test, NOT the lit queue ----
+# Per ASSUMPTION-519 / PREMISE-124: decisive test is an in-house query, not a literature search.
+# ASSUMPTION-561 [IN-HOUSE] — confirm no pre-EOD 07-28 changelog/snapshot; confirm decisions.md unchanged since 07-20 and open_questions.md since 07-23 (autonomous day #23).
+# ASSUMPTION-562 [IN-HOUSE] — read voice_guide_redesign.md §X; re-run the 161 engine + 328 shell gate; diff community_explorer.html to confirm zero page-side edits.
+# ASSUMPTION-563 [IN-HOUSE] — confirm the dispatched-MouseEvent path and the verb-carrying error taxonomy in lib/c2a2-commandline.js.
+# ASSUMPTION-564 [IN-HOUSE] — confirm the three non-declarations in §X; check whether a dispatched wheel on #graph is run before a d3zoom kind is declared.
+# ASSUMPTION-565 [IN-HOUSE] — read deferred/watch_list.md 07-28 entries; re-fetch the WATCH-002 source and confirm YouTube id vshC_TxwrVo and the extended check method.
+# ASSUMPTION-566 [IN-HOUSE] — read line 304 of tools/generate_review_page.py; confirm mtime 2026-05-18; grep for `assert`; count pending (18) against the emitted pid range (2 real).
+# ASSUMPTION-567 [IN-HOUSE-adjacent] — confirm review/ tops out at 2026-07-27_review.html; the diagnosis of WHY the 04:38 run produced nothing is routed to lit as PRESUMPTION-570 for the triage question, in-house for the cause.
+# ASSUMPTION-568 [IN-HOUSE] — restore login on one Chrome, leave the extension connected at scheduled times, observe whether either direction resumes; confirm Browser 2's disconnection.
+# ASSUMPTION-569 [IN-HOUSE] — count lit_search_results/{for,against}/ files for PRESUMPTION-557..563,565; read DISPOSITION-540..548; confirm totals 134/489/249/548.
+# ASSUMPTION-570 [IN-HOUSE-adjacent] — confirm the verification section exists and the six corrections landed; whether same-model instance separation counts as decorrelation is NOT decidable in-house and is routed to lit as PRESUMPTION-567.
+# ASSUMPTION-571 [IN-HOUSE] — read REVISE-247/248 and MONITOR-489; confirm the PREMISE-133 / MONITOR-486 non-compliance is recorded and whether a discharge rule is subsequently written.
+# ASSUMPTION-572 [IN-HOUSE-adjacent] — the thalamic reference-frame-transformer claim itself is a review-pipeline matter (arXiv:2507.05888); the transfer question to PRS triplets is routed to lit as PRESUMPTION-572.
+# ASSUMPTION-573 [IN-HOUSE] — confirm the essay is unretrievable and the proposal's self-assigned Speculative label; whether a third disposition category is adopted (label adequacy routed to lit as PRESUMPTION-573).
+# ASSUMPTION-574 [IN-HOUSE] — whether the "run it against the world" generalisation is stated once as policy; whether the connectivity metric is split (7th flag); confirm the token-budget breach record.
+
+# ---- 2026-07-29 c2a2-lit-search-pipeline run (15a/15b/15c) ----
+# All 8 items of the 2026-07-28 intake searched in both directions and dispositioned.
+# Mix: 1 INCORPORATE (PREMISE-135) · 6 items MONITORed across 3 entries (MONITOR-490 cohort A-D, 491, 492) · 1 REVISE (REVISE-250)
+#      · 3 SYSTEMIC-RISK-FLAGs accepted and consolidated into REVISE-251 · 0 NOVELTY.
+# DISPOSITION-549..559. Running totals: PREMISE → 135 · MONITOR → 492 · REVISE → 251 · DISPOSITION → 559.
+# HEADLINE: a PREMISE-105 duplication sweep flipped 4 of 8 dispositions from INCORPORATE to MONITOR — 567/570/573/575 are
+#   each already governed by a premise validated BEFORE this run. Propagation failure, not literature gap. Reinforces REVISE-245.
+# BACKLOG UNCHANGED (fail-loud, second consecutive run): 26 legacy items (ASSUMPTION-492..511 / PRESUMPTION-514..532, lines
+#   ~12958-13237) remain [QUEUED] though deliberately unsearched as INTERNAL-EMPIRICAL — the 07-28 recommendation to re-tag
+#   them [MISROUTED-INTERNAL-EMPIRICAL] is still unactioned and needs Tom's authorisation for a 26-item bulk retag.
+#   ~174 [RE-TRIGGER by 15d] items remain out of this pipeline's scope (Agent 15d), zero consumption since 2026-07-08 (21 days).
