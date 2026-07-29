@@ -2242,6 +2242,21 @@ async function main() {
     wRun.target < 1 && Math.abs(wRun.target - Math.min(1, wRun.rms * wRun.gain)) < 0.05,
     JSON.stringify({ target: wRun.target, expected: Math.min(1, wRun.rms * wRun.gain) }));
 
+  // A LONG UTTERANCE IS NOT A STUCK ONE. This row is here because the first
+  // version had a 4-second cap borrowed from whenOutputQuiet, and Tom found it
+  // live inside two minutes: every answer's wave died at about five seconds
+  // with the guide still audibly talking. The harness could not see it, because
+  // nothing here had ever kept a voice going longer than the cap.
+  //
+  // No realtime session is running, so responseActive is false throughout --
+  // which is exactly the state the bug lived in, and a harder case than a real
+  // utterance, where response.created holds it open for the first seconds too.
+  await sleep(6000);
+  const wLong = await page.eval(IFRAME_DOC +
+    "return { running: window.VoiceGuide.wave.running(), target: w._waveTarget };");
+  record('W3b a voice that keeps going keeps the wave going -- no clock cuts it off',
+    wLong.running === true && wLong.target > 0, JSON.stringify(wLong));
+
   // THE END OF THE WAVE IS MEASURED TOO. `response.done` means the response is
   // complete, not that its audio has stopped playing -- so the driver does not
   // stop there; it stops when the sound does, on the same threshold the reader
