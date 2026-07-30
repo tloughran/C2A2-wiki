@@ -91,6 +91,15 @@ VETOES="$STATE/progress_vetoes"
 # a permanently dead HTTP thread on a live ingest would never be restarted, which
 # is the opposite failure and just as silent.
 MAX_VETOES=3
+# The leash above is correct for the case it was written for -- port dead, ingest
+# fine -- because a permanently broken SERVING path must eventually be restarted.
+# It is the wrong leash when the port is HEALTHY and only the store looks still.
+# There the process is answering, working, and holding an uncommitted transaction,
+# and a restart does not just cost the 4m15s boot: it discards that transaction and
+# (with pi_watch_dir set) buys a boot measured at 8h46m. Restarting is far more
+# destructive than waiting, so waiting gets a much longer leash. Still bounded --
+# a store that never commits IS eventually a fault, it is just not a 15-minute one.
+MAX_STORE_VETOES=36        # ~3h at the 5-minute cadence
 # ── Boot phase ──────────────────────────────────────────────────────────────
 # WHY (2026-07-30): pid 64213 exec'd at 03:01:17, printed "Serving on:" ~4 min
 # later, then emitted NOTHING for 8h46m before /health finally answered at
@@ -145,9 +154,28 @@ ps_time_secs(){
 # which made an early version of the veto below restart on every other check. The
 # event COUNT moves on any ingested event, so the pair is far harder to fool than
 # either alone.
-frontier_now(){ sqlite3 "file:$OS_DB?mode=ro" \
-  "SELECT COALESCE(MAX(last_event),'')||'|'||(SELECT COUNT(*) FROM events) FROM sessions;" \
-  2>/dev/null | tr -d ' '; }
+# Three signals now, not two. The store is in WAL mode, and the backend writes in
+# LONG transactions: observed 2026-07-30 12:07-12:36 answering /health, burning
+# ~2.8 cores and broadcasting events continuously, while the committed row count
+# sat frozen at 768692 and the -wal file was being written the whole time. Both a
+# read-only and a read-write connection agreed on the frozen count, so it is not a
+# reader artifact -- nothing had COMMITTED yet. This is almost certainly the same
+# shape as the 8h46m boot, where the frontier sat at 04:27:19Z for nine hours and
+# then jumped all at once when the transaction landed.
+#
+# A committed-rows-only witness is therefore blind to exactly the work that takes
+# longest, and calls the backend stalled at the moment it is busiest. A -wal file
+# whose size or mtime is moving is the writer saying "I am mid-transaction".
+WAL="$OS_DB-wal"
+frontier_now(){
+  local db wal
+  db=$(sqlite3 "file:$OS_DB?mode=ro" \
+    "SELECT COALESCE(MAX(last_event),'')||'|'||(SELECT COUNT(*) FROM events) FROM sessions;" \
+    2>/dev/null | tr -d ' ')
+  wal=$(stat -f '%z:%m' "$WAL" 2>/dev/null || echo "0:0")
+  [ -z "$db" ] && return 0     # cannot read the store: emit nothing, as before
+  echo "$db|wal=$wal"
+}
 lag_ok() {
   LAG_LINE=$(python3 "$LAG_SCRIPT" --max-lag "$MAX_LAG" --state "$LAG_STATE" 2>&1)
   case $? in
@@ -161,10 +189,12 @@ lag_ok() {
 # Order matters: a backend that is not answering cannot be judged on lag, and the
 # ping is the cheaper question. Only one reason is reported, the first that fires.
 REASON=""
+SERVING=0        # did the port answer this run? decides the veto leash below
 if ! ping_ok; then
   REASON="PING FAILED — no 200 from $HEALTH"
-elif ! lag_ok; then
-  REASON="INGEST STALLED — $LAG_LINE"
+else
+  SERVING=1
+  lag_ok || REASON="INGEST STALLED — $LAG_LINE"
 fi
 
 if [ -z "$REASON" ]; then
@@ -306,15 +336,23 @@ FRONT_PREV=""
 [ -n "$FRONT_NOW" ] && echo "$FRONT_NOW" > "$FRONTIER_STATE"
 v=$(cat "$VETOES" 2>/dev/null || echo 0)
 case "$v" in ''|*[!0-9]*) v=0 ;; esac
+# A healthy port makes waiting cheap and restarting expensive, so it buys the long
+# leash. A dead port keeps the original short one.
+if [ "$SERVING" = "1" ]; then LEASH=$MAX_STORE_VETOES; else LEASH=$MAX_VETOES; fi
 if [ -n "$FRONT_NOW" ] && [ -n "$FRONT_PREV" ] && [ "$FRONT_NOW" != "$FRONT_PREV" ]; then
   v=$((v + 1))
   echo "$v" > "$VETOES"
-  if [ "$v" -le "$MAX_VETOES" ]; then
-    log "NOT RESTARTING ($REASON) — ingest IS progressing: $FRONT_PREV -> $FRONT_NOW (frontier|events). A restart costs a 4m15s boot and would discard it. Veto $v/$MAX_VETOES."
+  if [ "$v" -le "$LEASH" ]; then
+    log "NOT RESTARTING ($REASON) — the store IS moving: $FRONT_PREV -> $FRONT_NOW (frontier|events|wal). A restart discards any uncommitted transaction and buys a boot measured at up to 8h46m. Veto $v/$LEASH."
     exit 0
   fi
-  log "restarting DESPITE progress: $v consecutive vetoes exceeds MAX_VETOES=$MAX_VETOES. Ingest advances ($FRONT_PREV -> $FRONT_NOW) but HTTP has stayed unanswered across ~$((v * 5)) minutes, so the serving path is separately broken."
-  notify "OpenStory: ingest fine, HTTP dead ${v} checks running. Restarting."
+  if [ "$SERVING" = "1" ]; then
+    log "restarting DESPITE progress: $v consecutive vetoes exceeds MAX_STORE_VETOES=$MAX_STORE_VETOES (~$((v * 5)) min). The port answers and the store keeps moving ($FRONT_PREV -> $FRONT_NOW) but the ingest frontier has not caught up in that time, so this is no longer a long transaction."
+    notify "OpenStory: store moving but frontier stuck ${v} checks. Restarting."
+  else
+    log "restarting DESPITE progress: $v consecutive vetoes exceeds MAX_VETOES=$MAX_VETOES. Ingest advances ($FRONT_PREV -> $FRONT_NOW) but HTTP has stayed unanswered across ~$((v * 5)) minutes, so the serving path is separately broken."
+    notify "OpenStory: ingest fine, HTTP dead ${v} checks running. Restarting."
+  fi
 else
   # Deliberately NOT clearing the veto counter here. It counts how long this
   # episode has been "unanswered but alive", and a single no-progress interval is

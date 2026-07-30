@@ -110,6 +110,36 @@ ok "$(p '1-02:03:04.99')" "93784" "days AND hundredths together"
 ok "$(p 'etimes: keyword not found')" "999999" "garbage -> 999999, not a small number"
 
 echo
+echo "CASE 6 — WAL witness: an uncommitted transaction is progress"
+# frontier_now must report a CHANGE when only the -wal file moves, because the
+# 2026-07-30 backend held a long transaction with the committed count frozen.
+fw(){ bash -c 'OS_DB="'"$1"'"; '"$(sed -n '/^WAL=/,/^}/p' "$W")"'; frontier_now'; }
+DB="$T/fake.db"
+# A REAL store, so the db half resolves and the -wal half is the only variable.
+# (An empty file has no `sessions` table, the read returns empty, and
+# frontier_now then correctly emits nothing -- which is the "cannot read the
+# store" path, not the case under test here.)
+sqlite3 "$DB" "CREATE TABLE sessions(last_event TEXT); CREATE TABLE events(id INTEGER);
+               INSERT INTO sessions VALUES('2026-07-30T16:07:52.076Z');" >/dev/null 2>&1
+printf 'aaaa' > "$DB-wal"
+A=$(fw "$DB")
+printf 'aaaabbbb' > "$DB-wal"          # wal grew
+B=$(fw "$DB")
+ok "$([ -n "$A" ] && [ "$A" != "$B" ] && echo changed || echo same)" "changed" \
+   "growing -wal reads as progress even with the store frozen"
+ok "$(fw "$DB" | grep -c 'wal=')" "1" "witness carries a wal= component"
+rm -f "$DB-wal"
+ok "$(fw "$DB" | grep -c 'wal=0:0')" "1" "absent -wal degrades to 0:0, not to empty"
+
+echo
+echo "CASE 7 — the leash depends on WHICH failure it is"
+ok "$(grep -c 'MAX_STORE_VETOES=36' "$W")" "1" "healthy-port leash is ~3h, not 15 min"
+ok "$(grep -c 'if \[ "\$SERVING" = "1" \]; then LEASH=\$MAX_STORE_VETOES; else LEASH=\$MAX_VETOES; fi' "$W")" "1" \
+   "leash selected by whether the port answered"
+# The long leash must still terminate: a store that never catches up IS a fault.
+ok "$(grep -c 'no longer a long transaction' "$W")" "1" "long leash still ends in a restart"
+
+echo
 echo "=== $PASS passed, $FAIL failed ==="
 rm -rf "$T"
 [ "$FAIL" -eq 0 ]
