@@ -56,7 +56,20 @@ mkdir -p "$STATE"
 
 log()    { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 notify() { osascript -e "display notification \"$1\" with title \"OpenStory watchdog\"" 2>/dev/null || true; }
-ping_ok(){ [ "$(curl -s -o /dev/null -m 5 -w '%{http_code}' "$HEALTH" 2>/dev/null)" = "200" ]; }
+# One ping is not evidence. A single 5s timeout buys a 4m15s cold boot (measured
+# 2026-07-29), so the cheap question gets asked three times over ~20s before it is
+# allowed to cost that. Observed 2026-07-29/30: four restarts between 23:03 and
+# 00:05 each followed ONE failed ping on a backend that was serving in ~2ms
+# milliseconds later and ingesting the whole time.
+ping_once(){ [ "$(curl -s -o /dev/null -m 5 -w '%{http_code}' "$HEALTH" 2>/dev/null)" = "200" ]; }
+ping_ok(){
+  local i
+  for i in 1 2 3; do
+    ping_once && return 0
+    [ "$i" -lt 3 ] && sleep 4
+  done
+  return 1
+}
 
 # Ingest progress. Exit 2 from the assertion means "cannot determine" — treated as
 # NOT-stalled on purpose: a missing DB or an empty watch root is a different fault
@@ -66,6 +79,27 @@ LAG_LINE=""
 # Own baseline file, so an operator running openstory_ingest_lag.py by hand cannot
 # reset the window this restart decision depends on. See the --state comment there.
 LAG_STATE="$STATE/ingest_total_bytes.watchdog"
+# Frontier progress across runs, for the veto below. Read straight from the store
+# rather than through the lag script: the question here is not "is the frontier
+# close to wall clock" (that is lag_ok's question) but the strictly weaker "did it
+# move since last run", which is true even when the backend is minutes behind and
+# catching up -- exactly the state a restart destroys.
+OS_DB="$HOME/Documents/Non-Claude Projects/OpenStory/data/open-story.db"
+FRONTIER_STATE="$STATE/last_frontier"
+VETOES="$STATE/progress_vetoes"
+# After this many consecutive vetoes (~5 min apart) restart anyway. Without a bound
+# a permanently dead HTTP thread on a live ingest would never be restarted, which
+# is the opposite failure and just as silent.
+MAX_VETOES=3
+# Two signals, not one. MAX(last_event) only moves when an event NEWER than every
+# event already stored lands, so it can sit still for a minute at a time while the
+# backend is ingesting perfectly well -- observed doing exactly that on 2026-07-30,
+# which made an early version of the veto below restart on every other check. The
+# event COUNT moves on any ingested event, so the pair is far harder to fool than
+# either alone.
+frontier_now(){ sqlite3 "file:$OS_DB?mode=ro" \
+  "SELECT COALESCE(MAX(last_event),'')||'|'||(SELECT COUNT(*) FROM events) FROM sessions;" \
+  2>/dev/null | tr -d ' '; }
 lag_ok() {
   LAG_LINE=$(python3 "$LAG_SCRIPT" --max-lag "$MAX_LAG" --state "$LAG_STATE" 2>&1)
   case $? in
@@ -91,6 +125,11 @@ if [ -z "$REASON" ]; then
     notify "OpenStory backend is healthy again."
   fi
   echo 0 > "$FAILS"
+  echo 0 > "$VETOES"
+  # Keep the frontier baseline current while healthy, so the veto's first look
+  # after a failure compares against ~5 minutes ago rather than against whenever
+  # the last failure happened to be.
+  F=$(frontier_now); [ -n "$F" ] && echo "$F" > "$FRONTIER_STATE"
   exit 0
 fi
 
@@ -130,7 +169,27 @@ AGE=999999
 # executable name exactly, so only the real process can satisfy it.
 PID=$(pgrep -x open-story | head -1)
 if [ -n "$PID" ]; then
-  A=$(ps -p "$PID" -o etimes= 2>/dev/null | tr -d ' ')
+  # `etime`, NOT `etimes`. BSD/macOS ps has no `etimes` keyword -- it fails with
+  # "ps: etimes: keyword not found" and prints the keyword list to stderr, so the
+  # numeric guard below saw non-numeric text and fell through to AGE=999999. That
+  # meant the PROCESS half of this gate never once worked on this machine: only the
+  # KICKSTAMP half below did, which is why the gate holds after a restart this
+  # script issued and not after one launchd KeepAlive or an operator issued.
+  # Verified 2026-07-30 by running both forms against the live pid.
+  # etime is [[DD-]HH:]MM:SS, so parse it rather than assuming a shape.
+  A=$(ps -p "$PID" -o etime= 2>/dev/null | tr -d ' ')
+  A=$(awk -v t="$A" 'BEGIN{
+        n=split(t, p, /[-:]/); s=0;
+        if (n==0) { print 999999; exit }
+        # seconds, minutes, hours, days from the right
+        mult[1]=1; mult[2]=60; mult[3]=3600; mult[4]=86400;
+        for (i=0; i<n; i++) {
+          v=p[n-i]+0;
+          if (p[n-i] !~ /^[0-9]+$/) { print 999999; exit }
+          s += v*mult[i+1];
+        }
+        print s
+      }')
   case "$A" in ''|*[!0-9]*) A=999999 ;; esac
   [ "$A" -lt "$AGE" ] && AGE=$A
 fi
@@ -145,6 +204,45 @@ fi
 if [ "$AGE" -lt "$STARTUP_GRACE" ]; then
   log "backend started ${AGE}s ago (< ${STARTUP_GRACE}s grace) — still booting/backfilling, not restarting"
   exit 0
+fi
+
+# ── Progress veto: never restart a backend that is demonstrably ingesting ────
+# WHY (2026-07-30): between 23:03 and 00:05 this script restarted the backend four
+# times. Each restart followed a single failed ping on a process that was answering
+# /health in ~2ms moments later and was ingesting throughout -- measured mid-cycle
+# at ~11x realtime, closing a 62-minute backlog. Every restart threw away a boot
+# that costs 4m15s (reconcile ~165s + reproject + 72h backfill), so the frontier
+# could never actually catch up. The watchdog was the outage.
+#
+# The header already says liveness is not progress. The converse is the missing
+# half: an unanswered HTTP port is not death either, and progress is the stronger
+# signal of the two. When they disagree, believe progress and say so.
+#
+# Bounded, because a permanently hung HTTP thread over a healthy ingest must still
+# be restarted eventually -- it just must not be restarted on the first flap.
+FRONT_NOW=$(frontier_now)
+FRONT_PREV=""
+[ -f "$FRONTIER_STATE" ] && FRONT_PREV=$(cat "$FRONTIER_STATE" 2>/dev/null)
+[ -n "$FRONT_NOW" ] && echo "$FRONT_NOW" > "$FRONTIER_STATE"
+v=$(cat "$VETOES" 2>/dev/null || echo 0)
+case "$v" in ''|*[!0-9]*) v=0 ;; esac
+if [ -n "$FRONT_NOW" ] && [ -n "$FRONT_PREV" ] && [ "$FRONT_NOW" != "$FRONT_PREV" ]; then
+  v=$((v + 1))
+  echo "$v" > "$VETOES"
+  if [ "$v" -le "$MAX_VETOES" ]; then
+    log "NOT RESTARTING ($REASON) — ingest IS progressing: $FRONT_PREV -> $FRONT_NOW (frontier|events). A restart costs a 4m15s boot and would discard it. Veto $v/$MAX_VETOES."
+    exit 0
+  fi
+  log "restarting DESPITE progress: $v consecutive vetoes exceeds MAX_VETOES=$MAX_VETOES. Ingest advances ($FRONT_PREV -> $FRONT_NOW) but HTTP has stayed unanswered across ~$((v * 5)) minutes, so the serving path is separately broken."
+  notify "OpenStory: ingest fine, HTTP dead ${v} checks running. Restarting."
+else
+  # Deliberately NOT clearing the veto counter here. It counts how long this
+  # episode has been "unanswered but alive", and a single no-progress interval is
+  # not evidence the episode ended -- ingest is bursty. Clearing it here let an
+  # alternating progress / no-progress sequence restart on every other check while
+  # never reaching MAX_VETOES, which is the exact bug this line used to have.
+  # The counter is cleared in the healthy branch above, where it is earned.
+  log "no ingest progress since last check ($FRONT_PREV -> $FRONT_NOW, frontier|events) — a restart is justified"
 fi
 
 # ── Bounded restart, so a hard fault cannot become a restart storm ───────────
