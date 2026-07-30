@@ -23,6 +23,16 @@ export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
 ulimit -n 8192 || { echo "[backend] FATAL: could not raise RLIMIT_NOFILE" >&2; exit 1; }
 echo "[backend] fd limit: $(ulimit -n)"
 
+# 0b) Capture WHY the process exits. 2026-07-29: after the fd ceiling was raised
+#     the backend began exiting on its own every few minutes, with launchd
+#     KeepAlive respawning it -- at only ~318 fds, with no crash report in
+#     ~/Library/Logs/DiagnosticReports, no OOM (RSS ~537MB), and no graceful
+#     "Shutting down" line before the death. Diagnosing that from logs alone
+#     failed twice, so make the process report itself instead of guessing again.
+#     Pure instrumentation: affects output only, never behaviour.
+export RUST_BACKTRACE=1
+echo "[backend] RUST_BACKTRACE=1 (diagnosing unexplained self-exits)"
+
 OS_ROOT="$HOME/Documents/Non-Claude Projects/OpenStory"
 cd "$OS_ROOT"
 
