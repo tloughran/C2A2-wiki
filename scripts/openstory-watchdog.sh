@@ -154,28 +154,38 @@ ps_time_secs(){
 # which made an early version of the veto below restart on every other check. The
 # event COUNT moves on any ingested event, so the pair is far harder to fool than
 # either alone.
-# Three signals now, not two. The store is in WAL mode, and the backend writes in
-# LONG transactions: observed 2026-07-30 12:07-12:36 answering /health, burning
-# ~2.8 cores and broadcasting events continuously, while the committed row count
-# sat frozen at 768692 and the -wal file was being written the whole time. Both a
-# read-only and a read-write connection agreed on the frozen count, so it is not a
-# reader artifact -- nothing had COMMITTED yet. This is almost certainly the same
-# shape as the 8h46m boot, where the frontier sat at 04:27:19Z for nine hours and
-# then jumped all at once when the transaction landed.
+# The witness is the COMMITTED pair, and deliberately nothing else.
 #
-# A committed-rows-only witness is therefore blind to exactly the work that takes
-# longest, and calls the backend stalled at the moment it is busiest. A -wal file
-# whose size or mtime is moving is the writer saying "I am mid-transaction".
-WAL="$OS_DB-wal"
-frontier_now(){
-  local db wal
-  db=$(sqlite3 "file:$OS_DB?mode=ro" \
-    "SELECT COALESCE(MAX(last_event),'')||'|'||(SELECT COUNT(*) FROM events) FROM sessions;" \
-    2>/dev/null | tr -d ' ')
-  wal=$(stat -f '%z:%m' "$WAL" 2>/dev/null || echo "0:0")
-  [ -z "$db" ] && return 0     # cannot read the store: emit nothing, as before
-  echo "$db|wal=$wal"
-}
+# An earlier version of this function (2026-07-30 ~12:50) also mixed in the -wal
+# file's size and mtime, on the theory that the frozen frontier was one long
+# uncommitted transaction and a moving wal meant "mid-transaction progress".
+# BOTH HALVES OF THAT THEORY WERE WRONG, and the same day proved it:
+#
+#   - The freeze was not a long transaction. It was lock contention: a read
+#     consumer (admin_broadcaster) full-scanned every session on every broadcast
+#     and held the store's single shared connection. Fixed upstream in the
+#     OpenStory repo; boot went 8h46m -> 5m55s.
+#   - A moving -wal does NOT imply ingest progress. Measured at 13:13, eleven
+#     minutes into a boot that had not yet committed its first event: events
+#     pinned at 768692 and frontier pinned at 16:07:52Z (the backend's own
+#     /api/sessions agreeing), while the db file still grew 53 MB and the wal
+#     mtime still advanced -- because the backend was writing PATTERNS (588799
+#     rows) and FTS for events it already had. A wal-mtime witness would have
+#     called that "the store is moving". It would have been reporting pattern
+#     churn, not ingest, and it cannot tell the two apart. (Ingest did start at
+#     t+689s and cleared an hour of backlog in ~90s, so that particular window
+#     was a slow start rather than a fault -- but the witness would have said
+#     "progressing" either way, which is exactly why it is worthless here.)
+#
+# Also note a constant wal SIZE is not evidence of a stall either: SQLite resets
+# a wal on checkpoint but leaves the file at its high-water mark, so a steady size
+# with a moving mtime is ordinary healthy operation. There is no cheap signal in
+# that file that means "ingest advanced". The committed pair is the only honest
+# one, and now that a boot costs ~6 minutes rather than nine hours, being wrong in
+# the restart direction is cheap again.
+frontier_now(){ sqlite3 "file:$OS_DB?mode=ro" \
+  "SELECT COALESCE(MAX(last_event),'')||'|'||(SELECT COUNT(*) FROM events) FROM sessions;" \
+  2>/dev/null | tr -d ' '; }
 lag_ok() {
   LAG_LINE=$(python3 "$LAG_SCRIPT" --max-lag "$MAX_LAG" --state "$LAG_STATE" 2>&1)
   case $? in

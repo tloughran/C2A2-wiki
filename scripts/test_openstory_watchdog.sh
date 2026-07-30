@@ -110,26 +110,25 @@ ok "$(p '1-02:03:04.99')" "93784" "days AND hundredths together"
 ok "$(p 'etimes: keyword not found')" "999999" "garbage -> 999999, not a small number"
 
 echo
-echo "CASE 6 — WAL witness: an uncommitted transaction is progress"
-# frontier_now must report a CHANGE when only the -wal file moves, because the
-# 2026-07-30 backend held a long transaction with the committed count frozen.
-fw(){ bash -c 'OS_DB="'"$1"'"; '"$(sed -n '/^WAL=/,/^}/p' "$W")"'; frontier_now'; }
+echo "CASE 6 — the witness must NOT credit -wal activity as ingest progress"
+# Retired the wal component 2026-07-30: at 13:13 the db grew 53 MB and the wal
+# mtime advanced while committed events stayed pinned at 768692, because the
+# backend was writing patterns/FTS. A wal witness reports that as "progressing"
+# and cannot distinguish it from ingest.
+fw(){ bash -c 'OS_DB="'"$1"'"; '"$(sed -n '/^frontier_now()/,/^  2>\/dev\/null | tr -d .*$/p' "$W")"'; frontier_now'; }
 DB="$T/fake.db"
-# A REAL store, so the db half resolves and the -wal half is the only variable.
-# (An empty file has no `sessions` table, the read returns empty, and
-# frontier_now then correctly emits nothing -- which is the "cannot read the
-# store" path, not the case under test here.)
 sqlite3 "$DB" "CREATE TABLE sessions(last_event TEXT); CREATE TABLE events(id INTEGER);
                INSERT INTO sessions VALUES('2026-07-30T16:07:52.076Z');" >/dev/null 2>&1
 printf 'aaaa' > "$DB-wal"
 A=$(fw "$DB")
-printf 'aaaabbbb' > "$DB-wal"          # wal grew
+printf 'aaaabbbbcccc' > "$DB-wal"      # wal churns; NOTHING committed
 B=$(fw "$DB")
-ok "$([ -n "$A" ] && [ "$A" != "$B" ] && echo changed || echo same)" "changed" \
-   "growing -wal reads as progress even with the store frozen"
-ok "$(fw "$DB" | grep -c 'wal=')" "1" "witness carries a wal= component"
-rm -f "$DB-wal"
-ok "$(fw "$DB" | grep -c 'wal=0:0')" "1" "absent -wal degrades to 0:0, not to empty"
+ok "$([ -n "$A" ] && [ "$A" = "$B" ] && echo same || echo changed)" "same" \
+   "wal churn with no commit must NOT read as progress"
+ok "$(fw "$DB" | grep -c 'wal=')" "0" "witness carries no wal component"
+sqlite3 "$DB" "INSERT INTO events VALUES(1);" >/dev/null 2>&1
+ok "$([ "$(fw "$DB")" != "$A" ] && echo changed || echo same)" "changed" \
+   "a real committed row DOES read as progress"
 
 echo
 echo "CASE 7 — the leash depends on WHICH failure it is"
