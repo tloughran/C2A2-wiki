@@ -18,8 +18,22 @@ export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
 #    left the HTTP thread answering /health 200 — a 53h silent ingest stall that the
 #    liveness-only watchdog could not see. 8192 is well under kern.maxfilesperproc
 #    (10240). Set HERE, not in the plist, so manual runs and `launchctl kickstart`
-#    inherit it too. This raises the ceiling; bounding the watch tree is the real
-#    fix and belongs in openstory-bridge.sh.
+#    inherit it too.
+#
+#    2026-07-30: the real fix SHIPPED and is deployed — kqueue_watcher.rs now
+#    budgets directories the way it always budgeted files (DEFAULT_DIR_BUDGET=1024,
+#    LRU eviction, watch roots pinned, truncation announced on startup). It landed
+#    upstream-side as 1e2b5b5 and is live in the running binary. Verified on this
+#    machine the same day, with pi_watch_dir restored to the 29k-dir Cowork store:
+#
+#      Watching .../local-agent-mode-sessions via kqueue (1152 fds: 128 files, 1024 dirs)
+#        note: 29458 dirs in tree, watching the 1024 most recently modified
+#
+#    Process total went 8196/8192 (saturated, accept() failing with EMFILE) to 1473.
+#    So this ulimit is no longer load-bearing against saturation — it is headroom
+#    for several watchers plus the DB, NATS and HTTP sockets. Keep it: the budget
+#    sizes itself assuming ~8192, and 256 (launchd's default) would not fit one
+#    watcher's 1152.
 ulimit -n 8192 || { echo "[backend] FATAL: could not raise RLIMIT_NOFILE" >&2; exit 1; }
 echo "[backend] fd limit: $(ulimit -n)"
 
