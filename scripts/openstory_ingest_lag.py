@@ -79,30 +79,69 @@ def frontier_epoch(db):
 
 
 def newest_source(watch_root):
-    """mtime of the most recently written transcript under watch_root.
+    """mtime of the most recently written transcript, plus total bytes and count.
 
     stat() (not lstat) on purpose: the watch root is a tree of symlinks created
     by openstory-bridge.sh, and what matters is when the real transcript was
     appended, not when the link was made. Broken links are skipped rather than
     fatal -- a dangling link is the bridge's problem, not an ingest stall.
+
+    Total bytes is returned because mtime alone is not evidence of new content --
+    see is_idle() below.
     """
     if not os.path.isdir(watch_root):
         die("watch root not found: %s" % watch_root)
-    newest, newest_path, n = 0.0, None, 0
+    newest, newest_path, n, total = 0.0, None, 0, 0
     for root, _dirs, files in os.walk(watch_root):
         for f in files:
             if not f.endswith(".jsonl"):
                 continue
             try:
-                m = os.stat(os.path.join(root, f)).st_mtime
+                st = os.stat(os.path.join(root, f))
             except OSError:
                 continue
             n += 1
-            if m > newest:
-                newest, newest_path = m, os.path.join(root, f)
+            total += st.st_size
+            if st.st_mtime > newest:
+                newest, newest_path = st.st_mtime, os.path.join(root, f)
     if not n:
         die("no .jsonl transcripts under %s -- bridge not running?" % watch_root)
-    return newest, newest_path, n
+    return newest, newest_path, n, total
+
+
+def is_idle(total_bytes, state_path):
+    """True when no transcript has GROWN since the previous call.
+
+    Why this exists (2026-07-29, found by the guard firing on itself): a
+    transcript's mtime can advance without the file gaining a single byte --
+    observed directly, size 2,725,161 and 1072 lines identical across 100s while
+    mtime moved to 22:58:36. Lag is computed from mtime, so an idle-but-touched
+    tree inflates lag and reports STALE while ingest is demonstrably fine and
+    catching up. That is the same mistake as trusting git mtimes, made here.
+
+    Bytes are the honest signal: if nothing grew, there was nothing to ingest, so
+    a still frontier is correct rather than a stall. The moment writing resumes,
+    bytes grow and a genuine stall is reported immediately.
+
+    Fails SAFE in the direction that matters: it can only suppress a STALE
+    verdict when the inputs are provably idle, so it never causes a restart -- and
+    an ingest that is "behind" with no input is indistinguishable from, and
+    operationally identical to, one that is caught up.
+    """
+    prev = None
+    try:
+        with open(state_path, encoding="utf-8") as fh:
+            prev = int(fh.read().strip())
+    except (OSError, ValueError):
+        prev = None
+    try:
+        os.makedirs(os.path.dirname(state_path), exist_ok=True)
+        with open(state_path, "w", encoding="utf-8") as fh:
+            fh.write("%d\n" % total_bytes)
+    except OSError:
+        pass  # unwritable state is not a reason to misreport ingest
+    # First run has no baseline: assume NOT idle so a real stall is never masked.
+    return prev is not None and total_bytes <= prev
 
 
 def iso(epoch):
@@ -118,19 +157,30 @@ def main():
                     help="seconds of lag tolerated before exit 1")
     ap.add_argument("--quiet", action="store_true",
                     help="print nothing on success (exit code only)")
+    ap.add_argument("--state", default=os.path.expanduser(
+                        "~/Library/Application Support/openstory-watchdog/"
+                        "ingest_total_bytes"),
+                    help="where the previous total-bytes baseline is kept")
     a = ap.parse_args()
 
     front, front_iso, sessions = frontier_epoch(a.db)
-    src, src_path, files = newest_source(a.watch_root)
+    src, src_path, files, total = newest_source(a.watch_root)
 
     # Negative lag means the frontier is ahead of the newest file mtime, which
     # happens routinely (the DB records the event; the file's mtime may lag a
     # buffered flush). Not a fault -- clamp.
     lag = max(0, int(src - front))
-    stale = lag > a.max_lag
+    idle = is_idle(total, a.state)
+    stale = lag > a.max_lag and not idle
 
-    line = ("lag=%ds frontier=%s newest_source=%s sessions=%d files=%d"
-            % (lag, front_iso, iso(src), sessions, files))
+    line = ("lag=%ds frontier=%s newest_source=%s sessions=%d files=%d bytes=%d"
+            % (lag, front_iso, iso(src), sessions, files, total))
+    if lag > a.max_lag and idle:
+        # Worth saying out loud rather than silently passing: this is the shape of
+        # a stall, minus the one thing that makes it real.
+        sys.stderr.write("lag over threshold (%ds > %ds) but no transcript has "
+                         "grown since the last check -- inputs are idle, so the "
+                         "frontier is correct, not stalled.\n" % (lag, a.max_lag))
     if stale:
         sys.stderr.write("STALE: %s (threshold %ds)\n  behind: %s\n"
                          % (line, a.max_lag, src_path))
