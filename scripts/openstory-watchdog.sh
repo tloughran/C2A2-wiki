@@ -91,6 +91,54 @@ VETOES="$STATE/progress_vetoes"
 # a permanently dead HTTP thread on a live ingest would never be restarted, which
 # is the opposite failure and just as silent.
 MAX_VETOES=3
+# ── Boot phase ──────────────────────────────────────────────────────────────
+# WHY (2026-07-30): pid 64213 exec'd at 03:01:17, printed "Serving on:" ~4 min
+# later, then emitted NOTHING for 8h46m before /health finally answered at
+# 11:54. STARTUP_GRACE=900 is off by a factor of 35 against a 31800s boot, so
+# every guard below treated a legitimate boot as a dead backend: 3 restarts,
+# then 105 "giving up ... Manual fix needed" notifications while the process was
+# working the whole time. The trigger was ours -- pi_watch_dir was restored at
+# 00:10 to a 29458-dir / 40186-file tree, and the startup scan over it is not
+# bounded the way the kqueue dir budget bounds watches.
+#
+# The fix is NOT a bigger constant; 900 -> 36000 would just be a new number to
+# be wrong about. This file already holds the right principle -- believe
+# progress over a silent port -- and applies it only to ingest. A booting
+# process has no frontier to advance, so the same principle needs a different
+# witness: CPU time. A process that has never answered since exec is BOOTING,
+# and it keeps its grace for as long as it is demonstrably still working.
+# Bounded the same way the ingest veto is: CPU flat across MAX_BOOT_STALLS runs
+# means wedged, not booting, and that still restarts.
+HEALTHY_PID="$STATE/healthy_pid"   # pid last seen answering /health
+BOOT_CPU="$STATE/boot_cpu"         # "pid|cpu_seconds" from the previous run
+BOOT_STALLS="$STATE/boot_stalls"   # consecutive runs with CPU flat while booting
+MAX_BOOT_STALLS=3
+# ps reports etime as [[DD-]HH:]MM:SS but time as [[DD-]HH:]MM:SS.FF -- the CPU
+# form carries HUNDREDTHS and the elapsed form does not. Measured on the live
+# backend 2026-07-30: etime "09:22:31", time " 82:16.43". An early version of
+# this parser rejected the fraction and returned the 999999 sentinel, which is
+# CONSTANT, which reads as flat CPU, which would have restarted a healthy boot
+# after three checks -- the precise failure the boot gate exists to prevent.
+# The fraction is dropped rather than parsed: sub-second CPU is noise here, and
+# the only question asked of this number is "did it go up".
+# Parsed, never assumed: the 2026-07-30 etimes/etime bug got here by trusting a
+# shape, and this is now read twice, so it is read in exactly one place.
+ps_time_secs(){
+  awk -v t="$1" 'BEGIN{
+        gsub(/ /, "", t);
+        sub(/\.[0-9]+$/, "", t);
+        n=split(t, p, /[-:]/); s=0;
+        if (n==0) { print 999999; exit }
+        # seconds, minutes, hours, days from the right
+        mult[1]=1; mult[2]=60; mult[3]=3600; mult[4]=86400;
+        for (i=0; i<n; i++) {
+          v=p[n-i]+0;
+          if (p[n-i] !~ /^[0-9]+$/) { print 999999; exit }
+          s += v*mult[i+1];
+        }
+        print s
+      }'
+}
 # Two signals, not one. MAX(last_event) only moves when an event NEWER than every
 # event already stored lands, so it can sit still for a minute at a time while the
 # backend is ingesting perfectly well -- observed doing exactly that on 2026-07-30,
@@ -126,6 +174,11 @@ if [ -z "$REASON" ]; then
   fi
   echo 0 > "$FAILS"
   echo 0 > "$VETOES"
+  echo 0 > "$BOOT_STALLS"
+  # THIS is what makes "has it ever answered since exec" answerable. Recorded
+  # only here, where a 200 was actually observed, so the boot gate below can
+  # never mistake a process that has served for one that has not.
+  P=$(pgrep -x open-story | head -1); [ -n "$P" ] && echo "$P" > "$HEALTHY_PID"
   # Keep the frontier baseline current while healthy, so the veto's first look
   # after a failure compares against ~5 minutes ago rather than against whenever
   # the last failure happened to be.
@@ -177,19 +230,7 @@ if [ -n "$PID" ]; then
   # script issued and not after one launchd KeepAlive or an operator issued.
   # Verified 2026-07-30 by running both forms against the live pid.
   # etime is [[DD-]HH:]MM:SS, so parse it rather than assuming a shape.
-  A=$(ps -p "$PID" -o etime= 2>/dev/null | tr -d ' ')
-  A=$(awk -v t="$A" 'BEGIN{
-        n=split(t, p, /[-:]/); s=0;
-        if (n==0) { print 999999; exit }
-        # seconds, minutes, hours, days from the right
-        mult[1]=1; mult[2]=60; mult[3]=3600; mult[4]=86400;
-        for (i=0; i<n; i++) {
-          v=p[n-i]+0;
-          if (p[n-i] !~ /^[0-9]+$/) { print 999999; exit }
-          s += v*mult[i+1];
-        }
-        print s
-      }')
+  A=$(ps_time_secs "$(ps -p "$PID" -o etime= 2>/dev/null)")
   case "$A" in ''|*[!0-9]*) A=999999 ;; esac
   [ "$A" -lt "$AGE" ] && AGE=$A
 fi
@@ -204,6 +245,45 @@ fi
 if [ "$AGE" -lt "$STARTUP_GRACE" ]; then
   log "backend started ${AGE}s ago (< ${STARTUP_GRACE}s grace) — still booting/backfilling, not restarting"
   exit 0
+fi
+
+# ── Boot gate: a process that has never answered is booting, not hung ────────
+# See the MAX_BOOT_STALLS block at the top for the 8h46m boot this exists for.
+# Deliberately placed BEFORE the ingest veto: a booting backend has not opened
+# the store for writing yet, so its frontier cannot move, and the veto would
+# read that stillness as "a restart is justified" -- the exact wrong call.
+if [ -n "${PID:-}" ]; then
+  SERVED=$(cat "$HEALTHY_PID" 2>/dev/null || echo "")
+  if [ "$PID" != "$SERVED" ]; then
+    # This pid has never been observed answering /health. It is booting.
+    CPU_NOW=$(ps_time_secs "$(ps -p "$PID" -o time= 2>/dev/null)")
+    case "$CPU_NOW" in ''|*[!0-9]*) CPU_NOW=0 ;; esac
+    CPU_PREV=""
+    if [ -f "$BOOT_CPU" ]; then
+      IFS='|' read -r BP BC < "$BOOT_CPU" 2>/dev/null || true
+      [ "${BP:-}" = "$PID" ] && CPU_PREV="${BC:-}"
+    fi
+    echo "$PID|$CPU_NOW" > "$BOOT_CPU"
+    bs=$(cat "$BOOT_STALLS" 2>/dev/null || echo 0)
+    case "$bs" in ''|*[!0-9]*) bs=0 ;; esac
+    if [ -z "$CPU_PREV" ] || [ "$CPU_NOW" -gt "$CPU_PREV" ]; then
+      # Still burning CPU => still doing boot work. Reset the stall counter:
+      # unlike the ingest veto (where a quiet interval is not evidence the
+      # episode ended), CPU that moves is direct evidence THIS process is alive
+      # and working right now, so it earns a clean slate.
+      echo 0 > "$BOOT_STALLS"
+      log "BOOTING, not restarting ($REASON) — pid $PID has never answered /health since exec ${AGE}s ago and is still working (cpu ${CPU_PREV:-n/a}s -> ${CPU_NOW}s). Observed 2026-07-30: a boot over pi_watch_dir took 8h46m."
+      exit 0
+    fi
+    bs=$((bs + 1))
+    echo "$bs" > "$BOOT_STALLS"
+    if [ "$bs" -lt "$MAX_BOOT_STALLS" ]; then
+      log "BOOTING but CPU is flat ($CPU_NOW s) — pid $PID has never answered and did no work this interval. Stall $bs/$MAX_BOOT_STALLS before it counts as wedged."
+      exit 0
+    fi
+    log "boot is WEDGED, not slow: pid $PID has never answered /health and burned no CPU across $bs consecutive checks (~$((bs * 5)) min). Restarting."
+    notify "OpenStory: boot wedged (no CPU, never served). Restarting."
+  fi
 fi
 
 # ── Progress veto: never restart a backend that is demonstrably ingesting ────
