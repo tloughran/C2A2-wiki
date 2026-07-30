@@ -2,10 +2,10 @@
 # openstory-backend.sh — OpenStory capture backend, supervised by launchd
 # (com.tomloughran.openstory.backend, RunAtLoad + KeepAlive).
 #
-# Ensures local-only NATS is up (token-free, deploy/nats-local.conf), then runs the
-# Rust `serve` backend IN THE FOREGROUND via exec, so this process IS what launchd
-# watches — if the backend dies, launchd restarts it. This is the durable feed that
-# writes open-story.db (which the C2A2 wiki reads). 2026-06-25.
+# Waits for local-only NATS (its own agent, com.tomloughran.openstory.nats), then
+# runs the Rust `serve` backend IN THE FOREGROUND via exec, so this process IS what
+# launchd watches — if the backend dies, launchd restarts it. This is the durable feed
+# that writes open-story.db (which the C2A2 wiki reads). 2026-06-25.
 set -euo pipefail
 export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
 
@@ -36,35 +36,35 @@ echo "[backend] RUST_BACKTRACE=1 (diagnosing unexplained self-exits)"
 OS_ROOT="$HOME/Documents/Non-Claude Projects/OpenStory"
 cd "$OS_ROOT"
 
-# 1) Local NATS JetStream on :4222 — start only if the port is free. Disowned: if it
-#    dies, the backend below loses :4222 and exits, and launchd reruns this whole
-#    script, which restarts NATS. So NATS is self-healed without its own agent.
-if ! lsof -i :4222 >/dev/null 2>&1; then
-  echo "[backend] starting local NATS on :4222"
-  nats-server -c deploy/nats-local.conf > /tmp/nats-local.log 2>&1 &
-  disown
-else
-  echo "[backend] NATS already on :4222"
-fi
-
-# WAIT for NATS to actually accept connections. This replaced a bare `sleep 1`
-# on 2026-07-29, which was a race the backend lost repeatedly.
+# 1) Local NATS JetStream on :4222 is supervised SEPARATELY, by
+#    com.tomloughran.openstory.nats (RunAtLoad + KeepAlive). This script no longer
+#    starts it, only waits for it.
 #
-# The backend bails out of main() if it cannot reach JetStream at startup
-# (rs/cli/src/main.rs:680, "NATS unavailable" / "NATS stream setup failed"). That
-# is a clean non-zero exit, so launchd KeepAlive relaunches this script, which
-# rolls the same dice again -- a restart loop with no crash report and no
-# "Shutting down" line, which is exactly how it presented.
+#    Why it moved out, 2026-07-29: nats-server was started here and `disown`ed.
+#    disown removes the job from this shell's table but does NOT detach the process
+#    group, so launchd stopping the backend took NATS down with it — confirmed by
+#    ancestry, nats-server's PPID was the backend's own pid. Every respawn therefore
+#    raced a cold NATS, and the backend bails out of main() when it cannot reach
+#    JetStream at startup (rs/cli/src/main.rs:680, "NATS unavailable" / "NATS stream
+#    setup failed"). That is a clean non-zero exit, so KeepAlive relaunched this
+#    script and rolled the same dice again — a restart loop with no crash report and
+#    no "Shutting down" line, which is exactly how it presented.
 #
-# Why it fires on every restart rather than never: `disown` removes the job from
-# this shell's table but does NOT detach the process group, so when launchd stops
-# the job it takes nats-server down with the backend. Every restart therefore
-# starts NATS cold and immediately tries to connect. Verified: nats-server's pid
-# was the same age as the backend's on each cycle. This went unnoticed for weeks
-# only because the backend had been up 2d8h without a restart.
+#    A readiness probe inside this script cannot close that race, which is why the
+#    first attempt at fixing it did not: the probe runs in the very process that NATS
+#    is about to be a child of. It proves NATS was listening a moment ago, not that
+#    it will outlive the exec below.
 #
-# One second was never a guarantee: JetStream restores its streams before
-# listening (measured 5.7ms here, but it scales with stored messages).
+#    The race was expensive because a boot is not cheap: reconcile (~150-190s, and it
+#    adds 0 events — it skips ~724k), reproject (~669k events), then the 72h backfill
+#    (~23k events, the small part). About 4m15s before the HTTP listener answers, so
+#    /health returning nothing during that window is normal, not a fault. An exit at
+#    3 minutes discards the whole boot; a few in a row froze the ingest frontier for
+#    an hour. Measured 2026-07-29.
+#
+#    NATS now outlives any backend restart, and if NATS itself dies its own KeepAlive
+#    brings it back. The wait below still matters at login, when both jobs start at
+#    once and this one can win.
 echo "[backend] waiting for NATS on :4222 ..."
 for _ in $(seq 1 60); do
   if nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
@@ -74,7 +74,9 @@ for _ in $(seq 1 60); do
   sleep 0.5
 done
 if ! nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
-  echo "[backend] FATAL: NATS never came up on :4222 after 30s; see /tmp/nats-local.log" >&2
+  echo "[backend] FATAL: NATS never came up on :4222 after 30s. It has its own agent:" >&2
+  echo "[backend]   launchctl print gui/\$(id -u)/com.tomloughran.openstory.nats" >&2
+  echo "[backend]   tail ~/Library/Logs/openstory-nats.log" >&2
   exit 1
 fi
 
