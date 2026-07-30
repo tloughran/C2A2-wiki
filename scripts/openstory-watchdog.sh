@@ -149,6 +149,34 @@ if [ "$n" -gt "$MAX_RESTARTS" ]; then
   exit 1
 fi
 
+# ── Name fd exhaustion when that is what this is ─────────────────────────────
+# 2026-07-29: a ~20-minute restart cycle showed up (fail, restart, healthy 5 min
+# later, repeat ~3x/hour) and looked like a mystery hang. It is not. The kqueue
+# watcher takes one fd per watched DIRECTORY, and config.toml's pi_watch_dir
+# points at the Cowork store, which is 29231 directories -- against a hard
+# kern.maxfilesperproc of 10240, so the tree can NEVER be fully registered. Once
+# the process is fd-saturated, accept() on a new HTTP connection fails with
+# EMFILE, /health goes unanswered, and this watchdog restarts a backend whose
+# ingest is actually fine. The restart does restore service for a while, so we
+# still perform it -- but a recurring symptom with a known structural cause must
+# not read as an unexplained fault in the log. The real remedy is a bounded dir
+# budget with LRU eviction in kqueue_watcher.rs (dirs are budgeted like files);
+# raising RLIMIT_NOFILE cannot help, 10240 is the kernel's ceiling.
+if [ -n "${PID:-}" ]; then
+  FDS=$(lsof -p "$PID" 2>/dev/null | wc -l | tr -d ' ')
+  # The BACKEND's ceiling, not this script's. `ulimit -n` here would report the
+  # watchdog's own limit (256, straight from launchd) and make the threshold
+  # meaningless, so read it from the one place it is actually set.
+  SOFT=$(sed -n 's/^ulimit -n \([0-9]*\).*/\1/p' \
+           "$(dirname "$0")/openstory-backend.sh" 2>/dev/null | head -1)
+  case "${FDS:-}" in ''|*[!0-9]*) FDS=0 ;; esac
+  case "${SOFT:-}" in ''|*[!0-9]*) SOFT=0 ;; esac
+  if [ "$FDS" -gt 0 ] && [ "$SOFT" -gt 0 ] && [ "$FDS" -ge $(( SOFT * 9 / 10 )) ]; then
+    log "FD EXHAUSTION (structural, not a hang): pid $PID holds $FDS fds. The watcher takes one fd per watched directory and pi_watch_dir is a 29k-dir tree vs a 10240 kernel cap, so accept() fails and /health cannot answer. Restarting restores service temporarily; the fix is a bounded dir budget in kqueue_watcher.rs."
+    notify "OpenStory: fd exhaustion (pi_watch_dir tree exceeds the kernel fd cap). Restarting is palliative."
+  fi
+fi
+
 log "restart attempt $n/$MAX_RESTARTS via launchctl kickstart (verify next run)"
 # Stamp BEFORE kickstarting: the grace gate above reads this, and a restart that
 # is issued but never stamped would let the next run restart it again mid-boot.
