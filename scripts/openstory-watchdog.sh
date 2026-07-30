@@ -118,7 +118,14 @@ fi
 # now anchors on whichever start signal is more recent — the running process, or
 # the last kickstart THIS script issued.
 AGE=999999
-PID=$(pgrep -f 'open-story serve' | head -1)
+# `pgrep -x open-story`, NOT `pgrep -f 'open-story serve'`. The -f form matches any
+# process whose FULL COMMAND LINE contains that string, which includes shells that
+# merely mention it -- monitoring one-liners, other watchdogs, an operator's own
+# `watch` loop. On 2026-07-29 that made this script pick up a long-lived helper
+# shell instead of the backend, compute a large AGE from it, skip the startup-grace
+# gate below, and restart a backend that was 200s into a boot. -x matches the
+# executable name exactly, so only the real process can satisfy it.
+PID=$(pgrep -x open-story | head -1)
 if [ -n "$PID" ]; then
   A=$(ps -p "$PID" -o etimes= 2>/dev/null | tr -d ' ')
   case "$A" in ''|*[!0-9]*) A=999999 ;; esac
