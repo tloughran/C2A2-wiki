@@ -43,9 +43,39 @@ if ! lsof -i :4222 >/dev/null 2>&1; then
   echo "[backend] starting local NATS on :4222"
   nats-server -c deploy/nats-local.conf > /tmp/nats-local.log 2>&1 &
   disown
-  sleep 1
 else
   echo "[backend] NATS already on :4222"
+fi
+
+# WAIT for NATS to actually accept connections. This replaced a bare `sleep 1`
+# on 2026-07-29, which was a race the backend lost repeatedly.
+#
+# The backend bails out of main() if it cannot reach JetStream at startup
+# (rs/cli/src/main.rs:680, "NATS unavailable" / "NATS stream setup failed"). That
+# is a clean non-zero exit, so launchd KeepAlive relaunches this script, which
+# rolls the same dice again -- a restart loop with no crash report and no
+# "Shutting down" line, which is exactly how it presented.
+#
+# Why it fires on every restart rather than never: `disown` removes the job from
+# this shell's table but does NOT detach the process group, so when launchd stops
+# the job it takes nats-server down with the backend. Every restart therefore
+# starts NATS cold and immediately tries to connect. Verified: nats-server's pid
+# was the same age as the backend's on each cycle. This went unnoticed for weeks
+# only because the backend had been up 2d8h without a restart.
+#
+# One second was never a guarantee: JetStream restores its streams before
+# listening (measured 5.7ms here, but it scales with stored messages).
+echo "[backend] waiting for NATS on :4222 ..."
+for _ in $(seq 1 60); do
+  if nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
+    echo "[backend] NATS accepting connections"
+    break
+  fi
+  sleep 0.5
+done
+if ! nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
+  echo "[backend] FATAL: NATS never came up on :4222 after 30s; see /tmp/nats-local.log" >&2
+  exit 1
 fi
 
 # 2) Bounded backfill window (matches up-local.sh): re-reads recent events on each
