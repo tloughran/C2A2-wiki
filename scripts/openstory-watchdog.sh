@@ -63,8 +63,11 @@ ping_ok(){ [ "$(curl -s -o /dev/null -m 5 -w '%{http_code}' "$HEALTH" 2>/dev/nul
 # with a different remedy, and restarting the backend cannot fix either. It is
 # logged so it can never pass silently (house Rule 12).
 LAG_LINE=""
+# Own baseline file, so an operator running openstory_ingest_lag.py by hand cannot
+# reset the window this restart decision depends on. See the --state comment there.
+LAG_STATE="$STATE/ingest_total_bytes.watchdog"
 lag_ok() {
-  LAG_LINE=$(python3 "$LAG_SCRIPT" --max-lag "$MAX_LAG" 2>&1)
+  LAG_LINE=$(python3 "$LAG_SCRIPT" --max-lag "$MAX_LAG" --state "$LAG_STATE" 2>&1)
   case $? in
     0) return 0 ;;
     1) return 1 ;;

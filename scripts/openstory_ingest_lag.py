@@ -157,10 +157,20 @@ def main():
                     help="seconds of lag tolerated before exit 1")
     ap.add_argument("--quiet", action="store_true",
                     help="print nothing on success (exit code only)")
+    # Per-caller baseline, NOT one shared file. The byte baseline is only
+    # meaningful relative to ONE caller's cadence: the watchdog wants "did the tree
+    # grow in the last 5 minutes", the refresh guard "since yesterday". Sharing one
+    # file means whoever ran most recently sets everyone else's comparison window,
+    # and the bias is toward suppression -- an operator running this by hand would
+    # silently shorten the watchdog's window to a few seconds, during which nothing
+    # grows, so a genuine stall reads as idle. Observed doing exactly that on
+    # 2026-07-29. Callers pass their own path; bare/manual runs default to an
+    # "adhoc" file so they can never disturb the watchdog's baseline.
     ap.add_argument("--state", default=os.path.expanduser(
                         "~/Library/Application Support/openstory-watchdog/"
-                        "ingest_total_bytes"),
-                    help="where the previous total-bytes baseline is kept")
+                        "ingest_total_bytes.adhoc"),
+                    help="where THIS caller's total-bytes baseline is kept; use a "
+                         "distinct path per caller (see comment in main)")
     a = ap.parse_args()
 
     front, front_iso, sessions = frontier_epoch(a.db)
