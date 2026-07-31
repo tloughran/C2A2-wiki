@@ -86,7 +86,7 @@ article three whether light is a quality a
 
 [00:09:29] say a light bulb it's not the essence of those things but an aspect of them what he calls an active quality because it is that by which the Sun or light bulb affects its surroundings in such a way as to illuminate them and again I wonder how much of this would square with our modern-day understanding of electrons and photons and Quantum field Theory but again that is beyond this podcast
 
-[00:09:55] 
+[00:09:55]
 **Article 4 — Whether the production of light is fittingly assigned to the first day**
 
 article four whether the production of light is fittingly assigned to the first day now remember the order of creation as written in Genesis open to interpretation Catholics don't have to hold any particular interpretation of it besides that which is found in the magial documents which we began with but Aquinas simply takes the count as is and then seeks to give a fittingness to it elaborate on it so beginning with the first day of creation here is the relevant excerpt from scripture in the beginning God created the heavens and the Earth the Earth was without form and

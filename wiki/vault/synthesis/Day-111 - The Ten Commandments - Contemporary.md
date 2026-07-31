@@ -81,7 +81,7 @@ The moral and ceremonial precepts together constitute a *formation ecology* aime
 
 *Empirical*: Cross-cultural moral-foundations work; costly-signaling theory; affect-broadening effects.
 
-*Empirical*: Predictive-processing accounts of curriculum learning; interface-level cognition (Hoffman). 
+*Empirical*: Predictive-processing accounts of curriculum learning; interface-level cognition (Hoffman).
 
 *Speculative*: The full integration of all the empirical findings into the single Aquinas frame is interpretive philosophical work.
 

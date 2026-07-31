@@ -70,7 +70,7 @@ article three whether there is Free Will in the Angels what do we mean by free w
 
 [00:05:00] within the Mind from deliberation and choice this is what we mean by a will that is free as Aquinas writes only an agent endowed with an intellect can act with a judgment which is free in so far as it apprehends the common note of goodness from which it can judge this or the other thing to be good consequently wherever there is intellect there is Free Will it is therefore manifest the just as there is intellect so is there free will in the angels and in a higher
 
-[00:05:32] degree of perfection than in man 
+[00:05:32] degree of perfection than in man
 **Article 4 — Whether there is an irascible and concupiscible appetite in the angels**
 
 Article 4 whether there is an erasable and concupiscible appetite in the Angels we're going to see those terms in depth when we treat of man in the Prima pars and then the passion specifically in the Prima suunde but for the purpose of this article within the treatment of angels let us simply say that these terms are categories within the broader category of what we call passions or emotions these passions are elicited in in us through the sensed apprehension of
@@ -95,7 +95,7 @@ article one whether there is natural Love In An Angel if what we we mean by love
 
 [00:08:56] therefore there is also natural love
 
-[00:09:00] 
+[00:09:00]
 **Article 2 — Whether there is love of choice in the angels**
 
 Article 2 whether there is love of choice in the Angels the love of choice is defined by St Thomas as something loved for the sake of the end there is a key distinction to be made here between What Angels Love by nature and what they love by choice we love along with the angels as written into our nature our own Perfection which is the meaning behind the word happiness and every single decision that you and I or the

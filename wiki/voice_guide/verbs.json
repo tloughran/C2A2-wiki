@@ -1,0 +1,369 @@
+{
+  "_about": "CCL grammar-as-data (C2A2 Command Line v1). Single source of truth for the verb set and the state dimensions each verb writes/reads. Consumed by BOTH the parser (wiki/lib/c2a2-commandline.js) and the janitor drift checks (every verb maps to a declared dimension; every dimension is reachable by >=1 verb; help == this manifest). See wiki/architecture/voice_guide_redesign.md sections 3, 4, 9. Keys beginning with _ are documentation and ignored by consumers.",
+  "version": "1",
+  "dimensions": {
+    "tab": {
+      "kind": "value",
+      "fingerprint": "semantic"
+    },
+    "filters": {
+      "kind": "set",
+      "type": "group-key[]",
+      "fingerprint": "semantic"
+    },
+    "selection": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic"
+    },
+    "cursor": {
+      "kind": "value",
+      "nullable": true,
+      "fingerprint": "semantic",
+      "_note": "position within the currently revealed node set; writes through to `selection`, so undo restores the node, not the index"
+    },
+    "cut": {
+      "kind": "set",
+      "type": "node-id[]",
+      "nullable": true,
+      "fingerprint": "semantic",
+      "_note": "The set of nodes allowed to be drawn. ABSOLUTE (the whole allowed set, never a delta) and nullable (null = no cut). Written today by find and focus; the marquee will be its second writer, and the increment-5 regen replaces the shell-side enforcement with a real predicate inside rebuildGraph without changing this contract. Replaces the former `highlight` dimension: the search text is part of THIS value ({ids, query}), so undo restores the query and the node set together instead of leaving the search box saying one thing while the graph shows another."
+    },
+    "camera": {
+      "kind": "value",
+      "fingerprint": "continuous"
+    },
+    "playback": {
+      "kind": "value",
+      "fingerprint": "semantic"
+    },
+    "knob": {
+      "kind": "value",
+      "dynamic": true,
+      "fingerprint": "semantic"
+    }
+  },
+  "_filler_note": "Words a person says that the grammar does not need. Spoken English puts the noun back in ('pick first section', 'pick first card') and uses a copula ('what is this'); every one of those used to return too_many_args -- a hard error one redundant word away from a command that already worked, which is what made the first tab's items feel unreachable in Tom's 2026-07-26 review. The rescue is deliberately NARROW: it fires ONLY after a parse has already failed on arity, and NEVER on `text` or `many` verbs, so a search string (`find levin`), a tab name (`go community explorer`) or a group list (`only levin friston`) can never be silently eaten. Generic item nouns only -- no word here may also be a real group, tradition or tab name, which is why `community` is absent and `section`/`card` are safe.",
+  "_aliases_note": "The SOFT layer, made hard. A conversational guide cannot require one blessed word per intent -- people say pick / select / choose / open for the same act -- but leaving that to the model means the common phrasings fail whenever the model does, which is exactly how `open the first card` died in Tom's 2026-07-26 review. Synonyms therefore resolve HERE, deterministically and under test; the model's latitude sits on TOP of this for genuinely novel phrasing, not underneath it as the only line of defence. CONTEXT-SENSITIVE where the word is genuinely ambiguous: `open levin` opens a node's article on the Sociogram, while `open first` means pick -- disambiguated by ARGUMENT SHAPE (after filler stripping), never by guessing. `when_arg_in` restricts the rewrite to those shapes; without it the alias is unconditional.",
+  "aliases": [
+    { "say": "select", "means": "pick" },
+    { "say": "choose", "means": "pick" },
+    { "say": "open", "means": "pick", "when_arg_in": ["first", "last", "random"] },
+    { "say": "highlight", "means": "find" },
+    { "say": "search", "means": "find" },
+    { "say": "quiet", "means": "stop" },
+    { "say": "silence", "means": "stop" },
+    { "say": "continue", "means": "next" },
+    { "say": "forward", "means": "next" },
+    { "say": "turn", "means": "rotate" },
+    { "say": "orbit", "means": "rotate" },
+    { "say": "center", "means": "open" },
+    { "say": "centre", "means": "open" }
+  ],
+  "filler": [
+    "the", "a", "an", "this", "that", "it", "is", "are", "please",
+    "one", "item", "items", "thing", "things",
+    "section", "sections", "card", "cards", "article", "articles",
+    "node", "nodes", "entry", "entries", "row", "rows"
+  ],
+  "verbs": [
+    {
+      "verb": "go",
+      "dim": "tab",
+      "op": "set",
+      "args": "text",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "back",
+      "dim": "tab",
+      "op": "back",
+      "args": "none",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "show",
+      "dim": "filters",
+      "op": "union",
+      "args": "many",
+      "kind": "set",
+      "inverse": "hide"
+    },
+    {
+      "verb": "hide",
+      "dim": "filters",
+      "op": "diff",
+      "args": "many",
+      "kind": "set",
+      "inverse": "show"
+    },
+    {
+      "verb": "only",
+      "dim": "filters",
+      "op": "set",
+      "args": "many",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "all",
+      "dim": "filters",
+      "op": "setAll",
+      "args": "opt",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "none",
+      "dim": "filters",
+      "op": "setEmpty",
+      "args": "opt",
+      "kind": "set",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "open",
+      "dim": "selection",
+      "op": "set",
+      "_near_note": "On a content tab, picking an item IS opening it. Offered ONLY where `pick` is actually in that tab's caps, so this can never advertise a verb the view lacks.",
+      "near": "pick",
+      "_args_note": "MAY be omitted. On a tab whose items declare how they open, a bare `open` means the row the cursor is already on -- walking to a thing and then opening it is the ordinary shape, and asking for the name back would make the user repeat what the guide had just said to them. The PARSER cannot know whether that is meaningful, so it passes an empty arg list and plan() decides: the graph path still answers missing_arg, because there `open` has nothing to be relative to.",
+      "args": "text-opt",
+      "kind": "value",
+      "inverse": "close"
+    },
+    {
+      "verb": "close",
+      "dim": "selection",
+      "op": "null",
+      "args": "none",
+      "kind": "value",
+      "inverse": "open"
+    },
+    {
+      "verb": "find",
+      "dim": "cut",
+      "op": "set",
+      "args": "text",
+      "kind": "value",
+      "inverse": "clear",
+      "mode": "find"
+    },
+    {
+      "verb": "clear",
+      "dim": "cut",
+      "op": "null",
+      "args": "none",
+      "kind": "value",
+      "inverse": "find"
+    },
+    {
+      "verb": "focus",
+      "dim": "cut",
+      "op": "set",
+      "args": "nary",
+      "kind": "value",
+      "inverse": "clear",
+      "mode": "focus"
+    },
+    {
+      "verb": "set",
+      "dim": "knob",
+      "op": "set",
+      "args": "knob-value",
+      "kind": "value",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "fit",
+      "dim": "camera",
+      "op": "set",
+      "args": "none",
+      "kind": "value",
+      "inverse": "@journal",
+      "const": "fit"
+    },
+    {
+      "verb": "zoom",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "in",
+        "out"
+      ]
+    },
+    {
+      "verb": "pick",
+      "dim": "cursor",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "random",
+        "first",
+        "last"
+      ]
+    },
+    {
+      "verb": "next",
+      "dim": "cursor",
+      "op": "step",
+      "args": "none",
+      "kind": "value",
+      "inverse": "previous",
+      "const": "next"
+    },
+    {
+      "verb": "previous",
+      "dim": "cursor",
+      "op": "step",
+      "args": "none",
+      "kind": "value",
+      "inverse": "next",
+      "const": "previous"
+    },
+    {
+      "verb": "pan",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ]
+    },
+    {
+      "verb": "rotate",
+      "dim": "camera",
+      "op": "set",
+      "args": "one",
+      "kind": "value",
+      "inverse": "@journal",
+      "enum": [
+        "left",
+        "right",
+        "up",
+        "down"
+      ]
+    },
+    {
+      "verb": "spin",
+      "dim": "camera",
+      "op": "set",
+      "args": "opt",
+      "kind": "value",
+      "inverse": "@journal",
+      "const": "left",
+      "enum": [
+        "left",
+        "right",
+        "off"
+      ],
+      "_note": "The one camera verb that leaves something RUNNING. Bare `spin` turns left, which is the direction a turntable goes; `spin off` stops it, and so does `stop` -- see the shell. Not journalled: a camera is the canonical continuous field (section 14.4 bars hashing them, not reaching them), and a spin has no single position to step back to."
+    },
+    {
+      "verb": "read",
+      "dim": "playback",
+      "op": "set",
+      "args": "opt",
+      "kind": "value",
+      "inverse": "stop",
+      "const": "read",
+      "gated": true,
+      "_note": "bare = the prose; `read details` = the provenance/metadata the speech script holds back"
+    },
+    {
+      "verb": "stop",
+      "dim": "playback",
+      "op": "set",
+      "args": "none",
+      "kind": "value",
+      "inverse": "read",
+      "const": "stop"
+    },
+    {
+      "verb": "undo",
+      "dim": "@journal",
+      "op": "undo",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "redo"
+    },
+    {
+      "verb": "redo",
+      "dim": "@journal",
+      "op": "redo",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "undo"
+    },
+    {
+      "verb": "reset",
+      "dim": "@journal",
+      "op": "reset",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "restore",
+      "dim": "@journal",
+      "op": "restore",
+      "args": "none",
+      "kind": "meta",
+      "inverse": "@journal"
+    },
+    {
+      "verb": "what",
+      "dim": "@read",
+      "op": "what",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "where",
+      "dim": "@read",
+      "op": "where",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "help",
+      "dim": "@read",
+      "op": "help",
+      "args": "none",
+      "kind": "read",
+      "inverse": null
+    },
+    {
+      "verb": "ask",
+      "dim": "@broker",
+      "op": "route",
+      "args": "text",
+      "kind": "action",
+      "inverse": null,
+      "spend": true
+    },
+    {
+      "verb": "summarize",
+      "dim": "@read",
+      "op": "summarize",
+      "args": "opt",
+      "kind": "read",
+      "inverse": null,
+      "_note": "PERCEPTION, not playback: it changes nothing, and what it returns is TEXT for the model to compress rather than a description of the view. Bare `summarize` takes the highlight the user left if there is one, otherwise the open article in whichever rendering is showing; `summarize details` takes the held-back provenance. The guide could not summarise anything before this because it had never been handed anything TO summarise -- every other result is a status line (Tom, 2026-07-27). Summarising is a judgement call and belongs to the model; fetching the words is not, and belongs to the shell (redesign section 5: if code can answer, code answers)."
+    }
+  ]
+}

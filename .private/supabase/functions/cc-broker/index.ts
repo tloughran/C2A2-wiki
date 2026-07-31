@@ -51,6 +51,42 @@ const TAVILY_API_URL             = "https://api.tavily.com/search";
 const TAVILY_MAX_RESULTS         = 5;
 const TAVILY_QUERY_MAX_CHARS     = 500;   // longest query string we'll send to Tavily
 
+// realtime_session tunables — own budget as of 2026-07-29. Until then realtime
+// charged the `enrich` meter, so 20 voice starts (20 × 25c) consumed the whole
+// $5 dataset pool and returned 402 for EVERY action, for every visitor, for the
+// rest of the UTC day. web_enrich was given separate counters for exactly this
+// reason; realtime never was. Sharing the meter was the bug.
+const RT_DEVICE_DAILY_LIMIT     = 5;      // voice sessions per device per day — one browser can no longer drain the pool
+const RT_GLOBAL_DAILY_CENTS_CAP = 500;    // $5/day for voice, independent of the $5 dataset pool
+
+// Charged at MINT, before a second of audio, because that is the only moment the
+// broker has any leverage: once the ephemeral is handed out the session runs
+// browser↔OpenAI and we never see it again. So this is a RESERVATION, not a
+// measurement — and it cannot be replaced by billing on close, because a public
+// client that never reports is a client that never pays, and the debit would
+// land after the money was already spent.
+//
+// Anchored to gpt-realtime audio rates (July 2026): $32/1M audio-in,
+// $64/1M audio-out; ~600 input tokens per minute of open mic, ~1200 output
+// tokens per minute of generated speech.
+//   ≈ 1.9c per minute of mic, ≈ 7.7c per minute of guide speech.
+// 25c ≈ a 3-minute exchange with ~2 minutes of guide speech. Re-derive whenever
+// those rates or RT_MAX_OUTPUT_TOKENS move.
+const REALTIME_SESSION_CENTS = 25;
+
+// Per-RESPONSE output bound. NOT a session bound — the mint API has no such knob.
+// Probed against the live API 2026-07-29: max_output_tokens comes back as `inf`
+// when unset, and session.max_session_seconds is rejected as an unknown
+// parameter. An N-turn session can therefore still spend N × this. The real
+// per-visitor bound is RT_DEVICE_DAILY_LIMIT, not this number.
+// 1500 tokens ≈ 75s of speech; the guide's longest measured utterance was 47.9s.
+const RT_MAX_OUTPUT_TOKENS = 1500;
+
+// The ephemeral is only needed for the moment it takes to open the WebRTC call.
+// Default validity is ~10 minutes; a short window means a token that leaks out of
+// a browser cannot be hoarded and redeemed later.
+const RT_TOKEN_TTL_SECONDS = 120;
+
 const ALLOWED_ORIGINS = new Set([
   "https://tloughran.github.io",   // public deployed wiki
   "http://localhost:8080",         // local HTTP server per CLAUDE.md
@@ -503,18 +539,27 @@ Deno.serve(async (req) => {
     const openaiKey = Deno.env.get("OPENAI_API_KEY") ?? "";
     if (!openaiKey) return json(500, { error: "broker_misconfigured", where: "OPENAI_API_KEY" }, origin);
 
-    const REALTIME_SESSION_CENTS = 25;
-    const { data: usage, error: useErr } = await sb.rpc("get_usage", { p_device_id: deviceId });
-    if (useErr) return json(500, { error: "db_error", where: "get_usage" }, origin);
+    // Realtime reads and writes its OWN counters. It must never touch
+    // get_usage / increment_usage — that coupling is what took Ask-AI down
+    // site-wide on 2026-07-29 (see the tunables block above).
+    const { data: usage, error: useErr } = await sb.rpc("get_rt_usage", { p_device_id: deviceId });
+    if (useErr) return json(500, { error: "db_error", where: "get_rt_usage" }, origin);
     const u = Array.isArray(usage) ? usage[0] : usage;
-    const deviceAsks      = u?.device_asks       ?? 0;
-    const globalCostCents = u?.global_cost_cents ?? 0;
-    if (deviceAsks >= DEVICE_DAILY_LIMIT || globalCostCents >= GLOBAL_DAILY_CENTS_CAP) {
+    const deviceRtAsks    = u?.device_rt_asks       ?? 0;
+    const globalRtCents   = u?.global_rt_cost_cents ?? 0;
+    if (deviceRtAsks >= RT_DEVICE_DAILY_LIMIT || globalRtCents >= RT_GLOBAL_DAILY_CENTS_CAP) {
+      // Say which of the two ran out. "You personally are done for today" and
+      // "the whole site is done for today" are different facts and the second
+      // one is not the visitor's fault.
+      const perDevice = deviceRtAsks >= RT_DEVICE_DAILY_LIMIT;
       return json(402, {
         error: "free_limit_reached",
-        deviceAsks, deviceLimit: DEVICE_DAILY_LIMIT,
-        globalCostCents, globalCap: GLOBAL_DAILY_CENTS_CAP,
-        hint: "Daily free voice limit reached. Try again tomorrow, or use your own OpenAI key.",
+        scope: perDevice ? "device" : "global",
+        deviceRtAsks, deviceLimit: RT_DEVICE_DAILY_LIMIT,
+        globalRtCents, globalCap: RT_GLOBAL_DAILY_CENTS_CAP,
+        hint: perDevice
+          ? "You have used your free voice sessions for today. Resets at 00:00 UTC, or use your own OpenAI key."
+          : "The shared daily voice budget is spent. Resets at 00:00 UTC, or use your own OpenAI key.",
       }, origin);
     }
 
@@ -531,7 +576,16 @@ Deno.serve(async (req) => {
       mint = await fetch("https://api.openai.com/v1/realtime/client_secrets", {
         method: "POST",
         headers: { "Authorization": `Bearer ${openaiKey}`, "Content-Type": "application/json" },
-        body: JSON.stringify({ session: { type: "realtime", model, audio: { output: { voice } }, instructions: scope } }),
+        body: JSON.stringify({
+          expires_after: { anchor: "created_at", seconds: RT_TOKEN_TTL_SECONDS },
+          session: {
+            type: "realtime",
+            model,
+            audio: { output: { voice } },
+            instructions: scope,
+            max_output_tokens: RT_MAX_OUTPUT_TOKENS,
+          },
+        }),
       });
     } catch (_e) {
       return json(502, { error: "upstream_unreachable", where: "openai_mint" }, origin);
@@ -544,13 +598,25 @@ Deno.serve(async (req) => {
     const ephemeral = md?.value ?? md?.client_secret?.value;
     if (!ephemeral) return json(502, { error: "no_ephemeral" }, origin);
 
-    const { error: incErr } = await sb.rpc("increment_usage", {
+    const { data: post, error: incErr } = await sb.rpc("increment_rt_usage", {
       p_device_id: deviceId,
       p_cost_cents: REALTIME_SESSION_CENTS,
     });
-    if (incErr) console.error("increment_usage_failed(realtime)", incErr);
+    if (incErr) console.error("increment_rt_usage_failed", incErr);
 
-    return json(200, { value: ephemeral, expires_at: md?.expires_at ?? null, model }, origin);
+    // Report what is left so the caller can warn before the cap rather than
+    // discovering it as a dead pill. The 07-29 outage was invisible until
+    // someone read the meter by hand.
+    const p = Array.isArray(post) ? post[0] : post;
+    const rtRemaining = Math.max(0, RT_DEVICE_DAILY_LIMIT - (p?.device_rt_asks ?? deviceRtAsks + 1));
+
+    return json(200, {
+      value: ephemeral,
+      expires_at: md?.expires_at ?? null,
+      model,
+      rtRemaining,
+      maxOutputTokens: RT_MAX_OUTPUT_TOKENS,
+    }, origin);
   }
 
   return json(400, { error: "unknown_action" }, origin);

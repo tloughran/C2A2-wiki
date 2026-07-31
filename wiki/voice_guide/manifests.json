@@ -1,0 +1,1945 @@
+{
+  "_about": "Per-tab CCL manifests (voice_guide_redesign.md sections 3, 8, 9). Each tab declares its supported verbs (caps) and its knob dimensions with a DOM binding + spoken aliases. Consumed by BOTH the shell (explorer.html builds the active tab's ctx from this) and the coverage audit (every live interactive control on a tab must be a bound knob or an explicit exclusion -- unbound control => loud pre-push failure, section 9). Adding a T1 tab is ONE entry here plus a knowledge default file -- never a new tool, prompt, or session-schema change. Knob `values[].v` are the real DOM option values (NOT their display labels); `aka` are the spoken forms a user would say. A knob carries `aka` too, because the word PRINTED on a control is not always its id -- metabolism's `metric` select is labelled Amplitude on screen, so `label` must mirror the live UI text and `aka` must cover what a user would actually say. Knob names and aliases MUST be single tokens: the parser takes `set <knob> <value...>` and reads the knob as the first word, so a two-word alias is unparseable, not merely unmatched. Keys beginning with _ are documentation and ignored by consumers. GESTURES: each tab must also declare its non-DOM interaction surface (zoom, pan, drag, click, hover) -- the runtime sweep enumerates ELEMENTS and is structurally blind to gestures, so they are declared and the gate checks the declaration is honest: `covered` must name verbs the tab actually has in caps, `deferred` must name its increment, `excluded` must give a reason, and a tab declaring nothing FAILS (silence is not a completeness claim).",
+  "version": "1",
+  "tabs": {
+    "sociogram": {
+      "aka": [
+        "sociogram",
+        "graph",
+        "map",
+        "wiki_narration"
+      ],
+      "tier": "T3",
+      "caps": [
+        "go",
+        "back",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "open",
+        "close",
+        "find",
+        "clear",
+        "focus",
+        "fit",
+        "zoom",
+        "pan",
+        "undo",
+        "redo",
+        "reset",
+        "restore",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop"
+      ],
+      "knobs": [],
+      "_knobs_note": "Sociogram's affordances are filters/selection/highlight/camera (their own dim kinds, not `set` knobs). It carries no `set` verb in v1. Listed here so the shell can read one uniform per-tab source; its caps mirror the engine's SOCIOGRAM_CAPS until step 2 migrates the shell to read caps from this file.",
+      "dim_coverage": [
+        {
+          "dim": "filters",
+          "match": "[data-group]",
+          "note": "the 32 group checkboxes -- show/hide/only, batch-written through groupVisibility"
+        },
+        {
+          "dim": "filters",
+          "match": "#chk-all, #chk-none",
+          "note": "all / none"
+        },
+        {
+          "dim": "filters",
+          "match": "#chk-all-traditions, #chk-all-structure",
+          "note": "section toggles; CCL reaches these as section terms ('only traditions')"
+        },
+        {
+          "dim": "highlight",
+          "match": "#search-input, [onclick*='runSearch']",
+          "note": "find / clear (Clear's onclick also calls runSearch)"
+        },
+        {
+          "dim": "selection",
+          "match": "[onclick*='dismissRightPanel']",
+          "note": "close -- the node panel"
+        },
+        {
+          "dim": "camera",
+          "match": "#btn-fit-all",
+          "note": "fit"
+        },
+        {
+          "dim": "edges",
+          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
+          "note": "edge-type family; show/hide/only/all/none edges <type>"
+        },
+        {
+          "dim": "layers",
+          "match": "#chk-layer-substrate, #chk-layer-projected, #chk-layer-flow, #chk-substrate-context",
+          "note": "layer family"
+        },
+        {
+          "dim": "tags",
+          "match": "#chk-all-tags, #chk-tag-finding, #chk-tag-decision, #chk-tag-cross, #chk-tag-open",
+          "note": "content-tag family"
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#brightness-slider, #date-slider",
+          "reason": "continuous fields; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted"
+        },
+        {
+          "match": "#btn-settings, #btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
+          "reason": "help popovers and the settings gear: chrome, no view state"
+        },
+        {
+          "match": "#settings-modal button, #settings-content button, #settings-modal select, #settings-modal input, [onclick*='closeSettings']",
+          "reason": "settings dialog -- API keys, TTS voice and model choice; outside the view-state surface and never spoken by a guest"
+        },
+        {
+          "match": "#tts-provider, #tts-browser-voice, #tts-kokoro-voice, #tts-api-key, #tts-openai-voice, #ai-provider, #ai-api-key, #ai-model",
+          "reason": "same settings dialog, reached directly (they carry ids)"
+        },
+        {
+          "match": "#btn-voice, #btn-mute",
+          "reason": "the voice control surface's own chrome -- a session cannot be started or muted by voice"
+        },
+        {
+          "match": "#search-ai-mode",
+          "reason": "metered broker path; CCL find pins it OFF so it can never spend, and the separate `ask` verb owns it (v1-deferred)"
+        },
+        {
+          "match": ".popout-btn, [onclick*='popoutPage'], button.close[onclick*='window.close']",
+          "reason": "opens/closes a separate window -- navigation chrome, not view state"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#layout-mode, #score-mode",
+          "reason": "enum selects that are knob-shaped (Mode, Score) but the Sociogram carries no `set` cap in v1",
+          "planned": "increment 5 -- promote to declared knobs, same shape as metabolism"
+        },
+        {
+          "match": "#chk-hold-forces, #chk-hover-names",
+          "reason": "bool toggles (Hold forces, Show hover names), knob-shaped, same v1 gap as above",
+          "planned": "increment 5"
+        },
+        {
+          "match": "[onclick*='dismissLeftPage']",
+          "reason": "the left article panel closes only by mouse; `close` covers the right node panel only",
+          "planned": "increment 3 (selection symmetry)"
+        },
+        {
+          "match": "#search-external",
+          "reason": "external-search toggle changes what find does; unmodelled in the highlight dim",
+          "planned": "increment 5"
+        }
+      ],
+      "_coverage_note": "Authored 2026-07-25 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML -- 84 interactive controls, of which the static file shows only a fraction (the 32 group checkboxes are innerHTML written at boot). THREE categories on purpose: dim_coverage = reachable today; controls_excluded = outside the voice surface with a reason; controls_deferred = IN scope and NOT yet reachable -- a real north-star gap, reported loudly by the audit and asserted exactly by scripts/test_voice_shell.cjs so new controls cannot quietly join the list. Deferred is not a synonym for excluded; collapsing the two is how this gate would rot.",
+      "gestures": [
+        {
+          "id": "zoom",
+          "label": "Zoom (wheel / pinch / trackpad)",
+          "status": "covered",
+          "note": "`zoom in`/`zoom out` step the graph's own zoomBehavior; `fit` is zoom-to-everything.",
+          "by": [
+            "zoom",
+            "fit"
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan (drag the background)",
+          "status": "covered",
+          "note": "`pan left|right|up|down` steps the camera a quarter-viewport; auto-framing centres every reveal, so panning is for deliberate exploration rather than repair.",
+          "by": [
+            "pan",
+            "fit"
+          ]
+        },
+        {
+          "id": "node_click",
+          "label": "Click a node (open its article)",
+          "status": "covered",
+          "by": [
+            "open",
+            "close"
+          ]
+        },
+        {
+          "id": "edge_click",
+          "label": "Click an edge (open both endpoints)",
+          "status": "deferred",
+          "planned": "increment 5 -- id-addressable edge open (closes F5)",
+          "note": "Edges have no addressable id in the current artifact, so voice cannot name one."
+        },
+        {
+          "id": "node_drag",
+          "label": "Drag a node",
+          "status": "excluded",
+          "reason": "nudges the force layout, which re-settles; a transient position is not view state (same tier rule as zoom/brightness in section 14.4)"
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node or edge",
+          "status": "excluded",
+          "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        }
+      ],
+      "families": [
+        {
+          "id": "edges",
+          "aka": [
+            "edge",
+            "edges",
+            "link",
+            "links",
+            "connection",
+            "connections"
+          ],
+          "state": "showEdgeType",
+          "label": "Edge types",
+          "values": [
+            {
+              "v": "wikilink",
+              "aka": [
+                "wikilink",
+                "wikilinks",
+                "wiki",
+                "direct"
+              ]
+            },
+            {
+              "v": "mention",
+              "aka": [
+                "mention",
+                "mentions",
+                "named"
+              ]
+            },
+            {
+              "v": "reference",
+              "aka": [
+                "reference",
+                "references",
+                "shared",
+                "citation",
+                "citations"
+              ]
+            }
+          ],
+          "refresh": "refreshSimLinks",
+          "sync": "syncEdgesMaster"
+        },
+        {
+          "id": "layers",
+          "aka": [
+            "layer",
+            "layers"
+          ],
+          "state": "showLayer",
+          "label": "Layers",
+          "values": [
+            {
+              "v": "substrate",
+              "aka": [
+                "substrate",
+                "base"
+              ]
+            },
+            {
+              "v": "projected",
+              "aka": [
+                "projected",
+                "projection"
+              ]
+            },
+            {
+              "v": "flow",
+              "aka": [
+                "flow",
+                "flows"
+              ]
+            }
+          ],
+          "refresh": "rebuildGraph"
+        },
+        {
+          "id": "tags",
+          "aka": [
+            "tag",
+            "tags",
+            "content"
+          ],
+          "state": "showTagKind",
+          "label": "Content tags",
+          "values": [
+            {
+              "v": "finding",
+              "aka": [
+                "finding",
+                "findings"
+              ]
+            },
+            {
+              "v": "decision",
+              "aka": [
+                "decision",
+                "decisions"
+              ]
+            },
+            {
+              "v": "cross",
+              "aka": [
+                "cross",
+                "crossings",
+                "cross-tradition",
+                "bridges"
+              ]
+            },
+            {
+              "v": "open",
+              "aka": [
+                "open",
+                "open questions",
+                "questions"
+              ]
+            }
+          ],
+          "refresh": "rebuildGraph"
+        },
+        {
+          "id": "bridges",
+          "aka": [
+            "bridge",
+            "bridges",
+            "crossing",
+            "crossings",
+            "category"
+          ],
+          "state": "showEdgeBridge",
+          "label": "Edge crossings",
+          "refresh": "refreshSimLinks",
+          "sync": "syncEdgesMaster",
+          "values": [
+            {
+              "v": "cross",
+              "aka": [
+                "cross",
+                "crosses",
+                "across",
+                "cross-category",
+                "between"
+              ]
+            },
+            {
+              "v": "same",
+              "aka": [
+                "same",
+                "within",
+                "inside",
+                "same-category"
+              ]
+            }
+          ]
+        }
+      ],
+      "items": {
+        "kind": "graph",
+        "noun": "node",
+        "_note": "Items come from the force graph's bound data; selecting one opens its article in the right panel."
+      }
+    },
+    "metabolism": {
+      "aka": [
+        "metabolism",
+        "pulse",
+        "activity",
+        "metabolism_view"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "set",
+        "undo",
+        "redo",
+        "what",
+        "where",
+        "help"
+      ],
+      "_caps_note": "reset/restore are deferred to step 2b: they need a per-tab boot-captured snapshot of all knob dims (redesign section 7), whereas the v1 shell only captures Sociogram bootFilters. Until 2b they report unsupported_here on metabolism (honest, never faked). undo/redo work now via the absolute-vector journal (tab-agnostic).",
+      "knobs": [
+        {
+          "id": "view",
+          "label": "View",
+          "aka": [
+            "chart",
+            "plot",
+            "graph"
+          ],
+          "kind": "enum",
+          "bind": {
+            "select": "#view"
+          },
+          "values": [
+            {
+              "v": "raster",
+              "aka": [
+                "raster",
+                "per-agent",
+                "per agent",
+                "runs"
+              ]
+            },
+            {
+              "v": "wave",
+              "aka": [
+                "wave",
+                "waveform",
+                "pulse",
+                "system pulse"
+              ]
+            },
+            {
+              "v": "dual",
+              "aka": [
+                "dual",
+                "returned",
+                "returned vs sent",
+                "sent vs returned",
+                "tokens"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metric",
+          "label": "Amplitude",
+          "aka": [
+            "amplitude",
+            "measure",
+            "size",
+            "axis"
+          ],
+          "kind": "enum",
+          "bind": {
+            "select": "#metric"
+          },
+          "values": [
+            {
+              "v": "events",
+              "aka": [
+                "events",
+                "activity"
+              ]
+            },
+            {
+              "v": "out",
+              "aka": [
+                "out",
+                "output",
+                "output tokens",
+                "work"
+              ]
+            },
+            {
+              "v": "total",
+              "aka": [
+                "total",
+                "total tokens"
+              ]
+            },
+            {
+              "v": "cache_read",
+              "aka": [
+                "cache",
+                "cache read",
+                "cache-read",
+                "recirculated"
+              ]
+            },
+            {
+              "v": "thinking_blocks",
+              "aka": [
+                "thinking steps",
+                "thinking blocks",
+                "steps"
+              ]
+            },
+            {
+              "v": "thinking_tokens",
+              "aka": [
+                "thinking tokens"
+              ]
+            },
+            {
+              "v": "dur_min",
+              "aka": [
+                "duration",
+                "minutes",
+                "time"
+              ]
+            },
+            {
+              "v": "yield_files",
+              "aka": [
+                "files",
+                "yield files",
+                "files added"
+              ]
+            },
+            {
+              "v": "yield_links",
+              "aka": [
+                "links",
+                "wikilinks",
+                "yield links"
+              ]
+            },
+            {
+              "v": "yield_prs",
+              "aka": [
+                "prs seen",
+                "prs first-seen",
+                "first seen"
+              ]
+            },
+            {
+              "v": "yield_prs_made",
+              "aka": [
+                "prs made",
+                "prs articulated",
+                "articulated"
+              ]
+            },
+            {
+              "v": "yield_signals",
+              "aka": [
+                "signals",
+                "cross-tradition signals",
+                "cross tradition"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color",
+          "label": "Color",
+          "aka": [
+            "colour",
+            "coloring",
+            "colouring"
+          ],
+          "kind": "enum",
+          "bind": {
+            "select": "#color"
+          },
+          "values": [
+            {
+              "v": "category",
+              "aka": [
+                "category",
+                "by category"
+              ]
+            },
+            {
+              "v": "cache_ratio",
+              "aka": [
+                "cache ratio",
+                "cache-read share",
+                "cache share"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "logy",
+          "label": "Log Y",
+          "aka": [
+            "log",
+            "logscale",
+            "logarithmic"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#logy"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "log",
+                "logarithmic",
+                "yes"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "linear",
+                "no"
+              ]
+            }
+          ]
+        }
+      ],
+      "controls_excluded": [],
+      "_controls_note": "The 4 knobs above are the tab's ENTIRE interactive surface, confirmed 2026-07-25 by the live runtime sweep (window.CCLAudit: total 4, covered 4, uncovered 0) -- this replaces the earlier static read of metabolism_view.html, which was the static-HTML gate redesign section 14.8 forbids.",
+      "gestures": [
+        {
+          "id": "hover",
+          "label": "Hover a run marker",
+          "status": "excluded",
+          "reason": "transient tooltip over the raster; no persistent state"
+        }
+      ],
+      "items": {
+        "kind": "none",
+        "noun": "item",
+        "_note": "A chart has no addressable items yet; the cursor verbs are correctly absent from its caps."
+      }
+    },
+    "start_here": {
+      "aka": [
+        "start here",
+        "start_here",
+        "home",
+        "intro"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop"
+      ],
+      "_caps_note": "A content tab: no graph, so no filters/cut/camera. What it CAN do is be walked and read, which is the whole point of the item model.",
+      "knobs": [],
+      "items": {
+        "kind": "dom",
+        "select": "section.section",
+        "label": {
+          "sel": "h2"
+        },
+        "noun": "section",
+        "_note": "Three numbered sections (Orient / Decode the names / See it work). The who's-who entries inside section 2 are a candidate second roster later."
+      },
+      "controls_excluded": [
+        {
+          "match": "a[target=_blank]",
+          "reason": "opens a NEW BROWSER WINDOW the guide cannot see into or navigate; reported by name when asked for, never followed"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the page",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the sections scrolls them into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "link_click",
+          "label": "Click a link into another tab",
+          "status": "covered",
+          "by": [
+            "go"
+          ]
+        },
+        {
+          "id": "hover",
+          "label": "Hover",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": "a[href], a[data-target], a[onclick]",
+          "note": "The page's own doorways, reached by name with `go <link text>` -- resolved after tabs and sub-views so a link can never shadow either. These were EXCLUDED with the reason 'voice reaches those by name via go', which was false for every link that is not a tab: `See all 15 framings` is a page, not a tab, so go could never reach it and Tom had to use the mouse (2026-07-26). Link-following is shell-side and generic, so this declaration is bookkeeping for the sweep, not a per-tab implementation."
+        }
+      ]
+    },
+    "what_is_c2a2": {
+      "aka": [
+        "what is c2a2",
+        "fifteen framings",
+        "15 framings",
+        "framings",
+        "the framings",
+        "what_is_c2a2"
+      ],
+      "tier": "T1",
+      "_reached_note": "Not a tab and not in destinations.json -- it is reached from Start Here's \"See all 15 framings\" link, which postMessages the shell to swap the frame while the Start Here chapter button stays lit. Before frameSrc() the shell could not see this page at all, so the guide insisted it was still on Start Here, disbelieved the user who said otherwise, and `read` read the OLD document's cursor (Tom, 2026-07-26). Declared here so arriving by that link lands on a real manifest instead of degrading to shell caps.",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop"
+      ],
+      "knobs": [],
+      "items": {
+        "kind": "dom",
+        "select": "section.angle",
+        "label": {
+          "sel": "h2"
+        },
+        "noun": "section",
+        "_note": "16 section.angle blocks: fifteen NUMBERED framings plus a 'Tech -- Under the Hood' appendix that shares the class. Walking all sixteen rather than filtering to :has(.idx) so the appendix stays reachable; the noun is `section`, not `framing`, so counting sixteen never contradicts the link's promise of fifteen framings. The h2 label carries its own index ('1.'), so the spoken name is already numbered."
+      },
+      "controls_excluded": [
+        {
+          "match": "a[target=_blank]",
+          "reason": "raw .md vault files opened in a NEW BROWSER WINDOW -- the guide cannot see into one, so following it would strand the session behind a page it cannot perceive. Named on request, never followed."
+        },
+        {
+          "match": "#doc-close",
+          "reason": "closes the page's own markdown overlay; the overlay is opened only by an excluded link, so nothing voice can do ever leaves it open"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the page",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the sections scrolls them into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "hover",
+          "label": "Hover",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": "a[href], a[data-target], a[onclick]",
+          "note": "The page's own doorways, reached by name with `go <link text>` -- resolved after tabs and sub-views so a link can never shadow either. These were EXCLUDED with the reason 'voice reaches those by name via go', which was false for every link that is not a tab: `See all 15 framings` is a page, not a tab, so go could never reach it and Tom had to use the mouse (2026-07-26). Link-following is shell-side and generic, so this declaration is bookkeeping for the sweep, not a per-tab implementation."
+        }
+      ]
+    },
+    "community_explorer": {
+      "aka": [
+        "community explorer",
+        "community_explorer",
+        "communities",
+        "community"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop",
+        "open",
+        "close",
+        "set",
+        "fit",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "undo",
+        "redo",
+        "reset",
+        "restore"
+      ],
+      "_caps_note": "Increment 1 reached and walked the cards. Increment 2 adds the GRAPH sub-view's own dimensions: the eight type filters (show/hide/only/all/none and the journal verbs that ride on them), the Q3 gate as a knob, Fit All, and a roster of the graph's nodes with open/close. Still absent and still deferred below with their real blockers: find (the tab's search HIGHLIGHTS rather than filters, so the Sociogram's opacity-derived read would call a dimmed node gone), and zoom/pan (d3's behaviour is a lexical const here, so the only road is synthetic wheel/mouse events on #graph).\nCaps are per TAB and the rosters here are per SUB-VIEW, so `open` and `fit` are advertised on the cards view too and refuse there by name. That refusal is the honest one, not a leak of the Sociogram's function names -- see the `when` gates on `filters` and `camera`.",
+      "knobs": [
+        {
+          "id": "exemplary",
+          "label": "Exemplary (Q3) only",
+          "aka": ["q3", "quality"],
+          "kind": "bool",
+          "bind": { "checkbox": "#q3only" },
+          "values": [
+            { "v": "on", "aka": ["on", "yes", "exemplary", "q3", "only"] },
+            { "v": "off", "aka": ["off", "no", "all", "everything"] }
+          ],
+          "_note": "The one deferred control that needed nothing built: a real <input type=checkbox> in the tab's own document, the same shape metabolism's `logy` already uses. It composes with the type filters by AND (nodeVisible tests both), so `set exemplary on` narrows whatever cut is already up rather than replacing it."
+        }
+      ],
+      "views": [
+        {
+          "name": "graph",
+          "aka": [
+            "map",
+            "network",
+            "the graph"
+          ],
+          "enter": "#tab-graph",
+          "active": "#tab-graph"
+        },
+        {
+          "name": "cards",
+          "aka": [
+            "card",
+            "cards view",
+            "communities",
+            "the cards"
+          ],
+          "enter": "#tab-cards",
+          "active": "#tab-cards"
+        }
+      ],
+      "_views_note": "Two sub-views with two different rosters. `go cards` rides on the existing `go` rather than adding a verb, the same call made for tab order. The cards view lazy-loads a nested app, so entry announces the roster when it arrives rather than claiming zero.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": "#tab-cards"
+          },
+          "frame": "#cardsview iframe",
+          "select": "#cc-card-grid > button.cc-card",
+          "label": {
+            "sel": ".cc-card-name"
+          },
+          "noun": "community",
+          "plural": "communities",
+          "total": {
+            "sel": "#cc-card-status",
+            "re": "([\\d,]+) communit"
+          },
+          "_note": "The grid renders CARD_LIMIT (60) of the matching set; the page's own status line carries the true total, so `what` says '60 of 1006' rather than '60'."
+        },
+        {
+          "kind": "dom",
+          "when": {
+            "active": "#tab-graph"
+          },
+          "select": "#graph circle",
+          "label": {
+            "datum": "name"
+          },
+          "noun": "community",
+          "plural": "communities",
+          "activate": "click",
+          "selected": "#rightpanel.open #rp-content h3",
+          "close": "#rp-close",
+          "reads": "#rp-content",
+          "_note": "THE SVG CASE: elements in the DOM with data bound to them. `#graph circle` selects exactly the nodes and nothing else -- gLinks appends `line`, gLabels appends `text`, gNodes is the only thing appending `circle`, and there is no <circle> in the markup or the CSS -- so the roster is non-positional without the page gaining a class it does not have. A <circle> carries no text, hence `label.datum`: d3 parks the node object on the element, so the name is a DOM read.\n`activate: \"click\"` reaches the page's own `.on('click', (ev,n) => showNode(n))` with the right node object, which is why showNode taking an object rather than an id costs nothing. `selected` is scoped to `#rightpanel.open` because the panel keeps its last contents after it is closed -- the `.open` class is the page's own marker for what is actually up, and reading the h3 without it would report a stale heading as the current selection.\nNO `total`, deliberately, and this is the opposite call from the cards spec above. #stats reads 'N communities - M edges' where N is the VISIBLE count: rebuild() does .exit().remove(), so DOM presence IS the filter truth and drawn == matching. Declaring it as `total` would produce 'N of N' forever, which is a number that cannot disagree with itself and therefore says nothing.\nDO NOT infer visibility from opacity here. applyLens dims non-matching nodes to 0.08 instead of removing them, because search on this tab HIGHLIGHTS and never filters (2026-05-29 lock); getClientRects is the right test and an opacity-derived one would read a dimmed node as gone."
+        }
+      ],
+      "frames": [
+        {
+          "sel": "#cardsview iframe",
+          "_note": "The cards sub-view is a separate application one document deeper, with four views of its own (cards / map / PRS / overview). Swept here so its surface is declared rather than invisible: 21 controls live in the tab, 2294 live in here.",
+          "covered_by_items": "#cc-card-grid > button.cc-card",
+          "controls_excluded": [
+            {
+              "match": "#ai-query-input, #run-ai-query, #clear-ai-query, #clear-ai-conversation, #allow-external-search",
+              "reason": "the nested app's Ask-AI pipeline SPENDS against the broker. Voice reaches paid retrieval only through the deliberate `ask` verb, never as a side effect of walking cards -- the same rule pinPlainSearch enforces on the tab's own search box."
+            },
+            {
+              "match": "#download-csv, #download-json, #copy-share-link",
+              "reason": "file downloads and clipboard writes are not things a voice session should do unasked"
+            }
+          ],
+          "controls_deferred": [
+            {
+              "match": "#search-input, #apply-search, #clear-search, #cc-prs-search",
+              "reason": "find/clear inside a nested app: the shell's find writes the TAB's search box, not this one",
+              "next": "community explorer increment 2"
+            },
+            {
+              "match": "#country-select, #subtype-select, #source-select, #sort-select, #manual-only, #geo-only, #toggle-filter-panel, #reset-filters, #page-size, #type-pills button.pill",
+              "reason": "the cards app's own filter/sort dimension, which needs a journal entry of its own before it is writable by voice",
+              "next": "community explorer increment 2"
+            },
+            {
+              "match": "nav.cc-tabs > button.cc-tab",
+              "reason": "the nested app's four views are a second level of sub-view; `go` reaches the tab's two, not these",
+              "next": "community explorer increment 3"
+            },
+            {
+              "match": "#cc-view-overview button, #cc-view-prs button, #cc-view-map button, #results-body button, #detail-panel button, #pagination button, #cc-reader button",
+              "reason": "the map / PRS / overview views and the results table: a 158x11 heatmap of buttons and a paged table, none of it reachable until those views are. Declared by selector rather than counted -- the count is data-driven and would go red on every vault refresh.",
+              "next": "community explorer increment 3"
+            }
+          ]
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#search-ai-mode, #search-external",
+          "reason": "Ask-AI and wider search SPEND against the broker; voice reaches paid retrieval only via `ask`"
+        },
+        {
+          "match": "#tabs-help, #help-close",
+          "reason": "the tab's own help overlay; `help` answers from the manifest instead"
+        }
+      ],
+      "filters": {
+        "when": {
+          "active": "#tab-graph"
+        },
+        "sections": [
+          {
+            "name": "types",
+            "keys": {
+              "sel": "#typefilters input[data-type]",
+              "attr": "data-type"
+            },
+            "checkbox": "#typefilters input[data-type=\"{k}\"]",
+            "leaf": "{clean}",
+            "all": {
+              "on": "#types-all",
+              "off": "#types-none"
+            }
+          }
+        ],
+        "_note": "ONE AXIS, EIGHT LEAVES, AND NOT ONE LINE OF STATE READ FROM THE PAGE. The roster comes from `keys` -- the checkboxes' own data-type attributes -- because this page keeps its truth in `const activeTypes = new Set(...)`: a lexical binding, so window.activeTypes is undefined, and a Set, so the key->boolean shape the shell used to assume means nothing here. The controls carry the same information and need no page access, which is the tell that reading the CONTROLS was always the general case and reading a window map was prs_3d's special one.\n`leaf` is `{clean}` rather than the default slug: these keys are display names ('Civic & Political'), and `civic-&-political` is a group name, not something to say or hear. `{slug}` still exists and still means 'reproduce the page's own id convention' -- prs_3d needs exactly that and must not get this.\n`all` is `{on, off}` because all and none are two `<span class=\"allnone\">` here, not one master checkbox: spans, so not even buttons, and the road is `.click()`. Note that a span is INVISIBLE to the audit sweep (CONTROL_SEL matches inputs, buttons and roles) -- these two are named here because nothing in the gate would otherwise know they exist.\n`when` scopes the whole dimension to the graph sub-view: on the cards view the left panel is display:none and the cards app filters by its own controls, so an ungated spec would advertise eight checkboxes nobody is looking at.",
+        "_read_note": "Reads come back off `.checked`, not off a state object -- the RENDERED truth, which is the contract every other read on this surface follows and the only one of the two that exists on this page at all."
+      },
+      "camera": {
+        "when": {
+          "active": "#tab-graph"
+        },
+        "fit": {
+          "click": "#btn-fit"
+        },
+        "_note": "ONE VERB, AND IT IS A BUTTON. Fit All is an anonymous listener on #btn-fit -- there is no exported name to call, and under the no-page-edits rule there is no way to give it one, so the camera spec names the click. That is the mouse's road, which this thread prefers to a function call anyway.\nNO zoom / pan / rotate / spin. The page's d3 zoom behaviour and its svg selection are top-level `const`s, invisible to a window path, so the remaining road is synthetic wheel/mouse events dispatched at #graph (d3 v7 binds wheel.zoom and mousedown.zoom on the selection, and parks the current transform on the element as `__zoom`). Reasoned from d3's behaviour, not run -- deferred below until one dispatched wheel event proves it.\n`when` gates the whole spec: #btn-fit lives in a header group the tab hides on the cards sub-view, and a hidden button still answers .click(), so an ungated camera would report 'fit' for a graph nobody is looking at."
+      },
+      "dim_coverage": [
+        {
+          "dim": "filters",
+          "match": "#typefilters input[data-type]",
+          "note": "the eight type filters, reached by show/hide/only/all/none through the declared `filters` section. The all/none spans are not swept (they are spans) and are named in the filters note instead."
+        },
+        {
+          "dim": "camera",
+          "match": "#btn-fit",
+          "note": "Fit All -- what `fit` clicks, declared as the tab's camera spec"
+        },
+        {
+          "dim": "selection",
+          "match": "#rp-close",
+          "note": "close -- the right panel. Named by the graph items spec, so the audit counts it there. (A span, so not actually swept; listed for the reader.)"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#tab-graph, #tab-cards",
+          "reason": "reachable BY NAME via `go graph` / `go cards`, but the sweep matches elements not verbs, so they are listed here to stay visible in the count",
+          "next": "n/a -- covered by the views declaration above"
+        },
+        {
+          "match": "#search-input, #btn-search, #btn-clear",
+          "reason": "find/clear on the tab's graph. NOT the same shape as the Sociogram's: search here HIGHLIGHTS and never filters (applyLens dims non-matches to 0.08 and rebuild() silently resets it -- 2026-05-29 lock), so the shell's `find`, whose class stamp is read off SVG opacities, would call every dimmed node gone. The cut dimension has to learn 'highlighted, not hidden' before this is honest.",
+          "next": "voice guide: a highlight-that-is-not-a-cut, alongside the Sociogram's find generalisation"
+        },
+        {
+          "match": "#btn-hold, #btn-names",
+          "reason": "hold forces / show names: toggle BUTTONS carrying `.on`, one button standing for one boolean. No current bind kind fits -- a checkbox has no element here, and a button GROUP would need a second button for the off state that does not exist.",
+          "next": "the `toggle` bind kind (Narrative Connectome increment 3, whose #btn-labels is the same shape)"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll_cards",
+          "label": "Scroll the card grid",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the cards scrolls each into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "open_card",
+          "label": "Click a card to open its G-P-R-S profile",
+          "status": "covered",
+          "by": [
+            "pick",
+            "read"
+          ],
+          "note": "The cursor marks the card and `read` speaks it."
+        },
+        {
+          "id": "switch_subview",
+          "label": "Switch between the graph and the cards",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "`go cards` / `go graph`."
+        },
+        {
+          "id": "open_node",
+          "label": "Click a graph node for its G-P-R-S panel",
+          "status": "covered",
+          "by": [
+            "pick",
+            "open",
+            "read",
+            "close"
+          ],
+          "note": "`activate: \"click\"` on the graph roster reaches the page's own click handler, so voice opens a node by the same road a mouse does."
+        },
+        {
+          "id": "open_edge",
+          "label": "Click an edge for the pair it joins",
+          "status": "deferred",
+          "planned": "an edge roster -- the same gap the Narrative Connectome defers, and it should be solved once for both",
+          "note": "showEdge writes the same right panel showNode does, but a <line> is not in the node roster and has no label of its own."
+        },
+        {
+          "id": "zoom_pan",
+          "label": "Wheel to zoom, drag to pan the graph",
+          "status": "deferred",
+          "planned": "a d3-zoom camera kind driven by synthetic wheel/mouse events -- prove one dispatched wheel before declaring it",
+          "note": "The page's zoom behaviour and svg selection are top-level consts, so there is no window path to step; `fit` is the one camera verb reachable today."
+        },
+        {
+          "id": "drag_node",
+          "label": "Drag a graph node",
+          "status": "excluded",
+          "reason": "positional; the layout is not state the voice guide reasons about"
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node for its tooltip",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ]
+    },
+    "agents_tab": {
+      "aka": [
+        "agent map",
+        "agents",
+        "agents_tab",
+        "agent activity",
+        "the agents"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop"
+      ],
+      "_caps_note": "A three-view tab with no graph of its own to filter: what it CAN do is be moved between views, walked and read. `go schedule|sociogram|explorer` rides the existing sub-view declaration -- the same machinery Community Explorer uses, which is why this tab needed a manifest rather than new code (Tom, 2026-07-26: 'Agent Map has subtabs: should those be now navigable?'). They were not, because sub-views are DECLARED per tab and this tab was one of the nine still undeclared.",
+      "knobs": [],
+      "views": [
+        {
+          "name": "schedule",
+          "aka": [
+            "the schedule",
+            "week",
+            "weekly schedule",
+            "calendar"
+          ],
+          "enter": ".subtab-btn[data-view=\"schedule\"]",
+          "active": ".subtab-btn[data-view=\"schedule\"]"
+        },
+        {
+          "name": "sociogram",
+          "aka": [
+            "agent sociogram",
+            "the sociogram",
+            "agent map sociogram"
+          ],
+          "enter": ".subtab-btn[data-view=\"sociogram\"]",
+          "active": ".subtab-btn[data-view=\"sociogram\"]"
+        },
+        {
+          "name": "explorer",
+          "aka": [
+            "the explorer",
+            "table",
+            "agent table",
+            "list",
+            "agent explorer"
+          ],
+          "enter": ".subtab-btn[data-view=\"explorer\"]",
+          "active": ".subtab-btn[data-view=\"explorer\"]"
+        }
+      ],
+      "_views_note": "Three of these names -- sociogram, explorer, and the old aka `map` -- also name real TABS, which made them unreachable: destinations.json is authoritative and sub-views resolve only on `unresolved`, so `go sociogram` matched the Sociogram TOOL every time and threw the user across the app (Tom, 2026-07-26). Fixed in the shell, not by renaming: standing on a tab, that tab's own view wins, and `go <name> tab` forces the tab. `map` was still dropped as an alias because it collides with this tab's OWN name. The sociogram sub-view LAZILY fetches a ~25 MB artifact on first entry -- going there is a real download, not a toggle.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": ".subtab-btn[data-view=\"explorer\"]"
+          },
+          "select": ".exp-table tbody tr[data-task]",
+          "label": {
+            "sel": ".exp-name"
+          },
+          "noun": "agent",
+          "total": {
+            "sel": "#exp-count",
+            "re": "([\\d,]+) / [\\d,]+ agents"
+          },
+          "_note": "Rows are re-rendered on every filter/sort, so the roster is read live rather than cached. The table shows the FILTERED count and #exp-count carries 'N / M agents', so `what` can say which."
+        },
+        {
+          "kind": "dom",
+          "when": {
+            "active": ".subtab-btn[data-view=\"schedule\"]"
+          },
+          "select": "#legend-items .legend-item",
+          "label": {
+            "sel": ".legend-label"
+          },
+          "noun": "category",
+          "_note": "The schedule view draws its agents into a CANVAS, so the agents themselves are not DOM and cannot be walked until the canvas/data-bound adapter exists (prs_3d increment). What IS addressable is the legend: the categories, with counts. Declared honestly as categories rather than pretending the agents are reachable here.",
+          "plural": "categories"
+        },
+        {
+          "kind": "none",
+          "noun": "agent",
+          "_note": "The sociogram sub-view is a ~25 MB nested artifact with its own globals -- a graph roster there is the same work as the Community Explorer graph and prs_3d, not a reuse of the Sociogram's bespoke adapter."
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#exp-search, #exp-cat",
+          "reason": "the Explorer's own filter box and category select -- a filters dimension over a TABLE, which nothing binds yet",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#btn-play, #btn-pause, #btn-reset, #btn-narrate, #speed-select, #progress-bar-wrap",
+          "reason": "the schedule animation's transport: play/pause/reset/narrate/speed/scrub. A playback dimension over a canvas TIMELINE, deliberately distinct from the reader's playback -- collapsing the two would let `stop` mean two things",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#btn-skip, #btn-mute",
+          "reason": "the narration strip's own voice controls; a second speaker inside a tab, which needs the one-reader question answered before it is wired",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": ".exp-table th",
+          "reason": "column sorting -- an ordering dimension nothing else declares yet",
+          "next": "agent map increment 2"
+        },
+        {
+          "match": "#det-close, #legend-resize-handle, #narr-resize-handle, #det-resize-handle",
+          "reason": "detail-panel close and the pane drag handles",
+          "next": "agent map increment 2"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the agent table",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the rows scrolls them into view."
+        },
+        {
+          "id": "subtab_click",
+          "label": "Switch sub-view",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "go schedule | go sociogram | go explorer"
+        },
+        {
+          "id": "canvas_hover",
+          "label": "Hover an agent on the schedule canvas",
+          "status": "deferred",
+          "reason": "canvas-drawn, not DOM; needs the data-bound item adapter",
+          "planned": "agent map increment 2"
+        },
+        {
+          "id": "drag_resize",
+          "label": "Drag a pane divider",
+          "status": "excluded",
+          "reason": "pure layout; no state a spoken command should own"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": ".subtab-btn[data-view]",
+          "note": "The three sub-view buttons, reached by name with `go schedule|sociogram|explorer`. The sweep matches ELEMENTS and the coverage is a VERB, so they are declared here rather than left to look uncovered."
+        }
+      ]
+    },
+    "curriculum_tools": {
+      "aka": [
+        "curriculum tools",
+        "summa",
+        "summa explorer",
+        "the summa",
+        "curriculum dashboard",
+        "summa_explorer"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "open",
+        "close",
+        "read",
+        "summarize",
+        "stop",
+        "set"
+      ],
+      "_caps_note": "The first tab whose roster lives BEHIND the click. Parts and questions start closed, so `pick`/`next` -- which only ever MARKED an item -- could reach nothing here at all: with the tree collapsed there is nothing revealed to pick from, and no verb that opens it. So this tab is the one that made `open` general. `open` existed already but was wired to openNodeByLabel, a global that lives on wiki_narration.html and nowhere else, which is why every tab since the Sociogram has had to leave it out of caps. It is now DECLARED per item spec (`activate`), the same way `frame` and `total` are.",
+      "knobs": [
+        {
+          "id": "articles",
+          "label": "Show article rows",
+          "aka": [
+            "rows"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#show-articles"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ],
+          "_note": "Not a display preference. With it OFF, clicking a QUESTION stops expanding and jumps straight to that question's first available article (onClickQuestion) -- so the identical spoken command would mean two different things depending on a checkbox the voice user cannot see. The items spec therefore declares `requires_knob` and the shell puts it ON before walking, out loud (Tom, 2026-07-27: bind it, force it on before pick)."
+        },
+        {
+          "id": "mode",
+          "label": "Summa-in-1-year Transcript",
+          "aka": [
+            "version",
+            "text"
+          ],
+          "kind": "enum",
+          "bind": {
+            "on_class": "on",
+            "buttons": [
+              {
+                "v": "transcript",
+                "sel": "#btn-transcript"
+              },
+              {
+                "v": "synthesis",
+                "sel": "#btn-synthesis"
+              }
+            ]
+          },
+          "values": [
+            {
+              "v": "transcript",
+              "aka": [
+                "transcript",
+                "the transcript",
+                "summa in a year",
+                "original",
+                "reading"
+              ]
+            },
+            {
+              "v": "synthesis",
+              "aka": [
+                "synthesis",
+                "contemporary",
+                "contemporary synthesis",
+                "the synthesis",
+                "commentary"
+              ]
+            }
+          ],
+          "_note": "A SETTING, not a place: it changes how the open article is rendered, not which article you are on -- so it is a knob rather than a sub-view. It is drawn as two buttons, which knobs could not bind (a <select> or a checkbox only), and its winning class is `.on`, not the `.active` a view's test hard-codes. Declaring it as a view would have been mis-declaring it to fit the machinery; the `buttons` bind kind is the honest fix and is portable to every button-group toggle in the fan-out. Both sides are gated on the entry actually HAVING that file (switchMode returns early otherwise), and neither does anything until an article is open."
+        }
+      ],
+      "views": [
+        {
+          "name": "contents",
+          "aka": [
+            "the contents",
+            "table of contents",
+            "tree",
+            "index",
+            "toc"
+          ],
+          "enter": "#subtab-contents",
+          "active": "#subtab-contents"
+        },
+        {
+          "name": "sociogram",
+          "aka": [
+            "summa sociogram",
+            "the sociogram",
+            "summa map",
+            "summa graph"
+          ],
+          "enter": "#subtab-sociogram",
+          "active": "#subtab-sociogram"
+        }
+      ],
+      "_views_note": "`sociogram` names a real TAB as well, the third such collision in six manifests, and it is a TRUE sub-view rather than a name to rename away: it pulls in the Sociogram tool pre-cut to Summa nodes via applySummaSociogramPreset (Tom, 2026-07-27: 'just as under the Agent Map'). No new mechanism was needed -- 69c312d already settled this exact case: standing on a tab, that tab's own view wins, `go sociogram tab` forces the tool, and `go sociogram of curriculum tools` works from anywhere. Entering it LAZILY fetches wiki_narration.html, a ~28.7 MB artifact, on first entry: going there is a real download, not a toggle -- the same warning the Agent Map's sociogram view carries.",
+      "items": [
+        {
+          "kind": "dom",
+          "when": {
+            "active": "#subtab-contents"
+          },
+          "select": ".part-header, .q-row, .a-row.avail",
+          "label": {
+            "sel": ".part-name, .q-title-text, .a-title-text"
+          },
+          "noun": "entry",
+          "plural": "entries",
+          "activate": "click",
+          "selected": ".a-row.sel",
+          "reads": "#md-body",
+          "close": "#btn-back-index",
+          "requires_knob": {
+            "id": "articles",
+            "v": "on",
+            "why": "with it off, a question click jumps to an article instead of expanding, so `open` would have two meanings"
+          },
+          "_note": "ONE FLAT ROSTER OF VISIBLE ROWS at all three levels, not three level-scoped rosters. `when` can only ask which sub-view is active, and nothing on this page says which LEVEL a user is walking -- there is no such state to read, because a sighted user is not at a level either, they are looking at an open tree. So `next` walks exactly the visual reading order and `open` on a part or a question expands it, which makes the roster GROW as you go. That growth is reported, because expanding a container and loading an article are the same verb on the same tree and would otherwise sound identical.\nNO `total` DECLARED, deliberately. #stats-line counts ARTICLES (2656 of 2747 available) while this roster counts ROWS; wiring it up would make `what` say '24 of 2747 entries', which is false in unit rather than merely imprecise. Speaking the availability line honestly is its own declaration -- curriculum tools increment 2.\n`.a-row.avail` only: 91 articles have no transcript yet and carry NO click handler at all, so offering them would be offering a door that does not open.",
+          "_reads_note": "Where the page PUTS what a row opens -- the RENDERED MARKDOWN, not the pane around it. #content-area was the first guess and it wrapped the article in the page's own chrome: the reader opened with the ref, the title, the day, and then read the two mode buttons aloud ('Summa-in-1-year Transcript', 'Contemporary Synthesis?') before reaching a word of Aquinas. It also hid every per-block filter, because the whole article arrived as ONE child node whose textContent carried the provenance blockquotes and headings inside it. #md-body is the markdown itself, so its children are the blocks and the reader can tell prose from furniture. Without it `read` spoke the tree row -- 'A1 Article 1 Day 2', five words -- and called it the article.",
+          "read_variants": [
+            {
+              "say": [
+                "transcript",
+                "reading",
+                "summa"
+              ],
+              "knob": "mode",
+              "v": "transcript"
+            },
+            {
+              "say": [
+                "commentary",
+                "synthesis",
+                "contemporary commentary",
+                "contemporary synthesis"
+              ],
+              "knob": "mode",
+              "v": "synthesis"
+            }
+          ],
+          "_read_variants_note": "One article, two renderings. Asked for 'the commentary', a human guide turns to it and reads -- they do not explain that a toggle exists, and then wait to be asked again (Tom, 2026-07-27). A variant is NOT a new dimension: it writes the `mode` knob the tab already has, so `set mode synthesis` and `read the commentary` end in the same state. The read waits for the page's fetch, because reading straight after the click would speak the PREVIOUS rendering and announce it as the new one.",
+          "locate": {
+            "levels": [
+              {
+                "name": "part",
+                "say": [
+                  "part"
+                ],
+                "values": [
+                  {
+                    "v": "I",
+                    "aka": [
+                      "prima pars",
+                      "first part",
+                      "part one"
+                    ]
+                  },
+                  {
+                    "v": "I-II",
+                    "aka": [
+                      "prima secundae",
+                      "first of the second"
+                    ]
+                  },
+                  {
+                    "v": "II-II",
+                    "aka": [
+                      "secunda secundae",
+                      "second of the second"
+                    ]
+                  },
+                  {
+                    "v": "III",
+                    "aka": [
+                      "tertia pars",
+                      "third part"
+                    ]
+                  },
+                  {
+                    "v": "Suppl",
+                    "aka": [
+                      "supplementum",
+                      "supplement"
+                    ]
+                  }
+                ],
+                "context": {
+                  "sel": ".q-row.open, .q-row.live",
+                  "attr": "data-qkey",
+                  "re": "^(.+?)\\.Q"
+                }
+              },
+              {
+                "name": "question",
+                "say": [
+                  "question",
+                  "q"
+                ]
+              },
+              {
+                "name": "article",
+                "say": [
+                  "article",
+                  "a"
+                ]
+              }
+            ],
+            "targets": [
+              {
+                "needs": [
+                  "part",
+                  "question",
+                  "article"
+                ],
+                "sel": ".a-row[data-ref=\"{part}.Q{question}.A{article}\"]",
+                "label": ".a-title-text",
+                "open_first": [
+                  ".part-section[data-part-code=\"{part}\"] .part-header",
+                  ".q-row[data-qkey=\"{part}.Q{question}\"]"
+                ]
+              },
+              {
+                "needs": [
+                  "part",
+                  "question"
+                ],
+                "sel": ".q-row[data-qkey=\"{part}.Q{question}\"]",
+                "label": ".q-title-text",
+                "open_first": [
+                  ".part-section[data-part-code=\"{part}\"] .part-header"
+                ]
+              },
+              {
+                "needs": [
+                  "part"
+                ],
+                "sel": ".part-section[data-part-code=\"{part}\"] .part-header",
+                "label": ".part-name"
+              }
+            ]
+          },
+          "_locate_note": "An ADDRESS, which is none of the things `go` already resolves -- not a tab, not a sub-view, not a link. Summa's refs are I.Q4.A2 and only Summa knows that, so the scheme is declared and the shell only knows how to read `locate`. A level left unsaid is taken from where the user already is (the part of the question currently open) and the guess is SAID, because a wrong part is a plausible-sounding wrong answer rather than an obvious failure. `open_first` opens closed ancestors, since a target inside a collapsed container is addressable but not reachable -- marking it silently would be pointing at a shut door.",
+          "search": {
+            "source": "indexData",
+            "id": "{part_code}.Q{question}",
+            "fields": [
+              "question_title"
+            ],
+            "noun": "question",
+            "target": ".q-row[data-qkey=\"{part_code}.Q{question}\"]",
+            "open_first": [
+              ".part-section[data-part-code=\"{part_code}\"] .part-header"
+            ]
+          },
+          "_search_note": "What a docent knows without knowing everything: not the Summa by heart, but roughly where things live, and how to look (Tom, 2026-07-27: 'take me to a question on angelic knowledge'). The tab already holds all 611 question titles in its own indexData at boot, so this is a plain title match -- deliberately NOT a model call or an embedding. Deterministic, free, testable, and it never bills the broker. QUESTIONS ONLY in this increment: article titles are mostly null in the index (the row renders 'Article N'), so searching them would return a list of indistinguishable numbers. Resolved LAST in the `go` chain, after tabs, views, coordinates, renderings and links, because it is the broadest net and must never shadow something named outright. One clear winner lands; anything else is named back, since silently choosing among four is indistinguishable from being right when there is no screen."
+        },
+        {
+          "kind": "none",
+          "when": {
+            "active": "#subtab-sociogram"
+          },
+          "_note": "The Summa sociogram is the wiki_narration graph one document down, pre-cut to Summa nodes. Its nodes are walkable in principle -- revealedNodes() already knows this exact artifact -- but that reader is hard-wired to the tab's OWN document (ifWin/ifDoc) and does not take a frame the way domItems does. Generalising it is the prs_3d increment's job, not this one's, so the view is reachable and honest about being unwalkable rather than silently returning an empty roster."
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#left-resizer, .resizer",
+          "reason": "the pane splitter: positional, drag-only, and not state the voice guide reasons about -- same family as dragging a graph node"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#subtab-contents, #subtab-sociogram",
+          "reason": "reachable BY NAME via `go contents` / `go sociogram`, but the sweep matches elements and not verbs, so they are listed here to stay visible in the count",
+          "next": "n/a -- covered by the views declaration above"
+        },
+        {
+          "match": ".ctrl-sm",
+          "reason": "Collapse All: closes the whole tree at once. Real and useful, but it is the inverse of `open` and wants its own verb rather than a knob -- and with no `total` yet, a voice user who collapsed everything would hear only 'nothing is revealed to pick from'",
+          "next": "curriculum tools increment 2"
+        }
+      ],
+      "gestures": [
+        {
+          "id": "expand_part",
+          "label": "Click a part or question to expand it",
+          "status": "covered",
+          "by": [
+            "open",
+            "pick"
+          ],
+          "note": "`open` clicks the row the same way a mouse does; the roster grows and the result line says by how much."
+        },
+        {
+          "id": "open_article",
+          "label": "Click an available article to load it",
+          "status": "covered",
+          "by": [
+            "open",
+            "read"
+          ],
+          "note": "Same verb as expanding -- the tree does not distinguish them and neither does the guide."
+        },
+        {
+          "id": "scroll_tree",
+          "label": "Scroll the contents tree",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking scrolls each row into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "switch_subview",
+          "label": "Switch between Contents and the Summa sociogram",
+          "status": "covered",
+          "by": [
+            "go"
+          ],
+          "note": "`go contents` / `go sociogram`."
+        },
+        {
+          "id": "drag_splitter",
+          "label": "Drag the divider between the tree and the reading pane",
+          "status": "excluded",
+          "reason": "positional; pane width is not state the guide reasons about"
+        },
+        {
+          "id": "hover_row",
+          "label": "Hover a row for its highlight",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ]
+    },
+    "prs_3d": {
+      "aka": [
+        "narrative connectome",
+        "prs connectome",
+        "connectome",
+        "prs",
+        "narrative_connectome",
+        "prs_3d",
+        "3d"
+      ],
+      "tier": "T1",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "open",
+        "close",
+        "read",
+        "summarize",
+        "stop",
+        "set",
+        "fit",
+        "zoom",
+        "pan",
+        "rotate",
+        "show",
+        "hide",
+        "only",
+        "all",
+        "none",
+        "undo",
+        "redo",
+        "reset",
+        "restore",
+        "spin"
+      ],
+      "_caps_note": "THE FIRST TAB WITH NO ELEMENTS TO WALK. Its 507 narratives are drawn into a WebGL canvas -- the whole tab is one <div id=\"canvas-container\"> -- so there is nothing for domItems to enumerate and nothing for getClientRects to be asked about. The Sociogram looks like the same case and is not: d3 leaves an SVG circle per node behind, which is why revealedNodes could read `.node-circle` and pass for the general adapter. It never was one; it was the SVG case. So the roster here is read from the page's OWN data (`meshes`, the three.js scene objects) through declared dotted paths, and `open` is a declared CALL rather than a click -- see the items spec. The FILTER dimension is declared too (see `filters`), so this tab cuts data by voice on all three of its axes. NO `find` yet: the highlight dim reads a class stamp off SVG opacities and `search` ends in el.click(), both DOM-shaped. The CAMERA, by contrast, is now declared -- see `camera`. It was deferred for exactly one session on the grounds that execCamera was Sociogram-specific, and Tom's answer was the right one: a tab built around an orbiting camera that voice cannot turn is a room the guide can walk up to and never walk around.",
+      "knobs": [
+        {
+          "id": "edges",
+          "label": "Edges (threads)",
+          "aka": [
+            "threads",
+            "thread",
+            "lines"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-edges"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ],
+          "_note": "The P-R-S threads within one narrative. A bool rather than a member of the Sociogram's `edges` FAMILY on purpose: that family is a `showEdgeType` map batch-written through refreshSimLinks, and this tab has three independent booleans and one applyPRSFilters. Inheriting the family binds would be the exact mistake the Community Explorer manifest was warned off (2026-07-26)."
+        },
+        {
+          "id": "coils",
+          "label": "Coils",
+          "aka": [
+            "coil",
+            "synergistic",
+            "bridges"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-coils"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "generative",
+          "label": "Generative",
+          "aka": [
+            "chains",
+            "chain"
+          ],
+          "kind": "bool",
+          "bind": {
+            "checkbox": "#prs-chk-generative"
+          },
+          "values": [
+            {
+              "v": "on",
+              "aka": [
+                "on",
+                "show",
+                "shown",
+                "visible"
+              ]
+            },
+            {
+              "v": "off",
+              "aka": [
+                "off",
+                "hide",
+                "hidden"
+              ]
+            }
+          ]
+        }
+      ],
+      "_knobs_note": "Three booleans, no `views`. NO SUB-VIEWS AT ALL here, which is worth saying out loud because the standing trap of this fan-out is a view whose name is also a tab: three of the first six collided (2026-07-26). This tab has one surface, so there is nothing to collide.",
+      "items": {
+        "kind": "data",
+        "source": "meshes",
+        "where": {
+          "userData.type": "prs"
+        },
+        "visible": "visible",
+        "id": {
+          "path": "userData.triplet.id"
+        },
+        "label": {
+          "path": "userData.triplet.label",
+          "fallback": {
+            "path": "userData.triplet.problem",
+            "clip": 60
+          }
+        },
+        "dedupe": true,
+        "noun": "narrative",
+        "plural": "narratives",
+        "activate": {
+          "call": "prsSearchClickResult",
+          "arg": "id"
+        },
+        "selected": {
+          "path": "selectedMesh.userData.triplet.id"
+        },
+        "close": "#info-panel .close-btn",
+        "reads": "#info-content",
+        "total": {
+          "sel": "#prs-count",
+          "re": "\\/\\s*(\\d+)\\s+triplets"
+        },
+        "_note": "ONE ITEM IS THREE MESHES. A PRS narrative is drawn as a problem, a resource and a solution sharing one triplet id, so without `dedupe` the guide would walk every narrative three times and report a count the page itself contradicts -- updatePrsCount dedupes by triplet id for exactly this reason, and `total` reads that same line so the two numbers cannot drift.\n`visible` is the page's own three.js flag, which is what applyPRSFilters writes: it is the same question getClientRects answers in the DOM, asked where this page keeps the answer.\n`activate` names prsSearchClickResult, which is what the page's OWN search results call -- so voice opens a narrative by the same road a click does, including the camera move onto it. That matters more here than anywhere: with 507 nodes in three dimensions, selecting something off-screen and saying nothing would be indistinguishable from doing nothing.\nNO SORT, unlike the Sociogram's alphabetical roster. Source order is the order the page built them, grouped by tradition and then by date; the labels open \"P1 (Text, referenced in ...)\" so sorting them alphabetically would produce an order that means nothing to anyone.",
+        "_selected_note": "A window PATH, not a selector, because a canvas has nothing to carry a class. Same rule as Summa's `.a-row.sel` -- read the PAGE's marker rather than the click we just made -- and it is what closes the FIFTH which-document instance the 2026-07-27 handoff said to expect: `read` decides what to call the thing by asking whether the marked ELEMENT is still attached, which a canvas roster can never answer yes to, so the reader fell through to #right-page-title (absent here) and called a narrative \"this article\".",
+        "_label_note": "222 OF THE 453 NARRATIVES HAVE NO LABEL AT ALL -- the field is present and empty in the source data, and the page's own info panel opens with a blank <h3> for them. Without the fallback the guide skipped every one: it said \"231 narratives here\" over a tab drawing 453, and half the artifact was unreachable by voice because of a gap in the data rather than anything about the tab. The fallback is the narrative's PROBLEM, clipped: it is always present, it is what the node actually is, and it is the one string a user could plausibly say back (\"open positive geometry\"). Clipping can make two narratives share a handle; matchItems then names both and asks, which is the right failure. Fixing the underlying data is a job for the generator, not for the guide -- but the guide must not pretend the unnamed ones are not there."
+      },
+      "dim_coverage": [
+        {
+          "dim": "selection",
+          "match": "#info-panel .close-btn",
+          "note": "close -- the narrative panel. Named by the items spec, so the audit counts it there."
+        },
+        {
+          "dim": "camera",
+          "match": "#header .controls button:not(#btn-labels)",
+          "note": "Reset View -- what `fit` calls (resetCamera), declared per the tab's camera spec"
+        },
+        {
+          "dim": "filters",
+          "match": "[id^='prs-chk-']",
+          "note": "the whole filter panel -- All/per-tradition, All/per-discipline, All/per-decade -- reached by show/hide/only/all/none through the declared `filters` sections. The three edge knobs match this selector too and are covered as knobs, which is tested first."
+        }
+      ],
+      "controls_excluded": [
+        {
+          "match": "#prs-brightness",
+          "reason": "continuous field; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted, same as the Sociogram's brightness slider"
+        },
+        {
+          "match": "#prs-year-slider",
+          "reason": "continuous field, the same exclusion the Sociogram's #date-slider carries. The DISCRETE year filter beside it (the per-decade checkboxes) is the reachable form of the same idea and is deferred, not excluded"
+        },
+        {
+          "match": "#prs-help-btn, .prs-help-close, .prs-pop-btn",
+          "reason": "help popovers -- 'How filters work', 'What is this view?', and their close buttons: chrome, no view state"
+        }
+      ],
+      "controls_deferred": [
+        {
+          "match": "#prs-search-box, #prs-search-clear, #prs-search-reset",
+          "reason": "find / clear / reset. The tab has a real search (prsSearch dims non-matching meshes), but the shell's highlight dim reads a class stamp off SVG opacities and `search` ends in el.click() -- both DOM-shaped, neither reaches a canvas",
+          "next": "connectome increment 2"
+        },
+        {
+          "match": "#btn-labels",
+          "reason": "a BOOL DRAWN AS ONE BUTTON that toggles its own .active class. The three bind kinds are checkbox, select and a button GROUP (v -> sel); a single button fits none of them, and declaring it as a group of two entries pointing at the same selector would be mis-declaring it to fit the machinery -- the thing the `buttons` bind was invented to avoid",
+          "next": "connectome increment 2 -- a `toggle` bind kind, which several flat tabs will want"
+        },
+        {
+          "match": "#prs-left-page .close-btn",
+          "reason": "the LEFT page, which only an edge click opens (showEdgeInfo puts the source narrative there and the target on the right). `close` covers the right panel only, exactly the asymmetry the Sociogram's dismissLeftPage deferral names",
+          "next": "connectome increment 2, with edge selection"
+        }
+      ],
+      "_coverage_note": "Authored 2026-07-27 from the LIVE runtime sweep (window.CCLAudit), not from reading the HTML: the tradition, discipline and decade checkboxes are all innerHTML-written at boot, so the static file shows a fraction of the real surface. Deferred is not a synonym for excluded -- everything under controls_deferred is IN scope and reachable by hand today, and the shell test asserts the count exactly so a new control cannot quietly join the list.",
+      "gestures": [
+        {
+          "id": "node_click",
+          "label": "Click a node (open its narrative)",
+          "status": "covered",
+          "by": [
+            "open",
+            "close",
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "The roster IS the nodes, so walking it and opening one are the same surface a mouse reaches."
+        },
+        {
+          "id": "double_click_center",
+          "label": "Double-click a node to centre the camera on it",
+          "status": "covered",
+          "by": [
+            "open",
+            "pick"
+          ],
+          "note": "prsSearchClickResult moves the camera onto what it selects, so opening by voice already does what the double-click does."
+        },
+        {
+          "id": "edge_click",
+          "label": "Click an edge (its two endpoint narratives, side by side)",
+          "status": "deferred",
+          "reason": "coils, generative chains and threads carry no addressable id, so voice cannot name one -- the same gap the Sociogram's edge_click declares",
+          "planned": "connectome increment 2"
+        },
+        {
+          "id": "orbit",
+          "label": "Drag to orbit the camera",
+          "status": "covered",
+          "by": [
+            "rotate",
+            "spin",
+            "fit"
+          ],
+          "note": "rotate left|right swings round the vertical axis, up|down raises and lowers the eye, in the page's own clamped range. `spin left|right` is the same turn left running -- the one command here that does not end when the sentence does, which is why it has its own off switch and why `stop` halts it too."
+        },
+        {
+          "id": "wheel_zoom",
+          "label": "Wheel / pinch to zoom",
+          "status": "covered",
+          "by": [
+            "zoom",
+            "fit"
+          ],
+          "note": "zoom in|out steps the viewing distance between the page's own 15 and 120; `fit` is the way back to the whole thing."
+        },
+        {
+          "id": "hover",
+          "label": "Hover a node for its tooltip",
+          "status": "excluded",
+          "reason": "transient tooltip; leaves no state to read back, so there is nothing for write-returns-the-read to report"
+        },
+        {
+          "id": "filter_checkbox",
+          "label": "Check or uncheck a filter box (the data cut)",
+          "status": "covered",
+          "by": [
+            "show",
+            "hide",
+            "only",
+            "all",
+            "none",
+            "undo"
+          ],
+          "note": "only levin | hide disciplines | only cognitive | show the 1990s | none. Voice sets the box and dispatches change, so the page's own handler runs -- the same road the mouse takes."
+        }
+      ],
+      "camera": {
+        "kind": "orbit",
+        "apply": "updateCameraPosition",
+        "fit": "resetCamera",
+        "dolly": {
+          "path": "cameraRadius",
+          "factor": 1.5,
+          "clamp": [
+            15,
+            120
+          ]
+        },
+        "orbit": {
+          "theta": "cameraTheta",
+          "phi": "cameraPhi",
+          "step": 0.4,
+          "phi_clamp": [
+            0.1,
+            2.6704
+          ],
+          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer.",
+          "idle": "autoSpin"
+        },
+        "pan": {
+          "camera": "camera",
+          "target": "cameraTarget",
+          "step": 0.25
+        },
+        "_note": "AN ORBIT CAMERA IS THREE NUMBERS AND A POINT. theta swings round the vertical axis, phi raises and lowers the eye, radius is the viewing distance, and cameraTarget is what it looks at; updateCameraPosition is the page's own function that turns the four into a camera position. Every camera verb is a step on one of them, so the declaration is paths and step sizes rather than code -- the same rule the item spec follows.\nThe numbers are the PAGE's, not invented: the clamps mirror onWheel (15..120) and the drag handler's phi guard (0.1 .. PI*0.85), so voice can never put the camera somewhere the mouse cannot. The orbit step is 0.4 rad, about what an 80-pixel drag does at the page's own 0.005 rad/px; the pan step is a quarter of the current viewing distance, so it feels the same close in and far out, exactly as the graph's pan scales with zoom.\nPAN USES THE CAMERA'S OWN RIGHT AND UP, read off its world matrix. Panning along world axes would send the view sideways in a direction unrelated to what the user is looking at -- which after any rotation is nearly always."
+      },
+      "filters": {
+        "sections": [
+          {
+            "name": "traditions",
+            "state": "prsFilterState",
+            "checkbox": "#prs-chk-{k}",
+            "all": "#prs-chk-all"
+          },
+          {
+            "name": "disciplines",
+            "state": "prsDiscState",
+            "checkbox": "#prs-chk-disc-{slug}",
+            "all": "#prs-chk-all-discs"
+          },
+          {
+            "name": "years",
+            "state": "prsYearState",
+            "checkbox": "#prs-chk-year-{k}",
+            "all": "#prs-chk-all-years",
+            "leaf": "{k}s"
+          }
+        ],
+        "_note": "THREE INDEPENDENT AXES, ONE FLAT ROSTER -- which is exactly what the engine already wanted. resolveGroups resolves `section/leaf` keys, so declaring the sections gives `only levin`, `hide disciplines`, `only cognitive`, `none` and the ambiguity hedge with no new grammar and no new verbs. The Sociogram namespaces its own keys the same way (traditions/levin, structure/architecture); the difference was never the shape of the roster, only that the shell read it from one page's `groupVisibility`.\nWRITES GO THROUGH THE CHECKBOX, not the state object: the shell sets `checked` and dispatches `change`, so the page's own prsToggleThinker / prsToggleDisc / prsToggleYear run with their own apply chains. That matters here and is not ceremony -- disciplines must redraw the wedge meshes (applyDiscFilters) and years the decade rings (applyYearFilters) BEFORE the node pass, and the traditions handler keeps the All box in step. Writing prsFilterState directly would set the data cut and leave the drawing behind it, which is the class of bug this whole design keeps finding.\n`leaf` exists because the spoken name is not always the state key. Decades are numbers in the page and \"the 1990s\" out loud, so years declare `{k}s`; disciplines are two words in the page and must be ONE token to a parser that splits on spaces, so they slug to `cognitive-science` -- and `only cognitive` still lands by prefix.",
+        "_all_note": "`all` and `none` go through each section's own master checkbox rather than sweeping every key, so the page does its own sweep -- one dispatch per section instead of thirty-four, and no chance of the master box disagreeing with the boxes under it."
+      }
+    }
+  }
+}

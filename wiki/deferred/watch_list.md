@@ -18,13 +18,15 @@ WATCH-002:
   Source: PROP-2026-07-19-003 (Wright — "N.T. Wright: Who is This God?", Between Beliefs / KSBJ, posted 2026-07-17)
 
   Condition: The episode's actual content becomes assessable — i.e. EITHER (a) Tom listens to the audio and records a disposition, OR (b) body text / transcript / show notes appear at https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/ or the episode becomes indexed in search.
-  Check method: Weekly — fetch the source URL looking for body text beyond the bare media embed; plus targeted web search for the episode title + "Between Beliefs" / KSBJ.
+  Check method: Weekly — fetch the source URL looking for body text beyond the bare media embed; plus targeted web search for the episode title + "Between Beliefs" / KSBJ. [EXTENDED 2026-07-28: also check whether captions/transcript are available for the embedded YouTube video `vshC_TxwrVo`, which would make the content assessable without Tom listening in real time.]
   Check cadence: Weekly
 
-  Last checked: 2026-07-21
-  Check count: 1
+  Last checked: 2026-07-28
+  Check count: 2
   Result history:
     - 2026-07-21: Web search for the episode ("N.T. Wright 'Who is This God' Between Beliefs KSBJ 2026 podcast") returned only the generic NTWrightPage Books category page — no episode entry, no transcript, no show notes. Condition NOT met. Matches the proposal's own assessment (page is a bare media embed; `content_verified: false`).
+    - 2026-07-28: Both halves of the check method executed. (a) Fetched the source URL (HTTP 200, 53KB). `entry-content` contains exactly one element: a `wp-block-embed is-type-video is-provider-youtube` figure wrapping `https://www.youtube.com/embed/vshC_TxwrVo` (title "NT Wright: Who is This God?"). The only `<p>` in the document is the footer copyright line. No body text, no show notes, no transcript. Yoast reports "Est. reading time: 1 minute"; `article:modified_time` still 2026-07-17T01:11:13Z — page unchanged since publication. (b) Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ 2026 transcript) returned no episode-specific result; hits were the NTWrightPage Books/Audio-Video category pages and unrelated Wright interviews (OpenTheo, Kate Bowler, Theology in the Raw). Condition NOT met.
+      NEW THIS CHECK — the embed is **YouTube**, not audio-only. Video ID `vshC_TxwrVo` (https://www.youtube.com/watch?v=vshC_TxwrVo). YouTube auto-captions are a plausible transcript route that the original check method did not contemplate. Check method extended below.
 
   On resolution:
     Action: Notify Tom that the content is now assessable, and re-queue a proposal for review.
@@ -47,10 +49,11 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-07-21
-  Check count: 1
+  Last checked: 2026-07-28
+  Check count: 2
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
+    - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -3021,3 +3024,373 @@ Either way the disposition is unrecorded and the source files are gone.
 ---
 
 *Run completed 2026-07-21.*
+
+## AGENT 16 RUN SUMMARY — 2026-07-22
+
+**Run context:**
+- One day since last logged run (2026-07-21). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both are on weekly cadence and next due 2026-07-28 — nothing due today. No new intake in any channel.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone. `grep -L TRACKED-16` returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **15 files, unchanged** — latest remains `2026-07-20_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-20.
+- Channel 2 (agent-deferral) and Channel 3 (human-watch): `wiki/deferred/` tree confirmed — `watch_list.md` plus `resolved/2026-05-12_WATCH-001.md`. No `DEFERRED-HYPOTHESIS` markers anywhere in `inbox/`. Both channels operational and empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` now holds **2 items** (was 0 at end of 07-21): `2026-07-21_hoffman_trace-institute-whitepaper.md` (PROP-2026-07-21-001) and `2026-07-21_hoffman_traces-of-consciousness-primary.md` (PROP-2026-07-21-002). Both are fresh Hoffman tradition-agent proposals, `status: pending`, with **no CONDITIONAL / TRACKED-16 / DEFERRED-HYPOTHESIS tags** (grep confirmed zero matches) — awaiting Tom's review, **not Agent 16 intake.** `approved/` stands at 252, `denied/` at 1.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, carried):** `tools/generate_review_page.py` (~line 304) emits position-based decision IDs; card/button ID offset around the 07-19 items can record a decision against the wrong proposal. Recommended fix **before the next review pass** — now more urgent with a rebuilt pending queue.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,060 lines / ~226 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due until 2026-07-28. Decision archive coverage current through 2026-07-20; pending queue rebuilt to 2 (fresh Hoffman proposals awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position-ID fix (correctness-critical, before next review pass); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-22.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-23
+
+**Run context:**
+- One day since last logged run (2026-07-22). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both on weekly cadence, next due 2026-07-28 — nothing due today. No new intake in any of the three channels.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (frontmatter carries `tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). Already tracked; **no new untracked items.**
+- `wiki/review/archive/`: **15 files, unchanged** — latest remains `2026-07-20_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-20.
+- Channel 2 (agent-deferral): `grep -r "DEFERRED-HYPOTHESIS" inbox/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` now holds **7 items** (was 2 at end of 07-22). Five new tradition-agent proposals filed 2026-07-22 joined the two carried Hoffman items: `2026-07-22_mcgilchrist_ai-never-brain.md` (PROP-2026-07-22-001), `2026-07-22_mcgilchrist_commencement-2026.md` (-002), `2026-07-22_kastrup_ai-awakening-chandaria.md` (-003), `2026-07-22_kastrup_timalsina-suffering-joy.md` (-004), `2026-07-22_carroll_mindscape-361-bassler-bacterial-communication.md` (-005). All `status: pending`; `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all seven await Tom's review, **not Agent 16 intake.** `approved/` stands at 252, `denied/` at 1.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, carried):** `tools/generate_review_page.py` (~line 304) emits position-based decision IDs; the card/button ID offset around the 07-19 items can record a decision against the wrong proposal. Recommended fix **before the next review pass** — more urgent now with seven items queued for the next review.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,100 lines / ~237 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due until 2026-07-28. Decision archive coverage current through 2026-07-20; pending queue grew to 7 (five new 07-22 tradition proposals + two carried Hoffman items, all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position-ID fix (correctness-critical, before next review pass); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-23.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-24
+
+**Run context:**
+- One day since last logged run (2026-07-23). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both on weekly cadence, next due 2026-07-28 — nothing due today. No new intake in any of the three channels.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (frontmatter carries `tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). `grep -L TRACKED-16` returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **15 files, unchanged** — latest remains `2026-07-20_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-20.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` now holds **9 items** (was 7 at end of 07-23). Two new tradition-agent proposals filed 2026-07-23 joined the seven carried items: `2026-07-23_fredrickson_positively-in-sync-convergent-validity.md` and `2026-07-23_stump_cajetan-time-eternity-contingent-futures.md`. All `status: pending`; `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all nine await Tom's review, **not Agent 16 intake.** `approved/` stands at 252, `denied/` at 1. The last review pass (2026-07-20) is now 4 days old.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, carried):** `tools/generate_review_page.py` (~line 304) emits position-based decision IDs; the card/button ID offset around the 07-19 items can record a decision against the wrong proposal. Recommended fix **before the next review pass** — nine items are now queued for that pass.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,150 lines / ~240 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due until 2026-07-28. Decision archive coverage current through 2026-07-20; pending queue grew to 9 (two new 07-23 tradition proposals + seven carried, all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position-ID fix (correctness-critical, before next review pass); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-24.*
+
+## AGENT 16 RUN SUMMARY — 2026-07-25
+
+**Run context:**
+- One day since last logged run (2026-07-24). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both on weekly cadence, next due 2026-07-28 — nothing due today. **One new Channel 1 decision file appeared since last run** (`2026-07-23_decisions.md`) and was scanned; it produced no Agent 16 intake (see below). Channels 2 and 3 empty.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (`tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). Untracked-scan (`grep -L TRACKED-16`) returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **16 files** — up one from last run. New file `2026-07-23_decisions.md` present (prior runs reported coverage through 07-20; the 07-23 file had not yet been written at those runs). **Scanned in full:** two real APPROVEs — PROP-2026-07-23-001 (Fredrickson, "Positively in-sync: Convergent Validity") and PROP-2026-07-23-002 (Stump, "Cajetan on Time & Eternity / Contingent Futures") — plus PROP-2026-07-23-003 through -009, all APPROVE **NO-OP phantom IDs** (no proposal files; emitted by the review page's hardcoded 9-element `submitDecisions()` pids array against a 2-card page). **No CHANGE / CHECK / CONDITIONAL disposition anywhere in the file → no new Channel 1 intake for Agent 16.** Coverage now current through **2026-07-23**.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **TOOLING FLAG — now DEMONSTRATED, not merely predicted (correctness-critical, carried, upgraded):** the position-based / hardcoded-pids defect in `tools/generate_review_page.py` **actually manifested** in the 2026-07-23 review pass. That page rendered **2** real cards but `submitDecisions()` carried a **9-element** pids array, so the decision archive recorded APPROVEs for seven phantom IDs (PROP-2026-07-23-003…-009) that correspond to no proposal files. Here the fallout was benign (extra IDs mapped to nothing, so nothing was mis-ingested), but it is the same mechanism that on 2026-07-20 plausibly dropped two real proposals with no recorded disposition (the still-open INTEGRITY FLAG → WATCH-002/003). Two live demonstrations now exist. **Fix recommended before the next review pass.**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` holds **8 items** (was 9 at end of 07-24). Net change: the two 2026-07-23 items (Fredrickson, Stump) were APPROVED and moved out; one new proposal arrived — `2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time.md`. Current queue: two Hoffman (07-21), three 07-22 (mcgilchrist ×2, kastrup ×2 — note one kastrup + the carroll-361 also 07-22), and the new 07-24 carroll AMA. `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all eight await Tom's review, **not Agent 16 intake.** `approved/` now **254** (was 252; +2 from the 07-23 pass), `denied/` **1**.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,150+ lines / ~245 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due until 2026-07-28. Decision archive coverage advanced to 2026-07-23 (07-23 pass scanned: 2 real APPROVEs + 7 phantom NO-OPs, no Agent 16 intake). Pending queue 8 (all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position/pids-ID fix — **now correctness-critical and demonstrated twice**, before next review pass; (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-25.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-26
+
+**Run context:**
+- One day since last logged run (2026-07-25). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both on weekly cadence, last checked 2026-07-21, **next due 2026-07-28** — nothing due today (2 days early). No new intake in any of the three channels.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (`tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). Untracked-scan (`grep -L TRACKED-16`) returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **16 files, unchanged** — latest remains `2026-07-23_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-23.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence, 2 days early). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence, 2 days early). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised.
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` holds **9 items** (was 8 at end of 07-25). One new proposal arrived: `2026-07-25_wolfram_theory-of-bugs.md` (`status: pending`). `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all nine await Tom's review, **not Agent 16 intake.** `approved/` stands at **254**, `denied/` at **1**. The last review pass (2026-07-23) is now 3 days old.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, demonstrated twice, carried):** `tools/generate_review_page.py` (~line 304) emits position-based / hardcoded-pids decision IDs. Manifested benignly on 2026-07-23 (2 real cards, 9-element pids array → 7 phantom NO-OP APPROVEs) and is the same mechanism that plausibly dropped two real proposals on 2026-07-20 (→ WATCH-002/003). **Fix recommended before the next review pass** — nine items are now queued for it.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,190 lines / ~246 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded).
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due until 2026-07-28. Decision archive coverage current through 2026-07-23; pending queue 9 (one new 07-25 Wolfram proposal + eight carried, all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position/pids-ID fix (correctness-critical, demonstrated twice, before next review pass); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-26.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-27
+
+**Run context:**
+- One day since last logged run (2026-07-26). Steady-state monitoring run. Two items remain WATCHING (WATCH-002, WATCH-003); both on weekly cadence, last checked 2026-07-21, **next due 2026-07-28** — nothing due today (1 day early). No new intake in any of the three channels.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (`tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). Untracked-scan (`grep -rL TRACKED-16`) returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **16 files, unchanged** — latest remains `2026-07-23_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-23.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?"): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence, 1 day early). Still WATCHING.
+- **WATCH-003** (Rohr, Beatitudes Week Two): weekly cadence, last checked 2026-07-21, **next due 2026-07-28 — not checked this run** (off-cadence, 1 day early). Still WATCHING.
+
+**Stale Item Check:**
+- Both active items at check count 1. No STALE-WATCH-FLAGs raised. (Note: WATCH-002/003 are held open by the still-open INTEGRITY FLAG — a Tom/human dependency — not by repeated failed condition checks, so the 6-check stale threshold does not apply.)
+
+**Watch List Status:**
+- Items checked: 0 (none due today)
+- Items resolved: 0
+- Items still watching: 2 (WATCH-002, WATCH-003)
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` holds **12 items** (was 9 at end of 07-26). Three new proposals arrived, all dated 2026-07-26: `2026-07-26_rohr_contemplative-exemplars-weekly-summary.md`, `2026-07-26_rohr_in-love-with-scripture.md`, and `2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md`. `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all twelve await Tom's review, **not Agent 16 intake.** `approved/` stands at **254**, `denied/` at **1**. The last review pass (2026-07-23) is now 4 days old.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, demonstrated twice, carried):** `tools/generate_review_page.py` (~line 304) emits position-based / hardcoded-pids decision IDs. Manifested benignly on 2026-07-23 (2 real cards, 9-element pids array → 7 phantom NO-OP APPROVEs) and is the same mechanism that plausibly dropped two real proposals on 2026-07-20 (→ WATCH-002/003). **Fix recommended before the next review pass** — twelve items are now queued for it.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,290 lines / ~254 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-07-28 (tomorrow) — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded). Both weekly-cadence checks fall due; this is their first re-check since intake (→ check count 2).
+
+**Agent 16 Status:** Operational. Two items WATCHING, both due tomorrow (2026-07-28). Decision archive coverage current through 2026-07-23; pending queue grew to 12 (three new 07-26 proposals + nine carried, all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position/pids-ID fix (correctness-critical, demonstrated twice, before next review pass); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-27.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-28
+
+**Run context:**
+- One day since last logged run (2026-07-27). **Both active items were due today** — first re-check since intake on 2026-07-21. Both checks executed in full; neither condition met; both advance to check count 2. No new intake in any of the three channels.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone (`tracked_by: agent-16`, `tracking_id: WATCH-001`, `resolved_by: agent-16`). Untracked-scan (`grep -rL TRACKED-16`) returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **16 files, unchanged** — latest remains `2026-07-23_decisions.md`. No new decision file since last run; **no new Channel 1 intake by disposition.** Coverage current through 2026-07-23.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+
+**Condition Checks (executed this run):**
+- **WATCH-002** (Wright, "Who is This God?") — **CHECKED, condition NOT met.** Source URL fetched (HTTP 200, 53KB): `entry-content` holds a single YouTube embed figure and nothing else; the document's only `<p>` is the footer copyright; `article:modified_time` unchanged at 2026-07-17T01:11:13Z. Targeted web search returned no episode-specific result (only NTWrightPage category pages and unrelated Wright interviews). **New finding:** the embed is video, not audio — YouTube ID `vshC_TxwrVo` (https://www.youtube.com/watch?v=vshC_TxwrVo). Auto-captions are a transcript route the original check method did not contemplate; check method extended accordingly. Last checked → 2026-07-28, check count → 2. Still WATCHING. Next check 2026-08-04.
+- **WATCH-003** (Rohr, Beatitudes Week Two) — **CHECKED, condition NOT met.** No decision file written since 2026-07-23, so no later disposition can exist; content grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/` returned zero matches; file still absent from every proposals subfolder and the vault. Last checked → 2026-07-28, check count → 2. Still WATCHING. Next check 2026-08-04.
+
+**Stale Item Check:**
+- Both active items now at check count 2 — well below the 6-check threshold. No STALE-WATCH-FLAGs raised. (Standing note: WATCH-002/003 are held open by the INTEGRITY FLAG, a Tom/human dependency, not by repeated failed condition checks; the stale threshold is the wrong instrument for them. If Tom resolves the integrity question, both close immediately.)
+
+**Watch List Status:**
+- Items checked: 2 (WATCH-002, WATCH-003)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE (for awareness):** `inbox/proposals/pending/` holds **16 items** (was 12 at end of 07-27). Four new proposals arrived, all dated 2026-07-27: `2026-07-27_friston_self-orthogonalizing-attractor-networks.md`, `2026-07-27_levin_alignment-virtual-governor.md`, `2026-07-27_levin_cognitive-glue-journey.md`, `2026-07-27_levin_intelligence-from-learnable-novelty.md`. `grep` for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` across pending returned **zero matches** — all sixteen await Tom's review, **not Agent 16 intake.** `approved/` stands at **254**, `denied/` at **1**. The last review pass (2026-07-23) is now 5 days old; the queue has doubled since it (8 → 16).
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Content recoverable from `review/2026-07-20_review.html` and both live source URLs. Agent 16 has tracked but not acted — restoring proposals or recording retroactive dispositions is outside remit.
+- **TOOLING FLAG — still open (correctness-critical, demonstrated twice, carried):** `tools/generate_review_page.py` (~line 304) emits position-based / hardcoded-pids decision IDs. Manifested benignly on 2026-07-23 (2 real cards, 9-element pids array → 7 phantom NO-OP APPROVEs) and is the same mechanism that plausibly dropped two real proposals on 2026-07-20 (→ WATCH-002/003). **Fix recommended before the next review pass** — sixteen items are now queued for it, the largest queue since the 07-20 pass that lost two items. Rising exposure.
+- **MAINTENANCE FLAG — watch-list file growth (raised 2026-07-18, still open):** `watch_list.md` is now ~3,340 lines / ~258 KB; ACTIVE ITEMS + RESOLVED INDEX are <2% of the file. Recommend rolling the RUN LOG into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`), leaving active items + resolved index + trailing ~14 days. No data lost. Tom's call; not executed unilaterally.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-04 — WATCH-002 (Wright episode content availability, now including YouTube caption availability for `vshC_TxwrVo`), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 3.
+
+**Agent 16 Status:** Operational. Two items WATCHING, both checked this run, neither resolved, both next due 2026-08-04. Decision archive coverage current through 2026-07-23; pending queue grew to 16 (four new 07-27 proposals + twelve carried, all awaiting Tom). **Open for Tom (all carried, none new):** (1) resolve the two undisposed 2026-07-19 proposals; (2) the `generate_review_page.py` position/pids-ID fix (correctness-critical, demonstrated twice, before next review pass — now guarding a 16-item queue); (3) the needs_review tombstone deletion; (4) the run-log archival recommendation.
+
+---
+
+*Run completed 2026-07-28.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-07-29
+
+**Run context:**
+- One day since last logged run (2026-07-28). **No watch item was due today** — WATCH-002 and WATCH-003 are on weekly cadence and were both checked 2026-07-28; next due 2026-08-04. Neither check count was incremented. No new intake in any of the three channels. The substantive finding this run is in the TOOLING FLAG, which was re-examined at source and is materially worse than previously recorded.
+
+**Intake Processing:**
+- `wiki/inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, the unchanged WATCH-001 superseded tombstone. Untracked-scan (`grep -rL "TRACKED-16"`) returned nothing: **no new untracked items.**
+- `wiki/review/archive/`: **16 files, unchanged** — latest still `2026-07-23_decisions.md`. **No new Channel 1 intake by disposition.** Coverage current through 2026-07-23; no review pass in 6 days.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/` → zero matches. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` / `TRACKED-16` / `DEFERRED-HYPOTHESIS` → zero matches. All pending items await Tom, not Agent 16.
+
+**Condition Checks:**
+- **None due.** WATCH-002 and WATCH-003 both last checked 2026-07-28, weekly cadence, next due 2026-08-04. Check counts remain at 2. Both still WATCHING.
+- *Incidental observation (does not count as a check, no counter incremented):* the file-based half of WATCH-003's condition was visible during intake scanning — `review/archive/` is unchanged at 16 files, and `find` across the vault for `*beatitudes-week-two*` and `*who-is-this-god*` returned nothing. Condition still not met. This is recorded for continuity only; the formal check happens 2026-08-04.
+
+**Stale Item Check:**
+- Both active items at check count 2, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** (Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks. The stale threshold is the wrong instrument for them.)
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING; one resolved item indexed (WATCH-001); intake clean across all three channels.
+
+---
+
+### TOOLING FLAG — ESCALATED 2026-07-29 — the review-page ID bug is a *half-applied fix*, and it now mismatches 100% of the queue
+
+Previous runs recorded this as "position-based decision IDs." That description is incomplete. Agent 16 read `tools/generate_review_page.py` at source this run (mtime 2026-05-18 20:49 — **unchanged since before both the 07-20 and 07-23 passes**). The actual state:
+
+- **Line 116 — fixed.** `pid = p.get("proposal_id") or f"PROP-{run_date}-{i+1:03d}"`, with the comment *"Use the file's own proposal_id as the stable display ID — never renumber."* Card IDs (line 141), all four decision buttons (156–168), badges, and sidebar items all key off this **real** `proposal_id`. So `decisions[...]` is populated under real IDs.
+- **Line 304 — not fixed.** `submitDecisions()` builds its own array: `const pids = [f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]` — **purely positional, stamped with the run date**, ignoring `proposal_id` entirely. It then emits `decisions[pid] || 'PENDING'` for each synthetic ID.
+
+**The two halves disagree.** Decisions are *written* under real proposal_ids and *read back* under synthetic run-date IDs. Every proposal whose real `proposal_id` does not coincidentally equal its synthetic positional ID has its decision silently dropped and replaced with a phantom `PENDING` line under a nonexistent ID.
+
+**Quantified against the current queue — this is now a total-loss condition.** All 18 pending proposals carry proposal_ids dated `PROP-2026-07-21-*` through `PROP-2026-07-28-*`. A review page generated today (run_date 2026-07-29) would emit `PROP-2026-07-29-001 … -018`. **Intersection with the real IDs: empty.** Not "some items at risk" — *every one of the 18 decisions Tom records would be discarded*, and the decision email would contain 18 phantom IDs matching no file in the vault.
+
+**This also explains why the bug has looked intermittent:**
+- **2026-07-23 — benign.** Both real proposals were filed the same day as the review run, so `PROP-2026-07-23-001/002` matched by coincidence. The damage was confined to the 7 phantom trailing IDs already recorded in that archive.
+- **2026-07-20 — correction to the earlier reading.** Prior runs named the pids bug as the plausible mechanism for the two lost proposals. On this evidence that attribution is **probably wrong**, and Agent 16 withdraws it. The 07-20 page held cards dated 07-01…07-20; under this code *none* of the 36 would have matched, yet 34 approvals were recorded cleanly. The archive header itself says *"Blanket approval … Recorded Mac-side in the standard decision-archive format"* — i.e. that pass did not route through `submitDecisions()`. **The more likely mechanism for the 07-20 loss is the manual bulk `pending/ → approved/` move dropping two items**, which is also consistent with the exact correspondence to the two the sewing agent had flagged. (Per Rule 7, one reading is picked: manual-move loss. The pids bug remains real and independently serious — it is simply not the culprit here.)
+
+**Recommendation — unchanged in substance, raised in urgency.** Replace line 304 with the real IDs, e.g. emit the same list the cards use:
+`const pids = {[p.get("proposal_id") or f"PROP-{run_date}-{i+1:03d}" for i, p in enumerate(proposals)]!r};`
+This is a one-line change and removes both failure modes (dropped real decisions, phantom trailing IDs). **It should land before the next button-driven review pass.** Eighteen items are queued and the last pass was 6 days ago. Agent 16 has not edited the file — tooling repair is outside remit.
+
+---
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE:** `inbox/proposals/pending/` holds **18 items** (was 16 at end of 07-28). Two new proposals arrived, both dated 2026-07-28: `2026-07-28_hoffman_spacetime-headset-essay.md`, `2026-07-28_hawkins_heterarchy-thalamic-transform-explainer.md`. `approved/` stands at **254**, `denied/` at **1**. Queue has more than doubled since the 07-23 pass.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run by filename search across the whole vault and content grep across `review/archive/` and `inbox/`. Content remains recoverable from `review/2026-07-20_review.html` and both live source URLs. **See the TOOLING FLAG above for a revised view of the likely mechanism** — this does not change what Tom needs to decide, only the story about how it happened.
+- **MAINTENANCE FLAG — ESCALATED 2026-07-29, now operationally binding:** `watch_list.md` has passed **256 KB** (3,329 lines / ~261 KB before this entry). It can **no longer be opened by the Read tool**, which refuses files above that ceiling — Agent 16 had to fall back to line-ranged shell reads of its own watch list this run. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file; the RUN LOG is the rest. Recommend rolling the run log into dated archives (e.g. `wiki/deferred/run_log/2026-Q2.md`, `2026-Q3.md`), leaving active items + resolved index + the trailing ~14 days in place. No data lost. Still Tom's call — not executed unilaterally — but this has crossed from housekeeping into a working constraint.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-04 — WATCH-002 (Wright episode content availability, including YouTube caption availability for `vshC_TxwrVo`), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 3.
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due today, both next due 2026-08-04. No intake in any channel. Decision archive coverage current through 2026-07-23; pending queue grew to 18. **Open for Tom:** (1) **the `generate_review_page.py` line-304 fix — escalated, would currently discard all 18 decisions; do this before the next review pass**; (2) resolve the two undisposed 2026-07-19 proposals; (3) the watch-list run-log archival — escalated, the file now exceeds the Read-tool ceiling; (4) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-07-29.*

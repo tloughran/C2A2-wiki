@@ -58,7 +58,7 @@ article two whether an angel knows particular things the problem here is the one
 
 [00:04:00] mind of the carpenter before he goes out and makes that table and so God can impart that knowledge into the mind of angels and in a manner that not only reveals to them Humanity in general as we said before but also the particular material of each particular person which combined with that General essence or nature constitutes you and I God can do this because he is the Creator sustainer and thereby knower of all the aspects of you and I at any moment and so can impart again that knowledge to his
 
-[00:04:29] angels 
+[00:04:29] angels
 **Article 3 — Whether the angels know the future**
 
 article 3 whether Angels know the future the future can be known in two ways the first way is by looking at the various causes and anticipating the effect if I let go of this Stone it will fall hence I can predict the future but this knowledge is by no means infallible I could let go of the stone and a gust of wind carry it away for all I know this is an imperfect way of predicting the future we can even take these kinds of guesses with rational creatures if I say x to my cooworker worker why will
@@ -67,7 +67,7 @@ article 3 whether Angels know the future the future can be known in two ways the
 
 [00:05:32] time and Embraces all time and therefore God's one glance is cast over all things which happen in all time as present before him but the mind of an Angel and every created intellect fall far short of God's eternity hence the future as it is in itself cannot be known by any
 
-[00:05:52] created intellect 
+[00:05:52] created intellect
 **Article 4 — Whether the angels know the secret thoughts of the heart**
 
 Article 4 whether Angels know secret thoughts we begin with the words of scripture Aquinas writes what is proper to God does not belong to the angels but it is proper to God to read the secrets of Hearts according to Jeremiah 179 the heart is perverse above all things and unsearchable who can know it I am the Lord who searches the heart therefore Angels do not know the secrets of Hearts I don't know about you but I'm not so concerned about the good Angels knowing
@@ -80,7 +80,7 @@ Article 4 whether Angels know secret thoughts we begin with the words of scriptu
 
 [00:07:59] the Ephesians for we are not contending against flesh and blood but against the principalities against the powers against the world rulers of this present Darkness against the spiritual host of wickedness in the Heavenly places
 
-[00:08:13] 
+[00:08:13]
 **Article 5 — Whether the angels know the mysteries of grace**
 
 Article 5 whether the Angels know the mysteries of Grace did the Angels know before the world was made about the Incarnation the institution of the sacraments Aquinas his response is grounded in scripture especially St Paul who says in the letter to Ephesians none of the rulers of this age understood this for if they had they would not have crucified the Lord Of Glory but as it is written what no I has Seen Nor Ear heard nor the heart of man conceived what God has prepared for those who love him God
@@ -103,7 +103,7 @@ the first article whether the Angel's intellect is sometimes in potential someti
 
 [00:10:55] understanding like the existence of God as we've said before but they can consider different things at different times like we do so there is that potential in them also then when it comes to divinely revealed things angels have both the potential to learn and the potential to consider different aspects of that Revelation at different times as they gaze beatifically into the Trinity
 
-[00:11:16] 
+[00:11:16]
 **Article 2 — Whether an angel can understand many things at the same time**
 
 article two whether an angel can understand many things at the same time Aquinas gives us our guiding principle to this question in the following words to understand many things as one is so to speak to understand one thing so when you understand the one thing a house notice how many other things you also understand at that same time what a roof is foundation door ceiling in this way the angel can understand many things and understanding the one Triune God through
@@ -112,7 +112,7 @@ article two whether an angel can understand many things at the same time Aquinas
 
 [00:12:18] knowing still the angels can know many things and knowing one thing one idea like us with the house but that knowledge is limited to the scope of which that one idea pertains in Aquinas's words gilby translation he says but as regards the knowledge which angels have of things through the intelligible likenesses with which their minds are naturally endowed they can know such things simultaneously as are included in one such likeness but not those that are not so included article
 
-[00:12:50] 
+[00:12:50]
 **Article 3 — Whether the angel's knowledge is discursive**
 
 three whether an angel's knowledge is discursive in this article we encounter a distinction which Aquinas will make later in the Summa and a Fuller way between what we call the act of understanding and the act of reasoning that's in question 79 of this prap pars he'll give that distinction in these words for to understand is simply to apprehend intelligible truth and to reason is to advance from one thing understood to another so as to know an
@@ -123,7 +123,7 @@ three whether an angel's knowledge is discursive in this article we encounter a 
 
 [00:14:25] feebleness of their intellectual light for if they possess the fullness of intellectual light like the Angels then in the first aspect of principles they would at once comprehend their whole range by perceiving whatever could be
 
-[00:14:39] reasoned out from them 
+[00:14:39] reasoned out from them
 **Article 4 — Whether the angels understand by composing and dividing**
 
 Article 4 whether the Angels understand by composing and dividing as human beings we compose and divide in our comparison of the predicate with the subject as an example take the English sentence containing the subject man and the predicate the adjective good in connecting them or comparing them to one another we can say either man is good that would be what
@@ -132,7 +132,7 @@ Article 4 whether the Angels understand by composing and dividing as human being
 
 [00:15:39] predicate as virtually contained within it an angel doesn't have to put the thought together sin is evil to know it to be true the angel would simply know in knowing what sin is the subject the composite truth that it is evil as being virtually contained within it Angels do not compose or divide they do not reason they understand things in a more simple
 
-[00:16:05] total intuitive way 
+[00:16:05] total intuitive way
 **Article 5 — Whether there can be falsehood in the angel's intellect**
 
 Article Five whether there can be falsehood in the intellect of an Angel this article we will answer quite briefly but the consequences of it are much farther reaching than solely a treatment on the Angels epistemological certainty or the reliability of human cognition as we know it is also at stake in this question but first the response to the article in the then a brief aside on its broader reaching relevance Aquinas writes Aristotle says that the intelligence is always true Augustine

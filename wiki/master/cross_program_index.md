@@ -1273,7 +1273,7 @@ Strong signal to **[[05_mcgilchrist_agent]]**: Berman's directed vs. involuntary
 ### Sean Carroll (PROP-2026-07-17-001)
 Strong, unusually direct signals this episode:
 - [[Hoffman Agent]] — a listener asks Carroll to respond to Hoffman's "Trace" mathematics (Markov-chain-based) aimed at deriving special and general relativity en route to a theory of consciousness. This is a live physicist-vs-interface-theory adjudication and a high-value C2A2 bridge/conflict signal worth flagging to both agents.
-- [[Arkani-Hamed Agent]] — the Wheeler-DeWitt / Page-Wootters "timeless universe with an internal clock" question resonates with Arkani-Hamed's post-spacetime program (time as emergent from boundary/timeless data rather 
+- [[Arkani-Hamed Agent]] — the Wheeler-DeWitt / Page-Wootters "timeless universe with an internal clock" question resonates with Arkani-Hamed's post-spacetime program (time as emergent from boundary/timeless data rather
 
 ### Karl Friston (PROP-2026-07-13-004)
 - **[[Levin]]** — the interesting inversion. Here Friston's tradition grounds an abstract informational quantity (precision) in a *material* substrate (receptor density), while Levin's tradition (this same cycle, PROP-2026-07-13-002) drives in the opposite direction, showing a material variable (nuclear membrane voltage) doing informational, memory-like work. Two traditions crossing in opposite directions through the same matter/information boundary is worth the master agent's attention.
@@ -1317,7 +1317,7 @@ Strong and multiple.
 
 ### Michael Levin (PROP-2026-07-13-003)
 - **[[Friston]]** — strongest bridge this cycle. Mind-blindness is a *precision* claim: a prior weighted so heavily that disconfirming evidence is discounted before it is consulted. Friston's precision-psychiatry framing (PROP-2026-05-18-003) and his account of symptoms as locally-optimal Bayesian attractors that resist update supply exactly the formalism Levin's clinical proposal lacks. A Levin symptom-as-agent and a Friston symptom-as-attractor are candidates for the same object described from two traditions — a genuine second-first-language test case.
-- **[[McGilchrist]]** — mind-blindness 
+- **[[McGilchrist]]** — mind-blindness
 
 ### Michael Levin (PROP-2026-07-13-002)
 - **[[Friston]]** — history-dependent response with a persistent internal state is, formally, a generative model with slow parameters wrapped around fast states (cf. Online Generalised Predictive Coding, PROP-2026-06-01-002). If nuclear voltage is a slow parameter and chromatin the fast state, this is active inference at the subcellular scale in a non-neural substrate — exactly the signal the Friston agent is instructed to flag.
@@ -1346,7 +1346,7 @@ Direct bridge to **Wolfram** (the wiki already holds `2026-05-05_wolfram_rulial-
 **Strong Friston bridge — flag explicitly.** Co-author Dalton Sakthivadivel is a principal author in Friston's Bayesian-mechanics orbit (Markov blankets, free-energy formalism as a physics of beliefs). This is a *direct co-authorship bridge* between the Levin and Friston research programs, not merely a thematic resonance. The paper's use of variational free energy over graph topologies is precisely the formal object Friston's Markov-blanket construction operates on, which suggests a shared formalism in which Levin's morphogenetic collectives and Friston's particular kinds are two readings of o
 
 ### Iain McGilchrist (PROP-2026-07-01-002)
-Strong cross-tradition value: this stages McGilchrist directly against Sapolsky-style reductive materialism — the same physicalism that Kastrup's analytic idealism and Hoffman's interface theory also contest, and that Stump's Thomistic hylomorphism resists. The Greene/Sapolsky/McGilchrist tripling is itself a worked example of C2A2's single-frame, multi-tradition staging (compare the Sheldonian "Good, Beautiful, True" format). Note for the reviewer: because this is a curated compilation featuring McGilchrist rather than a McGilchrist-led work, confidence on the specific triplet is Speculative 
+Strong cross-tradition value: this stages McGilchrist directly against Sapolsky-style reductive materialism — the same physicalism that Kastrup's analytic idealism and Hoffman's interface theory also contest, and that Stump's Thomistic hylomorphism resists. The Greene/Sapolsky/McGilchrist tripling is itself a worked example of C2A2's single-frame, multi-tradition staging (compare the Sheldonian "Good, Beautiful, True" format). Note for the reviewer: because this is a curated compilation featuring McGilchrist rather than a McGilchrist-led work, confidence on the specific triplet is Speculative
 
 ### Iain McGilchrist (PROP-2026-07-01-001)
 McGilchrist's claim that a left-hemisphere culture cannot self-diagnose is a strong C2A2 signal: it is a claim that a *tradition skewed toward one mode of attention* is structurally blind to what a rival mode discloses — directly relevant to the "second-first-language" thesis that a tradition needs an outside vantage to see itself. Connects to McGilchrist's own left/right divide as a model for tradition-vs-tradition dialogue (a flagged core C2A2 signal), and resonates with Rohr's contemplative critique of purely analytic religion and Stump's Thomistic account of knowledge that exceeds proposit
@@ -1373,7 +1373,7 @@ Note: source is a 28 April 20
 
 ### Richard Rohr (PROP-2026-07-19-002)
 - **Friston Agent:** PRS-CANDIDATE-B is the strongest Rohr–Friston contact point yet proposed — non-suppressive attention as precision-weight decay on fear-priors, with "fear-driven to love-drawn" as a shift in the generative model's default construal. This is exactly Rohr Research Question 4 and should be flagged for the master agent as a **paradigm-bridge candidate**.
-- **McGilchrist Agent:** "Whatever you behold, you eventually become beholden to" (Amy Frykholm, Friday) is close to McGilchrist's claim that the mode of attention constitutes the world attended to — a direct convergence worth 
+- **McGilchrist Agent:** "Whatever you behold, you eventually become beholden to" (Amy Frykholm, Friday) is close to McGilchrist's claim that the mode of attention constitutes the world attended to — a direct convergence worth
 
 ### Eleonore Stump (PROP-2026-07-09-001)
 Strong Friston bridge: the quiescence-then-infusion structure maps onto the intellect/will split the Stump agent watches for — quiescence of the will as a precondition for a state-change resembles the settling of an active-inference system into a new attractor before action-selection resumes. Also a Loughran/C2A2 signal: "second-personal relationship" as the unit of moral formation parallels the second-first-language competence the accelerator is built to produce. Secondary Fredrickson link: second-personal union as the telos of virtue echoes positivity-resonance-as-coupling, though at the met
@@ -1388,7 +1388,7 @@ Strong Friston bridge: the quiescence-then-infusion structure maps onto the inte
 
 ### Stephen Wolfram (PROP-2026-07-18-001)
 - **Arkani-Hamed (CROSS-017, hypergraph vs. amplituhedron):** if Wolfram's historical account identifies *why* continuum methods won, that same account may indicate what pre-geometric approaches had to give up — a possible shared diagnostic for why both programs now dispense with spacetime as an input. **Match against an open cross_program_index question.**
-- **Carroll (open question, line 198 of `master/cross_program_index.md`):** Carroll's standard is a distinguishing empirical prediction. A genealogy of discrete space does not supply one, but it does change the *prior* — it repositions the 
+- **Carroll (open question, line 198 of `master/cross_program_index.md`):** Carroll's standard is a distinguishing empirical prediction. A genealogy of discrete space does not supply one, but it does change the *prior* — it repositions the
 
 ### N.T. Wright (PROP-2026-07-05-003)
 - **Carroll Agent**: Direct engagement point — Carroll's poetic naturalism grounds meaning in emergent human projects, which is precisely the "secular humanism" Wright is distinguishing his position from. A clean, honest tension worth recording rather than smoothing.

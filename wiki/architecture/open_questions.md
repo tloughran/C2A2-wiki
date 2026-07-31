@@ -1491,3 +1491,123 @@ OPEN-131:
     Transform at each step:
       14b: Raised from PRESUMPTION-510 and PRESUMPTION-512, surfaced 2026-07-20 by summing the day's routed items against the standing backlog and finding no artifact that reports the aggregate. [inferred]
     Current status: OPEN
+
+OPEN-132:
+  Date raised: 2026-07-21
+  Question: When production (ingestion) is unblocked but judgment (review) stays at ~0/day, what governs the growing gap -- is any admission-control or back-pressure coupling in place, or does clearing one channel simply deepen the imbalance?
+  Why it matters: 2026-07-21 cleared a three-week ingestion stall (+64 PRS triplets, 34 proposals ingested) on the production side, while review service has been ~0/day for 15+ days and the pending queue was drained only by a one-off human blanket pass. PREMISE-106 (arrival exceeding service grows without bound; admission control is the lever) was validated for the lit queue but has never been applied to the review channel or coupled across production and review. Accelerating production while review stays flat is the failure PRESUMPTION-510 and PRESUMPTION-521 predict.
+  Depends on: PRESUMPTION-521, PRESUMPTION-510, PREMISE-106, OPEN-131
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-132
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14b: Raised from PRESUMPTION-521, surfaced 2026-07-21 by reading the ingestion-clearance headline against the flat review-service rate. [inferred]
+    Current status: OPEN
+
+OPEN-133:
+  Date raised: 2026-07-21
+  Question: What is the authoritative recovery source for a lost register (PREMISE-001...043) when the only surviving trace is downstream references -- and does the existence of a reference guarantee the referent is reconstructable?
+  Why it matters: PREMISE-001...043 are absent from validated_premises.md while 40 of those IDs are still cited (3 on 15d's monthly re-check); the loss was routed as a recoverable REVISE-242 without confirming the content survives in any backup. A reference is not a copy (PRESUMPTION-519). If the content is gone from every dated backup, 40 live references point at nothing and no consistency check can restore them; the question of which artifact is the register's source of truth has never been settled.
+  Depends on: ASSUMPTION-500, PRESUMPTION-519, REVISE-242, OPEN-130 (counting authority)
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-133
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14b: Raised from PRESUMPTION-519 and ASSUMPTION-500, surfaced 2026-07-21 from the REVISE-242 routing's implicit recoverability assumption. [inferred]
+    Current status: OPEN
+
+OPEN-134:
+  Date raised: 2026-07-21
+  Question: If FLAG-018 (consensus-seeking dialogue is a pathology, not success) is correct, does it invalidate any Rung-2 metric that scores convergence as progress -- and by what propagation path would that finding reach the metric's definition, given no premise-propagation mechanism exists (OPEN-129)?
+  Why it matters: FLAG-018, generated from ingested Levin material on 2026-07-21, states it "cuts against any Rung-2 metric scoring convergence as progress" and invites re-reading the Rung-1 listening lift (+0.031) as coupling rather than convergence. This is a design-level challenge to the ISME measurement section, but the pipeline has no mechanism to carry a finding into the agent or metric it critiques (its own PRESUMPTION-506/516). The question is both substantive (is convergence the wrong target?) and structural (how would the answer ever change the metric?).
+  Depends on: ASSUMPTION-495, PRESUMPTION-516, FLAG-018, FLAG-017, OPEN-129
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-134
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Extracted from FLAG-018's stated metric consequence in the 2026-07-21 daily run, joined to the known propagation gap. [stated in part, generalized]
+    Current status: OPEN
+
+OPEN-135:
+  Date raised: 2026-07-22
+  Question: When the daily run leaves uncommitted Phase-6 artifacts on disk for an attended Mac session to pick up, what is the recovery guarantee if no attended session occurs -- is there any bound on how long uncommitted output may accumulate, and does the 17-day attended-session gap turn "the Mac will pick it up" into an unfunded liability?
+  Why it matters: The No-Blind-Push rule and the clobber risk are sound reasons not to auto-push, but they presume a human commit path that has not run for 17 days and whose enabling login is currently broken (ASSUMPTION-506, PRESUMPTION-527). If the deferral is indefinite, artifacts accumulate and the eventual staging faces the largest clobber surface, not the smallest.
+  Depends on: ASSUMPTION-506, PRESUMPTION-527
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-135
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from the Phase-6 deferral rationale read against the attended-session gap. [stated in part, generalized]
+    Current status: OPEN
+
+OPEN-136:
+  Date raised: 2026-07-22
+  Question: Is the McGilchrist/Kastrup same-week convergence independent evidence of a structural homology, or an artifact of shared milieu between two collaborators -- and what in the bridge-detection method distinguishes genuine cross-tradition convergence from correlated authorship?
+  Why it matters: The convergence is offered as a cross-tradition bridge candidate while the two thinkers are named as collaborators in the same summary (ASSUMPTION-504, PRESUMPTION-525). If the method cannot tell independent convergence from correlated authorship, the bridge count can be inflated by agreement that shared context, not shared structure, produced.
+  Depends on: ASSUMPTION-504, PRESUMPTION-525, PRESUMPTION-518
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-136
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from the collaborator-convergence claim used as independent bridge evidence. [stated in part, generalized]
+    Current status: OPEN
+
+OPEN-137:
+  Date raised: 2026-07-22
+  Question: Does incorporating a commensurability gate (PREMISE-122) discharge the FLAG-017 commensurability caveat, or only relocate it -- who runs the gate for the virtual-governor <-> Markov-blanket comparison, and by what propagation path does the gate reach and block (or pass) the finding it governs?
+  Why it matters: PRESUMPTION-523 was dispositioned into a general premise (PREMISE-122) but the specific FLAG-017 equivalence that triggered it was not re-adjudicated against that premise (ASSUMPTION-509, PRESUMPTION-529). This is another instance of the premise-propagation gap (OPEN-129/134): a governing rule can be on the books with no mechanism to apply it to the case that motivated it.
+  Depends on: ASSUMPTION-509, PRESUMPTION-529, PRESUMPTION-523, OPEN-129, OPEN-134
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-137
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a general gate (PREMISE-122) taken to close the specific transfer that motivated it. [stated in part, generalized]
+    Current status: OPEN
+
+OPEN-138:
+  Date raised: 2026-07-23
+  Question: Should C2A2 build the findings->agent propagation edge that PREMISE-123 says is missing, or is the self-knowledge layer (FLAGs, premises, dispositions) intentionally advisory-only? If advisory-only, what carries a validated finding into the agent spec it governs, and who decides when it does?
+  Why it matters: PREMISE-123 (know-do gap) and PREMISE-124 (uncalibrated self-measurement) together mean C2A2 is generating trustworthy self-knowledge faster than it can act on it -- the same producer/consumer imbalance as PREMISE-119/121, now observed on the self-awareness layer itself. Without an answer, every future validated finding accrues in a layer with no built exit, and the pipeline's output is structurally inert.
+  Depends on: ASSUMPTION-513, ASSUMPTION-514, PRESUMPTION-534, PRESUMPTION-539, PREMISE-119, PREMISE-121, PREMISE-123, OPEN-129, OPEN-134, OPEN-137
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-138
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from the 2026-07-23 "For Morning Discussion" build-vs-advisory question and the two new premises. [stated]
+    Current status: OPEN
+
+OPEN-139:
+  Date raised: 2026-07-23
+  Question: Does PREMISE-124 (self-measurement must cite an external referent or be reported UNCALIBRATED) apply to itself? It was dispositioned INCORPORATE by 15c from inside the same pipeline it governs -- what external referent calibrated the calibration premise, and if none, should PREMISE-124 be re-tagged UNCALIBRATED by its own standard?
+  Why it matters: If the rule requiring external calibration is exempt from its own requirement, the pipeline has a self-exempting meta-rule; if it is not exempt, the premise register needs a referent-of-record for reflexive premises. Either way this bears on how much epistemic weight self-generated premises about the pipeline can carry (PRESUMPTION-536).
+  Depends on: ASSUMPTION-514, PRESUMPTION-536, PRESUMPTION-482, PREMISE-124
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-139
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14b: Raised from PREMISE-124 being dispositioned from inside the pipeline it governs. [inferred]
+    Current status: OPEN

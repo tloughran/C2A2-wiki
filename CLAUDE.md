@@ -46,7 +46,9 @@
 1. **Inline its JS/CSS** (as every single-file tab does — they are immune because the whole file is the iframe document), OR
 2. **Content-hash its `?v=` includes** via a deterministic stamp step. Never ship a bare local `src=`/`href=` include on an iframe-loaded page, and never rely on a manual `?v=N` bump (forgetting it IS the repeatable error).
 
-**Enforcement (heartbeat):** `wiki/heartbeat/backend/stamp_assets.py` rewrites each include's `?v=` to `SHA-1[:10]` of the asset; it is step 6 of `refresh_snapshot.sh` and is runnable standalone after any asset edit. Run it (or inline) before any push that touches a multi-file tab's assets.
+**Enforcement:** `wiki/heartbeat/backend/stamp_assets.py` rewrites each include's `?v=` to `SHA-1[:10]` of the asset. It takes `--target heartbeat|explorer|all`; **the default stays `heartbeat` on purpose** — `refresh_snapshot.sh` calls it with no arguments inside the heartbeat cron, whose carve-out below permits data-only pushes, so a wider default could make an unattended job commit HTML. `--check` stamps nothing and exits non-zero on a stale include; `scripts/test_voice_shell.cjs` runs `--target all --check` as its last row, so the CCL gate covers it.
+
+**Extended 2026-07-25 to `explorer.html`.** The shell is not an iframe tab, but it is a normal cacheable document loading a separate `lib/c2a2-commandline.js`, which is the same exposure. It had been carrying a hand-typed `?v=` — and that hash was already **wrong** when the stamper first checked it, exactly as rule 2 predicts.
 
 **Rationale:** 2026-06-26 — the heartbeat "What is a lens?" link was dead in-browser while jsdom tests passed, because the browser ran a cached `app.js` against fresh `index.html`. A code review confirmed heartbeat was the only multi-file tab; all others inline. Content-hash stamping makes the version a function of file content, so it is always correct with no human in the loop (Rule 5: if code can answer, code answers).
 
@@ -166,6 +168,30 @@ python3 scripts/janitor.py                 # normal run (auto-fix + report)
 python3 scripts/janitor.py --dry-run       # report only; no writes
 python3 scripts/janitor.py --baseline      # reset baseline to current findings
 python3 scripts/janitor.py --promote <c>   # add check to auto-fix safelist
+```
+
+---
+
+## Talk to the Wiki — Realtime Voice Guide + FAQ Agent
+
+**Voice guide** lives inlined in `wiki/explorer.html` (the shell, not an iframe tab, so it is exempt from the iframe-asset rule but MUST stay inline there). Floating "Talk to the Wiki" pill, bottom-right, draggable by its header. Uses the **OpenAI Realtime API over WebRTC** (voice-to-voice, native barge-in):
+- Mint ephemeral token: `POST /v1/realtime/client_secrets` (token at `.value`); SDP: `POST /v1/realtime/calls`. Model `gpt-realtime`, voice `cedar`. (The old `/v1/realtime/sessions` + `/v1/realtime?model=` preview endpoints 404 — do not revert to them.)
+- Key: reuses `localStorage['tts_api_key']` (shared with the Sociogram OpenAI TTS). `getKey()` only accepts/stores `sk-` values, so a browser-autofilled junk value can never clobber the shared key.
+- Action tool `switch_tab` drives the shell's own tab buttons by voice.
+- The **Record** button captures the guide's replies: the assistant's WebRTC stream is mixed directly into the recording graph (`addStreamToRecMix`), independent of Chrome tab-audio sharing.
+
+**FAQ agent** keeps the guide's first-pass answers current AND deepens them over time toward **100 questions** (`TARGET_TOTAL`), then adds ~1/week. Split by Rule 5:
+- **Deterministic** (`scripts/voice_faq.py`): `scan` parses every explorer tab + its help text, hashes each feature, diffs against `voice_faq/state.json` → new/changed/unchanged/removed. `status` prints total/target/deficit/phase + per-feature counts (thinnest first). `merge <qa.json>` is **ADDITIVE** — appends authored Q&A per feature, deduped by normalized question (never overwrites); validates (known keys, non-empty q/a, new features need ≥3 seed pairs); writes `wiki/voice_guide_faq.json` + `voice_faq/report.md` + updates state. Phase = `ramp` while total < 100, else `steady`.
+- **Generative**: the weekly Claude agent `c2a2-voice-faq-weekly` (Sunday ~06:15) runs `status` + `scan`, then: seeds NEW features, adds corrected pairs for CHANGED ones, and DEEPENS — in `ramp` it authors ~10–15 spread across the thinnest features (high-level → detail); in `steady` it authors exactly **one** genuinely new, more-detailed question. Report-only — **never auto-pushes** (LLM-authored data → human review, per the no-blind-push rule).
+- Seeded to **102 Q&A across 14 features** (2026-07-18), so it starts in `steady`.
+- The guide `fetch`es `wiki/voice_guide_faq.json` at session start and injects it into the Realtime instructions as its first-pass source; missing file → falls back to built-in knowledge.
+- `voice_faq/` (state + report) is gitignored like `janitor/`; `wiki/voice_guide_faq.json` IS tracked/published.
+
+### Manual regen
+```bash
+python3 scripts/voice_faq.py status
+python3 scripts/voice_faq.py scan --pretty
+python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run to preview
 ```
 
 ---
