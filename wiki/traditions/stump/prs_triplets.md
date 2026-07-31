@@ -251,4 +251,24 @@ PRS-29:
   Confidence: Medium
   Evidence: "For Aquinas the moral life is first and foremost a matter of having a right second-personal relationship"; the will passes from resisting grace to quiescence, at which instant grace is infused and the Spirit indwells with all infused virtues (New Blackfriars 106.1).
 
-*Total PRS triplets: 26*
+---
+PRS-30:
+  Problem: How can God have certain, infallible knowledge of future contingents without collapsing their contingency into necessity?
+  Resource: Cajetan's commentary on ST I q.14 a.13, reconstructed as an ordered set of relations between God's absolute, eternal nature and the relative, contingent nature of generated existents.
+  Solution: A relational ordering in which eternal knowledge stands simultaneous-with rather than prior-to contingent events, preserving genuine contingency while grounding infallible divine knowledge — a later-scholastic sharpening of the Stump-Kretzmann ET-simultaneity account.
+  Date Added: 2026-07-31
+  Source: The Coexistence of Time and Eternity: Cajetan's Solution to God's Knowledge of Contingent Futures; PROP-2026-07-23-002
+  Confidence: Medium
+  Evidence: Cajetan "establishes a precise order of relations between the absolute, eternal nature of God and the relative, contingent nature of generated existences."
+
+---
+PRS-31:
+  Problem: The gnoseological question (how God knows) is characteristically treated apart from the metaphysical question (what time and eternity are), leaving divine foreknowledge an isolated epistemic puzzle.
+  Resource: Cajetan's explicit linkage of the theory of divine knowledge to the metaphysics of temporality, eternity, necessity, and contingency.
+  Solution: An integrated account in which the doctrine of divine knowledge is *derived from* a prior metaphysics of the eternity-time relation rather than bolted on — making the epistemology downstream of ontology.
+  Date Added: 2026-07-31
+  Source: The Coexistence of Time and Eternity: Cajetan's Solution to God's Knowledge of Contingent Futures; PROP-2026-07-23-002
+  Confidence: Medium
+  Evidence: The knowledge problem is "linked to metaphysical concepts of temporality, eternity, necessity, and contingency."
+
+*Total PRS triplets: 28*

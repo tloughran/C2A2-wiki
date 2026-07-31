@@ -1,3 +1,4 @@
 2026-07-27T10:28Z  PASS  telemetry=2026-07-27/33 agents  node_edges=2026-07-27/27 nodes  | DB age 0h
 2026-07-28T10:23Z  PASS  telemetry=2026-07-28/33 agents  node_edges=2026-07-28/27 nodes  | DB age 24h
 2026-07-29T10:15Z  FAIL  step1 freshness guard — DB last write 2026-07-27T10:09Z (48h ago, threshold 36h); WAL last write 2026-07-27T10:12Z. OpenStory runtime writer likely down; feeds NOT refreshed.
+2026-07-30T10:23Z  FAIL  step2b/4 extract_agent_node_refs.py — cannot complete in sandbox: ~75s CPU (66s payload json round-trip over 143k events) vs 45s bash cap, and background procs are killed at call end; node_edges still 2026-07-28. telemetry=2026-07-30/33 agents OK (injected+validated). Freshness: frontier=2026-07-30T04:27:19Z (5.8h) — lag<=frontier age<36h; shared lag assertion unrunnable here (watch root ~/openstory-watch not mounted). FIX: run refresh_openstory_feeds.sh on the Mac.

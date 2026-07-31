@@ -25,13 +25,29 @@ fail() {  # $1 = which-step, $2 = first-error-line
 cd "$AGD" || { echo "no agent dir $AGD"; exit 2; }
 
 # 1) FRESHNESS GUARD (36h)
+#
+# 2026-07-29: this used to compare `stat` mtime of open-story.db against 36h. Two
+# ways that lied. In WAL mode the main DB file only changes on checkpoint, so it
+# reads stale while ingest is perfectly healthy; and any *reader* opening the DB
+# touches -shm/-wal, so it can read fresh while ingest is dead. What we actually
+# need to know is whether ingest has fallen behind the transcripts on disk, so the
+# question now goes to the shared assertion — the same one openstory-watchdog.sh
+# asks, so the two can never form different opinions about whether ingest is alive.
+# The 36h tolerance is unchanged, just expressed as lag (36 * 3600) instead of age.
+LAG_SCRIPT="$HOME/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/openstory_ingest_lag.py"
 [ -f "$DB" ] || fail "step1 freshness" "DB not found: $DB"
-MT=$(stat -f %m "$DB" 2>/dev/null || stat -c %Y "$DB")
-AGE_H=$(( ( $(date +%s) - MT ) / 3600 ))
-MTS=$(date -u -r "$MT" +%Y-%m-%dT%H:%MZ 2>/dev/null || date -u -d "@$MT" +%Y-%m-%dT%H:%MZ)
-if [ "$AGE_H" -gt 36 ]; then
-  fail "step1 freshness" "OpenStory DB stale (last write $MTS, ${AGE_H}h ago) — runtime likely down; feeds NOT refreshed"
+[ -f "$LAG_SCRIPT" ] || fail "step1 freshness" "shared assertion missing: $LAG_SCRIPT"
+LAG_OUT=$(python3 "$LAG_SCRIPT" --db "$DB" --max-lag 129600 2>&1); LAG_RC=$?
+# AGE_H feeds the REFRESH_STATUS.md line written by fail(); keep it defined on
+# every path, including the undetermined one.
+AGE_H=$(echo "$LAG_OUT" | sed -n 's/.*lag=\([0-9]*\)s.*/\1/p' | head -1)
+case "$AGE_H" in ''|*[!0-9]*) AGE_H="?" ;; *) AGE_H=$(( AGE_H / 3600 )) ;; esac
+if [ "$LAG_RC" -eq 1 ]; then
+  fail "step1 freshness" "OpenStory ingest stalled ($LAG_OUT) — runtime likely down; feeds NOT refreshed"
+elif [ "$LAG_RC" -ne 0 ]; then
+  fail "step1 freshness" "cannot determine ingest lag ($LAG_OUT) — refusing to build feeds on unverified data"
 fi
+echo "[1] freshness OK: $LAG_OUT"
 
 # 2) REFRESH BOTH FEEDS (extractors copy DB to local temp + retry on contention)
 echo "[a] telemetry…"

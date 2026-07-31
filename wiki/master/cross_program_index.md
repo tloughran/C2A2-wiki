@@ -1404,3 +1404,9 @@ Strong Friston bridge: the quiescence-then-infusion structure maps onto the inte
 - **Stump Agent**: The building-for/building-the distinction maps onto Stump's account of cooperative grace (second-person agency where divine and human contributions are non-competitive) — worth a bridge note against her Aquinas on operative vs. cooperative grace.
 - **Levin Agent**: Work at every scale contributing to a larger-scale goal it cannot itself represent is structurally close to Levin's multi-scale competency architecture; PRS-CANDIDATE-01 is a near-exact theological dual of cells "building for" the organism-level goal.
 - **C2A2 master / paradigm flags**: Paradigm-bridge candidate —
+
+### Eleonore Stump (PROP-2026-07-23-002)
+- **Sean Carroll**: Direct structural contact — Cajetan's eternity/time relation is a scholastic eternalism. Carroll's block-universe commitments make "all times equally real" a physics-side analogue of the claim that eternity is simultaneous-with every temporal moment. The disagreement is about whether the atemporal standpoint is a *frame* or a *being*.
+- **Nima Arkani-Hamed / Stephen Wolfram**: The post-spacetime programs treat temporal order as emergent rather than fundamental. Stump/Cajetan's account requires a real distinction between eternal and temporal modes of existence — a live test of whether "emergent time" traditions can host any notion of eternity at all, or only of timelessness.
+- **Karl Friston**: Weak but noted — a generative model with no temporal indexing is timeless in a computational, not metaphysical, sense. Useful as a contrast case for what "atemporal knowledge" can and cannot mean.
+

@@ -453,3 +453,9 @@ and the two readings of the same
 - [PROP-2026-07-12-001] N.T. Wright: - **Stump Agent**: The building-for/building-the distinction maps onto Stump's account of cooperative grace (second-person agency where divine and human contributions are non-competitive) — worth a bridge note against her Aquinas on operative vs. cooperative g
 
 [EVALUATED: 2026-07-21 — FINDING-051..054; see pattern_detector_findings.md]
+
+
+## Signals forwarded 2026-07-31
+- [PROP-2026-07-23-002] Eleonore Stump: Eternity/time relation as a cross-cluster structural question. Cajetan's ordered-relations solution places a *real* atemporal standpoint against the Post-Spacetime Cluster's claim that temporal order is emergent (Arkani-Hamed kinematic flow, Wolfram ruliad traversal) and against Carroll's block-universe eternalism. Candidate question for the master index: **do the emergent-time physics programs have room for eternity, or only for timelessness?** Medium confidence; source is a commentary study rather than a primary systematic statement.
+
+[EVALUATED: 2026-07-31 — FINDING-055; see pattern_detector_findings.md]

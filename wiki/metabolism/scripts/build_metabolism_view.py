@@ -23,6 +23,8 @@ Usage:
 """
 
 import argparse
+import csv
+import glob
 import json
 import os
 import re
@@ -85,6 +87,90 @@ def duration_min(first, last):
         return None
 
 
+def regen_prs_yield(repo, out_dir, prs_csv):
+    """Refresh the WS2 PRS metric, then prove it is actually fresh. Fails loud.
+
+    WHY (2026-07-29): this module used to just read whichever prs_yield_detail.csv
+    happened to be checked in, and NOTHING regenerated it. The file was last
+    written 2026-06-30, so the 85 triplets articulated on 07-01 (21) and 07-21 (64)
+    were invisible: the Metabolism tab's PRS-articulated axis flatlined after
+    2026-06-17 and read "no PRS triplets since mid-June" while production had in
+    fact continued. Worse, the one bar that did show -- 144 on 06-30 -- was the
+    Track A backlog clear, a first-seen batch rather than a production day, so the
+    axis was not merely incomplete but actively misleading.
+
+    DECISION-058 designates this CSV the single source of truth for both PRS axes
+    AND the connectome, "so these axes and the connectome can never disagree".
+    That holds only while something regenerates it. A single source that nothing
+    refreshes is stale by construction, and 512-vs-427 is what disagreement looks
+    like. House Rule 5 -- if code can answer, code answers -- so the regen happens
+    here rather than in a manual step somebody has to remember. This is the same
+    discipline stamp_assets.py applies to iframe asset versions, and for the same
+    reason: forgetting the manual bump IS the repeatable error.
+
+    prs_yield.py carries its own Rule 12 assertion (ids on disk but absent from git
+    history abort the run), so a non-zero exit means a real inconsistency and must
+    propagate, never be swallowed into silently-frozen axes.
+    """
+    script = os.path.join(repo, "wiki", "architecture", "metrics", "prs_yield.py")
+    if not os.path.isfile(script):
+        sys.exit("FAIL (Rule 12): %s missing; refusing to build PRS yield axes "
+                 "from an unrefreshable snapshot." % script)
+    try:
+        r = subprocess.run([sys.executable, script, "--repo", repo,
+                            "--out-dir", out_dir],
+                           capture_output=True, text=True, timeout=600)
+    except (OSError, subprocess.SubprocessError) as e:
+        sys.exit("FAIL (Rule 12): could not run prs_yield.py: %s" % e)
+    if r.returncode != 0:
+        sys.exit("FAIL (Rule 12): prs_yield.py exited %d; PRS axes NOT built.\n%s"
+                 % (r.returncode, (r.stderr or r.stdout or "").strip()))
+    if not os.path.isfile(prs_csv):
+        sys.exit("FAIL (Rule 12): prs_yield.py reported success but %s is absent."
+                 % prs_csv)
+
+    # Freshness, proven by CONTENT rather than by mtime.
+    #
+    # An mtime comparison was tried here first and is wrong: git does not preserve
+    # mtimes, so any checkout stamps every tradition file with the checkout time.
+    # A CSV can then be months out of date and still test "newer than its sources"
+    # -- which is exactly the shape of the bug this guard exists to catch (the
+    # 2026-06-30 CSV was newer on disk than the 07-21 triplets that it omitted).
+    #
+    # So compare the sets directly: every (tradition, PRS-NN) present on disk must
+    # appear in the CSV. Deterministic, mtime-independent, and it fires on the real
+    # failure -- a regen that "succeeded" while writing somewhere else leaves the
+    # tracked CSV short, and 427-vs-510 is not a subtle difference.
+    sources = sorted(glob.glob(os.path.join(repo, "wiki", "traditions",
+                                            "*", "prs_triplets.md")))
+    if not sources:
+        sys.exit("FAIL (Rule 12): no wiki/traditions/*/prs_triplets.md found; "
+                 "the PRS axes would be silently empty.")
+    # Same marker prs_yield.py keys on: a line that is exactly "PRS-NN:".
+    prs_line = re.compile(r"^PRS-(\d+):\s*$")
+    on_disk = set()
+    for path in sources:
+        tradition = os.path.basename(os.path.dirname(path))
+        with open(path, encoding="utf-8") as fh:
+            for line in fh:
+                mm = prs_line.match(line)
+                if mm:
+                    on_disk.add((tradition, "PRS-%02d" % int(mm.group(1))))
+    in_csv = set()
+    with open(prs_csv, encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            in_csv.add(((row.get("tradition") or "").strip(),
+                        (row.get("prs_id") or "").strip()))
+    absent = sorted(on_disk - in_csv)
+    if absent:
+        sys.exit("FAIL (Rule 12): %d triplet(s) present on disk but absent from "
+                 "%s -- the PRS axes would undercount. First few: %s"
+                 % (len(absent), prs_csv,
+                    ", ".join("%s/%s" % t for t in absent[:8])))
+    sys.stderr.write("PRS yield refreshed: %d rows, all %d on-disk triplets "
+                     "accounted for\n" % (len(in_csv), len(on_disk)))
+
+
 def compute_vault_yield(repo):
     """Per-day vault yield from git history (real, not a placeholder):
     wikilinks added/removed, .md files added, commit count, and new PRS ids
@@ -131,18 +217,17 @@ def compute_vault_yield(repo):
     #   prs_added       = git first-seen date (objective, but backfill-clustered)
     #   prs_articulated = self-reported Date Added (when the work was done)
     import csv
-    prs_csv = os.path.join(repo, "wiki", "architecture", "metrics", "prs_yield_detail.csv")
-    if os.path.isfile(prs_csv):
-        with open(prs_csv, encoding="utf-8") as fh:
-            for row in csv.DictReader(fh):
-                seen = (row.get("first_seen_date") or "").strip()
-                if seen:
-                    daily[seen]["prs_added"] += 1
-                made = (row.get("date_added") or "").strip()
-                if made:
-                    daily[made]["prs_articulated"] += 1
-    else:
-        sys.stderr.write("WARN: %s missing; PRS yield axes will be empty\n" % prs_csv)
+    prs_dir = os.path.join(repo, "wiki", "architecture", "metrics")
+    prs_csv = os.path.join(prs_dir, "prs_yield_detail.csv")
+    regen_prs_yield(repo, prs_dir, prs_csv)
+    with open(prs_csv, encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            seen = (row.get("first_seen_date") or "").strip()
+            if seen:
+                daily[seen]["prs_added"] += 1
+            made = (row.get("date_added") or "").strip()
+            if made:
+                daily[made]["prs_articulated"] += 1
 
     # Cross-tradition signal yield: a signal-only day (no vault commit) gets its
     # own daily entry via the defaultdict, so it still draws a bar.
