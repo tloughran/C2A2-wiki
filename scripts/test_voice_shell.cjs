@@ -568,6 +568,27 @@ function stampGate() {
   });
 }
 
+// interT_study.html renders markdown pasted into the page from files that also
+// live in openstory-legibility/. That paste went stale in both directions at
+// once (2026-07-31): the page carried a byline the markdown lacked, and had
+// silently lost two blocks the markdown still had. build_study.py makes the
+// HTML a function of its sources; this row is what notices when it isn't.
+function studyBuildGate() {
+  return new Promise(function (resolve) {
+    const p = spawn('python3', [path.join(ROOT, 'scripts/build_study.py'), '--check'],
+      { cwd: ROOT, stdio: ['ignore', 'pipe', 'pipe'] });
+    let out = '';
+    p.stdout.on('data', function (d) { out += d; });
+    p.stderr.on('data', function (d) { out += d; });
+    p.on('close', function (code) {
+      const stale = out.split('\n').filter(function (l) { return /STALE|ERROR/.test(l); }).join(' | ');
+      record('interT_study.html built from its markdown (pre-push gate)', code === 0,
+        stale || 'study + replication match their sources');
+      resolve();
+    });
+  });
+}
+
 // ------------------------------------------------------------------- main ----
 
 async function main() {
@@ -862,6 +883,7 @@ async function main() {
 
   inlineJsGate();
   await stampGate();
+  await studyBuildGate();
 
   // ---- Phase D: chapter pages and moving around -----------------------------
   //

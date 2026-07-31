@@ -114,11 +114,25 @@ def build_stream(rows):
     replacing). Measured 2-9x inflation across every session. We collapse turn rows
     whose event_ids tuple was already seen (the principled key: same source events =
     same turn), keeping the first occurrence in turn_number order. Falls back to a
-    (human,eval) content signature when event_ids is absent."""
+    (human,eval) content signature when event_ids is absent.
+
+    Returns (stream, unparseable) -- rows whose `data` is empty or not JSON are
+    skipped and COUNTED, never silently dropped. The 2026-06-29 snapshot had zero
+    of these; the 2026-07-30 snapshot has 1452 of 25006 turn rows (5.8%) with
+    empty `data`, so a turn row exists carrying no content. That is upstream
+    content loss, not a parsing preference, and the count belongs in the report:
+    a population number that silently shrank would misstate the corpus."""
     seen = set()
     stream = []
+    unparseable = 0
     for _, d in sorted(rows, key=lambda r: r[0]):
-        j = json.loads(d)
+        try:
+            j = json.loads(d) if d else None
+        except (ValueError, TypeError):
+            j = None
+        if not isinstance(j, dict):
+            unparseable += 1
+            continue
         ev = tuple(j.get("event_ids") or [])
         h = content(j.get("human")).strip()
         e = content(j.get("eval")).strip()
@@ -128,7 +142,7 @@ def build_stream(rows):
         seen.add(key)
         if h: stream.append(("H", h))
         if e: stream.append(("A", e))
-    return stream
+    return stream, unparseable
 
 def session_metrics(stream, rng):
     texts = [t for _, t in stream]
@@ -219,9 +233,14 @@ def main():
     rng = random.Random(SEED)
     results = {}
     skipped_short = 0
+    bad_rows = 0
+    sessions_with_bad = 0
     for sid, _ in sess:
         rows = q("SELECT turn_number, data FROM turns WHERE session_id=?", sid)
-        stream = build_stream(rows)
+        stream, bad = build_stream(rows)
+        bad_rows += bad
+        if bad:
+            sessions_with_bad += 1
         if len(stream) < MIN_UTT:
             skipped_short += 1
             continue
@@ -264,7 +283,13 @@ def main():
       f"**{n_sub}** -- these are the only sessions where uptake is well-posed; the rest are "
       f"single-prompt runs whose role-matched null is degenerate (lift==0 by construction).")
     p(f"- of measured, AI<->AI (`agent-*`): **{sum(1 for r in R_all if r['is_agent'])}** "
-      f"(agent sessions are single-shot in this corpus; AI<->AI uptake is not yet measurable)\n")
+      f"(agent sessions are single-shot in this corpus; AI<->AI uptake is not yet measurable)")
+    if bad_rows:
+        p(f"- **turn rows skipped as unreadable: {bad_rows}** across {sessions_with_bad} sessions "
+          f"-- `data` empty or not JSON, so the row carries no content to score. The 2026-06-29 "
+          f"snapshot had **zero** such rows; this is upstream loss that appeared since, and it "
+          f"removes utterances that would otherwise count toward the thresholds below.")
+    p("")
     p("## The verdict (real predecessor vs. role-matched random partner)\n")
     p("`lift = mean(real adjacent cosine) - mean(role-matched random-partner cosine)`. "
       "Positive lift means an utterance resembles its ACTUAL predecessor more than a random "
