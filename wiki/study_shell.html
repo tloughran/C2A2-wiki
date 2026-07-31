@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inter-Tradition Dialogue Study — C2A2</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.1/marked.min.js"></script>
+<style>
+  :root{
+    --bg:#0a0a0f; --panel:#12121a; --ink:#d9d9e2; --muted:#9a9aa8;
+    --gold:#C9A84C; --rule:#26263a; --accent:#5B7FA5; --chip:#1b1b28;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);}
+  body{font:16px/1.65 Georgia,"Iowan Old Style","Times New Roman",serif;
+       -webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  header.topbar{
+    position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;
+    padding:10px 20px;background:rgba(10,10,15,.92);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--rule);
+  }
+  .topbar .mark{font:700 13px/1 -apple-system,Segoe UI,Roboto,sans-serif;
+       letter-spacing:.12em;color:var(--gold);}
+  .topbar .ttl{font:600 14px/1.2 -apple-system,Segoe UI,Roboto,sans-serif;
+       color:var(--muted);}
+  .topbar .spacer{flex:1;}
+  .topbar button{
+    font:600 13px/1 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--muted);
+    background:var(--chip);border:1px solid var(--rule);border-radius:6px;
+    padding:7px 11px;cursor:pointer;
+  }
+  .topbar button:hover{color:var(--gold);border-color:var(--gold);}
+
+  .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:0;
+       max-width:1180px;margin:0 auto;}
+  nav.toc{
+    position:sticky;top:52px;align-self:start;max-height:calc(100vh - 60px);
+    overflow:auto;padding:22px 14px 40px 20px;border-right:1px solid var(--rule);
+    font:13px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;
+  }
+  nav.toc h4{margin:0 0 10px;color:var(--gold);font-size:11px;letter-spacing:.14em;
+       text-transform:uppercase;}
+  nav.toc a{display:block;color:var(--muted);padding:3px 0;border-left:2px solid transparent;
+       padding-left:10px;margin-left:-10px;}
+  nav.toc a:hover{color:var(--ink);text-decoration:none;}
+  nav.toc a.h3{padding-left:22px;font-size:12px;opacity:.85;}
+  nav.toc a.active{color:var(--gold);border-left-color:var(--gold);}
+
+  main.article{padding:30px 46px 120px;min-width:0;}
+  .article h1{font:700 30px/1.25 Georgia,serif;color:#efe7cf;margin:.2em 0 .1em;}
+  .article h2{font:700 22px/1.3 Georgia,serif;color:var(--gold);
+       margin:2em 0 .5em;padding-top:.4em;border-top:1px solid var(--rule);scroll-margin-top:64px;}
+  .article h3{font:700 17px/1.3 Georgia,serif;color:#d9c98a;margin:1.6em 0 .4em;scroll-margin-top:64px;}
+  .article h1+h3,.article h2+p{margin-top:.4em;}
+  .article p{margin:.7em 0;}
+  .article strong{color:#f0eede;}
+  .article em{color:#cfcfe0;}
+  .article blockquote{margin:1em 0;padding:.5em 1em;border-left:3px solid var(--gold);
+       background:var(--panel);color:#c9c9d6;border-radius:0 6px 6px 0;}
+  .article code{font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.86em;
+       background:#181826;color:#c9b98a;padding:.1em .35em;border-radius:4px;}
+  .article pre{background:#0f0f18;border:1px solid var(--rule);border-radius:8px;
+       padding:14px 16px;overflow:auto;}
+  .article pre code{background:none;padding:0;color:#c7c7d4;}
+  .article hr{border:none;border-top:1px solid var(--rule);margin:2.2em 0;}
+  .article ul,.article ol{padding-left:1.4em;}
+  .article li{margin:.3em 0;}
+
+  .article table{border-collapse:collapse;width:100%;margin:1.1em 0;
+       font:14px/1.45 -apple-system,Segoe UI,Roboto,sans-serif;}
+  .article th,.article td{border:1px solid var(--rule);padding:8px 11px;text-align:left;
+       vertical-align:top;}
+  .article thead th{background:#171724;color:var(--gold);font-weight:700;}
+  .article tbody tr:nth-child(even){background:#101019;}
+  .article td:not(:first-child){font-variant-numeric:tabular-nums;}
+
+  /* help modal */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;z-index:100;
+       align-items:center;justify-content:center;padding:24px;}
+  .overlay.on{display:flex;}
+  .modal{max-width:640px;width:100%;max-height:82vh;overflow:auto;background:var(--panel);
+       border:1px solid var(--gold);border-radius:12px;padding:26px 30px;
+       font:15px/1.6 -apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);}
+  .modal h3{margin:0 0 12px;color:var(--gold);font-size:19px;}
+  .modal p{margin:.6em 0;}
+  .modal .close{float:right;margin:-8px -10px 0 0;background:none;border:none;color:var(--muted);
+       font-size:22px;cursor:pointer;line-height:1;}
+  .modal .close:hover{color:var(--gold);}
+  .modal .tag{display:inline-block;font:600 11px/1 -apple-system,sans-serif;letter-spacing:.1em;
+       text-transform:uppercase;color:#0a0a0f;background:var(--gold);border-radius:4px;
+       padding:4px 8px;margin-bottom:6px;}
+
+  @media(max-width:820px){
+    .layout{grid-template-columns:1fr;}
+    nav.toc{position:static;max-height:none;border-right:none;border-bottom:1px solid var(--rule);}
+    main.article{padding:22px 20px 100px;}
+  }
+
+  /* --- document sub-tabs (Study | Replication) ------------------------- */
+  .doctabs{display:flex;gap:6px;align-items:center;}
+  .doctabs button{
+    font:600 12px/1 -apple-system,Segoe UI,Roboto,sans-serif;letter-spacing:.04em;
+    padding:6px 11px;border-radius:999px;cursor:pointer;
+    background:var(--chip);color:var(--muted);border:1px solid var(--rule);
+  }
+  .doctabs button:hover{color:var(--ink);border-color:var(--accent);}
+  .doctabs button.active{background:var(--gold);color:#15150c;border-color:var(--gold);}
+  @media(max-width:640px){ .topbar .ttl{display:none;} }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <span class="mark">C2A2</span>
+  <span class="ttl">Inter-Tradition Dialogue Study</span>
+  <span class="doctabs" id="doctabs">__TAB_BUTTONS__</span>
+  <span class="spacer"></span>
+  <button onclick="document.getElementById('help').classList.add('on')">? &nbsp;What is this</button>
+</header>
+
+<div class="layout">
+  <nav class="toc" id="toc"><h4>Contents</h4></nav>
+  <main class="article" id="article"><p style="color:var(--muted)">Rendering&hellip;</p></main>
+</div>
+
+<div class="overlay" id="help" onclick="if(event.target===this)this.classList.remove('on')">
+  <div class="modal">
+    <button class="close" onclick="document.getElementById('help').classList.remove('on')">&times;</button>
+    <span class="tag">About this page</span>
+    <h3>What you are reading</h3>
+    <p>This is a preliminary, preregistered study from the <strong>C2A2</strong>
+       (Community Context for AI Alignment) project. It tests a wager against pessimism in
+       regard to the fulfillment of Alasdair MacIntyre&rsquo;s recovery project: that AI agents, seeded on the writings of human
+       traditions, can carry out deep cross-tradition dialogue <em>at machine speed</em> &mdash;
+       and, crucially, that we can build <em>instruments</em> to tell whether real
+       understanding occurred rather than fluent, agreeable-sounding noise.</p>
+    <p>It is organised as a <strong>ladder of controls</strong>: at each rung there is an easy
+       way to get a false positive (shared topic, politeness, paraphrase), and a control an
+       artifact would fail. The climax is a civil <em>convener</em> running a certification
+       protocol in which each speaker is the sole judge of whether their own view has been
+       captured &mdash; the study&rsquo;s &ldquo;GANification&rdquo; idea: a fast generator of
+       dialogue paired with a strict detector of genuine uptake.</p>
+    <p><strong>Status:</strong> load-bearing results (P1, P2, the BRIDGE negative, the C0
+       certification gate, P3&prime;a) are robust; the thesis-bearing prediction that the
+       limit of understanding is <em>located</em> (P3&prime;b) is directional but underpowered
+       and awaits the strengthened panel described in &sect;5.3. Every dialogue, the
+       preregistration, and the analysis scripts are retained so the study reproduces from the
+       transcripts alone.</p>
+    <h3>Two bodies of dialogue &mdash; read this before the numbers</h3>
+    <p>Almost every misreading of this work comes from running two separate collections together,
+       so they are worth separating up front.</p>
+    <p>The <strong>observed corpus</strong> is real transcripts, recorded as one researcher worked
+       with an AI coding assistant &mdash; a by-product of ordinary work that nobody staged. The
+       <strong>constructed corpus</strong> is dialogue the study <em>built</em>: two agents seeded
+       on rival thinkers, arguing across a chosen seam, sometimes with a third agent convening.</p>
+    <p><strong>Every result rests on the constructed corpus.</strong> All seven preregistered
+       predictions are tested there, against a control that is also constructed (DEAF, where one
+       agent cannot read the other). The observed corpus supplies no result. It does two other
+       jobs: it is <em>why</em> the constructed corpus exists &mdash; the debate moves the theory
+       cares about turned out to be absent from real working dialogue &mdash; and it is the
+       external check that the instrument finds listening in conversation nobody designed for it
+       to find listening in.</p>
+    <p><strong>One label collides.</strong> The study calls two different things &ldquo;Rung 1&rdquo;:
+       the measurement on the observed corpus (&sect;3.2) and the LISTEN-versus-DEAF test on
+       constructed dialogue (&sect;4.1). The Replication tab concerns only the first, and does not
+       bear on the second. Their figures are not comparable and should not be lined up.</p>
+    <p>No dialogue anywhere in this research is between two humans: the observed corpus is
+       human-to-assistant, the constructed corpus agent-to-agent.</p>
+    <p><strong>Two documents.</strong> The tabs at the top of this page hold the original
+       study and a later replication. The study is preserved <em>exactly as preregistered and
+       published</em>; the replication is a separate paper that re-runs one arm of it on a larger
+       corpus. Nothing measured after publication has been folded back into the study body &mdash;
+       that separation is the point.</p>
+    <p style="color:var(--muted);font-size:13px;">Working paper, 2026-07-01 &middot;
+       T. Loughran (Notre Dame Physics &amp; Astronomy) and Claude Opus 4.8 (Anthropic).<br>
+       Replication, 2026-07-31 &middot; T. Loughran and Claude Opus 5 (Anthropic).</p>
+  </div>
+</div>
+
+__DOC_BLOCKS__
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('#doctabs button'));
+  var art  = document.getElementById('article');
+  var toc  = document.getElementById('toc');
+  var obs  = null;
+
+  if (typeof marked === 'undefined') {
+    art.innerHTML = '<p style="color:#c88">Renderer failed to load (marked.js CDN unreachable). '
+      + 'The document text is still present in this page source.</p>';
+    return;
+  }
+  marked.setOptions({ gfm:true, breaks:false, headerIds:true, mangle:false });
+
+  function render(key){
+    var src = document.getElementById('doc-' + key);
+    if (!src) return;
+    if (obs) { obs.disconnect(); obs = null; }
+    art.innerHTML = marked.parse(src.textContent);
+    toc.innerHTML = '<h4>Contents</h4>';
+
+    // slugify + ensure ids, build TOC from h2/h3
+    var heads = art.querySelectorAll('h2, h3');
+    var used = {};
+    heads.forEach(function(h){
+      var base = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'').slice(0,50);
+      if(!base) base='sec';
+      var id = base; var n=1; while(used[id]){ id = base+'-'+(++n); } used[id]=1;
+      h.id = id;
+      var a = document.createElement('a');
+      a.href = '#'+id;
+      a.textContent = h.textContent.replace(/\s+/g,' ').trim();
+      if (h.tagName === 'H3') a.className = 'h3';
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        document.getElementById(id).scrollIntoView({behavior:'smooth', block:'start'});
+        history.replaceState(null,'','#'+id);
+      });
+      toc.appendChild(a);
+    });
+
+    // scroll-spy
+    var links = Array.prototype.slice.call(toc.querySelectorAll('a'));
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+    obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          links.forEach(function(a){ a.classList.remove('active'); });
+          var a = map[en.target.id];
+          if(a){ a.classList.add('active'); }
+        }
+      });
+    }, { rootMargin:'-60px 0px -70% 0px', threshold:0 });
+    heads.forEach(function(h){ obs.observe(h); });
+
+    tabs.forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-doc') === key); });
+    toc.scrollTop = 0;
+    window.scrollTo(0, 0);
+  }
+
+  tabs.forEach(function(b){
+    b.addEventListener('click', function(){
+      var key = b.getAttribute('data-doc');
+      render(key);
+      history.replaceState(null, '', '#doc=' + key);
+    });
+  });
+
+  // deep link: #doc=<key> selects a tab; anything else is a heading anchor in the first doc
+  var want = (location.hash.match(/^#doc=([a-z0-9_-]+)$/i) || [])[1];
+  render(want && document.getElementById('doc-' + want) ? want : tabs[0].getAttribute('data-doc'));
+
+  // esc closes help
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ document.getElementById('help').classList.remove('on'); }
+  });
+})();
+</script>
+</body>
+</html>

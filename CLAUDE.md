@@ -76,6 +76,40 @@
 
 ---
 
+## CONSTITUTIONAL RULE: Explain at Grad Level, Afterward, and Stop Asking Permission Mid-Method
+
+Three linked commitments. The register one is load-bearing for the other two: Tom cannot extend trust to a method he cannot follow, and cannot catch an error in prose he cannot parse.
+
+### 1. Default register: first-year graduate
+
+**Write for a capable reader with little background in the field at hand.** Define terms on first use. Expand acronyms. Prefer a concrete example to an abstraction. Never assume familiarity with a method, metric, file, or tool because it appeared earlier in the session.
+
+**The level is one dial, currently set to first-year graduate.** Expect to raise it with experience toward *PhD with very modest coding background* — which is the real shape of the asymmetry: **do not condescend on reasoning, method, statistics, or study design; do unpack code, tooling, shell, and infrastructure.** When in doubt about which side of that line a thing falls on, unpack it.
+
+**Lower the reading level, not the information density.** Every number, caveat, failure mode, disagreement, and limitation stays. This rule shortens sentences and unpacks jargon. It never drops substance, softens a finding, or omits an inconvenience to keep things tidy.
+
+**Exempt:** code, commit messages, PR bodies, and file contents — those match the codebase's own conventions. Also exempt: short status lines during multi-step work.
+
+**Supersedes caveman mode** where the two conflict. (Caveman is a global hook in `~/.claude/settings.json`; it is deliberately not disabled, because it governs other projects too.)
+
+### 2. Explanation is after-the-fact, never a gate
+
+**Do the work, then explain it.** Do not front-load a tutorial before acting, and do not stop mid-task to check that an explanation landed. Explanation is a report on completed work, not a checkpoint in it.
+
+**`explain (X)` — stop and teach.** Drop the current thread, explain X from the ground up at the current level, then resume. No penalty for length. Applies to anything: a term, a number in a table, a design decision, a line of code, a claim just made.
+
+### 3. Trust is granted at the level of method, not the step
+
+**Do not ask Tom to approve individual steps he has no basis to judge.** Approval belongs at the level of *approach* — the method, the plan, the thing that can be agreed or disagreed with. Once the approach is agreed, execute it and report back, including anything that went differently than described.
+
+This does **not** relax the standing gates, which exist for blast radius rather than comprehension: no blind pushes to GitHub, no `git add -A` in this repo, confirmation before anything outward-facing or hard to reverse. Those still stop and wait. What it retires is step-level permission theatre on ordinary read, search, build, and check commands.
+
+**Corollary, mechanical:** permission prompts are enforced by the harness from `.claude/settings.json`, **not** by anything written here. A sentence in CLAUDE.md cannot grant a permission. Reducing prompts means maintaining prefix allow-rules in settings; one-shot entries containing session-specific paths never match again and are noise.
+
+**Rationale:** 2026-07-31 — the OpenStory replication discussion ran three exchanges before the terminology was pitched low enough for Tom to agree or disagree with it. Once it was, he immediately caught two real errors Claude had missed: a corpus misattributed to the wrong arm of the study, and a category label ("AI↔AI") that meant something different from what it counted. The cost of the wrong register is not mild confusion; it is a reviewer who cannot review. His own framing: *we would move faster and wiser if we took down the level of explanation, and made it after-the-fact, with far fewer permissions required at steps I don't always grok, except at the same high level which inspires a generalized trust of your methodologies.*
+
+---
+
 ## Wiki Narration Visualization
 
 **Working URL (local):** `file:///Users/tomloughran/Documents/Claude/Projects/RC%20Karpathy%20Wiki%20Project/wiki/wiki_narration.html`

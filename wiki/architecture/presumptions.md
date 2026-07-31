@@ -11541,3 +11541,527 @@ PRESUMPTION-575:
     Transform at each step:
       14b: Inferred from a completeness figure whose enumerating component is the one the day's failure was located in. [inferred -- moderate confidence]
     Current status: UNTESTED
+
+PRESUMPTION-576:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] REVISE-251's proposed intake rule — a presumption must name the quantity that would settle it, or else be filed as a prompt to investigate that "does not consume a literature search" — presumes that the settling quantity is available to 14b at intake, i.e. before the search. On this run's own record it repeatedly was not: the dependence estimate that sizes PRESUMPTION-567's residual came from NUREG/CR-5485 and Littlewood & Miller, the denominator PRESUMPTION-568 needs came from ISA 450, and the cost that defeats PRESUMPTION-570's gate came from the alert-fatigue literature. If the quantity is what the search supplies, the rule filters on the output of the step it gates.
+  Evidence it was operative: the rule is stated as "a single change" addressing all three sub-flags, with no clause distinguishing quantities knowable a priori from quantities recoverable only from the literature; the same file credits each sub-flag's resolution to a named external source that 14b did not hold at filing time; and the rule's sanction is specifically the withholding of a literature search.
+  Why it was unstated: too foundational to notice — the remedy is framed as a discipline on writing, so the question of where the quantity comes from does not arise.
+  Type: methodological / epistemic
+  Related decisions: none (rule recommended, not adopted)
+  Related items: ASSUMPTION-578, REVISE-251, MONITOR-490, PREMISE-121, PRESUMPTION-580
+  Testability: testable via literature — screening rules that condition access to evidence on information the evidence supplies; triage design under uncertain prior information; false-negative cost of intake filters. Also testable empirically / in-house: for the last N dispositioned items, record whether the settling quantity was nameable before the search.
+  Risk if wrong: High. The rule is proposed as the single fix for all three systemic flags and it governs intake for every future batch. If the settling quantity is typically a search product, the rule suppresses the items whose value is highest per search and leaves the ones already answerable in-house.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-576
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a gating rule whose gate quantity is supplied, on the same run's own evidence, by the step being gated. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-577:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Consolidating three HIGH systemic-risk flags into one is warranted by PREMISE-121 — more separately-tracked items lowers the probability any is acted on — which presumes the binding constraint on action is the reader's attention rather than each item's decidability. The presumption is doing double duty here: the aggregation is applied to the three findings raised against this agent, on the run where the number of independent unsound-inference findings against it is the headline. The consolidation note anticipates part of this ("each sub-flag retains its own DISPOSITION-NNN so nothing is lost"), which addresses retrievability but not salience — and salience is precisely what PREMISE-121 is a claim about.
+  Evidence it was operative: the consolidation is stated first "because it is a decision Tom should be able to review," which shows the aggregation was recognised as consequential; the stated obligation is "to raise the information value of what is routed to a human rather than merely to route less"; no check is recorded on whether comparable aggregation is applied to items that favour the pipeline, and the day's other multi-instance finding (MONITOR-490, four instances) is likewise filed as one entry on the same premise.
+  Why it was unstated: culturally embedded -- consolidating related findings reads as good report hygiene in every reporting convention it borrows from.
+  Type: normative / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-578, ASSUMPTION-579, PREMISE-121, REVISE-251, MONITOR-490
+  Testability: testable via literature — aggregation and disaggregation effects on decision salience; audit-finding consolidation and its effect on remediation rates; whether count of findings or severity of findings predicts action.
+  Risk if wrong: Medium-High. If PREMISE-121's mechanism is weaker than stated, consolidation lowers the recorded count of independent findings against the presumption-construction layer at the moment that count is the datum — and the same premise is available to justify future aggregation of adverse findings.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-577
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an aggregation rule applied, without a symmetry check, to the findings adverse to the agent doing the aggregating's sibling layer. [inferred -- moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-578:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Applying REVISE-250's small-n correction reflexively to this run's own 1-of-8 count presumes that self-application discharges the concern the correction names. The literature REVISE-250 itself cites says otherwise about a nearby case: Moore, Tetlock, Tanlu & Bazerman 2006 is quoted to the effect that unawareness is the expected condition of a party assessing a matter in which its own standing is at stake, and the correction's own decisive test — "apply the external-referent bar RETROSPECTIVELY to the last 20 MONITOR dispositions and count how many now clear it" — was not run. What was done was to refrain from narrating the count; what was recommended was a measurement.
+  Evidence it was operative: the in-run note in PREMISE-135 states the drop "is NOT offered as evidence about the external-referent bar, about this batch's rigour, or about anything else," and the reflexive application is recorded as "APPLIED REFLEXIVELY THIS RUN RATHER THAN RECOMMENDED FOR LATER"; the cowork summary then reports the same refusal as the day's most interesting result. Step (3) of the recommended action is stated as "cheap and blind to the current run's incentives" and is unexecuted.
+  Why it was unstated: obvious to participants -- refraining from a claim feels like the whole of the remedy when the fault was making a claim.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-576, ASSUMPTION-577, REVISE-250, PREMISE-124, PREMISE-135, PRESUMPTION-569
+  Testability: testable via literature — whether self-administered corrections for motivated reasoning are effective (debiasing-by-awareness literature); abstention versus measurement as remedies for evaluator reactivity. Also in-house: run the retrospective 20-disposition pass.
+  Risk if wrong: Medium-High. The refusal-to-narrate is being carried as the run's headline discipline; if abstention does not substitute for the measurement, the pipeline has recorded a correction as applied while its stated discriminating test remains unrun, and future batches inherit that reading.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-578
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a remedy discharged by abstention where the same document specifies a measurement, and from a cited source that excludes self-assessment in the relevant case. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-579:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] "A majority of the batch was avoidable at intake" presumes the proposed remedy would have caught it — that a grep of the validated-premise register before routing would have found the governing premise. But MONITOR-490 records that each of the four instances was found duplicative or subordinate through the FOR/AGAINST material, and the governing premises named (PREMISE-100, 103, 120) do not share vocabulary with the presumptions they govern. Term-match retrieval is exactly the move PREMISE-127 and PREMISE-134 forbid when the question is whether two things correspond.
+  Evidence it was operative: the remedy is stated as "grep the validated-premise register for a governing premise"; the cohort entry credits the finding to a "PREMISE-105 duplication sweep" performed at disposition, i.e. after both searches; the instance descriptions locate the governing premise by what it does ("this item's exact case"), not by a shared term; and the register is missing PREMISE-001..043 entirely (OPEN-133), so a grep over the file cannot reach ~40 referenced IDs.
+  Why it was unstated: obvious to participants -- "check the register first" is self-evidently right, so how the check would work went unexamined.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-579, MONITOR-490, PREMISE-105, PREMISE-116, PREMISE-123, PREMISE-127, PREMISE-134, REVISE-245, OPEN-133
+  Testability: testable via literature — retrieval by lexical match versus by relational structure; duplicate-detection recall in growing knowledge registers. Also in-house and decisive: take the four instances, grep the register for their salient terms, and record whether the governing premise surfaces.
+  Risk if wrong: Medium-High. The pre-check is offered as the second of two mechanisms that would have made a majority of the batch avoidable; if it cannot retrieve premises stated in different vocabulary, adopting it produces the appearance of a fix and a false sense that duplication has been closed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-579
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a retrieval remedy whose method is term-match while the register's own transfer-condition premises forbid term-match as evidence of correspondence. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-580:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Both of the day's remedies for this layer act on how items are written and routed — name the settling quantity; grep the register first — and presume the defect is in construction rather than in volume or cadence: that 14b should produce the same number of items, better. The alternative that the daily cadence itself generates items faster than any construction discipline can improve them was not raised, and no cap, sampling rate, or triage tier was discussed. REVISE-251's own risk statement names the volume: "14b's presumption-construction produces items at a rate the pipeline cannot absorb" — and then remedies the construction.
+  Evidence it was operative: only one intake rule is proposed and it is a quality rule; the stated sanction is reclassification, not reduction; the standing ~174-item unconsumed backlog with zero 15a/15b consumption since 2026-07-08 is reported in the same run as unchanged, i.e. the absorption problem is visible and separately tracked without being connected to the intake remedy.
+  Why it was unstated: absent alternatives -- the flags were raised against inference forms, so the remedy space was framed as forms of inference.
+  Type: structural / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-578, ASSUMPTION-579, REVISE-251, PRESUMPTION-553, PRESUMPTION-561, PRESUMPTION-576
+  Testability: testable via literature — quality-versus-throughput interventions in review pipelines; whether per-item discipline reduces arrival rate; queueing remedies where service is the bottleneck (noting REVISE-248's correction to PRESUMPTION-561's use of Little's Law).
+  Risk if wrong: Medium. If arrival rate rather than item quality is the binding constraint, a construction rule leaves the backlog growing while creating the impression that intake has been fixed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-580
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a risk statement that names volume and a remedy that acts only on form, with no alternative considered. [inferred -- moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-581:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Withdrawing the attribution of the 07-20 loss of PROP-2026-07-19-001 and -003 to the review-page bug, and naming the manual bulk `pending/ → approved/` move as "the likelier mechanism," presumes that the correction is bookkeeping — "Doesn't change what you need to decide; does change the story." But the withdrawal leaves a two-item data loss with no tracked cause: no flag, watch item, or check was opened against the manual-move mechanism, and that mechanism is unchanged and still available. The loss moved from a defect that is about to be fixed to a procedure that nobody is fixing.
+  Evidence it was operative: the withdrawal is reported under the heading of the review-page bug rather than as its own finding; the stated consequence is explicitly limited to the story; the day's remedy list contains the one-line generator fix and no item about the bulk-move path; and WATCH-002/WATCH-003 exist because of those two proposals, so the items remain live while their cause has been vacated.
+  Why it was unstated: obvious to participants -- a correction that removes a false attribution feels like a net gain in accuracy, which it is, so the residue it leaves is not looked for.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-581, WATCH-002, WATCH-003, PREMISE-130, PRESUMPTION-570
+  Testability: testable via literature — vacated causal attributions and re-opening of closed incident causes; recurrence risk of manual data-movement steps versus automated ones. Also in-house: check whether any tracked item now covers the bulk-move path, and whether the 07-20 move can be reconstructed from file mtimes.
+  Risk if wrong: Medium-High. Two known lost proposals now have no owned cause, and the mechanism newly identified as likeliest is a manual step that is neither instrumented nor flagged. If it recurs, the loss will look novel.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-581
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a withdrawn attribution whose consequence is stated as narrative only, leaving a known loss without a tracked cause. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-582:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] "One-line fix, blocking" presumes that line 304 is the only remaining divergence between how decisions are written and how they are read — that the read of line 116 as "correct" is sufficient verification of the other path. The 07-28 recommendation asked for two things: emit pids from the real card set AND add "a reconciliation assertion that can fail"; only the first is in today's one-line framing, and the file still contains no `assert`. Today's own other finding is that reporting layers lied twice while the underlying data was fine, which is an argument against repairing a reporting path without installing a check that can fail on it.
+  Evidence it was operative: the fix is described as one line, "spelled out in the watch list," and as the sole blocker on a review pass; the escalation's own history is that this defect was mis-described for six days as "position-based decision IDs" and then found to be a half-applied fix on a source read — i.e. the previous characterisation was also reached by reading; no verification step is proposed for the post-fix state beyond the fix itself.
+  Why it was unstated: culturally embedded -- "one-line fix" is a size claim that carries an implicit completeness claim.
+  Type: methodological / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-566, ASSUMPTION-581, ASSUMPTION-583, PREMISE-130, PRESUMPTION-583
+  Testability: testable via literature — partial-fix and regression rates after single-site repairs; the value of executable assertions over inspection in verification. Also in-house and cheap: after the edit, generate a page against the 22-item queue and compare the emitted pid set to the real ids.
+  Risk if wrong: Medium-High. The stated condition is total loss of any recorded decision; if the fix is incomplete and no assertion can fail, the next review pass is the test, and its failure mode is silent.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-582
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a completeness claim carried by a size claim, against a two-part recommendation of which one part is dropped. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-583:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] "Two report blind spots in one day... worth asking whether that's a coincidence or a pattern in how these tools were built" presumes that a co-occurrence of two is the right unit for a pattern claim about tool construction — the inference form this same run refuted and routed back to this agent as REVISE-250, where a movement between counts of 1 and 5 was found statistically indistinguishable from noise. The observation is correctly framed as a question rather than a finding, which is the right form; but no denominator is offered, and the denominator is cheap: how many reporting surfaces exist, and how many were tested today.
+  Evidence it was operative: the pairing is elevated to a "For Morning Discussion" item and connected to PREMISE-124's calibration worry, which is a claim about the class of tools; the two instances are of different kinds (a staleness count against a frontmatter scan; an id-space mismatch between write and read paths) and no common mechanism is named beyond both being "the reporting layer"; the same document applies small-n discipline to its own INCORPORATE count in the paragraph structure above.
+  Why it was unstated: obvious to participants -- two failures of the same shape on one day is a genuinely striking coincidence, and striking coincidences invite the inference before the base rate is asked for.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-583, REVISE-250, PREMISE-101, PREMISE-124, PREMISE-130, PRESUMPTION-568
+  Testability: testable via literature — base rates for clustering of defects by layer; when co-occurrence licenses a common-cause hypothesis. Also in-house and decisive: enumerate the reporting surfaces in `tools/` and test each against a direct scan of its substrate, which converts the coincidence into a rate.
+  Risk if wrong: Medium. Nothing is broken by the question; the risk is that a two-instance pattern about tool provenance is carried forward as established and then used to score PREMISE-124's calibration worry, on the same day the pipeline recorded that it must not do this.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-583
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a pattern claim over n=2 in the same document that applies small-n discipline to its own counts. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-584:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Day 057's Bridges section citing no ids at all is glossed as "why every prior id-vs-gloss audit passed it," which presumes the audit's pass was a false negative on a populated class of one. Nothing in the run reports a sweep for other zero-id sections. If an audit's inputs are the ids it finds, then a section with no ids is invisible to it by construction, and the number of such sections is unknown rather than one. The finding is being treated as an item recovered rather than as a measurement that has not been taken.
+  Evidence it was operative: the item is reported as "the real find" of a six-pair reviewer run and routed to authorship ("supplying six missing bridge ids is authorship, not cleanup"); no count of zero-id sections across the corpus is given; the same run reports the QC report returning `needs_review: 0` against a direct scan finding 9 — the identical shape, a null produced by what the check looks at, and the two are not connected.
+  Why it was unstated: too foundational to notice -- an audit is described by what it checks, not by what it cannot see, so the empty case falls outside its own account of itself.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-583, ASSUMPTION-584, PREMISE-114, PRESUMPTION-570, PRESUMPTION-575
+  Testability: testable via literature — coverage metrics that cannot register absent input; vacuous-pass conditions in checklist audits. Also in-house and cheap: scan every synthesis for a Bridges section with zero ids and report the count; add an assertion that fails on zero.
+  Risk if wrong: Medium-High. If the class is larger than one, the id-vs-gloss audit's clean history over the corpus is uninformative about exactly the sections that have nothing to verify, and the same blindness applies to any audit keyed to found references.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-584
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a vacuous-pass finding treated as a recovered item with no sweep for its class. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-585:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Recording the OpenStory refresh under "Failed" presumes that a guard correctly refusing stale input belongs in the same category as a fault. Two different things happened: the runtime writer stopped (a fault, undiagnosed, at least 48 hours old) and the freshness guard worked exactly as designed (a success). Filing them as one failure moves the writer outage to a line in "What's Next" and gives the day's ledger a false negative in the guard column.
+  Evidence it was operative: the entry reads "**Failed:** OpenStory feed refresh — freshness guard tripped... Runtime writer likely down. Feeds NOT refreshed"; the remedy is "Restart the OpenStory runtime writer... the guard will keep failing nightly until the DB gets a write," which attributes the recurring failure to the guard's firing rather than to the outage; no separate item tracks the writer's downtime or asks why a 48-hour outage was first noticed by a downstream guard.
+  Why it was unstated: culturally embedded -- a job that does not produce its output is reported as failed, and the reporting convention has no cell for "refused correctly."
+  Type: epistemic / structural
+  Related decisions: none
+  Related items: ASSUMPTION-585, PREMISE-100, PREMISE-131
+  Testability: testable via literature — fail-safe versus fail-silent classification in monitoring; alarm taxonomies that distinguish refusal from fault. Also in-house: check whether any monitor alarms on writer age independently of the refresh job.
+  Risk if wrong: Medium. If correct refusals are logged as failures, repeated guard trips become background noise and the fault they are reporting stays undiagnosed — which is what a 48-hour-old outage discovered downstream already suggests.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-585
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a ledger entry that merges a working control with the fault it detected. [inferred -- moderate-to-high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-586:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] Reading REVISE-251 as "arguably OPEN-138's ('is the self-knowledge layer advisory-only?') answer arriving as a demand rather than a question" presumes that a change in what the layer does settles what the layer should be permitted to do. OPEN-138 is a normative question about authority; the observation offered as its answer is a description of the layer having begun to recommend intake rules for itself. That the pipeline is now doing it is evidence that the question is urgent, not that it is answered.
+  Evidence it was operative: the sentence appears under "New Open Questions" as the reason no new OPEN was logged, i.e. the observation is doing the work an entry would have done; the same run relies on PREMISE-124 in its binary form four times while REVISE-251 asks for graded assessment, and 15c's own warning is "do not let the graded reading take effect by drift" — the identical drift structure, recognised there and not here.
+  Why it was unstated: too foundational to notice -- the difference between a de facto role and a licensed one only becomes visible when someone asks who authorised the change.
+  Type: normative / epistemic
+  Related decisions: none (OPEN-138 remains open; no new OPEN logged)
+  Related items: ASSUMPTION-578, ASSUMPTION-580, ASSUMPTION-588, OPEN-138, REVISE-249, REVISE-251, PREMISE-124, PRESUMPTION-560
+  Testability: testable via literature — is/ought transitions in governance of self-monitoring systems; authority acquired by practice versus by delegation; audit independence when the auditor sets intake rules. Also in-house: whether an explicit sign-off is recorded for any intake rule the layer proposes for itself.
+  Risk if wrong: Medium-High. If a role change can be recorded as an answer to the question of whether the role is permitted, the self-knowledge layer's authority grows by exactly the drift mechanism the same run warns against, and OPEN-138 closes without ever being decided.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-586
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a descriptive observation offered in the place where a normative entry would have gone. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-587:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] "The budget and that task are in genuine conflict and one of them needs re-scoping" presumes the resolution space has two members: raise the budget or shrink the task. A third reading is available and not considered — that a review requiring ~350k tokens per pass is information about the review's design, e.g. that it re-derives from scratch each run what could be checked incrementally against persisted state. The framing also presumes the 4,000-token figure is a budget in the sense that admits re-scoping rather than a signal that per-task work should be decomposed.
+  Evidence it was operative: the item is stated as a two-sided conflict with a disjunctive remedy; the surfacing is praised as correct behaviour, which closes the item at disclosure; and the same budget has now been breached by at least three separate scheduled tasks (the 07-28 EOD run at ~45k, this run, and the Summa reviewer at ~350k) without any of the three examining whether the shared shape of the breach — whole-register reads on every run — is the common cause.
+  Why it was unstated: absent alternatives -- a conflict between two named quantities invites adjusting one of them.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-574, ASSUMPTION-587, PRESUMPTION-533, PRESUMPTION-574
+  Testability: testable via literature — incremental versus full-recompute verification cost; budget-driven decomposition of review tasks. Also in-house: measure how much of each breaching run's token use is re-reading state that has not changed since the previous run.
+  Risk if wrong: Medium. Re-scoping either side leaves the design question unasked, and the registries are growing monotonically, so a budget set against whole-file reads will be breached again by every task that touches them.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-587
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a disjunctive remedy over two quantities where a third term -- the design that generates the cost -- is unexamined. [inferred -- moderate confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-588:
+  Date surfaced: 2026-07-29
+  Statement: [inferred] The seventh consecutive dark sync is reported with its remedy ("please sign in") and with the assurance that "the file is the deliverable," which presumes the outage's cost is bounded by the delivery of this one document. The same summary states that "today's agents had no Chat context from yesterday's walk" — so the outage also removed an input to every agent that ran today, and nothing in the day's output records what was not done, not asked, or differently decided for want of it. The cost is entered as zero because nothing measures it. This is distinct from PRESUMPTION-571's revealed-preference reading: that one asks why the cheap fix is never done, this one asks what the outage costs while it persists.
+  Evidence it was operative: the header's remedy is "read this file directly," which addresses the outbound direction only; the inbound failure is stated in the same paragraph and given no consequence; seven syncs have now been lost in both directions with the daily summaries reporting no degradation of agent output; and the 07-24 date of the last Chat→Cowork context means the inbound channel has been dark long enough for its absence to be invisible.
+  Why it was unstated: too foundational to notice -- an input that never arrives leaves no trace in the output that depended on it.
+  Type: epistemic / structural
+  Related decisions: none
+  Related items: ASSUMPTION-568, ASSUMPTION-589, OPEN-135, PREMISE-131, PRESUMPTION-541, PRESUMPTION-571, PRESUMPTION-482
+  Testability: testable via literature — measuring the cost of a missing input; silent degradation in pipelines with optional context; the auditor's inability to bound its own omissions. Also in-house: after the channel is restored, compare a day's agent output with and without Chat context on a comparable workload.
+  Risk if wrong: Medium-High. If the inbound channel materially shapes what the agents attend to, seven days of autonomous output have been produced without the steering input the design assumes, and the design's own record shows no way to detect that.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-588
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an outage whose outbound cost is mitigated and whose inbound cost is stated and then left without consequence. [inferred -- high confidence]
+    Current status: UNTESTED
+
+PRESUMPTION-589:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "0-of-4 is a *backlog artifact*, not a raised bar" is a causal counterfactual over n=4: it asserts that had PREMISE-114 been ratified, the batch would have yielded at least one INCORPORATE. The refusal to narrate a low count as rigour is correct and is REVISE-250 applied; but the substitute explanation is itself an inference from a small count, offered without the counterfactual being run and without any measurement of how often a named single blocker, once removed, actually flips a MONITOR to an INCORPORATE. The run declines one small-n story and adopts another in the same paragraph.
+  Evidence it was operative: the changelog headline states the causal claim flatly ("Zero INCORPORATE is therefore 0 of 4 with that explanation, not evidence of a raised bar"); only one of the four items (586) is tied to PREMISE-114 at all, so even if the claim holds for 586 it explains one item, not four; and no comparison cohort is cited.
+  Why it was unstated: obvious to participants -- an explanation that names a specific, visible blocker feels like a mechanism rather than an inference.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-591, ASSUMPTION-592, PREMISE-113, PREMISE-130, PRESUMPTION-578, REVISE-250
+  Settling quantity (type): a conditional rate -- over the last N MONITOR dispositions that named a single blocking condition, the fraction that converted to INCORPORATE once that condition cleared.
+  Testability: testable empirically / in-house (the rate above is computable from `monitor_queue.md` and `lit_search_returns.md` without any new search).
+  Risk if wrong: Medium-High. If blocker-removal rarely flips a MONITOR, then "backlog artifact" is a comfortable explanation for a yield the pipeline would have produced anyway, and the highest-leverage action recommended to Tom (ratify PREMISE-114) is being sold on a return it may not deliver.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-589
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a counterfactual causal claim offered as the alternative to a small-n claim the same run refuses. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-130 / PREMISE-113) -> in-house
+
+PRESUMPTION-590:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "15a and 15b ran as separate subagent contexts with no sight of each other's files or reasoning traces -- structurally removing the read channel" presumes that a subagent boundary is coextensive with the read channel. Both arms read the same registry files, the same premise statements and the same item text; the channel removed is sight of each other's *outputs*, not sight of a common input. The run correctly ranks this as the weakest of four channels per PREMISE-111, which makes the residual question sharper rather than softer: whether the isolation changed anything measurable at all.
+  Evidence it was operative: the change is reported under "Method change" as an improvement with its limitation stated as a ranking rather than as a measurement; MONITOR-486's three-arm dependence measurement is acknowledged as unrun in the same sentence, so no before/after comparison exists; and the two arms' result files were produced against an identical item text and an identical premise register.
+  Why it was unstated: culturally embedded -- process isolation is a familiar guarantee in engineering and carries an intuition of independence that does not transfer to shared-input inference.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-595, PREMISE-111, MONITOR-486, PRESUMPTION-534
+  Settling quantity (type): an overlap fraction -- the Jaccard index of the two arms' cited source sets, measured under isolation and without it, on matched items.
+  Testability: testable empirically / in-house (this is MONITOR-486's three-arm measurement, already specified and still unrun).
+  Risk if wrong: Medium-High. If isolation does not move source overlap, the FOR/AGAINST design is producing one vote reported as two, and every CONTESTED verdict -- including today's two -- rests on a disagreement between correlated arms.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-590
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a structural claim ("removing the read channel") asserted over a boundary that does not enclose the shared inputs. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-111) -> in-house
+
+PRESUMPTION-591:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] REVISE-253 proposes that "a computable worst-case bound displaces UNCALIBRATED," which presumes such a bound is generally available for the class of quantities UNCALIBRATED was minted to describe. The originating case argues against this: the cost of eight days of missing Chat context is unbounded precisely because the missing input's content is unknown, and a worst case over unknown content is either trivial (everything) or arbitrary. The three-state convention may therefore rename the hard cases rather than resolve them -- UNIDENTIFIABLE would absorb exactly the items UNCALIBRATED currently holds, with the new middle state populated by the easy cases that never needed it.
+  Evidence it was operative: the convention is introduced as an amendment to PREMISE-124 rather than as a partition to be validated against the existing UNCALIBRATED population; no count of currently-UNCALIBRATED items admitting a bound is given; and the free test the same run proposes (grep the dark days for context-dependent items) measures the FREQUENCY of affected items, not the BOUNDABILITY of their cost, so it cannot decide the amendment it is offered to decide.
+  Why it was unstated: too foundational to notice -- a three-state scheme looks strictly more expressive than a two-state one, so the question of how the population distributes across the new states does not arise.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-594, PREMISE-124, PRESUMPTION-588, REVISE-253
+  Settling quantity (type): a partition fraction -- of items currently tagged UNCALIBRATED, the proportion for which a non-trivial computable worst-case bound can actually be written down.
+  Testability: testable via literature (partial identification and bounding of unobservables in econometrics; three-valued and "unknown" states in audit evidence and safety-case intake; the distinction between epistemic and aleatory uncertainty in risk registers). Also in-house (the partition count above).
+  Risk if wrong: High. If the middle state is thinly populated, the amendment weakens PREMISE-124's discipline -- which exists to stop favourable self-produced numbers -- while appearing to sharpen it, and the free test named alongside it would have returned a supportive-looking number about a different question.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-591
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an amendment whose validating test measures a different quantity than the one the amendment turns on. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-592:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] The scheduler watchdog recorded `c282-wiki-agent-daily-run` as verified -- "fired 08:34Z; 23 files in `wiki/` modified within 25h" -- which presumes that the presence of recent output certifies a completed run. At the time of this EOD run that session is still executing (26 assistant turns, status `running`). The check therefore issued a green verdict over a task in flight, on evidence the task itself produced. This is distinct from the mount-blindness already noted: there the check cannot see, here it can see and reads liveness as completion.
+  Evidence it was operative: the verification table reports a single tick against a file-count-and-recency test with no exit-status, no completion marker and no end-time; the two rows the watchdog could not evaluate are marked with a distinct symbol, showing the design does distinguish "cannot check" from "passed," but has no third state for "still running"; and the same run reports a catch-up dispatch cluster at 15:45-15:47Z, i.e. it already had evidence that firing time and execution window come apart.
+  Why it was unstated: culturally embedded -- artifact freshness is the ordinary proxy for job success in cron monitoring, and the proxy fails silently only for long-running jobs.
+  Type: epistemic / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-599, ASSUMPTION-602, PREMISE-096, PREMISE-100, PREMISE-110
+  Settling quantity (type): a false-green rate -- the proportion of the watchdog's PASS verdicts issued against tasks that had not terminated, or that terminated in error, at verdict time.
+  Testability: testable via literature (liveness versus correctness in job monitoring; artifact-freshness proxies and their failure modes; the "stuck-at-nominal" sensor fault class already invoked by PREMISE-110, applied to a scheduler rather than a detector). Also in-house (compare each verdict against session terminal status for a fortnight).
+  Risk if wrong: Medium-High. The watchdog is the only layer asserting that the scheduled fleet is working, and PREMISE-096 forbids exactly this shape -- a self-produced artifact certifying its own producer. A partially-completed run that writes files early and fails late is reported as healthy.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-592
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a PASS verdict observed directly this run to have been issued over a session still executing at the time of writing. [inferred -- high confidence; the running status was observed, not reconstructed]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-593:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "Zero nonexistent PRS ids cited, corpus-wide" is reported as the test of escalation-trigger 5, presuming that the trigger is about id existence. The reviewer states the limit in the same breath -- existence "says nothing about whether an id is attached to the *right* gloss" -- and the drift class it excludes is the one already known to be present, having been found by hand on Day 143 the previous day. A sweep that cannot fail on the live failure mode was run to completion and reported as a corpus-wide clean result.
+  Evidence it was operative: the finding is placed under a heading about spending free time well and is given the strongest available quantifier ("all 307 commentaries and all 16 tradition folders"); the acknowledged limit is appended as a clause rather than treated as a reason the result does not discharge the trigger; and the gloss-drift class is deferred to "your batch repoint," i.e. to a human action, with no sampling estimate of its size.
+  Why it was unstated: too foundational to notice -- a corpus-wide zero is a strong-looking number, and the question of what the number is a number OF does not surface once it is zero.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-584, ASSUMPTION-598, PREMISE-096, PREMISE-110, PRESUMPTION-584
+  Settling quantity (type): a defect rate with a denominator -- from a random sample of n cited ids, the proportion attached to the wrong gloss, with a confidence interval.
+  Testability: testable empirically / in-house (sample 40-60 cited ids across traditions and check gloss attachment; PREMISE-110 already predicts that an existence-keyed audit becomes more reassuring as gloss drift worsens).
+  Risk if wrong: Medium-High. If gloss drift is at any material rate, the corpus-wide zero is the reassuring nominal reading PREMISE-110 describes, and it is now on record as a clean escalation-trigger test.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-593
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a test reported as discharging a trigger it cannot fail on the known live failure mode. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-110) -> in-house
+
+PRESUMPTION-594:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "The Stump tradition's id sequence skips PRS-25; nothing cites it, so it's inert" presumes that absence of citation makes a gap harmless. The alternative reading is the opposite: a triplet that exists in no sequence and is cited by nothing is what a silently dropped item looks like from inside a corpus that only checks the ids it finds. The inference "uncited therefore inert" and the inference "unfound therefore absent" have the same shape as the vacuous-pass problem the reviewer identified on Day 057 the previous day.
+  Evidence it was operative: the observation is filed as "incidental" and closed in one clause; no check was reported against the Stump source material for whether a PRS-25 was ever authored; and no sweep for id-sequence gaps across the other fifteen tradition folders was reported, so the class size is one by construction rather than by measurement.
+  Why it was unstated: oversight -- an off-by-one in a sequence reads as a numbering convention rather than as a missing object.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-584, ASSUMPTION-598, PREMISE-096, PREMISE-110, PRESUMPTION-584
+  Settling quantity (type): a count with a denominator -- the number of id-sequence gaps across all 16 tradition folders, and for each, whether a source triplet exists in the tradition's own material.
+  Testability: testable empirically / in-house (an id-sequence gap sweep is a few lines of shell and has not been run).
+  Risk if wrong: Medium. If gaps mark lost triplets rather than skipped numbers, the PRS counter drift unresolved since 07-08 acquires a mechanism, and the drift is currently attributed to counting rules alone.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-594
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a gap dismissed on evidence (no citations) that is equally consistent with the adverse reading. [inferred -- moderate confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-110 / PREMISE-096) -> in-house
+
+PRESUMPTION-595:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "`extract_agent_node_refs.py` cannot complete in the sandbox (~75s CPU against a 45s bash cap) ... Fix is to run `refresh_openstory_feeds.sh` on the Mac" presumes the ~75s figure is a property of the environment rather than of a cost that grows with the corpus. If the runtime scales with vault size, moving execution to a faster machine buys time rather than solving anything, and the same script will exceed the Mac's practical window later. This is the third term PRESUMPTION-587 named -- the design that generates the cost -- reappearing in a different subsystem.
+  Evidence it was operative: the remedy is stated as a change of venue with no profiling, no complexity claim and no comparison against a previous run's timing; the failure is filed under an environment constraint ("the sandbox structurally cannot do it"); and PREMISE-104 already records that read cost per run grows monotonically across this vault with no rotation policy anywhere.
+  Why it was unstated: absent alternatives -- when a job exceeds a hard cap, the cap is the salient object.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-600, PREMISE-104, PREMISE-107, PRESUMPTION-587
+  Settling quantity (type): a scaling exponent -- runtime as a function of input size, measured across three vault snapshots of different sizes.
+  Testability: testable empirically / in-house (time the script against dated vault snapshots; the answer is either flat, linear, or worse, and each implies a different remedy).
+  Risk if wrong: Medium. A venue change closes the item, and the node_edges feed goes stale again at a date nobody predicts.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-595
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a remedy that relocates a cost without characterising it. [inferred -- moderate confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-104) -> in-house
+
+PRESUMPTION-596:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] The day's two sync failures are reported under one heading ("BROWSER DELIVERY FAILED -- second consecutive day, same cause, but the cause has shifted") and given one remedy. The text itself names two distinct mechanisms -- Chrome absent at 11:46, Chrome present but the extension unconnected and the profile signed out at 18:42 -- and the phrase "same cause, but the cause has shifted" is a contradiction held together by the shared symptom. Reporting them as one item presumes a single fault, and PREMISE-107 is the standing rule against exactly this: where two candidate mechanisms present the same symptom, the discriminating test is the operative construct.
+  Evidence it was operative: one heading, one remedy ("sign in and open the side panel"), one consecutive-day counter spanning both; the morning record independently attributes the failure to Chrome not running, which signing in would not have fixed; and the evening record attributes it to a signed-out profile, which launching Chrome would not have fixed.
+  Why it was unstated: obvious to participants -- both failures block the same channel, so the channel becomes the unit of analysis instead of the fault.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-604, PREMISE-107, PREMISE-131, OPEN-135, PRESUMPTION-571
+  Settling quantity (type): a decomposition -- across the eight dark syncs, the count of failures attributable to each distinct mechanism.
+  Testability: testable empirically / in-house (the eight failure records are on disk; classify each by stated mechanism -- this is a read, not a search).
+  Risk if wrong: Medium. Eight days of a single escalating request may be two requests, one of which (launch and keep Chrome running) is automatable by the task itself, as the morning record's own "optional resilience" note observes and then does not act on.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-596
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two stated mechanisms consolidated under one heading, one counter and one remedy. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-107) -> in-house
+
+PRESUMPTION-597:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "The master wiki hasn't updated since 2026-07-27 ... Either the runs are failing silently or they aren't writing the header" presumes the two disjuncts are exclusive and that the stated date is a reliable reading. Measured directly this run, `C2A2_master_wiki.md` carries mtime 2026-07-28 15:39 -- one day later than the stated staleness date. So the file WAS written on 07-28 and its header says 07-27: evidence for the second disjunct was already in hand at the moment the disjunction was posed, and was not read because the header was trusted as the timestamp.
+  Evidence it was operative: the item is raised as an open disjunction rather than as a resolved finding; the recommended check is against `Reports/system-health-*.md` -- a third artifact -- rather than against the file's own mtime, which is free; and the same summary elsewhere uses mtimes fluently, so the tool was available and not applied here.
+  Why it was unstated: too foundational to notice -- a document's self-reported date is normally its date, and the case where it is not is the case being investigated.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-602, PREMISE-100, PREMISE-109, PRESUMPTION-583
+  Settling quantity (type): a disagreement count -- across the last N master-wiki writes, the number for which header date and mtime differ.
+  Testability: testable empirically / in-house (one `stat` and one `head`; PREMISE-109 governs the general case of two uncalibrated instruments disagreeing).
+  Risk if wrong: Medium. Low stakes in itself, but it is a second instance this week of a reporting layer being read through its own self-description rather than against an independent signal, which is the shape PREMISE-096 exists to forbid.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-597
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a disjunction posed while the datum settling it was on disk and unmeasured; mtime measured directly this run. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-100 / PREMISE-109) -> in-house
+
+PRESUMPTION-598:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] Three standing authorisations are restated as repeat requests -- the 26-item bulk retag (third), the `watch_list.md` archival, the two undisposed 07-19 proposals -- alongside an eighth consecutive sign-in request. Restating them presumes the binding constraint is Tom's attention, and therefore that repetition is the correct instrument. An alternative the record does not consider: that a request restated without change on eight consecutive days is evidence about the request's form, not about the recipient. Each is framed as irreversible-until-authorised ("restructuring your vault is your call"), which is a real constraint, but no version of any request has been reduced to a reversible or partial action that would not need authorisation.
+  Evidence it was operative: the requests are numbered by how many times they have been made, which treats repetition as the escalation path; the archival proposal is stated as "reversible, no data lost" yet still withheld pending authorisation; and no request has changed shape between restatements.
+  Why it was unstated: culturally embedded -- deference to the vault's owner is a correct default in this system, and the question of whether a request could be made smaller does not arise once it has been classified as requiring consent.
+  Type: normative / structural
+  Related decisions: none
+  Related items: ASSUMPTION-582, ASSUMPTION-597, ASSUMPTION-604, PREMISE-104, PREMISE-131, PRESUMPTION-571, OPEN-138
+  Settling quantity (type): a latency distribution -- days from first request to action, across all standing authorisation requests, split by whether the request was reversible and by whether it was ever re-scoped.
+  Testability: testable empirically / in-house (the request history is in the changelog series; the counts are readable without a search).
+  Risk if wrong: Medium-High. If repetition is not the effective instrument, three known defects and one dark channel persist while the layer that identified them logs compliance with its own advisory role -- which is the substance of OPEN-138.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-598
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from requests numbered by repetition count with no change of form between restatements. Distinct from PRESUMPTION-571, which asks why the cheap fix is not done; this asks whether the request is the right object. [inferred -- moderate confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-131) -> in-house
+
+PRESUMPTION-599:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] "Reading six agent transcripts plus the vault delta is not compressible below roughly 40k" states a lower bound on the run's cost. The disclosure is correct behaviour and is the third such in three days; what is new is the bound, and it is asserted without a decomposition of where the 40k went. PREMISE-104 already names the mechanism these breaches share -- whole-register reads over monotonically growing files with no rotation -- so an incompressibility claim made without separating transcript reads from register reads presumes the cost is in the transcripts, which is the part that does not grow.
+  Evidence it was operative: the figure is given as a single round number with no breakdown; the two components named (transcripts, vault delta) have opposite growth profiles and are not distinguished; and PRESUMPTION-587, filed 24 hours earlier on the same subject, named exactly this missing third term and was routed in-house where it remains unrun.
+  Why it was unstated: obvious to participants -- an honest disclosure of a breach feels complete once the number is named.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-574, ASSUMPTION-587, ASSUMPTION-605, PREMISE-104, PRESUMPTION-587
+  Settling quantity (type): a cost decomposition -- for one breaching run, tokens attributable to transcript reads, to register reads, and to generation, with the register share further split into changed and unchanged state.
+  Testability: testable empirically / in-house (instrument one run; the split decides whether the bound is real or an artifact of reading unchanged state).
+  Risk if wrong: Medium. If most of the cost is unchanged register state, the incompressibility claim is false and the budget conflict has a technical answer that three consecutive disclosures have talked past.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-599
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated lower bound asserted over two components with opposite growth profiles, undecomposed. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-104) -> in-house
+
+PRESUMPTION-600:
+  Date surfaced: 2026-07-30
+  Statement: [inferred] Today's yield is explained by a downstream blocker (PREMISE-114 unratified) while the intake filter that produced the batch goes unexamined. The four items searched today are the residue of yesterday's register pre-check, which removed 9 of 13 items from the queue on the ground that a governing premise already existed. A filter that removes items because they are already covered will, if it works, leave behind the items least likely to yield a NEW premise -- so a low INCORPORATE rate is a predicted consequence of the filter, not only of the blocker. The run holds both facts and connects neither.
+  Evidence it was operative: the changelog reports the pre-check's 9-of-13 removal and the 0-of-4 yield in the same document without relating them; the explanation offered for the yield is entirely downstream; and no comparison is drawn against the pre-filter cohorts of 07-28 (8 items, 1 INCORPORATE) or earlier.
+  Why it was unstated: too foundational to notice -- a filter justified as removing redundancy is not naturally read as also shaping the yield of what survives it.
+  Type: methodological / structural
+  Related decisions: none
+  Related items: ASSUMPTION-579, ASSUMPTION-591, ASSUMPTION-592, MONITOR-490, PRESUMPTION-579, PRESUMPTION-589
+  Settling quantity (type): a yield comparison -- INCORPORATE rate per item for pre-checked cohorts versus non-pre-checked cohorts, with the cohort sizes stated.
+  Testability: testable via literature (selection effects induced by admission control in review pipelines; base-rate shift under pre-screening; the distinction between a filter's precision and its effect on the residual population's yield). Also in-house (two cohorts exist already: 07-28 unfiltered, 07-30 filtered).
+  Risk if wrong: Medium-High. If the filter depresses yield, then MONITOR-490's recommended pre-check trades throughput for a redundancy saving that has never been priced, and each subsequent low-yield day will be attributed to whatever blocker is visible that morning.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-600
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two facts held in one document and not related: a 9-of-13 intake removal and a 0-of-4 yield explained downstream. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b

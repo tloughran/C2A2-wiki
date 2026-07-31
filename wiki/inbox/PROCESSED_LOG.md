@@ -740,3 +740,4 @@ Network unchanged (no ingest): 279 PRS triplets · 90 cross-program connections 
 - PROP-2026-07-05-003 wright_ask-ntw-jun30-kingdom-vs-secular-humanism -> wright (+1)
 - PROP-2026-07-05-002 wright_ask-ntw-works-of-the-law-bonus -> wright (+1)
 - PROP-2026-07-12-001 wright_ask-ntw-everyday-work-waiting-for-return -> wright (+2)
+- PROP-2026-07-23-002 stump_cajetan-time-eternity-contingent-futures -> stump PRS-30..PRS-31 (+2) [2026-07-31; FINDING-055]

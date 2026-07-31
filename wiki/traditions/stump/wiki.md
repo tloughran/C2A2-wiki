@@ -77,3 +77,12 @@ Ingested 1 approved triplet(s): PRS-17.
 Ingested 2 approved triplet(s): PRS-18, PRS-19.
 - Even if suffering is defeated through union (the Wandering in Darkness solution), defeated suffering still merits mourni…  [src: PROP-2026-06-11-001]
 - Accounts of human flourishing oscillate between individualist (flourishing as internal state) and relational pictures wi…  [src: PROP-2026-06-11-001]
+
+
+## Ingestion Log — 2026-07-31
+Ingested 2 approved triplet(s): PRS-30, PRS-31.
+- How God can know future contingents without collapsing contingency into necessity — Cajetan's ordered relation between absolute eternal being and relative contingent being.  [src: PROP-2026-07-23-002]
+- The gnoseology of divine knowledge derived from a prior metaphysics of the eternity-time relation rather than treated as an isolated epistemic puzzle.  [src: PROP-2026-07-23-002]
+
+**New open question:** Do the network's emergent-time physics programs (Arkani-Hamed, Wolfram) have room for *eternity*, or only for *timelessness*? See FINDING-055.
+
