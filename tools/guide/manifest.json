@@ -6,8 +6,8 @@
   "counts": {
     "plates": 110,
     "duplicate_hashes": 0,
-    "reach_exact": 18,
-    "reach_page_only": 92,
+    "reach_exact": 20,
+    "reach_page_only": 90,
     "volatile": 15,
     "cost_model": 4
   },
@@ -2162,9 +2162,12 @@
         {
           "tab": "wiki_narration.html",
           "row": "row2"
+        },
+        {
+          "cmd": "find levin"
         }
       ],
-      "reach_exact": false,
+      "reach_exact": true,
       "volatile": false,
       "cost": "free"
     },
@@ -2194,9 +2197,12 @@
         {
           "tab": "wiki_narration.html",
           "row": "row2"
+        },
+        {
+          "cmd": "open the first node"
         }
       ],
-      "reach_exact": false,
+      "reach_exact": true,
       "volatile": false,
       "cost": "free"
     },

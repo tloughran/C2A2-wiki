@@ -78,7 +78,45 @@ state — the precise failure mode the plan was written about. So:
 | `volatile: true` — content changes every run; diff structure only | 15 |
 | `cost: "model"` — spends credits to recapture (the four Physics AI actions) | 4 |
 
-Closing those 92 is the next real increment, and it needs the live site, not the PDF.
+Closing the remaining 90 is the next increment, and it needs the live site, not the PDF.
+
+### Replay — the static gate is not enough
+
+```bash
+node tools/guide/replay_reach.cjs [--port 8080] [--cdp 9222] [--only <slug-prefix>]
+```
+
+`check_coverage.py` asserts routes *statically*. Necessary, not sufficient: eleven plates
+once carried `a.launch[data-target='review-cards']` — two true substrings, matching no
+element — behind a green gate. Only a browser can say a recipe arrives. **19 routes, 110
+plates, 0 failures.**
+
+It is not a new harness. `scripts/test_voice_shell.cjs` already serves the wiki and drives a
+real Chrome over raw CDP with **zero dependencies**, and already exports its plumbing behind
+a `require.main === module` guard, so this borrows it and adds nothing to it. No Playwright,
+no `node_modules`, no browser download.
+
+That also lets a reach step be a **CCL command** rather than a selector:
+
+```json
+{ "cmd": "open the first node" }
+```
+
+A command is the app's own declared vocabulary, policed by the §9 audit, so one that stops
+working fails loudly — where a dead selector fails silently. It also hands the plan's Part 5
+over for free: "the app replays the same reach to drive a live session" needs no new runtime,
+because the app already interprets exactly this vocabulary.
+
+Within-page commands live in `WITHIN_PAGE` in `build_reach.py`. They reproduce the **state
+class** a plate shows, not its pixels — the captions record that a search was run, never
+which term — and nothing enters that dict until `replay_reach.cjs` has executed it.
+
+Three bugs this found in its own first runs, all silent-by-default and all mine: reading
+`frame.src` (the shell navigates by `contentWindow.location.replace`, so the element's
+attribute never changes — `window.CCLFrameSrc` is the app's single reader and is now used
+here); clicking into a chapter's document before it finished loading, which presents as a
+dead selector; and re-checking CCL readiness per command, when `#ccl-result` is also where
+every reply lands, so the banner never returns.
 
 ### NOTE — two asymmetries the assertions surfaced
 

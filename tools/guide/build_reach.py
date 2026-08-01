@@ -85,6 +85,26 @@ VOLATILE_PREFIXES = ('c30', 'c31', 'c32', 'c33', 'c34', 'c35', 'c36', 'c37',
 # The only plates that spend model credits: the four Physics Explorer AI actions.
 COST_PREFIXES = ('c16', 'c17', 'c18')
 
+# Within-page steps, expressed as CCL commands rather than selectors.
+#
+# A command is the app's OWN declared vocabulary, policed by the coverage audit in
+# explorer.html section 9, so a command that stops working fails loudly. A CSS selector that
+# stops matching fails silently -- which is exactly how eleven plates in this file once
+# carried `a.launch[data-target='review-cards']`, a selector matching nothing, behind a green
+# static gate.
+#
+# These reproduce the STATE CLASS a plate shows, not its pixels: the captions say "a plain
+# search filters the graph", not which term was typed, and the term was not recorded. A
+# recipe that reaches *a* search result is what the guide's "open this view in the app" link
+# needs; reproducing the original keystroke is neither possible nor useful.
+#
+# Only tabs the voice guide covers can appear here. Every entry is executed by
+# replay_reach.cjs in a real browser -- nothing lands in this dict unverified.
+WITHIN_PAGE = {
+    'b06-sociogram-search-result': ['find levin'],
+    'b07-sociogram-node-detail': ['open the first node'],
+}
+
 errors = []
 
 
@@ -141,10 +161,13 @@ def main(wiki=WIKI):
             steps.append({'chapter': chapter})
             if src:
                 steps.append({'tab': src, 'row': row})
+        for cmd in WITHIN_PAGE.get(entry['slug'], []):
+            steps.append({'cmd': cmd})
         entry['reach'] = steps
-        # The first plate of a section is that page as it loads; everything after it is a
-        # deeper state whose steps are not recoverable from the PDF.
-        entry['reach_exact'] = sec not in seen_section
+        # The first plate of a section is that page as it loads; a plate with authored
+        # within-page commands is exact too. Everything else reaches the PAGE only, because
+        # its steps went with the capture harness and are deliberately not guessed.
+        entry['reach_exact'] = sec not in seen_section or entry['slug'] in WITHIN_PAGE
         seen_section.add(sec)
         if entry['reach_exact']:
             exact += 1
