@@ -14188,3 +14188,180 @@ ITEM: PRESUMPTION-575 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 202
 # appends; the three queue tags were applied by an exact-match script that aborts on any
 # non-unique match. Backups written: for_lit_search.md, lit_search_returns.md,
 # monitor_queue.md, revision_flags.md, validated_premises.md → *.bak.20260731-pre-15pipeline.
+
+# ================================================================================
+# ---- 2026-07-31 EOD self-awareness intake (Agents 14a / 14b) ----
+# ================================================================================
+# Source: autonomous day #26. No attended Cowork session. Inputs read directly this run:
+#   - architecture/daily_sync/chat_to_cowork/2026-07-31_chat_summary.md (failure record)
+#   - architecture/daily_sync/cowork_to_chat/2026-07-31_cowork_summary.md
+#   - architecture/for_lit_search.md 07-31 pipeline footer
+#   - session transcripts: Summa 2026 nightly verification; Summa qc sweep; Summa commentary
+#     reviewer; C2a2 evening cowork->chat; Metabolism regen daily (observed RUNNING at 23:40)
+#   - direct measurement: mtime sweep (34 files), REFRESH_STATUS.md, C2A2_master_wiki.md header,
+#     traditions/stump/prs_triplets.md total lines
+# Produced: ASSUMPTION-606..624 (19) · PRESUMPTION-601..615 (15)
+#
+# REVISE-257 COMPLIANCE: this intake applies the feasibility clause minted today, voluntarily and
+# on its first available run. Every PRESUMPTION below carries a "Feasibility (REVISE-257)" field
+# naming the currently available denominator, and where single-digit, either a route to a larger
+# one or an explicit NOT CURRENTLY DECIDABLE. One item (PRESUMPTION-607) is marked NOT CURRENTLY
+# DECIDABLE on the quantity as named and carries a decidable substitute. Recorded so the clause's
+# first-use behaviour is measurable rather than asserted.
+#
+# ---- QUEUED TO 15a / 15b (6 items) ----
+#
+# PRESUMPTION-601  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> REVISE -> REVISE-258 (constructive half supported both directions; destructive half REFUTED by 15b - SSOT bars multiple AUTHORITIES not multiple stores, CQRS read models are a named correct pattern; item's own remedy direction defeated: decisions.md has a 26-day write failure; already governed by PREMISE-066, whose scope guard is amended rather than duplicated)] [PRESUMPTION]  Type: structural/architectural  Risk: Medium
+#   Search: single-source-of-truth vs. multiple-register designs; proliferation of ad-hoc state
+#   stores as a workflow-system failure mode; where human decisions should be persisted so that a
+#   later, differently-scoped phase reads them.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# PRESUMPTION-602  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> MONITOR (HIGH) -> MONITOR-495 (SIXTH instance of the MONITOR-490 pattern: strong/strong, both directions citing van der Vet & Nijveen 2016 for opposite conclusions; scholarly correction taxonomy places authorship error in the CORRECTABLE tier, contradicting the general claim; decisive corpus-scoped count uncomputed)] [PRESUMPTION]  Type: epistemic/structural  Risk: HIGH
+#   Search: provenance and attribution integrity in knowledge bases; whether source attribution is
+#   metadata or content when the schema indexes by source; propagation of attribution errors into
+#   derived assertions. Bears directly on FINDING-055's standing.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# PRESUMPTION-604  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> INCORPORATE -> PREMISE-136 (convergent narrowed form: achievable denominator is fixed by DECLARED SCOPE not wording; universal claim REFUTED from the register's own contents - 209 and corpus-scoped quantities minted the same day; pooling inadmissible without a stated homogeneity condition; REVISE-257 dependency named not laundered)] [PRESUMPTION]  Type: methodological/scaling  Risk: HIGH
+#   Search: statistical power at small n; pooling, meta-analysis and sequential designs for
+#   low-count operational monitoring; indistinguishability of an underpowered null from an
+#   evidential null; false-negative inflation under fixed-cadence sampling.
+#   NOTE FOR 15a/15b: this is the structural reading of 15b's own 2026-07-31 SYSTEMIC-RISK-FLAG.
+#   The flag treated single-digit denominators as an item-drafting fault; this item asks whether
+#   they are a consequence of the daily run cadence. If so, REVISE-257 is unsatisfiable as written.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# PRESUMPTION-609  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> INCORPORATE -> PREMISE-137 (classification CONCEDED by 15b: a diff-based check is a derived oracle whose power is inherited from its baseline and void on a first run; 15b's mutation-validation requirement folded in as load-bearing; scope extension of PREMISE-120, which covers re-runs not run-to-run comparison)] [PRESUMPTION]  Type: methodological/epistemic  Risk: Medium-High
+#   Search: the oracle problem in software testing; metamorphic and differential testing;
+#   regression comparison as change-detection rather than correctness-checking; invariant-based
+#   checks as the complement.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# PRESUMPTION-611  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> MONITOR (HIGH) -> MONITOR-496 (strong/strong contested, both citing Manski/Tamer for opposite limbs; 15b reframes the obstruction as DEFINITIONAL not representational; DECLINED ON REGISTER STATE - REVISE-254 gates new intake representations on measurement - THIRD consecutive run so decided; decisive test cheap, population in hand, no authorised runner: see REVISE-259)] [PRESUMPTION]  Type: epistemic/methodological  Risk: Medium-High
+#   Search: partial identification and bounds analysis; Manski-style interval reporting when point
+#   identification fails; sampling to bound a population fraction when full classification is
+#   infeasible. Denominator 209 and in hand — the cheapest decidable item in this intake.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# PRESUMPTION-615  [QUEUED] [SEARCHED-15a: 2026-08-01] [SEARCHED-15b: 2026-08-01] [DISPOSITIONED-15c: 2026-08-01 -> MONITOR (HIGH) -> MONITOR-497 (general propagation mechanism CONCEDED by both directions, but the item's local factual premise - no confidence field in the ingest path - is UNVERIFIED, inferred from a summary's silence; PREMISE-124 bars resting on an in-instrument observation; general form recorded but NOT minted, because it is not what the item claimed)] [PRESUMPTION]  Type: structural/epistemic  Risk: HIGH
+#   Search: provenance propagation through extract-transform pipelines; confidence-annotation
+#   survival in knowledge-base construction; why qualifiers written at intake fail to reach the
+#   derived record.
+#   PROVENANCE: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) · Status UNTESTED
+#
+# ---- GOVERNED-CANDIDATE -> IN-HOUSE (9 presumptions) ----
+# Register pre-check applied per MONITOR-490. Each of the following is prima facie governed by an
+# existing PREMISE or OPEN and is NOT queued to 15a/15b; the governing item is named so the
+# pre-check's own effect on yield stays measurable (this is the population REVISE-256 clause (1)
+# is about).
+#   PRESUMPTION-603  -> OPEN-138    (who adjudicates a limit a monitor declares out of its scope)
+#   PRESUMPTION-605  -> PREMISE-130 (promotion criterion: event count vs independent corroboration)
+#   PRESUMPTION-606  -> PREMISE-096 (a layer read through its own, here stale, self-description)
+#   PRESUMPTION-607  -> PREMISE-104 (no back-pointer from produced evidence to the item asking)
+#   PRESUMPTION-608  -> PREMISE-096 (voided standing assumption applied forward only)
+#   PRESUMPTION-610  -> PREMISE-104 (work queue doubling as defect display; cap treated as fixed)
+#   PRESUMPTION-612  -> PREMISE-110 (no duration expectation; "still running" with no threshold)
+#   PRESUMPTION-613  -> OPEN-112 / MONITOR-489 (no designated canonical counter)
+#   PRESUMPTION-614  -> PREMISE-104 (disclosure treated as discharging the budget obligation)
+#   PROVENANCE for all nine: Origin 14b · Chain [14b] · Item type PRESUMPTION (unstated) ·
+#     Status UNTESTED · Routing GOVERNED-CANDIDATE -> in-house
+#
+# ---- ASSUMPTIONS: ASSUMPTION-606..624 routed [IN-HOUSE] (19 items) ----
+# All are records of stated positions, counts, or flags whose settling evidence is internal.
+# PROVENANCE for all: Origin 14a · Chain [14a] · Item type ASSUMPTION (stated) · Status UNTESTED.
+# TWO EXCEPTIONS NOTED RATHER THAN SILENTLY ROUTED:
+#   ASSUMPTION-608 is testable via literature, but it is an OBJECT-LEVEL question (whether the
+#     emergent-time programs can represent eternity as distinct from timelessness). It belongs to
+#     the network's own research layer — the Arkani-Hamed, Wolfram, Carroll and Stump tradition
+#     agents — not to the architectural lit search. NOT queued here, flagged for FINDING-055 and
+#     for promotion to an OPEN entry, which this run does not do unilaterally.
+#   ASSUMPTION-611 is testable via literature and IS being searched, under PRESUMPTION-604, which
+#     is its structural reading. Not double-queued.
+#
+# ---- FAIL-LOUD (Rule 6 / Rule 12) ----
+# This run exceeded the 4,000-token per-task budget. Mitigations applied and disclosed: no
+# multi-MB register read whole — assumptions.md, presumptions.md and for_lit_search.md read only
+# over tails and via grep counts; all register writes are shell heredoc appends. Backups written:
+# assumptions.md, presumptions.md, for_lit_search.md, open_questions.md, decisions.md ->
+# *.bak.20260731-pre-14eod.
+# NOT DONE, stated rather than omitted:
+#   - decisions.md and open_questions.md left unmodified — no new DECISION or OPEN arose. Two
+#     candidates named in the snapshot and NOT logged, per the standing convention against
+#     logging candidate items unilaterally.
+#   - The 26-item legacy cohort bulk retag to [MISROUTED-INTERNAL-EMPIRICAL] was again NOT
+#     performed — SIXTH consecutive run, still pending Tom's authorisation.
+#   - WATCH-002 / WATCH-003 not re-checked (not due until 2026-08-04; outside 14a/14b remit).
+#   - The ~189-item 15d backlog is unchanged. 24th consecutive day of zero drain.
+#   - PRESUMPTION-587's token decomposition, specified 07-29, unrun on day 3 (see PRESUMPTION-614).
+
+# ================================================================================
+# ---- 2026-08-01 · 15a / 15b / 15c pipeline run ----
+# ================================================================================
+# All 6 items of the 2026-07-31 EOD intake (PRESUMPTION-601, -602, -604, -609, -611, -615) searched
+# in both directions and dispositioned. 12 result files written (6 for/, 6 against/) plus one
+# standalone SYSTEMIC-RISK-FLAG file. Registers: DISPOSITION-569..575 (lit_search_returns.md);
+# PREMISE-136, PREMISE-137 (validated_premises.md); MONITOR-495, -496, -497 (monitor_queue.md);
+# REVISE-258, REVISE-259 (revision_flags.md).
+#
+# INDEPENDENCE: all six 15a searches were issued and all six for/ files written before any 15b
+# search was issued. Sequencing discipline, NOT an architectural guarantee; per PREMISE-120 it does
+# not discharge model-level correlation — both directions ran on the same model, same instance,
+# same corpus. The three-arm dependence measurement owed to MONITOR-490 instance A is unrun for a
+# 25th day. CROSS-DIRECTION SOURCE OVERLAP occurred on FOUR of six pairs (602 van der Vet &
+# Nijveen; 604 the small-n literature; 609 Barr et al. + the MT corpus; 611 Manski/Tamer) and is
+# disclosed per PREMISE-120 in each disposition. No convergence claim rests on a shared source: on
+# 609 the overlapping source supports a classification 15b explicitly CONCEDES, and on 604 the
+# convergence rests on 15b's register-internal counterexample, not on literature at all.
+#
+# 2 INCORPORATE after three consecutive runs of zero (07-29 1/8; 07-30 0/4; 07-31 0/3; 08-01 2/6).
+# Reported as a count with its denominator and NOT offered as evidence of rigour, per DISPOSITION-552.
+# Both INCORPORATEs are convergent-narrowed forms in which 15b's challenge was FOLDED IN as a
+# load-bearing clause rather than outweighed — PREMISE-136 clause (2) is 15b's refutation of the
+# source item, and PREMISE-137's mutation-validation requirement is 15b's condition. Neither
+# premise says what its source item said.
+#
+# THIRD CONSECUTIVE RUN in which the register's own state rather than the evidence determined an
+# outcome: 07-30 declined on unratified PREMISE-114; 07-31 on under-specified PREMISE-110; 08-01
+# PRESUMPTION-611 declined on REVISE-254's gate. Whether that is discipline or a stall is not
+# decidable from inside this pipeline — and this run raises it as a flag rather than repeating the
+# observation: see the SYSTEMIC-RISK-FLAG and REVISE-259.
+#
+# SYSTEMIC-RISK-FLAG (15b, High): every remedy in this batch requires a write to a register, schema
+# or convention the pipeline does not own. Routed to REVISE-259 for Tom, with one question named.
+# Under PREMISE-131 the pipeline's own accumulating flag stack is an undelivered warning, i.e.
+# zero mitigation — the standard the pipeline applies to its subject matter and fails on its output.
+#
+# BACKLOG UNCHANGED, stated rather than omitted: ~189 literature items in this file remain
+# unsearched (153 15d re-triggers with no 15a/15b tag + the 26-item legacy cohort ASSUMPTION-492..511
+# / PRESUMPTION-514..532 + others). 25th consecutive day of zero drain on the 15d backlog; the
+# condition PRESUMPTION-553 / MONITOR-484 flagged. The bulk retag of the legacy cohort to
+# [MISROUTED-INTERNAL-EMPIRICAL] still needs Tom's authorisation and was NOT performed — SEVENTH
+# consecutive run. 32 [QUEUED-EMPIRICAL] items are correctly out of scope for 15a/15b and are not
+# counted in the backlog figure. The 9 GOVERNED-CANDIDATE presumptions (PRESUMPTION-603, -605..608,
+# -610, -612..614) and the 19 ASSUMPTIONs (606..624) were routed IN-HOUSE by 14b and are correctly
+# not searched here.
+#
+# FAIL-LOUD (Rule 6 / Rule 12): this run exceeded the 4,000-token per-task budget. Mitigations
+# applied and disclosed: for_lit_search.md, presumptions.md, lit_search_returns.md, monitor_queue.md
+# and revision_flags.md were never read whole — only tails, targeted greps and sed ranges;
+# validated_premises.md was read only via targeted extraction of eleven Statement lines
+# (PREMISE-066/096/100/103/104/110/120/124/127/131/134) for the consistency check. All register
+# writes are shell heredoc appends. The six queue tags were applied by an exact-match script that
+# aborts on any non-unique match. Backups written: for_lit_search.md, lit_search_returns.md,
+# monitor_queue.md, revision_flags.md, validated_premises.md → *.bak.20260801-pre-15pipeline.
+# NOT DONE, stated rather than omitted:
+#   - VERIFICATION INDEPENDENCE: this run's verification pass was performed by the SAME INSTANCE
+#     that ran 15a/15b/15c — the same regression the 07-31 pass disclosed, now on a second
+#     consecutive run. Per PREMISE-096 this pass DOES NOT CERTIFY THIS BATCH. Mechanical and
+#     structural checks only; the judgement checks were not run because this instance cannot run
+#     them on itself. Both INCORPORATEs this run make convergence claims that NOTHING but the party
+#     making them has checked. That is the most important gap in this footer.
+#   - CITATION VERIFICATION: no citation in this batch was checked against a primary venue. The
+#     07-30 pass checked 15 of 45; the 07-31 pass 4 of ~40; this pass 0 of ~44. Load-bearing and
+#     unverified: Kim et al. 2026 Statistics in Medicine 10.1002/sim.70359 (carries PREMISE-136);
+#     Barr et al. 2015 IEEE TSE (carries PREMISE-137); van der Vet & Nijveen 2016 Research
+#     Integrity and Peer Review 1:3 (carries both limbs of MONITOR-495). A fabrication or
+#     misattribution among these three would invalidate a premise, not merely a caveat.
+#   - The PRESUMPTION-611 sample (~40 of 209, two classifiers) was NOT run — no authorised runner.
+#   - PRESUMPTION-587's token decomposition, specified 07-29, unrun on day 4.

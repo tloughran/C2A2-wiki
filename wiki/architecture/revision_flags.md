@@ -6518,3 +6518,35 @@ REVISE-257:
       15b: Raised SYSTEMIC-RISK-FLAG on the common single-digit-denominator problem across all three (2026-07-31)
       15c: Net evaluation and disposition; accepted, routed as an amendment to REVISE-252
     Current status: REVISION-FLAGGED
+
+REVISE-258:
+  Date flagged: 2026-08-01
+  Source item: PRESUMPTION-601 · Disposition record: DISPOSITION-569
+  Item type: PRESUMPTION (unstated)
+  Finding: The item's CONSTRUCTIVE half is supported from both directions — a HOLD is a decision, and the question "where does it live?" is answered by naming an authority for the fact class. Its DESTRUCTIVE half is REFUTED by 15b: SSOT prohibits multiple AUTHORITIES, not multiple stores, and CQRS read models and bounded-context duplication make a reader-shaped second store a named correct pattern. "The remedy adds a third state store" is therefore not, by itself, a fault.
+  ITEM'S OWN REMEDY DIRECTION DEFEATED: routing HOLD facts to decisions.md would move them into a register with a 26-day observed write failure — converting a propagation failure into total silent loss. The ADR literature also scopes decision registers to architectural decisions and counsels against inflating them with per-item operational state.
+  Already governed, amended rather than duplicated: PREMISE-066 states the SSOT architecture with a load-bearing scope guard requiring an explicit, TESTED extraction interface that FAILS LOUDLY. That guard is written for a user-facing derived view. The finding is that it is UNDER-SPECIFIED for operational state. No new premise minted (07-31 precedent, REVISE-255).
+  Recommended action for Tom:
+    (1) Amend PREMISE-066's scope guard to cover OPERATIONAL state, and to state the criterion explicitly as ONE AUTHORITY PER FACT CLASS WITH WRITTEN DERIVATION RULES — not the count of files.
+    (2) Name the authority for HOLD facts. If the answer is decisions.md, HOLD_LIST.md becomes a legitimate derived projection with a stated refresh rule, and the 07-31 remedy is fine as built.
+    (3) Do NOT route anything to decisions.md until its write path is repaired and demonstrated.
+    (4) Run 15b's discriminating test: enumerate every fact class in the wiki and count independently-WRITABLE stores per class. Fact-class denominator, not per-run — satisfies PREMISE-136.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-259:
+  Date flagged: 2026-08-01
+  Source: SYSTEMIC-RISK-FLAG 2026-08-01 (Agent 15b) · Disposition record: DISPOSITION-575
+  Affected: PRESUMPTION-601, -602, -611, -615 primary; -604, -609 by mechanism. Structurally: every item this pipeline has processed.
+  Finding: ALL SIX ITEMS IN THIS BATCH NAME A REMEDY THE PIPELINE CANNOT EXECUTE. 601 needs an authority named for HOLD facts; 602 needs a downstream-consumer index; 604 needs a scope field on settling quantities; 609 needs an invariant added to the verifier suite; 611 needs an interval representation and a two-classifier sample; 615 needs a confidence field on the PRS record. The pipeline's only outputs are PREMISE, MONITOR and REVISE entries. Every finding, however well evidenced, terminates in a flag.
+  This is not a literature gap. It is a closed-loop failure: the diagnostic organ has no effector. Corroborating register history — 0 INCORPORATE on three consecutive runs before today; 24 days of zero drain on the ~189-item 15d backlog; the 26-item legacy-cohort retag pending authorisation for SEVEN consecutive runs; and now THREE consecutive runs (07-30 unratified PREMISE-114; 07-31 under-specified PREMISE-110; 08-01 PRESUMPTION-611 against REVISE-254) in which the register's own state rather than the evidence determined an outcome.
+  Governing premise, already on the books: PREMISE-131 — a warning is not a control, and an UNDELIVERED warning is zero mitigation, not reduced mitigation. A REVISE flag awaiting authorisation across seven runs is an undelivered warning by that premise's own definition. The pipeline has been applying to its subject matter a standard it fails on its own output.
+  Recommended action for Tom — ONE question, and everything else is downstream of it:
+    What, if anything, is this pipeline authorised to write outside its own four registers
+    (validated_premises.md, monitor_queue.md, revision_flags.md, lit_search_returns.md)?
+    Two decisions are already blocked on the answer and are named so the cost is visible:
+      (a) the 26-item legacy-cohort retag to [MISROUTED-INTERNAL-EMPIRICAL] — 7th run pending;
+      (b) the PRESUMPTION-611 sample — cheap, population in hand, no authorised runner.
+  Urgency: High
+  NOT A CLAIM THAT THE FINDINGS ARE WRONG. Every item this run was searched in both directions and the evidence stands on its own. The claim is that the disposition step has no move available that changes the system, and that this has been true long enough to be a structural property rather than a run of bad luck.
+  PROVENANCE: Origin 15b · Chain [15b → 15c] · Current status: REVISION-FLAGGED

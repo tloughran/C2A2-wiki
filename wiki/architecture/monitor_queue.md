@@ -18216,3 +18216,41 @@ MONITOR-494:
       15b: Searched for challenging literature (2026-07-30); PARTIALLY-CHALLENGED (Moderate) — diagnosis contested, measurement vindicated
       15c: Net evaluation and disposition; premise deliberately NOT minted because its parent premise is itself unratified — the item's own objection applied to the item's own remedy
     Current status: MONITORING (MONITOR-494)
+
+MONITOR-495:
+  Date entered: 2026-08-01
+  Source item: PRESUMPTION-602 · Disposition record: DISPOSITION-570
+  Item type: PRESUMPTION (unstated)
+  Statement under monitoring: Where a knowledge schema indexes assertions by source, is a source-attribution error an error in the CONTENT (requiring re-derivation of downstream claims) or in the METADATA (repairable by correction plus enumeration of direct consumers)?
+  Status: CONTESTED — 15a Strong SUPPORTED / 15b Strong PARTIALLY-CHALLENGED. SIXTH INSTANCE OF THE MONITOR-490 PATTERN: both directions cite the same primary (van der Vet & Nijveen 2016) for opposite conclusions, and the decisive quantity is computable but uncomputed.
+  Cross-direction source overlap: LOAD-BEARING, disclosed per PREMISE-120.
+  What would convert this: the corpus-scoped count both directions name — over all cross-tradition artifacts, how many state "tradition T holds P" (semantic reading) versus retrieve P from T's folder (filing reading). Semantic majority → INCORPORATE the local claim. Filing majority → REVISE the item. Corpus-scoped, satisfies PREMISE-136.
+  Interim discipline (condition, not premise): apply the three-tier scholarly correction taxonomy (correction / expression of concern / retraction) to the Stump-Cajetan ingest; enumerate the ingest's DIRECT consumers, which is where the one measured propagation study locates the spread. FINDING-055 to be re-examined on its own evidence, not voided by inheritance.
+  Cadence: Weekly · Priority: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING
+
+MONITOR-496:
+  Date entered: 2026-08-01
+  Source item: PRESUMPTION-611 · Disposition record: DISPOSITION-573
+  Item type: PRESUMPTION (unstated)
+  Statement under monitoring: When a quantity resists automated computation, is the correct report a bounded interval with its method stated, or a refusal — and does this register need an interval representation?
+  Status: CONTESTED — 15a Strong SUPPORTED / 15b Moderate-to-Strong PARTIALLY-CHALLENGED. 15b's reframe is the live question: the obstruction may be a missing DEFINITION of "defective" rather than a missing representation, in which case bounds inherit the unsettlement in their endpoints.
+  Cross-direction source overlap: LOAD-BEARING (Manski/Tamer cited by both for opposite limbs), disclosed per PREMISE-120.
+  What would convert this: stratified sample of ~40 of the 209 partials, TWO independently-instructed classifiers, report Cohen's kappa and the resulting bound. Low kappa → item refuted (definitional obstruction). High kappa → INCORPORATE, and the census's refusal was overcautious. Corpus-scoped, denominator 40/209, satisfies PREMISE-136.
+  Interim discipline (condition, not premise): write the compliant-vs-defective definition before any estimate; pre-register an informativeness threshold and report the bound as uninformative if it exceeds it.
+  DECLINED FOR REGISTER-STATE REASONS, STATED: REVISE-254 (2026-07-31) requires a new intake representation to be gated on a measured partition fraction with a pre-registered threshold; this item requests one on an unmeasured basis. This is the THIRD consecutive run in which register state rather than evidence determined an outcome.
+  OWNERSHIP GAP: the test is cheap and the population is in hand, but no agent in this pipeline is authorised to run it. Per PREMISE-131 a conversion trigger nobody can pull is a warning, not a control. See REVISE-259.
+  Cadence: Weekly · Priority: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING
+
+MONITOR-497:
+  Date entered: 2026-08-01
+  Source item: PRESUMPTION-615 · Disposition record: DISPOSITION-574
+  Item type: PRESUMPTION (unstated)
+  Statement under monitoring: Does an evidence-quality caveat written at proposal time survive into the derived PRS record, and is the C2A2 ingest path missing a carrier field for it?
+  Status: General mechanism CONCEDED BY BOTH DIRECTIONS (annotation survival through a transformation must be designed per operator or it is silently dropped). The LOCAL factual premise — "nothing in the ingest path carries a confidence field" — is UNVERIFIED, inferred from a daily summary's silence rather than from inspecting the path. PREMISE-124 forbids resting on an in-instrument observation without an external or seeded check.
+  What would convert this: (1) inspect the PRS writer directly and enumerate every field it can populate — binary, immediate, decisive; (2) over all proposals filed to date that carried a qualifier, count how many resulting PRS entries show it. Corpus-scoped denominator per PREMISE-136, replacing the item's n=2. Confirmed-absent field plus a non-trivial loss rate → INCORPORATE the general propagation premise.
+  Interim discipline (already licensed by PREMISE-131, no new authority needed): add a confidence/provenance field to the PRS record schema and make ingest FAIL LOUDLY when a proposal carries a qualifier that field would drop. This is an interlock, the admissible tier; a written reminder to preserve caveats is not.
+  Recorded but NOT minted: the general claim (a qualifier reaches a derived record only if the derived schema declares a carrier for it) is bilaterally supported and would ground a premise. It was not minted because it is not what the item claimed, and minting it would be minting a substitute finding to avoid an empty return.
+  Cadence: Weekly · Priority: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING

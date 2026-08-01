@@ -12065,3 +12065,348 @@ PRESUMPTION-600:
       14b: Inferred from two facts held in one document and not related: a 9-of-13 intake removal and a 0-of-4 yield explained downstream. [inferred -- high confidence]
     Current status: UNTESTED
     Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-601:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The ingest regression is diagnosed as a memory failure of Phase 1 -- "PROCESSED_LOG is the only durable state, and a HOLD leaves no mark in it" -- and the proposed fix is a new file, `inbox/HOLD_LIST.md`, that Phase 1 reads. This presumes that durable state must live wherever the ingesting phase happens to look, rather than that a HOLD is a *decision* and the system already has a register for decisions. `decisions.md` exists, is the designated authority, and has been unwritten for 26 consecutive days. The remedy adds a third state store beside a second one that is not being used.
+  Evidence it was operative: the diagnosis names PROCESSED_LOG as "the only durable state" without qualification, in a wiki that maintains `decisions.md`, `open_questions.md`, `monitor_queue.md` and `revision_flags.md`; no alternative location is considered, and the fix is described as "cheapest" without a comparison.
+  Why it was unstated: too foundational to notice -- the phase that failed is the phase whose reads get audited, so the search for a fix stays inside that phase's read path.
+  Type: structural / architectural
+  Related decisions: none
+  Related items: ASSUMPTION-607, DECISION index (unwritten since 07-20), PRESUMPTION-615
+  Settling quantity (type): a count -- how many distinct durable state stores the wiki maintains, and for each, which phases read it; then whether any existing store is read by Phase 1 before ingest.
+  Feasibility (REVISE-257): denominator is the set of state files, currently order-10, and fully enumerable. Two-digit but small; the question is a classification, not a proportion, so power is not the binding issue. DECIDABLE as named.
+  Testability: testable via literature (single-source-of-truth vs. multiple-register designs; the proliferation of ad-hoc state stores as a known failure mode in workflow systems) and in-house.
+  Risk if wrong: Medium. If HOLD belongs in the decision register, the proposed fix works for holds and leaves the general class -- any human judgment that must survive to a later phase -- unaddressed, and the next instance appears in a different shape.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-601
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a "only durable state" claim made inside a wiki with four other registers, one of them purpose-built and idle for 26 days. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-602:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The Stump/Cajetan item is split into "(a) the **content** is defensible ... (b) the **mechanism** is not," presuming that an ingest's content and its authorship provenance are separable for the network's purposes, so that a corrected `Source:` line and a Confidence tag would repair it. But the tradition assignment IS the network's unit of analysis: every downstream operation -- cross-tradition connection, PRS citation, the tradition agent's own self-model -- reads "this is what the Stump tradition holds." Attributing Machado to Stump is therefore an error at the level the system operates on, not a metadata blemish on an otherwise sound entry. FINDING-055's cross-program claim is asserted between *programs*, and one of its endpoints is now mislabelled.
+  Evidence it was operative: the content/mechanism split is stated as the frame for the morning discussion; the remedy offered under (a) is a metadata edit; no consideration is given to whether the cross-index entry and FINDING-055 inherit the misattribution, though both were minted from the same ingest in the same run.
+  Why it was unstated: culturally embedded -- in ordinary scholarship a citation error is a metadata error, and the frame transfers without checking that here the citation IS the datum.
+  Type: epistemic / structural
+  Related decisions: none
+  Related items: ASSUMPTION-607, ASSUMPTION-608, FINDING-055, PRESUMPTION-615
+  Settling quantity (type): a count -- of downstream artifacts that read tradition membership as a semantic claim rather than as a filing location, over the existing corpus.
+  Feasibility (REVISE-257): denominator is the set of cross-index entries and findings citing Stump PRS ids -- order-100 across the corpus, per the Summa verifier's 307-file sweep. Two-digit. DECIDABLE as named.
+  Testability: testable via literature (provenance and attribution integrity in knowledge bases; whether source attribution is metadata or content when the schema indexes by source; propagation of attribution errors through derived assertions) and in-house.
+  Risk if wrong: High. If tradition membership is semantic, the "keep it with a corrected Source line" option is not available as stated, and FINDING-055 -- assessed as the week's best result -- rests on an endpoint that does not belong to the program it names.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-602
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a content/mechanism split offered as a decision frame, where the "content" being defended is indexed by the field alleged to be wrong. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-603:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The pipeline states "Whether that is discipline or a stall is not decidable from inside this pipeline" and stops there. This presumes that a question named as undecidable-from-inside has an outside that will ask it. Nothing routes the question anywhere: it is not an OPEN, not a MONITOR, not addressed to a named party, and `open_questions.md` has been untouched for three days. Three consecutive 0-INCORPORATE runs each carry a different local explanation (07-29 pre-check residue, 07-30 unratified parent, 07-31 under-specified governing premise), and the honesty of each local account is what removes pressure to aggregate them.
+  Evidence it was operative: the limit is stated in the run footer and in no other file; no escalation instrument is invoked; the three explanations sit in three changelogs, and the only place they appear together is this run's own reconstruction.
+  Why it was unstated: obvious to participants -- stating a limit feels like discharging it, and each day's account is individually correct.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-609, ASSUMPTION-610, ASSUMPTION-614, OPEN-138, PRESUMPTION-589, PRESUMPTION-600
+  Settling quantity (type): a routing count -- of statements of the form "not decidable from inside X" issued across the register, and for each, whether any instrument outside X subsequently took it up.
+  Feasibility (REVISE-257): grep-able over the full register; denominator plausibly two-digit over 26 days. DECIDABLE as named.
+  Testability: testable via literature (escalation design in self-monitoring systems; the difference between disclosing a limit and delegating past it; who adjudicates when a monitor declares itself out of scope) and in-house.
+  Risk if wrong: Medium-High. If nothing outside ever asks, an honest statement of limits functions as a terminal disposal, and the three-run pattern accumulates without ever being adjudicated.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-603
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated undecidability with no routing, in a system that has three routing instruments and used none. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (OPEN-138) -> in-house
+
+PRESUMPTION-604:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The underpowered-self-measurement flag is treated as a property of the three items -- three quantities named badly, remediable by a feasibility clause (REVISE-257) and by 15c substituting better-powered tests. This presumes the single-digit denominators are an artifact of item drafting rather than a structural consequence of the system's own granularity. Runs are daily; batches have been 13, 8, 4 and 3 items; incidents are counted per run. ANY per-batch or per-incident proportion is single-digit by construction. The only route to a two-digit denominator is pooling across days, and nothing in the register pools -- every settling quantity is scoped to a run or a cohort. A clause requiring a "named route to a larger denominator" cannot be satisfied without a pooling convention that does not exist.
+  Evidence it was operative: all three items independently produced single-digit denominators and this is read as a coincidence worth a flag rather than as a base rate; 15c's remedy in all three cases was a substitute test "drawn from the existing population," i.e. still within one cohort; REVISE-257 requires a route to a larger denominator without specifying any mechanism by which one could exist.
+  Why it was unstated: too foundational to notice -- the daily run cadence is the system's heartbeat and is not read as a sampling design.
+  Type: methodological / scaling
+  Related decisions: none
+  Related items: ASSUMPTION-611, ASSUMPTION-612, REVISE-252, REVISE-257, PREMISE-124, PRESUMPTION-611
+  Settling quantity (type): a distribution -- of achievable denominators across every settling quantity currently in the register, partitioned by whether the quantity is scoped to a run, a cohort, or the corpus.
+  Feasibility (REVISE-257): the register holds 257 REVISE items and 494 MONITOR items; the settling-quantity field is parseable. Denominator is three-digit. DECIDABLE as named, and this is one of the few items in the current batch for which that is true.
+  Testability: testable via literature (statistical power at small n; pooling, meta-analysis and sequential designs for low-count operational monitoring; the indistinguishability of an underpowered null from an evidential null; false-negative inflation under fixed-cadence sampling) and in-house.
+  Risk if wrong: High. If small n is structural, REVISE-257 licenses a clause that most future items cannot satisfy, producing a steady stream of "NOT CURRENTLY DECIDABLE" tags that look like rigour and function as a queue that never drains -- and the register still cannot distinguish those from evidential nulls.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-604
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three independent single-digit denominators read as an item-drafting fault, in a system whose cadence makes single-digit denominators the base case. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-605:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The two-in-two observation proposes a trigger at three instances "in a third signature," presuming that counting occurrences in distinct signatures is the right individuation for promoting a pattern to a defect class under PREMISE-130. But this same batch already produced a second, non-count line of evidence for the same claim: 15c independently replaced all three stated tests as infeasible, arriving at the conclusion while writing dispositions rather than while reading 15b's flag. That is corroboration by an independent route, and it is recorded as a nice detail rather than credited toward the threshold. The trigger counts events and is blind to how many independent parties reached the conclusion.
+  Evidence it was operative: 15c's independent corroboration is reported in the same paragraph as the flag and plays no role in the "two in two, not yet a defect class" arithmetic; the proposed pre-registration is framed purely as a count of future instances.
+  Why it was unstated: obvious to participants -- PREMISE-130 is presumably phrased as a count, so the count is what gets tracked.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: PREMISE-130, PREMISE-111, PREMISE-120, ASSUMPTION-611, ASSUMPTION-616, PRESUMPTION-590
+  Settling quantity (type): a specification question, not a proportion -- whether PREMISE-130's promotion criterion is stated over event counts only, or admits independent-corroboration weight. Answerable by reading one premise statement.
+  Feasibility (REVISE-257): n=1 premise text. Single-digit, but the question is a reading rather than an estimate, so power does not apply. DECIDABLE as named.
+  Testability: testable via literature (evidence aggregation across independent detectors vs. repeated observation by one; convergent validity; why independence of route is normally weighted above repetition) and in-house.
+  Risk if wrong: Medium. If independent corroboration counts, the threshold was reached today and the pre-registration proposal is deciding after the fact -- the exact failure it was written to avoid.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-605
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an independent corroboration reported and not counted, beside a threshold defined purely by occurrence count. [inferred -- moderate-to-high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-130) -> in-house
+
+PRESUMPTION-606:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The day's summary reports OpenStory node_edges as "still stuck at **2026-07-28**" with the fix "Mac-side," and puts "Run `refresh_openstory_feeds.sh` on the Mac" on Tom's list as item 5. Measured this run: `agents/openstory/REFRESH_STATUS.md` records `2026-07-31T10:22Z PASS ... node_edges=2026-07-31/27 nodes`, and `agent_node_edges.json` carries an mtime of 2026-07-31 06:22. The task succeeded twelve hours before the summary was written. The summary presumes that a subsystem's state at the last point it was examined persists to the end of the day absent a report of change -- i.e. that silence means unchanged.
+  Evidence it was operative: the summary's own "Files Created or Modified" list includes `agents/openstory/{agent_telemetry.json,REFRESH_STATUS.md}` as touched today, and the failure claim sits three sections above that list without either being checked against the other; the remedy asked of Tom is an action already discharged.
+  Why it was unstated: oversight of a specific kind -- carrying forward a known-bad state is the safe default in most reporting, and reads as conservatism rather than as an unverified claim.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-600, ASSUMPTION-602, PREMISE-096, PRESUMPTION-595, PRESUMPTION-597
+  Settling quantity (type): a count -- of carried-forward status claims in the day's summary that were contradicted by an artifact mtime available at write time.
+  Feasibility (REVISE-257): the "Failed / degraded" and "carried" sections hold order-10 claims per day over 26 days; a mechanical mtime check gives a two-digit denominator. DECIDABLE as named.
+  Testability: testable empirically / in-house.
+  Risk if wrong: Medium. A discharged action stayed on the human's list, and the standing "carried, unactioned" tally -- used across changelogs as evidence of a stalled queue -- is inflated by at least one item. This is the week's fourth instance of a layer being read through its own (here stale) self-description, after the master-wiki header, the watchdog PASS and the Summa monitor.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-606
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated failure contradicted by an artifact on disk twelve hours older than the statement, measured directly this run. [inferred -- high confidence, verified]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-096) -> in-house
+
+PRESUMPTION-607:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The OpenStory run settled PRESUMPTION-595 and nobody noticed. That item, filed 24 hours earlier, asked whether the ~75s cost was "a property of the environment or of a cost growing with the corpus." Today's PASS record answers a third way: it was a property of the *implementation* -- "node_refs payload loop parallelised over 4 cores + chunk-cached to beat the 45s call cap (extractors themselves unmodified)" -- same machine, same cap, same corpus. The system presumes that a fix and the register item it settles will be connected by whoever reads both. Nothing routes an artifact back to the item that predicted it; the register is written to and only read forward.
+  Evidence it was operative: PRESUMPTION-595 is not referenced in the REFRESH_STATUS line, in the day's summary, or anywhere in today's outputs; the fix is described in operational terms only; the summary meanwhile still reports the subsystem as failing (PRESUMPTION-606), so neither the success nor its evidential value reached the register.
+  Why it was unstated: structural invisibility -- there is no back-pointer mechanism, so its absence produces no error.
+  Type: structural / methodological
+  Related decisions: none
+  Related items: PRESUMPTION-595, ASSUMPTION-600, PRESUMPTION-606
+  Settling quantity (type): a rate -- of register items whose settling evidence was subsequently produced by an unrelated run, over items settled by a run that knew it was settling them.
+  Feasibility (REVISE-257): the register holds 615 presumptions and 624 assumptions; the sample of items with settling evidence produced anywhere is the binding constraint and is not currently countable without a cross-reference pass. Denominator UNKNOWN. NOT CURRENTLY DECIDABLE on the quantity as named; a decidable substitute is the count of items whose settling quantity is a measurement some scheduled task already performs, which is a text-match over the register.
+  Testability: testable empirically / in-house (via the substitute quantity).
+  Risk if wrong: Medium-High. If evidence is routinely produced without reaching the item that asked for it, the UNTESTED backlog overstates what is actually unknown, and the lit-search queue is being asked to search for answers that already exist on disk.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-607
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a register item answered by an unrelated run's success record, with no connection drawn in either direction. [inferred -- high confidence, verified against REFRESH_STATUS.md]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-104) -> in-house
+
+PRESUMPTION-608:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] "The corpus is no longer static. 40 synthesis/transcript files changed in the last 24 hours ... Prior passes could assume a frozen corpus." The verifier changes its own procedure to accommodate this and does not ask which prior conclusions were drawn under the assumption that has just been voided. It presumes a voided assumption is forward-acting only. Every previous pass's "byte-identical to the prior pass" reasoning -- including this run's own authorship-violation confirmation -- rests on the frozen-corpus premise.
+  Evidence it was operative: the observation is reported as a change in operating conditions with an immediate procedural consequence and no retrospective scope question; the same run separately relies on cross-run comparison ("byte-identical to the prior two passes") without noting that the comparison's warrant has just weakened.
+  Why it was unstated: obvious to participants -- discovering that conditions changed prompts adaptation, and the retrospective question requires a second, less natural step.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-621, PRESUMPTION-609, PREMISE-096
+  Settling quantity (type): a count -- of prior verification conclusions whose warrant is "unchanged since the last pass," over the days on which the corpus is now known to have moved.
+  Feasibility (REVISE-257): 307 days x the verification log's per-day entries; the changed-file set is 40 files across Days 202-235, 250-252, 258-261. Two-digit and enumerated. DECIDABLE as named.
+  Testability: testable empirically / in-house.
+  Risk if wrong: Medium. A stability-based verification over a moving corpus reports agreement where it should report a re-check, and the affected window is already known.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-608
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an explicitly voided standing assumption applied forward but not backward, in a run that relies on the voided assumption elsewhere. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-096) -> in-house
+
+PRESUMPTION-609:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The verifier's self-caught splitter defect is reported as self-checking working -- and it is a genuinely good result. But the stated detection mechanism is "I caught it because my numbers contradicted last night's." Detection required a prior run to differ from. On a first-ever run, on a newly added check, or after any legitimate change in the underlying figures, the identical bug passes silently. The run presumes cross-run comparison is a general correctness check when it is only a change detector -- and it reports, in the same message, that the corpus is no longer static, which is exactly the condition that makes a change detector start producing legitimate differences and thereby lose its power to flag illegitimate ones.
+  Evidence it was operative: the detection route is stated plainly and its scope is not examined; the remedy applied is a splitter rewrite, with no check added that could have caught the bug on a first run (e.g. an invariant that frontmatter and body word counts sum to the file's total).
+  Why it was unstated: obvious to participants -- catching one's own bug is reported as the outcome, not as a mechanism with a domain.
+  Type: methodological / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-621, PREMISE-110, PRESUMPTION-593, PRESUMPTION-608
+  Settling quantity (type): a classification -- of the verifier's checks by whether each can fail on a first run with no prior for comparison, versus only on a difference from a prior run.
+  Feasibility (REVISE-257): the check suite is order-10 named checks (citation drift, guardrails, filename safety, authorship, length, pairing). Single-digit-to-low-two-digit, and the question is a classification rather than a proportion, so power is not binding. DECIDABLE as named.
+  Testability: testable via literature (the oracle problem in software testing; metamorphic and differential testing; why regression comparison detects change rather than correctness; invariant-based checks as the complement) and in-house.
+  Risk if wrong: Medium-High. If most checks are difference-detectors, the suite's clean sheet on a first run means very little, and the newly non-static corpus degrades the detector precisely as its workload grows.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-609
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated detection route that presupposes a prior, reported in the same message as the news that priors are no longer stable. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-610:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] "With four pairs permanently held and the cap at 6, only two queue slots per run are doing new work ... that ratio worsens until the batch repoint lands." The observation is correct and it presumes the cap of 6 is the fixed term and the held inventory the variable one. The held items are held pending a decision that belongs to Tom and has no date; the cap belongs to the system and is a parameter. Neither raising the cap nor moving held items to a separate display register is considered. The queue is doing double duty -- a work list and a defect display -- and the withholding-keeps-defects-visible rationale is what fuses the two roles.
+  Evidence it was operative: the cost is stated as a ratio that "worsens until the batch repoint lands," making the human decision the only named remedy; no system-side parameter is proposed, though the cap is named in the same sentence.
+  Why it was unstated: normative smuggling -- "the withholding is right" settles the ethics of the display and thereby closes the question of where the display should live.
+  Type: structural / normative
+  Related decisions: none
+  Related items: ASSUMPTION-622, ASSUMPTION-623, PRESUMPTION-598
+  Settling quantity (type): a projection -- held-slot fraction per run over the days since the first hold, against the cap; plus whether any register other than the work queue currently displays held defects.
+  Feasibility (REVISE-257): the QC log gives one row per run; the hold began recently enough that the denominator is single-digit-to-low-two-digit days. Borderline. Route to a larger denominator: pool with the proposal queue and the monitor backlog, which exhibit the same work-list-as-defect-display pattern -- that gives three subsystems and a multi-week series. DECIDABLE via the pooled quantity, NOT CURRENTLY DECIDABLE on the QC queue alone.
+  Testability: testable empirically / in-house.
+  Risk if wrong: Medium. If the cap is adjustable, the throughput cost is self-inflicted and has been paid for several runs to preserve a visibility property that a second register would supply for free.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-610
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a throughput cost attributed entirely to a pending human decision, in a sentence that names the system-side parameter and does not consider it. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-104) -> in-house
+
+PRESUMPTION-611:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] The bridge census "explicitly declines to convert that into a defect count, since the compliant-vs-defective split resisted two automated attempts." This presumes that a quantity which cannot be computed automatically should not be estimated -- that reporting no number is more honest than reporting a bounded interval with its method stated. The register has no representation for "between X and Y," so the choice presents itself as a binary between a false precision and a refusal. This is the same gap REVISE-253 identified as UNCALIBRATED and the same one 15b flagged today as underpowered self-measurement, arising in a third subsystem on the same day -- which is the third signature that ASSUMPTION-616's proposed trigger asks for.
+  Evidence it was operative: the refusal is justified solely by the failure of automation, with no mention of sampling, stratification, or interval reporting; 21 fully id-less and 209 partial cases are enumerated exactly, so the population is in hand and only the classification is missing.
+  Why it was unstated: culturally embedded -- declining to state a number one cannot compute reads as scrupulousness, and is scrupulous under a convention that has no interval type.
+  Type: epistemic / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-611, ASSUMPTION-616, ASSUMPTION-623, REVISE-253, PREMISE-124, PRESUMPTION-604
+  Settling quantity (type): a bound -- the defective fraction of the 209 partials, estimated from a stratified hand sample with its interval stated.
+  Feasibility (REVISE-257): denominator 209, three-digit; a 30-item stratified sample gives a usable interval. DECIDABLE as named, and the cheapest of the three "we cannot say" items on today's list.
+  Testability: testable via literature (partial identification and bounds analysis; Manski-style interval reporting when point identification fails; sampling to bound a population fraction when full classification is infeasible) and in-house.
+  Risk if wrong: Medium-High. A refusal to estimate enters the register indistinguishably from an absence of evidence -- the exact indistinguishability 15b flagged today in a different subsystem -- and the class scope stays "21 plus 209 unclassified" indefinitely.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-611
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a refusal to estimate justified by the failure of automation, over a fully enumerated population. Noted as the third same-day instance of the underlying pattern, in a third subsystem. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b
+
+PRESUMPTION-612:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] `metabolism-regen-daily` was observed still running at 23:40 this EOD -- 45 assistant turns in -- for the second consecutive night, and `metabolism_data.json` plus the heartbeat digest are both still dated 07-30. The system presumes a scheduled task that has not returned is still working rather than stuck. No task carries an expected duration, no timeout fires, and nothing distinguishes "long" from "hung." REVISE-255 -- minted today from exactly this observation class -- amends the *watchdog's vocabulary* so it can say "still running"; it gives no task a duration expectation against which "still running" could ever become "too long."
+  Evidence it was operative: the same task was long-running at yesterday's EOD and the fact was recorded without a duration question; today's summary reports it as "still running at time of writing" among "Failed / degraded" with no elapsed figure and no threshold; REVISE-255's remedy is a relabel.
+  Why it was unstated: absent alternative -- once a missing state is identified, adding the state feels like the fix, and the question of what the new state should trigger is a separate move nobody made.
+  Type: architectural / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-613, ASSUMPTION-599, PREMISE-096, PREMISE-110, PRESUMPTION-592
+  Settling quantity (type): a distribution -- of run durations per scheduled task over the scheduler history, from which an expected-duration band and a hang threshold could be derived.
+  Feasibility (REVISE-257): 36 enabled tasks x ~26 days of history gives a three-digit denominator, if the scheduler retains per-run durations. DECIDABLE as named conditional on that retention; if durations are not retained, the quantity is NOT CURRENTLY DECIDABLE and the route to it is to start recording them.
+  Testability: testable empirically / in-house.
+  Risk if wrong: High. A hung task is currently indistinguishable from a slow one indefinitely, and the instrument being fixed today will report the new state truthfully without ever escalating it.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-612
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a second consecutive overnight long-run, observed directly, beside a remedy that adds a state without adding a threshold. [inferred -- high confidence, verified by direct session observation]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-110) -> in-house
+
+PRESUMPTION-613:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] "Three counting surfaces disagreeing is now a maintenance item, not a footnote." The escalation from footnote to maintenance item presumes the disagreement is a hygiene failure -- surfaces drifting because nobody tidied them -- rather than the predictable consequence of no surface having been designated canonical. The 07-21 action retired one instance of the CROSS-id artifact; it did not name an authority, and the artifact reappeared ten days later in a different surface, the master narrative's "Network:" line. Measured this run, the drift is worse than reported: `traditions/stump/prs_triplets.md` carries two separate total lines, 25 and 28, while holding entries through PRS-31 -- three disagreeing figures inside one file. MONITOR-489's settling test remains the same unrun recount under one stated rule, now for a 22nd+ day.
+  Evidence it was operative: the remedy language is maintenance ("now a maintenance item"); the 07-21 fix is described as retiring an artifact rather than as designating a counter; each new instance is diagnosed at its own surface.
+  Why it was unstated: too foundational to notice -- when several files each report a number, the natural reading is that they should agree, not that one of them should be the one that counts.
+  Type: structural / epistemic
+  Related decisions: none
+  Related items: OPEN-112, MONITOR-489, ASSUMPTION-545, ASSUMPTION-560, ASSUMPTION-603, ASSUMPTION-619, PRESUMPTION-528, PRESUMPTION-549, PRESUMPTION-565
+  Settling quantity (type): a count -- of distinct files that publish a network-level count (PRS totals, cross-connections, findings), and for each, the rule by which it computes; then whether any is designated authoritative anywhere.
+  Feasibility (REVISE-257): grep-able across the vault; the surface count is already known to be at least five. Two-digit. DECIDABLE as named.
+  Testability: testable via literature (single-source-of-truth and derived-view designs; why denormalised counters diverge without a designated master; eventual consistency in document stores) and in-house.
+  Risk if wrong: Medium-High. If the cause is the absence of an authority, every instance-level fix buys ten days and the artifact returns in a new surface -- which is what the 07-21 to 07-31 interval already demonstrates.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-613
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an instance-level remedy applied to the second appearance of an artifact retired ten days earlier; extended by direct measurement of a third disagreeing figure inside a single file. [inferred -- high confidence, verified]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (OPEN-112 / MONITOR-489) -> in-house
+
+PRESUMPTION-614:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] Three scheduled tasks disclosed Rule 6 breaches today, each with mitigations enumerated and each disclosing rather than overrunning silently. The practice presumes that disclosing a breach discharges the obligation the budget creates. Twenty-six days of disclosure have produced zero measurements of where the tokens go: PRESUMPTION-587 specified the decomposition on 07-29 and is unrun on day 3; PRESUMPTION-599 restated it on 07-30. The cowork->chat floor claim moved from "roughly 40k" (07-30) to "~30k" (07-31) with no note and no method for either figure -- a 25% shift in an asserted lower bound, unremarked, which is what an unmeasured quantity looks like when it is nonetheless reported.
+  Evidence it was operative: each disclosure is complete and none references the standing decomposition item; the qc sweep's "that was my call, not the budget's" states the discretion explicitly and treats naming it as sufficient; the two floor figures appear in consecutive daily summaries without reconciliation.
+  Why it was unstated: normative smuggling -- Rule 12 makes surfacing the virtue, and the virtue of surfacing displaces the question of what surfacing is for.
+  Type: normative / methodological
+  Related decisions: none
+  Related items: ASSUMPTION-574, ASSUMPTION-587, ASSUMPTION-605, ASSUMPTION-624, PREMISE-104, PRESUMPTION-587, PRESUMPTION-599
+  Settling quantity (type): a decomposition -- one run's token use split into transcript reads, register reads, and generation, with the register-read share compared against what changed since the previous run.
+  Feasibility (REVISE-257): n=1 run suffices for the decomposition; it is a measurement, not a proportion over a population, so the single-digit denominator does not bind. DECIDABLE as named, and it has been decidable for three days.
+  Testability: testable empirically / in-house.
+  Risk if wrong: Medium. If disclosure does not discharge, the budget is a ritual with a 26-day compliance record and no effect, and the one measurement that would make it actionable stays unrun because each day's disclosure looks like compliance.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-614
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three complete disclosures on one day, none of which invokes the standing decomposition item, and an unremarked 25% shift in an asserted floor. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: GOVERNED-CANDIDATE (PREMISE-104) -> in-house
+
+PRESUMPTION-615:
+  Date surfaced: 2026-07-31
+  Statement: [inferred] Two of today's four new proposals carry explicit evidence-quality caveats -- PRS candidates drawn from publisher abstracts, not full text, "flagged for verification rather than presented as settled" -- and this is praised as the right behaviour. It is. The presumption is that the caveat travels with the item. Today supplies the counterexample in the same run: a HELD flag from 07-27 and an authorship verification from 07-19 both failed to reach the 07-31 ingest, which wrote PRS-30 and PRS-31 with no authorship note. Nothing shown in the ingest path carries a confidence or provenance field from the proposal into the PRS record. A caveat written at Phase 2 and a hold written at Phase 1 have the same structural fate.
+  Evidence it was operative: the caveat is commended at the point of writing, with no statement of where it is stored or which phase reads it; the same summary's headline item is a different qualifier from the same inbox failing to survive to ingest; the proposed remedy for the hold (`HOLD_LIST.md`) addresses holds only and would not carry a confidence tag.
+  Why it was unstated: obvious to participants -- writing the caveat is the visible discipline, and its persistence is invisible until an ingest drops one.
+  Type: structural / epistemic
+  Related decisions: none
+  Related items: ASSUMPTION-607, ASSUMPTION-617, PRESUMPTION-601, PRESUMPTION-602
+  Settling quantity (type): a rate -- of proposals whose evidence-quality caveat appears in the resulting PRS entry, over proposals that carried one at filing.
+  Feasibility (REVISE-257): the proposal archive and the tradition PRS files are both complete; caveated proposals over the corpus are plausibly two-digit. DECIDABLE as named, and it is the same measurement that would price the HOLD bug.
+  Testability: testable via literature (provenance propagation through extract-transform pipelines; confidence-annotation survival in knowledge-base construction) and in-house.
+  Risk if wrong: High. If caveats do not survive ingest, the network's PRS layer is systematically more confident than its sources, and the honesty visible at Phase 2 is not doing the work it appears to do. This is today's headline regression viewed from the intake side rather than the ingest side.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-615
+    Item type: PRESUMPTION (unstated -- surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a praised caveat whose persistence mechanism is unstated, beside a same-day demonstration that two other qualifiers from the same inbox failed to persist. [inferred -- high confidence]
+    Current status: UNTESTED
+    Routing: [QUEUED] -> 15a / 15b

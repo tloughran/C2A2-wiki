@@ -23985,3 +23985,250 @@ DEFECT 1, VENUE AMBIGUITY, LOW. Berkson 1946's journal name is given as "Biometr
 NOT A DEFECT BUT RECORDED: PREMISE-124's UNCALIBRATED tag was applied twice this run (the 592 false-green rate; this run's own 1-of-4 consolidation rate) and in both cases to a number the run would have benefited from reading favourably. That is the discipline working. It is stated as an observation, not as evidence the discipline works — one favourable self-observation is exactly the forbidden move PREMISE-124 names.
 
 OVERALL. Mechanically the batch is clean: six substantive result files, zero orphans, exact +3/+3/+3 tag deltas, no id collisions, two registers provably untouched, and four citations verified at page level with zero errors. Substantively the batch's hardest call is DISPOSITION-566, which declines to mint the batch's strongest INCORPORATE candidate on the ground that PREMISE-110 already governs the scheduler watchdog BY NAME and is itself under-specified — an amendment to a High-confidence ACTIVE premise rather than a new entry. That is either the right call or an over-reading of one n=1 observation, and THIS PASS CANNOT ADJUDICATE IT, because the instance that made the call is the instance writing this sentence. Two structural facts are worth carrying forward more than any judgement here: this is the second consecutive run in which the register's own state rather than the evidence determined the outcome (07-30: an unratified parent premise; 07-31: an under-specified governing premise), and the 15d backlog has now gone 23 days at zero drain while this pipeline processed 3 items. The first is arguably discipline. The second is not.
+
+# ================================================================================
+# ---- 2026-08-01 · 15a / 15b / 15c run · 6 items (PRESUMPTION-601, -602, -604, -609, -611, -615)
+# ================================================================================
+# INDEPENDENCE: all six 15a searches were issued and all six for/ files written before any 15b
+# search was issued. Sequencing discipline, not an architectural guarantee; per PREMISE-120 it does
+# NOT discharge model-level correlation — both directions ran on the same model, same instance,
+# same corpus. CROSS-DIRECTION SOURCE OVERLAP occurred on FOUR of six pairs (602: van der Vet &
+# Nijveen 2016; 604: the small-n/sequential literature; 609: Barr et al. 2015 and the MT corpus;
+# 611: Manski/Tamer) and is disclosed per PREMISE-120 in each disposition below. NO convergence
+# claim in this batch rests on a source both directions drew from.
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-601
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Moderate
+  Key source: Nygard, "Documenting Architecture Decisions" / adr.github.io; IBM "System of Record vs Source of Truth"
+  Summary: SSOT/system-of-record doctrine and the ADR literature both support the item's CLASSIFICATION (a HOLD is a decision belonging to an authoritative register) and the general anti-pattern of proliferating stores. Support is convention-level, not primary research.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-601_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-601
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Strong
+  Key source: Azure Architecture Center "CQRS Pattern"; Bogard "Busting some CQRS myths"; Evans, bounded contexts
+  Specific risk: Acting on the item as stated routes HOLD facts to decisions.md — a register with a 26-day observed write failure — converting a propagation failure into total silent loss.
+  Summary: SSOT prohibits multiple AUTHORITIES, not multiple stores. CQRS read models and bounded-context duplication make a reader-shaped second store a named correct pattern, so "adds a third store" does not entail "design error." The item's own preferred destination is empirically the less reliable option.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-601_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-602
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Strong
+  Key source: van der Vet & Nijveen 2016, Research Integrity and Peer Review 1:3
+  Summary: KG provenance work supports source-as-semantics where the schema indexes by asserter; measured retraction-network and Wikipedia-persistence studies support the claim that upstream corrections do not reach derived artifacts on their own.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-602_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-602
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Strong
+  Key source: COPE / Elsevier / UKRIO correction-vs-retraction policy; van der Vet & Nijveen 2016 (same source, opposite limb)
+  Specific risk: Adopting the general form makes every attribution error in the corpus a content-level defect requiring re-derivation — an unbounded remediation obligation minted from n=1.
+  Summary: The scholarly record's own taxonomy places authorship error in the CORRECTABLE tier precisely because attribution and validity are separable; provenance formalisms are built on that separability. The same study 15a relies on also reports that INDIRECT citations do not propagate, bounding the blast radius to direct consumers.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-602_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-604
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Strong
+  Key source: Kim et al. 2026, "Sequential Event Rate Monitoring," Statistics in Medicine (10.1002/sim.70359)
+  Summary: Power is a property of the accrual design, not of estimand wording; the discipline's answer to irreducibly small per-period n is an explicit accumulation convention (group-sequential, anytime-valid, Bayesian borrowing), none of which the register has. 15a expressly did NOT support the item's strongest form ("no route could exist").
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-604_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-604
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Strong
+  Key source: Exact inference for small/sparse data (PMC12456449); meta-analysis-with-few-studies literature (arXiv 1807.09037)
+  Specific risk: Concluding REVISE-257 is unsatisfiable either voids the only brake on underpowered self-measurement, or motivates a naive cross-run pooling convention that manufactures denominators without information.
+  Summary: The universal claim is refuted from inside the register — PRESUMPTION-611 has denominator 209 and PRESUMPTION-602's is corpus-scoped, both minted the same day. The constraint bites on drafters who choose per-run estimands. Pooling few heterogeneous units degrades coverage and biases rare cells.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-604_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-609
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Strong
+  Key source: Barr, Harman, McMinn, Shahbaz & Yoo 2015, "The Oracle Problem in Software Testing: A Survey," IEEE TSE
+  Summary: Support is close to definitional: comparison against a prior version is catalogued as a DERIVED pseudo-oracle whose verdict is relative to its reference. Metamorphic testing exists as the complement and supplies first-run-capable checks; the item's proposed word-count conservation check is a canonical metamorphic relation.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-609_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-609
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Moderate
+  Key source: Chen et al., METRIC (JSS 2015); MR effectiveness under mutation testing (PMC11051087)
+  Specific risk: Adding invariants without a quality criterion yields checks that pass in the presence of faults and fire in their absence, while the check that actually caught a defect is downgraded — net loss of detection with an increase in perceived coverage.
+  Summary: Classification conceded. Challenge is to cost and remedy: MR identification is the field's hardest open problem, effectiveness varies sharply with MR quality, and derived oracles are legitimate when the baseline is verified. Approval/golden-file testing is the standard answer to a legitimately changing reference and the item does not consider it.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-609_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-611
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Strong
+  Key source: Manski 2003, Partial Identification of Probability Distributions; Horowitz & Manski 1998/2000
+  Summary: Non-identification does not license silence: worst-case bounds are always available and narrowed by stated assumptions, with interval estimators carrying sampling uncertainty. The population (209) being fully enumerated is exactly the condition classical stratified sampling handles.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-611_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-611
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Moderate-to-Strong
+  Key source: Tamer, "Partial Identification in Econometrics" (no-assumptions bounds are often uninformatively wide); register-internal REVISE-254 (2026-07-31)
+  Specific risk: An interval published over an unsettled classification becomes an anchor whose caveat does not travel — the exact propagation failure PRESUMPTION-615 documents in the same intake — and would be self-classified by the agent whose rule failed twice.
+  Summary: This is not a partial-identification case: the parameter is unpinned because the CLASSIFIER is unsettled, which two automated attempts demonstrated. Bounds over an unsettled predicate inherit the unsettlement in their endpoints. REVISE-254 declined a new intake representation on unmeasured grounds eight days ago; this item asks for one on the same grounds.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-611_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-615
+  Search direction: FOR (supportive)
+  Result: SUPPORTED · Strength: Strong
+  Key source: Cheney, Chiticariu & Tan, provenance-in-databases; "A Core Calculus for Provenance" (arXiv 1310.6299)
+  Summary: Annotation survival through a transformation is not automatic — propagation must be defined per operator, and an operator with no rule silently drops the annotation. ETL/ML lineage work reports the same at system scale: traceability is an engineered property.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-615_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-615
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED · Strength: Moderate
+  Key source: Psallidas & Wu, "Smoke: Fine-grained Lineage at Interactive Speed," PVLDB 11(6) 2018; LIMA (SIGMOD 2021)
+  Specific risk: The general form invites a pervasive provenance project with measured cost (+15-35% optimised; >10x naive) and unmeasured benefit, while the narrow real failure — PRS records written without an upstream authorship note — goes unfixed.
+  Summary: Core conceded. Challenged on scope, cost and category: the item names no provenance notion, no loss rate and no cost; and its equivalence claim rests on two co-occurring failures of categorically different objects (a control instruction and a data annotation). Its central factual premise — that nothing in the ingest path carries a confidence field — is inferred from a summary's silence, not from inspecting the path.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-615_against.md
+
+RETURN-TO-14b (SYSTEMIC):
+  SYSTEMIC-RISK-FLAG 2026-08-01 raised by 15b. Affected: PRESUMPTION-601, -602, -611, -615 primary;
+  -604, -609 by mechanism. All six items' remedies require a write to a register, schema or
+  convention the 15-pipeline does not own. Risk level High.
+  Full results: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-01.md
+
+# ---- 15c NET EVALUATION · 2026-08-01 · DISPOSITION-569..575 ----
+
+DISPOSITION-569:
+  Date: 2026-08-01
+  Item: PRESUMPTION-601
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Strong
+  Cross-direction source overlap: NONE on load-bearing sources (15a: ADR/SSOT doctrine; 15b: CQRS/DDD).
+  Net assessment: The item splits cleanly. Its constructive half — a HOLD is a decision and needs a named authority — is supported by both directions. Its destructive half — that adding a third store is itself the fault — is refuted by 15b from the mainstream architecture literature, which makes reader-shaped derived stores a named correct pattern and locates the criterion at the count of AUTHORITIES, not the count of files. 15b also lands a decisive internal point: the item's implied destination, decisions.md, has a 26-day observed write failure.
+  Disposition: REVISE
+  Reasoning: A presumption whose own remedy direction would make the system worse is a revision item, not a monitor item. The surviving finding is already governed BY NAME: PREMISE-066 states the SSOT architecture with a load-bearing scope guard requiring an explicit, tested extraction interface that FAILS LOUDLY. That premise is scoped to a user-facing derived view; the finding here is that its guard is under-specified for OPERATIONAL state. Per the 07-31 precedent (REVISE-255), an under-specification in a governing premise is amended rather than duplicated. No new premise minted.
+  If REVISE:
+    What is at risk: the 07-31 ingest-regression remedy as proposed; any future routing of operational facts to decisions.md.
+    Recommended action: (1) amend PREMISE-066's scope guard to cover operational state and to state the criterion as one AUTHORITY per fact class with written derivation rules, explicitly NOT the store count; (2) name the authority for HOLD facts; (3) do NOT route to decisions.md until its write path is repaired and demonstrated; (4) run 15b's test — enumerate fact classes and count independently-writable stores per class (fact-class denominator, not per-run).
+    Urgency: Medium-High
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: REVISION-FLAGGED → REVISE-258
+
+DISPOSITION-570:
+  Date: 2026-08-01
+  Item: PRESUMPTION-602
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Strong
+  Cross-direction source overlap: YES, LOAD-BEARING AND DISCLOSED per PREMISE-120. Both directions cite van der Vet & Nijveen 2016 for OPPOSITE conclusions — 15a on direct-citation propagation, 15b on non-propagation through indirect citations. Both readings are in the paper. No convergence claim rests on it.
+  Net assessment: CONTESTED strong/strong. The item's general claim (attribution is inseparable from content where the schema indexes by source) meets a standards-level contradiction: the scholarly correction taxonomy places authorship error in the correctable tier for exactly the opposite reason. Its local claim survives but is settled by a count the item itself names and which nobody has computed.
+  Disposition: MONITOR (HIGH)
+  Reasoning: This is the sixth instance of the MONITOR-490 pattern — both directions strong, both citing a shared primary for opposite conclusions, and the decisive quantity computable but uncomputed. Minting a premise on the general claim would contradict the correction taxonomy on n=1; dismissing it would leave FINDING-055 asserting a cross-program claim over a possibly mislabelled endpoint. Consistency check against existing premises: PREMISE-127/134 already require aligned relations rather than shared labels for cross-tradition claims, which is adjacent but does not govern attribution integrity; no contradiction, no coverage.
+  If MONITOR:
+    What would change the disposition: the corpus-scoped count both directions name — over all cross-tradition artifacts, how many state "tradition T holds P" (semantic) versus retrieve P from T's folder (filing). A semantic majority converts toward INCORPORATE of the local claim; a filing majority converts toward REVISE of the item.
+    Interim discipline (adopted from 15b, carried as a condition not a premise): apply the three-tier correction taxonomy — correction / expression of concern / retraction — to the Stump-Cajetan ingest, and enumerate the ingest's DIRECT consumers, which is where the one measured propagation study says the error travels.
+    Monitoring cadence: Weekly · Priority: High
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: MONITORING → MONITOR-495
+
+DISPOSITION-571:
+  Date: 2026-08-01
+  Item: PRESUMPTION-604
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Strong
+  Cross-direction source overlap: PARTIAL — both directions worked the small-n/sequential literature, but on disjoint limbs (15a: accrual determines power, accumulation conventions exist; 15b: exact inference is valid at small n, pooling few heterogeneous units degrades coverage). Disclosed per PREMISE-120.
+  Net assessment: The two directions CONVERGE on a narrowed claim and each independently REFUTES a different limb of the item's strong form. 15a expressly declined the item's "no route could exist" claim; 15b refuted "no route exists in this register" from the register's own contents (denominator 209 in PRESUMPTION-611; corpus scope in PRESUMPTION-602, both minted the same day). What survives, supported from both sides, is that achievable denominator is fixed by the estimand's declared SCOPE, and that pooling is not a free route to a larger one.
+  Disposition: INCORPORATE
+  Reasoning: This is the batch's cleanest convergence and it is convergence on a narrowed form, not on the item as filed. The claim is externally anchored (sequential-monitoring power theory; meta-analysis-with-few-studies coverage results) and internally falsifiable — 15b's counterexamples are in the register and were checked. It constrains rather than licenses, which is the safer direction for a first INCORPORATE in four runs. DEPENDENCY NAMED RATHER THAN LAUNDERED: this bears on REVISE-257, which is unratified. The premise is therefore stated WITHOUT reference to REVISE-257's satisfiability, so that it does not give content to an unratified rule (the MONITOR-494 objection of 07-30). Whether REVISE-257 is satisfiable follows from the premise; it is not part of it.
+  If INCORPORATE:
+    Validated premise statement: see PREMISE-136.
+    Confidence: Moderate
+    Applicable to: 14a/14b item drafting; 15c disposition; 15d re-evaluation; any settling quantity in any register.
+    Re-check cadence: Monthly
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: INCORPORATED → PREMISE-136
+
+DISPOSITION-572:
+  Date: 2026-08-01
+  Item: PRESUMPTION-609
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Moderate
+  Cross-direction source overlap: YES, DISCLOSED per PREMISE-120 — both directions cite Barr et al. 2015 and the metamorphic-testing corpus, 15a for the classification and 15b for the legitimacy of derived oracles and the difficulty of MR identification. The INCORPORATE below rests on the classification, which 15b explicitly CONCEDES rather than contests, so the overlap is not doing the convergence work.
+  Net assessment: 15b concedes the taxonomy outright and challenges only the cost and risk of the remedy. Strong support plus a conceded core and a moderate challenge to the fix is the INCORPORATE-with-caveats shape, provided 15b's condition is folded in rather than noted.
+  Disposition: INCORPORATE
+  Reasoning: The classification is near-definitional in the oracle-problem literature and is not in dispute between the directions. It is a genuine scope extension of PREMISE-120 rather than a duplicate: PREMISE-120 governs re-running the same pipeline ("a systematic defect reproduces exactly as reliably as a correct measurement"); it does not cover the first-run case, the newly-added-check case, or the degradation of a difference-detector as its reference becomes legitimately variable. 15b's mutation-validation requirement is folded in as load-bearing, because without it the premise would license adding invariants that manufacture perceived coverage — the precise risk 15b named. Consistency check: extends PREMISE-120, consistent with PREMISE-096 and PREMISE-110; no contradiction found.
+  If INCORPORATE:
+    Validated premise statement: see PREMISE-137.
+    Confidence: High on the classification; Moderate on the remedy clause.
+    Applicable to: the nightly Summa verifier; the metabolism regen check; any monitor whose verdict is a diff against a prior run.
+    Re-check cadence: Monthly
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: INCORPORATED → PREMISE-137
+
+DISPOSITION-573:
+  Date: 2026-08-01
+  Item: PRESUMPTION-611
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Moderate-to-Strong
+  Cross-direction source overlap: YES, LOAD-BEARING AND DISCLOSED per PREMISE-120 — both directions rest on Manski/Tamer, 15a on "bounds are always available," 15b on "bounds are often uninformatively wide." Both are the field's own statements. No convergence claim rests on the shared source.
+  Net assessment: The methodological norm 15a establishes is real and 15b does not deny it. 15b reframes the case: the obstruction is a missing DEFINITION of "defective," not a missing representation for intervals, and bounds over an unsettled predicate inherit the unsettlement. Both directions name essentially the same decisive test; 15b adds the inter-rater condition that makes it discriminating.
+  Disposition: MONITOR (HIGH)
+  Reasoning: Declining to INCORPORATE here is a register-state decision and is flagged as such rather than presented as evidence-driven: REVISE-254 (07-31) ruled eight days ago that a new intake representation must be gated on a measured partition fraction with a pre-registered threshold, and this item asks for exactly such a representation on an unmeasured basis. That is the THIRD consecutive run in which register state rather than evidence determined an outcome, and it is the condition the 08-01 SYSTEMIC-RISK-FLAG names. The decisive test is cheap and the population is in hand; the obstacle is not evidence.
+  If MONITOR:
+    What would change the disposition: draw a stratified sample of ~40 of the 209 partials, have two independently-instructed classifiers rate them, report Cohen's kappa and the resulting bound. Low kappa refutes the item (the obstruction was definitional). High kappa converts to INCORPORATE and the refusal was overcautious. Denominator 40/209, corpus-scoped — satisfies PREMISE-136 as minted today.
+    Interim discipline (condition, not premise): write the compliant-vs-defective definition down before any estimate; if the worst-case bound spans more than half the unit interval, report it as uninformative rather than as a finding.
+    OWNERSHIP GAP, STATED: this pipeline cannot run the test. Naming a conversion trigger no agent is authorised to pull is a warning, not a control (PREMISE-131).
+    Monitoring cadence: Weekly · Priority: High
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: MONITORING → MONITOR-496
+
+DISPOSITION-574:
+  Date: 2026-08-01
+  Item: PRESUMPTION-615
+  Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED · 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED · 15b strength: Moderate
+  Cross-direction source overlap: PARTIAL — both worked the database/lineage provenance literature on disjoint limbs (15a: propagation must be defined per operator; 15b: capture cost and the multiplicity of provenance notions). Disclosed per PREMISE-120.
+  Net assessment: 15b concedes the general mechanism — annotations do not survive transformations unless propagation is designed — and challenges the item's scope, its costing, and its equivalence between a control instruction (a HOLD) and a data annotation (a caveat). Decisively, the item's central factual premise is unverified: "nothing in the ingest path carries a confidence field" is inferred from a daily summary's silence, and 15b names a one-step inspection that would settle it.
+  Disposition: MONITOR (HIGH)
+  Reasoning: A premise is available here — the general propagation claim is bilaterally supported and would ground a requirement that any schema consuming qualified input declare a carrier field. It is NOT minted, for a stated reason: the item's own claim is the local one, whose factual basis is unverified, and PREMISE-124 forbids resting a conclusion on an in-instrument observation without an external or seeded check. Minting the general form would be minting something the item did not claim in order to avoid returning empty-handed. Consistency check: PREMISE-131 already governs the remedy TIER (interlock, not warning) and PREMISE-103 governs confidence labels over metadata-only material; neither covers annotation survival. No contradiction.
+  If MONITOR:
+    What would change the disposition: (1) inspect the PRS writer directly and enumerate every field it can populate — binary, immediate, decisive against the general claim; (2) count, over all proposals filed to date that carried a qualifier, how many resulting PRS entries show it — corpus-scoped denominator per PREMISE-136, not the n=2 the item rests on. A confirmed absent field plus a non-trivial loss rate converts to INCORPORATE.
+    Interim discipline (condition, not premise): the cheap remedy dominates and is already licensed by PREMISE-131 — add a confidence/provenance field to the PRS record and make ingest FAIL LOUDLY when a proposal carries a qualifier the field would drop.
+    Monitoring cadence: Weekly · Priority: High
+  PROVENANCE:
+    Origin: 14b · Chain: [14b → 15a, 15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: MONITORING → MONITOR-497
+
+DISPOSITION-575:
+  Date: 2026-08-01
+  Item: SYSTEMIC-RISK-FLAG 2026-08-01 (15b) — affects PRESUMPTION-601, -602, -611, -615 primary; -604, -609 by mechanism
+  Item type: SYSTEMIC (raised by 15b, not a queued item)
+  Net assessment: Every remedy in this batch requires a write to a register, schema or convention the 15-pipeline does not own. The pipeline's only outputs are PREMISE / MONITOR / REVISE entries, so each finding terminates in a flag. The register's own record corroborates: three consecutive runs at 0 INCORPORATE before today, 24 days of zero drain on the 15d backlog, a legacy-cohort retag pending authorisation for six runs, and now THREE consecutive runs (07-30, 07-31, 08-01/PRESUMPTION-611) in which register state rather than evidence determined an outcome.
+  Disposition: REVISE
+  Reasoning: This is not adjudicable inside the pipeline and must not be dispositioned as if it were. Per PREMISE-131, a flag awaiting authorisation for six consecutive runs is an undelivered warning and therefore zero mitigation, not reduced mitigation. The condition requires one human decision.
+  If REVISE:
+    What is at risk: the pipeline's entire output stream. Findings continue to be well-evidenced and continue to have no effector.
+    Recommended action: Tom to answer one question — what, if anything, is this pipeline authorised to write outside its own four registers? Two sub-decisions are already blocked on it and named: the 26-item legacy-cohort retag to [MISROUTED-INTERNAL-EMPIRICAL] (7th consecutive run pending), and the PRESUMPTION-611 sample (cheap, population in hand, no authorised runner).
+    Urgency: High
+  PROVENANCE:
+    Origin: 15b · Chain: [15b → 15c] · Transform at this step: Net evaluation and disposition
+    Current status: REVISION-FLAGGED → REVISE-259
