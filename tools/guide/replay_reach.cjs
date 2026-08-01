@@ -27,6 +27,21 @@ const HERE = __dirname;
 const REPO = path.resolve(HERE, '../..');
 const H = require(path.join(REPO, 'scripts/test_voice_shell.cjs'));
 
+// Borrowing that harness makes its export surface OUR dependency, and it belongs to another
+// thread that is actively editing it. A missing export would otherwise surface as
+// "Cannot read properties of undefined", pointing into their file rather than at the real
+// cause -- this file assuming something they never promised. Name what we rely on, up front.
+for (const sym of ['CDP', 'Page', 'startServer', 'startChrome', 'activateTab', 'cclReady',
+                   'runCmd', 'cleanup', 'PORT']) {
+  if (!H[sym]) {
+    process.stdout.write(
+      'scripts/test_voice_shell.cjs no longer exports `' + sym + '`.\n' +
+      'This replayer borrows that harness rather than duplicating it; restore the export, ' +
+      'or point this file at whatever replaced it.\n');
+    process.exit(2);
+  }
+}
+
 function arg(name, dflt) {
   const i = process.argv.indexOf('--' + name);
   return i > -1 && process.argv[i + 1] ? process.argv[i + 1] : dflt;
