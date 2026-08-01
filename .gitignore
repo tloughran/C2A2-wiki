@@ -143,3 +143,6 @@ __pycache__/
 
 # Increment-0 spike: auto-mints a realtime session on load. LOCAL ONLY -- never commit or publish.
 wiki/spike.html
+
+# Scheduled-commit detector output — local-only status log, like janitor/
+scheduler/

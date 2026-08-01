@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.scheduled-commit-check</string>
+
+  <!--
+    Asserts that scheduled tasks which are supposed to commit actually did.
+    This has to run on the Mac rather than inside a task sandbox: the registry
+    it reads lives under ~/Library/Application Support/Claude, and the scheduled
+    tasks only ever mount ~/Documents. morning-system-health reads the status
+    file this writes.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_scheduled_commits.py</string>
+    <string>--status-file</string>
+    <string>scheduler/commit_check.md</string>
+  </array>
+
+  <!--
+    05:45 local. The daily run starts 04:30 and finishes ~04:40, so its 1h grace
+    window has closed by 05:40 and the verdict is final. morning-system-health
+    runs at 06:00 and reads the line written here.
+  -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>   <integer>5</integer>
+    <key>Minute</key> <integer>45</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-scheduled-commit-check.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-scheduled-commit-check.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
