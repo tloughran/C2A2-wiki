@@ -21,9 +21,9 @@
 
   <!-- Skip if the machine is asleep; catch up at next wake -->
   <key>StandardOutPath</key>
-  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/sync_vault.log</string>
+  <string>/Users/tomloughran/Library/Logs/summa-vault-sync.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/sync_vault.log</string>
+  <string>/Users/tomloughran/Library/Logs/summa-vault-sync.log</string>
 
   <key>RunAtLoad</key>
   <false/>

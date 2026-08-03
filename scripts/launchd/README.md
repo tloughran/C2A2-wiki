@@ -33,6 +33,39 @@ respawn then raced a cold bus.
 | `com.tloughran.summa-vault-sync` | `sync_vault.sh` | daily 21:00 |
 | `com.tloughran.summa-weekly-review` | weekly review | weekly |
 
+## Two rules that are not optional
+
+Both of these produced jobs that were dead for weeks while every place a human
+would look said nothing at all.
+
+**1. Never point `ProgramArguments` at `/usr/bin/python3`. Use `/bin/bash` + a
+`.sh` wrapper that calls python3.** macOS TCC gates `~/Documents` read access
+per-executable. `/bin/bash` holds the grant; the CommandLineTools python3 shim
+does not, so under launchd it cannot open a script that lives in this repo:
+
+    can't open file '.../scripts/foo.py': [Errno 1] Operation not permitted
+
+Running the same `.py` from a Terminal shell does **not** reproduce this — the
+shell carries its own grant. The only honest test is `launchctl kickstart`.
+Killed `com.c2a2.scheduled-commit-check` (2 days) and
+`com.tloughran.summa-weekly-review` (2+ weeks).
+
+**2. `StandardOutPath`/`StandardErrorPath` must live in `~/Library/Logs/`, never
+inside `~/Documents/`.** Any file under `~/Documents` that a sandboxed process
+touches gets a `com.apple.macl` extended attribute stamped on it. launchd then
+cannot open that file, and the job fails with **`last exit code = 78: EX_CONFIG`
+before the program ever starts** — so the log stays empty and there is no error
+message anywhere. Check with `xattr <logfile>`.
+
+Stripping the attribute is not a fix: the scheduled tasks mount `~/Documents`,
+so the next sandboxed read re-stamps it. Only the location fixes it — which is
+why `~/Library/Logs` works. This is what killed `com.tloughran.summa-vault-sync`
+(11 days, no vault published), `com.tloughran.summa-weekly-review` and
+`com.c2a2.metabolism-publish`.
+
+A job whose log path is fine but whose exit code is 78 is telling you about
+`macl`, not about your script.
+
 ## Install or reinstall one
 
     L=com.tomloughran.openstory.watchdog

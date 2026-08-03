@@ -36,8 +36,8 @@
     <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
 
     <key>StandardOutPath</key>
-    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/metabolism-monitor/publish.launchd.out</string>
+    <string>/Users/tomloughran/Library/Logs/c2a2-metabolism-publish.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/metabolism-monitor/publish.launchd.err</string>
+    <string>/Users/tomloughran/Library/Logs/c2a2-metabolism-publish.log</string>
 </dict>
 </plist>

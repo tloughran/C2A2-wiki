@@ -6,10 +6,17 @@
   <key>Label</key>
   <string>com.tloughran.summa-weekly-review</string>
 
+  <!--
+    Must be /bin/bash + the wrapper, NOT /usr/bin/python3 + the .py directly.
+    The direct form left this job dead since at least 2026-07-19: weekly_review.log
+    is nothing but "can't open file ... [Errno 1] Operation not permitted" repeated.
+    Same TCC trap as com.c2a2.scheduled-commit-check -- see the header of
+    scripts/generate_weekly_review.sh.
+  -->
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/generate_weekly_review.py</string>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/generate_weekly_review.sh</string>
   </array>
 
   <!-- Runs every Sunday at 20:00 local time — one hour before the nightly sync -->
@@ -21,9 +28,9 @@
   </dict>
 
   <key>StandardOutPath</key>
-  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/weekly_review.log</string>
+  <string>/Users/tomloughran/Library/Logs/summa-weekly-review.log</string>
   <key>StandardErrorPath</key>
-  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/weekly_review.log</string>
+  <string>/Users/tomloughran/Library/Logs/summa-weekly-review.log</string>
 
   <key>RunAtLoad</key>
   <false/>
