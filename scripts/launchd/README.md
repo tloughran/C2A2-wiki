@@ -13,10 +13,17 @@ That tree stays on `main` permanently, which is what makes the path safe to hard
 Do not repoint an agent at a feature worktree — those are transient, and a job that
 outlives one starts failing silently.
 
+One exception: `com.tomloughran.openstory.nats` runs the Homebrew `nats-server`
+binary directly, with the OpenStory checkout as its working directory. It exists so
+the message bus outlives a backend restart — it used to be a `disown`ed child of
+`openstory-backend.sh`, which meant launchd stopping the backend killed NATS and the
+respawn then raced a cold bus.
+
 ## Agents
 
 | Plist | Runs | Cadence |
 |---|---|---|
+| `com.tomloughran.openstory.nats` | `nats-server -c deploy/nats-local.conf` | RunAtLoad + KeepAlive |
 | `com.tomloughran.openstory.backend` | `openstory-backend.sh` | RunAtLoad + KeepAlive |
 | `com.tomloughran.openstory.watchdog` | `openstory-watchdog.sh` | every 300s |
 | `com.tomloughran.openstory.bridge` | `openstory-bridge.sh` | every 600s |

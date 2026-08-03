@@ -2,26 +2,96 @@
 # openstory-backend.sh — OpenStory capture backend, supervised by launchd
 # (com.tomloughran.openstory.backend, RunAtLoad + KeepAlive).
 #
-# Ensures local-only NATS is up (token-free, deploy/nats-local.conf), then runs the
-# Rust `serve` backend IN THE FOREGROUND via exec, so this process IS what launchd
-# watches — if the backend dies, launchd restarts it. This is the durable feed that
-# writes open-story.db (which the C2A2 wiki reads). 2026-06-25.
+# Waits for local-only NATS (its own agent, com.tomloughran.openstory.nats), then
+# runs the Rust `serve` backend IN THE FOREGROUND via exec, so this process IS what
+# launchd watches — if the backend dies, launchd restarts it. This is the durable feed
+# that writes open-story.db (which the C2A2 wiki reads). 2026-06-25.
 set -euo pipefail
 export PATH="/opt/homebrew/bin:$HOME/.cargo/bin:$PATH"
+
+# 0) File-descriptor ceiling. The macOS kqueue watcher (rs/src/kqueue_watcher.rs)
+#    holds one fd per watched DIRECTORY and budgets only its *file* watches, on the
+#    documented assumption that "dirs are few". The bridge falsifies that: it gives
+#    every Cowork per-run sandbox its own top-level project dir (2787 dirs on
+#    2026-07-29). Under launchd the soft RLIMIT_NOFILE is 256, so on 2026-07-27 the
+#    watcher hit EMFILE partway through registration, stopped delivering events, and
+#    left the HTTP thread answering /health 200 — a 53h silent ingest stall that the
+#    liveness-only watchdog could not see. 8192 is well under kern.maxfilesperproc
+#    (10240). Set HERE, not in the plist, so manual runs and `launchctl kickstart`
+#    inherit it too.
+#
+#    2026-07-30: the real fix SHIPPED and is deployed — kqueue_watcher.rs now
+#    budgets directories the way it always budgeted files (DEFAULT_DIR_BUDGET=1024,
+#    LRU eviction, watch roots pinned, truncation announced on startup). It landed
+#    upstream-side as 1e2b5b5 and is live in the running binary. Verified on this
+#    machine the same day, with pi_watch_dir restored to the 29k-dir Cowork store:
+#
+#      Watching .../local-agent-mode-sessions via kqueue (1152 fds: 128 files, 1024 dirs)
+#        note: 29458 dirs in tree, watching the 1024 most recently modified
+#
+#    Process total went 8196/8192 (saturated, accept() failing with EMFILE) to 1473.
+#    So this ulimit is no longer load-bearing against saturation — it is headroom
+#    for several watchers plus the DB, NATS and HTTP sockets. Keep it: the budget
+#    sizes itself assuming ~8192, and 256 (launchd's default) would not fit one
+#    watcher's 1152.
+ulimit -n 8192 || { echo "[backend] FATAL: could not raise RLIMIT_NOFILE" >&2; exit 1; }
+echo "[backend] fd limit: $(ulimit -n)"
+
+# 0b) Capture WHY the process exits. 2026-07-29: after the fd ceiling was raised
+#     the backend began exiting on its own every few minutes, with launchd
+#     KeepAlive respawning it -- at only ~318 fds, with no crash report in
+#     ~/Library/Logs/DiagnosticReports, no OOM (RSS ~537MB), and no graceful
+#     "Shutting down" line before the death. Diagnosing that from logs alone
+#     failed twice, so make the process report itself instead of guessing again.
+#     Pure instrumentation: affects output only, never behaviour.
+export RUST_BACKTRACE=1
+echo "[backend] RUST_BACKTRACE=1 (diagnosing unexplained self-exits)"
 
 OS_ROOT="$HOME/Documents/Non-Claude Projects/OpenStory"
 cd "$OS_ROOT"
 
-# 1) Local NATS JetStream on :4222 — start only if the port is free. Disowned: if it
-#    dies, the backend below loses :4222 and exits, and launchd reruns this whole
-#    script, which restarts NATS. So NATS is self-healed without its own agent.
-if ! lsof -i :4222 >/dev/null 2>&1; then
-  echo "[backend] starting local NATS on :4222"
-  nats-server -c deploy/nats-local.conf > /tmp/nats-local.log 2>&1 &
-  disown
-  sleep 1
-else
-  echo "[backend] NATS already on :4222"
+# 1) Local NATS JetStream on :4222 is supervised SEPARATELY, by
+#    com.tomloughran.openstory.nats (RunAtLoad + KeepAlive). This script no longer
+#    starts it, only waits for it.
+#
+#    Why it moved out, 2026-07-29: nats-server was started here and `disown`ed.
+#    disown removes the job from this shell's table but does NOT detach the process
+#    group, so launchd stopping the backend took NATS down with it — confirmed by
+#    ancestry, nats-server's PPID was the backend's own pid. Every respawn therefore
+#    raced a cold NATS, and the backend bails out of main() when it cannot reach
+#    JetStream at startup (rs/cli/src/main.rs:680, "NATS unavailable" / "NATS stream
+#    setup failed"). That is a clean non-zero exit, so KeepAlive relaunched this
+#    script and rolled the same dice again — a restart loop with no crash report and
+#    no "Shutting down" line, which is exactly how it presented.
+#
+#    A readiness probe inside this script cannot close that race, which is why the
+#    first attempt at fixing it did not: the probe runs in the very process that NATS
+#    is about to be a child of. It proves NATS was listening a moment ago, not that
+#    it will outlive the exec below.
+#
+#    The race was expensive because a boot is not cheap: reconcile (~150-190s, and it
+#    adds 0 events — it skips ~724k), reproject (~669k events), then the 72h backfill
+#    (~23k events, the small part). About 4m15s before the HTTP listener answers, so
+#    /health returning nothing during that window is normal, not a fault. An exit at
+#    3 minutes discards the whole boot; a few in a row froze the ingest frontier for
+#    an hour. Measured 2026-07-29.
+#
+#    NATS now outlives any backend restart, and if NATS itself dies its own KeepAlive
+#    brings it back. The wait below still matters at login, when both jobs start at
+#    once and this one can win.
+echo "[backend] waiting for NATS on :4222 ..."
+for _ in $(seq 1 60); do
+  if nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
+    echo "[backend] NATS accepting connections"
+    break
+  fi
+  sleep 0.5
+done
+if ! nc -z -G 1 127.0.0.1 4222 >/dev/null 2>&1; then
+  echo "[backend] FATAL: NATS never came up on :4222 after 30s. It has its own agent:" >&2
+  echo "[backend]   launchctl print gui/\$(id -u)/com.tomloughran.openstory.nats" >&2
+  echo "[backend]   tail ~/Library/Logs/openstory-nats.log" >&2
+  exit 1
 fi
 
 # 2) Bounded backfill window (matches up-local.sh): re-reads recent events on each
