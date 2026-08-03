@@ -119,14 +119,44 @@ log "Committed ${N} change(s). Pushing…"
 # and cost two weeks of unpublished vault content (2026-07-06 → 07-19).
 # Risk is bounded: fetch/rebase are read-then-replay, any conflict aborts cleanly
 # and leaves the local commit intact, and we NEVER force-push.
+# >>> RECONCILE-BLOCK (extracted verbatim by scripts/test_sync_vault_rebase.sh — keep both markers)
 if ! git fetch origin main >>"$LOG" 2>&1; then
   fail_loud "git fetch failed (network or credentials) — local commit kept, nothing pushed"
 fi
 
-if ! git pull --rebase origin main >>"$LOG" 2>&1; then
-  git rebase --abort >>"$LOG" 2>&1 || true
-  fail_loud "rebase onto origin/main conflicted — local commit kept, nothing pushed. Resolve manually in $REPO"
+# --autostash added 2026-08-03. Without it `git pull --rebase` REFUSES OUTRIGHT whenever the
+# working tree carries unstaged changes to tracked files ("cannot pull with rebase: You have
+# unstaged changes"). This tree is dirty most nights from agent output, so that is the normal
+# state, not an edge case — the 2026-07-23 run died exactly there, and every earlier success
+# was luck. --autostash stashes those changes, rebases, then restores them.
+PULL_OUT=$(mktemp "${TMPDIR:-/tmp}/sync_vault_pull.XXXXXX")
+if git pull --rebase --autostash origin main >"$PULL_OUT" 2>&1; then
+  cat "$PULL_OUT" >>"$LOG"
+  rm -f "$PULL_OUT"
+  # git EXITS 0 when the rebase succeeds but restoring the autostash conflicts — it prints
+  # "Applying autostash resulted in conflicts" and returns success anyway (verified
+  # 2026-08-03). That leaves conflict markers in tracked files and the changes stranded in
+  # `git stash list`. Unpushed and unsaid, the next daily run would commit the markers.
+  # An unmerged index is the sound test for it.
+  if [ -n "$(git ls-files --unmerged)" ]; then
+    fail_loud "rebase succeeded but restoring the working-tree changes conflicted — the tree now has unmerged files and the changes are in 'git stash list'. Nothing pushed. Resolve manually in $REPO"
+  fi
+else
+  cat "$PULL_OUT" >>"$LOG"
+  # Name what actually happened. The old code called EVERY failure here a conflict, so on
+  # 2026-07-23 the marker file read "rebase onto origin/main conflicted" when no rebase had
+  # even started. A wrong diagnosis in a marker file is worse than no marker.
+  if [ -d "$REPO/.git/rebase-merge" ] || [ -d "$REPO/.git/rebase-apply" ]; then
+    git rebase --abort >>"$LOG" 2>&1 || true
+    rm -f "$PULL_OUT"
+    fail_loud "rebase onto origin/main conflicted and was aborted — local commit kept, nothing pushed. Resolve manually in $REPO"
+  else
+    WHY=$(tr '\n' ' ' <"$PULL_OUT" | tr -d '"\\' | tail -c 200)
+    rm -f "$PULL_OUT"
+    fail_loud "git pull --rebase never started a rebase — local commit kept, nothing pushed. git said: $WHY"
+  fi
 fi
+# <<< RECONCILE-BLOCK
 
 if git push origin main >>"$LOG" 2>&1; then
   log "Push succeeded."
