@@ -436,6 +436,14 @@ def scan_vault(vault_path):
         rel = md_file.relative_to(vault)
         if str(rel).startswith('.'):
             continue
+        # Skip dependency trees. wiki/node_modules is gitignored, so it is
+        # invisible to every other tool here, but rglob walks it anyway: the
+        # 2026-08-03 regen pulled in 103 LICENSE/README nodes from marked,
+        # css-color, dom-selector and friends. The published 2026-07-28 build
+        # has none, so this arrived with an npm install, not with a content
+        # change — and it would recur silently on every future regen.
+        if 'node_modules' in rel.parts:
+            continue
         try:
             content = md_file.read_text(encoding='utf-8', errors='replace')
         except Exception:
