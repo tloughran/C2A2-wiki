@@ -46,6 +46,25 @@ DEFAULT_OUT = os.path.join(DEFAULT_VAULT, "agents/openstory/agent_telemetry.json
 TOOL_USE = "message.assistant.tool_use"
 
 
+def tool_and_model(data):
+    """Pull (tool, model) out of a tool_use event's `data` object.
+
+    The producer moved these one level deeper, into `agent_payload`, around
+    2026-05. This extractor kept reading the flat `data["tool"]` and so shipped
+    `tools: {}` / `models: {}` for every session recorded after the cutover —
+    30 of 32 captured roster agents, with tool_coverage 0.0. Measured 2026-08-03
+    on the last 3000 tool_use events: 0 flat, 3000 nested. The only reason
+    `(interactive)` still had data is that it holds Mar/Apr-era sessions.
+
+    Nested wins, flat is the fallback, so the pre-cutover sessions keep working
+    and a future move back would not silently zero the field again.
+    """
+    nested = data.get("agent_payload")
+    if isinstance(nested, dict) and (nested.get("tool") or nested.get("model")):
+        return nested.get("tool"), nested.get("model")
+    return data.get("tool"), data.get("model")
+
+
 # DB access is via openstory_db.connect_ro_snapshot: the live WAL-mode db must be
 # snapshotted before reading or quick_check trips on a mid-write inconsistency.
 
@@ -243,11 +262,10 @@ def main():
             data = json.loads(payload).get("data", {})
         except (ValueError, TypeError):
             continue
-        tool = data.get("tool")
+        tool, model = tool_and_model(data)
         if tool:
             s["tools"][tool] += 1
             s["tool_use_named"] += 1
-        model = data.get("model")
         if model:
             s["models"][model] += 1
 
