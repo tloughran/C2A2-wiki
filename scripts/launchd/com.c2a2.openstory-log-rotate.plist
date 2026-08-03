@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.openstory-log-rotate</string>
+
+  <!--
+    Copy-truncate rotation for ~/Library/Logs/openstory-*.log. See the header
+    of rotate_openstory_logs.sh for why rename-and-recreate does not work when
+    launchd owns the file descriptor.
+
+    Runs on the Mac rather than in a task sandbox for the obvious reason: the
+    logs are under ~/Library/Logs, which the scheduled tasks do not mount.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/rotate_openstory_logs.sh</string>
+  </array>
+
+  <!--
+    03:30 local — before the 04:30 C2A2 daily run, so a rotation never lands in
+    the middle of the busiest hour of backend logging.
+  -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>   <integer>3</integer>
+    <key>Minute</key> <integer>30</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-openstory-log-rotate.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-openstory-log-rotate.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
