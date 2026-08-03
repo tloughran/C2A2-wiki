@@ -1,0 +1,42 @@
+SEARCH-AGAINST-PRESUMPTION-628:
+  Date searched: 2026-08-02
+  Original item: PRESUMPTION-628
+  Original statement: That a disclosed retrieval blind spot can be converted into a bound on what was missed — i.e. that coverage and recall for an incomplete search can be estimated from the search itself.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15b]
+    Original item: PRESUMPTION-628
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced an unstated assumption that disclosing a known gap in retrieval is equivalent to quantifying it, so that the incompleteness becomes a bounded rather than an open quantity.
+      15b: Searched for challenging literature
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Journal of the Royal Statistical Society Series A, 2024. "Estimation of population size with heterogeneous catchability and behavioural dependence: applications to air- and water-borne disease surveillance" (qnad084). — Where multiple sources of dependence exist, log-linear capture-recapture *underestimated* total population size by an average of 1,416 cases (28%). Bounds derived this way are anti-conservative precisely when sources are correlated — which is the default condition for one retriever running related queries.
+    2. Walther, B. et al., 2011. "Boosting qualifies capture–recapture methods for estimating the comprehensiveness of literature searches for systematic reviews." Journal of Clinical Epidemiology. — Manual model selection produced large estimates that varied markedly with broad confidence intervals, due to variable-selection and overfitting problems. The estimate is highly sensitive to modelling choices made by the same party whose search is being audited.
+    3. "Capture-recapture method for assessing publication bias" (PMC3082794). — States the structural limits directly: the method requires sufficiently high overlap between sources to produce a reliable estimate, lacks statistical power to detect incompleteness at an early stage, and cannot estimate cases that are not notified by *any* source. A disclosed blind spot is, by definition, a region of zero capture probability across all channels — exactly the class the method cannot bound.
+    4. Kastner, M. et al., 2009. "The capture–mark–recapture technique can be used as a stopping rule when searching in systematic reviews." Journal of Clinical Epidemiology 62(2). — The proposed application is a *stopping rule* under an assumption of independent, overlapping search strategies; it is not a method for bounding a known systematic exclusion. Using it for the latter is outside the validated use.
+    5. Bramer, W.M. et al., 2017. "Optimal database combinations for literature searches in systematic reviews: a prospective exploratory study." Systematic Reviews 6:245. — Empirically: 16% of included references were found in only one database, and an estimated 60% of published systematic reviews fail to retrieve 95% of relevant references. Blind spots are large, source-specific, and not predictable from within a single source.
+    6. Ewald, H. et al., 2022. "Searching two or more databases decreased the risk of missing relevant studies: a metaresearch study." Journal of Clinical Epidemiology 149:154-164. — The remedy the field actually endorses is adding independent channels, not modelling the gap from the existing one. Also notes that coverage figures alone overestimate the impact of single-database searching because they do not measure recall.
+    7. GMS Medizinische Informatik, Biometrie und Epidemiologie, 2021. "Recall, precision, and coverage of literature searches in systematic reviews in occupational medicine: an overview of Cochrane Reviews." — Distinguishes coverage from recall and shows the two diverge; a coverage claim does not license a recall claim.
+
+  Strength of challenge: Strong
+
+  Summary: Capture-recapture is a real and validated tool for estimating search completeness, but its validated use is as a stopping rule across *independent, overlapping* search channels — not as a way to bound a systematic exclusion that is already known. Its assumptions fail in precisely the configuration described: source dependence produces underestimates averaging 28% in the published simulation-and-application work, and the method cannot by construction estimate items with zero capture probability in every source. A disclosed retrieval blind spot is a declared zero-capture region, so the disclosure identifies the gap but does not make it estimable. Empirically the field's answer is to add independent channels — 16% of relevant references appear in only one database, and 60% of published reviews miss 5% or more of the literature — rather than to model the gap from within the incomplete search.
+
+  Specific risks: A bound derived this way will be reported as a bound while being systematically too small — the dependence-violation direction is toward underestimating what is missing, so the error runs in the unsafe direction. Worse, quantification converts an open uncertainty into a number that downstream consumers will treat as calibrated, which is a strict loss compared with an honest "unknown, channel X not searched." Overfitting sensitivity means the estimate is partly a function of modelling choices made by the party being audited. There is also a structural incentive risk: if blind spots can be "bounded," disclosing one becomes cheaper than fixing it.
+
+  Mitigations available: (a) Distinguish estimable incompleteness (overlap-based, across genuinely independent channels) from structural incompleteness (zero-capture regions) and refuse to report a bound for the latter; (b) prefer adding an independent retrieval channel over modelling the gap — this is the field's own recommendation; (c) if capture-recapture is used, use it across channels that were designed to be independent, report the model-selection sensitivity, and state the dependence assumption explicitly; (d) report coverage and recall as separate quantities, never coverage as a proxy for recall; (e) express structural blind spots qualitatively — what class of material is unreachable and why — rather than as a number.
+
+  Search scope: Comprehensive for capture-recapture applied to literature-search completeness and for its assumption violations, and for systematic-review database coverage. Preliminary for recall estimation in web crawlers — that literature was not reached; a targeted search of the information-retrieval coverage-estimation literature is recommended, as it may contain methods designed for exactly the non-overlapping-source case that the epidemiological methods handle badly.
+
+  STEELMAN:
+    Strongest counterargument: A rough, assumption-laden bound is more useful than no bound. The alternative in practice is an unqualified "the search was incomplete," which gives a reader nothing to act on, whereas even a wide interval with stated assumptions tells them the order of magnitude. Capture-recapture is used routinely and defensibly as a stopping rule in systematic reviews, and boosting-based model selection was developed precisely to handle the overfitting problem the critique raises. The dependence-induced 28% underestimate is a known, directional bias, and a known directional bias can be corrected for or absorbed into a conservative multiplier. Refusing to estimate is not neutrality — it is choosing an implicit estimate of "unknown" that readers will fill in optimistically anyway.
+    What would need to be true for the system to be safe: (i) at least two genuinely independent retrieval channels with measurable overlap; (ii) the blind spot is a low-capture region rather than a zero-capture one; (iii) the bound is reported as a lower bound on what is missing, with the dependence direction stated; (iv) the bound is never used to justify not closing the blind spot.
+    How to test: Run a second retrieval channel designed to be independent of the first over the same question — different index, different query formulation, different agent. Measure the overlap and the unique yield of each. Compare the capture-recapture estimate of missing items against the unique yield of the second channel: if the second channel returns more unique items than the estimate predicted, the independence assumption is violated and the bound is invalid for this system.
+
+  Recommendation: CHALLENGED

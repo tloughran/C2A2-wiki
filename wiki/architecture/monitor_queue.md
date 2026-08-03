@@ -18254,3 +18254,182 @@ MONITOR-497:
   Recorded but NOT minted: the general claim (a qualifier reaches a derived record only if the derived schema declares a carrier for it) is bilaterally supported and would ground a premise. It was not minted because it is not what the item claimed, and minting it would be minting a substitute finding to avoid an empty return.
   Cadence: Weekly · Priority: High
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING
+
+MONITOR-498:
+  Date entered: 2026-08-02
+  Source item: PRESUMPTION-618 · Disposition record: DISPOSITION-578
+  Item type: PRESUMPTION (unstated)
+  Statement under monitoring: Should citation verification carry a FLOOR (a minimum fraction verified against primary venue per batch) rather than a floating rate, and does a floor reduce downstream error?
+  Status: THE ITEM SPLITS, AND THE TWO HALVES HAVE OPPOSITE EVIDENTIARY STANDING.
+    (a) BASE-RATE HALF — settled and NOT minted, because it is already governed. Walters & Wilder
+      (2023), Sci Rep 13:14045 [VERIFIED against Nature.com this run]: of 636 citations across 84
+      generated literature reviews on 42 topics, 55% of GPT-3.5 and 18% of GPT-4 citations were
+      FABRICATED, and among the real citations 43% (GPT-3.5) / 24% (GPT-4) carried substantive
+      errors. 15b did not contradict this and reinforced it from the other side: a ~25% quotation
+      error rate survives peer review in the published literature (Royal Society Proc A 476:20200538).
+      GOVERNING PREMISE: PREMISE-103 — absence of primary text is a KIND-difference in evidence, not
+      a degree-difference, and no confidence label over metadata-only material is well-founded. An
+      unverified citation is metadata-only material. Nothing new needs minting; what the base rates
+      add is a magnitude for an obligation already on the books.
+    (b) FLOOR HALF — UNTESTED IN BOTH DIRECTIONS. Neither search located ANY interventional study
+      that a verification-rate floor reduces downstream error. 15a: no efficacy evidence. 15b: no
+      evidence against, and an explicit note that the floor is an untested design. This is a genuine
+      literature gap on the mechanism, not a contested finding.
+  Why MONITOR and not INCORPORATE: minting a premise mandating a floor would assert exactly the
+    efficacy claim that neither direction could evidence — and would do so in a register that
+    PREMISE-124 forbids from certifying its own instruments. Precaution is a legitimate ground for
+    adopting a floor; it is not a ground for calling it validated.
+  THE OPERATIVE FACT, recorded because the item is self-referential: this pipeline's own citation
+    verification rate over the last four runs is 15/45 → 4/40 → 0/44 → 5/~45 (this run). The 0/44
+    run bounds nothing: by the rule of three, zero verifications support no upper bound on the error
+    rate at any confidence. Two premises minted on 2026-08-01 (PREMISE-136, PREMISE-137) rest on
+    citations from that batch and remain unverified. See REVISE-260.
+  What would convert this: (1) an interventional or quasi-experimental study of verification quotas
+    in evidence synthesis — INCORPORATE if found, REVISE if it shows floors displace effort without
+    reducing error; (2) failing that, run it in-house: fully verify one batch's citations, count
+    defects found per unit cost, and compare against the defect rate in batches verified at the
+    current floating rate. Corpus-scoped, satisfies PREMISE-136; the denominator is the ~170
+    citations across the last four batches, not this run's 7 items.
+  Interim discipline (condition, not premise, and already licensed by PREMISE-103): any citation
+    that is LOAD-BEARING — i.e. a premise or a disposition would change if it were fabricated — must
+    be verified against its primary venue before the premise is minted, with the verification
+    recorded in the premise entry. Non-load-bearing citations may remain unverified if labelled.
+    This run applied that discipline and it changed two outcomes; see DISPOSITION-576 and -580.
+  Cadence: Weekly · Priority: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING
+
+MONITOR-499:
+  Date entered: 2026-08-02
+  Source item: PRESUMPTION-628 · Disposition record: DISPOSITION-582
+  Item type: PRESUMPTION (unstated)
+  Statement under monitoring: Can a disclosed retrieval blind spot be converted into a bound on what was missed?
+  Status: CONTESTED, STRONG/STRONG, AND THE TWO DIRECTIONS ARE ANSWERING DIFFERENT QUESTIONS.
+    15a (Strong SUPPORTED): converting a blind spot into a bound is standard, mature practice —
+      capture-recapture for search completeness (Spoor et al., BMJ 1996), database-coverage studies
+      (Bramer, Giustini & Kramer 2016, Systematic Reviews 5:39), stopping rules (Kastner et al.,
+      J Clin Epidemiol 2009), relative recall, and web-crawl coverage estimation.
+    15b (Strong CHALLENGED): the bound is systematically OPTIMISTIC. Positive dependence between
+      sources — which is the normal case, since a document findable by one route is more likely
+      findable by another — makes the Petersen/Lincoln estimator UNDERESTIMATE the population
+      [mechanism VERIFIED this run across the capture-recapture methods literature; the specific
+      ~28% magnitude 15b attributed to a 2024 JRSS-A paper was NOT verified and is NOT relied on].
+      And no capture-recapture design can estimate the ZERO-CAPTURE stratum: material that no
+      available route reaches is invisible to every route, so the bound is silent about precisely
+      the blind spot the item wants bounded.
+  Net: both are right, and the resolution is a qualifier rather than a winner — the bound is a LOWER
+    bound on what was missed, biased optimistically by source dependence, and undefined over
+    zero-capture strata. That is still strictly better than "unknown," which readers fill in
+    optimistically and without a stated direction of error (15b's own steelman concedes this).
+  WHY THIS IS THE MOST CONSEQUENTIAL ITEM IN THE BATCH, and why it is not merely an item: PREMISE-124
+    clause (a) NAMES capture-recapture as the remedy for the raw-catch-count fallacy. 15b has now
+    shown that named remedy to be conditionally unsound in the direction that matters — it reassures.
+    A validated premise's prescribed instrument has been challenged by this pipeline's own search.
+    This is not grounds to withdraw PREMISE-124, whose diagnosis is untouched; it is grounds to
+    amend its remedy clause with the dependence and zero-capture conditions. Amending a live premise
+    is a register change this pipeline should not make unilaterally on one run's evidence — see
+    REVISE-261, which carries it to Tom together with the 623 promotion rule.
+  What would convert this: an estimate of source dependence for THIS corpus. Two retrieval routes
+    over the same known-item set (e.g. filename glob vs. content grep over a seeded sample of vault
+    files), overlap measured, Petersen bound computed with and without a dependence correction. If
+    the corrected and uncorrected bounds differ by less than the interval width, the objection is
+    real but not operative here → INCORPORATE with the qualifier. If they diverge, the bound is
+    uninformative for this corpus → REVISE. Corpus-scoped, satisfies PREMISE-136.
+  Cadence: Weekly · Priority: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Current status: MONITORING
+
+---
+
+## 2026-08-02 RUN — 15d Periodic Monitor (weekly + monthly cycle; scheduled c2a2-periodic-monitor-weekly)
+
+**Run context:** Scheduled weekly 15d run. 2026-08-02 IS the first Sunday of August (day 2) -> **monthly cycle FIRES** (low-priority monitor cohort + INCORPORATED-premise re-checks). 15d does NOT evaluate evidence — it re-triggers 15a/15b; 15c re-dispositions afterward.
+
+**Consumption check (determines cycle handling):** The 2026-07-26 first-re-trigger blocks (MONITOR-436..452) and every earlier standing 15d block remain `[QUEUED]`/`[QUEUED-EMPIRICAL]` in for_lit_search.md. The daily pipeline's own 2026-08-02 footer states it directly: *"No 15d backlog items were consumed. This run processed only the freshest cohort, which is the same choice the previous 25 runs made and is the mechanism by which the backlog persists"* — **26th consecutive day of zero drain on the 15d backlog; zero 15a/15b consumption of monitored items since 2026-07-08 (25 days).** Consequence: **no carried monitored item completed an evidence pass this interval, so NO cycle count advances for any carry-over this run.** Carry-overs get next_check advanced only; standing blocks are NOT duplicate-queued (2026-07-12 / -19 / -26 precedent).
+
+**Processed this run:**
+
+- **30 first re-triggers** (MONITOR-453..482, cycle 0 -> 1): the 2026-07-20..07-26 intake cohort, whose first-check dates (2026-07-27 .. 2026-08-02) have now all arrived. Each completed exactly one evidence pass at intake (all DISPOSITIONED-15c -> MONITOR); **block-by-block check against for_lit_search.md confirmed none of the 30 source items carries a standing RE-TRIGGER block**, so these are genuine first re-triggers, not duplicates. Re-queued with `[RE-TRIGGER by 15d: 2026-08-02, cycle 1]`. Last checked 2026-08-02; next 15d check 2026-08-09. **22 of the 30 are QUEUED-EMPIRICAL** (15c's stated conversion condition is an in-house measurement of this system, not a literature search) per the 2026-07-25 INTERNAL-EMPIRICAL convention and MONITOR-475; **8 are literature** (A-484/MONITOR-459, A-496/463, A-503/466, A-504/467, A-505/468, P-525/470, A-514/473, P-539/477). The empirical/literature split is a routing call on 15c's stated condition, not an evidence judgement.
+
+- **105 weekly carry-overs NOT duplicate-queued** (next_check 2026-08-02 -> 2026-08-09; cycle counts UNCHANGED): their RE-TRIGGER blocks remain `[QUEUED]` and unconsumed, and those standing blocks are the operative search requests. Advancing cycle counts without a completed pass would inflate them.
+  - 2026-07-26 first-re-trigger cohort, cycle 1 (17): MONITOR-436..452
+  - 2026-07-19 first-re-trigger cohort, cycle 1 (17): MONITOR-419..435
+  - 2026-07-19 cycle-increment cohort (4): MONITOR-360 (cycle 3), -373, -375, -382 (cycle 2) — still the only items with real trajectory movement; nothing has moved since, because no search has run
+  - 2026-07-12 cohort, cycle 1 (19): MONITOR-400..418
+  - 2026-07-05 cohort, cycle 2 (21): MONITOR-345..348, -350..359, -361..367
+  - 2026-07-05 cohort, cycle 1 (27): MONITOR-368..371, -376..381, -383..399
+
+- **MONTHLY CYCLE — low-priority cohort (344 items, MONITOR-001..344):** next_check 2026-08-02 reached; **advanced to 2026-09-06** (first Sunday of September), cycle counts held, **NOT re-queued.** These were STALE-MONITOR-FLAGGED and downgraded to monthly on 2026-07-05; their 2026-06-28 (147) and 2026-07-05 (117) RE-TRIGGER blocks are still `[QUEUED]` and unconsumed. Re-queuing 344 items into a queue with 26 days of zero drain would pollute it without adding a single search. *Stated rather than omitted:* 15d has NOT verified block-by-block that every one of the 344 has a standing block — the 06-28/07-05 cohorts total 264, so up to ~80 low-priority items may have no live search request at all. That audit is queue-cleanup's job, not 15d's, but the gap is real and is flagged here rather than assumed away.
+
+- **MONTHLY CYCLE — INCORPORATED premise re-checks (19):** all ACTIVE premises in validated_premises.md with re_check_due on or before 2026-08-02, re-queued with `[RE-CHECK by 15d: 2026-08-02]`.
+  - 12 quarterly, **overdue by 5 to 20 days**: PREMISE-001, -003 (due 07-13), -005 (07-18), -006, -007 (07-20), -008, -009, -010, -011 (07-21), -012, -013 (07-27), -014 (07-28). New re_check_due **2026-11-01**.
+  - 7 monthly: PREMISE-002, -004, -025 (07-05 cohort, due 08-02), -070 (07-23), -071, -072 (07-24), -089 (07-30). New re_check_due **2026-09-06**.
+  - Every one of the 19 keeps **Status: ACTIVE**. 15d changed no premise text, evidence, caveat, cadence or status — only the due date and a dated annotation.
+
+- **Event-driven items untouched:** MONITOR-003 (continuous), MONITOR-041 (per billing-error event), MONITOR-154 (per-incident).
+
+- **Fresh intakes NOT yet due, untouched (17):** MONITOR-483..486 (entered 07-27, first check 08-03), -487..489 (07-28 -> 08-04), -490..492 (07-29 -> 08-05), -493..494 (07-30 -> 08-06), -495..497 (08-01 -> 08-08), -498..499 (08-02 -> 08-09). Per the standing convention brand-new items are not re-triggered on entry — they were freshly evaluated by 15a/15b/15c at creation.
+
+**Stale sweep:** 30 items advanced cycle 0 -> 1; 105 carry-overs held their cycle counts because no evidence pass ran. No item reached a 4th weekly cycle -> **no new STALE-MONITOR-FLAG raised.** MONITOR-360 remains at cycle 3, one short of the threshold, and cannot advance while the queue is unconsumed. As on the last three runs, this "no stale items" result is an **ARTIFACT OF THE STALL, not a finding of health** — see STALE-DETECTION-BLIND-SPOT (filed 2026-07-19, unresolved; now itself monitored as MONITOR-454, whose wall-clock companion rule was re-triggered today as part of the 30).
+
+### ESCALATION 1 (carried, 4th run post-fire) — MONITOR-420 auto-escalate trigger REMAINS FIRED and unactioned
+  MONITOR-420 / ASSUMPTION-428's auto-escalate trigger fired on 2026-07-19 (2 runs carrying the backlog with no decision -> REVISE). No 15c re-disposition since; zero consumption. Fourth consecutive run surfacing a fired trigger with no action. Re-queued within the carry-over cohort. **15c should issue the REVISE; 15d does not disposition.**
+
+### ESCALATION 2 — BACKLOG-FLAG (loud; 11th consecutive surfacing; still growing)
+  Standing unconsumed 15d re-trigger backlog: ~174 carried + 30 added = **~204 blocks**. Of today's additions, 22 are `[QUEUED-EMPIRICAL]` (correctly out of scope for 15a/15b) and 8 are literature; the 19 RE-CHECK blocks are literature. So the daily pipeline's own unsearched-literature figure — **~189 as stated in its 2026-08-02 footer** — rises by 27 to **~216**. The two counts use different denominators and are both reported rather than blended. Trend of the 15d backlog: 110 -> 147 -> ~174 -> ~204.
+  Impact unchanged: the 15d re-trigger loop fires correctly; downstream consumption has stalled for 25 days. Monitored items age in queue instead of cycling through evidence passes. Independently validated as PREMISE-106 (channel instability) and PREMISE-119 (production/judgment coupling).
+  **Note, and it matters this week:** the 2026-08-02 pipeline footer records that in-channel repetition with no effector is exactly what PREMISE-138 (minted 08-02) says does not work — and this escalation block is in-channel repetition with no effector, for the 11th time. 15d has no channel to Tom other than this file and its run output.
+  Recommendation (unchanged, overdue): **ESCALATE to Tom** — either point c2a2-lit-search-pipeline at the standing RE-TRIGGER cohort oldest-first, or explicitly re-scope the weekly 15d cadence to match observed 15a/15b throughput.
+
+### ESCALATION 3 (carried) — MONITOR-423 starvation trigger, likely still met (15c to confirm)
+  No 15a/15b burn of any 15d-tier item since 2026-07-08, so zero non-HIGH backlog was burned across the intervening runs. MONITOR-423 / ASSUMPTION-430's starvation trigger ("2 more runs with zero non-HIGH backlog burned -> REVISE") remains likely met. 15d flags rather than asserts: the trigger keys on the daily pipeline's burn record, which 15d does not own. Related: MONITOR-425 (P-459) priority-staleness — items queued 2026-07-05 have now aged 28 days at queue-time priority.
+
+### ESCALATION 4 (NEW) — 15d's own re-check bookkeeping was broken, in two ways, and is now repaired
+  **(a) 12 quarterly premises ran overdue by 5 to 20 days.** The 2026-07-05 monthly run re-checked only 3 premises (PREMISE-002, -004, -025) and did not sweep the register for quarterly items falling due in the following four weeks. PREMISE-001 and -003 were due 2026-07-13 and were re-checked today, 20 days late.
+  **(b) 19 premises carried NO re-check date at all.** PREMISE-075..088 and PREMISE-090..094 read `Re-check due: Quarterly (next 15d review)` — a cadence with no date, which a date-driven monitor can never detect as due. On the current mechanism they would have sat unre-checked indefinitely. 15d assigned each a concrete date of validation-date + 3 months (2026-09-25 .. 2026-10-03) and annotated the change inside each entry. **PREMISE-089 was the one Monthly entry in that undated set; by its validation date it had been due since 2026-07-30 and is included in today's re-check cohort.**
+  This is a failure of 15d's own instrument, not of 15a/15b or 15c, and it is the same class of failure this pipeline has been minting premises about all week: a control whose RECORD existed while the control did not run. It is stated here rather than quietly fixed. **Residual risk NOT closed:** the same date-advance-without-consumption pattern flagged in Escalation 2 applies to these 19 re-checks — their due dates have moved to 2026-09-06 / 2026-11-01 whether or not any search consumes them. If the backlog stays stalled, the register will look current and be stale.
+
+### Evidence trajectory tracking
+  **105 carry-overs:** Supporting stable; Challenging stable; New sources since last cycle: **No — unchanged BY CONSTRUCTION (no search ran this interval), not by observation.** The last real movement was the 2026-07-19 cycle-increment cohort (MONITOR-360 challenging growing; -373 supporting growing; -375 supporting growing-analogical; -382 challenging growing); nothing has moved since. No trajectory can update until downstream consumption resumes.
+  **30 first re-triggers (MONITOR-453..482):** trajectory baseline carried from intake — Supporting stable, Challenging stable, New sources: N/A (first cycle). Their intake dispositions (2026-07-20..07-26) remain the most recent evidence pass.
+  **19 premise re-checks:** no trajectory data yet — first scheduled re-check for 16 of the 19 (PREMISE-002, -004, -025 had one prior re-check, 2026-07-05/06, both re-confirmed ACTIVE with sharpened caveats).
+  **Register-level note, carried not acted on:** REVISE-261 (2026-08-02) asks Tom to amend PREMISE-124's remedy clause, because 15b's own search showed the capture-recapture instrument PREMISE-124 prescribes is optimistically biased under source dependence and silent over zero-capture strata. PREMISE-124 is not in today's re-check cohort (re_check_due not reached). 15d does not amend premises and does not pre-empt that decision; it is recorded here so the re-check schedule and the pending amendment do not diverge unnoticed.
+
+### Coverage reconciliation (verification step)
+  499 MONITOR ids exist (highest: MONITOR-499, entered 2026-08-02). Accounted for this run: **344** low-priority/monthly (MONITOR-001..344, next_check -> 2026-09-06; includes the 3 event-driven items 003/041/154) + **88** weekly carry-overs in MONITOR-345..435 + **3** REVISE-exited (MONITOR-349, -372, -374, exited 2026-07-08) + **17** carry-overs MONITOR-436..452 + **30** first re-triggers MONITOR-453..482 + **17** fresh not-yet-due MONITOR-483..499 = **344 + 88 + 3 + 17 + 30 + 17 = 499.** No ACTIVE item with an operative next_check on or before 2026-08-02 was left unprocessed.
+  Premise-side reconciliation: 140 premise entries in validated_premises.md; 19 had re_check_due <= 2026-08-02 and were re-queued; 19 had no date and were dated; the remainder carry future dates. Post-run, **every premise entry in the register carries a concrete re_check_due date** — that was not true before this run.
+  Queue hygiene: the 49 new blocks (30 RE-TRIGGER + 19 RE-CHECK) are all `[QUEUED]`/`[QUEUED-EMPIRICAL]` and unconsumed; no source item was duplicate-queued by this run. The pre-existing ASSUMPTION-044 duplicate (two identical unconsumed blocks tagged 2026-07-05, noted 2026-07-19) remains unresolved — still flagged for 15c/queue cleanup; 15d does not delete queue entries. Backups written: for_lit_search.md, monitor_queue.md, validated_premises.md -> `*.bak.20260802-pre-15d`.
+
+**FAIL-LOUD (Rule 6 / Rule 12):** this run exceeded the 4,000-token per-task budget. Mitigations disclosed: monitor_queue.md (1.1 MB), for_lit_search.md (1.4 MB) and lit_search_returns.md were never read whole — headings, tails, targeted greps and scripted extraction only; validated_premises.md was parsed programmatically rather than read. All register writes are scripted appends or line-indexed in-place edits with a pre-write backup and a post-write diff. **Not done, stated rather than omitted:** (1) the block-by-block audit of whether all 344 low-priority items have a live standing block — up to ~80 may not; (2) verification that the 105 carry-overs' standing blocks are individually well-formed (checked by cohort tag count, not per block); (3) the empirical/literature routing of the 30 was decided from each item's stated conversion condition by 15d alone, with no second reader.
+
+**Run summary:** 30 first re-triggers queued (MONITOR-453..482, cycle 0 -> 1; 22 empirical-tagged, 8 literature), 105 carried with next_check advanced 2026-08-02 -> 2026-08-09 and cycle counts held, 0 cycle advances for carry-overs (zero consumption since 2026-07-08), 0 new stale flags, **monthly cycle FIRED**: 344 low-priority items advanced to 2026-09-06 without re-queuing and **19 INCORPORATED premises re-checked and re-queued**, 19 undated premises given concrete dates. **4 escalations: MONITOR-420's fired trigger unactioned for a 4th run (15c to REVISE); the ~204-block 15d backlog surfaced for the 11th consecutive run and still growing (Tom decision needed); MONITOR-423's starvation trigger likely still met (15c to confirm); and NEW — 15d's own re-check schedule was found broken in two ways and repaired, with the residual risk that dates now advance whether or not anything consumes them.** Queue state current as of 2026-08-02.
+
+---
+
+---
+
+MONITOR-500:
+  Date entered: 2026-08-03
+  Source item: PRESUMPTION-636 (14b, from ASSUMPTION-657)
+  Disposition record: DISPOSITION-586
+  Statement under monitoring: That presence in a register implies tracking — i.e. that an
+    item listed in monitor_queue.md is in fact carried by a live search request in
+    for_lit_search.md.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: NO-SUPPORT-FOUND (None) — secondary literature clause only
+  15b: CHALLENGED (Moderate-Strong) — orphan/stale record and data-decay literature;
+    consensus remedy is governance with a named owner and freshness SLA, which is the
+    structure 14b found absent (audit assigned to a role with no file in wiki/agents/)
+  Why MONITOR and not REVISE: item is [QUEUED-EMPIRICAL]. Per ASSUMPTION-519 / PREMISE-124
+    the decisive test is an in-house join over this vault, not a literature search, and no
+    literature can settle a question about local contents. Dispositioning on the secondary
+    clause would commit the exact error this batch is about — accepting a proxy in place of
+    an available measurement.
+  What would change the disposition — SINGLE, CHEAP, TERMINATING:
+    Join MONITOR-001..344 against for_lit_search.md blocks; count entries with no live
+    search request. 15d's own estimate is ~80 of 344.
+      · material dead-entry count -> REVISE, with the measured number as its basis
+      · negligible -> INCORPORATE, with the join as evidence
+    One command ends this item either way. It is OWED and was NOT run on 2026-08-03.
+  Monitoring cadence: Weekly | Next 15d check: 2026-08-10
+  Priority: High — the join is cheap, is owed, and is blocking a disposition.
+  Cycle: 0
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: MONITORING

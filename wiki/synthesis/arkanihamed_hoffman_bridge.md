@@ -24,3 +24,16 @@
 **Synthesis claim:** Both programs bet that spacetime falls out of a *combinatorial-order* primitive rather than a dynamical one, and both lean on positivity. The live question is whether the trace partial order is a genuine cousin of positive-geometry orderings or merely shares the vocabulary.
 
 **Open question:** Do any of the whitepaper's eight falsifiable conjectures coincide with, contradict, or stay orthogonal to positive-geometry results for the same observables — the one comparison that would make this a real rivalry rather than a metaphor?
+
+
+### 2026-08-02 — Does the physics leg carry the weight Hoffman puts on it?
+
+*Sewing Agent, 2026-08-02.* **Orphaned page:** `inbox/proposals/pending/2026-07-28_hoffman_spacetime-headset-essay.md` (PROP-2026-07-28-002).
+
+The Trace Institute lists an unpublished 2025 single-author Hoffman essay, "Consciousness And Its Spacetime Headset," described as arguing that spacetime is a headset rather than fundamental and that "physics, evolution, and the trace logic on conscious agents all point past it." The physics leg is Arkani-Hamed's — the amplituhedron and positive-geometry results that remove locality and unitarity from the formalism of scattering amplitudes.
+
+**Synthesis claim, and it is a caution.** Positive geometry establishes that amplitudes can be computed from a structure in which spacetime locality and unitarity are not inputs. It does not establish that spacetime is *observer-relative*, and nothing in the amplituhedron program says anything about consciousness. Hoffman's use of the physics leg is therefore load-bearing only for the negative claim (spacetime is not fundamental) and supplies no support for the positive one (what replaces spacetime is a network of conscious agents). If the essay presents the three routes as mutually reinforcing, this is the leg most likely to be doing less work than it appears to.
+
+**Which sharpens the proposal's own hypothesis usefully.** PRS-CANDIDATE-01 asks whether the three routes are three independent confirmations or one argument in three costumes. The physics leg suggests a third possibility the proposal does not consider: the routes may be independent but *unequal in scope* — each licensing the shared negative and only one (trace logic) licensing the positive. That would make the convergence real but much weaker than advertised, which is a more interesting finding than either of the two the proposal anticipates.
+
+**Open question the wiki cannot yet answer.** Would Arkani-Hamed accept any consciousness-first reading of positive geometry? Nothing in his corpus addresses it, and his own July output (PROP-2026-07-31-002, the flavor-texture paper) runs in the opposite methodological direction — combinatorics disciplined by measured data. The wiki has no statement from him on whether the program is being fairly cited by Hoffman, and it should not manufacture one.

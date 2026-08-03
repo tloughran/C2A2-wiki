@@ -65,3 +65,14 @@ Carroll's MWI and Hoffman's QIT make a single shared claim — that the measurem
 **Synthesis claim:** Both programs derive spacetime from a more primitive structure and both now stake falsifiable physics claims — so they are commensurable on Carroll's own Bayesian-confirmation terms (cf. CROSS-018). The disagreement is not physics-vs-mysticism but *which primitive* (a Hilbert-space vector vs. a Markov kernel's trace order) earns the derivation.
 
 **Open question:** Do Carroll's Wheeler-DeWitt/Page-Wootters recovery of time and Hoffman's trace-induced dynamics make any *divergent, testable* prediction about emergent spacetime — or are they, at the level of predictions, the same theory under two metaphysical glosses?
+
+
+### 2026-08-02 — Divergence atop agreement: the strongest form yet of the spacetime disagreement
+
+*Sewing Agent, 2026-08-02.* **Orphaned page:** `inbox/proposals/pending/2026-07-28_hoffman_spacetime-headset-essay.md` (PROP-2026-07-28-002).
+
+**Synthesis claim.** The Hoffman essay's existence — a single document running three routes to "spacetime is not fundamental" — puts the Carroll↔Hoffman relation into its cleanest form. The two traditions agree on the negative claim as fully as any two traditions in the network agree on anything, and disagree completely about what replaces it: for Carroll, spacetime is emergent from quantum entanglement structure while reality remains observer-independent; for Hoffman, spacetime is an observer-relative interface artifact and there is no observer-independent reality to be emergent from. Shared negative, contradictory positive, no shared vocabulary for the positive. That is a well-formed inter-tradition study candidate and does not depend on obtaining the essay text.
+
+**Why the shape is worth naming.** Most of the wiki's inter-tradition contacts are either convergences (both sides pushing the same direction from different premises) or flat conflicts (incompatible claims about the same thing). This is a third shape, and the more instructive one: agreement on what is being *given up* with no agreement on what is being *kept*. It is the situation in which "post-spacetime" functions as a coalition label rather than a research program — which is precisely the criticism this file's earlier Carroll↔Wolfram entry levels at the hypergraph program, arriving here from a different direction.
+
+**Open question the wiki cannot yet answer.** Is there any observation that would distinguish "emergent from entanglement, observer-independent" from "observer-relative interface"? Both accounts predict that spacetime looks fundamental to us and is not. The wiki has no candidate discriminating observable, and the Hoffman side has an extra difficulty: Fitness-Beats-Truth implies our observations are not tuned to disclose the answer, which makes the demand for a discriminating observation harder to satisfy from inside his own framework.

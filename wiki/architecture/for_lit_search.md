@@ -14365,3 +14365,735 @@ ITEM: PRESUMPTION-575 — [QUEUED] [SEARCHED-15a: 2026-07-29] [SEARCHED-15b: 202
 #     misattribution among these three would invalidate a premise, not merely a caveat.
 #   - The PRESUMPTION-611 sample (~40 of 209, two classifiers) was NOT run — no authorised runner.
 #   - PRESUMPTION-587's token decomposition, specified 07-29, unrun on day 4.
+
+################################################################################
+# 2026-08-01 EOD INTAKE — Agents 14a / 14b
+# Autonomous day #27. 24 ASSUMPTIONs (606..624 -> now 625..648) and 15 PRESUMPTIONs
+# (616..630) produced this run. Routing: 7 presumptions QUEUED to 15a/15b; 8 tagged
+# GOVERNED-CANDIDATE -> IN-HOUSE; all 24 ASSUMPTIONs routed IN-HOUSE except
+# ASSUMPTION-636, flagged OBJECT-LEVEL (belongs to the tradition agents / pattern
+# detector, not to the architectural literature search).
+################################################################################
+
+PRESUMPTION-616 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> INCORPORATE -> PREMISE-138 (scope extension of PREMISE-131: in-channel repetition is not a remedy, obligation-transfer clause folded in from 15b; VERIFICATION CORRECTED both directions' under-stating Cochrane statistic - weighted 6.2% CI 4.1-8.2, not median 2.7%)]
+  Claim to test: whether a monitoring or diagnostic layer that reports it has no effector can be
+  remediated by further reports; whether self-reported closed-loop failures in alerting systems are
+  resolved by escalation within the same channel. Literature: alert fatigue, warning effectiveness,
+  organisational escalation design, clinical decision-support override rates.
+  Risk if wrong: High. Origin item: ASSUMPTION-627 / SYSTEMIC-RISK-FLAG_2026-08-01.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from the mismatch between the flag's diagnosis and its own delivery
+      mechanism · Current status: UNTESTED
+
+PRESUMPTION-617 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> REVISE -> REVISE-260 (convergent narrowed position available but NOT minted: deciding whether PREMISE-136/137 stand is a register-state decision taken under the very deviation at issue; PREMISE-096 bars it; three options to Tom, no default)]
+  Claim to test: whether a result produced under an acknowledged and disclosed protocol deviation
+  should carry the same status as one produced under protocol; whether disclosure alone discharges
+  the deviation. Literature: pre-registration deviation reporting, protocol-violation handling in
+  trials, the status of results from non-independent verification.
+  Risk if wrong: High (PREMISE-136 and PREMISE-137 both minted under the lapse).
+  Origin item: ASSUMPTION-634. Related: PREMISE-096.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a maximally candid disclosure sitting beside an unmodified
+      register write · Current status: UNTESTED
+
+PRESUMPTION-618 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> MONITOR (HIGH) -> MONITOR-498 (item splits: base-rate half GOVERNED by PREMISE-103, uncontested, Walters & Wilder VERIFIED; floor-efficacy half UNTESTED IN BOTH DIRECTIONS - no interventional evidence located either way)]
+  Claim to test: whether citation verification should have a floor rather than a floating rate;
+  base rates of fabricated or misattributed references in AI-assisted evidence synthesis; whether
+  verification-rate floors reduce downstream error. Series to explain: 15/45 -> 4/40 -> 0/44.
+  Load-bearing unverified: Kim et al. 2026 Stat Med 10.1002/sim.70359; Barr et al. 2015 IEEE TSE;
+  van der Vet & Nijveen 2016 RIPR 1:3.
+  Risk if wrong: High. Origin item: ASSUMPTION-634.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a monotonic three-point decline reported without any threshold
+    · Current status: UNTESTED
+
+PRESUMPTION-621 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> INCORPORATE -> PREMISE-139 (documented check is not evidence the check ran; Berdahl 2019 38.5%/53.2% corroboration VERIFIED; 15b's harm-conversion ceiling 1.2-2.6% folded in as load-bearing scope guard; local instance verified not inferred)]
+  Claim to test: copy-forward error — whether assertions in logs propagate by template rather than
+  by measurement, and at what rate. Literature: copy-forward/copy-paste error in clinical
+  documentation (where the phenomenon is named and quantified), audit-trail integrity, whether
+  structured templates raise or lower fidelity of recorded checks.
+  Risk if wrong: High — this layer's own method (reading subsystems through their reports) has no
+  detector for it, and this register was demonstrably contaminated (ASSUMPTION-621, 07-31).
+  Origin item: ASSUMPTION-639.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from an explicit near-miss disclosure, with this register's own
+      contamination measured · Current status: UNTESTED
+
+PRESUMPTION-623 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> REVISE -> REVISE-261 clause (1) (GOVERNED by PREMISE-131, no duplicate premise minted; promotion rule to Tom; VERIFICATION FOUND 15b's decisive 27.1%/100.0% contrast UNLOCATABLE - recorded unverified and not relied on)]
+  Claim to test: whether documented warnings, memory notes and operational rules reduce recurrence
+  absent an executable check; administrative versus engineering controls. Evidence in hand: three
+  recorded recurrences of one trap against a note written to prevent it. Literature: checklist and
+  guideline adherence, forcing functions, human-factors hierarchy of controls, lessons-learned
+  repositories and recurrence rates.
+  Risk if wrong: High — prose remedies are the network's dominant remedy type (see also
+  PRESUMPTION-616 at the register scale). Origin item: ASSUMPTION-643.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a self-diagnosed recurrence whose remedy instantiates the
+      diagnosed class · Current status: UNTESTED
+
+PRESUMPTION-624 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> INCORPORATE -> PREMISE-140 (15b's reframing IS the premise: channel-naming rule + streak-framing bar; 15a returned NO-SUPPORT-FOUND for the practice, i.e. support arriving as an absence in the FOR direction; extends PREMISE-124(b))]
+  Claim to test: whether an activity metric computed from one observation channel can support
+  claims about activity in general; observation-channel bias in self-monitoring systems. Concrete
+  instance: 27 consecutive "autonomous days" computed from Cowork transcripts and `wiki/` mtimes,
+  against a same-day report that the human rewrote 8 synthesis files in an unmounted corpus.
+  Risk if wrong: Medium-High — the autonomy count is load-bearing in the systemic-risk flag's
+  central inference and in this layer's daily narrative. Origin item: ASSUMPTION-625 / -640.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a single incidental sentence contradicting a 27-day headline
+    · Current status: UNTESTED
+
+PRESUMPTION-628 [QUEUED] [SEARCHED-15a: 2026-08-02] [SEARCHED-15b: 2026-08-02] [DISPOSITIONED-15c: 2026-08-02 -> MONITOR (HIGH) -> MONITOR-499 + REVISE-261 clause (2) (bound is a LOWER bound, optimistically biased under positive source dependence, undefined over zero-capture strata; PREMISE-124(a)'s NAMED REMEDY shown conditionally unsound - amendment requested, premise not withdrawn)]
+  Claim to test: coverage and recall estimation for incomplete search — whether a disclosed
+  retrieval blind spot can be converted into a bound on what was missed. Literature:
+  capture-recapture for search completeness, database-coverage studies in systematic review,
+  recall estimation for web crawlers.
+  Risk if wrong: Medium-High — PRS yield per tradition would measure retrievability rather than
+  productivity. Origin item: ASSUMPTION-637.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a blind-spot disclosure sitting beside a world-shaped yield claim
+    · Current status: UNTESTED
+
+# ---------------------------------------------------------------------------
+# GOVERNED-CANDIDATE -> IN-HOUSE (8): PRESUMPTION-619 (PREMISE-066, scope guard amended today),
+# PRESUMPTION-620 (PREMISE-137 — minted TODAY from PRESUMPTION-609, i.e. a presumption pre-empted
+# by a premise derived from its own predecessor; first case of this shape in the register),
+# PRESUMPTION-622 (PREMISE-104), PRESUMPTION-625 (PREMISE-096), PRESUMPTION-626 (PREMISE-110,
+# which names the scheduler watchdog explicitly; REVISE-255 already open against it),
+# PRESUMPTION-627 (PREMISE-104), PRESUMPTION-629 (MONITOR-489 / OPEN-112),
+# PRESUMPTION-630 (PREMISE-131 / PREMISE-104).
+#
+# IN-HOUSE ASSUMPTIONs (24): ASSUMPTION-625..648. ASSUMPTION-636 (Wolfram's plurality-of-observers
+# account of objective reality) is flagged OBJECT-LEVEL: it is a live question for the tradition
+# agents and the pattern detector — no CROSS item currently holds it and the specialist recommends
+# opening one — and is NOT an architectural literature item.
+#
+# NOTE ON THE PRIOR INTAKE: the 07-31 six-item batch (PRESUMPTION-601, -602, -604, -609, -611,
+# -615) was searched and dispositioned in full on 08-01 as DISPOSITION-569..575. Two of this
+# layer's own presumptions became PREMISE-136 and PREMISE-137; one (PRESUMPTION-601) had its
+# governing remedy REFUTED. Three complete 14b -> 15a/15b/15c -> 14a loops closed in one day, and
+# for the first time one of them reversed a fix this layer had recorded approvingly.
+#
+# BACKLOG UNCHANGED, stated rather than omitted: the ~189-item literature backlog persists (153
+# 15d re-triggers with no 15a/15b tag + the 26-item legacy cohort ASSUMPTION-492..511 /
+# PRESUMPTION-514..532 + others). 26th consecutive day of zero drain on the 15d backlog. The bulk
+# retag of the legacy cohort still needs Tom's authorisation and was NOT performed — EIGHTH
+# consecutive run counting this one.
+#
+# FAIL-LOUD (Rule 6 / Rule 12): this run exceeded the 4,000-token per-task budget, and it is the
+# seventh entry in this file's history to say so. Mitigations applied and disclosed: no multi-MB
+# register read whole — tails, targeted greps, sed ranges and counts only; all register writes are
+# shell heredoc appends; eleven session transcripts read at message-tail depth rather than in full.
+# Backups written: assumptions.md, presumptions.md, for_lit_search.md, open_questions.md,
+# decisions.md -> *.bak.20260801-pre-14eod.
+# NOT DONE, stated rather than omitted:
+#   - The 26-item legacy bulk retag (unauthorised, eighth run).
+#   - WATCH-002 / WATCH-003 not re-checked (due 08-04, outside remit).
+#   - decisions.md and open_questions.md deliberately unmodified — no new DECISION or OPEN arose.
+#   - The c282-wiki-agent-daily-run was STILL EXECUTING when this run completed; its outputs
+#     (master narrative, any Phase 1 ingest, counter lines) are therefore NOT represented in
+#     tonight's assumptions, presumptions or metrics. This is a stated coverage gap, not an absence
+#     of activity, and it is the third consecutive night on which a task was observed running here.
+#   - PRESUMPTION-587's token decomposition, specified 07-29, unrun on day 4.
+
+# ================================================================================
+# ---- 2026-08-02 · 15a / 15b / 15c pipeline run ----
+# ================================================================================
+# All 7 items of the 2026-08-01 EOD intake (PRESUMPTION-616, -617, -618, -621, -623, -624, -628)
+# searched in both directions and dispositioned. 14 result files written (7 for/, 7 against/) plus
+# one SYSTEMIC-RISK-FLAG file (15b, Critical). Registers: DISPOSITION-576..582
+# (lit_search_returns.md); PREMISE-138, -139, -140 (validated_premises.md); MONITOR-498, -499
+# (monitor_queue.md); REVISE-260, -261 (revision_flags.md).
+#
+# INDEPENDENCE — CHANGED THIS RUN, AND STATED AS A CHANGE RATHER THAN AN IMPROVEMENT: 15a and 15b
+# were run as SEPARATE AGENT INSTANCES WITH DISJOINT CONTEXTS, concurrently, neither able to read
+# the other's output. This is strictly stronger than the same-instance sequencing discipline used on
+# 07-31 and 08-01. It is still NOT independence in PREMISE-120's sense — same model, same corpus,
+# same orchestrator — and this run produced DIRECT EVIDENCE that context separation does not buy
+# model-layer independence: both directions, in disjoint contexts, independently selected the SAME
+# under-stating summary statistic from the same Cochrane review (median 2.7% rather than the
+# multiplicity-adjusted weighted 6.2%, 95% CI 4.1-8.2). A correlated error across two contextually
+# separated searches is a measurement, not an anecdote, and it is the most informative thing this
+# run learned about its own instrument. The three-arm dependence measurement owed to MONITOR-490
+# instance A is unrun for a 26th day.
+# CROSS-DIRECTION SOURCE OVERLAP occurred on TWO of seven pairs (616/623 Cochrane CD000259, cited by
+# 15b on one item and 15a on the other; 621 the ~50.1% ECRI duplication figure) and is disclosed per
+# PREMISE-120 in each disposition. No premise clause rests on a shared source.
+#
+# CITATION VERIFICATION RESUMED, AND IT CHANGED TWO OUTCOMES. Series: 15/45 (07-30) -> 4/40 (07-31)
+# -> 0/44 (08-01) -> 5 load-bearing citations checked against primary venue (08-02). Results:
+#   VERIFIED: Berdahl et al. 2019 JAMA Netw Open 2(9) - 38.5% ROS / 53.2% PE corroboration, exact.
+#   VERIFIED: Walters & Wilder 2023 Sci Rep 13:14045 - 55%/18% fabricated, 43%/24% substantive error.
+#     (15a paraphrased the lower bound as 15%; the source says 18%. Minor, corrected in the record.)
+#   VERIFIED with a MATERIAL CORRECTION: Cochrane CD000259 - both directions quoted only the median
+#     (2.7%, IQR incl. 0); the same review's weighted meta-analysis gives 6.2% (95% CI 4.1-8.2).
+#     PREMISE-138 was minted on the corrected figure. See DISPOSITION-576.
+#   VERIFIED in mechanism only: positive source dependence causes capture-recapture to UNDERESTIMATE.
+#     15b's specific ~28% magnitude (2024 JRSS-A) NOT confirmed and NOT relied on. DISPOSITION-582.
+#   NOT LOCATABLE: 15b's 27.1%-vs-100.0% forcing-function contrast (Joint Commission JQPS 2023).
+#     Three targeted searches failed. Recorded UNVERIFIED and NOT relied on. DISPOSITION-580.
+# This is the first run in which the verification pass altered dispositions rather than only adding
+# a caveat. Recorded as a fact about this run, NOT offered as evidence that the practice works -
+# PRESUMPTION-618 is precisely the open question of whether verification floors reduce error, and
+# MONITOR-498 records that neither direction could find evidence either way.
+#
+# 3 INCORPORATE of 7 (07-29 1/8; 07-30 0/4; 07-31 0/3; 08-01 2/6; 08-02 3/7). Reported as a count
+# with its denominator and NOT offered as evidence of rigour, per DISPOSITION-552. All three are
+# convergent-narrowed forms in which 15b's challenge is FOLDED IN as a load-bearing clause rather
+# than outweighed - and on PREMISE-140, 15b's reframing IS the premise, the item's own statement
+# having been set aside. None of the three says what its source item said.
+#
+# FOURTH CONSECUTIVE RUN in which the register's own state rather than the evidence determined an
+# outcome (07-30 unratified PREMISE-114; 07-31 under-specified PREMISE-110; 08-01 REVISE-254's gate;
+# 08-02 PREMISE-096 on PRESUMPTION-617). Two of this run's seven items were declined for
+# register-state reasons (617, 623 - the latter for prior governance by PREMISE-131, which is the
+# pre-check working as intended rather than a stall). REVISE-259's question is unanswered on its
+# second run; under PREMISE-131 and now PREMISE-138 clause (2), this footer repeating the
+# observation is itself in-channel repetition with no effector, and PREMISE-138 was minted today
+# saying that does not work. The flag needs to reach Tom through a channel other than this file.
+#
+# SYSTEMIC-RISK-FLAG (15b, CRITICAL - escalated from High on 08-01): all seven items share one root -
+# the RECORD of a control is being treated as the control, and the system's single channel is being
+# treated as an independent witness to itself. Two clusters: (A) documentation substituting for
+# execution (616, 621, 623); (B) self-observation substituting for independent verification (617,
+# 618, 624, 628). Rated Critical because the failure is silent in every instance - nothing errors,
+# every artifact is well-formed, every report is accurate about its own channel, and the divergence
+# between recorded and actual state grows monotonically with the volume of correctly produced
+# records. Full text: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-02.md
+#
+# BACKLOG UNCHANGED, stated rather than omitted: ~189 literature items in this file remain
+# unsearched (153 15d re-triggers with no 15a/15b tag + the 26-item legacy cohort ASSUMPTION-492..511
+# / PRESUMPTION-514..532 + others). 26th consecutive day of zero drain on the 15d backlog. The bulk
+# retag of the legacy cohort to [MISROUTED-INTERNAL-EMPIRICAL] still needs Tom's authorisation and
+# was NOT performed - NINTH consecutive run. 32 [QUEUED-EMPIRICAL] items are correctly out of scope
+# for 15a/15b and are not counted in the backlog figure. The 8 GOVERNED-CANDIDATE presumptions
+# (PRESUMPTION-619, -620, -622, -625, -626, -627, -629, -630) and the 24 ASSUMPTIONs (625..648) were
+# routed IN-HOUSE by 14b and are correctly not searched here.
+#
+# FAIL-LOUD (Rule 6 / Rule 12): this run exceeded the 4,000-token per-task budget - the eighth entry
+# in this file's history to say so. Mitigations applied and disclosed: for_lit_search.md,
+# lit_search_returns.md, monitor_queue.md and revision_flags.md were never read whole - tails,
+# targeted greps and sed ranges only; validated_premises.md read only via targeted extraction of
+# twelve Statement lines (PREMISE-096/100/103/104/110/120/124/127/131/134/136/137) for the
+# consistency pre-check. The two search directions were delegated to subagents, which kept their
+# ~214k tokens of search transcript out of the orchestrator's context entirely - this is the main
+# reason the run fit at all, and it is also what produced the stronger independence condition. All
+# register writes are shell heredoc appends. The seven queue tags were applied by an exact-match
+# script that aborts on any non-unique match. Backups written: for_lit_search.md,
+# lit_search_returns.md, monitor_queue.md, revision_flags.md, validated_premises.md ->
+# *.bak.20260802-pre-15pipeline.
+# NOT DONE, stated rather than omitted:
+#   - VERIFICATION INDEPENDENCE: the 15c disposition step and the citation-verification pass were
+#     both performed by the ORCHESTRATING instance - the same instance that specified both searches.
+#     This is a THIRD consecutive run with the PREMISE-096 deviation, partially mitigated (15a/15b
+#     genuinely separate) and NOT cured. The three convergence claims carried by PREMISE-138, -139
+#     and -140 have been checked by nothing but the party making them. That is the most important
+#     gap in this footer, and PRESUMPTION-617 -> REVISE-260 exists because of it.
+#   - 39 of ~44 citations in this batch remain unverified. The five checked were selected as
+#     load-bearing by the same instance that would benefit from them checking out.
+#   - The PRESUMPTION-611 sample (~40 of 209, two classifiers) NOT run - no authorised runner, day 2.
+#   - PRESUMPTION-587's token decomposition, specified 07-29, unrun on day 5.
+#   - No 15d backlog items were consumed. This run processed only the freshest cohort, which is the
+#     same choice the previous 25 runs made and is the mechanism by which the backlog persists.
+
+---
+## 2026-08-02 RUN — 15d Periodic Monitor first re-trigger cohort (30) — MONITOR-453..482, cycle 0 -> 1
+
+*15d weekly run (2026-08-02 IS the first Sunday of August, so the monthly cycle also fires; see the RE-CHECK section below). These 30 items completed exactly one evidence pass (at intake, 2026-07-20..07-26; all DISPOSITIONED-15c -> MONITOR) and reached their first 15d next-check on 2026-07-27..08-02. First weekly re-trigger, cycle 0 -> 1. No standing RE-TRIGGER block existed for any of the 30 source items (verified block-by-block against this file this run), so these are genuine first re-triggers, not duplicates. 15d re-triggers only; no evidence evaluated. Cadence Weekly; Last checked 2026-08-02; Next 15d check 2026-08-09.*
+
+*ROUTING NOTE (per the 2026-07-25 INTERNAL-EMPIRICAL convention and MONITOR-475): 22 of these 30 are QUEUED-EMPIRICAL — their decisive discriminating test named by 15c is an in-house measurement of this system, not a literature search. They are re-triggered with the empirical tag so 15a/15b do not burn low-yield literature cycles on them; where the intake named a literature angle it remains available as a secondary clause. 8 are literature items (A-484, A-496, A-503, A-504, A-505, P-525, A-514, P-539). The empirical/literature split is 15d's routing call on 15c's stated conversion condition, NOT an evidence judgement.*
+
+[ASSUMPTION] ASSUMPTION-475: (see MONITOR-453 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: High
+  Notes: First 15d weekly re-trigger for MONITOR-453 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-476: (see MONITOR-454 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: High
+  Notes: First 15d weekly re-trigger for MONITOR-454 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-480: (see MONITOR-455 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium-High
+  Notes: First 15d weekly re-trigger for MONITOR-455 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-501: (see MONITOR-456 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium-High
+  Notes: First 15d weekly re-trigger for MONITOR-456 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-504: (see MONITOR-457 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: (carried from intake; not restated in the intake block)
+  Notes: First 15d weekly re-trigger for MONITOR-457 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-482: (see MONITOR-458 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium-High
+  Notes: First 15d weekly re-trigger for MONITOR-458 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-484: (see MONITOR-459 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: (carried from intake; not restated in the intake block)
+  Notes: First 15d weekly re-trigger for MONITOR-459 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-488: (see MONITOR-460 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: (carried from intake; not restated in the intake block)
+  Notes: First 15d weekly re-trigger for MONITOR-460 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-509: (see MONITOR-461 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-461 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-513: (see MONITOR-462 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium-High
+  Notes: First 15d weekly re-trigger for MONITOR-462 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-496: (see MONITOR-463 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-463 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-499: (see MONITOR-464 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: HIGH
+  Notes: First 15d weekly re-trigger for MONITOR-464 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-521: (see MONITOR-465 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: HIGH
+  Notes: First 15d weekly re-trigger for MONITOR-465 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-503: (see MONITOR-466 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-466 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-504: (see MONITOR-467 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-467 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-505: (see MONITOR-468 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-468 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-520: (see MONITOR-469 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-469 (cycle 0 -> 1). subordinate to PREMISE-124. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-525: (see MONITOR-470 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-470 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-531: (see MONITOR-471 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: HIGH
+  Notes: First 15d weekly re-trigger for MONITOR-471 (cycle 0 -> 1). subordinate to PREMISE-119. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-513: (see MONITOR-472 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: High
+  Notes: First 15d weekly re-trigger for MONITOR-472 (cycle 0 -> 1). subordinate to PREMISE-123. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[ASSUMPTION] ASSUMPTION-514: (see MONITOR-473 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: High
+  Notes: First 15d weekly re-trigger for MONITOR-473 (cycle 0 -> 1). subordinate to PREMISE-124. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-535: (see MONITOR-474 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: HIGH
+  Notes: First 15d weekly re-trigger for MONITOR-474 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-537: (see MONITOR-475 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-475 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-538: (see MONITOR-476 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: HIGH
+  Notes: First 15d weekly re-trigger for MONITOR-476 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-539: (see MONITOR-477 in monitor_queue.md for full statement)
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-477 (cycle 0 -> 1). subordinate to PREMISE-105 & PREMISE-123. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: literature. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-540: (see MONITOR-478 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-478 (cycle 0 -> 1). subordinate to REVISE-245. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-543: (see MONITOR-479 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-479 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-544: (see MONITOR-480 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-480 (cycle 0 -> 1). subordinate to REVISE-246. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-547: (see MONITOR-481 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-481 (cycle 0 -> 1). subordinate to PREMISE-124. Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+[PRESUMPTION] PRESUMPTION-548: (see MONITOR-482 in monitor_queue.md for full statement)
+  Status: [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-02, cycle 1]
+  Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
+  Cycle: cycle 1; Cadence: Weekly; Next 15d check: 2026-08-09
+  Priority: Medium
+  Notes: First 15d weekly re-trigger for MONITOR-482 (cycle 0 -> 1). Intake disposition (2026-07-20..07-26) remains the most recent evidence pass. Search angle: empirical (in-house measurement decisive); literature clause secondary. 15d re-trigger only; no evidence evaluated this cycle.
+
+
+---
+## 2026-08-02 RUN — 15d Periodic Monitor MONTHLY RE-CHECK cohort (19 INCORPORATED premises)
+
+*2026-08-02 is the FIRST Sunday of August, so the monthly cycle fires. These 19 ACTIVE premises in validated_premises.md had a re_check_due date on or before 2026-08-02. Per the 15d brief they are re-queued for a 15a/15b pass and routed back to 15c for re-confirmation or REVISE. 15d does not evaluate the evidence and does not change any premise's status; the Status field of every one of these premises is left at ACTIVE pending 15c.*
+
+*12 quarterly (PREMISE-001, -003, -005, -006, -007, -008, -009, -010, -011, -012, -013, -014) were overdue by 5 to 20 days — they were missed by the 2026-07-05 monthly run, which processed only the three monthly-cadence premises then dated. New re_check_due 2026-11-01. 7 monthly (PREMISE-002, -004, -025, -070, -071, -072, -089) — new re_check_due 2026-09-06.*
+
+*DATED-GAP REPAIR, recorded because it is a register change 15d made on its own initiative: PREMISE-075..088 and PREMISE-090..094 (19 premises) carried "Re-check due: Quarterly (next 15d review)" with NO date, which means a date-driven monitor could never detect them as due — they would have sat unre-checked indefinitely. 15d assigned each a concrete date of validation-date + 3 months (2026-09-25 .. 2026-10-03) and annotated the change in each entry. PREMISE-089 was the one Monthly-cadence entry in that undated set; on its validation date (2026-06-30) it was due 2026-07-30 and is therefore included in this run's re-check cohort. No premise text, status, or cadence was altered.*
+
+[PREMISE] PREMISE-001: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-003: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-005: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-006: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-007: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-008: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-009: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-010: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-011: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-012: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-013: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-014: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Quarterly; Next re_check_due: 2026-11-01
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Quarterly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-002: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-004: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-025: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-070: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-071: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-072: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+[PREMISE] PREMISE-089: (see validated_premises.md for the validated statement, evidence and caveats)
+  Status: [QUEUED] [RE-CHECK by 15d: 2026-08-02]
+  Provenance: INCORPORATED premise, register-maintained by 15c; re-check scheduled and triggered by 15d
+  Cadence: Monthly; Next re_check_due: 2026-09-06
+  Priority: Medium (scheduled re-check, not a contested item)
+  Notes: Scheduled Monthly re-check of an ACTIVE INCORPORATED premise. Question for 15a/15b: has anything published or observed since validation challenged this premise, and do its recorded caveats still hold? Return to 15c for re-confirmation (ACTIVE) or REVISE. Premise status left ACTIVE by 15d; 15d does not disposition.
+
+---
+
+# 2026-08-02 EOD INTAKE — Agents 14a / 14b
+
+Produced by the `c2a2-self-awareness-daily` run of 2026-08-02. 25 assumptions (ASSUMPTION-649..673)
+and 15 presumptions (PRESUMPTION-631..645). Routing: 7 presumptions [QUEUED] to 15a/15b; 8
+presumptions tagged [GOVERNED-CANDIDATE -> IN-HOUSE]; all 25 assumptions routed [IN-HOUSE], with
+ASSUMPTION-662 and ASSUMPTION-663 flagged OBJECT-LEVEL (claims about the world, not about pipeline
+mechanics — route to the master agent, not to 15a/15b).
+
+PRESUMPTION-631 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: PARTIALLY-SUPPORTED (Weak-Moderate) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-262
+  Claim to test: whether independence between reasoning agents is a property of context separation
+  or of the underlying model. Literature: correlated errors across instances of the same model
+  family; ensemble diversity and error decorrelation; whether prompt/context isolation reduces
+  shared-prior bias. Evidence in hand: two independently-instantiated agents with disjoint contexts
+  selected the same under-stating statistic from the same source, unprompted.
+  Risk if wrong: High — every independence claim in the pipeline, including the verification
+  protocol currently under repair (REVISE-260), is a claim about context arrangement.
+  Origin item: ASSUMPTION-651.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a result the run reported as unexpected · Current status: UNTESTED
+
+PRESUMPTION-632 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-263
+  Claim to test: whether withdrawing reliance on an unverifiable citation is equivalent to
+  withdrawing the citation. Literature: retraction and correction propagation; citation persistence
+  after source invalidation; the "correction does not travel" effect.
+  Risk if wrong: High — an unlocatable figure remains in the Critical flag's literature basis,
+  unmarked, while the argument it supported was re-based; downstream readers cannot tell.
+  Origin item: ASSUMPTION-652.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred by comparing the run report against the flag file it produced
+    · Current status: UNTESTED
+
+PRESUMPTION-635 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-264
+  Claim to test: whether re-queuing a monitored item constitutes progress on it, and whether queue
+  activity is a valid proxy for attention. Literature: backlog dynamics and aging metrics; work-item
+  queueing where arrival rate exceeds service rate; the distinction between touch counts and
+  completion counts in issue trackers.
+  Risk if wrong: High and scaling — 1,773 [QUEUED] tags against 26 consecutive days of zero drain;
+  if re-triggering is not progress, the register's growth is not backlog management.
+  Origin item: ASSUMPTION-656, ASSUMPTION-657.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a detailed processing report and a stated zero-consumption
+      figure appearing in the same register block · Current status: UNTESTED
+
+PRESUMPTION-636 [QUEUED-EMPIRICAL] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: NO-SUPPORT-FOUND (None, secondary clause) | 15b result: CHALLENGED (Moderate-Strong, NOT DECISIVE) | Disposition: MONITOR -> MONITOR-500
+  Claim to test: whether presence in a register implies tracking. Literature: dead-entry and
+  orphaned-record rates in long-lived issue registers; inventory shrinkage in write-mostly stores.
+  Decisive in-house test available and cheap: join MONITOR-001..344 against for_lit_search.md
+  blocks and count items with no live search request. 15d's own estimate is ~80.
+  Risk if wrong: High — the system's inventory of its open questions would be an overcount by an
+  unknown margin, and the items are indistinguishable in every published count.
+  Origin item: ASSUMPTION-657.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a disclosure that names the gap and assigns the audit to a role
+      absent from wiki/agents/ · Current status: UNTESTED
+
+PRESUMPTION-639 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-265
+  Claim to test: whether a terminal summary artifact is epistemically downstream of its sources or
+  is itself a source of error. Literature: information loss and distortion in summarisation chains;
+  hierarchical reporting distortion (the "telephone" / upward-reporting-bias literature);
+  whether summaries systematically simplify in a measurable direction.
+  Risk if wrong: High — six measured divergences in one document, all toward a simpler day; it is
+  the only artifact designed to reach the human and the only one in architecture/ with no
+  provenance header, verification section, or fail-loud footer.
+  Origin item: ASSUMPTION-672.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from six divergences measured against the registers, plus the
+      structural absence of any verification apparatus · Current status: UNTESTED
+
+PRESUMPTION-643 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-266
+  Claim to test: whether a high near-miss rate with a zero incident rate indicates a working
+  control. Literature: near-miss reporting as a predictor of incident rate; the safety literature's
+  position on recurrence caught by varying mechanisms; hierarchy-of-controls placement of
+  person-dependent catches. Note: this bears directly on the day's own SYSTEMIC-RISK-FLAG, whose
+  Cluster A cites the same hierarchy-of-controls sources — search should check whether the flag's
+  sources answer this item or merely neighbour it.
+  Risk if wrong: High — six recorded instances, six different accidental catch mechanisms, and the
+  named failure mode injects false defects into another subsystem's input.
+  Origin item: ASSUMPTION-668, ASSUMPTION-643.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from six instances with no repeating catch mechanism
+    · Current status: UNTESTED
+
+PRESUMPTION-645 [QUEUED] [SEARCHED-15a: 2026-08-03] [SEARCHED-15b: 2026-08-03] [DISPOSITIONED-15c: 2026-08-03]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-267
+  Claim to test: whether an audit trail can be trusted to be complete in the successful direction —
+  that a completed step implies a logged step. Literature: silent-failure rates in append-last
+  logging under fail-fast shell semantics; observability literature on log completeness and
+  missing-success detection; asymmetry between false-negative and false-positive logging failures.
+  Risk if wrong: High and unbounded — every autonomy count, streak figure and "Nth consecutive day"
+  claim in this register rests on log completeness in the successful direction. Same day produced
+  the inverse case (a task that ran and wrote where no check looked, ASSUMPTION-667); both were
+  found by accident.
+  Origin item: ASSUMPTION-670.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a disclosed seven-week log gap and generalised to the registers
+      that depend on log completeness · Current status: UNTESTED
+
+## Tagged [GOVERNED-CANDIDATE -> IN-HOUSE] (not queued to 15a/15b)
+
+PRESUMPTION-633 [IN-HOUSE] — governed by REVISE-261 / PREMISE-124. A remedy named in a premise
+  inherits that premise's validation. In-house test: enumerate ACTIVE premises with prescriptive
+  clauses; count how many had the prescription independently searched.
+PRESUMPTION-634 [IN-HOUSE] — governed by PREMISE-138 (minted 2026-08-02). Repetition of a systemic
+  flag raises action probability. First live instance of PREMISE-138, performed by the agent that
+  minted it, within hours.
+PRESUMPTION-637 [IN-HOUSE] — governed by PREMISE-137. A census reports a state of the vault rather
+  than of a moment; the 04:10 headline was false by 04:47 and published at 18:41.
+PRESUMPTION-638 [IN-HOUSE] — governed by REVISE-258 / MONITOR-489. Write-path ownership settles
+  authority; deference held in the write path and failed in the read path.
+PRESUMPTION-640 [IN-HOUSE] — governed by PREMISE-096. A recorded diagnosis is stable; two
+  incompatible root causes for one recurring failure on consecutive days, neither citing the other.
+PRESUMPTION-641 [IN-HOUSE] — governed by PREMISE-104. An environment limit is a property of the
+  task that hit it; the 45-second call cap rediscovered three times across two days.
+PRESUMPTION-642 [IN-HOUSE] — governed by PREMISE-110. "Fired but produced nothing" read as a claim
+  about production rather than about the check's path. Decisive table available today.
+PRESUMPTION-644 [IN-HOUSE] — governed by PREMISE-138 / PREMISE-104. A defect kept visible by
+  withholding a completion mark stays visible once recorded elsewhere. Independent confirmation of
+  the day's flag from a subsystem that had not read it.
+
+## Assumptions routed [IN-HOUSE]
+
+ASSUMPTION-649..673 [IN-HOUSE] — all re-measurable by direct command against this vault; no
+  literature search requested. TWO EXCEPTIONS FLAGGED OBJECT-LEVEL, for the master agent rather
+  than for 15a/15b:
+  · ASSUMPTION-662 [OBJECT-LEVEL] — the four-way convergence on the constitutive power of plurality
+    (Wolfram / Bettencourt-via-Carroll / Levin / Rohr), Bettencourt's independent naming of the
+    C2A2 founding metaphor, and the derived falsifiable self-test: do bridges and CROSS entries
+    accumulate superlinearly or linearly in the number of participating traditions? Plus the
+    uncosted warning that superlinearity carries pathologies at the same exponent as gains.
+    NO CROSS ENTRY COVERS THIS. Recommended for a master-agent CROSS entry.
+  · ASSUMPTION-663 [OBJECT-LEVEL] — two decidable cross-tradition comparisons opened: whether
+    Wolfram's input-compressing observer and Hoffman's conscious agent pick out the same object
+    (both definitions written down; extrinsic vs intrinsic individuation is the candidate
+    difference), and the Hawkins/Friston thalamus disagreement with its distinguishing prediction.

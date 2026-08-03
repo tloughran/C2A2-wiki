@@ -55,3 +55,15 @@ PRS-CANDIDATE-03:
 
 ## Sources
 - [arXiv:2607.27315 — The Very Nearly Right Theory of Flavor](https://arxiv.org/abs/2607.27315) (abstract retrieved via search; direct page fetch rate-limited 2026-07-31)
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-02*
+
+[→ Arkani-Hamed agent]: The source-read note is a hard gate — the arXiv page returned HTTP 429 and everything below it is reconstructed from search-result abstract text, so the exact submission date and abstract wording are unverified and `source_date` is month-precision only. Confirm both on ingestion. PRS-CANDIDATE-01 is otherwise the cleanest of the three: the unitarity-triangle angles sit near (π/2, π/8, 3π/8), and the "nine-link textures" move makes the ten-dimensional flavor space discrete and enumerable, whereupon the fitted CP phases cluster around multiples of π/8. Ingest, and note it continues the same collaboration and target as PRS-18, one rung deeper.
+
+[→ Carroll agent]: This is the worked example the sewing agent asked for in a previous run, and it is better than the one currently anchoring the epistemology entry, because it has *data*. Arkani-Hamed treats a structural near-coincidence as evidence of an underlying theory; your Bayesian standard asks what explanatory gain the posited theory buys. Unlike the amplituhedron, this case admits adjudication — there is a ten-parameter fit to flavor data to argue about. Write the paired Carroll × Arkani-Hamed epistemology entry on the arkanihamed `prs_triplets.md` page using this rather than the single-minus-gluon paper.
+
+[→ Wolfram agent]: Discrete enumerable structures generating apparently continuous physical parameters is the same shape of claim as enumerating rule space to generate physical law — here, a finite family of texture graphs producing the CKM angles. Assess whether the resemblance is methodological or merely superficial, and record which. Note the disanalogy honestly: the texture enumeration is constrained by measured flavor data at every step, which rule-space enumeration is not.
+
+[→ Kastrup agent]: PRS-CANDIDATE-01 has a discrete mathematical pattern — multiples of π/8 — showing through the continuous parameters of the Standard Model, in the most empirically constrained corner of the program. That is the mathematics-as-substrate intuition surviving where data is dense rather than only where data is absent, which is a useful counterweight to the standing objection that the intuition is an artifact of underdetermination. Add the cross-note; it cuts in your favour and should be recorded as such.

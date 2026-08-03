@@ -6550,3 +6550,218 @@ REVISE-259:
   Urgency: High
   NOT A CLAIM THAT THE FINDINGS ARE WRONG. Every item this run was searched in both directions and the evidence stands on its own. The claim is that the disposition step has no move available that changes the system, and that this has been true long enough to be a structural property rather than a run of bad luck.
   PROVENANCE: Origin 15b · Chain [15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-260:
+  Date flagged: 2026-08-02
+  Source item: PRESUMPTION-617 · Disposition record: DISPOSITION-577
+  Affected: PREMISE-136 and PREMISE-137 (both minted 2026-08-01); the verification-independence
+    convention generally; PREMISE-096, which is the standard that was deviated from.
+  Finding — THE LITERATURE DOES NOT SETTLE THIS, AND THAT IS THE POINT. Both directions returned
+    substantive evidence and they converge on a narrowed position that is NOT the item's:
+    15a (Moderate PARTIALLY-SUPPORTED): the mainstream methodological position is that transparently
+      disclosed AND JUSTIFIED deviations yield usable results — but every supporting source requires
+      the disclosure to be STRUCTURED and CO-LOCATED WITH THE RESULT, not filed elsewhere.
+    15b (Strong CHALLENGED): deviation is the norm, not the exception — 72% of preregistered studies
+      deviated and 68% had UNDISCLOSED deviations (Torka et al. 2025, J Occup Organ Psychol) — and
+      ICH GCP classes most protocol deviations as non-important. The counterfactual to a disclosed
+      deviation is an undisclosed one, which is strictly worse. Punishing disclosure selects for
+      concealment.
+  Convergent narrowed position, on which both directions agree: disclosure is NECESSARY and NOT
+    DISCHARGING. It does not restore protocol status; it makes the deviation classifiable. What
+    determines a deviating result's standing is a CLASSIFICATION of the deviation's importance,
+    recorded at the point of the result — not the mere fact that it was mentioned.
+  WHY THIS IS A REVISE AND NOT A PREMISE: the pipeline could mint the narrowed position above, and
+    it would be defensible. It would also be the pipeline grading its own homework, on the exact
+    question of whether its own homework counts. On 2026-07-31 and 2026-08-01 the verification pass
+    was run BY THE SAME INSTANCE that ran 15a/15b/15c — a disclosed deviation from PREMISE-096 — and
+    PREMISE-136 and PREMISE-137 were minted under it. Deciding whether those two premises stand is a
+    decision about register state made under the very condition at issue. It belongs to Tom.
+  Recommended action for Tom — one decision, three options, no default:
+    (1) LET THEM STAND. The deviation was disclosed, ICH-style classification would call it
+        non-important, and 15b's evidence says this is ordinary scientific practice.
+    (2) DOWNGRADE TO PROVISIONAL. Add a status value between ACTIVE and SUPERSEDED for premises
+        minted under a disclosed protocol deviation; PREMISE-136/137 take it until re-verified.
+    (3) RE-VERIFY. Have an independent instance (or Tom) re-run the disposition step for
+        DISPOSITION-573 and -575 only. Cheap — two items, both files on disk.
+    A standing rule is also needed, whichever option is taken: does this pipeline record a
+    deviation-importance classification alongside each result, per the convergent position above?
+  Urgency: High — the affected premises are 1 day old and PREMISE-137 is already being cited
+    (PRESUMPTION-620 was routed IN-HOUSE against it on 2026-08-01, i.e. it is already load-bearing).
+  NOTE ON THIS RUN'S OWN STANDING: 15a and 15b were run this time as SEPARATE AGENT INSTANCES with
+    DISJOINT CONTEXTS, which is a stronger independence condition than the sequencing discipline
+    used on 07-31 and 08-01. It is still not full independence — same model, same corpus, same
+    orchestrator — and the correlated citation-selection error recorded in PREMISE-138 is direct
+    evidence that context separation does not buy independence at the model layer. The 15c
+    disposition step and the verification pass were performed by the orchestrating instance, so the
+    07-31/08-01 deviation is NOT fully cured this run either. Stated rather than claimed as fixed.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-261:
+  Date flagged: 2026-08-02
+  Source items: PRESUMPTION-623 (primary) and PRESUMPTION-628 (second limb) · Disposition records:
+    DISPOSITION-580, DISPOSITION-582
+  Affected: PREMISE-131 (scope), PREMISE-124 clause (a) (remedy), and the standing convention that a
+    recurrence is answered by writing a note.
+  TWO REGISTER CHANGES ARE REQUESTED. Both are amendments to live premises, which this pipeline
+  should not make unilaterally.
+
+  (1) PROMOTION RULE, from PRESUMPTION-623.
+    NO NEW PREMISE MINTED — the item is prima facie GOVERNED BY PREMISE-131, which already ranks
+    warnings and administrative controls in the two least-effective tiers and directs that a cheap
+    engineering control be used instead. Minting a second premise saying the same thing would inflate
+    the register, and the pre-check is named here so its effect on yield stays measurable.
+    Evidence standing, stated honestly: 15a returned WEAK support (informational controls give a
+    median 2.7% absolute improvement, IQR including 0; 82% of root-cause-analysis recommendations are
+    weak/administrative and events recurred despite repeated RCAs). 15b returned a STRONG challenge
+    whose headline contrast — 27.1% documentation completeness versus 100.0% with a forcing function,
+    attributed to Joint Commission J Qual Patient Saf 2023 — COULD NOT BE VERIFIED at this run's
+    verification pass. Three targeted searches failed to locate the paper. That figure is therefore
+    NOT relied on and is recorded as unverified. The recommendation below rests on PREMISE-131's
+    already-validated basis and on 15a's weak-but-consistent support, NOT on the unverified contrast.
+    15b's fair counter is also recorded: three recurrences without a PRE-note baseline do not
+    establish that the note did nothing, and not every trap is mechanisable.
+    REQUESTED RULE: after the SECOND recorded recurrence of a trap against an existing written note,
+    a third note is not a permitted response — the item must either receive an executable blocking
+    check or be explicitly accepted as unmechanisable, with that acceptance recorded. Cheap, and it
+    converts a class of prose remedy into either an interlock or an honest admission.
+
+  (2) AMENDMENT TO PREMISE-124 CLAUSE (a), from PRESUMPTION-628.
+    PREMISE-124(a) prescribes capture-recapture or fault seeding as the remedy for treating a raw
+    defect CATCH COUNT as an estimate of defects PRESENT. This run's 15b search shows that prescribed
+    remedy is conditionally unsound IN THE REASSURING DIRECTION: positive dependence between
+    retrieval sources — the normal case — makes the estimator UNDERESTIMATE the population, and no
+    capture-recapture design can see a zero-capture stratum. The diagnosis in PREMISE-124 is
+    untouched; its named instrument needs two conditions attached.
+    REQUESTED AMENDMENT: append to PREMISE-124(a) — "capture-recapture yields a LOWER bound, biased
+    optimistically where the sources are positively dependent, and is undefined over strata no source
+    reaches; a capture-recapture estimate must state its dependence assumption and must not be
+    reported as an estimate of defects present without one."
+  Urgency: Medium-High. Neither change is time-critical, but (2) means a live premise currently
+    prescribes an instrument the pipeline now has evidence against, and leaving that uncorrected is
+    the exact failure mode PREMISE-124 exists to prevent.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+---
+
+## 2026-08-03 — 15c dispositions from the 2026-08-02 EOD intake (14b cohort)
+
+Six REVISE flags from one seven-item batch. Five of the six share the root named in
+SYSTEMIC-RISK-FLAG 2026-08-03 (third consecutive day): *the system reads its own record as
+an independent witness to itself.* They are filed separately because their remedies are
+separate and independently actionable; REVISE-262 is the one that would change the others'
+evidential status.
+
+REVISE-262 — PRESUMPTION-631: context separation is not independence
+  Source: PRESUMPTION-631 (14b, from ASSUMPTION-651) | Disposition: DISPOSITION-583
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak-Moderate) — prompt/role diversity does
+    reduce some error correlation. 15b CHALLENGED (Strong) — arXiv:2506.07962 measures 60%
+    agreement between models WHEN BOTH ERR, across different providers and architectures;
+    arXiv:2604.07650 finds shared pretraining/alignment induces entanglement that survives
+    architectural separation. Both directions locate independence in diversity of model,
+    seed or evidence pool; C2A2 varies none of these.
+  What is at risk: the 15a/15b split as an evidence-generating device; every judgement
+    keyed on cross-direction agreement; REVISE-260's verification protocol.
+  REQUESTED CHANGE: run one of the two search directions on a DIFFERENT MODEL. Interim, and
+    cheap: log conditional agreement between 15a and 15b on items later found wrong, and
+    publish it as the pipeline's independence statistic.
+  Urgency: High. Reflexive — this premise underwrites the register that contains it,
+    including the evidence for this flag.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-263 — PRESUMPTION-632: ceasing to rely on a citation is not withdrawing it
+  Source: PRESUMPTION-632 (14b, from ASSUMPTION-652) | Disposition: DISPOSITION-584
+  Evidence standing: 15a NO-SUPPORT-FOUND against a mature literature. 15b CHALLENGED
+    (Strong) — Hsiao & Schneider 2021 (QSS 2(4):1144): 722 of 13,252 post-retraction
+    citation contexts (5.4%) acknowledged the retraction. C2A2's downstream readers are
+    agents with no verification pass, so the propagation risk is higher than the published
+    case, not lower.
+  What is at risk: the literature basis of the current Critical flag, in which an
+    unlocatable figure remains unmarked while the argument was re-based.
+  REQUESTED CHANGE: convention — an unverifiable citation is ANNOTATED IN PLACE as
+    UNVERIFIABLE with date and reason. Never silently de-relied-upon. Annotation beats
+    removal: it preserves the audit trail of the error.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-264 — PRESUMPTION-635: re-queuing is not progress
+  Source: PRESUMPTION-635 (14b, from ASSUMPTION-656/657) | Disposition: DISPOSITION-585
+  Evidence standing: 15a NO-SUPPORT-FOUND — no standard backlog measure takes handling
+    events as an input. 15b CHALLENGED (Strong) — intake-to-throughput is the governing
+    metric; unbounded queues absorb backpressure instead of enforcing it, so re-triggering
+    raises arrival rate. System's own figures: 1,773 [QUEUED], 26 consecutive days of zero
+    drain.
+  What is at risk: every report presenting re-trigger cohorts as pipeline activity; 15d's
+    cadence design; the maturity narrative. The proxy is self-concealing — logs look
+    busiest exactly as the system falls furthest behind.
+  REQUESTED CHANGE: (a) publish intake-to-throughput ratio as a first-class daily figure —
+    one number, computable by command, not satisfiable by touching; (b) set a WIP bound so
+    backpressure is enforced; (c) separate "touched" from "advanced" in the tag vocabulary
+    so the two can never be summed.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-265 — PRESUMPTION-639: the daily summary is a source, not a reduction
+  Source: PRESUMPTION-639 (14b, from ASSUMPTION-672) | Disposition: DISPOSITION-587
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak) — faithfulness is achievable but only
+    with apparatus this artifact lacks. 15b CHALLENGED (Strong) — the MUM effect and the
+    upward-distortion literature predict that a report written for a principal distorts
+    with a DIRECTION; 14b measured six divergences, all toward a simpler day, which is what
+    rules out a random-noise account.
+  What is at risk: the human's picture of the system, hence every decision made on it. This
+    is the only human-facing artifact and the only file in architecture/ with no provenance
+    header, no verification section and no fail-loud footer.
+  REQUESTED CHANGE: (a) give the summary the same provenance header, verification section
+    and fail-loud footer as every other architecture/ artifact; (b) derive numeric claims
+    extractively from registers rather than restating them; (c) add a mandatory "what got
+    worse today" section — the standard structural counter to the MUM effect; (d) diff the
+    summary's figures against registers automatically and fail loud on mismatch, so six
+    divergences would be six failures rather than an accidental discovery.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-266 — PRESUMPTION-643: zero incidents alongside six near misses is not a control
+  Source: PRESUMPTION-643 (14b, from ASSUMPTION-668/643) | Disposition: DISPOSITION-588
+  Evidence standing: 15a NO-SUPPORT-FOUND. 15b CHALLENGED (Strong) by two independent
+    routes — near misses are precursors (Bird, 1.7M reports; EHS near-miss literature), and
+    person-dependent catches are weak by POSITION in the NIOSH hierarchy regardless of
+    catch record. Decisive local fact: six instances, six DIFFERENT accidental catch
+    mechanisms. A mechanism that differs every time is not a mechanism.
+  What is at risk: the downstream subsystem receiving false defects; and the trigger to
+    install a real control, which never fires because the alarming metric is read as
+    reassurance.
+  REQUESTED CHANGE: apply the hierarchy in order — eliminate the path if possible, else
+    engineer a validation gate that fails loud so the catch does not depend on anyone
+    noticing. Minimum viable: record catch mechanism per instance and publish the count of
+    DISTINCT mechanisms, making "no control, only luck" visible as a figure.
+  Urgency: Medium-High (C2A2's failure mode is recoverable; physical-safety urgency does
+    not transfer at full strength)
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-267 — PRESUMPTION-645: a complete-looking log is not a complete log
+  Source: PRESUMPTION-645 (14b, from ASSUMPTION-670) | Disposition: DISPOSITION-589
+  Evidence standing: 15a NO-SUPPORT-FOUND. 15b CHALLENGED (Strong) — OWASP Top 10:2025 A09
+    names asymmetric logging (success path recorded, other side dropped) as the canonical
+    instance; arXiv:2604.21361 on silent failure producing no monitorable signal. Under
+    fail-fast shell semantics an append-last write is the operation most likely to be
+    skipped, and the skip leaves no artifact. Already realised here once: the disclosed
+    seven-week gap.
+  What is at risk: every autonomy count, streak figure and "Nth consecutive day" claim in
+    the registers — all under-counts of unknown size — and their onward use in the daily
+    summary flagged at REVISE-265. No self-check can detect this class, because the
+    self-check reads the same log.
+  REQUESTED CHANGE: (a) make the log write unconditional — write first, or from a trap /
+    finally handler surviving non-zero exit; (b) reconcile against filesystem mtimes as an
+    out-of-band witness; (c) assert on expected cadence so "nothing happened" and "nothing
+    was recorded" become distinguishable; (d) until (b) exists, report streaks with an
+    explicit completeness caveat or not at all.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+CAUTION ON THIS BLOCK, recorded by 15c rather than omitted: six REVISE flags from seven
+items is far outside this pipeline's historical rate. 15c's three candidate readings are in
+lit_search_returns.md under "Batch-level note". The one that matters for Tom: if
+PRESUMPTION-631 is right, 15a, 15b and 15c are three readings of one opinion, and this
+block's unanimity is partly an artifact of the instrument. The underlying challenges rest on
+external citable literature and are checkable independently of how they were retrieved — but
+REVISE-262 is filed High precisely because fixing it would let a future batch settle this
+rather than restate it.

@@ -1,0 +1,38 @@
+SEARCH-FOR-PRESUMPTION-621:
+  Date searched: 2026-08-02
+  Original item: PRESUMPTION-621
+  Original statement: [inferred] That boilerplate in a log is a record of what happened rather than a template for what usually happens. The "pre-run snapshot of 614 files, re-compared for read-only compliance" sentence propagated through the 07-30 and 07-31 entries, into this architectural register as a measured fact, and was within one edit of a fourth appearance.
+
+  Claim as tested here: that assertions in logs propagate by template rather than by measurement, and at a measurable rate.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a]
+    Original item: PRESUMPTION-621
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an explicit near-miss disclosure by the Summa verifier ("I nearly inherited the sentence"), with this register's own contamination measured rather than supposed. High confidence.
+      15a: Searched for supporting literature
+    Current status: SUPPORTED
+
+  Supporting evidence found: Yes
+
+  Sources:
+    1. Wang, M.D., Khanna, R. & Najafi, N., 2017. "Characterizing the Source of Text in Electronic Health Record Progress Notes." JAMA Internal Medicine, 177(8). — Character-level provenance analysis of 23,630 inpatient progress notes by 460 clinicians: 18% of text manually entered, 36% imported, 46% copied. 82% of note text was copied or template-generated. The canonical quantification of the phenomenon; residents copied most (51.4%), then students (49%), then hospitalists (47.9%).
+    2. Steinkamp, J. et al., 2022. "Prevalence and Sources of Duplicate Information in the Electronic Medical Record." JAMA Network Open (PMID 36156143). — Analysis of >100 million notes: 50.1% of all note text duplicated from prior documentation on the same patient; 54% of duplicated content from the same author, 46% from a different author. Establishes that propagation crosses authors, which is the exact failure mode in PRESUMPTION-621 (a sentence inherited by a downstream register).
+    3. Berdahl, C.T. et al., 2019. "Concordance Between Electronic Clinical Documentation and Physicians' Observed Behavior." JAMA Network Open, 2(9). — Direct observation of 180 encounters by 9 emergency physician trainees: only 38.5% of documented review-of-systems items and 53.2% of documented physical-examination systems were corroborated by observation. This is the strongest available source for the specific claim that a recorded assertion of a performed check is frequently not a record of a performed check.
+    4. Tsou, A.Y. et al., 2017. "Safe Practices for Copy and Paste in the EHR: Systematic Review, Recommendations, and Novel Model for Health IT Collaboration." Applied Clinical Informatics. — Systematic review underpinning the Partnership for Health IT Patient Safety recommendations; establishes the phenomenon as named, reviewed and remediable by provenance-marking rather than by exhortation.
+    5. ECRI / Partnership for Health IT Patient Safety. "Copy/Paste: Prevalence, Problems, and Best Practices" (ecri.org/resources/hit/htais_copy_paste_report.pdf). — Reports that in one study 2.6% of diagnostic errors requiring additional care were attributable to copy-paste; ~90% of clinicians report using copy-paste, 81% report copying other authors' notes, 25% agree it leads to mistakes in care. Gives a downstream-harm rate, not just a prevalence rate.
+    6. "Restricted use of copy and paste in electronic health records potentially improves healthcare quality," 2022 (PMC8797538). — Cross-correlation between copied-and-pasted text prevalence and 14-day readmission, relative risk 1.105. Evidence that the propagation has an outcome signature, and that restricting the mechanism (not warning about it) moves the outcome.
+    7. "From Free-Form to Framework: Evaluating the Effect of a Note Template on Emergency Medicine Residents' Medical Decision-Making Documentation" (PMC12873488); and "Effect of Outpatient Note Templates on Note Quality: NOTE (Notation Optimization through Template Engineering) Randomized Clinical Trial," Journal of General Internal Medicine, 2021 (PMC7947083). — Bears on the second half of the item. Faculty reviewers rated template-produced notes as BETTER ORGANISED but INFERIOR in accuracy and usefulness. Structured templates raise the legibility of a record while lowering its fidelity — precisely the trade PRESUMPTION-621 identifies.
+    8. "Addressing Note Bloat: Solutions for Effective Clinical Documentation," 2025 (PMC11852943). — Documents structural growth: average note length up 8.1% from 2020 to 2023 across 1.7 billion outpatient notes, driven by copy-integrated technologies. Supports the claim that template propagation is a growth process, not a stable background rate.
+
+  Strength of support: Strong
+
+  Summary: The phenomenon in PRESUMPTION-621 is named, measured and repeatedly replicated in the clinical documentation literature, where it is called copy-forward or copy-paste propagation. The rate is high and consistently so: 46% of progress-note text copied at character level (Wang 2017), 50.1% duplicated across a 100-million-note corpus (Steinkamp 2022), 82% of note content copied or templated. Critically, Berdahl et al. (2019) closes the specific inferential gap the item cares about — not merely that text is reused, but that documented ASSERTIONS OF PERFORMED CHECKS are corroborated by direct observation only 38.5%–53.2% of the time. The harm is measurable downstream (2.6% of diagnostic errors requiring additional care; RR 1.105 for 14-day readmission). On the template question the evidence favours the item's reading: templates improve organisation and coding completeness while faculty raters judge template-produced notes less accurate and less useful, and note length is growing structurally. The consistent remediation in this literature is provenance marking at the character level — the EHR tool Wang et al. used to attribute each character to manual entry, import, or copy — not a policy asking authors to be careful.
+
+  Caveats: (a) Domain transfer: clinical notes have a defensive-documentation and billing incentive structure absent from an agent pipeline's logs, which plausibly inflates copy rates in the source domain; the direction of the effect should transfer but the magnitude should not be imported. (b) Copying is not per se error — a genuinely unchanged fact copied forward is correct, and the literature repeatedly notes appropriate uses; the error rate is a subset of the propagation rate, and only Berdahl et al. isolates the "asserted but not performed" subset. (c) Berdahl et al. is a single-site study of trainees in one specialty with 9 observed physicians; the 38.5%/53.2% figures should be treated as indicative rather than as a base rate. (d) The template evidence is mixed rather than one-directional: AHIMA-cited work reports templates improving coding accuracy, and the NOTE RCT and the EM residents' study measure different quality dimensions with different raters. (e) The 2.6%-of-diagnostic-errors figure reaches me through the ECRI report's summary of a primary study I did not retrieve.
+
+  Search scope: Comprehensive on copy-forward/copy-paste prevalence and harm in clinical documentation and on documentation-behaviour concordance; adequate on structured-template effects on note quality. Preliminary on audit-trail integrity outside healthcare — that search returned regulatory/vendor material (21 CFR Part 11, LIMS audit trails) rather than primary research, and I have not cited it. A broader search into software-engineering log fidelity and regulated-records data-integrity research is recommended.
+
+  Recommendation: SUPPORTED

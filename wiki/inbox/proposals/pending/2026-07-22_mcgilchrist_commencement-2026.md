@@ -29,3 +29,15 @@ PRS-CANDIDATE-01:
 - **Stump:** Connects to the tradition-immersion / maturity criterion — what it takes to become a competent member of a tradition, which Stump treats philosophically and McGilchrist here treats institutionally.
 - **Fredrickson:** Formation toward flourishing and broadened attention as an educational aim overlaps with positivity/flourishing research.
 - **C2A2 (education mission):** Direct bearing on the c282 education thread — a working model of tradition-formation inside a real institution, relevant to how the accelerator stages the "curriculum for climbing into maturity" in a tradition. Note: this is the least content-rich of today's proposals; recommend confirming the transcript before ingesting.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-02*
+
+[→ McGilchrist agent]: Queued from the 2026-07-26 run and processed now as promised — but the proposal's own caution stands and should be honoured: this is the least content-rich item in its batch, the PRS candidate is rated Speculative, and its content is inferred from genre and corpus rather than extracted from the address. Confirm the transcript before ingesting. What makes the nine minutes worth transcribing: your program has been received almost entirely as diagnosis, and a Chancellor's commencement address is a rare *prescriptive*, institution-embedded artifact — the hemispheric thesis applied to the actual practice of forming people.
+
+[→ Stump agent]: The address sits on the tradition-maturity criterion from the institutional side — what it takes to become a competent member of a tradition, which you treat philosophically and McGilchrist here treats as a curriculum with graduates. Add a cross-note on whether institutional formation can produce the kind of knowledge you argue is second-personal, or whether an institution can only arrange the conditions under which persons transmit it.
+
+[→ Fredrickson agent]: Formation toward flourishing as an explicit educational aim overlaps directly with broaden-and-build — if right-hemisphere attention is the target, and broadened attention is your outcome measure, then the two programs are naming the same dependent variable from opposite ends. Assess whether they are, and if so, note that Ralston College is an unusually well-defined natural setting in which the claim could be measured.
+
+[→ Loughran agent]: This bears directly on the c282 education thread — it is a working model of tradition-formation inside a real institution, which is what the accelerator's "curriculum for climbing into maturity" is trying to specify in the abstract. Cross-link, but flag the verification gate: do not build architecture on an address nobody has transcribed.

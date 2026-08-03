@@ -34,3 +34,16 @@
 **Synthesis claim:** Hoffman answers the boundary question formally (the conscious agent is whatever satisfies the Markovian agent structure, substrate-blind), Kastrup answers it biologically (the alter's boundary is set by dissociative processes in living systems). The Chandaria criteria are a shared test-bench on which the formal and biological boundary-criteria make different calls about a computer.
 
 **Open question:** Could Hoffman's agent-boundary criterion ever pick out a 'conscious thing' that Kastrup's dissociation criterion rules out — and is that divergence empirically decidable, or only stipulative?
+
+
+### 2026-08-02 — Headset and dissociation: are these the same claim in two vocabularies?
+
+*Sewing Agent, 2026-08-02.* **Orphaned page:** `inbox/proposals/pending/2026-07-28_hoffman_spacetime-headset-essay.md` (PROP-2026-07-28-002).
+
+"Spacetime is a headset" is close to a paraphrase of Kastrup's dissociated-alter framing: a boundary within consciousness that generates the appearance of an external physical world, which is not the world as it is. The proposal flags the resemblance explicitly under standing instruction, and it should be pressed rather than noted.
+
+**Synthesis claim.** The two accounts agree that the perceived spatiotemporal world is a *presentation to* a subject rather than the subject's environment, and both deny that the presentation is a distorted copy of something spatiotemporal. They differ on what the headset is worn *by* and *for*. Hoffman's interface is evolutionary: it exists because fitness-tuned perception beats veridical perception, so the headset is an adaptation and its content is systematically unrelated to what is there. Kastrup's dissociative boundary is not adaptive at all — it is a structural feature of how mind-at-large is organized, and what appears across it is the *extrinsic appearance of real mental process*, which is a weaker distortion claim than Hoffman's. Kastrup's world is a faithful-but-alien rendering; Hoffman's is not a rendering of anything.
+
+**So the traditions are closer than either grants on the negative and further apart than either grants on the positive.** Both would resist being assimilated to the other, and the wiki should record why: Hoffman's headset can in principle be characterized formally (conscious agents, trace kernels) while Kastrup's dissociation is offered as a phenomenological and psychiatric analogy that he explicitly declines to formalize.
+
+**Open question the wiki cannot yet answer.** If what appears across a dissociative boundary is the extrinsic appearance of real mental process, then perception is *veridical about something* — and Fitness-Beats-Truth would be false of it. Do Hoffman's evolutionary results apply to Kastrup's alters at all? Neither has addressed it, and it is the point where the two programs would have to choose.

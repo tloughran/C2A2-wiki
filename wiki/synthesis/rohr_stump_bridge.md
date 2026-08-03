@@ -24,3 +24,16 @@ This is the point at which the contemplative literature's habitual first-person 
 **Synthesis claim:** Rohr supplies a *mechanism of initiation* Stump's account tends to leave abstract: second-personal knowledge of God is bootstrapped by the other's prior self-disclosure of woundedness, which lowers the barrier ('emptiness') across which mutual knowing can occur.
 
 **Open question:** If second-personal knowledge requires the known person's self-disclosure to initiate it, what is the epistemic status of a tradition's members who receive that disclosure only mediately, through the text and the community, rather than directly?
+
+
+### 2026-08-02 — Second-personal knowledge at community scale
+
+*Sewing Agent, 2026-08-02.* **Orphaned page:** `inbox/proposals/pending/2026-07-26_rohr_contemplative-exemplars-weekly-summary.md` (PROP-2026-07-26-002). Queued from 2026-07-26 and processed here.
+
+**Synthesis claim.** Stump's second-personal knowledge is developed for the dyad — knowledge of a person, irreducible to propositions about them, available only in direct encounter. The Warren practice quoted in this summary describes the same irreducibility operating at community scale: what is transmitted by "the believers who make you want to believe" is not a set of claims but an acquaintance with how a life goes, and the summary is explicit that argument is not the mechanism. This is the strongest Rohr↔Stump convergence the wiki holds, and it extends Stump's framework into territory he develops mainly through individual cases.
+
+**The question that decides whether it is an extension or a different thing.** Does second-personal knowledge scale to communities without changing kind? Two readings are available. On the first, a community is simply many dyads, and the exemplar roster works by giving a person many second-personal encounters (some of them mediated by text, which is already a stretch for Stump's criteria). On the second, something genuinely collective is transmitted — a form of life that no single member instantiates completely, and that could not be acquired from any one of them. Rohr's "cosmic spirituality means we come together, bring our gifts" points at the second, and Stump's framework does not currently have room for it.
+
+**Why this matters beyond the two traditions.** The earlier entry in this file noted that Rohr may supply the *initiation mechanism* Stump's account leaves abstract. This run makes the debt more specific: Stump explains why the knowledge cannot be propositional, Rohr's exemplars show how a person is brought into a position to acquire it, and neither explains how the acquisition survives the exemplars' absence — which is the case for every tradition older than a lifetime.
+
+**Open question the wiki cannot yet answer.** Can second-personal knowledge be transmitted by a *text about* a person — a hagiography, a set of letters, Merton's journals? Stump's criteria appear to say no. The contemplative tradition's actual practice says it happens constantly. One of the two is wrong, and the wiki has no material adjudicating it.
