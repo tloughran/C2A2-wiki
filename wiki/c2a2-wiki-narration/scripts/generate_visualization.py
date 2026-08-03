@@ -106,6 +106,18 @@ def sanitize_braces(text):
     return text
 
 
+# Build health numbers, written to the sidecar build_meta.json by main().
+#
+# These used to exist only as print() lines scrolling past during a regen. That
+# is where the 2026-08-03 dedup regression showed up — the substrate skip count
+# went from 2 to 1164 because a namespace rename orphaned a third of the
+# agent-activity edges — and the only reason it was caught is that a human
+# happened to be reading stdout. Under cron it would have shipped silently.
+# Persisting them makes the numbers diffable between builds and checkable by
+# regen_sociogram.sh without anyone watching.
+BUILD_STATS = {}
+
+
 def build_graph_data(data, agent_data=None):
     """Build nodes and links arrays from vault data.
 
@@ -316,6 +328,14 @@ def build_graph_data(data, agent_data=None):
             s, t, w = e['source'], e['target'], e.get('weight', 1)
             if s in _agent_ids and t in _agent_ids:
                 links.append(_agent_edge(s, t, 'flow', w))  # directed (source→target)
+
+        BUILD_STATS['agent_actor_nodes'] = len(_agent_ids)
+        BUILD_STATS['substrate_kept'] = sum(
+            1 for l in links if l.get('layer') == 'substrate')
+        BUILD_STATS['substrate_skipped'] = skipped_substrate
+        BUILD_STATS['projected'] = sum(
+            1 for l in links if l.get('layer') == 'projected')
+        BUILD_STATS['flow'] = sum(1 for l in links if l.get('layer') == 'flow')
 
         print("Agent layer merged: " + str(len(_agent_ids)) + " actor nodes; "
               + "substrate=" + str(sum(1 for l in links if l.get('layer') == 'substrate'))
@@ -4092,6 +4112,27 @@ def main():
     print("Generated: " + output_path)
     print("Size: " + str(len(html)) + " chars")
     print("Nodes: " + str(len(nodes)) + ", Links: " + str(len(links)))
+
+    # Sidecar build_meta.json — the build's own health numbers, next to the
+    # artifact and tracked in git so successive builds are diffable. Written
+    # LAST so it can never claim a build that did not finish.
+    meta = dict(BUILD_STATS)
+    meta['nodes'] = len(nodes)
+    meta['links'] = len(links)
+    meta['bytes'] = len(html)
+    by_group = {}
+    for n in nodes:
+        g = n.get('group') or '(none)'
+        by_group[g] = by_group.get(g, 0) + 1
+    meta['nodes_by_group'] = dict(sorted(by_group.items()))
+    meta['summa_nodes'] = by_group.get('summa', 0)
+    meta['agent_data'] = bool(agent_data_path)
+    meta_path = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), 'build_meta.json')
+    with open(meta_path, 'w') as f:
+        json.dump(meta, f, indent=2, sort_keys=True)
+        f.write("\n")
+    print("Build meta: " + meta_path)
 
 
 if __name__ == '__main__':
