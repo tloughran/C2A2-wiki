@@ -13,12 +13,17 @@
     tasks only ever mount ~/Documents. morning-system-health reads the status
     file this writes.
   -->
+  <!--
+    Must be /bin/bash + a wrapper, NOT /usr/bin/python3 + the .py directly.
+    TCC grants ~/Documents read access per-executable; the CommandLineTools
+    python3 shim does not have it under launchd, so the direct form failed every
+    run with "Operation not permitted" and wrote nothing. See the header comment
+    in scripts/check_scheduled_commits.sh.
+  -->
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/bin/python3</string>
-    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_scheduled_commits.py</string>
-    <string>--status-file</string>
-    <string>scheduler/commit_check.md</string>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_scheduled_commits.sh</string>
   </array>
 
   <!--
