@@ -2,9 +2,9 @@
 day: 303
 title: New Heavens and Earth (Contemporary)
 pairs_with: "[[Day-303 - New Heavens and Earth]]"
-length_target_words: 1550
+length_target_words: 1500
 length_actual_words: 1157
-length_ratio_to_target: 0.75
+length_ratio_to_target: 0.77
 length_tier: short
 length_note: "Body 1157 words vs ~1500 tier guideline (-23%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
 karpathy_wiki_sources:
@@ -18,8 +18,8 @@ evidence_strength_summary: "Interface/idealist case that perceived spacetime is 
 mind_first_reframe: "Renewed creation is the species-specific interface perfected rather than discarded — perceived spacetime made fully translucent to the reality it renders — and the beatific vision is the limit case of knowing that substrate directly, yet without comprehending it."
 central_theme_thread: "Vision-without-comprehension keeps individuation honest: when perspective-limitation is removed the simple whole is seen and the finite agent is contained in it, but is fulfilled within the whole rather than absorbed into it — union, not absorption."
 tags: [synthesis, day/303, theme/whole-seen-not-comprehended]
-last_qc_at: "2026-07-20T12:18:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-29T02:29:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 303 — New Heavens and Earth (Contemporary Parallel)

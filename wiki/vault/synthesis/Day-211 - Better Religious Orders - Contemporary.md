@@ -17,7 +17,7 @@ evidence_strength_summary: "Religious state = training-school for the perfection
 mind_first_reframe: "A religious order is one stable allocation of a finite agent's attention and labor toward the single telos of loving union; the plurality of orders is the plurality of partial perspectives that the one good can be pursued from, and an order is 'better' not by rank on a ladder but by how fully the loving union it attains overflows into other perspectives — contemplation received and then transmitted."
 central_theme_thread: "Each order individuates a perspective on the one loving-union telos; 'better' tracks how far that union propagates beyond the agent who attains it; and the whole apparatus of states remains scaffold, never the charity it is built to grow."
 tags: [synthesis, day/211, theme/many-orders-one-telos]
-last_qc_at: "2026-07-19T06:25:45"
+last_qc_at: "2026-07-27T08:19:27"
 last_qc_outcome: "pass"
 ---
 

@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-035 - Genesis - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-21T08:20:32"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-29T08:25:33"
+last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render; corrected summa_ref from misread Q.65+66 to actual Q.67+68
 tags: [summa, day/035, pars/I, q/67, q/68]
 ---
@@ -86,7 +86,7 @@ article three whether light is a quality a
 
 [00:09:29] say a light bulb it's not the essence of those things but an aspect of them what he calls an active quality because it is that by which the Sun or light bulb affects its surroundings in such a way as to illuminate them and again I wonder how much of this would square with our modern-day understanding of electrons and photons and Quantum field Theory but again that is beyond this podcast
 
-[00:09:55]
+[00:09:55] 
 **Article 4 — Whether the production of light is fittingly assigned to the first day**
 
 article four whether the production of light is fittingly assigned to the first day now remember the order of creation as written in Genesis open to interpretation Catholics don't have to hold any particular interpretation of it besides that which is found in the magial documents which we began with but Aquinas simply takes the count as is and then seeks to give a fittingness to it elaborate on it so beginning with the first day of creation here is the relevant excerpt from scripture in the beginning God created the heavens and the Earth the Earth was without form and

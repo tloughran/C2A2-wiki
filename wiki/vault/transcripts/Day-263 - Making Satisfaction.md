@@ -16,7 +16,7 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-263 - Making Satisfaction - Contemporary]]"
 tags: [summa, day/263, pars/supplement, q/penance]
-last_qc_at: "2026-07-12T16:21:19"
+last_qc_at: "2026-07-28T20:23:05"
 last_qc_outcome: "pass"
 ---
 

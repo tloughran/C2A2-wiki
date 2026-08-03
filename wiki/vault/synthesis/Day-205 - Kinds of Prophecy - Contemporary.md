@@ -16,7 +16,7 @@ evidence_strength_summary: "Denunciation vs foreknowledge ~ defeasible model-for
 mind_first_reframe: "Prophetic knowing comes in degrees of mediation: a defeasible forecast of a contingent cause at the bottom, a truth impressed directly into the intellect (no images) higher up, and at the limit rapture — the intellect 'uplifted contrary to nature,' withdrawn from the senses and freed from phantasms, transiently informed by the divine essence. Read in mind-first terms, the ascent is the progressive setting-aside of the species-specific interface that individuates a perspective; rapture is the momentary, partial relaxation of the dissociative boundary toward the wider mind — a foretaste, not the abiding vision, and one the subject cannot even fully locate himself within (Paul: 'in the body or out, I know not')."
 central_theme_thread: "Rapture is the project's central claim staged at its edge: the perspective-limiting interface is set aside far enough to glimpse more of the simple whole — yet the glimpse is transient (the boundary re-clenches), it is not the abiding beatific vision, and even within it the self cannot locate its own state. Removing limitation discloses the whole; but a creature's full and lasting inclusion in it is the loving, communal union the project names as salvation, not a solitary cognitive flash."
 tags: [synthesis, day/205, theme/unmediated-vision]
-last_qc_at: "2026-07-23T06:28:08"
+last_qc_at: "2026-07-31T08:20:46"
 last_qc_outcome: "pass"
 ---
 

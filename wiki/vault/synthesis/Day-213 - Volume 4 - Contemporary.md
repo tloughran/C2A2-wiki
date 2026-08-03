@@ -6,6 +6,7 @@ length_target_words: 3000
 length_actual_words: 2493
 length_ratio_to_target: 0.831
 length_tier: long
+length_note: "Runs under long target: Q.2 proceeds by eliminating models of union (arrangement, chemical combination, form-matter), and the commentary tracks the eliminations compactly rather than developing each rejected model at length; the positive account of the hypostatic union carries the substantive linkage."
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical & cosmological; PRS-06 new creation, science/faith conflict is metaphysical not evidential; PRS-01 critical realism) [Wright primary on Christology, III Q.1-59]"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern self-diffusing into all creation; PRS-01 non-dual unity-in-distinction) [Rohr cosmic-scope reframe]"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Bonum diffusivum (the good self-communicates) ~ the 
 mind_first_reframe: "The Incarnation is the unlimited perspective assuming a complete limited one without ceasing to be unlimited and without confusing the two — the type-case of the project's claim that the whole contains every limited perspective without dissolving it; the 'union not really in God' is the asymmetry of a mind-at-large taking a dissociated point of view at no cost to itself, and the bonum diffusivum is the self-propagation of the good that the same picture makes general — though the hypostatic union remains the maximal and unique instance, not one dissociation among many."
 central_theme_thread: "Days past showed a limited perspective offering itself toward the whole; here the whole takes on a limited perspective — 'God made man that man might be made God' — and does so as the greatest of unions, two natures in one Person without confusion: the exemplar of unity-in-distinction that the entire project is trying to think."
 tags: [synthesis, day/213, theme/incarnation-as-unity-in-distinction]
-last_qc_at: "2026-07-23T02:30:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-31T02:28:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 213 — Volume 4: The Fitness and Mode of the Incarnation (Contemporary Parallel)

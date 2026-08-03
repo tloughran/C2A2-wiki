@@ -16,8 +16,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-259 - Continual Contrition - Contemporary]]"
 tags: [summa, day/259, pars/suppl, q/2]
-last_qc_at: "2026-07-09T20:24:48"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-25T00:20:55"
+last_qc_outcome: "pass"
 ---
 
 # Day 259 — Continual Contrition

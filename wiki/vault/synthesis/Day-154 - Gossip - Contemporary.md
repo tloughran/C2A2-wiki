@@ -16,7 +16,7 @@ evidence_strength_summary: "Hoffman interface theory applied to *fama* — forma
 mind_first_reframe: "Reputation (*fama*) is the social interface through which agents are mutually accessible — what each carries of the other in their generative model. Reviling and backbiting attack the interface directly: reviling injures the agent's present standing face-to-face; backbiting corrupts the model others carry of the absent agent. Both are forms of *signal injection into a shared collective cognition*, with the asymmetric feature that the victim cannot directly correct the input — exactly the perspectival-asymmetry failure the project is mapping."
 central_theme_thread: "Reviling and backbiting are direct attacks on the social interface through which limited perspectives encounter one another. Each agent's knowledge of others is mediated by the public information about them; corrupting that information corrupts every other agent's perspective on the victim. Backbiting is the covertness that compounds it: the victim cannot answer because they are not present, and others act on the corrupted prior before correction is possible. This is the dark mirror of the positive case (Fredrickson positivity resonance, Day 132): where shared positive emotion *builds* the bond the central claim names as the telos, gossip *unbuilds* it — a defection at the level of the information substrate."
 tags: [synthesis, day/154, theme/verbal-injustice-and-the-social-interface]
-last_qc_at: "2026-07-20T06:27:26"
+last_qc_at: "2026-07-28T14:06:47"
 last_qc_outcome: "pass"
 ---
 

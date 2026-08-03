@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-250 - Transubstantiation - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-17T20:20:01"
+last_qc_at: "2026-07-31T12:20:19"
 last_qc_outcome: "pass"
 tags: [summa, day/250, pars/3, q/75]
 ---

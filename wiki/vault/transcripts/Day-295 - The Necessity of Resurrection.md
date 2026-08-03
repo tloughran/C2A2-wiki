@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-295 - The Necessity of Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/295, pars/suppl, q/75-76]
-last_qc_at: "2026-07-12T12:21:43"
+last_qc_at: "2026-07-28T20:23:10"
 last_qc_outcome: "pass"
 ---
 

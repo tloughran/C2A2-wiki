@@ -18,7 +18,7 @@ length_ratio_to_target: 1.079
 mind_first_reframe: "The Old Law is the developmental curriculum through which an agent-community (Israel) and through it humanity is brought from natural-law-only-access (impaired by fomes) toward grace-enabled charity — external rules training pattern-recognition that natural-law access alone could not reliably deliver, temporal goods meeting agents at their current motivational state (Fredrickson broaden-and-build), prophetic typology training pattern-recognition (Hoffman interface), friendship-as-likeness as the telos."
 central_theme_thread: "Perspective-limitation is not just an obstacle but the condition under which developmental staging makes sense — an agent at New-Law level does not need the Old Law; an agent at fomes-dominated post-Fall level cannot receive the New Law directly; the staged sequence is the path by which limited perspectives are brought into closer alignment with the loving-unity telos under the resources available."
 tags: [synthesis, day/110, theme/covenantal-pedagogy, theme/developmental-stages]
-last_qc_at: "2026-07-16T10:28:27"
+last_qc_at: "2026-07-24T12:19:34"
 last_qc_outcome: "pass"
 ---
 

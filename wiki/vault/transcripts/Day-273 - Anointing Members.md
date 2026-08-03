@@ -15,8 +15,8 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-273 - Anointing Members - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-10T00:21:53"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-25T08:21:56"
+last_qc_outcome: "pass"
 tags: [summa, day/273, pars/suppl, q/31-32]
 ---
 

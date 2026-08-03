@@ -16,11 +16,13 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-181 - Fearlessness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/181, pars/II-II, q/126-127]
-last_qc_at: "2026-07-22T04:21:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-30T12:22:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 181 — Fearlessness
+
+> Typo cleanup (QC sweep 2026-07-30): foolheartiness -> foolhardiness; foolardiness -> foolhardiness; "sukunda sukun day" -> "Secunda Secundae"; themsself -> themself. All four are ASR mishearings of proper/technical terms; no wording of Habash's argument was altered.
 
 Day 181 takes up the two vices that flank fortitude on the side opposite timidity: fearlessness (the defect of too little fear) and foolhardiness (the excess of daring).
 
@@ -38,7 +40,7 @@ can now get at a discounted price from Ave Maria Press's site by typing in the c
 
 virtue of fortitude moderates fear and daring here with fearlessness, we're going to look at the deficiency of fear. Similar to how timidity denotes an
 
-excess of fear. And in the next question, we're going to look at the excess of daring, which is called foolheartiness. Fearlessness is seen in
+excess of fear. And in the next question, we're going to look at the excess of daring, which is called foolhardiness. Fearlessness is seen in
 
 [01:17] the parable of the unjust judge. As it is written in the Gospel of Luke, "In a certain city, there was a judge who neither feared God nor regarded man. Now
 
@@ -48,7 +50,7 @@ afraid of what might happen to himself or his fellow man is a vice because it de
 
 [01:48] his neighbor's salvation? These loves produce fear. Therefore, this lack of fear either denotes a lack of love or more probably a plentitude of pride and
 
-that one imagines themsself above all kinds of danger, even that coming from God. As St. Thomas says that he fear none of these things cannot result from
+that one imagines themself above all kinds of danger, even that coming from God. As St. Thomas says that he fear none of these things cannot result from
 
 an entire lack of love, but only from the fact that he thinks it is impossible for him to be afflicted by evils contrary to the goods he loves. This is
 
@@ -78,7 +80,7 @@ argue that since our nature inclines us to the feeling of daring, for it is the 
 
 overcomeable. This is the feeling of courage, the feeling of daring which can then transform into anger once that evil becomes actually present and we are
 
-moved to struggle against it. And so one can have an excess of this feeling of courage which is the vice of foolardiness. But when naming the vice
+moved to struggle against it. And so one can have an excess of this feeling of courage which is the vice of foolhardiness. But when naming the vice
 
 [04:40] of deficiency on the other side of this feeling of daring, St. Thomas says this is just timidity because it would be on account of an excess of fear that would
 
@@ -88,7 +90,7 @@ man taking the offensive against that which is in opposition to him and nature i
 
 fear of receiving harm from that source. Hence the vice which exceeds end daring has no contrary deficiency save only timidity. With that we have just
 
-[05:21] finished covering questions 126 127 of the sukunda sukun day that is of fearlessness and of foolhardiness. My name is Austin Habash with think
+[05:21] finished covering questions 126 127 of the Secunda Secundae that is of fearlessness and of foolhardiness. My name is Austin Habash with think
 
 catholic and I cannot wait to see you tomorrow. [Music]
 

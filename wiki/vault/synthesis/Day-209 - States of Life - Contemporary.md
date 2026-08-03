@@ -19,8 +19,8 @@ evidence_strength_summary: "Diversity of states manifests the simple whole ~ a m
 mind_first_reframe: "One simple whole is manifested and lovable from every side only through a multitude of limited perspectives, each differently bound (its 'state') and composed by loving resonance into one body; knowing ranges from interface-mediated abstraction up to received infusion, but the one invariant measured across every state, office, and stage is the degree of loving union."
 central_theme_thread: "Perspective-limitation is given its positive role — the diversity of states is the very means by which the simple whole is displayed and re-integrated in love — yet merit tracks charity 'regardless of state,' so the measure of any limited perspective's progress toward loving unity is its charity, not its role or rank."
 tags: [synthesis, day/209, theme/the-many-and-the-one-body]
-last_qc_at: "2026-07-19T06:25:44"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-26T14:29:42"
+last_qc_outcome: "pass"
 ---
 
 # Day 209 — States of Life (Contemporary Parallel)

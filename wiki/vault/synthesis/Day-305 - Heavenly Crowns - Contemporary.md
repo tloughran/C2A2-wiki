@@ -18,7 +18,7 @@ evidence_strength_summary: "Differentiated-reward-by-contribution read as formed
 mind_first_reframe: "The dowries and aureoles describe a community whose shared end (union with the whole) is reached through irreducibly differentiated contributions, with the highest — the doctor's crown — going to the agent who makes the truth modelable to other minds and so raises the coherence of the whole."
 central_theme_thread: "Individuation is not overcome in glory but crowned: each limited perspective is rewarded as the one it is, and the doctor's crown names the cooperative mechanism — informing one another — by which limited perspectives help each other toward the loving unity that is the telos."
 tags: [synthesis, day/305, theme/crown-for-informing-others]
-last_qc_at: "2026-07-20T14:27:22"
+last_qc_at: "2026-07-29T02:29:03"
 last_qc_outcome: "pass"
 ---
 

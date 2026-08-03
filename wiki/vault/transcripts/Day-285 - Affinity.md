@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-285 - Affinity - Contemporary]]"
 tags: [summa, day/285, pars/suppl, q/55-56]
-last_qc_at: "2026-07-10T08:21:08"
+last_qc_at: "2026-07-25T16:23:11"
 last_qc_outcome: "pass"
 ---
 

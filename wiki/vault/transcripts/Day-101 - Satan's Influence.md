@@ -21,8 +21,8 @@ last_qc_outcome: "pass"
 ---
 # Day 101 — Satan's Influence
 
-**Summa locus:** Prima Secundae (I-II), Q.80-81
-**Source:** Austin Habash, *Summa in a Year* podcast (Think Catholic).
+**Summa locus:** Prima Secundae (I-II), Q.80-81  
+**Source:** Austin Habash, *Summa in a Year* podcast (Think Catholic).  
 **Caption kind:** YouTube auto-generated (ASR); light cleanup applied.
 
 ---

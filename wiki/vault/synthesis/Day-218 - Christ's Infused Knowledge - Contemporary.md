@@ -15,7 +15,7 @@ evidence_strength_summary: "'Broken up knowledge of the world' acquired piecemea
 mind_first_reframe: "The acquired, 'broken up' knowledge of a finite mind is read as the default agent-under-scarcity mode — active inference building a world-model piece by piece by minimizing prediction error — so that 'advancing in wisdom' is the signature of a genuinely limited perspective, present in Christ even where infused knowledge is also present."
 central_theme_thread: "Aquinas's contrast between God's single sweep (in knowing Himself He knows all else) and our 'broken up knowledge of the world' is the perspective-limitation claim stated as an epistemology of resources: the limited agent never has the whole at once but assembles it under scarcity, and Christ's real acquired knowing honors that limited pathway from within."
 tags: [synthesis, day/218, theme/broken-up-knowledge-bounded-resources]
-last_qc_at: "2026-07-19T06:25:46"
+last_qc_at: "2026-07-27T08:19:28"
 last_qc_outcome: "pass"
 ---
 

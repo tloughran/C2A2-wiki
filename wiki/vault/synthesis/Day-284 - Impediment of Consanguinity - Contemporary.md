@@ -16,7 +16,7 @@ length_ratio_to_target: 0.58
 mind_first_reframe: "The consanguinity impediment is a community-widening mechanism — suppressing the easy near coupling to compel the bond-extending distant one — mirroring how collective intelligences stay open and coherent at larger scales."
 central_theme_thread: "The kin-rule is loving unity's missionary edge: love is forbidden to curl up among the already-near so that it must reach the stranger, moving the circle of union from clan toward universal communion."
 tags: [synthesis, day/284, theme/widening-the-circle-of-union]
-last_qc_at: "2026-07-20T04:20:44"
+last_qc_at: "2026-07-28T06:29:50"
 last_qc_outcome: "pass"
 ---
 

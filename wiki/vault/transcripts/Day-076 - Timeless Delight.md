@@ -14,7 +14,7 @@ language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
 fidelity_checked: true
-last_qc_at: "2026-07-16T12:20:34"
+last_qc_at: "2026-08-01T16:52:24"
 last_qc_outcome: "pass"
 synthesis: "[[Day-076 - Timeless Delight - Contemporary]]"
 tags: [summa, day/076, pars/I-II, q/30, q/31]

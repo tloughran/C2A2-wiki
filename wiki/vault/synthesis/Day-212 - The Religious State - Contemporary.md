@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1879
 length_ratio_to_target: 0.854
 length_tier: medium
+length_note: "Runs under medium target: Q.186 and Q.189 are structurally repetitive (the three vows stated, then re-stated under entrance), so the commentary consolidates the shared argument once rather than mirroring each article; trimming recapitulation rather than padding to tier."
 karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder — conversion/entrance; PRS-04 embodied love as epistemology — the vows as bodily) [Rohr primary on the contemplative/religious life, II-II Q.171-189]"
   - "traditions/friston/prs_triplets.md (PRS-04 precision-weighted attention under resource scarcity — the vows as re-allocation of precision away from self-individuating goods)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Three vows as total self-offering ~ voluntary relinq
 mind_first_reframe: "The three religious vows are the deliberate relinquishment of the three resource-classes that most strongly individuate and pre-occupy a finite perspective — owned property, bodily/sexual attachment, and self-determining will — so that its attention can be re-weighted toward the whole; obedience is chief because it surrenders the self-model's own autonomy to a perspective that sees more, which is exactly the guidance the project says a limited agent needs."
 central_theme_thread: "The vows enact, voluntarily and at the deepest layer, the very thing the central theme describes — a limited perspective spending the resources that hold it apart in order to be drawn toward loving union — and obedience names the surrender to 'those who perceive more of the whole'; yet the state remains scaffold, never the charity itself."
 tags: [synthesis, day/212, theme/vows-as-perspective-surrender]
-last_qc_at: "2026-07-23T06:28:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-31T02:28:44"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 212 — The Religious State (Contemporary Parallel)

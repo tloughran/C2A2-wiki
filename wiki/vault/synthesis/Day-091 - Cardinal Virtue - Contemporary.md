@@ -15,8 +15,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under mind/conscious-realist monism virtue is a stable computational invariant in a perspective-limited agent's generative model — a recurring pattern by which limited consciousness organizes its inference and action; Aquinas's formal-object individuation survives intact, but the substantialist ontology of qualities-of-the-soul is reframed as scale-of-coupling within the agent's own optimization loop."
 central_theme_thread: "The cardinal virtues are exactly the minimum stable dispositions a perspective-limited agent needs so its computations toward loving unity remain coherent under finite affective and cognitive resources — cut any one and the others degrade (Gregory the Great's chiasmus reread as an active-inference network prediction)."
 evidence_strength_summary: "Theological claims at full traditional strength; psychological mechanism claims (Fredrickson broaden-and-build, McGilchrist hemispheric character) hold mixed empirical support — replicated for broaden-and-build, contested for some McGilchrist generalizations. Network-of-virtues claim formally analogous to coupled-trait psychometric models with moderate support. PRS/Synergistic-Coil framing is Tom Loughran's, not derived from the traditions."
-last_qc_at: "2026-07-16T00:30:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-01T04:22:41"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/091, theme/virtue-as-network, theme/cardinal-virtues]
 ---
 
@@ -32,7 +32,7 @@ The agent has multiple appetitive and rational faculties, each tracking differen
 
 ## Resource
 
-PRS-04 in the Stump-tradition wiki: Stump's re-description of Thomistic virtue keeps Aquinas's formal-object individuation but reads the virtues as stable second-personal capacities — what one brings to relationship with another agent. Stump's contribution is that virtue is not merely intrapersonal habituation but a *relational competence*, especially for the cardinal virtues (justice with neighbor, prudence with one's situation, temperance and fortitude with oneself as a tractable interlocutor).
+PRS-04 in the Stump-tradition wiki: Tom's PRS-form re-description of Stump on Thomistic virtue keeps Aquinas's formal-object individuation but reads the virtues as stable second-personal capacities — what one brings to relationship with another agent. Stump's contribution is that virtue is not merely intrapersonal habituation but a *relational competence*, especially for the cardinal virtues (justice with neighbor, prudence with one's situation, temperance and fortitude with oneself as a tractable interlocutor).
 
 PRS-02 and PRS-06 in the Fredrickson-tradition wiki: positivity-resonance and broaden-and-build supply an empirically backed account of how *coupled* virtue-like capacities cohere. Broaden-and-build predicts that positive emotional states under the right conditions widen the action repertoire (broaden) and lay down enduring resources (build) — a mechanism for *how* habituated dispositions accumulate and couple. The empirical literature on broaden-and-build is mixed-but-meaningful: meta-analyses support the broadening effect; the long-term build effect is real but smaller than initial estimates.
 

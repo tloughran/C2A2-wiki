@@ -16,7 +16,7 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-262 - The Effect of Confession - Contemporary]]"
 tags: [summa, day/262, pars/supplement, q/penance]
-last_qc_at: "2026-07-12T16:21:19"
+last_qc_at: "2026-07-28T20:23:04"
 last_qc_outcome: "pass"
 ---
 

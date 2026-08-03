@@ -10,13 +10,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling, PRS-05 distributed cognition across scales)"
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-10 trace blankets subsume Markov blankets, PRS-03 perception as fitness-tracking interface)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
-evidence_strength_summary: "Friston coupling formal/speculative; Hoffman interface/trace-blanket formal and speculative; Rohr theological. The 'consent must be outwardly expressed' point maps firmly to the formal requirement that coupling pass through a shared boundary."
+  - "wiki/traditions/wright/prs_triplets.md (PRS-8 one-new-humanity: unity-in-distinction as reconciliation-without-erasure)"
+evidence_strength_summary: "Friston coupling formal/speculative; Hoffman interface/trace-blanket formal and speculative; Rohr and Wright theological/scriptural. The 'consent must be outwardly expressed' point maps firmly to the formal requirement that coupling pass through a shared boundary."
 length_ratio_to_target: 0.53
 mind_first_reframe: "Expressed consent is necessary because coupling between two perspectival agents can occur only across a shared interface — the union is realized at the boundary where signs are exchanged, not in two private wills that never meet."
 central_theme_thread: "Because no spouse can inhabit the other's interior, loving unity must be built on signs offered and received in trust — the central theme's epistemology made liturgical."
 tags: [synthesis, day/280, theme/expressed-consent-as-shared-boundary]
-last_qc_at: "2026-07-20T02:26:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-28T04:22:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 280 — Marriage Consent (Contemporary Parallel)
@@ -46,6 +47,7 @@ The project holds that limited perspectives can never directly inhabit one anoth
 - **Friston PRS-06 / PRS-05 (formal / speculative):** coupling is realized at the shared Markov blanket; no boundary-crossing, no union — the structure behind "consent must be expressed."
 - **Hoffman PRS-03 / PRS-10 (formal / speculative):** agents meet only through interface symbols; the outward sign is the only available currency of union.
 - **Rohr PRS-04 (theological):** love is embodied and expressed epistemology, not interior-only assent.
+- **Wright PRS-8 (scriptural, theological):** the "one new humanity" of Eph 2:11–22 read as reconciliation-without-erasure — the scriptural anchor for how distinct agents become one corporate subject without dissolving difference. It bears directly on the 1 Cor 7:4 mutuality Habash reads out: the conjugal authority each spouse holds over the other is a *given* authority, so the union must be constituted by an exchange each party actually makes.
 
 ## Where this leaves us
 

@@ -6,6 +6,7 @@ length_target_words: 2200
 length_actual_words: 1846
 length_ratio_to_target: 0.839
 length_tier: medium
+length_note: "Runs under medium target: Q.7's twelve articles on Christ's individual grace are treated as setup for the capital-grace question of Q.8, where the contemporary linkage actually lives, rather than mirrored article-by-article."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as objective neurophysiological coupling; PRS-03 positivity resonance scale-bridging cells -> organisms -> communities -> traditions)"
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy minimization; PRS-04 organism as active modeler) [Markov-blanket nesting of bodies-within-bodies]"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Capital grace as a head's influx into its members ~ 
 mind_first_reframe: "Capital grace — the influx by which the Head communicates its fullness to the members — is read as a coupling-and-nesting picture: love as a measurable resonance that knits limited perspectives into one higher-order body, the whole's fullness flowing into its parts and incorporating them rather than a juridical transfer of merit."
 central_theme_thread: "The grace of headship is the loving-unity computation made visible: a whole, fuller perspective pouring its fullness into limited members and binding them into one body united with God — exactly the telos toward which each limited agent computes, here flowing from the Head who already contains the whole."
 tags: [synthesis, day/216, theme/capital-grace-fullness-to-members]
-last_qc_at: "2026-07-23T02:30:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-31T02:28:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 216 — Christ as Head (Contemporary Parallel)

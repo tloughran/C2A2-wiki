@@ -16,13 +16,13 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-103 - Capital Vice - Contemporary]]"
 tags: [summa, day/103, pars/I-II, q/84-85]
 fidelity_checked: true
-last_qc_at: "2026-07-16T04:19:40"
+last_qc_at: "2026-08-02T00:20:59"
 last_qc_outcome: "pass"
 ---
 # Day 103 — Capital Vice
 
-**Summa locus:** Prima Secundae (I-II), Q.84-85
-**Source:** Austin Habash, *Summa in a Year* podcast (Think Catholic).
+**Summa locus:** Prima Secundae (I-II), Q.84-85  
+**Source:** Austin Habash, *Summa in a Year* podcast (Think Catholic).  
 **Caption kind:** YouTube auto-generated (ASR); light cleanup applied.
 
 ---

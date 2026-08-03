@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-150 - The Death Penalty - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/150, pars/2, q/64-65]
-last_qc_at: "2026-07-10T16:21:44"
+last_qc_at: "2026-07-26T12:22:52"
 last_qc_outcome: "pass"
 ---
 

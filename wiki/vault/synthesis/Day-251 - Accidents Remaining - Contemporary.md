@@ -16,7 +16,7 @@ evidence_strength_summary: "Accidents-without-substrate is metaphysical/conteste
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-07-23T10:27:38"
+last_qc_at: "2026-07-31T12:20:26"
 last_qc_outcome: "pass"
 ---
 

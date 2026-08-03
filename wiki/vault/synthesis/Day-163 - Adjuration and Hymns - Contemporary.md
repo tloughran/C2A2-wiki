@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/wiki.md (contemplative reception; song as 'first form' of contemplation)"
 evidence_strength_summary: "Empirical on the neurobiology of group song and positivity resonance (Fredrickson and collaborators). Empirical/clinical on hemispheric processing of music (McGilchrist). Theological-strong on early-Christian hymnody as load-bearing christology (Wright). The integrative claim — that hymn and adjuration are two directions of a single self/other-modulation loop — is speculative-integrative."
 tags: [synthesis, day/163, theme/self-modulation, theme/agent-binding, pars/II-II, q/90-91]
-last_qc_at: "2026-07-19T20:20:04"
+last_qc_at: "2026-07-27T22:35:55"
 last_qc_outcome: "pass"
 ---
 

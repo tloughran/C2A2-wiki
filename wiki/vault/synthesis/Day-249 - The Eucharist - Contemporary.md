@@ -16,7 +16,7 @@ length_note: "Compact-by-design: III Q.73-74 (Real Presence / matter of the sacr
 mind_first_reframe: "Under mind-monism with the metaphysical guardrail leading Kastrup/Hoffman/Levin, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
 central_theme_thread: "The Eucharist is the maximal case of the whole present under a limited perspective's signs: agents perceive only the interface (bread) while the reality (Christ) is present precisely under the limitation of their perception, and communion is participative inclusion in that reality — 'salvation as inclusion in the people united with God.'"
 tags: [synthesis, day/249, theme/presence-and-substance]
-last_qc_at: "2026-07-19T12:19:35"
+last_qc_at: "2026-07-27T14:26:32"
 last_qc_outcome: "pass"
 ---
 

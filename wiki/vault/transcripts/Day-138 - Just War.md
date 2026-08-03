@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-138 - Just War - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/138, pars/2, q/40-41]
-last_qc_at: "2026-07-11T00:21:58"
+last_qc_at: "2026-08-03T06:29:04"
 last_qc_outcome: "pass"
 ---
 

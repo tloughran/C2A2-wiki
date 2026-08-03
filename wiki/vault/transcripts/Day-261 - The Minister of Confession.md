@@ -16,8 +16,8 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-261 - The Minister of Confession - Contemporary]]"
 tags: [summa, day/261, pars/supplement, q/penance]
-last_qc_at: "2026-07-09T20:24:50"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-31T20:20:17"
+last_qc_outcome: "pass"
 ---
 
 # Day 261 — The Minister of Confession

@@ -16,8 +16,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-260 - Slight Contrition - Contemporary]]"
 tags: [summa, day/260, pars/suppl, q/3]
-last_qc_at: "2026-07-09T20:24:49"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-31T20:20:25"
+last_qc_outcome: "pass"
 ---
 
 # Day 260 — Slight Contrition

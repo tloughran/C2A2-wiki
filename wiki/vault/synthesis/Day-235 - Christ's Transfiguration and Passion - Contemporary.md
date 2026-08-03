@@ -18,7 +18,7 @@ evidence_strength_summary: "The a.3 hinge — deliverance perfected by love free
 mind_first_reframe: "The passion is read as the cost the loving-unity computation pays under its own constraint — that union must be freely computed by each limited perspective, so love can only be evoked, never imposed; the transfiguration is the foretaste installed in a few so the many can endure the cost."
 central_theme_thread: "This is the day the central theme stops being structure and becomes price: 'work out your salvation in fear and trembling' is Philippians' own commentary on the obedience-unto-death hymn that precedes it — the loving unity is obtained from within limitation, at full cost, and the perfection of salvation is Aquinas's own a.3 claim: to know how much one is loved, and be stirred to love in return."
 tags: [synthesis, day/235, theme/love-evoked-not-imposed]
-last_qc_at: "2026-07-23T08:21:40"
+last_qc_at: "2026-07-31T10:27:35"
 last_qc_outcome: "pass"
 ---
 

@@ -16,7 +16,7 @@ evidence_strength_summary: "Mercy as co-suffering = the other's prediction-error
 mind_first_reframe: "Mercy is coupling under the sign of the other's misery — taking their suffering as one's own because their states are weighted inside one's model (Friston PRS-06; Fredrickson PRS-02). It requires being affectable: to couple you must have an open Markov blanket, susceptible to the other's states (Friston PRS-07), so the 'defect' of passibility (Q.30 a.2) is precisely the condition of compassion; the Incarnation is the whole entering passibility to couple with the limited (Rohr PRS-03/04). The order of beneficence (Q.31 a.3) is loving unity computed under finite resources — a finite agent allocating finite love by coupling-strength and urgency, with extreme need as a precision-weighted override (Friston PRS-10). Beneficence is the coupling externalized: love is co-active, not a sentiment."
 central_theme_thread: "Q.31 a.3 is the central theme spoken almost verbatim: 'it is not possible as a finite temporal thing to spend the exact same amount of time and effort loving each and every single human being on the planet.' Learning to obtain loving unity from each perspective IS a computational task limited by the resources we perceive. The order of beneficence is the structure of that computation — finite love allocated by nearness and urgency — and the stranger-in-extreme-need exception is the high-precision signal that rightly overrides the default gradient. Mercy adds the affective condition: to compute toward the whole you must be open enough to let the other's misery move you."
 tags: [synthesis, day/133, theme/resource-bounded-love]
-last_qc_at: "2026-07-18T16:21:11"
+last_qc_at: "2026-08-03T06:28:37"
 last_qc_outcome: "pass"
 ---
 

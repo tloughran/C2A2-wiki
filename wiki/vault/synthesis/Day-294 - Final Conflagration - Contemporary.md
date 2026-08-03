@@ -16,7 +16,7 @@ length_ratio_to_target: 0.68
 mind_first_reframe: "The conflagration is the renewal of one conserved cosmos — matter changed in state, not destroyed; the same purifying process is felt differently by different perspectives according to what each contains to be purged."
 central_theme_thread: "One process, perspective-relative effect: the fire that is mere transformation 'from outside' is pain or peace 'from inside' depending on the perspective's own state — the project's individuation-by-limitation written across the whole cosmos at its renewal."
 tags: [synthesis, day/294, theme/cosmic-renewal-as-transformation-not-annihilation]
-last_qc_at: "2026-07-20T14:27:21"
+last_qc_at: "2026-07-28T18:26:16"
 last_qc_outcome: "pass"
 ---
 

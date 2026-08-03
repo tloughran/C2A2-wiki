@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-087 - Diminishing Habits - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/087, pars/I-II, q/52_53]
-last_qc_at: "2026-07-15T13:07:45"
+last_qc_at: "2026-08-02T20:20:55"
 last_qc_outcome: "pass"
 ---
 

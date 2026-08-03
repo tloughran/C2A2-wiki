@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-255 - Penance as a Virtue - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-11T12:21:39"
+last_qc_at: "2026-07-27T16:19:46"
 last_qc_outcome: "pass"
 tags: [summa, day/255, pars/3, q/85]
 ---

@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-203 - Prophetic Certainty - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/203, pars/II, q/170, q/171]
-last_qc_at: "2026-07-17T00:19:49"
+last_qc_at: "2026-07-31T08:20:45"
 last_qc_outcome: "pass"
 ---
 

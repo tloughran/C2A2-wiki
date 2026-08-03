@@ -2,9 +2,9 @@
 day: 304
 title: Vision of the Damned (Contemporary)
 pairs_with: "[[Day-304 - Vision of the Damned]]"
-length_target_words: 1550
+length_target_words: 1500
 length_actual_words: 1098
-length_ratio_to_target: 0.71
+length_ratio_to_target: 0.73
 length_tier: short
 length_note: "Body 1098 words vs ~1500 tier guideline (-27%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
 karpathy_wiki_sources:
@@ -17,8 +17,8 @@ evidence_strength_summary: "Degrees-of-beatitude-by-charity read as differentiat
 mind_first_reframe: "Degrees of glory are read as the persistence of individuation into the end-state — each perspective fulfilled as itself by the precise charity that formed it — while the saints' relation to the damned is the seam where the synthesis diverges from Aquinas toward inclusion, since the loss of any perspective diminishes the whole rather than sweetening it."
 central_theme_thread: "Q.93 vindicates the theme — individuation is the very texture of beatitude, not its enemy; Q.94 is its hardest test, and because loving unity is the telos that contains every limited perspective, the synthesis parts company with Aquinas's rejoicing-in-punishment, holding the inclusive wager in fear and trembling."
 tags: [synthesis, day/304, theme/individuation-persists-in-glory]
-last_qc_at: "2026-07-20T12:18:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-29T02:29:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 304 — Vision of the Damned (Contemporary Parallel)

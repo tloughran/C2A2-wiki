@@ -3,23 +3,25 @@ day: 207
 title: Miracles (Contemporary)
 pairs_with: "[[Day-207 - Miracles]]"
 length_target_words: 1500
-length_actual_words: 1582
-length_ratio_to_target: 1.055
+length_actual_words: 1845
+length_ratio_to_target: 1.23
 length_tier: short
-length_note: "Two substantive questions in one short episode (Q.178 miracles + Q.179 the active/contemplative division); the synthesis runs slightly long to give each its own PRS turn rather than slighting one."
+length_note: "Two substantive questions in one short episode (Q.178 miracles + Q.179 the active/contemplative division); the synthesis runs long to give each its own PRS turn rather than slighting one. Extended 2026-07-28 by QC sweep: the Q.179 contemplative/active locus is one the topical priors assign to Rohr, and the Rohr-tradition wiki carries PRS-19 written for exactly these questions, but neither Rohr nor Wright was cited; a Resource paragraph and a bridge were added. The overrun is substantive Aquinas-to-contemporary linkage, informational per the constitution's run-long rule, not a tier error."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-16 the Platonic space — authority over the form/rules the system realizes)"
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-17 ITP-internal redefinition of illusion — genuine change beneath the interface vs manipulation of the senses)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — the practical intellect as action/policy; PRS-15 the OODA loop)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 contemplative vs manipulative modes; PRS-07 division and union as creative synthesis)"
   - "traditions/kastrup/prs_triplets.md (PRS-09 representation vs participatory encounter — contemplation as participatory knowing)"
+  - "traditions/rohr/prs_triplets.md (PRS-19 lever-and-fulcrum, recorded for the Q.179-182 contemplative/active loci — Dancing Standing Still; PRS-01 non-dual unity-in-distinction)"
+  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology — the present as the space between the decisive event and its working-out; Surprised by Hope)"
   - "master/cross_program_index.md (CROSS-005 love/union as fundamental; CROSS-025 FEP as substrate-independent law of self-organization)"
 evidence_strength_summary: "Genuine miracle = authority over the generative rules vs demonic counterfeit = manipulation within them / illusion to the senses ~ change beneath the interface vs interface manipulation = structural/speculative (medium); 'without charity, nothing' / 'I never knew you' = central-theme analogy (strong) + theological; active vs contemplative ~ practical action-policy vs participatory contemplation, both ends of one intellect = conceptual (medium); the Creator as 'legislator of the laws of nature,' charity as the distinguishing gift = theological."
 mind_first_reframe: "A genuine sign is an authorized change at the generative source the world-interface renders — only the 'legislator' can rewrite the rule — distinct from a within-the-rules wonder or a tampering with the rendering; and a life takes exhaustively two shapes because intellect has two ends, participatory contemplation and inferential action under resources."
 central_theme_thread: "Power over the interface ('faith to move mountains') is not inclusion in the loving whole — 'without charity, nothing,' and the wonder-worker can hear 'I never knew you' — so the active life is the resource-bounded computation 'in fear and trembling' toward the contemplative vision of the whole that every limited perspective works toward."
 tags: [synthesis, day/207, theme/sign-and-the-two-lives]
-last_qc_at: "2026-07-20T10:30:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-28T16:23:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 207 — Miracles (Contemporary Parallel)
@@ -35,6 +37,8 @@ Two inquiry-problems, one per question. (1) **What distinguishes a real sign fro
 ## Resource
 
 For (1), the leading moves come from Levin and Hoffman. Tom's PRS-form record of Levin (PRS-01, morphogenetic control; PRS-16, the Platonic space of forms) describes agency that operates *on the rules a system realizes* — bioelectric reprogramming changes not a single cell's state but the target morphology the whole tissue computes toward. That is the structural shape of Aquinas's "legislator": authority is the capacity to alter the *generative rule*, not merely a state within it. Tom's PRS-form record of Hoffman sharpens the three tiers. On interface theory, rendered spacetime is the perceiver's interface, not the ground (PRS-04); Hoffman's ITP-internal redefinition of illusion (PRS-17) marks precisely the difference Aquinas needs — a genuine change *beneath* the interface (at the level the interface renders) versus a manipulation *of the rendering itself*. The genuine miracle is a change at the source the interface depicts; the demonic "illusion to the external or internal senses" is, in this idiom, exactly a tampering with the rendering — and the spectacular-but-natural wonder is a within-the-rules event dressed to look like more. For the charity-clause, CROSS-005 (love/union as a fundamental category — Fredrickson, Stump, Kastrup) carries forward the now-familiar verdict: the wonder is an instrument; the union is the end. For (2), McGilchrist gives the cleanest mapping: Tom's PRS-form record of McGilchrist (PRS-01) distinguishes a *contemplative, receptive* mode from a *manipulative, action-oriented* one, and (PRS-07) names their proper relation as *division-and-union* — not two rival lives but a synthesis in which the active is subordinate to the contemplative. Tom's PRS-form record of Friston (PRS-04, the organism as active modeler; PRS-15, the full OODA loop) gives the active intellect its formal description: truth taken up "for the sake of informing action" is the policy/action arc of an inference loop. Tom's PRS-form record of Kastrup (PRS-09, representation vs participatory encounter) gives the contemplative its character: contemplation of truth "for its own sake" is participatory knowing, the knower informed by the thing rather than acting on it.
+
+The theological register the locus calls for is carried by two further records. PRS-19 in the Rohr-tradition wiki was written for these very questions, and supplies the image the complementarity needs: the lever and the fulcrum (*Dancing Standing Still*). The active life is the lever that moves the world, but a lever does no work without a place to stand that the lever itself cannot supply; contemplation is that place. This is why Mary's portion can be called the better one without the active life being disparaged — the relation is unity-in-distinction (PRS-01 in the Rohr-tradition wiki), not rivalry. Wright keeps the active life from reducing to busyness: on the inaugurated-eschatology reading (PRS-03 in the Wright-tradition wiki, *Surprised by Hope*), the present is the interval between the decisive event and its full working-out — which is the register in which working out one's salvation "in fear and trembling" is a description of the active life rather than an anxiety about it.
 
 ## Solution (proposed, speculative)
 
@@ -56,6 +60,7 @@ The day states the project's discipline twice and its telos once. The *disciplin
 - **Demonic "illusion to the senses" ↔ manipulation of the rendering, not the source** — Tom's PRS-form record of Hoffman, PRS-17. *Why:* a doctored appearance changes the interface without changing what it depicts. Evidence: **structural, medium**.
 - **"All faith to move mountains, but have not charity, I am nothing" ↔ love/union as the fundamental category the sign only serves** — master CROSS-005; Tom's PRS-form record of Fredrickson (love as a real category, not sentiment). *Why:* the wonder is instrumental; the union is the end. Evidence: **central-theme + theological, strong**.
 - **Contemplative vs active intellect ↔ participatory knowing vs inferential action under resources, in division-and-union** — Tom's PRS-form record of McGilchrist, PRS-01/PRS-07; Tom's PRS-form record of Kastrup, PRS-09; Tom's PRS-form record of Friston, PRS-04. *Why:* the two ends of intellect are being-informed-by-the-whole and acting-toward-it, rightly ordered with the active subordinate to the contemplative. Evidence: **conceptual, medium**.
+- **The two lives as one ordered life ↔ lever and fulcrum** — PRS-19 in the Rohr-tradition wiki (*Dancing Standing Still*), recorded for the Q.179–182 loci, with PRS-01 on unity-in-distinction; PRS-03 in the Wright-tradition wiki (*Surprised by Hope*) on the present as the interval between the decisive event and its working-out. *Why:* the active life moves the world only from a place to stand that it cannot itself provide. Evidence: **theological/contemplative, strong within its program**.
 
 ## Where this leaves us
 

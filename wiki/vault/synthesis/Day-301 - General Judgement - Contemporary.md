@@ -17,7 +17,7 @@ evidence_strength_summary: "Markov/trace-blanket formalism is formal/empirical; 
 mind_first_reframe: "The general judgment is read as the limit case of mutual legibility — every Markov/trace blanket made transparent at once, so each agent's individuating interior becomes contained in and visible to every other perspective."
 central_theme_thread: "Bandwidth tracks union: the agent nearest the simple whole sees all limited perspectives at once because it sees them in the whole, while the agent still bound to its limitation reads them only serially on borrowed power — judgment is where perspective-containment becomes manifest."
 tags: [synthesis, day/301, theme/legibility-of-perspective]
-last_qc_at: "2026-07-20T12:18:41"
+last_qc_at: "2026-07-29T02:28:45"
 last_qc_outcome: "pass"
 ---
 

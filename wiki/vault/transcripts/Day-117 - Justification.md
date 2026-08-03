@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-117 - Justification - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/117, pars/I-II, q/112-113]
-last_qc_at: "2026-07-10T16:21:42"
+last_qc_at: "2026-07-26T12:22:50"
 last_qc_outcome: "pass"
 ---
 

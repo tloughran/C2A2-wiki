@@ -16,8 +16,8 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-177 - Covetousness - Contemporary]]"
 tags: [summa, day/177, pars/II-II, q/118-119]
-last_qc_at: "2026-07-22T04:21:02"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-30T12:22:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 177 — Covetousness
@@ -25,6 +25,7 @@ last_qc_outcome: "pass"
 > Austin Habash, *Think Catholic* — Summa Theologiae in a Year, Secunda Secundae, Q.118-119.
 
 > Typo cleanup (QC sweep 2026-07-08): a Maria Press -> Ave Maria Press (x2); "is day 77" -> "is day 177" (ASR dropped the leading digit of the episode number).
+> Typo cleanup (QC sweep 2026-07-30): immodderate -> immoderate (x7); immodderateness -> immoderateness (x1) — ASR misspelling of the technical term rendering Aquinas's *immoderatus* in ST II-II Q.118.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
@@ -40,7 +41,7 @@ now get at a discounted price from Ave Maria Press's site by typing in the code 
 
 liberality is the virtue of which we will now be looking at the deficiency and the excess vices contrary to that virtue. Covetousness is a vice opposed
 
-[01:10] to the virtue of liberality by means of deficiency. It is an immodderate desire of possessing. But what precisely constitutes the immodderateness of this
+[01:10] to the virtue of liberality by means of deficiency. It is an immoderate desire of possessing. But what precisely constitutes the immoderateness of this
 
 quality in the man directed towards riches is that it is contrary to the rule of reason. The end determines the means. And we have both a natural and
 
@@ -48,9 +49,9 @@ the sustaining of the body, our family, the state as well as a supernatural end,
 
 [01:39] wealth or goods goes beyond trespasses, what is necessary as a means for these ends, then this willful desire for riches will be contrary to reason and
 
-thus sinful. Therefore, in response to article covetousness as the immodderate desire of possessing is a sin. Article two whether covetousness is a special
+thus sinful. Therefore, in response to article covetousness as the immoderate desire of possessing is a sin. Article two whether covetousness is a special
 
-sin and in one way covetousness if it just denote immodderate desire well that might pertain to every sin or most sins as St. James teaches then desire when it
+sin and in one way covetousness if it just denote immoderate desire well that might pertain to every sin or most sins as St. James teaches then desire when it
 
 [02:13] has conceived gives birth to sin and sin when it is full grown brings forth death. Yet covetousness can also be considered as a unique vice by having a
 
@@ -70,11 +71,11 @@ urgent need, then this will denote mortal sin. And when it comes to covetousness
 
 to the love of God and his neighbor, covetousness will then be a mortal sin. But if covetousness does not infringe on justice or charity, if it is just the
 
-immodderate desire for riches, then the act stemming from that desire may only be venal. Article five, whether covetousness is the greatest of sins.
+immoderate desire for riches, then the act stemming from that desire may only be venal. Article five, whether covetousness is the greatest of sins.
 
 [03:47] And as we said in the last episode, the greater the end or good be that is perverted, the more wicked that sin is, which makes the sins against faith, open
 
-charity, and religion, for example, much more grievous than an immodderate desire for riches, which is covetousness. However, Aquinas says a person could
+charity, and religion, for example, much more grievous than an immoderate desire for riches, which is covetousness. However, Aquinas says a person could
 
 consider some sins more wicked than others from the vantage point of them being more or less beneath man. And to subject oneself to external goods, to
 
@@ -102,11 +103,11 @@ brings with it the true promise of perfect self-sufficiency, tranquility, it can
 
 false promise of self-sufficiency and thus can appear to be the good which will make us completely satisfied, self-sufficient, tranquil instead of
 
-[06:22] God, which is untrue. All this to say that covetousness is a capital vice and that the immodderate desire for money leads to many other vices which we're
+[06:22] God, which is untrue. All this to say that covetousness is a capital vice and that the immoderate desire for money leads to many other vices which we're
 
 going to go through in our next article. Article 8, whether treachery, fraud, falsehood, perjury, restlessness, violence, and insensibility to mercy are
 
-daughters of covetousness. And these are the daughters of covetousness or the vices which arise easily from the immodderate desire for riches. And why
+daughters of covetousness. And these are the daughters of covetousness or the vices which arise easily from the immoderate desire for riches. And why
 
 [06:51] that is the case is because first of all, the greedy man is tempted to retain money moderately. And that pertains to insensibility to mercy, not giving to
 

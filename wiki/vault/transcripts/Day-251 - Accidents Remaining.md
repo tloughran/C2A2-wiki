@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-251 - Accidents Remaining - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-09T20:24:36"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-31T12:20:26"
+last_qc_outcome: "pass"
 tags: [summa, day/251, pars/3, q/77]
 ---
 

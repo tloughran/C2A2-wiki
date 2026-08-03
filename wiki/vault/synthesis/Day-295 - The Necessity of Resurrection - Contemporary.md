@@ -16,8 +16,8 @@ evidence_strength_summary: "The 'form as real, scaling, substrate-spanning patte
 mind_first_reframe: "The soul is the form of the body — an organizing pattern that is real and constitutive, not a ghost in a husk; a perspective without its body is genuinely incomplete, so its completion requires re-embodiment, not escape."
 central_theme_thread: "Embodiment is constitutive of the human perspective, not a limitation to be shed; loving unity is the union of embodied perspectives perfected, which is exactly why the hope is resurrection of the body and not the soul's flight from it."
 tags: [synthesis, day/295, theme/soul-as-form-and-the-necessity-of-re-embodiment]
-last_qc_at: "2026-07-20T14:27:22"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-07-28T20:23:10"
+last_qc_outcome: "pass"
 ---
 
 # Day 295 — The Necessity of Resurrection (Contemporary Parallel)

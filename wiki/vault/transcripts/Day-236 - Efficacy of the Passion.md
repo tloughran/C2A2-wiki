@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-236 - Efficacy of the Passion - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/236, pars/III, q/47 q/48]
-last_qc_at: "2026-07-09T16:21:58"
+last_qc_at: "2026-07-24T16:20:24"
 last_qc_outcome: "pass"
 ---
 

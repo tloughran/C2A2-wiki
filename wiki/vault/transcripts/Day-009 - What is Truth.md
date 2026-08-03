@@ -24,7 +24,7 @@ tags: [summa, day/009, pars/I]
 
 > Episode: <https://www.youtube.com/watch?v=r8RXqHb0NQw
 
->
+> 
 
 > Series: *Summa in a Year* by Austin Habash (Think Catholic). Day 9 of 308 published episodes.
 

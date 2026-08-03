@@ -6,6 +6,7 @@ length_target_words: 1500
 length_actual_words: 1653
 length_ratio_to_target: 1.102
 length_tier: short
+length_note: "1653 words vs the 1650 short-tier ceiling (1.102 of target). The day covers two dense questions — Q.84 adoration (latria/dulia, bodily acts, determinate place) and Q.85 sacrifice (natural law, due to God alone, special act of religion, universal obligation) — plus the Christological extension (cross as definitive sacrifice; Romans 12 living sacrifice) that the material requires. Multi-question dense day per the QC length-variation policy; the overrun is coverage, not padding."
 karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-03 Universal Christ in matter — sacrifice as the cosmic Christ's pattern enacted in the material gift; PRS-01 non-dual — sacrifice as participation, not propitiation)"
   - "traditions/wright/prs_triplets.md (PRS-04 the cross as the definitive sacrifice that ends sacrifice; the temple-sacrifice tradition reframed in second-temple Judaism and Pauline reading; the body as living sacrifice (Rom 12))"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Aquinas's reading of sacrifice as natural-law univer
 mind_first_reframe: "Aquinas: sacrifice is whatever is done for the honor properly due to God, with the *inner* sacrifice (the offered will) as the substance and the *outer* sign as its manifestation; sacrifice is rooted in natural law and offered by every people. The mind-monist frame inherits this directly: the offered will is the alter's active alignment with the field (the inner reality); the bodily and material sign is the alter's extension of that alignment into the polity's shared apparatus of meaning-making (the outer ritual). Augustine's "every work done that we may cling to God in holy fellowship is a true sacrifice" is the central claim stated almost verbatim: any action of the limited perspective that effects its alignment with the whole is, by that fact, a sacrifice."
 central_theme_thread: "Adoration and sacrifice are the embodied form of the alignment Day 159's prayer named in interior address. Bodily prostration (Q.84) and material offering (Q.85) are not separate acts added to the interior alignment but its enactment in the substrate the limited perspective actually is — flesh and matter. The central claim is that loving unity is the goal toward which each perspective computes; adoration and sacrifice are the perspective's acknowledgment of that goal made bodily, with the body as the part of the polity that materially extends the orientation into the shared field. The cross — the definitive sacrifice in Wright's and Rohr's readings — is then the central claim's deepest case: the whole entering the part's suffering to draw it into the alignment by absorbing its defection rather than excising it (the theme Day 150 reached in the death-penalty question)."
 tags: [synthesis, day/160, theme/sacrifice-as-embodied-alignment]
-last_qc_at: "2026-07-19T20:19:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-07-27T22:35:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 160 — Contemporary Parallel: Adoration, Sacrifice, and the Body's Alignment

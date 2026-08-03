@@ -17,8 +17,8 @@ evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-07-18T02:27:02"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-02T10:28:38"
+last_qc_outcome: "pass"
 ---
 
 # Day 271 — Public Penance (Contemporary)

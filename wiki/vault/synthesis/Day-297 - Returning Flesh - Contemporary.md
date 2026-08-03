@@ -16,8 +16,8 @@ length_ratio_to_target: 0.7
 mind_first_reframe: "The risen body is the same body because the same *form* — its organization, proportion, and order of parts — is restored, not because the same atoms return; 'totality of species, not of matter' is the ship-of-Theseus answer stated in the thirteenth century."
 central_theme_thread: "What is gathered into loving unity is the embodied *perspective as form* — the way of being and seeing — perfected and made whole; numerical sameness of matter is neither necessary nor the point."
 tags: [synthesis, day/297, theme/same-body-as-same-form-not-same-matter]
-last_qc_at: "2026-07-18T12:18:37"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-03T08:24:52"
+last_qc_outcome: "pass"
 ---
 
 # Day 297 — Returning Flesh (Contemporary Parallel)
