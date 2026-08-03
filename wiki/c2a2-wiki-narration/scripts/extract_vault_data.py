@@ -444,6 +444,18 @@ def scan_vault(vault_path):
         # change — and it would recur silently on every future regen.
         if 'node_modules' in rel.parts:
             continue
+        # Skip wiki/vault/ — it is a SYNCED COPY of the Summa 2026 project,
+        # which parse_summa_vault() already contributes as the curated `summa`
+        # group (day-dated, question-labelled, gold). Walking it here too put
+        # the entire Summa corpus in the graph TWICE: 611 byte-identical pairs,
+        # the shadow half grey and uncurated under group `root`, carrying ~30k
+        # edges and inflating every degree and shared-reference weight.
+        # Measured 2026-08-03; present in every build back to at least 07-28.
+        # Safe only because presence in the curated layer now comes from the
+        # filesystem rather than summa_index.json — before that fix this
+        # exclusion would have silently dropped Day-001 and Day-035.
+        if rel.parts and rel.parts[0] == 'vault':
+            continue
         try:
             content = md_file.read_text(encoding='utf-8', errors='replace')
         except Exception:
@@ -699,33 +711,59 @@ def parse_summa_vault(summa_path):
         print(f"Warning: failed to parse Summa index: {e}", file=sys.stderr)
         return []
 
-    # Group articles by their synthesis file (day). Capture the day's
-    # representative title from the first article in each group.
-    by_synth = defaultdict(list)
+    # PRESENCE COMES FROM THE FILESYSTEM, LABELLING FROM THE INDEX.
+    #
+    # This used to iterate the index: nodes existed only for synthesis files
+    # named by some article entry. That silently deleted any day the index had
+    # not mapped — on 2026-08-03, Day-001 (Introduction) and Day-035 (Genesis)
+    # were on disk but absent from the graph, and the only reason they appeared
+    # at all was the duplicate wiki/vault/ copy this layer is meant to replace.
+    # A day that exists as a file is a day; the index decides what to CALL it,
+    # not whether it is there. Every file parses a Day-NNN (307 each in
+    # synthesis/ and transcripts/, days 1..307, no duplicates), so keying on the
+    # filename is unambiguous.
+    by_day = defaultdict(list)
     for article_key, entry in index.items():
-        synth_rel = entry.get("synthesis")
-        if synth_rel:
-            by_synth[synth_rel].append(entry)
+        day_no = entry.get("day")
+        if day_no is not None:
+            by_day[day_no].append(entry)
+
+    def day_of(path):
+        m = re.match(r"Day-(\d+)", path.name)
+        return int(m.group(1)) if m else None
+
+    synth_files = {}
+    synth_dir = summa_root / "synthesis"
+    if synth_dir.is_dir():
+        for p in sorted(synth_dir.glob("*.md")):
+            d = day_of(p)
+            if d is not None:
+                synth_files[d] = p
+
+    transcript_files = {}
+    tr_dir = summa_root / "transcripts"
+    if tr_dir.is_dir():
+        for p in sorted(tr_dir.glob("*.md")):
+            d = day_of(p)
+            if d is not None:
+                transcript_files[d] = p
 
     nodes = []
     # We also annotate each synthesis node with its day + question numbers so
     # build_connections() can produce day-continuity and question-continuity
     # edges later. Stored under the JSON `summa_meta` field; not used by C2A2
     # logic, only by Summa-specific edge construction.
-    for synth_rel in sorted(by_synth.keys()):
-        synth_full = summa_root / synth_rel
-        if not synth_full.exists():
-            # Quietly skip days the user hasn't pushed yet — keeps the local
-            # extraction tolerant of partial coverage.
-            continue
+    for day in sorted(synth_files):
+        synth_full = synth_files[day]
         try:
             content = synth_full.read_text(encoding="utf-8", errors="replace")
         except Exception:
             content = ""
 
-        entries = by_synth[synth_rel]
-        day = entries[0].get("day") if entries else None
-        transcript_rel = entries[0].get("transcript") if entries else None
+        entries = by_day.get(day, [])
+        tr_path = transcript_files.get(day)
+        transcript_rel = ("transcripts/" + tr_path.name) if tr_path else None
+        synth_rel = "synthesis/" + synth_full.name
         node_date = ""
         if transcript_rel:
             node_date = extract_fetched_at(summa_root / transcript_rel)
@@ -738,17 +776,19 @@ def parse_summa_vault(summa_path):
 
         # Title format: "Contemporary commentary on Summa Question N" (singular)
         # or "Contemporary commentary on Summa Questions N, M" (multi-question).
-        # Falls back to filename / Day-N when question metadata is unavailable.
+        # Days the index does not map (Day-001 Introduction, Day-035 Genesis)
+        # have no question numbers, so they fall back to the document's own H1,
+        # which is far more informative than a bare "Day 035". Every day that
+        # IS mapped still gets the question-numbered title, so no existing
+        # label changes.
         if questions:
             if len(questions) == 1:
                 title = f"Contemporary commentary on Summa Question {questions[0]}"
             else:
                 qs_str = ", ".join(str(q) for q in questions)
                 title = f"Contemporary commentary on Summa Questions {qs_str}"
-        elif day:
-            title = f"Day {day:03d}"
         else:
-            title = extract_title(content)
+            title = extract_title(content) or f"Day {day:03d}"
 
         synth_refs = extract_references(content)
         nodes.append({
@@ -775,20 +815,18 @@ def parse_summa_vault(summa_path):
     # on disk yet). Each transcript node carries the same fetched_at date as
     # its synthesis (they share that field by construction), so the slider
     # treats the pair as a coupled point on the Gregorian axis.
-    for synth_rel in sorted(by_synth.keys()):
-        entries = by_synth[synth_rel]
-        transcript_rel = entries[0].get("transcript") if entries else None
-        if not transcript_rel:
-            continue
-        tr_full = summa_root / transcript_rel
-        if not tr_full.exists():
-            continue
+    for day in sorted(transcript_files):
+        tr_full = transcript_files[day]
+        transcript_rel = "transcripts/" + tr_full.name
+        # Pair to the same day's synthesis. A transcript with no synthesis on
+        # disk still becomes a node (it exists), just an unpaired one.
+        synth_partner = synth_files.get(day)
+        entries = by_day.get(day, [])
         try:
             tr_content = tr_full.read_text(encoding="utf-8", errors="replace")
         except Exception:
             tr_content = ""
 
-        day = entries[0].get("day")
         questions = sorted({
             e.get("question") for e in entries if e.get("question") is not None
         })
@@ -819,7 +857,11 @@ def parse_summa_vault(summa_path):
             "summa_questions": questions,
             # Carry the paired synthesis filepath so PASS C edge-building can
             # emit a transcript↔synthesis edge without re-grouping by day.
-            "summa_pair_synthesis": f"summa/{synth_rel}",
+            # None when this day has a transcript but no synthesis on disk;
+            # build_connections() already skips pairs it cannot resolve.
+            "summa_pair_synthesis": (
+                f"summa/synthesis/{synth_partner.name}" if synth_partner else None
+            ),
         })
 
     # PASS C — also include refs/*.md as Summa nodes. The most important is

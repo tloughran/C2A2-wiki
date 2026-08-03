@@ -279,11 +279,32 @@ def build_graph_data(data, agent_data=None):
                 'score_bridge': 0.0,
             }
 
+        def _resolve_target(t):
+            """Map an agent's on-disk wiki path onto the graph's node id.
+
+            The agent extractor records what agents actually touched, which for
+            Summa content is the synced copy at wiki/vault/. The graph no longer
+            carries that namespace — extract_vault_data skips wiki/vault/ because
+            parse_summa_vault already contributes the same files as the curated
+            `summa` group. Same file, different id. Without this translation the
+            dedup silently orphaned 1162 of 3084 substrate edges (2026-08-03),
+            which reads as "these agents never touched Summa" rather than as a
+            namespace change.
+            """
+            if t in _existing_ids:
+                return t
+            if t.startswith('vault/'):
+                alt = 'summa/' + t[len('vault/'):]
+                if alt in _existing_ids:
+                    return alt
+            return None
+
         skipped_substrate = 0
         for e in agent_data.get('coref_substrate', []):
             s, t, w = e['source'], e['target'], e.get('weight', 1)
-            # source is an agent actor; target must be an existing wiki node.
-            if s in _agent_ids and t in _existing_ids:
+            # source is an agent actor; target must resolve to an existing node.
+            t = _resolve_target(t)
+            if s in _agent_ids and t:
                 links.append(_agent_edge(s, t, 'substrate', w))
             else:
                 skipped_substrate += 1
