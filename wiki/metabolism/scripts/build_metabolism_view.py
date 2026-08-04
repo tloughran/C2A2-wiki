@@ -39,6 +39,15 @@ HOME = os.path.expanduser("~")
 DEFAULT_DB = os.path.join(HOME, "Documents/Non-Claude Projects/OpenStory/data/open-story.db")
 DEFAULT_MAP = os.path.join(HOME, "Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/agents/openstory/agent_map.json")
 
+# How old the newest cross-tradition signal may get before compute_signal_yield
+# says so out loud. 21 days: the sources behind it (pattern-detector findings,
+# the cross-program index, approved review cards) are bursty, so a fortnight of
+# quiet is normal and three weeks is not.
+SIGNAL_STALE_WARN_DAYS = 21
+# Filled in by compute_signal_yield; copied into _meta so the axis ships its own
+# provenance rather than a bare, unreadable zero.
+SIGNAL_SOURCE = {"status": "not_read"}
+
 
 def connect_ro(db_path):
     if not os.path.exists(db_path):
@@ -244,9 +253,17 @@ def compute_signal_yield(sig_html):
     same dated dataset the Interactions tab shows (its upstream extract_signals.py
     is out-of-git, so this in-repo HTML is the canonical in-tree source). Distinct
     from the PRS-similarity connectome cross-edges, which are static/undated.
-    Returns {date: count}; warns and returns empty if the source is unreadable."""
+    Returns {date: count}; warns and returns empty if the source is unreadable.
+
+    Also records what it found in SIGNAL_SOURCE, which main() copies into _meta.
+    A frozen source and a genuinely quiet upstream both render as a flat zero on
+    this axis, and for six weeks (2026-06-23 -> 2026-08-04) it WAS frozen: the
+    stream was a hand-built 2026-06-28 artifact nobody rebuilt, hiding 192
+    signals. The axis must therefore carry its own provenance, so a zero can be
+    read as 'no signals' or 'stale source' without opening another file."""
     out = defaultdict(int)
     if not os.path.isfile(sig_html):
+        SIGNAL_SOURCE["status"] = "missing"
         sys.stderr.write("WARN: %s missing; signals yield axis will be empty\n" % sig_html)
         return out
     try:
@@ -254,12 +271,28 @@ def compute_signal_yield(sig_html):
         j = shtml.index("const SIG = ") + len("const SIG = ")
         sig_arr, _ = json.JSONDecoder().raw_decode(shtml, j)
     except (ValueError, OSError) as e:
+        SIGNAL_SOURCE["status"] = "unparseable"
         sys.stderr.write("WARN: could not parse signals from %s: %s\n" % (sig_html, e))
         return out
     for rec in sig_arr:
         d = (rec.get("date") or "").strip()
         if re.match(r"^\d{4}-\d{2}-\d{2}$", d):
             out[d] += 1
+
+    SIGNAL_SOURCE.update(status="ok", records=len(sig_arr), dated=sum(out.values()),
+                         latest=(max(out) if out else None))
+    if out:
+        stale = (datetime.now().date()
+                 - datetime.strptime(max(out), "%Y-%m-%d").date()).days
+        SIGNAL_SOURCE["stale_days"] = stale
+        if stale > SIGNAL_STALE_WARN_DAYS:
+            # Not fatal: the snapshot is still an accurate picture of a stale
+            # source. Fatal would block every metabolism refresh on an unrelated
+            # pipeline. Loud, and recorded in _meta, is the honest middle.
+            sys.stderr.write(
+                "WARN: cross-tradition signal source is %d days stale (newest %s). "
+                "The yield_signals axis will read 0 for every day since. "
+                "Rebuild it: bash scripts/regen_level2_signals.sh\n" % (stale, max(out)))
     return out
 
 
@@ -488,6 +521,10 @@ def main():
         "lanes": lane_meta,
         "yield_daily": compute_vault_yield(args.repo) or [],
     }
+    # After the literal, not inside it: dict values evaluate in order, so _meta
+    # is already built by the time compute_vault_yield -> compute_signal_yield
+    # fills SIGNAL_SOURCE.
+    data["_meta"]["signal_source"] = dict(SIGNAL_SOURCE)
 
     os.makedirs(args.outdir, exist_ok=True)
     json_path = os.path.join(args.outdir, "metabolism_data.json")
@@ -503,6 +540,7 @@ def main():
     print("  lanes=%d runs=%d range=%s..%s"
           % (len(lane_meta), data["_meta"]["total_runs"],
              data["_meta"]["t_min"], data["_meta"]["t_max"]))
+    print("  signal source: %s" % data["_meta"]["signal_source"])
 
 
 HTML_TEMPLATE = r"""<!DOCTYPE html>
