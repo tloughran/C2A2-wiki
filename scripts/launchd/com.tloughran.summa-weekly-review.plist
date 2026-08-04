@@ -10,7 +10,7 @@
     Must be /bin/bash + the wrapper, NOT /usr/bin/python3 + the .py directly.
     The direct form left this job dead since at least 2026-07-19: weekly_review.log
     is nothing but "can't open file ... [Errno 1] Operation not permitted" repeated.
-    Same TCC trap as com.c2a2.scheduled-commit-check -- see the header of
+    Same TCC trap as com.c2a2.scheduled-commit-check; see the header of
     scripts/generate_weekly_review.sh.
   -->
   <key>ProgramArguments</key>
