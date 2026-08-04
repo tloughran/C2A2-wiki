@@ -117,7 +117,7 @@ This does **not** relax the standing gates, which exist for blast radius rather 
 **Vault path:** `/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/`
 
 ### Key Files (relative to vault root)
-- `wiki_narration.html` — the generated visualization (self-contained, ~28.7MB as of 2026-06-02)
+- `wiki_narration.html` — the generated visualization (self-contained, ~38.5MB as of 2026-08-04)
 - Source scripts are in the Cowork session at:
   - `wiki-narration/scripts/generate_visualization.py` — HTML generator
   - `wiki-narration/scripts/extract_vault_data.py` — vault data extractor
@@ -142,7 +142,10 @@ read it there, don't paste a bare two-arg call.
 
 ### Architecture
 - D3.js v7 force-directed graph, dark theme (#0a0a0f)
-- 2638 nodes (wiki files), 70,407 edges (wikilinks + shared references) — counts measured 2026-06-05 from the 2026-06-02 regen
+- 3864 nodes (wiki files), 98,201 edges (wikilinks + shared references). **Do not hand-copy
+  these forward** — the regen writes them to `wiki/c2a2-wiki-narration/scripts/build_meta.json`,
+  which is the source of truth. (Read on 2026-08-04; its `bytes` lagged the shipped file by
+  ~105KB that day, so a regen had not rewritten it — check before quoting it as current.)
 - Left panel: checkbox filters by tradition (14 thinkers) and structure group (10 categories)
 - Upper-right: Hold Forces, Show Hover Names, Fit All
 - Node click → right panel with rendered markdown; edge click → both panels
@@ -226,6 +229,68 @@ python3 scripts/janitor.py --promote <c>   # add check to auto-fix safelist
 python3 scripts/voice_faq.py status
 python3 scripts/voice_faq.py scan --pretty
 python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run to preview
+```
+
+---
+
+## Scheduler Health (did every job fire, survive, and produce?)
+
+**Script:** `scripts/check_scheduler_health.py` (+ `scripts/test_check_scheduler_health.py`)
+**Runs:** 05:45 daily, inside the existing `com.c2a2.scheduled-commit-check` launchd agent
+**Writes:** `scheduler/scheduler_health.md` (gitignored, sibling of `commit_check.md` / `run_stall.md`)
+**Read by:** the `scheduler-health-check` task at 07:00, which now only *reports* it
+
+### Three questions, in code
+
+| question | asked against |
+|---|---|
+| did it fire? | launchd `runs`; registry `lastRunAt` vs a cron the script evaluates itself |
+| did it survive? | launchd `last exit code` |
+| did it produce? | the date the artifact **records about itself** — never an mtime |
+
+Covers **70 registry tasks + 11 launchd agents + the artifact table**. Live baseline
+2026-08-04: 79 OK / 1 WARN / 2 FAIL.
+
+### Why it replaced a watchdog that already existed
+
+`scheduler-health-check` had run daily for months and caught none of the week's four
+silent failures, because it was blind three ways:
+
+1. It enumerated tasks with `mcp__scheduled-tasks__list_scheduled_tasks`, which returns
+   only the **calling session's** registry — **1 task of 70**. Its "all N enabled tasks
+   healthy" was N=1. Reading the registry JSON directly is the whole fix.
+2. It knew nothing about launchd, so `com.c2a2.metabolism-publish` at `runs = 0` was
+   never in scope. **A job that never fires writes no log**, so "read the log" finds
+   nothing and reads as "not yet".
+3. Its output check used **mtimes**. Git does not preserve them, so on a tracked file
+   that check is blind by construction.
+
+It cannot live inside the 07:00 task: the registry is under `~/Library/Application
+Support/Claude/` and scheduled tasks only mount `~/Documents`. Same constraint that put
+`check_scheduled_commits.py` behind a launchd agent. **Only `launchctl kickstart` tests
+the real path** — a Terminal shell has its own TCC grant and proves nothing.
+
+### Two deliberate tolerances (do not "fix" these)
+
+- **One missed fire passes; two fail.** One miss is a laptop asleep at 04:30. A report
+  that cries wolf is not read.
+- **`VERDICT_EXITS`** — an agent that *is* an assertion exits nonzero to mean "the thing
+  I watch is broken". Treating that as an agent fault would leave this permanently red on
+  exactly the days the other watchdog is working. Only the listed codes are excused;
+  78 (the macl-xattr trap) and 2 still FAIL.
+
+The cron evaluator is strict on purpose: an unparseable expression raises rather than
+matching everything, because match-everything turns every stale task into a pass.
+
+### Adding a check
+Append to `ARTIFACTS` in the script (owner, path, dotted JSON field holding an ISO date
+the producer wrote, max age). If a producer does not date itself, **make it** — do not
+fall back to mtime. Then extend the test; every assertion there is driven through its
+failure path.
+
+```bash
+python3 scripts/test_check_scheduler_health.py
+python3 scripts/check_scheduler_health.py --quiet
 ```
 
 ---
