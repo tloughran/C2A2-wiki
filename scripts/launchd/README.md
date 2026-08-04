@@ -32,6 +32,7 @@ respawn then raced a cold bus.
 | `com.c2a2.metabolism-publish` | `../publish_metabolism.sh` | weekly |
 | `com.tloughran.summa-vault-sync` | `sync_vault.sh` | daily 21:00 |
 | `com.tloughran.summa-weekly-review` | weekly review | weekly |
+| `com.c2a2.scheduled-commit-check` | `check_scheduled_commits.sh` (runs the commit check **and** the stall check) | daily 05:45 |
 
 ## Two rules that are not optional
 

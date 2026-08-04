@@ -7,11 +7,16 @@
   <string>com.c2a2.scheduled-commit-check</string>
 
   <!--
-    Asserts that scheduled tasks which are supposed to commit actually did.
-    This has to run on the Mac rather than inside a task sandbox: the registry
-    it reads lives under ~/Library/Application Support/Claude, and the scheduled
-    tasks only ever mount ~/Documents. morning-system-health reads the status
-    file this writes.
+    Two assertions about the daily run, one job:
+      - it committed what it produced      (scheduler/commit_check.md)
+      - it finished at all, and if not,
+        which tool it hung waiting on      (scheduler/run_stall.md)
+    Both have to run on the Mac rather than inside a task sandbox: the registry
+    and the run transcripts both live under ~/Library/Application Support/Claude,
+    and the scheduled tasks only ever mount ~/Documents. morning-system-health
+    reads the two status files this writes. The label predates the stall check
+    and is deliberately not renamed -- a rename means a bootout/bootstrap cycle
+    and a stale plist to chase, for no gain.
   -->
   <!--
     Must be /bin/bash + a wrapper, NOT /usr/bin/python3 + the .py directly.
