@@ -122,7 +122,25 @@ cp "$WORK/level2_signal_stream.html" "$P/level2_signal_stream.html"
 cp "$WORK/signals.json"              "$P/signals.json"
 cp "$WORK/signals_grown.json"        "$P/signals_grown.json"
 cp "$WORK/backlog_manifest.json"     "$P/backlog/backlog_manifest.json"
-cp "$WORK/qc_trace.csv"              "$P/backlog/qc_trace.csv"
+# qc_trace.csv stamps date_processed = today into all ~220 rows on every run, so
+# promoting it unconditionally would commit a date-only diff EVERY DAY once this
+# is wired into the daily task -- a second churn loop next to janitor-vs-sync.
+# Promote it only when something other than that column actually moved.
+python3 - "$WORK/qc_trace.csv" "$P/backlog/qc_trace.csv" <<'PY'
+import csv, os, shutil, sys
+new_p, cur_p = sys.argv[1], sys.argv[2]
+def body(p):
+    if not os.path.isfile(p):
+        return None
+    with open(p, newline="", encoding="utf-8") as fh:
+        rows = list(csv.DictReader(fh))
+    return [{k: v for k, v in r.items() if k != "date_processed"} for r in rows]
+if body(new_p) == body(cur_p):
+    print("[level2]   qc_trace.csv unchanged apart from date_processed — not promoted")
+else:
+    shutil.copyfile(new_p, cur_p)
+    print("[level2]   qc_trace.csv promoted (harvest content changed)")
+PY
 # Written LAST so the baseline can never describe a build that did not finish.
 cp "$WORK/meta.json" "$META"
 

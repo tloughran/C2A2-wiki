@@ -79,6 +79,39 @@ grep -q "WARN: newest cross-tradition signal is" "$SAVE/stale.log" && ok "stalen
 grep -q "OK —" "$SAVE/stale.log" && ok "correct rebuild still promoted despite WARN" \
   || bad "WARN wrongly blocked promotion"
 
+echo "=== 4. qc_trace.csv: a date-only change must NOT be promoted ==="
+QC="$ROOT/prototypes/backlog/qc_trace.csv"
+cp "$QC" "$SAVE/qc.csv"
+python3 - "$QC" <<'PY'
+import csv, sys
+p = sys.argv[1]
+with open(p, newline="", encoding="utf-8") as fh:
+    rows = list(csv.DictReader(fh)); cols = rows[0].keys()
+for r in rows: r["date_processed"] = "1999-01-01"
+with open(p, "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=list(cols)); w.writeheader(); w.writerows(rows)
+PY
+bash "$REGEN" >"$SAVE/qcdate.log" 2>&1
+grep -q "unchanged apart from date_processed" "$SAVE/qcdate.log" && ok "date-only qc_trace change is skipped" \
+  || bad "date-only qc_trace change was promoted (daily churn)"
+grep -q "1999-01-01" "$QC" && ok "tracked qc_trace.csv left alone" || bad "tracked qc_trace.csv was rewritten"
+
+echo "=== 5. qc_trace.csv: a real content change IS promoted ==="
+python3 - "$QC" <<'PY'
+import csv, sys
+p = sys.argv[1]
+with open(p, newline="", encoding="utf-8") as fh:
+    rows = list(csv.DictReader(fh)); cols = rows[0].keys()
+rows[0]["signals_emitted"] = "-999"          # a substantive field, not the date
+with open(p, "w", newline="", encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=list(cols)); w.writeheader(); w.writerows(rows)
+PY
+bash "$REGEN" >"$SAVE/qcbody.log" 2>&1
+grep -q "qc_trace.csv promoted" "$SAVE/qcbody.log" && ok "content change is promoted" \
+  || bad "content change was NOT promoted"
+grep -q -- "-999" "$QC" && bad "stale content survived promotion" || ok "stale content replaced"
+cp "$SAVE/qc.csv" "$QC"
+
 echo
 echo "=== $PASS passed, $FAIL failed ==="
 [ "$FAIL" -eq 0 ]
