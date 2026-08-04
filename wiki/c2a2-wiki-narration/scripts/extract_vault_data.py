@@ -76,7 +76,14 @@ def extract_title(content):
 
 
 def extract_wikilinks(content):
-    return list(set(re.findall(r'\[\[([^\]|]+?)(?:\|[^\]]+?)?\]\]', content)))
+    # sorted(), not list(): iteration order of a set of strings is randomised per
+    # process (PYTHONHASHSEED), so `list(set(...))` made the build unreproducible.
+    # Two extractions seconds apart, same inputs, differed in 1499 leaves -- 1262
+    # in files[].wikilinks and the 237 wikilink_edges derived from them -- which
+    # rewrote the whole 40MB wiki_narration.html blob in git on every regen even
+    # when no content had changed. Matches extract_references(), which already
+    # sorts. Nothing consumes wikilink order, so sorted is free.
+    return sorted(set(re.findall(r'\[\[([^\]|]+?)(?:\|[^\]]+?)?\]\]', content)))
 
 
 def extract_references(content):
