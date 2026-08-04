@@ -230,6 +230,32 @@ python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run t
 
 ---
 
+## Level-2 Cross-Tradition Signal Stream
+
+**Never hand-build `wiki/level2_signal_stream.html`. Always regenerate it:**
+```bash
+bash scripts/regen_level2_signals.sh
+```
+
+**Wired 2026-08-04** as Phase 5.6 of `c282-wiki-agent-daily-run` (after Phase 0/1, so the day's newly-approved cards are harvested in the same run). `metabolism-regen-daily` at 05:50 reads the result, so a rebuild lands on the metabolism yield axis the same morning.
+
+### Why the wrapper exists
+The stream was built ONCE by hand on 2026-06-28 and copied into `wiki/`. Nothing ever rebuilt it, so its newest signal stayed **2026-06-23** while the vault kept producing — 192 signals across 23 days went unpublished. `wiki/metabolism/scripts/build_metabolism_view.py` counts this file for its cross-tradition-signals/day axis, so the metabolism view drew a **flat, honest-looking zero for six weeks** and nothing anywhere threw. A frozen artifact and a genuinely quiet upstream render identically; only a standing rebuild plus a freshness assertion tells them apart.
+
+### The chain (all deterministic — Rule 5, no model passes)
+`prototypes/extract_signals.py` (vault `flags/` + `master/` index) → `prototypes/backlog/build_manifest.py` (approved cards not yet covered) → `prototypes/harvest_signals.py` (each card's `## Cross-Tradition Signals` section) → `prototypes/build_prototype.py` (inline the data into one HTML).
+
+### Guards
+Built in a temp dir, **promoted only on pass** — a rejected build never overwrites the accepted one. Rejects on: harvest coverage gate not PASS, `SIG` array in the built HTML failing to parse or disagreeing with `signals_grown.json`, or a >10% count drop against `prototypes/level2_build_meta.json` (tracked, written last). Staleness (newest signal older than `LAG_WARN_DAYS`, default 21) is a **loud WARN, not a rejection** — a correct rebuild of a quiet upstream is still correct; the daily run quotes that line into its report.
+
+`build_metabolism_view.py` records `_meta.signal_source` (status / records / latest / `stale_days`) so a zero on that axis carries its own provenance, and `metabolism_monitor.py` forwards the builder's stderr on success too (these WARNs all arrive on exit 0; swallowing them is how the freeze stayed invisible).
+
+`qc_trace.csv` is promoted only when a column other than `date_processed` moved — otherwise a daily run would commit a ~220-row date-only diff every morning.
+
+**Tests:** `bash scripts/test_regen_level2.sh` — 15 assertions driving the failure paths (collapse, empty vault, staleness WARN, and both qc_trace cases), each asserting the accepted HTML survives. Run it by hand when build logic changes.
+
+---
+
 ## Review Log (historical preservation archive)
 
 **Output:** `wiki/review_log.html` (self-contained, ~2MB) — **PUBLISHED** (2026-06-22). `assemble_review_log.py` auto-scrubs every email address from the HTML on each build (final `re.subn` pass), so the public copy is address-clean. The `provenance/` sidecar stays **gitignored/local** — it holds `decision_emails.json` with the raw addresses.
