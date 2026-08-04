@@ -13,6 +13,7 @@ Usage:
 import json
 import os
 import re
+import subprocess
 import sys
 from collections import defaultdict
 from datetime import datetime
@@ -435,9 +436,66 @@ def parse_cowork_summary(vault_path):
     return summaries
 
 
+def build_git_date_map(vault_path):
+    """vault-relative path -> YYYY-MM-DD of that file's newest commit.
+
+    Replaces st_mtime as the date source for files whose name carries no date.
+    Git does not record mtimes, so a checkout, the 21:00 Summa vault sync and the
+    weekly janitor all stamp "now" onto files whose content did not change --
+    2103 architecture files took their graph date that way, and the date drifted
+    for reasons having nothing to do with the file. A commit date moves only when
+    the file actually changed, which is what the date slider is meant to show.
+
+    One `git log` over the vault subtree, newest commit first, so the first time a
+    path appears is its latest change. ~0.5s for this repo. Returns {} when the
+    vault is not inside a git work tree, which leaves every file on the mtime
+    fallback rather than undated.
+    """
+    try:
+        top = subprocess.run(
+            ["git", "-C", str(vault_path), "rev-parse", "--show-toplevel"],
+            capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+    if not top:
+        return {}
+
+    # Paths in the log are repo-relative; the caller keys on vault-relative.
+    # realpath on both sides: `git rev-parse` resolves symlinks and macOS puts
+    # /var behind a link to /private/var, so abspath alone yields a bogus "../.."
+    # prefix and the map silently comes back empty.
+    prefix = os.path.relpath(os.path.realpath(str(vault_path)), os.path.realpath(top))
+    prefix = "" if prefix == "." else prefix + os.sep
+
+    try:
+        # quotepath=false keeps non-ASCII filenames literal instead of \303\251
+        # escapes, which would never match a path built by rglob.
+        out = subprocess.run(
+            ["git", "-c", "core.quotepath=false", "-C", top, "log",
+             "--format=%cs", "--name-only", "--no-renames", "--", str(prefix) or "."],
+            capture_output=True, text=True, check=True).stdout
+    except (OSError, subprocess.CalledProcessError):
+        return {}
+
+    dates = {}
+    current = None
+    for line in out.splitlines():
+        if not line:
+            continue
+        if re.fullmatch(r'\d{4}-\d{2}-\d{2}', line):
+            # A merge commit prints its date with no file list, so date lines can
+            # run consecutively; harmless, the next path just takes the newer one.
+            current = line
+            continue
+        if current and line.startswith(prefix):
+            dates.setdefault(line[len(prefix):], current)
+    return dates
+
+
 def scan_vault(vault_path):
     """Scan vault for all markdown files with metadata."""
     vault = Path(vault_path)
+    git_dates = build_git_date_map(vault_path)
     files = []
     for md_file in sorted(vault.rglob("*.md")):
         rel = md_file.relative_to(vault)
@@ -469,7 +527,8 @@ def scan_vault(vault_path):
             content = ""
         date = extract_date_from_filename(md_file.name)
         if not date:
-            date = extract_date_from_mtime(str(md_file))
+            # mtime only for files git has never seen (untracked, or no repo).
+            date = git_dates.get(str(rel)) or extract_date_from_mtime(str(md_file))
         refs = extract_references(content)
         files.append({
             "filepath": str(rel),

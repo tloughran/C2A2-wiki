@@ -97,6 +97,76 @@ else
   bad "files[].wikilinks is sorted"
 fi
 
+
+# --- node dates come from git, not from st_mtime -------------------------------
+#
+# The point of build_git_date_map() is that a file whose CONTENT did not change
+# keeps its date. mtime cannot do that: git does not record it, so a checkout, the
+# 21:00 Summa vault sync and the weekly janitor all stamp "now" on files nobody
+# edited, and 1122 node dates moved for that reason alone. So the load-bearing
+# assertion is not "the date is right" but "touching the file does not move it".
+
+echo ""
+echo "date source, in a throwaway git repo:"
+
+GITVAULT="$(mktemp -d -t determ_git.XXXXXX)"
+OUT_G1="$(mktemp -t determ_g1.XXXXXX)"
+OUT_G2="$(mktemp -t determ_g2.XXXXXX)"
+trap 'cleanup; rm -rf "$GITVAULT" "$OUT_G1" "$OUT_G2"' EXIT
+
+(
+  cd "$GITVAULT" || exit 1
+  git init -q .
+  git config user.email t@example.com
+  git config user.name t
+  mkdir -p architecture
+  printf '# tracked\n\nSee [[somewhere]].\n' > architecture/tracked.md
+  git add architecture/tracked.md
+  GIT_AUTHOR_DATE="2026-03-14T12:00:00" GIT_COMMITTER_DATE="2026-03-14T12:00:00" \
+    git commit -qm "add tracked"
+  printf '# untracked\n\nSee [[elsewhere]].\n' > architecture/untracked.md
+) >/dev/null 2>&1
+
+read_date() {  # $1 = extraction json, $2 = filepath
+  python3 - "$1" "$2" <<'PY'
+import json, sys
+data = json.load(open(sys.argv[1]))
+for f in data["files"]:
+    if f["filepath"] == sys.argv[2]:
+        print(f["date"]); break
+else:
+    print("MISSING")
+PY
+}
+
+python3 "$EXTRACT" "$GITVAULT" > "$OUT_G1" 2>/dev/null
+D_TRACKED=$(read_date "$OUT_G1" "architecture/tracked.md")
+D_UNTRACKED=$(read_date "$OUT_G1" "architecture/untracked.md")
+TODAY=$(date +%Y-%m-%d)
+
+[ "$D_TRACKED" = "2026-03-14" ] \
+  && ok "tracked file takes its commit date, not its mtime" \
+  || bad "tracked file takes its commit date, not its mtime (got $D_TRACKED)"
+
+# The fallback still has to work, or every untracked file would go undated.
+[ "$D_UNTRACKED" = "$TODAY" ] \
+  && ok "untracked file falls back to mtime" \
+  || bad "untracked file falls back to mtime (got $D_UNTRACKED, expected $TODAY)"
+
+# Drive the exact thing the nightly sync does: rewrite the mtime, leave the bytes.
+touch "$GITVAULT/architecture/tracked.md"
+python3 "$EXTRACT" "$GITVAULT" > "$OUT_G2" 2>/dev/null
+D_AFTER=$(read_date "$OUT_G2" "architecture/tracked.md")
+
+[ "$D_AFTER" = "2026-03-14" ] \
+  && ok "touching a tracked file does not move its date" \
+  || bad "touching a tracked file does not move its date (got $D_AFTER)"
+
+# A vault outside any git repo must still extract rather than crash or go undated.
+python3 "$EXTRACT" "$VAULT" > /dev/null 2>&1 \
+  && ok "vault outside a git repo still extracts" \
+  || bad "vault outside a git repo still extracts"
+
 echo ""
 echo "$PASS passed, $FAIL failed"
 [ "$FAIL" -eq 0 ] || exit 1
