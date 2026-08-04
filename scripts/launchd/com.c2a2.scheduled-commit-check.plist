@@ -15,7 +15,7 @@
     and the run transcripts both live under ~/Library/Application Support/Claude,
     and the scheduled tasks only ever mount ~/Documents. morning-system-health
     reads the two status files this writes. The label predates the stall check
-    and is deliberately not renamed -- a rename means a bootout/bootstrap cycle
+    and is deliberately not renamed; a rename means a bootout/bootstrap cycle
     and a stale plist to chase, for no gain.
   -->
   <!--

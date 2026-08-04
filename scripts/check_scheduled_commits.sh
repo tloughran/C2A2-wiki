@@ -1,12 +1,20 @@
 #!/bin/bash
-# launchd wrapper for the two daily-run assertions.
+# launchd wrapper for the daily scheduler assertions.
 #
-# Runs BOTH checks, because they answer different questions about the same run and
-# both feed the 06:00 morning report:
+# Runs all THREE checks, because they answer different questions and all feed the
+# morning reports:
 #
 #   check_scheduled_commits.py  -- did the run's output get committed?  (the aftermath)
 #   check_daily_run_stall.py    -- did the run finish at all, and if not, which tool
 #                                  was it left waiting on?  (39 of 110 runs did not)
+#   check_scheduler_health.py   -- did every OTHER job fire at all, survive, and leave
+#                                  a dated artifact?  The two above watch one task;
+#                                  this one watches all 70 registry tasks and all 11
+#                                  launchd agents. It has to live here rather than in
+#                                  the 07:00 scheduler-health-check task, because the
+#                                  registry is under ~/Library and the scheduled tasks
+#                                  only ever mount ~/Documents -- the same reason
+#                                  check_scheduled_commits.py is here.
 #
 # They share one launchd agent on purpose. Every silent-failure incident in this repo
 # has been a launchd job that died with nothing said about it, so a second agent is a
@@ -47,5 +55,17 @@ python3 scripts/check_daily_run_stall.py --status-file scheduler/run_stall.md
 RC_STALL=$?
 echo "$(date '+%F %T') check_daily_run_stall exit=$RC_STALL"
 
+# --quiet, because this one sweeps 70 tasks and 11 agents; the OK lines would bury
+# the two above in the shared log. The status file gets the same non-OK lines plus a
+# counted summary, and the 07:00 scheduler-health-check task reads that.
+python3 scripts/check_scheduler_health.py --quiet --status-file scheduler/scheduler_health.md
+RC_HEALTH=$?
+echo "$(date '+%F %T') check_scheduler_health exit=$RC_HEALTH"
+
+# First nonzero wins the agent's exit code. Not short-circuited above: a run that
+# committed nothing is usually a run that also never finished, and the later checks
+# are the ones that name the cause. Skipping them on the first failure would
+# suppress the diagnosis precisely when it is needed.
 [ "$RC_COMMIT" -ne 0 ] && exit "$RC_COMMIT"
-exit "$RC_STALL"
+[ "$RC_STALL" -ne 0 ] && exit "$RC_STALL"
+exit "$RC_HEALTH"
