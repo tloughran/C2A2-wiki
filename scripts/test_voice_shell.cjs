@@ -358,6 +358,22 @@ function nodesShown(page) {
   );
 }
 
+// The DENOMINATOR of the same status line -- how many nodes the graph holds at
+// all. `all` and `fit` mean "the whole graph", and the only honest expression of
+// that is this number, not a constant. Two rows used to hardcode `> 4000` and
+// `> 3900`; the 2026-08-03 Summa dedup removed the 611 duplicated corpus nodes
+// and both went red for a build that was in fact correct. A magic number in an
+// assertion is a second, unmaintained copy of a fact the page already states.
+function nodesTotal(page) {
+  return page.eval(
+    IFRAME_DOC +
+    "var el = d && d.getElementById('graph-status');" +
+    "if (!el) { return null; }" +
+    "var m = /([0-9,]+)\\s*\\/\\s*([0-9,]+)\\s+nodes/.exec(el.textContent || '');" +
+    "return m ? parseInt(m[2].replace(/,/g, ''), 10) : null;"
+  );
+}
+
 
 // IN VIEW is the camera's number -- how many of the shown nodes are actually on
 // screen. Nothing ever asserted it, which is how a reveal could leave every
@@ -671,12 +687,17 @@ async function main() {
     { ok: true, spoken: /nodes shown/ });
   await row(page, 'A2d none -> an honest zero, stated plainly', 'none',
     { ok: true, spoken: /0 of \d+ nodes shown/, view: function (v) { return v === 0; }, shown: function (n) { return n === 0; } });
+  // Read the graph's own denominator rather than asserting a constant: "all"
+  // means every node this build has, whatever that count happens to be today.
+  const graphTotal = await nodesTotal(page);
+  if (!graphTotal) { record('A2e precondition: graph-status reports a total', false, 'nodesTotal=' + graphTotal); }
   await row(page, 'A2e all -> the whole graph is back', 'all',
-    { ok: true, view: function (v) { return v > 4000; } });
+    { ok: true, view: function (v) { return v === graphTotal; } });
   // `fit` is the deliberate escape hatch from the legibility floor: it means
-  // "show everything, however small", so it must NOT be floored.
+  // "show everything, however small", so it must NOT be floored. A few nodes
+  // may still sit outside the frame after the settle, hence 95% rather than all.
   await row(page, 'A3 fit -> unfloored, the whole graph on screen', 'fit',
-    { ok: true, spoken: /^fit$/, inView: function (v) { return v > 3900; } });
+    { ok: true, spoken: /^fit$/, inView: function (v) { return v >= graphTotal * 0.95; } });
   await row(page, 'A4 what -> names the live view', 'what', { ok: true, spoken: /view: Sociogram/ });
   // ---- find/focus must CUT, not dim (interim shell-side implementation) ----
   await row(page, 'A5 find levin -> a cut, not a haystack', 'find levin', { ok: true, spoken: /\d+ nodes shown/ });
