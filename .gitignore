@@ -124,6 +124,8 @@ provenance/
 wiki/review/*.html
 wiki/review/_superseded/
 wiki/review/_deleted_quarantine/
+wiki/review/.trash/
+wiki/review/_trash/
 wiki/heartbeat/data/.broker_device_id
 
 # Scratch diagnostic SVG exports (regenerable; not wired into any published page)
