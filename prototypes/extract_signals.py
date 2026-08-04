@@ -6,10 +6,16 @@ Sources (living, structured):
   - flags/cross_signals_2026-04-16_batch1.md  (per-card **Other (strength):** with PROP backref)
   - flags/cross_signals_2026-04-16_batch2.md  (### From <Other> + bullets with [PROP-id])
 Output: signals.json  (one record per unordered tradition pair occurrence).
+
+Usage: extract_signals.py [vault] [outdir]
+`outdir` defaults to this script's directory (the historical behaviour); the
+regen wrapper passes a temp dir so a rejected build never overwrites the
+accepted one.
 """
 import json, re, sys, itertools, os
 
 VAULT = sys.argv[1] if len(sys.argv) > 1 else "."
+OUTDIR = sys.argv[2] if len(sys.argv) > 2 else os.path.dirname(os.path.abspath(__file__))
 
 CANON = {
     "levin":"Levin","friston":"Friston","hoffman":"Hoffman","hawkins":"Hawkins",
@@ -129,7 +135,7 @@ for line in txt.splitlines():
 # ---------- summary ----------
 signals = [s for s in signals if s["date"]]
 signals.sort(key=lambda s: s["date"])
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "signals.json")
+out = os.path.join(OUTDIR, "signals.json")
 json.dump(signals, open(out, "w"), indent=1)
 
 from collections import Counter

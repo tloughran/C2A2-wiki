@@ -8,6 +8,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-19-002",
+  "tradition": "arkanihamed",
+  "source_date": "2024",
+  "title": "Surfaceology / curve-integral formalism (All Loop Scattering For All Multiplicity; Surface",
+  "file": "inbox/proposals/approved/2026-06-19_arkanihamed_surfaceology.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-05-010",
   "tradition": "stump",
   "source_date": "2024-01-01",
@@ -48,6 +56,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-25-002",
+  "tradition": "fredrickson",
+  "source_date": "2025",
+  "title": "Interparental positivity spillover theory: How parents' positive relational interactions i",
+  "file": "inbox/proposals/approved/2026-06-25_fredrickson_interparental-positivity-spillover.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-27-002",
   "tradition": "fredrickson",
   "source_date": "2025",
@@ -64,11 +80,51 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-13-004",
+  "tradition": "friston",
+  "source_date": "2025",
+  "title": "Topographic Variation in Human Neurotransmitter Receptor Densities Explains Differences in",
+  "file": "inbox/proposals/approved/2026-07-13_friston_receptor-density-ieeg-dcm.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-25-003",
+  "tradition": "fredrickson",
+  "source_date": "2025",
+  "title": "High-quality listening behaviors linked to social connection between strangers",
+  "file": "inbox/proposals/approved/2026-06-25_fredrickson_listening-connects-strangers.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-25-001",
+  "tradition": "fredrickson",
+  "source_date": "2025",
+  "title": "Does positivity resonance signify love? Markers of positivity resonance in long-term marri",
+  "file": "inbox/proposals/approved/2026-06-25_fredrickson_resonance-signifies-love.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-24-001",
   "tradition": "wright",
   "source_date": "2025",
   "title": "The Vision of Ephesians: The Task of the Church and the Glory of God",
   "file": "inbox/proposals/approved/2026-05-24_wright_vision-of-ephesians.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-25-004",
+  "tradition": "fredrickson",
+  "source_date": "2025",
+  "title": "Positively in-sync: Convergent validity across three distinct assessments of the positive ",
+  "file": "inbox/proposals/approved/2026-06-25_fredrickson_positively-in-sync-convergent-validity.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-09-001",
+  "tradition": "stump",
+  "source_date": "2025-01",
+  "title": "Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spirit",
+  "file": "inbox/proposals/approved/2026-07-09_stump_infused-virtues-new-blackfriars.md",
   "processed": false
  },
  {
@@ -112,6 +168,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-22-002",
+  "tradition": "friston",
+  "source_date": "2025-02-12",
+  "title": "As One and Many: Relating Individual and Emergent Group-Level Generative Models in Active ",
+  "file": "inbox/proposals/approved/2026-06-22_friston_as-one-and-many.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-16-004",
   "tradition": "fredrickson",
   "source_date": "2025-03-20",
@@ -125,6 +189,14 @@
   "source_date": "2025-07-01",
   "title": "Interparental Positivity Spillover Theory: How Parents' Positive Relational Interactions I",
   "file": "inbox/proposals/approved/2026-05-05_fredrickson_interparental-positivity-spillover-theory.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-23-001",
+  "tradition": "fredrickson",
+  "source_date": "2025-07-11",
+  "title": "Positively in-sync: Convergent validity across three distinct assessments of the affective",
+  "file": "inbox/proposals/approved/2026-07-23_fredrickson_positively-in-sync-convergent-validity.md",
   "processed": false
  },
  {
@@ -149,6 +221,14 @@
   "source_date": "2025-09-17",
   "title": "Positive Emotions: Key Scientific Contributions and the Stories Behind Them (Cornerstones ",
   "file": "inbox/proposals/approved/2026-05-08_fredrickson_positive-emotions-cornerstones-oxford-2025.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-20-004",
+  "tradition": "friston",
+  "source_date": "2025-09-17",
+  "title": "Reality is a creation of consciousness",
+  "file": "inbox/proposals/approved/2026-07-20_friston_iai-reality-creation-of-consciousness.md",
   "processed": false
  },
  {
@@ -232,11 +312,43 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-06-003",
+  "tradition": "friston",
+  "source_date": "2025-12",
+  "title": "Active inference and artificial reasoning",
+  "file": "inbox/proposals/approved/2026-07-06_friston_active-inference-artificial-reasoning.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-16-005",
   "tradition": "fredrickson",
   "source_date": "2025-12-10",
   "title": "Why Loving Moments With Strangers Carry Lasting Benefits",
   "file": "inbox/proposals/approved/2026-04-16_fredrickson_strangers-prosocial-cooperation.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-29-003",
+  "tradition": "friston",
+  "source_date": "2026",
+  "title": "Self-orthogonalizing attractor neural networks emerging from the free energy principle",
+  "file": "inbox/proposals/approved/2026-06-29_friston_self-orthogonalizing-attractors.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-20-002",
+  "tradition": "levin",
+  "source_date": "2026",
+  "title": "Machines all the way up and cognition all the way down: Updating the machine metaphor in b",
+  "file": "inbox/proposals/approved/2026-07-20_levin_machines-all-the-way-up-cognition-all-the-way-down.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-14-002",
+  "tradition": "levin",
+  "source_date": "2026",
+  "title": "What Lives? A meta-analysis of diverse opinions on the definition of life",
+  "file": "inbox/proposals/approved/2026-07-14_levin_what-lives-definition-of-life-meta-analysis.md",
   "processed": false
  },
  {
@@ -264,11 +376,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-20-001",
+  "tradition": "levin",
+  "source_date": "2026",
+  "title": "Topological constraints on self-organization in locally interacting systems",
+  "file": "inbox/proposals/approved/2026-07-20_levin_topological-constraints-self-organization.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-20-001",
   "tradition": "levin",
   "source_date": "2026",
   "title": "The Bioelectric Interface to the Collective Intelligence of Morphogenesis: development, re",
   "file": "inbox/proposals/approved/2026-04-20_levin_bioelectric-interface-ucsf.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-20-003",
+  "tradition": "levin",
+  "source_date": "2026",
+  "title": "Neural cellular automata: Applications to biology and beyond classical AI",
+  "file": "inbox/proposals/approved/2026-07-20_levin_neural-cellular-automata-review.md",
   "processed": false
  },
  {
@@ -280,11 +408,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-23-002",
+  "tradition": "stump",
+  "source_date": "2026",
+  "title": "The Coexistence of Time and Eternity: Cajetan's Solution to God's Knowledge of Contingent ",
+  "file": "inbox/proposals/approved/2026-07-23_stump_cajetan-time-eternity-contingent-futures.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-11-001",
   "tradition": "levin",
   "source_date": "2026-01",
   "title": "SUTI: the Search for Unconventional Terrestrial Intelligence",
   "file": "inbox/proposals/approved/2026-05-11_levin_suti-search-unconventional-terrestrial-intelligence.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-29-001",
+  "tradition": "levin",
+  "source_date": "2026-01",
+  "title": "Remapping and navigation of an embedding space via error minimization: a fundamental organ",
+  "file": "inbox/proposals/approved/2026-06-29_levin_embedding-space-remapping.md",
   "processed": false
  },
  {
@@ -320,6 +464,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-29-002",
+  "tradition": "levin",
+  "source_date": "2026-01-19",
+  "title": "Cognition spaces: natural, artificial, and hybrid",
+  "file": "inbox/proposals/approved/2026-06-29_levin_cognition-spaces.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-18-002",
   "tradition": "levin",
   "source_date": "2026-01-19",
@@ -349,6 +501,14 @@
   "source_date": "2026-01-30",
   "title": "The Seven Cardinal Virtues and the Indwelling Holy Spirit",
   "file": "inbox/proposals/approved/2026-04-13_stump_seven-cardinal-virtues-holy-spirit.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-06-002",
+  "tradition": "levin",
+  "source_date": "2026-02",
+  "title": "Multi-Scale Longevity: Defeating Aging from Cells to Embodied Human Minds, and the Future ",
+  "file": "inbox/proposals/approved/2026-07-06_levin_multi-scale-longevity.md",
   "processed": false
  },
  {
@@ -888,6 +1048,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-08-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-04-28",
+  "title": "Without Religion, No Future",
+  "file": "inbox/proposals/approved/2026-07-08_mcgilchrist_without-religion-no-future.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-09-002",
   "tradition": "wolfram",
   "source_date": "2026-04-29",
@@ -933,6 +1101,14 @@
   "source_date": "2026-05",
   "title": "Online Generalised Predictive Coding",
   "file": "inbox/proposals/approved/2026-05-05_friston_online-generalised-predictive-coding.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-18-002",
+  "tradition": "levin",
+  "source_date": "2026-05",
+  "title": "Training Ecosystems: A Computational Approach to Uncovering Learning Behavior in Unconvent",
+  "file": "inbox/proposals/approved/2026-07-18_levin_training-ecosystems-learning-unconventional.md",
   "processed": false
  },
  {
@@ -1104,6 +1280,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-08-002",
+  "tradition": "kastrup",
+  "source_date": "2026-05-13",
+  "title": "Michael Levin and Bernardo Kastrup in conversation (With Reality in Mind)",
+  "file": "inbox/proposals/approved/2026-07-08_kastrup_levin-conversation-nested-subjects.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-25-001",
   "tradition": "levin",
   "source_date": "2026-05-14",
@@ -1133,6 +1317,22 @@
   "source_date": "2026-05-18",
   "title": "Mindscape 354 | Christian List on Free Will and Levels of Reality",
   "file": "inbox/proposals/approved/2026-05-29_carroll_mindscape-354-christian-list-free-will-levels.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-17-002",
+  "tradition": "kastrup",
+  "source_date": "2026-05-21",
+  "title": "A Conversation with Bernardo Kastrup on European AI Sovereignty (AI Meet-Up XL)",
+  "file": "inbox/proposals/approved/2026-06-17_kastrup_euclyd-ai-sovereignty.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-19-002",
+  "tradition": "rohr",
+  "source_date": "2026-05-23",
+  "title": "Practicing \\",
+  "file": "inbox/proposals/approved/2026-07-19_rohr_practicing-just-this-weekly-summary.md",
   "processed": false
  },
  {
@@ -1168,6 +1368,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-19-001",
+  "tradition": "carroll",
+  "source_date": "2026-05-28",
+  "title": "Toward a Phenomenologically Acceptable Quantum Cyclic Universe",
+  "file": "inbox/proposals/approved/2026-06-19_carroll_quantum-cyclic-universe.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-05-001",
   "tradition": "carroll",
   "source_date": "2026-05-28",
@@ -1200,11 +1408,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-06-28-001",
+  "tradition": "wright",
+  "source_date": "2026-06",
+  "title": "Capital Conversations \u2014 N.T. Wright on Women in Ministry, Faith, and Scripture",
+  "file": "inbox/proposals/approved/2026-06-28_wright_capital-conversations-women-ministry-phoebe.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-23-001",
   "tradition": "hoffman",
   "source_date": "2026-06",
   "title": "Traces of the Other \u2013 Are DMT Entities Real? DMT Phenomenology in the Framework of Conscio",
   "file": "inbox/proposals/approved/2026-06-23_hoffman_dmt-traces-of-the-other.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-30-001",
+  "tradition": "hawkins",
+  "source_date": "2026-06",
+  "title": "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inferenc",
+  "file": "inbox/proposals/approved/2026-06-30_hawkins_neural-computation-tbs.md",
   "processed": false
  },
  {
@@ -1221,6 +1445,22 @@
   "source_date": "2026-06-02",
   "title": "The Birth of Thought \u2014 On the origin of creativity, the universe & you (Q&A with Bernardo ",
   "file": "inbox/proposals/approved/2026-06-10_kastrup_birth-of-thought.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-18-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-03",
+  "title": "History of Science and Technology Q&A (June 3, 2026)",
+  "file": "inbox/proposals/approved/2026-07-18_wolfram_history-qa-june3-discrete-space.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-24-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-04",
+  "title": "Iain McGilchrist and Charles Eisenstein in conversation \u2013 Being in the World Today",
+  "file": "inbox/proposals/approved/2026-06-24_mcgilchrist_being-in-the-world-eisenstein.md",
   "processed": false
  },
  {
@@ -1261,6 +1501,254 @@
   "source_date": "2026-06-08",
   "title": "Mindscape 356 | Andrea Wulf on Enlightenment, Nature, Romanticism, and Modernity",
   "file": "inbox/proposals/approved/2026-06-12_carroll_mindscape-356-wulf-romanticism.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-17-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-09",
+  "title": "Censorship by the front door",
+  "file": "inbox/proposals/approved/2026-06-17_mcgilchrist_censorship-front-door.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-24-003",
+  "tradition": "kastrup",
+  "source_date": "2026-06-10",
+  "title": "You are the one free miracle \u2014 Why is nature this way, not that? (Q&A with Bernardo Kastru",
+  "file": "inbox/proposals/approved/2026-06-24_kastrup_one-free-miracle.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-27-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-12",
+  "title": "Future of Science and Technology Q&A (June 12, 2026)",
+  "file": "inbox/proposals/approved/2026-06-27_wolfram_future-sci-tech-qa-june12.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-05-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-12",
+  "title": "Future of Science and Technology Q&A (June 12, 2026)",
+  "file": "inbox/proposals/approved/2026-07-05_wolfram_observer-boundaries-brain-emulation.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-21-001",
+  "tradition": "rohr",
+  "source_date": "2026-06-14",
+  "title": "A New Way of Living (Daily Meditation, Week 24 'The Way of the Early Church')",
+  "file": "inbox/proposals/approved/2026-06-21_rohr_way-of-the-early-church-new-way-of-living.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-01-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-14",
+  "title": "Thinking Class \u2014 John Gillam and Dr Iain McGilchrist: There Is A Great Deal Of Ruin In The",
+  "file": "inbox/proposals/approved/2026-07-01_mcgilchrist_thinking-class-ruin-western-world.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-01-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-14",
+  "title": "Freedom Pact \u2014 A Masterclass in Human Nature: Robert Greene, Iain McGilchrist, Robert Sapo",
+  "file": "inbox/proposals/approved/2026-07-01_mcgilchrist_freedom-pact-masterclass-human-nature.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-24-004",
+  "tradition": "kastrup",
+  "source_date": "2026-06-17",
+  "title": "Dreams of reality \u2014 How idealism reveals the significance of dreams and the symbolism of w",
+  "file": "inbox/proposals/approved/2026-06-24_kastrup_dreams-of-reality.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-11-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-17",
+  "title": "History of Science and Technology Q&A (June 17, 2026)",
+  "file": "inbox/proposals/approved/2026-07-11_wolfram_history-qa-june17-idea-uptake.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-20-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-17",
+  "title": "Launching Version 15 of Wolfram Language & Mathematica: Built-in (Useful) AI & Lots of New",
+  "file": "inbox/proposals/approved/2026-06-20_wolfram_version-15-agent-tools.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-13-003",
+  "tradition": "levin",
+  "source_date": "2026-06-20",
+  "title": "A talk for mental health professionals: mind-blindness and the future of the mental health",
+  "file": "inbox/proposals/approved/2026-07-13_levin_diverse-intelligence-mental-health-talk.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-24-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-21",
+  "title": "Chancellor McGilchrist Commencement Address | 2026 (Ralston College)",
+  "file": "inbox/proposals/approved/2026-06-24_mcgilchrist_ralston-commencement-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-26-001",
+  "tradition": "carroll",
+  "source_date": "2026-06-22",
+  "title": "Mindscape 358 | Solo: Vacuum Energy and the Cosmological Constant",
+  "file": "inbox/proposals/approved/2026-06-26_carroll_vacuum-energy-cosmological-constant.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-13-002",
+  "tradition": "levin",
+  "source_date": "2026-06-23",
+  "title": "Ionic Exposure History Shapes Inner Nuclear Membrane Voltage and Chromatin Texture Respons",
+  "file": "inbox/proposals/approved/2026-07-13_levin_inner-nuclear-membrane-voltage-chromatin.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-01-003",
+  "tradition": "kastrup",
+  "source_date": "2026-06-23",
+  "title": "Overwhelming evidence for purpose, but is it instinctive or planned? \u2014 Jude Currivan & Ber",
+  "file": "inbox/proposals/approved/2026-07-01_kastrup_currivan-living-evolving-universe.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-07-001",
+  "tradition": "hoffman",
+  "source_date": "2026-06-26",
+  "title": "StarTalk with Neil deGrasse Tyson \u2014 Donald Hoffman: Did evolution never give us the abilit",
+  "file": "inbox/proposals/approved/2026-07-07_hoffman_startalk-evolution-reality.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-06-001",
+  "tradition": "levin",
+  "source_date": "2026-06-26",
+  "title": "Aging, goal-directedness, and bioelectricity",
+  "file": "inbox/proposals/approved/2026-07-06_levin_aging-goal-directedness-bioelectricity.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-28-003",
+  "tradition": "rohr",
+  "source_date": "2026-06-27",
+  "title": "Hope in Hard Times: Weekly Summary (Daily Meditation, Week 25)",
+  "file": "inbox/proposals/approved/2026-06-28_rohr_hope-in-hard-times-participatory-hope.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-28-002",
+  "tradition": "rohr",
+  "source_date": "2026-06-28",
+  "title": "Called and Sent (Daily Meditation, opening Week 26 'Everyone Is Chosen')",
+  "file": "inbox/proposals/approved/2026-06-28_rohr_everyone-is-chosen-called-and-sent.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-03-001",
+  "tradition": "carroll",
+  "source_date": "2026-06-29",
+  "title": "Mindscape 359 | Solo: Theories of Dark Energy",
+  "file": "inbox/proposals/approved/2026-07-03_carroll_dark-energy-theories.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-06-26-002",
+  "tradition": "arkanihamed",
+  "source_date": "2026-06-29",
+  "title": "Amplitudes 2026 \u2014 Nima Arkani-Hamed confirmed speaker (QMUL, June 29 \u2013 July 3, 2026)",
+  "file": "inbox/proposals/approved/2026-06-26_arkanihamed_amplitudes-2026-qmul.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-05-003",
+  "tradition": "wright",
+  "source_date": "2026-06-30",
+  "title": "Kingdom of Heaven vs. Secular Humanism; How to brush up on Greek, and should we pray to th",
+  "file": "inbox/proposals/approved/2026-07-05_wright_ask-ntw-jun30-kingdom-vs-secular-humanism.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-13-001",
+  "tradition": "levin",
+  "source_date": "2026-07",
+  "title": "Alignment Is to a Virtual Governor: A Theory of Coordination in Diverse Intelligence",
+  "file": "inbox/proposals/approved/2026-07-13_levin_alignment-virtual-governor.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-12-001",
+  "tradition": "wright",
+  "source_date": "2026-07",
+  "title": "Still waiting\u2026 for Jesus' return? (Ask NT Wright Anything)",
+  "file": "inbox/proposals/approved/2026-07-12_wright_ask-ntw-everyday-work-waiting-for-return.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-05-005",
+  "tradition": "rohr",
+  "source_date": "2026-07-03",
+  "title": "Who Do You Say That We Are?",
+  "file": "inbox/proposals/approved/2026-07-05_rohr_who-do-you-say-that-we-are.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-05-002",
+  "tradition": "wright",
+  "source_date": "2026-07-03",
+  "title": "Have Christians Misunderstood Paul for 500 Years? Tom Wright on 'Works of the Law'",
+  "file": "inbox/proposals/approved/2026-07-05_wright_ask-ntw-works-of-the-law-bonus.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-05-004",
+  "tradition": "rohr",
+  "source_date": "2026-07-04",
+  "title": "Everyone Is Chosen: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-07-05_rohr_everyone-is-chosen-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-10-001",
+  "tradition": "carroll",
+  "source_date": "2026-07-06",
+  "title": "Mindscape 360 | Marc Berman on the Science of Touching Grass",
+  "file": "inbox/proposals/approved/2026-07-10_carroll_mindscape-360-berman-nature-cognition.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-14-001",
+  "tradition": "kastrup",
+  "source_date": "2026-07-07",
+  "title": "AI, consciousness & awakening \u2014 Shamil Chandaria in dialogue with Bernardo Kastrup",
+  "file": "inbox/proposals/approved/2026-07-14_kastrup_chandaria-ai-consciousness-awakening.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-12-002",
+  "tradition": "rohr",
+  "source_date": "2026-07-11",
+  "title": "The Beatitudes: Week One: Weekly Summary (Daily Meditations, Week 27)",
+  "file": "inbox/proposals/approved/2026-07-12_rohr_beatitudes-week-one-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-17-001",
+  "tradition": "carroll",
+  "source_date": "2026-07-13",
+  "title": "Mindscape AMA | July 2026",
+  "file": "inbox/proposals/approved/2026-07-17_carroll_mindscape-ama-july-2026.md",
   "processed": false
  }
 ]

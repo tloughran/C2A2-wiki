@@ -322,8 +322,13 @@ def regen(db_path):
                "--repo", str(PROJECT_ROOT), "--outdir", str(METAB_DIR)]
         r = subprocess.run(cmd, capture_output=True, text=True)
         sys.stdout.write(r.stdout)
-        if r.returncode != 0:
+        # Always forward stderr, not only on failure. The builder's WARNs -- a
+        # missing agent map, an unreadable or STALE cross-tradition signal source
+        # -- all arrive on a zero exit code, and swallowing them is how the
+        # signal axis read a silent flat zero for six weeks.
+        if r.stderr:
             sys.stderr.write(r.stderr)
+        if r.returncode != 0:
             sys.exit("ERROR: regen failed (build_metabolism_view.py exit %d)" % r.returncode)
     finally:
         try:
