@@ -8,7 +8,7 @@ url: https://www.youtube.com/watch?v=6raKHmw0GBc
 title: Does God Exist?
 summa_ref: Prima Pars, Q.1 (sacred doctrine) + Q.2 (existence of God)
 duration_seconds: 1906
-word_count: 4898
+word_count: 2679
 segment_count: 714
 caption_kind: asr
 language: en
@@ -16,8 +16,8 @@ fetched_at: 2026-04-27
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-002 - Does God Exist - Contemporary]]"
 tags: [summa, day/002, pars/I, q/1, q/2, theme/sacred-doctrine, theme/existence-of-god]
-last_qc_at: "2026-07-19T04:20:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-03T20:23:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 2 — Does God Exist? (Q.1 sacred doctrine + Q.2 existence of God)

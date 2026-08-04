@@ -17,7 +17,7 @@ length_ratio_to_target: 0.83
 mind_first_reframe: "Clarity is the body made transparent to the soul's state — inner glory rendered as outward brightness, with visibility itself answering to the will; the perfected perspective has no gap between what it is and what it shows."
 central_theme_thread: "The whole project's destination, stated at the level of appearance: loving unity is the mutual transparency of perspectives — each viewpoint fully legible to the others in love — while the damned are the closed perspective, restored to full feeling yet shut against the whole."
 tags: [synthesis, day/300, theme/clarity-as-the-body-made-transparent-to-the-soul]
-last_qc_at: "2026-07-26T10:27:53"
+last_qc_at: "2026-08-03T14:29:26"
 last_qc_outcome: "pass"
 ---
 

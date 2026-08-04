@@ -3,9 +3,10 @@ day: 196
 title: Meekness (Contemporary)
 pairs_with: "[[Day-196 - Meekness]]"
 length_target_words: 1500
-length_actual_words: 1593
-length_ratio_to_target: 1.06
+length_actual_words: 1708
+length_ratio_to_target: 1.139
 length_tier: short
+length_note: "Over short-tier target by 14% after a 2026-08-03 reviewer fix that anchored the Frame to Q.156 a.1/a.2/a.3 and Q.157 a.2/a.3/a.4 (criterion (a) remediation); the added words are article-level exposition of material the transcript walks, not new argument. Substantive content unchanged."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-10 reasoning as expected-free-energy minimization; PRS-14 Bayesian self-trapping; precision-weighting of policies)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-20 spaciousness as right-hemispheric remediation; PRS-05 attention as ontological act)"
@@ -15,15 +16,15 @@ evidence_strength_summary: "Incontinence-as-two-failure-modes and meekness-as-re
 mind_first_reframe: "Incontinence is a control failure with two distinct signatures — impetuous (no deliberation runs) and weak (deliberation runs, then is overridden at execution); intemperance is the same disorder learned into the model. Meekness is the retraining of the irascible appetite's precision so anger no longer mis-fires, while clemency caps the action even when the feeling is right."
 central_theme_thread: "A perspective aligned to loving unity is not one with no anger but one whose anger is calibrated to real injury and capped in action; meekness and clemency are two stages of getting the limited agent's irascible response to track the whole rather than the self."
 tags: [synthesis, day/196, theme/calibrated-restraint]
-last_qc_at: "2026-07-26T12:22:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-03T18:29:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 196 — Meekness (Contemporary Parallel)
 
 ## Frame
 
-Aquinas continues down the parts of temperance, and the day has two movements. First, Q.156 anatomizes *incontinence*: the soul's failure — not the body's — to hold a passion under reason. He splits the failure cleanly. Either the will "suddenly and quickly yields to some passion without really thinking it over" (impetuosity), or one has "already deliberated and firmly judged the right course of action, but when the time came thought otherwise due to the sway of passion" (weakness). He then ranks: the incontinent man sins *less* gravely than the intemperate, because in the intemperate "the will is inclined to sin in virtue of its own choice, which proceeds from a habit acquired through custom," whereas the incontinent is merely "inclined to sin through a passion." Second, Q.157 introduces meekness and clemency as annexed parts of temperance — meekness "properly mitigates the passion of anger," clemency "moderates external punishment." The contemporary version of the question: *what kind of system fails in these two distinct ways, what is the difference between a transient failure and a learned one, and what does it mean to govern anger at the level of the feeling versus the level of the act?*
+Aquinas continues down the parts of temperance, and the day has two movements. First, Q.156 anatomizes *incontinence*. Article 1 asks whether it pertains to the soul or the body and answers: to the soul, whose "direct cause… is on the part of the soul which fails to resist a passion by the reason" — and in the same article he splits the failure cleanly. Either the will "suddenly and quickly yields to some passion without really thinking it over" (impetuosity), or one has "already deliberated and firmly judged the right course of action, but when the time came thought otherwise due to the sway of passion" (weakness). Article 2 establishes that incontinence is a sin, since acting incontinently just is acting against the rule of reason under the sway of passion. Article 3 then ranks: the incontinent man sins *less* gravely than the intemperate, because in the intemperate "the will is inclined to sin in virtue of its own choice, which proceeds from a habit acquired through custom" — a stable quality built by repeated willed action — whereas the incontinent is merely "inclined to sin through a passion," and "where there is a greater inclination of the will to sin, there is a graver sin." Second, Q.157 takes up meekness and clemency: a.2 establishes both as genuine virtues, a.3 places them as annexed parts of temperance, and a.4 weighs them against the other virtues — meekness "properly mitigates the passion of anger," clemency "moderates external punishment." The contemporary version of the question: *what kind of system fails in these two distinct ways, what is the difference between a transient failure and a learned one, and what does it mean to govern anger at the level of the feeling versus the level of the act?*
 
 ## Problem
 

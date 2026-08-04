@@ -3,8 +3,8 @@ day: 176
 title: Quarreling and Liberality (Contemporary)
 pairs_with: "[[Day-176 - Quarreling and Liberality]]"
 length_target_words: 1500
-length_actual_words: 1160
-length_ratio_to_target: 0.77
+length_actual_words: 1264
+length_ratio_to_target: 0.843
 length_tier: short
 length_note: "Under short-tier target by design — Q.116 (quarreling) and Q.117 (liberality) are short annexed articles fully and non-redundantly treated; short-and-substantive preferred over padding per the length policy."
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
@@ -17,15 +17,15 @@ karpathy_wiki_sources:
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9); Rohr canonical: the non-grasping True Self (Falling Upward)"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-07-26T12:22:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-03T18:29:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 176 — Quarreling and Liberality (Contemporary)
 
 ## Frame
 
-Aquinas pairs a vice and a virtue that both turn on how an agent holds itself within a community. Q.116 treats quarreling or contention (*contentio*) as the defect opposed to affability: the abrasive contradicting of others that fractures the ordinary bonds of life. Q.117 treats liberality (*liberalitas*), the right interior disposition toward external goods — the readiness to give freely. Aquinas's striking move is that liberality's mean is not in the *amount* given but in the *affection*: the liberal person is rightly ordered toward wealth, holding it loosely enough to release it for another's good. We love the generous, he says, because they use what they have for others rather than clutching it for themselves.
+Aquinas pairs a vice and a virtue that both turn on how an agent holds itself within a community. Q.116 a.1 makes quarreling or contention (*contentio*) the defect opposed to affability — the abrasive contradicting of others that fractures the ordinary bonds of life — and a.2 weighs it against flattery, refusing a flat ranking: which is graver depends on the case. Q.117 then treats liberality (*liberalitas*), the right interior disposition toward external goods. It is a virtue in the strict sense, a mean liable to failure by both excess and defect (a.1); its ordinary matter is money, though a man may be liberal with any external possession (a.2); its act is the right *use* of money rather than its mere acquisition or retention (a.3); and giving belongs to the liberal man chiefly, more than receiving or keeping (a.4). Aquinas's striking move is that liberality's mean is not in the *amount* given but in the *affection*: the liberal person is rightly ordered toward wealth, holding it loosely enough to release it for another's good. We love the generous, he says, because they use what they have for others rather than clutching it for themselves. He then sites the virtue carefully — annexed to justice rather than identical with it (a.5), and not the greatest of the virtues (a.6), since it concerns a good lower than those the theological virtues touch.
 
 Under mind / conscious-realist monism the contemporary version of the question is about the *size of the self*. Quarreling and liberality both answer: how far does this agent's circle of care extend, and does its conduct widen that circle or starve it?
 
