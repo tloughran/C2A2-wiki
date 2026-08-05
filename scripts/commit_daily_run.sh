@@ -90,6 +90,12 @@ POST_RUN_PRODUCERS=(
   "wiki/agents_tab.html"
 )
 
+# Repo-relative. Same status-file shape as scheduler/commit_check.md and
+# scheduler/run_stall.md: one appended dated line per run, so a held path is still
+# legible tomorrow when the launchd log has scrolled. gitignored like the rest of
+# scheduler/.
+HELD_STATUS_FILE="scheduler/held_paths.md"
+
 REPO="$REPO_DEFAULT"
 REGISTRY_GLOB="$REGISTRY_DEFAULT"
 DRY_RUN=0
@@ -225,7 +231,7 @@ $escaped"
 [ "$count" -gt "$MAX_STAGED_FILES" ] && \
   fail "$count staged paths exceeds the $MAX_STAGED_FILES ceiling -- this is not a normal daily run"
 
-# --- 5b. Refuse when somebody else's in-flight edits are in the index -------
+# --- 5b. Hold back what the run did not write, commit the rest, report --------
 # The run-age guard in section 2 answers WHEN the run happened. It never answers
 # WHICH files the run wrote. On any normal morning the run is a few hours old, so
 # every dirty path under wiki/ is staged regardless of who wrote it.
@@ -235,16 +241,26 @@ $escaped"
 # that session had not finished writing. A dead link on the wiki's entry page,
 # committed under a "C2A2 daily run" subject, with the real author erased.
 #
-# Refuse and name the paths rather than skip them. A silently skipped path looks
-# exactly like a clean tree in tomorrow's log, which is the failure this whole
+# Anything staged whose mtime is past the run's write window, and that is not a
+# named post-run producer, is unstaged and held. The run's own output still gets
+# committed -- refusing the whole run would strand a legitimate day's work every
+# time somebody edits wiki/ in the morning.
+#
+# The held paths are NOT silently skipped. They are named on stdout (which lands in
+# the launchd log) and appended to scheduler/held_paths.md, the same status-file
+# shape check_scheduled_commits.py and check_daily_run_stall.py use, so a held path
+# outlives the log line. A skip nobody can see afterwards is the failure this whole
 # script exists to end.
 #
 # mtime is a sound signal here only because these are local writes to a live tree.
-# A branch switch or fresh clone restamps everything and would trip this -- a loud
-# refusal on a tree nobody built on purpose, which is the outcome we want.
+# A branch switch or fresh clone restamps everything and holds the lot -- loud, and
+# correct, on a tree nobody built on purpose.
+mkdir -p "$REPO/$(dirname "$HELD_STATUS_FILE")"
+held_line="$(ts)  OK    nothing held; every staged path is the run's own output"
 if [ -n "$RUN_START_EPOCH" ]; then
   cutoff=$(( RUN_START_EPOCH + RUN_WRITE_WINDOW_SECONDS ))
-  foreign=""
+  held=""
+  held_names=""
   while IFS= read -r f; do
     [ -n "$f" ] || continue
     produced=0
@@ -254,19 +270,38 @@ if [ -n "$RUN_START_EPOCH" ]; then
     [ "$produced" -eq 1 ] && continue
     mtime=$(stat -f %m "$REPO/$f" 2>/dev/null) || continue
     if [ "$mtime" -gt "$cutoff" ]; then
-      foreign="$foreign
+      held="$held
   $f (written run+$(( (mtime - RUN_START_EPOCH) / 60 ))m)"
+      held_names="$held_names $f (run+$(( (mtime - RUN_START_EPOCH) / 60 ))m)"
+      git -C "$REPO" restore --staged -- "$f" 2>/dev/null || true
     fi
   done <<EOF
 $(git -C "$REPO" diff --cached --name-only --diff-filter=d)
 EOF
-  if [ -n "$foreign" ]; then
-    fail "staged paths written after the run's $(( RUN_WRITE_WINDOW_SECONDS / 60 ))-minute write window -- these are not this run's output:$foreign"
+  if [ -n "$held" ]; then
+    held_n=$(printf '%s\n' "$held" | grep -c . )
+    log "HELD $held_n path(s) written after the run's $(( RUN_WRITE_WINDOW_SECONDS / 60 ))-minute window -- not this run's output, left in the working tree:$held"
+    log "     commit them yourself, or re-run once their author is done"
+    held_line="$(ts)  HELD  $held_n path(s) not written by the run:$held_names"
+  else
+    log "authorship check clean: every staged path predates run+$(( RUN_WRITE_WINDOW_SECONDS / 60 ))m or is a named producer"
   fi
-  log "authorship check clean: every staged path predates run+$(( RUN_WRITE_WINDOW_SECONDS / 60 ))m or is a named producer"
 else
   log "GUARD SKIPPED: --skip-run-check leaves no run timestamp; staged-path authorship NOT verified"
+  held_line="$(ts)  SKIP  --skip-run-check: staged-path authorship not verified"
 fi
+[ "$DRY_RUN" -eq 0 ] && printf '%s\n' "$held_line" >> "$REPO/$HELD_STATUS_FILE"
+
+# Holding may have emptied the index. That is a no-op, not a failure -- but the
+# held report above has already been written, so it does not read as a clean tree.
+staged=$(git -C "$REPO" diff --cached --name-only)
+if [ -z "$staged" ]; then
+  log "everything staged was held; nothing of the run's own to commit"
+  log "=== commit_daily_run done (noop) ==="
+  exit 0
+fi
+count=$(printf '%s\n' "$staged" | wc -l | tr -d ' ')
+log "$count path(s) remain after the authorship check"
 
 # --- 6. The address check ---------------------------------------------------
 # The wiki is public and the agents keep regenerating files that carry Tom's

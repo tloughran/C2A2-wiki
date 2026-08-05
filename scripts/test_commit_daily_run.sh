@@ -154,12 +154,32 @@ new_fixture
 run_output wiki/report.md "real output"
 echo "half-finished redesign" > "$FIX/repo/wiki/start_here.html"   # unstamped: written now, long after the run
 before=$(head_count); out=$(run); rc=$?
-expect_rc "staged path written after the run's window" 1 $rc "$out"
-[ "$(head_count)" = "$before" ] && ok "foreign edit left HEAD alone" || bad "committed the foreign edit"
-case "$out" in *start_here.html*) ok "names the foreign path" ;; *) bad "refused without naming it" "$out" ;; esac
-# Naming it is the point: a silent skip is indistinguishable from a clean tree in
-# tomorrow's log, which is the failure mode this script exists to end.
+expect_rc "commits the run's output alongside a foreign edit" 0 $rc "$out"
+[ "$(head_count)" = "$((before+1))" ] && ok "the run's own output still got committed" || bad "stranded the run's output"
+committed=$(git -C "$FIX/repo" show --name-only --pretty=format: HEAD | grep -v '^$' | tr '\n' ' ')
+case "$committed" in *start_here.html*) bad "committed the foreign edit" "$committed" ;; *) ok "held the foreign edit back" ;; esac
+case "$committed" in *report.md*) ok "committed the run's own output" ;; *) bad "dropped the run's output" "$committed" ;; esac
+[ -n "$(git -C "$FIX/repo" status --porcelain -- wiki/start_here.html)" ] \
+  && ok "left the foreign edit dirty in the working tree" || bad "lost the foreign edit"
+
+# Held is not skipped. A skip nobody can see afterwards is the failure this whole
+# script exists to end, so it must survive the log line scrolling away.
+case "$out" in *start_here.html*) ok "names the held path on stdout" ;; *) bad "held it silently" "$out" ;; esac
 case "$out" in *report.md*) bad "blamed the run's own output too" "$out" ;; *) ok "does not blame the run's own output" ;; esac
+held_file="$FIX/repo/scheduler/held_paths.md"
+[ -f "$held_file" ] && grep -q "HELD" "$held_file" && grep -q "start_here.html" "$held_file" \
+  && ok "durably recorded the held path in scheduler/held_paths.md" \
+  || bad "no durable record of the held path" "$(cat "$held_file" 2>/dev/null)"
+
+# Everything staged is somebody else's. Nothing to commit, but this must not read
+# as a clean tree -- the held report is the whole point.
+new_fixture
+echo "somebody else entirely" > "$FIX/repo/wiki/theirs.md"
+before=$(head_count); out=$(run); rc=$?
+expect_rc "all-foreign tree is a no-op, not a failure" 0 $rc "$out"
+[ "$(head_count)" = "$before" ] && ok "committed nothing when it all belonged to someone else" || bad "committed a foreign path"
+grep -q "theirs.md" "$FIX/repo/scheduler/held_paths.md" \
+  && ok "still recorded the held path with nothing left to commit" || bad "held everything and said nothing"
 
 # The telemetry refresh rewrites these around 06:19, ~2h after the run, and this
 # script is still the right one to commit them. A blanket mtime rule would refuse
