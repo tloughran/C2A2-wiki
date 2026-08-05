@@ -248,7 +248,7 @@ def main():
 
     # 3) agent nodes
     agent_nodes = []
-    for tid in sorted(per_agent_nodes, key=lambda t: -agent_events[t]):
+    for tid in sorted(per_agent_nodes, key=lambda t: (-agent_events[t], t)):
         a = roster.get(tid, {})
         is_human = (tid == HUMAN_ID)
         agent_nodes.append({
@@ -269,6 +269,7 @@ def main():
         src = "agents/" + tid
         for rel, w in refs.items():
             coref_substrate.append({"source": src, "target": rel, "weight": w})
+    coref_substrate.sort(key=lambda e: (e["source"], e["target"]))
 
     # 5) coref_projected: agentA <-> agentB shared-node count (A<B)
     sets = {t: set(refs) for t, refs in per_agent_nodes.items()}
@@ -296,8 +297,9 @@ def main():
                 for wtid in writers_before:
                     if wtid != tid:
                         flow_w[(wtid, tid)] += 1
-    flow = [{"source": "agents/" + a, "target": "agents/" + b, "weight": w}
-            for (a, b), w in flow_w.items()]
+    flow = sorted(({"source": "agents/" + a, "target": "agents/" + b, "weight": w}
+                   for (a, b), w in flow_w.items()),
+                  key=lambda e: (e["source"], e["target"]))
 
     out = {
         "_meta": {
