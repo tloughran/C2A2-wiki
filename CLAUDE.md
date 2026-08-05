@@ -144,8 +144,11 @@ read it there, don't paste a bare two-arg call.
 - D3.js v7 force-directed graph, dark theme (#0a0a0f)
 - 3864 nodes (wiki files), 98,201 edges (wikilinks + shared references). **Do not hand-copy
   these forward** — the regen writes them to `wiki/c2a2-wiki-narration/scripts/build_meta.json`,
-  which is the source of truth. (Read on 2026-08-04; its `bytes` lagged the shipped file by
-  ~105KB that day, so a regen had not rewritten it — check before quoting it as current.)
+  which is the source of truth. (Read on 2026-08-04.) **`build_meta.json` describes the
+  SHIPPED build, not the newest code.** The determinism fix of 2026-08-04 deliberately
+  restored it so the guard's baseline still matches origin, and `wiki_narration.html` was
+  not regenerated — so a fresh build measures larger (~40.6MB / 3893 nodes / 98,715 links)
+  and that is not drift. Both numbers are true about different things; say which you mean.
 - Left panel: checkbox filters by tradition (14 thinkers) and structure group (10 categories)
 - Upper-right: Hold Forces, Show Hover Names, Fit All
 - Node click → right panel with rendered markdown; edge click → both panels
@@ -248,7 +251,8 @@ python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run t
 | did it survive? | launchd `last exit code` |
 | did it produce? | the date the artifact **records about itself** — never an mtime |
 
-Covers **70 registry tasks + 11 launchd agents + the artifact table**. Live baseline
+Covers **70 registry tasks + 11 launchd agents + the artifact table**. Live 2026-08-05:
+**78 OK / 4 WARN / 0 FAIL**. Earlier baseline
 2026-08-04: 79 OK / 1 WARN / 2 FAIL.
 
 ### Why it replaced a watchdog that already existed
@@ -270,10 +274,17 @@ Support/Claude/` and scheduled tasks only mount `~/Documents`. Same constraint t
 `check_scheduled_commits.py` behind a launchd agent. **Only `launchctl kickstart` tests
 the real path** — a Terminal shell has its own TCC grant and proves nothing.
 
-### Two deliberate tolerances (do not "fix" these)
+### Three deliberate tolerances (do not "fix" these)
 
 - **One missed fire passes; two fail.** One miss is a laptop asleep at 04:30. A report
   that cries wolf is not read.
+- **`runs = 0` is only a FAIL once a fire has come round since the job loaded.** A weekly
+  agent reloaded on Monday has not failed by Wednesday; it has not been asked yet. The
+  reload time is the installed plist's **mtime**, a proxy — launchd does not report when a
+  service was bootstrapped, and rewriting the plist is what forces the reload. A
+  bootout/bootstrap with no file edit would not move it and would read as FAIL, which is
+  the safe direction to be wrong in. Jobs with no readable `StartCalendarInterval` get no
+  excuse: `runs = 0` stays FAIL.
 - **`VERDICT_EXITS`** — an agent that *is* an assertion exits nonzero to mean "the thing
   I watch is broken". Treating that as an agent fault would leave this permanently red on
   exactly the days the other watchdog is working. Only the listed codes are excused;

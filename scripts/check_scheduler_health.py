@@ -163,6 +163,21 @@ def cron_matcher(expression):
     return matches
 
 
+def next_fire(expression, now_local, horizon_days=400):
+    """The next time this cron will fire, or None past the horizon.
+
+    Used to say WHEN a job that has legitimately not run yet is due. A weekly job
+    reloaded on a Monday has not failed by Wednesday; it has not been asked yet.
+    """
+    matches = cron_matcher(expression)
+    cursor = now_local.replace(second=0, microsecond=0, tzinfo=None)
+    for _ in range(horizon_days * 24 * 60):
+        cursor += timedelta(minutes=1)
+        if matches(cursor):
+            return cursor
+    return None
+
+
 def previous_fires(expression, now_local, count, horizon_days=45):
     """The `count` most recent times this cron should have fired, newest first.
 
@@ -233,12 +248,63 @@ def verdict_task(task, now_local):
     )
 
 
-def parse_launchctl(label, returncode, text):
+def plist_schedule(job):
+    """A StartCalendarInterval dict (or list of them) as cron expressions.
+
+    launchd's calendar fields are the same five cron fields under different names,
+    with "absent" meaning "every". Anything else -- StartInterval, watch paths,
+    KeepAlive-only -- returns [], which means "we cannot say when this is due".
+    """
+    entries = job.get("StartCalendarInterval")
+    if entries is None:
+        return []
+    if isinstance(entries, dict):
+        entries = [entries]
+    crons = []
+    for entry in entries:
+        def field(name):
+            value = entry.get(name)
+            return "*" if value is None else str(value)
+        crons.append(" ".join([field("Minute"), field("Hour"),
+                               field("Day"), field("Month"), field("Weekday")]))
+    return crons
+
+
+def not_yet_due(context, now_local):
+    """(True, next_fire) if no scheduled fire has come round since the job loaded.
+
+    `runs = 0` on a weekly job reloaded four days ago is not the same fact as
+    `runs = 0` on a job that has been sitting there for six Sundays, and calling
+    both a failure trains the reader to ignore both. This is what tells them apart.
+
+    `reloaded_at` is the plist's mtime, which is a PROXY: launchd does not report
+    when a service was bootstrapped. Rewriting a plist is what forces the reload,
+    so in practice the two coincide -- but a bootout/bootstrap with no file edit
+    would not move it, and would make this say FAIL where WARN was right. The proxy
+    errs toward reporting, which is the safe direction.
+    """
+    reloaded_at, crons = context.get("reloaded_at"), context.get("crons") or []
+    if reloaded_at is None or not crons:
+        return False, None
+    upcoming = []
+    for cron in crons:
+        try:
+            if previous_fires(cron, now_local, 1)[0] > reloaded_at:
+                return False, None  # a fire HAS come round since load, and was missed
+            upcoming.append(next_fire(cron, now_local))
+        except (ValueError, IndexError):
+            return False, None
+    upcoming = [f for f in upcoming if f]
+    return True, min(upcoming) if upcoming else None
+
+
+def parse_launchctl(label, returncode, text, context=None, now_local=None):
     """Turn `launchctl print` output into a verdict.
 
     Split out from the subprocess call so the failure paths -- never fired, died
     nonzero, not installed -- can be driven in a test without a real launchd.
     """
+    context = context or {}
     if returncode != 0:
         return FAIL, f"{label}: not loaded in launchd (plist is in the repo but not installed)"
 
@@ -254,9 +320,17 @@ def parse_launchctl(label, returncode, text):
         return FAIL, f"{label}: loaded but `launchctl print` reported no `runs` field"
 
     if runs == "0":
+        pending, due = not_yet_due(context, now_local or datetime.now().astimezone())
+        if pending:
+            when = f", first due {due:%Y-%m-%d %H:%M}" if due else ""
+            return WARN, (
+                f"{label}: runs = 0, but it was (re)loaded "
+                f"{context['reloaded_at']:%Y-%m-%d} and no scheduled fire has come "
+                f"round since{when} — not yet proven, not yet broken"
+            )
         return FAIL, (
-            f"{label}: loaded but has NEVER fired (runs = 0). "
-            f"No log exists to read, because it never started."
+            f"{label}: loaded but has NEVER fired (runs = 0), and at least one "
+            f"scheduled fire has passed. No log exists to read, because it never started."
         )
 
     # A KeepAlive daemon that is up right now has usually exited nonzero at some
@@ -341,6 +415,15 @@ def load_registry_tasks():
     return by_id, paths
 
 
+def installed_plist(label):
+    """mtime of the INSTALLED copy, as the reload proxy. See not_yet_due()."""
+    path = os.path.expanduser(f"~/Library/LaunchAgents/{label}.plist")
+    try:
+        return datetime.fromtimestamp(os.stat(path).st_mtime)
+    except OSError:
+        return None
+
+
 def launchd_labels():
     """(labels, problems) for every plist the repo ships, read from the plists.
 
@@ -355,14 +438,16 @@ def launchd_labels():
     for path in sorted(glob.glob(os.path.join(PLIST_DIR, "*.plist"))):
         try:
             with open(path, "rb") as fh:
-                label = plistlib.load(fh).get("Label")
+                job = plistlib.load(fh)
         except Exception as exc:  # plistlib raises ExpatError, not ValueError
             problems.append((FAIL, f"{os.path.basename(path)}: unreadable plist: {exc}"))
             continue
-        if label:
-            labels.append(label)
-        else:
+        label = job.get("Label")
+        if not label:
             problems.append((FAIL, f"{os.path.basename(path)}: plist has no Label key"))
+            continue
+        labels.append((label, {"crons": plist_schedule(job),
+                               "reloaded_at": installed_plist(label)}))
     return labels, problems
 
 
@@ -404,8 +489,9 @@ def main():
         print(f"FAIL  no plists found in {PLIST_DIR}", file=sys.stderr)
         return 2
     results.extend(plist_problems)
-    for label in labels:
-        results.append(parse_launchctl(label, *launchctl_print(label)))
+    for label, context in labels:
+        results.append(parse_launchctl(label, *launchctl_print(label),
+                                       context=context, now_local=now_local))
 
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))

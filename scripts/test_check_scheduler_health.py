@@ -51,6 +51,10 @@ NOW_LOCAL = datetime(2026, 8, 4, 15, 0, tzinfo=timezone(timedelta(hours=-4)))
 NOW_UTC = NOW_LOCAL.astimezone(timezone.utc)
 
 
+RUNS_ZERO = ("\tstate = not running\n\truns = 0\n"
+             "\tlast exit code = (never exited)\n")
+
+
 def task(**kw):
     base = {"id": "t", "enabled": True, "cronExpression": "30 4 * * *"}
     base.update(kw)
@@ -93,6 +97,25 @@ def main():
            mod.previous_fires("0 9 * * 1-5", NOW_LOCAL, 3),
            [datetime(2026, 8, 4, 9, 0), datetime(2026, 8, 3, 9, 0),
             datetime(2026, 7, 31, 9, 0)])
+
+    expect("next fire looks forward, not back",
+           mod.next_fire("30 6 * * 0", NOW_LOCAL),
+           datetime(2026, 8, 9, 6, 30))
+
+    print("\nlaunchd calendar fields -> cron (absent field means every):")
+    # com.c2a2.metabolism-publish's actual StartCalendarInterval.
+    expect("Weekday/Hour/Minute",
+           mod.plist_schedule({"StartCalendarInterval": {
+               "Weekday": 0, "Hour": 6, "Minute": 30}}),
+           ["30 6 * * 0"])
+    expect("a list of intervals becomes a list of crons",
+           mod.plist_schedule({"StartCalendarInterval": [
+               {"Hour": 6, "Minute": 30}, {"Hour": 18, "Minute": 0}]}),
+           ["30 6 * * *", "0 18 * * *"])
+    # StartInterval / watch paths / KeepAlive-only: we cannot say when it is due,
+    # and saying nothing is what keeps runs = 0 a failure rather than an excuse.
+    expect("no calendar interval yields no cron",
+           mod.plist_schedule({"StartInterval": 3600}), [])
 
     print("\nunparseable cron must fail loud, never match everything:")
     for bad in ["30 4 * *", "99 4 * * *", "30 4 * * MON", "*/0 4 * * *"]:
@@ -142,10 +165,8 @@ def main():
            mod.WARN)
 
     print("\nlaunchd agents that MUST fail:")
-    # com.c2a2.metabolism-publish, verbatim: loaded, enabled, never once fired.
-    expect("runs = 0 (never fired)",
-           mod.parse_launchctl("a", 0, "\tstate = not running\n\truns = 0\n"
-                                       "\tlast exit code = (never exited)\n")[0],
+    expect("runs = 0 (never fired), no context to excuse it",
+           mod.parse_launchctl("a", 0, RUNS_ZERO)[0],
            mod.FAIL)
     expect("plist in the repo but not installed",
            mod.parse_launchctl("a", 113, "Could not find service")[0],
@@ -156,6 +177,21 @@ def main():
            mod.FAIL)
     expect("loaded but reports no runs field",
            mod.parse_launchctl("a", 0, "\tstate = not running\n")[0],
+           mod.FAIL)
+    # A job that HAS had a fire come round since it loaded and still shows runs = 0
+    # is the real thing. Sunday 06:30, loaded three weeks ago.
+    expect("runs = 0 with fires missed since load",
+           mod.parse_launchctl("a", 0, RUNS_ZERO,
+                               context={"crons": ["30 6 * * 0"],
+                                        "reloaded_at": datetime(2026, 7, 13)},
+                               now_local=NOW_LOCAL)[0],
+           mod.FAIL)
+    # No schedule we can read (StartInterval, watch paths, KeepAlive-only) means we
+    # cannot say it is early, so runs = 0 stays a failure rather than an excuse.
+    expect("runs = 0 with no readable schedule",
+           mod.parse_launchctl("a", 0, RUNS_ZERO,
+                               context={"crons": [], "reloaded_at": datetime(2026, 8, 3)},
+                               now_local=NOW_LOCAL)[0],
            mod.FAIL)
     # An assertion-agent's UNLISTED exit codes are still faults: 78 is the
     # macl-xattr trap, 2 is the check itself failing to run.
@@ -179,6 +215,17 @@ def main():
     # An agent that IS an assertion exits 1 to mean "the thing I check is broken".
     # Calling that an agent fault would leave this permanently red on exactly the
     # days the other watchdog is working.
+    # com.c2a2.metabolism-publish, verbatim, on 2026-08-05: Sunday 06:30, reloaded
+    # Monday 08-03 when the macl-xattr log fix landed. The last fire (08-02) predates
+    # the reload, so runs = 0 is what a healthy job looks like here. Calling it broken
+    # would report a fixed job as failing for six more days and teach the reader to
+    # skip the line.
+    expect("weekly job reloaded after its last fire is early, not broken",
+           mod.parse_launchctl("a", 0, RUNS_ZERO,
+                               context={"crons": ["30 6 * * 0"],
+                                        "reloaded_at": datetime(2026, 8, 3, 13, 37)},
+                               now_local=NOW_LOCAL)[0],
+           mod.WARN)
     expect("assertion-agent exit 1 is a finding, not a fault",
            mod.parse_launchctl(next(iter(mod.VERDICT_EXITS)), 0,
                                "\tstate = not running\n\truns = 1\n"
@@ -230,6 +277,10 @@ def main():
            len(tasks) > 1, True)
     labels, plist_problems = mod.launchd_labels()
     expect("at least one launchd plist in the repo", len(labels) > 0, True)
+    # Every calendar-scheduled agent must yield a cron, or not_yet_due() silently
+    # loses its ability to tell "early" from "broken" for that job.
+    expect("every roster entry carries a context",
+           all(isinstance(e, tuple) and "crons" in e[1] for e in labels), True)
     # Every shipped plist must parse. Two did not when this was written, and the
     # roster silently shrinking is exactly how a job stops being watched.
     expect("every shipped plist parses", plist_problems, [])
