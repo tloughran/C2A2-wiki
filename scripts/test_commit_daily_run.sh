@@ -39,12 +39,28 @@ new_fixture() {
   echo "seed" > "$FIX/repo/wiki/seed.md"
   git -C "$FIX/repo" add wiki/seed.md
   git -C "$FIX/repo" commit -q -m "seed"
-  stamp=$(python3 -c "
+  read -r stamp RUN_EPOCH <<<"$(python3 -c "
 from datetime import datetime, timedelta, timezone
-print((datetime.now(timezone.utc)-timedelta(hours=${1:-2})).strftime('%Y-%m-%dT%H:%M:%S.000Z'))")
+t = datetime.now(timezone.utc)-timedelta(hours=${1:-2})
+print(t.strftime('%Y-%m-%dT%H:%M:%S.000Z'), int(t.timestamp()))")"
   cat > "$REG/scheduled-tasks.json" <<JSON
 {"scheduledTasks":[{"id":"c282-wiki-agent-daily-run","enabled":true,"lastRunAt":"$stamp"}]}
 JSON
+  # Pre-existing repo content, so it predates the run. One case un-tracks it,
+  # which makes `git add wiki/` stage it again -- with a fixture-time mtime it
+  # would look like somebody else's edit.
+  touch -t "$(date -r $((RUN_EPOCH - 3600)) +%Y%m%d%H%M.%S)" "$FIX/repo/wiki/seed.md"
+}
+
+# Write a file AS THE RUN WOULD HAVE: content plus an mtime inside the run's own
+# write window. Without the stamp the fixture claims the run finished two hours
+# ago while its output is seconds old, which is not a state the real system can
+# reach -- and the authorship guard correctly refuses it.
+run_output() {
+  local p="$FIX/repo/$1"
+  mkdir -p "$(dirname "$p")"
+  printf '%s\n' "${2:-new}" > "$p"
+  touch -t "$(date -r $((RUN_EPOCH + 60)) +%Y%m%d%H%M.%S)" "$p"
 }
 
 run() { bash "$SCRIPT" --repo "$FIX/repo" --registry-glob "$REG/*.json" "$@" 2>&1; }
@@ -54,7 +70,7 @@ head_count() { git -C "$FIX/repo" rev-list --count HEAD; }
 echo "cases that MUST refuse (exit 1, nothing committed):"
 
 new_fixture
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 touch "$FIX/repo/.git/MERGE_HEAD"
 before=$(head_count); out=$(run); rc=$?
 expect_rc "mid-merge repo" 1 $rc "$out"
@@ -62,33 +78,33 @@ expect_rc "mid-merge repo" 1 $rc "$out"
 rm -f "$FIX/repo/.git/MERGE_HEAD"
 
 new_fixture
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 git -C "$FIX/repo" checkout -q -b sidebranch
 out=$(run); rc=$?
 expect_rc "not on main" 1 $rc "$out"
 
 new_fixture
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 git -C "$FIX/repo" checkout -q --detach
 out=$(run); rc=$?
 expect_rc "detached HEAD" 1 $rc "$out"
 
 # The run has not run for two days, so the dirty tree belongs to somebody else.
 new_fixture 50
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 before=$(head_count); out=$(run); rc=$?
 expect_rc "daily run too stale to own this tree" 1 $rc "$out"
 [ "$(head_count)" = "$before" ] && ok "stale run left HEAD alone" || bad "stale run committed anyway"
 
 new_fixture
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 out=$(bash "$SCRIPT" --repo "$FIX/repo" --registry-glob "$FIX/no-such-dir/*.json" 2>&1); rc=$?
 expect_rc "task absent from the registry" 1 $rc "$out"
 
 # The address check. History survives deleting the file, so this must stop at the
 # commit, not at the push.
 new_fixture
-echo "mail me at $ADDRESS" > "$FIX/repo/wiki/leak.md"
+run_output wiki/leak.md "mail me at $ADDRESS"
 before=$(head_count); out=$(run); rc=$?
 expect_rc "personal address in the staged diff" 1 $rc "$out"
 [ "$(head_count)" = "$before" ] && ok "address leak left HEAD alone" || bad "address leak committed anyway"
@@ -104,7 +120,7 @@ expect_rc "over the staged-file ceiling" 1 $rc "$out"
 echo
 echo "refusals must leave a clean index, not a half-built one:"
 new_fixture
-echo "mail me at $ADDRESS" > "$FIX/repo/wiki/leak.md"
+run_output wiki/leak.md "mail me at $ADDRESS"
 run >/dev/null 2>&1
 staged_after=$(git -C "$FIX/repo" diff --cached --name-only | wc -l | tr -d ' ')
 [ "$staged_after" = "0" ] && ok "index reset after a refusal" || bad "left $staged_after path(s) staged"
@@ -116,8 +132,8 @@ git -C "$FIX/repo" rm -q --cached wiki/seed.md >/dev/null 2>&1
 echo "generated" > "$FIX/repo/wiki/community_explorer.html"
 git -C "$FIX/repo" add wiki/community_explorer.html
 git -C "$FIX/repo" commit -q -m "add explorer"
-echo "CLOBBERED" > "$FIX/repo/wiki/community_explorer.html"
-echo "real output" > "$FIX/repo/wiki/report.md"
+run_output wiki/community_explorer.html CLOBBERED
+run_output wiki/report.md "real output"
 out=$(run); rc=$?
 expect_rc "runs with a clobbered explorer present" 0 $rc "$out"
 if git -C "$FIX/repo" show --name-only --pretty=format: HEAD | grep -q community_explorer; then
@@ -129,11 +145,49 @@ git -C "$FIX/repo" show --name-only --pretty=format: HEAD | grep -q report.md \
   && ok "still committed the real output alongside it" || bad "dropped the real output too"
 
 echo
+echo "the authorship guard -- staged paths the run did not write:"
+# 2026-08-05: a concurrent session rewrote wiki/start_here.html to link a page it
+# had not finished writing. The run had run that morning, so every guard above
+# passed and `git add wiki/` swept the edit in. Committing it would have published
+# a dead link on the entry page under a "C2A2 daily run" subject.
+new_fixture
+run_output wiki/report.md "real output"
+echo "half-finished redesign" > "$FIX/repo/wiki/start_here.html"   # unstamped: written now, long after the run
+before=$(head_count); out=$(run); rc=$?
+expect_rc "staged path written after the run's window" 1 $rc "$out"
+[ "$(head_count)" = "$before" ] && ok "foreign edit left HEAD alone" || bad "committed the foreign edit"
+case "$out" in *start_here.html*) ok "names the foreign path" ;; *) bad "refused without naming it" "$out" ;; esac
+# Naming it is the point: a silent skip is indistinguishable from a clean tree in
+# tomorrow's log, which is the failure mode this script exists to end.
+case "$out" in *report.md*) bad "blamed the run's own output too" "$out" ;; *) ok "does not blame the run's own output" ;; esac
+
+# The telemetry refresh rewrites these around 06:19, ~2h after the run, and this
+# script is still the right one to commit them. A blanket mtime rule would refuse
+# every single morning.
+new_fixture
+run_output wiki/report.md "real output"
+mkdir -p "$FIX/repo/wiki/agents/openstory"
+echo '{"events":1}' > "$FIX/repo/wiki/agents/openstory/agent_telemetry.json"
+echo "inlined telemetry" > "$FIX/repo/wiki/agents_tab.html"
+before=$(head_count); out=$(run); rc=$?
+expect_rc "named post-run producers pass the window" 0 $rc "$out"
+files=$(git -C "$FIX/repo" show --name-only --pretty=format: HEAD | grep -c agents)
+[ "$files" = "2" ] && ok "committed both telemetry paths" || bad "expected 2 agents paths, got $files"
+
+# --skip-run-check exists for the fixtures, and it removes the timestamp the guard
+# needs. It must say so out loud rather than pass silently on an unchecked tree.
+new_fixture
+echo "whoever wrote this" > "$FIX/repo/wiki/unstamped.md"
+out=$(run --skip-run-check); rc=$?
+expect_rc "--skip-run-check still commits" 0 $rc "$out"
+case "$out" in *"GUARD SKIPPED"*) ok "announces that authorship went unverified" ;; *) bad "skipped the guard silently" "$out" ;; esac
+
+echo
 echo "cases that MUST succeed:"
 new_fixture
 before=$(head_count)
-echo "new" > "$FIX/repo/wiki/new.md"
-echo '{"a":1}' > "$FIX/repo/prototypes/level2_build_meta.json"
+run_output wiki/new.md
+run_output prototypes/level2_build_meta.json '{"a":1}'
 echo "stray" > "$FIX/repo/unrelated_stray.md"
 out=$(run); rc=$?
 expect_rc "normal daily-run output" 0 $rc "$out"
@@ -156,7 +210,7 @@ out=$(run); rc=$?
 expect_rc "clean tree is a no-op, not a failure" 0 $rc "$out"
 
 new_fixture
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 before=$(head_count); out=$(run --dry-run); rc=$?
 expect_rc "--dry-run exits clean" 0 $rc "$out"
 [ "$(head_count)" = "$before" ] && ok "--dry-run committed nothing" || bad "--dry-run committed"
@@ -167,7 +221,7 @@ echo
 echo "it must never push:"
 new_fixture
 git -C "$FIX/repo" remote add origin "$FIX/nonexistent-remote.git"
-echo "new" > "$FIX/repo/wiki/new.md"
+run_output wiki/new.md
 out=$(run); rc=$?
 expect_rc "commits with an unreachable remote configured" 0 $rc "$out"
 case "$out" in *push*ing*|*"To $FIX"*) bad "attempted a push" "$out" ;; *) ok "no push attempted" ;; esac

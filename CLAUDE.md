@@ -238,7 +238,7 @@ python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run t
 
 ## Daily-Run Commit Step (the sandbox cannot write .git)
 
-**Script:** `scripts/commit_daily_run.sh` (+ `scripts/test_commit_daily_run.sh`, 26 assertions)
+**Script:** `scripts/commit_daily_run.sh` (+ `scripts/test_commit_daily_run.sh`, 34 assertions)
 **Runs:** 05:45 daily, first step of the `com.c2a2.scheduled-commit-check` launchd agent
 **Commits. Never pushes.**
 
@@ -273,9 +273,23 @@ reviewable commit. Pushing stays a human act.
   sync should stop it
 - `thomas.loughran@gmail.com` appears in the staged diff. It refuses at **commit**, not at
   push: history survives deleting the file
+- **any staged path was written more than 45 minutes after the run started** and is not a
+  named post-run producer (`wiki/agents/openstory/`, `wiki/agents_tab.html` — the telemetry
+  refresh, ~06:19). The 25h `lastRunAt` guard answers *when the run happened*; it never
+  answers *which files the run wrote*, so on a normal morning every dirty `wiki/` path was
+  staged regardless of author. On **2026-08-05** that would have committed a concurrent
+  session's front-door redesign: `start_here.html` rewritten to link `what_is_saying.html`,
+  a page that session had not finished writing — a dead link on the entry page, under a
+  "C2A2 daily run" subject, with the real author erased
 
 Every refusal path resets the index first — bailing with a half-built index leaves state
 nobody created on purpose.
+
+**The cost, stated plainly:** the authorship guard refuses the *whole* run rather than
+committing around the foreign paths, because a silently skipped path is indistinguishable
+from a clean tree in the next morning's log. So on any day someone is editing `wiki/` in
+the morning, nothing is committed until a human clears it — the refusal names the exact
+paths and their age. Commit those by hand (or stage the run's output by name) and re-run.
 
 ```bash
 bash scripts/commit_daily_run.sh --dry-run

@@ -74,10 +74,27 @@ PATHSPEC=(
 # 2026-06-07. Regenerate it deliberately or leave it alone.
 NEVER_COMMIT=("wiki/community_explorer.html")
 
+# How long after the run starts its own writes can still land. Same 45 minutes
+# check_daily_run_stall.py uses, and for the same reason: the longest clean run
+# measured across 110 transcripts is 535s, so 45 minutes is five times the real
+# ceiling. Anything under wiki/ touched after that was written by somebody else.
+RUN_WRITE_WINDOW_SECONDS=2700
+
+# The exceptions: automated producers that legitimately write into the run's
+# output tree LATER in the morning, whose output this script is still the right
+# one to commit. refresh_openstory_feeds.sh rewrites both of these around 06:19,
+# roughly two hours after the run. Add a prefix here only for a scheduled,
+# deterministic producer -- never to silence a refusal you did not understand.
+POST_RUN_PRODUCERS=(
+  "wiki/agents/openstory/"
+  "wiki/agents_tab.html"
+)
+
 REPO="$REPO_DEFAULT"
 REGISTRY_GLOB="$REGISTRY_DEFAULT"
 DRY_RUN=0
 SKIP_RUN_CHECK=0
+RUN_START_EPOCH=""
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -142,10 +159,13 @@ for path in glob.glob(os.environ["REGISTRY_GLOB"]):
 if newest is None:
     print("NONE"); sys.exit(0)
 ran = datetime.fromisoformat(newest.replace("Z", "+00:00"))
-print(f"{(datetime.now(timezone.utc) - ran).total_seconds() / 3600:.1f}")
+print(f"{(datetime.now(timezone.utc) - ran).total_seconds() / 3600:.1f} {ran.timestamp():.0f}")
 PY
 ) || fail "could not read the task registry"
   [ "$age" = "NONE" ] && fail "$TASK_ID is not in any registry -- cannot confirm a run"
+  # The block prints "<hours> <epoch>"; the authorship guard below needs the epoch.
+  RUN_START_EPOCH="${age##* }"
+  age="${age%% *}"
   if awk "BEGIN{exit !($age > $MAX_RUN_AGE_HOURS)}"; then
     fail "$TASK_ID last ran ${age}h ago (> ${MAX_RUN_AGE_HOURS}h) -- the dirty tree is not its output"
   fi
@@ -204,6 +224,49 @@ $escaped"
 
 [ "$count" -gt "$MAX_STAGED_FILES" ] && \
   fail "$count staged paths exceeds the $MAX_STAGED_FILES ceiling -- this is not a normal daily run"
+
+# --- 5b. Refuse when somebody else's in-flight edits are in the index -------
+# The run-age guard in section 2 answers WHEN the run happened. It never answers
+# WHICH files the run wrote. On any normal morning the run is a few hours old, so
+# every dirty path under wiki/ is staged regardless of who wrote it.
+#
+# On 2026-08-05 that would have committed a concurrent session's front-door
+# redesign: start_here.html had been rewritten to link what_is_saying.html, a page
+# that session had not finished writing. A dead link on the wiki's entry page,
+# committed under a "C2A2 daily run" subject, with the real author erased.
+#
+# Refuse and name the paths rather than skip them. A silently skipped path looks
+# exactly like a clean tree in tomorrow's log, which is the failure this whole
+# script exists to end.
+#
+# mtime is a sound signal here only because these are local writes to a live tree.
+# A branch switch or fresh clone restamps everything and would trip this -- a loud
+# refusal on a tree nobody built on purpose, which is the outcome we want.
+if [ -n "$RUN_START_EPOCH" ]; then
+  cutoff=$(( RUN_START_EPOCH + RUN_WRITE_WINDOW_SECONDS ))
+  foreign=""
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    produced=0
+    for prefix in "${POST_RUN_PRODUCERS[@]}"; do
+      case "$f" in "$prefix"*) produced=1; break ;; esac
+    done
+    [ "$produced" -eq 1 ] && continue
+    mtime=$(stat -f %m "$REPO/$f" 2>/dev/null) || continue
+    if [ "$mtime" -gt "$cutoff" ]; then
+      foreign="$foreign
+  $f (written run+$(( (mtime - RUN_START_EPOCH) / 60 ))m)"
+    fi
+  done <<EOF
+$(git -C "$REPO" diff --cached --name-only --diff-filter=d)
+EOF
+  if [ -n "$foreign" ]; then
+    fail "staged paths written after the run's $(( RUN_WRITE_WINDOW_SECONDS / 60 ))-minute write window -- these are not this run's output:$foreign"
+  fi
+  log "authorship check clean: every staged path predates run+$(( RUN_WRITE_WINDOW_SECONDS / 60 ))m or is a named producer"
+else
+  log "GUARD SKIPPED: --skip-run-check leaves no run timestamp; staged-path authorship NOT verified"
+fi
 
 # --- 6. The address check ---------------------------------------------------
 # The wiki is public and the agents keep regenerating files that carry Tom's
