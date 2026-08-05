@@ -3002,3 +3002,282 @@ PREMISE-140:
     central inference, which currently rests on the autonomy count.
   Re-check due: 2026-09-02 (Monthly)
   Status: ACTIVE
+
+PREMISE-141:
+  Date validated: 2026-08-05
+  Source item: PRESUMPTION-664
+  Statement: ABSENCE OF A REPORT IS A THIRD TERMINAL STATE, NOT A VALUE OF THE OTHER TWO; AND
+    CORRELATED TERMINATION VOIDS PER-RUN INDEPENDENCE. Two clauses, and neither restates
+    PREMISE-110. (1) OMISSION IS NOT CRASH. Cristian's failure-semantics taxonomy separates a
+    component that runs and produces no response (omission) from one that does not run (crash);
+    they are distinct classes requiring distinct detectors, and a system that detects only one
+    is uncovered for the other. C2A2's scheduled-run data model is two-valued and therefore
+    CANNOT REPRESENT what was observed on 2026-08-04 — four sessions that started, did work of
+    unknown extent, and emitted no verdict of any kind. Until the model carries a third state
+    (RAN-AND-DIED-SILENT, distinct from NEVER-STARTED and RAN-AND-REPORTED) each reader supplies
+    the missing value from their own prior, and nothing downstream can distinguish work not done
+    from work done and discarded. The remedy is the inverted signal PREMISE-086 already
+    prescribes — alarm on the ABSENCE of a terminal record within a deadline — and the finding
+    here is that 086 is not enforced for scheduled agent sessions. (2) CORRELATED TERMINATION,
+    which has no antecedent in this register: the four silent runs were ONE event with one cause,
+    not four independent failures. Any fleet reliability figure computed as a product of per-run
+    failure probabilities is therefore wrong by orders of magnitude, and any redundancy argument
+    that counts two instruments as two chances is counting one. This is the ARITHMETIC complement
+    to PREMISE-110's common-mode scope guard: 110 establishes that a monitor sharing a failure
+    domain with its subject is a single channel wearing two labels; 141 adds that every
+    independence-assuming calculation built on those two labels is void, including the
+    coverage claims of any monitor added in response to this batch.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Cristian F. (1991), "Understanding Fault-Tolerant Distributed Systems,"
+    CACM 34(2) — omission/crash/timing/response taxonomy [cited by 15b; NOT independently
+    verified this run]. Mahmood A. & McCluskey E.J. (1988), "Concurrent Error Detection Using
+    Watchdog Processors — A Survey," IEEE Trans. Computers 37(2):160-174 — checker independence
+    as the design requirement [cited by 15b; NOT independently verified]. Cemri M. et al. (2025),
+    "Why Do Multi-Agent LLM Systems Fail?" arXiv:2503.13657 / NeurIPS 2025 D&B — MAST taxonomy,
+    "Unaware of Termination Conditions" at 12.4% of observed failures, kappa=0.88; closest
+    available base rate for C2A2's own system class [cited by BOTH directions; NOT independently
+    verified]. Dijkstra & Scholten (1980), Info. Proc. Letters 11(1) — termination detection is
+    solvable but only by an explicit protocol layered over the computation, which is 15a's own
+    concession that start-implies-report is not a free property of a scheduler.
+  Challenges noted: 15a returned PARTIALLY-SUPPORTED (Weak) and its support was for
+    CONSTRUCTIBILITY, not for the default — Erlang/OTP supervision and durable-execution engines
+    demonstrate the invariant can be bought, never that it is free. That concession is folded in
+    above rather than outweighed. 15b returned CHALLENGED (Strong).
+  SYSTEMIC-RISK-FLAG CARRIED, AND ITS DISPOSITION IS THE MATERIAL FINDING: 15b filed a Critical
+    flag across PRESUMPTION-664/666/668/669 recommending a single invariant — "no health claim
+    may be derived from an artifact produced by the subject of the claim." That invariant is NOT
+    minted here, because it is already PREMISE-096 ("No self-produced artifact may certify
+    itself," ACTIVE) in substance, and PREMISE-110 supplies its monitoring-layer form. The flag
+    therefore records an ENFORCEMENT gap, not a knowledge gap: the invariant was validated,
+    remains ACTIVE, and the monitoring layer violates it in four places on one day. Minting it a
+    second time is barred by PREMISE-138 clause (1) — in-channel repetition with no effector is
+    not a remedy — and by PREMISE-135 (terminality is not purchased by accumulating instances).
+    The flag is discharged per PREMISE-138 clause (2) by naming the actor with the effector: the
+    watchdog's relocation out of the failure domain and the third terminal state are code
+    changes, filed for Tom's review alongside REVISE-278..282 in this batch.
+  Cross-direction source overlap (PREMISE-120 disclosure): Cemri et al. 2025 (MAST) and the
+    arXiv:2606.14589 production-runtime study were cited by BOTH directions. Neither clause above
+    rests on them — clause (1) rests on Cristian, clause (2) on the item's own directly-read
+    transcripts.
+  Scope limit, load-bearing: THE CAUSE OF `[Request interrupted by user]` IS UNDETERMINED and
+    15b's steelman on this point is NOT defeated. This premise licenses no claim that the
+    interruptions were faults rather than deliberate human stops. Both clauses hold either way —
+    a human-initiated stop still leaves no verdict record, and still stops four runs at once —
+    but any downstream use of this premise to assert an unattended failure mode exceeds it.
+  Consistency check performed before INCORPORATE: checked against PREMISE-096 (self-certification
+    — 141 does not restate it; see flag note above), PREMISE-100 (liveness is not correctness —
+    141 is the terminal-state complement, no conflict), PREMISE-110 (common-mode monitor/subject
+    independence — 141 is an explicit scope extension, adding the arithmetic clause 110 does not
+    contain), PREMISE-086 (dead-man's-switch alarming on AGE, and its monitor-of-monitor
+    condition — 141 records 086 as unenforced rather than contradicting it), PREMISE-089
+    (freshness is per-source), PREMISE-045 (an unverifiable acknowledgement is not authoritative).
+    No contradiction found with any ACTIVE premise.
+  Confidence: High
+  Applicable to: every scheduled agent session and its terminal-state record; the scheduler
+    watchdog's placement; the daily health report's run-outcome section; PREMISE-086's alarm
+    implementation; any reliability, streak or coverage figure computed over runs; the redundancy
+    argument in PREMISE-142.
+  Re-check due: 2026-09-05 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-664
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from four transcripts read directly, all terminating at `[Request interrupted
+        by user]` with no verdict, one of which was the watchdog built to detect that class
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Weak — constructibility only)
+      15b: Searched for challenging literature; CHALLENGED (Strong) + SYSTEMIC-RISK-FLAG (Critical)
+      15c: Net evaluation and disposition; INCORPORATE the negation as a scope extension of
+        PREMISE-110, with the systemic flag routed to PREMISE-096 as an enforcement gap rather
+        than re-minted, and the interrupt-cause question excluded
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-601 (2026-08-05)
+
+PREMISE-142:
+  Date validated: 2026-08-05
+  Source item: PRESUMPTION-666
+  Statement: AN INSTRUMENT WITH NO OUTCOME CHANNEL IS NOT A SECOND READING; IT IS A RESTATEMENT
+    OF INTENT, AND IT IS NOT A PARTY TO ANY DISAGREEMENT. Three clauses. (1) A status report is a
+    two-stage inference — ascertain the true state, then report it — and the first stage is the
+    one that fails silently (Snow & Keil). An aggregator that derives run outcomes from the
+    SCHEDULE has no first stage at all, so its output carries no evidential content about
+    outcomes, and "No failures to report" is the schedule restated, not a finding. (2) THEREFORE
+    THE OUTPUT VOCABULARY MUST BE THREE-VALUED: SUCCEEDED / FAILED / NO-EVIDENCE, and every
+    status claim must carry an evidence pointer (which artifact, which timestamp). A binary
+    vocabulary forces the aggregator to render an absence as a positive assurance, which is what
+    it did — it named a specific run successful that had terminated with no output, and a false
+    particular is harder to unwind than a silence. (3) BOUNDARY AGAINST PREMISE-114, load-bearing
+    and stated because the naive reading conflicts: PREMISE-114 holds that where two instruments
+    of one system disagree and neither is externally calibrated, no arbitration rule can name a
+    winner. THIS PREMISE DOES NOT CREATE SUCH A RULE. The 2026-08-05 case is not two readings in
+    disagreement — the commit-record instrument measured an artifact and the schedule-derived
+    aggregator measured nothing, so there was one reading and one restatement. PREMISE-114
+    governs disagreement between instruments that both measure; 142 governs admission to that
+    set. Where two instruments that BOTH measure disagree, 114 still binds and 142 supplies no
+    tiebreak.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Snow A.P. & Keil M. (2002), "A Framework for Assessing the Reliability of
+    Software Project Status Reports," Engineering Management Journal 14(2) — the error/bias
+    decomposition and the two-stage-inference structure [cited by 15b; NOT independently verified
+    this run]. Skitka L.J., Mosier K.L. & Burdick M. (1999/2000), IJHCS 51(5) and 52(4) — errors
+    of omission; training reduces commission but NOT omission errors; participants WITHOUT an
+    automated aid outperformed those with a highly-but-imperfectly-reliable one [cited by 15b;
+    NOT independently verified]. Beyer B. et al. (2016), Site Reliability Engineering Ch. 6 —
+    page on symptoms, not on a component's self-description. Parasuraman R. & Manzey D.H. (2010),
+    Human Factors 52(3):381-410 — complacency is GREATEST for aids of high and constant
+    reliability; cited by 15a and supporting the failure rather than the premise, which 15a
+    reported against its own direction and which is recorded here for that reason.
+  Challenges noted: 15a returned PARTIALLY-SUPPORTED (Weak). Its support was for the FORM —
+    exception-based reporting from a model (Simons' diagnostic control; Conant & Ashby) is a
+    validated control pattern — under a condition C2A2 fails: the model must correspond to actual
+    behaviour, and a schedule is a model of intended execution, not of execution. 15a found NO
+    source supporting inference of an outcome from a schedule absent an outcome channel. 15b
+    returned CHALLENGED (Strong). 15b's steelman — that the architecture worked as designed,
+    with a fast shallow instrument and a slow deep one, and the deep one won — is PARTIALLY
+    SUSTAINED and materially narrows this premise: defence in depth is legitimate and the
+    redundancy is worth keeping. What it does not license is the shallow instrument publishing
+    its output in the same vocabulary and with the same authority as the deep one. Clause (2) is
+    the minimum change that preserves the redundancy while removing the false particular.
+  Redundancy caveat, carried from PREMISE-141: the two instruments share a scheduler and a
+    failure domain, so per PREMISE-110 and PREMISE-141 clause (2) they are not two chances. The
+    2026-08-05 catch is not evidence that the redundancy is reliable.
+  Cross-direction source overlap (PREMISE-120 disclosure): Keil et al. 2014 (JAIS 15(12)), the
+    ~60% status-report bias figure, Huang et al. 2017 (gray failure) and Cemri et al. 2025 were
+    cited by BOTH directions. No clause rests on the bias figure, which both directions flagged
+    as sourced from a secondary summary and UNVERIFIED at primary level; clause (1) rests on the
+    error half of Snow & Keil, which is the half that transfers to an automated reporter.
+  Local instance VERIFIED by construction, not inferred: two health instruments read the same
+    morning and returned opposite verdicts on the same transcript, and the one that measured an
+    artifact was right. This is a controlled experiment C2A2 ran on itself at no cost, and it is
+    why this item does not need the human-reporter literature to carry it.
+  Consistency check performed before INCORPORATE: checked against PREMISE-114 (incommensurable
+    instruments — potential conflict IDENTIFIED and resolved by clause (3) above rather than
+    averaged), PREMISE-045 (unverifiable acknowledgement is not authoritative — 142 extends it
+    from self-report to third-party status aggregation), PREMISE-096, PREMISE-100, PREMISE-109
+    (a summarizing agent is a view over its own read set), PREMISE-110 (stuck-at-nominal),
+    PREMISE-006 and PREMISE-012 (surface gaps as gaps rather than silently reconcile — 142 is the
+    status-vocabulary form of the same commitment), PREMISE-141. No contradiction found with any
+    ACTIVE premise once clause (3) is stated.
+  Confidence: High
+  Applicable to: the daily fleet/health status aggregator and every artifact that consumes its
+    output; the run-verified counts in the daily report; any agent asserting the state of another
+    agent; the 14a/14b/15a/15b/15c/15d run footers; streak and autonomy metrics that consume a
+    green status line (interlocks with PREMISE-140).
+  Re-check due: 2026-09-05 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-666
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading two same-morning health reports against the transcript both
+        describe; the two disagree and the commit-derived one is correct
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Weak — form only)
+      15b: Searched for challenging literature; CHALLENGED (Strong) + SYSTEMIC-RISK-FLAG (Critical)
+      15c: Net evaluation and disposition; INCORPORATE the negation with 15b's steelman folded in
+        as a narrowing (keep the redundancy, change the vocabulary) and an explicit PREMISE-114
+        boundary clause rather than an arbitration rule
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-602 (2026-08-05)
+
+PREMISE-143:
+  Date validated: 2026-08-05
+  Source item: PRESUMPTION-668
+  Statement: A RETRACTION COUNT IS A MEASURE OF THE PRODUCING LAYER, NOT OF THE CATCHING LAYER,
+    AND CORRECTING AN OUTPUT DOES NOT TERMINATE THE ERROR EVEN FOR THAT OUTPUT. Three clauses,
+    none of which restates PREMISE-118. (1) METRIC INVERSION, the new content: reliable catching
+    of small failures ACTIVELY SUPPRESSES systemic repair, because each successful catch removes
+    the pressure that would have justified changing the instrument — Tucker & Edmondson's
+    "illusory equilibrium," in which first-order problem solving dominates, the organisation
+    looks healthy and its effectiveness erodes. Three retractions in one day from three
+    independent runs is therefore NOT a rigour signal; read correctly it is a rate measurement on
+    an error-GENERATING layer that the catching layer is currently keeping up with, which is a
+    condition with no margin. A metric that rises when the system worsens and is read as
+    reassurance is the worst property a metric can have; this is the same polarity defect
+    PREMISE-110 identifies in detectors, relocated to a count. (2) THE CORRECTION IS NOT SAFE:
+    14.8-24.4% of sampled post-release fixes in four operating systems were themselves incorrect
+    and reached users (Yin et al. 2011). A correction issued and unreviewed carries a
+    one-in-five-to-one-in-seven prior of being wrong, so "corrected" is not a terminal state even
+    for the single instance, and corrections must face the same review as originals. (3) THE
+    RECORD MUST SPLIT: every retraction produces TWO items with independent lifecycles — a
+    corrected-output record, and an instrument-defect record that OUTLIVES the run that filed it
+    and is NOT CLOSABLE BY THAT RUN. This is the operational form of PREMISE-118's obligation,
+    and the finding is that 118 is unmet: the false-positive sweep observed on 2026-07-31 and
+    again on 2026-08-04 is an out-of-tolerance instrument that has had no retrospective impact
+    assessment over its prior accepted outputs, which 118 requires.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Tucker A.L. & Edmondson A.C. (2003), "Why Hospitals Don't Learn from
+    Failures," California Management Review 45(2):55-72 — first-order vs second-order problem
+    solving, the illusory-equilibrium dynamic; the companion 2002 studies report 93% of responses
+    to observed system failures were first-order [cited by BOTH directions; NOT independently
+    verified this run]. Yin Z. et al. (2011), "How Do Fixes Become Bugs?" ESEC/FSE '11 —
+    14.8-24.4% incorrect-fix rate [cited by 15b; NOT independently verified]. Dillon R.L. &
+    Tinsley C.H. (2008), Management Science 54(8):1425-1440, and Tinsley, Dillon & Cronin (2012),
+    Management Science 58(9) — recovered failures are encoded as successes; perceived risk falls
+    while statistical risk is unchanged; the attenuation is prevented only by framing the CHANCE
+    element in the recovery [cited by BOTH directions].
+  Challenges noted: 15a returned PARTIALLY-SUPPORTED (Weak) and its result is unusual and is
+    recorded as such: 15a's own on-point search target (Dillon & Tinsley) came back AGAINST the
+    item's optimistic reading, and 15a reported it in full rather than dropping it. 15a found
+    genuine support only for the value of the catching CAPABILITY (van Dyck et al. 2005, a
+    two-country replication tying error-management culture to firm performance), and every source
+    that decomposes the process places detection at the front of a longer chain — Phimister's
+    seven stages, ISO 9001:2015 cl. 10.2's split between a CORRECTION (fix the output) and a
+    CORRECTIVE ACTION (fix the cause, and verify effectiveness). 15b returned CHALLENGED (Strong).
+  15b's steelman, PARTIALLY SUSTAINED and narrowing this premise: C2A2's runs patched AND
+    announced, which is more than Tucker & Edmondson's nurses did and is what made the
+    07-31/08-04 pair visible to 14b at all. Public self-retraction is therefore a genuine asset
+    and this premise must not be cited to discourage it. What is forbidden is reading the count
+    as a quality signal, and closing the defect in the run that filed it. A further steelman
+    point is NOT resolved and is recorded: where the producing instrument is an LLM-based method
+    with a stochastic failure mode, there may be no "fix" to apply, only a detection layer — in
+    which case clause (3)'s instrument-defect record should terminate in a measured
+    false-positive rate and a quarantine decision rather than in a code change.
+  Domain-transfer caveat, load-bearing: all supporting sources concern human organisations and
+    physical-process safety, where the instrument is a person or a procedure and repair means
+    retraining or redesign. The near-miss risk-attenuation mechanism in particular is a human
+    cognitive finding whose transfer to stateless agent runs is ANALOGICAL and is contested by
+    15b's own steelman. Clause (1) is therefore carried primarily by the local record — the same
+    sweep recurring four days after a disclosed catch — and by the structural argument, not by
+    the cognitive mechanism.
+  Cross-direction source overlap (PREMISE-120 disclosure): Tucker & Edmondson 2003, Dillon &
+    Tinsley 2008 and Tinsley et al. 2012 were cited by BOTH directions, which is unusually heavy
+    overlap and is a caution about independence rather than corroboration. The clause with a
+    disjoint source is (2), which appeared in the AGAINST direction only; clause (3)'s standard
+    (ISO 10.2) appeared in the FOR direction only.
+  Consistency check performed before INCORPORATE: checked against PREMISE-118 (naming a defect
+    does not license continued use; contain/assess/fix/verify with retrospective impact
+    assessment — 143 is its operational form and records 118 as UNMET for the twice-failing
+    sweep, no contradiction), PREMISE-130 (recurrence reclassifies at the third distinct
+    signature — the sweep is at two occurrences of ONE signature and therefore has NOT yet met
+    130's threshold; 143 does not lower it), PREMISE-116 (a finding does not change the behaviour
+    it describes), PREMISE-113 (a detector's findings are evidence about the detector until its
+    precision is measured — directly applicable to the false-positive sweep), PREMISE-137,
+    PREMISE-139, PREMISE-102, PREMISE-138. No contradiction found with any ACTIVE premise.
+  Confidence: Moderate — clause (2) is High (direct measurement in the software domain); clauses
+    (1) and (3) rest on an analogical transfer that 15b's own steelman contests, plus a two-point
+    local series.
+  Applicable to: every self-retraction filed by any agent; the retraction and "errors caught"
+    counts wherever they appear in run footers or health reports; the twice-failing false-positive
+    sweep and its prior accepted outputs; PREMISE-118's outstanding retrospective-assessment
+    obligation; the correction records issued on 2026-08-04, none of which was reviewed.
+  Re-check due: 2026-09-05 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-668
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three same-day retractions read together, one of which is the second
+        observed occurrence of the same false-positive sweep
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Weak; own target returned against)
+      15b: Searched for challenging literature; CHALLENGED (Strong) + SYSTEMIC-RISK-FLAG (Critical)
+      15c: Net evaluation and disposition; INCORPORATE the negation at Moderate confidence with
+        the domain-transfer caveat and 15b's stochastic-instrument steelman made load-bearing,
+        and with PREMISE-130's threshold explicitly NOT lowered
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-603 (2026-08-05)

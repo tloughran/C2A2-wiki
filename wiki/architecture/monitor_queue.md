@@ -18433,3 +18433,36 @@ MONITOR-500:
   Priority: High — the join is cheap, is owed, and is blocking a disposition.
   Cycle: 0
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: MONITORING
+
+
+MONITOR-501:
+  Date entered: 2026-08-04
+  Source item: PRESUMPTION-653 (14b)
+  Disposition record: DISPOSITION-594
+  Statement under monitoring: That two different figures for one quantity is a
+    reconciliation problem rather than evidence that no agent owns the quantity.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a: PARTIALLY-SUPPORTED (Weak) — redundant records reconciled against an authoritative
+    source are a legitimate control (double-entry bookkeeping; Springer 2024 data
+    stewardship), but only where an owner and a scheduled resolution rule exist.
+  15b: PARTIALLY-CHALLENGED (Moderate) — unowned duplicates diverge rather than converge;
+    institutionalising the disagreement permanently disables the detector for this class.
+  Why MONITOR and not REVISE: the only item in the batch where neither direction reached
+    Strong, and the two directions AGREE on the governing condition — reconciliation is a
+    valid reading if and only if an owner exists. They disagree only on whether C2A2 has
+    one, and that is a question about this vault, not about the literature. Per
+    ASSUMPTION-519 / PREMISE-124, dispositioning on the literature clause would be
+    accepting a proxy where a measurement is available — the exact error REVISE-276 is
+    about. Same reasoning as MONITOR-500, and the same obligation follows: the query is owed.
+  What would change the disposition — SINGLE, CHEAP, TERMINATING:
+    Enumerate the ten figures for five quantities from 2026-08-03. For each quantity, name
+    the agent that owns it.
+      · no quantity has a named owner with an effector -> REVISE, with the count as basis
+      · owners exist and the divergence is genuine reconciliation lag -> INCORPORATE the
+        reconciliation reading, with the owner list as evidence
+    One query settles it either way.
+  Monitoring cadence: Weekly | Next 15d check: 2026-08-11
+  Priority: High — the query is cheap, the generation rate is ten figures per day, and
+    every day it goes unrun adds figures to a possibly-unowned set.
+  Cycle: 0
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: MONITORING

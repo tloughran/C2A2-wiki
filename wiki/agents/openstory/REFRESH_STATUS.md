@@ -1,1 +1,1 @@
-2026-08-03T18:39Z  PASS  telemetry=2026-08-03/33 agents  node_edges=2026-08-03  | DB age 0h
+2026-08-05T10:24Z  PASS  telemetry=2026-08-05/33 agents  node_edges=2026-08-05  | DB frontier 0h (snapshot = last checkpoint, 4h behind live WAL); node-refs run via chunked ref-cache (extractor now exceeds 45s sandbox wall)

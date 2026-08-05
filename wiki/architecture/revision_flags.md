@@ -6765,3 +6765,548 @@ block's unanimity is partly an artifact of the instrument. The underlying challe
 external citable literature and are checkable independently of how they were retrieved — but
 REVISE-262 is filed High precisely because fixing it would let a future batch settle this
 rather than restate it.
+
+---
+
+## 2026-08-04 — 15c dispositions from the 2026-08-03 EOD intake (14b cohort)
+
+Ten REVISE flags from an eleven-item batch. Read REVISE-271 first: it is the item that
+governs how the other nine should be weighted, and it is self-referential.
+
+Seven of the ten share the root named in SYSTEMIC-RISK-FLAG 2026-08-04 (fourth consecutive
+day, and the first to name the shape precisely): *an instrument emits a reassuring token,
+the conditions that produced it are not recorded alongside it, and because the token is
+reassuring nothing downstream investigates — so the error self-conceals.* They are filed
+separately because the remedies are separate and independently actionable. Three of them —
+REVISE-270, -273, -276 — reach an identical terminal state by independent routes: an
+unqualified assurance token whose generating conditions are unrecoverable. If only one
+change is made from this batch, the systemic-risk file argues it should be at the artifact
+level (three-valued verdicts plus a provenance block on every assurance-bearing artifact),
+not item by item.
+
+ARRANGEMENT NOTE: 15a and 15b ran as separate agent instances with disjoint contexts, 15b
+barred from reading `for/`. Stronger than 2026-08-03. Still same model family, one
+coordinator — see DISPOSITION-590's preamble for the full statement of what remains.
+
+REVISE-268 — PRESUMPTION-646: an empty channel is not an empty day
+  Source: PRESUMPTION-646 (14b) | Disposition: DISPOSITION-590
+  Evidence standing: 15a NO-SUPPORT-FOUND (None) — no source supports reading an empty
+    instrument yield as a fact about the world; observability and safety-surveillance
+    literature treats coverage as something to be proved. 15b CHALLENGED (Strong) —
+    incident-reporting review (Milbank Q. 2015) plus telemetry-coverage work showing
+    absence of record correlates with the anomalous cases.
+  The point that decides it: the blind spot is not random, it is biased toward the sessions
+    worth seeing. The 2026-08-03 intake is itself an instance and said so.
+  Affected: every "no attended work occurred" claim; autonomy streaks; the 14a/14b intake
+    basis whenever `list_sessions` returns empty.
+  REQUESTED CHANGE: no absence claim may rest on a single channel. Require a second witness
+    (artifact mtimes, scheduler records, git log) before an empty `list_sessions` is written
+    as "no work." Absent a second witness the correct emission is NO-SESSIONS-VISIBLE.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-269 — PRESUMPTION-647: a setpoint from one incident is provisional, and nothing here
+  makes it stop being provisional
+  Source: PRESUMPTION-647 (14b) | Disposition: DISPOSITION-591
+  Evidence standing: the batch's only genuinely two-sided item. 15a PARTIALLY-SUPPORTED
+    (Moderate) — incident-seeded thresholds are established practice in detection
+    engineering and in ANSI/ISA-18.2 / EEMUA 191, but every supporting source makes the
+    initial setpoint provisional and periodic re-review MANDATORY. 15b CHALLENGED (Strong) —
+    a single-incident setpoint is uncalibrated in an unknown direction; extreme-value
+    methods exist because one observation does not fix a tail threshold.
+  The point that decides it: the support is conditional and the condition — scheduled
+    re-review — is the thing C2A2 lacks. A too-tight threshold announces itself through
+    nuisance alarms; a too-loose one is silent. The unrevised state degrades toward the
+    invisible failure.
+  Affected: the Sociogram delta guard (+20 skips / 25% nodes) and any guard minted from one
+    incident on the same pattern.
+  REQUESTED CHANGE: record setpoint, rationale and review interval together, per the alarm
+    standards' own requirement, so no threshold is permanent by default. Log firings. A
+    guard that has not fired in N days is data about the threshold, not evidence of health.
+  Urgency: Medium
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-270 — PRESUMPTION-648: `|| true` does not defer a check, it inverts it
+  Source: PRESUMPTION-648 (14b) | Disposition: DISPOSITION-592
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak) — defect clustering supports only the
+    weaker claim that the failed path is a high-yield place to instrument; 15a's own key
+    source cuts the other way (Project Zero: 41% of exploited 0-days were variants of
+    previously patched issues). 15b CHALLENGED (Strong) — the suppression makes the
+    validator unable to fail, so siblings are now covered by an instrument guaranteed green,
+    and no field records the suppression.
+  The point that decides it: neither direction supports the presumption as stated, and the
+    suppression has no support in either search.
+  Affected: every path the blind validator nominally covers and the PASS artifacts it feeds.
+  REQUESTED CHANGE: (1) remove `|| true`, or replace it with an explicit recorded
+    suppression carrying a reason and an expiry. (2) Run variant analysis on the remedy —
+    for the last five accepted remedies, count sibling adoptions. That query is already owed
+    in-house as PRESUMPTION-658 and should be run in one pass with REVISE-275.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-271 — PRESUMPTION-651: nobody has measured whether this register's dispositions are
+  about the items — READ THIS ONE FIRST
+  Source: PRESUMPTION-651 (14b) | Disposition: DISPOSITION-593
+  Evidence standing: 15a NO-SUPPORT-FOUND (None) — no source supports attributing a
+    disposition mix to items rather than instrument absent a variance study; generalizability
+    theory and Kravitz et al. 2010 (PLoS ONE) find judge-attributable variance at or above
+    item-attributable variance (reviewer ICC 0.23 vs manuscript 0.17). 15b CHALLENGED
+    (Strong) — same finding from the NeurIPS consistency experiments.
+  SELF-REFERENCE, DECLARED: this item asks whether the pipeline's disposition mix measures
+    the items or the pipeline, and it is being dispositioned by that pipeline in a run that
+    issued 10 REVISE of 11 — MORE extreme than the 6-of-7 that prompted it. Filed at reduced
+    authority and routed to Tom rather than treated as settled.
+  Two counterweights, recorded honestly: (i) the queue is filled by 14b, whose selection
+    criterion IS "this looks unsound," so a high REVISE base rate is expected and is not by
+    itself evidence of bias; (ii) today's arrangement was more independent than yesterday's
+    and the mix got MORE extreme, not less — weak evidence against the "single context
+    inflates REVISE" hypothesis. Neither substitutes for the variance study.
+  Affected: the interpretation of REVISE-262..277 and every disposition record reporting a mix.
+  REQUESTED CHANGE: a bounded one-off generalizability study. Re-disposition a random sample
+    of 10 already-dispositioned items under a second arrangement — different coordinator
+    framing, or Tom blind-rating them — and compare. If judge-attributable variance is
+    material, attach a stated reliability figure to the register's counts. This is a study,
+    not a standing process.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-272 — PRESUMPTION-654: the seventh instance was not a near miss
+  Source: PRESUMPTION-654 (14b) | Disposition: DISPOSITION-595
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak) — and the support turns against the
+    item definitionally: the near-miss literature (AHRQ; J. Loss Prevention 2012) DEFINES a
+    near miss as detection before consequence, so an instance caught after entry into
+    persistent memory and a pending batch is post-consumption recovery, not a near miss.
+    15b CHALLENGED (Strong) — Dillon & Tinsley 2008 (Management Science 54(8)): near-miss
+    experience LOWERS perceived risk, so each catch makes the next less likely to be sought.
+  The point that decides it: the catch count has been read as a control's firing rate when
+    it is a recovery rate, and the difference is the residue left behind. The count is not
+    merely uninformative — it is reassuring in the wrong direction.
+  Affected: the near-miss tally as a health indicator; the persistent memory and pending
+    batch that consumed the seventh instance's false conclusion.
+  REQUESTED CHANGE: (1) split the tally into PRE-CONSEQUENCE and POST-CONSUMPTION columns
+    and stop reporting the sum. (2) Enumerate what the seventh instance's false conclusion
+    reached; annotate those entries in place. (3) Run the PRESUMPTION-643 test still owed —
+    count DISTINCT catch mechanisms across instances; if distinct == instances there is no
+    control, only luck.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-273 — PRESUMPTION-655: a verification mark without a method field has unbounded and
+  unenumerable exposure
+  Source: PRESUMPTION-655 (14b) | Disposition: DISPOSITION-596
+  Evidence standing: the batch's strongest convergence. 15a NO-SUPPORT-FOUND (None) — the
+    whole provenance field (W3C PROV-O) rests on the CONTRARY premise, that a result is not
+    interpretable independently of what produced it; the presumption is the negation of a
+    standard. 15b CHALLENGED (Strong) — Hsiao & Schneider 2021 (QSS 2(4):1144) measures the
+    consequence: when a mark must be withdrawn, acknowledgement runs at 5.4%.
+  The point that decides it: a retrieval method is KNOWN to have produced false affirmatives,
+    and because no field records which method produced which mark, the affected set is not
+    enumerable. Known cause, unbounded exposure, cheap fix.
+  Affected: every VERIFIED mark in the registers, count unknown. Interlocks with REVISE-263
+    (ceasing to rely on a citation is not withdrawing it) — same defect, one register later.
+  REQUESTED CHANGE: (1) add `method` and `date` to every verification mark going forward,
+    making the affected set enumerable by construction. (2) The existing set cannot be
+    recovered — record that plainly with a register-level note that marks predating the
+    method field carry unknown provenance, rather than leaving them reading as sound.
+    (3) Adopt VERIFICATION-WITHDRAWN as a third value.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-274 — PRESUMPTION-656: the escalation norm is the starvation mechanism, and the fix
+  is not to weaken the norm
+  Source: PRESUMPTION-656 (14b) | Disposition: DISPOSITION-597
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak) — assume-guarantee reasoning (Cobleigh
+    et al. 2003, TACAS) shows local correctness DOES compose, but only when the environment
+    assumption is stated and separately discharged; here that assumption is "escalation
+    arrivals within service capacity" and it is undischarged. 15b CHALLENGED (Strong) —
+    Bronson et al. 2021 (HotOS '21) on metastable failure: once tipped, the queue does not
+    recover when the escalation rate falls, and no local guard fires because every local
+    actor is behaving correctly.
+  The point that decides it: both directions land on the same structure from opposite
+    assignments. The missing guard is global by construction and cannot be added locally.
+  Affected: the review queue; and the honest-escalation norm itself, which C2A2 should not
+    weaken by accident while fixing this.
+  REQUESTED CHANGE: add a QUEUE-LEVEL invariant — measure arrival rate against service rate
+    and alert on the ratio, not on any individual item's age. Add a retirement or aging rule
+    so entries can leave by a route other than service. Do NOT address this by asking agents
+    to escalate less.
+  Urgency: Medium-High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-275 — PRESUMPTION-657: two sections of the daily health report describe a different
+  machine, with equal authority
+  Source: PRESUMPTION-657 (14b) | Disposition: DISPOSITION-598
+  Evidence standing: 15a NO-SUPPORT-FOUND (None) and 15b CHALLENGED (Strong) reached the
+    same source independently — Kung 2014, "Memory inside Linux containers," with LXCFS
+    built specifically to fix this misattribution class. 15b adds the error DIRECTION: the
+    sandbox is idle, so the misread yields permanent false reassurance, never a false alarm.
+  The point that decides it: a known, named, already-solved defect class with an in-house
+    instance, failing in the silent direction. Second wrong-location check in two days, so
+    it is a pattern rather than a slip.
+  Affected: two of four sections of the daily health report and every PASS it has emitted;
+    the other two sections inherit the artifact's damaged credibility.
+  REQUESTED CHANGE: (1) mark the two sandbox-scoped sections AS sandbox-scoped in the
+    artifact immediately, before any fix — the mislabel is worse than the gap. (2) Require
+    every check to declare its execution locus alongside its result. (3) Sweep the remaining
+    checks for the same defect rather than fixing only these two; run this in one pass with
+    REVISE-270's variant analysis.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-276 — PRESUMPTION-660: the PASS asserts more than was tested
+  Source: PRESUMPTION-660 (14b) | Disposition: DISPOSITION-599
+  Evidence standing: both directions agree on the test and neither substitution met it. 15a
+    PARTIALLY-SUPPORTED (Weak) — Prentice 1989 (Statistics in Medicine 8(4)) gives the one
+    framework under which a proxy may replace a true measure, and the criterion must be
+    DEMONSTRATED, not assumed. 15b CHALLENGED (Strong) — Fleming & DeMets 1996 (Ann Intern
+    Med 125(7)) on the empirical record of proxies that passed observational correlation and
+    then failed under intervention.
+  The point that decides it: the failure is not that fallbacks were used — degraded-mode
+    operation is legitimate — but that the qualification was KNOWN at the time and did not
+    travel with the PASS. Nothing in the artifact records that a substitution occurred, so
+    the gap is unrecoverable downstream.
+  Affected: the PASS artifacts carrying the two disclosed substitutions; the general
+    convention that a two-valued verdict can absorb a degraded check.
+  REQUESTED CHANGE: make the verdict three-valued. PASS-DEGRADED must be emitted whenever
+    any constituent check was substituted, and the substitution named IN THE ARTIFACT, not
+    only in the run log. Cheap and mechanical.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-277 — PRESUMPTION-661: "running" is a status, not a measurement of progress
+  Source: PRESUMPTION-661 (14b) | Disposition: DISPOSITION-600
+  Evidence standing: 15a NO-SUPPORT-FOUND (None) — the only theory under which "running"
+    implies progressing is perfect failure detection, requiring full synchrony, known delay
+    bounds and a crash-stop model, none of which hold. 15b CHALLENGED (Strong). Both
+    directions independently reached Huang et al. 2017 ("Gray Failure," HotOS '17): the
+    status monitor reports healthy while the component does nothing.
+  The point that decides it: not an inference about what might happen — four sessions
+    unchanged in turn count across three polls, one silent five months, already measured.
+    Interlocks with REVISE-268: a stalled session is still a listed session, so the presence
+    check and the progress check fail reassuringly together.
+  Affected: any claim about scheduled work in flight; via the 268 interlock, the intake
+    basis whenever a session is listed but produces nothing.
+  REQUESTED CHANGE: replace status polling with progress polling. Emit RUNNING-BUT-STALLED
+    when turn count is unchanged across N polls; set a maximum silent duration after which a
+    session is declared dead rather than running. The five-month session is the calibration
+    point and should be retired now.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-278 — PRESUMPTION-669: a hold's label is being read in place of its predicate, by two
+  readers in three, and one hold's exit condition can never be met
+  Source: PRESUMPTION-669 (14b) | Disposition: DISPOSITION-604
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Moderate — the ONE item in this batch where 15a
+    reached Moderate) and 15b CHALLENGED (Strong), and they agree on the governing condition. The
+    presumption holds where the re-read is ENFORCED and not otherwise. 15a's supporting precedent
+    is GMP/ICH Q7 quarantine, where a hold has enumerated terms, a named disposition authority, a
+    mandatory review interval and an external auditor — and 15a is explicit that what carries the
+    property is the mandate and the authority, not the label. Both directions independently
+    reached the same systematic study (FSE 2025 / PACMSE 2, DOI 10.1145/3715729, suppressed
+    static-analysis warnings): suppression counts increase MONOTONICALLY over project lifetime,
+    50.8% of suppressions no longer affect any warning, and suppressions unintentionally hide
+    FUTURE warnings — which is the over-broad-scope defect observed here. 15b adds ANSI/ISA-18.2
+    and EEMUA 191, which mandate a maximum shelve time with active re-shelving, a control that
+    exists because the unbounded case was found not to be re-read.
+  The point that decides it: the item's own evidence is a 2-to-1 base-rate estimate generated
+    inside C2A2 without instrumentation — two independent runs read the LABEL and got it wrong in
+    the same direction, and the correct reading was the exception, not the rule. 15b's steelman
+    (the system self-corrected within the cycle, so holds ARE re-read) is defeated on its own
+    stated condition (c): a hold whose release condition is permanently unsatisfiable is not a
+    hold but a silent permanent deletion of scope presented in the data model as a temporary
+    state, and the item reports that at least one such hold exists. That is not a reading error;
+    it is an accounting error that will never self-correct.
+  Affected: the 15-pair band, whose semantic content has never been reviewed and is currently
+    excluded from review by a hold whose stated terms are about LENGTH ONLY; every other open
+    hold, whose scope-vs-terms divergence is unmeasured; the system's own account of what is
+    under review, which is wrong by the size of the unsatisfiable hold. Interlocks with
+    PREMISE-143 and PRESUMPTION-662 — C2A2 has several mechanisms that convert an open item into
+    a quiescent record and none that inventories quiescent records.
+  IN-HOUSE FIRST STEP, requires no authorisation and should not wait for this flag to be read:
+    enumerate every open hold; mechanically evaluate its stated terms against current content;
+    diff the computed exclusion set against the set actually being excluded. Any divergence is a
+    scope error of the observed kind and the count across all holds is the base rate. Separately,
+    test each hold's release condition for satisfiability. Both are single passes over data the
+    vault already holds.
+  REQUESTED CHANGE: (1) Review the 15-pair band now — it is excluded by a hold that does not
+    cover it. (2) Make a hold's TERMS a machine-evaluable predicate that consumers EVALUATE
+    rather than prose they paraphrase; where the hold is "length > N," the exclusion is computed
+    and no run can widen it by reading its label. This removes the observed failure class rather
+    than mitigating it, and is the change with the highest ratio of coverage to cost. (3) Give
+    every hold a mandatory expiry with active re-affirmation to extend (ANSI/ISA-18.2 shelving) —
+    a date field plus a sweep. (4) Forbid unsatisfiable exit conditions at filing time: a hold
+    that cannot be released must be recorded as a PERMANENT EXCLUSION with a named owner, so the
+    scope loss appears in the accounting. (5) Report the held population as a first-class metric
+    — count, age distribution, and count of holds whose terms have not been evaluated since
+    filing.
+  Note on scale, per PREMISE-121: (2) and (4) are the two changes that close the class. (3) and
+    (5) are worth having and can wait; they are listed so the set is complete, not so the queue
+    is longer.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-279 — PRESUMPTION-673: workarounds are rebuilt every run because the durable fix requires
+  an authoriser the agents do not have — SYSTEMIC-RISK-FLAG, part 1 of 2
+  Source: PRESUMPTION-673 (14b) | Disposition: DISPOSITION-605
+  Evidence standing: 15a PARTIALLY-SUPPORTED (Weak, conditional only) and 15b CHALLENGED
+    (Strong), converging on the same structure from opposite assignments. Both directions lead
+    with Tucker & Edmondson (2003, CMR 45(2)): 93% of observed responses to system failures were
+    first-order — the obstacle cleared, the cause untouched — so the cost is paid EVERY time by
+    construction, because the act that would make it one-time is the rare one. 15a's one
+    genuinely supportive source, Alter's Theory of Workarounds (CAIS 34, Art. 55), makes
+    conversion-to-durable-fix contingent on exactly the factor this case lacks: the actor's
+    AUTHORISATION and the workaround's visibility to someone who can change the system. 15b adds
+    Azad & King (2012, EJIS 21(4)) on institutionalisation — workarounds do not decay, they
+    become the de facto procedure, after which the fix acquires a migration cost it did not
+    originally have — and von Mayrhauser & Vans (1995) on program comprehension as ~half of
+    maintenance effort, which is the mechanism for "from scratch every run" in stateless agents.
+    STELLA / SNAFUcatchers (2017) supplies dark debt: the disclosed workarounds are the visible
+    tail.
+  The point that decides it: C2A2's failure mode is NARROWER than the literature's and that is
+    what makes it actionable. Tucker & Edmondson's nurses failed to report; C2A2's agents DID
+    report, named the durable fix, and carried a recurrence count. This is second-order behaviour
+    already performed. The break is downstream of the report — the report cannot reach an actor
+    with an effector, because the only actor with the effector is the same single human whose
+    queue PRESUMPTION-677 measures. Per PREMISE-138 clause (2) the agents have discharged their
+    duty; the obligation now sits with the named actor and cannot be discharged by more reporting.
+  SYSTEMIC-RISK-FLAG carried in full (15b, primary; filed on PRESUMPTION-673 and PRESUMPTION-677,
+    secondary contact PRESUMPTION-675/676; risk level High):
+    SINGLE-AUTHORISER BOTTLENECK WITH POSITIVE FEEDBACK AND NO DAMPING TERM. 673 reports that
+    durable fixes are not made because no agent is authorised to make them; 677 measures the
+    queue in front of the sole authoriser (34 pending proposals, 136 REVISE, 137 MONITOR, 30 days
+    with no decision, 12 days with no review pass). These are one problem observed from both
+    ends. The loop: unmade fixes → rebuilt workarounds → more disclosures → longer queue → slower
+    decisions → still fewer fixes. Under Little's Law (1961, Operations Research 9(3)) this
+    diverges; under the alarm literature (EEMUA 191; ANSI/ISA-18.2; Bliss et al. 2002 on
+    collective mistrust) response to the WHOLE stream degrades as it does, including the Critical
+    items. Literature basis also: Sadowski et al. 2018 (CACM 61(4)) — 84% of tool-filed bugs
+    never fixed; Anderson 2010 on WIP limits.
+    THE FLAG'S OWN RECOMMENDATION, which 15c endorses: acting on either item alone is
+    insufficient. Draining the queue without opening a repair path refills it; opening a repair
+    path without limiting arrivals leaves it undrainable. See REVISE-282 for the arrival side.
+  Affected: every agent run that rebuilds a workaround, at an unmeasured per-run cost; the
+    durable fixes named in the two 2026-08-05 disclosures; by the flag's argument, the landing
+    rate of every repair this pipeline has ever recommended.
+  IN-HOUSE FIRST STEP, requires no authorisation: grep the last 30 days of agent transcripts for
+    workaround-disclosure language; count distinct workarounds and occurrences per workaround;
+    for each, check whether a durable fix was ever MADE (not merely proposed). A fix-made count
+    of zero against any occurrence count > 1 settles the item empirically. Second, measure the
+    token or wall-clock cost of the rebuild segment in two consecutive runs — if it is non-trivial
+    and equal, the cost is a rate and can be priced.
+  REQUESTED CHANGE — this is the one item in the batch that CANNOT be actioned by any agent, and
+    it is a grant of authority, not a code change: (1) A STANDING PRE-AUTHORISATION: any workaround
+    rebuilt more than k times is pre-authorised for durable repair without a per-instance human
+    decision. This is the direct antidote to the bottleneck and does not require the human to act
+    faster, only once. Choosing k is the decision requested. (2) A workaround register with
+    mandatory recurrence counts, sorted by count × cost — this converts dark debt into visible
+    debt and supplies the trigger for (1). (3) Where the durable fix stays unauthorised,
+    externalise the reconstruction: cache the workaround as a script or prelude so the per-run
+    cost falls from re-derivation to retrieval.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-280 — PRESUMPTION-675: the shipped visualization exceeds every stated limit by up to 32×,
+  on three surfaces that disagree, and no guard fired
+  Source: PRESUMPTION-675 (14b) | Disposition: DISPOSITION-606
+  Evidence standing: 15a NO-SUPPORT-FOUND (Weak/None) — the FOR direction found NO support for
+    reading a documented limit as an enforced limit, and the architecture-erosion literature it
+    surveyed (Perry & Wolf 1992; De Silva & Balasubramaniam 2012, JSS 85(1); Li et al. 2022) is
+    built on the opposite premise, that specified and implemented structure diverge by DEFAULT
+    absent an active control. 15b CHALLENGED (Strong) with a named, matching failure class: Xu T.
+    et al. (2016), "Early Detection of Configuration Errors to Reduce Failure Damage," OSDI '16
+    (Best Paper) — LATENT CONFIGURATION ERRORS, settings that are wrong but produce no symptom
+    because the reading code is never exercised. "No limit warning emitted" is a textbook LC
+    condition, not evidence of legality. Yuan et al. (2014, OSDI '14, 198 production failures)
+    add that rarely-exercised check and error-handling paths dominate the production-failure
+    population, so the guard being implicitly trusted sits in the worst-tested category of code.
+    Aghajani et al. (2019, ICSE) make doc-to-code divergence the base rate. Both directions
+    independently reached the assertion-vacuity result: a check that never fires is not a passing
+    check, and non-vacuity requires separate evidence the antecedent was reached.
+  The point that decides it: the measurement is already done and is not in dispute. Docs say
+    2,000/3,000; code says 20,000/30,000; the shipped artifact carries 3,864/98,201 and is legal
+    on none of them — a 32× overrun against the documented edge ceiling, with no diagnostic. The
+    only open question is which number is the real safe ceiling, and that is a question for a
+    person, not a search. Note also that C2A2 has already accepted this evidence class elsewhere:
+    PREMISE-139 holds that a documented check is not evidence the check was performed, and
+    PREMISE-100 that a check which cannot execute reports as passing. This is those premises with
+    a shipped artifact attached.
+  SECONDARY SYSTEMIC-RISK-FLAG carried (15b, filed on PRESUMPTION-675/676, touching 673; risk
+    level High): RECORD–EFFECT DIVERGENCE WITH NO CLOSED LOOP. In 675 a record (the documented
+    limit) is treated as an effect (an enforced constraint); in 676 an effect occurred with no
+    record; in 673 a record (a disclosure naming the fix) is treated as discharging the effect
+    (the fix). The system has no instrument in EITHER direction that compares what it wrote
+    against what actually happened. Literature basis: Xu et al. 2016; Yuan et al. 2014; SEC 2013
+    Knight Capital order (Admin. Proc. 3-15570 — one of eight servers unpatched, no
+    version-consistency check, ~$460M in 45 minutes); Snook 2000 practical drift; SNAFUcatchers
+    2017. Paired with REVISE-281, which is the same flag from the other direction.
+  Affected: the shipped wiki_narration.html and anything that has been read from it; whatever
+    hazard the 2,000/3,000 ceiling was written to prevent, which is currently unprotected; every
+    downstream capacity decision taken from the documented figure, which has been wrong by at
+    least 10×; and, by 15b's generalisation, every other documented constraint in C2A2, none of
+    which has been shown to bind.
+  IN-HOUSE FIRST STEP, requires no authorisation and is decisive on its own: run the regeneration
+    against a synthetic dataset that exceeds the code limit and confirm a warning is emitted. If
+    none is, the guard is dead code and the question of which limit is correct is moot until it
+    is fixed. Then open the shipped artifact in a served browser at 98,201 edges and observe
+    whether the hazard the limit was written to prevent actually occurs — this is the empirical
+    input the decision below needs, and PREMISE-048 already requires that class of check before
+    publish.
+  REQUESTED CHANGE: (1) DECIDE THE REAL CEILING. The three surfaces cannot be reconciled by
+    editing docs; someone must determine the safe limit empirically, and that decision is
+    requested here. (2) Make one surface generative and derive the others from it — docs
+    generated from the constant, not restating it — which removes the documentation-decay channel
+    entirely. (3) Add a build-time cross-surface assertion: docs_limit == code_limit and
+    artifact_count <= code_limit. One assertion; the direct analogue of the deployment-consistency
+    check Knight Capital did not have. (4) Add a forced-failure test that deliberately exceeds
+    the limit and asserts the warning fires, so the guard can never again be dead without
+    detection.
+  Urgency: High — a delivered artifact is 32× over a ceiling that was written for browser
+    stability, and nothing in the pipeline currently knows.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-281 — PRESUMPTION-676: an external side effect landed on a human's mailbox and no record
+  of it was written; the decision may already be lost
+  Source: PRESUMPTION-676 (14b) | Disposition: DISPOSITION-607
+  Evidence standing: 15a NO-SUPPORT-FOUND — the FOR direction found the supportive theory real
+    but out of scope: ACID atomicity does guarantee that an aborted unit leaves no partial state,
+    and holds ONLY within a single resource manager or a set enrolled in one commit protocol. A
+    tool call into a third-party mailbox is in neither. 15b CHALLENGED (Strong) and is unusually
+    categorical: this presumption is the specific belief that forty years of distributed-systems
+    work exists to correct. Garcia-Molina & Salem (1987, SIGMOD, DOI 10.1145/38713.38742) —
+    sagas exist BECAUSE partial state after interruption is the default, and the guarantee
+    offered instead is explicitly-written compensating transactions. Helland (2007, CIDR) — beyond
+    a single scale-unit there is no transaction spanning independent systems, delivery is
+    at-least-once, and non-naturally-idempotent messages must be made idempotent by the
+    application. Both directions reached the same remedy independently (the transactional-outbox
+    / durable-execution pattern), and 15a additionally located SagaLLM (arXiv:2503.11951, 2025),
+    which adapts the saga model to multi-agent LLM planning on the stated grounds that agent
+    steps commit externally and cannot be undone by the agent that made them.
+  The point that decides it: the ORDERING, and it is not a tuning choice. C2A2 performed the
+    external effect BEFORE the local record, which fails silently and unrecoverably; the reverse
+    ordering fails loudly and recoverably, at zero cost. A decision email that has been unlabeled
+    but not archived is absent from the pending view AND absent from the archive — it is not
+    delayed, it is gone, and it was one of the user's own decisions. Interruption is not a tail
+    event in this system: four scheduled sessions were interrupted on the same day
+    (PRESUMPTION-664 / PREMISE-141), so the abnormal path is the observed weekday condition.
+  SECONDARY SYSTEMIC-RISK-FLAG carried (15b, filed on PRESUMPTION-676/675, touching 673; risk
+    level High): RECORD–EFFECT DIVERGENCE WITH NO CLOSED LOOP — 676 is an effect with no record,
+    675 is a record with no effect, 673 is a record treated as an effect. Literature basis:
+    Garcia-Molina & Salem 1987; Helland 2007; Xu et al. 2016 OSDI; Yuan et al. 2014 OSDI;
+    SNAFUcatchers 2017. The remedy is one principle applied in both directions: for each
+    constraint the system documents, an executable check that it binds; for each external side
+    effect, a durable record written in the same step. Paired with REVISE-280.
+  Affected: the decision workflow on the user's mailbox — C2A2's primary channel to its only
+    human — which currently has a lossy write path; an unknown number of already-orphaned
+    decisions; and, per 15b, any other place in the codebase that performs an external effect
+    before recording locally.
+  IN-HOUSE FIRST STEP, requires no authorisation, RECOVERS DATA, and should be run before any
+    code change: list Gmail messages in the decision workflow that are currently unlabeled and
+    left-join against entries in `review/archive/`. Every row with no archive entry is an
+    orphaned side effect. This both sizes the damage and recovers the lost decisions, and it is
+    the only route by which decisions already lost can be recovered at all. It is owed today.
+  REQUESTED CHANGE: (1) WRITE-INTENT-FIRST — record the intended archive entry BEFORE calling
+    `unlabel_message`; on restart, any intent record without a completion is replayed. This single
+    reordering converts silent loss into a recoverable retry and costs nothing. (2) Key the
+    archive entry on the Gmail message ID so replay is idempotent — required, because a naive
+    retry without an idempotency key converts silent loss into duplicate application. (3) A
+    standing reconciliation sweep (the compensating action in saga terms) for every external
+    system C2A2 mutates, not only this one. (4) Per Yuan et al., add a test that kills the run
+    between the external call and the local write and asserts the next run recovers — force the
+    failure rather than waiting for it.
+  Urgency: High — this is the only item in the batch where a HUMAN's decision may already have
+    been destroyed, and the recovery step expires as mailbox state changes.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-282 — PRESUMPTION-677: the norm that produces the backlog is in 14b's agent definition,
+  it contradicts six ACTIVE premises, and PREMISE-138 is NOT the conflict —
+  SYSTEMIC-RISK-FLAG, part 2 of 2
+  Source: PRESUMPTION-677 (14b) | Disposition: DISPOSITION-608
+  Evidence standing: 15a NO-SUPPORT-FOUND, strength NONE — the FOR direction found NO supporting
+    literature at all for the independence claim, explicitly raised NO novelty flag, and reported
+    that the most directly applicable literatures were written specifically to deny it. 15b
+    CHALLENGED (Strong) on three independent grounds: arithmetic (Little 1961, Operations Research
+    9(3) — L = λW holds only in steady state; with λ > μ the queue and the expected wait diverge,
+    and 307 open items with μ ≈ 0 over 30 days is that signature), behavioural (EEMUA 191 and
+    ANSI/ISA-18.2 — <6 alarms/operator/hour acceptable, >12 unmanageable, >30 seriously deficient;
+    Bliss, Bowens, Krefting, Byler & Gibson 2002 HFES on COLLECTIVE MISTRUST, which generalises
+    across the alarm set so a large low-priority backlog degrades response to the CRITICAL items
+    too), and empirical (Sadowski et al. 2018, CACM 61(4) — 84% of tool-filed bugs never fixed;
+    the remedy adopted was to constrain the PRODUCER and move the delivery point, not to exhort
+    the consumer). The finding that matters and that survives every steelman: response degradation
+    is a function of the STREAM, not of any item's correctness, so additional TRUE findings past
+    the threshold reduce response to all of them.
+  THE PREMISE-138 QUESTION, handled explicitly and not averaged — 15c's finding is that THERE IS
+    NO CONFLICT WITH PREMISE-138, and 15b's framing of it is inaccurate:
+    (a) 15b characterises PREMISE-138 as the norm "err toward reporting more." PREMISE-138 as
+        minted says no such thing. Its clause (3) states that IN-CHANNEL BROADENING CAN BE
+        NEGATIVE, cites a direct test in which dual-recipient notification produced WORSE
+        acknowledgement (OR 2.02 for failed follow-up), and concludes that "escalation must change
+        the ADDRESSEE, not the amplitude." PREMISE-138 already holds 677's result for the
+        repetition case. It is CONFIRMED by this item, not challenged, and is NOT amended.
+    (b) The norm 677 actually queries is a line in Agent 14b's own definition (14b_presumption_
+        detector_agent.md, line 88): "Err on the side of surfacing too many rather than too few.
+        False positives are cheap; false negatives are invisible by definition." THAT is the
+        forcing function on the arrival side, and it is a standing agent instruction, not a
+        validated premise.
+    (c) That instruction contradicts SIX ACTIVE premises, and the contradiction has never been
+        flagged: PREMISE-003 (human review capacity is the binding constraint), PREMISE-070 (do
+        not over-feed intake while review is the bottleneck), PREMISE-095 (arrival exceeds service;
+        the queue grows without bound absent a cadence change or admission cap), PREMISE-106 (the
+        lit-search queue is in the unstable regime — "a proved queueing result, not a hypothesis,
+        and no scheduling discipline recovers it"), PREMISE-119 (production and judgment are not
+        independently schedulable; backpressure is a CORRECTNESS requirement, not an optimisation),
+        PREMISE-121 (each additional correctly-argued item can lower the probability that ANY item
+        is acted on, and a recommendation written as though the marginal item were the only item
+        MIS-STATES ITS OWN COST — which is precisely what line 88 asserts when it says false
+        positives are cheap).
+    (d) THEREFORE PRESUMPTION-677 IS NOT A LITERATURE GAP AND NOT A NEW PREMISE. Its negation has
+        been validated six times over. No seventh minting is issued: PREMISE-138 clause (1) bars
+        in-channel repetition with no effector, PREMISE-135 bars purchasing terminality by
+        accumulating instances, and PREMISE-102 states that repeated identical non-processing
+        converts a signal into a standing policy of non-coverage. What is missing is not knowledge.
+        It is an actor with an effector, which is why this is a REVISE and not a PREMISE.
+  15b's REFLEXIVITY section is sustained in full and is the sharpest thing in this batch: the norm
+    under challenge is the norm that PRODUCED the challenge, which is the single strongest defence
+    of it available and belongs in the record; but self-detection is not self-correction, and this
+    item cannot be discharged by any action that consists of writing something. The only responses
+    that falsify it are a measured drop in open-item count or an ENFORCED producer-side rate limit.
+  What 15c did about that within its own authority, stated so it can be checked: this batch was
+    dispositioned rate-aware. Zero MONITOR entries were filed — the 15d queue has demonstrated
+    zero consumption for 25+ days and a MONITOR entry there would be PREMISE-138 clause (1)
+    exactly. Three items whose corrected statements carry genuinely new content were INCORPORATED
+    into the agent-facing premise register (PREMISE-141/142/143), which does not touch the human
+    queue. Five items were filed here because each requires a decision or an authorisation that no
+    agent holds, which PREMISE-138 clause (2) makes obligatory rather than optional. Each carries
+    an IN-HOUSE FIRST STEP that needs no authorisation, so measurement proceeds without consuming
+    the bottleneck. This is the detection/delivery separation 15b recommends, applied by the
+    producing layer to itself. It is not a substitute for the change requested below.
+  SYSTEMIC-RISK-FLAG, part 2 of 2 — see REVISE-279 for the full statement. Single-authoriser
+    bottleneck with positive feedback and no damping term; 673 is the repair side, 677 the arrival
+    side; acting on either alone is insufficient.
+  Affected: every register this pipeline writes to; the Critical-risk items in this very batch,
+    which are competing for attention with 300+ others and are being read at whatever response
+    rate the whole stream earns; and 14b's daily output rate, which is currently governed by an
+    instruction that six ACTIVE premises contradict.
+  IN-HOUSE FIRST STEP, requires no authorisation: compute λ and μ — items added to and closed from
+    each register per week over the last 12 weeks. If μ < λ for most weeks the presumption is
+    falsified formally and the figure replaces the argument. Second, test the cry-wolf prediction
+    directly: compare disposition rate for HIGH-severity items filed during high-backlog periods
+    against identical-severity items filed during low-backlog periods. If severity does not protect
+    disposition rate, Bliss's collective-mistrust result is confirmed inside this system.
+  REQUESTED CHANGE: (1) AMEND 14b's agent definition, line 88. Do NOT weaken its epistemic
+    commitment — separate the two things it conflates. DETECTING more should remain unbounded;
+    DELIVERING more into the human queue must be rate-limited. Detection and delivery are
+    different variables and the norm should govern only the first. (2) Adopt a producer-side WIP
+    limit or admission cap: no new human-facing items above an open-item threshold, with excess
+    aggregated rather than dropped. This is the only mitigation that acts on the actual variable;
+    every other acts on the consumer. (3) Rationalise per ANSI/ISA-18.2: an item with no defined,
+    available human action is removed rather than logged. (4) Expand the [IN-HOUSE] disposition
+    class — the existing mechanism that already does this correctly, and the highest-leverage
+    change available. (5) Do NOT resolve this by bug-bankruptcy mass-closure; the observed
+    organisational endgame for an undrainable queue destroys the genuinely critical items along
+    with the rest, which is the worst available outcome for a system whose value proposition is
+    surfacing what would otherwise be missed.
+  Urgency: High — and note that this entry is itself an increment to the quantity it measures.
+    That is not a reason to withhold it; per PREMISE-138 clause (2) it is a reason to name the
+    actor, which is done above. It IS a reason to treat it as the item to read first.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED

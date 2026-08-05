@@ -15097,3 +15097,196 @@ ASSUMPTION-649..673 [IN-HOUSE] — all re-measurable by direct command against t
     Wolfram's input-compressing observer and Hoffman's conscious agent pick out the same object
     (both definitions written down; extrinsic vs intrinsic individuation is the candidate
     difference), and the Hawkins/Friston thalamus disagreement with its distinguishing prediction.
+
+---
+
+## INTAKE 2026-08-03 — Agents 14a / 14b (EOD self-awareness run)
+
+PROVENANCE:
+  Origin: 14a + 14b
+  Chain: [14a] / [14b]
+  Item types: ASSUMPTION (stated) · PRESUMPTION (unstated — surfaced by inference)
+  Transform at each step:
+    14a: extracted stated assumptions from 2026-08-03 scheduled-run transcripts, source comments, and direct filesystem measurement.
+    14b: inferred unstated presumptions from the same material, checked against 14a's output for duplication.
+  Current status: UNTESTED
+NOTE ON SOURCE (fail-loud): no attended session transcript existed for 2026-08-03. The day's largest
+change (the Sociogram delta guard) was read from source comments and mtimes, not from a transcript.
+See ASSUMPTION-676 / PRESUMPTION-646 — this intake is itself an instance of the item it queues first.
+
+### [QUEUED] to 15a / 15b — literature-testable (11 items)
+
+PRESUMPTION-646 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-268
+  That the day's work is visible in the session-transcript channel; that no session in `list_sessions` licenses "no attended work occurred." Risk: Critical. Search: observability coverage; the absence-of-evidence inference in monitoring; instrument-defined event universes. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-647 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Moderate) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-269
+  That a guard's tolerance can be calibrated from the single incident that motivated it (+20 skips / 25% nodes, from one observation of 2 -> 1164). Risk: Medium-High. Search: alarm-threshold setting from single incidents; alert fatigue and disable rates. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-648 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-270
+  That instrumenting the path that failed protects the paths that have not failed; the blind validator was bypassed rather than fixed (`|| true`). Risk: High. Search: defect-class coverage; generalisation of post-incident fixes to sibling failure modes. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-651 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-271
+  That a disposition mix is evidence about the items rather than about the instrument; 6 REVISE of 7 issued at full authority by a run that called its own arrangement insufficient. Risk: High. Search: measurement validity when an instrument is under revision; provisional-finding practice. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-653 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: PARTIALLY-CHALLENGED (Moderate) | Disposition: MONITOR -> MONITOR-501
+  That two figures for one quantity is a reconciliation problem rather than evidence that no agent owns the quantity; ten figures for five quantities in one day, answered by declaration and by institutionalising the disagreement. Risk: High. Search: single-source-of-truth / data reconciliation; whether unowned duplicate metrics converge or diverge. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: MONITORING
+
+PRESUMPTION-654 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-272
+  That a trap's catches happen upstream of consequence; the seventh instance was caught after the false conclusion had entered a persistent memory and a pending batch. Risk: High. Search: near-miss taxonomies distinguishing pre-consequence detection from post-consumption recovery; recoverability assumptions under propagation. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-655 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-273
+  That a verification mark is independent of the tool that produced it; a retrieval method caught producing false affirmatives, with no field recording method and no enumerable affected set. Risk: High. Search: provenance metadata for verification claims; annotation-in-place practice for withdrawn support. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-656 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-274
+  That correct local behaviour aggregates to correct system behaviour; honest escalation is the mechanism starving the review queue, by the agent's own diagnosis. Risk: Medium-High. Search: priority inversion and starvation in staleness-ordered queues with non-retiring entries. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-657 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-275
+  That a check runs where its subject runs; two of four sections of a daily health report read the sandbox's process table and report it as the Mac's. Second wrong-location check in two days. Risk: High. Search: observability in containerised/split-execution environments; namespace-scoped introspection reported as host state. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-660 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: PARTIALLY-SUPPORTED (Weak) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-276
+  That a fallback check answers the same question as the check it replaces; two disclosed substitutions whose qualifications did not reach the artifact carrying the PASS. Risk: High. Search: construct validity of proxy measures; degraded-mode monitoring and retained alerting properties. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+PRESUMPTION-661 [QUEUED] [SEARCHED-15a: 2026-08-04] [SEARCHED-15b: 2026-08-04] [DISPOSITIONED-15c: 2026-08-04]
+  15a result: NO-SUPPORT-FOUND (None) | 15b result: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-277
+  That a session reported as "running" is progressing; four scheduled sessions unchanged in turn count across three polls, one silent five months. Risk: High. Search: liveness vs progress detection; absence of failure signal as evidence of progress. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 15a searched supporting literature; 15b searched challenging literature (separate agent instances, disjoint contexts); 15c weighed net evidence
+    · Current status: REVISION-FLAGGED
+
+### [GOVERNED-CANDIDATE -> IN-HOUSE] — no literature needed, one command or one assertion each (7 items)
+
+[IN-HOUSE] PRESUMPTION-649 — build metadata does not describe the artifact on disk (`bytes: 40236674` vs 40,342,121). Test: assert `build_meta.bytes == stat(wiki_narration.html)` at end of regen.
+[IN-HOUSE] PRESUMPTION-650 — filing a change request counts as varying the instrument. Governed by REVISE-262 / PREMISE-138. Test: add an arrangement field per run.
+[IN-HOUSE] PRESUMPTION-652 — an unprocessed re-check is deferred rather than lost; 27 items advanced to 2026-09-06 unconsumed. Governed by REVISE-264.
+[IN-HOUSE] PRESUMPTION-658 — a remedy adopted by one agent propagates to siblings with the same job. Test: for the last five accepted remedies, count sibling adoptions.
+[IN-HOUSE] PRESUMPTION-659 — a scheduled task should keep running; first request in this series to be de-scheduled, no lifecycle exists. Test: count zero-output runs per task over 30 days.
+[IN-HOUSE] PRESUMPTION-662 — disclosing a defect discharges it; REVISE-265 self-applied in 18 hours, target quantity unchanged. Governed by PREMISE-138.
+[IN-HOUSE] PRESUMPTION-663 — a gap discovered is a gap closed; six days of master-wiki narrative missing, all derived streak figures unmarked. Governed by REVISE-267.
+
+### [IN-HOUSE] ASSUMPTION-674 .. ASSUMPTION-700 (27 items)
+
+All routed in-house: each is a stated claim or a direct measurement, testable by one command against this
+vault. Flagged for particular attention:
+- ASSUMPTION-676 — the day's work is absent from the transcript channel this pipeline reads (pairs with PRESUMPTION-646).
+- ASSUMPTION-678 — the independence arrangement regressed on the day REVISE-262 was filed demanding it be strengthened.
+- ASSUMPTION-679 — citation verification fell from "0 of ~44, disclosed" to not reported at all, with MONITOR-498 open against exactly this series.
+- ASSUMPTION-681 — three decisive one-command joins named by two agents, none run; MONITOR-500's terminating condition is one of them.
+- ASSUMPTION-696 — OBJECT-LEVEL: the INTREPID adversarial-review programme states the accelerator's own thesis ("evaluating theories in terms of the scientific progress they deliver") arriving independently from neuroscience.
+- ASSUMPTION-699(d) — OBJECT-LEVEL/OPS: the ten-day `sync_vault.sh` freeze has ended and no agent reported it ending.
+
+
+---
+
+## 2026-08-04 EOD INTAKE — Agents 14a / 14b
+
+### [QUEUED] to 15a/15b — testable via literature (8 items)
+
+PRESUMPTION-664 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That a scheduled run which starts is a scheduled run which reports; four of today's scheduled sessions ended at `[Request interrupted by user]` with no verdict of any kind, and the watchdog built to detect that class is one of the four. Risk: Critical. Search: liveness and completion detection distinguished from failure detection; why absence of a failure report is not evidence of success; watchdog self-monitoring and the "who watches the watchdog" problem; silent task termination in scheduler fleets. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from four transcripts read directly this run
+    · Current status: UNTESTED
+
+PRESUMPTION-666 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That an agent reporting on other agents has a channel into their outcomes; a status report asserted "No failures to report" and named as successful a run that had terminated with no output, while a second health instrument three hours earlier reported the opposite from the commit record. Risk: High. Search: schedule-derived vs outcome-derived status aggregation; monitoring that restates intent rather than measuring result; automation-induced complacency in status review. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred by reading two same-morning health reports against the transcript both describe
+    · Current status: UNTESTED
+
+PRESUMPTION-668 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That catching an error discharges it; three self-retractions today from three independent runs, in each of which the erroneous output was corrected and the producing instrument was not — including one method whose false-positive sweep is now twice observed (07-31 and 08-04). Risk: High. Search: whether self-reported error correction changes recurrence rates; recovery vs repair in near-miss literature; Dillon & Tinsley on repeated catches lowering perceived risk. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from three same-day retractions read together
+    · Current status: UNTESTED
+
+PRESUMPTION-669 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That a hold is a state with terms someone re-reads; a length-only hold was read by two independent runs as "unreviewable," excluding a 15-pair band whose semantic content had never been reviewed, and the correction came only from a run that read the hold's terms rather than its label. Risk: High. Search: quarantined tests and deferred defects that never exit quarantine; scope creep in exclusions; un-expiring suppressions and their accumulation. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from one documented over-broad hold plus one condition known to be permanently unsatisfiable
+    · Current status: UNTESTED
+
+PRESUMPTION-673 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That a workaround's cost is paid once; two independent agents disclosed the same day that they rebuild the same workarounds from scratch every run, both naming the durable fix, neither authorised to make it. Risk: Medium-High. Search: rediscovery cost and un-captured procedural knowledge in maintenance; why workarounds do not accumulate into fixes; dark debt (STELLA). Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from two same-day disclosures of rebuilt workarounds, one carrying its own recurrence count
+    · Current status: UNTESTED
+
+PRESUMPTION-675 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That a documented limit is an enforced limit; three surfaces carry the visualization's limits (docs 2,000/3,000; code 20,000/30,000; shipped artifact 3,864/98,201) and the artifact is legal on none of them, with no limit warning emitted. Risk: High. Search: configuration drift; documentation decay and divergence of specified from enforced constraints; why an unfired limit is not evidence of compliance. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred by measuring the third surface the day's reports did not read
+    · Current status: UNTESTED
+
+PRESUMPTION-676 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That an interrupted run leaves no partial state; an external side effect (`unlabel_message` on a Gmail decision email) was applied before the run died, with no corresponding archive entry, so a future run will treat that decision as handled. Risk: High. Search: compensating actions and sagas; idempotency across systems that share no transaction; orphaned side effects in workflow engines. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from one tool call in an interrupted transcript, cross-checked against `review/archive/`
+    · Current status: UNTESTED
+
+PRESUMPTION-677 [QUEUED] [SEARCHED-15a: 2026-08-05] [SEARCHED-15b: 2026-08-05] [DISPOSITIONED-15c: 2026-08-05]
+  That the rate at which the system produces work for its single human consumer is independent of the rate at which he can act on it; 34 pending proposals, 136 REVISE, 137 MONITOR, 30 days with no decision, 12 days with no review pass — and 14b's own definition instructs it to err toward more. Risk: High, and reflexive. Search: alarm and alert fatigue, and the point at which additional true positives reduce response rate (ANSI/ISA-18.2, EEMUA 191 — already in this system's citation base via REVISE-269); backlog depth as demotivator; diminishing returns in defect reporting. NOTE: this queries PREMISE-138 directly. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from six independently measured backlog figures read against the stated norm in 14b's own agent definition
+    · Current status: UNTESTED
+
+### [GOVERNED-CANDIDATE -> IN-HOUSE] — no literature needed, one command or one assertion each (6 items)
+
+[IN-HOUSE] PRESUMPTION-665 — that `[Request interrupted by user]` names an agent. Test: determine whether the interrupt is a timeout, a host action, a tool-level block or a human; four sessions, one string.
+[IN-HOUSE] PRESUMPTION-667 — that a pass-mark records that a check ran; 33 pairs marked `fidelity_checked: true` by a run that crashed before checking. Governed by SYSTEMIC-RISK-FLAG 2026-08-04 / REVISE-273 / REVISE-276. Test: join pass-marks against runs that raised.
+[IN-HOUSE] PRESUMPTION-670 — that a queue counter decrements when work leaves the queue; the `Status:` + `[QUEUED]` line pattern = 1,527 on both 08-03 and 08-04 across 11 dispositions. Test: one grep pair (done); then establish the intended counting rule.
+[IN-HOUSE] PRESUMPTION-671 — that two agents citing "the budget" cite the same budget; 4k per-task vs 30k session, same day, same rule number. Test: read the two task files.
+[IN-HOUSE] PRESUMPTION-672 — that a documented blind spot is a compensated blind spot; REVISE-268 filed 00:47, violated 08:00 by an instrument with no channel to receive it. Governed by REVISE-268 / OPEN-138. Test: for each REVISE, find any artifact outside `architecture/` that changed.
+[IN-HOUSE] PRESUMPTION-674 — that an artifact and its metadata are written by one act; `build_meta.json` written 4h38m after the HTML it describes, and describing a different size. Supersedes the race explanation offered for PRESUMPTION-649. Test: two stats.
+
+### [IN-HOUSE] ASSUMPTION-701 .. ASSUMPTION-728 (28 items)
+
+All routed in-house: each is a stated claim or a direct measurement, testable by one command against this
+vault. One exception routed to literature alongside its presumption: ASSUMPTION-708 (rebuilt workarounds)
+is covered by PRESUMPTION-673's search and is not separately queued. Flagged for particular attention:
+- ASSUMPTION-701 — a morning status report named as successful the one run that failed; it pairs with PRESUMPTION-666 and predates SYSTEMIC-RISK-FLAG 2026-08-04 by seven hours.
+- ASSUMPTION-702 — four scheduled runs vanished without a verdict, including the watchdog; pairs with PRESUMPTION-664.
+- ASSUMPTION-703 — 33 artifacts carry a pass-mark issued by a crash; the systemic flag's defect, confirmed with a count, in a subsystem the flag does not cover.
+- ASSUMPTION-712 — the one-hop propagation failure of a disclosed caveat, measured end to end; this is the concrete case for the flag's provenance-block recommendation.
+- ASSUMPTION-720 — OBJECT-LEVEL/POSITIVE: the second remedy in this series shipped with a test that forces its own failure path, and it names the principle ("force the failure, do not wait for it").
+- ASSUMPTION-723 — the delta guard's baseline does not describe any accepted build, and the 08-03 race explanation is now excluded by timestamps.
+- ASSUMPTION-728(b) — a register's counting rule stayed broken through the day it was used to count ten new entries.
