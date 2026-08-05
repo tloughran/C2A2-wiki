@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-023 - Prime Matter and Quantum Physics - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-03T20:23:19"
+last_qc_at: "2026-08-04T16:23:58"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/023, pars/I, q/43, q/44, theme/mission, theme/creation, theme/prime-matter, theme/four-causes]
