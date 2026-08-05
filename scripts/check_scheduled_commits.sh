@@ -1,8 +1,8 @@
 #!/bin/bash
-# launchd wrapper for the daily scheduler assertions.
+# launchd wrapper for the daily scheduler work: one action, then three assertions.
 #
-# Runs all THREE checks, because they answer different questions and all feed the
-# morning reports:
+#   commit_daily_run.sh         -- commit what the sandboxed run could not. THE ONLY
+#                                  STEP HERE THAT WRITES. Never pushes.
 #
 #   check_scheduled_commits.py  -- did the run's output get committed?  (the aftermath)
 #   check_daily_run_stall.py    -- did the run finish at all, and if not, which tool
@@ -43,6 +43,18 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 REPO="$HOME/Documents/Claude/Projects/RC Karpathy Wiki Project"
 cd "$REPO" || { echo "$(date '+%F %T') ERROR repo-not-found: $REPO"; exit 1; }
 
+# Runs FIRST, and it is the only step here that writes anything. The daily run
+# finishes ~04:41 having done all its work and then reports "Phase 6 BLOCKED --
+# sandbox cannot write .git objects. Must run on Mac." This is the Mac. Doing it
+# before the assertions means check_scheduled_commits.py below sees today's commit
+# rather than failing on a thing the sandbox is structurally unable to do; and if
+# this step refuses, that check fails right afterwards and says so.
+#
+# It commits. It never pushes -- wiki content reaches GitHub only past a human.
+bash scripts/commit_daily_run.sh
+RC_DAILY=$?
+echo "$(date '+%F %T') commit_daily_run exit=$RC_DAILY"
+
 python3 scripts/check_scheduled_commits.py --status-file scheduler/commit_check.md
 RC_COMMIT=$?
 echo "$(date '+%F %T') check_scheduled_commits exit=$RC_COMMIT"
@@ -66,6 +78,7 @@ echo "$(date '+%F %T') check_scheduler_health exit=$RC_HEALTH"
 # committed nothing is usually a run that also never finished, and the later checks
 # are the ones that name the cause. Skipping them on the first failure would
 # suppress the diagnosis precisely when it is needed.
+[ "$RC_DAILY" -ne 0 ] && exit "$RC_DAILY"
 [ "$RC_COMMIT" -ne 0 ] && exit "$RC_COMMIT"
 [ "$RC_STALL" -ne 0 ] && exit "$RC_STALL"
 exit "$RC_HEALTH"

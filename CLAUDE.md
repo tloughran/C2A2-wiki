@@ -236,6 +236,54 @@ python3 scripts/voice_faq.py merge /path/to/qa.json      # additive; --dry-run t
 
 ---
 
+## Daily-Run Commit Step (the sandbox cannot write .git)
+
+**Script:** `scripts/commit_daily_run.sh` (+ `scripts/test_commit_daily_run.sh`, 26 assertions)
+**Runs:** 05:45 daily, first step of the `com.c2a2.scheduled-commit-check` launchd agent
+**Commits. Never pushes.**
+
+`c282-wiki-agent-daily-run` completes its whole job and then reports, verbatim:
+
+> `Phase 6 (Commit/push): BLOCKED — sandbox cannot write .git objects. Must run on Mac.`
+
+This is **not** a hang and **not** a permission prompt — the two are separate problems and
+were conflated for a while. The scheduled task is structurally unable to write git objects,
+so every day's output stayed in the working tree (74 paths by 2026-08-05) and
+`check_scheduled_commits.py` failed daily asserting something the sandbox can never do.
+This closes it from the Mac, where the credentials and write access are.
+
+It replicates Phase 6 of the run's own SKILL.md — same pathspec, same
+`community_explorer.html` guard, same `C2A2 daily run` subject that
+`check_scheduled_commits.py` greps for — and adds guards a sandboxed model cannot enforce
+on itself.
+
+### Why it does not push
+CLAUDE.md's standing rule is that nothing reaches GitHub unreviewed; the lone carve-out is
+the heartbeat's data-only refresh behind a CI gate. Daily-run output is wiki **content**,
+the exact class that rule protects. Committing turns an unbounded working-tree pile into a
+reviewable commit. Pushing stays a human act.
+
+### It refuses (exit 1, tree untouched) when
+- the repo is mid-merge/rebase/cherry-pick, or a `.git` lock is present
+- HEAD is detached, or the branch is not `main`
+- the daily run's `lastRunAt` is older than 25h — **then the dirty tree is someone else's
+  work**, and committing it under a "C2A2 daily run" subject would be a lie in the log
+- any staged path escapes the allowlist (`wiki/` + six named `prototypes/` files)
+- more than 400 paths staged — a ceiling, not a target; a bulk regen or mid-flight vault
+  sync should stop it
+- `thomas.loughran@gmail.com` appears in the staged diff. It refuses at **commit**, not at
+  push: history survives deleting the file
+
+Every refusal path resets the index first — bailing with a half-built index leaves state
+nobody created on purpose.
+
+```bash
+bash scripts/commit_daily_run.sh --dry-run
+bash scripts/test_commit_daily_run.sh
+```
+
+---
+
 ## Scheduler Health (did every job fire, survive, and produce?)
 
 **Script:** `scripts/check_scheduler_health.py` (+ `scripts/test_check_scheduler_health.py`)
