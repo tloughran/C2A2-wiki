@@ -211,6 +211,31 @@ def cmd_merge(args) -> int:
             print("  - " + e, file=sys.stderr)
         return 1
 
+    # The additive merge below is additive WITHIN a key. The output file is not:
+    # `features` is rebuilt by iterating the inventory, so a key holding Q&A that
+    # is no longer in the inventory is simply never emitted, and its pairs vanish
+    # from the published file. That is correct exactly once -- at the END of a key
+    # migration, after the pairs have been re-homed under the new keys -- and is
+    # silent data loss at every other moment.
+    #
+    # It is not hypothetical: the 2026-07-22 move to knowledge/ as canonical source
+    # (bd33ef7) re-keyed features from per-tab filenames to per-affordance-state
+    # `state_key`s and ported only the Sociogram slice, leaving 102 pairs under 14
+    # keys the inventory no longer names. Nothing has overwritten them yet only
+    # because still_missing below refuses first. Seed the four new keys to clear
+    # that, and this path opens.
+    dropped = sorted(k for k, pairs in existing_faq.items()
+                     if pairs and k not in all_keys)
+    if dropped and not args.allow_drop:
+        lost = sum(len(existing_faq[k]) for k in dropped)
+        print(f"REFUSING: {len(dropped)} feature(s) hold Q&A but are no longer in "
+              f"the inventory. Merging would drop {lost} pair(s):", file=sys.stderr)
+        for k in dropped:
+            print(f"  - {k} ({len(existing_faq[k])} pair(s))", file=sys.stderr)
+        print("  Re-home them under current keys first, or pass --allow-drop if "
+              "you already have.", file=sys.stderr)
+        return 1
+
     # ADDITIVE merge: existing Q&A is kept; provided pairs are appended, deduped
     # by normalized question. This lets the agent DEEPEN a feature (add pairs)
     # rather than overwrite it. Order within a feature = high-level first, then
@@ -283,6 +308,12 @@ def cmd_merge(args) -> int:
                   *[f"- `{r['key']}` — {r['title']}" for r in diff["changed"]], ""]
     if diff["removed"]:
         lines += ["## Removed from explorer", *[f"- `{k}`" for k in diff["removed"]], ""]
+    # Only reachable with --allow-drop. Named here as well as on stderr: the report
+    # is the durable artifact, and a permitted drop still has to be legible later.
+    if dropped:
+        lines += ["## Dropped from the published FAQ (--allow-drop was passed)",
+                  *[f"- `{k}` — {len(existing_faq[k])} pair(s) no longer published"
+                    for k in dropped], ""]
     lines += ["---",
               "Review `wiki/voice_guide_faq.json`, then commit + push it with the",
               "rest of the wiki (no auto-push, per the repo's no-blind-push rule)."]
@@ -324,6 +355,9 @@ def main() -> int:
     m = sub.add_parser("merge", help="append authored Q&A into the FAQ (additive)")
     m.add_argument("qa", help="path to authored qa.json")
     m.add_argument("--dry-run", action="store_true")
+    m.add_argument("--allow-drop", action="store_true",
+                   help="permit dropping Q&A held under keys the inventory no "
+                        "longer names (only after re-homing them)")
     m.set_defaults(func=cmd_merge)
     st = sub.add_parser("status", help="coverage + phase + thinnest features (JSON)")
     st.set_defaults(func=cmd_status)
