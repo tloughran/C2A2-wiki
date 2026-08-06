@@ -63,6 +63,7 @@
 - **Two cheap mechanical wins (sewing agent, Tom-decision):** (a) **exclude `architecture/lit_search_results/` from the connectivity/orphan metric** — orphan count is climbing (766→1104→1409) dominated by content sewing doesn't route; (b) run the **one-time backlink-injection pass** (scriptable, no model) from each tradition `wiki.md` to its `prs_triplets.md` and naming bridge notes.
 - **Decide the 3 STALE-MONITOR escalations** — they need empirical/paired tests, not more literature.
 - **Triage 26 pending proposals**, especially the Wright+Rohr+Stump exile/corporate-substance cluster (promote as a unit) and the proposed `individuation_vs_reunion.md` synthesis note.
+- **Carried:** 2026-05-20 lit reconciliation pass; confirm KSGA sociogram push; `transcript_authenticity_check` tuning (OPEN-063).
 
 ## For Morning Discussion
 
