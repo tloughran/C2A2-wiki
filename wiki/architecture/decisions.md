@@ -274,7 +274,6 @@ DECISION-035 (candidate — meta-visualization with agent as co-explorer, not or
   Status: Candidate — formalization blocked on (a) user-modeling work to validate the agent-as-co-explorer-only commitment vs mode-toggling for oracle-mode users (PRESUMPTION-172); (b) recursive-self-application termination-condition audit for self-visualization (PRESUMPTION-174, OPEN-041 cluster); (c) Tom's endorsement; (d) underlying ASSUMPTION-136 + ASSUMPTION-137 carrying Cowork-derived-subject-to-amendment status (PRESUMPTION-175); (e) SELF-MEASUREMENT cluster compounding load across Pathways 23 + 24 + 25 (PRESUMPTION-180). Related assumptions: ASSUMPTION-136, ASSUMPTION-137. Related presumptions: PRESUMPTION-172, PRESUMPTION-174, PRESUMPTION-175, PRESUMPTION-180, PRESUMPTION-181.
 
 
-
 DECISION-036 (candidate — sandboxed non-Claude LLM worker on shared C2A2 vault, Path 2 architecture):
   Date: 2026-05-17 (surfaced by 2026-05-16 Multi-agent Obsidian/DeepSeek Chat thread, recorded into the architecture register on 2026-05-17 by the resumed c2a2-self-awareness-daily run)
   Title: Multi-agent vault coordination uses Path 2 — DeepSeek-Flash via API + folder-scoped one-shot worker, scope-locked to `_agents/<provider>/`, with `agents.md` as the single-source-of-truth operating contract
@@ -339,13 +338,6 @@ DECISION-044 (candidate — run the two-summa head-to-head as Option #3 in a fre
   Summary: With the connectome shipped, Tom chose Option #3 for the two-summa head-to-head and asked to run it in a fresh chat. A self-contained handoff (`TWO_SUMMA_EXPERIMENT_BRIEF.md`, project root) was written carrying project context, all paths, the PRS+tradition schema, the #3 design, the Aquinas<->Levin teleology seam with specific Summa source days, success criteria, and guardrails (Obsidian-clobber, no-blind-push, publish decisions). Premise: a Conscious-Realist-Monist summa can be built as a genuine rival and compared head-to-head (ASSUMPTION-215, 216); the experiment is portable via a single brief (ASSUMPTION-214).
   Category: Methodology / Experiment design / Traditions
   Status: Candidate — formalization blocked on (a) OPEN-062 (what exactly counts as "Summa 2" and what form the head-to-head output takes — the brief's first open item); (b) acknowledgment of PRESUMPTION-233 (commensurability of rival summae), PRESUMPTION-234 (Summa-2 exists/assemblable), PRESUMPTION-232 (cold-start handoff loses no load-bearing tacit context), PRESUMPTION-235 (focal-seam chosen without weighing alternatives); (c) Tom launching the chat. Related assumptions: ASSUMPTION-214, ASSUMPTION-215, ASSUMPTION-216. Related presumptions: PRESUMPTION-232, PRESUMPTION-233, PRESUMPTION-234, PRESUMPTION-235. Related: ASSUMPTION-207 (master-science telos), DECISION-038.
-
-DECISION-045 (candidate — embed faculty research summaries in sociogram node data):
-  Date: 2026-05-22 (surfaced by the Assess-wiki-visualization-build-requirements session local_26b6c078; separate KSGA-sociogram repo)
-  Title: Embed the 307 "Principal research areas" faculty summaries directly in the KSGA sociogram's node data so node side-panels are self-contained
-  Summary: The KSGA sociogram was regenerated against the current vault (500 nodes / 911 links; 475 wikilink + 436 affiliation; 93 gold-ring central+institute faculty), and the 307 faculty research summaries were embedded directly in the graph data and now render in the node side-panel (ASSUMPTION-217). `index.html` grew 1.3 -> 1.9 MB; `node --check` SYNTAX OK; only `index.html` changed (the explorer iframes it). This is a separate repo from the C2A2 wiki.
-  Category: Architecture / Data model / Sociogram (separate repo)
-  Status: Candidate — formalization blocked on (a) acknowledgment of PRESUMPTION-236 (inline-embed self-containment benefit outweighs page-weight/scaling cost as the vault grows); (b) Tom-side close-out: the sandbox `git status` left a stale `.git/index.lock` — commit/push needs `rm -f .git/index.lock` first (push not yet at origin). Related assumptions: ASSUMPTION-217. Related presumptions: PRESUMPTION-236, PRESUMPTION-229 (scaling). Related: KSGA-sociogram repo, explorer iframe.
 
 DECISION-046 (candidate — per-artifact repo publish/untrack calls + root .gitignore):
   Date: 2026-05-22 (surfaced by Review-PRS-triplet-visualization local_a20a370b; repo-hygiene pass)

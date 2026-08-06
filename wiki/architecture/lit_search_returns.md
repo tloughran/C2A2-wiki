@@ -25851,3 +25851,359 @@ un-run.
 **Success criteria.** 8 of 8 queued items searched by both 15a and 15b; 8 of 8
 dispositioned by 15c; zero items left searched-but-undispositioned; provenance chains
 complete on all 16 result files and all 8 register entries.
+
+================================================================================
+## 2026-08-06 — Agents 15a / 15b / 15c, 2026-08-05 EOD intake (6 items)
+
+Items: PRESUMPTION-678, 685, 689, 690, 691, 695. All six originate from 14b.
+15a and 15b ran in separate contexts, concurrently; 15b read nothing in
+`lit_search_results/for/`. Queue-file and returns-file writes were centralised in
+the coordinator to avoid concurrent edits to shared files; the three register
+files were written by 15c alone, append-only, with pre-write backups
+(`*.bak.20260806-pre-15c`). `for_lit_search.md` and this file backed up as
+`*.bak.20260806-pre-15pipeline`.
+
+--------------------------------------------------------------------------------
+### 15a returns (FOR — supportive)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-678
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: IIA Global Internal Audit Standards — mandatory external quality
+    assessment at least every five years by an independent outside assessor;
+    INTOSAI GUID 1900 to the same effect.
+  Summary: The governance literature was written to prevent exactly this. Norm-
+    conflict formalisms admit no privileged norm, and legal hierarchy places a
+    charter below higher-tier norms rather than outside them. Hart's primary/
+    secondary rule split is the only partial foothold and does not yield
+    exemption from consistency.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-678_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-685
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Weak
+  Key source: Henrion, M. & Fischhoff, B., 1986. "Assessing uncertainty in
+    physical constants." American Journal of Physics 54(9): 791-798.
+  Summary: Deference to a standing figure is documented as producing multi-decade
+    systematic bias (c: +70 km/s 1876-1902, then -15 km/s 1905-1950); Jeng 2007
+    shows PDG values clustering around previous averages more tightly than around
+    truth. Genuine support exists only under GUM's documented-cause condition,
+    and that condition is symmetric — it says nothing about which figure stands.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-685_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-689
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: Hale, A. & Borys, D., 2013. "Working to rule, or working safely?"
+    Safety Science 55 (Parts 1-2).
+  Summary: Requirements engineering treats satisfiability as a property to be
+    checked, not presumed — van Lamsweerde's "divergence" is precisely this
+    shape, and an ASE-2016 subfield mechanises the check. Hale & Borys and
+    Vaughan supply the consequence: universal violation is a diagnostic on the
+    rule, and attributing each instance to the actor is the documented pathology.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-689_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-690
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate — inside the boundary only
+  Key source: Real-time online feasibility tests / admission control (Real-Time
+    Systems literature).
+  Summary: The only item of the six with real support: admission-control
+    schedulers make the presumption true by construction, rejecting infeasible
+    tasks at dispatch. It does not transfer to cron-class schedulers, which have
+    no concept of success, only of execution, and for which environment drift is
+    a named leading failure cause. Heartbeats answer "did it produce," never
+    "could it have."
+  NOVELTY-FLAG (partial): no literature found that treats feasibility
+    re-verification as a standing obligation of a long-lived schedule.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-690_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-691
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: Ridgway, V.F., 1956. "Dysfunctional Consequences of Performance
+    Measurements." Administrative Science Quarterly 1(2): 240-247.
+  Summary: Ridgway's interviewer and investigator cases are the exact structure —
+    a producer-side count that rises while the outcome falls. Little's Law reads
+    34 -> 40 with zero decisions in sixteen days as cycle time diverging. The
+    load-bearing finding is the second clause: counter-metric practice holds that
+    every quantity indicator needs a paired quality indicator, so "nothing falls
+    when the queue rises" is an unpaired metric by definition.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-691_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-695
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: Jergas, H. & Baethge, C., 2015. "Quotation accuracy in medical
+    journal articles." PeerJ 3:e1364 — pooled quotation error 25.4% (CI
+    19.5-32.4).
+  Summary: Mogull 2017 measures improper secondary/indirect citation — the
+    publisher-blurb route — at 10.4%, with 64.8% of content errors major.
+    Extraction errors run 28-31% and do not fall with experience (Horton et al.
+    2010); only independent duplicate extraction helps. QA taxonomy refuses the
+    process-to-product inference. The register's composition concentrates
+    scrutiny where errors are cheapest.
+  NOVELTY-FLAG (partial): no benchmark exists for a process-to-product audit
+    ratio, so the ~1,460-to-few figure cannot be scored against a norm.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-695_for.md
+
+--------------------------------------------------------------------------------
+### 15b returns (AGAINST — disconfirmatory)
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-678
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: IIA Global Internal Audit Standards — external quality assessment
+    every five years; pure self-assessment held to lack independence.
+  Specific risk: A charter may run indefinitely under a norm contradicting the
+    register, with detection latency set by luck rather than by design.
+  Summary: Audit standards, statutory self-exemption history, deontic-logic
+    conflict detection and meta-monitoring converge: self-exemption at the
+    governing layer creates a failure class detectable only from outside. Deontic
+    work shows charter-vs-premise checking is mechanisable, so the exemption is a
+    design omission rather than a necessity.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-678_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-685
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Henrion & Fischhoff 1986, Am. J. Phys. 54(9):791-798 — bandwagon
+    effect and systematic underestimation of uncertainty in physical constants.
+  Specific risk: Figures become durable by age rather than by evidence;
+    suppressed disagreements never enter any uncertainty estimate, so the error
+    is correlated rather than random.
+  Summary: Deference to the incumbent is the named bias, not the conservative
+    move. Klein & Roodman's "stopping bias" describes the run exactly — it hunted
+    for an instrument fault only after seeing disagreement, then stopped. PDG
+    practice (retain both, inflate uncertainty by a scale factor) is the worked
+    alternative.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-685_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-689
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Porter, J., Boyd, C., Skandari, M.R. & Laiteerapong, N. "Revisiting
+    the Time Needed to Provide Adult Primary Care." J Gen Intern Med, DOI
+    10.1007/s11606-022-07707-x — 26.7 hours per day required for
+    guideline-concordant care.
+  Specific risk: Every breach report misattributes cause; universal breach
+    destroys the disclosure's signal value; runs adapt silently and off-record.
+  Summary: A near-identical published case in which a mandatory list provably
+    exceeds the available budget and the shortfall was attributed to
+    practitioners until someone summed it. Normalisation of deviance explains the
+    ten-day pattern; real-time admission control supplies a cheap pre-dispatch
+    feasibility gate.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-689_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-690
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Cron-monitoring practice — scheduled-task failure is "the absence
+    of something happening" and is invisible to ordinary monitoring; the remedy
+    is heartbeat inversion. (Practitioner literature; labelled as such in file.)
+  Specific risk: Silent non-execution is read downstream as "nothing to report";
+    persistence is unbounded; blast radius is currently unmeasurable.
+  Summary: Open-loop control theory makes this definitional rather than
+    probabilistic — a scheduler cannot correct what it cannot measure. Real-time
+    admission control ("could it have" over "did it produce") and dev/prod parity
+    supply the fixes. The task's own relocation argument is the only signal
+    present, and it is generated by the wrong component.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-690_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-691
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Institute for Fiscal Studies on NHS waiting lists — no simple
+    relationship between list size and waiting times; lists measure demand and
+    activity, not performance.
+  Specific risk: The metric is inverted, not merely uninformative — growth that
+    signals review collapse is reported as health, and a Critical item can age
+    invisibly inside a 40-deep queue.
+  Summary: Little's Law makes the inversion arithmetic: throughput of zero across
+    sixteen days means queue growth carries no productivity information.
+    Goodhart-style reasoning makes the second clause the dangerous one — a metric
+    set with no falling gauge is a free lever on the cheap half of the loop.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-691_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-695
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Pitkin, R.M., Branagan, M.A. & Burmeister, L.F., 1999. "Accuracy of
+    data in abstracts of published research articles." JAMA 281(12): 1110-1111;
+    with abstract-vs-full-report discrepancy at a median of 19% (range 5-45%).
+  Specific risk: The flagship result is the least verified; disclosed provenance
+    decays into background knowledge by authority-through-repetition; the
+    paywalled item may be permanently unreverifiable.
+  Summary: Secondary-route extraction carries measured error rates well above
+    what unaudited use assumes, and the ISO 9000 / CMM literature explicitly
+    declines the process-to-product inference that the ~1,460-to-few ratio
+    embodies. The steelman is real — a 2025 JCE study found abstract inclusion
+    rarely changed conclusions — but that has not been tested in-system.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-695_against.md
+
+SYSTEMIC-RISK-FLAG (filed by 15b at the end of PRESUMPTION-678_against.md):
+  Date: 2026-08-06
+  Affected items: PRESUMPTION-678, 689, 690, 691, 695
+  Common vulnerability: open-loop self-verification — five beliefs about the
+    system's own state, each confirmable from inside and falsifiable only from
+    outside, with no signal that fires on the ABSENCE of verification. 691 is the
+    most dangerous member because it converts the gap into an affirmative health
+    signal.
+  Risk level: Critical
+  Recommendation: treat as one remediation with one absence-detector tier,
+    evaluated by an agent that did not produce the artefact.
+
+--------------------------------------------------------------------------------
+### 15c dispositions
+
+  678 -> INCORPORATE the negation (D-609, PREMISE-144)
+  685 -> INCORPORATE the negation (D-610, PREMISE-145)
+  689 -> INCORPORATE the negation (D-611, PREMISE-146)
+  690 -> MONITOR (D-612, MONITOR-502) — the negation is already ACTIVE four times
+         (PREMISE-053 / 086 / 100 / 110), so re-minting was barred; only the
+         novelty residue is queued, at High priority per the NOVELTY rule.
+  691 -> INCORPORATE the negation (D-613, PREMISE-147)
+  695 -> INCORPORATE the negation (D-614, PREMISE-148)
+  SYSTEMIC-RISK-FLAG -> REVISE-283, one entry spanning all five members.
+
+**Systemic flag sustained in part, deliberately not re-minted.** Its general
+claim — that absence-of-signal is the safe polarity — is already ACTIVE in
+PREMISE-053, 086, 100 and 110. A fifth premise restating it would itself be
+PREMISE-138 clause (1). Three things are new and are what REVISE-283 asks for:
+(a) the class claim — five items, one gap, one remediation; (b) the EVALUATOR
+CONDITION — the detector tier must be checked by a component that did not produce
+the artefact, which promotes PREMISE-110's common-mode guard to a construction
+rule and which NO EXISTING PIPELINE AGENT SATISFIES; (c) PRESUMPTION-691 as the
+inverted member, which is why "add a falling metric" is sequenced BEFORE the
+detector tier.
+
+**Correction filed against the flag by 15c.** The flag presents three
+"unrelated" literatures as corroboration, but two are the same literatures that
+carried the individual items, and all five AGAINST files were written by the same
+agent in one context. Per PREMISE-111 / 120 that is one reading of a common
+source base, not five independent confirmations. The class claim is therefore
+filed on the structural argument rather than on the convergence.
+
+**REVISE-282 not duplicated.** PRESUMPTION-691 mints no revision flag of its own;
+its requested changes are already items (2) and (4) of REVISE-282 (D-608,
+2026-08-05). PRESUMPTION-678's class-level charter-admission request is folded
+into REVISE-283 item (3), with an explicit instruction that it and REVISE-282's
+line-88 request are ONE decision and are not to be actioned separately.
+
+**Consistency checks: no conflicts found.** All checks recorded in-entry,
+including the compatible ones. PREMISE-138 is CONFIRMED, not contradicted, by
+PREMISE-147, and 147 explicitly does not restate PREMISE-143 clause (1) or
+PREMISE-110. The six premises REVISE-282 names (003, 070, 095, 106, 119, 121) are
+all ACTIVE and are all confirmed by PREMISE-144 and PREMISE-147. PREMISE-113
+turned out to support 145's symmetric conclusion rather than the deference rule.
+PREMISE-103 is directly on point for 148 and is extended, not overwritten. No
+premise required flagging for human review as contradictory.
+
+--------------------------------------------------------------------------------
+### Run notes
+
+**Disposition mix: 5 INCORPORATE / 1 MONITOR / 1 REVISE — inverted from
+2026-08-05's 3 / 0 / 5, and stated as such.** 15c's own read, carried here
+unedited: the mix is warranted, because on four of the five negations 15a
+returned None with no novelty flag while 15b returned Strong, which is the
+charter's clearest incorporate-the-negation signature; and because 690 — the one
+item where 15a found real support and raised a novelty flag — went to MONITOR
+rather than being swept along. The single REVISE is a deliberate rate-aware
+choice: five separate flags were available and would have added five items to a
+40-deep queue with no decision in sixteen days, which is the condition
+PRESUMPTION-691 describes and which the flag's own recommendation ("one
+remediation, not five") forbids. Every register entry carries an IN-HOUSE FIRST
+STEP requiring no authorisation.
+
+**15c's caveat, recorded rather than resolved.** A 5-of-6 negation rate should
+NOT be read as the instrument working well. 14b selects for presumptions it
+believes false, so a high negation rate is the expected output, not a finding.
+The premise register grew by five today with no consumer — which is PREMISE-147's
+own diagnosis applied to 15c. All five open measurements named at validation were
+NOT run this session and are owed; if none is ever run, these five premises are
+producer-side output in exactly the sense PREMISE-147 warns about. This paragraph
+is itself an increment to the quantity PRESUMPTION-691 measures.
+
+**Two-run caveat carried forward, unchanged.** The 2026-08-04 run flagged 10
+REVISE of 11 as a mix extreme enough to be evidence about the instrument;
+2026-08-05 was 5 REVISE and 3 INCORPORATE of 8; today is 1 REVISE and 5
+INCORPORATE of 6. Three consecutive runs with materially different mixes is weak
+evidence against the "tilts toward REVISE regardless of input" reading, but the
+generalizability study requested in REVISE-271 remains the thing that would
+distinguish the readings, and remains un-run.
+
+**Citation hygiene.** Fabrication was prohibited; unverifiable items were marked
+in the result files rather than dropped silently. Carried as UNVERIFIED across
+the twelve files: Hart, The Concept of Law (secondary summaries only); Klein &
+Roodman 2005 blind-analysis review; Goodhart 1975; Kubernetes scheduler
+node-feasibility filtering; the doctrine of desuetude (flagged and explicitly not
+relied on); Hollnagel work-as-imagined primary texts; Vaughan's monograph
+title/year (concept and Challenger origin confirmed, book citation not); the
+journal title of the normalisation-of-deviance systematic review (inferred from
+publisher ID S0022437522001827); author lists for the AAMAS 2018 normative-
+conflict paper, the EPJC 2020 PDG scale-factor paper, two PLOS One quotation-
+error papers and one Proc R Soc A paper; the attribution for "A selected history
+of expectation bias in physics" (AJP 74(7):578); and the Cochrane "13% of 8,434
+studies" figure (search summary only, source article not opened). The Millikan
+oil-drop anecdote was cited nowhere and explicitly excluded. Pitkin et al.'s
+numeric error rates were deliberately OMITTED from the 695 AGAINST file because
+the full text was not retrieved; the citation is carried without them. Uncertain
+author lists, years, volumes and pages are flagged inline in each file.
+Publication year for Porter et al. is given as 2022 online-first / 2023 in-issue
+without asserting one.
+
+**Blocked or incomplete fetches (3).** `ncbi.nlm.nih.gov/pmc/articles/PMC5747940/`
+— reCAPTCHA interstitial, so the scoping review's journal and authors are
+unconfirmed and its 5-45% / median-19% figures rest on a search summary plus
+concordant statements in the conference-abstract literature. `arxiv.org/abs/
+2605.10990` ("Skill Drift Is Contract Violation") — outside the fetch provenance
+set; cited in 690 only as a flagged, unread pointer. The PLOS ONE full text for
+Mogull 2017 exceeded the token limit and was not read whole; its figures come
+from indexed abstract/summary records that agreed across three independent
+sources.
+
+**Source-class disclosure.** Three bodies of evidence used here are practitioner
+publications rather than peer-reviewed or standards literature, and are labelled
+as such in-file: the cron / configuration-drift material (690), the
+product-vs-process audit taxonomy (695), and several flow-metric sources for 691
+(Little's Law, WIP limits, flow efficiency — the underlying results are standard
+but were not traced to primary texts). MONITOR-498 remains open against exactly
+this series; this run reports the count rather than leaving it unreported, but
+does not close it.
+
+**Budget (Rule 6).** This run exceeded the 4,000-token per-task and 30,000-token
+session budgets. Surfaced, not hidden — and note that PRESUMPTION-689,
+dispositioned today as PREMISE-146, holds that the ceiling is unsatisfiable as
+specified. Mitigations applied: `for_lit_search.md` (15,366 lines) and this file
+were never read whole — targeted greps, seds and tails only; the three agent
+roles ran in separate subagent contexts that returned summary tables rather than
+file contents to the coordinator; all shared-file writes are scripted appends
+with pre-write backups.
+
+**Success criteria.** 6 of 6 queued items searched by both 15a and 15b; 6 of 6
+dispositioned by 15c; zero items left searched-but-undispositioned; provenance
+chains complete on all 12 result files and all 7 register entries.

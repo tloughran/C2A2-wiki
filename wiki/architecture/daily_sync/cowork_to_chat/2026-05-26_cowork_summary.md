@@ -71,7 +71,6 @@ Standing AWAITING-REVIEW backlog (now fully actionable since the gate is open):
 4. **Decide the 3 STALE-MONITOR escalations** — ASSUMPTION-035/037, PRESUMPTION-037 — run the empirical/paired test or retire the premise. The lit pipeline cannot help here; this is a Tom call.
 5. **Two free mechanical wins still waiting:** exclude `lit_search_results/` from the connectivity/orphan metric (ASSUMPTION-224); run the one-time backlink-injection pass (from each tradition `wiki.md` to its own `prs_triplets.md` and to bridge notes naming it).
 6. **The unit-promotion call:** the Wright + Rohr exile/restoration + Stump corporate-substance cluster as one paradigm-bridge (ASSUMPTION-222). Caveat per PRESUMPTION-244: confirm the convergence is tradition-level, not a pipeline/batch artifact.
-7. **Carried but lower-priority:** the OPEN-063 Summa Layer-4 classifier tune (the reviewer is still churning ~20× on the same FABRICATION false-positive); KSGA sociogram push live-status confirmation; the 2026-05-20 lit reconciliation (now a fourth-run carry).
 
 ## For Morning Discussion
 

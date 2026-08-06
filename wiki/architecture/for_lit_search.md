@@ -3748,7 +3748,6 @@ All 21 items queued in the 2026-05-10 EOD batch above (ASSUMPTION-104 through AS
 **Run note:** First on-cadence 14a/14b fire after 2 consecutive missed cycles (2026-05-15 + 2026-05-16). 2026-05-15 EOD upstream content remains un-ingested by this run and is left as carry-forward for Tom's gap-recovery decision. Today's signature: infrastructure-and-meta-signal day — the substantive content is the Path-2 sandboxed-worker architecture for non-Claude LLMs on the shared vault (DECISION-036 candidate), and the meta-signal is the missed-cycle pattern itself (ASSUMPTION-165 + PRESUMPTION-187 + OPEN-047) plus the unowned-overdue-cohort pattern (ASSUMPTION-167 + PRESUMPTION-188 + OPEN-046) — both of which map to the substrate-decomposition cluster's recurrent pattern of pre-classifying failures as the cheaper cause before diagnosis. Two HIGH-priority queue items target the 15d-existence question and the cadence-vs-rate-mismatch question; both are 5-minute-to-30-minute audits that resolve load-bearing pipeline questions. Today's 13:13 presumption-to-assumption ratio (1.0:1) reflects the day's split between concrete infrastructure decisions (high-claim-making) and meta-architectural surface (high-presumption-surfacing).
 
 
-
 ## 2026-05-18 RUN — 14a/14b daily ingestion
 
 **Source sessions:**
@@ -4295,7 +4294,6 @@ A sync input `daily_sync/chat_to_cowork/2026-05-21_chat_summary.md` is present o
 
 ## 2026-05-22 — c2a2-self-awareness-daily (14a/14b) batch
 
-Run note: execution-and-handoff day (two interactive threads — connectome 2-panel ship + two-summa brief; KSGA sociogram regen — plus automated passes). Operationally broad rather than conceptually deep. 8 ASSUMPTIONs (212-219) + 9 PRESUMPTIONs (231-239) extracted; 12 testable items routed below (3 ASSUMPTIONs: 214, 215, 216 + 9 PRESUMPTIONs: 231-239); 5 ASSUMPTIONs held as framework/design/operational commitments (212, 213, 217, 218, 219). The two highest-leverage testable items are PRESUMPTION-233 (commensurability of rival summae — against the project's own MacIntyrean incommensurability commitment) and ASSUMPTION-215 (a Conscious-Realist-Monist summa can be built as a genuine rival), which together gate whether the two-summa head-to-head can produce unbiased evidence. NOTE (scope/fail-loud): this is a 14a/14b extraction-and-routing pass only; the lit pipeline (15a/15b/15c) is a separate scheduled task and ran a clean null run earlier today (2026-05-22 ~05:47 UTC) — these items await the next 15a/15b cycle. NOTE (cadence): the 2026-05-21 EOD 14a/14b fire did not occur (no 2026-05-21 changelog/snapshot); this run resumes the cadence after a one-day gap.
 
 [ASSUMPTION] ASSUMPTION-214: A single self-contained handoff document can carry an experiment's full context into a cold-start chat, making the experiment portable across sessions.
   Status: [QUEUED] [SEARCHED-15a: 2026-05-23] [SEARCHED-15b: 2026-05-23] [DISPOSITIONED-15c: 2026-05-23 -> MONITOR (MONITOR-220 Med-High, Weekly; cold-start brief-portability test before DECISION-044 launch; couples PRESUMPTION-232)]
@@ -15290,3 +15288,79 @@ is covered by PRESUMPTION-673's search and is not separately queued. Flagged for
 - ASSUMPTION-720 — OBJECT-LEVEL/POSITIVE: the second remedy in this series shipped with a test that forces its own failure path, and it names the principle ("force the failure, do not wait for it").
 - ASSUMPTION-723 — the delta guard's baseline does not describe any accepted build, and the 08-03 race explanation is now excluded by timestamps.
 - ASSUMPTION-728(b) — a register's counting rule stayed broken through the day it was used to count ten new entries.
+
+## 2026-08-05 EOD intake (Agents 14a / 14b)
+
+ROUTING NOTE, stated: 14b routed 6 of 18 presumptions to literature rather than the ~11 its definition's
+line 88 would produce, because that line was flagged today by the lit pipeline as contradicting six ACTIVE
+premises (003, 070, 095, 106, 119, 121). The norm conflict is surfaced, not resolved, and is named as an
+OPEN candidate in tonight's changelog. The remaining 12 are tagged IN-HOUSE, each settled by one command
+or one assertion.
+
+### [QUEUED] to 15a / 15b (6 items)
+
+PRESUMPTION-678 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That an agent's own charter is exempt from the premise register that governs the system; 14b ran ~118 days under a norm contradicting six ACTIVE premises, and the contradiction was found from outside. Risk: Critical. Search: self-exempting rules in governance systems; auditor independence and who audits the audit function; charter-vs-policy conflict detection in normative systems. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b generalised the lit pipeline's line-88 finding from one charter to the class
+    · Current status: UNTESTED
+
+PRESUMPTION-685 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That deferring to a prior published figure is the conservative move; a run withheld its own 57 in favour of the prior day's 24 on the ground that its parser had carried a bug, a rule that makes a figure durable in proportion to how long it has gone unchallenged. Risk: High. Search: anchoring and first-figure persistence in measurement; when a self-doubting instrument should defer; the epistemics of legacy numbers in long-running records. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b read a stated deference rule against the same run's opposite use of the same register
+    · Current status: UNTESTED
+
+PRESUMPTION-689 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That a task specification is satisfiable; ten days of budget-breach disclosures treated the breach as the run's fault until one run measured that the mandatory preamble alone exceeds the ceiling. Risk: High. Search: normalization of deviance; unachievable procedural requirements and the degradation of compliance signals; rules whose violation is universal. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from one run inverting a claim ten prior runs made in the opposite direction
+    · Current status: UNTESTED
+
+PRESUMPTION-690 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That a scheduled task's environment is capable of the task; metabolism regen is established as structurally impossible where it is scheduled and remains scheduled there, with no channel by which the schedule could learn otherwise. Risk: High. Search: capability drift between job specification and execution environment; scheduler designs that verify feasibility rather than completion; "did it produce" vs "could it have". Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a task arguing for its own relocation on structural grounds, second day
+    · Current status: UNTESTED
+
+PRESUMPTION-691 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That the review queue's growth measures the hunt's health; queue 34 -> 40, sixteen days without a decision, and no metric in this system falls when the queue rises. Risk: High. Search: throughput vs. flow metrics; WIP limits and queueing theory in single-consumer systems; producer-side proxies mistaken for system health. NOTE: compounds PRESUMPTION-677, flagged High today for positive feedback with no damping. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from a framing shared by three independent runs reporting the same queue
+    · Current status: UNTESTED
+
+PRESUMPTION-695 [QUEUED] [SEARCHED-15a: 2026-08-06] [SEARCHED-15b: 2026-08-06] [DISPOSITIONED-15c: 2026-08-06]
+  That the object-level work is the part that needs no auditing; the day's strongest object-level result arrived via a disclosed-but-unaudited route (PRS triplets from publishers' descriptions, one from a paywalled session's host write-up), and this register holds ~1,460 items about the machinery against comparatively few about the content. Risk: High. Search: verification asymmetry between process and product; secondary-source provenance in evidence synthesis; abstract/blurb-based extraction error rates in systematic review. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b read the day's best object-level result against its own disclosed provenance route and against this register's composition
+    · Current status: UNTESTED
+
+### [IN-HOUSE] — one command or one assertion each (12 items)
+
+[IN-HOUSE] PRESUMPTION-679 — that documenting an instrument's error corrects it; the same false all-clear on 08-04 and 08-05, filed into a directory that instrument does not read. Governed by REVISE-268 / OPEN-138. Test: for each CHANGE, find any artifact outside `architecture/` that changed.
+[IN-HOUSE] PRESUMPTION-680 — that a degraded check degrades visibly; four substitutions today, all disclosed in prose, none encoded in the artifact written. Governed by REVISE-276. Test: grep today's four artifacts for any substitution marker.
+[IN-HOUSE] PRESUMPTION-681 — that an error on stderr is an error seen; `2>/dev/null` ate a denied redirect, and `fidelity_check.py` pass-marks on form for the same reason. Test: grep the tool corpus for `2>/dev/null`.
+[IN-HOUSE] PRESUMPTION-682 — that `/tmp` is private to a run; a file owned by `nobody` from another session, another day, was read back as own state, second consecutive run. Test: one `stat` per cache path; then namespace by session.
+[IN-HOUSE] PRESUMPTION-683 — that a query run twice returns the same set; three identical calls returned 31/24/31 over disjoint membership. Test: three calls, one minute.
+[IN-HOUSE] PRESUMPTION-684 — that a run's account of a sibling's verdict equals the sibling's; "all six passing" against "0 pass, 6 held". Test: diff the two transcripts.
+[IN-HOUSE] PRESUMPTION-686 — that a freshness gate measures freshness; the artifact dates itself, so a run that did not happen passes until the clock catches up. Pairs with ASSUMPTION-745. Test: one assertion against an external clock.
+[IN-HOUSE] PRESUMPTION-687 — that a register's counting rule survives its own write format; fourth instance in three days (DISPOSITION 568/max 600; REVISE 118/max 282; QUEUED 1,527 for a third day; CROSS grep 54 vs 90 actual). Supersedes and generalises PRESUMPTION-670. Test: for each register, one strict-vs-loose grep pair.
+[IN-HOUSE] PRESUMPTION-688 — that a corrected count retires the counts it corrects; 519/90 published today against 511/165 and a stale header carrying a third set. Governed by MONITOR-489. Test: grep the superseded figures vault-wide.
+[IN-HOUSE] PRESUMPTION-692 — that the date of the last review decision is known; 2026-07-20 and 2026-05-26 the same morning, `review/archive/` giving 2026-07-23. Test: one Gmail search.
+[IN-HOUSE] PRESUMPTION-693 — that a self-test added after a bug covers its class; the self-test spans neither of the night's two causes. Test: run the self-test against the part-blind Q-match case.
+[IN-HOUSE] PRESUMPTION-694 — that an identically regenerating artifact is current; identity establishes determinism only. Test: one input-mtime check, noting vault mtimes are restamped.
+
+### [IN-HOUSE] ASSUMPTION-729 .. ASSUMPTION-765 (37 items)
+
+All routed in-house: each is a stated claim or a direct measurement, testable by one command against this
+vault. Flagged for particular attention:
+- ASSUMPTION-730 — 14b's own definition line 88 contradicts six ACTIVE premises and had never been flagged; found from outside, on day ~118.
+- ASSUMPTION-735 — the morning all-clear recurred UNCHANGED the day after it was documented; pairs with PRESUMPTION-679.
+- ASSUMPTION-737 / 765 — four headline counters now measured not to move when their contents do.
+- ASSUMPTION-738 — OBJECT-LEVEL/POSITIVE: the first direct PRS recount in four days (519 / 90), superseding 511 / 165.
+- ASSUMPTION-748 — POSITIVE: two false results disclosed pre-publication, the second caught only by disagreement with the prior day's register.
+- ASSUMPTION-749 — partially RETRACTS ASSUMPTION-728(i): vault mtimes are bulk-restamped, so mtime-based claims in this series are unreliable.
+- ASSUMPTION-752 — the 33-artifact pass-mark defect is 125 of 307 (41%) one day later; 33 is a subset.
+- ASSUMPTION-757 — the 4,000-token rule named UNSATISFIABLE for the first time, not merely exceeded.
+- ASSUMPTION-758 — OBJECT-LEVEL/POSITIVE: a warrant for the accelerator's core premise, a specimen of its own interaction protocol, and a citable Carroll contradiction, in one run.
+- ASSUMPTION-764 — `assumptions.md` LOST A RECORD (ASSUMPTION-217) between 08-04 and 08-05; restored verbatim from backup by this run; detected only by an offset check the prior snapshot had reported as clean.

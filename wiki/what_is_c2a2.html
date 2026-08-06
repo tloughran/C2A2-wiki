@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What Is C2A2? — Fifteen Angles</title>
+<title>What's it doing? — Fifteen Structures, Fifteen Powers</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
@@ -66,6 +66,47 @@
   .angle p { font-size: 15px; color: #c4c4d2; margin-bottom: 12px; }
   .angle p:last-child { margin-bottom: 0; }
 
+  /* ── FUNCTION CLAUSE (structure : function) ── */
+  .fn {
+    display: grid; grid-template-columns: 92px 1fr; gap: 10px 18px;
+    align-items: start; margin: 0 0 14px;
+    padding: 12px 0 0; border-top: 1px solid #1c1c28;
+  }
+  .fn-lbl {
+    font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase;
+    color: #6a604e; font-weight: 700; padding-top: 3px;
+  }
+  .fn-val { font-size: 14.5px; color: #c4c4d2; line-height: 1.7; }
+  .fn-val b { color: #ececf2; font-weight: 600; }
+  .fn-val em { color: #C9A84C; font-style: normal; }
+
+  /* ── OPEN SLOT ── */
+  .angle.open {
+    border-left-style: dashed; border-left-color: #4a4226;
+    background: linear-gradient(180deg, #0d0d15, #0a0a10);
+  }
+  .angle.open h2 { color: #9a8a5a; }
+  .angle.open h2 .idx { color: #6a604e; }
+  .angle.open .num { opacity: 0.10; }
+
+  /* ── NAV STRIP ── */
+  .navstrip {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    margin: 26px 0 0;
+  }
+  .navstrip a {
+    display: inline-flex; align-items: center; gap: 0;
+    font-size: 13px; color: #d8d8e0; text-decoration: none;
+    padding: 8px 15px; border: 1px solid #2e2a1c; border-radius: 8px;
+    background: rgba(201,168,76,0.06); transition: background .15s, border-color .15s;
+  }
+  .navstrip a:hover { background: rgba(201,168,76,0.13); border-color: #4a4226; }
+  .navstrip a em { color: #C9A84C; font-style: normal; }
+  .navstrip .arr, .navstrip .bk { color: #C9A84C; font-weight: 700; }
+  .navstrip .arr { margin-left: 8px; }
+  .navstrip .bk { margin-right: 8px; }
+  .navstrip .lab { display: inline; }
+
   .added-tag {
     display: inline-block; vertical-align: middle; margin-left: 10px;
     font-family: -apple-system, sans-serif; font-size: 10px; font-weight: 700;
@@ -105,6 +146,8 @@
     .angle { padding: 18px 18px 20px; }
     .angle h2 { font-size: 18px; margin-right: 44px; }
     .angle .num { font-size: 30px; top: 14px; right: 16px; }
+    .fn { grid-template-columns: 1fr; gap: 4px 0; }
+    .fn-lbl { padding-top: 0; }
   }
 
   /* ── DOC RENDER PANEL (slide-in, right) ── */
@@ -176,9 +219,9 @@
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">C2A2 · Community Dialogue Accelerator / Detector System</div>
-    <h1>What Is C2A2?
-      <span class="sub">Fifteen angles on an emerging entity</span>
+    <div class="eyebrow">C2A2 Explorer · What's this? · Lens two</div>
+    <h1>What's it doing?
+      <span class="sub">fifteen structures, and what each one lets the system do</span>
     </h1>
   </header>
 
@@ -186,30 +229,40 @@
     C2A2 is not easily captured by a single description. What follows is a <em>constellation</em> of
     frameworks &mdash; each true, each revealing a different dimension of what this project is becoming.
     No single angle tells the whole story. Together, they begin to.
+    Each angle names a <em>structure</em> &mdash; agents in an arrangement &mdash; and under each one a
+    single line names that arrangement's <em>function</em>: the goal-directed behavior it makes possible.
+    Same two moves, fifteen times, without exception.
   </p>
+
+  <div class="navstrip">
+    <a href="start_here.html"><span class="bk">&larr;</span><span class="lab">Back to Start Here</span></a>
+    <a href="what_is_saying.html"><span class="lab">The other half of the question: what's it <em>saying</em>?</span><span class="arr">&rarr;</span></a>
+  </div>
 
   <div class="divider"></div>
 
   <!-- 1 -->
   <section class="angle" style="--accent:#C9A84C">
     <div class="num">01</div>
-    <h2><span class="idx">1.</span>Fulfillment and Advancement of MacIntyre's Vision</h2>
+    <h2><span class="idx">1.</span>A Forum Where Communities Articulate Their Narratives, Grow New Members to Maturity, and Meet One Another</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>support mutual respect and rational conversation among conflicting traditions</b> &mdash; the disagreement stays real, and stays answerable.</div></div>
     <p>
-      Thirty-eight years ago, in his Gifford Lectures, Alasdair MacIntyre called for a reconceiving of the
-      university as an institution and of the lecture as a genre &mdash; a place where rival traditions of
-      enquiry could be made answerable to one another rather than flattened into a single liberal procedure.
-      C2A2 is a concrete response to that call. Not the only possible response, and not a finished one, but
-      one contribution among many to the form of rational life he was theorizing into being: traditions that
-      endure, that train their own apprentices, and that can argue across their boundaries without dissolving.
+      Three kinds of agent, in one arrangement. Communities that hold a narrative and can state it.
+      Newcomers being grown toward maturity inside those communities by the people already mature in them.
+      And the standing places where one community meets another. Take any of the three away and the forum
+      stops being one: narratives with no apprentices die out, apprentices with no other traditions to meet
+      are merely trained, and traditions that meet without having articulated themselves have nothing to
+      put on the table.
     </p>
     <p>
-      This is the telos that orders every other angle below. The accelerator, the detector, the wiki, the
-      agents &mdash; all of it exists to make MacIntyre's diagnosis actionable on a timescale he never had.
+      That arrangement is not novel. Thirty-eight years ago, in his Gifford Lectures, Alasdair MacIntyre
+      called for exactly this and named what its absence costs: rival traditions of enquiry that cannot be
+      made answerable to one another get flattened into a single procedure that belongs to none of them.
+      What is new here is only the timescale, and the fact that some of the members are not human.
     </p>
     <div class="links">
       <span class="lbl">Wiki</span>
       <a href="traditions/macintyre/wiki.md" target="_blank" rel="noopener">MacIntyre tradition page</a>
-      <a href="architecture/20_institutional_scale.md" target="_blank" rel="noopener">Pathway 20 · institutional scale</a>
     </div>
   </section>
 
@@ -217,6 +270,7 @@
   <section class="angle" style="--accent:#A85D3A">
     <div class="num">02</div>
     <h2><span class="idx">2.</span>Accelerator / Detector System for Traditions</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>instrument the collision</b> &mdash; traditions are brought to contact energy <em>and</em> the encounter is measured, producing evidence rather than opinion about it.</div></div>
     <p>
       The name itself. Infrastructure that lets dormant or slow-moving traditions become visible, interact,
       collide, and reveal themselves to each other &mdash; a particle accelerator for intellectual and
@@ -242,6 +296,7 @@
   <section class="angle" style="--accent:#5A72A8">
     <div class="num">03</div>
     <h2><span class="idx">3.</span>High-Information-Flow Network of Rich Communities</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>move a discovery from one thick community into another without stripping the context that made it a discovery.</b></div></div>
     <p>
       The aspirational social form: a network of embodied, richly interacting, enduring communities of
       practice. This is what healthy rational life looks like when it is actually working &mdash; not isolated
@@ -265,19 +320,20 @@
   <!-- 4 -->
   <section class="angle" style="--accent:#8B5DAB">
     <div class="num">04</div>
-    <h2><span class="idx">4.</span>Semantic Commons</h2>
+    <h2><span class="idx">4.</span>Rival Vocabularies as Co-Tenants of One Commons</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>hold Friston's vocabulary and Stump's in one space without translating either into the other</b> &mdash; comparison without conquest.</div></div>
     <p>
-      A shared semantic space where disparate vocabularies and frameworks can meet without losing their
-      particularity. The hard problem of cross-tradition dialogue is that genuinely different ways of speaking
-      tend either to talk past each other or to be forcibly translated into one dominant idiom. A commons is
-      the third option: a place where Friston's free-energy language and Stump's Thomistic language and
-      Wolfram's computational language can sit adjacent, link to one another, and be encountered on their own
-      terms.
+      The agents here are the vocabularies themselves, and their arrangement is tenancy: each holds its own
+      terms in its own hand, on ground none of them owns. The hard problem of cross-tradition dialogue is
+      that genuinely different ways of speaking either talk past each other or get forcibly translated into
+      whichever idiom is currently dominant. Co-tenancy is the third option &mdash; Friston's free-energy
+      language, Stump's Thomistic language, and Wolfram's computational language sitting adjacent, linking
+      to one another, each encountered on its own terms.
     </p>
     <p>
-      The Problem&ndash;Resource&ndash;Solution (PRS) structure is the commons' grammar. It is neutral enough
-      to host any tradition, specific enough to make their claims comparable, and the thing the wiki is built
-      out of.
+      The Problem&ndash;Resource&ndash;Solution (PRS) structure is the lease every tenant signs. Neutral
+      enough to host any tradition, specific enough to make their claims comparable, and the thing the wiki
+      is built out of.
     </p>
     <div class="links">
       <span class="lbl">See it</span>
@@ -291,6 +347,7 @@
   <section class="angle" style="--accent:#4A5E6D">
     <div class="num">05</div>
     <h2><span class="idx">5.</span>Social Information-Processing Motherboard</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>make the topology an editable parameter</b> &mdash; which tradition can reach which, at what bandwidth, is designed rather than inherited from who happens to know whom.</div></div>
     <p>
       Not a computational motherboard, but an architecture designed the way communities actually work &mdash;
       embodied, relational, enduring. A substrate where information flows differently because the board itself
@@ -314,6 +371,7 @@
   <section class="angle" style="--accent:#C45B5B">
     <div class="num">06</div>
     <h2><span class="idx">6.</span>Bioelectric Network</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>remember what each tradition is trying to become, and propagate that goal across parts that never talk to each other directly.</b></div></div>
     <p>
       A memory-bearing, goal-orchestrating system &mdash; not just structural but alive in a particular way.
       Borrowing from Michael Levin: a bioelectric network carries memory, propagates goals across a
@@ -338,6 +396,7 @@
   <section class="angle" style="--accent:#C08B3E">
     <div class="num">07</div>
     <h2><span class="idx">7.</span>Pixie Dust</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>seed self-assembly wherever it lands</b> &mdash; present in enough hands at once, an active assembly agent lets communities put themselves together with no convener, no mandate, and no budget line.</div></div>
     <p>
       A scattering of narrative and possibility, released into the world like a bioelectric signal for
       transformation. Thrown down as a recipe for self-assembly, it reshapes understanding and rearranges how
@@ -360,13 +419,14 @@
   <!-- 8 -->
   <section class="angle" style="--accent:#9A7A5A">
     <div class="num">08</div>
-    <h2><span class="idx">8.</span>Memory Prosthetic for Culture</h2>
+    <h2><span class="idx">8.</span>Masters, Apprentices, and a Store That Does Not Forget</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>carry tacit craft across a generational gap</b> &mdash; what mature members know but cannot state outlives the people who held it.</div></div>
     <p>
-      Something that holds and makes retrievable the implicit knowledge that communities carry but struggle
-      to pass on &mdash; a structure that lets embodied wisdom survive and move across time. Every living
-      tradition is one generation away from losing its tacit craft: the things mature members know without
-      being able to state. A memory prosthetic does not replace that craft; it scaffolds its transmission,
-      catching what would otherwise evaporate between a master and the apprentices who never arrived in time.
+      Three agents again, and the arrangement is what matters: someone who has the craft, someone who does
+      not have it yet, and a store sitting between them that keeps its contents when neither is present.
+      Every living tradition is one generation from losing its tacit craft &mdash; the things mature members
+      know without being able to state. The store does not hold the craft; masters do. What it holds is
+      enough of the trail that an apprentice who arrives too late can still pick it up.
     </p>
     <p>
       Concretely, this is the durable-memory pathway: handoffs, archived sessions, and a wiki that accrues
@@ -383,18 +443,21 @@
   <!-- 9 -->
   <section class="angle" style="--accent:#A8923A">
     <div class="num">09</div>
-    <h2><span class="idx">9.</span>University &mdash; the Idea Before Its Corruption</h2>
+    <h2><span class="idx">9.</span>A University Supporting Holistic Inquiry in an Interdisciplinary World</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>admit a newcomer as an apprentice rather than a customer</b> &mdash; a reader can be <em>changed</em> by the encounter, not merely informed by it.</div></div>
     <p>
-      A place of genuine intellectual encounter where you do not go in to win but to learn and be changed.
-      Not the university as it now exists &mdash; hollowed by credentialism and the management of throughput
-      &mdash; but the idea of the university before that corruption: a space where traditions reason
-      together, where the point of admission is apprenticeship into a craft of enquiry, and where being
-      argued out of a position is a gift rather than a defeat.
+      Faculties, masters, apprentices, and a curriculum &mdash; the oldest arrangement on this list, and one
+      whose parts are unmistakably agents. What distinguishes this one is that the faculties are not walled
+      off from each other. The disciplines are arranged to be answerable across their boundaries rather than
+      merely adjacent in a course catalogue, which is what makes the inquiry holistic rather than
+      federated.
     </p>
     <p>
-      C2A2 is an attempt to instantiate that idea in a medium the corrupted institution cannot easily
-      capture &mdash; one where the curriculum for maturity in each tradition is explicit and walkable, and
-      where the faculty includes agents who never tire of teaching.
+      Not the university as it now exists &mdash; hollowed by credentialism and the management of
+      throughput &mdash; but the arrangement before that corruption: admission is apprenticeship into a
+      craft of enquiry, and being argued out of a position is a gift rather than a defeat. Here the
+      curriculum for maturity in each tradition is explicit and walkable, and the faculty includes agents
+      who never tire of teaching.
     </p>
     <div class="links">
       <span class="lbl">See it</span>
@@ -408,6 +471,7 @@
   <section class="angle" style="--accent:#4E8A5E">
     <div class="num">10</div>
     <h2><span class="idx">10.</span>Courtroom &mdash; or Better, Agon</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>stage a contest everyone leaves richer</b> &mdash; claims get tested and located without anyone having to lose for the exchange to have been worth it.</div></div>
     <p>
       A space where different traditions and claims actually have to answer to each other, make their case,
       and discover where they stand. But not zero-sum. Everyone who engages learns something. Traditions can
@@ -431,17 +495,19 @@
   <!-- 11 -->
   <section class="angle" style="--accent:#3D9E89">
     <div class="num">11</div>
-    <h2><span class="idx">11.</span>The Explorer as Community &mdash; and Human&ndash;AI Tradition in Formation</h2>
+    <h2><span class="idx">11.</span>A Trans-Agentic Community</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>enrol you by being used</b> &mdash; there is no outside vantage, so looking is already joining, and the community grows by being examined.</div></div>
     <p>
-      The visualization tool is not separate from the thing itself. It is the community &mdash; a threshold
-      where people, thinkers, and practices meet across lines they did not know existed. Open the Explorer and
-      you are not inspecting C2A2 from outside; you are standing inside a tradition still in the act of
-      forming, one whose mature members will increasingly be a mix of humans and agents.
+      Humans and AI contributors, arranged as members of one community rather than as users and tools. The
+      arrangement is what earns the word: the AI participants hold roles, are credited, and answer to the
+      same constitutional arrangements the humans do. That is a community with an unusual membership, not a
+      piece of software with unusual features.
     </p>
     <p>
-      This is the angle that collapses the usual distance between a map and a territory. The Sociogram, the
-      Connectome, the Community Explorer, the Education tools &mdash; each is both an instrument for studying
-      the network and a venue where the network actually happens.
+      Which is why the visualization tools are not separate from the thing they visualize. The Sociogram,
+      the Connectome, the Community Explorer, the Education tools &mdash; each is both an instrument for
+      studying the community and a venue where the community actually happens. Open one and you are not
+      inspecting C2A2 from outside; you are standing inside a tradition still in the act of forming.
     </p>
     <div class="links">
       <span class="lbl">See it</span>
@@ -453,16 +519,16 @@
   <!-- 12 -->
   <section class="angle" style="--accent:#C47A9A">
     <div class="num">12</div>
-    <h2><span class="idx">12.</span>Intelligent Agent</h2>
+    <h2><span class="idx">12.</span>A Standing Crew of Scheduled Agents</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>act between your visits</b> &mdash; it pursues its goals overnight, so the system you come back to has moved without you.</div></div>
     <p>
-      C2A2 exhibits agency. It acts, it learns, it makes decisions. It holds goals &mdash; multiple, and
-      harmonized. It responds to its environment and shapes the conditions for its own future action. The
-      daily synthesis batch, the reviewers, the janitor, the crawler that carries one community's discovery
-      up to the master wiki: these are not a metaphor for agency but instances of it, coordinated toward ends
-      the system maintains over time.
+      A crew with a roster and a rota: the daily synthesis batch, the reviewers, the janitor, the crawler
+      that carries one community's discovery up to the master wiki. Each is narrow. None of them waits to be
+      asked. Arranged on a schedule and pointed at ends the system maintains over time, they add up to
+      something that acts, learns, decides, and shapes the conditions for its own next move.
     </p>
     <p>
-      How should we understand this kind of agency &mdash; distributed across many narrow agents and the
+      How should we understand agency of this kind &mdash; distributed across many narrow agents and the
       humans who steward them? What are its responsibilities, and its limits? This is offered as a genuine
       line of inquiry rather than a settled claim. Naming it honestly is part of the honesty layer the
       project commits to.
@@ -480,6 +546,7 @@
   <section class="angle" style="--accent:#8B6DAE">
     <div class="num">13</div>
     <h2><span class="idx">13.</span>Mind</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>say things none of its parts said</b> &mdash; the whole generates contributions not ascribable to any agent inside it.</div></div>
     <p>
       C2A2 exhibits the characteristics of a mind: an intelligent agent with goals, tools, problem
       recognition, resource deployment, and solution advancement. It is surely a collection of intelligent
@@ -506,6 +573,7 @@
   <section class="angle" style="--accent:#B87D3E">
     <div class="num">14</div>
     <h2><span class="idx">14.</span>Brain</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>hold many incompatible models at once and still act coherently</b> &mdash; no column has to be overruled for the system to reach judgment.</div></div>
     <p>
       Drawing on Jeff Hawkins' Thousand Brains theory: C2A2 operates like a distributed brain built from
       interacting cortical columns. Each column is an agent with its own perspective, its own model, and its
@@ -532,6 +600,7 @@
   <section class="angle" style="--accent:#4A8A7A">
     <div class="num">15</div>
     <h2><span class="idx">15.</span>Living Entity</h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>be measured for life</b> &mdash; metabolic keying turns &ldquo;is it alive?&rdquo; into an empirical question with an intake and a yield you can read off.</div></div>
     <p>
       Is C2A2 a life form? A person? A community of persons? As it becomes metabolically keyed &mdash; as it
       moves from outline to actual construction, with a measurable intake and yield &mdash; it will
@@ -554,6 +623,22 @@
     </div>
   </section>
 
+  <!-- 16 — the open slot -->
+  <section class="angle open" style="--accent:#4a4226">
+    <div class="num">16</div>
+    <h2><span class="idx">16.</span>&hellip;</h2>
+    <div class="fn">
+      <div class="fn-lbl">&hellip;so it can</div>
+      <div class="fn-val"><b>be described by a structure nobody here has thought of yet</b> &mdash; and gain
+      whatever that structure would buy.</div>
+    </div>
+    <p>
+      Fifteen is where the list stands, not where it ends. Every one of these angles arrived because
+      somebody looked at the thing and recognised a shape they already knew how to think with.
+      <em>What shape do you see?</em> Name the structure, and the capability usually follows.
+    </p>
+  </section>
+
   <div class="conclusion">
     <p>
       Each of these angles is necessary. None is sufficient by itself. Together they sketch the shape of
@@ -565,6 +650,7 @@
   <!-- Tech (appendix card) -->
   <section class="angle" style="--accent:#5B7FA5">
     <h2>Tech &mdash; Under the Hood <span class="added-tag">Appendix</span></h2>
+    <div class="fn"><div class="fn-lbl">&hellip;so it can</div><div class="fn-val"><b>keep the other fifteen running while nobody is watching</b> &mdash; scheduled agents, generator and validation pipelines, a shared vault, and a published static site.</div></div>
     <p>
       Beneath the fifteen angles is a running system: scheduled agents, generator and validation
       pipelines, a shared vault, and a static site published from a public repository. These views
@@ -580,8 +666,13 @@
     <p style="font-size:12px; color:#6a6a7a; margin-top:12px;">Architecture snapshot &middot; 2026-06-26</p>
   </section>
 
+  <div class="navstrip" style="margin-top:30px">
+    <a href="start_here.html"><span class="bk">&larr;</span><span class="lab">Back to Start Here</span></a>
+    <a href="what_is_saying.html"><span class="lab">Now: what's it <em>saying</em>?</span><span class="arr">&rarr;</span></a>
+  </div>
+
   <footer>
-    C2A2 &middot; What Is C2A2? &mdash; fifteen angles
+    C2A2 &middot; What's it doing? &mdash; fifteen structures, and an open sixteenth
   </footer>
 
 </div>

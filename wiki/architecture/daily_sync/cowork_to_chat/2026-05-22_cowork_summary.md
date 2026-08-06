@@ -13,7 +13,6 @@ Two substantial interactive build threads, plus the usual automated passes.
 
 **2. The two-summa experiment — scoped and briefed for a fresh chat.** With the connectome shipped, the session scoped the **two-summa head-to-head**; Tom chose **Option #3** and asked to run it in a cold-start chat. A self-contained handoff, **`TWO_SUMMA_EXPERIMENT_BRIEF.md`**, was written to the project root: Thomist summa vs. **Conscious-Realist-Monist summa**, the **Aquinas↔Levin teleology seam** (with the specific Summa source days), the full PRS + tradition schema, success criteria, and guardrails (Obsidian-clobber, no-blind-push, publish decisions). The one thing to settle first: exactly what counts as "Summa 2" and what form the head-to-head output takes.
 
-**3. KSGA sociogram — regenerated against the current vault** (separate `KSGA-sociogram` repo, not the C2A2 wiki). Now **500 nodes / 911 links** (475 wikilink + 436 affiliation), 93 gold-ring central+institute faculty; `index.html` grew 1.3 → 1.9 MB. The big content win: **307 "Principal research areas" faculty summaries are now embedded in the data** and render in the node side-panel (spot-confirmed). `node --check` SYNTAX OK; only `index.html` changed (the explorer iframes it). Caveat: a sandbox `git status` left a **stale `.git/index.lock`** in the KSGA repo — the commit/push close-out needs an `rm -f` first and is a **Tom-side step**.
 
 **4. Automated passes.** The **tradition-agent daily run** produced a new Carroll proposal (below). The **Summa Layer-4 commentary reviewer** ran twice (20:20 and 22:29 UTC). The **overnight lit-search pipeline** refreshed `for_lit_search.md` / `lit_search_returns.md` (06:04) and the **watch-list** (06:44).
 
@@ -31,7 +30,6 @@ No new `OPEN-NNN` registry entries are dated today (registry latest **OPEN-061**
 - `c2a2-prs-3d/prs_3d.PRE-2panel-bundle.20260522_202352.bak.html` — pre-bundle backup
 - `.gitignore` (repo root) — **new**; plus publish/untrack changes (eulogy, Archbishop report, Habash, Hoffman×Levin transcript)
 - `TWO_SUMMA_EXPERIMENT_BRIEF.md` (project root) — **new**, cold-start handoff for the #3 experiment
-- `KSGA-sociogram/index.html` — **regenerated** (500 nodes / 911 links; 307 faculty summaries embedded) *(separate repo)*
 - `inbox/proposals/pending/2026-05-22_carroll_mindscape-354-list-free-will-levels.md` — **new** proposal (PROP-2026-05-22-001)
 - `vault/_index/QC log.md` — Summa reviewer rows (Days 107/108/109 length_notes) + escalation
 - (Automated, early-AM) `architecture/for_lit_search.md`, `architecture/lit_search_returns.md`, `deferred/watch_list.md`, `vault/refs/summa_index.json`
@@ -48,7 +46,6 @@ No new `OPEN-NNN` registry entries are dated today (registry latest **OPEN-061**
 
 ## What's Next
 
-- **Tom-side: clear the KSGA lock and push the sociogram** — `cd KSGA-sociogram && rm -f .git/index.lock && git add index.html && git commit && git push`. Until then the 307 faculty summaries aren't live at the GitHub Pages URLs.
 - **Run the two-summa experiment (#3) in a fresh chat:** open a new chat, attach `TWO_SUMMA_EXPERIMENT_BRIEF.md`, confirm #3, and settle "what is Summa 2 / output form" first.
 - **Decide on the parked history scrub** (Hoffman×Levin transcript + 4 narration zips) — execute or leave parked.
 - **Re-establish claude.ai login** in the connected Chrome (Browser 1) so both the morning scrape and evening delivery resume.
@@ -67,5 +64,4 @@ No new `OPEN-NNN` registry entries are dated today (registry latest **OPEN-061**
 ---
 
 *Run by: c2a2-evening-cowork-to-chat scheduled task (autonomous; Tom not present)*
-*Sources: today's interactive Cowork threads ("Review PRS triplet visualization status" → 2-panel bundle + two-summa brief; "Assess wiki visualization build requirements" → KSGA sociogram) + the Summa commentary reviewer run (22:29 UTC) + architecture registries (counts current on file) + vault file mtimes for 2026-05-22 + the 2026-05-22 morning chat-scrape status note.*
 *Caveat: today's interactive work is not yet reflected in `decisions.md` / `open_questions.md` / `assumptions.md` — those update in the next overnight batch (which itself appears overdue).*

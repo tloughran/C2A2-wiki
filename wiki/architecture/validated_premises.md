@@ -3281,3 +3281,681 @@ PREMISE-143:
         and with PREMISE-130's threshold explicitly NOT lowered
     Current status: INCORPORATED
     Disposition record: DISPOSITION-603 (2026-08-05)
+
+PREMISE-144:
+  Date validated: 2026-08-06
+  Source item: PRESUMPTION-678
+  Statement: AN AGENT CHARTER IS NOT EXEMPT FROM THE PREMISE REGISTER; IT IS SUBORDINATE TO IT,
+    AND A SELF-EXEMPTING GOVERNING LAYER PRODUCES A FAILURE CLASS DETECTABLE ONLY FROM OUTSIDE.
+    Five clauses. (1) SUBORDINATION, NOT EXEMPTION: in hierarchical norm systems a lower-level
+    rule that contradicts a higher-level rule is invalid to the extent of the contradiction. Hart's
+    primary/secondary distinction grants the real and only concession available — a charter is a
+    DIFFERENT KIND of rule from a premise — but it does not yield exemption from consistency, and
+    Hart's own rule of recognition is validated by the practice of officials, i.e. FROM OUTSIDE,
+    which is exactly how the 14b contradiction was found. (2) THE FAILURE HAS A SIGNATURE AND 14b'S
+    ~118 DAYS IS IT: internal confirmation, external falsification, latency a function of luck
+    rather than of design. The professional standards nearest the case were written to bound
+    precisely this. The IIA's Global Internal Audit Standards require a full-scope EXTERNAL quality
+    assessment by a qualified assessor from outside the organisation at least every five years, and
+    hold that pure self-assessment lacks sufficient independence — a self-assessment counts only
+    when a named independent validator signs it. INTOSAI GUID 1900 subjects Supreme Audit
+    Institutions, the bodies with the strongest independence claim in any state, to legislative
+    oversight and structured peer review. No located source treats apex independence as grounds for
+    exemption: independence is a reason to design a DIFFERENT review channel, never to remove one.
+    (3) THE EXEMPTION IS NOT TECHNICALLY FORCED: normative-conflict detection over a rule set is
+    mechanisable. The conflict patterns are characterised (obligation vs prohibition, prohibition vs
+    permission, obligations on conflicting actions over the same action) and formalised normative
+    systems can be checked by automated provers. Nothing in the formalism admits a norm that is
+    ENROLLED in the system but EXCLUDED from the check; such a norm is not exempt, it is
+    undetectable. The exemption is therefore a design omission, not a necessity. (4) IF AN EXEMPTION
+    IS KEPT IT MUST BE A FIRST-CLASS, EXPIRING OBJECT — 15b's steelman folded in as a narrowing
+    rather than outweighed, because the regress it names is real: if every charter enters the
+    register, the register's own admission rules become a charter, and inspector-general, ombudsman
+    and grand-jury functions are routinely granted procedural exemptions the bodies they investigate
+    do not have. The literature's answer is that the regress terminates in an INSTITUTIONAL DEVICE
+    (a scrutiny board, a legislature, a peer network, a dead man's switch), never in a declaration
+    that the top layer is self-validating. Therefore: an exemption must be explicit, recorded IN the
+    register, attached to a named validator, bounded by a stated period, and carry an expiry — or it
+    is not an exemption, it is a blind spot. (5) REPRESENTATION CAVEAT, LOAD-BEARING: the conflict
+    formalisms assume all norms share a common representation. C2A2 charters are prose and premises
+    are register entries, so a charter/premise conflict may be genuinely UNDETECTABLE rather than
+    merely unchecked. No cited source solves that. Until a common predicate form exists, the check
+    is a read by an agent that did not author the charter, not a prover, and must be scheduled as
+    such.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: the system was unaware it
+    held its own governing documents outside the register that governs everything else)
+  Supporting evidence: Institute of Internal Auditors, Global Internal Audit Standards — external
+    quality assessment requirement and the independently-validated-self-assessment pattern [cited by
+    BOTH directions]. INTOSAI GUID 1900 Peer Review Guidelines and the World Bank governance note
+    "External Oversight of Supreme Audit Institutions: Who Audits the Auditor?" [15a]. "Detection
+    and Resolution of Normative Conflicts in Multi-agent Systems," AAMAS 2018 — proceedings PDF
+    confirmed at ifaamas.org by 15b [author list UNVERIFIED in BOTH directions; confirm before
+    onward citation]; with deontic-logic compliance checking (arXiv:1411.4823; J. Logic and
+    Computation 35(8), exaf054) [15b]. Sarbanes-Oxley 2002 and the creation of the PCAOB, with
+    IOSCO's auditor-independence principles — the audit profession's era of self-regulation ended
+    because the self-exempting arrangement failed, and commentary records that PCAOB's own "interim"
+    independence standards were inherited from that era and never modernised, i.e. the exempt layer
+    survived the reform meant to close it [15b]. Congressional Accountability Act of 1995 (PL 104-1)
+    and its residual exemptions [cited by BOTH directions]. Hart, H.L.A. (1961), The Concept of Law
+    [UNVERIFIED — secondary summaries only]. Meta-regulation: Grabosky (ANU Press); Baldwin, Cave &
+    Lodge, Understanding Regulation [15a].
+  Challenges noted: 15b returned CHALLENGED (Strong) in the SAME direction as this premise, from
+    four independent framings. 15a returned NO-SUPPORT-FOUND (None) and raised NO novelty flag,
+    reporting that the governance literature covers the claim thoroughly and denies it. The nearest
+    thing to a genuine counter is Kelsen's Grundnorm, which 15b searched and reported honestly: a
+    hierarchy's top norm is PRESUPPOSED rather than validated, which is closer to a steelman than to
+    a challenge. It is recorded here as an unresolved theoretical residue and is answered, not
+    dismissed, by clause (4)'s requirement that the presupposed layer be small, named, bounded and
+    readable end-to-end rather than merely presupposed.
+  SCOPE ESCALATION EXPLICITLY NOT INCORPORATED: 15a flagged that its evidence base concerns single
+    named charters and that no located source addresses whether the exemption generalises across a
+    CLASS of agent charters — which is what 14b asserted. The class-level claim is therefore carried
+    by the structural argument and by the local record (one measured instance, ~118 days), NOT by
+    the literature. The enumeration below is what would settle it, and it was not run this session.
+  Cross-direction source overlap (PREMISE-120 disclosure): the IIA external-quality-assessment
+    requirement, the Congressional Accountability Act and the AAMAS 2018 paper were cited by BOTH
+    directions. Per PREMISE-111 that agreement carries residual correlation and is not two
+    independent confirmations. The disjoint material is 15a's normative-hierarchy and Hart line, and
+    15b's SOX/PCAOB and meta-monitoring line.
+  Consistency check performed before INCORPORATE: PREMISE-110 (absence-of-complaint is an unsafe
+    polarity; COMMON-MODE SCOPE GUARD — a checker sharing runtime, scheduler, credentials and
+    filesystem with its subject is a single channel wearing two labels — this is the independence
+    condition clause (4) requires and 144 is its normative counterpart for rules rather than
+    monitors); PREMISE-124 (self-measurement of the pipeline's own completeness must cite an
+    external baseline or be reported UNCALIBRATED — same structure, different object); PREMISE-086
+    (absence/staleness is the signal; alarm on AGE); PREMISE-100 (a check that cannot execute
+    reports as passing); PREMISE-116 (a finding does not change the behaviour it describes);
+    PREMISE-139; PREMISE-102; PREMISE-138. No contradiction found with any ACTIVE premise. NOTE,
+    load-bearing: the six ACTIVE premises that REVISE-282 records as contradicted by 14b's line 88
+    — PREMISE-003, 070, 095, 106, 119, 121 — are all CONFIRMED by this premise and none is amended.
+    PREMISE-144 is the general rule of which that contradiction is the first measured instance.
+  Confidence: Moderate. The normative claims in clauses (1)-(3) are individually well sourced and
+    would carry High on their own; overall confidence is held at Moderate for two reasons stated
+    rather than smoothed — the class-level generalisation is unsourced (see above), and the audit
+    standards assume a board or audit committee to report to, so the transfer specifies a
+    requirement WITHOUT specifying who in C2A2 discharges it. That gap is the subject of REVISE-283.
+  Applicable to: every file in wiki/agents/; the charter-loading step of every scheduled agent;
+    14b_presumption_detector_agent.md line 88 specifically (REVISE-282); 15c_net_evaluator_agent.md
+    — this agent's own charter, which is equally in scope, has equally never been checked against
+    the register, and is not exempted by having written this entry; any exemption claimed by any
+    agent in future.
+  OPEN MEASUREMENT NAMED AT VALIDATION (in-house, requires no authorisation, and OWED): extract
+    every agent charter and every ACTIVE premise and report (i) how many charters have no register
+    entry at all; (ii) how many charter/premise pairs conflict under the four conflict patterns;
+    (iii) for each conflict already known, elapsed days between charter authorship and detection,
+    and whether detection was internal or external. If (i) is large and every entry in (iii) is
+    "external," the class claim is confirmed in-system and clause (5)'s representation problem
+    becomes the next question. NOT RUN this session.
+  Re-check due: 2026-09-06 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-678
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Generalised the lit pipeline's line-88 finding from one charter to the class of charters
+      15a: Searched for supporting literature; NO-SUPPORT-FOUND (None); no novelty flag
+      15b: Searched for challenging literature; CHALLENGED (Strong) + SYSTEMIC-RISK-FLAG (Critical)
+      15c: Net evaluation and disposition; INCORPORATE THE NEGATION with 15b's regress steelman
+        folded in as clause (4) (bound and record the exemption rather than deny the regress), the
+        representation problem made load-bearing as clause (5), and the class-level generalisation
+        explicitly NOT carried by the literature
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-609 (2026-08-06)
+
+PREMISE-145:
+  Date validated: 2026-08-06
+  Source item: PRESUMPTION-685
+  Statement: DEFERENCE TO AN INCUMBENT PUBLISHED FIGURE IS NOT THE CONSERVATIVE MOVE, AND
+    WITHHOLDING A DISCREPANT OWN-MEASUREMENT IS A REPORTING BIAS, NOT A NULL ACT. Five clauses.
+    (1) THE MEASURED DIRECTION IS THE OPPOSITE OF THE PRESUMPTION. Henrion & Fischhoff (1986) found
+    reported uncertainties on the fundamental constants consistently biased toward UNDERESTIMATING
+    actual error, and documented a bandwagon effect: the speed of light overestimated by roughly
+    70 km/s across 1876-1902, then underestimated by roughly 15 km/s across 1905-1950 — long runs of
+    mutually consistent, confidently reported, wrong values, each individual run behaving exactly as
+    a deference rule prescribes. Jeng (2006, 2007) reproduces the effect on a larger corpus:
+    particle properties trend and cluster as a function of PUBLICATION YEAR, and Particle Data Group
+    measurements distribute around PREVIOUS AVERAGES with chi-squared about half that associated
+    with distribution around the currently accepted value. Deference produces slow, monotone,
+    self-concealing drift with artificially tight error bars — the opposite of conservatism.
+    (2) THE SPECIFIC ASYMMETRY HAS A NAME AND IS THE COMMONEST BIAS IN THE FIELD THAT MEASURED IT.
+    Klein & Roodman (2005) list "consistency with previous measurements" among the biasing
+    preconceptions and identify STOPPING BIAS — continuing to hunt for mistakes or to improve the
+    analysis until the result agrees with expectation — as probably the most common bias in particle
+    physics. A run that scrutinises its own instrument only AFTER discovering disagreement, finds a
+    candidate fault, and stops scrutinising, has performed exactly that. Blind analysis exists to
+    forbid the comparison such a rule requires: it prohibits the SEARCH for defects conditioned on
+    the answer, while permitting unblinding-and-fixing when a genuine defect is found.
+    (3) SUPPRESSION IS NOT A NULL EVENT. Withholding a measured result for a reason correlated with
+    its VALUE is selective outcome non-reporting, treated in the evidence-synthesis literature as a
+    risk-of-bias domain in its own right. The suppressed 57 is a datum removed from the record on
+    value-correlated grounds, not an absence of data.
+    (4) THE ADMISSIBLE MOVE — the narrowing that 15a's genuine partial support licenses, stated
+    exactly and no wider. A DOCUMENTED, INDEPENDENTLY-ESTABLISHED defect in the producing instrument
+    IS a recognised warrant for setting that instrument's output aside: the GUM treats blunders as a
+    distinct category from random variation and holds that large ones are identifiable by proper
+    review, and the retraction record for analysis-code defects shows the discipline's norm is
+    withdrawal rather than caveated publication (the most dangerous class being semantic bugs that
+    return a plausible wrong number rather than an error). But that warrant is (a) CONDITIONED ON
+    DOCUMENTED CAUSE, (b) SYMMETRIC — it says nothing whatever about which figure should stand in
+    the interim, and (c) NON-TRANSFERABLE to the incumbent, whose confidence must NOT rise because a
+    challenge was withheld. Converting "my instrument is suspect" into "therefore the older figure
+    stands" imports an asymmetry no located source licenses and makes durability a function of
+    elapsed unchallenged time. The worked alternative is the PDG's: retain both central values and
+    inflate the stated uncertainty by a scale factor so the reader is warned by the size of the
+    factor and can redo the average with a different choice of data.
+    (5) THE MINIMUM RECORD, and the cheapest clause to implement: if a figure is withheld, log its
+    VALUE, the stated reason, and the TIMESTAMP AT WHICH THE REASON WAS IDENTIFIED RELATIVE TO THE
+    DISAGREEMENT. Timestamp order is what makes stopping bias auditable. Without it the trail cannot
+    distinguish "no one re-measured" from "re-measurements disagreed and were withheld," which is
+    the single most important distinction for later reconstruction, and a run that finds 57 today
+    and defers, then finds 55 next week and defers again, has manufactured a false record of
+    stability.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Henrion, M. & Fischhoff, B. (1986), "Assessing uncertainty in physical
+    constants," American Journal of Physics 54(9):791-798 [journal, volume, pages and year confirmed
+    by 15b; cited by BOTH directions]. Klein, J.R. & Roodman, A. (2005), "Blind Analysis in Nuclear
+    and Particle Physics," Annual Review of Nuclear and Particle Science 55:141- , DOI
+    10.1146/annurev.nucl.55.090704.151521 [UNVERIFIED by 15a, DOI confirmed by 15b]. Jeng, M.
+    (2007), Nucl. Instr. Meth. A 571:704-708, and (2006) Am. J. Phys. 74(7):578 [the 2006 item's
+    author is UNVERIFIED in the AGAINST direction]. Particle Data Group, Review of Particle Physics,
+    treatment of discrepant data and the scale factor S = sqrt(chi2/ndf) [15b]. JCGM 100:2008 (GUM),
+    treatment of blunders [15a]. Selective-outcome-reporting literature: PMC4240443, PMC4938957,
+    AHRQ/NCBI NBK100617 [15b; the 13%-of-8434-studies figure is provisional — the source article was
+    not opened]. Chang et al. (2006) five retractions traced to a homemade data-analysis program,
+    reported in Miller, G. (2006), Science 314 [15a; retraction notices not fetched].
+  Challenges noted: this premise IS the challenge direction. 15b returned CHALLENGED (Strong); 15a
+    returned PARTIALLY-SUPPORTED but at strength WEAK, and reported that the measurement literature
+    "was written largely to refute" the presumption. The support 15a did find is not discarded — it
+    is clause (4), which is the only part of the original presumption that survives.
+  THE QUESTION NEITHER DIRECTION COULD SETTLE, recorded because it is decisive for the INSTANCE
+    though not for the premise: whether the prior day's 24 was produced by a code path sharing the
+    parser defect. If it was, the defect invalidates BOTH figures and neither should stand — the
+    deference is then not conservative but arbitrary. If it demonstrably was not, the deference is
+    defensible under clause (4) and this premise's criticism of the instance weakens substantially.
+    Nothing in the located literature adjudicates it and neither search file could.
+  Scope limit, load-bearing: the metrology evidence concerns quantities with a TRUE VALUE and
+    repeated INDEPENDENT measurement. A parser count over a changing corpus may have no stable
+    target, which weakens the bandwagon analogy directly — though it also removes the main
+    justification for treating an older figure as better established, so the scope limit cuts the
+    presumption as well as the premise. C2A2 also has no analogue of the PDG's community of
+    independent measurers; with a single instrument, "retain both and inflate uncertainty" may
+    publish noise twice, which is why clause (5) (record the suppression) is stated as the minimum
+    rather than clause (4)'s scale-factor pattern being stated as the requirement.
+  Consistency check performed before INCORPORATE: PREMISE-113 (a detector's findings are evidence
+    about the DETECTOR until its precision is measured) — CONFIRMING and load-bearing: 113 entails
+    that the 57 is evidence about the parser, and equally that the 24 is, which is precisely the
+    symmetric conclusion clause (4)(b) reaches; 113 does not license the deference. PREMISE-114
+    (absent external calibration no arbitration rule can name a winner; THE EXIT — where the
+    quantity is deterministic over a frozen snapshot the disagreement is DEFINITIONAL, so write the
+    counting definition, designate it the reference and re-derive both readings) — this supplies the
+    cheap terminating procedure for the instance and is compatible in full. PREMISE-101 (a count is
+    a property of a (scope, method, time) reading, not of the artifact). PREMISE-124 (no
+    self-measurement of own accuracy without an external baseline or an UNCALIBRATED tag).
+    PREMISE-103; PREMISE-143 clause (2) (a correction is not a terminal state). No contradiction
+    found with any ACTIVE premise.
+  Confidence: Moderate. Clauses (1)-(3) are individually High in their home domain; the transfer to
+    a single-instrument count over a changing corpus is by analogy on RATE though clean on
+    MECHANISM, and clause (4)'s applicability to the instance turns on an unresolved fact.
+  Applicable to: the withheld 57 and the standing 24; every figure a run quotes from a prior day's
+    record; any run citing an instrument fault as grounds for deferring to a prior figure; run
+    footers, health reports and daily counts generally; interacts with PREMISE-143's retraction and
+    correction records.
+  OPEN MEASUREMENT NAMED AT VALIDATION (in-house, requires no authorisation, and terminating):
+    (i) re-run the FIXED parser over the historical inputs that produced 24 and report which figure
+    it returns — if 57, the deference rule cost the record latency on a correct value; (ii) symmetry
+    audit — over all historical revisions, how many moved AWAY from the incumbent versus TOWARD it,
+    and were upward and downward disagreements suppressed at equal rates? Asymmetric suppression is
+    the bandwagon signature; (iii) for every instance where a run withheld its own figure citing an
+    instrument fault, check whether the fault was documented BEFORE or AFTER the disagreement was
+    observed. NOT RUN this session.
+  Re-check due: 2026-09-06 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-685
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read a stated deference rule against the same run's opposite use of the same register
+      15a: Searched for supporting literature; PARTIALLY-SUPPORTED (Weak — documented-cause zone only)
+      15b: Searched for challenging literature; CHALLENGED (Strong)
+      15c: Net evaluation and disposition; INCORPORATE THE NEGATION with 15a's documented-cause
+        warrant preserved intact as clause (4) and explicitly made SYMMETRIC, and with the
+        unresolved shared-code-path question recorded rather than assumed either way
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-610 (2026-08-06)
+
+PREMISE-146:
+  Date validated: 2026-08-06
+  Source item: PRESUMPTION-689
+  Statement: A TASK SPECIFICATION'S SATISFIABILITY IS A PROPERTY TO BE ESTABLISHED, NOT A DEFAULT;
+    AND UNIVERSAL VIOLATION OF A RULE IS A DIAGNOSTIC READING ON THE RULE, NOT AN AGGREGATE READING
+    ON THE ACTORS. Six clauses. (1) THE DEFAULT IS DENIED BY THE FIELD THAT WOULD HAVE TO HOLD IT.
+    Goal-driven requirements engineering is organised around the premise that inconsistencies arise
+    as goals are elicited and that resolving them is a NECESSARY CONDITION for successful
+    development, so conflict must be discovered by formal and heuristic technique rather than
+    assumed absent (van Lamsweerde, Darimont & Letier 1998). Its notion of DIVERGENCE — requirements
+    jointly unsatisfiable only under some boundary condition — is exactly this item's shape: a
+    preamble and a ceiling that conflict only once the preamble's actual size is measured. Boundary
+    conditions of that kind are computed AUTOMATICALLY by satisfiability checking (ASE 2016), which
+    is the mechanised form of what the eleventh run did by hand. The existence of the subfield is
+    itself the evidence: if specifications could be presumed satisfiable, it would not exist.
+    (2) THE CLOSEST QUANTIFIED ANALOGUE IS THE SAME FAILURE WITH THE SAME SHAPE. Fully complying
+    with USPSTF preventive guidance plus chronic, acute and documentation work for a 2,500-patient
+    panel requires 26.7 physician-hours per day (Porter, Boyd, Skandari & Laiteerapong, J Gen Intern
+    Med, DOI 10.1007/s11606-022-07707-x, PMC9848034). The mandatory component alone exceeds the
+    ceiling, so every practitioner is in permanent breach, and for years the shortfall was
+    attributed to individual practitioners rather than to the specification. Two further findings
+    transfer exactly: the shortfall was MEASURABLE IN ADVANCE by a single arithmetic pass over the
+    mandatory list — nobody needed ten days of breach reports — and the repair was ARCHITECTURAL
+    (team-based delegation cut the physician requirement to 9.3 h/day), not effort-based.
+    (3) TEN ATTRIBUTIONS TO THE ACTOR AND ONE TO THE RULE IS THE DOCUMENTED PATHOLOGY, NOT
+    DILIGENCE. Normalisation of deviance: in the absence of perceived loss, departure from a stated
+    rule becomes culturally defined as normal, and frequent engagement in the deviant practice
+    resets what counts as tolerable, from which further deviation proceeds. Hale & Borys (Safety
+    Science 55, 2013) contrast the top-down rational paradigm — rules as static comprehensive
+    limits, violation as negative behaviour to be suppressed — with the constructivist reading in
+    which violation is evidence the rule does not fit the work, and place MONITORING AND ADAPTING
+    THE RULES at the centre of their framework. The cross-industry synthesis adds that deviations
+    are "virtually always a response to production pressures" and that the consequence is a system
+    running permanently in a degraded mode.
+    (4) THE SIGNAL DEGRADES FIRST, BEFORE ANYTHING ELSE BREAKS. Once every run breaches, "breached"
+    stops discriminating a 2% overrun from a 200% one and the disclosure becomes ritual; a genuinely
+    anomalous overrun is then invisible among the routine ones, which removes the system's ability
+    to detect the failure the disclosure was built to detect. And the harm is not loud: the safety
+    literature is emphatic that operators facing impossible rules do not fail loudly, they improvise
+    quietly — so runs may already be truncating, skipping or reinterpreting mandatory elements in
+    ways no disclosure records. That is the risk that compounds, because it makes the vault's record
+    of what runs DID unreliable in an undocumented direction.
+    (5) THE FIX IS AN ADMISSION GATE AND IT IS CHEAP. In systems where deadline feasibility matters,
+    feasibility is tested AT ADMISSION and infeasible task sets are REJECTED rather than dispatched;
+    the standard architecture is a cheap utilisation-based sufficient test that rejects obviously
+    infeasible requests fast, refined by an exact test where it matters. Mandatory-floor-versus-
+    ceiling IS a utilisation test: sum the fixed cost, compare to the budget, refuse to admit.
+    (6) NARROWING, FROM THE STEELMAN, SUSTAINED IN PART. A ceiling that is routinely exceeded is not
+    necessarily defective — it may be deliberately SOFT, since a hard always-satisfiable ceiling
+    would be set so loosely as to exert no pressure, and the soft-real-time literature formalises
+    exactly this as a tolerable deadline-miss ratio. But the defence carries obligations: the ceiling
+    must be LABELLED soft with a stated tolerable breach ratio so that "breached" is not read as a
+    fault report; the mandatory FLOOR must be published so every run knows its discretionary
+    headroom before it starts; and breach must be reported RELATIVE TO THE FLOOR, not relative to
+    zero. Where floor >= ceiling, no labelling saves it. And none of these is the binding failure
+    here: the binding failure is that no channel existed by which a measurement of infeasibility
+    could reach the specification. The register recorded ten breaches; nothing connected any of them
+    to the ceiling.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: ten consecutive runs
+    attributed a structural defect to themselves without the option of attributing it elsewhere
+    being representable)
+  Supporting evidence: Porter, J., Boyd, C., Skandari, M.R. & Laiteerapong, N., "Revisiting the Time
+    Needed to Provide Adult Primary Care," J Gen Intern Med, DOI 10.1007/s11606-022-07707-x,
+    PMC9848034 [authors, journal and DOI confirmed by 15b; year given variously 2022 online-first /
+    2023 in issue]. van Lamsweerde, A., Darimont, R. & Letier, E. (1998), "Managing conflicts in
+    goal-driven requirements engineering," IEEE TSE 24(11) [journal and year confirmed via secondary
+    records; volume/issue from established knowledge]. Degiovanni, R., Alrajeh, D. et al. (2016),
+    "Goal-Conflict Detection based on Temporal Satisfiability Checking," ASE 2016 [full author list
+    not verified]. Vaughan, D. (1996), The Challenger Launch Decision [book citation UNVERIFIED in
+    the AGAINST direction; concept and origin confirmed]. Hale, A. & Borys, D. (2013), "Working to
+    rule or working safely?" Parts 1 and 2, Safety Science 55 [15a]. "A qualitative systematic review
+    on the application of the normalization of deviance phenomenon within high-risk industries,"
+    ScienceDirect S0022437522001827 [journal title inferred, not confirmed; cited by BOTH
+    directions]. Real-time admission control and schedulability: "Utilization-Based Admission
+    Control for Scalable Real-Time Communication," Real-Time Systems; QPA schedulability analysis
+    (York) [cited by BOTH directions]. Work-as-imagined vs work-as-done / Safety-II, incl.
+    PMC5862557 [primary Hollnagel texts NOT fetched in either direction — treat the framing as
+    UNVERIFIED as to specific citation].
+  Challenges noted: this premise IS the challenge direction — 15b CHALLENGED (Strong), 15a
+    NO-SUPPORT-FOUND (None) with no novelty flag. The genuine boundary conditions are folded in
+    rather than outweighed: clause (6) carries the soft-ceiling steelman and the ordering objection
+    (one measurement of the preamble is a single measurement, and the earlier ten may have been
+    correct that THEIR specific overruns were partly avoidable verbosity on top of a tight but not
+    impossible base). 15a's cost defence is also recorded and scoped: for sufficiently expressive
+    specification languages satisfiability checking is undecidable or intractable, so a working
+    presumption of satisfiability is sometimes forced by cost — but that defence does not reach this
+    case, where the conflict is ARITHMETIC (a fixed preamble against a fixed ceiling) and decidable
+    by one measurement, which is why one run could settle it.
+  Cross-direction source overlap (PREMISE-120 disclosure): Vaughan's normalisation of deviance, the
+    high-risk-industries systematic review, work-as-imagined/work-as-done, and the real-time
+    admission-control material were cited by BOTH directions — heavy overlap, and per PREMISE-111
+    not independent corroboration. The disjoint material is 15b's primary-care time-budget analogue
+    (the strongest single source on this item, AGAINST direction only) and 15a's requirements-
+    engineering line (FOR direction only).
+  Domain-transfer caveat: the safety literature concerns HUMAN operators with tacit local knowledge,
+    and transfer to agent runs executing a written specification is by analogy; the normalisation-
+    of-deviance material describes escalation toward catastrophic outcomes, which is not obviously
+    this risk profile. Clause (3) is therefore carried by the structural argument and the ten-to-one
+    local ratio, not by the catastrophe mechanism.
+  Consistency check performed before INCORPORATE: PREMISE-115 (before an agent is called broken,
+    check whether its specification ever instructed the behaviour; specification and design issues
+    are the largest single MAS failure category at 41.8%, and 75.17% of failures emit no hard error
+    signal) — DIRECTLY adjacent and compatible: 115 covers the MISSING instruction, 146 covers the
+    PRESENT BUT INFEASIBLE instruction, and together they cover the specification-defect class; 115
+    is confirmed, not amended. PREMISE-102 (fail-loud is an act of reporting, not of remediation;
+    repeated identical non-processing converts a signal into a standing policy of non-coverage) —
+    describes the ten disclosures exactly and is confirmed. PREMISE-138 clause (2) (a flag raised by
+    a layer that cannot act must name the actor who can and leave the channel) — supplies what
+    clause (6) says was missing. PREMISE-130 (recurrence reclassifies at the third distinct
+    signature — NOT lowered by this premise; the ten disclosures are ten instances of ONE
+    signature). PREMISE-116; PREMISE-124; PREMISE-053. No contradiction found with any ACTIVE
+    premise.
+  Confidence: Moderate. The mechanism transfers cleanly and the primary-care analogue is unusually
+    close, but the strongest supporting bodies are human-operator safety science and practitioner
+    real-time practice, and the local record is one measurement against ten.
+  Applicable to: the mandatory preamble and the per-task budget ceiling; every budget-breach
+    disclosure on record and every future one; the disclosure format itself, which currently has no
+    ATTRIBUTION FIELD in which "specification" is a representable answer; admission of any scheduled
+    task with a fixed mandatory cost; 14a/14b/15a/15b/15c/15d run footers.
+  SELF-APPLICATION, recorded rather than omitted: runs in this very pipeline disclose per-task
+    budget breaches — 15d's 2026-08-02 run exceeded the 4,000-token budget and disclosed it under
+    FAIL-LOUD. Under this premise that disclosure is not by itself evidence about the run, and the
+    floor/ceiling ratio below must be computed before any such disclosure is read as one.
+  OPEN MEASUREMENT NAMED AT VALIDATION (in-house, requires no authorisation, and decisive):
+    (i) compute the token/word cost of the mandatory preamble AS ACTUALLY DELIVERED to runs and
+    report floor/ceiling as a ratio; (ii) classify every budget-breach disclosure on record as
+    attributed to the run's own verbosity, to the specification, or unattributed; (iii) check
+    whether ANY change to the ceiling or to the preamble followed ANY disclosure. Ratio >= 1.0 with
+    class (i) dominating quantifies the misattribution; no change across all disclosures confirms
+    there is no feedback channel and the disclosures are ritual in the normalisation sense. NOT RUN
+    this session.
+  Re-check due: 2026-09-06 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-689
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from one run inverting a claim ten prior runs made in the opposite direction
+      15a: Searched for supporting literature; NO-SUPPORT-FOUND (None); no novelty flag
+      15b: Searched for challenging literature; CHALLENGED (Strong); member of the SYSTEMIC-RISK-FLAG
+      15c: Net evaluation and disposition; INCORPORATE THE NEGATION with the soft-ceiling steelman
+        folded in as clause (6) with its three obligations attached, and the cost/undecidability
+        defence scoped out on the ground that this conflict is arithmetic
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-611 (2026-08-06)
+
+PREMISE-147:
+  Date validated: 2026-08-06
+  Source item: PRESUMPTION-691
+  Statement: A QUEUE'S SIZE MEASURES DEMAND AND ACTIVITY, NOT PERFORMANCE; AN UNPAIRED PRODUCER-SIDE
+    COUNT IS AN INVERTED HEALTH SIGNAL; AND THE STATISTIC THAT CARRIES THE INFORMATION IS AGE, NOT
+    COUNT. This is the MEASUREMENT-LAYER premise and it is deliberately distinct from
+    PRESUMPTION-677 / REVISE-282, which concerns the ARRIVAL RATE being treated as independent of
+    consumption capacity. 677 is the variable; 147 is the instrument that keeps the variable
+    invisible. Six clauses. (1) SAME SIZE, OPPOSITE STATES — the decisive clause. The best-documented
+    institutional case establishes that there is NO SIMPLE RELATIONSHIP between the size of a
+    waiting list and the distribution of waiting times: the NHS England elective list stood at four
+    million on multiple occasions since 2007 with very different waits each time, and the 18-week
+    target could in principle be met at any list size. The corollary drawn by the IFS and the Office
+    for Statistics Regulation is the one that transfers: waiting lists measure DEMAND AND ACTIVITY,
+    not performance, so movements do not necessarily reflect different levels of performance. A
+    rising list is equally consistent with a healthy referral pipeline and with collapsed treatment
+    capacity, and size alone cannot distinguish them. Queue growth therefore cannot bear the reading
+    "the hunt is healthy" — not because that reading is too optimistic, but because the statistic
+    does not carry the information either way. (2) THE ARITHMETIC RUNS THE OTHER WAY. Little's Law
+    (Little 1961, Operations Research 9(3):383-387), applied as Lead Time = WIP / Throughput: with
+    throughput constant, rising WIP means proportionally longer lead time and nothing else; with
+    throughput at ZERO — 34 -> 40 with no decision in sixteen days — lead time is unbounded, and the
+    growth conveys complete information about the review function and none about the hunt. Little's
+    Law assumes a stable system and a system with zero service over sixteen days violates
+    stationarity, so it is used here DIAGNOSTICALLY, not predictively. (3) THE PRODUCER-SIDE COUNT
+    IS RIDGWAY'S CASE, and it is the oldest result here. Ridgway (1956), Administrative Science
+    Quarterly 1(2):240-247: public employment interviewers evaluated on interviews CONDUCTED
+    conducted fast interviews and placed very few applicants; investigators given a quota of eight
+    cases per month selected easy fast cases. In both, the producer-side count rose while the
+    outcome it proxied fell, precisely because such a count is structurally incapable of falling
+    when the outcome degrades. (4) THE LOAD-BEARING CLAUSE IS THE SECOND HALF OF 14b'S OBSERVATION:
+    NO METRIC FALLS. Where a proxy correlates imperfectly with the goal, the strong form of
+    Goodhart's law holds that optimising it does not merely stop helping but becomes actively
+    harmful once proxy and target decouple, and the condition under which this bites hardest is an
+    UNOPPOSED proxy. Item GENERATION is cheap; item ADJUDICATION is expensive. A metric set with no
+    counterweight to queue growth is a system with a free lever, and the counter-metric and
+    guardrail literature is uniform on the remedy: every quantity or speed indicator must be PAIRED
+    with a quality or value indicator (the DORA pairing of deployment frequency with change failure
+    rate is the canonical form), and a dashboard should be a system of checks and balances rather
+    than a single number. A register in which NO indicator falls when the queue rises is, by that
+    standard, an unpaired metric. (5) COUNT IS THE WRONG STATISTIC IN BOTH DIRECTIONS — the steelman
+    folded in as a narrowing, because it is right. Queue growth IS a real signal about the DETECTOR,
+    and suppressing it to make a backlog look better is the classic error of throttling detection,
+    which in safety reporting systems destroys the reporting culture outright; sixteen days is also
+    a short window, and a queue that grows while a reviewer deliberates is not obviously worse than
+    one that shrinks through hasty disposal. The correct response is therefore NOT "report less" but
+    SEPARATE AND AGE: report find-rate and resolve-rate as two NAMED metrics, never combined into
+    one; and instrument AGE — oldest-item and 90th-percentile age — because sixteen days without a
+    decision is the load-bearing number and it is the one not currently reported. Composition by
+    risk level is required for the same reason: a Critical item must not age silently inside an
+    aggregate. (6) HIGH WIP CONCEALS. The stated harm mechanism is that high WIP "hides problems
+    because nothing ever finishes" — an item that should have triggered action can sit indefinitely
+    without ever registering as a FAILURE, so a Critical-risk item in a 40-deep queue is
+    functionally undetected. This is the mechanism by which the very growth that signals the review
+    function's collapse is reported as evidence that the system is working, which is worse than
+    having no metric at all.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: the framing was shared by
+    THREE independent runs reporting the same queue, i.e. it is a house convention, not one run's slip)
+  Supporting evidence: Ridgway, V.F. (1956), "Dysfunctional Consequences of Performance
+    Measurements," Administrative Science Quarterly 1(2):240-247 [15a]. Little, J.D.C. (1961), "A
+    Proof for the Queuing Formula: L = lambda W," Operations Research 9(3):383-387 [cited by BOTH
+    directions]. Institute for Fiscal Studies, "The past and future of NHS waiting lists in England"
+    and "Can the government achieve its 18-week elective waiting time target?"; Nuffield Trust;
+    Office for Statistics Regulation statement on comparability [15b — the strongest single source
+    on this item and AGAINST-direction only]. Goodhart's law, strong form: Goodhart 1975
+    [UNVERIFIED in BOTH directions]; "Goodhart's Law in Reinforcement Learning," arXiv:2310.09144;
+    "The Strong, Weak and Benign Goodhart's law," arXiv:2505.23445 [existence confirmed, contents
+    not read]. Counter-metric / guardrail / paired-indicator practice and WIP-limit rationale
+    (Atlassian, Scrum.org, getDX, DORA pairing convention) — practitioner sources, cited by BOTH
+    directions. Peer-review capacity literature: Horta et al. (2024), Higher Education Quarterly
+    78 [co-author list uncertain]; "Can We Volunteer Out of the Peer Review Crisis?"
+    arXiv:2604.27900 — NeurIPS submissions 1,678 (2014) -> 17,491 (2024), reported uniformly as the
+    cause of a crisis and never as a measure of the field's health [15a].
+  Challenges noted: this premise IS the challenge direction — 15b CHALLENGED (Strong), 15a
+    NO-SUPPORT-FOUND (None) with no novelty flag. 15a's one honest defence is preserved and scoped:
+    queue growth IS a valid leading indicator of UPSTREAM DETECTION ACTIVITY, so if the intended
+    referent of "the hunt's health" were strictly generation, the metric would be incomplete rather
+    than wrong. That defence collapses the moment the figure is read as a SYSTEM-health measure,
+    which is what three independent runs did, and it is exactly the substitution Ridgway names.
+    Clause (5) is the form in which the defence survives.
+  RELATION TO THE EXISTING REGISTER — checked explicitly, and this is NOT a re-mint: PREMISE-143
+    clause (1) already states that a metric which rises when the system worsens and is read as
+    reassurance is the worst property a metric can have — for RETRACTION COUNTS. PREMISE-110 states
+    the same polarity defect for DETECTORS. PREMISE-147 is the third member of that family and its
+    new content is (a) the size-versus-performance NON-RELATION with an authoritative institutional
+    demonstration (clause 1), (b) the PAIRING REQUIREMENT — every quantity indicator needs a quality
+    indicator (clause 4), and (c) COUNT-VERSUS-AGE as the choice of statistic (clause 5). None of
+    those three is stated anywhere in the register. PREMISE-138 is CONFIRMED and NOT amended.
+  Consistency check performed before INCORPORATE: PREMISE-138 (repetition in a channel with no
+    effector is not a remedy; escalation must change the addressee, not the amplitude);
+    PREMISE-143 (metric inversion, above); PREMISE-110 (detector polarity); PREMISE-102 (repeated
+    non-processing becomes a standing policy of non-coverage — the sixteen days are that); and the
+    six premises REVISE-282 records as contradicted by 14b's line 88 — PREMISE-003 (human review
+    capacity is the binding constraint), PREMISE-070 (do not over-feed intake while review is the
+    bottleneck), PREMISE-095 (arrival exceeds service; the queue grows without bound absent a
+    cadence change or admission cap), PREMISE-106 (the lit-search queue is in the unstable regime),
+    PREMISE-119 (production and judgment are not independently schedulable; backpressure is a
+    CORRECTNESS requirement), PREMISE-121 (each additional correctly-argued item can lower the
+    probability that ANY item is acted on). All six are ACTIVE and all six are CONFIRMED, not
+    contradicted; PREMISE-121 in particular is the consumer-side statement of which clause (4) is
+    the instrument-side statement. No contradiction found with any ACTIVE premise.
+  NO SECOND REVISION FLAG MINTED FOR THIS ITEM, and the reason is this premise's own subject
+    matter: the changes it implies — add a metric that falls, put a WIP limit on the review queue
+    with an explicit policy at the ceiling — are already requested at REVISE-282 items (2) and (4)
+    and are carried forward in this batch by REVISE-283. A third filing of the same request into a
+    channel at 40 open items with no decision in sixteen days would be PREMISE-138 clause (1)
+    exactly, and would be this premise's own error committed in the act of recording it.
+  Confidence: Moderate. Clause (1) is High — authoritative, directly on point, and institutional.
+    Clauses (2), (4) and (5) rest substantially on PRACTITIONER rather than peer-reviewed flow
+    literature, though Little's Law itself is a standard queueing result; Goodhart 1975 is
+    unverified in both directions; and Little's Law is applied outside its stationarity assumption
+    and is used diagnostically only.
+  Applicable to: the review-queue figure wherever it is reported, and the three independent runs
+    that read 34 -> 40 as health; every producer-side count in the daily report, the fleet health
+    report and agent run footers; the 15d monitor queue, whose ~zero consumption since 2026-07-08
+    is the same signature in a second register; the item-generation rate of this pipeline,
+    including this batch.
+  OPEN MEASUREMENT NAMED AT VALIDATION (in-house, requires no authorisation): (i) reconstruct the
+    review queue's time series — arrivals, departures, size, and the age distribution (max and 90th
+    percentile) per day — and plot cumulative arrivals against cumulative departures; monotone
+    divergence means the object is an ACCUMULATOR, not a queue, and no reading of growth as health
+    survives. (ii) Enumerate every metric the system currently reports and record, for each, its
+    sign of response to a new unresolved item; if the count that FALLS is zero, 14b's second clause
+    is confirmed exactly and the Goodhart risk is live. (iii) Check whether any item has been in the
+    queue longer than the oldest item was when the queue stood at 34 — if so the growth is not
+    turnover, it is sedimentation. NOT RUN this session.
+  Re-check due: 2026-09-06 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-691 (NOTE: compounds PRESUMPTION-677 → REVISE-282, D-608)
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a framing shared by three independent runs reporting the same queue
+      15a: Searched for supporting literature; NO-SUPPORT-FOUND (None); no novelty flag
+      15b: Searched for challenging literature; CHALLENGED (Strong); named in the SYSTEMIC-RISK-FLAG
+        as the most dangerous member, because it converts the gap into an affirmative health signal
+      15c: Net evaluation and disposition; INCORPORATE THE NEGATION as the MEASUREMENT-LAYER premise
+        distinct from PRESUMPTION-677's arrival-rate claim; steelman folded in as clause (5)
+        (separate find-rate from resolve-rate, instrument age, never throttle the detector); no
+        second revision flag minted, by this premise's own logic
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-613 (2026-08-06)
+
+PREMISE-148:
+  Date validated: 2026-08-06
+  Source item: PRESUMPTION-695
+  Statement: DISCLOSURE OF A PROVENANCE ROUTE IS NOT AN AUDIT OF IT, AND OBJECT-LEVEL CONTENT
+    CARRIES THE HIGHER MEASURED ERROR RATE OF THE TWO THINGS THIS SYSTEM COULD AUDIT. Six clauses.
+    (1) THE RATES ARE MEASURED AND THEY ARE NOT SMALL. Quotation error — whether the cited source
+    actually supports the citing author's statement — pools at 25.4% (95% CI 19.5-32.4) over 28
+    studies (Jergas & Baethge 2015, PeerJ 3:e1364), recalculated more strictly to 14.5% (10.5-18.6)
+    by Mogull (2017, PLOS ONE 12(9):e0184727), who also finds that 64.8% (56.1-73.5) of content
+    errors are MAJOR — the referenced source fails to substantiate, is unrelated to, or CONTRADICTS
+    the assertion. Improper secondary or indirect citation — taking a claim from a description
+    rather than the source, which is precisely the route in this item — runs at about 10.4%
+    (3.4-17.5). Major inconsistency between abstracts and full reports runs 5-45% with a median
+    around 19%, and 40-60% for RCT results in several specialties. Abstract screening ALONE, a far
+    simpler judgement than triplet extraction, carries 10.76% total error (7.43-14.09) across
+    329,332 decisions. (2) EXPERIENCE IS NOT THE CONTROL. Data-extraction error ran 28.3-31.2%
+    across minimal, moderate and substantial experience levels and DID NOT FALL with experience
+    (Horton et al. 2010); single extraction generates more errors than double (Buscemi et al. 2006).
+    The control shown to work is STRUCTURAL DUPLICATION — at least two independent extractors —
+    which a disclosed-but-unaudited route by definition lacks. (3) PROCESS CONFORMANCE DOES NOT
+    LICENSE AN INFERENCE TO PRODUCT QUALITY. The quality-assurance taxonomy holds that a process
+    audit measures conformance to the defined process while a product audit measures the finished
+    output against specification, that both are required, and that neither substitutes for the
+    other. The software-quality literature is blunter: ISO 9000 is a set of guidelines for the
+    PRODUCTION PROCESS and is "not directly concerned about the product itself," and conformance
+    produces uniformity, which does not guarantee quality. A register holding ~1,460 machinery items
+    against comparatively few content items has instrumented its process and INFERRED its product.
+    That is the inference this literature declines to license. (4) DISCLOSURE DECAYS UNLESS
+    SOMETHING DOWNSTREAM CONDITIONS ON IT. The citation-integrity literature names the aggravating
+    mechanism: repeated secondary citation produces AUTHORITY BY REPETITION, under which a claim
+    becomes treated as background knowledge. After two or three internal citations the "from a
+    publisher's description" qualifier is no longer adjacent to the claim, and the disclosed route
+    is invisible to the reader who needs it. Provenance must therefore be a STRUCTURED, MACHINE-
+    READABLE FIELD carried on every citation, not prose in the originating artifact. Prose
+    disclosure is the PRECONDITION for an audit — and is genuinely better than the undisclosed
+    indirect citation the literature measures — but it is not a substitute for one. (5) NARROWING,
+    FROM THE STEELMAN, AND LOAD-BEARING. The measured rates are dominated by NUMERIC AND INFERENTIAL
+    content, and secondary sources may be perfectly adequate for IDENTITY-LEVEL facts — who, what,
+    which triplet — while unreliable for magnitudes, effect claims, qualifications and conclusions.
+    Content-type gating preserves most of the efficiency and is the distinction the evidence
+    supports: secondary route permitted for identity and existence, PRIMARY SOURCING REQUIRED for
+    magnitudes and conclusions. There is also a real resource argument for asymmetric attention —
+    process defects are systematic and one process fix corrects a class of product defects, whereas
+    a product check generalises to nothing — and no located source benchmarks an appropriate
+    process-to-product audit ratio, so the ~1,460-to-few figure cannot be SCORED, only its direction
+    read. What the steelman cannot survive is the absence of a SAMPLE: without an in-system error
+    rate, the claim that these errors rarely change conclusions is untested in this system
+    specifically, and any statement about content reliability is an assumption rather than a
+    measurement. (6) AN INACCESSIBLE SOURCE IS A DISTINCT AND WEAKER TIER. A paywalled session known
+    only through a host's write-up is TERTIARY, and its item is UNREVERIFIABLE — a later auditor
+    cannot re-check it without acquiring access, so its error status may be permanently
+    indeterminate. Such items must be flagged as unreverifiable and excluded from load-bearing
+    conclusions, not merely footnoted.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: the asymmetry is emergent
+    in the register's composition rather than anywhere decided)
+  Supporting evidence: Jergas, H. & Baethge, C. (2015), "Quotation accuracy in medical journal
+    articles — a systematic review and meta-analysis," PeerJ 3:e1364, DOI 10.7717/peerj.1364 [15a].
+    Mogull, S.A. (2017), "Accuracy of cited 'facts' in medical research articles," PLOS ONE
+    12(9):e0184727 [cited by BOTH directions; author list unconfirmed in the AGAINST direction].
+    Horton, J. et al. (2010), "Systematic review data extraction: cross-sectional study showed that
+    experience did not increase accuracy," J Clin Epidemiol [15a]. Buscemi, N. et al. (2006),
+    "Single data extraction generated more errors than double data extraction in systematic
+    reviews," J Clin Epidemiol 59(7):697-703 [volume/pages from established knowledge]. Wang, Z. et
+    al. (2020), "Error rates of human reviewers during abstract screening in systematic reviews,"
+    PLOS ONE 15(1):e0227742 [cited by BOTH directions]. Pitkin, R.M., Branagan, M.A. & Burmeister,
+    L.F. (1999), "Accuracy of Data in Abstracts of Published Research Articles," JAMA
+    281(12):1110-1111, PMID 10188662 [15b; specific error percentages NOT confirmed, so no rate is
+    asserted from it]. Scoping review of abstract-versus-full-report comparisons, PMC5747940 [15b;
+    UNVERIFIED — fetch blocked by reCAPTCHA; figures taken from search-result summary]. "Quotation
+    errors in general science journals," Proc. R. Soc. A 476(2242):20200538 (2020) [authors not
+    confirmed]. Process-vs-product: ASQ/IATF-lineage QA taxonomy [15a, practitioner]; CMM/ISO 9000
+    comparative material [15b, teaching and overview sources].
+  Challenges noted: this premise IS the challenge direction — 15b CHALLENGED (Strong), 15a
+    NO-SUPPORT-FOUND (None). The mitigating half of the record is preserved: the route WAS disclosed,
+    and disclosed provenance is substantially better than the undisclosed indirect citation Mogull
+    measures. It is folded into clause (4) as a precondition rather than credited as a control. The
+    conference-abstract literature genuinely cuts both ways and is recorded in clause (5): including
+    conference abstracts RARELY CHANGED systematic-review conclusions in a 2025 case study, grey
+    literature makes only minor differences in meta-epidemiological work, and in rapidly evolving
+    fields abstracts were the only evidence available at 14% of time points.
+  Cross-direction source overlap (PREMISE-120 disclosure): Mogull 2017 and the PLOS ONE 2020
+    abstract-screening study were cited by BOTH directions. Per PREMISE-111 that is residual
+    correlation, not two independent confirmations. The disjoint material is 15a's extraction-error
+    line (Horton, Buscemi) and 15b's abstract-versus-full-report and authority-by-repetition line.
+  Consistency check performed before INCORPORATE: PREMISE-103 (absence of primary text is a KIND-
+    difference in evidence, not a degree-difference; no confidence label over metadata-only material
+    is well-founded, and downgrading confidence is not a valid substitute for an explicit "unfounded
+    pending retrieval" state) — DIRECTLY on point, ACTIVE, and CONFIRMED rather than contradicted;
+    PREMISE-148 extends it with measured rates, the process/product clause, the authority-by-
+    repetition mechanism and the tiering requirement, and clause (6) is 103's "unfounded pending
+    retrieval" state made operational as a field. PREMISE-113 (a detector's findings are evidence
+    about the instrument until its precision is measured — the same logic applied to an extraction
+    route rather than a detector). PREMISE-124 (no self-measurement of the pipeline's own
+    completeness or accuracy without an external baseline or a seeded denominator — the sampling
+    audit below IS the external denominator 124 requires, and its absence is why no current claim
+    about content reliability is admissible). PREMISE-101; PREMISE-114; PREMISE-120; PREMISE-111. No
+    contradiction found with any ACTIVE premise.
+  Confidence: Moderate. Direction and MECHANISM transfer cleanly; RATE does not. The strongest
+    sources measure structured numerical extraction in medical evidence synthesis, where error is
+    unusually well defined, and a PRS triplet taken from a publisher's description is a coarser
+    object for which these figures are neither an upper nor a lower bound. Nothing was located on
+    PUBLISHER-SUPPLIED PROMOTIONAL descriptions specifically, whose register differs from a
+    scientific abstract and whose error profile may be worse; that gap is covered by no cited source
+    in either direction and is the single most useful follow-up search.
+  Applicable to: the PRS triplets extracted from publishers' descriptions, and specifically the one
+    taken from a paywalled session's host write-up; every object-level result entering the vault and
+    every internal citation of one; the composition of this register; PRS candidate admission, where
+    PREMISE-103 already applies; any future claim that the object level is adequately covered.
+  OPEN MEASUREMENT NAMED AT VALIDATION (in-house, requires no authorisation, and DECISIVE — this is
+    the condition on which the steelman turns): (i) sample n PRS triplets sourced from publishers'
+    descriptions, verify each against the PRIMARY source, and report the discrepancy rate with a
+    confidence interval against the ~19% median from the abstract-versus-full-report literature.
+    Materially below -> the steelman is supported for this content type and the presumption is
+    defensible here; at or above -> the presumption is refuted empirically IN-SYSTEM. (ii) Grep the
+    vault for whether ANY object-level item carries a STRUCTURED provenance field; if provenance
+    exists only as prose, clause (4) fails by inspection today. (iii) Classify register items as
+    machinery-directed or content-directed to confirm the ~1,460-to-few ratio, then compute the same
+    ratio for ERRORS ACTUALLY FOUND — if machinery audits find errors at a far lower rate per item
+    than the content sample, audit effort is demonstrably misallocated. NOT RUN this session.
+  Re-check due: 2026-09-06 (Monthly)
+  Status: ACTIVE
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c]
+    Original item: PRESUMPTION-695
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read the day's best object-level result against its own disclosed provenance route and
+        against this register's composition
+      15a: Searched for supporting literature; NO-SUPPORT-FOUND (None); PARTIAL novelty gap noted on
+        one sub-question only — no source establishes an appropriate allocation ratio between
+        process-directed and product-directed verification effort, which is why clause (3) states a
+        DIRECTION and not a target
+      15b: Searched for challenging literature; CHALLENGED (Strong); member of the SYSTEMIC-RISK-FLAG
+      15c: Net evaluation and disposition; INCORPORATE THE NEGATION as an extension of PREMISE-103
+        rather than a replacement; steelman folded in as clause (5) content-type gating; the ratio
+        claim explicitly NOT scored against a benchmark, since none exists
+    Current status: INCORPORATED
+    Disposition record: DISPOSITION-614 (2026-08-06)

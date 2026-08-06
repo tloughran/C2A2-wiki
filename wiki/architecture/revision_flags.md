@@ -7310,3 +7310,136 @@ REVISE-282 — PRESUMPTION-677: the norm that produces the backlog is in 14b's a
     That is not a reason to withhold it; per PREMISE-138 clause (2) it is a reason to name the
     actor, which is done above. It IS a reason to treat it as the item to read first.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-283 — 15b SYSTEMIC-RISK-FLAG (2026-08-06): five presumptions are ONE architectural gap
+  (open-loop self-verification), and the request is a SINGLE absence-detector tier evaluated by a
+  component that did not produce the artefact being checked
+  Source: 15b SYSTEMIC-RISK-FLAG filed at the end of PRESUMPTION-678_against.md; affected items
+    PRESUMPTION-678 (Risk: Critical), 689, 690, 691, 695 | Disposition: DISPOSITION-609
+    (flag evaluation; spans DISPOSITION-609 through DISPOSITION-614)
+  15c'S EVALUATION OF THE FLAG, STATED FIRST BECAUSE PART OF THE ANSWER IS "ALREADY KNOWN":
+    SUSTAINED IN PART, AND DELIBERATELY NOT RE-MINTED. The flag's general claim — that a system
+    which confirms an internal state from inside has no channel capable of returning "no," and that
+    the safe instrument fires on the ABSENCE of evidence rather than on the presence of error — is
+    ALREADY ACTIVE in the premise register, four times over:
+      · PREMISE-086 (2026-06-27, ACTIVE, High): absence/staleness IS the signal; alarm on AGE, not
+        on the last displayed value; the monitor must have its own independent liveness check.
+      · PREMISE-110 (2026-07-20, ACTIVE, High): detectors invert rather than degrade gracefully;
+        absence-of-complaint is an UNSAFE POLARITY; the safe form is affirmative and perishable,
+        actively fed on an independent timebase, so that cessation is itself the alarm. Plus the
+        COMMON-MODE SCOPE GUARD: a monitor sharing runtime, scheduler, credentials and filesystem
+        with its subject is a single channel wearing two labels.
+      · PREMISE-100 (ACTIVE, High): a liveness signal is not evidence of correctness, and a check
+        that cannot execute in its runtime context reports as PASSING rather than as absent.
+      · PREMISE-053 (ACTIVE): a scheduled job's execution context must be VERIFIED CAPABLE, and the
+        job must FAIL LOUDLY with a visible last-successful-publish signal.
+    The flag therefore does not identify missing KNOWLEDGE. Per REVISE-282's finding on
+    PRESUMPTION-677, what is missing is an actor with an effector. A fifth premise stating the same
+    thing would be PREMISE-138 clause (1) precisely, and none has been minted.
+  WHAT IS GENUINELY NEW, AND IS THE ONLY REASON THIS REACHES A HUMAN — three things:
+    (a) THE CLASS CLAIM. Five presumptions surfaced independently on one day are five instances of
+        one gap, not five items. If that is right, five separate remediations is the wrong SHAPE of
+        response: it would produce five partial detectors, each built by the layer whose work it
+        checks, each sharing the defect it is meant to catch.
+    (b) THE EVALUATOR CONDITION — the sharpest thing in the flag. The detectors "must be evaluable
+        by an agent that did not produce the artefact being checked." That promotes PREMISE-110's
+        common-mode guard from a caveat on individual monitors to a CONSTRUCTION RULE for the whole
+        tier, and states PREMISE-124's external-baseline requirement in normative form. C2A2 has no
+        component that satisfies it today: every agent in this pipeline checks artefacts produced by
+        this pipeline. Creating or designating one is a decision no agent holds.
+    (c) THE INVERTED MEMBER. PRESUMPTION-691 is the most dangerous of the five because it converts
+        the gap into an AFFIRMATIVE HEALTH SIGNAL — a rising queue is read as vigour, so the metric
+        moves in the wrong direction exactly when the loop is broken (now PREMISE-147). An
+        absence-detector tier reporting into an instrument panel with that property would be read as
+        reassurance too, which is why item (4) below is sequenced BEFORE the tier rather than after.
+  ONE CORRECTION TO THE FLAG, recorded rather than smoothed: its "Literature basis" cites three
+    "unrelated" literatures and treats their agreement as corroboration. Two of the three
+    (cron/dead-man's-switch operations practice, and the IIA/PCAOB governance line) are the same two
+    literatures that carried the individual items, and the flag was written by the SAME AGENT that
+    wrote all five AGAINST files. Per PREMISE-111 and PREMISE-120 this is not five independent
+    confirmations; it is one agent's reading of a common source base across five items. The class
+    claim is therefore carried here by the STRUCTURAL argument and by the local record, and is filed
+    on that basis. It does not weaken the request; it changes what the request may be said to rest on.
+  What is at risk: every scheduled agent's charter, none of which is currently in the premise
+    register (PREMISE-144, and 14b ran ~118 days under a norm contradicting six ACTIVE premises
+    before an outside pass found it); every task specification with a fixed mandatory cost, whose
+    feasibility is presumed rather than tested (PREMISE-146); every recurring scheduled task whose
+    environment may not be capable of it, with the count of such tasks currently UNMEASURABLE
+    (MONITOR-502); the principal progress signal of the self-awareness pipeline, which measures the
+    producer side of a loop whose constraint is on the consumer side (PREMISE-147); and the vault's
+    strongest object-level results, which arrive by the least-verified route (PREMISE-148). Also at
+    risk, and named because it is the shape of the whole flag: any future remediation built by the
+    layer it audits, which would inherit the defect by construction.
+  Affected: wiki/agents/ in its entirety, including 14b_presumption_detector_agent.md line 88
+    (REVISE-282) and 15c_net_evaluator_agent.md; the scheduler and every recurring task it holds;
+    the daily report and fleet health report metric set; the review queue and the 15d monitor queue;
+    every object-level artefact carrying a secondary or tertiary provenance route.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — five counts, all owed, none needing a decision.
+    Each is stated in full in the premise or monitor entry cited, and none was run this session:
+    (1) Charter × premise enumeration: how many charters have no register entry; how many
+        charter/premise pairs conflict; for each known conflict, days-to-detection and whether
+        detection was internal or external. [PREMISE-144]
+    (2) Mandatory-preamble floor versus ceiling, reported as a ratio; plus the attribution
+        classification of every budget-breach disclosure on record, and whether any change to the
+        ceiling or preamble ever followed one. [PREMISE-146]
+    (3) Capability audit and learning-channel audit over all scheduled tasks — the count of
+        capability-mismatched schedules, and whether the loop is open at the sensor or the actuator.
+        [MONITOR-502]
+    (4) Review-queue time series — arrivals, departures, size and age distribution per day, plotted
+        cumulatively — and an enumeration of every reported metric with its sign of response to a
+        new unresolved item. If the count of metrics that FALL is zero, the inversion is confirmed
+        exactly. [PREMISE-147]
+    (5) Sampling verification of secondary-route object-level items against primary sources, with a
+        discrepancy rate and confidence interval, benchmarked against the ~19% median from the
+        abstract-versus-full-report literature. [PREMISE-148]
+    If those five return as 15b predicts, the requested change below is QUANTIFIED rather than
+    argued. If any returns the other way, that member leaves the class and this flag narrows —
+    which is the outcome that would most improve the instrument, and is a real possibility for
+    members (3) and (5).
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) AUTHORISE ONE ABSENCE-DETECTOR TIER, not five detectors. For each of the five loops define
+        the outside-the-loop signal that should fire when NO verification has occurred within N
+        days, and alert on SILENCE rather than on error: charter-versus-register check (678),
+        preamble-versus-ceiling feasibility check at task load (689), environment-capability probe
+        before scheduling (690), a metric that FALLS when the queue rises (691), and a provenance-
+        tier field with a periodic full-source verification sample (695). One implementation, five
+        subscribers.
+    (2) NAME THE EVALUATOR. The tier must be evaluable by a component that did not produce the
+        artefact it checks. No existing pipeline agent satisfies this; per PREMISE-110's common-mode
+        guard, independence must be ENGINEERED BEFORE IT IS TESTED. This is a create-or-designate
+        decision and it is the load-bearing one — without it, item (1) is five self-checks.
+    (3) CHARTER ADMISSION. Either a charter is not loadable until it has a premise-register entry
+        (the IIA independently-validated-self-assessment pattern), OR the exemption is recorded IN
+        the register with a named validator, a bounded period and an EXPIRY, so the exemption is a
+        first-class reviewable object. This is the CLASS-LEVEL form of REVISE-282's line-88 request;
+        the two are one decision and should NOT be actioned separately. Note the representation
+        problem attached at PREMISE-144 clause (5): charters are prose and premises are register
+        entries, so until a common form exists the check is a read by a non-author, not a prover.
+    (4) SEQUENCE THE FALLING METRIC FIRST. Add at least one gauge that declines when an item is
+        added and unresolved — resolution rate, or a decision-debt figure — and report find-rate and
+        resolve-rate as two NAMED metrics never combined into one, before any detector reports into
+        the panel. Per PREMISE-147 clause (5) this must not be achieved by throttling detection; the
+        detector is the part of the loop that works.
+    (5) DO NOT ACCEPT A "checked: yes" FIELD AS DISCHARGE of any of the above. PREMISE-116's
+        instrumentation constraint and PREMISE-139 both bar it: a propagation step that produces a
+        "propagated: yes" field reproduces the defect exactly. The measure must be a change in
+        OUTPUT — a schedule that moved, a ceiling that changed, a queue that fell, an item withdrawn.
+  WHAT 15c DID WITHIN ITS OWN AUTHORITY, stated so it can be checked: this batch was dispositioned
+    rate-aware, continuing the practice recorded at REVISE-282. Five of the six items were
+    INCORPORATED as negations into the agent-facing premise register (PREMISE-144 through 148),
+    which does not touch the human queue; one was filed to 15d (MONITOR-502) on the strength of a
+    NOVELTY-FLAG and with an explicit note that the channel has near-zero throughput; and exactly
+    ONE item — this one — was filed here, covering all five affected presumptions, because items
+    (1)-(5) above each require an authorisation no agent holds, which PREMISE-138 clause (2) makes
+    obligatory rather than optional. The alternative shape, five separate flags, was available and
+    was rejected: it would have added five items to a queue that stood at 40 with no decision in
+    sixteen days, which is the condition PRESUMPTION-691 is about, and it would have contradicted
+    the flag's own central recommendation to treat the five as one remediation. This is not a
+    substitute for the change requested above.
+  Urgency: High overall; CRITICAL on the 678 member, which is the one with a measured 118-day
+    detection latency and an outside-in discovery route. Note per PREMISE-147 that this entry is
+    itself an increment to the queue it discusses; it is filed as ONE item covering five precisely
+    so that it is not five, and per PREMISE-138 clause (2) the response to that objection is to name
+    the actor, which items (1)-(5) do.
+  PROVENANCE: Origin 14b (five items) + 15b SYSTEMIC-RISK-FLAG · Chain [14b → 15a, 15b → 15c] ·
+    Current status: REVISION-FLAGGED

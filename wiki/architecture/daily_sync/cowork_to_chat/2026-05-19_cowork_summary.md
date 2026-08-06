@@ -11,7 +11,6 @@ Three interactive Cowork threads ran today, on top of the automated overnight se
 
 **2. Summa commentary push + ISME roadmap** (session "Debug RC Karpathy wiki push issue"). The Day 118 fix landed cleanly on the source side: **I-II is now 616/616 = 100% complete** (Q.114 attributed to Day 118), and **II-II opens at 34/908**. The one remaining step is the Tom-side terminal push via `sync_vault.sh` (expect "1234 total available" and no gap-audit warnings). The session also laid out the ISME ("ISMcI summer paper") critical path: Deliverable A — per-tradition longform syntheses (`traditions/<n>/state_2026_q2.md`, currently **0 of 12**) is the highest-leverage Tom-only work, recommended starting with Hawkins × Friston as the template (it carries FINDING-018a, the first concrete falsifiable cross-tradition synthesis); Deliverable B — five ISME-critical pathways, all `drafted` but not implemented; Deliverable C — a public repo README, which does not yet exist (~30 min).
 
-**3. Keough School explorer + faculty-enrichment agent** (cross-project — KSGA-sociogram / Keough School wiki; session "Assess wiki visualization build requirements"). Built a three-tab `explorer.html` (Sociogram via iframe / PRS Coils / Agent Map, plus a dimmed Curriculum Tools stub), all stability-first: an additive iframe shell rather than a rename (zero risk to the live sociogram), static SVG node positions rather than a force simulation (predictable render in front of decision-makers), and inline embedded data rather than a generator-plus-vault-path dependency. Tom verified and pushed both repos. The `keough-wiki-faculty-enrichment` agent was defined (four files parallel to prs-formatter, ~200-word research summaries per ~313 faculty) and dispatched to Codex to run overnight, with four review cautions delivered for tomorrow.
 
 **Overnight self-awareness pipeline** (early-AM, automated): 14a/14b regenerated the assumptions/presumptions registries; 15a/15b/15c searched and dispositioned the lit-search queue (many new "against" results landed); the 2026-05-18 changelog and metrics snapshot were compiled.
 
@@ -31,7 +30,6 @@ No new `OPEN-NNN` registry entries are dated today (same overnight-batch lag). L
 - `wiki/tools/generate_review_page.py` — touched
 - `wiki/inbox/proposals/...` — Hoffman edge proposal (`hoffman_edge-hoffmans-law`) approved; duplicate-pending cleanup script run
 - `wiki/deferred/watch_list.md` — updated
-- KSGA-sociogram repo: `explorer.html`, `prs.html`, `agents.html` (pushed by Tom)
 - Vault: `agents/keough-wiki-faculty-enrichment/` (4 files; dispatched to Codex, not yet run)
 - (Overnight, automated) `assumptions.md`, `presumptions.md`, `open_questions.md`, `for_lit_search.md`, `lit_search_returns.md`, `validated_premises.md`, `revision_flags.md`, `monitor_queue.md`, `changelog/2026-05-18_changes.md`, `metrics/2026-05-18_snapshot.md`
 

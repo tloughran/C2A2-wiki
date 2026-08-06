@@ -3700,3 +3700,47 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-05.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-06
+
+**Run context:**
+- One day since last logged run (2026-08-05). **No watch item was due today** — WATCH-002 and WATCH-003 were both checked 2026-08-04 at weekly cadence; next due **2026-08-11**. No check counts incremented. No intake in any of the three channels. No resolutions, no stale flags. The only material change since yesterday is queue growth (34 → **40**; six new 2026-08-05 proposals — the largest single-day intake in the current run of the log). Review-pass gap now **14 days**.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone. `grep -rL "TRACKED-16"` returned nothing: **no untracked items.**
+- `review/archive/`: **16 files, unchanged** — latest still `2026-07-23_decisions.md`. **No new Channel 1 intake by disposition.** Coverage current through 2026-07-23.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, `agents/16_deferred_action_monitor_agent.md` (the format template in this agent's own definition). Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches. All 40 pending items await Tom, not Agent 16.
+
+**Condition Checks:**
+- **None due.** WATCH-002 and WATCH-003 both remain WATCHING at check count **3**; next formal check 2026-08-11 (→ count 4).
+- *Incidental observation (not a check, no counter incremented):* the file-based half of both conditions was visible during intake scanning. Vault-wide `find` for `*beatitudes-week-two*` and `*who-is-this-god*` → nothing; content grep across `review/archive/` and `inbox/` for `2026-07-19-001` / `2026-07-19-003` / `beatitudes-week-two` / `who-is-this-god` → **zero matches**; `review/archive/` unchanged at 16 files. Neither condition can have been met. Recorded for continuity only. The web-facing half of WATCH-002 (source-page body text; YouTube captions for `vshC_TxwrVo`) was **not** exercised this run — it belongs to the 2026-08-11 check.
+
+**Stale Item Check:**
+- Both active items at check count 3, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** (Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks. The stale threshold is the wrong instrument for them. At current weekly cadence they reach the threshold on **2026-09-01**.)
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING at count 3; one resolved item indexed (WATCH-001); intake clean across all three channels.
+
+**Notes:**
+- **PENDING-MOVEMENT NOTE:** `inbox/proposals/pending/` holds **40 items** (was 34 at end of 08-05). Six new proposals arrived, all dated 2026-08-05: `2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding.md` (PROP-2026-08-05-001), `2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md` (-002), `2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md` (-003), `2026-08-05_mcgilchrist_jimrutt-333-worldviews.md` (-004), `2026-08-05_kastrup_odyssey-potari-awakening.md` (-005), `2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md` (-006). `approved/` stands at **254**, `denied/` at **1**, `needs_review/` at **1** — all unchanged. All movement accounted for; nothing left the queue.
+- **TOOLING FLAG — carried unchanged, re-verified at source.** `tools/generate_review_page.py` mtime is still **2026-05-18 20:49**; line 304 re-read this run and is verbatim the positional form: `const pids = {[f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]!r};`. Against today's queue: all 40 pending proposals carry real proposal_ids spanning `PROP-2026-07-21-001` … `PROP-2026-08-05-006`; a page generated today (run_date 2026-08-06) would emit `PROP-2026-08-06-001 … -040`. **Intersection with the real IDs: still empty — now 40 decisions at total loss.** Full diagnosis and the one-line repair are in the 2026-07-29 entry. Agent 16 has not edited the file — tooling repair is outside remit. **This remains the highest-priority open item and it continues to compound: the queue has grown 150% (16 → 40) since the flag was first escalated on 07-29, and yesterday's six-item intake is the fastest daily accrual in the current series.**
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run (incidental scan). Content remains recoverable from `review/2026-07-20_review.html` and both live source URLs.
+- **TOOLING NOTE — carried from 2026-08-04, unchanged.** WATCH-002's YouTube-caption route remains unexercisable: `web_fetch` refuses `https://www.youtube.com/watch?v=vshC_TxwrVo` ("URL not in provenance set") and the video ID is not search-indexed. Not retested this run (the check is not due). **One-line fix available to Tom:** paste that URL verbatim into a Cowork session once. Failing that, authorize striking the caption route from WATCH-002's check method.
+- **MAINTENANCE FLAG — carried, still binding.** `watch_list.md` is **~323 KB / 3,702 lines** before this entry and grows ~1.5 KB per run. It remains above the Read-tool ceiling; Agent 16 again worked from line-ranged shell reads and appended by shell. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (not executed — this restructures Tom's vault, so it stays his call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days in `watch_list.md`. No data lost, fully reversible.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-11 — WATCH-002 (Wright episode content availability; caption route pending the provenance fix above), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 4.
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due today, both due 2026-08-11. No intake in any channel; nothing resolved; nothing stale. Decision archive coverage current through 2026-07-23; review-pass gap 14 days; pending queue grew to 40. **Open for Tom (all carried, none new):** (1) **the `generate_review_page.py` line-304 fix — would currently discard all 40 decisions; do this before the next review pass**; (2) resolve the two undisposed 2026-07-19 proposals; (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002; (4) the watch-list run-log archival (file still above the Read-tool ceiling); (5) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-06.*

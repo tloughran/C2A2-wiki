@@ -48,7 +48,6 @@
 - Deferred items watching: **0 active** (WATCH-001 closed)
 - Proposals in intake: **26 pending** (+2 Levin today); **approved 131**; **34 approved-but-uningested** (new backlog flag)
 - ⚠️ Ingest backlog: **34 unique approved items / ~90 triplets / 12 traditions** awaiting a focused ingestion run (HIGH)
-- ⚠️ Carry-forward: **2026-05-20 lit reconciliation still UNDONE** (4th run); KSGA sociogram push live-status unconfirmed
 - 🔄 Tonight's **05-25 EOD self-awareness batch (14a/14b)** will fold today's 2 Levin proposals, the ingest-backlog flag, and the Summa/Agent-16 output into the 2026-05-25 changelog/metrics.
 
 ## What's Next
@@ -60,7 +59,6 @@
 - **Decide the 3 STALE-MONITOR escalations** — run the empirical/paired test or retire the premise.
 - **Triage the 2 new Levin proposals** + the standing exile/corporate-substance cluster (unit-promote, caveat PRESUMPTION-244); refresh the **5 stale Summa commentaries (Days 101–105)**.
 - **Two cheap mechanical wins:** exclude `lit_search_results/` from the connectivity/orphan metric (ASSUMPTION-224); run the one-time backlink-injection pass.
-- **Carried:** 2026-05-20 lit reconciliation; confirm KSGA sociogram push.
 
 ## For Morning Discussion
 

@@ -60,7 +60,6 @@
 - **Redesign the two-summa experiment before launching DECISION-044.** This is the day's real output. Resolve SYSTEMIC-RISK-FLAG H along the three lines the pipeline offered (see Morning Discussion).
 - **Decide REVISE-049:** convert "park the scrub" into a hard gate — rewrite git history (filter-repo/BFG) before any public step; keep the repo private until then.
 - **Re-establish claude.ai login** in Browser 1 (4th day signed out) so both walk syncs resume.
-- **Confirm the KSGA sociogram push** went through (yesterday it was Tom-side after `rm -f .git/index.lock`; the 307 faculty summaries aren't live until then).
 - **Triage the 2 new Wolfram proposals** (scientific-method / ownerless-AI accountability).
 - **Carried:** tune the `transcript_authenticity_check` classifier so the Summa reviewer stops churning (OPEN-063); node vertical-axis semantics for the connectome; Summa II-II push; per-tradition ISME syntheses; public README (gated behind the history scrub).
 
