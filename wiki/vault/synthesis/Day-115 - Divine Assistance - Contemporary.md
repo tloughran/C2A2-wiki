@@ -23,8 +23,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-07-24T14:28:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T00:26:07"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---
 
@@ -133,8 +133,6 @@ The differences from Aquinas are not in the structural claim but in the *backgro
 The law-and-grace section closes with this question; tomorrow (Day 116, expected Q.110-111 on the essence and effects of grace and the division of grace) goes deeper into the *mechanics* of grace. The central-theme reading is fully established by today's entry; subsequent days will sharpen it.
 
 Open thread for the project as a whole: the central-theme claim is now stated as completely as the convergent paradigm supports. The work of subsequent syntheses is to apply this frame to the specific doctrinal and practical questions Aquinas takes up in the rest of the *Summa*. The frame should not be re-explained from scratch each day; it should be assumed and *applied*. The Wright-Rohr-monist convergence is the operating premise; the question for each new day is *what new feature of the loving-unity computational task does this day's question illuminate?*
-
-For Tom: this 10-episode arc on law-and-grace contains the structural backbone of the project's central claim. If the synthesis lands here, the rest will build on solid ground.
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/stump/prs_triplets|Stump PRS]]

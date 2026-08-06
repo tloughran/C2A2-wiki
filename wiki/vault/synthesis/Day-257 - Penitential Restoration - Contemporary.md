@@ -16,7 +16,7 @@ evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-do
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-07-27T16:19:47"
+last_qc_at: "2026-08-05T00:25:44"
 last_qc_outcome: "pass"
 ---
 

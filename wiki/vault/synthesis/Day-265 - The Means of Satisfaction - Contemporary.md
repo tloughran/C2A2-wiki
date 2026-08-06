@@ -16,7 +16,7 @@ evidence_strength_summary: "Penal works as restitution restoring equality is emp
 mind_first_reframe: "The means of satisfaction are reframed as targeted, divergence-reducing actions that restore a disturbed equality (Levin PRS-03, Friston) and as embodied reorienting practices (McGilchrist PRS-05/06), while the corrective virtue can exist as a settled prior held without occasion to fire (Friston)."
 central_theme_thread: "The means of satisfaction are the concrete, resource-bounded actions by which a perspective-limited agent restores a relation its deviation disturbed, and the sinless-possessing-penance case states the act/habit theme at its purest — the orientation toward restoring loving unity is a feature of a well-formed perspective as such, present even where no fall gives it occasion."
 tags: [synthesis, day/265, theme/concrete-restoration-and-the-disposition-without-occasion]
-last_qc_at: "2026-07-27T20:21:38"
+last_qc_at: "2026-08-05T04:22:57"
 last_qc_outcome: "pass"
 ---
 

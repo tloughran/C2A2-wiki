@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-07-24T12:19:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T00:26:06"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
 
@@ -41,7 +41,7 @@ The shared problem: worship is *neither* arbitrary cultural decoration *nor* pur
 
 **Friston's active inference** (FLAG-05): embodied practice updates generative-model priors more durably than propositional learning. Q.102 a.3's account of sacrifice as *recognition that what one has is from God and is directed back to God* is precisely the kind of cognitive-affective update that embodied practice can produce. The act of *giving back* re-installs the prior that *what is given came from elsewhere*. This is upstream of any propositional belief; it is a generative-model-level recognition.
 
-**McGilchrist's hemispheric asymmetry** (FLAG-09): ritual is right-hemispheric — embodied, contextual, relational. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct" is the precisely the attention-economics McGilchrist describes. Markedness is what right-hemispheric attention tracks; setting things apart *for* God is what makes them visible *as* sacred.
+**McGilchrist's hemispheric asymmetry** (FLAG-09): ritual is right-hemispheric — embodied, contextual, relational. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct" is precisely the attention-economics McGilchrist describes. Markedness is what right-hemispheric attention tracks; setting things apart *for* God is what makes them visible *as* sacred.
 
 **CROSS-09 (master wiki on costly-signaling) and CROSS-13 (markedness in attention-economics)**: cross-cultural anthropology has converged on the function of costly ritual: it produces in-group commitment, distinguishes the committed from the merely-claiming, and trains specific cognitive-affective dispositions. The Old-Law ceremonial precepts on food, dress, time, and bodily practice are paradigm cases. They are not arbitrary tribal markers; they are structured to train particular generative-model dispositions in the worshipping community.
 

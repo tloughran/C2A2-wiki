@@ -3,7 +3,7 @@ day: 277
 title: Vestments & Impediments (Contemporary)
 pairs_with: "[[Day-277 - Vestments & Impediments]]"
 length_target_words: 2200
-length_actual_words: 1185
+length_actual_words: 1244
 length_tier: medium
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -11,13 +11,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace, PRS-10 continuity of goal-directedness across scales)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 Universal Christ, PRS-01 dualistic vs non-dual knowing)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-evidence_strength_summary: "Friston multi-agent coherence formal but its social-scale application speculative; Levin role-assignment empirical at tissue scale; Rohr/Kastrup claims theological/metaphysical, firm within tradition, not empirical."
-length_ratio_to_target: 0.54
+  - "wiki/traditions/wright/prs_triplets.md (PRS-13 salvation as participation in God's homecoming among the people being formed)"
+evidence_strength_summary: "Friston multi-agent coherence formal but its social-scale application speculative; Levin role-assignment empirical at tissue scale; Rohr/Kastrup/Wright claims theological/metaphysical, firm within tradition, not empirical."
+length_ratio_to_target: 0.57
 mind_first_reframe: "An impediment is best understood as a coherence-condition the collective imposes on candidates for a real role, not a private moral score — which dissolves the paradox that an unworthy minister still confers a valid sacrament."
 central_theme_thread: "The validity/worthiness split is the central theme's deepest consolation: the body's capacity to mediate the whole does not wait on any member's perfection; the limited, even unworthy, agent is still drawn into a unity whose competence is not his own."
 tags: [synthesis, day/277, theme/role-versus-agent]
-last_qc_at: "2026-07-28T00:22:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T04:22:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 277 — Vestments & Impediments (Contemporary Parallel)
@@ -44,7 +45,7 @@ The contemporary-parallel response: **an impediment is best understood as a cohe
 
 ## The central-theme thread
 
-The project's wager is that loving unity is computed by agents who each see only part of the whole, and who therefore need offices and guidance from those positioned to see more. Vestments literalize this: the priest is *clothed* in a role larger than himself, signifying that what acts through him exceeds his own perspective. The validity/worthiness split is the central theme's deepest consolation — the body's capacity to mediate the whole does not wait on any member's perfection. "Work out your salvation in fear and trembling" (Phil 2:12) presumes exactly this: the limited, even unworthy, agent is still drawn up into a unity whose competence is not his own.
+The project's wager is that loving unity is computed by agents who each see only part of the whole, and who therefore need offices and guidance from those positioned to see more. Vestments literalize this: the priest is *clothed* in a role larger than himself, signifying that what acts through him exceeds his own perspective. The validity/worthiness split is the central theme's deepest consolation — the body's capacity to mediate the whole does not wait on any member's perfection. "Work out your salvation in fear and trembling" (Phil 2:12) presumes exactly this, and on Wright's reading it must: PRS-13 in the Wright-tradition wiki takes salvation to be *participation in God's homecoming as a member of the people the Spirit is forming*, not a private score settled soul by soul. If salvation is membership rather than merit-tally, then an office held unworthily is exactly the case the doctrine was built to survive — the limited, even unworthy, agent is still drawn up into a unity whose competence is not his own.
 
 ## Bridges
 
@@ -52,6 +53,7 @@ The project's wager is that loving unity is computed by agents who each see only
 - **Friston PRS-18 (speculative):** admission-conditions preserve collective coherence — the structural meaning of "impediment."
 - **Levin PRS-08 / PRS-10 (empirical at tissue scale):** the whole licenses members into roles and there are real unfitnesses; gives "impediment" a non-moral analogue.
 - **Rohr PRS-01 / PRS-03 (theological):** non-dual frame keeps validity and worthiness from collapsing; sacramental grace is the office's, not the man's.
+- **Wright PRS-13 (theological / scriptural):** salvation as participation in God's homecoming among a people being formed — the scriptural warrant for reading Phil 2:12 as membership rather than merit-tally, which is what makes the validity/worthiness split a consolation rather than a loophole.
 - **Kastrup PRS-02 (metaphysical, speculative):** identity within monism underwrites a real role borne by an imperfect occupant.
 
 ## Where this leaves us

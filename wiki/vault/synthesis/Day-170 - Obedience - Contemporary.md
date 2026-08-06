@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-019 on right-hemisphere mode in cross-tradition engagement"
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-07-28T14:26:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T18:30:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 170 — Obedience (Contemporary)
@@ -64,7 +64,7 @@ The perspective-limited agent computes loving unity from within a community of a
 - **Friston PRS-04, PRS-06, PRS-07** (organism as active modeler; multi-agent coherence; substrate-independent FEP) — bounded delegation in hierarchical predictive processing: higher levels supply constraining priors; lower levels retain inference within those priors. *Empirical / mathematically formal.*
 - **McGilchrist PRS-01, PRS-03, PRS-07** (hemispheric asymmetry; team/game distinction; division-union) — the master-emissary structure as the neurological substrate of healthy obedience; the emissary's forgetting of commission as the pathology. *Empirical.*
 - **Levin PRS-04, PRS-08** (substrate-independent cognition; cells as cognitive agents) — bounded delegation in cellular collectives: tissue-level constraints honored, cellular-level execution preserved. *Empirical.*
-- **Stump-wiki PRS-06 with Loughran-wiki PRS-08** (tradition-crossing inquiry; MacIntyre criterion) — a tradition is vital when its members defer-within-commission and challenge-beyond-it; disobedience as contempt collapses tradition-vitality. *Philosophical / methodological.*
+- **PRS-06 in the Stump-tradition wiki with PRS-08 in the Loughran-tradition wiki** (tradition vitality and the MacIntyre criterion; tradition-crossing inquiry) — a tradition is vital when its members defer-within-commission and challenge-beyond-it; disobedience as contempt collapses tradition-vitality. *Philosophical / methodological.*
 - **Wright (canonical, PFG; Rom 1:5)** — *hypakoē pisteōs* as covenanted obedience preserving the human subject as partner. *Theological / scriptural.*
 - **Rohr (canonical, *Falling Upward*)** — the bounded maturation of obedience across the two halves of life; pure rule-fidelity as itself a pathology. *Theological / contemplative.*
 

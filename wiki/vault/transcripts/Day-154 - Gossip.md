@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-154 - Gossip - Contemporary]]"
 tags: [summa, day/154, pars/2, q/72]
-last_qc_at: "2026-07-28T14:05:25"
+last_qc_at: "2026-08-05T14:28:34"
 last_qc_outcome: "pass"
 ---
 

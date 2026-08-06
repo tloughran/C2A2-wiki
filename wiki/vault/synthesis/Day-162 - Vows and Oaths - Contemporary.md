@@ -19,7 +19,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS entries on commitment and identity-over-time)"
 evidence_strength_summary: "Empirical-formal on precision-weighting and commitment devices in decision neuroscience (Friston-adjacent literature on policy stickiness). Empirical on developmental canalization (Levin lineage). Theological-strong on Pauline pistis (Wright) and on faith as second-personal commitment (Stump). The reframe of vow-as-precision-fixing is speculative-integrative."
 tags: [synthesis, day/162, theme/commitment-device, theme/identity-over-time, pars/II-II, q/88-89]
-last_qc_at: "2026-07-27T22:35:55"
+last_qc_at: "2026-08-05T02:27:33"
 last_qc_outcome: "pass"
 ---
 

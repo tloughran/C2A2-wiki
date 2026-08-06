@@ -16,8 +16,8 @@ evidence_strength_summary: "Finite-by-proportion-not-quantity is formal-analogic
 mind_first_reframe: "Finite satisfaction suffices by proportion (the whole-hearted orientation of the limited self), not quantity, and vicarious satisfaction is real because charity-bound agents compose a higher-order body within which corrective work is genuinely shared (Friston PRS-06), grounded in covenant solidarity (Wright)."
 central_theme_thread: "The perspective-limited agent cannot match the infinite whole by quantity, yet is included by the proportionate turning of all it is and by being a member whose corrective work is borne with and for others — loving unity as the interdependence of limited agents in one body."
 tags: [synthesis, day/264, theme/proportionate-and-shared-satisfaction]
-last_qc_at: "2026-07-27T20:21:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T00:26:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 264 — Vicarious Satisfaction (Contemporary Parallel)
@@ -36,7 +36,7 @@ Friston's program is the structural resource for the vicarious half. In Tom's PR
 
 For the finite/infinite half, the project's recurring move applies: what the perspective-limited agent contributes is genuineness, not magnitude — the *proportion* (whole-hearted orientation) rather than a quantity it could never reach. This echoes Day 260's threshold logic raised to the relation with the infinite: sufficiency is about the orientation of the whole limited self, not an impossible amount.
 
-Wright grounds the *content* decisively. The corporate solidarity of the covenant people — bearing one another's burdens, the one for the many, the body in which members' actions are reckoned to the whole — is the scriptural ground truth for vicarious satisfaction, culminating in the representative work of Christ for the body. Rohr (PRS-7, relationship ontologically prior) frames the shared Body as more fundamental than the isolated individual, which is why one's corrective work can be genuinely *for* another. Fredrickson's broaden-and-build resonates with the closing point that *positive* good deeds void punishment more than mere omission of evil — corrective action, not just avoidance.
+Wright grounds the *content* decisively. The corporate solidarity of the covenant people — bearing one another's burdens, the one for the many, the body in which members' actions are reckoned to the whole — is the scriptural shape of vicarious satisfaction, culminating in the representative work of Christ for the body. Rohr (PRS-7, relationship ontologically prior) frames the shared Body as more fundamental than the isolated individual, which is why one's corrective work can be genuinely *for* another. Fredrickson's broaden-and-build resonates with the closing point that *positive* good deeds void punishment more than mere omission of evil — corrective action, not just avoidance.
 
 ## Solution (proposed, speculative)
 
@@ -49,7 +49,7 @@ The motif reaches one of its deepest statements. The perspective-limited agent c
 ## Bridges
 
 - **Friston PRS-06 (agents forming a higher-order body; shared corrective work)** — *formal, developing.* Vicarious satisfaction as distributed free-energy reduction within a charity-bound whole.
-- **Wright (corporate solidarity; the one for the many)** — *scriptural, high within method.* The ground truth for satisfying for another.
+- **Wright (corporate solidarity; the one for the many)** — *scriptural, high within method.* The scriptural basis for satisfying for another.
 - **Rohr PRS-7 (relationship ontologically prior; shared Body)** — *theological / contemplative.* Why one's work can be genuinely for another.
 - **Fredrickson (positive corrective action)** — *empirical (affective science).* Good deeds void punishment more than mere omission.
 
