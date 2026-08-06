@@ -28,10 +28,19 @@ The desktop app writes one `audit.jsonl` per scheduled run, under
 whose first line carries `<scheduled-task ... file="<the task's SKILL.md>">`, which is
 how a transcript is attributed to a task. A run that reaches the end emits a record of
 `"type": "result"`. Across those 110 transcripts that record is present in exactly the
-71 that finished and absent from all 39 that did not, and in the 39 the trailing
-`tool_use` block is the tool that was awaiting permission -- a distribution that
-matches the independently-measured one in the memory above (Gmail label/unlabel/draft,
-`mcp__workspace__bash`, cowork file-delete, TaskUpdate).
+71 that finished and absent from all 39 that did not.
+
+Naming the blocker reads the app's own `permission_request` record, whose `tool_name`
+field IS the tool holding the prompt; an unanswered one (no following
+`permission_response` or `permission_auto_approved`) is the blocker. The trailing
+`tool_use` block survives only as a fallback for a stall with no permission record at
+all. It was the original signal and it is **wrong whenever a model turn emits several
+tool_use blocks and the prompt lands on an early one** -- which is the normal case, not
+a corner: on 2026-08-06 the run was held on a Gmail `unlabel_message` while the last
+block in the turn was `TaskUpdate`, and on 2026-08-04 it was held on the same Gmail
+call while the last block was `mcp__workspace__bash`. Both were reported as the wrong
+tool for two days, and the 08-04 misreading is what put `mcp__workspace__bash` on the
+do-not-approve list.
 
 So: **no `result` record == did not finish.** Elapsed time is deliberately NOT the
 signal -- a hung transcript stops being written the moment it hangs, so a 5-day stall
@@ -44,6 +53,21 @@ This does not terminate anything and does not touch `approvedPermissions`. Tom's
 2026-08-04: do not widen auto-approval for an agent that holds `git push` rights to a
 public repo. The verdict goes to `scheduler/run_stall.md`, which `morning-system-health`
 reads at 06:00.
+
+`approvedPermissions`, on the task's own registry entry, is the ONLY allowlist these
+runs honour -- it is what emits `permission_auto_approved`, and it is written by
+answering a prompt with "always allow" in the app. A `permissions.allow` block in
+`.claude/settings.json` does nothing here: the run's cwd is its own `outputs/`
+directory under Application Support, so the project file is never discovered, and the
+14 entries added to the global file on 2026-08-05 changed nothing -- on 08-06 all four
+Gmail tools listed there prompted exactly as they had on 08-02 and 08-04.
+
+Re-measured over 111 transcripts once the blocker was read from `permission_request`
+instead of the trailing `tool_use`: 71 finished, 40 did not, and the blockers are Gmail
+`unlabel_message` 14, `unlabel_thread` 5, `create_draft` 5 (all before it was approved
+in 2026-05), `label_thread` 2 -- 26 of 40 -- then `allow_cowork_file_delete` 5,
+`Bash`/`mcp__workspace__bash` 2 each, `TaskUpdate` 2, `move_file` and `start_process` 1
+each.
 
 Usage
 -----
@@ -113,7 +137,8 @@ def scan_transcript(path):
     """Did this run finish, when did it last write, and what was it waiting on."""
     last_ts = None
     finished = False
-    blocked_tool = None
+    last_tool = None
+    pending_permission = None
     try:
         with open(path, errors="replace") as fh:
             for line in fh:
@@ -127,16 +152,28 @@ def scan_transcript(path):
                     finished = True
                 if rec.get("timestamp"):
                     last_ts = rec["timestamp"]
-                # Track every tool_use; whichever survives to the end of a transcript
-                # that never finished is the call left awaiting permission.
+                # The transcript says outright which tool raised a prompt. A request
+                # with no answer after it is the tool the run is sitting on; prompts
+                # are serial, so the next answer of any kind clears the outstanding
+                # one.
+                subtype = rec.get("subtype")
+                if subtype == "permission_request":
+                    pending_permission = rec.get("tool_name")
+                elif subtype in ("permission_response", "permission_auto_approved"):
+                    pending_permission = None
+                # Fallback only. A model turn can emit several tool_use blocks at
+                # once, and the one that prompts need not be the last -- on
+                # 2026-08-06 the prompt was on the first of three, so the trailing
+                # block named TaskUpdate while the run was held on a Gmail call.
                 content = (rec.get("message") or {}).get("content")
                 if isinstance(content, list):
                     for block in content:
                         if isinstance(block, dict) and block.get("type") == "tool_use":
-                            blocked_tool = block.get("name")
+                            last_tool = block.get("name")
     except OSError:
         return None
-    return {"last_ts": last_ts, "finished": finished, "blocked_tool": blocked_tool}
+    return {"last_ts": last_ts, "finished": finished,
+            "blocked_tool": pending_permission or last_tool}
 
 
 def newest_transcript_for(task_file, sessions_glob):

@@ -76,6 +76,11 @@ def tool_use(name, stamp):
                         "content": [{"type": "tool_use", "name": name}]}}
 
 
+def perm(subtype, name):
+    """A permission_* system record. These carry no `timestamp` on disk."""
+    return {"type": "system", "subtype": subtype, "tool_name": name}
+
+
 def run(tasks, transcript_dir, now):
     mod.SESSIONS_GLOB = str(transcript_dir / "*/*/local_*/audit.jsonl")
     return mod.check(SPEC, tasks, quiet=True, now=now)
@@ -116,6 +121,23 @@ def main():
                "mcp__workspace__bash" in line, True)
         expect("stalled verdict reports how long it has been silent",
                "silent for" in line, True)
+
+        # The real shape of every observed hang: the prompt lands on one block of a
+        # multi-block turn and the turn keeps emitting. Reporting the trailing block
+        # named the wrong tool on 08-04 and 08-06, and the 08-04 misreading is what
+        # got mcp__workspace__bash held back from approval.
+        held = tmp / "held"
+        write_transcript(held, iso(ran), [
+            tool_use("mcp__gmail__unlabel_message", iso(ran + timedelta(seconds=50))),
+            perm("permission_request", "mcp__gmail__unlabel_message"),
+            tool_use("TaskUpdate", iso(ran + timedelta(seconds=51))),
+        ])
+        ok, line = run({"t": task}, held, now)
+        expect("multi-block turn still fails", ok, False)
+        expect("verdict names the tool holding the prompt",
+               "mcp__gmail__unlabel_message" in line, True)
+        expect("verdict does not name the trailing tool_use",
+               "TaskUpdate" in line, False)
 
         # A transcript from some other day is not evidence about the run that just
         # happened; treating it as such would report a stale success.
@@ -169,7 +191,27 @@ def main():
             [tool_use("Edit", iso(ran)),
              {"type": "result", "timestamp": iso(ran + timedelta(minutes=1))}])))
         expect("scan sees the result record", scanned["finished"], True)
-        expect("scan keeps the last tool_use", scanned["blocked_tool"], "Edit")
+        expect("scan falls back to the last tool_use when nothing prompted",
+               scanned["blocked_tool"], "Edit")
+
+        # An ANSWERED request is not a blocker. Every run, finished or not, carries
+        # several of these; if they were not cleared, the first prompt of the morning
+        # would be reported as the blocker for the rest of the day.
+        answered = mod.scan_transcript(str(write_transcript(
+            tmp / "parse3", iso(ran),
+            [perm("permission_request", "mcp__gmail__search_threads"),
+             perm("permission_response", "mcp__gmail__search_threads"),
+             tool_use("Edit", iso(ran))])))
+        expect("an answered request does not count as the blocker",
+               answered["blocked_tool"], "Edit")
+
+        auto = mod.scan_transcript(str(write_transcript(
+            tmp / "parse4", iso(ran),
+            [perm("permission_request", "mcp__gmail__create_draft"),
+             perm("permission_auto_approved", "mcp__gmail__create_draft"),
+             tool_use("Edit", iso(ran))])))
+        expect("approvedPermissions auto-approval clears the request too",
+               auto["blocked_tool"], "Edit")
 
         if FAILURES:
             print(f"\n{len(FAILURES)} case(s) wrong:")
