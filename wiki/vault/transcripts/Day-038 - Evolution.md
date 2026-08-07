@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-038 - Evolution - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-29T16:24:23"
+last_qc_at: "2026-08-06T18:31:55"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/038, pars/I, q/73, q/74, theme/evolution, theme/sabbath, theme/trinitarian-creation, theme/humani-generis]

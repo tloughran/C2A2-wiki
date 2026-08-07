@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 bioelectric anatomical target states as morphogenetic memory — a stable imprinted target; PRS-08 anatomical morphospace)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — role-differentiation within the collective agent for joint inference)"
   - "traditions/rohr/prs_triplets.md (PRS-07 perichoretic relation — differentiation as gift-and-receipt, not domination)"
-  - "traditions/wright/wiki.md (the body of Christ with differentiated members; 1 Cor 12; covenant community)"
+  - "traditions/wright/prs_triplets.md (PRS-32 — roles individuated by call, gift, and commission; members differentiated by function within one composite agent, not ranked by category; 1 Cor 12)"
 evidence_strength_summary: "Role-differentiation within a collective agent is formal (Friston PRS-06); the indelible-character-as-stable-imprint analogy is empirical-by-analogy (Levin PRS-01, drawn carefully); the relational reading of order is theological (Rohr PRS-07, Wright); the sacramental conferral of an ontological character is theological."
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-07-29T00:21:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-06T04:29:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 274 — Holy Orders (Contemporary)
@@ -53,7 +53,7 @@ The central claim holds that each agent perceives only in part, and that loving 
 - **Levin PRS-01** (empirical, by analogy): bioelectric target states as morphogenetic memory — a stable, persisting imprint that thereafter governs a member. Why this pairing: it gives "indelible character" an empirically intelligible image, offered as illumination.
 - **Friston PRS-06** (formal): multi-agent coherence via mutual modeling and role-differentiation — the collective agent acting as one through specialized members. Why: it reads the grades of Order functionally, as the structure coordinated agency requires.
 - **Rohr PRS-07** (theological): the perichoretic Trinity — relation as basal gift-and-receipt. Why: it prevents differentiation from being read as domination.
-- **Wright, 1 Cor 12 / body of Christ** (theological): differentiated members serving one body. Why: it supplies the direct scriptural form for sacred order as functional diversity in unity.
+- **PRS-32 in the Wright-tradition wiki / 1 Cor 12, body of Christ** (theological): members differentiated by function within one composite agent, not ranked by category. Why: it supplies the direct scriptural form for sacred order as functional diversity in unity.
 
 ## Where this leaves us
 

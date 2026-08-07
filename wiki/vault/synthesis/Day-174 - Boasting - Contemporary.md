@@ -8,7 +8,7 @@ length_tier: short
 length_ratio_to_target: 0.66
 length_note: "Under short-tier target — Q.112 (boasting) and Q.113 (self-deprecation) are short annexed articles fully treated without padding; short-and-substantive preferred per the length policy."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-04 precision/confidence; PRS-06 self-report calibration in mutual modeling)"
+  - "traditions/friston/prs_triplets.md (PRS-28 neuromodulation as precision-weighting on belief updates; PRS-06 multi-agent coherence via mutual modeling)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 self-aggrandizement vs accurate self-perception)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation; the false claim to self-completeness)"
   - "traditions/fredrickson/prs_triplets.md (authentic self-worth vs performed superiority)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Metacognitive calibration / overconfidence effects a
 mind_first_reframe: "Truthfulness about oneself is accurate self-calibration: boasting and false self-deprecation are the two miscalibrations of self-report that corrupt a community's allocation of trust, boasting being at depth the false claim to self-completeness by a perspective-limited agent."
 central_theme_thread: "Agents are individuated by the limitation of their perspective; boasting is the agent treating its limited perspective as if it were the whole — the precise error the central theme warns against — while accurate self-assessment lets an agent know when to defer to those who see more and when to offer what only it can see."
 tags: [synthesis, day/174, theme/self-calibration, theme/perspective-limitation, q/112, q/113]
-last_qc_at: "2026-07-28T14:26:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-06T00:19:43"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 174 — Boasting (Contemporary)
@@ -36,7 +36,7 @@ For a community of limited agents to allocate trust and tasks well, each agent's
 
 ## Resource
 
-**Friston on precision and self-report calibration** (PRS-04, PRS-06 in the Friston-tradition wiki) frames it. Active-inference agents weight their signals by precision — an estimate of reliability. Boasting is, in effect, a false precision claim: signaling higher confidence in one's own excellence than the evidence warrants, which miscalibrates how others weight one's contributions. False self-deprecation is the symmetric error. Well-calibrated self-report is what lets a multi-agent system route trust to where competence actually is. This is the formal version of Aquinas's "mean of truth about oneself."
+**Friston on precision and self-report calibration** (PRS-28, PRS-06 in the Friston-tradition wiki) frames it. Active-inference agents weight their signals by precision — an estimate of reliability. Boasting is, in effect, a false precision claim: signaling higher confidence in one's own excellence than the evidence warrants, which miscalibrates how others weight one's contributions. False self-deprecation is the symmetric error. Well-calibrated self-report is what lets a multi-agent system route trust to where competence actually is. This is the formal version of Aquinas's "mean of truth about oneself."
 
 **McGilchrist** (PRS-01 in the McGilchrist-tradition wiki) adds the cognitive portrait: the self-aggrandizing presentation belongs to the grasping, self-promoting mode, while accurate self-perception — seeing oneself as one part of a larger whole — belongs to the relational mode. Boasting is the part mistaking itself for more than a part.
 
@@ -56,7 +56,7 @@ This question sits unusually close to the project's center. Agents are individua
 
 ## Bridges
 
-- **Friston PRS-04, PRS-06** (precision; self-report calibration) — boasting as false-precision self-signaling; the mean-of-truth as calibration. *Empirical / formal.*
+- **Friston PRS-28, PRS-06** (precision-weighting on belief updates; multi-agent coherence via mutual modeling) — boasting as false-precision self-signaling; the mean-of-truth as calibration. *Empirical / formal.*
 - **McGilchrist PRS-01** (self-aggrandizement vs relational self-perception) — the part mistaking itself for more than a part. *Empirical.*
 - **Kastrup PRS-02** (individuation-within-monism) — boasting as the false claim to self-completeness. *Speculative / metaphysical.*
 - **Fredrickson** (authentic worth vs performed superiority) — secure positivity needs no audience. *Empirical.*

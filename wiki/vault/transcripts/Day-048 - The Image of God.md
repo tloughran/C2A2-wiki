@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: "tactiq.io via Chrome MCP (catch-up batch)"
 synthesis: "[[Day-048 - The Image of God - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-29T16:24:48"
+last_qc_at: "2026-08-06T18:32:21"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-05
 tags: [summa, day/048, pars/I]

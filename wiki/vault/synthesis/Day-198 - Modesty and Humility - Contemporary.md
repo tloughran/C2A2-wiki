@@ -11,13 +11,14 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociated alters; PRS-08 Daimonic individuation — character and vocation)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 left-hemisphere grandiosity vs right-hemisphere receptivity; PRS-09 attention as love)"
   - "traditions/fredrickson/prs_triplets.md (PRS-09 weak-tie resonance as societal-scale intellectual humility)"
-  - "traditions/wright/ (PRS-01 critical realism, perspectival knowing); traditions/rohr/ (PRS-01 non-dual knowing)"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism, perspectival knowing)"
+  - "traditions/rohr/prs_triplets.md (PRS-01 dualistic knowing; non-dual awareness as contemplative epistemology)"
 evidence_strength_summary: "Humility-as-calibrated-self-model = conceptual with cognitive-science anchor, medium; the self as constructed interface-icon (so overconfidence is the default failure) = metaphysical-speculative drawing on interface theory and analytic idealism; 'another's good hidden from me' as interface-occlusion = strong structural fit; the ranking of humility among virtues = moral-theological."
 mind_first_reframe: "Humility is the well-calibrated self-model: an accurate estimate of one's own excellence that, because the self is a constructed interface-icon rather than a transparent readout, must correct for a built-in overconfidence and for the goods in other agents that one's own interface cannot see. Magnanimity and humility are the two-sided regulation of that estimate against under- and over-shoot."
 central_theme_thread: "Humility is the explicit acknowledgement of perspective-limitation: 'another may have a good hidden from me.' It is the epistemic posture that makes loving unity computable, because it is the posture under which a limited agent accepts guidance from those who see more."
 tags: [synthesis, day/198, theme/calibrated-self-model]
-last_qc_at: "2026-07-29T04:23:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-06T06:29:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 198 — Modesty & Humility (Contemporary Parallel)

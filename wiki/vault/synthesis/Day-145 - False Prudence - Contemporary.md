@@ -3,21 +3,21 @@ day: 145
 title: False Prudence (Contemporary)
 pairs_with: "[[Day-145 - False Prudence]]"
 length_target_words: 1500
-length_actual_words: 1585
-length_ratio_to_target: 1.057
+length_actual_words: 1589
+length_ratio_to_target: 1.059
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception as fitness-tracking — the interface optimizes payoff, not truth; 'prudence of the flesh' as competence aimed at the icon)"
   - "traditions/levin/prs_triplets.md (intelligence as end-neutral problem-solving under limited resources — competence does not fix the goal; via James, per the project's PRS lineage)"
   - "traditions/friston/prs_triplets.md (PRS-16 misweighted precision on temporal variables = 'undue solicitude'; the competent optimizer pointed at the wrong prior preference)"
-  - "traditions/macintyre/prs_triplets.md (P3 internal goods of a practice vs. displacing external goods — money, power, status; the structural diagnosis of false prudence)"
-  - "traditions/rohr/prs_triplets.md (detachment / the false self's grasping; 'be not solicitous' as contemplative trust; covetousness as the absolutized partial good)"
+  - "traditions/macintyre/prs_triplets.md (PRS-03, Label P3, practice-virtue-institution — internal goods of a practice vs. displacing external goods: money, power, status; the structural diagnosis of false prudence)"
+  - "traditions/rohr/prs_triplets.md (PRS-16 liberation from the ego's agenda — detachment as the contemplative remedy for the disordered desire of Q.55 a.8; the false self's grasping, 'be not solicitous' as contemplative trust, covetousness as the absolutized partial good)"
   - "traditions/wright/prs_triplets.md (PRS-01 critical realism; Matt 6 / Sermon on the Mount — seek first the kingdom; covetousness as idolatry)"
 evidence_strength_summary: "The governing claim — competence is end-neutral, so a perspective can compute brilliantly toward a corrupt end (prudence of the flesh, Q.55 a.1) — is robust (Levin/James on problem-solving under limited resources; the end is supplied from elsewhere). 'Prudence of the flesh' as optimization for fitness-payoff rather than truth/the whole (Hoffman PRS-03): theory-strong, contested-but-formal. Undue solicitude (a.6–7) as misweighted precision on temporal variables (Friston PRS-16): formal analogy, medium. Craftiness/guile/fraud as corrupt means / instrumentalizing untethered from the real good: interpretive, medium. The theological diagnosis — covetousness as the root, detachment as the remedy (a.8): high in field. The whole rests on Day 141 a.13 (true prudence requires the right end)."
 mind_first_reframe: "The prudence treatise closes on its counterfeits, and they are defined by exactly the seam the project has tracked all batch: competence versus telos. 'Prudence of the flesh' (Q.55 a.1) is a man 'adept in discovering and executing the best means' — fully competent practical reason — directed at 'carnal goods as the last end of his life.' Craftiness, guile, and fraud are the pursuit of an end by 'false and counterfeit means.' Negligence (Q.54) is competence that fails to fire. Read through mind / conscious-realist monism, the diagnosis is sharp: intelligence is end-neutral problem-solving (Levin via James), so the machinery of prudence can run perfectly toward a partial good clutched as the whole. What converts competent computation into virtue is the end — and the right end, loving union with God, is charity's gift, never the computation's own product."
 central_theme_thread: "This is the negative image of the whole project. The central claim says loving unity is the goal each limited perspective computes toward; false prudence is the computation aimed away from the whole, at a partial good seized as if it were the whole. 'Prudence of the flesh' is a perspective optimizing its own interface-payoffs — exactly the fitness-over-truth bias the project names as the deep risk of any limited viewpoint — and undue solicitude is that bias misweighting the present against a future entrusted to providence. Covetousness, Aquinas's root of all these vices, is the absolutizing of one's partial good; detachment, his remedy, is the refusal to absolutize it — the practical discipline of holding one's own perspective's goods loosely enough to be reoriented toward the whole. The same machinery, the wrong telos: this is what 'working out salvation' looks like when it is not worked out."
 tags: [synthesis, day/145, theme/competence-without-the-whole]
-last_qc_at: "2026-07-29T18:35:08"
+last_qc_at: "2026-08-06T20:26:49"
 last_qc_outcome: "rewrote"
 ---
 
@@ -56,7 +56,7 @@ This is the negative image of the whole project, and it belongs at the close of 
 - *Intelligence-as-end-neutral-problem-solving in the Levin-tradition wiki (via James) + Day 141 a.13* — competence never makes prudence virtuous; the end does. "Prudence of the flesh" is adept skill aimed at a worldly last end. (Robust.)
 - *PRS-03 in the Hoffman-tradition wiki* — flesh-prudence as optimization for fitness-payoff rather than truth/the whole; the skilled converse of Q.46's folly. (Theory-strong; contested-but-formal.)
 - *PRS-16 in the Friston-tradition wiki* — undue solicitude (a.6–7) as misweighted precision across the temporal horizon; "every time has its own solicitude." (Formal analogy; medium.)
-- *P3 in the MacIntyre-tradition wiki + detachment in the Rohr-tradition wiki + PRS-01 in the Wright-tradition wiki* — covetousness as external goods displacing a practice's internal goods (a.8); detachment and "seek first the kingdom" (Matt 6) as the remedy; covetousness as idolatry. (Interpretive + theological; high in field.)
+- *PRS-03 in the MacIntyre-tradition wiki + PRS-16 in the Rohr-tradition wiki + PRS-01 in the Wright-tradition wiki* — covetousness as external goods displacing a practice's internal goods (a.8); detachment and "seek first the kingdom" (Matt 6) as the remedy; covetousness as idolatry. (Interpretive + theological; high in field.)
 
 ## Where this leaves us
 

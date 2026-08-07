@@ -8,7 +8,6 @@ length_ratio_to_target: 0.64
 length_tier: long
 length_note: "Long-tier transcript (3602w) but Q.2 a.1-3 develops as a single integrated architecture-claim — one act with three aspects, intellect/will unified under active-inference, faith's necessity above natural reason as Hoffman-interface structural consequence; commentary follows that integration rather than spreading across articles. Substantively complete in focused form; padding would dilute the single move."
 karpathy_wiki_sources:
-  - "traditions/stump/wiki.md (faith-as-knowledge-of-persons; second-first-language)"
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan/second-person knowing — faith-as-knowledge-of-persons)"
   - "traditions/hoffman/wiki.md (interface theory; conscious agents)"
   - "traditions/kastrup/wiki.md (analytic idealism; alters)"

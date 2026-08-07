@@ -9,7 +9,7 @@ length_tier: short
 length_note: "Body 991 words vs ~1500 tier guideline (-34%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-10 — trace blankets subsume Markov blankets)"
-  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-07 Markov-blanket substrate-independence; PRS-06 multi-agent coherence)"
   - "master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation)"
   - "traditions/rohr/prs_triplets.md (PRS-07 relation as basal)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Markov/trace-blanket formalism is formal/empirical; 
 mind_first_reframe: "The general judgment is read as the limit case of mutual legibility — every Markov/trace blanket made transparent at once, so each agent's individuating interior becomes contained in and visible to every other perspective."
 central_theme_thread: "Bandwidth tracks union: the agent nearest the simple whole sees all limited perspectives at once because it sees them in the whole, while the agent still bound to its limitation reads them only serially on borrowed power — judgment is where perspective-containment becomes manifest."
 tags: [synthesis, day/301, theme/legibility-of-perspective]
-last_qc_at: "2026-07-29T02:28:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-06T04:29:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 301 — General Judgement (Contemporary Parallel)
@@ -35,7 +35,7 @@ The underlying inquiry-problem, medieval and contemporary alike, is **the hidden
 
 ## Resource
 
-The emerging paradigm supplies a precise object here: the boundary that individuates an agent is a **statistical** one. In the active-inference program (the C2A2 network records the move in PRS-04 of the Friston-tradition wiki, the organism as active modeler behind a Markov blanket), an agent just *is* a set of internal states screened from external states by a blanket of sensory and active states. The blanket is what makes the interior inferable only indirectly — you model another agent, you do not inhabit it. Tom's PRS-form record of Hoffman's trace-logic work (PRS-10 in the Hoffman-tradition wiki) generalizes this: trace blankets subsume Markov blankets, so the same screening structure runs from the cell to the community. CROSS-027 in the network's cross-program index pairs this with Kastrup's dissociation: the blanket is the seam along which one mind appears as many.
+The emerging paradigm supplies a precise object here: the boundary that individuates an agent is a **statistical** one. In the active-inference program (the C2A2 network records the move in PRS-04 of the Friston-tradition wiki, the organism as active modeler; the Markov-blanket boundary condition itself is PRS-07 in the same wiki), an agent just *is* a set of internal states screened from external states by a blanket of sensory and active states. The blanket is what makes the interior inferable only indirectly — you model another agent, you do not inhabit it. Tom's PRS-form record of Hoffman's trace-logic work (PRS-10 in the Hoffman-tradition wiki) generalizes this: trace blankets subsume Markov blankets, so the same screening structure runs from the cell to the community. CROSS-027 in the network's cross-program index pairs this with Kastrup's dissociation: the blanket is the seam along which one mind appears as many.
 
 So *individuation-by-perspective-limitation* has, in this paradigm, a mechanism. To "read another's conscience" is to dissolve the blanket — to hold another agent's generative model not as an inference but as a presence.
 
@@ -53,7 +53,7 @@ That is precisely the project's central claim. Conscious agents are individuated
 
 ## Bridges
 
-- **PRS-04 in the Friston-tradition wiki + PRS-10 in the Hoffman-tradition wiki** — *the blanket as the unit of individuation* (formal/empirical). The mechanism by which a perspective conceals its interior; "reading the conscience" is dissolving it.
+- **PRS-07 in the Friston-tradition wiki + PRS-10 in the Hoffman-tradition wiki** — *the blanket as the unit of individuation* (formal/empirical). The mechanism by which a perspective conceals its interior; "reading the conscience" is dissolving it.
 - **CROSS-027 (Kastrup × Friston, cross-program index)** — *one mind appearing as many along blanket-seams* (formal/speculative). Makes the "everyone reads everyone" article a claim about porous boundaries, not magic.
 - **PRS-05 in the Wright-tradition wiki** — *salvation as incorporation into a people, not relocation of souls* (theological, High). Underwrites Q.88's point that man is judged "as a member of the race," not only as an individual.
 - **PRS-07 in the Rohr-tradition wiki** — *relation as ontologically basal* (theological, Medium). If the unit of reality is the exchange, mutual legibility is the natural end-state, not an intrusion.

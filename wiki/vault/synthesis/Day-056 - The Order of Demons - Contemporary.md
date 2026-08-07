@@ -10,14 +10,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission — Wandering in Darkness; willed evil at high substrate-coupling)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — policy-selection under catastrophic dispositional state)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociation at supernatural scale)"
-  - "wiki/traditions/mcgilchrist/wiki.md (pathology of attention)"
-  - "wiki/master/cross_program_index.md (CROSS on substrate-independence)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry — left-hemisphere closure and grasping; PRS-05 attention as ontological act — the mode of attending constitutes the world disclosed)"
+  - "wiki/master/cross_program_index.md (CROSS-001 is consciousness substrate-independent?)"
 evidence_strength_summary: "Theological-traditional on demonology proper; speculative-philosophical on the contemporary mind-monist read; Stump/MacIntyre evidentially strong on the willed-evil-under-tradition phenomenology"
 mind_first_reframe: "The order of demons preserves Pseudo-Dionysian gradation by substrate-coupling-depth even as the dispositional state inverts; Q.109's natural-ordering-survives-the-fall claim becomes the contemporary frame of catastrophic-prior-displacement at high substrate-coupling-depth, with substrate-pattern-information transmission preserved but truth-toward-the-good information transmission lost."
 central_theme_thread: "Today's day shows the limit case of perspective-limitation — an agent at the highest substrate-coupling-depth available to a creature whose dispositional state has nonetheless settled into mis-orientation against the loving unity, making clear that orientation is not given by coupling-depth alone and that 'salvation in fear and trembling' must be re-affirmed in dispositional formation."
 tags: [synthesis, day/056, theme/willed-evil, theme/multi-agent-network]
-last_qc_at: "2026-07-28T20:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-05T22:28:31"
+last_qc_outcome: "rewrote"
 ---
 # Day 56 — Contemporary Parallel: *The Order of Demons as Catastrophic Dispositional State at High Substrate-Coupling*
 
@@ -60,7 +60,7 @@ Today's day shows the *limit case* of perspective-limitation: an agent at the hi
 - **Stump-tradition wiki, *Wandering in Darkness*.** Phenomenology of willed evil under second-person knowing. *Theological-philosophical primary; book-length argument.*
 - **Friston-tradition wiki, PRS-04 (organism as active modeler) — policy-selection under inverted priors.** Formalism for stable dispositional mis-orientation. *Mature formalism; speculative application.*
 - **Kastrup-tradition wiki, PRS-02 (individual identity within monism) — dissociation-as-relational-structure.** The substrate-direct-mode dissociation account. *Philosophical-conceptual.*
-- **McGilchrist-tradition wiki, pathology of attention.** Hemispheric closure as a contemporary analog of orientation-fixation. *Strong neuropsychiatric evidence; analogical extension.*
+- **PRS-01 + PRS-05 in the McGilchrist-tradition wiki (`wiki/traditions/mcgilchrist/prs_triplets.md`) — hemispheric asymmetry; attention as ontological act.** Left-hemisphere closure-and-grasping as a contemporary analog of orientation-fixation, and the mode of attending as itself world-constituting. *Strong neuropsychiatric evidence; analogical extension.*
 - **Wright, *The Resurrection of the Son of God*; *Surprised by Hope*.** New-creation as the substrate-network's eschatological resolution of the demonic sub-network. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** The cosmic-Christ pattern's relation to the demonic-as-shadow. *Contemplative theological.*
 - **Pseudo-Dionysius, *Celestial Hierarchies*; Ephesians 6:12; Wisdom 8:1; Matthew 25:41.**

@@ -12,13 +12,13 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation; PRS-26 persistence of memory/continuity in universal consciousness)"
   - "traditions/levin/prs_triplets.md (PRS-16 Platonic space; PRS-03 morphological attractor)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-06 resurrection as firstfruits of new creation)"
-  - "traditions/carroll/prs_triplets.md (PRS-21 arrow of time; PRS-14 explaining the arrow of time)"
+  - "traditions/carroll/prs_triplets.md (PRS-21 arrow of time in a cyclic finite-dimensional setting; PRS-15 Past Hypothesis as the boundary condition grounding the arrow)"
   - "master/cross_program_index.md (CROSS-002 is spacetime fundamental; CROSS-014/QIT matter derivative of consciousness; CROSS-062 Hoffman interface × Thomistic intellect-over-sense)"
 evidence_strength_summary: "Interface/idealist case that perceived spacetime is species-specific is formal/philosophical (Hoffman theorem-grade for FBT; ontological reading contested); 'new creation not escape' is theological (Wright, High); vision-without-comprehension as persistent perspectival finitude is the load-bearing speculative claim. Aquinas's celestial-matter cosmology is explicitly flagged obsolete in the episode itself."
 mind_first_reframe: "Renewed creation is the species-specific interface perfected rather than discarded — perceived spacetime made fully translucent to the reality it renders — and the beatific vision is the limit case of knowing that substrate directly, yet without comprehending it."
 central_theme_thread: "Vision-without-comprehension keeps individuation honest: when perspective-limitation is removed the simple whole is seen and the finite agent is contained in it, but is fulfilled within the whole rather than absorbed into it — union, not absorption."
 tags: [synthesis, day/303, theme/whole-seen-not-comprehended]
-last_qc_at: "2026-07-29T02:29:02"
+last_qc_at: "2026-08-06T06:29:53"
 last_qc_outcome: "rewrote"
 ---
 
@@ -42,7 +42,7 @@ Read through these, Aquinas's two claims rhyme. "The carnal eye cannot attain th
 
 ## Solution (proposed, speculative)
 
-The contemporary parallel proposes: the renewed creation is the interface *perfected rather than discarded* — the rendering made fully translucent to what it renders — while the beatific vision is the limit case of knowing the substrate directly. With Aquinas, it keeps that the body and the sensible world are *included*, not escaped (this is where Wright's new-creation theology is decisive, below). Where it reframes: it reads "world made new" not as a second cosmos bolted on but as the present one seen without the fitness-distortion of the interface — CROSS-062 in the network index already pairs Hoffman's non-veridical interface with the Thomistic priority of intellect over sense. Evidence strength, marked honestly: the fitness-beats-truth theorem is formal; the ontological "spacetime is doomed" reading is contested; analytic idealism is a serious but non-consensus metaphysics; and Aquinas's specific cosmology (immutable celestial matter, motion-to-rest) is, as Austin himself notes, obsolete physics — Carroll's account of the arrow of time (PRS-21, PRS-14) is the live replacement for "why motion ceases," and it does not deliver Aquinas's conclusion.
+The contemporary parallel proposes: the renewed creation is the interface *perfected rather than discarded* — the rendering made fully translucent to what it renders — while the beatific vision is the limit case of knowing the substrate directly. With Aquinas, it keeps that the body and the sensible world are *included*, not escaped (this is where Wright's new-creation theology is decisive, below). Where it reframes: it reads "world made new" not as a second cosmos bolted on but as the present one seen without the fitness-distortion of the interface — CROSS-062 in the network index already pairs Hoffman's non-veridical interface with the Thomistic priority of intellect over sense. Evidence strength, marked honestly: the fitness-beats-truth theorem is formal; the ontological "spacetime is doomed" reading is contested; analytic idealism is a serious but non-consensus metaphysics; and Aquinas's specific cosmology (immutable celestial matter, motion-to-rest) is, as Austin himself notes, obsolete physics — Carroll's account of the arrow of time (PRS-15's Past Hypothesis, extended by PRS-21) is the live replacement for "why motion ceases," and it does not deliver Aquinas's conclusion.
 
 ## The central-theme thread
 
@@ -58,7 +58,7 @@ This is the project's central claim stated by Aquinas himself, and it is worth m
 - **PRS-02 + PRS-26 in the Kastrup-tradition wiki** — *individuation as dissociation; persistence of continuity in universal consciousness* (philosophical/speculative). Keeps vision-without-comprehension from collapsing into absorption.
 - **PRS-16 + PRS-03 in the Levin-tradition wiki** — *form as a real attractor in Platonic space* (empirical/formal). "Renewal not of species but of glory" = the same attractor more fully realized.
 - **PRS-05 + PRS-06 in the Wright-tradition wiki** — *salvation as incorporation; resurrection as firstfruits of new creation, not escape* (theological, High). The strongest guard against reading "new earth" as world-denial.
-- **PRS-21 + PRS-14 in the Carroll-tradition wiki** — *the arrow of time* (formal). The live replacement for Aquinas's obsolete "motion ceases" cosmology; marks where the medieval physics fails and the structural claim survives.
+- **PRS-15 + PRS-21 in the Carroll-tradition wiki** — *the Past Hypothesis as the boundary condition grounding the arrow of time, extended into a cyclic finite-dimensional setting* (formal). The live replacement for Aquinas's obsolete "motion ceases" cosmology; marks where the medieval physics fails and the structural claim survives.
 
 ## Where this leaves us
 
