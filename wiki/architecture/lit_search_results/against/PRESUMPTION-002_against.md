@@ -195,3 +195,72 @@ SEARCH-AGAINST-PRESUMPTION-002 (RE-TRIGGER cycle 3):
   Specific risks: Unchanged from prior cycle.
   Mitigations available: Unchanged from prior cycle.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-002 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: PRESUMPTION-002
+  Original statement: "Thousand Brains transfers intact to multi-agent AI"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: PRESUMPTION-002
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15b (cycle 6, 2026-08-08): re-searched for challenging literature; NEW SOURCES FOUND
+    Current status: CHALLENGED (strong; the challenge is specifically to the word "intact", and it strengthened this cycle)
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. No new 14a/14b batch; cohort drawn from the standing
+    15d backlog (2026-07-05 monthly re-trigger, cycle 5, unconsumed 34 days). INDEPENDENCE DISCLOSURE,
+    stated up front because this batch is partly ABOUT independence: 15a and 15b were executed by one
+    model in one context in this run. The separation is procedural, not architectural. This is the
+    condition ASSUMPTION-769 and PRESUMPTION-696 name, and it applies to this file.
+
+  Challenging evidence found: Yes
+
+  Sources (new this cycle):
+    1. Thousand Brains Project team (2026). "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid,
+       Robust Learning and Inference." Neural Computation 38(6), 845- . — Listed here as a CHALLENGE, not
+       only as support. The peer-reviewed statement of the framework scopes it to SENSORIMOTOR intelligence,
+       and to object recognition plus pose estimation through active movement. The clearer the primary
+       literature becomes, the narrower the claim it licenses. [UNVERIFIED: authors, page range.]
+    2. Monty documentation and third-party reading (arXiv:2605.22206, spiking reinterpretation). — Records
+       that the current implementation "encodes each observation as a static dense vector, discarding the
+       temporal order THAT THE THEORY TREATS AS FUNDAMENTAL." The reference implementation does not
+       instantiate a component the theory calls essential. [UNVERIFIED: authors.]
+    3. Hole, K.J. & Ahmad, S. (2021). "A thousand brains: toward biologically constrained AI." SN Applied
+       Sciences 3, 743. — The transfer argument is framed as BIOLOGICALLY CONSTRAINED AI; the constraints
+       are the content. Removing embodiment removes the constraint that does the work. [UNVERIFIED: exact
+       author list order.]
+    4. Absence result, recorded as such: 15b searched specifically for a published application of Thousand
+       Brains principles to a DISEMBODIED MULTI-AGENT TEXT system and found none. Absence of evidence is
+       reported here as absence, not as refutation.
+
+  Strength of challenge: Strong
+
+  Summary: The word 'intact' is where this fails, and the failure got sharper this cycle rather than softer. TBT's own flagship peer-reviewed paper defines the system by sensorimotor interaction: columns model objects by MOVING SENSORS OVER THEM and predicting the consequences of movement. C2A2's agents have no sensors, no movement, and no pose. What C2A2 borrows is the topology — many semi-independent models voting into a consensus — which is a real and defensible design pattern, but it is available from ensemble methods and blackboard architectures without any neuroscience. The presumption smuggles the theory's EMPIRICAL WARRANT across a gap the theory itself does not cross. Additionally, the reference implementation is documented as discarding temporal ordering that the theory calls fundamental — so even Monty is not TBT intact.
+
+  Specific risks: If false, C2A2's appeal to Thousand Brains is decorative: the architecture is an ensemble with a neuroscience label, and the label imports unearned confidence. The specific danger is inferential — design arguments of the form 'the cortex does X, therefore our agents should do X' would be invalid, and it is not recorded which C2A2 decisions rest on such arguments. CRITICAL risk flag at MONITOR-007 stands.
+
+  Mitigations available: State the borrowing as ANALOGICAL and enumerate which principles are claimed to transfer and under what adaptation — the 2026 paper makes this newly easy to do precisely. Alternatively, ground the same architecture in ensemble/blackboard literature, where the warrant is direct and the embodiment gap does not arise. Note that this presumption is an instance of the class ASSUMPTION-013 is about: a cross-tradition transfer justified by structural resemblance that has not been checked.
+
+  STEELMAN:
+    Item: PRESUMPTION-002
+    Strongest counterargument: Thousand Brains is a theory about how a SENSORIMOTOR system learns models of
+      objects by acting on them. Strip the acting and the objects and what remains is "have many models and
+      vote" — a claim that predates the theory by fifty years and needs none of it. So the transfer is either
+      trivial (the part that transfers is not distinctively TBT) or invalid (the distinctively TBT parts do
+      not transfer). Either way the presumption's work — importing TBT's empirical standing into C2A2's
+      design rationale — is not licensed. This got HARDER to deny this cycle, not easier, because the theory
+      now has a precise peer-reviewed statement of its own scope.
+    What would need to be true for C2A2 to be safe: an explicit list of transferred principles with stated
+      adaptations, and no design argument resting on an untransferred principle.
+    How to test: enumerate C2A2 design decisions that cite TBT; for each, ask whether it survives replacing
+      "cortical column" with "ensemble member". Those that do not are the exposed ones.
+
+  Recommendation: CHALLENGED

@@ -198,3 +198,71 @@ SEARCH-AGAINST-ASSUMPTION-013 (RE-TRIGGER cycle 3):
   Specific risks: Unchanged from prior cycle.
   Mitigations available: Unchanged from prior cycle.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-013 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: ASSUMPTION-013
+  Original statement: "Cross-tradition signals are reliable indicators"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: ASSUMPTION-013
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15b (cycle 6, 2026-08-08): re-searched for challenging literature; NEW SOURCES FOUND
+    Current status: CHALLENGED (strong, and now with one in-house confirming instance at REVISE-291)
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. No new 14a/14b batch; cohort drawn from the standing
+    15d backlog (2026-07-05 monthly re-trigger, cycle 5, unconsumed 34 days). INDEPENDENCE DISCLOSURE,
+    stated up front because this batch is partly ABOUT independence: 15a and 15b were executed by one
+    model in one context in this run. The separation is procedural, not architectural. This is the
+    condition ASSUMPTION-769 and PRESUMPTION-696 name, and it applies to this file.
+
+  Challenging evidence found: Yes
+
+  Sources (new this cycle):
+    1. Lewis, M. & Mitchell, M. (2024). "Using Counterfactual Tasks to Evaluate the Generality of Analogical
+       Reasoning in Large Language Models." arXiv:2402.08955. — On counterfactual variants that preserve the
+       abstract relation but leave the pre-training distribution, HUMAN performance holds and GPT performance
+       DECLINES SHARPLY. VERIFIED (title/authors/id consistent across listings).
+    2. "Evaluating the Robustness of Analogical Reasoning in Large Language Models." arXiv:2411.14215 /
+       OpenReview t5cy5v9wph. — Analogical fluency is fragile under controlled perturbation and in
+       far-analogy settings; calls for invariance-based metrics. [UNVERIFIED: authors.]
+    3. Survey finding (Analogical Reasoning in LLMs, EmergentMind, accessed 2026-08-08): LLM FALSE analogies
+       are "overwhelmingly driven by surface-level similarities — semantic overlap, contextual cues, or
+       textual proximity — rather than deep structural mappings." This is apophenia with a mechanism.
+       [UNVERIFIED: this is a survey page; the underlying study was not opened. Direction-only.]
+    4. "The Evaluation Trap: Benchmark Design as Theoretical Commitment." arXiv:2605.14167 (2026). —
+       Bears on the reliability claim indirectly but importantly: whatever metric C2A2 adopts for
+       'reliable signal' will encode a theory of what a cross-tradition connection IS. [UNVERIFIED: authors.]
+
+  Strength of challenge: Strong
+
+  Summary: The challenge is now specific rather than general. It is not 'LLMs sometimes see false patterns'; it is that the FAILURE MODE MATCHES C2A2's TASK EXACTLY. Cross-tradition detection means finding relations between corpora that rarely co-occur in training — a far-analogy, out-of-distribution setting, which is the precise regime where counterfactual evaluation shows sharp degradation. And the documented mechanism of false positives (surface semantic overlap standing in for structure) is the mechanism MONITOR-005 named as its central worry at cycle 0, now with literature behind it. Six cycles on, C2A2 still has no false-positive rate.
+
+  Specific risks: If false, the accelerator's core output — cross-tradition connections — is partly noise dressed as insight, and downstream links accrete on top of it. C2A2 has an in-house instance already: REVISE-291 / ASSUMPTION-803 (2026-08-07) flags a shared-word 'allostasis' link that may be a homonym rather than a homology. That is this challenge's predicted failure mode, observed.
+
+  Mitigations available: Counterfactual and invariance testing (sources 1-2) applied to a SAMPLE of already-emitted C2A2 signals: perturb surface vocabulary, keep the relation, and see whether the signal survives. Structure-mapping engines with LLM front-ends give a second, independent detector. Expert adjudication of a sample remains the gold standard and has never been run.
+
+  STEELMAN:
+    Item: ASSUMPTION-013
+    Strongest counterargument: A detector whose false-positive rate has never been measured is not an
+      unreliable detector — it is not yet a detector at all, it is a proposal. Six monitoring cycles have
+      passed. Each recorded "trajectory stable", which reads as reassurance but means only that no one
+      looked. Meanwhile the mechanism most likely to generate C2A2's signals (semantic proximity between
+      two traditions' vocabularies) is the exact mechanism the literature identifies as the source of
+      false analogies. The prior should therefore be that a meaningful share of the signal set is surface,
+      and the burden is on C2A2 to show otherwise on its own data.
+    What would need to be true for C2A2 to be safe: a measured false-positive rate on a sample, and a
+      stated threshold above which a signal is not published as a connection.
+    How to test: take 20 emitted cross-tradition signals; for each, rewrite both sides in the other
+      tradition's vocabulary with the shared terms removed; ask whether the relation still holds. The
+      survivors are structural. This is the ASSUMPTION-803 test generalised.
+
+  Recommendation: CHALLENGED

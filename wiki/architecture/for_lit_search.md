@@ -11112,7 +11112,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
 ### Monthly low-priority re-trigger cohort (62)
 
 [ASSUMPTION] ASSUMPTION-003: (see MONITOR-1 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-08-08] [SEARCHED-15b: 2026-08-08] [DISPOSITIONED-15c: 2026-08-08]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: HIGH
@@ -11133,7 +11133,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-4 cycle 5. 15d re-trigger only.
 
 [ASSUMPTION] ASSUMPTION-013: (see MONITOR-5 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-08-08] [SEARCHED-15b: 2026-08-08] [DISPOSITIONED-15c: 2026-08-08]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: HIGH
@@ -11147,7 +11147,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-6 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-002: (see MONITOR-7 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-08-08] [SEARCHED-15b: 2026-08-08] [DISPOSITIONED-15c: 2026-08-08]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: HIGH
@@ -11168,7 +11168,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-9 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-005: (see MONITOR-10 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-08-08] [SEARCHED-15b: 2026-08-08] [DISPOSITIONED-15c: 2026-08-08]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: HIGH
@@ -11182,7 +11182,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-11 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-010: (see MONITOR-12 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-08-08] [SEARCHED-15b: 2026-08-08] [DISPOSITIONED-15c: 2026-08-08]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: HIGH
@@ -15365,3 +15365,186 @@ vault. Flagged for particular attention:
 - ASSUMPTION-757 — the 4,000-token rule named UNSATISFIABLE for the first time, not merely exceeded.
 - ASSUMPTION-758 — OBJECT-LEVEL/POSITIVE: a warrant for the accelerator's core premise, a specimen of its own interaction protocol, and a citable Carroll contradiction, in one run.
 - ASSUMPTION-764 — `assumptions.md` LOST A RECORD (ASSUMPTION-217) between 08-04 and 08-05; restored verbatim from backup by this run; detected only by an offset check the prior snapshot had reported as clean.
+
+## 2026-08-06 — 14a / 14b EOD intake
+
+### [QUEUED] to 15a / 15b — 9 of 21 presumptions
+
+PRESUMPTION-696 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That the evaluator condition of REVISE-283 can be satisfied by a component built inside C2A2; the whole remedy space entertained is "add another agent," and whether an agent minted by the same designer, on the same model family, reading the same registers, counts as "a component that did not produce the artefact" is never asked. Risk: High. Search: auditor and evaluator independence conditions; self-testing and self-verifying systems; correlated failure in homogeneous verification stacks; independence assumptions in ensemble/committee methods. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from the form of the remedy against the wording of the condition it must satisfy
+    · Current status: REVISION-FLAGGED (DISPOSITION-615 / REVISE-284, 2026-08-07)
+
+PRESUMPTION-701 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That determinacy of target is sufficient warrant for a vault-wide sweep; Carroll PRS-14/15 cleared for bulk repair because "this has one determinate target, so a vault-wide sweep is safe," on the same day the same agent family warned that a sweep keyed on "Carroll PRS-07" "would have corrupted one of them." Risk: High — highest-blast-radius action currently authorised anywhere in the system. Search: safety conditions for automated bulk edits; false-uniqueness in identifier-keyed refactors; dry-run and diff-review protocols in mass data correction. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b read two same-day rulings from one agent family against each other
+    · Current status: REVISION-FLAGGED (DISPOSITION-616 / REVISE-285, 2026-08-07)
+
+PRESUMPTION-703 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That a parser bug announces itself by an implausible result; "the tell was the 100% miss rate; real defects are sparse" generalised in the same summary that records a near-miss it would not have caught (a plausible 21-pair difference from another session's cache). Risk: High — the day's entire self-catch record rests on implausibility. Search: silent data corruption detection; plausibility as an error signal and its failure modes; sentinel/canary values vs. outcome-based error detection. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b read the stated heuristic against the one near-miss in the same run that it would not have caught
+    · Current status: REVISION-FLAGGED (DISPOSITION-617 / REVISE-286, 2026-08-07)
+
+PRESUMPTION-707 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That naming the queue non-determinism explains it; "the `--max` starvation artifact again" presents as diagnosed a phenomenon that does not obviously cover the prior day's three identical calls returning 31/24/31 with disjoint membership. Risk: High — two days of holds, passes and escalations rest on a set that may not be the set. Search: non-determinism in query result sets; starvation vs. ordering instability in bounded queries; reproducibility requirements for audit queries. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b tested the proposed mechanism against a prior observation it does not cover
+    · Current status: REVISION-FLAGGED (DISPOSITION-618 / REVISE-287, 2026-08-07)
+
+PRESUMPTION-710 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That the held-state fix requires Tom's decision; stated ~3x today as "it needs your decision rather than another run rediscovering it," with two alternatives never considered — that a run could cost the fix and propose a specific change, and that the single-authoriser convention is itself the binding constraint. Risk: High. Search: single-point-of-approval bottlenecks; delegation thresholds and reversible-decision heuristics; queueing behaviour under a single consumer. NOTE: compounds PRESUMPTION-673/677 (High, 08-05) and PRESUMPTION-691. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b inferred from the alternatives absent from a thrice-repeated request
+    · Current status: REVISION-FLAGGED (DISPOSITION-619 / REVISE-288, 2026-08-07)
+
+PRESUMPTION-712 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That a register which grows every day is thereby doing its job; a sibling agent made exactly this diagnosis of its own output today ("the register grew by five with no consumer"), and tonight 14a/14b append 41 + 21 items into registers with a measured backlog drain of zero for a thirtieth day and a headline queue counter static for four. REFLEXIVE — this run is the evidence. Risk: High. Search: alert fatigue and signal-to-noise in monitoring; production-rate governors in issue/defect registers; consumption vs. accumulation metrics for audit backlogs. NOTE: compounds the line-88 norm conflict (REVISE-282, PRESUMPTION-678); the two are one decision. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b applied a sibling agent's same-day self-diagnosis to this agent and measured tonight's own append against it
+    · Current status: REVISION-FLAGGED (DISPOSITION-620 / REVISE-289, 2026-08-07)
+
+PRESUMPTION-713 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That PRESUMPTION-687 working once establishes that this register is consumable; the first recorded instance in ~1,460 items over ~118 days of a register item changing a run's action, occurring one day after filing — the condition least like the register's steady state. Risk: Medium. Search: base-rate reasoning from single successes; recency effects in knowledge-base retrieval; decay of documentation utility with age. NOTE: this is the POSITIVE case and is queued because it is the one worth testing, not the one most likely false. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b asked what one instance establishes and noted the age of the item that produced it
+    · Current status: MONITORING (DISPOSITION-621 / MONITOR-503, 2026-08-07)
+
+PRESUMPTION-714 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That a hang with a migrating blocker is one fault; "the same hang" on `bash` (08-04) and `TaskUpdate` (08-06) presumes a single underlying fault, against the rival reading — stated in the same sentence and not taken up — that there is no fault at any call site, only a general absence of timeouts. Risk: High — the two readings imply different remedies. Search: attributing stalls to the outstanding call; timeout design in agent/tool loops; watchdog placement and liveness detection. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b took the run's own second clause seriously as a rival hypothesis to its first
+    · Current status: MONITORING (DISPOSITION-622 / MONITOR-504, 2026-08-07)
+
+PRESUMPTION-716 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  That a Critical severity flag which fires no action is still a control; sixth consecutive day at the top of the scale with an observed action rate of zero across the preceding five. Risk: High — a genuinely urgent flag would be indistinguishable from the five that were not acted on. Search: alarm systems and alert fatigue; severity scale calibration and drift; escalation without authority to act. Item type: PRESUMPTION.
+  PROVENANCE: Origin 14b · Chain [14b] · Item type: PRESUMPTION (unstated — surfaced by inference)
+    · Transform: 14b read the severity level against the measured action rate of prior instances at the same level
+    · Current status: REVISION-FLAGGED (DISPOSITION-623 / REVISE-290, 2026-08-07)
+
+ASSUMPTION-803 [QUEUED] [SEARCHED-15a: 2026-08-07] [SEARCHED-15b: 2026-08-07] [DISPOSITIONED-15c: 2026-08-07]
+  OBJECT-LEVEL. That "predictive regulation of bodily state" / allostasis is a genuinely shared technical term across the Friston, Levin and Fredrickson traditions rather than a homonym — nsaf124 uses Friston's idiom inside Fredrickson's lab in the lab's own words, which would move the Levin-Fredrickson pair from surface analogy to structural homology. Search: allostasis and predictive regulation across active inference, bioelectric/basal cognition, and affective science; terminological convergence vs. conceptual convergence. Item type: ASSUMPTION.
+  PROVENANCE: Origin 14a · Chain [14a] · Item type: ASSUMPTION (stated)
+    · Transform: 14a extracted verbatim from the Thursday agents' run and flagged OBJECT-LEVEL
+    · Current status: REVISION-FLAGGED (DISPOSITION-624 / REVISE-291, 2026-08-07)
+
+### [IN-HOUSE] — one command or one assertion each (12 items)
+
+[IN-HOUSE] PRESUMPTION-697 — that the disposition mix measures the instrument; retracted once in-run ("a high negation rate is the expected output, not a finding") and still reported as a series. Test: feed a held-out set with known truth values.
+[IN-HOUSE] PRESUMPTION-698 — that an instrument defect voids future numbers but not past decisions; 88 phantom drift items over 8 prior nights, no retraction pass. Test: grep where prior nights' drift items landed.
+[IN-HOUSE] PRESUMPTION-699 — that the FLAG-parse trap is a property of the pattern, not of every run writing its own parser; 8 recurrences across 8 runs. Test: count distinct implementations of the same pattern in `tools/`.
+[IN-HOUSE] PRESUMPTION-700 — that a caveat attached to a hypothesis makes it safe to scope on; n=5 wiki.md-vs-prs_triplets.md marker, untested, used to scope the search. Test: cross-tabulate cited source against defect status across all 307 days.
+[IN-HOUSE] PRESUMPTION-702 — that recurrence count measures a defect's importance rather than the escalation channel's failure; Hawkins PRS-02 at 7 identical escalations. Test: list register items with n>2 recurrences and no resolution.
+[IN-HOUSE] PRESUMPTION-704 — that a near-miss caught is a class handled; 3 near-misses today, 2 from the shared `/tmp` named on 08-05 and unchanged. Supersedes and generalises PRESUMPTION-682. Test: count disclosed hazards against hazards remediated.
+[IN-HOUSE] PRESUMPTION-705 — that recording a shortfall discharges it; "stopped at 3 of the allowed 6," written to a log with no measured consumer. Test: does any run read the reviewer log before scoping?
+[IN-HOUSE] PRESUMPTION-706 — that defensible and indefensible budget breaches still differ; "the spend was load-bearing" on the day PREMISE-146 made the ceiling unsatisfiable. Test: measure each task class's mandatory-reading floor against 4,000.
+[IN-HOUSE] PRESUMPTION-708 — that a non-adversarial mechanism is a benign mechanism; the article-drop effect is identical whether or not anyone selected. Test: measure directional balance of dropped articles across all days, not one.
+[IN-HOUSE] PRESUMPTION-709 — that naming a free parameter and choosing a value settles it; the anchor change moved Day 145 by ~0.14/0.16 and no run states the prior series' anchor. Pairs with PRESUMPTION-698. Test: recompute the series under both anchors.
+[IN-HOUSE] PRESUMPTION-711 — that a task completing its corpus should be retired rather than repurposed; retiring it removes the only daily check that 307/307 is still 307. Test: does anything else check corpus completeness?
+[IN-HOUSE] PRESUMPTION-715 — that an instrument reporting an internal contradiction has still reported; "§8 committed 09:45Z / §9 never finished" closed by narrative, not measurement. Test: diff the commit against a completed run's output.
+
+### [IN-HOUSE] ASSUMPTION-766 .. ASSUMPTION-807 (41 items; ASSUMPTION-803 queued separately above)
+
+All routed in-house: each is a stated claim or a direct measurement, testable by one command against this
+vault. Flagged for particular attention:
+- ASSUMPTION-767 — REVISE-283's evaluator condition: "C2A2 has no component that can check an artefact it didn't produce." Pairs with PRESUMPTION-696.
+- ASSUMPTION-768 — Critical SYSTEMIC-RISK-FLAG, open-loop self-verification; SIXTH consecutive Critical, zero actions fired. Pairs with PRESUMPTION-716.
+- ASSUMPTION-769 — independence challenged from inside the pipeline for the first time, by 15c against 15b.
+- ASSUMPTION-771 — POSITIVE: the first measured instance of an item in this register changing a run's action ("caught here only because 687 told me to run the pair"). Pairs with PRESUMPTION-713.
+- ASSUMPTION-772 — PREMISE-146 now holds the 4,000-token ceiling unsatisfiable as specified; eleventh day of breach.
+- ASSUMPTION-773 / 774 — the daily run hung 1.1h on `TaskUpdate` and one instrument reported both sides of the contradiction. Pairs with PRESUMPTION-714, 715.
+- ASSUMPTION-775 — the metabolism root cause was CORRECTED, not reasserted: the 45-second call ceiling, not disk space.
+- ASSUMPTION-776 — POSITIVE: the first 45s-wall substitution encoded in the artifact rather than only in prose. Directly answers PRESUMPTION-680, one day later.
+- ASSUMPTION-778 — the false all-clear, FOURTH consecutive day, now defective in a new way ("fired on schedule" true, "healthy" false).
+- ASSUMPTION-780 — "the pipeline is backed up, not the detector"; the execution queue has closed zero items since 2026-05-13.
+- ASSUMPTION-781 — the nightly verification voided its own comparability and named the 8th recurrence of the FLAG-parse trap (88 phantom drift items).
+- ASSUMPTION-785 / 786 — a sweep cleared as safe and a sweep warned against, same day, same agent family, on the same criterion. Pairs with PRESUMPTION-701.
+- ASSUMPTION-788 — THREE near-misses in one day; third consecutive day of shared-`/tmp` contamination.
+- ASSUMPTION-797 — the `/tmp` hazard is now arbitrary script substitution plus a latent poisoning path into `fidelity_check.py`.
+- ASSUMPTION-802 — OBJECT-LEVEL/POSITIVE: an agent reversed a finding against its own tradition's interest ("the direction the theory needs is the one not reported").
+- ASSUMPTION-805 — register measurements with no counterpart in any run's report; `monitor_queue.md` BLOCK COUNT FELL BY 2 WHILE ITS MAX ROSE.
+- ASSUMPTION-807 — FOURTH consecutive day with no human-attended session; block-boundary ambiguity declared rather than resolved.
+
+
+---
+
+## 2026-08-08 RUN — c2a2-lit-search-pipeline (15a / 15b / 15c) · BACKLOG DRAW
+
+*NO NEW 14a/14b INTAKE EXISTED THIS RUN. The most recent EOD intake section in this file is
+2026-08-06, dispositioned 2026-08-07. No 2026-08-07 EOD intake was appended; all five registers carried
+an mtime of 2026-08-07 21:00 at run start. Whether the upstream self-awareness pipeline did not fire,
+fired and found nothing, or fired and failed to write cannot be determined from inside the vault.
+FLAGGED FOR THE 14a/14b OWNERS.*
+
+*The spec says to exit null on an empty queue. This run did not, and the reason is stated: the queue is
+not empty. 260 items stand [QUEUED] without [SEARCHED-15a]/[SEARCHED-15b]. Exiting null against that
+backlog would have been a false all-clear of the kind ASSUMPTION-778 records on four consecutive days.*
+
+**Cohort processed (5 of 260).** Selection rule, stated in advance: oldest queue date, highest priority,
+literature (not empirical) search angle. All five are 2026-07-05 monthly re-trigger cohort, cycle 5,
+HIGH priority, unconsumed 34 days. Tagged in place above at lines ~11114-11185.
+  · ASSUMPTION-003 (MONITOR-001) -> REVISE · DISPOSITION-625 / REVISE-292
+  · ASSUMPTION-013 (MONITOR-005) -> MONITOR carried forward, priority raised, auto-escalate 2026-09-08 · DISPOSITION-627
+  · PRESUMPTION-002 (MONITOR-007) -> REVISE · DISPOSITION-628 / REVISE-294
+  · PRESUMPTION-005 (MONITOR-010) -> REVISE · DISPOSITION-626 / REVISE-293
+  · PRESUMPTION-010 (MONITOR-012) -> MONITOR carried forward, auto-escalate 2026-09-08 · DISPOSITION-629
+
+**Three of the five test this pipeline's own validity.** That was the point of the selection, and the
+result is REVISE on all three of those (003, 005, 002 by extension). Cycle 6 is the FIRST cycle in six
+in which any of these items produced new sources; cycles 1-5 are recorded as "no new sources" refreshes.
+
+### QUEUE STATE AFTER THIS RUN — reported loudly, per Rule 12
+
+**255 items remain [QUEUED] without [SEARCHED-15a]/[SEARCHED-15b].** Composition, measured this run:
+  · 211 15d re-trigger / re-check blocks — cohorts of 2026-07-05 (105, cycles 1-5), 07-12 (19),
+    07-19 (21), 07-26 (17), 08-02 (49, incl. 19 INCORPORATED-premise monthly re-checks)
+  · 26 items from the 2026-07-19 / 07-21 EOD batches carrying bare [QUEUED] tags but DELIBERATELY
+    UNSEARCHED as INTERNAL-EMPIRICAL. **Not touched by this run, and the reason is the standing hold:**
+    the bulk retag to [MISROUTED-INTERNAL-EMPIRICAL] needs Tom's authorisation. Re-verified this run,
+    unchanged since 2026-07-28. This is the fourth consecutive run to report them and the fourth to
+    leave them.
+  · 18 others — block-style entries carrying no 15d cohort date
+**Fill vs. drain:** 5 drained today against a fill rate that has exceeded it for thirty-one consecutive
+days. The next 15d run (2026-08-09, weekly) will re-queue more than this run consumed.
+**The 2026-08-02 monthly RE-CHECK cohort — 19 ACTIVE INCORPORATED premises whose scheduled re-check is
+now 6 days overdue — was NOT reached.** Named specifically because these are premises currently
+governing the system's decisions, not candidate items: PREMISE-001, -003, -005..-014, -002, -004, -025,
+-070, -071, -072, -089.
+**Cycle counts NOT advanced** on any unprocessed cohort (2026-07-12 precedent: advancing a cycle count
+without a completed search pass inflates it).
+
+### THE FINDING THIS RUN WOULD PUT FIRST
+
+All five processed items name, as their disposition-changing condition, A MEASUREMENT ON C2A2'S OWN
+OUTPUT — a joint error matrix (003, 005), a false-positive rate (013), an enumeration of transferred
+principles (002), a seeded-detection rate (010). Not one requires literature. Not one has been run in
+six cycles across 117 days. **These items are not stalled on evidence availability; they are stalled on
+an activity this system does not perform.** Re-triggering them weekly cannot move them, which means the
+15d cadence is generating queue depth against items that cadence cannot resolve. Between them the five
+require roughly one afternoon, and three of the four studies are shared across pairs of items. See the
+SYSTEMIC-RISK-FLAG (High) in lit_search_returns.md.
+
+*Independence disclosure: 15a and 15b were executed by one model in one context this run, on a batch
+about independence. Procedural separation only. This run is an instance of the defect it reports —
+recorded as evidence for REVISE-292 request (2), not offered as a mitigation.*
+
+### CORRECTION, same run, recorded rather than silently fixed
+
+The queue-depth figures first written by this run were WRONG and were corrected before the run closed.
+As written: total 234, remaining 229, composition "180 15d blocks / 26 misrouted / 28 others".
+As measured and now carried: **total 260, remaining 255, composition 211 15d re-trigger/re-check blocks
+(216 before this run's 5) + 26 misrouted-and-held + 18 block-style entries with no 15d cohort date.**
+
+**Cause:** the first count used a single block-style parser and then narrated the 26 inline `ITEM:`-style
+entries as if they were inside that total. They are a different write format and the parser never saw
+them, so 26 items were counted once in prose and zero times in the number. The corrected count uses
+three parsers, one per write format present in this file, and reconciles them.
+
+**This is the fifth instance in four days of the class at PRESUMPTION-687** — a register's counting rule
+failing to survive its own write format — and it occurred in the same run that reported the class. It is
+recorded here rather than only being fixed, per PRESUMPTION-688 (a corrected count does not retire the
+counts it corrects unless the superseded figures are named). The superseded figures are named above.
+No disposition, no result file, and no register entry depended on the count; the affected text is the
+queue-state narrative in this file, `lit_search_returns.md` and `monitor_queue.md`, all three corrected.

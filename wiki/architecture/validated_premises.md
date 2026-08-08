@@ -3959,3 +3959,79 @@ PREMISE-148:
         claim explicitly NOT scored against a benchmark, since none exists
     Current status: INCORPORATED
     Disposition record: DISPOSITION-614 (2026-08-06)
+
+
+--------------------------------------------------------------------------------
+## 2026-08-07 CYCLE NOTE — ZERO INCORPORATE (no additions to this register)
+
+The 2026-08-07 lit-search pipeline run dispositioned **10 items** from the 2026-08-06 14a/14b
+intake — PRESUMPTION-696, 701, 703, 707, 710, 712, 713, 714, 716 and ASSUMPTION-803 — as
+DISPOSITION-615 through DISPOSITION-624. Mix: **0 INCORPORATE / 2 MONITOR / 8 REVISE**. No
+premise was minted. The next available premise number remains **PREMISE-149**.
+
+**Why zero, stated so it can be argued with.** Nine of the ten items are PRESUMPTIONs, and on
+seven of those nine the AGAINST direction returned CHALLENGED (Strong) while the FOR direction
+returned PARTIALLY-SUPPORTED at Weak, or NO-SUPPORT-FOUND at None. On PRESUMPTION-716 the FOR
+direction returned **NO-SUPPORT-FOUND / None** and reported that the sources closest to supporting
+the item deny it in explicit terms. That configuration is the charter's REVISE signature, not its
+INCORPORATE signature.
+
+**Why no negations were incorporated either, which is the more interesting question given that the
+2026-08-06 run minted five.** The negations available in this batch are, in substance, already
+ACTIVE in this register:
+  · 696's negation (an internally built evaluator's independence must be measured, not asserted)
+    is PREMISE-004's standing independence caveat plus PREMISE-110's common-mode scope guard plus
+    PREMISE-111/120 on same-family convergence. A fourth statement would be PREMISE-138 clause (1).
+  · 703's and 707's negations (a detector's coverage must be established by seeded faults, not
+    inferred from its catches; absence of a signal is the dangerous case) are PREMISE-100 and
+    PREMISE-110, and the seeded-fault requirement is the cross-cutting RULE requested at REVISE-286
+    rather than a premise about the world.
+  · 712's and 716's negations (production is not consumption; a record written is not a control
+    exercised) are PREMISE-106 (queue in the unstable regime) and PREMISE-147 (producer-side
+    proxies mistaken for system health), both minted within the last month.
+  · 701's negation (determinacy of the specification does not warrant the execution) is adjacent to
+    PREMISE-088 (bulk-edit human-check discipline) and PREMISE-103's verification lineage.
+What each of these items adds is not new KNOWLEDGE but a REQUIRED CHANGE that no agent is
+authorised to make — which is a revision flag by construction, not a premise. Minting restatements
+would have grown this register while leaving the requests unmade.
+
+**The one item where an INCORPORATE was genuinely available and was declined: PRESUMPTION-714.**
+15a returned SUPPORTED (Moderate) — the only SUPPORTED result in the batch — and both directions
+independently recommend the same action (a supervisory bound above the tool-call loop, correct
+under either hypothesis). The narrow premise "an unbounded wait is a defect on its own terms,
+independent of the stall's cause" was available. It was routed to MONITOR-504 instead, on one
+condition: the grep that would establish whether ANY tool call site currently carries a bound has
+not been run. A premise whose basis is one unrun grep is a premise minted from a claim, which is
+the failure PREMISE-110's proof-test guard exists to prevent. If the grep is run and returns "no
+bound anywhere," PREMISE-149 should be minted from MONITOR-504 with the grep as its basis.
+
+**The reflexive caveat, recorded rather than resolved.** A 0-INCORPORATE / 8-REVISE mix should NOT
+be read as this instrument working well. 14b selects for presumptions it believes false, so a high
+challenge rate is the expected output rather than a finding — the same caveat the 2026-08-06 run
+recorded in the opposite direction on a 5-of-6 negation rate. Four consecutive runs now show
+materially different mixes (2026-08-04: 10 REVISE of 11; 08-05: 5 REVISE, 3 INCORPORATE of 8;
+08-06: 1 REVISE, 5 INCORPORATE of 6; 08-07: 8 REVISE, 0 INCORPORATE of 10). That variance is weak
+evidence against the "tilts toward REVISE regardless of input" reading in both directions, and the
+held-out generalizability study requested in REVISE-271 remains the only thing that would
+distinguish them. It remains un-run.
+
+**Register composition note.** This register has now gone one cycle without a new entry, following
+a cycle that added five. Per the standing structural concern recorded at the 2026-05-13 cycle note:
+if the disposition criteria are correct, the upstream extractions are producing
+well-formed-but-not-validation-ready items; if they are too strict, the register starves. This
+run's reading is the first: eight of ten items requested a CHANGE rather than asserting a FACT, and
+a request is not a premise. That reading is checkable — if the eight requested changes are made and
+the underlying claims then validate, the criteria were right; if the requests are never actioned
+and the items recur, the criteria were beside the point and PRESUMPTION-712's diagnosis applies to
+this register too.
+
+  Dispositions: DISPOSITION-615..624 (recorded in lit_search_returns.md, 2026-08-07 run section)
+  MONITOR items: MONITOR-503 (PRESUMPTION-713), MONITOR-504 (PRESUMPTION-714)
+  REVISE items: REVISE-284..291
+  Consistency check performed against this register: NO CONTRADICTIONS FOUND, and none could arise,
+    since no premise was minted. The premises this batch bears on — 004, 088, 100, 102, 103, 106,
+    110, 111, 120, 121, 124, 138, 143, 146, 147, 148 — are all CONFIRMED rather than contradicted
+    by the batch's findings. PREMISE-146 (the 4,000-token ceiling is unsatisfiable as specified) is
+    directly relevant and is confirmed again: this run exceeded both the per-task and session
+    budgets, and the twenty result files it had to read total ~264 KB.
+--------------------------------------------------------------------------------

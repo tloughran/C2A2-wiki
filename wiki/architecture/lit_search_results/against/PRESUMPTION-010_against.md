@@ -200,3 +200,72 @@ SEARCH-AGAINST-PRESUMPTION-010 (RE-TRIGGER cycle 3):
   Specific risks: Unchanged from prior cycle.
   Mitigations available: Unchanged from prior cycle.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-010 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: PRESUMPTION-010
+  Original statement: "Agent 16 can detect conditions via web search"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: PRESUMPTION-010
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15b (cycle 6, 2026-08-08): re-searched for challenging literature; NEW SOURCES FOUND
+    Current status: PARTIALLY-CHALLENGED (Moderate; the challenge is to the usability of a null return, not to search quality)
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. No new 14a/14b batch; cohort drawn from the standing
+    15d backlog (2026-07-05 monthly re-trigger, cycle 5, unconsumed 34 days). INDEPENDENCE DISCLOSURE,
+    stated up front because this batch is partly ABOUT independence: 15a and 15b were executed by one
+    model in one context in this run. The separation is procedural, not architectural. This is the
+    condition ASSUMPTION-769 and PRESUMPTION-696 name, and it applies to this file.
+
+  Challenging evidence found: Yes
+
+  Sources (new this cycle):
+    1. The existence and DESIGN of the 2026 recall-sensitive benchmarks is itself the challenge: PluriHop
+       (exhaustive, recall-sensitive QA), "Needle in the Web", DRBench's insight-recall metric. Benchmarks
+       are built where models fail; a field that has just built four recall-sensitive suites is a field that
+       has found recall to be the weak axis. [UNVERIFIED: authors, venues; direction-only inference, and
+       flagged as an inference rather than a reported result.]
+    2. Detection-of-novel-events literature located this cycle reports false-negative rates approaching 1.0
+       for novel behaviours in an established commercial detector class, and states plainly that "existing
+       detectors show limited effectiveness in detecting NOVEL events." [UNVERIFIED: this figure comes from
+       a security-detection context, not web monitoring; NOT propagated as a number for Agent 16, recorded
+       as direction only.]
+    3. Observability literature (practitioner, labelled as such): "dashboards only answer questions someone
+       thought to set up in advance"; silent failures — goal drift, context loss, quality degradation —
+       "don't produce error codes". This is the structural form of the objection: a query-driven detector
+       cannot detect a condition no one queried for. [UNVERIFIED: vendor blogs; direction-only.]
+    4. Deep Research Bench's own design note — it stores the web OFFLINE so that scores stay stable "even as
+       the web changes" — concedes that live-web variance is large enough to swamp measurement. Agent 16
+       operates on the live web, i.e. in the regime the benchmark had to eliminate to get a stable number.
+
+  Strength of challenge: Moderate
+
+  Summary: The challenge is structural rather than empirical, and 15b marks it Moderate rather than Strong for that reason: no located source measures an Agent-16-like detector on an Agent-16-like task. What the sources establish is that the failure mode is the one that matters here — not accuracy on retrieved material, but RECALL on material never retrieved, and specifically on conditions outside the query set. A web-search detector is bounded by what it thought to ask. The 2026 benchmark wave confirms the field considers this the open axis. Note that this cuts against the FOR direction's likely framing: benchmark availability is not reassurance, it is an indicator of where the weakness was found.
+
+  Specific risks: If false, Agent 16's silence is uninformative, and — worse — is currently read as an all-clear. That polarity error is already an ACTIVE premise in this register (PREMISE-100 / PREMISE-110: detectors invert; absence-of-complaint is an unsafe polarity), and the false-all-clear pattern has been recorded on four consecutive days (ASSUMPTION-778). This item is the literature-side statement of a defect the system is already observing in itself.
+
+  Mitigations available: Seeded-condition testing: plant known conditions and measure detection rate — the direct false-negative measurement MONITOR-012 has asked for since cycle 0, now with public harnesses to copy the design from. Separately and cheaply: change the polarity convention so that 'no condition detected' is reported as 'not detected', never as 'no condition'.
+
+  STEELMAN:
+    Item: PRESUMPTION-010
+    Strongest counterargument: The presumption is not that Agent 16 detects everything — it is that Agent 16's
+      output can be USED, which requires knowing its miss rate. Without a miss rate, a null return has no
+      information content, so every downstream decision that treats a null return as reassurance is
+      unwarranted regardless of how good the detector actually is. The detector could be excellent and the
+      presumption still false, because the presumption is about the epistemic status of the output rather
+      than the quality of the search. This is why six cycles of "trajectory stable" have not moved it: the
+      missing thing is a measurement, and monitoring is not measuring.
+    What would need to be true for C2A2 to be safe: a seeded-detection rate, and a reporting convention that
+      distinguishes "searched and found nothing" from "nothing there".
+    How to test: seed n known conditions across a month; report detections. Two hours of setup.
+
+  Recommendation: PARTIALLY-CHALLENGED

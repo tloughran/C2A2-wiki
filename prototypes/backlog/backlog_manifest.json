@@ -32,6 +32,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-21-002",
+  "tradition": "hoffman",
+  "source_date": "2024-10",
+  "title": "Traces of Consciousness (the Trace Chain Theorem paper)",
+  "file": "inbox/proposals/approved/2026-07-21_hoffman_traces-of-consciousness-primary.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-16-001",
   "tradition": "stump",
   "source_date": "2024-10-01",
@@ -109,6 +117,14 @@
   "source_date": "2025",
   "title": "The Vision of Ephesians: The Task of the Church and the Glory of God",
   "file": "inbox/proposals/approved/2026-05-24_wright_vision-of-ephesians.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-28-002",
+  "tradition": "hoffman",
+  "source_date": "2025",
+  "title": "Consciousness and Its Spacetime Headset (unpublished long-form essay)",
+  "file": "inbox/proposals/approved/2026-07-28_hoffman_spacetime-headset-essay.md",
   "processed": false
  },
  {
@@ -328,6 +344,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-07-002",
+  "tradition": "arkanihamed",
+  "source_date": "2025-12-30",
+  "title": "Correlators are simpler than wavefunctions",
+  "file": "inbox/proposals/approved/2026-08-07_arkanihamed_correlators-simpler-than-wavefunctions.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-29-003",
   "tradition": "friston",
   "source_date": "2026",
@@ -373,6 +397,14 @@
   "source_date": "2026",
   "title": "Introducing the Enneagram with Richard Rohr (Everything Belongs, Season 4)",
   "file": "inbox/proposals/approved/2026-05-31_rohr_enneagram-everything-belongs-s4.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-31-004",
+  "tradition": "kastrup",
+  "source_date": "2026",
+  "title": "The metaphysics of the psychedelic experience: Anil Seth, Christof Koch, and Bernardo Kast",
+  "file": "inbox/proposals/approved/2026-07-31_kastrup_seth-koch-psychedelic-metaphysics-debate.md",
   "processed": false
  },
  {
@@ -440,6 +472,22 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-06-003",
+  "tradition": "fredrickson",
+  "source_date": "2026-01-01",
+  "title": "Intrinsic network static and dynamic functional connectivity associated with induced affec",
+  "file": "inbox/proposals/approved/2026-08-06_fredrickson_intrinsic-network-connectivity-induced-affect.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-06-002",
+  "tradition": "fredrickson",
+  "source_date": "2026-01-01",
+  "title": "Loneliness exacerbates age differences in the allostatic-interoceptive system during induc",
+  "file": "inbox/proposals/approved/2026-08-06_fredrickson_loneliness-allostatic-interoceptive-aging.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-16-002",
   "tradition": "stump",
   "source_date": "2026-01-01",
@@ -453,6 +501,14 @@
   "source_date": "2026-01-02",
   "title": "Could Analytic Idealism offer a new framework for psychopathology?",
   "file": "inbox/proposals/approved/2026-04-08_kastrup_idealism-psychopathology.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-05-006",
+  "tradition": "kastrup",
+  "source_date": "2026-01-05",
+  "title": "Europe's last hope in the AI race",
+  "file": "inbox/proposals/approved/2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md",
   "processed": false
  },
  {
@@ -560,6 +616,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-05-004",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-02-18",
+  "title": "EP 333 Worldviews: Iain McGilchrist (The Jim Rutt Show)",
+  "file": "inbox/proposals/approved/2026-08-05_mcgilchrist_jimrutt-333-worldviews.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-05-015",
   "tradition": "arkanihamed",
   "source_date": "2026-02-19",
@@ -592,6 +656,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-04-001",
+  "tradition": "hawkins",
+  "source_date": "2026-02-25",
+  "title": "Are Large Language Models a Dead End? \u2014 The Artificial Human (BBC Radio 4)",
+  "file": "inbox/proposals/approved/2026-08-04_hawkins_bbc-artificial-human-llm-dead-end.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-08-003",
   "tradition": "levin",
   "source_date": "2026-02-25",
@@ -621,6 +693,14 @@
   "source_date": "2026-03-04",
   "title": "Bernardo Kastrup on the state of the consciousness debate",
   "file": "inbox/proposals/approved/2026-04-22_kastrup_state-of-consciousness-debate.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-28-001",
+  "tradition": "hawkins",
+  "source_date": "2026-03-05",
+  "title": "Hierarchy or Heterarchy? A Theory of Long-Range Connections for the Sensorimotor Brain: A ",
+  "file": "inbox/proposals/approved/2026-07-28_hawkins_heterarchy-thalamic-transform-explainer.md",
   "processed": false
  },
  {
@@ -1296,6 +1376,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-03-004",
+  "tradition": "friston",
+  "source_date": "2026-05-15",
+  "title": "Integrated information and predictive processing theories of consciousness: An adversarial",
+  "file": "inbox/proposals/approved/2026-08-03_friston_intrepid-adversarial-review.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-23-001",
   "tradition": "wolfram",
   "source_date": "2026-05-15",
@@ -1317,6 +1405,14 @@
   "source_date": "2026-05-18",
   "title": "Mindscape 354 | Christian List on Free Will and Levels of Reality",
   "file": "inbox/proposals/approved/2026-05-29_carroll_mindscape-354-christian-list-free-will-levels.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-27-004",
+  "tradition": "friston",
+  "source_date": "2026-05-21",
+  "title": "Self-orthogonalizing attractor neural networks emerging from the free energy principle",
+  "file": "inbox/proposals/approved/2026-07-27_friston_self-orthogonalizing-attractor-networks.md",
   "processed": false
  },
  {
@@ -1365,6 +1461,14 @@
   "source_date": "2026-05-27",
   "title": "From Development to Cognitive Glue: My Journey in Bioelectricity",
   "file": "inbox/proposals/approved/2026-06-01_levin_cognitive-glue-journey.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-27-003",
+  "tradition": "levin",
+  "source_date": "2026-05-27",
+  "title": "From Development to Cognitive Glue: My Journey in Bioelectricity",
+  "file": "inbox/proposals/approved/2026-07-27_levin_cognitive-glue-journey.md",
   "processed": false
  },
  {
@@ -1445,6 +1549,14 @@
   "source_date": "2026-06-02",
   "title": "The Birth of Thought \u2014 On the origin of creativity, the universe & you (Q&A with Bernardo ",
   "file": "inbox/proposals/approved/2026-06-10_kastrup_birth-of-thought.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-21-001",
+  "tradition": "hoffman",
+  "source_date": "2026-06-02",
+  "title": "A Science of Reality: Observers, Interfaces, and Traces (The Trace Institute Whitepaper)",
+  "file": "inbox/proposals/approved/2026-07-21_hoffman_trace-institute-whitepaper.md",
   "processed": false
  },
  {
@@ -1536,6 +1648,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-04-002",
+  "tradition": "hoffman",
+  "source_date": "2026-06-13",
+  "title": "Trace \u00d7 Andrew Gallimore \u2014 The Trace Institute Collaboration Program and the Trace/Noonaut",
+  "file": "inbox/proposals/approved/2026-08-04_hoffman_trace-collaboration-program-noonautics.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-21-001",
   "tradition": "rohr",
   "source_date": "2026-06-14",
@@ -1589,6 +1709,14 @@
   "source_date": "2026-06-20",
   "title": "A talk for mental health professionals: mind-blindness and the future of the mental health",
   "file": "inbox/proposals/approved/2026-07-13_levin_diverse-intelligence-mental-health-talk.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-22-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-06-21",
+  "title": "Chancellor McGilchrist Commencement Address | 2026 (Ralston College)",
+  "file": "inbox/proposals/approved/2026-07-22_mcgilchrist_commencement-2026.md",
   "processed": false
  },
  {
@@ -1680,6 +1808,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-29-004",
+  "tradition": "kastrup",
+  "source_date": "2026-06-30",
+  "title": "Bernardo's caution to young philosophers \u2014 Going with the flow isn't easy (Q&A with Bernar",
+  "file": "inbox/proposals/approved/2026-07-29_kastrup_caution-young-philosophers.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-07-13-001",
   "tradition": "levin",
   "source_date": "2026-07",
@@ -1696,11 +1832,51 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-03-001",
+  "tradition": "levin",
+  "source_date": "2026-07",
+  "title": "Cognitive Offloading Is a Cognitive Universal",
+  "file": "inbox/proposals/approved/2026-08-03_levin_cognitive-offloading-universal.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-31-002",
+  "tradition": "arkanihamed",
+  "source_date": "2026-07",
+  "title": "The Very Nearly Right Theory of Flavor",
+  "file": "inbox/proposals/approved/2026-07-31_arkanihamed_very-nearly-right-theory-of-flavor.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-03-003",
+  "tradition": "levin",
+  "source_date": "2026-07-02",
+  "title": "Exploring Platonic Morphospace w/Michael Levin & DC Schindler",
+  "file": "inbox/proposals/approved/2026-08-03_levin_platonic-morphospace-schindler.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-07-05-005",
   "tradition": "rohr",
   "source_date": "2026-07-03",
   "title": "Who Do You Say That We Are?",
   "file": "inbox/proposals/approved/2026-07-05_rohr_who-do-you-say-that-we-are.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-27-001",
+  "tradition": "levin",
+  "source_date": "2026-07-03",
+  "title": "Alignment Is to a Virtual Governor: A Theory of Coordination in Diverse Intelligence",
+  "file": "inbox/proposals/approved/2026-07-27_levin_alignment-virtual-governor.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-03-002",
+  "tradition": "levin",
+  "source_date": "2026-07-03",
+  "title": "Michael Levin - Making the Process-of-Life Flourish in Bio and Beyond (Stewarding the Flam",
+  "file": "inbox/proposals/approved/2026-08-03_levin_trajectory-stewarding-flame.md",
   "processed": false
  },
  {
@@ -1736,6 +1912,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-22-003",
+  "tradition": "kastrup",
+  "source_date": "2026-07-07",
+  "title": "AI, consciousness & awakening \u2014 In a world of words... could AI wake up? (Shamil Chandaria",
+  "file": "inbox/proposals/approved/2026-07-22_kastrup_ai-awakening-chandaria.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-07-12-002",
   "tradition": "rohr",
   "source_date": "2026-07-11",
@@ -1744,11 +1928,203 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-07-24-001",
+  "tradition": "carroll",
+  "source_date": "2026-07-13",
+  "title": "Mindscape Ask Me Anything | July 2026",
+  "file": "inbox/proposals/approved/2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-07-17-001",
   "tradition": "carroll",
   "source_date": "2026-07-13",
   "title": "Mindscape AMA | July 2026",
   "file": "inbox/proposals/approved/2026-07-17_carroll_mindscape-ama-july-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-22-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-14",
+  "title": "Why A.I. will never be able to do what the brain does",
+  "file": "inbox/proposals/approved/2026-07-22_mcgilchrist_ai-never-brain.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-22-004",
+  "tradition": "kastrup",
+  "source_date": "2026-07-14",
+  "title": "The freedom to transform suffering to joy \u2014 Sthaneshwar Timalsina & Bernardo Kastrup on th",
+  "file": "inbox/proposals/approved/2026-07-22_kastrup_timalsina-suffering-joy.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-01-001",
+  "tradition": "wolfram",
+  "source_date": "2026-07-16",
+  "title": "Physics doesn't explain the universe. Computation does. (The Well / Big Think full intervi",
+  "file": "inbox/proposals/approved/2026-08-01_wolfram_bigthink-well-observers-objective-reality.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-26-003",
+  "tradition": "wright",
+  "source_date": "2026-07-20",
+  "title": "Is the Greek Orthodox Church Biblical? \u2014 Ask NT Wright Anything",
+  "file": "inbox/proposals/approved/2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-27-002",
+  "tradition": "levin",
+  "source_date": "2026-07-20",
+  "title": "Intelligence from Learnable Novelty",
+  "file": "inbox/proposals/approved/2026-07-27_levin_intelligence-from-learnable-novelty.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-22-005",
+  "tradition": "carroll",
+  "source_date": "2026-07-20",
+  "title": "Mindscape 361 | Bonnie Bassler on How Bacteria Talk and Work Together",
+  "file": "inbox/proposals/approved/2026-07-22_carroll_mindscape-361-bassler-bacterial-communication.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-29-003",
+  "tradition": "kastrup",
+  "source_date": "2026-07-21",
+  "title": "Rupert Spira: on the heights of awakening & the depths of sorrow \u2014 recorded dialogue with ",
+  "file": "inbox/proposals/approved/2026-07-29_kastrup_spira-awakening-sorrow.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-25-001",
+  "tradition": "wolfram",
+  "source_date": "2026-07-21",
+  "title": "Towards a Theory of Bugs: The Ruliology of the Unexpected",
+  "file": "inbox/proposals/approved/2026-07-25_wolfram_theory-of-bugs.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-31-003",
+  "tradition": "levin",
+  "source_date": "2026-07-21",
+  "title": "The Continuum of Mind: A Conversation with Professor Michael Levin on Cognition, Bioelectr",
+  "file": "inbox/proposals/approved/2026-07-31_levin_thought-economics-continuum-of-mind.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-05-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-21",
+  "title": "AI and the Battle for the Soul with Iain McGilchrist \u2014 Lecture I: Do We Really Understand ",
+  "file": "inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-lecture1-understanding-understanding.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-29-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-22",
+  "title": "Iain McGilchrist: \\",
+  "file": "inbox/proposals/approved/2026-07-29_mcgilchrist_iai-scientific-method-panpsychism.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-29-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-24",
+  "title": "Soul Search (ABC Radio National, Dr Meredith Lake) \u2014 two-part series with Iain McGilchrist",
+  "file": "inbox/proposals/approved/2026-07-29_mcgilchrist_abc-soul-search-two-parter.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-26-002",
+  "tradition": "rohr",
+  "source_date": "2026-07-25",
+  "title": "Twentieth-Century Contemplative Exemplars: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-07-26_rohr_contemplative-exemplars-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-26-001",
+  "tradition": "rohr",
+  "source_date": "2026-07-26",
+  "title": "In Love with Scripture",
+  "file": "inbox/proposals/approved/2026-07-26_rohr_in-love-with-scripture.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-07-31-001",
+  "tradition": "carroll",
+  "source_date": "2026-07-27",
+  "title": "362 | Luis Bettencourt on the Universal Properties of Self-Organizing Cities",
+  "file": "inbox/proposals/approved/2026-07-31_carroll_mindscape-362-bettencourt-cities.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-05-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-28",
+  "title": "AI and the Battle for the Soul with Stephen Wolfram and Iain McGilchrist \u2014 Conversation: W",
+  "file": "inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-05-005",
+  "tradition": "kastrup",
+  "source_date": "2026-07-28",
+  "title": "The Odyssey: An ancient guide to awakening \u2014 Athena Potari in dialogue with Bernardo Kastr",
+  "file": "inbox/proposals/approved/2026-08-05_kastrup_odyssey-potari-awakening.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-06-001",
+  "tradition": "stump",
+  "source_date": "2026-07-28",
+  "title": "2023 Central Division Dewey Lecture: Dilige et quod vis fac",
+  "file": "inbox/proposals/approved/2026-08-06_stump_dewey-lecture-dilige-et-quod-vis-fac.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-05-003",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-07-30",
+  "title": "AI and the Battle for the Soul with Iain McGilchrist \u2014 Lecture II: Artificial Intelligence",
+  "file": "inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-lecture2-cognitive-freedom.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-02-001",
+  "tradition": "rohr",
+  "source_date": "2026-08-01",
+  "title": "Reading the Bible Through a Lens of Love: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-08-02_rohr_reading-bible-lens-of-love-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-07-001",
+  "tradition": "carroll",
+  "source_date": "2026-08-03",
+  "title": "AMA | August 2026 \u2014 Sean Carroll's Mindscape",
+  "file": "inbox/proposals/approved/2026-08-07_carroll_ama-august-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-07-004",
+  "tradition": "wright",
+  "source_date": "2026-08-03",
+  "title": "Ask NT Wright Anything \u2014 Can you forgive yourself? Were the Samaritans really Israelites? ",
+  "file": "inbox/proposals/approved/2026-08-07_wright_ask-ntw-aug3-self-forgiveness-samaritans-ascension.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-07-003",
+  "tradition": "rohr",
+  "source_date": "2026-08-07",
+  "title": "Job and the Mystery of Suffering (CAC Daily Meditations, Week 31, 2026-08-02 to 2026-08-08",
+  "file": "inbox/proposals/approved/2026-08-07_rohr_job-mystery-of-suffering-week31.md",
   "processed": false
  }
 ]

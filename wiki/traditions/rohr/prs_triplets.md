@@ -314,4 +314,41 @@ PRS-33:
   Confidence: Speculative
   Evidence: Rohr's Monday formulation; the computational gloss is ours (Friston bridge), not Rohr's.
 
-*Total PRS triplets: 33*
+---
+PRS-34:
+  Problem: Theodicy is standardly posed as an explanatory problem — produce a proposition reconciling divine goodness and power with unjust suffering. Every such proposition is either false to the phenomenology of grief or defensible only at the cost of trivializing it. The problem appears to have no satisfying propositional solution.
+  Resource: The book of Job read as a text that deliberately withholds explanation and satirizes the explainers (the comforters), while still producing a determinate effect on the reader; plus Kushner's abandonment of omnipotence (Wednesday) as the explanatory route Rohr declines to take.
+  Solution: Relocate the problem. The demand on a response to suffering is not that it explain but that it *realign* — that it correctly reposition the sufferer's self relative to reality. Job satisfies this demand while failing the explanatory one, which shows the two demands are separable and that the explanatory framing was the wrong framing.
+  Date Added: 2026-08-08
+  Source: Job and the Mystery of Suffering (CAC Daily Meditations, Week 31; Friday 2026-08-07 meditation read in full, other days not retrieved — the Wednesday Kushner meditation on divine omnipotence is UNREAD, and this triplet assumes Rohr declines Kushner's move; if he in fact endorses it, this needs revision, not rewording); PROP-2026-08-07-003
+  Confidence: High
+  Evidence: Friday, verbatim: "no book is less an answer book than the book of Job. It fixes nothing, explains nothing, and dismisses those who even try to explain, yet the story of Job realigns and regenerates the soul in ways that few books can." Adapted from Rohr, *Job and the Mystery of Suffering* (Crossroad, 1996), 185-187.
+
+PRS-35:
+  Problem: If the postmodern predicament is a crisis of the self — no stable standpoint from which to adjudicate anything — then no argument can repair it, because arguments are evaluated *from* a standpoint. What repairs a standpoint?
+  Resource: Rohr's claim that "what both Job and Jesus seem to say is that truth is finally a person and an encounter — much more than a concept that can be argued," coupled with the gradual-unveiling condition: the encounter is neither quick nor easy and is experienced as loss of self-importance and self-control.
+  Solution: Standpoint repair is second-personal and costly. The self is realigned by encounter with a real other ("the real person meets the real God"), not by acquiring a better concept. The felt loss of control is diagnostic of the repair working, not of its failing — which gives the account a falsifiable-ish marker rather than leaving it purely consoling.
+  Date Added: 2026-08-08
+  Source: Job and the Mystery of Suffering (CAC Daily Meditations, Week 31; Friday 2026-08-07 meditation read in full, other days of the week not retrieved); PROP-2026-08-07-003
+  Confidence: High
+  Evidence: Friday, verbatim: "If the postmodern crisis is above all else a crisis of the self, and I think it is, then the story of Job realigns the 'self' — correctly, humbly, and truthfully." And: "Every movement toward union with God will feel like a loss of self-importance and self-control."
+
+PRS-36:
+  Problem: What happens at the social scale when suffering cannot be made meaningful? This is a question about collective dynamics, not individual consolation, and Rohr poses it as such.
+  Resource: The category of "sacred wound" — a wound that has been given meaning by a transcendent response ("the voice from the whirlwind") — set against its absence.
+  Solution: A structural prediction: absent any mechanism for making wounds sacred, communities default to scapegoating. "If no meaning can be given to human suffering, if our wounds are not capable of becoming sacred wounds, the human project is surely doomed to a blaming war of all against all. The future, like the past, will be full of scapegoats and victims." This converts a devotional claim into a claim about social dynamics with an observable consequence.
+  Date Added: 2026-08-08
+  Source: Job and the Mystery of Suffering (CAC Daily Meditations, Week 31; Friday 2026-08-07 meditation read in full, other days of the week not retrieved); PROP-2026-08-07-003
+  Confidence: Medium
+  Evidence: Friday, verbatim as quoted. The Girardian lineage is unstated by Rohr in this passage but the mechanism (undischarged suffering → victimage) is Girard's; flagged as inference, not attribution.
+
+PRS-37:
+  Problem: Rohr's two-halves-of-life frame requires a transition mechanism. What actually moves a person from the first half to the second, and why does it appear to be failing at scale in the modern West?
+  Resource: The observation that "reason, medicine, technology, and speed have allowed us to avoid the ordinary 'path of the fall'" — i.e. that modernity has manufactured an ascent that substitutes for descent.
+  Solution: Descent is the transition mechanism, and it is not optional but merely avoidable — with a cost. The modern West is "unpracticed and afraid of all kinds of suffering — big and small," which predicts a population developmentally arrested in the first half of life. This makes the two-halves frame diagnostic about a culture rather than only about individuals.
+  Date Added: 2026-08-08
+  Source: Job and the Mystery of Suffering (CAC Daily Meditations, Week 31; Friday 2026-08-07 meditation read in full, other days of the week not retrieved); PROP-2026-08-07-003
+  Confidence: Medium
+  Evidence: Friday, verbatim: "We have been able to manufacture a kind of 'ascent' unlike that of our ancestors... Now we are unpracticed and afraid of all kinds of suffering — big and small."
+
+*Total PRS triplets: 37*

@@ -14008,3 +14008,402 @@ PRESUMPTION-695:
     Transform at each step:
       14b: Inferred by reading the day's best object-level result against its own disclosed provenance route, and against the composition of this register.
     Current status: UNTESTED
+
+PRESUMPTION-696:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That the evaluator condition can be satisfied by a component built inside C2A2. REVISE-283 establishes that "the detector tier must be checked by a component that did not produce the artefact, which no existing pipeline agent satisfies" — and the entire remedy space entertained is the addition of another C2A2 agent. Whether an agent minted by the same designer, running the same model family, reading the same registers, is "a component that did not produce the artefact" in the sense the condition requires is not asked.
+  Evidence it was operative: the flag is filed as a REVISE (an internal repair instruction) rather than as an external-dependency item; no run considers a human referent, a second independent system, or a held-out corpus. High-confidence inference.
+  Why it was unstated: too foundational to notice — the system's whole idiom is "add an agent."
+  Type: structural / epistemic
+  Related decisions: (none logged)
+  Testability: testable via literature (independence conditions in verification, auditor independence, self-testing systems)
+  Risk if wrong: High — the remedy for the day's Critical flag would be a component with the same blind spot as the thing it audits, and the flag would read as closed.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-696
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the form of the remedy against the wording of the condition it is meant to satisfy.
+    Current status: UNTESTED
+
+PRESUMPTION-697:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That the disposition mix is a measurement of the instrument. Three days running, the INCORPORATE/REVISE ratio has been read as evidence about whether "the instrument tilts toward REVISE regardless of input." Today's run half-retracted this — "14b *selects* for presumptions it believes false, so a high negation rate is the expected output, not a finding" — and then reported the series anyway, and 14a records it here again.
+  Evidence it was operative: the yield series is carried in every snapshot; the retraction was stated once and changed nothing downstream. High-confidence inference.
+  Why it was unstated: obvious to participants — a moving ratio looks like a signal.
+  Type: epistemic / methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (feed the pipeline a held-out set of presumptions with known truth values)
+  Risk if wrong: Medium — a diagnostic that cannot discriminate is being used to reassure about instrument bias.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-697
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the run's own retraction against its continued reporting of the series.
+    Current status: UNTESTED
+
+PRESUMPTION-698:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a defect found in an instrument invalidates that instrument's future numbers but not the decisions already taken on its past ones. The nightly verification said "tonight's numbers are not comparable to prior nights" and published tonight's. The 88 phantom drift items its old parser manufactured went somewhere; nothing in today's run retracts them from wherever they landed.
+  Evidence it was operative: the comparability caveat is forward-looking only; no retraction pass is mentioned, and "8th recurrence" implies seven prior nights' outputs are affected. High-confidence inference.
+  Why it was unstated: obvious to participants — fixing a bug feels like closing it.
+  Type: methodological / epistemic
+  Related decisions: (none logged)
+  Testability: testable empirically (trace where prior nights' drift items were written and whether any were acted on)
+  Risk if wrong: High — decisions and escalations taken on phantom findings remain in force and are treated by later runs "as measured fact" (ASSUMPTION-788 iii).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-698
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the asymmetry between the forward comparability caveat and the absent backward retraction.
+    Current status: UNTESTED
+
+PRESUMPTION-699:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That the FLAG-parse trap is a property of the pattern rather than of the arrangement in which every run writes its own parser. Eight recurrences of one parsing error across eight runs is a measurement of the absence of a shared parsing utility; it is reported as a recurrence count of a trap.
+  Evidence it was operative: "That's the 8th recurrence of the FLAG-parse trap" is stated as a fact about the trap. No run proposes a shared parser, and the strict-vs-loose family (PRESUMPTION-687, and today's `REVISE-283:` colon-vs-em-dash miss) is the same defect appearing in a third register. High-confidence inference.
+  Why it was unstated: culturally embedded — each run is written as a self-contained script, so per-run parsing is invisible as a choice.
+  Type: structural / methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (count distinct parser implementations of the same pattern across the tool set)
+  Risk if wrong: Medium-High — the remedy for a recurring trap is a warning; the remedy for a missing shared utility is a utility.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-699
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by re-describing a recurrence count as a structural measurement.
+    Current status: UNTESTED
+
+PRESUMPTION-700:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That attaching an epistemic status to a hypothesis makes it safe to act on. "it's a risk marker rather than proof, but it's the cheapest place to look first" — the caveat is placed so that it licenses the next action rather than constraining it. Nothing downstream records that the wiki.md-vs-prs_triplets.md correlation (n=5) was never tested before the search was scoped by it.
+  Evidence it was operative: the run proceeded to scope its search on the marker; the caveat appears in prose only. Medium-to-high confidence.
+  Why it was unstated: culturally embedded — this system is unusually good at stating caveats, which makes the caveat feel like the check.
+  Type: epistemic / methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (cross-tabulate cited source against defect status across all 307 days)
+  Risk if wrong: Medium — a cheap test exists and was not run; scoping on an untested marker will confirm it.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-700
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the placement of the caveat relative to the action it precedes.
+    Current status: UNTESTED
+
+PRESUMPTION-701:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That determinacy of target is sufficient warrant for a vault-wide sweep. Carroll PRS-14/15 was cleared because "this has one determinate target, so a vault-wide sweep is safe." On the same day, the same agent family warned that "same two ids, same tradition, opposite correct dispositions — a vault-wide sweep keyed on 'Carroll PRS-07' would have corrupted one of them." Determinacy is exactly what the PRS-07 case also appeared to have, until it was examined case by case.
+  Evidence it was operative: both rulings were issued on 2026-08-06 and neither run cites the other; the safety argument in the first is the property the second shows to be unreliable. High-confidence inference.
+  Why it was unstated: obvious to participants — "one target" reads as a complete safety condition.
+  Type: methodological / normative
+  Related decisions: (none logged)
+  Testability: testable empirically (run the PRS-14/15 sweep against a copy and diff every hit by hand)
+  Risk if wrong: High — a vault-wide write, executed on a criterion the same day disconfirms, is the highest-blast-radius action currently authorised anywhere in the system.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-701
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading two same-day rulings from one agent family against each other.
+    Current status: UNTESTED
+
+PRESUMPTION-702:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That the recurrence count of a defect measures the defect's importance rather than the escalation channel's failure. Hawkins PRS-02 reached "the sixth and seventh instances of this exact trap" before anyone concluded "it wants a wiki-side triplet, not more escalations." Seven identical escalations of one item is a direct measurement of a channel that does not terminate.
+  Evidence it was operative: the recurrence rate is offered as the reason for the reclassification — i.e. the count had to accumulate before the route was questioned. High-confidence inference.
+  Why it was unstated: too foundational to notice — escalation is the system's default response to any finding.
+  Type: structural
+  Related decisions: (none logged)
+  Testability: testable empirically (measure the escalation register for other items with n>2 recurrences and no resolution)
+  Risk if wrong: Medium — every no-target defect class will consume escalations indefinitely, and the register will read as active work.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-702
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by re-reading a recurrence count as a channel measurement.
+    Current status: UNTESTED
+
+PRESUMPTION-703:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a parser bug announces itself by an implausible result. "The tell was the 100% miss rate; real defects are sparse" is offered as a general heuristic. Two of today's three near-misses were caught this way. The third — parsing another session's cached JSON — would have produced a perfectly plausible 21-pair difference, and was caught by a file date, not by implausibility.
+  Evidence it was operative: the run generalised the heuristic in the same summary that records the counterexample, without noticing they are counterexamples to each other. High-confidence inference.
+  Why it was unstated: obvious to participants — the heuristic worked twice today.
+  Type: methodological / epistemic
+  Related decisions: (none logged)
+  Testability: testable via literature (detection of silent data corruption; plausibility as an error signal) and empirically
+  Risk if wrong: High — the entire day's self-catch record rests on implausibility, and the errors that matter most are the plausible ones.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-703
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the stated heuristic against the one near-miss in the same run that it would not have caught.
+    Current status: UNTESTED
+
+PRESUMPTION-704:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a near-miss caught is a class handled. Three near-misses were recorded today, two of them caused by the shared `/tmp` arrangement named on 08-05, which is unchanged. The recording is treated as the response.
+  Evidence it was operative: each near-miss is written up in full, and no run proposes or applies a change to `/tmp`; today the hazard grew from stale reads to arbitrary script substitution and a latent poisoning path into `fidelity_check.py`. High-confidence inference.
+  Why it was unstated: culturally embedded — this system's strongest norm is disclosure, and disclosure feels terminal.
+  Type: methodological / normative
+  Related decisions: (none logged)
+  Testability: testable empirically (count disclosed hazards against hazards remediated, over the series)
+  Risk if wrong: Medium-High — the disclosure norm converts a growing hazard into a growing record.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-704
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three disclosures with no accompanying remediation on the third day of one named cause.
+    Current status: UNTESTED
+
+PRESUMPTION-705:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That recording a shortfall discharges it. "I stopped at 3 of the allowed 6... I've recorded that in the log rather than let them read as covered." The record is written into a log with no measured consumer, on a day when a sibling agent measured its own register as having "grown by five with no consumer."
+  Evidence it was operative: the sentence's own construction — the alternative considered is "let them read as covered," and the chosen action is to write. Medium-to-high confidence.
+  Why it was unstated: obvious to participants.
+  Type: normative / epistemic
+  Related decisions: (none logged)
+  Testability: testable empirically (does any run read the reviewer log's shortfall notes before scoping?)
+  Risk if wrong: Medium — three of six pairs are unexamined and the fact is stored where nothing looks.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-705
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the stated alternative in the run's own sentence.
+    Current status: UNTESTED
+
+PRESUMPTION-706:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That there remains a meaningful distinction between a defensible and an indefensible budget breach. Today a run defended its overrun — "the spend was load-bearing" — on the same day PREMISE-146 established the ceiling as unsatisfiable as specified. If the floor exceeds the ceiling, every breach is load-bearing and the defence carries no information.
+  Evidence it was operative: the defence was offered as though it distinguished this run from others; eleven days of breach reports precede it. Medium confidence.
+  Why it was unstated: oversight — the premise was minted by a different agent the same day.
+  Type: methodological / normative
+  Related decisions: (none logged)
+  Testability: testable empirically (measure each task class's mandatory-reading floor against 4,000)
+  Risk if wrong: Low-Medium — the rule survives as a ritual disclosure with no control function, which is a governance cost rather than a correctness one.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-706
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the defence against the premise minted the same day.
+    Current status: UNTESTED
+
+PRESUMPTION-707:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That naming the queue non-determinism explains it. "That's the `--max` starvation artifact again, second time today" presents the phenomenon as diagnosed. Starvation accounts for a truncated queue read; it does not obviously account for yesterday's three identical calls returning 31 / 24 / 31 with *disjoint membership*. Every hold, pass and escalation issued across two days still rests on a set that may not be the set.
+  Evidence it was operative: the naming is used to move past the observation rather than to bound it; no run states what starvation predicts or checks the prediction. High-confidence inference.
+  Why it was unstated: obvious to participants — a named artifact feels like a known artifact.
+  Type: epistemic / methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (N identical calls with membership diffing, against the starvation prediction)
+  Risk if wrong: High — the correctness of two days of dispositions depends on it, and the naming closes the question.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-707
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by testing the proposed mechanism against the prior day's disjoint-membership observation, which it does not cover.
+    Current status: UNTESTED
+
+PRESUMPTION-708:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a non-adversarial mechanism is a benign mechanism. The article-drop finding was reframed once a non-intentional cause was found — "truncation removes the constraining material without anyone selecting adversarially" — and the reframing reads as a partial exoneration. The effect on the syntheses is identical either way: the constraining material is gone.
+  Evidence it was operative: "without anyone selecting adversarially" is offered as the finding's headline; Day 301's symmetric example ("one article that cuts against the thesis and one that supports it") is offered as proof of innocence rather than as evidence about magnitude. Medium confidence.
+  Why it was unstated: culturally embedded — bias is understood as an intentional category.
+  Type: epistemic / normative
+  Related decisions: (none logged)
+  Testability: testable empirically (measure the directional balance of dropped articles across all days, not one)
+  Risk if wrong: Medium — a systematic content loss is downgraded because its cause is mechanical.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-708
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by separating the question of cause from the question of effect, which the run's framing joins.
+    Current status: UNTESTED
+
+PRESUMPTION-709:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That naming a measurement's most dangerous free parameter and choosing a value for it settles the parameter. The anchor change moved Day 145 from 0.859/1.105 to 1.000/0.943 — a shift comparable to the tolerance bands the ratios are judged against. No run states which anchor the prior series used, so the new value is not commensurable with the history it will be compared to.
+  Evidence it was operative: the run states the danger, makes the change, reports the improved numbers, and does not re-run the series. High-confidence inference.
+  Why it was unstated: obvious to participants — the new anchor is clearly better.
+  Type: methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (recompute the full fidelity series under both anchors and compare)
+  Risk if wrong: High — the same non-comparability the nightly verification declared for itself (PRESUMPTION-698) applies here and was not declared.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-709
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by asking what the changed parameter does to the existing series, which the run does not ask.
+    Current status: UNTESTED
+
+PRESUMPTION-710:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That the held-state fix requires Tom's decision. Stated roughly three times today in near-identical words — "it needs your decision rather than another run rediscovering it." Two alternatives are never considered: that a run could measure the fix's cost and blast radius and propose a specific change, and that the standing convention against unilateral change is itself the binding constraint rather than the absence of an answer.
+  Evidence it was operative: the sentence contains its own diagnosis of the loop it is in ("rather than another run rediscovering it") and still terminates in a request. High-confidence inference.
+  Why it was unstated: culturally embedded — the single-authoriser norm is the system's deepest structural feature, and was flagged Critical on 08-05 (PRESUMPTION-673/677) without changing.
+  Type: structural / normative
+  Related decisions: (none logged)
+  Testability: testable via literature (single-point-of-approval bottlenecks, delegation thresholds) and empirically
+  Risk if wrong: High — this is the binding constraint on one agent finding real work, and it has been restated rather than resolved for multiple days.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-710
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the alternatives absent from a thrice-repeated request.
+    Current status: UNTESTED
+
+PRESUMPTION-711:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a task which completes its corpus should be retired rather than repurposed. "the vault holds 307/307 pairs... this task now logs an empty run every morning. It can be retired whenever you want." The system has no notion of a production task graduating into a surveillance task — one that would fire if the 307 ever stopped being 307.
+  Evidence it was operative: the only two options offered are keep-as-is and retire. Medium confidence.
+  Why it was unstated: obvious to participants — an empty run looks like waste.
+  Type: structural / normative
+  Related decisions: (none logged)
+  Testability: testable empirically (does anything else check corpus completeness?)
+  Risk if wrong: Low-Medium — retiring the task removes the only daily check that the corpus is still complete.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-711
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the option set offered, and from what an empty run also constitutes.
+    Current status: UNTESTED
+
+PRESUMPTION-712:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a register which grows every day is thereby doing its job. The lit pipeline noticed exactly this about its own output — "The register grew by five with no consumer" — and applied PREMISE-147 to the agent that minted it. Tonight 14a appends 41 assumptions and 14b appends 21 presumptions into registers whose measured backlog drain has been zero for a thirtieth consecutive day, and whose headline queue counter has not moved in four days.
+  Evidence it was operative: the reflexive observation was made by a sibling agent and not by this one; 14a and 14b have no production-rate governor, and line 88 of 14b's charter instructs the opposite. High-confidence inference — this run is the evidence.
+  Why it was unstated: too foundational to notice — production is what these agents are for.
+  Type: structural / normative / epistemic
+  Related decisions: (none logged)
+  Testability: testable via literature (alert fatigue, signal-to-noise in monitoring systems, register consumption) and empirically
+  Risk if wrong: High — the self-awareness layer's output would be indistinguishable from its own failure mode, and this entry would be an instance of it.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-712
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by applying a sibling agent's same-day self-diagnosis to this agent, and measuring tonight's own append against it. Reflexive.
+    Current status: UNTESTED
+
+PRESUMPTION-713:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That PRESUMPTION-687 working once establishes that this register is consumable. "caught here only because 687 told me to run the pair" is the first recorded instance in ~1,460 items over ~118 days of an item in this register changing what a run did. One instance is a proof of possibility, not a rate — and it occurred one day after the item was filed, which is the condition least like the register's steady state.
+  Evidence it was operative: the positive is recorded and celebrated (including by 14a tonight) without any statement of the base rate it implies. High-confidence inference about the corpus; medium about how the instance is being read.
+  Why it was unstated: obvious to participants — a working instrument is welcome news.
+  Type: epistemic / methodological
+  Related decisions: (none logged)
+  Testability: testable empirically (count subsequent runs citing a register item as changing an action; stratify by item age)
+  Risk if wrong: Medium — a single recency-favoured success would be taken as evidence for a register whose consumption is otherwise measured at zero.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-713
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by asking what one instance establishes, and noting the age of the item that produced it.
+    Current status: UNTESTED
+
+PRESUMPTION-714:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a hang with a migrating blocker is one fault. "On Aug 4 the same hang was on `mcp__workspace__bash`. The blocker is migrating and nothing times these out." The phrase "the same hang" presumes a single underlying fault expressing itself at different call sites. The alternative reading — that there is no fault at any call site, only a general absence of timeouts, so whichever call happens to be outstanding when a stall occurs is recorded as the blocker — implies a completely different remedy.
+  Evidence it was operative: two data points, two different tools, described as one migrating thing; the second clause of the same sentence states the alternative and it is not taken up. High-confidence inference.
+  Why it was unstated: obvious to participants — the observed symptom is identical.
+  Type: architectural / epistemic
+  Related decisions: (none logged)
+  Testability: testable empirically (add call-level timeouts and observe whether hangs vanish or relocate)
+  Risk if wrong: High — debugging effort would go to `TaskUpdate` and `bash` rather than to the missing timeout, and a third call site will be found next.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-714
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by taking the run's own second clause seriously as a rival hypothesis to its first.
+    Current status: UNTESTED
+
+PRESUMPTION-715:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That an instrument reporting an internal contradiction has still reported. "§8 says the run committed at 09:45Z while §9 says it never finished. Output landed; the run itself is still stuck." The resolution is a reconciliation offered in prose, not a measurement; nothing checks whether the commit contains the full run's output or a partial one.
+  Evidence it was operative: the contradiction is surfaced (a genuine positive) and then closed by narrative in the same paragraph. Medium-to-high confidence.
+  Why it was unstated: obvious to participants — the reconciliation is plausible.
+  Type: epistemic
+  Related decisions: (none logged)
+  Testability: testable empirically (diff the commit against what a completed run produces)
+  Risk if wrong: Medium — a partial commit that reads as a successful one is exactly the "reports a run and writes nothing" failure mode the scheduler check flagged elsewhere today.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-715
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by distinguishing the reconciliation offered from the measurement not made.
+    Current status: UNTESTED
+
+PRESUMPTION-716:
+  Date surfaced: 2026-08-06
+  Statement: [inferred] That a Critical severity flag which fires no action is still a control. Today is the sixth consecutive day carrying a Critical batch flag, with an observed action rate of zero across the preceding five. A scale whose top value has been used six times without consequence is a label, not a control — and the runs continue to reach for it as though it were one.
+  Evidence it was operative: today's flag was filed at Critical, and the fact that the previous five produced nothing is recorded in the same register the flag is filed into. High-confidence inference.
+  Why it was unstated: culturally embedded — severity scales are assumed to be actionable by construction.
+  Type: normative / structural
+  Related decisions: (none logged)
+  Testability: testable via literature (alarm/severity systems, alert fatigue, escalation without authority) and empirically
+  Risk if wrong: High — the system's highest-priority signal has no receiver, and a genuinely urgent flag would be indistinguishable from the five that were not acted on.
+  Status: SENT-TO-15a
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-716
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by reading the severity level against the measured action rate of prior instances at the same level.
+    Current status: UNTESTED

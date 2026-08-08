@@ -221,7 +221,47 @@ PRS-19:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 23*
+PRS-21:
+  Problem: Equal-time cosmological correlators had been observed to be simpler than the wavefunctions they are computed from — fewer singularities, more tractable function space, well-behaved melonic loop integrands — but the simplicity was a collection of empirical observations with no unifying reason.
+  Resource: The observation that the wavefunction is defined by a path integral over half of spacetime (asymptotic past to the t = 0 boundary) while the correlator is a full-spacetime, time-ordered integral, made precise at the level of individual Feynman graphs via the decomposition G_BB = G_F − H of the bulk-to-bulk propagator.
+  Solution: A single structural origin for all the observed simplifications. Verbatim: "we explained how the relative simplicity of correlators follows from the basic fact that they are full spacetime integrals, while wavefunctions are defined only on half of spacetime."
+  Date Added: 2026-08-08
+  Source: Correlators are simpler than wavefunctions (Arkani-Hamed, Glew, Vazão; arXiv:2512.23795); PROP-2026-08-07-002
+  Confidence: High
+  Evidence: Abstract and §VI (Outlook), read directly. The absence of 2y_e poles is demonstrated in §II from the integral representation itself — two explicit integrals, one vanishing identically, the other unable to generate a 2y in the exponent — rather than by term-by-term cancellation.
+
+---
+PRS-22:
+  Problem: Bootstrapping cosmological observables requires enough structural constraint to fix an ansatz without computing the underlying path integral; pole locations alone underdetermine the answer badly.
+  Resource: The vanishing of the first subleading term in the Laurent expansion around *every* pole of the correlator — a consequence of the integrand becoming odd in the time variable once the half-space restriction is lifted, so that the O(ε⁰) contribution integrates to zero.
+  Solution: A constraint strong enough to nearly determine the correlator from its singularity structure alone. Verbatim: "if we make an ansatz for the correlator inputing only the poles, demanding only the vanishing of subleading terms fixed 97% of the coefficients." The authors flag systematic analysis of this bootstrap as the paper's principal open direction.
+  Date Added: 2026-08-08
+  Source: Correlators are simpler than wavefunctions (Arkani-Hamed, Glew, Vazão; arXiv:2512.23795); PROP-2026-08-07-002
+  Confidence: High
+  Evidence: §IV, "Partial energy pole expansion," on tree-level 4-vertex examples (4-chain and star). Note honestly: 97% on two small tree examples is a promising indication, not a theorem, and the authors present it as motivation for future work.
+
+---
+PRS-23:
+  Problem: The relationship between cosmological observables and flat-space scattering amplitudes — the objects the amplituhedron program actually understands — has been indirect, running through the wavefunction.
+  Resource: An explicit differential operator, acting on the ℓ₀-integrated scattering amplitude, that generates the subleading terms of the correlator's expansion about the total-energy pole; in Tr(φ³) it is stated combinatorially in terms of the momentum polygon, as a sum of double derivatives over the internal chords crossed by a straight line drawn between two outer edges.
+  Solution: A direct, computable bridge from amplitude to cosmological correlator, tying the cosmology program to the amplitudes machinery without passing through the wavefunction.
+  Date Added: 2026-08-08
+  Source: Correlators are simpler than wavefunctions (Arkani-Hamed, Glew, Vazão; arXiv:2512.23795); PROP-2026-08-07-002
+  Confidence: High
+  Evidence: §IV equations (35), (37), (39) and §V equation (43). The paper is candid about the limit: "Beyond O(E_G²) the coefficients become complicated polynomials of x̄_v, and it is not clear whether we can obtain them by acting with a differential operator on an amplitude."
+
+---
+PRS-24:
+  Problem: The program's metaphysical claim — that spacetime is not fundamental — has rested on cases (amplituhedron, surfaceology) where spacetime scaffolding is *removed*. It has had less to say about which of the *quantum-mechanical* objects, state or observable, is closer to the underlying structure.
+  Resource: The reversal established here: the wavefunction, the object usually treated as the fundamental description of the quantum state, carries strictly more singularity structure and a more complicated function space than the correlator obtained from it by the Born rule.
+  Solution: A worked case in which the *observable* is structurally prior to the *state* — arguably the quantum-mechanical half of the "spacetime and quantum mechanics are both approximations" thesis, which the tradition has so far documented mainly on the spacetime side.
+  Date Added: 2026-08-08
+  Source: Correlators are simpler than wavefunctions (Arkani-Hamed, Glew, Vazão; arXiv:2512.23795); PROP-2026-08-07-002
+  Confidence: Medium
+  Evidence: §VI, verbatim: "the most physical observable — the correlator, obtained from the wavefunction via the Born rule — is both 'simpler' and more directly tied to flat-space scattering amplitudes than the wavefunction." Interpretive caution: the paper's claim is about *computational and analytic* structure, and reading it as an ontological priority claim is the proposer's extension, not the authors'. Flagged Medium for that reason and should be argued, not assumed, on ingestion.
+
+---
+*Total PRS triplets: 27*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

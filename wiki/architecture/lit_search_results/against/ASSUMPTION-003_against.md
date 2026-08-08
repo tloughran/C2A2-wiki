@@ -195,3 +195,77 @@ SEARCH-AGAINST-ASSUMPTION-003 (RE-TRIGGER cycle 3):
   Specific risks: Unchanged from prior cycle.
   Mitigations available: Unchanged from prior cycle.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-AGAINST-ASSUMPTION-003 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: ASSUMPTION-003
+  Original statement: "Independent FOR/AGAINST search prevents confirmation bias"
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: ASSUMPTION-003
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15b (cycle 6, 2026-08-08): re-searched for challenging literature; NEW SOURCES FOUND
+    Current status: CHALLENGED — evidence trajectory changed from STABLE to CHALLENGING-STRENGTHENING for the first time in six cycles
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. No new 14a/14b batch; cohort drawn from the standing
+    15d backlog (2026-07-05 monthly re-trigger, cycle 5, unconsumed 34 days). INDEPENDENCE DISCLOSURE,
+    stated up front because this batch is partly ABOUT independence: 15a and 15b were executed by one
+    model in one context in this run. The separation is procedural, not architectural. This is the
+    condition ASSUMPTION-769 and PRESUMPTION-696 name, and it applies to this file.
+
+  Challenging evidence found: Yes
+
+  Sources (new this cycle):
+    1. "Emergence of Biased Consensus in Multi-Agent LLM Debates." arXiv:2608.02827 (2026). — Reports
+       confirmation bias as a DISCUSSION-LEVEL phenomenon: debate structure can produce an echo chamber that
+       reinforces bias rather than correcting it. Dated within the last cycle window. [UNVERIFIED: authors.]
+    2. "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent
+       Debate." arXiv:2605.00914 (2026). — The single most direct challenge located. A SINGLE agent
+       self-correcting in isolation outperforms UNGUIDED HOMOGENEOUS debate. C2A2's 15a/15b pair is
+       homogeneous (one model family) and unguided (no adjudicated protocol). [UNVERIFIED: authors.]
+    3. "Too Polite to Disagree: Understanding Sycophancy Propagation in Multi-Agent Systems."
+       arXiv:2604.02668 (2026). — Inter-agent sycophancy amplifies premature consensus and yields LOWER
+       accuracy than single-agent baselines. [UNVERIFIED: authors.]
+    4. "Not All Flips Are Conformity: Decomposing Stance Convergence in Multi-Agent LLM Debate."
+       arXiv:2606.00820 (2026). — Decomposes convergence; establishes that agreement in these systems is
+       not by itself evidence of correctness. [UNVERIFIED: authors.]
+    5. "When Identity Skews Debate: Anonymization for Bias-Reduced Multi-Agent Reasoning." arXiv:2510.07517.
+       — Debate outcomes shift with the ROLE LABEL attached to a participant; anonymisation changes results.
+       The role label is doing work independent of the evidence. [UNVERIFIED: authors.]
+    6. Nemeth, C. et al. "Devil's advocate versus authentic dissent: stimulating quantity and quality."
+       European Journal of Social Psychology, 10.1002/ejsp.58. — AUTHENTIC dissent outperforms ROLE-PLAYED
+       devil's advocacy. C2A2's 15b is role-played by construction. [UNVERIFIED: year, volume, pages.]
+
+  Strength of challenge: Strong
+
+  Summary: The challenging base moved substantially and adversely this cycle, after five cycles recorded as 'stable'. Four 2026 papers converge on a claim that is narrower and more damaging than 'debate does not always help': under HOMOGENEOUS agents and UNGUIDED protocol, structured multi-agent disagreement can perform WORSE than a single agent self-correcting, via sycophancy and premature consensus. C2A2's configuration matches the conditions under which the effect is reported. Independently, the social-psychology literature has held for decades that assigned advocacy is the weaker form of dissent. The assumption as worded — that the mechanism PREVENTS confirmation bias — is not merely unsupported; there is now direct evidence that the mechanism can carry bias at the discussion level.
+
+  Specific risks: If false, the entire 15a/15b/15c pipeline is a bias-laundering device: it produces the FORM of adversarial testing and the CONFIDENCE that comes with it while inheriting a single model's priors. Every disposition in the register — 624 to date — would rest on it. Note the compounding path: PREMISE-111/120 already hold that same-family convergence is not independent evidence, and ASSUMPTION-769 records that independence was challenged from inside the pipeline on 2026-08-07.
+
+  Mitigations available: Anonymisation of role labels at the 15c reading step (arXiv:2510.07517 direction). Cross-family execution: run 15b on a different model family from 15a. Adjudicated rather than unguided protocol. Cheapest first step, and the one the register has requested repeatedly without it being run: a held-out set with known truth values (PRESUMPTION-697, REVISE-271).
+
+  STEELMAN:
+    Item: ASSUMPTION-003
+    Strongest counterargument: The debiasing effect C2A2 claims requires that the two searches fail
+      INDEPENDENTLY. Two instances of one model family, prompted to opposite conclusions, do not fail
+      independently — they share training data, retrieval habits, and a prior over what counts as a
+      citable source. The role split then does something worse than nothing: it converts a shared prior
+      into an apparently adversarial result, because a FOR-agent and an AGAINST-agent drawing on the same
+      latent knowledge will disagree exactly where their shared prior is ambiguous and AGREE exactly where
+      their shared prior is wrong. That is the worst possible correlation structure for a verification
+      system: the errors that survive are the confident shared ones. The 2026 sycophancy and biased-consensus
+      results are the empirical signature of this.
+    What would need to be true for C2A2 to be safe: the two agents' error distributions are close to
+      independent, and the disagreement rate is measured rather than assumed.
+    How to test: run the two roles on a held-out set with known truth values; report the joint error
+      matrix, not the per-agent accuracy. Cost: one afternoon. It has been requested since 2026-08-04.
+
+  Recommendation: CHALLENGED

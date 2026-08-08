@@ -18543,3 +18543,284 @@ MONITOR-502:
     IN-HOUSE COUNTS SETTLE WITHOUT ANY AUTHORISATION, which PREMISE-124 and the precedent of
     MONITOR-500 and MONITOR-501 both forbid. The counts above are OWED and were NOT run this session.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: MONITORING
+
+
+MONITOR-503:
+  Date entered: 2026-08-07
+  Source item: PRESUMPTION-713 (14b)
+  Disposition record: DISPOSITION-621
+  Statement under monitoring: That one register item working once establishes that this register is
+    consumable. What is monitored is NOT the possibility claim, which both directions concede and
+    which is genuinely established (the consumption pathway from register to changed action
+    completed end to end, for the first time in ~118 days). What is monitored is the RATE claim
+    that the item's phrasing reaches for, and specifically the two counts that would convert
+    0.068% into a number that means something.
+  Item type: PRESUMPTION (unstated — surfaced by inference). Risk: Medium. POSITIVE case.
+  15a: PARTIALLY-SUPPORTED (Weak). The feasibility/pilot-study literature splits the claim cleanly
+    and in the item's favour on one half: a small or single-case result establishes THAT A THING
+    CAN BE DONE and yields logistical parameters, while the same literature explicitly refuses
+    effect-size or rate inference from the same data because small-sample estimates are too
+    imprecise to plan from. Tversky & Kahneman (1971) names the generalisation error and base-rate
+    neglect names the specific one, acute here because the denominator was in hand — one in ~1,460
+    is not a hidden base rate. 15a's second strand (documentation staleness / recency in retrieval)
+    supports 14b's sharper observation that a one-day-old item is sampled from the most favourable
+    point of the decay curve, but 15a declined to treat any of its figures as measured; every
+    source in that strand is vendor or preprint material located by title only.
+  15b: CHALLENGED (Moderate — NOT Strong, and 15b says so explicitly). The strong ground needs no
+    literature: 1/1,460 over 118 days is 0.068% with a confidence interval that includes
+    essentially any small rate. The interesting ground — age-dependence — is supported by structure
+    and plausibility rather than by any citable measurement, because every source located was a
+    vendor blog relaying third-party surveys 15b could not verify (Readme 30-90 days, Zoomin
+    68%/34%, Guru 60%: all [UNVERIFIED] and not to be quoted downstream). 15b records this as the
+    item in the batch whose challenge would most improve with better sources. 15b also names a
+    COMPETING EXPLANATION that would change the sign of the finding: a one-day-old item may have
+    influenced the run through ordinary recency of working context rather than through retrieval
+    FROM the register — in which case the register's demonstrated consumption rate is zero, not
+    0.068%, and the system holds a positive belief with no supporting instance at all.
+  WHY MONITOR AND NOT REVISE — three reasons, stated so they can be argued with:
+    (a) The challenge is the ONLY Moderate one in this batch's presumption cohort; the other seven
+        presumptions drew Strong. The 15c heuristic that routes PRESUMPTION + STRONG challenge to
+        REVISE does not fire here, and applying it anyway would be reading the batch rather than
+        the item.
+    (b) 15b explicitly warns against over-correction on this item and lists it as a specific risk:
+        "treating a genuine positive as worthless would be its own error, and the register's one
+        success is real and should be kept in view." A REVISE flag on a POSITIVE case would be the
+        error 15b names.
+    (c) The remedy is one sentence and requires no authorisation — restate the claim as a
+        possibility claim with the rate attached — so nothing here needs a decision Tom holds.
+  WHY MONITOR AND NOT INCORPORATE: the possibility claim is supported but is not the claim the item
+    makes, and minting a premise from n=1 while the recency-versus-retrieval question is open would
+    be premature in exactly the direction the 15c charter warns is hardest to reverse.
+  WHAT WOULD CHANGE THE DISPOSITION — TWO COUNTS, BOTH CHEAP, BOTH TERMINATING:
+    (i) THE RECENCY-VERSUS-RETRIEVAL CHECK — the decisive one, and the cheapest thing in this
+        batch. Examine the run that consumed the item: did it RETRIEVE the item from the register,
+        or was the item in its context because it had been filed the previous day? A single
+        inspection answers it.
+          · retrieved from the register -> the possibility claim stands and INCORPORATE becomes
+            available for the narrow form (the pathway functions), with the rate attached
+          · present by recency only -> demonstrated consumption rate is ZERO, the one positive
+            instance evaporates, and this item joins the PRESUMPTION-712 / -716 cluster at REVISE
+    (ii) THE CONDITIONAL DENOMINATOR — sample n register items, determine for each whether its
+        triggering condition recurred in the observation window, and count how many of those fired.
+        This is 15b's steelman taken seriously: most items describe conditions that never recurred
+        and so had no opportunity to fire, and without this the register's performance is unknown
+        in BOTH directions, not just the pessimistic one.
+    Third, if either is run and is not decisive: surface an item from the OLDEST decile to a run
+    whose task it bears on and see whether it changes the action. That measures the age dependence
+    in-system and is worth more than any of the vendor decay figures cited in either file.
+  Interlocks: member of 15b's SYSTEMIC-RISK-FLAG of 2026-08-07 (Critical; affected items
+    PRESUMPTION-710, 712, 713, 716; filed at the end of PRESUMPTION-712_against.md), whose common
+    vulnerability is that the production of a record is treated as the exercise of a control. This
+    item is the flag's ONLY member with a positive instance, which is why it is the member most
+    worth measuring and the one least suited to a flag. The flag's own minimum viable action —
+    publish paired append rate and action rate as a standing figure — subsumes count (ii) here and
+    is carried in this batch by REVISE-289 and REVISE-290; it is NOT duplicated into this entry.
+    Bears on PREMISE-106 (queue in the unstable regime) and PREMISE-147 (producer-side proxies).
+  Monitoring cadence: Weekly | Next 15d check: 2026-08-14
+  Priority: High — count (i) is a single inspection, it is owed, and it can flip this item's sign
+    outright. Until it is run, the system's one piece of good news about its own register is of
+    unknown provenance.
+  Cycle: 0
+  HONESTY NOTE ON THIS ENTRY'S OWN CHANNEL, required by PREMISE-102 and PREMISE-138, and sharper
+    here than usual: this entry is filed into the 15d monitor queue, whose consumption has been
+    approximately zero since 2026-07-08 — and the item it concerns is a claim ABOUT whether items
+    filed into registers are ever consumed. If MONITOR-503 is never read, that fact is itself the
+    measurement PRESUMPTION-713 asks for, returned in the negative. Neither count above was run
+    this session.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: MONITORING
+
+
+MONITOR-504:
+  Date entered: 2026-08-07
+  Source item: PRESUMPTION-714 (14b)
+  Disposition record: DISPOSITION-622
+  Statement under monitoring: That a hang with a migrating blocker is one fault — "the same hang"
+    on `bash` (08-04) and `TaskUpdate` (08-06) — against the rival reading, stated in the run's own
+    second clause and not taken up, that there is no fault at any call site and only a general
+    absence of timeouts.
+  Item type: PRESUMPTION (unstated — surfaced by inference). Risk: High.
+  15a: SUPPORTED (Moderate) — the ONE item in this batch where the FOR direction returned SUPPORTED
+    rather than PARTIALLY-SUPPORTED or NO-SUPPORT-FOUND. The support arrives by DISSOLVING the
+    disjunction rather than by choosing a side: Dai et al. (2018, IC2E, "Understanding Real-World
+    Timeout Problems in Cloud Server Systems" — first author and venue from a located filename;
+    full author list [UNVERIFIED]) catalogues MISSING TIMEOUT CHECKING as a named bug class that
+    causes system hang, so in the field's own vocabulary a general absence of timeouts IS the
+    single underlying fault and is not a rival to one. Practitioner incident write-ups supply the
+    mechanism for the migrating signature: one shared client configuration governs every outbound
+    call, so the symptom surfaces at whichever call site is slow that day while the defect stays
+    put. [The 100,000 ms .NET default and the ~1 GB/minute accumulation figure appear in unopened
+    sources and are flagged illustrative-only in the FOR file; not to be quoted.]
+  15b: CHALLENGED (Moderate — and 15b states plainly why it is not Strong: the sources that speak
+    most directly are patents and practitioner guides, not empirical studies). The load-bearing
+    points: hang-recovery patents establish that a hang PROPAGATES, so the call site where a stall
+    is observed need not be the site where anything is wrong; the standard architecture places the
+    watchdog ABOVE the work rather than at each call, which is precisely the design that makes the
+    blocking call's identity irrelevant; and the flaky-test literature supplies the procedural
+    warning that "the same X again" is the characteristic form of a cause assigned without
+    investigation. A site-local fault does not move; migration across two sites two days apart is
+    the predicted signature of a missing global invariant.
+  WHY MONITOR AND NOT REVISE OR INCORPORATE — this is the balanced case the charter reserves
+    MONITOR for, and it has an unusual property worth recording:
+    (a) Moderate support against Moderate challenge, with no strength asymmetry to break the tie.
+    (b) BOTH DIRECTIONS RECOMMEND THE SAME ACTION. 15a's corrective is on remedy rather than
+        diagnosis — place liveness detection above the individual call site, because a per-site fix
+        chases a symptom that has already moved. 15b's condition (b) is that a supervisory bound
+        exist REGARDLESS of the fault's identity, and it names this as "the one action that is
+        correct under both hypotheses." When the FOR and AGAINST files converge on the same
+        engineering move, the disagreement is about the register's WORDING, not about what to do,
+        and a revision flag would consume a human decision for a question no human needs to settle.
+    (c) The action is available in-house and requires no authorisation.
+  WHAT IS ACTUALLY WRONG, recorded so MONITOR is not mistaken for "nothing to fix": the defect is
+    in the RECORD, not in the remedy. The run stated both hypotheses and the register kept one.
+    15b's condition (a) is the correction: the record should say "stall of unknown cause, unbounded
+    because no timeout exists," which is what is actually known. That is a wording change and it is
+    free.
+  WHAT WOULD CHANGE THE DISPOSITION — THREE PROBES, ALL RUNNABLE NOW:
+    (i) GREP THE TOOL-CALL LAYER FOR ANY BOUND AT ALL. If no call site has one, the "general
+        absence of timeouts" clause stops being a hypothesis and becomes a measured fact, and the
+        burden shifts entirely to whoever claims a site-local fault. This is one grep.
+          · no bound anywhere -> INCORPORATE the layered reading (an unbounded wait is a defect on
+            its own terms, independent of the stall's cause), with the grep as its basis
+          · bounds exist and were bypassed -> the site-local reading regains standing and the item
+            needs a different treatment
+    (ii) COMPARE THE TWO INCIDENTS' SIGNATURES — same outstanding call? same duration profile? same
+        preceding operations? same recovery? "The same hang" is a TESTABLE claim about signature
+        identity and it has never been tested. Divergent signatures refute the one-fault reading
+        directly.
+    (iii) COUNT THE SITES. Two is 14b's figure. A third distinct call site exhibiting it
+        effectively refutes the site-local reading; the count is available from the run record.
+  Interlocks: member of 15b's SYSTEMIC-RISK-FLAG of 2026-08-07 (Critical; affected items
+    PRESUMPTION-696, 703, 707, 714; filed at the end of PRESUMPTION-703_against.md), whose common
+    vulnerability is that a detector or diagnostic is credited with discriminating power that was
+    never measured, and the credit is derived from the single case it happened to catch. 714 is the
+    flag's member where the credited diagnosis derives from the call site at which the symptom
+    appeared. The flag's cross-cutting rule — no diagnostic is recorded without an explicit
+    statement of what it does NOT explain — is carried in this batch by REVISE-286 and is not
+    duplicated here. Also note 15b's risk (iii): a hung run is a LOST run, and in a system with a
+    single saturated consumer (PRESUMPTION-710 / MONITOR-503's cluster) the loss compounds with the
+    backlog, which is why the cheap unconditional remedy is worth more than its size suggests.
+  Monitoring cadence: Weekly | Next 15d check: 2026-08-14
+  Priority: High — probe (i) is one grep, probe (ii) is a diff of two records, and the remedy both
+    search directions endorse is cheap, reversible and correct under either hypothesis. This item
+    is High because it is EASY, not because it is contested.
+  Cycle: 0
+  HONESTY NOTE: none of the three probes was run this session, and the supervisory bound that both
+    15a and 15b independently recommend was not added. The two agents agreed on an action and the
+    action did not happen — which is the PRESUMPTION-712 configuration reproduced inside this very
+    disposition, and is recorded here rather than smoothed.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: MONITORING
+
+
+---
+
+## 2026-08-08 — 15c cycle-6 updates to five monitored items (backlog draw)
+
+*Source: c2a2-lit-search-pipeline 2026-08-08. No new 14a/14b intake existed; cohort drawn from the
+2026-07-05 15d monthly re-trigger cohort at cycle 5, unconsumed for 34 days. Cycles 1-5 for all five
+items are recorded as "no new sources this cycle" refreshes. CYCLE 6 IS THE FIRST CYCLE IN WHICH ANY OF
+THEM PRODUCED NEW SOURCES. Full reasoning at DISPOSITION-625..629 in lit_search_returns.md.*
+
+### MONITOR-001 (ASSUMPTION-003) — STATUS CHANGE: MONITORING -> REVISION-FLAGGED
+**Cycle count:** 6 · **Last checked:** 2026-08-08
+**Evidence trajectory:** Supporting = stable-moderate · Challenging = **STRENGTHENING (changed from
+stable; first change in six cycles)** · New sources since last cycle: **YES** — four 2026 papers on
+sycophancy propagation, biased consensus, and isolated self-correction outperforming unguided
+homogeneous debate.
+**Disposition:** REVISE (DISPOSITION-625 / REVISE-292). Escalated out of MONITOR after five cycles.
+**Status:** REVISION-FLAGGED — awaiting Tom's review. Per 15c, REVISE items do not change status
+further without human response.
+**Risk flags:** CRITICAL (unchanged).
+
+### MONITOR-005 (ASSUMPTION-013) — MONITOR CARRIED FORWARD, PRIORITY RAISED
+**Cycle count:** 6 · **Last checked:** 2026-08-08 · **Next check:** 2026-08-15
+**Evidence trajectory:** Supporting = strengthened METHODOLOGICALLY (structure-mapping engines with LLM
+front-ends now exist) · Challenging = **STRENGTHENING** (counterfactual-task evaluations show sharp
+degradation in far-analogy out-of-distribution settings — C2A2's regime) · New sources: **YES**.
+**Disposition:** MONITOR carried forward (DISPOSITION-627). The REVISE heuristic was deliberately NOT
+followed; the reason is recorded in the disposition and is the item in this batch most worth disagreeing
+with. In short: what this item needs is a measurement, and routing a measurement request through a
+16-day-deep human review queue is the slower path, not the more cautious one.
+**Priority:** raised MEDIUM -> **HIGH-ESCALATING**
+**AUTO-ESCALATE TO REVISE, no further deliberation required, if EITHER:**
+  (a) the counterfactual/invariance check has not been run by **2026-09-08**, or
+  (b) a second in-house false-positive instance is recorded before then.
+  (One in-house instance already exists: REVISE-291 / ASSUMPTION-803, the "allostasis" homonym-or-homology
+  question, filed 2026-08-07 and unresolved.)
+**The test, stated small enough to actually run:** take 20 emitted cross-tradition signals; rewrite both
+sides in the other tradition's vocabulary with the shared terms removed; ask whether the relation
+survives. The survivors are structural. This is REVISE-291's request generalised from one case to the
+class, so running them together costs almost nothing extra.
+**Risk flags:** HIGH (unchanged).
+
+### MONITOR-007 (PRESUMPTION-002) — STATUS CHANGE: MONITORING -> REVISION-FLAGGED
+**Cycle count:** 6 · **Last checked:** 2026-08-08
+**Evidence trajectory:** Supporting = **strengthened** (first peer-reviewed venue publication —
+Neural Computation 38(6):845, 2026; non-profit institutionalisation; third-party extensions) ·
+Challenging = **strengthened by the same publication**, which scopes the framework to sensorimotor
+intelligence and thereby narrows what "transfer" could mean · New sources: **YES**.
+**Disposition:** REVISE (DISPOSITION-628 / REVISE-294). What tipped it: the challenge got harder to
+answer AS the supporting literature improved. Five cycles of MONITOR were justified while the theory's
+scope was stated only in preprints; a peer-reviewed statement of scope removes the ambiguity MONITOR was
+waiting on.
+**Status:** REVISION-FLAGGED — awaiting Tom's review.
+**Risk flags:** CRITICAL (unchanged).
+
+### MONITOR-010 (PRESUMPTION-005) — STATUS CHANGE: MONITORING -> REVISION-FLAGGED
+**Cycle count:** 6 · **Last checked:** 2026-08-08
+**Evidence trajectory:** Supporting = **none located for the load-bearing clause** · Challenging =
+**STRENGTHENING**, with named instances of the class the presumption denies · New sources: **YES**.
+**Disposition:** REVISE (DISPOSITION-626 / REVISE-293).
+**Status:** REVISION-FLAGGED — awaiting Tom's review.
+**REGISTER DEFECT RECORDED HERE, because this is the register it affects:** MONITOR-001 and MONITOR-010
+have carried ONE question as TWO items since 2026-04-13 — six cycles, double queue footprint, half the
+chance either gets attention. REVISE-293 request (3) asks for a merge or an explicit statement of the
+difference. Flagged as an instance of the counting/deduplication class at PRESUMPTION-687.
+**Risk flags:** MEDIUM (unchanged).
+
+### MONITOR-012 (PRESUMPTION-010) — MONITOR CARRIED FORWARD
+**Cycle count:** 6 · **Last checked:** 2026-08-08 · **Next check:** 2026-08-15
+**Evidence trajectory:** Supporting = moderate; the disposition-changing measurement became SATISFIABLE
+this cycle (DRBench insight-recall, Deep Research Bench, LiveNewsBench, PluriHop) · Challenging =
+moderate and structural — a query-driven detector cannot detect a condition no one queried for ·
+New sources: **YES**.
+**Disposition:** MONITOR carried forward (DISPOSITION-629). The cleanest MONITOR in the batch; mixed
+moderate evidence, no design change indicated, specific test newly available.
+**Priority:** HIGH
+**ONE ITEM NOT DEFERRED INSIDE THIS MONITOR, because it is a reporting convention and costs nothing:**
+Agent 16's null return must be reported as "searched and found nothing", NEVER as "nothing there". That
+polarity error is already ACTIVE doctrine (PREMISE-100 / PREMISE-110) and already observed four days
+running (ASSUMPTION-778); leaving it inside a MONITOR would be filing a known defect as an open question.
+**AUTO-ESCALATE TO REVISE if the polarity convention is not in force by 2026-09-08**, independent of
+whether the seeded-detection test has run — the convention is not contingent on the measurement.
+**What would change the disposition:** a seeded-detection rate. Plant n known conditions across a month;
+report detections. Two hours of setup.
+**Risk flags:** HIGH (unchanged).
+
+---
+
+**CROSS-CUTTING NOTE FOR 15d (High), recorded once rather than five times:** all five items in this
+cohort name, as their disposition-changing condition, a MEASUREMENT ON C2A2'S OWN OUTPUT — not a
+literature finding. Not one has been run in six cycles across 117 days. These items are not stalled on
+evidence availability; they are stalled on an activity this system does not perform. Sixty-two more
+items sit in the same monthly cohort behind them, and 255 items remain [QUEUED] and unsearched after
+this run. Re-triggering them on cadence will not move them. See the SYSTEMIC-RISK-FLAG in
+lit_search_returns.md for the full statement.
+
+### CORRECTION, same run, recorded rather than silently fixed
+
+The queue-depth figures first written by this run were WRONG and were corrected before the run closed.
+As written: total 234, remaining 229, composition "180 15d blocks / 26 misrouted / 28 others".
+As measured and now carried: **total 260, remaining 255, composition 211 15d re-trigger/re-check blocks
+(216 before this run's 5) + 26 misrouted-and-held + 18 block-style entries with no 15d cohort date.**
+
+**Cause:** the first count used a single block-style parser and then narrated the 26 inline `ITEM:`-style
+entries as if they were inside that total. They are a different write format and the parser never saw
+them, so 26 items were counted once in prose and zero times in the number. The corrected count uses
+three parsers, one per write format present in this file, and reconciles them.
+
+**This is the fifth instance in four days of the class at PRESUMPTION-687** — a register's counting rule
+failing to survive its own write format — and it occurred in the same run that reported the class. It is
+recorded here rather than only being fixed, per PRESUMPTION-688 (a corrected count does not retire the
+counts it corrects unless the superseded figures are named). The superseded figures are named above.
+No disposition, no result file, and no register entry depended on the count; the affected text is the
+queue-state narrative in this file, `lit_search_returns.md` and `monitor_queue.md`, all three corrected.

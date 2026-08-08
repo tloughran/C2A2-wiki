@@ -202,3 +202,62 @@ SEARCH-AGAINST-PRESUMPTION-005 (RE-TRIGGER cycle 3):
   Specific risks: Unchanged from prior cycle.
   Mitigations available: Unchanged from prior cycle.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-AGAINST-PRESUMPTION-005 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: PRESUMPTION-005
+  Original statement: "Separating FOR/AGAINST prevents bias without introducing others"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: PRESUMPTION-005
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15b (cycle 6, 2026-08-08): re-searched for challenging literature; NEW SOURCES FOUND
+    Current status: CHALLENGED (strong; and the item is now measurably ill-formed — two clauses of different evidential status carried as one)
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. No new 14a/14b batch; cohort drawn from the standing
+    15d backlog (2026-07-05 monthly re-trigger, cycle 5, unconsumed 34 days). INDEPENDENCE DISCLOSURE,
+    stated up front because this batch is partly ABOUT independence: 15a and 15b were executed by one
+    model in one context in this run. The separation is procedural, not architectural. This is the
+    condition ASSUMPTION-769 and PRESUMPTION-696 name, and it applies to this file.
+
+  Challenging evidence found: Yes
+
+  Sources (new this cycle):
+    1. Same 2026 source set as ASSUMPTION-003 this cycle; not re-listed (citation hygiene). The
+       sycophancy-propagation and biased-consensus results bear MORE directly on this item than on 003,
+       because this item's second clause is precisely "without introducing others" and those papers name
+       the others: role-conditioned motivated search, premature consensus, identity-skewed weighting.
+    2. "When Identity Skews Debate" (arXiv:2510.07517) is the decisive one for this item: a NEW bias
+       (identity/role weighting) is introduced BY the labelling, and removing the label changes the answer.
+       That is a direct instance of the class this presumption denies exists. [UNVERIFIED: authors.]
+
+  Strength of challenge: Strong
+
+  Summary: The presumption has two clauses and 15b challenges only the second — but the second is the whole content of the presumption, since the first is shared with ASSUMPTION-003. The 2026 literature supplies named, measured biases introduced by role separation itself. A presumption that denies the existence of a class now has instances of that class in the literature. Treated with extra weight per the protocol: the designers were not aware they were committing to this.
+
+  Specific risks: If false, C2A2's bias ledger is net-negative rather than net-positive and no one is counting. The risk is sharper than for 003 because an unstated premise has no owner and no review date.
+
+  Mitigations available: Label anonymisation; measured comparison against a unified searcher; and — cheapest — SPLITTING THIS ITEM so the unsupported clause stops inheriting the supported clause's standing.
+
+  STEELMAN:
+    Item: PRESUMPTION-005
+    Strongest counterargument: "Prevents bias without introducing others" is not a claim anyone would defend
+      if it were said out loud, which is exactly why it needs surfacing. Every debiasing intervention in the
+      human literature trades one bias for another; the question is never whether new bias is introduced but
+      whether the trade is favourable. C2A2 has never computed the trade in either direction. The presumption
+      therefore is not so much false as UNFORMULATED — and its practical effect is that the cost side of the
+      ledger has never been opened.
+    What would need to be true for C2A2 to be safe: a stated, measured bias budget — what the split buys and
+      what it costs — rather than a presumption of one-sidedness.
+    How to test: the same held-out joint-error study serves both this item and ASSUMPTION-003. One study,
+      two items.
+
+  Recommendation: CHALLENGED

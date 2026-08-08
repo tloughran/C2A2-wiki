@@ -109,6 +109,7 @@ Signal: Kastrup's psychopathology essay (Jan 2026) reframes mental disorders as 
 Why paradigm-shift candidate: If confirmed, this would be the strongest formal equivalence in the network — not just a structural analogy but potentially a mathematical identity. Markov blanket = dissociative boundary would mean FEP and analytic idealism are two descriptions of the same underlying reality. This would: (1) make FINDING-007 (Friston × Levin confirmed bridge) a special case of a deeper Kastrup × Friston unification; (2) give Kastrup's idealism empirical traction through FEP's formal machinery; (3) give Friston's FEP a consciousness-first ontological interpretation. This is CROSS-027. Priority: HIGHEST.
 Raw material: wiki/traditions/kastrup/prs_triplets.md — PRS-07; wiki/master/cross_program_index.md — CROSS-027; wiki/traditions/friston/prs_triplets.md — PRS-07, PRS-08
 
+[EVALUATED: 2026-08-08 — FINDING-062; see pattern_detector_findings.md]
 ---
 
 FOR PATTERN DETECTOR-010:
@@ -118,6 +119,7 @@ Signal: The UNIVERSE+ School (Les Houches, March 2026) establishes that Arkani-H
 Why paradigm-shift candidate: FOR PATTERN DETECTOR-006 (Wolfram × Arkani-Hamed) was already a paradigm-shift candidate. The UNIVERSE+ development advances the Arkani-Hamed side of that signal significantly: it is no longer merely "amplituhedron challenges spacetime" but "a systematic research program (UNIVERSE+) explicitly targeting QM+spacetime replacement via positive geometry." The convergence with Wolfram becomes stronger. If FINDING-006 was a structural homology, this upgrades it toward a confirmed directional convergence.
 Raw material: wiki/traditions/arkanihamed/prs_triplets.md — PRS-05, PRS-06; wiki/master/cross_program_index.md — CROSS-030, CROSS-024; wiki/traditions/wolfram/prs_triplets.md — PRS-01, PRS-02
 
+[EVALUATED: 2026-08-08 — FINDING-061; see pattern_detector_findings.md]
 ---
 
 FOR PATTERN DETECTOR-011:
@@ -459,3 +461,10 @@ and the two readings of the same
 - [PROP-2026-07-23-002] Eleonore Stump: Eternity/time relation as a cross-cluster structural question. Cajetan's ordered-relations solution places a *real* atemporal standpoint against the Post-Spacetime Cluster's claim that temporal order is emergent (Arkani-Hamed kinematic flow, Wolfram ruliad traversal) and against Carroll's block-universe eternalism. Candidate question for the master index: **do the emergent-time physics programs have room for eternity, or only for timelessness?** Medium confidence; source is a commentary study rather than a primary systematic statement.
 
 [EVALUATED: 2026-07-31 — FINDING-055; see pattern_detector_findings.md]
+## Signals forwarded 2026-08-08
+- [PROP-2026-08-07-001] Sean Carroll: Three questions in one AMA bear on whether AI systems can be full participants in inquiry — access (not phenomenal) consciousness in LLMs citing Anthropic's "J-Space"; functional agency criteria (List) across bacteria/viruses/LLMs; and an LLM solving a research-level open problem. Carroll is the network's most skeptical voice on machine minds, being asked all three at once. **Question-selection evidence only — the audio was not retrieved, so no Carroll position is asserted.**
+- [PROP-2026-08-07-002] Nima Arkani-Hamed: "Correlators are simpler than wavefunctions" establishes that the object on the far side of the Born rule carries less structure than the wavefunction it comes from. Read against Carroll's wave-function realism ("reality as a vector in Hilbert space") this poses a sharp question rather than a contradiction: does structural/analytic simplicity carry any ontological weight? Also a structural (and pointedly inverted) contact with Hoffman's interface theory, and a medium-strength half-space-restriction ↔ observer-sampling resonance with Wolfram. Coverage gap, not a new development.
+- [PROP-2026-08-07-003] Richard Rohr: Rohr's Job week states, from the contemplative side, the thesis Stump argues analytically in *Wandering in Darkness* — that suffering narratives convey second-personal knowledge irreducible to propositional theodicy. Convergence on the *same text*, which raises both the value and the independence risk (Rohr 1996 predates Stump 2010). Separately, the week's witnessed-grief material is co-experienced affect *without* positive valence — a candidate **boundary test** of Fredrickson's positivity-resonance construct, which is more interesting than a convergence would be.
+- [PROP-2026-08-07-004] N.T. Wright: Flagged from both sides in the same day's batch — Wright resolves apparent deferral by locating a settled historical event (Ascension as enthronement); Rohr denies that settling is what is wanted. Recommend ONE standing tension covering both, held open rather than averaged. Extraction confidence is low: episode description only, no audio or transcript.
+
+[EVALUATED: 2026-08-08 — FINDING-056..060; see pattern_detector_findings.md]

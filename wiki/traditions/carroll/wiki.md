@@ -104,3 +104,13 @@ Ingested 5 approved triplet(s): PRS-22, PRS-23, PRS-24, PRS-25, PRS-26.
 - Post-List compatibilism still owes an account of where choices "affect the physical world" if microphysics does its own …  [src: PROP-2026-06-12-001]
 - Can a physicalist naturalism accommodate Humboldt's claim that nature is an interconnected living whole — and that the o…  [src: PROP-2026-06-12-002]
 - Where does the modern concept of the autonomous self come from, and is it a discovery or an invention — a question Carro…  [src: PROP-2026-06-12-002]
+## Ingestion Log — 2026-08-08
+Ingested 5 approved triplet(s): PRS-55, PRS-56, PRS-57, PRS-58, PRS-59.
+**Source caveat (fail-loud):** every one of these is keyed to a question Carroll *selected to answer* in the August 2026 AMA, not to a position he stated — the audio/transcript was not retrievable. All five Solutions carry a `(PENDING AUDIO)` marker in `prs_triplets.md` and must not be cited as Carroll's view until the audio is checked.
+- (open question) Does Carroll grant *access* consciousness to an LLM while continuing to deny *phenomenal* consciousness — and if so, does that make AI agents participants rather than instruments?  [src: PROP-2026-08-07-001]
+- (open question) Why does cognitive instability license "the theory is disfavored" rather than only "we should not act on it"?  [src: PROP-2026-08-07-001]
+- (open question) Do the List functional agency criteria extend across bacteria, viruses, and LLMs — giving the network an agency test that does not route through consciousness?  [src: PROP-2026-08-07-001]
+- (open question) If classical probability is itself emergent, what does a classical probability distribution over possible universes mean, and does the low-entropy-past program survive it?  [src: PROP-2026-08-07-001]
+- (open question) Does Zurek's quantum Darwinism advance the Born-Rule derivation beyond Carroll's self-locating-uncertainty route?  [src: PROP-2026-08-07-001]
+
+**New open question:** Can AI systems be full participants in inquiry — the access-consciousness, agency, and LLM-research-capability questions arrived together in one episode and are load-bearing for the C2A2 architecture. See FINDING-056.

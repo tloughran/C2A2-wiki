@@ -341,4 +341,32 @@ PRS-36:
   Confidence: Medium
   Evidence: Episode's second question; extends the "heaven and earth meet" motif from The Vision of Ephesians and God's Homecoming.
 
-*Total PRS triplets: 36*
+---
+PRS-37:
+  Problem: If the Ascension is read as Jesus departing — going away to somewhere else — then Christ's reign is deferred to the future and the present world is left ungoverned in the interim. This reading makes the Ascension a problem for Christian engagement with the present rather than a warrant for it.
+  Resource: Wright's heaven-and-earth-overlap cosmology, on which "heaven" is not a distant location but God's dimension of reality intersecting this one, combined with the enthronement reading of Ascension texts (Daniel 7 as the frame: the Son of Man goes *up* to be enthroned, not away).
+  Solution: The Ascension inaugurates rather than suspends Christ's reign. It is the moment the authority is taken up, which makes the present the period of that reign rather than an interval before it — and therefore makes political and social engagement now a consequence of the doctrine rather than a distraction from it.
+  Date Added: 2026-08-08
+  Source: Ask NT Wright Anything — Can you forgive yourself? Were the Samaritans really Israelites? What actually happened at Jesus' Ascension? (episode description only; audio and transcript not retrieved); PROP-2026-08-07-004
+  Confidence: Medium
+  Evidence: Episode description: "why the Ascension is central to understanding Christ's reign today." The specific content of the triplet is reconstructed from Wright's established published position (notably *Surprised by Hope*), not from this episode. **Verify against the audio before ingesting.**
+
+PRS-38:
+  Problem: "Forgiving yourself" is either incoherent or superfluous on a strict relational account of forgiveness: forgiveness is something one party extends to another, so the offender cannot occupy both roles. Yet the pastoral phenomenon it names — persistent guilt surviving received forgiveness — is real and needs an account.
+  Resource: Wright's covenantal-relational framing of forgiveness, on which forgiveness is a restored standing within a relationship rather than a psychological state.
+  Solution: Recast the request. What is called self-forgiveness is the appropriation of a forgiveness already extended — the work of coming to inhabit a restored standing one has been granted but has not accepted. This preserves the relational account while giving the pastoral phenomenon a home.
+  Date Added: 2026-08-08
+  Source: Ask NT Wright Anything — Can you forgive yourself? Were the Samaritans really Israelites? What actually happened at Jesus' Ascension? (episode description only; audio and transcript not retrieved); PROP-2026-08-07-004
+  Confidence: Speculative
+  Evidence: Episode description: "explored healing from guilt." The problem-resource-solution structure here is **the proposal's construction from Wright's general framework, not a reported claim from this episode.** Flagged as such. If Wright takes a different line — and he may simply affirm self-forgiveness in ordinary usage — this candidate should be discarded rather than amended.
+
+PRS-39:
+  Problem: Were the Samaritans an ethnically and religiously foreign group, or a contested branch of Israel? The answer changes what the New Testament's Samaritan material is doing — a Good Samaritan who is a foreigner illustrates universal neighbor-love; a Good Samaritan who is a schismatic Israelite is making a sharper intramural point about who the true Israel is.
+  Resource: Second-temple historical reconstruction of the Samaritan community's origins, cult, and relation to Judean Yahwism.
+  Solution: (Unknown — the episode's answer was not retrieved.) The triplet is logged as an open question with the resource identified, so the tradition registers that Wright addressed it.
+  Date Added: 2026-08-08
+  Source: Ask NT Wright Anything — Can you forgive yourself? Were the Samaritans really Israelites? What actually happened at Jesus' Ascension? (episode description only; audio and transcript not retrieved); PROP-2026-08-07-004
+  Confidence: Speculative
+  Evidence: Episode description only: "the relationship between Jews and Samaritans." **No solution is asserted here because none is known.** This is an incomplete triplet by design rather than a guess.
+
+*Total PRS triplets: 39*

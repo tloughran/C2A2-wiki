@@ -55,3 +55,11 @@ Ingested 2 approved triplet(s): PRS-05, PRS-06.
 ## Ingestion Log — 2026-06-17
 Ingested 1 approved triplet(s): PRS-7.
 - Must the believer accept a partition between scientific truth and religious truth (NOMA / two non-overlapping magisteria…  [src: PROP-2026-06-07-001]
+## Ingestion Log — 2026-08-08
+Ingested 3 approved triplet(s): PRS-37, PRS-38, PRS-39.
+**Source caveat (fail-loud): no primary content from this episode was obtained.** Only the published episode description was read; the audio was not retrieved and no transcript was located. PRS-37 is reconstructed from Wright's published position (*Surprised by Hope*), PRS-38 is the proposal's own construction, and PRS-39 has **no Solution** because the episode's answer is unknown. This falls short of the tradition's normal extraction standard and is a **capture-the-source** entry: re-extract when OpenTheo posts a transcript, and tighten `source_url` from the show index to the episode permalink. The episode number was not determinable.
+- (open question) What actually happened at the Ascension on Wright's account in this episode — does he state the enthronement reading here, or something else?  [src: PROP-2026-08-07-004]
+- (open question) Does Wright treat "forgiving yourself" as incoherent, as appropriation of a forgiveness already extended, or does he simply affirm the ordinary usage? PRS-38 should be discarded rather than amended if the last.  [src: PROP-2026-08-07-004]
+- (open question) Were the Samaritans a foreign group or a contested branch of Israel — and which reading does Wright take? The answer changes what the New Testament's Samaritan material is doing.  [src: PROP-2026-08-07-004]
+
+**New open question / standing tension:** Wright's characteristic move is to resolve an apparent deferral by locating a concrete historical event that has already settled the matter; Rohr's is to deny that settling is what is wanted. Logged as **one** standing tension with the Rohr side (PROP-2026-08-07-003), not two. See FINDING-058.

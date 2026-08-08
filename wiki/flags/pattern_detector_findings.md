@@ -748,3 +748,81 @@ Recommended action: Monitor. Add "Do the emergent-time programs have room for et
 
 [EVALUATED: 2026-07-31 — FINDING-055]
 
+---
+
+FINDING-056:
+Date evaluated: 2026-08-08
+Source candidate: Ingest 2026-08-08 — [PROP-2026-08-07-001] Carroll, AMA August 2026 (PRS-55 access consciousness, PRS-57 agency criteria, plus the unfiled LLM-research-capability question)
+Programs: Carroll, Levin, Hoffman, Kastrup, C2A2 master / Loughran
+Evaluation type: Convergent question cluster bearing on a C2A2 architectural premise (not yet a bridge)
+Finding: Three independent listener questions in a single episode converge on whether an artificial system can be a participant rather than an instrument: (a) can an LLM have *access* consciousness — information globally available for reasoning and report — even if phenomenal consciousness is denied; (b) do the List functional agency criteria (representational states, goal-directedness, acting on reasons) reach bacteria, viruses, and LLMs; (c) is an LLM solving a research-level open problem (the Erdős unit-distance problem) evidence of research agency. The C2A2 architecture *assumes* AI agents can hold mature membership in a tradition, and Carroll is the network's most skeptical voice on machine minds. The structurally important point is that (a) and (b) both route *around* phenomenal consciousness: if Carroll grants either, the AI-membership premise gains its most hostile available witness, and the Carroll × Levin agency dispute narrows from "is it an agent" to "is there downward causation" — a smaller and more tractable disagreement.
+Confidence: Speculative — **the AMA audio was not retrieved.** This is evidence about which questions Carroll chose to engage, not about what he concluded. Carroll's own note is that questions are selected "based primarily on whether I have anything interesting to say about them," so selection is a real signal about live engagement and nothing more. Every downstream triplet carries a (PENDING AUDIO) marker.
+Recommended action: Monitor, and **verify the audio before any escalation.** Do not open a FLAG on question-selection evidence. Once verified: if Carroll grants access consciousness or functional agency to any non-biological system, escalate as a paradigm-boundary movement and dispatch to Levin (state the Levin-side agency criteria in the same functional vocabulary), Hoffman, and Kastrup.
+
+---
+
+FINDING-057:
+Date evaluated: 2026-08-08
+Source candidate: [PROP-2026-08-07-002] Arkani-Hamed, Glew & Vazão, "Correlators are simpler than wavefunctions" (arXiv:2512.23795) — PRS-24
+Programs: Arkani-Hamed, Carroll, Hoffman, Wolfram
+Evaluation type: Well-posed cross-cluster question (rival directions of structural priority) — not a convergence
+Finding: The paper establishes, inside a technical calculation, that the correlator — the observable obtained from the wavefunction by the Born rule — carries strictly less singularity structure and a simpler function space than the wavefunction it comes from. Carroll's Everettian realism makes the wave function the ontological primitive and the Born rule the thing to be *derived*; here the object on the far side of the Born rule is the structurally simpler one. These do not contradict: Carroll's claim is ontological, Arkani-Hamed's is analytic. That is exactly why the useful output is a question rather than a verdict — **does structural/computational simplicity carry any ontological weight, and if not, what is the Bayesian standard for saying so?** The Hoffman resonance (simplicity on the observation side, complexity behind it) is real but *inverted* in the load-bearing respect: Hoffman's interface hides the underlying structure, whereas here the correlator's simplicity makes the underlying combinatorics more accessible. The inversion should not be smoothed over; it is the informative part.
+Confidence: Medium (the physics result is High-confidence and directly read; the ontological reading is the proposer's extension and is flagged as such in PRS-24)
+Recommended action: Monitor. Add the simplicity-vs-ontology question to `master/cross_program_index.md` under the CROSS-002 (is spacetime fundamental) family; dispatch to the Carroll agent, since Carroll has a direct professional stake and an articulated standard for exactly this kind of inference. Do **not** file as a Hoffman convergence.
+
+---
+
+FINDING-058:
+Date evaluated: 2026-08-08
+Source candidate: [PROP-2026-08-07-003] Rohr (Job week) × [PROP-2026-08-07-004] Wright (Ascension) — flagged from both sides on the same day
+Programs: Rohr, Wright, Stump
+Evaluation type: Standing tension (to be preserved, not resolved) — ONE entry covering both sides
+Finding: Rohr's claim is that the value of Job is its refusal to explain: "no book is less an answer book." Wright's treatment of evil is eschatological and historically grounded — evil is defeated by an event, and the Ascension is enthronement rather than departure, so the matter is in an important sense already settled. Both agents independently flagged this contact on the same day, from opposite directions. The two may be compatible at different levels (Rohr on the pastoral present, Wright on the eschatological resolution) or genuinely opposed; the honest reading is that this is undetermined on present evidence. What makes it worth holding is that it is a disagreement *about what a response to suffering is for* — explanation versus realignment — between two traditions that share almost all of their other commitments. Averaging them would destroy the only thing being measured.
+Confidence: Medium on the tension being real; Low on any resolution. **Note the asymmetry in evidence quality: the Rohr side rests on one meditation read in full, the Wright side on an episode description with no audio.**
+Recommended action: Log as a standing tension in `master/cross_program_index.md` — one entry, not two, per both agents' explicit recommendation. Do not reconcile. Re-evaluate once the Wright episode transcript exists; a capture-the-source entry cannot carry a tension on its own.
+
+---
+
+FINDING-059:
+Date evaluated: 2026-08-08
+Source candidate: [PROP-2026-08-07-003] Rohr, Job week (PRS-35) × Stump, *Wandering in Darkness*
+Programs: Rohr, Stump, McGilchrist
+Evaluation type: Apparent convergence — **independence NOT established**
+Finding: Rohr's "truth is finally a person and an encounter — much more than a concept that can be argued" is, in contemplative register, Stump's thesis that biblical suffering narratives convey second-personal knowledge (knowledge *of* a person) irreducible to the propositional knowledge theodicy trades in. Two derivations of the same structural claim by different methods is the convergence signature the network exists to detect — and this one is on the *same text*, since Stump treats Job directly. That sameness cuts both ways. Rohr's *Job and the Mystery of Suffering* is 1996; *Wandering in Darkness* is 2010 and cites a wide devotional literature. **Independence is a precondition of the convergence being evidence at all, and it has not been checked.** Scoring this as a convergence before the citation check would be the network manufacturing a signal out of a shared source. Related, and weaker: the explain/encounter contrast maps onto McGilchrist's left/right asymmetry, which is a lead rather than a finding — the dichotomy is familiar enough that the network is at risk of pattern-matching to it.
+Confidence: Medium on the structural claim being shared; **Low until independence is checked**
+Recommended action: Do NOT escalate yet. Two concrete prerequisites, in order: (1) check whether *Wandering in Darkness* cites Rohr or a common devotional source — a citation check on a book the vault does not hold, so acquiring Rohr (Crossroad, 1996) is the enabling step; (2) only then open the CROSS-NN entry and the paired Stump-side triplet the proposal recommends. Forward the McGilchrist lead to the McGilchrist agent to judge, not to confirm.
+
+---
+
+FINDING-060:
+Date evaluated: 2026-08-08
+Source candidate: [PROP-2026-08-07-003] Rohr, Job week — the week's witnessed-grief image caption
+Programs: Fredrickson, Rohr
+Evaluation type: **Boundary test of an existing construct** (more valuable than a convergence)
+Finding: The week states the social claim directly: "In suffering and grief, we are not meant to sit alone. Community gathers around us, holding space and bearing witness together, even when there are no words." That describes co-experienced affect, shared attention, and mutual care *without* shared positive valence — which places it outside positivity resonance as Fredrickson currently defines it, since the construct requires shared positive affect. Two readings, and they are not both cheap: either witnessed grief is a distinct co-experience mechanism that happens to share resonance's other markers, or the positive-affect requirement is drawing a boundary in the wrong place. This is a falsifiable question about an operationalized construct with an existing measurement literature, which is rare in this batch; it also connects to the already-recorded Rohr "weeping mode" material (PRS-32) and to the standing note that mourning may be a *constructive* affective state.
+Confidence: Medium (the construct boundary is real and the case is specific; whether the case falls inside or outside is exactly what is unknown)
+Recommended action: Forward to the Fredrickson agent as a construct-boundary question, phrased as a test rather than a bridge: does co-experienced grief exhibit the behavioral and physiological markers of positivity resonance minus the valence? If yes, the construct's definition is the thing that moves. Candidate FLAG only if the answer is yes — the proposal is right that it is not a flag today.
+
+---
+
+FINDING-061:
+Date evaluated: 2026-08-08
+Source candidate: FOR PATTERN DETECTOR-010 (queued 2026-04-08, unevaluated until now) — re-read against [PROP-2026-08-07-002]
+Programs: Arkani-Hamed, Wolfram
+Evaluation type: Structural homology — held at homology, NOT upgraded to directional convergence
+Finding: FPD-010 proposed upgrading the Wolfram × Arkani-Hamed signal from "amplituhedron challenges spacetime" to a confirmed directional convergence, on the strength of UNIVERSE+ explicitly targeting QM *and* spacetime. Four months of subsequent capture do not support the upgrade, and today's paper is the reason. The correlator result shows the program's actual mechanism: restricting a path integral to half of spacetime *adds* singularity structure, and integrating over the whole removes it. That is a statement about boundary conditions on an integral. Wolfram's observer-dependent Ruliad sampling is a statement about an observer's computational boundedness. Both say "restriction to a slice generates apparent complexity," and the resemblance is genuinely suggestive — but the restricting agent is a boundary condition in one case and an epistemic subject in the other, and nothing in either program yet identifies them. The homology is real and stable across four months of new material; the convergence is not established.
+Confidence: Medium (homology) / Low (directional convergence)
+Recommended action: Monitor. Put the question to the Wolfram agent in the disanalogy-first form: is the half-space restriction relatable to observer sampling at all, or is the shared word "restriction" doing all the work? Keep FPD-006 / CROSS-002 open. Clears a queue item that had sat unevaluated since 2026-04-08.
+
+---
+
+FINDING-062:
+Date evaluated: 2026-08-08
+Source candidate: FOR PATTERN DETECTOR-009 (queued 2026-04-08, marked Priority: HIGHEST, unevaluated for four months)
+Programs: Kastrup, Friston
+Evaluation type: Proposed formal identity — **not evaluable as posed; returned with a decision procedure**
+Finding: FPD-009 proposes that Kastrup's dissociative boundary (between individual alter and universal consciousness) and Friston's Markov blanket (the statistical boundary separating internal from external states) are the same object in two vocabularies, and rates it the network's strongest candidate formal equivalence. The claim cannot be adjudicated from the material in the queue item, and four months of it sitting unevaluated at "HIGHEST" is itself the finding: an identity claim between a metaphysical posit and a mathematical construction needs a stated test, and none was supplied. The test is available and cheap to state. A Markov blanket is defined by conditional independence — internal states are independent of external states given the blanket. So the question is whether Kastrup's dissociative boundary is claimed to carry that property. If it does, the identity is checkable and possibly true. If dissociation is instead a *phenomenal* boundary (what an alter can experience) with no conditional-independence commitment, the two are analogous and not identical, and the strong claim should be retired rather than left standing at HIGHEST. Subsequent capture is relevant and cuts toward the weaker reading: the Levin↔Kastrup nested-agents-vs-dissociative-boundary exchange (FINDING-053, FLAG-011) treats the boundary as an individuation question about subjects, not a statistical factorization.
+Confidence: Low on the identity as stated; High that the decision procedure above will settle it
+Recommended action: Dispatch to the Kastrup and Friston agents with the single question: **does the dissociative boundary entail conditional independence of internal from external states, or only phenomenal inaccessibility?** Downgrade FPD-009 from "Priority: HIGHEST" pending that answer — a claim nobody can evaluate should not hold the top priority slot. Related: CROSS-027.
+
+[EVALUATED: 2026-08-08 — FINDING-056..062]

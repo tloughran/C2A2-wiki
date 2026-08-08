@@ -125,3 +125,56 @@ SEARCH-FOR-PRESUMPTION-002 (RE-TRIGGER cycle 3):
   Summary: Cycle-3 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
   Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-FOR-PRESUMPTION-002 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: PRESUMPTION-002
+  Original statement: "Thousand Brains transfers intact to multi-agent AI"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: PRESUMPTION-002
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15a (cycle 6, 2026-08-08): re-searched for supporting literature; NEW SOURCES FOUND
+    Current status: PARTIALLY-SUPPORTED (theory strengthened; the transfer clause — and specifically the word "intact" — remains unsupported)
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. NO NEW 14a/14b BATCH WAS PRESENT — the daily
+    intake queue was empty, so this run drew from the STANDING 15d BACKLOG instead of exiting null.
+    Cohort selected: the five HIGH-priority items of the 2026-07-05 monthly re-trigger cohort that had
+    stood [QUEUED] and unconsumed for 34 days at cycle 5. Selection rule stated: oldest queue date,
+    highest priority, literature search angle. 229 other items remain unsearched (see run report).
+
+  Supporting evidence found: PARTIALLY-SUPPORTED
+
+  Sources (new this cycle):
+    1. Thousand Brains Project team (2026). "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid,
+       Robust Learning and Inference." Neural Computation 38(6), 845- . MIT Press. (Preprint arXiv:2507.04494.)
+       — THE MATERIAL CHANGE THIS CYCLE: the framework now has a peer-reviewed venue publication. At cycle 0
+       (2026-04) the supporting base was preprint and popular-press only. [UNVERIFIED: full author list;
+       page range end.]
+    2. Hawkins, Lewis, Klukas, Purdy, Ahmad (2019). "A Framework for Intelligence and Cortical Function Based
+       on Grid Cells in the Neocortex." Frontiers in Neural Circuits. — The companion paper; the common
+       cortical algorithm claim on which any transfer argument rests. VERIFIED (canonical for TBT).
+    3. tbp.monty, open-source under MIT licence since 2024-11; Thousand Brains Project incorporated as an
+       independent 501(c) non-profit, 2025-01. — Institutional durability and a runnable reference
+       implementation now exist, which is a precondition for any transfer test. [UNVERIFIED: incorporation
+       date taken from a wire-service listing.]
+    4. Reinterpretation/extension work now exists outside Numenta, e.g. "Temporal Coding as a Substrate for
+       Sensorimotor Object Inference: A Spiking Reinterpretation of Thousand Brains Architecture"
+       (arXiv:2605.22206). — Evidence the architecture is being taken up and adapted by third parties.
+       [UNVERIFIED: authors, venue.]
+
+  Strength of support: Moderate
+
+  Summary: The supporting base for THOUSAND BRAINS AS A THEORY strengthened materially this cycle — first peer-reviewed venue publication, non-profit institutionalisation, third-party extensions. The supporting base for TRANSFER TO MULTI-AGENT AI did not move at all. 15a searched specifically for a demonstration that TBT principles, applied to a non-sensorimotor multi-agent system, outperform an alternative; none was found. The one architectural statement located that resembles C2A2's use — independent column-analogous modules plus a consolidating central system — appears in a practitioner essay, not a study.
+
+  Caveats: Everything strong in this cycle's FOR set is about 3D object perception through active movement. The stronger the sensorimotor framing of the supporting literature becomes, the WEAKER the support for a disembodied text-agent transfer — the supporting evidence and the claim are moving apart. 15a records this as a caveat rather than a challenge because characterising it as a challenge is 15b's assignment.
+
+  Recommendation: PARTIALLY-SUPPORTED

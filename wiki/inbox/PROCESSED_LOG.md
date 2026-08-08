@@ -741,3 +741,7 @@ Network unchanged (no ingest): 279 PRS triplets · 90 cross-program connections 
 - PROP-2026-07-05-002 wright_ask-ntw-works-of-the-law-bonus -> wright (+1)
 - PROP-2026-07-12-001 wright_ask-ntw-everyday-work-waiting-for-return -> wright (+2)
 - PROP-2026-07-23-002 stump_cajetan-time-eternity-contingent-futures -> stump PRS-30..PRS-31 (+2) [2026-07-31; FINDING-055]
+- PROP-2026-08-07-001 carroll_ama-august-2026 -> carroll PRS-55..PRS-59 (+5) [2026-08-08; FINDING-056]
+- PROP-2026-08-07-002 arkanihamed_correlators-simpler-than-wavefunctions -> arkanihamed PRS-21..PRS-24 (+4) [2026-08-08; FINDING-057, FINDING-061]
+- PROP-2026-08-07-003 rohr_job-mystery-of-suffering-week31 -> rohr PRS-34..PRS-37 (+4) [2026-08-08; FINDING-058, FINDING-059, FINDING-060]
+- PROP-2026-08-07-004 wright_ask-ntw-aug3-self-forgiveness-samaritans-ascension -> wright PRS-37..PRS-39 (+3) [2026-08-08; FINDING-058]

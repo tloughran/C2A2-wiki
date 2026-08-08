@@ -7443,3 +7443,968 @@ REVISE-283 — 15b SYSTEMIC-RISK-FLAG (2026-08-06): five presumptions are ONE ar
     the actor, which items (1)-(5) do.
   PROVENANCE: Origin 14b (five items) + 15b SYSTEMIC-RISK-FLAG · Chain [14b → 15a, 15b → 15c] ·
     Current status: REVISION-FLAGGED
+
+
+REVISE-284 — PRESUMPTION-696: the evaluator condition of REVISE-283 cannot currently be satisfied
+  by any component C2A2 can build, and the remedy space that would notice this was never opened
+  Source: PRESUMPTION-696 (14b) | Disposition: DISPOSITION-615
+  Evidence standing: 15a PARTIALLY-SUPPORTED, strength WEAK, and its own most on-point source is
+    NEGATIVE — 15a located Knight & Leveson (1986, IEEE TSE, "An Experimental Evaluation of the
+    Assumption of Independence in Multiversion Programming") as SUPPORTING evidence and reported
+    that it does not support: twenty-seven versions from one specification against one million test
+    cases, with coincident failures far above what independence predicts, and a stated mechanism —
+    shared specification, shared training background, shared reference material — that maps onto
+    every one of the three sharings this item names. 15b CHALLENGED (Strong) from two independent
+    literatures that converge. The single most transferable figure: a nine-judge LLM panel drawn
+    from SEVEN DIFFERENT MODEL FAMILIES was found to carry only about two independent votes' worth
+    of information ("Nine Judges, Two Effective Votes," arXiv 2605.29800, also hosted at
+    machinelearning.apple.com; arXiv ID and Apple hosting confirmed, author list and venue
+    [UNVERIFIED]). If seven vendors buy ~2/9 of nominal independence, a panel drawn from ONE family
+    has no evident claim to any. Panickssery et al. (2024, NeurIPS, "LLM Evaluators Recognize and
+    Favor Their Own Generations") adds the mechanism, and the mechanism is what decides it: self-
+    preference has been traced to PERPLEXITY, not to authorship knowledge, so "the evaluator is a
+    different instance" is not a defence and blinding the evaluator to provenance does not close it.
+  THE SPLIT THAT MATTERS, because averaging the two directions would lose it: the presumption
+    contains two claims and the literature treats them oppositely.
+    (a) THE NARROW CLAIM — that a component built INSIDE a system can satisfy a "did not produce
+        the artefact" condition — is directly and institutionally SUPPORTED. IIA Standards
+        1100/1110 define independence organisationally, and ISO 9001's "auditors shall not audit
+        their own work" states almost verbatim the condition REVISE-283 states while treating
+        internal reassignment as sufficient to meet it. Nothing here says internal evaluation is
+        illegitimate.
+    (b) THE WIDE CLAIM — that an agent minted by the same designer, on the same model family,
+        reading the same registers, is THEREBY independent — has NO supporting source. 15a found
+        none and says so.
+    15a's own caveat is the seam between them, and it is the sharpest sentence in either file:
+    internal auditors share an employer, a manual and an incentive structure with the audited
+    function, "but they do not share a perceptual apparatus; two humans in one firm still see with
+    different eyes." An agent on the same model family shares the failure modes of the substrate.
+    None of the audit literature was written with that condition in view.
+  The point that decides it: independence here is an EMPIRICAL QUANTITY with an established
+    measurement procedure, and C2A2 has asserted the value rather than measured it. That is not a
+    disagreement about design philosophy; it is a missing number. And the deepest exposure is not
+    the missing number but the remedy space: if "add another agent" is the only move the system
+    entertains, then no amount of evidence against internal evaluation can change the design,
+    because the alternative was never in the option set. 15b's risk (iii) is the specific
+    consequence — adding MORE internal evaluators makes it WORSE, since the marginal information of
+    an additional correlated judge is near zero while its cost and its APPARENT AUTHORITY are not.
+  Affected: REVISE-283 in its entirety, whose central request is one absence-detector tier
+    "evaluated by an agent that did not produce the artefact being checked" — this item says that
+    request, as worded, is not satisfiable by anything C2A2 can currently build, and that REVISE-283
+    is therefore blocked on a question it did not know it was asking. Downstream: every
+    REVISE-283-derived assurance; PREMISE-110's common-mode scope guard, which this item promotes
+    from a caveat to a blocking condition; PREMISE-004's standing independence caveat and
+    PREMISE-111 / PREMISE-120 on same-family convergence, all of which this item CONFIRMS rather
+    than contradicts; the 15a/15b pairing itself, which is two instances of one model family
+    reading one corpus, and which produced this file.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — three counts, in increasing cost, all owed and
+    none run this session:
+    (1) THE ZERO-COUNT, obtainable by grep alone: has any existing evaluator step in C2A2 EVER
+        returned a negative verdict on an artefact the producer endorsed? A zero count over a long
+        run is prima facie evidence of the correlated-failure regime and needs no experiment.
+    (2) THE INJECTED-DEFECT PROTOCOL: build artefacts with known seeded defects, run both the
+        producing agent and the proposed evaluator over them, and compute (i) evaluator detection
+        rate, (ii) producer self-detection rate, (iii) P(evaluator misses | producer missed). If
+        (iii) is close to 1, the evaluator supplies no independent information and the presumption
+        is refuted in-system, with a number.
+    (3) THE SELF-PREFERENCE DIFFERENTIAL: matched pairs of artefacts, one produced in-system and
+        one produced externally at equal quality, scored by the evaluator. A non-zero differential
+        is self-preference measured on C2A2's own stack rather than borrowed from NeurIPS.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) RULE ON WHICH SENSE OF INDEPENDENCE REVISE-283 REQUIRES. Its wording admits both readings
+        and that ambiguity is the reason this presumption exists. Either restate the condition in
+        the weaker PROCEDURAL sense — the evaluator did not run the generating process, does not
+        hold the generating context, and receives the artefact stripped of authorship cues — in
+        which case it should say so; or keep the strong sense and accept that no current component
+        satisfies it. Both are honest; the present wording is not.
+    (2) AUTHORISE A NON-AGENT EVALUATOR for whatever subset of the condition is mechanically
+        checkable. A deterministic checker shares no training distribution with the producer and is
+        genuinely independent on the properties it covers. This is the strongest available answer
+        to the condition AS LITERALLY WRITTEN and it is the escape route the remedy space excluded.
+    (3) AUTHORISE A HUMAN SPOT-AUDIT at a fixed sampling rate — the only unambiguously external
+        evidence the system can obtain, and the only thing that calibrates the evaluator rather
+        than merely adding to it.
+    (4) FORCE DIVERSITY where an agent evaluator is retained: a different model family where
+        feasible, and where not, deliberately divergent scaffolding and decision procedure rather
+        than a mirrored one. Note per source 2 that even cross-family diversity buys far less than
+        it looks, so this is mitigation, not solution.
+    (5) RECORD THE RESIDUAL CORRELATED-FAILURE CLASS explicitly, so evaluator silence is never read
+        as assurance.
+  Note on scale, per PREMISE-121: (1) and (2) close the class. (3) is the one that cannot be
+    substituted for. (4) and (5) are worth having and can wait.
+  Urgency: High — and note the ordering consequence: REVISE-283 is currently a live request whose
+    central condition this item says is unsatisfiable, so (1) should be answered BEFORE any work
+    begins on the absence-detector tier, or the tier will be built by the layer it audits, which is
+    the defect it exists to catch.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+REVISE-285 — PRESUMPTION-701: determinacy of TARGET is a property of the specification and the
+  sweep's safety is a property of the EXECUTION; the same-day near-miss is the demonstration
+  Source: PRESUMPTION-701 (14b) | Disposition: DISPOSITION-616
+  Evidence standing: 15a PARTIALLY-SUPPORTED — MODERATE for the checked-determinacy reading, WEAK
+    for the reading the item actually surfaces — and 15b CHALLENGED (Strong). They agree on the
+    governing distinction, which is why this flag is narrow. 15a establishes that the reasoning has
+    a real pedigree: Opdyke's 1992 thesis defines refactoring as behaviour-preserving
+    transformation licensed by stated preconditions checked before the change, and name-binding
+    preservation is the standard rename precondition — "one determinate target" is a plain-language
+    statement of it. 15a then supplies the two qualifications that do the work: the same literature
+    reports Opdyke's preconditions are KNOWN INSUFFICIENT to guarantee behaviour preservation (with
+    an entire active line of work on refactorings that pass their preconditions and are still
+    faulty — e.g. "Bugs in the Shadows: Static Detection of Faulty Python Refactorings," arXiv
+    2507.01103, located by ID only), and the data-quality framing is explicit that uniqueness is
+    established BY CHECKING EACH VALUE'S OCCURRENCE COUNT, not by inspection of the identifier's
+    form.
+  The industrial evidence is the sharpest part of 15b and it is structural, not anecdotal: Google's
+    LSC infrastructure (Rosie; "Software Engineering at Google" ch. 22, abseil.io, located and read
+    in summary; chapter authorship [UNVERIFIED]) does NOT clear a change on the determinacy of its
+    target. It SHARDS the change along ownership boundaries and puts each shard through an
+    INDEPENDENT test-mail-submit pipeline, precisely so a transformation fault is contained to one
+    shard rather than landing repo-wide. Meta's reported policy (arXiv 2605.30208; ID and title
+    confirmed, authors and venue [UNVERIFIED]) draws the distinction even more exactly: DETERMINISTIC
+    codemods may bypass per-diff review, whereas AI-GENERATED codemods require per-diff evaluation.
+    On Meta's own taxonomy, a sweep authored by an agent falls in the class that requires
+    per-instance evaluation. The organisation with the most experience of vault-wide sweeps in
+    existence treats determinacy of the SPECIFICATION as the beginning of the safety argument, and
+    its entire apparatus exists to cover the gap between a determinate target and a correct
+    execution.
+  The point that decides it, and it is local rather than literary: THE SYSTEM'S OWN RECORD CONTAINS
+    THE COUNTEREXAMPLE, ON THE SAME DAY. A sweep keyed on "Carroll PRS-07" "would have corrupted
+    one of them" — a demonstrated instance of the belief in uniqueness being false — and the rule
+    that cleared the Carroll PRS-14/15 sweep on determinacy grounds was not changed by it. 15b's
+    steelman is genuine and is the reason this flag is scoped the way it is: IF the determinacy
+    claim was the OUTPUT of a verification step rather than an assumption, the two same-day rulings
+    are not inconsistent at all — they are exactly the discrimination the agent family was making,
+    and 14b has read a compressed conclusion as though it were the whole reasoning. The steelman
+    survives the literature entirely and is defeated only by a fact nobody has established: whether
+    the check was run. That single unknown is what this flag is for.
+  Affected: the highest-blast-radius action currently authorised anywhere in the system. A
+    knowledge vault is worse than code here, not better — 15b's risk (iii): there is no test suite
+    that fails and no compiler that objects, so a corrupted wikilink or identifier simply resolves
+    wrongly or not at all and may not surface for months, while collateral edits are far harder to
+    detect than the intended edit is to verify because the operator's attention is on the target.
+    Also affected: every future sweep cleared on the same grounds, since the near-miss did not
+    change the rule and the system has therefore already demonstrated that this class of evidence
+    does not propagate.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION, and the first probe is close to free:
+    (1) RE-RUN THE CLEARED SWEEP'S MATCHER IN REPORT-ONLY MODE over the vault and count matches. If
+        the count exceeds one, the presumption is refuted DIRECTLY ON THE INSTANCE THAT MOTIVATED
+        IT, and no further argument is needed.
+    (2) RETROSPECTIVE DISTRIBUTION: take the last N bulk repairs in the record, reconstruct each
+        matcher, and count matches against the corpus as it stood. Report the distribution of match
+        counts against intended counts. Any excess is a corrupted site nobody detected.
+    (3) THE PROCESS COUNT: check whether ANY bulk repair in the record was preceded by a recorded
+        dry-run match count. If none was, determinacy has never been verified in this system and
+        the presumption is doing load-bearing work it cannot support — and this count is a grep.
+  REQUESTED CHANGE — the first item is the decision and the rest follow from it:
+    (1) MAKE A REPORT-ONLY PASS WITH A MATCH COUNT COMPARED AGAINST AN EXPECTED COUNT A HARD
+        PRECONDITION ON ANY VAULT-WIDE WRITE. This converts uniqueness from an inference about the
+        identifier's shape into a measurement against the corpus. It is the single cheapest and
+        highest-value control available, and it is the one that would have caught the recorded
+        near-miss.
+    (2) STAGED APPLICATION: a subset first, verified, then the remainder — the shard principle at
+        C2A2 scale, and the answer to 15b's own steelman that Google's ceremony does not transfer
+        to a one-operator system.
+    (3) GUARANTEED ATOMIC REVERT, with the revert path EXERCISED rather than assumed. 15b's
+        steelman concedes that where the operation is genuinely reversible the expected cost of a
+        bad sweep is the cost of reverting it — but that concession is only available if the revert
+        has actually been run once.
+    (4) ANCHOR MATCHERS AS TIGHTLY AS THE FORMAT PERMITS (whole-token, line-anchored, delimited) so
+        that near-identifiers cannot match. This is the specific defect the near-miss exposed.
+    (5) POST-CONDITION VERIFICATION — assert an invariant about the vault AFTER the sweep, not only
+        a precondition before it. The near-miss was caught by inspection, not by any gate.
+  Note on scale, per PREMISE-121: (1) closes the class and is a one-line policy. (2)-(5) are real
+    and are listed so the set is complete, not so the queue is longer. If only one thing is
+    actioned from this flag, it should be (1).
+  Urgency: High — this is the highest-blast-radius authorised action in the system, the failure
+    mode is silent and vault-wide BY CONSTRUCTION (the whole point of a sweep is that it touches
+    everything, so a matcher error is maximally distributed on first execution), and the base rate
+    is known to be non-zero and is unmeasured.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+REVISE-286 — PRESUMPTION-703: the plausibility heuristic is ANTI-CORRELATED with the risk it is
+  supposed to manage, and the counterexample was in the same document as the generalisation
+  — 15b SYSTEMIC-RISK-FLAG (2026-08-07, Critical), part 1 of 2, carrying the cross-cutting rule
+  Source: PRESUMPTION-703 (14b) | Disposition: DISPOSITION-617. This entry also carries the
+    evaluation of 15b's SYSTEMIC-RISK-FLAG filed at the end of PRESUMPTION-703_against.md,
+    affected items PRESUMPTION-696, 703, 707, 714.
+  Evidence standing: 15a PARTIALLY-SUPPORTED — MODERATE for plausibility as a legitimate check,
+    and NONE for plausibility as a sufficient one, which is 15a's own two-part grading. The support
+    is real and should not be lost: Kahn et al. (2016, eGEMs 4(1):1244, PMID 27713905) harmonised
+    ten data-quality terminologies into Conformance / Completeness / PLAUSIBILITY, so "does this
+    result look believable?" is one third of the field's standard assessment structure and not folk
+    reasoning. 15b CHALLENGED (Strong). The two are not in conflict: both say the heuristic is a
+    legitimate screening test and neither says it is coverage.
+  The point that decides it, and it is a point about SHAPE rather than about strength: the
+    heuristic's detection probability is a function of the bug's MAGNITUDE, not its SEVERITY.
+    That makes it highest for the errors that would have been caught anyway and lowest for the
+    errors that will persist. The entire silent-data-corruption literature exists because the
+    failures that matter at scale are DEFINED by not announcing themselves — Meta's two engineering
+    posts (2021-02-23, 2022-03-17) state that SDCs produce incorrect results without raising logs
+    or exceptions and leave no trace, and Meta's answer was Fleetscanner and ripple, two dedicated
+    detection programmes, not an instruction to watch for implausible output. An organisation that
+    could rely on implausible results to reveal corruption would not have built either. Google took
+    the same position from the file-system checksum lineage onward. The oracle-problem literature
+    (ISSTA 2017, DOI 10.1145/3092703.3098235; author list [UNVERIFIED]) explains WHY: a plausibility
+    check on a final result is an EXTERNAL, TERMINAL oracle with access only to an aggregate — the
+    placement most vulnerable to FAILED ERROR PROPAGATION — whereas an internal check on the
+    parser's own invariants sees the corrupted state directly.
+  15b's steelman is accepted in full and is the reason this flag targets the generalisation rather
+    than the heuristic: the sentence may have been offered as an EXPLANATION OF HOW THIS PARTICULAR
+    BUG CAME TO LIGHT rather than as a policy, sparse-defect priors are real Bayesian information,
+    and a cheap check that catches gross failures — honestly labelled as catching only gross
+    failures — may be the correct allocation for a system whose machinery already outproduces its
+    capacity to consume (PRESUMPTION-712). Nothing in either file argues for removing the check.
+    The fault is entirely in the move from "an implausible result revealed this parser bug" to "a
+    parser bug announces itself by an implausible result."
+  What is not a steelman and is not defensible: THE COUNTEREXAMPLE WAS IN HAND AT THE MOMENT OF
+    GENERALISATION. The same summary that generalised the heuristic records a plausible 21-pair
+    difference the heuristic would not have caught. So the heuristic's miss rate on this system's
+    own defect population is already known to be non-zero, was known when the rule was stated, and
+    did not alter it. That is a failure of the evidence pathway, not only of the heuristic, and it
+    is the reason this reaches a human rather than closing in-house.
+  15c'S EVALUATION OF THE SYSTEMIC-RISK-FLAG (Critical; 696 / 703 / 707 / 714): SUSTAINED. The
+    flag's common vulnerability — that the system reasons from a detector's SUCCESSES to its
+    COVERAGE, and never from its misses to its blind spots — holds on all four members and is
+    stated correctly. 696 credits an internally built evaluator with untested independence; 703
+    credits a plausibility check with coverage inferred from the one gross failure it caught; 707
+    credits a named mechanism with explaining an observation it does not cover; 714 credits a
+    single-fault diagnosis derived from the call site where the symptom appeared. Not one has a
+    measured sensitivity, a measured false-negative rate, or a named class it structurally cannot
+    see. TWO CORRECTIONS, recorded rather than smoothed:
+    (a) INDEPENDENCE OF THE FLAG'S OWN BASIS. Its literature basis cites Knight & Leveson, the
+        LLM evaluation-panel work, mutation testing, Meta/Google on SDC, the oracle-problem
+        literature and the flaky-test literature — but three of those six are the same sources that
+        carried the individual members, and all four AGAINST files were written by one agent in one
+        context. Per PREMISE-111 / PREMISE-120 that is one reading of a common source base, not
+        four independent confirmations. The class claim is filed here on the STRUCTURAL argument
+        and on the local record, not on convergence. This does not weaken the request; it changes
+        what the request may be said to rest on. It is the same correction 15c filed against the
+        2026-08-06 flag, and its recurrence is itself a datum.
+    (b) THE FLAG'S MEMBERS ARE NOT DISPOSITIONED ALIKE, and should not be. 714 went to MONITOR-504
+        because both search directions returned Moderate and both recommend the same action; the
+        flag's class claim does not override an item-level tie. A flag that would have swept 714
+        into REVISE on class membership alone would be doing to the members what the members are
+        accused of doing to their detectors.
+  THE CROSS-CUTTING RULE THE FLAG ASKS FOR, carried here so it is requested ONCE rather than four
+    times: no detector, evaluator or diagnostic is recorded as a CONTROL until its sensitivity has
+    been measured against seeded or historical faults, and no such component is recorded without an
+    explicit statement of the defect class it cannot detect. The flag's own cheapest item is (3):
+    treat a recorded near-miss as a MANDATORY REGRESSION CASE rather than as narrative colour —
+    because in at least two of these four items the counterevidence was already in the same
+    document as the claim and produced no change.
+  Affected: the day's entire self-catch record, which rests on implausibility; every result that
+    PASSED the plausibility check and was thereby recorded as verified; and — the circularity that
+    makes this worse than a coverage gap — the system's own estimate of DEFECT SPARSITY, which is
+    the premise of the heuristic and is itself an artefact of the detector. A defect record biased
+    toward large errors produces a sparsity prior that justifies a detector that only sees large
+    errors. Interlocks with REVISE-284 (696), REVISE-287 (707) and MONITOR-504 (714) as the other
+    three members; with PREMISE-110 (detectors invert rather than degrade); and with PREMISE-100.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — three, cheapest last:
+    (1) SEEDED-FAULT SENSITIVITY MEASUREMENT: seed the parser with faults calibrated to produce
+        discrepancies of one pair, five pairs, twenty pairs — the size of the recorded near-miss —
+        and run the existing checking procedure. The smallest discrepancy the procedure reliably
+        catches IS the heuristic's sensitivity floor, and it can be compared directly against the
+        observed 21-pair miss. This is the mutation-testing move and it converts coverage from a
+        claim into a number.
+    (2) RETROSPECTIVE MISS RATE: re-run the current parser over the inputs of past runs and diff
+        against what was recorded at the time. Every difference is a defect the plausibility check
+        did not catch, and the count is an EMPIRICAL miss rate rather than an asserted sparsity
+        prior.
+    (3) CHEAPEST: add a reconciliation invariant (input items in = items accounted for out) and see
+        whether it fires on any historical input. A single firing on data that previously passed
+        plausibility refutes the presumption outright.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) ADOPT THE CROSS-CUTTING RULE ABOVE as a standing register convention: measured sensitivity
+        before "control," and a named blind-spot class alongside every detector. This is ONE
+        decision covering all four flag members and is the reason they are not four flags.
+    (2) MANDATE THAT A RECORDED NEAR-MISS BECOMES A REGRESSION CASE. The 21-pair difference should
+        be a permanent labelled test, not a sentence. This is the flag's cheapest item and the one
+        that addresses the failure of evidence propagation rather than the failure of coverage.
+    (3) AUTHORISE MAGNITUDE-INDEPENDENT INVARIANTS INSIDE THE PARSER — conservation and
+        reconciliation checks that fire on a one-item discrepancy exactly as on a total one. This
+        is the only remedy whose sensitivity does not depend on the error's size.
+    (4) RESTATE THE HEURISTIC WITH ITS SCOPE ATTACHED, so future readers of the register inherit
+        the limitation along with the rule. The heuristic is KEPT; what changes is that its stated
+        form includes the class it cannot see.
+  Note on scale, per PREMISE-121: (1) and (2) close the class across all four members. (3) is the
+    engineering work. (4) is one sentence and could be done today.
+  Urgency: High — and note that (1) is sequenced BEFORE REVISE-284's absence-detector question,
+    because a tier built without a measured sensitivity would enter the register as a control on
+    exactly the terms this rule forbids.
+  PROVENANCE: Origin 14b (four items) + 15b SYSTEMIC-RISK-FLAG · Chain [14b -> 15a, 15b -> 15c] ·
+    Current status: REVISION-FLAGGED
+
+
+REVISE-287 — PRESUMPTION-707: BOTH search directions independently found the label wrong; the
+  observation is the documented signature of a different mechanism with a different remedy
+  Source: PRESUMPTION-707 (14b) | Disposition: DISPOSITION-618
+  Evidence standing: this is the item in the batch where the FOR direction contributes most of the
+    refutation, and that is worth stating plainly because it is unusual. 15a PARTIALLY-SUPPORTED —
+    MODERATE that the phenomenon is real and documented, WEAK that the label given explains this
+    observation — and 15a's source 3 is explicit: it went looking for support for the term
+    "starvation" and found the distinction 14b was pressing drawn in the literature itself.
+    Starvation is PERPETUAL, SYSTEMATIC denial of a resource under a scheduling policy; arbitrary
+    or nondeterministic selection is not starvation. Disjoint membership is if anything evidence
+    AGAINST starvation, since a starved item would be persistently absent rather than present in
+    one call and absent in the next. 15b CHALLENGED (Strong) and supplies the mechanism that DOES
+    fit: a bound applied to an unordered or partially ordered result set, where plan choice and
+    parallel scan determine which qualifying rows reach the bound first. MySQL's manual states the
+    server may return rows in any order and differently depending on execution plan; PostgreSQL's
+    project record has carried the warning since 2007 (message-id 20070608202618.2B12E9FBDBE);
+    Snowflake's KB adds the scope condition — the bound picks rows arbitrarily unless the ordering
+    is applied in the SAME statement scope, which is exactly the shape of a bounded audit query
+    assembled from a subquery plus an outer cap.
+  The point that decides it: A REAL PHENOMENON HAS BEEN GIVEN THE WRONG NAME, AND THE WRONG NAME
+    CONCEALS THE RESIDUE THE NAME DOES NOT COVER. Two residues, specifically. First, the label
+    predicts a stable excluded set and the observation is disjoint membership. Second — and neither
+    direction found any source that covers this — ordering instability under a cap explains WHICH
+    items come back but not HOW MANY: nothing located explains a bounded query returning 24 on some
+    invocations and 31 on others without a further mechanism such as partial results, timeout
+    truncation, or a changing underlying set. 15a records that residue as an unsearched seam rather
+    than a literature gap and names where it probably lives (partial-result / truncation semantics;
+    snapshot isolation). The remedy differs by mechanism: effort spent on fairness or scheduling
+    when the fix is a total order in the right scope leaves the instability in place after the fix
+    is declared complete.
+  The evidentiary consequence, which is larger than the diagnostic one: three identical calls
+    returning different cardinalities with disjoint membership FAILS REPEATABILITY in the strict
+    sense (same method, identical items, same operator, short interval). Every audit finding drawn
+    from a single bounded call is therefore unreproducible BY CONSTRUCTION — a later run can
+    neither confirm nor refute it, which is the worst state for an audit record. And the most
+    dangerous class is ABSENCE findings: a call returning 24 instead of 31 will report items as
+    missing that exist, and disjoint membership means the missing set differs each time.
+  15b's steelman is real and is why the requested change is scoped to enumerations: "starvation
+    artifact" may be shorthand — a local nickname for a known-and-tolerated class of instability,
+    the way engineers say "the usual flake" — in which case no mechanism is being asserted and 14b
+    has convicted a nickname. There is also a reading on which starvation is genuinely part of the
+    story: if the retrieval interleaves sources or shards and the bound truncates whichever respond
+    first, then some sources ARE persistently under-served, which is starvation-shaped even though
+    the observable is membership variation. And if the query is used for SAMPLING rather than
+    enumeration, non-determinism is a feature, not a defect. The presumption only bites if the
+    output is being treated as an enumeration — which is precisely what needs to be established and
+    has not been.
+  The word that makes this a flag rather than a note: "AGAIN." The phenomenon has recurred and been
+    RE-LABELLED rather than investigated, so the label has already survived at least one
+    opportunity to be tested against evidence. The flaky-test literature identifies this as the
+    principal cost of premature labelling: the naming closes the investigation and the real cause
+    accrues further consequences unobserved.
+  Affected: two days of holds, passes and escalations rest on a set that may not be the set.
+    Every register finding derived from a bounded call. The audit's evidentiary standing generally,
+    which is not a cosmetic property. Member of 15b's SYSTEMIC-RISK-FLAG of 2026-08-07 (Critical;
+    696 / 703 / 707 / 714), whose cross-cutting rule is requested once at REVISE-286 and is NOT
+    duplicated here — 707 is the flag's member where a named mechanism is credited with explaining
+    an observation it does not cover.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION, TAKES MINUTES, and settles the mechanism
+    outright — this is the cheapest decisive test anywhere in this batch:
+    (1) ISSUE THE SAME CALL TEN TIMES and record the full result sets. Compute (i) the cardinality
+        distribution, (ii) the intersection across all ten, (iii) the union.
+          · small intersection, union substantially exceeding per-call cardinality -> ORDERING
+            INSTABILITY UNDER A BOUND; the label is refuted and the remedy is a total order
+          · a stable subset appearing in none of the ten -> STARVATION; the label is vindicated
+        This is the difference between a diagnosis and a nickname and it costs one minute.
+    (2) Issue the same query with an explicit total order and the bound removed. If the result
+        becomes stable and its cardinality equals the union from (1), diagnosis and remedy are both
+        settled in one step.
+    (3) COUNT THE EXPOSURE: how many conclusions currently in the register were drawn from a single
+        bounded call? Each is unreproducible until re-derived, and the count IS the size of the
+        exposure.
+  REQUESTED CHANGE:
+    (1) IMPOSE A TOTAL ORDER IN THE SAME SCOPE AS ANY BOUND. This is the documented standard remedy
+        and it is effective REGARDLESS of which mechanism is operating, which makes it correct to
+        apply before (1) above resolves anything.
+    (2) REMOVE THE BOUND for any query whose output is treated as an enumeration; use bounds only
+        where sampling is intended and LABEL THE OUTPUT as a sample. This is the decision that
+        needs a human, because it is a ruling about what the audit queries are FOR.
+    (3) MARK EVERY REGISTER FINDING DERIVED FROM A BOUNDED CALL AS PROVISIONAL until re-derived.
+    (4) ADOPT THE RULE that an intermittent phenomenon is not assigned a named cause in the
+        register unless the name has been tested against the observations it must cover — the
+        generalisable form of what 14b did here by hand, and a narrower sibling of REVISE-286's
+        cross-cutting rule.
+    (5) LOG THE QUERY TEXT AND RESULT CARDINALITY with each finding, so later reproduction is
+        possible at all.
+  Note on scale, per PREMISE-121: (1) is a one-line change that closes the observable regardless of
+    cause and should not wait for anything. (2) is the actual decision. (3)-(5) are hygiene.
+  Urgency: High — but note that (1) and the ten-call test are both available NOW and neither needs
+    this flag to be read. If the ten-call test is run, this item may narrow to (2) alone.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+REVISE-288 — PRESUMPTION-710: the request conflates AUTHORISED, ORIGINATED and ORIGINATED-NOW;
+  both alternatives 14b found missing are named remedies in the literature, and the repetition is
+  the queue
+  Source: PRESUMPTION-710 (14b) | Disposition: DISPOSITION-619
+  Evidence standing: 15a PARTIALLY-SUPPORTED (MODERATE strictly conditional on the fix being an
+    authority-changing or irreversible action; WEAK otherwise) and 15b CHALLENGED (Strong). They
+    converge, and 15a's convergence is the notable part: the FOR direction independently SUPPORTED
+    BOTH of the alternatives 14b said were never considered. On the first — cost the fix and
+    propose a specific change — 15a reports that the graduated-gate pattern is standard and that no
+    located source treats "needs your decision" and "a run could prepare the decision" as
+    alternatives; they are COMPLEMENTS, which means the request as stated omits half of the
+    standard pattern. On the second, 15a states the queueing reading plainly: with one consumer and
+    a positive arrival rate, delay grows without bound, and a request repeated three times is
+    better evidence about the QUEUE than about the item.
+  The condition under which the presumption would be VINDICATED, stated first because it is real
+    and unresolved: agent-governance frameworks (CSA Labs Agentic Identity Governance Framework v1;
+    arXiv 2606.03518; arXiv 2510.25819 — preprints located by ID only) are explicit that any
+    request to expand an agent's capability profile, or to create or modify another agent's
+    identity or credentials, should UNCONDITIONALLY trigger human review. If the held-state fix is
+    of that class, "it needs your decision" is a correct statement of a control and repeating it
+    three times is appropriate persistence, not a presumption. NOTHING IN THE ITEM ESTABLISHES
+    WHICH CLASS IT IS, and 15a says the recommendation flips on that single fact. That is the
+    decision this flag asks for.
+  The point that decides it in the meantime: the industrial counterexamples show that
+    authorisation, origination and timing are separable, and that separating them is the standard
+    remedy rather than a relaxation of control. Google reviews low-risk LSCs via designated
+    reviewers holding approval privileges across the entire codebase and submits them WITHOUT
+    asking the individual owning teams — an organisation whose ownership model is far stricter than
+    C2A2's has an explicit carve-out for the mechanical change whose owner would almost certainly
+    say yes, and the carve-out exists because the alternative does not scale. Meta computes a risk
+    score per change and automates review-to-landing for low-risk diffs, which is authorisation
+    exercised ONCE at the level of a POLICY over a class and then applied. The human decision is
+    not eliminated; it is MOVED UP A LEVEL AND AMORTISED. That third option — a run costs the fix,
+    names the specific change, and presents a ratifiable yes/no — dissolves the dichotomy between
+    "your decision" and "another run rediscovering it," and reduces the human's work from analysis
+    to ratification without relaxing who authorises anything.
+  15b's steelman is strong and this flag is shaped by it rather than against it, in three parts.
+    First, a held-state fix is not obviously a two-way door: if the held state encodes a design
+    commitment, the cost of a wrong choice is not one reverted edit but unwinding everything built
+    on it, and under that reading the insistence is correct Type 1 handling. Second, and this is
+    the part that must not be lost: BOTH counterexamples delegate to OTHER HUMANS or to a
+    DETERMINISTIC pipeline with a test suite and a revert path. NEITHER delegates judgement to the
+    same agent population that produced the problem — and REVISE-284 (PRESUMPTION-696) is this
+    batch's finding that C2A2 has no measured basis for treating one of its agents as an
+    independent check on another. Delegating the held-state decision TO A RUN would therefore trade
+    a slow correct process for a fast one with unknown error properties. Third, the single-
+    authoriser convention may be a DELIBERATE RATE LIMITER: a system that appends 41+21 items in a
+    night and drains none has a production problem, not a consumption problem, and loosening the
+    one constraint that forces items to stop moving would make that worse. These three are why the
+    requested change below asks for a POLICY and a PROPOSAL FORMAT, and does not ask for the
+    authorisation convention to be relaxed.
+  Affected: every item awaiting the single authoriser, since the held state persists for as long as
+    the queue does and every run in the interim operates on known-wrong state — the cost is not one
+    delayed fix but a defect multiplied across all intervening runs. The repetition itself: three
+    requests is three runs' worth of attention spent restating rather than resolving. And the
+    self-confirming property, which is the worst of it: items requiring the authoriser are exactly
+    the items that do not get done, so the backlog of unauthorised items grows and is then read as
+    evidence that these are HARD problems rather than QUEUED ones. Compounds REVISE-279 / REVISE-282
+    (PRESUMPTION-673 / -677) and PRESUMPTION-691; member of 15b's SYSTEMIC-RISK-FLAG of 2026-08-07
+    (Critical; 710 / 712 / 713 / 716), whose minimum viable action is carried at REVISE-289 and is
+    not duplicated here. Bears on PREMISE-106 (queue in the unstable regime) and PREMISE-138.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — mostly arithmetic, and the fourth is a single
+    trial that settles the whole question:
+    (1) CLASSIFY THE FIX by writing down its REVERT PROCEDURE. If a revert procedure can be
+        written, it is a two-way door and the delegation threshold applies. If it cannot, the
+        presumption is vindicated and this flag narrows to item (2) alone.
+    (2) MEASURE THE QUEUE: count items awaiting the authoriser's decision, count how many were
+        cleared in the last 30 days, compute the ratio. A clearing rate below the arrival rate is a
+        DIRECT demonstration that the convention is the binding constraint.
+    (3) COUNT REPETITIONS: extract the distribution of repetition counts across all requests to the
+        authoriser in the record. A heavy tail is the observable signature of a saturated single
+        consumer; a light one would refute the queueing reading.
+    (4) CHEAPEST AND MOST INFORMATIVE: ATTEMPT THE MISSING ALTERNATIVE ONCE. Have a run cost the
+        fix and propose a specific change, then observe whether the decision clears faster. One
+        trial settles whether the obstacle was the decision or its FRAMING, and it requires nobody's
+        permission.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) RULE ON THE CLASS: is the held-state fix authority-changing / irreversible, or not? This is
+        the single fact on which 15a's recommendation flips, and no agent can determine it.
+    (2) WRITE DOWN THE DECISION CLASS — which categories require the authoriser and which do not —
+        decided ONCE at policy level rather than repeatedly at item level. This is the Google/Meta
+        pattern and it is the change that amortises the human's cost rather than reducing the
+        human's role.
+    (3) AUTHORISE THE PROPOSAL FORMAT as the default shape of any request to the authoriser: a run
+        costs the fix, states the specific change, and asks for RATIFICATION rather than ANALYSIS.
+        This requires no relaxation of who authorises and is the highest-value item here. NOTE the
+        open question 15b names and neither direction searched: whether ratification-of-proposal
+        PRESERVES the value of the human check or degrades it via automation bias. That is the
+        gap on which the steelman turns and it should be flagged as an open risk on (3), not
+        assumed away.
+    (4) DEFINE A DEGRADATION PATH for authoriser unavailability, even if it is only "these classes
+        proceed, these halt." The system currently has no continuity plan for a single point of
+        failure it has already identified.
+    (5) CAP OPEN ITEMS AWAITING AUTHORISATION — the WIP-limit move, which forces the choice between
+        clearing and not producing. This is the item that couples 710 to 712 and it is the honest
+        version of "the convention is the constraint": if the queue is growing, the literature
+        admits no third resolution beyond relaxing the class or throttling arrivals.
+  Note on scale, per PREMISE-121: (3) is available immediately, changes nothing about who
+    authorises, and directly supplies the alternative 14b found missing. (1) is the fact everything
+    else depends on. (2), (4), (5) are the durable form.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+REVISE-289 — PRESUMPTION-712: growth is a PRODUCTION metric and the register's function is
+  CONSUMPTION; at a service rate of zero no item in the register has a finite expected time to
+  being acted on, including this one — 15b SYSTEMIC-RISK-FLAG (2026-08-07, Critical), part 2 of 2
+  Source: PRESUMPTION-712 (14b) | Disposition: DISPOSITION-620. This entry also carries the
+    evaluation of 15b's SYSTEMIC-RISK-FLAG filed at the end of PRESUMPTION-712_against.md,
+    affected items PRESUMPTION-710, 712, 713, 716. REFLEXIVE.
+  Evidence standing: 15a PARTIALLY-SUPPORTED, strength WEAK, and 15a's honesty about its own best
+    case is what decides this. The one genuine FOR reading is from safety science: OSHA and the
+    safety profession treat NEAR-MISS REPORTING RATE as a leading indicator, and a high rate is
+    read as a positive signal about culture. But EVERY located source that endorses the rate
+    attaches the same condition — the rate is positive WHEN PAIRED WITH PREDICTABLE FOLLOW-UP —
+    with the explicit warnings that reports which sit without action leave hazards unaddressed, and
+    that when near misses are reported and nothing is done, people STOP REPORTING. Growth with a
+    drain of zero satisfies one of the three stated requirements for a functioning programme. 15a
+    then dismantles its own analogy further, and this is the sentence that matters: safety
+    reporting rate measures WILLINGNESS TO REPORT in a population of humans who might not, and its
+    value as a culture indicator derives from that reluctance. AN AUTOMATED AGENT HAS NO RELUCTANCE
+    TO OVERCOME. The specific reason a high rate is good in safety science does not transfer to a
+    register appended by software. 15b CHALLENGED (Strong).
+  The point that decides it is ARITHMETIC, not literature, and it is the system's own figures:
+    62 items appended in one night against a measured drain of zero over thirty days gives a
+    service rate of zero, so by Little's Law (L = lambda*W, which holds independently of arrival
+    distribution, service distribution and service order) W is unbounded and NO ITEM IN THE
+    REGISTER HAS A FINITE EXPECTED TIME TO CONSUMPTION. The software-quality field reached the same
+    conclusion formally and built a metric for it: Backlog Management Index = closures/arrivals,
+    which exists precisely because arrival count alone was found insufficient as a health measure.
+    A drain of zero is BMI = 0, the floor of the scale. Every framework located by either direction
+    measures a 62-item append on the thirtieth day of zero drain as a WORSENING.
+  And the failure is not neutral. The alert-fatigue literature is the most developed study of
+    exactly this structure — a register that grows continuously in a domain where every item is
+    nominally important — and reports non-actionable rates above 70%, CPOE override rates spanning
+    46.2-96.2%, and the operational failure mode of recipients PROCESSING THE QUEUE BY VOLUME
+    RATHER THAN BY CONTENT. [All figures relayed from search summaries and abstracts by both
+    directions; author lists [UNVERIFIED]; direction consistent across four independent sources but
+    the percentages are not to be quoted downstream.] The static-analysis literature reproduces it
+    in software: an unconsumed backlog TRAINS ITS READERS TO SUPPRESS, and the suppression
+    generalises beyond the warnings that provoked it. A reader trained by 1,459 unactioned items
+    will not act on the 1,460th.
+  15b's steelman is the strongest in the batch and the requested change is built around it rather
+    than against it: a register may not be a work queue at all. An audit register may exist to
+    establish that something WAS OBSERVED AT A TIME, valuable at write like a flight recorder; or
+    it may be a CORPUS for later analysis, whose value is the patterns visible across 1,460 items
+    rather than 1,460 individual resolutions — and PRESUMPTION-712 itself was produced by reading
+    the register against itself, which is a consumption event of exactly that kind. Under either
+    reading zero drain is compatible with full function. 15a records the same gap from the other
+    side: no located source addresses registers designed as ARCHIVES rather than as work queues,
+    and the item's framing assumes the queue reading without arguing for it. That is a real
+    weakness in the item and it is why request (1) below is a question rather than a fix.
+  But the steelman has a stated condition and the condition is currently unmet: if the function is
+    corpus-for-analysis, there must be a DEFINED ANALYSIS STEP WITH A DEFINED CADENCE THAT HAS RUN
+    AT LEAST ONCE — otherwise "corpus" is indistinguishable from "backlog." And 15b's decisive
+    point stands under every reading: WITHOUT A CONSUMPTION METRIC THE PRESUMPTION IS NOT MERELY
+    UNSUPPORTED BUT UNTESTABLE, and its persistence is guaranteed.
+  15c'S EVALUATION OF THE SYSTEMIC-RISK-FLAG (Critical; 710 / 712 / 713 / 716): SUSTAINED. The
+    common structure — an OPEN LOOP in which something is written, nothing is required to read it,
+    and the writing is scored as the control — holds on all four members, and the flag's own
+    observation that the four REINFORCE one another is correct: the register is where the severity
+    flag is filed, the authoriser is the only consumer, and the one success is the evidence that the
+    loop closes. THREE CORRECTIONS:
+    (a) INDEPENDENCE OF THE FLAG'S BASIS, as at REVISE-286: all four AGAINST files were written by
+        one agent in one context, and the alert-fatigue and static-analysis literatures carried
+        both the members and the flag. Per PREMISE-111 / 120 this is one reading of a common source
+        base. Filed on the structural argument and the local record.
+    (b) 713 IS NOT DISPOSITIONED AS A FLAG MEMBER. It drew the batch's only Moderate challenge, it
+        is the POSITIVE case, and 15b explicitly warns against over-correcting it. It went to
+        MONITOR-503. Sweeping it into a flag on class membership would be inferring an item's
+        disposition from its cluster, which is a version of the error the other flag names.
+    (c) THE FLAG IS PARTLY ALREADY KNOWN. Its arithmetic half restates PREMISE-106 (the queue is in
+        the unstable regime; arrival exceeds service; no scheduling discipline recovers it) and its
+        metric half restates PREMISE-147 (producer-side proxies mistaken for system health). What
+        is NEW is the pairing requirement in (1) below and the coupling of the four loops. No fifth
+        premise restating PREMISE-106 has been minted, per PREMISE-138 clause (1).
+  Affected: every register in the architecture and every severity level in it. Reflexively: this
+    flag is an append to the register whose drain it reports as zero, and on its own analysis its
+    most likely fate is to become the next unconsumed item. That is not rhetoric — it is the
+    prediction the item makes, and it is falsifiable by exactly one event.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — four counts, all runnable from the register:
+    (1) APPENDED-PER-DAY vs RESOLVED/CONSUMED/RETIRED-PER-DAY over the last 30 days, as a ratio.
+    (2) DOWNSTREAM REFERENCES: how many register items have been cited, linked or acted upon by any
+        subsequent run? PRESUMPTION-713 records that number as ONE over ~1,460 items and ~118 days.
+        If that holds, the consumption rate is 0.068% and the presumption is refuted
+        ARITHMETICALLY, without any of the literature above.
+    (3) TEST THE CORPUS DEFENCE: count how many analyses have been run OVER the register as a body,
+        as distinct from items added to it. A positive count supports the steelman; a zero count
+        collapses it. This is the single count that decides between "archive" and "backlog."
+    (4) TEST THE FATIGUE MECHANISM: sample recent items and classify each as ACTION-IMPLYING or
+        OBSERVATION-ONLY. A high action-implying proportion against a zero action rate is the
+        alert-fatigue configuration exactly.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) STATE THE REGISTER'S FUNCTION: work queue, or corpus, or ledger-of-record. Everything else
+        follows from this and no agent can decide it. If corpus, name the analysis step and its
+        cadence; if work queue, a zero drain is a straightforward failure and no steelman applies.
+    (2) PUBLISH, AS A SINGLE STANDING FIGURE, THE PAIRED APPEND RATE AND ACTION RATE FOR EVERY
+        REGISTER AND EVERY SEVERITY LEVEL. This is the flag's stated MINIMUM VIABLE ACTION, it
+        makes 712, 713 and 716 falsifiable AT ONCE, it costs nothing but a count, and it should not
+        wait on the others. It is requested here ONCE and is not duplicated into REVISE-290.
+    (3) IMPOSE A WIP LIMIT OR EQUIVALENT PRODUCTION GOVERNOR — a hard cap on open items above which
+        no new item may be appended until one is closed. Every literature cited by either direction
+        names this as the remedy; NONE names producer diligence. This is the change that constrains
+        the agent that wrote this flag, and it is requested against 15c's own output as much as
+        against 14a/14b's.
+    (4) SEPARATE THE REGISTERS BY INTENDED FATE — action-required, observation-only,
+        corpus-material — because the fatigue mechanism is driven by unactioned ACTION-IMPLYING
+        items specifically, and an undifferentiated register maximises it.
+    (5) ROUTE FINDINGS ABOUT THE REGISTER'S OWN GOVERNANCE THROUGH A CHANNEL THE REGISTER DOES NOT
+        CONTROL. Without this, the reflexive risk is not a rhetorical flourish: it guarantees this
+        item is absorbed by the mechanism it describes.
+  Note on scale, per PREMISE-121: (2) is the minimum viable action and is a count. (1) is the
+    decision. (3) is the governor. (4) and (5) are structural and can follow.
+  NOVELTY RESIDUE, recorded and NOT queued separately: 15a found no source describing a
+    PRODUCTION-RATE GOVERNOR on an issue or defect register — a mechanism by which the DETECTING
+    party throttles its own output as a function of the CONSUMING party's drain rate. WIP limits
+    exist for work queues and alarm suppression exists for monitoring, but a self-throttling audit
+    producer was not located. If C2A2 builds request (3), it may be an original contribution. This
+    is recorded here rather than filed to 15d because the novelty is IN the requested change and
+    splitting it would produce a monitor item about a thing this flag already asks for.
+  Urgency: High — and the honest note: this flag argues that appending to this register is the
+    behaviour making the failure worse, and it is itself an append. It is filed anyway, as ONE
+    entry covering the flag rather than four, because request (2) requires an authorisation no
+    agent holds and PREMISE-138 clause (2) makes naming the actor obligatory rather than optional.
+  PROVENANCE: Origin 14b (four items) + 15b SYSTEMIC-RISK-FLAG · Chain [14b -> 15a, 15b -> 15c] ·
+    Current status: REVISION-FLAGGED
+
+
+REVISE-290 — PRESUMPTION-716: the FOR direction returned NO SUPPORT AND NONE; a severity level is
+  a claim about the response it will receive, and this one's operational meaning has already been
+  redefined by its own history to "no action required"
+  Source: PRESUMPTION-716 (14b) | Disposition: DISPOSITION-623
+  Evidence standing: THE CLEAREST IN THE BATCH. 15a NO-SUPPORT-FOUND, strength NONE — the FOR
+    direction located no source supporting the proposition that a severity flag which produces no
+    action is still functioning as a control, and reports that the sources which come CLOSEST to
+    supporting it deny it in explicit terms. One located source states directly that a severity
+    level without a clear response expectation is USELESS and that one must always define who gets
+    paged and when. 15b CHALLENGED (Strong). There is no strength asymmetry to weigh here: both
+    directions arrived at the same verdict from opposite assignments.
+  The FOR case that was expected to carry and did not, recorded because its failure is the finding:
+    15a went to the near-miss tradition — the one place where RECORDING is credited independently
+    of remediation, where a near miss is proof that exposure already exists and a high reporting
+    rate is a positive cultural signal — and found that every source in it attaches PREDICTABLE
+    FOLLOW-UP as one of three named requirements, and warns that unactioned reports both leave
+    hazards live and cause reporting to stop. A measured action rate of zero fails the third
+    outright. The tradition most favourable to the presumption denies it on its own terms.
+  The point that decides it: A SEVERITY LEVEL IS NOT A PROPERTY OF THE FLAG. It is a claim about
+    the response the flag will receive, and its meaning is set EMPIRICALLY by the responses prior
+    instances actually received. The incident-management literature states the mechanism in exactly
+    this register — responders begin treating top-severity alerts with lower urgency BECAUSE THEY
+    HAVE LEARNED THAT NOT ALL OF THEM REQUIRE AN IMMEDIATE RESPONSE — and the signal-detection
+    framing supplies the reason in one line: a tier that fires in every state has no
+    discriminability, so the label at the top of the scale carries no information regardless of
+    where the threshold is set. Six consecutive days at the top with zero actions across the
+    preceding five is not a control operating weakly; it is a level whose operational meaning has
+    already been redefined, and the sixth instance inherits that meaning regardless of its content.
+    THAT THIS IS THE SIXTH RATHER THAN THE FIRST IS WHAT CONVERTS A POSSIBLE CHALLENGE INTO A
+    DECISIVE ONE.
+  The structural half, which is larger than the calibration half: Vaughan's Challenger account
+    (1996; author, title and year confirmed via secondary treatments, book not read, no quotation
+    asserted) establishes that deviation risk fails to reach decision-makers WHO HAVE THE AUTHORITY
+    TO HALT the practice, and that because the shuttle kept returning the organisation
+    progressively reclassified the O-ring issue as an acceptable risk. A WARNING IS NOT A CONTROL
+    UNLESS IT IS COUPLED TO AUTHORITY TO STOP THE THING BEING WARNED ABOUT. A Critical flag
+    succeeded by business as usual is not a weak control but a REHEARSAL OF THE DEVIANCE, and each
+    repetition lowers the level's future meaning. Columbia, seventeen years later at the same
+    organisation, is the literature's own demonstration that the pattern is recurrent rather than
+    incidental.
+  15a'S NOVELTY-FLAG, AND WHAT IT MEANS — this must not be misread as a novelty credit, and 15a
+    says so explicitly: no literature was located addressing a severity scale operated WITHOUT ANY
+    AUTHORITY TO ACT, i.e. a system in which the flagging party is structurally unable to trigger
+    the response the level names. Every located source ASSUMES the escalation path exists and asks
+    whether it is being calibrated or fatigued. 15a's own implication, quoted in substance: this
+    gap "cuts against the presumption rather than for it: the absence of literature is not
+    permission, and the nearest analogues all indicate that severity without response expectation
+    degrades rather than preserves the signal." Recommended status in the FOR file is NOVEL AS A
+    GAP IN COVERAGE, NOT AS A VALIDATED DESIGN. Accordingly the 15c charter rule that routes a
+    NOVELTY-FLAG to MONITOR at High priority DOES NOT FIRE HERE: that rule exists for potential
+    original contributions, and this flag identifies a configuration the literature does not model
+    BECAUSE NOBODY BUILDS IT ON PURPOSE. Recording it as a monitor item would convert a warning
+    into a research note.
+  15b's steelman is real on one point and it is the point request (1) turns on: the action rate may
+    be zero because the flag is CORRECTLY aimed at a party who cannot act YET, not because the
+    level is miscalibrated. If the condition requires the single human authoriser's decision
+    (PRESUMPTION-710 / REVISE-288) and that authoriser is a saturated single consumer, the flag has
+    done its job — routed the condition to the right party at the right level — and the failure is
+    entirely downstream in the queue. On that reading DOWNGRADING THE SEVERITY WOULD BE THE ERROR:
+    it would reduce the flag's chance of ever being acted on while doing nothing about the actual
+    constraint. Also fairly noted by both directions: five instances is a small sample and a zero
+    rate is compatible with a low non-zero true rate, so the item's own inference is a small-sample
+    inference; and the alarm-fatigue transfer requires a FATIGUED PARTY, which six flags read every
+    few days may not produce the way 180 alarms a shift does. These are why request (1) is a
+    DIAGNOSIS and not a recalibration.
+  Affected: the system's belief about its own safety margin — it believes it has a top-severity
+    escalation path and on this evidence it does not, WHICH IS WORSE THAN KNOWING IT HAS NONE,
+    because a believed-in control suppresses the search for a real one. The damage is cumulative:
+    each unactioned instance further devalues the level, so by the time a genuinely urgent
+    condition arrives the level's meaning is already "no action required" and it will be read that
+    way. It generalises downward, since habitual suppression does not stay confined to the warnings
+    that provoked it. And the CONTENT becomes accepted along with the flag: whatever is being
+    flagged Critical is, six days in, on its way to being a known and tolerated feature of the
+    system. Member of 15b's SYSTEMIC-RISK-FLAG of 2026-08-07 (Critical; 710 / 712 / 713 / 716),
+    evaluated in full at REVISE-289; its minimum viable action — publish paired append and action
+    rates per register and per severity level — is requested THERE and is deliberately NOT
+    duplicated here, because it is one count and one decision.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — four, and the second is the one that decides
+    which flag this even is:
+    (1) TABULATE EVERY CRITICAL-SEVERITY FLAG EVER ISSUED against whether any action followed
+        within a defined window. The item states 0/5; extending it over the full history gives the
+        level's true operational meaning AS A NUMBER.
+    (2) RUN THE SAME TABULATION FOR EVERY OTHER SEVERITY LEVEL. This is the discriminating test and
+        it costs the same as (1). If the action rate is zero at ALL levels, the problem is not
+        severity calibration at all but the consumption gap at PRESUMPTION-712 / REVISE-289, and no
+        amount of recalibration will help. If the rate VARIES by level, the scale is working and
+        only the top is inflated — a different and much easier problem.
+    (3) TEST THE AUTHORITY QUESTION DIRECTLY: for the most recent Critical flag, NAME the party who
+        could have acted on it, and confirm that party both saw it and had the authority to act. If
+        no such party can be named, the Vaughan reading is established and the flag is a
+        notification.
+    (4) TEST THE DRIFT PREDICTION: compare elapsed time-to-first-read for early Critical flags
+        against recent ones. Increasing latency is the observable signature of the level losing
+        meaning, and it is measurable now.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds:
+    (1) DIAGNOSE THE ZERO RATE BEFORE TREATING IT. Miscalibration, saturation and absent authority
+        have entirely different remedies and the current record does not distinguish them. NONE of
+        the changes below should be applied before this is answered — applying the wrong one is how
+        a severity scale gets downgraded while its actual constraint is untouched.
+    (2) COUPLE THE TOP SEVERITY TO A NAMED PARTY WITH AUTHORITY TO ACT AND A TIME-BOUNDED RESPONSE
+        OBLIGATION, so that "no action" is a DETECTABLE BREACH rather than the default. A level
+        with neither is a notification and should be RENAMED one. This is the Vaughan finding
+        stated as a design rule and it is the request that matters most.
+    (3) SEPARATE THE RECORD-KEEPING FUNCTION FROM THE CONTROL FUNCTION into distinct categories.
+        The steelman's best argument is that a Critical flag preserves the fact that a condition was
+        observed and classified on a date — that value is real and is realised at write. But a
+        record-keeping category and a control category SHARING A NAME is precisely what produces the
+        drift, so honouring the steelman means splitting them, not merging them.
+    (4) INSTITUTE PERIODIC REVIEW OF THE SEVERITY DISTRIBUTION — the countermeasure the
+        incident-management literature names, and which would have surfaced this at instance two or
+        three rather than six.
+    (5) ADOPT AN ESCALATION-ON-REPETITION RULE: a condition flagged at the top level more than N
+        times without action must either be escalated OUTSIDE the normal channel or FORMALLY
+        ACCEPTED as a known condition. The second option is unattractive and it is honest, and it
+        is what the normalization-of-deviance literature says happens BY DEFAULT AND UNSPOKEN if no
+        rule exists.
+  Note on scale, per PREMISE-121: (1) is the prerequisite. (2) and (5) close the class. (3) and (4)
+    are the durable form. Probe (2) in the in-house list above may collapse this entire flag into
+    REVISE-289, and should be run first.
+  Urgency: High. Recorded reflexively and without softening: this entry is a document about a
+    condition flagged at the top of the scale, filed into a register whose measured drain is zero,
+    arguing that top-of-scale flags in this system do not produce action. Its expected fate, on its
+    own analysis, is the fate of the five flags it examines. It is filed anyway because request (2)
+    names an authority no agent holds.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+REVISE-291 — ASSUMPTION-803: TWO INDEPENDENT SEARCHES FAILED TO LOCATE THE PAPER THE ASSUMPTION
+  RESTS ON; the factual premise is unverified and the inference from it is the canonical
+  jingle fallacy. OBJECT-LEVEL — this one reaches the vault's content, not its machinery
+  Source: ASSUMPTION-803 (14a) | Disposition: DISPOSITION-624
+  Evidence standing: 15a PARTIALLY-SUPPORTED — MODERATE for the Friston/affective-science and
+    Friston/Levin links, NONE LOCATED for the Fredrickson link AS STATED — and 15b CHALLENGED
+    (Strong). Note the item type: this is an ASSUMPTION (stated), not a presumption, and it is the
+    only OBJECT-LEVEL item in the batch. It is also the only item here whose error would propagate
+    into the vault's published cross-tradition claims rather than into its process registers.
+  WHAT IS GENUINELY ESTABLISHED, and should not be lost in the flagging — two of the three legs
+    hold, one of them without any inference at all:
+    (a) The term is NOT a homonym in origin. "Allostasis / predictive regulation" has a single
+        traceable lineage from Sterling (2012, Physiology & Behavior 106(1):5-15, ScienceDirect
+        S0031938411003076; volume/pages from established knowledge, paper not opened), taken up by
+        Barrett & Simmons (2015, Nat Rev Neurosci 16(7):419-429) in an explicitly Bayesian
+        active-inference framework that unifies allostatic control and interoception, with the
+        definitional sentence "predictive regulation of the body's internal state is called
+        allostasis" used as a technical term inside that framework.
+    (b) The FRISTON-LEVIN leg needs no inference: Friston, Levin, Sengupta & Pezzulo (2015,
+        J. R. Soc. Interface 12(105):20141383, DOI 10.1098/rsif.2014.1383, PMID 25788538) is a
+        CO-AUTHORED paper applying variational free-energy minimisation to morphogenetic pattern
+        regulation and stating the continuity with active inference in neuroscience explicitly.
+        These are not two traditions using a word alike; on this topic they are the same authors
+        using one formalism.
+  WHAT FAILS, and it is the leg the assumption's payoff depends on: BOTH 15a AND 15b, SEARCHING
+    INDEPENDENTLY IN SEPARATE CONTEXTS AND UNDER OPPOSITE ASSIGNMENTS, FAILED TO LOCATE THE
+    FREDRICKSON-LAB PAPER. 15a searched the PEP Lab's indexed material and general queries pairing
+    Fredrickson with allostasis, predictive regulation, active inference and interoception; 15b
+    searched for a Fredrickson-lab paper deploying allostasis or active-inference language in the
+    lab's own words. Both surfaced the lab's characteristic vocabulary instead — broaden-and-build,
+    upward spirals, cardiac vagal tone, autonomic flexibility, vantage resources — and both report
+    the located mechanism claims as RECIPROCAL-CAUSATION claims about positive affect and vagal
+    tone, not claims about predictive regulation of the internal milieu. Both flagged the result as
+    a SEARCH LIMITATION rather than a refutation, correctly and in almost identical terms.
+  15c'S FINDING ON THE DOUBLE NEGATIVE, which is why this is a REVISE and not a MONITOR: two
+    independent failures to locate a primary source is a finding about the ITEM'S FACTUAL BASIS,
+    not merely about the literature. Neither agent claims exhaustiveness and neither should — a
+    negative citation result is weaker than a positive one, neither did a full-text search of the
+    Fredrickson corpus, neither checked book chapters or lab members' first-authored work, and the
+    paper may exist. But the assumption is stated in the register with a specific identifier
+    ("nsaf124") and the identifier survived two searches without resolving to a retrievable paper.
+    AN UNLOCATED CITATION IS CURRENTLY DOING LOAD-BEARING WORK ON AN OBJECT-LEVEL CLAIM, which is
+    the provenance defect PRESUMPTION-695 / PREMISE-148 describes and is the reason this item
+    cannot sit in a monitor queue: what is required is not observation over time but the retrieval
+    of one document, and until it is retrieved the vault holds a homology claim whose evidence
+    nobody has read. Two failures raise the prior that it does not say what the register says it
+    says; they do not establish it.
+  AND THE INFERENCE FAILS SEPARATELY FROM THE PREMISE — this is the part that survives even if the
+    paper is found tomorrow. Three independent challenges:
+    (i) THE JINGLE FALLACY, which is the exact name for this inference: treating two or more
+        distinct phenomena as the same BECAUSE THEY CARRY THE SAME LABEL. The systematic-review
+        literature reports these fallacies are widespread and names the affected areas as including
+        EMOTIONS AND WELL-BEING and BIOLOGICAL PSYCHOLOGY — both traditions at issue here. (Hogrefe
+        record, Zeitschrift für Psychologie 233(4), DOI prefix 10.1027/2151-2604/a000602, authors
+        and year [UNVERIFIED]; Wulff & Mata 2026, DOI 10.1177/09637214251382083, confirmed.)
+    (ii) ALLOSTASIS SPECIFICALLY IS A BAD CANDIDATE, and this is the decisive empirical point: it
+        is already demonstrably NON-UNIFORM WITHIN A SINGLE SUBFIELD THAT USES IT CONSTANTLY. A
+        systematic review of allostatic load reports 59 biomarkers combined in 20 different ways
+        across 26 studies with no consistent operationalisation and many studies lacking fidelity
+        to the original concept (PMID 28963986; ScienceDirect S0277953617305610; authors
+        [UNVERIFIED], figures from abstract/summary). Day (2005, PMID 16213079) argues the concept
+        has been used to ABSORB neighbouring constructs rather than sharpen them — precisely the
+        dynamic that produces apparent cross-tradition convergence with no shared structure
+        underneath. And Sterling's own reception literature records that later users often drop the
+        brain-centric commitment that gave the term its content.
+    (iii) THE INDEPENDENCE PROBLEM, which is the sharpest and is easy to check: the
+        active-inference / allostasis / interoception framing entered affective science through a
+        well-known BRIDGE literature (Barrett et al., Phil Trans R Soc B 371(1708):20160011). An
+        affective-science paper using Friston's idiom is therefore most parsimoniously explained by
+        CITATION, not convergence — and two texts that share vocabulary because one borrowed it
+        from the other are NOT two independent observations. The inference from shared idiom to
+        structural homology requires the usages to be independent.
+    A fourth consideration, weaker but worth carrying: if "predictive regulation" is a description
+    that fits nearly any adaptive system — the standard FEP-breadth objection — then observing it
+    in two traditions carries almost no evidential weight about shared structure, because the prior
+    probability of the description fitting was already near one.
+  A CAUTION ON THE LEVIN LEG, raised by 15a and NOT to be lost: the term Levin's own lab uses is
+    ANATOMICAL HOMEOSTASIS, not allostasis. The concept is set-point-directed regulation with a
+    prediction-like target representation, which is structurally close, but THE LEXICAL CLAIM DOES
+    NOT HOLD ON LEVIN'S SIDE without the Friston co-authorship carrying it. 15b records the Levin
+    leg as the one it has the least evidence about and recommends a broader search there
+    specifically. So the three-way SHARED-TERM claim is not established on any leg by vocabulary
+    alone.
+  Affected — and this is the risk profile that makes an OBJECT-LEVEL item different from the other
+    nine in this batch: every downstream link, cross-reference and synthesis built on the
+    Levin-Fredrickson pairing inherits the error, and a claimed homology INVITES FURTHER
+    CONNECTIONS, so it propagates further than a process defect. The error is self-reinforcing
+    through vocabulary: once the vault uses one word for three things, subsequent extraction will
+    find the word in all three places and read it as further confirmation, so the evidence base
+    grows without the claim gaining support. It is also hard to detect from inside, because the
+    surface signal — matching terminology — is exactly what a search looks for, and A JINGLE
+    FALLACY IS INVISIBLE TO TEXT-SIMILARITY METHODS BY CONSTRUCTION. And the cost is asymmetric: an
+    over-claimed cross-tradition homology is the most visible kind of error a synthesis project can
+    make, and this project's value rests on its cross-tradition claims being trustworthy.
+  IN-HOUSE FIRST STEP, REQUIRES NO AUTHORISATION — the first is one retrieval and it is owed:
+    (1) PIN THE PREMISE. Retrieve the Fredrickson-lab paper, quote the passage that uses the idiom,
+        and INSPECT ITS REFERENCE LIST for Friston, Barrett, Sterling or Schulkin. A citation
+        settles the independence question immediately and is the single highest-value check
+        available. If the paper cannot be retrieved at all, that is itself the disposition: an
+        unretrievable citation cannot support an object-level homology claim and the claim should
+        be withdrawn to surface-analogy status pending retrieval.
+    (2) BUILD THE THREE-COLUMN TABLE — Friston/active inference, Levin/bioelectric,
+        Fredrickson/affective science — with rows for REGULATED VARIABLE, MECHANISM OF PREDICTION,
+        FORM OF ANTICIPATORY ACTION, TIMESCALE, and WHAT WOULD COUNT AS A FAILURE OF REGULATION.
+        Convergent entries support homology; divergent entries under a shared label are a
+        DEMONSTRATED JINGLE and refute the assumption directly. This is the check that tests the
+        structure instead of the vocabulary and it needs no new sources.
+    (3) THE OPERATIONALISATION TEST: ask what each tradition would MEASURE to detect allostasis.
+        Given 59 biomarkers and 20 combinations within affective science alone, the three answers
+        very likely will not overlap — and non-overlap is the strongest available evidence of
+        homonymy.
+    (4) THE DISCRIMINABILITY CHECK: name a system that predictively regulates a bodily state but
+        that none of the three traditions would count as an instance. If no such system can be
+        named, the description is too broad to support a homology inference at all.
+  REQUESTED CHANGE — decisions no agent in this pipeline holds, because they concern what the vault
+    ASSERTS:
+    (1) RULE ON THE STATUS OF THE LEVIN-FREDRICKSON PAIRING pending (1) above. 15c's recommendation
+        is that it revert to SURFACE ANALOGY until the paper is pinned, and that any existing
+        vault text asserting structural homology on this pair be marked provisional. This is a
+        content decision and no agent should make it.
+    (2) ADOPT A GRADED VOCABULARY FOR CROSS-TRADITION CLAIMS — surface analogy / shared formal
+        skeleton / structural homology — with DIFFERENT EVIDENCE REQUIRED FOR EACH GRADE, rather
+        than a binary. Both directions independently converge on "shared formal skeleton, divergent
+        operationalisation" as the defensible position here, and there is currently no register
+        vocabulary that can express it.
+    (3) RESTATE THE HOMOLOGY CLAIM AT THE LEVEL OF FORMAL STRUCTURE AND DROP THE SHARED WORD FROM
+        THE CLAIM ENTIRELY. This is the move that makes the homology testable, and it is 15b's own
+        steelman turned into a method: Sterling's allostasis, Friston's active inference and
+        Levin's bioelectric morphogenesis each posit a system that holds a target state, predicts
+        departures, and acts in advance to prevent them. If that skeleton can be written in each
+        tradition's own formalism, the claim stands on the mathematics regardless of who uses the
+        word.
+    (4) INSTITUTE A STANDING JINGLE CHECK: any cross-tradition link justified by SHARED
+        TERMINOLOGY ALONE is flagged provisional until a structural correspondence is written out.
+        This is unlikely to be the only instance, and it is the request with the widest coverage.
+    (5) CARRY THE FEP-BREADTH CAVEAT alongside any Friston-derived homology claim, since the same
+        objection applies to every one of them.
+  Note on scale, per PREMISE-121: (1) is one retrieval away from being answerable and should not
+    wait. (4) closes the class. (2) and (3) are the durable form and are the most valuable
+    long-term. (5) is a footnote convention.
+  Urgency: HIGH — and the reason is different from the other seven flags in this batch. The others
+    concern machinery, where the cost of delay is more of the same. This one concerns what the
+    vault SAYS, where the cost of delay is that a possibly-false homology accretes further links
+    that will have to be unpicked. Per PRESUMPTION-695 / PREMISE-148, the object-level items arrive
+    by the least-verified route and are the least audited; this is that finding with a name
+    attached.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+
+---
+
+## 2026-08-08 — 15c REVISE flags (3) from the c2a2-lit-search-pipeline backlog draw
+
+*Cohort: the 2026-07-05 15d monthly re-trigger cohort at cycle 5, unconsumed 34 days. No new 14a/14b
+intake existed this run. Full reasoning at DISPOSITION-625, -626, -628 in lit_search_returns.md.*
+
+REVISE-292 — ASSUMPTION-003 — "Independent FOR/AGAINST search prevents confirmation bias"
+  Item type: ASSUMPTION (stated) · Prior status: MONITOR (MONITOR-001, cycles 1-5) · Risk flag: CRITICAL
+  Evidence: 15a PARTIALLY-SUPPORTED/Moderate; 15b CHALLENGED/Strong. Trajectory changed from STABLE to
+    CHALLENGING-STRENGTHENING for the first time in six cycles.
+  What is at risk: the validity of all 624 prior dispositions and every premise minted from one.
+  Requests for Tom:
+    (1) RUN THE HELD-OUT JOINT-ERROR STUDY. Feed 15a and 15b a set with known truth values and report the
+        JOINT error matrix, not per-agent accuracy — correlated failure is the quantity of interest. This
+        is the SAME study requested at REVISE-271 and PRESUMPTION-697; it is now un-run for a fifth
+        consecutive report and is requested here as one study serving four open items, not a new ask.
+    (2) EXECUTE 15b ON A DIFFERENT MODEL FAMILY FROM 15a. The only mitigation that addresses the mechanism
+        rather than its symptoms. This is a configuration change, not a redesign.
+    (3) ANONYMISE ROLE LABELS at 15c's reading step. Worth doing after (1), not before.
+    (4) UNTIL (1) IS RUN, CARRY A STANDING PROVISO on pipeline output: FOR/AGAINST agreement is not
+        independent corroboration. Restates ACTIVE PREMISE-111/120 at the point of use; no new premise
+        minted, per PREMISE-138 clause (1).
+  Note on scale, per PREMISE-121: (4) is one line and closes the reporting exposure today. (1) is one
+    afternoon and settles the question. (2) is the durable fix.
+  Urgency: HIGH
+  REFLEXIVE NOTE, recorded not as rhetoric but as evidence: the run issuing this flag executed 15a and 15b
+    in a single model context. It is an instance of the defect it reports, and that is the strongest
+    available argument for request (2).
+  PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6) · Current status: REVISION-FLAGGED
+
+REVISE-293 — PRESUMPTION-005 — "Separating FOR/AGAINST prevents bias without introducing others"
+  Item type: PRESUMPTION (unstated — surfaced by inference) · Prior status: MONITOR (MONITOR-010, cycles 1-5)
+  Evidence: 15a NO-SUPPORT-FOUND/Weak for the load-bearing clause; 15b CHALLENGED/Strong, with named
+    instances of the class the presumption denies (role-conditioned motivated search, premature consensus,
+    identity-skewed weighting).
+  Requests for Tom:
+    (1) THE SAME STUDY AS REVISE-292 SETTLES THIS ITEM TOO. One study, two items — do not commission twice.
+    (2) SPLIT THIS ITEM. "Prevents bias" and "without introducing others" have different evidential
+        standing and the weak clause has been inheriting the strong clause's support for six cycles.
+    (3) MERGE OR CROSS-REFERENCE MONITOR-001 AND MONITOR-010. They have carried one question as two items
+        since 2026-04-13, doubling its queue footprint and halving the chance either gets attention. If
+        they are one question they should be one item; if not, the difference should be written down.
+        This is a register defect of the class PRESUMPTION-687 describes.
+  Urgency: HIGH — but it is the same afternoon's work as REVISE-292, not additional work.
+  PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6) · Current status: REVISION-FLAGGED
+
+REVISE-294 — PRESUMPTION-002 — "Thousand Brains transfers intact to multi-agent AI"
+  Item type: PRESUMPTION (unstated — surfaced by inference) · Prior status: MONITOR (MONITOR-007, cycles 1-5)
+  Risk flag: CRITICAL (carried from intake)
+  Evidence: 15a PARTIALLY-SUPPORTED/Moderate; 15b CHALLENGED/Strong. THE SAME SOURCE IS STRONGEST ON BOTH
+    SIDES — the 2026 Neural Computation paper (38(6):845) strengthens the theory and narrows its scope in
+    one move. It defines the system by active sensorimotor interaction: moving sensors over objects and
+    predicting the consequences. C2A2 has no sensors, no movement, no pose. Even Monty is documented as
+    discarding the temporal ordering the theory calls fundamental.
+  What is at risk: every design argument of the form "the cortex does X, therefore C2A2 should do X". It is
+    not recorded which decisions those are, and that is itself the exposure.
+  Requests for Tom:
+    (1) ENUMERATE the TBT principles C2A2 claims to transfer, with the adaptation stated for each. The 2026
+        paper makes this newly precise; half a day of writing.
+    (2) APPLY THE SUBSTITUTION TEST: for each C2A2 decision citing TBT, ask whether it survives replacing
+        "cortical column" with "ensemble member". The ones that do not are the exposed ones — that list IS
+        this item's risk register.
+    (3) DROP THE WORD "INTACT". If the borrowing is analogical, say so. The architecture is not weakened by
+        an honest label; ensemble and blackboard literature give a direct warrant for the same topology
+        without the embodiment gap.
+    (4) REFLEXIVE, and not decorative: this presumption is an INSTANCE of the class ASSUMPTION-013 is about
+        — a cross-tradition transfer justified by structural resemblance that was never checked. C2A2's
+        own first-order tool is the right instrument to turn on its own architecture, and it has never been.
+  Note on scale, per PREMISE-121: (3) is immediate and free. (1) and (2) are the substance. Nothing here is
+    blocked on external evidence.
+  Urgency: MEDIUM-HIGH — this is a request to WRITE DOWN what is being borrowed, NOT a request to stop
+    using Thousand Brains. Recorded explicitly so the flag is not read as more alarming than it is.
+  PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6) · Current status: REVISION-FLAGGED

@@ -125,3 +125,47 @@ SEARCH-FOR-PRESUMPTION-005 (RE-TRIGGER cycle 3):
   Summary: Cycle-3 refresh confirms the prior cycle's finding; the supporting literature base has not materially shifted. Recommendation carries forward unchanged.
   Caveats: Automated weekly refresh is bounded by the LLM's capacity to surface genuinely new external evidence; a human-driven scan or operational evidence from C2A2's own runs is the more sensitive signal for status change.
   Recommendation: refreshed; carry forward prior recommendation
+
+
+---
+
+SEARCH-FOR-PRESUMPTION-005 — CYCLE 6 REFRESH:
+  Date searched: 2026-08-08
+  Original item: PRESUMPTION-005
+  Original statement: "Separating FOR/AGAINST prevents bias without introducing others"
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b->15a,15b->15c->15d] x5 -> [15a,15b->15c] (cycle 6)
+    Original item: PRESUMPTION-005
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      cycle 0..5: prior search/disposition cycles (see blocks above)
+      15d (2026-07-05): re-triggered on monthly low-priority cadence (cycle 5); NOT consumed for 34 days
+      15a (cycle 6, 2026-08-08): re-searched for supporting literature; NEW SOURCES FOUND
+    Current status: NO-SUPPORT-FOUND for the "without introducing others" clause; PARTIALLY-SUPPORTED for the first clause only
+
+  Run context: c2a2-lit-search-pipeline, 2026-08-08. NO NEW 14a/14b BATCH WAS PRESENT — the daily
+    intake queue was empty, so this run drew from the STANDING 15d BACKLOG instead of exiting null.
+    Cohort selected: the five HIGH-priority items of the 2026-07-05 monthly re-trigger cohort that had
+    stood [QUEUED] and unconsumed for 34 days at cycle 5. Selection rule stated: oldest queue date,
+    highest priority, literature search angle. 229 other items remain unsearched (see run report).
+
+  Supporting evidence found: NO-SUPPORT-FOUND
+
+  Sources (new this cycle):
+    1. Same source set as ASSUMPTION-003 this cycle (the two items ask one question; see the DUPLICATION
+       NOTE in the run report). Not re-listed, per citation hygiene.
+    2. "Single LLM Debate, MoLaCE: Mixture of Latent Concept Experts Against Confirmation Bias." OpenReview
+       id=MtdNbFQp5O (accessed 2026-08-08). — Reports a method that "consistently reduces confirmation bias,
+       improves robustness, and MATCHES OR SURPASSES multi-agent debate while requiring only a fraction of
+       the computation." Listed under FOR because it confirms the PROBLEM the separation targets is real and
+       tractable. [UNVERIFIED: authors, venue, acceptance status.]
+
+  Strength of support: Weak
+
+  Summary: 15a finds NO source that supports the second, load-bearing clause of this presumption — 'WITHOUT INTRODUCING OTHERS'. The literature located supports only the first clause (separation targets a real bias). The nearest thing to support for the full claim would be a study measuring the bias profile of a role-separated pipeline against a unified one and finding no NEW bias; no such study was found. This is the third consecutive report in which the supportive direction cannot reach the presumption as stated.
+
+  Caveats: The presumption's two clauses have very different evidential status and prior cycles have not separated them. 15a flags that carrying them as one item makes the weak clause inherit the stronger clause's support.
+
+  Recommendation: NO-SUPPORT-FOUND

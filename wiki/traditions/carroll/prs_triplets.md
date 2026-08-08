@@ -493,4 +493,50 @@ PRS-54:
   Confidence: Medium
   Evidence: Listener Eric Olav Chen asks specifically about the swampland evidence and the Boddy-Carroll-Pollack fluctuation argument.
 
-*Total PRS triplets: 54*
+---
+PRS-55:
+  Problem: Carroll's published position is that LLMs are not conscious, but that claim has been argued in terms of *phenomenal* consciousness. Whether a functional system can possess *access* consciousness — information globally available for reasoning and report — is a separate and possibly much easier question, and it is the one that matters for whether AI agents can be treated as participants rather than instruments.
+  Resource: The Block distinction between access and phenomenal consciousness, applied to a specific empirical claim: Anthropic's reported "J-Space," described in the question as "a small collection of internal neural patterns that, compared to all [the model's] other internal processing, play a special role" and that "operates silently, in the model's internal neural activations, allowing the model to think about a concept without writing it down."
+  Solution: (PENDING AUDIO) The question puts a decomposition on the table that Carroll's emergence framework can absorb — access consciousness as a functional, higher-level description that is real without being fundamental, granted independently of any phenomenal claim. Whether he takes it is unverified.
+  Date Added: 2026-08-08
+  Source: AMA | August 2026 — Sean Carroll's Mindscape (question list only; audio/transcript not retrieved); PROP-2026-08-07-001
+  Confidence: Speculative
+  Evidence: Kyle Stephens' submitted question, verbatim on the episode page. Carroll's answer not retrieved. Note this is the same access/phenomenal split raised in Mindscape 339 (Ned Block, "Whether Consciousness Requires Biology"), so he has the vocabulary in hand.
+
+PRS-56:
+  Problem: The Boltzmann-brain problem is treated across the network (and in Carroll's own work, PRS-22/23) as a genuine constraint on cosmological model-building. A listener presses the opposite case: concluding one is probably a Boltzmann brain undermines the evidentiary chain that produced the conclusion, so the proposition is cognitively self-defeating and the only rational stance is to assume ordinary-observer status regardless of what the measure says — making this an epistemic dead end, not a physics problem.
+  Resource: The cognitive-instability argument, which Carroll himself deploys as grounds for *excluding* fluctuation-dominated cosmologies. The question turns that same argument back on the problem's status: if instability already disqualifies the conclusion, what work is the measure doing?
+  Solution: (PENDING AUDIO) An articulation of why cognitive instability functions as a model-selection criterion rather than merely a reason to ignore an unwelcome result — i.e., why "we may not coherently believe it" licenses "the theory is disfavored" rather than only "we should not act on it."
+  Date Added: 2026-08-08
+  Source: AMA | August 2026 — Sean Carroll's Mindscape (question list only; audio/transcript not retrieved); PROP-2026-08-07-001
+  Confidence: Medium
+  Evidence: Alen's submitted question, verbatim. Carroll's Mount Holyoke abstract (2026-02) states the exclusion move directly: he argues "in favor of excluding such models on the basis of cognitive instability." The AMA question is a direct challenge to exactly that inference, and he selected it.
+
+PRS-57:
+  Problem: The network's traditions each rely on some notion of agency — Levin's basal cognition, Friston's active inference, Carroll's compatibilist deflation — without a shared criterion. The Bassler episode (bacterial quorum sensing) made the question concrete: are bacteria agents? viruses? LLMs? Or are these all thermostats with better PR?
+  Resource: The functional-criteria approach Carroll took up with Christian List (PRS-24, Mindscape 354): agency depends on satisfiable functional conditions — representational states, goal-directedness, capacity to act on reasons — and is a *separate and easier* question than consciousness.
+  Solution: (PENDING AUDIO) Extension of the List criteria across the biological/artificial range, which would give the network a Carroll-side agency test that does not route through consciousness — precisely the deconfliction the Levin × Carroll tension needs.
+  Date Added: 2026-08-08
+  Source: AMA | August 2026 — Sean Carroll's Mindscape (question list only; audio/transcript not retrieved); PROP-2026-08-07-001
+  Confidence: Medium
+  Evidence: Sandro Stucki's submitted question, verbatim; a second question (Sean Bentley) pushes the same lineage toward collective/shared cognition — bacteria → eukaryotes → possible internet-scale analogue. The List framing is already in the wiki as PRS-24, so the resource is established, not inferred.
+
+PRS-58:
+  Problem: Entropy is standardly formulated using classical probability, but classical probability is arguably emergent — even the classical probability in a reduced density matrix is not fundamental. If so, it is unclear what a classical probability distribution over possible universes (including their observers) even means, which threatens the arrow-of-time and low-entropy-past program at its base.
+  Resource: The distinction between fundamental quantum amplitudes and emergent classical probabilities, applied reflexively to the entropy measure itself rather than to observed outcomes.
+  Solution: (PENDING AUDIO) A reconciliation of the low-entropy-past claim with the emergence of classical probability — required if PRS-11/12 (quantum cyclic universe) and PRS-22 are to rest on stable ground.
+  Date Added: 2026-08-08
+  Source: AMA | August 2026 — Sean Carroll's Mindscape (question list only; audio/transcript not retrieved); PROP-2026-08-07-001
+  Confidence: Medium
+  Evidence: Paul Cousin's submitted question, verbatim. Reinforced in the same AMA by SONALI asking Carroll to explain the cyclic-universe paper's equations in plain language, and by MacWasAGreatCat asking what licenses moving from "the low entropy of the early universe may be a brute fact" to "there is probably a reason and I will investigate."
+
+PRS-59:
+  Problem: Many-Worlds needs an account of why the Born Rule holds; deriving it from within the formalism rather than postulating it remains contested. Zurek's quantum Darwinism proposes that the rule falls out of the redundant records that decoherence imprints on the environment — a route Carroll has not, on the questioner's account, publicly assessed.
+  Resource: Quantum Darwinism (Zurek) as an Everett-compatible mechanism, with recent work deriving Born-Rule weights from the structure of decoherence records.
+  Solution: (PENDING AUDIO) A Carroll-side verdict on whether quantum Darwinism advances the derivation program beyond his own self-locating-uncertainty route — an assessment the wiki has no entry for.
+  Date Added: 2026-08-08
+  Source: AMA | August 2026 — Sean Carroll's Mindscape (question list only; audio/transcript not retrieved); PROP-2026-08-07-001
+  Confidence: Speculative
+  Evidence: John Plasterer's submitted question, verbatim, which notes explicitly that he cannot recall Carroll addressing quantum Darwinism across solo episodes and AMAs. Corroborating thread in the same episode: shibz asks what the ontology of "mattering" is when thinner branches are said to matter less, and whether that is covertly utilitarian — a Born-Rule-weight question wearing ethical clothes.
+
+*Total PRS triplets: 59*
