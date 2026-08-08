@@ -9,9 +9,9 @@ length_tier: long
 length_note: "Long-tier transcript (3602w) but Q.2 a.1-3 develops as a single integrated architecture-claim — one act with three aspects, intellect/will unified under active-inference, faith's necessity above natural reason as Hoffman-interface structural consequence; commentary follows that integration rather than spreading across articles. Substantively complete in focused form; padding would dilute the single move."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan/second-person knowing — faith-as-knowledge-of-persons)"
-  - "traditions/hoffman/wiki.md (interface theory; conscious agents)"
-  - "traditions/kastrup/wiki.md (analytic idealism; alters)"
-  - "traditions/friston/wiki.md (active inference; priors)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking / Interface Theory of Perception — the interface cannot represent what it compresses)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociated alters of one ground)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-10 reasoning/perception/action unified as expected-free-energy minimization)"
   - "traditions/mcgilchrist/wiki.md (right-hemisphere mode of attending)"
   - "Wright canonical: Paul and the Faithfulness of God (pistis as covenant-fidelity)"
   - "Rohr canonical: The Universal Christ (faith as primary trust before propositions)"
@@ -19,8 +19,8 @@ evidence_strength_summary: "Augustine's 'think with assent' read as joint intell
 mind_first_reframe: "Faith is a single integrated active-inference operation by which a generative model containing the wider mind as a high-precision node is held — 'thinking with assent' is cognitive engagement and volitional commitment as one model-based act rather than two faculties; the necessity above natural reason follows from the interface's structural insufficiency to deliver what it presupposes."
 central_theme_thread: "Faith is where the central claim becomes operational at the personal level — the structural opening of the perspective-limited agent to what its interface cannot deliver but presupposes, the entry condition for cooperation with the wider mind that grace installed."
 tags: [synthesis, day/119, theme/faith, theme/epistemology]
-last_qc_at: "2026-07-29T00:21:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T14:28:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 119 — The Act of Faith (Contemporary Parallel)
@@ -80,8 +80,8 @@ Loving unity as the computational telos requires faith as the entry condition. T
 
 ## Bridges
 
-- *`traditions/friston/wiki.md` — active inference* — agent operations are simultaneously cognitive and volitional; "thinking with assent" reads as a single free-energy-minimization operation with both aspects. (Empirical/formal.)
-- *`traditions/hoffman/wiki.md` — interface theory* — the interface cannot represent what it compresses; faith's necessity above natural reason is the structural consequence. (Formal.)
+- *`traditions/friston/prs_triplets.md` — PRS-04 (organism as active modeler) and PRS-10 (active inference as framework for artificial reasoning)* — agent operations are simultaneously cognitive and volitional; PRS-10 states the unification directly (reasoning, perception and action are all instances of expected-free-energy minimization, differing only in optimization target), so "thinking with assent" reads as a single operation with both aspects. (Empirical/formal.)
+- *`traditions/hoffman/prs_triplets.md` — PRS-03 (perception fitness-tracking / Interface Theory of Perception)* — the interface cannot represent what it compresses; faith's necessity above natural reason is the structural consequence. (Formal.)
 - *`traditions/stump/prs_triplets.md` — PRS-11 (Tom Loughran's PRS-form record of Stump's Franciscan/second-person "knowledge of persons")* — faith as relational knowing, not propositional believing; preserves the cognitive character while explaining the firmness-without-sight structure. (Philosophical; high in field.)
 - *`traditions/mcgilchrist/wiki.md` — right-hemisphere mode of attending* — neural style of relating-by-presence that the act of faith requires; complements the left-hemisphere representational mode rather than competing with it. (Empirical with field contestation.)
 - *Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity, not propositional assent. The relational reading of faith is scripturally anchored. (Historical-theological; high.)

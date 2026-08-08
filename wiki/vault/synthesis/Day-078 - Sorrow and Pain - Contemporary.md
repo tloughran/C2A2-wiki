@@ -11,15 +11,16 @@ mind_first_reframe: "Under hierarchical active inference, bodily pain is exteroc
 central_theme_thread: "Inward pain exceeds outward because the agent's perspective-limitation is most morally consequential at the apex of its predictive hierarchy; the four species of sorrow (pity, envy, anxiety, torpor) are types of constrained alter-state, and Day 80's remedies are the social and somatic resources by which a narrowed model is re-opened to evidence from outside the present perspective."
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md (active inference; hierarchical generative models; PRS-04, PRS-06)"
-  - "traditions/fredrickson/wiki.md (PRS-04, PRS-11 inflammation; vagal tone)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-11 inflammation and resonance selectivity — West et al. 2025, IL-6 gating of close vs non-close resonance)"
+  - "traditions/fredrickson/wiki.md (PRS-04 vagal tone as community biomarker — this id is wiki.md-local: the prs_triplets.md PRS-04 is a different triplet, 'Relational coherence of conscious realism', so the two files disagree at this number and the file must be named for the citation to resolve)"
   - "traditions/mcgilchrist/wiki.md (right-hemisphere receptive attention)"
   - "traditions/kastrup/wiki.md (dissociation; suffering as constrained alter-state)"
   - "traditions/rohr/ — Falling Upward; contemplative absorption of suffering"
   - "traditions/stump/ — Wandering in Darkness on suffering"
 evidence_strength_summary: "Q.35 a.7 (inward pain exceeds outward) has strong empirical/mathematical support from hierarchical predictive coding — higher-level errors have larger downstream effects. Q.35 a.8 four species of sorrow maps closely onto modern affective taxonomies (compassion, envy, anxiety, anhedonic withdrawal) — empirically supported. Q.34 a.3 on enjoyment of God is the speculative/theological claim — reframed as substrate-recovery under Kastrup."
 tags: [synthesis, day/078, theme/sorrow, theme/inward-pain]
-last_qc_at: "2026-07-30T14:27:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T20:23:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 78 — Sorrow and Pain (Contemporary)
@@ -61,7 +62,7 @@ Q.35 a.7's "inward pain exceeds outward" is the moment where perspective-limitat
 ## Bridges
 
 - **Friston, hierarchical active inference** — bodily pain = exteroceptive PE; sorrow = interoceptive/self-model PE; Q.35 a.7 follows from precision-weighted hierarchical inference; *empirical, mathematically robust*.
-- **Fredrickson PRS-04, PRS-11** — Q.34 a.4 (pleasure as diagnostic of will) gets vagal-tone substrate; inflammation gates resonance radius; *empirical, high confidence*.
+- **PRS-04 in the Fredrickson-tradition wiki (`wiki.md`, vagal tone as community biomarker) + PRS-11 in the Fredrickson-tradition `prs_triplets.md` (inflammation and resonance selectivity)** — Q.34 a.4 (pleasure as diagnostic of will) gets vagal-tone substrate; inflammation gates resonance radius; *empirical, high confidence*. The two ids resolve in different files: `wiki.md` and `prs_triplets.md` disagree at PRS-04, and PRS-11 exists only in the latter, so each is named to its own source.
 - **McGilchrist hemispheric framework** — right-hemispheric receptivity vs. left-hemispheric construction; underlies the real-good / apparent-good distinction; *neurologically suggestive, contested*.
 - **Kastrup analytic idealism + dissociative alters** — Q.35 a.8 four species as constrained alter-states (pity, envy, anxiety, torpor); *speculative metaphysical, internally coherent*.
 - **Stump, *Wandering in Darkness*** — suffering as integrable into second-person love; *theological/philosophical, well-developed within Thomism but not yet at mind-monism*.

@@ -16,8 +16,8 @@ karpathy_wiki_sources:
   - "Wright canonical: the fear of the Lord as accurate orientation to the One who holds life and death (Surprised by Hope); Rohr canonical: false fearlessness as the False Self's denial of its own contingency"
 evidence_strength_summary: "Precision-weighting of threat and the approach/avoidance balance are formal/empirical (Friston, Fredrickson, affective neuroscience); the claim that one *ought* to fear God and the loss of higher goods rests on a theological premise (Wright, Rohr) the formalism cannot supply."
 tags: [synthesis, day/181, theme/threat-calibration, theme/fearlessness, q/126, q/127]
-last_qc_at: "2026-07-30T12:22:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T16:24:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 181 — Fearlessness (Contemporary)
@@ -56,9 +56,9 @@ Conscious agents are individuated by the limits of their perspective — and fea
 
 ## Bridges
 
-- **Friston (precision on threat vs approach)** — fearlessness as under-weighted threat precision; foolhardiness as over-weighted expected-value on a forward policy. *Formal.*
-- **Fredrickson (broaden-and-build + its brake)** — resilience as breadth recovered after accurate appraisal, not breadth that never narrows. *Empirical.*
-- **McGilchrist (LH overconfidence vs RH openness)** — false fearlessness as the abstracted token that cannot see the danger it removed. *Empirical / interpretive.*
+- **`traditions/friston/prs_triplets.md` (PRS-36 — disorder as a failure to weight prediction errors appropriately, type-1 vs type-2 false inference; PRS-28 — aberrant precision-weighting on belief updates)** — fearlessness as under-weighted threat precision; foolhardiness as over-weighted expected-value on a forward policy. *Formal.* The type-1/type-2 framing in PRS-36 is a close structural match for the two-directional mis-calibration this day is mapping.
+- **Fredrickson, *Positivity* / *Love 2.0* (published corpus)** — resilience as breadth recovered after accurate appraisal, not breadth that never narrows. *Empirical.* Cited to the corpus rather than a PRS id: `traditions/fredrickson/prs_triplets.md` carries no mechanism-level broaden-and-build triplet.
+- **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and fragmentation at the expense of right-hemisphere holistic relational engagement)** — false fearlessness as the abstracted token that cannot see the danger it removed. *Empirical / interpretive.*
 - **Wright (fear of the Lord as accurate orientation)** — not-fearing God as the deepest mis-perception; resurrection re-ranks death without abolishing right fear. *Theological.*
 - **Rohr (false fearlessness as denied contingency)** — freedom from fear through admitting finitude, not around it. *Theological.*
 

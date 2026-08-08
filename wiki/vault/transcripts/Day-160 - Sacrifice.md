@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-160 - Sacrifice - Contemporary]]"
 tags: [summa, day/160, pars/2, q/84]
-last_qc_at: "2026-07-19T20:19:53"
+last_qc_at: "2026-08-07T04:26:04"
 last_qc_outcome: "pass"
 ---
 

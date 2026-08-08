@@ -16,8 +16,8 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection makes martyrdom rational (The Resurrection of the Son of God; Surprised by Hope); Rohr canonical: dying before you die, the False Self released"
 evidence_strength_summary: "Threat-precision and repertoire-narrowing are formal/empirical (Friston, Fredrickson); the martyrdom limit case rests on a theological premise (Wright, Rohr) the formalism alone cannot supply."
 tags: [synthesis, day/180, theme/martyrdom, theme/threat-precision, q/124, q/125]
-last_qc_at: "2026-07-30T12:22:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T16:24:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 180 — Timidity (Contemporary)
@@ -56,9 +56,9 @@ Here the synthesis reaches its sharpest edge. Conscious agents are individuated 
 
 ## Bridges
 
-- **Friston (precision / threat-weighting)** — timidity as over-weighted threat precision; martyrdom as the limit case the formalism cannot anchor without a supra-survival attractor. *Formal (with marked limit).*
-- **Fredrickson (broaden-and-build, inverted)** — fear narrows the repertoire; the martyr's retained breadth as resources anchored beyond survival. *Empirical.*
-- **McGilchrist (grasp vs openness)** — fear as left-hemisphere control; the martyr's peace as the grasp released. *Empirical / interpretive.*
+- **`traditions/friston/prs_triplets.md` (PRS-36 — disorder as a failure to weight prediction errors appropriately; PRS-28 — aberrant precision-weighting on belief updates)** — timidity as over-weighted threat precision; martyrdom as the limit case the formalism cannot anchor without a supra-survival attractor. *Formal (with marked limit).*
+- **Fredrickson, *Positivity* / *Love 2.0* (published corpus)** — fear narrows the repertoire; the martyr's retained breadth as resources anchored beyond survival. *Empirical.* Cited to the corpus rather than a PRS id on purpose: `traditions/fredrickson/prs_triplets.md` carries no mechanism-level broaden-and-build triplet — the entries naming it (PRS-19, PRS-27, PRS-28) are program-historiography.
+- **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and manipulation at the expense of right-hemisphere holistic engagement)** — fear as left-hemisphere control; the martyr's peace as the grasp released. *Empirical / interpretive.*
 - **Wright (resurrection makes martyrdom rational)** — death relocated to penultimate; the attractor beyond survival made real. *Theological.*
 - **Rohr (dying before you die)** — the False Self relativized, so physical death finds nothing to govern. *Theological.*
 

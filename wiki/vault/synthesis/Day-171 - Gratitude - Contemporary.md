@@ -12,15 +12,15 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation-within-monism; no agent self-originating)"
   - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 nested agency)"
-  - "traditions/stump/prs_triplets.md (second-personal knowledge of persons; Thomistic interlocutor)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Franciscan knowledge — non-propositional, second-person knowing; Thomistic interlocutor)"
   - "Wright canonical: charis / gift in 'Paul and the Faithfulness of God'; 1 Cor 4:7 'what do you have that you did not receive?'"
   - "Rohr canonical: 'The Universal Christ' / 'Falling Upward' — everything-is-gift as the foundational contemplative stance"
 evidence_strength_summary: "Gratitude's resource-building effects (Fredrickson) are empirical; the active-inference framing of benefit-recognition is formal; the ontological non-self-origination reading (Kastrup/Levin) is speculative/metaphysical; the gift-covenant reading is theological (Wright/Rohr)."
 mind_first_reframe: "Under mind-monism no agent is self-caused, so gratitude becomes the honest accounting of the agent's ontological non-self-origination — accurately modeling and rightly honoring the sources of its received goods."
 central_theme_thread: "Gratitude is the perspective-limited agent's honest recognition that the goods constituting its perspective came from beyond it; self-attribution falsifies its situation and severs it from the cooperative structure within which loving unity is computed."
 tags: [synthesis, day/171, theme/gift-and-debt, theme/non-self-origination, q/106, q/107]
-last_qc_at: "2026-07-28T14:26:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T02:30:22"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 171 — Gratitude (Contemporary)
@@ -63,7 +63,7 @@ Gratitude is the perspective-limited agent's honest recognition that the goods c
 - **Friston PRS-04, PRS-06** (active modeler; multi-agent coherence) — gratitude as accurate causal modeling of benefactors and maintenance of cooperative priors; ingratitude as model mis-calibration. *Formal.*
 - **Kastrup PRS-02** (individuation-within-monism) — no agent self-caused; gratitude as ontological honesty about non-self-origination. *Speculative / metaphysical.*
 - **Levin PRS-04, PRS-08** (substrate-independent, nested agency) — dependence-on-the-larger-collective built into the structure of agency at every scale. *Empirical / formal.*
-- **Stump (second-personal knowledge)** — gratitude as personal knowing of the giver; ingratitude as refusal of second-personal recognition. *Philosophical.*
+- **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person knowing) — gratitude as personal knowing of the giver; ingratitude as refusal of second-personal recognition. *Philosophical.*
 - **Wright (charis; 1 Cor 4:7)** — the Pauline gift-economy: unearned gift creating obligation-of-response, not repayment. *Theological / scriptural.*
 - **Rohr (everything-is-gift)** — gratitude as the foundational contemplative stance of the received self. *Theological / contemplative.*
 

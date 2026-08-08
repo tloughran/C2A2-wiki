@@ -12,11 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (PRS on Wandering in Darkness; second-personal-knowing; willed-affect and affective rectification)"
   - "wiki/traditions/mcgilchrist/wiki.md (hemispheric pathology of affect; closure-of-right-hemispheric-receptivity)"
   - "wiki/traditions/levin/wiki.md (PRS on form-as-bioelectric; affective-rectification as substrate-realignment)"
+  - "VERIFIED ANCHORS (QC 2026-08-07, checked at entry body): traditions/fredrickson/prs_triplets.md PRS-01; traditions/friston/prs_triplets.md PRS-28; traditions/stump/prs_triplets.md PRS-11; traditions/levin/prs_triplets.md PRS-04; traditions/mcgilchrist/prs_triplets.md PRS-01. The wiki.md lines above are a separate id system and do not carry these numbers."
 evidence_strength_summary: "Synthesis written from Summa I-II Q.24-25 + C2A2 framework (originally drafted while the transcript was a fetch-failed placeholder; the transcript was subsequently rebuilt from cached ASR 2026-05-15 and passed fidelity check 2026-07-30). Aquinas's neutral-passions claim (Q.24 a.1) and his rectified-passions-add-to-moral-act claim (Q.24 a.3) are theological-philosophical strong; Fredrickson's positivity-ratio research is empirical with substantial book-length backing; Friston's precision-weighting affect-regulation is mature formalism; Stump's willed-affect analysis is theological-philosophical; the order-of-passions thesis (Q.25 a.2 — love is first) is structurally robust under the active-inference frame."
 mind_first_reframe: "Aquinas's 'passions are neither good nor evil per se' (Q.24 a.1) and 'rectified passions add to the moral act' (Q.24 a.3) preserve under active-inference: affect is information-bearing signal that, when calibrated to the alter's formal-direction-toward-loving-unity, increases the precision and behavioral-bandwidth of moral action; affect-rectification is precision-weighting under formal-prior alignment. The order-of-passions (Q.25 — love first) recovers as the active-inference structural finding that valence-encoding (love/hate) is foundational to the policy-selection over which other affective registers (desire, joy, hope, fear, anger) compute."
 central_theme_thread: "Passions can be aligned with the formal direction toward universal-good (rectified) or misaligned (disordered); the work of moral life under perspective-limitation includes the cultivation of passions, not their suppression. Love-as-first-passion anchors the central-theme: every other affective register in the alter's life is downstream of the alter's primary valence-orientation, and salvation in fear and trembling includes the daily-task work of *retuning the primary valence* toward integrative-substrate-states through second-personal-knowing relationships, contemplative practice, and the substrate-source's grace-as-affective-rectification."
 tags: [synthesis, day/073, theme/passions, theme/moral-rectification, theme/order-of-passions, transcript-fetch-failed]
-last_qc_at: "2026-07-30T06:25:25"
+last_qc_at: "2026-08-07T16:23:33"
 last_qc_outcome: "rewrote"
 ---
 # Day 73 — Contemporary Parallel: *The Moral Status of the Passions and the Order Anchored on Love*
@@ -67,11 +68,11 @@ The central theme says that conscious agents are individuated by perspective-lim
 
 ## Bridges
 
-- **Fredrickson-tradition wiki, PRS on broaden-and-build and positivity-resonance.** *Strong empirical*: rectified-passions-add empirical analog.
-- **Friston-tradition wiki, PRS on precision-weighting and affect-regulation as inference.** *Mature formalism*: neutral-passions-as-information-bearing-signal frame.
-- **Stump-tradition wiki, PRS on willed-affect and second-personal-knowing.** *Theological-philosophical*, book-length: affective rectification structure.
-- **Levin-tradition wiki, on bioelectric-substrate of affect.** *Empirical-suggestive*: substrate-realignment dimension.
-- **McGilchrist-tradition wiki, PRS on hemispheric pathology of affect.** *Strong neuropsychiatric*: disordered-passion closure of right-hemispheric reception.
+- **`traditions/fredrickson/prs_triplets.md` (PRS-01 — cultivation of shared positive emotional experience rebuilding vagal tone and generating upward spirals).** *Strong empirical*: rectified-passions-add empirical analog. Note: the *broaden-and-build* mechanism itself has no mechanism-level triplet in this file — the entries naming it (PRS-19, PRS-27, PRS-28) are program-historiography, so the broaden-and-build half of this bullet is cited to the published corpus, not to a PRS id.
+- **`traditions/friston/prs_triplets.md` (PRS-28 — neuromodulation encodes precision over selected sensory channels; disorder as aberrant precision-weighting on belief updates).** *Mature formalism*: neutral-passions-as-information-bearing-signal frame.
+- **`traditions/stump/prs_triplets.md` (PRS-11 — "Franciscan knowledge," non-propositional second-person knowing, applied to narrative).** *Theological-philosophical*, book-length: affective rectification structure.
+- **`traditions/levin/prs_triplets.md` (PRS-04 — bioelectric computation as substrate-independent cognition; basal cognition unified across cell, tissue, organ, brain).** *Empirical-suggestive*: substrate-realignment dimension. The extension from goal-directed information processing to *affective* regime is this commentary's move, not the triplet's.
+- **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and fragmentation at the expense of right-hemisphere holistic relational engagement).** *Strong neuropsychiatric*: disordered-passion closure of right-hemispheric reception.
 - **Aquinas, *Summa* I-II Q.24-25; Aristotle, *Nicomachean Ethics* Books II-III on virtue and passion.**
 - **Wright on the rectified affective life of the resurrection-people.** *Paul and the Faithfulness of God*: agape as the formally-rectified primary valence.
 - **Rohr on contemplative practice as affective rectification.** *Falling Upward*: second-half-of-life retuning of primary valence toward integrative-non-dual-reception.

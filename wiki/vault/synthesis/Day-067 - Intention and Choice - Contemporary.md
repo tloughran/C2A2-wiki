@@ -6,18 +6,18 @@ length_target_words: 1500
 length_actual_words: 1401
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/friston/wiki.md (PRS on hierarchical generative models; expected free energy; practical syllogism)"
-  - "wiki/traditions/hoffman/wiki.md (PRS on perception under interface; single-act-multi-object structure)"
-  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric integration; left-hemispheric analysis)"
-  - "wiki/traditions/stump/wiki.md (will-as-faculty; second-personal-knowing in choice)"
-  - "wiki/traditions/levin/wiki.md (multi-scale agency; instinctual tending without representing)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04, PRS-10 — organism as active modeller; reasoning, perception and action unified under expected-free-energy minimization)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 — Interface Theory of Perception; single-act-multi-object structure)"
+  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric integration; left-hemispheric analysis — no numbered id; see Bridges note)"
+  - "wiki/traditions/stump/wiki.md (will-as-faculty; second-personal-knowing in choice — no numbered id; see Bridges note)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-09 — principled framework for cognitive attribution across scales)"
 evidence_strength_summary: "Friston on practical-syllogism-as-hierarchical-prior-conclusion is mature formalism; Levin on instinctual tending without representing is empirically robust; Aquinas's terminus-of-movement and single-act-with-distinct-objects analyses preserve cleanly under contemporary frames"
 length_ratio_to_target: 0.934
 length_note: "Q.12–Q.13 (11 articles) treated thematically as the hierarchical-prior structure of practical reasoning. The medieval bridge-act-of-intention plus practical-syllogism-conclusion-of-choice maps tightly onto active-inference's hierarchical generative models, so the bridging prose stays compact while preserving every keystone move (Q.12 a.4 single-act-multi-object, Q.13 a.3 conclusions-become-principles, Q.13 a.6 freedom-only-among-particulars)."
 mind_first_reframe: "Intention is the alter's hierarchical-prior commitment to a terminal-or-midpoint terminus carrying the as-ordered-toward-the-perfect-good formal character; choice is the conclusion of practical inference at the bottom of the hierarchical chain — Aquinas's medieval architecture maps onto active inference's hierarchical generative models without remainder."
 central_theme_thread: "Salvation in fear and trembling is the practical-rationality computation under perspective-limitation: the alter is bound at the terminal-prior of the perfect-good and free at the level of mean-policies, and this iterated computation under tradition-bound rationality and the substrate-network's pedagogy is the daily-task work of becoming."
-last_qc_at: "2026-07-30T06:25:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T18:35:10"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/067, theme/intention, theme/choice, theme/practical-syllogism]
 ---
 # Day 67 — Contemporary Parallel: *Intention as Hierarchical Terminus and Choice as the Conclusion of Practical Inference*
@@ -68,12 +68,12 @@ Wright on covenanted-community as the locus where mean-policy-computation is sha
 
 ## Bridges
 
-- **Friston-tradition wiki, PRS on hierarchical generative models and expected-free-energy minimization.** Formalism for hierarchical-prior practical syllogism. *Mature formal frame.*
-- **Hoffman-tradition wiki, PRS on interface integration of multi-channel substrate input.** Single-act-multi-object structural primary. *Philosophical-mathematical.*
-- **McGilchrist-tradition wiki, PRS on hemispheric integration vs. analysis.** Right-end-gestalt and left-mean-analysis. *Strong neuropsychiatric.*
-- **Stump-tradition wiki, PRS on will-as-faculty-of-the-good and tradition-bound rationality.** Theological-philosophical resource for volitional structure. *Book-length argument.*
-- **Levin-tradition wiki, PRS on diverse intelligences and instinctual tending.** Empirical resource for tending-without-representing at biological scales. *Strong empirical.*
-- **Hawkins-tradition wiki, on goal-representation in HTM.** Cortical-architecture for hierarchical priors. *Strong empirical.*
+- **PRS-04 and PRS-10 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — the organism as a continuous hypothesis-testing system, and the formal unification of reasoning with perception and action as instances of expected-free-energy minimization differing only in optimization target. PRS-10 states this commentary's own thesis almost directly: the practical syllogism is not a separate faculty but policy selection at the bottom of the same hierarchical chain. *Mature formal frame.*
+- **PRS-03 in the Hoffman-tradition wiki** (`wiki/traditions/hoffman/prs_triplets.md`) — the Interface Theory of Perception, on which perception is an adaptive interface rather than a truth-mirror. Structural primary for the single-act-multi-object reading of Q.12 a.4. *Philosophical-mathematical.*
+- **McGilchrist-tradition wiki, on hemispheric integration vs. analysis.** Right-end-gestalt and left-mean-analysis. *Strong neuropsychiatric.* **Deliberately left without a numbered id** — ambiguous across PRS-01, PRS-02 and PRS-05.
+- **Stump-tradition wiki, on will-as-faculty-of-the-good.** Theological-philosophical resource for volitional structure. *Book-length argument.* **Left without a numbered id, and the tradition-bound-rationality half of this bullet is deliberately not anchored under Stump:** the tradition-crossing and Synergistic-Coil methodology triplets were re-homed out of the Stump wiki to the Loughran tradition (PRS-08 and PRS-09) in June 2026, so citing them here would reintroduce a retired attribution.
+- **PRS-09 in the Levin-tradition wiki** (`wiki/traditions/levin/prs_triplets.md`) — the Levin & Resnik "diverse intelligence" framework for attributing goal-directedness at any scale on testable rather than metaphysical grounds. Empirical resource for tending-without-representing. *Strong empirical.*
+- **Hawkins-tradition wiki, on goal-representation in HTM.** Cortical-architecture for hierarchical priors. *Strong empirical.* **Left unanchored:** the HTM gloss has no matching numbered Hawkins triplet, a recurring trap in this vault rather than a defect peculiar to this day.
 - **Wright, *Paul and the Faithfulness of God*.** Covenant-as-tradition shaping practical reasoning. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*.** Contemplative-prayer as alignment-of-computation. *Contemplative theological.*
 - **MacIntyre, *After Virtue*.** Tradition-bound rationality as resource for practical-syllogism. *Philosophical primary.*

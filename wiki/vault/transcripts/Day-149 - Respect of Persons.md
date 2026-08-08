@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-149 - Respect of Persons - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/149, pars/2, q/62-63]
-last_qc_at: "2026-07-30T16:21:51"
+last_qc_at: "2026-08-07T20:23:30"
 last_qc_outcome: "pass"
 ---
 

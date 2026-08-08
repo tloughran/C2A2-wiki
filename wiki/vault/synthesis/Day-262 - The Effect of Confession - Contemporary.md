@@ -8,15 +8,15 @@ length_tier: short
 length_ratio_to_target: 0.49
 length_note: "Compact by design: Suppl. Q.9–10 turns on the single threshold-sufficiency-and-whole-effect motif (attrition suffices; pardon whole, even forgotten sins loosed); the one-to-one parallel is complete without padding. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (threshold-crossing / attrition as minimal sufficient evidence; entirety as complete error-representation)"
-  - "traditions/rohr/wiki.md (Universal Christ; whole pardon meeting the whole disclosure)"
-  - "traditions/wright (forgiveness as real re-inclusion; no half-pardon)"
+  - "traditions/friston/prs_triplets.md (PRS-01 — free-energy minimization as prediction-error representation; the threshold-crossing gloss is left unanchored, see Bridges note)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 — the Universal Christ; the divine pattern already present in all creation)"
+  - "traditions/wright/prs_triplets.md (PRS-05 — salvation as incorporation into the people among whom God comes home)"
 evidence_strength_summary: "Attrition-suffices as threshold-crossing is formal (Friston); entirety/whole-effect is formal-analogical; the pardon's reality and the loosing of forgotten sins are theological (Wright/Rohr)."
 mind_first_reframe: "Attrition suffices because a genuine minimal contrition crosses the threshold into the changed state (Friston) and entirety is complete error-representation (Friston), while the pardon is whole because grace meets the entire honest disclosure with more than its measure (Rohr) — even loosing what the penitent could not represent."
 central_theme_thread: "Paired with Day 260: the whole accepts even an imperfect, perspective-limited turn and gives a whole pardon in return, reaching even the agent's blind spots (forgotten sins loosed) — 'salvation as inclusion' gracious both at its lower bound and beyond the agent's self-knowledge."
 tags: [synthesis, day/262, theme/whole-pardon-whole-disclosure]
-last_qc_at: "2026-07-28T20:23:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T18:35:31"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 262 — The Effect of Confession (Contemporary Parallel)
@@ -47,10 +47,10 @@ The motif appears at its most reassuring, paired with Day 260. The whole accepts
 
 ## Bridges
 
-- **Friston (threshold-crossing; entirety as complete error-representation)** — *formal, well-developed.* Attrition crosses the threshold; whole disclosure conditions whole repair.
-- **Rohr (Universal Christ; whole pardon exceeding the act)** — *theological / contemplative.* Why the effect is whole and covers the unrepresented.
-- **Wright (no half-pardon; real re-inclusion)** — *scriptural, high within method.* The content of the whole forgiveness.
-- **Stump** — the Thomistic reading of attrition and entirety, receiving the threshold-and-completeness reframe.
+- **PRS-01 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — the Free Energy Principle: living systems minimize variational free energy, a quantity measuring prediction error. *Formal, well-developed.* This is the home for the *entirety* half of the argument — whole disclosure conditions whole repair because a partial disclosure leaves residual divergence unrepresented. **The threshold-crossing half is deliberately left unanchored:** no numbered Friston triplet carries an evidence-accumulation-threshold claim, so anchoring it would manufacture a citation the wiki does not support.
+- **PRS-03 in the Rohr-tradition wiki** (`wiki/traditions/rohr/prs_triplets.md`) — the Universal Christ: the divine pattern present in all of creation rather than confined to any single tradition or institutional expression. *Theological / contemplative.* The triplet grounds the *already-present* half of the claim; that grace also *exceeds* the penitent's act is this commentary's theological extension and is marked as such.
+- **PRS-05 in the Wright-tradition wiki** (`wiki/traditions/wright/prs_triplets.md`) — salvation as incorporation into the people among whom God comes home, not the relocation of souls. *Scriptural, high within method.* The content of the whole forgiveness: re-inclusion is a restored relation, which is why a half-pardon is not a smaller version of the same thing but a different kind of thing.
+- **Stump** — the Thomistic reading of attrition and entirety, receiving the threshold-and-completeness reframe. Left as a bare corpus citation: the bullet names a receiving posture rather than a claim, so there is no triplet for it to anchor to.
 
 ## Where this leaves us
 

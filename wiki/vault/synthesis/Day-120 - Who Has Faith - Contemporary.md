@@ -8,7 +8,7 @@ length_ratio_to_target: 0.82
 length_tier: medium
 length_note: "Focused treatment of Q.4-5 around the lifeless/living asymmetry and the strong hylomorphic 'charity as form of faith' claim; the CROSS-008 (Levin final-causality) empirical re-grounding of form licenses the strong reading, and the load-bearing move develops compactly without sentimental gloss — substantively complete in focused form."
 karpathy_wiki_sources:
-  - "traditions/stump/wiki.md (charity as second-person knowing; PRS-05 union)"
+  - "traditions/stump/prs_triplets.md (PRS-05 union as final cause / highest intrinsic good; PRS-11 non-propositional second-person knowing) — both ids verified at the body in prs_triplets.md, which is the file they belong to; stump/wiki.md is a separate id system and does not carry these numbers"
   - "traditions/fredrickson/wiki.md (positivity resonance; Love 2.0)"
   - "traditions/levin/wiki.md (form as causally efficacious; CROSS-008)"
   - "traditions/hoffman/wiki.md (interface theory)"
@@ -20,8 +20,8 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-07-29T00:21:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T16:24:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 120 — Who Has Faith (Contemporary Parallel)

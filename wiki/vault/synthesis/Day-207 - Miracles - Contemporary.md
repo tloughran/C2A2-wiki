@@ -20,8 +20,8 @@ evidence_strength_summary: "Genuine miracle = authority over the generative rule
 mind_first_reframe: "A genuine sign is an authorized change at the generative source the world-interface renders — only the 'legislator' can rewrite the rule — distinct from a within-the-rules wonder or a tampering with the rendering; and a life takes exhaustively two shapes because intellect has two ends, participatory contemplation and inferential action under resources."
 central_theme_thread: "Power over the interface ('faith to move mountains') is not inclusion in the loving whole — 'without charity, nothing,' and the wonder-worker can hear 'I never knew you' — so the active life is the resource-bounded computation 'in fear and trembling' toward the contemplative vision of the whole that every limited perspective works toward."
 tags: [synthesis, day/207, theme/sign-and-the-two-lives]
-last_qc_at: "2026-07-28T16:23:01"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-07T10:30:00"
+last_qc_outcome: "pass"
 ---
 
 # Day 207 — Miracles (Contemporary Parallel)

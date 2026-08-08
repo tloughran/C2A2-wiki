@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection hope as the ground of courage (Surprised by Hope; The Resurrection of the Son of God); Rohr canonical: necessary suffering, dying before you die"
 evidence_strength_summary: "Resilience and undo-effect are empirical (Fredrickson); long-horizon attractor vs immediate gradient is formal (Friston); courage-as-standing is empirical/interpretive (McGilchrist); resurrection-grounded endurance is theological (Wright, Rohr)."
 tags: [synthesis, day/179, theme/fortitude, theme/long-horizon-attractor, q/122, q/123]
-last_qc_at: "2026-07-28T16:22:42"
+last_qc_at: "2026-08-07T10:30:12"
 last_qc_outcome: "pass"
 ---
 

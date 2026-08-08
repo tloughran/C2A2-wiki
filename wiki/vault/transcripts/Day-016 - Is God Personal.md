@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-016 - Is God Personal - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-30T11:50:24"
+last_qc_at: "2026-08-07T12:25:51"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/016, pars/I, q/29, q/30, theme/personhood, theme/plurality, theme/trinity]

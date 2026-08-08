@@ -15,7 +15,7 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-190 - Beauty and Disgrace - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-16T16:19:26"
+last_qc_at: "2026-08-07T08:23:25"
 last_qc_outcome: "pass"
 tags: [summa, day/190, pars/II, q/144]
 ---

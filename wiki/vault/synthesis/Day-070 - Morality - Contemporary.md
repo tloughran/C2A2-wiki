@@ -6,19 +6,22 @@ length_target_words: 1500
 length_actual_words: 2171
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (PRS on willed evil; second-personal knowing; tradition-bound rationality)"
-  - "wiki/traditions/friston/wiki.md (PRS on prior-alignment; conformity-to-substrate-priors)"
-  - "wiki/traditions/levin/wiki.md (PRS on form-as-bioelectric-pattern; privation as deficient morphogenesis)"
-  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account of moral judgment)"
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; relational-as-formal-good)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-11 — Franciscan second-person knowledge; the willed-evil gloss is left unanchored, see Bridges note)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 — organism as active modeller; priors under continuous hypothesis-testing)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-17 — bioelectric pattern memory encoding target morphology)"
+  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account of moral judgment — no numbered id; see Bridges note)"
+  - "wiki/traditions/fredrickson/prs_triplets.md (PRS-02, PRS-03 — positivity resonance as objective coupling; scale-bridging into collective agency)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 — Interface Theory of Perception; erring apprehension)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 — analytic idealism; consciousness as ontological primitive)"
+  - "wiki/master/cross_program_index.md (CROSS-005, CROSS-008)"
 evidence_strength_summary: "Aquinas's privation-theory of evil is metaphysically firm; Stump's willed-evil and erring-conscience analyses are theological-philosophical strong; Friston's prior-alignment is mature formalism; the formal/material conformity-to-divine-will keystone (Q.19 a.10) is the central-theme load-bearing argument"
 length_ratio_to_target: 1.447
 length_note: "Q.18 (11 articles) + Q.19 (10 articles) = 21 articles treated as the moral-evaluation arc proper, with Q.19 a.10 the central-theme load-bearing keystone; the two dense questions plus keystone status justify running ~45% over short-tier target (acceptable-variation per QC.md: multi-question dense day + substantive-priority keystone), preserving every keystone move on the central theme rather than trimming substantive Aquinas-to-contemporary linkage to hit a number."
 mind_first_reframe: "Q.19 a.10's formal/material distinction — the alter wills the universal good *formally* and the particular good *materially* — maps onto active-inference's terminal-prior-vs-instrumental-prior distinction (Friston); privation-theory of evil (Q.18 a.1) preserves under Levin's form-as-bioelectric-pattern as deficient morphogenesis; erring-conscience (Q.19 a.5-6) is the perspective-limitation made operational, with second-personal-knowing (Stump) the structural mode of correction across alters of differing apprehension."
 central_theme_thread: "Today is the central-theme load-bearing keystone day: each conscious agent is individuated by perspective-limitation while constitutively directed-formally toward the universal good (the substrate-source's integrative dynamics), and salvation in fear and trembling is the daily-task work of cultivating apprehension under second-person care, maintaining formal alignment when material judgment is partial or erring, and holding the formal-unity of all alters' direction-toward-the-universal-good even when material disagreement persists — the Dominican-fasting example (Q.19 a.10) is the medieval articulation of exactly this individuation-by-perspective-with-formal-unity structure."
 tags: [synthesis, day/070, theme/moral-evaluation, theme/conformity-to-divine-will, theme/erring-conscience, central-theme-load-bearing]
-last_qc_at: "2026-07-30T06:25:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T18:35:30"
+last_qc_outcome: "rewrote"
 ---
 # Day 70 — Contemporary Parallel: *Moral Evaluation, Erring Conscience, and Formal-vs-Material Conformity to the Substrate-Source*
 
@@ -76,18 +79,19 @@ The synthesis-in-progress that this entire project is exploring receives its sha
 
 ## Bridges
 
-- **Stump-tradition wiki, PRS on willed evil, erring conscience, and second-personal-knowing.** Theological-philosophical resource for the binding-but-correctable structure of conscience. *Book-length argument; substantial.*
-- **Friston-tradition wiki, PRS on prior-alignment and terminal-vs-instrumental.** Active-inference formalism for formal/material conformity-to-substrate-priors. *Mature formalism.*
-- **Levin-tradition wiki, PRS on form-as-bioelectric-pattern and morphogenetic teleology.** Empirical anchor for privation-theory of evil at biological scale. *Strong empirical.*
-- **McGilchrist-tradition wiki, PRS on hemispheric moral judgment.** Bi-hemispheric integration at the moral-judgment level. *Strong neuropsychiatric.*
-- **Fredrickson-tradition wiki, PRS on positivity-resonance and relational good.** Empirical anchor for the relational character of the formal universal good. *Strong empirical.*
-- **Hoffman-tradition wiki, on perception-under-interface and erring-apprehension.** *Philosophical-mathematical.*
-- **Kastrup-tradition wiki, on substrate-source as universal-good locus.** Mind-monist anchor for formal universal good. *Philosophical-conceptual.*
+- **PRS-11 in the Stump-tradition wiki** (`wiki/traditions/stump/prs_triplets.md`) — Franciscan knowledge, non-propositional and second-person, applied systematically to narrative. Theological-philosophical resource for the binding-but-correctable structure of conscience: the outside agent who loves the alter and presents the diagnostic is knowing it second-personally. *Book-length argument; substantial.* **The willed-evil half of this bullet is deliberately left unanchored** — no numbered Stump triplet carries a willed-evil claim, and the id that reads closest by title (PRS-04, *Final causality and modern biology*) is about the teleology ban in biology, not about evil.
+- **PRS-04 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — the living system as an active agent that generates predictions, tests them against sensory input, and updates its models. Active-inference formalism for the formal/material distinction: the terminal prior is what must be conformed, the instrumental priors are perspective-specific. *Mature formalism.* The terminal-vs-instrumental split as applied to Q.19 a.10 is this commentary's extension of the triplet, not the triplet's own claim.
+- **PRS-17 in the Levin-tradition wiki** (`wiki/traditions/levin/prs_triplets.md`) — bioelectric pattern memory, spatial voltage distributions persisting across cell divisions and encoding *target morphology*, treated as the cognitive glue constituting a collective knower. This is the precise empirical anchor privation-theory needs: a target form against which absence can be measured. *Strong empirical.*
+- **McGilchrist-tradition wiki, on hemispheric moral judgment.** Bi-hemispheric integration at the moral-judgment level. *Strong neuropsychiatric.* **Deliberately left without a numbered id** — ambiguous across PRS-01, PRS-02 and PRS-05.
+- **PRS-02 and PRS-03 in the Fredrickson-tradition wiki** (`wiki/traditions/fredrickson/prs_triplets.md`) — positivity resonance as an objective, biologically-grounded coupling mechanism among conscious agents, offering an empirical substrate for metaphysical claims about love's centrality (PRS-02); and that same resonance as the coupling that scales from dyad to collective agency (PRS-03). Empirical anchor for the relational character of the formal universal good, and for the formal-unity-across-alters claim this day rests on. *Strong empirical.*
+- **PRS-03 in the Hoffman-tradition wiki** (`wiki/traditions/hoffman/prs_triplets.md`) — the Interface Theory of Perception: perception is an adaptive interface, not a truth-mirror. The structural warrant for taking erring apprehension as the normal case rather than the exceptional one. *Philosophical-mathematical.*
+- **PRS-01 in the Kastrup-tradition wiki** (`wiki/traditions/kastrup/prs_triplets.md`) — analytic idealism's inverted ontology, consciousness primary and matter its expression. Mind-monist anchor for the substrate-source as the locus of the formal universal good. *Philosophical-conceptual.*
 - **Wright, *Paul and the Faithfulness of God*; Romans 1-2 (the conscience structure); Romans 12 (renewing of the mind).** Scriptural-historical resource for conscience-and-formal-alignment. *Scriptural-historical, substantial.*
 - **Rohr, *The Universal Christ*; *Falling Upward*; *Immortal Diamond*.** Contemplative theological resource for formal-alignment-through-material-perspective. *Contemplative theological, substantial.*
 - **MacIntyre, *After Virtue*; *Whose Justice? Which Rationality?*; *Three Rival Versions of Moral Enquiry*.** Tradition-bound rationality as the operational resource for formal/material distinction. *Philosophical primary, substantial.*
 - **Aristotle, *Nicomachean Ethics*; Augustine, *De libero arbitrio*; Aquinas, *Summa* I-II Q.18-19; *De Veritate* on conscience.**
-- **CROSS-005 in master cross-program index — love as fundamental category.** Cross-tradition convergence on the formal universal good's relational character.
+- **CROSS-005 in master cross-program index** (`wiki/master/cross_program_index.md`) — *Is love/positivity resonance/union a fundamental category?* (Fredrickson, Stump, Kastrup). Cross-tradition convergence on the formal universal good's relational character.
+- **CROSS-008 in master cross-program index** (`wiki/master/cross_program_index.md`) — *Does Thomistic final causality provide the philosophical framework that Levin's morphogenetic teleology requires?* (Levin, Stump). The registered cross-program entry for exactly the move this day makes in reading privation against a bioelectric target form.
 
 ## Where this leaves us
 

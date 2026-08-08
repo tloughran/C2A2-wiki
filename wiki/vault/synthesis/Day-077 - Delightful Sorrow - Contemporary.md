@@ -9,17 +9,18 @@ length_tier: short
 mind_first_reframe: "Under predictive-processing accounts (Friston), valence is prediction-error gain over a generative model that always contains counterfactuals, so sorrow and delight co-arise within a single inference; under Kastrup's idealism, grief is alter-loosening that admits more of mind-at-large — the same loosening admits both the loss and the wider field of which the loss is part."
 central_theme_thread: "Q.32 a.4's delightful sorrow is the affective signature of an agent whose generative model holds both the present privation and the larger good in which it is contained; the path from the loss-only agent to the loss-plus-larger-good agent is the perspective-widening — through contemplation, friendship, positivity resonance — that the project tracks as the computational work of loving unity."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-03, PRS-05, PRS-08, PRS-09)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-08 high-quality listening as resonance enabler; PRS-09 weak-tie intellectual humility; PRS-10 weak-tie community as loneliness solution; PRS-03 scale-bridging in agent coupling — PRS-03 agrees across both files)"
+  - "traditions/fredrickson/wiki.md (PRS-05 broadened attention and tradition learning — the broaden-and-build gloss resolves ONLY against wiki.md: prs_triplets.md PRS-05 is a different triplet, 'Embodiment of abstract ontology', and prs_triplets names broaden-and-build only at PRS-19/27/28, all of which are programme historiography rather than the mechanism)"
   - "traditions/friston/wiki.md (active inference; epistemic vs pragmatic value; collective FEP)"
   - "traditions/mcgilchrist/wiki.md (attention as evidence-weighting; precision)"
   - "traditions/kastrup/wiki.md (alters, dissociation, re-integration via love)"
   - "traditions/rohr/ — Falling Upward; second-half-of-life integration of loss"
   - "traditions/wright/ — Romans 8 on suffering and hope; eschatology already-not-yet"
-  - "master/cross_program_index.md CROSS-005, CROSS-006, CROSS-007"
+  - "master/cross_program_index.md CROSS-005 (is love/positivity resonance/union a fundamental category? — Fredrickson, Stump, Kastrup)"
 evidence_strength_summary: "Q.32 a.4's claim that sorrow is the accidental cause of pleasure is empirically well-grounded — bittersweet emotional research (Frijda, Larsen) confirms mixed valence; Q.32 a.5 on praise/honor maps onto Fredrickson's high-quality listening evidence (PRS-08, high confidence); Q.33 a.3 on pleasure hindering reason is empirically supported (attentional narrowing). Theological move on universal participation in being is speculative-but-coherent."
 tags: [synthesis, day/077, theme/delightful-sorrow, theme/mixed-valence]
-last_qc_at: "2026-07-30T14:27:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T20:23:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 77 — Delightful Sorrow (Contemporary)

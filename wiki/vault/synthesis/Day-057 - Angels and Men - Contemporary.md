@@ -8,17 +8,17 @@ length_ratio_to_target: 0.89
 length_note: "Under short-tier ±10% (1340 vs 1500, ratio 0.89); within ±25%. Q.111 + Q.112 spans 8 articles on substrate-network → embodied-creature channel architecture; the synthesis stays disciplined to the four channels Aquinas's gradient names (intellect, will-indirectly, imagination, body) with explicit reservation that will-orientation does not transmit. Concise rather than padded — extending further would require speculative angelological superstructure not warranted by the C2A2 wiki contact. Within the substantive-integrity-trumps-word-count policy clause."
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/hoffman/wiki.md (PRS on conscious-agent networks; interface theory)"
-  - "wiki/traditions/friston/wiki.md (multi-agent active inference; shared generative models)"
-  - "wiki/traditions/levin/wiki.md (multi-scale agency; bioelectric pattern)"
-  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric attention; receptive vs. grasping mode)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism; mind-at-large interiority)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
+  - "wiki/traditions/levin/wiki.md (multi-scale agency; bioelectric pattern — no determinate prs_triplets id; left unanchored)"
+  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric attention; receptive vs. grasping mode — no determinate prs_triplets id; left unanchored)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 dissociation / alters within mind-at-large)"
 evidence_strength_summary: "Hoffman/Friston formal frameworks mature; angelic action on embodied creatures is theologically construed; the contemporary frame is structural-analogical"
 mind_first_reframe: "Angelic action on the embodied creature becomes substrate-network influence on the alter's apprehensive, affective, and bodily channels; Q.111's careful gradient (yes for intellect/imagination/body, no directly for will) preserves under interface theory, multi-agent active inference, multi-scale agency, and McGilchrist's hemispheric account, while reserving will-orientation strictly to the substrate-source itself."
 central_theme_thread: "The day reinforces the constitutive character of the alter's perspective-limitation — substrate-network influence reaches the alter through the apprehensive interface and the affective landscape, but the will-orientation that names the alter's working-out of salvation remains the alter's own; the mission-of-angels register adds that substrate-network agents are sent rather than autogenously projected, a contour of the substrate's care for embodied creatures under their limitation."
 tags: [synthesis, day/057, theme/multi-agent-influence, theme/imagination]
-last_qc_at: "2026-07-29T20:20:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T10:29:50"
+last_qc_outcome: "rewrote"
 ---
 # Day 57 — Contemporary Parallel: *Angelic Action on Man as Substrate-Network Influence on the Embodied Alter*
 
@@ -66,11 +66,11 @@ The mission-of-angels register (Q.112) extends this: substrate-network agents ar
 
 ## Bridges
 
-- **Hoffman-tradition wiki, PRS on interface theory.** Sensory-interface compression of substrate-pattern-information; substrate-network influence must modulate the interface. *Philosophical-mathematical primary.*
-- **Friston-tradition wiki, PRS on multi-agent active inference.** Prior-modulation through shared generative models. *Mature formal frame.*
+- **PRS-03 in the Hoffman-tradition wiki** (`traditions/hoffman/prs_triplets.md` — Interface Theory of Perception; fitness-payoff functions replace truth-tracking). Sensory-interface compression of substrate-pattern-information; substrate-network influence must modulate the interface. *Philosophical-mathematical primary.*
+- **PRS-06 in the Friston-tradition wiki** (`traditions/friston/prs_triplets.md` — multi-agent coherence via mutual modeling; shared attractor basins). Prior-modulation through shared generative models. *Mature formal frame.*
 - **Levin-tradition wiki, PRS on bioelectric-pattern-level multi-scale agency.** Body-and-physiology channel. *Strong empirical at biological mid-scale.*
 - **McGilchrist-tradition wiki, PRS on receptive vs. grasping attention.** Channel-of-receptivity for substrate-network influence. *Strong neuropsychiatric evidence.*
-- **Kastrup-tradition wiki, mind-at-large interiority.** Substrate is closer than self. *Philosophical-conceptual.*
+- **PRS-02 in the Kastrup-tradition wiki** (`traditions/kastrup/prs_triplets.md` — dissociation: one undivided consciousness with multiple dissociated points of view; the alter-vocabulary this commentary uses throughout). Substrate is closer than self. *Philosophical-conceptual.*
 - **Wright, *Surprised by Hope*; *Paul and the Faithfulness of God*.** Pneumatology and substrate-mediated formation. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** Sending-and-presence as the cosmic-Christ pattern at the substrate-network scale. *Contemplative theological.*
 - **CROSS in master cross-program index — substrate-network-influence channels.** *Cross-tradition convergence pattern.*

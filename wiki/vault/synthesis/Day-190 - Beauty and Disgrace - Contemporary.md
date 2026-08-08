@@ -9,16 +9,16 @@ length_tier: short
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md (positivity resonance; PRS-06 love as universal phenomenon)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act; intersubjective attention)"
-  - "traditions/hoffman/wiki.md (interface theory; clarity of interface to the whole)"
-  - "traditions/kastrup/wiki.md (dissociation; transparency of the alter to mind-at-large)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; interface as fitness-tuned rather than truth-tracking)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; the dissociated alter)"
   - "traditions/wright/wiki.md (image-bearing, glory); traditions/rohr/wiki.md (the Universal Christ; clarity)"
   - "master/cross_program_index.md (CROSS-003 attention; CROSS-005 love as fundamental)"
 evidence_strength_summary: "Shamefacedness as social-attestation self-regulation = empirical/medium-high (positivity resonance, social feedback); beauty-as-clarity ↔ interface-transparency = metaphysical/speculative; onestum = virtue = beauty = philosophical-theological."
 mind_first_reframe: "Shamefacedness is the social-attestation arm of self-regulation — an intersubjective coupling steering the agent away from rupturing its load-bearing relationships — and onestum is clarity: an individuated perspective become transparent to the whole it expresses, so that 'the idea of man' shows through."
 central_theme_thread: "Onestum is the in-via face of the central claim that when a perspective's limitations are cleared the simple whole is seen — spiritual beauty is a perspective on its way to transparency, and shame is the early social signal that keeps that clearing on course."
 tags: [synthesis, day/190, theme/clarity-and-the-whole]
-last_qc_at: "2026-07-30T02:28:36"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T08:23:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 190 — Beauty & Disgrace (Contemporary Parallel)
@@ -55,8 +55,8 @@ This article gives the project's metaphysics its aesthetic face. The central cla
 
 - **Shamefacedness ↔ social-attestation self-regulation** — the Fredrickson-tradition wiki (positivity resonance, PRS-06); CROSS-005. *Why:* shame is the reversed-sign pole of the intersubjective coupling that binds agents. Evidence: **empirical, medium-high** (mapping to Aquinas is interpretive).
 - **Attention as ontological act ↔ being-seen as constitutive** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* another's regard partly *discloses* the self, so disgrace is a real modification, not mere information. Evidence: **phenomenological, medium**.
-- **Beauty-as-clarity ↔ interface transparency** — the Hoffman-tradition wiki (interface theory). *Why:* onestum is a perspective tuned for clarity rather than fitness-distortion — transparent to the whole. Evidence: **metaphysical, speculative**.
-- **Spiritual beauty ↔ the diaphanous alter** — the Kastrup-tradition wiki (dissociation/idealism). *Why:* gives beauty-as-clarity an ontology — the individuated alter letting mind-at-large show through. Evidence: **metaphysical, speculative**.
+- **Beauty-as-clarity ↔ interface transparency** — the Hoffman-tradition wiki, PRS-03 (perception fitness-tracking). *Why:* onestum is a perspective tuned for clarity rather than fitness-distortion — transparent to the whole. Evidence: **metaphysical, speculative**.
+- **Spiritual beauty ↔ the diaphanous alter** — the Kastrup-tradition wiki, PRS-02 (individual identity within monism; dissociation). *Why:* gives beauty-as-clarity an ontology — the individuated alter letting mind-at-large show through. Evidence: **metaphysical, speculative**.
 - **Clarity ↔ glory / image-bearing** — the Wright-tradition wiki and the Rohr-tradition wiki. *Why:* Aquinas's "clarity" is the Pauline doxa and Rohr's cosmic pattern made legible in a life. Evidence: **theological**.
 
 ## Where this leaves us

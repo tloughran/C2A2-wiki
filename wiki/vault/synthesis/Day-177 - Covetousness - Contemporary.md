@@ -10,15 +10,15 @@ length_note: "Covers two Summa questions (Q.118 covetousness + Q.119 prodigality
 mind_first_reframe: "Under mind-monism, covetousness is the pathological contraction of the self to the boundary of its own holdings — a defection from the cooperative whole driven by a resource-estimate detached from real need — with prodigality as the opposite mis-calibration."
 central_theme_thread: "Covetousness is what happens when a perspective-limited agent mistakes scarce resources for the goal and answers its limitation by contracting rather than trusting the larger whole: fear and trembling curdled into a clenched fist."
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (cancer as defection: cells revert to selfish unicellular behavior, losing integration into the cooperative morphogenetic community)"
+  - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the cooperative morphogenetic community; PRS-11 cancer as dissociative identity disorder of the body — cells revert to selfish unicellular behavior, losing integration)"
   - "traditions/friston/prs_triplets.md (active inference: hoarding as corrupted resource-estimate, over-provisioning against modeled future surprise)"
-  - "traditions/carroll/prs_triplets.md (poetic naturalism — meaning/value as real patterns not located in accumulation)"
+  - "traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence — poetic naturalism; meaning/value as real patterns not located in accumulation)"
   - "traditions/stump/prs_triplets.md (Thomistic interlocutor: disordered love of possessing vs. right use)"
   - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10), treasure in heaven; Rohr canonical: second-half-of-life letting go (Falling Upward)"
 evidence_strength_summary: "Defection-from-the-whole is empirical-analogical (Levin); over-provisioning is formal (Friston); value-not-in-accumulation is formal (Carroll); covetousness-as-idolatry is theological (Wright, Rohr)."
 tags: [synthesis, day/177, theme/defection, theme/resource-estimate, q/118, q/119]
-last_qc_at: "2026-07-30T12:22:33"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T14:28:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 177 — Covetousness (Contemporary)
@@ -57,7 +57,7 @@ The synthesis holds that conscious agents are individuated by the limits of thei
 
 ## Bridges
 
-- **Levin (cancer as defection)** — covetousness as the self's boundary collapsing back to the single agent, corroding the whole it depends on. *Empirical (biology) / analogical (transfer).*
+- **Levin PRS-02 (cancer as defection) + PRS-11 (cancer as dissociative identity disorder of the body)** — `traditions/levin/prs_triplets.md`. Covetousness as the self's boundary collapsing back to the single agent, corroding the whole it depends on; PRS-11 supplies the collective-identity-failure reading the paragraph above leans on. *Empirical (biology) / analogical (transfer).*
 - **Friston (resource-estimate under active inference)** — hoarding as an open-loop reserve-estimate detached from real need. *Formal.*
 - **Carroll PRS-01 (poetic naturalism)** — the level-confusion of seeking agent-level meaning in accumulated objects. *Formal.*
 - **Wright (1 Tim 6:10; Matt 6:19–21)** — love of money as idolatry; treasure stored toward the new creation. *Theological.*

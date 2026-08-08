@@ -6,19 +6,20 @@ length_target_words: 1500
 length_actual_words: 1534
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/friston/wiki.md (PRS on hierarchical active inference; layered control architecture)"
-  - "wiki/traditions/levin/wiki.md (PRS on multi-scale agency; layered control of body)"
-  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account of willed action)"
-  - "wiki/traditions/hawkins/wiki.md (HTM hierarchical motor control)"
-  - "wiki/traditions/fredrickson/wiki.md (cognitive appraisal of emotion; passion follows apprehension)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04, PRS-10 — organism as active modeller; expected-free-energy minimization across perception, action and reasoning)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-04, PRS-09 — basal cognition unifying cell/tissue/organ/brain; cognitive attribution across scales)"
+  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric account of willed action — no numbered id; see Bridges note)"
+  - "wiki/traditions/hawkins/wiki.md (HTM hierarchical motor control — no numbered id; see Bridges note)"
+  - "wiki/traditions/fredrickson/wiki.md (cognitive appraisal of emotion; passion follows apprehension — no numbered id; see Bridges note)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-11 — Franciscan second-person knowledge as diagnostic intervention)"
 evidence_strength_summary: "Friston/Levin/Hawkins all empirically grounded on layered-control architectures; Aquinas's substrate-of-command analysis (will-commands-itself; reason-commanded-on-uncertain-only; passion-influenced-via-apprehension; vegetative-not-commanded; external-members-obey) maps remarkably onto the contemporary picture"
 length_ratio_to_target: 1.023
 length_note: "Q.16 (use, 4 articles) + Q.17 (acts commanded by the will, 9 articles) treated as the layered-control architecture of execution; the medieval substrate-of-command map (will-commands-itself, reason-commanded-on-uncertain-only, passion-via-apprehension, vegetative-not-commanded, external-members-obey-directly) preserves so cleanly under hierarchical active inference + multi-scale agency + cognitive-appraisal that the bridging prose stays compact while preserving every keystone (Q.17 a.4 unity-of-command-and-act, a.6 reason-commanded-only-on-uncertain, a.7 passion-via-apprehension)."
 mind_first_reframe: "Aquinas's Q.16-17 substrate-of-command map preserves with remarkable structural fidelity under hierarchical active inference (Friston) + multi-scale agency (Levin) + cognitive-appraisal of emotion (Fredrickson): each layer's controllability is exactly what its constitutive autonomy permits, and the medieval 'one human act' integrating command-and-commanded is the integrated multi-layer policy-selection that *is* the alter's action."
 central_theme_thread: "The alter's salvation in fear and trembling operates through a layered-control architecture in which deliberate command reaches some layers directly (motor) and others only via the management of attention and apprehension; the daily-task structure of spiritual practices is the leverage of attention-management on the lower layers (Wright on renewing-the-mind, Rohr on contemplative cultivation, Fredrickson on positive-affect-induction), with second-personal care (Stump) surfacing the diagnostic the alter cannot surface from inside."
 tags: [synthesis, day/069, theme/execution, theme/layered-control, theme/command]
-last_qc_at: "2026-07-30T06:25:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T18:35:29"
+last_qc_outcome: "rewrote"
 ---
 # Day 69 — Contemporary Parallel: *The Layered Control Architecture of Execution*
 
@@ -76,12 +77,12 @@ Wright on *renewing the mind* (Romans 12:2) as the deliberate management of appr
 
 ## Bridges
 
-- **Friston-tradition wiki, PRS on hierarchical active inference and layered-control.** Formalism for substrate-of-command. *Mature formal frame.*
-- **Levin-tradition wiki, PRS on multi-scale agency and constitutive autonomy of cellular scales.** Empirical anchor for vegetative-not-commanded. *Strong empirical.*
-- **McGilchrist-tradition wiki, PRS on hemispheric account of willed action.** Bi-hemispheric integration at action-level. *Strong neuropsychiatric.*
-- **Hawkins-tradition wiki, PRS on HTM hierarchical motor control.** Cortical-and-subcortical architecture for command-cascade. *Strong empirical.*
-- **Fredrickson-tradition wiki, PRS on cognitive-appraisal of emotion and broaden-and-build.** Empirical anchor for passion-via-apprehension. *Strong empirical.*
-- **Stump-tradition wiki, PRS on second-personal-knowing as diagnostic intervention.** Theological-philosophical resource for the leverage-point of attention. *Book-length argument.*
+- **PRS-04 and PRS-10 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — the organism as an active modeller generating and testing predictions, and the unification of perception, action and reasoning under expected-free-energy minimization. Formalism for the substrate-of-command map. *Mature formal frame.*
+- **PRS-04 and PRS-09 in the Levin-tradition wiki** (`wiki/traditions/levin/prs_triplets.md`) — bioelectric computation as substrate-independent cognition, yielding a general theory of basal cognition that unifies cell, tissue, organ and brain under one framework of goal-directed information processing (PRS-04); and the falsifiable framework for attributing goal-directedness at any scale (PRS-09). Empirical anchor for *vegetative not commanded*: the lower scales have their own goal-structure and are only mediately responsive to the personal-scale alter. *Strong empirical.*
+- **McGilchrist-tradition wiki, on the hemispheric account of willed action.** Bi-hemispheric integration at action-level. *Strong neuropsychiatric.* **Deliberately left without a numbered id** — ambiguous across PRS-01, PRS-02 and PRS-05.
+- **Hawkins-tradition wiki, on HTM hierarchical motor control.** Cortical-and-subcortical architecture for command-cascade. *Strong empirical.* **Left unanchored:** the HTM gloss has no matching numbered Hawkins triplet.
+- **Fredrickson-tradition wiki, on cognitive-appraisal of emotion and broaden-and-build.** Empirical anchor for passion-via-apprehension. *Strong empirical.* **Deliberately left unanchored:** broaden-and-build is named at Fredrickson PRS-19, PRS-27 and PRS-28, but all three treat it as programme historiography — how positivity resonance emerged *from* broaden-and-build — rather than as the mechanism this bullet needs. Anchoring any of them would misrepresent the triplet.
+- **PRS-11 in the Stump-tradition wiki** (`wiki/traditions/stump/prs_triplets.md`) — Franciscan knowledge, non-propositional and second-person, as a rigorous form of understanding irreducible to propositions. Theological-philosophical resource for the leverage-point of attention. *Book-length argument.*
 - **Wright, Romans 12:1-2; *Paul and the Faithfulness of God*.** *Renewing of the mind* as scriptural-historical anchor. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*; *Falling Upward*.** Contemplative-practice as attention-cultivation. *Contemplative theological.*
 - **Augustine, *Confessions* VIII; *De libero arbitrio*; Gregory of Nyssa, *De hominis opificio*.**
