@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-230 - Christ's Nativity and Epiphany - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/230, pars/III, q/35 q/36]
-last_qc_at: "2026-07-23T08:21:36"
+last_qc_at: "2026-08-08T12:24:16"
 last_qc_outcome: "pass"
 ---
 

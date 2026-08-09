@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-202 - Playfulness and Apparel - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/202, pars/II, q/168, q/169]
-last_qc_at: "2026-07-31T08:20:46"
+last_qc_at: "2026-08-08T10:28:46"
 last_qc_outcome: "pass"
 ---
 

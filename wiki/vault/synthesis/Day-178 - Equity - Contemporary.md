@@ -12,13 +12,13 @@ central_theme_thread: "Equity is the humility built into rule-following — that
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (P5/PRS-05 attention as ontological act; left-hemisphere letter/abstraction vs right-hemisphere context/whole)"
   - "traditions/carroll/prs_triplets.md (poetic naturalism — laws as useful higher-level stories serving an underlying good)"
-  - "traditions/levin/prs_triplets.md (nested selves: piety as reverence for the larger agent one is part of)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: epikeia and the second-personal point of law)"
+  - "traditions/levin/prs_triplets.md (PRS-30 scale-continuous nesting — subjective vantage points across nested cognitive scales; piety as reverence for the larger agent one is part of)"
+  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: epikeia and the second-personal point of law — deliberately left without a PRS-id; the Stump record's second-personal ids, PRS-11 (Franciscan knowledge of suffering narratives) and PRS-29 (infused virtue and the will's quiescence), are both about knowing and grace, not about justice or law, so neither is a home for this claim)"
   - "Wright canonical: Sabbath made for man (Mark 2:27), letter vs Spirit (2 Cor 3:6); Rohr canonical: law in service of love"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-07-30T16:21:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T22:30:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 178 — Equity (Contemporary)
@@ -59,7 +59,7 @@ Each agent sees only part of the whole, and rules are how a community shares the
 
 - **McGilchrist (attention as ontological act, P5)** — equity as right-hemisphere context/intent correcting left-hemisphere literalism. *Empirical / interpretive.*
 - **Carroll PRS-01 (poetic naturalism)** — laws as higher-level stories honored by serving their point. *Formal.*
-- **Levin (nested selves)** — piety as accurate registration of one's constitution by larger agents. *Formal / analogical.*
+- **Levin PRS-30 (`traditions/levin/prs_triplets.md`, scale-continuous nesting)** — the record states the claim directly: subjective vantage points distributed continuously across nested cognitive scales, cells → tissues → organs → organisms → constructs. Piety is the human-scale registration of one's constitution by those larger agents. *Formal / analogical.*
 - **Wright (Mark 2:27; 2 Cor 3:6)** — Sabbath for man; the letter kills, the Spirit gives life. *Theological.*
 - **Rohr (law in service of love)** — every rule read back to the love it protects. *Theological.*
 

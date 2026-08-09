@@ -3,21 +3,22 @@ day: 252
 title: Eucharistic Reception (Contemporary)
 pairs_with: "[[Day-252 - Eucharistic Reception]]"
 length_target_words: 3000
-length_actual_words: 896
+length_actual_words: 1074
 length_tier: long
-length_ratio_to_target: 0.3
+length_ratio_to_target: 0.358
 length_note: "Compact-by-design: III Q.79-80 (worthy/unworthy and sacramental/spiritual reception) rendered in tight, complete PRS form with Friston's disposition-as-prior the sharpest resource; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; PRS-14 symptom persistence/resolution under active inference; priors set by disposition)"
-  - "traditions/kastrup/prs_triplets.md (PRS-09 participatory encounter)"
-  - "traditions/levin/prs_triplets.md (PRS-03 dispositional/target state)"
-  - "traditions/rohr/wiki.md (Universal Christ; grace meeting readiness)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — goal-directedness within naturalism; PRS-14 symptom-formation as Bayesian self-trapping, applied here beyond its clinical scope)"
+  - "traditions/kastrup/prs_triplets.md (PRS-09 representation versus participatory encounter)"
+  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism — outcome governed by target state)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ); grace-meeting-readiness carried on Rohr's published contemplative work, no triplet in the register"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home)"
 evidence_strength_summary: "Same-signal-different-update is formal (Friston active inference, well-developed); reception-by-desire as dispositional reality is metaphysical-speculative (Kastrup); the worthiness content is theological (Wright/Rohr)."
 mind_first_reframe: "The one offered whole produces divergent effects because reception is governed by the receiver's disposition — its generative prior (Friston) and participatory uptake (Kastrup) — not by any variation in the offering."
 central_theme_thread: "The same whole is offered entire to every perspective yet assimilated only to the measure of each finite disposition, so growing in charity is the lifelong revision of the prior toward the loving-unity attractor."
 tags: [synthesis, day/252, theme/one-whole-received-by-readiness]
-last_qc_at: "2026-07-31T12:20:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T14:30:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 252 — Eucharistic Reception (Contemporary Parallel)
@@ -32,13 +33,13 @@ The shared inquiry-problem: **why does an identical input yield divergent outcom
 
 ## Resource
 
-Friston's program is the sharpest resource. In Tom's PRS-form record of Friston's program, PRS-04 (a formal account of goal-directedness within naturalism) and the active-inference framework generally make an agent's *prior* — its generative model and preferences — the thing that determines how any incoming signal is interpreted and what it does to the system. The same sensory evidence updates two differently primed models in opposite directions: confirming and integrating for one, generating large prediction-error or being rejected for the other. PRS-14 (how mental states form, persist, and resolve under active inference, and why they resist direct correction) sharpens this: a receiver whose priors are misaligned does not assimilate the offered reality merely by contact; the disposition is the operative variable, and a hardened prior can take in the species while refusing the res. This is a formal, well-developed resource — not a loose analogy.
+Friston's program is the sharpest resource. In Tom's PRS-form record of Friston's program, PRS-04 (the organism as active modeler — a formal account of goal-directedness within naturalism, against a biology that had no room for it) makes an agent's *prior* — its generative model and preferences — the thing that determines how any incoming signal is interpreted and what it does to the system. The same sensory evidence updates two differently primed models in opposite directions: confirming and integrating for one, generating large prediction-error or being rejected for the other. PRS-14 sharpens the mechanism of refusal: it accounts for states that are *locally* optimal but globally suboptimal — Bayesian attractors that resist update because revising them raises free energy in the short term. A receiver whose priors are so trapped does not assimilate the offered reality merely by contact; the disposition is the operative variable, and a hardened prior can take in the species while refusing the res. Two honest qualifications. PRS-14 is recorded as an account of *symptom*-formation and its clinical resolution; using its self-trapping structure for a culpable spiritual indisposition extends it beyond the domain in which it was stated, and no claim is being made that unworthy reception is a pathology. And the formalism is well-developed as formalism — it is not a measurement of what it is here being used to model.
 
 Kastrup supplies the ontology of *reception itself*. In Tom's PRS-form record of Kastrup's program, PRS-09 (participatory encounter) makes receiving the reality a participation in it rather than a reading-off of the icon — so "spiritual eating" and reception "by desire" are intelligible as the dispositional, participatory uptake of a reality that sacramental eating only contacts. The operative reality is the dispositional state, which is why desire can obtain the res.
 
 Levin gives the in-domain hinge: in Tom's PRS-form record of Levin's program, PRS-03 (target-state specification) shows a system's outcome governed by its set-point rather than by the raw stimulus — the same intervention drives different morphological results depending on the bioelectric prior the tissue holds.
 
-Rohr and Wright remain the theological ground for the *content*: that the reality offered is Christ, and that worthiness is a matter of charity, not merit ledgered.
+Rohr (PRS-03, the Universal Christ — the divine pattern present in all of creation) and Wright (PRS-05, salvation as incorporation into the people among whom God comes home rather than a relocation of souls) remain the theological ground for the *content*: that the reality offered is Christ, and that worthiness is a matter of charity, not merit ledgered.
 
 ## Solution (proposed, speculative)
 
@@ -50,11 +51,11 @@ Here the project's central motif takes one of its clearest sacramental forms: th
 
 ## Bridges
 
-- **Friston PRS-04 + PRS-14 (goal-directedness; disposition as prior governing assimilation)** — *formal, well-developed.* Same signal, disposition-dependent update; sharpest resource.
-- **Kastrup PRS-09 (participatory encounter)** — *metaphysical, contested.* Reception as participation; why desire obtains the res.
-- **Levin PRS-03 (target-state specification)** — *empirical-in-domain.* Outcome governed by set-point, not raw stimulus.
-- **Rohr (grace meeting readiness; Universal Christ)** — *theological / contemplative.* Grace exceeds, but engages, the receiver's measure.
-- **Wright (charity, covenant participation)** — *theological, high within method.* The worthiness content.
+- **Friston PRS-04 (organism as active modeler) + PRS-14 (Bayesian self-trapping)** — *formal, well-developed; PRS-14 extended past its clinical scope, flagged in the Resource above.* Same signal, disposition-dependent update; sharpest resource.
+- **Kastrup PRS-09 (representation versus participatory encounter)** — *metaphysical, contested.* Reception as participation; why desire obtains the res.
+- **Levin PRS-03 (morphological attractor formalism)** — *empirical-in-domain.* Outcome governed by target state, not raw stimulus.
+- **Rohr PRS-03 (the Universal Christ)** — *theological / contemplative.* The pattern already present in what is received; the grace-meets-readiness half is carried on Rohr's published contemplative work, which the register has no triplet for.
+- **Wright PRS-05 (salvation as incorporation)** — *theological, high within method.* The worthiness content: charity as covenant participation, not merit ledgered.
 
 ## Where this leaves us
 

@@ -15,7 +15,7 @@ evidence_strength_summary: "Grace divinizing the rational creature into an heir 
 mind_first_reframe: "Adoption is read as the limited perspective drawn toward a beatitude not yet possessed (morphogenetic attraction to an unrealized form, Levin) and sharing the whole's life without losing individuation (dissociated alter, Kastrup); Christ the exemplar-and-cause."
 central_theme_thread: "The limited contained-in-the-whole named as inheritance: elevated by grace to share the whole's own vision, drawn toward the goal-state held exemplarily by the one who sees the whole."
 tags: [synthesis, day/224, theme/adoption-as-divinization]
-last_qc_at: "2026-07-31T06:27:04"
+last_qc_at: "2026-08-08T08:19:13"
 last_qc_outcome: "pass"
 ---
 

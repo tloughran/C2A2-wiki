@@ -10,16 +10,17 @@ length_note: "Under target per the constitution's short-and-substantive rule: Q.
 mind_first_reframe: "Aquinas's metaphysical 'craving for unity' as the deepest cause of sorrow gets instantiated at multiple scales under conscious-realist monism: bioelectric coherence at the cellular level (Levin), prediction-error null at the inferential level (Friston), positivity-resonance synchrony at the social level (Fredrickson), and substrate-coherence at the metaphysical limit (Kastrup) — unity is no longer mysteriously transcendental but mechanistically tractable at every level of organization."
 central_theme_thread: "The agent's perspective-limitation is what makes sorrow possible and what makes it harmful when unintegrated; sorrow's somatic harm (HPA loading, vagal suppression, inflammation, PRS-11 gating) tracks the narrowing of the model, while a perspective wide enough to hold both the lost good and the larger reality containing it does not collapse under the loss."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/wiki.md (PRS-01, PRS-04, PRS-11, PRS-12; vagal tone; inflammation gating)"
-  - "traditions/friston/wiki.md (active inference; expected free energy; policy under unavoidable error)"
+  - "traditions/fredrickson/wiki.md (PRS-01 isolation and disconnection; PRS-04 vagal tone as community biomarker — this gloss holds in wiki.md only; the prs_triplets.md record numbers PRS-04 as relational coherence of conscious realism)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-11 inflammation and resonance selectivity; PRS-12 community trust and structural inequality — neither id exists in the wiki.md table, which stops at PRS-06)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling — both ids agree across wiki.md and prs_triplets.md)"
   - "traditions/levin/wiki.md (bioelectric coupling; collective coherence; cellular distress signaling)"
   - "traditions/mcgilchrist/wiki.md (right-hemisphere openness; left-hemisphere narrowing)"
   - "traditions/rohr/ — sorrow as opening to the cosmic Christ"
   - "traditions/wright/ — Pauline lament tradition; Romans 8 'creation groans'"
 evidence_strength_summary: "Q.37 a.4's claim that sorrow is most harmful to the body is empirically very well supported by modern psychoneuroimmunology — chronic stress/grief mediated through HPA axis, vagal tone, inflammatory markers, telomere shortening; Q.36 a.3's craving-for-unity is metaphysical but resonates with Levin's bioelectric coherence at cellular and tissue scales. Q.37 a.1 moderate-sorrow-as-impetus-to-learn maps onto optimal-precision findings in predictive processing."
 tags: [synthesis, day/079, theme/sorrow-effects, theme/somatic-cost]
-last_qc_at: "2026-07-30T20:20:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-07T22:30:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 79 — Sorrowful Effects (Contemporary)
@@ -60,7 +61,7 @@ The agent's perspective-limitation is *exactly what makes sorrow possible* — a
 
 ## Bridges
 
-- **Fredrickson PRS-01, PRS-04, PRS-11** — the empirical mechanism for Aquinas's "sorrow consumes the heart"; inflammation gates the radius of available remedy; *empirical, high confidence*.
+- **Fredrickson PRS-01 (isolation and disconnection) and PRS-11 (inflammation and resonance selectivity), `traditions/fredrickson/prs_triplets.md`** — the empirical mechanism for Aquinas's "sorrow consumes the heart"; inflammation gates the radius of available remedy; *empirical, high confidence*. The vagal-tone claim is carried by PRS-04 **in `wiki.md` only** — that id names a different problem in `prs_triplets.md`, so the file is named here rather than the tradition alone.
 - **Friston active inference (PRS-04, PRS-06)** — Q.36 a.4 (irresistible power) and Q.37 a.1 (moderate-sorrow-as-learning) get formal expression; *empirical / mathematical*.
 - **Levin bioelectric coherence** — Q.36 a.3 (craving for unity) at the cellular scale: identity is bioelectrically maintained, lost in tumor and developmental breakdown; *empirical*.
 - **McGilchrist hemispheric framework** — Q.37 a.2 (burden) as left-hemispheric narrowing; *neurologically suggestive*.

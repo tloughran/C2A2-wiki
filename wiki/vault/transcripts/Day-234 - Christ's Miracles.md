@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-234 - Christ's Miracles - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/234, pars/III, q/43 q/44]
-last_qc_at: "2026-07-23T08:21:39"
+last_qc_at: "2026-08-08T12:24:36"
 last_qc_outcome: "pass"
 ---
 

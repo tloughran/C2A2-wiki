@@ -16,7 +16,7 @@ fetched_at: 2026-05-18
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-111 - The Ten Commandments - Contemporary]]"
 tags: [summa, day/111, pars/I-II, q/100, q/101]
-last_qc_at: "2026-07-16T12:20:35"
+last_qc_at: "2026-08-08T20:23:27"
 last_qc_outcome: "pass"
 ---
 

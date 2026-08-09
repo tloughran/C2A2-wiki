@@ -22,13 +22,13 @@ What Aquinas leaves at the level of perceptive description, the contemporary fra
 
 **McGilchrist's hemispheric account** sharpens Q.42 a.5 (sudden things) and Q.41 a.4's anxiety species. The left hemisphere narrows attention to specifics and is poor at recognizing context; the right holds context and gestalt. Anxiety phenotypes — especially the *anxiety* species (unknown possible misfortunes) — are characterized by left-dominant over-precision in the absence of right-hemispheric contextual buffering. McGilchrist's clinical correlations: anxiety disorders, particularly generalized anxiety, show right-hemispheric hypofunction in much of the imaging literature.
 
-**Hawkins's reference-frame model** (PRS-03 / *A Thousand Brains*) supplies the cortical correlate of Q.42 a.5's claim that "thinking about it beforehand" reduces fear. The cortical model accumulates structured experience over reference frames; familiarity with a stimulus is the construction of a reference frame within which the stimulus is now embedded, which sharply reduces the surprise-driven aversion signal. This is exactly the cortical mechanism by which exposure therapy works.
+**Hawkins's reference-frame model** (PRS-04 in the Hawkins-tradition wiki / *A Thousand Brains*) supplies the cortical correlate of Q.42 a.5's claim that "thinking about it beforehand" reduces fear. The cortical model accumulates structured experience over reference frames; familiarity with a stimulus is the construction of a reference frame within which the stimulus is now embedded, which sharply reduces the surprise-driven aversion signal. This is exactly the cortical mechanism by which exposure therapy works.
 
-**Stump on faith and second-person knowing** (PRS-05; *Wandering in Darkness* material at PRS-11) carries the synthesis into Q.43 a.1 — love causes fear. Augustine's claim — what we fear reveals what we love — is the inverse statement of Stump's second-person account: faith is the agent's commitment to a person under the difficulty of incomplete knowledge; the loves the agent has committed to are precisely those whose loss the agent fears. Stump's analytic-Thomistic account of *Wandering in Darkness* gives the rigorous form of the diagnostic move from the inventory of fears to the inventory of loves.
+**Stump on faith and second-person knowing** (PRS-11 in the Stump-tradition wiki, on Franciscan non-propositional knowledge; *Wandering in Darkness* material) carries the synthesis into Q.43 a.1 — love causes fear. Augustine's claim — what we fear reveals what we love — is the inverse statement of Stump's second-person account: faith is the agent's commitment to a person under the difficulty of incomplete knowledge; the loves the agent has committed to are precisely those whose loss the agent fears. Her account gives the rigorous form of the diagnostic move from the inventory of fears to the inventory of loves. (An earlier draft anchored this to PRS-05; that entry is about union as the final cause of *permitted suffering* and is the right home only where the sentence leans on union, which this one does not.)
 
 **Rohr on contemplative reframing of fear** (PRS-01, PRS-03) anchors the contemplative side. The cosmic-Christ pattern — divine presence in matter from creation — provides the contemplative re-frame of Q.42 a.6's claim that the irremediable is most feared. Under non-dual contemplative awareness, the apparently irremediable is held within a larger pattern in which "everything belongs" (Rohr's phrase); the policy-space-collapse that produces the worst fear is, in contemplative practice, the very surface within which a deeper response becomes available. Rohr's *Everything Belongs* and *Falling Upward* are the canonical sources for this move; the empirical correlate is the literature on contemplative practice and reduced amygdala reactivity (Goleman & Davidson 2017 review).
 
-**Wright on the eschatological reframe of fear** anchors the scriptural side. Wright's reading of Romans 8 and 1 Corinthians 15 specifies that the Christian's most feared object — death — is not strictly irremediable under the resurrection horizon. Q.42 a.6's "abandon all hope ye who enter" applies under conditions Wright would say are *outside* the resurrection horizon (the willed self-closure against loving unity, which is the only honest reading of "hell" Wright permits). Inside the resurrection horizon, the maximum precision aversive prediction (death) is reframed without being denied.
+**Wright on the eschatological reframe of fear** anchors the scriptural side. PRS-06 in the Wright-tradition wiki is the exact home: resurrection reframed as the firstfruits of new creation breaking into the old, rather than an anomaly inside a closed system. Wright's reading of Romans 8 and 1 Corinthians 15 specifies that the Christian's most feared object — death — is not strictly irremediable under the resurrection horizon. Q.42 a.6's "abandon all hope ye who enter" applies under conditions Wright would say are *outside* the resurrection horizon (the willed self-closure against loving unity, which is the only honest reading of "hell" Wright permits). Inside the resurrection horizon, the maximum precision aversive prediction (death) is reframed without being denied.
 
 ## Solution (proposed, speculative)
 
@@ -55,10 +55,10 @@ Defect-causes-fear (Q.43 a.2) names the perspective-limitation directly. The age
 - **Coan, Schaefer & Davidson 2006 / hand-holding under threat** — empirical demonstration of Aristotle's "multitude of friends drive fear away"; *high-confidence neuroimaging*.
 - **Fredrickson PRS-01, PRS-08 / broaden-and-build, high-quality listening** — empirical co-regulation mechanism for friend-mediated fear reduction; *empirical, high confidence*.
 - **McGilchrist / right-hemispheric contextual buffering** — anxiety species mapping; *clinical evidence*.
-- **Hawkins PRS-03 / reference frames** — cortical mechanism for familiarity-reduces-fear (Q.42 a.5); *neuroscientifically grounded*.
-- **Stump PRS-05 / faith as second-person knowing (Wandering in Darkness, PRS-11)** — diagnostic structure of Q.43 a.1 (fear reveals love); *philosophically rigorous*.
-- **Rohr / *Everything Belongs*, *Falling Upward*** — contemplative reframing of irremediable as held-in-larger-pattern; Q.42 a.6 reframed; *contemplative tradition*.
-- **Wright on resurrection horizon (Romans 8; 1 Cor 15)** — eschatological reframe of death-fear (Q.42 a.2 + a.6); *historical-theological, well-attested*.
+- **PRS-04 in the Hawkins-tradition wiki / reference frames as the universal architecture of model-based intelligence** — cortical mechanism for familiarity-reduces-fear (Q.42 a.5); *neuroscientifically grounded*. (Corrected from PRS-03, the knowledge-preserving-AGI entry, which carries no reference-frame claim.)
+- **PRS-11 in the Stump-tradition wiki / Franciscan second-person knowledge (*Wandering in Darkness*)** — diagnostic structure of Q.43 a.1 (fear reveals love); *philosophically rigorous*. (PRS-05 dropped: it is the union-and-permitted-suffering entry, and this bullet does not lean on union.)
+- **PRS-01, PRS-03 in the Rohr-tradition wiki / contemplative epistemology, the Universal Christ; *Everything Belongs*, *Falling Upward*** — contemplative reframing of irremediable as held-in-larger-pattern; Q.42 a.6 reframed; *contemplative tradition*.
+- **PRS-06 in the Wright-tradition wiki / resurrection as firstfruits of new creation (Romans 8; 1 Cor 15)** — eschatological reframe of death-fear (Q.42 a.2 + a.6); *historical-theological, well-attested*.
 
 ## Where this leaves us
 
@@ -77,17 +77,17 @@ length_note: "Covers two dense Summa questions (Q.42 four-precision-conditions o
 mind_first_reframe: "Fear's four precision conditions on its object (imagined, future, non-resistible, irremediable) and two causes (love and defect) map cleanly onto active-inference parameters; Q.42 a.6's irremediable evil reframed under conscious-realist monism as the agent's self-closure against loving unity rather than a metaphysical place; Augustine's fear-reveals-love is the central-theme diagnostic in its most clinically useful form."
 central_theme_thread: "The limited agent computes aversion under perspective-limitation; the inventory of its fears is the inventory of its loves (Augustine, Q.43 a.1); fear and trembling of Phil 2:12 finds its formal home here as the disciplined precision-management of aversive prediction under the resurrection horizon (Wright) and contemplative reframe (Rohr)."
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-01, PRS-04; policy-precision)"
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01, PRS-08)"
-  - "traditions/mcgilchrist/wiki.md (anxiety hemispheric account)"
-  - "traditions/hawkins/wiki.md + prs_triplets.md (PRS-03)"
-  - "traditions/stump/ — PRS-05 second-person knowing; *Wandering in Darkness* (PRS-11)"
-  - "traditions/rohr/ — *Everything Belongs*; *Falling Upward*; PRS-01"
-  - "traditions/wright/ — Romans 8; 1 Cor 15 resurrection horizon"
+  - "traditions/friston/prs_triplets.md (PRS-01 free-energy principle; PRS-04 organism as active modeler)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation; PRS-08 high-quality listening)"
+  - "traditions/mcgilchrist/wiki.md (anxiety hemispheric account — no numbered id claimed)"
+  - "traditions/hawkins/prs_triplets.md (PRS-04 reference frames as universal cognitive tool)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Franciscan second-person knowledge); *Wandering in Darkness*"
+  - "traditions/rohr/prs_triplets.md (PRS-01 contemplative epistemology; PRS-03 the Universal Christ); *Everything Belongs*; *Falling Upward*"
+  - "traditions/wright/prs_triplets.md (PRS-06 resurrection as firstfruits of new creation); Romans 8; 1 Cor 15"
 evidence_strength_summary: "Predictive-processing fear/surprise, intolerance-of-uncertainty as anxiety mechanism, co-regulation reducing fear, and exposure-reduces-fear are all empirically robust. Hemispheric account is clinically supported. Hell-as-state-not-place is theological reading consistent with Wright and Rohr but not a unanimous Christian position."
 tags: [synthesis, day/082, theme/fear, theme/anxiety, theme/irascible-passions, theme/love-causes-fear]
-last_qc_at: "2026-07-30T22:27:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T00:26:49"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

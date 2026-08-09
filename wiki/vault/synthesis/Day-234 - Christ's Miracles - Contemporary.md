@@ -9,15 +9,15 @@ length_note: "Length-light vs the 1500 short-tier guideline but a COMPLETE PRS s
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection and natural law — new creation, not law-violation; PRS-04 resurrection as historical and cosmological) [Wright primary on Christology III Q.1-59]"
-  - "traditions/hoffman/prs_triplets.md (P4 observer-dependent spacetime; P18 IOS Theorem route to 'spacetime is doomed')"
-  - "traditions/levin/prs_triplets.md (P7 bioelectric reprogramming as therapeutic paradigm; P1 morphogenetic control)"
-  - "traditions/kastrup/prs_triplets.md (P10 idealism as empirical consciousness-science framework)"
-evidence_strength_summary: "Miracle-as-deeper-layer-override is a CONCEPTUAL remodel, not an evidential one: Levin's bioelectric overrides of default morphogenesis (P7) are empirical but entirely within nature — they change what 'default vs addressable outcome' means, they do not evidence any miracle; Hoffman's interface results (P4/P18) are formal-theoretic; Wright's reframe of miracle as new-creation-breaking-in (PRS-06) is theological, and his historical case for the resurrection (PRS-04) is serious historiography whose verdict depends on prior metaphysics; Aquinas's sealed-letters epistemology of miracles is the tradition's own claim, carried theologically."
+  - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-18 IOS Theorem route to 'spacetime is doomed')"
+  - "traditions/levin/prs_triplets.md (PRS-07 bioelectric reprogramming as therapeutic paradigm; PRS-01 morphogenetic control)"
+  - "traditions/kastrup/prs_triplets.md (PRS-10 idealism as empirical consciousness-science framework)"
+evidence_strength_summary: "Miracle-as-deeper-layer-override is a CONCEPTUAL remodel, not an evidential one: Levin's bioelectric overrides of default morphogenesis (PRS-07) are empirical but entirely within nature — they change what 'default vs addressable outcome' means, they do not evidence any miracle; Hoffman's interface results (PRS-04/PRS-18) are formal-theoretic; Wright's reframe of miracle as new-creation-breaking-in (PRS-06) is theological, and his historical case for the resurrection (PRS-04) is serious historiography whose verdict depends on prior metaphysics; Aquinas's sealed-letters epistemology of miracles is the tradition's own claim, carried theologically."
 mind_first_reframe: "If 'nature' is the default rendering of a species-specific interface rather than the bedrock of reality, a miracle is not a violation of law but an address to a deeper control layer — the whole acting in the rendered world at a level the interface normally hides."
 central_theme_thread: "Miracles on every kind of creature say that no scale of the rendered world is outside the whole's address; healing the visible body to certify invisible forgiveness is the same accommodation-to-limited-perception that runs from Day 230's manifestation through Day 233's parables."
 tags: [synthesis, day/234, theme/miracle-as-deeper-layer-address]
-last_qc_at: "2026-07-31T10:27:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T12:24:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 234 — Contemporary Parallel: What a Miracle Is, If Nature Is Interface
@@ -34,11 +34,11 @@ The inquiry-problem in both frames: **a limited perspective cannot verify claims
 
 ## Resource
 
-**Nature as interface.** P4 and P18 in Tom's PRS-form record of the Hoffman program: spacetime and its regularities are a species-specific interface, not the final description — a conclusion Hoffman's group now reaches from inside perceptual science (the IOS theorem route), at formal-theoretic grade. Under this reading "the laws of nature" are interface regularities: utterly reliable at the level they describe, silent about what the deeper levels can do. Habash himself models the needed humility today, noting that Q.44's heavenly-bodies article rests on an Aristotelian cosmology "not likely to be accepted today" — the tradition has revised its picture of nature before without losing the question.
+**Nature as interface.** PRS-04 and PRS-18 in Tom's PRS-form record of the Hoffman program: spacetime and its regularities are a species-specific interface, not the final description — a conclusion Hoffman's group now reaches from inside perceptual science (the IOS theorem route), at formal-theoretic grade. Under this reading "the laws of nature" are interface regularities: utterly reliable at the level they describe, silent about what the deeper levels can do. Habash himself models the needed humility today, noting that Q.44's heavenly-bodies article rests on an Aristotelian cosmology "not likely to be accepted today" — the tradition has revised its picture of nature before without losing the question.
 
-**Default outcomes are addressable.** P7 and P1 in the Levin-tradition record: morphogenetic outcomes long assumed fixed — head counts in planaria, eye placement, limb regeneration — can be overridden by addressing the bioelectric control layer, without touching the genome. This is empirical, and it must be graded with care: *these overrides are entirely within nature and evidence no miracle whatsoever.* What they change is the concept of "impossible": biology turns out to have default outcomes and deeper addressable layers, not a single rigid causal floor. The paradigm's speculative extension — marked as such — is that the rendered world as a whole may have this architecture.
+**Default outcomes are addressable.** PRS-07 and PRS-01 in the Levin-tradition record: morphogenetic outcomes long assumed fixed — head counts in planaria, eye placement, limb regeneration — can be overridden by addressing the bioelectric control layer, without touching the genome. This is empirical, and it must be graded with care: *these overrides are entirely within nature and evidence no miracle whatsoever.* What they change is the concept of "impossible": biology turns out to have default outcomes and deeper addressable layers, not a single rigid causal floor. The paradigm's speculative extension — marked as such — is that the rendered world as a whole may have this architecture.
 
-**Miracle as new creation, not violation.** PRS-06 in the Wright-tradition wiki is the theological capstone: the resurrection is not an anomaly inside a closed system but the firstfruits of new creation breaking into the old — so the science/faith standoff is a dispute about open vs. closed naturalism, metaphysical rather than evidential. PRS-04 records the historical case (the empty tomb and appearances as best explanation by ordinary historiographical criteria), which is serious scholarship whose verdict turns on the metaphysics one brings to it. And P10 in the Kastrup-tradition record supplies the monist ground: if mind is the ontological primitive, a deeper layer of mind acting in the rendered world is not an intrusion from outside reality but reality's own depth showing.
+**Miracle as new creation, not violation.** PRS-06 in the Wright-tradition wiki is the theological capstone: the resurrection is not an anomaly inside a closed system but the firstfruits of new creation breaking into the old — so the science/faith standoff is a dispute about open vs. closed naturalism, metaphysical rather than evidential. PRS-04 records the historical case (the empty tomb and appearances as best explanation by ordinary historiographical criteria), which is serious scholarship whose verdict turns on the metaphysics one brings to it. And PRS-10 in the Kastrup-tradition record supplies the monist ground: if mind is the ontological primitive, a deeper layer of mind acting in the rendered world is not an intrusion from outside reality but reality's own depth showing.
 
 ## Solution (proposed, speculative)
 
@@ -53,9 +53,9 @@ Q.44's sweep — demons, sun, bodies, sea, bread — is Aquinas insisting that e
 ## Bridges
 
 - **PRS-06, Wright-tradition wiki** (new creation, not law-violation) — the master reframe of the category; the dispute is open vs. closed naturalism. Evidence: theological, on strong scholarly footing.
-- **P4 + P18, Hoffman-tradition wiki** (spacetime as interface; IOS theorem) — "laws of nature" as interface regularities, silent about depth. Evidence: formal-theoretic.
-- **P7, Tom's PRS-form record of the Levin program** (bioelectric override of default morphogenesis) — empirical proof that biological "impossibles" were defaults with deeper addressable layers; conceptual remodel only, no evidential transfer to miracles. Evidence: empirical (in-domain), speculative (as analogy).
-- **P10, Kastrup-tradition wiki** (idealism as empirical framework) — a deeper layer of mind with write-access is coherent if mind is primitive. Evidence: philosophical-speculative.
+- **PRS-04 + PRS-18, Hoffman-tradition wiki** (spacetime as interface; IOS theorem) — "laws of nature" as interface regularities, silent about depth. Evidence: formal-theoretic.
+- **PRS-07, Tom's PRS-form record of the Levin program** (bioelectric override of default morphogenesis) — empirical proof that biological "impossibles" were defaults with deeper addressable layers; conceptual remodel only, no evidential transfer to miracles. Evidence: empirical (in-domain), speculative (as analogy).
+- **PRS-10, Kastrup-tradition wiki** (idealism as empirical framework) — a deeper layer of mind with write-access is coherent if mind is primitive. Evidence: philosophical-speculative.
 - **PRS-04, Wright-tradition wiki** (resurrection as historical claim) — the limit case where the category rebuild meets actual historiography. Evidence: historical argument, metaphysically contested verdict.
 
 ## Where this leaves us

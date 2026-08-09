@@ -28,7 +28,7 @@ The contemporary frame supplies a unified answer. Fear and daring are the affect
 
 **Stump on antecedent vs. consequent passions and the Thomistic will** belongs to this synthesis. Q.45 a.4's distinction is Stump's home territory: how the intellect-engaged will interacts with the sensitive appetite is *exactly* the question her analytic-Thomist work clarifies. Stump's reading preserves the structural Aquinas — antecedent passions are not yet morally voluntary, consequent ones are — and supplies the contemporary articulation in terms of higher-order endorsement. The synthesis cites Stump as the most rigorous contemporary articulator of the distinction; the conscious-realist-monist reframe places her account inside the active-inference structure (antecedent = fast model output; consequent = endorsed slow policy).
 
-**Wright on Philippians 2:12** is the centerpiece. Aquinas himself quotes Phil 2:12 ("work out your own salvation with fear and trembling") at Q.44 a.4. Wright's reading of Philippians: salvation as *participation in Christ*'s shape of life, worked out by the community-in-Christ under genuine eschatological tension. Moderate fear is the affective signature of disciplined eschatological participation — neither presumption (which would be the no-fear case Aquinas implicitly excludes) nor despair (which would be the excessive-fear case that hinders action). The two-Wright moves: (i) salvation is not yet completed and requires worked-out engagement; (ii) it is community-embedded, not individual. Both match Aquinas's claim at Q.44 a.4 with theological depth Aquinas presupposes.
+**Wright on Philippians 2:12** is the centerpiece. Aquinas himself quotes Phil 2:12 ("work out your own salvation with fear and trembling") at Q.44 a.4. PRS-05 in the Wright-tradition wiki is the precise anchor, and it is the entry this whole project's central claim rests on: salvation is *incorporation into the people among whom God comes home*, not the relocation of souls. Wright's reading of Philippians follows directly: salvation as *participation in Christ*'s shape of life, worked out by the community-in-Christ under genuine eschatological tension. Moderate fear is the affective signature of disciplined eschatological participation — neither presumption (which would be the no-fear case Aquinas implicitly excludes) nor despair (which would be the excessive-fear case that hinders action). The two-Wright moves: (i) salvation is not yet completed and requires worked-out engagement; (ii) it is community-embedded, not individual. Both match Aquinas's claim at Q.44 a.4 with theological depth Aquinas presupposes.
 
 **Rohr on consequent daring and the contemplative shift** carries the synthesis into the deeper register. Rohr's order-disorder-reorder pattern (PRS-02) is exactly the structure of Q.45 a.4's brave-man-who-becomes-eager-on-reflection: the initial passion (whether fear or daring) is *ordered* in the agent's first-half default; encountering the obstacle is the *disorder*; the consequent passion that emerges on reflection is the *reorder* that contains the prior order within a larger frame. Rohr's contemplative reframe of moral action is the contemplative endorsement of the consequent-passion register.
 
@@ -55,9 +55,9 @@ The community-embedded shape of Wright's Phil 2:12 reading and the seeking-couns
 - **Kahneman / Stanovich dual-process literature** — Q.45 a.4 antecedent vs. consequent passions; *behavioral evidence, robust*.
 - **Fredrickson PRS-01, PRS-08, PRS-09 / broaden-and-build, high-quality connection** — Q.45 a.2 (hope causes daring), Q.43-44 community-embedded fear-reduction; *empirical*.
 - **McGilchrist hemispheric account** — left-right integration in mature daring; *clinical evidence*.
-- **Stump on antecedent vs. consequent passions and Thomistic will** — rigorous contemporary articulation of Q.45 a.4; *analytic-Thomistic*.
-- **Wright on Philippians 2:12** — community-embedded eschatological salvation as the theological articulation of "moderate fear" in Q.44 a.4; *historical-theological, well-attested*.
-- **Rohr PRS-02 / order-disorder-reorder** — contemplative reading of the consequent-passion register; *contemplative tradition*.
+- **Stump on antecedent vs. consequent passions and Thomistic will** — rigorous contemporary articulation of Q.45 a.4; *analytic-Thomistic*. **Left without a numbered id on purpose:** the Stump record's will-and-grace entries (PRS-23, PRS-29) are about the will's quiescence before infused grace, not about the antecedent/consequent sorting of the passions, and no entry in that tradition carries the distinction. Anchoring by proximity here would manufacture a citation the record does not support.
+- **PRS-05 in the Wright-tradition wiki / salvation as incorporation into the people among whom God comes home** — community-embedded eschatological salvation as the theological articulation of "moderate fear" in Q.44 a.4; *historical-theological, well-attested*.
+- **PRS-02 in the Rohr-tradition wiki / order-disorder-reorder** — contemplative reading of the consequent-passion register; *contemplative tradition*.
 
 ## Where this leaves us
 
@@ -76,16 +76,16 @@ length_note: "Covers two Summa questions (Q.44 effects of fear + Q.45 daring) an
 mind_first_reframe: "Q.44 a.4 makes Phil 2:12 the keystone — moderate fear aids action — and the contemporary frame articulates this as *calibrated precision* on aversive prediction; Q.45 a.4's antecedent/consequent distinction is the medieval anticipation of the modern dual-process / fast-slow structure of affective cognition."
 central_theme_thread: "The agent works out salvation in fear and trembling (Phil 2:12, cited by Aquinas at Q.44 a.4); moderate fear preserves the affective signal of arduous goal without overriding the deliberative policy; the consequent-passion register is the affective shadow of community-and-contemplation-guided endorsement under perspective-limitation."
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-01, PRS-04; epistemic value)"
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01, PRS-08, PRS-09)"
-  - "traditions/mcgilchrist/wiki.md (left-right integration)"
-  - "traditions/stump/ — Thomistic will; antecedent/consequent passions"
-  - "traditions/wright/ — Philippians 2:12; salvation as community participation"
-  - "traditions/rohr/ — PRS-02 order-disorder-reorder"
+  - "traditions/friston/prs_triplets.md (PRS-01 free-energy principle; PRS-04 organism as active modeler)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation; PRS-08 high-quality listening; PRS-09 weak-tie intellectual humility)"
+  - "traditions/mcgilchrist/wiki.md (left-right integration — no numbered id claimed)"
+  - "traditions/stump/ — Thomistic will; antecedent/consequent passions (no numbered id: the record carries no entry for this distinction)"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home); Philippians 2:12"
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder)"
 evidence_strength_summary: "Dual-process theory, embodied cognition / somatic-marker, broaden-and-build, and active-inference precision-weighting are empirically robust. Hemispheric account is clinically supported. Conscious-realist-monist reading of antecedent vs. consequent passions as alter-level fast/slow is metaphysically speculative. Wright on Phil 2:12 and Rohr on order-disorder-reorder are theologically well-attested."
 tags: [synthesis, day/083, theme/daring, theme/fear-effects, theme/antecedent-consequent, theme/phil-2-12]
-last_qc_at: "2026-07-30T22:27:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T00:27:06"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

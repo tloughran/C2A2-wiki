@@ -16,7 +16,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-258 - The Supplement - Contemporary]]"
 tags: [summa, day/258, pars/suppl, q/1]
-last_qc_at: "2026-07-25T00:20:54"
+last_qc_at: "2026-08-08T16:21:10"
 last_qc_outcome: "pass"
 ---
 

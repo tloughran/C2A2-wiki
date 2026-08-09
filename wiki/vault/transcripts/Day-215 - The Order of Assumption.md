@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-215 - The Order of Assumption - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/215, pars/III, q/5 q/6]
-last_qc_at: "2026-07-17T08:19:35"
+last_qc_at: "2026-08-08T04:26:08"
 last_qc_outcome: "pass"
 ---
 

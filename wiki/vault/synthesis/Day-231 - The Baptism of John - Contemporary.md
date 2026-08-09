@@ -10,14 +10,14 @@ length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-02 faithful improvisation) [Wright primary on Christology III Q.1-59]"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 the Universal Christ)"
-  - "traditions/friston/prs_triplets.md (P4 organism as active modeler; P6 multi-agent coherence via mutual modeling)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
   - "master/cross_program_index.md (CROSS-004 second-first-language competence — Stump/McGilchrist/Fredrickson)"
-evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updating under active inference (Friston P4/P6) = speculative-formal (the mapping is structural, not measured); the forerunner office at the hinge of the ages = Wright's historical-Jesus scholarship (strong historiographically) + inaugurated eschatology (theological); repentance-in-the-desert as the disorder phase = Rohr's contemplative pattern (theological/phenomenological); circumcision and the rites as effective-through-faith = Aquinas's own claim, carried theologically; 'He must increase, I must decrease' as the self-limiting perspective = central-theme structural fit (strong as fit, speculative as metaphysics)."
+evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updating under active inference (Friston PRS-04/PRS-06) = speculative-formal (the mapping is structural, not measured); the forerunner office at the hinge of the ages = Wright's historical-Jesus scholarship (strong historiographically) + inaugurated eschatology (theological); repentance-in-the-desert as the disorder phase = Rohr's contemplative pattern (theological/phenomenological); circumcision and the rites as effective-through-faith = Aquinas's own claim, carried theologically; 'He must increase, I must decrease' as the self-limiting perspective = central-theme structural fit (strong as fit, speculative as metaphysics)."
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-07-31T10:27:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T12:24:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 231 — Contemporary Parallel: The Forerunner and the Formation of Readiness
@@ -36,7 +36,7 @@ The underlying inquiry-problem, medieval and contemporary alike: **a transition 
 
 The emerging paradigm offers three convergent resources.
 
-**Active inference as readiness-formation.** In Tom's PRS-form record of the Friston program, P4 (organism as active modeler) and P6 (multi-agent coherence via mutual modeling) describe agents that act on the world precisely to make their own future perceptions receivable — sampling, rehearsing, updating priors so that what arrives next is not surprising into oblivion. Aquinas's language is startlingly close: John's baptism "prepared men to receive Christ's baptism *by accustoming them to such a practice*." Accustoming is prior-installation. The crowds walking into the Jordan were, in this reading, performing the rehearsal that made the sacrament receivable — readiness as a computational achievement, not a legal formality. This mapping is structural and speculative: nothing here has been measured. But the fit is exact at the level of form.
+**Active inference as readiness-formation.** In Tom's PRS-form record of the Friston program, PRS-04 (organism as active modeler) and PRS-06 (multi-agent coherence via mutual modeling) describe agents that act on the world precisely to make their own future perceptions receivable — sampling, rehearsing, updating priors so that what arrives next is not surprising into oblivion. Aquinas's language is startlingly close: John's baptism "prepared men to receive Christ's baptism *by accustoming them to such a practice*." Accustoming is prior-installation. The crowds walking into the Jordan were, in this reading, performing the rehearsal that made the sacrament receivable — readiness as a computational achievement, not a legal formality. This mapping is structural and speculative: nothing here has been measured. But the fit is exact at the level of form.
 
 **Inaugurated eschatology as the hinge structure.** PRS-03 in the Wright-tradition wiki records the move: the decisive event has already occurred, but its full implications are still being worked out. John stands at the hinge — the last figure of the old form, the first herald of the new — and the historical scholarship behind this picture (the Elijah expectation, the desert crowds, the baptism of repentance as a renewed-exodus symbol) is among the firmer parts of today's material. Wright's larger frame also supplies what "salvation" means at this hinge (PRS-05): incorporation into the people being formed, which is exactly what John's gathering-then-handing-over accomplishes.
 
@@ -57,7 +57,7 @@ John the Baptist may be the cleanest scriptural figure of the central claim this
 ## Bridges
 
 - **PRS-03, Wright-tradition wiki** (inaugurated eschatology) — John at the hinge of the ages; the decisive thing arrives into a prepared-but-incomplete moment. Evidence: theological, resting on strong historical scholarship.
-- **P4 + P6, Tom's PRS-form record of the Friston program** (active modeler; mutual modeling) — "accustoming them to such a practice" as prior-installation; readiness as computational achievement. Evidence: formal-speculative.
+- **PRS-04 + PRS-06, Tom's PRS-form record of the Friston program** (active modeler; mutual modeling) — "accustoming them to such a practice" as prior-installation; readiness as computational achievement. Evidence: formal-speculative.
 - **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the desert baptism of repentance as institutionalized disorder phase, load-bearing but not final. Evidence: theological/phenomenological.
 - **PRS-05, Wright-tradition wiki** (salvation as incorporation) — John gathers a people in order to hand them over; salvation-as-inclusion is enacted in the handoff. Evidence: theological.
 - **CROSS-004, master index** (second-first-language competence) — what John installs is receiving-competence: the capacities a perspective needs before a new tradition's content can land. Evidence: convergent-speculative across three programs.

@@ -10,15 +10,15 @@ length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology) [Wright primary on Christology III Q.1-59]"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology; PRS-03 the Universal Christ)"
-  - "traditions/friston/prs_triplets.md (P6 multi-agent coherence via mutual modeling)"
-  - "traditions/fredrickson/prs_triplets.md (P6 democratizing participation; P8 high-quality listening as resonance enabler)"
+  - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-06 democratizing participation; PRS-08 high-quality listening as resonance enabler)"
   - "master/cross_program_index.md (CROSS-018 positivity resonance as the biological measurement of Thomistic union — Fredrickson/Stump)"
-evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learning-by-coupling / mutual modeling (Friston P6) = speculative-formal; presence-among as the form love takes ~ positivity resonance requiring co-presence (Fredrickson, CROSS-018) = empirical at the psychophysiology level, speculative as theology; adoption-as-incorporation = Wright's Pauline scholarship (strong textually, theological in force); the Universal Christ / incarnational epistemology (Rohr PRS-04) = theological; baptism-of-the-sinless as solidarity = Aquinas's own claim, theological."
+evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learning-by-coupling / mutual modeling (Friston PRS-06) = speculative-formal; presence-among as the form love takes ~ positivity resonance requiring co-presence (Fredrickson, CROSS-018) = empirical at the psychophysiology level, speculative as theology; adoption-as-incorporation = Wright's Pauline scholarship (strong textually, theological in force); the Universal Christ / incarnational epistemology (Rohr PRS-04) = theological; baptism-of-the-sinless as solidarity = Aquinas's own claim, theological."
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-07-31T10:27:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T12:24:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 232 — Contemporary Parallel: The Exemplar in the Water
@@ -35,7 +35,7 @@ The inquiry-problem beneath both frames: **propositional transmission cannot, by
 
 ## Resource
 
-**Mutual modeling.** P6 in Tom's PRS-form record of the Friston program: multi-agent coherence arises when agents model one another modeling one another — when each one's generative model includes the other's. An exemplar, on this reading, is an agent whose visible practice gives other agents something to model that is *already in their own action-space*. Christ in the Jordan is, formally, the goal-state rendered in the learner's own medium: not a description of righteousness but righteousness performed where the limited agent's own body goes. "To do first thyself" is the condition under which coupling, rather than mere reception, becomes possible. Speculative-formal — but it names a mechanism where "example" otherwise floats.
+**Mutual modeling.** PRS-06 in Tom's PRS-form record of the Friston program: multi-agent coherence arises when agents model one another modeling one another — when each one's generative model includes the other's. An exemplar, on this reading, is an agent whose visible practice gives other agents something to model that is *already in their own action-space*. Christ in the Jordan is, formally, the goal-state rendered in the learner's own medium: not a description of righteousness but righteousness performed where the limited agent's own body goes. "To do first thyself" is the condition under which coupling, rather than mere reception, becomes possible. Speculative-formal — but it names a mechanism where "example" otherwise floats.
 
 **Resonance requires presence.** The Fredrickson program's empirical core (and CROSS-018's bridge to the Thomistic account of union recorded in the Stump-tradition wiki) is that love, measured as positivity resonance, is a co-presence phenomenon: biobehavioral synchrony, shared attention, mutual care — bodies in the same place. Aquinas's defense of the non-austere, table-sharing, crowd-walking Christ reads, under this light, almost like a methods section: if the end is union with the lowly, the means must be micro-moments of real encounter with the lowly, which austere solitude structurally forecloses. Here the contemporary evidence is genuinely empirical — at the level of vagal tone and synchrony, not of Christology — and the bridge from one to the other is the speculative step, marked as such.
 
@@ -55,11 +55,11 @@ Day 231 and Day 232 are a diptych of the central claim. Yesterday the limited pe
 
 ## Bridges
 
-- **P6, Tom's PRS-form record of the Friston program** (mutual modeling) — "do first thyself" as the condition for coupling; the exemplar renders the goal-state modelable in the learner's medium. Evidence: formal-speculative.
+- **PRS-06, Tom's PRS-form record of the Friston program** (mutual modeling) — "do first thyself" as the condition for coupling; the exemplar renders the goal-state modelable in the learner's medium. Evidence: formal-speculative.
 - **CROSS-018, master index** (positivity resonance ↔ Thomistic union) — presence-among as love's empirical form; Christ's table-sharing manner of life as the means union actually requires. Evidence: empirical at the psychophysiology level; speculative as the bridge to Christology.
 - **PRS-04, Rohr-tradition wiki** (embodied love as epistemology) — the real dove, the real water: manifestation refuses abstraction. Evidence: theological.
 - **PRS-05, Wright-tradition wiki** (salvation as incorporation) — the Father's voice demonstrates adoption: grafting into the body, inclusion in the people. Evidence: strong textually (Pauline), theological in force.
-- **P6 + P8, Fredrickson-tradition wiki** (democratizing participation; listening as resonance enabler) — "to show sinners that access was available to them": the manner of life as open-access design. Evidence: empirical core, speculative extension.
+- **PRS-06 + PRS-08, Fredrickson-tradition wiki** (democratizing participation; listening as resonance enabler) — "to show sinners that access was available to them": the manner of life as open-access design. Evidence: empirical core, speculative extension.
 
 ## Where this leaves us
 

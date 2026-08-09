@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-235 - Christ's Transfiguration and Passion - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/235, pars/III, q/45 q/46]
-last_qc_at: "2026-07-23T08:21:40"
+last_qc_at: "2026-08-08T12:24:36"
 last_qc_outcome: "pass"
 ---
 
