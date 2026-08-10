@@ -3,9 +3,9 @@ day: 255
 title: Penance as a Virtue (Contemporary)
 pairs_with: "[[Day-255 - Penance as a Virtue]]"
 length_target_words: 2200
-length_actual_words: 804
+length_actual_words: 885
 length_tier: medium
-length_ratio_to_target: 0.37
+length_ratio_to_target: 0.402
 length_note: "Runs ~63% under the medium tier (804 vs 2200): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-06 embodied/tacit habituation)"
@@ -52,7 +52,7 @@ The motif appears as the consolidation of a perspective's orientation. A limited
 - **Friston PRS-04 (deepened prior)** — *formal analogy.* The habit as a sculpted generative model.
 - **Levin PRS-03 (stabilized attractor)** — *formal analogy, biologically motivated.* The basin deepened by repetition.
 - **Rohr PRS-05 (sustained transformation)** — *theological / contemplative.* The settled shape of dying-into-the-true.
-- **Stump (Thomistic interlocutor)** — receives the habit-as-prior/attractor reframe of acquired and infused virtue.
+- **PRS-24 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological, dual-track.* Acquired virtue built up by practice and infused virtue received in an instant with grace, held as operating at different levels of the soul's powers rather than as rivals. This is what receives the habit-as-prior/attractor reframe, and it also marks that reframe's limit: infused virtue is precisely the track repetition does not produce.
 
 ## Where this leaves us
 

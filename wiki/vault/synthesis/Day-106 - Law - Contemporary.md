@@ -3,7 +3,7 @@ day: 106
 title: Law (Contemporary)
 pairs_with: "[[Day-106 - Law]]"
 length_target_words: 1500
-length_actual_words: 1695
+length_actual_words: 1724
 length_tier: short
 length_note: "Over short-tier target (1500) at 1.13: Q.90-91 open the law treatise with the five-fold map, which the entry must lay out whole; linkage across four traditions plus Wright/Rohr justifies the modest over-run."
 karpathy_wiki_sources:
@@ -15,19 +15,19 @@ karpathy_wiki_sources:
   - "Wright, Surprised by Hope (law in service of new-creation vocation)"
   - "Rohr, The Universal Christ (eternal Logos as cosmic pattern)"
 evidence_strength_summary: "Aquinas's structural definition is conceptually clean; Levin's morphogenetic-field claims are empirically grounded; Hoffman's interface theory is formally precise but interpretively contested; Kastrup's idealism is metaphysical argument; the theological readings of law-as-pattern are interpretive."
-length_ratio_to_target: 1.13
+length_ratio_to_target: 1.149
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-07-24T10:28:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T12:23:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Contemporary)
 
 ## Frame
 
-Aquinas opens the long treatise on law with a definition that has lasted: an ordinance of reason, for the common good, made by him who has care of the community, and promulgated. He then sets the five-fold map — eternal, natural, human, divine (old and new), and the *fomes* (the disordered law of the members). The question for us is not whether this map is right in its medieval terms; it's whether the *underlying structure* it identifies — a real pattern that constrains thriving, accessible in different ways at different levels — picks out something that contemporary inquiry has independently reconstructed.
+Aquinas opens the long treatise on law (Q.90 a.1-4) with a definition that has lasted, assembled one article at a time: law belongs to reason (a.1), is ordered to the common good (a.2), is made by one who has care of the community (a.3), and must be promulgated (a.4). He then sets the five-fold map (Q.91) — eternal, natural, human, divine (old and new), and the *fomes* (the disordered law of the members). The question for us is not whether this map is right in its medieval terms; it's whether the *underlying structure* it identifies — a real pattern that constrains thriving, accessible in different ways at different levels — picks out something that contemporary inquiry has independently reconstructed.
 
 The contemporary version of Aquinas's question is: *Are there objective patterns that govern how complex agents flourish, accessible to agents in proportion to their perspective, and binding in something stronger than mere convention?*
 

@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-091 - Cardinal Virtue - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/091, pars/I-II, q/60-61, virtue, cardinal-virtues]
-last_qc_at: "2026-08-01T04:22:41"
+last_qc_at: "2026-08-09T06:27:55"
 last_qc_outcome: "pass"
 ---
 

@@ -3,9 +3,9 @@ day: 256
 title: Remitted Venial Sin (Contemporary)
 pairs_with: "[[Day-256 - Remitted Venial Sin]]"
 length_target_words: 1500
-length_actual_words: 614
+length_actual_words: 702
 length_tier: short
-length_ratio_to_target: 0.41
+length_ratio_to_target: 0.468
 length_note: "Runs ~59% under the short tier (614 vs 1500): held to the PRS argument for a single narrow question (III Q.87) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference as continuous free-energy reduction, not on/off)"
@@ -50,7 +50,7 @@ The motif appears as incremental computation under limited resources. A perspect
 - **Friston (continuous free-energy reduction)** — *formal, well-developed.* Repair as graded magnitude, not a switch; sharpest resource.
 - **Hawkins PRS-06 (hierarchical/heterarchical predictive memory)** — *empirical-in-domain (neuroscience).* Corrections propagate gradually across levels.
 - **Rohr PRS-05 (gradual transformation)** — *theological / contemplative.* The true self emerging by degrees.
-- **Stump (Thomistic interlocutor)** — receives the continuous-repair reframe of degrees of remission.
+- **PRS-22 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / moral-psychological.* The vices as predictable failure modes of an intellect-will system, each misordering a good that is itself real in object, manner, or *measure* relative to the agent's final end. The measure axis is what makes graded disorder — and therefore graded repair — intelligible. The register has no entry specific to venial-sin remission, so this receives the continuous-repair reframe rather than grounding it.
 
 ## Where this leaves us
 

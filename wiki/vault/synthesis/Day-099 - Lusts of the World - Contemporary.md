@@ -18,7 +18,7 @@ length_note: "Over target: covers two dense questions (Q.76 ignorance + Q.77 pas
 mind_first_reframe: "Aquinas's two pre-malice etiologies of sin (Q.76 ignorance, Q.77 passion / Johannine triad) recover as substrate-level diagnostics: vincible ignorance is the prior-shaping consequence of a policy-of-not-attending (curiosity-as-active-inference); passion-as-capture is precision-as-policy-hijack via fixation or dilution; self-love (Q.77 a.4) is perspective-bias — the unavoidable structural feature of any agent individuated by perspective-limitation; and the Johannine triad maps onto three architectural levels (body-bound, socio-cognitive, self-modeling) along which self-love characteristically deforms."
 central_theme_thread: "Q.77 a.4's 'inordinate self-love is the cause of every sin' and the project's central claim — 'conscious agents are individuated by the limitations of their perspective' — are the same statement in different vocabularies. The individuating perspective bias is what Augustine called amor sui; the cure in both frames is charity, the integrating prior that re-couples the agent's perspective to the wider whole and so changes what the agent optimizes for. Working out salvation in fear and trembling just is this slow retraining of priors under guidance from those who perceive more of the whole."
 tags: [synthesis, day/099, theme/perspective-bias, theme/passion-and-capture]
-last_qc_at: "2026-08-01T16:53:53"
+last_qc_at: "2026-08-09T20:20:47"
 last_qc_outcome: "pass"
 ---
 

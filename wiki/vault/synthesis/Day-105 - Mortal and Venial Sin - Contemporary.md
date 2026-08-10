@@ -17,7 +17,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category; line 772 Levin × Friston metastability collapse)"
 evidence_strength_summary: "Empirical: continuous spectrum of attractor-depth in active-inference paradigms (well-supported); practically important thresholds in clinical metastability work (mid evidence). Formal: phase-transition mathematics from one attractor regime to another (mid evidence in neural dynamics; high in statistical mechanics generally). Speculative: identification of the medieval 'loss of charity' with a phase-transition crossing in the agent's affective-relational coupling capacity. Theological: Wright on the Pauline 'in Christ / not in Christ' polarity (high); Rohr on the false self / True Self distinction (mid)."
 tags: [synthesis, day/105, theme/threshold, theme/phase-transition]
-last_qc_at: "2026-08-01T18:29:06"
+last_qc_at: "2026-08-09T20:20:27"
 last_qc_outcome: "pass"
 ---
 

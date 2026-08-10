@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-102 - Original Sin - Contemporary]]"
 tags: [summa, day/102, pars/I-II, q/82-83]
 fidelity_checked: true
-last_qc_at: "2026-07-16T04:19:40"
+last_qc_at: "2026-08-09T20:20:16"
 last_qc_outcome: "pass"
 ---
 # Day 102 — Original Sin

@@ -18,7 +18,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-08-05T00:26:06"
+last_qc_at: "2026-08-09T14:27:47"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
@@ -69,7 +69,7 @@ Worship is *the practice through which limited-perspective agents re-cognize the
 
 *Empirical*: Anthropological ubiquity of sacrifice. Costly-signaling effects on group cohesion. Ritual effects on individual self-regulation (some replication issues but generally robust).
 
-*Empirical*: Predictive-processing accounts of embodied learning.
+*Formal*: Predictive-processing accounts of embodied learning. These are mathematical and modelling results; reading them as a claim about what ritual *is* doing in a worshipper is an interpretive step beyond the formalism.
 
 *Theological*: Sacramental ontology — the claim that the New-Covenant sacraments are efficacious — is a theological position with specific evidential structure (Christ's institution, the practice of the apostolic church, the formal teaching of the magisterium for Catholics).
 

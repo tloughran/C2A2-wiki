@@ -3,28 +3,28 @@ day: 261
 title: The Minister of Confession (Contemporary)
 pairs_with: "[[Day-261 - The Minister of Confession]]"
 length_target_words: 1500
-length_actual_words: 744
+length_actual_words: 831
 length_tier: short
-length_ratio_to_target: 0.5
+length_ratio_to_target: 0.554
 length_note: "Compact by design: Suppl. Q.7–8 (nature of confession + its minister) develops the single disclosure-into-a-shared-field-and-delegated-authority motif rather than mirroring articles; substance complete per the five-question review. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (confession as making prediction-error model-available; PRS-06 nested agency / power of the keys)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 disclosure within a relational/embodied context)"
   - "traditions/rohr/prs_triplets.md (PRS-05 the false self surfaced to be transformed)"
-  - "traditions/wright (confession within the covenant community; absolution by delegated authority)"
+  - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people united with God — the covenant-inclusion half of absolution; the delegated-keys half is theological and carries no wiki id)"
 evidence_strength_summary: "Confession-as-externalized-error-representation is formal (Friston); minister-by-power-of-keys as nested agency is formal (Friston PRS-06); the absolving authority and its content are theological (Wright/Rohr)."
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-07-31T20:20:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-08T22:28:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 261 — The Minister of Confession (Contemporary Parallel)
 
 ## Frame
 
-Aquinas (Suppl. Q.7–8) treats the *nature* of confession and its *minister*. Following Augustine, confession "lays bare the hidden disease by the hope of pardon" — the penitent voices the sin to the priest, who knows and absolves it by the power of the keys. Confession is an act of virtue, and its minister acts not on his own authority but on Christ's delegated power. The contemporary version under mind / conscious-realist monism: what does *disclosure* do for a perspective-limited agent's repair, and what is it for one agent to absolve by an authority that is not its own?
+Aquinas (Suppl. Q.7–8) treats the *nature* of confession and its *minister*. In Q.7 a.1 — whether Augustine fittingly defines confession — the definition stands: confession "lays bare the hidden disease by the hope of pardon." Q.8 then turns to the minister, and the penitent voices the sin to the priest, who knows and absolves it by the power of the keys. Confession is an act of virtue, and its minister acts not on his own authority but on Christ's delegated power. The contemporary version under mind / conscious-realist monism: what does *disclosure* do for a perspective-limited agent's repair, and what is it for one agent to absolve by an authority that is not its own?
 
 ## Problem
 
@@ -51,7 +51,7 @@ The motif appears as the move from private limitation to shared correction. A pe
 - **Friston (confession as externalized error-representation; PRS-06 nested agency)** — *formal, well-developed.* Disclosure makes the deviation jointly correctable; minister as multi-scale agent.
 - **McGilchrist PRS-06 (relational/embodied disclosure)** — *humanistic, well-evidenced.* Truthful confession depends on a held relationship.
 - **Rohr PRS-05 (surfacing the false self)** — *theological / contemplative.* Disclosure as condition of transformation.
-- **Wright (absolution within covenant; delegated authority)** — *scriptural, high within method.* The content of the loosing.
+- **Wright PRS-13 (`traditions/wright/prs_triplets.md`) — salvation as inclusion in the covenanted people united with God** — *scriptural, high within method.* Absolution as real re-inclusion, not a private therapeutic act; this is the content of the loosing. The delegated-keys structure itself is theological and has no corresponding wiki node — cited here as canonical-work ground truth, not as an id.
 
 ## Where this leaves us
 

@@ -3,8 +3,9 @@ day: 76
 title: Timeless Delight (Contemporary)
 pairs_with: "[[Day-076 - Timeless Delight]]"
 length_target_words: 2200
-length_actual_words: 1698
-length_ratio_to_target: 0.77
+length_actual_words: 1429
+length_ratio_to_target: 0.650
+length_note: "Runs below the medium-tier floor without padding. Q.30-31 is a two-question but article-light locus, and each load-bearing article (a.2 timeless delight, a.4 rest-of-appetite, a.5 the turn to bodily pleasure, a.6 touch/sight ordering) is treated substantively; the constitution prefers short-and-substantive over padded. The 2026-07-08 'correction' to 1698 was itself wrong — recounted 2026-08-09 with the constitution's regex over the parsed body."
 length_tier: medium
 mind_first_reframe: "Q.31 a.2's 'timeless delight in the unchangeable good' is, under mind-monism, the alter's recovery of contact with the non-dissociative substrate (mind-at-large per Kastrup / the unobserved-by-interface reality per Hoffman) rather than union with a numerically distinct external object."
 central_theme_thread: "Appetite is a diagnostic of perspectival incompleteness; timeless delight is what would be available if a perspective-limited agent encountered the substrate that is its own ground — but the agent must compute its way there from limited resources, not abolish the perspective that is itself the agent."
@@ -18,8 +19,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (love as ontological category)"
 evidence_strength_summary: "Q.31 a.2's claim that delight in an unchangeable good is outside time receives speculative metaphysical support from Kastrup/Hoffman (idealism + interface theory) and a strong empirical analogue in 'flow' research; Aquinas's distinction of joy/delight (a.3) is reframed empirically by predictive-processing accounts of valence; the touch/sight ordering (a.6) reads as Hoffman-style fitness-tuned channels — speculative bridge."
 tags: [synthesis, day/076, theme/timeless-delight, theme/perspective-limitation]
-last_qc_at: "2026-08-01T16:52:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T18:35:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 76 — Timeless Delight (Contemporary)

@@ -3,7 +3,7 @@ day: 294
 title: Final Conflagration (Contemporary)
 pairs_with: "[[Day-294 - Final Conflagration]]"
 length_target_words: 1500
-length_actual_words: 1020
+length_actual_words: 1039
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence / poetic naturalism; PRS-11 emergence taxonomy; PRS-13 timeless universe, arrow emerging from the wavefunction; PRS-15 Past Hypothesis, the low-entropy boundary condition grounding the thermodynamic arrow)"
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-02 the disorder necessary for growth)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 target-state restoration without loss of substance)"
 evidence_strength_summary: "The 'transformation not annihilation' reading is empirical/physical (Carroll, thermodynamics — matter conserved, state changed); the new-creation reading is scriptural-scholarly (Wright); the one-fire-perspective-relative-effect point is conceptual; the cosmic-restoration register is theological (Rohr); Aquinas's own physics is flagged obsolete by the speaker."
-length_note: "Runs ~32% under the short tier (1020 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.68
+length_note: "Runs ~31% under the short tier (1039 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
+length_ratio_to_target: 0.693
 mind_first_reframe: "The conflagration is the renewal of one conserved cosmos — matter changed in state, not destroyed; the same purifying process is felt differently by different perspectives according to what each contains to be purged."
 central_theme_thread: "One process, perspective-relative effect: the fire that is mere transformation 'from outside' is pain or peace 'from inside' depending on the perspective's own state — the project's individuation-by-limitation written across the whole cosmos at its renewal."
 tags: [synthesis, day/294, theme/cosmic-renewal-as-transformation-not-annihilation]
-last_qc_at: "2026-07-28T18:26:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T10:29:26"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 294 — Final Conflagration (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the renewal of a conserved cosmos, and the persp
 
 ## Resource
 
-Because this is a cosmological locus, the lead comes from the Carroll-tradition program. Tom's PRS-form record of Carroll's work (PRS-01, *ontological closure vs. emergence / poetic naturalism*; PRS-11, *emergence taxonomy*; PRS-13, *the timeless universe, with the arrow emerging from the wavefunction*; PRS-15, *the Past Hypothesis — the low-entropy initial state as the boundary condition that grounds the thermodynamic arrow*) supplies the modern grammar Aquinas lacked. Conservation laws make "transformation not annihilation" the *default* physical reading of any cosmic end-state: matter-energy is redistributed and re-stated, not destroyed; what changes is *macrostate and order*, not substance — precisely Aquinas's "elements changed in state, not consumed." The thermodynamic arrow further reframes "the heavens set at rest": Aquinas imagines the higher heavens *brought to rest* by God's will, and a poetic-naturalist cosmology likewise frames cosmic destiny in terms of the system's approach to a final equilibrium ordered state. The Wright-tradition program does the load-bearing theological work: PRS-04 (*resurrection as historical and cosmological*) and *Surprised by Hope* recover exactly Aquinas's first intuition against the popular distortion — the Christian hope is *new creation*, the renewal and liberation of the present cosmos (Rom 8), **not** an escape from matter into a disembodied heaven. Aquinas's "purified, not destroyed; renewed for the new earth" is a thoroughly Wrightian sentence. The Rohr-tradition program supplies the restorative scope: PRS-03 (*the Universal Christ*) reads the renewed cosmos as the body in which Christ is "all in all," and PRS-02 (*the disorder necessary for growth*) reframes the conflagration as purgative transformation rather than punitive erasure. The Levin-tradition program offers a small but apt empirical figure: PRS-01 (target-state restoration) shows a system returning to its proper *form* after perturbation without loss of its underlying material — Aquinas's incandescent iron, made biological.
+Tom's PRS-form record of Carroll's work (PRS-01, *ontological closure vs. emergence / poetic naturalism*; PRS-11, *emergence taxonomy*; PRS-13, *the timeless universe, with the arrow emerging from the wavefunction*; PRS-15, *the Past Hypothesis — the low-entropy initial state as the boundary condition that grounds the thermodynamic arrow*) supplies the modern grammar Aquinas lacked. Conservation laws make "transformation not annihilation" the *default* physical reading of any cosmic end-state: matter-energy is redistributed and re-stated, not destroyed; what changes is *macrostate and order*, not substance — precisely Aquinas's "elements changed in state, not consumed." The thermodynamic arrow further reframes "the heavens set at rest": Aquinas imagines the higher heavens *brought to rest* by God's will, and a poetic-naturalist cosmology likewise frames cosmic destiny in terms of the system's approach to a final equilibrium ordered state. The Wright-tradition program does the load-bearing theological work: PRS-04 (*resurrection as historical and cosmological*) and *Surprised by Hope* recover exactly Aquinas's first intuition against the popular distortion — the Christian hope is *new creation*, the renewal and liberation of the present cosmos (Rom 8), **not** an escape from matter into a disembodied heaven. Aquinas's "purified, not destroyed; renewed for the new earth" is a thoroughly Wrightian sentence. The Rohr-tradition program supplies the restorative scope: PRS-03 (*the Universal Christ*) reads the renewed cosmos as the body in which Christ is "all in all," and PRS-02 (*the disorder necessary for growth*) reframes the conflagration as purgative transformation rather than punitive erasure. The Levin-tradition program offers a small but apt empirical figure: PRS-01 (target-state restoration) shows a system returning to its proper *form* after perturbation without loss of its underlying material — Aquinas's incandescent iron, made biological.
 
 ## Solution (proposed, speculative)
 

@@ -3,9 +3,9 @@ day: 254
 title: The Sacrament of Penance (Contemporary)
 pairs_with: "[[Day-254 - The Sacrament of Penance]]"
 length_target_words: 2200
-length_actual_words: 857
+length_actual_words: 966
 length_tier: medium
-length_ratio_to_target: 0.39
+length_ratio_to_target: 0.439
 length_note: "Runs ~61% under the medium tier (857 vs 2200): held to the PRS argument for a single question (III Q.84) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; PRS-14 symptom formation/persistence/resolution; active inference as error-correction to preferred states)"
@@ -50,7 +50,7 @@ The motif appears as re-alignment. The agent is individuated by the limits of it
 - **Rohr PRS-05 (false-self to true-self transformation)** — *theological / contemplative.* Penance as the mechanism of transformation, not punishment.
 - **Levin PRS-03 (restoration toward target form)** — *empirical-in-domain.* Active re-approach to a set-point after perturbation.
 - **Wright (covenant return)** — *scriptural, high within method.* Repentance as restored membership.
-- **Stump (Thomistic interlocutor)** — receives the control-loop reframe of the integral parts.
+- **PRS-26 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / philosophical-psychological.* Moral transformation as cooperative causality: the agent's natural powers are genuinely operative while being elevated and directed by grace working within them, so the turn is neither self-effort alone nor imposed from outside. The register carries no entry specific to contrition, confession, or satisfaction; this is the nearest anchored resource, and it *receives* the control-loop reframe of the integral parts rather than supplying it.
 
 ## Where this leaves us
 

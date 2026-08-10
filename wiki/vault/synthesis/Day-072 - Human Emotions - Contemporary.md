@@ -3,12 +3,13 @@ day: 72
 title: "Human Emotions (Contemporary)"
 pairs_with: "[[Day-072 - Human Emotions]]"
 length_target_words: 1500
-length_actual_words: 1640
-length_ratio_to_target: 1.093
+length_actual_words: 1762
+length_ratio_to_target: 1.175
+length_measurement_note: "Recounted 2026-08-09 with the constitution's regex over the parsed body (qc_sweep.split_frontmatter); the prior 1640 was ~120 words low. Against the SHORT label this reads 1.175; against MEDIUM — which the transcript's word_count 2918 selects under the policy table — it is 0.790, in band. The tier label remains the standing 2026-06-22 escalation and is Tom's to settle."
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (PRS on positivity-resonance and broaden-and-build; affect as relational-substrate signal)"
-  - "wiki/traditions/friston/wiki.md (PRS on appraisal-as-inference; precision-weighted prediction error as affective valence)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-16 expected free energy as unified mathematics of risk and ambiguity)"
   - "wiki/traditions/levin/wiki.md (PRS on bioelectric substrate; affect as embodied integration signal)"
   - "wiki/traditions/mcgilchrist/wiki.md (left/right hemispheric registers of affective experience)"
   - "wiki/traditions/hoffman/wiki.md (interface-theory frame on emotions as fitness-tracking icons)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.22-23 + C2A2 fra
 mind_first_reframe: "Aquinas's eleven-passion catalog (Q.23) preserves under a contemporary appraisal-and-active-inference frame as the alter's distinct affective-modes of registering relational substrate-state: love/hate as primary valence; desire/aversion as future-orientation; joy/sorrow as present-state-evaluation [concupiscible]; hope/despair as future-attainability; fear/daring as threat-response; anger as obstruction-response [irascible]. The sensitive-appetite locus (Q.22) preserves as the embodied register that interfaces with intellective evaluation; affect is data, not noise."
 central_theme_thread: "Passions are the embodied-affective-interface through which the alter's perspective-limited apprehension of substrate-source-integration vs. dis-integration registers as feeling. Affect is computational signal of alignment-or-mismatch between current apprehension and felt-direction-toward-loving-unity; passions broaden the alter's repertoire (Fredrickson) when aligned with formal direction, narrow when misaligned. The alter's individuation-by-perspective-limitation is what produces affect at all — a fully integrated perspective would not need affect as signal."
 tags: [synthesis, day/072, theme/passions, theme/sensitive-appetite, theme/affective-interface]
-last_qc_at: "2026-08-01T16:52:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T18:35:16"
+last_qc_outcome: "rewrote"
 ---
 # Day 72 — Contemporary Parallel: *Human Emotions, the Sensitive Appetite, and Affect as the Substrate-Network Integration Signal*
 
@@ -67,7 +68,7 @@ The central theme says that perspective-limitation individuates conscious agents
 
 ## Bridges
 
-- **Friston-tradition wiki, PRS on appraisal-as-inference and precision-weighted prediction error.** Mature formalism for the affective register at the active-inference level.
+- **PRS-04 + PRS-16, Friston-tradition wiki** (organism as active modeler — the continuous predict-test-update system; expected free energy as the unified mathematics of risk and ambiguity). Mature formalism for the affective register at the active-inference level: valence tracks the expected-free-energy gradient, arousal the precision weight.
 - **Fredrickson-tradition wiki, PRS on positivity-resonance and broaden-and-build.** *Strong empirical*: broadens-vs-narrows mapping to concupiscible-vs-disordered passions.
 - **Levin-tradition wiki, on bioelectric whole-organism integrative registration.** *Strong empirical*: embodied-substrate of affect.
 - **McGilchrist-tradition wiki, on right-hemispheric relational affect vs. left-hemispheric conceptual elaboration.** Bi-hemispheric account of the medieval sensitive/intellective appetite distinction.

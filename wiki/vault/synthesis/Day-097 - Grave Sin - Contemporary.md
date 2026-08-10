@@ -3,22 +3,23 @@ day: 97
 title: Grave Sin (Contemporary)
 pairs_with: "[[Day-097 - Grave Sin]]"
 length_target_words: 1500
-length_actual_words: 1677
+length_actual_words: 1760
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-05 suffering and divine permission; PRS-09 cooperative-causality account of virtue)"
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler; precision-weighting)"
   - "traditions/mcgilchrist/wiki.md (PRS-01 hemispheric asymmetry as cultural pathology; PRS-05 attention as ontological act)"
   - "traditions/fredrickson/wiki.md (broaden-and-build; negativity bias)"
+  - "traditions/levin/prs_triplets.md (PRS-09 principled framework for cognitive attribution across scales — the 'diverse intelligence' agency-at-any-scale framework the Bridges section leans on)"
   - "master/C2A2_master_wiki.md (agency-at-multiple-scales)"
 evidence_strength_summary: "The species-by-end and gravity-by-end analytic moves are philosophical-textual (Aquinas + analytic Thomism). Friston's precision-weighting account of voluntariness is formal-empirical. McGilchrist's account of cold/spiritual sin as left-hemispheric pathology is medium-confidence empirical."
-length_ratio_to_target: 1.118
+length_ratio_to_target: 1.173
 length_note: "Covers two dense Summa questions in one day (Q.72 species + Q.73 gravity, 19 articles); the species-by-end / gravity-as-depth-times-precision linkage is substantive bridging work, not padding."
 mind_first_reframe: "Aquinas's structural anatomy of sin (Q.72 species, Q.73 gravity) recovers as active-inference policy diagnostics: species is fixed by the policy's preferred-outcome prior (species-by-end), gravity is the product of how high in the prior-stack the perversion sits and how much precision the agent puts on it (depth × precision). The counter-intuitive ranking — spiritual sins graver than carnal — survives as the difference between prior-level mis-setting and local precision-failure at the policy level."
 central_theme_thread: "Q.73 a.1's Legion-vs-unity claim — vice fragments the agent into many unintegrated appetitive sub-agents while virtue unifies the agent under reason — is one of the most direct articulations in I-II of the project's central frame: the unified agent is the one whose multiple partial perspectives (toward self, neighbor, body) are held together by a single integrating prior (charity / loving unity); vice does not just make the agent bad, it makes the agent plural in the wrong way."
 tags: [synthesis, day/097, theme/species-by-end, theme/gravity-and-precision]
-last_qc_at: "2026-08-01T06:27:36"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T08:22:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 97 — Grave Sin (Contemporary)
@@ -71,7 +72,8 @@ The deepest hit to the central theme today is Q.73 a.1 — *all sins are not con
 - **Friston precision-weighting** (multiple PRS triplets) — formal. Gravity-tracks-voluntariness ↔ precision-on-the-high-level-prior.
 - **PRS-01 in the McGilchrist-tradition wiki** (hemispheric asymmetry) — empirical (medium). The spiritual-graver-than-carnal asymmetry has a left-hemispheric-pathology echo.
 - **PRS-05 in the Stump-tradition wiki** (suffering and divine permission) — analytic-theological. Q.73 a.10 — excellence of sinner aggravates sin — pairs with the cooperatively-held account.
-- **Master/C2A2 cross-program index** — agency-at-multiple-scales. Q.72 a.4's God / self / neighbor order maps onto Levin's agent-at-each-scale picture.
+- **PRS-09 in `traditions/levin/prs_triplets.md`** (principled framework for cognitive attribution across scales; Levin & Resnik, "Mind Everywhere," *Biological Theory*, 2026) — empirical/methodological, confidence High. Q.72 a.4's God / self / neighbor ordering maps onto the diverse-intelligence picture in which goal-directedness is attributed at any scale on a falsifiable, non-vitalist basis. Note the id lives in `prs_triplets.md` only; there is no PRS-09 row in `traditions/levin/wiki.md`.
+- **`master/C2A2_master_wiki.md`** — agency-at-multiple-scales as the master-layer framing that gathers the above. No `CROSS-NN` id is claimed here; the anchor is the Levin triplet named in the preceding bullet.
 
 ## Where this leaves us
 
