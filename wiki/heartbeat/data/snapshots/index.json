@@ -1,7 +1,20 @@
 {
-  "generated": "2026-08-09",
-  "count": 48,
+  "generated": "2026-08-10",
+  "count": 49,
   "snapshots": [
+    {
+      "date": "2026-08-10",
+      "time": "11:39 UTC",
+      "sort_key": "20260810113956",
+      "generated_at": "2026-08-10T11:39:56Z",
+      "file": "digest-20260810-113956.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 232,
+      "sources_reached": 19,
+      "high_relevance": 6,
+      "primary_themes": "Capability Jump + Governance Policy"
+    },
     {
       "date": "2026-08-09",
       "time": "11:18 UTC",
