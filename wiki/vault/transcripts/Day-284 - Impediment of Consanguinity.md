@@ -16,27 +16,29 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-284 - Impediment of Consanguinity - Contemporary]]"
 tags: [summa, day/284, pars/suppl, q/53-54]
-last_qc_at: "2026-07-20T04:20:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T20:25:32"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 284 — Impediment of Consanguinity
 
 *Supplement to the Tertia Pars, Suppl. Q.53-54. Verbatim ASR (lightly cleaned) from the Think Catholic “Summa in a Year” podcast, Austin Habash.*
 
+> **Typo cleanup (QC pass 2026-08-10).** This file shipped with no cleanup audit trail at all — only the italic header line above — so the list below is the first one. Every fix corrects a real token in the live ASR (video k9GxtW-2zW8): *consequentity → consanguinity* ×13 (the episode's own title and the whole subject of Suppl. Q.54, printed as a non-word while `title: Impediment of Consanguinity` stood correct in the frontmatter); *Theologia → Theologiae*; *a Maria Press → Ave Maria Press* ×2 (sponsor, incl. possessive — the dropped "by" before it is absent in the ASR too and has been left absent rather than supplied); *enulled → annulled*; *concupisence → concupiscence*. Left as heard: the discount code "Summa 10". **Second pass, same run:** a dictionary-diff found two more the pattern list could not see: *Amalecch → Ahimelech* (the priest of Nob who gave David the holy bread, restored from the canonical source per Step 3 rule 6 — the surrounding "and for Samuel" is left as heard, since the likely reading "in First Samuel" would be a guess at the words rather than a spelling fix); *anols → annuls*.
+
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
-Theologia in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 284. So let's get started.
 
-We're covering today questions 53 and 54 of the supplement to the Summa. That is of the impediment of vows and orders and of the impediment of consequentity. The
+We're covering today questions 53 and 54 of the supplement to the Summa. That is of the impediment of vows and orders and of the impediment of consanguinity. The
 
-[00:39] translation that I always use in these podcasts is the one generously provided to me a Maria Press. The five volume set translated by the fathers of the English
+[00:39] translation that I always use in these podcasts is the one generously provided to me Ave Maria Press. The five volume set translated by the fathers of the English
 
-Dominican province which you can now get at a discounted price from a Maria Press's site by typing in the code Summa 10. And so here we go. Article one.
+Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one.
 
-whether marriage already contracted should be enulled by the obligation of a simple vow. A simple vow would be a vow to God that's private. A promise one can
+whether marriage already contracted should be annulled by the obligation of a simple vow. A simple vow would be a vow to God that's private. A promise one can
 
 [01:08] make before God promising for example to take up the single life as our Lord enjoins in Matthew 19 for those who can receive it. Now this simple vow although
 
@@ -56,7 +58,7 @@ dissolves a marriage already contracted. A solemn vow would invalidate a marital
 
 cannot contractually give himself to another. As St. Thomas puts it, he who takes a solemn vow contracts a spiritual marriage with God, which is much more
 
-[02:34] excellent than a material marriage. Now, a material marriage already contracted anols a marriage contracted afterwards. Therefore, a solemn vow does also.
+[02:34] excellent than a material marriage. Now, a material marriage already contracted annuls a marriage contracted afterwards. Therefore, a solemn vow does also.
 
 Article three, whether order is an impediment to matrimony. Is the sacrament of holy orders an impediment to matrimony? In the west, holy orders
 
@@ -66,7 +68,7 @@ understand it simply to be an impediment by virtue of ordination. Although a mar
 
 [03:11] of marriage, provided he was married before being ordained. As a final note, the precedents for continents as being connected with the priesthood, we see in
 
-the old covenant, first of all, in the words of the priest Amalecch and for Samuel, who said to David and his men, "I have no common bread at hand, but
+the old covenant, first of all, in the words of the priest Ahimelech and for Samuel, who said to David and his men, "I have no common bread at hand, but
 
 there is holy bread if only the young men have kept themselves from women." The priest here is connecting the marital embrace with ritual impurity,
 
@@ -86,13 +88,13 @@ on whether this ordination is in the Latin right or one of the eastern right chu
 
 continents in the west for sure celibacy after that ordination. Again, depending on the law of the church, we then turn to question 54 of the impediment of
 
-consequentity. Article one, whether consequentity is rightly defined. What exactly is consequentity? It is defined in the article as the tie contracted
+consanguinity. Article one, whether consanguinity is rightly defined. What exactly is consanguinity? It is defined in the article as the tie contracted
 
-[04:53] between persons descending from the same common ancestor by carnal procreation. As the Latin word indicates, consequentity means of the same blood.
+[04:53] between persons descending from the same common ancestor by carnal procreation. As the Latin word indicates, consanguinity means of the same blood.
 
 It is a tie of blood between those of common ancestry. And how one labels proximity of blood as well as what proximity is impermissible for marriage
 
-will be the subject of forthcoming articles. Article two, whether consequentity is fittingly distinguished by degrees and lines. Beginning with
+will be the subject of forthcoming articles. Article two, whether consanguinity is fittingly distinguished by degrees and lines. Beginning with
 
 lines, there are direct lines and collateral lines. The direct line includes your parent, your child, your grandparent, grandchildren, etc. The
 
@@ -106,29 +108,29 @@ and then down to the other person. So, my sibling is related by second degree, m
 
 [06:03] different ways of doing this degree counting, but I'm going to assume this is how the church does the counting since the Catholic Church does not allow
 
-one to marry their first cousin. Canon law states on consequentity the following. In the direct line of consequentity, marriage is invalid
+one to marry their first cousin. Canon law states on consanguinity the following. In the direct line of consanguinity, marriage is invalid
 
 between all ancestors and descendants, both legitimate and natural. In the collateral line, marriage is invalid up to and including the fourth degree.
 
-Article three, whether consequentity is an impediment to marriage by virtue of the natural law. Anything that is an impediment or obstacle to nature, we
+Article three, whether consanguinity is an impediment to marriage by virtue of the natural law. Anything that is an impediment or obstacle to nature, we
 
 [06:38] consider contrary to the natural law with differing degrees of grievousness or departure from nature. And marrying one's first cousin or sibling is first
 
 of all an obstacle to chastity. Because if one has the possibility of someday marrying being intimate with one who is already probably living with them as
 
-family the temptation to these sins of concupisence would be greatly aggravated which would thwart impede natural law. Secondly, marriages of consequentity
+family the temptation to these sins of concupiscence would be greatly aggravated which would thwart impede natural law. Secondly, marriages of consanguinity
 
 [07:08] would impair the mutual friendship and union of mankind which is furthered by a man leaving his own small sphere of people and relatives and being united
 
-with the stranger and for life. Lastly, consequentity would greatly hinder the relationships within the family. If a son married his mother whom he was
+with the stranger and for life. Lastly, consanguinity would greatly hinder the relationships within the family. If a son married his mother whom he was
 
 supposed to honor as a parent, but now she is to be submissive to her son as a wife, that seems conflicting. Or if a father married his daughter, she would
 
 now in the one moment be a kind of equal of his, yet still his daughter and student, which also seems conflicting. Both are examples of a kind of blurring,
 
-[07:45] conflicting of lines which would in no way be advantageous to these relationships. For all of these reasons, consequentity is contrary to the natural
+[07:45] conflicting of lines which would in no way be advantageous to these relationships. For all of these reasons, consanguinity is contrary to the natural
 
-goods, the natural law of mankind. Article four in our last article, whether the degrees of consequentity that are an impediment to marriage
+goods, the natural law of mankind. Article four in our last article, whether the degrees of consanguinity that are an impediment to marriage
 
 should be fixed by the church. And yes, the church can do this. St. Thomas describes briefly, our Lord said to his disciples in Luke 10:16, "He that
 
@@ -138,7 +140,7 @@ heareth you heareth me. Therefore, a commandment of the church as the same force
 
 another episode. We have just finished covering questions 53 and 54 of the supplement to the Summa that is of the impediment of vows and orders and of the
 
-impediment of consequentity. My name is Austin Habash with Think Catholic, and I cannot wait to see you tomorrow.
+impediment of consanguinity. My name is Austin Habash with Think Catholic, and I cannot wait to see you tomorrow.
 
 ## Notes
 

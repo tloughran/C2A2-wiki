@@ -3,21 +3,22 @@ day: 103
 title: Capital Vice (Contemporary)
 pairs_with: "[[Day-103 - Capital Vice]]"
 length_target_words: 2200
-length_actual_words: 2210
-length_ratio_to_target: 1.005
+length_actual_words: 1893
+length_ratio_to_target: 0.86
+length_note: "Recomputed 2026-08-10 with the constitution's own [A-Za-z']+ regex over the body; the previously declared 2210 / 1.005 did not match the file. At 0.86 the commentary is outside the +/-10% guideline and inside +/-25%, so informational per Summa.md, not a length violation. Not padded: the argument is one dynamical thesis (metastability loss as the unifying signature beneath the seven) carried cleanly, and padding it to tier would add recapitulation the length policy tells us to trim."
 length_tier: medium
 mind_first_reframe: "The medieval seven capital vices (Q.84) are reframed as the characteristic attractor basins into which a perspective-limited agent's predictive model collapses when broadening practices fail — pride as rigid self-model, envy as other-as-threat, anger as instant precision on injury-priors, sloth as collapse of policy-energy, avarice/gluttony/lust as narrowed appetitive misappraisal patterns. The unifying signature beneath the seven is metastability loss (Friston PRS-13): chronic precision-mis-weighting flattens the attractor landscape, simultaneously generating Aquinas's two named roots — pride and covetousness — as surface presentations of the same dynamical collapse. Q.85's 'diminishes natural good without destroying it' survives as: attractor-basin capture is partial, the agent retains the capacity for broadening but has lost the facility."
 central_theme_thread: "The capital-vice question illustrates salvation as a computational task under resource scarcity: each capital vice is a way perspective-limitation cascades into deeper perspective-limitation — narrowed attention produces further narrowing, daughter vices reinforce the parent, the attractor basin deepens. Loving unity is the goal stolen by the attractor; 'fear and trembling' names the recognition that one's own current attractor basin may be exactly the kind of capital-vice collapse one is least equipped to perceive — and the way out is necessarily communal, the broadening signal the captured agent cannot generate supplied by belonging to a community whose practices re-open attention."
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (PRS-01 isolation; PRS-02 love reduced to sentiment; PRS-05 broadened attention; broaden-and-build inverse)"
   - "wiki/traditions/mcgilchrist/wiki.md (PRS-01 hemispheric asymmetry; PRS-05 attention as ontological act)"
-  - "wiki/traditions/friston/wiki.md (active inference; precision-weighted prediction; metastability)"
-  - "wiki/traditions/stump/wiki.md (PRS-09 virtue as cooperative causality; PRS-04 final causality)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-13 metastability — trauma as attractor-rigidity, recovery as restored state-switching); wiki/traditions/friston/wiki.md (active inference; precision-weighted prediction)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality); wiki/traditions/stump/wiki.md (PRS-04 final causality)"
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket; line 772 Levin × Friston metastability collapse)"
 evidence_strength_summary: "Empirical: broaden-and-build under positive emotion (Fredrickson, high); attention narrowing under stress and threat (well-supported across paradigms); metastability collapse as a dynamical signature of pathology (Friston PRS-13, mid). Formal: active-inference account of attractor capture under high precision on threat-priors (formal, mid). Speculative: the precise mapping of the medieval seven onto contemporary attractor basins (speculative but principled). Theological: Wright on the Pauline 'works of the flesh' (Gal 5:19-21) as the same family Aquinas inherits."
 tags: [synthesis, day/103, theme/attractor-collapse, theme/attention-narrowing]
-last_qc_at: "2026-08-02T00:20:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T02:27:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 103 — Capital Vice (Contemporary)
@@ -56,7 +57,7 @@ Third, **McGilchrist's hemispheric account** (PRS-01 hemispheric asymmetry; PRS-
 
 The contemporary-parallel response:
 
-1. *(Empirical, well-supported)* The medieval seven is approximately a correct empirical taxonomy of the characteristic attractor basins into which perspective-limited agents collapse when broadening practices fail. The mapping is principled: each capital vice corresponds to a stable misappraisal pattern under narrowed attention and high precision on threat- or appetite-priors. The grouping is not arbitrary; it captures real dynamical signatures.
+1. *(Speculative but principled — resting on an empirical base.)* The medieval seven is a candidate taxonomy of the characteristic attractor basins into which perspective-limited agents collapse when broadening practices fail. Two things must be kept apart here. That attention narrows under stress, threat, isolation, and fatigue, and that narrowing contracts the agent's behavioural repertoire, is *empirical and well-supported*. That the resulting patterns sort into these seven, in this arrangement, with these daughter relations, is *speculative*: it is a principled mapping — each capital vice is read as a stable misappraisal pattern under narrowed attention and high precision on threat- or appetite-priors — but no study has tested the seven-fold partition itself, and the taxonomy is inherited from the tradition rather than recovered from the data. The claim is that the grouping is not arbitrary, not that it has been confirmed.
 
 2. *(Formal, mid-evidence)* The unifying signature beneath the seven is *metastability loss* — the agent's reduced capacity to move flexibly between attractor states. The capital-vice tree is the catalog of deep basins that emerge when the attractor landscape is flattened by chronic precision-mis-weighting. This unifies Aquinas's "covetousness is the root" (the broad pattern of object-binding) with "pride is the beginning" (the meta-prior that drives the precision-mis-weighting) in a single dynamical framework.
 

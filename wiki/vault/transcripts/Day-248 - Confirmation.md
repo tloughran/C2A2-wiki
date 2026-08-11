@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-248 - Confirmation - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-19T12:19:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T16:21:11"
+last_qc_outcome: "rewrote"
 tags: [summa, day/248, pars/3, q/72]
 ---
 
@@ -24,17 +24,19 @@ tags: [summa, day/248, pars/3, q/72]
 
 > Aquinas's *Summa Theologiae*, Tertia Pars, III Q.72. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+> Typo cleanup (2026-08-10 QC pass; the 2026-06-16 render claimed the sweep above but applied only part of it — the intro-name garble in particular was left raw in one of its two places): Sumanir podcast → Summa in a Year podcast; Sumeir podcast → Summa in a Year podcast; suma theologia → Summa Theologiae; a Maria press / a Maria Press's → Ave Maria Press / Ave Maria Press's; ters of pars → Tertia Pars. Left as heard: the discount code "sum 10" — not recoverable from the audio, and guessing would be fabrication.
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumeir podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 248. So let's get started.
 
-We're covering today questions 71 and 72 of the ters of pars that is of the [00:35] preparations that accompany baptism and of the sacrament of confirmation. The
+We're covering today questions 71 and 72 of the Tertia Pars that is of the [00:35] preparations that accompany baptism and of the sacrament of confirmation. The
 
-translation that I always use in these podcasts is the one generously provided to me by a Maria press. five volume set translated by the fathers of the English
+translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press. five volume set translated by the fathers of the English
 
-Dominican province which you can now get at a discounted price from a Maria Press's site by typing in the code sum 10. And so here we go. Article one,
+Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code sum 10. And so here we go. Article one,
 
 whether catechism should precede baptism. Catechisare is a Latin word meaning to teach and especially to teach [01:05] by question and answer. And it is
 

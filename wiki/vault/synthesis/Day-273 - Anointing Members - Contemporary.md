@@ -16,7 +16,7 @@ evidence_strength_summary: "The senses-as-interface claim is formal-and-empirica
 mind_first_reframe: "Anointing the senses is treating the body's interface points — the very loci where a limited perspective is constructed — as the sites where grace re-enters; the senses are where sin came in (the interface admitted distortion) and so where repair is applied."
 central_theme_thread: "The senses literally are the limitation that individuates a perspective; anointing them marks the limited interface as the place that must be re-consecrated toward the whole."
 tags: [synthesis, day/273, theme/the-senses-as-interface]
-last_qc_at: "2026-08-02T10:28:39"
+last_qc_at: "2026-08-10T06:29:38"
 last_qc_outcome: "pass"
 ---
 

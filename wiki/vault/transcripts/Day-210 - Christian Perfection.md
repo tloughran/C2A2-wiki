@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-210 - Christian Perfection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/210, pars/II, q/184 q/185]
-last_qc_at: "2026-07-11T04:23:19"
+last_qc_at: "2026-08-10T08:24:22"
 last_qc_outcome: "pass"
 ---
 

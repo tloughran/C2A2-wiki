@@ -16,27 +16,37 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-306 - A Hellish Abode - Contemporary]]"
 tags: [summa, day/306, pars/supplement, q/97]
-last_qc_at: "2026-07-18T12:19:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T12:26:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 306 — A Hellish Abode
 
 *Summa Theologiae, Supplement, Q.97-98. Verbatim ASR fetched 2026-06-26 via youtube-transcript-api; light cleanup of common ASR errors only (Summa/Aquinas/Theologiae, intro name garble "Sumir/Sumanir" -> "Summa in a Year").*
 
+> **Typo cleanup applied to the raw ASR** (2026-06-26 render, completed 2026-08-10 QC):
+> Sumanir / Sumir -> Summa in a Year; Aquinus's -> Aquinas's; Suma theologia -> Summa Theologiae;
+> Habish -> Habash (2); suma -> Summa (3, in "supplement to the Summa" and "volume of the Summa");
+> Bobby Maria Press -> Ave Maria Press; "a Maria Press's" -> Ave Maria Press's;
+> demmerit -> demerit; demariting -> demeriting; tacidly -> tacitly;
+> beatotific -> beatific; inexpressable -> inexpressible (2); "perspective victim" -> "respective victim";
+> "weep and nash their teeth" -> "weep and gnash their teeth" (restores the Matthew 22 quotation Habash reads aloud).
+> Left as heard: "eviscerated by vice" — an apparent mishearing, but no confident reconstruction, so not guessed at.
+> Left as heard: the discount code "suma 10" (a literal code string, not recoverable from the audio).
+
 ## Transcript
 
-[00:04] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic, taking two questions of the
 
 Summa. A day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 306. So, let's get
 
-started. We're covering today questions 97 and 98 of the supplement to the suma. That is, of God's mercy and justice towards the damned and of the will and
+started. We're covering today questions 97 and 98 of the supplement to the Summa. That is, of God's mercy and justice towards the damned and of the will and
 
-[00:37] intellect of the damned. The translation I always use in these podcasts is the one generously provided to me. Bobby Maria Press, the five volumes set
+[00:37] intellect of the damned. The translation I always use in these podcasts is the one generously provided to me. Ave Maria Press, the five volumes set
 
-translated by the fathers of the English Dominican province, which you can now get at a discounted price from a Maria Press's site by typing in the code suma
+translated by the fathers of the English Dominican province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code suma
 
 10. And so, here we go. Article one, whether in hell the damned are tormented by the sole punishment of fire. As the book of wisdom teaches this from chapter
 
@@ -52,7 +62,7 @@ corporeal. If you remember from a previous episode, St. Thomas holds that man wi
 
 [01:48] heavens and the new earth. Therefore, this worm described in scripture must be the worm of conscience, which is fittingly compared to a worm because
 
-they both attack by gnawing their perspective victim. According to St. Thomas's zoology, conscience will torment the damned for not doing what
+they both attack by gnawing their respective victim. According to St. Thomas's zoology, conscience will torment the damned for not doing what
 
 they know they should have done and could do and now are punished forever for not doing. Article three, whether the weeping of the damned will be
 
@@ -64,7 +74,7 @@ thing to be observed in corporeal weeping is a certain commotion and disturbance
 
 in the damned after the resurrection. Article four, whether the damned are in material darkness. Jesus Christ taught in Matthew 22, "Bind him hand and foot
 
-and cast him into the outer darkness. There men will weep and nash their teeth. Everything in hell is suited to the torment of the wicked and therefore
+and cast him into the outer darkness. There men will weep and gnash their teeth. Everything in hell is suited to the torment of the wicked and therefore
 
 [02:55] it will be dark in hell, yet probably not completely dark since the sight of ugly and terrifying things is itself a punishment. Thus, hell is probably dim
 
@@ -98,13 +108,13 @@ the will in the damned is evil. In so far as an act is voluntary, in so far as t
 
 not be for the correct end which is charity. For they died without the virtue of charity and will never be given it, and they are also eviscerated
 
-[05:10] by vice. Article two, whether the damned repent of the evil they have done, the damned are sorry that they are in inexpressable pain. This kind of
+[05:10] by vice. Article two, whether the damned repent of the evil they have done, the damned are sorry that they are in inexpressible pain. This kind of
 
 repentance is in them, as we see with the rich man's conversation with Lazarus. However, their will being fixed on some temporal good over the true
 
-spiritual good, they are fixed in malice and cannot heal themselves of this disorder in the will. And since they are not allowed to partake of the beatotific
+spiritual good, they are fixed in malice and cannot heal themselves of this disorder in the will. And since they are not allowed to partake of the beatific
 
-vision either, they do not see the true inexpressable good which they should have chosen righteousness for the sake of attaining. Article three, whether the
+vision either, they do not see the true inexpressible good which they should have chosen righteousness for the sake of attaining. Article three, whether the
 
 [05:45] damned by right and deliberate reason would wish not to exist. The book of Revelation teaches in chapter 9. And in those days, men will seek death and will
 
@@ -130,11 +140,11 @@ itself. But one can hate God as the author of their unending torment. And this i
 
 life under the aspect of conscience as forbidding the goods they desire or have already embraced. Article six, whether the damned demerit, it's like asking if
 
-[07:38] those in prison continue to commit crimes. And our editors tell us here that Aquinas will mention the possibility of demons demariting angels
+[07:38] those in prison continue to commit crimes. And our editors tell us here that Aquinas will mention the possibility of demons demeriting angels
 
-meriting as they draw men to damnation or salvation here in this article. But the editors inform us that tacidly he will retract that opinion in the first
+meriting as they draw men to damnation or salvation here in this article. But the editors inform us that tacitly he will retract that opinion in the first
 
-volume of the suma. So we should say it is more likely that after judgment since there will be no further judgment that the damned do not demmerit endlessly but
+volume of the Summa. So we should say it is more likely that after judgment since there will be no further judgment that the damned do not demerit endlessly but
 
 simply receive their eternal recompense punishment after judgment. Article 7 whether the damned can make use of the knowledge they had in this world. And we
 
@@ -168,9 +178,9 @@ because they will bear in remembrance the glory of the blessed, which they saw a
 
 tormented by finding themselves deemed unworthy, even to see the glory which the saints merit to have. And with that, we close another episode. We have just
 
-finished covering questions 97 and 98 of the supplement to the suma and that is of God's mercy and justice towards the damned and of the will and intellect of
+finished covering questions 97 and 98 of the supplement to the Summa and that is of God's mercy and justice towards the damned and of the will and intellect of
 
-[10:33] the damned. My name is Austin Habish with Think Catholic and I cannot wait to see you tomorrow.
+[10:33] the damned. My name is Austin Habash with Think Catholic and I cannot wait to see you tomorrow.
 
 ## Notes
 

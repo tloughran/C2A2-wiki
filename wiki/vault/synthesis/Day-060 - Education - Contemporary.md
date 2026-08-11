@@ -8,17 +8,17 @@ length_ratio_to_target: 0.74
 length_tier: medium
 length_note: "Synthesis runs at 74% of medium-tier target. The commentary is tight and tracks Q.117 a.1–4 + Q.118 a.1–3 with full structural integrity (frame, problem, resource, solution-with-shares-and-reframes, central-theme thread, bridges, closing). The medieval question of teaching-and-learning has a clean enough contemporary mapping (HTM concept formation, active-inference learning, hemispheric pedagogy, second-personal knowing) that the synthesis does not need additional bulk to do its work — better short and substantive than padded, per the length policy."
 karpathy_wiki_sources:
-  - "wiki/traditions/hawkins/wiki.md (PRS on hierarchical temporal memory; concept formation)"
-  - "wiki/traditions/mcgilchrist/wiki.md (hemispheric pedagogy; receptive vs. grasping)"
-  - "wiki/traditions/levin/wiki.md (developmental morphogenesis; pedagogy at multi-scale)"
-  - "wiki/traditions/friston/wiki.md (active inference in learning; prior-update pedagogy)"
-  - "wiki/traditions/stump/wiki.md (faith as second-personal knowledge; tradition-bound rationality)"
+  - "wiki/traditions/hawkins/prs_triplets.md (PRS-01 hierarchical temporal memory / thousand-brains reference frames; PRS-08 sensorimotor learning and continual acquisition without catastrophic forgetting)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-06 embodied tradition formation — mentorship and contextual immersion, not information transfer; PRS-36 being-in-the-world as the essential role of education)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control — bioelectric circuits encode anatomical target states)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — continuous prediction, test, model-update)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-11 Franciscan / second-personal narrative knowledge; PRS-06 the MacIntyre tradition-vitality criterion)"
 evidence_strength_summary: "Hawkins on concept formation empirically grounded in HTM research; McGilchrist hemispheric account empirically grounded; medieval teacher/learner asymmetry preserves cleanly under predictive-coding pedagogy frame"
 mind_first_reframe: "Aquinas's striking Q.117 a.1 distinction — the teacher provides exterior help but the act of abstracting the universal is the learner's own — preserves cleanly under contemporary mind-monism: HTM concept-formation, active-inference learning, McGilchrist's both-hemispheres pedagogy, and Stump's second-personal-knowing all locate the principal cause of understanding in the learner's own predictive-inference machinery, with the teacher optimizing input-stream informativeness given the learner's current model-state."
 central_theme_thread: "Each agent's understanding is irreducibly the agent's own work under perspective-limitation; the teacher who genuinely loves the learner is the teacher who provides resources for the learner's own constitutive inferential work, recognizing that each new agent is a new perspective on the loving unity, not a derivative of prior agents — a teaching-and-learning relation that is itself an instance of loving unity under perspective-difference."
 tags: [synthesis, day/060, theme/teaching-as-second-person, theme/abstraction]
-last_qc_at: "2026-08-02T16:24:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T18:27:40"
+last_qc_outcome: "rewrote"
 ---
 # Day 60 — Contemporary Parallel: *Teaching as Resource-Provision for the Learner's Own Inferential Work*
 
@@ -72,11 +72,11 @@ The teaching-and-learning relation is itself an instance of *loving unity under 
 
 ## Bridges
 
-- **Hawkins-tradition wiki, PRS on HTM and concept formation.** Cortical-architecture frame for how concepts form. *Strong empirical evidence in cortical research.*
-- **Friston-tradition wiki, PRS on active inference in learning.** Generative-model update under curriculum. *Mature formalism; growing empirical.*
-- **McGilchrist-tradition wiki, PRS on hemispheric pedagogy.** Both-hemispheres engagement. *Strong neuropsychiatric evidence.*
-- **Levin-tradition wiki, PRS on morphogenetic pattern.** Pattern-information provision at multi-scale. *Strong empirical at biological scale.*
-- **Stump-tradition wiki, PRS on faith-as-second-personal-knowing and tradition-bound rationality.** Irreducibly-relational understanding. *Theological-philosophical primary.*
+- **`traditions/hawkins/prs_triplets.md`, PRS-01 and PRS-08.** PRS-01 records the hierarchical-temporal-memory and thousand-brains architecture — reference frames, temporal prediction, distributed voting — as the move from pattern-matching to modelling; PRS-08 records sensorimotor learning that acquires continually, from little data, without catastrophic forgetting. Together they are the cortical-architecture frame for how a learner's concepts form under exposure. *Strong empirical evidence in cortical research; the AGI-scale claims built on it are the speculative part.*
+- **`traditions/friston/prs_triplets.md`, PRS-04.** The organism as a continuous hypothesis-testing system that generates predictions, tests them against sensory input, and updates its model — the generative-model update the curriculum is structured to feed. *Mature formalism; growing empirical.*
+- **`traditions/mcgilchrist/prs_triplets.md`, PRS-06 and PRS-36.** PRS-06 holds that tradition-formation requires mentorship, shared practice, and contextual immersion rather than information transfer alone — the wiki-side statement of exactly the asymmetry Q.117 a.1 names. PRS-36 takes "being in the world" as the essential role of education and reads formation as climbing into maturity within a tradition. The both-hemispheres formulation used above is this commentary's own extension of those records, not their wording. *Strong neuropsychiatric evidence for the hemispheric account; the pedagogical prescription is argued, not measured.*
+- **`traditions/levin/prs_triplets.md`, PRS-01.** Bioelectric circuits encode anatomical target states; membrane voltage as morphogenetic memory — pattern-information held by the substrate and instantiated by the developing system's own machinery. *Strong empirical at biological scale; the education-scale recapitulation is structural isomorphism, not measurement.*
+- **`traditions/stump/prs_triplets.md`, PRS-11 and PRS-06.** PRS-11 records Franciscan, non-propositional, second-person knowledge as philosophically rigorous and irreducible to propositions — the wiki home for the irreducibly-relational understanding claimed here. PRS-06 records the MacIntyre criterion for a living tradition, which is what carries the tradition-bound-rationality half of the claim. *Theological-philosophical.*
 - **Wright, *Surprised by Hope*; *Paul and the Faithfulness of God*.** Covenanted community as pedagogical tradition. *Scriptural-historical primary.*
 - **Rohr, *Falling Upward*; *The Universal Christ*.** Contemplative mentorship across stages of life. *Contemplative theological.*
 - **Aristotle, *Posterior Analytics*; Augustine, *De Magistro*.** Aquinas's interlocutors on teaching.

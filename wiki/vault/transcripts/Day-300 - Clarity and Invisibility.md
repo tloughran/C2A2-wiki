@@ -6,7 +6,7 @@ title: Clarity and Invisibility
 summa_ref: Suppl. Q.85-86
 duration_seconds: 393
 word_count: 1166
-raw_asr_word_count: 1166
+raw_asr_word_count: 1152
 length_tier: short
 segment_count: 172
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-300 - Clarity and Invisibility - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/300, pars/suppl, q/85-86]
-last_qc_at: "2026-07-18T12:18:44"
+last_qc_at: "2026-08-10T10:28:51"
 last_qc_outcome: "pass"
 ---
 

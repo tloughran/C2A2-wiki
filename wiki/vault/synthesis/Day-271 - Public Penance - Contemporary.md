@@ -11,14 +11,14 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer-as-defection, PRS-11 cancer-as-dissociative-identity — sin as defection from the cooperative morphogenetic community; restoration = re-coherence with the collective field)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — reintegration as re-alignment of the member's generative model with the community's)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-07 salvation as conversion into the relational pattern, not individual escape)"
-  - "traditions/wright/wiki.md (covenant community; salvation as inclusion in the people; five-act improvisation)"
-  - "traditions/loughran/prs_triplets.md (the Synergistic Coil — one resource resolving more than one P-to-S transition)"
+  - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people, God's Homecoming); traditions/wright/wiki.md (five-act improvisation)"
+  - "traditions/loughran/prs_triplets.md (PRS-09 Synergistic Coils as meta-tools — one resource resolving more than one P-to-S transition)"
 evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are formal (Friston PRS-06) and empirical-in-domain (Levin collective morphogenetic field); the order-disorder-reorder structure of penance is theological-developmental (Rohr); the efficacy of the keys and the supernatural reality of reincorporation are theological."
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-08-02T10:28:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T06:29:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 271 — Public Penance (Contemporary)
@@ -53,7 +53,7 @@ The defected member is, in this project's terms, a perspective that has collapse
 
 - **Levin PRS-02 / PRS-11** (empirical, in-domain): sin-as-defection and restoration-as-re-coherence with the collective field — the body's own grammar of dropping out and being drawn back. Why this pairing: it gives penance a continuous natural image at the cellular scale.
 - **Friston PRS-06** (formal): reincorporation as mutual remodeling that re-aligns a divergent generative model with the community's shared attractor. Why: it specifies the *mechanism* of re-binding that Aquinas describes only juridically.
-- **FINDING-007 / CROSS-006** (formal, master wiki): the Levin × Friston identity — one substrate-independent law of self-organization — so the cellular and social images are the same object, not loose analogy.
+- **FINDING-007** (`flags/pattern_detector_findings.md`) **/ CROSS-006** (`master/cross_program_index.md`) (formal): the Levin × Friston identity — one substrate-independent law of self-organization — so the cellular and social images are the same object, not loose analogy.
 - **Rohr PRS-02** (theological-developmental): order–disorder–reorder; penance as the passage to a deeper, tested order. Why: it dignifies the disorder as necessary rather than merely shameful.
 - **Rohr PRS-07 / Wright on covenant** (theological): salvation as inclusion in the relational pattern / the people, not private escape. Why: it anchors the reframe to Rohr's non-dual Christ and Wright's covenant ecclesiology.
 

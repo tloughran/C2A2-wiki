@@ -6,7 +6,7 @@ title: Bill of Divorce
 summa_ref: Suppl. Q.67-68
 duration_seconds: 548
 word_count: 1711
-raw_asr_word_count: 1711
+raw_asr_word_count: 1696
 length_tier: short
 segment_count: 251
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-291 - Bill of Divorce - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/291, pars/suppl, q/67-68]
-last_qc_at: "2026-07-12T12:21:41"
+last_qc_at: "2026-08-10T10:28:48"
 last_qc_outcome: "pass"
 ---
 

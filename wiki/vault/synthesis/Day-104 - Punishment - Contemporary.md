@@ -9,16 +9,17 @@ length_tier: medium
 mind_first_reframe: "Aquinas's stain (Q.86) is reframed as the persistent residual bias in the agent's generative model after the precipitating act ends — measurable as shifted precision-weighting, altered vagal-tone baseline, narrower default attentional scope, habituated affective-regulation patterns. The debt of punishment (Q.87) becomes, in its medicinal and retributive senses, the real empirical work required to re-order the model; the treasury-of-merit move translates into broaden-and-build amplification within a real corporate substance (Stump PRS-14), so repair available to one is in principle available to many through the real corporate form. The juridical register is dropped; the substantive content — real cost, real work, real communal restoration — is preserved and specified. Retributive punishment without model re-training is the part of the medieval account the reframe most strongly challenges."
 central_theme_thread: "Q.86–87 is where salvation-as-computational-task-under-resource-scarcity meets the cost-of-recovery question directly: the residual bias is a perspective-limitation deepened by use, and the work of restoration runs against the grain of the agent's own current priors. The agent cannot complete the work alone — its broadening capacity has been narrowed by the very disorder it is trying to undo. 'Fear and trembling' names the recognition that real work is required, the work is costly, and the path runs through communal participation in the body that is being re-ordered toward loving unity (Wright's 'salvation as inclusion in the people united with God')."
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (PRS-05 suffering and divine permission; PRS-09 virtue as cooperative causality; PRS-14 collective hylomorphism)"
+  - "wiki/traditions/stump/wiki.md (PRS-05 suffering and divine permission)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality; PRS-14/15/16 hylomorphic metaphysics of corporate substance)"
   - "wiki/traditions/friston/wiki.md (active inference; precision-weighting; predictive-model residuals)"
   - "wiki/traditions/fredrickson/wiki.md (PRS-01 isolation; positivity resonance as repair channel)"
   - "wiki/traditions/levin/wiki.md (morphogenetic restoration; bioelectric repair)"
-  - "wiki/traditions/rohr/wiki.md (shadow; order-disorder-reorder)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-02 the disorder necessary for growth — order-disorder-reorder)"
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category; line 724 collective substance)"
 evidence_strength_summary: "Empirical: persistence of predictive-model bias after the precipitating event (well-supported in clinical work on trauma and habit); vagal-tone recovery through positivity-resonance practices (Fredrickson, high). Formal: Stump's collective-substance hylomorphism (mid evidence). Speculative: the analog of indulgence-economy in the network's framework -- 'merit transferability' as broaden-and-build amplification within a real corporate substance. Theological: Wright on the Pauline 'in Christ' as the locus of corporate restoration (high); Rohr on order-disorder-reorder (mid)."
 tags: [synthesis, day/104, theme/persistence-of-disorder, theme/restoration]
-last_qc_at: "2026-08-01T22:28:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T00:21:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 104 — Punishment (Contemporary)
@@ -76,7 +77,7 @@ The Q.86–87 locus is where the project's central claim about *salvation as a c
 - *Friston active inference + clinical persistence of bias* — empirical anchor for the stain (Q.86) as persistent residual precision-mis-weighting; trauma and addiction literature documents the persistence of model-bias after the precipitating event. *(Empirical high; formal mid.)*
 - *Fredrickson broaden-and-build + Love 2.0* — empirical mechanism of repair as relational; positivity resonance as the substrate of restoring broadening capacity. *(Empirical high; vagal-tone measurement mid-precision but reliable.)*
 - *Stump PRS-14 collective-substance hylomorphism* — the metaphysical anchor that lets the treasury-of-merit doctrine translate into broaden-and-build amplification across a real corporate substance. *(Formal / mid evidence; the 2025 Maritain lecture.)*
-- *Rohr order-disorder-reorder* — the contemplative epistemology of inhabiting the residual bias without denial or despair; the "second naïveté" of the reorder phase. *(Theological / spiritual mid.)*
+- *Rohr PRS-02 order-disorder-reorder* (`traditions/rohr/prs_triplets.md`) — the contemplative epistemology of inhabiting the residual bias without denial or despair; the "second naïveté" of the reorder phase. *(Theological / spiritual mid.)*
 - *Wright on "in Christ" as corporate-restoration* — the scriptural ground for treating the body of Christ as the real corporate substance through which restoration runs. *(Theological high.)*
 
 ## Where this leaves us

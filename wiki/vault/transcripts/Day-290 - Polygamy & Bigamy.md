@@ -6,7 +6,7 @@ title: Polygamy & Bigamy
 summa_ref: Suppl. Q.65-66
 duration_seconds: 707
 word_count: 2135
-raw_asr_word_count: 2135
+raw_asr_word_count: 2115
 length_tier: medium
 segment_count: 332
 caption_kind: asr

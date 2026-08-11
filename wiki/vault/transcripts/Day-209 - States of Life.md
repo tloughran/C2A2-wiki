@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-209 - States of Life - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/209, pars/II, q/182 q/183]
-last_qc_at: "2026-07-11T04:23:18"
+last_qc_at: "2026-08-10T08:24:22"
 last_qc_outcome: "pass"
 ---
 

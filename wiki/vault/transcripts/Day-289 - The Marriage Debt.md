@@ -6,7 +6,7 @@ title: The Marriage Debt
 summa_ref: Suppl. Q.63-64
 duration_seconds: 419
 word_count: 1355
-raw_asr_word_count: 1355
+raw_asr_word_count: 1340
 length_tier: short
 segment_count: 193
 caption_kind: asr
@@ -15,7 +15,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-289 - The Marriage Debt - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-25T16:23:13"
+last_qc_at: "2026-08-10T14:28:41"
 last_qc_outcome: "pass"
 tags: [summa, day/289, pars/suppl, q/63-64]
 ---

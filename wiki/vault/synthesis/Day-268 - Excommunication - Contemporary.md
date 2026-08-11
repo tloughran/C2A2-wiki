@@ -10,14 +10,14 @@ length_note: "Compact by design: Suppl. Q.21-22 (excommunication) develops the m
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-11 cancer as dissociative identity disorder of the body)"
   - "traditions/friston/prs_triplets.md (PRS-18 ZBS band-width — exclusion vs. assimilation; PRS-07 the boundary of the collective)"
-  - "traditions/wright/wiki.md (1 Cor 5 — Pauline excommunication, 'that his spirit may be saved')"
+  - "traditions/wright/prs_triplets.md (PRS-34 justification as covenant membership — table fellowship, not badge-keeping, as the operative test of belonging); 1 Cor 5 — Pauline excommunication, 'that his spirit may be saved'"
   - "traditions/rohr/wiki.md (discipline-within-belonging, not exclusion-from-Christ)"
 evidence_strength_summary: "Excommunication-as-response-to-defection is empirical-in-domain (Levin PRS-02/11 cancer as a cell decoupling from the body's collective goals); the medicinal aim is formal (Friston) + scriptural (Wright, 1 Cor 5); the sacramental reality of being cut from the Body's suffrages is theological."
 mind_first_reframe: "Excommunication is reframed as a collective agent's response to a member that has decoupled from the whole's shared goals — the body's recognition and ratification of a defection (Levin PRS-02) or dissociation (PRS-11) — drawn, when medicinal, so that the cut prompts re-coupling rather than loss."
 central_theme_thread: "Perspective-limitation can harden into defection: a part pursuing its own goal against the whole. Excommunication is the whole's painful boundary-drawing around that part, ordered — when rightly done — to its return to loving unity, not its destruction."
 tags: [synthesis, day/268, theme/excommunication-as-medicinal-decoupling]
-last_qc_at: "2026-08-02T10:28:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T06:29:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 268 — Excommunication (Contemporary Parallel)

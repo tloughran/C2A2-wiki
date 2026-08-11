@@ -10,15 +10,15 @@ length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the share
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (collective morphogenetic field as a shared informational store the whole applies to a part; PRS-07 normalization from the field)"
   - "traditions/friston/prs_triplets.md (PRS-06 the collective agent; mutual modeling pools resources across members)"
-  - "traditions/loughran/prs_triplets.md (the Synergistic Coil — one resource solving more than one P-to-S transition)"
-  - "traditions/rohr/wiki.md (the Universal Christ — merit as participation in one pattern, not accounting)"
-  - "traditions/wright/wiki.md (the communion of saints; the body of Christ as a shared life)"
+  - "traditions/loughran/prs_triplets.md (PRS-09 Synergistic Coils as meta-tools — one abstract resource recurring across levels, solving more than one P-to-S transition)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — merit as participation in one pattern, not accounting)"
+  - "traditions/wright/prs_triplets.md (PRS-8 the 'one new humanity' of Eph 2:11-22 — reconciliation-without-erasure; distinct agents forming a single corporate subject)"
 evidence_strength_summary: "The treasury-as-shared-field and one-resource-meeting-many-deficits are formal (Friston PRS-06) + empirical-in-domain (Levin collective field) and instance Tom's Synergistic Coil; the supernatural reality of the treasury of merit, its dispensation by the keys, and its efficacy before God are theological."
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-08-02T10:28:37"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T06:29:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 270 — Indulgences (Contemporary Parallel)
@@ -55,9 +55,9 @@ Indulgences bring the central claim to a quiet climax. The synthesis's governing
 
 - **Levin-tradition wiki (collective morphogenetic field as a shared store; PRS-07 the field supplies what a deficient part lacks)** — *empirical-in-domain.* The treasury as a common field applied to a member's deficit.
 - **PRS-06 in the Friston-tradition wiki (mutual modeling pools a super-individual generative model)** — *formal, medium confidence.* The whole holds a shared resource no member built alone.
-- **The Synergistic Coil (Tom's concept — one resource solving many P-to-S transitions)** — *formal / structural.* Names the treasury's economy: one superabundant source meeting many members' needs.
-- **Rohr, the Universal Christ** — *theological / contemplative.* Merit as participation in one pattern, not accounting.
-- **Wright, the communion of saints / body of Christ** — *scriptural / theological.* A single shared life in which one member's good is available to others.
+- **PRS-09 in the Loughran-tradition wiki (Synergistic Coils as meta-tools — one resource solving many P-to-S transitions)** — *formal / structural.* Names the treasury's economy: one superabundant source meeting many members' needs.
+- **PRS-03 in the Rohr-tradition wiki (the Universal Christ)** — *theological / contemplative.* Merit as participation in one pattern, not accounting.
+- **PRS-8 in the Wright-tradition wiki (the "one new humanity" of Eph 2:11-22)** — *scriptural / theological.* A single shared life in which one member's good is available to others, without erasure of difference.
 
 ## Where this leaves us
 

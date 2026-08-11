@@ -6,7 +6,7 @@ title: You Made It
 summa_ref: Suppl. Q.99 + Appendix 1 Q.1-2 + Appendix 2
 duration_seconds: 1133
 word_count: 3405
-raw_asr_word_count: 3405
+raw_asr_word_count: 3396
 length_tier: medium
 segment_count: 491
 caption_kind: asr
@@ -16,31 +16,33 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-307 - You Made It - Contemporary]]"
 tags: [summa, day/307, pars/supplement, q/99, series/finale]
-last_qc_at: "2026-07-18T12:19:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T10:28:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 307 — You Made It
 
 *Summa Theologiae, Supplement, Q.99 + Appendix 1 Q.1-2 + Appendix 2. Verbatim ASR fetched 2026-06-26 via youtube-transcript-api; light cleanup of common ASR errors only (Summa/Aquinas/Theologiae, intro name garble "Sumir/Sumanir" -> "Summa in a Year").*
 
+> Typo cleanup (completed 2026-08-10 reviewer pass; the 2026-06-26 render applied the fixes below only partially): Habish -> Habash (x2, host's name, opening and closing sign-off); suma -> Summa (x1, the day's locus line); expedate -> expiate (x2, Appendix 1 Q.2 heading language); "Bob. Maria Press" / "a Maria Press's" -> Ave Maria Press (x2, publisher of the Dominican Fathers five-volume set); meed -> meted (x2 — once in Habash's own president/private-citizen illustration, once restoring the Suppl. Q.99 a.1 quotation "punishment is meted according to the dignity of the person sinned against"). NOT changed: the discount code rendered by the ASR as "sum 10" is left as heard — the correct code is not recoverable from the audio and guessing it would be fabrication.
+
 ## Transcript
 
-[00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 307. So, let's get
 
-started. We're coming today questions 99 of the supplement to the suma, questions one and two of appendix one and the articles of appendix 2, which is of
+started. We're coming today questions 99 of the supplement to the Summa, questions one and two of appendix one and the articles of appendix 2, which is of
 
 [00:39] God's mercy and justice toward the damned and of the quality of those souls who depart this life with original sin only and of the quality of souls who
 
-expedate actual sin or its punishment in purgatory and the two articles on purgatory. The translation that I always use in these podcasts is the one
+expiate actual sin or its punishment in purgatory and the two articles on purgatory. The translation that I always use in these podcasts is the one
 
-generously provided to me, Bob. Maria Press, the five volumes set translated by the fathers of the English Dominican province, which you can now get at a
+generously provided to me, Ave Maria Press, the five volumes set translated by the fathers of the English Dominican province, which you can now get at a
 
-discounted price from a Maria Press's site by typing the code sum 10. And so, here we go. And this is our podcast finale. So, I just want to say how
+discounted price from Ave Maria Press's site by typing the code sum 10. And so, here we go. And this is our podcast finale. So, I just want to say how
 
 [01:14] grateful I am to have had you on the journey with me. And send me an email at austinthinkatholic.org. If I can answer any other questions or
 
@@ -48,9 +50,9 @@ any questions regarding the content of this podcast, be assured of my prayers fo
 
 inflicted on sinners. It is just that sinners are punished with an everlasting punishment. First of all, because punishment corresponds to the dignity of
 
-the one offended. If you run to attack the president, you may be killed in the process, which is not going to be the same punishment meed out to you for
+the one offended. If you run to attack the president, you may be killed in the process, which is not going to be the same punishment meted out to you for
 
-[01:50] running to attack a private citizen. Establishing this point, St. Thomas writes, "According to Aristotle, punishment is meed according to the
+[01:50] running to attack a private citizen. Establishing this point, St. Thomas writes, "According to Aristotle, punishment is meted according to the
 
 dignity of the person sinned against." So that a person who strikes one in authority receives a greater punishment than one who strikes anyone else. Now,
 
@@ -158,7 +160,7 @@ persons? St. Thomas continues, "Although unbaptized children are separated from 
 
 fact, they are united to him by their share of natural goods. And so we'll also be able to rejoice in him by their natural knowledge and love." We then
 
-[10:20] turn to question two of appendix one of the quality of souls who expedate actual sin or its punishment in purgatory. Article one whether the pain of
+[10:20] turn to question two of appendix one of the quality of souls who expiate actual sin or its punishment in purgatory. Article one whether the pain of
 
 purgatory surpasses all the temporal pains of this life. And unfortunately Augustine says the fire of purgatory will be more severe than any pain that
 
@@ -268,7 +270,7 @@ pain of sense there. Yet that place was joined to hell or the same as hell. Othe
 
 Thank you for joining me on the journey. Send me an email if there is any question I can answer regarding the content of this podcast or to direct you
 
-to a suitable resource for your own journey. Let us keep one another in prayer. My name is Austin Habish with Think Catholic and I cannot wait to see
+to a suitable resource for your own journey. Let us keep one another in prayer. My name is Austin Habash with Think Catholic and I cannot wait to see
 
 us both by the grace of God and the intercession of the Blessed Virgin Mary in heaven. May God be with you.
 

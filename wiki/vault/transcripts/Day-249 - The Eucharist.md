@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-249 - The Eucharist - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-19T12:19:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T20:25:16"
+last_qc_outcome: "rewrote"
 tags: [summa, day/249, pars/3, q/73]
 ---
 
@@ -24,23 +24,25 @@ tags: [summa, day/249, pars/3, q/73]
 
 > Aquinas's *Summa Theologiae*, Tertia Pars, III Q.73-74. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+> **Typo cleanup (QC pass 2026-08-10).** The header above asserted a cleanup that had only partly been applied; the following fixes were made against the live ASR (video KXVc5H3Z2gE) and every one corrects a real ASR token: *suma → Summa* (the phrase "Aquinas's Summa Theologiae" in the opening line); *Sumir → Summa in a Year* (the episode-intro name garble the header claimed was already normalized); *ters → Tertia Pars* and *tersop bars → Tertia Pars* (the episode's own structural locus, printed as nonsense while `summa_ref: Tertia Pars` stood correct in the frontmatter); *eukarist → Eucharist* ×6 (the episode's title term and the subject of Q.73–74); *a Maria Press → Ave Maria Press* ×2 (sponsor, incl. possessive); *Antonius Pas → Antoninus Pius* (the Roman emperor addressed in Justin Martyr's *First Apology*, restored from the canonical source per Step 3 rule 6); *catechumans → catechumens*. Left as heard and not guessed: the discount code "suma 10" — not recoverable from the audio, and reconstructing it would be fabrication (consistent with Days 306/307). **Second pass, same run:** the fixes above were found by a fixed list of known garble patterns, which by construction can only find garbles already known. A dictionary-diff over the whole transcript then found four more, none of them boilerplate: *Aquana → Aquinas*; *Cyprien → Cyprian* (inside a quotation from the article's *sed contra*); *unblenmished → unblemished*; *unleaven → unleavened* ×2 and *leaven → leavened* (the paschal-lamb prefigurement and the Latin/Greek rite contrast, on an article that is *about* unleavened bread — and note the ASR itself renders the word correctly two sentences later, so the file disagreed with itself).
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumir podcast is brought to you by Think Catholic. Taking two questions of the
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 249. So let's get started.
 
-We're covering today questions 73 and 74 of the ters that is of the sacrament of [00:35] the eukarist and of the matter of this sacrament. The translation that I always
+We're covering today questions 73 and 74 of the Tertia Pars, that is of the sacrament of [00:35] the Eucharist and of the matter of this sacrament. The translation that I always
 
-use in these podcasts is the one generously provided to me by a Maria Press. The five volume set translated by the fathers of the English Dominican
+use in these podcasts is the one generously provided to me by Ave Maria Press. The five volume set translated by the fathers of the English Dominican
 
-province which you can now get at a discounted price from a Maria Press's site by typing in the code suma 10. And so here we go. Article one, whether the
+province which you can now get at a discounted price from Ave Maria Press's site by typing in the code suma 10. And so here we go. Article one, whether the
 
 Eucharist is a sacrament. A brief refresher on what a sacrament is according to the catechism. The sacraments are efficacious signs of
 
 [01:06] grace instituted by Christ and entrusted to the church by which divine life is dispensed to us of which the Eucharist is one as we see in one of the oldest
 
-Christian documents we have. This is from Justin Martyr written around 150 AD to the Roman Emperor Antonius Pas on what Christianity is. And he says to the
+Christian documents we have. This is from Justin Martyr written around 150 AD to the Roman Emperor Antoninus Pius on what Christianity is. And he says to the
 
 close of that letter, "This food is called among us Eucharistia, the Eucharist, of which no one is allowed to partake, but the man who believes that
 
@@ -52,7 +54,7 @@ made flesh by the word of God has both flesh and blood for our salvation. So lik
 
 his word and from which our blood and flesh by transmutation are nourished is the flesh and blood of that Jesus who was made flesh. In other words, the
 
-eukarist is a visible sign. So the [02:10] appearance of bread and wine remaining although by the prayer of the priest substantially the body and blood of
+Eucharist is a visible sign. So the [02:10] appearance of bread and wine remaining although by the prayer of the priest substantially the body and blood of
 
 Christ which dispenses divine life to man nourishes man as Justin Martyr puts it. Thus the Eucharist is a genuine sacrament. Article two. Whether the
 
@@ -78,11 +80,11 @@ of Christ with the opinion of the early Christians by teaching that just as one 
 
 sacrament so to one who has been baptized by tending towards the perfection of the spiritual life is tending towards the sacrament of the
 
-Eucharist beginning first with this [04:13] baptism of desire as the church teaches the catechism says for catechumans who die before their baptism Their explicit
+Eucharist beginning first with this [04:13] baptism of desire as the church teaches the catechism says for catechumens who die before their baptism Their explicit
 
 desire to receive it together with repentance for their sins and charity assures them the salvation that they were not able to receive through the
 
-sacrament. Then when we look at participating in the eukarist by desire only. Aquinas says here consequently the reception of baptism is necessary for
+sacrament. Then when we look at participating in the Eucharist by desire only. Aquinas says here consequently the reception of baptism is necessary for
 
 starting the spiritual life while the receiving of the Eucharist is requisite for its consummation by partaking not [04:45] indeed actually but in desire as an end
 
@@ -112,7 +114,7 @@ them saying, "This is my body which is given for you. Do this in remembrance of 
 
 by his passion that we are saved and also to remain with us sacramentally after his ascension as he promised. I am with you always, even until the end of
 
-[06:50] the age. And thus, he does remain in the eukarist. As St. Thomas puts it, Christ was going to leave his disciples in his proper species, he left himself with
+[06:50] the age. And thus, he does remain in the Eucharist. As St. Thomas puts it, Christ was going to leave his disciples in his proper species, he left himself with
 
 them under the sacramental species. As the emperor's image is set up to be reverenced in his absence, says since he was going to withdraw his
 
@@ -126,7 +128,7 @@ although he would be later raised. Lastly, since it is by faith in Christ we are
 
 foreshadow and under figure and type across time before Christ. Then there was his actual passion. And now it is fitting that that passion be
 
-[07:50] represented, represented and remembered for the rest of time as it is in the eukarist and the sacrifice of the mass. As Aquinas says, it was necessary
+[07:50] represented, represented and remembered for the rest of time as it is in the Eucharist and the sacrifice of the mass. As Aquinas says, it was necessary
 
 according that there should be at all times among men something to show forth our Lord's passion, the chief sacrament of which in the old law was the pascal
 
@@ -142,9 +144,9 @@ sign only. The sign and reality is Christ's body which is both signified in the 
 
 Eucharist is substantially his body and blood. Then the reality only is that reality which is imparted to those who receive the sacrament which is a
 
-nourishing. It's an increase in grace. The pascal lamb was a prefigurement of each by being eaten with unleaven bread. That applies to the sign only by being
+nourishing. It's an increase in grace. The pascal lamb was a prefigurement of each by being eaten with unleavened bread. That applies to the sign only by being
 
-offered by the entire people of Israel just as Christ was handed over by the people of Israel like an innocent unblenmished lamb. And lastly, just as
+offered by the entire people of Israel just as Christ was handed over by the people of Israel like an innocent unblemished lamb. And lastly, just as
 
 the blood of the pascal lamb saved the [09:22] lives of the sons of Israel and Egypt, so to the Eucharist is strength against mortal sin and an increase in grace in
 
@@ -174,9 +176,9 @@ consecrated. Article three, whether wheat and bread is required for the matter o
 
 contained in this sacrament. He compares himself to a grain of wheat. He said, "Unless the grain of wheat fall into the ground and die itself, it remains alone.
 
-Therefore, wheat and bread is the matter [11:25] of this sacrament." Article four, whether this sacrament ought to be made of unleavened bread. And Aquana says
+Therefore, wheat and bread is the matter [11:25] of this sacrament." Article four, whether this sacrament ought to be made of unleavened bread. And Aquinas says
 
-that although wheaten bread is necessary for validity, unleaven or leaven bread is used according to different rights. In the Catholic Church, the Latins use
+that although wheaten bread is necessary for validity, unleavened or leavened bread is used according to different rights. In the Catholic Church, the Latins use
 
 unleavened bread and the Greek use leavened bread as Gregory the Great put it. The Roman church offers unleavened bread because our Lord took flesh
 
@@ -194,7 +196,7 @@ symbolizing the people being grafted into the body of Christ. Lastly, the water 
 
 Ambrose said, the water flows into the chalice and springs forth unto everlasting life. Article 7, whether the mixing of water is essential to the
 
-sacrament. In a sentence from our article, Cyprien says, "If any of our predecessors out of ignorance or [12:59] simplicity have not kept this usage,
+sacrament. In a sentence from our article, Cyprian says, "If any of our predecessors out of ignorance or [12:59] simplicity have not kept this usage,
 
 i.e. of mixing water with the wine, one may pardon his simplicity, which would not be the case if water were essential to the sacrament as wine or the bread.
 
@@ -212,7 +214,7 @@ could not be done unless so little water was used that it would be changed into 
 
 wine be weak because the sacrament could [14:00] not be celebrated if there were such addition of water as to destroy the species of the wine. Now, with that, we
 
-close another episode. We have just finished covering questions 73 and 74 of the tersop bars that is of the sacrament of the eukarist and of the matter of
+close another episode. We have just finished covering questions 73 and 74 of the Tertia Pars, that is of the sacrament of the Eucharist and of the matter of
 
 this sacrament. My name is Austin Habash with think catholic and I cannot wait to see you tomorrow.
 

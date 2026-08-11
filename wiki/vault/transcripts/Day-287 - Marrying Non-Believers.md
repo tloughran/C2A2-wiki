@@ -6,7 +6,7 @@ title: Marrying Non-Believers
 summa_ref: Suppl. Q.59-60
 duration_seconds: 711
 word_count: 2123
-raw_asr_word_count: 2111
+raw_asr_word_count: 2119
 length_tier: medium
 fidelity_checked: true
 segment_count: 314
@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-287 - Marrying Non-Believers - Contemporary]]"
 tags: [summa, day/287, pars/suppl, q/59-60]
-last_qc_at: "2026-07-25T16:23:12"
+last_qc_at: "2026-08-10T14:28:40"
 last_qc_outcome: "pass"
 ---
 

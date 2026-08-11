@@ -6,7 +6,7 @@ title: Time of Resurrection
 summa_ref: Suppl. Q.77-78
 duration_seconds: 390
 word_count: 1236
-raw_asr_word_count: 1236
+raw_asr_word_count: 1220
 length_tier: short
 segment_count: 176
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-296 - Time of Resurrection - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/296, pars/suppl, q/77-78]
-last_qc_at: "2026-07-12T16:21:18"
+last_qc_at: "2026-08-10T10:28:50"
 last_qc_outcome: "pass"
 ---
 

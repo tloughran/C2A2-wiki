@@ -3,23 +3,23 @@ day: 240
 title: Post-Resurrection (Contemporary)
 pairs_with: "[[Day-240 - Post-Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1626
+length_actual_words: 1653
 length_ratio_to_target: 1.084
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/hoffman/wiki.md (interface theory — perception relative to the perceiver's interface)"
   - "traditions/friston/prs_triplets.md (active inference — perception as inference under a generative model; precision-weighting)"
-  - "traditions/kastrup/prs_triplets.md (P2 individual identity within monism)"
-  - "traditions/levin/prs_triplets.md (P3 morphological attractor; P1 morphogenetic control — propagation from nearest node)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
+  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor; PRS-01 morphogenetic control — propagation from nearest node)"
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical; PRS-03 inaugurated eschatology)"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ)"
   - "master/cross_program_index.md (CROSS — reception-by-mode as perspective-limitation; Friston precision-reallocation dispatch)"
-evidence_strength_summary: "'Whatever is received is received according to the mode of the receiver' = strong convergence with active-inference perception (Friston, empirical/formal in-domain) and interface-relative perception (Hoffman), and the cleanest Summa statement of the project's individuation claim; hierarchical manifestation (few witnesses for the many) = information-cascade structure, textual; causality 'first on what is nearest' = attractor-propagation reading (Levin P3/P1), structural analogy; a.5 'cannot be proved demonstrably, an article of faith' = the text's own confidence-level, adopted; the historical appearances = Wright's Medium-confidence historical argument, contested."
+evidence_strength_summary: "'Whatever is received is received according to the mode of the receiver' = strong convergence with active-inference perception (Friston, empirical/formal in-domain) and interface-relative perception (Hoffman), and the cleanest Summa statement of the project's individuation claim; hierarchical manifestation (few witnesses for the many) = information-cascade structure, textual; causality 'first on what is nearest' = attractor-propagation reading (Levin PRS-03/PRS-01), structural analogy; a.5 'cannot be proved demonstrably, an article of faith' = the text's own confidence-level, adopted; the historical appearances = Wright's Medium-confidence historical argument, contested."
 mind_first_reframe: "The risen Christ's manifestation is read through reception-by-mode: what each witness can receive is set by the generative model and interface they bring, so the same risen reality is veiled to the Emmaus pair and disclosed to the believing — perception as inference, individuated by perspective; and the resurrection's causality propagates from the nearest node outward, the new attractor realized first in the body united to the Word and through it in all."
 central_theme_thread: "Aquinas's own axiom — received according to the mode of the receiver — IS the project's central claim in the Summa's voice: conscious agents are individuated by the limitations of their perspective, and even the risen Christ is disclosed only as far as each limited mode can receive, which is why the unity must still be worked out, in fear and trembling, from within each perspective's reach."
 tags: [synthesis, day/240, theme/reception-by-mode]
-last_qc_at: "2026-08-05T04:22:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T22:32:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 240 — Contemporary Parallel: Received According to the Mode of the Receiver
@@ -38,7 +38,7 @@ The inquiry-problem, medieval and contemporary, is **perception as perspective-b
 
 **Perception as inference under a model.** Tom's PRS-form record of the Friston program is the resource that fits Aquinas's axiom almost word for word. Active inference holds that perception is the brain's best inference about its causes under a generative model, with precision-weighting determining what evidence is allowed to update belief. "Received according to the mode of the receiver" is, in this vocabulary, the claim that the posterior is shaped by the prior — that what the Emmaus disciples could perceive was bounded by the model they carried, and that recognition came (at the breaking of bread) when the model updated. This is empirical and formal in its own domain, and the convergence with the Summa's axiom is close enough to be startling: the master index already carries the Friston precision-reallocation reading of contemplative reframing, and this is the same mechanism applied to disclosure. The interface program (Hoffman-tradition wiki) gives the complementary ontological reading: perception is interface-relative, so even a basal reality is rendered to each perceiver according to that perceiver's interface — the form Christ takes is the form the receiver's interface can render.
 
-**Propagation from the nearest node.** Q.56's causal principle — every cause "operates first upon what is nearest" — pairs with the new-attractor reading carried from Day 239 (Levin P3/P1). The resurrection's new mode of life is realized first in "that body which is naturally united with himself" and propagates outward to the remote; the risen body is the first node, and our resurrection is the attractor spreading through the population it is the exemplar of. Structural analogy, marked; but it makes Q.56's efficient-and-exemplar pairing intelligible — efficient cause as propagation, exemplar cause as the target-form each instance conforms to.
+**Propagation from the nearest node.** Q.56's causal principle — every cause "operates first upon what is nearest" — pairs with the new-attractor reading carried from Day 239 (Levin PRS-03/PRS-01). The resurrection's new mode of life is realized first in "that body which is naturally united with himself" and propagates outward to the remote; the risen body is the first node, and our resurrection is the attractor spreading through the population it is the exemplar of. Structural analogy, marked; but it makes Q.56's efficient-and-exemplar pairing intelligible — efficient cause as propagation, exemplar cause as the target-form each instance conforms to.
 
 **The honest confidence level.** Q.55 a.5 is the text grading its own evidence: the resurrection "cannot be proved demonstrably," is "an article of faith," supported by "persuasive, sufficient proofs" (wounds, eating, the witness of scripture) but not coercive demonstration. The synthesis adopts this directly, and it dovetails with Wright's Medium-confidence historical argument (PRS-04) flagged yesterday: the appearances are offered as the best explanation to those whose mode can receive them, not as compelling proof to every mode — which is itself an instance of the reception-by-mode axiom operating on the resurrection's own evidence.
 
@@ -60,9 +60,9 @@ This is the day the Summa says the project's thesis in its own words. "Whatever 
 
 - **Friston-tradition wiki** (active inference; precision-weighting) — "received according to the mode of the receiver" as perception-is-inference-under-a-model; Emmaus recognition as model update. Evidence: empirical/formal in-domain; application structural.
 - **Hoffman-tradition wiki** (interface theory) — the form Christ takes as the form the receiver's interface can render; disclosure as interface-relative. Evidence: speculative metaphysics, published case.
-- **P3 + P1, Levin-tradition wiki** (attractor; propagation from nearest node) — Q.56 efficient-and-exemplar causality as the new attractor spreading from the first body outward. Evidence: structural analogy, marked.
+- **PRS-03 + PRS-01, Levin-tradition wiki** (attractor; propagation from nearest node) — Q.56 efficient-and-exemplar causality as the new attractor spreading from the first body outward. Evidence: structural analogy, marked.
 - **PRS-04 + a.5 self-rating, Wright-tradition wiki** (historical resurrection; "article of faith") — proofs persuasive-not-coercive, received by mode; Medium-confidence historical argument. Evidence: contested, named.
-- **P2, Kastrup-tradition wiki** (individuation within one mind) — the receiver's mode as the locus of individuation that bounds reception. Evidence: speculative metaphysics.
+- **PRS-02, Kastrup-tradition wiki** (individuation within one mind) — the receiver's mode as the locus of individuation that bounds reception. Evidence: speculative metaphysics.
 
 ## Where this leaves us
 

@@ -16,15 +16,15 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-166 - Testing God - Contemporary]]"
 tags: [summa, day/166, pars/II-II, q/96-97]
-last_qc_at: "2026-07-19T08:21:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T16:20:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 166 — Testing God
 
 Austin Habash's Day 166 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.96-97.
 
-> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Aquinas, assuma → Aquinas's Summa; day 66 → day 166 (ASR dropped the leading 1; episode is Day 166).
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Aquinas, assuma → Aquinas's Summa; day 66 → day 166 (ASR dropped the leading 1; episode is Day 166); A Maria Press → Ave Maria Press (2026-08-10 QC: the sponsor name was corrected at its second occurrence but not its first).
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
@@ -34,7 +34,7 @@ Summa a day, we'll seek to summarize St. Thomas's responses, discovering the bri
 
 We're covering today questions 96 and 97 [00:33] of the Secunda Secundae that is of superstition in observances and irreligion i.e. by way of deficiency of
 
-the temptation of God. The translation that I always use in these podcasts is the one generously provided to me. A Maria Press, the five volume set,
+the temptation of God. The translation that I always use in these podcasts is the one generously provided to me. Ave Maria Press, the five volume set,
 
 translated by the fathers of the English Dominican province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code sum
 

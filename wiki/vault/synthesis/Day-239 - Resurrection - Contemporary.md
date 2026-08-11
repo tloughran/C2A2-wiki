@@ -3,22 +3,22 @@ day: 239
 title: Resurrection (Contemporary)
 pairs_with: "[[Day-239 - Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1503
+length_actual_words: 1524
 length_ratio_to_target: 1.002
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation)"
-  - "traditions/levin/prs_triplets.md (P3 morphological attractor formalism; P1 morphogenetic control)"
+  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism; PRS-01 morphogenetic control)"
   - "traditions/stump/prs_triplets.md (PRS-04 formal/final causality and modern biology)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-04 embodied love as epistemology)"
-  - "traditions/kastrup/prs_triplets.md (P2 individual identity within monism)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "master/cross_program_index.md (Wright dispatch PROP-2026-05-31-001 — resurrection as basal-layer re-grounding; tension with Carroll Core Theory)"
-evidence_strength_summary: "Resurrection as 'beginning and exemplar of all good things' = Wright's inaugurated-eschatology scholarship (historical argument MEDIUM-confidence per his own PRS-04, theological in force); same-body-same-soul-entire-yet-glorified = formal-cause identity-through-transformation (Stump PRS-04, Levin P3 attractor), live metaphysics + structural analogy; perfect vs imperfect resurrection (immortal vs resuscitated) = textual distinction, philosophically clean; the scars as glory = Rohr wound-to-wisdom, contemplative; the historical resurrection claim itself = contested, Wright's case explicitly a MEDIUM-confidence historical argument against naturalistic closure, flagged as the live tension with Carroll."
+evidence_strength_summary: "Resurrection as 'beginning and exemplar of all good things' = Wright's inaugurated-eschatology scholarship (historical argument MEDIUM-confidence per his own PRS-04, theological in force); same-body-same-soul-entire-yet-glorified = formal-cause identity-through-transformation (Stump PRS-04, Levin PRS-03 attractor), live metaphysics + structural analogy; perfect vs imperfect resurrection (immortal vs resuscitated) = textual distinction, philosophically clean; the scars as glory = Rohr wound-to-wisdom, contemplative; the historical resurrection claim itself = contested, Wright's case explicitly a MEDIUM-confidence historical argument against naturalistic closure, flagged as the live tension with Carroll."
 mind_first_reframe: "The resurrection is read as the installation of a new attractor — life utterly immortal, a mode of embodiment that did not previously exist — with the risen body as the first node from which the pattern propagates; identity is carried by the form, so the same person is re-embodied in a transformed mode, the wounds retained not as damage but as features of the new pattern."
 central_theme_thread: "The resurrection is the loving-unity telos shown to be achievable in a body: the goal is not escape from limited embodied perspective but its transformation, the same form re-expressed in a mode where limitation no longer means corruption — the first instance of what the whole computation is for."
 tags: [synthesis, day/239, theme/identity-through-transformation]
-last_qc_at: "2026-08-05T04:22:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T22:32:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 239 — Contemporary Parallel: The First Instance of a New Mode of Being
@@ -35,9 +35,9 @@ The inquiry-problem, medieval and contemporary, is **identity-through-radical-tr
 
 ## Resource
 
-**The new attractor.** Tom's PRS-form record of Levin (P3, the morphological attractor formalism; P1, morphogenetic control) supplies the structural resource. A morphogenetic system converges toward a target form stored as an attractor; what Q.53-54 describe is the establishment of a *new* attractor — "life utterly immortal" — instantiated first in one body and then, per tomorrow's Q.56, propagated to others. The perfect/imperfect distinction maps cleanly: Lazarus was restored to the *old* attractor (mortal life, which decays again); Christ is the first instance of a new one (a glorified mode that does not decay). The biology is empirical and in-domain; the transfer is structural analogy, marked — but it gives "the first fruits of them that sleep" a precise shape: the first node at which a new target-form is realized.
+**The new attractor.** Tom's PRS-form record of Levin (PRS-03, the morphological attractor formalism; PRS-01, morphogenetic control) supplies the structural resource. A morphogenetic system converges toward a target form stored as an attractor; what Q.53-54 describe is the establishment of a *new* attractor — "life utterly immortal" — instantiated first in one body and then, per tomorrow's Q.56, propagated to others. The perfect/imperfect distinction maps cleanly: Lazarus was restored to the *old* attractor (mortal life, which decays again); Christ is the first instance of a new one (a glorified mode that does not decay). The biology is empirical and in-domain; the transfer is structural analogy, marked — but it gives "the first fruits of them that sleep" a precise shape: the first node at which a new target-form is realized.
 
-**Form across transformation.** PRS-04 in the Stump-tradition wiki (formal/final causality recovered for biology) is the resource for continuity-with-novelty: if identity rides the form, then the same form re-expressed in a transformed mode is the *same individual* differently realized — which is exactly identity-through-transformation rather than replacement. P2 in the Kastrup-tradition wiki (individuation within one mind) adds that the persisting subject, established as the bearer of identity through death (Day 238), is the same subject now re-embodied. The scars, on this reading, are not residual damage but retained *features of the form* — which is why Aquinas can call them glory, not defect.
+**Form across transformation.** PRS-04 in the Stump-tradition wiki (formal/final causality recovered for biology) is the resource for continuity-with-novelty: if identity rides the form, then the same form re-expressed in a transformed mode is the *same individual* differently realized — which is exactly identity-through-transformation rather than replacement. PRS-02 in the Kastrup-tradition wiki (individuation within one mind) adds that the persisting subject, established as the bearer of identity through death (Day 238), is the same subject now re-embodied. The scars, on this reading, are not residual damage but retained *features of the form* — which is why Aquinas can call them glory, not defect.
 
 **Inauguration, and the historical claim.** This is Wright's territory, and it carries the run's most important evidence-strength flag. PRS-03 (inaugurated eschatology — the decisive event has occurred, its implications still unfolding) is the scholarly frame for "the beginning and exemplar of all good things": new creation has begun, not been postponed to a distant end. But PRS-04 (the historical argument for the bodily resurrection) is, by Wright's own confidence rating, *Medium* — a historical argument that the resurrection is the best explanation of the evidence, mounted against the methodological naturalism that would exclude it in principle. The master index flags this as the live tension with Carroll's Core Theory completeness, and the honest reframe must hold it as contested, not settled. PRS-02 in the Rohr-tradition wiki (order-disorder-reorder) gives the pattern its contemplative register: the resurrection as the reorder that follows the cross's disorder, "deeper than the original order because it has been tested and survived" — and the scars are that survival made visible.
 
@@ -57,7 +57,7 @@ The resurrection is what the whole computation is *for*. The central theme holds
 
 ## Bridges
 
-- **P3 + P1, Levin-tradition wiki** (morphological attractor; morphogenetic control) — the resurrection as a new attractor, the risen body as first node; perfect vs imperfect as new-target vs old-target. Evidence: empirical in-domain; structural analogy, marked.
+- **PRS-03 + PRS-01, Levin-tradition wiki** (morphological attractor; morphogenetic control) — the resurrection as a new attractor, the risen body as first node; perfect vs imperfect as new-target vs old-target. Evidence: empirical in-domain; structural analogy, marked.
 - **PRS-04, Stump-tradition wiki** (formal/final causality) — identity-through-transformation: the same form re-expressed in a glorified mode. Evidence: live analytic-Thomist metaphysics.
 - **PRS-03, Wright-tradition wiki** (inaugurated eschatology) — "beginning and exemplar of all good things" as new creation begun. Evidence: strong NT scholarship on the texts' claim.
 - **PRS-04, Wright-tradition wiki + master-index Carroll tension** (resurrection as historical) — the contested historical occurrence; Medium confidence, live tension with Core Theory closure. Evidence: explicitly contested; named, not resolved.

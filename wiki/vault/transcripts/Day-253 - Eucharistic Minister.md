@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-253 - Eucharistic Minister - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-19T12:19:36"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T20:25:31"
+last_qc_outcome: "rewrote"
 tags: [summa, day/253, pars/3, q/82]
 ---
 
@@ -24,17 +24,19 @@ tags: [summa, day/253, pars/3, q/82]
 
 > Aquinas's *Summa Theologiae*, Tertia Pars, III Q.82. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+> **Typo cleanup (QC pass 2026-08-10).** The header above asserted a cleanup that had only partly been applied; the following fixes were made against the live ASR (video 9ByS9ERE4ao) and every one corrects a real ASR token: *suma → Summa* (opening line, "Aquinas's Summa Theologiae"); *Sumanir → Summa in a Year* (the intro-name garble had been *shortened* to "the Summa podcast" rather than restored — the same half-measure recorded at Day 247); *Suma Day → Summa a day* (the ASR dropped the article; the identical boilerplate on Days 249/284/285/286 reads "Summa a day"); *tersoparus → Tertia Pars* in the opening and *tersia pars → Tertia Pars* in the closing recap (the episode's own structural locus, garbled two different ways); *eukarist → Eucharist* ×2; *Vave Maria Press → Ave Maria Press* and *a Maria Press's → Ave Maria Press's* (the sponsor name is garbled two *different* ways in this episode's ASR, three paragraphs apart); *leasized → laicized* (the technical term in the Q.82 a.8 discussion, same shape as Day 162's "leosized"). Left as heard and not guessed: the discount code (ASR "Suma 10"); note the pre-existing render had already normalized it to "Summa 10", which departs from the Days 306/307 leave-as-heard precedent and has been left in place rather than reverted, since reverting would reintroduce a garble. **Second pass, same run:** a dictionary-diff over the whole transcript found eight further garbles the pattern list could not see, several in the episode's core vocabulary: *gizmatics → schismatics* and *schizmatics → schismatics* and *hereticals → heretics* (Q.82 a.7 is *on* whether heretics and schismatics can consecrate); *prelets → prelates*; *prespit → presbyteros* and *prespitroy → presbyteroi* (Habash is transliterating the Greek he is expounding); *eldelders → priest-elders*; *co-ceelebrate → co-celebrate*.
 
-Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
-Summa Day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 253. So let's get started.
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
-We're covering today questions 81 and 82 of the tersoparus that is of the use [00:35] which Christ made of this sacrament at an in institution and of the minister of
+Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 253. So let's get started.
 
-this sacrament. The translation that I always use in these podcasts is the one generously provided to me. Vave Maria Press, the five volume set translated by
+We're covering today questions 81 and 82 of the Tertia Pars, that is of the use [00:35] which Christ made of this sacrament at an in institution and of the minister of
 
-the fathers of the English Dominican province, which you can now get at a discounted price from a Maria Press's site by typing in the code Summa 10. And
+this sacrament. The translation that I always use in these podcasts is the one generously provided to me. Ave Maria Press, the five volume set translated by
+
+the fathers of the English Dominican province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And
 
 so here we go. Article one, whether Christ received his own body and blood. Jesus said at the last supper, for I have given you an example that you also
 
@@ -44,7 +46,7 @@ an example and participating in the Passover himself, it was fitting that he par
 
 Christ gave his body to Judas, in a word from St. Thomas. But since Christ was to serve as a pattern of justice, it was not in keeping with his teaching
 
-authority to sever Judas, a hidden sinner, from communion with the others without an accuser and evident proof, [01:39] lest the church's prelets might have an
+authority to sever Judas, a hidden sinner, from communion with the others without an accuser and evident proof, [01:39] lest the church's prelates might have an
 
 example for doing the like. Therefore, remains to be said that Judas received, our Lord's body and blood with the other disciples. Article three, whether Christ
 
@@ -56,7 +58,7 @@ to the apostles was also the substance [02:09] of that passable body. Yet it goe
 
 because it was there substantially with the species of bread and wine remaining. And without the accidents of the body present, the body as present in the
 
-eukarist is not susceptible to injury through the sacramental species. Article four. Whether if this sacrament had been reserved in a pix or consecrated at the
+Eucharist is not susceptible to injury through the sacramental species. Article four. Whether if this sacrament had been reserved in a pix or consecrated at the
 
 moment of Christ's death by one of the apostles, Christ himself would have died there. If there was the eucharist in a tabernacle held in the place of the last
 
@@ -86,7 +88,7 @@ of offering sacrifice which is acceptable and holy on behalf of the people." And
 
 service. So it is literally the work of the priest and offering sacrifice that St. Paul is doing here for and with the gentiles. In other places the New
 
-Testament we translate the Greek prespit as to denote priests. It can also be translated as elders as well. And we see the apostles the prespitroy working
+Testament we translate the Greek presbyteros to denote priests. It can also be translated as elders as well. And we see the apostles the presbyteroi working
 
 [04:44] together in this authoritative ministerial role as it is written in the book of acts. And when Paul and Barnabas had no small dissension and debate with
 
@@ -96,11 +98,11 @@ and biblical authoritative ministerial priesthood led by the apostles which is l
 
 discussion. He says, "And after there had been much debate, Peter rose and [05:15] said to them, brethren, you know that in the early days God made choice among you
 
-that by my mouth the Gentiles should hear the word of the gospel and believe. Therefore, consecration of the eukarist belongs perfectly to the apostles and
+that by my mouth the Gentiles should hear the word of the gospel and believe. Therefore, consecration of the Eucharist belongs perfectly to the apostles and
 
 those appointed as overseers as scripture calls them. That's our modern-day bishops who have the right then to ordain or appoint other
 
-prespitroy priest eldelders who share in this responsibility who can also consecrate the eucharist as well. St. Thomas says to this point the power of
+presbyteroi, priest-elders, who share in this responsibility who can also consecrate the Eucharist as well. St. Thomas says to this point the power of
 
 consecrating the sacrament on Christ's [05:46] behalf is bestowed upon the priest at his ordination for thereby he is put upon a level with them to whom the lord
 
@@ -108,7 +110,7 @@ said do this for a commemoration of me. Therefore it must be said that it belong
 
 priests can consecrate one in the same host. Yes, is answered by Aquinas briefly. According to the custom of some churches, as the apostles sucked when
 
-Christ sucked, so the newly ordained co-ceelebrate with the ordaining bishop, nor is the consecration on that account [06:16] repeated over the same host because it's
+Christ sucked, so the newly ordained co-celebrate with the ordaining bishop, nor is the consecration on that account [06:16] repeated over the same host because it's
 
 innocent. The s third said the intention of all should be directed to the same instant of the consecration. Article three, whether dispensing of the
 
@@ -164,15 +166,15 @@ abomination. In a word, when acting in persona Christi and in virtue of his offi
 
 outside of grace, he personally can attribute affect the efficacy of these prayers. As it is written in scripture, the Sierra chapter 35, the prayer of the
 
-humble pierces the clouds. Article 7, whether heretics, gizmatics, and excommunicated persons can consecrate. In a sentence from St. Thomas, Augustine
+humble pierces the clouds. Article 7, whether heretics, schismatics, and excommunicated persons can consecrate. In a sentence from St. Thomas, Augustine
 
-says, just as baptism remains in them, heretics, schizmatics, and those who are [10:27] excommunicate, so do their orders remain intact. Now, by the power of his
+says, just as baptism remains in them, heretics, schismatics, and those who are [10:27] excommunicate, so do their orders remain intact. Now, by the power of his
 
-ordination, a priest can consecrate the Eucharist. Therefore, it seems that hereticals, schizmatics, and those who are excommunicate can consecrate the
+ordination, a priest can consecrate the Eucharist. Therefore, it seems that heretics, schismatics, and those who are excommunicate can consecrate the
 
 Eucharist since their orders remain entire. Article 8, whether a degraded priest can consecrate this sacrament. And what this seems to be talking about
 
-is a leasized priest, which the Catechism of the Catholic Church spells out succinctly, that the priest never loses his priestly character, which was
+is a laicized priest, which the Catechism of the Catholic Church spells out succinctly, that the priest never loses his priestly character, which was
 
 given by ordination, and thus retains [10:58] the power to consecrate the Eucharist. Yet such exercise of that act can be deemed illicit or forbidden by the
 
@@ -214,7 +216,7 @@ offer that sacrifice in advancing the salvation of the world and also for the sa
 
 mortal sin, for this degrades the dignity of the sacrament and is untrue to the ecclesiastical unity which the sacrament represents. And with that, we
 
-come to the close of another episode. We have just finished covering questions 81 and 82 of the tersia pars that is of the use which Christ made of this sacrament
+come to the close of another episode. We have just finished covering questions 81 and 82 of the Tertia Pars, that is of the use which Christ made of this sacrament
 
 and its institution and of the ministers of this sacrament. My name is Austin [14:08] Habash with Think Catholic and I cannot wait to see you tomorrow.
 

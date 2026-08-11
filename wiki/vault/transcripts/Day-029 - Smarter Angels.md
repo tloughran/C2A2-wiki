@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-029 - Smarter Angels - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-20T04:20:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T20:25:52"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/029, pars/I]
 ---
@@ -28,11 +28,13 @@ tags: [summa, day/029, pars/I]
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
+> **Typo cleanup (QC pass 2026-08-10).** Three garbles in the opening boilerplate survived the mechanical sweep above because none of its regexes matched them; each corrects a real token in the live ASR (video YsUWZdr4vmI): *suer → Summa*; *Aquinas assumma Theologiae → Aquinas's Summa Theologiae* (the ASR's "assumma" carries both the possessive and the title, so `\bSuma\b` could not reach it); *Su New Year → Summa in a Year*. Unlike Days 249/253/284/285/286, this file's audit trail was honest — it names the exact regexes applied and declares itself an initial pass — so this is an under-matching sweep, not a claimed-but-unapplied one. Note also that `raw_asr_word_count` equalling `word_count` (1788) is CORRECT here rather than the recorded copy defect: an auto-render preserves every ASR token, and both counts measure to 1788 against the live fetch. **Second pass, same run:** a dictionary-diff found three more the pattern list could not see, all the same name: *Quan's words → Aquinas's words*, *aqu quantis → Aquinas*, and *it tued → intuited*. The first two are the mechanical sweep's own target token, escaping it in two further spellings — which is the general lesson: a fixed rename table cannot cover an ASR that garbles the same word a different way each time.
+
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suer podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Su New Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 29 so let's get started we're covering today questions 55 and 56 of the Prima pars which is the medium of the Angelic knowledge and the Angel's
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 29 so let's get started we're covering today questions 55 and 56 of the Prima pars which is the medium of the Angelic knowledge and the Angel's
 
 [00:00:38] knowledge of immaterial things the translation that I always use in these podcasts is a second revised Edition translated by the fathers of the English Dominican Province and so here we go and we begin with an inquiry into the medium through which Angelic knowledge is
 
@@ -68,13 +70,13 @@ whether the Angels understand by species drawn from things as we said in the las
 
 article three whether the higher Angels understand by more Universal species than the lower Angels now I think personally this is kind of a cool question here we are asking if the Perfection of knowledge consists in its universality phrased another way is the smarter Angel the one who knows knows more but with less or who knows more through a simpler more universally applicable concept and the answer is yes
 
-[00:04:40] think about God who knows everything possible or actual by knowing one entirely simple idea himself his Essence and as things move down the chain on intellectual Perfection their knowledge becomes less and less simple and less and less universally encompassing here are Quan's words the higher the angel is by so much the fewer species will he be
+[00:04:40] think about God who knows everything possible or actual by knowing one entirely simple idea himself his Essence and as things move down the chain on intellectual Perfection their knowledge becomes less and less simple and less and less universally encompassing here are Aquinas's words the higher the angel is by so much the fewer species will he be
 
 [00:05:11] able to apprehend the whole mass of intelligible objects therefore these forms must be more Universal each one of them as it were extending to more things and example of this can in some measure be observed in ourselves for some people there are who cannot grasp an intelligible truth unless it be explained to them in every part and detail this comes of their weakness of intellect while there are others of stronger intellect who can grasp many
 
 [00:05:43] things from few all of that was Aquinas is words now my words imagine what a brilliant mind like St Thomas Aquinas understood in understanding just one truth for example that God exists think of how many other truths a whole universe of truths he would have grasped or seen in knowing that one truth seeing through that one truth but for us regular people we do have to be shown Peace by piece each individual
 
-[00:06:15] consequence of that truth every other truth which flows inevitably from it yet for Angels or for the Angelic doctor a term the church has given to St Thomas Aquinas many truths are simply seen or it tued in knowing that one truth we move on to
+[00:06:15] consequence of that truth every other truth which flows inevitably from it yet for Angels or for the Angelic doctor a term the church has given to St Thomas Aquinas many truths are simply seen or intuited in knowing that one truth we move on to
 
 ### Q.56 — The angel's knowledge of immaterial things
 
@@ -100,7 +102,7 @@ question 56 the Angel's knowledge of immaterial things article one whether an an
 
 [00:09:52] is how Angels know themselves or God knows himself second one knows the thing because a like of it is in the mind remember that's how we know the tree we abstract a likeness or a species from our experience of trees which then informs the Mind third one knows a thing like we know a painter by staring at one of his paintings through the knowledge derived not from the thing known but through something else in which it is made to appear is
 
-[00:10:22] what aqu quantis says option A is how God knows God as we have said option C is is how we know God staring at its effects option b is how Angels know God which is beautifully articulated by Aquinas so I will simply quote his words he says the angel knows God and is likened to that knowledge whereby a thing is seen through the species abstracted from it for since God's image is impressed on the very nature of the
+[00:10:22] what Aquinas says option A is how God knows God as we have said option C is is how we know God staring at its effects option b is how Angels know God which is beautifully articulated by Aquinas so I will simply quote his words he says the angel knows God and is likened to that knowledge whereby a thing is seen through the species abstracted from it for since God's image is impressed on the very nature of the
 
 [00:10:53] angel in his Essence the angel knows God in as much as he is the image of God God the Angelic nature is itself a kind of mirror representing the Divine image the angel as we have said before immediately knows itself and immediately knowing itself it sees that it is a particular being not being itself it has some degree of goodness but is not boundless goodness it has a kind of beauty but is
 

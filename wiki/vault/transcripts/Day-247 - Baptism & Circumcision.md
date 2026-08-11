@@ -15,8 +15,8 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-247 - Baptism & Circumcision - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-19T12:19:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T16:21:10"
+last_qc_outcome: "rewrote"
 tags: [summa, day/247, pars/3, q/70]
 ---
 
@@ -24,17 +24,19 @@ tags: [summa, day/247, pars/3, q/70]
 
 > Aquinas's *Summa Theologiae*, Tertia Pars, III Q.70. Verbatim ASR captured 2026-06-16; light cleanup of common transcription errors (Summa, Aquinas, Theologiae, Damascene, narrator "Austin Habash"). Episode-intro name garble ("Summa in a Year") normalized.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's suma
+> Typo cleanup (2026-08-10 QC pass; the 2026-06-16 render claimed the sweep above but applied only part of it): Sumanir podcast → Summa in a Year podcast (×2, ASR intro-name garble — the render had shortened it to "the Summa podcast" rather than restoring it); suma theologia → Summa Theologiae; a Maria Press → Ave Maria Press (×2, incl. possessive); ters of pars → Tertia Pars; concupisence → concupiscence. Left as heard: the discount code "suma 10" — not recoverable from the audio, and guessing would be fabrication.
 
-Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 247.
 
-So let's get started. We're covering today question 69 and 70 of the ters of pars that is of the effects of baptism [00:36] and of circumcision. The translation I
+So let's get started. We're covering today question 69 and 70 of the Tertia Pars that is of the effects of baptism [00:36] and of circumcision. The translation I
 
-always use in these podcasts is the one generously provided to me a Maria Press. The five volume set translated by the fathers of the English Dominican
+always use in these podcasts is the one generously provided to me Ave Maria Press. The five volume set translated by the fathers of the English Dominican
 
-province which you can now get at a discounted price from a Maria Press's site by typing in the code suma 10. And so here we go. Article one. Whether all
+province which you can now get at a discounted price from Ave Maria Press's site by typing in the code suma 10. And so here we go. Article one. Whether all
 
 sins are taken away by baptism. At baptism by becoming a member of the mystical body of Christ. His merits can count for us. His grace is infused into
 
@@ -52,7 +54,7 @@ supernatural love and obedience to God." In St. Thomas's words, "Since the pains
 
 made a member of Christ, just as if he himself had borne those pains, his sins [02:12] are set in order by the pains of Christ's passion." Article three,
 
-whether baptism should take away the penalties of sin that belong to this life. This is not fitting. It is fitting that man struggle against concupisence
+whether baptism should take away the penalties of sin that belong to this life. This is not fitting. It is fitting that man struggle against concupiscence
 
 that's unruly desire for the sake of his own growth and virtue and laying up merit or glory in heaven. It is also fitting that he suffer the penalty of
 

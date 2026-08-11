@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-07 bioelectric reprogramming — restoring a defected cell to the collective field)"
   - "traditions/friston/prs_triplets.md (PRS-06/PRS-07 re-coupling a member into the collective's Markov blanket)"
   - "traditions/rohr/wiki.md (order-disorder-reorder; the reorder that re-includes)"
-  - "traditions/wright/wiki.md (binding/loosing symmetry; restoration to the covenant body)"
+  - "traditions/wright/prs_triplets.md (PRS-34 justification as covenant membership — the shared table as the operative test of belonging, hence restoration to the table as restoration to the body); binding/loosing as the dominical grant of the keys"
 evidence_strength_summary: "The binding/loosing symmetry and absolution-as-re-coupling are formal (Friston PRS-06/07) + empirical-in-domain (Levin PRS-07 normalization restores the cell to the field); the withholding of fellowship and the spiritual restoration of the sacraments are theological/canonical."
 mind_first_reframe: "Absolution is reframed as re-coupling: the same jurisdictional power that drew the boundary now dissolves it, restoring the member to the collective field (Levin PRS-07) — the Markov blanket re-incorporates what it had excluded (Friston) — so the body's boundary is permeable by design, ordered to reintegration."
 central_theme_thread: "Re-inclusion is the telos the cut was for: the same power that bound looses, returning the perspective-limited member to the whole — disorder resolved into a deeper reorder."
 tags: [synthesis, day/269, theme/absolution-as-re-coupling]
-last_qc_at: "2026-08-02T10:28:36"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T06:29:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 269 — Absolution of Excommunication (Contemporary Parallel)

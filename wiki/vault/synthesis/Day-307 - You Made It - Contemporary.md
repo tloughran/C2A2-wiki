@@ -3,23 +3,23 @@ day: 307
 title: You Made It (Contemporary)
 pairs_with: "[[Day-307 - You Made It]]"
 length_target_words: 2200
-length_actual_words: 1594
+length_actual_words: 1601
 length_ratio_to_target: 0.72
 length_tier: medium
 length_note: "Body 1594 words vs ~2200 tier guideline (-28%); finale held to a tight PRS argument plus a whole-series closer rather than padded — all substantive elements present per length policy."
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (God's-homecoming salvation frame, PROP-2026-05-31-002; new-creation reframe of a closed cosmos, PROP-2026-05-31-001; P4 resurrection as historical/cosmological)"
-  - "traditions/rohr/prs_triplets.md (P3 Universal Christ; relation-is-basal — 'how do I get to heaven is a question of the ego, not of the Trinity'; non-dual awareness, Everything Belongs)"
-  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation; P8 the Daimon; P14 dissociative-boundary granularity)"
-  - "traditions/carroll/prs_triplets.md (P11 emergence taxonomy Type-1/Type-2; poetic naturalism; arrow-of-time/entropy)"
+  - "traditions/wright/prs_triplets.md (God's-homecoming salvation frame, PROP-2026-05-31-002; new-creation reframe of a closed cosmos, PROP-2026-05-31-001; PRS-04 resurrection as historical/cosmological)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 Universal Christ; relation-is-basal — 'how do I get to heaven is a question of the ego, not of the Trinity'; non-dual awareness, Everything Belongs)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation; PRS-08 the Daimon; PRS-14 dissociative-boundary granularity)"
+  - "traditions/carroll/prs_triplets.md (PRS-11 emergence taxonomy Type-1/Type-2; poetic naturalism; arrow-of-time/entropy)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love beyond sentiment; PRS-14 conducive conditions for positivity resonance)"
   - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category)"
 evidence_strength_summary: "The graded-final-states map (damned / limbo / purgatory) and the reading of purgatory as formation-toward-fitness rather than penal satispassion is theological/philosophical; the 'continuing computation under scarce resources' framing is formal-analogical (active inference); resurrection-as-new-creation is Wright's historical-scriptural argument (well-evidenced as history, metaphysically contested); love-as-telos has empirical support (Fredrickson) but its cosmic scope is theological (Rohr)."
 mind_first_reframe: "Purgatory, read mind-first, is the perspective that keeps computing past death — being progressively widened until it can bear the vision of the whole; limbo is a perspective complete in its natural good yet not united; heaven is the limit where all limitation is removed and every partial view is contained in the simple whole."
 central_theme_thread: "The whole series has been one long account of exitus and reditus — all perspectives proceeding from and returning to the one whole. The finale names the return explicitly: loving unity is reached not by erasing the limited perspective but by purifying it until it can hold the vision; 'you made it' is the completion of the computation the project has been describing all year."
 tags: [synthesis, day/307, theme/return-and-completion, series/finale]
-last_qc_at: "2026-08-03T18:29:43"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T22:32:43"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 307 — You Made It (Contemporary Parallel)
@@ -42,11 +42,11 @@ Third, **the completion problem** — the one the finale forces. If the telos is
 
 ## Resource
 
-On the completion problem, the lead resource is the convergence the network has already registered as CROSS-005: love/union as a *fundamental category* rather than a derived feeling, drawn together across Fredrickson (positivity resonance as a measurable between-persons event), Stump (union as the highest good), and Kastrup (individuation as dissociation within one consciousness). Read against the finale, CROSS-005 lets us state the telos precisely: the end is not the dissolution of the alter back into undifferentiated consciousness but the *re-integration of a specifically-patterned* perspective — Kastrup's Daimon (P8 in the Kastrup-tradition wiki) names exactly the claim that the individual is not generic, so that what is united to the whole is *this* perspective, with its signature intact. That is the resource that answers "does 'you' make it?" with *yes*: union fulfils rather than erases.
+On the completion problem, the lead resource is the convergence the network has already registered as CROSS-005: love/union as a *fundamental category* rather than a derived feeling, drawn together across Fredrickson (positivity resonance as a measurable between-persons event), Stump (union as the highest good), and Kastrup (individuation as dissociation within one consciousness). Read against the finale, CROSS-005 lets us state the telos precisely: the end is not the dissolution of the alter back into undifferentiated consciousness but the *re-integration of a specifically-patterned* perspective — Kastrup's Daimon (PRS-08 in the Kastrup-tradition wiki) names exactly the claim that the individual is not generic, so that what is united to the whole is *this* perspective, with its signature intact. That is the resource that answers "does 'you' make it?" with *yes*: union fulfils rather than erases.
 
 On the purgatory problem, Wright supplies the decisive reframe. The God's-homecoming salvation frame (Wright-tradition wiki, PROP-2026-05-31-002) reads salvation as *incorporation into the people among whom God comes to dwell*, and the new-creation reframe (PROP-2026-05-31-001) reads the resurrection not as a law-violating miracle but as the firstfruits of new creation breaking into the old. Both push purgatory away from a penal ledger and toward *formation*: what is being completed is fitness for life in a renewed creation, the capacity to bear a vision and a community one could not yet sustain. Rohr's relation-is-basal claim and his non-dual practice (Rohr-tradition wiki) press the same direction — "how do I get to heaven" is "a question of the ego, not of the Trinity"; purgation is the un-clenching of the boundary so that the prior belonging can be received with open hands.
 
-On the gradation problem, Kastrup's dissociative-boundary granularity (P14 in the Kastrup-tradition wiki) and Carroll's emergence taxonomy (P11 in the Carroll-tradition wiki) together give us the vocabulary: final states differ in the *porosity* of the boundary — sealed (the damned, treated yesterday), intact-but-natural (limbo: a perspective whose boundary is healthy and complete on its own terms, but not opened to the whole), and *being-made-porous* (purgatory: the boundary in process of opening). Carroll's discipline reminds us these are meaning-register stories, not measured states — but the gradation is structurally coherent, not a muddle.
+On the gradation problem, Kastrup's dissociative-boundary granularity (PRS-14 in the Kastrup-tradition wiki) and Carroll's emergence taxonomy (PRS-11 in the Carroll-tradition wiki) together give us the vocabulary: final states differ in the *porosity* of the boundary — sealed (the damned, treated yesterday), intact-but-natural (limbo: a perspective whose boundary is healthy and complete on its own terms, but not opened to the whole), and *being-made-porous* (purgatory: the boundary in process of opening). Carroll's discipline reminds us these are meaning-register stories, not measured states — but the gradation is structurally coherent, not a muddle.
 
 ## Solution (proposed, speculative)
 
@@ -62,9 +62,9 @@ For a year this project has been writing one synthesis-in-progress: conscious ag
 
 - **CROSS-005 (master cross-program index)** — love/union as a fundamental category (Fredrickson + Stump + Kastrup); lets the telos be stated as re-integration of a patterned perspective, not its dissolution. *Evidence: empirical (Fredrickson) + philosophical/theological (Stump, Kastrup).*
 - **Wright, God's-homecoming + new-creation (Wright-tradition wiki, PROP-2026-05-31-002 / -001)** — reframes purgatory and the whole end as formation-for-a-renewed-creation, not a penal ledger; resurrection as firstfruits, not miracle-as-law-violation. *Evidence: scriptural-historical (strong as history, metaphysics contested).*
-- **Rohr, P3 + relation-is-basal (Rohr-tradition wiki)** — purgation as the un-clenching of the boundary so a prior belonging can be received; the cosmic scope of the return. *Evidence: theological.*
-- **Kastrup, P8 Daimon + P14 boundary granularity (Kastrup-tradition wiki)** — the united perspective keeps its signature (union fulfils, not erases); graded states as graded porosity. *Evidence: philosophical.*
-- **Carroll, P11 emergence taxonomy (Carroll-tradition wiki)** — disciplines the register: the graded-states map is a coherent meaning-story, not a measured cosmology. *Evidence: formal (methodological).*
+- **Rohr, PRS-03 + relation-is-basal (Rohr-tradition wiki)** — purgation as the un-clenching of the boundary so a prior belonging can be received; the cosmic scope of the return. *Evidence: theological.*
+- **Kastrup, PRS-08 Daimon + PRS-14 boundary granularity (Kastrup-tradition wiki)** — the united perspective keeps its signature (union fulfils, not erases); graded states as graded porosity. *Evidence: philosophical.*
+- **Carroll, PRS-11 emergence taxonomy (Carroll-tradition wiki)** — disciplines the register: the graded-states map is a coherent meaning-story, not a measured cosmology. *Evidence: formal (methodological).*
 
 ## Where this leaves us
 

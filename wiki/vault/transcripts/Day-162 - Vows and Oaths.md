@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-162 - Vows and Oaths - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-19T20:20:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T12:26:03"
+last_qc_outcome: "rewrote"
 tags: [summa, day/162, pars/II-II, q/88–89]
 ---
 
@@ -25,6 +25,7 @@ tags: [summa, day/162, pars/II-II, q/88–89]
 Austin Habash's Day 162 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.88–89.
 
 > Typo cleanup (QC 2026-06-11): Summa nira -> Summa in a Year (podcast name, both intro occurrences; ASR garble, fresh ASR reads "Sumanir"); Theologia -> Theologiae.
+> Typo cleanup (QC 2026-08-10): countenance -> continence (2 remaining instances, "the vow of perfect continence" and "forego perfect continence or celibacy"; the 2026-06-11 pass corrected the same term in 3 other places and missed these two). Restored technical terms verified against the live ASR: leosized -> laicized; unairring -> unerring; vicor -> vicar. Also anulled -> annulled. Left as heard: "continency" (4) — the archaic form used in the Dominican Fathers translation Habash reads from, not an ASR error.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
@@ -104,7 +105,7 @@ subject to another's power cannot bind themselves by vow. Article 9, whether chi
 
 Thomas teaches if however they attain the use of reason before reaching the years of puberty they can for their own part bind themselves by vow but their
 
-[06:19] vows can be anulled by their parents under whose care they are still subject after puberty St. Thomas says, "Yet no matter how much they be capable of guile
+[06:19] vows can be annulled by their parents under whose care they are still subject after puberty St. Thomas says, "Yet no matter how much they be capable of guile
 
 before the years of puberty, they cannot be bound by a solemn religious vow, but after the years of puberty have been reached, they can bind themselves by
 
@@ -120,7 +121,7 @@ whether it is possible to be dispensed from a solemn vow of continency [07:21] s
 
 source in Aquinas's day for determining ecclesiastical law questions within there it is written not even the sovereign pontiff can dispense a monk
 
-from keeping chastity St. Thomas argues that a religious cannot be dispensed of the vow of perfect countenance because it is essential. It is essentially bound
+from keeping chastity St. Thomas argues that a religious cannot be dispensed of the vow of perfect continence because it is essential. It is essentially bound
 
 up with his profession of the perfect life. This is not the case with those bound to continence and holy orders [07:54] which is why in the Eastern Catholic
 
@@ -148,7 +149,7 @@ their other vows and then go on and get married. Yet, interestingly enough, when
 
 stripped of his clerical faculties, what is called being laicized today, he is not necessarily granted the right to forego perfect
 
-countenance or celibacy. We're talking [09:56] about the Latin right here. that actually has to be granted as a separate indulgence or permission to then forego
+continence or celibacy. We're talking [09:56] about the Latin right here. that actually has to be granted as a separate indulgence or permission to then forego
 
 celibacy from the supreme pontiff in order to enter marriage. Article 12, whether the authority of a prelet is required for commutation or the
 

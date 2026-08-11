@@ -8,17 +8,17 @@ length_ratio_to_target: 0.75
 length_note: "Under medium-tier ±10% (1660 vs 2200, ratio 0.75) and at the ±25% boundary. Q.115 + Q.116 covers 10 articles on causal realism in created agents and fate; the synthesis is disciplined to the layered-ontology / effective-theory convergence (Levin bioelectric-pattern; Wolfram ruliad; Carroll poetic naturalism; Arkani-Hamed EFT; Friston constraint-as-prior). Aquinas's anti-occasionalism preserved structurally; fate read as substrate-prior bounding policy-space rather than displacing agency. Concise; substantive moves on each resource preserved without padding. Within the substantive-integrity-trumps-word-count policy clause."
 length_tier: medium
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS on form-as-bioelectric-pattern; agency-at-scale)"
-  - "wiki/traditions/wolfram/wiki.md (PRS on ruliad; computational substrate)"
-  - "wiki/traditions/carroll/wiki.md (poetic naturalism; layered ontology)"
-  - "wiki/traditions/arkanihamed/wiki.md (effective theories; emergence)"
-  - "wiki/traditions/friston/wiki.md (active inference; constraint-as-prior)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-22 field-mediated bioelectric prepatterning; PRS-01 morphogenetic control)"
+  - "wiki/traditions/wolfram/prs_triplets.md (PRS-06 ruliad as ontological ground)"
+  - "wiki/traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence; PRS-41 non-reductive physicalism)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-08 morphogenetic active inference; target morphologies as prior beliefs)"
+  - "Arkani-Hamed on effective field theories — physics literature, NOT wiki-attested; no EFT triplet exists in wiki/traditions/arkanihamed/ as of 2026-08-10"
 evidence_strength_summary: "Aquinas's anti-occasionalist commitment is metaphysically firm; Levin/Wolfram/Carroll formal-empirical frames mature; the fate question is theological-philosophical with contemporary causation-and-emergence frames the leading scientific resource"
 mind_first_reframe: "Aquinas's anti-occasionalist commitment in Q.115 a.1 — that physical things really cause physical effects within the substrate-source's primary causation — becomes the layered-ontology commitment of contemporary mind-monism: Levin's bioelectric pattern, Wolfram's computational substrate, Carroll's poetic naturalism, and Arkani-Hamed's effective field theories all converge on real causal efficacy at every emergent level, with fate (Q.116) read as substrate-prior bounding the alter's policy-space rather than displacing agency."
 central_theme_thread: "Perspective-limitation under the central-theme reading presupposes real agency in the embodied alter; today shows that the substrate's prior-structure (what the medieval frame names fate, what Wright's Romans 8 names providence) constrains but does not erase the alter's free policy-selection, and that the alter's working-out of salvation operates within a substrate-given context whose pattern is the cosmic-Christ pattern toward which all things tend."
 tags: [synthesis, day/059, theme/causal-realism, theme/fate-and-providence]
-last_qc_at: "2026-08-02T16:24:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T16:23:10"
+last_qc_outcome: "rewrote"
 ---
 # Day 59 — Contemporary Parallel: *Causal Realism in Created Agents and the Computational Substrate of Fate*
 
@@ -68,11 +68,11 @@ Wright on providence (his Romans 8 readings) grounds this register scripturally:
 
 ## Bridges
 
-- **Levin-tradition wiki, PRS on bioelectric-pattern as causal channel.** Form-acts at the biological scale. *Strong empirical at multi-scale agency.*
-- **Wolfram-tradition wiki, PRS on ruliad and computational substrate.** Substrate-level causation. *Theoretical-formal; philosophically substantial.*
-- **Carroll-tradition wiki, PRS on poetic naturalism and layered ontology.** Each level of vocabulary is fully real. *Philosophy-of-science mature.*
-- **Arkani-Hamed-tradition wiki, PRS on effective field theories.** Each scale's causal network is causally complete. *Foundational physics; mature.*
-- **Friston-tradition wiki, PRS on constraint-as-prior.** Fate as substrate-prior bounding policy-space. *Active inference formalism; growing empirical.*
+- **PRS-22 in the Levin-tradition wiki** (`wiki/traditions/levin/prs_triplets.md`), with **PRS-01** behind it. PRS-22 is the sharper anchor for the claim this commentary needs: the electrostatic field *actively contributes* to morphogenetic prepatterning rather than passively reading out cell states — i.e. bioelectric pattern is a causal channel, not a record of one. PRS-01 supplies the standing form-as-target-state claim (bioelectric circuits encode anatomical target states; membrane voltage as morphogenetic memory). *PRS-01 marked High confidence in the wiki; PRS-22 is a 2026 formal derivation.*
+- **PRS-06 in the Wolfram-tradition wiki.** Computational metaphysics: the ruliad as ontological ground, with "what we perceive" as an observer-slice of it. *Marked High confidence; theoretical-formal.*
+- **PRS-01 in the Carroll-tradition wiki**, with **PRS-41** as its argued defense. PRS-01 gives the layered picture (multiple levels of description are all legitimate stories about the same substrate). PRS-41 is the sharper resource and the one this commentary was implicitly leaning on: via List's non-reductive physicalism, the inference from supervenience to explanatory *reducibility* is invalid, so higher levels have genuine explanatory autonomy rather than merely permitted vocabulary. *Philosophy-of-science mature.*
+- **Arkani-Hamed on effective field theories** — cited here to the physics literature, **not** to a wiki node. The C2A2 Arkani-Hamed tradition currently records the post-spacetime program (PRS-01, spacetime as non-fundamental; PRS-09, time emergence from boundary data) and carries no effective-field-theory triplet at all, so the scale-separation claim in the body above is the commentary's own use of standard EFT reasoning and should be read at that strength. *Foundational physics, uncontroversial; wiki-unattested.*
+- **PRS-08 in the Friston-tradition wiki.** Morphogenetic active inference: cells as FEP agents holding *target morphologies as prior beliefs*, with bioelectric signals as sensory input — which is the constraint-as-prior structure this commentary reads fate under, and which also joins the Levin bullet above rather than standing apart from it. *Marked Medium confidence; formal bridge, growing empirical.*
 - **Wright, Romans 8 readings; *Paul and the Faithfulness of God*.** Providence-without-determinism scriptural anchor. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** Cosmic-Christ pattern as substrate-prior. *Contemplative theological.*
 - **Stump-tradition wiki on Thomistic interlocution.** Tracks the hylomorphic frame as it meets the computational one; useful for the *what does the reframing change* question. *Thomistic-tradition reception of the reframe.*

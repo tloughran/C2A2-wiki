@@ -3,22 +3,22 @@ day: 306
 title: A Hellish Abode (Contemporary)
 pairs_with: "[[Day-306 - A Hellish Abode]]"
 length_target_words: 2200
-length_actual_words: 1528
+length_actual_words: 1535
 length_ratio_to_target: 0.69
 length_tier: medium
 length_note: "Body 1528 words vs ~2200 tier guideline (-31%); held to the PRS argument rather than padded — all substantive elements (central response, difference-from-Aquinas, evidence strength honestly registered, bridges) present per length policy."
 karpathy_wiki_sources:
-  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation; P8 the Daimon as principle of individuation; P14 dissociative-boundary granularity)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation; PRS-08 the Daimon as principle of individuation; PRS-14 dissociative-boundary granularity)"
   - "traditions/wright/prs_triplets.md (God's-homecoming salvation frame, PROP-2026-05-31-002; new-creation reframe of a closed cosmos, PROP-2026-05-31-001)"
-  - "traditions/rohr/prs_triplets.md (P3 Universal Christ; relation-is-basal — 'how do I get to heaven is a question of the ego, not of the Trinity'; non-dual awareness, Everything Belongs)"
-  - "traditions/carroll/prs_triplets.md (P11 emergence taxonomy Type-1/Type-2; poetic naturalism core-ontology vs useful-stories)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 Universal Christ; relation-is-basal — 'how do I get to heaven is a question of the ego, not of the Trinity'; non-dual awareness, Everything Belongs)"
+  - "traditions/carroll/prs_triplets.md (PRS-11 emergence taxonomy Type-1/Type-2; poetic naturalism core-ontology vs useful-stories)"
   - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category)"
 evidence_strength_summary: "The fixity-of-the-damned-will is theological/speculative (Aquinas's claim, and Rohr's universalist counter-reading equally theological); the reading of a sealed will as a self-maintained dissociative boundary / non-updating Markov blanket is philosophical (Kastrup) plus formal-analogical (active inference); privation-as-suffering is phenomenologically plausible but not empirical; Carroll's emergence taxonomy is a formal tool, not a verdict on the afterlife."
 mind_first_reframe: "Hell, read through mind-first monism, is not a place but a terminal perspective — a dissociative boundary that has stopped updating — so that the 'punishment' is identical with the self-maintained refusal to widen toward the whole; whether such closure can be final is precisely where the theological evidence is weakest and most contested."
 central_theme_thread: "If agents are individuated by the limits of their perspective, hell is the limit-case: a perspective that has made its own limitation permanent. The damnation question is whether the computation toward loving unity can ever be irreversibly abandoned from the inside."
 tags: [synthesis, day/306, theme/terminal-perspective]
-last_qc_at: "2026-08-03T14:29:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-09T22:32:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 306 — A Hellish Abode (Contemporary Parallel)
@@ -39,11 +39,11 @@ Second, **the privation problem**: the worst torment named is not flame but excl
 
 ## Resource
 
-On the fixity problem, the leading move comes from Kastrup's program. PRS-02 in the Kastrup-tradition wiki reads individual minds as *dissociated alters* of a single universal consciousness — individuation is a dissociative boundary, modelled on the clinical phenomenology of dissociative identity. Tom's PRS-form record of Kastrup's later work adds P8, the Daimon as the principle of individuation: each alter is not generic but specifically patterned, with its own signature. Read against Q.98, this supplies a precise picture of what a "fixed will" could be: a dissociative boundary that has ceased to be porous — an alter so committed to the maintenance of its own boundary that it no longer admits the wider field. The active-inference vocabulary sharpens the same picture formally: an agent is its Markov blanket, and a self that has driven its precision-weighting to refuse all prediction-error from the whole has, in effect, stopped updating. On this reading Aquinas's *obstinacy* is not an arbitrary divine sentence but the intrinsic shape of a perspective that has made its own closure its project.
+On the fixity problem, the leading move comes from Kastrup's program. PRS-02 in the Kastrup-tradition wiki reads individual minds as *dissociated alters* of a single universal consciousness — individuation is a dissociative boundary, modelled on the clinical phenomenology of dissociative identity. Tom's PRS-form record of Kastrup's later work adds PRS-08, the Daimon as the principle of individuation: each alter is not generic but specifically patterned, with its own signature. Read against Q.98, this supplies a precise picture of what a "fixed will" could be: a dissociative boundary that has ceased to be porous — an alter so committed to the maintenance of its own boundary that it no longer admits the wider field. The active-inference vocabulary sharpens the same picture formally: an agent is its Markov blanket, and a self that has driven its precision-weighting to refuse all prediction-error from the whole has, in effect, stopped updating. On this reading Aquinas's *obstinacy* is not an arbitrary divine sentence but the intrinsic shape of a perspective that has made its own closure its project.
 
-But the resource cuts both ways, and honesty requires naming the counter-resource. Rohr's program denies that the closure can be *final*. The Universal Christ (P3 in the Rohr-tradition wiki) and his relation-is-basal claim — that the unit of reality is the exchange, so that "how do I get to heaven" is "a question of the ego, not of the Trinity" — reframe every boundary as derivative of a prior belonging. If relation is basal, no dissociative boundary is ontologically ultimate, and universal restoration (apokatastasis) is the natural terminus: the alter cannot finally seal itself against the consciousness it is *made of*. Wright is more reserved than Rohr here — he resists both the disembodied-heaven picture and easy universalism — but his "God's-homecoming" frame (the salvation record in the Wright-tradition wiki, PROP-2026-05-31-002) reads salvation as *incorporation into the people among whom God comes to dwell*, which locates the stakes of damnation in inclusion-versus-exclusion from a renewed community rather than in a torture-geography.
+But the resource cuts both ways, and honesty requires naming the counter-resource. Rohr's program denies that the closure can be *final*. The Universal Christ (PRS-03 in the Rohr-tradition wiki) and his relation-is-basal claim — that the unit of reality is the exchange, so that "how do I get to heaven" is "a question of the ego, not of the Trinity" — reframe every boundary as derivative of a prior belonging. If relation is basal, no dissociative boundary is ontologically ultimate, and universal restoration (apokatastasis) is the natural terminus: the alter cannot finally seal itself against the consciousness it is *made of*. Wright is more reserved than Rohr here — he resists both the disembodied-heaven picture and easy universalism — but his "God's-homecoming" frame (the salvation record in the Wright-tradition wiki, PROP-2026-05-31-002) reads salvation as *incorporation into the people among whom God comes to dwell*, which locates the stakes of damnation in inclusion-versus-exclusion from a renewed community rather than in a torture-geography.
 
-Carroll's emergence taxonomy (P11 in the Carroll-tradition wiki) is useful precisely as a discipline on the confidence of all these moves: it forces us to say *what kind* of claim each is. "The will is permanently fixed" is not a Type-1 (in-principle-reducible) empirical statement and not a measurable cosmological one; under poetic naturalism it belongs to the register of *useful stories about meaning*, not core ontology — which is exactly the register in which it should be defended or doubted.
+Carroll's emergence taxonomy (PRS-11 in the Carroll-tradition wiki) is useful precisely as a discipline on the confidence of all these moves: it forces us to say *what kind* of claim each is. "The will is permanently fixed" is not a Type-1 (in-principle-reducible) empirical statement and not a measurable cosmological one; under poetic naturalism it belongs to the register of *useful stories about meaning*, not core ontology — which is exactly the register in which it should be defended or doubted.
 
 ## Solution (proposed, speculative)
 
@@ -59,11 +59,11 @@ The project's claim is that conscious agents are individuated by the limitations
 
 ## Bridges
 
-- **Kastrup, PRS-02 + P8 (Kastrup-tradition wiki)** — dissociative individuation gives "fixed will" a mechanism: a boundary that has ceased to be porous. *Evidence: philosophical, with clinical analogy; not a claim about the afterlife.*
+- **Kastrup, PRS-02 + PRS-08 (Kastrup-tradition wiki)** — dissociative individuation gives "fixed will" a mechanism: a boundary that has ceased to be porous. *Evidence: philosophical, with clinical analogy; not a claim about the afterlife.*
 - **Active inference (Friston program, applied)** — the sealed will as a Markov blanket that refuses prediction-error from the whole; obstinacy as a precision-weighting pathology. *Evidence: formal-analogical.*
-- **Rohr, P3 + relation-is-basal (Rohr-tradition wiki)** — the counter-reading: no boundary is ultimate, so closure cannot be final; universal restoration as terminus. *Evidence: theological.*
+- **Rohr, PRS-03 + relation-is-basal (Rohr-tradition wiki)** — the counter-reading: no boundary is ultimate, so closure cannot be final; universal restoration as terminus. *Evidence: theological.*
 - **Wright, God's-homecoming salvation frame (Wright-tradition wiki, PROP-2026-05-31-002)** — relocates the stakes from torture-geography to inclusion/exclusion in the renewed community; reticent on universalism. *Evidence: theological / scriptural-historical.*
-- **Carroll, P11 emergence taxonomy (Carroll-tradition wiki)** — disciplines the confidence: "the will is permanently fixed" is a meaning-register story, not core ontology. *Evidence: formal (methodological).*
+- **Carroll, PRS-11 emergence taxonomy (Carroll-tradition wiki)** — disciplines the confidence: "the will is permanently fixed" is a meaning-register story, not core ontology. *Evidence: formal (methodological).*
 
 ## Where this leaves us
 

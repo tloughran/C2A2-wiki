@@ -8,17 +8,17 @@ length_ratio_to_target: 0.77
 length_note: "Under medium-tier ±10% (1690 vs 2200, ratio 0.77); within ±25%. Q.113 + Q.114 spans 13 articles on guardianship and demonic assault; the synthesis stays close to empirically-anchored channels (Friston defensive/exploratory regimes; McGilchrist hemispheric attention; Fredrickson positivity-resonance; Stump second-person knowing; Kastrup protective dissociation) and refuses speculative angelological extension. Concise rather than padded; outside-help / outside-threat contour of the central theme stated explicitly. Within the substantive-integrity-trumps-word-count policy clause."
 length_tier: medium
 karpathy_wiki_sources:
-  - "wiki/traditions/stump/wiki.md (Wandering in Darkness — willed evil at high-coupling; second-person knowing)"
-  - "wiki/traditions/friston/wiki.md (active inference; defensive vs. exploratory policy regimes)"
-  - "wiki/traditions/mcgilchrist/wiki.md (left-hemispheric closure as predatory attention)"
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance as protective dispositional state)"
-  - "wiki/traditions/kastrup/wiki.md (mind-at-large; protective dissociation)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-11 Franciscan knowledge — non-propositional second-person knowing across seven biblical narratives; PRS-08 narrative knowledge of suffering)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-17 zones of bounded surprisal narrowing under threat; PRS-18 ZBS widening so out-group evidence is assimilated rather than repelled)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; PRS-05 attention as world-constituting act)"
+  - "wiki/traditions/fredrickson/prs_triplets.md (PRS-01 cultivated positivity resonance and vagal tone; PRS-28 positivity resonance as broaden-and-build extended to the dyad)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 dissociation as the individuation mechanism; the *protective* gloss below is this commentary's extension, not a wiki-attested claim)"
 evidence_strength_summary: "Stump strong on phenomenology of willed evil; Friston/McGilchrist mature formalisms; spiritual-warfare register theological; protective-formation contemporary read empirically grounded in Fredrickson"
 mind_first_reframe: "Q.113 guardianship and Q.114 demonic assault become the substrate-network's pedagogical-care contour and its predatory inverse: positivity-resonance, exploratory-policy stabilization, right-hemispheric receptivity, second-person-loving-knowing, and developmentally-tractable presentation on the protective side, with their inversions (defensive-policy triggering, left-hemispheric closure, narrative-of-condemnation, dissociation-without-protection) on the predatory side."
 central_theme_thread: "Today articulates the outside-help dimension of the central theme — the alter's salvation-in-fear-and-trembling under perspective-limitation is not solitary work but a working-out within a substrate-network of pedagogical care that the alter can either receive or refuse, with the demonic-influence sub-network as the inverse-pedagogy the alter must also receive or refuse."
 tags: [synthesis, day/058, theme/protective-formation, theme/spiritual-warfare]
-last_qc_at: "2026-08-02T16:24:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T12:27:30"
+last_qc_outcome: "rewrote"
 ---
 # Day 58 — Contemporary Parallel: *Guardianship and Predation as Substrate-Network Pedagogy and its Inverse*
 
@@ -38,7 +38,7 @@ Stump's *Wandering in Darkness* engages this directly at the human scale: the se
 
 ## Resource
 
-**Friston on defensive vs. exploratory policy regimes.** When an agent's expected free energy is dominated by threat, the policy regime narrows toward defensive. When the affective landscape is dominated by safety and care, the policy regime broadens toward exploratory. The substrate-network's protective influence shifts the alter toward exploratory — toward the dispositional latitude in which the loving unity can become visible. The demonic assault narrows the alter toward defensive — toward closure that confirms inverted priors.
+**Friston on defensive vs. exploratory policy regimes** (PRS-17 and PRS-18 in the Friston-tradition wiki, which state this as the narrowing and widening of a *zone of bounded surprisal* — the band of outcomes an agent tolerates before free energy spikes). When an agent's expected free energy is dominated by threat, the policy regime narrows toward defensive. When the affective landscape is dominated by safety and care, the policy regime broadens toward exploratory. The substrate-network's protective influence shifts the alter toward exploratory — toward the dispositional latitude in which the loving unity can become visible. The demonic assault narrows the alter toward defensive — toward closure that confirms inverted priors.
 
 **McGilchrist on left- vs. right-hemispheric attention.** Left-hemispheric closure (grasping, narrow focus, high-confidence categorization) is the predatory mode; right-hemispheric openness (receptive, wide focus, comfort-with-uncertainty) is the receptive mode. Demonic assault works by triggering left-hemispheric closure under threat. Substrate-network protection works by sustaining right-hemispheric openness even under stress.
 
@@ -68,14 +68,14 @@ Wright's covenanted-community frame extends: the substrate-network's pedagogical
 
 ## Bridges
 
-- **Stump-tradition wiki, *Wandering in Darkness* (PRS on second-person knowing of willed evil).** Master diagnostic for how the alter comes to see its mis-orientation. *Theological-philosophical primary; book-length argument.*
-- **Friston-tradition wiki, defensive vs. exploratory policy regimes.** Active-inference formalism for protection vs. predation. *Mature formal frame.*
-- **McGilchrist-tradition wiki, left- vs. right-hemispheric attention.** Predatory closure vs. receptive openness. *Strong neuropsychiatric evidence.*
-- **Fredrickson-tradition wiki, positivity resonance and broaden-and-build.** Empirical anchor for protective dispositional formation. *Strong empirical evidence at dyadic-biology scale.*
-- **Kastrup-tradition wiki, protective dissociation.** Developmental-tractability frame for substrate presentation. *Philosophical-conceptual.*
+- **PRS-11 in the Stump-tradition wiki (`traditions/stump/prs_triplets.md`) — "Franciscan knowledge," non-propositional second-person knowing worked systematically across seven biblical narratives; with PRS-08 on narrative knowledge of suffering.** Master diagnostic for how the alter comes to see its mis-orientation. *Theological-philosophical primary; book-length argument.*
+- **PRS-17 in the Friston-tradition wiki (`traditions/friston/prs_triplets.md`) — discrimination modelled as a narrowing of the zone of bounded surprisal, so out-group-confirming surprise is minimised by exclusion rather than belief update; PRS-18 is its inverse, widening the band so out-group evidence is assimilated.** The active-inference formalism for predation and protection respectively. *PRS-17 High confidence; PRS-18 marked Speculative in the wiki.*
+- **PRS-01 and PRS-05 in the McGilchrist-tradition wiki (`traditions/mcgilchrist/prs_triplets.md`) — hemispheric asymmetry, and attention as an ontological act that constitutes the kind of world that shows up.** Predatory closure vs. receptive openness. *Strong neuropsychiatric evidence.*
+- **PRS-01 and PRS-28 in the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`) — micro-moments of positivity resonance cultivable through practice, raising vagal tone; positivity resonance as broaden-and-build extended from the individual to the dyad.** Empirical anchor for protective dispositional formation. *Strong empirical evidence at dyadic-biology scale.*
+- **PRS-02 in the Kastrup-tradition wiki (`traditions/kastrup/prs_triplets.md`) — dissociation as the mechanism by which one undivided consciousness sustains many points of view.** The *protective* reading of that dissociation — that the alter is spared content it could not developmentally process — is this commentary's own extension; the wiki entry establishes the individuation mechanism, not a protective purpose. *Philosophical-conceptual; the protective gloss is speculative and mine.*
 - **Wright, *Paul and the Faithfulness of God*; *Surprised by Hope*.** Covenanted-community as the substrate's pedagogical extension. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*; *Falling Upward*.** Contemplative posture as deliberate receptivity. *Contemplative theological.*
-- **CROSS-001, CROSS-005 in master cross-program index — substrate-as-pedagogical-source.** *Cross-tradition convergence.*
+- **CROSS-005 in `master/cross_program_index.md` — "Is love / positivity resonance / union a fundamental category?" (Fredrickson × Stump × Kastrup), logged as a deep structural analogy.** The exact convergence this day leans on. *Cross-tradition convergence, Active.*
 - **Psalm 91; Matthew 18:10; Hebrews 1:14; Ephesians 6:12.**
 
 ## Where this leaves us
