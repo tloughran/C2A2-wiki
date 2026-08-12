@@ -17,8 +17,8 @@ evidence_strength_summary: "Instrumental causality as nested agency = structural
 mind_first_reframe: "The passion's efficiency is read as nested agency all the way down: the principal cause works through an instrument that is itself a full agent, and salvation operates not by adding something missing but by removing the obstacles that block limited perspectives from an attractor already established — union already merited, blockage locally cleared."
 central_theme_thread: "Q.47's agents — Judas, the rulers, Pilate, the Father, Christ's own two wills — are perspectives at different scales acting in one event without collapsing into each other; the deicide verdict turns on what each limited perspective could and could not see, and culpability tracks the limitation each agent chose to keep."
 tags: [synthesis, day/236, theme/nested-agency]
-last_qc_at: "2026-08-09T18:30:55"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-11T06:28:17"
+last_qc_outcome: "pass"
 ---
 
 # Day 236 — Contemporary Parallel: How the One Act Works Through Many Agents

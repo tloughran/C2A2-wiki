@@ -16,25 +16,27 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-172 - Vengeance and Truthfulness - Contemporary]]"
 tags: [summa, day/172, pars/II-II, q/108-109]
-last_qc_at: "2026-07-20T08:19:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T00:25:07"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 172 — Vengeance & Truthfulness
 
 Austin Habash's Day 172 episode of the *Summa* podcast covers Aquinas's Secunda Secundae (II-II).
 
-[00:04] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Summener podcast, where we study St. Thomas Aquinas's Summa
+> **Typo cleanup (added 2026-08-11 — the file shipped with no cleanup blockquote at all).** Verified against a live ASR refetch: the ASR is genuinely garbled in each place below, so these are restorations, not introductions. Habish → Habash (×2); "Summener podcast" and "Sumeir podcast" → *Summa in a Year* / *Summa* podcast; "Aquinus's Suma Theologia" → *Aquinas's Summa Theologiae*; "a Maria Press" → *Ave Maria Press* (×2 — the ASR carries no correct instance on this episode, so the sponsor's real name is the source, not a within-file comparison); "Sakunda Sakundai" (opening) and "sukunda secund" (closing) → *Secunda Secundae* — the episode's own structural locus, garbled two different ways in one file, and the opening instance was initially missed by this pass because both of its tokens are capitalized and so escaped a lowercase-only dictionary scan; "irassable" → *irascible* and "concupisible" → *concupiscible* — the two appetitive powers Aquinas is naming in Q.108 a.2, garbled in the one sentence that distinguishes them; "egonomy" → *ignominy*, restored from Q.108 a.3's own list of punishments, where the surrounding clause ("loses his good name") states the term's definition. The discount code "suma 10" is left as heard. No content added or removed.
 
-Theologia in a way simple and insightful for anyone to understand. The Sumeir podcast is brought to you by Think Catholic. Taking two questions of the
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 172. So let's get started.
 
-We're covering today questions 108 109 of the Sakunda Sakundai that is of [00:36] vengeance and of truth. The translation that I always use in these podcasts is
+We're covering today questions 108 109 of the Secunda Secundae that is of [00:36] vengeance and of truth. The translation that I always use in these podcasts is
 
-the one generously provided to me by a Maria Press. the five volume set translated by the fathers of the English Dominican province which you can now get
+the one generously provided to me by Ave Maria Press, the five volume set translated by the fathers of the English Dominican province which you can now get
 
-at a discounted price from a Maria Press's site by typing in the code suma 10. And so here we go. Article one, whether vengeance is lawful as it is
+at a discounted price from Ave Maria Press's site by typing in the code suma 10. And so here we go. Article one, whether vengeance is lawful as it is
 
 written in the book of Deuteronomy, vengeance is mine and recompense for the time when their foot shall slip for the [01:06] day of their calamity is at hand and
 
@@ -58,7 +60,7 @@ Aquinas's response is quite weighty philosophically. So we will quote him and th
 
 manner our natural inclinations which belong to the natural right. Wherefore [02:40] to every definite natural inclination there corresponds a special virtue. Now
 
-there is a special inclination of nature to remove harm. For which reason animals have the irassable power distinct from the concupisible. In simpler terms, our
+there is a special inclination of nature to remove harm. For which reason animals have the irascible power distinct from the concupiscible. In simpler terms, our
 
 creator has endowed the human being with certain ends, goals to be pursued along with the means of attaining those ends, our own preservation, propagation and
 
@@ -82,7 +84,7 @@ endorsement of the following punishments as recorded by Cicero. that the laws re
 
 life, stripes, retaliation, or the loss of an eye for eye, whereby man forfeits his bodily safety, slavery and imprisonment, whereby he is deprived of
 
-freedom, exile whereby he is banished from his country, fines, where he is deprived of his riches, egonomy where he [04:48] loses his good name. These are our
+freedom, exile whereby he is banished from his country, fines, where he is deprived of his riches, ignominy where he [04:48] loses his good name. These are our
 
 general categories of vengeance inflicted by the state along with some specific applications of those categories. Article four, whether
 
@@ -168,7 +170,7 @@ others by their moderation. Hence the apostle says in 2 Corinthians, "Though I [
 
 but I forebear lest any man should think of me above that which he seeth in me, or anything he heareth from me." And with that we close another episode. We
 
-have just finished covering questions 108 109 of the sukunda secund that is of vengeance and of truth. My name is Austin Habish with Think Catholic and I
+have just finished covering questions 108 109 of the Secunda Secundae that is of vengeance and of truth. My name is Austin Habash with Think Catholic and I
 
 cannot wait to see you tomorrow. [12:07] [Music]
 

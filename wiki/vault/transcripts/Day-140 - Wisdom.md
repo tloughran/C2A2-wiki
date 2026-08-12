@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-140 - Wisdom - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/140, pars/2, q/44-45]
-last_qc_at: "2026-08-03T06:28:57"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T08:24:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 140 — Wisdom
@@ -26,13 +26,15 @@ last_qc_outcome: "pass"
 
 ---
 
+> **Typo cleanup (ASR fixes):** *Sumanir / Suma / sumat* → Summa; *theologia* → Theologiae; *Aquinus / Aquinus's* → Aquinas / Aquinas's; *Habish* → Habash; *sukunda / sukund / Sukund* → Secunda Secundae; *a Maria Press* → Ave Maria Press; *biatitude* → beatitude (×2); *Dionius* → Dionysius; *Heroththeus* → Hierotheus; *Aisi* → Assisi; *themsel* → themselves; stray caption token *[Music]* dropped. Restored 2026-08-11 (this pass), verified against the live ASR: *inexpressable* → inexpressible (Q.44 a.1).
+
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast where we study St. Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 140. So let's get started. We're covering today questions 44 and 45 of the Secunda Secundae that is of the precepts of charity and of the gift of
 
 [00:38] wisdom. The translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press. The five volume set translated by the fathers of the English Dominican province which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one. Whether any precepts should be given about charity. Should commandments be given by God pertaining to the supernatural love of God which he pours into the heart of man normally through baptism. In this article, St. Thomas tells us that
 
 [01:11] commandments are given when a thing is due. Like honor is due to our parents. And because God is goodness itself, he is due love. He is supremely lovable and ought to be loved not as a means to something else but as our ultimate end. As St. Paul says, the aim of our charge is charity that issues from a pure heart and a good conscience and sincere faith. A pure heart, good conscience and sincere faith enable charity. First of all, because one cannot love what he does not know. Hence, we require the virtue of faith. Nor can one love as a
 
-[01:46] friend or as another self one whom he is terrified of and expecting inexpressable punishment to come from. Hence, one needs a good conscience. Lastly, one needs purity of heart since loving God as he ought to be loved means loving him wholeheartedly as much as is possible for man in this life. And we will say much more about these commandments of charity in the following articles. Article two, whether there should have been given two precepts of charity. St. John tells us in first John that this commandment we have from him that he who
+[01:46] friend or as another self one whom he is terrified of and expecting inexpressible punishment to come from. Hence, one needs a good conscience. Lastly, one needs purity of heart since loving God as he ought to be loved means loving him wholeheartedly as much as is possible for man in this life. And we will say much more about these commandments of charity in the following articles. Article two, whether there should have been given two precepts of charity. St. John tells us in first John that this commandment we have from him that he who
 
 [02:19] loves God should also love his brother. Also, Aquinas then takes a somewhat unexpected for many I imagine angle to this article. paraphrasing him, he tells us that if an intelligent creature really understood, for example, the principle of sufficient reason, that everything that exists must have an explanation for why it exists and why it has the attributes that it has. They would at the same time understand that there must also be out there some uncaused, totally perfect existence itself, creator, i.e. God in order to
 

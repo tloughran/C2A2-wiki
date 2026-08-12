@@ -10,15 +10,16 @@ length_note: "Focused single-question treatment of grace (Q.110-111): articles c
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-02, PRS-04)"
   - "traditions/levin/wiki.md (morphogenetic teleology; bioelectric agency)"
-  - "traditions/hoffman/wiki.md (interface theory of perception)"
-  - "traditions/kastrup/wiki.md (analytic idealism)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking — the interface as adaptive, not truth-mirroring)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociated points of view within one consciousness)"
   - "traditions/fredrickson/wiki.md (positivity resonance as biological substrate of love)"
-  - "Rohr canonical: The Universal Christ (grace as cosmic ground)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — divine pattern present in all creation)"
+  - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category)"
 evidence_strength_summary: "Hylomorphic-form claim: formal/philosophical (medium confidence under analytic Thomism). Levin morphogenetic teleology: empirical (high). Hoffman interface: formal/mathematical (medium). Kastrup idealism: metaphysical hypothesis (speculative). Theological claims about divine indwelling: theological (held within tradition)."
 mind_first_reframe: "Aquinas's grace-as-accidental-form-in-the-soul becomes, under mind-monism, the structural thinning of the dissociative barrier between an alter and the wider mind — real, located, qualitative, but not substantial; the gratuitous expansion of what the agent can hold."
 central_theme_thread: "Grace is exactly where the central claim is operative: the limited perspective cannot reach the simple whole by its own resources, and grace is the structural change that tilts the agent's computation toward loving unity."
 tags: [synthesis, day/116, theme/grace, theme/metaphysics]
-last_qc_at: "2026-08-03T10:30:06"
+last_qc_at: "2026-08-11T18:30:04"
 last_qc_outcome: "rewrote"
 ---
 
@@ -67,10 +68,10 @@ Grace is exactly where this project's central claim shows itself most plainly. C
 ## Bridges
 
 - *Levin morphogenetic teleology* — Stump-tradition PRS-04 (analytic Thomism + Levin): Aquinas's grace-as-accidental-form is metaphysically the same kind of entity as Levin's morphogenetic field. Both are real, located, formal, and causally efficacious without being substances. Empirical evidence for the latter raises the metaphysical respectability of the former. (Empirical / philosophical.)
-- *Hoffman interface theory* — finite agents see only their species-specific dashboard; any genuine expansion of perspective must come from outside the dashboard. This *is* the geometry of "God alone is the cause of grace" (Day 117's article 1) restated in interface terms. (Formal-mathematical.)
-- *Kastrup analytic idealism* — relocates "participation of the Divine good" from a relation between two substances to a partial de-dissociation between an alter and the wider mind-ground. Preserves Aquinas's structural claims; replaces the substance-dualist scaffolding. (Speculative metaphysics.)
-- *Fredrickson positivity resonance* — CROSS-005 in the C2A2 cross-program index. Charity, of which grace is principle, has a measurable biological correlate. The theology cashes out in vagal tone. (Empirical.)
-- *Rohr, The Universal Christ* — grace as cosmic ground; non-dual contemplative tradition. Provides the theological idiom in which "participation of the Divine good" is read as already-present rather than externally bestowed, aligning with the de-dissociation reading. (Theological / contemplative.)
+- *PRS-03 in the Hoffman-tradition wiki (Tom's PRS-form record of perception as fitness-tracking)* — finite agents see only their species-specific dashboard, because selection drives true perception to extinction; any genuine expansion of perspective must come from outside the dashboard. This *is* the geometry of "God alone is the cause of grace" (Day 117's article 1) restated in interface terms. (Formal-mathematical.)
+- *PRS-02 in the Kastrup-tradition wiki (individual identity within monism — one consciousness with dissociated points of view)* — relocates "participation of the Divine good" from a relation between two substances to a partial de-dissociation between an alter and the wider mind-ground. Preserves Aquinas's structural claims; replaces the substance-dualist scaffolding. (Speculative metaphysics.)
+- *Fredrickson positivity resonance* — CROSS-005 in the C2A2 cross-program index (love/union as a fundamental category, Fredrickson × Stump × Kastrup). Charity, of which grace is principle, has a measurable biological correlate. The theology cashes out in vagal tone. (Empirical.)
+- *PRS-03 in the Rohr-tradition wiki (the Universal Christ — the divine pattern present in all creation), with Rohr's book of that title* — grace as cosmic ground; non-dual contemplative tradition. Provides the theological idiom in which "participation of the Divine good" is read as already-present rather than externally bestowed, aligning with the de-dissociation reading. (Theological / contemplative.)
 
 ## Where this leaves us
 

@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-010 - What is Life - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-21T04:20:35"
+last_qc_at: "2026-08-11T04:25:08"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/010, pars/I]

@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-297 - Returning Flesh - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/297, pars/suppl, q/79-80]
-last_qc_at: "2026-08-03T08:24:52"
+last_qc_at: "2026-08-11T20:25:24"
 last_qc_outcome: "pass"
 ---
 

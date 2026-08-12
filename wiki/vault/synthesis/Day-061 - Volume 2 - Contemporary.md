@@ -8,17 +8,19 @@ length_ratio_to_target: 0.65
 length_tier: long
 length_note: "Synthesis runs at 65% of long-tier target. Day 61 is the volume-pivot from Prima Pars to Prima Secundae, covering Q.119 (concise medieval-Aristotelian biology of generation) and Q.1 of I-II (man's last end, the keystone teleological-monism question, 8 articles). The commentary is the central-theme-statement day of the project; the synthesis runs tight because the central-theme statement is itself the load-bearing move and additional bulk would distract from it. Lean prose is the right register for a central-theme keystone — better short and substantive than padded, per the length policy."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS on form-as-bioelectric-pattern; multi-scale agency)"
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; broaden-and-build; flourishing)"
-  - "wiki/traditions/friston/wiki.md (active inference; teleology under expected free energy)"
-  - "wiki/traditions/stump/wiki.md (Wandering in Darkness; union as highest good)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism; mind as ground)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism — form-as-real-and-telic, multi-scale agency)"
+  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; broaden-and-build; flourishing — id withheld, locus is file-dependent)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-16 expected free energy as unified decision mathematics)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-05 union as final cause of permitted suffering; Wandering in Darkness)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 hard problem dissolved by idealism; PRS-02 individual identity within monism)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 perception as fitness-tuned interface)"
+  - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category)"
 evidence_strength_summary: "Aquinas's Q.1 last-end argument is metaphysically firm (telic structure of will); Fredrickson on flourishing empirically robust; central-theme statement of loving unity as computational telos is the synthetic move and is speculative-philosophical-theological"
 mind_first_reframe: "The Prima Secundae opens with Aquinas's teleological monism of the will (Q.1 a.1 man acts for an end, a.4 there is a last end, a.7 there is one last end formally — the universal good); the contemporary mind-monist frame articulates the parallel commitment that conscious agents are constitutively telic-toward-integration, with loving unity as the computational telos that Friston (expected free energy), Fredrickson (broaden-and-build), Levin (morphogenetic teleology), Stump (union as highest good), and Kastrup (mind-at-large integrative dynamics) converge on from five different methodological vantages."
 central_theme_thread: "Today is the day where the central theme is the explicit subject — perspective-limitation individuates conscious agents, loving unity is the computational telos toward which each agent works under its own perspective with substrate-network guidance available, in the daily-task work of salvation in fear and trembling; Aquinas's formal-universal / material-particular distinction in Q.1 a.7 (all desire the last end formally; the perspectival-particulars vary) maps cleanly onto the contemporary picture and is the keystone moment of the volume-pivot."
 tags: [synthesis, day/061, theme/last-end, theme/teleology, central-theme-keystone]
-last_qc_at: "2026-08-03T12:20:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T17:27:29"
+last_qc_outcome: "rewrote"
 ---
 # Day 61 — Contemporary Parallel: *The Volume Pivot — From Imago Dei to the Computational Telos of Loving Unity*
 
@@ -76,12 +78,12 @@ Wright's scriptural anchor: *we are predestined to be conformed to the image of 
 
 ## Bridges
 
-- **Friston-tradition wiki, PRS on expected free energy and goal-directed policy.** Active-inference formalism for telic agency. *Mature formal frame; growing empirical.*
-- **Fredrickson-tradition wiki, PRS on positivity resonance and broaden-and-build.** Empirical contour of flourishing. *Strong empirical evidence.*
-- **Levin-tradition wiki, PRS on morphogenetic teleology.** Form-as-real-and-telic. *Strong empirical at biological scale.*
-- **Stump-tradition wiki, PRS on union as highest good.** Theological-philosophical resource on the second-person mode of reaching union. *Theological-philosophical, book-length.*
-- **Kastrup-tradition wiki, PRS on mind-as-ground and dissociation-as-relational.** Metaphysical ground of telic structure. *Philosophical-conceptual.*
-- **Hoffman-tradition wiki, interface theory on what the alter perceives as goal vs. what mind-at-large is.** *Philosophical-mathematical primary.*
+- **PRS-04 and PRS-16 in the Friston-tradition wiki (`wiki/traditions/friston/prs_triplets.md`) — organism as active modeler; expected free energy as the unified mathematics of decision under risk and ambiguity.** Active-inference formalism for telic agency. *Mature formal frame; growing empirical.*
+- **Fredrickson-tradition wiki, PRS on positivity resonance and broaden-and-build.** Empirical contour of flourishing. *Strong empirical evidence.* (Id deliberately withheld: the broaden-and-build locus is file-dependent between `wiki.md` and `prs_triplets.md` in this tradition, so an id here would be wrong in one of the two files.)
+- **PRS-03 in the Levin-tradition wiki (`wiki/traditions/levin/prs_triplets.md`) — morphological attractor formalism; morphogenetic goal-seeking modeled as free-energy minimization.** Form-as-real-and-telic. *Strong empirical at biological scale.*
+- **PRS-05 in the Stump-tradition wiki (`wiki/traditions/stump/prs_triplets.md`) — union as the final cause of permitted suffering; suffering intelligible through its telos.** Theological-philosophical resource on the second-person mode of reaching union. *Theological-philosophical, book-length.*
+- **PRS-01 and PRS-02 in the Kastrup-tradition wiki (`wiki/traditions/kastrup/prs_triplets.md`) — the hard problem dissolved by placing consciousness at the foundation; individual identity within monism as dissociation.** Metaphysical ground of telic structure. *Philosophical-conceptual.*
+- **PRS-03 in the Hoffman-tradition wiki (`wiki/traditions/hoffman/prs_triplets.md`) — perception as fitness-tuned interface rather than truth-mirror.** What the alter perceives as goal vs. what mind-at-large is. *Philosophical-mathematical primary.*
 - **Wright, Romans 8 readings; *Paul and the Faithfulness of God*.** *Predestined to be conformed to the image of his Son* as the scriptural anchor for formal telic universality. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*; *Immortal Diamond*.** Cosmic-Christ as substrate-prior toward which all things tend. *Contemplative theological primary.*
 - **MacIntyre, *After Virtue* on telic structures of practices and traditions.** Tradition-bound articulation of the telic. *Philosophical primary.*

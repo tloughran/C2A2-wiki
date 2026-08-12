@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-139 - Scandal - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/139, pars/2, q/42-43]
-last_qc_at: "2026-08-03T06:28:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T08:24:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 139 — Scandal
@@ -25,6 +25,8 @@ last_qc_outcome: "pass"
 *Questions 42 and 43 of the Secunda Secundae — on sedition and on scandal. Q.42: sedition is a special sin (a.1), distinct from war (against external threats) and strife (one against one, actual violence) — it is tumult tending to fight, a multitude seceding from the common unity; and it is mortal (a.2) as opposed to justice and the common good, though a party separating from a tyrant to preserve the common good is not seditious (the tyrant is the true seditionary). Q.43: scandal is "something less rightly said or done that occasions another's spiritual downfall" (a.1, the millstone of Matthew 18; Paul on food offered to idols and the weak conscience, 1 Cor 8); it is a sin (a.2), distinguished into active scandal (culpable, against charity's love of neighbor) and passive scandal (one's own goodness occasioning another's fall, as Christ's goodness provoked the leaders — not sinful); it is a special sin (a.3) when one *intends* to draw another into evil; it can be mortal (a.4); passive scandal cannot reach the perfect interiorly (a.5) — those who adhere to the immutable become immutable; active scandal is not found in the perfect (a.6), though their goodness may occasion others' fall (Wisdom 2); spiritual goods (above all, the truth) must never be foregone on account of scandal (a.7); but temporal goods sometimes should (a.8).*
 
 ---
+
+> **Typo cleanup (ASR fixes):** *Sumanir / Suma / sum* → Summa; *Theologia* → Theologiae; *Aquinus* → Aquinas; *Habish* → Habash; *sukunda / sukund / Sukun* → Secunda Secundae; *a Maria Press* → Ave Maria Press; *solicitus* → solicitous; stray caption token *[Music]* dropped. Restored 2026-08-11 (this pass), verified against the live ASR: *grievious* → grievous (Q.42 a.2, an ordinary-word mishearing that no name-list or proper-noun scan reaches).
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 139. So let's get started. We're covering today questions 42 and 43 of the Secunda Secundae that is of sedition and of scandal. The translation
 
@@ -34,7 +36,7 @@ last_qc_outcome: "pass"
 
 [01:47] whether sedition is always a mortal sin. If a party separates itself from its nation's tyrant in order to preserve the common good, this would not be considered sedition because it is an ordinance of reason and for the sake of the common good. The tyrant himself, according to St. Thomas, is the one guilty of sedition. However, since we are part of a civil community, which natural law directs us to and endows with certain rights, sedition in so far as it is an act against the common good, which is greater than the private good,
 
-[02:19] is a grievious sin and therefore mortal. In a word from St. Thomas, it is evident that the unity to which sedition is opposed is the unity of law and common good. Once it follows manifestly that sedition is opposed to justice and the common good. Therefore, by reason of its genus, it is a mortal sin. And with that, we turn to question 43 of scandal, article one. Whether scandal is fittingly defined as being something less rightly said or done that occasions spiritual downfall, which is our definition of scandal, Aquinas is then
+[02:19] is a grievous sin and therefore mortal. In a word from St. Thomas, it is evident that the unity to which sedition is opposed is the unity of law and common good. Once it follows manifestly that sedition is opposed to justice and the common good. Therefore, by reason of its genus, it is a mortal sin. And with that, we turn to question 43 of scandal, article one. Whether scandal is fittingly defined as being something less rightly said or done that occasions spiritual downfall, which is our definition of scandal, Aquinas is then
 
 [02:53] going to defend it in this article. Let us begin with our Lord's words on scandal as recorded in Matthew 18. But whoever causes one of these little ones who believe in me to sin, it would be better for him to have a great millstone fastened around his neck and to be drowned in the depths of the sea. The Greek word which is translated sin here is scandalizo, causing to stumble, which is what we mean by scandal. From our Lord's words, we can confirm that the last half of scandal's definition is true. That which occasion spiritual
 

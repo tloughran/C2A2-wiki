@@ -9,7 +9,7 @@ length_ratio_to_target: 0.68
 length_note: "Under short-tier target — Q.114 (affability) and Q.115 (flattery) are short annexed articles fully treated without padding; short-and-substantive preferred per the length policy."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (positivity resonance; micro-moments of warmth as bond-building)"
-  - "traditions/friston/prs_triplets.md (PRS-06 honest social signaling; flattery as corrupted signal)"
+  - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; flattery as corruption of the mutual-model coupling)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 relational attunement vs manipulation)"
   - "traditions/stump/prs_triplets.md (second-personal; genuine vs instrumentalized relating)"
   - "Wright canonical: 'let love be genuine' (Rom 12:9); building up the body (1 Thess 5:11)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-08-06T00:19:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T04:25:23"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 175 — Affability & Flattery (Contemporary)
@@ -38,7 +38,7 @@ A community of limited agents is not held together only by justice in the strict
 
 **Fredrickson on positivity resonance** carries most of the contemporary weight here, and the fit is close to exact. Her program identifies the micro-moments of shared positive affect — warmth, attention, mutual care in ordinary encounter — as the empirically measurable building blocks of social connection, with downstream effects on health, resilience, and the durability of bonds. Tom's PRS-form record of Fredrickson's work names this resonance as the mechanism by which fleeting warm exchanges become enduring relational capital. Affability, in Aquinas's sense, just *is* the disposition to generate these micro-moments fittingly. The medieval "debt of pleasant conduct" and the contemporary "positivity resonance that builds social resources" describe the same thing from the normative and the empirical sides.
 
-**Friston on honest social signaling** (PRS-06 in the Friston-tradition wiki) diagnoses the corruption. Genuine affability is honest warmth — a signal that indexes real regard. Flattery decouples the warm signal from the regard, deploying it to manipulate the other's self-model for the flatterer's gain. As with lying and boasting (Days 173–174), the wrong is the corruption of signal-integrity; here it is specifically the corruption of the *warmth* signal, which is doubly damaging because warmth is the very currency of bond-building. **McGilchrist** (PRS-01) gives the cognitive contrast: relational attunement (genuinely meeting the other) versus the manipulative mode that simulates attunement to extract advantage.
+**Friston on multi-agent coherence through mutual modeling** (PRS-06 in the Friston-tradition wiki) diagnoses the corruption. That triplet has agents cohere by reducing prediction error in each other's behavior — coupling through mutual model-building — and names love as the mechanism by which they synchronize models into a collective agent. Genuine affability is that coupling working: honest warmth, a signal that indexes real regard. Flattery decouples the warm signal from the regard, deploying it to manipulate the other's self-model for the flatterer's gain. As with lying and boasting (Days 173–174), the wrong is the corruption of signal-integrity; here it is specifically the corruption of the *warmth* signal, which is doubly damaging because warmth is the very currency of bond-building. **McGilchrist** (PRS-01) gives the cognitive contrast: relational attunement (genuinely meeting the other) versus the manipulative mode that simulates attunement to extract advantage.
 
 **Stump** enters here: affability as a genuine, if limited, mode of second-personal regard; flattery as its instrumentalization — treating the other as a means while wearing the face of friendship.
 
@@ -57,7 +57,7 @@ Loving unity is not only computed; it is *lived* among perspective-limited agent
 ## Bridges
 
 - **Fredrickson (positivity resonance)** — affability as the empirically real micro-mechanism by which warmth builds durable bonds. *Empirical.*
-- **Friston PRS-06** (honest social signaling) — flattery as corruption of the warmth signal; manipulation of the other's self-model. *Formal.*
+- **PRS-06 in the Friston-tradition wiki** (multi-agent coherence via mutual modeling — agents couple by reducing prediction error in each other's behavior, and the triplet's own solution line names love as the mechanism by which agents synchronize models into a coherent collective agent) — affability is that coupling working; flattery corrupts it, feeding the other a false model to be aligned to. *Formal.*
 - **McGilchrist PRS-01** (attunement vs manipulation) — genuinely meeting the other vs simulating it for advantage. *Empirical.*
 - **Stump (second-personal regard)** — affability as limited genuine regard; flattery as instrumentalization wearing friendship's face. *Philosophical.*
 - **Wright (Rom 12:9; 1 Thess 5:11)** — sincere, un-hypocritical love building up the community. *Theological / scriptural.*

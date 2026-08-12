@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-022 - The Father in the Son - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-03T16:21:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T17:28:49"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/022, pars/I, q/41, q/42, theme/trinity, theme/notional-acts, theme/equality, theme/mutual-indwelling]
 ---
@@ -28,11 +28,13 @@ tags: [summa, day/022, pars/I, q/41, q/42, theme/trinity, theme/notional-acts, t
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
+> QC sweep 2026-08-11, residues the auto-pass left standing: *Suma near podcast* (×2) → the *Summa in a Year* podcast (the auto-regex `\bSuma\b -> Summa` half-corrected the series title); *aquanus of Suma theologia* → Aquinas's *Summa Theologiae*; *Hillary* (×2) → Hilary (St Hilary of Poitiers, the authority quoted at Q.42); *L Grange*, *L gr* and *the gr* (×3) → Lagrange (four ASR renderings of one name; the fuller form Garrigou-Lagrange is likely but is not recoverable from the ASR, so the minimal surname is used); *Aquin* and *aquatus* → Aquinas; *gilby* → Gilby (Thomas Gilby, the Blackfriars translator — this file's own italic editorial header already spelled it correctly).
+
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa near podcast where we study St Thomas Aquinas of Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 22 so let's get started we're covering today questions 41 and 42 of the Prima pars which is the notional acts of the persons and the
+[00:00:06] founder of think Catholic and you're listening to the Summa in a Year podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 22 so let's get started we're covering today questions 41 and 42 of the Prima pars which is the notional acts of the persons and the
 
 [00:00:37] equality in likeness of the persons the translation that I always use and these podcasts is the second revised Edition translated by the fathers of the English Dominican Province and so here we go
 
@@ -42,13 +44,13 @@ tags: [summa, day/022, pars/I, q/41, q/42, theme/trinity, theme/notional-acts, t
 
 **Article 1 — Whether the notional acts are to be attributed to the persons**
 
-article one whether the notional acts are to be attributed to the person's the acts we are talking about are generation inspiration we call them notional acts because the indicator note the particular person we explain in much more detail what all that means in the Articles of this question aquatus responds to this article whether the notional acts are attributed to the persons by saying in the Divine persons distinction is founded on Origin but origin can be properly designated only by certain acts wherefore to signify the
+article one whether the notional acts are to be attributed to the person's the acts we are talking about are generation inspiration we call them notional acts because the indicator note the particular person we explain in much more detail what all that means in the Articles of this question Aquinas responds to this article whether the notional acts are attributed to the persons by saying in the Divine persons distinction is founded on Origin but origin can be properly designated only by certain acts wherefore to signify the
 
 [00:01:21] order of origin in the Divine persons we must attribute notional acts to the persons we have to attribute the ACT of generation to the father in order to properly distinguish the father from the son who is related to the father precisely by way of being begotten by him by filiation we say the difficulty is that although we can see how relation or relations would not divide God or supposed change or composition in him when it comes to the acts there is
 
 [00:01:52] usually implied change as well as an actor and the recipient of that action this would be composition and change and potential none of which can exist in God and so Aquinas meets that objection by saying since in God no change exists the personal action of the one producing a person is only the condition of being principle to the person who is from the principle which condition are the relations or the Notions so this
 
-[00:02:23] notional act odd intra imminent or in the godhead without change because there be no change in God is simply the relation the gilby translation of the Summa will quote Aquinas to say regarding the notional acts and the relations clearly the reality expressed is one the differences are exclusively in the way of signifying between the relations and the notional acts L Grange will then comment saying the same thing but in another way he says so in the Trinity if
+[00:02:23] notional act odd intra imminent or in the godhead without change because there be no change in God is simply the relation the Gilby translation of the Summa will quote Aquinas to say regarding the notional acts and the relations clearly the reality expressed is one the differences are exclusively in the way of signifying between the relations and the notional acts Lagrange will then comment saying the same thing but in another way he says so in the Trinity if
 
 [00:02:55] we remove the idea of change active generation implies nothing nothing more
 
@@ -58,17 +60,17 @@ article one whether the notional acts are to be attributed to the person's the a
 
 article two whether the notional acts are voluntary when the father generates the Son and the Father and Son spirate the Holy Spirit do they do so voluntarily Augustine says the father begot the son neither by Will nor by necessity but if the notional Act is neither voluntary nor by necessity what other options are we left with Aquinas responds but we must assert that the father begot the son not by will but by nature and the
 
-[00:03:32] church also says in the formulation called the faith of damasus from the early church the father begot the son not by Will nor by necessity but by Nature then the gr says the father voluntarily generates the son just as he Wills himself to be God the Father does not generate the son involuntarily nor do the father and the son spirate the Holy Spirit unwillingly what I think is going on here is that just like we naturally will neither by outside
+[00:03:32] church also says in the formulation called the faith of damasus from the early church the father begot the son not by Will nor by necessity but by Nature then Lagrange says the father voluntarily generates the son just as he Wills himself to be God the Father does not generate the son involuntarily nor do the father and the son spirate the Holy Spirit unwillingly what I think is going on here is that just like we naturally will neither by outside
 
 [00:04:04] necessity nor in a way we could will otherwise our happiness just as we naturally will our own happiness we will it via our nature simply by being the kind of thing that we are God Wills by his nature to be God and to be Father Son and Holy Spirit in this way it is not by necessity like a stone necessarily falls to the ground when I release it but it's also not something that could be otherwise it follows from
 
-[00:04:35] God's voluntary nature I would love to say more on that begin to split hairs on the will in general and then as they apply to the processions as Aquinas does and L gr does but with a Prudence a caution God willing I will instead refer The Listener to the text if they want to
+[00:04:35] God's voluntary nature I would love to say more on that begin to split hairs on the will in general and then as they apply to the processions as Aquinas does and Lagrange does but with a Prudence a caution God willing I will instead refer The Listener to the text if they want to
 
 [00:04:53] know more
 
 **Article 3 — Whether the notional acts proceed from something**
 
-article three whether the notional acts proceed from something in a sentence does the son proceed from the father or does he proceed out of nothing or out of pre-existing matter that's our question we know that the son cannot proceed from nothing nor from anything else besides the father or else he would be a created thing a creature which is contrary to the faith the son proceeds from the father and in such a way as the gr says here the entire indivisible
+article three whether the notional acts proceed from something in a sentence does the son proceed from the father or does he proceed out of nothing or out of pre-existing matter that's our question we know that the son cannot proceed from nothing nor from anything else besides the father or else he would be a created thing a creature which is contrary to the faith the son proceeds from the father and in such a way as Lagrange says here the entire indivisible
 
 [00:05:25] divine nature is communicated to the sun without multiplication of the nature in this way the son is equal to the father and refer to previous episodes on the Trinity on how that procession saf guards God's Simplicity as well as the real distinction of the persons also within this article is a noteworthy excerp on what it means for the son to be born of the father Aquinas writes when we say that the son was born of the Father the preposition of designates a consubstantial generating principle not
 
@@ -122,9 +124,9 @@ article one whether there is equality in God now on its face it seems like Jesus
 
 **Article 2 — Whether the person proceeding is co-eternal with his principle, as the Son with the Father**
 
-article two whether the person proceeding is co-eternal with his Principle as the son with the father it seems like if the son proceeds from the father there would be a moment in which the son was not but against this Jesus himself says in Revelation I am the Alpha and the Omega the first and the last the beginning and the end and the gr masterfully summarizes Aquinas on this question saying the preceding persons are co-eternal with their
+article two whether the person proceeding is co-eternal with his Principle as the son with the father it seems like if the son proceeds from the father there would be a moment in which the son was not but against this Jesus himself says in Revelation I am the Alpha and the Omega the first and the last the beginning and the end and Lagrange masterfully summarizes Aquinas on this question saying the preceding persons are co-eternal with their
 
-[00:12:28] principle because they proceed from a principle whose active power is always perfect by instantaneous action in the one unique instant of Eternity the intellect and the will of God are of course always inact therefore the Divine intellect is never without the word nor is the Divine will ever without personal love or the Holy Spirit and lastly a word on eternity from Aquin to wrap up
+[00:12:28] principle because they proceed from a principle whose active power is always perfect by instantaneous action in the one unique instant of Eternity the intellect and the will of God are of course always inact therefore the Divine intellect is never without the word nor is the Divine will ever without personal love or the Holy Spirit and lastly a word on eternity from Aquinas to wrap up
 
 [00:12:59] this article he says eternity excludes the principle of duration but not the principle of origin thus the son can have his origin from the father and yet be co-eternal with the father
 
@@ -156,7 +158,7 @@ Article Five whether the son is in the father and conversely on this article the
 
 [00:15:47] article six whether the son is equal to the father in power here we're trying to understand Jesus's words when he says truly truly I say to you the son can do nothing of his own accord but only what he sees the father doing Aquinas responds the words the son cannot of himself do anything do not withdraw from the son any power possessed by the father since it is immediately added whatsoever things the father does the son does in like manner but the meaning is to show that the son derives his power from the father of whom he
 
-[00:16:18] receives his nature hence Hillary says the unity of the divine nature implies that the son so acts of himself that he does not act by by himself that's very important to remember that last statement by Hillary the son so acts of himself but not by himself let us remember that that all God does odd extra outside the godhead the entire godhead does whatever effect we see out here is the effect of Father Son and
+[00:16:18] receives his nature hence Hilary says the unity of the divine nature implies that the son so acts of himself that he does not act by by himself that's very important to remember that last statement by Hilary the son so acts of himself but not by himself let us remember that that all God does odd extra outside the godhead the entire godhead does whatever effect we see out here is the effect of Father Son and
 
 [00:16:51] Holy Spirit as the catechism States for as the Trinity has only one in the same nature so too does it have only one and the same operation and with that we only have one episode left to go on the Trinity we have just finished questions 41 and 42 of the Prima pars which is the notional acts of the persons and the equality and the likeness of the persons my name is Austin Habash with think Catholic and I cannot wait to see you tomorrow [Music]
 

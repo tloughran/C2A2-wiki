@@ -15,8 +15,8 @@ fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-303 - New Heavens and Earth - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-20T12:18:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T00:24:48"
+last_qc_outcome: "rewrote"
 tags: [summa, day/303, pars/supplement, q/91]
 ---
 
@@ -24,19 +24,21 @@ tags: [summa, day/303, pars/supplement, q/91]
 
 *Summa Theologiae, Supplement, Suppl. Q.91-92 — the renewal of the world; the quality of the world after judgment. Verbatim ASR fetched 2026-06-25; light cleanup of common ASR errors only.*
 
-> **Typo cleanup:** Habish → Habash (intro and closing sign-off); residual lowercase "suma" for *Summa* left as ASR-raw in body prose. ASR spacing/punctuation normalized. No content added or removed.
+> **Typo cleanup:** Habish → Habash (intro and closing sign-off); episode-intro name garble ("Summa New Earth podcast") normalized to *Summa in a Year*.
+>
+> **Corrected 2026-08-11 against a live ASR refetch. Every fix below is a render-side degradation, not ASR residue — the raw ASR carries the correct form in each case, so this pass restores the transcript *to* the ASR rather than away from it.** Lowercase "suma" restored to *Summa* at 4 places — and the previous version of this note asserted that lowercase "suma" was "left as ASR-raw", which the refetch refutes: the ASR reads *Summa*. Discount code "sumaten" restored to *Summa 10*. "unccreated" restored to *uncreated* (×2). "beatatitude" restored to *beatitude*. "seinal principle" restored to *seminal principle*. "obedient potency" restored to *obediential potency* — the technical Thomistic term in Suppl. Q.91 a.1, and the one fix here that a spellchecker cannot find, since the wrong form is an ordinary English word. "enlightenth" restored to *enlighteneth* (Ecclesiasticus 43, in the Douay-Rheims archaic form as read aloud). "Bob Ave Maria Press" restored to *Ave Maria Press*. "Quantis doesn't notice" restored to *Aquinas doesn't notice*. No content added or removed.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's suma
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic, taking two questions of the
 
 Summa. A day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas, and his Catholic faith is day 303. So let's get started.
 
-We're coming today questions 91 and 92 of the supplement to the suma that is of the quality of the world after the [00:35] judgment and of the vision of the divine
+We're coming today questions 91 and 92 of the supplement to the Summa that is of the quality of the world after the [00:35] judgment and of the vision of the divine
 
-essence in reference to the blessed. The translation that I always use in these podcasts is the one generously provided to me by Bob Ave Maria Press the five
+essence in reference to the blessed. The translation that I always use in these podcasts is the one generously provided to me by Ave Maria Press, a five
 
-volume set translated by the fathers of the English Dominican province which you can now get at a discounted price by typing in the code sumaten. And so here
+volume set translated by the fathers of the English Dominican province which you can now get at a discounted price by typing in the code Summa 10. And so here
 
 we go. Article one, whether the world will be renewed according to scripture articulated by St. Peter, according to his promise, we wait for new heavens and
 
@@ -64,7 +66,7 @@ of time which we covered in the first volume. But Aquinas argues here that every
 
 which other species could then come [02:37] from. To quote him, he writes, "God is stated to have ceased on the seventh day forming new creatures. For nothing was
 
-made afterwards that was not previously in some likeness, either generically or specifically or at least in a seinal principle or even as in an obedient
+made afterwards that was not previously in some likeness, either generically or specifically or at least in a seminal principle or even as in an obediential
 
 potency." Article two, whether the movement of the heavenly bodies will cease. Movement is for the sake of rest just like desire is for the sake of joy
 
@@ -78,7 +80,7 @@ terminates naturally in rest. Therefore, since the heavenly bodies are far noble
 
 whether the brightness of the heavenly [03:39] bodies will be increased at this renewal. Also answered briefly by Aquinas, the beauty of the heavenly
 
-bodies consists chiefly in light, where it's written in Ecclesiasticus chapter 43, the glory of the stars is the beauty of heaven. The Lord enlightenth the
+bodies consists chiefly in light, where it's written in Ecclesiasticus chapter 43, the glory of the stars is the beauty of heaven. The Lord enlighteneth the
 
 world on high. Hence, the heavenly bodies will be bettered, especially as regards their brightness. But to what degree and in what way this betterment
 
@@ -100,7 +102,7 @@ material cannot be separated from the soul, making both the mind and the soul in
 
 [05:10] them, St. Thomas does not think they will be in the state of incorruption. However, this line of arguing would cause problems for why he thinks that
 
-the sun and moon would endure. Quantis doesn't notice this because his cosmology holds the luminary bodies to be of a unique kind of matter which I
+the sun and moon would endure. Aquinas doesn't notice this because his cosmology holds the luminary bodies to be of a unique kind of matter which I
 
 don't believe he would hold if he was alive today. In short, I think the first of Aquinas's arguments here is the more convincing one. Although, what if to
 
@@ -108,7 +110,7 @@ manifest the divine goodness in a multitude of ways, God did create all [05:40] 
 
 personal thought that is not in the text. Here we move then to question 92 of the vision of the divine essence in reference to the blessed article one.
 
-Whether the human intellect can attain to the vision of God in his essence. These articles were also covered in the first volume of the suma as well. And
+Whether the human intellect can attain to the vision of God in his essence. These articles were also covered in the first volume of the Summa as well. And
 
 there is an incredible amount of text here refuting bad answers to this article this question. The gist of it is that the perfection of the mind, man's
 
@@ -120,7 +122,7 @@ being united to God, turning back to God and specifically in the mind, in thinki
 
 that they know thee, the only true God. [06:42] However, we cannot see God with our eyes, nor pull abstract God's essence in order to think about it from any created
 
-thing. Since no created thing could sufficiently encapsulate the one unccreated infinite thing. Therefore, to reach perfect beatatitude, God must
+thing. Since no created thing could sufficiently encapsulate the one uncreated infinite thing. Therefore, to reach perfect beatitude, God must
 
 supernaturally elevate the mind in order to then be directly informed. for the mind to be directly informed by God's essence. This permits the saints to know
 
@@ -140,7 +142,7 @@ body of Christ. Article three our last article whether the saints seeing God see
 
 will not be the case because such would entail total comprehension of God which is not possible for the created intellect to get its mind around in the
 
-one moment the infinite unccreated God. Yet we will still truly know God as he is and we will know all to that which our natural desire corresponds and much
+one moment the infinite uncreated God. Yet we will still truly know God as he is and we will know all to that which our natural desire corresponds and much
 
 more. As the apostles said to Jesus in the Gospel of John, "Lord, show us the father and we shall be satisfied." To [08:47] quote St. Thomas here bringing our
 
@@ -154,7 +156,7 @@ know all things will be fulfilled by the [09:17] mere fact of their seeing God. 
 
 God. For as God suffices the affections in that he has perfect goodness and by possessing him we possess all goods as it were. So does the vision of him
 
-suffice the intellect. And with that we finish another episode. We have just finished covering questions 91 and 92 of the supplement to the suma that is of
+suffice the intellect. And with that we finish another episode. We have just finished covering questions 91 and 92 of the supplement to the Summa that is of
 
 the quality of the world after the judgment and of the vision of the divine essence in reference to the blessed. My [09:49] name is Austin Habash with think
 

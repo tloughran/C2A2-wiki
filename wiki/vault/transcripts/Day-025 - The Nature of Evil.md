@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-025 - The Nature of Evil - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-10T10:28:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-10T22:30:28"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/025, pars/I]
 ---
@@ -26,13 +26,19 @@ tags: [summa, day/025, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 25 of 308.
 > Summa reference: *Prima Pars, Q.47 + Q.48*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bdionisius\b -> Dionysius; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions. First pass (automatic, pattern-list): Suma -> Summa; aquanus -> Aquinas; aquinus -> Aquinas; dionisius -> Dionysius; habish -> Habash; theologia -> Theologiae.
+>
+> Second pass (QC reviewer, 2026-08-10, against a live refetch of the ASR — the first pass's fixed pattern-list left these because each is a spelling the list did not name): aquanis -> Aquinas (a third variant of the same name, missed by the two spellings above); suir podcast / suer podcast -> Summa podcast (the recurring episode-intro name garble); democratus -> Democritus (x2); the old adamist -> the old atomist; Arrangements of atams -> arrangements of atoms; a Multiverse because of Adams and chance -> because of atoms and chance (the ASR's "Adams" reads as the biblical Adam and inverts the sense of Q.47 a.3's argument against atomism-and-chance; the genuine "sons of Adam" at 00:08:25 is correct and was left alone); the enan animent -> the inanimate; natur's Essences -> natures essences; a sign of sunship -> a sign of sonship; St John chriso -> St John Chrysostom.
+>
+> Residual, deliberately NOT restored (fragmentary ASR, no confident reading): "words fra with mere nonsense" (~00:17:05), "fa fail" (~00:12:20), "spe species" (~00:06:19). These are stammer/fragment artifacts, not misheard proper nouns; inventing a reading would be fabrication.
+>
+> This is an auto-rendered initial pass — the QC agent or a human editor must still add proper `### Q.N — title` and `**Article M — title**` section headers and polish prose. Punctuation and paragraph breaks are heuristic. The `## Notes` section is written.
 
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the suir podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the suer podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 25 so let's get started we're covering today question 47 and 48 of the Prima pars that is the distinction of things in general and the distinction of Good and
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 25 so let's get started we're covering today question 47 and 48 of the Prima pars that is the distinction of things in general and the distinction of Good and
 
 [00:00:36] Evil the translation I always use in these podcasts as a second revised Edition translated by the fathers of the English Dominican Province and so let's get started
 
@@ -52,7 +58,7 @@ whether the multitude and distinction of things comes from God if it didn't we w
 
 whether the inequality of things is from God this should trigger in the mind of the regular listener of this podcast the treatment on God's love where we showed that God's goodness is the cause of one thing being better than another here we ask why God would will in inequality among things which we see very clearly in things we have a Perfection of the mind that's lacking in other animals animals have a Perfection of sight hearing imagination lacking to plants plants have a Perfection of life and
 
-[00:02:41] self motion missing from the enan animent there is a hierarchy of things and that hierarchy across species is due to the nature of those things which pre-exist in the mind of the maker the one who makes the raw material of the universe and within it all its possible forms natur's Essences that can actually exist this is the cause of the vertical distinction or difference in things their nature Essence species while
+[00:02:41] self motion missing from the inanimate there is a hierarchy of things and that hierarchy across species is due to the nature of those things which pre-exist in the mind of the maker the one who makes the raw material of the universe and within it all its possible forms natures essences that can actually exist this is the cause of the vertical distinction or difference in things their nature Essence species while
 
 [00:03:11] matter or material is the cause of the horizontal difference in the multitude of any particular species or nature any multitude within it you and I are different from the stone by nature but different from each other by material because of the numerically distinct material that you possess and I possess a significant objection leveled in this article is that if God is perfect then he must not produce variously more or
 
@@ -66,9 +72,9 @@ whether the inequality of things is from God this should trigger in the mind of 
 
 **Article 3 — Whether there is only one world**
 
-article 3 whether there is only one world Aquinas says it is said in the Gospel of John 1:10 the world was made by him where the world is named as one as if only one exists our major objection to this question is democratus the old adamist we can call him the presocratic millennial who thought everything was just different Arrangements of atams he was wrong in Socrates day he's still wrong today it is a denial as well of
+article 3 whether there is only one world Aquinas says it is said in the Gospel of John 1:10 the world was made by him where the world is named as one as if only one exists our major objection to this question is Democritus the old atomist we can call him the presocratic millennial who thought everything was just different arrangements of atoms he was wrong in Socrates day he's still wrong today it is a denial as well of
 
-[00:05:27] natures as distinct from one another it is a denial which is easily refuted from the philosophical theological perspective and I believe is also being refuted at the subatomic or the quantum level today democratus thought there was a Multiverse because of Adams and chance this Aquinas denies because of the unity and Harmony of the world setting aside the notion of a Multiverse which it does look like there's no positive evidence for this world does have an order to it
+[00:05:27] natures as distinct from one another it is a denial which is easily refuted from the philosophical theological perspective and I believe is also being refuted at the subatomic or the quantum level today Democritus thought there was a Multiverse because of atoms and chance this Aquinas denies because of the unity and Harmony of the world setting aside the notion of a Multiverse which it does look like there's no positive evidence for this world does have an order to it
 
 [00:05:59] as United by physical laws think of gravity or even metaphysical laws that all tend towards their own Perfection not only of themselves but also of their species through reproduction but we also find disorder the essence and the origin of which we will now turn
 
@@ -98,7 +104,7 @@ then is evil found in things we know the answer to this question all too well as
 
 next
 
-[00:09:31] article whether evil is in good as in its subject Augustine says that evil exists only in good how that works is described by aquanis he says evil is not in the good opposed to it as in its subject but in some other good for the subject of blindness is not sight but animal Aquinas will then add an important distinction within this article of different kinds of absences if the ability to fly is absent in you
+[00:09:31] article whether evil is in good as in its subject Augustine says that evil exists only in good how that works is described by Aquinas he says evil is not in the good opposed to it as in its subject but in some other good for the subject of blindness is not sight but animal Aquinas will then add an important distinction within this article of different kinds of absences if the ability to fly is absent in you
 
 [00:10:01] that doesn't make you evil because that's not a good that's proper to you a good that you ought to have in this way the word privation is more specific as a synonym with evil than terms like lack or absence intemperance in you or I is a privation blindness is a privation vanity is a privation and we will encounter a thorough treatment of the virtues in vices in the second and third
 
@@ -134,7 +140,7 @@ whether pain has the nature of evil more than fault has Aquinas response to this
 
 [00:15:29] is obviously all good and all just therefore it is culpable fault not pain which is the true evil this painful discipline is exemplified in the letter of Hebrews where it says my son do not regard lightly the discipline of the Lord nor lose courage when you are punished by him for the Lord disciplines him whom he loves and chastises every son whom he accepts it is for discipline that you have to endure God is treating you as son for what son is there whom his father
 
-[00:16:01] does not discipline if you are left without discipline in which all have participated then you are illegitimate children and not Sons pain brought by God is according to scripture a sign of sunship think of the positive effect pain and suffering can have on us unto repentance and conversion towards God St John chriso makes this point beautifully in his reflection on the difference between a wedding a place of joy and a funeral a place of pain and sorrow he
+[00:16:01] does not discipline if you are left without discipline in which all have participated then you are illegitimate children and not Sons pain brought by God is according to scripture a sign of sonship think of the positive effect pain and suffering can have on us unto repentance and conversion towards God St John Chrysostom makes this point beautifully in his reflection on the difference between a wedding a place of joy and a funeral a place of pain and sorrow he
 
 [00:16:32] writes which I will quote at length because it is so profound and beautiful he says come if you will let us represent to ourselves two houses the one where people are marrying the other where they are mourning let us enter an imagination into each let us see which is better than the other why that of the mourner will be found full of seriousness that of the marrying person full of indecency for look here are shameful words unrestrained laughter more unrestrained emotions both dress
 

@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-028 - Quantum Motion and Angelic Knowledge - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-26T08:23:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T17:28:50"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/028, pars/I]
 ---
@@ -28,11 +28,13 @@ tags: [summa, day/028, pars/I]
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheolog\b(?!ica) -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
+> QC sweep 2026-08-11, residues the auto-pass left standing: *Suma year podcast* → the *Summa in a Year* podcast (the auto-regex `\bSuma\b -> Summa` half-corrected the series title); *assumma theolog* → Aquinas's *Summa Theologiae*; *Aquin* → Aquinas; *gilby* (×2) → Gilby (Thomas Gilby, the Blackfriars translator).
+
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 28 so let's get started we're covering today questions 53 and 54 of the Prima pars which is the local movement of the angels and the knowledge
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this day 28 so let's get started we're covering today questions 53 and 54 of the Prima pars which is the local movement of the angels and the knowledge
 
 [00:00:38] of the Angels the translation that I always use in these podcasts as a second revised Edition translated by the fathers of the English Dominican
 
@@ -60,7 +62,7 @@ article one whether an angel can move locally why are we splitting hairs with th
 
 [00:04:31] entire podcast dedicated to motion to say more but for our purposes let us simply take Aristotle's definition on motion and then take a look at our article motion is according to Aristotle the actuality of what is in potentiality in so far as it is in potentiality so can Angels be moved locally Aquinas in his writings will remind us that local motion is a Continuum as that definition implies and Escape zenos Paradox then he
 
-[00:05:01] will say how this can work with angels along with in giving another way Angels could be said to move locally which is by simply ceasing to affect one place and then beginning to affect another so here's Aquinas from the gilby translation and so just as a body moving locally does not leave its first position at once but successively and thus moves with the continuity proper to bodily motion so to an angel moving from a place divisible
+[00:05:01] will say how this can work with angels along with in giving another way Angels could be said to move locally which is by simply ceasing to affect one place and then beginning to affect another so here's Aquinas from the Gilby translation and so just as a body moving locally does not leave its first position at once but successively and thus moves with the continuity proper to bodily motion so to an angel moving from a place divisible
 
 [00:05:31] into parts may leave it successively in this sense the angelical movement too may be continuous but it may on the other hand take place as an instantaneous transference of power from the whole of one place to the whole of another in this case the Angel's movement would be discontinuous now hopefully my explanation previous to that citation was helpful in making that
 
@@ -70,7 +72,7 @@ article one whether an angel can move locally why are we splitting hairs with th
 
 Article 2 whether an angel passes through an intermediate Place well it depends because angels can move locally like we do through a Continuum through this actualization of being in place B potentially but they can also move by simply stopping to affect place a and then beginning to affect Place b as we've said before in the first case they would pass through some intermediate in the second case they would not that is our response to this article as an aside
 
-[00:06:28] Aquin spills an incredible amount of Ink on this question because it does respond directly to Zeno's Paradox which I imagine he feels he needs to do thoroughly so here is a brief synopsis from Aquinas on that problem of Zeno and the solution gilby translation again for its Clarity imagine a body moving through 2 feet of space clearly when the body starts to move it gradually leaves the beginning of that length and then invades the end of it hence since any length is infinitely divisible and the
+[00:06:28] Aquinas spills an incredible amount of ink on this question because it does respond directly to Zeno's Paradox which I imagine he feels he needs to do thoroughly so here is a brief synopsis from Aquinas on that problem of Zeno and the solution Gilby translation again for its Clarity imagine a body moving through 2 feet of space clearly when the body starts to move it gradually leaves the beginning of that length and then invades the end of it hence since any length is infinitely divisible and the
 
 [00:06:59] points any length are potentially infinite it follows that between any two places there is an Infinity of intermediate places now in order to cross an Infinity of intermediaries a moving thing must move continuously for just as intermediate places are potentially infinite so also continuous movement is potentially divisible to Infinity if then the movement be discontinuous all the parts which compos
 

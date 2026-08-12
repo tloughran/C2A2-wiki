@@ -16,27 +16,33 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-175 - Affability and Flattery - Contemporary]]"
 tags: [summa, day/175, pars/II-II, q/114-115]
-last_qc_at: "2026-07-20T08:19:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T04:25:23"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 175 — Affability & Flattery
 
 Austin Habash's Day 175 episode of the *Summa* podcast covers Aquinas's Secunda Secundae (II-II).
 
-[00:05] Hello, my name is Austin Habage, the founder of Think Catholic, and you're listening to the Sumanir podcast, where we study St. Thomas Aquinas's suma
+> Episode: <https://www.youtube.com/watch?v=2VXtbCIYByc>
+> Series: *Summa in a Year* by Austin Habash. Day 175 of 308.
+> Summa reference: *Secunda Secundae, Q.114 (friendliness / affability — 2 articles) + Q.115 (flattery — 2 articles).*
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumanir podcast is brought to you by Think Catholic. Taking two questions of the
+> Auto-generated captions (ASR), typo cleanup applied by QC 2026-08-11. The ASR is genuinely garbled in each case below; these are restorations, verified against a live refetch of `2VXtbCIYByc`. *Habage → Habash; Habish → Habash; Sumanir podcast → Summa in a Year podcast (x2, the recorded episode-intro name garble); suma → Summa; sukunda sukund → Secunda Secundae; aphability / Aphability / affabibility → affability / Affability (the episode's own subject term, garbled three ways); Mave Maria Press → Ave Maria Press; a Maria Press's → Ave Maria Press's; think catholic → Think Catholic (close only; capitalized correctly elsewhere in the file).* Deliberately **left as heard** and not restored: the discount code *sumat 10* (the spoken code is an ASR garble with no canonical form recoverable from the audio — same treatment as the "suma 10" instances on other days), and *"his Catholic faith is day 175"* (the ASR drops "This"; the render is faithful to the dropout). Punctuation and paragraph breaks are heuristic.
+
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 175. So let's get started.
 
-We're covering today questions 114 115 of the sukunda sukund that is of the [00:37] friendliness which is called aphability and a flattery. The translation that I
+We're covering today questions 114 115 of the Secunda Secundae that is of the [00:37] friendliness which is called affability and a flattery. The translation that I
 
-always use in these podcasts is the one generously provided to me. Mave Maria Press the five volume set translated by the fathers of the English Dominican
+always use in these podcasts is the one generously provided to me. Ave Maria Press the five volume set translated by the fathers of the English Dominican
 
-province which you can now get at a discounted price from a Maria Press's site by typing in the code sumat 10. And so here we go. Article one, whether
+province which you can now get at a discounted price from Ave Maria Press's site by typing in the code sumat 10. And so here we go. Article one, whether
 
-friendliness is a special virtue. Aphability is equated to friendliness in this article in St. Thomas's words affability which is what we mean by
+friendliness is a special virtue. Affability is equated to friendliness in this article in St. Thomas's words affability which is what we mean by
 
 [01:08] friendship is a special virtue. Friendliness is a unique virtue because it is directed towards a unique good. That good is the good of acting
 
@@ -46,7 +52,7 @@ termed here the virtue of friendliness. Then giving a more precise articulation 
 
 merely in outward words or deeds bears a [01:40] certain likeness to friendship thereto in so far as a man behaves in a becoming manner towards those with whom he is in
 
-contact." Article two, whether this kind of friendship is a part of justice. Although the virtue of affabibility like justice pertains to interactions with
+contact." Article two, whether this kind of friendship is a part of justice. Although the virtue of affability like justice pertains to interactions with
 
 others, it falls short of the strict definition of justice by not binding a man by a way of legal debt. Like a man does have to pay $5 for the $5 Pepsi.
 
@@ -90,12 +96,12 @@ episode, he says, "If one man flatters another from the mere craving to please o
 
 [05:17] of necessity, this is not contrary to charity. Consequently, it is not a mortal but a venial sin." And with that, we close another episode. We have just
 
-finished covering questions 114 115 of the Secunda Secundae that is of the friendliness which is called affability and a flattery. My name is Austin Habish
+finished covering questions 114 115 of the Secunda Secundae that is of the friendliness which is called affability and a flattery. My name is Austin Habash
 
-with think catholic and I cannot wait to see you tomorrow. [Music]
+with Think Catholic and I cannot wait to see you tomorrow. [Music]
 
 ## Notes
 - Episode topic: Affability & Flattery. Summa locus (detected from ASR opening): Secunda Secundae (II-II).
-- Transcript is verbatim ASR with light error cleanup (Summa/Aquinas/Theologiae/Secundae normalizations).
+- Transcript is verbatim ASR. **Correction (QC 2026-08-11):** this line previously claimed "light error cleanup (Summa/Aquinas/Theologiae/Secundae normalizations)" had been applied. It had not — all four named normalizations were unperformed, and the file carried `Sumanir` x2, `suma`, `Habage`, `Habish`, and `sukunda sukund` at the time of writing. The cleanup has now actually been run; see the typo-cleanup blockquote above for the audit trail.
 - Q-locus auto-detected from the host's stated 'questions N and M' opening; verify against frontmatter before QC sign-off.
 - Synthesis hook: see paired Contemporary file for the mind-monist / C2A2 reframe.

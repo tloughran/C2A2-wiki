@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-176 - Quarreling and Liberality - Contemporary]]"
 tags: [summa, day/176, pars/II-II, q/116-117]
-last_qc_at: "2026-07-26T12:22:52"
+last_qc_at: "2026-08-11T20:24:55"
 last_qc_outcome: "pass"
 ---
 

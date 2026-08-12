@@ -15,8 +15,8 @@ fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-301 - General Judgement - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-20T12:18:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T00:24:48"
+last_qc_outcome: "rewrote"
 tags: [summa, day/301, pars/supplement, q/87]
 ---
 
@@ -24,7 +24,9 @@ tags: [summa, day/301, pars/supplement, q/87]
 
 *Summa Theologiae, Supplement, Suppl. Q.87-88 — knowledge of merits and demerits after rising; the general judgment as to time and place. Verbatim ASR fetched 2026-06-25; light cleanup of common ASR errors only.*
 
-> **Typo cleanup:** Habish → Habash (closing sign-off); residual lowercase "suma" for *Summa* left as ASR-raw in body prose. ASR spacing/punctuation normalized. No content added or removed.
+> **Typo cleanup:** Habish → Habash (intro and closing sign-off). ASR spacing/punctuation normalized.
+>
+> **Corrected 2026-08-11 against a live ASR refetch. Every fix below is a render-side degradation, not ASR residue — the raw ASR carries the correct form in each case, so this pass restores the transcript *to* the ASR rather than away from it.** Lowercase "suma" restored to *Summa* at 2 places — and the previous version of this note asserted that lowercase "suma" was "left as ASR-raw", which the refetch refutes: the ASR reads *Summa*. "demarits" restored to *demerits* — the term names half the question's own subject (Suppl. Q.87, on knowledge of merits and demerits after rising), and the ASR spells it correctly in the same sentence pair. "Kadron Valley" restored to *Kidron Valley*. No content added or removed.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
@@ -32,7 +34,7 @@ Theologiae in a way simple and insightful for anyone to understand. The Summa po
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 301. So let's get started.
 
-We'll cover today questions 87 and 88 of the supplement to the suma that is of [00:35] the knowledge which after rising again men will have at the judgment concerning
+We'll cover today questions 87 and 88 of the supplement to the Summa that is of [00:35] the knowledge which after rising again men will have at the judgment concerning
 
 merits and demerits and of the general judgment as to the time and place at which it will be. The translation that I always use in these podcasts is the one
 
@@ -82,7 +84,7 @@ evidently to all and order that the sentence appear to be just, that all who kno
 
 will know of his reward or condemnation, [04:11] so will everyone else know of it. And consequently, as each one will recall his own merits or demerits, so will he
 
-be cognizant of those of others. Article three, whether all merits and demarits one's own as well as those of others will be seen by anyone at a single
+be cognizant of those of others. Article three, whether all merits and demerits one's own as well as those of others will be seen by anyone at a single
 
 glance. And with the blessed, this is easy to answer since they have supernatural gifts. Thus, St. Thomas says, "For some say that one will see
 
@@ -146,7 +148,7 @@ there. Then in Acts chapter 1, men of [08:53] Galilee, why do you stand looking 
 
 way as you saw him go into heaven. Then they returned to Jerusalem from the mount called Olivet which is near Jerusalem. And since the valley of
 
-Jehoshaphat is associated with the Kadron Valley which is near Mount Olivet, we then get the following explanation of place. According to St.
+Jehoshaphat is associated with the Kidron Valley which is near Mount Olivet, we then get the following explanation of place. According to St.
 
 Thomas, he writes, "We cannot know with any great certainty the manner in which this judgment will take place, nor how [09:23] many men will gather together in the
 
@@ -154,7 +156,7 @@ place of judgment, but it may be gathered from scripture that in all probability
 
 ascended from there, so as to show that he who descends is the same as he who ascended." And with that, we close another episode. We have just finished
 
-covering questions 87 and 88 of the supplement to the suma. That is of the knowledge which after rising again men will have at the judgment concerning
+covering questions 87 and 88 of the supplement to the Summa. That is of the knowledge which after rising again men will have at the judgment concerning
 
 merits and demerits and of the general [09:55] judgment as to the time and place which it will be. My name is Austin Habash with Think Catholic and I cannot wait to
 

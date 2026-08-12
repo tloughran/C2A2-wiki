@@ -10,16 +10,17 @@ length_note: "Deliberately compact: Q.108 and Q.109 are two brief questions whos
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; honest signaling; cooperation maintenance)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; grasping vs relational attention)"
-  - "traditions/levin/prs_triplets.md (PRS-04/08 error-correction in nested collectives)"
-  - "traditions/stump/prs_triplets.md (punishment as medicinal; second-personal self-revelation)"
+  - "traditions/levin/prs_triplets.md (PRS-17 bioelectricity as cognitive glue constituting a collective knower; PRS-18 cancer as a decision problem for the cell collective)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Franciscan / non-propositional second-person knowledge)"
+  - "Stump canonical: medicinal punishment in the Thomistic tradition — no PRS-form record of this in the wiki; cited to the work, not to an id"
   - "Wright canonical: Rom 12:19 ('vengeance is mine, says the Lord'); the cross as God absorbing rather than retaliating; truth as covenant faithfulness"
   - "Rohr canonical: breaking the retributive cycle; True Self vs False Self"
 evidence_strength_summary: "Altruistic-punishment / cooperation-maintenance and honest-signaling are empirical/game-theoretic; the active-inference framing is formal; the absorb-rather-than-retaliate reading and True-Self truthfulness are theological (Wright/Rohr)."
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-08-06T08:23:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T00:25:07"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 172 — Vengeance & Truthfulness (Contemporary)
@@ -38,9 +39,9 @@ A cooperative system of agents requires two things that are easy to get wrong. F
 
 **Friston on multi-agent coherence and honest signaling** (PRS-06 in the Friston-tradition wiki) frames both halves. Cooperation among active-inference agents depends on mutual modeling, which in turn depends on signals being honest: deception is the injection of false data into others' generative models, and it degrades the shared world the agents inhabit. Truthfulness, formally, is the maintenance of signal-integrity that keeps mutual models calibrated. Correction (vengeance's licit core) is the system's response to agents who have defected from that integrity — and the game-theoretic literature on *altruistic punishment* shows empirically that cooperation in large groups is sustained precisely by a willingness to bear costs to correct defectors. Aquinas's insistence that vengeance be ordered to correction and the common good, not to private hatred, is the normative form of the same finding: punishment maintains cooperation only when it targets the defection, not the person-as-enemy.
 
-**McGilchrist** (PRS-01 in the McGilchrist-tradition wiki) gives the phenomenological warning. The grasping, manipulative mode of attention (which he associates with an unchecked left hemisphere) turns correction into possession — the wrongdoer becomes an object to be seized and crushed; this is vengeance-as-passion. The relational mode holds the wrongdoer as a person within a whole that the correction is meant to restore; this is vengeance-as-justice. The difference is exactly Aquinas's right-intention condition. **Levin** (PRS-04/08) gives the nested-agency analog: collectives maintain themselves by error-correction signals that restore deviating components to the morphogenetic target — correction in service of the whole's integrity, not destruction of the part.
+**McGilchrist** (PRS-01 in the McGilchrist-tradition wiki) gives the phenomenological warning. The grasping, manipulative mode of attention (which he associates with an unchecked left hemisphere) turns correction into possession — the wrongdoer becomes an object to be seized and crushed; this is vengeance-as-passion. The relational mode holds the wrongdoer as a person within a whole that the correction is meant to restore; this is vengeance-as-justice. The difference is exactly Aquinas's right-intention condition. **Levin** (PRS-17 and PRS-18 in the Levin-tradition wiki) gives the nested-agency analog. PRS-17 records bioelectric pattern memory as *cognitive glue* — the mechanism that constitutes a collective knower above the level of the single cell. PRS-18 records the failure mode of that collective: cancer reframed as a *decision problem* for the cell collective rather than as purely genetic damage, and correctable by rewriting the collective's goal state rather than by destroying the deviant cell. That is the biological form of Aquinas's right-intention condition — correction in service of the whole's integrity, aimed at restoring the shared target rather than at destroying the part. *Empirical.*
 
-**Stump** enters here on both questions: punishment as medicinal (ordered to the good of the one corrected and the community), and truthfulness as second-personal self-revelation — the giving of oneself-as-one-is to be known by another.
+**Stump** enters here on both questions: punishment as medicinal (ordered to the good of the one corrected and the community), and truthfulness as second-personal self-revelation (PRS-11 in the Stump-tradition wiki) — the giving of oneself-as-one-is to be known by another.
 
 **Wright** supplies the decisive scriptural reframe of vengeance. "Vengeance is mine, I will repay, says the Lord" (Rom 12:19) does not abolish justice but *reserves ultimate vengeance to God* — and on Wright's reading of the cross, God's own response to wrong is to absorb it rather than retaliate, breaking the escalation cycle in the body of the crucified. Human correction is therefore bounded delegation (cf. Day 170): legitimate authority may correct for the common good, but final vengeance is not the creature's to seize. On truthfulness, Wright reads *veritas* as covenant faithfulness — being reliably what one is before God and neighbor. **Rohr** gives the contemplative form of both: the breaking of the retributive cycle as the heart of the gospel, and truthfulness as living from the True Self rather than performing the False Self.
 
@@ -58,8 +59,9 @@ Loving unity is computed by perspective-limited agents who must both correct def
 
 - **Friston PRS-06** (multi-agent coherence; honest signaling) — truthfulness as signal-integrity; correction as cooperation-maintenance; deception as model-corruption. *Empirical / formal.*
 - **McGilchrist PRS-01** (grasping vs relational attention) — the line between vengeance-as-possession and vengeance-as-restorative-justice. *Empirical.*
-- **Levin PRS-04/08** (error-correction in nested collectives) — correction in service of the whole's integrity. *Empirical / formal.*
-- **Stump (medicinal punishment; second-personal self-revelation)** — punishment ordered to the good of the corrected; truthfulness as self-giving-to-be-known. *Philosophical.*
+- **PRS-17 + PRS-18 in the Levin-tradition wiki** (bioelectricity as the cognitive glue constituting a collective knower above the level of the single cell; cancer reframed as a *decision problem* for that collective rather than a purely genetic failure) — the biological instance of the day's structure: a member whose goal-state has come apart from the collective's, and a correction aimed at restoring the shared target rather than at destroying the member. *Empirical.*
+- **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person) — truthfulness as self-giving-to-be-known rather than as accurate report. *Philosophical.*
+- **Stump on medicinal punishment (cited to the work, not to an id)** — punishment ordered to the good of the one corrected. The C2A2 Stump wiki has no PRS-form record of this; PRS-05 is suffering-and-divine-permission, which is an adjacent but distinct claim, so no id is asserted here. *Philosophical.*
 - **Wright (Rom 12:19; the cross)** — ultimate vengeance reserved to God who absorbs rather than retaliates; truth as covenant faithfulness. *Theological / scriptural.*
 - **Rohr (breaking the retributive cycle; True/False Self)** — gospel as the end of escalation; truthfulness as living from the True Self. *Theological / contemplative.*
 

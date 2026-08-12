@@ -16,10 +16,10 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents)"
   - "Wright canonical: 'Paul and the Faithfulness of God' on covenantal obedience; the Pauline obedience-of-faith (hypakoē pisteōs) in Rom 1:5"
   - "Rohr canonical: 'Falling Upward' on bounded obedience and the necessary breaking of first-half-of-life rule-fidelity"
-  - "master/cross_program_index.md CROSS-019 on right-hemisphere mode in cross-tradition engagement"
+  - "NOTE 2026-08-11 (QC): a CROSS-019 citation was removed here. It was glossed as 'right-hemisphere mode in cross-tradition engagement'; read at the wiki body, CROSS-019 is Stump x Levin — whether Thomistic final causality grounds Levin's morphogenetic teleology. The right-hemisphere/cross-tradition-engagement claim is McGilchrist PRS-03, already cited above, so nothing in the argument depended on the wrong id."
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-08-05T18:30:57"
+last_qc_at: "2026-08-11T00:25:07"
 last_qc_outcome: "rewrote"
 ---
 

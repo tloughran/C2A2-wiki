@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-027 - Angelic Bodies - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-26T08:23:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T17:28:50"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/027, pars/I]
 ---
@@ -28,11 +28,13 @@ tags: [summa, day/027, pars/I]
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
+> QC sweep 2026-08-11, residues the auto-pass left standing: *Suma near podcast* → the *Summa in a Year* podcast (the auto-regex `\bSuma\b -> Summa` half-corrected the series title); *aquanus Suma theologia* → Aquinas's *Summa Theologiae*; *aquan* → Aquinas; *Corporal place* → corporeal place (Q.52 a.1's own technical term — an ordinary English word in the wrong form, and this file already spelled *corporeal* correctly three times elsewhere); *gilby* (×4) → Gilby (Thomas Gilby, the Blackfriars translator).
+
 ## Transcript
 
 [00:00:04] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand the Summa near podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 27 so let's get started we're covering today questions 51 and 52 of the Prima pars that is the angels in comparison with the corporeal
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day will seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 27 so let's get started we're covering today questions 51 and 52 of the Prima pars that is the angels in comparison with the corporeal
 
 [00:00:36] and the angels in relation to place the translation that I always use in these podcasts is the second and revised Edition translated by the fathers of the English Dominican Province and so here
 
@@ -52,11 +54,11 @@ tags: [summa, day/027, pars/I]
 
 article two whether Angels assume bodies do angels take bodily form Aquinas mentions that some thought in the Old Testament that the appearance of angels was only by way of prophetic Vision that is to say only in the mind of the one seeing the angel but St Thomas says this is contrary to the intent of scriptures he says the Angels who appeared Abraham were seen by him and by his whole family by lot and by the citizens of Sodom in like manner the angel who appeared to Tobias was seen by
 
-[00:02:50] all present from all this it is clearly shown that such apparitions were beheld by bodily Vision the question is how how can Angels appear bodily St Thomas says it's not by way of being united to the material and the way that we are united to our material as matter form Body Soul on the other hand an angel is not merely United to the material by way of affecting it like an immaterial Spirit might push a chair or a painting off the wall aquan says that this body is also
+[00:02:50] all present from all this it is clearly shown that such apparitions were beheld by bodily Vision the question is how how can Angels appear bodily St Thomas says it's not by way of being united to the material and the way that we are united to our material as matter form Body Soul on the other hand an angel is not merely United to the material by way of affecting it like an immaterial Spirit might push a chair or a painting off the wall Aquinas says that this body is also
 
 [00:03:21] meant to represent the angel like the dove is meant to represent the holy spirit in his words the body assumed is United to the angel not as its form nor merely as its cause but as its cause represented by the assumed caused Body by the divine power sensible bodies are so fashioned and this is what we mean by an Angel assuming a body how that is being done Aquinas thinks is that the angel is condensing the moisture and
 
-[00:03:54] matter in the air into the shape of a body like an especially thick Cloud he says I'm going to quote him through the gilby translation here because it's very clear Aquinas says it is true that air does not normally retain shape or color but when condensed it can have shape and color as in the clouds the Angels then assume bodies of air but condensed by divine power in an appropriate manner
+[00:03:54] matter in the air into the shape of a body like an especially thick Cloud he says I'm going to quote him through the Gilby translation here because it's very clear Aquinas says it is true that air does not normally retain shape or color but when condensed it can have shape and color as in the clouds the Angels then assume bodies of air but condensed by divine power in an appropriate manner
 
 **Article 3 — Whether the angels exercise functions of life in the bodies assumed**
 
@@ -64,7 +66,7 @@ article two whether Angels assume bodies do angels take bodily form Aquinas ment
 
 [00:04:54] thing the kind of thing that we are angels are not that kind of thing they do not have these B faculties or Powers they are only and simply intellectual substances and so they can by affecting matter produce sound so as to imitate speech they can by affecting matter produce movement so as to imitate Locomotion but they cannot do those things which require the faculties or powers that are bodily such as we've mentioned already here are a
 
-[00:05:24] few of Aquinas's words related to these points gilby translation on the first one Aquinas says where then life is lacking which is the ability to act in certain ways then the acts or functions of Life must be lacking too properly speaking the Angels do not talk through their assumed bodies yet there is a semblance of speech in so far as they fashion sounds in the air like to human voices properly speaking the Angels cannot be said to eat because eating
+[00:05:24] few of Aquinas's words related to these points Gilby translation on the first one Aquinas says where then life is lacking which is the ability to act in certain ways then the acts or functions of Life must be lacking too properly speaking the Angels do not talk through their assumed bodies yet there is a semblance of speech in so far as they fashion sounds in the air like to human voices properly speaking the Angels cannot be said to eat because eating
 
 [00:05:55] involves the taking of food convertible into the substance of the eater this is what the angel said to Tobias when I was with you I seemed indeed to eat and to drink but you were seeing a vision
 
@@ -78,7 +80,7 @@ question 52 the angels in relation to place what then after all is Place Aristot
 
 [00:07:03] place and exclude common place so the specific place you're in in the room as opposed to just being inside the house being in this place in general so are angels in relation to a place aana says yes but differently than you and I are in a place we are in a place because we are extended in space we have quantity magnitude angels are related to a place
 
-[00:07:34] by affecting that place only here is Aquinas a body is said to be in a place in such a way that it is applied to such place according to the contact of demens quantity so that's us but there is no such quantity in the Angels consequently an angel is said to be in a Corporal place by application of the Angelic power in any manner whatever to any place as an aside the discussion of
+[00:07:34] by affecting that place only here is Aquinas a body is said to be in a place in such a way that it is applied to such place according to the contact of demens quantity so that's us but there is no such quantity in the Angels consequently an angel is said to be in a corporeal place by application of the Angelic power in any manner whatever to any place as an aside the discussion of
 
 [00:08:05] Place May strike one as unnecessarily pedantic but it is a very essential notion within very fundamental scientific discussions such as those being had currently around gravity and space and the differing theories concerning both of those which I hope to if we have the occasion in this podcast
 
@@ -88,7 +90,7 @@ question 52 the angels in relation to place what then after all is Place Aristot
 
 article two whether an angel can be in several places at once consider your soul where is it is it in several places well not exactly it is simply where it is acting and that extends to the edges of your physical body your physical body then as considered as one thing is in one place following our definition of place so even though your soul is everywhere your body is your body is in one place and
 
-[00:08:56] therefore we can say your soul is in one place and we have something similar in regard to the angels here is Aquinas's argument leveraging the gilby translation again he says the Angel's power on the other hand being finite does not extend to all things but only to a definite limited thing what I mean is that when we relate anything to a single power to that extent we unify it thus as related to the universal power of God the whole universe is one thing
+[00:08:56] therefore we can say your soul is in one place and we have something similar in regard to the angels here is Aquinas's argument leveraging the Gilby translation again he says the Angel's power on the other hand being finite does not extend to all things but only to a definite limited thing what I mean is that when we relate anything to a single power to that extent we unify it thus as related to the universal power of God the whole universe is one thing
 
 [00:09:28] and similarly any part of the universe as related to the power of an Angel is one thing since then an angel is in a place as his power applied to a place he is never simply everywhere at once nor in several places but in one place only at a given moment so God is everywhere because as being itself his action encompasses or extends to all being the angel as a particular being must direct
 
@@ -106,7 +108,7 @@ article 3 whether several angels can be at the same time in the same place Aquin
 
 [00:11:55] Legion by many what this means is that various different fallen angels are having variously different effects on the same man or they are all United in the one effect on the man to this point Aquinas says nor can it be objected that several individuals may row a boat since no one of them is a perfect mover because no one man's strength is sufficient for moving the boat well all together are as one mover in so far as their United strengths all combine in
 
-[00:12:27] producing the one movement in the same way as commented on within the gilby translation it is written indeed there seems to be no reason in principle why several Spiritual Beings could not each cause a part of some general effect in the physical world which in the case of possession would be an effect on a man's body and interior senses aimed at the overpowering of reason so understood the notion of several beings being in one place seems
+[00:12:27] producing the one movement in the same way as commented on within the Gilby translation it is written indeed there seems to be no reason in principle why several Spiritual Beings could not each cause a part of some general effect in the physical world which in the case of possession would be an effect on a man's body and interior senses aimed at the overpowering of reason so understood the notion of several beings being in one place seems
 
 [00:13:00] acceptable and with that we close our second episode on the Angels We Have just finished questions 51 and 52 of the Prima pars which is the angels in comparison with the corporeal and the angels in relation to place my name is Austin Habash with think Catholic and I cannot wait to see you tomorrow [Music] oh
 

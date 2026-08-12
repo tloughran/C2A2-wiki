@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-170 - Obedience - Contemporary]]"
 tags: [summa, day/170, pars/II-II, q/104-105]
-last_qc_at: "2026-07-20T08:19:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T00:25:07"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 170 — Obedience
 
 Austin Habash's Day 170 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.104-105.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa nira podcast, where we study St. Thomas Aquinas's Summa
+> **Typo cleanup (added 2026-08-11 — the file shipped with no cleanup blockquote at all).** Verified against a live ASR refetch: the ASR is genuinely garbled in each place below, so these are restorations, not introductions. "Summa nira podcast" → *Summa in a Year* — the ASR reads "Sumanir", and the earlier render had half-corrected it into a new non-word rather than resolving it; "secunda sukund day" → *Secunda Secundae*; "grievious" → *grievous*, inside the Q.105 a.2 quotation, where the ASR itself spells the word correctly three times elsewhere in the same episode. The discount code "suma 10" is left as heard. No content added or removed.
+
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
@@ -122,11 +124,11 @@ that disobedience arises from vain glory. Article two in our last article, wheth
 
 are those directed against God himself, [08:19] not directed against God's laws, such as hatred of God would be or blasphemy and the like. And so St. Thomas responds to
 
-our article briefly writing, "Contempt of the commander is a more grievious sin than contempt of his command." Now, some sins are against the very person of the
+our article briefly writing, "Contempt of the commander is a more grievous sin than contempt of his command." Now, some sins are against the very person of the
 
 commander, such as blasphemy and murder. Therefore, disobedience is not the most grievous of sins. Which brings us to the [08:48] close of another episode. We have just
 
-finished covering questions 104 and 105 of the secunda sukund day. [music] That is of obedience and of disobedience. My name is Austin Habash with Think
+finished covering questions 104 and 105 of the Secunda Secundae. [music] That is of obedience and of disobedience. My name is Austin Habash with Think
 
 Catholic and I cannot wait to see you tomorrow. [music]
 

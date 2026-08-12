@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-020 - The Gift of God - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-26T08:23:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-11T17:28:48"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/020, pars/I, q/37, q/38, theme/trinity, theme/holy-spirit, theme/love, theme/gift]
 ---
@@ -28,11 +28,13 @@ tags: [summa, day/020, pars/I, q/37, q/38, theme/trinity, theme/holy-spirit, the
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
+> QC sweep 2026-08-11, residues the auto-pass left standing: *Suma near year podcast* → the *Summa in a Year* podcast (the auto-regex `\bSuma\b -> Summa` half-corrected the series title, manufacturing "Summa near year"); *assumma theologia* → Aquinas's *Summa Theologiae*; *relation Ally* → relationally; *L Grange* and *lrange* → Lagrange (two ASR renderings of the one Thomist commentator Habash cites; the fuller form Garrigou-Lagrange is likely but is not recoverable from the ASR, so the minimal surname is used).
+
 ## Transcript
 
 [00:00:05] hello my name is Austin Habash the
 
-[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas assumma Theologiae in a way simple and insightful for anyone to understand the Summa near year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 20 so let's get started we're covering today questions 37 and 38 of the Prima pars which is the person of the Holy Spirit as love and
+[00:00:06] founder of think Catholic and you're listening to the Summa podcast where we study St Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand the Summa in a Year podcast is brought to you by think Catholic taking two questions of the Summa a day we'll seek to summarize St Thomas's responses discovering the Brilliance of Aquinas and his Catholic faith this is day 20 so let's get started we're covering today questions 37 and 38 of the Prima pars which is the person of the Holy Spirit as love and
 
 [00:00:38] the person of the Holy Spirit as gift the translation that I always use in these podcasts is a second and revised Edition translated by the fathers of the English Dominican Province and so here
 
@@ -58,13 +60,13 @@ article one whether love is the proper name of the holy spirit in these last few
 
 **Article 2 — Whether the Father and the Son love each other by the Holy Ghost**
 
-article two whether the father and the son love each other by the Holy Ghost again we must return to that distinction between what we are saying of God essentially or according to his nature and what we are saying of three persons identical to that nature yet relation Ally distinct if we are talking about God essentially then the persons are identical to the one Divine will which is identical to the one divine nature therefore it would be
+article two whether the father and the son love each other by the Holy Ghost again we must return to that distinction between what we are saying of God essentially or according to his nature and what we are saying of three persons identical to that nature yet relationally distinct if we are talking about God essentially then the persons are identical to the one Divine will which is identical to the one divine nature therefore it would be
 
 [00:04:13] wrong to say the father and the son love each other by the Holy Ghost the Divine will is one among the three persons but if we are using the word love to say that the holy spirit is the person which proceedes by way of love from the father and the son if we are saying that the love of the father and the son terminates or concludes within the godhead in the person of the Holy Spirit then there is a sense which we can say
 
 [00:04:44] the father and the son love each other by the Holy Spirit Aquinas then gives us an analogy to try and explain what we mean here he says just as we say that a tree flowers by its flower we say say that the father and the son love each other by the Holy Spirit by love proceeding if I could rephrase that it would be to say the father and the son love each other by love which is the person of the Holy Spirit and if we can
 
-[00:05:16] help make that any clear lrange adds confirmation is found in a rather remote analogy parents are said to love each other by their son since the son is the Terminus of their love in the sense that we say that a tree flowers with flowers enough about flowers on to question 38 the name of the Holy Spirit as gift
+[00:05:16] help make that any clear Lagrange adds confirmation is found in a rather remote analogy parents are said to love each other by their son since the son is the Terminus of their love in the sense that we say that a tree flowers with flowers enough about flowers on to question 38 the name of the Holy Spirit as gift
 
 ### Q.38 — The person of the Holy Spirit as Gift
 
@@ -74,7 +76,7 @@ article two whether the father and the son love each other by the Holy Ghost aga
 
 [00:06:09] this article we are only asking if gift can be used as a name referring to a person or the persons of the Trinity not if it applies to one person more than
 
-[00:06:18] another that'll be the next article to this question L Grange gives us a great summary response the word gift implies the aptitude to be given an aptitude toward the giver and to him to whom the gift is made but any Divine person can be given by another in as much as it proceeds from that person and a Divine person may be possessed by a rational Creature if the creature also is given the ability to enjoy that Divine person therefore the name gift is a personal
+[00:06:18] another that'll be the next article to this question Lagrange gives us a great summary response the word gift implies the aptitude to be given an aptitude toward the giver and to him to whom the gift is made but any Divine person can be given by another in as much as it proceeds from that person and a Divine person may be possessed by a rational Creature if the creature also is given the ability to enjoy that Divine person therefore the name gift is a personal
 
 [00:06:50] name or belongs to a Divine person to be given and to be a gift which allows us to move on to our final article of this question in this episode
 
