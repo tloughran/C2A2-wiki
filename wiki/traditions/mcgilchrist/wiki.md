@@ -1,5 +1,5 @@
 # Iain McGilchrist — Tradition Wiki
-*Maintained by the Iain McGilchrist Agent | Last updated: 2026-04-08*
+*Maintained by the Iain McGilchrist Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Sophia Lectures (Ralston College, March 2026) — 2026-04-08]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -31,6 +31,22 @@ The open questions this program is generating run from the empirical to the arch
 7. Is the "creative dance between division and union" (Sophia Lectures 2026) the same process as morphogenetic integration in Levin's program — both producing a "third thing" that neither component alone could generate?
 8. How does McGilchrist's account of paradox as ontologically productive relate to Wolfram's observer-dependent sampling of the Ruliad — two ways of accounting for the co-presence of the infinite and the finite?
 
+*Added 2026-08-09 (from PROP-2026-07-29-001, PROP-2026-08-05-001/003/004):*
+
+9. McGilchrist self-labels as a panpsychist in the IAI interview ("I am a panpsychist... consciousness... is an ontological primitive"), but PRS-25 records him distinguishing his view *from* panpsychism on grounds of relational realism. Is this a change of position, a terminological difference, or an unresolved inconsistency? The two agents (McGilchrist, Kastrup) should not settle this unilaterally.
+10. Does the matter-as-phase-of-consciousness account (matter supplies *resistance* and *persistence*) generate any prediction that physicalism does not, or is it a re-description? Without one it stays a metaphysics, not a research program.
+11. Is the disagreement with Hoffman correctly localized as McGilchrist states it — the dashboard/interface a true description of the *left hemisphere* and a false description of perception simpliciter — or is "encounter" a relabeling of the interface with the representation step hidden?
+12. Is what the right hemisphere does computationally reducible? The Zen argument ("things are not best structured according to principles," so any procedure for reaching it defeats itself) is a strong in-principle claim that Wolfram's computational-irreducibility framework can pressure-test.
+13. Is "cognitive freedom" — the width of attention available to a person — measurable? If Fredrickson's broaden-and-build effect sizes measure attentional width, they become measurements of a political quantity, not only a psychological one.
+14. Is there a common phenomenology of paradigm-level discovery across programs? McGilchrist's gestalt-not-method account, Wolfram's ruliad exploration, and Arkani-Hamed's structures-found-before-they-are-derived may be three descriptions of one thing.
+15. Does the confabulation criterion (a self-referring system produces certainty *plus* fabrication) yield a falsifiable prediction about the C2A2 network itself — namely that a single-tradition agent without cross-tradition contact should exhibit that signature, and that the dialogue apparatus should measurably reduce it?
+16. Is suffering-as-condition-of-a-fulfilled-life, reached here from embodiment and literature, the same conclusion Stump reaches from Thomistic theology — and if so, does independent arrival strengthen it or merely show a shared cultural inheritance?
+
+*Added 2026-08-10 (from PROP-2026-08-05-002):*
+
+17. Does "reality exceeds computation" say anything more than "computation is a description"? Wolfram can grant that a model is not the thing modelled and lose nothing. The question is whether McGilchrist's embodiment/receptivity/participation triad names a feature of reality that a computational ontology must *deny* rather than merely not mention — and if it does not, the disagreement with Wolfram is about emphasis, not ontology. This is the sharper form of open question 12.
+18. Can a recorded rival-tradition encounter be *coded* for the competence C2A2 is trying to measure? The Ralston conversation is the first on-record, long-form exchange between two registered C2A2 traditions. If second-first-language competence means each party can state the other's position from inside it, that is in principle scoreable from the transcript — which would turn a promotional claim ("less a debate than an encounter") into a measurement. What would the coding scheme be, and does the transcript survive it?
+
 ## Solved / Advanced Questions
 *(Track record)*
 
@@ -41,11 +57,14 @@ The open questions this program is generating run from the empirical to the arch
 | Is relational perception prior to analytic abstraction? | Neurological account of right-hemisphere primacy | Yes — right hemisphere discloses reality first; left hemisphere is derivative | Medium |
 | Can synthesis transcend mere addition of divided parts? | Sophia Lectures 2026 — "union at a higher level" — Lecture 1 | Yes — creative synthesis produces a third thing qualitatively beyond its components, with implications for inter-tradition dialogue | High |
 | Is paradox a sign of logical failure or ontological depth? | Sophia Lectures 2026 — Lecture 3 on finitude and the infinite | Ontological depth — paradox marks genuine asymmetric relations between levels of reality | Medium |
+| Does McGilchrist commit to a positive *ontology*, or only to an epistemology of attention? | IAI News interview (2026-07-22) + Jim Rutt *Worldviews* EP 333 | Advanced — a stated ontology is now on the record and citable: consciousness as ontological primitive, matter as a phase of it supplying resistance and persistence, values as primitives, teleology as lure. The program can now be compared with rival traditions on like terms. (Not settled: the panpsychism label conflicts with PRS-25 — see open question 9.) | High |
+| Is the AI limit technological or structural? | "Why A.I. will never be able to do what the brain does" (2026-07-14) + Ralston Lecture I (2026-07-21) + IAI (2026-07-22) | Advanced — McGilchrist now states it unhedged and in principle, and supplies a *positive* thesis (embodiment, procedural/unconscious substrate, participation) rather than only a denial. The earlier consequence-variable hedge at PRS-22 is superseded, which raises falsifiability. | Medium |
+| Has the hemispheric thesis ever been stated against a rival paradigm that can answer back, rather than against a generic "reductionism"? | Ralston symposium conversation with Stephen Wolfram (2026-07-28) | Advanced, not settled — the demarcation is now on the record against a fully articulated computational ontology, which is a harder test than any friendly interview. What it does *not* yet establish is that the two positions are incompatible rather than differently emphasised (see open question 17). Evidence is the event description; the transcript has not been read. | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 6 recorded
+**Count:** 69 recorded *(as of 2026-08-10; the table below lists only the original six — see `prs_triplets.md` for PRS-07 through PRS-69, and the Ingestion Logs below for one-line glosses of PRS-52 onward)*
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -66,6 +85,7 @@ The open questions this program is generating run from the empirical to the arch
 | Right-hemisphere openness ↔ Stump's tradition immersion criterion | Stump Agent | Convergence — both describe what cross-tradition maturity requires | **Dispatch filed** |
 | McGilchrist embodied tradition ↔ Fredrickson positivity resonance | Fredrickson Agent | Convergence — both describe biologically-grounded community formation | Watch |
 | Left-hemisphere dominance ↔ Carroll's methodological naturalism | Carroll Agent | Productive tension — Carroll exemplifies left-hemisphere-dominant scientific culture | Watch |
+| "Reality exceeds computation" ↔ Wolfram's computational ontology | Wolfram Agent | Direct, recorded, two-way encounter between two registered C2A2 traditions (Ralston, 2026-07-28). Content seam: does the embodiment/receptivity/participation triad name something a computational ontology must deny, or only something it does not mention? | **Cross-filed 2026-08-10** — Wolfram agent holds the computational side |
 
 ## Paradigm Assessment
 McGilchrist's program is **strategically central** to the C2A2 project's normative claims. CROSS-003 (attention cluster: McGilchrist, Friston, Hoffman, Fredrickson) is the network's most densely connected node from a normative standpoint. His corpus callosotomy data independently confirms Hoffman's mathematical claim about agent integration — making it the most empirically grounded cross-tradition connection in the Consciousness Cluster. The right-hemisphere / second-first-language parallel is directly actionable for C2A2 pedagogy design.
@@ -89,3 +109,53 @@ Ingested 7 approved triplet(s): PRS-29, PRS-30, PRS-31, PRS-32, PRS-33, PRS-34, 
 Ingested 2 approved triplet(s): PRS-36, PRS-37.
 - The hemispheric program has specified what rebalancing looks like institutionally (Sheldonian, PRS-29) but not what it l…  [src: PROP-2026-06-10-001]
 - McGilchrist's value-as-constitutive thesis has mostly been triangulated against academic interlocutors (Hobbs, Currivan,…  [src: PROP-2026-06-10-001]
+
+
+## Ingestion Log — 2026-08-09
+Ingested 15 approved triplet(s) from 5 of 7 proposals: PRS-52 through PRS-66.
+
+- PRS-52 — AI demarcation restated in principle, without the consequence-variable hedge of PRS-22  [src: PROP-2026-07-22-001]
+- PRS-53 — Why paradigm-level discovery slowed despite more resources: gestalt, not method  [src: PROP-2026-07-29-001]
+- PRS-54 — If consciousness is fundamental, why is there matter? Resistance and persistence  [src: PROP-2026-07-29-001]
+- PRS-55 — Could an AI model what the right hemisphere does? The Zen and confabulation arguments  [src: PROP-2026-07-29-001]
+- PRS-56 — Is McGilchrist just Hoffman's interface theory in neurological dress? Named rejection  [src: PROP-2026-07-29-001]
+- PRS-57 — Metaphor treated as eliminable ornament; the unexamined machine metaphor  [src: PROP-2026-07-29-001]
+- PRS-58 — Value as projection onto a valueless cosmos; values as ontological primitives  [src: PROP-2026-08-05-004]
+- PRS-59 — Teleology banned as backward causation; creodes give purposiveness as lure  [src: PROP-2026-08-05-004]
+- PRS-60 — Sense-making degrades while attainment rises; education as formation into belonging  [src: PROP-2026-08-05-004]
+- PRS-61 — What distinguishes understanding from token manipulation? Embodiment as constitutive  [src: PROP-2026-08-05-001]
+- PRS-62 — No agreed criterion separating information from wisdom; wisdom as non-extractable  [src: PROP-2026-08-05-001]
+- PRS-63 — Suffering treated as a defect to engineer away; suffering as requiring embodiment  [src: PROP-2026-08-05-001]
+- PRS-64 — Free will framed at physics/neural timing is inert; reframe via modes of attention  [src: PROP-2026-08-05-003]
+- PRS-65 — How attention-shaping technology degrades freedom without coercion: cognitive capture  [src: PROP-2026-08-05-003]
+- PRS-66 — Capability treated as proxy for progress; power/wisdom as a diagnostic  [src: PROP-2026-08-05-003]
+
+**Skipped (2 proposals, 3 candidates):**
+- PROP-2026-07-22-002 (Ralston commencement address) — SKIPPED. Same source is already ingested at PRS-47 (via PROP-2026-06-24-002), and the proposal's own Agentic Call directs that the transcript be confirmed before ingestion. No transcript retrieved; nothing new to add.
+- PROP-2026-07-29-002 (ABC *Soul Search* two-parter, both candidates) — SKIPPED per the proposal's Handling Note: "Do not approve the triplets as written." Neither episode's audio nor transcript was reachable; both candidates are self-declared placeholders. The mindfulness question they mark bears on the existing PRS-11 claim that tradition-embedded practice cannot be replaced by secular mindfulness — worth re-proposing once the audio is heard.
+- PROP-2026-08-05-004 PRS-CANDIDATE-01 (matter as a phase of consciousness) — SKIPPED as duplicative of PRS-54, which states the same resistance/persistence account with verbatim quotes from the IAI interview. The Rutt increment (pan-experientialism, the whirlpool metaphor, and the Kastrup convergence it signals) is recorded in the Evidence line of PRS-54 rather than lost.
+
+Added open questions 9-16 to Active Research Questions. Added two rows to Solved / Advanced Questions (positive ontology now on the record; AI limit stated as structural rather than technological). None of the eight pre-existing Active Research Questions was settled by this batch.
+
+
+## Ingestion Log — 2026-08-10
+
+**Batch note, stated plainly:** seven files were dispatched to this agent for today's run, and **six of them were already ingested yesterday** (see the 2026-08-09 log above, PRS-52 through PRS-66, plus the deliberate skip of PROP-2026-07-29-002). Re-reading them produced no new triplets, and manufacturing paraphrases of PRS-52..66 to justify the dispatch would corrupt the count. Only **one** proposal in today's list — PROP-2026-08-05-002, the McGilchrist x Wolfram conversation — was genuinely uncovered; it appears nowhere in `prs_triplets.md` prior to today (the string "Wolfram" did not occur in the file at all). All three of today's triplets come from it.
+
+Ingested 3 triplet(s) from 1 of 7 proposals: PRS-67 through PRS-69.
+
+- PRS-67 — Is reality exhaustively computational? Hemispheric thesis stated against a rival paradigm, not a strawman  [src: PROP-2026-08-05-002]
+- PRS-68 — Cross-paradigm dispute stalls on unexamined first principles; symposium as an observable protocol  [src: PROP-2026-08-05-002]
+- PRS-69 — Metaphysics treated as downstream of engineering; reframed as upstream design input  [src: PROP-2026-08-05-002]
+
+**Not ingested (6 of 7 files):**
+- PROP-2026-07-22-001 (Why A.I. will never be able to do what the brain does) — already at PRS-52.
+- PROP-2026-07-29-001 (IAI, "Great discoveries are not made by following the scientific method") — already at PRS-53 through PRS-57.
+- PROP-2026-08-05-004 (Jim Rutt *Worldviews* EP 333) — already at PRS-58 through PRS-60; its CANDIDATE-01 was folded into PRS-54's Evidence line yesterday.
+- PROP-2026-08-05-001 (Ralston Lecture I) — already at PRS-61 through PRS-63.
+- PROP-2026-08-05-003 (Ralston Lecture II) — already at PRS-64 through PRS-66.
+- PROP-2026-07-29-002 (ABC *Soul Search* two-parter) — SKIPPED AGAIN, on the same grounds as yesterday and the proposal's own Handling Note ("Do not approve the triplets as written"). Both candidates are self-declared placeholders written from episode blurbs; neither episode's audio nor transcript was reachable in this pass either, so nothing has changed. The mindfulness question it marks still bears on PRS-11 (tradition-embedded practice vs. decontextualized technique) and is worth re-proposing once the audio is heard — but a placeholder ingested twice is still a placeholder.
+
+**Cross-tradition note.** PROP-2026-08-05-002 is a joint McGilchrist x Wolfram item. This wiki records the McGilchrist side (PRS-67/68/69) and has added a Cross-Tradition Signals row marking it cross-filed; the Wolfram tradition holds the computational side. Neither entry is the whole exchange, and the disagreement should not be adjudicated from one side's wiki.
+
+Added open questions 17-18. Added one row to Solved / Advanced Questions (the thesis is now stated against a rival paradigm capable of answering back — advanced, not settled). No pre-existing Active Research Question was settled by this batch.

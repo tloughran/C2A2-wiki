@@ -37,3 +37,14 @@ This is the point at which the contemplative literature's habitual first-person 
 **Why this matters beyond the two traditions.** The earlier entry in this file noted that Rohr may supply the *initiation mechanism* Stump's account leaves abstract. This run makes the debt more specific: Stump explains why the knowledge cannot be propositional, Rohr's exemplars show how a person is brought into a position to acquire it, and neither explains how the acquisition survives the exemplars' absence — which is the case for every tradition older than a lifetime.
 
 **Open question the wiki cannot yet answer.** Can second-personal knowledge be transmitted by a *text about* a person — a hagiography, a set of letters, Merton's journals? Stump's criteria appear to say no. The contemplative tradition's actual practice says it happens constantly. One of the two is wrong, and the wiki has no material adjudicating it.
+
+
+### 2026-08-09 — Second-personal knowing, stated twice — once analytically, once as a practice
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/approved/2026-08-02_rohr_reading-bible-lens-of-love-weekly-summary.md` (PROP-2026-08-02-001)
+
+**Why it sits at this intersection.** PRS-CANDIDATE-B holds that Scripture's dominant genre is biography, that revelation is second-personal and relational rather than propositional, and — via Barbara Brown Taylor — that what discernment delivered was 'a living relationship that they were free to embrace or flee', with the specifics left open. Stump's Franciscan/Dominican distinction is the analytic statement of the same thing: knowledge of persons is not reducible to knowledge that.
+
+**Synthesis claim.** Taylor adds one element Stump's account does not stress, and it is the load-bearing one: the *underdetermination of specifics* is presented as constitutive of the mode of knowing rather than as a limitation of it. Stump argues that second-personal knowledge is irreducible; Taylor's practice claims it is irreducible in a specific direction — it yields relation, not instruction, and expecting instruction is a category mistake about what was on offer. That gives the philosophical thesis a diagnostic: a mode of knowing that reliably returns relation and never returns a point estimate is second-personal by its output signature, not merely by its subject matter.
+
+**Open question the wiki cannot yet answer.** Can the output signature discriminate? Plenty of unreliable epistemic practices also fail to return specifics. Underdetermination is necessary for second-personal knowing on this account but plainly not sufficient, and neither tradition supplies the additional condition. Until it is supplied, the diagnostic cannot distinguish second-personal knowledge from an absence of knowledge — which is precisely the objection the analytic literature presses.

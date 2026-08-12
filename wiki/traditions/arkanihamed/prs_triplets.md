@@ -261,7 +261,35 @@ PRS-24:
   Evidence: §VI, verbatim: "the most physical observable — the correlator, obtained from the wavefunction via the Born rule — is both 'simpler' and more directly tied to flat-space scattering amplitudes than the wavefunction." Interpretive caution: the paper's claim is about *computational and analytic* structure, and reading it as an ontological priority claim is the proposer's extension, not the authors'. Flagged Medium for that reason and should be argued, not assumed, on ingestion.
 
 ---
-*Total PRS triplets: 27*
+PRS-25:
+  Problem: The angles of the CKM unitarity triangle land suspiciously close to simple fractions of π — (α, β, γ) ≈ (π/2, π/8, 3π/8) — but the triangle is a complicated function of the Yukawa matrices, so there has been no tractable route from that observation to a theory of flavour and CP violation.
+  Resource: "Nine-link textures" — a parametrization of the ten-dimensional flavour-data space by full-rank Y_u and Y_d carrying nine non-zero entries in total and a single CP-violating phase, which makes the space of candidate Yukawa structures discrete and enumerable rather than a continuous model-building search.
+  Solution: Fitting the ten parameters of all such textures to the flavour data makes the CP phases cluster tightly around multiples of π/8, supplying the direct link between the observed triangle angles and an underlying theory of flavour with spontaneous CP violation. Continues the same collaboration and the same target as PRS-18 (Arkani-Hamed, Figueiredo, Hall, Manzari), one rung deeper: from the mass hierarchy to the CP phase.
+  Date Added: 2026-08-09
+  Source: The Very Nearly Right Theory of Flavor (Arkani-Hamed, Figueiredo, Hall, Manzari; arXiv:2607.27315); PROP-2026-07-31-002
+  Confidence: High
+  Evidence: Abstract text as retrieved via search on 2026-07-31 — the angles are "very close to (π/2, π/8, 3π/8), simple fractions of π that are suggestive of an underlying theory linking flavor and spontaneous CP violation"; "when fitting the ten parameters of all such textures to the flavor data, the CP phases cluster tightly around multiples of π/8." **VERIFICATION GATE STILL OPEN (fail-loud):** the arXiv abstract page returned HTTP 429 on 2026-07-31 and could not be fetched on ingestion either (URL outside the retrieval provenance set, 2026-08-09). The abstract wording was consistent across two independent search queries, but the exact submission date within July 2026 and the verbatim abstract remain unconfirmed; `source_date` is month-precision only. Confirm against the live arXiv page before this entry is cited.
+
+PRS-26:
+  Problem: The program looks methodologically bifurcated — post-spacetime positive geometry on one side, TeV-scale flavour phenomenology on the other — and the wiki has carried that as an open coherence question at PRS-19 (Confidence: Speculative).
+  Resource: The texture construction itself: replacing a continuous model-building search with enumeration over a discrete combinatorial family (nine-link graphs on the Yukawa entries) and reading the physics off the resulting structure.
+  Solution: A second worked instance of combinatorics-first reasoning inside the *phenomenological* wing, strengthening the hypothesis that combinatorial structure — not spacetime intuition — is the unifying methodological signature across both wings. Recorded here as grounds for eventually upgrading PRS-19 from Speculative toward Medium; PRS-19 itself is left untouched, since one further instance is evidence for the hypothesis, not confirmation of it.
+  Date Added: 2026-08-09
+  Source: The Very Nearly Right Theory of Flavor (Arkani-Hamed, Figueiredo, Hall, Manzari; arXiv:2607.27315); PROP-2026-07-31-002
+  Confidence: Speculative
+  Evidence: The method is enumeration over discrete texture families with a single phase, structurally parallel to the discrete-locality "chain" reasoning of PRS-18 and to the surface-combinatorial reasoning of PRS-13/14. Internal caution carried forward from the proposal: this paper contains **no** post-spacetime content and must not be read as evidence about the amplituhedron program's status — only about the program's *method* and its author's continuing dual-track output.
+
+PRS-27:
+  Problem: Pre-empirical fundamental physics leans on "structural inevitability" / mathematical beauty as a selection criterion (PRS-04, PRS-16), which the Carroll tradition contests as insufficient for confirmation — but the criterion has been hard to operationalize from either side, because the standing test cases (amplituhedron, single-minus gluon amplitudes) have no data to adjudicate against.
+  Resource: A case in which an aesthetic signal — angles too close to simple fractions of π to look accidental — is not left as an aesthetic judgment but used to *generate* a constrained, enumerable, and fittable model class, which is then confronted with the measured flavour data.
+  Solution: A concrete template for making the inevitability heuristic accountable: beauty as a conjecture-*generation* mechanism whose output is then *evaluated* against data — the same generation/evaluation split identified in the LLM-assisted-conjecture case at PRS-16. This is the paired Carroll × Arkani-Hamed epistemology entry the Sewing Agent requested, and it supersedes the single-minus gluon paper as the anchoring example precisely because this case has a ten-parameter fit to argue about: Arkani-Hamed credits a structural near-coincidence as evidence of an underlying theory, Carroll's Bayesian standard asks what tangible explanatory gain the posited theory buys, and here the two can be adjudicated rather than merely contrasted.
+  Date Added: 2026-08-09
+  Source: The Very Nearly Right Theory of Flavor (Arkani-Hamed, Figueiredo, Hall, Manzari; arXiv:2607.27315); PROP-2026-07-31-002
+  Confidence: Medium
+  Evidence: The paper's framing is that the coincidence is "suggestive of an underlying theory," followed by a ten-parameter fit to flavour data rather than an appeal to elegance. Held at Medium rather than High because the adjudication is *available*, not *performed* — neither Arkani-Hamed nor Carroll has stated a verdict on this case, and the same verification gate flagged at PRS-25 applies to the quoted framing.
+
+---
+*Total PRS triplets: 28*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

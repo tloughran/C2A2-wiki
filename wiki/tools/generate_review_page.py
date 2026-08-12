@@ -301,7 +301,7 @@ function updateProgress() {{
 
 function submitDecisions() {{
   const lines = ['DECISIONS:'];
-  const pids = {[f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]!r};
+  const pids = {[p.get("proposal_id") or f'PROP-{run_date}-{i+1:03d}' for i, p in enumerate(proposals)]!r};
   pids.forEach(pid => {{
     const d = decisions[pid] || 'PENDING';
     const n = notes[pid] ? ' | ' + notes[pid] : '';

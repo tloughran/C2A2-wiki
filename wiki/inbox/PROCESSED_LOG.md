@@ -745,3 +745,63 @@ Network unchanged (no ingest): 279 PRS triplets · 90 cross-program connections 
 - PROP-2026-08-07-002 arkanihamed_correlators-simpler-than-wavefunctions -> arkanihamed PRS-21..PRS-24 (+4) [2026-08-08; FINDING-057, FINDING-061]
 - PROP-2026-08-07-003 rohr_job-mystery-of-suffering-week31 -> rohr PRS-34..PRS-37 (+4) [2026-08-08; FINDING-058, FINDING-059, FINDING-060]
 - PROP-2026-08-07-004 wright_ask-ntw-aug3-self-forgiveness-samaritans-ascension -> wright PRS-37..PRS-39 (+3) [2026-08-08; FINDING-058]
+
+## 2026-08-09 batch — BACKFILLED 2026-08-10
+
+**Why this section exists.** The 2026-08-09 ingestion pass wrote 80 PRS triplets across 12
+tradition files and never wrote a single line here. Because dispatch diffs `inbox/` against this
+log, all 40 files re-dispatched on 2026-08-10 and nine tradition agents independently
+re-read sources that were already ingested. Eight of them caught it and refused to duplicate;
+the refusal is why the counts below are correct rather than doubled. Backfilled from the
+`Date Added:` and `Source:` lines in each `traditions/*/prs_triplets.md`, which are the durable
+record. See the run report for the standing fix.
+
+- PROP-2026-07-21-001 hoffman_trace-institute-whitepaper -> hoffman PRS-28..PRS-33 (+6) [2026-08-09]
+- PROP-2026-07-21-002 hoffman_traces-of-consciousness-primary -> hoffman PRS-34..PRS-37 (+4) [2026-08-09]
+- PROP-2026-08-04-002 hoffman_trace-collaboration-program-noonautics -> hoffman PRS-38..PRS-39 (+2) [2026-08-09]
+- PROP-2026-07-28-00x hoffman_spacetime-headset-essay -> hoffman (+0) [2026-08-09; description-only, held as acquisition item Q18]
+- PROP-2026-07-22-005 carroll_mindscape-361-bassler-bacterial-communication -> carroll PRS-60 (+1) [2026-08-09; PENDING TRANSCRIPT]
+- PROP-2026-07-24-001 carroll_ama-july-2026-boltzmann-emergent-time -> carroll PRS-61..PRS-62 (+2) [2026-08-09]
+- PROP-2026-07-31-001 carroll_mindscape-362-bettencourt-cities -> carroll PRS-63..PRS-66 (+4) [2026-08-09]
+- PROP-2026-07-22-003 kastrup_ai-awakening-chandaria -> kastrup PRS-46..PRS-47 (+2) [2026-08-09]
+- PROP-2026-07-22-004 kastrup_timalsina-suffering-joy -> kastrup PRS-48..PRS-49 (+2) [2026-08-09]
+- PROP-2026-07-29-004 kastrup_caution-young-philosophers -> kastrup PRS-50..PRS-51 (+2) [2026-08-09]
+- PROP-2026-07-29-003 kastrup_spira-awakening-sorrow -> kastrup PRS-52..PRS-56 (+5) [2026-08-09]
+- PROP-2026-07-31-004 kastrup_seth-koch-psychedelic-metaphysics-debate -> kastrup PRS-57 (+1) [2026-08-09; session never viewed]
+- PROP-2026-08-05-006 kastrup_iai-europe-ai-hardware-sovereignty -> kastrup PRS-58..PRS-60 (+3) [2026-08-09]
+- PROP-2026-08-05-005 kastrup_odyssey-potari-awakening -> kastrup PRS-61..PRS-62 (+2) [2026-08-09]
+- PROP-2026-07-22-001 mcgilchrist_ai-never-brain -> mcgilchrist PRS-52 (+1) [2026-08-09]
+- PROP-2026-07-29-001 mcgilchrist_iai-scientific-method-panpsychism -> mcgilchrist PRS-53..PRS-57 (+5) [2026-08-09]
+- PROP-2026-08-05-004 mcgilchrist_jimrutt-333-worldviews -> mcgilchrist PRS-58..PRS-60 (+3) [2026-08-09]
+- PROP-2026-08-05-001 mcgilchrist_ralston-lecture1-understanding-understanding -> mcgilchrist PRS-61..PRS-63 (+3) [2026-08-09]
+- PROP-2026-08-05-003 mcgilchrist_ralston-lecture2-cognitive-freedom -> mcgilchrist PRS-64..PRS-66 (+3) [2026-08-09]
+- PROP-2026-07-29-00x mcgilchrist_abc-soul-search-two-parter -> mcgilchrist (+0) [2026-08-09 and 2026-08-10; placeholder candidates, no audio reachable, proposal's own Handling Note says do not approve as written]
+- PROP-2026-07-27-004 friston_self-orthogonalizing-attractor-networks -> friston PRS-37 (+1) [2026-08-09; candidate-01 was already PRS-30, same arXiv under two proposal ids]
+- PROP-2026-08-03-004 friston_intrepid-adversarial-review -> friston PRS-38..PRS-40 (+3) [2026-08-09]
+- PROP-2026-07-28-001 hawkins_heterarchy-thalamic-transform-explainer -> hawkins PRS-19..PRS-20 (+2) [2026-08-09]
+- PROP-2026-08-04-001 hawkins_bbc-artificial-human-llm-dead-end -> hawkins PRS-21..PRS-22 (+2) [2026-08-09]
+- PROP-2026-07-25-001 wolfram_theory-of-bugs -> wolfram PRS-48..PRS-49 (+2) [2026-08-09]
+- PROP-2026-08-01-001 wolfram_bigthink-well-observers-objective-reality -> wolfram PRS-50..PRS-52 (+3) [2026-08-09]
+- PROP-2026-07-31-002 arkanihamed_very-nearly-right-theory-of-flavor -> arkanihamed PRS-25..PRS-27 (+3) [2026-08-09; arXiv:2607.27315 unverified, third consecutive failed retrieval]
+- PROP-2026-07-26-002 rohr_contemplative-exemplars-weekly-summary -> rohr PRS-38..PRS-39 (+2) [2026-08-09]
+- PROP-2026-07-26-001 rohr_in-love-with-scripture -> rohr PRS-40..PRS-41 (+2) [2026-08-09]
+- PROP-2026-08-02-001 rohr_reading-bible-lens-of-love-weekly-summary -> rohr PRS-42..PRS-44 (+3) [2026-08-09]
+- PROP-2026-07-26-003 wright_ask-ntw-orthodox-church-icons-2john -> wright PRS-40..PRS-41 (+2) [2026-08-09; no verbatim quotation, no timestamp]
+- PROP-2026-08-06-002 fredrickson_loneliness-allostatic-interoceptive-aging -> fredrickson PRS-33..PRS-34 (+2) [2026-08-09]
+- PROP-2026-08-06-003 fredrickson_intrinsic-network-connectivity-induced-affect -> fredrickson PRS-35 (+1) [2026-08-09]
+- PROP-2026-08-06-001 stump_dewey-lecture-dilige-et-quod-vis-fac -> stump PRS-32 (+1) [2026-08-09; metadata only, primary text reported paywalled]
+
+## 2026-08-10 — daily run (new work)
+
+- PROP-2026-07-27-002 levin_intelligence-from-learnable-novelty -> levin PRS-72..PRS-73 (+2) [2026-08-10; FINDING-063]
+- PROP-2026-07-31-003 levin_thought-economics-continuum-of-mind -> levin PRS-74..PRS-77 (+4) [2026-08-10; FINDING-065]
+- PROP-2026-08-03-001 levin_cognitive-offloading-universal -> levin PRS-78 (+1) [2026-08-10; preprint unfetchable, Speculative]
+- PROP-2026-08-03-003 levin_platonic-morphospace-schindler -> levin PRS-79 (+1) [2026-08-10; transcript not obtained]
+- PROP-2026-08-03-002 levin_trajectory-stewarding-flame -> levin PRS-80..PRS-82 (+3) [2026-08-10; FINDING-065]
+- PROP-2026-08-05-002 mcgilchrist_ralston-wolfram-what-is-ai -> mcgilchrist PRS-67..PRS-69 (+3) [2026-08-10; joint item, promotional copy only]
+- PROP-2026-08-05-002 wolfram_ralston-wolfram-what-is-ai -> wolfram PRS-53..PRS-54 (+2) [2026-08-10; Wolfram side of the joint item; FINDING-064]
+- PROP-2026-08-06-001 stump_dewey-lecture-dilige-et-quod-vis-fac -> stump PRS-33..PRS-38 (+6) [2026-08-10; RE-EXTRACTED against SLU public full text; disconfirmed the withheld 08-09 candidate; FINDING-067]
+- PROP-2026-08-06-002/003 fredrickson_(both papers, re-read against the grief boundary test) -> fredrickson PRS-36..PRS-38 (+3) [2026-08-10; FINDING-066, FLAG-019]
+- PROP-2026-07-22-003 + PROP-2026-07-29-003 kastrup_(synthesis, answering FINDING-062) -> kastrup PRS-63 (+1) [2026-08-10; FINDING-068]
+- PROP-2026-07-24-001 carroll_ama-july-2026 (re-read; Hoffman contact was in Cross-Tradition Signals only, invisible to candidate-driven ingest) -> carroll PRS-67 (+1) [2026-08-10]
+- PROP-2026-07-22-002 mcgilchrist_commencement-2026 -> mcgilchrist +0 triplets [2026-08-11; HELD at the verification gate the proposal and Sewing Agent both set: no transcript or recording located. Searched channelmcgilchrist.com and ralston.ac; the cited URL /chancellor-mcgilchrist-commencement-address-2026/ did not appear in any search result and could not be retrieved, and the site's own "Iain at Ralston" page (modified 2025-12-30) does not mention a 2026 address. Date discrepancy to carry: Ralston College's own post dates the installation-and-conferral ceremony 2026-05-09, so the proposal's source_date 2026-06-21 is most likely a publication date for a recording of that May event, not the delivery date. RE-OPEN CONDITION: a transcript or recording becomes available. Do not promote the Speculative PRS-CANDIDATE-01 without it.]

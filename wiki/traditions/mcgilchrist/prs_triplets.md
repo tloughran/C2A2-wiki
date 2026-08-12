@@ -471,4 +471,184 @@ PRS-51:
   Confidence: Speculative
   Evidence: Reported claim that atheist views of consciousness are "wholly incoherent."
 
-*Total PRS triplets: 51*
+---
+PRS-52:
+  Problem: This wiki's existing AI record (PRS-22/23/24) frames machine consciousness as a *consequence variable* of one's theory of consciousness. That hedge makes the demarcation hostage to a metaphysical prior and leaves no standalone line between what AI can and cannot do.
+  Resource: A titled, standalone talk on McGilchrist's own channel asserting the limit in principle — right-hemisphere attention is embodied, contextual, participatory, and lives in real temporal flow, whereas AI proceeds by decomposition and recombination and so instantiates only the left-hemisphere re-presentational mode.
+  Solution: The demarcation is restated as structural rather than technological and without the theory-relative hedge: AI can indefinitely extend left-hemisphere re-presentation but cannot access the right-hemisphere disclosure of a living whole. This raises the program's falsifiability stakes — an unhedged "never" is refutable in a way "it depends on your theory of consciousness" is not.
+  Date Added: 2026-08-09
+  Source: Why A.I. will never be able to do what the brain does; PROP-2026-07-22-001
+  Confidence: Medium
+  Evidence: Title and framing of the 20:47 talk published 2026-07-14 on channelmcgilchrist.com. No transcript or audio was retrieved in the proposal pass, so the argument's internal steps are inferred from the title plus continuity with the Closer to Truth (May 2026) position already recorded at PRS-22. The *escalation* (consequence-variable to in-principle "never") is read directly off the title and is the load-bearing new datum.
+
+---
+PRS-53:
+  Problem: If scientific progress is driven by method — reductive analysis, reason, evidence — why have paradigm-level advances slowed since roughly the 1970s despite vastly greater resources?
+  Resource: McGilchrist's *gestalt* account of discovery: the great discoveries "were not made by linear paths of logic or algorithms" but by suddenly seeing "a whole that is a form irreducible to its parts without loss," with Einstein as the canonical case; paired with an institutional diagnosis (top-heavy bureaucracy, papers with tens of thousands of authors versus Thomson discovering the electron alone) as the sociological signature of left-hemisphere dominance.
+  Solution: Method is not the engine of discovery but its bookkeeping; analysis yields information that is only useful "when it's put back into the context of the whole." Progress therefore requires institutionally protecting right-hemisphere conditions — flexibility, imagination, "the small skiff over the galleon" — not more procedure.
+  Date Added: 2026-08-09
+  Source: Great discoveries are not made by following the scientific method (IAI); PROP-2026-07-29-001
+  Confidence: High
+  Evidence: "most discoveries in science and in mathematics — the great discoveries — are not made by following the scientific method at all... They were made by suddenly seeing a gestalt"; and "up until about the 1970s there were a whole lot of Nobel Prizes in science and it made many leaps forward. But more recently it hasn't."
+
+---
+PRS-54:
+  Problem: If consciousness is fundamental, why is there matter at all? Idealist and panpsychist positions are routinely charged with having no account of why the physical world shows up as resistant and durable rather than dreamlike.
+  Resource: McGilchrist's resistance/persistence argument — matter offers consciousness two things it does not have on its own: resistance ("without resistance, *anything* goes. It's much too vague") and persistence ("without persistence, everything *goes*"), both required for any act of creation. The phase analogy (liquid water / ice / invisible vapour, none resembling the others, all water) answers the "matter doesn't look like consciousness" objection.
+  Solution: Matter is neither a second substance nor an illusion but a *phase* of consciousness, selected for by what creation requires. Consciousness is the ontological primitive; matter is how it achieves constraint and duration.
+  Date Added: 2026-08-09
+  Source: Great discoveries are not made by following the scientific method (IAI); PROP-2026-07-29-001
+  Confidence: High
+  Evidence: "I am a panpsychist... consciousness was never derived from matter... it's an ontological primitive... what we call matter is a way in which consciousness may manifest itself"; "matter offers two things that consciousness on its own doesn't. One is resistance, and the other is persistence." Corroborated independently by the Jim Rutt *Worldviews* episode (PROP-2026-08-05-004), which reports the same resistance/persistence account together with pan-experientialism and the whirlpool metaphor for individual consciousness within a broader field. NOTE a live tension with PRS-25, where McGilchrist was recorded distinguishing his position *from* panpsychism; here he self-labels as a panpsychist. Whether that is a shift, a terminological difference, or an inconsistency is unresolved and should not be smoothed over.
+
+---
+PRS-55:
+  Problem: Large language models plainly perform left-hemisphere tasks well. Could an AI system be built that models what the right hemisphere does?
+  Resource: The Zen argument — the right hemisphere's work is precisely the recognition "that things are not best structured according to principles," so any procedure for reaching it defeats itself — anchored neurologically in the right superior temporal gyrus and sulcus as the site of insight; plus the confabulation argument, that AI's failure modes (making things up, unshakeable certainty) are the *clinical signature of right-hemisphere damage*, where the left hemisphere runs unchecked.
+  Solution: No — not as a matter of current technology but of structure. A self-referring system can only produce repeats of what it already knows, and the pathologies of a self-referring system are already visible in both AI output and in left-dominant human culture.
+  Date Added: 2026-08-09
+  Source: Great discoveries are not made by following the scientific method (IAI); PROP-2026-07-29-001
+  Confidence: High
+  Evidence: "I don't think that can ever happen"; "making stuff up and thinking that you're always right, which are both features of people with right hemisphere damage relying on the left hemisphere... It's called confabulation."
+
+---
+PRS-56:
+  Problem: If both McGilchrist and Hoffman hold that our ordinary perceptual world is not reality-as-it-is, is McGilchrist's position simply Hoffman's interface theory in neurological dress?
+  Resource: McGilchrist's explicit, named rejection — Hoffman's padded-cell/dials picture is not a description of perception but "a fair description of the *left hemisphere*." The right hemisphere is "like a room with a window on the world" and is "at least in touch with the experiential world"; its test of an idea is "Does this actually add up? Is this anything to do with the world as we know it?"
+  Solution: Interface/dashboard models are correct as accounts of one hemisphere's construal and wrong as accounts of perception simpliciter. The disagreement localizes precisely: not *whether* representation occurs, but whether representation exhausts contact with the real.
+  Date Added: 2026-08-09
+  Source: Great discoveries are not made by following the scientific method (IAI); PROP-2026-07-29-001
+  Confidence: High
+  Evidence: "I don't agree with Donald Hoffman that we're just like sitting in a padded cell reading off dials, but that is a fair description of the left hemisphere." First source in this wiki where McGilchrist rejects Hoffman by name; extends the McGilchrist-Kastrup representation/participation dispute (7 April 2026 *With Reality in Mind*) into a three-way.
+
+---
+PRS-57:
+  Problem: Scientists often treat metaphor as an ornament to be eliminated from rigorous description. What follows if that is false?
+  Resource: The claim that "anything that is complex and *sui generis* can only be understood by a metaphor," so metaphors are inevitable and the only live question is which one — and that a discipline believing itself metaphor-free is running the machine metaphor unexamined, which is "insidious... partly because it isn't recognized as such."
+  Solution: Deliberate metaphor-selection becomes a first-order methodological act. McGilchrist proposes music and water as replacements for the machine, on the grounds that they carry connectivity, flow, and phase-change, which the machine cannot.
+  Date Added: 2026-08-09
+  Source: Great discoveries are not made by following the scientific method (IAI); PROP-2026-07-29-001
+  Confidence: Medium
+  Evidence: "if they think they haven't got a metaphor, they've got a metaphor of the machine nonetheless... So I do think it's very important that we change the metaphor."
+
+---
+PRS-58:
+  Problem: Value is standardly treated as projected onto a valueless universe by valuing subjects — which makes the normativity of inquiry itself unaccountable, and leaves PRS-42's transcendentals-as-disclosed thesis without an answer to the derivation demand.
+  Resource: Values as ontological primitives, with an explicit distinction drawn between *value* (singular) and *values* (plural), stated under the *Worldviews* protocol that presses each guest for an ontology rather than a method.
+  Solution: Value is placed among the furniture of the world rather than derived from it, which dissolves the derivation problem by denying its premise; the value/values distinction blocks the obvious objection that this relativizes ethics to cultures. This is the ontological form of the claim PRS-42/43 record in attentional form.
+  Date Added: 2026-08-09
+  Source: EP 333 Worldviews: Iain McGilchrist (The Jim Rutt Show); PROP-2026-08-05-004
+  Confidence: High
+  Evidence: Episode description: "values as ontological primitives that cannot be derived from a valueless cosmos, the distinction between value and values." A full transcript is published for this episode, but the proposal cited the description only; the transcript should be read before the value/values distinction is quoted in print.
+
+---
+PRS-59:
+  Problem: Teleology is rejected in biology because it is read as backward causation or as predetermined endpoints.
+  Resource: Waddington's creodes (canalized developmental pathways) as a metaphor for teleology as a *lure* rather than a determinant.
+  Solution: A form of purposiveness compatible with contingency — outcomes are attracted rather than fixed — which lets teleological language re-enter without the metaphysics that got it banned.
+  Date Added: 2026-08-09
+  Source: EP 333 Worldviews: Iain McGilchrist (The Jim Rutt Show); PROP-2026-08-05-004
+  Confidence: Medium
+  Evidence: Episode description: "teleology as a lure rather than determinism using Waddington's creodes metaphor." Description-level evidence only in this pass.
+
+---
+PRS-60:
+  Problem: Collective sense-making in Western societies has degraded even as measured educational attainment has risen — a pattern no standard account of education predicts.
+  Resource: The three elements of a fulfilled life (belonging to a coherent social group, belonging in nature, belonging in the cosmos) set against the information/wisdom distinction.
+  Solution: Education is reframed as formation into forms of belonging rather than transmission of information, which explains why more of the latter does not produce more of the former. Supplies the *content* that PRS-47's institutional account of formation leaves as a placeholder.
+  Date Added: 2026-08-09
+  Source: EP 333 Worldviews: Iain McGilchrist (The Jim Rutt Show); PROP-2026-08-05-004
+  Confidence: Medium
+  Evidence: Episode description: "the three elements of a fulfilled life (belonging to a coherent social group, belonging in nature, and belonging in the cosmos), the breakdown of collective sense making despite increased education levels, the decline in the caliber of political leaders, the distinction between information and wisdom."
+
+---
+PRS-61:
+  Problem: Computational accounts treat understanding as information processing, but give no account of what distinguishes understanding from the manipulation of tokens.
+  Resource: Embodiment as a constitutive (not incidental) condition of intelligence — intelligence occurs within a complex environment and depends on the unconscious, intuitive, and procedural substrate; Wittgenstein's "the human body is the best picture of the human soul."
+  Solution: Understanding is relocated from representation to embodied participation, so that a disembodied system can in principle replicate outputs without ever instantiating understanding. This is the *positive* thesis behind the negative demarcations at PRS-18/22/52 — it says what understanding is, not only what AI lacks.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture I: Do We Really Understand; PROP-2026-08-05-001
+  Confidence: High
+  Evidence: Ralston's published lecture description: McGilchrist "reminds us of the importance of the body, drawing on Wittgenstein's notion that 'the human body is the best picture of the human soul.' Intelligence, he argues, is necessarily embodied, taking place within a complex environment that relies upon much of what is unconscious, intuitive, or procedural."
+
+---
+PRS-62:
+  Problem: A civilization can accumulate information at accelerating rates while its capacity for wisdom declines — but there is no agreed criterion separating the two.
+  Resource: The information/wisdom distinction developed through literature, theology, music, and myth rather than through a technical definition (Forster's *The Machine Stops*, Bohm, Marcel, Steiner, Heidegger, Arendt, Pieper, Frankl are cited in the lecture).
+  Solution: The criterion offered is participatory rather than propositional — wisdom is what cannot be extracted from its embodied and relational context, which is exactly what computation strips away.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture I: Do We Really Understand; PROP-2026-08-05-001
+  Confidence: Medium
+  Evidence: Ralston's description: "a civilization unable to distinguish information from wisdom may ultimately lose sight of what it means to be human at all." The published works-cited list includes Pieper, Steiner, Heidegger, Arendt, and Frankl.
+
+---
+PRS-63:
+  Problem: Suffering is treated in most modern frameworks as a defect to be engineered away; a disembodied intelligence would have no purchase on it at all.
+  Resource: Suffering as requiring embodiment, and as playing a role in the fulfillment of a human life.
+  Solution: Suffering is repositioned from malfunction to condition of a fulfilled life — which, if right, means an unembodied system is excluded not only from understanding but from the goods that understanding serves.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture I: Do We Really Understand; PROP-2026-08-05-001
+  Confidence: Medium
+  Evidence: Ralston's description: "suffering requires embodiment and, while it may not be something we seek out, it plays a profound role in the fulfillment of a human life and may ultimately arrive as a gift."
+
+---
+PRS-64:
+  Problem: Free will is standardly framed as a question about determinism at the level of physics (Laplace) or neural timing (Libet), which leaves it undecidable and practically inert.
+  Resource: Reframing via modes of attention — the forms of attention that compose our engagement with the world, informed by Stapp's quantum treatment and by Kant, rather than by a causal-closure argument.
+  Solution: Freedom is relocated from "could I have done otherwise" to "what am I able to attend to" — a question that is empirically tractable and that can be enlarged or degraded by culture and technology.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture II: AI and Cognitive Freedom; PROP-2026-08-05-003
+  Confidence: Medium
+  Evidence: Ralston's published description: "Dr Iain McGilchrist examines free will, consciousness, and the forms of attention that compose our engagement with the world"; the works-cited list names Henry Stapp, Laplace, Libet, and Kant. The Stapp-inflected quantum treatment of free will is contested physics and should not stand unchallenged in this wiki.
+
+---
+PRS-65:
+  Problem: If freedom is a property of attention, then a technology that shapes attention at scale is a political instrument — and there is no existing account of how it degrades freedom short of overt censorship.
+  Resource: The link drawn between education, totalitarianism, and the symbolic imagination (Blake, Jung, Aeschylus's *Prometheus Bound*).
+  Solution: A mechanism of unfreedom that requires no coercion — narrowing the range of available attention narrows the space of thinkable alternatives, so cognitive capture precedes and enables political capture. This supplies the non-coercive counterpart to PRS-46's account of censorship as left-hemisphere governance, and names the concept ("cognitive freedom") the earlier entry lacked.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture II: AI and Cognitive Freedom; PROP-2026-08-05-003
+  Confidence: Medium
+  Evidence: Ralston's description: McGilchrist moves "through quantum physics and the problem of free will to education, totalitarianism, and the symbolic imagination," arguing that "we ultimately risk the very habits of thought and perception upon which truth, freedom, and human flourishing depend."
+
+---
+PRS-66:
+  Problem: Technological capability is routinely treated as a proxy for civilizational progress.
+  Resource: The power/wisdom and achievement/understanding distinctions, applied as a diagnostic rather than as a lament.
+  Solution: Progress claims are made falsifiable in principle — one asks whether a given advance enlarges or narrows the habits of attention it depends on, rather than whether it increases capability.
+  Date Added: 2026-08-09
+  Source: AI and the Battle for the Soul — Lecture II: AI and Cognitive Freedom; PROP-2026-08-05-003
+  Confidence: Speculative
+  Evidence: Ralston's description: "When we mistake power for wisdom or scientific achievement for genuine understanding, we ultimately risk the very habits of thought and perception upon which truth, freedom, and human flourishing depend." Coded Speculative on the proposal's own caution: the falsifiability framing is an inference from the lecture summary, not a claim the summary attributes to McGilchrist.
+
+---
+PRS-67:
+  Problem: Is reality exhaustively computational? Every prior statement of the hemispheric thesis in this wiki argues against a generic "reductionism"; none states it against a fully articulated computational ontology that has its own account of why nature looks complex. If reality *is* exhaustively computational, right-hemisphere "presence" is at best a useful phenomenology and at worst an artefact.
+  Resource: A moderated, on-the-record encounter with Stephen Wolfram in which McGilchrist deploys the embodiment/receptivity/participation triad as an *ontological* claim rather than a psychological one, against Wolfram's simple-rules-underlying-complexity program.
+  Solution: Computational adequacy of description is separated from ontological completeness — reality has a constitution that computation models without exhausting. This is the first entry in this wiki where the demarcation of PRS-52/55/61 is put to a rival paradigm capable of answering back rather than to a strawman reductionism.
+  Date Added: 2026-08-10
+  Source: AI and the Battle for the Soul — Conversation with Stephen Wolfram: What is Artificial Intelligence?; PROP-2026-08-05-002
+  Confidence: Medium
+  Evidence: Ralston's published description: "Wolfram shares his vision through the lens of computation, looking for the simple rules underlying complexity in the natural world... McGilchrist makes the case that reality exceeds computation, suggesting that consciousness is grounded in embodiment, receptivity, and participation." Description-level evidence only in this pass; no transcript retrieved. The "irreducible constitution" phrasing is the proposal's gloss, not a quoted McGilchrist formulation, and the ontological-rather-than-psychological reading is an inference — which is why this is Medium and not High. **Cross-filed:** this is a joint McGilchrist x Wolfram item; the Wolfram tradition holds the computational side, and neither entry should be read as the whole exchange.
+
+---
+PRS-68:
+  Problem: Cross-paradigm disagreement in philosophy of mind usually stalls because each side argues from its own first principles and neither examines the other's. C2A2 asserts that mature cross-tradition engagement is possible but has few recorded instances of it actually occurring between two of its own registered traditions.
+  Resource: The Ralston symposium format itself — a moderated, unhurried, public encounter in which each thinker interrogates the other's foundational assumptions, described by the host as "less a debate than an encounter."
+  Solution: A worked protocol for rival-tradition exchange: mutual examination of assumptions under conditions of intellectual charity, with no requirement that either party concede. This is a candidate *measurement corpus* for the inter-tradition study, not only a source of doctrine — it is the second-first-language competence of PRS-03 and PRS-06 in an observable instance rather than as an ideal.
+  Date Added: 2026-08-10
+  Source: AI and the Battle for the Soul — Conversation with Stephen Wolfram: What is Artificial Intelligence?; PROP-2026-08-05-002
+  Confidence: Medium
+  Evidence: Ralston's description: "The two thinkers do not remain at the level of disagreement, but examine one another's fundamental assumptions with a rare seriousness and intellectual charity. The resulting conversation is less a debate than an encounter between two of the most ambitious attempts to understand reality in our time." NOTE the evidentiary weakness: this is the *host's promotional framing of its own event*, not an independent assessment, and "intellectual charity" is exactly what such copy always claims. The triplet is worth recording because the transcript is a testable object — whether either party can state the other's position from inside it is checkable once the audio is coded — but the claim that the protocol succeeded is not yet established.
+
+---
+PRS-69:
+  Problem: Metaphysical commitments are usually treated as downstream of, and irrelevant to, engineering practice — which leaves the hemispheric program with cultural-critical standing but no purchase on how systems actually get built.
+  Resource: The observation that AI development now forces once-academic questions (what is understanding, what is a person, what is real) into concrete design decisions.
+  Solution: Metaphysics is reframed as an upstream input to technology policy and system design rather than commentary on it — which, if accepted, makes the demarcation claims at PRS-52/55/61/67 consequential for practice rather than only for interpretation.
+  Date Added: 2026-08-10
+  Source: AI and the Battle for the Soul — Conversation with Stephen Wolfram: What is Artificial Intelligence?; PROP-2026-08-05-002
+  Confidence: Speculative
+  Evidence: Ralston's description: "Questions once confined to philosophical inquiry now play an increasingly practical role in the development of artificial intelligence... our technological future depends not only on the capabilities of machines, but on the ideas we hold concerning the human person, knowledge, and what is ultimately real." Coded Speculative because this is the *event's* framing rather than a claim the description attributes to McGilchrist in his own voice, and because the claim is close to a truism in this genre — it earns its keep only if the conversation shows a specific design decision turning on a specific metaphysical commitment, which the description does not report.
+
+*Total PRS triplets: 69*

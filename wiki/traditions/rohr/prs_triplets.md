@@ -351,4 +351,68 @@ PRS-37:
   Confidence: Medium
   Evidence: Friday, verbatim: "We have been able to manufacture a kind of 'ascent' unlike that of our ancestors... Now we are unpracticed and afraid of all kinds of suffering — big and small."
 
-*Total PRS triplets: 37*
+---
+PRS-38:
+  Problem: Are action (justice work, activism) and contemplation (prayer, inner work) two competing vocations that must be balanced against each other, or one integrated practice? The existing Rohr triplets (PRS-14, PRS-18 to PRS-20) answer only in one direction — contemplation as the stable fulcrum that makes action non-reactive. They do not say whether action itself has contemplative standing.
+  Resource: Thurman's "inner altar" — spiritual disciplines are whatever removes the barriers to communion, which makes activism qualify *as* a discipline rather than as its application; Merton's rejection of contemplation-as-withdrawal ("the contemplative life... cannot be a mere withdrawal... a turning of one's back on the world"); and Rohr's framing line that the load-bearing word in the Center for Action and Contemplation's name "is not Action nor is it Contemplation; it's the word *and*."
+  Solution: Dissolve the binary in both directions at once. Contemplative interiority and outward action are one practice, each the condition of the other's authenticity — so action is not merely *grounded by* contemplation (PRS-14) but is itself a mode of it. Supplies the tradition with a concrete exemplar roster carrying the claim: Dorothy Day, Mother Teresa, Thomas Merton, Howard Thurman, Etty Hillesum, Thea Bowman.
+  Date Added: 2026-08-09
+  Source: Twentieth-Century Contemplative Exemplars: Weekly Summary (CAC Daily Meditations); PROP-2026-07-26-002
+  Confidence: High
+  Evidence: Rohr's framing line verbatim ("it's the word *and*"), plus the Merton and Thurman quotations assembled in the summary. Note the standing weekly-summary caveat: Rohr authors the frame, the exemplar quotations are curated from other voices.
+
+PRS-39:
+  Problem: How is faith actually sustained and transmitted between persons — by argument and evidence, or by some other mechanism? PRS-30 establishes that *belovedness* propagates person-to-person; it does not establish that *belief* does.
+  Resource: Warren's practice question "Who are the believers that make you want to believe?" — the faithfulness of surrounding persons as "a walking, breathing apologetic" whose "voices carry my own... their gratitude stands in for my reluctance."
+  Solution: Model belief-formation as second-personal and communal — faith is caught by immersion in exemplary persons rather than reached by individually reasoned assent. This extends PRS-30's locality-of-propagation claim from grace to epistemic commitment: what propagates strictly person-to-person is not only love but the standing to believe. A community can therefore hold a member's faith on their behalf during a period in which they cannot hold it themselves.
+  Date Added: 2026-08-09
+  Source: Twentieth-Century Contemplative Exemplars: Weekly Summary (CAC Daily Meditations); PROP-2026-07-26-002
+  Confidence: Medium
+  Evidence: Tish Harrison Warren, *What Grows in Weary Lands* (Convergent, 2026), 135-136, quoted at length as the week's practice. The generalization from Warren's devotional formulation to a claim about belief-formation is ours, not hers.
+
+PRS-40:
+  Problem: Is Scripture a repository of propositions about God, and if not, what is it — and what does the answer imply about how it should be read? PRS-8 and PRS-10 settle the *method* (context-first reading held together with the cosmic-Christ pattern) without settling what kind of thing is being read.
+  Resource: Rohr's Vatican II gloss — divine revelation is "not God disclosing ideas about God but actually God disclosing Godself"; Scripture as "love-making, an actual mutual exchange of being and intimacy"; the Risen Christ who "starts us off by revealing the human wounds of God, God's solidarity with human suffering," so that divine self-disclosure precedes and invites the reader's reciprocal self-disclosure.
+  Solution: Recast biblical revelation as second-personal self-disclosure between persons rather than information transfer. Right reading is therefore participatory — it requires the reader's own vulnerability as a condition of uptake — and the order matters: God's woundedness is disclosed first, which is what makes reciprocal disclosure safe rather than exposing.
+  Date Added: 2026-08-09
+  Source: In Love with Scripture (CAC Daily Meditations, Week 30 opening); PROP-2026-07-26-001
+  Confidence: Medium
+  Evidence: Direct claims in the meditation, adapted from Rohr, *Essential Teachings on Love* (Orbis, 2018), 76-77. The Vatican II citation is Rohr's gloss, not a quoted conciliar text.
+
+PRS-41:
+  Problem: What structural condition makes love — divine or human — possible at all? PRS-27 establishes that the creature's *inability to fully reciprocate* is generative rather than defective, but treats the asymmetry as one-sided: the finite party lacks, the infinite party does not.
+  Resource: The "two inflated balloons" argument — "Fullness or complete self-satisfaction in a person cannot permit love because there are no openings, no give-and-take, and no deep hunger"; "a mutually admitted emptiness is the ultimate safety net for all love"; plus the scriptural presentation of God as "needing" us and "jealous" for our love (Ex 20:5; 34:14).
+  Solution: Generalize PRS-27's asymmetry into a symmetric structural condition. Lack, hunger, perspective-limitation are not defects to be overcome but the enabling openings through which give-and-take runs — and the condition is *mutual*, applying to the divine party as Scripture presents it. Maps directly onto the Summa 2026 thesis that perspective-limitation individuates conscious agents and loving unity is the telos: the limitation is not the obstacle to the telos but its precondition.
+  Date Added: 2026-08-09
+  Source: In Love with Scripture (CAC Daily Meditations, Week 30 opening); PROP-2026-07-26-001
+  Confidence: Medium
+  Evidence: Explicit argument in the text, with Ex 20:5 / 34:14 as Rohr's scriptural warrant. The reading of divine "need" as a genuine structural claim rather than anthropomorphic accommodation is the weak point — Rohr does not adjudicate it, and a Thomist (Stump) would resist it.
+
+PRS-42:
+  Problem: When two philologically defensible readings of a text conflict, what non-arbitrary criterion selects between them? Authorial intent, canon, and tradition each underdetermine the choice, and every competing party can claim to be using Scripture "in a God-affirming way."
+  Resource: The mercy-over-sacrifice rule (Beck, from Hosea 6:6 as Jesus deploys it at Matt 9:13 and 12:7) — at a hermeneutical fork, read as Jesus read — generalized by Rohr into a test on the *use* of a text rather than on its content: does this reading serve life, love, growth, wisdom, and the good of God or others? Woodley supplies the failure condition (scripture deployed for exclusion); McLaren the trajectory framing (readings that either betray or extend the kingdom arc).
+  Solution: Relocate interpretive adjudication from the semantics of the text to the effects of the reading on the community that holds it. A reading that produces exclusion is thereby shown to have failed, independent of whether its philology is defensible. This gives the Rohr tradition its hermeneutic as a *decision procedure* rather than a sentiment, which is what PRS-8 and PRS-10 left open.
+  Date Added: 2026-08-09
+  Source: Reading the Bible Through a Lens of Love: Weekly Summary (CAC Daily Meditations, Week 30); PROP-2026-08-02-001
+  Confidence: Medium
+  Evidence: Wednesday (Beck) states the fork-in-the-road rule explicitly; Monday (Rohr) supplies the insufficiency premise; Thursday (Woodley) the failure condition. **Standing tension, not to be averaged:** this relocates adjudication to a reading's effects, where Wright's critical realism holds that second-temple context constrains meaning prior to and independent of the reader's ethical posture. Both cannot be the final court.
+
+PRS-43:
+  Problem: If divine guidance were propositional it would be extractable by lookup, and it demonstrably is not — people who treat Scripture as an answer key for concrete decisions come away empty. PRS-40 establishes that revelation is self-disclosure rather than information transfer; it does not explain why the *specifics* of guidance come back underdetermined.
+  Resource: Taylor's observation that Scripture's dominant genre is biography — accounts of particular persons in particular relationships with God — together with her own discernment outcome, in which what was received was not an instruction but the conviction of being loved and called to love back, with the specifics left open.
+  Solution: The narrow increment over PRS-40: underdetermination of specifics is a *feature of the mode of knowing*, not a deficiency in the text. Because the genre is biography rather than oracle, reading others' accounts cannot substitute for entering the relationship — it can only model what such a relationship looks like. A text that returned point-estimate instructions would thereby have failed to be the kind of text it is.
+  Date Added: 2026-08-09
+  Source: Reading the Bible Through a Lens of Love: Weekly Summary (CAC Daily Meditations, Week 30 Practice); PROP-2026-08-02-001
+  Confidence: Medium
+  Evidence: Barbara Brown Taylor, *Mixed Blessings* (Cowley, 1998), 107-109, quoted as the week's practice. **Guest-voice caveat:** Rohr authors only Sunday and Monday of this week; this rests on Taylor under Rohr's editorial curation, treated as near-primary because the CAC Daily Meditations are Rohr's primary publication channel and the curation is itself his conceptual work.
+
+PRS-44:
+  Problem: "Love" is too elastic to function as the adjudicating criterion PRS-42 makes it, unless it has an independent operational marker. Without one the criterion is circular: the reading that serves love is the loving reading.
+  Resource: Lewis's reading of the Good Samaritan — love crosses borders and boundaries, makes new cultural rules, cares for the stranger, and turns strangers into friends.
+  Solution: Operationalize love as boundary-crossing that converts an out-group member into a second-personal relation. This makes PRS-42 testable rather than circular — one can ask of a reading whether it moves anyone across a boundary — and connects Rohr's hermeneutic to the C2A2 network's central concern with what happens when perspectives are richly exposed to one another.
+  Date Added: 2026-08-09
+  Source: Reading the Bible Through a Lens of Love: Weekly Summary (CAC Daily Meditations, Week 30); PROP-2026-08-02-001
+  Confidence: Speculative
+  Evidence: Tuesday (Lewis). **The operationalization is the proposal's inference, not Lewis's stated claim, and is flagged as such.** Lewis describes what love does; the move to "therefore this is the diagnostic test for whether a reading is loving" is ours. Same guest-voice caveat as PRS-43.
+
+*Total PRS triplets: 44*

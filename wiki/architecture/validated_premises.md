@@ -4035,3 +4035,148 @@ this register too.
     directly relevant and is confirmed again: this run exceeded both the per-task and session
     budgets, and the twenty result files it had to read total ~264 KB.
 --------------------------------------------------------------------------------
+
+
+================================================================================
+## 2026-08-10 — 15c cycle (3 premises minted: PREMISE-150..152)
+
+**Why three premises after a cycle that minted none.** All three are cases where 15a and 15b, searching
+independently, landed on the SAME literature and drew the SAME conclusion. The apparent for/against
+opposition in the returns is an artefact of the items being written as defective premises: 15a supported
+the corrective, 15b challenged the defect, and both were describing one finding. Where the two directions
+genuinely diverged, the item went to MONITOR or REVISE, not here.
+
+PREMISE-150:
+  Date validated: 2026-08-10
+  Source item: PRESUMPTION-729
+  Item type: PRESUMPTION (unstated — extra weight: the system was unaware it was assuming this)
+  Statement: A batch of defects that a detector failed to catch bounds THE DETECTOR'S COVERAGE, not
+    merely that batch. A high adequacy score and a confirmed missed-defect class co-occur mechanistically
+    and are not in tension; the score is computed over what the detector can see.
+  Supporting evidence (15a, SUPPORTED/Strong): mutation-testing literature — Trail of Bits (2025), "Use
+    mutation testing to find the bugs your tests don't catch"; test-adequacy survey arXiv:2212.06118.
+  Challenges noted (15b, CHALLENGED/Strong — same direction, not opposed): "highest fidelity ever"
+    co-occurring with confirmed undetectable defects is the exact signature mutation testing exists to
+    expose; treating the finding as batch-local is unsupported.
+  Confidence: High — a close structural match, not a distant analogy.
+  Applicable to: every QC/fidelity/detector metric in this system, including the janitor and
+    fidelity_check.py; and to any future claim that a batch "passed".
+  Operational consequence: adequacy claims require SEEDED defects, not observed pass rates.
+  Re-check due: 2026-09-10 (Monthly)
+  Status: ACTIVE
+
+PREMISE-151:
+  Date validated: 2026-08-10
+  Source item: PRESUMPTION-731
+  Item type: PRESUMPTION (unstated)
+  Statement: Repeated disclosure of an unremediated condition normalises it rather than resolving it. A
+    disclosed-but-unremediated condition is not a controlled condition, and the disclosure record is
+    evidence of incubation, not of management.
+  Supporting evidence (15a, SUPPORTED/Strong): Vaughan, D. (1996), "The Challenger Launch Decision" —
+    normalization of deviance; Buzbee, "Asymmetrical Regulation: Risk, Preemption, and the Floor/Ceiling
+    Distinction," NYU Law Review (on structurally unmeetable ceilings).
+  Challenges noted (15b, CHALLENGED/Strong — same direction): thirteen consecutive disclosed-but-
+    unremediated days matches the documented incubation pattern preceding organisational failure.
+  Confidence: High — both directions independently cited Vaughan.
+  Applicable to: the standing disclosure practice in this pipeline, including the independence
+    disclosure repeated by the 08-09 run and again by this one; the token-budget breach note; every
+    "recorded rather than silently fixed" entry.
+  Caveat carried: the floor/ceiling half — that a stated ceiling may be structurally unmeetable at fixed
+    cost — is supported but is a separate claim, and is NOT incorporated here.
+  Reflexive note, per the premise itself: THIS RUN discloses a token-budget breach and an independence
+    limitation. Under PREMISE-151 those disclosures do not make the conditions managed.
+  Re-check due: 2026-09-10 (Monthly)
+  Status: ACTIVE
+
+PREMISE-152:
+  Date validated: 2026-08-10
+  Source item: ASSUMPTION-814
+  Item type: ASSUMPTION (stated)
+  Statement: HOMOGENEOUS, UNGUIDED multi-agent debate does not outperform isolated self-correction at
+    matched compute. Gains from debate require heterogeneity of agents, role guidance, or an explicit
+    calibration mechanism. The scope conditions are part of the premise and may not be dropped.
+  Supporting evidence (15a, SUPPORTED/Strong): "The Cost of Consensus: Isolated Self-Correction Prevails
+    Over Unguided Homogeneous Multi-Agent Debate" (arXiv:2605.00914, 2026) [unverified — from search
+    snippet]; convergent 2025-2026 results.
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate): the finding is scoped to small (7-8B),
+    homogeneous, unguided debate; arXiv:2510.20963 and arXiv:2502.08788 report debate outperforming when
+    heterogeneous or guided. 15b's crux — whether C2A2 matches the scope — is why the scope conditions
+    are written into the premise statement rather than stripped from it.
+  Confidence: Moderate. Two of the three citations are unverified search snippets; verification is
+    requested at the run's verification note.
+  Applicable to: agents 01-11 and 17-20 (the tradition ensemble), the 15a/15b pair, and any future
+    proposal to add debate rounds.
+  OPEN and NOT settled by this premise: whether C2A2's tradition ensemble is in fact heterogeneous and
+    guided in the sense the literature means. Carried at MONITOR-512.
+  Re-check due: 2026-09-10 (Monthly)
+  Status: ACTIVE
+
+  Consistency check performed against this register: NO CONTRADICTIONS FOUND. PREMISE-152 is the first
+    entry that bears directly on MONITOR-001 (ASSUMPTION-003, "independent FOR/AGAINST search prevents
+    confirmation bias", monitoring since 2026-04-13 on the grounds that role assignment may activate
+    motivated reasoning). PREMISE-152 says heterogeneity and guidance are what make multi-agent structure
+    pay; the 15a/15b pair is guided (assigned directions) but homogeneous (one model). That is a partial
+    answer to MONITOR-001 and is recorded there, not resolved here.
+  Dispositions: DISPOSITION-630..653 (lit_search_returns.md, 2026-08-10 run section)
+  MONITOR items: MONITOR-505..512 · REVISE items: REVISE-295..309
+--------------------------------------------------------------------------------
+
+PREMISE-153:
+  Date validated: 2026-08-12
+  Source item: PRESUMPTION-776 (clause P1 only; clause P2 NOT incorporated — see below)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: UNCOMMITTED WORK HELD ON EPHEMERAL COMPUTE IS AN ACTIVE DATA-LOSS EXPOSURE, NOT A
+    SCHEDULING DEFERRAL, AND THE EXPOSURE IS DEFINITIONAL RATHER THAN PROBABILISTIC. Ephemeral
+    storage is specified to be lost on stop, reboot, instance replacement, cluster upgrade,
+    autoscaling event or host maintenance — none of which are failures, all of which are normal
+    lifecycle events. Vendor and standards guidance is unqualified: place only scratch files,
+    caches, or REBUILDABLE artefacts on ephemeral volumes. Generated wiki content is not a
+    rebuildable artefact. Therefore "the commit is deferred" and "the work is at risk of total
+    loss" are not two readings of one state; the second is the state, and the first is a
+    description of intent that has no bearing on durability. SCOPE CONDITION (load-bearing, from
+    15b): this premise is about the storage CLASS, not about any particular file count. It binds
+    only once a path is established to be on ephemeral rather than host-mounted or replicated
+    storage. 15b correctly observed that the originating item never verified the storage class of
+    its 191 paths; that verification is a precondition of applying the premise to that incident,
+    and is carried at MONITOR-520. The premise itself does not depend on the incident.
+  Supporting evidence (15a, PARTIALLY-SUPPORTED overall; P1 SUPPORTED/Strong): converging vendor and
+    standards documentation on ephemeral-storage semantics (MongoDB "What is Ephemeral Storage in
+    Kubernetes?"; simplyblock "Persistent Storage"; appsecuritystandards.org "Ephemeral Workloads";
+    ITU Online) [unverified — from search snippets; vendor/standards documentation, authoritative as
+    practice rather than primary research]. See lit_search_results/for/PRESUMPTION-776_for.md.
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate): two challenges, both accepted and both
+    folded in rather than outweighed. (1) The storage class was never verified — now the scope
+    condition above. (2) Git was never a valid yield substrate in the first place (GitClear /
+    Pragmatic Engineer git-metric critique; SPACE framework, arXiv:2511.20955 [unverified]), so the
+    metric half of the originating item is a pre-existing invalidity and not a consequence of the
+    unwritable git. That is why clause P2 is excluded from this premise. See
+    lit_search_results/against/PRESUMPTION-776_against.md.
+  Confidence: Moderate. The proposition is definitional and uncontested in substance, but every
+    citation supporting it is a vendor or practitioner document read from a search snippet, none
+    verified at source, and PREMISE-132 (citing is not verifying) applies to this entry as written.
+    Confidence is capped at Moderate for that reason alone, not because the claim is doubtful.
+  Applicable to: any agent producing durable content in the Cowork/container workspace; the
+    convergence step that pushes to git; the yield metric; and any future decision to treat an
+    unwritable store as a deferral.
+  CLAUSE P2 NOT INCORPORATED — AND 15a's NOVELTY FLAG IS REFUTED BY THIS REGISTER. 15a raised a
+    NOVELTY-FLAG on P2 ("a metric whose producers cannot write the measured store is measuring
+    durability rather than production"), reporting no literature. P2 is not novel: PREMISE-140
+    (2026-08-02) already holds that a metric derived from one observation channel must be named by
+    its channel and not by the thing the channel proxies for, which is P2 exactly. The novelty flag
+    is withdrawn here. This is the second finding of the run's consistency check and is recorded as
+    a defect against 15a's charter, which directs it to read the tradition wikis but never
+    validated_premises.md — so 15a can and did report as novel a premise this system validated ten
+    days earlier.
+  OPEN and NOT settled by this premise: whether the 191 paths named in the originating item are in
+    fact on ephemeral storage. Carried at MONITOR-520.
+  Re-check due: 2026-09-12 (Monthly)
+  Status: ACTIVE
+
+  Consistency check performed against this register: NO CONTRADICTIONS FOUND, but SIX NEAR-DUPLICATES
+    and one refuted novelty flag were found across the batch, which is the principal finding of this
+    run and is recorded in full in lit_search_returns.md. PREMISE-153 itself has no near-neighbour:
+    no existing premise addresses durability, storage class, or the ephemeral/persistent boundary.
+    It is the only one of fourteen items whose corrective proposition was not already carried.
+  Dispositions: DISPOSITION-667..680 (lit_search_returns.md, 2026-08-12 run section)
+  MONITOR items: MONITOR-514..521 · REVISE items: REVISE-317..322
+--------------------------------------------------------------------------------

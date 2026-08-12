@@ -1,0 +1,51 @@
+SEARCH-AGAINST-ASSUMPTION-023:
+  Date searched: 2026-08-11
+  Original item: ASSUMPTION-023
+  Original statement: "Full rollout to 33 coordinated agents is a justified commitment bet."
+  Cycle: 5 (RE-TRIGGER by 15d, queued 2026-07-05; processed 2026-08-11)
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: 14a → 15a, 15b → 15c → 15d → 15b (re-trigger cycle 5)
+    Original item: ASSUMPTION-023
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: extracted from session 2026-04-15 — decision to commit to full 33-agent Phase 2a deployment
+      15b (cycle 1, 2026-04): initial challenging search — Google scaling-saturation, enterprise pilot failure rates, coordination latency, Gartner, 17x error amplification
+      15d: re-triggered for cycle 5 monitoring
+      15b (cycle 5, 2026-08-11): re-searched for challenging literature; checked for new sources since April 2026
+    Current status: CHALLENGED
+
+  Search scope: Comprehensive. This is the fastest-moving literature in the batch; multiple directly relevant papers appeared between April and August 2026. Covered agent-count scaling laws, failure taxonomies, failure localisation, error amplification, and enterprise deployment statistics.
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. "The Ringelmann Effect in Multi-Agent LLM Systems: A Scaling Law for Effective Team Size." arXiv:2606.02646 (June 2026). — The most directly damaging new source. Imports the Ringelmann effect (per-member productivity declines as group size grows) into multi-agent LLM systems and derives a scaling law for *effective* team size. A 33-agent design is a bet against exactly this law.
+    2. "Understanding Agent Scaling in LLM-Based Multi-Agent Systems via Diversity." arXiv:2602.03794 (Feb 2026), also at OpenReview. — Scaling by agent count exhibits strong diminishing returns in *homogeneous* settings; gains continue only with genuine heterogeneity (different models, prompts, tools). C2A2's 33 agents are the same base model with different prompts — the lowest-heterogeneity configuration, where the diminishing-returns result bites hardest. Also gives the information-theoretic bound: performance is limited by intrinsic task uncertainty and by the number of *effective channels* (independent, non-redundant reasoning paths), not by agent count. 33 prompt-variants of one model do not supply 33 effective channels.
+    3. Cemri et al. MAST — Multi-Agent System Failure Taxonomy (1,600+ annotated traces, 7 frameworks, 14 failure modes), as reported in 2026 syntheses. — Failure distribution: ~42% specification and system design, ~37% inter-agent misalignment/coordination, ~21% task verification. Specification failures include ambiguous role definitions, duplicate agent roles and missing termination conditions — all of which scale in likelihood with agent count and are visible in C2A2's own design (overlapping 14a/14b extraction roles; no declared termination condition for the re-trigger loop; see ASSUMPTION-016).
+    4. "Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems." arXiv:2607.07989 (July 2026). — The existence of this problem as an open research area is the finding: in a 33-agent system, when output is wrong, attributing the error to a responsible agent is itself unsolved. C2A2 has no failure-localisation mechanism.
+    5. Google Research (2025/2026). "Towards a science of scaling agent systems: when and why agent systems work." arXiv:2512.08296 and research blog. — Accuracy gains saturate or fluctuate beyond a small agent threshold absent structured topology; adding agents helps on parallelisable tasks and *hurts* on sequential workflows. C2A2's pipeline (14→15a/15b→15c→15d→15b) is sequential.
+    6. Gartner and 2026 enterprise deployment data. — >40% of agentic AI projects predicted cancelled by end-2027 (escalating cost, unclear value, inadequate risk controls); 89% of agent pilots never reach production; only 11–14% reach production at scale; ~54% stall 3–9 months after an apparently successful pilot; through 2026, 60% of AI projects unsupported by AI-ready data will be abandoned. Base rates are strongly against a full-rollout commitment.
+    7. Error amplification data (17.2× in unstructured multi-agent networks; ~4.4× with centralised validation bottlenecks), cycle-1 source retained and corroborated by 2026 syntheses citing 41–86.7% production failure rates for LLM multi-agent systems.
+    8. "Interpreting Emergent Extreme Events in Multi-Agent Systems." arXiv:2601.20538 (Jan 2026). — Multi-agent systems exhibit emergent tail behaviour not predictable from component behaviour; risk is not linear in agent count.
+    9. Masood (July 2026), "The Unbearable Lightness of Clicking Approve." — The oversight arithmetic: ~50 agents generates ~1,000 approval-eligible events/hour; even 10% human review consumes 3+ FTE. At 33 agents, the human-validation assumption (ASSUMPTION-017) becomes arithmetically unsatisfiable. The two assumptions are jointly unsatisfiable.
+
+  Strength of challenge: Strong
+
+  NEW SINCE LAST CYCLE: Yes — the most movement of any item in the batch. Five substantial new sources since April: arXiv:2606.02646 (Ringelmann scaling law, June 2026), arXiv:2602.03794 (diversity-based scaling analysis, Feb 2026), arXiv:2607.07989 (failure localisation, July 2026), arXiv:2601.20538 (emergent extreme events, Jan 2026), plus the MAST taxonomy in its 2026-consolidated form and updated Gartner/enterprise figures (89% never reach production; 54% stall post-pilot). What they add beyond April: (i) a *named scaling law* for effective team size, (ii) the homogeneity finding, which specifically indicts prompt-differentiated agents on a single base model, (iii) the effective-channels bound, which caps achievable benefit independent of agent count, and (iv) failure localisation as a recognised open problem, meaning a 33-agent system's errors are not diagnosable with current methods.
+
+  Evidence trajectory (challenging): growing
+
+  Summary: This item has degraded significantly since April. Cycle 1 could cite saturation "beyond about 4 agents" and enterprise failure statistics; cycle 5 can cite a formal scaling law for effective team size, an information-theoretic ceiling on multi-agent benefit, and a specific finding that homogeneous agent populations — which is what C2A2 has — show strong diminishing returns while only heterogeneous ones keep improving. The sequential structure of C2A2's pipeline places it in the regime where the Google work reports agent addition can reduce accuracy. Meanwhile the base rates worsened: 89% of pilots never reach production, 54% stall after an apparently successful pilot. Nothing found in this cycle supports 33 as a justified number; no source anywhere identifies a benefit that begins at that scale.
+
+  Specific risks: If false, C2A2 spends its remaining budget building a system whose coordination overhead exceeds its analytic yield, and whose errors cannot be localised to a responsible component. The compounding risk is specific: with 21% of failures being verification failures (MAST) and human review capacity exhausted at this scale (Masood 2026), errors enter the wiki unchecked and are attributed to no one. Emergent tail behaviour (arXiv:2601.20538) means the failure will likely be discontinuous rather than a gradual quality decline — the system will appear to work until it produces something badly wrong. Rollback cost after full rollout is high because outputs are already linked into the wiki graph.
+
+  Mitigations available: (a) Do not commit to 33 — deploy in tranches with a stop rule, e.g. 4 → 8 → 16, measuring output quality at each tranche and halting on the first non-improvement; (b) increase heterogeneity deliberately (different base models, different tool access) since arXiv:2602.03794 shows this is where the gains actually are; (c) impose structured topology with a centralised validation bottleneck — documented to cut error amplification from ~17× to ~4.4×; (d) instrument failure localisation *before* scaling, not after; (e) add explicit termination conditions and de-duplicate overlapping agent roles, addressing the two largest MAST failure categories; (f) size the agent count to available human review capacity rather than to the conceptual scheme.
+
+  STEELMAN:
+    Strongest counterargument: The scaling literature measures multi-agent systems solving a *single* task through coordination, where communication overhead and error propagation dominate. C2A2's 33 agents are not 33 coordinating solvers; they are 33 largely independent perspectives whose outputs are collected and compared, with coordination handled by a thin orchestrator and a human. That is closer to an ensemble than to a team, and the ensemble literature reports optimal sizes of 10–40 at smaller scales — a range that contains 33. Enterprise failure statistics concern commercial deployments with ROI requirements, cost pressure and organisational politics, none of which apply to a personal research project where "failure" costs time rather than money. And 33 is not an arbitrary engineering number; it is set by the intellectual content (the traditions and programs being represented), so reducing it changes what the project *is*.
+    What would need to be true for C2A2 to be safe: (1) The agents are genuinely parallel and independent, with no sequential dependency chains — but the current 14→15a/15b→15c→15d pipeline is explicitly sequential, so this condition is currently false and would require redesign; (2) heterogeneity is real (different models/tools), not just different prompts; (3) a validation bottleneck exists to contain error amplification; (4) human review capacity scales with agent count, or a sampling-based review protocol with a stated error-rate estimate replaces full review.
+    How to test: Tranche test with a pre-registered stop rule. Run the same defined workload at 4, 8 and 16 agents and measure output quality with a fixed rubric and a blinded rater, plus wall-clock and token cost. If quality per unit cost does not improve from 8 to 16, the scaling law is operative and 33 is unjustified. Pre-register the stop rule before running, otherwise the result will be read favourably (see PRESUMPTION-025 on escalation of commitment).
+
+  Recommendation: CHALLENGED

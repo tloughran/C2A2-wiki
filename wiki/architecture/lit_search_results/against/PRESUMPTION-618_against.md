@@ -40,3 +40,46 @@ SEARCH-AGAINST-PRESUMPTION-618:
     How to test: Draw a random sample of citations already recorded as verified. Independently re-check each for (a) existence and (b) whether the source substantiates the assertion it is attached to. The gap between the recorded verification rate and the measured substantiation rate is the size of the control's blind spot; run the same sample against a risk-weighted policy to compare error caught per unit of effort.
 
   Recommendation: PARTIALLY-CHALLENGED
+
+===
+
+SEARCH-AGAINST-PRESUMPTION-618 (RE-TRIGGER CYCLE 2):
+  Date searched: 2026-08-10
+  Trigger: [RE-TRIGGER by 15d: 2026-08-09, cycle 1] (MONITOR-498) — fresh search per instructions, targeting the specific angle: interventional/quasi-experimental evidence that verification sampling floors (vs. floating/risk-weighted rates) reduce error, drawing on audit sampling, software inspection, and systematic-review dual-extraction literatures.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15b, re-triggered via 15d → 15b]
+    Original item: PRESUMPTION-618
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced an unstated assumption that the correct control on citation integrity is a floor on the proportion verified, and that meeting the floor discharges the risk.
+      15b (cycle 1, 2026-08-02): Searched for challenging literature; found PARTIALLY-CHALLENGED via citation-fabrication and quotation-error literature.
+      15d (2026-08-09): Re-triggered for a second, more targeted pass on the floor-efficacy question specifically.
+      15b (cycle 2, 2026-08-10): Searched fresh, targeting audit/inspection/systematic-review sampling-design literature.
+    Current status: PARTIALLY-CHALLENGED (unchanged from cycle 1)
+
+  Challenging evidence found: Partial
+
+  Sources (new this cycle):
+    1. PCAOB AS 2315, "Audit Sampling" and internal-auditing methodology texts (ecampusontario.pressbooks.pub, "Sampling Methods and Statistical Analysis") — professional audit standards explicitly link sample size/rate to risk assessment and materiality; "high-risk areas warrant larger sample sizes... lower-risk areas may require less extensive sampling." This is the audit profession's own rejection of a single fixed rate in favor of risk-weighted allocation.
+    2. Election-audit literature on risk-limiting audits vs. fixed-percentage audits (arXiv:0907.3166, "Checking election outcome accuracy") — fixed-percentage audits of vote counts "ensure accuracy... to within a specified tolerance" but "effectiveness at detecting inaccurate outcomes ranges widely," whereas risk-limiting audits guarantee a minimum probability of catching a miscount large enough to change the outcome. This is a directly on-point quasi-experimental/formal comparison: fixed-rate floors have unpredictable, sometimes poor catch rates compared to a properly calibrated risk-based design.
+    3. Kusumoto et al. (software inspection sampling), cited via ScienceDirect "Applying sampling to improve software inspections" — reallocating fixed inspection effort toward low-quality documents (risk-weighted) raised fault detection rate from 28% to 40% versus uniform/fixed coverage, a concrete effect-size demonstration that risk-weighting outperforms flat-rate sampling at constant effort.
+    4. Buscemi et al. / methodological reviews on single vs. dual data extraction in systematic reviews (PubMed 16765272; BMC Medical Research Methodology 2017, "Frequency of data extraction errors and methods to increase data extraction quality") — single extraction produces significantly more errors than dual extraction (21.7% relative difference, P=.019), reinforcing that verification intensity (rate) does track error reduction in this adjacent domain — this is the one piece of evidence that cuts the other way, i.e. supports the general logic that more verification effort catches more error, without specifically validating a "floor" mechanism over a floating one.
+
+  Strength of challenge: Moderate (unchanged)
+
+  Summary: THE STATE OF THE LITERATURE IS SUBSTANTIALLY UNCHANGED from the 2026-08-02 search, with one refinement. No direct interventional study of "citation verification floors" was found in either cycle. But the adjacent, more mature literatures searched this cycle (audit sampling, election risk-limiting audits, software inspection sampling) converge on the same conclusion as cycle 1: professional sampling design across multiple mature disciplines treats a single fixed floor/rate as inferior to risk-weighted or risk-limiting allocation, and in the software-inspection case there is a quantified effect size (28%→40% detection) favoring reallocation over uniform floors. The one partially countervailing data point (dual vs. single extraction in systematic reviews) supports "more verification reduces error" in general but does not specifically validate a floor mechanism over a floating one — dual-extraction is itself closer to a risk-weighted policy (100% on all included studies) than to a sampled floor.
+
+  Specific risks: Unchanged from cycle 1 — Goodhart risk (floor becomes the target, cheap existence-checks inflate the numerator while substantiation checks are skipped), false confidence (a met floor is read as low residual error when mature-discipline evidence says flat-rate floors have "widely ranging" effectiveness), and misallocation (uniform effort on load-bearing vs. decorative citations).
+
+  Mitigations available: Unchanged, reinforced by this cycle's audit/election evidence — adopt a risk-limiting design (guarantee a minimum probability of catching an error large enough to matter) rather than a flat coverage floor; risk-weight by claim importance the way audit standards risk-weight by materiality.
+
+  Search scope: Preliminary-to-moderate. This cycle targeted the specific "floor vs. floating rate, does a floor reduce downstream error" question directly, per the re-trigger instruction, and again found no direct study of citation-verification floors specifically — the absence itself remains a finding. The convergence across three independent mature disciplines (audit, elections, software inspection) strengthens the confidence of the analogical argument even though no discipline-specific (AI citation verification) experimental evidence exists.
+
+  STEELMAN (cycle 2 addendum):
+    Strongest counterargument: All three newly-cited disciplines (audit, elections, software inspection) are able to risk-weight because they have a legible, measurable risk signal (dollar materiality, vote margin, document quality score) to weight by. C2A2's citation-verification problem may lack an equally legible per-citation risk signal at the time of verification — "load-bearing" is itself a judgment call that could be gamed or misjudged, in which case a crude floor that cannot be argued down is safer than a "risk-weighted" scheme that quietly re-classifies inconvenient citations as low-risk.
+    What would need to be true for C2A2 to be safe with a floor: a legible, pre-committed, non-gameable definition of "load-bearing" citation exists and is applied before verification results are known, not after.
+    How to test: Audit a sample of citations that were classified as low-risk/non-load-bearing — check whether that classification correlates with anything other than convenience (e.g., whether low-risk citations are disproportionately ones later found to contain errors).
+
+  Recommendation: PARTIALLY-CHALLENGED (STATE OF LITERATURE UNCHANGED from 2026-08-02; cycle 2 adds convergent analogical evidence from audit/election/software-inspection sampling design but no new direct evidence on citation-verification floors specifically)

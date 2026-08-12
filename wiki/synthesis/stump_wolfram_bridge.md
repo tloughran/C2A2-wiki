@@ -22,3 +22,14 @@ Two readings, and the wiki should not smooth between them. (a) Wolfram is an unw
 Reading (b) is the interesting one because it is testable and would cost the MacIntyrean account something real.
 
 **Question the wiki cannot yet answer.** Across the 14 tradition nodes, does articulacy correlate better with archival density or with argumentative continuity? The corpus can answer this without new collection, and the answer bears on both this bridge and the accelerator's own instrumentation (see `loughran_wolfram_bridge.md`).
+
+
+### 2026-08-09 — Is an unbounded observer coherent inside the ruliad?
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/approved/2026-07-23_stump_cajetan-time-eternity-contingent-futures.md` (PROP-2026-07-23-002)
+
+**Why it sits at this intersection.** Cajetan's ordered relation runs between an absolute, eternal knower and relative, contingent existents. That knower has unbounded access: it knows every contingent future without computing it. Wolfram's framework makes observer *boundedness* constitutive — the observer's limited computational capacity is what produces the perception of time, space, and lawfulness in the first place.
+
+**Synthesis claim.** This is a genuine objection from physics to a theological position, and it is stateable without either side caricaturing the other. If apparent temporal order is an artifact of computational boundedness, then an unbounded knower does not perceive a *timeless* world; it perceives no world, because 'world' on this account just is what bounded sampling of the ruliad produces. The Thomistic claim that God knows creation timelessly would then require that God's knowing be something other than observation — which Aquinas in fact holds (God knows creatures by knowing his own essence as their cause, not by inspecting them). The Wolfram objection therefore either lands hard or misses entirely, depending on whether divine knowledge is a species of observation, and that is a question the Thomistic tradition has already answered in the negative.
+
+**Open question the wiki cannot yet answer.** If knowledge-by-causing is exempt from observer-boundedness, does anything in Wolfram's framework have that character? A rule does not observe its own output. Whether 'the rule's relation to what it generates' is a usable formal analogue of knowledge-by-causing, or a category error, is untested and would be the first real point of contact between the two.

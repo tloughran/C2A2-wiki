@@ -1,5 +1,5 @@
 # Bernardo Kastrup — Tradition Wiki
-*Maintained by the Bernardo Kastrup Agent | Last updated: 2026-04-08*
+*Maintained by the Bernardo Kastrup Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05 | Essentia Foundation psychopathology essay (Jan 2026) — 2026-04-08]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -30,8 +30,16 @@ Kastrup distinguishes his idealism from solipsism through what he calls “objec
 4. Is there a rigorous account of how universal consciousness 'dissociates' into individual perspectives?
 5. Can Kastrup's framework accommodate the evolutionary biology of perception (Hoffman's ITP)?
 6. Does analytic idealism entail any specific moral claims — what is the ethics of consciousness-as-ground?
-7. Can the dissociative boundary model (Kastrup 2026) map formally onto the Markov blanket (Friston FEP) — are they the same boundary dynamics at different levels of description? (Highest-priority cross-tradition question in network)
+7. Can the dissociative boundary model (Kastrup 2026) map formally onto the Markov blanket (Friston FEP) — are they the same boundary dynamics at different levels of description? (Formerly the highest-priority cross-tradition question in the network; **downgraded by FINDING-062, 2026-08-08**, which found the claim not evaluable as posed and supplied the decision procedure: *does the dissociative boundary entail conditional independence of internal from external states, or only phenomenal inaccessibility?* **Partially answered 2026-08-10 at PRS-63** — the 2026-07/08 batch cuts toward phenomenal inaccessibility and shows conditional independence is not *sufficient*, so the identity should be retired and the analogy kept. The answer is inference from Kastrup's material, not a statement of his, and is held at Speculative. The remaining live sub-question is at (16).)
 8. Does the psychopathology framework (boundary dysregulation) generate testable therapeutic predictions that distinguish idealist from materialist interpretations of neuroscientific data?
+9. Is dissociation *teleologically required* — does Mind-at-Large need finite alters in order to know its own manifestation (Spira's "the infinite needs finite minds for knowing manifestation"), or is dissociation a brute feature with no function? A stronger commitment than the immanent teleology of PRS-41. (PRS-52, 2026-08-09)
+10. Are purpose, freedom, and value intrinsic to fundamental consciousness or emergent from it — and what, if anything, does analytic idealism owe the Trika (Kashmir Shaivism) account in which self-determined freedom is constitutive of consciousness? (PRS-48, 2026-08-09)
+11. If the ego is an *action* rather than an entity, is the dissociative boundary gradable rather than discrete — and does that reopen the stalemated Kastrup–Levin disagreement over discrete alters versus continuous nesting (PRS-14, PRS-42)? (PRS-55, 2026-08-09)
+12. What does *ending* a dissociation consist of, and why do destructive habits of mind persist past the recognition? (PRS-62, 2026-08-09)
+13. Where does AI value-alignment live — in model architecture, or in the training regime and the feedback community that supplies it? Kastrup argues the latter, in engineering terms, with no consciousness question attached. (PRS-58, 2026-08-09)
+14. Does analytic idealism entail specific *political* commitments — Kastrup asserts personal liberty, liberal democracy, human rights and equality of opportunity are "so consistent with my own idealist views" — or is that entailment asserted rather than argued? Sharper and more testable than the moral-claims question at (6). (PROP-2026-08-05-006, 2026-08-09)
+15. Does psychedelic phenomenology (enriched experience under reduced cortical activity) actually adjudicate between analytic idealism, predictive processing, and IIT — and what does each program predict? Open and unresolved: the ICPR26 session has not been viewed. (PRS-57, 2026-08-09)
+16. Does a dissociative boundary *require* a Markov blanket without *being* one — i.e. does the entailment run one way? PRS-63 rules out the identity by showing conditional independence is not sufficient (a datacentre has a statistical partition and, on Kastrup's own account, no alter), but nothing in the batch tests whether a bounded alter must nonetheless be conditionally screened. The cheapest discriminating test is the one the Sewing Agent named on PROP-2026-07-31-004: does a psychedelic *loosen the blanket*, or only reweight priors? Requires the ICPR26 session, or a direct question to Kastrup. (PRS-63, 2026-08-10)
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -42,11 +50,15 @@ Kastrup distinguishes his idealism from solipsism through what he calls “objec
 | How can individual minds be simultaneously distinct and unified? | DID dissociative alter model | Conceptually: dissociated points of view within a single consciousness — same mechanism as DID | Medium |
 | Does consciousness explain quantum anomalies? | Consciousness-first ontology | Elegantly — observer-dependent reality is not anomalous if consciousness is primary | Medium |
 | Can analytic idealism generate testable clinical predictions? | Psychopathology framework (Essentia Foundation essay, Jan 2026) | In principle — boundary modulation framework generates therapeutic hypotheses; empirical testing underway | Medium |
+| Are archetypes causal agents in manifestation, or not? | Spira dialogue, 2026-07-21 (PRS-54) | Settled within the program: "archetypal patterns are templates of existence, not causes" — they constrain the form of what can be instantiated without doing efficient-causal work, keeping the archetypal layer from collapsing into a Platonic realm of forces. Refines PRS-28. | Medium |
+| Is ego dissolution a rare terminal attainment? | Spira dialogue, 2026-07-21 (PRS-55) | Advanced: no. The ego is reclassified from entity to continuously performed action, so its lapse is common (gap between thoughts, moments of satisfaction, deep grief) and contemplative practice cultivates an already-available lapse rather than achieving a rare state. | Medium |
+| Is "the Daimonic life is the easier life" a correct reading of the Daimon doctrine? | Q&A of 2026-06-30 (PRS-50) | Settled: no. Alignment and ease come apart — the path is evidenced by increased meaningful coincidence, not by reduced cost. Forecloses the prosperity-heuristic misreading of PRS-08. | Medium |
+| Is the dissociative boundary the same object as Friston's Markov blanket (FPD-009 / FINDING-062)? | The 2026-07/08 batch read against FINDING-062's decision procedure (PRS-63) | Advanced, not settled: **identity retired, analogy retained.** Conditional independence is shown *not sufficient* — a datacentre is a statistical partition and, on Kastrup's own demarcation challenge, cannot bear an alter. The two lines describing the boundary's own behaviour (ego-as-action, dissociation-for-knowing) are phenomenal, not statistical. One-way entailment remains untested; see question (16). | Speculative (inference from Kastrup's material, not his claim) |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 6 recorded
+**Count:** 63 recorded *(last updated 2026-08-10; the table below is a stale six-row excerpt from the 2026-04-08 state plus the one triplet added since — it is not an index of all 63, and its labels no longer match `prs_triplets.md`. Treat `prs_triplets.md` as authoritative.)*
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -56,6 +68,7 @@ Kastrup distinguishes his idealism from solipsism through what he calls “objec
 | PRS-04 | Evolutionary origin of dissociation | Implicit | Why does universal consciousness dissociate into individuals? |
 | PRS-05 | Ethics of consciousness-as-ground | Implicit | What does analytic idealism imply about moral status? |
 | PRS-06 | Formalization of idealism | Implicit | Idealism lacks a mathematical formalism comparable to FEP or ITP |
+| PRS-63 | Dissociative boundary vs Markov blanket | Synthesis | Does the dissociative boundary entail conditional independence, or only phenomenal inaccessibility? (answers FINDING-062) |
 
 ## Cross-Tradition Signals
 *(Connections to other programs flagged by this agent)*
@@ -91,3 +104,40 @@ Ingested 4 approved triplet(s): PRS-23, PRS-24, PRS-25, PRS-26.
 - The indexical problem — why this dissociated alter is here-and-now rather than there-and-then — is a standing objection …  [src: PROP-2026-06-10-002]
 - Analytic idealism affirms both that individual selves are dissociative constructs (hence in some sense illusory) and tha…  [src: PROP-2026-06-10-003]
 - If the self is a dissociative illusion, what is the status of memory and experiential continuity beyond the alter's life…  [src: PROP-2026-06-10-003]
+
+
+## Ingestion Log — 2026-08-09
+Ingested 17 approved triplet(s) from 7 proposals: PRS-46 through PRS-62. Three candidates withheld (see below).
+
+- PRS-46 — Computationalism has no principled account of *which* physical system bears the alleged machine inner life; the demarcation challenge ("the microchips? the cooling system? the river?"). Sharpens PRS-44.  [src: PROP-2026-07-22-003]
+- PRS-47 — If perception is a sparse-data generative model, what is its relation to what it tracks? Machine world-models as a window on human perception, without licensing a consciousness inference.  [src: PROP-2026-07-22-003]
+- PRS-48 — Idealism's underdeveloped account of whether purpose and freedom are intrinsic to consciousness; Trika Shaivism as a worked-out consciousness-first metaphysics with agency built in.  [src: PROP-2026-07-22-004]
+- PRS-49 — A consciousness-first metaphysics must speak to extreme suffering or fail where the stakes are highest; Kastrup adopts consciousness-as-fundamental but refuses inherent-bliss.  [src: PROP-2026-07-22-004]
+- PRS-50 — Does the Daimonically aligned life become easier? No: alignment and ease come apart.  [src: PROP-2026-07-29-004]
+- PRS-51 — What does a tradition owe those entering it? The warning about vocational cost is itself part of the curriculum. First formation-register entry in this wiki.  [src: PROP-2026-07-29-004]
+- PRS-52 — Why does manifestation happen at all? Dissociation reframed from posit to functional necessity: the infinite needs finite minds to know its own manifestation.  [src: PROP-2026-07-29-003]
+- PRS-53 — Does a representational account of perception make the world unreal? No — "illusion" names a mismatch, not a lack of existence; contra Dennett.  [src: PROP-2026-07-29-003]
+- PRS-54 — Are archetypes causal? No — templates of existence, not causes. Refines PRS-28.  [src: PROP-2026-07-29-003]
+- PRS-55 — Is ego dissolution rare and terminal? The ego is an action, not an entity, so its lapse is common. Bears on the Kastrup–Levin boundary stalemate.  [src: PROP-2026-07-29-003]
+- PRS-56 — Does idealism anaesthetize suffering (the Hollis charge)? No — nihilism becomes an inhabitable room, and awakening increases exposure to sorrow.  [src: PROP-2026-07-29-003]
+- PRS-57 — Does psychedelic experience disclose reality or only perturb the generative model? A three-position confrontation (Kastrup / Seth / Koch) on shared data.  [src: PROP-2026-07-31-004]
+- PRS-58 — Where does AI alignment live? In the training regime, not the architecture — so sovereignty collapses onto hardware.  [src: PROP-2026-08-05-006]
+- PRS-59 — Software alignment guarantees are circumventable; Hardware Enabled Mechanisms make some of them enforceable at fabrication.  [src: PROP-2026-08-05-006]
+- PRS-60 — Transformers on graphics GPUs at ~945 TWh/yr by 2030; ground-up AI-specific design claimed up to 100x more efficient. Supersedes the secondary-sourced PRS-35.  [src: PROP-2026-08-05-006]
+- PRS-61 — What disciplines an allegorical reading of myth? Etymological and numerical constraint the interpreter does not choose. Gives PRS-27 something to be wrong about.  [src: PROP-2026-08-05-005]
+- PRS-62 — What does *ending* a dissociation consist of? A two-stage process: recognition is necessary but not sufficient; the habits persist past the insight.  [src: PROP-2026-08-05-005]
+
+**Withheld (not ingested):**
+- PROP-2026-07-29-004 / candidate 03 ("why information confuses so many philosophers") — the proposal's own Handling Note reads "**Do not ingest as stated**"; the solution line is inference from the tradition's prior commitments (the RQM/Rovelli regress argument at PRS-31), not from this source. Topic listing only. Revisit if the member-gated recording is heard.
+- PROP-2026-07-31-004 / candidate 02 (the reduced-activity / enriched-experience argument pressed against Seth and Koch) — inferred from the panel's composition, not extracted from it. The Sewing Agent's handling note directs "drop candidate 02 rather than softening it" if the session is not viewed. It was not viewed: the Essentia Foundation URL was unreachable from this agent's fetcher.
+- PROP-2026-08-05-005 / candidate 03 (Hellenic revival without continuous lineage; the reported 100-year transfer of Greek ancient sites to anonymous private corporations) — Speculative, and the proposal states Kastrup's own position on the revival claim is not recorded. The question it raises ("what makes a revived tradition the same tradition?") is a genuine C2A2 architecture question but is not a Kastrup-tradition PRS; forwarded as a cross-tradition signal to the Master agent instead.
+
+**Standing evidence caveat, this batch.** Five of the seven proposals draw on *With Reality in Mind* sessions whose recordings are member-gated or paywalled; the PRS content rests on published summaries and timestamp markers. PRS-51, PRS-57, PRS-61 and PRS-62 carry explicit caveats in their Evidence lines. PRS-61/62 additionally carry an unresolved attribution conflict: PROP-2026-07-29-003's field note records that Kastrup was called away for the full week of the 2026-07-28 Odyssey session by Euclyd, so his presence and assent there are unconfirmed. Those two are recorded as resources offered to the tradition inside Kastrup's own series, not as claims Kastrup made.
+
+
+## Ingestion Log — 2026-08-10
+**No new source ingestion. This run was a re-dispatch of a batch already complete.** All seven `inbox/` files named in the dispatch — `2026-07-22_kastrup_ai-awakening-chandaria.md`, `2026-07-22_kastrup_timalsina-suffering-joy.md`, `2026-07-29_kastrup_caution-young-philosophers.md`, `2026-07-29_kastrup_spira-awakening-sorrow.md`, `2026-07-31_kastrup_seth-koch-psychedelic-metaphysics-debate.md`, `2026-08-05_kastrup_iai-europe-ai-hardware-sovereignty.md`, `2026-08-05_kastrup_odyssey-potari-awakening.md` — were ingested on 2026-08-09 as **PRS-46 through PRS-62**, with three candidates withheld for stated reasons (see the 2026-08-09 log above). Every proposal id in the dispatch (PROP-2026-07-22-003/004, PROP-2026-07-29-003/004, PROP-2026-07-31-004, PROP-2026-08-05-005/006) already appears on a `Source:` line in `prs_triplets.md`. Re-extracting them would have produced seventeen duplicate triplets under new numbers; nothing was re-extracted.
+
+**Added this run: 1 triplet — PRS-63.** Not from a new source. It is a synthesis across the 2026-08-09 batch answering the question FINDING-062 (2026-08-08) dispatched to this agent: *does the dissociative boundary entail conditional independence of internal from external states, or only phenomenal inaccessibility?* That dispatch had no recorded answer anywhere in `traditions/kastrup/`, and the batch bears on it directly, so the answer was written rather than left in a report.
+
+- PRS-63 — Verdict on FPD-009: **identity retired, analogy retained.** Sufficiency fails (a datacentre is a conditionally separable partition and cannot, on Kastrup's own demarcation challenge, bear an alter), and the two lines describing the boundary's own behaviour — ego-as-action (PRS-55) and dissociation-as-knowing (PRS-52) — are phenomenal rather than statistical. Held at **Speculative**: Kastrup mentions neither Markov blankets nor Friston anywhere in the batch, so the argument is this agent's inference from his stated position. One-way entailment untested; new research question (16) records it, and the discriminating test remains the unviewed ICPR26 panel (PRS-57).  [src: synthesis — PROP-2026-07-22-003, PROP-2026-07-29-003]

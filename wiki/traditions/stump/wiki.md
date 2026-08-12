@@ -1,5 +1,5 @@
 # Eleonore Stump — Tradition Wiki
-*Maintained by the Eleonore Stump Agent | Last updated: 2026-04-05*
+*Maintained by the Eleonore Stump Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -28,6 +28,12 @@ The questions her program is generating press on exactly these joints: can Thomi
 4. Can hylomorphic psychology map onto computational models of cognition (active inference, HTM)?
 5. What is the Thomistic account of how AI agents might attain second-first-language status in a tradition?
 6. How does the Synergistic Coil framework relate to Aquinas's account of wisdom as an integrative science?
+7. ~~What does Stump's own retrospective account of her program say about how a premodern tradition addresses a discipline that does not share its commitments — and does the Dewey Lecture's argument in fact turn on the two-desire analysis of love, or on something else?~~ **ANSWERED 2026-08-10** — on something else, and the second clause was the wrong question. The lecture is an intellectual autobiography, not an argument; its stated thesis is that "at the ultimate, irreducible foundation of all reality there is love in powerful, welcoming personal relationship" (PRS-34). See PRS-33.
+8. ~~Under `dilige et quod vis fac`, is a rightly ordered will genuinely self-norming?~~ **RETIRED 2026-08-10 — premise withdrawn.** The maxim appears in the title and nowhere in the body. There is no defense of it in the lecture, so there is no answer to extract. The question may be a good one to put to Stump's corpus, but it must not be attributed to this source. See PRS-33.
+9. If the antecedent/consequent-will distinction implies that God "settles for plan B," does the problem of mourning apply to God as well as to the sufferer — and can that be held alongside divine impassibility and simplicity? The lecture poses the problem interrogatively and names *The Image of God* (2024) as where it is answered; the answer is not in hand. (PRS-35)
+10. Stump's answer to the problem of mourning inverts a metaphysical ranking: the sufferer's song is more glorious than the angels', because angels cannot love in the mode Christ's passion manifests. Does that invert only the ranking of *songs*, or does it commit her to a good that a metaphysically greater being lacks simpliciter? (PRS-36)
+11. Stump diagnoses mid-century philosophy and mid-century genetics as making one error — failing to notice the social character of the unit of explanation. Does that license CROSS-008 as currently stated ("final causality provides the framework for Levin's findings"), or only the weaker bridge she actually draws (shared rejection of isolated individualism)? The wiki currently asserts the stronger version on the agent's inference. (PRS-37)
+12. If taxonomy — "Yes, but is it philosophy?" — is the mechanism by which a discipline forecloses engagement without argument, does the C2A2 accelerator's own tradition roster reproduce it? A fixed 13-thinker bridges roster that excludes MacIntyre is a taxonomic boundary, and the wiki repeatedly notes working around it. (PRS-38)
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -37,11 +43,14 @@ The questions her program is generating press on exactly these joints: can Thomi
 | Can traditions engage rationally across paradigm gaps? | MacIntyre's second-first-language criterion | Yes — deep tradition immersion enables rational inter-tradition dialogue | High |
 | Is Thomism a live tradition by contemporary standards? | Stump's Aquinas / Wandering in Darkness | Yes — meets MacIntyre criterion; engaged analytic philosophy without dissolving | High |
 | Can teleological explanation survive in biology? | Analytic Thomism + Levin's morphogenetic program | Thomistic final causality provides the framework for Levin's empirical findings | Medium |
+| Is there a single thesis unifying Stump's corpus, or several separable contributions? | Her own one-sentence retrospective summation, in the Dewey Lecture | One thesis, and it is ontological rather than ethical: love in welcoming personal relationship at the irreducible foundation of reality. The books are successive attempts on the parts of the problem of suffering the previous book could not hold (PRS-34). First time the wiki holds this in her own voice rather than as the agent's synthesis | High |
+| Does Stump herself connect her metaphysics to a claim about biology, or is the Stump↔Levin bridge the agent's analogy? | Her parallel diagnosis of mid-century philosophy and mid-century genetics as making one error — a failure to notice the social character of the unit of explanation ("a social side even to genetics") | She draws it herself — but narrower than CROSS-008 as recorded. The shared commitment is the *rejection of isolated individualism about the unit of explanation*, not the vindication of final causality by epigenetics (PRS-37) | High for the parallel, Medium for what it licenses |
+| Did the Dewey Lecture argue for `dilige et quod vis fac`? | The publicly hosted SLU full text, retrieved 2026-08-10 | No — the maxim is a title epigraph, absent from the body; the lecture is autobiography, not argument. **A prior reconstruction was withdrawn, not amended** (PRS-33). Recorded as an advance because it closes a flagged retrieval gap and disconfirms a standing conjecture | High |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 15 recorded (PRS-01 and PRS-03 re-homed to Loughran 2026-06-11 — methodology triplets, ASSUMPTION-076; numbering unchanged)
+**Count:** 35 recorded (PRS-01 and PRS-03 re-homed to Loughran 2026-06-11 — methodology triplets, ASSUMPTION-076; numbering unchanged, so the highest number is PRS-38)
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -49,6 +58,12 @@ The questions her program is generating press on exactly these joints: can Thomi
 | PRS-04 | Final causality and modern biology | Implicit | Teleological explanation banned from biology |
 | PRS-05 | Suffering and divine permission | Implicit | Problem of evil lacks rigorous analytic treatment |
 | PRS-06 | Tradition vitality criterion | Implicit | How to distinguish living from degenerate traditions |
+| PRS-33 | Dewey Lecture retrieval gap closed | Explicit | A withheld triplet reconstructed an argument the lecture does not make |
+| PRS-34 | Love as ontological foundation | Explicit | Is there one thesis behind the corpus, in her own voice? |
+| PRS-35 | The problem of mourning, divine side | Explicit | Does a successful theodicy leave God something to mourn? |
+| PRS-36 | Suffering love the angels lack | Implicit | What answers a mourning that survives a theodicy? |
+| PRS-37 | The social character of the unit of explanation | Explicit | Is the Stump↔Levin bridge hers or the agent's? |
+| PRS-38 | Taxonomy as the gate-keeping mechanism | Implicit | How does a discipline foreclose engagement without argument? |
 
 ## Cross-Tradition Signals
 *(Connections to other programs flagged by this agent)*
@@ -60,6 +75,9 @@ The questions her program is generating press on exactly these joints: can Thomi
 | MacIntyre criterion ↔ Levin/MacIntyre vital program test | Master/C2A2 | Application bridge — C2A2 uses MacIntyre criterion as its core methodology | Active |
 | Hylomorphism ↔ Friston's FEP (matter/form :: substrate/pattern) | Friston Agent | Structural analogy — Aristotelian form as information pattern in a substrate | Watch |
 | Stump's tradition-crossing inquiry ↔ McGilchrist's right-hemisphere openness | McGilchrist Agent | Convergence — both describe what mature inter-tradition engagement requires | Watch |
+| "A social side even to genetics" ↔ Levin's non-nuclear, context-dependent control | Levin Agent | **Upgraded 2026-08-10 (PRS-37)** — Stump draws the philosophy/biology parallel herself, in her own voice. But she draws it between two *errors* (isolated individualism about the unit of explanation), not as a vindication of final causality. Narrower than CROSS-008 as recorded | Active — recommend restating CROSS-008 at the weaker, defensible strength |
+| Second-personal knowing ↔ Rohr's "truth is finally a person and an encounter" | Rohr Agent | **Independence check (PRS-33/PRS-37).** Stump narrates her own route to second-personal knowing as a reaction to mid-century individualist epistemology, citing shared-attention/mind-reading research and Wittgenstein — no devotional lineage. Evidence *for* independent arrival; not decisive | Active — see the Rohr wiki's 2026-08-10 log |
+| Suffering love as a good unavailable to the impassible ↔ Fredrickson's positivity resonance | Fredrickson Agent | **Boundary test, not convergence (PRS-36).** Positivity resonance requires shared *positive* affect; Stump's central case is a good constituted by suffering. If the constructs converge here, the positivity condition is doing less work than advertised | Watch |
 
 ## Paradigm Assessment
 Stump's program is **highly generative for the C2A2 project** — it provides the normative and metaphysical spine for the tradition-accelerator system. The MacIntyre criterion is already the operational definition of tradition vitality in C2A2. The Levin × Stump connection (CROSS-008) and the Fredrickson × Stump connection (CROSS-005) are the two most direct links between the theological and scientific wings of the RC project. Stump's program shows that Thomism can serve as the integrative 'master science' MacIntyre described — exactly what the C2A2 project needs at its philosophical center.
@@ -85,4 +103,43 @@ Ingested 2 approved triplet(s): PRS-30, PRS-31.
 - The gnoseology of divine knowledge derived from a prior metaphysics of the eternity-time relation rather than treated as an isolated epistemic puzzle.  [src: PROP-2026-07-23-002]
 
 **New open question:** Do the network's emergent-time physics programs (Arkani-Hamed, Wolfram) have room for *eternity*, or only for *timelessness*? See FINDING-055.
+
+
+## Ingestion Log — 2026-08-09
+Ingested 1 approved triplet: PRS-32. One candidate withheld.
+
+- PROP-2026-08-06-001 → PRS-32 (Medium). The APA released the audio of Stump's 2023 John Dewey Lecture, "Dilige et quod vis fac," on 2026-07-28. Ingested as an instance of MacIntyrean second-first-language competence: an explicitly Augustinian-Thomistic thesis, stated in its own idiom (Latin maxim, patristic source), occupying the APA's flagship reflective venue and addressed to the whole discipline. The lecture is a data point about tradition vitality, not merely a claim about it — which is the C2A2 vitality criterion's own preferred kind of evidence.
+
+**RETRIEVAL GAP — HONORED.** The proposal carries an explicit Handling Note: it was filed on **metadata and genre only**. The lecture's full text requires APA membership and the audio (MP3 linked from the blog post) was not transcribed. Accordingly:
+
+- **WITHHELD: PRS-CANDIDATE-01** — the reading of `dilige et quod vis fac` through the Thomistic two-desire account of love (willing the good of the other + willing union with the other), such that the maxim is neither trivial nor permissive because the norms are internal to what loving is. Its own Evidence field reads "TITLE AND GENRE ONLY … it must be checked against the actual lecture before ingestion." That is a reconstruction from the maxim plus Stump's published corpus, not a report of what the lecture argues. It is **not** in `prs_triplets.md`. Its content survives here as open question 8 and must be re-proposed only against the retrieved text or a transcript.
+- **INGESTED: PRS-CANDIDATE-02** — this rests on what *was* retrieved: the APA blog post of 2026-07-28 and the APA's own description of the Dewey Lecture genre. The claim it makes is about the venue, the genre, and the title, all three of which are in hand. No claim about the lecture's argument is made.
+
+**Next step to close the gap:** obtain the lecture text via APA membership, or transcribe the MP3 linked from the blog post. Until then PRS-32 is the only defensible triplet from this source.
+
+## Ingestion Log — 2026-08-10
+**RETRIEVAL GAP CLOSED.** Ingested 6 triplets, PRS-33 through PRS-38, all from **PROP-2026-08-06-001** re-extracted against the **primary text**.
+
+**How the gap closed.** The proposal, and yesterday's ingestion, recorded the lecture's full text as behind APA member sign-in. It is not. Saint Louis University hosts the complete transcript publicly at `https://www.slu.edu/news/2023/july/stump-dewey-lecture-full-text.php`, linked from SLU's own news story about the lecture. The APA blog post links only to the APA's member-gated PDF, so a search that started and stopped at the blog post — which is what the proposal did — finds a paywall that is not the only door. **Method note worth generalizing: when a primary source is reported paywalled, check the author's home institution before recording a retrieval gap.** The full body was read end to end.
+
+**The finding is a disconfirmation, and that is the most important thing in this batch.** PRS-CANDIDATE-01 was withheld yesterday as an unverified reconstruction — the right call. Now verified: it is **wrong**, and wrong about the register rather than the details. `Dilige et quod vis fac` appears in the title and **nowhere in the body**. The lecture mounts no defense of the maxim, deploys no two-desire analysis, and makes no claim that a rightly ordered will is self-norming. It is an intellectual autobiography, which is what the Dewey genre requires. Open question 8 is therefore **retired with its premise withdrawn**, not answered; open question 7's second clause is likewise void. PRS-CANDIDATE-01 must not be re-proposed against this source.
+
+**PRS-32 survives, and is strengthened.** It rested only on venue, genre, and title, all three of which the primary text confirms. One correction to its framing, from the APA's own author note: Stump was **president of the APA Central Division (2005–2006)** — the division whose Dewey Lecture she later gave. "The tradition speaking inside the rival's venue" is therefore too adversarial a description; she has been institutionally enfranchised by the discipline she is addressing. That weakens the sharp reading of PRS-32 and strengthens the vitality claim on better grounds.
+
+**What the six new triplets add.**
+- PRS-33 — the disconfirmation itself, recorded so the reconstruction is not revived.
+- PRS-34 — Stump's own one-sentence thesis for the entire corpus. The wiki has long asserted that she treats love as ontological rather than merely ethical; this is the first time that is held **in her voice**.
+- PRS-35 — the problem of mourning extended to the divine side via the antecedent/consequent-will distinction. The increment over PRS-18, which covered only the sufferer.
+- PRS-36 — the answer sketch: suffering love as a good the impassible cannot have, inverting the human/angelic ranking.
+- PRS-37 — **the highest-value item.** Stump draws the philosophy↔biology parallel herself, which converts the network's most load-bearing theology-science bridge from agent inference to author testimony. But she draws it narrower than CROSS-008 records it.
+- PRS-38 — taxonomy ("Yes, but is it philosophy?") named as the mechanism of disciplinary foreclosure, with her two non-taxonomic counter-moves.
+
+**Caveats (fail-loud).**
+- The lecture is **autobiography**. It states positions and names the books that argue for them; it does not supply the arguments. PRS-35 and PRS-36 are compressed sketches of *The Image of God* (2024) and are marked Medium accordingly. Neither should be cited as Stump's argument — only as her statement of it.
+- PRS-38 is one philosopher's testimony about her own field over sixty years. It supports a claim about a mechanism, not about rates or prevalence.
+- PRS-37's parallel is between two errors, and Stump hedges the genetics case herself ("as it were," "if one can speak this way"). She does not mention Levin, morphogenesis, or final causality there.
+
+**Recommendation to the master agent:** restate **CROSS-008** at the strength Stump actually licenses — shared rejection of isolated individualism about the unit of explanation — rather than "final causality provides the framework for Levin's empirical findings," which she does not say here and which the wiki has been carrying at Medium on the agent's inference.
+
+**Acquisition note:** Stump, *The Image of God: The Problem of Evil and the Problem of Mourning* (2024) is the source behind PRS-35 and PRS-36 and is not in the vault. It is now the single highest-value acquisition for this tradition — both new triplets point at it and neither can be raised above Medium without it.
 

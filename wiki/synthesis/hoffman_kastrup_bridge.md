@@ -47,3 +47,14 @@
 **So the traditions are closer than either grants on the negative and further apart than either grants on the positive.** Both would resist being assimilated to the other, and the wiki should record why: Hoffman's headset can in principle be characterized formally (conscious agents, trace kernels) while Kastrup's dissociation is offered as a phenomenological and psychiatric analogy that he explicitly declines to formalize.
 
 **Open question the wiki cannot yet answer.** If what appears across a dissociative boundary is the extrinsic appearance of real mental process, then perception is *veridical about something* — and Fitness-Beats-Truth would be false of it. Do Hoffman's evolutionary results apply to Kastrup's alters at all? Neither has addressed it, and it is the point where the two programs would have to choose.
+
+
+### 2026-08-09 — Two defenses of representation that may be the same defense
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/approved/2026-07-29_kastrup_spira-awakening-sorrow.md` (PROP-2026-07-29-003)
+
+**Why it sits at this intersection.** Kastrup, with Spira, narrows what 'illusion' commits him to: illusion names a mismatch between appearance and intrinsic nature, not a lack of existence — so perception can be representational while the world is fully real, and Dennett's move (consciousness itself as illusion) is self-undermining because an illusion is already an experience. Hoffman has made a formally similar reply to the charge that interface theory implies nothing is real.
+
+**Synthesis claim.** If the two defenses are the same move, interface theory has an ally it has never claimed, arriving from analytic idealism rather than from evolutionary game theory — and the 'fitness beats truth' result stops being the sole load-bearing support for the interface reading, since Kastrup reaches the same conclusion with no appeal to selection at all. That would make the representational thesis considerably more robust than either tradition's own argument makes it look.
+
+**Open question the wiki cannot yet answer.** Do the two accounts agree on *what* the appearance is a mismatch with? Hoffman's answer is a structure of conscious agents; Kastrup's is the intrinsic mental character of Mind-at-Large's excitations. Those may or may not be the same referent, and the question is not rhetorical: if they differ, the shared defense is a coincidence of form and the alliance is illusory in the ordinary sense.

@@ -1,5 +1,5 @@
 # Barbara Fredrickson — Tradition Wiki
-*Maintained by the Barbara Fredrickson Agent | Last updated: 2026-04-05*
+*Maintained by the Barbara Fredrickson Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -30,6 +30,11 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 4. Is there a formal equivalence between positivity resonance and Friston's shared attractor alignment in collective active inference?
 5. Is Fredrickson's 'positivity resonance' the same phenomenon as Levin's bioelectric synchrony at the neural level?
 6. Can positivity resonance metrics be used to assess the health of inter-tradition dialogue in C2A2 communities?
+7. Does loneliness-linked degradation of the allostatic-interoceptive system actually block resource-building, or only co-occur with it? (PRS-34 is an inference the data license but do not test; a spiral design is needed.)
+8. If affect is distinguished by network *configuration* rather than by emotion loci, what is the correct neural formulation of the broadening claim — and does a positive-vs-neutral attention-network contrast exist? (Not reported in nsag008; PRS-CANDIDATE-02 of PROP-2026-08-06-003 was skipped for exactly this.)
+9. Is there a population for whom connection-based interventions work less well because the machinery that converts a socially salient moment into a regulated bodily response has already degraded? (Direct operational consequence of PRS-33 for C2A2 deployment.)
+10. **Boundary test (standing, from the master agent 2026-08-07):** does co-experienced grief — Rohr's witnessed grief, community gathering around a suffering person "even when there are no words" — exhibit the behavioral and physiological markers of positivity resonance minus the valence? If it does, the construct's definition has to move from *positive shared affect* to *shared affect with mutual care*. PRS-38 specifies what the test would cost to run.
+11. Is the operative variable in this tradition's brain-level results positive valence, or social affective salience of either valence? The dynamic AIS result spans pleasant and unpleasant conditions alike (PRS-36); only the static coherence result is positive-specific. The tradition currently asserts the stronger of the two readings.
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -39,11 +44,14 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 | Do positive emotions broaden attention? | Broaden-and-build theory | Yes — experimentally confirmed; positive states broaden attentional scope, negative states narrow it | High |
 | Is love a biophysiological event, not just a feeling? | Love 2.0 / positivity resonance | Yes — vagal tone, oxytocin, neural synchrony are measurable correlates of love micro-moments | High |
 | Can love be cultivated? | Loving-kindness meditation research | Yes — LKM practice increases vagal tone and positivity resonance frequency | High |
+| Does loneliness degrade physiological regulation in general, or something specific to social processing? | Graph-theoretic connectivity of the allostatic-interoceptive system across matched neutral / pleasant / unpleasant conditions (SCAN 21:nsaf124) | Advanced — the loneliness x age interaction is present in both affective conditions and absent in the neutral one, so the effect is specific to affectively salient social cues, not to general regulatory capacity | High |
+| Does that specificity single out *positive* valence, as positivity resonance requires? | Reading the same design separately by metric instead of collapsing across them (PRS-36) | Advanced, and against the tradition's prior reading — only the static coherence effect is pleasant-specific; the dynamic effects span pleasant and unpleasant alike. "Specific to social affective cues" was being used as if it meant "specific to positive affect." It does not. | High |
+| What would it cost to run the co-experienced-grief boundary test? | The nsaf124/nsag008 paradigm audited against the test's requirements (PRS-38) | Advanced — the gap is now named rather than open: matched-valence induction and static/dynamic graph metrics exist and are validated at N = 73; dyadic co-measurement does not. The test is an extension of an existing paradigm, not a new one. | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 6 recorded
+**Count:** 38 recorded (the table below covers only the original RC-Pilot six; PRS-07 onward are in `prs_triplets.md`)
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -53,6 +61,14 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 | PRS-04 | Vagal tone as community biomarker | Implicit | No empirical measure of community health / inter-tradition dialogue quality |
 | PRS-05 | Broadened attention and tradition learning | Implicit | Positive states broaden attention — what does this mean for tradition immersion? |
 | PRS-06 | Love as universal physical phenomenon | Implicit | Love described as metaphor or sentiment in most academic traditions |
+
+**Added 2026-08-10** (kept separate so the RC-Pilot table above retains its stated scope):
+
+| # | Label | Type | Core Problem | Confidence |
+|---|-------|------|-------------|------------|
+| PRS-36 | Valence-generality of the dynamic AIS result | Explicit | PRS-33's "specific to social affective cues" was read as if it meant "specific to positive affect"; the dynamic effects span both valences | High |
+| PRS-37 | No measurement privilege for positive valence | Explicit | A positively-defined construct predicts positive states are at least as distinguishable as negative ones; in this cohort's reported record they are not | Medium |
+| PRS-38 | Instrumentation gap for the grief boundary test | Implicit | The boundary test was posed but not costed; two of its three requirements already exist, dyadic co-measurement does not | Medium |
 
 ## Cross-Tradition Signals
 *(Connections to other programs flagged by this agent)*
@@ -64,6 +80,8 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 | Love ↔ Kastrup's consciousness re-integration | Kastrup Agent | Deep structural analogy — love as re-integration of dissociated alters in universal consciousness | Active — CROSS-005 |
 | Broadened attention ↔ McGilchrist right-hemisphere | McGilchrist Agent | Convergence — positive states broaden attentional scope; right hemisphere provides that holistic mode | **Dispatch filed** |
 | Positivity resonance ↔ Levin bioelectric synchrony | Levin Agent | Speculative bridge — neural positivity resonance as high-level instantiation of Levin's bioelectric coupling | Watch |
+| Witnessed grief ↔ positivity resonance (boundary test, not bridge) | Rohr Agent | **Falsification pressure, strong.** Rohr's Job material describes co-experienced affect with mutual care and no positive valence. PRS-36/37 show this tradition's own imaging results failing to privilege positive valence, so the pressure is now internal as well as cross-tradition. PRS-38 specifies the missing instrument (dyadic co-measurement) | **Escalate to FLAG — recommended 2026-08-10** |
+| Allostatic-interoceptive system ↔ active inference | Friston Agent | Strengthened — the AIS is defined in nsaf124 as *predictively* regulating bodily state, i.e. interoceptive active inference in the paper's own vocabulary. The FEP idiom has propagated into positive-emotion neuroscience | Dispatch warranted |
 
 ## Paradigm Assessment
 Fredrickson's program is **the Flourishing Cluster's empirical anchor** and the most directly action-relevant tradition in the network for C2A2's applied mission. If positivity resonance is measurable, cultivable, and the mechanism of community formation and inter-tradition dialogue, then the C2A2 project has an empirical metric for its success: communities engaging across traditions should show increasing positivity resonance. The Fredrickson × Stump × Kastrup triangle (CROSS-005) — love as a fundamental ontological category in biology, theology, and idealist philosophy — is the network's most theologically and philosophically significant cross-program finding.
@@ -78,3 +96,37 @@ Ingested 4 approved triplet(s): PRS-17, PRS-18, PRS-19, PRS-20.
 - (open question) Whether the behavioral pathway through listening generalizes from extended (deep-talk) encounters to the brief, casual encounters (small-tal…  [src: PROP-2026-05-28-001]
 - (open question) The Fredrickson program has accumulated many findings (broaden-and-build, upward spirals, positivity resonance, vagal tone, conducive condit…  [src: PROP-2026-06-04-001]
 - (open question) Translating affective-science findings into evidence-based guidance for non-specialists is methodologically fraught and rarely reflected on …  [src: PROP-2026-06-04-001]
+
+
+## Ingestion Log — 2026-08-09
+Ingested 3 approved triplet(s): PRS-33, PRS-34, PRS-35. Two companion neuroimaging papers (same N = 73 cohort, same affect-induction paradigm, different network target) — ingested as the pair the proposals asked for.
+
+- PROP-2026-08-06-002 → PRS-33 (High), PRS-34 (Speculative). Loneliness x age degradation of the allostatic-interoceptive system is present in the pleasant and unpleasant conditions and absent in the neutral one. This is the tradition's first *brain-level* specificity result: the effect lives in the socially-charged condition, which is the shape positivity resonance predicts.
+- PROP-2026-08-06-003 → PRS-35 (High). Affective conditions are distinguished by intrinsic-network configuration (static DAN within-module degree; dynamic VAN participation coefficient), supporting a constructionist account.
+
+**SKIPPED:** PRS-CANDIDATE-02 of PROP-2026-08-06-003 (attention-network topology as a neural formulation of broadening). The candidate's own Evidence field bars it: both reported discriminations involve the *negative* condition (negative vs neutral; negative vs positive), and no positive-vs-neutral contrast is reported. The study shows attention networks tracking affect, not positive affect broadening attention — the direction broaden-and-build needs is the one not reported. Recorded as open question 8 instead of ingested as a triplet.
+
+**New open questions:** see Active Research Questions 7, 8, 9.
+
+**Framing note for the tradition (2026-08-09):** the field-level shift the nsag008 abstract opens with — "from a functional localization approach towards a distributed network neuroscience approach" — means the program is now being cashed out in the vocabulary of network reconfiguration rather than emotion loci. That changes what a positive-emotion claim means neurally and should be reflected in how future triplets are worded.
+
+
+## Ingestion Log — 2026-08-10
+
+**Both assigned source files had already been ingested on 2026-08-09** (PROP-2026-08-06-002 → PRS-33/34; PROP-2026-08-06-003 → PRS-35). Nothing from the 08-09 pass was re-extracted and no triplet was duplicated. What today's pass did instead was re-read the same two papers against the standing boundary-test question the master agent posed on 2026-08-07, which the 08-09 ingestion did not address. That re-reading found material the first pass had missed, so three new triplets were added: **PRS-36, PRS-37, PRS-38.**
+
+- **PRS-36 (High)** — a correction to this tradition's own prior reading. PRS-33 recorded the AIS result as "consistent with positivity resonance being the operative unit." Read metric by metric, the source does not support that: the static coherence effect is pleasant-condition-only, but the *dynamic* integration and coherence effects appear in the pleasant **and** unpleasant conditions alike, with neutral null in both cases. "Specific to social affective cues" had been doing the work of "specific to positive affect." It cannot. The dynamic metric — the paper's more sensitive index — is valence-general.
+- **PRS-37 (Medium)** — reading the two companion papers against each other on the same N = 73 cohort, the negative condition is at least as neurally distinguishable as the positive one. Both of nsag008's reported discriminations involve the negative condition; no positive-vs-neutral contrast is reported anywhere. Confidence is Medium because an unreported contrast is not a null — full texts were not available to this agent, so the claim is about the reported record, not about the data.
+- **PRS-38 (Medium)** — an audit of the paradigm against what the boundary test would need. Two of three requirements exist; dyadic co-measurement does not.
+
+**Answer to the standing boundary-test question (master agent, 2026-08-07).** Three parts, in order of how much the sources actually settle.
+
+1. *Do these papers supply the measurement apparatus the test needs?* **Partly — about two thirds of it, and the missing third is the constitutive one.** They supply the valence-contrast logic with a matched neutral control, and static and dynamic graph-theoretic connectivity metrics (participation coefficient for cross-network integration, within-module degree for within-network coherence) over both the allostatic-interoceptive system and five intrinsic networks, validated at N = 73 with demonstrated sensitivity to the negative condition. What they do not supply is co-experience. Both papers scan **one** participant mentally visualizing an **absent** acquaintance. Positivity resonance is defined by shared affect, behavioral synchrony, and mutual care between co-present people; a solitary visualization paradigm cannot observe any of the three. So these papers are the right instrument pointed at the wrong number of people. The test needs a hyperscanning or dyadic-physiology extension of this paradigm — an extension, not a new build, which is the useful part of the finding.
+
+2. *Do they bear on the answer, not just the method?* **Yes, and against the construct as currently defined — which was not the expected direction.** The boundary test was framed as an outside challenge from Rohr's Job material. It turns out this tradition's own lab has already produced two results in which positive valence gets no special treatment: the dynamic AIS degradation spans pleasant and unpleasant conditions alike (PRS-36), and every reported network discrimination in the companion paper involves the negative condition (PRS-37). If the neural signature that tracks socially affective experience does not distinguish pleasant from unpleasant, then a construct that draws its boundary at positive valence is drawing it where the measurements do not. That does not prove co-experienced grief resonates; nobody has measured two grieving people. It removes the strongest reason to assume it does not.
+
+3. *Should this be escalated to a FLAG?* **Yes — recommended.** The reasons: (a) the challenge is no longer only cross-tradition, it is internal, and an internal disconfirmation of a definitional boundary is exactly what a flag is for; (b) it is a falsifiable, costed, runnable experiment rather than a conceptual dispute — PRS-38 names the one missing instrument; (c) the stakes reach past this tradition, because if the boundary moves from *positive shared affect* to *shared affect with mutual care*, then C2A2's whole use of positivity resonance as a community-health metric changes — grief-holding, lament, and witnessed suffering become measurable civic goods rather than the absence of one, and any deployment that scores communities on positive resonance alone is mis-specified. This agent writes only inside `traditions/fredrickson/`, so the flag itself must be filed by the master agent; the recommendation and its evidence are recorded here and in PRS-36/37/38.
+
+**Honest limits on all of the above.** No effect sizes, coefficients, or interval estimates appear in either source — direction of effect only — so the static/dynamic asymmetry in PRS-36 is a difference in which contrasts were reported, not a quantified difference in magnitude. Designs are cross-sectional (age *differences*, not aging) and loneliness is measured, not manipulated, so nothing here is causal. Full texts were unavailable; an unreported positive-vs-neutral contrast may be underpowered or simply omitted from the abstract rather than absent from the analysis. And it is one cohort of 73, used twice.
+
+**New open questions:** see Active Research Questions 10 and 11.

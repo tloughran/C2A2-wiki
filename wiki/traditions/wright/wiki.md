@@ -1,5 +1,5 @@
 # N.T. Wright — Tradition Wiki
-*Maintained by the N.T. Wright Agent | Last updated: 2026-04-29*
+*Maintained by the N.T. Wright Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-29]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -28,6 +28,9 @@ The questions his program raises are methodological and testable: does the five-
 4. What is the relationship between Wright's faithful improvisation and MacIntyre's tradition-constituted inquiry — are they the same methodology in different registers?
 5. Does Wright's account of resurrection as a historical event with cosmological significance challenge or complement Carroll's physicalism?
 6. How does Wright's narrative epistemology relate to McGilchrist's account of the right hemisphere as the hemisphere of narrative, context, and embodied meaning?
+7. Does the corporate-person reading of 2 John's "elect lady" (PRS-40) strengthen the church-as-one-thing thesis, or complicate it? A community that can be *addressed* as a person is a stronger claim than one that can be *described* as a body — and it may be stronger than Wright himself wants.
+8. Can critical realism hold Rohr's claim that revelation is the self-disclosure of a Person rather than a deposit of propositions (Rohr PRS-40), without losing the text's referential control?
+9. Is "tradition adjudicated by narrative" (PRS-41) a general method or a move available only from inside the tradition whose narrative is doing the adjudicating? An Orthodox interlocutor could accept the method and reach the opposite verdict.
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -63,3 +66,28 @@ Ingested 3 approved triplet(s): PRS-37, PRS-38, PRS-39.
 - (open question) Were the Samaritans a foreign group or a contested branch of Israel — and which reading does Wright take? The answer changes what the New Testament's Samaritan material is doing.  [src: PROP-2026-08-07-004]
 
 **New open question / standing tension:** Wright's characteristic move is to resolve an apparent deferral by locating a concrete historical event that has already settled the matter; Rohr's is to deny that settling is what is wanted. Logged as **one** standing tension with the Rohr side (PROP-2026-08-07-003), not two. See FINDING-058.
+
+## Ingestion Log — 2026-08-09
+Ingested 2 approved triplet(s): PRS-40, PRS-41, both from **PROP-2026-07-26-003** (Is the Greek Orthodox Church Biblical? — Ask NT Wright Anything, Premier Unbelievable, hosted by Mike Bird). Nothing skipped.
+
+- PRS-40 — the "elect lady" of 2 John read as a church addressed as a corporate person. This is a *Johannine* anchor for the corporate-person thesis, independent of the Pauline material at PRS-8; the increment over PRS-8 is that the community is addressed as one person, not merely described as one body.
+- PRS-41 — confessional disputes (Orthodox/Protestant on icons, tradition, the marks of a true church) adjudicated by return to the second-temple/NT narrative rather than to Reformation-era categories. Distinct from PRS-02: faithful improvisation governs how *one* tradition extends itself; this governs how *two* traditions with a shared source text settle a dispute.
+
+**Source caveat (fail-loud).** The proposal supplies **no verbatim quotation and no timestamp** from the episode — both triplets are reported rather than quoted. PRS-40 is safe on independent grounds (the corporate reading of 2 John is Wright's long-standing published position, so this episode is a locator rather than the warrant). **PRS-41 is not:** it generalizes a described method into a stated principle, and Wright may not assert it in this form here. It is logged Speculative and should be **downgraded or discarded rather than amended** if the audio shows otherwise. This is the second consecutive Ask-NT-Wright ingestion without primary audio (cf. 2026-08-08, PROP-2026-08-07-004) — a pattern worth naming to the sewing agent rather than absorbing.
+
+**New open questions:** 7 (does addressability strengthen or overreach the corporate-person thesis), 8 (can critical realism hold Rohr's self-disclosure claim without losing referential control), 9 (is narrative adjudication general, or available only from inside). Added to Active Research Questions above.
+
+**New standing tension — hold open, do not average.** Rohr's Week 30 hermeneutic (Rohr PRS-42) relocates the adjudication of rival readings to a reading's *effects on the community that holds it*. Wright's critical realism holds that the second-temple context constrains what a text can mean, prior to and independent of the reader's ethical posture. Both cannot be the final court. This is **distinct from** the tension logged 2026-08-08 (Job's refusal to explain vs. Wright's historical answer to evil): that one is about whether an answer is wanted, this one about what adjudicates one. Logged once, with the Rohr side (PROP-2026-08-02-001), for the master agent.
+
+**Note on the Rohr↔Wright pairing.** PROP-2026-07-26-003 asks for a *contrast* note, not a merge: Wright relativizes the Orthodox/Protestant divide by returning to the text, where Rohr relativizes it by universalizing the pattern. Same effect on the divide, opposite mechanism, and the difference is the whole content of the pairing. Recorded here rather than merged into the Key Connections section, which currently records only the already/not-yet convergence.
+
+## Ingestion Log — 2026-08-10
+**Zero triplets added. Count remains 41. No-op on `prs_triplets.md`, deliberately.**
+
+One source was dispatched today: `2026-07-26_wright_ask-ntw-orthodox-church-icons-2john.md` (**PROP-2026-07-26-003**). It was **fully ingested yesterday** — see the 2026-08-09 log directly above. Both PRS candidates are already recorded: `elect-lady-as-corporate-person` → PRS-40, `tradition-adjudicated-by-narrative` → PRS-41. Two proposed, two ingested, none skipped. Re-reading the source today surfaced no third candidate. Writing new triplets would have duplicated PRS-40 and PRS-41 under fresh numbers and inflated the count. Logged so the next agent does not read the silence as an omission.
+
+**Dispatch note:** the source's `status:` front-matter is still `pending`. `inbox/` was not touched (concurrent agents own it), but that pending status is what re-dispatched consumed work and will do so again.
+
+**Standing caveat, now two runs old and unresolved.** Both PRS-40 and PRS-41 rest on a proposal that supplies **no verbatim quotation and no timestamp** from the episode, and the same was true of PROP-2026-08-07-004 the day before. Two consecutive Ask-NT-Wright ingestions without primary audio is a pattern in the acquisition pipeline, not a property of the material. Worth naming to the sewing agent rather than absorbing. For contrast, the Stump tradition closed an identical-looking gap today by checking the author's home institution: a lecture recorded as paywalled at the APA turned out to be hosted in full, publicly, by Saint Louis University. **The same move is available here** — Premier Unbelievable and OpenTheo publish episode pages and occasional transcripts, and the `source_url` is still the show index rather than an episode permalink. PRS-41 is Speculative and is to be **downgraded or discarded rather than amended** if primary audio shows Wright declining the generalization.
+
+**Rohr↔Wright standing tension — UNCHANGED by today's material.** It stands in two distinct parts, both to be held open rather than averaged: (1) 2026-08-08 — whether a settled answer to evil is what is wanted; (2) 2026-08-09 — what adjudicates between rival readings of a text. Nothing dispatched today touches either. See FINDING-058.

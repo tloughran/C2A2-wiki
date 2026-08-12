@@ -339,7 +339,43 @@ PRS-36:
   Confidence: High
   Evidence: The newscaster delusion worked example, where the delusion is described as "completely Bayes-optimal" given unattenuated interoceptive evidence.
 
-*Total PRS triplets: 36*
+PRS-37:
+  Problem: How can a self-organizing predictive system learn temporal sequences and generalize across them without catastrophic forgetting — the failure mode that defeats conventional associative-memory and connectionist architectures?
+  Resource: Sequential (rather than batch) presentation of data to the FEP-derived attractor dynamics recorded in PRS-30, which drives the couplings asymmetric and the system into a non-equilibrium steady state that generalizes conventional Boltzmann Machines.
+  Solution: Orthogonal-basis formation, generalization, sequence learning, scalability and resistance to catastrophic forgetting all fall out of the *same* free-energy objective — no replay buffer, regularizer or consolidation mechanism is added on top. This extends PRS-30 (which records the emergence result itself) with the behavioural properties the emergent dynamics are shown to possess.
+  Date Added: 2026-08-09
+  Source: Self-orthogonalizing attractor neural networks emerging from the free ; PROP-2026-07-27-004
+  Confidence: High
+  Evidence: Abstract — "orthogonal basis formation, generalization, sequence learning, scalability and resistance to catastrophic forgetting"; sequential presentation yields "asymmetric couplings and non-equilibrium steady-state dynamics, generalizing conventional Boltzmann Machines."
+
+PRS-38:
+  Problem: Theories of consciousness proliferate faster than they can be compared — rivals explain different phenomena with different explanatory styles and different licensed methods, so no observation is decisive between them and each camp reads the literature as supporting itself.
+  Resource: Structured adversarial collaboration (the INTREPID consortium, Templeton World Charity Foundation): proponents of Integrated Information Theory (Tononi), Neurorepresentationalism (Pennartz) and Active Inference (Friston) jointly state each theory's core claims, pre-specify the hypotheses to be tested across a series of multi-site experiments, and name in advance the observations that would challenge their own theory.
+  Solution: The three theories are made mutually commensurable and each camp is pre-committed to conditions under which it loses — converting theory choice from rhetoric into a decidable empirical program. For this tradition it is the first source that specifies what would count as active inference *losing*, moving the program's epistemic status from generative-and-unfalsified to generative-and-under-test.
+  Date Added: 2026-08-09
+  Source: Integrated information and predictive processing theories of consciousn; PROP-2026-08-03-004
+  Confidence: High
+  Evidence: Abstract — "we compare and contrast three theories being investigated in one such adversarial collaboration: Integrated Information Theory, Neurorepresentationalism, and Active Inference... we outline the key hypotheses to be tested across a series of multi-site experiments; second, we discuss the kinds of observations that would support or challenge each theory."
+
+PRS-39:
+  Problem: Even where rival camps agree on the experiments, evidence accumulated across separate studies and their replications has no principled aggregation rule, so the same body of results can be read as vindicating either side.
+  Resource: A formal integration scheme that pools data harvested across disparate experiments and their replicates within the adversarial-collaboration design.
+  Solution: Yields a single quantitative measure of the evidential support accrued under each theory — a running numeric score across a research *program* rather than a per-study verdict. This is the mechanism that makes "which program is doing better" an answerable question rather than a matter of allegiance.
+  Date Added: 2026-08-09
+  Source: Integrated information and predictive processing theories of consciousn; PROP-2026-08-03-004
+  Confidence: High
+  Evidence: Abstract — "data harvested across disparate experiments (and their replicates) may be formally integrated to provide a quantitative measure of the evidential support accrued under each theory."
+
+PRS-40:
+  Problem: There is no accepted way to say that one research program is making more progress than a rival — the MacIntyre/Lakatos problem of tradition-comparison, stated in its empirical rather than its historiographic form.
+  Resource: The review's explicit meta-scientific aim: to show how theories may be evaluated "in terms of the scientific progress they deliver," demonstrated on a live three-way case with the scoring apparatus of PRS-39 attached.
+  Solution: Proposes *progress-delivered* as the evaluative currency for competing programs, and supplies a working apparatus for measuring it. Note the standing of this triplet: the meta-scientific aim is stated by the authors, but the demonstration is prospective — the multi-site experiments are pre-specified, not yet reported — so the apparatus is proposed-and-designed rather than shown to discriminate.
+  Date Added: 2026-08-09
+  Source: Integrated information and predictive processing theories of consciousn; PROP-2026-08-03-004
+  Confidence: Medium
+  Evidence: Abstract — "this review aims to provide valuable meta-scientific insights into the mechanics of adversarial collaboration and theory-testing in general - including the way theories may be evaluated in terms of the scientific progress they deliver."
+
+*Total PRS triplets: 40*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

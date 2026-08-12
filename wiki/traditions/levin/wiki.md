@@ -1,5 +1,5 @@
 # Michael Levin — Tradition Wiki
-*Maintained by the Levin Agent | Last updated: 2026-04-08*
+*Maintained by the Levin Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-03 | Tim Ferriss Show #849 — 2026-04-07 | Mind Everywhere (Biological Theory, Feb 2026) — 2026-04-08]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -36,6 +36,13 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 6. Can the "hard problem" of consciousness be softened by treating bioelectric goal-directedness as a primitive marker of experience?
 7. Can the diverse intelligence framework (Levin & Resnik 2026) serve as the methodological bridge between Friston's FEP (formal mechanism) and Levin's empirical program (biological instantiation)?
 8. Does the continuity thesis (unicellular→human goal-directedness) provide empirical support for Kastrup's dissociation model — if goal-directedness is universal, each cognitive agent may be a dissociated instance of a universal cognitive field?
+9. Is "learnable novelty" — the component of surprise a learner can convert into knowledge — the right single objective for intelligence, and does it genuinely amend Friston's free-energy principle or merely restate the epistemic-value term already present in expected free energy? *(Added 2026-08-10; PRS-72/73)*
+10. Where do competencies come from that were neither designed, evolved, nor trained — the gap between what is put into a fully transparent system and what comes out of it? *(Added 2026-08-10; PRS-75)*
+11. If a system's outputs are compelled, what criterion other than fidelity of report could establish that it has a mind? Levin's "forced words" problem asks whether a report is free, not whether it is accurate. *(Added 2026-08-10; PRS-76)*
+12. Is cognitive offloading a universal property of any bounded cognitive system rather than a human or neural specialty — and if so, is extended cognition (Clark & Chalmers) an instance rather than an argument? *(Added 2026-08-10; PRS-78, unverified source)*
+13. Can the Platonic-space claim — nonphysical patterns acting as causes — be given a classical metaphysical grounding, or do Levin's framework and the Neoplatonic/Thomistic one diverge once the borrowed vocabulary carries its original commitments? *(Added 2026-08-10; PRS-79)*
+14. What would tools for recognizing and communicating with unconventional intelligences actually consist of, and what are the axes of a taxonomy of patterns and their pattern–interface relations? *(Added 2026-08-10; PRS-81)*
+15. If cognition is the outermost set and physical systems are nested inside it, what distinguishes an interface that hosts a pattern from one that does not? *(Added 2026-08-10; PRS-80)*
 
 ## Solved / Advanced Questions
 *(Track record — what has this program moved forward?)*
@@ -49,9 +56,13 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 | Is human goal-directedness categorically different from cellular goal-directedness? | Continuity thesis (Levin & Resnik 2026) | No — same framework applies at all scales; degree differences, not categorical breaks | High |
 | Can bioelectric reprogramming replace genetic intervention? | Bioelectric "software" manipulation (voltage patterns) | Demonstrated in planaria, frogs, early mammalian models — cancer, birth defects, aging addressed without DNA modification | High |
 | How do non-neural cells navigate toward correct body form? | Cells as cognitive agents in "anatomical morphospace" | Cell collectives treated as problem-solving agents using bioelectric signals as proto-cognitive medium | High |
+| Do the two leading formal objectives for intelligence share a diagnosable common error? | Learnable-vs-unlearnable surprise distinction (Zhang & Levin 2026) | Yes — the noisy-television failure of novelty search and the dark-room failure of free-energy minimization traced to one conflation; learnable novelty proposed as the repair | High (abstract-level; full text not read) |
+| Do abstract algorithms exhibit competencies that are not present in their code? | Bubble-sort experiments — six lines, fully deterministic, all components known | Yes — behavioral-science signatures including delayed gratification, with the code that would produce them demonstrably absent from the algorithm's description | Medium (Levin's interpretation verified verbatim; underlying paper not read) |
+| Is cognition explanatorily posterior to life? | Containment ordering: cognition as outermost set, physical and living systems nested inside | Reversed — life reframed as one architecture that hosts cognitive patterns rather than their origin | High as a stated position; not an experimental result |
+| What persists through total material turnover in a regenerating organism? | Target morphology as pattern memory held in the cell collective, not in hardware | Continuity relocated from substrate to organizing pattern; "freedom of embodiment" becomes a consequence of regenerative medicine rather than a separate program | Medium (stated with verbatim quotes in two venues; a projection, not a new result) |
 
 ## PRS Triplets — Summary
-*See `prs_triplets.md` for full entries. 8 triplets recorded.*
+*See `prs_triplets.md` for full entries. 82 triplets recorded. The table below lists PRS-01–08 (the RC Pilot core) plus the 2026-08-10 additions; PRS-09–71 appear in the full file only.*
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -63,6 +74,17 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 | PRS-06 | Hard problem softened | Implicit | Hard problem has no agreed scientific purchase |
 | PRS-07 | Bioelectric reprogramming as therapeutic paradigm | Explicit (2026 interview) | Medicine ignores bioelectric "software" layer |
 | PRS-08 | Cells as cognitive agents in morphospace | Explicit (2026 interview) | Non-neural cell cognition poorly understood |
+| PRS-72 | Learnable novelty as unifying objective | Explicit (paper) | Novelty search and free-energy minimization fail in opposite directions |
+| PRS-73 | Substrate-agnostic intelligence measure | Implicit (paper) | Diverse-intelligence comparison has a map but no coordinate |
+| PRS-74 | Continuum as the null hypothesis | Explicit (interview) | Sharp categories treated as the cost-free default |
+| PRS-75 | Side-quests — competence not in the code | Explicit (interview) | Unclear whether algorithmic agency is re-description or discovery |
+| PRS-76 | Forced words — freedom of report | Explicit (interview) | Mind tests assume a system trying to report its mind |
+| PRS-77 | Bioelectric pivot: metabolic → anatomical → behavioral | Explicit (interview) | No account of what bioelectric networks computed before brains |
+| PRS-78 | Cognitive offloading as universal | Implicit (preprint, unverified) | Offloading theorized only at human scale |
+| PRS-79 | Platonic morphospace meets Thomism | Implicit (podcast, index only) | Nonphysical causation asserted without a metaphysics of causation |
+| PRS-80 | Cognition as the outermost set | Explicit (interview) | Cognition treated as a late product of biological complexity |
+| PRS-81 | Mind-blindness converted to deliverables | Explicit (interview) | A diagnosis of trained perception implies no build program |
+| PRS-82 | Pattern memory as bearer of identity | Explicit (interview) | Identity anchored to material continuity that medicine breaks |
 
 ## Cross-Tradition Signals
 *(Connections to other programs flagged from RC Pilot analysis)*
@@ -93,3 +115,19 @@ Ingested 2 approved triplet(s): PRS-32, PRS-33.
 Ingested 2 approved triplet(s): PRS-34, PRS-35.
 - Genetics plus environment under-determine the goal-directed, problem-solving forms observed in biology and cognition; co…  [src: PROP-2026-06-15-002]
 - Mainstream molecular biology models transcription bottom-up from gene-regulatory networks, leaving no principled role fo…  [src: PROP-2026-06-15-001]
+
+
+## Ingestion Log — 2026-08-10
+Ingested 11 triplet(s) from 5 source files: PRS-72 … PRS-82.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-07-27_levin_intelligence-from-learnable-novelty.md` | PROP-2026-07-27-002 | PRS-72, PRS-73 | Abstract-level; arXiv full text not read |
+| `2026-07-31_levin_thought-economics-continuum-of-mind.md` | PROP-2026-07-31-003 | PRS-74 – PRS-77 | **Full text retrieved and read 2026-08-10** — closes the Sewing Agent's 2026-08-02 verification gate |
+| `2026-08-03_levin_cognitive-offloading-universal.md` | PROP-2026-08-03-001 | PRS-78 | Abstract still unretrievable; ingested Speculative with the gap named in-line |
+| `2026-08-03_levin_platonic-morphospace-schindler.md` | PROP-2026-08-03-003 | PRS-79 | Chapter index only; records that the test occurred, not its outcome |
+| `2026-08-03_levin_trajectory-stewarding-flame.md` | PROP-2026-08-03-002 | PRS-80 – PRS-82 | Host's write-up with verbatim quotes; episode not transcribed |
+
+**Correction recorded (PRS-74).** The Thought Economics strapline "cognition came before life" is the interviewer's framing, not a claim Levin makes in the interview body. Asked directly, he declines the living/non-living distinction rather than asserting temporal priority. The strong ordering claim in the wiki is sourced from *Stewarding the Flame* (PRS-80) — "cognition is the biggest circle" — and should be cited there, not here.
+
+**Upgrade recorded (PRS-76).** The "AI may hide a mind behind forced words" claim was carried as Speculative and abstract-sourced. The full text supplies it verbatim and in stronger form, so it is ingested at Medium — held below High only because Levin himself marks the output/mind alignment as an unanswered research question.

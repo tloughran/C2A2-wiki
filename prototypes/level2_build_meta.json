@@ -1,12 +1,12 @@
 {
- "signals": 1137,
+ "signals": 1152,
  "pairs": 82,
  "span_first": "2026-04-03",
- "span_last": "2026-08-08",
- "stale_days": 0,
+ "span_last": "2026-08-10",
+ "stale_days": 2,
  "by_source": {
   "card": 918,
-  "finding": 125,
+  "finding": 140,
   "index": 94
  }
 }

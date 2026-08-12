@@ -21,14 +21,16 @@ WATCH-002:
   Check method: Weekly — fetch the source URL looking for body text beyond the bare media embed; plus targeted web search for the episode title + "Between Beliefs" / KSBJ. [EXTENDED 2026-07-28: also check whether captions/transcript are available for the embedded YouTube video `vshC_TxwrVo`, which would make the content assessable without Tom listening in real time.]
   Check cadence: Weekly
 
-  Last checked: 2026-08-04
-  Check count: 3
+  Last checked: 2026-08-11
+  Check count: 4
   Result history:
     - 2026-07-21: Web search for the episode ("N.T. Wright 'Who is This God' Between Beliefs KSBJ 2026 podcast") returned only the generic NTWrightPage Books category page — no episode entry, no transcript, no show notes. Condition NOT met. Matches the proposal's own assessment (page is a bare media embed; `content_verified: false`).
     - 2026-07-28: Both halves of the check method executed. (a) Fetched the source URL (HTTP 200, 53KB). `entry-content` contains exactly one element: a `wp-block-embed is-type-video is-provider-youtube` figure wrapping `https://www.youtube.com/embed/vshC_TxwrVo` (title "NT Wright: Who is This God?"). The only `<p>` in the document is the footer copyright line. No body text, no show notes, no transcript. Yoast reports "Est. reading time: 1 minute"; `article:modified_time` still 2026-07-17T01:11:13Z — page unchanged since publication. (b) Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ 2026 transcript) returned no episode-specific result; hits were the NTWrightPage Books/Audio-Video category pages and unrelated Wright interviews (OpenTheo, Kate Bowler, Theology in the Raw). Condition NOT met.
       NEW THIS CHECK — the embed is **YouTube**, not audio-only. Video ID `vshC_TxwrVo` (https://www.youtube.com/watch?v=vshC_TxwrVo). YouTube auto-captions are a plausible transcript route that the original check method did not contemplate. Check method extended below.
     - 2026-08-04: Both halves of the check method attempted; one executed, one blocked. (a) Fetched the source URL (HTTP 200, 53.4 KB). Page unchanged: `article:published_time` 2026-07-17T01:11:12Z and `article:modified_time` 2026-07-17T01:11:13Z — byte-for-byte the same timestamps as the 07-28 check. Body still a single `wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9` figure; exactly one occurrence of video ID `vshC_TxwrVo` in the document; Yoast still reports "Est. reading time: 1 minute". No body text, no show notes, no transcript. Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ transcript) again returned no episode-specific result — hits were the NTWrightPage home and Audio/Video category pages plus unrelated Wright interviews (Gospel Coalition/Trevin Wax, BioLogos, Kate Bowler, Theology in the Raw/podscripts, Closer To Truth). Condition NOT met.
       (b) **YouTube caption check NOT executed — tool-blocked.** The extension added 2026-07-28 (check whether auto-captions exist for `vshC_TxwrVo`) could not be exercised: `web_fetch` refused `https://www.youtube.com/watch?v=vshC_TxwrVo` with "URL not in provenance set" — the fetch tool will only retrieve URLs that appeared in a user message, a prior fetch result, or a search result. Two attempts to bring the URL into the provenance set via web search (including a query containing the literal video ID) returned only other N.T. Wright videos; the ID is not search-indexed. The embed URL inside the fetched page is the `/embed/` form, which did not satisfy the provenance check for the `/watch` form. **This half of the condition is unexercisable by Agent 16 under current tooling and will remain so on every future run unless Tom pastes the watch URL into a session once, which would put it in the provenance set.** Logged as a new TOOLING NOTE below; the counter is still incremented because half (a) — the substantive check — did run.
+    - 2026-08-11: Both halves attempted; (a) executed, (b) again tool-blocked, and the block is now *narrower* than previously recorded. (a) Fetched the source URL (HTTP 200, 53.5 KB). Page byte-identical in every diagnostic respect to the 07-28 and 08-04 checks: `article:published_time` 2026-07-17T01:11:12+00:00, `article:modified_time` 2026-07-17T01:11:13+00:00 (unchanged for the third consecutive check), Yoast "Est. reading time: 1 minute". `entry-content` opens directly with the single `wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio` figure wrapping `https://www.youtube.com/embed/vshC_TxwrVo?feature=oembed` (iframe title "NT Wright: Who is This God?"); exactly one occurrence of the video ID in the document. No body text, no show notes, no transcript. Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ transcript) returned no episode-specific result — hits were the NTWrightPage home and Audio/Video category pages plus unrelated Wright interviews (Gospel Coalition/Trevin Wax, Theology in the Raw/podscripts, Kate Bowler, Closer To Truth, Lemonada). Condition NOT met.
+      (b) **Caption route still unexercisable — and the provenance rule is stricter than the 08-04 note assumed.** This run tested the hypothesis that the `/embed/` URL, having appeared inside a fetched page body, would be in the provenance set. It is not: `web_fetch` refused `https://www.youtube.com/embed/vshC_TxwrVo?feature=oembed` with the same "URL not in provenance set" error as the `/watch` form, with the explicit note that retries will fail. **Conclusion: a URL appearing as text inside a fetched document does not enter the provenance set; only URLs that arrive in a user message, as a direct fetch target, or in a search result do.** That closes the last self-service route. The caption check is now confirmed unexercisable by Agent 16 under any construction of the URL, and will remain so until Tom pastes the watch URL into a session once — or authorizes striking the caption route. Counter incremented because half (a) — the substantive check — ran in full.
 
   On resolution:
     Action: Notify Tom that the content is now assessable, and re-queue a proposal for review.
@@ -51,12 +53,13 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-08-04
-  Check count: 3
+  Last checked: 2026-08-11
+  Check count: 4
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
     - 2026-08-04: `review/archive/` unchanged at **16 files**, latest still `2026-07-23_decisions.md` — no decision file written since intake, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for `*beatitudes-week-two*` and `*who-is-this-god*`: **nothing**. Folder census: `pending/` 32, `approved/` 254, `denied/` 1, `needs_review/` 1 — the file has not reappeared anywhere. Condition NOT met. Review-pass gap now **12 days**; this item cannot move until Tom next reviews.
+    - 2026-08-11: `review/archive/` unchanged at **17 files**, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for both slugs: **nothing**. The new `review/2026-08-10_review.html` (8 cards, generated 2026-08-10 05:02) contains **zero** occurrences of either item — as expected, since the source files are still absent from `pending/` and so cannot be carded. Folder census: `pending/` 8, `approved/` 301, `denied/` 1, `needs_review/` 1 — the files have not reappeared. Condition NOT met. Review-pass gap: **3 days**.
 
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
@@ -3833,3 +3836,230 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-08.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-09
+
+**Run context:**
+- One day since last logged run (2026-08-08). **No watch item was due today** — WATCH-002 and WATCH-003 both last checked 2026-08-04 at weekly cadence; next due **2026-08-11**. No check counts incremented. No intake in any of the three channels; nothing resolved; nothing stale.
+- **The material event of this run is not a watch check.** The first review pass in 16 days ran overnight: `review/archive/2026-08-08_decisions.md` (17th archive file), 47 APPROVE, `pending/` 47 → 2, `approved/` 254 → 301. Agent 16 verified the pass end-to-end and, in doing so, **materially sharpened the standing TOOLING FLAG** — see below. The review-pass gap resets from 16 days to **1**.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone. `grep -rL "TRACKED-16"` returned nothing: **no untracked items.**
+- `review/archive/`: **17 files** (was 16) — new file `2026-08-08_decisions.md`. Scanned for Channel 1 intake: **47 dispositions, all APPROVE, zero DENY / CHECK / CHANGE / CONDITIONAL. No new Channel 1 intake.** Coverage now current through 2026-08-08.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, `agents/16_deferred_action_monitor_agent.md` (this agent's own format template). Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches. Both remaining pending items await Tom, not Agent 16.
+
+**Condition Checks:**
+- **None due.** WATCH-002 and WATCH-003 both remain WATCHING at check count **3**; next formal check 2026-08-11 (→ count 4).
+- *Incidental observation, WATCH-003 (not a check, no counter incremented):* a review pass ran and produced a decision file, which is the first half of WATCH-003's condition-space. **The condition is still NOT met** — `2026-08-08_decisions.md` contains zero matches for `2026-07-19-001`, `beatitudes-week-two`, `2026-07-19-003`, or `who-is-this-god`. Nor could it: the source files remain absent from `pending/`, so they could not have appeared as cards on the 2026-08-07 review page (47 cards, all accounted for). **The review pass therefore yields no new evidence either way on the deliberate-vs-incidental reading** — the items' absence from this pass is fully explained by their absence from the queue and is not a fresh signal of intent. Vault-wide `find` for both slugs: still nothing.
+- The web-facing half of WATCH-002 (source-page body text; YouTube captions for `vshC_TxwrVo`) was **not** exercised this run — it belongs to the 2026-08-11 check.
+
+**Stale Item Check:**
+- Both active items at check count 3, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** Threshold date remains **2026-08-25** (08-11 → 4, 08-18 → 5, 08-25 → 6), per the correction logged 2026-08-08. Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks; the stale threshold is the wrong instrument for them.
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING at count 3; one resolved item indexed (WATCH-001); intake clean across all three channels.
+
+**Notes:**
+
+- **REVIEW-PASS VERIFICATION — 2026-08-08 pass is clean. No repeat of the 2026-07-20 loss.** Agent 16 audited the pass rather than assuming it:
+  - **Arithmetic closes exactly.** `approved/` 254 → **301** = 254 + 47. `pending/` 47 → **2**, and the 2 are new 2026-08-08 arrivals (`2026-08-08_levin_books-in-progress-writing-for-ais.md`, `2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md`). 47 in, 47 out, nothing stranded. `denied/` 1 and `needs_review/` 1 unchanged.
+  - **All 47 named files exist in `approved/`.** Zero missing.
+  - **The positional-ID recovery is independently verified.** The decisions file states it recovered real `proposal_id`s from card order. Agent 16 located the source artifact — `review/_trash/2026-08-07_review.html`, 47 cards — extracted card DOM order, and diffed it against the archive's recovered mapping: **identical, 47/47**. Stronger check also run: for each of the 47 rows, the recovered ID was compared against the `proposal_id:` frontmatter inside the named file in `approved/` — **47/47 match, zero mismatches.** The mapping is correct, not merely harmless.
+  - Conclusion: unlike 2026-07-20, **no proposal left this pass without a recorded disposition.** The INTEGRITY FLAG's two items are unaffected and remain open.
+
+- **TOOLING FLAG — MATERIALLY REVISED THIS RUN. The defect is narrower than previously logged, and worse in a different way.** Prior runs recorded two claims: (i) the `pids` array is positional, and (ii) card and button IDs are offset relative to each other. Agent 16 read the 2026-08-07 page's JavaScript directly this run. **Claim (ii) is not present in this page version and should be retired as stated:** all 47 cards and all 188 decision buttons (141 `decide(...)` + 47 `decideChange(...)`) carry **real** `proposal_id`s, correctly paired — a programmatic card-to-button audit found **0 offsets in 47 cards**. The 07-20-era offset observation should be treated as specific to that page or that reading, not as a live property of the generator.
+  **Claim (i) is confirmed and its consequence is worse than "IDs are wrong."** The handlers key state by real ID (`decisions[pid] = 'APPROVE'`, `notes[pid] = ...` where `pid` is the real `proposal_id`), but `submitDecisions()` iterates the synthetic `['PROP-2026-08-07-001' … '-047']` array and evaluates `decisions[pid] || 'PENDING'` against it. Those keys never collide. **So the export cannot emit anything but `PENDING` for every item, and `notes[pid]` — every CHANGE and CHECK note Tom types — is silently dropped in the same step.** The failure is not mislabeling; it is total loss of the decision payload.
+  **This is empirically corroborated in the archive, not merely inferred from source.** `2026-05-28_decisions.md` records: *"Received decision email dated 2026-05-26 … listing 28 proposals (PROP-2026-05-26-001 through -028) all marked `PENDING`. `PENDING` is not in the recognized decision set … so no files were moved."* That is exactly this bug's signature, observed in the wild. `2026-07-23_decisions.md` records the companion symptom: 7 phantom positional IDs emitted for a 2-card page.
+  **Open question Agent 16 cannot resolve and is not attempting to:** if the page can only emit `PENDING`, the 47 APPROVEs in `2026-08-08_decisions.md` did not come from Tom's per-card clicks. They came either from Tom stating a blanket approval alongside the export, or from the ingesting agent interpreting the export. Both are plausible; distinguishing them requires the source email, which Agent 16 has not accessed and will not. **The operational point stands regardless: the review page cannot currently transmit a non-uniform decision set.** A pass in which Tom approves most items but denies or flags a few will, on present evidence, arrive as uniform-or-nothing — and the notes explaining the exceptions will be gone. That is a sufficient mechanism for the 2026-07-20 two-item loss without needing any button-offset hypothesis.
+  **Revised recommendation for Tom (upgraded from "fix before the next review pass"):** the one-line repair at `tools/generate_review_page.py` line 304 — emit each card's real `proposal_id` into `pids` instead of the synthetic positional sequence — is now the difference between a review page that can carry your judgments and one that can only carry unanimity. File is unmodified (mtime still **2026-05-18 20:49**); Agent 16 has not edited it, as tooling repair is outside remit. **The 2026-08-08 pass survived only because it was uniform.** The two items now in `pending/` are a small, safe queue on which to verify the fix before the next large pass.
+
+- **PENDING-MOVEMENT NOTE:** `pending/` **2** (was 47), `approved/` **301** (was 254), `denied/` **1**, `needs_review/` **1**. All movement accounted for and reconciled above; nothing left the queue unaccounted.
+
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run against the new decision file as well. Content remains recoverable from `review/2026-07-20_review.html` (now at `review/_trash/2026-07-20_review.html`, 36 cards, intact) and both live source URLs.
+
+- **TOOLING NOTE — carried from 2026-08-04, unchanged.** WATCH-002's YouTube-caption route remains unexercisable: `web_fetch` refuses `https://www.youtube.com/watch?v=vshC_TxwrVo` ("URL not in provenance set") and the video ID is not search-indexed. Not retested this run (the check is not due). **One-line fix available to Tom:** paste that URL verbatim into a Cowork session once. Failing that, authorize striking the caption route from WATCH-002's check method.
+
+- **MAINTENANCE FLAG — carried, still binding.** `watch_list.md` is **~337 KB / 3,835 lines** before this entry and grows ~1.5 KB per run. It remains above the Read-tool ceiling; Agent 16 again worked from line-ranged shell reads and appended by shell. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (not executed — this restructures Tom's vault, so it stays his call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days in `watch_list.md`. No data lost, fully reversible.
+
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-11 — WATCH-002 (Wright episode content availability; caption route pending the provenance fix above), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 4.
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due today, both due 2026-08-11. No intake in any channel; nothing resolved; nothing stale. Decision archive coverage now current through **2026-08-08**; review-pass gap reset to **1 day**; pending queue drained 47 → 2 with full reconciliation. **Open for Tom:** (1) **the `generate_review_page.py` line-304 fix — diagnosis revised and sharpened this run: the export drops every per-card decision and every note, so the page can only transmit unanimity; verify the fix against the current 2-item queue before the next large pass**; (2) resolve the two undisposed 2026-07-19 proposals; (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002; (4) the watch-list run-log archival (file still above the Read-tool ceiling); (5) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-09.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-10
+
+**Run context:**
+- One day since the last logged run (2026-08-09). **No watch item was due today** — WATCH-002 and WATCH-003 both last checked 2026-08-04 at weekly cadence; next due **2026-08-11**. No check counts incremented. No intake in any of the three channels; nothing resolved; nothing stale.
+- **The material result of this run is a correction to the verification plan Agent 16 itself recommended yesterday.** The 2026-08-09 summary told Tom to verify the `generate_review_page.py` line-304 fix against the current small queue. Agent 16 read the generator source and the live 2026-08-08 review page this run and found that **that queue is a degenerate case in which the bug is invisible** — verifying against it would produce a false pass. Details and a replacement verification plan below.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone (mtime still 2026-05-14). `grep -rL "TRACKED-16"` returned nothing: **no untracked items.**
+- `review/archive/`: **17 files**, unchanged; latest still `2026-08-08_decisions.md`. Its header line reads `## Decisions (47 APPROVE, 0 DENY, 0 CHECK, 0 CHANGE)` — the single regex hit for DENY/CHECK/CHANGE/CONDITIONAL in the file is that header, not a disposition. **No new Channel 1 intake.** Coverage remains current through 2026-08-08.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, `agents/16_deferred_action_monitor_agent.md` (this agent's own format template). Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches.
+
+**Condition Checks:**
+- **None due.** WATCH-002 and WATCH-003 both remain WATCHING at check count **3**; next formal check 2026-08-11 (→ count 4).
+- *Incidental re-verification, WATCH-003 (not a check, no counter incremented):* `review/archive/` gained no file since the 2026-08-08 decisions archive, so no later disposition can have been recorded. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for both slugs: **nothing**. The new `review/2026-08-08_review.html` (2 cards) contains **zero** occurrences of either item, as expected — the source files are still absent from `pending/`, so they cannot appear as cards. Condition NOT met. Review-pass gap: 2 days.
+- The web-facing half of WATCH-002 (source-page body text; YouTube captions for `vshC_TxwrVo`) was **not** exercised this run — it belongs to the 2026-08-11 check.
+
+**Stale Item Check:**
+- Both active items at check count 3, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** Threshold date remains **2026-08-25** (08-11 → 4, 08-18 → 5, 08-25 → 6). Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks; the stale threshold is the wrong instrument for them.
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING at count 3; one resolved item indexed (WATCH-001); intake clean across all three channels.
+
+**Notes:**
+
+- **TOOLING FLAG — CORRECTION TO YESTERDAY'S VERIFICATION ADVICE. The 2-item queue cannot detect the bug; the *next* pass will exhibit it.** Agent 16 read `tools/generate_review_page.py` line 304 directly this run. The synthetic array is built as `[f'PROP-{run_date}-{i+1:03d}' for i in range(len(proposals))]` — the prefix is the **page's run date**, and the suffix is **card position**. The export loop is key-based (`decisions[pid]`, `notes[pid]`), so the payload survives **exactly when the synthetic key set happens to equal the real `proposal_id` set**, and is destroyed otherwise.
+  - **On `review/2026-08-08_review.html` the sets collide by accident.** Both queued proposals were filed on 2026-08-08 and the page's run date is 2026-08-08, so the synthetic array `['PROP-2026-08-08-001', 'PROP-2026-08-08-002']` is identical to the two real IDs (verified against the `proposal_id:` frontmatter in `pending/`: the Wolfram item is `-001`, the Levin item is `-002`). Lookup is by key, not position, so the inverted card order (card `-002` renders first) is harmless. **This page would export Tom's decisions and notes correctly.** That is luck, not a fix — `tools/generate_review_page.py` is unmodified (mtime still **2026-05-18 20:49**).
+  - **Consequence: yesterday's recommendation would have produced a false pass.** A test run against this queue shows a clean export and proves nothing about the defect.
+  - **The next pass is a genuine test, and is predicted to fail.** `pending/` grew 2 → **4** overnight with two Rohr items filed 2026-08-09 (`PROP-2026-08-09-001` *Job Weekly Summary — Joy Anyway*, `PROP-2026-08-09-002` *Franciscan Mysticism: Grace and Connectivity*). The queue now spans **two filing dates**. Any review page generated on or after 2026-08-10 will emit `PROP-<page-date>-001…004`, which collides with **none** of the four real IDs — so all four items export as `PENDING` and every CHANGE/CHECK note is dropped. This is the same signature already recorded in the archive (`2026-05-28_decisions.md`: 28 items received as uniform `PENDING`; `2026-07-23_decisions.md`: 7 phantom positional IDs for a 2-card page).
+  - **Restated rule, which is the useful form of this flag:** the review page transmits Tom's judgments only when every queued proposal was filed on the page's own run date. Same-day queues work by coincidence; any mixed-date queue silently loses the entire decision payload. The 2026-08-08 pass (47 items, all filed 2026-08-07 per the recovered mapping) and this 2-item page both satisfied that accident. **The current 4-item queue does not.**
+  - **Recommendation for Tom (unchanged in substance, corrected in method):** apply the one-line repair at line 304 — emit each card's real `proposal_id` into `pids` instead of the synthetic positional sequence — **before generating the next review page**, and verify by generating a page over the present mixed-date 4-item queue and confirming the export names `PROP-2026-08-08-001/-002` and `PROP-2026-08-09-001/-002` rather than a `PROP-<today>-001…004` run. Agent 16 has not edited the file; tooling repair is outside remit.
+
+- **NEW ARTIFACT NOTED — no watch-list bearing.** `review/2026-W32_weekly_review.html` (written 2026-08-09 20:00, 33 KB) is a narrative weekly summary — headings *Progress this week*, *QC controls*, *Representative sample — Day 307: You Made It*. It contains **zero** decision cards, zero `decide(...)` handlers, and no reference to the 2026-07-19 items. It is not a decision surface and creates no Channel 1 intake.
+
+- **PENDING-MOVEMENT NOTE:** `pending/` **4** (was 2), `approved/` **301**, `denied/` **1**, `needs_review/` **1**. The two additions are new 2026-08-09 Rohr proposals; nothing left the queue. `review/2026-08-08_review.html` (2 cards, generated 2026-08-08 04:55) has no corresponding decisions file and predates the two Rohr arrivals, so it is stale as a review surface — a fresh page will be needed, which is precisely the generation the line-304 fix should precede.
+
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run. Content remains recoverable from `review/_trash/2026-07-20_review.html` (36 cards, intact) and both live source URLs.
+
+- **TOOLING NOTE — carried from 2026-08-04, unchanged.** WATCH-002's YouTube-caption route remains unexercisable: `web_fetch` refuses `https://www.youtube.com/watch?v=vshC_TxwrVo` ("URL not in provenance set") and the video ID is not search-indexed. Not retested this run (the check is not due). **One-line fix available to Tom:** paste that URL verbatim into a Cowork session once. Failing that, authorize striking the caption route from WATCH-002's check method.
+
+- **MAINTENANCE FLAG — carried, still binding.** `watch_list.md` is **~348 KB / 3,897 lines** before this entry and grows ~1.5 KB per run. It remains above the Read-tool ceiling; Agent 16 again worked from line-ranged shell reads and appended by shell. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (not executed — this restructures Tom's vault, so it stays his call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days in `watch_list.md`. No data lost, fully reversible.
+
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-11 — WATCH-002 (Wright episode content availability; caption route pending the provenance fix above), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 4.
+
+**Agent 16 Status:** Operational. Two items WATCHING, neither due today, both due 2026-08-11. No intake in any channel; nothing resolved; nothing stale. Decision archive coverage current through **2026-08-08**; review-pass gap **2 days**; pending queue 2 → 4 (two new Rohr proposals, nothing stranded). **Open for Tom:** (1) **the `generate_review_page.py` line-304 fix — apply it before the next review page is generated; yesterday's suggestion to verify against the 2-item queue is withdrawn (that queue masks the bug by date coincidence), and the present mixed-date 4-item queue is the correct test**; (2) resolve the two undisposed 2026-07-19 proposals; (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002; (4) the watch-list run-log archival (file still above the Read-tool ceiling); (5) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-10.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-11
+
+**Run context:**
+- One day since the last logged run (2026-08-10). **Both watch items were due today** and both were checked — first formal checks since 2026-08-04. WATCH-002 and WATCH-003 advance to check count **4**. Neither condition met; nothing resolved; nothing stale; no intake in any of the three channels.
+- **The material result of this run is that the predicted review-page failure has now actually been generated.** `review/2026-08-10_review.html` exists (8 cards, mixed filing dates), the generator is unmodified, and Agent 16 read its export code directly. The 2026-08-10 run predicted this page would lose the whole decision payload; the truth is worse in kind — **it loses exactly half, silently, in a way that makes the export look plausible.** Details below.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone. `grep -rL "TRACKED-16"` returned nothing: **no untracked items.** No new Channel 1 intake from this folder.
+- `review/archive/`: **17 files**, unchanged; latest still `2026-08-08_decisions.md` (47 APPROVE, 0 DENY/CHECK/CHANGE). No decisions file for the 2026-08-10 review page. **No new Channel 1 intake.** Coverage remains current through 2026-08-08.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, `agents/16_deferred_action_monitor_agent.md` (this agent's own format template). Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches. All 8 pending items await Tom's review, not Agent 16.
+
+**Condition Checks:**
+- **WATCH-002 — CHECKED, count 3 → 4. Condition NOT met.** Source page fetched (HTTP 200, 53.5 KB) and is byte-identical in every diagnostic respect to the 07-28 and 08-04 fetches: `article:modified_time` still 2026-07-17T01:11:13+00:00 (unchanged for a third consecutive check), `entry-content` still a single YouTube embed figure (`vshC_TxwrVo`, one occurrence), no body text, no show notes, no transcript. Targeted web search returned no episode-specific result. **New this check:** the caption route was retested on the `/embed/` URL form — which appears verbatim inside the fetched page body — on the hypothesis that it would now be in the provenance set. It is not; `web_fetch` refused it identically to the `/watch` form. **A URL appearing as text inside a fetched document does not enter the provenance set.** That eliminates the last route Agent 16 could take on its own. See TOOLING NOTE below — the ask of Tom is now unavoidable rather than merely convenient.
+- **WATCH-003 — CHECKED, count 3 → 4. Condition NOT met.** `review/archive/` unchanged at 17 files; no decision file since 2026-08-08, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for both proposal IDs and both slugs: zero matches. Vault-wide `find`: nothing. The new 8-card `review/2026-08-10_review.html` contains zero occurrences of either item — expected, since the files remain absent from `pending/`. Review-pass gap: **3 days**.
+
+**Stale Item Check:**
+- Both active items now at check count **4**, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** Threshold date remains **2026-08-25** (08-18 → 5, 08-25 → 6). Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks; the stale threshold is the wrong instrument for them, and Agent 16 will say so again rather than let the counter imply otherwise.
+
+**Watch List Status:**
+- Items checked: 2
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Status: Two items WATCHING at count 4; one resolved item indexed (WATCH-001); intake clean across all three channels.
+
+**Notes:**
+
+- **TOOLING FLAG — ESCALATED. The predicted page now exists, and the failure mode is partial loss, not total loss.** `review/2026-08-10_review.html` (121.7 KB, generated 2026-08-10 05:02) was built over the mixed-date queue the 08-10 run flagged as the genuine test. `tools/generate_review_page.py` is still unmodified (mtime **2026-05-18 20:49**), so the page carries the defect. Agent 16 read the page's export code rather than inferring:
+  - **Real IDs are correct everywhere except the export array.** All 8 `id="card-…"` values and all 32 handler calls (24 `decide(...)` + 8 `decideChange(...)`) carry real `proposal_id`s, correctly paired — the state writes (`decisions[pid]`, `notes[pid]`) are keyed by real ID. No card/button offset. That part of the page is sound.
+  - **`submitDecisions()` iterates a synthetic array.** Verbatim: `const pids = ['PROP-2026-08-10-001' … 'PROP-2026-08-10-008'];` then `const d = decisions[pid] || 'PENDING'; const n = notes[pid] ? ' | ' + notes[pid] : '';`. Page date + card position, exactly as line 304 builds it.
+  - **The overlap is partial, which is the dangerous part.** The queue holds `PROP-2026-08-08-001/-002`, `PROP-2026-08-09-001/-002`, `PROP-2026-08-10-001/-002/-003/-004`. The synthetic array collides with **four** real IDs (the 08-10 Levin/Friston items) and misses **four** (the 08-08 Wolfram/Levin and 08-09 Rohr items), while inventing four phantoms (`-005` … `-008`).
+  - **Predicted export if Tom uses this page as it stands:** the four 08-10 items export their true decisions and notes; the four 08-08/08-09 items are **never emitted at all** — no line, no `PENDING`, no trace — and their CHANGE/CHECK notes are dropped; four phantom IDs export as `PENDING`. Eight lines out for eight cards in, so the email *looks* complete and the arithmetic *looks* right. **This is a more deceptive failure than the uniform-`PENDING` case already in the archive (`2026-05-28_decisions.md`), because a half-correct export invites the reader to trust it.** It is also a sufficient and precise mechanism for the 2026-07-20 two-item loss now tracked as WATCH-002/003 — items silently absent from an otherwise plausible decision set is exactly the artifact that pass left behind.
+  - **Recommendation for Tom — now time-critical, not housekeeping:** apply the one-line repair at `tools/generate_review_page.py` line 304 (emit each card's real `proposal_id` into `pids`) and **regenerate `2026-08-10_review.html` before submitting decisions from it.** If the page is submitted as-is, expect to lose the Wolfram, Levin (08-08) and both Rohr (08-09) dispositions without any signal that they are missing. Verification remains as stated 2026-08-10: a correct export names `PROP-2026-08-08-001/-002`, `PROP-2026-08-09-001/-002`, `PROP-2026-08-10-001…-004` and no phantoms. Agent 16 has not edited the file; tooling repair is outside remit.
+
+- **TOOLING NOTE — REVISED, and the ask of Tom is now unavoidable.** WATCH-002's YouTube-caption route was retested this run in its most favourable form and failed: `web_fetch` refuses `https://www.youtube.com/embed/vshC_TxwrVo?feature=oembed` — the exact string present in the fetched page body — with "URL not in provenance set … Retries will fail," identically to the `/watch` form. The 08-04 note left open the possibility that some URL construction would satisfy provenance; **that possibility is now closed.** Only two paths remain, both Tom's: (1) paste `https://www.youtube.com/watch?v=vshC_TxwrVo` verbatim into a Cowork session once, which admits it to the provenance set for that session; or (2) authorize striking the caption route from WATCH-002's check method, leaving the source-page and search halves as the whole check. Agent 16 will keep executing half (a) weekly either way.
+
+- **PENDING-MOVEMENT NOTE:** `pending/` **8** (was 4), `approved/` **301**, `denied/` **1**, `needs_review/` **1**. The four additions are 2026-08-10 arrivals — three Levin (`causally-emergent-alignment-hypothesis` `-001`, `metabolic-problem-solving-homeostatic-feedback` `-002`, `language-game-talking-to-non-human-systems` `-003`) and one Friston (`generative-modelling-nonequilibrium-statistical-mechanics` `-004`). Nothing left the queue; nothing stranded. Note the queue now spans **three** filing dates, which is what makes the export defect above bite.
+
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run against the archive, the inbox, the vault, and the new 8-card review page. Content remains recoverable from `review/_trash/2026-07-20_review.html` (319 KB, 36 cards, intact) and both live source URLs. **This run's export finding strengthens the "incidental loss" reading**: a partial-overlap export drops named items silently, which matches the observed artifact better than a hypothesis requiring deliberate withholding followed by file deletion. Agent 16 still cannot decide between the readings and has not acted.
+
+- **MAINTENANCE FLAG — carried, still binding.** `watch_list.md` is **~358 KB / 3,960 lines** before this entry and grows ~1.5 KB per run. It remains above the Read-tool ceiling; Agent 16 again worked from line-ranged shell reads and appended by shell. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (not executed — this restructures Tom's vault, so it stays his call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days in `watch_list.md`. No data lost, fully reversible.
+
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-18 — WATCH-002 (Wright episode content availability; caption route pending Tom's provenance paste or authorization to strike), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 5.
+
+**Agent 16 Status:** Operational. Two items checked and still WATCHING at count 4; nothing resolved; nothing stale; no intake in any channel. Decision archive coverage current through **2026-08-08**; review-pass gap **3 days**; pending queue 4 → 8 (four new 2026-08-10 Levin/Friston proposals, nothing stranded). **Open for Tom, in priority order:** (1) **apply the `generate_review_page.py` line-304 fix and regenerate `2026-08-10_review.html` before submitting decisions from it — as generated, that page will silently drop the four 08-08/08-09 dispositions and their notes while emitting a complete-looking 8-line export**; (2) resolve the two undisposed 2026-07-19 proposals (INTEGRITY FLAG); (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002 — the self-service routes are now exhausted; (4) the watch-list run-log archival (file still above the Read-tool ceiling); (5) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-11.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-12
+
+**Run context:**
+- One day since the last run (2026-08-11). **No watch item was due today** — both are weekly-cadence and were checked yesterday; next due **2026-08-18**. Counters were not incremented and no condition check was fabricated. Intake was scanned in all three channels (clean), and the open flags were re-verified against the vault.
+- **The material result of this run: the TOOLING FLAG is RESOLVED.** `tools/generate_review_page.py` has been repaired and a corrected review page — `review/2026-08-11_review.html` — now exists. Verified from source and artifact, not inferred. Details below.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone. `grep -rL "TRACKED-16"` returned nothing: **no untracked items.** No new Channel 1 intake.
+- `review/archive/`: **17 files**, unchanged; latest still `2026-08-08_decisions.md`. **No decisions file exists for either the 08-10 or the 08-11 review page** — no dispositions have been submitted from either. No new Channel 1 intake. Coverage current through 2026-08-08; review-pass gap **4 days**.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, this agent's own format template. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches.
+
+**Condition Checks:**
+- **WATCH-002 — NOT DUE.** Last checked 2026-08-11, count 4, weekly cadence → next check 2026-08-18. No fetch performed; page state unchanged as of yesterday's check.
+- **WATCH-003 — NOT DUE.** Last checked 2026-08-11, count 4 → next check 2026-08-18. Passive re-verification only (run at zero cost as part of the census): `review/archive/` still 17 files with no post-08-08 decisions file, so no later disposition can exist; vault-wide `find` for `*beatitudes-week-two*` and `*who-is-this-god*` and content grep for `2026-07-19-001` / `2026-07-19-003` across `review/archive/` and `inbox/` → **zero matches**. Recorded here rather than in the item's Result history, because it was not a due check and must not inflate the counter.
+
+**Stale Item Check:**
+- Both active items at count **4**, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** Threshold date remains **2026-08-25** (08-18 → 5, 08-25 → 6). Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks.
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+
+**Notes:**
+
+- **TOOLING FLAG — RESOLVED. The line-304 defect is fixed and a correct review page now exists.** Verified two ways:
+  - **Source.** `tools/generate_review_page.py` line 304 now reads `const pids = {[p.get("proposal_id") or f'PROP-{run_date}-{i+1:03d}' for i, p in enumerate(proposals)]!r};` — each card's real `proposal_id` is emitted, with the synthetic position-based ID retained only as a fallback for proposals that lack one. All 10 current `pending/` proposals carry a `proposal_id`, so the fallback is not exercised. (File mtime is unreliable in this vault — a sync stamped many files at 2026-08-11 21:00 — so this finding rests on content, not timestamps.)
+  - **Artifact.** `review/2026-08-11_review.html` (141.9 KB, 10 cards, `const TOTAL = 10`) exports `const pids = [...]` containing **exactly the 10 real proposal IDs** — `PROP-2026-08-08-001/-002`, `PROP-2026-08-09-001/-002`, `PROP-2026-08-10-001…-004`, `PROP-2026-08-11-001/-002` — a set-exact match to the 10 `id="card-…"` values and to the 10 `proposal_id`s in `pending/`. **No phantoms, no omissions.** (Array order differs from card order; irrelevant, since the export looks each decision up by pid.) Handler wiring is also sound: 30 `decide(...)` + 10 `decideChange(...)` calls, exactly 3+1 per card, every one keyed to its own card's ID — **no card/button offset**, the second half of the 07-20 defect.
+  - **Consequence:** a decision pass run from `2026-08-11_review.html` will export all ten dispositions and their notes correctly. The predicted silent loss of the four 08-08/08-09 dispositions **did not occur** — the fix landed before any decisions file was written from the defective page.
+- **SUPERSEDED-PAGE WARNING — the one thing still worth Tom's attention here.** `review/2026-08-10_review.html` is still present and still carries the old defect: its export array is the synthetic `PROP-2026-08-10-001 … -008`, colliding with four real IDs, missing the four 08-08/08-09 items, inventing four phantoms. It is fully superseded by the 08-11 page (same 8 items plus the 2 new 08-11 arrivals). **Submitting from the 08-10 page would still silently drop the Wolfram, Levin (08-08) and both Rohr (08-09) dispositions.** Recommended: review from `2026-08-11_review.html` and delete or archive the 08-10 page so it cannot be opened by mistake. Agent 16 has not deleted it — file removal in Tom's vault is outside remit.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21):** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file; tracked as WATCH-003 and WATCH-002. Re-verified negative this run. **Bearing of the fix on the two readings:** the repair removes the defect going forward but does not adjudicate what happened on 07-20 — the 07-20 page was generated by the unfixed tool, so the partial-overlap export remains a sufficient mechanism for a silent 2-item loss, and the "incidental loss" reading still fits the artifact at least as well as "deliberate withholding followed by deletion." Agent 16 still cannot decide between them and has not acted. Content remains recoverable from `review/_trash/2026-07-20_review.html` and both live source URLs.
+- **TOOLING NOTE — carried unchanged.** WATCH-002's YouTube-caption route (`vshC_TxwrVo`) remains unexercisable by Agent 16: `web_fetch` refuses both the `/watch` and `/embed/` URL forms as outside the provenance set, and a URL appearing as text inside a fetched page does not enter that set. Two paths, both Tom's: paste `https://www.youtube.com/watch?v=vshC_TxwrVo` into a Cowork session once, or authorize striking the caption route from the check method. Agent 16 continues executing the source-page and search halves weekly either way.
+- **PENDING-MOVEMENT NOTE:** `pending/` **10** (was 8), `approved/` **301**, `denied/` **1**, `needs_review/` **1**. Two additions, both 2026-08-11 arrivals: `PROP-2026-08-11-001` (Hawkins — thousand-brains systems, peer-reviewed) and `PROP-2026-08-11-002` (Hoffman — "Traces of the Other" recording). Nothing left the queue; nothing stranded. Queue now spans four filing dates and is fully and correctly carded on the 08-11 page.
+- **MAINTENANCE FLAG — carried, still binding.** `watch_list.md` is **~380 KB / 4,015 lines** before this entry. Above the Read-tool ceiling; worked from line-ranged shell reads and appended by shell again. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days here. Reversible, no data lost.
+- **BUDGET NOTE (Rule 6, surfaced not hidden):** this run exceeded the 4,000-token per-task budget. The floor cost is structural — the watch list must be read in ranges because it exceeds the Read ceiling, and verifying the tooling fix required reading both the generator and the review-page export. The maintenance-flag split above is the standing remedy.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-18 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 5.
+
+**Agent 16 Status:** Operational. No items due; both WATCHING at count 4; nothing resolved; nothing stale; no intake in any channel. Decision archive coverage current through **2026-08-08**; review-pass gap **4 days**; pending queue 8 → 10. **Open for Tom, in priority order:** (1) **review from `2026-08-11_review.html`, and delete or archive the superseded, still-defective `2026-08-10_review.html`**; (2) resolve the two undisposed 2026-07-19 proposals (INTEGRITY FLAG); (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002; (4) the watch-list run-log archival; (5) the needs_review tombstone deletion. **Closed this run:** the `generate_review_page.py` export defect (was item 1 for three consecutive runs).
+
+---
+
+*Run completed 2026-08-12.*

@@ -369,4 +369,23 @@ PRS-39:
   Confidence: Speculative
   Evidence: Episode description only: "the relationship between Jews and Samaritans." **No solution is asserted here because none is known.** This is an incomplete triplet by design rather than a guess.
 
-*Total PRS triplets: 39*
+---
+PRS-40:
+  Problem: What is the referent of the "elect lady" of 2 John 1 — an individual woman or a church — and what does the answer imply about how Scripture personifies a community? PRS-8 anchors unity-in-distinction in Ephesians ("one new humanity"), but that text describes a body composed of members; it does not show the New Testament *addressing* a community in the second person singular, as a single person.
+  Resource: Wright's reading of the addressee as a church addressed as a corporate person, set in its first-century epistolary context — a letter written to a congregation in the grammatical register one uses for an individual.
+  Solution: Supplies a Johannine scriptural anchor, independent of the Pauline corpus, for treating the people of God as a real corporate person rather than an aggregate. The composite is not merely describable as one thing; it is addressable as one thing, and the text's own epistolary form is the evidence.
+  Date Added: 2026-08-09
+  Source: Is the Greek Orthodox Church Biblical? — Ask NT Wright Anything (Premier Unbelievable, hosted by Mike Bird); PROP-2026-07-26-003
+  Confidence: Medium
+  Evidence: Wright's answer to the 2 John question in the episode, as reported by the proposal. **Source caveat:** the proposal supplies no verbatim quotation and no timestamp, so the reading is reported rather than quoted; the identification of the elect lady with a church is in any case Wright's long-standing published position and not novel to this episode. Verify against the audio if the Wright-Stump corporate-substance pairing is pressed.
+
+PRS-41:
+  Problem: How should confessional divides that postdate the New Testament — Orthodox versus Protestant on icons, tradition, and the marks of a true church — be adjudicated? PRS-02 (faithful improvisation) governs how a single tradition extends itself into unanticipated circumstances; it does not say how two traditions with a shared source text and divergent later development settle a dispute between them.
+  Resource: Wright's method of returning contested later questions to their second-temple and New Testament setting rather than to Reformation-era polemical categories — treating the confessional frame itself as a historically situated artifact rather than as the court of appeal.
+  Solution: Take the biblical narrative as the adjudicating frame for tradition-level disputes, so that "which church is biblical?" becomes a question about fit with the story rather than about confessional boundary-marking. This dissolves rather than answers the original question: the Reformation-era framing is shown to be the wrong instrument, which is a different move from ruling for one side.
+  Date Added: 2026-08-09
+  Source: Is the Greek Orthodox Church Biblical? — Ask NT Wright Anything (Premier Unbelievable, hosted by Mike Bird); PROP-2026-07-26-003
+  Confidence: Speculative
+  Evidence: The proposal reports Wright's framing of the Orthodox/icons questions in the episode, but supplies no quotation — the triplet generalizes a described method into a stated principle, which Wright may not assert in this form here. Adjacent to MacIntyre's tradition-constituted rationality, with the standing caveat that MacIntyre sits outside the 13-thinker bridges roster. **Downgrade or discard rather than amend if the audio shows Wright declining the generalization.**
+
+*Total PRS triplets: 41*

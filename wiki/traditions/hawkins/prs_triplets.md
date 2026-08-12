@@ -181,7 +181,48 @@ PRS-18:
   Confidence: High
 
 ---
-*Total PRS triplets: 18*
+PRS-19:
+  Label: P19 (PROP-2026-07-28-001) — Thalamus as reference-frame transformer, not relay
+  Problem: The Thousand Brains Theory requires every cortical column to represent objects in an object-centric reference frame, but sensory input arrives in body-centric (egocentric) coordinates. No mechanism for performing that coordinate transform had been specified — the theory assumed the transform without locating it anatomically.
+  Resource: The thalamus reinterpreted as a reference-frame transformer rather than a relay. Sensory spikes entering thalamic "relay" cells are transformed into object-centric coordinates before reaching cortex; the known modulatory cortico-thalamic feedback projection is reinterpreted as the signal that specifies *which* transform to apply.
+  Solution: A concrete anatomical home for the coordinate transform the theory needs, which simultaneously supplies a functional answer to the long-open question of what the thalamus is for. It is falsifiable: it predicts thalamic activity should vary with the cortically-inferred object identity and pose, not with sensory input alone. Since reference frames are the single Hawkins concept the C2A2 architecture leans on hardest (PRS-11), a proposed biological mechanism for performing the transform is load-bearing rather than incidental.
+  Date Added: 2026-08-09
+  Source: Thousand Brains Project, "Hierarchy or Heterarchy? ... A Plain-Language Explainer" (2026-03-05), unpacking arXiv:2507.05888; PROP-2026-07-28-001
+  Confidence: Medium
+  Evidence: "We propose that the thalamus is not just relaying sensory information to the cortex; it is transforming it into the reference frame of the object being sensed by the column. The feedback connection from the cortex to the thalamus informs it of what reference frame transform is required." (explainer, "The Brain Translates on the Fly"). Absence of any prior thalamic claim in this file was verified by grep before ingestion, per the proposal's own gate.
+
+PRS-20:
+  Label: P20 (PROP-2026-07-28-001) — Hierarchy encodes composition, not abstraction
+  Problem: If every region represents complete objects (rather than lower regions representing edges and higher regions representing objects), what work is left for hierarchy to do? The Thousand Brains "every column models whole objects" claim appeared to make hierarchy explanatorily idle.
+  Resource: Compositional reuse via model-ID-as-feature. A column in region 1 modeling an eye and a column in region 2 modeling a dog's face observe the same region of space; the *identity* of region 1's eye-model enters region 2's model as a feature located at a point.
+  Solution: Hierarchy is retained but re-purposed — it encodes composition, not abstraction. Previously learned components are reused rather than relearned, and each level is still a collection of features-at-locations, preserving the uniform column architecture. Higher regions also receive direct sensory and motor input, so no region is downstream-only. This deepens PRS-06, which recorded the heterarchy framework only at the level of "hierarchical and non-hierarchical connections both exist."
+  Date Added: 2026-08-09
+  Source: Thousand Brains Project, "Hierarchy or Heterarchy? ... A Plain-Language Explainer" (2026-03-05), unpacking arXiv:2507.05888; PROP-2026-07-28-001
+  Confidence: High
+  Evidence: "The ID of the detailed model of the eye in region 1 becomes a feature in the model in region 2. This way, increasingly complex compositional models can be represented, and previously learned components can be reused."
+
+PRS-21:
+  Label: P21 (PROP-2026-08-04-001) — Structure, not scale, as the criterion for machine understanding
+  Problem: Is the current LLM scaling paradigm a path to machine understanding, or a local maximum that cannot reach it? The question is usually argued by assertion; there is no agreed criterion that would settle it.
+  Resource: Hawkins' "understanding = predictive sensorimotor model in a reference frame" criterion, stated for a general audience and set directly against Michael Wooldridge's defense of the scaling programme within a single broadcast — an adversarial format that forces the claim into checkable terms.
+  Solution: Reframes the dead-end question as an empirical one about model *structure* rather than model *size*: a system understands an object when it can predict what its own actions will reveal next, a testable property no text-only system possesses regardless of parameter count. This sharpens PRS-18 (the Ep. 14 "what's missing" diagnosis) by supplying the criterion in a form that discriminates cases, rather than naming a deficit.
+  Date Added: 2026-08-09
+  Source: "Are Large Language Models a Dead End?" — The Artificial Human, BBC Radio 4 (2026-02-25); PROP-2026-08-04-001
+  Confidence: Medium
+  Evidence: Episode premise is whether LLM limitations obstruct "achieving AI that understands the world beyond what it's learned from the internet"; Hawkins enters ~14:57 to argue the Thousand Brains Project "can produce AI models that understand the world similar to how humans understand the world" (TBP Videos & Podcasts listing). Confidence held at Medium rather than the proposal's High because the substantive claim substantially overlaps PRS-18; the new content is the criterion's framing, not a new result.
+
+PRS-22:
+  Label: P22 (PROP-2026-08-04-001) — Paradigm dissent conducted by institution-founding
+  Problem: If leading researchers believe the dominant paradigm is exhausted, why does research capital keep flowing to it — and what institutional form does dissent need in order to survive?
+  Resource: The episode's framing that this is "an increasingly common opinion among leading researchers who are setting up their own research labs to explore other approaches to AI despite the industry's focus on LLMs."
+  Solution: Identifies the independent nonprofit research lab — TBP itself, spun out of Numenta in January 2025 with a patent non-assert pledge — as the structural answer: paradigm rivalry in AI is now conducted through institution-founding rather than through journal argument. This is a live datum for the C2A2 tradition-accelerator thesis, since it describes a tradition acquiring the infrastructure needed to become articulate.
+  Date Added: 2026-08-09
+  Source: "Are Large Language Models a Dead End?" — The Artificial Human, BBC Radio 4 (2026-02-25); PROP-2026-08-04-001
+  Confidence: Medium
+  Evidence: Episode framing as reported in the BBC listing; corroborated independently by the Thousand Brains Project's own nonprofit formation and non-assert pledge.
+
+---
+*Total PRS triplets: 22*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

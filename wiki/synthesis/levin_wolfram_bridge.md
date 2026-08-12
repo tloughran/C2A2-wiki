@@ -48,3 +48,14 @@ Levin's own use of the meta-analysis is defensive — it converts "you are wrong
 **Question the wiki cannot yet answer.** Does the meta-analysis report the criterion-space in enough detail to test a clustering prediction, or only the spread? This determines whether the comparison above is a research task or merely a hope. Someone should read the paper's figures with that question in hand.
 
 *Also this week:* PROP-2026-07-06-002's pattern-persistence-over-substrate framing raises a distinct Wolfram question — whether computational irreducibility bounds how much substrate can turn over before the large-scale pattern is no longer computably the same pattern. Recorded here; not developed.
+
+
+### 2026-08-09 — Substrate-neutrality from two directions, both unverified here
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md` (PROP-2026-08-08-001)
+
+**Why it sits at this intersection.** Levin also spoke at MC0001, and Adam Safron and Elena Sergeeva — both Tufts / Allen Discovery Center, Levin's institutional orbit — were on the roster, alongside Ellynne Dec of the Wolfram Institute. Two traditions with substantial presences at a founding assembly on machine consciousness.
+
+**Synthesis claim.** The co-location is the finding and it does not depend on content. Both programs hold that cognition is not tied to neural substrate — Wolfram from computational equivalence, Levin from demonstrated competence in non-neural tissue — and both were invited to an assembly convened around building it artificially. That the organizers reached for exactly these two among the substrate-neutral positions is a fact about how the field currently sorts itself, and it is the kind of sorting C2A2 is built to observe.
+
+**Open question the wiki cannot yet answer.** Do the two substrate-neutralities agree about what carries across substrates? Wolfram's is about computational capacity; Levin's is about goal-directedness and competence, which is not obviously the same property. The talks would say, and the wiki has neither. Levin's MC0001 talk is missing from the vault entirely and should be retrieved before anything is built on this pair.

@@ -302,4 +302,64 @@ PRS-32:
   Confidence: High
 
 ---
-*Total PRS triplets: 32*
+PRS-33:
+  Problem: Loneliness is robustly associated with worse physical and mental health outcomes in aging, but the mechanism is underspecified — it is unclear whether loneliness degrades general physiological regulation or something specific to social processing.
+  Resource: Graph-theoretic static and dynamic functional connectivity of the allostatic-interoceptive system (AIS), measured across matched neutral / pleasant / unpleasant social visualization conditions in the same participants (N = 73, Ma, West, Wulfekuhle, Escalante, Cascone, Frye, Leshin, Fredrickson, Cohen & Lindquist 2026, SCAN 21:nsaf124).
+  Solution: The loneliness x age interaction appears in the pleasant and unpleasant conditions and is absent in the neutral one, localizing the effect to affectively salient social cues rather than to general regulatory capacity — a brain-level specificity result consistent with positivity resonance being the operative unit rather than social contact in general.
+  Date Added: 2026-08-09
+  Source: Loneliness exacerbates age differences in the allostatic-interoceptive system during induced affect; PROP-2026-08-06-002
+  Confidence: High
+  Evidence: "Loneliness and age did not interact during the neutral condition to predict AIS functional connectivity, suggesting that the effects are specific to affective social cues." Static AIS coherence decreased with age in the pleasant condition only for high-loneliness participants; dynamic integration and coherence showed steeper negative age associations at higher loneliness in both pleasant and unpleasant conditions.
+
+---
+PRS-34:
+  Problem: Broaden-and-build predicts that positive social experience builds durable resources, but the theory has had no account of why the *capacity to be built* should itself decline — i.e. why some people appear less able to convert connection into resource.
+  Resource: The allostatic-interoceptive system as a measurable candidate mediator between socially salient experience and physiological regulation, with time-varying (dynamic) connectivity as the sensitive index.
+  Solution: A candidate mechanism for loneliness becoming self-sustaining — if the AIS is the machinery that converts a socially salient moment into a regulated bodily response, then loneliness-linked degradation of that machinery means the lonelier one is, the less a pleasant social moment can do.
+  Date Added: 2026-08-09
+  Source: Loneliness exacerbates age differences in the allostatic-interoceptive system during induced affect; PROP-2026-08-06-002
+  Confidence: Speculative
+  Evidence: The paper reports the loneliness x age connectivity interaction only. It does NOT test resource-building and does NOT test an upward or downward spiral. This triplet is an inference the finding licenses but does not demonstrate; ingested as an explicitly speculative research direction, not as a result.
+
+---
+PRS-35:
+  Problem: Affective neuroscience has looked for emotion in localized regions; that approach has not produced stable region-to-emotion mappings, leaving the neural status of discrete affective states unsettled.
+  Resource: Graph-theoretic static and dynamic network metrics — participation coefficient for cross-network integration, within-module degree for within-network coherence — applied to five intrinsic networks (salience, default mode, ventral attention, dorsal attention, frontoparietal) during a within-subject affect-induction task (N = 73, Ma, West et al. 2026, SCAN 21:nsag008; companion cohort to PRS-33).
+  Solution: Affective conditions are distinguished by *configuration* rather than by dedicated affect centers — supporting a constructionist account in which emotions emerge from flexible network states. For this tradition it changes what a positive-emotion claim means neurally: the unit of explanation becomes network reconfiguration, not an emotion locus.
+  Date Added: 2026-08-09
+  Source: Intrinsic network static and dynamic functional connectivity associated with induced affect; PROP-2026-08-06-003
+  Confidence: High
+  Evidence: "Static DAN within-module degree differentiated the negative from the neutral condition, whereas dynamic VAN participation coefficient differentiated the negative from the positive condition. These results are consistent with the constructionist account that emotions emerge from flexible network configurations." Note the limit: both discriminations involve the negative condition; no positive-vs-neutral contrast is reported.
+
+---
+PRS-36:
+  Problem: PRS-33 recorded the loneliness x age AIS result as "consistent with positivity resonance being the operative unit." But positivity resonance is defined by positive valence, and a result that is specific to *socially affective* cues does not discriminate a positive-valence construct from a valence-general one. The tradition's reading of its own first brain-level result was one step stronger than the reported pattern licenses.
+  Resource: The three-condition design read separately by metric rather than collapsed. Static AIS coherence x age x loneliness appears in the pleasant condition. Time-varying (dynamic) AIS integration and coherence x age x loneliness appear in BOTH the pleasant and the unpleasant conditions. Neither appears in neutral (N = 73, SCAN 21:nsaf124).
+  Solution: A corrected reading that confines the positive-specific claim to where it actually holds. Only the static coherence result is positive-specific; the dynamic result — the paper's more sensitive index — is valence-general across socially affective cues. The finding therefore supports "social affective salience is the operative variable" and, on the dynamic metric, does not single out positive valence. This is the first empirical pressure toward a valence-general resonance construct to arrive from inside this tradition's own lab rather than from an adjacent tradition.
+  Date Added: 2026-08-10
+  Source: Loneliness exacerbates age differences in the allostatic-interoceptive system during induced affect; PROP-2026-08-06-002
+  Confidence: High
+  Evidence: The source reports the static effect in the pleasant condition only ("average AIS coherence fell with age, but only in participants high in loneliness"), and the dynamic effects across both: "In both pleasant and unpleasant conditions, time-varying (dynamic) integration and coherence declined more steeply with age in the lonelier participants." Limitations: the source gives direction of effect only — no coefficients, effect sizes, or interval estimates — so the static/dynamic asymmetry is a difference in which contrasts were reported, not a quantified difference in magnitude. The design is cross-sectional (age differences, not aging), loneliness is measured rather than manipulated, and the stimulus is solitary visualization of an absent acquaintance.
+
+---
+PRS-37:
+  Problem: A construct defined by positive valence predicts, at minimum, that positive states are as neurally distinguishable as negative ones under matched induction. That prediction had never been checked inside this tradition's own imaging cohort.
+  Resource: The two companion papers read together against each other — same N = 73 cohort, same visualization paradigm, same matched neutral control, different network targets (nsag008 intrinsic networks; nsaf124 allostatic-interoceptive system).
+  Solution: In this cohort the negative/unpleasant condition is at least as neurally distinguishable as the positive one, and on the reported record more so. nsag008's two discriminations both involve the negative condition (static DAN within-module degree: negative vs neutral; dynamic VAN participation coefficient: negative vs positive), with no positive-vs-neutral contrast reported; nsaf124's dynamic effects span both valences while only its static effect is pleasant-specific. Positive valence carries no measurement privilege here, which is boundary pressure on a construct that grants it theoretical privilege.
+  Date Added: 2026-08-10
+  Source: Intrinsic network static and dynamic functional connectivity associated with induced affect; PROP-2026-08-06-003 (read with PROP-2026-08-06-002)
+  Confidence: Medium
+  Evidence: "Static DAN within-module degree differentiated the negative from the neutral condition, whereas dynamic VAN participation coefficient differentiated the negative from the positive condition." Limitation, load-bearing: the absence of a reported positive-vs-neutral contrast is not evidence of a null. It may be unreported, underpowered, or omitted from the abstract's summary rather than absent from the analysis. Full texts were not available to this agent, so the claim is about what the reported record shows, not about what the data contain. Confidence is Medium for that reason, not because the arithmetic is in doubt.
+
+---
+PRS-38:
+  Problem: The standing boundary test — does co-experienced grief show the markers of positivity resonance minus the valence? — has been posed but not costed. Answering it needs an apparatus that (a) contrasts valences against a matched neutral control, (b) indexes the allostatic-interoceptive and attention systems with metrics sensitive enough to separate conditions, and (c) measures affect as *co-experienced between people* rather than induced within one.
+  Resource: The nsaf124/nsag008 paradigm supplies (a) and (b): matched neutral/pleasant/unpleasant social visualization, static and dynamic graph-theoretic connectivity (participation coefficient for cross-network integration, within-module degree for within-network coherence) over the AIS and five intrinsic networks, validated at N = 73 with demonstrated sensitivity to the negative condition (PRS-37).
+  Solution: The boundary test's instrumentation gap is now specified rather than open-ended. Two of its three requirements are already published inside this tradition. The missing one is dyadic co-measurement: both papers scan a single participant visualizing an absent acquaintance, so neither can observe co-experience, behavioral synchrony, or between-person physiological coupling — which are constitutive of positivity resonance, not incidental to it. The test therefore requires a hyperscanning or dyadic-physiology extension of this existing paradigm, not the construction of a new one.
+  Date Added: 2026-08-10
+  Source: Intrinsic network static and dynamic functional connectivity associated with induced affect; PROP-2026-08-06-003 (read with PROP-2026-08-06-002)
+  Confidence: Medium
+  Evidence: Both sources describe participants "mentally visualizing" self-nominated acquaintances during fMRI; no second participant is present or measured, and neither source reports any between-person synchrony measure. The claim that these metrics would transfer to a two-person design is an inference from method, not a demonstrated result — no dyadic validation of participation coefficient or within-module degree is reported in either paper.
+
+---
+*Total PRS triplets: 38*

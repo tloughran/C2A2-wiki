@@ -41,3 +41,14 @@ At ICPR26, Kastrup argued his analytic-idealist reading of psychedelic phenomeno
 **Open question the wiki cannot yet answer.** Is there any measurement that distinguishes "the partition moved" from "the priors relaxed"? Both produce the same first-person report. If there is not, FINDING-009 is not merely unresolved but possibly undecidable on current methods, and the wiki should record that rather than leave it open as if evidence were pending.
 
 **Evidence caution.** The session was not viewed in this pass and its date is unconfirmed; PRS-CANDIDATE-02 is inferential. Confirm the reduced-activity line was actually pressed before this entry is promoted.
+
+
+### 2026-08-09 — What does adversarial collaboration look like when one party rejects the framing?
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/approved/2026-08-03_friston_intrepid-adversarial-review.md` (PROP-2026-08-03-004)
+
+**Why it sits at this intersection.** INTREPID sets IIT, Neurorepresentationalism, and Active Inference against each other with pre-specified disconfirming observations. All three are third-person and neuroscientific. The wiki's three consciousness traditions that are not — Kastrup, Hoffman, McGilchrist — are absent, and the absence is structural rather than an oversight.
+
+**Synthesis claim.** The boundary is worth stating because it bounds the accelerator. Adversarial collaboration requires agreement on what would count as evidence *before* disagreement about what the evidence shows. Analytic idealism does not dispute the neural data; it disputes what having neural data establishes. So the INTREPID format cannot be extended to include Kastrup by adding a fourth arm — there is no observation whose outcome he and Tononi would both accept as decisive, because the dispute is about the interpretation of every possible outcome. That is not a defect in either party; it is a real distinction between disputes that adversarial collaboration can settle and disputes it cannot.
+
+**Open question the wiki cannot yet answer.** Is there a format that *can* stage the second kind of dispute? If not, C2A2's ambition to interact traditions productively has a class of cases it structurally cannot reach, and identifying that class is more valuable than pretending it does not exist. Kastrup's answer determines the scope of what the accelerator can claim.

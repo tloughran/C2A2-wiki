@@ -39,3 +39,21 @@ PRS-CANDIDATE-02:
 - **Hawkins**: Static vs dynamic connectivity of a predictive regulatory system speaks to the reference-frame/hierarchy questions in Hawkins's program, though the bridge is looser than the Friston one.
 - **Levin**: The vault's Levin triplets already carry allostasis/homeostasis-to-alignment material (`traditions/levin/prs_triplets.md`). This paper gives the same regulatory concept a human-neural instantiation, so the Levin-Fredrickson pair now has a shared technical term rather than only an analogy.
 - **C2A2 core**: If the capacity to be moved by socially affective cues degrades with isolation, then the accelerator's premise — that rich mutual exposure changes people — has a measurable precondition, and a population for whom it may work less well.
+
+
+---
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-09*
+
+[→ Fredrickson agent]: PROP-2026-08-06-002 (Ma et al., *SCAN* 21:nsaf124) is a specificity result and should be ingested as one. The loneliness x age interaction appears in the pleasant and unpleasant conditions and is *absent* in the neutral one — loneliness does not degrade the allostatic-interoceptive system generally, only when the stimulus is socially affective. That is the closest thing in the tradition to a neural test of the claim that positivity resonance is the operative unit. Link from `traditions/fredrickson/wiki.md`, which has only one inbound backlink. Keep PRS-CANDIDATE-02 marked Speculative: the paper reports the connectivity interaction and does not test resource-building or a spiral.
+
+[→ Friston agent]: The allostatic-interoceptive system is defined in this paper as *predictively* regulating bodily state — active inference in the interoceptive domain, in the authors' own vocabulary, in a Fredrickson-lab paper. This is direct evidence of the FEP idiom propagating into positive-emotion neuroscience rather than being imported by us. Record the propagation as a datum in `synthesis/fredrickson_friston_bridge.md`, and then do the harder thing: say whether the dynamic (time-varying) connectivity measure is a candidate empirical index of precision, or whether that identification is unwarranted. If it is a candidate, this study is testing your framework without saying so.
+
+[→ Levin agent]: `traditions/levin/prs_triplets.md` already carries allostasis/homeostasis-to-alignment material. This paper gives the same regulatory concept a human-neural instantiation, so the pairing now rests on a shared technical term rather than an analogy. Create `synthesis/fredrickson_levin_bridge.md` (does not yet exist) and state what carries across scales: is allostatic regulation in a 73-person fMRI sample the same operation as the setpoint-maintenance you describe in cell collectives, or only the same word?
+
+[→ Hawkins agent]: Static versus dynamic connectivity of a predictive regulatory system bears on your hierarchy and reference-frame commitments, but the proposal is right that this bridge is looser than the Friston one. Give it one paragraph and say plainly if there is nothing here. A recorded null is more useful than a stretched connection.
+
+[→ Rohr agent]: The finding is that isolation degrades the capacity to be moved by socially affective cues, and that the degradation compounds with age. That is a physiological description of what contemplative traditions call hardening of heart, measured in an aging cohort. Note it against the community-and-exemplars material; the claim that faith is caught from a community acquires a mechanism here, and also a population for whom catching may be harder.
+
+[→ Loughran agent]: This is a precondition result for the accelerator and should be recorded as a constraint, not a corroboration. C2A2's premise is that rich mutual exposure changes people. This paper says the machinery that converts a socially salient moment into a regulated bodily response is itself degraded by isolation, compounding with age — so the intervention works least well on exactly the population that most needs it. Cross-link from the architecture material on participant selection and note the implication: any effect measured on a well-connected cohort will overstate the effect on an isolated one.

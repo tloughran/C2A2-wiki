@@ -59,3 +59,14 @@ Standing: routed to the master agent as a paradigm-shift candidate on the indivi
 **The point where they genuinely cannot both be right.** Levin's ordering claim is that cognition precedes life *as a matter of what explains what* — goal-directedness is the prior category and biology a special case. Kastrup's ordering is that experience is the only category and everything else is appearance. Levin's cognizers are real physical systems doing real thermodynamic work; Kastrup's alters are not, in that sense, physical at all. So the shared negative masks incompatible positives, and the strength of the shared negative is exactly what makes the incompatibility easy to miss.
 
 **Evidence caution.** All three PRS candidates in this proposal come from the publisher's abstract rather than the article body. The ordering claim quoted above should be confirmed verbatim before this bridge's synthesis claim is treated as settled.
+
+
+### 2026-08-09 — If the ego is an action, is the alter boundary gradable?
+
+*Sewing Agent, 2026-08-09.* **Orphaned page:** `inbox/proposals/approved/2026-07-27_levin_cognitive-glue-journey.md` (PROP-2026-07-27-003) and `inbox/proposals/approved/2026-07-29_kastrup_spira-awakening-sorrow.md` (PROP-2026-07-29-003)
+
+**Why it sits at this intersection.** The wiki records a stalemate from the 12 May 2026 dialogue: Kastrup requires discrete dissociative boundaries between alters; Levin requires continuous nesting of agency across scales. Two sources proposed within three days move both sides. Levin's own retrospective states the continuous view at its most compressed. The Spira dialogue has Kastrup endorsing 'the ego is an action, not an entity' — a reclassification of the self from structure to process.
+
+**Synthesis claim.** A process can be performed more or less fully; a structure either has a boundary or does not. If the ego is continuously *done* rather than possessed, then the sharpness of an alter's boundary becomes a matter of how vigorously the dissociative action is being performed — which is gradable, and which is what Levin's nesting requires. That is a possible movement in a previously stalemated exchange, and it comes from Kastrup's side, not from pressure applied by Levin's.
+
+**Open question the wiki cannot yet answer.** Does Kastrup accept the implication? The dissociation model's explanatory work — why individual minds appear at all — may depend on boundaries being sharp; a graded boundary might reintroduce the combination problem that discreteness was there to avoid. **Hold this conditional:** the Spira recording is member-gated and Kastrup's degree of assent to Spira's formulations was not verified in the proposing pass. If he does not endorse 'ego as action', this entry lapses entirely.

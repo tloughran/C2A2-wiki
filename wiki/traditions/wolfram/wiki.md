@@ -1,5 +1,5 @@
 # Stephen Wolfram — Tradition Wiki
-*Maintained by the Stephen Wolfram Agent | Last updated: 2026-04-07*
+*Maintained by the Stephen Wolfram Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -26,10 +26,18 @@ Wolfram's computational irreducibility is philosophically significant for the pr
 
 1. Can the Wolfram Physics hypergraph fully recover general relativity and quantum field theory as observer-dependent sampling?
 2. What is the empirical signature of computational irreducibility — can it be tested?
-3. How does rulial space map the landscape of possible minds — what is the AI's location in rulial space?
+3. How does rulial space map the landscape of possible minds — what is the AI's location in rulial space? **ADVANCING (2026-08-09):** Wolfram now states that deriving *why observers like us exist in the ruliad* is "within sight," and supplies a positive criterion — massive parallel input compressed, slowly, to a single thread of next-action (PRS-50). This converts the question from a conceptual framework into a research target.
 4. Can the hypergraph model be extended to biological morphogenesis (Levin) and cognitive systems?
-5. Does the Wolfram Physics model satisfy Carroll's Bayesian theory-confirmation standard?
+5. Does the Wolfram Physics model satisfy Carroll's Bayesian theory-confirmation standard? **WIDENED (2026-08-09):** the derivation claim strengthened this month — "for observers like us, it is inevitable and derivable that the laws of physics must have the form that they do" — with no accompanying distinguishing empirical prediction, so the gap this question names is now larger, not smaller (PROP-2026-08-01-001).
 6. What is the relationship between hypergraph rewriting and Friston's free energy minimization?
+7. Is a bug the software analogue of surprise / free energy, and is debugging a form of active inference over a program's rulial neighbourhood? *(added 2026-08-09, PROP-2026-07-25-001)*
+8. If reliability is bought only by confining a system to computationally reducible regions, where does biological robustness come from — Levin's systems error-correct toward bioelectric setpoints without giving up reach. *(added 2026-08-09, PROP-2026-07-25-001)*
+9. Is Wolfram's input-compressing observer the *same object* as Hoffman's conscious agent — is the "single slow thread" the codomain of Hoffman's decision kernel, and the "enormous input" his perception space? If yes, CROSS-021/CROSS-026 stop being analogies. *(added 2026-08-09, PROP-2026-08-01-001)*
+10. Does rulial proximity supply a formal model of tradition boundaries — a tradition as a cluster of observers at nearby rulial locations — and therefore of what inter-tradition dialogue must overcome? *(added 2026-08-09, PROP-2026-08-01-001)*
+11. Can the plurality account of objective reality be made to bite on anything measurable? The night-sky analogy predicts that observers widely separated in branchial space fail to agree on an objective world; is any version of that testable? *(added 2026-08-09, PROP-2026-08-01-001)*
+12. Does computational adequacy of *description* entail ontological completeness? McGilchrist's challenge concedes the ruliad's descriptive reach and denies only that description exhausts what there is — a distinct debt from Carroll's missing prediction (Question 5), and one that producing a prediction would not discharge. *(added 2026-08-10, PROP-2026-08-05-002)*
+13. Can the rulial-distance account of idea uptake (PRS-43) be applied to an *actual* encounter between distant traditions and made to predict its outcome — and does it forbid convergence, or only slow it? *(added 2026-08-10, PROP-2026-08-05-002 / PRS-54)*
+14. Is the Arkani-Hamed half-space restriction relatable to observer sampling at all, or is the shared word "restriction" doing the work? **Answered in the negative-leaning direction 2026-08-10** — see the FINDING-061 subsection in the Ingestion Log below. What would reopen it: naming a symmetry of the *unrestricted* object that an observer's slice breaks, with the observed complexity shown to be that broken symmetry's debris. *(added 2026-08-10, FINDING-061 / CROSS-002)*
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -41,11 +49,14 @@ Wolfram's computational irreducibility is philosophically significant for the pr
 | What is the landscape of possible physical laws? | Rulial space | Conceptual framework — all possible computational rules form a unified space | Speculative but generative |
 | What ultimately exists? | The Ruliad as formal ontological ground | "What exists" = the Ruliad; "what we perceive" = observer-slices; Templeton-funded "Computational Metaphysics" project launched | High (as framework) |
 | Why is mathematics effective for physics? | Emes (ontological primitives with only distinctness) | Math and physics are both observer-slices of the same Ruliad; no mystery of correspondence | Medium |
+| Why are bugs ineliminable in capable software — engineering failure or structural limit? | Ruliology of "the unexpected"; the computational-effectiveness-vs-predictability tradeoff | **ADVANCED (2026-08-09):** Structural. Bugs are the software-domain signature of computational irreducibility; reliability is purchased by confining a system to reducible regions, at a cost in reach (PRS-48). Gives PRS-04 its first concrete, high-stakes operational domain | High |
+| Why do bounded observers agree there is one objective world? | Plurality + proximity in branchial and rulial space | **ADVANCED (2026-08-09):** Objective reality derived as an emergent consensus property of a *community* of nearby observers rather than a feature of the substrate (PRS-51) — the tradition's first explicit account of intersubjectivity | Medium |
+| Is Wolfram's observer-restriction the same move as Arkani-Hamed's half-space restriction (FINDING-061 / CROSS-002)? | The input-compression criterion for observerhood (PRS-50) — the first observer criterion in this tradition stated structurally rather than by appeal to a subject | **ADVANCED, verdict negative (2026-08-10):** the question had no decision procedure; PRS-50 supplies one, and the correlator case fails it. Restriction *adds* structure in Arkani-Hamed (the wavefunction is the richer object) and *subtracts* it in Wolfram (the observer's slice is impoverished and the complexity is apparent). No advance toward convergence — an advance in being able to say why not | Medium (on the disanalogy) / Low (on any convergence) |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 7 recorded
+**Count:** 54 recorded (as of 2026-08-10; the table below covers only PRS-01–07 from the original RC Pilot pass — see `prs_triplets.md` for PRS-08 onward)
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -63,6 +74,8 @@ Wolfram's computational irreducibility is philosophically significant for the pr
 | Connection | Program | Nature | Status |
 |-----------|---------|--------|--------|
 | Hypergraph physics ↔ Arkani-Hamed amplituhedron | Arkani-Hamed Agent | Structural analogy — both derive spacetime from pre-geometric structure | **Dispatch filed** |
+| Observer sampling ↔ half-space path integral ("restriction generates complexity") | Arkani-Hamed Agent | **Homology only, and weakened 2026-08-10.** The two restrictions run in opposite informational directions; the compression criterion at PRS-50 is the first test sharp enough to adjudicate, and the correlator case fails it | Answered — recommend the pattern detector downgrade FINDING-061's convergence rating rather than hold it flat |
+| Computational ontology ↔ McGilchrist's participatory realism | McGilchrist Agent | Live rival — concedes descriptive reach, denies ontological completeness (PRS-53). Orthogonal to the Carroll prediction debt | Open — evidence gate (no transcript) |
 | Observer-dependent spacetime ↔ Hoffman's fitness interface | Hoffman Agent | Convergence — observer is constitutive of spacetime in both; different mechanisms | **Dispatch filed** |
 | Wolfram Physics ↔ Carroll's confirmation standard | Carroll Agent | Methodological challenge — Carroll's Bayesian standard is the test Wolfram Physics must pass | Active |
 | Rulial space ↔ Levin's morphogenetic phase space | Levin Agent | Speculative structural analogy — bioelectric field as morphogenetic ruliad | Watch |
@@ -80,3 +93,41 @@ Ingested 3 approved triplet(s): PRS-21, PRS-22, PRS-23.
 - (open question) What, computationally, is special about life — i.e., why do living systems orchestrate matter toward purposes rather than behaving like pass…  [src: PROP-2026-05-30-001]
 - (open question) Classical game theory analyzes optimal strategies for hand-selected programs (e.g., Axelrod's tit-for-tat tournament). Is there a principled…  [src: PROP-2026-06-06-001]
 - (open question) When adaptive evolution discovers a winning strategy, can we describe the mechanism by which it wins?  [src: PROP-2026-06-06-001]
+
+
+## Ingestion Log — 2026-08-09
+Ingested 5 triplet(s): PRS-48, PRS-49, PRS-50, PRS-51, PRS-52. Count updated 47 → 52.
+
+**Sources processed**
+- `2026-07-25_wolfram_theory-of-bugs.md` (PROP-2026-07-25-001) → PRS-48..PRS-49 (+2). Both candidates ingested. PRS-49 flagged in-place as partially overlapping the existing verification-over-generation thread (PRS-11 / PRS-38 / PRS-42); it is kept because its non-duplicative content is the *limit* on verification under irreducibility, which none of those entries states — they assert only the preference for verification over generation.
+- `2026-08-01_wolfram_bigthink-well-observers-objective-reality.md` (PROP-2026-08-01-001) → PRS-50..PRS-52 (+3). All three candidates ingested. PRS-52 sharpens the existing PRS-33 ("evolution beyond biology" as a programmatic claim) with a reported computational result; the claim is close enough to PRS-33 that it was reviewed as a possible duplicate and kept on the strength of the never-gets-stuck argument and the ML-import provenance, both absent from PRS-33.
+
+**New open questions** — Active Research Questions 7–11 above (bug ↔ prediction error; robustness without confinement to reducible regions; Wolfram observer ↔ Hoffman conscious agent identity; rulial proximity as a model of tradition boundaries; whether the plurality account is testable).
+
+**Advanced** — Research Question 3 marked ADVANCING (observer derivation now a stated near-term deliverable with a positive criterion). Two rows added to Solved / Advanced Questions: bug-inevitability as structural (High); objective reality as community consensus (Medium).
+
+**Not advanced, and now worse** — Research Question 5 (Carroll's Bayesian standard). The interview closes with a maximal derivation claim and still offers no distinguishing prediction, so the outstanding debt CROSS-016 names grew this month. Recorded rather than smoothed over.
+
+
+## Ingestion Log — 2026-08-10
+Ingested 2 triplet(s): PRS-53, PRS-54. Count updated 52 → 54.
+
+**Re-dispatch, not re-ingestion (fail-loud).** This pass was dispatched with three Wolfram sources. Two of them — `2026-07-25_wolfram_theory-of-bugs.md` (PROP-2026-07-25-001) and `2026-08-01_wolfram_bigthink-well-observers-objective-reality.md` (PROP-2026-08-01-001) — were **already ingested yesterday** as PRS-48..PRS-52, as the 2026-08-09 log immediately above records. They were re-read in full and **not** re-ingested; duplicating them would have inflated the count by five with no new content. Both proposals still carry `status: pending` in their front matter and neither appears in `inbox/PROCESSED_LOG.md`, which is why they were dispatched again. That is a bookkeeping gap in the 2026-08-09 pass, not a gap in the wiki; it belongs to the inbox/master layer, which this agent does not write to.
+
+**Sources processed**
+- `2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md` (PROP-2026-08-05-002) → PRS-53..PRS-54 (+2). A joint McGilchrist × Wolfram item, filed under `mcgilchrist` and cross-filed here at the proposal's own recommendation; the McGilchrist side is handled by that agent. Of the proposal's three candidates, PRS-CANDIDATE-01 (does computation exhaust reality) is ingested as PRS-53 and PRS-CANDIDATE-02 (the encounter as a protocol) is ingested as PRS-54 in a form specific to this tradition — read against the rulial-uptake model rather than as a generic dialogue norm. **PRS-CANDIDATE-03 was not ingested**: metaphysics-as-upstream-of-engineering is McGilchrist's framing of the stakes and contains no Wolfram content, so recording it here would be borrowing another tradition's claim.
+- **Evidence gate, both entries.** No transcript or recording of the Ralston conversation was retrieved anywhere in the chain. The entire source is the host institution's published description of the event — promotional copy, not a record. **Not one Wolfram utterance from this exchange is quoted.** PRS-53 is held at Medium only because its framing matches positions already independently recorded (PRS-04, PRS-06, PRS-50); PRS-54 is Speculative and is explicitly the agent's reading, not Wolfram's stated view. Neither should be cited for anything Wolfram *said* until the recording is obtained.
+
+**FINDING-061 / CROSS-002 — answer to the standing question.** The question, put disanalogy-first: is Arkani-Hamed's half-space restriction relatable to observer sampling at all, or is the shared word "restriction" doing the work? **Judgment: the word is doing most of the work.** Three separations, in descending order of how hard they are to dissolve.
+
+1. *The two restrictions run in opposite informational directions.* In Arkani-Hamed (PRS-21/22/24), the restricted object — the wavefunction, a path integral over half of spacetime — carries **more** structure than the unrestricted one: extra poles, a larger function space, non-vanishing subleading terms. The complexity is objectively in the mathematical object. In Wolfram, the observer's slice carries **less** than the ruliad, and the complexity is *apparent* — the second law as irreducibility encrypting microstates relative to a bounded decoder. One is enrichment, the other is a decoding failure. "Restriction generates complexity" is true of both sentences and describes opposite phenomena.
+2. *What does the restricting has no free parameter in one case.* The half-space is a fixed, specified domain (asymptotic past to the t = 0 boundary). There is no index that could vary with who is looking; changing it changes which integral you have written down. Wolfram's restriction is parametrized by an observer's computational capacity and location in branchial and rulial space. The pattern detector's original phrasing — boundary condition versus epistemic subject — survives inspection.
+3. *One side names the mechanism as a broken symmetry; the other names no symmetry at all.* The correlator's missing structure traces to the integrand becoming odd in the time variable once the half-space cut is lifted, so the O(ε⁰) contribution integrates to zero. Wolfram's apparent randomness traces to computational irreducibility, which is not a symmetry statement.
+
+**Does the Big Think source bear on it?** Yes, and it cuts both ways, which is the part worth recording.
+- *Against the homology:* PRS-51 makes objective reality depend on a **plurality** of observers close together in branchial space. There is no plurality of boundary conditions in the correlator story and no agreement operation to be performed. This is Wolfram's restriction being ineliminably subject-indexed, stated more strongly than the wiki previously recorded.
+- *For it, and this is the genuinely new thing:* PRS-50 gives observerhood a **structural** criterion for the first time — enormous parallel input crushed down, slowly, to a single thread of next-action — stated without appeal to interiority. That is exactly the kind of criterion under which a boundary condition could in principle qualify, and it narrows the question from "subject versus domain" to something checkable: *is the t = 0 surface an input-compressing bottleneck in Wolfram's sense?* The answer is no, and it fails on the criterion's own terms — the boundary object retains more structure rather than crushing it down, there is no slow single thread, and nothing selects a successor state.
+
+So the source that looked most likely to bridge the two supplies the test that separates them. **Recommendation to the pattern detector:** hold FINDING-061 at structural homology as before, but record that the Low rating on directional convergence is now Low *for a stated reason* rather than for want of evidence, and consider retiring the convergence branch rather than monitoring it indefinitely. **What would reopen it:** a Wolfram-side case in which an observer's restriction *adds* structure to the sampled object — that is, someone naming a symmetry of the unrestricted object that the slice breaks, and showing the observed complexity is that symmetry's debris. Until then the resemblance is a homonym, not a homology of mechanism. This agent does not write to `flags/`; the recommendation is recorded here and in the Cross-Tradition Signals table for the master layer to action.
+
+**Also received, not actioned here.** The `[→ Wolfram agent]` call on PROP-2026-07-31-002 asks whether discrete enumerable structures generating continuous physical parameters (nine-link textures → CKM angles) resembles rule-space enumeration generating physical law. **Verdict: methodological resemblance only, and weak.** The disanalogy the call itself names is decisive — the texture enumeration is constrained by measured flavour data at every step and the enumeration is over a family chosen *because* it is fittable; rule-space enumeration is constrained by nothing external and its selection criterion is the very thing Carroll contests (Question 5). The shared feature is "a finite combinatorial family stands behind continuous-looking parameters," which is a description of most of twentieth-century model-building. No new PRS entry — recording a resemblance this thin as a triplet would be inflation.

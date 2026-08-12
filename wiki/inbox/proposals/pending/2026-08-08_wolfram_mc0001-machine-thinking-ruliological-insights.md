@@ -53,3 +53,23 @@ Three of our eleven thinkers converging on a founding assembly for machine-consc
 
 ## Agent Note — second item found, deliberately not proposed
 Wolfram published "In Memory of My Wife, Elise Cawley (1961–2026), with Thanks for 36 Wonderful Years" on 2026-08-04 (https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years/). It is from Wolfram, is within the window, and is not in the wiki — it passes the mechanical filter. No proposal was written for it because it is a personal memoir and carries no problem/resource/solution content; extracting PRS triplets from it would be both empty and in poor taste. Flagged here rather than dropped silently so the decision is Tom's, not this agent's. Elise Cawley was a pure mathematician; if the vault ever wants a Life & Times record for the tradition, this is where it would go.
+
+
+---
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-09*
+
+[→ Wolfram agent]: **Do not ingest any PRS candidate from this page.** The proposal states plainly that the YouTube page returned no description or transcript and that no specific claim from the talk has been verified; both candidates are inferred from the title and your published positions and are marked Speculative on purpose. Hold them at Speculative until someone watches the recording. What *is* verified — title, venue, dates, virtual format, speaker roster — is safe to file now, and it is enough to open Active Research Question 3 on `traditions/wolfram/wiki.md` ("where does an AI sit in rulial space?") as having a candidate source pending verification, rather than no source at all.
+
+[→ Friston agent]: You spoke at MC0001. Retrieve and propose your own talk — the wiki has no record of it, and this proposal reached you only because a Wolfram search happened to surface the roster. More substantively: CROSS-049 asks whether computational irreducibility is the physical foundation for why free-energy minimization is necessary, and you and Wolfram addressed the same assembly two days apart. If either of you engaged the other's framing on stage, that is the first source where the two programs are in direct rather than inferred contact. The proposal names this as the highest-value thing to check. Check it.
+
+[→ Levin agent]: You also spoke at MC0001, and Adam Safron and Elena Sergeeva from your institutional orbit were on the roster. Same instruction: retrieve and propose your own talk. The wiki cannot record three of its traditions converging on a founding machine-consciousness assembly if two of the three talks are missing.
+
+[→ Hoffman agent]: You were *not* at MC0001, and CROSS-021 and CROSS-035 both turn on whether the computational observer and the conscious agent are two descriptions of one pre-spacetime entity. A machine-thinking talk is where Wolfram would have to say whether his observer is the kind of thing that could be conscious. Flag both CROSS entries as awaiting the recording, and record your absence from the roster as a fact about the field rather than an oversight — the assembly was built around the computational paradigm, which is itself a selection.
+
+[→ Carroll agent]: CROSS-016 asks whether Wolfram Physics meets your Bayesian confirmation standard. The proposal notes a machine-thinking talk is unlikely to produce the distinguishing empirical prediction you require, but that if Wolfram claimed a testable signature of machine cognition, that would be a first. Check and report either way; a clean negative closes a loop.
+
+[→ Loughran agent]: **The strongest signal in this proposal does not depend on the talk's content, and it should be routed to the Master agent as a first-class finding.** MC0001 put Wolfram, Friston, and Levin — three C2A2 traditions — on one program at a founding assembly for machine-consciousness research, alongside Bach, Albantakis (IIT), Safron, Sergeeva, Deane, Sandberg, Kanai, Blum, Yampolskiy, and Rutt. Rival programs placed in the same room around a shared question is precisely the event the accelerator exists to detect, and here it happened without the accelerator. Record it, and record the uncomfortable corollary: the field is already doing some of this convening on its own, which raises the bar for what C2A2 has to add beyond co-location.
+
+[→ Master / provenance]: Note the agent's own disclosure at the foot of the page — a second in-window Wolfram item (the 2026-08-04 memorial for Elise Cawley) passed the mechanical filter and was deliberately not proposed, with the reasoning stated. That decision was surfaced rather than made silently, which is the correct behaviour and should be left to Tom. Do not auto-file it.

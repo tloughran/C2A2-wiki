@@ -1,5 +1,5 @@
 # Sean Carroll — Tradition Wiki
-*Maintained by the Sean Carroll Agent | Last updated: 2026-04-07*
+*Maintained by the Sean Carroll Agent | Last updated: 2026-08-10*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -30,6 +30,11 @@ The document explicitly frames the central tension as one between ontological cl
 4. Does the Core Theory genuinely preclude downward causation from consciousness?
 5. Can poetic naturalism accommodate the explanatory gap for consciousness without collapse into eliminativism?
 6. What is the status of Wolfram Physics — does it meet the Bayesian confirmation standard?
+7. Does the timeless-universal-state move (Wheeler-DeWitt constraint + Page-Wootters internal clock) genuinely close the asymmetry between emergent space and residual time, or only relocate it? *(added 2026-08-09, PRS-61)*
+8. Does agentive vocabulary earn its keep for non-neural collectives — is bacterial quorum sensing "communication" and "collective decision" in the poetic-naturalist sense, or metaphor? *(added 2026-08-09, PRS-60; unresolved pending transcript)*
+9. Does the derived-exponent criterion generalize? Urban scaling answers PRS-53 in one domain by deriving the exponent from embedding dimension rather than fitting it — is a dimensionally derived scaling law the general test for when a coarse-graining earns its keep, or is the city a lucky special case? *(added 2026-08-09, PRS-63)*
+10. What happens to social scaling when interaction is not spatially embedded — do de-spatialized networks (internet, and eventually agent populations) really show higher superlinearity across a narrower set of capacities? *(added 2026-08-09, PRS-66)*
+11. Does the Bayesian confirmation standard behave differently against a *consciousness-first* derivation of spacetime than against a hypergraph-first one? Question 6 asks it of Wolfram Physics; Hoffman's "Trace" mathematics is the same test with consciousness as the primitive, and Carroll has now been asked it directly on air. *(added 2026-08-10, PRS-67; his answer is not on record)*
 
 ## Solved / Advanced Questions
 *(Track record)*
@@ -40,11 +45,14 @@ The document explicitly frames the central tension as one between ontological cl
 | Are higher-level descriptions real? | Poetic naturalism | Yes — multiple legitimate ontologies describe the same physical reality; none eliminates others | High |
 | How should we evaluate novel physical theories? | Bayesian theory confirmation | By tangible explanatory gains over established physics — not by elegance or conceptual novelty alone | High |
 | Can quantum gravity be reconciled via observer-centric formalism? | Harlow et al. "precise Copenhagen" framework | Observer treated as classical and mathematically special within theory; new rules for observer-system interaction — Carroll engaging seriously | Medium |
+| How do we measure when an emergent (coarse-grained) description earns its keep? *(advanced 2026-08-09; was open at PRS-53)* | Urban scaling with a *derived* exponent (Bettencourt, Mindscape 362) | Answered in one domain: the 1/6 exponent follows from the built city's two-dimensionality and the ~1 fractal dimension of daily trajectories, not from curve-fitting, and holds across contemporary nations and independently invented pre-Columbian city systems — so the higher-level variable does genuine predictive work | High (domain-specific; generality is now Active Question 9) |
+| Is the wave function a real object or an agent's predictive tool? *(advanced 2026-08-09)* | QBism put directly to Carroll against his Everettian realism (July 2026 AMA) | Carroll defends wave-function realism rather than instrumentalism, locating agent-relative features — including the observer — at the emergent level poetic naturalism already licenses | Medium |
+| What marks a complex system off from a merely complicated one? *(advanced 2026-08-09)* | Agent differentiation; Smith's division of labour reframed as a division of *knowledge* | An operational signature rather than an intuition: initially similar agents specialize into interdependent roles, generating capacities no individual holds | Medium |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 7 recorded
+**Count:** 67 recorded *(updated 2026-08-10; the table below is the original RC-Pilot label set, PRS-01–07 only — `prs_triplets.md` is the full list and the source of truth)*
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -114,3 +122,43 @@ Ingested 5 approved triplet(s): PRS-55, PRS-56, PRS-57, PRS-58, PRS-59.
 - (open question) Does Zurek's quantum Darwinism advance the Born-Rule derivation beyond Carroll's self-locating-uncertainty route?  [src: PROP-2026-08-07-001]
 
 **New open question:** Can AI systems be full participants in inquiry — the access-consciousness, agency, and LLM-research-capability questions arrived together in one episode and are load-bearing for the C2A2 architecture. See FINDING-056.
+
+## Ingestion Log — 2026-08-09
+Ingested 7 approved triplet(s) from 3 proposals: PRS-60, PRS-61, PRS-62, PRS-63, PRS-64, PRS-65, PRS-66.
+
+| Proposal | Promoted | Skipped |
+|---|---|---|
+| PROP-2026-07-22-005 — Mindscape 361 (Bassler, quorum sensing) | PRS-60 | — |
+| PROP-2026-07-24-001 — Mindscape AMA July 2026 | PRS-61, PRS-62 | candidate 01 (Boltzmann brains) |
+| PROP-2026-07-31-001 — Mindscape 362 (Bettencourt, cities) | PRS-63, PRS-64, PRS-65, PRS-66 | — |
+
+**Duplicate-episode caveat (fail-loud):** PROP-2026-07-24-001 covers the *same* July 2026 AMA already captured as PROP-2026-07-17-001, which produced PRS-52/53/54. The Boltzmann-brain candidate is a straight duplicate of PRS-54 (same episode, same listener — Eric Olav Chen — same Boddy-Carroll-Pollack + swampland pairing) and was **not** ingested. The observer half of the QBism candidate is likewise already PRS-52 (same listener, Mike VR); PRS-62 carries only the QBism-vs-realism content PRS-52 does not.
+
+**Source caveat (fail-loud):** PRS-60 is inferred, not quoted. The proposal states its own PRS content is derived from the episode topic plus Carroll's established framing, with transcript viewing "pending before ingestion." It carries a `(PENDING TRANSCRIPT)` marker and Confidence: Speculative, and must not be cited as Carroll's stated view. PRS-61 records that Carroll answered the emergent-space/residual-time objection but not which way he came down — marked `(ANSWER DIRECTION UNRECORDED)`. PRS-63–66 rest on a partial transcript read (the proposal's own note: opening minutes and a middle stretch were not read line-by-line); every quotation is from a read portion.
+
+- (open question) Does Wheeler-DeWitt / Page-Wootters close the emergent-space vs. residual-time asymmetry, or only relocate it?  [src: PROP-2026-07-24-001]
+- (open question) Does agentive vocabulary earn its keep for non-neural collectives — is quorum sensing communication or metaphor?  [src: PROP-2026-07-22-005]
+- (open question) Does the derived-exponent criterion generalize beyond cities as the test for when a coarse-graining earns its keep?  [src: PROP-2026-07-31-001]
+- (open question) Do de-spatialized networks (internet, agent populations) really show higher superlinearity across a narrower set of capacities?  [src: PROP-2026-07-31-001]
+- (open question) What is the C2A2 network's own analogue of "patents per capita," and does the tradition-interaction network show superlinear returns in it? Raised by the Sewing Agent's escalation on PROP-2026-07-31-001; owned by the Loughran / master agent, recorded here because the measurement template is Carroll-side.
+
+**Internal mini-bridge flagged (not written):** PRS-63–66 (Bettencourt) and PRS-49–51 (Berman, Mindscape 360) treat the built environment as a measurable cognitive intervention surface from opposite ends — Berman on environments that deplete or restore attention, Bettencourt on environments that drive specialization. A `synthesis/` page pairing them is a candidate; no page was created in this pass.
+
+## Ingestion Log — 2026-08-10
+Ingested 1 approved triplet: PRS-67.
+
+**Re-dispatch caveat (fail-loud): this was a duplicate assignment.** All three source files named for today — `2026-07-22_carroll_mindscape-361-bassler-bacterial-communication.md`, `2026-07-24_carroll_ama-july-2026-boltzmann-emergent-time.md`, and `2026-07-31_carroll_mindscape-362-bettencourt-cities.md` — were already ingested **yesterday**, on 2026-08-09, as PRS-60 through PRS-66. Every `PRS-CANDIDATE-` block in all three proposals is already promoted or deliberately skipped with a recorded reason (see the 2026-08-09 log above). No candidate was re-ingested today; restating them under new numbers would have inflated the count by seven with no new content. The three proposals still carry `status: pending` in their front matter, which is the most likely cause of the re-dispatch.
+
+| Proposal | Status today | Already at |
+|---|---|---|
+| PROP-2026-07-22-005 — Mindscape 361 (Bassler, quorum sensing) | fully ingested 2026-08-09 | PRS-60 |
+| PROP-2026-07-24-001 — Mindscape AMA July 2026 | fully ingested 2026-08-09 | PRS-61, PRS-62 (candidate 01 skipped as duplicate of PRS-54) |
+| PROP-2026-07-31-001 — Mindscape 362 (Bettencourt, cities) | fully ingested 2026-08-09 | PRS-63, PRS-64, PRS-65, PRS-66 |
+
+**What the re-read did find.** One Carroll-side item in PROP-2026-07-24-001 was never eligible for promotion and so was missed: the Hoffman **"Trace"** contact event. A listener (Linda Tullberg) asks Carroll on air to evaluate Hoffman's newly announced Trace mathematics — Markov-chain based, aiming to derive special and general relativity from a consciousness-first foundation. It appears **only** in the proposal's Cross-Tradition Signals section, never as a `PRS-CANDIDATE-` block, so a candidate-driven ingestion pass could not see it. It is filed today as PRS-67.
+
+**Source caveat (fail-loud):** PRS-67 records that the question was **asked and selected**, not what Carroll said. His answer was not captured — the same gap that left PRS-61 marked `(ANSWER DIRECTION UNRECORDED)`. It must not be cited as Carroll's assessment of Trace, and no Solved/Advanced row was added for it, because nothing was actually advanced. Confidence: Speculative.
+
+- (open question) Does the Bayesian confirmation standard behave differently against a consciousness-first derivation of spacetime (Hoffman's Trace) than against the hypergraph-first case (Wolfram) it has been applied to?  [src: PROP-2026-07-24-001]
+
+**Process note for the ingestion pipeline (not a Carroll-tradition claim).** Proposals route only their `PRS-CANDIDATE-` blocks into triplets, so a research-grade item stated in a Cross-Tradition Signals section is structurally invisible to ingestion. PRS-67 is one instance; the Bettencourt "social accelerator, a bit like a physics accelerator" material is another, and is currently held only as an open question in the 2026-08-09 log and as a Sewing-Agent escalation to the Loughran agent. Worth a check upstream — this agent writes only inside `traditions/carroll/` and did not act on it.

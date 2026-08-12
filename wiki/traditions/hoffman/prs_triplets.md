@@ -263,4 +263,125 @@ PRS-26:
   Confidence: Speculative
 
 ---
-*Total PRS triplets: 26*
+PRS-28:
+  Problem: The trace-logic program has been criticized as unfalsifiable metaphysics because it has never committed to specific, checkable physical predictions.
+  Resource: The Eight Conjectures (whitepaper Table 1) — a numbered, domain-tagged list binding Recursive Trace Logic to concrete derivation targets: (1) Minkowski space as the n→∞ limit of Markov n-cycles; (2) curved spacetime from non-cyclic chains; (3) cosmology from long samples of trace chains; (4) Planck-scale breakdown from energy growth with trace state-count; (5) quantum wavefunctions and the Born rule from asymptotics of enhanced Markov chains; (6) Standard Model particles as classes of Markov chains; (7) scattering amplitudes with ABHY associahedra as subpolytopes of the Markov polytope; (8) entanglement from disjoint traces of an ergodic chain.
+  Solution: The program converts its own falsifiability problem into a published research contract — each conjecture either proves or fails on ordinary mathematical grounds, independent of anyone's intuitions about consciousness. This is the first time the trace program has bound itself to named derivation targets in advance.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: High
+  Evidence: "Proving these conjectures is a prime focus of the scientific program." (Table 1 and §5.1)
+
+---
+PRS-29:
+  Problem: The original conscious-agent formalism decomposed agents into perception, decision, and action kernels — an assumption that smuggles an internal/external split back into a framework meant to dissolve it.
+  Resource: The streamlined agent C = ⟨(X, 𝒳), Q, n⟩ — a measurable space of potential experiences plus a single Markov kernel and a step counter, with the perception/decision/action decomposition explicitly withdrawn.
+  Solution: The framework removes the dualist residue from its own foundations; the whitepaper compares the move to the limits on decomposability of Hilbert space in quantum theory, and notes the 2014 Hoffman-Prakash 6-tuple formalism is recoverable as a "sufficiently decomposed variant." This supersedes the perception-decision-action structure that PRS-05 and PRS-06 still assume.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: High
+  Evidence: Footnote 1, §3: "the present formalism adopts a more cautious stance regarding the decomposability of kernels and state spaces into respective internal and external constituents."
+
+---
+PRS-30:
+  Problem: Trace logic describes transitions *within* a fixed state space, but perception plainly involves changes to what the space of possible experiences even is — coarsening, fine-graining, combining with other agents.
+  Resource: Recursive Trace Logic (RTL) given its formal definition — a hierarchy of Markov kernels governing changes to the state space itself. At each step the process either transitions within X_n or "steps up" to the **Policy Level**, a kernel over admissible restrictions/expansions of X_n; a third **Meta-policy Level** is a kernel over policies, and the hierarchy extends to arbitrary depth.
+  Solution: A formal account of an observer that reconstructs its own interface, with the trace order constraining which state-space changes are legal. This gives the Policy / Meta-policy hierarchy that PRS-08 recorded only informally from the April 2026 Levin-hosted talk; the whitepaper is now the load-bearing citation.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: High
+  Evidence: §4, with worked two-level and three-level examples.
+
+---
+PRS-31:
+  Problem: Active inference derives perception from surprise minimization but presupposes a material substrate, an internal/external Markov-blanket split, and a true world state.
+  Resource: RTL's own notion of surprise, defined as the difference between beliefs based on knowledge of the larger state space and the outcome realized on the trace.
+  Solution: Surprise minimization is recovered **without** substrate, without a rigid internal-external decomposition, and without any true observable world state — positioning RTL as strictly weaker in assumptions than active inference while reproducing its dynamics. This extends CROSS-032 from the boundary structure (trace blankets ⊇ Markov blankets) to the inference dynamics themselves.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: Medium
+  Evidence: §4: "unlike the standard active inference models, in the case of RTL this minimization of surprise is defined without the assumption of a material substrate..."; cites Parr, Pezzulo & Friston (2022).
+
+---
+PRS-32:
+  Problem: The framework's non-dual ontology aligns with contemplative traditions, but importing contemplative claims as data would be methodologically indefensible.
+  Resource: The stated metaphysics protocol — "We do not import contemplative claims as data; we use the mathematics to clarify which questions are well-posed and how answers might be distinguished."
+  Solution: A discipline for using formalism as a question-triage instrument rather than an evidence source, with a worked test case: whether the tension between Buddhist *anatman* and Advaita's *ayam atma brahma* is a substantive soteriological conflict or a semantic one, to be settled by whether the two correspond to distinguishable trace-lattice structures. This is directly transferable to C2A2's own inter-tradition method.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: Medium
+  Evidence: §5.3.
+
+---
+PRS-33:
+  Problem: Deep-learning architectures are enormously inefficient relative to brains, and attempts to borrow biological efficiency have largely failed.
+  Resource: "Microchip epistemology" — treating the hidden agent network as a distributed, non-spatiotemporally constrained computational reservoir with tunable read-outs and small-world topology.
+  Solution: A proposed computational paradigm claimed to be as transformative as attention architectures, motivated by the diagnosis that borrowing from the brain fails *because* the brain is an interface representation, not ground reality. Same diagnosis as Hawkins reaches, from the opposite ontology.
+  Date Added: 2026-08-09
+  Source: A Science of Reality: Observers, Interfaces, and Traces (Trace Institute Whitepaper); PROP-2026-07-21-001
+  Confidence: Speculative
+  Evidence: §5.4, "Machine Intelligence"; cites Gauthier et al. 2021 on next-generation reservoir computing.
+
+---
+PRS-34:
+  Problem: An observer restricted to part of a system sees dynamics that mix the visible states with the influence of hidden ones; there was no canonical account of what dynamics such a restricted observer is entitled to say it is seeing.
+  Resource: The Trace Chain Theorem's trace kernel, given in closed form as Q_A = I_A Q [Σ_{k=0}^∞ (I_U Q)^k I_A], where U is the complement of A and I_A, I_U are indicator multiplications — the unique Markovian kernel on A induced by Q.
+  Solution: A restricted observer's effective dynamics is a well-defined, *unique* Markov process. Perspectival limitation gets an exact mathematical characterization rather than being treated as noise or error. This supplies the primary-source citation the tradition's namesake theorem has lacked — PRS-07 through PRS-10 were sourced to the Levin-hosted talk or to a secondary popular explainer.
+  Date Added: 2026-08-09
+  Source: Traces of Consciousness (Trace Chain Theorem paper), Hoffman, Prakash & Chattopadhyay; PROP-2026-07-21-002
+  Confidence: High
+  Evidence: doi:10.20944/preprints202410.1305.v1 (preprint deposited October 2024); theorem restated with explicit formula in the Trace Institute whitepaper §3, crediting Revuz (1984) and Hoffman et al. (2024). **Provenance discrepancy recorded, not resolved:** the Trace Institute publications page dates this 2025; the whitepaper's own bibliography dates it 2024.
+
+---
+PRS-35:
+  Problem: Trace logic needed a connection to established formal work on belief, or it would remain an isolated construction with no independent motivation.
+  Resource: A proof that the trace logic is homomorphic to the Lebesgue logic of probabilistic belief — the logical principle previously identified as the basis of "observer mechanics" (Bennett, Hoffman & Prakash, 1989).
+  Solution: The trace order is shown to be the same formal object as an existing, independently motivated theory of perception, closing a thirty-five-year loop back to Hoffman's own earlier work. The logic is locally Boolean and globally non-Boolean, which is what makes the quantum-logic correspondence in CROSS-033 more than an analogy.
+  Date Added: 2026-08-09
+  Source: Traces of Consciousness (Trace Chain Theorem paper), Hoffman, Prakash & Chattopadhyay; PROP-2026-07-21-002
+  Confidence: High
+  Evidence: Whitepaper §3, footnote 5.
+
+---
+PRS-36:
+  Problem: Reconciling incompatible observer perspectives is usually treated as a failure of communication or rationality, presuming a common frame must exist.
+  Resource: The trace partial order's incomparability structure — "not all kernels are comparable... many pairs are strictly incomparable, and no universal order exists that holds for all kernels across the entire set of possible observations."
+  Solution: Some pairs of observers are *formally* incomparable. Where no join exists in the trace order, there is no common refinement — a mathematical rather than merely psychological account of perspectival incommensurability. This sharpens Active Research Question 8 from "under what conditions does a join exist?" to a stated non-existence result for some pairs.
+  Date Added: 2026-08-09
+  Source: Traces of Consciousness (Trace Chain Theorem paper), Hoffman, Prakash & Chattopadhyay; PROP-2026-07-21-002
+  Confidence: Medium
+  Evidence: Whitepaper §3. Whether this formalizes MacIntyrean incommensurability is a conjecture worth testing, not an established mapping.
+
+---
+PRS-37:
+  Problem: If a trace is all an observer has access to, what can it infer about the reality generating it?
+  Resource: The many-to-one structure of tracing — while only a restricted set of larger kernels are valid precursors to a given trace, "any given trace kernel could have been derived from an infinite number of larger, higher-dimensional kernels."
+  Solution: Underdetermination is formally exact: information about unobserved states is simply lost, and no amount of interface-side inference recovers it. This is a strong, precise version of the interface argument that does not depend on evolutionary premises at all — an independent route to the conclusion PRS-03 reaches through Fitness-Beats-Truth.
+  Date Added: 2026-08-09
+  Source: Traces of Consciousness (Trace Chain Theorem paper), Hoffman, Prakash & Chattopadhyay; PROP-2026-07-21-002
+  Confidence: High
+  Evidence: Whitepaper §3.
+
+---
+PRS-38:
+  Problem: Phenomenological report is notoriously unusable as scientific data — it is unstructured, unreplicable across observers, and has no formal target to be checked against.
+  Resource: Trace logic deployed as the *analytic* arm of a two-arm study design: "the Trace Institute… will apply the trace logic for conscious observers and the full mathematical apparatus of conscious agent theory to build a quantitative analytical framework capable of interpreting those observations."
+  Solution: The mathematics is specified *before* the observations and generates the categories the observations are scored against — the standard remedy for unstructured report data, here applied to a domain where it has not previously been attempted. This is a design claim, distinct from PRS-26's claim that trace logic *can* describe altered states.
+  Date Added: 2026-08-09
+  Source: Trace × Andrew Gallimore — Trace Institute Collaboration Program / Noonautics; PROP-2026-08-04-002
+  Confidence: Medium
+  Evidence: Stated joint aim of "the first rigorous, empirically testable model of the DMT experience, with clear predictions that can falsify, or lend credence to, the hypothesis." Note the falsification conditions are *announced, not specified* in this source; confidence should not rise above Medium until preregistered predictions are published.
+
+---
+PRS-39:
+  Problem: How does a young research program with a heterodox metaphysics acquire empirical reach, given that it has no laboratory of its own and its claims cut across established disciplinary funding lines?
+  Resource: The Trace Institute Collaboration Program — a standing mechanism for pairing the Institute's formal apparatus with an outside group's experimental capability, of which Trace × Noonautics (Andrew Gallimore) is the first instance.
+  Solution: Theory-side institutions can scale empirically by *renting* experimental arms through formalised partnership rather than building them; the mechanism is reusable and the Institute has publicised it as such. Complements PRS-19/PRS-20 (institutional continuity, canonical voice) with an account of institutional *reach*.
+  Date Added: 2026-08-09
+  Source: Trace × Andrew Gallimore — Trace Institute Collaboration Program / Noonautics; PROP-2026-08-04-002
+  Confidence: Speculative
+  Evidence: "It marked the first collaboration to emerge from the Trace Institute Collaboration Program" (Traces of the Other event page, traceinstitute.org).
+
+---
+*Total PRS triplets: 39*
+*(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

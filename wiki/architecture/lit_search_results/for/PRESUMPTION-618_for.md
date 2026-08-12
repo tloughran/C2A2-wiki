@@ -36,3 +36,39 @@ SEARCH-FOR-PRESUMPTION-618:
   Search scope: Comprehensive on citation fabrication base rates in LLM output and on human quotation error rates; comprehensive on the statistical basis for zero-response bounds. Preliminary on "do verification floors reduce downstream error" — I found no interventional study, and a broader search into editorial-policy evaluation and reference-checking trials is recommended before treating that half as established.
 
   Recommendation: SUPPORTED (for the floor proposition; equivalently, NO-SUPPORT-FOUND for the presumption that verification may float without a threshold)
+
+===
+
+SEARCH-FOR-PRESUMPTION-618 (RE-TRIGGER PASS):
+  Date searched: 2026-08-10
+  Trigger: [RE-TRIGGER by 15d: 2026-08-09, cycle 1] (MONITOR-498)
+  Original item: PRESUMPTION-618
+  Scope of this pass: narrowed per batch5 instructions to the floor-EFFICACY half only — interventional or quasi-experimental evidence that a verification quota/sampling floor causally reduces downstream error (audit sampling, software inspection sampling rates, systematic-review dual-extraction fractions). The base-rate half remains governed by PREMISE-103 and was not re-searched.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b -> 15a (2026-08-02) -> 15d (2026-08-09) -> 15a (2026-08-10)]
+    Original item: PRESUMPTION-618
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from monotonic three-point verification-rate series
+      15a (2026-08-02): Searched for supporting literature on the floor proposition generally; found strong base-rate support but flagged the floor-EFFICACY question as untested (no interventional study located)
+      15d (2026-08-09): Re-triggered this item specifically because the floor-efficacy half was untested in both directions
+      15a (2026-08-10): Fresh search targeted at floor-efficacy interventional/quasi-experimental literature
+    Current status: PARTIALLY-SUPPORTED (upgraded from "no interventional study located")
+
+  Supporting evidence found: Yes — partial, and this changes the state of the literature versus the prior pass
+
+  Sources (new since 2026-08-02 pass):
+    1. Tang, L., Wang, R., Doi, S.A.R., Furuya-Kanamori, L., Lin, L., Qin, Z., Tao, F., Xu, C., 2025. "Effects of double data extraction on errors in evidence synthesis: a crossover, multicenter, investigator-blinded, randomized controlled trial." Postgraduate Medical Journal, 101(1197):603-611, Oxford Academic (doi:10.1093/postmj/qgae195). Preprint version on medRxiv titled "Double data extraction was insufficient for minimizing errors in evidence synthesis: a randomized controlled trial" (2023.10.16.23297056). — THIS IS THE INTERVENTIONAL STUDY THE PRIOR PASS COULD NOT FIND. A true RCT comparing single vs. double (i.e., a raised verification floor) data extraction directly on error outcomes. Result is mixed-to-positive: earlier single-vs-double extraction literature (Buscemi et al.) found double extraction reduced errors by 21.7% relative (P=.019); this newer, larger, randomized, blinded trial found double extraction still left a nontrivial residual error rate — the medRxiv preprint's own title states the floor increase was "insufficient for minimizing errors," even though it likely still reduced errors relative to single extraction (this trial's precise single-vs-double effect size was not fully retrievable from the search snippets and should be checked against the full text before being treated as quantified here).
+    2. Wang, J.Z., 2026. "The Verification Tax: Fundamental Limits of AI Auditing in the Rare-Error Regime." arXiv:2604.12951 (submitted April 2026). — Theoretical grounding, not interventional, but directly on point: proves self-evaluation without labels provides "exactly zero information" about calibration/error rate, and that there is a sharp phase transition at (checked-fraction x error-rate) ≈ 1 below which miscalibration is statistically undetectable. This formally supports the floor logic from the first-pass rule-of-three argument: below a certain checked-fraction, no amount of "disclosed but unverified" reporting bounds the true error rate. It also shows active querying (i.e., a floor of deliberately sampled checks) is qualitatively different from passive self-report, which is the structural claim PRESUMPTION-618 turns on.
+
+  Strength of support: Moderate for floor-efficacy (upgraded from "None/untested" at the prior pass) — there is now a genuine RCT bearing directly on the question, plus new theoretical grounding for why a floor is structurally necessary. The RCT's own conclusion is qualified ("insufficient" as a stand-alone fix), which keeps this from being strong, unconditional support.
+
+  Summary: The state of the literature has changed materially since the 2026-08-02 pass, which is the specific reason this re-trigger was worth its cost. A 2023-2025 multicenter RCT (published 2025, Postgraduate Medical Journal) now exists that directly tests whether raising a verification floor (single to double data extraction) reduces error in a systematic-review-like pipeline — this is the actual interventional/quasi-experimental evidence the first pass said was missing. Its finding is genuinely mixed: raising the floor helped but did not fully solve the problem, i.e., a floor is necessary but plausibly not sufficient. Separately, a 2026 theoretical paper (Wang, "The Verification Tax") formalizes why passive/self-report verification is information-free below a floor threshold, giving the floor argument a mechanism rather than only an analogy. Net effect: the floor-efficacy half moves from UNTESTED to PARTIALLY-SUPPORTED.
+
+  Caveats: (a) The RCT's precise quantitative single-vs-double effect size for this specific trial (as opposed to the earlier Buscemi trial cited in the first pass) was not confirmed from primary text — only from search snippets and the medRxiv preprint title, which itself frames the result as a caution ("insufficient"), not a clean win for floors. Full-text retrieval is recommended before this is upgraded to "Strong." (b) The Verification Tax paper is theoretical/statistical, not empirical, and its "rare-error regime" framing may or may not describe C2A2's actual citation-fabrication base rates (which per PREMISE-103 territory are not rare — 15-55%). Its applicability to a non-rare-error regime is not established. (c) Domain gap persists: both new sources are about human/AI data-extraction and general AI-auditing calibration, not citation verification specifically, so transfer to C2A2's citation-checking pipeline is still by analogy.
+
+  Search scope: Targeted, not comprehensive — this pass specifically searched the floor-efficacy angle named in the batch5 re-trigger instructions (audit sampling, software inspection sampling rates, systematic-review dual-extraction fractions) rather than repeating the full base-rate search from 2026-08-02. Two new, directly relevant sources were found that were not in or inferable from the prior pass.
+
+  Recommendation: PARTIALLY-SUPPORTED (floor-efficacy half upgraded from UNTESTED; still short of Strong because the key RCT's own framing is cautionary, and full-text confirmation of effect size is outstanding)

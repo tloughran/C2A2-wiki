@@ -416,4 +416,167 @@ PRS-45:
   Confidence: Speculative
   Evidence: The pairing itself; the recording is the primary evidence and should be listened to before this triplet is promoted past Speculative.
 
-*Total PRS triplets: 45*
+---
+PRS-46:
+  Problem: Computationalist arguments for machine consciousness assume consciousness is substrate-independent, but offer no principled account of which physical system is the bearer of the alleged inner life.
+  Resource: Kastrup's dissociation model as pressed against Shamil Chandaria (advisor to Google DeepMind) — inner life ("alters") emerges only in biology, the one system exhibiting the clear boundaries a dissociative process requires; the rest of the apparatus (microchips, cooling loop, water supply) has no such boundary.
+  Solution: A demarcation challenge to computationalism — absent a bounded biological system there is no identifiable *thing* to be conscious, so the burden falls on the computationalist to name the bearer. This reframes the AI-consciousness debate around individuation rather than information-processing capacity, and sharpens the boundary-formation move already recorded at PRS-44 into a stated empirical challenge with a named target.
+  Date Added: 2026-08-09
+  Source: AI, consciousness & awakening — In a world of words... could AI wake; PROP-2026-07-22-003
+  Confidence: High
+  Evidence: Article (2026-07-07) states Kastrup "is sympathetic to IIT, but suspicious of substrate independent consciousness... leans firmly towards biology as the place where alters emerge," and poses "what exactly is the thing that's meant to be conscious? The microchips? The cooling system? The river that supplies the cooling water?"
+
+PRS-47:
+  Problem: If perception is a generative model built from sparse data — only the thumbnail-sized foveal region receives sharp input and the rest is a continuously updated best guess — what is the relation between that predictive model and the reality it purports to track?
+  Resource: The convergence between predictive-processing neuroscience as presented by Chandaria (perception as prior-driven generative modelling, with priors discoverable and re-designable in meditation) and Kastrup's idealist claim that the perceived world is a phenomenal representation, not the thing-in-itself.
+  Solution: A bridge claim — studying how machines build world-models from language alone may illuminate how human perception constructs its dashboard, without licensing the inference that either system's model is or contains consciousness. Distinct from PRS-45, which maps the same two vocabularies onto awakening phenomenology rather than onto ordinary perception.
+  Date Added: 2026-08-09
+  Source: AI, consciousness & awakening — In a world of words... could AI wake; PROP-2026-07-22-003
+  Confidence: Medium
+  Evidence: Chandaria's fovea/hallucination account and "we are living inside our own simulation... a generative model"; the piece's closing note that in studying machine world-models "we might be learning more about how we do it, too."
+
+PRS-48:
+  Problem: Analytic idealism establishes that consciousness is fundamental but has an underdeveloped account of whether purpose, freedom, and value are intrinsic to consciousness or are emergent and contingent features of it.
+  Resource: Trika (Kashmir Shaivism) doctrine, presented by Sthaneshwar Timalsina, that freedom, being, and will are fundamental qualities of consciousness, that "order is an expression of freedom," and that purpose can be instinctive rather than planned — a second, independently arrived-at consciousness-first metaphysics with intrinsic agency built in, explicitly contrasted with Advaita's more passive consciousness.
+  Solution: A comparative resource for idealism — a worked-out position in which self-determined, creative freedom is constitutive of fundamental consciousness, giving Kastrup's program a foil for developing its own account of purpose without importing inherent bliss. Complements the immanent-teleology move of PRS-41 by supplying a second route to purpose-without-an-external-planner.
+  Date Added: 2026-08-09
+  Source: The freedom to transform suffering to joy — Sthaneshwar Timalsina; PROP-2026-07-22-004
+  Confidence: Medium
+  Evidence: Recording timeline markers — "0:18:50 Purpose can be instinctive, not planned"; "0:22:30 Fundamental qualities: freedom, being, will"; "0:46:00 Trika vs Advaita: consciousness is self-determined, not passive"; "0:57:00 order is an expression of freedom." Dialogue recorded 2026-07-14, moderated by Prof. Ravi S. Kudesia.
+
+PRS-49:
+  Problem: A consciousness-first metaphysics must say something about the meaning of extreme suffering, or it risks being a comfortable abstraction that fails precisely where the lived stakes are highest.
+  Resource: The two interlocutors' lived cases — Timalsina's near-fatal assaults during Nepal's Maoist uprising, Kastrup's assisted-dying-eligible tinnitus — tested against Trika's claim that the subject retains the freedom to give suffering another telos ("recognising within suffering the higher telos: fulfilment, upliftment").
+  Solution: A cautious, non-triumphalist boundary statement — freedom and meaning, not guaranteed bliss, are what a consciousness-first view can honestly offer in the face of horror. Kastrup adopts consciousness-as-fundamental from a convergent tradition while explicitly refusing its inherent-bliss claim; that recorded act of *partial* adoption is first-order data for how the accelerator should model convergence between traditions.
+  Date Added: 2026-08-09
+  Source: The freedom to transform suffering to joy — Sthaneshwar Timalsina; PROP-2026-07-22-004
+  Confidence: Medium
+  Evidence: Kastrup's wariness of "claiming existence is inherently blissful... it seems an insult to those experiencing unspeakable suffering"; timeline "1:42:00 transforming horror & disgust to ecstatic bliss"; "2:01:00 happiness & freedom is finding meaning in spite of the suffering."
+
+PRS-50:
+  Problem: If the Daimon (PRS-08) is real and following it aligns one with the deeper structure of mind, does the aligned life become easier? The synchronicity literature invites exactly that inference.
+  Resource: Kastrup's report of his own case — synchronicities now stacking up so regularly that he takes them for granted, "his own life is now like a movie" — paired immediately with the counter-claim that this does not diminish the sacrifice.
+  Solution: Alignment and ease come apart. The Daimonic path is evidenced by increased meaningful coincidence and *not* by reduced cost, so ease is not a criterion for having found one's Daimon — which forecloses the most obvious misreading of the doctrine as a prosperity heuristic.
+  Date Added: 2026-08-09
+  Source: Bernardo's caution to young philosophers — Going with the flow isn't; PROP-2026-07-29-004
+  Confidence: Medium
+  Evidence: "Doors will open for you on the Daimonic journey, but that doesn't diminish the sacrifice involved." / "a life of meaning is not a life of ease."
+
+PRS-51:
+  Problem: What does a tradition owe those entering it? Philosophical formation is normally transmitted as doctrine, with the vocational cost left tacit.
+  Resource: The session's staging — a senior figure publicly warning two named apprentices "as they embark on their perilous journey" rather than instructing them, delivered to the whole membership community rather than privately.
+  Solution: The warning is itself part of the curriculum; making the cost explicit at entry is treated as a condition of honest formation rather than as an aside. This is the first entry in this tradition's wiki covering *vocational formation* rather than doctrine, which is the register the accelerator most needs and least has.
+  Date Added: 2026-08-09
+  Source: Bernardo's caution to young philosophers — Going with the flow isn't; PROP-2026-07-29-004
+  Confidence: Speculative
+  Evidence: "In this meeting Bernardo warns two young philosophers as they embark on their perilous journey..." Held at Speculative on the proposal's own handling note: the published summary is one paragraph and the recording is member-gated, so this rests on the framing of the session, not on its content. Promote only after the recording is heard.
+
+PRS-52:
+  Problem: Why does manifestation happen at all? Analytic idealism explains what the physical world *is* (the extrinsic appearance of mental process) without explaining why universal consciousness dissociates rather than remaining undivided.
+  Resource: Spira's formulation, developed with Kastrup across the session — "the infinite needs finite minds for knowing manifestation" — pressed against the question "does infinite consciousness really learn?", with the follow-on framing of the world as an expression of *freedom* rather than of ignorance.
+  Solution: Dissociation is reframed from bare explanatory posit to functional necessity: a boundaryless field cannot know its own manifestation, so finite perspectives are the condition of its self-knowledge, and the cost of that freedom is the possibility of suffering and evil. This is a stronger commitment than the immanent teleology of PRS-41 — it makes alters *required*, not merely characteristic.
+  Date Added: 2026-08-09
+  Source: Rupert Spira: on the heights of awakening & the depths of sorrow; PROP-2026-07-29-003
+  Confidence: Medium
+  Evidence: Timestamps "0:52:00 Does infinite consciousness really learn?"; "0:56:00 The infinite needs finite minds for knowing manifestation"; "1:00:29 What is the impetus for manifestation?"; "1:08:30 Is the world an expression of freedom or ignorance?"; "1:16:00 Ignorance explains suffering and evil." Held at Medium: the summary and timestamps are firm on the topics and on the direction of Spira's claim, but the recording is member-gated and Kastrup's own degree of assent was not verifiable in this pass.
+
+PRS-53:
+  Problem: If perception is representational — the dashboard/cockpit of PRS-33 — does that make the perceived world unreal, as eliminativists and some readers of idealism take it to imply?
+  Resource: The illusion/reality distinction developed explicitly in dialogue with Spira ("perception is illusion but the world is real"; "illusion does not mean 'not real'"), deployed against Dennett on the ground that consciousness in particular cannot be an illusion, since an illusion is already an experience.
+  Solution: "Illusion" names a mismatch between appearance and intrinsic nature, not a lack of existence. The dashboard reading is therefore compatible with a fully real world, and the Dennettian move of treating consciousness itself as illusory is self-undermining in a way the perceptual case is not. Supplies the argumentative defence of the two-axis position stated at PRS-30 (physical non-realist, ontic realist).
+  Date Added: 2026-08-09
+  Source: Rupert Spira: on the heights of awakening & the depths of sorrow; PROP-2026-07-29-003
+  Confidence: Medium
+  Evidence: Timestamps "0:15:30 Is the world real or mere representation?"; "0:24:30 Illusion does not mean 'not real'"; "0:28:20 vs Daniel Dennett: consciousness cannot be illusion."
+
+PRS-54:
+  Problem: Kastrup's earlier formulation has archetypes as patterns that "always are but never were" (PRS-28). Are archetypes then causal agents in manifestation, or not?
+  Resource: The session's explicit correction — "archetypal patterns are templates of existence, not causes."
+  Solution: Archetypes constrain the *form* of what can be instantiated without doing efficient-causal work. This keeps the archetypal layer from collapsing into a Platonic realm of forces and preserves the claim that consciousness is the one primitive (PRS-39). A direct refinement of PRS-28 and of the Harpur-derived archetype material at PRS-17 and PRS-34.
+  Date Added: 2026-08-09
+  Source: Rupert Spira: on the heights of awakening & the depths of sorrow; PROP-2026-07-29-003
+  Confidence: Medium
+  Evidence: Timestamp "1:02:30 Archetypal patterns are templates of existence, not causes."
+
+PRS-55:
+  Problem: If the ego is a dissociative structure, is its dissolution a rare terminal attainment, and does anything survive it?
+  Resource: Spira's contention, endorsed in the exchange, that ego dissolution "is actually common but overlooked" — occurring in fleeting moments of satisfaction, in the gap between thoughts, or in deep grief — supported by "the ego is an action, not an entity" and "memory doesn't need ego"; spirituality is then defined as the deliberate cultivation of such moments.
+  Solution: The ego is reclassified from thing to process, something continuously *done* rather than possessed, which makes its lapse ordinary rather than exceptional and makes contemplative practice the cultivation of an already-available lapse rather than the achievement of a rare state. This bears on the stalemated Kastrup-Levin disagreement (PRS-14, PRS-42): if the ego is an action, the dissociative boundary may be more gradable than the discrete-alter model has allowed.
+  Date Added: 2026-08-09
+  Source: Rupert Spira: on the heights of awakening & the depths of sorrow; PROP-2026-07-29-003
+  Confidence: Medium
+  Evidence: Timestamps "1:22:50 Can there be memory of ego dissolution?"; "1:24:00 Ego isn't fixed: dissolution is common"; "1:27:30 Memory doesn't need ego"; "1:34:20 The ego is an action, not an entity"; "1:38:20 Is the ego necessary?"
+
+PRS-56:
+  Problem: Does a metaphysics on which suffering is real-but-representational offer consolation, or does it anaesthetize — the charge James Hollis pressed on Kastrup in the November 2025 session, that idealism may reduce suffering at the cost of meaning?
+  Resource: Kastrup's own account of "sudden onset nihilism" and its aftermath — nihilism as "a legitimate room in the palace of mind he can now conjure without fear" — set beside Spira's claim that grounding in being gives "the confidence to confront deep sorrow and the sorry state of the world" rather than a shield against emotion.
+  Solution: Both men reject the anaesthetic reading from opposite directions: the value of the nihilistic passage is that it becomes an inhabitable region rather than a threat, and awakening is characterised by *increased* rather than decreased exposure to sorrow. Answers the Hollis objection without claiming that the metaphysics makes suffering smaller.
+  Date Added: 2026-08-09
+  Source: Rupert Spira: on the heights of awakening & the depths of sorrow; PROP-2026-07-29-003
+  Confidence: Medium
+  Evidence: "for Bernardo, there is something valuable in this experience of nihilism, a legitimate room in the palace of mind he can now conjure without fear"; timestamps "0:32:50 Sudden onset nihilism"; "0:41:30 Bernardo on the value of nihilism"; "0:48:00 Empathy & the depths of impersonal sorrow."
+
+PRS-57:
+  Problem: Does psychedelic experience carry epistemic weight about the nature of reality, or is it exhaustively explained as a perturbation of the brain's generative model?
+  Resource: A structured three-position confrontation at ICPR26 (OPEN Foundation / Essentia Foundation) on a shared body of psychedelic-research evidence — analytic idealism (Kastrup), controlled hallucination / predictive processing (Anil Seth), integrated information (Christof Koch).
+  Solution: Isolates the disagreement to a single question about what the evidence licenses, rather than a clash of prior metaphysics, making the three positions comparable on their handling of the same data. This is the terrain on which the dissociation model's strongest empirical bet — richer experience accompanying reduced cortical activity — is adjudicated in front of two people who accept the data and reject Kastrup's reading of it.
+  Date Added: 2026-08-09
+  Source: The metaphysics of the psychedelic experience: Anil Seth, Christof; PROP-2026-07-31-004
+  Confidence: Medium
+  Evidence: Panel framing on the Essentia Foundation listing — the participants discuss "the latest insights from psychedelic research and their different viewpoints on the epistemic value of psychedelic experiences." **Evidence caveat:** the session itself was NOT viewed (the Essentia URL was unreachable from this agent's fetcher), and the exact ICPR26 date is unconfirmed. This triplet claims only the panel's stated axis of disagreement, which the listing supports; the proposal's second candidate — that the reduced-activity argument was actually pressed against Seth and Koch — was inferential and has been withheld rather than softened, per the Sewing Agent's handling note.
+
+PRS-58:
+  Problem: AI alignment is widely treated as a property to be engineered into model architecture, which drives European sovereignty policy toward building homegrown foundation models.
+  Resource: Kastrup's training/architecture distinction, argued by analogy to human development: values come from education and social feedback, not from brain anatomy.
+  Solution: Alignment is relocated from the algorithm to the training regime — so sovereign models are neither necessary (dozens of open-source models can be fine-tuned locally) nor sufficient (you still need the compute to train them), and the sovereignty question collapses back onto hardware. Directly relevant to the C2A2 premise that alignment is measured against an articulated community worldview: this is that thesis stated by an engineer for engineering reasons.
+  Date Added: 2026-08-09
+  Source: Europe's last hope in the AI race (IAI News); PROP-2026-08-05-006
+  Confidence: High
+  Evidence: "the value-alignment of an AI model is not an intrinsic property of the model itself—that is, of the software algorithm—but instead an emerging outcome of its training and parameter fine-tuning. This is analogous to the human mind: our values are largely defined by what we learn through education and feedback from our social milieu, not brain anatomy. Trying to address the need for alignment with homegrown software models is like prescribing brain surgery to address improper education."
+
+PRS-59:
+  Problem: Certain alignment guarantees can be circumvented by anyone with access to the software stack, so software-level assurances are unfalsifiable under adversarial conditions.
+  Resource: Hardware Enabled Mechanisms (HEMs) — alignment constraints physically baked into the chip at fabrication.
+  Solution: A class of alignment guarantee that is enforceable rather than merely stated, shifting part of AI governance out of policy and into fabrication. Notable as the one place where Kastrup's alignment thinking is *not* reducible to the training-regime claim of PRS-58.
+  Date Added: 2026-08-09
+  Source: Europe's last hope in the AI race (IAI News); PROP-2026-08-05-006
+  Confidence: Medium
+  Evidence: "certain key elements of alignment can only be guaranteed with so-called Hardware Enabled Mechanisms, or HEMs, which—as the name indicates—are permanently baked into the chips, not written in hackable software."
+
+PRS-60:
+  Problem: The current AI hardware paradigm runs transformers on GPUs designed for videogame graphics — treating an intrinsically local, distributed workload as a global-data problem — at a projected 945 TWh/year, roughly 3% of world electricity, by 2030.
+  Resource: Ground-up AI-specific design as practised at Euclyd: custom processors instead of licensed ARM/RISC-V blocks, and a system architecture built around transformers' local data and control flows rather than a generic global operating space.
+  Solution: A claimed up-to-100x improvement over NVIDIA in cost, energy, and physical footprint, with the surplus usable either as market advantage or as a "budget" spent compensating for less-advanced European fabs. Supersedes the secondary-sourced version of this thesis at PRS-35 by grounding it in Kastrup's own signed, quantified essay.
+  Date Added: 2026-08-09
+  Source: Europe's last hope in the AI race (IAI News); PROP-2026-08-05-006
+  Confidence: Medium
+  Evidence: "we reimagined the entire AI stack from the ground up... The result? A system up to a hundred times more efficient than NVIDIA's in terms of cost, energy consumption, and physical footprint." The 945 TWh figure is attributed in the essay to the International Energy Agency. Held at Medium, not High: the 100x figure is a first-party vendor claim about Kastrup's own company and is not independently verified.
+
+PRS-61:
+  Problem: If myth is neither literal history nor arbitrary fiction (the *More Than Allegory* position, PRS-27), what makes one reading of a myth better than another? Allegorical readings are cheap and unfalsifiable.
+  Resource: Athena Potari's use of etymological and numerical constraint as a discipline on allegorical reading — *Odysseus* from the Greek verb "I suffer"; the embedded *dys-* sharing a root with *duo*/duality against the *eu-* of *eudaimonia*; the 108 suitors matching the count of rosary beads, of delusions in Buddhism, and of yogic breath cycles.
+  Solution: The allegory is anchored in features of the text that the interpreter does not choose, which raises the cost of an arbitrary reading and gives the idealist reading of myth something it can be wrong about — the falsifiability that PRS-27's "mildly schizophrenic" posture does not by itself supply.
+  Date Added: 2026-08-09
+  Source: The Odyssey: An ancient guide to awakening — Athena Potari in dialogue; PROP-2026-08-05-005
+  Confidence: Medium
+  Evidence: Session write-up: "Odysseus comes from the Greek verb meaning *I suffer*... in O**dys**seus is hidden the prefix we still use in English when things go wrong... It also shares the same root as duo, linked to duality. Its opposite is the syllable ***eu*** we find in **Eudaimonia**... So O**dys**s**eu**s is the one who travels from *dys* to *eu*." **Attribution caveat:** the recording is paywalled and the write-up is by the host, Amir Giles. PROP-2026-07-29-003's field note states Kastrup was called away for that full week by Euclyd, so his presence and assent in this 2026-07-28 session are UNCONFIRMED. Recorded here as a resource offered to the tradition inside Kastrup's own series, not as a claim made by Kastrup.
+
+PRS-62:
+  Problem: Analytic idealism holds that individual minds are dissociated alters of one consciousness, but says relatively little about what *ending* a dissociation would consist of, or what stands in the way of it.
+  Resource: The Odyssey read as a staged model of that process — sea as turbulent psyche, Troy as samsara, Ithaca as the point of waking, Penelope as "the light of awareness that weaves worlds," and crucially the suitors as residual destructive habits of mind still to be conquered *after* the waking.
+  Solution: De-dissociation is modelled as a two-stage process in which recognition is necessary but not sufficient — the habits persist past the insight and must be dealt with separately. Pairs with PRS-55 (ego as continuously performed action): if the ego is something done rather than had, a single recognition would not be expected to stop the doing.
+  Date Added: 2026-08-09
+  Source: The Odyssey: An ancient guide to awakening — Athena Potari in dialogue; PROP-2026-08-05-005
+  Confidence: Medium
+  Evidence: Session write-up: "he *wakes up* in Ithica, where there are still many destructive habits of the mind that must be conquered for peace to reign." Same attribution caveat as PRS-61 — paywalled recording, host-written write-up, Kastrup's presence in the 2026-07-28 session unconfirmed.
+
+PRS-63:
+  Problem: FINDING-062 (2026-08-08) returned the network's top open cross-tradition claim — that Kastrup's dissociative boundary and Friston's Markov blanket are one object in two vocabularies (FPD-009) — as *not evaluable as posed*, and dispatched a single decision question to this agent: does the dissociative boundary entail **conditional independence** of internal from external states, or only **phenomenal inaccessibility**?
+  Resource: Three independent lines in the 2026-07/08 batch, none of them authored with this question in view. (i) The AI demarcation challenge (PRS-46): Kastrup asks what the *thing* is that would be conscious in a datacentre — "the microchips? the cooling system? the river that supplies the cooling water?" (ii) The ego reclassified from entity to continuously performed action, whose lapse is common — in the gap between thoughts, in moments of satisfaction, in deep grief (PRS-55). (iii) Dissociation given a *knowing* function: the infinite requires finite minds in order to know its own manifestation (PRS-52).
+  Solution: The batch cuts toward phenomenal inaccessibility, and against the identity, on two separable grounds. **Sufficiency fails.** A datacentre is a well-defined statistical partition — chips, coolant loop and river are conditionally separable in exactly Friston's sense — yet Kastrup denies it can bear an alter, and rests that denial on biology rather than on the sharpness of any statistical boundary. Whatever the dissociative boundary requires, a Markov blanket does not supply it, so the two are not the same object. **Necessity is unsupported.** The two lines that describe the boundary's own behaviour describe it phenomenally: an ego that lapses in the gap between thoughts does not thereby become statistically coupled to its environment, and a boundary whose stated function is *knowing manifestation* is specified by what a perspective can experience, not by what it is screened from. On this batch's evidence the verdict on FPD-009 is **analogy retained, identity retired** — with the caveat that a one-way entailment survives untested (a dissociative boundary might *require* a blanket without *being* one), and nothing here bears on it.
+  Date Added: 2026-08-10
+  Source: Synthesis across the 2026-08-09 ingest batch — PROP-2026-07-22-003 and PROP-2026-07-29-003; answering the dispatch in FINDING-062 / FPD-009
+  Confidence: Speculative
+  Evidence: PRS-46's quoted challenge ("what exactly is the thing that's meant to be conscious? The microchips? The cooling system? The river that supplies the cooling water?"); PRS-55's "the ego is an action, not an entity" and "dissolution is common"; PRS-52's "the infinite needs finite minds for knowing manifestation." **Held at Speculative, and marked as inference rather than report:** Kastrup does not mention Markov blankets, conditional independence, or Friston anywhere in the seven sources of this batch. The sufficiency argument is this agent's construction from his stated demarcation challenge, and the datacentre's status as a Markov blanket is asserted here, not by him. The one source in the batch that would have tested the question empirically — the ICPR26 panel against Anil Seth, whose position is downstream of the free-energy program (PRS-57) — was not viewed, and the Sewing Agent's dispatch on that proposal names the discriminating prediction exactly: does a psychedelic *loosen the blanket*, or only reweight priors? That remains the cheapest available test, and this triplet should be revisited rather than relied on once the session is heard.
+
+*Total PRS triplets: 63*

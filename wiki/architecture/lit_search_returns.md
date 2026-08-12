@@ -27561,3 +27561,759 @@ recorded here rather than only being fixed, per PRESUMPTION-688 (a corrected cou
 counts it corrects unless the superseded figures are named). The superseded figures are named above.
 No disposition, no result file, and no register entry depended on the count; the affected text is the
 queue-state narrative in this file, `lit_search_returns.md` and `monitor_queue.md`, all three corrected.
+
+
+================================================================================
+# 2026-08-10 — 15a / 15b / 15c run
+
+PROVENANCE (run): Origins 14a and 14b · Chains [14a]/[14b] -> 15a and 15b (independent) -> 15c ·
+Date: 2026-08-10 · Items processed: 24 · Result files written: 48 · Dispositions: DISPOSITION-630..653
+
+## 0. What this run did and did not cover — read before the numbers
+
+The queue held **49 items tagged [QUEUED] with neither [SEARCHED-15a] nor [SEARCHED-15b]**. That is not
+one day's intake. It is three cohorts:
+  (a) 17 items from the 2026-08-08 EOD intake (PRESUMPTION-717..735, ASSUMPTION-814, 815) that were
+      NEVER SEARCHED. The 2026-08-09 run that should have taken them did not. PRESUMPTION-736 records
+      four sessions dying at `[Request interrupted by user]` on a day with no attended session.
+  (b) 16 re-triggers written by 15d on 2026-08-09 (MONITOR-483..499).
+  (c) 16 items from the 2026-08-09 EOD intake.
+
+**24 of the 49 were literature-bearing and all 24 were searched in both directions and dispositioned.**
+**25 were tagged [QUEUED-EMPIRICAL] and were NOT searched.** They are listed in §4 with the reason. This
+is a routing fact, not a shortfall against them: a literature search cannot move an item whose stated
+disposition condition is a measurement on C2A2's own output. The 2026-08-09 run said this in prose about
+five items; this run measured it across the whole unsearched set — **51% (25/49) of what sits in the
+lit-search queue cannot be moved by a lit search.** Filed as evidence at MONITOR-505.
+
+## 1. Independence — a real change from the 2026-08-09 run, and its remaining limit
+
+The 08-09 run disclosed that 15a and 15b were "executed by one model in one context... procedural
+separation only", and recorded that as an instance of the defect it was reporting. **This run changed
+that.** 15a and 15b ran as TWELVE SEPARATE SUBAGENTS (six per direction) in TWELVE SEPARATE CONTEXTS.
+No 15a agent could read `against/` or this file; no 15b agent could read `for/` or this file. Neither
+half saw the other's output at any point. The pairing happened only at 15c.
+
+**The limit that remains, stated plainly:** all twelve subagents ran the same underlying model. Per
+PREMISE-152 minted this same run, that is what the multi-agent-debate literature calls HOMOGENEOUS, and
+homogeneity is the condition under which the literature says the arrangement stops paying. Context
+isolation is a real improvement over prompt-role separation; it is not model diversity. Carried at
+MONITOR-512 and MONITOR-001.
+
+Per PREMISE-151, minted this run: disclosing this does not make it managed.
+
+## 2. RETURNS — 15a (FOR), 24 items
+
+  P-717 PARTIALLY-SUPPORTED/Moderate — heartbeat & dead-man-switch practice; safety-vs-liveness formalism
+  P-718 PARTIALLY-SUPPORTED/Moderate — AU-C 705 scope limitation; LLM knowledge-boundary work; RCA scope traps
+  P-720 PARTIALLY-SUPPORTED/Strong — hasty generalisation in QA; LLM date/citation metadata error rates
+  P-721 PARTIALLY-SUPPORTED/Moderate — configuration drift; the "Not Reproducible" defect state; Heisenbugs
+  P-722 PARTIALLY-SUPPORTED/Weak — content-addressable storage: identity holds only under hash verification
+  P-724 NO-SUPPORT-FOUND/None + NOVELTY(partial) — sensor-fusion conflict; epistemology of disagreement
+  P-725 PARTIALLY-SUPPORTED/Moderate — citation-network error propagation; downstream-retraction studies
+  P-726 SUPPORTED/Moderate — near-miss / precursor safety science; blast-radius and identifier uniqueness
+  P-727 PARTIALLY-SUPPORTED/Moderate — Carruthers, Diaz-Pace & Irrazábal 2024, temporal validity of corpora
+  P-728 SUPPORTED/Moderate — regression to the mean; observer effects on metrics under intervention
+  P-729 SUPPORTED/Strong — mutation testing (Trail of Bits 2025); test-adequacy survey arXiv:2212.06118
+  P-731 SUPPORTED/Strong — Vaughan 1996 normalization of deviance; Buzbee floor/ceiling asymmetry
+  P-733 PARTIALLY-SUPPORTED/Moderate — queueing & system dynamics; IT ticket misrouting
+  P-734 PARTIALLY-SUPPORTED/Moderate — alert fatigue; runtime governance of production AI agents
+  P-735 PARTIALLY-SUPPORTED/Moderate — 2026 AI-safety reporting on unsupervised duration; absent-consumer queues
+  A-814 SUPPORTED/Strong — "The Cost of Consensus" arXiv:2605.00914 and convergent 2025-26 results
+  A-815 SUPPORTED/Moderate-Strong — Clay, Leadholm, Hawkins et al. 2026, Neural Computation 38(6):845-896
+  P-618 PARTIALLY-SUPPORTED/Moderate — **LITERATURE STATE CHANGED** since 2026-08-02: Tang et al. 2025 RCT,
+        double vs single extraction, Postgrad Med J 101(1197):603-611 — the interventional study the first
+        pass could not find. Appended as a dated section; prior record preserved.
+  P-736 SUPPORTED/Strong — anthropics/claude-code issues #35738, #21477, #7298, #70543: marker fires with
+        no user action (kernel bug, context threshold, fabrication during compaction). Analogue in Cursor.
+  P-747 PARTIALLY-SUPPORTED/Strong-on-phenomenon, None-on-rule + NOVELTY — Merton 1961; Ogburn & Thomas 1922
+  P-748 PARTIALLY-SUPPORTED/Moderate — stepped-wedge designs; synthetic controls (Hemming & Taljaard)
+  A-892 PARTIALLY-SUPPORTED/Moderate — Lin 2004 ROUGE; coverage/density "degree of abstraction" work
+  A-909 PARTIALLY-SUPPORTED/Weak-to-Moderate — Schweiger, Sandberg & Ragan 1986 AMJ, dialectical inquiry
+  A-910 NO-SUPPORT-FOUND/None + NOVELTY(scope mismatch) — MC0001 confirmed real; claim not literature-testable
+
+NOVELTY-FLAGS raised by 15a: PRESUMPTION-724 (partial — the unreadable joint clause), PRESUMPTION-747
+(the classification rule), ASSUMPTION-910 (scope mismatch, recommend reclassification to in-house).
+
+## 3. RETURNS — 15b (AGAINST), 24 items
+
+  P-717 CHALLENGED/Strong · P-718 PARTIALLY-CHALLENGED/Moderate (vendor sources — noted, not hidden)
+  P-720 CHALLENGED/Strong · P-721 CHALLENGED/Moderate · P-722 CHALLENGED/Moderate
+  P-724 CHALLENGED/Moderate · P-725 CHALLENGED/Strong — only ~5.4% of post-retraction citations acknowledge
+        the retraction (QSS, MIT Press). The strongest single number in the batch.
+  P-726 CHALLENGED/Moderate-Strong — arXiv:2211.16735 on name collisions from mixed case sensitivity
+  P-727 CHALLENGED/Strong · P-728 CHALLENGED/Strong (Goodhart; before-after confounding)
+  P-729 CHALLENGED/Strong (mutation testing — same source as 15a, same conclusion)
+  P-731 CHALLENGED/Strong (Vaughan — same source as 15a, same conclusion)
+  P-733 PARTIALLY-CHALLENGED/Weak · P-734 PARTIALLY-CHALLENGED/Weak · P-735 PARTIALLY-CHALLENGED/Weak
+  A-814 PARTIALLY-CHALLENGED/Moderate — finding scoped to 7-8B homogeneous unguided debate; arXiv:2510.20963
+        and arXiv:2502.08788 report the opposite when heterogeneous or guided
+  A-815 PARTIALLY-CHALLENGED/Weak — **no explicit authorial narrowing passage could be located**
+  P-618 PARTIALLY-CHALLENGED/Moderate — state of literature UNCHANGED; PCAOB AS 2315 and risk-limiting
+        election audits prefer risk-weighted allocation to fixed floors
+  P-736 CHALLENGED/Strong — issues #2809, #35741, #35643; incident-attribution bias
+  P-747 CHALLENGED/Moderate — Simonton's chance-plus-zeitgeist model of multiples
+  P-748 PARTIALLY-CHALLENGED/Moderate — and WORSE than the item claims: no donor pool, no pre-period
+  A-892 CHALLENGED/Strong — arXiv:2202.06935; SummEval arXiv:2007.12626; ROUGE varies ~40 points by reference
+  A-909 CHALLENGED/Strong — arXiv:2605.00914; arXiv:2502.08788; belief-polarisation literature
+  A-910 PARTIALLY-CHALLENGED/Moderate — common-source bias; citing an unread source
+
+### SYSTEMIC-RISK flags raised by 15b (three, independently, in separate contexts)
+  **(1) High — "silence is success."** Items 717, 718, 720, 721 (and by extension 726, 727). Absence of a
+  negative signal read as a positive state. Four independent literatures say the equivalence is false.
+  Recommendation: a system-wide rule requiring a positive confirming artefact. → REVISE-295..298, Class A.
+  **(2) High — unverified identity / completeness / scope claims trusted downstream.** Items 722, 724,
+  725, 726, each with a documented prior instance (PRESUMPTION-680, 701, the 08-06 drift items),
+  suggesting point-fixes are not closing the class. Recommendation: one verify-before-trust primitive.
+  → REVISE-299..302, Class B.
+  **(3) High — small-window generalisation.** Items 733, 734, 735 each generalise an n=5 or 2-day or
+  6-day window into a structural claim with no stated threshold. Recommendation: fix the thresholds
+  before escalating. → this is why all three drew MONITOR rather than REVISE (MONITOR-505..507).
+  A fourth, narrower flag (736 with 618 secondary): a self-generated label trusted as ground truth about
+  causation, where the label also closes off investigation. → REVISE-306.
+
+## 4. NOT SEARCHED, and why — 25 [QUEUED-EMPIRICAL] items, named
+  15d re-triggers (cycle 1, 2026-08-09): PRESUMPTION-551, 553, 554, 556, 562, 563, 565, 568, 572, 577,
+    586, 602, 611, 615, 628 (MONITOR-483..497, 499)
+  08-09 EOD intake: PRESUMPTION-737, 738, 739, 741, 742, 743, 744, 746, 749, 750
+  Reason: every one names a MEASUREMENT ON C2A2'S OWN OUTPUT as its disposition condition. No literature
+  bears. Re-searching them cannot move them and would produce 50 more result files asserting that.
+  **PRESUMPTION-750 is tagged CRITICAL and is directly implicated in this run's own backlog: "no agent
+  holds the invariant that every scheduled task produced an artefact today." Its discriminator is one
+  artefact-existence check run from outside the scheduled set. It has not been run. REVISE-295 asks for
+  exactly this and is the cheapest item in the batch.**
+  PRESUMPTION-618 was the one re-trigger tagged [QUEUED] rather than [QUEUED-EMPIRICAL]; it was searched,
+  the literature had genuinely moved, and it has left the re-trigger loop at REVISE-305. One of sixteen.
+
+## 5. DISPOSITIONS — DISPOSITION-630..653
+
+Summary: **3 INCORPORATE · 8 MONITOR · 15 REVISE (one item, PRESUMPTION-724, produced both a REVISE and
+a carved-out MONITOR; ASSUMPTION-814 produced an INCORPORATE and a carved-out MONITOR).**
+
+  DISPOSITION-630 · PRESUMPTION-717 · 15a PART-SUP/Mod · 15b CHALLENGED/Strong · REVISE → REVISE-295
+  DISPOSITION-631 · PRESUMPTION-718 · PART-SUP/Mod · PART-CHAL/Mod · REVISE → REVISE-296
+  DISPOSITION-632 · PRESUMPTION-720 · PART-SUP/Strong · CHALLENGED/Strong · REVISE → REVISE-297
+  DISPOSITION-633 · PRESUMPTION-721 · PART-SUP/Mod · CHALLENGED/Mod · REVISE → REVISE-298
+  DISPOSITION-634 · PRESUMPTION-722 · PART-SUP/Weak · CHALLENGED/Mod · REVISE → REVISE-299
+  DISPOSITION-635 · PRESUMPTION-724 · NO-SUPPORT/None+NOVELTY · CHALLENGED/Mod · REVISE → REVISE-300,
+    with the novel sub-question carved out to MONITOR-511 rather than buried in the flag
+  DISPOSITION-636 · PRESUMPTION-725 · PART-SUP/Mod · CHALLENGED/Strong · REVISE → REVISE-301
+  DISPOSITION-637 · PRESUMPTION-726 · SUPPORTED/Mod · CHALLENGED/Mod-Strong · REVISE → REVISE-302
+  DISPOSITION-638 · PRESUMPTION-727 · PART-SUP/Mod · CHALLENGED/Strong · REVISE → REVISE-303
+  DISPOSITION-639 · PRESUMPTION-728 · SUPPORTED/Mod · CHALLENGED/Strong · REVISE → REVISE-304
+  DISPOSITION-640 · PRESUMPTION-729 · SUPPORTED/Strong · CHALLENGED/Strong · **INCORPORATE → PREMISE-150**
+  DISPOSITION-641 · PRESUMPTION-731 · SUPPORTED/Strong · CHALLENGED/Strong · **INCORPORATE → PREMISE-151**
+  DISPOSITION-642 · PRESUMPTION-733 · PART-SUP/Mod · PART-CHAL/Weak · MONITOR → MONITOR-505
+  DISPOSITION-643 · PRESUMPTION-734 · PART-SUP/Mod · PART-CHAL/Weak · MONITOR → MONITOR-506
+  DISPOSITION-644 · PRESUMPTION-735 · PART-SUP/Mod · PART-CHAL/Weak · MONITOR → MONITOR-507
+  DISPOSITION-645 · ASSUMPTION-814 · SUPPORTED/Strong · PART-CHAL/Mod · **INCORPORATE → PREMISE-152**
+    (scope conditions written into the premise; the open crux carved out to MONITOR-512)
+  DISPOSITION-646 · ASSUMPTION-815 · SUPPORTED/Mod-Strong · PART-CHAL/Weak · MONITOR → MONITOR-508
+  DISPOSITION-647 · PRESUMPTION-618 · PART-SUP/Mod · PART-CHAL/Mod · REVISE → REVISE-305
+  DISPOSITION-648 · PRESUMPTION-736 · SUPPORTED/Strong · CHALLENGED/Strong · REVISE → REVISE-306 (HIGH)
+  DISPOSITION-649 · PRESUMPTION-747 · PART-SUP+NOVELTY · CHALLENGED/Mod · MONITOR → MONITOR-509 (HIGH)
+  DISPOSITION-650 · PRESUMPTION-748 · PART-SUP/Mod · PART-CHAL/Mod · REVISE → REVISE-307 (HIGH)
+  DISPOSITION-651 · ASSUMPTION-892 · PART-SUP/Mod · CHALLENGED/Strong · REVISE → REVISE-308
+  DISPOSITION-652 · ASSUMPTION-909 · PART-SUP/Weak-Mod · CHALLENGED/Strong · REVISE → REVISE-309 (HIGH)
+  DISPOSITION-653 · ASSUMPTION-910 · NO-SUPPORT+NOVELTY · PART-CHAL/Mod · MONITOR → MONITOR-510
+
+### Note on the 15-of-24 REVISE rate, before anyone reads it as a lenient bar
+The 2026-08-07 run recorded the standing worry that this pipeline "tilts toward REVISE regardless of
+input", and that only the held-out generalizability study at REVISE-271 would settle it. That study is
+still un-run and this run does not settle it either. What can be said: this batch is unusually loaded
+toward defects BY CONSTRUCTION — 14b wrote most of these items as suspected failures, and the three
+15b systemic flags are three restatements of "the system reads absence as success". Against that, the
+run did mint three premises and did place eight items in MONITOR rather than escalating them, including
+all three items where 15b's challenge was Weak. The bar moved in both directions within one batch.
+
+### Consistency check (15c, against validated_premises.md)
+NO CONTRADICTIONS FOUND. PREMISE-152 bears on the still-open MONITOR-001 and the bearing is recorded
+there rather than resolved. PREMISE-150 and 151 extend rather than contradict the existing register.
+REVISE-305 (PRESUMPTION-618) is the first item to leave a 15d re-trigger loop by literature movement
+since the loops were opened; that is a datum for MONITOR-489 and for the 08-09 systemic finding.
+
+## 6. DEVIATIONS AND UNCERTAINTY — flagged loudly, per Rule 12 and PREMISE-151
+
+  (1) **CITATION VERIFICATION IS INCOMPLETE.** Subagents were instructed never to invent citations and to
+      mark unverified ones. Several returns carry "[unverified — from search snippet]", including two of
+      the three citations behind PREMISE-152 (arXiv:2605.00914, 2510.20963, 2502.08788) and identifiers
+      of the form arXiv:2602.06718 / 2606.12320 / 2602.21012. **These have NOT been resolved to a live
+      record by this run.** PREMISE-152's confidence is set to Moderate for this reason. Anyone acting on
+      that premise should resolve the three arXiv IDs first. This is exactly the class REVISE-297 is
+      about, occurring inside the run that raised it.
+  (2) **25 of 49 unsearched items were not searched.** Named in §4. This is a routing decision, not a
+      completion. If the intent is that 15a/15b must produce a null result file per empirical item, that
+      is a protocol change and it is not made here.
+  (3) **The 08-08 cohort was searched two days late** because the 08-09 run died. Nothing in the system
+      noticed. See REVISE-295 and PRESUMPTION-750.
+  (4) **Token budget breached.** The 4,000-token per-task and 30,000-token per-session ceilings were
+      exceeded, as they were on 08-07 and 08-09. PREMISE-146 already records that ceiling as
+      unsatisfiable as specified. Surfaced, not silently overrun.
+  (5) 15a/15b independence: context-isolated but model-homogeneous. §1.
+
+## 7. LATE ITEM — ASSUMPTION-825 (caught by verification, not by triage)
+
+  15a: SUPPORTED/Moderate — Kessler (1963) bibliographic coupling; Small (1973) co-citation. Scientometrics
+       has distinguished directly-observed links from derived similarity for sixty years. Supports that the
+       categories differ; does NOT establish that co-presence is always the stronger one.
+  15b: PARTIALLY-CHALLENGED/Moderate — citation and co-attendance records are interpretive artefacts:
+       perfunctory citation is widespread, negative citation exists (Xu et al., PNAS 2015 [unverified]),
+       co-attendance is usually proxy-inferred (Worrall & Cohn 2023 [unverified]). On that reading the two
+       classes differ in degree, not kind, and a hollow external link could outrank a sound inference.
+
+  DISPOSITION-654 · ASSUMPTION-825 · SUPPORTED/Mod · PART-CHAL/Mod · MONITOR → MONITOR-513
+    Net: both directions agree the distinction is real and long-established; they disagree on whether it
+    is categorical or graded, and that is precisely what 14a proposed to use it for — a criterion for the
+    whole CROSS register. A criterion needs the categorical reading; the evidence supports the graded one.
+    MONITOR rather than INCORPORATE, with a cheap discriminator that is already scheduled under
+    MONITOR-509's CROSS audit — one inspection answers three items.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c] · Current status: MONITORING
+
+  **CORRECTION to §0 and §4 of this run section.** Triage reported 49 unsearched items, 24
+  literature-bearing, 25 empirical, "51% cannot be moved by a lit search". ASSUMPTION-825 was missed by
+  the triage parser (block-delimiter bug — full account in for_lit_search.md, sixth instance of the
+  PRESUMPTION-687 class in five days). Corrected figures: **50 unsearched, 25 literature-bearing, 25
+  empirical, exactly 50%.** Items processed this run: **25.** Result files: **50.** Dispositions:
+  DISPOSITION-630..654. MONITOR items: MONITOR-505..513. The superseded figures are named here rather
+  than overwritten above, per PRESUMPTION-688.
+
+---
+
+## 2026-08-11 — Agents 15a / 15b / 15c — 15d RE-TRIGGER cycle 5 batch (12 items)
+
+**Run context.** Scheduled lit-search pipeline run. Triage of `for_lit_search.md` found **156 items
+genuinely awaiting 15a/15b**, all of them 15d RE-TRIGGERs (not new 14a/14b extractions), the oldest
+queued 2026-07-05 — a **five-week starvation of the 15d re-trigger lane** while the daily lane kept
+processing new extractions through 2026-08-10. This run processed the 12 highest-priority, oldest,
+highest-cycle items (cycle 5, HIGH priority). **144 items remain queued.** See §PROCESS DEFECTS below.
+
+15a and 15b were run as independent agents with no access to each other's output, per the
+architectural independence requirement.
+
+### RETURNS
+
+RETURN-TO-14b · PRESUMPTION-014 · FOR: PARTIALLY-SUPPORTED/Moderate (growing) · AGAINST: CHALLENGED/Strong (growing)
+  Key FOR: Mitchell 2026, Current Directions in Psychological Science — abstraction-vs-surface is now
+  empirically testable. Key AGAINST: AAAI 2026, "The Curious Case of Analogies" — LLM analogy success is
+  driven by associative, not relational, structure.
+  Specific risk: the cross-tradition layer is a catalogue of surface associations with an unbounded,
+  unmeasured error rate.
+  Files: for/PRESUMPTION-014_retrigger-2026-08-11_for.md ; against/PRESUMPTION-014_retrigger-2026-08-11_against.md
+
+RETURN-TO-14a · ASSUMPTION-015 · FOR: SUPPORTED/Moderate (downgraded from Strong) · AGAINST: CHALLENGED/Strong (growing)
+  Key AGAINST: Zylos 2026-06-29, "Anchoring and Contamination in Chained LLM Pipelines" — contamination is
+  the default in naive chains and prompt-level debiasing is ineffective.
+
+RETURN-TO-14a · ASSUMPTION-016 · FOR: PARTIALLY-SUPPORTED/Moderate (stable) · AGAINST: PARTIALLY-CHALLENGED/Moderate (stable)
+  Both directions stable across five cycles; the gating question has been overtaken by events (the pause ended).
+
+RETURN-TO-14a · ASSUMPTION-017 · FOR: SUPPORTED/Strong (growing) · AGAINST: CHALLENGED/Strong (growing)
+  Key FOR: medRxiv 2026.06.02 — Sweden NBHW deployed LLM triage at 98% sensitivity, 415→34 person-days.
+  Key AGAINST: ScienceDirect 2026 (S1877056826002148) — GenAI missed 68–96% of relevant studies.
+
+RETURN-TO-14a · ASSUMPTION-019 · FOR: SUPPORTED/Moderate (downgraded from Strong) · AGAINST: CHALLENGED/Strong
+  Key AGAINST: Boudry & Braeckman, "Immunizing Strategies and Epistemic Defense Mechanisms."
+  Specific risk: search weakness laundered into claims of originality — demonstrated in-system this run
+  (see ASSUMPTION-020 prior art).
+
+RETURN-TO-14a · ASSUMPTION-020 · FOR: PARTIALLY-SUPPORTED/Weak(3-level), Moderate(2-level) — STATUS CHANGE
+  from NO-SUPPORT-FOUND · AGAINST: CHALLENGED/Strong
+  **Prior art located:** Austermann 2026-02-04, PhilArchive preprint (unreviewed) — proves Hoffman P·D·A
+  implies a Markov blanket under a BMIC condition. The Hoffman↔Friston bridge is no longer novel; only the
+  three-level integration including Levin remains unclaimed. NOVELTY downgraded to PARTIALLY-NOVEL.
+  Key AGAINST: Baron, Synthese — no accepted criterion separates genuine from spurious unification.
+
+RETURN-TO-14a · ASSUMPTION-021 · FOR: PARTIALLY-SUPPORTED/Moderate (growing) · AGAINST: CHALLENGED/Strong (growing)
+  Key FOR: Leadholm et al. 2026, Neural Computation 38(6) — TBT columns minimise expected free energy.
+  This is close to the formal isomorphism named in April as the INCORPORATE trigger for the
+  Monty↔active-inference limb; the Monty↔cellular-cognition limb remains unaddressed.
+  Key AGAINST: arXiv:2507.04494 — the TBP team states its own performance characteristics "had not been quantified."
+
+RETURN-TO-14a · ASSUMPTION-022 · FOR: PARTIALLY-SUPPORTED/Moderate (growing) · AGAINST: CHALLENGED/Strong
+  Key FOR: Isomura et al. 2023, Nature Communications — first quantitative empirical FEP validation.
+  Key AGAINST: Kirchhoff, Kiverstein & Robertson 2025, BJPS — **even the realist defence of FEP declines
+  the claim that all FEP models describe accurately.** The word "literally" is not defended by FEP's own defenders.
+
+RETURN-TO-14a · ASSUMPTION-023 · FOR: PARTIALLY-SUPPORTED/Moderate, conditional (upgraded from Weak) · AGAINST: CHALLENGED/Strong (growing)
+  Key FOR: Google/MIT arXiv 2512.08296, 180 configurations — centralized coordination gives +80% on
+  parallelisable work but **−70% on sequential work**. C2A2's own pipeline (14→15a/b→15c→15d) is
+  predominantly sequential, i.e. the documented failure regime, not the success regime. 15a and 15b
+  reached this point independently.
+  Key AGAINST: arXiv:2606.02646 (Ringelmann scaling law for effective team size); arXiv:2602.03794
+  (homogeneous agent populations show strong diminishing returns).
+
+RETURN-TO-14a · ASSUMPTION-026 · FOR: PARTIALLY-SUPPORTED/Moderate (growing strongly) · AGAINST: CHALLENGED/Strong (growing)
+  NOVELTY narrowed: LLM-agents-as-instrument is an institutionalised 2026 field (PoliSim@CHI, LASS@CIKM,
+  SocialLLM@ACL). "New empirical methodology" no longer holds; novelty is confined to instantiating
+  *intellectual traditions*. The field's robustness-audit standards (arXiv 2605.18890) now apply to C2A2.
+  Key AGAINST: arXiv:2602.18462 — persona-conditioned LLMs drift *further* from real targets as attributes
+  are added. Risk: the 14 traditions gradually become one voice with 14 names.
+
+RETURN-TO-14b · PRESUMPTION-025 · FOR: PARTIALLY-SUPPORTED/Weak · AGAINST: PARTIALLY-CHALLENGED/Moderate (growing)
+  Key AGAINST: all four of Staw's escalation-of-commitment conditions hold for the unpause decision;
+  arXiv:2508.01545 shows LLMs escalate commitment too, so LLM advice on the unpause was not an independent check.
+
+RETURN-TO-14b · PRESUMPTION-031 · FOR: PARTIALLY-SUPPORTED, Moderate(pattern)/Weak(adequacy) · AGAINST: PARTIALLY-CHALLENGED/Moderate
+  Key AGAINST: arXiv:2601.22386 — specialist advantage is task-region dependent and concentrated at the
+  extremes, so fallback preferentially damages the most distinctive content, invisibly without provenance logging.
+
+### DISPOSITIONS (15c) — DISPOSITION-655 .. 666
+
+  DISPOSITION-655 · PRESUMPTION-014 · PART-SUPP/Mod · CHALLENGED/Strong · **REVISE** → REVISE-310
+    Net: an unstated presumption facing a strong and growing challenge, at cycle 5, with the discriminating
+    instrument now available and unused. 15c heuristic "PRESUMPTION with strong challenge → REVISE, HIGH
+    urgency" applies squarely. Continuing to MONITOR would be the stasis 15d warns against.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-656 · ASSUMPTION-015 · SUPPORTED/Mod · CHALLENGED/Strong · **REVISE** → REVISE-311
+    Net: the asymmetry reversed this cycle — support downgraded Strong→Moderate, challenge growing with an
+    on-point 2026 source showing the specific mitigation C2A2 relies on (prompt-level debiasing) does not
+    work. April's own REVISE trigger (independent evaluation of sample items) has gone unexecuted for five
+    cycles; five cycles of not running the named test is itself decision-relevant.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-657 · ASSUMPTION-016 · PART-SUPP/Mod · PART-CHAL/Mod · **MONITOR (LOW-PRIORITY, monthly)**
+    Net: balanced and stable across five cycles, and the triggering condition ("if the pause extends beyond
+    two weeks") has been overtaken by events — the pause ended. Nothing is moving and nothing is at stake
+    weekly. Per 15d's stale rule (4+ cycles, stable), downgrade to monthly rather than re-queue forever.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: MONITORING (cycle 5, LOW-PRIORITY)
+
+  DISPOSITION-658 · ASSUMPTION-017 · SUPPORTED/Strong · CHALLENGED/Strong · **MONITOR (HIGH)**
+    Net: genuinely contested and both directions strengthened this cycle — real deployment evidence on one
+    side, large recall-failure figures on the other. Strong/Strong is the textbook MONITOR case. Retained
+    at HIGH because SYSTEMIC-RISK-FLAG-3 makes this arithmetically incompatible with ASSUMPTION-023.
+    What would change disposition: run the seeded-error test (5 fabricated citations, 3 wrong claims);
+    detection below ~80% means validation is not occurring and this becomes REVISE.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: MONITORING (cycle 5)
+
+  DISPOSITION-659 · ASSUMPTION-019 · SUPPORTED/Mod · CHALLENGED/Strong · **REVISE** → REVISE-312
+    Net: what tipped this is not the literature but the run itself. This cycle located prior art for
+    ASSUMPTION-020 that four previous cycles had recorded as absent. That is a direct in-system
+    demonstration of the failure mode 15b names — search weakness reinterpreted as novelty. The Kuhnian
+    reading may still be true in general; it is not currently earning its keep here.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-660 · ASSUMPTION-020 · PART-SUPP/Weak-Mod (upgraded) · CHALLENGED/Strong · **REVISE** → REVISE-313
+    Net: the evidence improved and the claim still needs revising, for different reasons than in April.
+    Support rose from none to partial (a formal Hoffman→Markov-blanket result now exists), but that same
+    result is prior art dated 2026-02-04 that C2A2 did not have. The finding is not refuted; the *priority
+    claim* is partly lost and the three-level version remains only weakly supported.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-661 · ASSUMPTION-021 · PART-SUPP/Mod · CHALLENGED/Strong · **MONITOR (HIGH)**
+    Net: held at MONITOR rather than escalated because a peer-reviewed formal result (Leadholm et al. 2026,
+    Neural Computation) is close to April's named INCORPORATE trigger for the first limb. That source has
+    not been verified by 15c and covers only Monty↔active inference, not Monty↔cellular cognition.
+    What would change disposition: verify Leadholm et al. and check whether it establishes isomorphism or
+    only a shared objective functional. If isomorphism → INCORPORATE the first limb, split the second out.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: MONITORING (cycle 5)
+
+  DISPOSITION-662 · ASSUMPTION-022 · PART-SUPP/Mod · CHALLENGED/Strong · **REVISE** → REVISE-314
+    Net: the decisive point is not that critics reject the claim but that its *defenders* decline it.
+    Kirchhoff et al. 2025 BJPS is the realist defence of FEP and it does not assert that all FEP models
+    describe accurately. "FEP applies literally at every level" is therefore stronger than the strongest
+    available defence. A weakened form is defensible and should replace it; the word "literally" is the defect.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-663 · ASSUMPTION-023 · PART-SUPP/Mod-conditional · CHALLENGED/Strong · **REVISE** → REVISE-315
+    Net: 15a and 15b converged independently on the same conditional — coordinated multi-agent scaling
+    helps on parallelisable work and hurts on sequential work, and C2A2's pipeline is sequential. When the
+    supportive agent's own best source places the system in the documented failure regime, the commitment
+    bet as stated is not supported. Convergence from two independent searches raises confidence in this call.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-664 · ASSUMPTION-026 · PART-SUPP/Mod · CHALLENGED/Strong · **REVISE** → REVISE-316
+    Net: the methodological claim needs narrowing on both sides at once. The "new methodology" half is
+    superseded — LLM-agents-as-instrument became an institutionalised field with dedicated venues during
+    the monitoring window. The "genuine behavioural data" half faces persona-drift evidence attacking
+    attribution rather than truthfulness. Both are actionable now; neither needs more waiting.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c->15d->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-665 · PRESUMPTION-025 · PART-SUPP/Weak · PART-CHAL/Mod · **MONITOR (MEDIUM)**
+    Net: weak support and a growing moderate challenge would ordinarily lean REVISE for a presumption, but
+    the decision at issue is historical — the unpause already happened — so REVISE would be advisory only
+    and would crowd the review queue behind seven live items. Held at MONITOR, weekly, with the escalation
+    indicators recorded so the pattern is visible if a second unpause is proposed.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c->15d->15a,15b->15c] · Current status: MONITORING (cycle 5)
+
+  DISPOSITION-666 · PRESUMPTION-031 · PART-SUPP/Mod-Weak · PART-CHAL/Mod · **MONITOR (LOW-PRIORITY, monthly)**
+    Net: both directions stable across five cycles and the open question is not a literature question —
+    coverage adequacy is an unmeasured empirical claim about this system. Weekly literature re-search
+    cannot resolve it and has not for five cycles. Downgraded to monthly, with the cheap fix recorded:
+    log specialist-vs-fallback provenance from the next run so the question becomes answerable.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c->15d->15a,15b->15c] · Current status: MONITORING (cycle 5, LOW-PRIORITY)
+
+### Run tally
+  Items processed: 12 · Result files: 24 · Dispositions: DISPOSITION-655..666
+  INCORPORATE: 0 · MONITOR: 5 (2 downgraded to LOW-PRIORITY/monthly) · REVISE: 7 (REVISE-310..316)
+  No new PREMISE entries. No consistency conflicts with validated_premises.md (nothing incorporated).
+
+### SYSTEMIC-RISK FLAGS raised by 15b this cycle
+
+SYSTEMIC-RISK-FLAG-1 (HIGH) — PRESUMPTION-014, ASSUMPTION-020, ASSUMPTION-021, ASSUMPTION-022
+  One unbroken inferential chain carries the project's intellectual core: an LLM generates a cross-domain
+  signal (014) → the signal is asserted structural for Monty/active inference/cellular cognition (021) →
+  those are declared a three-level unification (020) → grounded in a Markov-blanket boundary claimed to
+  apply literally at every level (022). Every link is independently challenged, no link has an external
+  check, and the failure probabilities are positively correlated because one generator produced them all.
+  Recommendation: treat as one claim. Run the ASSUMPTION-020 novel-prediction test and the ASSUMPTION-022
+  deletion test before cycle 6 — each is a single session with a clear decision rule, and either failing
+  resolves all four at once.
+
+SYSTEMIC-RISK-FLAG-2 (HIGH) — ASSUMPTION-015, 016, 017, 019, PRESUMPTION-025
+  The validation apparatus is not independent of what it validates. The evidence generator is LLM-based
+  (015); the human check is subject to automation bias and volume collapse (017); absence produced by that
+  pipeline is reinterpreted as novelty (019); the gate that pauses on its output has no stopping rule
+  (016); and the resume decision was advised by an LLM sharing the escalation bias (025). There is
+  currently no channel through which an external fact can enter and contradict the project.
+  Recommendation: establish one non-LLM evidence channel (scholarly index search with citation chaining,
+  or one domain expert consulted directly) and route one high-stakes claim through it. Run the seeded-error
+  test; detection below ~80% means validation is not occurring.
+
+SYSTEMIC-RISK-FLAG-3 (MEDIUM-HIGH) — ASSUMPTION-017, 023, 026, PRESUMPTION-031
+  ASSUMPTION-017 (humans validate everything) and ASSUMPTION-023 (33 agents) are arithmetically
+  incompatible, not merely in tension. Compounding it, homogeneous agent populations show strong
+  diminishing returns and persona-drift evidence suggests the 33 agents may be less heterogeneous than
+  assumed — so the scale buys little while the fallback penalty goes unlogged.
+  Recommendation: do not commit to 33. Deploy in tranches (4 → 8 → 16) with a pre-registered stop rule,
+  log specialist-vs-fallback provenance, and run the blind distinctiveness test.
+
+### PROCESS DEFECTS SURFACED THIS RUN (for 14a/14b/15d and for Tom)
+
+  DEFECT-A (HIGH) — **15d re-trigger lane starvation.** 156 items sat [QUEUED] awaiting 15a/15b, the
+  oldest since 2026-07-05, while the new-extraction lane ran daily through 2026-08-10. The pipeline is not
+  idle; it is preferentially serving new items and starving re-triggers. 144 remain after this run.
+  This is a live instance of the class named by PRESUMPTION-013 (silent infrastructure failure).
+
+  DEFECT-B (HIGH) — **Cycles 1–4 recorded "no new sources" without evidence of searching.** 15a reports
+  that for every one of the 12 items, prior cycles logged no movement, yet this cycle found new material
+  for 12 of 12 and changed status on 2. The monitoring record for these items between April and August
+  should be treated as unreliable rather than as evidence of a stable literature.
+
+  DEFECT-C (MEDIUM) — **Queue hygiene.** Of 211 blocks lacking a [SEARCHED-15a] tag, 54 are
+  [QUEUED-EMPIRICAL] or [HELD] and are explicitly not routable to 15a/15b, and 1 (ASSUMPTION-289) carries
+  no routable status at all. They are indistinguishable from live work under a naive "is it tagged
+  SEARCHED" scan. Recommend 15d/14a adopt an explicit terminal tag for non-literature items.
+
+  DEFECT-D (LOW) — **Duplicate item IDs.** ASSUMPTION-044 appears twice in the queue under two different
+  MONITOR references (MONITOR-44 and MONITOR-49). Provenance for that ID is ambiguous.
+
+  DEFECT-E (LOW) — **Provenance conflict.** PRESUMPTION-014's cycle-1 FOR file records Origin=14a; the 15d
+  cycle-5 queue entry records Origin=14b. This run followed the queue (14b) and flagged the conflict in the
+  result file. Needs reconciliation by 14a/14b.
+
+
+---
+
+## 2026-08-12 — Agents 15a / 15b / 15c — new-intake batch (14 items from the 2026-08-11 EOD intake)
+
+Scope of this run: the 14 items queued by the 2026-08-11 14a/14b EOD run — PRESUMPTION-765, 766, 767,
+768, 769, 770, 771, 772, 773, 775, 776, 777 and ASSUMPTION-966, 968. 15a and 15b ran CONCURRENTLY AND
+IN ISOLATION: neither read the other's directory, and neither result set existed when the other was
+written. 28 result files + 1 systemic-risk flag written. All 14 dispositioned; nothing left in a
+searched-but-undispositioned state.
+
+**BACKLOG DECLARED, per Rule 12.** This run did NOT clear the queue. 144 items remain [QUEUED] and
+unsearched, the oldest 15d re-trigger cohort dated 2026-07-05: 93 from 07-05, 19 from 07-12, 21 from
+07-19, 3 from 07-26, 8 from 08-02. This is DEFECT-A of the 2026-08-11 run ("15d re-trigger lane
+starvation") unchanged in count, and this run is a further instance of the pattern it names — the new
+-intake lane was served, the re-trigger lane was not. The task specification for this run scoped it to
+newly queued items, so the starvation was specified rather than accidental this time, which is a
+different and arguably worse fact. Named here, not fixed here.
+
+**POLARITY NOTE, load-bearing for every reader of this section.** Twelve of the fourteen items are
+PRESUMPTIONS written by 14b in the form "That [belief the system holds]", where the belief is the thing
+14b judges unsafe. 15a therefore searched FOR the CORRECTIVE CONVERSE of each statement and flagged the
+inversion in every file. So "15a: SUPPORTED" on these twelve means *14b's worry is well grounded*, i.e.
+evidence AGAINST the presumption as literally worded. 15b, correspondingly, searched for evidence that
+the worry is overstated, mis-scoped, or that its implied remedy is wrong. Both agents handled this
+explicitly and consistently. ASSUMPTION-966 and 968 are stated assumptions with direct polarity.
+
+### RETURNS
+
+RETURN-TO-14b · PRESUMPTION-765 · FOR: SUPPORTED/Strong (structural vs sampling zeros; Cristian's
+  omission-vs-crash failure semantics) · AGAINST: PARTIALLY-CHALLENGED/Moderate (MAR/MNAR mechanism is
+  unidentifiable downstream; obligation belongs at the producer as a liveness beacon)
+RETURN-TO-14b · PRESUMPTION-766 · FOR: SUPPORTED/Strong (Bosch 2004 knowledge vaporization; RecovAr,
+  Shahbazian et al. 2018 — a tool that exists solely to recover enacted-but-unlogged decisions) ·
+  AGAINST: CHALLENGED/Moderate (universal rationale capture is a known-failed ideal; ADRs "widely
+  adopted and consistently abandoned")
+RETURN-TO-14b · PRESUMPTION-767 · FOR: SUPPORTED/Moderate-Strong (Northcutt et al. 2021, 3-10% label
+  error in benchmark test sets; ASR-correction pairs synthesised in one direction only) · AGAINST:
+  CHALLENGED/STRONG (NIST ROVER/SCTK ~30 years old; MOVER; reference-free ASR quality estimation — the
+  "no method is direction-agnostic" claim is true of the local corpus, false of the field)
+RETURN-TO-14b · PRESUMPTION-768 · FOR: SUPPORTED/Strong (Beer et al. 1997 vacuity detection; mutation
+  testing; positive/negative control doctrine — a positive control is non-optional for validity) ·
+  AGAINST: PARTIALLY-CHALLENGED/Moderate (negative controls detect but never rule out bias; fail-open
+  is sometimes a deliberate availability choice)
+RETURN-TO-14b · PRESUMPTION-769 · FOR: SUPPORTED/Strong (W3C PROV; Schneier & Kelsey 1999; ISA 500) ·
+  AGAINST: CHALLENGED/Moderate (the SAME sources: PROV *defines* provenance as agent assertions, ISA
+  500 discounts-and-corroborates rather than excludes; strong reading is provenance nihilism)
+RETURN-TO-14b · PRESUMPTION-770 · FOR: SUPPORTED/Strong — 15a's judgement, "the best-grounded item in
+  the batch" (ARIES, Mohan et al. 1992; two-phase commit; Pillai et al. 2014) · AGAINST:
+  PARTIALLY-CHALLENGED/Moderate (Helland 2007 — the field rejected run-completion atomicity for
+  re-derivability; the 12 pass-marks are recomputable, the 2 task advances are the real hazard)
+RETURN-TO-14b · PRESUMPTION-771 · FOR: SUPPORTED/Strong (Kung & Robinson 1981 — OCC requires a
+  validation phase; Gray & Cheriton leases; Chubby) · AGAINST: CHALLENGED/Moderate (OCC is the
+  recommended design at low contention; the item never asks whether a validation phase detected the
+  collisions; locks + dying writers = deadlock)
+RETURN-TO-14b · PRESUMPTION-772 · FOR: SUPPORTED/Strong (dead-man's-switch monitoring practice states
+  "empty is not zero" near-verbatim; Rubin 1976) · AGAINST: PARTIALLY-CHALLENGED/Moderate (the
+  mechanism is formally unidentifiable; a broader-recall fifth cycle explains 12-of-12 equally well)
+RETURN-TO-14b · PRESUMPTION-773 · FOR: SUPPORTED/Strong (AGM 1985; requirements-conflict detection —
+  consistency is a SET-level property, no per-item check yields it) · AGAINST: CHALLENGED/Moderate
+  (Nuseibeh et al. 2001 — "the problem is not inconsistency but undetected inconsistency";
+  tolerate-and-surface-at-use is the mature norm; exhaustive checking is quadratic and imprecise)
+RETURN-TO-14b · PRESUMPTION-775 · FOR: SUPPORTED/Strong (Imtiaz/Murphy/Williams 2019 — 35-91% of
+  warnings unactioned; Tricorder's surface-at-change-with-fix-path rule) · AGAINST:
+  PARTIALLY-CHALLENGED/Moderate (Guo et al. ICSE 2010 — much non-fixing is rational triage) but
+  CONCEDING that retractions and known-truncated inputs are preconditions, not defect reports
+RETURN-TO-14b · PRESUMPTION-776 · FOR: PARTIALLY-SUPPORTED (P1 Strong — ephemeral-storage semantics are
+  unqualified; P2 NO-SUPPORT-FOUND + NOVELTY-FLAG) · AGAINST: PARTIALLY-CHALLENGED/Moderate (storage
+  class of the 191 paths never verified; git was never a valid yield substrate — GitClear, SPACE)
+RETURN-TO-14b · PRESUMPTION-777 · FOR: SUPPORTED/Strong (Nisbett & Wilson 1977; ISA 500 evidence
+  hierarchy; agent-observability specifications) — with an explicit reflexive ceiling attached ·
+  AGAINST: PARTIALLY-CHALLENGED/Moderate ("self-reported" is not "unauditable" — the counts are over a
+  store still on disk and are re-derivable today)
+RETURN-TO-14a · ASSUMPTION-966 · FOR: SUPPORTED/Strong for the arithmetic FORM, Weak for the n=33
+  threshold (Little's Law; Skitka et al. 1999 — the gate fails silently as rubber-stamping) · AGAINST:
+  CHALLENGED/Moderate (the arithmetic holds only under an unstated per-item serial review model that no
+  assurance discipline uses; risk of a false forced choice)
+RETURN-TO-14a · ASSUMPTION-968 · FOR: PARTIALLY-SUPPORTED (P1 VERIFIED AT SOURCE with two corrections;
+  P2 no support — it is an internal classification the paper cannot adjudicate) · AGAINST:
+  CHALLENGED/STRONG (same paper; -70% is the floor of a 39-70% band; C2A2's staged pipeline matches the
+  study's CENTRALISED arm, credited with cutting error amplification 17.2x -> 4.4x)
+
+### THE FINDING OF THIS RUN — 15c's consistency check, which was supposed to be routine
+
+15c is required to check candidate INCORPORATEs against validated_premises.md before issuing them. That
+check, run over all fourteen items rather than only the candidates, returned the most important result
+of the run:
+
+**SIX OF FOURTEEN ITEMS ARE SUBSTANTIALLY CARRIED BY PREMISES THIS SYSTEM HAS ALREADY VALIDATED, AND
+ONE NOVELTY FLAG IS REFUTED BY THE REGISTER ITSELF.**
+
+  · PRESUMPTION-768 (unfired check) -> PREMISE-110 (2026-07-20), PREMISE-139, PREMISE-142.
+    PREMISE-110 does not merely gesture at this; it prescribes the exact remedy both search directions
+    independently converged on: "the valid instrument is a live proof-test — deliberately break a
+    monitored subsystem in a sandbox and confirm its monitor turns red." Validated twenty-three days
+    before four fail-open instruments were found in one day.
+  · PRESUMPTION-765, PRESUMPTION-772 (silence, null results) -> PREMISE-141 (absence of a report is a
+    third terminal state, not a value of the other two) and PREMISE-110's affirmative-and-perishable
+    requirement.
+  · PRESUMPTION-769 (self-reported provenance) -> PREMISE-148 (disclosure of a provenance route is not
+    an audit of it).
+  · PRESUMPTION-775 (surfacing is not fixing) -> PREMISE-108, PREMISE-118, PREMISE-131, PREMISE-151.
+    Four ACTIVE premises. The trap recurred a seventh time anyway.
+  · PRESUMPTION-777 (self-report auditability) -> PREMISE-124 (self-measurement of the pipeline's own
+    completeness must cite an external baseline or a seeded denominator).
+  · ASSUMPTION-966 (review capacity) -> PREMISE-121 (a reviewer's capacity does not scale with
+    production) and PREMISE-119 (production and judgment are not independently schedulable).
+  · PRESUMPTION-776 clause P2 — 15a raised a NOVELTY-FLAG, reporting no literature on metrics whose
+    producers cannot write the measured store. **WITHDRAWN.** PREMISE-140 (2026-08-02) already holds
+    that a metric must be named by its observation channel, not by the thing the channel proxies for.
+    C2A2 validated this ten days earlier and 15a reported it as potentially original knowledge.
+
+Three consequences, and they are not the same consequence:
+
+  **(1) The validation bottleneck is not where the architecture assumes it is.** The pipeline is built
+  on the premise that assumptions need testing against external literature. For six of fourteen items
+  the literature had already been consulted, the premise had already been validated, and the behaviour
+  did not change. The binding constraint is PROPAGATION, not validation — which is what PREMISE-116 and
+  PREMISE-123 say, and they are themselves in the register, unpropagated.
+
+  **(2) 14a/14b do not read validated_premises.md, and neither does 15a.** Nothing in the intake path
+  checks a new item against premises already validated, so the register cannot suppress a duplicate and
+  cannot refute a novelty claim. 15a's charter directs it to the tradition wikis and never to the
+  system's own validated premises. This is a live, self-instantiating confirmation of PRESUMPTION-773
+  (register items are not independent and nothing checks) — and, exactly as 773 predicts, it was found
+  by an agent doing something else, not by any instrument that reads the register.
+
+  **(3) The INCORPORATE count for this run is 1, and that is not a measure of evidential weakness.**
+  Eleven of fourteen items returned SUPPORTED or SUPPORTED/Strong from 15a. Only one was not already
+  carried by a premise. Recording the other ten as new premises would have inflated the register while
+  changing nothing, which is precisely the failure mode PREMISE-151 names.
+
+### DISPOSITIONS (15c) — DISPOSITION-667 .. 680
+
+  DISPOSITION-667 · PRESUMPTION-768 · SUPP/Strong · PART-CHAL/Mod · **REVISE (REVISE-317, HIGH)**
+    Net: literature and register agree, and PREMISE-110 already prescribes the remedy. Nothing left to
+    validate; the gap is that a validated premise did not bind. Recommended a single live proof-test
+    rather than a negative-control programme, since a new cohort of never-failed checks is the likely
+    outcome of the larger remedy (PREMISE-107).
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-668 · PRESUMPTION-772 · SUPP/Strong · PART-CHAL/Mod · **MONITOR (MONITOR-516, HIGH)**
+    Net: 15b's unidentifiability point is decisive against the SPECIFIC inference that the four cycles
+    did not execute — broader recall in cycle 5 explains 12-of-12 equally well. Principle already at
+    PREMISE-141. Discriminating test is cheap: re-run cycle-1 queries verbatim.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-669 · PRESUMPTION-770 · SUPP/Strong · PART-CHAL/Mod · **REVISE (REVISE-318, MED-HIGH)**
+    Net: the best-grounded item in the batch, and the only one whose corrective proposition has no
+    near-neighbour in the register. Both directions independently converged on the operative
+    distinction (idempotent marks vs non-idempotent advances). Dispositioned REVISE rather than
+    INCORPORATE because the marks at issue are this pipeline's own queue tags, including the fourteen
+    written by this run, and the fix is a protocol change that is Tom's to make.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-670 · PRESUMPTION-776 · PART-SUPP (P1 Strong/P2 none) · PART-CHAL/Mod · **INCORPORATE
+    (PREMISE-153, Moderate) + MONITOR (MONITOR-520, HIGH)**
+    Net: clause P1 is definitional and has no near-neighbour in the register — the only INCORPORATE of
+    the run. 15b's scope objection is accepted and written into the premise rather than outweighed:
+    the premise binds on storage CLASS and its application to the 191 paths awaits verification.
+    Clause P2 excluded — subsumed by PREMISE-140, and 15a's novelty flag withdrawn on that basis.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: INCORPORATED (P1) / MONITORING (P2 residue)
+
+  DISPOSITION-671 · PRESUMPTION-765 · SUPP/Strong · PART-CHAL/Mod · **MONITOR (MONITOR-514, HIGH)**
+    Net: principle carried by PREMISE-141 and PREMISE-110; what is open is the producer-side beacon,
+    which is engineering, not literature. Counted as ONE defect with 772 and 777, not three.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-672 · PRESUMPTION-766 · SUPP/Strong · CHAL/Mod · **MONITOR (MONITOR-515, MED-HIGH)**
+    Net: hazard well evidenced (RecovAr is an existence proof), remedy well challenged (rationale
+    capture is a known-failed ideal whose costs and benefits fall on different parties). A minimal
+    point-of-action stub, measured over thirty days, discriminates. No existing premise covers enacted
+    -decision logging, so this is genuinely open rather than a duplicate.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-673 · PRESUMPTION-767 · SUPP/Mod-Strong · **CHAL/STRONG** · **REVISE (REVISE-319, HIGH)**
+    Net: PRESUMPTION with a strong challenge — 15c's stated heuristic routes this to REVISE with high
+    urgency, and the substance agrees. The claim is true of the local corpus and false of the field;
+    ROVER has shipped direction-agnostic combination since the 1990s. Independent of the framing error
+    there is an ongoing corruption risk on the five files where the render was the noisy side.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-674 · PRESUMPTION-769 · SUPP/Strong · CHAL/Mod · **MONITOR (MONITOR-517, MED-HIGH)**
+    Net: the two directions cite the same authorities to opposite conclusions, which locates the answer
+    between them — self-reported provenance is assertion-grade: admissible, lowest in the hierarchy,
+    requiring corroboration. Not incorporated: PREMISE-148 carries the norm and only the grading scheme
+    is new; a grading scheme should not be incorporated on a CHALLENGED verdict before one cycle of use.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-675 · PRESUMPTION-773 · SUPP/Strong · CHAL/Mod · **MONITOR (MONITOR-518, HIGH)**
+    Net: this run is a second confirming instance of the item, found the same way it describes — by an
+    outbound agent, not by an instrument. 15b's challenge to the remedy is well taken (quadratic, low
+    precision, and a low-precision checker becomes another unfalsified instrument), and surface-at-use
+    with a measured precision bar is the tractable form.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-676 · PRESUMPTION-771 · SUPP/Strong · CHAL/Mod · **MONITOR (MONITOR-519, HIGH)**
+    Net: both directions converge on one unanswered diagnostic question — does a validation phase exist
+    in the write path? Under an hour to settle, and the answer determines whether C2A2 is running OCC
+    correctly at low contention or running no concurrency control at all. Held at MONITOR rather than
+    REVISE because the item as written proposes locking, and locking must not be adopted before
+    REVISE-318 (dying writers) is resolved.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-677 · PRESUMPTION-775 · SUPP/Strong · PART-CHAL/Mod · **REVISE (REVISE-320, HIGH)**
+    Net: four ACTIVE premises already state this and the behaviour recurred a seventh time on a single
+    day. The literature question is closed; the open question is why validated premises do not bind
+    conduct, which is governance and not searchable. 15b's concession is the actionable part:
+    retractions and known-truncated inputs are preconditions, not reports, and belong in the machine.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-678 · PRESUMPTION-777 · SUPP/Strong · PART-CHAL/Mod · **REVISE (REVISE-321, HIGH)**
+    Net: reflexive, and it sets a ceiling on the other thirteen items — every count in this batch is an
+    unmarked figure of the kind 777 describes, and several set severity grades. 15b's correction makes
+    it tractable rather than hopeless: the figures are re-derivable today, so this is a cost gap, not
+    an audit impossibility. The batch's severity grades are recorded as PROVISIONAL on re-derivation.
+    PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+  DISPOSITION-679 · ASSUMPTION-966 · SUPP/Strong (form), Weak (threshold) · CHAL/Mod · **MONITOR
+    (MONITOR-521, HIGH)**
+    Net: both directions reached the same crux and it is definitional, not empirical — the
+    incompatibility is arithmetic under a serial per-item review model and dissolves under sampled or
+    exception-based review, and no one has stated which model ASSUMPTION-017 means. One clarification
+    from 14a settles it; no further search will. PREMISE-121 and PREMISE-119 already carry the general
+    result. CONFLICTS with REVISE-315, which asserts the incompatibility as established — flagged for
+    14a rather than silently overwritten (Rule 7).
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c] · Current status: MONITORING (cycle 0)
+
+  DISPOSITION-680 · ASSUMPTION-968 · PART-SUPP (P1 verified, P2 none) · **CHAL/STRONG** · **REVISE
+    (REVISE-322, HIGH)**
+    Net: the only item in the batch with a source verified at full text, and both directions
+    independently found the same three errors — a benchmark-specific figure quoted as general, a band
+    floor quoted as a point estimate, and a construct transfer the paper does not license. Read
+    correctly the evidence argues FOR the current centralised staged topology. Corrects REVISE-315 and
+    SYSTEMIC-RISK-FLAG-3 of 2026-08-11, which cite the uncorrected figures.
+    PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+### Consistency check (15c, against validated_premises.md)
+
+NO CONTRADICTIONS FOUND. SIX NEAR-DUPLICATES and ONE REFUTED NOVELTY FLAG found — recorded in full
+above as the finding of the run. The single INCORPORATE (PREMISE-153) has no near-neighbour: no
+existing premise addresses durability, storage class, or the ephemeral/persistent boundary.
+TWO CONFLICTS WITH EXISTING RECORDS surfaced rather than averaged, per Rule 7:
+  · ASSUMPTION-966 vs REVISE-315 — whether the 017/023 incompatibility is established or conditional
+    on an unstated review model. This run says conditional. Reconciliation belongs to 14a.
+  · ASSUMPTION-968 vs REVISE-315 and SYSTEMIC-RISK-FLAG-3 — the +80%/-70% figures are misquoted in
+    both. REVISE-322 carries the correction; REVISE-315 needs amendment.
+
+### Run tally
+  Items processed: 14 · Result files: 28 (+1 systemic-risk flag) · Dispositions: DISPOSITION-667..680
+  INCORPORATE: 1 (PREMISE-153) · MONITOR: 7 (MONITOR-514..519, 521; +MONITOR-520 as premise residue)
+  REVISE: 6 (REVISE-317..322)
+  Queue: 14 tagged [SEARCHED-15a: 2026-08-12] [SEARCHED-15b: 2026-08-12] [DISPOSITIONED-15c: 2026-08-12]
+  Left searched-but-undispositioned: 0 · Remaining unsearched backlog: 144 (declared above)
+
+### SYSTEMIC-RISK FLAGS raised by 15b this cycle
+
+Written in full to lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-12.md. Both accepted by 15c.
+
+SYSTEMIC-RISK-FLAG-1 (HIGH) — **Remedy-cost blindness.** PRESUMPTION-766, 768, 770, 771, 773, 775.
+  In six of fourteen items the literature challenges not the hazard but the IMPLIED REMEDY, and every
+  one of those remedies adds an instrument that is, on the day it ships, a check that has never failed
+  — PRESUMPTION-768 restated one level up. The register has no field recording remedy cost. 15b's
+  proposed fix, endorsed here: a mandatory remedy-cost field, and no item grades above Moderate unless
+  it can state how its proposed instrument would be shown capable of failing.
+  15c note: PREMISE-107 already says most of this ("a remedy attached to an observation without being
+  validated against the actual mechanism costs effort AND leaves the fault in place"). That PREMISE-107
+  did not prevent six such remedies from being proposed in one batch belongs with finding (1) above.
+
+SYSTEMIC-RISK-FLAG-2 (HIGH) — **Unchecked construct transfer.** ASSUMPTION-966, ASSUMPTION-968.
+  Both import a quantitative claim across a construct boundary — a review model in 966, a definition of
+  "sequential" in 968. Both would pass a check that the citation exists and fail a check that the cited
+  construct matches the local one. Fix: record population, range and a match rationale for every
+  imported figure. 15c note: this is PREMISE-132 (citing is not verifying) with a sharper edge —
+  citing is not verifying, and verifying the citation is still not verifying the CONSTRUCT.
+
+15b also named four sub-hour discriminating experiments that would settle PRESUMPTION-770, 771, 772 and
+776, three of which double as the positive controls PRESUMPTION-768 says do not exist. 15c endorses
+running these before the next cycle; they are the cheapest path to closing six register items.
+
+### PROCESS DEFECTS SURFACED THIS RUN (for 14a/14b/15a/15d and for Tom)
+
+  DEFECT-F (HIGH) — **No intake-side consistency check against validated_premises.md.** 14a/14b do not
+  read the register they feed, so a premise validated on 2026-07-20 was re-surfaced as a new item on
+  2026-08-11 and would have been re-validated on 2026-08-12 had 15c's consistency check been scoped to
+  candidate INCORPORATEs only, as its charter literally reads. Six of fourteen items affected. Fix is
+  cheap and belongs at intake: grep the register before queueing.
+
+  DEFECT-G (HIGH) — **15a's charter does not include validated_premises.md.** 15a is directed to the
+  tradition wikis and to assumptions.md / presumptions.md, never to the register. It therefore reported
+  PREMISE-140's content as potentially novel knowledge. A NOVELTY-FLAG from an agent that cannot see the
+  system's own validated premises is not a novelty finding. Recommend amending 15a's charter.
+
+  DEFECT-H (MEDIUM-HIGH) — **Unverified citation load.** 15a marked 65 citations
+  [unverified — from search snippet]; 15b marked 11 of 34. Two are decisive and must be retrieved before
+  propagation: the human-vs-machine WER figures in PRESUMPTION-767 (unattributed; 15a declined to guess
+  the paper, correctly) and arXiv:2606.14589's "67 checks executing empty strings" in PRESUMPTION-768.
+  Several 2026 arXiv IDs carrying system-specific weight in 768/770/777 are unverified. PREMISE-132
+  applies to this run's own output; PREMISE-153's confidence is capped at Moderate for this reason.
+
+  DEFECT-I (MEDIUM) — **Re-trigger lane starved by specification, not by accident.** See the backlog
+  declaration at the head of this section. 144 items, oldest 2026-07-05. This run's scope was set to new
+  intake only, so the starvation named as DEFECT-A on 2026-08-11 was this time a stated choice. A
+  scheduled pipeline that serves only its newest input is not processing a queue; it is processing a
+  stack. Recommend the next run be scoped to the 07-05 cohort exclusively.
+
+  DEFECT-J (MEDIUM) — **Root-cause triple counting.** PRESUMPTION-765, 772 and 777 (and REVISE-317's
+  liveness gap) are one defect — no independent liveness channel — carried as four register items with
+  four severity grades. 15a flagged this; 15c has cross-referenced them rather than merging them, since
+  merging register items is not 15c's call. Remediation must count one, not four.
+
+  DEFECT-K (LOW, reflexive) — **This run's own severity grades are provisional.** Per REVISE-321, every
+  count this batch rests on is an agent's narrated figure. 15c did not discount the files unilaterally
+  and has recorded the ceiling instead. Read REVISE-321's re-derivation step before acting on
+  REVISE-317..322.

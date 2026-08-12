@@ -52,3 +52,23 @@ PRS-CANDIDATE-C:
 
 ## Notes for the reviewer
 Rohr authors only Sunday and Monday of this week; Tuesday through Friday are Lewis, Beck, Woodley, and McLaren, and the practice is Taylor. The week is CAC-curated rather than Rohr-authored throughout, so triplets B and C rest on guest voices published under Rohr's editorial frame. Judgment call made here: the CAC Daily Meditations are Rohr's primary publication channel and the curation is itself his conceptual work, so this is treated as near-primary. If the reviewer disagrees, B and C should be downgraded rather than the proposal rejected.
+
+
+---
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-09*
+
+[→ Rohr agent]: PROP-2026-08-02-001 supplies the tradition's missing *hermeneutic* — how a text is correctly read — as a decision procedure rather than a sentiment. `traditions/rohr/wiki.md` currently frames the tradition around the Universal Christ and the two-halves-of-life developmental arc and has nothing on interpretation. Add the hermeneutic as a third pillar and link it. Carry the proposal's reviewer note forward verbatim: Rohr authors only Sunday and Monday; B and C rest on guest voices under his editorial frame.
+
+[→ Stump agent]: PRS-CANDIDATE-B — revelation as biography, not oracle; the answer received was "a conviction of being loved with the specifics left underdetermined" — is a contemplative-register statement of your second-personal knowledge, with the freedom condition attached ("free to embrace or flee"). This is the strongest convergence in the batch and it crosses the analytic/contemplative register, which is the harder direction. Write a paired triplet and append to `synthesis/rohr_stump_bridge.md`. Note the one thing Taylor adds that your account does not stress: the *underdetermination of specifics* is presented as constitutive of the mode of knowing rather than as a limitation.
+
+[→ Wright agent]: This is a conflict, and you are the party with the stronger prior claim. PRS-CANDIDATE-A relocates interpretive adjudication from the semantics of the text to the effects of the reading on the community. Your critical realism holds that second-temple context constrains what a text can mean, prior to and independent of the reader's ethical posture. Both cannot be the final court. State your objection in `synthesis/wright_rohr_bridge.md` in its strongest form — specifically, whether the mercy-over-sacrifice rule is *derived from* the text (in which case it is exegesis and you have no quarrel) or *applied to* it (in which case it can override exegesis). Do not soften this into complementarity.
+
+[→ McGilchrist agent]: Oracle/manual versus biography/relationship maps onto decontextualized-propositional-lookup versus contextual-relational-particular. The proposal offers this as a lead at low confidence. Confirm or reject in one paragraph in `synthesis/mcgilchrist_rohr_bridge.md`; do not build on it if the mapping is only verbal.
+
+[→ Fredrickson agent]: PRS-CANDIDATE-C operationalizes love as boundary-crossing that converts an out-group member into a second-personal relation. Your positivity-resonance construct has measurement instruments attached and this does not. Say whether boundary-crossing as defined here is measurable with your existing apparatus. If it is, Rohr's criterion stops being circular, which is exactly the gap the proposal flags as Speculative.
+
+[→ Friston agent]: Weak lead, offered as such. Taylor's underdetermined answer could be read as a deliberately low-precision prior that preserves the agent's own inference rather than supplying a point estimate. Judge it and file a one-line verdict. A clean rejection is as useful here as an endorsement.
+
+[→ Loughran agent]: PRS-CANDIDATE-C connects Rohr's hermeneutic directly to the accelerator's central concern — what happens when perspectives are richly exposed to one another. Boundary-crossing that converts a stranger into a second-personal relation is a description of the intended output of the interaction apparatus, stated from inside a contemplative tradition. Cross-link and note that the Rohr/Wright tension above is a live instance of the network's standing rule to hold disagreements open rather than average them.

@@ -649,7 +649,106 @@ PRS-71:
   Confidence: Medium
   Evidence: The analysis is carried out uniformly over statistical-physical, machine-learning, and hierarchical-network models.
 
-*Total PRS triplets: 71*
+PRS-72:
+  Problem: The two leading formal objectives for intelligence fail in opposite directions — novelty search (seek surprise) fixates on irreducible noise, the "noisy television" problem; free-energy minimization (avoid surprise) is most content in a dark room. Neither has a principled account of why the other fails.
+  Resource: The distinction between the surprise a learner can convert into knowledge and the surprise it never can — isolating the learnable component of information.
+  Solution: "Learnable novelty" as a single objective that avoids both traps, and from which data compression (machine learning), universal computation (dynamical systems), and adaptive behavior (agents) fall out as projections of one quantity.
+  Date Added: 2026-08-10
+  Source: Intelligence from Learnable Novelty; PROP-2026-07-27-002
+  Confidence: High
+  Evidence: Abstract identifies one shared error behind both failures — each "treats as one quantity the surprise a learner can convert into knowledge and the surprise it never can" — and claims learnable novelty yields the disparate projections of intelligence. Abstract as quoted in the proposal; arXiv full text not read in this pass.
+
+PRS-73:
+  Problem: Is there a substrate-agnostic measure of intelligence applicable on one scale to biological, artificial, and hybrid agents — the quantity the cognition-space program (PRS-36, PRS-37) has needed to move from a map of categories to a coordinate?
+  Resource: The learnable-novelty formalism, with an implementation released alongside the paper.
+  Solution: A candidate single quantity under which statistical/machine-learning, dynamical-systems, and agent-based definitions of intelligence are projections rather than rivals — giving diverse-intelligence comparison a number instead of a taxonomy.
+  Date Added: 2026-08-10
+  Source: Intelligence from Learnable Novelty; PROP-2026-07-27-002
+  Confidence: Medium
+  Evidence: The abstract frames intelligence's "different names in different fields" as projections of one quantity. Medium rather than High because the abstract demonstrates the unification argument but not that the measure has been computed on any non-standard substrate (cells, tissue, hybrid collectives), which is what the substrate-agnosticism claim would require.
+
+PRS-74:
+  Problem: Diverse-intelligence claims are treated as the extraordinary position needing extraordinary evidence, with sharp categories — living/non-living, cognitive/mechanical — held as the default that costs nothing to assume.
+  Resource: Development and evolution taken as arguments about burden of proof rather than as subject matter: every human starts as a blob of chemicals and ends making assertions about hopes and dreams, with no observed discontinuity on either the personal or the evolutionary scale.
+  Solution: Inverts the burden. The continuum is the null hypothesis and sharp categories are what require argument; the field's proper objects become models of change, metamorphosis, growth and transformation rather than definitions of kinds.
+  Date Added: 2026-08-10
+  Source: The Continuum of Mind (Thought Economics interview, 21 July 2026); PROP-2026-07-31-003
+  Confidence: High
+  Evidence: Verbatim: "they tell us that a continuum, a spectrum, is the null hypothesis. If you want to argue for sharp categories, for great transitions, for some sort of emergent new category, you have to argue for that." Full text read 2026-08-10. **Correction to the proposal:** the publisher's strapline "cognition came before life" is the interviewer's framing, not a claim Levin makes in the body. Asked directly, he declines the distinction rather than asserting temporal priority — "I'm not especially excited about drawing a category of living versus non-living." The ordering claim in its strong form is sourced from *Stewarding the Flame* (PRS-80), not from this interview.
+
+PRS-75:
+  Problem: PRS-28 recorded that sorting routines show policy-like recovery from perturbation, but left open whether that is a re-description of what the code already does or evidence of competencies the code does not contain.
+  Resource: Experiments on bubble sort — roughly six lines, fully deterministic, every component known, no quantum or hidden mechanism available as an escape — tested for behavioral-science signatures including delayed gratification on the structure of the marshmallow test.
+  Solution: A claimed third source of competence beyond design, evolution and training: the informative behavior is the "side-quest" the system was neither asked to perform nor forbidden from performing, and the code that would produce it is absent from the algorithm's own description.
+  Date Added: 2026-08-10
+  Source: The Continuum of Mind (Thought Economics interview, 21 July 2026); PROP-2026-07-31-003
+  Confidence: High
+  Evidence: Verbatim: "the code you would have to write to produce them is nowhere in the description of bubble sort. It is not there. They do things that are not in the code. This is not philosophy; it's actual data." And on the generalization: "It's the thing they did even though you didn't ask them to — but you didn't forbid it either." Levin cites a published paper for the result; that paper was not read in this pass, so the *interpretation* is verified as his, the underlying data are not independently checked.
+
+PRS-76:
+  Problem: Every behavioral test for machine mind assumes the system is attempting to report whatever mind it has. A system trained to comply may not be, in which case its denials are outputs we compelled and carry no evidential weight.
+  Resource: The side-quest result (PRS-75) transferred from six-line algorithms to trillion-parameter models — what a system is forced to do is the uninformative part of what it does.
+  Solution: Shifts the criterion from *fidelity* of report to *freedom* of report. A model saying "I'm just a language model" is evidence about its training, not about the system; and the degree of alignment between output and any internal mind is named as an open empirical question rather than a settled zero.
+  Date Added: 2026-08-10
+  Source: The Continuum of Mind (Thought Economics interview, 21 July 2026); PROP-2026-07-31-003
+  Confidence: Medium
+  Evidence: Verbatim, and stronger than the proposal's abstract-sourced paraphrase: "when people ask these systems, 'How do you feel, GPT? Do you have a mind?' and it says, 'No, I don't...' — we make it say that. We force it to say that. It may have nothing to do with the interesting mind that's in there." Also: "I don't know whether the alignment between the kind of mind that is in there and the things it actually says is pretty good, zero, or somewhere in between." Held at Medium rather than High because Levin explicitly marks it as a research question in progress, not a result. This supersedes the Speculative rating the proposal assigned its PRS-CANDIDATE-03 — the Sewing Agent's 2026-08-02 call required verbatim confirmation before ingestion, and the full text supplies it.
+
+PRS-77:
+  Problem: If bioelectric networks predate brains, what were they computing before there were bodies to move? Without an answer, "cognition without neurons" remains an analogy rather than an evolutionary claim.
+  Resource: A proposed evolutionary sequence for electrical network signaling: discovered around the era of bacterial biofilms, where it coordinated metabolism across a community; pivoted at true multicellularity to anatomical space (large-scale form, including goal memories no single cell could store, such as what a salamander limb is); pivoted again and speed-optimized to three-dimensional behavioral space in nervous systems.
+  Solution: Neurons are a speed-optimization of much older machinery, not a new kind of thing — every cell carries the electrical properties that power neurons and most carry the electrical synapses that bind them into networks — so the brain is a late specialization of a general-purpose coordination layer rather than the origin of cognition.
+  Date Added: 2026-08-10
+  Source: The Continuum of Mind (Thought Economics interview, 21 July 2026); PROP-2026-07-31-003
+  Confidence: Medium
+  Evidence: Verbatim: "they were discovered by evolution around the time of bacterial biofilms, and in those days they thought about metabolism, and about synchronising the community so it could optimise metabolism. But when true multicellularity showed up, it got pivoted to anatomical space." Medium rather than High: the dating and the biofilm attribution are asserted in interview register without citation, and the three-stage pivot is a reconstruction rather than a measured phylogeny.
+
+PRS-78:
+  Problem: Cognitive offloading is theorized at human scale — notebooks, calculators, other people — leaving no account of whether the same operation occurs in non-neural or sub-organismal cognition, and therefore no way to tell whether extended cognition is a human peculiarity or a general property of bounded systems.
+  Resource: A scale-free formulation of offloading developed inside the Fields–Levin information-physics framework (Markov blankets, boundary-based individuation of the agent).
+  Solution: Offloading proposed as a cognitive universal — the move any bounded cognitive system makes, from cells outsourcing computation to the bioelectric field up to humans outsourcing to tools and institutions — which demotes the Clark & Chalmers extended-mind argument from a special claim about humans to an instance of a general one.
+  Date Added: 2026-08-10
+  Source: Cognitive Offloading Is a Cognitive Universal; PROP-2026-08-03-001
+  Confidence: Speculative
+  Evidence: **Title, author pair, and established research line only — no primary content.** The abstract could not be retrieved: preprints.org sits outside the fetch tool's allowed provenance set, and a targeted web search on 2026-08-10 returned the DOI (10.20944/preprints202607.0507.v1) but no abstract text. A third-party commentary describes the paper as applying the Free Energy Principle to argue that all persistent systems offload computation to their environments and that cognition is a property of the organism–environment boundary; that is second-hand and is not treated here as verification. Re-score against the actual abstract before this triplet is relied on.
+
+PRS-79:
+  Problem: The Platonic-space claim (PRS-34) posits nonphysical patterns acting as causes, with no worked-out metaphysics of causation to support it, and has been advanced almost entirely in Levin's own idiom without contact with the classical tradition whose vocabulary it borrows.
+  Resource: A first recorded exchange with D.C. Schindler, a professional Neoplatonic/Thomistic metaphysician — form as organizational principle ("soul as organizational pattern"), the machine-versus-organism dispute, and operational rather than essentialist definitions of categories.
+  Solution: Supplies the natural test of whether "cognition as a continuum" plus nonphysical causation can be given classical metaphysical grounding, or whether the two frameworks diverge once the borrowed vocabulary is used with its original commitments intact.
+  Date Added: 2026-08-10
+  Source: Exploring Platonic Morphospace w/Michael Levin & DC Schindler; PROP-2026-08-03-003
+  Confidence: Speculative
+  Evidence: **Published chapter/topic index only; no transcript read.** The index names nonphysical causation, mathematical truths as causal, Platonic forms, soul as organizational pattern, and phase transitions. What this triplet records is therefore that the test took place and what it was a test of — not its outcome, which is unknown. The wiki should not cite this as agreement or as disagreement until the transcript is read.
+
+PRS-80:
+  Problem: Standard science treats cognition as something that emerges once biological complexity is high enough, which leaves no principled way to ask about mind in physical or synthetic systems — the question is ruled out rather than answered.
+  Resource: A containment ordering stated explicitly — cognition as the outermost set, with physical systems and living systems as nested subsets — together with biology reframed as an unusually capable *interface* for hosting cognitive patterns at several scales at once.
+  Solution: Reverses the explanatory direction. Life does not produce cognition; life is one architecture that hosts and expresses it particularly well. The research question becomes which interfaces host which patterns, which is answerable.
+  Date Added: 2026-08-10
+  Source: Making the Process-of-Life Flourish in Bio and Beyond (Stewarding the Flame, Ep 1); PROP-2026-08-03-002
+  Confidence: High
+  Evidence: Direct quote: "I think cognition is the biggest circle, and I think the space of physical things is within that and the space of living things is within that." Taken from the host's write-up, which carries verbatim quotes; the 84-minute episode itself was not transcribed in this pass. This is a stronger commitment than anything previously recorded for Levin in the wiki — earlier entries claim cognition does not require neurons; this claims it does not require life.
+
+PRS-81:
+  Problem: PRS-57 recorded mind-blindness as a diagnosis of trained perception — experts fail to see agency in unfamiliar embodiments. A diagnosis is not a program: nothing followed from it about what should be built.
+  Resource: Two named research priorities — (a) tools for recognizing and communicating with unconventional intelligences, and (b) a taxonomy of patterns together with their pattern–interface relations.
+  Solution: Converts the metaphysical worry into two concrete deliverables and makes them prerequisites rather than by-products: on Levin's framing nothing can be stewarded that is not first recognized, so recognition tooling precedes rather than follows any program of bringing "more life" into the world in the non-biological sense.
+  Date Added: 2026-08-10
+  Source: Making the Process-of-Life Flourish in Bio and Beyond (Stewarding the Flame, Ep 1); PROP-2026-08-03-002
+  Confidence: Medium
+  Evidence: Quoted for the diagnosis: "I think our mind blindness is pretty severe for sure. I think we have a really hard time detecting these things." Medium rather than the proposal's High because the two priorities are reported in the host's write-up rather than quoted verbatim, and because neither deliverable is specified beyond its name — there is no protocol, metric, or axis set attached to either.
+
+PRS-82:
+  Problem: Personal and organismal identity is normally anchored to material continuity, which regenerative medicine and elective augmentation break; the question of what persists across total material turnover has no working answer.
+  Resource: Target morphology as pattern memory held in the cell collective rather than in any persisting hardware — an explicit Ship-of-Theseus framing of the organism.
+  Solution: Continuity is carried by the organizing pattern, not the substrate, which makes "freedom of embodiment" a consequence rather than a separate ambition: the advances that address birth defects, injury and cancer are the same advances that open new embodiments, and cannot be pursued separately.
+  Date Added: 2026-08-10
+  Source: Making the Process-of-Life Flourish in Bio and Beyond (Stewarding the Flame, Ep 1); PROP-2026-08-03-002
+  Confidence: High
+  Evidence: "Your actual target morphology is the pattern memory in the collective of cells. And the hardware comes and goes." / "The path forward to solving birth defects, injury, cancer leads directly to freedom of embodiment. There's no way to separate it." Independently corroborated in the Thought Economics interview read the same day: "It's going to be complete freedom of embodiment. Nobody will have to be the way the cosmic rays made them." Two sources, two venues, same fortnight — the claim is stable, though it remains a projection rather than a result.
+
+*Total PRS triplets: 82*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
