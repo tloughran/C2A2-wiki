@@ -22,6 +22,7 @@ turn every task into a pass.
 """
 
 import json
+import os
 import sys
 import tempfile
 from datetime import datetime, timedelta, timezone
@@ -269,6 +270,74 @@ def main():
             NOW_UTC - timedelta(hours=8))}})
         expect("artifact generated this morning",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.OK)
+
+    # Git debris. The previous accumulation (535 stranded tmp_obj files, 07-31..08-13)
+    # could not be pinned on any job because nothing reported it and the evidence was
+    # deleted before its mtimes were read. Every case below is therefore about what
+    # must NOT come back OK -- and about the age floor, which is the only thing
+    # separating abandoned debris from a healthy `git add` that is mid-flight.
+    print("\ngit debris that must NOT come back OK:")
+    with tempfile.TemporaryDirectory() as tmp:
+        git_dir = Path(tmp) / ".git"
+        (git_dir / "objects" / "ab").mkdir(parents=True)
+        (git_dir / "refs" / "heads").mkdir(parents=True)
+
+        def stamp(path, hours_old):
+            path.write_text("x")
+            when = (NOW_LOCAL - timedelta(hours=hours_old)).timestamp()
+            os.utime(path, (when, when))
+            return path
+
+        old_obj = stamp(git_dir / "objects" / "ab" / "tmp_obj_aaaa", 30)
+        expect("a stranded tmp_obj warns",
+               mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[0], mod.WARN)
+        # The line is the whole deliverable: without the timestamps this check
+        # reports a number nobody can act on.
+        expect("the warning carries the debris timestamps",
+               "2026-08-03 09:00" in mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[1],
+               True)
+
+        stamp(git_dir / "objects" / "tmp_obj_bbbb", 2)
+        expect("tmp_obj directly under objects/ is counted too",
+               "2 stranded" in mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[1], True)
+
+        lock = stamp(git_dir / "index.lock", 9)
+        expect("a stale index.lock fails, outranking the objects",
+               mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[0], mod.FAIL)
+        expect("the failure still names the stranded objects",
+               "stranded tmp_obj" in mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[1],
+               True)
+        lock.unlink()
+
+        stamp(git_dir / "refs" / "heads" / "main.lock", 9)
+        expect("a stale ref lock under refs/ fails",
+               mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[0], mod.FAIL)
+        (git_dir / "refs" / "heads" / "main.lock").unlink()
+
+        expect("a git directory that is not there fails loudly, never passes",
+               mod.verdict_git_debris(str(Path(tmp) / "absent"), NOW_LOCAL)[0], mod.FAIL)
+
+        print("\ngit debris that MUST pass:")
+        # A healthy `git add` writes tmp_obj files and renames them in milliseconds.
+        # Without this floor the check fires on every concurrent run and stops
+        # being read -- the exact fate of the watchdog this script replaced.
+        old_obj.unlink()
+        (git_dir / "objects" / "tmp_obj_bbbb").unlink()
+        stamp(git_dir / "objects" / "ab" / "tmp_obj_live", 0)
+        expect("a tmp_obj younger than the age floor is a live write, not debris",
+               mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[0], mod.OK)
+        stamp(git_dir / "index.lock", 0)
+        expect("a lock younger than the age floor is a live git, not a stale lock",
+               mod.verdict_git_debris(str(git_dir), NOW_LOCAL)[0], mod.OK)
+
+    expect("git_common_dir resolves this repo to a real directory",
+           Path(mod.git_common_dir(mod.REPO) or "/nonexistent").is_dir(), True)
+    # A worktree's .git is a FILE pointing elsewhere, and worktrees share one object
+    # store -- so debris stranded by a run in any worktree lands in the primary
+    # repo's .git. Assuming `repo/.git` were a directory would check the wrong path.
+    expect("git_common_dir on a non-repo returns None, rather than a bad guess",
+           mod.git_common_dir(tempfile.gettempdir()) in (None,)
+           or not Path(mod.git_common_dir(tempfile.gettempdir())).is_dir(), True)
 
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")

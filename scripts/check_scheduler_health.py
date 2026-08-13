@@ -100,6 +100,108 @@ ARTIFACTS = [
     },
 ]
 
+# Git debris left behind when a git process dies mid-write. Two kinds, one cause:
+#
+#   .git/objects/**/tmp_obj_*  -- a loose object begun and never renamed into place
+#   .git/index.lock, HEAD.lock, refs/**/*.lock -- an index/ref lock never released
+#
+# 535 stranded tmp_obj files accumulated 2026-07-31..08-13 with nothing reporting
+# it, and a stale index.lock is what made commit_daily_run.sh refuse outright on
+# 2026-08-11 ("REFUSED: stale git lock present"). Both are invisible until someone
+# goes looking, which is the failure mode this whole script exists to end.
+#
+# This is a repo-wide condition, not any one task's artifact, so it gets its own
+# verdict rather than an ARTIFACTS row: it has no owning task and no self-dated
+# JSON to read.
+#
+# mtime is sound here, unlike the artifact checks. These are local writes to a
+# live tree that git itself makes and never commits -- there is no clone or
+# checkout that could restamp them, and the file's age IS the fact in question.
+#
+# The age floor exists because a healthy `git add` creates tmp_obj files and
+# renames them within milliseconds; flagging those would fire on every concurrent
+# run. Anything still sitting an hour later was abandoned.
+GIT_DEBRIS_MIN_AGE_HOURS = 1
+
+
+def git_common_dir(repo):
+    """The shared .git directory, resolved through worktrees.
+
+    Worktrees share one object store, so a tmp_obj stranded by a run in any
+    worktree lands in the primary repo's .git. Asking git rather than assuming
+    `repo/.git` is a directory keeps this correct when run from a worktree,
+    where .git is a file pointing elsewhere.
+    """
+    out = subprocess.run(
+        ["git", "-C", repo, "rev-parse", "--git-common-dir"],
+        capture_output=True, text=True,
+    )
+    if out.returncode != 0:
+        return None
+    path = out.stdout.strip()
+    if not path:
+        return None
+    return path if os.path.isabs(path) else os.path.join(repo, path)
+
+
+def scan_git_debris(git_dir, now_local, min_age_hours=GIT_DEBRIS_MIN_AGE_HOURS):
+    """(stale_tmp_objects, stale_locks) as lists of (path, mtime), oldest first."""
+    cutoff = now_local - timedelta(hours=min_age_hours)
+
+    def aged(paths):
+        found = []
+        for path in paths:
+            try:
+                mtime = datetime.fromtimestamp(os.path.getmtime(path)).astimezone()
+            except OSError:
+                continue  # vanished mid-scan: a live git just finished with it
+            if mtime <= cutoff:
+                found.append((path, mtime))
+        return sorted(found, key=lambda pair: pair[1])
+
+    tmp = glob.glob(os.path.join(git_dir, "objects", "**", "tmp_obj_*"), recursive=True)
+    locks = (glob.glob(os.path.join(git_dir, "*.lock"))
+             + glob.glob(os.path.join(git_dir, "refs", "**", "*.lock"), recursive=True))
+    return aged(tmp), aged(locks)
+
+
+def verdict_git_debris(git_dir, now_local, min_age_hours=GIT_DEBRIS_MIN_AGE_HOURS):
+    """FAIL on a stale lock, WARN on stranded objects, OK on a clean store.
+
+    The lock outranks the objects on purpose. Stranded objects waste disk and
+    point at a bug; a stale lock actively blocks the next commit, which is a
+    thing that has already happened here.
+
+    Both lines carry the oldest and newest timestamps. That is the whole point of
+    the check: the previous accumulation could not be pinned on any job because
+    the evidence was deleted before anyone read its mtimes. Whoever reads this
+    next should be able to name the 05:45 slot, or rule it out.
+    """
+    if not git_dir or not os.path.isdir(git_dir):
+        return (FAIL, f"git debris: no git directory at {git_dir!r} — cannot check")
+
+    tmp, locks = scan_git_debris(git_dir, now_local, min_age_hours)
+
+    def span(items):
+        first, last = items[0][1], items[-1][1]
+        if first == last:
+            return f"at {first:%Y-%m-%d %H:%M}"
+        return f"{first:%Y-%m-%d %H:%M} .. {last:%Y-%m-%d %H:%M}"
+
+    if locks:
+        names = ", ".join(sorted({os.path.basename(p) for p, _ in locks}))
+        line = (f"git debris: {len(locks)} stale lock(s) ({names}), {span(locks)} — "
+                f"this blocks the next commit; remove once no git process is live")
+        if tmp:
+            line += f"; also {len(tmp)} stranded tmp_obj, {span(tmp)}"
+        return (FAIL, line)
+
+    if tmp:
+        return (WARN, f"git debris: {len(tmp)} stranded tmp_obj file(s), {span(tmp)} — "
+                      f"a git process died mid-write; the newest mtime names the slot")
+
+    return (OK, "git debris: no stale tmp_obj or lock files")
+
 
 # --------------------------------------------------------------------------- cron
 
@@ -496,6 +598,8 @@ def main():
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))
 
+    results.append(verdict_git_debris(git_common_dir(REPO), now_local))
+
     counts = {OK: 0, WARN: 0, FAIL: 0}
     for level, line in results:
         counts[level] += 1
@@ -504,7 +608,8 @@ def main():
 
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
-        f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s): "
+        f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
+        f"1 git-debris check: "
         f"{counts[OK]} OK, {counts[WARN]} WARN, {counts[FAIL]} FAIL"
     )
     print(summary)
