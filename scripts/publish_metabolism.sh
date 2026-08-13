@@ -106,7 +106,37 @@ log "data sanity PASS"
 # --- 5. Commit ONLY the two metabolism files (pathspec keeps it surgical) ---
 branch=$(git symbolic-ref --short HEAD)
 log "committing metabolism files on branch '$branch' ..."
-git commit -q -m "metabolism: weekly auto-publish ($(date +%Y-%m-%d))" -- "$HTML" "$JSON"
+
+# Sunday 06:30 lands inside a cluster of other git-touching jobs -- janitor
+# 05:45, metabolism-monitor 06:05, voice-faq and connector-health 06:15, the
+# telemetry refresh 06:05 -- and .git/index.lock is held for as long as whichever
+# one is mid-write. 2026-08-09: the commit hit a held lock, git exited 128, and
+# `set -e` killed the script before fail() could log a word; the launchd exit code
+# was the only evidence it left. A held lock is transient by nature, so wait it
+# out. Anything else is a real failure and stops immediately.
+#
+# The date is stamped once, before the loop: a retry must not produce a commit
+# message dated differently from the run that started it.
+commit_msg="metabolism: weekly auto-publish ($(date +%Y-%m-%d))"
+committed=0
+for attempt in 1 2 3 4 5 6; do
+  if commit_err=$(git commit -q -m "$commit_msg" -- "$HTML" "$JSON" 2>&1); then
+    committed=1
+    break
+  fi
+  case "$commit_err" in
+    *index.lock*)
+      log "git index locked by another process (attempt $attempt/6); waiting 15s"
+      sleep 15
+      ;;
+    *)
+      fail "git commit failed: $commit_err"
+      ;;
+  esac
+done
+if [ "$committed" -ne 1 ]; then
+  fail "git index still locked after 6 attempts (90s). Another process is holding $REPO/.git/index.lock. NOT pushed."
+fi
 
 # Belt-and-suspenders: assert the commit we just made touched ONLY our two paths.
 changed=$(git show --name-only --pretty=format: HEAD | grep -v '^$' | sort)
