@@ -61,6 +61,8 @@ WATCH-003:
     - 2026-08-04: `review/archive/` unchanged at **16 files**, latest still `2026-07-23_decisions.md` — no decision file written since intake, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for `*beatitudes-week-two*` and `*who-is-this-god*`: **nothing**. Folder census: `pending/` 32, `approved/` 254, `denied/` 1, `needs_review/` 1 — the file has not reappeared anywhere. Condition NOT met. Review-pass gap now **12 days**; this item cannot move until Tom next reviews.
     - 2026-08-11: `review/archive/` unchanged at **17 files**, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for both slugs: **nothing**. The new `review/2026-08-10_review.html` (8 cards, generated 2026-08-10 05:02) contains **zero** occurrences of either item — as expected, since the source files are still absent from `pending/` and so cannot be carded. Folder census: `pending/` 8, `approved/` 301, `denied/` 1, `needs_review/` 1 — the files have not reappeared. Condition NOT met. Review-pass gap: **3 days**.
 
+  [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
+
   On resolution:
     Action: Close the item (archive to resolved/) if Tom confirms deliberate omission; re-queue to pending/ if Tom wants it reviewed.
     Destination: wiki/deferred/resolved/ or wiki/inbox/proposals/pending/
@@ -4063,3 +4065,64 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-12.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-08-13
+
+**Run context:**
+- One day since the last run (2026-08-12). **No watch item was due today** — both are weekly-cadence, last checked 2026-08-11, next due **2026-08-18**. Counters not incremented; no condition check fabricated. Intake scanned in all three channels; open flags re-verified against the vault.
+- **The material result of this run: the content of one of the two INTEGRITY-FLAG casualties has come back into the pipeline on its own.** PROP-2026-07-19-001 (Rohr, Beatitudes Week Two) was re-filed by the Rohr agent on 2026-08-12 as PROP-2026-08-12-041 from the same source URL and date. Recorded as an AMENDMENT on WATCH-003; the watch is **not** closed on that basis. Details below.
+- Secondary result: the review-page generator fix (closed 2026-08-12) is **confirmed under load** — the 08-12 page carries 26 cards and exports 26 correct IDs.
+
+**Intake Processing:**
+- `inbox/proposals/needs_review/`: 1 item — `2026-04-21_carroll_singer-mindscape-351.md`, unchanged WATCH-001 superseded tombstone. `grep -rL "TRACKED-16"` returned nothing: **no untracked items.** No new Channel 1 intake.
+- `review/archive/`: **17 files**, unchanged; latest still `2026-08-08_decisions.md`. **No decisions file exists for the 08-10, 08-11, or 08-12 review page** — no dispositions submitted from any of them. No new Channel 1 intake. Coverage current through 2026-08-08; review-pass gap now **5 days**.
+- Channel 2 (agent-deferral): `grep -rl "DEFERRED-HYPOTHESIS" inbox/ master/ agents/` → single match, this agent's own format template. Empty.
+- Channel 3 (human-watch): no `WATCH-REQUEST` markers in `inbox/` or `master/`. Empty.
+- `pending/` scanned for `CONDITIONAL` → zero matches.
+
+**Condition Checks:**
+- **WATCH-002 — NOT DUE.** Last checked 2026-08-11, count 4, weekly → next check 2026-08-18. No fetch performed. Passive census note only: vault-wide `find` for `*who-is-this-god*` → zero matches; none of the six Wright proposals now in `pending/` (angels, three Ask-NTW episodes, God's Homecoming, Odyssey) covers the Between Beliefs/KSBJ episode. No independent re-filing of this item, in contrast to WATCH-003.
+- **WATCH-003 — NOT DUE.** Last checked 2026-08-11, count 4 → next check 2026-08-18. Passive re-verification, run at zero cost as part of the census and recorded here rather than in the item's Result history so as not to inflate the counter: `review/archive/` still 17 files with no post-08-08 decisions file, so no later disposition on PROP-2026-07-19-001 can exist; content grep for `2026-07-19-001` / `2026-07-19-003` across `review/archive/` and `inbox/` → zero matches. **The literal condition remains NOT met.** What changed is described in the next section.
+
+**Development on WATCH-003 — content recovered by an independent route:**
+- `find` for `*beatitudes-week-two*` returned a **live file**: `inbox/proposals/pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md` = **PROP-2026-08-12-041**.
+- Identity confirmed against the WATCH-003 source description on four fields: `source_url` https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/, `source_date` 2026-07-18, source_title "The Beatitudes: Week Two: Weekly Summary (CAC Daily Meditations, Week 28)", tradition rohr. It is the same weekly summary the lost proposal covered, retrieved fresh (`searched_on: 2026-08-12`) and independently written — it carries three PRS candidates (Beatitudes-as-diagnostics, joy-under-persecution as behavioral marker, Forest's eleven-question instrument) where PROP-2026-07-19-001's card offered no triplets. The proposal explicitly notes Week One (PROP-2026-07-12-002) is already in the wiki and Week Two is not — i.e. the Rohr agent detected the gap the loss created and refilled it, without knowing why the gap existed.
+- **Bearing on the condition:** a disposition on PROP-2026-08-12-041 satisfies the substantive purpose of WATCH-003 — the Week Two material is no longer at risk of being lost — but does not answer the audit question of why -001 left the pipeline with no recorded disposition and no surviving file. Agent 16 has **not** narrowed, closed, or re-scoped the condition; the amendment is recorded on the item and the decision is Tom's.
+- **Bearing on the INTEGRITY FLAG's two readings:** this is weak evidence for the *incidental loss* reading over *deliberate withholding*. A deliberate withholding would more likely have been accompanied by an instruction to the tradition agent not to re-file; instead the agent re-filed the same source six days later with no impediment. It is not decisive — nothing in the vault records an instruction either way — and Agent 16 still cannot adjudicate.
+
+**Verification of the closed TOOLING FLAG (confirmed under load):**
+- `review/2026-08-12_review.html` (342.9 KB): `const TOTAL = 26`, **26** `id="card-…"` elements, and an exported `const pids` array of **26 real proposal IDs**. Programmatic set comparison: `pids == cards` **True**; `pids == {proposal_id of every file in pending/}` **True**; both difference sets **empty**. No phantoms, no omissions, at 2.6× the card count of the page that first demonstrated the fix.
+- Handler wiring: 78 `decide(...)` + 26 `decideChange(...)` = exactly 3+1 per card, and a per-card scan found **zero mis-keyed handlers** (every call inside a card's markup references that card's own ID). The 07-20 card/button-offset defect is absent.
+- **Consequence:** a decision pass run from `2026-08-12_review.html` will export all 26 dispositions and their notes correctly, including PROP-2026-08-12-041.
+
+**Stale Item Check:**
+- Both active items at count **4**, below the 6-check threshold. **No STALE-WATCH-FLAGs raised.** Threshold date remains **2026-08-25** (08-18 → 5, 08-25 → 6). Standing note carried: WATCH-002/003 are held open by the INTEGRITY FLAG — a human dependency — not by repeated failed condition checks.
+
+**Watch List Status:**
+- Items checked: 0 (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 0
+- New items added: 0
+- Items amended: 1 (WATCH-003 — alternative resolution route recorded)
+
+**Notes:**
+
+- **SUPERSEDED-PAGE WARNING — escalated, now two stale pages, one of them dangerous.** `review/2026-08-10_review.html` is still present and still carries the pre-fix defect: its export array is the synthetic `PROP-2026-08-10-001 … -008`, which collides with four real IDs, omits the four 08-08/08-09 items, and invents four phantoms. Submitting from it would silently drop the Wolfram, Levin (08-08) and both Rohr (08-09) dispositions. `review/2026-08-11_review.html` is correct but superseded — it cards only 10 of the 26 items now queued, so submitting from it would leave the 16 items filed on 08-12 undisposed. **Review from `2026-08-12_review.html`.** Agent 16 has not deleted or moved either page; file removal in Tom's vault is outside remit. Note that nine earlier review pages have been moved to `review/_trash/` by hand, so the housekeeping route exists and these two simply haven't been swept yet.
+- **INTEGRITY FLAG — still open (needs Tom, carried from 2026-07-21), but half of it is now less urgent.** PROP-2026-07-19-001 (Rohr) and PROP-2026-07-19-003 (Wright) left the pipeline with no recorded disposition and no surviving file. The Rohr content is recovered via PROP-2026-08-12-041 and is on the current review page; the **Wright item remains the live loss** — no re-filing, and its content is still unverified (the original was filed `content_verified: false`). Content remains recoverable from `review/_trash/2026-07-20_review.html` and both live source URLs.
+- **TOOLING NOTE — carried unchanged.** WATCH-002's YouTube-caption route (`vshC_TxwrVo`) remains unexercisable by Agent 16: `web_fetch` refuses both the `/watch` and `/embed/` URL forms as outside the provenance set, and a URL appearing as text inside a fetched page does not enter that set. Two paths, both Tom's: paste `https://www.youtube.com/watch?v=vshC_TxwrVo` into a Cowork session once, or authorize striking the caption route from the check method. Agent 16 continues executing the source-page and search halves weekly either way.
+- **PENDING-MOVEMENT NOTE:** `pending/` **26** (was 10), `approved/` **301**, `denied/` **1**, `needs_review/` **1**. Sixteen additions, all filed 2026-08-12, spanning eight traditions — Arkani-Hamed (PITP 2026 dualities), Carroll (Mindscape 363 Sripada), Friston (integrative complexity), Kastrup (×2 — agency/God's point of view, objective vs subjective idealism), Levin (defining life), McGilchrist (virtue and beauty), Rohr (×3 — Beatitudes Week Two, sacramental universe, way of the early church), Wright (×6 — angels, three Ask-NTW episodes, God's Homecoming, Odyssey). Nothing left the queue; nothing stranded; all 26 correctly carded. **The queue is now the largest it has been and the review gap is 5 days — the two together are the main operational risk in the pipeline right now.** Not Agent 16's to resolve, but flagged.
+- **MAINTENANCE FLAG — carried, still binding and now worse.** `watch_list.md` is **~390 KB / 4,066 lines** before this entry. Above the Read-tool ceiling; worked from line-ranged shell reads and appended by shell again. ACTIVE ITEMS + RESOLVED INDEX are under 2% of the file. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, the resolved index, and the trailing ~14 days here. Reversible, no data lost.
+- **BUDGET NOTE (Rule 6, surfaced not hidden):** this run exceeded the 4,000-token per-task budget. The floor cost is structural — the watch list exceeds the Read ceiling and must be read in ranges. The maintenance-flag split above is the standing remedy.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- 2026-08-18 — WATCH-002 (Wright episode content availability), WATCH-003 (Rohr disposition recorded). Weekly cadence, → check count 5.
+
+**Agent 16 Status:** Operational. No items due; both WATCHING at count 4; nothing resolved; nothing stale; no intake in any channel; one item amended. Decision archive coverage current through **2026-08-08**; review-pass gap **5 days**; pending queue 10 → 26. **Open for Tom, in priority order:** (1) **run a review pass from `2026-08-12_review.html`** — 26 items, five-day gap, page verified correct — **and sweep the superseded `2026-08-10` (defective) and `2026-08-11` (incomplete) pages into `review/_trash/`**; (2) the INTEGRITY FLAG, now effectively one item — the Wright PROP-2026-07-19-003 loss — plus a decision on whether disposing PROP-2026-08-12-041 closes WATCH-003; (3) paste the `vshC_TxwrVo` watch URL into a session, or authorize striking the caption route from WATCH-002; (4) the watch-list run-log archival; (5) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-13.*

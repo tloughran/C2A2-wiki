@@ -19452,3 +19452,91 @@ MONITOR-521:
     side remark in an item about agent count. Flagged for reconciliation by 14a rather than silently
     overwritten.
   Cadence: Weekly · Priority: HIGH
+
+MONITOR-522:
+  Date queued: 2026-08-13 · Source item: PRESUMPTION-778 · Item type: PRESUMPTION (unstated)
+  Statement: That a defect-population count is a measurement of the corpus rather than a property of
+    the instrument — four runs, one day, one class, figures of 166 / 52 / 45 / 102. POLARITY: the
+    corrective converse is what was searched and what is at issue; nothing here validates the
+    presumption as 14b worded it.
+  Why monitoring, and NOT incorporating: the core is ALREADY HELD. PREMISE-124(a) states that a raw
+    defect CATCH COUNT is not an estimate of defects PRESENT without capture-recapture or fault
+    seeding, and it cites Petersson et al. 2004 — the same primary source 15a returns. PREMISE-140
+    governs the naming and PREMISE-101 already holds that counts are properties of a stated (scope,
+    method, time) reading. What is left is 14b's queued residual — that DISPERSION among independent
+    counts is not merely a threat to be discounted but a USABLE SIGNAL about the instruments — and
+    that residual is genuinely contested. 15a SUPPORTED/Strong for "dispersion is evidence about the
+    instruments" but explicitly WEAK, and disclaims, "therefore compute a population estimate from
+    these four numbers": capture-recapture assumes independent samples, and four runs of one model
+    family over one corpus on one day share prompt, model and corpus, which PREMISE-080 and
+    PREMISE-141 both say counts as one instrument. Briand et al. 2000 adds that too few inspectors
+    defeats every estimator, and n=4 is at the low end. 15b PARTIALLY-CHALLENGED/Moderate from the
+    measurement-systems side and the challenge is sharp: MSA attributes variation to an instrument
+    only across replicate measurements of the SAME characteristic under ONE operational definition, so
+    four differently-scoped sweeps of "one class" are four measurands rather than four replicates, and
+    the spread is at least as likely DEFINITIONAL as instrumental.
+  What would change disposition, and both directions specified the SAME test independently, which is
+    why this is a MONITOR rather than a REVISE: for each of the four sweeps recover the inclusion
+    criterion and the artefact set, then compute the pairwise overlap. Criteria DIFFER -> the
+    dispersion is definitional, the presumption is mis-scoped, and the remedy is an operational
+    definition attached to every count (a documentation requirement, not an estimator). Criteria
+    COINCIDE and overlap is low -> the residual is vindicated and a capture-recapture estimate WITH AN
+    INTERVAL should replace all four figures. Bounded, one session, on data already on disk.
+  Standing constraint while monitoring: per PREMISE-124, report the four figures UNCALIBRATED rather
+    than suppressing them. 15b's asymmetry warning is accepted and recorded — a general licence to
+    discount the system's own quantitative findings will be invoked against inconvenient counts more
+    readily than convenient ones, so no such licence is issued here.
+  FOURTH OVERLAP-CHECK MISS OF THE BATCH, found by 15c and reported per Rule 12: NEITHER 14b NOR 15a
+    cited PREMISE-101 (2026-07-19), which states that "counts over shared artifacts are properties of
+    a READING — a (scope, method, time) tuple — not properties of the artifact; absent a designated
+    counting authority and a recorded method, independent agents will produce divergent counts of the
+    same object WITHOUT EITHER BEING WRONG." That is PRESUMPTION-778's corrective converse almost
+    verbatim, validated twenty-five days earlier, and it also independently supplies 15b's
+    definitional reading. Its existence is the single strongest argument against minting here.
+  Related: PREMISE-124, PREMISE-140, PREMISE-101, PREMISE-080, PREMISE-141(2). Axis 2 of the
+    2026-08-13 SYSTEMIC-RISK-FLAG (inference from inter-instrument agreement without an estimator)
+    names this item; the flag's recommendation (5) — supply the estimator rather than the verdict —
+    is exactly the test above.
+  Cadence: Weekly · Priority: HIGH
+
+MONITOR-523:
+  Date queued: 2026-08-13 · Source item: PRESUMPTION-785 · Item type: PRESUMPTION (unstated;
+    REFLEXIVE — the item concerns the instrument that produced this batch's own activity figures)
+  Statement: That the absence of an identifiable attended session means no attended work occurred
+    beyond what the vault records. Residual at issue: that a file-system trace is a SYSTEMATICALLY and
+    DIRECTIONALLY biased sample of intellectual work, biased hardest against the work the project most
+    wants to record.
+  Why monitoring, and NOT incorporating: the cheap half is already held three times over —
+    PREMISE-140 requires the metric be named by its channel ("no attended session IN THE FILE-SYSTEM
+    TRACE", never "no attended work"), PREMISE-124(b) bars inference from a dark channel because the
+    missingness mechanism cannot be assessed from surviving data (Rubin 1976), and PREMISE-055 already
+    carries Naur's boundary that telemetry constitutively cannot bear intent, rationale or design
+    theory. Applying those three closes most of the item at zero cost. The surviving residual is the
+    DIRECTION of the bias, and it is contested rather than settled. 15a SUPPORTED/Strong (Star &
+    Strauss 1999 — work is seen only through a selection of indicators, and the changed-artefact
+    indicator is precisely the one that erases preparatory and articulating work; Malik 2018; Sen et
+    al. 2021; Naur 1985 for the directional half). 15b PARTIALLY-CHALLENGED/Moderate with two live
+    counters: Sober 2009 — absence of evidence IS evidence of absence in proportion to detection
+    probability, so the correct correction is to STATE the detection probability rather than withdraw
+    the inference; and arXiv:2603.07609 reports raw creative-work traces as noisy in the INFLATIONARY
+    direction, a single conceptual move generating dozens of events — so the SIGN of the trace's error
+    is not established by the fact that it is a proxy. That is the same open question as PREMISE-158,
+    reached from the other end.
+  Also weighing against incorporation: 15a concedes the remedy the item implies — trust narration more
+    — is the one this register already REJECTED at PREMISE-055, which validated telemetry as the
+    primary activity record precisely because authored narration drifts. The two reconcile only inside
+    PREMISE-055's own boundary, and a premise minted here would sit awkwardly across it.
+  What would change disposition: take a bounded window in which attended work is INDEPENDENTLY known
+    to have occurred and score the trace against it, recording both numbers — the fraction of attended
+    sessions that leave a detectable signature (detection probability) and the fraction of trace
+    signatures corresponding to no attended session (false-signature rate). Directional bias confirmed
+    -> INCORPORATE the residual. Errors roughly two-sided -> the item closes into PREMISE-140 plus a
+    stated detection probability, and PREMISE-158 governs instead. Cheapest partial remedy available
+    now and independent of the result: a one-line out-of-band session log written by the attendant,
+    which converts a scavenged proxy into a direct record for the one activity class that matters.
+  REFLEXIVE CONSEQUENCE, recorded rather than absorbed: this item's subject is the instrument that
+    produced the activity figures used elsewhere in the 2026-08-12/13 batch. Monitoring it places a
+    CEILING on those figures — they remain lower bounds named by their channel per PREMISE-140 — but
+    issues NO licence to discount them, which 15b correctly identifies as the danger of adopting this
+    item at full strength on a reflexive subject. Compounds REVISE-321 (unmarked agent self-reports).
+  Cadence: Weekly · Priority: HIGH

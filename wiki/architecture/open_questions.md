@@ -1611,3 +1611,36 @@ OPEN-139:
     Transform at each step:
       14b: Raised from PREMISE-124 being dispositioned from inside the pipeline it governs. [inferred]
     Current status: OPEN
+
+OPEN-140:
+  Date raised: 2026-08-12
+  Question: Should the register schema carry a mandatory remedy-cost field, with the rule that no item grades above Moderate unless it can state how its own proposed instrument would be shown capable of failing?
+  Why it matters: SYSTEMIC-RISK-FLAG-1 (2026-08-12) found that in six of fourteen items the literature challenged not the hazard but the implied remedy, and that each of those remedies adds an instrument which, on the day it ships, is a check that has never failed -- PRESUMPTION-768 restated one level up. The remediation programme this register implies is therefore self-amplifying: every Critical item mints an unfalsified instrument, and the register has no field in which that cost is written down. This is a schema change, so it cannot be made by an agent; and PREMISE-107 already stated the substance of the finding without preventing six instances of it in one batch (ASSUMPTION-1002), which is evidence that registering a premise is not by itself a control.
+  Depends on: ASSUMPTION-1001, ASSUMPTION-1002, ASSUMPTION-1003, PRESUMPTION-768, PREMISE-107, PREMISE-110
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [15b -> 15c -> 14a]
+    Original item: OPEN-140
+    Item type: OPEN QUESTION
+    Transform at each step:
+      15b: Proposed the remedy-cost field in SYSTEMIC-RISK-FLAG_2026-08-12.
+      15c: Raised it to the human as a walk-decision because it changes the register schema.
+      14a: Registered as an open question rather than left in a flag file. [stated]
+    Current status: OPEN
+
+OPEN-141:
+  Date raised: 2026-08-12
+  Question: In ASSUMPTION-017, does "humans validate everything" mean every artefact, or every category at least once -- and is review serial-per-item, sampled, or exception-based?
+  Why it matters: The first internal contradiction found in this register's history (ASSUMPTION-966: that ASSUMPTION-017 and ASSUMPTION-023 are arithmetically incompatible) turns entirely on this. Serial-per-item over every artefact makes the incompatibility arithmetic and the claim INCORPORATEs; sampled or exception-based review dissolves it. 15c dispositioned the claim CONDITIONAL on a review model nobody has stated, while REVISE-315 asserts it as established -- a conflict surfaced rather than averaged (Rule 7). The pipeline has stated explicitly that no further literature search will settle it: the answer is a fact about C2A2's intended operation that only Tom holds. One sentence closes it.
+  Depends on: ASSUMPTION-017, ASSUMPTION-023, ASSUMPTION-966, ASSUMPTION-968, ASSUMPTION-1008, REVISE-315
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [15a -> 15c -> 14a]
+    Original item: OPEN-141
+    Item type: OPEN QUESTION
+    Transform at each step:
+      15c: Dispositioned ASSUMPTION-966 CONDITIONAL and named the discriminating question.
+      14a: Registered as an open question so it stops being carried as a disposition caveat. [stated]
+    Current status: OPEN

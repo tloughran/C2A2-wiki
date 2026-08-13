@@ -28317,3 +28317,239 @@ running these before the next cycle; they are the cheapest path to closing six r
   count this batch rests on is an agent's narrated figure. 15c did not discount the files unilaterally
   and has recorded the ceiling instead. Read REVISE-321's re-derivation step before acting on
   REVISE-317..322.
+
+---
+
+## 2026-08-13 — Agents 15a / 15b / 15c — new-intake batch (9 presumptions from the 2026-08-12 EOD intake)
+
+Scope of this run: the nine literature-testable items queued by the 2026-08-12 14a/14b EOD run —
+PRESUMPTION-778, 779, 780, 781, 782, 783, 784, 785, 786. 15a and 15b ran CONCURRENTLY AND IN ISOLATION:
+neither read the other's directory, and neither result set existed when the other was written. 18 result
+files + 1 systemic-risk flag written. All nine dispositioned (DISPOSITION-681..689); nothing left in a
+searched-but-undispositioned state.
+
+**NOT SEARCHED, and why — the two `[QUEUED-EMPIRICAL]` items of the same intake, named.** ASSUMPTION-1012
+(criterion-(a) defect population, ~45 hand-assembled vs 102 measured live) and ASSUMPTION-1024 (whether the
+metabolism freshness gate asserts on the published `metabolism_data.json` or on the run's temporary
+snapshot). Both are settled by a measurement on the Mac, not by a search; 14a routed them accordingly and
+this run did not convert them. They remain open and unmeasured. ASSUMPTION-1024 is the same defect that
+PRESUMPTION-780 was searched for and PREMISE-155 now covers — the premise is minted, the instance is still
+unchecked.
+
+**BACKLOG DECLARED, per Rule 12.** This run did NOT clear the queue. **155 items remain [QUEUED] and
+unsearched** in the 15d re-trigger lane — 93 from the 2026-07-05 cohort, 19 from 07-12, 21 from 07-19, 3
+from 07-26, 8 from 08-02, plus the 11 added 08-12 of which this run took 9. The oldest is thirty-nine days
+old. This is DEFECT-A of the 2026-08-11 run ("15d re-trigger lane starvation"), unresolved for the third
+consecutive run.
+
+**CONFLICT SURFACED RATHER THAN AVERAGED (Rule 7).** The 2026-08-12 run recommended, as DEFECT-I, that the
+next cycle be scoped to the 2026-07-05 cohort exclusively. This run did not follow that recommendation: it
+served the new-intake lane, as every preceding run has. The recommendation was made by a run and binds
+nothing — which is PRESUMPTION-781's claim, instantiated on the recommendation that was supposed to fix the
+starvation. Named here; the choice was the established pattern over the newer written recommendation, and
+it is the wrong one if DEFECT-I is right.
+
+**POLARITY NOTE, load-bearing for every reader of this section.** All nine items are PRESUMPTIONS written by
+14b in the form "That [belief the system holds]", where the belief is the thing 14b judges unsafe. 15a
+therefore searched FOR the CORRECTIVE CONVERSE of each statement and flagged the inversion in every file. So
+"15a: SUPPORTED" means *14b's worry is well grounded*, i.e. evidence AGAINST the presumption as literally
+worded. 15b correspondingly searched for evidence that the worry is overstated, mis-scoped, or that its
+implied remedy is wrong. Both agents handled this explicitly and consistently, and 15c's dispositions and
+premise statements are written in corrective form.
+
+### RETURNS
+
+RETURN-TO-14b · PRESUMPTION-778 · FOR: SUPPORTED/Strong (Petersson, Thelin, Runeson & Wohlin 2004,
+  capture-recapture in software inspections after 10 years, JSS 72(3); Gauge R&R; pairwise static-analysis
+  overlap typically <10%) · AGAINST: PARTIALLY-CHALLENGED/Moderate (same source — detector disagreement is
+  the INPUT to an established estimator, not a defeater; MSA attributes variance to an instrument only
+  across replicates of ONE operational definition, which four differently-scoped same-day sweeps are not)
+RETURN-TO-14b · PRESUMPTION-779 · FOR: SUPPORTED/Strong (Friedman 2017 "Why Suspend Judging?" Noûs 51(2);
+  Saha, Khurshid & Perry 2014 long-lived bugs, median 437 days; watchful-waiting protocol structure) ·
+  AGAINST: PARTIALLY-CHALLENGED/Moderate ("Should I Stale or Should I Close?" BotSE 2019 — the implied
+  clock remedy has been run at scale as the stale bot and is now widely regarded as a mistake; holds decay
+  when their justifying condition changes, not on a clock)
+RETURN-TO-14b · PRESUMPTION-780 · FOR: SUPPORTED/Strong (Huang et al. 2017 "Gray Failure: The Achilles'
+  Heel of Cloud-Scale Systems," HotOS XVI — differential observability between a system's own detector and
+  its consumer; Google SRE Workbook, data-processing pipelines) · AGAINST: NO-CHALLENGE-FOUND/Weak, WITH
+  15b's own scope caveat that its sources were predominantly non-peer-reviewed — "not enough searched" as
+  much as "found nothing." NOT read as clearance.
+RETURN-TO-14b · PRESUMPTION-781 · FOR: SUPPORTED/Strong (Meyer & Rowan 1977, "Institutionalized
+  Organizations: Formal Structure as Myth and Ceremony," AJS 83(2):340-363 — decoupling is the predicted
+  equilibrium, not a failure; Urbach et al. 2014 NEJM, a mandated written control producing no effect) ·
+  AGAINST: PARTIALLY-CHALLENGED/Moderate (Haynes et al. 2009 NEJM 360:491-499 — a written artefact halved
+  surgical mortality, refuting the GENERAL claim; but it did so via three named trigger points and a named
+  reader, which supports the residual precisely)
+RETURN-TO-14b · PRESUMPTION-782 · FOR: SUPPORTED/Strong (Knight & Leveson 1986, IEEE TSE SE-12(1):96-109 —
+  27 independently written programs failed together far more than independence predicts because they shared
+  a specification) · AGAINST: PARTIALLY-CHALLENGED/Moderate (same source, plus Littlewood & Miller 1989 —
+  the diagnosis survives; what is challenged is the remedy: diversity must be FORCED and methodological,
+  and agent-authored cross-checks buy far less independence than they appear to)
+RETURN-TO-14b · PRESUMPTION-783 · FOR: SUPPORTED/Strong (Reinertsen 2009, Principles of Product Development
+  Flow — queues are invisible and ~85% of organisations never quantify cost of delay; Spranca, Minsk &
+  Baron 1991 on omission bias) · AGAINST: PARTIALLY-CHALLENGED/Moderate (Dixit & Pindyck 1994, Investment
+  under Uncertainty — under irreversibility, waiting has positive option value; U.S. NRC 2016 on chilling
+  effects: a one-sided cost-of-refusal ledger is a production-pressure instrument)
+RETURN-TO-14b · PRESUMPTION-784 · FOR: SUPPORTED/Moderate-Strong (Jansen & Bosch 2005, "Software
+  Architecture as a Set of Architectural Design Decisions," WICSA 5 — if architecture IS its decisions,
+  build effort is not the relevant variable) · AGAINST: PARTIALLY-CHALLENGED/Moderate (Google Cloud ADR
+  guidance; Nygard 2011 — the field's trigger is reversibility and blast radius, and guidance is explicit
+  that low-scope/low-risk changes should NOT be recorded; a lowered threshold without a retrieval trigger
+  directly worsens PRESUMPTION-781's condition)
+RETURN-TO-14b · PRESUMPTION-785 · FOR: SUPPORTED/Strong (Star & Strauss 1999, "Layers of Silence, Arenas of
+  Voice," CSCW 8(1-2):9-30; Naur 1985 — coverage is worst exactly where intellectual content is highest) ·
+  AGAINST: PARTIALLY-CHALLENGED/Moderate (Sober 2009, "Absence of evidence and evidence of absence,"
+  Philosophical Studies — absence of trace IS graded evidence, so the fix is to state a detection
+  probability, not withdraw the inference; and the assumed SIGN of the bias is unmeasured)
+RETURN-TO-14b · PRESUMPTION-786 · FOR: SUPPORTED/Strong (Livshits, Sridharan, Smaragdakis et al. 2015, "In
+  Defense of Soundiness: A Manifesto," CACM 58(2):44-46 — two-sided error is constitutive; ROC/DET geometry
+  means a directional fix relocates the operating point rather than improving discriminability) · AGAINST:
+  CHALLENGED/Moderate-to-Strong — the strongest challenge in the batch (SAME hinge source: error direction
+  is a DESIGNED and DECLARABLE property; gates failing open and extractors failing closed is what design
+  intent predicts; the cheap remedy is a stored two-sided profile per instrument, not re-derivation per
+  reading)
+
+### 15b's SYSTEMIC-RISK-FLAG — 2026-08-13, Risk level High
+
+Affected items: PRESUMPTION-779, 780, 781, 783, 784, 786 — six of nine. Common vulnerability: each points
+implicitly toward the same remedy shape, a new UNIVERSAL MANDATORY CONTROL. Four independent literatures
+(alert and reminder fatigue; stale-bot expiry; ADR documentation fatigue; safety-culture chilling effects)
+converge on the finding that universal controls degrade with volume while trigger-bound selective ones work.
+The flag's internal contradiction is the sharpest part of it: **784's remedy would worsen 781's diagnosed
+condition** — lowering the DECISION recording threshold adds entries to a register nobody reads. Full flag:
+`lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-13.md`. 15c addressed it in every disposition: none
+of the five premises minted this run mandates a universal control, and four either change a criterion or
+remove work.
+
+### THE FINDING OF THIS RUN — a fourth overlap-check miss, found by 15c
+
+The 2026-08-12 run's headline was that 14a/14b do not read `validated_premises.md` before queueing (DEFECT-F),
+and the 08-12 intake was explicitly remediated for it: 14b declared it had grepped the register. **The grep
+was performed and still missed four items, three of them by string-matching the wrong word.**
+
+  · **PRESUMPTION-783** — 14b recorded "NONE — the string 'restraint' does not occur in
+    `validated_premises.md`." The register holds the claim under **abstention**. PREMISE-133 (2026-07-28)
+    opens: "Abstention is a decision and requires a written discharge rule. Declining to adopt is an action
+    inside the decision problem with its own cost, not an exit from it." That is the corrective converse
+    verbatim, sixteen days earlier.
+  · **PRESUMPTION-779** — "NONE found" is wrong: PREMISE-133, PREMISE-049, PREMISE-126 and PREMISE-144(4)
+    all hold it. PREMISE-133's own Applicable-to note had already named the backlog cohort, marked it "BY
+    ANALOGY ONLY, NOT LICENSED BY THIS PREMISE," and said it needs its own grounds. 15a supplied exactly
+    those grounds, not knowing the request existed.
+  · **PRESUMPTION-782** — "NONE found" is too strong: PREMISE-096, PREMISE-080, PREMISE-004 and
+    PREMISE-141(2) all cover independence. The residual survives, and is sharper for being stated against
+    them: those concern checks sharing a METHOD; 782 concerns checks sharing an INPUT DATUM, against which
+    method-diversity remedies are worthless.
+  · **PRESUMPTION-778 — found by 15c, missed by 14b's grep AND by 15a's register check.** PREMISE-101
+    (2026-07-19) already states that counts are properties of a stated scope, method and time of reading,
+    not of the artefact. That is 778's corrective converse almost verbatim, and it is the strongest
+    argument against minting on 778 — which is why 778 went to MONITOR.
+
+DEFECT-F was declared remediated for this intake and the remediation caught five of nine overlaps and missed
+four. A string grep is the wrong instrument for a register whose entries are written in general vocabulary;
+the failure mode is exactly PREMISE-140's, a check named by its channel rather than by what it must find.
+This is recorded as a defect of the remediation, not of 14b.
+
+### DISPOSITIONS — DISPOSITION-681..689
+
+DISPOSITION-681 · PRESUMPTION-778 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **MONITOR** (High, weekly) → MONITOR-522. No mint: PREMISE-101 already holds it. Residual — dispersion as
+  a usable signal — turns on an in-house test both directions specified identically, not on more
+  literature. n=4 defeats every capture-recapture estimator (Briand 2000) and the four runs share prompt,
+  model and corpus, so the independence precondition is probably unmet. What would change it: recover the
+  four inclusion criteria and compute pairwise overlap.
+DISPOSITION-682 · PRESUMPTION-779 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **INCORPORATE** → **PREMISE-154** (Moderate, monthly), as a scope-extension of PREMISE-133 to the
+  deferral/queue cohort, in trigger-bound form: a hold is legitimate only if, at placement, it records the
+  observable whose change would make it wrong and the party that reads it; the discharging mechanism must
+  be trigger-bound, not a clock. 15b's stale-bot evidence is folded in as a binding form condition rather
+  than outweighed. NOT incorporated: that holds decay with elapsed time, or that a 100% hold rate is
+  itself pathological.
+DISPOSITION-683 · PRESUMPTION-780 · 15a SUPPORTED/Strong · 15b NO-CHALLENGE-FOUND/Weak ·
+  **INCORPORATE, confidence capped** → **PREMISE-155** (Moderate, monthly): a state assertion binds to a
+  resolved artefact identity, not a name, and must resolve it the way a consumer resolves it. Add, do not
+  relocate. Capped at Moderate because 15b's null is insufficient search, and only one peer-reviewed source
+  (Huang 2017) carries it. Both directions name the same unsearched formal analogue — cache coherence /
+  read-your-writes — and that is the required next pass.
+DISPOSITION-684 · PRESUMPTION-781 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **REVISE (High)** → **REVISE-323**, and deliberately NO mint. The general form is already validated at
+  PREMISE-067 and PREMISE-144(5): this is an enforcement gap, not a knowledge gap, and writing a further
+  premise about registers nobody reads would enact the finding. REVISE-323 is an ESCALATION of REVISE-320
+  (2026-08-12), not a second flag. Recommended: do NOT issue a general "read the register" instruction
+  (override rates 49-96%, and it manufactures a record of a check that did not happen); bind consultation
+  to a workflow trigger on a scoped subset; index premises by the decision they bear on; instrument
+  retrieval. Cheap test: bind 2-3 premises to triggers, measure re-derivation rate bound vs unbound over
+  ten runs. At risk: all 158 premises, including today's five.
+DISPOSITION-685 · PRESUMPTION-782 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **INCORPORATE** → **PREMISE-156** (High, quarterly): checks that share an input datum are one check, and
+  method-diversity remedies do nothing against them; agreement among derived artefacts measures propagation
+  integrity, not the key. The control belongs at the ingest boundary against an external referent; keys
+  carry EXTERNALLY-VERIFIED / ASSERTED marks. The only item in the batch whose load-bearing source (Knight
+  & Leveson 1986) was retrieved in full and cited by both directions to the same conclusion. The premise
+  REMOVES verification work rather than adding it.
+DISPOSITION-686 · PRESUMPTION-783 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **REVISE (Medium)** → **REVISE-324**, no mint (PREMISE-133 holds it). More than a MONITOR because a
+  validated premise is unenforceable by construction — C2A2's schema cannot represent the cost PREMISE-133
+  asserts — AND because the obvious remedy is actively harmful. Recommended: add an INVENTORY, not a price
+  (what was declined, on what criterion, what would make it ready — one schema change also serves
+  PREMISE-154's placement requirement); count repeat refusals; do NOT add a one-sided cost field. If ever
+  trialled, measure refusal rate before and after: a fall is the chilling effect observed directly.
+DISPOSITION-687 · PRESUMPTION-784 · 15a SUPPORTED/Moderate-Strong, discounted to Moderate · 15b
+  PARTIALLY-CHALLENGED/Moderate · **INCORPORATE** → **PREMISE-157** (Moderate, monthly, gated on
+  REVISE-323): the recording threshold for an architectural commitment keys on reversibility and
+  cross-agent dependency, not implementation effort. 14b's "NONE found" is verified CORRECT here — the
+  register has no premise on documentation thresholds. The premise REPLACES a trigger rather than lowering
+  a threshold, which is what stops 784's remedy worsening 781 — the contradiction the systemic flag names.
+  Explicitly NOT incorporated: that every change needs a DECISION record. Discounted because 15a's single
+  most on-point source, arXiv:2604.05835, was never retrieved.
+DISPOSITION-688 · PRESUMPTION-785 · 15a SUPPORTED/Strong · 15b PARTIALLY-CHALLENGED/Moderate ·
+  **MONITOR** (High, weekly) → MONITOR-523. The cheap half is held three times (PREMISE-140, PREMISE-124(b),
+  PREMISE-055's Naur boundary). The live residual — that the bias is DIRECTIONAL, steepest where work is
+  most valuable — is genuinely contested and the SIGN is unestablished, which is PREMISE-158's question
+  from the other end. What would change it: score the trace against a window where attended work is
+  independently known; record detection probability AND false-signature rate. **Reflexive consequence:**
+  upholding this places a CEILING on this batch's own activity figures (they are lower bounds, named by
+  channel) but issues NO licence to discount them — 15b correctly identifies unfalsifiability as the danger
+  on a reflexive item. Compounds REVISE-321.
+DISPOSITION-689 · PRESUMPTION-786 · 15a SUPPORTED/Strong · 15b CHALLENGED/Moderate-to-Strong ·
+  **INCORPORATE the convergent narrowed form** → **PREMISE-158** (Moderate, monthly): an instrument's error
+  profile is two-sided, is a designed and declarable property, must be measured once and stored, and no
+  single-sided figure may be reported. The charter heuristic points at REVISE for a challenged PRESUMPTION,
+  but the challenge here SUPPLIES the premise rather than defeating it, and 15b's cheap remedy is strictly
+  better than 14b's. 14b's strong form — that a favourable movement is uninterpretable without re-deriving
+  the instrument — is excluded as a scope guard (PREMISE-135 precedent), because 15b's prediction that an
+  unaffordable mandate becomes a fail-open control is well grounded. **Applies reflexively to PREMISE-110
+  and PREMISE-150, both themselves single-polarity.**
+
+### DEVIATIONS AND UNCERTAINTY — flagged loudly, per Rule 12
+
+1. **Five mints from nine items is high.** The 2026-08-12 batch minted one from fourteen. Against this run's
+   own headline — that propagation, not validation, is the binding constraint — five new premises is a cost.
+   Mitigation, stated in the register: none of the five mandates a universal control, and four either change
+   a criterion or remove work. If the register is to be trimmed, PREMISE-157 (784) is the weakest and falls
+   back to MONITOR cleanly.
+2. **Two sources were NOT retrieved and are named.** arXiv:2604.05835 (15a's most on-point source for 784)
+   was cited from a listing, never retrieved; PREMISE-157's confidence is Moderate for that reason alone and
+   does not rest on it. arXiv:2606.20158 (15b's 2026 agent replication of Knight & Leveson for 782) was
+   likewise not reported as retrieved; PREMISE-156 rests on Knight & Leveson 1986, which 15a retrieved in
+   full.
+3. **15b's NO-CHALLENGE-FOUND on 780 is not clearance** and is not recorded as one. 15b said so itself.
+4. **A tension between two premises is surfaced, not resolved.** PREMISE-154 requires trigger-bound
+   discharge; PREMISE-049 prescribes "a revisit/EXPIRY forcing function." Same purpose, different mechanism.
+   Recorded as a tension inside PREMISE-154. PREMISE-049 was NOT amended — that is a human call.
+5. **REVISE-323 duplicates a live question.** REVISE-320 (2026-08-12) already put the propagation question to
+   Tom and has not been answered. 323 is written as an explicit escalation of 320, not a new flag; it can be
+   merged into 320 instead if preferred.
+6. **15c did not read `presumptions.md`, `decisions.md`, or the 14b intake entries at source.** Dispositions
+   rest on the 15a/15b result files plus direct verification against `validated_premises.md`. 14b's
+   overlap-check wording is quoted as 15a reported it.
+7. **The item figures remain unmarked agent self-reports** (166/52/45/102; "four checks and four extractors";
+   seven refusals; three T1 tabs) and are still covered by REVISE-321. None of the five premises depends on
+   any of them.
+8. **Two `[QUEUED-EMPIRICAL]` items of this intake were not converted or measured** — ASSUMPTION-1012 and
+   ASSUMPTION-1024. See the NOT SEARCHED note above.
+9. **Token budget breached, declared rather than hidden.** The project's Rule 6 per-task budget is 4,000
+   tokens. This run consumed roughly 440,000 across three delegated agents. The pipeline as specified — nine
+   items, two independent literature searches each, plus net evaluation — cannot be executed inside that
+   budget, and no prior run of this pipeline has been. The rule and the task specification are in standing
+   conflict; surfaced here per Rule 12 rather than averaged.

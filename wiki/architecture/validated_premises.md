@@ -4180,3 +4180,405 @@ PREMISE-153:
   Dispositions: DISPOSITION-667..680 (lit_search_returns.md, 2026-08-12 run section)
   MONITOR items: MONITOR-514..521 · REVISE items: REVISE-317..322
 --------------------------------------------------------------------------------
+
+================================================================================
+## 2026-08-13 — 15c cycle (5 premises minted: PREMISE-154..158, from PRESUMPTION-778..786)
+
+**POLARITY, stated once and binding on all five entries.** All nine items in this batch are 14b
+PRESUMPTIONS worded "That [belief the system holds]", where the belief is the unsafe thing. 15a
+searched FOR the CORRECTIVE CONVERSE, so "15a SUPPORTED/Strong" means 14b's worry is well grounded.
+Every premise below is therefore stated in CORRECTIVE form. None of them validates a presumption as
+14b worded it.
+
+**WHY FIVE, AND WHY NONE OF THEM ADDS A CONTROL.** Five mints in one batch is high for this register
+(the 2026-08-12 batch minted one of fourteen) and register inflation is a live hazard under
+PREMISE-105. Each of the five was checked against the register before minting and each closes a gap
+the register can be shown not to hold — 154 discharges a gap PREMISE-133 NAMES IN ITS OWN TEXT; 155,
+156, 157 and 158 have no antecedent on identity-vs-name, shared-input dependence, the recording
+threshold, or two-sidedness respectively. More importantly, and in direct response to 15b's
+SYSTEMIC-RISK-FLAG of the same date: NOT ONE of the five mandates a new universal control. Four of
+them CHANGE A CRITERION or REMOVE work (156 removes downstream checks; 157 replaces a trigger without
+lowering a threshold; 158 replaces per-reading re-derivation with a one-time profile; 155 converts an
+alert into a displayed number), and 154 binds its mechanism to a trigger rather than a clock. That
+was the flag's recommendation (1) and it is satisfied by construction rather than by promise.
+
+**THE FOUR ITEMS NOT MINTED ARE THE OTHER HALF OF THE FINDING.** PRESUMPTION-778 and -785 went to
+MONITOR because the register already holds their cheap half and their residual turns on an in-house
+test both search directions specified identically. PRESUMPTION-781 and -783 went to REVISE WITHOUT A
+MINT, because both are ENFORCEMENT gaps against premises this register already holds (PREMISE-067 /
+PREMISE-144(5) for 781; PREMISE-133 for 783) and minting them a second time is barred by PREMISE-138
+clause (1) and by the batch's own central finding that the binding constraint on this system is
+propagation, not validation.
+
+PREMISE-154:
+  Date validated: 2026-08-13
+  Source item: PRESUMPTION-779
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: SCOPE-EXTENSION OF PREMISE-133 TO THE DEFERRAL/QUEUE COHORT, IN TRIGGER-BOUND FORM.
+    PREMISE-133 requires that a suspension name what would discharge it, who adjudicates, and a
+    deadline, and its own Applicable-to note explicitly DECLINES to license the backlog/queue cohort:
+    it records that cohort as exhibiting the same outcome BY ANALOGY ONLY and as "needing its own
+    grounds." Those grounds now exist and are supplied here. A hold placed in a work queue is a
+    committal state, not a null one, and it does not maintain itself — the reject option is optimal
+    only relative to a cost ratio the environment is free to change, and every domain that has
+    institutionalised deferral has independently attached a re-assessment mechanism to the deferral
+    rather than to the original decision. THEREFORE a hold is legitimate only if, AT PLACEMENT, it
+    records (a) the observable whose change would make it wrong — its release condition — and (b) the
+    party or process that reads that observable. LOAD-BEARING FORM CONDITION, from 15b and not
+    optional: the discharging mechanism must be TRIGGER-BOUND, NOT A CLOCK. Time-based expiry and
+    scheduled full re-audit are the specific remedies with the worst documented record in the nearest
+    analogous domain — automatic closure of deferred items destroys accumulated triage state and
+    forces re-derivation of judgements already made — and a repeated re-audit prompt across six
+    queues is predicted by the alert-fatigue evidence to become a rubber stamp within a few cycles,
+    which manufactures a false record of having looked and is the fail-open pattern PREMISE-110 names.
+    EXPLICITLY NOT INCORPORATED: "a hold decays with elapsed time." No located source supports a
+    decay model on the clock and none supplies a correct interval; every domain sets its own by risk
+    tier. What is established is that a hold with no statable release condition has NO STATE
+    TRANSITION OUT OF HOLDING, which is a defect AT PLACEMENT, not a defect of duration. ALSO NOT
+    INCORPORATED: that a 100% hold rate is itself pathological. A conservative gate on a low-quality
+    intake stream should hold most things, and PREMISE-133 protects principled abstention as
+    conformant behaviour.
+  Supporting evidence (15a, SUPPORTED/Strong): Friedman, J. (2017), "Why Suspend Judging?", Noûs
+    51(2):302-326 — suspension is a committal attitude with its own warrant conditions. Chow, C.K.
+    (1970), IEEE Trans. IT 16(1):41-46, and El-Yaniv & Wiener (2010) — the reject option's optimality
+    is defined against a fixed cost ratio. Saha, Khurshid & Perry (2014), "An Empirical Study of Long
+    Lived Bugs," CSMR-WCRE — unfixed bugs open a median 437 days [figure from a search snippet of the
+    paper, not read in full]. Wattanakriengkrai et al. (2023), arXiv:2305.18150 — the ecosystem built
+    an expiry mechanism because unbounded holds are a defect class [listing verified; authorship not
+    independently confirmed]. Watchful-waiting / active-surveillance protocol structure (PubMed
+    34495289; PMC9119349 — 76.5% of watchfully-waited follicular-lymphoma patients required
+    second-line treatment within five years). Access recertification practice (ISO 27001 A.9.2.5 and
+    equivalents) [clause numbers not verified].
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate — folded in as the form condition rather than
+    outweighed): the stale-bot natural experiment ("Should I Stale or Should I Close?", BotSE 2019;
+    Zimmermann 2021 [personal blog, non-peer-reviewed]); prostate active-surveillance evidence that a
+    correctly-scoped hold sustained over years achieves comparable outcomes (PubMed 38697055,
+    18765115); Ancker et al. (2017), BMC Med Inform Decis Mak 17:36 — reminder acceptance falls ~30%
+    per additional prompt per encounter. 15b's crux is accepted in full: "the honest version of the
+    finding is not 'holds decay' but 'holds were placed without release conditions'."
+  CORRELATION DISCLOSURE (per PREMISE-124): 15a's sources 1 and 2 (Friedman; Chow / El-Yaniv &
+    Wiener) are THE SAME SOURCES this register used to validate PREMISE-133. This entry is an
+    extension of PREMISE-133 and must NOT be counted as independent corroboration of it. Its
+    genuinely disjoint evidence is the bug-triage, stale-bot, clinical-surveillance and
+    access-recertification material, plus the whole of 15b's file.
+  NOTED TENSION WITH PREMISE-049, surfaced rather than silently reconciled (charter §5): PREMISE-049
+    prescribes "a revisit/expiry forcing function" for the UNVERIFIED quarantine, i.e. it names expiry
+    where this premise prefers a trigger. The two agree on purpose — the hold must not become "flag
+    and forget" — and differ on mechanism. This is recorded as a tension for reconciliation, NOT as a
+    contradiction, and PREMISE-049 is not amended here. If the trigger form is adopted, PREMISE-049's
+    mechanism clause should be re-read against it.
+  Confidence: Moderate. The claim is largely already held by this register under a different word,
+    the two strongest sources are non-independent of PREMISE-133, and the form condition rests partly
+    on non-peer-reviewed practitioner material.
+  Applicable to: the six queues reported at 100% hold for up to eleven consecutive runs; the ~174-item
+    15d re-trigger backlog and the MONITOR-420/423 fired-trigger cohort, which PREMISE-133 named and
+    declined to license and which this premise now covers; the MONITOR queue generally; 14a/14b
+    intake, which must record a release condition at the moment an item is queued.
+  OPEN MEASUREMENT NAMED AT VALIDATION (both directions specified it independently, which is why it
+    is recorded here rather than as a separate MONITOR): sample the six held queues and measure two
+    numbers — the fraction of holds for which a release condition can be stated at all, and, among
+    those, the fraction whose condition has already changed. Statable conditions present and few
+    changed -> the remedy is annotation and this premise is cheap to satisfy. Conditions largely
+    absent -> the placement defect is confirmed directly. In-house, bounded.
+  Re-check due: 2026-09-13 (Monthly)
+  Status: ACTIVE
+
+PREMISE-155:
+  Date validated: 2026-08-13
+  Source item: PRESUMPTION-780
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: A STATE ASSERTION BINDS TO A RESOLVED ARTEFACT IDENTITY, NOT TO A NAME, AND AN
+    ASSERTION TAKEN AT AN INTERNAL STAGE IS NOT A GUARANTEE FOR CONSUMERS. Two clauses. (1) IDENTITY:
+    a check written against a NAME resolves to whichever object the running process can see, so two
+    objects sharing a name can each satisfy the check while diverging from one another indefinitely.
+    Any freshness, presence or state assertion must bind to a resolved identity — a resolved path, a
+    hash, or a served response — and must resolve it THE WAY A CONSUMER RESOLVES IT. A name is not an
+    identity. (2) OBSERVATION POINT: the divergence between what a system's own detector observes and
+    what a consumer experiences is differential observability, and it is silent BY CONSTRUCTION
+    rather than by oversight, because nothing in the architecture ever compares the two observation
+    points. This extends PREMISE-089 (freshness is a per-source property) from ACROSS sources to
+    WITHIN one source, and extends PREMISE-040 (measure the live artefact, not a copy) from
+    documentation statistics to gates. ADD, DO NOT RELOCATE (load-bearing, from 15b): a snapshot-age
+    check is a legitimate stage-latency instrument in every reference architecture; the defect is the
+    ABSENCE of a second, consumption-side assertion, not the presence of the first, and removing the
+    stage check loses the signal that localises the fault. EXPLICITLY NOT INCORPORATED: that a
+    consumption-boundary assertion CLOSES the gap. It narrows it — a boundary check verifies only the
+    path it was scripted for — so the set of consumption paths must be enumerated and any unmonitored
+    path NAMED rather than assumed absent. FORM CONDITION, per the batch's systemic-risk flag: report
+    artefact AGE as a displayed number rather than adding a pass/fail freshness alert per artefact per
+    path. Freshness is a high-volume alert class and moving from alerting to display gets the signal
+    without the acceptance decay.
+  Supporting evidence (15a, SUPPORTED/Strong): Huang, P. et al. (2017), "Gray Failure: The Achilles'
+    Heel of Cloud-Scale Systems," HotOS XVI — differential observability [canonical; already in this
+    register under PREMISE-110, therefore NON-INDEPENDENT]. Google SRE Workbook, "Data Processing
+    Pipelines," and Beyer et al. (2016) on black-box vs white-box monitoring [chapter URL verified].
+    Data-freshness SLO practice (dbt Labs, Conduktor, Tacnode) and synthetic/black-box monitoring
+    practice (Microsoft Engineering Fundamentals Playbook; Grafana; CloudWatch Synthetics) [vendor and
+    practitioner documentation, verified as existing; documented practice, not measured effect].
+    Batini et al. (2009), ACM Computing Surveys 41(3) [already in this register under PREMISE-006 —
+    NON-INDEPENDENT].
+  Challenges noted (15b, NO-CHALLENGE-FOUND on the core claim; PARTIALLY-CHALLENGED on the remedy):
+    15b states plainly that the item "survives disconfirmatory search substantially intact." Its three
+    challenges are all against the remedy and are all folded in above as clauses rather than
+    outweighed — synthetic checks verify only scripted paths; a component check is a correct
+    instrument rather than a wrong one; freshness is a high-volume alert family.
+  Confidence: Moderate, AND THE CAP IS DELIBERATE. 15b's own search-scope note declares its
+    NO-CHALLENGE-FOUND to be "a case of 'not enough searched' as much as 'searched and found
+    nothing'", with almost all located sources vendor or practitioner material. That is NOT read as
+    clearance here. Only one peer-reviewed source (Huang et al.) carries the core, and it is already
+    register-held. Both directions independently name the same unsearched literature —
+    cache-coherence and read-your-writes consistency — as the formal analogue; until that pass is
+    run, Moderate is the ceiling.
+  Applicable to: the freshness gate that reported 0.00h against a four-day-old published file of the
+    same name; any gate, check or assertion in the pipeline that names its subject by filename rather
+    than by resolved path; the vault publication step; PREMISE-089 and PREMISE-040, which this
+    extends.
+  NOT DUPLICATED HERE, AND NAMED INSTEAD: the one-read empirical question — do the two handles
+    resolve to different files — is already queued as ASSUMPTION-1024 in the same 2026-08-12 intake.
+    It is not re-queued as a MONITOR. Answering it confirms or refutes the incident; it does not bear
+    on the premise, which is architectural.
+  Re-check due: 2026-09-13 (Monthly)
+  Status: ACTIVE
+
+PREMISE-156:
+  Date validated: 2026-08-13
+  Source item: PRESUMPTION-782
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: CHECKS THAT SHARE AN INPUT DATUM ARE ONE CHECK, AND METHOD-DIVERSITY REMEDIES DO NOTHING
+    AGAINST THEM. This register's independence family — PREMISE-096 (a corroborating layer must draw
+    on a genuinely disjoint evidence source), PREMISE-080 (shared method variance yields
+    pseudo-convergence), PREMISE-004 (same-model-family convergence is not independent evidence),
+    PREMISE-141(2) (a redundancy argument counting two instruments as two chances is counting one) —
+    addresses, without exception, checks that share a METHOD or a MODEL. This premise adds the other
+    direction of dependence: checks that share an INPUT DATUM. The distinction is operational, not
+    taxonomic, because the standard remedies for method dependence — a different tool, a different
+    model, a different frame — are worth exactly nothing against a wrong upstream key. Three
+    consequences bind. (a) AGREEMENT AMONG ARTEFACTS DERIVED FROM A COMMON KEY MEASURES PROPAGATION
+    INTEGRITY, AND IS NOT EVIDENCE ABOUT THE KEY. Thirteen mutually consistent files are one
+    observation reported thirteen times; the count's comfort value is the hazard. (b) THE CONTROL
+    BELONGS AT THE INGEST BOUNDARY, validated once against a referent OUTSIDE the derived population,
+    because a downstream check is structurally blind to an upstream fault — every static check over
+    those thirteen files was a discrepancy detector over quantities that all derived from the same
+    key. (c) A KEY CARRIES A PROVENANCE MARK — EXTERNALLY-VERIFIED or ASSERTED — so that downstream
+    agreement is read against the right prior. EXPLICITLY NOT INCORPORATED, and both exclusions are
+    load-bearing: (i) that a single authoritative key is the error. It is not; storing a value once is
+    what prevents divergence, and duplicating it trades a correlated-error failure for an
+    inconsistency failure that is more frequent and harder to detect. The fault is at the boundary
+    where a claim became a record without meeting an external referent. (ii) that the remedy is MORE
+    CHECKS. Independently derived checks do not deliver independent failure; where redundancy is used
+    at all, diversity must be FORCED and METHODOLOGICAL — a check that reads the source corpus
+    directly is diverse from one that reads frontmatter; two checks that both read frontmatter are
+    not, regardless of who or what wrote them.
+  Supporting evidence (15a, SUPPORTED/Strong): Knight, J.C. & Leveson, N.G. (1986), "An Experimental
+    Evaluation of the Assumption of Independence in Multi-Version Programming," IEEE TSE
+    SE-12(1):96-109 — 27 independently written versions of ONE SPECIFICATION, one million tests,
+    coincident failures far above the independence prediction, arising through DIFFERENT errors
+    because the versions shared an upstream artefact [VERIFIED AT SOURCE this run —
+    sunnyday.mit.edu/papers/nver-tse.pdf; this is the only primary source in the batch retrieved in
+    full, and it is cited by BOTH directions]. Common-cause failure modelling: NUREG/CR-5485 (1998);
+    IEC 61508-6 Annex D beta-factor treatment; SINTEF A26922 — CCF dominates the unreliability of
+    redundant systems by defeating the coincidence redundancy purchases, and is addressed by attacking
+    COUPLING FACTORS rather than root causes. Wimsatt (1981) on robustness and multiple determination
+    [already register-held under PREMISE-004 — NON-INDEPENDENT]. Master/reference-data management
+    practice on golden records and lineage [practitioner material].
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate — and it agrees with the diagnosis): 15b's
+    challenge is entirely against remedies and is folded in above as the two exclusions. Littlewood,
+    B. & Miller, D. (1989), IEEE TSE 15(12):1596-1614 — forced methodological diversity can reduce
+    correlated failure below the naive baseline, which is the constructive escape and the reason
+    exclusion (ii) is stated as "forced and methodological" rather than as a flat prohibition.
+    Normalisation / single-source-of-truth practice supplies exclusion (i).
+  SOURCE-RETRIEVAL NOTE, recorded per PREMISE-132 (citing is not verifying): 15b cites arXiv:2606.20158
+    ("N-Version Programming with Coding Agents," ASSERT-KTH) for a 2026 agent-based replication
+    reporting 429 coincident failures against 115.36 predicted. That preprint was NOT reported as
+    retrieved at full text by either direction; it is cited from a listing with figures taken from
+    snippets. IT IS THE MOST INTERESTING SOURCE IN THE BATCH FOR THIS SYSTEM'S CLASS AND THIS PREMISE
+    DOES NOT REST ON IT. The premise rests on Knight & Leveson, which was retrieved. If the
+    replication is later verified, it strengthens the transfer to agent-authored checks specifically;
+    if it fails to verify, nothing above changes.
+  Confidence: High. Rare in this register and justified narrowly: the load-bearing primary source was
+    retrieved in full, both search directions cited it and drew the same conclusion from it, the
+    increment over existing premises is a distinction rather than a new claim, and the operational
+    consequence REMOVES verification work rather than adding it — which means the premise is cheap to
+    be wrong about in the direction it points.
+  Applicable to: the `summa_ref` incident and any upstream key on which more than a small number of
+    derived artefacts depend; the full static-check suite, whose independence claims are void for any
+    quantity derived from a shared key; PREMISE-096 / 080 / 004 / 141(2), which this extends from
+    shared-method to shared-input; any future proposal to add cross-checks as a remedy for a
+    correlated-error finding.
+  OPEN MEASUREMENT NAMED AT VALIDATION (both directions proposed it independently): enumerate the
+    upstream keys on which more than three derived artefacts depend, and for each determine whether
+    ANY check compares it to something outside the derived population. The count for which the answer
+    is no IS the exposure and is measurable today. Sharper variant: corrupt one such key in a scratch
+    copy and run the full static-check suite; the number of checks that still pass is the empirical
+    measure of how much of this system's verification sits downstream of a single unverified claim.
+  Re-check due: 2026-11-13 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-157:
+  Date validated: 2026-08-13
+  Source item: PRESUMPTION-784
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: THE RECORDING THRESHOLD FOR AN ARCHITECTURAL COMMITMENT KEYS ON REVERSIBILITY AND
+    CROSS-AGENT DEPENDENCY, NOT ON IMPLEMENTATION EFFORT. Implementation cost and commitment cost are
+    different quantities. An architecture is its set of design decisions rather than its set of
+    components, from which it follows that "required no new tool, prompt or schema" is a statement
+    about how a change was built and carries no information at all about whether a commitment was
+    made. The trigger criteria in actual mainstream use are: the change is difficult to reverse; it
+    crosses agent, team or service boundaries; it involves significant trade-offs; there is no
+    existing basis for the decision. None of them is effort, and no located guidance offers effort as
+    an exemption anywhere. Rationale is close to free to capture at the moment of decision and
+    expensive-to-impossible to recover afterwards, which is the asymmetry that makes the threshold
+    matter. EXPLICITLY NOT INCORPORATED, and this exclusion is the load-bearing half of the premise:
+    "EVERY CHANGE NEEDS A DECISION RECORD." That is the documented failure mode of the practice —
+    proliferation, fatigue, and significant decisions buried among trivial ones — and the same
+    guidance that names the trigger criteria is explicit that changes limited in scope, time, risk and
+    cost should be left unrecorded ON PURPOSE. This premise REPLACES a trigger; it does not LOWER a
+    threshold, and it must not be cited in support of doing so. SEQUENCING CONDITION, from 15b's
+    SYSTEMIC-RISK-FLAG of 2026-08-13 and binding: this premise must NOT be implemented before a
+    retrieval trigger exists for the DECISION register (the condition PRESUMPTION-781 diagnoses and
+    REVISE-323 carries). Absent one, applying it adds records to the population of unread registers
+    the sibling item is about, and the sibling item's condition is graded Critical.
+  Supporting evidence (15a, SUPPORTED/Moderate-to-Strong as filed; DISCOUNTED TO MODERATE HERE — see
+    Confidence): Jansen, A. & Bosch, J. (2005), "Software Architecture as a Set of Architectural
+    Design Decisions," WICSA 5 [canonical; not re-verified at source]; the architectural-knowledge-
+    vaporization literature (Capilla, Babar, Pautasso and successors) [located records verified as
+    existing; claims from abstracts]; Nygard, M. (2011), "Documenting Architecture Decisions"
+    [canonical practitioner reference]; Amazon shareholder-letter one-way/two-way-door framing
+    [widely reproduced; 15b notes it did not appear in retrieved sources and used it descriptively].
+    Google Cloud Architecture Center, "Architecture decision records overview" [VERIFIED by 15b, and
+    it is the source that states the four trigger criteria directly — the strongest verified source
+    for this premise comes from the AGAINST file].
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate — and it agrees with the diagnosis): "no
+    mainstream ADR guidance uses implementation cost as its trigger, so if C2A2 is using 'did we build
+    a new tool' as its threshold, it is using a proxy the field abandoned." Its two live objections
+    are folded in above: the exclusion of threshold-lowering (consolidated practitioner exclusion
+    criteria; Ancker et al. 2017 as the measured analogue of documentation fatigue) and the
+    observation that the item argues from an absence and an elapsed-day count rather than from the
+    reversibility of the tabs — which is why the instance question is left open below.
+  Confidence: Moderate, and the discount is stated rather than absorbed. 15a's single most on-point
+    source — arXiv:2604.05835, which names this exact anti-pattern as the "undocumented architectural
+    experiment" — is a 2026 preprint known only through a search snippet and WAS NOT RETRIEVED. It is
+    discounted here and the premise does not rest on it. What survives is a canonical definitional
+    reframing not re-verified this run, plus verified practitioner guidance stating the criteria
+    directly, plus agreement from the challenging direction. That is Moderate, not Strong.
+  Applicable to: the DECISION register and whatever governs entry to it; any change that creates a
+    dependency another agent will consume; the three tier-1 tabs added on day thirty-eight; 14b's own
+    threshold for grading a change as an architectural commitment. Same shape of argument as
+    PREMISE-073 (impact-tiered rather than effort-tiered gating for autonomous action) in a different
+    domain; this is the documentation analogue, and PREMISE-073 is the nearest neighbour in the
+    register.
+  OPEN MEASUREMENT NAMED AT VALIDATION, and it is the instance question this premise deliberately
+    does NOT settle: state what would break if the three T1 tabs were removed. Nothing that cannot be
+    repaired in one session -> they were correctly undocumented under this premise's own criterion and
+    PRESUMPTION-784 is mis-scoped on the instance while correct on the criterion. Another agent's
+    output now depends on them -> the threshold was crossed at the moment that dependency formed, and
+    the useful measurement is WHEN, which localises the failure to a run rather than to a policy. Run
+    the same test on the last twenty changes that produced no DECISION; that fraction is the real size
+    of the gap and is almost certainly far smaller than "every change requiring no new tooling."
+  Re-check due: 2026-09-13 (Monthly — monthly rather than quarterly because the sequencing condition
+    above depends on the unresolved state of REVISE-323)
+  Status: ACTIVE
+
+PREMISE-158:
+  Date validated: 2026-08-13
+  Source item: PRESUMPTION-786
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: AN INSTRUMENT'S ERROR PROFILE IS TWO-SIDED, IS A DESIGNED AND DECLARABLE PROPERTY, AND
+    MUST BE MEASURED ONCE AND STORED — AND NO SINGLE-SIDED FIGURE MAY BE REPORTED. Three clauses.
+    (1) TWO-SIDEDNESS IS CONSTITUTIVE, NOT A DEFECT OF IMMATURE TOOLS. Every practical analyser makes
+    deliberate unsound choices, trading soundness for automation and precision; a detector is a CURVE
+    in error space, not a point, so a change that reduces one error type without altering
+    discriminability has relocated the operating point rather than improved detection. It follows that
+    a favourable reading after a directional fix is exactly what one would expect WHETHER OR NOT the
+    instrument improved. (2) THE SIGN IS DECLARABLE AT CONSTRUCTION AND MEASURABLE ONCE. The
+    professional standard is to DECLARE the soundness posture — a sound core plus enumerated
+    deliberate under-approximations — and directional bias measured empirically is large and STABLE
+    PER TOOL, which makes it a durable property to record, not a fresh unknown at each reading.
+    (3) THEREFORE every instrument carries a stored two-sided profile — what it is designed to miss,
+    what it is designed to over-report, and a measured estimate of each — and every reported figure
+    is accompanied by the relevant side of it. A defect count without its companion false-positive or
+    coverage estimate is the reportable defect. After any DIRECTIONAL remedy, re-check the OPPOSITE
+    direction on the instrument that was changed; this is cheap because it is scoped to instruments
+    just touched. EXPLICITLY NOT INCORPORATED, positively refuted by 15b and excluded as a scope
+    guard: "a favourable metric movement is uninterpretable without RE-DERIVING the instrument." That
+    is the expensive form of a cheap requirement, is unaffordable at this register's cadence, and its
+    predicted outcome is either that it is ignored — producing a documented control that is not
+    performed, PREMISE-110 again — or that unfavourable results are kept while favourable ones are
+    discounted, an asymmetry worse than the original problem. ALSO NOT INCORPORATED: that the two
+    error directions are symmetric IN COST. Fail-safe design deliberately biases toward one direction
+    because the loss function is asymmetric, and PREMISE-110 was validated on exactly that reasoning.
+    A directional remedy chosen with a STATED loss function and a MEASURED effect on both error rates
+    is good practice; what this premise forbids is a directional remedy with neither recorded.
+  Supporting evidence (15a, SUPPORTED/Strong): Livshits, B. et al. (2015), "In Defense of Soundiness:
+    A Manifesto," CACM 58(2):44-46 [VERIFIED this run — CACM record and author PDF; cited by BOTH
+    directions and it is the hinge on which they converge]. Green & Swets (1966), Signal Detection
+    Theory and Psychophysics, and standard ROC/DET treatment [canonical; DET treatment verified via
+    scikit-learn documentation]. Metrology: JCGM 100:2008 (GUM) and VIM definitions of bias and drift
+    — without an external reference neither the magnitude nor the SIGN of an instrument's bias is
+    determinable. Cristian, F. (1991), CACM 34(2) [already register-held under PREMISE-141 —
+    NON-INDEPENDENT]. Mutation-based soundness evaluation (Ayewah et al. 2007/2008; arXiv:1806.09761,
+    arXiv:2102.06829) — the only executable route to measuring the fail-open side is to SEED defects
+    and count misses, which is the mechanism PREMISE-124 already requires for population estimates.
+  Challenges noted (15b, CHALLENGED/Moderate-to-Strong — THE STRONGEST CHALLENGE IN THIS BATCH, and
+    clauses (2) and (3) above ARE that challenge rather than a concession to it): error direction is a
+    designed property readable a priori from soundness posture (Livshits et al.); deliberate
+    unsoundness has been enumerated and experimentally quantified in a shipping analyser (Christakis,
+    Müller & Wüstholz, VMCAI 2015 [author attribution from snippet; chapter and venue verified]);
+    measured precision is large and stable per tool (arXiv:2101.08832, 18%-86% across six tools,
+    inter-tool agreement under 10% [author list unconfirmed]); enterprise tools commonly and openly
+    prioritise recall over precision. 15b's reading of the originating observation is accepted: four
+    gates failing OPEN and four extractors failing CLOSED is what design intent predicts, and is
+    confirmation rather than surprise. What survives 15b's challenge, and it is what 15a actually
+    claimed, is that C2A2 has recorded NEITHER a declared posture NOR a second-direction measurement
+    for any instrument — so the direction is unknown HERE for want of a profile, not unknowable in
+    principle.
+  REFLEXIVE APPLICATION, and it is not optional: this register's own detector premises are
+    SINGLE-POLARITY. PREMISE-110 treats the fail-open direction; PREMISE-150 treats missed defects and
+    therefore coverage. Under this premise each needs a two-sided companion, and the register
+    currently exhibits the asymmetry the item names. This is recorded as a consequence at validation
+    rather than deferred: neither premise is amended here, and neither is contradicted — 158 adds a
+    requirement they do not meet rather than denying what they assert.
+  Confidence: Moderate. The convergent narrowed form is well supported from three mature disciplines
+    and both directions cite the same hinge source, but ROC methodology presupposes labelled ground
+    truth that C2A2 does not have for any defect class, which leaves seeding as the only executable
+    measurement route and makes clause (3) a real cost rather than a free one. Two of 15b's empirical
+    citations carry unconfirmed author lists.
+  Applicable to: every check, gate, extractor and detector in the pipeline; the four checks found
+    failing open on 08-11 and the four extractors found failing closed on 08-12; PREMISE-110 and
+    PREMISE-150 reflexively; any future report of a defect count, pass rate or fidelity score.
+  OPEN MEASUREMENT NAMED AT VALIDATION: for the instruments adjusted on 08-11, measure the
+    opposite-direction error rate before and after the remedy. If tightening the gates raised the
+    fail-closed rate in the extractors, the finding is more specific and more serious than the item
+    claims — a COUPLING between directional remedies — and is worth pursuing on its own terms. Note
+    per PREMISE-140/777 that the counts "four" and "four" are unmarked agent self-reports; nothing
+    above depends on the numbers, only on the opposite polarity of the two findings.
+  Re-check due: 2026-09-13 (Monthly)
+  Status: ACTIVE
+
+  Consistency check performed against this register for all five: NO CONTRADICTIONS FOUND. ONE TENSION
+    surfaced (PREMISE-154 vs PREMISE-049 on expiry-vs-trigger, recorded in 154 and not reconciled
+    here). THREE OVERLAP-CHECK FAILURES BY 14b ADJUDICATED RATHER THAN REPEATED: (i) PRESUMPTION-783's
+    "NONE — the string 'restraint' does not occur" is a string match against the queue's vocabulary
+    rather than the register's; PREMISE-133 holds the claim under "abstention", verified at source
+    this run, and 783 is therefore NOT MINTED and goes to REVISE-324 as an enforcement gap.
+    (ii) PRESUMPTION-779's "NONE found" is wrong — PREMISE-133, 049, 126 and 144(4) all hold it,
+    verified this run; PREMISE-133's own Applicable-to note names the queue cohort and declines to
+    license it, which is why 154 is written as a SCOPE-EXTENSION and not as a new claim.
+    (iii) PRESUMPTION-782's "NONE found" is too strong — PREMISE-096, 080, 004 and 141(2) all hold
+    independence, verified this run, but every one of them concerns shared METHOD; 156 mints only the
+    shared-INPUT distinction. 14b's overlap check for PRESUMPTION-784 was verified and is CORRECT.
+    Five of nine items minted; four did not, and two of those four (781, 783) did not because the
+    register already holds them and the gap is enforcement rather than knowledge.
+  SYSTEMIC-RISK-FLAG (High, 15b, 2026-08-13) ADDRESSED IN EVERY DISPOSITION, not deferred: six of the
+    nine items each pointed toward a new UNIVERSAL MANDATORY CONTROL, and four independent literatures
+    find universal controls degrade with volume while trigger-bound selective ones work. The flag is
+    accepted in full and its recommendation (1) is implemented by construction — no premise above
+    mandates a universal control, 154 is trigger-bound rather than clock-bound, 155 converts an alert
+    into a display, 156 removes downstream checks, 157 replaces a trigger without lowering a
+    threshold, and 158 replaces per-reading re-derivation with a one-time stored profile. The flag's
+    named internal contradiction — that 784's remedy worsens 781's diagnosed condition — is handled by
+    the binding sequencing condition inside PREMISE-157. The flag's recommendation (3), instrument
+    every control that is adopted, is NOT satisfied by anything above and is carried at REVISE-323.
+  Dispositions: DISPOSITION-681..689 (lit_search_returns.md, 2026-08-13 run section)
+  MONITOR items: MONITOR-522..523 · REVISE items: REVISE-323..324
+--------------------------------------------------------------------------------

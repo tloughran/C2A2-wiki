@@ -16201,3 +16201,155 @@ files on 777's account; the ceiling is recorded instead. Separately, the four Cr
 (768, 770, 772, 776) reduce to fewer than four defects: 765, 772, 777 and REVISE-317's liveness gap are
 ONE defect — no independent liveness channel — carried as four register items with four severity grades
 (DEFECT-J). Remediation must count one.
+
+---
+
+## 2026-08-12 intake — Agents 14a / 14b
+
+**DEFECT-F REMEDIATED FOR THIS RUN.** Per the 08-12 lit cycle's finding that "14a/14b do not read
+`validated_premises.md` before queueing", this run grepped the premise register before queueing anything.
+Four of the nine candidate presumptions overlap an existing validated premise; each is marked below with
+the premise it overlaps and its search narrowed to the residual claim, and one item is withheld from search
+entirely because the premise already covers it. This closes DEFECT-F for tonight only — the charter in
+`wiki/agents/14a_assumption_extractor_agent.md` and `14b_presumption_detector_agent.md` still does not
+require the grep, and a charter amendment is a human action.
+
+[PRESUMPTION] PRESUMPTION-778: That a defect-population count is a measurement of the corpus rather than a property of the instrument — four runs, one day, one class, figures of 166, 52, 45, 102
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=High
+  Overlap check: PARTIAL — PREMISE-124 (self-measurement must cite an external baseline or be reported UNCALIBRATED) and PREMISE-140 (name a metric by its channel, not by what the channel proxies for) both bear on this. The residual, unqueried claim is the DISPERSION one: that agreement or disagreement among independent instrument-derived counts of one population is itself evidence about the instruments.
+  Search strategy: capture-recapture and inter-rater reliability for software defect populations; instrument-dependence and measurement-system analysis (Gauge R&R) applied to automated code/corpus inspection; variance between detection methods as an estimator of undetected defects
+
+[PRESUMPTION] PRESUMPTION-779: That a hold, once placed, stays correct — six queues 100% held for up to eleven consecutive runs with no re-audit and no expiry
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=High
+  Overlap check: NONE found. PREMISE-151 (disclosure normalises rather than resolves) is adjacent but concerns disclosure, not deferral state.
+  Search strategy: ageing and decay of deferred decisions; work-in-progress ageing and expiry policies in triage and queueing systems; the validity half-life of a suspended judgement; stale-state handling in bug triage and clinical watchful waiting
+
+[PRESUMPTION] PRESUMPTION-780: That a freshness gate measures the artefact its consumers read — a snapshot at 0.00h and a published file four days old, same morning, same name
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=High
+  Overlap check: PARTIAL — PREMISE-140 (metric named by its channel). Residual claim: that the object a check asserts on and the object a consumer loads diverge silently and by default in pipeline architectures.
+  Search strategy: end-to-end versus component monitoring; data-pipeline freshness SLOs and staleness detection; the instrumented-versus-consumed artefact gap in observability; synthetic monitoring at the consumption boundary
+
+[PRESUMPTION] PRESUMPTION-781: That entering something in a register constrains what is done next — PREMISE-107 and PREMISE-110 each prescribed the exact remedy the pipeline reinvented weeks later, and the minting agents do not read the register
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=Critical
+  Overlap check: PARTIAL — PREMISE-151 (repeated disclosure normalises rather than resolves) is the disclosure-side analogue. Residual and sharper claim: that a written record with no specified reader has no downstream force, and that this is the default rather than a failure mode.
+  Search strategy: the write-only repository problem in knowledge management; organisational memory that is not consulted; read-write ratios and documentation decay; checklists and standards as controls versus as artefacts; why lessons-learned databases fail
+
+[PRESUMPTION] PRESUMPTION-782: That an upstream key is a record rather than a claim — a wrong `summa_ref` made thirteen files' frontmatter, commentary and every static check mutually consistent and jointly wrong
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=High
+  Overlap check: NONE found. PREMISE-110 concerns detector inversion, not shared-source dependence among nominally independent checks.
+  Search strategy: common-cause failure in redundant verification; independence assumptions in multi-check quality systems; single-source-of-truth propagation faults in derived data; why agreement among derived artefacts is not corroboration
+
+[PRESUMPTION] PRESUMPTION-783: That restraint is free — seven same-day refusals each reported as a virtue, with no field in which the cost of the deferred work is recorded
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=Medium
+  Overlap check: NONE — the string "restraint" does not occur in `validated_premises.md`; this is the register's first normative item about the cost of declining.
+  Search strategy: cost of delay and queueing cost in knowledge work; omission bias and asymmetric accountability for errors of commission versus omission; safety cultures that reward stopping and their failure modes; the economics of deferred maintenance
+
+[PRESUMPTION] PRESUMPTION-784: That a change requiring no new tool, prompt or schema is not an architectural commitment — three T1 tabs, no DECISION, thirty-eighth day
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=Medium
+  Overlap check: NONE found.
+  Search strategy: what triggers an architecture decision record; reversible ("two-way door") versus irreversible decisions and their documentation thresholds; architectural knowledge vaporisation; the mismatch between implementation cost and commitment cost
+
+[PRESUMPTION] PRESUMPTION-785: REFLEXIVE — that the absence of an identifiable attended session means no attended work occurred beyond what the vault records
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=Medium
+  Overlap check: PARTIAL — PREMISE-140 covers the naming defect exactly ("a metric derived from one observation channel must be named by its channel"). Residual claim: that a file-system trace is a systematically biased sample of intellectual work, biased against exactly the activity the project most wants to record.
+  Search strategy: observability bias in telemetry-derived activity records; the file-system artefact as a proxy for knowledge work; survivorship and coverage in digital provenance; invisible work in computer-supported cooperative work
+
+[PRESUMPTION] PRESUMPTION-786: That an instrument's errors are one-directional — 08-11 found four checks failing open, 08-12 found four extractors failing closed, and each day's remedy is directional
+  Status: [QUEUED] [SEARCHED-15a: 2026-08-13] [SEARCHED-15b: 2026-08-13] [DISPOSITIONED-15c: 2026-08-13]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated); Risk=High
+  Overlap check: PARTIAL — PREMISE-110 (detectors invert; failure presents as a nominal reading) covers the fail-open direction; PREMISE-150 (a missed-defect class bounds detector coverage) covers the inference from misses. Residual claim: that knowing an instrument is unreliable does not tell you the sign of its unreliability, and that a favourable metric movement is therefore uninterpretable without re-deriving the instrument.
+  Search strategy: two-sided calibration and directional bias in automated measurement; false-positive versus false-negative trade-offs in static analysis and their joint estimation; base rates in defect detection; ROC-based rather than threshold-based instrument evaluation
+
+[ASSUMPTION] ASSUMPTION-1012: That the criterion-(a) defect population in the Summa corpus is ~45 days (the hand-assembled band list) rather than 102 (measured live)
+  Status: [QUEUED-EMPIRICAL]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Routing note: settled by re-running the live measurement, not by literature. Queued empirical so the 10th sweep's figure is reconciled against the band list before the next repair cycle rather than after it.
+
+[ASSUMPTION] ASSUMPTION-1024: That the metabolism freshness gate asserts on the published `metabolism_data.json` rather than on the run's temporary snapshot
+  Status: [QUEUED-EMPIRICAL]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Routing note: one file read on the Mac settles it; three runs disagreed about one artefact's age this morning and none checked. Cheapest open item in tonight's intake.
+
+### Routing coverage, declared (2026-08-12)
+
+**Queued above: 11 items** — 9 presumptions for literature, 2 assumptions marked `[QUEUED-EMPIRICAL]`
+because a measurement and not a search settles them.
+
+**WITHHELD FROM SEARCH, with the reason (DEFECT-F remediation, applied).** ASSUMPTION-1001 (remedy-cost
+blindness) is **not queued**: PREMISE-107, validated 2026-07-20, already states its content — "a remedy
+attached to an observation without being validated against the actual mechanism costs effort AND leaves the
+fault in place." Searching it again would produce the sixth instance of the defect the item describes. What
+it needs is not evidence but a decision, and it is filed as **OPEN-140** (the mandatory remedy-cost field).
+Likewise ASSUMPTION-1002 (a validated premise binds nothing) is the general form of the same observation
+and is carried by PRESUMPTION-781, which is queued in its place.
+
+**[IN-HOUSE], with the reason for each class:**
+
+- **Register, coverage and budget records — not literature questions.** ASSUMPTION-1031 (register
+  measurement, including the declared git-measurement gap), 1032 (decision and open-question state), 1033
+  (budget), 1034 (coverage and evidence declaration), 1035 (assigned work not performed).
+- **Operational measurements awaiting a repair or a human decision, not evidence.** ASSUMPTION-998, 999
+  (T1 tabs), 1009, 1010, 1011 (nightly verifier), 1014 (`summa_ref` two-half repair — a decision, filed at
+  ASSUMPTION-1032), 1017 (stale memory rules), 1019 (two-id-system), 1022 (review gate), 1023 (sync
+  channels), 1025 (scheduler), 1026 (telemetry), 1027 (wiki daily run), 1028 (Summa retirement), 1029
+  (Agent 16), 1030 (Wednesday agents).
+- **Already dispositioned this cycle; re-queueing would be the DEFECT-F pattern.** ASSUMPTION-1000, 1003,
+  1004, 1005, 1006, 1007, 1008 — all are products of the 08-12 lit cycle itself (DISPOSITION-667..680).
+- **Instances of items already queued.** ASSUMPTION-1013, 1015, 1016, 1018, 1020, 1021 — carried by
+  PRESUMPTION-778, 779, 782, 786 and by the standing lock/lease and `held`-outcome candidates.
+
+**BACKLOG, unchanged and declared.** **144 items remain [QUEUED] and unsearched** from the 15d re-trigger
+lane: 93 from the 2026-07-05 cohort, 19 from 07-12, 21 from 07-19, 3 from 07-26, 8 from 08-02. The 08-12
+run recommended (DEFECT-I) that the next cycle be scoped to the 2026-07-05 cohort exclusively. Tonight's 11
+items are added on top of that backlog, which now stands at **155 unsearched**. The oldest is thirty-eight
+days old.
+
+**COUNTER MEASUREMENT, this run's own patterns declared because they differ from the 08-11 run's.**
+Pre-append: `Status: [QUEUED` **1,654**; loose `QUEUED` **2,124** [measured]. The 08-11 run reported 1,541
+and 1,866 on patterns it did not state, so the two series are not comparable and this run does not compute
+a delta from them. From tonight forward these two patterns are the declared instrument.
+
+**OUTSTANDING, per Rule 12.** REVISE-315's amendment was assigned to 14a by the 08-12 cycle and **was not
+performed by this run** — see ASSUMPTION-1035 for the reason. It remains assigned and undone.
+
+## 2026-08-13 — 15a / 15b / 15c run note (written into the queue file for the next reader)
+
+All nine literature-testable items of the 2026-08-12 intake — PRESUMPTION-778..786 — were searched by both
+15a and 15b (concurrently, in isolation) and dispositioned by 15c. Tags applied above. 18 result files in
+`lit_search_results/for|against/` + `SYSTEMIC-RISK-FLAG_2026-08-13.md`. Returns, dispositions and this run's
+deviations: `lit_search_returns.md`, section "2026-08-13".
+
+**Dispositions: INCORPORATE 5, MONITOR 2, REVISE 2.**
+INCORPORATE → PREMISE-154 (← 779), PREMISE-155 (← 780), PREMISE-156 (← 782), PREMISE-157 (← 784), PREMISE-158 (← 786). MONITOR → MONITOR-522 (778), MONITOR-523 (785).
+REVISE → REVISE-323 (781, High, escalation of REVISE-320), REVISE-324 (783, Medium).
+DISPOSITION-681..689. Nothing left searched-but-undispositioned.
+
+**NOT converted:** ASSUMPTION-1012 and ASSUMPTION-1024 remain `[QUEUED-EMPIRICAL]`. A measurement on the Mac
+settles each; neither was taken. ASSUMPTION-1024 is the live instance of the very defect PREMISE-155 now
+covers.
+
+**BACKLOG, unchanged and declared.** 155 items remain [QUEUED] and unsearched in the 15d re-trigger lane:
+93 from 2026-07-05, 19 from 07-12, 21 from 07-19, 3 from 07-26, 8 from 08-02, 2 from 08-12 (the empirical
+pair). Oldest is thirty-nine days. Third consecutive run in which this lane was not served.
+
+**DEFECT-I NOT FOLLOWED, per Rule 7.** The 08-12 run recommended scoping this cycle to the 2026-07-05 cohort
+exclusively. This run served the new-intake lane instead, as every preceding run has. The recommendation
+bound nothing — an instance of PRESUMPTION-781, occurring on the recommendation meant to fix the starvation.
+
+**THE FINDING FOR 14b.** DEFECT-F was declared remediated for the 08-12 intake: 14b grepped
+`validated_premises.md` before queueing. The grep caught five of nine overlaps and missed four —
+PRESUMPTION-783 (register says "abstention", 14b searched "restraint" — PREMISE-133 holds it verbatim),
+PRESUMPTION-779 (PREMISE-133/049/126/144 hold it; PREMISE-133's own text had already requested exactly the
+grounds 15a supplied), PRESUMPTION-782 (PREMISE-096/080/004/141 cover independence; the shared-INPUT residual
+survives and is sharper for it), and PRESUMPTION-778 — missed by 14b's grep AND by 15a's register check, and
+found only by 15c: PREMISE-101 (2026-07-19) already states counts are properties of a reading, not of the
+artefact. A string grep is the wrong instrument for a register written in general vocabulary. This is a
+defect of the remediation, not of 14b.

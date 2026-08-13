@@ -8854,3 +8854,129 @@ REVISE-322 — ASSUMPTION-968 — the +80%/-70% coordination figures, and the cl
   Urgency: HIGH — an active record is being argued from misquoted numbers, and the correction points the
   opposite way from the current recommendation.
   PROVENANCE: Origin 14a · Chain [14a->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+REVISE-323 — PRESUMPTION-781 — that entering something in a register constrains what is done next; PREMISE-107 and PREMISE-110 each prescribed the exact remedy the pipeline reinvented weeks later, and no minting agent's charter directs it to read the register
+  THIS FLAG DELIBERATELY MINTS NOTHING, AND THAT IS ITS CONTENT. 14b graded this Critical, the highest in
+  the batch, and it is the one item where writing a new premise would enact the very failure being
+  reported. The general form is ALREADY VALIDATED, twice: PREMISE-067's scope guard holds that a golden
+  path enforced only by CONVENTION is bypassable and that "if it remains runnable and is 'forbidden' only
+  by documentation, the guarantee is one habit-lapse (or one agent invocation) away"; PREMISE-144(5) holds
+  that a charter/premise conflict may be genuinely UNDETECTABLE for want of a common form, since charters
+  are prose and premises are register entries. PRESUMPTION-781 adds the reflexive application — the
+  register ITSELF is a documentation-only control and is bypassable by its own argument — and that is what
+  raises the grade. It is an ENFORCEMENT gap, not a knowledge gap, and the precedent for handling one is
+  PREMISE-141's: name the actor with the effector and file it, do not re-mint. Minting is additionally
+  barred by PREMISE-138(1) (in-channel repetition with no effector is not a remedy).
+  Evidence, and the two directions converge on the MECHANISM while disagreeing on the general claim:
+  15a SUPPORTED/Strong — Meyer & Rowan (1977), AJS 83(2), decoupling of formal structure from activity is
+  the PREDICTED EQUILIBRIUM rather than deviance [AJS record verified]; Walsh & Ungson (1991) locating the
+  binding constraint at RETRIEVAL not storage; the lessons-learned literature's twenty-five-year finding
+  that repositories fail at the retrieval end and that the field's own remedy is delivery INTO the decision
+  moment; Urbach et al. (2014), NEJM 370:1029-1038 — Ontario surgical checklists produced no significant
+  mortality or complication reduction, decoupling measured in a domain where ceremonial adoption was
+  implausible in advance [NEJM record verified].
+  15b PARTIALLY-CHALLENGED/Moderate, and the challenge is the useful half: Haynes et al. (2009), NEJM
+  360:491-499 — the same class of written artefact cut 30-day mortality from 1.5% to 0.8% across eight
+  hospitals on four continents, replicated nationally. Registers CAN constrain action. But the mechanism
+  narrows rather than dissolves the item: the checklist is bound to THREE NAMED TRIGGER POINTS, each with a
+  NAMED READER and a moment at which work stops until the record is read. It is consulted because the
+  workflow halts, not because it exists. The transactive-memory literature says the same structurally — what
+  makes distributed knowledge usable is a DIRECTORY plus a retrieval process, not a store. So 14b's residual
+  claim is largely SUPPORTED by the counterexample's mechanism even as its general form is refuted by the
+  counterexample's outcome. What is genuinely challenged is the word "default": the default is not
+  inertness, it is inertness-absent-a-trigger, and triggers are cheap.
+  What is at risk: every premise in the register, including the five minted on 2026-08-13. This system has
+  now validated 158 premises and has no mechanism that carries any of them into an agent's behaviour —
+  REVISE-320 (2026-08-12) already put this question to Tom in the same words ("what mechanism, if any, is
+  supposed to carry a validated premise into an agent's behaviour? There is currently no answer in the
+  architecture") and PREMISE-123 says so. THIS FLAG IS AN ESCALATION OF REVISE-320, NOT A SECOND FLAG, and
+  should be read with it. Also at risk in the other direction: PREMISE-157 (minted today) carries a BINDING
+  SEQUENCING CONDITION that it must not be implemented before this is resolved, because lowering any
+  recording threshold before a retrieval trigger exists adds to the population of unread registers.
+  Recommended action for Tom — the shape matters more than the size, and 15b's SYSTEMIC-RISK-FLAG of the
+  same date makes the shape non-negotiable:
+    (1) DO NOT issue a general "read the register first" instruction to minting agents. This is the single
+        most likely response and it is the documented failure: override rates for computerised alerts run
+        49-96%, acceptance falls ~30% per additional prompt, and what the system would acquire is a
+        DOCUMENTED RECORD OF A CHECK THAT DID NOT HAPPEN — strictly worse than the current honest silence,
+        and the fail-open pattern PREMISE-110 already names.
+    (2) DO bind consultation to a trigger. Pick the specific moment in the minting workflow at which a
+        premise could change the output, and require a lookup THERE, on a SCOPED SUBSET. That is the
+        checklist mechanism, and it is what made the checklist work where the Ontario rollout failed.
+    (3) Build the directory, not just the store: index premises by the DECISION they bear on, so retrieval
+        is targeted rather than a full-register read. This is the transactive-memory finding operationalised
+        and it is the only step that scales as the register grows.
+    (4) INSTRUMENT IT. Record which premises were retrieved at which trigger. This is recommendation (3) of
+        the systemic-risk flag, it is the highest-value single step in the whole batch, and nothing minted
+        today satisfies it — without it the system cannot tell a control that runs from one that is merely
+        written down, which is this item stated once more.
+  Cheapest decisive test, prospective and worth running before any of the above is built: bind two or three
+  premises to named trigger points, instrument retrieval, and compare the re-derivation rate for bound
+  versus unbound premises over the next ten runs. That distinguishes "registers are inert" from "UNBOUND
+  registers are inert" directly, and the second is far the more likely finding. Retrospective companion, one
+  session: for PREMISE-107 and PREMISE-110, identify the exact workflow point at which consulting them would
+  have prevented the re-derivation, and check whether either premise as written names that point. If not,
+  the defect is BINDING, not force.
+  Urgency: HIGH — and it is the batch's binding constraint. Every other disposition of 2026-08-13 assumes a
+  register that reaches the agents it governs; this flag says that assumption is unevidenced.
+  PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+REVISE-324 — PRESUMPTION-783 — that restraint is free; seven same-day refusals each reported as a virtue, with no field in which the cost of the deferred work could be recorded
+  ALSO NOT MINTED, AND FOR A SPECIFIC REASON: THE REGISTER ALREADY HOLDS THIS, VERBATIM, AND THE OVERLAP
+  CHECK MISSED IT ON A STRING MATCH. 14b recorded "Overlap check: NONE — the string 'restraint' does not
+  occur in validated_premises.md." PREMISE-133 (validated 2026-07-28) opens: "ABSTENTION IS A DECISION AND
+  REQUIRES A WRITTEN DISCHARGE RULE. DECLINING TO ADOPT IS AN ACTION INSIDE THE DECISION PROBLEM WITH ITS
+  OWN COST, NOT AN EXIT FROM IT." Verified at source by 15c this run. That is PRESUMPTION-783's corrective
+  converse almost word for word, and PREMISE-119 holds the queueing half. The register searched for its own
+  concept under the queue's vocabulary and missed it. This is the SECOND such miss in the batch (see also
+  PRESUMPTION-779) and a THIRD was found by 15c against PRESUMPTION-778 (PREMISE-101). Three overlap-check
+  failures in nine items, all of the same kind, is the reportable finding here.
+  What actually survives, and it is narrow, real, and is why this is a REVISE rather than a closure:
+  PREMISE-133 asserts that abstention carries a cost and requires it to be discharged; C2A2's SCHEMA CANNOT
+  REPRESENT THAT COST, so the premise is UNENFORCEABLE BY CONSTRUCTION in the refusal path. That is a
+  representation defect of exactly the shape of PREMISE-141(1) (a two-valued model that cannot express an
+  observed third state) and PREMISE-144(5) (charter/premise conflicts undetectable for want of a common
+  form). A validated premise that no schema can express is not a premise the system holds; it is one the
+  system has written down.
+  Evidence: 15a SUPPORTED/Strong — Reinertsen (2009) on invisible development queues and unquantified cost
+  of delay [the 85% and 50:1 figures are from secondary summaries, not the book]; the omission-bias
+  literature, replicated and meta-analysed (Spranca, Minsk & Baron 1991; Ritov & Baron 1990; PubMed
+  34496694 [authorship unverified]) — harms from inaction are judged less culpable than identical harms from
+  action, which predicts exactly seven refusals each narrated as a virtue and none as an exposure;
+  deferred-maintenance economics as the end state [advocacy-source multipliers, order-of-magnitude only].
+  15b PARTIALLY-CHALLENGED/Moderate, AND ITS CHALLENGE IS ACCEPTED AGAINST THE REMEDY: Dixit & Pindyck
+  (1994) — under uncertainty and irreversibility, waiting has POSITIVE option value and committing destroys
+  it, so a ledger recording only forgone output is biased TOWARD acting, the opposite of the intended
+  correction; U.S. NRC (2016) "A Chilling Effect is Not Cool" and the stop-work-authority literature
+  (Safety Science S0925753517308871; systematic review S0925753522003848) — pricing the act of stopping is
+  the recognised mechanism by which stop-work authority becomes nominal. 15a INDEPENDENTLY FOUND THE SAME
+  COUNTER-DIRECTION while searching for support, and reported it: PREMISE-133 itself holds that refusing to
+  certify is conformant behaviour, not a fault. Both directions therefore agree that seven refusals is NOT
+  evidence of too many refusals.
+  What is at risk: the interpretation of every refusal this system reports. As instrumented, the ledger can
+  only ever show restraint as a monotonically increasing credit no matter what the underlying position is,
+  which makes the seven-refusal figure uninterpretable as evidence of good judgement — in either direction.
+  Also at risk if the obvious remedy is adopted: the behaviour itself. A one-sided cost-of-refusal field is
+  functionally a production-pressure instrument, and its predicted failures are concrete — refusals reframed
+  as scope reductions to dodge the ledger entry, work performed at low quality rather than declined, and
+  erosion of the system's willingness to say a thing is not ready, which is one of the few behaviours that
+  currently distinguishes it.
+  Recommended action for Tom — both directions converged on this and neither proposed a price:
+    (1) ADD AN INVENTORY, NOT A PRICE. Every refusal records WHAT was declined, ON WHAT CRITERION, and WHAT
+        OBSERVABLE WOULD MAKE IT READY. This makes the deferred item retrievable and satisfies PREMISE-133's
+        (a)/(b) discharge requirement in the refusal path without pricing the act of declining. It is also
+        the same field PREMISE-154 (minted today) requires at hold placement — one schema change serves
+        both, and they should be built together.
+    (2) COUNT REPEAT REFUSALS of the same item. A thing declined three times is a signal and it needs no
+        cost model at all.
+    (3) DO NOT ADD A ONE-SIDED COST FIELD. If any cost accounting is ever wanted, it must be TWO-SIDED —
+        the estimated cost of having acted prematurely recorded alongside the forgone value — and refusal
+        attribution must stay at the system level rather than the agent level, which is the standard
+        safety-culture protection against chilling effects.
+  Test if a cost field is ever trialled, and it is the diagnostic: measure the refusal rate before and after
+  introduction. A fall in refusals following the field is the chilling effect, observed directly.
+  Urgency: MEDIUM — 14b graded the item Medium and both directions agree the observed behaviour is not
+  itself a fault. What raises it above a MONITOR is that a validated premise is currently unenforceable, and
+  that the natural remedy is actively harmful, so the flag exists as much to PREVENT an action as to
+  request one.
+  PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED

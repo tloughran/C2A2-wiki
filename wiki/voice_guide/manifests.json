@@ -638,7 +638,7 @@
           "sel": "h2"
         },
         "noun": "section",
-        "_note": "Three numbered sections (Orient / Decode the names / See it work). The who's-who entries inside section 2 are a candidate second roster later."
+        "_note": "Three numbered sections, headed 'What's this?' / 'Who's who?' / 'So what?' (the old Orient / Decode the names / See it work names are gone -- labels come off the live h2, so only this note was stale). Section 1 was rebuilt 2026-08-05 into TWO doors, a matched pair: what_is_saying.html (the Saying lens) and what_is_c2a2.html (the Doing lens), both now declared tabs in their own right. The who's-who entries inside section 2 are a candidate second roster later."
       },
       "controls_excluded": [
         {
@@ -713,7 +713,7 @@
           "sel": "h2"
         },
         "noun": "section",
-        "_note": "16 section.angle blocks: fifteen NUMBERED framings plus a 'Tech -- Under the Hood' appendix that shares the class. Walking all sixteen rather than filtering to :has(.idx) so the appendix stays reachable; the noun is `section`, not `framing`, so counting sixteen never contradicts the link's promise of fifteen framings. The h2 label carries its own index ('1.'), so the spoken name is already numbered."
+        "_note": "Three kinds of block, all carrying the base class `angle`: the NUMBERED framings, an OPEN one (`section.angle.open`, dashed, inviting a new entry), and a 'Tech -- Under the Hood' appendix. Deliberately NOT stated as a total -- Tom adds cards, and a count written here goes stale silently (it was authored as 16, was 17 by 2026-08-05). Selecting on the base class rather than filtering to :has(.idx) keeps both the open card and the appendix reachable; the noun is `section`, not `framing`, so the walkable count never has to agree with the door's promise of fifteen framings. That is the whole reason `section` was chosen. Each numbered h2 carries its own index, so those spoken names arrive already numbered; the open card was rephrased 2026-08-12 to a number-free name so `pick`/`next` announce something sayable rather than an index and an ellipsis."
       },
       "controls_excluded": [
         {
@@ -749,6 +749,80 @@
           "dim": "tab",
           "match": "a[href], a[data-target], a[onclick]",
           "note": "The page's own doorways, reached by name with `go <link text>` -- resolved after tabs and sub-views so a link can never shadow either. These were EXCLUDED with the reason 'voice reaches those by name via go', which was false for every link that is not a tab: `See all 15 framings` is a page, not a tab, so go could never reach it and Tom had to use the mouse (2026-07-26). Link-following is shell-side and generic, so this declaration is bookkeeping for the sweep, not a per-tab implementation."
+        }
+      ]
+    },
+    "what_is_saying": {
+      "aka": [
+        "what is saying",
+        "whats it saying",
+        "saying",
+        "eleven media",
+        "eleven messages",
+        "lens one",
+        "the medium is the message",
+        "what_is_saying"
+      ],
+      "tier": "T1",
+      "_reached_note": "Not a tab and not in destinations.json -- it is the LEFT door of Start Here's \"What's this?\" section, added 2026-08-05, reached by `go what's it saying?`. Declared here for exactly the reason what_is_c2a2 is declared: without a manifest entry the shell lands on a page it cannot name, so the guide insists it is still on Start Here, disbelieves the user who says otherwise, and `read` reads the PREVIOUS document's cursor (Tom, 2026-07-26). The two doors are a matched pair and the newer one is the left-hand, more prominent of the two -- undeclared, it reproduced the bug the other one's entry exists to fix.",
+      "caps": [
+        "go",
+        "back",
+        "what",
+        "where",
+        "help",
+        "pick",
+        "next",
+        "previous",
+        "read",
+        "summarize",
+        "stop"
+      ],
+      "_caps_note": "A content tab: no graph, so no filters/cut/camera. Same shape as what_is_c2a2 -- it can be walked and read, which is the whole point of the item model.",
+      "knobs": [],
+      "items": {
+        "kind": "dom",
+        "select": "section.pair",
+        "label": {
+          "sel": "h2"
+        },
+        "noun": "section",
+        "_note": "NUMBERED medium:message pairs plus an open one carrying `section.pair.open`, which shares the base class so `select` reaches it without a second rule -- the same arrangement as what_is_c2a2's `.angle.open`. No total is stated on purpose: the page is explicitly open-ended, so any count here would go stale the moment Tom adds a pair. Each numbered h2 carries its own index, so those spoken names arrive already numbered; the open card was rephrased 2026-08-12 to a number-free name so `pick`/`next` announce something sayable rather than an index and an ellipsis."
+      },
+      "controls_excluded": [],
+      "_controls_note": "Nothing to exclude: no target=_blank links, no markdown overlay, no buttons. The page is prose plus two navstrips. This empty list is a positive claim that the sweep found no unbound control, not an unfilled field.",
+      "gestures": [
+        {
+          "id": "scroll",
+          "label": "Scroll the page",
+          "status": "covered",
+          "by": [
+            "pick",
+            "next",
+            "previous"
+          ],
+          "note": "Walking the sections scrolls them into view, which is the voice equivalent of scrolling."
+        },
+        {
+          "id": "link_click",
+          "label": "Click a navstrip link",
+          "status": "covered",
+          "by": [
+            "go"
+          ]
+        },
+        {
+          "id": "hover",
+          "label": "Hover",
+          "status": "excluded",
+          "reason": "transient; no state"
+        }
+      ],
+      "dim_coverage": [
+        {
+          "dim": "tab",
+          "match": "a[href]",
+          "note": "Two navstrips, top and bottom, carrying the SAME two destinations: back to Start Here, and across to what_is_c2a2 (the Doing lens). Each destination therefore matches twice in document order; `go <link text>` takes the first, which is the top strip, and both go to the same place -- so the duplication is harmless, but it is declared rather than left for the sweep to trip over. Link-following is shell-side and generic, so this is bookkeeping, not a per-tab implementation."
         }
       ]
     },

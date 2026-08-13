@@ -1,25 +1,25 @@
 {
  "_meta": {
   "generated_from": "extract_agent_node_refs.py",
-  "db_path": "/sessions/charming-epic-pascal/mnt/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-  "vault": "/sessions/charming-epic-pascal/mnt/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 4281,
+  "db_path": "/sessions/focused-serene-planck/mnt/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
+  "vault": "/sessions/focused-serene-planck/mnt/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
+  "canonical_nodes": 4330,
   "roster_size": 33,
   "roster_captured": 26,
   "human_node": true,
-  "human_sessions": 758,
+  "human_sessions": 760,
   "unattributed_continuations": 115,
-  "sessions_mapped": 2832,
-  "events_scanned": 159640,
+  "sessions_mapped": 2837,
+  "events_scanned": 159814,
   "session_resolution": {
    "no_label": 739,
-   "unmatched": 134,
+   "unmatched": 136,
    "excluded": 43,
-   "exact": 1946,
+   "exact": 1949,
    "prefix": 128
   },
   "layers": {
-   "coref_substrate": 3662,
+   "coref_substrate": 3664,
    "coref_projected": 275,
    "flow": 52
   },
@@ -33,8 +33,8 @@
    "group": "agents",
    "kind": "human",
    "category": "human",
-   "sessions": 756,
-   "events": 65864,
+   "sessions": 758,
+   "events": 65935,
    "node_refs": 964
   },
   {
@@ -55,9 +55,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 422,
-   "events": 22405,
-   "node_refs": 425
+   "sessions": 423,
+   "events": 22484,
+   "node_refs": 427
   },
   {
    "id": "agents/c2a2-lit-search-pipeline",
@@ -110,8 +110,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 72,
-   "events": 3872,
+   "sessions": 73,
+   "events": 3881,
    "node_refs": 63
   },
   {
@@ -165,8 +165,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "infrastructure",
-   "sessions": 86,
-   "events": 1061,
+   "sessions": 87,
+   "events": 1076,
    "node_refs": 4
   },
   {
@@ -543,7 +543,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 341
+   "weight": 349
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -3888,7 +3888,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 768
+   "weight": 774
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -12558,7 +12558,7 @@
   {
    "source": "agents/morning-system-health",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 168
+   "weight": 173
   },
   {
    "source": "agents/morning-system-health",
@@ -12568,7 +12568,7 @@
   {
    "source": "agents/morning-system-health",
    "target": "master/cross_program_index.md",
-   "weight": 2
+   "weight": 3
   },
   {
    "source": "agents/morning-system-health",
@@ -12913,22 +12913,22 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 140
+   "weight": 144
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/cross_program_index.md",
-   "weight": 153
+   "weight": 157
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/incoming_dispatches.md",
-   "weight": 70
+   "weight": 72
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/paradigm_flags.md",
-   "weight": 71
+   "weight": 73
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -12988,17 +12988,17 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 252
+   "weight": 258
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/wiki.md",
-   "weight": 148
+   "weight": 152
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "vault/refs/index_summary.md",
-   "weight": 70
+   "weight": 72
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -13648,7 +13648,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/cross_program_index.md",
-   "weight": 400
+   "weight": 410
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -13748,7 +13748,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 36
+   "weight": 37
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -13773,12 +13773,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1571
+   "weight": 1578
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/wiki.md",
-   "weight": 318
+   "weight": 325
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -13903,7 +13903,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-024 - The Creator and the Creation - Contemporary.md",
-   "weight": 22
+   "weight": 24
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -13913,7 +13913,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-026 - The Angels - Contemporary.md",
-   "weight": 18
+   "weight": 20
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -14963,17 +14963,17 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-236 - Efficacy of the Passion - Contemporary.md",
-   "weight": 28
+   "weight": 30
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-237 - Passion and Death - Contemporary.md",
-   "weight": 34
+   "weight": 36
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-238 - Burial and Descent - Contemporary.md",
-   "weight": 37
+   "weight": 39
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -15549,6 +15549,16 @@
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-220 - Communication of Idioms.md",
    "weight": 1
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-236 - Efficacy of the Passion.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-237 - Passion and Death.md",
+   "weight": 2
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20010,7 +20020,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "agents/summa-qc-sweep",
-   "weight": 401
+   "weight": 403
   }
  ],
  "flow": [
@@ -20082,7 +20092,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 153
+   "weight": 155
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -20237,7 +20247,7 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 74
+   "weight": 75
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -20272,7 +20282,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 201
+   "weight": 203
   }
  ]
 }

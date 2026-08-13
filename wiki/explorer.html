@@ -686,6 +686,19 @@
         if (row2edu) row2edu.style.display = 'none';
         if (chapIntro) setActiveChapter(chapIntro);
         break;
+      // The Saying lens -- the LEFT door of "What's this?", added 2026-08-05.
+      // It shipped with an href and no data-target, so it navigated the iframe
+      // without telling the shell: the second tab row stayed visible where every
+      // other door hides it, and the chapter was never re-lit. Named 'saying',
+      // not 'eleven', deliberately -- 'fifteen' hardcodes a count that is now
+      // seventeen section.angle blocks, and a target key should not go stale
+      // when Tom adds a card.
+      case 'saying':
+        setFrame('what_is_saying.html?v=' + Date.now());
+        if (row2) row2.style.display = 'none';
+        if (row2edu) row2edu.style.display = 'none';
+        if (chapIntro) setActiveChapter(chapIntro);
+        break;
       case 'review-cards':
         setFrame('review_log.html?v=' + Date.now());
         if (row2) row2.style.display = 'none';
