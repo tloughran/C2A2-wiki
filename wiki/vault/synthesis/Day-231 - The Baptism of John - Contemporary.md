@@ -3,8 +3,8 @@ day: 231
 title: The Baptism of John (Contemporary)
 pairs_with: "[[Day-231 - The Baptism of John]]"
 length_target_words: 2200
-length_actual_words: 1308
-length_ratio_to_target: 0.595
+length_actual_words: 1349
+length_ratio_to_target: 0.613
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
@@ -16,7 +16,7 @@ evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updati
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-08-08T12:24:17"
+last_qc_at: "2026-08-12T10:30:26"
 last_qc_outcome: "rewrote"
 ---
 
@@ -24,7 +24,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Aquinas asks two clusters of questions today. First (Q.37): why was the infant Christ circumcised, named, presented, and his mother purified — why did the one who was not subject to the law submit to its observances? Second (Q.38): what exactly was John's baptism — was it from God, did it confer grace, why did Christ receive it alongside others, why did it continue after Christ began baptizing, and why did its recipients need the sacrament afterward?
+Aquinas asks two clusters of questions today. First (Q.37): why was the infant Christ circumcised (a.1), why was his name suitably given (a.2), why was he becomingly presented in the temple (a.3), and why did his mother go to be purified (a.4) — why did the one who was not subject to the law submit to its observances? Second (Q.38): was it fitting that John should baptize at all (a.1), was his baptism from God (a.2), did it confer grace (a.3), why did Christ receive it alongside others rather than alone (a.4), why did it continue after Christ began baptizing (a.5), and why did its recipients need the sacrament afterward (a.6)?
 
 The contemporary version of the question, asked from mind-first monism: **how is readiness produced in agents who cannot yet see what they are being readied for?** Aquinas's answer to both clusters is, structurally, the same answer: by submission to a practice. Christ submits to the old law's observances; the crowds submit to John's water. Neither practice confers the thing itself — circumcision is remedy-by-anticipation, John's baptism "affected nothing that man could not accomplish" — and yet neither is empty. Both *prepare*.
 

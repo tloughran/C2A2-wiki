@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-168 - Simony and Piety - Contemporary]]"
 tags: [summa, day/168, pars/II-II, q/100-101]
-last_qc_at: "2026-08-05T00:25:44"
+last_qc_at: "2026-08-12T12:28:18"
 last_qc_outcome: "pass"
 ---
 

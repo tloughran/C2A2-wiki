@@ -3,8 +3,8 @@ day: 121
 title: Faith & Fear (Contemporary)
 pairs_with: "[[Day-121 - Faith and Fear]]"
 length_target_words: 1500
-length_actual_words: 1253
-length_ratio_to_target: 0.84
+length_actual_words: 1360
+length_ratio_to_target: 0.907
 length_tier: short
 length_note: "Very short episode (1140w transcript, Q.6-7 as one integrated cause-and-effects argument); the commentary already exceeds transcript length and is substantively complete — under-target rather than padded, per the constitution's short-and-substantive preference."
 karpathy_wiki_sources:
@@ -12,20 +12,20 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable coupling; PRS-04 love as attractor)"
   - "traditions/levin/prs_triplets.md (PRS-03 basins of morphological attraction)"
   - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; PRS-03 inaugurated eschatology)"
-  - "traditions/stump/wiki.md (faith as second-person knowing; PRS-05, PRS-11)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Grains of Wheat — narrative-mediated, non-propositional knowledge; the anchor for faith as second-person knowing)"
 evidence_strength_summary: "Underdetermination of assent by external evidence — formal/empirical (high, Friston). Filial fear as affective signature of high-value coupling — empirical (Fredrickson, medium-high). Purification as re-orientation toward a target basin — empirical in biology, speculative as applied to the heart (Levin). Identification of grace with the wider mind's precision contribution — speculative metaphysics. Faith-by-hearing within covenant — historical-theological (high, Wright)."
 mind_first_reframe: "The act of faith is the agent's adoption of a prior that finite evidence cannot compel; the 'interior cause' Aquinas names is read as the contribution of a wider-perceiving node that installs or up-weights a prior the limited agent could not generate alone (supra-evidential, not anti-evidential), and filial fear is the affective signature of that high-value coupling while purification is the re-ordering of the objective function toward the true target basin."
 central_theme_thread: "The cause-of-faith argument is the central claim in epistemic form: the limited agent cannot from its own perspective generate the assent that orients it toward the whole, so individuation-by-perspective-limitation makes guidance from a wider-perceiving node necessary, and filial fear is 'fear and trembling' (Phil 2:12) — the lived awareness of that limitation and dependence, now felt as dread of losing the One who completes it."
 tags: [synthesis, day/121, theme/cause-of-faith]
-last_qc_at: "2026-08-05T22:28:29"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T12:27:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 121 — Contemporary Parallel: What Causes Assent, and What Assent Does
 
 ## Frame
 
-Aquinas asks two questions that look separate and are really one. What *causes* the act of faith (Q.6), and what does that act *do* to the person who makes it (Q.7)? His answer to the first is that the decisive cause cannot be external: of those who see one miracle or hear one sermon, some believe and some do not, so the external inducement is never sufficient; there must be an interior cause, God moving the will to assent by grace. His answer to the second is that faith produces fear and begins the purification of the heart.
+Aquinas asks two questions that look separate and are really one. What *causes* the act of faith (Q.6), and what does that act *do* to the person who makes it (Q.7)? Q.6 a.1 asks whether faith is infused into man by God and answers that the decisive cause cannot be external: of those who see one miracle or hear one sermon, some believe and some do not, so the external inducement is never sufficient; there must be an interior cause, God moving the will to assent by grace. Q.6 a.2 asks whether *lifeless* faith — assent held without charity — is still a gift of God, and answers that it is: the assent itself is infused even where the formed, charity-animated act is absent. Q.7 then takes the effects: a.1 finds that faith produces fear, distinguishing servile from filial fear, and a.2 that faith purifies the heart.
 
 The contemporary version of the first question is the underdetermination of belief by evidence: why does the same stimulus fix one posterior in one agent and a different posterior in another? The contemporary version of the second is the question of what a deep cognitive commitment does to the rest of an agent's affective and volitional economy. Mind / conscious-realist monism lets us treat both as one phenomenon, because under it cognition, affect, and orientation are aspects of one model-based agent rather than separate faculties.
 
@@ -61,7 +61,7 @@ The cause-of-faith argument is the project's central claim in epistemic form. Th
 - *PRS-02 + PRS-04 in the Fredrickson-tradition wiki* — love/charity has a measurable coupling-signature and behaves as an attractor; filial fear is its affective register. (Empirical; medium-high.)
 - *PRS-03 in the Levin-tradition wiki* — basins of morphological attraction give the formal language for purification as a contrary motion toward a target state. (Empirical in biology; speculative as applied.)
 - *PRS-02 + PRS-03 in the Wright-tradition wiki* — faithful improvisation and inaugurated eschatology account for the historical progress of faith's "requisite detail." (Historical-theological; high.)
-- *Stump-tradition wiki, faith as second-person knowing (PRS-05, PRS-11)* — the interior cause and the agent's own act cooperatively constitute the assent; grace operates within the agent's own agency rather than overriding it. (Philosophical; high in field.)
+- *PRS-11 in the Stump-tradition wiki* (Grains of Wheat — narrative-mediated knowledge, philosophically rigorous and irreducible to propositions) — carries the whole load for faith as second-person, non-propositional knowing: the interior cause and the agent's own act cooperatively constitute the assent, and grace operates within the agent's own agency rather than overriding it. (Philosophical; high in field.) *PRS-05 in the same tradition is "suffering and divine permission" — union as the final cause of permitted suffering — and does not bear on faith-as-knowing; it is not cited here.*
 
 ## Where this leaves us
 

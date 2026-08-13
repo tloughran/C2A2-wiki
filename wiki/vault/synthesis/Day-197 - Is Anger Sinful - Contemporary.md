@@ -8,7 +8,8 @@ length_ratio_to_target: 1.08
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-10 reasoning/action as expected-free-energy minimization; precision-weighting of prediction errors)"
-  - "traditions/fredrickson/prs_triplets.md (PRS-02 emotions as functional couplings; broaden-and-build; PRS-06 resonance as inclusivity basis)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-02 love/emotion as objective biological coupling; PRS-06 resonance as inclusivity basis)"
+  - "traditions/fredrickson/wiki.md (broaden-and-build core claim — it has no PRS-id home in prs_triplets.md)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-09 attention as love / value disclosed in encounter)"
   - "master/cross_program_index.md (CROSS-057 trauma/metastability/dissociative-boundary clinical bridge)"
   - "traditions/wright/ (biblical justice, mishpat); traditions/rohr/ (non-dual, hatred of person vs of evil)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Anger-as-calibrated-signal with a non-zero optimum =
 mind_first_reframe: "Anger is a functional signal that flags injury to a valued order and mobilizes a corrective response; its virtue is calibration — fired at real injustice, sized to it, aimed at repair — so both excess (vengeance for the self) and defect (no response to real injustice) are failures. Cruelty is the corrective signal still tracking (disordered) justice but with the brake removed; savagery is harm pursued for its own reward, a different system entirely."
 central_theme_thread: "Rightly-tuned anger is one of the ways a limited perspective serves the whole: it defends the bound order against injury. The disorder is not the signal but its capture by the self — anger for one's own vanity rather than for the order that unites agents."
 tags: [synthesis, day/197, theme/calibrated-signal]
-last_qc_at: "2026-08-04T02:26:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T02:29:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 197 — Is Anger Sinful? (Contemporary Parallel)

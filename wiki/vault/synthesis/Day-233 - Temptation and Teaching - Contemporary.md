@@ -3,8 +3,8 @@ day: 233
 title: Temptation and Teaching (Contemporary)
 pairs_with: "[[Day-233 - Temptation and Teaching]]"
 length_target_words: 2200
-length_actual_words: 1361
-length_ratio_to_target: 0.619
+length_actual_words: 1401
+length_ratio_to_target: 0.637
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis; accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
@@ -17,7 +17,7 @@ evidence_strength_summary: "The third temptation as defection-from-the-whole ~ L
 mind_first_reframe: "Temptation is read as the adversarial probe inviting a perspective to defect from the whole it belongs to; teaching is read as its constructive inverse — the calibrated disclosure of the whole to perspectives that can only receive it in doses."
 central_theme_thread: "Both questions are the central claim under stress-test: the devil's third offer is the refusal of perspective-limitation (seize the whole now, on the self's terms), while parables, Jews-first ordering, and the living page are limitation honored — the whole transmitted at the rate limited perspectives can compute."
 tags: [synthesis, day/233, theme/defection-and-calibrated-disclosure]
-last_qc_at: "2026-08-08T12:24:35"
+last_qc_at: "2026-08-12T10:30:27"
 last_qc_outcome: "rewrote"
 ---
 
@@ -25,7 +25,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Two questions that look unrelated and are not. Q.41: why was the exemplar driven into the desert to be probed by an adversary — and why do the three temptations come in that order? Q.42: how did the exemplar teach — why the Jews first, why offense risked, why parables, why nothing written?
+Two questions that look unrelated and are not. Q.41: why was the exemplar tempted at all (a.1), why driven into the desert to be probed (a.2), why only after the fast (a.3) — and why do the three temptations come in that order (a.4)? Q.42: how did the exemplar teach — why the Jews first rather than the Gentiles (a.1), why offense risked rather than avoided (a.2), why parables rather than all things taught openly (a.3), why nothing committed to writing (a.4)?
 
 The contemporary frame: Q.41 asks how an agent withstands the invitation to *defect* from the whole; Q.42 asks how truth *propagates* through a network of limited perspectives without overwhelming them. Temptation and teaching are inverse operations on the same structure — one tries to detach a perspective from the unity, the other tries to draw perspectives into it without erasing them.
 

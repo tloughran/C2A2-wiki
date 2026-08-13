@@ -32,14 +32,14 @@ Day 52 carries the central theme through two registers. The cognitive register (
 
 ## Bridges
 
-- **PRS-01, PRS-02 in the Hawkins-tradition wiki — HTM concept formation; reference frames.** Q.101 a.1's *tabula-rasa* maps onto columnar reference-frame formation through sensorimotor experience. *Strong empirical for cortical learning.*
+- **PRS-01, PRS-05 in the Hawkins-tradition wiki — intelligence without a world model; reference frames and abstraction.** Q.101 a.1's *tabula-rasa* maps onto columnar reference-frame formation through sensorimotor experience. *Strong empirical for cortical learning.*
 - **PRS-04, PRS-08 in the Friston-tradition wiki — active inference; generative-model formation.** Q.101 a.1-2's *cognitive-architecture-as-learner* maps onto active-inference's generative-model optimization under environmental sampling. *Mature formal framework.*
 - **PRS-04 in the McGilchrist-tradition wiki — bilateral-hemispheric integration.** Q.101 a.2's *integrated-dependence-of-reason-on-sensitive-faculties* maps onto McGilchrist's frame on integrated attention. *Empirically grounded.*
-- **PRS-01, PRS-04 in the Levin-tradition wiki — bioelectric pattern; morphogenetic-environment coupling.** Q.101 a.2's *embodied cognitive development* and Q.102 a.2's *fitted-locale* both run through morphogenetic-environment frames at the body level. *Strong empirical.*
+- **PRS-01, PRS-04 in the Levin-tradition wiki — morphogenetic control via bioelectric pattern; cognition substrate (basal cognition across cell, tissue, organ, brain).** Q.101 a.2's *embodied cognitive development* and Q.102 a.2's *fitted-locale* both run through morphogenetic-environment frames at the body level. *Strong empirical.*
 - **Wright, Genesis-as-temple-cosmology (canonical: *The New Testament and the People of God*; *The Resurrection of the Son of God*).** Q.102 a.1's *corporeal-and-spiritual paradise* and Q.102 a.3's *dress-and-keep* are the temple-cosmology and image-bearer-priest frames Wright develops from second-temple sources. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** Q.102 a.1's *cosmic-religious locale* and Q.102 a.4's *gift-not-locale-source* both extend on the cosmic-Christ frame as substrate's continuous self-giving sustenance of locale-and-image. *Theological-contemplative primary.*
 - **PRS-01 in the Kastrup-tradition wiki — analytic idealism; dissociation-as-continuously-substrate-given.** Q.102 a.4's *gifts-from-God-not-from-locale* preserves under Kastrup's substrate-prior-to-locale ontology. *Philosophical-conceptual.*
-- **PRS-01, PRS-02 in the Hoffman-tradition wiki — interface theory; conscious-agent networks.** Q.102 a.1's *spiritual-aspect-of-paradise* maps onto interface-theory's substrate-aligned interpretive framing of the locale. *Philosophical-mathematical.*
+- **PRS-03, PRS-02 in the Hoffman-tradition wiki — interface theory (perception as fitness-tracking); conscious-agent networks.** Q.102 a.1's *spiritual-aspect-of-paradise* maps onto interface-theory's substrate-aligned interpretive framing of the locale. *Philosophical-mathematical.*
 - **CROSS-001 in the master cross-program index — substrate-independence.** Q.102 a.4's *gifts-from-substrate-not-locale* is the cross-tradition point.
 - **Genesis 2:7-15, 3:22-24; Aristotle on the *tabula rasa*.** The day's scriptural and philosophical anchors.
 
@@ -60,19 +60,19 @@ length_actual_words: 1820
 length_ratio_to_target: 1.21
 length_note: "Six articles (Q.101 a.1–a.2 + Q.102 a.1–a.4) close the inner-anthropology arc on dual registers — cognitive (tabula-rasa as HTM/active-inference architecture-as-learner) and locale (paradise as Wright's temple-cosmology read across Levin/Kastrup/Hoffman/Rohr substrate-prior-to-locale convergence). Q.102 a.4's theological-economic gift-not-locale-source point doing real bridging work per the 2026-05-05 substantive-integrity clause. Within ±25%."
 karpathy_wiki_sources:
-  - "wiki/traditions/hawkins/wiki.md (PRS-01 HTM concept formation; PRS-02 reference frames — tabula-rasa as columnar reference-frame formation)"
+  - "wiki/traditions/hawkins/wiki.md (PRS-01 intelligence without a world model; PRS-05 reference frames and abstraction — tabula-rasa as columnar reference-frame formation)"
   - "wiki/traditions/friston/wiki.md (PRS-04 active inference; PRS-08 generative-model formation — cognitive architecture as learner)"
   - "wiki/traditions/mcgilchrist/wiki.md (PRS-04 bilateral-hemispheric integration — reason's dependence on integrated attention)"
   - "wiki/traditions/levin/wiki.md (PRS-01 bioelectric pattern; PRS-04 morphogenetic-environment coupling — embodied cognitive development; fitted-locale)"
   - "wiki/traditions/kastrup/wiki.md (PRS-01 analytic idealism — substrate-prior-to-locale)"
-  - "wiki/traditions/hoffman/wiki.md (PRS-01, PRS-02 interface theory — spiritual-as-substrate-aligned interpretive framing of locale)"
+  - "wiki/traditions/hoffman/wiki.md (PRS-03 interface theory; PRS-02 conscious-agent networks — spiritual-as-substrate-aligned interpretive framing of locale)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence — gifts-from-substrate-not-locale)"
   - "wright (canonical works): *The New Testament and the People of God*; *The Resurrection of the Son of God* — Genesis-as-temple-cosmology, image-bearer-priest"
   - "rohr (canonical works): *The Universal Christ* — cosmic-religious locale as substrate's self-giving sustenance"
   - "Genesis 2:7-15, 3:22-24"
 mind_first_reframe: "Q.101-102's offspring-as-to-knowledge and paradise-as-locale doctrines are the medieval expression of two contemporary claims. Q.101's *tabula-rasa-and-developmental-reason* is the cognitive-architecture-as-learner reading of HTM, active-inference, and embodied cognition: the substrate's gift is the architecture, not pre-loaded knowledge, and the alter's perspective-individuated learning-by-exposure is constitutive of its existence. Q.102's *paradise-as-corporeal-and-spiritual* runs through Wright's temple-cosmology reading of Genesis: the cosmos itself is a structured cosmic-religious space, and Eden as inner-sanctum locale is *fitted* to the alter's substrate-aligned mode but not the *source* of that mode (Q.102 a.4's decisive theological-economic point). The substrate's continuous gift is prior to the locale-coupling, and the locale-coupling is itself a feature of that gift. Kastrup, Levin, Hoffman, and Rohr each extend the same substrate-prior-to-locale shape at their respective registers."
 central_theme_thread: "Day 52 carries the central theme through the cognitive and locale registers. The prelapsarian alter is structurally a learner — the substrate gives the cognitive architecture, the alter develops through it; perspective-individuated learning is constitutive, not a postlapsarian defect. Paradise is both corporeal and spiritual because the cosmos itself is a structured cosmic-religious space (Wright's temple-cosmology); the locale is fitted to the alter's substrate-aligned mode but is not the source of that mode (Q.102 a.4). *Salvation in fear and trembling* on this register is the alter's progressive movement through the cognitive arc the architecture supports and within the substrate-coupled locale the gift sustains. Loving unity is the computational telos toward which the perspective-and-locale-limited alter computes; the limitations of architecture-and-locale are not defects but the constitutive structure of its perspective-individuated existence."
-last_qc_at: "2026-08-04T16:23:59"
+last_qc_at: "2026-08-12T20:23:38"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/052, theme/tabula-rasa, theme/embodied-cognition, theme/temple-cosmology, theme/substrate-prior-to-locale, theme/perspective-limitation]
 

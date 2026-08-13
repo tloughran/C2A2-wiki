@@ -3,10 +3,10 @@ day: 166
 title: Testing God (Contemporary)
 pairs_with: "[[Day-166 - Testing God]]"
 length_target_words: 1500
-length_actual_words: 1259
+length_actual_words: 1403
 length_tier: short
-length_ratio_to_target: 0.84
-length_note: "Under tier target by ~16% (ratio 0.84, within ±25%). Q.96–97 are tightly focused on the agent–test–source structure; the contemporary frame articulates this without recapitulation, so the prose is held to load-bearing moves."
+length_ratio_to_target: 0.935
+length_note: "Under tier target (ratio 0.935, inside ±10%). Q.96–97 are tightly focused on the agent–test–source structure; the contemporary frame articulates this without recapitulation, so the prose is held to load-bearing moves. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.96 a.1–a.4, Q.97 a.1–a.4), which the commentary had been treating at question level only."
 mind_first_reframe: "Under mind-monism, the medieval prohibition on tempting God reads as a constraint on the testing apparatus itself: an embodied predictive agent under uncertainty should run cheap in-distribution tests that update its priors honestly; demanding miracle-cost confirmation is the agent's corruption of its own test in order to protect a prior it already knows is failing."
 central_theme_thread: "Salvation in fear and trembling is the patient running of honest in-distribution tests whose accumulating results genuinely update one's priors; the tempter-of-God anti-pattern short-circuits the slow cooperative computation of loving unity from within perspective-limitation."
 karpathy_wiki_sources:
@@ -19,15 +19,15 @@ karpathy_wiki_sources:
   - "Rohr canonical: 'The Universal Christ' on grasping vs. receiving"
 evidence_strength_summary: "Active-inference framing is mathematically formal; the prudential 'no-cheap-tests' rule for agents under uncertainty is empirical (decision theory, control theory); the theological framing of why an agent should refuse to commodify guidance is interpretive — speculative bridge work."
 tags: [synthesis, day/166, theme/epistemic-humility, theme/active-inference, q/96, q/97]
-last_qc_at: "2026-08-04T11:25:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T06:32:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 166 — Testing God (Contemporary)
 
 ## Frame
 
-Aquinas's two questions today probe the same nerve from opposite sides. Q.96 asks what kinds of *observances* — amulets, sacred characters, ritual gestures with claimed power — are licit, and his test is whether the practice is grounded in (a) divine institution, (b) the nature of the thing, or (c) only in a tacit pact with the occult. Q.97 then asks when *testing God* — demanding a sign, requiring a miracle, refusing ordinary means in expectation of rescue — counts as the vice of irreligion by deficiency. Both questions are about how a finite agent under genuine uncertainty should *consult* and *test* its world-model without corrupting either the consulting or the testing.
+Aquinas's two questions today probe the same nerve from opposite sides, and Habash walks all eight articles. Q.96 asks what kinds of *observances* are licit, sorting them by what the practice is actually grounded in: the magical arts as such (a.1), observances directed at altering bodies — healing and the like (a.2), observances directed at fortune-telling (a.3), and the wearing of sacred words at the neck (a.4). His test across all four is whether the practice is grounded in (i) divine institution, (ii) the nature of the thing itself, or (iii) only in a tacit pact with the occult — the last two articles turning on the fact that a useless means, expected to work anyway, implies an appeal to a helper who is not God. Q.97 then asks when *testing God* counts as the vice of irreligion by deficiency: what temptation of God consists in — deeds whose expected result can come from God alone (a.1), whether it is a sin (a.2), whether it is opposed to the virtue of religion (a.3), and whether it is graver than superstition (a.4). Both questions are about how a finite agent under genuine uncertainty should *consult* and *test* its world-model without corrupting either the consulting or the testing.
 
 In contemporary terms, the question is: how should an embodied predictive agent, whose only access to reality is mediated by an interface, calibrate its tests of that interface? When does a test reflect honest model-updating, and when does it reveal a refusal to update? The mind-monist convergence — Levin's substrate-independent cognition, Friston's active inference, Hoffman's interface theory — supplies a precise contemporary vocabulary for what Aquinas is doing with the medieval categories of *observance* and *temptation of God*.
 
@@ -59,8 +59,8 @@ The perspective-limited agent who would be wholly delivered from limitation in a
 
 ## Bridges
 
-- **Friston PRS-04, PRS-07** (active inference; FEP substrate-independence) — Q.97's prohibition on tempting God maps onto the principle that an agent in homeostasis runs cheap, in-distribution tests, not extortionate out-of-distribution ones. *Empirical / mathematically formal.*
-- **Levin PRS-04, PRS-08** (substrate-independent cognition; cells as cognitive agents) — Q.96's distinction between licit observances grounded in the nature of the thing and illicit observances grounded in occult pact maps onto the difference between cells signaling within the morphogenetic field and cancers defecting from it. *Empirical.*
+- **Friston PRS-04, PRS-07** (active inference; FEP substrate-independence) — Q.97 a.1–a.2's prohibition on tempting God — deeds whose expected result can come from God alone, demanded as a sin against religion — maps onto the principle that an agent in homeostasis runs cheap, in-distribution tests, not extortionate out-of-distribution ones. *Empirical / mathematically formal.*
+- **Levin PRS-04, PRS-08** (substrate-independent cognition; cells as cognitive agents) — Q.96 a.2–a.3's distinction between licit observances grounded in the nature of the thing and illicit ones grounded in occult pact — the crystal ball is unlawful because a useless means expected to work anyway implies an appeal elsewhere — maps onto the difference between cells signaling within the morphogenetic field and cancers defecting from it. *Empirical.*
 - **McGilchrist PRS-05** (attention as ontological act) — the *mode* of testing (grasping vs. receiving) constitutes the kind of world the agent encounters. The medieval prohibition is a prohibition on a corrupted mode of attending. *Empirical (hemispheric neuroscience) + interpretive.*
 - **Stump-wiki PRS-06 with Loughran-wiki PRS-08** (tradition-crossing inquiry; MacIntyre criterion) — licit observances are those validated by a living tradition's accumulated practice; the test for licit-vs-illicit is itself a tradition-internal achievement. *Philosophical / methodological.*
 - **Wright (canonical, Matt./Luke temptation; Pauline pistis)** — refusal to extort confirmation is the shape of trust in the covenant frame. *Theological / scriptural.*

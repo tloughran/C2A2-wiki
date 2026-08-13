@@ -3,8 +3,8 @@ day: 234
 title: Christ's Miracles (Contemporary)
 pairs_with: "[[Day-234 - Christ's Miracles]]"
 length_target_words: 1500
-length_actual_words: 1168
-length_ratio_to_target: 0.779
+length_actual_words: 1209
+length_ratio_to_target: 0.806
 length_note: "Length-light vs the 1500 short-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding) on the shortest transcript of the cohort (1597 words); accepted under the flexible length policy — complete-not-truncated, per Day-188/194 precedent."
 length_tier: short
 karpathy_wiki_sources:
@@ -16,7 +16,7 @@ evidence_strength_summary: "Miracle-as-deeper-layer-override is a CONCEPTUAL rem
 mind_first_reframe: "If 'nature' is the default rendering of a species-specific interface rather than the bedrock of reality, a miracle is not a violation of law but an address to a deeper control layer — the whole acting in the rendered world at a level the interface normally hides."
 central_theme_thread: "Miracles on every kind of creature say that no scale of the rendered world is outside the whole's address; healing the visible body to certify invisible forgiveness is the same accommodation-to-limited-perception that runs from Day 230's manifestation through Day 233's parables."
 tags: [synthesis, day/234, theme/miracle-as-deeper-layer-address]
-last_qc_at: "2026-08-08T12:24:36"
+last_qc_at: "2026-08-12T10:30:28"
 last_qc_outcome: "rewrote"
 ---
 
@@ -24,7 +24,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Aquinas asks what Christ's miracles were for, by what power they were worked, and why they ranged over every kind of creature — demons, the sun, bodies, water, bread, a fig tree. His epistemology is candid: things of faith "surpass human reason" and so "need to be proved by the argument of divine power," as a king's sealed letter warrants its contents. The miracle is an authentication device.
+Aquinas asks whether Christ should have worked miracles at all (Q.43 a.1), by what power they were worked (a.2), when they began — the water turned to wine at Cana (a.3) — and whether they were sufficient proof of his godhead (a.4); then why they ranged over every kind of creature (Q.44): spiritual substances (a.1), the heavenly bodies (a.2), men (a.3), and irrational creatures (a.4) — demons, the sun, bodies, water, bread, a fig tree. His epistemology is candid: things of faith "surpass human reason" and so "need to be proved by the argument of divine power," as a king's sealed letter warrants its contents. The miracle is an authentication device.
 
 The contemporary question splits in two. First: what *is* a miracle, if the "nature" it exceeds is not metaphysical bedrock? Second: can authentication-by-anomaly still warrant anything to a perspective that has learned how easily anomalies are misread?
 

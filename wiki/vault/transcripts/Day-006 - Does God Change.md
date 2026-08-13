@@ -6,7 +6,7 @@ title: Does God Change?
 summa_ref: Prima Pars, Q.9-10
 duration_seconds: 978
 word_count: 2425
-raw_asr_word_count: 2425
+raw_asr_word_count: 2416
 length_tier: medium
 segment_count: 353
 caption_kind: asr
@@ -15,8 +15,8 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-006 - Does God Change - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-04T08:22:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T04:24:15"
+last_qc_outcome: "rewrote"
 tags: [summa, day/006, pars/I]
 ---
 

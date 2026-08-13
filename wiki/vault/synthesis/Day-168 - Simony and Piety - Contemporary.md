@@ -3,10 +3,10 @@ day: 168
 title: Simony and Piety (Contemporary)
 pairs_with: "[[Day-168 - Simony and Piety]]"
 length_target_words: 2200
-length_actual_words: 1712
+length_actual_words: 1969
 length_tier: medium
-length_ratio_to_target: 0.78
-length_note: "Under tier target by ~22% (ratio 0.78, within ±25%). Q.100–101 mirror cleanly around the gift/market boundary; the prose tracks the load-bearing moves (gift-economy / constitutive-debt / Levin-defection) without padding the parallels."
+length_ratio_to_target: 0.895
+length_note: "Under tier target by ~10% (ratio 0.895, after the 2026-08-12 QC pass added the ten article anchors; was 0.78). Q.100–101 mirror cleanly around the gift/market boundary; the prose tracks the load-bearing moves (gift-economy / constitutive-debt / Levin-defection) without padding the parallels."
 mind_first_reframe: "Under mind-monism, individual conscious agents are constituted-by-relation (Kastrup's dissociated alters, Friston's mutually-modeling agents, Levin's collective-cognition cells, Stump's second-personal narrative knowing); spiritual goods are gifts within constitutive relations, and simony is the category-error of subjecting such goods to market-economy exchange while piety is the foundational recognition of constitutive debt."
 central_theme_thread: "The perspective-limited agent computes loving unity from a position of having-been-given, not self-origination; piety is the disposition that lets the cooperative computation proceed honestly, simony the disposition that systematically corrupts the substrate by privatizing what was only ever conferred-by-relation."
 karpathy_wiki_sources:
@@ -17,18 +17,18 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "Wright canonical: 'Paul and the Faithfulness of God' on the household-of-God ekklesia; the gift-economy critique of patronage in 1 Cor 1–4"
   - "Rohr canonical: 'The Universal Christ' on gift-economy theology and 'Falling Upward' on first-half-of-life debt to origins"
-  - "master/cross_program_index.md CROSS-013/CROSS-018 on union and biophysiological coupling"
+  - "master/cross_program_index.md CROSS-018 on positivity resonance as measurement of union"
 evidence_strength_summary: "The gift-economy / market-economy distinction is well-documented in economic anthropology (Mauss, Graeber, Polanyi — empirical). The neurobiology of kin-attachment and positivity resonance is empirical (Fredrickson lab). Cancer as morphogenetic defection is empirical (Levin lab). The reading of simony as category-error between economies is interpretive; the further reading of piety as the original positive-pattern of relational-debt recognition is philosophical."
 tags: [synthesis, day/168, theme/gift-economy, theme/relational-debt, q/100, q/101]
-last_qc_at: "2026-08-05T00:25:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T12:28:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 168 — Simony and Piety (Contemporary)
 
 ## Frame
 
-The two questions today look unrelated but are mirror images. Q.100 (Simony) treats the buying and selling of spiritual things — sacraments, ecclesiastical office, the gift of the Holy Spirit — and Aquinas's central claim is that spiritual goods are categorically not in the order of exchangeable commodities. To price them is to perform a category error so deep that it corrupts both the spiritual good (which is gift) and the market (which is contract). Q.101 (Piety) treats the virtue, distinct from worship-of-God (latria) and from honor-of-superiors (observance), by which we render duty to those *from whom we receive our being* — first parents, then country, then the wider lineage of benefactors. Piety is a part of justice, but a peculiar part: it concerns debts that cannot be repaid in kind because the gift was constitutive of the receiver.
+The two questions today look unrelated but are mirror images. Q.100 (Simony) treats the buying and selling of spiritual things — sacraments, ecclesiastical office, the gift of the Holy Spirit — and Aquinas's central claim is that spiritual goods are categorically not in the order of exchangeable commodities. To price them is to perform a category error so deep that it corrupts both the spiritual good (which is gift) and the market (which is contract). He works this out across six articles: a.1 defines simony as the deliberate will to buy or sell what is spiritual, and so a sin of irreverence against religion; a.2 asks whether it is always unlawful to take money for the sacraments; a.3 whether it is lawful to give or receive money for *spiritual actions*, where the answer turns on whether the payment purchases the spiritual act itself or supports the minister's life; a.4 and a.5 press the boundary cases — money for things *annexed* to the spiritual (the metal of a chalice, teaching for a fee) and the granting of spiritual things in return for equivalent service, the latter being simony where the exchange prices the spiritual good; a.6 treats the fittingness of the penalties. Q.101 (Piety) treats the virtue, distinct from worship-of-God (latria) and from honor-of-superiors (observance), by which we render duty to those *from whom we receive our being* — a.1 fixes its objects as particular individuals, first parents, then country, then the wider lineage of benefactors; a.2 finds that it extends to the material support of parents; a.3 that it is a special virtue distinct from the others; a.4 that its duties are to be set aside for the worship of God only in the case where parents would draw one away from that worship — otherwise paying them is itself the act of piety. Piety is a part of justice, but a peculiar part: it concerns debts that cannot be repaid in kind because the gift was constitutive of the receiver.
 
 In contemporary terms, both questions sit on the same fault line — the boundary between gift-economy goods and market-economy goods, and the proper recognition of constitutive (rather than contractual) debt. The mind-monist convergence is in unusually good position to illuminate this, because it treats individual conscious agents as themselves constituted-by-relation (Kastrup's dissociation account; Friston's mutual-modeling; Levin's collective cognition; Stump's second-personal narrative knowing). What Aquinas calls *piety* is the virtue of getting that constitutive relation right; what he calls *simony* is its symmetric inverse — the attempt to commodify a good that exists only as gift within a constitutive relation.
 
@@ -48,7 +48,7 @@ The resources for the contemporary reading converge from several traditions.
 
 **Levin on cancer as defection** (Levin PRS-02 in the Levin-tradition wiki) gives the cellular analog. A healthy cell receives its identity, position, and behavioral repertoire from the morphogenetic field — these are constitutive gifts. When a cell privatizes those gifts (treating proliferation capacity as alienable from collective coordination), it becomes cancer. Simony is the ecclesiastical-tissue analog of cancer: the privatization of a constitutive gift for individual proliferation at the cost of collective coherence.
 
-**Fredrickson's positivity resonance** (see Fredrickson-tradition wiki, with CROSS-013, CROSS-018 in master/cross_program_index.md) gives the biological measurement of what piety honors at the family-and-community scale. The biophysiological coupling of caregiver and child, of long-bonded partners, of community-in-shared-practice is empirically measurable (vagal tone synchrony, behavioral coupling) — and it is exactly the kind of substrate from which constitutive gifts flow. Piety in Aquinas's sense is the virtue of remembering and honoring that one's capacities for resonance themselves came as gifts from such couplings.
+**Fredrickson's positivity resonance** (see Fredrickson-tradition wiki, with CROSS-018 in master/cross_program_index.md) gives the biological measurement of what piety honors at the family-and-community scale. The biophysiological coupling of caregiver and child, of long-bonded partners, of community-in-shared-practice is empirically measurable (vagal tone synchrony, behavioral coupling) — and it is exactly the kind of substrate from which constitutive gifts flow. Piety in Aquinas's sense is the virtue of remembering and honoring that one's capacities for resonance themselves came as gifts from such couplings.
 
 **Kastrup on individuation within monism** (Kastrup PRS-02 in the Kastrup-tradition wiki) gives the metaphysical layer. If individual agents are dissociated alters within a unitary consciousness, then no agent is self-originating; each is patterned-by-the-whole. The very stuff of which the agent is made is given. Simony names the corrupting attempt to treat what one has received as if it had been self-acquired; piety names the corresponding virtue of recognizing the giving.
 
@@ -73,7 +73,7 @@ The perspective-limited agent computes loving unity not from a position of self-
 - **Stump PRS-04, PRS-05, PRS-07** (final causality; union as final cause; narrative second-personal knowing) — spiritual goods are second-personal-relational, so their good cannot be reached through impersonal exchange; simony is the structural corruption of the final-causal order of a spiritual good. *Philosophical / formal.*
 - **Friston PRS-06, PRS-07** (multi-agent coherence; substrate-independent FEP) — constitutive gifts function as signals in a collective; commodifying them degrades the signaling substrate for everyone. *Empirical / mathematically formal.*
 - **Levin PRS-02, PRS-04, PRS-08** (cancer as defection; substrate-independent cognition; cells as cognitive agents) — cancer is the cellular analog of simony: privatization of collectively-conferred capacities; piety is the cellular analog of within-field coherence. *Empirical.*
-- **Fredrickson** (positivity resonance; see CROSS-013, CROSS-018 in master/cross_program_index.md) — piety honors the biological substrate from which constitutive gifts flow; the measurable substrate of love-as-coupling. *Empirical.*
+- **Fredrickson** (positivity resonance; see CROSS-018 in master/cross_program_index.md) — piety honors the biological substrate from which constitutive gifts flow; the measurable substrate of love-as-coupling. *Empirical.*
 - **Kastrup PRS-02** (individuation as dissociation within unitary consciousness) — no agent is self-originating; recognizing the receivedness of one's capacities is the metaphysical core of piety. *Speculative / metaphysical.*
 - **Wright (canonical, PFG, 1 Cor 1–4)** — *charis* as gift-economy keystone; the early ekklesia as gift-economy household. *Theological / scriptural.*
 - **Rohr (canonical, *Universal Christ*, *Falling Upward*)** — first-half-of-life recognition of debt to origins as foundational piety. *Theological / contemplative.*

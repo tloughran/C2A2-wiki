@@ -3,8 +3,8 @@ day: 232
 title: Christ's Baptism (Contemporary)
 pairs_with: "[[Day-232 - Christ's Baptism]]"
 length_target_words: 2200
-length_actual_words: 1267
-length_ratio_to_target: 0.576
+length_actual_words: 1324
+length_ratio_to_target: 0.602
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis; accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
@@ -17,7 +17,7 @@ evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learni
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-08-08T12:24:17"
+last_qc_at: "2026-08-12T10:30:26"
 last_qc_outcome: "rewrote"
 ---
 
@@ -25,7 +25,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Aquinas asks today why the one person who needed no repentance received the baptism of repentance (Q.39) — and then, widening the lens, why the incarnate one lived the way he did at all (Q.40): among people rather than in solitude, eating and drinking rather than fasting like John, poor, and obedient to a law he was not subject to. The episode's hinge is Ambrose's gloss on "fulfill all righteousness": *this is justice, to do first thyself that which thou wishest another to do, and so encourage others by the example.*
+Aquinas asks today why the one person who needed no repentance received the baptism of repentance (Q.39): whether it was fitting that Christ be baptized at all (a.1), why with *John's* baptism specifically (a.2), why at that time (a.3), why in the Jordan (a.4) — and then why the theophany took the form it did, the heavens opened (a.5), the Spirit descending under the appearance of a dove (a.6), that dove real rather than merely apparent (a.7), the Father's voice heard (a.8). Then, widening the lens, why the incarnate one lived the way he did at all (Q.40): among people rather than in solitude (a.1), eating and drinking rather than fasting like John (a.2), poor (a.3), and obedient to a law he was not subject to (a.4). The episode's hinge is Ambrose's gloss on "fulfill all righteousness": *this is justice, to do first thyself that which thou wishest another to do, and so encourage others by the example.*
 
 The contemporary version of the question: **why does showing work where telling fails?** Why must the fullest perspective enter the medium of the limited ones — water, table, road, law — rather than instruct from outside it?
 

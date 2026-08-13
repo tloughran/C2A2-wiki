@@ -28,7 +28,7 @@ The deeper question Q.53 raises — what does it mean for a *virtue* (as opposed
 
 **McGilchrist on attentional defaults and characterological diminution** supplies the hemispheric-level dynamic. The agent's habitual mode of attention (left-instrumental vs. right-contextual) is itself a habit, modifiable by sustained practice. *Disuse* of right-hemispheric attention produces a left-hemispheric-dominant character; *contrary use* (sustained instrumental focus) produces the same drift more rapidly. McGilchrist's clinical account of attentional drift maps onto Q.53's habit-decline mechanism.
 
-**Stump's analytic-Thomistic work on virtue maintenance** is keystone for Q.52-53 read as moral psychology. Tom's PRS-form re-description of Stump's account of virtue covers the will's role in sustaining virtuous habit; the Stump-tradition wiki treats virtuous habit as essentially relational (faith-as-knowledge-of-persons, charity-as-second-person union). The contemporary frame can extend her account by reading the relational substrate as the wider participation under conscious-realist monism — without contradicting her position.
+**Stump's analytic-Thomistic work on acquired versus infused virtue** is keystone for Q.52-53 read as moral psychology. PRS-24 in the Stump-tradition wiki draws exactly the distinction Q.52-53 turns on — acquired virtues are *built up by practice*, infused virtues are *received in an instant with grace*, and the two operate at different levels of the soul's powers. That is Q.52's growth-by-repeated-act and Q.53 a.3's infused-virtue exception stated as a single contemporary thesis. PRS-09 (virtue as cooperative causality) supplies the complementary half: the Holy Spirit perfects the soul's *natural* powers so that the resulting willing is genuinely the agent's own — which is why the infused virtue's sustaining cause is not the agent's accumulated act-merit, and why its diminution runs by severance rather than by lapse. PRS-23's two-stage quiescence/infusion model gives the mechanism behind that asymmetry, locating agency and divine priority in different causal roles rather than in competition for one. The contemporary frame can extend this by reading the participatory substrate as the wider mind under conscious-realist monism — without contradicting the Thomistic position.
 
 **The behavioural-economics and clinical literatures on counter-conditioning, extinction, and relapse** (Bouton; Marlatt; Volkow) supply the mechanism for Q.53 a.1 (contrary acts as the specific destabilizer). Extinction does not erase the original disposition; it builds a competing one. Counter-conditioning is more reliable than mere disuse for habit suppression. The medieval claim that contrary acts diminish a habit recovers as the formal claim about competing-learner dynamics in the agent's policy space.
 
@@ -54,11 +54,12 @@ The special dynamics of infused virtue carry the central theme's most distinctiv
 
 - **Friston PRS-04 + precision-weighted learning** — Q.52 a.1 (intensity not extension): sharpening of priors under attentional precision-weighting; *formal, empirically robust*.
 - **Fredrickson PRS-01 / loving-kindness meditation longitudinal data** — Q.52 (growth) and Q.53 (decay): dose-response of practice; return toward baseline on lapse; *empirical, high confidence*.
-- **Hawkins PRS-03 / reference-frame consolidation** — Q.52 a.2 (acts cause growth under due intensity): cortical mechanism for attention-gated consolidation; *neuroscientifically grounded*.
+- **Hawkins PRS-04 / reference frames as universal cognitive tool (`traditions/hawkins/prs_triplets.md`)** — Q.52 a.2 (acts cause growth under due intensity): cortical mechanism for attention-gated reference-frame consolidation; *neuroscientifically grounded*.
 - **Bouton on extinction-as-competing-learner; counter-conditioning literature** — Q.53 a.1 (contrary acts as specific destabilizer): formal account of competing-policy dynamics; *empirically robust*.
 - **McGilchrist / hemispheric attentional defaults** — Q.53's character-level decline: attentional drift under disuse vs. contrary use; *clinical evidence*.
 - **Levin / bioelectric attractor dynamics** — Q.52-53 at the morphogenetic scale: pattern stabilization and destabilization; *empirical at growing scales*.
-- **Stump PRS-04 + virtue-maintenance** — analytic-Thomistic keystone on the will's role in sustaining virtuous habit; *philosophically rigorous*.
+- **Stump PRS-24 / acquired versus infused virtue (`traditions/stump/prs_triplets.md`)** — Q.52 (built up by practice) against Q.53 a.3 (received in an instant, not diminished by lapse): the two operate at different levels of the soul's powers; *philosophically rigorous*.
+- **Stump PRS-09 + PRS-23 / virtue as cooperative causality; the quiescence-infusion model (`traditions/stump/prs_triplets.md`)** — Q.53 a.3's asymmetry: grace perfects natural powers and occupies a different causal role than the agent's own act, so the infused disposition is lost by severance rather than by omission; *philosophically rigorous*.
 - **Wright / *After You Believe* and abiding-in-Christ (John 15; Romans 8)** — Q.53 a.3 (infused virtue's special dynamics): life-in-the-Spirit as participatory substrate; *theological, well-attested*.
 - **Rohr / *Falling Upward*, *Immortal Diamond*** — contemplative-practice dynamics; consolidation-and-rupture pattern; *contemplative tradition*.
 - **Kastrup / de-dissociative widening of the alter** — infused-virtue dynamics under conscious-realist monism: dispositions sustained by participation in mind-at-large; *speculative-metaphysical, internally consistent*.
@@ -80,10 +81,10 @@ length_note: "Covers two whole Summa questions (Q.52 increase of habits + Q.53 d
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04; precision-weighted learning)"
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 loving-kindness longitudinal data)"
-  - "traditions/hawkins/wiki.md + prs_triplets.md (PRS-03 reference-frame consolidation)"
+  - "traditions/hawkins/prs_triplets.md (PRS-04 reference frames as universal cognitive tool; attention-gated consolidation)"
   - "traditions/mcgilchrist/wiki.md (hemispheric attentional defaults; character-level drift)"
   - "traditions/levin/wiki.md (bioelectric attractor dynamics)"
-  - "traditions/stump/wiki.md + prs_triplets.md (PRS-04; virtue-maintenance; will's role)"
+  - "traditions/stump/prs_triplets.md (PRS-24 acquired vs infused virtue; PRS-09 virtue as cooperative causality; PRS-23 quiescence-infusion two-stage model)"
   - "traditions/kastrup/wiki.md (de-dissociative participation in mind-at-large)"
   - "traditions/wright/ — *After You Believe*; abiding in Christ (John 15; Romans 8)"
   - "traditions/rohr/ — *Falling Upward*; *Immortal Diamond*; contemplative consolidation-rupture rhythm"
@@ -92,8 +93,8 @@ mind_first_reframe: "Q.52's *intensity-not-extension* claim recovers as precisio
 central_theme_thread: "Q.52-53 specify the *dynamics* of the central theme's working-out. The computation toward loving unity is intensive — the agent is more deeply patterned by it, not larger. Each full-attention act grows the disposition; lapse loses ground; contrary act actively diminishes. The 'fear and trembling' of Phil 2:12 acquires mechanical content. Infused-virtue's special dynamics carry the central theme's most distinctive claim: some dispositions toward loving unity are participations in a wider mind, retained by abiding and lost only by active severance — Wright's abide-in-Christ and Rohr's contemplative attention in the dynamic register."
 evidence_strength_summary: "Precision-weighted attentional learning (Friston), dose-response of practice (Fredrickson), and counter-conditioning durability (Bouton et al.) are empirically robust. Reference-frame consolidation (Hawkins) and bioelectric attractor dynamics (Levin) are empirically supported. Stump on virtue-maintenance is philosophically rigorous. Wright on abiding-in-Christ as participatory substrate and Rohr on contemplative-practice dynamics are theologically well-attested. The conscious-realist-monist reading of infused-virtue's special dynamics is speculative-metaphysical but internally consistent."
 tags: [synthesis, day/087, theme/habits, theme/habit-dynamics, theme/practice, theme/extinction, theme/infused-virtue]
-last_qc_at: "2026-08-02T20:20:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T18:29:51"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

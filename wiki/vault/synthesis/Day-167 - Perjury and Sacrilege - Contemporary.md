@@ -3,10 +3,10 @@ day: 167
 title: Perjury and Sacrilege (Contemporary)
 pairs_with: "[[Day-167 - Perjury and Sacrilege]]"
 length_target_words: 1500
-length_actual_words: 1218
+length_actual_words: 1378
 length_tier: short
-length_ratio_to_target: 0.81
-length_note: "Under tier target by ~19% (ratio 0.81, within ±25%). Q.98–99 share a single underlying structure (costly-signaling / symbolic-infrastructure violation); the prose is held to the load-bearing moves rather than padded with parallel restatement."
+length_ratio_to_target: 0.919
+length_note: "Under tier target (ratio 0.919, inside ±10%). Q.98–99 share a single underlying structure (costly-signaling / symbolic-infrastructure violation); the prose is held to the load-bearing moves rather than padded with parallel restatement. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.98 a.1–a.4, Q.99 a.1–a.4), which the commentary had been treating at question level only — same repair as Day 166."
 mind_first_reframe: "Under mind-monism, oaths and sacred-symbolic infrastructure are the technologies by which perspective-limited agents bind themselves into higher-order computational coherence over time; perjury and sacrilege are local defections that extract trust-yield while degrading the substrate on which collective coherence runs."
 central_theme_thread: "The perspective-limited agents who would compute loving unity from within their limitations need binding mechanisms that constrain their own future deception of one another; sacrilege and perjury are the local defections that, multiplied, would render the cooperative computation impossible."
 karpathy_wiki_sources:
@@ -19,15 +19,15 @@ karpathy_wiki_sources:
   - "Rohr canonical: 'The Universal Christ' on the sacramental as bearing the divine presence"
 evidence_strength_summary: "Costly-signaling theory (oath as binding commitment) is well-established game theory and behavioral biology. The neurobiology of trust-and-betrayal is empirical. The reading of sacrilege as violation of a community's symbolic infrastructure is interpretive but converges with research on ritual function in social cognition."
 tags: [synthesis, day/167, theme/costly-signal, theme/commitment, q/98, q/99]
-last_qc_at: "2026-08-04T11:25:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T06:32:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 167 — Perjury and Sacrilege (Contemporary)
 
 ## Frame
 
-Aquinas's Q.98 treats perjury as a sin against religion under the species of irreligion: the false oath calls God as witness to the speaker's truthfulness, and when the speaker lies under oath, God is conscripted as guarantor of a falsehood. Q.99 treats sacrilege as the violation of any sacred thing — sacred person, sacred place, sacred object — with gravity scaled to the rank of the sacred thing violated. Both questions sit inside religion-as-justice: they concern what one *owes* to the sources and symbolic structures that ground a community's relation to God.
+Aquinas's Q.98 treats perjury as a sin against religion under the species of irreligion: the false oath calls God as witness to the speaker's truthfulness, and when the speaker lies under oath, God is conscripted as guarantor of a falsehood. Habash walks all four articles — what perjury requires, namely a false statement uttered under oath (a.1); whether all perjury is a sin, and so opposed to the reverence religion owes God (a.2); whether all perjury is mortal (a.3); and the second-order case, whether one sins who *demands* an oath of a known perjurer (a.4). Q.99 then treats sacrilege across its own four: whether sacrilege is the violation of a sacred thing (a.1), whether it is a special sin rather than a mode of others (a.2), whether its species are distinguished according to the sacred things violated — sacred person, sacred place, sacred object (a.3), and whether its punishment should be pecuniary (a.4). The gravity-scaling this project leans on is a.3's, and it is the article that makes the commentary's argument available. Both questions sit inside religion-as-justice: they concern what one *owes* to the sources and symbolic structures that ground a community's relation to God.
 
 In contemporary terms, both questions are about *costly signals*, *binding commitments*, and the violation of the symbolic infrastructure that makes a community's higher-order coherence possible. The mind-monist convergence — particularly Friston on multi-agent coherence and McGilchrist on embodied tradition — gives a precise contemporary vocabulary for what an oath does and why sacrilege is gravely disordered.
 
@@ -65,7 +65,7 @@ The perspective-limited agents who would compute loving unity from within their 
 
 - **Friston PRS-06** (multi-agent coherence via mutual modeling) — the oath as precision-weighted self-binding that makes the swearer reliably modelable; perjury as the extraction of trust-yield without paying the binding-cost. *Empirical / mathematically formal.*
 - **Levin PRS-04** (substrate-independent collective cognition) — cellular cooperation depends on within-field signaling honored against private incentive; cancer is the cellular analog of perjury and sacrilege. *Empirical.*
-- **McGilchrist PRS-06, PRS-07** (embodied tradition; division and union) — sacred objects and ritual gestures encode accumulated practical wisdom; sacrilege destroys the transmission medium. *Empirical (cognitive science of ritual) + interpretive.*
+- **McGilchrist PRS-06, PRS-07** (embodied tradition; division and union) — sacred objects and ritual gestures encode accumulated practical wisdom; sacrilege destroys the transmission medium, and Q.99 a.3's ranking of the species by the sacred thing violated tracks how much accumulated coherence each carries. *Empirical (cognitive science of ritual) + interpretive.*
 - **Stump PRS-07, PRS-08** (narrative cognition; second-personal phenomenology) — oaths and sacred objects are narrative-bound and person-involving, not propositional; their violation damages second-personal relations, not just propositional truth. *Philosophical.*
 - **Wright (canonical, PFG, JVG)** — oath as participation in covenant-fidelity; Temple as paradigmatic sacred infrastructure. *Theological / scriptural.*
 

@@ -16,8 +16,8 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-174 - Boasting - Contemporary]]"
 tags: [summa, day/174, pars/II-II, q/112-113]
-last_qc_at: "2026-08-11T02:31:49"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-12T12:28:43"
+last_qc_outcome: "pass"
 ---
 
 # Day 174 — Boasting

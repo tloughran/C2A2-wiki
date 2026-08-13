@@ -46,7 +46,7 @@ The contemporary parallel — and the open question it surfaces — is whether m
 
 - **CROSS-002 in the master wiki — spacetime not fundamental.** Q.10's atemporal-substrate claim has its physics counterpart in the Hoffman/Arkani-Hamed/Wolfram convergence: spacetime emerges from a more abstract structure that is not itself temporal.
 - **FLAG-003 in the master wiki — Kastrup × Friston.** The substrate-vs-alter distinction (substrate atemporal; alters generate temporality through inference) is the formal shape of the dissociative-boundary / Markov-blanket equivalence.
-- **PRS-04 in the Stump-tradition wiki — Stump × Levin.** Aeviternity (Q.10 aa.4–5) is the dynamics of qualitative-without-substantial change that Levin's morphogenetic field exhibits empirically.
+- **PRS-04 in the Stump-tradition wiki — Stump × Levin.** The record pairs Thomistic formal-and-final causality with Levin's morphogenetic goal-directedness; the aeviternity application below is this commentary's extension of that pairing, not a claim the record itself makes. Read the extension as speculative: Levin's morphogenetic field changes its goal-state without dissolving into a different field, which is qualitative-without-substantial change in Aquinas's sense (Q.10 aa.4–5), but no wiki record yet carries that change-type taxonomy.
 - **Boethius, *Consolation of Philosophy* V.** *Aeternitas est interminabilis vitae tota simul et perfecta possessio* — the classical definition Aquinas inherits and the cleanest contemporary statement of what mind-at-large must be.
 - **Augustine, *Confessions* XI** (carried forward from Day 5). Time as *distentio animi* — a distension of the soul. The mind-monist version: temporality is what an alter's generative model distends *itself* into, not what the substrate undergoes.
 - **Rohr, *The Universal Christ* (canonical fallback while wiki node is planned).** The eternal-now contemplatively recognized as already-present in matter from creation; not a future state to be reached but the substrate-now to be entered.
@@ -63,8 +63,8 @@ title: "Does God Change? (Contemporary)"
 pairs_with: "[[Day-006 - Does God Change]]"
 length_tier: medium
 length_target_words: 2200
-length_actual_words: 2056
-length_ratio_to_target: 0.935
+length_actual_words: 2109
+length_ratio_to_target: 0.959
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (mind-at-large as atemporal substrate; alters experience time)"
   - "wiki/traditions/wolfram/wiki.md (ruliad — the totality of computations is not itself running)"
@@ -72,6 +72,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/carroll/wiki.md (poetic naturalism — the block universe and the foil for atemporality claims)"
   - "wiki/traditions/arkanihamed/wiki.md (post-spacetime physics — time is not fundamental)"
   - "wiki/traditions/levin/wiki.md (morphogenetic teleology — the goal-state already in the field)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology — the Stump x Levin teleology pairing; see CROSS-008, restated downward 2026-08-10)"
   - "wiki/master/cross_program_index.md (CROSS-002 spacetime not fundamental)"
   - "wiki/master/paradigm_flags.md (FLAG-003 Kastrup × Friston — substrate-vs-alter dynamics)"
   - "rohr (canonical works — wiki node planned): *The Universal Christ* — divine pattern as the eternal-now in matter; *Falling Upward* — the second-half recognition of the *nunc stans*"
@@ -80,8 +81,8 @@ karpathy_wiki_sources:
   - "Augustine, *Confessions* XI — time as a distention of the soul (carried forward from Day 5's Augustine citation)"
 mind_first_reframe: "Aquinas's God is altogether immutable (Q.9 a.1) — pure act, no potency to actualize, no parts that could exchange — translates as: mind-at-large is the substrate that does not 'change' because change is what conditioned alters of mind-at-large generate as their internal dynamics; the substrate has no inferential boundary to be displaced. Eternity (Q.10) as *interminabilis vitae tota simul et perfecta possessio* (Boethius) is exactly what the substrate is from outside any particular alter's temporal frame. *Time = measure of change in respect to before and after* (Aquinas via Aristotle) becomes Friston's claim that temporality is what an agent's generative model produces; aeviternity (the angelic middle) becomes the dynamics of an alter that changes qualitatively but not substantially, as Levin's morphogenetic field changes its goal-state without dissolving."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective — and *time* is one of those limitations. The *nunc stans* is what perspective-limited agents would see if all their inferential boundaries dissolved into the substrate. *Salvation in fear and trembling* is the agent's progressive recognition that what feels like sequential change is the unfolding of an already-given structure — covenant inclusion (Wright) and Universal Christ (Rohr) under temporal experience, mind-at-large under metaphysical analysis."
-last_qc_at: "2026-08-04T08:22:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T04:24:15"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/006, theme/immutability, theme/eternity, theme/atemporality, theme/nunc-stans]
 
 ---

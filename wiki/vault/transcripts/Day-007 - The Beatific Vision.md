@@ -6,7 +6,7 @@ title: The Beatific Vision
 summa_ref: Prima Pars, Q.11 + Q.12
 duration_seconds: 1778
 word_count: 4491
-raw_asr_word_count: 4491
+raw_asr_word_count: 4476
 length_tier: long
 segment_count: 622
 caption_kind: asr

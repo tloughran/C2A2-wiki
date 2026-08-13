@@ -12,13 +12,13 @@ karpathy_wiki_sources:
   - "traditions/hawkins/wiki.md (the cortical model built from experience — learned priors / base rates as the substrate of practical memory)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 the cogitative sense / attention binding universal to the singular; PRS-01 right-hemisphere apprehension of the particular)"
   - "traditions/stump/prs_triplets.md (PRS-06 the MacIntyre tradition-criterion; PRS-07 narrative cognition — knowledge not reducible to propositional summary)"
-  - "traditions/macintyre/prs_triplets.md (PRS-01/P3 practical reason learned within a practice; docility as apprenticeship in a craft-tradition)"
+  - "traditions/macintyre/prs_triplets.md (PRS-01 moral reasoning requires tradition, not escape from it; PRS-03 practice-virtue-institution — docility as apprenticeship in a craft-tradition)"
 evidence_strength_summary: "The eight integral parts read as the component competencies of a bounded-rational agent: memory + 'what happens in most cases' (a.1) = learned base rates / Bayesian priors (robust); the cogitative sense (a.2) = the binding of a general model to the singular state (interpretive + formal, medium); docility (a.3) = prior-acquisition from those who have seen more cases (interpretive, strong as analogy); shrewdness/eustochia (a.4) = abductive search for the connecting middle (formal analogy, medium); foresight/circumspection/caution (a.6–8) = forecasting, context-fit, and risk-avoidance under uncertainty (formal, medium-strong). The theological frame — that these perfect one virtue ordered to charity's end — is carried by the field."
 mind_first_reframe: "Q.49 disassembles prudence into eight integral parts — memory, understanding, docility, shrewdness, reason, foresight, circumspection, caution. Read as a faculty-inventory they look antique; read as the component competencies of an agent that must act well on contingent particulars, they are almost a specification. A bounded-rational agent needs learned priors (memory of 'what happens in most cases'), a way to bind its general model to the concrete case (the cogitative sense), the ability to acquire priors from others who have seen more (docility), fast search for the connecting inference (shrewdness), forward modeling toward a distant end (foresight), sensitivity to whether a means fits these circumstances (circumspection), and risk-avoidance where good and evil are mingled (caution). The reframe keeps every part and supplies the mechanism."
 central_theme_thread: "Docility is the integral part that carries the central theme. Aquinas says prudence concerns 'particular matters of infinite variety,' so that 'no one man can consider them all,' and man therefore 'stands in very great need of being taught by others, especially by old folk who have a sane understanding of the ends.' That is the central claim's 'guidance from those who perceive more of the whole than we do,' written as a component of the virtue itself: the limited perspective cannot survey the field alone, so it must receive priors from those whose longer experience has seen more of it. Memory is the accumulated cases; docility is the channel by which one perspective's hard-won model becomes another's inheritance — the tradition through which limited agents pool what none could compute alone."
 tags: [synthesis, day/142, theme/the-components-of-bounded-practical-reason]
-last_qc_at: "2026-08-04T04:19:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T02:29:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 142 — Contemporary Parallel: The Anatomy of a Practical Agent
@@ -58,7 +58,7 @@ Docility is where this question touches the spine of the project. The central cl
 - *PRS-04 in the Friston-tradition wiki + the cortical-modeling line in the Hawkins-tradition wiki* — memory + "the majority of cases" (a.1) as learned priors / base rates, the trained generative model under practical reason. (Robust.)
 - *PRS-05 + PRS-01 in the McGilchrist-tradition wiki* — the cogitative sense / "particular reason" (a.2) as the binding of a general model to the singular state; the interface between universal and case. (Interpretive + formal; medium.)
 - *PRS-16 in the Friston-tradition wiki* — foresight, circumspection, caution (a.6–8) as forecasting, context-fit, and risk-/ambiguity-handling: a bounded agent's planning under uncertainty. (Formal; medium-strong.)
-- *PRS-01 / P3 in the MacIntyre-tradition wiki + PRS-06 / PRS-07 in the Stump-tradition wiki* — docility (a.3) as apprenticeship in a craft-tradition; practical priors transmitted through lived cases, not propositional summary. (Interpretive; strong as analogy.)
+- *PRS-01 + PRS-03 in the MacIntyre-tradition wiki + PRS-06 / PRS-07 in the Stump-tradition wiki* — docility (a.3) as apprenticeship in a craft-tradition; practical priors transmitted through lived cases, not propositional summary. (Interpretive; strong as analogy.)
 
 ## Where this leaves us
 
