@@ -6,7 +6,7 @@ length_target_words: 2200
 length_actual_words: 652
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents; competency scaling)"
+  - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in anatomical morphospace; PRS-10 continuity of human and unicellular goal-directedness — cognition as graded rather than binary)"
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler; precision-weighting)"
   - "traditions/mcgilchrist/prs_triplets.md (attention and the mode of engagement)"
   - "traditions/rohr/wiki.md (second-half-of-life maturation)"
@@ -16,8 +16,8 @@ length_note: "Compact-by-design: III Q.72 (confirmation as maturation) rendered 
 mind_first_reframe: "Confirmation is reframed as the developmental strengthening of an already-constituted agent — a competency-scaling (Levin) and precision-raising (Friston) on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one."
 central_theme_thread: "Confirmation raises the limited agent's capacity to compute toward loving unity under cost — the 'fear and trembling' register — enabling it to act toward the whole even when acting is risky, actively extending the unity it belongs to into a resistant world."
 tags: [synthesis, day/248, theme/maturation-of-agency]
-last_qc_at: "2026-08-04T22:28:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T02:29:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 248 — Confirmation (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem: **how does an already-constituted agent acquire the 
 
 ## Resource
 
-Levin supplies the developmental resource. In Tom's PRS-form record of Levin's program, PRS-08 (cells as cognitive agents navigating an anatomical morphospace) carries his theme of *competency scaling* — agents bootstrapping from simple to more capable problem-solving, expanding the scale at which they can pursue goals. Confirmation, read through this resource, is a strengthening that scales the agent's competency for its proper goal (witness), not a re-founding of identity.
+Levin supplies the developmental resource. In Tom's PRS-form record of Levin's program, PRS-08 (cells as cognitive agents navigating an anatomical morphospace) establishes that a cell collective is a problem-solving agent at all; the *scaling* claim proper is PRS-10, the continuity thesis, on which goal-directedness differs across scales only in degree — complexity of represented goals, memory, interaction protocols — making competency a graded, measurable property rather than a binary one. Together they give competency scaling: agents bootstrapping from simple to more capable problem-solving, expanding the scale at which they can pursue goals. Confirmation, read through this resource, is a strengthening that scales the agent's competency for its proper goal (witness), not a re-founding of identity.
 
 Friston supplies the decisive formal move. In Tom's PRS-form record of Friston's program, PRS-04 (the organism as active modeler) includes *precision-weighting* — the gain an agent assigns to its predictions, which determines how strongly belief translates into committed action. "Spirit-given boldness" maps onto a raising of precision on the agent's deep commitments, which is exactly what licenses costly action ("fear and trembling," Phil 2:12) rather than hesitation.
 
@@ -48,7 +48,8 @@ The project holds that loving unity is a computation each limited agent performs
 
 ## Bridges
 
-- **Levin PRS-08 (cognitive agents; competency scaling)** — *empirical-in-domain, analogical transfer.* Strengthening as scaled competency for the agent's proper goal.
+- **Levin PRS-08 (cells as cognitive agents in anatomical morphospace)** — *empirical-in-domain, analogical transfer.* The collective as a problem-solving agent at all.
+- **Levin PRS-10 (continuity of human and unicellular goal-directedness)** — *empirical-in-domain, analogical transfer.* Competency as graded rather than binary — strengthening as scaled competency for the agent's proper goal.
 - **Friston PRS-04 (active modeler; precision-weighting)** — *formal.* Boldness as raised precision licensing costly action under uncertainty.
 - **McGilchrist (modes of attention)** — *psychological / theoretical.* Maturation as re-balanced world-engagement.
 - **Rohr (second-half-of-life maturation)** — *theological / contemplative.* The arc from identity to mission.

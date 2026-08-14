@@ -3,10 +3,10 @@ day: 162
 title: Vows and Oaths (Contemporary)
 pairs_with: "[[Day-162 - Vows and Oaths]]"
 length_target_words: 2200
-length_actual_words: 1643
-length_ratio_to_target: 0.747
+length_actual_words: 1711
+length_ratio_to_target: 0.778
 length_tier: medium
-length_note: "Just past the -25% lower bound for medium tier (1643 vs 1650 floor). Day covers two dense Q's (Q.88 vows + Q.89 oaths); commentary is substantively complete on precision-fixing, canalization, faculty-psychology relocation, declaratory vs promissory distinction, and Pauline pistis. Under-length is the substance running clean — no padding warranted."
+length_note: "Inside tier. A canonical recount on the constitution's regex gives 1711 body words (1688 excluding the auto-linked footer), above the 1650 medium-tier floor; the earlier figure of 1643 is not reproducible by any body definition, so the note's old 'just past the -25% lower bound' premise was false. Day covers two dense Q's (Q.88 vows + Q.89 oaths). Coverage is NOT complete — see the 2026-08-13 ESCALATION on article-level citation and the dropped Q.89 a.8. Short of target is the substance running clean, not padding withheld."
 mind_first_reframe: "A vow is the precision-fixing act by which a temporally-extended limited agent binds its own future precision-weightings so that a long-horizon policy survives moment-by-moment fluctuations of perspective; an oath extends the act to a social context where the limited agent's own credibility cannot bear the social weight. Aquinas's faculty-psychology of the will-fixing-itself relocates onto active-inference precision-weighting (Friston) and developmental canalization (Levin), with the dignity-of-witness reframed through Stump's faith-as-second-personal-knowledge and Wright's reading of Pauline pistis as covenant fidelity."
 central_theme_thread: "The vow is the Summa's cleanest case of the central-theme structure: the present self entrusts the future self to an anchor that exceeds either. The agent does not pretend the future self will see what the present self sees — she precisely concedes that it will not, and routes the binding through an anchor that can see what neither self alone can. Working out salvation in fear and trembling (Phil 2:12, Wright's 'carry into effect the rescue you have been given') is exactly the vowed structure: loving unity computed across more of the agent than the present moment alone contains."
 karpathy_wiki_sources:
@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS entries on commitment and identity-over-time)"
 evidence_strength_summary: "Empirical-formal on precision-weighting and commitment devices in decision neuroscience (Friston-adjacent literature on policy stickiness). Empirical on developmental canalization (Levin lineage). Theological-strong on Pauline pistis (Wright) and on faith as second-personal commitment (Stump). The reframe of vow-as-precision-fixing is speculative-integrative."
 tags: [synthesis, day/162, theme/commitment-device, theme/identity-over-time, pars/II-II, q/88-89]
-last_qc_at: "2026-08-05T02:27:33"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T10:42:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 162 — Vows & Oaths (Contemporary Parallel)

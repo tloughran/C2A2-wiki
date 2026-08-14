@@ -6,7 +6,7 @@ length_target_words: 2200
 length_actual_words: 966
 length_tier: medium
 length_ratio_to_target: 0.439
-length_note: "Runs ~61% under the medium tier (857 vs 2200): held to the PRS argument for a single question (III Q.84) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_note: "Runs ~56% under the medium tier (966 vs 2200): held to the PRS argument for a single question (III Q.84) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; PRS-14 symptom formation/persistence/resolution; active inference as error-correction to preferred states)"
   - "traditions/rohr/prs_triplets.md (PRS-05 false-self to true-self mechanism of contemplative transformation)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "Penance-as-error-correction-loop is formal (Friston 
 mind_first_reframe: "Penance is a goal-directed agent's error-correcting return to its preferred state — contrition the registered error signal, confession the explicit error-representation, satisfaction the corrective action that reduces the divergence."
 central_theme_thread: "The threefold loop is the resource-bounded computation by which a strayed perspective turns back toward loving unity under guidance it cannot itself supply — 'working out salvation' run as ongoing labor."
 tags: [synthesis, day/254, theme/repair-loop-toward-unity]
-last_qc_at: "2026-08-04T22:28:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T06:32:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 254 — The Sacrament of Penance (Contemporary Parallel)

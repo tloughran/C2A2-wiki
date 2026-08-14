@@ -3,23 +3,24 @@ day: 161
 title: Tithes (Contemporary)
 pairs_with: "[[Day-161 - Tithes]]"
 length_target_words: 1500
-length_actual_words: 1345
-length_ratio_to_target: 0.897
+length_actual_words: 1415
+length_ratio_to_target: 0.943
 length_tier: short
-length_note: "1345 words vs the 1350 short-tier floor — five words under the -10% band. Q.86-87 are fully covered (precept, quantity/recipient determination, and the Article-3 natural-law-duty limit); the shortfall is the substance running clean, not truncation. No padding warranted."
+length_note: "1415 words against the 1350 short-tier floor — inside the -10% band. (An earlier note read 1345 and called it five words short; a canonical recount on the constitution's regex gave 1376 before this run's bridge repairs and 1415 after.) Q.86 a.1-a.4 and Q.87 a.1-a.3 are covered; Q.87 a.4 — the clergy remitting upward so that whoever has charge of the common estate can meet the common welfare — is not, and is the article closest to this day's own scale-coordination thesis. No padding warranted."
 mind_first_reframe: "Tithes are the symbolic protocol by which a perspective-limited agent participates in the larger composite agent it is already part of. The medieval church specified precept-plus-positive-determination; multi-scale agency (Levin's bioelectric resource gating) and active-inference budget allocation (Friston) describe the same scale-coordination problem at the level of any composite agent, with Pauline koinōnia (Wright) and the Universal Christ (Rohr) supplying the theological reading of religious giving as participation rather than transaction."
-central_theme_thread: "Aquinas's Article 3 — that tithing is not lawful when it sabotages a prior natural-law duty to parents or dependents — makes the perspective-limitation principle explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; loving unity is computed by giving only what one can spare without becoming derelict to what is directly entrusted. Salvation in fear and trembling requires the limited agent to judge, from inside her limits, what is hers to release and what is hers to keep."
+central_theme_thread: "Aquinas at Q.86 a.3 — that an oblation is not lawful when it sabotages a prior natural-law duty to parents or dependents — makes the perspective-limitation principle explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; loving unity is computed by giving only what one can spare without becoming derelict to what is directly entrusted. Salvation in fear and trembling requires the limited agent to judge, from inside her limits, what is hers to release and what is hers to keep."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (multi-scale agency, bioelectric resource gating)"
   - "wiki/traditions/friston/wiki.md (active inference, free-energy budget allocation)"
   - "wiki/traditions/carroll/wiki.md (poetic naturalism: economic facts and normative facts as separate-but-compatible levels)"
   - "wiki/traditions/wright/wiki.md (Pauline collection, koinōnia-as-resource-sharing in 2 Cor 8–9)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ: the cosmic body whose cells share)"
-  - "wiki/master/cross_program_index.md (FLAG/CROSS entries on collective intelligence and resource flow)"
+  - "wiki/traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance as the scale-bridging coupling event, dyad to communal worship)"
+  - "wiki/master/cross_program_index.md (CROSS-069 Stump x Friston x Fredrickson — corporate substance as the ontological status of collective free-energy minimization / positivity resonance)"
 evidence_strength_summary: "Empirical on multi-scale resource gating (Levin) and prosocial neurobiology (Fredrickson). Formal on active-inference budget allocation (Friston). Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-08-05T02:27:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T10:41:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 161 — Tithes & Oblations (Contemporary Parallel)
@@ -60,7 +61,7 @@ The contemporary-parallel response: *tithing is the symbolic protocol by which a
 
 ## The central-theme thread
 
-Notice Aquinas's Article 3: tithing is *not* lawful when it sabotages a prior natural-law duty to parents or dependents. The agent's perspective on her own household is *protected* even from the demands of the higher body. This is not an exception to the perspective-limitation principle — it is the principle made explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; the loving unity toward which the whole computes does not require obliterating the local view, it requires the local view to give *only what it can spare without becoming derelict to what is directly entrusted to it*. The corban reproach in Mark 7, which Aquinas cites, is the Lord himself protecting limited-perspective duties against ecclesial overreach. Salvation — inclusion in the people united with God — is worked out in fear and trembling precisely because the agent has to judge, from inside her limits, what is hers to release and what is hers to keep.
+Notice Q.86 a.3 — whether a man may make oblations of whatever he lawfully possesses: an oblation is *not* lawful when it sabotages a prior natural-law duty to parents or dependents. The agent's perspective on her own household is *protected* even from the demands of the higher body. This is not an exception to the perspective-limitation principle — it is the principle made explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; the loving unity toward which the whole computes does not require obliterating the local view, it requires the local view to give *only what it can spare without becoming derelict to what is directly entrusted to it*. The corban reproach in Mark 7, which Aquinas cites, is the Lord himself protecting limited-perspective duties against ecclesial overreach. Salvation — inclusion in the people united with God — is worked out in fear and trembling precisely because the agent has to judge, from inside her limits, what is hers to release and what is hers to keep.
 
 ## Bridges
 
@@ -68,7 +69,7 @@ Notice Aquinas's Article 3: tithing is *not* lawful when it sabotages a prior na
 - **PRS-02 in the Friston-tradition wiki** — active-inference budget allocation across a hierarchical generative model. The tithe-fraction is the precision-weighting that the lower level grants to the higher. *Formal, strong.*
 - **Wright on the Pauline collection** (*Paul and the Faithfulness of God*, ch. 11–12) — *koinōnia* as the operative covenantal category, against modern individualist readings of Christian generosity. *Theological; the scriptural anchor for this locus.*
 - **Rohr, *The Universal Christ*, ch. 5–6** — the cosmic body whose cells participate in one another. *Theological-mystical, contemplative anchor.*
-- **Fredrickson positivity-resonance literature** — neurobiology of habitual prosocial action and its feedback on the giver's own flourishing. *Empirical, moderately strong, tradition-bound.*
+- **PRS-03 in the Fredrickson-tradition triplets** (`traditions/fredrickson/prs_triplets.md`) — positivity resonance as the biophysiological coupling event that scales from the dyad to group resonance, communal worship included; the mechanism by which a single act of giving enrols the giver in a composite. *Empirical, moderately strong, tradition-bound.*
 
 ## Where this leaves us
 

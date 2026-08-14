@@ -3,21 +3,22 @@ day: 276
 title: Distinction of Orders (Contemporary)
 pairs_with: "[[Day-276 - Distinction of Orders]]"
 length_target_words: 1500
-length_actual_words: 943
+length_actual_words: 996
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 Universal Christ, PRS-04 embodied love as epistemology)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace, PRS-17 bioelectric interface to collective intelligence)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-05 distributed cognition across scales, PRS-06 multi-agent coherence via mutual modeling)"
-  - "wiki/master/cross_program_index.md (sacraments locus III Q.60-90 bridge row)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
+  - "vault/refs/Karpathy wiki bridges.md (sacraments locus, III Q.60-90 topical-priors row)"
 evidence_strength_summary: "Theological (Rohr, sacramental presence) firm within its tradition; Levin morphogenetic/collective-intelligence claims empirical at cell scale, speculative when scaled to social bodies; Friston multi-agent active inference formal/speculative."
-length_ratio_to_target: 0.63
+length_ratio_to_target: 0.664
 mind_first_reframe: "The priestly character is the theological limit-case of durable, function-bearing form assigned to a member by the whole it serves — a real-but-immaterial role, which mind-monism accommodates more readily than physicalism."
 central_theme_thread: "An order is the institutional admission that no single member sees the whole; ordination is a confessed perspective-limitation made fruitful within a body that together perceives more than any of its members."
 tags: [synthesis, day/276, theme/order-as-form-in-a-body]
-last_qc_at: "2026-08-05T04:22:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T06:32:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 276 — Distinction of Orders (Contemporary Parallel)
@@ -32,7 +33,7 @@ The inquiry-problem common to both frames is the **reality of form within a body
 
 ## Resource
 
-The leading move comes from the Levin-tradition program. Tom's PRS-form record of Levin's work (PRS-08 in the Levin-tradition wiki, *cells as cognitive agents in anatomical morphospace*) treats a differentiated cell's identity as a *target morphology* held in a bioelectric pattern memory — a form that is empirically real, manipulable, and that directs the cell's acts, yet is not reducible to the genome. PRS-17 (*the bioelectric interface to collective intelligence*) extends this: cells are nodes whose roles are assigned and stabilized by the field of the whole. A second resource comes from the Friston-tradition program: PRS-05 (*distributed cognition across scales*) and PRS-06 (*multi-agent coherence via mutual modeling*) model a body as agents that hold stable roles precisely because each models the others' models, so a "role" is a node in a shared generative model. The theological resource is Rohr's: PRS-03 in the Rohr-tradition wiki (*the Universal Christ*) reads sacramental matter as a genuine carrier of grace — form imprinted on matter is exactly what a sacrament is.
+The leading move comes from the Levin-tradition program. Tom's PRS-form record of Levin's work (PRS-08 in the Levin-tradition wiki, *cells as cognitive agents in anatomical morphospace*) treats a differentiated cell's identity as a *target morphology* held in a bioelectric pattern memory — a form that is empirically real, manipulable, and that directs the cell's acts, yet is not reducible to the genome. PRS-17 (*the bioelectric interface to collective intelligence*) extends this: cells are nodes whose roles are assigned and stabilized by the field of the whole. A second resource comes from the Friston-tradition program: PRS-05 (*distributed cognition across scales*) and PRS-06 (*multi-agent coherence via mutual modeling*) model a body as agents that hold stable roles precisely because each models the others' models, so a "role" is a node in a shared generative model. The theological resource is twofold in the Rohr-tradition wiki. PRS-03 (*the Universal Christ*) holds that the divine pattern is present throughout creation rather than confined to one institutional expression — which makes form-in-matter the rule rather than the exception. PRS-04 (*embodied love as epistemology*) carries the sharper half of the claim actually needed here: Franciscan incarnational theology insists the spiritual is always embodied, never purely abstract, so matter is a genuine site of knowing and of grace — which is exactly what a sacrament asserts.
 
 ## Solution (proposed, speculative)
 
@@ -46,7 +47,8 @@ The project's claim is that conscious agents are individuated by the limits of t
 
 - **Levin PRS-08 / PRS-17 (empirical at cell scale, speculative when scaled):** durable cell-role as bioelectric form-memory is the best naturalistic model we have for "character" as real-but-immaterial form. Pairing flagged because it gives the priestly-character problem an experimental analogue.
 - **Friston PRS-05 / PRS-06 (formal / speculative):** a role is a node in a shared generative model; the office persists because the body keeps modeling it. Explains *ex opere operato* without invoking the minister's psychology.
-- **Rohr PRS-03 (theological):** sacramental matter genuinely carries grace; the cosmic-Christ frame makes form-in-matter the rule, not the exception.
+- **Rohr PRS-04 (theological):** incarnational theology — the spiritual is always embodied, the body a site of knowing — is the id that actually carries "sacramental matter genuinely bears grace."
+- **Rohr PRS-03 (theological):** the divine pattern present throughout creation, which makes form-in-matter the rule rather than the exception.
 - **Kastrup PRS-02 (speculative, metaphysical):** individual identity within monism — the metaphysical permission slip for "real role without separate substance."
 
 ## Where this leaves us

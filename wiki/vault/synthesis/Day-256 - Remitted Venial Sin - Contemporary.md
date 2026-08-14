@@ -3,20 +3,21 @@ day: 256
 title: Remitted Venial Sin (Contemporary)
 pairs_with: "[[Day-256 - Remitted Venial Sin]]"
 length_target_words: 1500
-length_actual_words: 702
+length_actual_words: 736
 length_tier: short
-length_ratio_to_target: 0.468
-length_note: "Runs ~59% under the short tier (614 vs 1500): held to the PRS argument for a single narrow question (III Q.87) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.491
+length_note: "Runs ~51% under the short tier (736 vs 1500): held to the PRS argument for a single narrow question (III Q.87) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (active inference as continuous free-energy reduction, not on/off)"
+  - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle; free energy as a minimized magnitude, not an on/off flag)"
   - "traditions/hawkins/prs_triplets.md (PRS-06 hierarchical/heterarchical predictive memory; corrections propagate across levels)"
-  - "traditions/rohr/prs_triplets.md (PRS-05 gradual contemplative transformation)"
+  - "traditions/rohr/prs_triplets.md (PRS-27 the asymmetry of finite and infinite love as sustaining ongoing transformation)"
+  - "traditions/stump/prs_triplets.md (PRS-22 the vices as misorderings in object, manner, or measure relative to the final end)"
 evidence_strength_summary: "Graded-rather-than-binary repair is formal (Friston continuous FE reduction; Hawkins hierarchical correction); the venial/mortal distinction's content is theological."
 mind_first_reframe: "Remission of venial sin is graded because corrective repair is continuous free-energy reduction (Friston) with disorder unwound level by level across a layered predictive memory (Hawkins), not a binary switch."
 central_theme_thread: "A finite perspective reduces its divergence from the whole by degrees with the resources it perceives, lesser disorders dissolving continuously as the larger reordering toward loving unity proceeds."
 tags: [synthesis, day/256, theme/graded-repair]
-last_qc_at: "2026-08-05T04:22:57"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T10:42:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 256 — Remitted Venial Sin (Contemporary Parallel)
@@ -35,7 +36,7 @@ Friston's program supplies the leading move. In Tom's PRS-form record of Friston
 
 Hawkins sharpens the structure. In Tom's PRS-form record of Hawkins' program, PRS-06 (the neocortex is heterarchical, not a strict hierarchy, with corrections propagating across many levels in parallel) gives an image of repair as corrections percolating gradually up and across a layered predictive memory — a disorder is unwound level by level, not erased at a stroke. This matches the medieval intuition that venial faults are cleared progressively as the whole disposition is reordered.
 
-Rohr (PRS-05) keeps the depth-reading: transformation is incremental, the true self emerging by degrees, which is why "lesser" sins are dissolved in the ongoing work rather than dispatched by a single verdict.
+Rohr (PRS-27) keeps the depth-reading: the creature's inability to fully reciprocate an infinite love is generative rather than a defect — it is what sustains ongoing transformation, which is why "lesser" sins are dissolved in the continuing work rather than dispatched by a single verdict.
 
 ## Solution (proposed, speculative)
 
@@ -47,9 +48,9 @@ The motif appears as incremental computation under limited resources. A perspect
 
 ## Bridges
 
-- **Friston (continuous free-energy reduction)** — *formal, well-developed.* Repair as graded magnitude, not a switch; sharpest resource.
+- **Friston PRS-01 (the Free Energy Principle; free energy as a minimized magnitude)** — *formal, well-developed.* Repair as graded magnitude, not a switch; sharpest resource.
 - **Hawkins PRS-06 (hierarchical/heterarchical predictive memory)** — *empirical-in-domain (neuroscience).* Corrections propagate gradually across levels.
-- **Rohr PRS-05 (gradual transformation)** — *theological / contemplative.* The true self emerging by degrees.
+- **Rohr PRS-27 (the finite/infinite asymmetry as generative; continued growth toward union)** — *theological / contemplative.* Why the work of reordering is continued rather than completed at a stroke.
 - **PRS-22 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / moral-psychological.* The vices as predictable failure modes of an intellect-will system, each misordering a good that is itself real in object, manner, or *measure* relative to the agent's final end. The measure axis is what makes graded disorder — and therefore graded repair — intelligible. The register has no entry specific to venial-sin remission, so this receives the continuous-repair reframe rather than grounding it.
 
 ## Where this leaves us

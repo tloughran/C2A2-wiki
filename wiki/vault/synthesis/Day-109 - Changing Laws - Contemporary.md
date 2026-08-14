@@ -6,7 +6,7 @@ length_target_words: 1500
 length_actual_words: 1434
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/wolfram/wiki.md (PRS-03 computational irreducibility; rule-emergence in distributed systems)"
+  - "wiki/traditions/wolfram/wiki.md (PRS-04 computational irreducibility and prediction; rule-emergence in distributed systems)"
   - "wiki/traditions/friston/wiki.md (active inference; priors and convention-binding)"
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 right-hemispheric grasp of context-sensitive judgment)"
   - "wiki/master/cross_program_index.md (CROSS-08 emergent norms; Schelling-point coordination)"
@@ -18,8 +18,8 @@ length_note: "Short tier (cleaned transcript 1179 words); 1434 actual vs 1500 ta
 mind_first_reframe: "Human law is the Schelling-point coordination scheme a community has settled into, anchored on natural-law deep priors but irreducibly local; its binding force in conscience derives from alignment with deep priors plus coordination value plus pedagogical/developmental value, and law-change is legitimate only when it restores alignment or tracks a real shift in the community's moral state."
 central_theme_thread: "Perspective-limitation cuts both for and against the rule: individual agents are too limited to see the lawgiver's purpose in every case (so follow the letter), but coordinated communities can together see when applying the letter defeats the purpose — limited perspectives in coordinated community can jointly see more than any one of them can alone, which is the loving-unity telos at work in the social-political register."
 tags: [synthesis, day/109, theme/law-binding, theme/lawful-revision]
-last_qc_at: "2026-08-03T00:21:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-12T22:34:23"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 109 — Changing Laws (Contemporary)
@@ -40,7 +40,7 @@ The shared problem: human laws are revisable conventions that nonetheless bind. 
 
 ## Resource: convention-as-Schelling-point, computational irreducibility of local determination, costly stability
 
-**Wolfram's computational irreducibility** (PRS-03 in Tom's re-description of the Wolfram tradition): for many systems, the only way to know what they do is to run them. This is the strong claim relevant here: from the general natural-law priors, you cannot algorithmically generate the right human-law arrangements for a particular society at a particular time. Local determination is unavoidable. Q.95 a.4's "law of nations vs. civil law" already recognizes this; Q.96 a.6's "spirit-of-law" recognition is the same point at a different level.
+**Wolfram's computational irreducibility** (PRS-04 in Tom's re-description of the Wolfram tradition): for many systems, the only way to know what they do is to run them. This is the strong claim relevant here: from the general natural-law priors, you cannot algorithmically generate the right human-law arrangements for a particular society at a particular time. Local determination is unavoidable. Q.95 a.4's "law of nations vs. civil law" already recognizes this; Q.96 a.6's "spirit-of-law" recognition is the same point at a different level.
 
 **Friston's active inference** (FLAG-05): generative-model agents settle into convergent priors through repeated experience. A convention becomes binding partly because *every agent's prior expects every other agent's compliance*. This is precisely the mechanism behind Q.97 a.2's "the mere change of a law is of itself prejudicial to the common good": changing the law disturbs every agent's prior; the disturbance has measurable costs in coordination, and the *binding force* of law is partly this priors-convergence. Modern behavioral economics has independently arrived at this (Schelling-point coordination; status-quo bias).
 
@@ -92,7 +92,7 @@ The computational task is real. *We cannot bootstrap* the perfect law from natur
 
 ## Bridges
 
-- **PRS-03 (Tom's re-description of the Wolfram-tradition wiki, computational irreducibility)**: human law is irreducibly local. *Formal*.
+- **PRS-04 (Tom's re-description of the Wolfram-tradition wiki, computational irreducibility and prediction)**: human law is irreducibly local. *Formal*.
 - **FLAG-05 (Friston active inference, priors and coordination)**: law-binding via prior-convergence. *Empirical/formal*.
 - **FLAG-09 (McGilchrist hemispheric asymmetry)**: spirit-vs-letter as integrated right-and-left-hemispheric judgment. *Empirical*.
 - **CROSS-08 (master wiki, emergent norms)**: stable conventions exhibit specific structural features (stability, edge-case tolerance, costly-but-aligned revision-paths). *Computational/anthropological*.

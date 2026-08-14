@@ -9,14 +9,14 @@ length_note: "Runs under tier target by design — written for substantive compl
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling, PRS-18 widening a community)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace — licensing/blocking of role)"
-  - "wiki/traditions/kastrup/prs_triplets.md (PRS-23 how minds separate/join dissociative boundaries)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociative boundaries separating/joining)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
 evidence_strength_summary: "Friston coupling-preconditions formal; the impediments-as-boundary-conditions reading is conceptual; specific canonical impediments are historical-juridical, treated descriptively."
 length_ratio_to_target: 0.58
 mind_first_reframe: "The further impediments are a taxonomy of failed coupling-preconditions — prior saturation (vow), freedom-failure (abduction), and trust-failure (crime) — each making a new constitutive union impossible rather than merely illicit."
 central_theme_thread: "The impediments protect the seriousness of the project's central act: loving unity can be built only from free, available, trusting perspectives freely electing union, never extracted from an unfree or already-bound agent."
 tags: [synthesis, day/286, theme/boundary-conditions-on-coupling]
-last_qc_at: "2026-08-02T18:30:35"
+last_qc_at: "2026-08-13T04:22:52"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,7 @@ The shared inquiry-problem is the **preconditions of coupling**. Marriage (Days 
 
 ## Resource
 
-The Friston-tradition program supplies the leading frame. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*) makes valid coupling depend on two free agents each able to model and be modeled by the other; PRS-18 (*widening a community*) makes admission to a shared model depend on coherence-preserving conditions. Read onto Q.57–58: a solemn vow is *prior full coupling* — the agent's modeling capacity is already wholly committed, so no further constitutive self-gift is available (this is the structural meaning of "a vow of continence voids a subsequent marriage"). Abduction is the *freedom-condition failure* from Day 281 — a clamp, not a selected policy. The crime impediment is *trust-precondition failure* — a prior act (e.g., machination against a spouse) that corrupts the mutual model before it forms. The Levin-tradition program supplies the licensing precedent: PRS-08 (*cells as cognitive agents in morphospace*) shows that the whole *licenses* members into roles and that there are real conditions under which a role cannot be taken — the biological analogue of "diriment impediment." Kastrup-tradition PRS-23 (*how individuals separate and join*) gives the metaphysics of why a prior total commitment forecloses a new boundary-relaxation: an alter already wholly joined elsewhere has no free boundary to relax. Rohr-tradition PRS-7 (*relationship prior*) keeps the analysis from treating the bonds as mere contracts.
+The Friston-tradition program supplies the leading frame. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*) makes valid coupling depend on two free agents each able to model and be modeled by the other; PRS-18 (*widening a community*) makes admission to a shared model depend on coherence-preserving conditions. Read onto Q.57–58: a solemn vow is *prior full coupling* — the agent's modeling capacity is already wholly committed, so no further constitutive self-gift is available (this is the structural meaning of "a vow of continence voids a subsequent marriage"). Abduction is the *freedom-condition failure* from Day 281 — a clamp, not a selected policy. The crime impediment is *trust-precondition failure* — a prior act (e.g., machination against a spouse) that corrupts the mutual model before it forms. The Levin-tradition program supplies the licensing precedent: PRS-08 (*cells as cognitive agents in morphospace*) shows that the whole *licenses* members into roles and that there are real conditions under which a role cannot be taken — the biological analogue of "diriment impediment." Kastrup-tradition PRS-02 (*individual identity within monism* — one undivided consciousness with multiple dissociated points of view) gives the metaphysics of why a prior total commitment forecloses a new boundary-relaxation: an alter already wholly joined elsewhere has no free boundary to relax. Rohr-tradition PRS-7 (*relationship prior*) keeps the analysis from treating the bonds as mere contracts.
 
 ## Solution (proposed, speculative)
 
@@ -46,7 +46,7 @@ The project's loving unity is built only from free, available, trusting perspect
 
 - **Friston PRS-06 / PRS-18 (formal; juridical mapping speculative):** valid coupling needs free, available, mutually modeling agents — the structural reading of vow / abduction / crime impediments.
 - **Levin PRS-08 (empirical at tissue scale):** the whole licenses roles and there are real bars — the biological analogue of a diriment impediment.
-- **Kastrup PRS-23 (metaphysical, speculative):** an already-fully-joined boundary has none free to relax — why a prior total vow forecloses a new union.
+- **Kastrup PRS-02 (metaphysical, speculative):** an already-fully-joined boundary has none free to relax — why a prior total vow forecloses a new union.
 - **Rohr PRS-7 (theological):** the bonds are constitutive relations, not contracts.
 
 ## Where this leaves us

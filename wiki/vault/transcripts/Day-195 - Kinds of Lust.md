@@ -6,7 +6,7 @@ title: Kinds of Lust
 summa_ref: Secunda Secundae, Q.154-155
 duration_seconds: 964
 word_count: 2693
-raw_asr_word_count: 2693
+raw_asr_word_count: 2677
 length_tier: medium
 segment_count: 407
 caption_kind: asr
@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-195 - Kinds of Lust - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/195, pars/II, q/154]
-last_qc_at: "2026-07-27T20:21:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T04:22:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 195 — Kinds of Lust

@@ -3,21 +3,21 @@ day: 265
 title: The Means of Satisfaction (Contemporary)
 pairs_with: "[[Day-265 - The Means of Satisfaction]]"
 length_target_words: 1500
-length_actual_words: 832
+length_actual_words: 910
 length_tier: short
-length_ratio_to_target: 0.55
-length_note: "Compact by design: Suppl. Q.15–16 develops the concrete-means and disposition-without-occasion motifs completely without padding."
+length_ratio_to_target: 0.607
+length_note: "Compact by design: Suppl. Q.15–16 develops the concrete-means and disposition-without-occasion motifs without padding. At 0.61x (0.55x before this run's bridge repairs) this day sits well above the 0.31–0.41x compact-frontier band rather than inside it. Coverage is not complete, and the earlier note overstated it: Q.15 a.2 (satisfaction by accepted suffering) and Q.16 a.2 (the habit persisting but changing its act to thanksgiving) are not treated — see the 2026-08-13 ESCALATION."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 restoring a disturbed equality through targeted action)"
-  - "traditions/friston/prs_triplets.md (action reducing divergence; PRS-04 the virtue as a prior present without occasion)"
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-05/PRS-06 embodied practices as the means; the act/habit distinction)"
-  - "traditions/rohr/wiki.md (prayer/fasting/almsgiving as contemplative reorientation, not transaction)"
+  - "traditions/friston/prs_triplets.md (PRS-15 action as inverse free-energy minimization; PRS-04 organism as active modeler. The 'prior held without occasion' step is this day's own extension, not a recorded triplet.)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-11 religious and contemplative practice cultivating a mode of attention; PRS-06 embodied, tacit habituation)"
+  - "traditions/rohr/prs_triplets.md (PRS-38 action and contemplation as one practice — the works are a discipline, not its application)"
 evidence_strength_summary: "Penal works as restitution restoring equality is empirical-in-domain (Levin) + formal (Friston action); penance-as-virtue-without-occasion is the act/habit distinction (formal, Day 255 echo); the works' meritorious content is theological."
-mind_first_reframe: "The means of satisfaction are reframed as targeted, divergence-reducing actions that restore a disturbed equality (Levin PRS-03, Friston) and as embodied reorienting practices (McGilchrist PRS-05/06), while the corrective virtue can exist as a settled prior held without occasion to fire (Friston)."
+mind_first_reframe: "The means of satisfaction are reframed as targeted, divergence-reducing actions that restore a disturbed equality (Levin PRS-03, Friston) and as embodied reorienting practices (McGilchrist PRS-11/06), while the corrective virtue can exist as a settled prior held without occasion to fire (Friston)."
 central_theme_thread: "The means of satisfaction are the concrete, resource-bounded actions by which a perspective-limited agent restores a relation its deviation disturbed, and the sinless-possessing-penance case states the act/habit theme at its purest — the orientation toward restoring loving unity is a feature of a well-formed perspective as such, present even where no fall gives it occasion."
 tags: [synthesis, day/265, theme/concrete-restoration-and-the-disposition-without-occasion]
-last_qc_at: "2026-08-05T04:22:57"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T10:42:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 265 — The Means of Satisfaction (Contemporary Parallel)
@@ -34,7 +34,7 @@ The shared inquiry-problem: **what specific actions restore a disturbed equality
 
 Levin and Friston supply the means half. In Tom's PRS-form record of Levin's program, PRS-03 (restoration toward a set-point) gives the penal works concrete sense: prayer, fasting, and almsgiving are targeted actions that restore a disturbed configuration toward balance — and restitution *exceeding* the thing taken matches the intuition that the perturbation included the will's malice, so the corrective action must address more than the surface quantity. Friston's account of action reducing divergence is the formal complement: the means of satisfaction are the actual error-reducing moves that close the repair loop (Days 254, 263).
 
-For the subjects half, Friston's program frames the act/habit distinction (developed on Day 255). In Tom's PRS-form record of Friston's program, a virtue is a *prior* — a settled disposition of the generative model — and a prior can be present and well-formed even when no occasion calls it into act: the sinless agent holds the corrective disposition (the readiness to restore equality) without ever needing to deploy it, just as a robust controller can possess a correction policy it never has to fire. McGilchrist (PRS-05/PRS-06) reads the penal works as *embodied practices* — habituated attention and bodily disciplines that reshape the agent — and supports the disposition/act distinction: the virtue is a formed mode of being, not merely a tally of acts performed.
+For the subjects half, Friston's program frames the act/habit distinction (developed on Day 255). In Tom's PRS-form record of Friston's program, a virtue is a *prior* — a settled disposition of the generative model — and a prior can be present and well-formed even when no occasion calls it into act: the sinless agent holds the corrective disposition (the readiness to restore equality) without ever needing to deploy it, just as a robust controller can possess a correction policy it never has to fire. McGilchrist (PRS-11/PRS-06) reads the penal works as *embodied practices* — ritual, communal worship and contemplative discipline cultivating a mode of attention that propositional content cannot replace (PRS-11), transmitted as embodied skill and tacit habit (PRS-06) — and supports the disposition/act distinction: the virtue is a formed mode of being, not merely a tally of acts performed.
 
 Rohr keeps the means from becoming transactional: prayer, fasting, and almsgiving are contemplative reorientations of desire (toward God, away from self, toward neighbor), not payments. The *meritorious content* of the works remains theological.
 
@@ -48,10 +48,10 @@ The motif appears in two registers. The means of satisfaction are the concrete, 
 
 ## Bridges
 
-- **Levin PRS-03 (restoration to a set-point through targeted action)** — *empirical-in-domain.* Penal works and restitution as balance-restoring corrections.
-- **Friston (action reducing divergence; virtue as a prior held without occasion)** — *formal, well-developed.* The means close the loop; the disposition can exist without the act.
-- **McGilchrist PRS-05/PRS-06 (embodied corrective practices; act/habit distinction)** — *humanistic, well-evidenced.* The works as reorienting disciplines.
-- **Rohr (prayer/fasting/almsgiving as reorientation, not payment)** — *theological / contemplative.* Keeps satisfaction relational, not transactional.
+- **Levin PRS-03 (the morphological-attractor formalism — restoration toward a target state)** — *formal-analogical; the empirical anchor is Levin PRS-01, bioelectric circuits encoding anatomical target states.* Penal works and restitution as balance-restoring corrections.
+- **Friston PRS-15 (action as inverse free-energy minimization) + PRS-04 (organism as active modeler)** — *formal, well-developed; the "prior held without occasion" step is this day's extension, not a recorded triplet.* The means close the loop; the disposition can exist without the act.
+- **McGilchrist PRS-11 (religious and contemplative practice as cultivated attention) + PRS-06 (embodied, tacit habituation)** — *humanistic, well-evidenced.* The works as reorienting disciplines.
+- **Rohr PRS-38 (action and contemplation as one practice — the works are a discipline, not a payment)** — *theological / contemplative.* Keeps satisfaction relational, not transactional.
 
 ## Where this leaves us
 

@@ -3,21 +3,21 @@ day: 257
 title: Penitential Restoration (Contemporary)
 pairs_with: "[[Day-257 - Penitential Restoration]]"
 length_target_words: 1500
-length_actual_words: 727
+length_actual_words: 846
 length_tier: short
-length_ratio_to_target: 0.48
-length_note: "Runs ~52% under the short tier (727 vs 1500): held to the PRS argument for a single question (III Q.89) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.564
+length_note: "Runs ~44% under the short tier (846 vs 1500; the field read 727 before this run and was 38 words low on a canonical recount even then): held to the PRS argument for a single question (III Q.89) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-03 target morphology; pattern-completion / regenerative restoration of target form)"
-  - "traditions/friston/prs_triplets.md (PRS-04 goal-directedness; history-shaped priors / path-dependence)"
+  - "traditions/levin/prs_triplets.md (PRS-03 the morphological-attractor formalism — a formal language for target morphology; PRS-82 target morphology as pattern memory held in the cell collective rather than the hardware, which is where the empirical regeneration claim actually sits)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; goal-directedness. The path-dependence of the recovered prior is a general FEP point, not PRS-04's own content.)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home, not relocation of souls; PRS-13 God's Homecoming as the canonical articulation)"
   - "traditions/rohr/prs_triplets.md (PRS-05 the recovered self is transformed, not merely reset)"
 evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-domain (Levin regeneration); equal-measure question framed by path-dependence is formal (Friston); restored-membership content is scriptural (Wright)."
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-08-05T00:25:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T10:42:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 257 — Penitential Restoration (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem: **can a system regenerate a lost target configuratio
 
 ## Resource
 
-Levin's program is the sharpest resource. In Tom's PRS-form record of Levin's program, PRS-03 (a formal language for target morphology) plus the demonstrated phenomena of regeneration and pattern-completion show living systems actively rebuilding a lost target form: the set-point persists even when the structure realizing it is destroyed, and the system computes its way back toward it. Penitential restoration of lost virtues reads as exactly this — the target form (right ordering) was not annihilated by sin, and penance is the regenerative return toward it.
+Levin's program is the sharpest resource. In Tom's PRS-form record of Levin's program, PRS-03 (a formal language for target morphology) supplies the formal half, and PRS-82 (target morphology as pattern memory held in the cell collective rather than in any persisting hardware) supplies the empirical half. Together with the demonstrated phenomena of regeneration and pattern-completion they show living systems actively rebuilding a lost target form: the set-point persists even when the structure realizing it is destroyed, and the system computes its way back toward it. Penitential restoration of lost virtues reads as exactly this — the target form (right ordering) was not annihilated by sin, and penance is the regenerative return toward it.
 
 Friston frames the "equal measure" question. In Tom's PRS-form record of Friston's program, PRS-04 (goal-directedness) and the general point that priors are *history-shaped* make recovery *path-dependent*: the restored prior carries the trace of the deviation and the repair, so the recovered state can be deeper (a stronger prior, having corrected through error) or shallower than the original — never guaranteed identical. This is precisely Aquinas's "sometimes more, sometimes less."
 
@@ -48,10 +48,11 @@ The motif appears as re-inclusion after deviation. The limited agent that has st
 
 ## Bridges
 
-- **Levin PRS-03 (target morphology; regeneration / pattern-completion)** — *empirical-in-domain.* Restoration as active return to a persisting set-point; sharpest resource.
-- **Friston PRS-04 (goal-directedness; history-shaped priors)** — *formal.* The unequal measure as path-dependence.
-- **Rohr PRS-05 (transformed, not reset)** — *theological / contemplative.* Why restoration can exceed the original ("falling upward").
-- **Wright PRS-05 (salvation as incorporation, not relocation) + PRS-13 (*God's Homecoming*)** — *scriptural, high within method.* The content of the recovered relation: membership re-established, not a private state reloaded.
+- **Levin PRS-03 (the morphological-attractor formalism) + PRS-82 (target morphology as pattern memory held in the collective, not the hardware)** — *formal (PRS-03) and empirical-in-domain (PRS-82).* Restoration as active return to a persisting set-point; sharpest resource.
+- **Friston PRS-04 (organism as active modeler; goal-directedness)** — *formal.* The unequal measure as path-dependence — an extension of the general FEP point rather than a claim PRS-04 itself makes.
+- **Rohr PRS-05 (transformed, not reset)** — *theological / contemplative.* Why the recovered self is refined rather than reloaded.
+- **Rohr PRS-02 (order–disorder–reorder; *Falling Upward*)** — *theological / contemplative.* Why the reorder that follows genuine disorder can run deeper than the order it replaced.
+- **Wright PRS-05 (salvation as incorporation, not relocation) + PRS-13 (*God's Homecoming*)** — *scriptural.* The content of the recovered relation: membership re-established, not a private state reloaded.
 
 ## Where this leaves us
 

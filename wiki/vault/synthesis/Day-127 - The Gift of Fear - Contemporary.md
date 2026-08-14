@@ -3,12 +3,12 @@ day: 127
 title: The Gift of Fear (Contemporary)
 pairs_with: "[[Day-127 - The Gift of Fear]]"
 length_target_words: 2200
-length_actual_words: 1871
-length_ratio_to_target: 0.85
+length_actual_words: 2005
+length_ratio_to_target: 0.911
 length_tier: medium
-length_note: "Came in under the 2200 medium target (0.85). The episode's load is one mechanism (precision-on-divergence) read as the unifying account of the fourfold kinds of fear and the certainty-of-wayfarer puzzle — Friston PRS-04/16 + Wright already/not-yet + Stump PRS-09 all converge on it without redundancy. Per the project length policy, substantive integrity over word count."
+length_note: "Came in under the 2200 medium target (0.911; recounted 2026-08-13 after the PRS-28 anchoring — the prior 1871/0.85 was a stale count on a different body extractor). The episode's load is one mechanism (precision-on-divergence) read as the unifying account of the fourfold kinds of fear and the certainty-of-wayfarer puzzle — Friston PRS-28/04/16 + Wright already/not-yet + Stump PRS-09 all converge on it without redundancy. Per the project length policy, substantive integrity over word count."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler / precision; PRS-16 expected free energy = risk + ambiguity; PRS-10 active reasoning / model selection)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-28 precision as the inverse variance of prediction error / precision-weighting on belief updates; PRS-16 expected free energy = risk + ambiguity; PRS-10 active reasoning / model selection)"
   - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality / gifts as grace perfecting natural powers)"
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology / certainty of the wayfarer)"
   - "traditions/mcgilchrist/ (vigilant, valuing attention to what matters — by theme)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Fear as the precision-weighting on the divergence si
 mind_first_reframe: "Fear is the precision the agent places on its divergence-from-target signal — the felt valuation of how much is at stake in missing the good. Servile fear weights punishment; filial fear weights separation from the beloved whole. As charity (the goal-prior's binding to the whole) grows, the weighting migrates from outcome-to-self toward relation-to-whole: servile fear fades, filial fear deepens. 'Fear of the Lord is the beginning of wisdom' = the orienting prior that there is a target worth not missing, present before any deliberation refines it."
 central_theme_thread: "Filial fear is 'fear and trembling' precisely calibrated: not terror of punishment but the reverent, increasing valuation of the whole one is being drawn into and could fall away from. It is the affective form of perspective-limitation taken seriously — the agent that knows how much it does not yet hold, and how much there is to lose."
 tags: [synthesis, day/127, theme/fear-as-precision]
-last_qc_at: "2026-08-05T00:25:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T00:21:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 127 — Contemporary Parallel: Fear as the Precision Signal
@@ -35,7 +35,7 @@ The shared inquiry-problem: *what role does aversion play in a well-functioning 
 
 ## Resource
 
-The leading resource is again Friston's program, now on the side of *precision*. In Tom's PRS-form record of Friston's work, an active modeler does not merely register prediction error; it weights that error by *precision* — how much confidence, how much consequence, to assign to a given divergence (PRS-04, and the expected-free-energy machinery of PRS-16, which formally splits decision under *risk* from decision under *ambiguity*). Fear, on this reading, is precision placed on the divergence-from-target signal: the felt valuation of how much is at stake in missing the good. This immediately explains why fear is not the opposite of hope but its complement. Hope sets the target as reachable; fear weights how costly it would be to diverge. An agent with a goal-prior and no precision on divergence is not brave — it is uncalibrated, and Aquinas would call it presumptuous (tomorrow, Q.21).
+The leading resource is again Friston's program, now on the side of *precision*. In Tom's PRS-form record of Friston's work, an active modeler does not merely register prediction error; it weights that error by *precision* — how much confidence, how much consequence, to assign to a given divergence. The active-modeler setting is PRS-04 in the Friston-tradition wiki; the precision machinery itself is PRS-28 there, which formalizes precision as the inverse variance of prediction error and reads pathology as aberrant precision-weighting on belief updates. Alongside it, PRS-16 supplies the expected-free-energy account that formally splits decision under *risk* from decision under *ambiguity*. Fear, on this reading, is precision placed on the divergence-from-target signal: the felt valuation of how much is at stake in missing the good. This immediately explains why fear is not the opposite of hope but its complement. Hope sets the target as reachable; fear weights how costly it would be to diverge. An agent with a goal-prior and no precision on divergence is not brave — it is uncalibrated, and Aquinas would call it presumptuous (tomorrow, Q.21).
 
 The fourfold division maps onto *what the precision is weighted on*. Worldly fear weights the loss of created goods as if they were the target — a precision assigned to the wrong variable, hence "always evil." Servile fear weights punishment-to-self: real information, correctly aversive, but still self-referential and outcome-focused. Filial fear weights *separation from the one loved* — the divergence that matters is relational distance from the whole, not penalty to the self. This is why Aquinas can say "the fear of the Lord is the beginning of wisdom" (a.7): before any deliberation refines the agent's models, there is an orienting aversive prior that there is a target worth not missing — the precision that makes the whole inference toward the good possible. It is the beginning because nothing downstream gets calibrated without it.
 
@@ -61,7 +61,8 @@ The central theme's "fear and trembling" finds its precise calibration here. Fil
 
 ## Bridges
 
-- *PRS-04 + PRS-16 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference and expected-free-energy work)* — fear as precision on the divergence-from-target signal; the four kinds as four variables the precision can weight; risk-vs-ambiguity behind "certain of direction, not of outcome." (Formal; high as model.)
+- *PRS-28 in the Friston-tradition wiki (Tom's PRS-form record of Friston's computational-phenomenology work)* — precision as the inverse variance of prediction error, and miscalibrated precision-weighting as the shape of pathology: fear as precision on the divergence-from-target signal, the four kinds as four variables the precision can weight. (Formal; high as model. The clinical mapping is proposed, not established.)
+- *PRS-04 + PRS-16 in the Friston-tradition wiki* — the organism as active modeler under which the precision machinery operates, and the risk-vs-ambiguity split behind "certain of direction, not of outcome." (Formal; high as model / medium-high.)
 - *PRS-03 in the Wright-tradition wiki* — inaugurated eschatology resolves the certainty-and-fear puzzle: assured of the way, awake to the remaining distance. (Historical-theological; high in field.)
 - *PRS-09 in the Stump-tradition wiki* — the gift of fear as grace perfecting the agent's own precision-on-divergence, which is why it grows with sanctity rather than being outgrown. (Philosophical-theological; high in field.)
 - *McGilchrist-tradition wiki + Fredrickson-tradition wiki (by theme)* — attunement to a loved other sharpens, not dulls, as the bond deepens: the embodied form of filial fear's growth. (Empirical/neuroscientific; medium-high.)

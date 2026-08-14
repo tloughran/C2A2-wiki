@@ -6,7 +6,7 @@ length_target_words: 2200
 length_actual_words: 775
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; interface rules vs. underlying reality)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking / Interface Theory — interface rules vs. underlying reality; PRS-04 observer-dependent spacetime)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism)"
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler under resource limits)"
   - "traditions/wright/wiki.md (salvation as covenant inclusion)"
@@ -17,8 +17,8 @@ length_note: "Concise by design — a single-focus III Q.68-69 (necessity of bap
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-08-04T22:27:59"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T02:29:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 246 — Baptism & Salvation (Contemporary Parallel)
@@ -33,7 +33,7 @@ The shared inquiry-problem: **how can a means be necessary "by interface" — re
 
 ## Resource
 
-Hoffman is the leading resource. In Tom's PRS-form record of Hoffman's program, PRS-04 (observer-dependent spacetime) and the interface theory generally distinguish sharply between the *rules of the interface* — binding on the agent who has only the interface — and the *freedom of what underlies it*. This gives precisely the structure Aquinas needs: baptism is the rule of the interface, really necessary for those to whom it is given, while the underlying reality (God) is not bound by the dashboard it authored.
+Hoffman is the leading resource. In Tom's PRS-form record of Hoffman's program, PRS-03 (perception as fitness-tracking; the Interface Theory of Perception, whose solution is that perception is an adaptive interface rather than a truth-mirror) distinguishes sharply between the *rules of the interface* — binding on the agent who has only the interface — and the *freedom of what underlies it*; PRS-04 (observer-dependent spacetime) adds that distinct agents construct mutually consistent interfaces through agent-to-agent interaction, which is what makes the rule public rather than private. This gives precisely the structure Aquinas needs: baptism is the rule of the interface, really necessary for those to whom it is given, while the underlying reality (God) is not bound by the dashboard it authored.
 
 Friston supplies the moral-computation half. In Tom's PRS-form record of Friston's program, PRS-04 (the organism as an active modeler) frames agency as inference *under the resources and evidence available* to the agent. Culpability, on this reading, tracks the model the agent could actually have built from its perceived evidence — which naturalizes "invincible ignorance excuses": you are answerable for the computation your resources permitted, not for evidence you could never access.
 
@@ -51,7 +51,8 @@ This is the project's central claim in near-explicit form. Agents are individuat
 
 ## Bridges
 
-- **Hoffman PRS-04 (observer-dependent spacetime; interface rules)** — *formal-speculative.* Necessity binding the interface-bound agent without binding the underlying reality.
+- **Hoffman PRS-03 (perception fitness-tracking; Interface Theory)** — *formal.* The interface/underlying distinction itself: necessity binding the interface-bound agent without binding the underlying reality.
+- **Hoffman PRS-04 (observer-dependent spacetime)** — *formal-speculative.* Mutually consistent interfaces across agents — why the rule is a public institution, not a private one.
 - **Friston PRS-04 (active modeler under resource limits)** — *formal.* Culpability tracks the computation the agent's resources permitted; "ignorance excuses" naturalized.
 - **Kastrup PRS-02 (identity within monism)** — *metaphysical.* Operative reality remains dispositional.
 - **Wright (covenant inclusion)** — *theological, high within method.* Salvation as membership; exceptions are still membership. Guards against fiat-universalism.

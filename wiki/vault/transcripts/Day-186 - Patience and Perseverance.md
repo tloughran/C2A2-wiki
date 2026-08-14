@@ -15,7 +15,7 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-186 - Patience and Perseverance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-28T00:21:51"
+last_qc_at: "2026-08-13T04:22:28"
 last_qc_outcome: "pass"
 tags: [summa, day/186, pars/II, q/136]
 ---

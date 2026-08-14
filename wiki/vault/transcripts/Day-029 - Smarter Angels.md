@@ -7,6 +7,7 @@ summa_ref: Prima Pars, Q.55 + Q.56
 duration_seconds: 721
 word_count: 1788
 raw_asr_word_count: 1788
+word_count_note: "2026-08-13 QC — SELF-CORRECTION, recorded rather than quietly reverted. This run first read word_count == raw_asr_word_count == 1788 as the recorded copy defect and changed word_count to 1861. That was WRONG and has been reverted. Measured on the constitution's regex [A-Za-z']+ over the ## Transcript section: prose lines alone give 1787, the editorially added `### Q.N` and `**Article M**` headers add 70, and the live ASR (259 segments, matching segment_count exactly) gives 1788. So 1788 is the prose-only render count and it is correct; this is an auto-render that preserves every ASR token, exactly as the 2026-08-10 cleanup blockquote already argued. The 1861 came from a header-inclusive ruler — the same ruler that produced the synthesis length_note's 1858, which is therefore not independent corroboration but the same mistake twice. The word-count method finding of 2026-08-13T10:45 named the heading-line convention as an unrecorded second axis; this is that axis producing a false positive on a live pair, and the lesson is that word_count == raw_asr_word_count is a copy-defect SUSPICION, never a finding, on any file carrying the auto-render marker."
 length_tier: short
 segment_count: 259
 caption_kind: asr
@@ -15,7 +16,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-029 - Smarter Angels - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-10T20:25:52"
+last_qc_at: "2026-08-13T12:22:24"
 last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-11  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/029, pars/I]

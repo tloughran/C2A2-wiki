@@ -18,7 +18,7 @@ evidence_strength_summary: "Broaden-and-build = empirical (high); active inferen
 mind_first_reframe: "Patience and perseverance are one self-regulatory competence viewed along two axes — holding a far-horizon goal-prior above the narrowing pull of sorrow (affect) and across the decay of delay (time)."
 central_theme_thread: "Perseverance is the name for working out salvation in fear and trembling under temporal scarcity — a limited perspective computing toward loving unity across time it cannot compress, aware of its need for guidance from one who perceives more of the whole."
 tags: [synthesis, day/186, theme/persistence-under-time]
-last_qc_at: "2026-08-05T02:27:33"
+last_qc_at: "2026-08-13T04:22:28"
 last_qc_outcome: "pass"
 ---
 

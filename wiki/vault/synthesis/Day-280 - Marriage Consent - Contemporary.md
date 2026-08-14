@@ -16,7 +16,7 @@ length_ratio_to_target: 0.53
 mind_first_reframe: "Expressed consent is necessary because coupling between two perspectival agents can occur only across a shared interface — the union is realized at the boundary where signs are exchanged, not in two private wills that never meet."
 central_theme_thread: "Because no spouse can inhabit the other's interior, loving unity must be built on signs offered and received in trust — the central theme's epistemology made liturgical."
 tags: [synthesis, day/280, theme/expressed-consent-as-shared-boundary]
-last_qc_at: "2026-08-05T06:27:19"
+last_qc_at: "2026-08-13T08:22:43"
 last_qc_outcome: "pass"
 ---
 

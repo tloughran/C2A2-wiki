@@ -8,7 +8,7 @@ length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism, PRS-01 morphogenetic control / target morphology)"
-  - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-03 Universal Christ)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-21 cosmic-Christ frame as the spirituality pairing for metaphysical monism)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-16 expected free energy as unified objective)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; sacramentum as sign of new creation)"
 evidence_strength_summary: "Levin teleology empirical at biological scale, analogical for marital ends; Friston preference/goal formal; Rohr/Wright theological. The 'goods name the telos' reading is conceptual."
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.58
 mind_first_reframe: "The three goods of marriage name the real telos of the marital higher-individual — its generativity (proles), integrity (fides), and self-transcending orientation (sacramentum) — grounded in the demonstrated reality of collective-level goal-directedness."
 central_theme_thread: "The goods of marriage specify the project's loving-unity telos for the dyad: cooperation (fides), overflow into new perspectives (proles), and participation in the whole that exceeds the pair (sacramentum)."
 tags: [synthesis, day/282, theme/telos-of-union]
-last_qc_at: "2026-08-05T06:27:29"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-13T08:23:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 282 — Goods of Marriage (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the reality of goal-directedness at the level of
 
 ## Resource
 
-The Levin-tradition program is the leading resource. Tom's PRS-form record of Levin's work (PRS-01, *morphogenetic control / target morphology*; PRS-32, *goal-directed cognition scaling from cells to organisms*) establishes that higher-order biological individuals possess *genuine* target states — an organism pursues a morphology no cell represents, correcting perturbations toward *the whole's* goal. This is the empirical warrant for saying a union can have ends proper to it: goal-directedness is real at the collective level, demonstrated in regeneration and morphogenesis. Mapped onto marriage, the three goods read as a layered target state of the dyadic individual: *proles* as the union's generativity (its capacity to produce new individuals, as organisms do), *fides* as the integrity-maintenance of the unit (the fidelity that keeps the higher individual coherent against defection), and *sacramentum* as the union's orientation beyond itself toward the whole. The Friston-tradition program formalizes the goal: PRS-16 (*expected free energy as the unified objective*) treats an agent's "preferred outcomes" as priors the system acts to realize — the goods are the dyad's preferred-outcome priors. Theologically, PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) reads *fides* and *proles* as love made bodily and fruitful, and PRS-03 (*the Universal Christ*) reads *sacramentum* as the union's participation in the cosmic sign; Wright's inaugurated eschatology (PRS-03) reads the sacramental good as new-creation sign rather than legal indissolubility alone.
+The Levin-tradition program is the leading resource. Tom's PRS-form record of Levin's work (PRS-01, *morphogenetic control / target morphology*; PRS-32, *goal-directed cognition scaling from cells to organisms*) establishes that higher-order biological individuals possess *genuine* target states — an organism pursues a morphology no cell represents, correcting perturbations toward *the whole's* goal. This is the empirical warrant for saying a union can have ends proper to it: goal-directedness is real at the collective level, demonstrated in regeneration and morphogenesis. Mapped onto marriage, the three goods read as a layered target state of the dyadic individual: *proles* as the union's generativity (its capacity to produce new individuals, as organisms do), *fides* as the integrity-maintenance of the unit (the fidelity that keeps the higher individual coherent against defection), and *sacramentum* as the union's orientation beyond itself toward the whole. The Friston-tradition program formalizes the goal: PRS-16 (*expected free energy as the unified objective*) treats an agent's "preferred outcomes" as priors the system acts to realize — the goods are the dyad's preferred-outcome priors. Theologically, PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) reads *fides* and *proles* as love made bodily and fruitful, and PRS-21 (*the cosmic-Christ frame as the spirituality pairing for the network's metaphysical monism — "creation as the first incarnation"*) reads *sacramentum* as the union's participation in the cosmic sign; Wright's inaugurated eschatology (PRS-03) reads the sacramental good as new-creation sign rather than legal indissolubility alone.
 
 ## Solution (proposed, speculative)
 
@@ -46,7 +46,7 @@ The project's telos is loving unity computed by limited agents. The goods of mar
 
 - **Levin PRS-01 / PRS-32 (empirical at biological scale, analogical for the dyad):** higher individuals have real target states; warrant for union-level ends.
 - **Friston PRS-16 (formal):** preferred-outcome priors as the formal shape of "goods"/ends.
-- **Rohr PRS-04 / PRS-03 (theological):** fides/proles as embodied fruitful love; sacramentum as cosmic-Christ sign.
+- **Rohr PRS-04 / PRS-21 (theological):** fides/proles as embodied fruitful love; sacramentum as cosmic-Christ sign.
 - **Wright PRS-03 (scriptural/theological):** the sacramental good as new-creation sign, not bare indissolubility.
 
 ## Where this leaves us
