@@ -3,7 +3,7 @@ day: 63
 title: "Friendship in Heaven (Contemporary)"
 pairs_with: "[[Day-063 - Friendship in Heaven]]"
 length_target_words: 3000
-length_actual_words: 1820
+length_actual_words: 1788
 length_tier: long
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (positivity resonance; Love 2.0; relational well-being)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (active inference at terminal-prior alignment)"
   - "wiki/traditions/kastrup/wiki.md (mind-at-large as relational ground)"
 evidence_strength_summary: "Fredrickson on relational well-being empirically robust; Stump on union and friendship theological-philosophical strong; Aquinas's accompaniment-conditions argument structurally preserved by the contemporary relational frame"
-length_ratio_to_target: 0.607
+length_ratio_to_target: 0.596
 length_note: "Long-tier transcript distilled to a thematic accompaniments-and-attainment register over Q.4–Q.5 (16 articles). Per the constitution (Summa.md and the length-policy memory), long-tier syntheses 'pick the two or three most generative threads from the transcript rather than mirroring every article'; the relational-flourishing and grace-enabled-attainment threads carry the load and adding length would be padding."
 mind_first_reframe: "Happiness's accompaniment-conditions (vision, delight, comprehension, rectitude, body, fellowship of friends) preserve as the constitutively relational structure of the alter's integrative act under mind-monism; grace is the substrate-source's communication of its own integration-pattern to the perspective-limited alter."
 central_theme_thread: "Loving unity is constitutively relational; the alter works out salvation 'with' the friends-becoming-aligned-together under the substrate-network's pedagogical care, not solitarily — and Q.4 a.4's rectitude-of-will is the daily-task content of dispositional formation."
-last_qc_at: "2026-08-06T00:20:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T11:57:41"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/063, theme/relational-flourishing, theme/friendship]
 ---
 # Day 63 — Contemporary Parallel: *Vision, Delight, Comprehension, and the Friends of Heaven as Constitutive Accompaniments of Loving Union*
@@ -28,7 +28,9 @@ Day 62 established that happiness consists in the integrative act of contemplati
 
 Q.4 a.1: delight is required for happiness — *because happiness is nothing else but the attainment of the sovereign good, it cannot be without concomitant delight*. Q.4 a.2: vision (knowledge) ranks before delight — we cannot delight in what we do not know. Q.4 a.3: comprehension (the will's grasping-and-resting, in Aquinas's translation of *catching*) is necessary. Q.4 a.4: rectitude of the will is necessary. Q.4 a.5: the body is required for *perfect* happiness (in the resurrected state — Wright's territory). Q.4 a.6: bodily goods are required for *imperfect* happiness in this life. Q.4 a.7: external goods are required for *imperfect* happiness in this life. Q.4 a.8: the *fellowship of friends* is required for happiness *in this life*; the friends of heaven *contribute to the well-being* (bene esse) of beatitude though they are not strictly required for *esse*.
 
-Q.5 covers attainment: whether man can attain happiness (yes, in part), whether one man can be happier than another (yes), whether happiness is attainable in this life (only imperfectly), whether happiness once attained can be lost (not in heaven; yes in this life), whether man can attain happiness by his natural powers (no, perfect happiness requires grace), whether the help of grace is needed (yes), whether every man desires happiness (yes), whether all creatures desire happiness (in the analogous sense — formally yes).
+Q.5 covers attainment: a.1 whether man can attain happiness (yes, but not without the divine assistance Habash glosses as the *light of glory*); a.2 whether one man can be happier than another (yes — equal in object, unequal in the disposition to enjoy it); a.3 whether happiness is attainable in this life (only imperfectly); a.4 whether happiness once attained can be lost (not in heaven; yes in this life); a.5 whether man can attain happiness by his natural powers (no); a.6 whether man attains happiness *through the action of some higher creature* (no — no creature can communicate its happiness to another, since the light of glory is in creatures only by participation); a.7 whether any good works are necessary that man may receive happiness from God (yes — *not* because the divine power is insufficient, but "that the order in things be observed": creatures attain their end through action); a.8 whether every man desires happiness (yes).
+
+Article 7 is doing more work for the contemporary frame than its placement suggests, and it is worth marking before the reframe begins. Aquinas's reason for requiring works is not transactional — it is that acting-toward-the-end *is* the mode in which a created thing attains its end at all, and grace elevates that order rather than bypassing it. Habash's own gloss closes the loop back to Q.4 a.4: action disposes the agent better to receive the end, because rectitude of will is requisite to the vision, and actions increase the dispositions that order us to it.
 
 ## Problem
 

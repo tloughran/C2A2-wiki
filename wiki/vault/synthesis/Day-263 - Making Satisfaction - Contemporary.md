@@ -16,7 +16,7 @@ evidence_strength_summary: "Seal-as-trust-condition is humanistic-empirical (McG
 mind_first_reframe: "The seal is reframed as the constitutive trust-condition that makes honest error-disclosure possible (McGilchrist PRS-06, Friston), and satisfaction as the corrective action returning a disturbed equality to its set-point (Levin PRS-03, Friston), with 'due honor' read as a relation set right rather than a ledger balanced (Rohr PRS-7)."
 central_theme_thread: "The seal is the held space in which a perspective-limited agent can safely disclose its hidden deviation, and satisfaction is that agent's resource-bounded labor of re-aligning the disturbed relation toward loving unity — both conditions of a finite perspective being re-included."
 tags: [synthesis, day/263, theme/trusted-channel-and-restored-equality]
-last_qc_at: "2026-08-05T22:28:30"
+last_qc_at: "2026-08-14T00:21:40"
 last_qc_outcome: "pass"
 ---
 

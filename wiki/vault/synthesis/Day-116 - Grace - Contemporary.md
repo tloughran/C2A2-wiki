@@ -14,6 +14,7 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociated points of view within one consciousness)"
   - "traditions/fredrickson/wiki.md (positivity resonance as biological substrate of love)"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — divine pattern present in all creation)"
+  - "traditions/wright/prs_triplets.md (PRS-13 God's Homecoming — salvation as inclusion in the covenanted people united with God)"
   - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category)"
 evidence_strength_summary: "Hylomorphic-form claim: formal/philosophical (medium confidence under analytic Thomism). Levin morphogenetic teleology: empirical (high). Hoffman interface: formal/mathematical (medium). Kastrup idealism: metaphysical hypothesis (speculative). Theological claims about divine indwelling: theological (held within tradition)."
 mind_first_reframe: "Aquinas's grace-as-accidental-form-in-the-soul becomes, under mind-monism, the structural thinning of the dissociative barrier between an alter and the wider mind — real, located, qualitative, but not substantial; the gratuitous expansion of what the agent can hold."
@@ -63,7 +64,7 @@ Where evidence stands: Levin's morphogenetic teleology is *empirical* and increa
 
 ## The central-theme thread
 
-Grace is exactly where this project's central claim shows itself most plainly. Conscious agents are individuated by the limitations of their perspective. The limited perspective cannot, by its own resources, reach the simple whole in which all limited perspectives are contained. The computational task is to grow toward loving unity *from within* the limitation. Aquinas's grace is the name for the structural change that makes that growth possible — the thinning of the dissociative barrier, the gratuitous expansion of what the agent can hold. "We work out our salvation in fear and trembling" (Phil 2:12) — Wright's reading: included in the people gathered around the risen Christ — because the computation is real, the resources are real, and the limitation is real. Grace is what tilts the computation toward its target.
+Grace is exactly where this project's central claim shows itself most plainly. Conscious agents are individuated by the limitations of their perspective. The limited perspective cannot, by its own resources, reach the simple whole in which all limited perspectives are contained. The computational task is to grow toward loving unity *from within* the limitation. Aquinas's grace is the name for the structural change that makes that growth possible — the thinning of the dissociative barrier, the gratuitous expansion of what the agent can hold. "We work out our salvation in fear and trembling" (Phil 2:12) — Wright's reading (`traditions/wright/prs_triplets.md`, PRS-13): included in the people gathered around the risen Christ — because the computation is real, the resources are real, and the limitation is real. Grace is what tilts the computation toward its target.
 
 ## Bridges
 

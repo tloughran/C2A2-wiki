@@ -16,13 +16,13 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-263 - Making Satisfaction - Contemporary]]"
 tags: [summa, day/263, pars/supplement, q/penance]
-last_qc_at: "2026-07-28T20:23:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T00:21:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 263 — Making Satisfaction
 
-> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.12-13). Verbatim ASR, lightly cleaned. Continuing the Supplement's treatment of the sacrament of Penance.
+> Austin Habash's daily walk through the *Summa* (Supplement, Suppl. Q.11-12). Verbatim ASR, lightly cleaned. Continuing the Supplement's treatment of the sacrament of Penance.
 
 [00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening [music] to the Summa in a Year podcast, where we study St. Thomas
 

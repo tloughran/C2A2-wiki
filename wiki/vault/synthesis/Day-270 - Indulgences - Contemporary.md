@@ -17,7 +17,7 @@ evidence_strength_summary: "The treasury-as-shared-field and one-resource-meetin
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-08-10T06:29:37"
+last_qc_at: "2026-08-14T18:35:44"
 last_qc_outcome: "rewrote"
 ---
 
@@ -61,4 +61,4 @@ Indulgences bring the central claim to a quiet climax. The synthesis's governing
 
 ## Where this leaves us
 
-This closes the Supplement's arc on the power of the keys (Days 266-270): the keys as delegated collective authority (266), bounded by membership (267), exercised in medicinal severance (268), reversed in restoring absolution (269), and now extended into the shared treasury the whole applies to its members (270). The next run continues the Supplement's last things. Open thread: the treasury's *form* as a shared field and Synergistic Coil is firm; its *supernatural* economy — Christ's infinite merit, temporal punishment, dispensation before God — is theological and disputed, and the synthesis leaves it explicitly so. Keep the Synergistic Coil attributed to Tom, not to any tradition.
+This closes the Supplement's arc on the power of the keys (Days 266-270): the keys as delegated collective authority (266), bounded by membership (267), exercised in medicinal severance (268), reversed in restoring absolution (269), and now extended into the shared treasury the whole applies to its members (270). Day 271 ("Public Penance", Suppl. Q.27-28) carries this forward by closing the treatise on indulgences (*whom* they avail) and opening the solemn rite of public penance — turning from the store the whole *applies* to a member to the satisfaction a member *renders* visibly before the whole. Open thread: the treasury's *form* as a shared field and Synergistic Coil is firm; its *supernatural* economy — Christ's infinite merit, temporal punishment, dispensation before God — is theological and disputed, and the synthesis leaves it explicitly so. Keep the Synergistic Coil attributed to Tom, not to any tradition.

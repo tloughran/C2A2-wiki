@@ -3,7 +3,7 @@ day: 64
 title: "Willful Ignorance (Contemporary)"
 pairs_with: "[[Day-064 - Willful Ignorance]]"
 length_target_words: 2200
-length_actual_words: 1610
+length_actual_words: 1571
 length_tier: medium
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS on action under uncertainty; expected free energy)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (analytic idealism; protective vs. predatory dissociation)"
   - "wiki/traditions/fredrickson/wiki.md (broaden-and-build vs. narrow-and-defend)"
 evidence_strength_summary: "Stump on willed ignorance theological-philosophical strong; Friston on action-under-uncertainty mature; McGilchrist on left-hemispheric closure strong neuropsychiatric evidence"
-length_ratio_to_target: 0.732
-length_note: "Q.6–Q.7 (12 articles) treated thematically as the structural-and-diagnostic apparatus of voluntary action. Aquinas's voluntariness/circumstances frame is structurally near-identical to the contemporary action-under-uncertainty frame, so the prose stays compact while the willed-ignorance keystone moves get the load-bearing attention; substantive integrity is preserved at 1610 words."
+length_ratio_to_target: 0.714
+length_note: "Q.6–Q.7 (12 articles) treated thematically as the structural-and-diagnostic apparatus of voluntary action. Aquinas's voluntariness/circumstances frame is structurally near-identical to the contemporary action-under-uncertainty frame, so the prose stays compact while the willed-ignorance keystone moves get the load-bearing attention; substantive integrity is preserved at 1571 words. QC 2026-08-14: Q.6's article numbering corrected against the ASR and the a.3->a.8 voluntary-omission arc added."
 mind_first_reframe: "Voluntariness preserves under active inference (the alter's policy-selection from a principle within the agent under terminal-prior knowledge), and willed ignorance is the alter's left-hemispheric refusal of disruptive information — distinguishable as predatory (culpable) versus protective (developmentally-tractable) under Kastrup's dissociation frame."
 central_theme_thread: "The daily task includes catching one's own willed ignorance — the alter's openness to second-person diagnostic surfacing under the substrate-network's pedagogical care is the integrity-of-becoming under perspective-limitation, while closure-against-the-diagnostic compounds the limitation rather than working with it."
-last_qc_at: "2026-08-06T00:20:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T11:57:57"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/064, theme/voluntariness, theme/willed-ignorance, theme/circumstances]
 ---
 # Day 64 — Contemporary Parallel: *Voluntariness, Willed Ignorance, and the Architecture of Human Acts*
@@ -28,7 +28,9 @@ Day 63 articulated the constitutively relational and grace-enabled structure of 
 
 Q.6 a.1 establishes that human acts are *voluntary* — they have a principle within the agent and they imply *knowledge* of the end. The alter knows what it is moving toward, and moves toward it from within. Aquinas immediately adds the central-theme-relevant qualifier (Q.6 a.1 ad 1): *God moves man to act because every movement either of the will or of nature proceeds from God as from the first mover; and just as it is not incompatible with nature that the natural movement be from God as the first mover, so it is not contrary to the essence of a voluntary act that it proceed from God in as much as the will is moved by God; nevertheless both natural and voluntary movements have this in common, that it is essential that they should proceed from a principle within the agent.*
 
-Q.6 a.2: irrational animals have no voluntary acts because they have no rational appetite. Q.6 a.3-5: violence and fear and concupiscence and ignorance can affect voluntariness — sometimes excusing, sometimes not. Q.6 a.7-8: the *willed ignorance* case is the diagnostic moment: when the alter's ignorance is itself something the alter has chosen (avoidably, with culpable refusal-to-know), the resulting act remains voluntary and culpable.
+Q.6 a.2: irrational animals have no voluntary acts because they have no rational appetite. Q.6 a.3: there can be voluntariness without any act — the not-doing is itself willed, which is the structural seed of everything below. Q.6 a.4–5: violence, and whether violence causes involuntariness. Q.6 a.6: whether fear causes involuntariness *simply*. Q.6 a.7: whether concupiscence causes involuntariness. Q.6 a.8: whether *ignorance* causes involuntariness — the diagnostic moment, and the one Habash flags as "likely to be more interesting." When the alter's ignorance is itself something the alter has chosen (avoidably, with culpable refusal-to-know), the resulting act remains voluntary and culpable.
+
+The a.3 → a.8 arc is the load-bearing one for the contemporary frame: a.3 establishes that a *non-act* can carry voluntariness, and a.8 applies exactly that to not-knowing. Willed ignorance is not a special exception bolted onto the theory of action; it is the general case of voluntary omission applied to the epistemic register.
 
 Q.7 covers circumstances: who, what, where, by what aids, why, how, when. The medieval enumeration is structurally identical to the contemporary action-under-uncertainty frame — circumstances are the relevant features the alter must take into account in policy-selection.
 

@@ -14,8 +14,8 @@ language: en
 fetched_at: 2026-06-25
 fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
-last_qc_at: "2026-08-10T08:24:36"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-14T12:21:20"
+last_qc_outcome: "pass"
 synthesis: "[[Day-305 - Heavenly Crowns - Contemporary]]"
 tags: [summa, day/305, pars/supplement, q/95]
 ---

@@ -3,7 +3,7 @@ day: 65
 title: "Mindful Willing (Contemporary)"
 pairs_with: "[[Day-065 - Mindful Willing]]"
 length_target_words: 2200
-length_actual_words: 1500
+length_actual_words: 1756
 length_tier: medium
 karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (PRS on hierarchical generative models; means-end policy)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/hawkins/wiki.md (HTM on goal-representation)"
   - "wiki/traditions/levin/wiki.md (multi-scale agency; will-analog at biological scales)"
 evidence_strength_summary: "Friston/Hawkins formal frames mature; the structure-of-will-directedness preserves cleanly under contemporary frames; the central-theme thread on perspective-limited will-movement-toward-universal-good is the synthetic move"
-length_ratio_to_target: 0.682
-length_note: "Q.8–Q.9 (9 articles) treated thematically as the causal architecture of policy-selection. The medieval formal-vs-material distinction at the will-level and the multi-source movement of the will (intellect, passion, self-movement, exterior bodies, God) are structurally well-paired with the hierarchical-prior frame, so the prose stays compact at 1500 words while doing the substantive bridging work."
+length_ratio_to_target: 0.798
+length_note: "Q.8–Q.9 (9 articles) treated thematically as the causal architecture of policy-selection. The medieval formal-vs-material distinction at the will-level and the multi-source movement of the will (intellect, passion, self-movement, exterior bodies, God) are structurally well-paired with the hierarchical-prior frame, so the prose stays compact while doing the substantive bridging work. QC 2026-08-14: Q.9's six articles renumbered against the ASR (a.5 on heavenly bodies had been erased as 'exterior bodies'), and the Philippians 2:12-13 adjacency added — 1756 words."
 mind_first_reframe: "The will's formal directedness toward the universal good preserves under hierarchical active inference (terminal vs. instrumental priors); the multi-source movement of the will is the multi-source causal architecture of policy-selection, with the substrate-source's primary causation operating *through* secondary causes rather than against them."
 central_theme_thread: "The will is constitutively perspective-limited but formally directed toward the universal good; the daily task is to coordinate intellect, passion, self-movement, and the substrate-network's pedagogy so that the alter's actual policy-selection aligns with the substrate-source's loving unity rather than mis-locating the universal good in particular candidates."
-last_qc_at: "2026-08-06T00:20:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T11:57:58"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/065, theme/will-structure, theme/means-and-end]
 ---
 # Day 65 — Contemporary Parallel: *The Structure of the Will and What Moves It*
@@ -32,7 +32,9 @@ Q.8 a.2: the will is of the end *and* the means. Both fall under the *aspect goo
 
 Q.8 a.3: the will is moved by *the same act* to the end and to the means *when* the means is willed precisely *because* of the end (the end is the formal cause of willing the means). Otherwise distinct acts.
 
-Q.9 covers movers of the will: a.1 the intellect (the will is moved by the intellect's apprehension of good); a.2 the will moves itself in willing the means by virtue of willing the end; a.3 the will moves itself in willing what it has not yet willed; a.4 the sensitive appetite (passion) can move the will by altering the apprehension; a.5 the will is moved by exterior bodies (only mediately, through sense apprehension); a.6 the will is moved by God (as primary mover, without removing voluntariness).
+Q.9 covers movers of the will, and the order of its six articles is itself an argument — it walks outward from the nearest mover to the most remote: a.1 the *intellect* (nothing can be willed unless it is first apprehended as good); a.2 the *sensitive appetite* (passion moves the will by altering how the good appears); a.3 the will *moves itself* (in willing the means by virtue of willing the end); a.4 an *exterior principle*; a.5 a *heavenly body* — answered in the negative; and a.6 *God alone as exterior principle*, moving the will naturally and not violently.
+
+Article 5 deserves marking rather than quiet omission, because it is the article of this question that most resists carrying over. Aquinas asks whether the sun and moon move the human will and answers no: anything in the physical environment can affect the spiritual faculties only indirectly, by presenting itself to the senses or by impeding the body's use, since the will is not housed in a bodily organ though in this life it depends on the body to act. The astronomical framing is dead; the *structure* of the answer is not, and it is the structure the contemporary frame inherits — a principled distinction between what modulates the conditions of apprehension and what moves the will as such.
 
 ## Problem
 
@@ -68,7 +70,9 @@ Today's day reinforces the central-theme commitment that the alter's will is *co
 
 *Salvation in fear and trembling* under this register is the alter's daily-task work of *coordinating its multiple movement-sources toward the substrate-source's loving unity*. The alter cannot will arbitrarily; it is constitutively oriented. The work is to recognize the formal directedness, to refine the apprehension under second-person care, to manage the passions toward right-perception, to receive the substrate-network's pedagogy, and so to align the multi-source policy-selection with the substrate-source's own integrative dynamics.
 
-Wright on covenanted-community as the locus of will-formation. Rohr on contemplative-prayer as the alter's deliberate alignment of multi-source movement under the substrate-source's loving primary causation. Stump on the second-personally-known-good as the formal completion of the will's directedness.
+There is a coincidence here worth naming, because it is not a coincidence the commentary should let pass. The verse Aquinas puts at the head of Q.9 a.6 — the article establishing that God moves the will *naturally and not violently* — is Philippians 2:13: God at work in you both to will and to work. That is the verse immediately following the one this whole project takes as its central-theme anchor, Philippians 2:12's working out of salvation in fear and trembling. Paul writes them as a single thought, and Aquinas is reading the back half of it to answer precisely the question of how the will can be moved by God and still be the agent's own.
+
+This is the tightest scriptural fit the central theme has yet had with the article under discussion. On Wright's reading, the two verses together are not a paradox to be managed but the ordinary shape of covenant participation: the agent's working and God's working are not competing quantities in a fixed budget, so that more of one means less of the other. The perspective-limited alter's genuine agency and the substrate-source's primary causation are the same act described from inside and from outside — which is exactly what the mind-monist frame needs to say, and here it is said scripturally before it is said metaphysically. Rohr on contemplative prayer as the alter's deliberate alignment of multi-source movement under that primary causation; Stump on the second-personally-known-good as the formal completion of the will's directedness.
 
 ## Bridges
 
@@ -78,7 +82,7 @@ Wright on covenanted-community as the locus of will-formation. Rohr on contempla
 - **Hawkins-tradition wiki, PRS on HTM goal-representation.** Cortical-architecture frame for goal-encoding. *Strong empirical.*
 - **Levin-tradition wiki, PRS on multi-scale agency.** Will-analog at biological scales. *Strong empirical.*
 - **Kastrup-tradition wiki, on substrate-source-as-primary-mover.** Mind-monist frame for the medieval primary-cause-of-will claim. *Philosophical-conceptual.*
-- **Wright, *Paul and the Faithfulness of God*.** Scriptural-historical resource on covenant-formation of the will. *Scriptural-historical.*
+- **Wright, *Paul and the Faithfulness of God*** — on Philippians 2:12–13 as a single thought, and on divine and human agency as non-competitive in the Pauline corpus. This is the day's tightest scriptural anchor, since Aquinas cites 2:13 as the *sed contra* of Q.9 a.6 while the project's central theme is anchored in 2:12. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*; contemplative-prayer tradition.** Contemplative-tradition resource on multi-source alignment under substrate-source. *Contemplative theological.*
 - **Aristotle, *Nicomachean Ethics* III.** Aquinas's interlocutor.
 

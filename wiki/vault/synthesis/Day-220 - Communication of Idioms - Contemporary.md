@@ -5,6 +5,7 @@ pairs_with: "[[Day-220 - Communication of Idioms]]"
 length_target_words: 2200
 length_actual_words: 1926
 length_ratio_to_target: 0.875
+length_note: "Under the medium-tier guideline (ratio 0.875, outside ±10% but well inside the ±25% escalation band). Tier verifies correct against the transcript (3066 ASR words = medium). Not padded: Q.15's defects-of-soul catalogue and Q.16's communication of idioms converge on a single figure — wayfarer-and-comprehensor — and the commentary spends its length on that convergence rather than mirroring each article, per the constitution's pick-two-or-three-threads clause. Advisory only; recorded here so the static check's repeated ±10% flag is legible rather than re-derived each run."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — one consciousness holding a bounded alter's point of view; mind-at-large AND the finite perspective at once)"
@@ -15,8 +16,8 @@ evidence_strength_summary: "Christ as wayfarer AND comprehensor at once ~ the br
 mind_first_reframe: "Wayfarer-and-comprehensor is read as one mind genuinely spanning the comprehensive whole-vision and the limited road-walking perspective at once — a non-dual holding (Rohr) and a dissociation-without-fragmentation (Kastrup) — the very structure the project posits for the divine guide who perceives more yet walks with us."
 central_theme_thread: "This is the project's keystone figure stated in Aquinas's own terms: the one who already beholds the whole (comprehensor) while still inhabiting the limited, suffering perspective (wayfarer) is the divine guide of Phil 2 who 'perceives more of the whole than we do' yet works out the road 'in fear and trembling' alongside us."
 tags: [synthesis, day/220, theme/wayfarer-and-comprehensor]
-last_qc_at: "2026-08-06T14:30:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T16:23:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 220 — Communication of Idioms (Contemporary Parallel)

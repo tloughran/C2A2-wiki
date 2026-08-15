@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-033 - Fallen Angel - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-06T16:23:20"
+last_qc_at: "2026-08-14T20:30:39"
 last_qc_outcome: "pass"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/033, pars/I]

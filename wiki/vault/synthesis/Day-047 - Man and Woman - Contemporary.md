@@ -57,8 +57,8 @@ title: "Man and Woman (Contemporary)"
 pairs_with: "[[Day-047 - Man and Woman]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 2003
-length_ratio_to_target: 1.34
+length_actual_words: 2419
+length_ratio_to_target: 1.613
 length_note: "Covers two dense Summa questions (Q.91 + Q.92, eight articles total) with substantive Aquinas-to-contemporary linkage in nearly every article — Levin's morphogenetic frame on Q.91 a.2-a.3, alter-as-dissociative-individuation on the ontological-bridge claim, the careful typology-preserved-but-social-hierarchy-revised unpack on Q.92 a.2, and the Rohr cosmic-Christ extension on Q.92 a.3. Per the length policy's 'lean hard, run long when doing substantive linkage' rule, the over-length is doing real bridging work and should not be trimmed."
 karpathy_wiki_sources:
   - "wiki/traditions/wright/wiki.md (second-temple-Jewish temple-cosmology; Adam-Christ typology in Pauline corpus; new perspective on Paul)"

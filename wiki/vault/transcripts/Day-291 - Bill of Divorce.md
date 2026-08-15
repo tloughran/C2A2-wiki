@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-291 - Bill of Divorce - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/291, pars/suppl, q/67-68]
-last_qc_at: "2026-08-10T10:28:48"
+last_qc_at: "2026-08-14T12:21:10"
 last_qc_outcome: "pass"
 ---
 

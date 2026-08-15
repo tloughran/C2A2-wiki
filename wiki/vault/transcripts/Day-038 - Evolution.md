@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-038 - Evolution - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-06T18:31:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T20:30:57"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/038, pars/I, q/73, q/74, theme/evolution, theme/sabbath, theme/trinitarian-creation, theme/humani-generis]
 ---
@@ -120,4 +120,4 @@ But that is all for today. We have just finished covering questions 73 and 74 of
 - Aquinas's *rest as one feeling at rest eating ice cream or in prayer* (Habash's gloss) is theologically deeper than it sounds: rest as fulfilled-presence-in-the-object-of-desire. The synthesis reads this as the substrate's loving self-possession, not cessation of activity — and matches it to Kastrup PRS-01 (consciousness as the only thing that exists; substrate as its own object of rest).
 - The Trinitarian reading of Genesis 1:1–2 — Father / *beginning in which he created* (= Logos/Son) / *spirit moved over the waters* (= Holy Ghost) — is the textual hook into Wright's second-temple-Jewish Trinitarian-language scholarship and Rohr's *Universal Christ* on substrate-relationality. Both bridges land cleanly.
 - Aquinas's respectful disagreement with Augustine (*the seven days are one day represented in a sevenfold aspect* vs. *the evening and the morning was the second day, and then the third day*) — the synthesizer reads both readings as contemplating the same substrate-act under different temporal lenses (atemporal divine act vs. temporal-narrative manifestation).
-- Bridges developed in the synthesis: Wright (sabbath theology, Trinitarian reading); Levin (PRS-01/03/08, morphogenetic potential as Aquinas's *virtual presence*); Carroll (PRS-04/07, evolutionary mechanism under the arrow of time); Kastrup (PRS-01/02, rational soul as alter-mode); Rohr (Universal Christ on substrate-relationality and always-already-holy matter); CROSS-006/007 (Friston × Levin, morphogenesis as free-energy minimization); Hahn (cosmic-temple consecration); *Humani Generis* magisterial.
+- Bridges developed in the synthesis: Wright (sabbath theology, Trinitarian reading); Levin (PRS-01/03/08, morphogenetic potential as Aquinas's *virtual presence*); Carroll (PRS-11/15, evolutionary mechanism under the arrow of time); Kastrup (PRS-01/02, rational soul as alter-mode); Rohr (Universal Christ on substrate-relationality and always-already-holy matter); CROSS-006/007 (Friston × Levin, morphogenesis as free-energy minimization); Hahn (cosmic-temple consecration); *Humani Generis* magisterial.

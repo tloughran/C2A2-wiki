@@ -17,8 +17,8 @@ evidence_strength_summary: "Humility-as-calibrated-self-model = conceptual with 
 mind_first_reframe: "Humility is the well-calibrated self-model: an accurate estimate of one's own excellence that, because the self is a constructed interface-icon rather than a transparent readout, must correct for a built-in overconfidence and for the goods in other agents that one's own interface cannot see. Magnanimity and humility are the two-sided regulation of that estimate against under- and over-shoot."
 central_theme_thread: "Humility is the explicit acknowledgement of perspective-limitation: 'another may have a good hidden from me.' It is the epistemic posture that makes loving unity computable, because it is the posture under which a limited agent accepts guidance from those who see more."
 tags: [synthesis, day/198, theme/calibrated-self-model]
-last_qc_at: "2026-08-06T06:29:53"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-14T12:21:08"
+last_qc_outcome: "pass"
 ---
 
 # Day 198 — Modesty & Humility (Contemporary Parallel)

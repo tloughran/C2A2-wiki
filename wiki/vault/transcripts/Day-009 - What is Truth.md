@@ -3,7 +3,7 @@ day: 9
 video_id: r8RXqHb0NQw
 url: https://www.youtube.com/watch?v=r8RXqHb0NQw
 title: What is Truth?
-summa_ref: Prima Pars, Q.16-17
+summa_ref: Prima Pars, Q.15-16
 duration_seconds: 1292
 word_count: 3216
 raw_asr_word_count: 3216
@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-009 - What is Truth - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-11T04:25:08"
+last_qc_at: "2026-08-14T20:30:18"
 last_qc_outcome: "rewrote"
 tags: [summa, day/009, pars/I]
 ---
@@ -28,7 +28,7 @@ tags: [summa, day/009, pars/I]
 
 > Series: *Summa in a Year* by Austin Habash (Think Catholic). Day 9 of 308 published episodes.
 
-> Summa reference: *Prima Pars, Q.16-17*
+> Summa reference: *Prima Pars, Q.15-16*
 
 > Auto-generated captions (ASR), typo cleanup applied by QC 2026-08-11. The ASR is genuinely garbled in every case below; these are restorations, verified against a live refetch of `r8RXqHb0NQw`. *habish → Habash (x2); aquinus → Aquinas (x14); aquanus → Aquinas (x6); aanus → Aquinas (x3); aquantis → Aquinas (x1); Summa theologia → Summa Theologiae; "Summa New Year podcast" and "the Summa and year podcast" → "the Summa in a Year podcast" (the recorded episode-intro name garble — the earlier render half-corrected the ASR's "Suma New Year" / "Suma and year" into a new wrong form rather than the real series name); "aquinus is actual words" → "Aquinas's actual words"; "aquanus is explanation" → "Aquinas's explanation"; "aanus is term" → "Aquinas's term"; "not aquinus is" → "not Aquinas's"; "the defin of a Divine idea" → "the definition of a Divine idea"; anonimous → anonymous; Segway → segue; pontious pilate → Pontius Pilate; "black fr's gilby edition" → "Blackfriars (Gilby) edition"; "the actual ual attainment" → "the actual attainment" (ASR stutter); "three person persons" → "three persons" (ASR stutter inside the Lateran IV quotation).* Quotation restored from canonical source: the Latin definition, which the ASR rendered *"Veritas estao re intellectus"*, is **Veritas est adaequatio rei et intellectus** (Aquinas, *De veritate* q.1 a.1; Habash gives the English gloss in the next clause).
 >

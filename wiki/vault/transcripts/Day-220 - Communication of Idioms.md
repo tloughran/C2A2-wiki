@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-220 - Communication of Idioms - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/220, pars/III, q/15 q/16]
-last_qc_at: "2026-08-06T14:31:34"
+last_qc_at: "2026-08-14T16:23:03"
 last_qc_outcome: "pass"
 ---
 

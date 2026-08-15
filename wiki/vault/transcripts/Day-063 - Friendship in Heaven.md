@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-063 - Friendship in Heaven - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-11T02:31:35"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-14T11:57:41"
+last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/063, pars/I-II, q/4, q/5]
 ---
@@ -24,7 +24,7 @@ tags: [summa, day/063, pars/I-II, q/4, q/5]
 
 > Episode: <https://www.youtube.com/watch?v=BBsSFHrESTc>
 > Series: *Summa in a Year* by Austin Habash. Day 63 of 308.
-> Summa reference: *Prima Pars, Q.4 + Q.5*
+> Summa reference: *Prima Secundae, Q.4 + Q.5*
 
 > Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
 
