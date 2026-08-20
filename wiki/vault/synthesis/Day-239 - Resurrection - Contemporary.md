@@ -17,8 +17,8 @@ evidence_strength_summary: "Resurrection as 'beginning and exemplar of all good 
 mind_first_reframe: "The resurrection is read as the installation of a new attractor — life utterly immortal, a mode of embodiment that did not previously exist — with the risen body as the first node from which the pattern propagates; identity is carried by the form, so the same person is re-embodied in a transformed mode, the wounds retained not as damage but as features of the new pattern."
 central_theme_thread: "The resurrection is the loving-unity telos shown to be achievable in a body: the goal is not escape from limited embodied perspective but its transformation, the same form re-expressed in a mode where limitation no longer means corruption — the first instance of what the whole computation is for."
 tags: [synthesis, day/239, theme/identity-through-transformation]
-last_qc_at: "2026-08-09T22:32:41"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-18T00:19:52"
+last_qc_outcome: "pass"
 ---
 
 # Day 239 — Contemporary Parallel: The First Instance of a New Mode of Being

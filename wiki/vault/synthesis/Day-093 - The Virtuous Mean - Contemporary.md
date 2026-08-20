@@ -7,19 +7,19 @@ length_target_words: 1500
 length_actual_words: 1261
 length_ratio_to_target: 0.841
 karpathy_wiki_sources:
-  - "stump/wiki.md, stump/prs_triplets.md — PRS-04 (virtue-as-habituation)"
-  - "fredrickson/wiki.md, fredrickson/prs_triplets.md — PRS-02 (positivity resonance, broaden-and-build)"
+  - "stump/prs_triplets.md — PRS-24 (acquired vs infused virtue: the practice-built track), PRS-09 (virtue as cooperative causality) [corrected 2026-08-16 from PRS-04, which is the final-causality-and-modern-biology entry and carries no virtue claim]"
+  - "fredrickson/prs_triplets.md — PRS-02 (love as measurable neurophysiological synchrony; the coupling mechanism). Broaden-and-build cited to Fredrickson's corpus: it has no numbered entry in this register."
   - "friston/wiki.md (active inference, optimal-policy-under-constraints, precision-weighting)"
-  - "levin/wiki.md, levin/prs_triplets.md — PRS-03 (multi-scale agency, coupling across scales)"
+  - "levin/prs_triplets.md — PRS-09 (cognitive attribution across scales), PRS-40 (light-cone convergence as the cross-scale coupling criterion; extended beyond its alignment home) [corrected 2026-08-16 from PRS-03, which is the morphological-attractor formalism and carries no scale-gradation claim]"
   - "mcgilchrist/wiki.md (attentional balance, asymmetric integration)"
-  - "wright (canonical: Paul and the Faithfulness of God) — agape as covenant-loyalty"
-  - "rohr (canonical: Universal Christ) — charity as non-dual integration"
-  - "master/cross_program_index.md (CROSS-09 network-of-virtues); master/paradigm_flags.md (FLAG-09)"
+  - "wright/prs_triplets.md — PRS-13 (God's Homecoming: salvation as participatory inclusion in the covenanted people) [was canonical-fallback only; the wright node exists on disk]"
+  - "rohr/prs_triplets.md — PRS-9 (contemplative practice as the operational pathway from perspective-limitation to inhabited loving unity) [was canonical-fallback only; the rohr node exists on disk]"
+  - "NO master-index anchor: CROSS-009 is Friston x McGilchrist precision-weighting, not a network-of-virtues entry, and no FLAG-09/FLAG-009 exists in master/paradigm_flags.md. Prior cites to both removed; the coupled-network reading is stated as this synthesis's own Coil-form proposal."
 mind_first_reframe: "Under conscious-realist monism the 'mean of virtue' is the optimal action-and-affect policy of a perspective-limited agent under its constraints; formalized as active-inference precision-weighting, Aquinas's real/rational-mean bifurcation (Q.64.2) maps onto exogenous vs. endogenous precision-dominated optimization, and 'right reason' names the agent's best policy under its commitments and situation — normative because the underlying mind-stuff itself has normative structure. The connection-of-virtues (Q.65) becomes a network-topology fact: prudence hubs the natural network, charity hubs the infused network."
 central_theme_thread: "The perspective-limited agent's computation toward loving unity is constrained at every step by what it can perceive and feel; the mean is the good policy under those constraints, and the connection of the virtues is the network-fact that good policies couple — cut one and the rest drift. We work out salvation in fear and trembling because the disposition-network is fragile and no agent can hold it coherent alone — hence the need for community and for contemplative testimony to charity's hub-role."
 evidence_strength_summary: "The 'mean of virtue' as objective-rule (justice) vs. agent-state-sensitive (temperance, fortitude) bifurcation is well captured by Friston's distinction between exogenous and endogenous precision-weighting — empirically robust. The connection-of-virtues network claim has formal-network support and partial empirical support from coupled-trait psychometrics. Theological-virtue claims about charity-as-integration-hub are Wright/Rohr territory — historiographically and contemplatively grounded, not natural-science-empirical."
-last_qc_at: "2026-08-12T14:28:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-16T20:19:49"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/093, theme/mean-of-virtue, theme/connection-of-virtues, theme/charity-as-hub]
 ---
 
@@ -42,13 +42,13 @@ Friston's active inference framework supplies a direct formalization of P1. The 
 
 Aquinas's bifurcation (Q.64.2) is exactly Friston's distinction. Empirically robust at the modeling level.
 
-PRS-04 in the Stump-tradition wiki: virtue-as-habituation is a *stable parameterization* of the agent's generative model, not a mere disposition. The Thomistic claim that virtue takes time to form and degrades under disuse fits the active-inference picture: stable parameterizations require repeated evidence and decay under repeated counter-evidence.
+PRS-24 in the Stump-tradition wiki: the Thomistic distinction between *acquired* virtues (built up by practice) and *infused* virtues (received in an instant with grace). The acquired track is what the active-inference picture formalizes directly — virtue-as-habituation is a *stable parameterization* of the agent's generative model, not a mere disposition, and the Thomistic claim that acquired virtue takes time to form and degrades under disuse fits it exactly: stable parameterizations require repeated evidence and decay under repeated counter-evidence. PRS-09 in the same wiki supplies the other track, virtue as cooperative causality — grace perfecting the soul's natural powers so that the resulting act is genuinely the agent's own. The two tracks matter for Q.65, because Aquinas's connection-of-virtues doctrine runs differently through each.
 
-PRS-02 in the Fredrickson-tradition wiki: positivity resonance is an empirically supported mechanism for *coupling* across agents and across an agent's own affective subsystems. The broaden-and-build account predicts that high-quality positive interactions widen the action repertoire (broaden) and build durable inter- and intrapersonal resources. Mixed-but-meaningful empirical support: the broadening effect is replicated; long-term build effects are real but smaller than initial estimates.
+PRS-02 in the Fredrickson-tradition wiki: positivity resonance is an empirically supported mechanism for *coupling* across agents and across an agent's own affective subsystems. The entry's own claim is that love correlates with measurable neurophysiological synchrony — vagal tone, oxytocin, neural phase-locking — which is the coupling substrate this synthesis needs. (The broaden-and-build account, which predicts that high-quality positive interactions widen the action repertoire and build durable resources, is Fredrickson's *corpus* rather than a numbered entry in the tradition register; cited here to the corpus. Mixed-but-meaningful empirical support: the broadening effect is replicated; long-term build effects are real but smaller than initial estimates.)
 
-Levin (multi-scale agency, Levin 2022) and FLAG-09 (cross-program index): competence at one scale presupposes competence at adjacent scales. The connection-of-virtues claim is a special case of a general fact about scaled cognition: hub-capacities co-emerge with their satellites. Empirically firm.
+PRS-09 in the Levin-tradition wiki (the diverse-intelligence framework, Levin & Resnik 2026): a principled, falsifiable basis for attributing goal-directedness and cognition at *any* scale. Competence at one scale presupposes competence at adjacent scales, and the connection-of-virtues claim is a special case of that general fact about scaled cognition: hub-capacities co-emerge with their satellites. PRS-40 supplies the structural criterion for what coupling across scales *is* — convergence of cognitive light cones on shared relevant variables — though its home application is alignment rather than virtue, so its use here is an extension this synthesis is making, not a claim in the entry. The cross-scale attribution framework is empirically firm; the extension to a disposition-network is speculative.
 
-Wright (canonical: *Paul and the Faithfulness of God*) and Rohr (canonical: *Universal Christ*): charity is the **integration hub** of the limited agent's whole disposition network, not just one virtue among the others. Wright's reading of agape as covenant-loyalty made cruciformly concrete, and Rohr's reading of charity as non-dual loving attention, agree on the structural claim: cut charity, the rest of the disposition-network fragments.
+Wright PRS-13 in the Wright-tradition wiki (*God's Homecoming*): the people of God is the location of God's homecoming, "in Christ" is the present tense of that location, and working out salvation is participation in that homecoming as a member of the people the Spirit is forming. Charity, on this reading, is not one virtue among the others but the **direction-of-relation** that constitutes the inclusion — which is why cutting it fragments the rest. Rohr PRS-9 supplies the practice-level counterpart: contemplative practice as the operational pathway by which an agent moves from individuated perspective-limitation toward inhabited loving unity. The two agree on the structural claim from opposite ends — Wright from the covenantal-corporate side, Rohr from the contemplative-practice side: charity is the **integration hub** of the limited agent's whole disposition network.
 
 ## Solution (proposed, speculative)
 
@@ -71,12 +71,13 @@ The limited agent's computation toward loving unity is constrained at every step
 
 ## Bridges
 
-- **Friston (active inference, precision-weighting):** formal account of Q.64.2's real/rational-mean bifurcation. Formal/empirical.
-- **Stump, PRS-04 (virtue-as-habituation):** the Thomistic claim about stable parameterization of the agent's generative model. Theological-philosophical.
-- **Fredrickson, PRS-02 (positivity resonance, broaden-and-build):** empirical mechanism for cross-agent and intra-agent coupling. Empirical (mixed-strong).
-- **Levin, PRS-03 (multi-scale agency):** general framework in which hub-and-spokes virtue-network is a special case. Empirical.
-- **Wright (canonical) + Rohr (canonical):** charity as integration-hub of the infused-virtue network. Theological.
-- **CROSS-09 (master index, network-of-virtues):** Tom's Synergistic Coil — coupled-network formalism solves Aquinas's connection-of-virtues, Friston's hierarchical inference, and Levin's multi-scale agency simultaneously.
+- **Friston (active inference, precision-weighting)** — `wiki/traditions/friston/wiki.md`: formal account of Q.64.2's real/rational-mean bifurcation. Formal/empirical.
+- **PRS-24 + PRS-09 in the Stump-tradition wiki** — `wiki/traditions/stump/prs_triplets.md`: the acquired/infused two-track distinction (PRS-24) supplies the habituation claim about stable parameterization; cooperative causality (PRS-09) supplies the grace-perfects-natural-powers claim the infused hub needs. Theological-philosophical.
+- **PRS-02 in the Fredrickson-tradition wiki** — `wiki/traditions/fredrickson/prs_triplets.md`: love as measurable neurophysiological synchrony; the empirical coupling mechanism, cross-agent and intra-agent. Empirical (strong on synchrony; broaden-and-build cited to the corpus, not to a register entry).
+- **PRS-09 + PRS-40 in the Levin-tradition wiki** — `wiki/traditions/levin/prs_triplets.md`: cognitive attribution across scales (PRS-09) is the general framework in which the hub-and-spokes virtue-network is a special case; light-cone convergence (PRS-40) supplies the coupling criterion, extended here beyond its home application. Empirical framework, speculative extension.
+- **Wright PRS-13** — `wiki/traditions/wright/prs_triplets.md` (*God's Homecoming*): salvation as participatory inclusion in the covenanted people; charity as the direction-of-relation that constitutes it. Theological-historical.
+- **Rohr PRS-9** — `wiki/traditions/rohr/prs_triplets.md`: contemplative practice as the operational pathway from perspective-limitation toward inhabited loving unity — the practice-level testimony to charity's hub-role this synthesis's closing paragraph asks for. Contemplative.
+- **No master-index anchor found for the coupled-network claim.** This bullet previously cited `CROSS-09 (network-of-virtues)` and the prose cited `FLAG-09`. Checked at the body: `CROSS-009` is the Friston × McGilchrist precision-weighting/hemispheric-attention entry and carries no virtue-network content, and there is no `FLAG-09` or `FLAG-009` in `master/paradigm_flags.md`. The Synergistic-Coil reading below — one coupled-network formalism serving Aquinas's connection-of-virtues, Friston's hierarchical inference, and Levin's cross-scale attribution at once — is this synthesis's own proposal in Tom's PRS/Coil form, and is stated as such rather than attributed to a master-index record that does not carry it.
 
 ## Where this leaves us
 

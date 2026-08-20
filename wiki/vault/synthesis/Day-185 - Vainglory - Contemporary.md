@@ -11,13 +11,13 @@ central_theme_thread: "The agent that lives for its own glory has curved its who
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference: vainglory as high precision on the 'how I appear in others' generative models' term; pusillanimity as self-model precision set below true capacity)"
   - "traditions/fredrickson/prs_triplets.md (display as counterfeit positivity resonance vs genuine connection; pusillanimity as a chronically narrow repertoire from low self-estimate, not from fear of harm)"
-  - "traditions/mcgilchrist/prs_triplets.md (left-hemisphere attachment to the explicit image/token; vainglory as attention captured by one's own representation)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act, world-constituting mode of attending — vainglory as attention captured by one's own representation; PRS-05 is also where the precision-weighting formalism lives in the wiki)"
   - "traditions/stump/prs_triplets.md (Thomistic interlocutor: glory as the manifestation of excellence; its vanity is emptiness — referred to nothing real or to unworthy judges)"
   - "Wright canonical: boasting only in the Lord / in the cross, Gal 6:14, 1 Cor 1 (Paul and the Faithfulness of God); Rohr canonical: vainglory as the False Self's whole economy; pusillanimity as the failure to claim the True Self's given largeness (Immortal Diamond)"
 evidence_strength_summary: "The appearance-precision and self-estimate accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that worth should be sourced in God's verdict rather than self-display or self-diminishment is theological (Wright, Rohr)."
 tags: [synthesis, day/185, theme/vainglory, theme/self-image, q/132, q/133]
-last_qc_at: "2026-08-04T20:22:36"
-last_qc_outcome: "held"
+last_qc_at: "2026-08-16T18:30:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 185 — Vainglory (Contemporary)
@@ -58,11 +58,11 @@ Here the central theme cuts cleanly through a pair that looks like opposites. A 
 
 ## Bridges
 
-- **Friston (precision on appearance; sub-true self-estimate)** — vainglory as terminal precision on represented-excellence; pusillanimity as capacity under-estimate. *Formal.*
-- **Fredrickson (display as counterfeit resonance; stalled spiral)** — performed excellence that does not build; the upward spiral never started for low self-estimate. *Empirical.*
-- **McGilchrist (attention captured by one's representation)** — vainglory as the social token prized over the living reality. *Empirical / interpretive.*
-- **Stump (the vanity of empty manifestation)** — visibility decoupled from the reality it should show. *Theological / metaphysical.*
-- **Wright + Rohr (boast only in the Lord; True Self's given largeness)** — worth re-sourced to God's verdict; vanity and false humility healed in one move. *Theological.*
+- **PRS-05 in the McGilchrist-tradition wiki — attention as ontological act, the mode of attending constituting the kind of world that shows up.** This carries two of this commentary's bullets at once. It is the anchor for vainglory as attention captured by one's own representation — the social token prized over the living reality it was supposed to show — and it is also where the *precision* formalism this commentary leans on actually lives in the wiki: PRS-05's solution explicitly pairs the world-constituting account of attention with Friston's precision-weighted prediction (attention as evidence weighting). *Empirical neuroscience for the hemispheric claim; the attention-as-ontological-act thesis is interpretive.*
+- **PRS-04 in the Friston-tradition wiki — the organism as active modeler; predictive coding and the Bayesian brain.** Pusillanimity as a mis-set prior on one's own capacity: a generative model whose self-estimate runs below the truth, and which therefore never generates the evidence that would correct it. *Mature formal framework.* **Named honestly:** there is no numbered Friston triplet in the C2A2 node for *precision-weighting* as such; the terminal-precision-on-appearance reading of vainglory is carried by McGilchrist PRS-05 above, not by a Friston id. The formalism is standard active inference; the wiki citation is the one given, not a Friston number.
+- **PRS-01 in the Fredrickson-tradition wiki — isolation and disconnection; positivity resonance as the mechanism of upward spirals (vagal tone, neurophysiological attunement).** Display-as-counterfeit-resonance: performed excellence produces the appearance of connection without the mutual-flourishing condition that makes resonance build, so the upward spiral never starts. *Empirical.* Note the gloss: PRS-01's content is the upward-spiral/vagal-tone mechanism, not broaden-and-build — the recurring misgloss the record warns about.
+- **PRS-22 in the Stump-tradition wiki — the seven deadly sins as a structured typology of disordered will, each sin pivoting on a specific real good misordered in object, manner, or measure.** Vainglory is the entry that pivots on *esteem*: the good is real, and the disorder is that visibility is decoupled from the reality it should manifest. This is the record's virtue/vice tract doing exactly the work this bullet asks of it. *Analytic-philosophical / theological.*
+- **PRS-16 in the Rohr-tradition wiki — a contemporary contemplative articulation of the disordered loves that does not reduce to "ego is bad" (with Wright on boasting only in the Lord).** PRS-16 is written for this Summa locus by name — humility, vainglory, pride, self-love — and frames the cure Christologically, as liberation from the agendas of the inflated ego rather than as suppression of a self. That is what lets vanity and pusillanimity be healed in one move: both are the self-estimate sourced from the wrong verdict, and the True Self's largeness is *given*, not performed or disclaimed. *Contemplative-theological.* The Wright half of this bullet remains unanchored to an id — recorded, not forced.
 
 ## Where this leaves us
 

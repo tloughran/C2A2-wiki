@@ -10,7 +10,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (FLAG-05 priors and curriculum-staged learning)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build)"
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 ritual and embodied right-hemispheric formation)"
-  - "wiki/master/cross_program_index.md (CROSS-09 ritual and costly-signaling theory)"
+  - "wiki/master/cross_program_index.md (CROSS-009 Friston x McGilchrist — precision-weighted attention as evidence weighting)"
+  - "Cultural-evolution literature on costly ritual signaling (Henrich; Whitehouse) — cited to the literature directly; the C2A2 wiki carries no node on costly signaling"
   - "Wright, Paul and the Faithfulness of God (Decalogue in covenantal frame)"
   - "Rohr, The Universal Christ (cosmic Christ as fulfillment of the figurative)"
 evidence_strength_summary: "Empirical: cross-cultural moral-priors research, costly-signaling work in cultural evolution, ritual-effects on group cohesion. Formal: predictive-processing accounts of typological / figurative cognition. Theological: Wright's covenantal reading; classical Christology."
@@ -19,7 +20,7 @@ length_note: "Over target: two dense questions (Q.100 moral precepts/Decalogue +
 mind_first_reframe: "The moral and ceremonial precepts together constitute a formation ecology aimed at producing agents capable of charity — moral precepts defining the rule-system (left-hemispheric floor), ceremonial precepts producing the embodied identification and pattern-recognition (right-hemispheric scaffold) that prepares agents to recognize the realized pattern; both necessary, neither sufficient without grace, with the Pelagian failure mode (rule-compliance suffices) ruled out by the active-inference and broaden-and-build mechanics."
 central_theme_thread: "Perspective-limitation requires graded revelation: the pattern is invariant but the interface by which agents access it is staged; the Pelagian failure is to think rule-compliance suffices, when in fact the loving-unity computational task cannot be solved using only the resources the agent perceives from its own perspective — it requires the import of new priors (grace, charity, the indwelling Spirit) from outside, and the law itself reveals love as what the law was always pointing at."
 tags: [synthesis, day/111, theme/figurative-cognition, theme/charity-as-precept]
-last_qc_at: "2026-08-09T12:23:16"
+last_qc_at: "2026-08-17T16:19:31"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,7 +52,7 @@ A nested problem: Q.100 a.10's careful balance — charity-as-precept *and* char
 
 **McGilchrist's hemispheric asymmetry** (FLAG-09): ritual is embodied, contextual, relational — right-hemispheric. The ceremonial precepts work *because* they engage the right hemisphere's pattern-recognition and the body's affective resonance, not because they are propositionally enriched. Q.101 a.4's division (sacrifices, sacred things, sacraments, observances) covers four different embodied registers of formation.
 
-**CROSS-09 (costly-signaling theory in master cross-program index)**: contemporary cultural-evolution research shows that costly ritual practices reliably distinguish in-group commitment and produce measurably higher group cohesion. The ceremonial precepts on dress, food, time — what looks like arbitrary tribal marking from outside — track exactly the structures cultural-evolution research has identified as functional. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct from others in some point of excellence" is the medieval anticipation of costly-signaling theory.
+**Costly-signaling theory (cited to the cultural-evolution literature — Henrich, Whitehouse — not to a wiki node; the C2A2 network has no entry on this)**: contemporary cultural-evolution research shows that costly ritual practices reliably distinguish in-group commitment and produce measurably higher group cohesion. The ceremonial precepts on dress, food, time — what looks like arbitrary tribal marking from outside — track exactly the structures cultural-evolution research has identified as functional. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct from others in some point of excellence" is the medieval anticipation of costly-signaling theory.
 
 **Charity as precept (Q.100 a.10)**: this is where the synthesis must work hardest. Aquinas's careful position is that *fulfilling the law requires charity*, *charity requires grace*, *therefore the law cannot be fulfilled without grace* — without making the natural law dispensable. The Pelagian heresy is precisely the position that grace is *not* needed. The synthesis-friendly contemporary frame:
 
@@ -105,7 +106,8 @@ Wright's covenantal reading attaches: the *people* in whom this work is being do
 - **FLAG-05 (Friston curriculum-staged generative-model formation)**: graded revelation as pedagogical staging. *Empirical/formal*.
 - **FLAG-11 (Fredrickson broaden-and-build)**: positive affect scaffolds robust prosociality; charity as the broadening principle. *Empirical*.
 - **FLAG-09 (McGilchrist hemispheric integration)**: rule (left) + ritual (right) → integrated charity. *Empirical*.
-- **CROSS-09 (master wiki, costly-signaling theory)**: ceremonial precepts as in-group commitment markers with functional payoffs. *Empirical cross-disciplinary*.
+- **Costly-signaling theory (Henrich; Whitehouse — cultural-evolution literature, no C2A2 wiki node)**: ceremonial precepts as in-group commitment markers with functional payoffs. *Empirical cross-disciplinary*.
+- **CROSS-009 (`wiki/master/cross_program_index.md`, Friston x McGilchrist)**: attentional selection as evidence weighting — the mechanism under the "reverence what is set apart" claim of Q.102 a.4. *Structural analogy*.
 - **Wright, *Paul and the Faithfulness of God***: Decalogue and charity in covenantal frame; love as fulfillment. *Exegetical/theological*.
 - **Rohr, *The Universal Christ***: the figurative-typological pattern is Christ. *Contemplative-theological*.
 

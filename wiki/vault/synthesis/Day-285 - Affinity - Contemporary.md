@@ -3,7 +3,7 @@ day: 285
 title: Affinity (Contemporary)
 pairs_with: "[[Day-285 - Affinity]]"
 length_target_words: 1500
-length_actual_words: 901
+length_actual_words: 970
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -12,11 +12,11 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-18 widening a community)"
 evidence_strength_summary: "Levin multiscale boundary-redraw empirical at biological scale; Kastrup boundary metaphysics speculative; the 'one flesh redraws kinship' reading follows analytically from the Day-278 union-realism plus the affinity doctrine."
-length_ratio_to_target: 0.60
+length_ratio_to_target: 0.65
 mind_first_reframe: "Affinity is real because a one-flesh union genuinely redraws the boundary of the related individual — the spouse's connections become the union's — just as integrating into a higher biological individual reconfigures the system's boundary."
 central_theme_thread: "Each marriage knits two webs of relation into one, a concrete down-payment on the project's final unity in which every perspective is related to every other — loving unity made contagious through structure."
 tags: [synthesis, day/285, theme/union-redraws-the-boundary-of-kin]
-last_qc_at: "2026-08-10T20:25:51"
+last_qc_at: "2026-08-18T18:28:41"
 last_qc_outcome: "rewrote"
 ---
 
@@ -47,7 +47,7 @@ The project envisions a final unity in which every perspective is included in th
 - **Levin PRS-32 / PRS-17 (empirical at biological scale):** integration into a higher individual redraws the system boundary — the model for affinity as boundary-incorporation.
 - **Kastrup PRS-02 (metaphysical, speculative):** individuating boundaries are real — dissociation within a single consciousness is what makes separate perspectives separate — so a union that reshapes relational topology is reshaping something real rather than relabelling it. (PRS-23 was cited here as "how minds separate/join dissociative boundaries"; read at the body it is about how mental *contents arise* — thought-formation, creativity, cosmogenesis — and it explicitly defers the separation account to PRS-02. Removed as a mis-gloss; the claim it was asked to carry is PRS-02's.)
 - **Rohr PRS-7 (theological):** relations are constitutive, not labels; a real new relation reshapes the field.
-- **Friston PRS-18 (formal):** affinity is the mechanism by which exogamous marriage widens the community's web.
+- **Friston PRS-18 (formal in shape; register *Confidence: Speculative*):** affinity is the mechanism by which exogamous marriage widens the community's web. The widening account is a proposed parameterization rather than an established result; it supports the day's reading here but does not carry it — the leading move is Levin's.
 
 ## Where this leaves us
 

@@ -8,10 +8,10 @@ length_tier: medium
 length_ratio_to_target: 0.63
 length_note: "Under medium-tier target by design — Q.106 (gratitude) and Q.107 (ingratitude) are fully and non-redundantly treated in tight prose; per the length policy, short-and-substantive is preferred over padding to a word count."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/prs_triplets.md (positivity resonance; broaden-and-build; gratitude as resource-building affect)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 isolation and disconnection / cultivated micro-moments rebuilding vagal tone and generating upward spirals; PRS-02 love reduced to sentiment / positivity resonance as objective neurophysiological coupling — gratitude as resource-building affect)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation-within-monism; no agent self-originating)"
-  - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 nested agency)"
+  - "traditions/levin/prs_triplets.md (PRS-04 cognition substrate / bioelectric computation as substrate-independent cognition; PRS-30 scale-continuous nesting vs. discrete dissociative boundaries)"
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan knowledge — non-propositional, second-person knowing; Thomistic interlocutor)"
   - "Wright canonical: charis / gift in 'Paul and the Faithfulness of God'; 1 Cor 4:7 'what do you have that you did not receive?'"
   - "Rohr canonical: 'The Universal Christ' / 'Falling Upward' — everything-is-gift as the foundational contemplative stance"
@@ -19,7 +19,7 @@ evidence_strength_summary: "Gratitude's resource-building effects (Fredrickson) 
 mind_first_reframe: "Under mind-monism no agent is self-caused, so gratitude becomes the honest accounting of the agent's ontological non-self-origination — accurately modeling and rightly honoring the sources of its received goods."
 central_theme_thread: "Gratitude is the perspective-limited agent's honest recognition that the goods constituting its perspective came from beyond it; self-attribution falsifies its situation and severs it from the cooperative structure within which loving unity is computed."
 tags: [synthesis, day/171, theme/gift-and-debt, theme/non-self-origination, q/106, q/107]
-last_qc_at: "2026-08-07T02:30:22"
+last_qc_at: "2026-08-15T04:25:47"
 last_qc_outcome: "rewrote"
 ---
 
@@ -37,11 +37,11 @@ The shared problem across the medieval and contemporary frames: a perspective-li
 
 ## Resource
 
-**Fredrickson on positivity resonance and broaden-and-build** supplies the empirical layer. Gratitude is one of the most robustly studied positive affects: it reliably broadens attention, builds durable social and psychological resources, and strengthens the bonds between giver and receiver. Tom's PRS-form record of Fredrickson's program names the mechanism by which felt positive states become enduring relational capital — and gratitude is the paradigm case, the affect whose entire function is to register a received good and convert it into a strengthened bond. This is the contemporary empirical vindication of Aquinas's intuition that gratitude is *owed* because it builds and sustains the community of benefactor and beneficiary.
+**Fredrickson on positivity resonance and broaden-and-build** (PRS-01, PRS-02 in the Fredrickson-tradition wiki) supplies the empirical layer. Gratitude is one of the most robustly studied positive affects: it reliably broadens attention, builds durable social and psychological resources, and strengthens the bonds between giver and receiver. Tom's PRS-form record of Fredrickson's program names the mechanism by which felt positive states become enduring relational capital — and gratitude is the paradigm case, the affect whose entire function is to register a received good and convert it into a strengthened bond. This is the contemporary empirical vindication of Aquinas's intuition that gratitude is *owed* because it builds and sustains the community of benefactor and beneficiary.
 
 **Friston on mutual modeling** (PRS-04, PRS-06 in the Friston-tradition wiki) supplies the formal layer. An active-inference agent maintains a generative model of the causes of its own states. To be grateful is to update that model so that it accurately includes the benefactor as a cause of one's good — and to maintain the cooperative prior that makes future exchange possible. Ingratitude, formally, is a model that mis-assigns the causes of one's good states to oneself; it is not merely impolite but *inaccurate*, and it degrades the mutual-modeling on which multi-agent coherence depends. The "proportional return" Aquinas requires is, in this frame, the maintenance behavior that keeps the cooperative model calibrated.
 
-**Kastrup on individuation-within-monism** (PRS-02 in the Kastrup-tradition wiki) supplies the metaphysical layer. If mind is the ontological primitive and individual agents are dissociated patterns within one mind-at-large, then no agent is self-caused; the goods that constitute any perspective are, at depth, received from beyond that perspective. Gratitude is then ontological honesty — the recognition that one's situation is not self-generated. **Levin** (PRS-04, PRS-08 in the Levin-tradition wiki) gives the empirically tractable echo: agency is nested, and every agent at every scale depends on the larger collective whose signals constitute its very field of action. The cell does not make itself; the tissue does not make itself; recognition-of-dependence is built into the structure of nested agency.
+**Kastrup on individuation-within-monism** (PRS-02 in the Kastrup-tradition wiki) supplies the metaphysical layer. If mind is the ontological primitive and individual agents are dissociated patterns within one mind-at-large, then no agent is self-caused; the goods that constitute any perspective are, at depth, received from beyond that perspective. Gratitude is then ontological honesty — the recognition that one's situation is not self-generated. **Levin** (PRS-04, PRS-30 in the Levin-tradition wiki) gives the empirically tractable echo: agency is nested, and every agent at every scale depends on the larger collective whose signals constitute its very field of action. The cell does not make itself; the tissue does not make itself; recognition-of-dependence is built into the structure of nested agency.
 
 **Stump** enters here: her account of second-personal knowledge of persons gives gratitude its relational shape. Gratitude is not bookkeeping; it is a mode of *knowing the benefactor as a person* who freely gave. Ingratitude is correspondingly a failure of second-personal recognition — a refusal to let the giver be present as giver.
 
@@ -59,10 +59,10 @@ Gratitude is the perspective-limited agent's honest recognition that the goods c
 
 ## Bridges
 
-- **Fredrickson (positivity resonance / broaden-and-build)** — gratitude as the empirically studied affect whose function is to register received good and build durable bonds. *Empirical.*
+- **Fredrickson PRS-01, PRS-02** (micro-moments of positivity resonance rebuilding vagal tone and generating upward spirals of health and connection; love as objective neurophysiological coupling rather than sentiment) — gratitude as the empirically studied affect whose function is to register received good and build durable bonds. *Empirical.*
 - **Friston PRS-04, PRS-06** (active modeler; multi-agent coherence) — gratitude as accurate causal modeling of benefactors and maintenance of cooperative priors; ingratitude as model mis-calibration. *Formal.*
 - **Kastrup PRS-02** (individuation-within-monism) — no agent self-caused; gratitude as ontological honesty about non-self-origination. *Speculative / metaphysical.*
-- **Levin PRS-04, PRS-08** (substrate-independent, nested agency) — dependence-on-the-larger-collective built into the structure of agency at every scale. *Empirical / formal.*
+- **Levin PRS-04, PRS-30** (bioelectric computation as substrate-independent cognition; scale-continuous nesting of agency with subjective perspective at every scale) — dependence-on-the-larger-collective built into the structure of agency at every scale. *Empirical / formal.*
 - **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person knowing) — gratitude as personal knowing of the giver; ingratitude as refusal of second-personal recognition. *Philosophical.*
 - **Wright (charis; 1 Cor 4:7)** — the Pauline gift-economy: unearned gift creating obligation-of-response, not repayment. *Theological / scriptural.*
 - **Rohr (everything-is-gift)** — gratitude as the foundational contemplative stance of the received self. *Theological / contemplative.*

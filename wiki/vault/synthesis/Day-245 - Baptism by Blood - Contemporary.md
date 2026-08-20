@@ -8,16 +8,16 @@ length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 attractor formalism; outcome equifinality)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-  - "traditions/wright/wiki.md (covenant inclusion; salvation as membership)"
-  - "traditions/rohr/wiki.md (Universal Christ; grace exceeding the rite)"
+  - "traditions/wright/prs_triplets.md (PRS-34 justification as declaration of covenant membership; PRS-36 salvation as inclusion in the heaven-earth union)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ, pattern not confined to one institutional expression)"
 evidence_strength_summary: "Equifinality empirical-in-domain (Levin); disposition-as-operative-reality metaphysical (Kastrup); baptism of blood/desire theological (Wright/Rohr); central-theme claim well-aligned, transfer speculative."
 length_ratio_to_target: 0.32
 length_note: "Concise by design — a single-focus III Q.66 (baptism of blood/desire) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "The operative reality of baptism is the dispositional form, which can reach its saving terminus by multiple equifinal routes because what governs the outcome is the attractor/disposition, not the particular material path."
 central_theme_thread: "Baptism of desire is the limit case where the resources are unavailable yet the agent's genuine orientation toward the whole suffices — grace meeting the perspective at the limit of its resources."
 tags: [synthesis, day/245, theme/form-without-matter]
-last_qc_at: "2026-08-04T14:30:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-16T14:29:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 245 — Baptism by Blood (Contemporary Parallel)
@@ -50,9 +50,9 @@ This article strongly supports the project's central claim. Salvation, in the sy
 
 - **Levin PRS-03 (attractor formalism; equifinality)** — *empirical-in-domain, analogical transfer.* Many routes, one target state — the structural core of blood/desire.
 - **Kastrup PRS-02 (identity within monism)** — *metaphysical.* The operative reality is the dispositional/mental state, not the physical token.
-- **Wright (covenant inclusion)** — *theological, high within method.* Salvation as membership effected where the sign is unavailable.
-- **Rohr (Universal Christ; grace beyond the rite)** — *theological / contemplative.* The pattern not confined to the water.
-- **Stump (sacramental sufficiency)** — *theological-philosophical.* On how disposition completes what matter ordinarily mediates.
+- **Wright PRS-34 (justification as declaration of covenant membership) + PRS-36 (salvation as inclusion in the heaven-earth union, not transfer between realms), the Wright-tradition wiki** — *theological, high within method.* Salvation as membership effected where the sign is unavailable. PRS-34 is the constraint the closing paragraph asks for: membership is *declared*, and the badge practices are not the thing declared — which is exactly how blood and desire can suffice without the badge, and equally why "many routes" is not universalism by fiat.
+- **Rohr PRS-03 (the Universal Christ), the Rohr-tradition wiki** — *theological / contemplative.* The pattern is present in all creation and not confined to any single institutional expression — so not confined to the water.
+- **Stump — no tradition-file anchor** — *theological-philosophical.* The claim used here is that disposition completes what matter ordinarily mediates. *Scope note:* the Stump tradition file carries no sacramental-sufficiency triplet, and the nearest hylomorphic entries (PRS-04, PRS-14) are about formal/final causality and corporate substance rather than sacramental matter. Recorded rather than repointed to a near-miss id.
 
 ## Where this leaves us
 

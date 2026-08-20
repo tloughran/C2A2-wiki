@@ -3,21 +3,22 @@ day: 178
 title: Equity (Contemporary)
 pairs_with: "[[Day-178 - Equity]]"
 length_target_words: 1500
-length_actual_words: 1188
-length_ratio_to_target: 0.79
+length_actual_words: 1452
+length_ratio_to_target: 0.968
 length_tier: short
-length_note: "Compact at 0.79x short target by design - Q.120 (equity/epikeia) and Q.121 (piety) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution's short-and-substantive-over-padded guidance."
+length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only): 1188 -> 1452, and the ratio moves 0.792 -> 0.968, i.e. INSIDE the +/-10% tier band. The prior note claiming a deliberate 0.79x compactness was describing a measurement artifact, not a choice, and is retired. The gain is part prior understatement and part ~260 words of Bridges citation apparatus installed this run (McGilchrist P5 -> PRS-05, Wright PRS-34, Rohr PRS-42 with its standing tension against Wright's critical realism). No claim was added, removed, or reweighted; no prose was trimmed or padded. Tier verified correct: transcript word_count 963, short. Q.120 (equity/epikeia) and Q.121 (piety) remain fully developed under the PRS form with evidence strength marked."
 mind_first_reframe: "Under mind-monism, equity becomes a claim about modes of attention — attending to a rule in its context and for its purpose rather than as a detached token — and piety a claim about nested agency, the reverence owed to the larger selves that constitute the agent."
 central_theme_thread: "Equity is the humility built into rule-following — that the rule-maker too was perspective-limited and the letter cannot contain the whole intent — and piety the complementary acknowledgment that the agent is held within larger selves that perceive more of the whole than it does."
 karpathy_wiki_sources:
-  - "traditions/mcgilchrist/prs_triplets.md (P5/PRS-05 attention as ontological act; left-hemisphere letter/abstraction vs right-hemisphere context/whole)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; left-hemisphere letter/abstraction vs right-hemisphere context/whole. The entry's Label reads 'P5' — that is the file's label prefix, not a citable id)"
   - "traditions/carroll/prs_triplets.md (poetic naturalism — laws as useful higher-level stories serving an underlying good)"
   - "traditions/levin/prs_triplets.md (PRS-30 scale-continuous nesting — subjective vantage points across nested cognitive scales; piety as reverence for the larger agent one is part of)"
   - "traditions/stump/prs_triplets.md (Thomistic interlocutor: epikeia and the second-personal point of law — deliberately left without a PRS-id; the Stump record's second-personal ids, PRS-11 (Franciscan knowledge of suffering narratives) and PRS-29 (infused virtue and the will's quiescence), are both about knowing and grace, not about justice or law, so neither is a home for this claim)"
-  - "Wright canonical: Sabbath made for man (Mark 2:27), letter vs Spirit (2 Cor 3:6); Rohr canonical: law in service of love"
+  - "traditions/wright/prs_triplets.md (PRS-34 works-of-the-law as covenant badge practices — badges individuate sub-groups, the shared table enacts unity; the structural anchor for equity in Paul's register). Mark 2:27 and 2 Cor 3:6 are carried canonically — no Wright triplet treats either text directly."
+  - "traditions/rohr/prs_triplets.md (PRS-42 the mercy-over-sacrifice rule generalized into a test on the use of a text — adjudication relocated from the semantics of the rule to the effects of the reading; epikeia as a decision procedure rather than a sentiment. Its Evidence line flags a standing tension with Wright's critical realism, carried explicitly in the Bridges section rather than averaged)"
 evidence_strength_summary: "Hemispheric account of letter-vs-intent is empirical/interpretive (McGilchrist); laws-as-higher-level-stories is formal (Carroll); nested-self piety is formal-analogical (Levin); spirit-over-letter is theological (Wright, Rohr)."
 tags: [synthesis, day/178, theme/equity, theme/letter-and-intent, q/120, q/121]
-last_qc_at: "2026-08-07T22:30:51"
+last_qc_at: "2026-08-16T00:25:11"
 last_qc_outcome: "rewrote"
 ---
 
@@ -35,7 +36,7 @@ Any community of limited agents must encode shared expectations as rules, becaus
 
 ## Resource
 
-The leading move comes from **McGilchrist**. In Tom's PRS-form record of his work (P5 / attention as ontological act), the mode of attention is not a neutral spotlight but constitutes the kind of world that shows up: the left hemisphere abstracts, fixes, and manipulates explicit tokens — the letter, the rule as a closed object — while the right hemisphere attends to context, the whole situation, the living intent that the token was meant to carry. Equity is, almost exactly, the right hemisphere's correction of left-hemisphere literalism: a re-attending to the rule *in its context and for its purpose* rather than as a free-standing string to be executed. McGilchrist's diagnosis of modernity — the emissary (left) usurping the master (right) — is the civilizational form of the very failure equity guards against: rule-execution detached from the whole it was meant to serve.
+The leading move comes from **McGilchrist**. In Tom's PRS-form record of his work (PRS-05, attention as ontological act), the mode of attention is not a neutral spotlight but constitutes the kind of world that shows up: the left hemisphere abstracts, fixes, and manipulates explicit tokens — the letter, the rule as a closed object — while the right hemisphere attends to context, the whole situation, the living intent that the token was meant to carry. Equity is, almost exactly, the right hemisphere's correction of left-hemisphere literalism: a re-attending to the rule *in its context and for its purpose* rather than as a free-standing string to be executed. McGilchrist's diagnosis of modernity — the emissary (left) usurping the master (right) — is the civilizational form of the very failure equity guards against: rule-execution detached from the whole it was meant to serve.
 
 **Carroll** secures why this is fidelity and not evasion. His poetic naturalism (PRS-01 in the Carroll-tradition wiki) treats laws, like all higher-level descriptions, as useful *stories* told for the sake of an underlying good — coordination, protection, the flourishing of persons. A story is honored by serving its point, not by being recited when its point has lapsed. Equity is thus the disciplined recognition that the rule-level description is in service to a good that the letter only approximately tracks; correcting the letter by the intent is keeping faith with the description's actual job.
 
@@ -57,11 +58,11 @@ Each agent sees only part of the whole, and rules are how a community shares the
 
 ## Bridges
 
-- **McGilchrist (attention as ontological act, P5)** — equity as right-hemisphere context/intent correcting left-hemisphere literalism. *Empirical / interpretive.*
+- **McGilchrist PRS-05 (`traditions/mcgilchrist/prs_triplets.md`, attention as ontological act)** — equity as right-hemisphere context/intent correcting left-hemisphere literalism. The entry's own Label reads *P5*, which is the file's label prefix and not a citable id; the id is PRS-05. *Empirical / interpretive.*
 - **Carroll PRS-01 (poetic naturalism)** — laws as higher-level stories honored by serving their point. *Formal.*
 - **Levin PRS-30 (`traditions/levin/prs_triplets.md`, scale-continuous nesting)** — the record states the claim directly: subjective vantage points distributed continuously across nested cognitive scales, cells → tissues → organs → organisms → constructs. Piety is the human-scale registration of one's constitution by those larger agents. *Formal / analogical.*
-- **Wright (Mark 2:27; 2 Cor 3:6)** — Sabbath for man; the letter kills, the Spirit gives life. *Theological.*
-- **Rohr (law in service of love)** — every rule read back to the love it protects. *Theological.*
+- **Wright PRS-34 (`traditions/wright/prs_triplets.md`)** — the structural anchor, not the verses. PRS-34 reads "works of the law" as covenant *badge* practices (Sabbath among them) and concludes that "badges individuate sub-groups, the shared table enacts unity" — the operative test of belonging is the purpose the practice serves, not the practice held as a token. That is equity's structure stated in Paul's register. The two verses the frame quotes (Mark 2:27; 2 Cor 3:6) are carried canonically: no Wright triplet treats either text directly, so the id anchors the *shape* of the argument and the citations remain scriptural. *Theological.*
+- **Rohr PRS-42 (`traditions/rohr/prs_triplets.md`)** — every rule read back to the love it protects, and the entry upgrades this from sentiment to a decision procedure: the mercy-over-sacrifice rule generalized into a test on the *use* of a text — does this reading serve life, love, growth, wisdom, and the good of God or others? — with adjudication relocated from the semantics of the rule to the effects of the reading on the community holding it. That is *epikeia* as a criterion rather than an instinct, which is exactly what this day's closing open thread asks for. *Theological.* **Standing tension, carried not averaged:** PRS-42's own Evidence line flags that this relocation sits against Wright's critical realism, on which second-temple context constrains meaning prior to and independent of the reader's ethical posture. Both cannot be the final court, and this day cites both — the tension is named here rather than smoothed.
 
 ## Where this leaves us
 

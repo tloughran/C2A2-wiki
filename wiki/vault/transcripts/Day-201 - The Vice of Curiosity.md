@@ -16,13 +16,13 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-201 - The Vice of Curiosity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/201, pars/II, q/166, q/167]
-last_qc_at: "2026-07-30T16:22:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-16T00:25:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 201 — The Vice of Curiosity
 
-Q.166 treats studiousness — the virtue moderating the desire to know; Q.167 treats its opposed vice, curiosity — knowledge desired for a disordered end or about the wrong objects.
+> *Editor's locator (not from the episode):* Q.166 treats studiousness — the virtue moderating the desire to know; Q.167 treats its opposed vice, curiosity — knowledge desired for a disordered end or about the wrong objects.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 201. So let's get started. We're covering today questions 166 and 167 of the Secunda Secundae, that is of studiousness and of curiosity. The translation that I always use in these
 

@@ -8,8 +8,9 @@ length_tier: short
 length_note: "Over short-tier target (1500) at 1.13: Q.90-91 open the law treatise with the five-fold map, which the entry must lay out whole; linkage across four traditions plus Wright/Rohr justifies the modest over-run."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (morphogenetic field as eternal-form analog)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology; Thomistic final cause framing Levin's morphogenetic teleology)"
   - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific access to a deeper reality)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism; mind as ontological primitive)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; dissociation)"
   - "wiki/traditions/friston/wiki.md (active inference; agents under generative models)"
   - "wiki/master/C2A2_master_wiki.md (cross-program convergence on form/pattern as causally real)"
   - "Wright, Surprised by Hope (law in service of new-creation vocation)"
@@ -19,7 +20,7 @@ length_ratio_to_target: 1.149
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-08-09T12:23:08"
+last_qc_at: "2026-08-17T18:30:40"
 last_qc_outcome: "rewrote"
 ---
 
@@ -41,13 +42,13 @@ The problem can be stated more sharply: what is the relation between (a) a real 
 
 The most important contemporary move available to this question is the recovery of *form* as ontologically real and causally active — not a folk-psychological projection onto value-neutral matter.
 
-**Levin's morphogenetic work** (see traditions/levin/wiki.md, PRS-04 on final-causality reframed empirically) is the empirical case in point. Bioelectric fields encode anatomical *targets* (eyespots, limbs, organ topology) that are causally responsible for the development that achieves them. The frog-tadpole regenerates its eye in a non-canonical location and the field directs cells to rebuild the correct functional structure. The "target morphology" is not a metaphor — it is an attractor in a real state-space, and the developmental dynamics relax toward it. This is precisely Aquinas's Q.93 a.1 "type/exemplar/model" cashed out scientifically: a real pattern, prior to and shaping the becoming of the thing.
+**Levin's morphogenetic work** (see traditions/levin/wiki.md) is the empirical case in point. Bioelectric fields encode anatomical *targets* (eyespots, limbs, organ topology) that are causally responsible for the development that achieves them. The frog-tadpole regenerates its eye in a non-canonical location and the field directs cells to rebuild the correct functional structure. The "target morphology" is not a metaphor — it is an attractor in a real state-space, and the developmental dynamics relax toward it. This is precisely Aquinas's Q.93 a.1 "type/exemplar/model" cashed out scientifically: a real pattern, prior to and shaping the becoming of the thing.
 
-**Hoffman's interface theory** (traditions/hoffman/wiki.md, FLAG-02 on species-specific perception) cashes out the perspective-side: agents do not perceive the deeper reality directly; they perceive a species-specific *interface* — fitness-relevant signals organized in a format the agent can navigate. The natural law in Aquinas's account is *exactly* this: not the eternal pattern as such, but the eternal pattern *as accessible to rational creatures by their natural light*. Different agents see different interfaces; the pattern itself is invariant.
+**Hoffman's interface theory** (traditions/hoffman/wiki.md) cashes out the perspective-side: agents do not perceive the deeper reality directly; they perceive a species-specific *interface* — fitness-relevant signals organized in a format the agent can navigate. The natural law in Aquinas's account is *exactly* this: not the eternal pattern as such, but the eternal pattern *as accessible to rational creatures by their natural light*. Different agents see different interfaces; the pattern itself is invariant.
 
 **Kastrup's analytic idealism** (traditions/kastrup/wiki.md, PRS-02 on mind as primitive) supplies the metaphysical reframe Aquinas needs: the eternal law is *in the divine mind* not because mind is a privileged container but because mind is what reality fundamentally is. The pattern is mind-shaped because patterns *just are* mind-shaped. This dissolves the Cartesian worry about how a normative pattern could be real in a value-neutral universe.
 
-**Friston's active inference** (traditions/friston/wiki.md, FLAG-05 on free-energy minimization) supplies the agent-side dynamics. Each agent operates with a generative model of its world; behavior is the minimization of long-term prediction error against priors. The *fomes* is exactly what active inference predicts when an agent's priors are locally adapted to a corrupt training distribution: the agent will reliably pursue what locally minimizes prediction-error even when the locally-adapted priors are systematically miscalibrated relative to the deeper truth. Aquinas's "wounded nature" is a generative model whose priors have drifted from the true target distribution.
+**Friston's active inference** (traditions/friston/wiki.md) supplies the agent-side dynamics. Each agent operates with a generative model of its world; behavior is the minimization of long-term prediction error against priors. The *fomes* is exactly what active inference predicts when an agent's priors are locally adapted to a corrupt training distribution: the agent will reliably pursue what locally minimizes prediction-error even when the locally-adapted priors are systematically miscalibrated relative to the deeper truth. Aquinas's "wounded nature" is a generative model whose priors have drifted from the true target distribution.
 
 ## Solution (proposed, speculative)
 
@@ -96,8 +97,8 @@ The *fomes* (Q.91 a.6) is the empirical fact that this is hard. The Levin/Fristo
 ## Bridges
 
 - **PRS-04 (Stump-tradition wiki — Tom's re-description of Stump on final causality)**: Aquinas's eternal-law-as-exemplar maps to final-cause-as-real. *Speculative* metaphysically; *empirical* in Levin's morphogenetic instantiation.
-- **FLAG-02 (Hoffman, species-specific interface)**: Natural law as interface-real. *Formal* mathematically; *interpretive* metaphysically.
-- **FLAG-05 (Friston, active-inference dynamics)**: *Fomes* as miscalibrated generative-model priors. *Empirical* in formal models; *speculative* as full account of moral psychology.
+- **Hoffman (species-specific interface)**: Natural law as interface-real. *Formal* mathematically; *interpretive* metaphysically.
+- **Friston (active-inference dynamics)**: *Fomes* as miscalibrated generative-model priors. *Empirical* in formal models; *speculative* as full account of moral psychology.
 - **PRS-02 (Kastrup, analytic idealism)**: Eternal law as structure of universal mind. *Theological/metaphysical*.
 - **Wright, *Surprised by Hope* (covenant theology of law)**: Old/New distinction as developmental stages of vocation. *Theological/exegetical*.
 - **Rohr, *Universal Christ***: Eternal Logos as cosmic pattern, eternal law non-dualistically. *Contemplative-theological*.

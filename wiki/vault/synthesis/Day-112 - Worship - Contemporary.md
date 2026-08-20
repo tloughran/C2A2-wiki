@@ -11,14 +11,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; sign-and-signified)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating via embodied practice)"
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 ritual and embodied right-hemispheric formation)"
-  - "wiki/master/cross_program_index.md (CROSS-09 ritual and costly-signaling)"
-  - "wiki/master/C2A2_master_wiki.md (CROSS-13 markedness in attention-economics)"
+  - "wiki/master/cross_program_index.md (CROSS-009 Friston x McGilchrist — precision-weighted attention as evidence weighting)"
+  - "Cultural-evolution literature on costly ritual signaling and markedness (Henrich; Whitehouse) — cited to the literature directly; the C2A2 wiki carries no node on either"
   - "Wright, Paul and the Faithfulness of God (cessation of ceremonial precepts in Pauline frame)"
   - "Rohr, The Universal Christ (sacramental ontology; cosmic Christ)"
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-08-09T14:27:47"
+last_qc_at: "2026-08-17T16:19:55"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
@@ -43,7 +43,7 @@ The shared problem: worship is *neither* arbitrary cultural decoration *nor* pur
 
 **McGilchrist's hemispheric asymmetry** (FLAG-09): ritual is right-hemispheric — embodied, contextual, relational. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct" is precisely the attention-economics McGilchrist describes. Markedness is what right-hemispheric attention tracks; setting things apart *for* God is what makes them visible *as* sacred.
 
-**CROSS-09 (master wiki on costly-signaling) and CROSS-13 (markedness in attention-economics)**: cross-cultural anthropology has converged on the function of costly ritual: it produces in-group commitment, distinguishes the committed from the merely-claiming, and trains specific cognitive-affective dispositions. The Old-Law ceremonial precepts on food, dress, time, and bodily practice are paradigm cases. They are not arbitrary tribal markers; they are structured to train particular generative-model dispositions in the worshipping community.
+**Costly signaling and markedness (cited to the cultural-evolution literature — Henrich, Whitehouse — not to a wiki node; the C2A2 network has no entry on either)**: cross-cultural anthropology has converged on the function of costly ritual: it produces in-group commitment, distinguishes the committed from the merely-claiming, and trains specific cognitive-affective dispositions. The Old-Law ceremonial precepts on food, dress, time, and bodily practice are paradigm cases. They are not arbitrary tribal markers; they are structured to train particular generative-model dispositions in the worshipping community.
 
 **Sacramental ontology (Rohr's contemplative reading)**: in Catholic and Eastern Christian traditions, the sacraments of the New Covenant are *efficacious* — they do what they signify, not merely point at it. Q.103 a.2's distinction between Old-Law ceremonies that cleanse ritually-but-not-spiritually and the New-Covenant sacraments which justify is the heart of this. Rohr's *Universal Christ* extends sacramental ontology to a cosmic frame: the world itself is the first sacrament; every act of recognition-and-return is participation in the cosmic Christ pattern.
 
@@ -90,8 +90,8 @@ This entry attaches the central theme through the *sign-signified* relation. The
 - **FLAG-02 (Hoffman interface theory, multi-layer signs)**: literal/figurative double reading as multi-layer interface. *Formal/interpretive*.
 - **FLAG-05 (Friston embodied generative-model updating)**: ritual installs durable priors. *Empirical/formal*.
 - **FLAG-09 (McGilchrist right-hemispheric ritual)**: embodied, contextual practice as right-hemispheric formation. *Empirical*.
-- **CROSS-09 (master wiki, costly-signaling)**: ceremonial practices as in-group commitment with measurable cohesion effects. *Empirical*.
-- **CROSS-13 (master wiki, markedness)**: setting things apart as attention-economic foundation of sacredness. *Empirical/anthropological*.
+- **Costly signaling and markedness (Henrich; Whitehouse — cultural-evolution literature, no C2A2 wiki node)**: ceremonial practices as in-group commitment with measurable cohesion effects; setting things apart as the attention-economic foundation of sacredness. *Empirical/anthropological*.
+- **CROSS-009 (`wiki/master/cross_program_index.md`, Friston x McGilchrist)**: attentional selection as evidence weighting — the mechanism under Q.102 a.4's "man reveres what is set apart". *Structural analogy*.
 - **Wright, *Paul and the Faithfulness of God***: cessation of ceremonial precepts in covenant-fulfillment frame, with careful attention to ongoing Israel covenant. *Exegetical/theological*.
 - **Rohr, *The Universal Christ***: sacramental ontology and cosmic Christ. *Contemplative-theological*.
 

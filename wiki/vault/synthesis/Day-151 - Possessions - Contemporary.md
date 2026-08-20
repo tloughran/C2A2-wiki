@@ -17,8 +17,8 @@ mind_first_reframe: "Aquinas grounds property in the natural-law function of ste
 central_theme_thread: "Property is a perspective-relative allocation that exists for the sake of the whole's flourishing. The agent's perspective is finite; resources are finite; allocation is the working-out of how parts that cannot see the whole hold goods on the whole's behalf. Theft is the part absolutizing its own perspective against the whole; the judge's injustice is the same defection from a position of office. The central claim — loving unity as the computational target each limited perspective pursues — names theft as the local-optimum policy that defects from the global target, and the judge's injustice as a higher-stakes version of the same defection: the office that exists to track the global target abandons it for self-interest."
 tags: [synthesis, day/151, theme/possessions-stewardship-and-the-whole]
 length_note: "Under tier target (1600/2200, 0.73) by substantive choice — Q.66 (8 articles on possession, theft, necessity) and Q.67 (4 articles on judicial injustice) share a single arc and one PRS structure; the tight treatment carries the central theme cleanly without padding."
-last_qc_at: "2026-08-07T06:35:40"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-15T08:23:42"
+last_qc_outcome: "pass"
 ---
 
 # Day 151 — Contemporary Parallel: Possessions, Theft, and the Whole That Holds

@@ -3,21 +3,22 @@ day: 200
 title: Paradise Lost (Contemporary)
 pairs_with: "[[Day-200 - Paradise Lost]]"
 length_target_words: 1500
-length_actual_words: 1831
-length_ratio_to_target: 1.22
+length_actual_words: 2053
+length_ratio_to_target: 1.369
 length_tier: short
-length_note: "Runs long (1.22×) because the day covers two dense questions — Q.164's punishments and Q.165's full anatomy of temptation — and closes the Secunda-Secundae fall arc, where the nested-integration-decoherence reading of death does substantive Aquinas-to-contemporary linkage rather than padding."
+length_note: "Runs long (1.37× on the layout-aware recount; the field previously read 1.22×) because the day covers two dense questions — Q.164's punishments and Q.165's full anatomy of temptation — and closes the Secunda-Secundae fall arc, where the nested-integration-decoherence reading of death does substantive Aquinas-to-contemporary linkage rather than padding. Two components of the overrun are separable and neither is padding: the file was already understated under the old count, and the 2026-08-15 QC pass added ~150 words of Bridges citation apparatus (Levin PRS-30/10/02/11, Friston PRS-07, Wright PRS-06/27) with no claim added, removed, or reweighted."
 karpathy_wiki_sources:
-  - "traditions/levin/ (nested goal-subordination; the larger agent's goal constraining the parts; bioelectric integration)"
+  - "traditions/levin/prs_triplets.md (PRS-30 scale-continuous nesting of vantage points; PRS-10 continuity of goal-directedness across scales; PRS-02 defection from the cooperative morphogenetic field; PRS-11 failure of bioelectric identity coherence)"
   - "traditions/friston/prs_triplets.md (PRS-07 FEP as substrate-independent self-organization; PRS-20 nested timescale hierarchy — fast inference at low levels, slow learning at high — the home for perturbation propagation up a layered model)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 the integrating level vs. the usurping part)"
   - "master/cross_program_index.md (CROSS-006/007 FEP as substrate-agnostic; morphogenesis as active inference)"
-  - "traditions/wright/ (Surprised by Hope — death and new creation; resurrection as reversal); traditions/rohr/ (PRS-02 order-disorder-reorder, falling upward)"
+  - "traditions/wright/prs_triplets.md (PRS-06 resurrection as the firstfruits of new creation breaking into the old; PRS-27 resurrection as a transformed physicality rather than resuscitation — the entry written for pairing bodily resurrection with mind-monist reframings of the physical). Canonical companion: Surprised by Hope."
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, falling upward)"
 evidence_strength_summary: "Punishments-as-cascade-of-a-nested-control-failure = structural/mechanistic by analogy, medium; the temptation-order as bottom-up propagation through a hierarchical generative model = strong structural fit; death-as-loss-of-top-down-integration = analogical, speculative; the theology of the punishments, the permitted temptation, and new creation = theological."
 mind_first_reframe: "The punishments of the first sin are the systemic consequences of a hierarchically integrated system losing its top-level constraint: once the highest subordination (will to the order above it) defects, the lower subordinations — passions to reason, body to soul, environment to agent — lose their integrating constraint and disorder propagates downward; death is the terminal loss of the integration that held the body together. The temptation-order is the same hierarchy perturbed from the bottom up."
 central_theme_thread: "If union is a nested integration of perspectives under the whole, the fall is what happens when the top of that nesting absolutizes itself: integration fails downward into disorder. Yet the disorder is the beginning of a path — order-disorder-reorder — back toward a deeper union, which is why the project frames salvation as a computation worked out under guidance, in fear and trembling."
 tags: [synthesis, day/200, theme/hierarchical-cascade]
-last_qc_at: "2026-08-07T20:23:57"
+last_qc_at: "2026-08-15T22:29:54"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,11 +54,11 @@ The project frames union as a nested integration of limited perspectives under t
 
 ## Bridges
 
-- **The chain of subordinations ↔ nested goal-integration held by top-down constraint** — Levin-tradition material; master CROSS-006/007. *Why:* passions/body/environment under the agent is a nested integration; breaking the top releases the parts. Evidence: **biological, applied by analogy (medium)**.
-- **Death ↔ terminal loss of integration** — the Levin- and Friston-tradition records (PRS-07). *Why:* death is the decoherence of the parts when the integrating constraint fails, not an added penalty. Evidence: **analogical, speculative**.
+- **The chain of subordinations ↔ nested goal-integration held by top-down constraint** — the Levin-tradition record, PRS-30 (scale-continuous nesting: subjective vantage points distributed continuously across nested cognitive scales) and PRS-10 (continuity of goal-directedness across scales, no categorical break); master CROSS-006/007. *Why:* passions/body/environment under the agent is a nested integration; breaking the top releases the parts. PRS-30 is what licenses running Aquinas's chain across scales at all rather than only within one. Evidence: **biological, applied by analogy (medium)**.
+- **Death ↔ terminal loss of integration** — the Levin-tradition record, PRS-02 and PRS-11 (defection from the cooperative field; the failure of bioelectric identity coherence), with the Friston-tradition record, PRS-07 (FEP as a substrate-agnostic law of self-organization, holding wherever a Markov blanket separates inside from outside). *Why:* death is the decoherence of the parts when the integrating constraint fails, not an added penalty — and PRS-07 is what makes the claim substrate-general rather than a fact about cells. Evidence: **analogical, speculative**.
 - **Temptation-order ↔ bottom-up propagation through a hierarchical generative model** — the Friston-tradition record, PRS-20 (nested timescales: fast inference low, slow learning high). *Why:* a disturbance climbs from the senses to pleasure-appraisal to whole-agent consent — Aquinas's serpent → woman → man. Evidence: **structural fit, medium**.
 - **Consent as the catastrophe ↔ the integrating level ratifying the perturbation** — the McGilchrist-tradition record, PRS-01. *Why:* the highest level, which should restrain, instead consents. Evidence: **conceptual, medium**.
-- **Disorder as the start of a path; death answered by new creation** — the Rohr- (PRS-02) and Wright-tradition resources. *Why:* order-disorder-reorder and resurrection-as-reversal frame the loss as the threshold of a deeper re-integration. Evidence: **theological**.
+- **Disorder as the start of a path; death answered by new creation** — the Rohr-tradition record, PRS-02 (order-disorder-reorder), with the Wright-tradition record, PRS-06 and PRS-27 (resurrection as the firstfruits of new creation breaking into the old; the first instance of a *transformed* physicality, not resuscitation of the old). *Why:* order-disorder-reorder and resurrection-as-reversal frame the loss as the threshold of a deeper re-integration. PRS-27 is the load-bearing one for this day's closing claim — it is written for pairing bodily resurrection with mind-monist reframings of the physical, which is exactly the register in which "re-integration at a level grace raised rather than merely restored" has to be stated. Evidence: **theological**.
 
 ## Where this leaves us
 

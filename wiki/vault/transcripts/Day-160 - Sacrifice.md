@@ -6,7 +6,7 @@ title: Sacrifice
 summa_ref: Secunda Secundae, Q.84-85
 duration_seconds: 697
 word_count: 1914
-raw_asr_word_count: 1915
+raw_asr_word_count: 1902
 segment_count: 282
 caption_kind: asr
 language: en
@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-160 - Sacrifice - Contemporary]]"
 tags: [summa, day/160, pars/2, q/84]
-last_qc_at: "2026-08-07T04:26:04"
+last_qc_at: "2026-08-15T08:24:20"
 last_qc_outcome: "pass"
 ---
 

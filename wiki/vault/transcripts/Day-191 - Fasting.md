@@ -6,7 +6,7 @@ title: Fasting
 summa_ref: Secunda Secundae, Q.146-147
 duration_seconds: 630
 word_count: 1795
-raw_asr_word_count: 1795
+raw_asr_word_count: 1786
 length_tier: short
 segment_count: 267
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-191 - Fasting - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/191, pars/II, q/146]
-last_qc_at: "2026-08-07T08:23:37"
+last_qc_at: "2026-08-15T12:26:31"
 last_qc_outcome: "pass"
 ---
 

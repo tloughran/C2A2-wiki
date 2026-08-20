@@ -3,8 +3,8 @@ day: 273
 title: Anointing Members (Contemporary)
 pairs_with: "[[Day-273 - Anointing Members]]"
 length_target_words: 1500
-length_actual_words: 1042
-length_ratio_to_target: 0.69
+length_actual_words: 1068
+length_ratio_to_target: 0.71
 length_note: "Short tier — the practical questions on Extreme Unction's minister and anointed members (Q.31–32) are brief; the interface-theoretic engagement is fully developed without padding."
 length_tier: short
 karpathy_wiki_sources:
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents navigating anatomical morphospace — the body as a distributed map of form)"
   - "traditions/friston/prs_triplets.md (PRS-05 distributed cognition across scales; the senses as the body's prediction-error boundary)"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology; the body as a site of knowing)"
-evidence_strength_summary: "The senses-as-interface claim is formal-and-empirical (Hoffman PRS-03; Friston PRS-05); the body-as-anatomical-map is empirical-in-domain (Levin PRS-08); the conferral of grace through the anointed senses and the choice of minister are theological/canonical."
+evidence_strength_summary: "The senses-as-interface claim is formal-and-empirical, carried by Hoffman PRS-03 (Confidence High); Friston PRS-05 corroborates it but is (Implicit)/Medium and does not independently establish it; the body-as-anatomical-map is empirical-in-domain (Levin PRS-08); the conferral of grace through the anointed senses and the choice of minister are theological/canonical."
 mind_first_reframe: "Anointing the senses is treating the body's interface points — the very loci where a limited perspective is constructed — as the sites where grace re-enters; the senses are where sin came in (the interface admitted distortion) and so where repair is applied."
 central_theme_thread: "The senses literally are the limitation that individuates a perspective; anointing them marks the limited interface as the place that must be re-consecrated toward the whole."
 tags: [synthesis, day/273, theme/the-senses-as-interface]
-last_qc_at: "2026-08-10T06:29:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T22:32:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 273 — Anointing Members (Contemporary)
@@ -52,7 +52,7 @@ This is one of the most literal appearances of the project's central claim in th
 
 - **Hoffman PRS-03** (formal + empirical): the Interface Theory of Perception — the senses as an adaptive, species-specific interface rather than a truth-mirror. Why this pairing: it gives Aquinas's "sin enters through the senses" a rigorous reading as distortion admitted at the constructed boundary of a perspective.
 - **Levin PRS-08** (empirical, in-domain): the body as anatomical morphospace navigated by cognitive cells — privileged, meaning-bearing loci rather than uniform tissue. Why: it grounds the choice of *specific members* for anointing.
-- **Friston PRS-05** (formal): distributed cognition across scales; the senses as the prediction-error boundary where model meets world. Why: it specifies the senses as the update-surface that repair would target.
+- **Friston PRS-05** (formal, but marked (Implicit) at Confidence Medium — a reconstruction of the scale-agnostic reading of the free-energy principle, not a demonstrated result; it corroborates the Hoffman bridge rather than independently establishing it): distributed cognition across scales; the senses as the prediction-error boundary where model meets world. Why: it specifies the senses as the update-surface that repair would target.
 - **Rohr PRS-04** (theological): embodied love as epistemology; the body as a site of knowing. Why: it keeps the anointing from being spiritualized into mere symbol — bodily gates of knowing are real places of grace.
 
 ## Where this leaves us

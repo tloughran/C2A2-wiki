@@ -3,21 +3,22 @@ day: 182
 title: Magnanimity (Contemporary)
 pairs_with: "[[Day-182 - Magnanimity]]"
 length_target_words: 1500
-length_actual_words: 1365
-length_ratio_to_target: 0.91
+length_actual_words: 1488
+length_ratio_to_target: 0.99
 length_tier: short
 mind_first_reframe: "Magnanimity is the self-model calibrated to its real (large) capacity: an agent that accurately estimates high resources attempts correspondingly great policies, and relates to honor as a *signal* of worth rather than its source. It is not pride, because it is anchored in truth about the self; the vice would be mis-estimation in either direction."
 central_theme_thread: "A perspective that accurately knows its own large capacity, and stretches toward great goods within the whole, is not curved in on itself — it is most itself when most given over to the great thing. The great-souled agent computes toward loving unity at scale, undistracted by the small economy of honor."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (active inference: an accurate, high-precision self-model licenses ambitious long-horizon policies; confidence as precision on one's own capacity)"
-  - "traditions/fredrickson/prs_triplets.md (broaden-and-build at the level of self-concept: upward spirals widen the repertoire of great attempts; resourced agents build large)"
-  - "traditions/mcgilchrist/prs_triplets.md (right-hemisphere largeness and reverence vs left-hemisphere grandiosity; magnanimity as openness to the great, not grasp at status)"
-  - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality: magnanimity as a power of the soul transformed toward great ends, not a mere trait)"
-  - "Wright canonical: greatness as vocation/calling, honor referred to the One who gives it (Paul and the Faithfulness of God); Rohr canonical: the True Self's largeness, great-souled because anchored in union not ego (Immortal Diamond)"
+  - "traditions/friston/prs_triplets.md (PRS-28: neuromodulation encoding precision — the inverse variance of prediction error — so confidence is precision on the self-model; PRS-04: the organism as active modeler whose generative model includes itself)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-28: positivity resonance's emergence from broaden-and-build; PRS-01: micro-moments of resonance as what actually builds durable resource, against the isolated agent)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05: attention as an ontological act, the mode of attending constituting the world that shows up — magnanimity as openness to the great rather than grasp at status)"
+  - "traditions/stump/prs_triplets.md (PRS-09: virtue as cooperative causality — magnanimity as a power of the soul transformed toward great ends, not a mere trait)"
+  - "traditions/wright/prs_triplets.md (PRS-20: call-and-vocation for a finite, situated agent, tied explicitly to perspective-limitation as the individuating condition)"
+  - "traditions/rohr/prs_triplets.md (PRS-05: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-08-07T10:30:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 182 — Magnanimity (Contemporary)
@@ -56,11 +57,12 @@ A perspective is individuated by its limits — but not every largeness of self 
 
 ## Bridges
 
-- **Friston (accurate high-end self-model)** — magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal.*
-- **Fredrickson (upward spirals of resource)** — the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical.*
-- **McGilchrist (reverent openness vs grandiose grasp)** — true magnanimity as less self-occupied, drawn out by the great good. *Empirical / interpretive.*
-- **Stump (virtue as transformed power, PRS-09)** — magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*
-- **Wright + Rohr (greatness as vocation / True Self)** — largeness received by call and union, honor referred beyond the self. *Theological.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-28 (precision as the inverse variance of prediction error) with PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-28 (positivity resonance out of broaden-and-build) with PRS-01 (micro-moments as what builds): the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-05 (attention as ontological act; the mode of attending constitutes the world disclosed): true magnanimity as less self-occupied, drawn out by the great good. *Empirical / interpretive.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-20 (call-and-vocation for a finite, situated agent): largeness received by call, honor referred beyond the self. *Theological.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-05 (false self to true self; the limitation redemptively re-read as the gift): great-souled because anchored in union rather than ego. *Theological.*
 
 ## Where this leaves us
 

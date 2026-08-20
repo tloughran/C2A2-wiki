@@ -3,21 +3,22 @@ day: 191
 title: Fasting (Contemporary)
 pairs_with: "[[Day-191 - Fasting]]"
 length_target_words: 1500
-length_actual_words: 1273
-length_ratio_to_target: 0.85
+length_actual_words: 1387
+length_ratio_to_target: 0.92
 length_note: "Length-light vs the 1500 short-tier guideline but a complete PRS synthesis (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 free energy principle; PRS-04 organism as active modeler)"
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 vagal tone / self-regulation; PRS-05 embodiment)"
+  - "traditions/friston/prs_triplets.md (PRS-28: neuromodulation encoding precision, the inverse variance of prediction error — the actual home of the precision-weighting claim; PRS-04: organism as active modeler; PRS-01: the Free Energy Principle itself)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01: micro-moments of positivity resonance raising vagal tone; PRS-05: love grounded in measurable vagal tone, oxytocin and neural synchrony — the embodiment of the abstract ontology)"
   - "refs/Karpathy wiki bridges.md (II-II Q.141-170 temperance -> fredrickson, friston; precision-weighting as temperance)"
-  - "traditions/wright/ (Surprised by Hope; embodied discipline as new-creation rehearsal); traditions/rohr/ (Falling Upward; necessary deprivation)"
+  - "traditions/wright/prs_triplets.md (PRS-30: the functionally Platonic souls-escaping-bodies hope corrected toward embodied new creation); Surprised by Hope"
+  - "traditions/rohr/prs_triplets.md (PRS-37: the path of descent as transition mechanism, against modernity's manufactured ascent); Falling Upward"
 evidence_strength_summary: "Fasting as resource-reallocation / allostatic self-regulation = empirical, medium (interoception, metabolic-attentional trade-offs); freeing-the-mind-as-lowered-load = mechanistic-speculative; atonement and the kingdom-orientation = theological."
 mind_first_reframe: "Fasting is the deliberate down-regulation of a lower predictive appetite so a finite agent can re-weight its scarce attention toward modeling the whole — a self-imposed prediction-error undertaken because the agent's true setpoint lies beyond bodily homeostasis."
 central_theme_thread: "An agent individuated by the limits of its resources cannot attend to everything at once; fasting is the in-via discipline of clearing resource-load so the perspective can widen toward the loving unity it computes toward but cannot yet hold."
 tags: [synthesis, day/191, theme/self-regulation]
-last_qc_at: "2026-08-07T08:23:37"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:31"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 191 — Fasting (Contemporary Parallel)
@@ -52,11 +53,11 @@ The project's claim is that conscious agents are individuated by the limitations
 
 ## Bridges
 
-- **Fasting ↔ precision-weighting / active inference** — the Friston-tradition wiki (PRS-01, PRS-04); bridges file "precision-weighting as temperance." *Why:* fasting is the acute exercise of temperance read as adjustable precision over an interoceptive appetite. Evidence: **mechanistic, medium**.
+- **Fasting ↔ precision-weighting / active inference** — `traditions/friston/prs_triplets.md`, PRS-28 (neuromodulation encoding precision, the inverse variance of prediction error over selected channels) with PRS-04 (the organism as active modeler) and PRS-01 (the Free Energy Principle itself); bridges file "precision-weighting as temperance." *Why:* fasting is the acute exercise of temperance read as adjustable precision over an interoceptive appetite — and precision proper lives at PRS-28, not at the two more general entries this bullet previously cited alone. Evidence: **mechanistic, medium**.
 - **Regulation ↔ embodied vagal control** — the Fredrickson-tradition wiki (PRS-01, PRS-05). *Why:* Aquinas's calibrated, dispensable fast matches self-regulation as a real bodily control system with limits. Evidence: **empirical, medium**.
 - **"Freeing the mind" ↔ attentional/metabolic load-shedding** — Friston-tradition wiki. *Why:* releasing the lower loop frees budget for higher-order modeling. Evidence: **mechanistic-speculative**.
-- **Discipline ↔ new-creation rehearsal** — the Wright-tradition resources (*Surprised by Hope*). *Why:* the body trained toward the age to come, not despised. Evidence: **theological**.
-- **Chosen deprivation ↔ the necessary falling** — the Rohr-tradition resources (*Falling Upward*). *Why:* voluntary loss loosens the false self so the whole can be seen. Evidence: **theological**.
+- **Discipline ↔ new-creation rehearsal** — `traditions/wright/prs_triplets.md`, PRS-30 (the functionally Platonic "souls escaping bodies" hope corrected toward embodied new creation); *Surprised by Hope*. *Why:* the body trained toward the age to come, not despised. Evidence: **theological**.
+- **Chosen deprivation ↔ the necessary falling** — `traditions/rohr/prs_triplets.md`, PRS-37 (the path of descent as transition mechanism, and modernity's manufactured ascent that substitutes for it); *Falling Upward*. *Why:* voluntary loss loosens the false self so the whole can be seen. Evidence: **theological**.
 
 ## Where this leaves us
 

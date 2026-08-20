@@ -6,7 +6,7 @@ title: Man's Faculties
 summa_ref: Prima Pars, Q.77 + Q.78
 duration_seconds: 1228
 word_count: 3203
-raw_asr_word_count: 3203
+raw_asr_word_count: 3187
 length_tier: medium
 segment_count: 463
 caption_kind: asr
@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-040 - Mans Faculties - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T00:27:06"
+last_qc_at: "2026-08-15T04:24:59"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/040, pars/I, q/77, q/78, theme/faculties, theme/interior-senses, theme/cognitive-architecture]

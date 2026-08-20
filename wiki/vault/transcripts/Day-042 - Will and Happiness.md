@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-042 - Will and Happiness - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-04T16:23:57"
+last_qc_at: "2026-08-16T04:19:26"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12 (cached ASR refetched 2026-05-12)
 tags: [summa, day/042, pars/I, q/81, q/82, theme/will, theme/happiness, theme/concupiscible-irascible, theme/appetite]

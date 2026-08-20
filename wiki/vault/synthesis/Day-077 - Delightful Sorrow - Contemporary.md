@@ -3,23 +3,23 @@ day: 77
 title: Delightful Sorrow (Contemporary)
 pairs_with: "[[Day-077 - Delightful Sorrow]]"
 length_target_words: 1500
-length_actual_words: 1450
-length_ratio_to_target: 0.967
+length_actual_words: 1571
+length_ratio_to_target: 1.047
 length_tier: short
 mind_first_reframe: "Under predictive-processing accounts (Friston), valence is prediction-error gain over a generative model that always contains counterfactuals, so sorrow and delight co-arise within a single inference; under Kastrup's idealism, grief is alter-loosening that admits more of mind-at-large — the same loosening admits both the loss and the wider field of which the loss is part."
 central_theme_thread: "Q.32 a.4's delightful sorrow is the affective signature of an agent whose generative model holds both the present privation and the larger good in which it is contained; the path from the loss-only agent to the loss-plus-larger-good agent is the perspective-widening — through contemplation, friendship, positivity resonance — that the project tracks as the computational work of loving unity."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-08 high-quality listening as resonance enabler; PRS-09 weak-tie intellectual humility; PRS-10 weak-tie community as loneliness solution; PRS-03 scale-bridging in agent coupling — PRS-03 agrees across both files)"
   - "traditions/fredrickson/wiki.md (PRS-05 broadened attention and tradition learning — the broaden-and-build gloss resolves ONLY against wiki.md: prs_triplets.md PRS-05 is a different triplet, 'Embodiment of abstract ontology', and prs_triplets names broaden-and-build only at PRS-19/27/28, all of which are programme historiography rather than the mechanism)"
-  - "traditions/friston/wiki.md (active inference; epistemic vs pragmatic value; collective FEP)"
-  - "traditions/mcgilchrist/wiki.md (attention as evidence-weighting; precision)"
-  - "traditions/kastrup/wiki.md (alters, dissociation, re-integration via love)"
-  - "traditions/rohr/ — Falling Upward; second-half-of-life integration of loss"
-  - "traditions/wright/ — Romans 8 on suffering and hope; eschatology already-not-yet"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling — both verified in prs_triplets.md, which is where these ids resolve)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act — the mode of attention shapes what kind of world is disclosed)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociated alters of one consciousness; PRS-07 the dissociative boundary as clinically variable — the entry that makes alter-loosening a statable move)"
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-32 the 'weeping mode' — grief as a distinct processing mode that metabolizes what blame-partitioning distorts). Canonical companion: Falling Upward, second-half-of-life integration of loss."
+  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology — the already/not-yet structure). Canonical companion: Romans 8 on suffering and hope."
   - "master/cross_program_index.md CROSS-005 (is love/positivity resonance/union a fundamental category? — Fredrickson, Stump, Kastrup)"
 evidence_strength_summary: "Q.32 a.4's claim that sorrow is the accidental cause of pleasure is empirically well-grounded — bittersweet emotional research (Frijda, Larsen) confirms mixed valence; Q.32 a.5 on praise/honor maps onto Fredrickson's high-quality listening evidence (PRS-08, high confidence); Q.33 a.3 on pleasure hindering reason is empirically supported (attentional narrowing). Theological move on universal participation in being is speculative-but-coherent."
 tags: [synthesis, day/077, theme/delightful-sorrow, theme/mixed-valence]
-last_qc_at: "2026-08-07T20:23:57"
+last_qc_at: "2026-08-15T22:29:50"
 last_qc_outcome: "rewrote"
 ---
 
@@ -65,9 +65,9 @@ The central claim — that conscious agents are individuated by perspective-limi
 
 - **Friston PRS-06 (multi-agent coherence)** — collective active inference frames *shared* mourning (Q.32 a.5, Q.32 a.6) as alignment of generative models around a shared model-state; *empirical, growing literature*.
 - **Fredrickson PRS-08, PRS-09, PRS-10** — high-quality listening (Q.32 a.5 praise/honor) and weak-tie connection as the empirical mechanism for Aquinas's "pleasure from being-known"; *empirical, high confidence*.
-- **McGilchrist precision/attention bridge** — Q.33 a.3 (pleasure hinders reason) as affective gain on precision-weighting; *formally suggestive*.
-- **Kastrup analytic idealism** — grief as alter-loosening admits more of mind-at-large; *speculative metaphysical*, theologically congruent.
-- **Wright, Romans 8 + Rohr, *Falling Upward*** — eschatologically-structured suffering; the mixed valence as the affective form of "already / not yet"; *theological, well-attested in tradition*.
+- **PRS-05 in the McGilchrist-tradition wiki (attention as ontological act)** — Q.33 a.3 (pleasure hinders reason) as affective gain on precision-weighting; the entry's claim that the *mode* of attention shapes what kind of world is disclosed is the general form of which the pleasure-narrowing is one case; *formally suggestive*.
+- **PRS-02 + PRS-07 in the Kastrup-tradition wiki (dissociated alters; the dissociative boundary as clinically variable)** — grief as alter-loosening admits more of mind-at-large. PRS-02 supplies the individuation claim; PRS-07 is the entry that treats the boundary itself as something that can be disturbed and shifted, which is what "loosening" requires; *speculative metaphysical*, theologically congruent.
+- **PRS-03 in the Wright-tradition wiki (inaugurated eschatology) + PRS-02 and PRS-32 in the Rohr-tradition wiki (order-disorder-reorder; the "weeping mode")** — eschatologically-structured suffering; the mixed valence as the affective form of "already / not yet." Rohr PRS-32 is the closer of the two on this day: grief as a *distinct processing mode* that metabolizes what blame-partitioning distorts, which is delightful sorrow described from the practice side; *theological, well-attested in tradition*.
 - **CROSS-005 (master)** — love as ontological category: the same field that grounds delight grounds the dignity of grief; without ontologically-anchored love, mixed valence has no home.
 
 ## Where this leaves us

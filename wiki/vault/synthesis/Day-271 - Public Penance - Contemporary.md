@@ -8,16 +8,16 @@ length_ratio_to_target: 0.73
 length_note: "Short tier — Habash's treatment of indulgences' recipients and the solemn rite of public penance is brief; the contemporary engagement is fully developed without padding."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-02 cancer-as-defection, PRS-11 cancer-as-dissociative-identity — sin as defection from the cooperative morphogenetic community; restoration = re-coherence with the collective field)"
+  - "traditions/levin/prs_triplets.md (PRS-02 cancer-as-defection, PRS-11 cancer-as-dissociative-identity — sin as defection from the cooperative morphogenetic community; PRS-07 bioelectric reprogramming as therapeutic paradigm — restoration by updating the collective bioelectric field rather than editing the defector's genetic hardware)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — reintegration as re-alignment of the member's generative model with the community's)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-07 salvation as conversion into the relational pattern, not individual escape)"
-  - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people, God's Homecoming); traditions/wright/wiki.md (five-act improvisation)"
+  - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people, God's Homecoming; PRS-02 faithful improvisation — the five-act drama hermeneutic, extending a tradition into unanticipated circumstances)"
   - "traditions/loughran/prs_triplets.md (PRS-09 Synergistic Coils as meta-tools — one resource resolving more than one P-to-S transition)"
 evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are formal (Friston PRS-06) and empirical-in-domain (Levin collective morphogenetic field); the order-disorder-reorder structure of penance is theological-developmental (Rohr); the efficacy of the keys and the supernatural reality of reincorporation are theological."
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-08-10T06:29:37"
+last_qc_at: "2026-08-18T12:20:30"
 last_qc_outcome: "rewrote"
 ---
 

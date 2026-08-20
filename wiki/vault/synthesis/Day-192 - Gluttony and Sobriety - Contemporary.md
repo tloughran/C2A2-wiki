@@ -3,22 +3,23 @@ day: 192
 title: Gluttony & Sobriety (Contemporary)
 pairs_with: "[[Day-192 - Gluttony and Sobriety]]"
 length_target_words: 1500
-length_actual_words: 1287
-length_ratio_to_target: 0.86
-length_note: "Length-light vs the 1500 short-tier guideline but a complete PRS synthesis (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
+length_actual_words: 1569
+length_ratio_to_target: 1.046
+length_note: "Was 1287/0.86 and length-light; now 1569/1.046, inside short-tier ±10%. The growth is bridge-anchoring text added 2026-08-15 (PRS ids and file paths written into the Resource paragraphs and the Bridges bullets), not padding and not new argument — no claim was added, removed, or reweighted."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 free energy; PRS-04 active modeler; precision-weighting)"
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-02 love as objective coupling; counterfeit vs real attractor)"
-  - "traditions/hawkins/wiki.md (Thousand Brains; integrity of the predictive cortex); traditions/mcgilchrist/wiki.md (attention/model integrity)"
+  - "traditions/friston/prs_triplets.md (PRS-28 neuromodulation encodes precision over selected sensory channels — the precision claim proper; PRS-01 free energy / biological agency without vitalism; PRS-04 the organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable neurophysiological synchrony rather than sentiment — the real attractor the counterfeit imitates)"
+  - "traditions/hawkins/prs_triplets.md (PRS-01 Hierarchical Temporal Memory — world model, reference frames, temporal memory; PRS-04 reference frames as universal cognitive tool); traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act)"
   - "refs/Karpathy wiki bridges.md (II-II Q.141-170 temperance -> fredrickson, friston)"
-  - "traditions/rohr/ (the counterfeit self); traditions/wright/ (idolatry as misdirected worship)"
+  - "traditions/rohr/prs_triplets.md (PRS-05 the false-self-to-true-self mechanism of contemplative transformation)"
+  - "Wright canonical: 'Surprised by Hope' on mis-located goods — idolatry as misdirected worship has NO numbered home in traditions/wright/prs_triplets.md; cited canonically and the gap stated"
 evidence_strength_summary: "Gluttony as reward-prediction capture = empirical/mechanistic, medium (dopaminergic reward, habit); sobriety as protection of a degradable predictive substrate = empirical, medium-high; 'counterfeit beatitude' and leader-sobriety = philosophical-theological."
 mind_first_reframe: "Gluttony is a lower reward-model captured into a counterfeit attractor that mimics the agent's true setpoint; sobriety is the special guard over substances that degrade the very predictive substrate on which reason runs."
 central_theme_thread: "A perspective computing toward loving unity must keep its modeling apparatus intact and undeceived; gluttony substitutes a local counterfeit whole for the real one, and the leader's sobriety protects the wide perspective a whole community leans on."
 tags: [synthesis, day/192, theme/self-regulation]
-last_qc_at: "2026-08-07T08:23:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T14:32:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 192 — Gluttony & Sobriety (Contemporary Parallel)
@@ -33,9 +34,9 @@ Two linked inquiry-problems. The first is **reward capture**: how does a lower a
 
 ## Resource
 
-For reward capture, the leading resource is the Friston-tradition record of the agent as an active modeler with adjustable precision (PRS-01, PRS-04), read together with the Fredrickson-tradition account of what a *real* attractor for an agent looks like. In the active-inference frame, an appetite is a prediction the agent works to fulfill; ordinarily its precision is set so it serves higher-level policies. Gluttony is the case where the appetitive prediction has its precision cranked so high that it functions as a terminal goal — the agent now acts to confirm "I am eating/drinking the most pleasant thing" as if that were its setpoint. Aquinas's "counterfeit beatitude" is precise: the lower model mimics the form of the agent's true final good (a fixed point everything else serves) while delivering none of its content. The Fredrickson-tradition wiki sharpens the contrast — the agent's genuine self-organizing attractor is positivity resonance, love as an objective coupling among agents (PRS-02); gluttony is a *solitary* counterfeit of that coupling, a reward loop closed on the self that imitates fulfillment without the relational synchrony that constitutes the real thing. Aquinas's daughter-vices (dullness of mind, unseemly joy, loquaciousness, scurrility, uncleanness) are recognizably the downstream signature of a captured reward loop degrading higher function.
+For reward capture, the leading resource is the Friston-tradition record of the agent as an active modeler (PRS-04) operating under the free-energy principle (PRS-01), together with the precision record proper — PRS-28, where neuromodulation is what encodes precision, the inverse variance of prediction error, over selected sensory channels. That third id is the one carrying the weight here: PRS-01 and PRS-04 give the modeler, but neither of them says *precision*, and the argument below turns entirely on precision being adjustable. Read together with the Fredrickson-tradition account of what a *real* attractor for an agent looks like. In the active-inference frame, an appetite is a prediction the agent works to fulfill; ordinarily its precision is set so it serves higher-level policies. Gluttony is the case where the appetitive prediction has its precision cranked so high that it functions as a terminal goal — the agent now acts to confirm "I am eating/drinking the most pleasant thing" as if that were its setpoint. Aquinas's "counterfeit beatitude" is precise: the lower model mimics the form of the agent's true final good (a fixed point everything else serves) while delivering none of its content. The Fredrickson-tradition wiki sharpens the contrast — the agent's genuine self-organizing attractor is positivity resonance, love as an objective coupling among agents (PRS-02); gluttony is a *solitary* counterfeit of that coupling, a reward loop closed on the self that imitates fulfillment without the relational synchrony that constitutes the real thing. Aquinas's daughter-vices (dullness of mind, unseemly joy, loquaciousness, scurrility, uncleanness) are recognizably the downstream signature of a captured reward loop degrading higher function.
 
-For substrate vulnerability, the Hawkins- and McGilchrist-tradition wikis are the resources. If reason runs on a predictive cortex — a hierarchy of reference frames building and testing models — then a substance that "disturbs the brain" is not merely tempting; it directly corrupts the modeling hardware. Sobriety's special status follows immediately: "wherever we find a special hindrance to reason, there must be a special virtue to remove it" (Q.149 a.2) is a clean control-theoretic principle — guard the controller's substrate with a dedicated guard.
+For substrate vulnerability, the Hawkins- and McGilchrist-tradition wikis are the resources. If reason runs on a predictive cortex — a hierarchy of reference frames building and testing models, which is exactly the Hawkins-tradition record at PRS-01 (Hierarchical Temporal Memory: world model, reference frames, temporal memory) and PRS-04 (reference frames as a universal cognitive tool) — then a substance that "disturbs the brain" is not merely tempting; it directly corrupts the modeling hardware. Sobriety's special status follows immediately: "wherever we find a special hindrance to reason, there must be a special virtue to remove it" (Q.149 a.2) is a clean control-theoretic principle — guard the controller's substrate with a dedicated guard.
 
 ## Solution (proposed, speculative)
 
@@ -53,11 +54,11 @@ If a limited perspective computes toward loving unity using the resources it per
 
 ## Bridges
 
-- **Gluttony ↔ reward capture / cranked precision** — the Friston-tradition wiki (PRS-01, PRS-04). *Why:* an appetitive prediction promoted to terminal goal is the capital-vice mechanism. Evidence: **mechanistic, medium**.
-- **Counterfeit beatitude ↔ counterfeit of the real attractor (love)** — the Fredrickson-tradition wiki (PRS-02). *Why:* gluttony is a solitary loop imitating the relational coupling that genuinely fulfills. Evidence: **philosophical, with empirical anchor**.
-- **Sobriety ↔ protection of the predictive substrate** — the Hawkins- and McGilchrist-tradition wikis. *Why:* alcohol degrades the modeling hardware reason runs on, warranting a dedicated guard. Evidence: **empirical, medium-high**.
-- **Leader-sobriety ↔ network-node hygiene** — Friston-tradition multi-agent record (PRS-06). *Why:* degrading a high-bandwidth node degrades the collective's capacity. Evidence: **speculative**.
-- **Counterfeit goal ↔ idolatry / the false self** — the Wright- and Rohr-tradition resources. *Why:* a creature put in the goal-slot of the whole. Evidence: **theological**.
+- **Gluttony ↔ reward capture / cranked precision** — the Friston-tradition wiki (`traditions/friston/prs_triplets.md`), **PRS-28** for precision proper (neuromodulation encodes the inverse variance of prediction error over selected channels), with **PRS-04** (the organism as active modeler) and **PRS-01** (the free-energy principle) supplying the modeler the precision is set on. *Why:* an appetitive prediction whose precision is promoted until it functions as a terminal goal is the capital-vice mechanism. Evidence: **mechanistic, medium**.
+- **Counterfeit beatitude ↔ counterfeit of the real attractor (love)** — the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`, **PRS-02**: love is not sentiment but measurable neurophysiological synchrony — vagal tone, oxytocin, neural phase-locking). *Why:* gluttony is a solitary loop imitating the relational coupling that genuinely fulfills, and PRS-02 is what makes "the real thing" a claim with a measurement attached rather than a preference. Evidence: **philosophical, with empirical anchor**.
+- **Sobriety ↔ protection of the predictive substrate** — the Hawkins-tradition wiki (`traditions/hawkins/prs_triplets.md`, **PRS-01** Hierarchical Temporal Memory and **PRS-04** reference frames as a universal cognitive tool) with the McGilchrist-tradition wiki (`traditions/mcgilchrist/prs_triplets.md`, **PRS-05** attention as an ontological act — the mode of attending constitutes the world that shows up, so dimming the mode is not a neutral loss). *Why:* alcohol degrades the modeling hardware reason runs on, warranting a dedicated guard. Evidence: **empirical, medium-high**.
+- **Leader-sobriety ↔ network-node hygiene** — the Friston-tradition wiki (`traditions/friston/prs_triplets.md`, **PRS-06**: multi-agent coherence via mutual modeling — shared attractors formed without loss of individual autonomy). *Why:* degrading a high-bandwidth node degrades the collective's capacity to cohere. Evidence: **speculative**.
+- **Counterfeit goal ↔ idolatry / the false self** — Rohr resolves: `traditions/rohr/prs_triplets.md` **PRS-05**, the false-self-to-true-self mechanism. Wright does not: the Wright-tradition record has no numbered home for *worship misdirected onto a creature*, so this half is cited canonically (*Surprised by Hope* on mis-located goods) with the gap stated. Evidence: **theological**.
 
 ## Where this leaves us
 

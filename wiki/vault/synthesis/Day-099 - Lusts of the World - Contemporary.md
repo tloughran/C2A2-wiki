@@ -7,9 +7,9 @@ length_actual_words: 1896
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 active modeler, PRS-06 multi-agent coherence; curiosity-as-active-inference)"
-  - "traditions/hawkins/wiki.md (HTM, precision-weighting, attentional control)"
+  - "traditions/hawkins/prs_triplets.md (PRS-01 HTM; PRS-06 heterarchy - flagged as a caveat against the strict-hierarchy reading of the Johannine triad)"
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-07 narrative cognition, PRS-08 narrative knowledge of suffering)"
-  - "traditions/levin/wiki.md (agency-at-scale, multi-level priorities)"
+  - "traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales - agency-at-scale, multi-level priorities)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "Wright on Romans 7 (self-divided agent under sin) - canonical works (Wright wiki not yet on disk)"
 evidence_strength_summary: "Aquinas's ignorance/passion analysis and the Johannine triad are textual-theological. Friston/Hawkins on appetite-as-precision-spike and policy-capture are formal-empirical. The self-love-as-perspective-bias claim is the central-theme commitment with high theological convergence."
@@ -18,8 +18,8 @@ length_note: "Over target: covers two dense questions (Q.76 ignorance + Q.77 pas
 mind_first_reframe: "Aquinas's two pre-malice etiologies of sin (Q.76 ignorance, Q.77 passion / Johannine triad) recover as substrate-level diagnostics: vincible ignorance is the prior-shaping consequence of a policy-of-not-attending (curiosity-as-active-inference); passion-as-capture is precision-as-policy-hijack via fixation or dilution; self-love (Q.77 a.4) is perspective-bias — the unavoidable structural feature of any agent individuated by perspective-limitation; and the Johannine triad maps onto three architectural levels (body-bound, socio-cognitive, self-modeling) along which self-love characteristically deforms."
 central_theme_thread: "Q.77 a.4's 'inordinate self-love is the cause of every sin' and the project's central claim — 'conscious agents are individuated by the limitations of their perspective' — are the same statement in different vocabularies. The individuating perspective bias is what Augustine called amor sui; the cure in both frames is charity, the integrating prior that re-couples the agent's perspective to the wider whole and so changes what the agent optimizes for. Working out salvation in fear and trembling just is this slow retraining of priors under guidance from those who perceive more of the whole."
 tags: [synthesis, day/099, theme/perspective-bias, theme/passion-and-capture]
-last_qc_at: "2026-08-09T20:20:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-17T22:27:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 99 — Lusts of the World (Contemporary)
@@ -69,8 +69,8 @@ Today is one of the days where the central theme lands hardest. *Self-love is th
 ## Bridges
 
 - **Friston PRS-04 + curiosity-as-active-inference** — formal/empirical. Pairs with Q.76 a.2 — vincible ignorance as policy-of-not-attending.
-- **Hawkins HTM + Friston precision-weighting** — empirical. Pairs with Q.77 a.1-2 — passion-as-capture mechanisms.
-- **Levin-tradition agency-at-scale** + **Hawkins hierarchical architecture** — empirical. Pairs with the Johannine triad as three-level deformation.
+- **PRS-01 in the Hawkins-tradition wiki** (Hierarchical Temporal Memory) + **Friston precision-weighting** — empirical. Pairs with Q.77 a.1-2 — passion-as-capture mechanisms.
+- **PRS-09 in the Levin-tradition wiki** (principled framework for cognitive attribution across scales — goal-directedness as a testable claim from molecules to organisms) — empirical. Pairs with the Johannine triad as three-level deformation. Note that the *strict*-hierarchy half of this bullet is contested inside the Hawkins register itself: PRS-06 there argues the neocortex is heterarchical rather than a clean processing hierarchy. The three-level reading of the triad should be taken as a levels-of-organization claim, not as a claim about strictly hierarchical cortical connectivity.
 - **Stump PRS-07 / PRS-08 (narrative cognition; narrative knowledge of suffering)** — analytic-theological. Pairs with Q.76 a.2 on epistemic disposition through narrative engagement.
 - **Wright on Romans 7 (divided self under sin)** — canonical (Wright wiki not yet on disk). Theological. Pairs directly with Q.77 a.4 *self-love as universal cause*.
 

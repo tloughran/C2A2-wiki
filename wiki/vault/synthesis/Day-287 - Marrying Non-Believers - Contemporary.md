@@ -3,7 +3,7 @@ day: 287
 title: Marrying Non-Believers (Contemporary)
 pairs_with: "[[Day-287 - Marrying Non-Believers]]"
 length_target_words: 2200
-length_actual_words: 1119
+length_actual_words: 1240
 length_tier: medium
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/wright/prs_triplets.md (PRS-05 salvation as covenant inclusion; canonical: 1 Cor 7 on the unbelieving spouse)"
   - "wiki/traditions/macintyre (bridge node: tradition-bound rationality; shared tradition as precondition of deep agreement)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing, PRS-03 Universal Christ)"
-evidence_strength_summary: "Friston shared-model-as-coupling-precondition formal; MacIntyre tradition-dependence philosophical; Wright scriptural (1 Cor 7); the disparity-of-worship verdict is theological-normative, not empirical."
-length_ratio_to_target: 0.51
+evidence_strength_summary: "Friston shared-model-as-coupling-precondition formal (PRS-06, Confidence Medium); the community-widening move that carries most of the argument is formal in shape but registers as PRS-18, Confidence Speculative — the ZBS band-width parameter is proposed as in-principle measurable, not yet measured, so the optimistic half of the verdict rests on the weaker evidence; MacIntyre tradition-dependence philosophical; Wright scriptural (1 Cor 7, PRS-05 Confidence High); the disparity-of-worship verdict is theological-normative, not empirical."
+length_ratio_to_target: 0.56
 mind_first_reframe: "A shared comprehensive framework is a genuine precondition of the deepest union — disparity at the level of ultimate ends really does impede the sacramental good — yet community-widening shows it is a barrier to be worked across, not a simple disqualification."
 central_theme_thread: "Disparity of worship is the marital test case of the project's own method: the realism that a shared framework deepens union meets the dialogical hope that divergent traditions can be bridged by patient mutual translation."
 tags: [synthesis, day/287, theme/shared-tradition-as-precondition-of-union]
-last_qc_at: "2026-08-10T14:28:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T18:27:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 287 — Marrying Non-Believers (Contemporary Parallel)
@@ -36,7 +36,7 @@ The Friston-tradition program supplies the leading move. Tom's PRS-form record o
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **a shared comprehensive framework is a genuine precondition of the *deepest* union — disparity at the level of ultimate ends really does impede the sacramental good — but the same science of community-widening shows such disparity is a barrier to be worked across, not a simple disqualification, and the Pauline tradition insists the divided union can still be sanctified.** What it *shares* with Aquinas: the structural recognition that the highest marital good requires a shared orientation to ultimate ends, and the Pauline refusal to dissolve an existing mixed marriage. Where it *reframes*: Aquinas treats disparity primarily as an impediment to be dispensed or avoided; the monist/MacIntyrean reframe treats it as a *translation problem* — a real and costly barrier to deep coupling that can nonetheless be addressed by the labor of mutual modeling across traditions, reframing the impediment as a graded difficulty rather than a binary bar. Where evidence is *firm*: that depth of coupling tracks extent of shared model is well-defined formally, and tradition-dependence of deep rational agreement is a strong philosophical result. Where *speculative*: the theological verdict that a *specific* shared faith is required for the sacramental good is normative and internal to the tradition, not derivable from the formal models, which speak only of shared-model depth in general.
+The contemporary-parallel response: **a shared comprehensive framework is a genuine precondition of the *deepest* union — disparity at the level of ultimate ends really does impede the sacramental good — but the same science of community-widening shows such disparity is a barrier to be worked across, not a simple disqualification, and the Pauline tradition insists the divided union can still be sanctified.** What it *shares* with Aquinas: the structural recognition that the highest marital good requires a shared orientation to ultimate ends, and the Pauline refusal to dissolve an existing mixed marriage. Where it *reframes*: Aquinas treats disparity primarily as an impediment to be dispensed or avoided; the monist/MacIntyrean reframe treats it as a *translation problem* — a real and costly barrier to deep coupling that can nonetheless be addressed by the labor of mutual modeling across traditions, reframing the impediment as a graded difficulty rather than a binary bar. Where evidence is *firm*: that depth of coupling tracks extent of shared model is well-defined formally, and tradition-dependence of deep rational agreement is a strong philosophical result. Where *speculative*: two things, and they should not be run together. The theological verdict that a *specific* shared faith is required for the sacramental good is normative and internal to the tradition, not derivable from the formal models, which speak only of shared-model depth in general. But the *optimistic* half of the response is speculative too, and on formal rather than theological grounds — the community-widening result is recorded at PRS-18 with `Confidence: Speculative`, because the band-width parameter that would make "widening" a measurable quantity is proposed rather than established. So the pessimistic structural half of this day's verdict rests on the firmer anchor and the hopeful half on the weaker one. That asymmetry is worth stating plainly, since it runs opposite to the direction the argument would prefer.
 
 ## The central-theme thread
 
@@ -44,8 +44,8 @@ The project holds that limited agents need *guidance from those who perceive mor
 
 ## Bridges
 
-- **Friston PRS-18 (formal; the load-bearing pairing):** widening a community to engage a rival tradition — disparity is a real but workable barrier, not a simple disqualification.
-- **Friston PRS-06 (formal):** depth of union tracks extent of shared model — the structure behind "impeded as to the sacramental good."
+- **Friston PRS-18 (formal in shape, *Confidence: Speculative* in the register; the load-bearing pairing):** widening a community to engage a rival tradition — disparity is a real but workable barrier, not a simple disqualification. The ZBS band-width that would make "widening" measurable is offered as an in-principle parameter, not an established quantity; the optimistic half of this day's verdict therefore rests on the weaker of its two formal anchors, and is reported as such rather than borrowed against.
+- **Friston PRS-06 (formal, *Confidence: Medium*):** depth of union tracks extent of shared model — the structure behind "impeded as to the sacramental good."
 - **MacIntyre bridge (philosophical; form-level citation, roster-pending):** deep agreement is tradition-constituted; cross-tradition union requires translation, not neutral ground.
 - **Wright PRS-05 (scriptural/theological):** 1 Cor 7 — the unbelieving spouse is sanctified, not expelled; patient inclusion qualifies structural pessimism.
 - **Rohr PRS-01 / PRS-03 (theological):** the cosmic Christ works beyond visible faith-boundaries; "disparity" is never simple exclusion.

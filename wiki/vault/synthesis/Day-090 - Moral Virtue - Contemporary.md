@@ -18,7 +18,7 @@ The deeper question Q.59 a.5 (the *more perfect the virtue, the more does it cau
 
 ## Resource
 
-**Fredrickson's positivity-resonance and broaden-and-build research** is the keystone empirical evidence for Q.59 a.5. Fredrickson PRS-01 (loving-kindness meditation), PRS-05 (broaden-and-build), and PRS-08 (high-quality connection) document that cultivated positive affect *amplifies* with sustained virtuous practice, not the reverse. The "upward spiral" of positivity-resonance → broaden-and-build → more positivity-resonance is empirically the Q.59 a.5 dynamic: the more perfect the virtue, the more does it cause joy. Fredrickson's longitudinal data on vagal tone, attentional defaults, and prosocial responding give the mechanism.
+**Fredrickson's positivity-resonance and broaden-and-build research** is the keystone empirical evidence for Q.59 a.5. Two ids in `traditions/fredrickson/prs_triplets.md` — PRS-01 (isolation and disconnection; loving-kindness meditation as the upward-spiral intervention) and PRS-08 (high-quality listening as resonance enabler) — together with PRS-05 in `traditions/fredrickson/wiki.md` (broadened attention and tradition learning: positive states broaden attention) document that cultivated positive affect *amplifies* with sustained virtuous practice, not the reverse. The file attribution matters here and is stated deliberately: PRS-05 carries the broaden-and-build sense in `wiki.md`, whereas the PRS-05 entry in `prs_triplets.md` is a different triplet ("embodiment of abstract ontology" — vagal tone, oxytocin, and neural synchrony as material anchor), which would support an embodied-signature claim but not the broadening one this paragraph needs. The "upward spiral" of positivity-resonance → broaden-and-build → more positivity-resonance is empirically the Q.59 a.5 dynamic: the more perfect the virtue, the more does it cause joy. Fredrickson's longitudinal data on vagal tone, attentional defaults, and prosocial responding give the mechanism.
 
 **Damasio and Pessoa on the integration of affect and cognition** speak to Q.58's distinct-but-inseparable claim. Damasio's somatic-marker hypothesis and Pessoa's cognition-emotion-integration work document that *cognitive judgment*, in fact, requires affective signal — that lesions disrupting affective input produce decisional pathology even when "pure cognition" is preserved. This vindicates Aquinas's claim that prudence requires good moral disposition: the affective formation is part of what makes the cognitive judgment possible.
 
@@ -54,7 +54,8 @@ The central theme's relational structure shows up most explicitly in Q.58's mutu
 
 ## Bridges
 
-- **Fredrickson PRS-01, PRS-05, PRS-08 / positivity-resonance, broaden-and-build, high-quality connection** — Q.59 a.5 (perfect virtue causes more joy): empirical upward-spiral dynamic; *empirical, high confidence*.
+- **Fredrickson PRS-01 + PRS-08 in `wiki/traditions/fredrickson/prs_triplets.md`** (isolation-and-disconnection / loving-kindness meditation; high-quality listening as resonance enabler) — Q.59 a.5 (perfect virtue causes more joy): empirical upward-spiral dynamic; *empirical, high confidence*.
+- **Fredrickson PRS-05 in `wiki/traditions/fredrickson/wiki.md`** (broadened attention and tradition learning) — the broaden-and-build half of the Q.59 a.5 spiral. Cited to `wiki.md` specifically: the same id in `prs_triplets.md` is a different triplet (embodiment of abstract ontology), so the file is load-bearing for this citation, not decorative. *Empirical on the broadening effect; the tradition-learning application is the wiki's own open question.*
 - **Damasio / somatic-marker hypothesis; Pessoa / cognition-emotion integration** — Q.58 (distinct-but-mutually-required): cognitive judgment requires affective signal; *empirically robust*.
 - **Stump PRS-11 + PRS-04 / second-personal moral virtue** — keystone on Q.58 a.2 (distinction of moral from intellectual virtue) as relational disposition; *philosophically rigorous*.
 - **McGilchrist / hemispheric integration of cognition and affect** — Q.58's mutual-requirement claim at the attentional level; *clinical evidence*.
@@ -74,12 +75,13 @@ day: 90
 title: "Moral Virtue (Contemporary)"
 pairs_with: "[[Day-090 - Moral Virtue]]"
 length_target_words: 1500
-length_actual_words: 1875
-length_ratio_to_target: 1.250
+length_actual_words: 2573
+length_ratio_to_target: 1.715
 length_tier: short
-length_note: "Covers two whole Summa questions (Q.58 distinction of moral from intellectual virtue + Q.59 moral virtue in relation to the passions, including the substantive Stoic/Peripatetic metriopatheia debate and Q.59 a.5's distinctive 'perfect virtue causes more joy' claim); the contemporary engagement vindicates the metriopatheia position empirically (Fredrickson, Gross, Ochsner) and theologically (Wright, Rohr) — multi-question dense day on a keystone moral-psychology pivot, substantive linkage justified per QC.md acceptable-variation patterns (1) and (2)."
+length_note: "Covers two whole Summa questions (Q.58 distinction of moral from intellectual virtue + Q.59 moral virtue in relation to the passions, including the substantive Stoic/Peripatetic metriopatheia debate and Q.59 a.5's distinctive 'perfect virtue causes more joy' claim); the contemporary engagement vindicates the metriopatheia position empirically (Fredrickson, Gross, Ochsner) and theologically (Wright, Rohr) — multi-question dense day on a keystone moral-psychology pivot, substantive linkage justified per QC.md acceptable-variation patterns (1) and (2). RECOUNT 2026-08-17: the previously declared 1875 / 1.250 was understated by roughly 31 percent — a new instance of the recorded one-directional length_actual_words defect (cf. Days 169, 047, 177, 262). Recounted over the body only, splitting at the first '---' followed by YAML keys and dropping the Related-records footer, which is the method the standing record specifies. The true ratio 1.715 is outside plus-or-minus 25 percent, but this note is the substantive justification and predates the recount, so per the Day-117 precedent this is informational, NOT a length escalation. Roughly 120 words of the total are this run's Fredrickson file-attribution repair; no prose argument was added."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01, PRS-05, PRS-08; positivity-resonance, broaden-and-build, high-quality connection)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 isolation-and-disconnection / loving-kindness meditation; PRS-08 high-quality listening as resonance enabler)"
+  - "traditions/fredrickson/wiki.md (PRS-05 broadened attention and tradition learning — the broaden-and-build sense; NOT the prs_triplets.md PRS-05, which is embodiment of abstract ontology)"
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-11 Franciscan/second-person knowledge; PRS-05 union; PRS-04 final causality; second-personal moral virtue)"
   - "traditions/mcgilchrist/wiki.md (hemispheric integration of cognition and affect)"
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 active inference; affective prior-evaluation)"
@@ -91,8 +93,8 @@ mind_first_reframe: "The medieval moral/intellectual virtue distinction (Q.58) r
 central_theme_thread: "Q.59 a.5 adds *joy* alongside the *fear and trembling* of Phil 2:12. The well-formed agent's affective life is not eliminated by the working-out but transformed into integrated joy. The morally excellent agent is the *integrated* agent — cognitive judgment formed by affective signal, affective response formed by cognitive judgment, both ordered to the right end set by formed moral disposition. The mutual-requirement claim of Q.58 carries the central theme's relational structure explicitly: prudence requires moral virtue requires participation in wider formation; without the 'guidance from those who perceive more of the whole,' the limited agent's practical reason is mis-aimed."
 evidence_strength_summary: "Cognitive-affective integration as required for intact judgment (Damasio; Pessoa) and longitudinal positivity-resonance cultivation (Fredrickson) are empirically robust. Emotion regulation outperforms suppression (Gross; Ochsner) — Q.59 metriopatheia vindicated. Hemispheric integration of cognition and affect (McGilchrist) is clinically supported. Stump on second-personal moral virtue is philosophically rigorous. Wright on Pauline fruit-bearing and Rohr on contemplative integration of feeling and seeing are theologically well-attested. The Kastrup-style reading of joy as felt-sense of alter–mind-at-large alignment is speculative-metaphysical but internally consistent."
 tags: [synthesis, day/090, theme/virtue, theme/moral-virtue, theme/passion-and-virtue, theme/metriopatheia, theme/integration, theme/joy]
-last_qc_at: "2026-08-09T06:27:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-17T08:24:18"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]

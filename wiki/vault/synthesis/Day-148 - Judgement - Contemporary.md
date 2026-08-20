@@ -3,22 +3,22 @@ day: 148
 title: Judgement (Contemporary)
 pairs_with: "[[Day-148 - Judgement]]"
 length_target_words: 2200
-length_actual_words: 1535
-length_ratio_to_target: 0.698
+length_actual_words: 1608
+length_ratio_to_target: 0.731
 length_tier: medium
-length_note: "Compact at 0.70x medium target by design - Q.60 (judgment under uncertainty) and Q.61 (commutative vs distributive) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
+length_note: "Compact at 0.73x medium target by design - Q.60 (judgment under uncertainty) and Q.61 (commutative vs distributive) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler / hypothesis-tester; PRS-10 active reasoning as model selection via expected free energy; PRS-16 expected free energy = risk + ambiguity — decision under uncertainty)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing — refusing premature either/or condemnation; holding the doubtful without collapse)"
-  - "traditions/hoffman + traditions/friston (perception/inference is shaped by the perceiver's own priors — suspicion 'from one's own vice' as self-biased inference)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 interface theory of perception — fitness-payoff functions replace truth-tracking as the evolutionary driver, so a payoff-favoured verdict is literally seen rather than merely preferred) + traditions/friston/prs_triplets.md (PRS-04 organism as continuous hypothesis-tester) — suspicion 'from one's own vice' as self-biased inference"
   - "traditions/levin/prs_triplets.md (PRS-30 continuous nested cognition; PRS-10 continuity of goal-directedness — distributive justice as whole-to-part ordering, commutative as part-to-part)"
   - "traditions/stump/prs_triplets.md (PRS-14/15 corporate substance — distributive justice presupposes a real whole distributing to real parts)"
 evidence_strength_summary: "Judgment as inference-under-uncertainty (Friston PRS-04/10/16): formal, strong as a model of cognition; its application to moral/judicial judgment is interpretive, medium. The 'interpret doubt for the best' asymmetry (Q.60 a.4) read as the error-cost-optimal charitable prior: interpretive + formal, medium — and theologically anchored (charity), strong in field. Suspicion arising 'from one's own vice' read as self-biased inference (priors color perception): conceptual, medium-strong. Commutative vs distributive as part-to-part vs whole-to-part ordering (Levin nesting; Stump corporate substance): empirical at biological scale, analogical/medium at the social. The proportional (geometric) structure of distributive justice is Aquinas's own and is preserved."
 mind_first_reframe: "Judgment, for Aquinas, is justice exercised as a verdict: 'a statement or decision of the just or right,' lawful only when it proceeds from the inclination of justice, from due authority, and 'according to the right ruling of prudence.' Three articles then treat judgment under *uncertainty* — and here is the striking move. Judging from suspicion is sinful; and in doubt, 'we ought to deem him good by interpreting for the best whatever is doubtful about him,' because 'from the very fact that a man thinks ill of another without sufficient cause, he injures … him.' The host states the underlying argument as an asymmetry: since any judgment under uncertainty may err, 'it is better to err … on the positive side.' Read through mind / conscious-realist monism, judgment is inference under uncertainty by a limited perspective whose priors are shaped by its own state — and the charitable prior is the rational policy when the cost of a false-negative (injuring an innocent) outweighs the cost of a false-positive. The two species of justice that follow — commutative and distributive — are the part-to-part and whole-to-part orderings the project has tracked all treatise."
 central_theme_thread: "Every judgment is one perspective inferring another across an unbridgeable gap of incomplete information — the perspectival limitation that individuates agents, made concrete as the courtroom and the suspicious heart. Aquinas's counsel to 'interpret for the best' is the practical humility of the limited knower: aware that my inference is biased by my own state and that misjudgment injures a person, I weight toward charity. This is 'working out salvation in fear and trembling' applied to social inference — and it points past itself to the whole's-eye view, the only standpoint from which another is seen entire."
 tags: [synthesis, day/148, theme/judgment-under-uncertainty]
-last_qc_at: "2026-08-07T20:23:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T22:29:52"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 148 — Contemporary Parallel: Judgment Under Uncertainty and the Charitable Prior
@@ -54,7 +54,7 @@ Judgment is the central claim staged in a single act. Every verdict is one persp
 - *PRS-04 + PRS-10 in the Friston-tradition wiki (active modeler; active reasoning)* — judgment as inference and evidence-gathering for model selection; the verdict as posterior. (Formal model strong; moral application interpretive.)
 - *PRS-16 in the Friston-tradition wiki (expected free energy = risk + ambiguity)* — the charitable prior as the error-cost-optimal threshold under an asymmetric loss function (injuring the innocent ≫ withholding judgment). (Formal; medium.)
 - *PRS-01 in the Rohr-tradition wiki (non-dual knowing)* — "interpret for the best" as the discipline of holding the doubtful without premature collapse into a verdict. (Contemplative; theological-medium.)
-- *Interface/predictive priors (Hoffman, Friston)* — suspicion "from one's own vice" as a prior contaminating the inference; the perceiver's state mistaken for evidence about another. (Conceptual; medium-strong.)
+- *PRS-03 in the Hoffman-tradition wiki (interface theory: fitness-payoff replaces truth-tracking) + PRS-04 in the Friston-tradition wiki (the organism as continuous hypothesis-tester)* — suspicion "from one's own vice" as a prior contaminating the inference; the perceiver's state mistaken for evidence about another. PRS-03 is the sharper of the two here: if perception is tuned to payoff rather than to truth, then a perceiver whose payoffs favour a verdict will *see* the evidence for it, which is Aquinas's diagnosis without the moralism. (Conceptual; medium-strong.)
 - *PRS-10 + PRS-30 in the Levin-tradition wiki + PRS-14/15 in the Stump-tradition wiki* — commutative (part-to-part) vs distributive (whole-to-part, proportional) justice; distribution presupposes a real whole. (Empirical at biological scale; analogical/medium at social.)
 
 ## Where this leaves us

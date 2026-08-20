@@ -3,9 +3,10 @@ day: 169
 title: Observance and Dulia (Contemporary)
 pairs_with: "[[Day-169 - Observance and Dulia]]"
 length_target_words: 1500
-length_actual_words: 1424
+length_actual_words: 1500
 length_tier: short
-length_ratio_to_target: 0.95
+length_ratio_to_target: 1.0
+length_note: "length_actual_words corrected 2026-08-15 from 1424 to 1500 by direct body-only recount (frontmatter and the auto-linked footer excluded); no prose was added or removed. The stale value was recorded at the 2026-08-07 sweep."
 mind_first_reframe: "Under mind-monism, the latria-dulia-observance gradient is a precision-tuned response to a graded conscious-agent ontology (Hoffman's graded moral ontology, Levin's agency-at-scale, Kastrup's daimon as principle of individuation, McGilchrist's right-hemispheric mode of recognizing the whole); flattening the gradient in either direction (modern iconoclasm or modern celebrity-cult) is a trace-logic error of confusing observer-windows."
 central_theme_thread: "The perspective-limited agent participates in loving unity from within a network of agents of varying scale and excellence; latria-to-God-alone reserves unconditional response for the whole-as-whole, while dulia and observance honor the participated-in excellences that show up in particular created persons — the daily calibration of warranted response that the cooperative computation requires."
 karpathy_wiki_sources:
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
   - "Wright canonical: 'Surprised by Hope' on the worship-due-only-to-God constraint within Second-Temple Judaism's relational-honor culture"
 evidence_strength_summary: "The graded moral ontology Hoffman defends and the agency-scaling Levin defends are empirically tractable. The neurological grounding for relational mode (McGilchrist) is empirical. The reading of the latria-dulia distinction as a precision-tuning of warranted response within a graded ontology is interpretive but converges with the mind-monist frame."
 tags: [synthesis, day/169, theme/graded-ontology, theme/warranted-honor, q/102, q/103]
-last_qc_at: "2026-08-07T08:23:01"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T14:32:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 169 — Observance and Dulia (Contemporary)

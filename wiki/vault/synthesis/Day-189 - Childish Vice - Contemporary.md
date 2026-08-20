@@ -3,10 +3,10 @@ day: 189
 title: Childish Vice (Contemporary)
 pairs_with: "[[Day-189 - Childish Vice]]"
 length_target_words: 1500
-length_actual_words: 1256
-length_ratio_to_target: 0.84
+length_actual_words: 1385
+length_ratio_to_target: 0.923
 length_tier: short
-length_note: "0.84x short target — Q.142's two vices and Q.143's taxonomy covered, with the culpability argument developed in full; complete-not-truncated (short-and-substantive)."
+length_note: "0.92x short target — within tolerance after the 2026-08-15 bridge-anchoring pass; Q.142's two vices and Q.143's taxonomy covered, with the culpability argument developed in full."
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md (PRS-04 active modeler; precision-weighting; runaway priors)"
   - "traditions/fredrickson/wiki.md (downward spiral; broaden-and-build)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Intemperance-as-runaway-precision / habit-hardening 
 mind_first_reframe: "Intemperance is a runaway endogenous prior — a self-reinforcing appetitive set-point the agent trained and could have retrained — and insensibility its mirror suppression of necessary set-points; the 'childish' label marks the developmental fact that the loop hardens as plastic windows close."
 central_theme_thread: "This article shows perspective-limitation is not static but self-deepening: by its own repeated acts an agent contracts its field until the petty fills it and the whole is lost — formation runs whether or not we attend to it."
 tags: [synthesis, day/189, theme/maladaptive-habit]
-last_qc_at: "2026-08-07T08:23:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T10:29:20"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 189 — Childish Vice (Contemporary Parallel)
@@ -57,10 +57,10 @@ This article is about how a limited perspective can *narrow itself further* — 
 ## Bridges
 
 - **Custom-became-necessity ↔ hardening of a high-precision prior** — the Friston-tradition wiki, PRS-04. *Why:* gives Augustine's feedback loop a formal shape and explains why correction gets costlier over time. Evidence: **formal, speculative**.
-- **Downward spiral ↔ intemperance** — the Fredrickson-tradition wiki. *Why:* narrowed appetitive states erode the resources needed for self-correction. Evidence: **empirical, medium**.
-- **Closing plastic windows ↔ the "childish" framing** — the Levin-tradition wiki. *Why:* discipline-early is a developmental-plasticity claim, not mere moralism. Evidence: **analogical, medium-low**.
-- **Voluntariness ↔ culpability ranking** — the Stump-tradition wiki. *Why:* intemperance has more deliberative slack than fear-driven cowardice, hence more authorship. Evidence: **philosophical**.
-- **Formation-in-community ↔ disciplining appetite early** — the Wright-tradition wiki. *Why:* the practices of the covenanted people are where set-points get laid down. Evidence: **theological**.
+- **Downward spiral ↔ intemperance** — *PRS-05 in `traditions/fredrickson/wiki.md` (broadened attention: positive states broaden attentional scope, negative states narrow it)*, cited here in its inverse. *Why:* narrowed appetitive states erode the broadened attention and durable resources needed for self-correction. Evidence: **empirical, medium**. (File matters: broaden-and-build is keyed PRS-05 in that tradition's `wiki.md` and has no counterpart id in its `prs_triplets.md`.)
+- **Closing plastic windows ↔ the "childish" framing** — the Levin-tradition wiki, developmental-plasticity strand (`prs_triplets.md` carries adaptive plasticity and morphospace set-point repair, but the *closing-window* claim this bullet leans on has no numbered home; carried as a program-level claim, not a cited id). *Why:* discipline-early is a developmental-plasticity claim, not mere moralism. Evidence: **analogical, medium-low**.
+- **Voluntariness ↔ culpability ranking** — the Stump-tradition wiki, moral-transformation strand (the culpability *ranking* has no numbered home there; carried as a Thomistic-interlocutor claim rather than a cited id). *Why:* intemperance has more deliberative slack than fear-driven cowardice, hence more authorship. Evidence: **philosophical**.
+- **Formation-in-community ↔ disciplining appetite early** — the Wright-tradition wiki; nearest numbered anchor is PRS-05 (salvation as incorporation into a people), though *formation by communal practice* is not itself keyed there and is carried as a canonical-work claim (*Paul and the Faithfulness of God* on communal formation). *Why:* the practices of the covenanted people are where set-points get laid down. Evidence: **theological**.
 
 ## Where this leaves us
 

@@ -15,11 +15,11 @@ karpathy_wiki_sources:
   - "Stump canonical: medicinal punishment in the Thomistic tradition — no PRS-form record of this in the wiki; cited to the work, not to an id"
   - "Wright canonical: Rom 12:19 ('vengeance is mine, says the Lord'); the cross as God absorbing rather than retaliating; truth as covenant faithfulness"
   - "Rohr canonical: breaking the retributive cycle; True Self vs False Self"
-evidence_strength_summary: "Altruistic-punishment / cooperation-maintenance and honest-signaling are empirical/game-theoretic; the active-inference framing is formal; the absorb-rather-than-retaliate reading and True-Self truthfulness are theological (Wright/Rohr)."
+evidence_strength_summary: "Altruistic punishment and cooperation maintenance are empirical, from the experimental game-theory literature. The active-inference framing rests on Friston PRS-06, which the wiki marks (Implicit) at Medium — a reconstruction of the multi-agent extension, so a well-posed framing rather than a derived result; it should not be read as sharing the game-theory findings' support. Levin PRS-17/18 are High and in-domain; Stump PRS-11 is High. Medicinal punishment is cited to the work, with no PRS-form record in the wiki and no id asserted. The absorb-rather-than-retaliate reading and True-Self truthfulness are theological (Wright/Rohr)."
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-08-11T00:25:07"
+last_qc_at: "2026-08-19T02:28:23"
 last_qc_outcome: "rewrote"
 ---
 
@@ -57,7 +57,7 @@ Loving unity is computed by perspective-limited agents who must both correct def
 
 ## Bridges
 
-- **Friston PRS-06** (multi-agent coherence; honest signaling) — truthfulness as signal-integrity; correction as cooperation-maintenance; deception as model-corruption. *Empirical / formal.*
+- **Friston PRS-06** (multi-agent coherence via mutual modeling) — truthfulness as signal-integrity; deception as model-corruption. *(Implicit), Medium in the wiki — a reconstruction of the multi-agent extension rather than a derived result, so the active-inference half of this bullet is a well-posed framing, not a finding.* The separate empirical claim in this section — that cooperation in large groups is sustained by costly altruistic punishment — comes from the experimental game-theory literature, not from this entry, and is genuinely empirical. The two should not be read as one body of support.
 - **McGilchrist PRS-01** (grasping vs relational attention) — the line between vengeance-as-possession and vengeance-as-restorative-justice. *Empirical.*
 - **PRS-17 + PRS-18 in the Levin-tradition wiki** (bioelectricity as the cognitive glue constituting a collective knower above the level of the single cell; cancer reframed as a *decision problem* for that collective rather than a purely genetic failure) — the biological instance of the day's structure: a member whose goal-state has come apart from the collective's, and a correction aimed at restoring the shared target rather than at destroying the member. *Empirical.*
 - **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person) — truthfulness as self-giving-to-be-known rather than as accurate report. *Philosophical.*

@@ -6,7 +6,7 @@ title: Ambition
 summa_ref: "Secunda Secundae, Q.130-131"
 duration_seconds: 351
 word_count: 930
-raw_asr_word_count: 930
+raw_asr_word_count: 923
 length_tier: short
 segment_count: 140
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-183 - Ambition - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/183, pars/II-II, q/130-131]
-last_qc_at: "2026-07-28T16:22:43"
+last_qc_at: "2026-08-15T12:26:30"
 last_qc_outcome: "pass"
 ---
 

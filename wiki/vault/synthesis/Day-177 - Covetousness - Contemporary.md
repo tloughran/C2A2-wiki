@@ -3,21 +3,21 @@ day: 177
 title: Covetousness (Contemporary)
 pairs_with: "[[Day-177 - Covetousness]]"
 length_target_words: 1500
-length_actual_words: 1123
-length_ratio_to_target: 0.75
+length_actual_words: 1234
+length_ratio_to_target: 0.823
 length_tier: short
 length_note: "Covers two Summa questions (Q.118 covetousness + Q.119 prodigality) concisely; the short-and-substantive lean is policy-consistent and no padding is warranted to reach the tier floor."
 mind_first_reframe: "Under mind-monism, covetousness is the pathological contraction of the self to the boundary of its own holdings — a defection from the cooperative whole driven by a resource-estimate detached from real need — with prodigality as the opposite mis-calibration."
 central_theme_thread: "Covetousness is what happens when a perspective-limited agent mistakes scarce resources for the goal and answers its limitation by contracting rather than trusting the larger whole: fear and trembling curdled into a clenched fist."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the cooperative morphogenetic community; PRS-11 cancer as dissociative identity disorder of the body — cells revert to selfish unicellular behavior, losing integration)"
-  - "traditions/friston/prs_triplets.md (active inference: hoarding as corrupted resource-estimate, over-provisioning against modeled future surprise)"
+  - "traditions/friston/prs_triplets.md (PRS-16 expected free energy as unified mathematics of risk + ambiguity — hoarding as corrupted resource-estimate, over-provisioning against modeled future surprise; PRS-14 Bayesian self-trapping — locally optimal states that resist update because revision is costly)"
   - "traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence — poetic naturalism; meaning/value as real patterns not located in accumulation)"
   - "traditions/stump/prs_triplets.md (Thomistic interlocutor: disordered love of possessing vs. right use)"
   - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10), treasure in heaven; Rohr canonical: second-half-of-life letting go (Falling Upward)"
 evidence_strength_summary: "Defection-from-the-whole is empirical-analogical (Levin); over-provisioning is formal (Friston); value-not-in-accumulation is formal (Carroll); covetousness-as-idolatry is theological (Wright, Rohr)."
 tags: [synthesis, day/177, theme/defection, theme/resource-estimate, q/118, q/119]
-last_qc_at: "2026-08-07T14:28:02"
+last_qc_at: "2026-08-15T18:29:00"
 last_qc_outcome: "rewrote"
 ---
 
@@ -58,7 +58,7 @@ The synthesis holds that conscious agents are individuated by the limits of thei
 ## Bridges
 
 - **Levin PRS-02 (cancer as defection) + PRS-11 (cancer as dissociative identity disorder of the body)** — `traditions/levin/prs_triplets.md`. Covetousness as the self's boundary collapsing back to the single agent, corroding the whole it depends on; PRS-11 supplies the collective-identity-failure reading the paragraph above leans on. *Empirical (biology) / analogical (transfer).*
-- **Friston (resource-estimate under active inference)** — hoarding as an open-loop reserve-estimate detached from real need. *Formal.*
+- **Friston PRS-16 (expected free energy as the unified mathematics of risk + ambiguity) + PRS-14 (symptoms as locally optimal but globally suboptimal Bayesian attractors that resist update because updating itself increases short-term free energy)** — `traditions/friston/prs_triplets.md`. PRS-16 gives the reserve-estimate its formalism: risk as divergence between prior preferences and predicted outcomes, ambiguity as volatility of the predictive distribution, both collapsed into one optimization target — hoarding as that machinery run open-loop against modeled future surprise. PRS-14 supplies the self-trapping that explains why the covetous never reach "enough": the disposition is locally optimal and resists revision because revising it is itself costly. *Formal.*
 - **Carroll PRS-01 (poetic naturalism)** — the level-confusion of seeking agent-level meaning in accumulated objects. *Formal.*
 - **Wright (1 Tim 6:10; Matt 6:19–21)** — love of money as idolatry; treasure stored toward the new creation. *Theological.*
 - **Rohr (Falling Upward)** — the second-half task of release rather than acquisition. *Theological.*

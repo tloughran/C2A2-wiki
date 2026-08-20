@@ -9,16 +9,16 @@ length_tier: short
 mind_first_reframe: "Under mind/conscious-realist monism, superstition is the error of treating an icon as terminus rather than as a window the ritual passes through. The ritual gesture uses the same resonance-modulation machinery as faithful worship, but it is aimed at a target whose ontology cannot bear it (Hoffman interface theory: the icon is not the world), or proceeds on miscalibrated priors (Friston) and pseudo-pattern detection in computationally irreducible systems (Wolfram). Aquinas's Q.93 diagnosis — that worship of the *true* God by gestures that exteriorly signify a falsehood is itself superstition — survives the reframe almost intact."
 central_theme_thread: "The perspective-limited agent cannot, from inside her limits, verify the ontology that her ritual implies. Tradition — the testimony of those who have perceived more of the whole than the present agent can — is the agent's protection against superstition. Working out salvation in fear and trembling requires the limited agent to keep her ritual checkable against sources beyond her own immediate confidence; the body's confession can lie even when the heart is sincere."
 karpathy_wiki_sources:
-  - "wiki/traditions/hoffman/wiki.md (interface theory: icons are not the world; the cost of treating the icon as terminus)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 interface theorem: perception tracks fitness payoff, not truth; PRS-01 conscious realism as the ontological companion)"
   - "wiki/traditions/levin/wiki.md (causal structure of multi-scale agency; what counts as a real cause)"
-  - "wiki/traditions/friston/prs_triplets.md (PRS-04 gloss: organism as active modeler; predictive models with miscalibrated priors; superstitious learning)"
-  - "wiki/traditions/wolfram/prs_triplets.md (PRS-04 gloss: computational irreducibility and pseudo-pattern detection)"
-  - "wiki/traditions/kastrup/wiki.md (mind-monism: what populates the cosmos for purposes of worship?)"
-  - "wiki/traditions/wright/wiki.md (Romans 1:18-25 and the Pauline analysis of idolatrous reasoning)"
-  - "wiki/traditions/rohr/wiki.md (the contemplative critique of magical religion)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04: organism as active modeler; predictive models with miscalibrated priors; superstitious learning)"
+  - "wiki/traditions/wolfram/prs_triplets.md (PRS-04: computational irreducibility; the pseudo-pattern-detection extension is this synthesis's own)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 inverted ontology; PRS-02 dissociated points of view within one consciousness)"
+  - "wiki/traditions/wright/prs_triplets.md (NO ANCHOR: no idolatry or Romans-1 triplet in the register; cited to Romans 1:18-25 and Wright's published reading)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing; PRS-18 contemplative stance as the fixed point turning reactive action into leveraged action)"
 evidence_strength_summary: "Empirical-formal on miscalibrated-prior learning and pseudo-pattern detection (Friston, Wolfram lines). Strong empirical on operant-conditioning superstition (Skinner literature). Theological-strong on Pauline diagnosis of idolatrous reasoning (Wright). The reframe — superstition as bad ontology made ritually visible — is integrative and lines up multiple convergent traditions."
 tags: [synthesis, day/164, theme/ontology-and-ritual, theme/causal-model-error, pars/II-II, q/92-93]
-last_qc_at: "2026-08-08T20:23:18"
+last_qc_at: "2026-08-16T22:26:33"
 last_qc_outcome: "rewrote"
 ---
 
@@ -68,12 +68,12 @@ The central theme cuts cleanly here. The perspective-limited agent cannot, from 
 
 ## Bridges
 
-- **PRS-01 and PRS-03 in the Hoffman-tradition wiki** (interface theory; icons-vs-world) — central frame for the worship-aimed-at-icon error. *Computational-formal, contested-empirical.*
+- **PRS-03 in the Hoffman-tradition wiki** (`wiki/traditions/hoffman/prs_triplets.md`) — the interface theorem proper: fitness-payoff, not truth-tracking, drives perception, so the perceived object is an adaptive interface rather than a truth-mirror. This is the icons-are-not-the-world claim the worship-aimed-at-icon error turns on. **PRS-01** is the companion (conscious realism; matter as perceptual construct) and supplies the ontological half, not the perceptual one. *Computational-formal, contested-empirical.*
 - **PRS-04 in the Friston-tradition wiki** (the organism as active modeler: predictions tested against sensory input, priors updated — the mechanism that over-fits to coincidence) — formal account of superstitious learning. *Formal, accumulating empirical support.*
-- **PRS-04 in the Wolfram-tradition wiki** (computational irreducibility; no shortcut to a system's outcome, so the human pattern-detector over-extends) — deeper warning about whole classes of human ritual error. *Formal, suggestive.*
-- **Wright on Romans 1:18–25** — Pauline diagnosis of idolatrous reasoning as fallen-perspective error. *Theological; the scriptural locus is load-bearing.*
-- **Kastrup analytic-idealist constraint on the population of the cosmos** — metaphysical filter on what targets can coherently be worshipped. *Metaphysical, speculative.*
-- **Rohr, contemplative critique of magical-causal religion** — corrective against treating ritual as compulsion of divine response. *Theological-mystical.*
+- **PRS-04 in the Wolfram-tradition wiki** (computational irreducibility: for most computations there is no shortcut, so the outcome must be run to be known) — the record's own frame is irreducibility-and-agency; the extension to human *pseudo-pattern* detection under irreducibility is this synthesis's move, not Wolfram's stated solution, and is marked as such. *Formal; the extension is suggestive.*
+- **PRS-01 and PRS-02 in the Kastrup-tradition wiki** — PRS-01 (analytic idealism's inverted ontology: consciousness primary, matter its expression) supplies the constraint on what can populate the cosmos as a worship-target; PRS-02 (one undivided consciousness, multiple dissociated points of view, individuality preserved as a construct of the dissociation) supplies the account under which saints and persons are worship-*relatable* without being additional causal powers. *Metaphysical, speculative.*
+- **Wright on Romans 1:18–25** — Pauline diagnosis of idolatrous reasoning as fallen-perspective error. **No PRS anchor exists**: the Wright register carries no idolatry or Romans-1 triplet (checked at body, 2026-08-16), so this bullet is cited to the scriptural locus and to Wright's published reading, and the absence is stated rather than papered over with a near-miss id. *Theological; the scriptural locus is load-bearing.*
+- **PRS-01 and PRS-18 in the Rohr-tradition wiki** — PRS-01 (non-dual awareness against either/or fragmentation) is the nearest anchor for the critique of a transactional devotional frame; PRS-18 (the contemplative stance as the fixed point that turns *reactive* action into leveraged action) is the operational half. Noted honestly: the register carries no entry on magical or transactional religion by name, so the fit is by structure rather than by topic. *Theological-mystical.*
 
 ## Where this leaves us
 

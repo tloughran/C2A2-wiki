@@ -6,7 +6,7 @@ length_target_words: 2200
 length_actual_words: 1810
 length_ratio_to_target: 0.82
 length_tier: medium
-length_note: "Focused treatment of Q.4-5 around the lifeless/living asymmetry and the strong hylomorphic 'charity as form of faith' claim; the CROSS-008 (Levin final-causality) empirical re-grounding of form licenses the strong reading, and the load-bearing move develops compactly without sentimental gloss — substantively complete in focused form."
+length_note: "Focused treatment of Q.4-5 around the lifeless/living asymmetry and the strong hylomorphic 'charity as form of faith' claim; Levin's empirical re-grounding of form carries the strong reading (CROSS-008's stronger final-causality framing was restated downward 2026-08-10 and is no longer relied on), and the load-bearing move develops compactly without sentimental gloss — substantively complete in focused form."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 union as final cause / highest intrinsic good; PRS-11 non-propositional second-person knowing) — both ids verified at the body in prs_triplets.md, which is the file they belong to; stump/wiki.md is a separate id system and does not carry these numbers"
   - "traditions/fredrickson/wiki.md (positivity resonance; Love 2.0)"
@@ -20,7 +20,7 @@ evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional stat
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-08-07T16:24:27"
+last_qc_at: "2026-08-19T02:28:22"
 last_qc_outcome: "rewrote"
 ---
 
@@ -46,7 +46,7 @@ The Stump-tradition wiki (CROSS-005 in the master index) marks the convergence: 
 
 Fredrickson's positivity resonance supplies the biological substrate. Love is a biophysiological event: vagal coupling, oxytocin signaling, neural synchrony between agents. Fredrickson's Love 2.0 establishes that love is measurable, durable, cultivable. When Aquinas says charity is the form of faith, the contemporary parallel can say: the cognitive habit of faith becomes alive — operative in the agent's actual cooperation with the wider mind — when the agent's biology and orientation are configured in the positivity-resonance mode that constitutes lived relational coupling. Charity is what makes faith a *relation* rather than a *representation*.
 
-Levin's morphogenetic teleology supplies the philosophical resource for taking "form" seriously. Form, in Levin's bioelectric program, is real, located, causally efficacious. CROSS-008 in the master index pairs Thomistic final causality with Levin's morphogenetic teleology. The pairing is not analogical decoration; it is the empirical recovery of a metaphysical category that biology had banished. If form survives in biology, "charity is the form of faith" is not a translation problem; it is a metaphysical claim whose category has been re-grounded.
+Levin's morphogenetic teleology supplies the philosophical resource for taking "form" seriously. Form, in Levin's bioelectric program, is real, located, causally efficacious — that much is the wiki's High-confidence entry on the morphological attractor formalism, and it stands on its own. What must be stated more carefully is the Thomistic pairing. CROSS-008 in the master index **no longer records that Thomistic final causality supplies the framework Levin's teleology requires**; that form of the entry was restated downward on 2026-08-10, because the author testimony that arrived never addresses morphogenesis or final causality. The restated entry carries a shared rejection of the isolated unit of explanation. So the move made here — reading Levin's re-grounding of form as licensing the strong hylomorphic sense of "charity is the form of faith" — is this commentary's own extension, resting on the biology directly rather than on a certified metaphysical bridge. Taken that way it still does real work: if form survives as a causally efficacious category in biology, "charity is the form of faith" is not merely a translation problem.
 
 Hoffman's interface theory clarifies what *fides informis* — lifeless faith — is, in the architecture: a model of the wider mind that is held cognitively (interface includes the node) but is not informing the agent's free-energy minimization (the prior is present but not weighted). The asymmetry between losing charity while keeping faith, vs. the impossibility of charity without faith, is structural: a high-precision prior is necessary for the prior to operate (cognitive presence required for volitional operation), but the cognitive presence can persist while precision is dialed down (charity lost, faith remains).
 
@@ -78,7 +78,7 @@ The lifeless/living distinction is precisely where the project's central claim i
 
 - *Stump CROSS-005 + PRS-11 (Tom Loughran's PRS-form record of Stump's relational reading of charity-as-second-person-knowing)* — charity as the relational structure that makes faith function as knowing-another rather than information-holding. (Philosophical; high.)
 - *Fredrickson positivity resonance / Love 2.0* — biological substrate of charity; what makes faith alive has measurable correlates. (Empirical; high.)
-- *Levin morphogenetic teleology + CROSS-008* — empirical re-grounding of "form" as real, located, causally efficacious; licenses the strong hylomorphic reading of "charity as form of faith." (Empirical/philosophical.)
+- *Levin morphogenetic teleology (CROSS-008, restated downward 2026-08-10)* — empirical re-grounding of "form" as real, located, causally efficacious. (Empirical at the biological scale.) The extension to the strong hylomorphic reading of "charity as form of faith" is this commentary's own, not a bridge the index certifies: CROSS-008's stronger claim — that Thomistic final causality frames Levin's teleology — was withdrawn, and what remains is a shared rejection of the isolated unit of explanation.
 - *Hoffman interface theory* — *fides informis* read as cognitive presence with low precision-weighting; explains the lifeless-but-real asymmetry. (Formal.)
 - *Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity; the loss-of-charity-while-faith-remains corresponds to slack fidelity within ongoing covenant membership. (Historical-theological; high.)
 

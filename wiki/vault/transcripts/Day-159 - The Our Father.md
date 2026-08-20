@@ -6,7 +6,7 @@ title: The Our Father
 summa_ref: Secunda Secundae, Q.82-83
 duration_seconds: 1409
 word_count: 4217
-raw_asr_word_count: 4217
+raw_asr_word_count: 4189
 segment_count: 600
 caption_kind: asr
 language: en
@@ -16,17 +16,19 @@ length_tier: long
 fidelity_checked: true
 synthesis: "[[Day-159 - The Our Father - Contemporary]]"
 tags: [summa, day/159, pars/2, q/82]
-last_qc_at: "2026-08-07T04:26:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T08:23:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 159 — The Our Father
 
 > Context: Q.82 the interior acts of religion — devotion; Q.83 prayer; the longest single article-set on prayer in the Summa.
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas, a Summa Theologiae in a way simple and insightful
+> Typo cleanup (QC 2026-08-15, restored against a fresh ASR fetch): Habish → Habash; Sumanir → Summa in a Year (podcast name, both intro occurrences); Suma → Summa (throughout, incl. "code suma 10" → "code Summa 10"); Aquinus → Aquinas; suma theologia → Summa Theologiae; sakunda secund → Secunda Secundae; "a Maria Press" / "a Maria Press's" → Ave Maria Press / Ave Maria Press's (both occurrences). Retained as spoken: the ASR's "St. Thomas Aquinas, a Summa Theologiae" in the opening announcement preserves Habash's own elision; it is marked here rather than smoothed. No content was added or removed.
 
-for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas, a Summa Theologiae in a way simple and insightful
+
+for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the
 
 brilliance of Aquinas and his Catholic faith is day 159. So let's get started. We're covering today questions 82 and 83 of the Secunda Secundae that is of the
 

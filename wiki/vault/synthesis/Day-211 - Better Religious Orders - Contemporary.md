@@ -17,7 +17,7 @@ evidence_strength_summary: "Religious state = training-school for the perfection
 mind_first_reframe: "A religious order is one stable allocation of a finite agent's attention and labor toward the single telos of loving union; the plurality of orders is the plurality of partial perspectives that the one good can be pursued from, and an order is 'better' not by rank on a ladder but by how fully the loving union it attains overflows into other perspectives — contemplation received and then transmitted."
 central_theme_thread: "Each order individuates a perspective on the one loving-union telos; 'better' tracks how far that union propagates beyond the agent who attains it; and the whole apparatus of states remains scaffold, never the charity it is built to grow."
 tags: [synthesis, day/211, theme/many-orders-one-telos]
-last_qc_at: "2026-08-09T22:32:43"
+last_qc_at: "2026-08-18T14:27:34"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,7 +51,7 @@ This day gives the project's thesis its *sociology*. The claim is that "consciou
 
 ## Bridges
 
-- **One telos, many orders ↔ one good encountered from many partial perspectives; plural stances required for one inquiry** — Tom's PRS-form record of Rohr, PRS-03/PRS-01 (Rohr primary); of McGilchrist, PRS-03 (team/game). *Why:* a finite community must approach the whole from more than one side; plurality is the structure of limited perspective, not redundancy. Evidence: **theological + analogical, medium**.
+- **One telos, many orders ↔ one good encountered from many partial perspectives; plural stances required for one inquiry** — Tom's PRS-form record of Rohr, PRS-03/PRS-01; of McGilchrist, PRS-03 (team/game). *Why:* a finite community must approach the whole from more than one side; plurality is the structure of limited perspective, not redundancy. Evidence: **theological + analogical, medium**.
 - **"Better" = teaching that overflows from contemplation ↔ excellence as propagation of loving union across perspectives (the self-diffusive good)** — master CROSS-005; anticipates the Day-213 *bonum diffusivum* principle. *Why:* the most excellent form both receives and transmits the whole; rank gives way to diffusion. Evidence: **reframe, speculative (medium)**.
 - **Solitary vs communal life ↔ the individuating boundary needs an external scaffold unless already integrated** — Tom's PRS-form record of Kastrup, PRS-02; of McGilchrist, PRS-01; master CROSS-003. *Why:* community supplies the correction that holds a perspective toward the telos; solitude amplifies whatever integration is present or absent. Evidence: **central-theme + analogical, medium**.
 - **Possessing-in-common that still "steals the heart" ↔ attention/precision captured by objects short of the whole** — master CROSS-003; Tom's PRS-form record of Stump, PRS-06 (a tradition stays living only if it keeps generating its end). *Why:* the danger is not the tool but the capture of attention; an order, like any tradition, degenerates when the means becomes the end. Evidence: **structural, medium**.

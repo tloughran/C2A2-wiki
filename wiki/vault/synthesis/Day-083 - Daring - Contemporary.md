@@ -20,7 +20,7 @@ The contemporary frame supplies a unified answer. Fear and daring are the affect
 
 **The dual-process literature (Kahneman, Stanovich, Evans)** is the contemporary articulation of Q.45 a.4's antecedent/consequent distinction. The antecedent passion is *fast, automatic, embodied, evidence-driven* (System 1, model-free RL, habitual control); the consequent passion is *slow, deliberate, intellect-and-will-engaged, model-based* (System 2, model-based RL, deliberative control). The relation between the two is the central computational problem the modern cognitive sciences are working on. Aquinas's distinction anticipates the structure with surprising precision, and his moderate-fear claim (Q.44 a.4) is the empirical observation that the deliberative system's effectiveness *requires* but is not identical with the fast affective signal.
 
-**Fredrickson and the broaden-and-build / positive-affect literature** is the empirical foothold for Q.45 a.2 (hope causes daring). The action-broadening effect of positive affect (PRS-01) is precisely the mechanism by which hope spills into daring: broader action repertoire, expanded perceived feasibility, willingness to engage obstacles. Fredrickson PRS-08 / PRS-09 (high-quality connection, weak-tie social trust) gives the social-resource correlate: the daring of the agent embedded in community is empirically higher than that of the isolated agent. Aristotle's "wealth, strength, and a multitude of friends drive fear away" (Q.43 a.2) cashes out here as the broaden-and-build mechanism extended into the daring register.
+**Fredrickson and the broaden-and-build / positive-affect literature** is the empirical foothold for Q.45 a.2 (hope causes daring). The action-broadening effect of positive affect — carried in the record's cultivation entry, PRS-01, whose mechanism is deliberate practice raising vagal tone into upward spirals — is precisely the mechanism by which hope spills into daring: broader action repertoire, expanded perceived feasibility, willingness to engage obstacles. Fredrickson PRS-08 / PRS-09 (high-quality connection, weak-tie social trust) gives the social-resource correlate: the daring of the agent embedded in community is empirically higher than that of the isolated agent. Aristotle's "wealth, strength, and a multitude of friends drive fear away" (Q.43 a.2) cashes out here as the broaden-and-build mechanism extended into the daring register.
 
 **McGilchrist's hemispheric account** sharpens the antecedent/consequent distinction. Left hemisphere: narrow instrumental focus, the executive of the planned engagement. Right hemisphere: contextual openness, the executive of the gestalt assessment. *Mature* daring (consequent passion of the brave) is left-right integration — the gestalt assessment confirms the obstacle is engageable, and the planned engagement is selected. *Pathological* daring (Q.45 a.3's drunken case) is left-hemispheric over-precision without right-hemispheric contextual buffering — the obstacle's actual magnitude is not perceived. McGilchrist's clinical correlations (intoxication, mania, certain personality disorders) match the structural claim.
 
@@ -53,8 +53,8 @@ The community-embedded shape of Wright's Phil 2:12 reading and the seeking-couns
 - **Friston PRS-01, PRS-04 + Pezzulo on epistemic value** — Q.45 a.1 contrary-precision; Q.44 a.2 information-seeking under fear; *formal, empirically supported*.
 - **Damasio somatic-marker / interoception literature** — Q.44 a.1 (contraction) and a.3 (trembling) as informational inputs to affective computation; *empirical, well-established*.
 - **Kahneman / Stanovich dual-process literature** — Q.45 a.4 antecedent vs. consequent passions; *behavioral evidence, robust*.
-- **Fredrickson PRS-01, PRS-08, PRS-09 / broaden-and-build, high-quality connection** — Q.45 a.2 (hope causes daring), Q.43-44 community-embedded fear-reduction; *empirical*.
-- **McGilchrist hemispheric account** — left-right integration in mature daring; *clinical evidence*.
+- **Fredrickson PRS-01, PRS-08, PRS-09 / positivity-resonance cultivation, high-quality connection, weak-tie intellectual humility** — Q.45 a.2 (hope causes daring), Q.43-44 community-embedded fear-reduction; *empirical*.
+- **PRS-01, PRS-05 in the McGilchrist-tradition wiki / hemispheric asymmetry; attention as ontological act** — left-right integration in mature daring (01), and attention as world-constituting, which the entry itself states as compatible with precision-weighted prediction (05); *clinical evidence*.
 - **Stump on antecedent vs. consequent passions and Thomistic will** — rigorous contemporary articulation of Q.45 a.4; *analytic-Thomistic*. **Left without a numbered id on purpose:** the Stump record's will-and-grace entries (PRS-23, PRS-29) are about the will's quiescence before infused grace, not about the antecedent/consequent sorting of the passions, and no entry in that tradition carries the distinction. Anchoring by proximity here would manufacture a citation the record does not support.
 - **PRS-05 in the Wright-tradition wiki / salvation as incorporation into the people among whom God comes home** — community-embedded eschatological salvation as the theological articulation of "moderate fear" in Q.44 a.4; *historical-theological, well-attested*.
 - **PRS-02 in the Rohr-tradition wiki / order-disorder-reorder** — contemplative reading of the consequent-passion register; *contemplative tradition*.
@@ -78,13 +78,13 @@ central_theme_thread: "The agent works out salvation in fear and trembling (Phil
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy principle; PRS-04 organism as active modeler)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation; PRS-08 high-quality listening; PRS-09 weak-tie intellectual humility)"
-  - "traditions/mcgilchrist/wiki.md (left-right integration — no numbered id claimed)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry, right hemisphere primary; PRS-05 attention as ontological act, compatible with precision-weighted prediction)"
   - "traditions/stump/ — Thomistic will; antecedent/consequent passions (no numbered id: the record carries no entry for this distinction)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home); Philippians 2:12"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder)"
 evidence_strength_summary: "Dual-process theory, embodied cognition / somatic-marker, broaden-and-build, and active-inference precision-weighting are empirically robust. Hemispheric account is clinically supported. Conscious-realist-monist reading of antecedent vs. consequent passions as alter-level fast/slow is metaphysically speculative. Wright on Phil 2:12 and Rohr on order-disorder-reorder are theologically well-attested."
 tags: [synthesis, day/083, theme/daring, theme/fear-effects, theme/antecedent-consequent, theme/phil-2-12]
-last_qc_at: "2026-08-08T00:27:06"
+last_qc_at: "2026-08-16T10:33:32"
 last_qc_outcome: "rewrote"
 
 ---

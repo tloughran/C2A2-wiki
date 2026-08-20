@@ -6,7 +6,7 @@ title: Limbo of Fathers
 summa_ref: Suppl. Q.69-70
 duration_seconds: 849
 word_count: 2620
-raw_asr_word_count: 2620
+raw_asr_word_count: 2599
 length_tier: medium
 segment_count: 370
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-292 - Limbo of Fathers - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/292, pars/suppl, q/69-70]
-last_qc_at: "2026-08-07T02:30:24"
+last_qc_at: "2026-08-15T04:25:47"
 last_qc_outcome: "pass"
 ---
 
@@ -24,7 +24,7 @@ last_qc_outcome: "pass"
 
 *Supplement to the Tertia Pars, Suppl. Q.69-70. Verbatim ASR (lightly cleaned) from the Think Catholic "Summa in a Year" podcast, Austin Habash.*
 
-> Cleanup note: the episode intro's name-garble ("Sumanir / Summenier" etc.) is the ASR mishearing "Summa in a Year"; rendered correctly here. Common ASR fixes applied (Suma->Summa, Aquinus->Aquinas, theologia->Theologiae, conflagration, beatific). Text is otherwise verbatim.
+> Cleanup note: the episode intro's name-garble ("Sumanir / Summenier" etc.) is the ASR mishearing "Summa in a Year"; rendered correctly here. Common ASR fixes applied (Suma->Summa, Aquinus->Aquinas, theologia->Theologiae, conflagration, beatific, "A Maria Press"->"Ave Maria Press"). Text is otherwise verbatim.
 
 ## Transcript
 
@@ -38,9 +38,9 @@ last_qc_outcome: "pass"
 
 [00:40] after death and of the quality of the soul after leaving the body and of the punishment inflicted on it by material fire. The translation that I always use
 
-[00:48] in these podcasts is the one generously provided to me. A Maria Press, a five volume set translated by the fathers of the English Dominican province, which
+[00:48] in these podcasts is the one generously provided to me. Ave Maria Press, a five volume set translated by the fathers of the English Dominican province, which
 
-[00:57] you can now get at a discounted price from a Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether places are
+[00:57] you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one, whether places are
 
 [01:08] appointed to receive souls after death. Place is of course notoriously difficult to pin down when we're talking about entities which do not of themselves take
 

@@ -16,8 +16,8 @@ evidence_strength_summary: "Denunciation vs foreknowledge ~ defeasible model-for
 mind_first_reframe: "Prophetic knowing comes in degrees of mediation: a defeasible forecast of a contingent cause at the bottom, a truth impressed directly into the intellect (no images) higher up, and at the limit rapture — the intellect 'uplifted contrary to nature,' withdrawn from the senses and freed from phantasms, transiently informed by the divine essence. Read in mind-first terms, the ascent is the progressive setting-aside of the species-specific interface that individuates a perspective; rapture is the momentary, partial relaxation of the dissociative boundary toward the wider mind — a foretaste, not the abiding vision, and one the subject cannot even fully locate himself within (Paul: 'in the body or out, I know not')."
 central_theme_thread: "Rapture is the project's central claim staged at its edge: the perspective-limiting interface is set aside far enough to glimpse more of the simple whole — yet the glimpse is transient (the boundary re-clenches), it is not the abiding beatific vision, and even within it the self cannot locate its own state. Removing limitation discloses the whole; but a creature's full and lasting inclusion in it is the loving, communal union the project names as salvation, not a solitary cognitive flash."
 tags: [synthesis, day/205, theme/unmediated-vision]
-last_qc_at: "2026-08-08T10:28:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-17T00:19:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 205 — Kinds of Prophecy (Contemporary Parallel)
@@ -56,7 +56,7 @@ The project's claim is that conscious agents are individuated by the limits of t
 
 - **Denunciation vs. foreknowledge ↔ defeasible model-forecast vs. apprehension from outside time** — Tom's PRS-form record of the Friston program (PRS-04) and the Hoffman-tradition record (PRS-04); Carroll's eternalism. *Why:* one is revisable inference within time (Nineveh repents), the other a seeing of the settled manifold. Evidence: **formal, medium**.
 - **The degree-ladder ↔ decreasing interface-mediation; less mediation = less deformation** — the Hoffman-tradition record, PRS-03/PRS-04; master CROSS-001. *Why:* each rendering layer is a lossy fitness-tuned compression, so direct intellectual impression deforms the truth least. Evidence: **structural, medium**.
-- **The top of the ladder ↔ participatory, not representational, knowing** — the McGilchrist-tradition record, PRS-05; the Kastrup record, PRS-09; master CROSS-003. *Why:* the highest knowing is the knower informed by the thing, not reading a model of it. Evidence: **conceptual, medium**.
+- **The top of the ladder ↔ participatory, not representational, knowing** — the McGilchrist-tradition record, PRS-05; the Kastrup record, PRS-09 — which is filed in the Kastrup register but records McGilchrist's April-2026 counter-proposal against the dashboard-of-perception metaphor, at Confidence: Medium, so it is the participatory *refinement* rather than settled Kastrup program content; master CROSS-003. *Why:* the highest knowing is the knower informed by the thing, not reading a model of it. Evidence: **conceptual, medium**.
 - **Rapture ("contrary to nature," transient, self-opaque) ↔ transient relaxation of the dissociative boundary / setting aside the interface** — the Kastrup-tradition record, PRS-02. *Why:* it predicts the contrary-to-nature character, the transience (re-clenching), and Paul's inability to locate his own state. Evidence: **analogical, medium — explicitly not a reduction of the beatific vision**.
 - **Transient rapture ↔ abiding resurrection / communal loving union as the real telos** — Wright-tradition (resurrection / new creation) and Rohr-tradition (received contemplative participation) resources; master CROSS-005. *Why:* the project's end is lasting, embodied, communal inclusion in the whole, not a solitary cognitive flash. Evidence: **theological**.
 

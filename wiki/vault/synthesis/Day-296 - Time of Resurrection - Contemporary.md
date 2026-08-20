@@ -3,7 +3,7 @@ day: 296
 title: Time of Resurrection (Contemporary)
 pairs_with: "[[Day-296 - Time of Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1034
+length_actual_words: 1070
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 target-state selects which matter realizes the form; PRS-03 morphological attractor; PRS-17 bioelectric pattern memory persisting across cell divisions)"
@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; canonical: the unknown day, watchfulness)"
 evidence_strength_summary: "That identity is carried by an organizing principle and not by the specific matter is empirical at the biological scale (Levin); the time/arrow framing is physical (Carroll); persistence of the individuated perspective is philosophical (Kastrup); the deliberate hiddenness of the day is scriptural-theological (Wright); the two-tier divine/angelic causation stays theological."
-length_note: "Runs ~31% under the short tier (1034 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.69
+length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1034 -> 1070, +36 (3.5%), ratio 0.689 -> 0.713. Seventh independent confirmation that the field understates, same direction. Still ~29% under the short tier (tier verified correct: transcript word_count 1236): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated."
+length_ratio_to_target: 0.713
 mind_first_reframe: "The matter has no claim on the soul; an extrinsic organizing principle selects which matter realizes the form — identity rides the pattern and its ordination, never the atoms. The day is hidden by design, to keep every perspective awake."
 central_theme_thread: "Aquinas says outright that the ashes have no natural inclination to the soul — identity is not in the matter but in the principle that orders it; and the hour is hidden precisely so that every limited perspective stays watchful: epistemic limitation deployed for the agent's good."
 tags: [synthesis, day/296, theme/identity-rides-the-organizing-principle-not-the-matter]
-last_qc_at: "2026-08-07T22:30:20"
+last_qc_at: "2026-08-16T00:25:51"
 last_qc_outcome: "pass"
 ---
 

@@ -3,10 +3,10 @@ day: 302
 title: General Judges (Contemporary)
 pairs_with: "[[Day-302 - General Judges]]"
 length_target_words: 2200
-length_actual_words: 1352
-length_ratio_to_target: 0.61
+length_actual_words: 1402
+length_ratio_to_target: 0.64
 length_tier: medium
-length_note: "Body 1352 words vs ~2200 tier guideline (-39%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
+length_note: "Body 1402 words vs ~2200 tier guideline (-36%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-15 OODA full loop; PRS-16 expected free energy)"
   - "traditions/carroll/prs_triplets.md (PRS-04 agency without dualism; PRS-18 metaphysics of levels)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "End-directedness under free-energy (active inference
 mind_first_reframe: "To have an end is to carry a preference structure (a generative model's priors) that makes some outcomes count as success; rightly judging an agent is reading it against the true end — loving union — it actually computes toward, and fitness to judge is alignment of preference structures across a shared interface."
 central_theme_thread: "No finite agent yet holds the true end completely; each computes toward loving unity from its own limited perspective, and legible judgment is possible only between agents who share enough nature/interface to make the verdict intelligible."
 tags: [synthesis, day/302, theme/right-end-of-agency]
-last_qc_at: "2026-08-07T02:30:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T22:31:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 302 — General Judges (Contemporary Parallel)
@@ -43,7 +43,7 @@ Put together, the resource is this: **to have an end is to carry a preference st
 
 The contemporary parallel proposes: an agent is rightly evaluated by the end it computes toward, and the *fittingness to judge* that Aquinas grants to those who "left all" is, formally, the alignment of a judge's preference structure with the true one. This is why conformity matters. A judge that does not share the nature — the form of life, the generative model — of the judged cannot make the judgment *legible* to the judged; the angels are disqualified not for lack of insight but for lack of shared nature. Evaluation requires a common interface.
 
-What it shares with Aquinas: the priority of end over external act, and the insistence that the highest evaluation belongs to the whole (God alone judges in the strict sense; the saints judge only by participation). Where it reframes: it treats "the correct habitual end" not as a credal gate but as a claim about the *attractor* toward which mature agency tends — loving union as the preference no finite agent fully holds but all are drawn toward. Where the evidence is firm: that agency is end-relative and formally modelable under free-energy minimization is well-developed (formal, with empirical traction in neuroscience and morphogenesis). Where it is speculative: that there exists one *true* end relative to which all others are deficient is a metaphysical-theological claim the formalism does not establish; active inference is silent on whether any preference distribution is privileged.
+What it shares with Aquinas: the priority of end over external act, and the insistence that the highest evaluation belongs to the whole (God alone judges in the strict sense; the saints judge only by participation). Where it reframes: it treats "the correct habitual end" not as a credal gate but as a claim about the *attractor* toward which mature agency tends — loving union as the preference no finite agent fully holds but all are drawn toward. Where the evidence is firm: that agency is end-relative and formally modelable under free-energy minimization is well-developed, and rests here on two high-confidence register entries (PRS-15, PRS-16) rather than on PRS-04, which is an implicit reconstruction at medium confidence. Where it is speculative: that there exists one *true* end relative to which all others are deficient is a metaphysical-theological claim the formalism does not establish; active inference is silent on whether any preference distribution is privileged.
 
 The closing article is the place where the two registers nearly touch. "The Godhead cannot be seen without joy" says that apprehending the deepest truth is *intrinsically* rewarding — there is no gap between knowing the highest good and delighting in it. In free-energy terms this is the vanishing of the distinction between epistemic value (resolving uncertainty) and pragmatic value (reaching preferred states): at the limit, to know the whole *is* to occupy the preferred state. Tom's PRS-form record of Fredrickson's work (PRS-02 in the Fredrickson-tradition wiki, recovering love from mere sentiment; PRS-14 on the conditions for positivity resonance) supplies the embodied counterpart — that the highest goods are felt, relational events, not bloodless cognitions. CROSS-005 in the network index already names love/union as a convergent fundamental across Stump, Fredrickson, and Kastrup. The "joy" of the beatific vision is, on this reading, the affective signature of an agent that has reached the end it was computing toward.
 
@@ -55,7 +55,8 @@ Salvation, in N.T. Wright's frame (PRS-05 in the Wright-tradition wiki), is inco
 
 ## Bridges
 
-- **PRS-04 + PRS-15/16 in the Friston-tradition wiki** — *agency as end-relative free-energy minimization* (formal/empirical). Gives "the correct habitual end" a mechanism: the preference distribution that makes outcomes count as success.
+- **PRS-15 + PRS-16 in the Friston-tradition wiki** — *agency as end-relative free-energy minimization* (formal; both Confidence High). Gives "the correct habitual end" a mechanism: the preference distribution that makes outcomes count as success.
+- **PRS-04 in the Friston-tradition wiki** — *the organism as active modeler* (marked (Implicit), Confidence Medium — a reconstruction of the predictive-coding picture rather than a measured finding, so it supports the two entries above rather than carrying them).
 - **PRS-04 + PRS-18 in the Carroll-tradition wiki** — *agency as real-but-high-level, awaiting a metaphysics of levels* (formal/philosophical). The honest counterpoint: is "the true end" anything more than a useful description? Aquinas says more; Carroll demands the warrant.
 - **PRS-02 + PRS-14 in the Fredrickson-tradition wiki / CROSS-005** — *love as the felt, relational highest good* (empirical/speculative). The embodied reading of "no Godhead seen without joy."
 - **PRS-01 + PRS-05 in the Wright-tradition wiki** — *critical realism + salvation as incorporation* (theological/epistemological, High). The judge sees truly but perspectivally; the judged are included in a people, not merely sentenced.

@@ -5,7 +5,8 @@ url: https://www.youtube.com/watch?v=flzYQD97fKg
 title: Timeless Delight
 summa_ref: "Prima Secundae, Q.30-31"
 duration_seconds: 1023
-word_count: 2520
+word_count: 1692
+word_count_note: "Corrected 2026-08-17 by QC sweep from a declared 2520. Recounted with the constitution's regex [A-Za-z']+ over the '## Transcript' section only (frontmatter, title block and '## Notes' excluded): 1692. The declared 2520 overstated the rendered transcript by 828 words (49%), and that overstatement is what made the Step-4 length-sanity check pass: 2520/2773 = 0.909 (in tolerance) versus the true 1692/2773 = 0.610 (a hard ±25% failure). See the ESCALATION in _index/QC log.md for 2026-08-17."
 raw_asr_word_count: 2773
 length_tier: medium
 segment_count: 252
@@ -13,9 +14,10 @@ caption_kind: asr
 language: en
 fetched_at: 2026-05-11
 fetch_path: chrome-mcp via tactiq.io
-fidelity_checked: true
-last_qc_at: "2026-08-01T16:52:24"
-last_qc_outcome: "pass"
+fidelity_checked: false
+fidelity_note: "Flipped to false 2026-08-17 by QC sweep. Step-4 length sanity now FAILS on the corrected word_count (1692/2773 = 0.610, outside ±25%). The flag previously read true only because the declared word_count was inflated. Not rewritten: re-rendering the transcript is outside the reviewer's remit and this pair is ESCALATED to Tom, same disposition as Days 106 and 115."
+last_qc_at: "2026-08-17T20:21:11"
+last_qc_outcome: "rewrote"
 synthesis: "[[Day-076 - Timeless Delight - Contemporary]]"
 tags: [summa, day/076, pars/I-II, q/30, q/31]
 ---

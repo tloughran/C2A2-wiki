@@ -3,21 +3,22 @@ day: 193
 title: Drunkenness (Contemporary)
 pairs_with: "[[Day-193 - Drunkenness]]"
 length_target_words: 1500
-length_actual_words: 1256
-length_ratio_to_target: 0.84
-length_note: "Length-light vs the 1500 short-tier guideline but a complete PRS synthesis (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
+length_actual_words: 1479
+length_ratio_to_target: 0.986
+length_note: "Was 1256/0.84 and length-light; now 1479/0.986, inside short-tier ±10%. The growth is bridge-anchoring text added 2026-08-15 (PRS ids and file paths written into the Resource paragraph and the Bridges bullets), not padding and not new argument — no claim was added, removed, or reweighted."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 free energy; PRS-04 active modeler; self-model as controller)"
-  - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 vagal regulation; PRS-05 embodiment)"
-  - "traditions/mcgilchrist/wiki.md (the reasoning self; integrated control); refs/Karpathy wiki bridges.md (temperance)"
-  - "traditions/wright/ (the self entrusted with reason; stewardship); traditions/rohr/ (curbing the child / the false self)"
+  - "traditions/friston/prs_triplets.md (PRS-04 the organism as active modeler — the self-model as controller; PRS-01 free energy / biological agency without vitalism; PRS-28 neuromodulation encodes precision — the top-down regulation chastity is read as)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 micro-moments of positivity resonance rebuilding vagal tone; PRS-05 embodiment — love grounded in measurable vagal tone, oxytocin, neural synchrony)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act — the attending mode a suspension takes offline); refs/Karpathy wiki bridges.md (temperance)"
+  - "traditions/rohr/prs_triplets.md (PRS-05 the false-self-to-true-self mechanism — the 'child' kept from seizing the controls)"
+  - "Wright canonical: 'Surprised by Hope' on stewardship of the entrusted self — no numbered home in traditions/wright/prs_triplets.md for reason-as-entrusted-charge; gap stated"
 evidence_strength_summary: "Voluntary loss of reason as self-disabling of the controller = mechanistic, medium; means-end ordering (anesthesia case) = conceptual, strong; chastity as top-down regulation of the strongest appetite = empirical-mechanistic, medium; the moral weighting = philosophical-theological."
 mind_first_reframe: "Drunkenness is an agent deliberately disabling the self-model that minimizes its own long-run error; its culpability is the culpability of dismantling one's own controller, and what redeems the structurally identical anesthesia case is that the loss of reason is itself ordered by reason."
 central_theme_thread: "A perspective works out its salvation only while it can reason; to voluntarily extinguish reason is to abandon the computation toward loving unity midstream — the gravest move available short of corrupting the end itself."
 tags: [synthesis, day/193, theme/self-regulation]
-last_qc_at: "2026-08-07T08:23:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T14:32:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 193 — Drunkenness (Contemporary Parallel)
@@ -36,7 +37,7 @@ The Friston-tradition record is the leading resource. There the agent simply *is
 
 The anesthesia case is where active inference earns its keep. The difference is not in the local state (reason offline either way) but in the *policy that selected it*. In surgery, a higher-order policy — preserve the organism, restore function — selects a temporary, bounded, reversible suspension as a means to the agent's genuine setpoint; the loss of reason is itself an act of reason. In drunkenness, no higher policy ratifies the suspension; the controller is sacrificed to a lower reward. The Fredrickson-tradition wiki adds the embodied note: regulation is a real vagal-bodily control system (PRS-01, PRS-05), and disabling it has measurable downstream cost — the impairment is not metaphorical.
 
-For chastity (Q.151), the resource is the same precision/top-down picture: chastity "chastises concupiscence, which like a child needs curbing" — top-down regulation of the strongest, most vehement appetite, distinct from abstinence only because it governs a different and more intense pleasure of touch.
+For chastity (Q.151), the resource is the same precision/top-down picture, and it needs its own id rather than a re-use of the two above: PRS-28 in the Friston-tradition record is where precision actually lives — neuromodulation encoding the inverse variance of prediction error over selected channels — while PRS-01 and PRS-04 give the modeler without giving the dial. Chastity "chastises concupiscence, which like a child needs curbing" — top-down regulation of the strongest, most vehement appetite, distinct from abstinence only because it governs a different and more intense pleasure of touch.
 
 ## Solution (proposed, speculative)
 
@@ -54,11 +55,11 @@ The project's claim is that a limited agent works out its salvation — its incl
 
 ## Bridges
 
-- **Drunkenness ↔ self-disabling of the controller** — the Friston-tradition wiki (PRS-01, PRS-04). *Why:* taking the high-level self-model offline forfeits the capacity for re-alignment. Evidence: **mechanistic, medium**.
-- **Anesthesia vs. drunkenness ↔ the selecting policy** — Friston-tradition active-inference record. *Why:* identical suspended states differ in worth by the higher-order policy that selected them. Evidence: **conceptual, strong**.
-- **Impairment ↔ measurable regulatory cost** — the Fredrickson-tradition wiki (PRS-01, PRS-05). *Why:* disabling vagal-bodily regulation has real downstream cost. Evidence: **empirical, medium**.
-- **Chastity ↔ top-down control of the strongest appetite** — the Friston- and McGilchrist-tradition wikis. *Why:* "chastising" the most vehement pleasure is precision-control at its hardest. Evidence: **mechanistic, medium**.
-- **Reason ↔ entrusted stewardship; appetite ↔ the curbed child** — the Wright- and Rohr-tradition resources. *Why:* the governing self as a charge to be kept, not squandered. Evidence: **theological**.
+- **Drunkenness ↔ self-disabling of the controller** — the Friston-tradition wiki (`traditions/friston/prs_triplets.md`), **PRS-04** (the organism as active modeler: predictive coding, the Bayesian brain) with **PRS-01** (the free-energy principle; biological agency without vitalism). *Why:* taking the high-level self-model offline forfeits the capacity for re-alignment. Evidence: **mechanistic, medium**.
+- **Anesthesia vs. drunkenness ↔ the selecting policy** — the same file, **PRS-16** (expected free energy as the unified mathematics of risk and ambiguity; risk as the divergence between the agent's *prior preferences* and its predicted outcomes). *Why:* identical suspended states differ in worth by the higher-order policy that selected them, and PRS-16 is where the preference-versus-outcome split is actually formalized. Evidence: **conceptual, strong**.
+- **Impairment ↔ measurable regulatory cost** — the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`), **PRS-01** (positivity resonance cultivated deliberately; vagal tone rebuilt) and **PRS-05** (love grounded in measurable vagal tone, oxytocin, neural synchrony). *Why:* disabling vagal-bodily regulation has real downstream cost — the impairment is not metaphorical. Evidence: **empirical, medium**.
+- **Chastity ↔ top-down control of the strongest appetite** — the Friston-tradition wiki, **PRS-28** (neuromodulation encodes precision, the inverse variance of prediction error, over selected sensory channels), with the McGilchrist-tradition wiki (`traditions/mcgilchrist/prs_triplets.md`, **PRS-05**, attention as an ontological act). *Why:* "chastising" the most vehement pleasure is precision-control at its hardest, and precision is PRS-28's claim, not PRS-01's or PRS-04's. Evidence: **mechanistic, medium**.
+- **Reason ↔ entrusted stewardship; appetite ↔ the curbed child** — Rohr resolves: `traditions/rohr/prs_triplets.md` **PRS-05**, the mechanism by which the false self becomes the true self, which is the discipline the "child" image names. Wright does not: the Wright-tradition record has no numbered entry for *reason as an entrusted charge*, so that half is cited canonically (*Surprised by Hope*) with the gap stated rather than given an approximate id. Evidence: **theological**.
 
 ## Where this leaves us
 

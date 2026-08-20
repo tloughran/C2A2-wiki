@@ -3,22 +3,22 @@ day: 199
 title: Man's Downfall (Contemporary)
 pairs_with: "[[Day-199 - Man's Downfall]]"
 length_target_words: 2200
-length_actual_words: 2326
-length_ratio_to_target: 1.06
+length_actual_words: 2446
+length_ratio_to_target: 1.112
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01, PRS-03 the self as fitness-tuned interface-icon; PRS-08 recursive self-modeling)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociated alters of one consciousness; PRS-08 patterned individuation / vocation)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 left-hemisphere usurpation — the emissary mistaking itself for the Master)"
   - "traditions/friston/prs_triplets.md (PRS-14 Bayesian self-trapping — priors that resist revision)"
-  - "traditions/levin/ (the part defecting from the larger agent's goal; bioelectric goal-subordination); master/cross_program_index.md (CROSS-084/085 agent individuation within the consciousness cluster)"
-  - "traditions/wright/ (PRS-01 critical realism; sin as idolatry / image-bearer vocation-failure); traditions/rohr/ (PRS-02 order-disorder-reorder)"
+  - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the cooperative morphogenetic community; PRS-11 cancer as 'dissociative identity disorder of the body' — the bioelectric network failing to hold collective identity); master/cross_program_index.md (CROSS-084/085 agent individuation within the consciousness cluster)"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism; PRS-20 Adam and Eve as a called pair — image-bearing recast as call-and-vocation, which is what makes 'vocation-failure' a statable charge); traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder)"
 evidence_strength_summary: "Pride-as-perspective-absolutization = conceptual/structural, the synthesis's central claim; the self-as-icon and the part-claiming-to-be-the-whole readings = metaphysical-speculative (interface theory, analytic idealism, hemispheric theory); pride-not-tied-to-embodiment (the demons) as a disorder of any will/self-model = structural, medium; the theology of the first sin and pride's primacy = theological."
 mind_first_reframe: "Pride is the self-model not merely mis-calibrated but treating its own constructed vantage as the ground of value and truth — the part claiming to be the whole, the interface-icon mistaken for the real, the agent 'relying on itself in contempt of the order' that constitutes it. This is why it is the FIRST sin: it is the formal structure (self over whole) that every other vice fills in with content."
 central_theme_thread: "Pride is the exact inversion of the project's central claim. If agents are individuated by perspective-limitation and salvation is the limited agent computing toward loving unity under guidance from those who see more, pride is the limited agent refusing that guidance and absolutizing its own vantage — 'you will be like God,' deciding good and evil by oneself."
 tags: [synthesis, day/199, theme/perspective-absolutization]
-last_qc_at: "2026-08-07T20:23:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T22:29:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 199 — Man's Downfall (Contemporary Parallel)
@@ -61,8 +61,8 @@ This day is the exact photographic negative of the project's central claim, and 
 - **"Having from oneself what is from God" ↔ the alter denying it is an alter** — the Kastrup-tradition record, PRS-02/08. *Why:* Gregory's two middle species are the part refusing its constitutive dependence on the whole. Evidence: **metaphysical-speculative; strong structural fit**.
 - **Pride ↔ the emissary usurping the Master** — the McGilchrist-tradition record, PRS-01. *Why:* the part that exists only to serve the integrating whole declares itself the source — pride at the cognitive level. Evidence: **conceptual, medium**.
 - **Pride as queen of vices ↔ Bayesian self-trapping** — the Friston-tradition record, PRS-14. *Why:* an inflated self-model installed as a high-precision prior bends all evidence to itself and resists revision, becoming the frame other vices fill in. Evidence: **cognitive anchor, medium**.
-- **"Relying on oneself in contempt of the order" ↔ a part defecting from the larger agent's goal** — Levin-tradition material; master CROSS-084/085. *Why:* the multi-scale signature of self-over-whole, from defecting cells upward. Evidence: **biological by analogy, medium**.
-- **The first sin ↔ idolatry / image-bearer vocation-failure; fall as order-disorder** — the Wright- and Rohr-tradition resources (Rohr PRS-02). *Why:* the image grasping at the role of the imaged; the disorder that becomes the path upward. Evidence: **theological**.
+- **"Relying on oneself in contempt of the order" ↔ a part defecting from the larger agent's goal** — the Levin-tradition record, PRS-02 (cancer as defection from the body's cooperative morphogenetic community) and PRS-11 (cancer as "dissociative identity disorder of the body," the bioelectric network failing to hold collective identity so cells revert to self-interest); master CROSS-084/085. *Why:* the multi-scale signature of self-over-whole, from defecting cells upward — and PRS-11 makes the parallel to the Kastrup bullet exact rather than merely rhyming, since both name a part losing hold of the whole that individuates it. Evidence: **biological by analogy, medium**.
+- **The first sin ↔ idolatry / image-bearer vocation-failure; fall as order-disorder** — the Wright-tradition record, PRS-20 (Adam and Eve as a *called pair*: image-bearing recast as call-and-vocation, proto-humans summoned to bring chaos under stewardship), with the Rohr-tradition record, PRS-02. *Why:* the image grasping at the role of the imaged — and PRS-20 is the entry that makes the failure statable, since if the image-bearer's standing *is* a vocation received, pride is the refusal of the call rather than a breach of a status. Evidence: **theological**.
 
 ## Where this leaves us
 

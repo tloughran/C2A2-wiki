@@ -3,21 +3,22 @@ day: 249
 title: The Eucharist (Contemporary)
 pairs_with: "[[Day-249 - The Eucharist]]"
 length_target_words: 2200
-length_actual_words: 824
+length_actual_words: 934
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; PRS-09 representation vs participatory encounter)"
   - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem transformation; PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; identity through turnover)"
-  - "traditions/rohr/wiki.md (sacramental presence; Universal Christ in matter)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium; sacramental presence per se is not covered by a numbered entry and is anchored to *The Universal Christ* as canonical work)"
+  - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological, Confidence Medium)"
 evidence_strength_summary: "Real Presence theological (Rohr/Wright); substance-as-mental-reality metaphysical (Kastrup, contested); accidents-as-interface formal-speculative (Hoffman); central-theme strongly engaged; metaphysical guardrail leads Kastrup/Hoffman/Levin."
-length_ratio_to_target: 0.37
+length_ratio_to_target: 0.42
 length_note: "Compact-by-design: III Q.73-74 (Real Presence / matter of the sacrament) rendered in tight, complete PRS form with the metaphysical guardrail leading Kastrup/Hoffman/Levin; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 mind_first_reframe: "Under mind-monism with the metaphysical guardrail leading Kastrup/Hoffman/Levin, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
 central_theme_thread: "The Eucharist is the maximal case of the whole present under a limited perspective's signs: agents perceive only the interface (bread) while the reality (Christ) is present precisely under the limitation of their perception, and communion is participative inclusion in that reality — 'salvation as inclusion in the people united with God.'"
 tags: [synthesis, day/249, theme/presence-and-substance]
-last_qc_at: "2026-08-10T20:25:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T22:31:38"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 249 — The Eucharist (Contemporary Parallel)
@@ -53,8 +54,8 @@ The Eucharist is the maximal case of the project's recurring motif: the whole pr
 - **Kastrup PRS-02 + PRS-09 (identity within monism; participatory encounter)** — *metaphysical, contested.* "Substance" as mental reality; communion as participation, not mere representation.
 - **Hoffman PRS-01 + PRS-03 + PRS-04 (interface theory)** — *formal-speculative.* Accidents-as-interface decoupled from substance-as-reality.
 - **Levin PRS-01 (morphogenetic control; identity through turnover)** — *empirical-in-domain.* This-worldly case of reality coming apart from current matter.
-- **Rohr (sacramental presence; Universal Christ in matter)** — *theological / contemplative.* The Eucharist as focal intensification of a latent universal presence.
-- **Wright (bodily, new-creation realism)** — *theological, high within method.* Guards against reducing presence to symbol.
+- **Rohr PRS-21 (`traditions/rohr/prs_triplets.md`) — Universal-Christ-in-creation, "creation as the first incarnation"** — *theological / contemplative, Confidence Medium.* The Eucharist as focal intensification of a presence already latent in matter. Note the search radius: PRS-21 attests the Christ-pattern-in-creation half of this bridge; no numbered Rohr entry covers *sacramental presence* as such, so that half is anchored to *The Universal Christ* as canonical work rather than to a wrong id.
+- **Wright PRS-04 (`traditions/wright/prs_triplets.md`) — resurrection as historical and cosmological** — *theological-historical, Confidence Medium.* Bodily, new-creation realism; guards against reducing presence to symbol. Medium rather than high: the register entry is Wright's historical argument for the bodily resurrection, which grounds the realism this bridge needs but is itself a contested historiographical claim.
 
 ## Where this leaves us
 

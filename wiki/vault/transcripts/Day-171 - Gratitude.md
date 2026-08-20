@@ -6,7 +6,7 @@ title: Gratitude
 summa_ref: "Secunda Secundae, Q.106-107"
 duration_seconds: 738
 word_count: 2042
-raw_asr_word_count: 2044
+raw_asr_word_count: 2038
 length_tier: medium
 segment_count: 297
 caption_kind: asr
@@ -16,25 +16,27 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-171 - Gratitude - Contemporary]]"
 tags: [summa, day/171, pars/II-II, q/106-107]
-last_qc_at: "2026-08-07T02:30:22"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T04:25:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 171 — Gratitude
 
 Austin Habash's Day 171 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.106-107.
 
-[00:05] Hello, my name is Austin Habish, the founder of Think Catholic, and you're listening to the Sumanir podcast, where we study St. Thomas Aquinas's suma
+> Cleanup note: the episode intro's name-garble ("Sumanir") is the ASR mishearing "Summa in a Year"; rendered correctly here. Other ASR fixes applied: Habish -> Habash; suma -> Summa; sukunda Secundae -> Secunda Secundae; a Maria Press -> Ave Maria Press; code suma 10 -> code Summa 10. Text is otherwise verbatim.
 
-Theologiae in a way simple and insightful for anyone to understand. The Sumanir podcast is brought to you by Think Catholic. Taking two questions of the
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
+
+Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 171. So let's get started.
 
-We're covering today questions 106 and 107 of the sukunda Secundae that is of [00:37] thankfulness or gratitude and of ingratitude. The translation that I
+We're covering today questions 106 and 107 of the Secunda Secundae that is of [00:37] thankfulness or gratitude and of ingratitude. The translation that I
 
-always use in these podcasts is the one generously provided to me a Maria Press, the five volume set translated by the fathers of the English Dominican
+always use in these podcasts is the one generously provided to me Ave Maria Press, the five volume set translated by the fathers of the English Dominican
 
-province, which you can now get at a discounted price from a Maria Press's site by typing in the code suma 10. And so here we go. Article one. Whether
+province, which you can now get at a discounted price from Ave Maria Press's site by typing in the code Summa 10. And so here we go. Article one. Whether
 
 thankfulness is a special virtue distinct from other virtues. It is distinct from religion and piety and [01:07] observance in that it is of a
 
@@ -170,7 +172,7 @@ ongoing generosity towards them. Yet, as a cautionary note, St. Thomas tells us 
 
 favors, the more ungrateful and evil the other becomes, he should cease from bestowing his favors upon him." We have [12:04] just finished covering questions 106 and
 
-107 of the sukunda Secundae that is of thankfulness or gratitude and of ingratitude. My name is Austin Habish with Think Catholic and I cannot wait to
+107 of the Secunda Secundae that is of thankfulness or gratitude and of ingratitude. My name is Austin Habash with Think Catholic and I cannot wait to
 
 see you tomorrow.
 

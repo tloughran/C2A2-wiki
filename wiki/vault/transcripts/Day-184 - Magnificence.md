@@ -6,7 +6,7 @@ title: Magnificence
 summa_ref: "Secunda Secundae, Q.134-135"
 duration_seconds: 510
 word_count: 1376
-raw_asr_word_count: 1376
+raw_asr_word_count: 1370
 length_tier: short
 segment_count: 208
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-184 - Magnificence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/184, pars/II-II, q/134-135]
-last_qc_at: "2026-07-28T16:22:59"
+last_qc_at: "2026-08-15T12:26:30"
 last_qc_outcome: "pass"
 ---
 

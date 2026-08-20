@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Institutional design under perspective-limitation: distributed structures that integrate many limited perspectives lower variance and approximate the common good better than concentrated power, which presupposes a perspective-rich ruler who is empirically rare."
 central_theme_thread: "No single perspective can see the common good fully, so the loving-unity telos is approached in the social-institutional space by mixed structures that allow many limited perspectives to inform one another — the Trinitarian relational archetype, instantiated politically."
 evidence_strength_summary: "Empirical: institutional-design work in political science and public choice on diffused power; psychology on cognitive limits of single rulers. Formal: mechanism-design and multi-agent inference. Theological: covenant-political theology. Hard: herem texts deserve theological work beyond what the host's harmonization supplies."
-last_qc_at: "2026-08-03T14:30:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-17T02:27:10"
+last_qc_outcome: "pass"
 tags: [synthesis, day/113, theme/mixed-form, theme/institutional-design]
 ---
 

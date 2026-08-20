@@ -6,7 +6,7 @@ title: Magnanimity
 summa_ref: "Secunda Secundae, Q.128-129"
 duration_seconds: 760
 word_count: 1941
-raw_asr_word_count: 1941
+raw_asr_word_count: 1933
 length_tier: short
 segment_count: 298
 caption_kind: asr
@@ -16,21 +16,23 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-182 - Magnanimity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/182, pars/II-II, q/128-129]
-last_qc_at: "2026-07-28T16:22:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 182 — Magnanimity
 
-Day 182 covers the parts (annexed virtues) of fortitude and then magnanimity — the virtue of the great-souled person who stretches toward great things worthy of great honor, in accordance with reason.
+> Typo cleanup (QC sweep 2026-08-15): Austin Havish → Austin Habash (2×, episode intro and sign-off); Sumanir podcast → Summa podcast (2×); Aquinus, a suma theologia → Aquinas's Summa Theologiae (the ASR mishears the possessive as the article "a"); Suma → Summa; suma 10 → Summa 10 (the discount code, as rendered on other days); sukunda sukund day / secunda secund → Secunda Secundae (2×); questions 128 129 → questions 128-129 (2×); a Maria press → Ave Maria Press (2×); magnan-mity (ASR drops the third "i") → magnanimity (15×; the ASR spells the word both ways within the same episode); irassable → irascible; great sold → great-souled (ASR homophone); annexed there too → annexed thereto (ASR homophone; the Dominican-fathers phrase). All fixes are 1:1 token substitutions verified against the raw ASR refetched 2026-08-15; no content change. The restorations in the intro and the first four magnanimity instances had been applied silently by an earlier pass with no audit trail; they are logged here retrospectively.
 
-[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas, a Summa
+*Day 182 covers the parts (annexed virtues) of fortitude and then magnanimity — the virtue of the great-souled person who stretches toward great things worthy of great honor, in accordance with reason.*
+
+[00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the
 
 Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 182. So let's get started.
 
-We're covering today questions 128 129 of the Secunda Secundae that is of the parts of fortitude and of magnanimity. The translation that I always use in
+We're covering today questions 128-129 of the Secunda Secundae that is of the parts of fortitude and of magnanimity. The translation that I always use in
 
 [00:42] these podcasts is one generously provided to me by Ave Maria Press. The five volume set translated by the fathers of the English Dominican
 
@@ -72,9 +74,9 @@ considered in a different way as St. Thomas tells us. Accordingly, if these be c
 
 they will be quasi, integral parts thereof, because without them there can be no fortitude. Whereas, if they be referred to other matters involving less
 
-[03:54] hardship, they will be virtues specifically distinct from fortitude, but annexed there too. Now, on to question 129 of magnanmity article one.
+[03:54] hardship, they will be virtues specifically distinct from fortitude, but annexed thereto. Now, on to question 129 of magnanimity article one.
 
-whether magnanimity is about honors. This word magnanmity according to its parts from the Latin literally means great sold and so is concerned with as
+whether magnanimity is about honors. This word magnanimity according to its parts from the Latin literally means great-souled and so is concerned with as
 
 St. Thomas says, "Stretching forth of the mind to great things, and the greatest created thing a man can strive for is virtue, the effect of which is
 
@@ -86,7 +88,7 @@ honors so as not to care to do what is worthy of honor, this would be deserving 
 
 [04:59] strives to do what is deserving of honor, yet not so as to think much of the honor accorded by man. Article two, whether magnanimity is essentially about
 
-great honors. Because we are talking about virtues annexed to fortitude, these annex virtues must as well concern these irassable passions in regard to
+great honors. Because we are talking about virtues annexed to fortitude, these annex virtues must as well concern these irascible passions in regard to
 
 some arduous object. And the arduous object which magnanimity confirms us in is the pursuit of honor and great honor specifically because it is from here
 
@@ -98,7 +100,7 @@ honors as something he deserves since man cannot sufficiently honor virtue which
 
 honors because he does not deem them above him. Rather does he despise them and much more such as are ordinary or little and like manner he's not cast
 
-[06:13] down by dishonor but despises it since he recognizes that he does not deserve it. Article three whether magnanmity is a virtue. Virtues assist reason in the
+[06:13] down by dishonor but despises it since he recognizes that he does not deserve it. Article three whether magnanimity is a virtue. Virtues assist reason in the
 
 pursuit of the true good. And in external affairs, the desire for honor and the disordered passions which can arise in pursuit of such or apprehension
 
@@ -110,37 +112,37 @@ the man in accord with reason in pursuit of the good of honor, especially that o
 
 worthy of great things in consideration of the gifts he holds from God. On the other hand, humility makes a man think a little of himself in consideration of
 
-his own deficiency. and magnanmity makes him despise others in so far as they fall away from God's gifts. Since he does not think so much of others as to
+his own deficiency. and magnanimity makes him despise others in so far as they fall away from God's gifts. Since he does not think so much of others as to
 
 do anything wrong for their sake, yet humility makes us honor others and esteem them better than ourselves in so far as we see some of God's gifts in
 
-[07:32] them. It is therefore evident that magnanmity and humility are not contrary to one another, although they seem to tend in contrary directions. Article
+[07:32] them. It is therefore evident that magnanimity and humility are not contrary to one another, although they seem to tend in contrary directions. Article
 
 four, whether magnanimity is a special virtue. Virtues are determined by their object and we have a unique object here, honors. Just like the virtue of
 
 liberality had a unique object, money or external goods of value. And since honors are unique, then we should expect there to be just as unique vices and
 
-virtues attendant upon it. The virtue or good quality in the man orienting him rightly towards honors is what we call magnanmity.
+virtues attendant upon it. The virtue or good quality in the man orienting him rightly towards honors is what we call magnanimity.
 
-[08:11] Article five. Whether magnanmity is a part of fortitude. If we consider fortitude not as it is individually the virtue of death and combat but is a
+[08:11] Article five. Whether magnanimity is a part of fortitude. If we consider fortitude not as it is individually the virtue of death and combat but is a
 
-general firmness confirming of the man towards the arduous good then magnanmity is a kind or part of fortitude. It's a virtue similar to fortitude because it
+general firmness confirming of the man towards the arduous good then magnanimity is a kind or part of fortitude. It's a virtue similar to fortitude because it
 
 consists in standing firm in some arduous good which is honors. Yet it is different from fortitude in that pursuing honor is a less arduous
 
 [08:43] endeavor to be conformed in as opposed to dying as a martyr for Christ or a soldier in battle. Therefore, magnanimity is not identical to
 
-fortitude but instead an annexed virtue to fortitude. Article six. whether confidence belongs to magnanmity. As we have said already, confidence definitely
+fortitude but instead an annexed virtue to fortitude. Article six. whether confidence belongs to magnanimity. As we have said already, confidence definitely
 
 pertains to fortitude as a preparedness of mind towards the possible evil. But here Aquinas tells us that confidence is also a part of magnanimity only
 
 differing and that here it is less directed towards the possible evil but more of a confidence or a strong hope in the possible good to be attained which
 
-[09:23] as we have said are these great honors. And St. Thomas's words, magnanmity is chiefly about the hope of something difficult. Wherefore, since confidence
+[09:23] as we have said are these great honors. And St. Thomas's words, magnanimity is chiefly about the hope of something difficult. Wherefore, since confidence
 
 denotes a certain strength of hope arising from some observation which gives one a strong opinion that one will obtain a certain good, it follows that
 
-confidence belongs to magnanimity. Article 7, whether security belongs to magnanmity. The Latin here security is security. So what are we talking about
+confidence belongs to magnanimity. Article 7, whether security belongs to magnanimity. The Latin here security is security. So what are we talking about
 
 [09:54] here in this specific context? And Aquinas tells us that security consists in giving way neither to a troubled mind nor to man nor to fortune. And help us
 

@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-07 FEP substrate-independence — function defined by structural/boundary conditions, not the bearer's interior; PRS-06 the collective agent and its roles)"
   - "traditions/levin/prs_triplets.md (PRS-01 the bioelectric target-state/field operating above any single cell's 'merit')"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the pattern acts through matter regardless of the channel; PRS-06 not living by being right)"
-  - "traditions/wright/wiki.md (grace as gift; covenant faithfulness exceeding the minister's worth)"
+  - "traditions/wright/prs_triplets.md (PRS-32 ministerial roles individuated by call, gift and commission — members differentiated by function within one composite agent, not ranked by category); Wright, *Paul and the Faithfulness of God* (covenant faithfulness as God's own, exceeding the minister's worth — no entry in the live Wright node addresses grace-as-gift directly, so that half stays canonical)"
 evidence_strength_summary: "The role-independent-of-bearer claim is formal (Friston PRS-07) and has a structural analogue in field-over-unit dynamics (Levin PRS-01); that an unworthy minister validly confers grace (ex opere operato) is strictly theological; the qualities required of ordinands are canonical/theological."
 mind_first_reframe: "The validity of an unworthy minister's act is read against substrate-independence: the office is a structural role whose function is fixed by the collective's boundary conditions (Friston PRS-07), not by the bearer's interior state — while the sacrament's claim that grace truly flows is marked as theological."
 central_theme_thread: "Even a deeply limited, compromised perspective can be a faithful conduit of guidance from the whole; the grace channeled exceeds what the channel itself perceives or deserves."
 tags: [synthesis, day/275, theme/the-office-exceeds-its-bearer]
-last_qc_at: "2026-08-07T02:30:23"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T06:29:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 275 — Ordaining the Unworthy (Contemporary)
@@ -34,7 +34,7 @@ The shared inquiry-problem is **the independence of a role's function from the b
 
 The emerging paradigm gives this a precise formal home. Tom's PRS-form record of Friston's program, PRS-07, establishes that the Free Energy Principle is *substrate-independent*: a system's status as an inference-performing agent is fixed by its Markov-blanket boundary conditions — the statistical separation of inside from outside — not by what it is made of or by any privileged interior essence. Function follows structural position. Extended to the collective agent (PRS-06), this says an office is a *role* defined by its place in the community's shared generative model; the role does what the structure specifies, with considerable independence from the private state of whoever currently occupies it.
 
-the Levin-tradition wiki's PRS-01 offers a structural analogue from biology: the bioelectric *target-state* — the field-level specification of the body's form — operates above the "merit" or condition of any single cell. The field coordinates toward the target even when individual cells are damaged or unreliable; the pattern is carried at the level of the whole, not certified by the virtue of each part. This is the natural shape of a function that survives an unworthy bearer.
+PRS-01 in the Levin-tradition wiki offers a structural analogue from biology: the bioelectric *target-state* — the field-level specification of the body's form — operates above the "merit" or condition of any single cell. The field coordinates toward the target even when individual cells are damaged or unreliable; the pattern is carried at the level of the whole, not certified by the virtue of each part. This is the natural shape of a function that survives an unworthy bearer.
 
 Rohr supplies the theological reading without dissolving the tension. PRS-03 in the Rohr-tradition wiki (the Universal Christ — the divine pattern present in and acting through all creation, including matter) gives the warrant for grace working *through* a channel rather than being generated *by* it: the channel need not be the source. And PRS-06 in the Rohr-tradition wiki (not living by being right; identity decoupled from the correctness of one's current state) names, at the level of persons, exactly the decoupling the doctrine requires — the office holds even when the man does not. Wright's accent on grace as gift and on covenant faithfulness that exceeds human worth grounds the whole in Scripture: the gift is God's, not the minister's.
 
@@ -54,7 +54,7 @@ The central claim turns on our dependence, as limited perspectives, on guidance 
 - **Friston PRS-06** (formal): the office as a role in the collective generative model. Why: it locates the priesthood's function structurally rather than in private virtue.
 - **Levin PRS-01** (empirical, by analogy): the field/target-state operating above any single cell's merit. Why: it shows a function carried at the level of the whole, surviving unreliable parts.
 - **Rohr PRS-03 / PRS-06** (theological): the Universal Christ acting through matter; identity decoupled from being right. Why: it warrants grace flowing through, not from, the channel, and names the decoupling at the level of persons.
-- **Wright on grace-as-gift** (theological): covenant faithfulness exceeding human worth. Why: it anchors the gift in God's action rather than the minister's.
+- **Wright PRS-32** (theological/structural): ministerial roles individuated by call, gift and commission — members differentiated by function within one composite agent, not ranked by category. Why: it is the scriptural-historical counterpart of the office-as-structural-role claim, reached from the earliest church's practice rather than from the formalism. Paired with Wright, *Paul and the Faithfulness of God*, on covenant faithfulness as God's own act exceeding human worth — which anchors the gift in God rather than the minister, and which no entry in the live Wright node yet addresses directly.
 
 ## Where this leaves us
 

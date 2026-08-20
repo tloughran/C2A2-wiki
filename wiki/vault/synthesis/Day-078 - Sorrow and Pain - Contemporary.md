@@ -3,23 +3,23 @@ day: 78
 title: Sorrow and Pain (Contemporary)
 pairs_with: "[[Day-078 - Sorrow and Pain]]"
 length_target_words: 1500
-length_actual_words: 1087
-length_ratio_to_target: 0.725
+length_actual_words: 1333
+length_ratio_to_target: 0.889
 length_tier: short
 length_note: "By-design concise (under short-tier target): Q.34-35 are treated compactly across both questions without padding; the commentary is substantive and complete (all sections present, evidence strength named), not truncated."
 mind_first_reframe: "Under hierarchical active inference, bodily pain is exteroceptive prediction error and sorrow is interoceptive/self-model prediction error; Q.35 a.7's priority of inward pain falls out of precision-weighted predictive hierarchy, and Q.34 a.3's 'perfect repose in the perfect good' becomes the alter's substrate-coherence with mind-at-large rather than union with a numerically distinct external God."
 central_theme_thread: "Inward pain exceeds outward because the agent's perspective-limitation is most morally consequential at the apex of its predictive hierarchy; the four species of sorrow (pity, envy, anxiety, torpor) are types of constrained alter-state, and Day 80's remedies are the social and somatic resources by which a narrowed model is re-opened to evidence from outside the present perspective."
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md (active inference; hierarchical generative models; PRS-04, PRS-06)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence; PRS-20 nested timescale hierarchy — fast inference low, slow learning high: the formal home for Q.35 a.7's priority of inward pain)"
   - "traditions/fredrickson/prs_triplets.md (PRS-11 inflammation and resonance selectivity — West et al. 2025, IL-6 gating of close vs non-close resonance)"
   - "traditions/fredrickson/wiki.md (PRS-04 vagal tone as community biomarker — this id is wiki.md-local: the prs_triplets.md PRS-04 is a different triplet, 'Relational coherence of conscious realism', so the two files disagree at this number and the file must be named for the citation to resolve)"
-  - "traditions/mcgilchrist/wiki.md (right-hemisphere receptive attention)"
-  - "traditions/kastrup/wiki.md (dissociation; suffering as constrained alter-state)"
-  - "traditions/rohr/ — Falling Upward; contemplative absorption of suffering"
-  - "traditions/stump/ — Wandering in Darkness on suffering"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; PRS-02 the right hemisphere's integrative attention as prior, the left as parasitic on it)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 dissociated alters; PRS-07 disorders as disturbances in the dissociative boundary — the entry that makes 'constrained alter-state' a statable category)"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual awareness; PRS-14 action grounded in contemplative consciousness). Canonical companion: Falling Upward."
+  - "traditions/stump/prs_triplets.md (PRS-05 union as the final cause of permitted suffering, from Wandering in Darkness; PRS-08 suffering through narrative phenomenology, from Grains of Wheat)"
 evidence_strength_summary: "Q.35 a.7 (inward pain exceeds outward) has strong empirical/mathematical support from hierarchical predictive coding — higher-level errors have larger downstream effects. Q.35 a.8 four species of sorrow maps closely onto modern affective taxonomies (compassion, envy, anxiety, anhedonic withdrawal) — empirically supported. Q.34 a.3 on enjoyment of God is the speculative/theological claim — reframed as substrate-recovery under Kastrup."
 tags: [synthesis, day/078, theme/sorrow, theme/inward-pain]
-last_qc_at: "2026-08-07T20:23:58"
+last_qc_at: "2026-08-15T22:29:51"
 last_qc_outcome: "rewrote"
 ---
 
@@ -61,12 +61,12 @@ Q.35 a.7's "inward pain exceeds outward" is the moment where perspective-limitat
 
 ## Bridges
 
-- **Friston, hierarchical active inference** — bodily pain = exteroceptive PE; sorrow = interoceptive/self-model PE; Q.35 a.7 follows from precision-weighted hierarchical inference; *empirical, mathematically robust*.
+- **PRS-20 + PRS-04 in the Friston-tradition wiki (nested timescale hierarchy; organism as active modeler)** — bodily pain = exteroceptive PE; sorrow = interoceptive/self-model PE; Q.35 a.7 follows from precision-weighted hierarchical inference. PRS-20 is the load-bearing id: the timescale hierarchy — fast inference at the low levels, slow learning and parameter-setting at the high — is what makes "errors at the apex propagate further" a derivation rather than an intuition; *empirical, mathematically robust*.
 - **PRS-04 in the Fredrickson-tradition wiki (`wiki.md`, vagal tone as community biomarker) + PRS-11 in the Fredrickson-tradition `prs_triplets.md` (inflammation and resonance selectivity)** — Q.34 a.4 (pleasure as diagnostic of will) gets vagal-tone substrate; inflammation gates resonance radius; *empirical, high confidence*. The two ids resolve in different files: `wiki.md` and `prs_triplets.md` disagree at PRS-04, and PRS-11 exists only in the latter, so each is named to its own source.
-- **McGilchrist hemispheric framework** — right-hemispheric receptivity vs. left-hemispheric construction; underlies the real-good / apparent-good distinction; *neurologically suggestive, contested*.
-- **Kastrup analytic idealism + dissociative alters** — Q.35 a.8 four species as constrained alter-states (pity, envy, anxiety, torpor); *speculative metaphysical, internally coherent*.
-- **Stump, *Wandering in Darkness*** — suffering as integrable into second-person love; *theological/philosophical, well-developed within Thomism but not yet at mind-monism*.
-- **Rohr, contemplative tradition** — practice by which receptive mode is cultivated; *theological, traditional*.
+- **PRS-01 + PRS-02 in the McGilchrist-tradition wiki (hemispheric asymmetry; the right hemisphere's integrative attention as prior)** — right-hemispheric receptivity vs. left-hemispheric construction; underlies the real-good / apparent-good distinction. PRS-02 is the precise one: the left's operations are *parasitic on* the prior right-hemisphere disclosure, which is why a will resting in constructed goods is a derivative posture rather than an alternative one; *neurologically suggestive, contested*.
+- **PRS-02 + PRS-07 in the Kastrup-tradition wiki (dissociated alters; the dissociative boundary as clinically variable)** — Q.35 a.8 four species as constrained alter-states (pity, envy, anxiety, torpor). PRS-07 does the work here: it is the entry that reframes disorders as *disturbances in the boundary between alter and mind-at-large*, which is what a taxonomy of constrained alter-states needs; *speculative metaphysical, internally coherent*.
+- **PRS-05 + PRS-08 in the Stump-tradition wiki (*Wandering in Darkness*, union as the final cause of permitted suffering; *Grains of Wheat*, suffering through narrative phenomenology)** — suffering as integrable into second-person love. PRS-05 carries the union-as-telos claim the bullet rests on; PRS-08 carries the second-personal cognitive form; *theological/philosophical, well-developed within Thomism but not yet at mind-monism*.
+- **PRS-01 + PRS-14 in the Rohr-tradition wiki (non-dual awareness; action grounded in contemplative consciousness)** — practice by which receptive mode is cultivated and torpor is interrupted; *theological, traditional*.
 
 ## Where this leaves us
 

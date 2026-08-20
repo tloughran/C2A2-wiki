@@ -3,21 +3,22 @@ day: 183
 title: Ambition (Contemporary)
 pairs_with: "[[Day-183 - Ambition]]"
 length_target_words: 1500
-length_actual_words: 1393
-length_ratio_to_target: 0.93
+length_actual_words: 1548
+length_ratio_to_target: 1.03
 length_tier: short
 mind_first_reframe: "Presumption and ambition are the two excesses opposed to magnanimity. Presumption is the self-model set above the truth — precision on one's own capacity over-weighted, so the agent attempts beyond its real resources. Ambition is the reputation signal mis-weighted as a terminal reward — honor, which should be read as a *sign* of worth, treated as the object to be maximized."
 central_theme_thread: "Ambition curves the perspective in on its own standing: the agent optimizes for its image in others' models rather than for the good those others share. A perspective collapsed onto its reputation has mistaken the sign of worth for worth, and so computes toward its own glory instead of toward loving unity."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (active inference: presumption as over-precise self-model selecting policies beyond real capacity; honor as a social-prediction-error signal mis-weighted as terminal value)"
-  - "traditions/fredrickson/prs_triplets.md (status-seeking as a counterfeit of positivity resonance: honor sought for the self vs connection that genuinely builds)"
-  - "traditions/mcgilchrist/prs_triplets.md (left-hemisphere craving for the explicit token — recognition, status — detached from the reality it should signal)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: honor as a sign whose disorder is to treat it as the end; virtue ordered to the real good, not its appearance)"
-  - "Wright canonical: the glory that comes from God vs the glory sought from men, John 5:44 (Jesus and the Victory of God); Rohr canonical: the False Self built on titles and recognition (Immortal Diamond)"
+  - "traditions/friston/prs_triplets.md (PRS-28: precision as the inverse variance of prediction error, so presumption is precision on the self-model set above the truth; PRS-04: the organism as active modeler, within which honor functions as an instrumental rather than terminal term)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-02: love as measurable neurophysiological coupling rather than sentiment — the real thing that status-seeking counterfeits; PRS-01: micro-moments of resonance as what actually builds against isolation)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01: left-hemisphere abstraction and fragmentation — craving for the explicit token, recognition and status, detached from the reality it should signal)"
+  - "traditions/stump/prs_triplets.md (PRS-22: a structured taxonomy of failure modes for the will-intellect system, vice as neither mere trait-deficit nor mere cognitive error — Thomistic interlocutor)"
+  - "traditions/rohr/prs_triplets.md (PRS-05: the false-self-to-true-self mechanism — the False Self built on titles and recognition)"
+  - "Wright canonical: the glory that comes from God vs the glory sought from men, John 5:44 (Jesus and the Victory of God). NOTE: no numbered triplet in traditions/wright/prs_triplets.md covers glory-from-God-versus-glory-from-men; the nearest entries are PRS-20 (call-and-vocation) and PRS-8 (many perspective-limited agents as one body), neither of which is this claim. Cited canonically and the gap stated rather than anchored to an approximate id."
 evidence_strength_summary: "The over-precise self-model and the social-signal accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that honor should be referred to God rather than sought from men is theological (Wright, Rohr)."
 tags: [synthesis, day/183, theme/ambition, theme/reputation-signal, q/130, q/131]
-last_qc_at: "2026-08-07T10:30:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:30"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 183 — Ambition (Contemporary)
@@ -56,11 +57,12 @@ Ambition is, in the project's terms, a perspective curved in on its own standing
 
 ## Bridges
 
-- **Friston (over-precise self-model; signal vs terminal reward)** — presumption as capacity over-estimate; ambition as the honor signal maximized for itself. *Formal.*
-- **Fredrickson (status-seeking as counterfeit resonance)** — honor for the self runs on a brittle, rivalrous circuit that cannot build. *Empirical.*
-- **McGilchrist (the explicit token over the living reality)** — attention captured by one's representation in others' minds. *Empirical / interpretive.*
-- **Stump (honor as sign ordered to the good)** — the disorder as mistaking appearance for substance. *Theological / metaphysical.*
-- **Wright + Rohr (glory from God vs from men; the False Self)** — honor re-sourced to a non-gameable verdict and to received worth. *Theological.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-28 (precision as inverse variance of prediction error) with PRS-04 (the active modeler): presumption as capacity over-estimate; ambition as the honor signal promoted from instrumental to terminal and maximized for itself. *Formal.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-02 (love as measurable coupling, not sentiment) with PRS-01 (micro-moments against isolation): honor sought for the self runs on a brittle, rivalrous circuit that cannot build what real coupling builds. *Empirical.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (left-hemisphere abstraction and manipulation): attention captured by one's own representation in others' minds — the explicit token prized over the living reality. *Empirical / interpretive.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-22 (a taxonomy of failure modes for the will-intellect system): the disorder located precisely, as mistaking appearance for substance rather than as a bare character defect. *Theological / metaphysical.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-05 (false self to true self): worth re-sourced from titles and recognition to what is received. *Theological.*
+- **Wright (canonical; no numbered home)** — the glory from God against the glory sought from men, John 5:44 (*Jesus and the Victory of God*). The Wright node carries no triplet covering this contrast; the citation is canonical and the wiki gap is stated rather than papered over with a near-miss id. *Theological.*
 
 ## Where this leaves us
 

@@ -3,7 +3,7 @@ day: 299
 title: Glorious Subtlety (Contemporary)
 pairs_with: "[[Day-299 - Glorious Subtlety]]"
 length_target_words: 2200
-length_actual_words: 1264
+length_actual_words: 1423
 length_tier: medium
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 the form's command of its matter; PRS-03 morphological attractor; PRS-04 substrate-independent control)"
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/carroll/prs_triplets.md (PRS-13 Wheeler-DeWitt / timeless universe — time not fundamental; PRS-11 emergence classification Type-0/1/2). Emergent *spatial* extension has no Carroll triplet and is carried canonically."
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-11 scalable control)"
 evidence_strength_summary: "'Subtlety/agility = the form's command of its matter taken to a limit' is conceptual, with an empirical figure from substrate-independent morphological control (Levin); the 'spacetime as interface, so location is rendered not fundamental' move is interface-theoretic (Hoffman) and connects to emergent-spacetime physics (Carroll, frontier); the 'two bodies in one place by divine power' cases are explicitly miraculous-theological and NOT endorsed by physics; agility's temporality is consistent with motion being a real process (Carroll/Friston)."
-length_note: "Runs ~43% under the medium tier (1264 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.57
+length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1264 -> 1423, +159 (12.6%), ratio 0.575 -> 0.647. Eighth independent confirmation that the field understates, same direction, and the largest since Day 262. Still ~35% under the medium tier (tier verified correct: transcript word_count 2123, medium): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated."
+length_ratio_to_target: 0.647
 mind_first_reframe: "Subtlety and agility are the body's responsiveness to the soul taken toward its limit — the form's command of its matter so complete that location and motion answer to the will; the 'two bodies in one place' cases are flagged as miraculous, not as physics."
 central_theme_thread: "The glorified body's spatial freedom is the perfected perspective's agency: control overflowing from the higher (soul) to the lower (body), so the embodied viewpoint moves and is placed as love directs — without the resource-scarcity that limits agency now."
 tags: [synthesis, day/299, theme/subtlety-and-agility-as-the-forms-command-of-matter-at-its-limit]
-last_qc_at: "2026-08-07T22:30:52"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-16T00:25:51"
+last_qc_outcome: "pass"
 ---
 
 # Day 299 — Glorious Subtlety (Contemporary Parallel)

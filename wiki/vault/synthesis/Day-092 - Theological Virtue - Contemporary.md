@@ -4,8 +4,9 @@ title: Theological Virtue (Contemporary)
 pairs_with: "[[Day-092 - Theological Virtue]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1191
-length_ratio_to_target: 0.794
+length_actual_words: 1238
+length_ratio_to_target: 0.825
+length_note: "Under the 1500 short-tier target and deliberately so — the constitution prefers short-and-substantive to padded, and 0.825 is well inside plus-or-minus 25 percent, so no escalation is owed. Recounted over the body 2026-08-17 (top-frontmatter layout, Related-records footer dropped); the previously declared 1191 was mildly understated, the same one-directional defect recorded elsewhere in the corpus. Roughly 47 words of the total are this run's Q.62/Q.63 article anchors; no claim was altered."
 karpathy_wiki_sources:
   - "stump/wiki.md, stump/prs_triplets.md — PRS-11 (faith as second-personal knowledge)"
   - "wright (canonical: Surprised by Hope; Paul and the Faithfulness of God; Resurrection of the Son of God) — pistis as covenant-loyalty"
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under conscious-realist monism *infusion* does not require a supernatural-vs-natural ontological dualism: the theological virtues are scaffolded priors — dispositions supplied at the dissociative boundary (Kastrup), at cross-scale morphogenetic interfaces (Levin), or as hyperpriors set by developmental and cultural context (Friston) — that a limited agent cannot derive from inside its own optimization loop. Aquinas's categorical distinction (virtues whose formal object is God) survives intact; the substantialist account of infusion is reframed as boundary- or scale-supplied disposition."
 central_theme_thread: "The perspective-limited agent cannot derive from inside its own evidence stream the priors required to compute toward loving unity; those priors must be scaffolded from beyond it — divine or human, scaled-up or tradition-bound. The theological virtues name that scaffolding; Phil 2:12 (working out salvation in fear and trembling) is the existential shape this takes from the agent's side."
 evidence_strength_summary: "Wright's historical-Jesus and Pauline-corpus claims have strong-but-disputed historiographic standing. Stump on faith-as-second-personal: theological-philosophical, not empirical. Kastrup's analytic idealism: metaphysical argument with no decisive empirical falsifier, but high coherence with hard-problem-of-consciousness literature. Levin's morphogenetic scaffolding: empirically firm. Friston's active inference: empirically robust at the modeling level. The claim that infused virtue maps onto externally-scaffolded computational priors is speculative."
-last_qc_at: "2026-08-09T06:27:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-17T08:24:37"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/092, theme/infused-virtue, theme/grace-and-nature, theme/scaffolding]
 ---
 
@@ -26,7 +27,7 @@ tags: [synthesis, day/092, theme/infused-virtue, theme/grace-and-nature, theme/s
 
 ## Frame
 
-Aquinas asks: *are there virtues whose formal object is God himself, distinct from natural moral and intellectual virtue?* The contemporary version, under mind/conscious-realist monism, asks: **when the agent's perspective-limitation is taken seriously as an ontological condition (not merely an epistemic shortfall), what dispositions are required for the limited agent to compute toward loving unity at all?** Aquinas's answer is the three theological virtues — faith, hope, charity — and their distinguishing mark is **infusion**: they cannot be self-produced. The contemporary reframe asks what we mean by *infused* under a metaphysics in which mind is fundamental.
+Aquinas asks, at I-II Q.62 a.1–2: *are there virtues whose formal object is God himself, distinct from natural moral and intellectual virtue?* The contemporary version, under mind/conscious-realist monism, asks: **when the agent's perspective-limitation is taken seriously as an ontological condition (not merely an epistemic shortfall), what dispositions are required for the limited agent to compute toward loving unity at all?** Aquinas's answer is the three theological virtues — faith, hope, charity (Q.62 a.3) — and their distinguishing mark is **infusion**, which is the burden of the following question, Q.63 a.1–3 (whether virtue is in us by nature, by habituation, or by divine infusion): they cannot be self-produced. The contemporary reframe asks what we mean by *infused* under a metaphysics in which mind is fundamental.
 
 ## Problem
 
@@ -36,7 +37,7 @@ A purely natural-virtue account of the moral agent confronts a hard limit: the a
 
 Wright (canonical works: *Resurrection of the Son of God*, *Paul and the Faithfulness of God*, *Surprised by Hope*) reads what faith, hope, and charity actually *are* in first-century Christian usage. Critically: Wright reads πίστις (*pistis*) not as private-mental-assent but as **covenant-loyalty toward the God of Israel made present in the risen Jesus**, ἐλπίς (*hope*) as confident expectation of **new creation** (resurrection-of-the-body, renewed earth), and ἀγάπη (*charity*) as the cruciform, other-directed love that **embodies** that loyalty and hope in concrete community. This is not the medieval scholastic decomposition; it is the first-century covenant-renewal grammar.
 
-Tom's PRS-form re-description of Stump on faith (PRS-11 in the Stump-tradition wiki) reads faith as **second-personal knowledge of a person** — knowledge-of (Francesca) rather than knowledge-that (a list of propositions about Francesca). This explains why Aquinas can say faith *precedes* love in the order of generation (you cannot love whom you do not know) while also placing charity ahead of faith in the order of perfection (the relationship deepens past mere acquaintance into union). Theological-philosophical, not empirical.
+Tom's PRS-form re-description of Stump on faith (PRS-11 in the Stump-tradition wiki) reads faith as **second-personal knowledge of a person** — knowledge-of (Francesca) rather than knowledge-that (a list of propositions about Francesca). This explains why Aquinas can say, at Q.62 a.4, that faith *precedes* love in the order of generation (you cannot love whom you do not know) while also placing charity ahead of faith in the order of perfection (the relationship deepens past mere acquaintance into union). Theological-philosophical, not empirical.
 
 Kastrup (analytic idealism, e.g., *The Idea of the World*) supplies a metaphysics in which the *infusion* claim is intelligible without supernatural-vs-natural dualism: if mind/consciousness is the ontological primitive and individual conscious agents are dissociated *alters* of Mind-at-Large, then dispositions toward the un-dissociated whole arrive from the **boundary itself**, not from inside the alter's optimization loop. "Infused" then means: not derivable from the alter's evidence stream; supplied at the boundary.
 
@@ -52,9 +53,9 @@ Aquinas's three theological virtues, reframed under conscious-realist monism, ar
 - **Hope** = the agent's stable disposition that loving unity is *achievable* — that the trajectory is real, not arbitrary. Wright's eschatology (new creation, resurrection of the body) provides the scriptural content; Levin's morphogenetic teleology shows that intentional trajectories at scale are empirically intelligible.
 - **Charity** = the agent's stable disposition to *act in concert* with the conscious whole. Wright's cruciform agape and Rohr's *Universal Christ* converge here: charity is not benevolent feeling, it is the lived computation of unity from within limitation.
 
-**What this shares with Aquinas**: the categorical distinction between virtues with God as formal object and virtues with finite objects. The order of generation (faith → hope/charity) and the order of perfection (charity ranks first). The claim that these virtues cannot be self-produced.
+**What this shares with Aquinas**: the categorical distinction between virtues with God as formal object and virtues with finite objects (Q.62 a.1–2). The order of generation (faith → hope/charity) and the order of perfection (charity ranks first), both at Q.62 a.4. The claim that these virtues cannot be self-produced (Q.63 a.3).
 
-**Where this reframes**: the *infused* claim does not require a supernatural-vs-natural ontological dualism. Under analytic idealism (Kastrup) the alter receives dispositions at the dissociative boundary; under Levin's morphogenetic framework, cross-scale scaffolding is the empirical rule, not the exception; under Friston's active inference, hyperpriors are scaffolded by the developmental and cultural context. *Infused* becomes a name for **boundary-supplied or scale-supplied disposition** rather than a supernatural-vs-natural marker.
+**Where this reframes**: the *infused* claim of Q.63 a.3 does not require a supernatural-vs-natural ontological dualism. Under analytic idealism (Kastrup) the alter receives dispositions at the dissociative boundary; under Levin's morphogenetic framework, cross-scale scaffolding is the empirical rule, not the exception; under Friston's active inference, hyperpriors are scaffolded by the developmental and cultural context. *Infused* becomes a name for **boundary-supplied or scale-supplied disposition** rather than a supernatural-vs-natural marker.
 
 **Where evidence is firm vs. speculative**: Levin's cross-scale scaffolding — empirically firm. Friston's hyperprior architecture — formally robust, empirically supported. Kastrup's analytic-idealism reading of "infusion" — coherent metaphysics, not decisively empirically falsifiable. Wright's covenant-loyalty reading of *pistis* — strong-but-disputed historiographic consensus in NT studies. The integration into a single contemporary-parallel account of theological virtue — speculative.
 

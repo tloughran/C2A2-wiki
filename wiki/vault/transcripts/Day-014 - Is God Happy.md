@@ -5,7 +5,7 @@ url: https://www.youtube.com/watch?v=W0GY8IST9bE
 title: Is God Happy?
 summa_ref: Prima Pars, Q.25 + Q.26
 duration_seconds: 1021
-word_count: 2608
+word_count: 2643
 raw_asr_word_count: 2608
 length_tier: medium
 segment_count: 376
@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-014 - Is God Happy - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T12:25:42"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T16:25:45"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-10  # article-block headers and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/014, pars/I, q/25, q/26, theme/power, theme/omnipotence, theme/beatitude, theme/happiness]
 ---

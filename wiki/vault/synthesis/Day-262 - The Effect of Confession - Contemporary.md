@@ -3,10 +3,10 @@ day: 262
 title: The Effect of Confession (Contemporary)
 pairs_with: "[[Day-262 - The Effect of Confession]]"
 length_target_words: 1500
-length_actual_words: 742
+length_actual_words: 942
 length_tier: short
-length_ratio_to_target: 0.49
-length_note: "Compact by design: Suppl. Q.9–10 turns on the single threshold-sufficiency-and-whole-effect motif (attrition suffices; pardon whole, even forgotten sins loosed); the one-to-one parallel is complete without padding. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
+length_ratio_to_target: 0.628
+length_note: "Compact by design: Suppl. Q.9–10 turns on the single threshold-sufficiency-and-whole-effect motif (attrition suffices; pardon whole, even forgotten sins loosed); the one-to-one parallel is complete without padding. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call). RECOUNTED 2026-08-15 with no prose moved: the recorded 742 was understated by 200 words against a body-only count (YAML and the auto-link footer excluded), so the true figure is 942 and the ratio is 0.628, not 0.49. The day is still under the +/-25% line and still inside the standing band, but by materially less than the record said — worth noting because an understated count pushes a file toward an escalation threshold rather than away from it."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 — free-energy minimization as prediction-error representation; the threshold-crossing gloss is left unanchored, see Bridges note)"
   - "traditions/rohr/prs_triplets.md (PRS-03 — the Universal Christ; the divine pattern already present in all creation)"
@@ -15,8 +15,8 @@ evidence_strength_summary: "Attrition-suffices as threshold-crossing is formal (
 mind_first_reframe: "Attrition suffices because a genuine minimal contrition crosses the threshold into the changed state (Friston) and entirety is complete error-representation (Friston), while the pardon is whole because grace meets the entire honest disclosure with more than its measure (Rohr) — even loosing what the penitent could not represent."
 central_theme_thread: "Paired with Day 260: the whole accepts even an imperfect, perspective-limited turn and gives a whole pardon in return, reaching even the agent's blind spots (forgotten sins loosed) — 'salvation as inclusion' gracious both at its lower bound and beyond the agent's self-knowledge."
 tags: [synthesis, day/262, theme/whole-pardon-whole-disclosure]
-last_qc_at: "2026-08-07T18:35:31"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-15T20:25:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 262 — The Effect of Confession (Contemporary Parallel)

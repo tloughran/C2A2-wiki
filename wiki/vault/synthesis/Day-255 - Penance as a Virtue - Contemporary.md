@@ -3,20 +3,20 @@ day: 255
 title: Penance as a Virtue (Contemporary)
 pairs_with: "[[Day-255 - Penance as a Virtue]]"
 length_target_words: 2200
-length_actual_words: 885
+length_actual_words: 975
 length_tier: medium
-length_ratio_to_target: 0.402
-length_note: "Runs ~60% under the medium tier (885 vs 2200): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.443
+length_note: "Runs ~56% under the medium tier (975 vs 2200): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-06 embodied/tacit habituation)"
   - "traditions/levin/prs_triplets.md (PRS-03 stabilized target attractor)"
   - "traditions/friston/prs_triplets.md (PRS-04 deepened prior; habituation as learned model)"
   - "traditions/rohr/prs_triplets.md (PRS-05 sustained contemplative transformation)"
-evidence_strength_summary: "Virtue-as-stable-attractor / deepened-prior is formal-analogical (Friston, Levin); habituation reshaping attention is empirical-with-neuro-grounding (McGilchrist); the virtue's orientation to God is theological."
+evidence_strength_summary: "Virtue-as-stable-attractor / deepened-prior is formal-analogical (Friston, Levin); habituation reshaping attention rests on empirical attentional and hemispheric neuroscience, but the two register entries carrying it (McGilchrist PRS-05, PRS-06) are both (Implicit)/Medium reconstructions, so the day's closest resource is also among its weakest-attested; the virtue's orientation to God is theological."
 mind_first_reframe: "The virtue of penance is a habituated mode of attention (McGilchrist) and a deepened generative prior — a stabilized attractor (Friston, Levin) — that reconfigures the agent's default engagement toward detecting and repairing deviation from the good."
 central_theme_thread: "Through habit a limited perspective becomes the kind of agent for which return to the whole is connatural, widening its attractor toward loving unity so that fewer perturbations dislodge it."
 tags: [synthesis, day/255, theme/habit-as-stabilized-attractor]
-last_qc_at: "2026-08-13T06:32:41"
+last_qc_at: "2026-08-18T22:32:03"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,7 @@ The shared inquiry-problem: **how does a repeated corrective act consolidate int
 
 ## Resource
 
-McGilchrist supplies the resource closest to the phenomenon. In Tom's PRS-form record of McGilchrist's program, PRS-05 (attention is an ontological act — the *mode* of attending constitutes the kind of world that shows up) and PRS-06 (traditions transmit embodied skills and perceptual habits, not just propositions) make a virtue a *habituated mode of attention*: to acquire the virtue of penance is to retrain attention so that one's strayings become salient and one's relation to the good becomes the standing object of regard. This is not a metaphor — McGilchrist's case rests on hemispheric and attentional neuroscience — and it explains why a virtue changes not just what the agent does but *what world the agent inhabits*.
+McGilchrist supplies the resource closest to the phenomenon. In Tom's PRS-form record of McGilchrist's program, PRS-05 (attention is an ontological act — the *mode* of attending constitutes the kind of world that shows up) and PRS-06 (traditions transmit embodied skills and perceptual habits, not just propositions) make a virtue a *habituated mode of attention*: to acquire the virtue of penance is to retrain attention so that one's strayings become salient and one's relation to the good becomes the standing object of regard. The underlying attentional and hemispheric neuroscience McGilchrist draws on is empirical, though the wiki's record of the ontological thesis is a medium-confidence reconstruction rather than a measured result — and on that footing it explains why a virtue changes not just what the agent does but *what world the agent inhabits*.
 
 Friston and Levin give the formal complements. In Tom's PRS-form record of Friston's program, the active-inference picture (PRS-04, goal-directedness) makes a virtue a *deepened prior*: repeated correction is learning that reweights the generative model so that the preferred state is more strongly expected and deviation more quickly registered — the habit is a sculpted prior, the act its sampling. In Tom's PRS-form record of Levin's program, PRS-03 (target morphology) gives the image of a *stabilized attractor*: a basin deepened by repetition so the system returns to its set-point more readily and from farther perturbations. Both are formal analogies, and should be marked as such.
 
@@ -40,7 +40,7 @@ Rohr (PRS-05, sustained contemplative transformation) keeps the depth-reading: t
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **the virtue of penance is a habituated mode of attention and a deepened prior — a stabilized attractor — by which the agent's default engagement is reconfigured toward detecting and repairing deviation from the good.** This *shares* with Aquinas the act/habit distinction and the claim that the habit makes the act connatural. It *reframes* "habit" as retrained attention constituting a world (McGilchrist), as a sculpted generative prior (Friston), and as a deepened attractor basin (Levin). It *firms up* one premise empirically: that habituated attention reshapes the agent's actual mode of world-engagement has neuro-cognitive grounding (McGilchrist), more than a folk claim about practice. It *marks* clearly that the attractor- and prior-readings are *formal analogies*, not measured results in this domain; that infused virtue (grace deepening the disposition beyond the agent's own training) is theological and not captured by a learning account; and that the analogy explains the *stability* of the disposition, not its *sanctity*.
+The contemporary-parallel response: **the virtue of penance is a habituated mode of attention and a deepened prior — a stabilized attractor — by which the agent's default engagement is reconfigured toward detecting and repairing deviation from the good.** This *shares* with Aquinas the act/habit distinction and the claim that the habit makes the act connatural. It *reframes* "habit" as retrained attention constituting a world (McGilchrist), as a sculpted generative prior (Friston), and as a deepened attractor basin (Levin). It *partly firms up* one premise: that habituated attention reshapes the agent's actual mode of world-engagement has neuro-cognitive grounding, more than a folk claim about practice — though the register entries carrying it (McGilchrist PRS-05, PRS-06) are both implicit reconstructions at medium confidence, so the empirical weight sits in the attentional literature McGilchrist interprets rather than in the wiki entries themselves. It *marks* clearly that the attractor- and prior-readings are *formal analogies*, not measured results in this domain; that infused virtue (grace deepening the disposition beyond the agent's own training) is theological and not captured by a learning account; and that the analogy explains the *stability* of the disposition, not its *sanctity*.
 
 ## The central-theme thread
 
@@ -48,7 +48,7 @@ The motif appears as the consolidation of a perspective's orientation. A limited
 
 ## Bridges
 
-- **McGilchrist PRS-05 + PRS-06 (attention as ontological act; embodied habituation)** — *empirical with neuro-grounding.* Virtue as retrained attention constituting a world; closest resource.
+- **McGilchrist PRS-05 + PRS-06 (attention as ontological act; embodied habituation)** — *the closest resource, and therefore the one whose strength most needs stating: both entries are marked (Implicit) at Confidence Medium in the register — the C2A2 network's reconstruction of McGilchrist's position, not a measured result. The underlying attentional and hemispheric neuroscience McGilchrist draws on is empirical; the claim that the mode of attention constitutes a world is his philosophical thesis about that evidence. Virtue as retrained attention constituting a world.*
 - **Friston PRS-04 (deepened prior)** — *formal analogy.* The habit as a sculpted generative model.
 - **Levin PRS-03 (stabilized attractor)** — *formal analogy, biologically motivated.* The basin deepened by repetition.
 - **Rohr PRS-05 (sustained transformation)** — *theological / contemplative.* The settled shape of dying-into-the-true.

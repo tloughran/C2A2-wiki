@@ -33,9 +33,9 @@ The two articles of Day 18 anchor the central-theme claim on the Trinitarian reg
 - **PRS-02 in the Kastrup-tradition wiki — individuation within monism.** Q.33 a.2's *paternity as subsistent relation* requires a metaphysics in which relation is not an accident in the substrate; analytic idealism's mind-at-large gives the conceptual home for relations-internal-to-one-substrate that do not multiply it. *Philosophical-conceptual.*
 - **CROSS-027 in the master wiki — Kastrup × Friston (dissociative boundary as Markov blanket).** The structural shape *real boundary that is constitutive of perspective without being a substance* is recognizable in the Trinitarian-relations doctrine, though the relations are internal-to-substrate rather than alter-individuating. *Structural cousin only.*
 - **PRS-06 in the Wolfram-tradition wiki — ruliad as ontological ground.** Q.34 a.3's *one Word expressive of creatures* maps onto the ruliad's *one act* containing every computational trajectory; the Word's relation to creation is the substrate's self-knowing-act containing the structural priors. *Speculative for the metaphysical identification.*
-- **Hawkins's HTM (PRS-02 in the Hawkins-tradition wiki) and Friston's active inference (PRS-04).** Q.34 a.1's *mental word as likeness of the thing known* is the cognitive form Aquinas analogically extends to God's self-knowing; predictive-coding hierarchies give the alter-scale cognitive cousins. *Empirical at the alter scale; structural-philosophical at the analogical extension.*
-- **Wright on the *abba* of Jesus's prayer and the Pauline doctrine of adoption (canonical: *Paul and the Faithfulness of God*).** Q.33 a.3's *eternal paternity prior to creaturely paternity* is the scriptural shape of Trinitarian-paternity-as-eternal and adoption-as-temporal-extension. *Methodological + scriptural-historical.*
-- **Rohr, *The Universal Christ* (canonical fallback).** Q.34 a.3's *Word expressive of creatures* receives the cosmic-scope reading: the Universal Christ pattern is the substrate's self-knowing-act considered as the form-of-all-conditioned-things. *Contemplative-theological.*
+- **Hawkins's HTM (PRS-01 in the Hawkins-tradition wiki, `traditions/hawkins/prs_triplets.md`) and Friston's active inference (PRS-04).** Q.34 a.1's *mental word as likeness of the thing known* is the cognitive form Aquinas analogically extends to God's self-knowing; predictive-coding hierarchies give the alter-scale cognitive cousins. PRS-01 is the entry whose resource is Hierarchical Temporal Memory and the Thousand Brains architecture — systems that *genuinely model the world, including the self in the world* — which is the world-modelling claim this bullet needs. *Empirical at the alter scale; structural-philosophical at the analogical extension.*
+- **Wright on the *abba* of Jesus's prayer and the Pauline doctrine of adoption (canonical: *Paul and the Faithfulness of God*).** Q.33 a.3's *eternal paternity prior to creaturely paternity* is the scriptural shape of Trinitarian-paternity-as-eternal and adoption-as-temporal-extension. *Cited to the canonical work rather than to a numbered node: `traditions/wright/prs_triplets.md` has no entry on adoption, sonship, or the* abba *address — its nearest neighbours are salvation-as-incorporation (PRS-13) and inaugurated eschatology (PRS-03), neither of which carries the eternal-paternity claim. Methodological + scriptural-historical.*
+- **Rohr, *The Universal Christ* (PRS-03 in the Rohr-tradition wiki, `traditions/rohr/prs_triplets.md`).** Q.34 a.3's *Word expressive of creatures* receives the cosmic-scope reading: the Universal Christ pattern is the substrate's self-knowing-act considered as the form-of-all-conditioned-things. *Contemplative-theological.*
 - **John 1:1–3 — *in the beginning was the Word; all things were made through him*; Hebrews 1:3 — *the brightness of his glory and the figure of his substance*.** The scriptural ground that Q.34 in particular rests on; both Wright's narrative-historical reading and Rohr's cosmic-Christ extension center on John 1 as the doctrinal anchor.
 
 ## Where this leaves us
@@ -49,24 +49,24 @@ title: "Father & Son (Contemporary)"
 pairs_with: "[[Day-018 - Father and Son]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 2118
-length_ratio_to_target: 1.412
+length_actual_words: 2230
+length_ratio_to_target: 1.487
 length_note: "Over short-tier guideline at 1.412 (2118/1500), and over the ±25% bracket. Substantive justification confirmed by reviewer 2026-05-10: Q.33 + Q.34 together opens the Trinity proper (7 articles total), and the principle-vs-cause disambiguation, the relations-as-subsistent-without-substantial-division move, the Word-as-self-knowing translation, and the Q.34 a.3 callback to Q.15 ideas-doctrine are all load-bearing on the Kastrup / Wolfram / Hawkins / Friston / Wright / Rohr linkages. Per the constitution's 'lean hard, run long' policy for substantive Aquinas-to-contemporary bridging, this is correct rather than a defect."
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/wiki.md (analytic idealism — internal-relations-without-substance-division; PRS-02 individuation within monism)"
   - "wiki/traditions/wolfram/wiki.md (PRS-06 ruliad — Word as one-act expressive of all creature-trajectories)"
-  - "wiki/traditions/hawkins/wiki.md (PRS-02 HTM — mental word as likeness of thing known, alter-scale cognitive cousin)"
+  - "wiki/traditions/hawkins/prs_triplets.md (PRS-01 intelligence without true understanding — HTM / Thousand Brains world-modelling; mental word as likeness of thing known, alter-scale cognitive cousin)"
   - "wiki/traditions/friston/wiki.md (PRS-04 active inference — generative model match as alter-scale form of self-knowing)"
-  - "wiki/traditions/wright/wiki.md (abba in Jesus's prayer; Pauline adoption — eternal paternity as scriptural prior to creaturely paternity)"
-  - "wiki/traditions/rohr/wiki.md (Universal Christ — Word as cosmic-scope pattern; Q.34 a.3 expressive-of-creatures)"
+  - "Wright, Paul and the Faithfulness of God (abba in Jesus's prayer; Pauline adoption — eternal paternity as scriptural prior to creaturely paternity). Cited canonically: traditions/wright/prs_triplets.md carries no adoption/sonship/abba entry."
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ — Word as cosmic-scope pattern; Q.34 a.3 expressive-of-creatures)"
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston dissociative boundary; CROSS-014/038 Hoffman × Kastrup consciousness-first convergence)"
   - "Wright, *Paul and the Faithfulness of God* (eternal-paternity / adoption shape)"
   - "Rohr, *The Universal Christ* (cosmic-scope reading of John 1)"
   - "John 1:1-3; Hebrews 1:3; Romans 8; Galatians 4 (Pauline adoption); Psalm 89:26"
 mind_first_reframe: "Q.33's *principle wider than cause* is the disambiguation mind-monism needs: the Father is *whence* the Son proceeds without being the Son's *cause* in the efficient sense, so the procession is internal-to-substrate rather than substrate-creates-creature. Q.34's *Word as personal name* is the substrate's self-knowing-act considered under its terminus-aspect; the Word is *like in species* with the substrate (intellect and object understood are one — Q.14 a.4) and *expressive of creatures* (Q.34 a.3) because the substrate's self-knowing contains the structural priors of all conditioned things — the Q.15 ideas-doctrine reasserted at the personal-names register. Trinitarian relations are real-and-constitutive without being substantial-divisions: the Father-Son relation is the substrate's relation to its own self-knowing, with no perspective-limitation introduced because the relation is internal rather than alter-individuating."
 central_theme_thread: "Conscious agents are individuated by the limitations of their perspective; the substrate, by contrast, has internal-relational-structure without perspective-limitation. Father and Son are not two perspectives within the substrate but two relational aspects of its single self-knowing-act. The asymmetry between substrate-internal-relations (which do not multiply the substrate) and creature-perspectival-relations (which individuate alters) is the structural condition under which the divine and the human can be related without collapse: creatures are *included* in the substrate's life by being drawn into the Word's relation to the Father (Wright's adoption, Rohr's Universal Christ), not by becoming the substrate. Salvation in fear and trembling is the alter's progressive participation in the substrate's intrinsic self-knowing-act."
-last_qc_at: "2026-08-07T12:26:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T16:25:47"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/018, theme/trinity, theme/father, theme/son, theme/word, theme/internal-relations, theme/principle-not-cause]
 
 ---

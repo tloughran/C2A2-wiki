@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-054 - Angelic Instruction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T00:27:43"
+last_qc_at: "2026-08-15T04:25:20"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/054, pars/I]

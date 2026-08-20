@@ -9,15 +9,16 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-08 cells as cognitive agents in morphospace)"
   - "traditions/friston/prs_triplets.md (PRS-07 FEP substrate-independence)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking)"
-  - "traditions/rohr/wiki.md (Universal Christ in matter)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-04 incarnational theology, the spiritual always embodied)"
+  - "traditions/wright/prs_triplets.md (PRS-33 hope warranted by a past event rather than a trend line)"
 evidence_strength_summary: "Instrumental causality from the Passion theological/metaphysical; information-carried-by-form an empirical-analogy (Levin); interface necessity of sensible signs formal (Hoffman); central-theme speculative."
 length_ratio_to_target: 0.43
 length_note: "Concise by design — a single-focus III Q.60-62 (sacramental power from the Passion) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
 tags: [synthesis, day/243, theme/causality-across-time]
-last_qc_at: "2026-08-04T14:30:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-16T14:29:15"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 243 — Passion & Sacrament (Contemporary Parallel)
@@ -51,8 +52,8 @@ Why sensible signs? Because agents are individuated by perspective-limitation an
 - **Levin PRS-01 + PRS-08 (morphogenetic control; agents in morphospace)** — *empirical-in-domain, analogical transfer.* Form as real cause carried across substrate and time.
 - **Friston PRS-07 (FEP substrate-independence)** — *formal.* The operative regularities are substrate-independent, as instrumental causality requires.
 - **Hoffman PRS-03 (perception fitness-tracking)** — *formal-speculative.* Why the channel must be sensible: the interface is the only access limited agents have.
-- **Rohr (Universal Christ in matter)** — *theological / contemplative.* Matter natively able to bear the saving form.
-- **Wright (the Passion as historical, world-changing event)** — *theological, high within method.* Guards the realism of the once-for-all event the signs transmit.
+- **Rohr PRS-03 (the Universal Christ) + PRS-04 (Franciscan incarnational theology), the Rohr-tradition wiki** — *theological / contemplative.* PRS-03 gives the pattern present in all creation; PRS-04 is the sharper one for this locus — the insistence that the spiritual is *always* embodied and never purely abstract, with the body as a site of knowing, which is precisely why matter is natively able to bear the saving form rather than merely signify it.
+- **Wright PRS-33 (kingdom-participation as gift, not extrapolation), the Wright-tradition wiki** — *theological, high within method.* Guards the realism of the once-for-all event the signs transmit: PRS-33's whole distinction turns on warrant — *a past event* versus *a trend line* — so the Passion has to be a real historical happening for the sacramental channel to carry anything at all.
 
 ## Where this leaves us
 

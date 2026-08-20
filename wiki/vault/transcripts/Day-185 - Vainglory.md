@@ -6,7 +6,7 @@ title: Vainglory
 summa_ref: "Secunda Secundae, Q.132-133"
 duration_seconds: 570
 word_count: 1570
-raw_asr_word_count: 1570
+raw_asr_word_count: 1562
 length_tier: short
 segment_count: 235
 caption_kind: asr

@@ -6,7 +6,7 @@ title: Tale-Bearing and Derision
 summa_ref: Secunda Secundae, Q.74-75
 duration_seconds: 310
 word_count: 874
-raw_asr_word_count: 820
+raw_asr_word_count: 813
 segment_count: 125
 caption_kind: asr
 language: en
@@ -16,7 +16,7 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-155 - Tale-Bearing and Derision - Contemporary]]"
 tags: [summa, day/155, pars/2, q/74]
-last_qc_at: "2026-08-07T06:35:41"
+last_qc_at: "2026-08-15T08:23:43"
 last_qc_outcome: "pass"
 ---
 

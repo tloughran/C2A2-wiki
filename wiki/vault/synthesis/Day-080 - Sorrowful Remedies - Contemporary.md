@@ -16,12 +16,12 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; PRS-07 disorder as dissociative-boundary dysregulation)"
   - "traditions/rohr/prs_triplets.md (PRS-02 the disorder necessary for growth — *Falling Upward*; PRS-03 The Universal Christ)"
   - "traditions/wright/prs_triplets.md (PRS-29 cross-shaped vision of purpose — suffering inhabited cruciformly rather than explained)"
-  - "traditions/stump/ — *Wandering in Darkness*; suffering integrated through second-person knowing (carried canonically; no numbered entry states the integrability claim)"
+  - "traditions/stump/prs_triplets.md (PRS-05 union as the final cause of permitted suffering); *Wandering in Darkness*"
   - "master/cross_program_index.md CROSS-005 (love/positivity resonance/union as a fundamental category)"
 length_note: "Covers two full Summa questions — Q.38's five remedies and Q.39's four articles on sorrow's goodness and usefulness — closing the affective tract of the Prima Secundae, with each remedy given a distinct contemporary mechanism rather than a shared gloss. Ratio rose from 1.154 to 1.401 in the 2026-08-08 reviewer pass: roughly 370 of those words are citation apparatus added when nine previously unanchored bridges were resolved to wiki entries, not new argument. Trimmable if the vault later decides anchors belong only in the Bridges section."
 evidence_strength_summary: "Each of Aquinas's remedies (pleasure, tears, friendship, contemplation, sleep/baths) has identifiable contemporary mechanisms — vagal stimulation, emotional disclosure, social co-regulation, default-mode-network modulation, parasympathetic recovery — all empirically robust. Q.39 a.4 (greatest evil = desensitization) is a theological/ethical claim that gains support from the predictive-processing model of model-collapse but is fundamentally a normative judgment supported by the Wright/Rohr/Stump triangulation."
 tags: [synthesis, day/080, theme/remedies, theme/integration, theme/greatest-evil]
-last_qc_at: "2026-08-08T02:33:36"
+last_qc_at: "2026-08-16T10:33:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -83,7 +83,7 @@ Q.39 a.4's "greatest evil is to be too evil to sorrow" is the central theme's ne
 - **`traditions/kastrup/prs_triplets.md` — PRS-02, PRS-07** — Q.39 a.4 as dissociative hardening: the individuation model (02), disorder as boundary *dysregulation* (07). *Speculative metaphysical; 07 is Medium.*
 - **`traditions/wright/prs_triplets.md` — PRS-29** — suffering inhabited cruciformly rather than explained: Q.39's claim in scriptural key. *Theological, well-attested.*
 - **`traditions/rohr/prs_triplets.md` — PRS-02, PRS-03** — order-disorder-reorder as necessary passage; the universal-Christ pattern as the ground of integration. *Theological, well-attested.*
-- **Stump, *Wandering in Darkness*** — suffering integrable through second-person love. **Left unanchored deliberately**: the record's second-person entries (PRS-11, PRS-29) concern knowledge of persons and the will's quiescence before grace, not suffering's integrability into that knowing. *Rigorous within Thomism.*
+- **`traditions/stump/prs_triplets.md` — PRS-05** — union as the final cause of permitted suffering: suffering is instrumentally permitted for the highest intrinsic good, intelligible through its telos rather than despite it. This is the Thomistic form of what Q.39 makes useful, and it is the entry the second-person entries (PRS-11, PRS-29) do not carry — they concern knowledge of persons and the will's quiescence before grace. *Rigorous within Thomism; Medium in the record.*
 - **`master/cross_program_index.md` — CROSS-005** — love/positivity resonance/union as a fundamental category (Fredrickson, Stump, Kastrup).
 
 ## Where this leaves us

@@ -6,7 +6,7 @@ title: Buying and Selling
 summa_ref: Secunda Secundae, Q.76-77
 duration_seconds: 525
 word_count: 1502
-raw_asr_word_count: 1502
+raw_asr_word_count: 1492
 segment_count: 216
 caption_kind: asr
 language: en
@@ -16,17 +16,19 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-156 - Buying and Selling - Contemporary]]"
 tags: [summa, day/156, pars/2, q/76]
-last_qc_at: "2026-08-07T06:35:56"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T08:23:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 156 — Buying and Selling
 
 > Context: Q.76 cursing (maledictio); Q.77 cheating in buying and selling (the just price).
 
-[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful
+> Typo cleanup (QC 2026-08-15, restored against a fresh ASR fetch): Habish → Habash; Sumanir → Summa in a Year (podcast name, both intro occurrences); Suma → Summa (throughout, incl. "code suma 10" → "code Summa 10"); Aquinus / Aquinus's → Aquinas / Aquinas's; suma theologia → Summa Theologiae; sakunda secund → Secunda Secundae; "a Maria Press" / "a Maria Press's" → Ave Maria Press / Ave Maria Press's (both occurrences). Retained as spoken: the stray "day" after "Secunda Secundae" in the opening announcement is an ASR artifact of the "-dae" ending and is left in place; it is marked here rather than silently deleted. No content was added or removed.
 
-for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses, discovering the
+[00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful
+
+for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses, discovering the
 
 brilliance of Aquinas and his Catholic faith. This is day 156. So let's get started. We're covering today questions 76 and 77 of the Secunda Secundae day.
 

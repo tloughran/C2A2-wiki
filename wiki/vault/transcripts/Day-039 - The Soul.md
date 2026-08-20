@@ -6,7 +6,7 @@ title: The Soul
 summa_ref: Prima Pars, Q.75 + Q.76
 duration_seconds: 1618
 word_count: 4094
-raw_asr_word_count: 4094
+raw_asr_word_count: 4077
 length_tier: long
 segment_count: 585
 caption_kind: asr
@@ -15,7 +15,7 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-039 - The Soul - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T00:26:51"
+last_qc_at: "2026-08-15T04:24:58"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/039, pars/I, q/75, q/76, theme/soul, theme/hylomorphism, theme/subsistence, theme/incorruptibility, theme/embodiment]

@@ -11,13 +11,14 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation; PRS-08 the Daimon as principle of individuation; PRS-14 dissociative-boundary granularity)"
   - "traditions/wright/prs_triplets.md (God's-homecoming salvation frame, PROP-2026-05-31-002; new-creation reframe of a closed cosmos, PROP-2026-05-31-001)"
   - "traditions/rohr/prs_triplets.md (PRS-03 Universal Christ; relation-is-basal — 'how do I get to heaven is a question of the ego, not of the Trinity'; non-dual awareness, Everything Belongs)"
+  - "traditions/friston/prs_triplets.md (PRS-13 trauma as degradation of metastability — rigid-attractor collapse, and recovery as restored state-switching)"
   - "traditions/carroll/prs_triplets.md (PRS-11 emergence taxonomy Type-1/Type-2; poetic naturalism core-ontology vs useful-stories)"
   - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category)"
 evidence_strength_summary: "The fixity-of-the-damned-will is theological/speculative (Aquinas's claim, and Rohr's universalist counter-reading equally theological); the reading of a sealed will as a self-maintained dissociative boundary / non-updating Markov blanket is philosophical (Kastrup) plus formal-analogical (active inference); privation-as-suffering is phenomenologically plausible but not empirical; Carroll's emergence taxonomy is a formal tool, not a verdict on the afterlife."
 mind_first_reframe: "Hell, read through mind-first monism, is not a place but a terminal perspective — a dissociative boundary that has stopped updating — so that the 'punishment' is identical with the self-maintained refusal to widen toward the whole; whether such closure can be final is precisely where the theological evidence is weakest and most contested."
 central_theme_thread: "If agents are individuated by the limits of their perspective, hell is the limit-case: a perspective that has made its own limitation permanent. The damnation question is whether the computation toward loving unity can ever be irreversibly abandoned from the inside."
 tags: [synthesis, day/306, theme/terminal-perspective]
-last_qc_at: "2026-08-09T22:32:42"
+last_qc_at: "2026-08-18T14:27:34"
 last_qc_outcome: "rewrote"
 ---
 
@@ -60,7 +61,7 @@ The project's claim is that conscious agents are individuated by the limitations
 ## Bridges
 
 - **Kastrup, PRS-02 + PRS-08 (Kastrup-tradition wiki)** — dissociative individuation gives "fixed will" a mechanism: a boundary that has ceased to be porous. *Evidence: philosophical, with clinical analogy; not a claim about the afterlife.*
-- **Active inference (Friston program, applied)** — the sealed will as a Markov blanket that refuses prediction-error from the whole; obstinacy as a precision-weighting pathology. *Evidence: formal-analogical.*
+- **Friston, PRS-13 (Friston-tradition wiki)** — trauma reframed as a degradation of *metastability*: collapse into rigid attractor states, with recovery as the restoration of flexible state-switching under the free-energy principle. Applied here, the sealed will is a self-model that has lost the capacity to transition between states — obstinacy as rigid-attractor collapse rather than a precision-weighting merely turned up. *Evidence: formal-analogical (the source claim is empirical and High-confidence, but its extension past death is not).* Note the direction it cuts: in the clinical case the collapse is described as **recoverable**, which tells against reading the fixity as intrinsic to the dynamics rather than stipulated theologically.
 - **Rohr, PRS-03 + relation-is-basal (Rohr-tradition wiki)** — the counter-reading: no boundary is ultimate, so closure cannot be final; universal restoration as terminus. *Evidence: theological.*
 - **Wright, God's-homecoming salvation frame (Wright-tradition wiki, PROP-2026-05-31-002)** — relocates the stakes from torture-geography to inclusion/exclusion in the renewed community; reticent on universalism. *Evidence: theological / scriptural-historical.*
 - **Carroll, PRS-11 emergence taxonomy (Carroll-tradition wiki)** — disciplines the confidence: "the will is permanently fixed" is a meaning-register story, not core ontology. *Evidence: formal (methodological).*

@@ -3,21 +3,22 @@ day: 184
 title: Magnificence (Contemporary)
 pairs_with: "[[Day-184 - Magnificence]]"
 length_target_words: 1500
-length_actual_words: 1396
-length_ratio_to_target: 0.93
+length_actual_words: 1550
+length_ratio_to_target: 1.03
 length_tier: short
 mind_first_reframe: "Magnificence is broaden-and-build externalized: a resourced agent letting its surplus flow outward into great, generative works for the shared world. Meanness is the inverse contraction — an over-applied scarcity model that hoards against a danger no longer real, so the agent stints on great works it has the means and occasion to do."
 central_theme_thread: "A perspective rich in resources flows outward into the building of the shared whole; that overflow is itself a movement toward loving unity. Meanness is the perspective curved protectively around its own holdings — the surplus dammed by a scarcity signal that has outlived its truth."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/prs_triplets.md (broaden-and-build externalized: durable resources, once built, are spent on large generative works; upward spirals expressed as great common goods)"
-  - "traditions/friston/prs_triplets.md (active inference: an agent expending resources on long-horizon, collective-scale projects; meanness as an over-weighted scarcity/threat prior dammed against outflow)"
-  - "traditions/mcgilchrist/prs_triplets.md (right-hemisphere creation of the great and beautiful work vs left-hemisphere penny-counting and the grasp that cannot let resource flow)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: magnificence as distinct from liberality — the great *work*, not merely the right use of money)"
-  - "Rohr canonical: the Universal Christ's abundance, grace overflowing; creation as God's magnificent work (The Universal Christ); Wright canonical: building for the kingdom, works that last into new creation (Surprised by Hope)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03: positivity resonance as a coupling event that scales from dyad to group — communal presence and shared work; PRS-28: positivity resonance's emergence from the broaden-and-build research)"
+  - "traditions/friston/prs_triplets.md (PRS-22: the group-level Markov blanket, the condition under which a collective is itself an agent with its own horizons; PRS-16: expected free energy as the unified mathematics of risk and ambiguity, within which a scarcity prior is an over-weighted risk term)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01: right-hemisphere holistic engagement against left-hemisphere abstraction and fragmentation — the great made thing versus the retaining ledger)"
+  - "traditions/stump/prs_triplets.md (PRS-09: virtue as cooperative causality — magnificence as a soul-power ordered to the great work. NOTE: the magnificence/liberality distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored)"
+  - "traditions/rohr/prs_triplets.md (PRS-03: the Universal Christ — the divine pattern present in all of creation, grace as overflow rather than scarcity)"
+  - "traditions/wright/prs_triplets.md (PRS-35: building *the* kingdom, which is God's act, distinguished from building *for* the kingdom — present faithful work taken up into new creation)"
 evidence_strength_summary: "Broaden-and-build and the scarcity-prior account are empirical/formal (Fredrickson, Friston); the claim that great works participate in a divine abundance and last into new creation is theological (Rohr, Wright)."
 tags: [synthesis, day/184, theme/magnificence, theme/generative-overflow, q/134, q/135]
-last_qc_at: "2026-08-07T10:30:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:30"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 184 — Magnificence (Contemporary)
@@ -58,11 +59,12 @@ A perspective rich in resources, on the project's central claim, is most itself 
 
 ## Bridges
 
-- **Fredrickson (broaden-and-build externalized)** — surplus committed to great works; meanness as the spiral stalled at outflow. *Empirical.*
-- **Friston (resource on collective-scale horizons; scarcity prior)** — meanness as an over-weighted scarcity prior damming release. *Formal.*
-- **McGilchrist (great work vs penny-counting)** — the made thing of scale answered to the whole vs the retaining ledger. *Empirical / interpretive.*
-- **Stump (magnificence ≠ liberality)** — the virtue located in the great *work*, not money-management. *Theological / metaphysical.*
-- **Rohr + Wright (divine abundance; works that last)** — human magnificence as participation in overflow; the great work built into new creation. *Theological.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-03 (resonance scaling from dyad to group) with PRS-28 (the broaden-and-build lineage): surplus committed to works whose scale serves a community; meanness as the spiral stalled at outflow. *Empirical.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-22 (the group-level Markov blanket, a collective sustaining its own agency) with PRS-16 (expected free energy over risk and ambiguity): resource committed on collective-scale horizons, and meanness as an over-weighted scarcity prior damming release. *Formal.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (holistic relational engagement vs abstraction and fragmentation): the made thing of scale answered to the whole, against the retaining ledger. *Empirical / interpretive.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnificence as a soul-power ordered to the great work. The *magnificence-is-not-liberality* distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored here. *Theological / metaphysical.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-03 (the Universal Christ; the divine pattern present in all creation): human magnificence as participation in an overflow that is not scarce. *Theological.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-35 (building *for* the kingdom as distinct from building *the* kingdom): the great work taken up into new creation rather than discarded with the old. *Theological.*
 
 ## Where this leaves us
 

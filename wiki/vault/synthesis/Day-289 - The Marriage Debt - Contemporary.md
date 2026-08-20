@@ -3,7 +3,7 @@ day: 289
 title: The Marriage Debt (Contemporary)
 pairs_with: "[[Day-289 - The Marriage Debt]]"
 length_target_words: 1500
-length_actual_words: 1018
+length_actual_words: 1055
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.68
 mind_first_reframe: "The marriage debt is the formalization of symmetric mutual self-gift — each agent ceding sole self-authority to the other equally — and this symmetry is what makes the union a real 'we' rather than a possession of one by the other."
 central_theme_thread: "Loving unity is achieved when each limited perspective gives itself wholly to the other without being erased; the symmetric mutual self-gift of the marriage debt is that claim in its most concrete human form."
 tags: [synthesis, day/289, theme/symmetric-self-giving-as-paradigm-of-unity]
-last_qc_at: "2026-08-10T14:28:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T20:22:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 289 — The Marriage Debt (Contemporary Parallel)
@@ -36,7 +36,7 @@ Since the locus is a Pauline text, the Wright-tradition program supplies the lea
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **the marriage debt is the formalization of symmetric mutual self-gift — the state in which each agent has ceded sole self-authority to the other equally — and this symmetry is exactly what makes the union a real *we* rather than a possession of one by the other.** What it *shares* with Aquinas and Paul: the mutuality and equality of the obligation, and its grounding in the one-flesh reality. Where it *reframes*: Aquinas treats the debt within a juridical language of obligation and the marriage goods; the monist/contemplative reframe reads it as the structural signature of the deepest coupling — symmetric cession of control as the form of genuine union — and recovers the Pauline equality (1 Cor 7:4) as the heart of the matter rather than an aside. Where evidence is *firm*: that symmetric coupling, not asymmetric, produces a shared-authority *we*, is well-defined formally; and the Pauline mutuality is textually plain. Where *speculative*: reading the debt as the paradigm of the project's loving unity is a theological-conceptual claim, offered as such; and the formal coupling models illuminate the *shape* of mutual self-gift without capturing its moral and personal depth.
+The contemporary-parallel response: **the marriage debt is the formalization of symmetric mutual self-gift — the state in which each agent has ceded sole self-authority to the other equally — and this symmetry is exactly what makes the union a real *we* rather than a possession of one by the other.** What it *shares* with Aquinas and Paul: the mutuality and equality of the obligation, and its grounding in the one-flesh reality. Where it *reframes*: Aquinas treats the debt within a juridical language of obligation and the marriage goods; the monist/contemplative reframe reads it as the structural signature of the deepest coupling — symmetric cession of control as the form of genuine union — and recovers the Pauline equality (1 Cor 7:4) as the heart of the matter rather than an aside. Where evidence is *firm*: the Pauline mutuality is textually plain, and the Wright-tradition covenant reading that carries it is the strongest-attested bridge in this commentary. The formal half is weaker than it may read: that symmetric coupling produces a shared-authority *we* is well-defined **as a model**, but the entry it rests on is an implicit reconstruction at Medium confidence, not a demonstrated multi-agent result — so it should be taken as a well-posed formal analogy rather than an established finding. Where *speculative*: reading the debt as the paradigm of the project's loving unity is a theological-conceptual claim, offered as such; and the formal coupling models illuminate the *shape* of mutual self-gift without capturing its moral and personal depth.
 
 ## The central-theme thread
 
@@ -46,7 +46,7 @@ This is the article in which the central theme is least forced and most fully pr
 
 - **Wright PRS-05 (scriptural/theological; the load-bearing bridge):** 1 Cor 7 within covenant theology — members *of one another*; the debt as new-creation mutuality.
 - **Rohr PRS-04 / PRS-7 (theological):** love enacted bodily; the spouses constituted by the relation, so self-gift is the form of their being, not loss.
-- **Friston PRS-06 (formal):** symmetric coupling produces a shared-authority *we*; the operational shape of mutual self-gift.
+- **Friston PRS-06 (formal; `traditions/friston/prs_triplets.md`):** symmetric coupling produces a shared-authority *we*; the operational shape of mutual self-gift. *Marked (Implicit), Confidence Medium — an implicit extension of free-energy minimization to multi-agent systems, so the formalism is well-posed but the multi-agent application is reconstructed rather than demonstrated.*
 - **Levin PRS-32 (empirical at biological scale):** in a true higher individual no part retains sole self-authority — the precedent for ceded self-possession.
 
 ## Where this leaves us

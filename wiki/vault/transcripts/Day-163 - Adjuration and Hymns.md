@@ -6,7 +6,7 @@ title: Adjuration and Hymns
 summa_ref: "Secunda Secundae, Q.90–91"
 duration_seconds: 360
 word_count: 1072
-raw_asr_word_count: 1030
+raw_asr_word_count: 1024
 length_tier: short
 segment_count: 148
 caption_kind: asr
@@ -15,7 +15,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-163 - Adjuration and Hymns - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T04:26:04"
+last_qc_at: "2026-08-15T08:24:20"
 last_qc_outcome: "pass"
 tags: [summa, day/163, pars/II-II, q/90–91]
 ---

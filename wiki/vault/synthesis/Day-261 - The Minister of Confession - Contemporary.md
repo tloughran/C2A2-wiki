@@ -8,15 +8,15 @@ length_tier: short
 length_ratio_to_target: 0.554
 length_note: "Compact by design: Suppl. Q.7–8 (nature of confession + its minister) develops the single disclosure-into-a-shared-field-and-delegated-authority motif rather than mirroring articles; substance complete per the five-question review. Part of the 247–265 Supplement under-length band (standing escalation, Tom's expand-vs-accept call)."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (confession as making prediction-error model-available; PRS-06 nested agency / power of the keys)"
+  - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — carries both halves: the confessional dyad as a coupled pair whose shared model makes the error jointly correctable, and the minister as nested agent. Confidence: Medium, Label 'Implicit'. No Friston entry is written on disclosure-as-externalization; the two-agent reading is this synthesis's extension)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 disclosure within a relational/embodied context)"
   - "traditions/rohr/prs_triplets.md (PRS-05 the false self surfaced to be transformed)"
   - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people united with God — the covenant-inclusion half of absolution; the delegated-keys half is theological and carries no wiki id)"
-evidence_strength_summary: "Confession-as-externalized-error-representation is formal (Friston); minister-by-power-of-keys as nested agency is formal (Friston PRS-06); the absolving authority and its content are theological (Wright/Rohr)."
+evidence_strength_summary: "Both the disclosure half and the minister half rest on Friston PRS-06, which is formal in form but Confidence: Medium and labelled implicit — well-motivated within active inference, not a measured result; the penitent-minister dyad is this synthesis's extension of it. The relational condition (McGilchrist PRS-06) is humanistic and well-evidenced. The absolving authority and what absolution effects are theological (Wright PRS-13, Rohr PRS-05)."
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-08-08T22:28:09"
+last_qc_at: "2026-08-17T00:19:24"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,9 @@ The shared inquiry-problem: **why must the deviation be made explicit and extern
 
 ## Resource
 
-Friston's program is the leading resource for the disclosure half. In Tom's PRS-form record of Friston's program, confession reads as the *explicit representation and externalization* of prediction-error: the hidden deviation, kept private, is harder to model and correct; voiced into a shared field, it becomes model-available, jointly represented, and therefore correctable. "Laying bare the hidden disease" is exactly the move from a latent, unarticulated error to an explicit one that the larger system (penitent-plus-minister) can act on. For the minister half, PRS-06 (how individual agents form coherent higher-order wholes without losing autonomy) gives the power-of-the-keys its structure: the priest is a nested agent through whom a larger agency acts — the same multi-scale composition developed on Day 253.
+Friston's program is the leading resource, and one record carries both halves. PRS-06 in the Friston-tradition wiki asks how individual agents form coherent higher-order wholes without losing autonomy, and answers that agents couple through *mutual model-building* — shared attractor basins, mutual informational alignment that reduces prediction error in each other's behavior. Read on the disclosure half, that is the confessional dyad exactly: the hidden deviation, kept private, sits inside one agent's model and cannot be jointly represented; voiced, it enters a shared generative model and becomes model-available to the pair, which is the condition under which the coupling can reduce it. "Laying bare the hidden disease" is the move from a latent, unarticulated error to an explicit one that the larger system — penitent-plus-minister — can act on. Read on the minister half, the same record gives the power of the keys its structure: the priest is a nested agent through whom a larger agency acts, the multi-scale composition developed on Day 253.
+
+Two honest limits on that anchor. The Friston register carries no entry written on *disclosure as externalization* specifically — grepped at the body for externalization, explicit representation, and disclosure, PRS-06 is the nearest target and the only one that fits — so treating the penitent-minister pair as a coupled two-agent system is this synthesis's extension of PRS-06 rather than something the record states. And PRS-06 itself stands at Confidence: Medium and is labelled implicit rather than drawn from a named text; the structural claim is well-motivated within active inference, but it is not a measured result.
 
 McGilchrist supplies the relational condition. In Tom's PRS-form record of McGilchrist's program, PRS-06 (traditions transmit through embodied, relational practice, not bare propositions) frames confession as disclosure *to a person* within a held relationship, not a data-dump — the embodied, attentive presence of the minister is part of what makes truthful self-disclosure possible.
 
@@ -48,7 +50,7 @@ The motif appears as the move from private limitation to shared correction. A pe
 
 ## Bridges
 
-- **Friston (confession as externalized error-representation; PRS-06 nested agency)** — *formal, well-developed.* Disclosure makes the deviation jointly correctable; minister as multi-scale agent.
+- **Friston PRS-06 (`traditions/friston/prs_triplets.md`) — multi-agent coherence via mutual modeling** — *formal, but Confidence: Medium and labelled implicit.* One record carries both halves: penitent and minister as a coupled pair whose mutual model-building makes the hidden deviation jointly representable and so correctable, and the minister as the nested agent through whom a larger agency acts. The disclosure reading is this synthesis's extension of PRS-06 — the register holds no entry on externalization as such.
 - **McGilchrist PRS-06 (relational/embodied disclosure)** — *humanistic, well-evidenced.* Truthful confession depends on a held relationship.
 - **Rohr PRS-05 (surfacing the false self)** — *theological / contemplative.* Disclosure as condition of transformation.
 - **Wright PRS-13 (`traditions/wright/prs_triplets.md`) — salvation as inclusion in the covenanted people united with God** — *scriptural, high within method.* Absolution as real re-inclusion, not a private therapeutic act; this is the content of the loosing. The delegated-keys structure itself is theological and has no corresponding wiki node — cited here as canonical-work ground truth, not as an id.

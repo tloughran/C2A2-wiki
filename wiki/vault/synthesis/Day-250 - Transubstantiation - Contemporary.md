@@ -17,7 +17,7 @@ length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-08-08T14:30:47"
+last_qc_at: "2026-08-16T20:20:35"
 last_qc_outcome: "rewrote"
 ---
 
@@ -35,7 +35,7 @@ The shared inquiry-problem: **can the deep reality of a thing change totally whi
 
 Hoffman's interface theory is the single sharpest resource here. In Tom's PRS-form record of Hoffman's program, PRS-03 (perception is fitness-tracking, not truth-tracking) is backed by his evolutionary-game and FBT ("Fitness-Beats-Truth") results — a substantive (not merely speculative) argument that veridical perception is selected *against*, so sensible appearances systematically fail to resemble the underlying reality. PRS-01 (hard-problem transformation) and PRS-04 (observer-dependent spacetime) complete the picture: the "object" of perception (the bread-icon) is decoupled from whatever reality it tracks. On this resource, "the accidents remain while the substance is converted" is not a special miracle-clause bolted onto physics; it is the *general* interface situation — appearance decoupled from reality — applied to one event in which the reality is changed and the icon is held fixed.
 
-Kastrup supplies the ontology of *what* the reality is. In Tom's PRS-form record of Kastrup's program, PRS-02 (identity within monism) makes "substance" a thing's reality in mind, and PRS-09 (participatory encounter) makes reception a participation in that reality rather than a reading of the icon — so a conversion of substance is a conversion at the level of mental reality, invisible by construction at the level of the icon.
+Kastrup supplies the ontology of *what* the reality is. In Tom's PRS-form record of Kastrup's program, PRS-02 (identity within monism) makes "substance" a thing's reality in mind, and PRS-09 (participatory encounter) makes reception a participation in that reality rather than a reading of the icon — so a conversion of substance is a conversion at the level of mental reality, invisible by construction at the level of the icon. PRS-09 should be read for what it is: the record of McGilchrist's April-2026 counter-proposal that perception is participatory rather than representational, entered as a *refinement* of the dashboard metaphor at Confidence: Medium. The participatory reading is the one this synthesis needs, and it is not yet settled within the program it refines.
 
 Levin gives the empirical hinge. In Tom's PRS-form record of Levin's program, PRS-01 (morphogenetic control — bioelectric circuits encoding anatomical target states) establishes that the target pattern, not the current matter, is what the system is working toward; PRS-52 carries the turnover claim proper, reframing longevity as *pattern-persistence rather than substrate-preservation* — the informational structure holding across substrate turnover. Together they show, in biology, a thing remaining itself (or being re-specified) while its matter is wholly exchanged — a this-worldly demonstration that "what a thing is" floats free of "what stuff currently composes it." (PRS-52 is recorded at Confidence: Medium; the claim is in-domain and evidenced, not settled.)
 
@@ -52,7 +52,7 @@ This is the project's central motif at maximum intensity: the whole made present
 ## Bridges
 
 - **Hoffman PRS-01 + PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* Appearance systematically decoupled from reality — the sharpest resource for conserved-accidents.
-- **Kastrup PRS-02 + PRS-09 (substance-as-mental-reality; participatory encounter)** — *metaphysical, contested.* Conversion at the level of reality-in-mind; reception as participation.
+- **Kastrup PRS-02 + PRS-09 (substance-as-mental-reality; participatory encounter)** — `wiki/traditions/kastrup/prs_triplets.md` — *metaphysical, contested.* Conversion at the level of reality-in-mind; reception as participation. PRS-09 records a proposed refinement of the dashboard metaphor arising from McGilchrist rather than a settled claim of the program (Confidence: Medium).
 - **Levin PRS-01 + PRS-52 (morphogenetic control; longevity as pattern-persistence across substrate turnover)** — *empirical-in-domain.* "What a thing is" floats free of its current matter.
 - **Rohr PRS-03 (the Universal Christ)** — *theological / contemplative.* The latent universal presence focally realized.
 - **Wright PRS-06 (resurrection as new creation, not law-violation)** — *theological, high within method.* The content of the converted reality; PRS-05 (salvation as incorporation) carries the reception half in the central-theme thread above.

@@ -3,8 +3,9 @@ day: 201
 title: The Vice of Curiosity (Contemporary)
 pairs_with: "[[Day-201 - The Vice of Curiosity]]"
 length_target_words: 1500
-length_actual_words: 1538
-length_ratio_to_target: 1.03
+length_actual_words: 1594
+length_ratio_to_target: 1.063
+length_recount_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1538 -> 1594, +56 (3.6%), ratio 1.025 -> 1.063. Still inside +/-10%. Sixth independent confirmation that the field understates, and still one direction every time."
 length_tier: short
 length_note: "Single-day target; the episode covers two short questions (Q.166 studiousness, Q.167 curiosity) that share one structure — the ordering of knowing toward its end — so the synthesis treats them as one move."
 karpathy_wiki_sources:
@@ -16,7 +17,7 @@ evidence_strength_summary: "Precision-weighting / epistemic foraging as the mech
 mind_first_reframe: "Knowledge is never neutral intake; it is precision allocated across a bounded inference system whose every query spends a finite resource. Studiousness is well-calibrated precision-control — pursuing the truth that matters, at the right intensity, in the right direction; curiosity is misallocated precision — attention spent for fitness-payoff, vanity, or salience rather than toward the truth that orders the whole. The 'sovereign truth' is the limit where all perspective-limitation is removed and the simple whole is seen."
 central_theme_thread: "If each agent is individuated by the limits of its perspective and the goal is loving union with the whole, then how an agent spends its scarce attention is already a moral act: curiosity is the perspective curving its knowing back on itself or on the merely salient, studiousness is the perspective directing its knowing toward the truth that contains all the others. Knowing rightly is a step in the computation toward unity."
 tags: [synthesis, day/201, theme/ordered-attention]
-last_qc_at: "2026-08-07T22:30:12"
+last_qc_at: "2026-08-16T00:25:50"
 last_qc_outcome: "pass"
 ---
 

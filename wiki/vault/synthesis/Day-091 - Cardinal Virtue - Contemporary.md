@@ -4,20 +4,20 @@ title: Cardinal Virtue (Contemporary)
 pairs_with: "[[Day-091 - Cardinal Virtue]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1234
-length_ratio_to_target: 0.823
-length_note: "Runs short of the 1500 short-tier target by design: the day's argument is a single structural claim (the cardinal virtues as the minimum coupled dispositions a perspective-limited agent needs), and the constitution prefers short-and-substantive to padded. The previously declared 1490 was self-reported and wrong — the body measured 1118 before this run's citation repairs and 1234 after; both recounted 2026-08-09 with the constitution's regex over the body as parsed by qc_sweep.split_frontmatter."
+length_actual_words: 1368
+length_ratio_to_target: 0.912
+length_note: "Runs short of the 1500 short-tier target by design: the day's argument is a single structural claim (the cardinal virtues as the minimum coupled dispositions a perspective-limited agent needs), and the constitution prefers short-and-substantive to padded. The previously declared 1490 was self-reported and wrong — the body measured 1118 before the 2026-08-09 citation repairs and 1234 after; the 2026-08-18 CROSS-007 / FLAG-012 repair brought it to 1368 (ratio 0.912, now inside the ±10% band). All three counts taken with the constitution's regex over the body as parsed by qc_sweep.split_frontmatter."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-09 gloss — virtue as cooperative causality; Stump on the seven cardinal virtues)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 gloss — positivity resonance; PRS-06 gloss — capacity for love as learnable and scaling)"
   - "traditions/fredrickson/wiki.md (PRS-05 row — broadened attention; broaden-and-build lives in wiki.md, not in prs_triplets.md)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 gloss — hemispheric asymmetry, The Master and His Emissary)"
-  - "friston/wiki.md (active inference, hierarchical generative model)"
-  - "master/cross_program_index.md (CROSS-07 virtue-as-coupled-network); master/paradigm_flags.md (FLAG-12)"
+  - "traditions/friston/prs_triplets.md (PRS-04 gloss — organism as active modeler; predictive coding and continuous hypothesis-testing)"
+  - "master/cross_program_index.md (CROSS-007 — basal cognition as a concrete instantiation of active inference, Levin x Friston)"
 mind_first_reframe: "Under mind/conscious-realist monism virtue is a stable computational invariant in a perspective-limited agent's generative model — a recurring pattern by which limited consciousness organizes its inference and action; Aquinas's formal-object individuation survives intact, but the substantialist ontology of qualities-of-the-soul is reframed as scale-of-coupling within the agent's own optimization loop."
 central_theme_thread: "The cardinal virtues are exactly the minimum stable dispositions a perspective-limited agent needs so its computations toward loving unity remain coherent under finite affective and cognitive resources — cut any one and the others degrade (Gregory the Great's chiasmus reread as an active-inference network prediction)."
 evidence_strength_summary: "Theological claims at full traditional strength; psychological mechanism claims (Fredrickson broaden-and-build, McGilchrist hemispheric character) hold mixed empirical support — replicated for broaden-and-build, contested for some McGilchrist generalizations. Network-of-virtues claim formally analogous to coupled-trait psychometric models with moderate support. PRS/Synergistic-Coil framing is Tom Loughran's, not derived from the traditions."
-last_qc_at: "2026-08-09T22:28:46"
+last_qc_at: "2026-08-18T02:27:30"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/091, theme/virtue-as-network, theme/cardinal-virtues]
 ---
@@ -40,7 +40,7 @@ PRS-02 and PRS-06 in the Fredrickson-tradition `prs_triplets.md` (positivity res
 
 PRS-01 in the McGilchrist-tradition wiki (*hemispheric asymmetry*, from *The Master and His Emissary*): hemispheric balance as the substrate of attentional character. McGilchrist's claim that the two attentional modes (left-hemisphere narrow/manipulative, right-hemisphere broad/integrative) generate complementary cognitive styles bridges Aquinas's faculties-of-the-soul carving to a neuroscientifically grounded one. McGilchrist is contested in detail but his core attentional-asymmetry claim is well-supported.
 
-FLAG-12 (cross-program index): the **virtue-as-coupled-network** claim shows up across traditions — Friston's hierarchical active inference predicts that high-level traits emerge from coupling across lower-level generative models; Levin on biological agency emphasizes that competence at one scale presupposes competence at adjacent scales. Both yield a formal prediction that *single-virtue exemplars* should be rare; *coupled-virtue networks* should be the modal pattern. This is the contemporary formalization of Gregory the Great's chiasmus.
+CROSS-007 in `master/cross_program_index.md` (*is basal cognition, in Levin's sense, a concrete instantiation of active inference in Friston's?* — logged there as an explanatory bridge, Friston supplying the mechanism Levin leaves open) is the cross-program entry this day leans on: Friston's hierarchical active inference predicts that high-level traits emerge from coupling across lower-level generative models; Levin on biological agency emphasizes that competence at one scale presupposes competence at adjacent scales. Extending that bridge from cells to *dispositions* is this commentary's own move, not something the index records. So read the **virtue-as-coupled-network** claim as a proposed extension of CROSS-007 rather than a finding it already contains. Both traditions yield a formal prediction that *single-virtue exemplars* should be rare; *coupled-virtue networks* should be the modal pattern. This is the contemporary formalization of Gregory the Great's chiasmus.
 
 ## Solution (proposed, speculative)
 
@@ -72,8 +72,8 @@ Cut any one and the others degrade. This is Gregory the Great's chiasmus, and it
 - **`traditions/fredrickson/prs_triplets.md` (PRS-02 gloss — positivity resonance):** love as measurable neurophysiological coupling between agents — the empirical anchor for justice as a sustainable relational graph. Empirical.
 - **`traditions/fredrickson/wiki.md` (PRS-05 row — broadened attention):** empirically grounded mechanism for how habituated dispositions accumulate and couple. Empirical (broadening replicated; the long-term build effect real but smaller than initial estimates).
 - **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 gloss — hemispheric asymmetry):** attentional substrate for the prudence/temperance distinction. Empirical (core asymmetry well-supported, wider cultural generalizations contested).
-- **Friston (active inference):** formal framework for prudence as policy-selection under uncertainty. Formal/empirical.
-- **CROSS-07 (master index, virtue-as-network):** synergistic-coil case — one resource (network-coupling formalism) solves multiple problems across virtue ethics, character psychology, and active inference. **Tom's Synergistic Coil**: Rs solving more than one P⇒S transition.
+- **`traditions/friston/prs_triplets.md` (PRS-04 gloss — organism as active modeler):** the living system as a continuous hypothesis-testing agent that generates predictions and updates its model — the formal anchor for prudence as accurate generative-model maintenance. (The further claim that prudence is *policy selection* under uncertainty is left deliberately unanchored; it belongs to the expected-free-energy side of the Friston record and no id there was verified for it this pass.) Formal/empirical.
+- **`master/cross_program_index.md` (CROSS-007 — basal cognition as an instantiation of active inference, Levin × Friston):** the logged cross-program bridge this day extends from cells to dispositions. **Tom's Synergistic Coil**: one resource (the scale-coupling formalism) carrying more than one P⇒S transition — here across virtue ethics, character psychology, and active inference. The coil reading is proposed here, not recorded in the index.
 
 ## Where this leaves us
 

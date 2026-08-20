@@ -10,14 +10,14 @@ length_note: "Runs ~60% under the medium tier (883 vs 2200): held to the PRS arg
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 nested agency / Markov blankets at multiple scales; PRS-04 goal-directedness)"
   - "traditions/levin/prs_triplets.md (PRS-03 robust target outcomes through noisy substrate)"
-  - "traditions/kastrup/prs_triplets.md (PRS-09 participatory encounter)"
+  - "traditions/kastrup/prs_triplets.md (PRS-09 participatory encounter — note the entry records McGilchrist's April-2026 counter-proposal against Kastrup's dashboard metaphor, filed in the Kastrup register at Confidence: Medium, not settled Kastrup program content)"
   - "traditions/rohr/wiki.md (Universal Christ; one act through many)"
 evidence_strength_summary: "Nested-agency / acting-as-instrument is formal (Friston multi-scale blankets); efficacy-through-noisy-channel is empirical-in-domain (Levin); in-persona-Christi content is theological (Wright/Rohr); Stump as Thomistic interlocutor on instrumental causality."
 mind_first_reframe: "The minister acts in persona Christi as a nested, Markov-blanketed sub-agent through which a larger-scale agency acts, and ex opere operato is the robustness of a target-anchored outcome to the instrument's own defects."
 central_theme_thread: "The finite agent's act is efficacious not by its own sufficiency but by its enrollment in a larger agency, so loving unity is realized without the whole being hostage to any single limited node."
 tags: [synthesis, day/253, theme/distributed-agency-one-act]
-last_qc_at: "2026-08-10T20:25:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-17T00:19:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 253 — Eucharistic Minister (Contemporary Parallel)
@@ -36,7 +36,7 @@ Friston's program supplies the structural resource. In Tom's PRS-form record of 
 
 Levin gives the empirical hinge for *ex opere operato*. In Tom's PRS-form record of Levin's program, PRS-03 (target morphology) plus the robustness of morphogenetic outcomes shows target states reliably reached *despite* noise, damage, and variation in the substrate — the outcome is governed by the set-point of the larger pattern, not by the quality of the particular cells implementing it. Channel noise (an unworthy minister) does not corrupt the signal when the outcome is anchored in the higher-scale target rather than the instrument.
 
-Kastrup (PRS-09, participatory encounter) keeps the act a participation in the principal agent's reality rather than a transfer of the instrument's own. Rohr (Universal Christ; one presence acting through many) and Wright (apostolic commissioning, the body acting as Christ's) hold the theological *content*. Stump appears as the Thomistic interlocutor on instrumental causality, receiving the multi-scale-agency reframe.
+The participatory-encounter record (PRS-09 in the Kastrup-tradition wiki) keeps the act a participation in the principal agent's reality rather than a transfer of the instrument's own. That entry's provenance matters to how much weight it can carry: it is filed in the Kastrup register but records McGilchrist's April-2026 counter-proposal *against* Kastrup's dashboard-of-perception metaphor — perception as participatory rather than representational — at Confidence: Medium, with its Solution line allowing that Kastrup's analytic idealism "may need refinement." So it is a live proposal within the tradition rather than settled program content, and the reading offered here rests on the participatory half of a distinction still under negotiation. Rohr (Universal Christ; one presence acting through many) and Wright (apostolic commissioning, the body acting as Christ's) hold the theological *content*. Stump appears as the Thomistic interlocutor on instrumental causality, receiving the multi-scale-agency reframe.
 
 ## Solution (proposed, speculative)
 
@@ -50,7 +50,7 @@ The motif appears here as the dignity and the limit of the finite agent. The min
 
 - **Friston PRS-06 + PRS-04 (nested agency; multi-scale goal-directedness)** — *formal, developing.* "In persona Christi" as real composition of agencies; sharpest resource.
 - **Levin PRS-03 (robust target outcomes through noisy substrate)** — *empirical-in-domain.* Ex opere operato as outcome anchored in the higher-scale set-point.
-- **Kastrup PRS-09 (participatory encounter)** — *metaphysical, contested.* The act as participation in the principal's reality.
+- **Kastrup PRS-09 (participatory encounter)** — *metaphysical, contested, and a proposal rather than a program claim.* The act as participation in the principal's reality. The entry is filed in the Kastrup register but records McGilchrist's counter-proposal against the dashboard metaphor at Confidence: Medium; cited here for the participatory reading it advances, not as a settled Kastrup commitment.
 - **Rohr (Universal Christ; one presence through many)** — *theological / contemplative.* The one acting through the many.
 - **Stump (instrumental causality)** — Thomistic interlocutor receiving the multi-scale-agency reframe.
 

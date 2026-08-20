@@ -3,19 +3,21 @@ day: 66
 title: "Enjoyment (Contemporary)"
 pairs_with: "[[Day-066 - Enjoyment]]"
 length_target_words: 1500
-length_actual_words: 1470
+length_actual_words: 1599
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/prs_triplets.md (PRS-02 — positivity resonance as measurable neurophysiological coupling; enjoyment as relational rest)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-04, PRS-10 — active inference; policy selection under expected free energy)"
-  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric reception in delight — no numbered id; see Bridges note)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-09, PRS-05 — participatory realism, value disclosed in encounter; attention as ontological act)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-13 — Chord/Arpeggio bounds on unified consciousness)"
   - "wiki/traditions/stump/prs_triplets.md (PRS-05, PRS-11 — union as final cause; second-personal knowing)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 — dissociated alters within one consciousness)"
 evidence_strength_summary: "Friston on policy-necessity-under-perfect-good is mature formal; Fredrickson on rest-in-the-good empirically robust; Stump on second-personal enjoyment theological-philosophical strong"
-length_ratio_to_target: 0.980
+length_ratio_to_target: 1.066
+length_note: "Recomputed body-only 2026-08-15 (YAML and the auto-link footer excluded) after two id-less bridge bullets were anchored: 1470 -> 1599, ratio 0.980 -> 1.066, still inside the +/-10% short-tier band. The growth is citation text — wiki file paths, PRS ids and the entry content they carry — in the McGilchrist and Hoffman bullets. No claim was added, removed or reweighted, and no argument was rewritten."
 mind_first_reframe: "Necessity-toward-the-perfect-good plus latitude-among-partial-goods is exactly what active inference predicts under hierarchical priors with one fully-determining terminal; enjoyment is the alter's substrate-direct rest in the apprehended good — perfect in the eschatological state of full alignment with mind-at-large, imperfect-anticipatory through this-life contemplation, prayer, sacrament, and positivity-resonance."
 central_theme_thread: "The work of becoming-aligned with loving unity is itself shot through with anticipatory enjoyment; the alter's daily task is to receive present positivity-resonance and contemplative-rest as real partial substrate-presence rather than distraction from the eschatological completion."
-last_qc_at: "2026-08-07T18:35:10"
+last_qc_at: "2026-08-15T20:25:16"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/066, theme/enjoyment, theme/rest-in-the-good]
 ---
@@ -71,10 +73,10 @@ Today's day articulates a load-bearing implication of the central theme: *the wo
 
 - **PRS-04 and PRS-10 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — the organism as an active modeller, and the unification of perception, action and reasoning as instances of expected-free-energy minimization differing only in optimization target. Formal correlate of *will cannot not will the perfect good*: where the terminal prior is fully determined, policy selection has no remaining latitude. *Mature formalism* (the zero-latitude limit case is this commentary's extension, not the triplet's claim).
 - **PRS-02 in the Fredrickson-tradition wiki** (`wiki/traditions/fredrickson/prs_triplets.md`) — positivity resonance as an objective, biologically-grounded coupling mechanism with measurable vagal tone, oxytocin, and neural phase-locking. Empirical anchor for rest-in-the-good. *Strong empirical.*
-- **McGilchrist-tradition wiki, on right-hemispheric reception.** Hemispheric anchor for delight. *Strong neuropsychiatric.* **Deliberately left without a numbered id:** the receptive-attending claim is genuinely ambiguous across McGilchrist PRS-01, PRS-02 and PRS-05, and guessing between plausible ids is how gloss-drift is manufactured.
+- **PRS-09 and PRS-05 in the McGilchrist-tradition wiki** (`wiki/traditions/mcgilchrist/prs_triplets.md`) — participatory realism, on which *truth arises through encounter, and in every genuine encounter both participants are changed*, so that value is not projected onto a neutral world but discloses through relational engagement (PRS-09); and attention as an ontological act, the mode of attending shaping what kind of world is disclosed (PRS-05). PRS-09 is the closer home: delight-following-apprehension is exactly a value that discloses in the encounter rather than one the will assigns afterward. *Strong neuropsychiatric.*
 - **PRS-05 and PRS-11 in the Stump-tradition wiki** (`wiki/traditions/stump/prs_triplets.md`) — union as the final cause of permitted suffering, and Franciscan (non-propositional, second-person) knowledge. PRS-05 is cited here because this bullet's claim genuinely leans on *union*, which is the only condition under which that id is the right home. Theological-philosophical resource for enjoyment-of-God. *Book-length argument.*
 - **PRS-02 in the Kastrup-tradition wiki** (`wiki/traditions/kastrup/prs_triplets.md`) — the universe as one undivided consciousness experiencing multiple dissociated points of view. Mind-monist anchor for the alter's substrate-resonance; the alter vocabulary used throughout this commentary is this triplet's own. *Philosophical-conceptual.*
-- **Hoffman-tradition wiki, on substrate-direct-mode access at limit.** *Philosophical-mathematical.* Left unanchored: the gloss does not correspond to any single Hoffman triplet.
+- **PRS-13 in the Hoffman-tradition wiki** (`wiki/traditions/hoffman/prs_triplets.md`) — the Chord and Arpeggio conditions, deriving size limits for unified conscious systems from signal speed, exchange architecture and temporal window, so that which systems can co-instantiate a single unified experience becomes a constrained question rather than an open one. This is the structural home for *substrate-direct-mode access at limit*: it is the triplet that asks under what conditions limited perspectives are unified rather than merely adjacent. *Philosophical-mathematical; the application to perfect enjoyment is this commentary's extension, not the triplet's claim.*
 - **Wright, *Surprised by Hope*; *The Resurrection of the Son of God*.** Scriptural-historical resource for present-anticipatory joy. *Scriptural-historical.*
 - **Rohr, *The Universal Christ*; *Immortal Diamond*.** Contemplative-presence frame. *Contemplative theological.*
 - **Augustine, *Confessions* X.27; Song of Songs 3:4; John of the Cross, *Ascent of Mount Carmel*.**

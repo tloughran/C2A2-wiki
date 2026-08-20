@@ -3,10 +3,10 @@ day: 149
 title: Respect of Persons (Contemporary)
 pairs_with: "[[Day-149 - Respect of Persons]]"
 length_target_words: 2200
-length_actual_words: 1570
-length_ratio_to_target: 0.714
+length_actual_words: 1669
+length_ratio_to_target: 0.759
 length_tier: medium
-length_note: "Compact at 0.71x medium target by design - Q.62 (restitution) and Q.63 (respect of persons) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
+length_note: "Compact at 0.76x medium target by design - Q.62 (restitution) and Q.63 (respect of persons) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02/11 cancer as defection / restoring the cell to the cooperative field — restitution as re-integration of the part into the whole; PRS-16 Platonic space — graded ontology of the 'virtual' form not yet actual)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — restitution as re-alignment of agents' models, restoring the collective)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Restitution as restoration of disturbed equality —
 mind_first_reframe: "Restitution, Aquinas says, is the act of commutative ('arithmetical') justice: the disturbed equality must be made level again. To withhold what is another's 'is to deprive him of the use of what belongs to him, and to do him an injury' — and so restitution is 'necessary for salvation,' since holding what is another's bars forgiveness. Read through mind / conscious-realist monism, restitution is the conservation law of the relational order: an injustice opens an imbalance in the web binding agents, and the order is repaired only when the part is returned to its right relation with the whole — the precise structure of restoring a defecting cell to the body's cooperative field (Levin) or re-aligning agents' models into a coherent collective (Friston). Respect of persons (Q.63) is the dual failure: a distribution that tracks a variable irrelevant to the real relation — wealth, kinship to the judge — rather than the warrant (need, dignity, office) the good actually answers to."
 central_theme_thread: "Justice is the maintenance and repair of the web that binds limited perspectives; restitution is its repair-mechanism — the re-inclusion of the one who defected into the people united, which is why Aquinas can tie it to salvation (inclusion in the people united with God, on Wright's reading). Respect of persons is the false weighting that fractures the whole: distributing the goods of the community on a feature that has nothing to do with the relation the good is meant to honor. Both turn on the same insight the central claim names — that each perspective has its real, proportionate place in the whole, and justice is the practice of honoring that place and restoring it when it is violated."
 tags: [synthesis, day/149, theme/restitution-and-the-wrong-variable]
-last_qc_at: "2026-08-07T20:23:30"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-15T22:29:52"
+last_qc_outcome: "pass"
 ---
 
 # Day 149 — Contemporary Parallel: Restitution as Repair, Respect of Persons as the Wrong Variable

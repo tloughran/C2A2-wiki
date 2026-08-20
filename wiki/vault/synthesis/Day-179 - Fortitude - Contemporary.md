@@ -3,22 +3,23 @@ day: 179
 title: Fortitude (Contemporary)
 pairs_with: "[[Day-179 - Fortitude]]"
 length_target_words: 2200
-length_actual_words: 1728
-length_ratio_to_target: 0.79
+length_actual_words: 1830
+length_ratio_to_target: 0.83
 length_tier: medium
 length_note: "Q.122 is a recapitulative precepts question; the day's substantive weight falls on Q.123 alone, treated fully without padding — short-and-substantive preferred per constitution."
 mind_first_reframe: "Under mind-monism, fortitude is an agent's capacity to keep its policy anchored to a long-horizon, often other-regarding good against the fast, narrowing immediate threat-gradient of fear; endurance is its principal act because holding the distant attractor while the steep local gradient persists unrelieved is the harder computation."
 central_theme_thread: "Fear is the sharpest report of perceived resource-limitation, and fortitude is the agent continuing to compute toward loving unity through that report — remaining faithful within the limitation rather than conquering it — which is 'salvation in fear and trembling' almost word for word."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/prs_triplets.md (broaden-and-build; resilience and the undo-effect of positive emotion on the cardiovascular aftermath of fear)"
-  - "traditions/friston/prs_triplets.md (active inference: holding a long-horizon expected-value attractor against an immediate free-energy gradient)"
-  - "traditions/mcgilchrist/prs_triplets.md (courage as standing-in-the-world; right-hemisphere openness vs left-hemisphere grasp/control)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: fortitude-in-suffering, endurance as the principal act)"
-  - "Wright canonical: resurrection hope as the ground of courage (Surprised by Hope; The Resurrection of the Son of God); Rohr canonical: necessary suffering, dying before you die"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01: micro-moments of positivity resonance cultivated through loving-kindness practice, raising vagal tone; PRS-28: the emergence of positivity resonance out of the earlier broaden-and-build research)"
+  - "traditions/friston/prs_triplets.md (PRS-16: expected free energy as the unified mathematics of risk and ambiguity over a generative model's horizons; PRS-04: the organism as active modeler generating and testing predictions)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01: left-hemisphere abstraction, fragmentation and manipulation set against right-hemisphere holistic, relational engagement with reality)"
+  - "traditions/stump/prs_triplets.md (PRS-13: suffering and flourishing as teleologically linked rather than opposed, suffering instrumentally ordered to personal union — Thomistic interlocutor)"
+  - "traditions/wright/prs_triplets.md (PRS-04: resurrection as historical and cosmological — the bodily resurrection argued on ordinary historical criteria)"
+  - "traditions/rohr/prs_triplets.md (PRS-37: the path of descent as the transition mechanism, and modernity's manufactured ascent as a substitute for it)"
 evidence_strength_summary: "Resilience and undo-effect are empirical (Fredrickson); long-horizon attractor vs immediate gradient is formal (Friston); courage-as-standing is empirical/interpretive (McGilchrist); resurrection-grounded endurance is theological (Wright, Rohr)."
 tags: [synthesis, day/179, theme/fortitude, theme/long-horizon-attractor, q/122, q/123]
-last_qc_at: "2026-08-07T10:30:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-15T12:26:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 179 — Fortitude (Contemporary)
@@ -59,11 +60,12 @@ This is where the project's central claim becomes almost literal. Conscious agen
 
 ## Bridges
 
-- **Fredrickson (broaden-and-build; undo effect)** — endurance as the non-collapse of the action-repertoire under fear; resilience as trainable, with a physiological signature (vagal tone). *Empirical.*
-- **Friston (active inference)** — fortitude as a long-horizon expected-value attractor held against a steep short-horizon threat gradient; endurance as the harder computation. *Formal / interpretive.*
-- **McGilchrist (standing-in-the-world)** — courage as right-hemisphere presence to the whole, danger included, versus left-hemisphere grasp for control. *Empirical / interpretive.*
-- **Stump (fortitude-in-suffering)** — endurance as remaining in fidelity and relation under unendable duress. *Theological / philosophical.*
-- **Wright (resurrection as ground of courage)** — death relocated from final horizon to penultimate, making endurance rational. *Theological.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (loving-kindness practice raising vagal tone) with PRS-28 (positivity resonance's descent from broaden-and-build): endurance as the non-collapse of the action-repertoire under fear, and resilience as trainable with a physiological signature. *Empirical.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-16 (expected free energy spanning risk and ambiguity) with PRS-04 (the organism as active modeler): fortitude as a long-horizon expected-value attractor held against a steep short-horizon threat gradient; endurance as the harder computation. *Formal / interpretive.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (left-hemisphere manipulation vs right-hemisphere holistic relational engagement): courage as presence to the whole, danger included, versus the grasp for control. *Empirical / interpretive.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-13 (suffering and flourishing teleologically linked, ordered to personal union): endurance as remaining in fidelity and relation under unendable duress. *Theological / philosophical.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-04 (resurrection as historical and cosmological): death relocated from final horizon to penultimate, making endurance rational. *Theological.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-37 (the path of descent, and modernity's manufactured ascent that substitutes for it): the necessary falling that fortitude does not evade. *Theological.*
 
 ## Where this leaves us
 

@@ -34,7 +34,7 @@ What Aquinas leaves at the level of perceptive description, the contemporary fra
 
 **(a) Shared with Aquinas.** Fear's object has four precision conditions: imagined, future, non-resistible, irremediable. Fear's causes are love and defect. The diagnostic move from fear to love (Q.43 a.1) is preserved. The therapeutic move of familiarity-reducing-fear (Q.42 a.5) is preserved. The clinical wisdom that friendship reduces fear (Q.43 a.2 + Aristotle) is preserved.
 
-**(b) Where it reframes.** Where Aquinas treats Q.42 a.6's irremediable evil as straightforwardly mapping to Dante's hell, the contemporary synthesis (following Wright and Rohr) reframes: the *formal* point — that irremediability is what most engages fear — is preserved; the *referential* claim about hell as a metaphysical place of everlasting torment is reframed as the theological name for the agent's willed self-closure against loving unity. This is consonant with Wright's reading and explicit in Rohr's. Under conscious-realist monism, the self-closure is the alter's hardening of dissociative boundaries against the larger field — which is the same condition we encountered at Q.39 a.4 as desensitization. Hell as state, not as place: structurally consistent across the central theme.
+**(b) Where it reframes.** Where Aquinas treats Q.42 a.6's irremediable evil as straightforwardly mapping to Dante's hell, the contemporary synthesis (following Wright and Rohr) reframes: the *formal* point — that irremediability is what most engages fear — is preserved; the *referential* claim about hell as a metaphysical place of everlasting torment is reframed as the theological name for the agent's willed self-closure against loving unity. This is consonant with Wright's reading and explicit in Rohr's. Under conscious-realist monism, the self-closure is the alter's hardening of dissociative boundaries against the larger field — which is the same condition we encountered at Q.39 a.4 as desensitization. The monist frame this rests on is PRS-02 in the Kastrup-tradition wiki, on the universe as a single undivided consciousness experiencing multiple dissociated points of view, with individuality preserved as a construct of the dissociation itself; PRS-07 supplies the pathology side, reframing disorder as dysregulation of the boundary between alter and universal consciousness rather than as brain malfunction. Hell as state, not as place: structurally consistent across the central theme. *Speculative metaphysical* on both counts — PRS-07 is itself a Medium-confidence proposal about psychopathology, and extending it to a theological self-closure is a further step it does not take.
 
 **(c) Where evidence is firm vs. speculative.** *Firm*: predictive-processing account of fear and surprise (Friston, Clark, Hohwy); intolerance-of-uncertainty as anxiety-disorder mechanism (Carleton); co-regulation in close relationship reduces fear (Coan et al.); exposure and familiarity reduce fear (decades of clinical literature). *Empirically supported*: hemispheric account; contemplative-practice effects on amygdala reactivity. *Speculative metaphysical*: the conscious-realist-monist reading of hell-as-state. *Theological, well-attested*: Wright's resurrection-horizon reframing of death-fear; Rohr's non-dual reframing of the apparently irremediable.
 
@@ -53,12 +53,13 @@ Defect-causes-fear (Q.43 a.2) names the perspective-limitation directly. The age
 - **Friston PRS-01, PRS-04 + policy-precision literature (Schwartenbeck et al.)** — formal mechanism for all four precision conditions on fear's object; *mathematical and empirically supported*.
 - **Carleton / Norton intolerance-of-uncertainty literature** — Q.42 a.5 + Q.41 a.4's anxiety species map directly onto IU as core anxiety mechanism; *clinically robust*.
 - **Coan, Schaefer & Davidson 2006 / hand-holding under threat** — empirical demonstration of Aristotle's "multitude of friends drive fear away"; *high-confidence neuroimaging*.
-- **Fredrickson PRS-01, PRS-08 / broaden-and-build, high-quality listening** — empirical co-regulation mechanism for friend-mediated fear reduction; *empirical, high confidence*.
-- **McGilchrist / right-hemispheric contextual buffering** — anxiety species mapping; *clinical evidence*.
+- **Fredrickson PRS-01, PRS-08 / positivity-resonance cultivation, high-quality listening** — empirical co-regulation mechanism for friend-mediated fear reduction; *empirical, high confidence*.
+- **PRS-01, PRS-05 in the McGilchrist-tradition wiki / hemispheric asymmetry; attention as ontological act** — right-hemispheric contextual buffering against left-dominant narrowing (01), and attention as world-constituting rather than merely selective (05): Q.42 a.5 (sudden things) and the Q.41 a.4 anxiety species; *clinical evidence*. The register carries no anxiety-specific entry, so the mapping rests on the general asymmetry account.
 - **PRS-04 in the Hawkins-tradition wiki / reference frames as the universal architecture of model-based intelligence** — cortical mechanism for familiarity-reduces-fear (Q.42 a.5); *neuroscientifically grounded*. (Corrected from PRS-03, the knowledge-preserving-AGI entry, which carries no reference-frame claim.)
 - **PRS-11 in the Stump-tradition wiki / Franciscan second-person knowledge (*Wandering in Darkness*)** — diagnostic structure of Q.43 a.1 (fear reveals love); *philosophically rigorous*. (PRS-05 dropped: it is the union-and-permitted-suffering entry, and this bullet does not lean on union.)
 - **PRS-01, PRS-03 in the Rohr-tradition wiki / contemplative epistemology, the Universal Christ; *Everything Belongs*, *Falling Upward*** — contemplative reframing of irremediable as held-in-larger-pattern; Q.42 a.6 reframed; *contemplative tradition*.
 - **PRS-06 in the Wright-tradition wiki / resurrection as firstfruits of new creation (Romans 8; 1 Cor 15)** — eschatological reframe of death-fear (Q.42 a.2 + a.6); *historical-theological, well-attested*.
+- **PRS-02, PRS-07 in the Kastrup-tradition wiki / individual identity within monism; analytic idealism applied to psychopathology** — the monist anchor for the (b) reframe of Q.42 a.6's irremediable evil: self-closure read as hardening of the alter's dissociative boundary against the larger field, with PRS-07 supplying the boundary-dysregulation model; *speculative metaphysical* (PRS-07 is Medium confidence at the entry, and its extension from clinical to theological self-closure is the synthesis's own step).
 
 ## Where this leaves us
 
@@ -79,14 +80,15 @@ central_theme_thread: "The limited agent computes aversion under perspective-lim
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy principle; PRS-04 organism as active modeler)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation; PRS-08 high-quality listening)"
-  - "traditions/mcgilchrist/wiki.md (anxiety hemispheric account — no numbered id claimed)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry, right hemisphere primary; PRS-05 attention as ontological act)"
   - "traditions/hawkins/prs_triplets.md (PRS-04 reference frames as universal cognitive tool)"
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan second-person knowledge); *Wandering in Darkness*"
   - "traditions/rohr/prs_triplets.md (PRS-01 contemplative epistemology; PRS-03 the Universal Christ); *Everything Belongs*; *Falling Upward*"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as firstfruits of new creation); Romans 8; 1 Cor 15"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, dissociated points of view; PRS-07 analytic idealism applied to psychopathology, boundary dysregulation)"
 evidence_strength_summary: "Predictive-processing fear/surprise, intolerance-of-uncertainty as anxiety mechanism, co-regulation reducing fear, and exposure-reduces-fear are all empirically robust. Hemispheric account is clinically supported. Hell-as-state-not-place is theological reading consistent with Wright and Rohr but not a unanimous Christian position."
 tags: [synthesis, day/082, theme/fear, theme/anxiety, theme/irascible-passions, theme/love-causes-fear]
-last_qc_at: "2026-08-08T00:26:49"
+last_qc_at: "2026-08-16T12:20:29"
 last_qc_outcome: "rewrote"
 
 ---

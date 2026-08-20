@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric interface to collective intelligence, PRS-09 cognitive attribution across scales)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing, PRS-7 relationship ontologically prior)"
   - "wiki/master/cross_program_index.md (community-widening / kinship-extension theme)"
-evidence_strength_summary: "Friston community-widening formal but socially speculative; Levin collective-intelligence empirical at biological scale; the incest-prohibition-as-bond-widening reading is anthropological/conceptual, partly empirically supported (exogamy literature) but not derived from the formal models."
+evidence_strength_summary: "Friston community-widening formal but socially speculative — and both Friston entries are the weakest cited here (PRS-18 Confidence Speculative; PRS-06 (Implicit)/Medium), against Levin PRS-17/PRS-09 and Rohr PRS-01 which are all High; Levin collective-intelligence empirical at biological scale; the incest-prohibition-as-bond-widening reading is anthropological/conceptual, partly empirically supported (exogamy literature) but not derived from the formal models."
 length_ratio_to_target: 0.58
 mind_first_reframe: "The consanguinity impediment is a community-widening mechanism — suppressing the easy near coupling to compel the bond-extending distant one — mirroring how collective intelligences stay open and coherent at larger scales."
 central_theme_thread: "The kin-rule is loving unity's missionary edge: love is forbidden to curl up among the already-near so that it must reach the stranger, moving the circle of union from clan toward universal communion."
 tags: [synthesis, day/284, theme/widening-the-circle-of-union]
-last_qc_at: "2026-08-10T20:25:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-18T22:31:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 284 — Impediment of Consanguinity (Contemporary Parallel)
@@ -45,7 +45,7 @@ The project holds that loving unity is to be extended until every limited perspe
 ## Bridges
 
 - **Friston PRS-18 (formal; social application speculative):** community-widening — suppress near coupling to drive distant bond-formation; the structural meaning of the impediment.
-- **Friston PRS-06 (formal):** the cost of modeling only near neighbors — no cross-links, no larger coherent unity.
+- **Friston PRS-06 (formal, but marked (Implicit) at Confidence Medium in the register — a reconstruction of the multi-agent extension of free-energy minimization, not a demonstrated result):** the cost of modeling only near neighbors — no cross-links, no larger coherent unity.
 - **Levin PRS-17 / PRS-09 (empirical at biological scale):** collective integration requires reaching beyond the adjacent — the biological precedent for exogamy.
 - **Rohr PRS-01 / PRS-7 (theological):** charity refusing to stop at the familiar; the kin-rule serves universal communion.
 

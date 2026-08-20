@@ -3,21 +3,22 @@ day: 190
 title: Beauty & Disgrace (Contemporary)
 pairs_with: "[[Day-190 - Beauty and Disgrace]]"
 length_target_words: 1500
-length_actual_words: 1402
-length_ratio_to_target: 0.93
+length_actual_words: 1451
+length_ratio_to_target: 0.967
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md (positivity resonance; PRS-06 love as universal phenomenon)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act; intersubjective attention)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; interface as fitness-tuned rather than truth-tracking)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; the dissociated alter)"
-  - "traditions/wright/wiki.md (image-bearing, glory); traditions/rohr/wiki.md (the Universal Christ; clarity)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern present in all of creation; onestum as that pattern legible in one life)"
+  - "N.T. Wright, *Surprised by Hope* (image-bearing and Pauline doxa — carried as a canonical-work claim; no numbered home in traditions/wright/prs_triplets.md)"
   - "master/cross_program_index.md (CROSS-003 attention; CROSS-005 love as fundamental)"
 evidence_strength_summary: "Shamefacedness as social-attestation self-regulation = empirical/medium-high (positivity resonance, social feedback); beauty-as-clarity ↔ interface-transparency = metaphysical/speculative; onestum = virtue = beauty = philosophical-theological."
 mind_first_reframe: "Shamefacedness is the social-attestation arm of self-regulation — an intersubjective coupling steering the agent away from rupturing its load-bearing relationships — and onestum is clarity: an individuated perspective become transparent to the whole it expresses, so that 'the idea of man' shows through."
 central_theme_thread: "Onestum is the in-via face of the central claim that when a perspective's limitations are cleared the simple whole is seen — spiritual beauty is a perspective on its way to transparency, and shame is the early social signal that keeps that clearing on course."
 tags: [synthesis, day/190, theme/clarity-and-the-whole]
-last_qc_at: "2026-08-07T08:23:25"
+last_qc_at: "2026-08-15T10:29:21"
 last_qc_outcome: "rewrote"
 ---
 
@@ -57,7 +58,7 @@ This article gives the project's metaphysics its aesthetic face. The central cla
 - **Attention as ontological act ↔ being-seen as constitutive** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* another's regard partly *discloses* the self, so disgrace is a real modification, not mere information. Evidence: **phenomenological, medium**.
 - **Beauty-as-clarity ↔ interface transparency** — the Hoffman-tradition wiki, PRS-03 (perception fitness-tracking). *Why:* onestum is a perspective tuned for clarity rather than fitness-distortion — transparent to the whole. Evidence: **metaphysical, speculative**.
 - **Spiritual beauty ↔ the diaphanous alter** — the Kastrup-tradition wiki, PRS-02 (individual identity within monism; dissociation). *Why:* gives beauty-as-clarity an ontology — the individuated alter letting mind-at-large show through. Evidence: **metaphysical, speculative**.
-- **Clarity ↔ glory / image-bearing** — the Wright-tradition wiki and the Rohr-tradition wiki. *Why:* Aquinas's "clarity" is the Pauline doxa and Rohr's cosmic pattern made legible in a life. Evidence: **theological**.
+- **Clarity ↔ glory / image-bearing** — *PRS-03 in the Rohr-tradition wiki (the Universal Christ: the divine pattern present in all of creation)*, with the Wright half carried as a canonical-work claim: image-bearing and Pauline *doxa* have no numbered home in that tradition's triplets (its nearest anchor, PRS-05, is salvation-as-incorporation, not glory), so it is cited to *Surprised by Hope* on the restored image rather than to an id. *Why:* onestum is Rohr's cosmic pattern made legible in a single life; Aquinas's "clarity" is the Pauline *doxa*. Evidence: **theological**.
 
 ## Where this leaves us
 

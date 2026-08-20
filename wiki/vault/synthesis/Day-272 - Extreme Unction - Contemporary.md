@@ -17,8 +17,8 @@ evidence_strength_summary: "Form-bearing matter and target-state restoration are
 mind_first_reframe: "Extreme Unction is a material sign acting on form-bearing matter at the body's limit — anointing read against Levin's bioelectric target-states, where matter is continually re-pointed toward the form it is meant to hold, and oriented (Wright) toward the bodily future of new creation."
 central_theme_thread: "At the threshold of death the agent's perceptual resources are most depleted; the sacrament supplies guidance and re-orientation from the whole precisely where the limited perspective can do least for itself."
 tags: [synthesis, day/272, theme/form-bearing-matter-at-the-limit]
-last_qc_at: "2026-08-10T06:30:22"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-18T14:27:27"
+last_qc_outcome: "pass"
 ---
 
 # Day 272 — Extreme Unction (Contemporary)

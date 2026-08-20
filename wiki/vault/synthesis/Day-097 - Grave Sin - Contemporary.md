@@ -3,22 +3,22 @@ day: 97
 title: Grave Sin (Contemporary)
 pairs_with: "[[Day-097 - Grave Sin]]"
 length_target_words: 1500
-length_actual_words: 1760
+length_actual_words: 1854
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-05 suffering and divine permission; PRS-09 cooperative-causality account of virtue)"
-  - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler; precision-weighting)"
+  - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler — verified identical in both files, so the joint naming is safe here; PRS-28 in prs_triplets.md for precision-weighting on belief updates)"
   - "traditions/mcgilchrist/wiki.md (PRS-01 hemispheric asymmetry as cultural pathology; PRS-05 attention as ontological act)"
   - "traditions/fredrickson/wiki.md (broaden-and-build; negativity bias)"
   - "traditions/levin/prs_triplets.md (PRS-09 principled framework for cognitive attribution across scales — the 'diverse intelligence' agency-at-any-scale framework the Bridges section leans on)"
   - "master/C2A2_master_wiki.md (agency-at-multiple-scales)"
 evidence_strength_summary: "The species-by-end and gravity-by-end analytic moves are philosophical-textual (Aquinas + analytic Thomism). Friston's precision-weighting account of voluntariness is formal-empirical. McGilchrist's account of cold/spiritual sin as left-hemispheric pathology is medium-confidence empirical."
-length_ratio_to_target: 1.173
-length_note: "Covers two dense Summa questions in one day (Q.72 species + Q.73 gravity, 19 articles); the species-by-end / gravity-as-depth-times-precision linkage is substantive bridging work, not padding."
+length_ratio_to_target: 1.236
+length_note: "Covers two dense Summa questions in one day (Q.72 species + Q.73 gravity, 19 articles); the species-by-end / gravity-as-depth-times-precision linkage is substantive bridging work, not padding. Recount 2026-08-17 by the project method (body only, top frontmatter and auto-linked footer excluded) gives 1854 / 1.236 after the criterion-(d) Friston anchor was added; the prior 1760 / 1.173 was correct for the pre-edit body. Anchoring cost 94 words, which is the recorded citation-repair-pushes-length effect."
 mind_first_reframe: "Aquinas's structural anatomy of sin (Q.72 species, Q.73 gravity) recovers as active-inference policy diagnostics: species is fixed by the policy's preferred-outcome prior (species-by-end), gravity is the product of how high in the prior-stack the perversion sits and how much precision the agent puts on it (depth × precision). The counter-intuitive ranking — spiritual sins graver than carnal — survives as the difference between prior-level mis-setting and local precision-failure at the policy level."
 central_theme_thread: "Q.73 a.1's Legion-vs-unity claim — vice fragments the agent into many unintegrated appetitive sub-agents while virtue unifies the agent under reason — is one of the most direct articulations in I-II of the project's central frame: the unified agent is the one whose multiple partial perspectives (toward self, neighbor, body) are held together by a single integrating prior (charity / loving unity); vice does not just make the agent bad, it makes the agent plural in the wrong way."
 tags: [synthesis, day/097, theme/species-by-end, theme/gravity-and-precision]
-last_qc_at: "2026-08-09T08:22:47"
+last_qc_at: "2026-08-17T10:29:07"
 last_qc_outcome: "rewrote"
 ---
 
@@ -69,7 +69,7 @@ The deepest hit to the central theme today is Q.73 a.1 — *all sins are not con
 ## Bridges
 
 - **PRS-04 in the Friston-tradition wiki** (organism as active modeler) — formal/empirical. Species-by-end ↔ policy-by-prior is the cleanest formal bridge.
-- **Friston precision-weighting** (multiple PRS triplets) — formal. Gravity-tracks-voluntariness ↔ precision-on-the-high-level-prior.
+- **Friston precision-weighting** — the mechanism is stated at **PRS-28 in `traditions/friston/prs_triplets.md`**, where neuromodulation encodes precision as the inverse variance of prediction error and psychopathology becomes a case of aberrant precision-weighting on belief updates. Formal/empirical, but note the wiki records that triplet at *Medium* confidence (a stated research intent rather than a published derivation), so it carries less weight than the PRS-04 bullet above. Gravity-tracks-voluntariness ↔ precision-on-the-high-level-prior. No triplet in either Friston file glosses precision as an *action-voluntariness* parameter; that identification is this commentary's own transposition, marked interpretive above — so the bullet anchors the mechanism, not the application.
 - **PRS-01 in the McGilchrist-tradition wiki** (hemispheric asymmetry) — empirical (medium). The spiritual-graver-than-carnal asymmetry has a left-hemispheric-pathology echo.
 - **PRS-05 in the Stump-tradition wiki** (suffering and divine permission) — analytic-theological. Q.73 a.10 — excellence of sinner aggravates sin — pairs with the cooperatively-held account.
 - **PRS-09 in `traditions/levin/prs_triplets.md`** (principled framework for cognitive attribution across scales; Levin & Resnik, "Mind Everywhere," *Biological Theory*, 2026) — empirical/methodological, confidence High. Q.72 a.4's God / self / neighbor ordering maps onto the diverse-intelligence picture in which goal-directedness is attributed at any scale on a falsifiable, non-vitalist basis. Note the id lives in `prs_triplets.md` only; there is no PRS-09 row in `traditions/levin/wiki.md`.

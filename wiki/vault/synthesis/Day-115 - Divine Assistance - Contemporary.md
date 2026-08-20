@@ -8,14 +8,13 @@ length_actual_words: 2374
 length_ratio_to_target: 1.583
 length_note: "Below long target (2400/3000, ratio 0.80, within ±25%) but substantively complete: long-tier capstone covering Q.108 (close of the law) and Q.109 (necessity of grace, the section's central-theme keystone); picks the generative threads rather than mirroring every article, per length policy. No padding warranted."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause; resource-bounded development)"
-  - "wiki/traditions/friston/wiki.md (FLAG-05 active inference; resource-bounded agency)"
-  - "wiki/traditions/kastrup/wiki.md (PRS-02 analytic idealism; mind-at-large dynamics)"
-  - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; species-specific perspective)"
-  - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 right-hemispheric integration)"
-  - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; intrinsic motivation under grace)"
+  - "wiki/traditions/levin/wiki.md (morphogenetic field; pattern as cause; resource-bounded development)"
+  - "wiki/traditions/friston/wiki.md (active inference; resource-bounded agency)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; dissociated alters within mind-at-large)"
+  - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific perspective)"
+  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric integration)"
+  - "wiki/traditions/fredrickson/wiki.md (broaden-and-build; intrinsic motivation under grace)"
   - "wiki/master/C2A2_master_wiki.md (master integration on grace-and-nature relation)"
-  - "wiki/master/cross_program_index.md (CROSS-11 intrinsic vs. extrinsic; CROSS-15 bootstrapping under limited resources)"
   - "Wright, Paul and the Faithfulness of God (justification by faith; covenant inclusion)"
   - "Wright, Surprised by Hope (salvation as new-creation participation)"
   - "Rohr, Falling Upward (grace and the second-half of life)"
@@ -23,7 +22,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-08-09T16:21:06"
+last_qc_at: "2026-08-17T18:30:40"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---
@@ -46,19 +45,19 @@ A second nested problem: how to hold the *necessity of grace* alongside the *non
 
 The whole convergent paradigm comes together here.
 
-**Levin's morphogenetic field at the agent level** (PRS-04): an organism develops toward a target morphology under the dynamic of its bioelectric / cognitive system. When the system is sufficiently impoverished — through damage, mutation, environmental insult — the target cannot be reached without external intervention (recovery requires the import of additional informational and physical resources). This is Aquinas's Q.109 a.4 picture precisely: post-Fall human nature has the same target (the loving-unity flourishing) but the system is sufficiently impoverished that the target cannot be reached from within.
+**Levin's morphogenetic field at the agent level**: an organism develops toward a target morphology under the dynamic of its bioelectric / cognitive system. When the system is sufficiently impoverished — through damage, mutation, environmental insult — the target cannot be reached without external intervention (recovery requires the import of additional informational and physical resources). This is Aquinas's Q.109 a.4 picture precisely: post-Fall human nature has the same target (the loving-unity flourishing) but the system is sufficiently impoverished that the target cannot be reached from within.
 
-**Friston's active inference under resource-bounded agency** (FLAG-05): an agent's behavior follows from the priors of its generative model. *Updating* the priors requires either prediction-error information (which the agent must already be in some relation to the truth to receive) or the import of priors from elsewhere (other agents; trained corpora; explicit teaching; grace). The bootstrapping problem is the formal version of Q.109 a.6: "to prepare oneself for grace is, as it were, to be turned to God; just as whoever has his eyes turned away from the light of the sun prepares himself to receive the sun's light by turning his eyes toward the sun. Hence it is clear that man cannot prepare himself to receive the light of grace except by the gratuitous help of God moving him inwardly." The agent cannot turn its priors toward the target unless something already in relation to the target moves the priors.
+**Friston's active inference under resource-bounded agency**: an agent's behavior follows from the priors of its generative model. *Updating* the priors requires either prediction-error information (which the agent must already be in some relation to the truth to receive) or the import of priors from elsewhere (other agents; trained corpora; explicit teaching; grace). The bootstrapping problem is the formal version of Q.109 a.6: "to prepare oneself for grace is, as it were, to be turned to God; just as whoever has his eyes turned away from the light of the sun prepares himself to receive the sun's light by turning his eyes toward the sun. Hence it is clear that man cannot prepare himself to receive the light of grace except by the gratuitous help of God moving him inwardly." The agent cannot turn its priors toward the target unless something already in relation to the target moves the priors.
 
 **Kastrup's analytic idealism** (PRS-02): mind-at-large is the ontological primitive; individual minds are *alters* — dissociated centers within mind-at-large. Grace, on this reading, is the operation of mind-at-large *re-integrating* the alter's priors with the deeper structure. It is not a strange exception to natural psychology; it is the *default* dynamic when an alter's dissociation reaches the threshold where deeper structure becomes operative.
 
-**Hoffman's interface theory** (FLAG-02): species-specific perspective is the constitutive form of agent-individuation. Q.109 a.5's proportion-argument ("acts conducive to an end must be proportioned to that end… everlasting life is an end exceeding the proportion of human nature… hence man by his natural endowments cannot produce meritorious works proportionate to everlasting life") is the precise inter-interface translation: a finite interface cannot operate on the deeper-pattern level without recalibration. Grace is the recalibration.
+**Hoffman's interface theory**: species-specific perspective is the constitutive form of agent-individuation. Q.109 a.5's proportion-argument ("acts conducive to an end must be proportioned to that end… everlasting life is an end exceeding the proportion of human nature… hence man by his natural endowments cannot produce meritorious works proportionate to everlasting life") is the precise inter-interface translation: a finite interface cannot operate on the deeper-pattern level without recalibration. Grace is the recalibration.
 
-**McGilchrist's hemispheric integration** (FLAG-09): the integrated right-and-left hemisphere is the conscious-functional analog of the grace-and-nature integration. The right hemisphere's relational-contextual grasp must master the left hemisphere's rule-following capacity. When grace operates, this is the integrated functioning Aquinas's Q.109 a.9 describes: "first, a habitual gift whereby corrupted human nature is healed, and after being healed is lifted up so as to work deeds meritoriously of everlasting life; secondly, man needs the help of grace in order to be moved by God to act."
+**McGilchrist's hemispheric integration**: the integrated right-and-left hemisphere is the conscious-functional analog of the grace-and-nature integration. The right hemisphere's relational-contextual grasp must master the left hemisphere's rule-following capacity. When grace operates, this is the integrated functioning Aquinas's Q.109 a.9 describes: "first, a habitual gift whereby corrupted human nature is healed, and after being healed is lifted up so as to work deeds meritoriously of everlasting life; secondly, man needs the help of grace in order to be moved by God to act."
 
-**Fredrickson's broaden-and-build** (FLAG-11): grace operates through the positive-affect-broadening dynamic that produces durable intrinsic motivation. Q.108 a.3's "the new law directs a man to seek the kingdom of God and His will above all things" is the affect-positive prior that broadens the agent's behavioral repertoire toward genuinely loving action — not the fear-narrowed compliance of an agent in chronic threat.
+**Fredrickson's broaden-and-build**: grace operates through the positive-affect-broadening dynamic that produces durable intrinsic motivation. Q.108 a.3's "the new law directs a man to seek the kingdom of God and His will above all things" is the affect-positive prior that broadens the agent's behavioral repertoire toward genuinely loving action — not the fear-narrowed compliance of an agent in chronic threat.
 
-**CROSS-15 (master wiki, bootstrapping under limited resources)**: a robust finding across cognitive science, machine learning, and developmental psychology is that *no* agent can bootstrap from a sufficiently impoverished prior to a target prior; the import of structured information from outside is necessary. Aquinas's claim about grace is the medieval formulation of this empirical truth — though Aquinas locates the import metaphysically in the divine action.
+**The bootstrapping limit**: the claim in play is that *no* agent can bootstrap from a sufficiently impoverished prior to a target prior without the import of structured information from outside. Stated at this generality the claim is a reading across cognitive science, machine learning, and developmental psychology rather than a single established result, and it is offered here as *formal/interpretive* rather than as a settled empirical finding. Aquinas's claim about grace is the medieval formulation of the same structural point — though Aquinas locates the import metaphysically in the divine action.
 
 ## Solution (proposed, speculative)
 
@@ -115,14 +114,12 @@ The differences from Aquinas are not in the structural claim but in the *backgro
 
 ## Bridges
 
-- **PRS-04 (Tom's re-description of the Levin-tradition wiki, morphogenetic field — pattern as cause, final-cause read as bioelectric pattern)**: morphogenetic-field pattern-restoration as analog of grace as pattern-restoration. *Empirical / metaphysical*.
-- **PRS-02 (Kastrup analytic idealism)**: grace as operation of mind-at-large; not an exotic addition. *Metaphysical*.
-- **FLAG-02 (Hoffman interface theory)**: grace as recalibration of the value-interface. *Formal / interpretive*.
-- **FLAG-05 (Friston active inference, bootstrapping limit)**: grace as imported prior-update; the proportion-argument formalized. *Empirical/formal*.
-- **FLAG-09 (McGilchrist hemispheric integration)**: grace as integrated right-master / left-servant operation. *Empirical/interpretive*.
-- **FLAG-11 (Fredrickson broaden-and-build)**: grace as the positive-affect dynamic that broadens behavior toward love. *Empirical*.
-- **CROSS-11 (master wiki, intrinsic vs. extrinsic)**: grace produces intrinsic motivation; intrinsic motivation is empirically superior. *Cross-disciplinary empirical*.
-- **CROSS-15 (master wiki, bootstrapping under limited resources)**: agents cannot bootstrap from impoverished priors without external information. *Cross-disciplinary empirical*.
+- **Levin (traditions/levin/wiki.md — morphogenetic field, pattern as cause)**: morphogenetic-field pattern-restoration as analog of grace as pattern-restoration. *Empirical / metaphysical*.
+- **Kastrup PRS-02 (traditions/kastrup/prs_triplets.md — individual identity within monism; the alter as a dissociated point of view within a single consciousness)**: grace as operation of mind-at-large re-integrating the alter; not an exotic addition. *Metaphysical*.
+- **Hoffman (traditions/hoffman/wiki.md — interface theory)**: grace as recalibration of the value-interface. *Formal / interpretive*.
+- **Friston (traditions/friston/wiki.md — active inference, bootstrapping limit)**: grace as imported prior-update; the proportion-argument formalized. *Formal; interpretive as an account of grace*.
+- **McGilchrist (traditions/mcgilchrist/wiki.md — hemispheric integration)**: grace as integrated right-master / left-servant operation. *Empirical/interpretive*.
+- **Fredrickson (traditions/fredrickson/wiki.md — broaden-and-build)**: grace as the positive-affect dynamic that broadens behavior toward love. *Empirical*.
 - **Wright, *Paul and the Faithfulness of God***: justification by faith; covenant inclusion; the indwelling Spirit. *Exegetical/theological*.
 - **Wright, *Surprised by Hope***: salvation as participation in new creation. *Exegetical/theological*.
 - **Rohr, *Falling Upward***: grace and the second-half of life. *Developmental-spiritual*.

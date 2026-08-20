@@ -3,10 +3,10 @@ day: 260
 title: Slight Contrition (Contemporary)
 pairs_with: "[[Day-260 - Slight Contrition]]"
 length_target_words: 1500
-length_actual_words: 816
+length_actual_words: 1024
 length_tier: short
-length_ratio_to_target: 0.544
-length_note: "Compact by design: Suppl. Q.3–5 develops the single threshold-and-disproportion motif (minimal turn met by grace); substance complete per the five-question review."
+length_ratio_to_target: 0.683
+length_note: "Compact by design: Suppl. Q.3–5 develops the single threshold-and-disproportion motif (minimal turn met by grace); substance complete per the five-question review. Recount at QC 2026-08-17: the 816 figure verified exactly against the body before this run's edit — the one-directional understatement defect does NOT fire here; 816 -> 1024 (0.544 -> 0.683) is this run's bridge-anchoring text, not a correction."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference; threshold-crossing in evidence accumulation)"
   - "traditions/rohr/wiki.md (Universal Christ; grace exceeding the measure of the act)"
@@ -15,7 +15,7 @@ evidence_strength_summary: "Threshold-crossing / minimal-sufficient-evidence is 
 mind_first_reframe: "Slight contrition suffices when a genuine minimal turn crosses the threshold into a changed disposition (Friston evidence-accumulation), and the remission exceeds the act because grace, already present (Rohr's Universal Christ), meets the smallest true turn with more than its measure."
 central_theme_thread: "The whole accepts even a maximally limited perspective's smallest true turn: loving unity is a computation under limited resources, and for a perspective with almost none the requirement is a genuine turn, not a large one — 'salvation as inclusion' shown gracious at its lower bound."
 tags: [synthesis, day/260, theme/minimal-turn-met-by-grace]
-last_qc_at: "2026-08-09T10:29:26"
+last_qc_at: "2026-08-17T12:20:11"
 last_qc_outcome: "rewrote"
 ---
 
@@ -47,9 +47,9 @@ The motif appears at its most consoling. The whole accepts even a maximally limi
 
 ## Bridges
 
-- **Friston (threshold-crossing in evidence accumulation)** — *formal, well-developed.* Minimal genuine input crossing into a changed state; sharpest resource.
-- **Rohr (Universal Christ; grace exceeding the act)** — *theological / contemplative.* Why remission outruns contrition's measure.
-- **Wright (the minimal true turn suffices for inclusion)** — *scriptural, high within method.* The gospel pattern of disproportionate mercy.
+- **Friston (threshold-crossing in evidence accumulation)** — *formal, well-developed.* Minimal genuine input crossing into a changed state; sharpest resource. *Deliberately unanchored:* read at the body, **no triplet in `traditions/friston/prs_triplets.md` glosses threshold-crossing in evidence accumulation**. The nearest neighbours (PRS-17, risk/ambiguity collapsed into expected-free-energy minimization) give the optimization target, not the sufficiency threshold. The mechanism is genuinely Fristonian; the *id* would be fabricated, so none is given.
+- **Rohr (Universal Christ; grace exceeding the act)** — *theological / contemplative.* Why remission outruns contrition's measure. *Also deliberately unanchored:* Rohr **PRS-03** is the Universal Christ triplet, but its body warrants *multi-tradition inquiry* (the divine pattern present in all creation, so encountering truth through biology and contemplation at once is not eclecticism), not grace-exceeding-the-measure. **PRS-30** is nearer — grace universal ontologically, propagating strictly person-to-person — but it answers *transmission*, not *disproportion*. Neither is the home; the register has no disproportion-of-grace entry.
+- **Wright PRS-34 in the Wright-tradition wiki** (`traditions/wright/prs_triplets.md`) — *scriptural, high within method.* Justification as God's declaration of covenant membership, with table fellowship rather than badge-keeping as the operative test of belonging. This anchors the bullet's **anti-merit** half precisely — inclusion is not "a wage earned by sufficient sorrow" — and it is the half this day turns on. It does *not* anchor "minimal": Wright's register argues against merit-as-badge, not for a lower bound on the turn's size, and the gospel instances (the tax collector, the thief) are read at canonical Wright rather than from a triplet.
 - **PRS-29 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / analytic-Thomistic.* The will's quiescence: a non-resisting movement that is nevertheless genuinely the agent's own act, into which grace is infused. This is the threshold-and-disproportion structure in Thomistic terms — the minimal turn is the agent's own, and what exceeds it is given. The register carries no contrition- or penance-specific entry, so this is the nearest true home read at the body, not a penance id.
 
 ## Where this leaves us

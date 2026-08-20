@@ -3,21 +3,21 @@ day: 163
 title: Adjuration and Hymns (Contemporary)
 pairs_with: "[[Day-163 - Adjuration and Hymns]]"
 length_target_words: 1500
-length_actual_words: 1409
-length_ratio_to_target: 0.939
+length_actual_words: 1596
+length_ratio_to_target: 1.064
 length_tier: short
 mind_first_reframe: "Under mind/conscious-realist monism, adjuration (Q.90) and hymn (Q.91) are the outward and inward faces of one resonance-modulation loop. The perspective-limited agent uses the unlimited witness as a modulation handle — outward to bind another limited agent through invocation of the divine name, inward to transform its own state through praise. Predictive entrainment (Friston), the embodied prosody of song (McGilchrist), and collective positivity resonance (Fredrickson) describe what Aquinas saw as the stirring of devotion; Wright's reading of Philippians 2:6–11 and Colossians 1:15–20 makes early-Christian hymnody load-bearing christology, not ornament."
 central_theme_thread: "Adjuration says: what I cannot bind, the One who sees the whole can bind through my words. Hymn says: what I cannot transform in myself, the One who sees the whole reshapes through the praise I voice. Both are perspective-limited acts that route the work of transformation through an anchor that exceeds the limited perspective. Salvation worked out in fear and trembling proceeds through this resonance-modulation loop, in which limited singers and limited speakers participate in the loving unity that is computing them."
 karpathy_wiki_sources:
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; song and collective affect)"
-  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric reception of music; the embodied prosody of praise)"
-  - "wiki/traditions/friston/wiki.md (vocalization as precision-weighted self-modulation; predictive entrainment)"
-  - "wiki/traditions/kastrup/wiki.md (analytic-idealist reading of resonance with the wider field)"
-  - "wiki/traditions/wright/wiki.md (early-Christian hymnody as theology-in-song: Phil 2:6-11, Col 1:15-20)"
-  - "wiki/traditions/rohr/wiki.md (contemplative reception; song as 'first form' of contemplation)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance as a biophysiological coupling event scaling from dyadic interaction to group resonance — collective presence, shared meditation, communal worship; PRS-02 love as objective neurophysiological synchrony — vagal tone, oxytocin, neural phase-locking — the measurable substrate of the group-song effect)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-11 religion and right-hemisphere epistemic access — ritual and communal worship as what cultivates the receptive mode; the embodied prosody of praise)"
+  - "traditions/friston/prs_triplets.md (PRS-28 neuromodulation as precision-weighting over selected channels — vocalization as precision-weighted self-modulation; PRS-04 the organism as active modeler — voicing as generative-model alignment)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — the dissociated points of view whose coupling hymn-singing effects) + canonical: *The Idea of the World*, ch. 8"
+  - "canonical: Wright, *Paul and the Faithfulness of God*, ch. 9, on Phil 2:6-11 and Col 1:15-20 as primary christological hymns. No numbered Wright triplet covers hymnody-as-christology; anchored to the canonical work per Summa.md's fallback."
+  - "canonical: Rohr, *The Universal Christ*, ch. 11-12, on song as the first form of contemplation leading into silence. No numbered Rohr triplet covers song or the cataphatic-to-apophatic progression; anchored to the canonical work per Summa.md's fallback."
 evidence_strength_summary: "Empirical on the neurobiology of group song and positivity resonance (Fredrickson and collaborators). Empirical/clinical on hemispheric processing of music (McGilchrist). Theological-strong on early-Christian hymnody as load-bearing christology (Wright). The integrative claim — that hymn and adjuration are two directions of a single self/other-modulation loop — is speculative-integrative."
 tags: [synthesis, day/163, theme/self-modulation, theme/agent-binding, pars/II-II, q/90-91]
-last_qc_at: "2026-08-07T04:26:04"
+last_qc_at: "2026-08-18T22:32:02"
 last_qc_outcome: "rewrote"
 ---
 
@@ -37,7 +37,7 @@ The problem is the **state-modulation problem**. A limited agent cannot will her
 
 The C2A2 paradigm supplies four converging moves.
 
-**Friston** supplies the formal core: vocalization, especially patterned vocalization, is a form of precision-weighted self-prediction. When the agent sings, she generates a strong proprioceptive and acoustic prediction; the resulting closed-loop tightens the generative model around the content she is voicing. Habash's intuition that *we praise God for our own sake* is the active-inference principle: the act of formulating "the Lord is good" *aligns the agent's generative model with the content*. The Aquinian claim that song "moves a heart to resolution" is now mechanistic.
+**Friston** supplies the formal core: vocalization, especially patterned vocalization, is a form of precision-weighted self-prediction. When the agent sings, she generates a strong proprioceptive and acoustic prediction; the resulting closed-loop tightens the generative model around the content she is voicing. Habash's intuition that *we praise God for our own sake* is the active-inference principle: the act of formulating "the Lord is good" *aligns the agent's generative model with the content*. The Aquinian claim that song "moves a heart to resolution" thereby acquires a candidate mechanism — though the two register entries carrying it (PRS-28, PRS-04) are both medium-confidence and neither was derived for vocalization, so this is a mechanistic *proposal*, not a mechanism established for song.
 
 **McGilchrist** supplies the hemispheric reading. Music engages the right hemisphere more deeply than language; the right hemisphere is the hemisphere of holistic reception, openness, and embodied presence. Augustine's intuition — quoted by Aquinas — that song stirs the faint-hearted to devotion is McGilchrist's principle that the right hemisphere's mode of receiving is the mode in which the agent is most permeable to what exceeds her current frame.
 
@@ -57,7 +57,7 @@ The contemporary-parallel response: *adjuration and hymn are two directions of a
 
 **Where it reframes:** Aquinas grounds the effect in the reverence due to the divine name and the natural responsiveness of the soul to music. The contemporary parallel grounds the effect in measurable precision-weighting (Friston), hemispheric mode-shift (McGilchrist), and inter-bodily resonance (Fredrickson) — all converging from different evidence streams on the same phenomenon Aquinas was tracking.
 
-**Where evidence is firm vs speculative:** the neurobiology of group song is strong empirical territory. The active-inference reading of vocalization-as-self-prediction is formal and accumulating empirical support. The hemispheric reading is suggestive-clinical. Wright's hymn-as-primary-christology reading is strong within New Testament scholarship. The Kastrup metaphysical reading is speculative-integrative and depends on the larger monist program.
+**Where evidence is firm vs speculative:** the neurobiology of group song is strong empirical territory. The active-inference reading of vocalization-as-self-prediction is formal, but its two anchoring entries are the weakest cited here — PRS-28 rests on a lecture the register records as forthcoming, and PRS-04 is an implicit reconstruction at medium confidence — so this reading is a well-posed model, not an accumulating empirical result. The hemispheric reading is suggestive-clinical. Wright's hymn-as-primary-christology reading is strong within New Testament scholarship. The Kastrup metaphysical reading is speculative-integrative and depends on the larger monist program.
 
 ## The central-theme thread
 
@@ -65,8 +65,8 @@ Notice how cleanly the adjuration/hymn pair instantiates the central theme. The 
 
 ## Bridges
 
-- **PRS-28 + PRS-04 in the Friston-tradition wiki** (precision-weighting over belief updates; the organism as active modeler — policy-content alignment via voicing) — formal core of "praise is for our sake." *Formal, accumulating empirical support.*
-- **Fredrickson positivity-resonance and group-song literature** — empirical anchor for the collective-modulation effect Aquinas attributes to communal song. *Empirical, moderately-strong, tradition-bound.*
+- **PRS-28 + PRS-04 in the Friston-tradition wiki** (precision-weighting over belief updates; the organism as active modeler — policy-content alignment via voicing) — formal core of "praise is for our sake." *Formal, but both entries are weaker than the surrounding empirical bridges and should be read at their registered strength: PRS-28 is Confidence Medium with the register noting the lecture is forthcoming and the abstract represents Friston's stated intent rather than a published derivation, and PRS-04 is marked (Implicit), Confidence Medium — a reconstruction of the predictive-coding picture, not a measured result. The application of both to vocalization is this synthesis's extension.*
+- **PRS-03 + PRS-02 in the Fredrickson-tradition wiki** (positivity resonance as a coupling event scaling from dyad to group resonance, explicitly including communal worship; love as objective neurophysiological synchrony — vagal tone, oxytocin, neural phase-locking) — empirical anchor for the collective-modulation effect Aquinas attributes to communal song. *Empirical, moderately-strong, tradition-bound.*
 - **PRS-11 in the McGilchrist-tradition wiki** (religion and right-hemisphere epistemic access — communal worship and ritual as what cultivates the receptive mode) — hemispheric reading of the song-stirs-devotion phenomenon. *Clinical-historical, suggestive.*
 - **Wright, *Paul and the Faithfulness of God*, ch. 9** on Phil 2:6–11 and Col 1:15–20 as primary christological hymns — the historical evidence that the earliest church did christology *by singing it*. *Theological-historical; the scriptural-historical anchor for early Christian hymnody.*
 - **Kastrup, *The Idea of the World*, ch. 8** — analytic-idealist reading of resonance between dissociated alters. *Metaphysical, speculative.*
