@@ -36,6 +36,12 @@ HEALTH="http://127.0.0.1:3002/health"
 ARCHIVE="/Volumes/H-Drive/Claude-OpenStory-live/OpenStory-data-older-than-24h"
 STATE="$HOME/Library/Application Support/openstory-watchdog"
 LOG="$HOME/Library/Logs/openstory-watchdog.log"
+# Marker file, in the repo root beside sync_vault.FAILED and read by
+# check_scheduler_health.py. See marker_write() for why a notification was not
+# enough. BASH_SOURCE resolves to the primary tree: launchd runs scripts/ from
+# there, never from a worktree.
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PRECOND_MARKER="$REPO/openstory_precondition.FAILED"
 FAILS="$STATE/consecutive_failures"
 MAX_RESTARTS=3
 # Seconds a freshly-started backend is left alone before it counts as unhealthy.
@@ -56,6 +62,24 @@ mkdir -p "$STATE"
 
 log()    { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 notify() { osascript -e "display notification \"$1\" with title \"OpenStory watchdog\"" 2>/dev/null || true; }
+
+# A notification is not an alarm. This watchdog fired the H-Drive notification
+# 270 times between 2026-07-24 and 08-24 and not one of them was acted on, while
+# ingest sat dead for nine days (and, before that, a fortnight in July). A banner
+# is gone the moment it is dismissed; a marker file on disk survives being
+# ignored, which is the whole property that makes sync_vault.FAILED work.
+#
+# Format matches sync_vault.sh's fail_loud() exactly, because
+# check_scheduler_health.py parses the leading stamp rather than the mtime.
+marker_write() {
+  printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$1" > "$PRECOND_MARKER"
+}
+# Cleared on the precondition being SATISFIED, not on the backend being healthy.
+# The marker's subject is the missing volume, so the volume coming back is what
+# makes it false -- a backend that is still booting afterwards is a separate fact.
+marker_clear() {
+  rm -f "$PRECOND_MARKER"
+}
 # One ping is not evidence. A single 5s timeout buys a 4m15s cold boot (measured
 # 2026-07-29), so the cheap question gets asked three times over ~20s before it is
 # allowed to cost that. Observed 2026-07-29/30: four restarts between 23:03 and
@@ -198,6 +222,12 @@ lag_ok() {
 # ── Healthy = answering AND ingesting ───────────────────────────────────────
 # Order matters: a backend that is not answering cannot be judged on lag, and the
 # ping is the cheaper question. Only one reason is reported, the first that fires.
+# Independent of anything below: if the volume is there, the marker is false.
+# This has to run on EVERY path, not just the failure path -- when the backend is
+# healthy the precondition gate is never reached, and a marker nobody clears
+# becomes a permanent false alarm, which is its own way of going unread.
+[ -d "$ARCHIVE" ] && marker_clear
+
 REASON=""
 SERVING=0        # did the port answer this run? decides the veto leash below
 if ! ping_ok; then
@@ -234,6 +264,7 @@ log "$REASON"
 if [ ! -d "$ARCHIVE" ]; then
   log "PRECONDITION MISSING: $ARCHIVE absent (H-Drive unmounted). NOT restarting."
   notify "H-Drive not mounted — OpenStory cannot start. Plug the drive in."
+  marker_write "H-Drive not mounted: $ARCHIVE absent. OpenStory ingest is STOPPED and a restart cannot fix it — the drive must be plugged in. Sessions stop being created within about a day of the volume going away."
   exit 1
 fi
 

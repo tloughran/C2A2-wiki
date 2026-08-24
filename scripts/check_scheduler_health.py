@@ -224,6 +224,15 @@ FAILURE_MARKERS = [
         "path": "sync_vault.FAILED",
         "note": "written by sync_vault.sh fail_loud(); removed on a clean run",
     },
+    {
+        "owner": "com.tomloughran.openstory.watchdog",
+        "path": "openstory_precondition.FAILED",
+        "note": "H-Drive unmounted; written by openstory-watchdog.sh's precondition "
+                "gate, cleared when the volume returns. The gate itself is correct "
+                "-- restarting into a dangling symlink cannot help -- but it only "
+                "ever notified, and 270 notifications 2026-07-24..08-24 bought "
+                "nine days of dead ingest",
+    },
 ]
 
 MARKER_STAMP = re.compile(r"^\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\]\s*(.*)")
