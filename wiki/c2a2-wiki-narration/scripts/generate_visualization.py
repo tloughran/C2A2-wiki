@@ -5,6 +5,7 @@ Usage: python generate_visualization.py <input.json> <output.html>
 """
 
 import json
+import re
 import sys
 import os
 from pathlib import Path
@@ -4105,10 +4106,28 @@ def main():
 
     html = generate_html(data, nodes_json, links_json)
 
+    # Privacy: strike every email address from the PUBLISHED html, exactly as
+    # assemble_review_log.py does on every build of review_log.html.
+    #
+    # 2026-08-24: a regen embedded the maintainer's personal address. One occurrence
+    # came from a file that commit_daily_run.sh's authorship guard had HELD out of
+    # that morning's commit -- the guard protects the commit, not an artifact built
+    # from the same working tree, and this file is published to GitHub Pages. Seven
+    # vault .md files carry the address and the agents keep re-adding it, so
+    # scrubbing the sources is not a fix that stays fixed; scrubbing at build time
+    # is. The review log has done this since June and the sociogram had no
+    # equivalent, on the same publication surface.
+    #
+    # Safe inside the embedded JSON: the replacement introduces no quotes or
+    # backslashes, and the wrapper's node --check runs after this.
+    html, n_scrub = re.subn(
+        r"[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}", "[email removed]", html)
+
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     with open(output_path, 'w') as f:
         f.write(html)
 
+    print("Scrubbed " + str(n_scrub) + " email address(es)")
     print("Generated: " + output_path)
     print("Size: " + str(len(html)) + " chars")
     print("Nodes: " + str(len(nodes)) + ", Links: " + str(len(links)))
