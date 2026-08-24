@@ -58,3 +58,30 @@ This is the point at which the contemplative literature's habitual first-person 
 **Synthesis claim.** This is not a difference in emphasis and it is not resolvable by charity. If being is predicated univocally, God and creature fall under one sense of "is" and differ in mode or intensity; if analogically, they do not, and every statement common to both is systematically re-referred. The consequence for this file specifically: **the existing Rohr↔Stump convergences recorded in this bridge and in `master/cross_program_index.md` may be convergences in English only.** The second-personal-knowing entries above are the ones most exposed, because "knowledge of a person" applied to God means something different depending on whether "person" is predicated univocally. The honest move is to audit rather than to reconcile — and the audit is cheap, because it is a question that can be put to each recorded convergence one at a time: does this survive if "is" means the same thing on both sides, and does it survive if it does not? A convergence that survives both is real. One that survives only one is an artefact of the vocabulary.
 
 **Open question the wiki cannot yet answer.** Whether Rohr is committed to univocity as a *metaphysical* thesis or is using Scotus as devotional warrant for a claim he would not defend in that register. Nothing in the source settles it, and the difference decides whether this is a live philosophical disagreement in the network or a citation the Rohr tradition should not have been given. Note the asymmetry of cost: if Rohr means it, Thomism must respond; if he does not, the Universal Christ loses the ontological grounding this proposal was captured for, and PRS-CANDIDATE-01 reverts to what the proposal itself calls "pious re-description."
+
+### 2026-08-24 — Adjudicated: the fork is noted, not resolved; the convergences proceed
+
+*Human adjudication (TL), 2026-08-24.* Answering the open question left by the 2026-08-16 entry above.
+
+**Ruling.** Rohr's metaphysics is **exploratory, not declarative**. Naming Scotus and univocity in a CAC daily meditation adapted from *Eager to Love* is not the act of taking a position in a scholastic dispute; it is reaching for a warrant. He is therefore not held to univocity as a metaphysical commitment, and the network is **not** treated as holding two incompatible answers to how being is predicated. The recorded Rohr↔Stump convergences stand, and the two traditions are read as moving together toward a unified perspective rather than as forked.
+
+**What this does not do.** It does not settle the philosophical question, and it must not be cited as though it had. The fork is real and stays on the record: *if* Rohr ever defends univocity in a philosophical register — argued, against analogy, in his own voice — this ruling lapses and the audit below has to be re-run against a live disagreement. Recording the possibility is the point; a tension that is merely dropped is indistinguishable later from one that was never seen.
+
+**The cost, stated rather than absorbed.** The 2026-08-16 entry named the asymmetry: if Rohr does not mean univocity metaphysically, the Universal Christ loses the ontological grounding PROP-2026-08-16-003 was captured for, and PRS-CANDIDATE-01 reverts toward what that proposal itself calls "pious re-description." That is the direction this ruling points. PRS-CANDIDATE-01 should be ingested, if it is ingested, as *Rohr reaching for an ontological warrant* — not as *Rohr supplying one*. The Scotus citation is evidence about Rohr's ambition for the claim, not about the claim's metaphysical standing.
+
+**The audit, run before the ruling.** Both questions were put to each of the four recorded convergences in this file — does it survive if "is" means the same thing on both sides, and does it survive if it does not?
+
+| entry | univocal | analogical |
+|---|---|---|
+| 2026-07-19 — compassionate gaze | survives | survives |
+| 2026-07-26 — faith at Scripture-scale | survives | **fails** |
+| 2026-08-02 — second-personal knowledge at community scale | survives | survives |
+| 2026-08-09 — second-personal knowing, stated twice | survives | survives, weakened |
+
+**The 08-16 entry aimed its worry slightly wrong, and the correction is worth keeping.** It named "the second-personal-knowing entries" collectively as most exposed. Three of the four turn on transmission *between creatures* — a director's gaze, the exemplar roster, "the believers who make you want to believe" — where how being is predicated of God and creature never enters. They are robust under either doctrine.
+
+The genuinely exposed entry is **2026-07-26**, and not for the reason given: it is not about second-personal knowing at all, it is about *being*. "Mutual exchange of being," the Risen Christ revealing "the human wounds of God," reciprocal self-disclosure. Under univocity the mutuality is straightforward; under analogy, "exchange of being" across the creator/creature line is asymmetric in precisely the way analogy exists to mark, and **mutual** claims more than it is entitled to. Under this ruling that entry proceeds, but its "mutual exchange of being" phrasing is the first thing to revisit if the ruling lapses.
+
+**2026-08-09 survives weakened.** Its claim is about the output signature of a mode of knowing — it yields relation, never a point estimate — and that argument runs under either doctrine. But its force depends on "relation" meaning the same thing in the divine and the human case, which is what analogy denies. The diagnostic still works; under analogy it stops being one diagnostic and becomes two.
+
+**Note for the record:** the strongest Rohr↔Stump convergence the wiki holds (2026-08-02, so described in its own entry) is one of the robust ones. The audit did not cost the network its best material.
