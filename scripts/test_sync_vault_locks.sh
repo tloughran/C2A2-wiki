@@ -66,7 +66,30 @@ expect "the lock block was extracted from the real sync_vault.sh" "$extracted" "
 expect "extraction pulled in the lsof-based holder test" \
   "$(grep -c 'LSOF" -t --' "$HARNESS")" "1"
 expect "extraction pulled in the missing-lsof fail-safe" \
-  "$(grep -c 'unknown-no-lsof' "$HARNESS")" "1"
+  "$([ "$(grep -c 'unknown-no-lsof' "$HARNESS")" -ge 1 ] && echo yes || echo no)" "yes"
+
+# A REAL git process holding the lock. The block now asks whether the holder is a git
+# process, not merely whether one exists, so a /bin/bash holder is a different case
+# with a different right answer (case 8) -- not a stand-in for this one.
+#
+# Copying /bin/bash to $WORK/git and running that does not work: macOS SIGKILLs a
+# copied platform binary on code-signing grounds. So this uses git itself.
+# `git hash-object --stdin` needs no repository and blocks until stdin reaches EOF, so
+# feeding it a fifo nobody closes keeps a genuine `git` alive for the whole test,
+# holding fd 9 on the lock.
+FIFO="$WORK/holder-fifo"
+mkfifo "$FIFO"
+git_hold() {  # git_hold <lockfile> -> sets HOLDER
+  /bin/bash -c 'exec 9>"$2"; exec git hash-object --stdin <"$1"' _ "$FIFO" "$1" &
+  HOLDER=$!
+  exec 8>"$FIFO"     # hold the write end open so git never sees EOF
+  sleep 0.5
+}
+git_release() {
+  exec 8>&-
+  kill "$HOLDER" 2>/dev/null || true
+  wait "$HOLDER" 2>/dev/null || true
+}
 
 fresh_repo() {
   rm -rf "$WORK/repo"
@@ -105,11 +128,9 @@ echo "3. a lock HELD by a live process is NOT stolen (the bug this fixes):"
 R=$(fresh_repo)
 : > "$R/.git/index.lock"
 touch -t 202601010000 "$R/.git/index.lock"  # old enough that AGE ALONE would clear it
-/bin/bash -c 'exec 9>"$1"; sleep 6' _ "$R/.git/index.lock" &
-HOLDER=$!
-sleep 0.5
+git_hold "$R/.git/index.lock"
 OUT=$(run "$R"); RC=$?
-wait "$HOLDER" 2>/dev/null
+git_release
 expect "held lock -> refuses, exit 1" "$RC" "1"
 expect "held lock -> the lock SURVIVES (never stolen)" \
   "$([ -e "$R/.git/index.lock" ] && echo present || echo gone)" "present"
@@ -176,6 +197,49 @@ for name in index.lock HEAD.lock refs/heads/main.lock; do
   expect "$name is seen and cleared" \
     "$([ -e "$R/.git/$name" ] && echo present || echo gone)" "gone"
 done
+
+echo
+echo "8. a lock open ONLY by a non-git process is NOT a write in flight (the VM case):"
+# 2026-08-23: com.apple.Virtualization.VirtualMachine held a read fd on a lock git had
+# abandoned a week earlier. Under the old holder test that lock read as live forever
+# and the sync could never clear one again. It is still only cleared once it is old.
+R=$(fresh_repo)
+: > "$R/.git/index.lock"
+touch -t 202601010000 "$R/.git/index.lock"
+/bin/bash -c 'exec 9>"$1"; sleep 6' _ "$R/.git/index.lock" &
+HOLDER=$!
+sleep 0.5
+OUT=$(run "$R"); RC=$?
+kill "$HOLDER" 2>/dev/null || true
+wait "$HOLDER" 2>/dev/null || true
+expect "foreign holder, old lock -> exit 0" "$RC" "0"
+expect "foreign holder, old lock -> cleared" \
+  "$([ -e "$R/.git/index.lock" ] && echo present || echo gone)" "gone"
+expect "foreign holder, old lock -> never reported as HELD" \
+  "$(echo "$OUT" | grep -c 'HELD by a live process')" "0"
+expect "foreign holder, old lock -> named as non-git rather than as a git write" \
+  "$([ "$(echo "$OUT" | grep -c 'not git')" -ge 1 ] && echo yes || echo no)" "yes"
+expect "foreign holder, old lock -> proceeds to the git work" \
+  "$(echo "$OUT" | grep -c PROCEEDED)" "1"
+
+echo
+echo "9. a foreign holder on a YOUNG lock is still left alone:"
+# The margin that makes case 8 safe. A sandboxed git writing THROUGH that mount may be
+# visible to the host only as the VM process, so age, not the holder, has to clear it.
+R=$(fresh_repo)
+: > "$R/.git/index.lock"
+/bin/bash -c 'exec 9>"$1"; sleep 6' _ "$R/.git/index.lock" &
+HOLDER=$!
+sleep 0.5
+OUT=$(GIT_LOCK_ATTEMPTS=2 GIT_LOCK_WAIT_SECS=1 GIT_LOCK_STALE_AGE=600 \
+        /bin/bash "$HARNESS" "$R" 2>&1); RC=$?
+kill "$HOLDER" 2>/dev/null || true
+wait "$HOLDER" 2>/dev/null || true
+expect "foreign holder, young lock -> refuses, exit 1" "$RC" "1"
+expect "foreign holder, young lock -> the lock SURVIVES" \
+  "$([ -e "$R/.git/index.lock" ] && echo present || echo gone)" "present"
+expect "foreign holder, young lock -> never claims to have cleared anything" \
+  "$(echo "$OUT" | grep -c 'ABANDONED')" "0"
 
 echo
 if [ "$FAILURES" -ne 0 ]; then

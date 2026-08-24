@@ -125,6 +125,70 @@ lock_holder() {
   "$LSOF" -t -- "$1" 2>/dev/null | tr '\n' ' ' || true
 }
 
+# A holder is only a reason to WAIT if it is a git process.
+#
+# 2026-08-24: the 08-23 sync died reporting "HELD by a live process: index.lock(pid
+# 56282)". Pid 56282 was com.apple.Virtualization.VirtualMachine -- the XPC service
+# backing the sandbox bind-mount -- holding 7610 READ fds across this repo, among
+# them an ORIG_HEAD.lock that git had abandoned on 08-16. A read fd from the mount is
+# not a write in flight, but lsof cannot tell the two apart, so from 08-16 onward
+# EVERY abandoned lock looked permanently live and the sync could never clear one
+# again. The lock-wait logic was correct and still lost, because it was asking the
+# wrong question: not "is a git process writing this" but "does anyone have it open".
+#
+# Foreign holders no longer make a lock held. They make it merely present, which
+# falls through to the existing age test unchanged -- deliberately, because a
+# sandboxed git writing THROUGH that mount may be visible to the host only as the VM
+# process. So a foreign-held lock is still never removed until it is
+# GIT_LOCK_STALE_AGE old. A real git write finishes in seconds; last night's lock was
+# eight days old. Both properties the block already had are kept: never steal from a
+# live git, still clear a dead lock.
+is_git_pid() {
+  local comm
+  comm=$(ps -p "$1" -o comm= 2>/dev/null || true)
+  case "${comm##*/}" in
+    git|git-*) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+# Only the git holders. This is what decides held-vs-not.
+git_lock_holder() {
+  local pids pid out
+  pids=$(lock_holder "$1")
+  case "$pids" in
+    unknown-no-lsof) echo "unknown-no-lsof"; return 0 ;;
+  esac
+  out=""
+  for pid in $pids; do
+    if is_git_pid "$pid"; then out="$out$pid "; fi
+  done
+  echo "$out"
+}
+
+# Every holder, named and classified, for the log line and the marker file. Last
+# night's marker said "Another git process is mid-write" about a virtual machine;
+# a wrong diagnosis in a marker file is worse than no marker.
+lock_holder_detail() {
+  local pids pid comm out
+  pids=$(lock_holder "$1")
+  case "$pids" in
+    unknown-no-lsof) echo "$pids"; return 0 ;;
+  esac
+  out=""
+  for pid in $pids; do
+    comm=$(ps -p "$pid" -o comm= 2>/dev/null || true)
+    comm="${comm##*/}"
+    [ -n "$comm" ] || comm="gone"
+    if is_git_pid "$pid"; then
+      out="$out$pid($comm) "
+    else
+      out="$out$pid($comm, not git) "
+    fi
+  done
+  echo "$out"
+}
+
 lock_age() {
   local now mt
   now=$(date +%s)
@@ -133,20 +197,25 @@ lock_age() {
 }
 
 wait_for_git_locks() {
-  local attempt lock present held ripe holder n
+  local attempt lock present held foreign ripe holder n
   attempt=1
   while [ "$attempt" -le "$GIT_LOCK_ATTEMPTS" ]; do
-    present=""; held=""; ripe=1
+    present=""; held=""; foreign=""; ripe=1
     while IFS= read -r lock; do
       [ -n "$lock" ] || continue
       [ -e "$lock" ] || continue
       present="$present$lock
 "
-      holder=$(lock_holder "$lock")
+      holder=$(git_lock_holder "$lock")
       if [ -n "$holder" ]; then
         held="$held $(basename "$lock")(pid ${holder% })"
-      elif [ "$(lock_age "$lock")" -lt "$GIT_LOCK_STALE_AGE" ]; then
-        ripe=0
+      else
+        if [ -n "$(lock_holder "$lock")" ]; then
+          foreign="$foreign $(basename "$lock")[$(lock_holder_detail "$lock")]"
+        fi
+        if [ "$(lock_age "$lock")" -lt "$GIT_LOCK_STALE_AGE" ]; then
+          ripe=0
+        fi
       fi
     done <<EOF
 $GIT_LOCKS
@@ -155,6 +224,9 @@ EOF
     [ -z "$present" ] && return 0
 
     n=$(printf '%s' "$present" | grep -c . || true)
+    if [ -n "$foreign" ]; then
+      log "git lock(s) open ONLY by non-git process(es) — not a write in flight, so age decides:$foreign"
+    fi
     if [ -n "$held" ]; then
       log "git lock HELD by a live process:$held — waiting ${GIT_LOCK_WAIT_SECS}s (attempt $attempt/$GIT_LOCK_ATTEMPTS)"
     elif [ "$ripe" -eq 1 ]; then
@@ -181,11 +253,11 @@ EOF
   held=""
   while IFS= read -r lock; do
     [ -n "$lock" ] || continue
-    [ -e "$lock" ] && held="$held $(basename "$lock")(holder: $(lock_holder "$lock"))"
+    [ -e "$lock" ] && held="$held $(basename "$lock")(holder: $(lock_holder_detail "$lock"))"
   done <<EOF
 $GIT_LOCKS
 EOF
-  fail_loud "git lock still present after $(( GIT_LOCK_ATTEMPTS * GIT_LOCK_WAIT_SECS ))s:$held. Another git process is mid-write — NOT stealing the lock. Nothing committed, nothing pushed."
+  fail_loud "git lock still present after $(( GIT_LOCK_ATTEMPTS * GIT_LOCK_WAIT_SECS ))s:$held. A git process is mid-write — NOT stealing the lock. Nothing committed, nothing pushed."
 }
 
 wait_for_git_locks

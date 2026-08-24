@@ -203,6 +203,60 @@ def verdict_git_debris(git_dir, now_local, min_age_hours=GIT_DEBRIS_MIN_AGE_HOUR
     return (OK, "git debris: no stale tmp_obj or lock files")
 
 
+# --------------------------------------------------------- failure markers
+
+# A file whose EXISTENCE is the report.
+#
+# sync_vault.sh writes sync_vault.FAILED on every failure path and rm -f's it
+# on a clean run, so the file is present exactly when the last run died. That
+# marker sat in the repo root from 21:01 on 2026-08-23 and nothing read it --
+# the same defect that let 08-19..08-22 go unpublished.
+#
+# Every other check in this script is scoped to an artifact that a *running*
+# job maintains, so a job that does not run produces nothing to be stale. A
+# marker inverts that: the non-event is the subject.
+#
+# The timestamp is read from the line the writer stamps into the file, never
+# from the mtime -- same rule as the artifact checks.
+FAILURE_MARKERS = [
+    {
+        "owner": "com.tloughran.summa-vault-sync",
+        "path": "sync_vault.FAILED",
+        "note": "written by sync_vault.sh fail_loud(); removed on a clean run",
+    },
+]
+
+MARKER_STAMP = re.compile(r"^\[(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})\]\s*(.*)")
+
+
+def verdict_failure_marker(spec, repo=None):
+    """FAIL while the marker exists, OK when it does not.
+
+    Deliberately no age tolerance, unlike the artifact checks. A marker is not
+    data that has gone stale and might still be fine; it is a job stating that
+    it died, and it stays true until that job succeeds and clears it. Ageing it
+    out would re-create the exact silence it exists to break.
+    """
+    repo = REPO if repo is None else repo
+    rel = spec["path"]
+    owner = spec["owner"]
+    path = os.path.join(repo, rel)
+
+    if not os.path.exists(path):
+        return (OK, f"{owner}: no {rel} — last run did not fail")
+
+    try:
+        with open(path) as fh:
+            first = fh.readline().strip()
+    except OSError as exc:
+        return (FAIL, f"{owner}: {rel} present but unreadable ({exc})")
+
+    match = MARKER_STAMP.match(first)
+    if match:
+        return (FAIL, f"{owner}: FAILED at {match.group(1)} -- {match.group(2)}")
+    return (FAIL, f"{owner}: {rel} present, first line unparsed: {first!r}")
+
+
 # --------------------------------------------------------------------------- cron
 
 
@@ -600,6 +654,9 @@ def main():
 
     results.append(verdict_git_debris(git_common_dir(REPO), now_local))
 
+    for spec in FAILURE_MARKERS:
+        results.append(verdict_failure_marker(spec))
+
     counts = {OK: 0, WARN: 0, FAIL: 0}
     for level, line in results:
         counts[level] += 1
@@ -609,7 +666,7 @@ def main():
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
         f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
-        f"1 git-debris check: "
+        f"1 git-debris check, {len(FAILURE_MARKERS)} failure marker(s): "
         f"{counts[OK]} OK, {counts[WARN]} WARN, {counts[FAIL]} FAIL"
     )
     print(summary)

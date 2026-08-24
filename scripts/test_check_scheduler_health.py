@@ -13,6 +13,9 @@ broken, so the cases that matter are the ones that must NOT come back OK:
     task reports a run every morning (the metabolism-regen-daily failure)
   - an artifact that does not date itself at all, or has vanished
   - a cron expression we cannot parse (must fail loud, never match-everything)
+  - a failure marker present in the repo (the sync_vault.FAILED that sat
+    unread from 2026-08-23 21:01), including a malformed one, which must
+    never read as healthy just because its first line did not parse
 
 The cron cases are separate: previous_fires is the arithmetic the whole
 did-it-fire verdict rests on, and a matcher that silently matched nothing would
@@ -338,6 +341,46 @@ def main():
     expect("git_common_dir on a non-repo returns None, rather than a bad guess",
            mod.git_common_dir(tempfile.gettempdir()) in (None,)
            or not Path(mod.git_common_dir(tempfile.gettempdir())).is_dir(), True)
+
+    # -- failure markers ---------------------------------------------------
+    # The marker's whole job is to survive being ignored, so every path that
+    # could quietly return OK is driven here. A marker that exists but cannot
+    # be parsed is still a job saying it died.
+    spec = {"owner": "sync", "path": "sync_vault.FAILED"}
+
+    with tempfile.TemporaryDirectory() as tmp:
+        level, line = mod.verdict_failure_marker(spec, repo=tmp)
+        expect("no marker reads OK", level, mod.OK)
+        expect("no-marker line says the run did not fail",
+               "did not fail" in line, True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        marker = os.path.join(tmp, "sync_vault.FAILED")
+        with open(marker, "w") as fh:
+            fh.write("[2026-08-23 21:01:34] git lock still present after 90s\n")
+        level, line = mod.verdict_failure_marker(spec, repo=tmp)
+        expect("marker present is a FAIL", level, mod.FAIL)
+        expect("marker line carries its own stamp, not an mtime",
+               "2026-08-23 21:01:34" in line, True)
+        expect("marker line carries the writer's message",
+               "git lock still present" in line, True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        marker = os.path.join(tmp, "sync_vault.FAILED")
+        with open(marker, "w") as fh:
+            fh.write("something changed the format\n")
+        level, line = mod.verdict_failure_marker(spec, repo=tmp)
+        expect("unparsed marker still FAILs", level, mod.FAIL)
+        expect("unparsed marker says so", "unparsed" in line, True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        open(os.path.join(tmp, "sync_vault.FAILED"), "w").close()
+        level, _ = mod.verdict_failure_marker(spec, repo=tmp)
+        expect("empty marker still FAILs", level, mod.FAIL)
+
+    # The shipped roster must actually point at something a producer writes.
+    expect("sync_vault.FAILED is on the shipped marker roster",
+           any(s["path"] == "sync_vault.FAILED" for s in mod.FAILURE_MARKERS), True)
 
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")
