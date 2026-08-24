@@ -155,3 +155,22 @@ requirement (independence axes, against the redundancy trap), dissensus as a mea
 detector output, the cost collision with Pathway 29 and the resulting one-track-pilot
 discipline, an operational definition demand on the adjudicator's agreement contract,
 and an explicit falsifiable success criterion.
+
+**Earlier origin, recorded 2026-08-24.** The DEVPATH-031 proposal was not the idea's first
+appearance. This pathway descends from the 2026-04-09 Thousand Brains redesign proposal
+(revised 2026-04-10), where it appears as **revised change 5** (tripling of tradition agents
+for intra-tradition consensus) together with half of **revised change 7** (the 2-of-3 voting
+protocol and dissent logging). It was independently resurfaced on 2026-06-24 and retargeted in
+the process — from *three agents per tradition* to *three assessor columns per thinker* — and
+sharpened with the requirement that columns differ by reference frame rather than random seed.
+Same idea, better specified; the lineage simply went unrecorded until the incorporation audit
+found it. The 2026-06-24 attribution above stands unchanged.
+
+The remaining half of revised change 7 — the health metric `r` — is carried by
+[Pathway 35](35_maturity_model.md), which also supplies the maturity ladder in which this
+pathway's consensus mechanism is the Stage 2 benchmark.
+
+See: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
+· [[C2A2_redesign_proposal_2026-04-09_revised]]
+· [[35_maturity_model]]
+· [[33_active_inquiry]]
