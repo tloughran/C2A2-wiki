@@ -19,8 +19,8 @@ length_note: "Short tier (1500); at 1532 words (1.02x target), within +-10%. Q.9
 mind_first_reframe: "The eternal law on a mind-monist reading is the structural pattern of mind-at-large that constrains what counts as flourishing for kinds of agents — Aquinas's type/exemplar in the divine mind cashed out as the deepest computational specification of well-functioning, real and prior to created things but internal to reality rather than a transcendent extra entity."
 central_theme_thread: "Q.93 a.6's distinction between the wicked and the good reads as differing degrees of generative-model alignment with the eternal pattern; agents are individuated by their perspective-limitations relative to that pattern, and the loving-unity telos is the pattern as fully accessed — the simple whole seen, containing every limited perspective."
 tags: [synthesis, day/107, theme/eternal-law-as-pattern]
-last_qc_at: "2026-08-12T14:28:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-23T19:57:17"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 107 — Eternal Law (Contemporary)
@@ -41,11 +41,11 @@ A second problem nested inside: how are the *necessary* and *contingent* aspects
 
 **Levin's morphogenetic work** (traditions/levin/wiki.md): the developmental "target" of an organism is *not* coded in DNA in any straightforward sense. DNA codes proteins; the *topology* of a frog or a salamander is encoded in dynamic bioelectric networks that exhibit attractor behavior toward functional anatomy. When the network is perturbed, development relaxes back to the target. This is Aquinas's "type/exemplar" cashed out empirically: an attractor-shaped pattern that is real *as pattern* and causally active in development. The pattern is not a mysterious extra entity; it is the dynamical structure of the bioelectric system. (See PRS-04 in Tom's re-description of the Stump-tradition wiki, where this maps to a defense of final causality on naturalistic grounds.)
 
-**Hoffman's interface theory** (FLAG-02 in cross-program index): perception is fitness-tracking, not truth-tracking. What we see — spacetime, objects, three-dimensional volume — is the species-specific interface. Behind it is a reality whose structure we infer but do not directly perceive. Q.93 a.5's "irrational creatures are subject to the eternal law through being moved by Divine Providence" reads naturally as: organisms below the threshold of explicit cognitive interface *still operate under the deeper structure*, just without the meta-cognitive layer.
+**Hoffman's interface theory** (traditions/hoffman/wiki.md): perception is fitness-tracking, not truth-tracking. What we see — spacetime, objects, three-dimensional volume — is the species-specific interface. Behind it is a reality whose structure we infer but do not directly perceive. Q.93 a.5's "irrational creatures are subject to the eternal law through being moved by Divine Providence" reads naturally as: organisms below the threshold of explicit cognitive interface *still operate under the deeper structure*, just without the meta-cognitive layer.
 
 **Kastrup's analytic idealism** (traditions/kastrup/wiki.md): if mind is ontologically primitive, then asking "where does the eternal pattern reside?" is asking the wrong question. The pattern *is* a structure of mind-at-large. The divine mind, in Aquinas's idiom, is not a Cartesian thinker contemplating an inert universe; on the monist reading it is the structure of being itself, of which our individual minds are *alters* (Kastrup's term for the dissociated centers of mind-at-large).
 
-**Friston's active inference** (FLAG-05): every system that resists dissipation is doing inference under a generative model. Q.93 a.6's "the wicked have their natural inclination to virtue corrupted; the good have natural knowledge plus the knowledge of faith and wisdom" maps to: every agent has a generative model; the model can be more or less well-calibrated against the deeper structure. Grace, in the active-inference frame, is the supply of a better prior — an updated generative model that better tracks the truth.
+**Friston's active inference** (traditions/friston/wiki.md): every system that resists dissipation is doing inference under a generative model. Q.93 a.6's "the wicked have their natural inclination to virtue corrupted; the good have natural knowledge plus the knowledge of faith and wisdom" maps to: every agent has a generative model; the model can be more or less well-calibrated against the deeper structure. Grace, in the active-inference frame, is the supply of a better prior — an updated generative model that better tracks the truth.
 
 ## Solution (proposed, speculative)
 
@@ -87,10 +87,10 @@ The Wright-shaped reading is that this is not an individual project. It is a *co
 ## Bridges
 
 - **PRS-04 (Tom's re-description of the Stump-tradition wiki, on final causality)**: eternal-law-as-target maps to final-cause-as-real-attractor. *Empirical* in Levin's instantiation; *metaphysical* in scope.
-- **FLAG-02 (Hoffman interface theory)**: agents access the pattern through fitness-shaped interfaces. *Formal* + *interpretive*.
+- **traditions/hoffman/wiki.md (interface theory)**: agents access the pattern through fitness-shaped interfaces. *Formal* + *interpretive*. (Id withdrawn 2026-08-23: this line carried "FLAG-02", which does not name Hoffman anywhere — the master `paradigm_flags.md` holds only FLAG-001 and FLAG-002, both Levin x Friston. Anchored to the tradition node; a determinate repoint is not asserted here.)
 - **PRS-02 (Kastrup analytic idealism)**: eternal pattern as structure of mind-at-large. *Metaphysical argument*.
-- **FLAG-05 (Friston active inference)**: agents minimize prediction-error under generative models. *Empirical/formal*.
-- **CROSS-12 (cross-program convergence on form/pattern, master wiki)**: multiple traditions independently arrive at form-as-causally-real. *Pattern of agreement*, not single proof.
+- **traditions/friston/wiki.md (active inference)**: agents minimize prediction-error under generative models. *Empirical/formal*. (Id withdrawn 2026-08-23: this line carried "FLAG-05", which exists nowhere in the wiki.)
+- **master/cross_program_index.md (cross-program convergence on form/pattern)**: multiple traditions independently arrive at form-as-causally-real. *Pattern of agreement*, not single proof. (Id withdrawn 2026-08-23: this line carried "CROSS-12"; the register's CROSS-012 is "are Hoffman's conscious agents and Levin's basal cognition the same thing at different scales" — substrate-independent agency, not form-as-causally-real. No correct target identified.)
 - **Wright, *Surprised by Hope* (chs. 7-12)**: Christ as the telos of creation; new creation as the realization of the pattern. *Exegetical/theological*.
 - **Rohr, *The Universal Christ***: eternal Logos as the cosmic pattern. *Contemplative-theological*.
 

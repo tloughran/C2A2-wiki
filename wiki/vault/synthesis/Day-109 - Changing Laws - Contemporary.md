@@ -8,8 +8,8 @@ length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/wolfram/wiki.md (PRS-04 computational irreducibility and prediction; rule-emergence in distributed systems)"
   - "wiki/traditions/friston/wiki.md (active inference; priors and convention-binding)"
-  - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 right-hemispheric grasp of context-sensitive judgment)"
-  - "wiki/master/cross_program_index.md (CROSS-08 emergent norms; Schelling-point coordination)"
+  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric grasp of context-sensitive judgment; id withdrawn 2026-08-23 — the line carried FLAG-09, which exists nowhere in the wiki)"
+  - "wiki/master/cross_program_index.md (emergent norms; Schelling-point coordination — id withdrawn 2026-08-23: the line carried CROSS-08, whose register entry CROSS-008 is the Stump x Levin isolated-individualism claim and does not carry this content; no correct target identified)"
   - "Wright, Paul and the Faithfulness of God (covenantal-political theology)"
   - "Rohr, Falling Upward (law-stability as developmental scaffold)"
 evidence_strength_summary: "Empirical: behavioral-economics work on status-quo bias and Schelling-point coordination; institutional persistence in political science. Formal: computational irreducibility. Theological: covenant-political readings."
@@ -18,7 +18,7 @@ length_note: "Short tier (cleaned transcript 1179 words); 1434 actual vs 1500 ta
 mind_first_reframe: "Human law is the Schelling-point coordination scheme a community has settled into, anchored on natural-law deep priors but irreducibly local; its binding force in conscience derives from alignment with deep priors plus coordination value plus pedagogical/developmental value, and law-change is legitimate only when it restores alignment or tracks a real shift in the community's moral state."
 central_theme_thread: "Perspective-limitation cuts both for and against the rule: individual agents are too limited to see the lawgiver's purpose in every case (so follow the letter), but coordinated communities can together see when applying the letter defeats the purpose — limited perspectives in coordinated community can jointly see more than any one of them can alone, which is the loving-unity telos at work in the social-political register."
 tags: [synthesis, day/109, theme/law-binding, theme/lawful-revision]
-last_qc_at: "2026-08-12T22:34:23"
+last_qc_at: "2026-08-23T19:57:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -42,11 +42,11 @@ The shared problem: human laws are revisable conventions that nonetheless bind. 
 
 **Wolfram's computational irreducibility** (PRS-04 in Tom's re-description of the Wolfram tradition): for many systems, the only way to know what they do is to run them. This is the strong claim relevant here: from the general natural-law priors, you cannot algorithmically generate the right human-law arrangements for a particular society at a particular time. Local determination is unavoidable. Q.95 a.4's "law of nations vs. civil law" already recognizes this; Q.96 a.6's "spirit-of-law" recognition is the same point at a different level.
 
-**Friston's active inference** (FLAG-05): generative-model agents settle into convergent priors through repeated experience. A convention becomes binding partly because *every agent's prior expects every other agent's compliance*. This is precisely the mechanism behind Q.97 a.2's "the mere change of a law is of itself prejudicial to the common good": changing the law disturbs every agent's prior; the disturbance has measurable costs in coordination, and the *binding force* of law is partly this priors-convergence. Modern behavioral economics has independently arrived at this (Schelling-point coordination; status-quo bias).
+**Friston's active inference** (traditions/friston/wiki.md): generative-model agents settle into convergent priors through repeated experience. A convention becomes binding partly because *every agent's prior expects every other agent's compliance*. This is precisely the mechanism behind Q.97 a.2's "the mere change of a law is of itself prejudicial to the common good": changing the law disturbs every agent's prior; the disturbance has measurable costs in coordination, and the *binding force* of law is partly this priors-convergence. Modern behavioral economics has independently arrived at this (Schelling-point coordination; status-quo bias).
 
-**McGilchrist's hemispheric asymmetry** (FLAG-09): the spirit-of-law / letter-of-law distinction maps directly onto right-hemispheric (contextual, embedded, narrative) vs left-hemispheric (decontextualized, rule-following) cognition. Q.96 a.6's besieged-city example is precisely the case where left-hemispheric rule-following ("gates always closed") would defeat the right-hemispheric purpose ("preserve the city"). Aquinas's allowance for acting "beside the letter" in service of the lawgiver's intent is the *integrated* judgment that requires both hemispheres functioning together. The contemporary failure mode — rigid algorithmic enforcement that produces absurd outcomes — is left-hemispheric dominance unchecked by right-hemispheric context-sensitivity.
+**McGilchrist's hemispheric asymmetry** (traditions/mcgilchrist/wiki.md): the spirit-of-law / letter-of-law distinction maps directly onto right-hemispheric (contextual, embedded, narrative) vs left-hemispheric (decontextualized, rule-following) cognition. Q.96 a.6's besieged-city example is precisely the case where left-hemispheric rule-following ("gates always closed") would defeat the right-hemispheric purpose ("preserve the city"). Aquinas's allowance for acting "beside the letter" in service of the lawgiver's intent is the *integrated* judgment that requires both hemispheres functioning together. The contemporary failure mode — rigid algorithmic enforcement that produces absurd outcomes — is left-hemispheric dominance unchecked by right-hemispheric context-sensitivity.
 
-**CROSS-08 (emergent norms in agent systems)** in the master cross-program index: stable coordination schemes emerge from repeated local interaction under shared priors, and the schemes that persist exhibit specific structural features: stability across time (status-quo bias as feature), tolerance of edge-cases (allowing for spirit-over-letter), and selective change-paths that compensate stability-loss with substantial improvement (Q.97 a.2's exact condition).
+**Emergent norms in agent systems** (no verified id; see the withdrawal note in Bridges): stable coordination schemes emerge from repeated local interaction under shared priors, and the schemes that persist exhibit specific structural features: stability across time (status-quo bias as feature), tolerance of edge-cases (allowing for spirit-over-letter), and selective change-paths that compensate stability-loss with substantial improvement (Q.97 a.2's exact condition).
 
 ## Solution (proposed, speculative)
 
@@ -93,9 +93,9 @@ The computational task is real. *We cannot bootstrap* the perfect law from natur
 ## Bridges
 
 - **PRS-04 (Tom's re-description of the Wolfram-tradition wiki, computational irreducibility and prediction)**: human law is irreducibly local. *Formal*.
-- **FLAG-05 (Friston active inference, priors and coordination)**: law-binding via prior-convergence. *Empirical/formal*.
-- **FLAG-09 (McGilchrist hemispheric asymmetry)**: spirit-vs-letter as integrated right-and-left-hemispheric judgment. *Empirical*.
-- **CROSS-08 (master wiki, emergent norms)**: stable conventions exhibit specific structural features (stability, edge-case tolerance, costly-but-aligned revision-paths). *Computational/anthropological*.
+- **traditions/friston/wiki.md (active inference, priors and coordination)**: law-binding via prior-convergence. *Empirical/formal*. (Id withdrawn 2026-08-23: this line carried "FLAG-05", which exists nowhere in the wiki — `master/paradigm_flags.md` holds only FLAG-001 and FLAG-002.)
+- **traditions/mcgilchrist/wiki.md (hemispheric asymmetry)**: spirit-vs-letter as integrated right-and-left-hemispheric judgment. *Empirical*. (Id withdrawn 2026-08-23: this line carried "FLAG-09", which does not exist; McGilchrist is named in no FLAG entry.)
+- **master/cross_program_index.md (emergent norms — no verified id)**: stable conventions exhibit specific structural features (stability, edge-case tolerance, costly-but-aligned revision-paths). *Computational/anthropological*. (Id withdrawn 2026-08-23: this line carried "CROSS-08"; the register's CROSS-008 is the Stump x Levin isolated-individualism entry — restated downward 2026-08-10 — and has no bearing on emergent norms or Schelling-point coordination. No correct target identified; the claim stands on the behavioral-economics literature the prose already names.)
 - **Wright, *Paul and the Faithfulness of God* (Vol. 2, ch. 11-12)**: covenantal-political theology of law and authority. *Exegetical/theological*.
 - **Rohr, *Falling Upward***: law-stability as developmental scaffold for the agent's first half of life. *Developmental-spiritual*.
 

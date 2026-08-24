@@ -20,8 +20,8 @@ evidence_strength_summary: "Hylomorphic-form claim: formal/philosophical (medium
 mind_first_reframe: "Aquinas's grace-as-accidental-form-in-the-soul becomes, under mind-monism, the structural thinning of the dissociative barrier between an alter and the wider mind — real, located, qualitative, but not substantial; the gratuitous expansion of what the agent can hold."
 central_theme_thread: "Grace is exactly where the central claim is operative: the limited perspective cannot reach the simple whole by its own resources, and grace is the structural change that tilts the agent's computation toward loving unity."
 tags: [synthesis, day/116, theme/grace, theme/metaphysics]
-last_qc_at: "2026-08-11T18:30:04"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-23T19:57:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 116 — Grace (Contemporary Parallel)

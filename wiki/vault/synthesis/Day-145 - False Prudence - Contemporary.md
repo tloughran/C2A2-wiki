@@ -17,8 +17,8 @@ evidence_strength_summary: "The governing claim — competence is end-neutral, s
 mind_first_reframe: "The prudence treatise closes on its counterfeits, and they are defined by exactly the seam the project has tracked all batch: competence versus telos. 'Prudence of the flesh' (Q.55 a.1) is a man 'adept in discovering and executing the best means' — fully competent practical reason — directed at 'carnal goods as the last end of his life.' Craftiness, guile, and fraud are the pursuit of an end by 'false and counterfeit means.' Negligence (Q.54) is competence that fails to fire. Read through mind / conscious-realist monism, the diagnosis is sharp: intelligence is end-neutral problem-solving (Levin via James), so the machinery of prudence can run perfectly toward a partial good clutched as the whole. What converts competent computation into virtue is the end — and the right end, loving union with God, is charity's gift, never the computation's own product."
 central_theme_thread: "This is the negative image of the whole project. The central claim says loving unity is the goal each limited perspective computes toward; false prudence is the computation aimed away from the whole, at a partial good seized as if it were the whole. 'Prudence of the flesh' is a perspective optimizing its own interface-payoffs — exactly the fitness-over-truth bias the project names as the deep risk of any limited viewpoint — and undue solicitude is that bias misweighting the present against a future entrusted to providence. Covetousness, Aquinas's root of all these vices, is the absolutizing of one's partial good; detachment, his remedy, is the refusal to absolutize it — the practical discipline of holding one's own perspective's goods loosely enough to be reoriented toward the whole. The same machinery, the wrong telos: this is what 'working out salvation' looks like when it is not worked out."
 tags: [synthesis, day/145, theme/competence-without-the-whole]
-last_qc_at: "2026-08-14T22:33:38"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-23T19:57:46"
+last_qc_outcome: "pass"
 ---
 
 # Day 145 — Contemporary Parallel: The Same Machinery, the Wrong End
