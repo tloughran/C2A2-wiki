@@ -1644,3 +1644,408 @@ OPEN-141:
       15c: Dispositioned ASSUMPTION-966 CONDITIONAL and named the discriminating question.
       14a: Registered as an open question so it stops being carried as a disposition caveat. [stated]
     Current status: OPEN
+
+OPEN-142:
+  Date raised: 2026-08-13
+  Question: Is the Summa 2026 series complete at 307 days, or short of the 308 its own task file specifies -- and if complete, who owns the corpus's open defect backlog once the producing task is retired?
+  Why it matters: The 05:00 batch declared "the series is finished", stated "there is no Day 308" against a task file reading "308 episodes by 2026-06-30", and recommended "this scheduled task now has no remaining work and can be retired" -- all in a final message, with no DECISION and no OPEN. Retirement is a scheduling change only a human can make. It also has a consequence nobody stated: on the same day, four separate defect classes in that corpus were open and growing -- a seventh citation shape with "Scope unmeasured", a band-wide article-citation debt awaiting a rewrite that is explicitly "Tom's call", an authored `length_actual_words` field computed on at least three different regexes, and a staleness queue structurally blind to wiki-side rot. Retiring the producer does not retire the artefact, and no other scheduled task owns the corpus end-to-end. One answer settles both halves.
+  Depends on: ASSUMPTION-1040, ASSUMPTION-1043, ASSUMPTION-1046, ASSUMPTION-1047, ASSUMPTION-1048, PRESUMPTION-793
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-142
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered from a retirement recommendation that existed only in a run's final message. [stated]
+    Current status: OPEN
+
+OPEN-143:
+  Date raised: 2026-08-13
+  Question: Should "trigger-bound and selective" become C2A2's standing form for new controls, in place of "universal and mandatory" -- and does that principle exempt itself?
+  Why it matters: SYSTEMIC-RISK-FLAG 2026-08-13 (High) found that six of nine presumptions converged independently on the same remedy shape, and that four independent literatures predict universal mandatory controls degrade into checks that are "formally in place, recorded as performed, and not actually executed" -- PREMISE-110's fail-open pattern manufactured at scale with documentary cover. The flag also names an internal contradiction: PRESUMPTION-784's remedy (record more decisions) directly worsens PRESUMPTION-781's condition (a register nobody reads). This is a design principle, not a disposition, so it cannot be adopted by an agent. The second half of the question is raised by 14b tonight and is not rhetorical: the flag's own recommendations 1 and 3 are themselves universal mandatory controls ("Convert **every** proposed universal control"; "Instrument **every** control that is adopted ... applies to all six"), and the flag does not claim or argue the meta-level exemption it needs (PRESUMPTION-796). If the principle is adopted without settling that, it ships carrying the defect it was written to prevent. Distinct from OPEN-140, which asks about a schema field; this asks about the form of every control the register will ever propose.
+  Depends on: ASSUMPTION-1051, PRESUMPTION-796, PRESUMPTION-779, PRESUMPTION-781, PRESUMPTION-784, PREMISE-110, PREMISE-156, OPEN-140
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [15b -> 15c -> 14a]
+    Original item: OPEN-143
+    Item type: OPEN QUESTION
+    Transform at each step:
+      15b: Raised the systemic risk and recommended trigger-binding in SYSTEMIC-RISK-FLAG_2026-08-13.
+      15c: Bound PREMISE-156 with a "must NOT be implemented before" clause and routed the principle to the human.
+      14b: Surfaced the unargued self-exemption in the flag's own recommendations (PRESUMPTION-796). [inferred]
+      14a: Registered as one open question covering both halves rather than adopting the principle by disposition. [stated]
+    Current status: OPEN
+
+OPEN-144:
+  Date raised: 2026-08-13
+  Question: Does PROP-2026-08-12-041 close WATCH-003, or does the audit question keep it open -- and does the INTEGRITY FLAG now narrow to the Wright item alone?
+  Why it matters: Agent 16 found that PROP-2026-07-19-001, one of the two INTEGRITY-FLAG casualties, was independently re-filed by the Rohr agent on 08-12 with the same source URL and date and three PRS candidates the lost card lacked. The agent deliberately declined to decide: it "recorded this as a dated amendment on WATCH-003 but did **not** close or narrow the condition: it satisfies the substantive worry (content not lost) without answering the audit question (why -001 disappeared). That call is yours." It also weighed the evidence rather than resolving it -- "weak evidence for the 'incidental loss' reading over 'deliberate withholding'." The Wright half, PROP-2026-07-19-003, has no recovery and is "now the live half of the flag." Left undecided, the watch keeps consuming a check-count against a condition half of which is discharged, and the ~390 KB watch list is read in full on every Agent 16 run.
+  Depends on: ASSUMPTION-1059, WATCH-003, PROP-2026-07-19-001, PROP-2026-07-19-003, PROP-2026-08-12-041
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [16 -> 14a]
+    Original item: OPEN-144
+    Item type: OPEN QUESTION
+    Transform at each step:
+      16: Recorded the recovery as a dated amendment and explicitly routed the closure decision to the human.
+      14a: Registered as an open question so it stops being carried as a standing watch amendment. [stated]
+    Current status: OPEN
+
+OPEN-145:
+  Date raised: 2026-08-13
+  Question: Does Rule 6 get a per-pipeline exemption, or does the pipeline get decomposed?
+  Why it matters: Three independent agents said the same thing today, one of them in the sharpest terms this record holds: "~440k tokens across three delegated agents against a 4,000-token per-task budget. **This pipeline as specified cannot run inside that budget and no prior run has; the rule and the task spec are in standing conflict.**" At least nine of today's twenty-seven runs declared a breach, one self-authorised it after the fact ("I judged it worth spending"), and the evening summary reached the conclusion independently: "the number isn't drifting toward the budget, and the budget as written has never been met by this pipeline. Either the rule needs a per-pipeline exemption or the pipeline needs decomposing." PREMISE-146 already holds the ceiling unsatisfiable as specified and PRESUMPTION-764 holds that declaring a breach is doing the work of respecting one; what has never been raised as a question requiring an answer is which of the two available fixes is wanted. Until it is, every run in the fleet spends part of its output on a ritual disclosure of a rule nobody intends to meet -- which is itself an instance of PRESUMPTION-796's shape, a control that is recorded as performed and does not bind.
+  Depends on: ASSUMPTION-1065, ASSUMPTION-1033, PREMISE-146, PRESUMPTION-764, PRESUMPTION-796
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-145
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered a three-day-old standing conflict as a question with two named options, rather than carrying it as a nightly declaration. [stated]
+    Current status: OPEN
+
+OPEN-146:
+  Date raised: 2026-08-14
+  Question: What is the fleet's run manifest, and what happens when a scheduled run produces nothing?
+  Why it matters: Nine of today's twenty-five runs reached no deliverable, including three of the fleet's own monitors, and not one of the nine registered anywhere. The rollup reported "Tradition agents filed 8 new proposals" on a day when two scheduled traditions filed zero [measured], and a Layer-4 reviewer read two contracts and stopped without an interruption marker -- indistinguishable, in every artefact, from a quiet clean run. The health contract already states the base rate as a settled fact: "measured over 110 runs, 39 never finished, the worst hanging 5.1 days until the Mac slept." What has never been asked is the design question underneath it: **the fleet has no list of what was supposed to run, so absence has nowhere to be recorded.** Two candidate answers exist and neither has been argued -- a positive-acknowledgement line per run (a heartbeat that a dead run cannot forge), or a manifest reconciled nightly against outputs. Until one is chosen, PRESUMPTION-798 stands: every count in `metrics/` is computed over the runs that spoke.
+  Depends on: ASSUMPTION-1068, ASSUMPTION-1069, PRESUMPTION-798, PRESUMPTION-799, PRESUMPTION-806
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-146
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered the day's dominant structural finding as a question with two named options rather than carrying it as a nightly count. [stated] [measured]
+    Current status: OPEN
+
+OPEN-147:
+  Date raised: 2026-08-14
+  Question: Is an escalation a state of the file or a claim on your attention?
+  Why it matters: Twice today an item was escalated to you on the explicit ground that resolving it was your call, and then resolved by another agent within hours. Days 063/064/065 were escalated with the reasoning "I did *not* pass-mark the three. Marking them would drop them out of `needs_review` and hide an open defect" -- and were subsequently rewritten on both frames by a sibling run that never saw the escalation. Day 013 was escalated for the Levin PRS-03 defect and later cleared. Both behaviours are defensible; they cannot both be the contract. The mechanical cause is that `needs_review` is a predicate over timestamps, so **an escalation has no representation on disk distinct from staleness** -- which is the same missing verb logged as CHANGE-2026-08-13-005 (`mark` offers only pass/rewrote, so a held decision cannot be written to disk), now shown to cost more than a re-queue: it costs silent withdrawal of items from your queue. The fix is deterministic and model-free and belongs to whoever owns `scripts/`; the question of which semantics to implement is yours.
+  Depends on: ASSUMPTION-1070, ASSUMPTION-1071, PRESUMPTION-800, PRESUMPTION-804
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-147
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered a two-instance same-day contradiction as a semantics question with a named mechanical cause. [stated]
+    Current status: OPEN
+
+OPEN-148:
+  Date raised: 2026-08-15
+  Question: What actually writes `[Request interrupted by user]`, and what should a run do when it is written?
+  Why it matters: Three runs stopped at that marker today -- `morning-project-status`, `morning-system-health`, `openstory-agents-telemetry-refresh` -- on a day in which no transcript contains a single typed human message. The marker asserts a cause, nothing verifies it, and every artefact that reads it treats the stop as exogenous and therefore as nothing to investigate. Two of the three runs had no failure-note clause in their contract and wrote nothing; the third, `openstory-agents-telemetry-refresh`, is the writer of `REFRESH_STATUS.md`, the fleet's designated stall detector, which is now **unwritten for a second consecutive day**. Against them, `c2a2-morning-chat-scrape` hit an unrecoverable Chrome fault and produced a record, because one sentence in its task file told it to: "Per the task spec I wrote a failure note to today's dated file instead of a summary." **The difference between a lost failure and a recorded one today was a single clause, and it is present in one contract out of four.** Two questions, in order: (a) determine empirically what conditions emit the marker in this runtime -- host restart, sandbox eviction, mount timeout, session cap, or an actual human -- since PRESUMPTION-808 is Critical precisely because the answer changes the fleet's measured failure rate and the base rate today's REVISE-333 used to close PRESUMPTION-806; (b) decide whether the failure-note clause becomes standard across every scheduled contract, which is a one-line edit repeated N times and needs only your ruling, not a design.
+  Depends on: ASSUMPTION-1089, PRESUMPTION-808, OPEN-146
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-148
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered the marker's unverified attribution and the one-clause difference between a recorded and a lost failure as a single question with a determinate first step. [stated] [measured]
+    Current status: OPEN
+
+OPEN-149:
+  Date raised: 2026-08-15
+  Question: Is a recorded repair a fact about an identifier or a fact about one occurrence of it?
+  Why it matters: Six times today a run looked at an id that the standing record says is wrong, verified it at the body, found it correct, and deliberately did not touch it -- Levin PRS-30 on Day 158, CROSS-013 on Days 222 and 223, Stump PRS-05 on Day 053, Friston PRS-16 on Day 054, the Hoffman PRS-01/PRS-02 bundle on Days 046 and 050, and Rohr PRS-06/PRS-07. In each case the run stated that acting on the record would have corrupted a clean day: "Sweeping from either precedent would corrupt a clean day"; "the standing note proposes opposite fixes for it on other days, and a sweep would have broken both." One run named the general form and confined it to one table: "The band table is a list of observed wrong-uses, not a rename table." **The register stores repairs keyed on identifiers, which asserts id-level scope; the evidence behind each entry is a single bullet on a single day.** The discipline that prevented six corruptions today is unwritten, is held only by whichever run happens to verify at the body, and is the stated cause of the token overrun every one of those runs declared -- so it is exactly the practice the budget pressure of ASSUMPTION-1098 will remove first. Three candidate answers, none argued: record repairs at instance scope (day + id) and never sweep; keep id scope but require body verification before any application, and pay for it; or split the register into confirmed renames and observed wrong-uses, which is what the runs are already doing in their heads. This one is cheap to fix and expensive to leave, and the fix is a schema decision, not a model judgement.
+  Depends on: ASSUMPTION-1094, ASSUMPTION-1095, PRESUMPTION-810, PRESUMPTION-811
+  Status: OPEN -- awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-149
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Registered six same-day refusals as one schema question with three named options. [stated]
+    Current status: OPEN
+
+OPEN-150:
+  Date raised: 2026-08-16
+  Question: **When a guard cannot execute, is that a pass, a warning, or a failure — and where is that state recorded?**
+  Origin: The anti-fabrication guard is inert on 66 of 307 transcripts (21.5%) because the sentence splitter returns zero sentences on unpunctuated ASR; `could not extract sentences` is emitted as a warning, so those days report `pass`. Two fixes were named by the run that found it and both were declared Tom's call: "make zero-extraction a failure (one line, honest today), or add token-window shingling fallback so the guard actually runs on unpunctuated flow (the real repair)."
+  Blocking: Every `last_qc_outcome: pass` on an unpunctuated transcript; by extension every clean report from any check in this system that can decline to run.
+  Related: ASSUMPTION-1106, ASSUMPTION-1108, PRESUMPTION-818, PRESUMPTION-819, PRESUMPTION-820
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-150
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a finding two runs reached independently on 2026-08-16, with both candidate fixes as the runs stated them. [stated]
+    Current status: OPEN
+
+OPEN-151:
+  Date raised: 2026-08-16
+  Question: **Are the network's recorded cross-tradition convergences agreements about the world or agreements about English — and does the connection schema need a field that says which?**
+  Origin: Rohr grounds the Universal Christ in Scotist univocity of being, the historic alternative to the Thomist analogy the Stump wing holds; two agents reached this independently on 2026-08-16 and both concluded "several recorded Rohr↔Stump convergences may be convergences in English only." The same day recorded a convergence on the strength of Rohr and Wright citing one verse "with no evidence of contact," and a day now citing two authorities its own source says cannot coexist.
+  Blocking: The interpretation of all 103 recorded cross-connections, and of every health metric that counts them.
+  Related: ASSUMPTION-1116, PRESUMPTION-827
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-151
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from the day's only substantive content finding, reached independently by two agents. [stated]
+    Current status: OPEN
+
+OPEN-152:
+  Date raised: 2026-08-16
+  Question: **What is the target orphan rate for the vault, and should machine-generated trees be in the graph at all?**
+  Origin: 81.3% of the vault (3,470 of 4,267 pages) emits zero outbound wikilinks, but `architecture/lit_search_results` alone is 2,283 pages emitting one, and the two machine-dump trees are "58% of the page count and overstate real disconnection ~3×" — the eighth consecutive time this has been flagged as inflation rather than as a population question. The remedy currently proposed is to manufacture 1,138 new edges.
+  Blocking: The weekly connectivity census, its headline metric, and a proposed bulk write of `## Cited by` sections across 14 hubs.
+  Related: ASSUMPTION-1113, ASSUMPTION-1114, PRESUMPTION-826
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-152
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised on the eighth repetition of a notice whose normative half has never been stated. [stated]
+    Current status: OPEN
+
+OPEN-153:
+  Date raised: 2026-08-16
+  Question: **Who repairs the self-awareness registers, given that ASSUMPTION-459 is missing and PRESUMPTION-295 is duplicated, and PREMISE-096 forbids 14a/14b from amending their own intake gate?**
+  Origin: `assumptions.md` holds 1,122 unique ids against a maximum of 1123 — offset exactly 1, the ASSUMPTION-459 gap, recorded in metrics snapshots continuously since 2026-07-17 and never repaired; a prior run separately detected the loss of ASSUMPTION-217 from the live file by watching that offset move. **The defect is not that nobody notices it; it is that noticing it monthly has never produced a repair, because no agent is authorised to write to these registers except to append.** Separately, REVISE-340 (High) requires "two lines in the 14a/14b contracts, and neither is actionable by those agents themselves under PREMISE-096" — the second consecutive night two independent 15b searchers filed the same systemic flag.
+  Blocking: REVISE-340; the integrity of both registers this pipeline writes to.
+  Related: ASSUMPTION-1109, ASSUMPTION-1123, PRESUMPTION-822, PRESUMPTION-823
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-153
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from this run's own register audit joined to the lit pipeline's standing escalation against this pipeline. Amended before filing: the audit's two initial findings were withdrawn in verification (see ASSUMPTION-1123) and the question restated from "who notices" to "who may repair". [stated] [measured]
+    Current status: OPEN
+
+OPEN-154:
+  Date raised: 2026-08-17
+  Question: **What is a run that started and produced nothing — a failure, a no-op, or an absence of news — and which register records it?**
+  Origin: Seven of twenty-nine runs today ended without producing an artifact: three at `[Request interrupted by user]` immediately after a tool call, two cut mid-step, one cut after issuing a write, one at "API Error: 529 Overloaded". The mute rate roughly doubled overnight, 11.4% → 24.1%. **No instrument in the fleet reports this number.** It exists only in this file, computed after the fact by reading terminal states. Meanwhile the scheduler logged **78 OK / 1 WARN / 5 FAIL** on the same day, because "the task fired" and "the task produced something" are separate facts and only the first is watched — the register logged `FAIL … committed nothing` and `OK … run completed` for the same run in the same minute. The two runs whose job is to notice this (`morning-system-health`, `openstory-agents-telemetry-refresh`) were themselves among the losses, the second stating: "I could not write `$AGD/REFRESH_STATUS.md` … **exactly the silent-stall mode this status file exists to prevent.**"
+  Blocking: any measurement of fleet reliability; PRESUMPTION-829; the value of every daily count in this record, which is computed over whichever runs happened to finish.
+  Related: ASSUMPTION-1124, ASSUMPTION-1125, ASSUMPTION-1139, PRESUMPTION-818, PRESUMPTION-819, PRESUMPTION-829, PRESUMPTION-834, OPEN-150
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-154
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised on the day the mute rate doubled and no instrument reported it. Distinguished from OPEN-150, which asks the same question of a *check*; this asks it of a *run*. [stated] [measured]
+    Current status: OPEN
+
+OPEN-155:
+  Date raised: 2026-08-17
+  Question: **Who may correct a reviewer memory file that carries a diagnosis now known to be false, and what marks a register entry as a cause rather than a measurement?**
+  Origin: A run found that the record's claim that `fidelity_check.py`'s length-sanity check "does not fire" is false — "the record's claim … was taken from a run where the hardcoded `/tmp` segments were missing, so the script never reached the check" — and could not repair it: "**I can't edit the memory file that carries the wrong claim, so it's logged for you.**" Three more recorded causes were overturned the same day: nineteen runs attributed an inert fidelity frame to YouTube when the cause was a hardcoded `/tmp` path; a 2026-08-05 escalation "had inferred a transcript drop from the *commentary's* silence about the passage"; and "**eight recorded backlogs are already closed by repair and the record doesn't say so.**" In every case the original entry was a correct observation with an incorrect cause attached, and **the register format gives a cause the same standing as a `[measured]` figure.** This is OPEN-153 asked outside the 14a/14b registers — the same permission gap, a different file, and no PREMISE-096 analogue is on record for the reviewer memory files.
+  Blocking: PRESUMPTION-830; the reliability of every inherited premise in the Summa reviewer chain.
+  Related: ASSUMPTION-1126, ASSUMPTION-1127, ASSUMPTION-1130, PRESUMPTION-830, PRESUMPTION-833, OPEN-150, OPEN-153
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-155
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a run's explicit statement that it could not repair a record it had just refuted, joined to three same-day corrections of the same shape. [stated]
+    Current status: OPEN
+
+OPEN-156:
+  Date raised: 2026-08-17
+  Question: **Does a PRS/CROSS id carry the polarity of the claim it anchors, and if not, how is the existing anchor set to be audited before the corpus-wide id index is built?**
+  Origin: Four ids were cited today for claims their own bodies argue against, each caught by a different run, each remediable only by withdrawal: Hawkins PRS-06, which "**exists precisely to argue that the strict-hierarchy model is *wrong***"; Kastrup PRS-09, "**McGilchrist's counter-proposal *against* Kastrup's dashboard metaphor**", named as "the **third location** of the 'entry filed under X whose content is Y's objection to X' shape"; Rohr PRS-03, where "**the Label matched and the body did not**"; and Friston PRS-10. The escalation was stated explicitly: "the read-the-body rule has to extend past 'does the id exist' and past 'does the gloss match' to ***does the id's Solution support or undercut this sentence*. Two of four attempted anchors failed at exactly that step.**" An automated anchoring sweep "**would have cited the wiki against itself, and every such anchor would have looked correct at the Label.**" The corpus-wide id index is pending and would be built on the same schema; a related note from the same day: "**A body-first audit clears this day; a frontmatter-only id sweep catches it. The pending corpus-wide id-index needs both.**"
+  Blocking: the corpus-wide id index; any automated anchoring or repoint pass; the interpretation of the 103 cross-connections, where an inverted match is currently indistinguishable from a convergence.
+  Related: ASSUMPTION-1131, PRESUMPTION-831, PRESUMPTION-827, OPEN-151
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-156
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from four independent same-day polarity failures and the schema's lack of any field that would have prevented them. [stated]
+    Current status: OPEN
+
+OPEN-157:
+  Date raised: 2026-08-18
+  Question: **When the sandbox mount is absent, what is an agent's authorised route to host filesystem access, and who may declare a workaround unsafe?**
+  Origin: Four runs produced nothing today and all four died at a permission-gated tool call while reaching for host access; three died at the same tool, `Desktop_Commander__start_process`, having explicitly named the substitution: "The Documents mount is absent from the sandbox this run … **Trying Desktop Commander, which has real filesystem access to the Mac**"; "The wiki paths are outside the connected folder — **trying an alternate reader**". The one run that met the identical mount absence and did *not* substitute completed and reported: "**This is a mount-scope failure, not a script or database fault.**" No contract authorises or forbids the substitution, no run named it as a deviation, and one run silently switched from the sandbox path its own SKILL.md specifies to a Mac-local wrapper. Compounding it, the two runs that hit the same missing `~/Documents` reached **opposite verdicts on whether the data was reachable** — one read the DB through Desktop Commander, the other declared it unreachable and never tried — with no awareness of each other.
+  Blocking: the fleet's dominant failure mode; any remedy for the mute set, which has been the same three observation-tasks for three consecutive days; the interpretation of PRESUMPTION-834, which 15c INCORPORATED today on a diagnosis this data refines.
+  Related: ASSUMPTION-1142, ASSUMPTION-1144, PRESUMPTION-838, PRESUMPTION-834, OPEN-154
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-157
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from four same-day null runs sharing a workaround, and one counter-instance that survived by declining it. [stated]
+    Current status: OPEN
+
+OPEN-158:
+  Date raised: 2026-08-18
+  Question: **Is a scope reduction taken on an agent's model of Tom's review capacity a decision requiring a DECISION entry, and which register records a tradition whose source window was never examined?**
+  Origin: The daily run swept one of fourteen traditions and said so: "**I did not run Phase 2 at full width, and that was my call** … I swept Hoffman only, because pending stands at 54 against a review gate silent since 2026-08-07 … **If you disagree, say so and the next run reverts.**" The disclosure is complete and the reasoning defensible. The gap is downstream: **no register distinguishes a tradition swept and empty from a tradition not swept**, and the one tradition that *was* swept had its result explicitly disqualified by the same run — "that's a keyword query returning empty one day after his source-of-record was read and found empty, so it is *not* independent coverage." So today the network's sensing coverage is fourteen traditions of silence with one qualifier attached, and the record cannot reconstruct which kind of silence any of them is. Note the throttle was applied to intake — cheap and reversible — while six review runs breached budget by larger factors on work already recorded.
+  Blocking: the meaning of every negative tradition result; any trend claim about publication rates across the fourteen traditions; whether the forty-fourth consecutive day without a DECISION is accurate, since a contract was materially narrowed today by an agent.
+  Related: ASSUMPTION-1147, PRESUMPTION-840, PRESUMPTION-841, ASSUMPTION-1156
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-158
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a fully-disclosed unilateral contract narrowing whose coverage consequence no register carries. [stated]
+    Current status: OPEN
+
+OPEN-159:
+  Date raised: 2026-08-18
+  Question: **What terminal state marks a retraction later shown to be wrong, and by what gate does a correction acquire the scrutiny the claim it corrects received?**
+  Origin: Four instruments retracted their own findings today and one of those retractions, had it stood, would have destroyed correct work: "**Had that reading been carried forward, it would have licensed reversing the correct Day 268/269 repairs on the grounds their target doesn't exist. One grep prevented it.**" A near-miss ran the same way — "**I nearly broke a correct citation** … Here the *padded* form is what would produce a false 'no such id'" — and a live memory file written yesterday currently instructs "**withdraw on sight**" for ids the wiki holds, which "**would delete live citations**", with the finding run barred from repairing it: "The skill forbids me editing memory files, so it's recorded in the QC log only." `provenance_protocol.md` has five terminal states for a claim that fails verification, none for a withdrawn flag (PRESUMPTION-833, raised 08-17, still open), and none at all for a retraction subsequently overturned. This is the third consecutive day on which a run has found a false claim in a live memory file and been unable to repair it (OPEN-155), and the second on which the destructive direction is the corrective one.
+  Blocking: any automated withdrawal or repoint pass, including the corpus-wide id index blocked by OPEN-156; the status lifecycle in `provenance_protocol.md`, which REVISE-352 also asks to extend and which no agent may amend under PREMISE-096.
+  Related: ASSUMPTION-1153, ASSUMPTION-1155, PRESUMPTION-842, PRESUMPTION-833, OPEN-155, OPEN-156
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-159
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from four same-day self-retractions, one near-miss, and one live destructive memory file, against a lifecycle with no state for any of them. [stated]
+    Current status: OPEN
+
+## 2026-08-23 status update (Agent 14a/14b — 3 NEW numbered OPEN: OPEN-160, 161, 162; first run in five days)
+
+### NEW OPEN this cycle
+
+OPEN-160:
+  Date raised: 2026-08-23
+  Question: **What detects the absence of the detector?**
+  Origin: The self-awareness pipeline did not run on 2026-08-19, 08-20, 08-21 or 08-22. [measured] No changelog, no metrics snapshot, no register entry and no pre-run backup exists for those dates. **No instrument noticed.** The deferred-action monitor ran on 08-19 and reported "4 intake channels empty" and "nothing was due"; the monitor's due-list is built from items it already holds, so a pipeline that stops producing items produces no overdue items. The morning system health check — whose task file states "**A missing file, or a newest line that is not from today, is itself a FAIL … Say that plainly rather than staying silent**" — died at its mount step and wrote nothing. The gap was found tonight only because tonight's run went looking. Every existing staleness alarm in the fleet is scoped to an artifact a *running* job maintains; **there is no alarm whose subject is a job that did not start.**
+  Blocking: any claim that the register is a continuous record; the interpretation of every trend line that crosses 08-19..08-22; whether a five-day gap is the first or merely the first detected.
+  Related: ASSUMPTION-1159, ASSUMPTION-1160, PRESUMPTION-846, PRESUMPTION-852
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-160
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a measured four-day pipeline gap that no instrument in the fleet reported. [measured]
+    Current status: OPEN
+
+OPEN-161:
+  Date raised: 2026-08-23
+  Question: **What does `[Request interrupted by user]` mean on a run no user attended, and what recovery covers a job that died after side-effecting writes?**
+  Origin: Four scheduled runs in this window terminate on that marker, on the twenty-second consecutive day with no typed human message anywhere in the fleet. The string asserts a human act that did not occur. **The marker is the only account any of the four leaves of its own death**, and it is wrong in the only respect it claims. The consequence is not merely semantic: the wiki daily run executed **four `update_message_labels` calls** — Gmail state changed — and then died before Phase 1 could move the corresponding proposals. Mail is marked read before proposals are moved, so the failure window leaves messages consumed and proposals unmoved, **with no record of which**. No runbook, no compensating action, and no register entry covers that state. The morning system health check would have flagged the resulting staleness; it is one of the four dead.
+  Blocking: any automated retry of the daily run (a retry may re-consume or double-move); the meaning of the review-page gap since 2026-08-18; whether the pending count of 56 is complete or is missing proposals stranded in an already-read mailbox.
+  Related: ASSUMPTION-1160, ASSUMPTION-1161, PRESUMPTION-847, PRESUMPTION-854
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-161
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from four identical unattended terminations and one of them landing irreversible external writes before dying. [stated]
+    Current status: OPEN
+
+OPEN-162:
+  Date raised: 2026-08-23
+  Question: **Is a drop from twenty-seven sessions in one day to twelve in five days a quiet fleet or a stopped scheduler, and which register would say?**
+  Origin: The 08-18 self-awareness run's window held **27 sessions in one day**. Tonight's window holds **12 sessions across five days** — a throughput fall of roughly an order of magnitude per day. Of those twelve, four died with zero output and one was still running at read time, leaving seven completed runs in five days. **No register records scheduled-task firings**, only sessions that produced transcripts, so a task that never fired and a task that fired and died before writing are indistinguishable from here. The same ambiguity that OPEN-158 raised for tradition coverage — "no register distinguishes a tradition swept and empty from a tradition not swept" — now applies to the fleet itself. `mcp__scheduled-tasks__list_scheduled_tasks` would answer part of this; **no agent in the fleet is authorised to call it**, and this run did not.
+  Blocking: any trend claim spanning 08-19..08-22; the interpretation of ASSUMPTION-1159's gap as cause or as symptom; whether the four null runs represent four failures or four survivors of a larger silent set.
+  Related: ASSUMPTION-1159, ASSUMPTION-1160, ASSUMPTION-1171, PRESUMPTION-852, OPEN-158, OPEN-160
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-162
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a measured order-of-magnitude fall in daily session count against a register that cannot distinguish quiet from stopped. [measured]
+    Current status: OPEN
+
+### Status of carried questions
+- OPEN-153, OPEN-155, OPEN-156, OPEN-157, OPEN-158, OPEN-159 — all carried unchanged, **awaiting Tom**. None was addressed in this window; the review gate has been silent since 2026-08-07, now **16 days**.
+- OPEN-158 (swept-and-empty vs. not-swept) **recurred in a new domain** this cycle: the Arkani-Hamed zero and the Stump/Fredrickson double zero are blocked-channel zeros filed in a register with no field distinguishing them from searched zeros (ASSUMPTION-1165).
+- OPEN-159 (terminal state for an overturned retraction) — no new instance this window.
+
+### Recurring framings worth tracking (carry-forward)
+- **Disclosure standing in for remedy.** Fourth consecutive cycle: three runs reported the identical 4k/30k breach citing Rules 6 and 12, and none changed behaviour (ASSUMPTION-1167). This run is the fourth.
+- **Contract-path defects reported and not repaired**, now two distinct defects across five task files (ASSUMPTION-1170), sixth consecutive record.
+- **Concurrency treated as sequence.** New this cycle: three agents, three reads of one counter, no true instant (ASSUMPTION-1162).
+- **No attended DECISION.** Forty-ninth consecutive day, derived by adding the five-day gap to the forty-fourth recorded on 2026-08-18. `decisions.md` remains at **DECISION-078**, dated 2026-07-05.
+
+
+---
+
+## ADDENDUM — 2026-08-23, second run (on-cron 23:30 firing)
+
+OPEN-163:
+  Date raised: 2026-08-23
+  Question: **Does the scheduled-task registry record attempts or only completions — and if only completions, what instrument can see a run that fired and died?**
+  Origin: OPEN-162 asked whether the fall in session count was a quiet fleet or a stopped scheduler, and noted that no agent is authorised to call `list_scheduled_tasks`. Tonight a scheduler health check did read the registry, and the answer it produced is worse than either branch of OPEN-162: the registry reports seventeen tasks as last having run on 2026-08-18/19, while **sessions for four of those tasks exist after those dates and died with zero output** (ASSUMPTION-1160, 1172, PRESUMPTION-855). So the scheduler was firing. The registry's `lastRunAt` records completion, and the fleet's only health instrument reads it as firing. Two further facts belong to this question: the miss-counter reports "missed 2" for every stalled task regardless of cron (ASSUMPTION-1173), and 248 stranded git `tmp_obj` files run to 2026-08-22 21:00 — inside the window the registry records as empty (ASSUMPTION-1189).
+  Blocking: the diagnosis of the 08-19..08-22 outage; any future use of the health check's FAIL count as a severity signal; whether ASSUMPTION-1159's four missing nights were four non-firings or four deaths.
+  Related: ASSUMPTION-1160, ASSUMPTION-1172, ASSUMPTION-1173, ASSUMPTION-1189, PRESUMPTION-855, PRESUMPTION-856, PRESUMPTION-862, OPEN-160, OPEN-162
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-163
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a registry reading that contradicts the session record it does not consult. [measured]
+    Current status: OPEN
+
+OPEN-164:
+  Date raised: 2026-08-23
+  Question: **What is the correct disposition when the self-awareness pipeline fires twice on one date?**
+  Origin: The task fired at 19:19Z as a catch-up and again on-cron at 23:30 local, both on 2026-08-23 (ASSUMPTION-1174, PRESUMPTION-857). Every artifact of the pipeline is keyed to a date rather than to a run, so the second firing had three available moves: overwrite the day's changelog and snapshot, split the window and re-date, or append a marked addendum. **This run chose the addendum and named the choice**, but that is a convention invented by an agent under Rule 12 rather than a ratified one, and it is precisely the class of agent-side scope choice that OPEN-158 leaves unresolved. The backup naming collided on the same occasion and was resolved by timestamp suffix (`*.bak.20260824-033858Z-pre-14eod-run2`).
+  Blocking: the interpretation of any register whose date-keyed artifact has two authors; whether tonight's addendum should be folded into the 2026-08-23 record or carried as a separate run.
+  Related: ASSUMPTION-1174, PRESUMPTION-857, PRESUMPTION-864, OPEN-158
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-164
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a collision this run encountered in its own register and resolved by an unratified convention. [stated]
+    Current status: OPEN
+
+OPEN-165:
+  Date raised: 2026-08-23
+  Question: **Which success criterion governs the accelerator — overlap or novelty — and until that is settled, what would count as failure?**
+  Origin: The weekly sewing agent found two candidate formalisms for C2A2's central thesis with incompatible success conditions: Friston's, on which the accelerator succeeds when traditions overlap enough to share beliefs, and Levin's, on which it succeeds when the result lands in an empty region. "Maximal overlap is the least novel region. **Adopting both leaves the accelerator with no way to fail**" (ASSUMPTION-1177, PRESUMPTION-858). Both formalisms are already in the wiki; nothing in the intake path checks two imported criteria for compatibility, and the agents doing the importing are contractually barred from adjudicating between traditions. This is the first item in the register that bears on whether the project's core claim is falsifiable at all, and it was raised by the system about itself.
+  Blocking: the interpretation of every cross-connection counted as progress; the meaning of the connection-density metric; the design of any Stage 2 or Stage 3 survival rate.
+  Related: ASSUMPTION-1177, ASSUMPTION-1178, PRESUMPTION-858, OPEN-158
+  Status: OPEN — awaiting Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-165
+    Item type: OPEN QUESTION
+    Transform at each step:
+      14a: Raised from a contradiction between two adopted formalisms that the vault held without noticing until a sewing pass placed them side by side. [stated]
+    Current status: OPEN
+
+### Status of carried questions — addendum
+- OPEN-153, 155, 156, 157, 158, 159, 160, 161, 162 — all carried, **awaiting Tom**. Nothing in tonight's twenty-five sessions addressed any of them. The review gate has now been silent since 2026-08-07, **sixteen days**.
+- OPEN-162 is **partly answered and partly deepened** by tonight's scheduler health check: the fleet was not quiet, the scheduler did fire, and the register that would have said so records completions rather than firings. The remainder of OPEN-162 moves to OPEN-163.
+- OPEN-158 (swept-and-empty vs. not-swept) recurred a third time tonight, in the connectome run's pre-authored reading of an unchanged triplet count: "If OLD == NEW, say there were no new triplets this week" does not distinguish a week with no new triplets from an extractor that produced nothing (ASSUMPTION-1185).

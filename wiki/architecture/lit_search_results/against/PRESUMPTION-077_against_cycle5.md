@@ -1,0 +1,77 @@
+SEARCH-AGAINST-PRESUMPTION-077:
+  Date searched: 2026-08-23
+  Cycle: 5 (15d monthly re-trigger; cohort 2026-07-05; unconsumed 49 days)
+  Original item: PRESUMPTION-077 (MONITOR-069)
+  Original statement: [inferred] "A four-day master-narrative gap is operationally ABSORBABLE rather than a degradation signal warranting alert."
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b → 15c → 15d → 15b (cycle 5)]
+    Original item: PRESUMPTION-077
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced as the unstated scaling premise of ASSUMPTION-068
+      15b (cycle 0, 2026-04-27): PARTIALLY-CHALLENGED — absorbability unverified at 4-day scale; burden of proof on the absorbability claim
+      15b (cycles 1–3): refresh only; no new literature
+      15b (cycle 5, 2026-08-23): Searched for challenging literature — NEW THEORETICAL FRAMING plus TWO LIVE EMPIRICAL DATA
+    Current status: CHALLENGED (upgraded from PARTIALLY-CHALLENGED, largely on C2A2's own behaviour)
+
+  Challenging evidence found: Yes.
+
+  LIVE EMPIRICAL NOTE (data, not literature — recorded per instruction):
+    Datum 1: This pipeline last ran 2026-08-19 and is running again 2026-08-23. A four-day gap. No alert fired. The gap was absorbed silently and would not have been visible to anyone who did not go looking for it.
+    Datum 2 (unprompted, and larger): this cycle's cohort is dated 2026-07-05 and has been UNCONSUMED FOR 49 DAYS. A backlog item aged seven weeks past its cohort date was drawn and processed as routine, with no escalation attached to the age itself. If a four-day gap is absorbable, forty-nine days is apparently also absorbable — which is the precise shape of the drift the literature below describes. Datum 2 is the stronger evidence and was not sought; it fell out of this cycle's own run metadata.
+
+  Sources:
+    1. Vaughan, D. 1996. The Challenger Launch Decision: Risky Technology, Culture, and Deviance at NASA. University of Chicago Press. The normalisation of deviance: an organisation becomes progressively insensitive to a deviation from intended practice until it no longer registers as deviant at all. Vaughan's key structural observation is that this happens insidiously and over long periods precisely BECAUSE disaster does not follow — each absorbed deviation supplies evidence that absorption is safe. PRESUMPTION-077 is a textbook instance: the gap is absorbed, nothing visibly breaks, and the absorption becomes the new baseline.
+    2. Snook, S.A. 2000. Friendly Fire: The Accidental Shootdown of U.S. Black Hawks over Northern Iraq. Princeton University Press. "Practical drift": the slow decoupling of work-as-imagined from work-as-done, in which locally efficient behaviour gains legitimacy through unremarkable repetition. Snook's mechanism is the one operating here — the deviation is legitimated by nobody complaining, not by anybody deciding.
+    3. Dekker, S. 2011. Drift into Failure: From Hunting Broken Components to Understanding Complex Systems. Ashgate. Failure as the outcome of unnoticed organisational drift rather than a discrete broken part; the system passes through no moment at which anything is visibly wrong.
+    4. Banja, J. 2010. "The normalization of deviance in healthcare delivery." Business Horizons 53(2):139–148. Applies Vaughan outside aerospace and identifies the diagnostic feature: the threshold of acceptability is reset by whatever has most recently been survived, not by an independent standard. This is exactly the "threshold set by the most recent gap" concern in the search angle, and it now has a citation.
+    5. Heartbeat / dead-man's-switch monitoring practice (SRE literature and current practitioner sources, e.g. OneUpTime, "How to Set Up Heartbeat and Dead Man's Switch Alerts," 2026-02-06; Crontap, "Dead man's switch, explained for developers"). The governing statement of the problem: "the absence of data does not trigger any alert." A dead man's switch exists specifically because a system cannot self-report that it has stopped — the check must be external and must fire on silence. These are practitioner sources rather than peer-reviewed work, and are cited as documentation of established practice rather than as research findings.
+    6. Hanley, J.A. & Lippman-Hand, A. 1983. JAMA 249(13):1743–1745. Applied inversely here: a run of absorbed gaps with no observed harm bounds the harm rate only very weakly, and provides no positive evidence that absorption is safe. "Nothing went wrong" is the premise Vaughan identifies as the engine of normalisation, and it is statistically almost empty.
+    7. Alert-threshold literature and practice (condition-monitoring and observability sources). The recurring finding: static thresholds set without a baseline of normal variation produce either alert fatigue or silent tolerance, and thresholds that adapt to recent experience without an independent reference drift monotonically in the permissive direction. Sourcing here is largely vendor/practitioner and should be treated as weak; the underlying point is better carried by Vaughan, Snook and Banja.
+
+  Strength of challenge: Moderate-Strong (UPGRADED from Moderate — the upgrade is driven by C2A2's own run data, not by the literature)
+
+  New since cycle 0/1: YES. The literature framing is new and much sharper: cycle 0 argued from generic slow-burn-failure and staleness-survival reasoning; this cycle supplies the canonical organisational-drift trio (Vaughan, Snook, Dekker) plus Banja's specific finding that the acceptability threshold is reset by the most recently survived deviation. But the decisive new material is empirical and internal. Cycle 0 said "this is the first 4-day case, and absorbability is being assumed by extrapolation from 1–2 day cases." Four months on, the answer is in: the extrapolation did not stop at four days. A 49-day-unconsumed backlog item is being processed as routine right now. The presumption did not merely survive; it expanded its scope by an order of magnitude without anyone restating it. That is the predicted trajectory, observed.
+
+  Summary: The presumption is that a four-day gap is absorbable. The challenge is not that four days is too long — it may well be fine — but that the presumption contains no mechanism for ever concluding otherwise, and that this cycle's own metadata shows the threshold has already moved from four days to forty-nine without a decision. Vaughan, Snook and Dekker describe the mechanism precisely: absorbed deviations are self-legitimating, because the absence of visible harm is read as evidence of safety, and the new tolerance becomes the baseline against which the next deviation is judged. Banja names the specific failure mode — the threshold is set by whatever was most recently survived. The structural point underneath all of it is the one the dead-man's-switch pattern exists to address: without an external heartbeat, the absence of a master-narrative entry is indistinguishable from the absence of a run, and both are indistinguishable from nothing having happened worth recording. C2A2 currently cannot tell these three apart.
+
+  Specific risks: (a) The system cannot distinguish "no entry because nothing happened" from "no entry because the pipeline is broken" — and has not been able to for the entire life of this monitor; (b) the tolerance has demonstrably ratcheted from 1–2 days to 4 days to 49 days with no decision at any point; (c) each absorbed gap makes the next one easier to absorb, so the drift is self-accelerating; (d) when a real failure occurs it will present as a slightly longer gap, which is the one signal the system has trained itself to ignore; (e) the presumption is UNSTATED, so there is no artifact anyone could review to notice the ratchet.
+
+  Mitigations available:
+    - Add an external heartbeat. The pipeline writes a timestamp on every run, and a separate check alerts on staleness of THAT file. This is the only mitigation that addresses the root cause: it makes silence itself a signal.
+    - Set the gap threshold once, in advance, from an independent rationale, and record the reasoning. Any threshold derived from recent experience will drift permissively (Banja).
+    - Track and plot the gap-length distribution over time. The ratchet is invisible per-instance and obvious in aggregate.
+    - Treat backlog AGE as a first-class alertable metric, separately from gap length. The 49-day datum was not being watched at all; it surfaced incidentally.
+    - State the presumption explicitly so it becomes contestable.
+
+  Search scope: Comprehensive on organisational drift and normalisation of deviance (canonical sources located); adequate on heartbeat/dead-man's-switch practice, though the sourcing there is practitioner rather than peer-reviewed and is labelled as such; weak on quantitative gap-as-signal models — no rigorous survival-analysis treatment of "probability broken given N days silent" was located, and the cycle-0 file's reference to such work should be treated as unverified. A targeted search for reliability-engineering treatments of silent-failure detection is recommended if the disposition turns on a numeric threshold.
+
+  Recommendation: CHALLENGED (upgraded; the strongest evidence is C2A2's own 49-day backlog age, which demonstrates the ratchet the cycle-0 file predicted)
+
+STEELMAN:
+  Item: PRESUMPTION-077
+  Strongest counterargument: The presumption cannot be wrong, and that is what is wrong with it. Because it is unstated and because no gap has ever triggered an alert, every gap that occurs is absorbed, and every absorption becomes evidence that absorption is fine. Vaughan's Challenger analysis and Snook's practical drift describe exactly this: deviation legitimated by unremarkable repetition, with the acceptability threshold reset by whatever was most recently survived rather than by any independent standard. The prediction is a monotone ratchet, and this cycle supplies the confirmation — the same presumption that was framed at four days is now silently covering a forty-nine-day backlog, and nobody decided that. Underneath sits a structural gap no amount of care fixes: without an external heartbeat, absence of an entry and absence of a run are the same observation, so the system's most likely failure mode is the one it is guaranteed not to notice.
+  What would need to be true for C2A2 to be safe: (a) An external heartbeat exists, so silence is a signal rather than a non-event; (b) the gap threshold is fixed in advance from independent reasoning and recorded; (c) gap length and backlog age are both tracked as distributions, not judged case by case; (d) the presumption is written down where it can be argued with.
+  How to test: Deliberately stop the pipeline for five days without telling the monitoring system. If nothing surfaces, the system has no gap detection at all and "absorbable" was never a finding — it was the absence of a detector. That test takes no work; it takes not doing work, and the current backlog age suggests it has already been run accidentally.
+
+---
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-08-23
+  Affected items: ASSUMPTION-035 (MONITOR-040), PRESUMPTION-037 (MONITOR-044), ASSUMPTION-044 (MONITOR-049), PRESUMPTION-077 (MONITOR-069)
+  Common vulnerability: UNOBSERVABLE-NEGATIVE. All four items infer that a mechanism is working from the absence of an observed failure, on channels that have no read receipt and no external heartbeat. In each case the success condition and the silent-failure condition produce identical observations from where C2A2 is standing:
+    - 035 / 044: "the hook fired" (observable) is not "the payload reached the model" (unobserved). anthropics/claude-code Issue #10373 documents that these come apart on this exact platform with no error surfaced.
+    - 037: file-based handoff is preferred over direct invocation partly BECAUSE it leaves a visible artifact — but artifact presence is not consumption, and there is no acknowledgement channel. The mechanism is structurally unfalsifiable, which is why it keeps winning by default.
+    - 077: absence of a master-narrative entry is indistinguishable from absence of a run. No heartbeat exists, so the system's most likely failure is the one it cannot see.
+  Second-order effect: because none of these can fail visibly, each successive monitoring cycle records "no change" and treats that as reassurance. Cycles 2, 3 and 4 for all four items returned "no new literature; carry forward" — which is true and also exactly what a silently-failing system produces. Five cycles of refresh have added no evidence because literature was never the binding constraint; the binding constraint is instrumentation, and instrumentation is not something a literature search can supply.
+  Literature basis:
+    - anthropics/claude-code Issues #10373 (open, macOS, has-repro) and #33612 — hooks execute or are skipped silently; payload injection failures produce no error.
+    - Hanley, J.A. & Lippman-Hand, A. 1983, JAMA 249(13):1743–1745; Jovanovic, B.D. & Levy, P.S. 1997, The American Statistician 51(2):137–139 — zero observed failures at small n licenses essentially no reliability inference (at n=1, the 95% bound on failure rate is 3/1).
+    - Vaughan, D. 1996, The Challenger Launch Decision; Snook, S.A. 2000, Friendly Fire; Dekker, S. 2011, Drift into Failure; Banja, J. 2010, Business Horizons 53(2):139–148 — absorbed deviations are self-legitimating and reset the acceptability threshold.
+    - Bornholt et al. 2016 (ASPLOS); Hu et al. 2018 (USENIX ATC) — durable-artifact handoff has partial-write, lost-rename and destroyed-predecessor failure modes invisible to the application.
+    - Dead-man's-switch / heartbeat monitoring practice — "the absence of data does not trigger any alert" (practitioner sources).
+  Risk level: HIGH
+  Recommendation: A single mitigation addresses all four, and it is not a literature question. Instrument the negative. (1) Content-level canary for the handoff: a nonce in `Handoffs/latest.md` that the Dispatch session must echo, which converts 035, 044 and half of 037 from unobservable to observable at a cost of minutes. (2) External heartbeat for the pipeline: a timestamp written on every run, with staleness of that timestamp — not of the narrative — being the alertable condition, which converts 077. (3) Re-route all four items out of the literature cadence into a measurement queue. Four of the last five cycles on these items produced nothing, and this cycle only produced something because a platform bug tracker happened to document the failure mode. That is not a repeatable yield.
+  Secondary cluster (noted, not flagged): ASSUMPTION-064 and ASSUMPTION-067 share a different common vulnerability — UNIT AND LEVEL HETEROGENEITY. 064 places individual research programmes, whole disciplines and devotional practices in the same "tradition" slot; 067 joins a claim about constituted wholes to a trial measuring individuals. Both then run operations across the mismatch and report results as if the units were commensurable. Literature basis: MacIntyre 1988 on what constitutes a tradition of enquiry; J.Z. Smith 1982 on the comparative category as the scholar's own construction; Marr 1982 and the levels-of-analysis tradition; List & Pettit 2011 vs Moen 2023 on what a group-level posit commits you to. Risk level: MODERATE. Recommendation: type the units explicitly and state which cross-unit operations are licensed.

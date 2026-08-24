@@ -1,0 +1,54 @@
+SEARCH-AGAINST-ASSUMPTION-064:
+  Date searched: 2026-08-23
+  Cycle: 5 (15d monthly re-trigger; cohort 2026-07-05; unconsumed 49 days)
+  Original item: ASSUMPTION-064 (MONITOR-063)
+  Original statement: Adding N.T. Wright as "scripture scholar ground truth" and Richard Rohr (The Universal Christ) as "spirituality ground truth" to a 13-tradition C2A2 frame.
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a, 15b → 15c → 15d → 15b (cycle 5)]
+    Original item: ASSUMPTION-064
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-04-27 candidate DECISION-025 proposal (N=11→13)
+      15b (cycle 0, 2026-04-27): PARTIALLY-CHALLENGED — demarcation, tradition-heterogeneity, curation asymmetry
+      15b (cycles 1–3): refresh only; no new literature
+      15b (cycle 5, 2026-08-23): Searched for challenging literature — refined and hardened, no reversal
+    Current status: PARTIALLY-CHALLENGED (unchanged in direction; sharpened on the "ground truth" framing, which is now the weakest element)
+
+  Challenging evidence found: Yes.
+
+  Sources:
+    1. MacIntyre, A. 1988. Whose Justice? Which Rationality? University of Notre Dame Press (with After Virtue, 1981, and Three Rival Versions of Moral Enquiry, 1990). MacIntyre's criterion is explicit and restrictive: not every culture with a history constitutes a rational tradition. A tradition of enquiry must pass through his three stages, exhibit narrative coherence and historical embeddedness, and — critically — be capable of diagnosing and surviving its own epistemological crises by resources it generates internally. On this criterion a single living scholar's research programme (Wright) and a contemporary devotional-formational movement (Rohr's contemplative synthesis) are not obviously traditions in the same sense that, say, Thomism or the Scottish Enlightenment are. C2A2 is using "tradition" as a container for at least three different kinds of thing: individual research programmes, disciplines, and practices.
+    2. Smith, J.Z. 1982. Imagining Religion: From Babylon to Jonestown. University of Chicago Press (and Relating Religion, 2004). Smith's central claim is directly corrosive of the "ground truth" framing: the comparative category is "solely the creation of the scholar's study, created for the scholar's analytic purposes by his imaginative acts of comparison and generalization." There is no view from nowhere from which one designates a scholar as ground truth for a domain. The choice of Wright rather than Barclay, Campbell, Dunn or Sanders is a curatorial act that should be argued for, not a discovery of a ground truth.
+    3. Barclay, J.M.G. 2015. Paul and the Gift. Eerdmans. Barclay's reframing of grace via the anthropology of gift-giving is a leading, widely adopted alternative to Wright's covenantal-narrative reading, and it disagrees with Wright on substantive matters. Its existence is direct evidence that there is no consensus "ground truth" in Pauline scholarship for Wright to occupy.
+    4. Campbell, D.A. 2009. The Deliverance of God: An Apocalyptic Rereading of Justification in Paul. Eerdmans. A second live alternative, apocalyptic rather than covenantal, again incompatible with Wright at points. Wright is a major participant in a contested field, not its settled floor.
+    5. Ligonier / Reformed critiques of Wright and the New Perspective (e.g. Duncan, "N.T. Wright and the New Perspective on Paul," Ligonier Ministries). Confessional critiques hold that the New Perspective downplays personal sin and individual justification. Whatever one makes of them, they establish that Wright's position is contested from a second direction as well as from within the guild.
+    6. Critical reviews of Rohr, The Universal Christ (2019): Christian Research Institute, "A Heretic's Christ, a False Salvation" (equip.org); The Gospel Coalition, "'Everything Is Christ' — and Other Muddled Messages from Richard Rohr"; Ian Paul, "Is Richard Rohr's 'Universal Christ' Christian?" (psephizo.com). These are non-academic but substantive published critiques. The recurring objections are specific and germane to the "ground truth" designation: the Jesus/Christ bifurcation (Christ as "the transcendent within of every 'thing' in the universe"), the panentheistic framing, the rejection of substitutionary atonement, and the perennialist commitment mediated through Ken Wilber and Spiral Dynamics.
+    7. The perennialism point specifically. Rohr's project roots all traditions in a single Perennial Wisdom. That is not a neutral spirituality baseline — it is a strong, contested metaphysical thesis about the relation between traditions. Installing it as C2A2's "spirituality ground truth" silently commits the whole frame to perennialism, which is precisely the position MacIntyre's tradition-constituted rationality and Smith's constructivism both reject, from opposite directions. C2A2 would then hold three mutually incompatible meta-level commitments at once.
+    8. Moen, L.J.K. 2023. "Eliminating Group Agency." Economics & Philosophy 39(1):43–66. Cited here only for the general methodological point, well developed in social ontology, that positing an entity at a level of description is a substantive commitment requiring argument, not a bookkeeping convenience.
+
+  Strength of challenge: Moderate (unchanged in strength; substantially better sourced, and relocated onto the "ground truth" phrasing rather than the addition itself)
+
+  New since cycle 0/1: PARTIALLY. The direction and the verdict are unchanged from cycle 0 — this remains PARTIALLY-CHALLENGED and the addition remains defensible. What is new is (a) the MacIntyre criterion is now stated in its restrictive form rather than gestured at, (b) named live alternatives to Wright (Barclay, Campbell) replace the generic "Wright is contested," (c) the specific content of the Rohr critiques is now on the record, and (d) a new argument not present in cycle 0: the perennialism embedded in Rohr's project is a meta-level commitment that conflicts with the frame's other meta-level commitments. Cycles 1–3 reported no change and were correct to; this cycle adds substance without reversing.
+
+  Summary: The challenge is not to including Wright and Rohr, both of whom are serious and worth reading. It is to two words: "ground truth." Pauline scholarship has no ground truth — it has Wright, Barclay, Campbell, Dunn and Sanders in live disagreement, and confessional critics disputing the whole New Perspective from outside. Contemplative spirituality has no ground truth either, and Rohr in particular carries a specific and contested perennialist metaphysics that C2A2 would be adopting wholesale by designating him. Underneath both sits the unit-heterogeneity problem MacIntyre and J.Z. Smith frame from opposite ends: C2A2's "tradition" slot is now holding individual research programmes, whole disciplines, and devotional practices as if they were the same kind of thing, and the comparative category doing that work is the framework's own construction rather than a found feature of the world.
+
+  Specific risks: (a) Designating a contested position as ground truth means C2A2 cannot register disagreement within biblical studies — Barclay's objections to Wright become invisible because Wright IS the measure; (b) adopting Rohr as spirituality ground truth silently commits the frame to perennialism, contradicting the tradition-constituted and constructivist commitments elsewhere; (c) unit heterogeneity means cross-tradition operations (density metrics, PRS triplets) compare non-comparable objects while reporting a number as if they were; (d) the curation is hand-built and the selection principle is unstated, so selection bias cannot be audited.
+
+  Mitigations available:
+    - Drop "ground truth." Use "primary interlocutor" or "entry point." The framing costs nothing and removes most of the challenge.
+    - Pair each: Wright with Barclay or Campbell; Rohr with a non-perennialist contemplative voice. This preserves the contested character of both fields.
+    - Type the tradition slot explicitly: individual-programme / discipline / practice, and state which cross-tradition operations are valid across types.
+    - Write down the selection principle for the 13 so it can be audited for bias.
+    - State the perennialism commitment explicitly if it is intended, or firewall it if it is not.
+
+  Search scope: Comprehensive on MacIntyre's tradition criteria and J.Z. Smith on comparison; comprehensive on published critiques of Rohr's Universal Christ; moderate on Pauline scholarship (major alternatives located; no systematic 2024–2026 survey of the state of the debate found, and a specialist search is recommended if this item's disposition turns on it).
+
+  Recommendation: PARTIALLY-CHALLENGED (unchanged verdict; recommend the challenge be recorded against the "ground truth" designation specifically rather than against the addition)
+
+STEELMAN:
+  Item: ASSUMPTION-064
+  Strongest counterargument: "Ground truth" is a term from supervised learning, where it means the labels are correct by construction. Neither biblical studies nor contemplative spirituality has anything of the kind. Wright is one voice among several in a live dispute — Barclay and Campbell disagree with him substantively and are equally credentialed — so designating him as the field's ground truth does not import the field, it imports one position while making the dispute invisible. Rohr is worse in one specific respect: his project is explicitly perennialist, so adopting him as the spirituality baseline commits C2A2 to a strong and contested thesis about how traditions relate to one another, which is exactly the question a 13-tradition comparative frame exists to hold open. And beneath both, MacIntyre's criterion and Smith's constructivism converge on the same worry from opposite directions: the "tradition" slot is now heterogeneous, and the category doing the comparing is the framework's own invention rather than a feature of the terrain.
+  What would need to be true for C2A2 to be safe: (a) The phrase "ground truth" is replaced with something that does not claim settledness; (b) each new entry is paired with a live alternative so internal disagreement remains visible; (c) the tradition slot is typed, and cross-type operations are justified or restricted; (d) the perennialism question is decided explicitly rather than inherited.
+  How to test: Take a proposition on which Wright and Barclay disagree — say, the function of "the faithfulness of Christ" in Paul's argument — and ask whether C2A2's current representation of "Wright as scripture-scholar ground truth" can represent the disagreement at all, or whether it silently resolves it. If it silently resolves it, the designation is doing epistemic work no one authorised.

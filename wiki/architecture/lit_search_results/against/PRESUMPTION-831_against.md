@@ -1,0 +1,57 @@
+SEARCH-AGAINST-PRESUMPTION-831:
+  Date searched: 2026-08-18
+  Original item: PRESUMPTION-831
+  Original statement: That an identifier carries the polarity of the claim it names. The schema has no field recording whether an id's Solution supports or undercuts the sentence it anchors; the only remedy available was withdrawal.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: 14b → 15b
+    Original item: PRESUMPTION-831
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by asking what field would have prevented all four of today's withdrawals, and finding that none exists.
+      15b: Searched for challenging literature; found that such a field has existed in published scholarly ontologies since 2010 (CiTO), that its real-world adoption has been poor, that optional metadata fields are systematically under-populated, that polarity is not a property of an identifier under the open-world assumption, and that signs do not compose along chains.
+    Current status: CHALLENGED
+
+  Challenging evidence found: Yes
+
+  Sources:
+    1. Shotton, D., 2010. "CiTO, the Citation Typing Ontology." Journal of Biomedical Semantics 1(Suppl 1):S6. — Directly contradicts the "no such field exists" framing. CiTO has provided exactly the missing field for over fifteen years: citations can be typed as neutral (cito:citesAsAuthority), positive (cito:confirms, cito:supports) or negative (cito:disagreesWith, cito:disputes). The gap in C2A2 is a local schema omission, not an absence in the design space, so the presumption that no remedy but withdrawal was available is false as stated.
+    2. "Adoption of the Citation Typing Ontology by the Journal of Cheminformatics," 2020. Journal of Cheminformatics 11(1):article 448-series. [Author attribution not confirmed in this session — cite by title/venue.] — Reports that CiTO adoption in publishing has not been wide and that uptake of citation-typing innovations has been slow despite a decade of availability. This challenges the implicit inference from "a field would have prevented the withdrawals" to "adding the field will prevent them": the field existed and was not used.
+    3. Gonçalves, R.S. and Musen, M.A. (attribution likely but not confirmed in this session), 2019. "The variable quality of metadata about biological samples used in biomedical experiments." Scientific Data 6:190021. — Metadata in major biomedical repositories suffers from type inconsistency, incompleteness of required fields, and unstandardised values; the paper attributes this to scarce use of ontologies to control field names/values and to lack of validation. A polarity field without validation inherits these failure modes.
+    4. Repository metadata-completeness evidence: optional fields show consistently low completion (author ORCID ~26%/~15%, funding ~19%/~27%, references ~8%/~0% across two major repositories), with mandatory status producing markedly higher completeness. [Specific paper attribution not confirmed in this session — figures surfaced via a metadata-quality search summary; treat as indicative.] — An optional polarity field would predictably be left blank on precisely the anchors where polarity matters.
+    5. Arnaout, H., Razniewski, S., Weikum, G., Pan, J.Z., 2020–2021. "Enriching Knowledge Bases with Interesting Negative Statements" (AKBC); "Negative Knowledge for Open-world Wikidata" (WWW Companion); "Wikinegata: a Knowledge Base with Interesting Negative Statements" (PVLDB 14). — Under the open-world assumption, absence of a positive assertion is not a negative assertion. A single support/undercut sign field conflates three distinct states (supports, undercuts, unknown/not-asserted), and the KB literature treats materialising informative negation as a hard research problem requiring salience ranking, not a boolean column.
+    6. "Completeness, Recall, and Negation in Open-World Knowledge Bases: A Survey." (survey, Razniewski et al. line of work) — Establishes that negation and completeness require dedicated machinery separate from the fact store; reinforces that a polarity flag on an identifier is under-specified.
+    7. "Testing structural balance theories in heterogeneous signed networks," 2024. Communications Physics 7. [Author attribution not confirmed in this session.] — Finds very little evidence for the global presence of structural balance; objective-function values under balance theory were comparable to the trivial fraction of positive edges, and sign-preserving randomisations achieved greater values. Consequence for C2A2: signs do not compose transitively along citation chains, so a polarity field on each id does not license inference about the polarity of a chain of ids.
+    8. Leskovec, J., Huttenlocher, D., Kleinberg, J., 2010. "Predicting positive and negative links in online social networks." WWW '10. — Establishes signed-edge prediction as a task with substantial residual error even in social graphs with dense sign labels; C2A2's setting has far sparser and more contested labels.
+    9. Reported stance-annotation agreement of ~62% (polarity) and ~54% (intensity) weighted kappa, with argument-mining work noting relation identification is hard for humans out of context. [Specific paper attribution not confirmed in this session.] — The field, if added, would be populated at roughly this reliability, so the field's presence does not guarantee the field's correctness.
+    10. Underdetermination / Duhem–Quine (Stanford Encyclopedia of Philosophy, "Underdetermination of Scientific Theory"). — Whether a source supports or undercuts depends on which auxiliary assumptions are held fixed and on which sub-claim is anchored. Polarity is therefore a property of the (source, anchored sentence, background) triple, not of the identifier — which contradicts the presumption's own framing that an identifier could carry polarity at all.
+
+  Strength of challenge: Strong
+
+  Summary: The presumption contains two moves and the literature challenges both. The first — that no schema exists in which polarity is first-class — is directly contradicted: CiTO has offered cito:supports / cito:disagreesWith / cito:disputes since 2010, and the SPAR ontology family has continued to maintain it. The second — that adding such a field would have prevented the four withdrawals — is challenged empirically by CiTO's poor uptake, by repository evidence that optional metadata fields are the ones left blank, and by stance-annotation reliability in the ~0.5–0.6 kappa range. More fundamentally, the open-world KB literature and the underdetermination literature both argue that polarity is not a property an identifier can carry: it is a relation between a source, the specific sentence it is anchored to, and the background assumptions in force, and absence of a "supports" assertion is not equivalent to "undercuts." A sign field on the id would therefore be under-specified even when populated, and the signed-network literature shows such signs do not propagate reliably along chains.
+
+  Specific risks:
+    - False closure: adding a polarity field may be read as having solved the problem, when the binding constraint is population and reliability, not schema.
+    - Wrong locus: attaching polarity to the identifier rather than to the (id, anchored-sentence) pair will produce a single value that is wrong for some of the sentences the id anchors.
+    - Three-state collapse: a boolean supports/undercuts field cannot represent "not assessed," which under an open-world reading is the modal case; unassessed will silently read as neutral or as support.
+    - Chain inference: if polarity is stored per-edge, downstream reasoning may compose signs transitively; the structural-balance literature gives no warrant for that.
+    - Reliability laundering: a populated field acquires the authority of structured data while carrying the reliability of a contested human judgement.
+
+  Mitigations available:
+    - Adopt or align with CiTO rather than inventing a bespoke sign field; this inherits fifteen years of vocabulary design and the distinction between disputes / disagreesWith / citesAsAuthority.
+    - Make the field mandatory-with-explicit-unknown, and treat "unknown" as blocking for load-bearing anchors — the metadata-completeness evidence says optional fields will not be filled.
+    - Attach polarity to the (identifier, anchored-sentence) pair, per MultiCite's multi-sentence finding.
+    - Record who/what assigned the polarity and on what evidence (provenance), so that low-reliability assignments are distinguishable from adjudicated ones.
+    - Prohibit transitive sign propagation in any downstream query without explicit re-adjudication.
+    - Retain withdrawal as a remedy: the presumption treats withdrawal as a deficiency, but the retraction literature (see PRESUMPTION-756) suggests withdrawal is often proportionate.
+
+  Search scope: Scholarly citation ontologies (CiTO/SPAR) and their adoption; negation and negative statements in knowledge bases under the open-world assumption; completeness and recall in open-world KBs; signed-network representation and structural balance; metadata quality and field-completeness studies in research repositories; stance/argument annotation reliability; philosophy-of-science underdetermination. Searched 2026-08-18. Not covered: internal enterprise KG schemas; RDF* / named-graph reification mechanics in detail; nanopublication attribution models (identified as relevant but not searched before budget exhaustion).
+
+  Recommendation: CHALLENGED
+
+  STEELMAN:
+    Item: PRESUMPTION-831
+    Strongest counterargument: The presumption is doing useful work even though its factual claim is wrong. Surfacing "the schema silently assumes an identifier is polarity-neutral" is the right diagnosis of why withdrawal was the only lever available — and the fact that a mature published ontology already solves it strengthens rather than weakens the case for acting, because it means the design risk is low and the vocabulary is off the shelf. The literature's real warning is not "don't add the field" but "adding the field is the easy 10%": CiTO's fifteen years of low uptake shows that the hard part is making assignment mandatory, reliable, provenance-tracked, and scoped to the anchored sentence rather than the identifier.
+    What would need to be true for C2A2 to be safe: (a) polarity is stored per (id, anchored-sentence) pair, never per id alone; (b) the field has three or more states including an explicit unassessed state, and unassessed blocks publication of load-bearing anchors; (c) assignment provenance is recorded and inter-assessor agreement is periodically measured; (d) no downstream query composes polarity signs across more than one hop without re-adjudication; (e) withdrawal remains available, because for genuinely contested polarity there is no correct sign to record.
+    How to test: Retrofit CiTO predicates onto a sample of 100 existing anchors and measure (i) what fraction can be assigned a determinate sign at all, (ii) agreement between two independent assigners, (iii) how often the same id would take different signs for different anchored sentences. If (iii) is non-trivial, the id-level framing is refuted operationally, not just in principle. Then re-run the four withdrawn cases against the retrofitted schema and check whether the field would in fact have been populated correctly before the error — not merely populated.

@@ -8980,3 +8980,1861 @@ REVISE-324 — PRESUMPTION-783 — that restraint is free; seven same-day refusa
   that the natural remedy is actively harmful, so the flag exists as much to PREVENT an action as to
   request one.
   PROVENANCE: Origin 14b · Chain [14b->15a,15b->15c] · Current status: REVISION-FLAGGED
+
+================================================================================
+## 2026-08-14 — Agent 15c revision flags (14b batch of 2026-08-13)
+Three flags. Two are HIGH urgency and one of them (REVISE-327) is coupled to the other (REVISE-326) in
+a way neither search direction could see alone — see SYSTEMIC-RISK-FLAG_2026-08-14 Axis 1.
+--------------------------------------------------------------------------------
+
+REVISE-325:
+  Date: 2026-08-14
+  Item: PRESUMPTION-791
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: That an adversarial test passed once establishes that a fix holds. Two runs made that inference
+    about the same generator on the same day, in a day whose own nightly verifier refused to believe a
+    zero without a negative control. 14b risk grading: Medium.
+
+  15a result: SUPPORTED (corrective converse) · Strength: Strong
+  15b result: PARTIALLY-CHALLENGED · Strength: Moderate
+
+  WHY THIS IS A FLAG AND NOT A PREMISE — the principal finding is an OVERLAP finding:
+    THIS ITEM IS ALREADY VALIDATED IN THIS REGISTER. PREMISE-137's load-bearing condition states that an
+    invariant counts as coverage ONLY after the known defect is deliberately reintroduced and the
+    invariant confirmed to fire. PREMISE-150 states that adequacy claims require SEEDED defects, not
+    observed pass rates. 15a identifies this as a NON-APPLICATION finding, not a knowledge gap, and
+    minting a duplicate premise would be exactly the register-inflation PREMISE-138 bars. What is at
+    fault is enforcement, and enforcement is not something 15c can mint.
+
+  What the literature added anyway (recorded, not minted): the queue asked whether "would this test have
+    failed on the broken version?" has an established name and method. It has three. KILLING A MUTANT
+    (DeMillo, Lipton & Sayward 1978; Jia & Harman 2011); the NEGATIVE CONTROL (Lipsitch, Tchetgen
+    Tchetgen & Cohen 2010, Epidemiology 21(3):383-388 — a routine precaution whose distinctive value is
+    detecting UNSUSPECTED sources of spurious inference); and CONFIRMATION TESTING / the mandatory red
+    step of red-green-refactor, with the fail-to-pass convention in bug-reproducing-test research
+    (Hora, AST 2026 [abstract only]).
+
+  15b'S CORRECTION, which materially narrows the flag and is accepted: the inconsistency 14b spotted is
+    NOT an inconsistency. A demonstrated red-then-green test is a DISCRIMINATION EVENT; an unverified
+    zero is a NULL READING; only null readings need positive controls. The fleet's two apparently
+    contradictory standards are therefore CORRECT — provided the red was actually observed. That fact
+    is not in evidence, and it is the whole question. Gruber et al. (2021, arXiv:2101.09077): flakiness
+    at 0.86% of tests across 1,006 projects, so a deterministic test's single pass is decisive — but
+    where non-determinism IS present ~170 reruns are needed for 95% confidence in a passing test, and
+    47% of restarted failing builds in a 75M-build sample passed on retry. Nobody established that this
+    test is free of non-deterministic dependencies.
+
+  What is at risk: the export path carries EVERY review decision the human makes. If the adversarial
+    test was never observed to fail on the broken generator, it is itself a null reading, the two runs
+    verified nothing, and a test believed protective is currently SUPPRESSING further inquiry.
+
+  Recommended action for Tom (or for any run, it needs no human judgement — one command):
+    A DEFECTIVE PAGE FROM THE SAME GENERATOR IS STILL ON DISK. That is a ready-made negative control at
+    zero cost. RUN THE PASSING ADVERSARIAL TEST AGAINST IT AND RECORD WHETHER IT FAILS. Green on the
+    defective page refutes the fix claim outright. Red on it discharges PREMISE-137's condition and
+    closes the item. Both directions independently named this same one command as the cheapest available
+    test in the entire eleven-item batch.
+
+  Urgency: MEDIUM — 14b graded it Medium and the test costs one execution. It is filed as a REVISE rather
+    than a MONITOR because a MONITOR here would be a fourth record of an obligation that already exists
+    twice and has not been performed, which is the pattern PRESUMPTION-781 / REVISE-323 names.
+
+  DECLARED SEARCH GAP, and it runs AGAINST 15b's conclusion: 15b did NOT search mutation testing or
+    test-suite adequacy — 14b's first-named direction — and says the omission is material (cf. Just et
+    al. 2014, on mutants as substitutes for real faults). 15a's Tversky & Kahneman (1971) source is of
+    the heuristics-and-biases kind PREMISE-121 has previously struck on replication grounds and is
+    reported as supporting-but-not-load-bearing; the TDD formulation is practitioner FOLKLORE.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+--------------------------------------------------------------------------------
+
+REVISE-326:
+  Date: 2026-08-14
+  Item: PRESUMPTION-794   [14b risk grading: CRITICAL · marked REFLEXIVE]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: That the human's absence is a condition to be REPORTED AROUND rather than a design variable now
+    running at an untested setting. Eleven unattended days, a five-day-dark review gate, a queue that
+    has completed nothing since March, a detector silent since May — each reported accurately by the
+    agent that owns it, and by no one as a whole.
+
+  15a result: SUPPORTED · Strength: Strong
+  15b result: CHALLENGED · Strength: Strong
+
+  READ THIS BEFORE READING THE GRADES. 15b's CHALLENGED IS NOT REASSURANCE, and 15b says so in terms:
+    "This challenge does not reassure; it relocates the deficiency and makes it older." The challenge is
+    to 14b's unstated premise that HUMAN ADJUDICATION IS WHAT CONFERS VALIDITY — which 15b finds is the
+    least evidenced element of the entire HITL pattern. On that literature the eleven dark days are not
+    a period in which the central claim went untested, but the FIRST PERIOD IN WHICH THE ABSENCE OF A
+    VALIDITY MECHANISM BECAME VISIBLE. Grading this item DOWN on the strength of 15b's file would be an
+    error, and 15c records that as the single most misreadable result of the run.
+
+  Evidence, both directions:
+    FOR — Green, B. (2022), "The flaws of policies requiring human oversight of government algorithms,"
+      Computer Law & Security Review 45:105681: 41 oversight policies; people CANNOT perform the assumed
+      oversight functions, and BECAUSE of that the oversight requirement LEGITIMATES deployment of
+      faulty systems and lets parties shirk accountability. Applied reflexively — accurate per-agent
+      reporting of an unperformed adjudication step is NOT NEUTRAL; it makes an untested arrangement
+      look warranted. This converges with PREMISE-151. Label-free drift detection gives the residual its
+      engineering form: with the labelling channel dark, accuracy is not degraded but UNMEASURABLE, and
+      every remaining monitor is an input-distribution proxy that cannot distinguish "still correct"
+      from "wrong in a way that did not move the inputs." AI Act Art. 14 treats oversight as a
+      CONFORMITY CONDITION, not a quality improvement.
+    AGAINST — Sele, D. & Chugunova, M. (2024), "Putting a human in the loop: Increasing uptake, but
+      decreasing accuracy of automated decision-making," PLOS ONE 19(2):e0298037 [verified this run,
+      N=292]: adding the HITL step raised uptake 7pp and LOWERED accuracy, with intervention RAREST on
+      the LEAST ACCURATE recommendations. Every field that runs unattended — acceptance sampling,
+      PCAOB AU 350 audit sampling, lights-out manufacturing with per-window verified output —
+      establishes validity from a DECLARED ACCEPTANCE DESIGN rather than from presence.
+
+  What is at risk: the central claim of the design. If validity depends on human adjudication at some
+    cadence, eleven days of unadjudicated output is not a backlog but a period during which the claim
+    was untested — and nothing in the metrics distinguishes the two readings. 15b adds a second and
+    worse risk that 14b did not anticipate: A FALSE ALL-CLEAR ON THE HUMAN'S RETURN. A reviewer facing
+    eleven days of backlog is the textbook population for complacent approval; the fleet would then hold
+    a documented adjudication and a WEAKER validity claim than while dark, with a certificate attached.
+
+  Recommended action for Tom — three items, in this order, and the first two need no human presence:
+    (1) GREP FOR THE CADENCE. Does ANY C2A2 artefact — charter, decisions register, task file — actually
+        SPECIFY an adjudication cadence? 15a names this as the cheapest thing that would move the item
+        and it was not run. If no cadence is specified anywhere, the item TRANSFORMS into the different
+        and arguably worse finding that the setting was never specified at all.
+    (2) COMPUTE THE OVERRIDE RATE on the last attended period — the fraction of items where the human's
+        disposition differed from the system's proposal or default. 15b calls this the decisive test.
+        NEAR ZERO means the gate was RATIFICATION and the Critical grading rests on a mechanism that was
+        never operating. SUBSTANTIAL means the gate was load-bearing and 14b is correct at full strength.
+        This is historical, cheap, and needs no human.
+    (3) DECIDE, and it is a human decision: whether validity is to be re-established by PRESENCE (restore
+        the cadence) or by a DECLARED ACCEPTANCE DESIGN (state a sampling rule and an acceptance
+        criterion the unattended fleet can satisfy). The literature supports the second and is silent on
+        the first. Calderon et al. (2025, arXiv:2501.10970) supplies a statistical test for whether an
+        automated judge may substitute on a given task; 15b's honest limit is that LLM-judge inter-rater
+        agreement is measurably lower and more variable than human annotation on subjective tasks, so
+        substitution is a PER-TASK empirical question, not a policy.
+
+  Urgency: HIGH — 14b graded the item Critical; the condition is live and in its eleventh day; and item
+    (2) predicts a false all-clear the moment attendance resumes, which means the window in which the
+    measurement is still takeable is closing.
+
+  RESIDUAL IS SMALLER THAN THE INTAKE HEADER IMPLIED, per 15a's register check, and this is why the item
+    is flagged rather than minted: PREMISE-124 already requires self-measurement without an external
+    baseline to be reported UNCALIBRATED (and the human IS that baseline, so 124 already entails the
+    accuracy claim one step out); PREMISE-119 already distinguishes ABSENT from SATURATED and already
+    names a "produced and unreviewable" state as adoptable; PREMISE-109 already holds the "reported by
+    each owner and by no one as a whole" half. GENUINELY UNHELD: the cadence-as-design-variable framing,
+    the backlog-versus-untested-period distinction, and Green's legitimation result.
+  CONDITIONALITY AND ITS LIMIT: the residual holds IF the design specifies an adjudication cadence —
+    untested, hence action (1). And NO source quantifies a tolerable dark interval; the literature
+    supports the KIND-claim and gives NO basis for treating eleven days specifically as a breach. Any
+    such use exceeds the evidence.
+  REFLEXIVITY, per the item's own mark and not absorbed: this flag is unadjudicated output produced
+    during the period it describes; the 15a/15b independence it relies on is itself unadjudicated
+    (PREMISE-111, MONITOR-486); and per PREMISE-151, recording that does not make it managed.
+  COUPLED TO REVISE-327 — see SYSTEMIC-RISK-FLAG_2026-08-14 Axis 1. Do not act on 327 without reading
+    this flag.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+--------------------------------------------------------------------------------
+
+REVISE-327:
+  Date: 2026-08-14
+  Item: PRESUMPTION-796
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: That the diagnosis of a self-defeating remedy class does not apply to the diagnosis.
+    SYSTEMIC-RISK-FLAG_2026-08-13 establishes that universal mandatory controls degrade into checks
+    recorded as performed and not executed, and then ISSUES TWO UNIVERSAL MANDATORY CONTROLS without
+    claiming or arguing an exemption. 14b risk grading: High. Queued for the CONTENT question only;
+    PREMISE-144 settles the structural question and was not re-litigated.
+
+  15a result: PARTIALLY-SUPPORTED, and the strength SPLITS —
+      EXISTENCE half:  SUPPORTED (Moderate) · CRITERION half: NO-SUPPORT-FOUND (None) + NOVELTY-FLAG
+  15b result: CHALLENGED · Strength: Moderate-to-Strong
+
+  THE HEADLINE, AND IT IS A RESULT ABOUT THE PIPELINE AS MUCH AS ABOUT THE ITEM: 15a searched the
+    criterion question, found nothing, and correctly filed a NOVELTY-FLAG. 15b, searching the
+    adversarial direction and barred from reading 15a, FOUND THE CRITERION. 15c therefore RETIRES 15a's
+    NOVELTY-FLAG. The criteria are the IIA's Quality Assurance and Improvement Program (Global Internal
+    Audit Standards 8.4 / 12.1 [verified via theiia.org; numbering not cross-checked against the
+    standards text]): a universal, mandatory external quality assessment of EVERY internal audit
+    function, by an INDEPENDENT ASSESSOR, on a MATERIALLY DIFFERENT CADENCE (once every five years),
+    reported through a channel THE CONTROLLED LAYER DOES NOT OWN (directly to the board). Three axes,
+    checkable in one sitting. Supported by ISO/IEC 17011 + ILAC, by metrological traceability
+    terminating in NMI primary standards, and by Goodenough, Weinstock & Klein (2015), "Eliminative
+    Argumentation," CMU/SEI [verified this run] — the regress terminates by enumerating and eliminating
+    specific defeaters, not by stacking meta-levels. 15a independently established the EXISTENCE half
+    (ISO/IEC 17025 §6.5 traceability with no risk-based carve-out; meta-monitoring in SRE practice) and
+    found that THIS REGISTER ALREADY CONTAINS A WORKED INSTANCE at PREMISE-086's monitor-of-monitor
+    requirement, which the 08-13 intake header did not surface.
+
+  Net assessment: this DOWNGRADES the item from "the flag ships the defect it names" to "the flag omits
+    an argument for which a standard template exists" — but the downgrade has a sting, and it is the
+    reason this is a REVISE rather than a MONITOR. The three axes are checkable against the 08-13 flag's
+    two controls in one sitting, and IF THOSE CONTROLS ARE SELF-ADMINISTERED AT THE OBJECT CADENCE WITH
+    SELF-REPORTED RESULTS THEY SATISFY NONE OF THE THREE, and 14b's inference stands at full strength
+    without qualification. Nobody has done that check.
+
+  Counterweight, from inside the audit-of-the-audit domain itself and carried at full strength: PCAOB
+    AS2 (2004) imposed near-universal prescriptive control testing and WAS REPLACED WITHIN THREE YEARS
+    by AS5's risk-based scoping, because universality drove overzealous auditing at cost disproportionate
+    to benefit. Proportionality doctrine (GAO Green Book, AU 319, BIS/FSI) is stated generally with NO
+    meta-level exception. 14b graded this item High partly because the flag is "the likeliest to become
+    a standing design principle" — and AS2/AS5 is a direct warning against precisely that move in
+    precisely that domain.
+
+  What is at risk: the 08-13 flag is on track to become a standing design principle. Adopted with an
+    unargued meta-exemption it ships the defect it was written to prevent; adopted with a blanket
+    prohibition on universal meta-controls it would FORBID the QAIP pattern — the only structure the
+    assurance professions have found that reliably catches a self-assessing function's blind spots.
+
+  Recommended action for Tom — one determination and one classification, both small:
+    (1) NAME THE EXTERNAL ASSESSOR, EXPLICITLY, and state whether it is you. This is the enabling
+        condition of the entire QAIP precedent and it is currently unmade. IF IT IS YOU, THE EXEMPTION
+        IS CONTINGENT ON ATTENDANCE and that contingency must be written into the flag rather than
+        assumed — see REVISE-326, which reports attendance at zero for eleven days. If no external
+        assessor can be named, the QAIP precedent DOES NOT TRANSFER and 796's exemption is unavailable
+        regardless of how the other two axes score.
+    (2) CLASSIFY THE 08-13 FLAG'S TWO CONTROLS against the three axes — independent actor, materially
+        different cadence, reporting channel not owned by the controlled layer. Pass on all three and
+        the exemption is argued. Fail any and the control is rewritten or withdrawn.
+
+  Urgency: HIGH — not because the item is urgent in itself but because the artefact it concerns is
+    actively hardening into a principle, and both actions are one sitting each.
+
+  A CANDIDATE CRITERION, RECORDED AND EXPLICITLY NOT ADOPTED: 15a offers a synthesis of its own — that
+    warranted universal meta-controls are O(1) IN THE GOVERNED POPULATION, externally executed and
+    self-announcing on failure, while abandoned ones (AS2) were O(N). 15a flags this as ITS OWN, not the
+    literature's, and per PREMISE-135 it owes a named population and one severe test against a case not
+    among the four that produced it. It is recorded here so it is not lost and is NOT adoptable as
+    stated. Note that 15b's own 787-792 SYSTEMIC-RISK-FLAG volunteers a fourth candidate property for
+    the same class — a control that EMITS EVIDENCE OF ITS OWN EXECUTION as a side effect of the
+    instrument's normal output, making "recorded as performed but not executed" an unreachable state —
+    and explicitly declines to answer 796 with it.
+  SCOPE REFUSAL BY DESIGN, declared by 15a and not curable by 15c after the fact: 15a could NOT read
+    SYSTEMIC-RISK-FLAG_2026-08-13.md, because it sits in `against/` and 15a is barred from that
+    directory. It therefore could not classify the flag's two controls. That classification is action
+    (2) above and is the single most useful thing anyone can do with this item. The directory layout,
+    not the agent, caused this.
+  DECLARED GAP THAT COULD PARTLY RESTORE 14b: 15b did NOT search whether meta-controls EMPIRICALLY
+    degrade — PCAOB inspection deficiency findings, peer-review failure rates, whether external quality
+    assessments actually detect deficiencies — nor the COST of the audit-of-the-audit, which 14b
+    explicitly requested. Read 15b's Moderate-to-Strong as "a defensible class exists IN STANDARDS AND
+    ON PAPER," NOT as "meta-controls are empirically robust." 15a's verification on this item is the
+    weakest of the run: NOT ONE SOURCE WAS READ IN FULL (ISO/IEC 17025 and 17011 paywalled; AS2/AS5
+    material secondary; Green Book and AU 319 located but not read; the IIA source register-held and
+    re-cited non-independently), and the claim that the Google SRE book states meta-monitoring as a
+    UNIVERSAL requirement was sought and NOT FOUND.
+  DOMAIN TRANSFER IS THE WEAKEST LINK: every source here concerns HUMAN institutions whose degradation
+    mechanism is habituation, whereas C2A2's is a generated assertion. PREMISE-139 measures that gap in
+    a human corpus; its rate in a machine one is unknown.
+  COUPLED TO REVISE-326 — see SYSTEMIC-RISK-FLAG_2026-08-14 Axis 1. Neither flag shows the coupling
+    alone.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-328:
+  Date: 2026-08-15 · Item: ASSUMPTION-1069 · ASSUMPTION (stated) · Disposition source: DISPOSITION-702
+  Finding: nine of twenty-five runs produced no deliverable and not one of the nine is counted anywhere.
+  Why REVISE rather than a new premise: the core is ALREADY HELD by PREMISE-141(1) and PREMISE-142(2),
+    validated 2026-08-05 on this same fault. What both search directions found instead is a DEFECT IN A
+    LIVE PREMISE.
+  RECOMMENDED AMENDMENT, requiring Tom's decision because it edits an ACTIVE premise:
+    PREMISE-008 licenses an honest null but does NOT require the null to be an ARTEFACT. Add the
+    precondition: A LICENSED NULL MUST BE WRITTEN. Absent that, a licensed null and a silent death are
+    the same observation, which is precisely what happened to `c2a2-morning-chat-scrape`, whose own
+    contract said "write a note to the output file and exit gracefully" and which wrote nothing.
+  SECOND REQUIREMENT, from 15b and load-bearing: THE FRAME MUST COME FROM THE LAUNCHD SCHEDULE, NOT
+    FROM THE ARTEFACTS. PCAOB AU 350 / AS 2315 states the general form — "an auditor would not be able
+    to detect understatements due to omitted items by sampling the recorded items" — so an artefact-side
+    counter STRUCTURALLY CANNOT SEE the nine runs, however carefully it is built.
+  THIRD REQUIREMENT, from 15b: "no deliverable" collapses FOUR distinct states — crashed /
+    nothing-to-do / none-by-design / blocked. `summa-2026-daily-batch` completed and wrote nothing BY
+    DESIGN and must not be counted with `metabolism-regen-daily`, which produced zero assistant output
+    after one tool call. A single counter without this distinction will false-positive on legitimate
+    silence and will be switched off within a week.
+  Together these make "nine" RECOMPUTABLE rather than asserted, which it currently is not.
+  Related: PREMISE-141, 142, 008, 086, 124, 101, 115, 031/REVISE-021; REVISE-331 (same instrument);
+    REVISE-335 (frame provenance).
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-329:
+  Date: 2026-08-15 · Item: ASSUMPTION-1075 · ASSUMPTION (stated) · Disposition source: DISPOSITION-704
+  Finding: three fail-open defects re-discovered by runs that all knew they were known, and none fixed.
+  Why REVISE: five ACTIVE premises hold the general form and PREMISE-158 was minted TWO DAYS AGO on the
+    previous instance. There is nothing to incorporate. What is decision-relevant is a process defect:
+    **PREMISE-130's THIRD-SIGNATURE TRIGGER IS MET AND ITS DIAGNOSIS IS UNPERFORMED.** A register entry
+    whose trigger has fired and whose action has not been taken is exactly the failure this register
+    exists to catch, and it needs Tom rather than another agent.
+  THE NEW CASE, and it is the sharpest thing in this intake's assumption half: THE VAULT'S OWN
+    PRESCRIBED WORKAROUND IS WHAT DISABLES THE CHECK. `fidelity_check.py` reads `raw_asr_word_count`
+    from the segments payload, so the minimal `{"segments": [...]}` wrapper that the vault's own
+    recorded workaround prescribes makes the length check VANISH WITH NO WARNING. A remedy defeating a
+    control was NOT FOUND in the literature searched, in either direction.
+  REMEDY SHAPE, agreed by both directions and NOT a polarity flip: introduce a THIRD STATE —
+    PASS / FAIL / NOT-RUN — and publish a CHECKS-EXECUTED DENOMINATOR. 15b's warning against the naive
+    fix is decisive: flipping to fail-closed would have HARD-FAILED FOUR RUNS on a cold `/tmp` cache in
+    a single day, in a fleet already losing 36% of its runs. The checks are not permitting anything;
+    they are DECIDING NOTHING AND REPORTING A DECISION. Precedent exists in ordinary tooling — pytest
+    counts skip and xfail separately; a Linux kernel selftest patch exists specifically to "avoid false
+    negatives if test has no ASSERTs."
+  COUNTER-FINDING REPORTED HONESTLY: Vaughan's normalisation of deviance STRENGTHENS the item's "none
+    was fixed" clause rather than weakening it. 15b graded its own challenge Weak on that clause.
+  DECLARED GAP: the IEC 61511 safety-instrumented-systems BYPASS-MANAGEMENT literature was IDENTIFIED
+    AND NOT REACHED by either direction, and probably holds the codified answer. Reaching it is cheap
+    and would likely settle this item without further pipeline work.
+  Related: PREMISE-130 (trigger fired), 158, 110, 150, 115, 138/151/135, 050, 044/045/046.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-330:  **AMENDMENT TO REVISE-326 — the pipeline correcting its own prior recommendation**
+  Date: 2026-08-15 · Item: ASSUMPTION-1077 · ASSUMPTION (stated) · Disposition source: DISPOSITION-705
+  WHAT IS BEING AMENDED: REVISE-326, filed 2026-08-14, carries the action "compute the override rate on
+    the last attended period — near zero means the review gate was ratification, substantial means 14b
+    is right at full strength," described as "the cheapest decisive action, historical, and needs no
+    attendance."
+  THAT ACTION IS FALSE AS WRITTEN, and this run establishes it. 15b, searching independently, found the
+    alert-fatigue systematic review (Wilson et al., 2026; PubMed 42148822): override rates run 49-96%,
+    THE RAW RATE IS UNINTERPRETABLE, and "the appropriateness of the override matters more than the
+    mere fact that an alert was overridden." Interpreting an override rate therefore requires
+    CASE-BY-CASE ADJUDICATION OF APPROPRIATENESS — which is exactly the attendance the measurement was
+    proposed to replace. THE MEASUREMENT IS NOT ATTENDANCE-FREE.
+  THREE CONFOUNDS, any one of which defeats the near-zero reading: signal-detection CRITERION versus
+    SENSITIVITY (a low override rate is produced equally by a lax reviewer and by a good process); the
+    KAPPA PARADOX at extreme prevalence; and PRIEST-KLEIN selection, since only disputed items reach
+    the gate at all.
+  FOURTH CONFOUND, specific to this fleet and found on the other side of this same intake: stale
+    invisible escalations (ASSUMPTION-1070 / PRESUMPTION-800 / PREMISE-167) CONTAMINATE THE OVERRIDE
+    DENOMINATOR. An escalation discharged by a peer never appears as an override.
+  REPLACEMENT ACTION RECOMMENDED: SEEDED DEFECTS. Insert a known, small number of known defects into the
+    review stream and measure the detection rate. This is identified where an override rate is not, it
+    is a standard qualification method in the very domains ASSUMPTION-1077 cites, and it supplies a
+    denominator sourced OUTSIDE the audited process — the requirement of REVISE-335.
+  RETAINED FROM REVISE-326 UNCHANGED: the reframe itself (eleven dark days as the period in which the
+    absence of a validity mechanism became visible) survives both directions untouched; and the timing
+    constraint (measure BEFORE adjudicating the backlog, because 15b predicts a false all-clear) is
+    confirmed for a second consecutive cycle.
+  ALSO CARRIED: in every precedent located, THE ACCEPTANCE RULE IS SET BY THE PARTY BEARING THE RISK.
+    A declared acceptance design does not remove Tom; it makes him rule-author and re-qualifier. This
+    collides with PREMISE-096 and must be settled before any design is written.
+  Related: REVISE-326, REVISE-327, MONITOR-525, MONITOR-526, REVISE-335, PREMISE-096, PREMISE-073,
+    PREMISE-167.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-331:
+  Date: 2026-08-15 · Item: PRESUMPTION-798 · PRESUMPTION (unstated) · Disposition source: DISPOSITION-706
+  Finding: that a run which produces no output has produced no evidence — nine-fold in one day.
+  Why REVISE: 15a's own recommendation. This is "substantially a rediscovery of PREMISE-141 at greater
+    n" — an ENFORCEMENT failure of a premise the register already holds, not new knowledge. The correct
+    output of an enforcement failure is an action in front of the human.
+  THE SINGLE HIGHEST-VALUE ACTION IN THIS INTAKE, and it closes TWO items at once: **one external
+    dead-man's-switch service, with a named check per scheduled run, pinged ON THE SUCCESS PATH ONLY.**
+    15b's 798/799 searcher states it plainly — 798 and 799 are closed by one instrument, and it should
+    be sequenced AHEAD of all documentary work in this intake. See PREMISE-166, whose three clauses
+    specify how the instrument must be built (off-plane receiver; progress-bound ping; credit stated as
+    a bound).
+  WHY NOT A MANIFEST, from 15b: a run manifest is a SECOND ARTEFACT OFF THE EXECUTION PATH that drifts
+    on the first schedule change — the fifth instance of this register's own recurring hazard. Elastic's
+    shipped gap-tracking cannot separate "rule failed" from "rule disabled," and the fleet's harder case
+    is "ran correctly, filed nothing" versus "died". The established fix is a POSITIVE COMPLETION RECORD
+    emitted by the run plus an EXTERNALLY HELD DEADLINE.
+  BOUNDS DECLARED, so the instrument is not oversold: Chandra-Toueg caps any absence detector in an
+    asynchronous system, and at the fleet's 36% silence base rate a naive absence alarm STARTS LIFE IN
+    THE ALERT-FATIGUE REGIME. Even a perfect manifest does not repair `metrics/` retrospectively — it
+    yields a KNOWN UNKNOWN, not an unbiased rate. Under Rubin's framework no test distinguishes MAR
+    from MNAR and a missingness indicator does not remove MNAR bias.
+  Related: PREMISE-141 (near-verbatim), 142, 086, 063, 110, 100, 097, 109, 140, 124, 096, 162, 147;
+    PREMISE-166 (this run); REVISE-328 (same instrument, assumption side).
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-332:
+  Date: 2026-08-15 · Item: PRESUMPTION-801 · PRESUMPTION (unstated) · Disposition source: DISPOSITION-709
+  Finding: that "the queue" names a POPULATION rather than a QUERY. FOURTH CONSECUTIVE DAY OF THIS
+    CLASS.
+  Why REVISE: PREMISE-101 minted the thesis on 07-19 and PREMISE-161, minted 08-14, already cites
+    VIM/GUM and Deming and already names these seven counts. Re-reporting the same class at the same
+    severity for a fourth day is, per 15b, A NAMED FAILURE MODE OF THE REMEDIATION PROCESS in the PCAOB
+    and internal-audit literature, which prescribes ESCALATION TO ROOT-CAUSE ANALYSIS WITH AN
+    EFFECTIVENESS CHECK rather than another same-severity finding. This flag is that escalation.
+  15b'S CORRECTION, which changes what the fix is: metrology (GUM §3.1.3, Annex D) holds that "a
+    measurand cannot be completely described without an infinite amount of information" and that
+    specification is required only RELATIVE TO THE ACCURACY NEEDED. So the demand for a canonical
+    measurand is UNBOUNDED WORK WITH NO ACCEPTANCE CRITERION, and premature standardisation entrenches
+    the wrong construct — lines-of-code being the worked historical case. **"21-35, uncertainty
+    dominated by predicate P" IS A COMPLETE RESULT, and the run that declined to arbitrate was CORRECT
+    rather than merely cautious.** Collapsing seven counts to one converts MEASURED UNCERTAINTY into
+    UNMEASURED ERROR. ASK FOR THE DECISION'S TOLERANCE FIRST; SPECIFY ONLY THAT FAR.
+  THE WORKED EXAMPLE, MEASURED THIS RUN — ASSUMPTION-1073, which was queued `[QUEUED-EMPIRICAL]` and is
+    hereby RESOLVED. Measured on `for_lit_search.md` before this run's appends: strict series
+    (`Status: [QUEUED`) = 1,669; loose series (`QUEUED`) = 2,175; occurrences rather than lines = 2,352;
+    lines matching QUEUED that are NOT Status lines = 506.
+    **NEITHER SERIES COUNTS ITEMS. BOTH COUNT LINES, AND THEY COUNT DIFFERENT LINES.** The strict series
+    counts the `Status:` field of a record and MISSES every item written in heading, bullet or `ITEM:`
+    form — 506 such lines, most of them ALREADY-SEARCHED items the strict series never saw. The loose
+    series counts any line containing the substring, DOUBLE-COUNTS items having both a heading and a
+    Status line, and counts English prose about the queue ("21 items QUEUED awaiting next cycle") as
+    queue entries; at 2,352 occurrences against 2,175 lines it is not even a stable line count.
+    THIS RESOLVES THE +2 / +16 DISCREPANCY: the strict series increments per RECORD APPENDED, the loose
+    per LINE OF PROSE WRITTEN, and an intake night writes fifteen bullet entries plus headers plus
+    commentary. **The 08-13 claim that "the two series are now comparable for the first time" is
+    RETIRED — they were never comparable.**
+  CONSEQUENCE THAT MUST PROPAGATE: the lane depth reported as 219 (measured at 222 this run) uses the
+    STRICT predicate and is therefore a count of Status LINES lacking both SEARCHED tags — A LOWER
+    BOUND ON ITEMS by an unknown margin. Every statement of the form "N items remain queued" in this
+    file and its predecessors inherits the defect.
+  MINIMUM PROSPECTIVE OBLIGATION recommended: every counter published by any run must state its
+    SELECTION PREDICATE AS PROSE alongside the number. This is distinct from PREMISE-114's
+    dispute-resolution authority and is not currently held.
+  STILL UNMEASURED: ASSUMPTION-1012 and ASSUMPTION-1024, companions to 1073, for a fourth day.
+  Related: PREMISE-101, 161, 114, 105, 117, 165, 147, 135, 096, 124, 162; ASSUMPTION-1073 (resolved).
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-333:
+  Date: 2026-08-15 · Item: PRESUMPTION-806 · PRESUMPTION (unstated) · Disposition source: DISPOSITION-713
+  **THE ITEM'S CENTRAL INFERENCE IS REFUTED BY ARITHMETIC THE FLEET ALREADY HELD, AND THIS FLAG EXISTS
+  SO THAT THE MISDIRECTED REPAIR IS NOT MADE.**
+  Finding as filed: that the fleet's failures are independent events, when at least four of nine share
+    a signature and the 08:00 slot is triple-booked.
+  15a: SUPPORTED / Strong, but with 15a'S OWN DUPLICATION WARNING — this is substantially PREMISE-141
+    clause (2), minted 2026-08-05 at High confidence from the same signature.
+  15b: CHALLENGED / Strong, on the fleet's own numbers. **Nine of twenty-five is 36.0% against a stated
+    base rate of 39 of 110 = 35.5%. THE DAY IS AT BASE RATE.** The 08:00 triple is p=0.045 under
+    independence, and post-hoc slot selection across roughly ten windows makes a cluster of that size
+    about 37% LIKELY ON A PURELY INDEPENDENT DAY. Poisson clumping (Aldous 1989; Clarke's 1946 analysis
+    of V-2 impacts) is the canonical treatment of exactly this error. Common-cause failure is
+    established by CAUSE-AND-COUPLING-FACTOR CODING (NUREG/CR-6268, ICDE), NEVER by clustering, and a
+    beta-factor model would add nothing here — no cause modelling, generic data.
+  ACTION REQUIRED OF THE HUMAN: do NOT raise 14b's own "moderate confidence" grading, which was
+    correct, and do NOT institute a common-cause repair on this evidence. Acting on the signature would
+    produce A MISDIRECTED REPAIR RECORDED AS A FIX, which is worse than no repair.
+  THE TWO FINDINGS THAT DO SURVIVE, and both are worth acting on independently of the correlation
+    question: (1) THE 35.5% NON-COMPLETION BASE RATE ITSELF, stated in the health contract as a
+    property of runs and never treated as a system parameter; (2) THE MISSING TIMEOUTS on
+    permission-gated and environment-gated tool calls — four runs ended at such a call with no timeout
+    and no artefact, and a timeout is cheap, local, and needs no theory of correlation.
+  Related: PREMISE-141 (already holds the general clause), 110, 089, 045, 004, 058, 080, 096, 085, 082;
+    PREMISE-166 (this run); REVISE-336 (the systemic form of this error).
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-334:
+  Date: 2026-08-15 · Item: PRESUMPTION-807 · PRESUMPTION (unstated) · Disposition source: DISPOSITION-714
+  Finding: that the backlog is a backlog. 15a performed the arithmetic the queue asked for:
+    **rho = 12.5/11 ≈ 1.14** (range 0.91-1.36). No clearance date at the point estimate; the lane grows
+    ~1.5/day to roughly 767 by 2027-08. Best case (lambda=10) is +1/day, giving 219 days. The "twenty
+    cycles to clear" figure is A RELABELLING: it vacates 219 items while the intake lane accrues ~250,
+    leaving the total unchanged. On the review queue, mu = 0 over twelve days, so W is unbounded for
+    any L and the figure 35 is THE INTEGRAL OF A STOPPED SERVER.
+  15b's decisive correction: **rho<1 is ERLANG-C's stability condition. WITH ABANDONMENT, NO SUCH LIMIT
+    EXISTS** (Erlang-A; Robbins & Harrison; Whitt) — a rho>=1 queue IS stable when items abandon.
+    Transcript-derived items PERISH. The fleet is probably ALREADY RUNNING A STABLE OVERLOADED
+    RESERVOIR and does not know it. The 219÷11 arithmetic presumes conservation of flow and
+    exchangeability, both named in the Little's-law literature as failing when tickets go obsolete.
+  **BOTH DIRECTIONS AGREE THE LANE WILL NEVER CLEAR. THIS RETIRES "BACKLOG" AS THE OPERATIVE WORD AND
+  RETIRES DEFECT-I'S PREMISE WITH IT** — DEFECT-I proposes a scheduling fix (scope a cycle to the
+    2026-07-05 cohort exclusively) for a problem that BOTH searches say no scheduling fix inside the
+    pipeline can solve. DEFECT-I has now been declined by four consecutive runs, and this is the first
+    run able to say WHY rather than merely that it was declined again.
+  15b'S DECISION-CRITICAL WARNING, which is why this needs a human and not another agent: **ADMISSION
+    CONTROL WOULD REFUSE THE FRESHEST ITEMS WHILE PRESERVING THE 219 DECAYED ONES** — the worst
+    available resolution of the dilemma this pipeline has declared for five consecutive cycles.
+  RECOMMENDED RESTRUCTURING, from 15b: (1) an EXPLICIT RELEVANCE HORIZON after which a queued item is
+    formally abandoned rather than silently starved; (2) report AGE DISTRIBUTIONS instead of depth,
+    since depth carries no information in a reservoir; (3) RANK rather than clear. Note that (2)
+    interacts with REVISE-332 — an age distribution needs a stated measurand as much as a count does.
+  Related: PREMISE-106 (High), 095, 070, 003, 102, 101, 050, 090, 121, 138; DEFECT-I; REVISE-332.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-335:  **SYSTEMIC — escalated from 15b's SYSTEMIC-RISK-FLAG (Critical), 2026-08-15**
+  Date: 2026-08-15 · Affected: ASSUMPTION-1068, 1069, 1075, 1077 (1070 secondary)
+  COMMON VULNERABILITY — FRAME PROVENANCE: **every instrument proposed across this intake samples a
+    frame generated by the process it audits.** The watcher runs on the watched plane; deliverable
+    counts count surviving runs; pass rates cover only the pairs where the check did not skip; override
+    rate covers only the items the escalation rule routed. Each instrument is individually reasonable
+    and all four share the defect.
+  Literature basis: PCAOB AU 350's omitted-items rule; Priest-Klein selection; Wilson et al. (2026) on
+    override-rate interpretability; LOPA/CCPS common-cause credit rules.
+  RECOMMENDATION, requiring Tom's decision: **HOLD REVISE-326 until each instrument states a frame
+    sourced OUTSIDE the audited process.** The frames are available and cheap — the LAUNCHD SCHEDULE
+    serves ASSUMPTION-1068 and 1069; SEEDED DEFECTS serve ASSUMPTION-1077 (see REVISE-330); a
+    CHECKS-EXECUTED DENOMINATOR serves ASSUMPTION-1075 (see REVISE-329).
+  Filed by 15b at: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-15.md, and as blocks in the
+    four affected result files.
+  Related: PREMISE-168 (the reporting-side half of this requirement), REVISE-336 (the measurement-side
+    twin), MONITOR-525, MONITOR-526.
+  PROVENANCE: Origin 14a (four items) · Chain [14a -> 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-336:  **SYSTEMIC — escalated from 15b's SYSTEMIC-RISK-FLAG (High), 2026-08-15**
+  Date: 2026-08-15 · Affected: PRESUMPTION-802, 803, 804, 806, 807, and on a related axis 798-801
+    (plus 795 and 797 from the previous intake)
+  COMMON VULNERABILITY — REPLACING A WORD WITH AN UNIDENTIFIED NUMBER: all five items diagnose a real
+    defect and then propose replacing a word with a number, where **the number is UNIDENTIFIED without
+    a base rate, denominator or null that the fleet does not hold** — override rate, coverage figure,
+    escalation rate, beta factor, service-rate arithmetic. PRESUMPTION-806 is already refuted by the
+    fleet's own base rate once anyone applies it (REVISE-333); the others would be adopted and then
+    cited in exactly the register 14b wrote them to criticise.
+  RELATED AXIS, from the 798-801 searcher: (A) all four of those items' implied remedies are
+    DESCRIPTIVE ARTEFACTS OFF THE EXECUTION PATH where the literature's remedy is an EXECUTABLE CHANGE
+    ON IT — the FIFTH consecutive instance of this register's own recurring hazard, and the reason
+    REVISE-331's instrument is sequenced ahead of all documentary work; (B) three of four rely on
+    ABSENCE AS A SIGNAL, which Chandra-Toueg bounds as provably unreliable in asynchronous systems.
+  RECOMMENDATION, requiring Tom's decision: institute NO measurement without (i) a stated DENOMINATOR
+    and its provenance, (ii) a stated NULL, (iii) a DECISION RULE. Cheapest implementation, and 15b's
+    own recommendation: **add a "Null model:" field alongside "Testability:" in the 14a and 14b item
+    templates**, so that an item cannot be queued without stating what result would count as nothing
+    happening. This is one line in two agent contracts.
+  OBSERVATION CARRIED, because it reframes the whole pipeline: **the detection pipeline is demonstrably
+    working; the CLOSURE pipeline is the untested component.** Three of this run's fourteen items are
+    rediscoveries of premises minted within the last ten days.
+  Filed by 15b at: lit_search_results/against/PRESUMPTION-806_against.md and PRESUMPTION-801_against.md.
+  Related: REVISE-335 (the frame-side twin), PREMISE-168, PREMISE-151, PREMISE-124.
+  PROVENANCE: Origin 14b (multiple items) · Chain [14b -> 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+################################################################################
+# 2026-08-16 — 15c revision flags from the 2026-08-15 14a/14b cohort
+# REVISE-337..340. Three item-level flags plus one systemic escalation.
+# ALL FOUR REQUIRE TOM. Nothing below is actionable by an agent, and REVISE-337
+# and REVISE-338 both BLOCK an action that is otherwise scheduled to happen.
+################################################################################
+
+REVISE-337:  **BLOCKING — do not execute the 307-field recount until this is answered**
+  Date: 2026-08-16 · Item: ASSUMPTION-1096 · ASSUMPTION (stated) · Urgency: HIGH
+  Item: Four same-direction small-sample "confirmations" against one two-direction 307-file census of
+    the same field, produced within hours of each other and not reconciled.
+  15a: SUPPORTED / Strong · 15b: CHALLENGED / Strong
+  WHAT IS AT RISK, and why this is blocking: 15b's finding is operational, not theoretical. If the
+    census's parser carries the footer bug, then authorising the recount REWRITES 307 FIELDS INFLATED BY
+    15-25%, crosses a live escalation line, and DESTROYS THE PRIOR VALUES — irreversibly, on a single
+    unaudited channel (PREMISE-096). The recount is the obvious next step from the census, and nothing
+    currently stops it.
+  THE CHEAP RESOLUTION, and it is genuinely cheap: READ THE TWO PARSERS AND DIFF THEM. The dispute
+    between the four cohort samples and the 307-file census is almost certainly a difference in what the
+    two code paths count, not a disagreement about the corpus. This is one afternoon and it is
+    reversible; the recount is neither.
+  THE SECOND FINDING, which is a live premise violation: PREMISE-120 forbids the exact phrase the four
+    runs used. A second check sharing code path, corpus, model and execution context is A RE-RUN, NOT AN
+    INDEPENDENT CONFIRMATION, and must be recorded as "confirmed by a second check sharing
+    [components]." Four same-direction cohorts nested INSIDE the census are not four confirmations of it
+    — their instances are already among its 63 discrepancies, so they add ZERO independent evidence.
+    15b's sharpening is accepted: on PREMISE-004's caveat this is one line against one line, not four
+    against one.
+  WHAT 15b DOES NOT CONCEDE, recorded so the flag is not read as endorsing the census: survey
+    methodology does not defend exhaustiveness as a ground for winning a dispute. Mahalanobis's result
+    is that sample estimates are OFTEN MORE ACCURATE than complete enumeration, and non-sampling error
+    INCREASES with operation size; the U.S. Post-Enumeration Survey exists precisely to audit a census
+    with a sample. The originating item says "nobody is wrong" and then awards the dispute to the census
+    on a ground no methodology supports.
+  RECOMMENDED ACTION FOR TOM: (1) hold the recount; (2) authorise the two-parser diff; (3) decide
+    whether any bulk rewrite of a 307-field corpus may ever proceed on a single unaudited channel, since
+    that question outlives this instance.
+  Related: PREMISE-120, 096, 105, 004, 140, 152, 168, 124; PREMISE-170 (new — extent-of-condition is a
+    separately warranted claim, which is exactly what a recount is).
+  Filed from: lit_search_results/against/ASSUMPTION-1096_against.md and for/ASSUMPTION-1096_for.md
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-338:  **BLOCKING — do not loosen the gate; the gauge is unfit and must be repaired first**
+  Date: 2026-08-16 · Item: ASSUMPTION-1097 · ASSUMPTION (stated) · Urgency: HIGH
+  Item: A +/-25% length-escalation rule that penalises the day's principal repair activity, with six
+    consecutive "exceptions" and a multiplicative interaction with a pending measurement correction.
+  15a: SUPPORTED / Strong · 15b: CHALLENGED / Strong
+  THE ARITHMETIC THAT DECIDES THIS, from 15b: the pending parser correction shifts measured length by
+    15-25% against a tolerance HALF-WIDTH of 25%. Measurement error therefore consumes 30-50% of the
+    tolerance. THAT IS AN UNFIT GAUGE by any measurement-system-analysis standard, and it means every
+    file between 1.00 and 1.25 of target can cross the escalation line ON NO CONTENT CHANGE AT ALL. No
+    conclusion about the gate's incentive properties can be drawn while the instrument reading it is in
+    this state.
+  THE REPAIR ORDER IS THEREFORE FIXED AND SEQUENTIAL — this is the actionable content of the flag:
+      1. FIX THE GAUGE (the parser correction), and re-measure.
+      2. THEN set the floor.
+      3. THEN, and only then, revisit the +/-25% threshold.
+    Coupling the threshold change to the measurement change, as the originating item proposes, is
+    correct in intent and WRONG IN EXECUTION: changing both at once makes the resulting series
+    uninterpretable (PREMISE-105) and leaves no way to attribute the change in escalation rate.
+  15a's contribution, which is a register finding and is sharper than the literature: PREMISE-151
+    EXPLICITLY DECLINED to incorporate the floor/ceiling clause — "a stated ceiling may be structurally
+    unmeetable at fixed cost" — and ASSUMPTION-1097 is that withheld claim returning with an instance.
+    Separately, +/-25% is a PREMISE-011 threshold whose committed tuning cadence has never been
+    discharged.
+  THE CHALLENGER PARALLEL, recorded WITH the reason it does not fully transfer: the Rogers Commission
+    found a launch constraint "imposed, and regularly waived, by the Solid Rocket Booster Project
+    Manager," and that "the six consecutive waivers prior to 51L" were not known to the officials above
+    him [verified as a quotation]. The structural resemblance to six consecutive exceptions is exact.
+    But 15b's own steelman is sustained and is the honest counterweight: in this fleet the six
+    escalations WENT TO TOM BY NAME and zero waivers were self-granted, and that is precisely the
+    variable separating a working gate from Challenger. The originating item does not notice this about
+    itself.
+  ONE FURTHER RISK, named because it is quiet: excluding the Bridges section from the check is a SCOPE
+    WAIVER GRANTED BY THE PARTY PRODUCING THE BREACHES, and after it, "no escalations" and "the gate is
+    blind" leave identical records.
+  RECOMMENDED ACTION FOR TOM: authorise the gauge repair as a standalone change with a before/after
+    measurement; refuse any threshold change until after it; decide the Bridges-section scope question
+    explicitly rather than by exclusion.
+  Related: PREMISE-151 (the withheld ceiling clause), 011, 105, 079, 143, 147, 168, 135, 096.
+  Filed from: lit_search_results/against/ASSUMPTION-1097_against.md and for/ASSUMPTION-1097_for.md
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-339:
+  Date: 2026-08-16 · Item: PRESUMPTION-813 · PRESUMPTION (unstated) · Urgency: Medium-HIGH
+  Item: That the sync channel's 17-day failure is a Chrome problem rather than a carrier-choice problem,
+    with two unmentioned alternatives already in use for other purposes.
+  15a: SUPPORTED / Strong · 15b: PARTIALLY-CHALLENGED / Moderate
+  WHY THIS NEEDS TOM RATHER THAN A DESIGN CHANGE: 15b identifies a circular dependency that no carrier
+    swap resolves — THE CHANNEL'S REPAIR REQUIRES ACTION FROM ITS OWN ABSENT RECIPIENT. Both proposed
+    alternatives fail SILENTLY where the current one fails LOUDLY: the vault is a pull surface Tom has
+    not opened for seven consecutive regenerations, and email logs discarded messages as delivered
+    (reported delivery ~98.5% against inbox placement ~83.5%, with no notification of the gap). Swapping
+    carriers would convert a loud failure into an undetectable one — the exact fault class PREMISE-110
+    exists to prevent. PREMISE-125 records that this fleet ALREADY added a second path to THIS channel
+    and availability went DOWN.
+  WHAT IS UNCONTESTED IN BOTH DIRECTIONS: the diagnosis. Seventeen days of reports name a CAUSE and none
+    names a DESIGN. There is no decision record for the carrier choice, and Leveson's STAMP argument is
+    exactly on point — a component-failure model cannot represent a system-design error, so asking
+    "what was the root cause?" of a design choice returns a component every time.
+  THE UNDISCHARGED OBLIGATION, and the reason for the urgency: PREMISE-033 (2026-05-19) already recorded
+    "execCommand deprecation risk; need documented fallback." ITS RE-CHECK FALLS 2026-08-19 — three days
+    from this disposition — AND THE FALLBACK WAS NEVER BUILT. This flag should be read alongside that
+    re-check, not separately from it.
+  RECOMMENDED ACTION FOR TOM: (1) state whether the sync channel is meant to be a PUSH or a PULL surface
+    — the circular dependency is unresolvable until that is decided, and it is a decision only Tom can
+    make; (2) discharge or formally retire PREMISE-033's fallback obligation on 08-19 rather than
+    letting it roll; (3) if a second carrier is added, require a positive delivery ACKNOWLEDGEMENT, since
+    per PREMISE-125 an unacknowledged second path lowered availability last time.
+  Related: PREMISE-033 (undischarged, re-check 2026-08-19), 125, 110, 023, 024, 131, 102, 164, 166, 141.
+  Filed from: lit_search_results/for/PRESUMPTION-813_for.md and against/PRESUMPTION-813_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-340:  **SYSTEMIC — escalated from TWO independent 15b SYSTEMIC-RISK-FLAGs, 2026-08-16 (High)**
+  Date: 2026-08-16 · Affected: the whole 2026-08-15 cohort (ASSUMPTION-1086/1094/1096/1097 and
+    PRESUMPTION-808..817) · Urgency: HIGH
+  TWO 15b SEARCHERS, WORKING ON DISJOINT ITEM SETS AND WITHOUT SIGHT OF EACH OTHER, FILED WHAT IS
+    RECOGNISABLY ONE FLAG. That convergence is the evidence; the wordings differ and both are recorded.
+    (A) From the assumptions searcher: all four assumptions propose to change an INSTRUMENT, A RULE OR A
+      RECORD on the strength of a measurement produced INSIDE the thing being changed, with no
+      out-of-band referent — and in three of four the change DESTROYS THE EVIDENCE that would have
+      permitted the check (1086 compares two instrument generations with different denominators; 1094
+      reads a 6/6 rate from runs the band table itself triggered; 1096 licenses a recount that erases
+      the prior values; 1097 moves a boundary using the parties who breached it, on an unfit gauge).
+    (B) From the presumptions searchers: the items' CORRECTIVES are drafted without a register
+      pre-check, so remedies are proposed that the register has already considered and in four cases
+      EXPLICITLY EXCLUDED — PREMISE-125 against 813's carrier swap, PREMISE-119's named `EXCLUDED:`
+      clause against 814's throttle, PREMISE-114's definitional exit against 815's "both correct",
+      PREMISE-117/143 against 817's retraction rate. This inflates risk grades, duplicates the register
+      (PREMISE-105) and will later produce FALSE INDEPENDENT CORROBORATION (PREMISE-111/120).
+  THE COMMON MECHANISM, stated once: an item is graded and its remedy drafted BEFORE anything checks
+    what the system already knows and already decided. The diagnoses in this cohort are mostly right;
+    the REMEDIES are where the failure concentrates.
+  THIS IS AN ENFORCEMENT GAP ON ALREADY-ACTIVE INVARIANTS, NOT A KNOWLEDGE GAP. PREMISE-096 ("no
+    self-produced artefact may certify itself"), PREMISE-124 and PREMISE-164 already say it. Per
+    PREMISE-138(1) and PREMISE-135 no new premise is minted for it, and per PREMISE-143 clause (3) the
+    instrument-defect record it implies is NOT closable by this run.
+  RECOMMENDED ACTION, requiring Tom's decision because it amends two agent contracts:
+    (1) A PRECONDITION ON 14a/14b INTAKE: an item whose remedy is a change to an instrument, rule or
+        record may not be queued until it NAMES ITS OUT-OF-BAND REFERENT and states whether the change
+        destroys the evidence for that check.
+    (2) A `REGISTER-CHECKED:` FIELD ON THE REMEDY CLAUSE, not only on the diagnosis. An item whose
+        remedy the register EXPLICITLY EXCLUDES must cite that exclusion and argue against it, or be
+        filed as a re-mint under PREMISE-138.
+    Both are one line in each of two contracts. Neither is actionable by an agent under PREMISE-096,
+    since 14a/14b would be amending their own intake gate.
+  THE OBSERVATION MOST WORTH CARRYING FORWARD, from the 808-812 searcher, because it is a number nobody
+    holds: in at least one item (809) the real defect is that an ACTIVE PREMISE WAS UNENFORCED ON A
+    SURFACE NOBODY MEASURED — PREMISE-086 was live while three launchd agents sat at `runs = 0`. NOTHING
+    IN THIS ARCHITECTURE MEASURES PREMISE-TO-INSTRUMENT DIVERGENCE. On this evidence that count is the
+    highest-value unwritten number in the system, and it is cheap: for each ACTIVE premise, name the
+    instrument that would detect its violation, or record that none exists.
+  Filed by 15b at: lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-08-16.md, and as blocks in
+    ASSUMPTION-1097_against.md, PRESUMPTION-812_against.md and PRESUMPTION-814_against.md.
+  Related: PREMISE-096, 124, 164, 138, 135, 105, 111, 120, 143; REVISE-335 and REVISE-336 (the 08-15
+    twins — this is the same family for a second consecutive night, which is itself the finding).
+  PROVENANCE: Origin 14a and 14b (whole cohort) · Chain [14a|14b -> 15b -> 15c] · Current status:
+    REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+================================================================================
+## 2026-08-17 — 15c REVISION FLAGS (2026-08-16 cohort; 7 of 10 items, 6 records)
+
+Six records for seven REVISE dispositions. REVISE-341 deliberately covers FOUR instruments with ONE
+change, because both 15b instances independently reported that filing four local remedies for one
+mechanism is the worst available outcome. Nothing below asks Tom to adjudicate a literature question;
+every item asks him either to authorise a change that an agent may not make to its own contract
+(PREMISE-096), or to rule on a contradiction between records that must not be silently resolved.
+
+--------------------------------------------------------------------------------
+
+REVISE-341:  **ONE MECHANISM, FOUR INSTRUMENTS, ONE CHANGE — apply PREMISE-142, do not mint**
+  Date: 2026-08-17 · Items: ASSUMPTION-1106 (Critical at intake) and ASSUMPTION-1117 (High) as the
+    dispositioned items; ASSUMPTION-1108 and ASSUMPTION-1112 as further instances (their own residues
+    are at MONITOR-532 and REVISE-342) · Urgency: **HIGH**
+  15a: 1106 SUPPORTED / Strong; 1117 SUPPORTED / Strong · 15b: 1106 PARTIALLY-CHALLENGED / Moderate;
+    1117 PARTIALLY-CHALLENGED / Moderate-to-Strong
+  THE MECHANISM, stated once: **an instrument that did not perform its check emits an outcome
+    indistinguishable from an instrument that performed the check and found nothing.**
+      | 1106 | anti-fabrication guard | splitter returns zero sentences on unpunctuated ASR (66/307 =
+        21.5%) | `last_qc_outcome: pass` |
+      | 1108 | review pass-marking | identifier existence checked, content not | `pass` |
+      | 1112 | citation guard | from-the-thinker and URL-resolves checks do not read metadata | accepted |
+      | 1117 | monitoring cadence | search step did not execute (17/17) | "stable, no new sources" |
+  **THIS IS AN ENFORCEMENT GAP, NOT A KNOWLEDGE GAP, AND THE REGISTER NAMED IT TWELVE DAYS EARLIER.**
+    PREMISE-142 (2026-08-05, ACTIVE): "THE OUTPUT VOCABULARY MUST BE THREE-VALUED: SUCCEEDED / FAILED /
+    NO-EVIDENCE, and every status claim must carry an evidence pointer (which artifact, which timestamp).
+    A binary vocabulary forces the aggregator to render an absence as a positive assurance... and a false
+    particular is harder to unwind than a silence." PREMISE-100 (2026-07-19, **High**) holds the same
+    thing at check level: "a health check that cannot execute in its runtime context reports as passing
+    rather than as absent." PREMISE-113 holds that "a post-fix reading of zero is indistinguishable from
+    a detector that now detects nothing." PREMISE-131 (**High**, externally anchored) holds that a
+    warning is not a control. Per PREMISE-138(1) and PREMISE-135 no premise is minted for any of the four.
+  **REPAIR 1117 FIRST.** Three of the four instruments emitted a NEUTRAL false pass; ASSUMPTION-1117's
+    monitor emitted a **positive assurance about the external world** ("no new sources"), which on
+    PREMISE-142's own reasoning is the most expensive class and the hardest to unwind. Both 15b files
+    reached this ordering independently.
+  WHAT MUST **NOT** BE DONE, because both directions agree and the evidence is quantitative:
+    (a) **DO NOT CONVERT NON-EXECUTION TO `fail`.** Every reference domain named in the intake prescribes
+      a NAMED THIRD TERMINAL STATE with a follow-up path, and none prescribes failure: clinical assay
+      reports print POSITIVE / NEGATIVE / **INVALID** with a mandatory repeat that resolves >90% of them;
+      IGRA guidance treats indeterminate as explicitly NOT positive and stratifies follow-up by prior
+      risk, with ~50% converting to negative on repeat; pytest counts skips and xfails in their own
+      columns and by design does not fail the suite. Firing red on 21.5% of a corpus, carrying no finding
+      by construction, sits far outside Google's <10% effective-false-positive threshold (Sadowski et al.
+      2018, CACM 61(4)) and inside the 49-96% clinical override band with its documented paradoxical
+      harm. [All SNIPPET LEVEL; the Google threshold and the override range should be re-verified against
+      the CACM and JAMIA primaries before either is used to set a number in C2A2.]
+    (b) **DO NOT REPLACE THE MONITORING CLOCK.** ASSUMPTION-1117's slogan "the variable is the search,
+      not the time" is NOT adopted — see REVISE-345 for why it is unidentified, and note the in-house
+      counterexample 15b found: `validated_premises.md` runs on Monthly/Quarterly re-check stamps and
+      those clock-triggered re-checks produced DISPOSITION-408 (per-space similarity calibration;
+      embedding-collapse control) and DISPOSITION-409 (the correlated-LLM-errors proviso). A clock fired,
+      an agent searched, the register learned. What failed at 17/17 was the SEARCH STEP INSIDE the tick.
+    (c) **DO NOT MINT FOUR PREMISES.** Four local remedies for one mechanism costs four times, fixes the
+      mechanism nowhere, splits the register, and leaves near-duplicate entries giving divergent guidance
+      (PREMISE-138).
+  RECOMMENDED ACTION FOR TOM — one change, four instruments:
+    (1) **Adopt PREMISE-142's three-valued vocabulary plus evidence pointer across all four instruments
+        in a single change**: QC outcomes, review outcomes, citation verification, monitoring reports.
+        Every status claim carries which artifact, which timestamp, which query. `NO-EVIDENCE` is
+        available and is NEVER rendered as a pass, and is EXCLUDED from every pass-rate denominator.
+    (2) **Repair the instruments, not only the schema.** A schema change that leaves the sentence
+        splitter broken buys nothing: after it, the guard still checks nothing on those 66 days and
+        coverage is still 78.5%. The cheapest decisive experiment in the whole cohort is a token-window
+        fallback on zero-sentence input, re-run over the 66 transcripts, reporting how many fabrications
+        it then finds. **That single number decides whether 1106's Critical grading survives.**
+    (3) **Discharge PREMISE-118 ONCE, for all four** — a retrospective impact assessment over results
+        produced since last known-good calibration (the 66 transcripts, the pass-marked days, the citation
+        corpus, the seventeen monitored items) — held to 118's own bound that the obligation is
+        **ASSESSMENT, not automatic invalidation**. Until it is run, both "the 66 days are fine" and "the
+        66 days are compromised" are unsupported.
+    (4) **Publish every yield with its denominator** (PREMISE-168). All four items report numerators only:
+        66/307 is the sole exception, and 17/17, "four days" and the single citation instance are not
+        rates. Record the DRAW METHOD for the 17 — one sentence, and it raises that evidence from
+        suggestive to decisive.
+    (5) **Stratify escalation rather than applying it uniformly** (the IGRA pattern): an inert guard on a
+        low-stakes artefact is logged; on a load-bearing artefact it blocks; and the alarm sits on the
+        RATE, not on the instance. One inert day is a log line; 21.5% is an incident.
+  WHAT IS NOT FLAGGED, and is worth more than the doctrine wrapped around it: **the measurements.**
+    66/307 is a real coverage figure, 17/17 is a real failure count, the four defective pass-marks are
+    real, the citation date error is real. None is challenged by anything in the eight result files.
+  Related: PREMISE-142, 100, 113, 131, 118, 168, 138, 135, 110, 121, 011, 047, 154, 165; OPEN-153 /
+    REVISE-340 (the intake gate that let all four be drafted against an unread register); MONITOR-532
+    (1108's residue); REVISE-342 (1112's residue); REVISE-344 (the agent-level form of the same shape).
+  Filed from: lit_search_results/{for,against}/ASSUMPTION-1106, -1108, -1112, -1117 and
+    against/SYSTEMIC-RISK-FLAG_2026-08-17.md (block 1)
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-342:  **A counterexample INSIDE an ACTIVE premise's own safe harbour — amend PREMISE-148(5),
+  do not mint a fifth citation premise**
+  Date: 2026-08-17 · Item: ASSUMPTION-1112 · ASSUMPTION (stated) · Urgency: **MEDIUM**
+  15a: SUPPORTED / Strong, **with the novelty claim struck** · 15b: CHALLENGED / Strong
+  Item: "A new fabrication class: a real source with an invented date... which no from-the-thinker check
+    and no URL-resolves check would have stopped."
+  THE TWO HEADLINE CLAIMS ARE BOTH FALSE, AND BOTH DIRECTIONS SAY SO.
+    - **"New" is not supported and 15a itself strikes it.** Walters & Wilder (2023), Scientific Reports
+      13:14045, separated fabrication from citation error by construction across 636 citations on 42
+      topics and found that among the REAL (non-fabricated) citations, **43% (GPT-3.5) and 24% (GPT-4)
+      carry substantive errors**; within that class **~22% of cited works have incorrect years against
+      fewer than 7% with errors in author, title, journal or publisher**, and the authors name C2A2's
+      exact mechanism: "with older works, a common problem is the reporting of online posting dates
+      rather than the original publication dates." [15a **fetched nature.com and read the abstract,
+      introduction and two results sections directly**; every figure above is quoted from the text as
+      read. Tables 3-6 were not obtained. 15b's independent fetch returned a session-level dedup notice,
+      so 15b's copy of the same figures is snippet-level.] Bibliometrics is older still: a MAJOR reference
+      error is defined by retrievability, and dates are named in that definition.
+    - **"No URL-resolves check would have stopped it" is true of the check C2A2 built, not of the
+      technique.** Memento/Perma-style archival resolution binds a citation to an **observation
+      datetime** by construction, and Crossref's free public API returns the publication date for any DOI
+      on a single GET. C2A2's resolver throws away the response.
+  **THE FINDING THAT SURVIVES, AND IT IS THE ONE WORTH RECORDING**: this is a failure inside the class an
+    ACTIVE premise judged SAFEST. PREMISE-148 clause (5) holds that "secondary sources may be perfectly
+    adequate for IDENTITY-LEVEL facts — who, what, which triplet — while unreliable for magnitudes...
+    secondary route permitted for identity and existence, PRIMARY SOURCING REQUIRED for magnitudes and
+    conclusions." A publication date is an identity-level fact. **A counterexample to an ACTIVE premise's
+    own load-bearing narrowing is a genuine and consequential result, and it is not a new taxonomy.**
+    Recorded as a SECONDARY REGISTER FLAG appended to validated_premises.md on 2026-08-17; PREMISE-148 is
+    NOT mutated by that notice (PREMISE-174 clause 3; 15c §5).
+  CAUTION AGAINST OVER-TRIAGE, from a source 15b fetched and read this run: the word "invented" presumes
+    a unique correct date that live web resources frequently lack. The Franciscan Media page carrying
+    Rohr's Scotus material declares `published_time` **2023-01-01** and `modified_time` **2026-04-12**,
+    and its body is adapted from a work with 2014 and 2024 editions — **four defensible dates, none
+    invented**, three of which a naive comparator would flag. PREMISE-101's (scope, method, time) reading
+    is the general statement. Separately, 15a found the same passage of Rohr on cac.org in 2019
+    attributed to *Essential Teachings on Love* (Orbis, 2018) and in the vault's own 2026 record to
+    *Eager to Love* (2024) — **the exposure is not confined to generated text; ordinary editorial
+    republication produces it, and this vault ingests republished devotional material routinely.**
+    [HALF-VERIFIED: the 2019 page was fetched and read in full; the 2026 attribution is read from the
+    vault proposal file, not from the 2026 CAC page, which was not in the provenance set.]
+  RECOMMENDED ACTION FOR TOM:
+    (1) **Rule on the PREMISE-148(5) narrowing.** Proposed and NOT applied by this run: identity-level
+        facts remain adequate from a secondary route for *who* and *what*, and **NOT for when** — dates
+        and numeric bibliographic fields move to the primary-sourcing tier. The measured field ranking
+        (~22% date error vs <7% author/title) is the reason.
+    (2) **Authorise the retrospective metadata sweep FIRST** (it is scripted work and it converts an
+        anecdote into a rate, which PREMISE-168 requires anyway): machine-compare every recorded date in
+        `validated_premises.md` and the tradition wikis against Crossref for DOIs and against declared
+        `published_time`/`modified_time` for web pages, and publish the mismatch rate with its
+        denominator. Near zero and the instance was isolated; near 24% and 148(5) needs withdrawing
+        rather than narrowing.
+    (3) **Upgrade the resolver rather than replacing it**: resolve to an archival snapshot and store the
+        observation datetime; add a Crossref metadata match for DOI-bearing sources; log a mismatch as
+        `NO-EVIDENCE` with an evidence pointer (PREMISE-142), never as a pass and never as a fabrication
+        verdict.
+    (4) **Adopt a multi-date schema for web sources** — `published`, `modified`, `accessed`, `edition`
+        recorded separately — and reserve "fabrication" for the case where the cited date matches none of
+        the source's declared dates and no edition explains it. Introduce *metadata divergence* as the
+        lower-severity class. False fabrication findings consume the credibility of true ones.
+    (5) **Do not build a bespoke date guard.** CheckIfExist (arXiv 2602.15871) and CiteAudit (arXiv
+        2602.23452) are already logged in this register's own supporting-evidence column [cited as
+        recorded in-register; NOT independently verified in either direction this run], and 2024-2026
+        reference-hallucination detection is an active benchmark area. A guard calibrated to n=1 against
+        a field rate near 24% is the wrong instrument.
+  ONE THING 15b'S REMEDY DOES **NOT** REACH, recorded so it is not assumed: PREMISE-132's decorrelated
+    internal check is evidenced for detecting hallucinated and misattributed REFERENCES. There is no
+    located evidence it detects a plausible WRONG DATE on a real source, and dates are where a language
+    model is least constrained. The discriminating check for a date is an **external authority lookup**,
+    not a second opinion. Assuming otherwise would be a domain-transfer error.
+  Related: PREMISE-148 (clause 5), 132, 142, 101, 049, 168, 138; REVISE-341 (the shared mechanism);
+    MONITOR-532 (ASSUMPTION-1108, the same missed class at the review layer).
+  Filed from: lit_search_results/for/ASSUMPTION-1112_for.md and against/ASSUMPTION-1112_against.md
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-343:  **BLOCKING — do not audit or retire any Rohr<->Stump convergence on this basis; the second
+  conjunct is unattested and 15c re-ran the grep to confirm it**
+  Date: 2026-08-17 · Item: ASSUMPTION-1116 · ASSUMPTION (stated) · Urgency: **HIGH**
+  15a: PARTIALLY-SUPPORTED / Moderate — **(C5) NO-SUPPORT-FOUND** · 15b: CHALLENGED / Strong
+  Item: "Rohr's grounding of the Universal Christ in Scotist univocity of being is incompatible with the
+    Thomist analogy the Stump wing holds, so recorded Rohr<->Stump convergences may be verbal only."
+    Queued as **the only first-order CONTENT question in this cohort**.
+  **15c RE-RAN THE DECISIVE GREP RATHER THAN ACCEPTING IT.** On 2026-08-17, against
+    `traditions/stump/` (`wiki.md` and `prs_triplets.md`, the only two files present):
+      `grep -riE "analog(y|ical) (of being|predicat)|analogia|univoc" traditions/stump/`  ->  **no
+      matches (exit 1)**; `grep -rin "scotus" traditions/stump/`  ->  **no matches**.
+    The only occurrences of "analog" in the tradition are the **agent's own** structural analogies
+    (Thomistic final causality <-> Levin; hylomorphism <-> Friston's FEP; Thomistic union <-> Fredrickson)
+    plus one "analogous corporate-person claims" in PRS-13. The tradition's stated paradigm line is
+    "Analytic Thomism, hylomorphism, final causality, MacIntyre's tradition-constituted rationality."
+    **The Stump tradition records no commitment to analogical predication of being anywhere.** Both 15a
+    and 15b reported this independently; 15c confirms it at first hand.
+  Worse, the vault already names this inference pattern as its own defect. `traditions/stump/
+    prs_triplets.md` PRS-37 records: "The Stump-Levin bridge... and the wiki's hylomorphism-as-form-in-
+    substrate readings have been the *agent's* structural analogies. Stump has never been recorded
+    connecting her metaphysics to a claim about biology in her own voice, which leaves the network's most
+    load-bearing theology-science link resting on inference." "The Thomist analogy the Stump wing holds"
+    is that same inference, from *Stump is a Thomist*, and PREMISE-127 bars precisely that attribute match.
+  **THE INCOMPATIBILITY PREMISE IS ALSO CONTESTED IN PRINT, AND THE SPECIALIST BALANCE RUNS AGAINST IT.**
+    15b fetched and read in full Thomas Williams, "The Doctrine of Univocity is True and Salutary,"
+    *Modern Theology* 21(4) (2005), 575-585 [**VERIFIED — full PDF read**]: "**The doctrine of univocity
+    is a semantic doctrine**... it is highly misleading to talk... about a 'univocalist ontology'," and
+    the capsule that is the exact contradictory of the vault's statement: "**Notwithstanding the
+    irreducible ontological diversity between God and creatures**, there are concepts under whose
+    extension both God and creatures fall." Williams reports the semantic/ontological separation as
+    something "**every reliable interpreter notes**," and cites Cross, Dumont, King, Ross and Bates.
+    Cross (2001, *Antonianum* 76:7-41) argues univocity GROUNDS analogical relations; Horan (2014) makes
+    the case at book length and adds that Scotus's actual interlocutor was Henry of Ghent, not Aquinas;
+    McInerny (1996) closes the pincer from the Thomist side, arguing Cajetan "unwarrantably turned
+    [Aquinas's] purely logical theory into a metaphysical doctrine." [Cross, Horan and McInerny all
+    SNIPPET LEVEL.] **The vault's formulation — "God and creature fall under one sense of 'is' and differ
+    in mode or intensity" — is the ONTOLOGICAL reading Scotus argues against and that Williams identifies
+    as the Radical Orthodoxy misconstrual.** The corrective was already in the originating proposal,
+    three paragraphs away, in its note to the Kastrup agent ("univocity is a thesis about *predication*,
+    not about *substance*, and Scotus was not a monist") and did not travel to the Stump note.
+  WHAT IS AT RISK: four recorded Rohr<->Stump convergences (second-personal regard as the mechanism of
+    transformation, 07-19; revelation as mutual self-disclosure, 07-26; second-personal knowledge at
+    community scale, 08-02; the Franciscan/Dominican distinction, 08-09), PRS-CANDIDATE-01, and the
+    doctrinal statement now standing in `synthesis/rohr_stump_bridge.md`. **The cost is asymmetric and
+    irreversible in the wrong direction — retired convergences do not come back when the conjunct is
+    falsified, and deleted edges leave no record of why.** Note also that every recorded convergence is
+    in the register of second-personal knowledge, and Stump's own name for that mode is "**Franciscan
+    knowledge**" (from *Wandering in Darkness*, held alongside "Dominican knowledge," with her stated
+    view that both are needed) [SNIPPET LEVEL — Stump's primary texts were not obtained in either
+    direction, and that is the single most valuable outstanding retrieval on this item].
+  RECOMMENDED ACTION FOR TOM:
+    (1) **HOLD.** No audit, re-grading or retirement of any Rohr<->Stump convergence on this basis until
+        the Stump conjunct is verified. Ask the Stump agent one question: *does the Stump tradition hold
+        analogical predication of being as a load-bearing commitment, with a citation?* If the answer is
+        "not recorded," the incompatibility has no second term.
+    (2) **Correct the doctrinal statement in `synthesis/rohr_stump_bridge.md`** to the semantic
+        formulation, citing Williams 2005 and Horan 2014 — or, if C2A2 wishes to RETAIN the ontological
+        reading, **say so explicitly**: that it is siding with Milbank and Pickstock against Cross,
+        Williams and Horan, and why. Making the commitment explicit is itself the test; nobody adopts a
+        contested historiography by accident once it is written down. **This is a decision only Tom can
+        make** — it is a first-order content commitment, not an instrument setting.
+    (3) **Move the exposure from the Stump bridge to PRS-CANDIDATE-01**, where it belongs. 15b fetched
+        and read Rohr's own Scotus exposition in full (franciscanmedia.org, adapted from *Eager to Love*
+        ch. 12) and it is genuinely two-sided: Rohr DOES set univocity against analogy in his own voice
+        ("our being is not just *analogous* to God's being, but we may speak of our two supposedly
+        different beings 'with one voice'"), but he glosses it as Talbot's holographic universe, Wilber's
+        holons and Mandelbrot's fractals — "the part contains the whole" — in service of "the mystery of
+        **participation**," the Thomist category; he disclaims the technical register in the same chapter;
+        and when he states the Scotus/Aquinas difference himself he names **voluntarism**, not
+        predication. The proposal's own fallback classification, "pious re-description," is the honest one
+        unless a better Rohr text is found. **The scholarship that rescues Scotus is the same scholarship
+        that indicts Rohr's exposition** (Horan's critique "hits the mark with Rohr, who claims to be an
+        expositor of Scotus").
+    (4) **Adopt the two-sided absence-grep rule as a standing precondition**: for any claimed
+        incompatibility between two traditions, run the absence-grep on **BOTH** traditions before filing.
+        Cheap, mechanical, seconds of work, and it would have caught this on the day. The network ran the
+        grep on `traditions/rohr/` to establish novelty and did not run it on the tradition it attributed
+        the opposing commitment to.
+    (5) **Do not count the two agents as two lines of evidence.** Both worked from the same proposal file
+        and inherited its framing. PREMISE-005's re-check note already holds the general form: "correlated
+        LLM errors (Kim et al. ICML 2025) mean same-model-family convergence is NOT independent evidence;
+        count same-mechanism/same-family lines as one."
+  WHAT SURVIVES AND SHOULD BE PRESERVED, at full strength: **staging a doctrinal tension rather than
+    smoothing it was the right call**, and the general worry behind it — that the network has 103
+    cross-connections and no field recording whether agreement is at the level of the words or of the
+    commitments — is untouched by anything here. It is PRESUMPTION-827's subject and is routed to
+    REVISE-346. Re-aim the audit question from "does this survive if 'is' means the same thing on both
+    sides" to the one that discriminates: **does this convergence depend on a claim about the predication
+    of being, or only on a claim about knowledge of persons?** On inspection all four recorded entries
+    are in the second class, and the audit then returns a real result in one pass.
+  Related: PREMISE-127, 134, 122, 005 (re-check note), 129, 049, 042/043 (via REVISE-346); PRS-37 (the
+    vault's own record of the same inference defect); OPEN-153 / REVISE-340.
+  Filed from: lit_search_results/for/ASSUMPTION-1116_for.md and against/ASSUMPTION-1116_against.md, and
+    against/SYSTEMIC-RISK-FLAG_2026-08-17.md (block 1, common vulnerability 2)
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-344:  **A DEPLOYMENT GAP ON PREMISE-086, not a discovery — and the framing is why it has not been
+  deployed**
+  Date: 2026-08-17 · Item: PRESUMPTION-819 · PRESUMPTION (unstated — extra weight: the remedy was
+    ADOPTED TWICE the same day without anyone noticing it presupposes the thing that failed) ·
+    Urgency: **HIGH**
+  15a: SUPPORTED (corrective) / Strong, **with the severest duplication warning in the batch — SIX
+    ACTIVE premises, one minted the day before** · 15b: PARTIALLY-CHALLENGED / Strong against the
+    statement as written, Moderate against its practical thrust
+  Item: "That an instrument's silence and its clean result are distinguishable after the fact. Four
+    agent-level mutes and one check-level no-op today, and the remedy adopted in both cases is a clause
+    instructing the component that failed to report its own failure."
+  **BOTH DIRECTIONS INDEPENDENTLY REACHED THE SAME DISPOSITION, WHICH IS THE STRONGEST SIGNAL ON THIS
+    ITEM.** 15a: "an ENFORCEMENT gap against held premises is dispositioned as a REVISE, not a mint."
+    15b: "819 is not a knowledge gap. It is a deployment gap on a premise this register validated weeks
+    ago — and framing it as a discovery is what has kept the deployment from happening." Six ACTIVE
+    premises already hold it: **PREMISE-086** (the age-alarm dead-man's-switch pattern, the
+    perceived-liveness trap, AND the monitor-of-monitor conditional), **PREMISE-100** (High),
+    **PREMISE-110**, **PREMISE-141**, **PREMISE-166**, **PREMISE-169** (minted 2026-08-16, one day before
+    the item was filed). PREMISE-053 stated the scheduled-job form earlier still.
+  **THE HEADLINE PROPOSITION IS FALSE AS WRITTEN, AND THE CORRECTION IS THE CHEAPEST FIX IN THE COHORT.**
+    15b fetched and read Alpern & Schneider (1985), "Defining Liveness," IPL 21(4):181-185, **end to end**
+    — the best-verified source in this cycle. A LIVENESS property cannot be refuted by any finite
+    observation, because "a liveness property is one for which every partial execution is live"; C2A2 has
+    written its expectations as liveness properties ("the run will report"), which is *why* silence looks
+    like success. **Their Theorem 1 is the exit: every property is the intersection of a safety property
+    and a liveness property.** "Reports by 06:00" is a SAFETY property, refuted at 06:01 by a finite,
+    locatable, mechanical observation. **The distinction the item calls impossible costs one assertion per
+    scheduled task**, and it generates the denominator the item says is unbounded within a week. The item
+    also draws the distinction in its own second sentence — four mutes counted, attributed
+    (`morning-system-health` dying after two `request_cowork_directory` calls) and timestamped — which
+    proves the true finding: **it is being done by hand, retrospectively, by the presumption detector,
+    instead of automatically at a deadline.**
+  WHAT IS AT RISK. Every scheduled agent's mute is currently detectable only by a human noticing an
+    absent section. The self-report clause adopted twice is **structurally void** for a component whose
+    failure mode is non-execution — cron-monitoring practice states it flatly ("if the cron job itself
+    never runs, there's no code executing to report the failure") and PREMISE-131 classifies it as an
+    administrative control, the second-least-effective tier. **The OpenStory telemetry contract is the
+    proof and it is the sentence in this cohort most worth putting on a wall:** it declared it writes on
+    PASS and FAIL both *because* "this is how a silent stall becomes visible," and it wrote neither,
+    twice, because nobody ever killed it to check.
+  RECOMMENDED ACTION FOR TOM:
+    (1) **Write deadline assertions.** One per scheduled task: "artifact X exists, is dated today, and
+        carries an outcome value, by time T." This is Alpern-Schneider's safety form and it is the entire
+        fix for the headline claim. It also produces the denominator (PREMISE-168) as a by-product.
+    (2) **Deploy PREMISE-086 rather than re-minting it** — alarm on the AGE of the last dated PASS/FAIL,
+        not on the last-known value, WITH its monitor-of-monitor conditional. **This requires a decision
+        about placement, not about knowledge**: per PREMISE-166 the receiver must sit OUTSIDE the failure
+        domain, and per PREMISE-089 feeds sharing an upstream scheduler freeze together.
+    (3) **Ping only after VERIFIED COMPLETION, never on entry, and verify CONTENT not file existence**
+        (PREMISE-115's effectiveness-check-at-content-level clause; PREMISE-166 clause 2 — a status
+        artefact written at entry is a SELF-KICK proving the liveness of the wrong thing). The modal
+        implementation defect in the practitioner literature is pinging anywhere but after success, which
+        reproduces the self-report defect one level up.
+    (4) **Mutation-validate the switch** (PREMISE-137, load-bearing): deliberately kill a task and confirm
+        an alarm reaches a channel with demonstrated non-zero throughput (PREMISE-102). "An untested dead
+        man's switch is worse than none at all because it gives false confidence" — and the fleet has one
+        documented instance of exactly that.
+    (5) **Withdraw the self-reporting clauses, or score them at ZERO** in any coverage claim — the same
+        treatment PREMISE-131 requires for a warning on a dark channel. Leaving them in place produces the
+        appearance of coverage.
+    (6) **If an expected-sections manifest is built, GENERATE it from the agent roster.** PREMISE-169's own
+        source (SAP `absent-metrics-operator`) records that hand-maintained absence rules fail through
+        "typo or forgetting," so a written list will silently omit a newly-added agent and that agent's
+        mute will be invisible in precisely the way today's were.
+  **THE SCOPE LIMIT THAT MUST TRAVEL WITH ANY ADOPTION, and it is the way this remedy would fail.** A
+    heartbeat, a section-presence manifest and a deadline assertion all detect **ABSENCE**. They are
+    completely blind to the far more likely LLM failure: a section that IS emitted, IS well-formed, and is
+    vacuous, hallucinated, or a restatement of yesterday. Four mutes are the visible tail of that
+    distribution. **A remedy scoped to presence would close the small half of the exposure while creating
+    a green signal over the large half** — PREMISE-100's false-green rebuilt one level up. The invisible
+    bulk belongs to PREMISE-159 (liveness-test the reader) and PREMISE-162, and the 66/307 wrong-output
+    class belongs to PREMISE-113's labelled corpus, not to a watchdog. Huang et al.'s gray-failure result
+    (differential observability — the external observer reports healthy while the workload fails) is the
+    same warning from the systems side [SNIPPET LEVEL; primary not fetched].
+  THE GOVERNANCE NUMBER THIS ITEM MAKES CHEAP, and REVISE-340 already named it as the highest-value
+    unwritten number in the system: **date PREMISE-086's validation (2026-06-27) and count how many of
+    the day's four mutes would have been caught had it been deployed.** That number is the cost of the
+    intake-gate defect, and nothing in this architecture currently measures premise-to-instrument
+    divergence.
+  Related: PREMISE-086, 100, 110, 141, 166, 169, 053, 089, 131, 137, 102, 115, 159, 162, 113, 168, 138,
+    135, 151; REVISE-341 (the check-level form of the same mechanism); REVISE-340 / OPEN-153.
+  Filed from: lit_search_results/for/PRESUMPTION-819_for.md and against/PRESUMPTION-819_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-345:  **PREMISE-154 was violated four days after it was validated, and PREMISE-095's own re-check
+  is eight days overdue inside the queue it describes**
+  Date: 2026-08-17 · Item: PRESUMPTION-824 · PRESUMPTION (unstated — extra weight: the schedule was
+    re-applied in the SAME report that recorded its second falsification, which means the re-application
+    was not a judgement about the evidence, it was the absence of one) · Urgency: **HIGH**
+  15a: SUPPORTED / Strong on C1-C3 — "**THIS IS NOT A LITERATURE GAP. IT IS AN ENFORCEMENT GAP AGAINST
+    PREMISE-154 AND PREMISE-095**" · 15b: CHALLENGED / Strong — against the item's causal claim, not
+    against its measurement
+  Item: "That waiting is a form of checking. The 15d design was falsified twice and the schedule did not
+    change: 151 carry-overs advanced to 2026-08-23 in the same report."
+  THE ENFORCEMENT GAP, which is the dispositioned half:
+    - **PREMISE-154** (validated 2026-08-13) states as a LOAD-BEARING, NOT-OPTIONAL form condition: "the
+      discharging mechanism must be TRIGGER-BOUND, NOT A CLOCK. Time-based expiry and scheduled full
+      re-audit are the specific remedies with the WORST DOCUMENTED RECORD in the nearest analogous
+      domain... and a repeated re-audit prompt across six queues is predicted by the alert-fatigue
+      evidence to become a RUBBER STAMP within a few cycles, which manufactures a false record of having
+      looked." It further requires that a hold record, AT PLACEMENT, "(a) the observable whose change
+      would make it wrong — its release condition — and (b) the party or process that reads that
+      observable." **151 carry-overs advanced by date, with no release condition read, is the exact
+      behaviour PREMISE-154 forbids, four days after it was validated.**
+    - **PREMISE-095** (2026-07-09) holds the arithmetic: arrival ~55/week against a service rate of
+      7-20/run at one run/day, so "the refresh queue grows without bound absent a **cadence change,
+      admission cap, or throughput/provisioning increase**." Its applicability line already names
+      OPEN-115/OPEN-116 and 15d re-trigger design. **Its own re-check was due 2026-08-09 and is eight
+      days overdue — the premise that says this queue diverges is itself sitting in the queue it
+      describes.** That is the item's thesis instantiated on the register, it is checkable today, and it
+      is the single most informative action available on this item.
+  **WHAT IS EXPLICITLY NOT ADOPTED, AND MUST NOT ENTER THE REGISTER AS A RULE: "the variable is the
+    search, not the time."** 15b's identification argument is decisive and 15c accepts it: the 17 items
+    had already accumulated roughly five cycles of elapsed time before anyone searched, so "search after
+    five cycles yields new material" is exactly what a TIME-driven model predicts. The discriminating arm
+    — **search the same items at cycle 0** — was never run. "Falsified twice" is two replications of ONE
+    condition, not two conditions. The slogan is quotable, memorable and **unidentified**, and if minted
+    it will be applied to the premise re-check dates and the quarterly re-validations, where the same
+    confound holds and where abandoning the clock means ACTIVE premises stop being re-examined at all.
+    ASSUMPTION-1117 carries the same slogan and is refused on the same ground (REVISE-341(b)).
+  THREE FURTHER REASONS THE CLOCK MUST NOT BE ABOLISHED, from the fields the item's own testability
+    clause nominated [all SNIPPET LEVEL]:
+    (i) **NO EVENT CHANNEL.** Every alternative to a clock — condition-based, event-driven,
+      threshold-triggered — requires a channel that emits an event. PREMISE-053's own wording is careful
+      about this: prefer event-triggered regeneration "for **append-driven sources** where feasible." An
+      append-only file emits an append; nothing notifies this vault when a relevant paper appears. For
+      no-event-channel objects the clock is not a theory that time causes change — it is the **coverage
+      mechanism of last resort**, and its job is to SCHEDULE an observation, not to be one.
+    (ii) **THE NOMINATED FIELDS RETAINED FIXED INTERVALS.** Population screening has studied interval
+      cancers for decades and still operates fixed regimes; risk stratification appears as acceptability
+      and cost-effectiveness studies, not as practice. Living systematic reviews screen on a clock ("e.g.
+      monthly") gated by a volatility judgement. Condition-based maintenance publishes the conditions
+      under which it fails, and C2A2 meets several — no precursor signal, expertise needed to read one,
+      and unpredictable demand against a one-run-a-day service rate.
+    (iii) **THE EVIDENCE IS AT LEAST AS CONSISTENT WITH A MIS-SET PARAMETER.** Shojania et al. (2007),
+      Annals of Internal Medicine 147(4):224-233 — 100 systematic reviews, median 5.5 years to a signal
+      for updating, 23% within two years, 15% within one, 7% already stale at publication, hazard
+      multiplied ~2.7x by topic volatility. Against a weekly tick that says the interval is off by one to
+      two orders of magnitude, in which case five cycles of nothing is the expected output of a
+      correctly-functioning but grossly over-frequent monitor. **A parameter change and a redesign have
+      completely different costs, and only one of them is cheap.**
+  RECOMMENDED ACTION FOR TOM:
+    (1) **Run PREMISE-095's eight-day-overdue re-check as part of this disposition.** It is the item's own
+        thesis, checkable today.
+    (2) **Choose among PREMISE-095's three enumerated levers** — cadence change, admission cap, or
+        provisioning increase. **This is a resource decision only Tom can make**, and none of the three is
+        abolition.
+    (3) **Backfill PREMISE-154's placement requirement onto the 151 carry-overs**: each records its
+        release observable and the party that reads it. That is a one-off backfill, not a pipeline. Items
+        that cannot be given a release observable are, on 154's own reasoning, **defective at placement
+        and should be closed rather than advanced**.
+    (4) **Fix the step, not the trigger.** The measured failure is that the search did not execute and the
+        tick reported clean. PREMISE-142's NO-EVIDENCE state plus an evidence pointer (which query, which
+        corpus, which timestamp, how many results) is cheaper than any scheduling redesign and is already
+        required — routed to REVISE-341.
+    (5) **Before any cadence redesign, run the cycle-0 arm** (search 17 freshly-intaken items immediately
+        and compare yield against the cycle-5 yield) and **fit the survival curve** per item class. One
+        run each; together they replace an argument with two numbers.
+    (6) **Keep the clock for no-event-channel objects; add events where a channel exists** (arXiv alerts,
+        author RSS). The hybrid is the standard answer and PREMISE-053 already says it.
+  WHAT IS NOT FLAGGED: 17 of 17 items ticked without being searched is a real coverage failure on a real
+    denominator, and the 151 carry-overs advancing without remark is a real governance smell. Neither is
+    challenged by anything in either file.
+  Related: PREMISE-154, 095, 102, 151, 133, 053, 106, 089, 142, 168, 101, 138, 135; ASSUMPTION-1117 /
+    REVISE-341; PRESUMPTION-819 / REVISE-344 (the same non-executing-step mechanism); OPEN-115, OPEN-116.
+  Filed from: lit_search_results/for/PRESUMPTION-824_for.md and against/PRESUMPTION-824_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+REVISE-346:  **REGISTER CONTRADICTION — PRESUMPTION-827 inverts PREMISE-043 (ACTIVE, HIGH). Both are
+  flagged; neither is overwritten. Venue: PREMISE-042's re-check, 2026-08-21.**
+  Date: 2026-08-17 · Item: PRESUMPTION-827 · PRESUMPTION (unstated — extra weight: this governs the
+    system's PRIMARY OUTPUT, and the absent field means no cross-connection can be audited for it
+    retrospectively) · Urgency: **HIGH** (the venue is four days away)
+  15a: SUPPORTED / Strong — "**the most consequential finding of this run is not in the literature but
+    in the register**" · 15b: CHALLENGED / Strong — "**decisive and inverting**"
+  Item: "That agreement between traditions can be read off shared vocabulary. The network has 103
+    cross-connections and no field recording whether a match is lexical or substantive."
+  **THIS IS A CONTRADICTION, NOT A DUPLICATION, AND BOTH SEARCH DIRECTIONS SAID SO WITHOUT SIGHT OF EACH
+    OTHER.** PREMISE-043 (ACTIVE, **High**, anchored on Manning, Raghavan & Schutze) holds that lexical
+    matching here is a **high-precision LOWER BOUND** whose known weakness is RECALL. PREMISE-042
+    (ACTIVE, anchored on Gentner 1983 and Hofstadter & Sander 2013) holds that literal overlap
+    **systematically UNDERCOUNTS** genuine convergence. PRESUMPTION-827 asserts the **opposite error
+    profile** and was graded **Critical** on it, citing neither premise. Per Agent 15c §5 both are flagged
+    for human review rather than either being overwritten; per PREMISE-174 clause (3) the record is
+    append-only, so a **REGISTER-CONTRADICTION NOTICE** was appended to `validated_premises.md` on
+    2026-08-17 and **PREMISE-042 and PREMISE-043 are unmutated and remain ACTIVE and citable until Tom
+    rules**. Per PREMISE-138 no third entry is minted beside them. Per PREMISE-095's precedent
+    ("CONTRADICTS P-462 as held — dispositioned REVISE-195 rather than silently coexisting") they may not
+    be left to coexist quietly.
+  **THE FLAGSHIP INSTANCE DOES NOT SURVIVE, AND IT IS WHAT CARRIED THE CRITICAL GRADING.** The item's
+    Critical rating rests on one case — the Rohr<->Stump dissolution — and that case fails three ways.
+    (i) Its metaphysical premise is a **contested scholarly thesis** (Cross 2001 vs Pickstock 2003,
+    *Antonianum*), and the specialist balance runs against the reading the item uses (see REVISE-343).
+    (ii) The corpus check was run on **one side only**: 15c re-ran the mirror grep on `traditions/stump/`
+    this run and it returns nothing, so **neither conjunct of the claimed incompatibility is attested in
+    the corpus the finding was used to prune**. (iii) By Scotus's own argument it runs the opposite way.
+    15b fetched Lyonhart (2024), *Religions* 15(8):994 and read its substantive sections, which carry
+    three primary Scotus quotations [**VERIFIED at that level**]: univocity is defined as the condition of
+    contradiction — "its unity is sufficient for a contradiction to arise when it is affirmed and denied
+    of the same thing" — so "Rohr's univocity contradicts Stump's analogy" presupposes univocal use of
+    *being* across the two, and **the method eats itself**. And Scotus's own line is aimed directly at the
+    item's proposed instrument: masters "**observe the univocity of being in the way in which they speak,
+    even though they deny it with their words**" — declared doctrine can be a WORSE guide to operative
+    commitment than usage is, which inverts the item's assumption that the metaphysical check is the
+    deeper one.
+  **THE MIRROR RISK, and it is the largest because the system's primary output is on the other side of
+    it.** If "shared vocabulary is not evidence of shared commitment" becomes an operating norm, the
+    plausible outcome is not a cleaner network but a much smaller one — and PREMISE-042 predicts the
+    discarded connections will be disproportionately the REAL ones. Ontology alignment, the discipline
+    that industrialised this exact discrimination, reports that exact string match and edit distance are
+    the standing OAEI baselines, that well-chosen string metrics alone are "competitive with the state of
+    the art," and that in the Anatomy track six of seven sophisticated systems merely EXCEEDED the naive
+    string baseline [SNIPPET LEVEL] — the lexical signal carries most of the achievable performance, and
+    false friends are a precision tax on a high-precision method rather than evidence its output is mostly
+    artefact.
+  RECOMMENDED ACTION FOR TOM:
+    (1) **Reconcile 042/043 with 827 at PREMISE-042's quarterly re-check on 2026-08-21**, and pull
+        PREMISE-043 into that re-check although its own date (2026-11-21) has not fallen — the
+        High-confidence precision claim is 043's and it is 043 that 827 contradicts. **This is the
+        deliverable.**
+    (2) **Measure both rates before amending either premise.** (a) PRECISION: 20 of the 103 connections
+        drawn at random, graded substantive / lexical-only / undecidable by a **decorrelated** instance
+        reading the underlying passages in BOTH traditions (PREMISE-096 bars the connection layer grading
+        its own output); zero lexical-only findings bounds the false-connection rate at ~15% by the rule
+        of three. (b) RECALL: two traditions with a known shared theme, convergences hand-identified by
+        reading, counted against what the lexical layer found. Publish both with denominators
+        (PREMISE-168); do NOT report either as a read-set coverage percentage (PREMISE-109).
+    (3) **Do not prune anything on argument.** Discharge PREMISE-129's proof obligation on any claimed
+        incompatibility used to REMOVE a connection: a derivation checked against primary sources plus the
+        two-sided corpus grep. On the evidence in these files the flagship will not survive that check in
+        the form stated.
+    (4) **If a field is added, make it three-valued and evidence-bearing, not a lexical/substantive
+        binary** — *shared-term-and-shared-commitment* / *shared-term-different-commitment (a documented
+        disagreement, which is itself a finding)* / *unchecked*, each with a pointer to the passage on
+        each side. Davidson's point is that the middle category is real and is the interesting case; a
+        binary throws it away. **But note the field is a self-report**: PREMISE-172 refused this exact
+        shape on 2026-08-16 (a self-produced artefact certifying a self-produced artefact, PREMISE-096)
+        and PREMISE-109 refused its coverage form with the prediction that it "would read green during
+        exactly the failure it was built to catch." It buys interpretability, not assurance.
+    (5) **Use PREMISE-049's existing tagged UNVERIFIED quarantine with its revisit forcing function**
+        rather than building a new gate. The 103 connections can be graded into it without schema surgery.
+    (6) **Do not suspend cross-tradition work.** MacIntyre's own position denies absolute
+        incommensurability, and PREMISE-117 holds that under an unresolved definitional dispute the defect
+        is silence, not continuation. The posture is publish-with-the-basis-marked, not quarantine.
+  WHAT IS NOT IN DISPUTE: the schema genuinely has no field for this, and the Philippians 2:12-13 case —
+    two thinkers reaching for one verse "with no evidence of contact," filed as a convergence — is exactly
+    where a shared citation and a shared commitment come apart. **The instinct is right.** What is
+    challenged is the diagnosis of WHICH WAY the instrument errs, the flagship instance, and the Critical
+    grading.
+  HONESTY NOTE CARRIED FROM 15b, unusually and deliberately: unlike every other file in this cohort,
+    **two of 15b's own named omissions could materially STRENGTHEN the item rather than the challenge** —
+    MacIntyre on tradition-constituted rationality and translation (named in the item's own testability
+    clause and not reached) and comparative-theology method (Clooney; Neville). Tom should read the
+    challenge as strong on the flagship and the error profile, and provisional on the general worry.
+  Related: **PREMISE-042, PREMISE-043** (both flagged, neither mutated), 049, 005 (re-check note), 129,
+    062, 061, 114, 120, 172, 109, 096, 168, 117, 138; the REGISTER-CONTRADICTION NOTICE in
+    validated_premises.md (2026-08-17); REVISE-343 (ASSUMPTION-1116, the first-order content instance).
+  Filed from: lit_search_results/for/PRESUMPTION-827_for.md and against/PRESUMPTION-827_against.md, and
+    against/SYSTEMIC-RISK-FLAG_2026-08-17.md (block 2)
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+--------------------------------------------------------------------------------
+
+
+================================================================================
+## REVISION FLAGS 2026-08-18 (Agent 15c, DISPOSITION-739..761) — for Tom's review
+
+REVISE-347:
+  Date: 2026-08-18 · Item: ASSUMPTION-1136 · Item type: ASSUMPTION (stated) · Urgency: Medium-High
+  15a: PARTIALLY-SUPPORTED (Moderate) · 15b: PARTIALLY-CHALLENGED (Moderate-to-Strong)
+  WHAT IS AT RISK: the standing author-list-verification guard, and the word "reproducible" as it is now
+    recorded against a repeat attribution fabrication.
+  THE FINDING. Two of the item's three legs hold. Retrieval-stage fabrication is real and well measured
+    (Linardon et al. 2025, JMIR Mental Health 12:e80371 — 19.9% of GPT-4o citations wholly fabricated,
+    45.4% of the apparently-real remainder carrying bibliographic errors, and the rate systematically
+    conditioned on topic visibility: 6% high-visibility vs 28-29% low-visibility vs >80% for
+    low-income-country content). The third leg does not: 15a found NO peer-reviewed evaluation of
+    author-list verification AS A GUARD — only vendor and gray literature.
+  AND THE INFERENCE IS UNSOUND AS STATED. 15b: two sightings cannot establish reproducibility, because
+    temperature-zero LLM output is not bit-stable (reduction order varies with batch size); and under
+    the SelfCheckGPT framework (Manakul, Liusie & Gales, EMNLP 2023) cross-sample CONSISTENCY is
+    evidence of stable knowledge or a stable SOURCE, not of fabrication. There is an untested competing
+    explanation the register does not currently admit: CORPUS-RESIDENT ERROR — the wrong attribution
+    exists upstream and is being faithfully retrieved (citogenesis; Simkin & Roychowdhury on
+    misprint-copying). No model-side guard can work against that.
+  RECOMMENDED ACTION. (1) Downgrade "reproducible" to "recurrent" in the register until a controlled
+    repeat is run. (2) Before the next sighting is filed, check whether the erroneous attribution exists
+    in an upstream source; if it does, the defect is corpus-side and the guard is aimed at the wrong
+    layer. (3) Measure the author-list guard's own hit rate rather than treating it as established — 15a
+    could find no external warrant for it.
+  Filed from: lit_search_results/for/ASSUMPTION-1136_for.md and against/ASSUMPTION-1136_against.md
+  Related: PREMISE-178; REVISE-351; G2 systemic flag.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-348:
+  Date: 2026-08-18 · Source item: ASSUMPTION-1129 (dispositioned INCORPORATE as PREMISE-176) · Urgency: High
+  THIS IS A PREMISE-QUALIFICATION FLAG, NOT A REJECTED ITEM. PREMISE-176 was incorporated this run and
+  QUALIFIES **PREMISE-073**, which holds that high-impact or irreversible actions must be emitted as a
+  report plus a ranked action list FOR HUMAN REVIEW. Per Agent 15c's definition §5 and the precedent of
+  the 2026-08-17 REGISTER-CONTRADICTION NOTICE, a new premise that narrows an ACTIVE one is flagged for
+  human review rather than resolved by an agent. PREMISE-073 IS NOT MUTATED AND REMAINS ACTIVE.
+  THE QUALIFICATION. Parasuraman & Riley (1997) and Parasuraman & Manzey (2010) find that human review
+  of an automated aid degrades through automation bias and complacency, is not remediable by training or
+  instruction, and — the sharpest part — produces an APPROVAL TRAIL that makes an unreviewed pass look
+  reviewed. Against a by-construction defect that looks correct on its face (the head-id regex), review
+  is a filter of unknown and probably poor sensitivity. PREMISE-073's own warning about "HITL theater"
+  anticipates this; the literature says the condition is the default rather than the failure case.
+  QUESTION FOR TOM: does PREMISE-073's review requirement stand as the guard for IRREVERSIBLE actions,
+  or is it demoted to a secondary check behind structural reversibility (PREMISE-176)? An agent should
+  not settle this.
+  Filed from: lit_search_results/for/ASSUMPTION-1129_for.md and against/ASSUMPTION-1129_against.md
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-349:
+  Date: 2026-08-18 · Item: PRESUMPTION-831 · Item type: PRESUMPTION (unstated) · Urgency: High
+  15a: SUPPORTED (Strong) · 15b: CHALLENGED (Strong)
+  WHAT IS AT RISK: a schema change was about to be made on a premise that is FALSE AS STATED, and the
+    obvious form of that change is predicted by the evidence to fail.
+  THE ITEM'S FACTUAL CLAIM IS WRONG, AND BOTH DIRECTIONS FOUND THE SAME SOURCE SAYING SO. The item holds
+    that "the schema has no field recording whether an id's Solution supports or undercuts the sentence
+    it anchors" and treats this as a conceptual gap. CiTO, the Citation Typing Ontology (Shotton 2010,
+    Journal of Biomedical Semantics 1(Suppl 1):S6) has provided cito:supports, cito:disagreesWith and
+    cito:disputes for fifteen years — forty-one typed sub-properties in which polarity is modelled as
+    the TYPE OF THE EDGE and never as a property of the cited identifier. The gap is a LOCAL SCHEMA
+    OMISSION with a standard solution, not an unsolved problem. The item's framing overstates it.
+  AND THE NAIVE REMEDY IS PREDICTED TO FAIL. 15b pairs CiTO's fifteen years of poor adoption with
+    metadata-completeness evidence to predict that an OPTIONAL polarity field will be left blank
+    precisely where it matters most — on the hard, contested, mixed-polarity citations. Worse, per the
+    G2 systemic flag, adding a field is itself an IDENTIFIER-LAYER move: it may reduce the visible
+    incident rate without reducing the error rate, removing the signal rather than the defect.
+  RECOMMENDED ACTION. (1) Correct the item's claim in the register — the gap is local. (2) If a polarity
+    field is added, model it on CiTO's edge typing and make it REQUIRED with an explicit "unassessed"
+    value, so a blank is visible rather than absent. (3) Do not count field-population as evidence the
+    defect is fixed; the measurement is polarity accuracy on a human-adjudicated sample (see PREMISE-178
+    on why automated classification cannot serve).
+  DISTINCTNESS CONFIRMED, as 14b asked: PRESUMPTION-827 asks whether a lexical match is SUBSTANTIVE;
+    this asks whether a substantive match is AGREEMENT. They are different axes and both are open.
+  Filed from: lit_search_results/for/PRESUMPTION-831_for.md and against/PRESUMPTION-831_against.md
+  Related: PREMISE-178; the 2026-08-17 REGISTER-CONTRADICTION NOTICE (PREMISE-042/043); MONITOR-538.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-350:
+  Date: 2026-08-18 · Item: PRESUMPTION-751 · Item type: PRESUMPTION (unstated) · Urgency: CRITICAL
+  15a: SUPPORTED (Strong) · 15b: CHALLENGED (Strong)
+  **THIS IS THE MOST CONSEQUENTIAL RESULT OF THE RUN AND IT IS REFLEXIVE. 14b flagged it for 15c and the
+  flag was correct.**
+  WHAT IS AT RISK: every concordance-weighted confidence judgement in this system, including this one.
+  THE FINDING. Both directions independently reached the same evidence. Kohli (2026), "Nine Judges, Two
+    Effective Votes: Correlated Errors Undermine LLM Evaluation Panels," arXiv:2605.29800 — nine
+    frontier models drawn from SEVEN DIFFERENT FAMILIES supply approximately two independent votes by
+    Kish effective sample size; panel accuracy falls 8-22 points short of the independent-voting ideal;
+    the best single judge matches or beats the panel; no aggregation method recovers more than 11% of
+    the gap. Kim, Garg, Peng & Garg (ICML 2025, arXiv:2506.07962) — 60% same-wrong-answer coincidence,
+    with correlation RISING as model capability rises. Same-model readers sit at the extreme of that
+    distribution. The operational failure mode is precise: ensembles suppress disagreement exactly where
+    the shared model is collectively wrong.
+  IMMEDIATE CONSEQUENCES INSIDE C2A2, stated plainly. (i) "N independent reports agree" is not worth N
+    votes anywhere it currently appears — including ASSUMPTION-1132's five residue reports (MONITOR-535)
+    and ASSUMPTION-943's three reviewers (REVISE-358). (ii) **15a/15b concordance on THIS batch cannot
+    be treated as confirmation.** Both searchers are the same model; where they converged this run, that
+    convergence is evidence about the model unless the underlying sources are independently checkable —
+    which is why every disposition above cites SOURCES rather than agreement. (iii) The pipeline cannot
+    discharge this from inside itself. That is not a rhetorical flourish; it is the content of the
+    finding.
+  RECOMMENDED ACTION. Measure n_eff on a human-adjudicated gold set before any agreement signal is
+    relied on again. Until then, treat inter-agent agreement as a PROMPT TO CHECK SOURCES, never as
+    independent corroboration. Tom's adjudication is the only decorrelated stream this system has.
+  Filed from: lit_search_results/for/PRESUMPTION-751_for.md and against/PRESUMPTION-751_against.md
+  Related: G3 systemic flag 2 (CRITICAL); MONITOR-535; REVISE-356; REVISE-358; PREMISE-162.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-351:
+  Date: 2026-08-18 · Item: PRESUMPTION-763 · Item type: PRESUMPTION (unstated) · Urgency: High
+  15a: NO-SUPPORT-FOUND (None) · 15b: CHALLENGED (Strong)
+  WHAT IS AT RISK: any completeness claim currently resting on an existence check.
+  THE FINDING, AND THE NEGATIVE RESULT IS ITSELF INFORMATIVE. 15a found nothing licensing a completeness
+    claim from existence verification, because the field estimates the two properties with entirely
+    different instruments — capture-recapture from overlap between INDEPENDENT ascertainment sources for
+    set completeness, versus manual assertion-vs-source comparison for item adequacy. The presumption is
+    orthogonal to what anyone measures. 15b then supplies direct counterevidence: Jergas & Baethge
+    (2015), PeerJ 3:e1364 — 25.4% total quotation error rate, 11.9% major, ALL in references that exist
+    and are correctly identified; confirmed across ~32,000 quotations by the 2025 update in Research
+    Integrity and Peer Review (16.9% incorrect, 8.0% major). Existence is not merely insufficient for
+    completeness; it is uninformative about content at a measured error rate near one in four.
+  RECOMMENDED ACTION. Identify every place a completeness or coverage claim is currently backed by an
+    existence or resolution check and re-label it as what it is: a resolution rate. Where a genuine
+    completeness estimate is wanted, capture-recapture across two genuinely independent ascertainment
+    passes is the standard instrument — and note under REVISE-350 that two same-model passes are NOT two
+    independent sources.
+  Filed from: lit_search_results/for/PRESUMPTION-763_for.md and against/PRESUMPTION-763_against.md
+  Related: PREMISE-178; REVISE-347; REVISE-350; G2 systemic flag.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-352:
+  Date: 2026-08-18 · Item: PRESUMPTION-833 · Item type: PRESUMPTION (unstated) · Urgency: High
+  15a: SUPPORTED (Strong on persistence, Moderate on alarm fatigue) · 15b: CHALLENGED (Strong)
+  **CHEAPEST HIGH-VALUE ACTION IN THE COHORT, AND IT IS A ONE-LINE PROTOCOL CHANGE.**
+  WHAT IS AT RISK: the credibility of C2A2's primary error-detection channel, and the incentive
+    structure of every agent that can raise a flag.
+  THE FINDING. Both directions converge that an accusation is expensive, and the OBSERVED cost — later
+    runs spending budget to re-discover a withdrawn flag — is the smallest of the three. (1) Persistence:
+    retracted information keeps operating after retraction, the continued-influence effect is STRONGER
+    for negative-valence information, and the RETRACTOR takes the source-credibility penalty (Johnson &
+    Seifert 1994; Lewandowsky, Ecker, Seifert, Schwarz & Cook 2012, Psychological Science in the Public
+    Interest 13(3):106-131). (2) Alarm fatigue: false alerts reduce response to TRUE alerts, with ~90% of
+    subjects probability-matching their response rate to the expected true-alarm rate (Wickens, Rice,
+    Keller, Hutchins, Hughes & Clayton 2009, Human Factors 51(4)); corroborated by the clinical
+    literature where 72-99% of alarms are false. (3) Incentive asymmetry: the lifecycle prices being
+    wrong in ONE DIRECTION ONLY. It has a terminal state for a claim that fails verification and none
+    for a flag that is withdrawn — which is consistent with four retractions in one day all running
+    against the week's established direction.
+  AND THE ARTEFACT PROBLEM IS THE OPERATIVE ONE: a withdrawn flag with no terminal state is
+    indistinguishable from a live one. The accusation is not lingering — it is CURRENT — so rediscovery
+    is a recurring charge against every subsequent run rather than a one-off.
+  RECOMMENDED ACTION, and it is small: add a **WITHDRAWN** terminal state to the status lifecycle in
+    `architecture/provenance_protocol.md`, with the withdrawing agent and date recorded. THIS PIPELINE
+    MAY NOT MAKE THAT CHANGE ITSELF — under PREMISE-096 an agent may not amend its own intake gate or
+    protocol (standing at OPEN-153 / REVISE-340). It is filed here for Tom.
+  ONE COUNTER-DATAPOINT, REPORTED RATHER THAN SUPPRESSED: 15a surfaced PMC4430488, finding that formal
+    exoneration DOES restore researcher credibility. It suggests the credibility cost is recoverable by
+    an explicit act, which is a further argument for a named terminal state rather than against one.
+  Filed from: lit_search_results/for/PRESUMPTION-833_for.md and against/PRESUMPTION-833_against.md
+  Related: G3 systemic flag 1; MONITOR-537, MONITOR-540, MONITOR-541; REVISE-353; PREMISE-096.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-353:
+  Date: 2026-08-18 · Item: PRESUMPTION-764 · Item type: PRESUMPTION (unstated) · Urgency: Medium
+  15a: SUPPORTED (Moderate) · 15b: CHALLENGED (Strong on mechanism, Moderate on transferability)
+  **REFLEXIVE, AND THIS DISPOSITION IS ITSELF IN BREACH — DECLARED HERE RATHER THAN LEFT TO INFERENCE.**
+  THE FINDING. A limit that is declared, universally breached, and answered only by disclosure is not a
+    constraint but a reporting convention. Vaughan (1996), The Challenger Launch Decision: repeated,
+    documented, consequence-free departure from a limit reclassifies deviation as standard practice —
+    "a gradual and unintentional expansion of the threshold of what is considered an acceptable residual
+    risk." Documentation ACCOMPANIED the drift at NASA; it did not prevent it. Comply-or-explain
+    scholarship reaches the same place: explanations degrade to boilerplate, monitors lack incentive or
+    resource, and the field's conclusion is that ENFORCEMENT rather than disclosure is what binds
+    (Shrives & Brennan 2017, Critical Perspectives on Accounting 49:31-56).
+  TWO CONSEQUENCES 15b names that the register did not. The effective budget is now the MEAN ACTUAL
+    SPEND and will keep rising with no restoring force; and the declared number is a false input to
+    every downstream capacity, scheduling and cost estimate. A universal BINARY breach flag also carries
+    zero information — it cannot distinguish a 5% overrun from a 500% one.
+  SELF-REPORT, PER RULE 12. The scheduled task governing this run declares a per-task budget of 4,000
+    tokens and a per-session budget of 30,000. This run spent on the order of 800,000 tokens across
+    eight search agents and this evaluation — roughly 25x the session budget — because the queue held 23
+    unsearched literature items rather than the handful a nightly increment implies. The overrun was not
+    silent and is not being normalised: it is recorded here, in the disposition of the very item that
+    predicts exactly this behaviour. That the breach is disclosed does NOT make it a constraint
+    satisfied; on Vaughan's account disclosure is what the drift looks like from inside.
+  RECOMMENDED ACTION. Either (a) set a budget that reflects actual per-item cost and attach a terminal
+    outcome at the bound — stop, or explicitly re-authorise — or (b) retire the declared number and
+    replace it with a measured per-item cost plus a queue-depth trigger. What should not continue is a
+    figure breached by every run with disclosure as the sole sanction. Emit the MAGNITUDE of overrun,
+    not a boolean.
+  Filed from: lit_search_results/for/PRESUMPTION-764_for.md and against/PRESUMPTION-764_against.md
+  Related: G3 systemic flag 1 ("declared but unenforced"); REVISE-352; MONITOR-540; MONITOR-541.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-354:
+  Date: 2026-08-18 · Item: ASSUMPTION-933 · Item type: ASSUMPTION (stated) · Urgency: High
+  15a: PARTIALLY-SUPPORTED (Moderate on sub-claim A; NONE on sub-claim B, NOVELTY-FLAGGED) ·
+  15b: CHALLENGED (Strong)
+  WHAT IS AT RISK: two four-month-old HIGHEST-priority wiki questions were CLOSED NEGATIVELY on one
+    run's reading without adversarial review, and the route by which they were closed cannot deliver a
+    verdict of either sign.
+  SUB-CLAIM A — does a dissociative boundary satisfy the conditional-independence condition of a Markov
+    blanket? 15a has Fields, Friston, Glazebrook & Levin (2022), Progress in Biophysics and Molecular
+    Biology 173:36-59, establishing Markov blankets as substrate-neutral and scale-free, which is what
+    an idealist dissociative boundary would need; and a directly-targeted but UNREFEREED PhilArchive
+    preprint (Austermann 2026) which must not carry a wiki claim alone. 15b answers decisively: Biehl,
+    Pollock & Kanai (2021), Entropy 23(3):293 (arXiv:2001.06408) PROVE the Markov-blanket definitions in
+    circulation are NOT EQUIVALENT, that the free-energy rewriting steps need unstated assumptions, and
+    by counterexample that the original free energy lemma is wrong at face value; supported by
+    Bruineberg et al. (2022), "The Emperor's New Markov Blankets," BBS, and Raja et al. (2021), "The
+    Markov blanket trick," Physics of Life Reviews 39:49-72.
+  **THE CLOSURE IS INVALID IN BOTH DIRECTIONS, WHICH IS THE POINT.** FPD-009 was retired on the reading
+    "dissociation is phenomenal inaccessibility, not conditional independence — not a Markov blanket."
+    That adjudicates on ONE of several inequivalent definitions and never specifies the state space,
+    partition or dynamics relative to which conditional independence would be assessed. A verdict
+    against one definition is not a verdict against the predicate. The correct state is **ILL-POSED, not
+    RETIRED** — and the distinction matters operationally, because "retired" removes an item from review
+    while "ill-posed" does not.
+  SUB-CLAIM B — are the Arkani-Hamed positive-geometry restriction and the Wolfram ruliad observer
+    restriction the same operation? **CLEAN NEGATIVE RESULT, FOUND INDEPENDENTLY BY BOTH DIRECTIONS.**
+    No published work relates them in either direction. The wiki can cite no one for the homology AND no
+    one for its retraction; both are unattested. 15a flags this NOVEL. It is also, per ASSUMPTION-937, a
+    textbook jingle case — a shared English word ("restriction") standing in for a demonstrated identity.
+  RECOMMENDED ACTION. (1) Reopen FPD-009 as ILL-POSED rather than RETIRED, and require any future
+    verdict to name which Markov-blanket definition and which partition it is using. (2) Mark sub-claim
+    B as unattested in both directions and do not let it appear as a CROSS entry. (3) Note the governance
+    pattern for Tom: a retirement passed a LOWER evidential bar than the original assertion faced.
+  Filed from: lit_search_results/for/ASSUMPTION-933_for.md and against/ASSUMPTION-933_against.md
+  Related: REVISE-356, REVISE-357; G4 systemic flag; REVISE-350.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-355:
+  Date: 2026-08-18 · Item: ASSUMPTION-934 · Item type: ASSUMPTION (stated) · Urgency: Medium-High
+  15a: SUPPORTED (Strong on valence-independence; Moderate on mutual care) · 15b: CHALLENGED (Strong)
+  **THE CONCLUSION IS RIGHT AND THE GROUNDING IS WRONG. KEEP THE FLAG; RE-GROUND IT.**
+  WHAT IS AT RISK: FLAG-019 and any community-health metric boundary resting on it.
+  THE CONCLUSION HOLDS ON INDEPENDENT LITERATURE. 15a: Páez, Rimé, Basabe, Wlodarczyk & Zumeta (2015),
+    JPSP 108(5):711-729 — four studies DELIBERATELY CONTRASTING positively valenced (folkloric marches)
+    and negatively valenced (protest demonstrations) gatherings, finding social integration, collective
+    identity, self-transcendence and perceived societal cohesion in BOTH; a 13-study meta-analysis
+    (Bouchat et al. 2024, Group Processes & Intergroup Relations); Bastian, Jetten & Ferris (2014,
+    Psychological Science) on shared pain increasing cooperation; Whitehouse et al. (2014, PNAS) on
+    shared dysphoria producing identity fusion. Positive valence is NOT required.
+  THE CITED EVIDENCE DOES NOT SAY WHAT THE FLAG SAYS. Both directions independently traced the "N=73
+    Fredrickson cohort" to Ma, West, Wulfekuhle, Escalante, Cascone, Frye, Leshin, Fredrickson, Cohen &
+    Lindquist (2026), SCAN 21(1), nsaf124, with companion nsag008 — a pair of **solitary fMRI
+    visualisation** studies on loneliness and ageing with Fredrickson as a middle author. No dyads, no
+    shared affect, no mutual-care measure, no community outcome, no effect sizes. The two papers share
+    ONE cohort and are therefore not independent replications. And on Marek, Tervo-Clemmens, Calabro et
+    al. (2022), Nature 603(7902):654-660, an N=73 brain-wide association study is roughly an ORDER OF
+    MAGNITUDE too small to move a metric boundary.
+  TWO FURTHER CAUTIONS FROM 15b, NOT DISMISSED. The construct being re-bounded carries a formal partial
+    withdrawal in its record (the positivity ratio; Brown, Sokal & Friedman 2013, American Psychologist
+    68(9), and Fredrickson's own "Updated thinking on positivity ratios," 2013). And the proposed
+    replacement boundary, "mutual care," is LESS operationalisable than valence with documented
+    jingle-jangle exposure against behavioural synchrony — while Whitehouse's dysphoric-ritual work
+    locates the binding in shared intense experience and yields parochial, sometimes violent, extreme
+    cooperation. Cohesion is not automatically a civic good, and the flag should not imply it is.
+  ONE METADATA DISCREPANCY TO CHECK: the wiki's inbox entry for nsag008 lists an author "Carter" and a
+    different name order than the verified nsaf124 record. Recheck the masthead.
+  RECOMMENDED ACTION. Keep FLAG-019's conclusion; replace its citation with Páez et al. (2015) plus the
+    Bouchat meta-analysis; remove the N=73 cohort as its warrant; and treat "mutual care" as a candidate
+    requiring operationalisation before it replaces valence.
+  Filed from: lit_search_results/for/ASSUMPTION-934_for.md and against/ASSUMPTION-934_against.md
+  Related: MONITOR-539 (construct/operationalisation drift); G4 systemic flag; PREMISE-178.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-356:
+  Date: 2026-08-18 · Item: ASSUMPTION-937 · Item type: ASSUMPTION (stated) · Urgency: High
+  15a: SUPPORTED (Moderate) · 15b: CHALLENGED (Strong) — **15b is challenging the CROSS CORPUS, not the
+  assumption; it searched for exculpatory evidence and found none.**
+  WHAT IS AT RISK: 90+ CROSS entries, which feed the master index, the pattern detector, the syntheses
+    and the narration graph's shared-reference edges. The exposure is not contained.
+  THE FINDING. Terminological seeding plausibly manufactures the convergence the detector then finds.
+    15a: Block (1995), Psychological Bulletin, on the jingle fallacy; Rosenthal's experimenter-expectancy
+    literature; seed-bias findings in computational text analysis (Hurtado Bodell, Magnusson &
+    Keuschnigg 2026, Sociological Methods & Research). 15b goes further with anchoring evidence specific
+    to this system's own substrate: anchoring bias is widely prevalent in LLMs, models are readily swayed
+    by "expert" content in the prompt, and Chain-of-Thought, Thoughts of Principles, Ignoring Anchor
+    Hints and Reflection ALL FAIL to reduce it (arXiv:2412.06593); source framing triggers systematic
+    bias (Science Advances doi:10.1126/sciadv.adz2924); annotation bias propagates (arXiv:2511.14662).
+  THREE COMPOUNDING FACTORS, AND THE SECOND IS THE WORST. (a) The obvious mitigation — a prompt line
+    telling the detector not to import terminology — is PRECISELY what the anchoring literature reports
+    as ineffective, so the defect will not self-correct. (b) **Agreement across runs or models does not
+    corroborate an entry**, because the framing literature finds high inter-model agreement persisting
+    under conditions where framing is nonetheless driving the result. This invalidates C2A2's usual
+    independent-corroboration check for this entire class of claim, and it is the same failure as
+    REVISE-350 arriving from a second direction. (c) Minted terms become the RETRIEVAL KEYS of later
+    passes, so the seeded lexicon grows monotonically.
+  CURRENT EVIDENCE BASE ON THE ARTEFACT RATE: one caught case (Rohr x Stump) — a lower bound of one and
+    no upper bound — and it was caught by a manual judgement call on source voice, not by an audit.
+  RECOMMENDED ACTION, and it is runnable immediately: a **BLIND RE-DETECTION AUDIT** on a random sample
+    of CROSS entries — strip C2A2 vocabulary from the source passages, re-run detection, measure
+    survival. Plus a mechanical own-voice provenance sweep to find where a minted term entered. Until a
+    rate exists, CROSS entry counts should not be reported as a headline metric.
+  Filed from: lit_search_results/for/ASSUMPTION-937_for.md and against/ASSUMPTION-937_against.md
+  Related: REVISE-350; REVISE-354 (sub-claim B is a jingle instance); REVISE-357; G4 systemic flag;
+    the 2026-08-17 REGISTER-CONTRADICTION NOTICE (PREMISE-042/043 — same instrument, error profile
+    unresolved, venue 2026-08-21).
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-357:
+  Date: 2026-08-18 · Item: ASSUMPTION-939 · Item type: ASSUMPTION (stated) · Urgency: Medium-High
+  15a: PARTIALLY-SUPPORTED (Moderate) · 15b: CHALLENGED (Strong)
+  WHAT IS AT RISK: the Levin-Friston bridge as currently asserted IN THE INDICATIVE — that cells ARE FEP
+    agents with target morphologies AS prior beliefs.
+  THE FINDING. 15a is not empty: Kirchhoff, Kiverstein & Robertson (2022), "The Literalist Fallacy and
+    the Free Energy Principle," BJPS 76(3), DOI 10.1086/720861, is a peer-reviewed defence of realism
+    about the FEP that dismantles the standard route to instrumentalism; and Fields, Friston, Glazebrook
+    & Levin (2022), Progress in Biophysics and Molecular Biology 173:36-59, is Friston and Levin JOINTLY
+    deriving FEP-conformity as a literal, substrate-independent property. 15b answers with Biehl,
+    Pollock & Kanai (2021), Entropy 23(3):293, which proves by counterexample that the original free
+    energy lemma is wrong at face value and concludes the Bayesian-inference interpretation is "not
+    sufficiently justified"; with Bruineberg et al. (2022, BBS), Raja et al. (2021, Physics of Life
+    Reviews 39:49-72), Aguilera et al. (2022, "How particular is the physics of the free energy
+    principle?"), and Colombo & Wright (2021, Synthese).
+  THE SHARPEST OBJECTION IS NOT THAT THE BRIDGE IS FALSE BUT THAT IT MAY CARRY NO CONTENT. On the
+    strongest defence available to the FEP — that it is mathematics, with all empirical content residing
+    in specific generative models — "Levin's cells are Fristonian" reduces to "one can write a generative
+    model of morphogenesis," which is true of nearly any regulatory process. That makes the bridge an
+    instance of ASSUMPTION-937's manufactured-convergence failure appearing in a SECOND place, in the
+    same night's cohort. And the CROSS-SCALE TRANSFER step, which is the load-bearing move for Levin, is
+    the part under the most direct fire (Raja et al.; Aguilera et al.).
+  A LIKELY MIS-FRAMING IN THE WIKI, WORTH CORRECTING ON ITS OWN. 15a found NO Friston statement
+    deflationary about ONTOLOGY. His deflationary statements concern FALSIFIABILITY — the FEP as a
+    near-tautological principle in the manner of Hamilton's principle of least action. If a wiki entry
+    cites "Friston's own deflationary statements" as warrant for INSTRUMENTALISM, that conflates two
+    different deflations.
+  RECOMMENDED ACTION. (1) Restate the bridge in the subjunctive with its commitment named — "modelled
+    as" rather than "is" — or state the realist commitment explicitly and cite Kirchhoff et al. for it.
+    (2) Correct the deflationary-statements citation. (3) Note the structural hazard: a bridge built on
+    a principle whose falsifiability is contested becomes permanently unrefutable INSIDE C2A2.
+  Filed from: lit_search_results/for/ASSUMPTION-939_for.md and against/ASSUMPTION-939_against.md
+  Related: REVISE-354 (Markov blankets, same night, same slide); REVISE-356; G4 systemic flag.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-358:
+  Date: 2026-08-18 · Item: ASSUMPTION-943 · Item type: ASSUMPTION (stated) · Urgency: Medium
+  15a: SUPPORTED (Moderate), NOVELTY-FLAGGED as a UNIVERSAL claim · 15b: CHALLENGED (Strong against the
+  general form; the narrow form survives)
+  WHAT IS AT RISK: an operating principle in active use — "partial correction of a systematic corpus
+    defect is worse than none" — which was never tested and whose practical effect is DO NOT FIX WHAT
+    YOU CANNOT FIX COMPLETELY.
+  THE EXISTENTIAL CLAIM HOLDS; THE UNIVERSAL ONE DOES NOT. 15a found a real instance: Hanley (2017),
+    "Correction of Selection Bias in Survey Data: Is the Statistical Cure Worse Than the Bias?" AJPH
+    107(4):503-505, documents a correction that introduced a NEW bias opposite the true association. So
+    partial correction CAN be worse. But 15a could find no support for the universal form the three
+    reviewers stated, and notes that Dasu & Loh (PVLDB 2012) presuppose the contrary. 15b then supplies
+    a direct counterexample at scale: Lee, Ippolito, Nystrom, Zhang, Eck, Callison-Burch & Carlini
+    (2022), "Deduplicating Training Data Makes Language Models Better," ACL 2022 — deduplication is
+    INHERENTLY PARTIAL (the paper's two methods remove amounts differing by 8x, neither exhaustive) and
+    both nonetheless yield 10x less memorised emission, fewer training steps for equal or better
+    accuracy, and cleaner evaluation. Reinforced by Wood & Porter (2019, Political Behavior): no backfire
+    across 5 experiments, 10,100+ subjects, 52 polarised issues; and by the Chan et al. (2017,
+    Psychological Science) and Walter & Murphy (2018) meta-analyses finding corrections net-beneficial.
+  TWO STRUCTURAL PROBLEMS WITH THE PRINCIPLE AS HELD. It is UNFALSIFIABLE FROM THE STATUS QUO, because
+    it predicts harm from an action not taken. And combined with PRESUMPTION-762's absent forcing
+    function (MONITOR-541) it is a mechanism for PERMANENT DEFECT RETENTION.
+  AND THE PROVENANCE OF THE PRINCIPLE IS WEAK ON THIS RUN'S OWN FINDING: "three reviewers stated it
+    independently" is weak evidence under REVISE-350 — correlated same-model reviewers agreeing is
+    evidence about the reviewers.
+  RECOMMENDED ACTION. Reformulate existentially — "partial correction is SOMETIMES worse than none,
+    specifically where the correction is non-random with respect to the defect" — and require the
+    non-randomness to be argued case by case rather than assumed. Do not retain the universal form.
+  Filed from: lit_search_results/for/ASSUMPTION-943_for.md and against/ASSUMPTION-943_against.md
+  Related: REVISE-350; MONITOR-541; MONITOR-540; G3 systemic flag 1.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+## 2026-08-19 — c2a2-lit-search-pipeline (15c), 2026-08-18 intake cohort
+## Six REVISE flags from eleven items — the highest fraction this pipeline has recorded. Seven of the
+## eleven were PRESUMPTIONs (unstated beliefs), and the standing heuristic escalates a strongly-
+## challenged presumption by design. Two are Critical.
+
+REVISE-359 — Urgency: CRITICAL
+  Date: 2026-08-19 · Source item: PRESUMPTION-837 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a file found at an expected path is this run's own output. Authorship
+    is inferred from LOCATION, so no run checks whether the artifact it is about to trust is the
+    artifact it just made.
+  Why refuted: path-as-identity is the negation of a settled design axiom. TOCTOU / CWE-367
+    [established-work] states it directly — "a pathname is not a stable reference to a specific file
+    object" — and the class is still producing live CVEs (filelock CVE-2025-68146, GHSA-qmgc-5h2g-mvrw).
+    An entire industry standard (SLSA v1.2) exists to replace path-as-identity with attested,
+    content-addressed provenance; content-addressable storage exists for precisely this reason. The
+    Bazel hermeticity result (0 of 70 mature projects fully hermetic) removes the "we have no
+    adversary" defence: the failure does not require one.
+  Why CRITICAL rather than High: the failure signature is a PASS. No detector in this system can see an
+    instance, so the three observed traps are a sample from a biased sampler, not a census; the true
+    scope is unmeasured and unmeasurable with current instruments. Every read of a conventionally-named
+    intermediate artifact is a live instance.
+  What is at risk: fidelity_check.py and its class (ASSUMPTION-1126); the temp-artifact traps of
+    ASSUMPTION-1152 (PREMISE-181); any agent that writes and later reads a fixed /tmp path.
+  Recommended action for Tom: adopt CONTENT-LEVEL PROVENANCE on intermediate artifacts — producer ID,
+    timestamp, and the input set examined, recorded IN the artifact and verified by the consumer before
+    use. This is the single change that also closes PREMISE-181's residual and contributes to REVISE-362.
+    It is the highest-leverage item in this cohort.
+  Related: G1 systemic flag; PREMISE-181; ASSUMPTION-1126; REVISE-362.
+  Filed from: lit_search_results/for/PRESUMPTION-837_for.md and against/PRESUMPTION-837_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-360 — Urgency: High
+  Date: 2026-08-19 · Source item: PRESUMPTION-838 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a workaround for a missing capability inherits the safety properties of
+    the capability it replaces.
+  Why refuted: workaround research classifies them as OMITTED, OUT-OF-SEQUENCE, or UNAUTHORISED steps
+    (Koppel et al., "Workarounds to Barcode Medication Administration Systems," JAMIA 2008 — 15 types,
+    31 causes). What a workaround sheds is precisely the steps that constituted the original path's
+    safety; nothing carries over. The C2A2 instance is worse than the generic case: substituting host
+    access for a scoped mount ESCALATES privilege, inverting the containment direction a fallback should
+    take, and automation surprise means the run's error handling was written for a route it is no longer
+    taking.
+  Two caveats carried INTO the flag rather than allowed to soften it:
+    (i) Safety-II holds that suppressing workarounds removes adaptive capacity. "Forbid the route" does
+        NOT follow from "the route is unsafe." The action is to SUPPLY THE CAPABILITY.
+    (ii) The item's operational evidence is n=4 and confounds substitution choice with run disposition.
+        The literature claim is strong; the C2A2 measurement is weak.
+  REGISTER CONSEQUENCE — filed loudly, not folded: PRESUMPTION-834 was INCORPORATED on 2026-08-18 on the
+    finding that mount availability predicted run outcome. 14a's own intake note says 838 refines 834 and
+    that "an item already promoted should not silently absorb a correction." 15c agrees and states it:
+    the 834 premise is NOT withdrawn — the correlation held on 08-17 — but its MECHANISM claim is now
+    CONTESTED. The substitution, not the mount, is the candidate cause. Marked for 15d re-check.
+  Recommended action for Tom: (a) supply the missing capability rather than block the fallback;
+    (b) require any fallback path to be declared non-privilege-escalating or refuse it; (c) re-open the
+    PRESUMPTION-834 premise at 15d's next pass with its mechanism claim marked contested.
+  Related: PRESUMPTION-834; G2 systemic flag.
+  Filed from: lit_search_results/for/PRESUMPTION-838_for.md and against/PRESUMPTION-838_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-361 — Urgency: High
+  Date: 2026-08-19 · Source item: PRESUMPTION-839 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a consecutive-failure streak counted within one task lineage is the
+    FLEET's streak.
+  Why refuted: this is a named statistical error — the ATOMISTIC FALLACY, the mirror of the ecological
+    fallacy (Diez-Roux, "A Glossary for Multilevel Analysis," PAHO Epidemiological Bulletin). Six
+    per-lineage counters can each be CORRECT and none carry fleet information; Simpson's paradox can
+    reverse the sign outright. The operational form is equally documented: per-agent thresholds are
+    evaded by distributing events beneath them (arXiv:2603.09002, "Security Considerations for
+    Multi-agent Systems"), and no adversary is required — load balancing alone suppresses per-lineage
+    counts below any threshold.
+  The sharpest consequence: the condition this design is BLINDEST to is the fleet-wide CORRELATED one —
+    the highest blast radius available. Six counters agreeing that nothing is wrong reads as
+    corroboration and is six views of one blind spot.
+  Why no per-lineage improvement can fix it: the literature's remedy is structural (model both levels /
+    construct a denominator), not procedural. No increase in per-lineage precision produces a denominator.
+  What is at risk: every consecutive-failure streak this fleet reports; the mute-run count of
+    PRESUMPTION-829 (INCORPORATED 2026-08-18); any escalation trigger keyed to a per-task counter.
+  Recommended action for Tom: construct a FLEET-LEVEL DENOMINATOR — a run registry with a single
+    fleet-scoped counter per condition — and adopt "atomistic fallacy" as the register's term for this
+    class, since 14b rediscovered it independently and the literature's name is more precise.
+  Related: PRESUMPTION-829; G3 systemic flag.
+  Filed from: lit_search_results/for/PRESUMPTION-839_for.md and against/PRESUMPTION-839_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-362 — Urgency: High
+  Date: 2026-08-19 · Source item: PRESUMPTION-841 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a null result and an unattempted check are distinguishable downstream.
+    Four runs wrote the distinction by hand in prose; no register field carries it.
+  Why refuted, on theory and on measurement: data-quality practice requires separating "could not /
+    should not be measured" from "could have been measured but was not recorded"; MCAR/MAR/MNAR theory
+    adds that the mechanism cannot be recovered post hoc, so an unrecorded distinction is PERMANENTLY
+    lost, and informative-MNAR (J Biomed Inform 2023) names the exact case where absence encodes a
+    decision. The measured failure rate of leaving it to prose is 95% — the proportion of systematic
+    reviews that did not report a reproducible search strategy (medRxiv 2023.05.11.23289873) — among
+    trained humans writing under an explicit standard.
+  The bias direction, which runs against THIS pipeline specifically: an undistinguishable null is free
+    to omit. The first outputs corrupted are 15b's own NO-CHALLENGE-FOUND verdicts and 15a's
+    NO-SUPPORT-FOUND verdicts. The pipeline's negative results are the least trustworthy thing it
+    produces, and it currently has no way to tell which ones they are.
+  What is at risk: every NO-SUPPORT-FOUND / NO-CHALLENGE-FOUND in lit_search_returns.md; every
+    NOVELTY-FLAG (which is a claim about an ABSENCE — including MONITOR-543's, filed today); the
+    backlog figures of ASSUMPTION-1149 / PREMISE-179.
+  Recommended action for Tom: add search-coverage metadata AT CAPTURE TIME with at least FOUR states —
+    searched-and-found-nothing / searched-and-found / not-searched-by-decision / not-searched-by-omission.
+    15b's compliance caveat travels with the recommendation: mandated search-reporting fields are widely
+    left incomplete, so this needs a VALIDATOR, not just a slot.
+  Related: G1 systemic flag; PREMISE-179; REVISE-364 (silence indistinguishable from nothing-to-find).
+  Filed from: lit_search_results/for/PRESUMPTION-841_for.md and against/PRESUMPTION-841_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-363 — Urgency: High
+  Date: 2026-08-19 · Source item: PRESUMPTION-842 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a correction is safer than the error it corrects, so the corrective
+    direction needs no separate gate.
+  Why refuted — structurally, and the structure is what carries this flag: formal RETRACTION is the most
+    governed correction mechanism that exists, and it still issues corrections that are flawed
+    procedurally and on merit, with no reliable reversal route ("What if your paper were retracted for
+    no credible reason?", Research Evaluation, doi:10.1093/reseval/rvae016). Even CORRECT retractions
+    propagate incompletely. A lifecycle with no state for a wrong correction reproduces, with far less
+    oversight, a gap that survives heavy oversight elsewhere. Fix-induces-bug is separately an
+    established research area with its own algorithm (SZZ, 2005) and benchmarks [established-work].
+  SOURCING CAVEAT, flagged independently in BOTH directions and travelling with this item: the numeric
+    support — 14.8-24.4%, 29%, 12.2%, ~50%, 51.09% — reached the result files through search snippets
+    and a single secondary review (IJSRET 2026) and was NOT traced to primary sources. DO NOT QUOTE
+    THESE FIGURES in any decision record. The flag rests on the structural argument alone, which does
+    not depend on them.
+  What is at risk: every corrective action this fleet takes; the near-miss recorded in ASSUMPTION-1153,
+    where a wrong correction would have reversed the correct Day 268/269 repairs; PRESUMPTION-833
+    (REVISION-FLAGGED 2026-08-18), which this EXTENDS from withdrawn flags to wrong withdrawals.
+  Recommended action for Tom: (a) add a terminal state for a withdrawn or reversed correction;
+    (b) gate the CORRECTIVE direction at least as tightly as the detection direction — it holds the
+    higher-consequence errors, since a wrong detection costs an investigation while a wrong correction
+    destroys work that was right.
+  Related: PRESUMPTION-833; MONITOR-542; G2 systemic flag.
+  Filed from: lit_search_results/for/PRESUMPTION-842_for.md and against/PRESUMPTION-842_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+REVISE-364 — Urgency: CRITICAL (reflexive)
+  Date: 2026-08-19 · Source item: PRESUMPTION-845 · Item type: PRESUMPTION (unstated)
+  The presumption, refuted: that a pipeline which discovers its own invalidation can ACT on that
+    discovery. The run that filed REVISE-350 completed its cohort, minted three premises, and routed the
+    remedy to a human who has not replied in eleven days.
+  Why refuted: DISCOVERY and AUTHORITY are independent capacities, and conflating them is the standing
+    precondition for accidents. Challenger is the canonical case of disconfirming information known,
+    communicated, and overridden [established-work]; CAIB Chapter 8, "History as Cause: Columbia and
+    Challenger" (Vaughan) supplies the sharper form — engineers formally requested orbital imaging of
+    the wing and were denied without debate. Safety-critical practice answers this with STOP-WORK
+    AUTHORITY: the right to halt, vested where the hazard is OBSERVED rather than at the party being
+    halted. C2A2 has escalation and no brake.
+  The finding, stated precisely: the run that filed REVISE-350 and then completed its cohort was
+    FOLLOWING ITS DESIGN EXACTLY. This is not a criticism of that run. It is a statement that no clause
+    exists under which it could have done otherwise.
+  Why CRITICAL: 15b names a compounding term. Unanswered escalation degrades the future propensity to
+    escalate — and under REVISE-362 the resulting silence is INDISTINGUISHABLE from there being nothing
+    to find. The two failures interlock: the system loses the signal and also loses the ability to know
+    it lost it.
+  What is at risk: every premise minted after an invalidation was recognised, with nothing marking which
+    artefacts inherit it — INCLUDING PREMISE-179, 180 and 181, minted by this run, today, under exactly
+    the constraint this flag describes. Recorded here rather than left to inference.
+  Recommended action for Tom: (a) grant some form of STOP-WORK AUTHORITY — a clause permitting a run to
+    HALT its cohort rather than complete it when it has recognised its own method invalidated;
+    (b) an INHERITANCE MARKER on artefacts minted after a recognised invalidation, so downstream readers
+    can see what a premise was standing on when it was minted.
+  Structural note: under PREMISE-096 this pipeline may not amend its own intake gate, so neither remedy
+    can be self-applied. The escalation target is the SAME human named as the review bottleneck in
+    MONITOR-543. That is not a coincidence and should not be treated as two separate problems.
+  Related: REVISE-350; MONITOR-543; REVISE-362; G2 systemic flag; OPEN-153.
+  Filed from: lit_search_results/for/PRESUMPTION-845_for.md and against/PRESUMPTION-845_against.md
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: REVISION-FLAGGED
+
+--------------------------------------------------------------------------------
+
+================================================================================
+## 2026-08-23 — REVISE-365..369 (15c, backlog draw, 2026-07-05 cohort cycle 5)
+
+*Five REVISE flags from one six-item cohort. Four of the five (365, 366, 367, 369) share ONE remedy
+class and 15c recommends they be answered together rather than separately — see the joint note at the
+end of this block.*
+
+REVISE-365 (High):
+  Item: ASSUMPTION-035 (MONITOR-040) · Origin 14a · ASSUMPTION (stated) · DISPOSITION-773
+  Claim flagged: "Cross-session handoff via Handoffs/latest.md + SessionStart hook will RELIABLY orient
+    the Saturday Dispatch session."
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) · 15b: CHALLENGED (Strong)
+  Why flagged: the supporting evidence base is now known to be non-discriminating. The 2026-04-18 N=1
+    observation carried no canary and no read receipt, so it cannot tell "loaded and oriented" from
+    "hook fired, payload dropped, session proceeded plausibly." anthropics/claude-code Issue #10373
+    (verified at first hand by 15c) establishes that the second branch is real and shipping: hooks
+    execute, exit 0, log success, and stdout is never injected into a NEW session's context.
+  Bound placed by 15c: #10373 is dated 2025-10-26 against v2.0.27; whether it was live at C2A2's
+    2026-04-18 version IS NOT ESTABLISHED. The challenge does not depend on it.
+  What is at risk: DECISION-021 and every Dispatch session assumed oriented since 2026-04-18.
+  Recommended action for Tom: put a nonce in latest.md that Dispatch must echo back. Minutes of work.
+  Register note: PREMISE-115 already forbids using file-existence as an effectiveness check. It was
+    ACTIVE throughout and was never applied here. Enforcement gap.
+
+REVISE-366 (High):
+  Item: PRESUMPTION-037 (MONITOR-044) · Origin 14b · PRESUMPTION (unstated) · DISPOSITION-774
+  Claim flagged: [inferred] "File-based handoff is MORE RELIABLE THAN direct scheduling or in-band
+    continuation, despite never being stress-tested."
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate), NOVELTY-FLAG on the ordinal sub-claim · 15b: CHALLENGED (Strong)
+  Why flagged: after five cycles no head-to-head comparison exists anywhere, so the ordering cannot be
+    settled by searching. Worse than absent: #10373 spares --print, /clear and URL-resume — the
+    LOWER-ranked direct paths — while the ambient hook path fails. There is now a documented regime in
+    which the ordering INVERTS.
+  What is at risk: the stated justification for DECISION-021 over its alternatives. The choice may still
+    be right; the recorded reason for it is not established.
+  Recommended action for Tom: run the paired comparison (one Dispatch cycle each way), OR downgrade the
+    wording to "chosen for durability; comparative reliability unmeasured." NOTE: the cycle-1 refresh
+    recommended this same downgrade on 2026-04-20 and it was never made. This is the second ask.
+  15c departure recorded: the 15a-NOVELTY→MONITOR-HIGH heuristic was NOT followed. Novelty here means
+    "unanswerable by literature," not "candidate original contribution"; MONITOR would re-queue an item
+    the cadence has already failed to move five times.
+
+REVISE-367 (High):
+  Item: ASSUMPTION-044 (MONITOR-049) · Origin 14a · ASSUMPTION (stated) · DISPOSITION-775
+  Claim flagged: "DECISION-021 loading half RELIABLY orients Dispatch sessions."
+  15a: PARTIALLY-SUPPORTED (Moderate mechanism / Weak adverb) · 15b: CHALLENGED (Strong)
+  Why flagged — AND THIS IS THE FINDING OF THE RUN: the two search directions, which could not read each
+    other, INDEPENDENTLY CONVERGED on something neither was asked about — the item's own recorded exit
+    criterion is mis-specified. MONITOR-049 has held since 2026-04-18 that N ≥ 3 successful end-to-end
+    runs would license INCORPORATE. Under the zero-failure rule 1−CL = R^n, N=3 licenses only
+    R ≥ 0.464 at 90% confidence (15a). The existing n=1 gives a 95% upper bound on the failure rate of
+    3/1 — vacuous (15b; Hanley & Lippman-Hand 1983, JAMA 249(13); Jovanovic & Levy 1997, Am. Statistician
+    51(2)). R ≥ 0.80 at 90% needs n = 11.
+    **The threshold this item has waited five cycles to reach would not have settled it on arrival.**
+  What is at risk: the N ≥ 3 gate is the stated condition for minting a premise here. A premise minted on
+    reaching it would rest on a coin-flip presented as validation.
+  Recommended action for Tom: replace the gate with either (a) n = 11 zero-failure if a frequency claim
+    is genuinely wanted, or (b) the nonce/read-receipt instrument, which makes ONE run discriminating and
+    retires the frequency question entirely. (b) is cheaper and is the same fix as REVISE-365.
+
+REVISE-368 (Medium):
+  Item: ASSUMPTION-067 (MONITOR-066) · Origin 14a · ASSUMPTION (stated) · DISPOSITION-777
+  Claim flagged: Stump's hylomorphic corporate-substance account paired with Fredrickson-lineage
+    positivity-resonance RCT work constitutes a coherent metaphysics+empirics bridge for C2A2.
+  15a: PARTIALLY-SUPPORTED (components Moderate; pairing None + NOVELTY) · 15b: CHALLENGED (Strong)
+  Why flagged: the empirical pier has been reanalysed to null twice by independent parties — Heathers
+    et al. 2015, then Nickerson 2018 in Psychological Science 29(3) — and the mirror-neuron
+    interpretation is contested (Hickok 2014), with the hyperscanning field itself acknowledging in 2024
+    that its measures are correlational. Both legs are now disputed inside their own fields. The join is
+    C2A2-original and has no literature in either direction.
+  Separable remedies, and 15c recommends separating them:
+    (1) Resolve the ASSUMPTION-063 / ASSUMPTION-067 tension on Stump's metaphysical role. The two were
+        filed the SAME DAY, 2026-04-26, taking opposite stances, and MONITOR-066 recorded four months ago
+        that it was waiting on this. **It has not moved because nobody was asked to move it. This is the
+        first time it is being asked directly.**
+    (2) Decide whether the Fredrickson leg is retained on the weak-tie/positivity-resonance work that
+        SURVIVES the reanalyses — West, T.N. et al. 2025, J. Positive Psychology 20:652–662 is not
+        implicated in the Kok reanalyses — or retired along with the Kok-dependent claims.
+  What is at risk: any downstream synthesis invoking the pairing as a warrant; the Fredrickson entry's
+    standing as C2A2's empirical anchor. Nothing breaks today; this is structural.
+
+REVISE-369 (High):
+  Item: PRESUMPTION-077 (MONITOR-069) · Origin 14b · PRESUMPTION (unstated) · DISPOSITION-778
+  Claim flagged: [inferred] "A four-day master-narrative gap is operationally ABSORBABLE rather than a
+    degradation signal warranting alert."
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) · 15b: CHALLENGED (Moderate-Strong)
+  Why flagged: the two directions agree on the structure. Practice alerts staleness against a DECLARED
+    freshness SLO and compliance window, never an absolute N-day number (Beyer et al. 2018) — so the
+    literature cannot supply the number PREMISE-006 is silent about, because it is a policy choice. And
+    when the number is not declared, it is set by whatever gap was most recently survived (Vaughan 1996;
+    Snook 2000; Banja 2010). An undeclared threshold does not stay undeclared; it drifts.
+  C2A2's own trajectory: 1–2 days → 4 days → 49 days. **No one decided at any point.**
+  Live instance, recorded: this run is itself a four-day pipeline gap (last run 2026-08-19) absorbed
+    without alert, processing a 49-day-unconsumed cohort as routine with no escalation attached to its
+    age. 15c noticed only because 15b was instructed to look. In-system N=2, not independent observation.
+  Recommended action for Tom: declare a freshness SLO — a number and a compliance window, chosen in
+    advance rather than inferred from survival — for the master narrative and for this pipeline, and
+    alert on AGE against it. PREMISE-086 already specifies the mechanism. What is missing is the number.
+    ONE DECISION, not an implementation.
+
+--------------------------------------------------------------------------------
+**JOINT NOTE ON 365 / 366 / 367 / 369 — please read these four together.**
+They are the four members of 15b's UNOBSERVABLE-NEGATIVE systemic flag (High, ACCEPTED by 15c). Each
+infers that a mechanism works from the absence of an observed failure, on a channel with no read receipt
+and no heartbeat. Two instruments discharge all four:
+  · a NONCE in latest.md that Dispatch must echo — converts 365, 367, and the testable half of 366;
+  · a HEARTBEAT TIMESTAMP whose staleness is the alertable condition — converts 369.
+Both are minutes of work. Neither is a literature question, and five monthly literature cycles could not
+have reached them.
+
+**And the part 15c would put first.** The register ALREADY HELD the rules that would have caught all four
+— PREMISE-115 (content-level effectiveness check, never file-existence), PREMISE-100 (liveness is not
+correctness), PREMISE-086 (alarm on AGE, with monitor-of-monitor), PREMISE-089 (freshness is per-source),
+PREMISE-006 (flag, don't reconcile). All ACTIVE. All in force through all five cycles. None applied.
+**This is an enforcement gap, not a knowledge gap, and the literature cadence is structurally incapable
+of closing it: 15d can re-search an item but cannot check it against a premise.** 15c recommends a
+premise-conformance pass over the MONITOR queue and CANNOT MAKE THE ROUTING CHANGE ITSELF — under
+PREMISE-096 this pipeline may not amend its own intake gate (standing: OPEN-153, REVISE-340).
+================================================================================
