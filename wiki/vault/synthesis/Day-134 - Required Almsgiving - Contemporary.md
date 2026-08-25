@@ -8,9 +8,9 @@ length_ratio_to_target: 0.852
 length_tier: long
 length_note: "Came in under the 3000 long target (0.852, advisory — within ±25%). Per the length policy's long-tier guidance, the synthesis picks the three most generative threads from the eighteen articles — act-identity as formal cause (Hoffman/Friston), required help grounded in the Universal Christ and discharged by resource-bounded allocation, and the Matthew-18 correction protocol read as the C2A2 inter-perspective dialogue mechanism — rather than mirroring every article. The under-target reflects disciplined selection, not thin linkage; the Q.33 thread runs at full substantive length. Substantive integrity over word count."
 karpathy_wiki_sources:
-  - "traditions/hoffman/ (interface theory — the act's icon vs. its underlying reality, by theme)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception — the act's icon vs. its underlying reality)"
   - "traditions/friston/prs_triplets.md (PRS-04 behavior as readout of an internal model; PRS-10 expected-free-energy allocation; PRS-06 mutual modeling)"
-  - "traditions/macintyre/ (tradition-constituted rational enquiry; epistemological crisis; rational correction across traditions, by theme)"
+  - "traditions/macintyre/prs_triplets.md (PRS-02 epistemological crisis / rational comparison without a neutral standpoint; PRS-05 the rival tradition as a second first language; tradition-constituted rational enquiry; rational correction across traditions, by theme)"
   - "traditions/fredrickson/prs_triplets.md (PRS-09 weak-tie intellectual humility; PRS-08 high-quality listening; PRS-02 love as enacted coupling)"
   - "traditions/rohr/prs_triplets.md (PRS-03 Universal Christ — the least as the whole; PRS-02 order-disorder-reorder)"
   - "traditions/wright/prs_triplets.md (Matthew's community discourse; salvation as inclusion in covenanted community, by canonical work)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Material-vs-formal act (Q.32 a.1) reframed mind-firs
 mind_first_reframe: "An act's moral identity is set by its formal cause — the intention / generative model behind it — not by its material surface (Q.32 a.1): the same $10 is charity or theft-cover depending on the mind it serves (Hoffman icon-vs-reality; Friston PRS-04). Required almsgiving reads the neighbor's need as the whole's need — the Universal Christ in the least (Rohr PRS-03) — and rations help under finitude (Friston PRS-10). Fraternal correction (Q.33) is the charitable protocol for truth-telling across perspectives: graduated escalation (private, then witnesses, then community), evidence-seeking, aimed at the other's restoration to the bond, forborne when it would backfire, and licensed only from a stance that owns its own limitation (a.5) — which is MacIntyre's tradition-constituted rational correction and Tom's C2A2 detector in nuce."
 central_theme_thread: "Fraternal correction operationalizes the central theme's social half. The theme says limited perspectives need 'guidance from those who perceive more of the whole than we do' — but how does a limited perspective correct another without coercion, when neither sees the whole? Matthew 18's protocol answers: own your own limitation first (a.5), approach privately, escalate only as needed, bring witnesses so the correction rests on shared evidence rather than one perspective's assertion, and aim always at the other's amendment — re-inclusion in the bond — not at his condemnation. This is exactly how perspective-bounded agents compute toward loving unity together: charitable, evidence-producing, amendment-aimed dialogue. It is the C2A2 accelerator/detector's own design, found already in the Gospel."
 tags: [synthesis, day/134, theme/correction-as-dialogue]
-last_qc_at: "2026-08-04T16:24:00"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T14:29:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 134 — Contemporary Parallel: The Act Is Its Intention, and Correction Is a Protocol
@@ -68,9 +68,9 @@ The central theme has a social half that the earlier charity days only gestured 
 
 ## Bridges
 
-- *Hoffman-tradition wiki (icon vs. reality, by theme) + PRS-04 in the Friston-tradition wiki* — the material/formal distinction (Q.32 a.1) as mind-first: an act's identity is its generative model, not its surface; the same icon can carry opposite realities. (Philosophical + formal; medium.)
+- *PRS-03 in the Hoffman-tradition `prs_triplets.md` (Interface Theory: perception as adaptive interface, not truth-mirror) + PRS-04 in the Friston-tradition wiki* — the material/formal distinction (Q.32 a.1) as mind-first: an act's identity is its generative model, not its surface; the same icon can carry opposite realities. (Philosophical + formal; medium.)
 - *PRS-03 in the Rohr-tradition wiki + PRS-10 in the Friston-tradition wiki* — required almsgiving (a.5, a.9-10) grounded in the Universal Christ in the least (Matthew 25), discharged by resource-bounded allocation favoring breadth at sufficiency. (Theological + formal; high in field / medium.)
-- *MacIntyre-tradition wiki (tradition-constituted rational correction, by theme) + Tom's C2A2 accelerator/detector design* — the Matthew-18 protocol (Q.33 a.5-8) as the formal specification of charitable inter-perspective dialogue: humility-gated, graduated, evidence-seeking, amendment-aimed. (Structural / philosophical; strong on convergence, speculative as unifying thesis.)
+- *PRS-02 + PRS-05 in the MacIntyre-tradition `prs_triplets.md` (rational comparison across traditions via epistemological crisis; the rival tradition learned as a "second first language") + Tom's C2A2 accelerator/detector design* — the Matthew-18 protocol (Q.33 a.5-8) as the formal specification of charitable inter-perspective dialogue: humility-gated, graduated, evidence-seeking, amendment-aimed. (Structural / philosophical; strong on convergence, speculative as unifying thesis.)
 - *PRS-09 + PRS-08 in the Fredrickson-tradition wiki* — the humility prerequisite for correction (a.5) as measurable and trainable weak-tie intellectual humility, cultivated by high-quality listening across groups. (Empirical; high.)
 - *Day 133 (this vault) ↔ Q.32 a.9-10* — the order of almsgiving reprises the order of beneficence: finite love allocated by nearness and urgency, now with a distributive rule. (Structural.)
 

@@ -3,13 +3,13 @@ day: 61
 title: "Volume 2 (Contemporary)"
 pairs_with: "[[Day-061 - Volume 2]]"
 length_target_words: 3000
-length_actual_words: 1950
-length_ratio_to_target: 0.65
+length_actual_words: 1786
+length_ratio_to_target: 0.595
 length_tier: long
-length_note: "Synthesis runs at 65% of long-tier target. Day 61 is the volume-pivot from Prima Pars to Prima Secundae, covering Q.119 (concise medieval-Aristotelian biology of generation) and Q.1 of I-II (man's last end, the keystone teleological-monism question, 8 articles). The commentary is the central-theme-statement day of the project; the synthesis runs tight because the central-theme statement is itself the load-bearing move and additional bulk would distract from it. Lean prose is the right register for a central-theme keystone — better short and substantive than padded, per the length policy."
+length_note: "Synthesis runs at 60% of long-tier target (canonical recount 2026-08-24: 1786 words, ratio 0.595; the prior 1950 figure was a miscount). Day 61 is the volume-pivot from Prima Pars to Prima Secundae, covering Q.119 (concise medieval-Aristotelian biology of generation) and Q.1 of I-II (man's last end, the keystone teleological-monism question, 8 articles). The commentary is the central-theme-statement day of the project; the synthesis runs tight because the central-theme statement is itself the load-bearing move and additional bulk would distract from it. Lean prose is the right register for a central-theme keystone — better short and substantive than padded, per the length policy."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism — form-as-real-and-telic, multi-scale agency)"
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; broaden-and-build; flourishing — id withheld, locus is file-dependent)"
+  - "wiki/traditions/fredrickson/prs_triplets.md (PRS-28 broaden-and-build resolving into positivity resonance as one developmental arc; PRS-01 micro-moments of positivity resonance, vagal tone, upward spirals). NB: broaden-and-build is filed at PRS-28 in prs_triplets.md and at a different id in that tradition's wiki.md — the id is file-dependent, so the file is named here per citation."
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-16 expected free energy as unified decision mathematics)"
   - "wiki/traditions/stump/prs_triplets.md (PRS-05 union as final cause of permitted suffering; Wandering in Darkness)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 hard problem dissolved by idealism; PRS-02 individual identity within monism)"
@@ -19,7 +19,7 @@ evidence_strength_summary: "Aquinas's Q.1 last-end argument is metaphysically fi
 mind_first_reframe: "The Prima Secundae opens with Aquinas's teleological monism of the will (Q.1 a.1 man acts for an end, a.4 there is a last end, a.7 there is one last end formally — the universal good); the contemporary mind-monist frame articulates the parallel commitment that conscious agents are constitutively telic-toward-integration, with loving unity as the computational telos that Friston (expected free energy), Fredrickson (broaden-and-build), Levin (morphogenetic teleology), Stump (union as highest good), and Kastrup (mind-at-large integrative dynamics) converge on from five different methodological vantages."
 central_theme_thread: "Today is the day where the central theme is the explicit subject — perspective-limitation individuates conscious agents, loving unity is the computational telos toward which each agent works under its own perspective with substrate-network guidance available, in the daily-task work of salvation in fear and trembling; Aquinas's formal-universal / material-particular distinction in Q.1 a.7 (all desire the last end formally; the perspectival-particulars vary) maps cleanly onto the contemporary picture and is the keystone moment of the volume-pivot."
 tags: [synthesis, day/061, theme/last-end, theme/teleology, central-theme-keystone]
-last_qc_at: "2026-08-11T17:27:29"
+last_qc_at: "2026-08-24T06:30:13"
 last_qc_outcome: "rewrote"
 ---
 # Day 61 — Contemporary Parallel: *The Volume Pivot — From Imago Dei to the Computational Telos of Loving Unity*
@@ -79,7 +79,7 @@ Wright's scriptural anchor: *we are predestined to be conformed to the image of 
 ## Bridges
 
 - **PRS-04 and PRS-16 in the Friston-tradition wiki (`wiki/traditions/friston/prs_triplets.md`) — organism as active modeler; expected free energy as the unified mathematics of decision under risk and ambiguity.** Active-inference formalism for telic agency. *Mature formal frame; growing empirical.*
-- **Fredrickson-tradition wiki, PRS on positivity resonance and broaden-and-build.** Empirical contour of flourishing. *Strong empirical evidence.* (Id deliberately withheld: the broaden-and-build locus is file-dependent between `wiki.md` and `prs_triplets.md` in this tradition, so an id here would be wrong in one of the two files.)
+- **PRS-28 in the Fredrickson-tradition wiki** (`traditions/fredrickson/prs_triplets.md` — broaden-and-build, upward spirals, and positivity resonance narrated as one developmental arc), with **PRS-01** (micro-moments of positivity resonance cultivated deliberately; vagal tone rebuilt; upward spirals of health and connection). Empirical contour of flourishing. *Strong empirical evidence.* (The broaden-and-build locus is file-dependent between `wiki.md` and `prs_triplets.md` in this tradition; the file is named here per citation, matching Day 62's treatment of the identical claim.)
 - **PRS-03 in the Levin-tradition wiki (`wiki/traditions/levin/prs_triplets.md`) — morphological attractor formalism; morphogenetic goal-seeking modeled as free-energy minimization.** Form-as-real-and-telic. *Strong empirical at biological scale.*
 - **PRS-05 in the Stump-tradition wiki (`wiki/traditions/stump/prs_triplets.md`) — union as the final cause of permitted suffering; suffering intelligible through its telos.** Theological-philosophical resource on the second-person mode of reaching union. *Theological-philosophical, book-length.*
 - **PRS-01 and PRS-02 in the Kastrup-tradition wiki (`wiki/traditions/kastrup/prs_triplets.md`) — the hard problem dissolved by placing consciousness at the foundation; individual identity within monism as dissociation.** Metaphysical ground of telic structure. *Philosophical-conceptual.*

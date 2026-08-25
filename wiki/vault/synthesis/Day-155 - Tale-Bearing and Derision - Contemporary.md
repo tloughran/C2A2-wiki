@@ -17,8 +17,8 @@ evidence_strength_summary: "Aristotelian/Thomistic friendship-as-supreme-externa
 mind_first_reframe: "Friendship is dyadic deep coupling — a small-scale collective cognition with high mutual prior weighting, the kind of bond positivity-resonance research measures and the central claim names as the cellular form of loving unity. Tale-bearing is the targeted attempt to dissolve that coupling by injecting signal designed to lower each partner's prior on the other. Derision is the precision-attack on another's self-model: humiliating mockery aims to install a lowered self-prior in the victim by enacting it in front of witnesses whose mirroring matters. Both are exactly tuned to the perspectival mechanics the central claim depends on — they target the bond and the self-model precisely because those are where loving unity is grown."
 central_theme_thread: "The Day-154 reading of verbal injustice as signal-injection into the social interface narrows here to the two most structurally devastating sub-cases. Tale-bearing targets the dyadic bond, the cellular form of loving unity. Derision targets the victim's self-model, the perspective that the bond is between. Both are the central claim in negative form: each is the locally-rewarding-globally-corrosive move that destroys the very substrate the telos requires. "Working out salvation in fear and trembling" includes the discipline of not enacting these moves and of refusing the resonance that would amplify them."
 tags: [synthesis, day/155, theme/tale-bearing-derision-and-the-bond-as-substrate]
-last_qc_at: "2026-08-15T08:23:43"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T12:21:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 155 — Contemporary Parallel: Tale-Bearing, Derision, and the Bond as Substrate
@@ -60,6 +60,7 @@ Tale-bearing and derision are the central claim in cellular form. The dyadic bon
 - *PRS-04 + PRS-06 + PRS-28 in the Friston-tradition wiki (organism as active modeler; multi-agent coherence via mutual modeling; precision-weighting over selected channels)* — derision as enacted prior-installation; the witnesses' assent up-weighting the false prior; the precision-attack on the victim's self-model. (Formal; medium-strong.)
 - *PRS-11 + PRS-14/15 in the Stump-tradition wiki (second-personal / Franciscan knowledge; corporate substance)* — friendship as the paradigm second-personal relation; the friendship-bond as a real dyadic node of the community. (Medium-speculative.)
 - *PRS-01 in the McGilchrist-tradition wiki (hemispheric asymmetry; right-hemisphere holistic engagement as primary)* — derision's mode is left-hemispheric reduction of a whole person to a target trait. (Cognitive science; medium-strong.)
+- *No numbered Wright triplet covers speech-against-neighbour* — the 42-id Wright register has no entry on slander, reputation, or the tongue, so this bridge is anchored to canonical works rather than attributed to a nearby id by proximity. Aquinas's sed contra at Q.74 a.1 is the Rom 1:29-30 vice-list (whisperers, backbiters), which sits inside the passage Wright reads as Paul's diagnosis of a humanity whose distorted worship issues in a disordered common life; the community-formation strand of that reading is in *Paul and the Faithfulness of God* and the *Paul for Everyone: Romans* commentary. Jas 3:1-12 on the tongue is the second canonical anchor for speech as a community-scale rather than merely individual act. (Theological; strong-in-field for the exegesis, but the bridge to the dyadic-coupling account below is analogical.)
 
 ## Where this leaves us
 

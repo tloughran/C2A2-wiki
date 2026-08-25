@@ -8,7 +8,7 @@ length_ratio_to_target: 0.97
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 prediction-error correction; PRS-10 active reasoning / model selection; PRS-09 self-referential prediction loop)"
-  - "traditions/hawkins/wiki.md (cortical model formation vs sharpening; reference frames)"
+  - "traditions/hawkins/prs_triplets.md (PRS-01 HTM / Thousand Brains — reference frames and temporal prediction; the model-formation half only, the precision/sharpening half being Friston-side)"
   - "traditions/mcgilchrist/wiki.md (attention shaped by mode of engagement)"
   - "traditions/fredrickson/wiki.md (PRS-05 broadened attention and tradition learning — broaden-and-build; affective state gates cognitive scope). Note: broaden-and-build is keyed PRS-05 in wiki.md and has no counterpart id in prs_triplets.md, whose PRS-01 is isolation-and-disconnection."
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology; PRS-02 order-disorder-reorder)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Sin against the Spirit as disabling one's own error-
 mind_first_reframe: "The sin against the Holy Spirit is the agent's disabling of its own error-correcting loop — despair kills the goal-prior, presumption mutes the error/precision signal, obstinacy and resisting-known-truth refuse the update (Friston PRS-04/09/10) — so its unforgivability is structural (the channel by which mercy would be received is switched off from the creature's side), not a limit in mercy; Q.15's blindness of mind and dullness of sense are channel-loss vs low precision (Hawkins), genuinely modulated by embodied appetite."
 central_theme_thread: "This sin is the exact negation of the central theme's clause that we work out salvation 'aware of our limitations and our need for guidance from those who perceive more of the whole': the limited perspective destroys its own capacity to receive correction, nailing shut the doorway that the agent's incompleteness was meant to open — the limit case of the whole project, in which the computation toward loving unity becomes unrecoverable because its very instruments (hope, fear, docility) have been dismantled."
 tags: [synthesis, day/125, theme/refusing-correction]
-last_qc_at: "2026-08-12T22:34:38"
+last_qc_at: "2026-08-24T14:29:03"
 last_qc_outcome: "rewrote"
 ---
 
@@ -56,7 +56,7 @@ The central theme says we work out salvation "aware of our limitations and our n
 ## Bridges
 
 - *PRS-04 + PRS-09 + PRS-10 in the Friston-tradition wiki (Tom's PRS-form record of Friston's predictive-coding and active-reasoning work)* — hope/fear/docility as components of one corrective loop; the six kinds as six ways to break it; unforgivability as a disabled loop, not withheld mercy. (Formal; high as model.)
-- *Hawkins-tradition wiki (cortical model formation vs sharpening)* — blindness of mind as channel-loss (model never forms) vs dullness as low precision (model never sharpens). (Neuroscientific; medium-high.)
+- *PRS-01 in the Hawkins-tradition `prs_triplets.md` (HTM / Thousand Brains: reference frames and temporal prediction as the substrate of model-building)* — blindness of mind as channel-loss, the cortical reference frame never getting built. The contrasting half — dullness as *low precision*, the model that forms but never sharpens — is Friston-side, not a Hawkins register claim; it is carried by PRS-04 above. (Neuroscientific; medium-high.)
 - *McGilchrist-tradition wiki + PRS-05 in the Fredrickson-tradition `wiki.md`* — attention and cognitive scope gated by mode of engagement and affective/appetitive state; the embodied basis of Gregory's etiology. (Empirical; medium-high.)
 - *PRS-04 + PRS-02 in the Rohr-tradition wiki* — embodied love as epistemology (the body as a site of knowing) and the order-disorder-reorder pattern as the recoverable counterpart to final impenitence. (Contemplative/theological; medium.)
 - *PRS-01 in the Wright-tradition wiki* — critical realism and salvation-as-covenant-inclusion frame the corrective loop as relational reception, not solitary computation. (Historical-theological; high in field.)

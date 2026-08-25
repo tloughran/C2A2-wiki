@@ -3,9 +3,9 @@ day: 167
 title: Perjury and Sacrilege (Contemporary)
 pairs_with: "[[Day-167 - Perjury and Sacrilege]]"
 length_target_words: 1500
-length_actual_words: 1378
+length_actual_words: 1499
 length_tier: short
-length_ratio_to_target: 0.919
+length_ratio_to_target: 0.999
 length_note: "Under tier target (ratio 0.919, inside ±10%). Q.98–99 share a single underlying structure (costly-signaling / symbolic-infrastructure violation); the prose is held to the load-bearing moves rather than padded with parallel restatement. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.98 a.1–a.4, Q.99 a.1–a.4), which the commentary had been treating at question level only — same repair as Day 166."
 mind_first_reframe: "Under mind-monism, oaths and sacred-symbolic infrastructure are the technologies by which perspective-limited agents bind themselves into higher-order computational coherence over time; perjury and sacrilege are local defections that extract trust-yield while degrading the substrate on which collective coherence runs."
 central_theme_thread: "The perspective-limited agents who would compute loving unity from within their limitations need binding mechanisms that constrain their own future deception of one another; sacrilege and perjury are the local defections that, multiplied, would render the cooperative computation impossible."
@@ -14,12 +14,12 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-07 narrative cognition; PRS-08 narrative phenomenology of suffering)"
   - "traditions/fredrickson/wiki.md (positivity resonance as biophysiological coupling)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 embodied tradition formation; PRS-07 division and union)"
-  - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition — collective signaling)"
+  - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in anatomical morphospace; PRS-02 cancer as defection from the cooperative morphogenetic field). Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium."
   - "Wright canonical: 'Paul and the Faithfulness of God' on pistis as covenant fidelity; 'Jesus and the Victory of God' on Temple symbolics"
   - "Rohr canonical: 'The Universal Christ' on the sacramental as bearing the divine presence"
 evidence_strength_summary: "Costly-signaling theory (oath as binding commitment) is well-established game theory and behavioral biology. The neurobiology of trust-and-betrayal is empirical. The reading of sacrilege as violation of a community's symbolic infrastructure is interpretive but converges with research on ritual function in social cognition."
 tags: [synthesis, day/167, theme/costly-signal, theme/commitment, q/98, q/99]
-last_qc_at: "2026-08-12T06:32:56"
+last_qc_at: "2026-08-24T00:23:10"
 last_qc_outcome: "rewrote"
 ---
 
@@ -41,7 +41,7 @@ Both failures, on the contemporary reading, attack the same infrastructure. Perj
 
 Friston's account of multi-agent coherence via mutual modeling (Friston PRS-06 in the Friston-tradition wiki) gives the formal version: multiple active-inference agents become a coherent collective by minimizing prediction error in each other's behavior. The mechanism is mutual binding — each agent must signal commitments that constrain its own future actions, so that other agents can model it reliably. An oath, on this account, is a precision-weighted prior that the speaker has bound to a high-cost violation surface: future-me will pay if present-me lies. Perjury is the willful exemption from that binding while still extracting the trust-yield it produces.
 
-Levin's substrate-independent cognition (Levin PRS-04 in the Levin-tradition wiki) makes the same point at cellular scale: collective intelligence in a tissue depends on each cell signaling within constraints the collective can predict. A defecting cell — one that signals coherence while pursuing autonomous proliferation — is the cellular analog of perjury, and cancer the analog of sacrilege at the level of the body's symbolic-morphogenetic infrastructure.
+Levin's work makes the same point at cellular scale: collective intelligence in a tissue depends on each cell signaling within constraints the collective can predict (Levin PRS-08 in the Levin-tradition wiki, cells as cognitive agents in anatomical morphospace, high confidence). A defecting cell — one that signals coherence while pursuing autonomous proliferation — is the cellular analog of perjury, and cancer the analog of sacrilege at the level of the body's symbolic-morphogenetic infrastructure (Levin PRS-02, cancer as defection from the cooperative morphogenetic field, high confidence). *QC 2026-08-24: this passage previously rested the whole cellular claim on Levin PRS-04 and labelled it empirical. PRS-04 is the generalised basal-cognition entry, "(Implicit) Cognition substrate," recorded at Confidence Medium; it frames cross-scale cognition but carries neither the morphospace-signaling claim nor the cancer-as-defection claim, and it is not the bioelectric empirical record. Same defect shape as the Day-161 repair of 2026-08-23.*
 
 McGilchrist's account of embodied tradition formation (McGilchrist PRS-06 in the McGilchrist-tradition wiki) and division-and-union (McGilchrist PRS-07) supplies the cultural layer: traditions transmit more than propositions. They transmit perceptual habits, ritual gestures, sacred objects whose handling encodes accumulated practical wisdom. Sacrilege is the destruction of that transmission medium. The graver the sacred thing, the more accumulated coherence it carries; hence Aquinas's gravity-scaling.
 
@@ -64,7 +64,7 @@ The perspective-limited agents who would compute loving unity from within their 
 ## Bridges
 
 - **Friston PRS-06** (multi-agent coherence via mutual modeling) — the oath as precision-weighted self-binding that makes the swearer reliably modelable; perjury as the extraction of trust-yield without paying the binding-cost. *Empirical / mathematically formal.*
-- **Levin PRS-04** (substrate-independent collective cognition) — cellular cooperation depends on within-field signaling honored against private incentive; cancer is the cellular analog of perjury and sacrilege. *Empirical.*
+- **Levin PRS-08 + PRS-02** (cells as cognitive agents in anatomical morphospace; cancer as defection from the cooperative morphogenetic field) — cellular cooperation depends on within-field signaling honored against private incentive; cancer is the cellular analog of perjury and sacrilege. *Empirical (both entries recorded at high confidence).* (Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium, which was carrying an empirical label it cannot support.)
 - **McGilchrist PRS-06, PRS-07** (embodied tradition; division and union) — sacred objects and ritual gestures encode accumulated practical wisdom; sacrilege destroys the transmission medium, and Q.99 a.3's ranking of the species by the sacred thing violated tracks how much accumulated coherence each carries. *Empirical (cognitive science of ritual) + interpretive.*
 - **Stump PRS-07, PRS-08** (narrative cognition; second-personal phenomenology) — oaths and sacred objects are narrative-bound and person-involving, not propositional; their violation damages second-personal relations, not just propositional truth. *Philosophical.*
 - **Wright (canonical, PFG, JVG)** — oath as participation in covenant-fidelity; Temple as paradigmatic sacred infrastructure. *Theological / scriptural.*

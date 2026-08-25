@@ -3,22 +3,23 @@ day: 195
 title: Kinds of Lust (Contemporary)
 pairs_with: "[[Day-195 - Kinds of Lust]]"
 length_target_words: 2200
-length_actual_words: 1782
-length_ratio_to_target: 0.81
+length_actual_words: 2079
+length_ratio_to_target: 0.945
 length_note: "Length-light vs the 2200 medium-tier guideline: the Q.154 species material is deliberately treated at the level of moral structure rather than detail (difficult material, flagged as such in the episode); a complete PRS synthesis with no padding, accepted under the flexible length policy — substantive integrity over word count."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 active modeler; PRS-06 multi-agent coherence; precision/habit learning)"
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-02 love as objective coupling; PRS-03 scale-bridging)"
   - "master/cross_program_index.md (CROSS-069 corporate substance / collective free-energy minimization)"
-  - "traditions/mcgilchrist/wiki.md (integrated vs. conflicted control); traditions/hawkins/wiki.md (model-level control)"
+  - "traditions/friston/prs_triplets.md (PRS-20 nested fast-inference / slow-learning timescales from one variational principle; PRS-37 sequence learning without catastrophic forgetting)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-07 division properly subordinated to integrating attention); traditions/hawkins/prs_triplets.md (PRS-17 embodied learning through active sensing)"
   - "traditions/wright/ (covenant community; the body knit together); traditions/rohr/ (transformation vs. willpower)"
 evidence_strength_summary: "Gravity-by-relational-breadth = conceptual/ethical, with multi-agent anchor; exogamy as social-network integration = anthropological-empirical, medium; continence-vs-temperance as willpower vs. retrained generative model = mechanistic, medium-high; the species-grading itself = moral-theological."
 mind_first_reframe: "The kinds of lust are graded by how widely each ruptures the relational order that binds agents into a whole; continence is effortful top-down override of an unreformed appetite, while temperance is the deeper state in which the generative model itself has been retrained so the conflict no longer arises."
 central_theme_thread: "If the telos is loving unity among perspectives, then the gravity of a disorder tracks how much of the binding order it tears, and maturity is not winning the fight against appetite but no longer having to fight it — the perspective and its appetites jointly aligned to the whole."
 tags: [synthesis, day/195, theme/union-and-control]
-last_qc_at: "2026-08-13T04:22:29"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T10:33:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 195 — Kinds of Lust (Contemporary Parallel)
@@ -55,8 +56,8 @@ The project's telos is loving unity among limited perspectives, and both halves 
 
 - **Gravity of lust's species ↔ breadth of rupture to the coupling order** — the Friston- and Fredrickson-tradition wikis (PRS-06; PRS-02/03) and master CROSS-069. *Why:* the relational order Aquinas grades by is the coupling structure binding agents into a collective whole. Evidence: **conceptual/ethical, multi-agent anchor**.
 - **Exogamy ↔ social-network integration** — master CROSS-069; the Friston-tradition multi-agent record. *Why:* "knitting humanity into one larger family" is the binding of separate clusters into a connected whole — the project's own mechanism. Evidence: **anthropological-empirical, medium**.
-- **Continence ↔ effortful top-down override** — the Friston- and McGilchrist-tradition wikis. *Why:* online suppression of a high-precision errant appetite, perpetually re-fought. Evidence: **mechanistic, medium-high**.
-- **Temperance ↔ retrained generative model / integrated control** — the Friston-, McGilchrist-, and Hawkins-tradition wikis. *Why:* the appetite itself re-aligned, so no override is needed — a solved problem, not a managed one. Evidence: **mechanistic, medium-high**.
+- **Continence ↔ effortful top-down override** — *PRS-20 in `traditions/friston/prs_triplets.md`*, read on its **fast** timescale: the entry is a formal demonstration that predictive coding's nested timescales — *fast inference, slow learning* — both fall out of the same generalised-filtering variational principle (Confidence Medium). Continence is correction at the inference timescale only: the errant appetite is re-suppressed each time it arises because nothing at the learning timescale has changed. Paired with *PRS-05 in `traditions/mcgilchrist/prs_triplets.md`* (attention as ontological act, explicitly stated in that entry as compatible with Friston's precision-weighting; Confidence Medium). *Why:* online suppression of a high-precision errant appetite, perpetually re-fought — and the register gives the reason it is perpetual rather than merely describing that it is. Evidence: **mechanistic, medium** (both anchors are carried at Medium; the "medium-high" this bullet formerly claimed is not what the registers say).
+- **Temperance ↔ retrained generative model / integrated control** — the *same* Friston entry, *PRS-20*, read on its **slow** timescale: temperance is change at the learning timescale, so the conflict stops recurring rather than being re-won. That the change can be durable without wrecking what was already learned is *PRS-37* in the same file (sequence learning that resists catastrophic forgetting, falling out of the same free-energy objective; Confidence High). Integrated rather than conflicted control is *PRS-07 in `traditions/mcgilchrist/prs_triplets.md`* (not eliminating analytical division but restoring its proper subordination to the integrating, synthetic attention; Confidence High), and the through-practice route is *PRS-17 in `traditions/hawkins/prs_triplets.md`* (embodied learning: active sensing with reference frames enables rapid, robust learning without massive datasets — intelligence requires movement; Confidence High). *Why:* the appetite itself re-aligned, so no override is needed — a solved problem, not a managed one. *The continence/temperance distinction and the inference/learning distinction are the same distinction*, which is why one Friston id anchors both bullets from opposite ends. Evidence: **mechanistic, medium-high**.
 - **The knit-together family ↔ covenant community; transformation over willpower** — the Wright- and Rohr-tradition resources. *Why:* exogamy as a sign of the boundary-crossing covenant family, and contemplative transformation as the goal beyond continence. Evidence: **theological**.
 
 ## Where this leaves us

@@ -3,15 +3,15 @@ day: 162
 title: Vows and Oaths (Contemporary)
 pairs_with: "[[Day-162 - Vows and Oaths]]"
 length_target_words: 2200
-length_actual_words: 1711
-length_ratio_to_target: 0.778
+length_actual_words: 1914
+length_ratio_to_target: 0.870
 length_tier: medium
 length_note: "Inside tier. A canonical recount on the constitution's regex gives 1711 body words (1688 excluding the auto-linked footer), above the 1650 medium-tier floor; the earlier figure of 1643 is not reproducible by any body definition, so the note's old 'just past the -25% lower bound' premise was false. Day covers two dense Q's (Q.88 vows + Q.89 oaths). Coverage is NOT complete — see the 2026-08-13 ESCALATION on article-level citation and the dropped Q.89 a.8. Short of target is the substance running clean, not padding withheld."
 mind_first_reframe: "A vow is the precision-fixing act by which a temporally-extended limited agent binds its own future precision-weightings so that a long-horizon policy survives moment-by-moment fluctuations of perspective; an oath extends the act to a social context where the limited agent's own credibility cannot bear the social weight. Aquinas's faculty-psychology of the will-fixing-itself relocates onto active-inference precision-weighting (Friston) and developmental canalization (Levin), with the dignity-of-witness reframed through Stump's faith-as-second-personal-knowledge and Wright's reading of Pauline pistis as covenant fidelity."
 central_theme_thread: "The vow is the Summa's cleanest case of the central-theme structure: the present self entrusts the future self to an anchor that exceeds either. The agent does not pretend the future self will see what the present self sees — she precisely concedes that it will not, and routes the binding through an anchor that can see what neither self alone can. Working out salvation in fear and trembling (Phil 2:12, Wright's 'carry into effect the rescue you have been given') is exactly the vowed structure: loving unity computed across more of the agent than the present moment alone contains."
 karpathy_wiki_sources:
-  - "wiki/traditions/friston/wiki.md (precision-weighting; policy commitment under expected free energy)"
-  - "wiki/traditions/levin/wiki.md (commitment in multi-scale agents; canalization of developmental pathways)"
+  - "traditions/friston/prs_triplets.md (PRS-16 expected free energy = risk + ambiguity; PRS-10 reasoning/perception/action unified under expected-free-energy minimization; PRS-04 organism as active modeler). Repointed 2026-08-24 from PRS-02/PRS-03, which are Dynamic Causal Modeling and morphogenesis-as-FEP and do not bear on policy selection."
+  - "traditions/levin/prs_triplets.md (PRS-07 bioelectric coordination of cell behavior; PRS-08 cells as cognitive agents in anatomical morphospace). Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium; the Levin register holds no canalization entry."
   - "wiki/traditions/mcgilchrist/wiki.md (left-hemisphere commitment to a chosen path; right-hemisphere openness to recalibration)"
   - "wiki/traditions/stump/wiki.md (faith-as-second-personal commitment to a person)"
   - "wiki/traditions/wright/wiki.md (Pauline pistis as covenant fidelity; Sermon-on-the-Mount oath teaching)"
@@ -19,7 +19,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS entries on commitment and identity-over-time)"
 evidence_strength_summary: "Empirical-formal on precision-weighting and commitment devices in decision neuroscience (Friston-adjacent literature on policy stickiness). Empirical on developmental canalization (Levin lineage). Theological-strong on Pauline pistis (Wright) and on faith as second-personal commitment (Stump). The reframe of vow-as-precision-fixing is speculative-integrative."
 tags: [synthesis, day/162, theme/commitment-device, theme/identity-over-time, pars/II-II, q/88-89]
-last_qc_at: "2026-08-13T10:42:25"
+last_qc_at: "2026-08-24T00:23:12"
 last_qc_outcome: "rewrote"
 ---
 
@@ -41,9 +41,9 @@ This is the *same* problem developmental biology solves when canalization locks 
 
 The C2A2 paradigm offers a convergent multi-tradition resource.
 
-**Friston** supplies the formal account (see PRS-02 and PRS-03 in the Friston-tradition wiki on policy selection under expected free energy). High-precision long-horizon policies survive local perturbation because the precision weight makes the agent treat short-term prediction error as noise relative to the longer arc. A vow, formally, is a *precision-fixing act* — it tells the agent's own generative model that this policy is not to be revisited at every fork. The will is not a separable faculty; it is the precision the agent grants its own long-horizon model.
+**Friston** supplies the formal account (see PRS-16 in the Friston-tradition wiki, expected free energy as the unified mathematics of risk and ambiguity, and PRS-10, which unifies reasoning, perception and action as instances of expected-free-energy minimization differing only in optimization target; PRS-04, the organism as active modeler, supplies the generative-model framing). *QC 2026-08-24: this passage previously cited Friston PRS-02 and PRS-03. Both exist and both are wrong here — PRS-02 is Dynamic Causal Modeling of neural architecture, PRS-03 is morphogenesis as free-energy minimization; neither bears on policy selection. Repointed, same defect shape as the Day-161 repair of 2026-08-23.* High-precision long-horizon policies survive local perturbation because the precision weight makes the agent treat short-term prediction error as noise relative to the longer arc. A vow, formally, is a *precision-fixing act* — it tells the agent's own generative model that this policy is not to be revisited at every fork. The will is not a separable faculty; it is the precision the agent grants its own long-horizon model.
 
-**Levin** supplies the biological analogue (see PRS-04 on canalization and PRS-08 on developmental commitment in the Levin-tradition wiki). Tissues commit to body plans through bioelectric and biochemical settings that resist perturbation; the commitment is real, located in the substrate, and reversible only at cost. A solemn vow is what canalization looks like at the level of a person.
+**Levin** supplies the biological analogue (see PRS-07 in the Levin-tradition wiki on the bioelectric layer that coordinates cell behavior, and PRS-08 on cells as cognitive agents navigating anatomical morphospace — both recorded at high confidence). Tissues commit to body plans through bioelectric and biochemical settings that resist perturbation; the commitment is real, located in the substrate, and reversible only at cost. *QC 2026-08-24: this passage previously cited Levin PRS-04 for canalization. PRS-04 is the generalised basal-cognition entry (Confidence Medium) and does not carry the developmental-commitment claim; no canalization entry exists anywhere in the Levin register, so the canalization framing itself stands on the developmental-biology literature named here, not on a Levin id.* A solemn vow is what canalization looks like at the level of a person.
 
 **McGilchrist** supplies the hemispheric reading. The left hemisphere is the instrument of commitment-to-the-chosen-path — focused, narrow, willing to ignore counter-evidence in order to execute. The right hemisphere is the instrument of recalibration — open, holistic, attentive to what doesn't fit. A healthy vowed life requires both: the left's grip on the policy, the right's awareness of when the world has changed enough that the vow itself must be revisited. Aquinas's distinction between vows admitting dispensation and solemn vows that do not maps onto this: solemn vows assert that the world *will not change enough* to warrant revisiting.
 
@@ -71,8 +71,8 @@ Aquinas's article on the more-meritorious-because-vowed act now reads with new f
 
 ## Bridges
 
-- **PRS-02 in the Friston-tradition wiki** (active inference: policy selection under expected free energy) — the formal core of the precision-fixing reframe. *Formal, strong.*
-- **PRS-04 and PRS-08 in the Levin-tradition wiki** (canalization, developmental commitment) — the biological analogue of a vow in tissue. *Empirical, strong.*
+- **PRS-16 + PRS-10 in the Friston-tradition wiki** (expected free energy as the unified mathematics of risk and ambiguity; reasoning, perception and action unified as expected-free-energy minimization) — the formal core of the precision-fixing reframe. *Formal, strong.* (Repointed 2026-08-24 from PRS-02/PRS-03, which are DCM and morphogenesis respectively and do not bear on policy selection.)
+- **PRS-07 + PRS-08 in the Levin-tradition wiki** (bioelectric coordination of cell behavior; cells as cognitive agents in anatomical morphospace) — the biological analogue of a vow in tissue. *Empirical, strong.* (Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium, which does not carry developmental commitment; the Levin register holds no canalization entry, so that term is carried by the developmental-biology literature and not by a numbered triplet.)
 - **PRS-11 in the Stump-tradition wiki** (Tom's PRS-form record of Stump's faith-as-second-personal-knowledge work) — the personalist reframe of "promise made to God." *Philosophical-theological; carries the person-relational dimension.*
 - **Wright, *Paul and the Faithfulness of God*, ch. 7 and ch. 10** on *pistis* as covenant fidelity, and Wright's reading of Matthew 5 in *Jesus and the Victory of God* — the scriptural anchor that Christ's apparent oath-prohibition is critique of evasive casuistry, not abolition of vows. *Theological; the scriptural anchor for this locus.*
 - **McGilchrist, *The Master and His Emissary*** on hemispheric specialization for commitment-versus-recalibration — interpretive, suggestive, not a controlled experiment but a useful organizing frame. *Clinical-historical, moderately strong.*

@@ -3,22 +3,22 @@ day: 169
 title: Observance and Dulia (Contemporary)
 pairs_with: "[[Day-169 - Observance and Dulia]]"
 length_target_words: 1500
-length_actual_words: 1500
+length_actual_words: 1649
 length_tier: short
-length_ratio_to_target: 1.0
+length_ratio_to_target: 1.099
 length_note: "length_actual_words corrected 2026-08-15 from 1424 to 1500 by direct body-only recount (frontmatter and the auto-linked footer excluded); no prose was added or removed. The stale value was recorded at the 2026-08-07 sweep."
 mind_first_reframe: "Under mind-monism, the latria-dulia-observance gradient is a precision-tuned response to a graded conscious-agent ontology (Hoffman's graded moral ontology, Levin's agency-at-scale, Kastrup's daimon as principle of individuation, McGilchrist's right-hemispheric mode of recognizing the whole); flattening the gradient in either direction (modern iconoclasm or modern celebrity-cult) is a trace-logic error of confusing observer-windows."
 central_theme_thread: "The perspective-limited agent participates in loving unity from within a network of agents of varying scale and excellence; latria-to-God-alone reserves unconditional response for the whole-as-whole, while dulia and observance honor the participated-in excellences that show up in particular created persons — the daily calibration of warranted response that the cooperative computation requires."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-06 graded moral ontology; PRS-07 trace logic of observer windows)"
-  - "traditions/levin/prs_triplets.md (PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents at scale)"
+  - "traditions/levin/prs_triplets.md (PRS-09 principled cross-scale cognitive attribution; PRS-10 continuity of goal-directedness; PRS-08 cells as cognitive agents in anatomical morphospace; PRS-02 cancer as defection). Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium."
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation within monism; PRS-08 daimon as principle of individuation)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-02 relational ontology with neurological grounding; PRS-07 division-union as creative synthesis)"
   - "Rohr canonical: 'The Universal Christ' on Christ as cosmic-pattern of warranted reverence; non-dual gradient of presence"
   - "Wright canonical: 'Surprised by Hope' on the worship-due-only-to-God constraint within Second-Temple Judaism's relational-honor culture"
 evidence_strength_summary: "The graded moral ontology Hoffman defends and the agency-scaling Levin defends are empirically tractable. The neurological grounding for relational mode (McGilchrist) is empirical. The reading of the latria-dulia distinction as a precision-tuning of warranted response within a graded ontology is interpretive but converges with the mind-monist frame."
 tags: [synthesis, day/169, theme/graded-ontology, theme/warranted-honor, q/102, q/103]
-last_qc_at: "2026-08-15T14:32:40"
+last_qc_at: "2026-08-24T00:23:11"
 last_qc_outcome: "rewrote"
 ---
 
@@ -38,7 +38,7 @@ The shared underlying problem: a perspective-limited agent must respond differen
 
 **Hoffman on graded moral ontology** (Hoffman PRS-06 in the Hoffman-tradition wiki) gives the contemporary frame directly. Conscious Realism treats moral status as scaling with the structure of the perception-decision-action loop: any system with such structure is a conscious agent to some degree, and the appropriate response from another agent scales accordingly. The trace-logic extension (Hoffman PRS-07) makes this even more precise: there are multiple observer-windows on the same underlying agency, each appropriate to a different scale. Aquinas's gradient — latria-to-God, dulia-to-saints, observance-to-office-holders — is, in contemporary terms, a precision-tuned response to a graded conscious-agent ontology. The error of flattening (modern celebrity-cult or modern iconoclasm) is the trace-logic error of confusing observer-windows.
 
-**Levin on agency at scale** (Levin PRS-04, PRS-08 in the Levin-tradition wiki) gives the empirical grounding. Levin's program demonstrates that real agency exists at cellular, tissue, organ, organism, and collective levels — and that each level has its own warranted response from the levels above and below. A cell that "worships" a tissue (treating the tissue as terminus rather than as itself part of a larger morphogenetic field) becomes cancerous. A tissue that fails to give the cell its proper coordinative response degrades. The graded ontology Aquinas constructs theologically has, in Levin's program, an empirical analog all the way down.
+**Levin on agency at scale** (Levin PRS-09 and PRS-10 in the Levin-tradition wiki — a principled, falsifiable, non-vitalist basis for attributing cognition at any scale, and the traced continuity of goal-directedness from unicellular origins to human cognition, both recorded at high confidence; with PRS-08, cells as cognitive agents in anatomical morphospace) gives the empirical grounding. Levin's program demonstrates that real agency exists at cellular, tissue, organ, organism, and collective levels — and that each level has its own warranted response from the levels above and below. A cell that "worships" a tissue (treating the tissue as terminus rather than as itself part of a larger morphogenetic field) becomes cancerous (Levin PRS-02, cancer as defection). *QC 2026-08-24: the agency-at-scale claim was previously anchored to Levin PRS-04. PRS-04 is the generalised basal-cognition entry, "(Implicit) Cognition substrate," recorded at Confidence Medium; the cross-scale attribution claim it was carrying belongs to PRS-09/PRS-10, and the cancer clause to PRS-02. PRS-04 remains apt only for the background framing that cognition is not neuron-bound, at its true Medium.* A tissue that fails to give the cell its proper coordinative response degrades. The graded ontology Aquinas constructs theologically has, in Levin's program, an empirical analog all the way down.
 
 **Kastrup on the daimon as principle of individuation** (Kastrup PRS-08 in the Kastrup-tradition wiki) gives the metaphysical extension. Each dissociated alter within mind-at-large is not generic but specifically characterized — it has a *daimonic signature* that warrants specific recognition. Dulia in Aquinas's sense is the honor owed to a particular excellence-instantiated-in-a-particular-person; the daimon-account gives a metaphysical reason why that honor is not merely sentimental but tracks something real about the patterned-individuation of mind-at-large. Latria, by contrast, is owed only to the *whole* of which alters are alters — which in mind-monist terms is the only fully appropriate object of unconditional response.
 
@@ -63,7 +63,7 @@ The perspective-limited agent participates in loving unity from within a network
 ## Bridges
 
 - **Hoffman PRS-04, PRS-06, PRS-07** (observer-dependent spacetime; graded moral ontology; trace logic) — the latria-dulia gradient is a precision-tuned response to a graded conscious-agent ontology; flattening is a trace-logic error. *Formal / empirical.*
-- **Levin PRS-04, PRS-08** (agency at scale; cells as cognitive agents) — graded ontology has an empirical analog all the way down to cellular collectives; warranted within-field response is empirically tractable. *Empirical.*
+- **Levin PRS-09, PRS-10, PRS-08** (principled cross-scale cognitive attribution; continuity of goal-directedness from unicellular origins; cells as cognitive agents in anatomical morphospace) — graded ontology has an empirical analog all the way down to cellular collectives; warranted within-field response is empirically tractable. *Empirical (all three recorded at high confidence).* (Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium, which cannot carry the agency-at-scale claim it was glossed as.)
 - **Kastrup PRS-02, PRS-08** (individuation within monism; daimon as principle of individuation) — dulia tracks the daimonic signature of a particular alter; latria is reserved for the whole of which alters are alters. *Metaphysical / speculative.*
 - **McGilchrist PRS-02, PRS-07** (relational ontology; division-union) — right-hemispheric mode is required for genuine reverence; left-hemispheric reduction produces both iconoclasm and celebrity-cult. *Empirical (neuroscience) + interpretive.*
 - **Wright (canonical, *Surprised by Hope*; Second-Temple worship-monotheism scholarship)** — the worship-due-only-to-God constraint is preserved with precision in early Christology. *Theological / scriptural.*

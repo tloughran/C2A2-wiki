@@ -7,8 +7,8 @@ length_actual_words: 2136
 length_ratio_to_target: 0.971
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/hoffman/ (interface theory — the distorted icon vs. reality, by theme)"
-  - "traditions/kastrup/ (analytic idealism — the dissociated alter mistaking mind-at-large, by theme)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception — the distorted icon vs. reality)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 analytic idealism — the dissociated point of view mistaking mind-at-large)"
   - "traditions/friston/prs_triplets.md (PRS-13 metastability / attractor collapse; PRS-14 symptoms as locally-optimal globally-suboptimal Bayesian attractors)"
   - "traditions/fredrickson/prs_triplets.md (PRS-06 non-zero-sum love; PRS-01 upward spirals)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 Universal Christ)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Hatred of God only of a misperceived God (Q.34 a.1) 
 mind_first_reframe: "Hatred and sloth are the two structural failure-modes of the perspective-bounded agent. Hatred cannot take goodness-itself as its object (Q.34 a.1); it can only target a misperceived whole — a distorted icon (Hoffman) or mind-at-large mistaken for a threat by the dissociated alter (Kastrup) — and at its limit it is the perspective finally sealing itself against the real whole (a.5: 'the completion of vice'), the terminus the whole charity arc has circled. Envy (a.6) is the zero-sum misreading of a non-zero-sum reality (Fredrickson PRS-06): another's good looks like my loss only when the whole is out of view. Sloth/acedia (Q.35) is the collapse of the goal-prior — the agent stuck in a low-energy local minimum, no longer drawn to the global attractor because the toil toward it registers as evil (Friston PRS-13/14) — the abandonment of the very computation toward loving unity that Day 133 named."
 central_theme_thread: "After naming the computation toward loving unity (Day 133) and its social protocol (Day 134), the project must name how it fails. Hatred is the refusal of the whole: mistaking one's partial perspective for the whole and turning against the real whole that reproves it — the perspective sealed from the inside, the final-impenitence limit. Sloth is the refusal of the work: abandoning the working-out-of-salvation because the perceived resource-cost is too high, the will settling into a local minimum where the good no longer attracts. Both are perspective-limitation gone terminal — one defending the partial against the whole, the other quitting the climb toward it. And both are reversible in via: the daughters of sloth (despair, faint-heartedness) are the giving-up cluster, but the door is locked only when, like the demons of Day 130, the will finally seals it from within."
 tags: [synthesis, day/135, theme/failure-modes]
-last_qc_at: "2026-08-15T02:30:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T14:29:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 135 — Contemporary Parallel: How the Climb Fails — Sealing Off and Giving Up
@@ -59,7 +59,7 @@ After naming the computation toward loving unity (Day 133) and the charitable pr
 
 ## Bridges
 
-- *Hoffman-tradition wiki (icon vs. reality, by theme) + Kastrup-tradition wiki (dissociated alter, by theme)* — hatred of God (Q.34 a.1) as perspective-limitation striking a distorted icon, or mind-at-large misperceived as a threat by the defended partial self. (Philosophical / speculative-metaphysical.)
+- *PRS-03 in the Hoffman-tradition `prs_triplets.md` (Interface Theory: the percept is an adaptive icon, not a truth-mirror) + PRS-02 in the Kastrup-tradition `prs_triplets.md` (individual beings as dissociated points of view within one undivided consciousness)* — hatred of God (Q.34 a.1) as perspective-limitation striking a distorted icon, or mind-at-large misperceived as a threat by the defended partial self. (Philosophical / speculative-metaphysical.)
 - *Day 125 + Day 130 (this vault) ↔ Q.34 a.5* — hatred as "the completion of vice," not a cause: the final-impenitence limit, the perspective sealed against the whole, structurally identical to the sin against the Spirit and the demons' fixed will. (Structural; theological, high in field.)
 - *PRS-06 in the Fredrickson-tradition wiki* — envy (a.6) as the zero-sum misreading of a non-zero-sum reality: another's good is a grief only when the whole, in which both goods coincide, is out of view. (Empirical; medium.)
 - *PRS-13 + PRS-14 in the Friston-tradition wiki* — sloth/acedia (Q.35 a.1-2) as a locally-optimal globally-suboptimal Bayesian attractor resisting update: the collapse of the goal-prior, the will stuck in a low-energy minimum because the toil raises short-term free energy. (Formal + clinical; medium-high.)

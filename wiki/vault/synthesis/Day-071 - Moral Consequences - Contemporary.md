@@ -3,22 +3,22 @@ day: 71
 title: "Moral Consequences (Contemporary)"
 pairs_with: "[[Day-071 - Moral Consequences]]"
 length_target_words: 1500
-length_actual_words: 1939
-length_ratio_to_target: 1.293
+length_actual_words: 2091
+length_ratio_to_target: 1.394
 length_measurement_note: "Recounted 2026-08-09 with the constitution's regex over the parsed body (qc_sweep.split_frontmatter). The prior 1610 was ~330 words low. Against the SHORT label this reads 1.293; against MEDIUM — which is what the transcript's word_count 2338 selects under the policy table — it is 0.881, comfortably in band. The short/medium tier label remains the standing 2026-06-22 escalation and is Tom's to settle."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-16 expected free energy as unified mathematics of risk and ambiguity)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control — bioelectric circuits encoding anatomical target states)"
   - "traditions/fredrickson/prs_triplets.md (PRS-03 scale-bridging in agent coupling — positivity resonance from dyad to community)"
-  - "traditions/mcgilchrist/wiki.md (hemispheric uptake of action-consequence loops; right-hemispheric receptivity to feedback — no PRS-id anchor located for this claim)"
-  - "traditions/stump/wiki.md (willed-evil; double-effect; second-personal accountability for consequences — no PRS-id anchor located for this claim)"
-evidence_strength_summary: "Synthesis written from Summa I-II Q.20-21 text + C2A2 framework (transcript fetch failed; Chrome MCP unavailable in scheduled-task window). Friston's expected-free-energy formalism is mature; Levin's form-as-pattern-extending is empirically grounded; the merit/demerit/desert structure of Q.21 is theological. Synthesis claim that external-act consequences are the alter's contribution to substrate-network integrative-vs-disintegrative dynamics is speculative-philosophical-theological."
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-07 division and union as creative synthesis — analysis properly subordinated to integrating attention)"
+  - "traditions/stump/prs_triplets.md (PRS-22 seven deadly sins as typology of disordered will — the willed-evil anchor, object/manner/measure)"
+evidence_strength_summary: "Synthesis written from Summa I-II Q.20-21 text + C2A2 framework. (STALE PROVENANCE RETIRED 2026-08-24: this field previously read 'transcript fetch failed; Chrome MCP unavailable in scheduled-task window' — true when written, false since. The paired transcript now records fetch_path 'youtube-transcript-api (re-fetch after 2026-05-10 fetch-failed placeholder)', caption_kind asr, word_count 2338 and fidelity_checked true. Whether this commentary should be re-read against the now-recovered transcript is a separate open question, named here and not answered.) Friston's expected-free-energy formalism is mature; Levin's form-as-pattern-extending is empirically grounded; the merit/demerit/desert structure of Q.21 is theological. Synthesis claim that external-act consequences are the alter's contribution to substrate-network integrative-vs-disintegrative dynamics is speculative-philosophical-theological."
 mind_first_reframe: "Q.20's interior-act/exterior-act unity preserves under active inference: the generative model and its extension into action-on-the-world are not two separate moral bearers but one act under two registers — formal alignment + material instantiation. Q.21's consequences register the alter's contribution to the substrate-network's integrative dynamics, with merit/demerit as the substrate-source's evaluative signal of contribution-to-loving-unity vs. contribution-to-disintegration."
 central_theme_thread: "Each alter's external act extends its formal alignment + material judgment outward into the substrate-network where it becomes data-input for other alters' generative models; consequences are how the alter participates in shaping the substrate's integrative dynamics for other alters; salvation in fear and trembling now extends to the alter's responsibility for the perspective-limited downstream effects of its acts on alters whose perspective the acting alter cannot fully see."
 tags: [synthesis, day/071, theme/external-act, theme/consequences, theme/substrate-network-extension]
-last_qc_at: "2026-08-17T20:20:54"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T10:33:20"
+last_qc_outcome: "rewrote"
 ---
 # Day 71 — Contemporary Parallel: *External Acts, Consequences, and the Substrate-Network Extension of Moral Form*
 
@@ -69,9 +69,9 @@ The central theme says that conscious agents are individuated by perspective-lim
 - **PRS-04, Friston-tradition wiki** (organism as active modeler — the living system as a continuous predict-test-update agent). Mature formalism for the interior/exterior unity of Q.20.
 - **PRS-16, Friston-tradition wiki** (expected free energy as the unified mathematics of risk *and* ambiguity). Formalism for Q.20 a.5's foreseen-consequences register: risk is the divergence between prior preferences and predicted outcomes, ambiguity the volatility of the prediction itself.
 - **PRS-01, Levin-tradition wiki** (morphogenetic control; bioelectric circuits encoding anatomical target states). Empirical anchor for substrate-level pattern-propagation.
-- **Stump-tradition wiki, on willed-evil and double-effect** (*Wandering in Darkness*; Aquinas's own double-effect at II-II Q.64 a.7). Theological-philosophical account of accountability for foreseen-but-unintended effects. *No PRS-id anchor located for this claim in the mounted wiki — cited to the canonical work.*
+- **PRS-22 in `traditions/stump/prs_triplets.md`** (the seven deadly sins as a structured typology of disordered will, each pivoting on a real good misordered in **object, manner, or measure** relative to the agent's final end; Confidence Medium), with Aquinas's own double-effect at II-II Q.64 a.7 and *Wandering in Darkness* supplying the second-personal frame. Theological-philosophical account of accountability for foreseen-but-unintended effects: *object, manner and measure* is Q.20's own object-circumstance-end triple read from the failure side, which is what lets a foreseen-but-unintended effect be assessed at all rather than absorbed into intention. This is the willed-evil anchor the sibling Day 070 already uses for the same arc — Q.18-19 there, Q.20-21 here — and the id was verified at the register body, not propagated on the sibling's word. *Evidence: philosophical/theological; the record carries it at Medium.*
 - **PRS-03, Fredrickson-tradition wiki** (positivity resonance as the coupling mechanism that scales from dyad to group to community). Empirical anchor for affective-substrate consequence-propagation.
-- **McGilchrist-tradition wiki, on hemispheric integration of feedback loops** (*The Master and His Emissary*, on right-hemispheric reception of the world-as-it-returns). Bi-hemispheric integration at the act-consequence level. *No PRS-id anchor located for this specific claim — cited to the canonical work.*
+- **PRS-07 in `traditions/mcgilchrist/prs_triplets.md`** (division and union as creative synthesis: not eliminating analytical division but restoring its proper subordination to the integrating, synthetic attention; Confidence High), with *The Master and His Emissary* on right-hemispheric reception of the world-as-it-returns. Bi-hemispheric integration at the act-consequence level: the interior act is the analytic moment and the returning consequence is what must be re-integrated, so Q.20's interior/exterior unity is exactly PRS-07's *subordination-not-elimination* structure rather than a mere pairing of two faculties. *Evidence: phenomenological/philosophical; the record carries it at High.*
 - **Wright on covenanted-community as locus of distributed consequence-reception.** *Surprised by Hope* on resurrection-and-renewal as the cosmic backdrop for the merit-register.
 - **Rohr on contemplative-practice as deliberate alignment-reducing-disintegrative-output.** *The Universal Christ* on the cosmic Christ as the substrate-source's pattern of integration.
 - **CROSS-005 in master cross-program index — love as fundamental category.** The merit-register tracks the act's contribution to or against the substrate-source's loving-integrative dynamics.

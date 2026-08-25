@@ -9,15 +9,15 @@ length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 generative model; PRS-08 target morphology as prior belief)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface; PRS-04 agent-constructed reality)"
-  - "traditions/kastrup/prs_triplets.md (mind-at-large; getting the ontological primitive wrong)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 mind-at-large and the dissociated point of view; getting the ontological primitive wrong)"
   - "traditions/levin/prs_triplets.md (PRS-02 defection from cooperative whole; PRS-03 basins/set-point)"
   - "traditions/wright/prs_triplets.md (PRS-01 critical realism); traditions/rohr/prs_triplets.md (PRS-03 Universal Christ)"
 evidence_strength_summary: "Will-as-orientation (the object of the will is a claim about the whole) — formal (Friston: the model encodes its valued target) + philosophical (high in field). Blasphemy as maximally-wrong model of the fundamental — formal/metaphysical (Hoffman/Kastrup, speculative). Apostasy as complete withdrawal of a perspective from its target — analogical (Levin). The apostate-prince forfeiture article named as a medieval departure, not endorsed."
 mind_first_reframe: "An agent's deepest valuation is a truth-apt commitment about what is fundamental, because under monism valuing and representing are one operation (Friston: the set-point is part of the generative model); so 'interior blasphemy of the heart' (Q.13 a.4) is a model whose highest-precision set-point is fixed on something that is not the ground — false as lived, not merely as spoken — and apostasy is the complete loss of the target set-point (Levin), distinct from local divergence within the basin."
 central_theme_thread: "This is the will-as-orientation face of the central theme: the deepest fact about a perspective is the target toward which it computes, so to set the will on something-other-than-the-whole is to render, in the only currency that finally counts, a false verdict about what the whole is; 'the damned blaspheme' is the central theme's shadow — a perspective so fixed away from the whole that even its silence testifies against the good — while the saints' praise is the computation toward loving unity completed."
 tags: [synthesis, day/124, theme/will-as-orientation]
-last_qc_at: "2026-08-12T22:34:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T14:29:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 124 — Contemporary Parallel: The Object of the Will Is a Claim About the Whole
@@ -58,7 +58,7 @@ This is the will-as-orientation face of the central theme. Each conscious agent 
 
 - *PRS-04 + PRS-08 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference work)* — the agent is a generative model whose set-point is inseparable from its representation; the will's object is a model-level commitment. (Formal; high.)
 - *PRS-03 + PRS-04 in the Hoffman-tradition wiki* — a model can be coherent yet systematically wrong about the underlying reality; blasphemy as the limiting misrepresentation. (Formal/evolutionary; medium, speculative in application.)
-- *Kastrup-tradition wiki, mind-at-large* — taking the transient/dissociated for the fundamental is the deepest category error; blasphemy as its limit case. (Metaphysical; speculative.)
+- *PRS-02 in the Kastrup-tradition `prs_triplets.md` (mind-at-large and the dissociated alter)* — the register's individuation claim is that individual beings are "dissociated points of view" of one undivided consciousness; taking the transient/dissociated for the fundamental is therefore the deepest category error, and blasphemy is its limit case. (Metaphysical; speculative.)
 - *PRS-02 + PRS-03 in the Levin-tradition wiki* — apostasy as a lost set-point / departure from the basin, distinct from local divergence within it. (Analogical; medium.)
 - *PRS-01 in the Wright-tradition wiki; PRS-03 in the Rohr-tradition wiki* — the ground for declining Aquinas's forfeiture politics and reorienting toward engagement. (Historical-theological / contemplative.)
 

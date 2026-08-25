@@ -3,22 +3,23 @@ day: 176
 title: Quarreling and Liberality (Contemporary)
 pairs_with: "[[Day-176 - Quarreling and Liberality]]"
 length_target_words: 1500
-length_actual_words: 1264
-length_ratio_to_target: 0.843
+length_actual_words: 1580
+length_ratio_to_target: 1.053
 length_tier: short
-length_note: "Under short-tier target by design — Q.116 (quarreling) and Q.117 (liberality) are short annexed articles fully and non-redundantly treated; short-and-substantive preferred over padding per the length policy."
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
 central_theme_thread: "Liberality is a plain down-payment on loving unity — acting as though the boundary between my good and yours were already thinner than fear insists — while the quarrelsome agent defends a small self against a world it meets as adversary."
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (cooperative morphogenetic community; self-boundary / cognitive light cone as the scale of care)"
-  - "traditions/fredrickson/prs_triplets.md (positivity resonance; quarrel as bond-starvation, generosity as bond-building)"
-  - "traditions/carroll/prs_triplets.md (poetic naturalism — generosity as a real higher-level pattern, not an illusion)"
+  - "traditions/levin/prs_triplets.md (PRS-40 cognitive light cone; alignment as convergence of light cones across scales — the self-boundary as the scale of care)"
+  - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the body's cooperative morphogenetic community — the empirical face PRS-40 inherits)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 micro-moments cultivated into upward spirals; PRS-02 positivity resonance as measurable vagal tone, oxytocin, neural phase-locking)"
+  - "traditions/carroll/prs_triplets.md (PRS-01 poetic naturalism — generosity as a real higher-level pattern, not an illusion)"
+  - "traditions/rohr/prs_triplets.md (PRS-15 the ego/false-self frame as the contemplative pair for the constructed self)"
   - "traditions/stump/prs_triplets.md (Thomistic interlocutor: liberality as right second-personal stance toward goods)"
-  - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9); Rohr canonical: the non-grasping True Self (Falling Upward)"
+  - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9) — no numbered Wright triplet covers this; anchor declined on a tested radius, see Bridges"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-08-11T20:24:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T18:32:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 176 — Quarreling and Liberality (Contemporary)
@@ -57,15 +58,16 @@ Loving unity is the goal toward which each limited agent computes — and libera
 
 ## Bridges
 
-- **Levin (self-boundary / cooperative community)** — liberality as enlargement of the care-radius; the generous self is simply the larger self. *Formal / empirical.*
-- **Fredrickson (positivity resonance)** — generosity builds measurable bonds; quarreling starves them. *Empirical.*
-- **Carroll PRS-01 (poetic naturalism)** — generosity as a real higher-level pattern, not an illusion atop physics. *Formal.*
-- **Wright (koinonia, 2 Cor 8–9)** — giving as the grace of shared life in the new-creation community. *Theological.*
-- **Rohr (non-grasping True Self)** — the released hand as the mark of the self that has nothing to defend. *Theological.*
+- **PRS-40 in the Levin-tradition wiki** (`traditions/levin/prs_triplets.md`) — the cognitive light cone as the operative boundary: the entry defines externalities as homeostatically relevant events *outside* an agent's light cone, and alignment as the **convergence of cognitive light cones across agents at different scales**. Liberality is that convergence at human scale — enlargement of the care-radius, so the generous self is simply the larger self. *Formal, Confidence High.*
+- **PRS-02 in the Levin-tradition wiki** (cancer as defection from the body's cooperative morphogenetic community) — the empirical face of the same claim, seen from its failure side: cells cooperate into a body by holding a boundary of concern wider than the single cell, and cancer is that boundary collapsing back to one. PRS-40 names this register entry's own track record as what its criterion inherits. *Empirical, Confidence High.*
+- **PRS-01 + PRS-02 in the Fredrickson-tradition wiki** — PRS-01 carries the bond-building (micro-moments of positivity resonance cultivated into upward spirals of connection); PRS-02 carries the *measurability* the bullet leans on (positivity resonance correlated with vagal tone, oxytocin, neural phase-locking). Generosity generates these moments; quarreling starves them. *Empirical, both Confidence High.*
+- **Carroll PRS-01 (poetic naturalism)** — generosity as a real higher-level pattern, not an illusion atop physics. Verified at the entry body: higher-level descriptions are legitimate stories about one substrate, requiring no ontological addition. *Formal, Confidence High.*
+- **Wright — canonical work, anchor declined on a tested radius.** Giving as *koinonia* / the grace of participation (2 Cor 8–9). The 41-entry Wright register was searched this run for *koinonia*, *collection*, *generosity*, *giving*, *gift*, and *2 Corinthians 8*; the only hits are the Spirit-in-the-Psalter, cruciform suffering, ministerial gifts, resurrection-grounded hope, and self-forgiveness — none of them the claim. No numbered Wright triplet covers the grace of giving, so the anchor stays canonical rather than inventing an id. *Theological.*
+- **Rohr PRS-15** (`traditions/rohr/prs_triplets.md`) — the ego/false-self frame named explicitly as what Jesus liberates from, and offered as the contemplative pair for the mind-monist account of the self as construction. The released hand is the mark of the self with nothing to defend. *Theological, Confidence High.*
 
 ## Where this leaves us
 
-Tomorrow's Q.118–119 turns the screw: covetousness and prodigality, the two ways the affection toward goods goes wrong by excess and defect. If liberality is the rightly-sized self, covetousness is its pathological contraction — and there the bridge to Levin's account of defection from the cooperative whole becomes sharpest. Open thread: whether "self-boundary scale" can be made to do real work as a *measure* of a virtue, or whether it remains an illuminating metaphor.
+Tomorrow's Q.118–119 turns the screw: covetousness and prodigality, the two ways the affection toward goods goes wrong by excess and defect. If liberality is the rightly-sized self, covetousness is its pathological contraction — and there the bridge to Levin's account of defection from the cooperative whole (PRS-02) becomes sharpest. The open thread this day raised — whether "self-boundary scale" can do real work as a *measure* of a virtue rather than remaining an illuminating metaphor — has a candidate answer in PRS-40, which offers exactly a measurable structural criterion: *do the agents' cognitive light cones overlap on the relevant homeostatic variables?* Tomorrow's pair must carry that criterion forward and test it on the contraction case, where the overlap is being actively withdrawn.
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/carroll/prs_triplets|Carroll PRS]]

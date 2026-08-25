@@ -3,8 +3,8 @@ day: 57
 title: "Angels and Men (Contemporary)"
 pairs_with: "[[Day-057 - Angels and Men]]"
 length_target_words: 1500
-length_actual_words: 1392
-length_ratio_to_target: 0.928
+length_actual_words: 1414
+length_ratio_to_target: 0.943
 length_note: "Under short-tier ±10% (1340 vs 1500, ratio 0.89); within ±25%. Q.111 + Q.112 spans 8 articles on substrate-network → embodied-creature channel architecture; the synthesis stays disciplined to the four channels Aquinas's gradient names (intellect, will-indirectly, imagination, body) with explicit reservation that will-orientation does not transmit. Concise rather than padded — extending further would require speculative angelological superstructure not warranted by the C2A2 wiki contact. Within the substantive-integrity-trumps-word-count policy clause."
 length_tier: short
 karpathy_wiki_sources:
@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 the bioelectric interface to the collective intelligence of morphogenesis; PRS-08 cells as cognitive agents at scale)"
   - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-01 hemispheric asymmetry — receptive vs. manipulative mode)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 dissociation / alters within mind-at-large)"
-  - "wiki/master/cross_program_index.md (CROSS-028 Kastrup's dissociative boundary mapped onto Friston's Markov blanket — the boundary the channels cross)"
+  - "wiki/master/cross_program_index.md (CROSS-027 Kastrup's dissociative boundary mapped onto Friston's Markov blanket — the boundary the channels cross)"
 evidence_strength_summary: "Hoffman/Friston formal frameworks mature; angelic action on embodied creatures is theologically construed; the contemporary frame is structural-analogical"
 mind_first_reframe: "Angelic action on the embodied creature becomes substrate-network influence on the alter's apprehensive, affective, and bodily channels; Q.111's careful gradient (yes for intellect/imagination/body, no directly for will) preserves under interface theory, multi-agent active inference, multi-scale agency, and McGilchrist's hemispheric account, while reserving will-orientation strictly to the substrate-source itself."
 central_theme_thread: "The day reinforces the constitutive character of the alter's perspective-limitation — substrate-network influence reaches the alter through the apprehensive interface and the affective landscape, but the will-orientation that names the alter's working-out of salvation remains the alter's own; the mission-of-angels register adds that substrate-network agents are sent rather than autogenously projected, a contour of the substrate's care for embodied creatures under their limitation."
 tags: [synthesis, day/057, theme/multi-agent-influence, theme/imagination]
-last_qc_at: "2026-08-15T14:32:39"
+last_qc_at: "2026-08-24T06:30:00"
 last_qc_outcome: "rewrote"
 ---
 # Day 57 — Contemporary Parallel: *Angelic Action on Man as Substrate-Network Influence on the Embodied Alter*
@@ -74,7 +74,7 @@ The mission-of-angels register (Q.112) extends this: substrate-network agents ar
 - **PRS-02 in the Kastrup-tradition wiki** (`traditions/kastrup/prs_triplets.md` — dissociation: one undivided consciousness with multiple dissociated points of view; the alter-vocabulary this commentary uses throughout). Substrate is closer than self. *Philosophical-conceptual.*
 - **Wright, *Surprised by Hope*; *Paul and the Faithfulness of God*.** Pneumatology and substrate-mediated formation. *Scriptural-historical primary.*
 - **Rohr, *The Universal Christ*.** Sending-and-presence as the cosmic-Christ pattern at the substrate-network scale. *Contemplative theological.*
-- **CROSS-028 in the master cross-program index** (`master/cross_program_index.md` — does Kastrup's dissociative boundary map formally onto Friston's Markov blanket, i.e. are they the same boundary dynamics at different levels of description?). This is the boundary the four channels have to cross, and the open question of whether it is one boundary or two is exactly what determines whether "substrate-network influence" is a single mechanism or an equivocation. Noting the gap honestly: the index carries **no** entry on influence-channel *architecture* across that boundary — a wiki-node candidate. *Cross-tradition convergence pattern, unresolved.*
+- **CROSS-027 in the master cross-program index** (`master/cross_program_index.md` — does Kastrup's dissociative boundary map formally onto Friston's Markov blanket, i.e. are they the same boundary dynamics at different levels of description?; the index carries it as the strongest explanatory-bridge candidate in the current network, forwarded to the Pattern Detector at highest priority). This is the boundary the four channels have to cross, and the open question of whether it is one boundary or two is exactly what determines whether "substrate-network influence" is a single mechanism or an equivocation. Noting the gap honestly: the index carries **no** entry on influence-channel *architecture* across that boundary — a wiki-node candidate. *Cross-tradition convergence pattern, unresolved.*
 
 ## Where this leaves us
 

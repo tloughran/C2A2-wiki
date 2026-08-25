@@ -11,13 +11,14 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-28 precision as the inverse variance of prediction error / precision-weighting on belief updates; PRS-16 expected free energy = risk + ambiguity; PRS-10 active reasoning / model selection)"
   - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality / gifts as grace perfecting natural powers)"
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology / certainty of the wayfarer)"
-  - "traditions/mcgilchrist/ (vigilant, valuing attention to what matters — by theme)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-09 participatory realism — knowing as encounter, attention as love)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01 cultivated positivity resonance / upward spirals; PRS-02 love as measurable neurophysiological synchrony)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; reverence as openness to being changed)"
 evidence_strength_summary: "Fear as the precision-weighting on the divergence signal — formal as a model of agency (Friston, high as model). Certainty of the wayfarer as certainty of direction not possession — formal (expected free energy under ambiguity, medium-high) + theological (Wright already/not-yet, high in field). Filial fear deepening as charity grows while servile fear fades — theological (high in field) + coherent with a shift in what the precision signal is weighted on (speculative application). Gift of fear as grace perfecting a natural power — theological (Stump, high in field)."
 mind_first_reframe: "Fear is the precision the agent places on its divergence-from-target signal — the felt valuation of how much is at stake in missing the good. Servile fear weights punishment; filial fear weights separation from the beloved whole. As charity (the goal-prior's binding to the whole) grows, the weighting migrates from outcome-to-self toward relation-to-whole: servile fear fades, filial fear deepens. 'Fear of the Lord is the beginning of wisdom' = the orienting prior that there is a target worth not missing, present before any deliberation refines it."
 central_theme_thread: "Filial fear is 'fear and trembling' precisely calibrated: not terror of punishment but the reverent, increasing valuation of the whole one is being drawn into and could fall away from. It is the affective form of perspective-limitation taken seriously — the agent that knows how much it does not yet hold, and how much there is to lose."
 tags: [synthesis, day/127, theme/fear-as-precision]
-last_qc_at: "2026-08-13T00:21:39"
+last_qc_at: "2026-08-24T16:22:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -65,7 +66,7 @@ The central theme's "fear and trembling" finds its precise calibration here. Fil
 - *PRS-04 + PRS-16 in the Friston-tradition wiki* — the organism as active modeler under which the precision machinery operates, and the risk-vs-ambiguity split behind "certain of direction, not of outcome." (Formal; high as model / medium-high.)
 - *PRS-03 in the Wright-tradition wiki* — inaugurated eschatology resolves the certainty-and-fear puzzle: assured of the way, awake to the remaining distance. (Historical-theological; high in field.)
 - *PRS-09 in the Stump-tradition wiki* — the gift of fear as grace perfecting the agent's own precision-on-divergence, which is why it grows with sanctity rather than being outgrown. (Philosophical-theological; high in field.)
-- *McGilchrist-tradition wiki + Fredrickson-tradition wiki (by theme)* — attunement to a loved other sharpens, not dulls, as the bond deepens: the embodied form of filial fear's growth. (Empirical/neuroscientific; medium-high.)
+- *PRS-09 in the McGilchrist-tradition wiki (participatory realism — knowing as encounter, attention as love) + PRS-01 and PRS-02 in the Fredrickson-tradition wiki (cultivated positivity resonance and its upward spiral; love as measurable neurophysiological synchrony)* — attunement to a loved other sharpens, not dulls, as the bond deepens: the embodied form of filial fear's growth. The two traditions own different halves. McGilchrist owns the philosophical half: attention is itself the loving relation, and in a genuine encounter both participants are changed — which is why reverent attention intensifies rather than habituates. (Philosophical; medium-high.) Fredrickson owns the empirical half: vagal tone, oxytocin and neural phase-locking are measurable correlates of positivity resonance, and regular cultivation of shared positive emotion generates upward spirals rather than diminishing returns. (Empirical; strong.) Note the residue: the registers index the increase to *cultivation*, not specifically to *depth of bond*; that last step is this commentary's own and is speculative.
 - *PRS-02 in the Rohr-tradition wiki* — reverence as the openness to being changed by what one approaches; fear as the doorway-keeping disposition that disorder-reorder requires. (Contemplative; medium.)
 
 ## Where this leaves us

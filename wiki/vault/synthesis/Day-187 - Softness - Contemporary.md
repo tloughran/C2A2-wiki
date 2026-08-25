@@ -3,23 +3,23 @@ day: 187
 title: Softness (Contemporary)
 pairs_with: "[[Day-187 - Softness]]"
 length_target_words: 1500
-length_actual_words: 1268
-length_ratio_to_target: 0.85
+length_actual_words: 1466
+length_ratio_to_target: 0.977
 length_tier: short
-length_note: "0.85x short target — both vices (Q.138) and the gift of fortitude (Q.139) fully covered; complete-not-truncated (short-and-substantive)."
+length_note: "RESTATED 2026-08-24 (the prior note asserted 0.85x, which this file is no longer at). Body-only recount after the bridge-anchoring pass: 1466 words, ratio 0.977 of short target — INSIDE +/-10pct, so no justification is required and none is claimed. Both vices (Q.138) and the gift of fortitude (Q.139) fully covered."
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 isolation/decline; broaden-and-build track record on attentional gating)"
   - "traditions/friston/wiki.md (PRS-04 organism as active modeler; precision-weighting)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
-  - "traditions/stump/wiki.md (fortitude-in-suffering; vainglory as self-display)"
-  - "traditions/wright/wiki.md (gift/Spirit, faithful improvisation); traditions/rohr/wiki.md (first-half-of-life ego)"
+  - "traditions/stump/prs_triplets.md (PRS-22 seven deadly sins as typology of disordered will — esteem as the good vainglory misorders)"
+  - "traditions/wright/prs_triplets.md (PRS-16 integrated pneumatology; PRS-02 faithful improvisation); traditions/rohr/wiki.md (first-half-of-life ego)"
   - "master/cross_program_index.md (CROSS-003 attention cluster)"
 evidence_strength_summary: "Habituation-to-pleasure as runaway precision = formal/speculative; broaden-and-build downward spiral = empirical/medium-high; gift of fortitude = theological."
 mind_first_reframe: "Softness and pertinacity are the two precision pathologies of a self-regulating agent — under-weighting the goal-prior (yielding to gentle pressure) and over-weighting the self-prior (clinging past reason) — and the gift of fortitude is firmness supplied from beyond the agent's own resources."
 central_theme_thread: "Softness is what it looks like when an individuated agent's perspective collapses to its immediate resources and loses the whole; the cure is not more grit but a gift from one who sees and wills more than the limited frame can — 'fear and trembling' read from the side of our insufficiency."
 tags: [synthesis, day/187, theme/regulatory-failure]
-last_qc_at: "2026-08-13T04:22:29"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-24T10:33:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 187 — Softness (Contemporary Parallel)
@@ -57,8 +57,8 @@ Softness is what it looks like when an individuated agent's perspective collapse
 - **Habituation-to-pleasure ↔ runaway precision on appetitive priors** — the Friston-tradition wiki, PRS-04. *Why:* gives a mechanism for Aquinas's "custom makes the absence unbearable" without invoking weakness-of-will as a primitive. Evidence: **formal, speculative**.
 - **Downward spiral ↔ softness** — the Fredrickson-tradition wiki, PRS-01 + broaden-and-build track record. *Why:* the affective mirror of broaden-and-build; narrowing attention erodes durable resources. Evidence: **empirical, medium-high**.
 - **Attention as ontological act ↔ softness as attentional failure** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* the soft agent lets the fragment fill the field and loses the whole. Evidence: **phenomenological, medium**.
-- **Vainglory as misvalued attestation ↔ pertinacity** — the Stump-tradition wiki. *Why:* over-weighting the self-prior is a *relational* distortion, not just a stuck posterior. Evidence: **philosophical/theological**.
-- **Gift of fortitude ↔ empowerment from beyond the frame** — the Wright-tradition wiki (Spirit, faithful improvisation). *Why:* courage for goods the perspective cannot yet see. Evidence: **theological**.
+- **Vainglory as misvalued attestation ↔ pertinacity** — *PRS-22 in `traditions/stump/prs_triplets.md`* (the seven deadly sins as a structured typology of disordered will, each sin pivoting around a specific real good — *pleasure, esteem, possession* — misordered in object, manner, or measure relative to the agent's final end; Confidence Medium). *Why:* the entry names **esteem** as the real good vainglory misorders, which is precisely this bullet's claim — over-weighting the self-prior is a *relational* distortion of a genuine good, not just a stuck posterior. This is the same anchor Day 070 uses for willed evil, and it holds here for the same reason: the register treats vice as a predictable failure mode of an intellect-will system oriented toward goods that are themselves real. Evidence: **philosophical/theological**; the record carries it at Medium, and this bullet does not upgrade it.
+- **Gift of fortitude ↔ empowerment from beyond the frame** — *PRS-16 in `traditions/wright/prs_triplets.md`* (a pneumatology that integrates the cosmic-immanence and personal-indwelling readings of the Spirit rather than choosing between them; Confidence High), with *PRS-02* in the same file (faithful improvisation; Confidence High). *Why:* "empowerment from beyond the frame" needs the indwelling half of PRS-16 to be more than metaphor, and PRS-02 is what keeps the resulting courage answerable to the tradition rather than free-floating — courage for goods the perspective cannot yet see, exercised without a script. Evidence: **theological**.
 
 ## Where this leaves us
 

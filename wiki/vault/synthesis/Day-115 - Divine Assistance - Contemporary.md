@@ -4,16 +4,16 @@ title: Divine Assistance (Contemporary)
 pairs_with: "[[Day-115 - Divine Assistance]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 2374
-length_ratio_to_target: 1.583
-length_note: "Below long target (2400/3000, ratio 0.80, within ±25%) but substantively complete: long-tier capstone covering Q.108 (close of the law) and Q.109 (necessity of grace, the section's central-theme keystone); picks the generative threads rather than mirroring every article, per length policy. No padding warranted."
+length_actual_words: 2836
+length_ratio_to_target: 1.891
+length_note: "Recounted 2026-08-24 after five Bridges bullets were anchored; 2374 -> 2836, and every added word is a file path, a PRS id, or the register content justifying it. No claim was added, removed or reweighted. THE PRIOR NOTE WAS INTERNALLY CONTRADICTORY AND IS RETIRED: it reasoned against a LONG target (3000) while the frontmatter fields declared short/1500, so the file simultaneously claimed 0.80 and 1.583. Only one of those was ever a statement about this file. ESCALATED, NOT REWRITTEN — the tier is wrong and the cause is now identified: this day sits in the recorded 32-69% transcript length-drift band (Days 2, 66-70, 77-85, 92-100, 106-115), so its cleaned word_count of 1495 is a suppressed measurement of a 4600-word episode. The policy table applied to 1495 returns SHORT; applied to the raw ASR it returns LONG. Post-anchor the file reads 1.891 against short and 0.945 against long — inside +/-10% of the tier the actual episode selects. See the 2026-08-24 QC-log FINDING row: the tier is biased DOWN on 26 of 307 days, all in one direction. Tom's call; do not pad and do not trim."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (morphogenetic field; pattern as cause; resource-bounded development)"
-  - "wiki/traditions/friston/wiki.md (active inference; resource-bounded agency)"
-  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; dissociated alters within mind-at-large)"
-  - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific perspective)"
-  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric integration)"
-  - "wiki/traditions/fredrickson/wiki.md (broaden-and-build; intrinsic motivation under grace)"
+  - "traditions/levin/prs_triplets.md (PRS-01 bioelectric encoding of anatomical target states; PRS-03 morphological attractor formalism)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; dissociated alters within mind-at-large)"
+  - "traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception; fitness-payoff replaces truth-tracking)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 right primary / left parasitic; PRS-07 division and union as creative synthesis)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-34 the capacity-to-be-built deficit; Speculative, does not test resource-building)"
   - "wiki/master/C2A2_master_wiki.md (master integration on grace-and-nature relation)"
   - "Wright, Paul and the Faithfulness of God (justification by faith; covenant inclusion)"
   - "Wright, Surprised by Hope (salvation as new-creation participation)"
@@ -22,7 +22,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Grace is the operation of mind-at-large in the agent — imported prior-update, value-interface recalibration, master-hemisphere integration, morphogenetic field-restoration — by which a perspective-limited agent's resources are proportioned to a supernatural target it could not generate from within."
 central_theme_thread: "The loving-unity computational task exceeds the proportion of any limited perspective's resources; grace is the structural answer to how perspective-limited agents nevertheless reach a target their own resources cannot reach, through cooperative receptivity rather than self-generation."
 evidence_strength_summary: "Empirical: developmental psychology, self-determination theory, active inference under bounded resources, McGilchrist's hemispheric work, Fredrickson's broaden-and-build, Levin's morphogenetic dynamics. Formal: active inference, generative-model bootstrapping problems. Theological: Pauline soteriology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Catholic grace-theology."
-last_qc_at: "2026-08-17T18:30:40"
+last_qc_at: "2026-08-24T08:24:20"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/115, theme/grace-necessity, theme/perspective-limitation, theme/loving-unity-as-telos]
 ---
@@ -114,12 +114,12 @@ The differences from Aquinas are not in the structural claim but in the *backgro
 
 ## Bridges
 
-- **Levin (traditions/levin/wiki.md — morphogenetic field, pattern as cause)**: morphogenetic-field pattern-restoration as analog of grace as pattern-restoration. *Empirical / metaphysical*.
-- **Kastrup PRS-02 (traditions/kastrup/prs_triplets.md — individual identity within monism; the alter as a dissociated point of view within a single consciousness)**: grace as operation of mind-at-large re-integrating the alter; not an exotic addition. *Metaphysical*.
-- **Hoffman (traditions/hoffman/wiki.md — interface theory)**: grace as recalibration of the value-interface. *Formal / interpretive*.
-- **Friston (traditions/friston/wiki.md — active inference, bootstrapping limit)**: grace as imported prior-update; the proportion-argument formalized. *Formal; interpretive as an account of grace*.
-- **McGilchrist (traditions/mcgilchrist/wiki.md — hemispheric integration)**: grace as integrated right-master / left-servant operation. *Empirical/interpretive*.
-- **Fredrickson (traditions/fredrickson/wiki.md — broaden-and-build)**: grace as the positive-affect dynamic that broadens behavior toward love. *Empirical*.
+- **Levin PRS-01 + PRS-03** (`traditions/levin/prs_triplets.md` — bioelectric circuits encode anatomical *target states*, membrane voltage as morphogenetic memory; and the morphological-attractor formalism modelling morphogenetic goal-seeking as free-energy minimisation). *Empirical and formal, both Confidence High.* Together these carry the day's structural claim exactly: PRS-01 supplies a target state stored independently of the tissue's current condition — which is why an impoverished system can still have an intact target it cannot reach — and PRS-03 supplies the attractor language in which "cannot reach it from within" is a statement about basins rather than a metaphor. *(Note on id selection: PRS-04, the register's cognition-substrate entry, is a recorded vault-wide catch-all and is deliberately not used here.)*
+- **Kastrup PRS-02** (`traditions/kastrup/prs_triplets.md` — the universe as a single undivided consciousness experiencing multiple dissociated points of view, with individuality preserved as mental constructs arising from the dissociation process). *Metaphysical, Confidence High.* Verified exact: grace as the operation of mind-at-large re-integrating the alter, not an exotic addition.
+- **Hoffman PRS-03** (`traditions/hoffman/prs_triplets.md` — Interface Theory of Perception; fitness-payoff functions replace truth-tracking, with a proof that natural selection drives true perception to extinction). *Formal, Confidence High.* This is what makes Q.109 a.5's proportion-argument translatable rather than merely analogous: if the interface is *constitutively* fitness-tuned and not truth-tuned, then no amount of operating the interface better gets the agent to the deeper level, and recalibration must come from outside the interface.
+- **Friston PRS-04 + PRS-06** (`traditions/friston/prs_triplets.md` — the organism as a continuous hypothesis-testing system that generates, tests and updates predictions; and multi-agent coherence via mutual modelling). *Formal, both Confidence Medium.* **PRS-06 is the load-bearing one and it was the unanchored bullet's real home:** its Solution line has agents coupling through mutual informational alignment, each reducing prediction error in the other's behaviour, and names *love* as the mechanism by which agents synchronise models and become a coherent collective agent. That is the imported-prior account of grace with the importing agent specified, and it is this project's central theme stated inside the Friston register.
+- **McGilchrist PRS-01 + PRS-07** (`traditions/mcgilchrist/prs_triplets.md` — the right hemisphere as primary and the left as parasitic on what the right first discloses; and division-and-union as creative synthesis, where true synthesis is union at a higher level, a third thing neither hemisphere could produce alone). *Empirical and philosophical, both Confidence High.* PRS-01 is the master/emissary primacy the paragraph above asserts; PRS-07 is the *integration* claim, and it is the better anchor for grace-and-nature, since its Solution line is not the elimination of analysis but the restoration of its proper subordination to integrating attention.
+- **Fredrickson PRS-34** (`traditions/fredrickson/prs_triplets.md` — broaden-and-build has had no account of why the *capacity to be built* should itself decline; the allostatic-interoceptive system as candidate mediator, so that degradation of that machinery means the less a favourable moment can do). *Speculative — and the entry's own Evidence line is carried: the paper reports the loneliness-by-age connectivity interaction only, does NOT test resource-building, and does NOT test an upward or downward spiral.* **This anchors the day's deficit, not the day's remedy**, and that is the honest placement: it is a candidate mechanism for a self-sustaining impoverishment in which the agent's capacity to convert a favourable input into durable resource is itself what has degraded — the bootstrapping problem in its bleakest empirical form. The claim that grace supplies the broadening dynamic is not what this entry says.
 - **Wright, *Paul and the Faithfulness of God***: justification by faith; covenant inclusion; the indwelling Spirit. *Exegetical/theological*.
 - **Wright, *Surprised by Hope***: salvation as participation in new creation. *Exegetical/theological*.
 - **Rohr, *Falling Upward***: grace and the second-half of life. *Developmental-spiritual*.

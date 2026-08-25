@@ -15,14 +15,14 @@ karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 — perception as fitness-tracking; the interface)"
   - "traditions/levin/wiki.md (multiscale agency)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 — individual identity within monism)"
-  - "master/cross_program_index.md (CROSS-005 love-as-real; CROSS-008 final-causality bridge)"
+  - "master/cross_program_index.md (CROSS-005 love-as-real; CROSS-008 shared rejection of isolated individualism about the unit of explanation — the original final-causality-bridge formulation was withdrawn upstream 2026-08-10 and is not relied on here)"
   - "Wright canonical: Paul and the Faithfulness of God; Surprised by Hope"
   - "Rohr canonical: The Universal Christ; Falling Upward"
 evidence_strength_summary: "Merit as recursive divine self-gift: theological. Charity as form of merit + Fredrickson positivity resonance: empirical biology (high) + speculative bridge to metaphysical 'form.' Collective merit via Stump's collective hylomorphism: speculative philosophical (medium). Faith's formal object as First Truth read through interface theory: formal-philosophical (medium)."
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-08-11T08:24:06"
+last_qc_at: "2026-08-23T22:29:18"
 last_qc_outcome: "rewrote"
 ---
 
