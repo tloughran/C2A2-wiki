@@ -775,7 +775,10 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         <label style="cursor:pointer;" title="What the depth axis encodes. 'Metabolic layer' is the control -- guaranteed non-degenerate, so it isolates whether the MECHANISM reads from whether the variable does.">Z:
           <select id="lift-var" onchange="LiftProbe.variable(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
             <option value="off" selected>off</option>
-            <option value="bridge_raw">Traditions reached</option>
+            <option value="bridge_raw">Traditions reached (any edge)</option>
+            <option value="bridge_authored">&nbsp;&nbsp;via wikilink (asserted)</option>
+            <option value="bridge_mention">&nbsp;&nbsp;via mention (inferred)</option>
+            <option value="bridge_reference">&nbsp;&nbsp;via reference (inferred)</option>
             <option value="bridge_density">Traditions / degree</option>
             <option value="cross_fraction">Cross-edge fraction</option>
             <option value="layer">Metabolic layer (control)</option>
@@ -2306,6 +2309,39 @@ function _liftTraditionsOf(i, A) {
   return count;
 }
 
+// Traditions reached in one hop, counting ONLY edges of one type. This splits
+// the raw count into what somebody ASSERTED and what the pipeline INFERRED.
+//
+// Measured 2026-08-24 over the 124,895-edge build: reference 109,836 (88%),
+// mention 9,622 (7.7%), wikilink 1,348 (1.1%), untyped 4,089. Of the 2,149
+// nodes that reach any tradition at all, exactly 30 do so through an authored
+// wikilink. So bridge_authored is EXPECTED to trip the degeneracy gate below.
+// That is the finding -- the connective tissue this graph draws is almost
+// entirely inferred -- not a failure of the probe.
+function _liftTradsOfType(want) {
+  var byId = {};
+  NODES.forEach(function(nd, i) { byId[nd.id] = i; });
+  var resolve = function(v) {
+    if (typeof v === 'number') return (v >= 0 && v < NODES.length) ? v : null;
+    if (v && typeof v === 'object') { var r = byId[v.id]; return (r === undefined) ? null : r; }
+    var s = byId[v];
+    return (s === undefined) ? null : s;
+  };
+  var seen = NODES.map(function() { return {}; });
+  LINKS.forEach(function(l) {
+    if (l.type !== want) return;
+    var s = resolve(l.source), t = resolve(l.target);
+    if (s === null || t === null) return;
+    var mark = function(from, to) {
+      var g = NODES[to].group || '';
+      if (g.indexOf('traditions/') !== 0) return;
+      seen[from][g.split('/')[1]] = 1;
+    };
+    mark(s, t); mark(t, s);
+  });
+  return NODES.map(function(nd, i) { return Object.keys(seen[i]).length; });
+}
+
 // --- Z EXTRACTORS -------------------------------------------------------
 // Each returns an array of raw numbers, one per node, in NODES order.
 
@@ -2316,6 +2352,13 @@ var LIFT_VARS = {
     var A = _liftAdjacency();
     return NODES.map(function(nd, i) { return _liftTraditionsOf(i, A); });
   },
+
+  // The same count restricted to ONE edge type. bridge_raw is their union, so
+  // these three decompose it: if raw and reference look identical, raw is just
+  // the reference graph wearing a different name.
+  bridge_authored: function() { return _liftTradsOfType('wikilink'); },
+  bridge_mention:  function() { return _liftTradsOfType('mention'); },
+  bridge_reference: function() { return _liftTradsOfType('reference'); },
 
   // Corrects the registry bias, introduces a small-denominator one.
   bridge_density: function() {
