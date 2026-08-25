@@ -15,7 +15,7 @@ import os
 import re
 import subprocess
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -595,22 +595,118 @@ def _bridge_class(source_fp, target_fp):
     return "same" if s_cat == t_cat else "cross"
 
 
-def build_connections(files):
-    name_to_path = {}
+# Alternate spellings a human might bracket. Keys resolve through THINKER_PATHS,
+# so this table only has to carry forms that are NOT the bare surname.
+THINKER_ALIASES = {
+    "Karl Friston": "Friston",
+    "Michael Levin": "Levin",
+    "Donald Hoffman": "Hoffman",
+    "Bernardo Kastrup": "Kastrup",
+    "Iain McGilchrist": "McGilchrist",
+    "Jeff Hawkins": "Hawkins",
+    "Stephen Wolfram": "Wolfram",
+    "Steven Wolfram": "Wolfram",
+    "Sean Carroll": "Carroll",
+    "Nima Arkani-Hamed": "Arkani-Hamed",
+    "Barbara Fredrickson": "Fredrickson",
+    "Eleonore Stump": "Stump",
+    "Richard Rohr": "Rohr",
+    "N.T. Wright": "Wright",
+    "NT Wright": "Wright",
+    "Alasdair MacIntyre": "MacIntyre",
+    "Tom Loughran": "Loughran",
+    "Thomas Loughran": "Loughran",
+}
+
+
+def _make_link_resolver(files):
+    """Resolve the inner text of a [[wikilink]] to a vault filepath, or None.
+
+    The shipped resolver was name_to_path[stem], first-wins, looked up against the
+    RAW inner text. Measured 2026-08-24 on a 3,800-file vault, that silently dropped
+    317 of 776 unique (file, link) pairs -- 41% of every wikilink in the vault -- in
+    three distinct ways:
+
+      1. PATH-QUALIFIED links never resolved. [[traditions/friston/wiki|Friston]]
+         was looked up as the literal string "traditions/friston/wiki", which
+         matches no stem. 96 dropped.
+      2. SURNAME links never resolved. [[Kastrup]], [[Friston]], [[Levin]] --
+         127 occurrences -- even though THINKER_PATHS already holds exactly that
+         mapping and the MENTION path already uses it. A bracketed surname is an
+         authored assertion, not a prose mention.
+      3. STEM COLLISIONS misrouted silently. 304 stems shadow 374 files; `wiki`
+         and `prs_triplets` collide FIFTEEN ways each.
+
+    DO NOT "fix" case 1 by stripping a path-qualified link to its stem. That makes
+    all fifteen [[traditions/X/wiki]] links resolve to traditions/arkanihamed/wiki.md
+    -- first alphabetically -- converting a silent DROP into a silent fifteen-way
+    MISROUTE, which is strictly worse. Ambiguity must REFUSE, not guess.
+    test_wikilink_resolver.py asserts exactly that and will fail if this is undone.
+
+    Order, each step narrower than a bare stem lookup:
+        exact relpath -> exact relpath + ".md" -> thinker name -> UNIQUE stem -> None
+    """
+    by_relpath = {f["filepath"] for f in files}
+    by_stem = defaultdict(list)
     for f in files:
-        stem = Path(f["filename"]).stem
-        if stem not in name_to_path:
-            name_to_path[stem] = f["filepath"]
+        by_stem[Path(f["filename"]).stem].append(f["filepath"])
+    stats = Counter()
+
+    def resolve(link):
+        # Drop any #heading anchor; the alias after | is already stripped by the
+        # extract_wikilinks regex.
+        text = link.split("#", 1)[0].strip()
+        if not text:
+            stats["empty"] += 1
+            return None
+        for cand in (text, text + ".md"):
+            if cand in by_relpath:
+                stats["exact_path"] += 1
+                return cand
+        thinker = THINKER_PATHS.get(THINKER_ALIASES.get(text, text))
+        if thinker and thinker in by_relpath:
+            stats["thinker_name"] += 1
+            return thinker
+        if "/" in text:
+            # A path was given and no such file exists. Falling through to a stem
+            # lookup here is the misroute described above.
+            stats["path_no_such_file"] += 1
+            return None
+        hits = by_stem.get(text)
+        if not hits:
+            stats["no_such_stem"] += 1
+            return None
+        if len(hits) > 1:
+            stats["ambiguous_stem"] += 1
+            return None
+        stats["unique_stem"] += 1
+        return hits[0]
+
+    return resolve, stats
+
+
+def build_connections(files):
+    resolve_link, LINK_RESOLVE_STATS = _make_link_resolver(files)
     wikilink_edges = []
+    # (source, target) pairs carried by an AUTHORED link. Used below to stop a
+    # bracketed [[Kastrup]] from also firing a thinker-mention edge for the same
+    # pair -- the surname matches both paths, and double-counting it would let one
+    # authored act contribute at type_w 3.0 AND 2.0.
+    authored_pairs = set()
     for f in files:
         for link in f["wikilinks"]:
-            target = name_to_path.get(link)
-            if target:
+            target = resolve_link(link)
+            # Self-targets are new with thinker-name resolution: traditions/levin/
+            # wiki.md contains [[Levin]], which now resolves to itself. A self-loop
+            # is meaningless under the force layout.
+            if target and target != f["filepath"]:
                 wikilink_edges.append({
                     "source": f["filepath"], "target": target,
                     "type": "wikilink",
                     "bridge": _bridge_class(f["filepath"], target),
                 })
+                authored_pairs.add((f["filepath"], target))
+    sys.stderr.write("wikilink resolution: %s\n" % dict(sorted(LINK_RESOLVE_STATS.items())))
 
     fp_set = {f["filepath"] for f in files}
 
@@ -710,6 +806,9 @@ def build_connections(files):
             # itself when it mentions "Levin"; don't connect levin/prs_triplets.md
             # to levin/wiki.md as a mention — sibling edge handles that).
             if src_trad and src_trad == tgt_trad:
+                continue
+            if (f["filepath"], target) in authored_pairs:
+                # An authored [[Surname]] already carries this pair at type_w 3.0.
                 continue
             mention_edges.append({
                 "source": f["filepath"], "target": target,
