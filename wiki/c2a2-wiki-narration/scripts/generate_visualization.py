@@ -2203,8 +2203,8 @@ function hideTooltip() {
 // little further from its own solution every time the guide opened its mouth,
 // and nothing would ever put it back. Displacement is a fact about the paint,
 // not about the layout, and this is where that distinction is enforced.
-function wpx(d) { return d.x + (d._wx || 0); }
-function wpy(d) { return d.y + (d._wy || 0); }
+function wpx(d) { return d.x + (d._wx || 0) + (d._lx || 0); }
+function wpy(d) { return d.y + (d._wy || 0) + (d._ly || 0); }
 function paintPositions() {
   // linkSel is the live budget-joined selection owned by applyEdgeFilters.
   if (linkSel) {
@@ -2217,6 +2217,227 @@ function paintPositions() {
     nodeSel.attr('cx', wpx).attr('cy', wpy);
   }
 }
+
+// -- LIFT PROBE (temporary; delete when the Z question is settled) --
+//
+// Encodes a third variable as OSCILLATING FAKE DEPTH in the existing 2D SVG.
+// No WebGL, no simulation changes, no pipeline changes.
+//
+// Why oscillate rather than hold: nodes sharing a Z value rise and fall
+// together, and common fate (Gestalt) makes strata pop out perceptually without
+// ever holding a static 3D scene the viewer has to parse.
+//
+// Depth cue is PARALLAX ONLY by default -- displacement away from / toward the
+// viewport centre, proportional to distance from it, which is what perspective
+// does. Size and brightness are stronger cues but collide with syncGraphToDate()
+// and setBrightness(), which own r and opacity; they are opt-in via
+// LiftProbe.cues(true), and the date slider must not be dragged while on.
+
+var LIFT_PERIOD   = 6000;   // ms for a full down-up-down breath
+var LIFT_PARALLAX = 0.22;   // peak radial displacement as a fraction of the
+                            // node's distance from centre
+var LIFT_RMIN     = 0.72;   // radius multiplier at the far plane (cues mode)
+var LIFT_RMAX     = 1.35;   // radius multiplier at the near plane (cues mode)
+
+var _liftRAF = null;
+var _liftT0 = 0;
+var _liftCues = false;
+
+// Link endpoints are INTEGER INDICES into NODES as generated; d3 rewrites them
+// to object refs once the simulation runs. Resolve all three forms or every
+// node reads as degree 0 -- this bit me on the first draft.
+function _liftAdjacency() {
+  var byId = {};
+  NODES.forEach(function(nd, i) { byId[nd.id] = i; });
+  var resolve = function(v) {
+    if (typeof v === 'number') return (v >= 0 && v < NODES.length) ? v : null;
+    if (v && typeof v === 'object') { var r = byId[v.id]; return (r === undefined) ? null : r; }
+    var s = byId[v];
+    return (s === undefined) ? null : s;
+  };
+  var adj = [], crossN = [], degE = [];
+  for (var i = 0; i < NODES.length; i++) { adj.push({}); crossN.push(0); degE.push(0); }
+  LINKS.forEach(function(l) {
+    var s = resolve(l.source), t = resolve(l.target);
+    if (s === null || t === null) return;
+    adj[s][t] = 1; adj[t][s] = 1;
+    degE[s]++; degE[t]++;
+    if (l.bridge === 'cross') { crossN[s]++; crossN[t]++; }
+  });
+  return { adj: adj, crossN: crossN, degE: degE };
+}
+
+function _liftTraditionsOf(i, A) {
+  var seen = {}, count = 0;
+  Object.keys(A.adj[i]).forEach(function(k) {
+    var g = NODES[+k].group || '';
+    if (g.indexOf('traditions/') !== 0) return;
+    var key = g.split('/')[1];
+    if (!seen[key]) { seen[key] = 1; count++; }
+  });
+  return count;
+}
+
+// --- Z EXTRACTORS -------------------------------------------------------
+// Each returns an array of raw numbers, one per node, in NODES order.
+
+var LIFT_VARS = {
+
+  // Rich (48.4% nonzero, 16 levels) but its ceiling is registry files.
+  bridge_raw: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) { return _liftTraditionsOf(i, A); });
+  },
+
+  // Corrects the registry bias, introduces a small-denominator one.
+  bridge_density: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) {
+      var deg = Object.keys(A.adj[i]).length;
+      return deg ? _liftTraditionsOf(i, A) / deg : 0;
+    });
+  },
+
+  // Same shape as density, but the numerator is the generator's own
+  // cross/same edge classification rather than ours.
+  cross_fraction: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) {
+      return A.degE[i] ? A.crossN[i] / A.degE[i] : 0;
+    });
+  },
+
+  // Metabolic layer: raw intake at the floor, synthesis at the ceiling.
+  // The CONTROL -- guaranteed non-degenerate, so it isolates whether the
+  // oscillating-lift MECHANISM reads, separately from whether bridging does.
+  layer: function() {
+    var RANK = {
+      inbox: 0, flags: 1, review: 2, sessions: 2, deferred: 2,
+      root: 3, architecture: 4, agents: 5, 'agent-activity': 5,
+      summa: 6, master: 8
+    };
+    return NODES.map(function(nd) {
+      var g = nd.group || '';
+      if (g.indexOf('traditions/') === 0) return 7;
+      var r = RANK[g];
+      return (r === undefined) ? 3 : r;
+    });
+  }
+
+};
+
+// --- INDEX + SELF-DIAGNOSIS ---------------------------------------------
+
+function _liftIndex(varName) {
+  var make = LIFT_VARS[varName];
+  if (!make) {
+    console.warn('[lift] unknown variable: ' + varName +
+                 '. Options: ' + Object.keys(LIFT_VARS).join(', '));
+    return false;
+  }
+  var raws = make();
+  var lo = Infinity, hi = -Infinity;
+  raws.forEach(function(v) {
+    if (typeof v !== 'number' || !isFinite(v)) v = 0;
+    if (v < lo) lo = v;
+    if (v > hi) hi = v;
+  });
+  var span = (hi - lo) || 1;
+  var levels = {}, offFloor = 0;
+  NODES.forEach(function(nd, i) {
+    var v = raws[i];
+    if (typeof v !== 'number' || !isFinite(v)) v = 0;
+    nd._lz = (v - lo) / span;    // normalised depth, 0 = far, 1 = near
+    nd._lzRaw = v;
+    levels[v] = 1;
+    if (v > lo) offFloor++;
+  });
+  var nLevels = Object.keys(levels).length;
+  var pct = 100 * offFloor / NODES.length;
+  console.log('[lift] variable=' + varName + '  range=' + lo + '..' + hi +
+              '  levels=' + nLevels + '  off-floor=' + pct.toFixed(1) + '%');
+  if (nLevels < 3 || pct < 5) {
+    console.warn('[lift] DEGENERATE -- fails the >=5% / >=3-levels gate. Do not ' +
+                 'conclude the variable is unreadable; conclude this BUILD cannot ' +
+                 'answer it.');
+  }
+  return true;
+}
+
+// --- ANIMATION ----------------------------------------------------------
+
+function _liftApply(t) {
+  var svg = document.getElementById('graph');
+  var cx = (svg ? svg.clientWidth : window.innerWidth) / 2;
+  var cy = (svg ? svg.clientHeight : window.innerHeight) / 2;
+  NODES.forEach(function(nd) {
+    if (nd.x === undefined) return;
+    var lz = (nd._lz === undefined) ? 0.5 : nd._lz;
+    var k = LIFT_PARALLAX * t * (lz - 0.5) * 2;
+    nd._lx = (nd.x - cx) * k;
+    nd._ly = (nd.y - cy) * k;
+  });
+  paintPositions();
+  if (_liftCues && nodeSel) {
+    nodeSel.attr('r', function(d) {
+      var lz = (d._lz === undefined) ? 0.5 : d._lz;
+      var m = LIFT_RMIN + (LIFT_RMAX - LIFT_RMIN) * (0.5 + (lz - 0.5) * t * 2);
+      return d.size * m;
+    }).attr('opacity', function(d) {
+      if (!groupVisibility[d.group]) return 0;
+      var lz = (d._lz === undefined) ? 0.5 : d._lz;
+      return Math.min(brightness * (0.45 + 0.55 * (0.5 + (lz - 0.5) * t * 2)), 1);
+    });
+  }
+}
+
+function _liftTick(ts) {
+  if (!_liftT0) _liftT0 = ts;
+  var phase = ((ts - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD;
+  _liftApply(0.5 - 0.5 * Math.cos(2 * Math.PI * phase));   // smooth 0 -> 1 -> 0
+  _liftRAF = requestAnimationFrame(_liftTick);
+}
+
+var LiftProbe = {
+
+  start: function(varName) {
+    this.stop();
+    if (!_liftIndex(varName || 'bridge_raw')) return;
+    _liftT0 = 0;
+    _liftRAF = requestAnimationFrame(_liftTick);
+    console.log('[lift] running. LiftProbe.stop() to clear, LiftProbe.cues(true) ' +
+                'for size+brightness (do not drag the date slider while on).');
+  },
+
+  stop: function() {
+    if (_liftRAF) cancelAnimationFrame(_liftRAF);
+    _liftRAF = null;
+    NODES.forEach(function(nd) { nd._lx = 0; nd._ly = 0; });
+    if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+    if (typeof brightness !== 'undefined') setBrightness(brightness);
+    paintPositions();
+  },
+
+  cues: function(on) { _liftCues = !!on; if (!on) this.stop(); },
+
+  // Freeze at a chosen point in the breath, for screenshots / close reading.
+  hold: function(t) {
+    if (_liftRAF) { cancelAnimationFrame(_liftRAF); _liftRAF = null; }
+    _liftApply(t);
+  },
+
+  // Top-N by the currently indexed variable -- read the ceiling without
+  // squinting at the picture.
+  top: function(k) {
+    var order = NODES.slice().sort(function(a, b) { return b._lzRaw - a._lzRaw; });
+    order.slice(0, k || 10).forEach(function(nd) {
+      console.log('  ' + nd._lzRaw + '  ' + nd.id + '  [' + nd.group + ']');
+    });
+  }
+
+};
+// -- END LIFT PROBE --
+
 
 // ── VOICE WAVE ──
 //
