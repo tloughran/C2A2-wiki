@@ -201,7 +201,12 @@ def build_graph_data(data, agent_data=None):
         deg_s = conn_count.get(s, 0)
         deg_t = conn_count.get(t, 0)
         deg = math.log(deg_s + 1) + math.log(deg_t + 1)
-        type_w = {'wikilink': 3.0, 'mention': 2.0, 'reference': 1.0}.get(etype, 1.0)
+        # signal=4 sits ABOVE wikilink deliberately. It is the only edge type
+        # carrying a dated, weighted judgement with prose behind it; every other
+        # type is an artefact of string co-occurrence or a bare bracket. 1,156
+        # signal edges against ~290,000 are invisible at any lower rank -- adding
+        # the data is not the same as being able to see it.
+        type_w = {'signal': 4.0, 'wikilink': 3.0, 'mention': 2.0, 'reference': 1.0}.get(etype, 1.0)
         bridge_w = 1.0 if bridge == 'cross' else 0.0
         return {'deg': round(deg, 3), 'type': type_w, 'bridge': bridge_w}
 
@@ -212,7 +217,7 @@ def build_graph_data(data, agent_data=None):
     # bridge when the source edge dict didn't carry it).
     fp_to_dir = {f['filepath']: f.get('directory', '') for f in files}
 
-    def _emit(s, t, etype, base_bridge=None, reference=None):
+    def _emit(s, t, etype, base_bridge=None, reference=None, extra=None):
         if s not in filepath_set or t not in filepath_set:
             return
         key = (s, t) if s < t else (t, s)
@@ -229,8 +234,28 @@ def build_graph_data(data, agent_data=None):
         }
         if reference:
             edge['reference'] = reference
+        if extra:
+            edge.update(extra)
         links.append(edge)
 
+    # Signal edges are emitted FIRST and that ordering is load-bearing. _emit()
+    # dedupes on the unordered endpoint pair, first type wins -- and 1,096 of the
+    # 1,156 signal pairs ALREADY exist as thinker-mention edges, because a card
+    # that asserts "Levin resonates with McGilchrist" also merely mentions both
+    # surnames. Emitted last, 95% of the asserted layer would vanish into the
+    # inferred one with nothing thrown. Emitted first, the pair keeps the
+    # stronger provenance: someone judged this, on a date, with prose.
+    signal_edges = connections.get('signal_edges', [])
+    for e in signal_edges:
+        _emit(e['source'], e['target'], 'signal', e.get('bridge'), extra={
+            'weight': e.get('weight'),
+            'strength': e.get('strength'),
+            'sig_date': e.get('date'),
+            'sig_text': e.get('text'),
+            'card': e.get('card'),
+            'home': e.get('home'),
+            'n_sig': e.get('count'),
+        })
     for e in wikilink_edges:
         _emit(e['source'], e['target'], 'wikilink', e.get('bridge'))
     for e in mention_edges:
@@ -768,6 +793,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
           <button id="btn-edges-help" onclick="toggleEdgesHelp(event)" style="margin-left:auto;width:16px;height:16px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:10px;font-weight:600;cursor:pointer;padding:0;line-height:14px;text-align:center;" title="How the Edges filters work">?</button>
         </h3>
         <div style="font-size:10px;color:#888;margin:2px 0 2px 4px;">By type — color</div>
+        <div class="filter-item"><input type="checkbox" id="chk-edge-signal" checked onchange="toggleEdgeType('signal', this.checked)"><span class="filter-dot" style="background:#E08A5B"></span><span class="filter-label">Signal (asserted)</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-wikilink" checked onchange="toggleEdgeType('wikilink', this.checked)"><span class="filter-dot" style="background:#C9A84C"></span><span class="filter-label">Wikilink</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-mention" checked onchange="toggleEdgeType('mention', this.checked)"><span class="filter-dot" style="background:#5B9A8B"></span><span class="filter-label">Mention</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-reference" checked onchange="toggleEdgeType('reference', this.checked)"><span class="filter-dot" style="background:#5A6878"></span><span class="filter-label">Reference</span></div>
@@ -1038,11 +1064,12 @@ var nodeById = {};
 // ── EDGE COLOR KEY (B-with-twist) ──
 // type → color, bridge → line style. Both dimensions cut by checkbox AND-composed.
 var EDGE_COLOR = {
+  signal:    '#E08A5B',  // amber -- an ASSERTED cross-tradition relation (Level-2)
   wikilink:  '#C9A84C',  // gold — explicit editorial intent
   mention:   '#5B9A8B',  // sage — narrative bridge (architecture prose names a thinker)
   reference: '#5A6878',  // slate — co-citation of a shared ID (DECISION-NNN, FINDING-NNN, …)
 };
-var showEdgeType   = { wikilink: true, mention: true, reference: true };
+var showEdgeType   = { signal: true, wikilink: true, mention: true, reference: true };
 var showEdgeBridge = { cross: true, same: true };
 
 // ── AGENT EDGE LAYERS (OpenStory) ──
@@ -1537,7 +1564,7 @@ function toggleSection(section, checked) {
 // ── EDGE FILTER HANDLERS (B-with-twist) ──
 function toggleAllEdges(checked) {
   edgesVisible = checked;
-  ['wikilink','mention','reference'].forEach(function(t) {
+  ['signal','wikilink','mention','reference'].forEach(function(t) {
     showEdgeType[t] = checked;
     var cb = document.getElementById('chk-edge-' + t);
     if (cb) cb.checked = checked;
@@ -1561,7 +1588,7 @@ function toggleEdgeBridge(b, checked) {
 }
 function syncEdgesMaster() {
   var allOn =
-    showEdgeType.wikilink && showEdgeType.mention && showEdgeType.reference &&
+    showEdgeType.signal && showEdgeType.wikilink && showEdgeType.mention && showEdgeType.reference &&
     showEdgeBridge.cross && showEdgeBridge.same;
   edgesVisible = allOn;
   var m = document.getElementById('chk-all-edges');
@@ -1598,7 +1625,7 @@ function applyAgentSociogramPreset() {
   // to re-flood the view with high-scoring wiki hub edges that would out-rank
   // the agent layers under the visibility budget. (Collection stays alive via
   // the anyAgentLayer gate in rebuildGraph.)
-  ['wikilink','mention','reference'].forEach(function(t) {
+  ['signal','wikilink','mention','reference'].forEach(function(t) {
     showEdgeType[t] = false;
     var cb = document.getElementById('chk-edge-' + t);
     if (cb) cb.checked = false;
@@ -1747,6 +1774,13 @@ function applyEdgeFilters() {
                   var ref = d.reference ? ' · ' + escapeHtml(d.reference) : '';
                   metaColor = EDGE_COLOR[d.type || 'reference'] || '#888';
                   metaText = escapeHtml(typeLabel) + ' · ' + escapeHtml(bridgeLabel) + ref;
+                  if (d.type === 'signal') {
+                    metaText = 'asserted signal · ' + escapeHtml(String(d.strength || 'Unlabeled')) +
+                               ' · weight ' + escapeHtml(String(d.weight == null ? '?' : d.weight)) +
+                               (d.sig_date ? ' · ' + escapeHtml(String(d.sig_date)) : '') +
+                               (d.home ? ' · own tradition' : '') +
+                               (d.sig_text ? '<div style="margin-top:3px;color:#bbb;font-style:italic;max-width:320px;white-space:normal;">' + escapeHtml(String(d.sig_text)) + '</div>' : '');
+                  }
                   arrow = ' &#8596; ';
                 }
                 showTooltip(event,
