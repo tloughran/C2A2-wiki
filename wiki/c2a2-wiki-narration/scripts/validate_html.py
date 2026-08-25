@@ -11,7 +11,9 @@ Exit codes:
 import argparse
 import json
 import re
+import os
 import subprocess
+import tempfile
 import sys
 from pathlib import Path
 
@@ -34,13 +36,25 @@ def check_js_syntax(html: str) -> list:
         errors.append("WARNING: No inline JavaScript found in HTML")
         return errors
 
-    tmp = Path('/tmp/_validate_html_js.js')
-    tmp.write_text(js)
-
-    result = subprocess.run(
-        ['node', '--check', str(tmp)],
-        capture_output=True, text=True
-    )
+    # A fixed path under /tmp is not a scratch file, it is a landmine: it
+    # collides between concurrent runs and dies outright wherever /tmp is not
+    # writable by this user, which is where the sandboxed sessions run. When it
+    # died, check 1 did not degrade -- the whole validator crashed, and a build
+    # went unvalidated. Named tempfile, cleaned up, per run.
+    fd, tmp_name = tempfile.mkstemp(prefix='_validate_html_js_', suffix='.js')
+    os.close(fd)
+    tmp = Path(tmp_name)
+    try:
+        tmp.write_text(js)
+        result = subprocess.run(
+            ['node', '--check', str(tmp)],
+            capture_output=True, text=True
+        )
+    finally:
+        try:
+            tmp.unlink()
+        except OSError:
+            pass
     if result.returncode != 0:
         # Extract the specific error line
         stderr = result.stderr.strip()
