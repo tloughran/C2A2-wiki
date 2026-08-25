@@ -775,7 +775,8 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         <label style="cursor:pointer;" title="What the depth axis encodes. 'Metabolic layer' is the control -- guaranteed non-degenerate, so it isolates whether the MECHANISM reads from whether the variable does.">Z:
           <select id="lift-var" onchange="LiftProbe.variable(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
             <option value="off" selected>off</option>
-            <option value="bridge_raw">Traditions reached (any edge)</option>
+            <option value="bridge_signal">Traditions reached (judged)</option>
+            <option value="bridge_raw">Co-citation reach (any edge)</option>
             <option value="bridge_authored">&nbsp;&nbsp;via wikilink (asserted)</option>
             <option value="bridge_mention">&nbsp;&nbsp;via mention (inferred)</option>
             <option value="bridge_reference">&nbsp;&nbsp;via reference (inferred)</option>
@@ -2318,7 +2319,7 @@ function _liftTraditionsOf(i, A) {
 // wikilink. So bridge_authored is EXPECTED to trip the degeneracy gate below.
 // That is the finding -- the connective tissue this graph draws is almost
 // entirely inferred -- not a failure of the probe.
-function _liftTradsOfType(want) {
+function _liftTradsOfType(want, skipHome) {
   var byId = {};
   NODES.forEach(function(nd, i) { byId[nd.id] = i; });
   var resolve = function(v) {
@@ -2330,6 +2331,7 @@ function _liftTradsOfType(want) {
   var seen = NODES.map(function() { return {}; });
   LINKS.forEach(function(l) {
     if (l.type !== want) return;
+    if (skipHome && l.home) return;
     var s = resolve(l.source), t = resolve(l.target);
     if (s === null || t === null) return;
     var mark = function(from, to) {
@@ -2356,6 +2358,18 @@ var LIFT_VARS = {
   // The same count restricted to ONE edge type. bridge_raw is their union, so
   // these three decompose it: if raw and reference look identical, raw is just
   // the reference graph wearing a different name.
+  // The only variable on this list whose edges somebody JUDGED. A Level-2
+  // signal is a dated, weighted, pair-typed assertion with prose behind it, so
+  // this counts traditions a node reaches through an act of judgement rather
+  // than through a shared identifier string. home=true edges are dropped: every
+  // card carries at least one signal naming its own thinker, and reaching your
+  // own tradition is not a reach. Measured on the 2026-08-25 build: 5.5%
+  // off-floor, 8 levels, max 9 -- it clears the gate below by half a point, and
+  // it is sparse ON PURPOSE. Only the 249 proposal cards carry asserted
+  // structure; the flat plain around them is the true state of the vault, not a
+  // defect in the axis.
+  bridge_signal: function() { return _liftTradsOfType('signal', true); },
+
   bridge_authored: function() { return _liftTradsOfType('wikilink'); },
   bridge_mention:  function() { return _liftTradsOfType('mention'); },
   bridge_reference: function() { return _liftTradsOfType('reference'); },
@@ -2473,7 +2487,7 @@ var LiftProbe = {
 
   start: function(varName) {
     this.stop();
-    var v = varName || 'bridge_raw';
+    var v = varName || 'bridge_signal';
     if (!_liftIndex(v)) return;
     var sel = document.getElementById('lift-var');
     if (sel) sel.value = v;
