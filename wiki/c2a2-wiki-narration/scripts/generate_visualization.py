@@ -765,6 +765,33 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </label>
         <span id="date-slider-label" style="color:#888;font-size:10px;min-width:80px;">all dates</span>
       </div>
+      <!-- -- LIFT PROBE UI (temporary; delete with the LiftProbe block) --
+           Marked provisional on purpose: these knobs probe an open question,
+           they are not settled features. Default is "off" -- the probe never
+           runs unless asked for, so the default view is unchanged. -->
+      <span style="width:1px;height:20px;background:#3a3a4a;"></span>
+      <div id="lift-probe-controls" style="display:flex;align-items:center;gap:6px;font-size:11px;padding:1px 6px;border:1px dashed #4a4a5a;border-radius:4px;" title="PROVISIONAL. Encodes a third variable as oscillating depth, testing whether an axis can carry what the plane buries.">
+        <span style="color:#8a8a9a;font-size:10px;letter-spacing:0.04em;">DEPTH&nbsp;&middot;&nbsp;probe</span>
+        <label style="cursor:pointer;" title="What the depth axis encodes. 'Metabolic layer' is the control -- guaranteed non-degenerate, so it isolates whether the MECHANISM reads from whether the variable does.">Z:
+          <select id="lift-var" onchange="LiftProbe.variable(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
+            <option value="off" selected>off</option>
+            <option value="bridge_raw">Traditions reached</option>
+            <option value="bridge_density">Traditions / degree</option>
+            <option value="cross_fraction">Cross-edge fraction</option>
+            <option value="layer">Metabolic layer (control)</option>
+          </select>
+        </label>
+        <label style="cursor:pointer;" title="Peak displacement as a fraction of the node's distance from the viewport centre. 0 collapses to the plane.">Depth
+          <input type="range" id="lift-parallax" min="0" max="0.6" step="0.01" value="0.22" style="width:70px;vertical-align:middle;" oninput="LiftProbe.parallax(this.value)">
+        </label>
+        <label style="cursor:pointer;" title="Seconds for one full down-up-down breath. Common fate is what makes strata separate; how slow it has to be to read is an open question.">Period
+          <input type="range" id="lift-period" min="1" max="20" step="0.5" value="6" style="width:60px;vertical-align:middle;" oninput="LiftProbe.period(this.value)">
+        </label>
+        <label style="display:flex;align-items:center;gap:3px;cursor:pointer;" title="Adds size and brightness to the parallax cue. Stronger, but Brightness and Since own those attributes -- touching either turns this back off.">
+          <input type="checkbox" id="lift-cues" onchange="LiftProbe.cues(this.checked)"> cues
+        </label>
+      </div>
+      <!-- -- END LIFT PROBE UI -- -->
       <button id="btn-settings" onclick="openSettings()">&#9881;</button>
     </div>
   </div>
@@ -2242,6 +2269,7 @@ var LIFT_RMAX     = 1.35;   // radius multiplier at the near plane (cues mode)
 var _liftRAF = null;
 var _liftT0 = 0;
 var _liftCues = false;
+var _liftHeld = null;   // frozen breath position, or null when running/stopped
 
 // Link endpoints are INTEGER INDICES into NODES as generated; d3 rewrites them
 // to object refs once the simulation runs. Resolve all three forms or every
@@ -2402,7 +2430,11 @@ var LiftProbe = {
 
   start: function(varName) {
     this.stop();
-    if (!_liftIndex(varName || 'bridge_raw')) return;
+    var v = varName || 'bridge_raw';
+    if (!_liftIndex(v)) return;
+    var sel = document.getElementById('lift-var');
+    if (sel) sel.value = v;
+    _liftHeld = null;
     _liftT0 = 0;
     _liftRAF = requestAnimationFrame(_liftTick);
     console.log('[lift] running. LiftProbe.stop() to clear, LiftProbe.cues(true) ' +
@@ -2412,17 +2444,29 @@ var LiftProbe = {
   stop: function() {
     if (_liftRAF) cancelAnimationFrame(_liftRAF);
     _liftRAF = null;
+    _liftHeld = null;
     NODES.forEach(function(nd) { nd._lx = 0; nd._ly = 0; });
     if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
     if (typeof brightness !== 'undefined') setBrightness(brightness);
     paintPositions();
   },
 
-  cues: function(on) { _liftCues = !!on; if (!on) this.stop(); },
+  // Turning cues OFF used to stop the whole probe, which made the checkbox
+  // unusable as a checkbox. It now just hands r and opacity back.
+  cues: function(on) {
+    _liftCues = !!on;
+    var box = document.getElementById('lift-cues');
+    if (box) box.checked = _liftCues;
+    if (!_liftCues) {
+      if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+      if (typeof brightness !== 'undefined') setBrightness(brightness);
+    }
+  },
 
   // Freeze at a chosen point in the breath, for screenshots / close reading.
   hold: function(t) {
     if (_liftRAF) { cancelAnimationFrame(_liftRAF); _liftRAF = null; }
+    _liftHeld = t;
     _liftApply(t);
   },
 
@@ -2433,9 +2477,63 @@ var LiftProbe = {
     order.slice(0, k || 10).forEach(function(nd) {
       console.log('  ' + nd._lzRaw + '  ' + nd.id + '  [' + nd.group + ']');
     });
+  },
+
+  // --- PANEL SETTERS ----------------------------------------------------
+  // LIFT_PARALLAX and LIFT_PERIOD stay module globals rather than folding
+  // into this object: they are documented as live console handles and the
+  // fence already guarantees one-excision removal. No new globals are added.
+
+  // 'off' is a real position, not an absence -- it is how you get the 2D
+  // trust anchor back in one click.
+  variable: function(name) {
+    if (!name || name === 'off') {
+      this.stop();
+      console.log('[lift] off');
+      return;
+    }
+    this.start(name);
+  },
+
+  parallax: function(v) {
+    LIFT_PARALLAX = Math.max(0, +v || 0);
+    if (!_liftRAF && _liftHeld !== null) _liftApply(_liftHeld);
+  },
+
+  // Re-anchor the clock so changing the period does not make the breath jump.
+  period: function(sec) {
+    var ms = Math.max(500, (+sec || 6) * 1000);
+    if (_liftRAF && _liftT0) {
+      var now = (window.performance && performance.now) ? performance.now() : _liftT0;
+      var phase = ((now - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD;
+      _liftT0 = now - phase * ms;
+    }
+    LIFT_PERIOD = ms;
   }
 
 };
+
+// Size and brightness cues fight syncGraphToDate() and setBrightness(), which
+// own r and opacity. The earlier note said "do not drag the date slider while
+// cues are on" -- but a control you must remember not to touch is a trap, not a
+// control. Remove the trap instead: whoever owns the attribute wins, and the
+// checkbox unticks itself so the visible state stays true.
+function _liftDropCues(who) {
+  if (!_liftCues) return;
+  _liftCues = false;
+  var box = document.getElementById('lift-cues');
+  if (box) box.checked = false;
+  if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+  console.log('[lift] cues off -- ' + who + ' owns r/opacity');
+}
+if (typeof setBrightness === 'function') {
+  var _liftPrevBrightness = setBrightness;
+  setBrightness = function() { _liftDropCues('Brightness'); return _liftPrevBrightness.apply(this, arguments); };
+}
+if (typeof setDateThreshold === 'function') {
+  var _liftPrevDateThreshold = setDateThreshold;
+  setDateThreshold = function() { _liftDropCues('Since'); return _liftPrevDateThreshold.apply(this, arguments); };
+}
 // -- END LIFT PROBE --
 
 

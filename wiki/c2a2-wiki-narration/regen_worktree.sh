@@ -46,7 +46,13 @@ else
 fi
 
 echo "[regen-wt] validate ..."
-python3 "$S/validate_html.py" "$OUT" --source-data "$VDATA" || true
+# NOT `|| true`. On 2026-08-24 validate_html.py crashed with PermissionError --
+# it writes its extracted JS to a HARDCODED /tmp/_validate_html_js.js, and the
+# file was still owned by a previous sandbox uid -- so the JS-syntax guard
+# silently did not run while the build reported OK. A guard that can vanish
+# without saying so is not a guard.
+VALIDATE_OK=1
+python3 "$S/validate_html.py" "$OUT" --source-data "$VDATA" || VALIDATE_OK=0
 
 NSUMMA=$(grep -o "Contemporary commentary on Summa Question" "$OUT" | wc -l | tr -d ' ')
 [ "$NSUMMA" -eq 0 ] && { echo "[regen-wt] ERROR: 0 Summa nodes — NOT trusting this build." >&2; exit 1; }
@@ -68,6 +74,12 @@ fi
 # The whole point of this worktree: confirm the probe survived into the build.
 grep -q "END LIFT PROBE" "$OUT" && echo "[regen-wt] LiftProbe present in output" \
                                 || { echo "[regen-wt] ERROR: probe missing from output" >&2; exit 1; }
+
+if [ "$VALIDATE_OK" -ne 1 ]; then
+  echo "[regen-wt] ERROR: validate_html.py failed or crashed. The artifact was" >&2
+  echo "[regen-wt]        written, but it is NOT validated. Do not trust it." >&2
+  exit 1
+fi
 
 echo "[regen-wt] OK — $NSUMMA Summa nodes, $NAGENT agent-activity nodes"
 echo "[regen-wt] open: $OUT"
