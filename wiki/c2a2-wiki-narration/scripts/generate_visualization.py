@@ -45,6 +45,15 @@ COLORS = {
     'sessions': '#8A9098',
     'root': '#9A9A9A',
     'tools': '#4E9EA8',
+    # Synthesis bridges — the 66 wiki/synthesis/<a>_<b>_bridge.md essays the
+    # sewing agent has written across 69 tradition-pairs (~50,800 words). Until
+    # now get_group() had no key for the directory, so all 66 fell into the
+    # catch-all 'root' grey alongside ~110 unrelated files and the largest body
+    # of finished cross-tradition prose in the system was invisible as a class.
+    # NB this is NOT the Summa vault's synthesis/ directory: those nodes are
+    # stamped directory='summa' explicitly in parse_summa_vault, so they do not
+    # reach get_group() and are unaffected by this key.
+    'synthesis': '#7FD94F',
     'summa': '#A89B6E',           # parchment — Summa Theologiae companion vault (Pass B)
     # Tradition Index — the sewing-bootstrap hub (traditions/_index.md) linking
     # all 15 tradition wikis. Its own group so it earns a dedicated left-panel
@@ -76,6 +85,7 @@ LABEL_OVERRIDES = {
     'architecture/changelog': 'Changelog',
     'summa':                  'Summa',
     'tradition-index':        'Tradition Index',
+    'synthesis':              'Synthesis bridges',
     # Relabel only — the group key stays 'agents' so nothing downstream
     # (get_group, edges, presets) changes. The 24 agent-definition docs now
     # read as "Agent identity"; the runtime actors live in "Agent activity".
@@ -201,7 +211,12 @@ def build_graph_data(data, agent_data=None):
         deg_s = conn_count.get(s, 0)
         deg_t = conn_count.get(t, 0)
         deg = math.log(deg_s + 1) + math.log(deg_t + 1)
-        type_w = {'wikilink': 3.0, 'mention': 2.0, 'reference': 1.0}.get(etype, 1.0)
+        # signal=4 sits ABOVE wikilink deliberately. It is the only edge type
+        # carrying a dated, weighted judgement with prose behind it; every other
+        # type is an artefact of string co-occurrence or a bare bracket. 1,156
+        # signal edges against ~290,000 are invisible at any lower rank -- adding
+        # the data is not the same as being able to see it.
+        type_w = {'signal': 4.0, 'wikilink': 3.0, 'mention': 2.0, 'reference': 1.0}.get(etype, 1.0)
         bridge_w = 1.0 if bridge == 'cross' else 0.0
         return {'deg': round(deg, 3), 'type': type_w, 'bridge': bridge_w}
 
@@ -212,7 +227,7 @@ def build_graph_data(data, agent_data=None):
     # bridge when the source edge dict didn't carry it).
     fp_to_dir = {f['filepath']: f.get('directory', '') for f in files}
 
-    def _emit(s, t, etype, base_bridge=None, reference=None):
+    def _emit(s, t, etype, base_bridge=None, reference=None, extra=None):
         if s not in filepath_set or t not in filepath_set:
             return
         key = (s, t) if s < t else (t, s)
@@ -229,8 +244,28 @@ def build_graph_data(data, agent_data=None):
         }
         if reference:
             edge['reference'] = reference
+        if extra:
+            edge.update(extra)
         links.append(edge)
 
+    # Signal edges are emitted FIRST and that ordering is load-bearing. _emit()
+    # dedupes on the unordered endpoint pair, first type wins -- and 1,096 of the
+    # 1,156 signal pairs ALREADY exist as thinker-mention edges, because a card
+    # that asserts "Levin resonates with McGilchrist" also merely mentions both
+    # surnames. Emitted last, 95% of the asserted layer would vanish into the
+    # inferred one with nothing thrown. Emitted first, the pair keeps the
+    # stronger provenance: someone judged this, on a date, with prose.
+    signal_edges = connections.get('signal_edges', [])
+    for e in signal_edges:
+        _emit(e['source'], e['target'], 'signal', e.get('bridge'), extra={
+            'weight': e.get('weight'),
+            'strength': e.get('strength'),
+            'sig_date': e.get('date'),
+            'sig_text': e.get('text'),
+            'card': e.get('card'),
+            'home': e.get('home'),
+            'n_sig': e.get('count'),
+        })
     for e in wikilink_edges:
         _emit(e['source'], e['target'], 'wikilink', e.get('bridge'))
     for e in mention_edges:
@@ -740,6 +775,37 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
         </label>
         <span id="date-slider-label" style="color:#888;font-size:10px;min-width:80px;">all dates</span>
       </div>
+      <!-- -- LIFT PROBE UI (temporary; delete with the LiftProbe block) --
+           Marked provisional on purpose: these knobs probe an open question,
+           they are not settled features. Default is "off" -- the probe never
+           runs unless asked for, so the default view is unchanged. -->
+      <span style="width:1px;height:20px;background:#3a3a4a;"></span>
+      <div id="lift-probe-controls" style="display:flex;align-items:center;gap:6px;font-size:11px;padding:1px 6px;border:1px dashed #4a4a5a;border-radius:4px;" title="PROVISIONAL. Encodes a third variable as oscillating depth, testing whether an axis can carry what the plane buries.">
+        <span style="color:#8a8a9a;font-size:10px;letter-spacing:0.04em;">DEPTH&nbsp;&middot;&nbsp;probe</span>
+        <label style="cursor:pointer;" title="What the depth axis encodes. 'Metabolic layer' is the control -- guaranteed non-degenerate, so it isolates whether the MECHANISM reads from whether the variable does.">Z:
+          <select id="lift-var" onchange="LiftProbe.variable(this.value)" style="font-size:11px;background:#1a1a2a;color:#e0e0e0;border:1px solid #3a3a4a;border-radius:3px;padding:1px 3px;">
+            <option value="off" selected>off</option>
+            <option value="bridge_signal">Traditions reached (judged)</option>
+            <option value="bridge_raw">Co-citation reach (any edge)</option>
+            <option value="bridge_authored">&nbsp;&nbsp;via wikilink (asserted)</option>
+            <option value="bridge_mention">&nbsp;&nbsp;via mention (inferred)</option>
+            <option value="bridge_reference">&nbsp;&nbsp;via reference (inferred)</option>
+            <option value="bridge_density">Traditions / degree</option>
+            <option value="cross_fraction">Cross-edge fraction</option>
+            <option value="layer">Metabolic layer (control)</option>
+          </select>
+        </label>
+        <label style="cursor:pointer;" title="Peak displacement as a fraction of the node's distance from the viewport centre. 0 collapses to the plane.">Depth
+          <input type="range" id="lift-parallax" min="0" max="0.6" step="0.01" value="0.22" style="width:70px;vertical-align:middle;" oninput="LiftProbe.parallax(this.value)">
+        </label>
+        <label style="cursor:pointer;" title="Seconds for one full down-up-down breath. Common fate is what makes strata separate; how slow it has to be to read is an open question.">Period
+          <input type="range" id="lift-period" min="1" max="20" step="0.5" value="6" style="width:60px;vertical-align:middle;" oninput="LiftProbe.period(this.value)">
+        </label>
+        <label style="display:flex;align-items:center;gap:3px;cursor:pointer;" title="Adds size and brightness to the parallax cue. Stronger, but Brightness and Since own those attributes -- touching either turns this back off.">
+          <input type="checkbox" id="lift-cues" onchange="LiftProbe.cues(this.checked)"> cues
+        </label>
+      </div>
+      <!-- -- END LIFT PROBE UI -- -->
       <button id="btn-settings" onclick="openSettings()">&#9881;</button>
     </div>
   </div>
@@ -768,6 +834,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
           <button id="btn-edges-help" onclick="toggleEdgesHelp(event)" style="margin-left:auto;width:16px;height:16px;border-radius:50%;background:#1a1a2a;color:#888;border:1px solid #3a3a4a;font-size:10px;font-weight:600;cursor:pointer;padding:0;line-height:14px;text-align:center;" title="How the Edges filters work">?</button>
         </h3>
         <div style="font-size:10px;color:#888;margin:2px 0 2px 4px;">By type — color</div>
+        <div class="filter-item"><input type="checkbox" id="chk-edge-signal" checked onchange="toggleEdgeType('signal', this.checked)"><span class="filter-dot" style="background:#E08A5B"></span><span class="filter-label">Signal (asserted)</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-wikilink" checked onchange="toggleEdgeType('wikilink', this.checked)"><span class="filter-dot" style="background:#C9A84C"></span><span class="filter-label">Wikilink</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-mention" checked onchange="toggleEdgeType('mention', this.checked)"><span class="filter-dot" style="background:#5B9A8B"></span><span class="filter-label">Mention</span></div>
         <div class="filter-item"><input type="checkbox" id="chk-edge-reference" checked onchange="toggleEdgeType('reference', this.checked)"><span class="filter-dot" style="background:#5A6878"></span><span class="filter-label">Reference</span></div>
@@ -1038,11 +1105,12 @@ var nodeById = {};
 // ── EDGE COLOR KEY (B-with-twist) ──
 // type → color, bridge → line style. Both dimensions cut by checkbox AND-composed.
 var EDGE_COLOR = {
+  signal:    '#E08A5B',  // amber -- an ASSERTED cross-tradition relation (Level-2)
   wikilink:  '#C9A84C',  // gold — explicit editorial intent
   mention:   '#5B9A8B',  // sage — narrative bridge (architecture prose names a thinker)
   reference: '#5A6878',  // slate — co-citation of a shared ID (DECISION-NNN, FINDING-NNN, …)
 };
-var showEdgeType   = { wikilink: true, mention: true, reference: true };
+var showEdgeType   = { signal: true, wikilink: true, mention: true, reference: true };
 var showEdgeBridge = { cross: true, same: true };
 
 // ── AGENT EDGE LAYERS (OpenStory) ──
@@ -1537,7 +1605,7 @@ function toggleSection(section, checked) {
 // ── EDGE FILTER HANDLERS (B-with-twist) ──
 function toggleAllEdges(checked) {
   edgesVisible = checked;
-  ['wikilink','mention','reference'].forEach(function(t) {
+  ['signal','wikilink','mention','reference'].forEach(function(t) {
     showEdgeType[t] = checked;
     var cb = document.getElementById('chk-edge-' + t);
     if (cb) cb.checked = checked;
@@ -1561,7 +1629,7 @@ function toggleEdgeBridge(b, checked) {
 }
 function syncEdgesMaster() {
   var allOn =
-    showEdgeType.wikilink && showEdgeType.mention && showEdgeType.reference &&
+    showEdgeType.signal && showEdgeType.wikilink && showEdgeType.mention && showEdgeType.reference &&
     showEdgeBridge.cross && showEdgeBridge.same;
   edgesVisible = allOn;
   var m = document.getElementById('chk-all-edges');
@@ -1598,7 +1666,7 @@ function applyAgentSociogramPreset() {
   // to re-flood the view with high-scoring wiki hub edges that would out-rank
   // the agent layers under the visibility budget. (Collection stays alive via
   // the anyAgentLayer gate in rebuildGraph.)
-  ['wikilink','mention','reference'].forEach(function(t) {
+  ['signal','wikilink','mention','reference'].forEach(function(t) {
     showEdgeType[t] = false;
     var cb = document.getElementById('chk-edge-' + t);
     if (cb) cb.checked = false;
@@ -1747,6 +1815,13 @@ function applyEdgeFilters() {
                   var ref = d.reference ? ' · ' + escapeHtml(d.reference) : '';
                   metaColor = EDGE_COLOR[d.type || 'reference'] || '#888';
                   metaText = escapeHtml(typeLabel) + ' · ' + escapeHtml(bridgeLabel) + ref;
+                  if (d.type === 'signal') {
+                    metaText = 'asserted signal · ' + escapeHtml(String(d.strength || 'Unlabeled')) +
+                               ' · weight ' + escapeHtml(String(d.weight == null ? '?' : d.weight)) +
+                               (d.sig_date ? ' · ' + escapeHtml(String(d.sig_date)) : '') +
+                               (d.home ? ' · own tradition' : '') +
+                               (d.sig_text ? '<div style="margin-top:3px;color:#bbb;font-style:italic;max-width:320px;white-space:normal;">' + escapeHtml(String(d.sig_text)) + '</div>' : '');
+                  }
                   arrow = ' &#8596; ';
                 }
                 showTooltip(event,
@@ -2169,8 +2244,8 @@ function hideTooltip() {
 // little further from its own solution every time the guide opened its mouth,
 // and nothing would ever put it back. Displacement is a fact about the paint,
 // not about the layout, and this is where that distinction is enforced.
-function wpx(d) { return d.x + (d._wx || 0); }
-function wpy(d) { return d.y + (d._wy || 0); }
+function wpx(d) { return d.x + (d._wx || 0) + (d._lx || 0); }
+function wpy(d) { return d.y + (d._wy || 0) + (d._ly || 0); }
 function paintPositions() {
   // linkSel is the live budget-joined selection owned by applyEdgeFilters.
   if (linkSel) {
@@ -2183,6 +2258,421 @@ function paintPositions() {
     nodeSel.attr('cx', wpx).attr('cy', wpy);
   }
 }
+
+// -- LIFT PROBE (temporary; delete when the Z question is settled) --
+//
+// Encodes a third variable as OSCILLATING FAKE DEPTH in the existing 2D SVG.
+// No WebGL, no simulation changes, no pipeline changes.
+//
+// Why oscillate rather than hold: nodes sharing a Z value rise and fall
+// together, and common fate (Gestalt) makes strata pop out perceptually without
+// ever holding a static 3D scene the viewer has to parse.
+//
+// Depth cue is PARALLAX ONLY by default -- displacement away from / toward the
+// viewport centre, proportional to distance from it, which is what perspective
+// does. Size and brightness are stronger cues but collide with syncGraphToDate()
+// and setBrightness(), which own r and opacity; they are opt-in via
+// LiftProbe.cues(true), and the date slider must not be dragged while on.
+
+var LIFT_PERIOD   = 6000;   // ms for a full down-up-down breath
+var LIFT_PARALLAX = 0.22;   // peak radial displacement as a fraction of the
+                            // node's distance from centre
+var LIFT_RMIN     = 0.72;   // radius multiplier at the far plane (cues mode)
+var LIFT_RMAX     = 1.35;   // radius multiplier at the near plane (cues mode)
+
+var _liftRAF = null;
+var _liftT0 = 0;
+var _liftCues = false;
+var _liftHeld = null;   // frozen breath position, or null when running/stopped
+var _liftPausedPhase = null;  // breath PHASE parked by Hold, or null. Phase, not
+                              // position: t = 0.5-0.5cos(2*pi*phase) is symmetric,
+                              // so resuming from t alone can restart the breath
+                              // running backwards.
+
+// Link endpoints are INTEGER INDICES into NODES as generated; d3 rewrites them
+// to object refs once the simulation runs. Resolve all three forms or every
+// node reads as degree 0 -- this bit me on the first draft.
+function _liftAdjacency() {
+  var byId = {};
+  NODES.forEach(function(nd, i) { byId[nd.id] = i; });
+  var resolve = function(v) {
+    if (typeof v === 'number') return (v >= 0 && v < NODES.length) ? v : null;
+    if (v && typeof v === 'object') { var r = byId[v.id]; return (r === undefined) ? null : r; }
+    var s = byId[v];
+    return (s === undefined) ? null : s;
+  };
+  var adj = [], crossN = [], degE = [];
+  for (var i = 0; i < NODES.length; i++) { adj.push({}); crossN.push(0); degE.push(0); }
+  LINKS.forEach(function(l) {
+    var s = resolve(l.source), t = resolve(l.target);
+    if (s === null || t === null) return;
+    adj[s][t] = 1; adj[t][s] = 1;
+    degE[s]++; degE[t]++;
+    if (l.bridge === 'cross') { crossN[s]++; crossN[t]++; }
+  });
+  return { adj: adj, crossN: crossN, degE: degE };
+}
+
+function _liftTraditionsOf(i, A) {
+  var seen = {}, count = 0;
+  Object.keys(A.adj[i]).forEach(function(k) {
+    var g = NODES[+k].group || '';
+    if (g.indexOf('traditions/') !== 0) return;
+    var key = g.split('/')[1];
+    if (!seen[key]) { seen[key] = 1; count++; }
+  });
+  return count;
+}
+
+// Traditions reached in one hop, counting ONLY edges of one type. This splits
+// the raw count into what somebody ASSERTED and what the pipeline INFERRED.
+//
+// Measured 2026-08-24 over the 124,895-edge build: reference 109,836 (88%),
+// mention 9,622 (7.7%), wikilink 1,348 (1.1%), untyped 4,089. Of the 2,149
+// nodes that reach any tradition at all, exactly 30 do so through an authored
+// wikilink. So bridge_authored is EXPECTED to trip the degeneracy gate below.
+// That is the finding -- the connective tissue this graph draws is almost
+// entirely inferred -- not a failure of the probe.
+function _liftTradsOfType(want, skipHome) {
+  var byId = {};
+  NODES.forEach(function(nd, i) { byId[nd.id] = i; });
+  var resolve = function(v) {
+    if (typeof v === 'number') return (v >= 0 && v < NODES.length) ? v : null;
+    if (v && typeof v === 'object') { var r = byId[v.id]; return (r === undefined) ? null : r; }
+    var s = byId[v];
+    return (s === undefined) ? null : s;
+  };
+  var seen = NODES.map(function() { return {}; });
+  LINKS.forEach(function(l) {
+    if (l.type !== want) return;
+    if (skipHome && l.home) return;
+    var s = resolve(l.source), t = resolve(l.target);
+    if (s === null || t === null) return;
+    var mark = function(from, to) {
+      var g = NODES[to].group || '';
+      if (g.indexOf('traditions/') !== 0) return;
+      seen[from][g.split('/')[1]] = 1;
+    };
+    mark(s, t); mark(t, s);
+  });
+  return NODES.map(function(nd, i) { return Object.keys(seen[i]).length; });
+}
+
+// --- Z EXTRACTORS -------------------------------------------------------
+// Each returns an array of raw numbers, one per node, in NODES order.
+
+var LIFT_VARS = {
+
+  // Rich (48.4% nonzero, 16 levels) but its ceiling is registry files.
+  bridge_raw: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) { return _liftTraditionsOf(i, A); });
+  },
+
+  // The same count restricted to ONE edge type. bridge_raw is their union, so
+  // these three decompose it: if raw and reference look identical, raw is just
+  // the reference graph wearing a different name.
+  // The only variable on this list whose edges somebody JUDGED. A Level-2
+  // signal is a dated, weighted, pair-typed assertion with prose behind it, so
+  // this counts traditions a node reaches through an act of judgement rather
+  // than through a shared identifier string. home=true edges are dropped: every
+  // card carries at least one signal naming its own thinker, and reaching your
+  // own tradition is not a reach. Measured on the 2026-08-25 build: 5.5%
+  // off-floor, 8 levels, max 9 -- it clears the gate below by half a point, and
+  // it is sparse ON PURPOSE. Only the 249 proposal cards carry asserted
+  // structure; the flat plain around them is the true state of the vault, not a
+  // defect in the axis.
+  bridge_signal: function() { return _liftTradsOfType('signal', true); },
+
+  bridge_authored: function() { return _liftTradsOfType('wikilink'); },
+  bridge_mention:  function() { return _liftTradsOfType('mention'); },
+  bridge_reference: function() { return _liftTradsOfType('reference'); },
+
+  // Corrects the registry bias, introduces a small-denominator one.
+  bridge_density: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) {
+      var deg = Object.keys(A.adj[i]).length;
+      return deg ? _liftTraditionsOf(i, A) / deg : 0;
+    });
+  },
+
+  // Same shape as density, but the numerator is the generator's own
+  // cross/same edge classification rather than ours.
+  cross_fraction: function() {
+    var A = _liftAdjacency();
+    return NODES.map(function(nd, i) {
+      return A.degE[i] ? A.crossN[i] / A.degE[i] : 0;
+    });
+  },
+
+  // Metabolic layer: raw intake at the floor, synthesis at the ceiling.
+  // The CONTROL -- guaranteed non-degenerate, so it isolates whether the
+  // oscillating-lift MECHANISM reads, separately from whether bridging does.
+  layer: function() {
+    var RANK = {
+      inbox: 0, flags: 1, review: 2, sessions: 2, deferred: 2,
+      root: 3, architecture: 4, agents: 5, 'agent-activity': 5,
+      summa: 6, master: 8
+    };
+    return NODES.map(function(nd) {
+      var g = nd.group || '';
+      if (g.indexOf('traditions/') === 0) return 7;
+      var r = RANK[g];
+      return (r === undefined) ? 3 : r;
+    });
+  }
+
+};
+
+// --- INDEX + SELF-DIAGNOSIS ---------------------------------------------
+
+function _liftIndex(varName) {
+  var make = LIFT_VARS[varName];
+  if (!make) {
+    console.warn('[lift] unknown variable: ' + varName +
+                 '. Options: ' + Object.keys(LIFT_VARS).join(', '));
+    return false;
+  }
+  var raws = make();
+  var lo = Infinity, hi = -Infinity;
+  raws.forEach(function(v) {
+    if (typeof v !== 'number' || !isFinite(v)) v = 0;
+    if (v < lo) lo = v;
+    if (v > hi) hi = v;
+  });
+  var span = (hi - lo) || 1;
+  var levels = {}, offFloor = 0;
+  NODES.forEach(function(nd, i) {
+    var v = raws[i];
+    if (typeof v !== 'number' || !isFinite(v)) v = 0;
+    nd._lz = (v - lo) / span;    // normalised depth, 0 = far, 1 = near
+    nd._lzRaw = v;
+    levels[v] = 1;
+    if (v > lo) offFloor++;
+  });
+  var nLevels = Object.keys(levels).length;
+  var pct = 100 * offFloor / NODES.length;
+  console.log('[lift] variable=' + varName + '  range=' + lo + '..' + hi +
+              '  levels=' + nLevels + '  off-floor=' + pct.toFixed(1) + '%');
+  if (nLevels < 3 || pct < 5) {
+    console.warn('[lift] DEGENERATE -- fails the >=5% / >=3-levels gate. Do not ' +
+                 'conclude the variable is unreadable; conclude this BUILD cannot ' +
+                 'answer it.');
+  }
+  return true;
+}
+
+// --- ANIMATION ----------------------------------------------------------
+
+function _liftApply(t) {
+  var svg = document.getElementById('graph');
+  var cx = (svg ? svg.clientWidth : window.innerWidth) / 2;
+  var cy = (svg ? svg.clientHeight : window.innerHeight) / 2;
+  NODES.forEach(function(nd) {
+    if (nd.x === undefined) return;
+    var lz = (nd._lz === undefined) ? 0.5 : nd._lz;
+    var k = LIFT_PARALLAX * t * (lz - 0.5) * 2;
+    nd._lx = (nd.x - cx) * k;
+    nd._ly = (nd.y - cy) * k;
+  });
+  paintPositions();
+  if (_liftCues && nodeSel) {
+    nodeSel.attr('r', function(d) {
+      var lz = (d._lz === undefined) ? 0.5 : d._lz;
+      var m = LIFT_RMIN + (LIFT_RMAX - LIFT_RMIN) * (0.5 + (lz - 0.5) * t * 2);
+      return d.size * m;
+    }).attr('opacity', function(d) {
+      if (!groupVisibility[d.group]) return 0;
+      var lz = (d._lz === undefined) ? 0.5 : d._lz;
+      return Math.min(brightness * (0.45 + 0.55 * (0.5 + (lz - 0.5) * t * 2)), 1);
+    });
+  }
+}
+
+function _liftTick(ts) {
+  if (!_liftT0) _liftT0 = ts;
+  var phase = ((ts - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD;
+  _liftApply(0.5 - 0.5 * Math.cos(2 * Math.PI * phase));   // smooth 0 -> 1 -> 0
+  _liftRAF = requestAnimationFrame(_liftTick);
+}
+
+var LiftProbe = {
+
+  start: function(varName) {
+    this.stop();
+    var v = varName || 'bridge_signal';
+    if (!_liftIndex(v)) return;
+    var sel = document.getElementById('lift-var');
+    if (sel) sel.value = v;
+    _liftHeld = null;
+    _liftT0 = 0;
+    _liftRAF = requestAnimationFrame(_liftTick);
+    console.log('[lift] running. LiftProbe.stop() to clear, LiftProbe.cues(true) ' +
+                'for size+brightness (do not drag the date slider while on).');
+  },
+
+  stop: function() {
+    if (_liftRAF) cancelAnimationFrame(_liftRAF);
+    _liftRAF = null;
+    _liftHeld = null;
+    _liftPausedPhase = null;
+    NODES.forEach(function(nd) { nd._lx = 0; nd._ly = 0; });
+    if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+    if (typeof brightness !== 'undefined') setBrightness(brightness);
+    paintPositions();
+  },
+
+  // Turning cues OFF used to stop the whole probe, which made the checkbox
+  // unusable as a checkbox. It now just hands r and opacity back.
+  cues: function(on) {
+    _liftCues = !!on;
+    var box = document.getElementById('lift-cues');
+    if (box) box.checked = _liftCues;
+    if (!_liftCues) {
+      if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+      if (typeof brightness !== 'undefined') setBrightness(brightness);
+    }
+  },
+
+  // Freeze at a chosen point in the breath, for screenshots / close reading.
+  hold: function(t) {
+    if (_liftRAF) { cancelAnimationFrame(_liftRAF); _liftRAF = null; }
+    _liftHeld = t;
+    _liftApply(t);
+  },
+
+  // Park the breath where it stands, and be able to pick it up again. Distinct
+  // from hold(t) (which jumps to a chosen point) and from stop() (which clears
+  // the probe): this is what a Hold CHECKBOX needs -- freeze, then continue
+  // from the same place rather than snapping back to the start of the cycle.
+  // Returns true only if it actually parked something, so the caller knows
+  // whether it owns the resume.
+  pause: function() {
+    if (!_liftRAF) return false;
+    var now = (window.performance && performance.now) ? performance.now() : _liftT0;
+    _liftPausedPhase = _liftT0 ? (((now - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD) : 0;
+    cancelAnimationFrame(_liftRAF);
+    _liftRAF = null;
+    _liftHeld = 0.5 - 0.5 * Math.cos(2 * Math.PI * _liftPausedPhase);
+    _liftApply(_liftHeld);
+    return true;
+  },
+
+  resume: function() {
+    if (_liftRAF || _liftPausedPhase === null) return;
+    var now = (window.performance && performance.now) ? performance.now() : 0;
+    // Re-anchor so the breath continues from where it was parked. `|| 1` only
+    // guards the one falsy value: _liftTick treats _liftT0 === 0 as "unset".
+    _liftT0 = (now - _liftPausedPhase * LIFT_PERIOD) || 1;
+    _liftPausedPhase = null;
+    _liftHeld = null;
+    _liftRAF = requestAnimationFrame(_liftTick);
+  },
+
+  // Top-N by the currently indexed variable -- read the ceiling without
+  // squinting at the picture.
+  top: function(k) {
+    var order = NODES.slice().sort(function(a, b) { return b._lzRaw - a._lzRaw; });
+    order.slice(0, k || 10).forEach(function(nd) {
+      console.log('  ' + nd._lzRaw + '  ' + nd.id + '  [' + nd.group + ']');
+    });
+  },
+
+  // --- PANEL SETTERS ----------------------------------------------------
+  // LIFT_PARALLAX and LIFT_PERIOD stay module globals rather than folding
+  // into this object: they are documented as live console handles and the
+  // fence already guarantees one-excision removal. No new globals are added.
+
+  // 'off' is a real position, not an absence -- it is how you get the 2D
+  // trust anchor back in one click.
+  variable: function(name) {
+    if (!name || name === 'off') {
+      this.stop();
+      console.log('[lift] off');
+      return;
+    }
+    this.start(name);
+  },
+
+  parallax: function(v) {
+    LIFT_PARALLAX = Math.max(0, +v || 0);
+    if (!_liftRAF && _liftHeld !== null) _liftApply(_liftHeld);
+  },
+
+  // Re-anchor the clock so changing the period does not make the breath jump.
+  period: function(sec) {
+    var ms = Math.max(500, (+sec || 6) * 1000);
+    if (_liftRAF && _liftT0) {
+      var now = (window.performance && performance.now) ? performance.now() : _liftT0;
+      var phase = ((now - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD;
+      _liftT0 = now - phase * ms;
+    }
+    LIFT_PERIOD = ms;
+  }
+
+};
+
+// Size and brightness cues fight syncGraphToDate() and setBrightness(), which
+// own r and opacity. The earlier note said "do not drag the date slider while
+// cues are on" -- but a control you must remember not to touch is a trap, not a
+// control. Remove the trap instead: whoever owns the attribute wins, and the
+// checkbox unticks itself so the visible state stays true.
+function _liftDropCues(who) {
+  if (!_liftCues) return;
+  _liftCues = false;
+  var box = document.getElementById('lift-cues');
+  if (box) box.checked = false;
+  if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
+  console.log('[lift] cues off -- ' + who + ' owns r/opacity');
+}
+if (typeof setBrightness === 'function') {
+  var _liftPrevBrightness = setBrightness;
+  setBrightness = function() { _liftDropCues('Brightness'); return _liftPrevBrightness.apply(this, arguments); };
+}
+if (typeof setDateThreshold === 'function') {
+  var _liftPrevDateThreshold = setDateThreshold;
+  setDateThreshold = function() { _liftDropCues('Since'); return _liftPrevDateThreshold.apply(this, arguments); };
+}
+// Hold means hold. toggleHoldForces() stopped the force simulation only, so
+// ticking Hold froze the layout while the depth axis kept breathing -- which is
+// not a frozen scene, and made Hold useless for the screenshots and close
+// reading it exists for. Wrapped rather than edited in place: the same idiom as
+// the setBrightness/setDateThreshold wrappers below, so deleting this fenced
+// block still restores the original behaviour in one excision.
+var _liftPausedByHold = false;
+if (typeof toggleHoldForces === 'function') {
+  var _liftPrevToggleHold = toggleHoldForces;
+  toggleHoldForces = function(checked) {
+    if (checked) {
+      _liftPausedByHold = LiftProbe.pause();
+    } else if (_liftPausedByHold) {
+      LiftProbe.resume();
+      _liftPausedByHold = false;
+    }
+    return _liftPrevToggleHold.apply(this, arguments);
+  };
+}
+
+// The node tooltip named label/directory/date and stopped there, so with the
+// depth axis switched on it described everything about a node EXCEPT the
+// variable currently lifting it. Reads the picker for its own label so the row
+// tracks the option list rather than duplicating it. Returns '' whenever the
+// probe is not engaged, and the call site guards on typeof, so excising this
+// block leaves the tooltip exactly as it was.
+function _liftTipRow(d) {
+  if (!_liftRAF && _liftHeld === null) return '';
+  if (!d || d._lzRaw === undefined) return '';
+  var sel = document.getElementById('lift-var');
+  if (!sel || !sel.value || sel.value === 'off') return '';
+  var opt = sel.options[sel.selectedIndex];
+  var label = (opt ? opt.text : sel.value).replace(/\u00a0/g, ' ').trim();
+  return '<div style="color:#9ab8d8;font-size:11px;margin-top:3px;">' +
+         escapeHtml(label) + ': <b>' + escapeHtml(String(d._lzRaw)) + '</b></div>';
+}
+
+// -- END LIFT PROBE --
+
 
 // ── VOICE WAVE ──
 //
@@ -2548,7 +3038,7 @@ function rebuildGraph() {
     .attr('cursor', 'pointer')
     .on('mouseover', function(event, d) {
       if (!showHoverNames) return;
-      showTooltip(event, '<div class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(d.label) + '\\')">' + escapeHtml(d.label) + '</div><div class="tt-dir">' + escapeHtml(d.directory) + '</div><div class="tt-date">' + escapeHtml(d.date) + '</div>');
+      showTooltip(event, '<div class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(d.label) + '\\')">' + escapeHtml(d.label) + '</div><div class="tt-dir">' + escapeHtml(d.directory) + '</div><div class="tt-date">' + escapeHtml(d.date) + '</div>' + (typeof _liftTipRow === 'function' ? _liftTipRow(d) : ''));
     })
     .on('mouseout', hideTooltip)
     .on('click', function(event, d) {

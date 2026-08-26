@@ -11,6 +11,8 @@ Exit codes:
 import argparse
 import json
 import re
+import tempfile
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -34,13 +36,25 @@ def check_js_syntax(html: str) -> list:
         errors.append("WARNING: No inline JavaScript found in HTML")
         return errors
 
-    tmp = Path('/tmp/_validate_html_js.js')
+    # Was a hardcoded /tmp/_validate_html_js.js. On 2026-08-24 that file was
+    # left behind owned by a different uid and every later run died with
+    # PermissionError -- silently, because the caller used `|| true`, so builds
+    # reported OK with the JS-syntax check never having run. Unique temp file,
+    # cleaned up after.
+    fd, tmp_path = tempfile.mkstemp(prefix='_validate_html_js_', suffix='.js')
+    os.close(fd)
+    tmp = Path(tmp_path)
     tmp.write_text(js)
 
     result = subprocess.run(
         ['node', '--check', str(tmp)],
         capture_output=True, text=True
     )
+    try:
+        tmp.unlink()
+    except OSError:
+        pass
+
     if result.returncode != 0:
         # Extract the specific error line
         stderr = result.stderr.strip()

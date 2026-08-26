@@ -15,7 +15,7 @@ import os
 import re
 import subprocess
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -595,22 +595,349 @@ def _bridge_class(source_fp, target_fp):
     return "same" if s_cat == t_cat else "cross"
 
 
-def build_connections(files):
-    name_to_path = {}
+# Alternate spellings a human might bracket. Keys resolve through THINKER_PATHS,
+# so this table only has to carry forms that are NOT the bare surname.
+THINKER_ALIASES = {
+    "Karl Friston": "Friston",
+    "Michael Levin": "Levin",
+    "Donald Hoffman": "Hoffman",
+    "Bernardo Kastrup": "Kastrup",
+    "Iain McGilchrist": "McGilchrist",
+    "Jeff Hawkins": "Hawkins",
+    "Stephen Wolfram": "Wolfram",
+    "Steven Wolfram": "Wolfram",
+    "Sean Carroll": "Carroll",
+    "Nima Arkani-Hamed": "Arkani-Hamed",
+    "Barbara Fredrickson": "Fredrickson",
+    "Eleonore Stump": "Stump",
+    "Richard Rohr": "Rohr",
+    "N.T. Wright": "Wright",
+    "NT Wright": "Wright",
+    "Alasdair MacIntyre": "MacIntyre",
+    "Tom Loughran": "Loughran",
+    "Thomas Loughran": "Loughran",
+}
+
+
+def _make_link_resolver(files):
+    """Resolve the inner text of a [[wikilink]] to a vault filepath, or None.
+
+    The shipped resolver was name_to_path[stem], first-wins, looked up against the
+    RAW inner text. Measured 2026-08-24 on a 3,800-file vault, that silently dropped
+    317 of 776 unique (file, link) pairs -- 41% of every wikilink in the vault -- in
+    three distinct ways:
+
+      1. PATH-QUALIFIED links never resolved. [[traditions/friston/wiki|Friston]]
+         was looked up as the literal string "traditions/friston/wiki", which
+         matches no stem. 96 dropped.
+      2. SURNAME links never resolved. [[Kastrup]], [[Friston]], [[Levin]] --
+         127 occurrences -- even though THINKER_PATHS already holds exactly that
+         mapping and the MENTION path already uses it. A bracketed surname is an
+         authored assertion, not a prose mention.
+      3. STEM COLLISIONS misrouted silently. 304 stems shadow 374 files; `wiki`
+         and `prs_triplets` collide FIFTEEN ways each.
+
+    DO NOT "fix" case 1 by stripping a path-qualified link to its stem. That makes
+    all fifteen [[traditions/X/wiki]] links resolve to traditions/arkanihamed/wiki.md
+    -- first alphabetically -- converting a silent DROP into a silent fifteen-way
+    MISROUTE, which is strictly worse. Ambiguity must REFUSE, not guess.
+    test_wikilink_resolver.py asserts exactly that and will fail if this is undone.
+
+    Order, each step narrower than a bare stem lookup:
+        exact relpath -> exact relpath + ".md" -> thinker name -> UNIQUE stem -> None
+    """
+    by_relpath = {f["filepath"] for f in files}
+    by_stem = defaultdict(list)
     for f in files:
-        stem = Path(f["filename"]).stem
-        if stem not in name_to_path:
-            name_to_path[stem] = f["filepath"]
+        by_stem[Path(f["filename"]).stem].append(f["filepath"])
+    stats = Counter()
+
+    def resolve(link):
+        # Drop any #heading anchor; the alias after | is already stripped by the
+        # extract_wikilinks regex.
+        text = link.split("#", 1)[0].strip()
+        if not text:
+            stats["empty"] += 1
+            return None
+        for cand in (text, text + ".md"):
+            if cand in by_relpath:
+                stats["exact_path"] += 1
+                return cand
+        thinker = THINKER_PATHS.get(THINKER_ALIASES.get(text, text))
+        if thinker and thinker in by_relpath:
+            stats["thinker_name"] += 1
+            return thinker
+        if "/" in text:
+            # A path was given and no such file exists. Falling through to a stem
+            # lookup here is the misroute described above.
+            stats["path_no_such_file"] += 1
+            return None
+        hits = by_stem.get(text)
+        if not hits:
+            stats["no_such_stem"] += 1
+            return None
+        if len(hits) > 1:
+            stats["ambiguous_stem"] += 1
+            return None
+        stats["unique_stem"] += 1
+        return hits[0]
+
+    return resolve, stats
+
+
+# ── LEVEL-2 SIGNAL EDGES ───────────────────────────────────────────────────
+# The Level-2 stream (prototypes/signals_grown.json) holds dated, weighted,
+# pair-typed cross-tradition ASSERTIONS harvested from each card's
+# "## Cross-Tradition Signals" section. The Sociogram carried none of them: two
+# pipelines read the same prose and neither knew the other existed. This wires
+# them in as a fourth edge type.
+#
+# WIRING (Tom's ruling 2026-08-24): card -> tradition A and card -> tradition B,
+# not tradition <-> tradition. A card that bridges four traditions then reads as
+# depth 4, which is the question the depth axis asks; a direct tradition-to-
+# tradition edge leaves per-file bridging flat at zero for every other file.
+#
+# ONLY source == "card" signals are wired. The other 234 (source "index" and
+# "finding") carry no card and would have to hang off master/cross_program_
+# index.md and flags/pattern_detector_findings.md -- which puts those two
+# INVENTORIES at the top of the depth ceiling (13 and 11 against a card ceiling
+# of 10). That is precisely the failure registered in advance in
+# handoffs/level2-signal-edges.md: "if the ceiling refills with index files and
+# agendas, the wiring is measuring coverage again and the exercise has failed."
+# They are counted and reported, not drawn.
+SIGNALS_REL = os.path.join("..", "prototypes", "signals_grown.json")
+MANIFEST_REL = os.path.join("..", "prototypes", "backlog", "backlog_manifest.json")
+
+_PROPOSAL_ID_RE = re.compile(r"^proposal_id:\s*(PROP-[0-9A-Za-z-]+)", re.M)
+_XT_SECTION_RE = re.compile(r"##+\s*Cross-?Tradition Signals(.*?)(?=\n##\s|\Z)", re.S | re.I)
+
+
+def _norm_ws(s):
+    return re.sub(r"\s+", " ", s or "").strip().lower()
+
+
+def _card_claimants(vault_path):
+    """card id -> [vault-relative path, ...] for every file whose frontmatter
+    declares that proposal_id. The id is NOT unique: 11 of the 250 source cards
+    are claimed by more than one document (three of them by six), a survival of
+    the pending/ ID race. Callers must handle the ambiguity, not assume it away."""
+    claims = defaultdict(list)
+    for dirpath, dirnames, filenames in os.walk(vault_path):
+        dirnames[:] = [d for d in dirnames if not d.startswith('.')]
+        for fn in filenames:
+            if not fn.endswith(".md"):
+                continue
+            full = os.path.join(dirpath, fn)
+            try:
+                with open(full, "r", encoding="utf-8", errors="ignore") as fh:
+                    head = fh.read(1500)
+            except OSError:
+                continue
+            m = _PROPOSAL_ID_RE.search(head)
+            if m:
+                claims[m.group(1)].append(os.path.relpath(full, vault_path))
+    return claims
+
+
+def _resolve_card_files(vault_path, fp_set, card_ids, records_by_card):
+    """card id -> vault-relative file, for the cards we can settle.
+
+    Order, strongest provenance first:
+      1. the backlog manifest's `file` -- the path harvest_signals.py actually
+         read, so it is provenance rather than inference;
+      2. a single claiming document (inbox/X.md and its inbox/proposals/**/X.md
+         copy are ONE document; the proposals copy is preferred as the node);
+      3. among several claimants, the one whose Cross-Tradition Signals section
+         literally contains this card's signal prose;
+      4. refuse.
+
+    Refusing is the point. Guessing here would reintroduce exactly the silent
+    misroute the wikilink resolver fix removed -- and at six-way odds.
+    """
+    resolved, how, refused = {}, Counter(), []
+    manifest_path = os.path.join(vault_path, MANIFEST_REL)
+    man = {}
+    if os.path.isfile(manifest_path):
+        try:
+            with open(manifest_path, "r", encoding="utf-8") as fh:
+                for row in json.load(fh):
+                    if row.get("card") and row.get("file"):
+                        man.setdefault(row["card"], row["file"])
+        except (OSError, ValueError):
+            pass
+    claims = _card_claimants(vault_path)
+    for cid in card_ids:
+        f = man.get(cid)
+        if f and f in fp_set:
+            resolved[cid] = f
+            how["manifest"] += 1
+            continue
+        by_doc = defaultdict(list)
+        for rel in claims.get(cid, []):
+            by_doc[os.path.basename(rel)].append(rel)
+        if not by_doc:
+            how["no_claimant"] += 1
+            continue
+        if len(by_doc) == 1:
+            cands = next(iter(by_doc.values()))
+            pick = _prefer_proposal_copy(cands, fp_set)
+            if pick:
+                resolved[cid] = pick
+                how["unique_claimant"] += 1
+            else:
+                how["claimant_not_a_node"] += 1
+            continue
+        hits = Counter()
+        for base, cands in by_doc.items():
+            body = ""
+            for rel in cands:
+                try:
+                    with open(os.path.join(vault_path, rel), "r", encoding="utf-8", errors="ignore") as fh:
+                        m = _XT_SECTION_RE.search(fh.read())
+                except OSError:
+                    continue
+                if m:
+                    body += _norm_ws(m.group(1))
+            for rec in records_by_card.get(cid, []):
+                probe = _norm_ws(rec.get("text"))[:60]
+                if probe and probe in body:
+                    hits[base] += 1
+        best = [b for b, n in hits.items() if n == max(hits.values())] if hits else []
+        if len(best) == 1:
+            pick = _prefer_proposal_copy(by_doc[best[0]], fp_set)
+            if pick:
+                resolved[cid] = pick
+                how["text_match"] += 1
+                continue
+        how["ambiguous_card"] += 1
+        refused.append(cid)
+    return resolved, how, refused
+
+
+def _prefer_proposal_copy(cands, fp_set):
+    """inbox/proposals/**/X.md is the reviewed card; inbox/X.md is its intake
+    twin. Same document, so prefer the proposals copy as the graph node."""
+    live = [c for c in cands if c in fp_set]
+    if not live:
+        return None
+    props = sorted(c for c in live if c.startswith(os.path.join("inbox", "proposals")))
+    return props[0] if props else sorted(live)[0]
+
+
+_TRADITION_KEY_RE = re.compile(r"^tradition_key:\s*(\w+)", re.M)
+
+
+def _home_tradition(vault_path, rel):
+    """The tradition the card itself belongs to. Every card carries at least one
+    signal naming its own thinker, so each card emits exactly one edge to its own
+    tradition page. That edge is real but it is not a REACH -- flagging it lets a
+    depth measure count traditions reached by someone's judgment without the
+    automatic +1. Uniform across all 249 cards, so it shifts no ranking."""
+    try:
+        with open(os.path.join(vault_path, rel), "r", encoding="utf-8", errors="ignore") as fh:
+            m = _TRADITION_KEY_RE.search(fh.read(1500))
+    except OSError:
+        return None
+    return m.group(1) if m else None
+
+
+def build_signal_edges(vault_path, files):
+    """Level-2 assertions as card->tradition edges. Returns [] when the stream
+    is absent, so a vault without prototypes/ still builds."""
+    signals_path = os.path.join(vault_path, SIGNALS_REL)
+    if not os.path.isfile(signals_path):
+        sys.stderr.write("signal edges: %s absent -- layer skipped\n" % signals_path)
+        return []
+    try:
+        with open(signals_path, "r", encoding="utf-8") as fh:
+            signals = json.load(fh)
+    except (OSError, ValueError) as exc:
+        sys.stderr.write("signal edges: cannot read stream (%s) -- layer skipped\n" % exc)
+        return []
+
+    fp_set = {f["filepath"] for f in files}
+    by_source = Counter(r.get("source", "?") for r in signals)
+    cards = [r for r in signals if r.get("source") == "card" and r.get("card")]
+    records_by_card = defaultdict(list)
+    for r in cards:
+        records_by_card[r["card"]].append(r)
+    resolved, how, refused = _resolve_card_files(vault_path, fp_set, sorted(records_by_card), records_by_card)
+
+    agg, skipped, home_of = {}, Counter(), {}
+    for rec in cards:
+        src = resolved.get(rec["card"])
+        if not src:
+            skipped["unresolved_card"] += 1
+            continue
+        for thinker in (rec.get("a"), rec.get("b")):
+            target = THINKER_PATHS.get(thinker)
+            if not target or target not in fp_set:
+                skipped["no_tradition_node"] += 1
+                continue
+            if target == src:
+                skipped["self_target"] += 1
+                continue
+            if src not in home_of:
+                home_of[src] = _home_tradition(vault_path, src)
+            key = (src, target)
+            cur = agg.get(key)
+            w = float(rec.get("weight") or 0.0)
+            if cur is None:
+                agg[key] = {
+                    "source": src, "target": target, "type": "signal",
+                    "weight": w,
+                    "strength": rec.get("strength") or "Unlabeled",
+                    "date": rec.get("date") or "",
+                    "text": truncate_at_boundary(rec.get("text") or "", 300),
+                    "card": rec["card"],
+                    "count": 1,
+                    "home": Path(target).parts[1] == home_of.get(src),
+                    "bridge": _bridge_class(src, target),
+                }
+            else:
+                cur["count"] += 1
+                if rec.get("date") and (not cur["date"] or rec["date"] < cur["date"]):
+                    cur["date"] = rec["date"]
+                if w > cur["weight"]:
+                    cur["weight"] = w
+                    cur["strength"] = rec.get("strength") or "Unlabeled"
+                    cur["text"] = truncate_at_boundary(rec.get("text") or "", 300)
+
+    sys.stderr.write(
+        "signal edges: stream %d (%s) | cards %d in %d source-cards | resolved %s | "
+        "skipped %s | pairs %d\n" % (
+            len(signals), dict(sorted(by_source.items())), len(cards), len(records_by_card),
+            dict(sorted(how.items())), dict(sorted(skipped.items())), len(agg)))
+    sys.stderr.write("signal edges: %d of them link a card to its OWN tradition (flagged home=true)\n"
+                     % sum(1 for e in agg.values() if e["home"]))
+    if refused:
+        sys.stderr.write("signal edges: REFUSED as ambiguous (>1 claiming document, no text match): %s\n"
+                         % ", ".join(sorted(refused)))
+    return list(agg.values())
+
+
+def build_connections(files):
+    resolve_link, LINK_RESOLVE_STATS = _make_link_resolver(files)
     wikilink_edges = []
+    # (source, target) pairs carried by an AUTHORED link. Used below to stop a
+    # bracketed [[Kastrup]] from also firing a thinker-mention edge for the same
+    # pair -- the surname matches both paths, and double-counting it would let one
+    # authored act contribute at type_w 3.0 AND 2.0.
+    authored_pairs = set()
     for f in files:
         for link in f["wikilinks"]:
-            target = name_to_path.get(link)
-            if target:
+            target = resolve_link(link)
+            # Self-targets are new with thinker-name resolution: traditions/levin/
+            # wiki.md contains [[Levin]], which now resolves to itself. A self-loop
+            # is meaningless under the force layout.
+            if target and target != f["filepath"]:
                 wikilink_edges.append({
                     "source": f["filepath"], "target": target,
                     "type": "wikilink",
                     "bridge": _bridge_class(f["filepath"], target),
                 })
+                authored_pairs.add((f["filepath"], target))
+    sys.stderr.write("wikilink resolution: %s\n" % dict(sorted(LINK_RESOLVE_STATS.items())))
 
     fp_set = {f["filepath"] for f in files}
 
@@ -710,6 +1037,9 @@ def build_connections(files):
             # itself when it mentions "Levin"; don't connect levin/prs_triplets.md
             # to levin/wiki.md as a mention — sibling edge handles that).
             if src_trad and src_trad == tgt_trad:
+                continue
+            if (f["filepath"], target) in authored_pairs:
+                # An authored [[Surname]] already carries this pair at type_w 3.0.
                 continue
             mention_edges.append({
                 "source": f["filepath"], "target": target,
@@ -1060,6 +1390,7 @@ def main():
 
     timeline = build_timeline(files)
     connections = build_connections(files)
+    connections["signal_edges"] = build_signal_edges(vault_path, files)
 
     # SEMANTIC EXTRACTION — the deep stuff
     changelogs = parse_changelogs(vault_path)
