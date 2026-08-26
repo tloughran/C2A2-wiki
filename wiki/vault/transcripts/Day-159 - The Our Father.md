@@ -16,8 +16,8 @@ length_tier: long
 fidelity_checked: true
 synthesis: "[[Day-159 - The Our Father - Contemporary]]"
 tags: [summa, day/159, pars/2, q/82]
-last_qc_at: "2026-08-15T08:23:58"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-25T00:30:38"
+last_qc_outcome: "pass"
 ---
 
 # Day 159 — The Our Father

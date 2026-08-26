@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-180 - Timidity - Contemporary]]"
 tags: [summa, day/180, pars/II-II, q/124-125]
-last_qc_at: "2026-08-07T16:24:27"
+last_qc_at: "2026-08-25T04:21:12"
 last_qc_outcome: "pass"
 ---
 

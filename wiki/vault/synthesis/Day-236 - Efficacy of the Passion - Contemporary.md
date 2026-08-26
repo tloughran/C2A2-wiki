@@ -3,22 +3,23 @@ day: 236
 title: Efficacy of the Passion (Contemporary)
 pairs_with: "[[Day-236 - Efficacy of the Passion]]"
 length_target_words: 1500
-length_actual_words: 1528
-length_ratio_to_target: 1.019
+length_actual_words: 1670
+length_ratio_to_target: 1.113
+length_note: "Over ±10% only because of reviewer citation repair (2026-08-25): the barrier-removal claim was split off PRS-03 onto its true home PRS-49 with its evidence grade stated, and a frontmatter-declared but body-uncited Rohr source was given a real bridge. Body-recount verified at 1670; no prose was added for its own sake."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission; PRS-08 suffering reframed through narrative phenomenology) [Stump on the atonement — love and union, per bridges file]"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
-  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism; PRS-09 principled framework for cognitive attribution across scales)"
+  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism, Conf High; PRS-49 HCN2 electroceutical repair despite persisting mutation, Conf High; PRS-09 principled framework for cognitive attribution across scales, Conf High)"
   - "traditions/hoffman/wiki.md (interface theory — action rendered at the interface)"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
   - "master/cross_program_index.md (Wright dispatch PROP-2026-05-31-002 — incorporation as the covenanted unity frame)"
-evidence_strength_summary: "Instrumental causality as nested agency = structural fit with multi-scale competency frameworks (Levin PRS-09, formal/empirical in-domain), speculative as theology; merit-from-conception with obstacles-removed = attractor-with-barrier reading (Levin PRS-03), structural analogy only; atonement as union (Stump PRS-05) = serious philosophy, theological in force; the rulers' culpable partial knowledge = textual, with a perspective-limitation reading that is the project's own; the passion's historicity = maximally secure; satisfaction/merit machinery = theological throughout."
+evidence_strength_summary: "Instrumental causality as nested agency = structural fit with multi-scale competency frameworks (Levin PRS-09, formal/empirical in-domain), speculative as theology; merit-from-conception with obstacles-removed = attractor (Levin PRS-03, formal) plus barrier-removal (Levin PRS-49, empirical in-domain), structural analogy only; atonement as union (Stump PRS-05) = serious philosophy, theological in force; the rulers' culpable partial knowledge = textual, with a perspective-limitation reading that is the project's own; the passion's historicity = maximally secure; satisfaction/merit machinery = theological throughout."
 mind_first_reframe: "The passion's efficiency is read as nested agency all the way down: the principal cause works through an instrument that is itself a full agent, and salvation operates not by adding something missing but by removing the obstacles that block limited perspectives from an attractor already established — union already merited, blockage locally cleared."
 central_theme_thread: "Q.47's agents — Judas, the rulers, Pilate, the Father, Christ's own two wills — are perspectives at different scales acting in one event without collapsing into each other; the deicide verdict turns on what each limited perspective could and could not see, and culpability tracks the limitation each agent chose to keep."
 tags: [synthesis, day/236, theme/nested-agency]
-last_qc_at: "2026-08-11T06:28:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-25T18:27:59"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 236 — Contemporary Parallel: How the One Act Works Through Many Agents
@@ -35,7 +36,7 @@ The inquiry-problem common to both frames is **causal attribution in nested agen
 
 ## Resource
 
-**Cognitive attribution across scales.** Tom's PRS-form record of the Levin program carries the closest formal resource: PRS-09, a principled framework for attributing cognition at whatever scale the goal-directedness actually operates, and PRS-03, the morphological attractor formalism — a target state encoded in the system toward which development reliably converges, such that intervention often works not by *constructing* the outcome but by *removing the barrier* that blocks convergence. The empirical base (bioelectric pattern repair, regeneration toward stored targets) is in-domain and strong; its use here is structural analogy, marked as such.
+**Cognitive attribution across scales.** Tom's PRS-form record of the Levin program carries the closest formal resource: PRS-09, a principled framework for attributing cognition at whatever scale the goal-directedness actually operates (Confidence High), and PRS-03, the morphological attractor formalism — a target state encoded in the system toward which development reliably converges, modeled as free-energy minimization along Lagrangian paths (Confidence High). PRS-03 supplies the *target*, not the intervention logic; the barrier-removal half of the analogy belongs to PRS-49, where an ion-channel intervention re-sharpens a flattened voltage gradient and fully repairs a brain defect *while the causative mutation persists* — correction at the pattern layer that overrides the damage beneath it (Confidence High, empirical and in-domain). The empirical base is strong; its use here is structural analogy, marked as such.
 
 The analogy earns its keep at Q.48 a.1, the article the episode rightly flags as strange: "from the beginning of his conception Christ merited our eternal salvation; but on our side there were some obstacles whereby we were hindered from securing the effect of his preceding merits. Consequently, in order to remove such hindrances, it was necessary for Christ to suffer." Salvation is not manufactured at Calvary; it is *already merited*, and the passion removes what blocks limited perspectives from an attractor already in place. That is precisely the logic of barrier-removal toward a stored target — and it quietly reorders the whole satisfaction debate: the question is not how suffering generates a good, but why the blockage is on *our* side and what it costs to clear it.
 
@@ -60,7 +61,9 @@ The central claim holds that conscious agents are individuated by the limitation
 ## Bridges
 
 - **PRS-09, Levin-tradition wiki** (cognitive attribution across scales) — Q.47's distributed agency without flattening; the two-wills article as nested goal-directedness. Evidence: formal/empirical in-domain; structural analogy here.
-- **PRS-03, Levin-tradition wiki** (morphological attractor; barrier-removal interventions) — Q.48 a.1's merit-complete-obstacles-remain logic. Evidence: empirical in-domain; analogy marked speculative.
+- **PRS-03, Levin-tradition wiki** (morphological attractor formalism — free-energy/Lagrangian modeling of a stored target) — the *attractor* half of Q.48 a.1's merit-complete-obstacles-remain logic. Evidence: formal, Confidence High; analogy marked speculative.
+- **PRS-49, Levin-tradition wiki** (HCN2 electroceutical correction: voltage-gradient re-sharpening fully repairs the defect while the mutation persists) — the *barrier-removal* half; correction at the pattern layer overriding the damage beneath. Evidence: empirical in-domain, Confidence High; analogy marked speculative.
+- **PRS-04, Rohr-tradition wiki** (embodied love as epistemology — the body as a site of knowing, Franciscan incarnational theology) — why the passion's efficacy is transacted in a body at all rather than by decree; the obstacle is cleared bodily because bodily is how the love is known. Evidence: theological, Confidence Medium.
 - **PRS-05, Stump-tradition wiki** (suffering and divine permission; union as final cause) — Q.48 a.2 atonement as superabundant disclosure enabling reunion. Evidence: contemporary philosophy, theological in force.
 - **PRS-05, Wright-tradition wiki + PROP-2026-05-31-002 dispatch** (salvation as incorporation) — "all those incorporated in him" as the covenanted-unity frame the efficiency presupposes. Evidence: strong historical-exegetical scholarship.
 - **Hoffman-tradition wiki** (interface theory) — instrumental causality as multi-level act rendered at the interface; the stick really moves the stone. Evidence: speculative metaphysics, consistent with the program.

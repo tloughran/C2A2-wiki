@@ -3,21 +3,21 @@ day: 182
 title: Magnanimity (Contemporary)
 pairs_with: "[[Day-182 - Magnanimity]]"
 length_target_words: 1500
-length_actual_words: 1488
-length_ratio_to_target: 0.99
+length_actual_words: 1637
+length_ratio_to_target: 1.09
 length_tier: short
 mind_first_reframe: "Magnanimity is the self-model calibrated to its real (large) capacity: an agent that accurately estimates high resources attempts correspondingly great policies, and relates to honor as a *signal* of worth rather than its source. It is not pride, because it is anchored in truth about the self; the vice would be mis-estimation in either direction."
 central_theme_thread: "A perspective that accurately knows its own large capacity, and stretches toward great goods within the whole, is not curved in on itself — it is most itself when most given over to the great thing. The great-souled agent computes toward loving unity at scale, undistracted by the small economy of honor."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-28: neuromodulation encoding precision — the inverse variance of prediction error — so confidence is precision on the self-model; PRS-04: the organism as active modeler whose generative model includes itself)"
-  - "traditions/fredrickson/prs_triplets.md (PRS-28: positivity resonance's emergence from broaden-and-build; PRS-01: micro-moments of resonance as what actually builds durable resource, against the isolated agent)"
+  - "traditions/friston/prs_triplets.md (PRS-09, Confidence High: the self-referential generative model — a system modelling itself under Markov-blanket conditions; PRS-28, Confidence Medium: neuromodulation encoding precision, the inverse variance of prediction error, so confidence is precision on that self-model; PRS-04: the organism as active modeler)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01, Confidence High: micro-moments of resonance as what actually builds durable resource, against the isolated agent; PRS-28, Confidence Medium: positivity resonance read as a within-program extension of broaden-and-build)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05: attention as an ontological act, the mode of attending constituting the world that shows up — magnanimity as openness to the great rather than grasp at status)"
   - "traditions/stump/prs_triplets.md (PRS-09: virtue as cooperative causality — magnanimity as a power of the soul transformed toward great ends, not a mere trait)"
   - "traditions/wright/prs_triplets.md (PRS-20: call-and-vocation for a finite, situated agent, tied explicitly to perspective-limitation as the individuating condition)"
   - "traditions/rohr/prs_triplets.md (PRS-05: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-08-15T12:26:29"
+last_qc_at: "2026-08-25T06:21:32"
 last_qc_outcome: "rewrote"
 ---
 
@@ -25,7 +25,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Q.128 enumerates the *parts* of fortitude — the secondary virtues annexed to it: magnificence, magnanimity, patience, and perseverance — the ways courage's core capacity differentiates across the range of difficult goods. Q.129 then treats magnanimity (*magnanimitas*), the virtue of the great-souled person: the one who stretches toward great things, things worthy of great honor, *in accordance with reason*. For Aquinas this is emphatically not pride. The magnanimous person aims high because they truly are capable of high things and judge so rightly; they use honor well, neither despising it nor enslaved to it, because honor is a sign of the virtue they actually possess. The treatise has pivoted: yesterday's axis was *threat*, today's is the agent's estimate of *its own greatness*.
+Q.128 enumerates the *parts* of fortitude — the secondary virtues annexed to it: magnificence, magnanimity, patience, and perseverance — the ways courage's core capacity differentiates across the range of difficult goods. Q.129 then treats magnanimity (*magnanimitas*), the virtue of the great-souled person: the one who stretches toward great things, things worthy of great honor, *in accordance with reason* (a.1). For Aquinas this is emphatically not pride. The magnanimous person aims high because they truly are capable of high things and judge so rightly; they use honor well, neither despising it nor enslaved to it, because honor is a sign of the virtue they actually possess (a.2). Aquinas then argues it is a virtue proper (a.3), annexed to fortitude rather than identical with it (a.5), with confidence and security as its marks (a.6–7), and closes by conceding that goods of fortune *conduce* to magnanimity without constituting it (a.8) — the article that keeps the virtue from collapsing into mere advantage. The treatise has pivoted: yesterday's axis was *threat*, today's is the agent's estimate of *its own greatness*.
 
 Under mind / conscious-realist monism the contemporary version is a question about the self-model. If an agent acts by selecting policies under a model of its own capacities, magnanimity is that model set *accurately at the high end* — an agent that correctly estimates large resources and so rightly attempts correspondingly great goods. The reframe that follows is the project's recurring one: the virtue is calibration to truth, and the surrounding vices (presumption, pusillanimity, ambition, vainglory) are its mis-settings.
 
@@ -35,7 +35,7 @@ Aiming high is praised and feared in the same breath, because our paradigm of "a
 
 ## Resource
 
-**Friston** gives the formal account of the self-estimate. In Tom's PRS-form record of his work, an agent selects policies under a generative model that includes a model of *itself* — its capacities, its expected efficacy. Confidence is precision on that self-model. Magnanimity is the case where that precision is high *and accurate*: the agent correctly infers large capacity and therefore rationally selects ambitious, long-horizon, high-value policies it can in fact carry. This is why magnanimity licenses great attempts without being pride: pride is precision on the self-model set *above* the truth (an over-estimate), whereas magnanimity is high precision that *matches* a genuinely large capacity. The formalism makes Aquinas's careful distinction exact — the difference between the great-souled and the proud is not the size of the aim but its fit to the real self.
+**Friston** gives the formal account of the self-estimate. In Tom's PRS-form record of his work (PRS-09, the minimal theory of consciousness implicit in active inference), a conscious system is one whose generative model is *self-referential* — it models itself, its capacities, its expected efficacy, under Markov-blanket conditions; that record is High-confidence, resting on published derivation. Confidence, in the ordinary sense, is then precision on that self-model (PRS-28, where neuromodulation encodes precision as the inverse variance of prediction error — a Medium-confidence record, its source still forthcoming). Magnanimity is the case where that precision is high *and accurate*: the agent correctly infers large capacity and therefore rationally selects ambitious, long-horizon, high-value policies it can in fact carry. This is why magnanimity licenses great attempts without being pride: pride is precision on the self-model set *above* the truth (an over-estimate), whereas magnanimity is high precision that *matches* a genuinely large capacity. The formalism makes Aquinas's careful distinction exact — the difference between the great-souled and the proud is not the size of the aim but its fit to the real self.
 
 **Fredrickson** supplies the developmental dynamic. In Tom's PRS-form record of her work, positive affect drives upward spirals: broadened repertoires build durable resources, which enable broader action still. Magnanimity is, in this register, the self-concept of an agent well along such a spiral — resourced enough to attempt great works, and attempting them in turn builds further resource. Her data also warn against the counterfeit: the great attempt that is really a bid for status runs on a different (and brittler) circuit than the great attempt that flows from genuine, connection-built resource.
 
@@ -57,8 +57,8 @@ A perspective is individuated by its limits — but not every largeness of self 
 
 ## Bridges
 
-- **Friston** — `traditions/friston/prs_triplets.md`, PRS-28 (precision as the inverse variance of prediction error) with PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal.*
-- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-28 (positivity resonance out of broaden-and-build) with PRS-01 (micro-moments as what builds): the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as the inverse variance of prediction error, Confidence Medium) and PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal — the self-model claim published, the precision-encoding claim still forthcoming.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (micro-moments of resonance as what builds durable resource, Confidence High) with PRS-28 (positivity resonance read as a within-program extension of broaden-and-build, Confidence Medium): the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical on PRS-01; PRS-28 is a program-historiographic reading, not an experimental result.*
 - **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-05 (attention as ontological act; the mode of attending constitutes the world disclosed): true magnanimity as less self-occupied, drawn out by the great good. *Empirical / interpretive.*
 - **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*
 - **Wright** — `traditions/wright/prs_triplets.md`, PRS-20 (call-and-vocation for a finite, situated agent): largeness received by call, honor referred beyond the self. *Theological.*

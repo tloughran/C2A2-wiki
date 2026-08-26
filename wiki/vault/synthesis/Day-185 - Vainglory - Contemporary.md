@@ -3,9 +3,10 @@ day: 185
 title: Vainglory (Contemporary)
 pairs_with: "[[Day-185 - Vainglory]]"
 length_target_words: 1500
-length_actual_words: 1561
-length_ratio_to_target: 1.04
+length_actual_words: 1957
+length_ratio_to_target: 1.30
 length_tier: short
+length_note: "1.30x short target — the episode covers two whole questions (Q.132 vainglory with its six daughters, Q.133 pusillanimity), and the commentary's substantive move is that they are one disorder rather than two, which requires both to be developed before the unification can be earned. Prior recorded count (1561) was wrong; recounted 2026-08-25."
 mind_first_reframe: "Vainglory and pusillanimity are mirror mis-perceptions of the self relative to the whole. Vainglory over-invests in the self's *image* — optimizing for the display of one's excellence in others' models, the reputation signal not merely sought (ambition) but performed. Pusillanimity under-invests in the self's *real capacity* — the self-model set below the truth, so the agent shrinks from great goods within its reach."
 central_theme_thread: "The agent that lives for its own glory has curved its whole computation onto its image; the pusillanimous agent has under-counted the resources actually given it. Both miss loving unity — one by self-display, one by self-diminishment — and both can only be healed by re-sourcing worth from the whole rather than from the self or its audience."
 karpathy_wiki_sources:
@@ -16,7 +17,7 @@ karpathy_wiki_sources:
   - "Wright canonical: boasting only in the Lord / in the cross, Gal 6:14, 1 Cor 1 (Paul and the Faithfulness of God); Rohr canonical: vainglory as the False Self's whole economy; pusillanimity as the failure to claim the True Self's given largeness (Immortal Diamond)"
 evidence_strength_summary: "The appearance-precision and self-estimate accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that worth should be sourced in God's verdict rather than self-display or self-diminishment is theological (Wright, Rohr)."
 tags: [synthesis, day/185, theme/vainglory, theme/self-image, q/132, q/133]
-last_qc_at: "2026-08-16T18:30:03"
+last_qc_at: "2026-08-25T14:28:46"
 last_qc_outcome: "rewrote"
 ---
 

@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-181 - Fearlessness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/181, pars/II-II, q/126-127]
-last_qc_at: "2026-08-07T16:24:28"
+last_qc_at: "2026-08-25T04:21:12"
 last_qc_outcome: "pass"
 ---
 

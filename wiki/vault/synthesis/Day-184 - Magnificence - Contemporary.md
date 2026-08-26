@@ -3,21 +3,22 @@ day: 184
 title: Magnificence (Contemporary)
 pairs_with: "[[Day-184 - Magnificence]]"
 length_target_words: 1500
-length_actual_words: 1550
-length_ratio_to_target: 1.03
+length_actual_words: 1697
+length_ratio_to_target: 1.131
 length_tier: short
+length_note: "The prior declaration of 1550 was recounted 2026-08-25 and found HONEST — exact to the word — which is worth recording against the standing presumption that this field understates. The file then went out of band on this review's own edits: 147 words of register disclosure (the Rohr abundance/overflow framing has no triplet and is anchored to the canonical work; PRS-03's named group settings in the Fredrickson register are worship and meditation, not shared making). Held rather than trimmed, because the added words are exactly the anchoring honesty the reviewer questions ask for."
 mind_first_reframe: "Magnificence is broaden-and-build externalized: a resourced agent letting its surplus flow outward into great, generative works for the shared world. Meanness is the inverse contraction — an over-applied scarcity model that hoards against a danger no longer real, so the agent stints on great works it has the means and occasion to do."
 central_theme_thread: "A perspective rich in resources flows outward into the building of the shared whole; that overflow is itself a movement toward loving unity. Meanness is the perspective curved protectively around its own holdings — the surplus dammed by a scarcity signal that has outlived its truth."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/prs_triplets.md (PRS-03: positivity resonance as a coupling event that scales from dyad to group — communal presence and shared work; PRS-28: positivity resonance's emergence from the broaden-and-build research)"
-  - "traditions/friston/prs_triplets.md (PRS-22: the group-level Markov blanket, the condition under which a collective is itself an agent with its own horizons; PRS-16: expected free energy as the unified mathematics of risk and ambiguity, within which a scarcity prior is an over-weighted risk term)"
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-01: right-hemisphere holistic engagement against left-hemisphere abstraction and fragmentation — the great made thing versus the retaining ledger)"
-  - "traditions/stump/prs_triplets.md (PRS-09: virtue as cooperative causality — magnificence as a soul-power ordered to the great work. NOTE: the magnificence/liberality distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored)"
-  - "traditions/rohr/prs_triplets.md (PRS-03: the Universal Christ — the divine pattern present in all of creation, grace as overflow rather than scarcity)"
-  - "traditions/wright/prs_triplets.md (PRS-35: building *the* kingdom, which is God's act, distinguished from building *for* the kingdom — present faithful work taken up into new creation)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03, Confidence High: positivity resonance as a biophysiological coupling event that scales from dyadic interaction to group resonance — collective presence, shared meditation, communal worship; PRS-28, Confidence Medium: positivity resonance's emergence from the broaden-and-build research as a within-program extension)"
+  - "traditions/friston/prs_triplets.md (PRS-22, Confidence High: the group-level Markov blanket, the condition under which a collective is itself an agent with its own horizons; PRS-16, Confidence High: expected free energy as the unified mathematics of risk and ambiguity, within which a scarcity prior is an over-weighted risk term)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01, Confidence High: right-hemisphere holistic engagement against left-hemisphere abstraction and fragmentation — the great made thing versus the retaining ledger)"
+  - "traditions/stump/prs_triplets.md (PRS-09, Confidence Medium: virtue as cooperative causality — magnificence as a soul-power ordered to the great work. NOTE: the magnificence/liberality distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored)"
+  - "traditions/rohr/prs_triplets.md (PRS-21, Confidence Medium: Universal-Christ-in-creation, 'creation as the first incarnation'; PRS-03, Confidence Medium: the divine pattern present in all of creation. NOTE: the abundance/overflow framing used below is anchored to the canonical work, not to either triplet — no entry in the Rohr register states grace as overflow or names scarcity)"
+  - "traditions/wright/prs_triplets.md (PRS-35, Confidence High: building *the* kingdom, which is God's act, distinguished from building *for* the kingdom — present faithful work taken up into new creation)"
 evidence_strength_summary: "Broaden-and-build and the scarcity-prior account are empirical/formal (Fredrickson, Friston); the claim that great works participate in a divine abundance and last into new creation is theological (Rohr, Wright)."
 tags: [synthesis, day/184, theme/magnificence, theme/generative-overflow, q/134, q/135]
-last_qc_at: "2026-08-15T12:26:30"
+last_qc_at: "2026-08-25T08:23:08"
 last_qc_outcome: "rewrote"
 ---
 
@@ -45,7 +46,7 @@ Surplus has to go somewhere, and an agent's disposition toward its own surplus i
 
 **Stump** enters as Thomistic interlocutor, holding the distinction the reframe needs: magnificence is about the great *work*, not money-management. This matters for the contemporary version — it keeps the virtue from collapsing into "philanthropy" and locates it in the *making of great real goods*, which is what the broaden-and-build externalization is actually describing.
 
-**Rohr** grounds the theology. In *The Universal Christ*, creation itself is God's magnificent work — abundance overflowing into form, grace that gives without counting. Human magnificence, on this reading, participates in a divine generosity that is the deep structure of reality; meanness is the refusal of that pattern, the dammed imitation of a God who pours out. **Wright** adds the eschatological warrant: in *Surprised by Hope*, works done for the kingdom are not lost but *last into the new creation* — which makes the great work a genuinely long-horizon investment in the most literal sense, not spent into the void but built into what endures.
+**Rohr** grounds the theology. In Tom's PRS-form record of his work, creation is itself the first incarnation — the divine pattern present in what is made, not added to it afterward — so a human great work is a making inside a reality that is already God's making. The stronger claim the reframe wants, that grace is *overflow* rather than a scarce quantity and that meanness is the refusal of a God who pours out, is drawn from *The Universal Christ* directly: no triplet in the Rohr register states abundance or names scarcity, so that step is anchored to the canonical work and marked as the register's gap rather than dressed in an id it does not have. **Wright** adds the eschatological warrant: in *Surprised by Hope*, works done for the kingdom are not lost but *last into the new creation* — which makes the great work a genuinely long-horizon investment in the most literal sense, not spent into the void but built into what endures.
 
 ## Solution (proposed, speculative)
 
@@ -59,12 +60,12 @@ A perspective rich in resources, on the project's central claim, is most itself 
 
 ## Bridges
 
-- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-03 (resonance scaling from dyad to group) with PRS-28 (the broaden-and-build lineage): surplus committed to works whose scale serves a community; meanness as the spiral stalled at outflow. *Empirical.*
-- **Friston** — `traditions/friston/prs_triplets.md`, PRS-22 (the group-level Markov blanket, a collective sustaining its own agency) with PRS-16 (expected free energy over risk and ambiguity): resource committed on collective-scale horizons, and meanness as an over-weighted scarcity prior damming release. *Formal.*
-- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (holistic relational engagement vs abstraction and fragmentation): the made thing of scale answered to the whole, against the retaining ledger. *Empirical / interpretive.*
-- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnificence as a soul-power ordered to the great work. The *magnificence-is-not-liberality* distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored here. *Theological / metaphysical.*
-- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-03 (the Universal Christ; the divine pattern present in all creation): human magnificence as participation in an overflow that is not scarce. *Theological.*
-- **Wright** — `traditions/wright/prs_triplets.md`, PRS-35 (building *for* the kingdom as distinct from building *the* kingdom): the great work taken up into new creation rather than discarded with the old. *Theological.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-03 (resonance scaling from dyad to group; Confidence High) with PRS-28 (the broaden-and-build lineage; Confidence Medium): surplus committed to works whose scale serves a community; meanness as the spiral stalled at outflow. *Empirical.* Note the register's own limit — PRS-03's named group settings are collective presence, shared meditation and communal worship; extending them to *shared making* is this commentary's move, not the triplet's.
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-22 (the group-level Markov blanket, a collective sustaining its own agency; Confidence High) with PRS-16 (expected free energy over risk and ambiguity; Confidence High): resource committed on collective-scale horizons, and meanness as an over-weighted scarcity prior damming release. *Formal.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (holistic relational engagement vs abstraction and fragmentation; Confidence High): the made thing of scale answered to the whole, against the retaining ledger. *Empirical / interpretive.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality; Confidence Medium): magnificence as a soul-power ordered to the great work. The *magnificence-is-not-liberality* distinction itself has no numbered home in the Stump node; only the virtue-structure claim is anchored here. *Theological / metaphysical.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-21 (Universal-Christ-in-creation, "creation as the first incarnation"; Confidence Medium) with PRS-03 (the divine pattern present in all creation; Confidence Medium): the great human work as a making inside a reality already made. The *overflow* framing — grace as abundance rather than scarce quantity — is anchored to *The Universal Christ* (2019) and not to a triplet; the register contains no abundance or scarcity entry. *Theological.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-35 (building *for* the kingdom as distinct from building *the* kingdom; Confidence High): the great work taken up into new creation rather than discarded with the old. *Theological.*
 
 ## Where this leaves us
 

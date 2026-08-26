@@ -3,14 +3,14 @@ day: 188
 title: Temperance (Contemporary)
 pairs_with: "[[Day-188 - Temperance]]"
 length_target_words: 2200
-length_actual_words: 1750
-length_ratio_to_target: 0.795
+length_actual_words: 1807
+length_ratio_to_target: 0.82
 length_tier: medium
-length_note: "0.80x medium target — Q.140 is a short precepts-coda and Q.141's eight articles are covered through the two load-bearing problems (homeostasis, scale); complete-not-truncated."
+length_note: "0.82x medium target — Q.140 is a short precepts-coda and Q.141's eight articles are covered through the two load-bearing problems (homeostasis, scale); complete-not-truncated. Count re-verified 2026-08-25 after the Levin bridge repoint."
 karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 agency without vitalism; PRS-04 active modeler; precision-weighting = temperance per bridges)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 cultivated micro-moments of positivity resonance rebuilding vagal tone and resilience — the self-regulation biomarker; PRS-02 love as measurable neurophysiological coupling)"
-  - "traditions/levin/prs_triplets.md (PRS-05 multi-scale cooperative agency in cell communities; PRS-10 continuity of goal-directedness from unicellular to human, graded rather than binary — agency scaling from cell to community)"
+  - "traditions/levin/prs_triplets.md (PRS-09 principled framework for cognitive attribution across scales — goal-directedness defined by empirical toolkit, applicable from molecules to multicellular organisms; PRS-10 continuity of goal-directedness from unicellular to human, graded rather than binary — agency scaling from cell to community)"
   - "traditions/stump/wiki.md (Thomistic interlocutor on virtue)"
   - "traditions/wright/prs_triplets.md (PRS-05 God's homecoming — salvation as incorporation into a renewed-creation people, not disembodiment; the anti-dualist reading of the body)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual awareness — holding both/and without premature resolution; using not grasping)"
@@ -19,7 +19,7 @@ evidence_strength_summary: "Precision-weighting / homeostatic regulation as temp
 mind_first_reframe: "Temperance is well-calibrated interoceptive precision — the embodied agent tracking its necessary appetitive set-points by need rather than maximization — and Aquinas's demotion of it as 'merely individual' is only half right, since internal self-regulation is the homeostatic floor on which collective goods stand."
 central_theme_thread: "Temperance is the agent computing the good under the scarcity of its own body — the most constitutive perspective-limitation there is — working out salvation at the level of the flesh by ordering embodiment toward the whole rather than escaping it."
 tags: [synthesis, day/188, theme/self-regulation-and-scale]
-last_qc_at: "2026-08-15T10:29:19"
+last_qc_at: "2026-08-25T14:28:47"
 last_qc_outcome: "rewrote"
 ---
 
@@ -63,7 +63,7 @@ Temperance is the agent computing the good under the scarcity of its *own body* 
 
 - **Precision-weighting ↔ temperance** — the Friston-tradition wiki, PRS-01/PRS-04. *Why:* temperance as well-calibrated interoceptive precision; "no more or any less than need" is a homeostatic criterion. Evidence: **formal, medium**.
 - **Vagal tone ↔ the physiology of self-regulation** — PRS-01 in the Fredrickson-tradition wiki (cultivated positivity resonance rebuilding vagal tone, resilience, and upward spirals). *Why:* gives temperance a measurable, trainable embodied signature. Evidence: **empirical, medium-high** (identification with the virtue is an extrapolation).
-- **Scaling of agency ↔ the individual/many boundary** — PRS-05 + PRS-10 in the Levin-tradition wiki (multi-scale cooperative agency in cell communities; goal-directedness as graded and continuous rather than categorically human); CROSS-005. *Why:* the agent's internal homeostasis is the precondition for participating in collective goods, pressing Aquinas's ranking. Evidence: **empirical-grounded but philosophical extrapolation**.
+- **Scaling of agency ↔ the individual/many boundary** — PRS-09 + PRS-10 in the Levin-tradition wiki (a principled, falsifiable basis for attributing goal-directedness at *any* scale, molecules through multicellular organisms; goal-directedness as graded and continuous rather than categorically human); CROSS-005. *Repointed 2026-08-25: this bullet previously cited PRS-05, whose Resource line does read "collective intelligence in cell communities" but whose Problem is AI alignment — the record is an AI-architecture triplet, not the biology-of-scale one this argument needs. PRS-09 and PRS-10 are the scale records proper, both Confidence High.* *Why:* the agent's internal homeostasis is the precondition for participating in collective goods, pressing Aquinas's ranking. Evidence: **empirical-grounded but philosophical extrapolation**.
 - **Love 2.0 / positivity resonance ↔ temperance as condition of union** — PRS-02 in the Fredrickson-tradition wiki (love as objective, biologically-grounded coupling among agents); CROSS-005 (love as fundamental in Fredrickson, Stump, Kastrup). *Why:* an intemperate agent cannot stably enter the resonance couplings by which communities form. Evidence: **empirical (resonance) + theological (union)**.
 - **Body-as-temple, use-not-grasp** — *PRS-05 in the Wright-tradition wiki (the "God's homecoming" frame: salvation as incorporation into a renewed-creation people, not relocation of souls)*; *PRS-01 in the Rohr-tradition wiki (non-dual awareness: holding both/and without premature resolution)*. *Why:* Wright's rejection of disembodied-heaven escapism keeps temperance anti-dualist — the body is rightly ordered, not held in contempt; Rohr's non-dual register holds "good but not ultimate" without collapsing to either grasping or despising. Evidence: **theological**.
 

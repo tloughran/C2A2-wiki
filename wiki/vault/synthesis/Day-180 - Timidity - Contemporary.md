@@ -3,8 +3,8 @@ day: 180
 title: Timidity (Contemporary)
 pairs_with: "[[Day-180 - Timidity]]"
 length_target_words: 1500
-length_actual_words: 1466
-length_ratio_to_target: 0.98
+length_actual_words: 1645
+length_ratio_to_target: 1.097
 length_tier: short
 mind_first_reframe: "Under mind-monism, martyrdom is fortitude's limit case — an agent holding a supra-survival good against the maximal immediate threat-gradient of its own death — and timidity is the contest lost, the threat-signal over-weighted until it captures the agent's whole policy."
 central_theme_thread: "Death is the deepest limit of a perspective, and the martyr is the agent who computes toward loving unity even past that limit, trusting a whole it cannot see from within; timidity is the opposite trust, for which the threat-signal is the last word and the horizon collapses to its own survival."
@@ -16,7 +16,7 @@ karpathy_wiki_sources:
   - "Wright canonical: resurrection makes martyrdom rational (The Resurrection of the Son of God; Surprised by Hope); Rohr canonical: dying before you die, the False Self released"
 evidence_strength_summary: "Threat-precision and repertoire-narrowing are formal/empirical (Friston, Fredrickson); the martyrdom limit case rests on a theological premise (Wright, Rohr) the formalism alone cannot supply."
 tags: [synthesis, day/180, theme/martyrdom, theme/threat-precision, q/124, q/125]
-last_qc_at: "2026-08-07T16:24:27"
+last_qc_at: "2026-08-25T04:21:12"
 last_qc_outcome: "rewrote"
 ---
 
@@ -56,8 +56,8 @@ Here the synthesis reaches its sharpest edge. Conscious agents are individuated 
 
 ## Bridges
 
-- **`traditions/friston/prs_triplets.md` (PRS-36 — disorder as a failure to weight prediction errors appropriately; PRS-28 — aberrant precision-weighting on belief updates)** — timidity as over-weighted threat precision; martyrdom as the limit case the formalism cannot anchor without a supra-survival attractor. *Formal (with marked limit).*
-- **Fredrickson, *Positivity* / *Love 2.0* (published corpus)** — fear narrows the repertoire; the martyr's retained breadth as resources anchored beyond survival. *Empirical.* Cited to the corpus rather than a PRS id on purpose: `traditions/fredrickson/prs_triplets.md` carries no mechanism-level broaden-and-build triplet — the entries naming it (PRS-19, PRS-27, PRS-28) are program-historiography.
+- **`traditions/friston/prs_triplets.md` (PRS-36, Confidence **High** — psychopathology as a mathematical attention disorder, a failure to appropriately ignore uninformative prediction errors, with type-1 and type-2 false inference as its two directions; PRS-28, Confidence **Medium** — aberrant precision-weighting on belief updates)** — timidity as over-weighted threat precision; martyrdom as the limit case the formalism cannot anchor without a supra-survival attractor. *Formal (with marked limit).* PRS-28's Medium is carried deliberately: the register notes it rests on a forthcoming lecture abstract representing Friston's stated intent rather than a published derivation, so the precision-psychiatry mapping is a program commitment, not a settled result. PRS-36 is the load-bearing entry here and does carry a worked example.
+- **Fredrickson, *Positivity* / *Love 2.0* (published corpus)** — fear narrows the repertoire; the martyr's retained breadth as resources anchored beyond survival. *Empirical.* Cited to the corpus rather than a PRS id on purpose: a body read of `traditions/fredrickson/prs_triplets.md` (38 entries) finds no triplet stating the narrowing result or the undo effect. Five name broaden-and-build — PRS-07, PRS-19, PRS-27, PRS-28, PRS-34 — as map, historiography, gap-filling, or explicitly *Speculative* material, never as the mechanism. The one entry using "narrow" (PRS-11) means inflammation narrowing the social radius of resonance, a different claim.
 - **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and manipulation at the expense of right-hemisphere holistic engagement)** — fear as left-hemisphere control; the martyr's peace as the grasp released. *Empirical / interpretive.*
 - **Wright (resurrection makes martyrdom rational)** — death relocated to penultimate; the attractor beyond survival made real. *Theological.*
 - **Rohr (dying before you die)** — the False Self relativized, so physical death finds nothing to govern. *Theological.*

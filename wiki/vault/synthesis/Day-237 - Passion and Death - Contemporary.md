@@ -3,13 +3,13 @@ day: 237
 title: Passion and Death (Contemporary)
 pairs_with: "[[Day-237 - Passion and Death]]"
 length_target_words: 2200
-length_actual_words: 1479
-length_ratio_to_target: 0.672
+length_actual_words: 1752
+length_ratio_to_target: 0.796
 length_tier: medium
-length_note: "Runs short of the medium-tier target without padding: Q.49-50's load-bearing articles are each treated substantively, and the constitution prefers short-and-substantive over padded (transcript 2277w sits at the bottom of the medium band)."
+length_note: "Still under the medium-tier target, but no longer outside ±25%. The prior 0.672 reading was verified EXACT at 1479 before edit; reviewer citation repair (2026-08-25) added the Stump PRS-14/15 corporate-substance resource the day most needed and had left as an id-less frontmatter gesture, plus Levin PRS-08 and Q.50 article numbers, bringing it to 1752. Tier is CORRECT — live transcript recount is 2440 body words (declared 2277 understates), squarely medium. The remaining shortfall is deliberate: Q.49-50's load-bearing articles are each treated, and the constitution prefers short-and-substantive over padded."
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-11 cancer as dissociative identity disorder of the body; PRS-09 cognitive attribution across scales)"
-  - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission; PRS-04 final causality and modern biology)"
+  - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control, Conf High; PRS-08 cells as cognitive agents in anatomical morphospace, Conf High; PRS-11 cancer as dissociative identity disorder of the body, Conf High; PRS-09 cognitive attribution across scales, Conf High)"
+  - "traditions/stump/prs_triplets.md (PRS-14 hylomorphic metaphysics of corporate substance; PRS-15 non-metaphorical body of Christ; PRS-05 suffering and divine permission; PRS-04 final causality and modern biology)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "master/cross_program_index.md (Wright dispatch PROP-2026-05-31-002 — corporate unity; Stump corporate-substance node)"
@@ -17,15 +17,15 @@ evidence_strength_summary: "Mystical body as one-person-with-head = strong struc
 mind_first_reframe: "Redemption works through a real multi-scale organism — the mystical body literally 'one person' across its members — so the head's act propagates to the members as a state-change in a single individual, not as a transaction between separate parties; and death is read through the form, the soul as the organizing principle whose departure ends the organism while the person persists as its subject."
 central_theme_thread: "The mystical body is the project's loving unity made concrete: many limited perspectives reckoned as one person without ceasing to be many, the hand redeeming the foot; and the 'two-fold sin' — a race-level barrier plus personal sins — is perspective-limitation at two scales, the common and the individual, each needing its own clearing."
 tags: [synthesis, day/237, theme/corporate-body]
-last_qc_at: "2026-08-11T06:28:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-25T18:30:14"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 237 — Contemporary Parallel: One Person With Many Members
 
 ## Frame
 
-Day 236 ended pointing here, and Q.49 a.1 delivers the image the whole run has been building toward. Explaining how the passion forgives the sins of people who were not present at it, Aquinas reaches for the body: "For just as the natural body is one, though made up of diverse members, so the whole church, Christ's mystic body, is reckoned as one person with its head, which is Christ." The redemption travels member-to-head the way an injury healed by the hands restores the whole body — "as if a man by the good industry of his hands were to redeem himself from a sin committed with his feet." Q.49 then lists the effects (deliverance from sin, from the devil's power, from punishment, reconciliation, the opening of heaven, merited exaltation), and Q.50 turns to the death itself, posing the period's hardest identity questions: was the Godhead severed from the flesh, was Christ "a man" during the three days, was the dead body identically the same.
+Day 236 ended pointing here, and Q.49 a.1 delivers the image the whole run has been building toward. Explaining how the passion forgives the sins of people who were not present at it, Aquinas reaches for the body: "For just as the natural body is one, though made up of diverse members, so the whole church, Christ's mystic body, is reckoned as one person with its head, which is Christ." The redemption travels member-to-head the way an injury healed by the hands restores the whole body — "as if a man by the good industry of his hands were to redeem himself from a sin committed with his feet." Q.49 then lists the effects (deliverance from sin, from the devil's power, from punishment, reconciliation, the opening of heaven, merited exaltation), and Q.50 turns to the death itself, posing the period's hardest identity questions: whether the Godhead was severed from the flesh (a.2) and from the soul (a.3), whether Christ was "a man" during the three days (a.4), and whether the dead body was identically the same body (a.5).
 
 The contemporary questions: **what kind of thing is a body whose many members are 'one person,' such that one member's act changes all? And what carries a body's identity across the discontinuity of death?**
 
@@ -35,7 +35,9 @@ Two inquiry-problems run through the day. The first is **the reality of a compos
 
 ## Resource
 
-**The organism as a real multi-scale individual.** Tom's PRS-form record of the Levin program is the resource exactly fitted to the first problem. PRS-01 (morphogenetic control) and PRS-09 (cognitive attribution across scales) describe an organism as a genuine individual whose unity is not the sum of its cells but a higher-order goal-directed agent that the cells compose and serve — and whose competency operates at the level of the whole, repairing toward a target the individual cells do not separately represent. PRS-11 (cancer as the body's dissociative breakdown) is the converse: when a cell's perspective collapses to its own scale and stops computing the whole body's goal, the unity fails and the part turns malignant. This is, with striking precision, the structure Aquinas needs: the church as one body whose members can act for the whole or defect to their own scale, and whose head's health is the whole body's health. The biology is empirical and in-domain; its transfer to the mystical body is structural analogy, but an unusually exact one — and it makes the "one person" claim something other than pious hyperbole.
+**The organism as a real multi-scale individual.** Tom's PRS-form record of the Levin program is the resource exactly fitted to the first problem. PRS-01 (morphogenetic control — bioelectric circuits encoding anatomical target states, Confidence High) supplies the stored target; PRS-08 (cells as cognitive agents navigating anatomical morphospace, Confidence High) supplies the claim that does the real work here — that a cell *collective* is itself a problem-solving agent, open to top-down, information-level intervention rather than only bottom-up molecular manipulation; and PRS-09 (cognitive attribution across scales, Confidence High) licenses saying so at the level of the whole. Together they describe an organism as a genuine individual whose unity is not the sum of its cells but a higher-order goal-directed agent that the cells compose and serve — repairing toward a target the individual cells do not separately represent. PRS-11 (cancer as the body's dissociative breakdown) is the converse: when a cell's perspective collapses to its own scale and stops computing the whole body's goal, the unity fails and the part turns malignant. This is, with striking precision, the structure Aquinas needs: the church as one body whose members can act for the whole or defect to their own scale, and whose head's health is the whole body's health. The biology is empirical and in-domain; its transfer to the mystical body is structural analogy, but an unusually exact one — and it makes the "one person" claim something other than pious hyperbole.
+
+**The corporate substance, stated non-analogically.** The Levin transfer is analogy; the Stump-tradition record answers the first problem *directly*, and it should be named rather than gestured at. PRS-14 (a hylomorphic metaphysics of corporate substance — "united somethings-or-others" as genuinely formed composites whose form organizes human constituents without dissolving their personhood, anchored in collective-neuroscience findings on neural coupling) and PRS-15 (the *non-metaphorical* body of Christ — the claim that "body of Christ" names a real hylomorphic composite, empirically anchored but not reducible to neural mechanism) are precisely Q.49 a.1's premise, argued in contemporary metaphysics rather than borrowed from biology. Evidence: live analytic metaphysics with an empirical anchor; theological in its ecclesial application.
 
 **Form as the bearer of identity.** PRS-04 in the Stump-tradition wiki (Thomistic formal and final causality recovered for contemporary biology, with Levin's morphogenesis as the test case) is the resource for the second problem. If the soul is the *form* — the organizing principle that makes this matter a living human — then identity tracks the form, not the matter, and Aquinas's hard sayings become consistent: the dead body is "the same" only through the person (the hypostasis) that remains its subject, not through any unchanging stuff, because the form that made it a man has departed. PRS-02 in the Kastrup-tradition wiki (individual identity within a monist whole) supplies the further reading that the persisting subject is the locus of individuation even when the composite is dissolved.
 
@@ -57,10 +59,11 @@ The mystical body is the central theme's loving unity made flesh: many limited p
 
 ## Bridges
 
-- **PRS-01 + PRS-09, Levin-tradition wiki** (morphogenetic control; cross-scale cognitive attribution) — the mystical body as a real multi-scale individual whose head's act is the members'. Evidence: empirical in-domain; structural analogy, unusually exact.
+- **PRS-14 + PRS-15, Stump-tradition wiki** (hylomorphic corporate substance; the *non-metaphorical* body of Christ) — Q.49 a.1's "reckoned as one person with its head" argued directly, not by analogy; the real composite whose form organizes members without dissolving them. Evidence: live analytic metaphysics with a collective-neuroscience anchor; theological in ecclesial force.
+- **PRS-01 + PRS-08 + PRS-09, Levin-tradition wiki** (morphogenetic control; cells as cognitive agents in morphospace; cross-scale cognitive attribution) — the mystical body as a real multi-scale individual whose head's act is the members'. Evidence: empirical in-domain, Confidence High; structural analogy, unusually exact.
 - **PRS-11, Levin-tradition wiki** (cancer as the body's dissociation) — the member defecting to its own scale as the converse of incorporation; sin-as-malignancy read structurally. Evidence: empirical in-domain; analogy speculative.
 - **PRS-04, Stump-tradition wiki** (formal/final causality for biology) — soul-as-form bearing identity through the discontinuity of death; the "not a man in the tomb" verdict made consistent. Evidence: live analytic-Thomist metaphysics.
-- **PRS-05 + PROP-2026-05-31-002, Wright-tradition wiki** (incorporation) — the second-temple content of "one body," salvation as inclusion in a people. Evidence: strong historical-exegetical scholarship.
+- **PRS-05 + PRS-03 + PROP-2026-05-31-002, Wright-tradition wiki** (incorporation; inaugurated eschatology) — the second-temple content of "one body," salvation as inclusion in a people; and Q.49's effects read as *already decisive, not yet fully elaborated* — the gate opened while the members still work it out. Evidence: strong historical-exegetical scholarship.
 - **PRS-02, Kastrup-tradition wiki** (individuation within monism) — the person as persisting subject of identity when the composite dissolves. Evidence: speculative metaphysics.
 
 ## Where this leaves us

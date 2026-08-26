@@ -3,13 +3,14 @@ day: 183
 title: Ambition (Contemporary)
 pairs_with: "[[Day-183 - Ambition]]"
 length_target_words: 1500
-length_actual_words: 1548
-length_ratio_to_target: 1.03
+length_actual_words: 1689
+length_ratio_to_target: 1.13
+length_note: "Covers two Summa questions (Q.130 presumption, Q.131 ambition, four articles). The overrun past ±10% is citation apparatus added at the 2026-08-25 review — per-article anchors, the Friston PRS-09 repoint, and Confidence carried on three records — not expansion of the argument; the argument itself is unchanged from the in-band draft."
 length_tier: short
 mind_first_reframe: "Presumption and ambition are the two excesses opposed to magnanimity. Presumption is the self-model set above the truth — precision on one's own capacity over-weighted, so the agent attempts beyond its real resources. Ambition is the reputation signal mis-weighted as a terminal reward — honor, which should be read as a *sign* of worth, treated as the object to be maximized."
 central_theme_thread: "Ambition curves the perspective in on its own standing: the agent optimizes for its image in others' models rather than for the good those others share. A perspective collapsed onto its reputation has mistaken the sign of worth for worth, and so computes toward its own glory instead of toward loving unity."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-28: precision as the inverse variance of prediction error, so presumption is precision on the self-model set above the truth; PRS-04: the organism as active modeler, within which honor functions as an instrumental rather than terminal term)"
+  - "traditions/friston/prs_triplets.md (PRS-09, Confidence High: the self-referential generative model — the home of the self-model claim; PRS-28, Confidence Medium: precision as the inverse variance of prediction error, so presumption is over-precision on that self-model; PRS-04: the organism as active modeler, within which honor functions as an instrumental rather than terminal term)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02: love as measurable neurophysiological coupling rather than sentiment — the real thing that status-seeking counterfeits; PRS-01: micro-moments of resonance as what actually builds against isolation)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01: left-hemisphere abstraction and fragmentation — craving for the explicit token, recognition and status, detached from the reality it should signal)"
   - "traditions/stump/prs_triplets.md (PRS-22: a structured taxonomy of failure modes for the will-intellect system, vice as neither mere trait-deficit nor mere cognitive error — Thomistic interlocutor)"
@@ -17,7 +18,7 @@ karpathy_wiki_sources:
   - "Wright canonical: the glory that comes from God vs the glory sought from men, John 5:44 (Jesus and the Victory of God). NOTE: no numbered triplet in traditions/wright/prs_triplets.md covers glory-from-God-versus-glory-from-men; the nearest entries are PRS-20 (call-and-vocation) and PRS-8 (many perspective-limited agents as one body), neither of which is this claim. Cited canonically and the gap stated rather than anchored to an approximate id."
 evidence_strength_summary: "The over-precise self-model and the social-signal accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that honor should be referred to God rather than sought from men is theological (Wright, Rohr)."
 tags: [synthesis, day/183, theme/ambition, theme/reputation-signal, q/130, q/131]
-last_qc_at: "2026-08-15T12:26:30"
+last_qc_at: "2026-08-25T06:23:27"
 last_qc_outcome: "rewrote"
 ---
 
@@ -25,7 +26,7 @@ last_qc_outcome: "rewrote"
 
 ## Frame
 
-Having set magnanimity as the calibrated center of the self-estimate, Aquinas now treats its two *excesses*. Q.130 covers presumption (*praesumptio*): attempting things beyond one's power, the vice that overshoots one's real greatness. Q.131 covers ambition (*ambitio*): the inordinate desire for honor — desiring honor that is not due, or not referred to God and the good of others, or sought for oneself as one's own rather than received as a gift. The hinge of Aquinas's treatment is his account of honor itself: honor is a *sign* of virtue or excellence, owed in recognition of a real good. Ambition's disorder is to treat the sign as the thing — to pursue the recognition rather than the reality it should mark.
+Having set magnanimity as the calibrated center of the self-estimate, Aquinas now treats its two *excesses*. Q.130 covers presumption (*praesumptio*): attempting things beyond one's power (a.1), and whether it is opposed to magnanimity (a.2). Q.131 covers ambition (*ambitio*): whether the desire for honor can be inordinate (a.1) — desiring honor that is not due, or not referred to God and the good of others, or sought for oneself as one's own rather than received as a gift — and whether ambition is opposed to magnanimity (a.2). The hinge of Aquinas's treatment is his account of honor itself: honor is a *sign* of virtue or excellence, owed in recognition of a real good. Ambition's disorder is to treat the sign as the thing — to pursue the recognition rather than the reality it should mark.
 
 Under mind / conscious-realist monism the contemporary version splits cleanly along two parameters. Presumption is the self-model set *above* the truth: precision on one's own capacity over-weighted, so the agent selects policies its real resources cannot carry. Ambition is the *honor signal* mis-weighted: a social-feedback term that should be read as evidence of worth is instead promoted to a terminal reward and maximized for itself.
 
@@ -35,7 +36,7 @@ Two distinct failures share a surface. The first is over-estimation: an agent th
 
 ## Resource
 
-**Friston** gives the formal account of both. In Tom's PRS-form record of his work, presumption is the self-model over-precise relative to the truth — the mirror of pusillanimity's under-precision — so the agent's policy selection runs on a capacity estimate the world will not support. Ambition is a different error: honor functions as a social prediction signal (how the agent is modeled by others, fed back to the agent), and in a well-ordered agent this signal is *instrumental* — evidence that updates the self-model and guides contribution. Ambition promotes the signal to a *terminal* term in the value function and maximizes it directly. This is the formal shape of "seeking the sign rather than the thing": optimizing the estimate-of-being-excellent instead of the being-excellent that the estimate was tracking — a classic case of a proxy captured and gamed.
+**Friston** gives the formal account of both. In Tom's PRS-form record of his work, the self-model is not an add-on but constitutive: PRS-09 (High confidence, published) makes a self-referential generative model — a system that models itself under Markov-blanket conditions — the minimal condition of a conscious agent, and PRS-28 (Medium confidence, source still forthcoming) supplies precision as the inverse variance of prediction error. Presumption is then the self-model over-precise relative to the truth — the mirror of pusillanimity's under-precision — so the agent's policy selection runs on a capacity estimate the world will not support. Ambition is a different error: honor functions as a social prediction signal (how the agent is modeled by others, fed back to the agent), and in a well-ordered agent this signal is *instrumental* — evidence that updates the self-model and guides contribution. Ambition promotes the signal to a *terminal* term in the value function and maximizes it directly. This is the formal shape of "seeking the sign rather than the thing": optimizing the estimate-of-being-excellent instead of the being-excellent that the estimate was tracking — a classic case of a proxy captured and gamed.
 
 **Fredrickson** supplies the social diagnosis. In Tom's PRS-form record of her work, genuine positivity resonance is a real coupling between agents that builds durable shared resource. Status-seeking is its counterfeit: honor sought *for the self* runs on a circuit that does not build connection and is chronically insecure, because the supply of recognition is external and rivalrous. The ambitious agent is, on this reading, optimizing a metric that cannot deliver what genuine connection delivers — which is why the pursuit of honor for its own sake tends to a kind of starvation.
 
@@ -57,10 +58,10 @@ Ambition is, in the project's terms, a perspective curved in on its own standing
 
 ## Bridges
 
-- **Friston** — `traditions/friston/prs_triplets.md`, PRS-28 (precision as inverse variance of prediction error) with PRS-04 (the active modeler): presumption as capacity over-estimate; ambition as the honor signal promoted from instrumental to terminal and maximized for itself. *Formal.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as inverse variance of prediction error, Confidence Medium) and PRS-04 (the active modeler): presumption as capacity over-estimate; ambition as the honor signal promoted from instrumental to terminal and maximized for itself. *Formal — self-model claim published, precision-encoding claim still forthcoming; the promotion of a social signal to a terminal term is this commentary's extension, not a register claim.*
 - **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-02 (love as measurable coupling, not sentiment) with PRS-01 (micro-moments against isolation): honor sought for the self runs on a brittle, rivalrous circuit that cannot build what real coupling builds. *Empirical.*
 - **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (left-hemisphere abstraction and manipulation): attention captured by one's own representation in others' minds — the explicit token prized over the living reality. *Empirical / interpretive.*
-- **Stump** — `traditions/stump/prs_triplets.md`, PRS-22 (a taxonomy of failure modes for the will-intellect system): the disorder located precisely, as mistaking appearance for substance rather than as a bare character defect. *Theological / metaphysical.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-22 (a taxonomy of failure modes for the will-intellect system, Confidence Medium): the disorder located precisely, as mistaking appearance for substance rather than as a bare character defect. The record's own resource line names *esteem* among the real goods each vice misorders "in object, manner, or measure" — which is ambition's good exactly, so this is a close rather than an approximate fit. *Theological / metaphysical.*
 - **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-05 (false self to true self): worth re-sourced from titles and recognition to what is received. *Theological.*
 - **Wright (canonical; no numbered home)** — the glory from God against the glory sought from men, John 5:44 (*Jesus and the Victory of God*). The Wright node carries no triplet covering this contrast; the citation is canonical and the wiki gap is stated rather than papered over with a near-miss id. *Theological.*
 

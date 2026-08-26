@@ -3,22 +3,22 @@ day: 179
 title: Fortitude (Contemporary)
 pairs_with: "[[Day-179 - Fortitude]]"
 length_target_words: 2200
-length_actual_words: 1830
-length_ratio_to_target: 0.83
+length_actual_words: 1967
+length_ratio_to_target: 0.894
 length_tier: medium
 length_note: "Q.122 is a recapitulative precepts question; the day's substantive weight falls on Q.123 alone, treated fully without padding — short-and-substantive preferred per constitution."
 mind_first_reframe: "Under mind-monism, fortitude is an agent's capacity to keep its policy anchored to a long-horizon, often other-regarding good against the fast, narrowing immediate threat-gradient of fear; endurance is its principal act because holding the distant attractor while the steep local gradient persists unrelieved is the harder computation."
 central_theme_thread: "Fear is the sharpest report of perceived resource-limitation, and fortitude is the agent continuing to compute toward loving unity through that report — remaining faithful within the limitation rather than conquering it — which is 'salvation in fear and trembling' almost word for word."
 karpathy_wiki_sources:
-  - "traditions/fredrickson/prs_triplets.md (PRS-01: micro-moments of positivity resonance cultivated through loving-kindness practice, raising vagal tone; PRS-28: the emergence of positivity resonance out of the earlier broaden-and-build research)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-01, Conf High: micro-moments of positivity resonance cultivated through loving-kindness practice, raising vagal tone and enhancing resilience; PRS-27, Conf n/a: the author-curated canonical map of the broaden-and-build / positivity-resonance program — the register's pointer to the published findings, since no triplet states the narrowing or undo-effect results directly)"
   - "traditions/friston/prs_triplets.md (PRS-16: expected free energy as the unified mathematics of risk and ambiguity over a generative model's horizons; PRS-04: the organism as active modeler generating and testing predictions)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01: left-hemisphere abstraction, fragmentation and manipulation set against right-hemisphere holistic, relational engagement with reality)"
   - "traditions/stump/prs_triplets.md (PRS-13: suffering and flourishing as teleologically linked rather than opposed, suffering instrumentally ordered to personal union — Thomistic interlocutor)"
-  - "traditions/wright/prs_triplets.md (PRS-04: resurrection as historical and cosmological — the bodily resurrection argued on ordinary historical criteria)"
+  - "traditions/wright/prs_triplets.md (PRS-11, Conf High: the homecoming reading of the canon — Christian hope as the renewal of creation through God's arrival, displacing souls-go-to-heaven eschatology; PRS-04, Conf Medium: the bodily resurrection argued on ordinary historical criteria)"
   - "traditions/rohr/prs_triplets.md (PRS-37: the path of descent as the transition mechanism, and modernity's manufactured ascent as a substitute for it)"
 evidence_strength_summary: "Resilience and undo-effect are empirical (Fredrickson); long-horizon attractor vs immediate gradient is formal (Friston); courage-as-standing is empirical/interpretive (McGilchrist); resurrection-grounded endurance is theological (Wright, Rohr)."
 tags: [synthesis, day/179, theme/fortitude, theme/long-horizon-attractor, q/122, q/123]
-last_qc_at: "2026-08-15T12:26:28"
+last_qc_at: "2026-08-25T02:30:38"
 last_qc_outcome: "rewrote"
 ---
 
@@ -44,7 +44,7 @@ Every embodied agent is built to flee threat. The threat-response is fast, somat
 
 **Stump** enters as Thomistic interlocutor, and here she is more than a foil: her work on fortitude-in-suffering and on the second-personal texture of endurance illuminates why fortitude's principal act is to *sustain* — to remain in relation, and in fidelity, under a duress one cannot end.
 
-**Wright** grounds the scriptural and metaphysical claim that makes endurance rational. In *The Resurrection of the Son of God* and *Surprised by Hope*, the resurrection reframes death itself: if new creation is real and bodily, then the worst the threat-signal can promise — death — is not the final horizon, and an agent may rationally hold to a good *beyond* it. Courage, on this account, is not the suppression of an accurate fear but the relocation of the agent's true long-horizon attractor past the point the fear can reach. **Rohr** gives the contemplative form: *necessary suffering* and "dying before you die" — the willingness to let the False Self's survival-project be relativized, which is precisely what frees the agent to endure without being governed by the threat to that self.
+**Wright** grounds the scriptural and metaphysical claim that makes endurance rational. In *The Resurrection of the Son of God* and *Surprised by Hope*, the resurrection reframes death itself: if new creation is real and bodily, then the worst the threat-signal can promise — death — is not the final horizon, and an agent may rationally hold to a good *beyond* it. Courage, on this account, is not the suppression of an accurate fear but the relocation of the agent's true long-horizon attractor past the point the fear can reach. **Rohr** gives the contemplative form: *necessary suffering* — the path of descent as the transition the modern West has learned to manufacture its way around — and, in *Immortal Diamond* and *Falling Upward*, "dying before you die": the willingness to let the False Self's survival-project be relativized, which is precisely what frees the agent to endure without being governed by the threat to that self. (The descent claim is carried by the register; the False Self vocabulary is anchored in the canonical works, which the register does not restate.)
 
 ## Solution (proposed, speculative)
 
@@ -60,11 +60,11 @@ This is where the project's central claim becomes almost literal. Conscious agen
 
 ## Bridges
 
-- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (loving-kindness practice raising vagal tone) with PRS-28 (positivity resonance's descent from broaden-and-build): endurance as the non-collapse of the action-repertoire under fear, and resilience as trainable with a physiological signature. *Empirical.*
+- **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (loving-kindness practice raising vagal tone, enhancing resilience; Conf High) for the trainability claim, with PRS-27 (the author-curated canonical map of the broaden-and-build / positivity-resonance program) as the register's pointer to the published narrowing and undo-effect findings, which no triplet states in its own right: endurance as the non-collapse of the action-repertoire under fear, and resilience as trainable with a physiological signature. *Empirical (published program); the register anchor for the narrowing/undo results is a map entry, not a claim entry.*
 - **Friston** — `traditions/friston/prs_triplets.md`, PRS-16 (expected free energy spanning risk and ambiguity) with PRS-04 (the organism as active modeler): fortitude as a long-horizon expected-value attractor held against a steep short-horizon threat gradient; endurance as the harder computation. *Formal / interpretive.*
 - **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-01 (left-hemisphere manipulation vs right-hemisphere holistic relational engagement): courage as presence to the whole, danger included, versus the grasp for control. *Empirical / interpretive.*
 - **Stump** — `traditions/stump/prs_triplets.md`, PRS-13 (suffering and flourishing teleologically linked, ordered to personal union): endurance as remaining in fidelity and relation under unendable duress. *Theological / philosophical.*
-- **Wright** — `traditions/wright/prs_triplets.md`, PRS-04 (resurrection as historical and cosmological): death relocated from final horizon to penultimate, making endurance rational. *Theological.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-11 (the homecoming reading of the canon: hope as creation renewed by God's arrival, replacing souls-go-to-heaven eschatology; Conf High) for the horizon claim — death relocated from final horizon to penultimate, making endurance rational — with PRS-04 (the bodily resurrection argued on ordinary historical criteria; Conf Medium) for the evidential argument underneath it. *Theological.*
 - **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-37 (the path of descent, and modernity's manufactured ascent that substitutes for it): the necessary falling that fortitude does not evade. *Theological.*
 
 ## Where this leaves us

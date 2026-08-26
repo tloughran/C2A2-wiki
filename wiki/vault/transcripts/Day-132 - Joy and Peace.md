@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-132 - Joy and Peace - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/132, pars/2, q/28-29]
-last_qc_at: "2026-07-29T04:23:36"
+last_qc_at: "2026-08-25T16:22:33"
 last_qc_outcome: "pass"
 ---
 
