@@ -196,7 +196,13 @@ def compute_vault_yield(repo):
     daily = defaultdict(lambda: {"links_added": 0, "links_removed": 0,
                                  "files_added": 0, "commits": 0,
                                  "prs_added": 0, "prs_articulated": 0,
-                                 "signals": 0})
+                                 "signals": 0,
+                                 # Sewing-lane yield. These essays already landed
+                                 # inside files_added, undifferentiated -- present
+                                 # but unreadable, which is the same failure the
+                                 # signals axis had. Split out so the lane's output
+                                 # can be seen as its own thing.
+                                 "synthesis_essays": 0, "synthesis_words": 0})
     for line in log:
         try:
             sha, date = line.split("|")
@@ -207,18 +213,28 @@ def compute_vault_yield(repo):
         diff = subprocess.run(
             ["git", "-C", repo, "show", sha, "--", "wiki/**/*.md", "wiki/*.md"],
             capture_output=True, text=True).stdout
+        cur = None   # file the current hunk belongs to, for per-path attribution
         for ln in diff.splitlines():
-            if ln[:4] in ("+++ ", "--- "):
+            if ln.startswith("+++ "):
+                path = ln[4:].strip()
+                cur = path[2:] if path.startswith("b/") else path
+                continue
+            if ln.startswith("--- "):
                 continue
             if ln.startswith("+"):
                 d["links_added"] += ln.count("[[")
+                if cur and cur.startswith("wiki/synthesis/"):
+                    d["synthesis_words"] += len(ln[1:].split())
             elif ln.startswith("-"):
                 d["links_removed"] += ln.count("[[")
         st = subprocess.run(
             ["git", "-C", repo, "show", "--name-status", "--pretty=",
              "--diff-filter=A", sha, "--", "wiki/"],
             capture_output=True, text=True).stdout
-        d["files_added"] += sum(1 for x in st.splitlines() if x.strip().endswith(".md"))
+        _added = [x for x in st.splitlines() if x.strip().endswith(".md")]
+        d["files_added"] += len(_added)
+        d["synthesis_essays"] += sum(
+            1 for x in _added if x.split("\t")[-1].startswith("wiki/synthesis/"))
 
     # PRS-triplet yield: two per-day series, both from the WS2 single source of
     # truth (architecture/metrics/prs_yield_detail.csv, produced by prs_yield.py),

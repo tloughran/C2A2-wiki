@@ -188,8 +188,82 @@ def compute_census(data):
             "prs_added": sum(d.get("prs_added", 0) for d in yield_daily),
             "prs_articulated": sum(d.get("prs_articulated", 0) for d in yield_daily),
         },
+        "synthesis": synthesis_census(yield_daily),
     }
     return census
+
+
+def synthesis_census(yield_daily, today=None):
+    """Sewing-lane yield: the wiki/synthesis/<a>_<b>_bridge.md essays.
+
+    Four numbers, all raw counts. NO coverage ratio: the cast is not fixed --
+    Loughran and MacIntyre are structural and appear in every version, while the
+    other thinkers may belong only to this one, so any "N of C(k,2) possible"
+    denominator would move for reasons that have nothing to do with the lane's
+    output. Tom's call, 2026-08-26.
+
+    essays/words come from the per-day series (git-derived, objective).
+    traditions is current-state from the filenames.
+    stale_days is days since the last day the series recorded an essay -- the
+    lane is weekly, so 14d is two missed cycles (warn) and 21d is three (fail).
+    Boundaries are inclusive: at exactly 14 days two expected runs have already
+    produced nothing, which is the thing worth flagging, not the day after.
+    Carries its own provenance for the same reason the signal axis has to: a
+    frozen source and a genuinely quiet agent both render as zero, and the
+    signals axis sat at 0 for six weeks with nobody able to tell which it was."""
+    import datetime, glob, os, re
+    essays = sum(d.get("synthesis_essays", 0) for d in yield_daily)
+    words = sum(d.get("synthesis_words", 0) for d in yield_daily)
+
+    days = [d["date"] for d in yield_daily if d.get("synthesis_essays", 0) > 0]
+    last = max(days) if days else None
+    stale = None
+    if last:
+        today = today or datetime.date.today()
+        try:
+            stale = (today - datetime.date(*map(int, last.split("-")))).days
+        except (TypeError, ValueError):
+            stale = None
+
+    syn_dir = PROJECT_ROOT / "wiki" / "synthesis"
+    names, pairs, unparsed = set(), set(), 0
+    for f in sorted(glob.glob(os.path.join(str(syn_dir), "*.md"))):
+        m = re.match(r"^(.+?)_(.+?)_bridge\.md$", os.path.basename(f))
+        if not m:
+            unparsed += 1
+            continue
+        a_, b_ = m.group(1).lower(), m.group(2).lower()
+        names.update((a_, b_))
+        pairs.add(frozenset((a_, b_)))
+    on_disk = len(pairs) + unparsed
+
+    status = "ok"
+    if stale is None:
+        status = "unknown"
+    elif stale >= 21:
+        status = "fail"
+    elif stale >= 14:
+        status = "warn"
+
+    return {
+        "essays": essays,
+        "words": words,
+        "traditions": len(names),
+        "stale_days": stale,
+        "status": status,
+        # ASSERTION, not an indicator. One essay per pair is the invariant; a
+        # divergence means the lane wrote a second essay for a pair it had
+        # already bridged. Reported, never silently reconciled.
+        "pairs_on_disk": len(pairs),
+        "pairs_equal_essays": (len(pairs) == on_disk and unparsed == 0),
+        "unparsed_filenames": unparsed,
+        "provenance": {
+            "essays_words": "yield_daily, git first-seen over wiki/synthesis/",
+            "traditions_pairs": str(syn_dir),
+            "last_essay_day": last,
+            "cadence": "c2a2-sewing-agent-weekly; warn >=14d, fail >=21d",
+        },
+    }
 
 
 # --- Rendering ---------------------------------------------------------------
@@ -249,6 +323,25 @@ def render_logbook_entry(census, fresh):
              "links added %s, files added %s, PRS first-seen %s, PRS articulated %s." % (
                  _fmt(y["yield_days"]), _fmt(y["links_added"]), _fmt(y["files_added"]),
                  _fmt(y["prs_added"]), _fmt(y["prs_articulated"])))
+    sy = census.get("synthesis") or {}
+    if sy:
+        _stale = "unknown" if sy["stale_days"] is None else ("%s d" % sy["stale_days"])
+        L.append("**Synthesis bridges (sewing lane)** [descriptive]: %s essays; %s words; "
+                 "%s traditions touched; last essay %s ago (%s)." % (
+                     _fmt(sy["essays"]), _fmt(sy["words"]), _fmt(sy["traditions"]),
+                     _stale, sy["status"].upper()))
+        L.append("  Source: %s. Cadence: %s." % (
+            sy["provenance"]["traditions_pairs"], sy["provenance"]["cadence"]))
+        if sy["status"] in ("warn", "fail"):
+            L.append("  ^ the lane has missed cycles. A zero here is only meaningful "
+                     "against this staleness reading -- check the source before "
+                     "concluding the agent is idle.")
+        if not sy["pairs_equal_essays"]:
+            L.append("  ^ ASSERTION FAILED: %s distinct pairs but %s parsed essays "
+                     "(%s unparsed filenames). The lane has bridged a pair twice, or a "
+                     "filename does not match <a>_<b>_bridge.md." % (
+                         _fmt(sy["pairs_on_disk"]), _fmt(sy["essays"]),
+                         _fmt(sy["unparsed_filenames"])))
     L.append("")
     L.append("**Consumed, NOT recomputed here** (owned by the 14a/15c self-awareness system; "
              "spec section 7a non-duplication) [provisional]:")
