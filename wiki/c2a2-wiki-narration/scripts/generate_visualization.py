@@ -2284,6 +2284,10 @@ var _liftRAF = null;
 var _liftT0 = 0;
 var _liftCues = false;
 var _liftHeld = null;   // frozen breath position, or null when running/stopped
+var _liftPausedPhase = null;  // breath PHASE parked by Hold, or null. Phase, not
+                              // position: t = 0.5-0.5cos(2*pi*phase) is symmetric,
+                              // so resuming from t alone can restart the breath
+                              // running backwards.
 
 // Link endpoints are INTEGER INDICES into NODES as generated; d3 rewrites them
 // to object refs once the simulation runs. Resolve all three forms or every
@@ -2512,6 +2516,7 @@ var LiftProbe = {
     if (_liftRAF) cancelAnimationFrame(_liftRAF);
     _liftRAF = null;
     _liftHeld = null;
+    _liftPausedPhase = null;
     NODES.forEach(function(nd) { nd._lx = 0; nd._ly = 0; });
     if (nodeSel) nodeSel.attr('r', function(d) { return d.size; });
     if (typeof brightness !== 'undefined') setBrightness(brightness);
@@ -2535,6 +2540,34 @@ var LiftProbe = {
     if (_liftRAF) { cancelAnimationFrame(_liftRAF); _liftRAF = null; }
     _liftHeld = t;
     _liftApply(t);
+  },
+
+  // Park the breath where it stands, and be able to pick it up again. Distinct
+  // from hold(t) (which jumps to a chosen point) and from stop() (which clears
+  // the probe): this is what a Hold CHECKBOX needs -- freeze, then continue
+  // from the same place rather than snapping back to the start of the cycle.
+  // Returns true only if it actually parked something, so the caller knows
+  // whether it owns the resume.
+  pause: function() {
+    if (!_liftRAF) return false;
+    var now = (window.performance && performance.now) ? performance.now() : _liftT0;
+    _liftPausedPhase = _liftT0 ? (((now - _liftT0) % LIFT_PERIOD) / LIFT_PERIOD) : 0;
+    cancelAnimationFrame(_liftRAF);
+    _liftRAF = null;
+    _liftHeld = 0.5 - 0.5 * Math.cos(2 * Math.PI * _liftPausedPhase);
+    _liftApply(_liftHeld);
+    return true;
+  },
+
+  resume: function() {
+    if (_liftRAF || _liftPausedPhase === null) return;
+    var now = (window.performance && performance.now) ? performance.now() : 0;
+    // Re-anchor so the breath continues from where it was parked. `|| 1` only
+    // guards the one falsy value: _liftTick treats _liftT0 === 0 as "unset".
+    _liftT0 = (now - _liftPausedPhase * LIFT_PERIOD) || 1;
+    _liftPausedPhase = null;
+    _liftHeld = null;
+    _liftRAF = requestAnimationFrame(_liftTick);
   },
 
   // Top-N by the currently indexed variable -- read the ceiling without
@@ -2601,6 +2634,43 @@ if (typeof setDateThreshold === 'function') {
   var _liftPrevDateThreshold = setDateThreshold;
   setDateThreshold = function() { _liftDropCues('Since'); return _liftPrevDateThreshold.apply(this, arguments); };
 }
+// Hold means hold. toggleHoldForces() stopped the force simulation only, so
+// ticking Hold froze the layout while the depth axis kept breathing -- which is
+// not a frozen scene, and made Hold useless for the screenshots and close
+// reading it exists for. Wrapped rather than edited in place: the same idiom as
+// the setBrightness/setDateThreshold wrappers below, so deleting this fenced
+// block still restores the original behaviour in one excision.
+var _liftPausedByHold = false;
+if (typeof toggleHoldForces === 'function') {
+  var _liftPrevToggleHold = toggleHoldForces;
+  toggleHoldForces = function(checked) {
+    if (checked) {
+      _liftPausedByHold = LiftProbe.pause();
+    } else if (_liftPausedByHold) {
+      LiftProbe.resume();
+      _liftPausedByHold = false;
+    }
+    return _liftPrevToggleHold.apply(this, arguments);
+  };
+}
+
+// The node tooltip named label/directory/date and stopped there, so with the
+// depth axis switched on it described everything about a node EXCEPT the
+// variable currently lifting it. Reads the picker for its own label so the row
+// tracks the option list rather than duplicating it. Returns '' whenever the
+// probe is not engaged, and the call site guards on typeof, so excising this
+// block leaves the tooltip exactly as it was.
+function _liftTipRow(d) {
+  if (!_liftRAF && _liftHeld === null) return '';
+  if (!d || d._lzRaw === undefined) return '';
+  var sel = document.getElementById('lift-var');
+  if (!sel || !sel.value || sel.value === 'off') return '';
+  var opt = sel.options[sel.selectedIndex];
+  var label = (opt ? opt.text : sel.value).replace(/\u00a0/g, ' ').trim();
+  return '<div style="color:#9ab8d8;font-size:11px;margin-top:3px;">' +
+         escapeHtml(label) + ': <b>' + escapeHtml(String(d._lzRaw)) + '</b></div>';
+}
+
 // -- END LIFT PROBE --
 
 
@@ -2968,7 +3038,7 @@ function rebuildGraph() {
     .attr('cursor', 'pointer')
     .on('mouseover', function(event, d) {
       if (!showHoverNames) return;
-      showTooltip(event, '<div class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(d.label) + '\\')">' + escapeHtml(d.label) + '</div><div class="tt-dir">' + escapeHtml(d.directory) + '</div><div class="tt-date">' + escapeHtml(d.date) + '</div>');
+      showTooltip(event, '<div class="tt-title" onclick="openNodeByLabel(\\'' + escapeAttr(d.label) + '\\')">' + escapeHtml(d.label) + '</div><div class="tt-dir">' + escapeHtml(d.directory) + '</div><div class="tt-date">' + escapeHtml(d.date) + '</div>' + (typeof _liftTipRow === 'function' ? _liftTipRow(d) : ''));
     })
     .on('mouseout', hideTooltip)
     .on('click', function(event, d) {
