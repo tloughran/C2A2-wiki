@@ -45,6 +45,15 @@ COLORS = {
     'sessions': '#8A9098',
     'root': '#9A9A9A',
     'tools': '#4E9EA8',
+    # Synthesis bridges — the 66 wiki/synthesis/<a>_<b>_bridge.md essays the
+    # sewing agent has written across 69 tradition-pairs (~50,800 words). Until
+    # now get_group() had no key for the directory, so all 66 fell into the
+    # catch-all 'root' grey alongside ~110 unrelated files and the largest body
+    # of finished cross-tradition prose in the system was invisible as a class.
+    # NB this is NOT the Summa vault's synthesis/ directory: those nodes are
+    # stamped directory='summa' explicitly in parse_summa_vault, so they do not
+    # reach get_group() and are unaffected by this key.
+    'synthesis': '#7FD94F',
     'summa': '#A89B6E',           # parchment — Summa Theologiae companion vault (Pass B)
     # Tradition Index — the sewing-bootstrap hub (traditions/_index.md) linking
     # all 15 tradition wikis. Its own group so it earns a dedicated left-panel
@@ -76,6 +85,7 @@ LABEL_OVERRIDES = {
     'architecture/changelog': 'Changelog',
     'summa':                  'Summa',
     'tradition-index':        'Tradition Index',
+    'synthesis':              'Synthesis bridges',
     # Relabel only — the group key stays 'agents' so nothing downstream
     # (get_group, edges, presets) changes. The 24 agent-definition docs now
     # read as "Agent identity"; the runtime actors live in "Agent activity".
