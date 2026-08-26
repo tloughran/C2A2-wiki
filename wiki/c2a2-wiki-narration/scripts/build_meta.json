@@ -1,20 +1,20 @@
 {
   "agent_actor_nodes": 27,
   "agent_data": true,
-  "bytes": 50447108,
+  "bytes": 52056510,
   "flow": 52,
-  "links": 125782,
-  "nodes": 4451,
+  "links": 129083,
+  "nodes": 4564,
   "nodes_by_group": {
     "agent-activity": 27,
     "agents": 33,
-    "architecture": 2885,
+    "architecture": 2971,
     "deferred": 2,
     "flags": 7,
-    "inbox": 707,
+    "inbox": 728,
     "master": 5,
     "review": 24,
-    "root": 41,
+    "root": 47,
     "sessions": 1,
     "summa": 619,
     "synthesis": 66,
@@ -35,8 +35,8 @@
     "traditions/wolfram": 2,
     "traditions/wright": 2
   },
-  "projected": 275,
-  "substrate_kept": 3762,
-  "substrate_skipped": 21,
+  "projected": 278,
+  "substrate_kept": 4357,
+  "substrate_skipped": 6,
   "summa_nodes": 619
 }
