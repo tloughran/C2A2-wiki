@@ -36,21 +36,11 @@ def fm(txt, key):
     m = re.search(r'^%s:\s*"?([^"\n]+)' % key, txt, re.M)
     return m.group(1).strip() if m else ""
 
-def ingested_proposal_ids(vault, log_txt):
-    """Authoritative ingested test: a card is ingested if its proposal_id is cited
-    as a Source: in any live traditions/*/prs_triplets.md, OR appears in a
-    PROCESSED_LOG ingestion line (one that routes to a PRS, '... -> <trad> PRS-').
-    The old basename-vs-log test missed both because the log keys on proposal_id/
-    slug, not the inbox filename (caused 15 already-ingested cards to re-stage)."""
-    ids = set()
-    for tf in glob.glob(os.path.join(vault, "traditions", "*", "prs_triplets.md")):
-        for m in re.finditer(r'(PROP-2026-\d{2}-\d{2}-\d+)', open(tf, errors="ignore").read()):
-            ids.add(m.group(1))
-    for line in log_txt.splitlines():
-        if re.search(r'→\s*[a-z]+\s*PRS-', line):  # '->' ingestion line
-            for m in re.finditer(r'(PROP-2026-\d{2}-\d{2}-\d+)', line):
-                ids.add(m.group(1))
-    return ids
+# Gate logic is NOT duplicated here. scripts/ingest_ledger.py owns it and is tested by
+# scripts/test_ingest_ledger.py (17 assertions). The copy that used to live here was
+# blind to ASCII "->" log lines and to -SUPP-/-00x proposal ids (found 2026-08-26).
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "scripts"))
+from ingest_ledger import ingested_proposal_ids  # noqa: E402
 
 def main():
     log_txt = open(LOG, errors="ignore").read() if os.path.exists(LOG) else ""
