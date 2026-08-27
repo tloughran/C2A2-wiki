@@ -15,8 +15,8 @@ fetched_at: 2026-05-01
 fetch_path: youtube-transcript-api (egress allowlist now permits youtube.com)
 synthesis: "[[Day-005 - Is God in Everything - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-12T04:24:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-26T16:24:30"
+last_qc_outcome: "pass"
 tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence, theme/divine-omnipresence]
 ---
 
@@ -26,7 +26,7 @@ tags: [summa, day/005, pars/I, q/7, q/8, theme/infinity, theme/divine-immanence,
 > Series: *Summa in a Year* by Austin Habash. Day 5 of 308.
 > Summa reference: *Prima Pars, Q.7 (the infinity of God — 4 articles) + Q.8 (the existence of God in things — 4 articles).*
 
-> Auto-generated captions, light typo cleanup. *Suma → Summa; habish → Habash; aquinus / aquanus / ainus / aquantis / aanus / a quantis → Aquinas; theologia → Theologiae; Warner Heisenberg → Werner Heisenberg; "T mytic" → thematic; FAL → fundamental; "absolutely Ely" → absolutely; "the second way" reference is to Day 2 (Five Ways); Augustine quote restored to canonical wording (Confessions X.27) where ASR garbled — "thou wer within me" → "thou wert within me", "thou D touch me" → "thou didst touch me"*. Punctuation and paragraph breaks added editorially. QC 2026-08-12: paragraph citation added under the *Catechism* blockquote at [00:12:43] — the two sentences Habash reads continuously are CCC 258 and CCC 316, not one paragraph; wording verified canonical and left unchanged.
+> Auto-generated captions, light typo cleanup. *Suma → Summa; habish → Habash; aquinus / aquanus / ainus / aquantis / aanus / a quantis → Aquinas; theologia → Theologiae; Warner Heisenberg → Werner Heisenberg; "T mytic" → thematic; FAL → fundamental; "absolutely Ely" → absolutely; "the second way" reference is to Day 2 (Five Ways); Augustine quote (Confessions X.27): two ASR garbles restored — "thou wer within me" → "thou wert within me", "thou D touch me" → "thou didst touch me". The surrounding wording, including "and I outside", is Habash's as read and is present verbatim in the ASR; the episode does not name a translation, so no further conforming was done*. Punctuation and paragraph breaks added editorially. QC 2026-08-12: paragraph citation added under the *Catechism* blockquote at [00:12:43] — the two sentences Habash reads continuously are CCC 258 and CCC 316, not one paragraph; wording verified canonical and left unchanged.
 
 ## Transcript
 
