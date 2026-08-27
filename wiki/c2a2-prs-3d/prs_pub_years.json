@@ -1,926 +1,2250 @@
 {
-"arkanihamed-PRS-01": {
-"date": "1998-06-01",
-"pub_year": 1998
-},
-"arkanihamed-PRS-02": {
-"date": "2013-06-01",
-"pub_year": 2013
-},
-"arkanihamed-PRS-03": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"arkanihamed-PRS-04": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"arkanihamed-PRS-05": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"arkanihamed-PRS-06": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"arkanihamed-PRS-07": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"arkanihamed-PRS-08": {
-"date": "",
-"pub_year": 2020
-},
-"carroll-PRS-01": {
-"date": "2004-06-01",
-"pub_year": 2004
-},
-"carroll-PRS-02": {
-"date": "2016-06-01",
-"pub_year": 2016
-},
-"carroll-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"carroll-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"carroll-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"carroll-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"carroll-PRS-07": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"carroll-PRS-08": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"carroll-PRS-09": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"carroll-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"fredrickson-PRS-01": {
-"date": "1998-06-01",
-"pub_year": 1998
-},
-"fredrickson-PRS-02": {
-"date": "2013-06-01",
-"pub_year": 2013
-},
-"fredrickson-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"fredrickson-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"fredrickson-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"fredrickson-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"fredrickson-PRS-07": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"fredrickson-PRS-08": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"fredrickson-PRS-09": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"fredrickson-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"friston-PRS-01": {
-"date": "2003-06-01",
-"pub_year": 2003
-},
-"friston-PRS-02": {
-"date": "2010-06-01",
-"pub_year": 2010
-},
-"friston-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"friston-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"friston-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"friston-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"friston-PRS-07": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"friston-PRS-08": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"friston-PRS-09": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"friston-PRS-10": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"hawkins-PRS-01": {
-"date": "2004-06-01",
-"pub_year": 2004
-},
-"hawkins-PRS-02": {
-"date": "2021-06-01",
-"pub_year": 2021
-},
-"hawkins-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hawkins-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hawkins-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hawkins-PRS-06": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"hawkins-PRS-07": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"hawkins-PRS-08": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"hawkins-PRS-09": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"hawkins-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"hoffman-PRS-01": {
-"date": "2008-06-01",
-"pub_year": 2008
-},
-"hoffman-PRS-02": {
-"date": "2019-06-01",
-"pub_year": 2019
-},
-"hoffman-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hoffman-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hoffman-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hoffman-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"hoffman-PRS-07": {
-"date": "2026-04-14",
-"pub_year": 2026
-},
-"hoffman-PRS-08": {
-"date": "2026-04-14",
-"pub_year": 2026
-},
-"hoffman-PRS-09": {
-"date": "2026-04-14",
-"pub_year": 2026
-},
-"hoffman-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"kastrup-PRS-01": {
-"date": "2014-06-01",
-"pub_year": 2014
-},
-"kastrup-PRS-02": {
-"date": "2019-06-01",
-"pub_year": 2019
-},
-"kastrup-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"kastrup-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"kastrup-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"kastrup-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"kastrup-PRS-07": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"kastrup-PRS-08": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"kastrup-PRS-09": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"kastrup-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"levin-PRS-01": {
-"date": "2007-06-01",
-"pub_year": 2007
-},
-"levin-PRS-02": {
-"date": "2021-06-01",
-"pub_year": 2021
-},
-"levin-PRS-03": {
-"date": "2022-06-01",
-"pub_year": 2022
-},
-"levin-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"levin-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"levin-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"levin-PRS-07": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"levin-PRS-08": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"levin-PRS-09": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"levin-PRS-10": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"levin-PRS-11": {
-"date": "",
-"pub_year": 2020
-},
-"loughran-PRS-01": {
-"date": "2021-06-01",
-"pub_year": 2021
-},
-"loughran-PRS-02": {
-"date": "2026-06-01",
-"pub_year": 2026
-},
-"loughran-PRS-03": {
-"date": "2026-06-01",
-"pub_year": 2026
-},
-"loughran-PRS-04": {
-"date": "2026-06-01",
-"pub_year": 2026
-},
-"loughran-PRS-05": {
-"date": "2022-06-01",
-"pub_year": 2022
-},
-"loughran-PRS-06": {
-"date": "2022-06-01",
-"pub_year": 2022
-},
-"loughran-PRS-07": {
-"date": "2022-06-01",
-"pub_year": 2022
-},
-"macintyre-PRS-01": {
-"date": "1977-06-01",
-"pub_year": 1977
-},
-"macintyre-PRS-02": {
-"date": "1981-06-01",
-"pub_year": 1981
-},
-"macintyre-PRS-03": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"macintyre-PRS-04": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"macintyre-PRS-05": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"master-PRS-01": {
-"date": "2021-06-01",
-"pub_year": 2021
-},
-"master-PRS-02": {
-"date": "2026-06-01",
-"pub_year": 2026
-},
-"master-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"master-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"master-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"master-PRS-06": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-01": {
-"date": "2009-06-01",
-"pub_year": 2009
-},
-"mcgilchrist-PRS-02": {
-"date": "2021-06-01",
-"pub_year": 2021
-},
-"mcgilchrist-PRS-03": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-04": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-05": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-06": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-07": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-08": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-09": {
-"date": "",
-"pub_year": 2020
-},
-"rohr-PRS-01": {
-"date": "2009-06-01",
-"pub_year": 2009
-},
-"rohr-PRS-02": {
-"date": "2011-06-01",
-"pub_year": 2011
-},
-"rohr-PRS-03": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"rohr-PRS-04": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"stump-PRS-01": {
-"date": "2003-06-01",
-"pub_year": 2003
-},
-"stump-PRS-02": {
-"date": "2010-06-01",
-"pub_year": 2010
-},
-"stump-PRS-03": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"stump-PRS-04": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"stump-PRS-05": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"stump-PRS-06": {
-"date": "2026-04-05",
-"pub_year": 2026
-},
-"stump-PRS-07": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"stump-PRS-08": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"stump-PRS-09": {
-"date": "",
-"pub_year": 2020
-},
-"wolfram-PRS-01": {
-"date": "2002-06-01",
-"pub_year": 2002
-},
-"wolfram-PRS-02": {
-"date": "2020-06-01",
-"pub_year": 2020
-},
-"wolfram-PRS-03": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"wolfram-PRS-04": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"wolfram-PRS-05": {
-"date": "2026-04-03",
-"pub_year": 2026
-},
-"wolfram-PRS-06": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"wolfram-PRS-07": {
-"date": "2026-04-07",
-"pub_year": 2026
-},
-"wolfram-PRS-08": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"wolfram-PRS-09": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"wolfram-PRS-10": {
-"date": "",
-"pub_year": 2020
-},
-"wright-PRS-01": {
-"date": "1992-06-01",
-"pub_year": 1992
-},
-"wright-PRS-02": {
-"date": "2005-06-01",
-"pub_year": 2005
-},
-"wright-PRS-03": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"wright-PRS-04": {
-"date": "2026-04-29",
-"pub_year": 2026
-},
-"arkanihamed-PRS-10": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"arkanihamed-PRS-09": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"arkanihamed-PRS-10-dup1": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"carroll-PRS-11": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"carroll-PRS-12": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"carroll-PRS-13": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"carroll-PRS-14": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"carroll-PRS-15": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"fredrickson-PRS-11": {
-"date": "2026-04-13",
-"pub_year": 2026
-},
-"fredrickson-PRS-12": {
-"date": "2026-04-13",
-"pub_year": 2026
-},
-"fredrickson-PRS-13": {
-"date": "2026-04-13",
-"pub_year": 2024
-},
-"fredrickson-PRS-14": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"fredrickson-PRS-15": {
-"date": "2026-04-28",
-"pub_year": 2024
-},
-"fredrickson-PRS-16": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"friston-PRS-11": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"friston-PRS-12": {
-"date": "2026-04-16",
-"pub_year": 2023
-},
-"friston-PRS-13": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"friston-PRS-14": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"friston-PRS-15": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"friston-PRS-16": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"hawkins-PRS-11": {
-"date": "2026-04-09",
-"pub_year": 2021
-},
-"hawkins-PRS-12": {
-"date": "2026-04-09",
-"pub_year": 2021
-},
-"hawkins-PRS-13": {
-"date": "2026-04-09",
-"pub_year": 2021
-},
-"hawkins-PRS-14": {
-"date": "2026-04-09",
-"pub_year": 2021
-},
-"hawkins-PRS-15": {
-"date": "2026-04-09",
-"pub_year": 2019
-},
-"hawkins-PRS-16": {
-"date": "2026-04-14",
-"pub_year": 2024
-},
-"hawkins-PRS-17": {
-"date": "2026-04-14",
-"pub_year": 2024
-},
-"hawkins-PRS-18": {
-"date": "2026-04-28",
-"pub_year": 2024
-},
-"hoffman-PRS-11": {
-"date": "2026-04-16",
-"pub_year": 2024
-},
-"hoffman-PRS-12": {
-"date": "2026-04-16",
-"pub_year": 2024
-},
-"hoffman-PRS-13": {
-"date": "2026-04-16",
-"pub_year": 2024
-},
-"hoffman-PRS-14": {
-"date": "2026-04-28",
-"pub_year": 2024
-},
-"hoffman-PRS-15": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"hoffman-PRS-16": {
-"date": "2026-05-05",
-"pub_year": 2026
-},
-"hoffman-PRS-17": {
-"date": "2026-05-05",
-"pub_year": 2026
-},
-"hoffman-PRS-18": {
-"date": "2026-05-05",
-"pub_year": 2026
-},
-"kastrup-PRS-11": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"kastrup-PRS-12": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"kastrup-PRS-13": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"kastrup-PRS-14": {
-"date": "2026-05-16",
-"pub_year": 2026
-},
-"kastrup-PRS-15": {
-"date": "2026-05-16",
-"pub_year": 2026
-},
-"kastrup-PRS-16": {
-"date": "2026-05-16",
-"pub_year": 2026
-},
-"levin-PRS-12": {
-"date": "2026-04-16",
-"pub_year": 2022
-},
-"levin-PRS-13": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"levin-PRS-14": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"levin-PRS-15": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"levin-PRS-16": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-17": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-18": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-19": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-20": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-21": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-22": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"levin-PRS-23": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"levin-PRS-24": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"levin-PRS-25": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"levin-PRS-26": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"levin-PRS-27": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"levin-PRS-28": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"levin-PRS-29": {
-"date": "2026-05-13",
-"pub_year": 2026
-},
-"levin-PRS-30": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"levin-PRS-31": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-10": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-11": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-12": {
-"date": "2026-04-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-13": {
-"date": "2026-04-09",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-14": {
-"date": "2026-04-09",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-15": {
-"date": "2026-04-15",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-16": {
-"date": "2026-04-15",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-17": {
-"date": "2026-04-15",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-18": {
-"date": "2026-04-15",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-19": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-20": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-21": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-22": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-23": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-24": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-25": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-26": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-27": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"mcgilchrist-PRS-28": {
-"date": "2026-05-17",
-"pub_year": 2026
-},
-"stump-PRS-10": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"stump-PRS-11": {
-"date": "2026-04-28",
-"pub_year": 2024
-},
-"stump-PRS-12": {
-"date": "2026-04-28",
-"pub_year": 2024
-},
-"stump-PRS-13": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"stump-PRS-14": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"stump-PRS-15": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"stump-PRS-16": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-11": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"wolfram-PRS-12": {
-"date": "2026-04-16",
-"pub_year": 2026
-},
-"wolfram-PRS-13": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"wolfram-PRS-14": {
-"date": "2026-04-28",
-"pub_year": 2026
-},
-"wolfram-PRS-15": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-16": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-17": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-18": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-19": {
-"date": "2026-05-08",
-"pub_year": 2026
-},
-"wolfram-PRS-20": {
-"date": "2026-05-08",
-"pub_year": 2026
-}
+ "arkanihamed-PRS-01": {
+  "date": "1998-06-01",
+  "pub_year": 1998
+ },
+ "arkanihamed-PRS-02": {
+  "date": "2013-06-01",
+  "pub_year": 2013
+ },
+ "arkanihamed-PRS-03": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-04": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-05": {
+  "date": "2026-03-30",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-06": {
+  "date": "2026-03-30",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-07": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "arkanihamed-PRS-08": {
+  "date": "2024-10-01",
+  "pub_year": 2024
+ },
+ "arkanihamed-PRS-09": {
+  "date": "2025-07-18",
+  "pub_year": 2025
+ },
+ "arkanihamed-PRS-10": {
+  "date": "2026-05-11",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-10-dup1": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-11": {
+  "date": "2026-03-31",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-12": {
+  "date": "2026-03-31",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-15": {
+  "date": "2026-02-12",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-16": {
+  "date": "2026-02-12",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-17": {
+  "date": "2026-02-12",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-18": {
+  "date": "2026-02-19",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-19": {
+  "date": "2026-02-19",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-20": {
+  "date": "2026-06-29",
+  "pub_year": 2026
+ },
+ "arkanihamed-PRS-21": {
+  "date": "2025-12-30",
+  "pub_year": 2025
+ },
+ "arkanihamed-PRS-22": {
+  "date": "2025-12-30",
+  "pub_year": 2025
+ },
+ "arkanihamed-PRS-23": {
+  "date": "2025-12-30",
+  "pub_year": 2025
+ },
+ "arkanihamed-PRS-24": {
+  "date": "2025-12-30",
+  "pub_year": 2025
+ },
+ "carroll-PRS-01": {
+  "date": "2004-06-01",
+  "pub_year": 2004
+ },
+ "carroll-PRS-02": {
+  "date": "2016-06-01",
+  "pub_year": 2016
+ },
+ "carroll-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-07": {
+  "date": "2026-03-30",
+  "pub_year": 2026
+ },
+ "carroll-PRS-08": {
+  "date": "2026-01-02",
+  "pub_year": 2026
+ },
+ "carroll-PRS-09": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "carroll-PRS-10": {
+  "date": "2026-04-06",
+  "pub_year": 2026
+ },
+ "carroll-PRS-11": {
+  "date": "2024-10-20",
+  "pub_year": 2024
+ },
+ "carroll-PRS-12": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "carroll-PRS-13": {
+  "date": "2026-04-06",
+  "pub_year": 2026
+ },
+ "carroll-PRS-14": {
+  "date": "2026-04-22",
+  "pub_year": 2026
+ },
+ "carroll-PRS-15": {
+  "date": "2026-04-22",
+  "pub_year": 2026
+ },
+ "carroll-PRS-16": {
+  "date": "2026-05-25",
+  "pub_year": 2026
+ },
+ "carroll-PRS-17": {
+  "date": "2026-05-25",
+  "pub_year": 2026
+ },
+ "carroll-PRS-18": {
+  "date": "2026-05-18",
+  "pub_year": 2026
+ },
+ "carroll-PRS-19": {
+  "date": "2026-05-18",
+  "pub_year": 2026
+ },
+ "carroll-PRS-20": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "carroll-PRS-21": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "carroll-PRS-22": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "carroll-PRS-23": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "carroll-PRS-24": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "carroll-PRS-25": {
+  "date": "2026-06-08",
+  "pub_year": 2026
+ },
+ "carroll-PRS-26": {
+  "date": "2026-06-08",
+  "pub_year": 2026
+ },
+ "carroll-PRS-27": {
+  "date": "2026-03-16",
+  "pub_year": 2026
+ },
+ "carroll-PRS-28": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-29": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-30": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-31": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-32": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-33": {
+  "date": "2026-04-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-34": {
+  "date": "2026-04-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-35": {
+  "date": "2026-04-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-36": {
+  "date": "2026-05-04",
+  "pub_year": 2026
+ },
+ "carroll-PRS-40": {
+  "date": "2026-05-18",
+  "pub_year": 2026
+ },
+ "carroll-PRS-41": {
+  "date": "2026-05-18",
+  "pub_year": 2026
+ },
+ "carroll-PRS-42": {
+  "date": "2026-05-18",
+  "pub_year": 2026
+ },
+ "carroll-PRS-43": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "carroll-PRS-44": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "carroll-PRS-45": {
+  "date": "2026-06-22",
+  "pub_year": 2026
+ },
+ "carroll-PRS-46": {
+  "date": "2026-06-22",
+  "pub_year": 2026
+ },
+ "carroll-PRS-47": {
+  "date": "2026-06-29",
+  "pub_year": 2026
+ },
+ "carroll-PRS-48": {
+  "date": "2026-06-29",
+  "pub_year": 2026
+ },
+ "carroll-PRS-49": {
+  "date": "2026-07-06",
+  "pub_year": 2026
+ },
+ "carroll-PRS-50": {
+  "date": "2026-07-06",
+  "pub_year": 2026
+ },
+ "carroll-PRS-51": {
+  "date": "2026-07-06",
+  "pub_year": 2026
+ },
+ "carroll-PRS-52": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "carroll-PRS-53": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "carroll-PRS-54": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "carroll-PRS-55": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-56": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-57": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-58": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-59": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "carroll-PRS-60": {
+  "date": "2026-07-20",
+  "pub_year": 2026
+ },
+ "carroll-PRS-61": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "carroll-PRS-62": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "carroll-PRS-63": {
+  "date": "2026-07-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-64": {
+  "date": "2026-07-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-65": {
+  "date": "2026-07-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-66": {
+  "date": "2026-07-27",
+  "pub_year": 2026
+ },
+ "carroll-PRS-67": {
+  "date": "2026-07-13",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-01": {
+  "date": "1998-06-01",
+  "pub_year": 1998
+ },
+ "fredrickson-PRS-02": {
+  "date": "2013-06-01",
+  "pub_year": 2013
+ },
+ "fredrickson-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-07": {
+  "date": "2025-10-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-08": {
+  "date": "2025-10-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-09": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-10": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-11": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-12": {
+  "date": "2025-03-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-13": {
+  "date": "2025-03-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-14": {
+  "date": "2025-03-20",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-15": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-16": {
+  "date": "2026-04-24",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-17": {
+  "date": "2025-11-21",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-18": {
+  "date": "2025-11-21",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-21": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-22": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-23": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-24": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-25": {
+  "date": "2025-07-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-26": {
+  "date": "2025-07-01",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-27": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-28": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "fredrickson-PRS-33": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-34": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-35": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-36": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-37": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "fredrickson-PRS-38": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "friston-PRS-01": {
+  "date": "2003-06-01",
+  "pub_year": 2003
+ },
+ "friston-PRS-02": {
+  "date": "2010-06-01",
+  "pub_year": 2010
+ },
+ "friston-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "friston-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "friston-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "friston-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "friston-PRS-07": {
+  "date": "2026-03-15",
+  "pub_year": 2026
+ },
+ "friston-PRS-08": {
+  "date": "2026-03-15",
+  "pub_year": 2026
+ },
+ "friston-PRS-09": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "friston-PRS-10": {
+  "date": "2025-12-24",
+  "pub_year": 2025
+ },
+ "friston-PRS-11": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "friston-PRS-12": {
+  "date": "2026-03-01",
+  "pub_year": 2026
+ },
+ "friston-PRS-13": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-14": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-15": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-16": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-17": {
+  "date": "2026-04-30",
+  "pub_year": 2026
+ },
+ "friston-PRS-18": {
+  "date": "2026-04-30",
+  "pub_year": 2026
+ },
+ "friston-PRS-19": {
+  "date": "2026-05-04",
+  "pub_year": 2026
+ },
+ "friston-PRS-20": {
+  "date": "2026-05-04",
+  "pub_year": 2026
+ },
+ "friston-PRS-22": {
+  "date": "2025-02-12",
+  "pub_year": 2025
+ },
+ "friston-PRS-23": {
+  "date": "2025-02-12",
+  "pub_year": 2025
+ },
+ "friston-PRS-24": {
+  "date": "2026-04-25",
+  "pub_year": 2026
+ },
+ "friston-PRS-25": {
+  "date": "2026-04-25",
+  "pub_year": 2026
+ },
+ "friston-PRS-28": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-29": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "friston-PRS-33": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "friston-PRS-34": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "friston-PRS-35": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "friston-PRS-36": {
+  "date": "2025-09-17",
+  "pub_year": 2025
+ },
+ "friston-PRS-37": {
+  "date": "2026-05-21",
+  "pub_year": 2026
+ },
+ "friston-PRS-38": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "friston-PRS-39": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "friston-PRS-40": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-01": {
+  "date": "2004-06-01",
+  "pub_year": 2004
+ },
+ "hawkins-PRS-02": {
+  "date": "2021-06-01",
+  "pub_year": 2021
+ },
+ "hawkins-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-06": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-07": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-08": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "hawkins-PRS-09": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "hawkins-PRS-10": {
+  "date": "",
+  "pub_year": 2020
+ },
+ "hawkins-PRS-11": {
+  "date": "2026-04-09",
+  "pub_year": 2021
+ },
+ "hawkins-PRS-12": {
+  "date": "2026-04-09",
+  "pub_year": 2021
+ },
+ "hawkins-PRS-13": {
+  "date": "2026-04-09",
+  "pub_year": 2021
+ },
+ "hawkins-PRS-14": {
+  "date": "2026-04-09",
+  "pub_year": 2021
+ },
+ "hawkins-PRS-15": {
+  "date": "2026-04-09",
+  "pub_year": 2019
+ },
+ "hawkins-PRS-16": {
+  "date": "2025-07-06",
+  "pub_year": 2025
+ },
+ "hawkins-PRS-17": {
+  "date": "2025-07-06",
+  "pub_year": 2025
+ },
+ "hawkins-PRS-18": {
+  "date": "2026-04-28",
+  "pub_year": 2024
+ },
+ "hawkins-PRS-19": {
+  "date": "2026-03-05",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-20": {
+  "date": "2026-03-05",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-21": {
+  "date": "2026-02-25",
+  "pub_year": 2026
+ },
+ "hawkins-PRS-22": {
+  "date": "2026-02-25",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-01": {
+  "date": "2008-06-01",
+  "pub_year": 2008
+ },
+ "hoffman-PRS-02": {
+  "date": "2019-06-01",
+  "pub_year": 2019
+ },
+ "hoffman-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-07": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-08": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-09": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-10": {
+  "date": "",
+  "pub_year": 2020
+ },
+ "hoffman-PRS-11": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "hoffman-PRS-12": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "hoffman-PRS-13": {
+  "date": "2026-03-13",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-14": {
+  "date": "2026-04-28",
+  "pub_year": 2024
+ },
+ "hoffman-PRS-15": {
+  "date": "2026-04-24",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-16": {
+  "date": "2026-05-05",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-17": {
+  "date": "2026-05-05",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-18": {
+  "date": "2026-05-05",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-27": {
+  "date": "2026-06-26",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-28": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-29": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-30": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-31": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-32": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-33": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-38": {
+  "date": "2026-06-13",
+  "pub_year": 2026
+ },
+ "hoffman-PRS-39": {
+  "date": "2026-06-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-01": {
+  "date": "2014-06-01",
+  "pub_year": 2014
+ },
+ "kastrup-PRS-02": {
+  "date": "2019-06-01",
+  "pub_year": 2019
+ },
+ "kastrup-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-07": {
+  "date": "2026-01-02",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-08": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "kastrup-PRS-09": {
+  "date": "2026-04-07",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-10": {
+  "date": "2026-02-20",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-11": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-12": {
+  "date": "2026-03-04",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-13": {
+  "date": "2026-04-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-14": {
+  "date": "2026-05-12",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-15": {
+  "date": "2026-05-12",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-16": {
+  "date": "2026-05-12",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-17": {
+  "date": "2026-05-26",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-18": {
+  "date": "2026-05-26",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-19": {
+  "date": "2026-05-26",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-20": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-21": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-22": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-23": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-24": {
+  "date": "2026-06-02",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-25": {
+  "date": "2026-05-26",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-26": {
+  "date": "2026-05-26",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-27": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-28": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-29": {
+  "date": "2026-04-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-30": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-31": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-32": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-33": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-34": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-35": {
+  "date": "2026-05-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-36": {
+  "date": "2026-05-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-37": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-38": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-39": {
+  "date": "2026-06-10",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-40": {
+  "date": "2026-06-10",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-41": {
+  "date": "2026-06-23",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-42": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-43": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-44": {
+  "date": "2026-07-07",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-45": {
+  "date": "2026-07-07",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-46": {
+  "date": "2026-07-07",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-47": {
+  "date": "2026-07-07",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-48": {
+  "date": "2026-07-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-49": {
+  "date": "2026-07-14",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-50": {
+  "date": "2026-06-30",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-51": {
+  "date": "2026-06-30",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-52": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-53": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-54": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-55": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-56": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-58": {
+  "date": "2026-01-05",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-59": {
+  "date": "2026-01-05",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-60": {
+  "date": "2026-01-05",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-61": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-62": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "kastrup-PRS-63": {
+  "date": "2026-07-07",
+  "pub_year": 2026
+ },
+ "levin-PRS-01": {
+  "date": "2007-06-01",
+  "pub_year": 2007
+ },
+ "levin-PRS-02": {
+  "date": "2021-06-01",
+  "pub_year": 2021
+ },
+ "levin-PRS-03": {
+  "date": "2022-06-01",
+  "pub_year": 2022
+ },
+ "levin-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "levin-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "levin-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "levin-PRS-07": {
+  "date": "2026-01-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-08": {
+  "date": "2026-01-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-09": {
+  "date": "2026-02-25",
+  "pub_year": 2026
+ },
+ "levin-PRS-10": {
+  "date": "2026-02-25",
+  "pub_year": 2026
+ },
+ "levin-PRS-11": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "levin-PRS-12": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "levin-PRS-13": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "levin-PRS-14": {
+  "date": "2026-02-01",
+  "pub_year": 2026
+ },
+ "levin-PRS-15": {
+  "date": "2026-03-01",
+  "pub_year": 2026
+ },
+ "levin-PRS-16": {
+  "date": "2026-01-15",
+  "pub_year": 2026
+ },
+ "levin-PRS-17": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "levin-PRS-18": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "levin-PRS-19": {
+  "date": "2026-04-08",
+  "pub_year": 2026
+ },
+ "levin-PRS-20": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "levin-PRS-21": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "levin-PRS-22": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "levin-PRS-23": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "levin-PRS-24": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "levin-PRS-25": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "levin-PRS-26": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "levin-PRS-27": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "levin-PRS-28": {
+  "date": "2025-11-30",
+  "pub_year": 2025
+ },
+ "levin-PRS-29": {
+  "date": "2025-11-30",
+  "pub_year": 2025
+ },
+ "levin-PRS-30": {
+  "date": "2026-05-12",
+  "pub_year": 2026
+ },
+ "levin-PRS-31": {
+  "date": "2026-05-12",
+  "pub_year": 2026
+ },
+ "levin-PRS-32": {
+  "date": "2026-05-27",
+  "pub_year": 2026
+ },
+ "levin-PRS-33": {
+  "date": "2026-05-27",
+  "pub_year": 2026
+ },
+ "levin-PRS-36": {
+  "date": "2026-01-19",
+  "pub_year": 2026
+ },
+ "levin-PRS-37": {
+  "date": "2026-01-19",
+  "pub_year": 2026
+ },
+ "levin-PRS-38": {
+  "date": "2026-02-08",
+  "pub_year": 2026
+ },
+ "levin-PRS-39": {
+  "date": "2026-02-08",
+  "pub_year": 2026
+ },
+ "levin-PRS-45": {
+  "date": "2026-05-14",
+  "pub_year": 2026
+ },
+ "levin-PRS-46": {
+  "date": "2026-05-14",
+  "pub_year": 2026
+ },
+ "levin-PRS-48": {
+  "date": "2026-06-26",
+  "pub_year": 2026
+ },
+ "levin-PRS-49": {
+  "date": "2026-06-26",
+  "pub_year": 2026
+ },
+ "levin-PRS-50": {
+  "date": "2026-06-26",
+  "pub_year": 2026
+ },
+ "levin-PRS-51": {
+  "date": "2026-06-26",
+  "pub_year": 2026
+ },
+ "levin-PRS-56": {
+  "date": "2026-06-20",
+  "pub_year": 2026
+ },
+ "levin-PRS-57": {
+  "date": "2026-06-20",
+  "pub_year": 2026
+ },
+ "levin-PRS-58": {
+  "date": "2026-06-23",
+  "pub_year": 2026
+ },
+ "levin-PRS-59": {
+  "date": "2026-06-23",
+  "pub_year": 2026
+ },
+ "levin-PRS-72": {
+  "date": "2026-07-20",
+  "pub_year": 2026
+ },
+ "levin-PRS-73": {
+  "date": "2026-07-20",
+  "pub_year": 2026
+ },
+ "levin-PRS-74": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-75": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-76": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-77": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "levin-PRS-79": {
+  "date": "2026-07-02",
+  "pub_year": 2026
+ },
+ "levin-PRS-80": {
+  "date": "2026-07-03",
+  "pub_year": 2026
+ },
+ "levin-PRS-81": {
+  "date": "2026-07-03",
+  "pub_year": 2026
+ },
+ "levin-PRS-82": {
+  "date": "2026-07-03",
+  "pub_year": 2026
+ },
+ "loughran-PRS-01": {
+  "date": "2021-06-01",
+  "pub_year": 2021
+ },
+ "loughran-PRS-02": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "loughran-PRS-03": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "loughran-PRS-04": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "loughran-PRS-05": {
+  "date": "2022-06-01",
+  "pub_year": 2022
+ },
+ "loughran-PRS-06": {
+  "date": "2022-06-01",
+  "pub_year": 2022
+ },
+ "loughran-PRS-07": {
+  "date": "2022-06-01",
+  "pub_year": 2022
+ },
+ "macintyre-PRS-01": {
+  "date": "1977-06-01",
+  "pub_year": 1977
+ },
+ "macintyre-PRS-02": {
+  "date": "1981-06-01",
+  "pub_year": 1981
+ },
+ "macintyre-PRS-03": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "macintyre-PRS-04": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "macintyre-PRS-05": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "master-PRS-01": {
+  "date": "2021-06-01",
+  "pub_year": 2021
+ },
+ "master-PRS-02": {
+  "date": "2026-06-01",
+  "pub_year": 2026
+ },
+ "master-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "master-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "master-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "master-PRS-06": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-01": {
+  "date": "2009-06-01",
+  "pub_year": 2009
+ },
+ "mcgilchrist-PRS-02": {
+  "date": "2021-06-01",
+  "pub_year": 2021
+ },
+ "mcgilchrist-PRS-03": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-04": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-05": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-06": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-07": {
+  "date": "2026-03-13",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-08": {
+  "date": "2026-03-13",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-09": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "mcgilchrist-PRS-10": {
+  "date": "2024-12-24",
+  "pub_year": 2024
+ },
+ "mcgilchrist-PRS-11": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-12": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-13": {
+  "date": "2026-04-07",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-14": {
+  "date": "2026-04-07",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-15": {
+  "date": "2026-03-14",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-16": {
+  "date": "2026-03-20",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-17": {
+  "date": "2026-03-26",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-18": {
+  "date": "2026-03-26",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-19": {
+  "date": "2026-04-16",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-20": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-21": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-22": {
+  "date": "2026-05-10",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-23": {
+  "date": "2026-05-10",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-24": {
+  "date": "2026-05-10",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-25": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-26": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-27": {
+  "date": "2026-04-01",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-28": {
+  "date": "2026-04-01",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-29": {
+  "date": "2026-05-02",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-30": {
+  "date": "2026-05-02",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-31": {
+  "date": "2026-05-02",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-32": {
+  "date": "2026-04-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-33": {
+  "date": "2026-04-08",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-34": {
+  "date": "2026-05-09",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-35": {
+  "date": "2026-05-09",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-36": {
+  "date": "2026-06-04",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-37": {
+  "date": "2026-06-04",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-38": {
+  "date": "2026-04-12",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-39": {
+  "date": "2026-04-12",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-40": {
+  "date": "2026-05-03",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-41": {
+  "date": "2026-05-03",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-42": {
+  "date": "2026-05-03",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-43": {
+  "date": "2026-05-03",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-44": {
+  "date": "2026-05-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-45": {
+  "date": "2026-05-05",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-46": {
+  "date": "2026-06-09",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-47": {
+  "date": "2026-06-21",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-48": {
+  "date": "2026-06-14",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-49": {
+  "date": "2026-06-14",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-50": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-51": {
+  "date": "2026-04-28",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-52": {
+  "date": "2026-07-14",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-53": {
+  "date": "2026-07-22",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-54": {
+  "date": "2026-07-22",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-55": {
+  "date": "2026-07-22",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-56": {
+  "date": "2026-07-22",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-57": {
+  "date": "2026-07-22",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-58": {
+  "date": "2026-02-18",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-59": {
+  "date": "2026-02-18",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-60": {
+  "date": "2026-02-18",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-61": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-62": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-63": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-64": {
+  "date": "2026-07-30",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-65": {
+  "date": "2026-07-30",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-66": {
+  "date": "2026-07-30",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-67": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-68": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "mcgilchrist-PRS-69": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "rohr-PRS-01": {
+  "date": "2009-06-01",
+  "pub_year": 2009
+ },
+ "rohr-PRS-02": {
+  "date": "2011-06-01",
+  "pub_year": 2011
+ },
+ "rohr-PRS-03": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "rohr-PRS-04": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "rohr-PRS-10": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-11": {
+  "date": "2026-02-02",
+  "pub_year": 2026
+ },
+ "rohr-PRS-12": {
+  "date": "2026-02-02",
+  "pub_year": 2026
+ },
+ "rohr-PRS-13": {
+  "date": "2026-03-28",
+  "pub_year": 2026
+ },
+ "rohr-PRS-14": {
+  "date": "2026-03-28",
+  "pub_year": 2026
+ },
+ "rohr-PRS-18": {
+  "date": "2026-04-12",
+  "pub_year": 2026
+ },
+ "rohr-PRS-19": {
+  "date": "2026-04-12",
+  "pub_year": 2026
+ },
+ "rohr-PRS-20": {
+  "date": "2026-04-12",
+  "pub_year": 2026
+ },
+ "rohr-PRS-21": {
+  "date": "2026-04-25",
+  "pub_year": 2026
+ },
+ "rohr-PRS-22": {
+  "date": "2026-04-25",
+  "pub_year": 2026
+ },
+ "rohr-PRS-23": {
+  "date": "2026-05-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-24": {
+  "date": "2026-05-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-25": {
+  "date": "2026-05-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-26": {
+  "date": "2026-06-28",
+  "pub_year": 2026
+ },
+ "rohr-PRS-27": {
+  "date": "2026-06-28",
+  "pub_year": 2026
+ },
+ "rohr-PRS-28": {
+  "date": "2026-06-27",
+  "pub_year": 2026
+ },
+ "rohr-PRS-29": {
+  "date": "2026-06-27",
+  "pub_year": 2026
+ },
+ "rohr-PRS-30": {
+  "date": "2026-07-04",
+  "pub_year": 2026
+ },
+ "rohr-PRS-31": {
+  "date": "2026-07-03",
+  "pub_year": 2026
+ },
+ "rohr-PRS-32": {
+  "date": "2026-07-11",
+  "pub_year": 2026
+ },
+ "rohr-PRS-33": {
+  "date": "2026-07-11",
+  "pub_year": 2026
+ },
+ "rohr-PRS-34": {
+  "date": "2026-08-07",
+  "pub_year": 2026
+ },
+ "rohr-PRS-35": {
+  "date": "2026-08-07",
+  "pub_year": 2026
+ },
+ "rohr-PRS-36": {
+  "date": "2026-08-07",
+  "pub_year": 2026
+ },
+ "rohr-PRS-37": {
+  "date": "2026-08-07",
+  "pub_year": 2026
+ },
+ "rohr-PRS-38": {
+  "date": "2026-07-25",
+  "pub_year": 2026
+ },
+ "rohr-PRS-39": {
+  "date": "2026-07-25",
+  "pub_year": 2026
+ },
+ "rohr-PRS-40": {
+  "date": "2026-07-26",
+  "pub_year": 2026
+ },
+ "rohr-PRS-41": {
+  "date": "2026-07-26",
+  "pub_year": 2026
+ },
+ "rohr-PRS-42": {
+  "date": "2026-08-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-43": {
+  "date": "2026-08-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-44": {
+  "date": "2026-08-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-6": {
+  "date": "2026-06-06",
+  "pub_year": 2026
+ },
+ "rohr-PRS-7": {
+  "date": "2026-06-07",
+  "pub_year": 2026
+ },
+ "rohr-PRS-8": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "rohr-PRS-9": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "stump-PRS-01": {
+  "date": "2003-06-01",
+  "pub_year": 2003
+ },
+ "stump-PRS-02": {
+  "date": "2010-06-01",
+  "pub_year": 2010
+ },
+ "stump-PRS-03": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "stump-PRS-04": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "stump-PRS-05": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "stump-PRS-06": {
+  "date": "2026-04-05",
+  "pub_year": 2026
+ },
+ "stump-PRS-07": {
+  "date": "2026-03-30",
+  "pub_year": 2026
+ },
+ "stump-PRS-08": {
+  "date": "2026-03-13",
+  "pub_year": 2026
+ },
+ "stump-PRS-09": {
+  "date": "2026-03-01",
+  "pub_year": 2026
+ },
+ "stump-PRS-10": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "stump-PRS-11": {
+  "date": "2026-01-15",
+  "pub_year": 2026
+ },
+ "stump-PRS-12": {
+  "date": "2026-01-15",
+  "pub_year": 2026
+ },
+ "stump-PRS-13": {
+  "date": "2026-01-01",
+  "pub_year": 2026
+ },
+ "stump-PRS-14": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "stump-PRS-15": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "stump-PRS-16": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "stump-PRS-17": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "stump-PRS-20": {
+  "date": "2024-01-01",
+  "pub_year": 2024
+ },
+ "stump-PRS-21": {
+  "date": "2024-01-01",
+  "pub_year": 2024
+ },
+ "stump-PRS-23": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "stump-PRS-24": {
+  "date": "2025-01-01",
+  "pub_year": 2025
+ },
+ "stump-PRS-26": {
+  "date": "2026-01-30",
+  "pub_year": 2026
+ },
+ "stump-PRS-27": {
+  "date": "2026-01-30",
+  "pub_year": 2026
+ },
+ "stump-PRS-28": {
+  "date": "2026-01-30",
+  "pub_year": 2026
+ },
+ "stump-PRS-32": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-33": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-34": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-35": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-36": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-37": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "stump-PRS-38": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-01": {
+  "date": "2002-06-01",
+  "pub_year": 2002
+ },
+ "wolfram-PRS-02": {
+  "date": "2020-06-01",
+  "pub_year": 2020
+ },
+ "wolfram-PRS-03": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-04": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-05": {
+  "date": "2026-04-03",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-06": {
+  "date": "2026-02-04",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-07": {
+  "date": "2026-02-04",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-08": {
+  "date": "2025-10-01",
+  "pub_year": 2025
+ },
+ "wolfram-PRS-09": {
+  "date": "2026-04-02",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-10": {
+  "date": "2025-12-10",
+  "pub_year": 2025
+ },
+ "wolfram-PRS-11": {
+  "date": "2026-02-23",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-12": {
+  "date": "2026-03-06",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-13": {
+  "date": "2026-03-27",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-14": {
+  "date": "2026-04-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-15": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-16": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-17": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-18": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-19": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-20": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-21": {
+  "date": "2025-11-11",
+  "pub_year": 2025
+ },
+ "wolfram-PRS-22": {
+  "date": "2026-06-04",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-23": {
+  "date": "2026-06-04",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-24": {
+  "date": "2025-11-11",
+  "pub_year": 2025
+ },
+ "wolfram-PRS-25": {
+  "date": "2025-11-11",
+  "pub_year": 2025
+ },
+ "wolfram-PRS-26": {
+  "date": "2026-02-20",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-27": {
+  "date": "2026-03-19",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-30": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-31": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-32": {
+  "date": "2026-05-01",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-33": {
+  "date": "2026-05-01",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-34": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-35": {
+  "date": "2026-05-13",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-36": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-37": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-38": {
+  "date": "2026-05-15",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-39": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-40": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-41": {
+  "date": "2026-06-12",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-42": {
+  "date": "2026-06-12",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-43": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-44": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-45": {
+  "date": "2026-06-17",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-46": {
+  "date": "2026-06-03",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-47": {
+  "date": "2026-06-03",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-48": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-49": {
+  "date": "2026-07-21",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-50": {
+  "date": "2026-07-16",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-51": {
+  "date": "2026-07-16",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-52": {
+  "date": "2026-07-16",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-53": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "wolfram-PRS-54": {
+  "date": "2026-07-28",
+  "pub_year": 2026
+ },
+ "wright-PRS-01": {
+  "date": "1992-06-01",
+  "pub_year": 1992
+ },
+ "wright-PRS-02": {
+  "date": "2005-06-01",
+  "pub_year": 2005
+ },
+ "wright-PRS-03": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "wright-PRS-04": {
+  "date": "2026-04-29",
+  "pub_year": 2026
+ },
+ "wright-PRS-05": {
+  "date": "2026-04-15",
+  "pub_year": 2026
+ },
+ "wright-PRS-06": {
+  "date": "2026-04-23",
+  "pub_year": 2026
+ },
+ "wright-PRS-11": {
+  "date": "2026-02-17",
+  "pub_year": 2026
+ },
+ "wright-PRS-12": {
+  "date": "2026-02-17",
+  "pub_year": 2026
+ },
+ "wright-PRS-13": {
+  "date": "2026-02-17",
+  "pub_year": 2026
+ },
+ "wright-PRS-14": {
+  "date": "2026-03-04",
+  "pub_year": 2026
+ },
+ "wright-PRS-15": {
+  "date": "2026-03-04",
+  "pub_year": 2026
+ },
+ "wright-PRS-16": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "wright-PRS-17": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "wright-PRS-18": {
+  "date": "2026-05-28",
+  "pub_year": 2026
+ },
+ "wright-PRS-19": {
+  "date": "2026-01-19",
+  "pub_year": 2026
+ },
+ "wright-PRS-20": {
+  "date": "2026-01-19",
+  "pub_year": 2026
+ },
+ "wright-PRS-21": {
+  "date": "2026-01-19",
+  "pub_year": 2026
+ },
+ "wright-PRS-22": {
+  "date": "2026-04-24",
+  "pub_year": 2026
+ },
+ "wright-PRS-23": {
+  "date": "2026-04-24",
+  "pub_year": 2026
+ },
+ "wright-PRS-24": {
+  "date": "2026-05-04",
+  "pub_year": 2026
+ },
+ "wright-PRS-25": {
+  "date": "2026-05-04",
+  "pub_year": 2026
+ },
+ "wright-PRS-26": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wright-PRS-27": {
+  "date": "2026-05-08",
+  "pub_year": 2026
+ },
+ "wright-PRS-33": {
+  "date": "2026-06-30",
+  "pub_year": 2026
+ },
+ "wright-PRS-34": {
+  "date": "2026-07-03",
+  "pub_year": 2026
+ },
+ "wright-PRS-37": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "wright-PRS-38": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "wright-PRS-39": {
+  "date": "2026-08-03",
+  "pub_year": 2026
+ },
+ "wright-PRS-40": {
+  "date": "2026-07-20",
+  "pub_year": 2026
+ },
+ "wright-PRS-41": {
+  "date": "2026-07-20",
+  "pub_year": 2026
+ },
+ "wright-PRS-7": {
+  "date": "2026-05-29",
+  "pub_year": 2026
+ }
 }

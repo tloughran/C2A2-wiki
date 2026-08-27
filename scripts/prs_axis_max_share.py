@@ -15,11 +15,15 @@ WHY IT READS THE BAKED ARTIFACT
   or a generator's intent. Same discipline as the Level-2 regen's guards.
 
 MODES (all over the same node set, so they are directly comparable)
-  rendered   what the artifact does TODAY: z = yearToZ(year(date)), with the
-             yearToZ scale taken from the pub_year range. This is the control.
-  pub_year   z = yearToZ(pub_year) -- the axis the spec BELIEVED was live.
-  date_full  z spread linearly over the full date range at day precision --
-             the only candidate here that actually adds granularity.
+  rendered      what the artifact does TODAY: day-precision ordinal scale, shared
+                by dateToZ and yearToZ. THIS MUST TRACK template_prs_3d.html --
+                if the template's z model changes and this does not, the check
+                silently reports the old model's number. That happened once
+                already, on 2026-08-27, within minutes of the template patch.
+  legacy_year   the pre-2026-08-27 model: z = yearToZ(year(date)) on a pub_year
+                scale. Kept because it is the historical control (0.905) and the
+                tau->infinity regression target.
+  pub_year      z = yearToZ(pub_year) -- the axis the spec BELIEVED was live (0.857).
 
 Usage:  python3 scripts/prs_axis_max_share.py [path/to/prs_3d.html] [--json]
 """
@@ -69,29 +73,30 @@ def main():
 
     out = {}
 
-    # rendered -- dateToZ(date) truncates to the year, then uses the pub_year scale
-    zs = [year_to_z(int((r.get("date") or "0000")[:4]) if (r.get("date") or "")[:4].isdigit()
-                    else 2020, lo, hi) for r in t]
-    out["rendered"] = share(zs)
-
-    # pub_year -- what the spec thought was live
-    out["pub_year"] = share([year_to_z(r.get("pub_year") or 2020, lo, hi) for r in t])
-
-    # date_full -- day precision over the real date range
+    # rendered -- port of the CURRENT template: one ordinal scale, day precision.
     ords = [date_ord(r.get("date")) for r in t]
     good = [o for o in ords if o is not None]
+    undated = len(ords) - len(good)
     if good:
         omin, omax = min(good), max(good)
         span = (omax - omin) or 1
-        out["date_full"] = share([
+        out["rendered"] = share([
             2 + ((o - omin) / span) * (Z_HEIGHT - 4) if o is not None else Z_HEIGHT / 2
             for o in ords])
+
+    # legacy_year -- the pre-2026-08-27 model; historical control and regression target
+    out["legacy_year"] = share([
+        year_to_z(int((r.get("date") or "0000")[:4]) if (r.get("date") or "")[:4].isdigit()
+                  else 2020, lo, hi) for r in t])
+
+    # pub_year -- what the spec thought was live
+    out["pub_year"] = share([year_to_z(r.get("pub_year") or 2020, lo, hi) for r in t])
 
     have_source = sum(1 for r in t if r.get("source_date"))
 
     if "--json" in sys.argv:
         print(json.dumps({"file": path, "nodes": n, "year_scale": [lo, hi],
-                          "source_date_present": have_source,
+                          "source_date_present": have_source, "undated": undated,
                           "max_share": {k: round(v[0], 4) for k, v in out.items()},
                           "levels": {k: v[1] for k, v in out.items()}}, indent=1))
         return
@@ -99,9 +104,10 @@ def main():
     print("prs_axis_max_share -- %s" % path)
     print("  nodes: %d   yearToZ scale (from pub_year): %d..%d" % (n, lo, hi))
     print("  source_date present on %d/%d nodes" % (have_source, n))
+    print("  UNDATED (no parseable date -- all stacked at the midpoint): %d" % undated)
     print()
     print("  %-11s %9s %8s   %s" % ("z source", "max_share", "levels", "top levels (z: count)"))
-    for k in ("rendered", "pub_year", "date_full"):
+    for k in ("rendered", "legacy_year", "pub_year"):
         if k not in out:
             continue
         ms, lv, top = out[k]
