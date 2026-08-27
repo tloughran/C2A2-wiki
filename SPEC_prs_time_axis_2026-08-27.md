@@ -102,3 +102,58 @@ In: z source `pub_year -> date`; the `tau` mapping; the window control; re-keyin
 Out (separate tasks, do not fold in): carrying genuine `source_date` through the extractor; any change to the radial/discipline layout; the tab rename; `wiki/prs_3d_debug.html` (133 triplets, frozen 2026-05-04, **tracked in git and live on origin/main** — untrack it, but as its own decision).
 
 Generator reminders that will bite: the generator is **template-injection and NOT idempotent** — always run against `template_prs_3d.html`, never an already-generated file. Always pass `--carryforward` or ~230 curated pub-years are lost.
+
+---
+
+## MEASURED 2026-08-27 — the control is 0.905, not 0.86, and the migration story above is wrong
+
+Falsifier now implemented: `scripts/prs_axis_max_share.py`, run against the baked
+`wiki/prs_3d.html` (642 nodes). Everything below is measured, not asserted.
+
+| z source | max_share | distinct levels | largest level |
+|---|---|---|---|
+| **rendered (what viewers see today)** | **90.5%** | 23 | z 38.000 = 581 nodes |
+| `pub_year` (what this spec measured) | 85.7% | 25 | z 38.000 = 550 nodes |
+| `date` at **day** precision | **12.5%** | 83 | z 37.998 = 80 nodes |
+
+### Three corrections
+
+**1. The UNVERIFIED item resolves against this spec.** `buildPRSNodes()` calls
+`dateToZ(triplet.date)` (template line 685), not `yearToZ(pub_year)`. So z is
+*already* sourced from `date`. But `dateToZ` does `parseInt(dateStr.slice(0,4))`
+and hands the year to `yearToZ` — it throws the granularity away immediately.
+Worse, `yearToZ` normalises against `minYear`/`maxYear` computed from **`pub_year`**
+(`allYears = PRS_TRIPLETS.map(t => t.pub_year || 2020)`). The live axis is a hybrid:
+**value from `date`'s year, scale from `pub_year`'s range.** Nobody described it that
+way, including this spec.
+
+**2. "Granularity first: `pub_year` -> `date`" is not the fix — it is already the
+state, and as a *field* swap it makes things worse.** `date`-year puts 581 nodes on
+one plane against `pub_year`'s 550 (90.5% vs 85.7%). The 12.5% figure only appears at
+**day** precision. The edit is therefore not "change the source field" but **"stop
+truncating the date to its year inside `dateToZ`"** — a different and smaller change
+than this spec proposed, in a different function.
+
+**3. The control was measured on the wrong field.** 0.86 is `pub_year`, which the
+renderer does not use for placement. **The regression control is 0.905** (rendered).
+Any `tau -> infinity` regression test must reproduce *that*.
+
+### And granularity alone does not reach the target
+
+Day precision gives 12.5%, against this spec's own `max_share < 0.10`. It misses by
+2.5 points. So the log-on-age transform with the `tau` slider is **not** optional
+polish on top of a fix that already works — it is load-bearing for hitting the target.
+The residual pile is real: 80 nodes share a single ingestion day (the 2026-08-09
+clump), and no monotonic transform of a date separates nodes that carry the same date.
+Only a genuine `source_date` would, and:
+
+**`source_date` is present on 0 of 642 nodes.** Not sparse — absent. This spec listed
+it as "unmeasured; lives in proposal frontmatter, not yet carried through." It is now
+measured, and carrying it is an ingest-pipeline change, not a config flip.
+
+### Standing check
+
+`python3 scripts/prs_axis_max_share.py [path] [--json]`. Run it on every PRS regen.
+Bucketing rounds z to 3 decimals (two nodes agreeing to that are coplanar on screen).
+It reads the built artifact, not a source file, for the same reason the Level-2 guards
+parse the built HTML: the number that matters is the one a viewer actually gets.
