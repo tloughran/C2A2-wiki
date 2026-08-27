@@ -805,3 +805,12 @@ record. See the run report for the standing fix.
 - PROP-2026-07-22-003 + PROP-2026-07-29-003 kastrup_(synthesis, answering FINDING-062) -> kastrup PRS-63 (+1) [2026-08-10; FINDING-068]
 - PROP-2026-07-24-001 carroll_ama-july-2026 (re-read; Hoffman contact was in Cross-Tradition Signals only, invisible to candidate-driven ingest) -> carroll PRS-67 (+1) [2026-08-10]
 - PROP-2026-07-22-002 mcgilchrist_commencement-2026 -> mcgilchrist +0 triplets [2026-08-11; HELD at the verification gate the proposal and Sewing Agent both set: no transcript or recording located. Searched channelmcgilchrist.com and ralston.ac; the cited URL /chancellor-mcgilchrist-commencement-address-2026/ did not appear in any search result and could not be retrieved, and the site's own "Iain at Ralston" page (modified 2025-12-30) does not mention a 2026 address. Date discrepancy to carry: Ralston College's own post dates the installation-and-conferral ceremony 2026-05-09, so the proposal's source_date 2026-06-21 is most likely a publication date for a recording of that May event, not the delivery date. RE-OPEN CONDITION: a transcript or recording becomes available. Do not promote the Speculative PRS-CANDIDATE-01 without it.]
+
+## 2026-08-27 — Track A PRS backlog clear (attended apply_prs)
+- PROP-2026-08-11-001 hawkins_thousand-brains-systems-peer-reviewed → hawkins no-net-new / duplicate / citation-upgrade (+0)
+- PROP-2026-06-30-001 (re-staging of PROP-2026-08-11-001, same source) → hawkins duplicate / no-net-new (+0)
+- PROP-2026-08-18-001 hawkins_tbs-plain-language-explainer → hawkins PRS-23..PRS-25 (+3)
+- PROP-2026-08-26-005 hawkins_multi-column-shared-learning-brainstorm → hawkins PRS-26..PRS-28 (+3)
+- PROP-2026-08-17-011 hawkins_grid-cell-module-overlap-brainstorm → hawkins PRS-29..PRS-30 (+2)
+- PROP-2026-08-17-012 hawkins_grid-place-cells-reference-frames → hawkins PRS-31..PRS-33 (+3)
+- PROP-2026-08-25-001 hawkins_tbt-2-0-arxiv-v2 → hawkins PRS-34..PRS-35 (+2)

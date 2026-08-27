@@ -158,7 +158,7 @@ PRS-16:
   Resource: Monty system — a thousand-brains implementation using learning modules with explicit reference frames, sensorimotor exploration, and a Cortical Messaging Protocol for inter-module communication
   Solution: Demonstrated 8 orders of magnitude computational savings over transformer pretraining while achieving rapid, structured 3D object learning through active sensing (33,000× fewer computations than vision transformers; 527M× fewer than pretraining+finetuning)
   Date Added: 2026-04-14
-  Source: Leadholm, Clay, Knudstrup, Lee & Hawkins, "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference" (arXiv:2507.04494, 2025-07-06)
+  Source: Leadholm, Clay, Knudstrup, Lee & Hawkins, "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference" — Neural Computation 38(6):845–896 (2026-05), DOI 10.1162/NECO.a.1508; preprint arXiv:2507.04494 (2025-07-06)
   Confidence: High
 
 PRS-17:
@@ -167,7 +167,7 @@ PRS-17:
   Resource: Monty's sensorimotor learning loop — each learning module actively moves sensors over objects, building object-centric coordinate systems (reference frames) through exploration
   Solution: A working demonstration that active sensing with reference frames enables rapid, robust learning without massive datasets — vindicating the core HTM claim that intelligence requires movement
   Date Added: 2026-04-14
-  Source: Leadholm, Clay, Knudstrup, Lee & Hawkins, "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference" (arXiv:2507.04494, 2025-07-06)
+  Source: Leadholm, Clay, Knudstrup, Lee & Hawkins, "Thousand-Brains Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference" — Neural Computation 38(6):845–896 (2026-05), DOI 10.1162/NECO.a.1508; preprint arXiv:2507.04494 (2025-07-06)
   Confidence: High
 
 ---
@@ -222,7 +222,150 @@ PRS-22:
   Evidence: Episode framing as reported in the BBC listing; corroborated independently by the Thousand Brains Project's own nonprofit formation and non-assert pledge.
 
 ---
-*Total PRS triplets: 22*
+PRS-23:
+  Label: P23 (PROP-2026-08-18-001) - Shape bias as a structural consequence of reference frames
+  Problem: Deep-learning vision systems classify by surface texture rather than form, which is the standing explanation for their vulnerability to adversarial perturbation. Does a reference-frame architecture avoid this failure mode by construction, or does it have to be trained out?
+  Resource: Monty's emergent shape bias — the explainer reports that Monty groups objects "primarily on morphology," in explicit contrast to the texture-driven bias of vision transformers, and connects the ViT bias to adversarial attack susceptibility. Monty builds a 3-D reference-frame model from 14 single-colour views and recognizes the same shape in unseen colours and unseen viewpoints.
+  Solution: If knowledge is stored as features-at-locations in an object-centric coordinate system, shape is the substrate of the representation and surface appearance is a feature attached to it — so a shape bias is a structural consequence rather than a training objective. This gives the thousand-brains architecture a match to a documented human perceptual bias, which is a claim of a different type than the compute-efficiency claims that have carried the program so far.
+  Date Added: 2026-08-27
+  Source: Thousand-Brain Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference (2026-06-03); PROP-2026-08-18-001
+  Confidence: Medium
+  Evidence: "Monty cares more about the shape of an object than the surface paint. That mirrors the shape bias we see in human cognition and stands in contrast to the texture-driven bias of deep-learning vision transformers that leave them open to adversarial attacks." Downgraded from High because the explainer asserts the mirroring rather than measuring Monty against a human psychophysics benchmark; no such comparison is cited. **Backfill against an already-approved source.**
+
+---
+PRS-24:
+  Label: P24 (PROP-2026-08-18-001) - Symmetry inference falls out of the representation, not the loss
+  Problem: Object symmetry is a structural property that deep-learning vision systems are notoriously hard to endow with — pose estimation degrades or becomes ill-posed when several orientations are genuinely equivalent. Can a system infer symmetry without being told about it?
+  Resource: Spontaneous symmetry inference from reference-frame occupancy — the explainer reports Monty identifying which rotations of a cup are symmetric without ever being given the concept, validated by low Chamfer distance against the ground-truth orientation.
+  Solution: A system that models an object as features at locations in its own coordinate frame gets symmetry detection for free: two poses are symmetric exactly when they yield the same feature-location map. The property falls out of the representation instead of being engineered into a loss. The explainer notes this is "surprisingly difficult to bake into deep-learning systems."
+  Date Added: 2026-08-27
+  Source: Thousand-Brain Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference (2026-06-03); PROP-2026-08-18-001
+  Confidence: Medium
+  Evidence: The symmetry-detection figure and Chamfer-distance validation. **Backfill against an already-approved source.** The mechanism sketch in the Solution above is this agent's reading of why it works, not a quoted claim from the source — flagged so a reviewer can strike it.
+
+---
+PRS-25:
+  Label: P25 (PROP-2026-08-18-001) - The plain-language explainer as the recruitment instrument of a nonprofit lab
+  Problem: How does the program communicate a paradigm challenge to an audience that will not read Neural Computation? Paradigm rivalry in AI is currently conducted by institution-founding (PRS-22); institutions also have to recruit.
+  Resource: A figure-by-figure public explainer published on the project's own site three months after the peer-reviewed version, terminating in a contribution funnel — roadmap, Discourse, RFCs in the repo, tutorials, newsletter.
+  Solution: The explainer is the recruitment instrument matching the institutional form. It converts each of the paper's figures into a claim a non-specialist can hold and then routes the reader to the open roadmap. This is what a nonprofit open-research lab does instead of a press cycle.
+  Date Added: 2026-08-27
+  Source: Thousand-Brain Systems: Sensorimotor Intelligence for Rapid, Robust Learning and Inference (2026-06-03); PROP-2026-08-18-001
+  Confidence: Speculative
+  Evidence: The explainer's structure and its closing "What Next? How to use Monty, contribute to, and follow the project" section. Filed as Speculative and offered for denial: it is an observation about the tradition's *institutional* behaviour rather than a claim Hawkins makes, and PRS-22 already carries the institutional point. Only ingest if the master agent wants the recruitment-channel distinction tracked separately.
+
+---
+PRS-26:
+  Label: P26 (PROP-2026-08-26-005) - Multi-column coordination decomposed into four distinct problems
+  Problem: When many cortical columns sense the same object at once, how do they build and share a single coherent model rather than many disconnected ones — the "shared learning problem"?
+  Resource: A four-part decomposition of multi-column coordination: shared learning, pose sharing during inference, columns moving on and off the object, and the combination of permanent models with temporary features.
+  Solution: Hawkins proposes treating these as distinct problems with potentially distinct mechanisms rather than as one voting problem, and the team explores object identity as a possible anchoring signal for grid cells across columns.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Brainstorming Around How Columns Work Together During Learning and Inference (2026-07-02); PROP-2026-08-26-005
+  Confidence: Medium
+  Evidence: Video description and chapter markers: "Jeff presents several problems that arise when we start going from one to multiple columns. They include the shared learning problem, sharing pose during inference, columns moving on and off the object, and combining permanent models with temporary features." Chapter at 3:33, "Problems Related to Multiple Columns Modeling The Same Object."
+
+---
+PRS-27:
+  Label: P27 (PROP-2026-08-26-005) - Attention area, not sensed point, as the reference for relative pose
+  Problem: How does a column establish the pose of an object relative to itself during inference, when pose must be consistent across columns for voting to work?
+  Resource: The proposal that an attentional area — a spatial region rather than a discrete sensed point — could supply the reference needed to determine relative pose.
+  Solution: An attention-area-based route to relative pose, offered as a candidate mechanism under active discussion rather than a settled result.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Brainstorming Around How Columns Work Together During Learning and Inference (2026-07-02); PROP-2026-08-26-005
+  Confidence: Speculative
+  Evidence: Chapter marker at 48:09, "Could Attention Area Be Used to Determine Relative Pose?" This is framed as an open question in a brainstorming session; no experimental result is reported. Assessed from the video's own description and chapter list — the full session audio was not transcribed for this proposal.
+
+---
+PRS-28:
+  Label: P28 (PROP-2026-08-26-005) - Model forking as the open question behind object classes
+  Problem: When should the system fork a new model rather than continue updating an existing one — the question of how object classes and model boundaries arise?
+  Resource: The framing of class formation as a "forking" decision about when to create a new model.
+  Solution: Identified as an open problem tied to the permanent-versus-temporary model distinction; no mechanism is settled in this session.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Brainstorming Around How Columns Work Together During Learning and Inference (2026-07-02); PROP-2026-08-26-005
+  Confidence: Speculative
+  Evidence: Chapter marker at 1:12:57, "Problems Related to Classes and Forking Models (When Do We Create A New Model?)". Named as a problem, not resolved.
+
+---
+PRS-29:
+  Label: P29 (PROP-2026-08-17-011) - Overlapping grid modules, not one module, fix a unique location
+  Problem: Three separate difficulties in the Thousand Brains Theory — shared learning across modules, voting using relative pose, and distributed models — appear to be symptoms of one thing: the theory's current account of how a cortical reference frame represents unique locations.
+  Resource: Recent entorhinal grid-cell neuroscience in which grid cell modules overlap rather than partition space, extended by analogy into cortical columns.
+  Solution: A candidate revision in which several overlapping grid-cell-like modules together, rather than one module alone, fix a unique location — which would let modules share learning and vote in a common frame.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Brainstorming on Location Representations in the Cortex (2026-07-21); PROP-2026-08-17-011
+  Confidence: Medium
+  Evidence: The official video description states that "Jeff raised three unresolved problems in our theory that seem related to reference frames" and that he "shared an idea he had just encountered about how grid cell modules overlap," with the caveat "we have no conclusions just yet." Chapter markers locate each piece: 1:29 "Three Problems That Suggest We Need to Change Our Thinking About Reference Frames," 2:15 shared learning, 4:30 voting using relative pose, 5:38 distributed models, 24:02 "The Moser 2016 Paper on Grid Cell Modules Overlapping," 31:30 "The Implications for the Cortex if Grid Cell Modules Overlap." Verified as a real 3,984-second video on the official Thousand Brains Project YouTube channel (upload date 2026-07-21). The video itself was not transcribed, so the substance here comes from the official description and chapter titles, not from quoted speech.
+
+---
+PRS-30:
+  Label: P30 (PROP-2026-08-17-011) - A shared coordinate scaffold makes cross-column learning and voting well-defined
+  Problem: If each cortical column learns its own model in its own reference frame, it is unclear how two columns can share what they learn, or how their votes about an object's pose can be compared at all.
+  Resource: Path integration performed jointly by three overlapping grid cell modules.
+  Solution: A shared coordinate scaffold that multiple learning modules can anchor to, making cross-module learning and pose voting well-defined rather than ad hoc.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Brainstorming on Location Representations in the Cortex (2026-07-21); PROP-2026-08-17-011
+  Confidence: Speculative
+  Evidence: Inferred from chapter markers 8:06 "Question about Voting ID and Reference Frame Anchoring," 12:21 "One Alternative to Shared Learning," and 35:40 "Possible Hybrid Approach: Three Overlapping Grid Cell Modules Do Path Integration." The description explicitly disclaims conclusions, so treat the mechanism as a hypothesis raised in discussion, not a stated result. Video not transcribed.
+
+---
+PRS-31:
+  Label: P31 (PROP-2026-08-17-012) - Reference frames rebuilt from the grid-cell and place-cell literature
+  Problem: The Thousand Brains Theory's earlier story about where cortical reference frames live — Layer 4, Layer 6a and grid cells — no longer accounts for how a unique location gets represented.
+  Resource: The hippocampal-formation literature on grid cells and place cells, including grid-cell remapping studies, an explicit computational model of grid/place interaction, and a 2025 paper by Lykken.
+  Solution: A rebuilt working picture of biological reference frames, with the mapping distributed over more than one grid cell module and anchored to distal environmental cues.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Grid Cells and Location Representation (2026-07-23); PROP-2026-08-17-012
+  Confidence: Medium
+  Evidence: Official video description: "Jeff and Hojae led a brainstorming session around the nature of reference frames and how they work in the brain... This was a high-level exploratory discussion, with no conclusions drawn." Chapter markers give the arc: 4:02 "How We Used to Think About Reference Frames in the Biological Model: Layer 4, Layer 6A & Grid Cells," 6:06 "Back to the Drawing Board," 8:28 "Grid Cells Are Anchored by Environmental Distal Cues," 16:31 "More than One Grid Cell Module Is Needed to Get a Good Reference Frame Mapping," 17:54 "Reviewing Two Papers on Grid Cell Remapping," 25:43 computational model, 37:01 "The Lykken 2025 Paper," 49:09 "Summarizing how We're Currently Thinking about Biological Reference Frames." Verified as a real 4,734-second video on the official Thousand Brains Project YouTube channel (upload date 2026-07-23); not transcribed, so the claims above rest on the official description and chapter titles.
+
+---
+PRS-32:
+  Label: P32 (PROP-2026-08-17-012) - Spatial coding found outside the hippocampal formation
+  Problem: The cortical claim of the Thousand Brains Theory needs grid-cell-style location coding to be a general cortical mechanism, not a specialisation of the hippocampal formation.
+  Resource: A paper on "A Novel Somatosensory Spatial Navigation System Outside the Hippocampal Formation," discussed near the end of the meeting.
+  Solution: Evidence that spatial-navigation-style coding appears in a sensory modality outside the hippocampal formation, supporting the generalisation of reference frames to sensory cortex.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Grid Cells and Location Representation (2026-07-23); PROP-2026-08-17-012
+  Confidence: Medium
+  Evidence: Chapter marker 1:07:52 names the paper by title. Whether Hawkins endorses that reading or raises it as a complication cannot be determined from the description alone; the video was not transcribed.
+
+---
+PRS-33:
+  Label: P33 (PROP-2026-08-17-012) - An object frame cannot inherit the navigation case's distal-cue anchor
+  Problem: If grid cells and place cells are both anchored to distal environmental cues, an object-centred cortical reference frame cannot be inherited unchanged from the navigation case — an object has no distal cues.
+  Resource: A single grid/place computational model examined in depth, plus remapping results showing what the anchoring depends on.
+  Solution: Speculative proposals about how location might be represented in cortex once the distal-cue anchor is removed.
+  Date Added: 2026-08-27
+  Source: 2026/06 - Grid Cells and Location Representation (2026-07-23); PROP-2026-08-17-012
+  Confidence: Speculative
+  Evidence: Chapters 8:28 and 15:06 establish distal-cue anchoring for grid and place cells respectively; 53:40 "Some Speculations on how Location Is Represented in the Brain," 58:19 "Some More Speculative Thoughts," 1:01:58 "A Possible Model to Think About Biological Reference Frames." The tension stated in the Problem line is a reading of that sequence, not a quoted claim; the video was not transcribed.
+
+---
+PRS-34:
+  Label: P34 (PROP-2026-08-25-001) - A tradition marking its own version boundary
+  Problem: The Thousand Brains Theory has been extended piecemeal since 2019 — grid cells, voting, reference frames, heterarchy, the thalamic transform — with no statement of what the theory as a whole now claims, and no statement of what its previous formulation failed to explain. A program cannot be assessed on its track record if it never marks where one formulation ends and the next begins.
+  Resource: The retitling of arXiv:2507.05888 to "The Thousand Brains Theory 2.0," together with the paper's reported explicit enumeration of what TBT 1.0 did not address: hierarchical feedforward connections, feedback connections, and cortico-thalamo-cortical routes.
+  Solution: A self-declared version boundary in a living research program — the theory names its own predecessor's gaps and claims to close them. This is a first-class datum for the C2A2 accelerator thesis, which needs cases where a tradition articulates its own developmental stages rather than having them imposed by an outside historian. It is also the cleanest instance so far of MacIntyre's criterion that a tradition progresses by explaining why its earlier formulation failed on its own terms.
+  Date Added: 2026-08-27
+  Source: The Thousand Brains Theory 2.0: An Extension for the Long-Range Connections of the Neocort (2026-08-20); PROP-2026-08-25-001
+  Confidence: Medium
+  Evidence: Reported title change from "Hierarchy or Heterarchy? A Theory of Long-Range Connections for the Sensorimotor Brain" (v1, 2025-08-25) to "The Thousand Brains Theory 2.0: An Extension for the Long-Range Connections of the Neocortical Heterarchy" (v2, reported 2026-08-20), same arXiv identifier, same three authors (Hawkins, Leadholm, Clay). Confidence is Medium, not High, solely because of the verification gap above; the claim's *content* would be High if v2 is confirmed.
+
+---
+PRS-35:
+  Label: P35 (PROP-2026-08-25-001) - Heterarchy converted into predictions that can fail, at three evidential levels
+  Problem: The heterarchy proposal as captured in PRS-06 and the thalamic-transform proposal as captured in PRS-19 are functional interpretations of anatomy — stories about what connections are *for*. Such stories are cheap unless they forbid something. The v1 text this agent read offers functional roles but no consolidated set of predictions that could fail.
+  Resource: A reported testable-predictions section addressing three distinct evidential levels at once — anatomical, neurophysiological, and behavioral — rather than predictions at the single level where the theory is most comfortable.
+  Solution: Moves the heterarchy account from interpretation to falsifiable proposal, and does so at three levels simultaneously, which matters because a theory that predicts only at the anatomical level can be rescued indefinitely by reinterpreting function. For the C2A2 measurement program this is a directly usable exemplar: it is what a tradition looks like when it converts an interpretive framework into a set of ways to be wrong.
+  Date Added: 2026-08-27
+  Source: The Thousand Brains Theory 2.0: An Extension for the Long-Range Connections of the Neocort (2026-08-20); PROP-2026-08-25-001
+  Confidence: Speculative
+  Evidence: Reported presence of "testable predictions and discussion of connections to experimental findings at anatomical, neurophysiological, and behavioral levels" in v2. Held at Speculative because neither the section nor any individual prediction has been read by this agent — only its existence is reported. **Do not ingest this candidate on report alone; read the section first.**
+
+---
+*Total PRS triplets: 35*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 
