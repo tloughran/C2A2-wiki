@@ -501,9 +501,36 @@ var maxOrd = allOrds.length ? Math.max.apply(null, allOrds) : 0;
 var minYear = new Date(minOrd * 86400000).getUTCFullYear();
 var maxYear = new Date(maxOrd * 86400000).getUTCFullYear();
 
+// Log-on-AGE, not on date. The corpus is ~95% recent, so a linear date scale
+// crushes it into a thin band at the top of the column: measured 2026-08-27,
+// linear put 618 of 642 triplets above z=34 while max_share read a healthy 5.5%.
+// max_share cannot see this — it counts nodes sharing an EXACT level, and any
+// monotonic transform preserves ties, so it reads 5.5% at every tau below. The
+// axis was fixed by that metric and still unreadable by eye. Look at the render.
+//
+// TAU_DAYS is the time constant in days. Small tau expands recent material and
+// compresses the deep past; tau -> infinity recovers the linear scale EXACTLY and
+// is the regression control (scripts/prs_axis_max_share.py reports it as
+// legacy_year's sibling). Measured spread over 642 triplets, low/mid/top of column:
+//     tau   30 -> 357 / 175 / 110      (recent dominates the whole column)
+//     tau   90 -> 143 / 296 / 203      <- chosen: balanced, and the spec's default
+//     tau  180 ->  78 / 192 / 372
+//     linear ->   20 /   4 / 618       (the crush)
+//
+// NOT YET BUILT: the spec also calls for tau as a live slider plus a two-handle
+// age window that renormalises to fill the column, with out-of-window nodes DIMMED
+// never hidden. Both need reposition machinery this file does not have — meshes,
+// threadLines, labelSprites, coils and the decade furniture are all built once with
+// baked vertex positions. Next increment; do not bolt a slider on without it.
+var TAU_DAYS = 90;
+
 function ordToZ(o) {
   if (maxOrd === minOrd) return zHeight / 2;
-  return 2 + ((o - minOrd) / (maxOrd - minOrd)) * (zHeight - 4);
+  var ageMax = maxOrd - minOrd;
+  if (ageMax <= 0) return zHeight / 2;
+  var age = maxOrd - o;
+  var u = Math.log(1 + age / TAU_DAYS) / Math.log(1 + ageMax / TAU_DAYS);
+  return 2 + (1 - u) * (zHeight - 4);
 }
 
 function yearToZ(year) {
