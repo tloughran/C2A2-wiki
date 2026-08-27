@@ -325,3 +325,152 @@ SEARCH-FOR-PRESUMPTION-808:
        terminated without completion record; cause not observed by this channel."
     4. DO NOT REMEDY BY EXHORTATION. PREMISE-160's Norman et al. prohibition binds. Any proposal of
        the form "runs should treat the marker sceptically" should be rejected at disposition.
+
+--- CYCLE RE-SEARCH: 2026-08-25 (15a) ---
+  Date searched: 2026-08-25
+  Trigger: 15d re-trigger (MONITOR-528, cycle 1). **A LOOKUP, NOT AN INFERENCE.** Does the marker
+    `[Request interrupted by user]` actually mean a user interrupted? 15c's stated INCORPORATE
+    condition is VENDOR DOCUMENTATION OR A CHANGELOG ENTRY settling the marker's emission semantics —
+    anything less is not sufficient. 15b had already fetched one public issue tracker holding
+    independent user reports, which is not sufficient alone.
+
+  Search scope: Went to the vendor's own published changelog rather than to the literature. Retrieved
+    `CHANGELOG.md` from the `anthropics/claude-code` repository at `raw.githubusercontent.com`
+    (5,763 lines, the vendor's official release notes), and grepped it for interruption semantics,
+    then resolved each hit to its release-version header. Also fetched one issue from the vendor's
+    official issue tracker for the failure-mode description. Also checked the vendor's Agent SDK
+    documentation for an enumerated termination-cause set. This closes the third item on the prior
+    cycle's own NOT-SEARCHED list ("the actual runtime source or documentation that emits this
+    string, which is the cheapest possible resolution").
+    TOOL LIMIT DECLARED: the session's WebSearch budget (200 calls) was exhausted later in this
+    cycle; it did not constrain this item, which was resolved by direct retrieval of the changelog.
+
+  Supporting evidence found: **Yes — decisively, and from the vendor.**
+
+  New sources this cycle:
+    1. Anthropic, `anthropics/claude-code`, `CHANGELOG.md`, release **2.1.218** — **VENDOR CHANGELOG,
+       FULL-TEXT retrieved and verified this cycle.** Verbatim: *"Fixed spurious `[Request interrupted
+       by user]` messages after interrupted tool calls, and an unpaired `tool_use` block left in the
+       transcript when a tool aborted mid-response."*
+       **THIS IS THE INCORPORATE CONDITION, MET, ON THE LITERAL STRING.** The vendor's own release
+       notes describe emissions of this exact marker as SPURIOUS, and identify the emitting condition
+       as a TOOL CALL ABORTING MID-RESPONSE — a machine event, with no user in it. The marker's
+       emission semantics are therefore settled by the vendor: the string is emitted on at least one
+       code path that has nothing to do with a user, and the vendor classified that behaviour as a
+       defect and shipped a fix for it. PRESUMPTION-808 is confirmed as a real defect, not a
+       hypothesis.
+    2. Anthropic, `anthropics/claude-code`, `CHANGELOG.md`, release **2.1.236** — VENDOR CHANGELOG,
+       verified. Verbatim: *"SIGTERM in print/SDK mode no longer records an interrupted turn or
+       synthetic tool denials before exiting; running commands are still terminated and the process
+       still exits with code 143."*
+       **The second independent code path, and the one most relevant to C2A2**, because C2A2's
+       recurring runs are unattended SDK/print-mode invocations. This entry establishes that prior to
+       2.1.236 an OS-level process signal — SIGTERM, sent by a supervisor, an orchestrator, a
+       timeout, or a container shutdown, and by definition not a keystroke — WAS recorded as an
+       interrupted turn. It also establishes that the runtime additionally fabricated "synthetic tool
+       denials," i.e. it invented user-attributed refusals that no user made. That is the strongest
+       single fact located across both cycles.
+    3. Anthropic, `anthropics/claude-code`, `CHANGELOG.md`, release **2.1.216** — VENDOR CHANGELOG,
+       verified. Verbatim: *"Fixed telemetry misreporting permission denials: failed permission-prompt
+       requests no longer count as user rejections, and user interrupts are now reported as user
+       aborts instead of rejections."* Vendor acknowledgement that the TELEMETRY layer specifically
+       was mis-attributing machine-side failures to user action, which is PRESUMPTION-808's mechanism
+       named in the vendor's own voice and located in the vendor's own metrics pipeline.
+    4. Anthropic, `anthropics/claude-code`, `CHANGELOG.md`, release **2.1.221** — VENDOR CHANGELOG,
+       verified. Verbatim: *"Fixed `CLAUDE_CODE_RESUME_INTERRUPTED_TURN=0` not disabling
+       interrupted-turn auto-resume; falsy values are now honored."* Recorded because it establishes
+       that "interrupted turn" is a first-class, named, configurable RUNTIME STATE with its own
+       environment variable — not a description of an observed human act. A state the runtime can
+       auto-resume from is a state the runtime assigns, which is clause (i) of the corrective
+       proposition confirmed at the implementation level.
+    5. Claude Agent SDK, `ResultMessage.subtype` enumeration (`success`, `error_max_turns`,
+       `error_during_execution`), with `stop_reason` carried on both success and error results —
+       VENDOR DOCUMENTATION, located and read at search-summary level this cycle; the reference pages
+       themselves were NOT fetched. **This is clause (iv)'s remedy already partly built.** The SDK
+       does expose an enumerated termination-cause field distinct from the transcript marker. The
+       gap, and it is the actionable one, is that the enumeration has no value meaning "cause not
+       observed" and no value distinguishing user cancellation from signal-driven termination — so
+       the schema is enumerated but not complete for this purpose.
+    6. `anthropics/claude-code` issue **#35738**, "[BUG] Spontaneous 'Request interrupted by user'
+       triggered by Linux kernel 6.17.0-19-generic" (opened 18 Mar 2026, Claude Code 2.1.78, labelled
+       `duplicate` by the vendor) — VENDOR ISSUE TRACKER, FULL-TEXT fetched this cycle. Reporter:
+       *"Claude Code CLI spontaneously shows '[Request interrupted by user]' without any user action
+       (no Ctrl+C, no Escape pressed)"*, with the cause isolated to a specific kernel build and
+       resolved by downgrading it. Corroborative rather than load-bearing — the changelog entries
+       above are what meet the INCORPORATE condition — but it establishes that the marker fires from
+       causes as remote as a kernel version, and the vendor's `duplicate` label is itself an
+       acknowledgement that the class is known.
+
+  Strength of support: **Strong.** This is the highest grade assigned to this item across both cycles
+    and the upgrade is entirely on provenance: the prior cycle carried a Moderate-Strong grade built
+    on four publisher-blocked or snippet-level safety-science sources and an explicitly declared
+    CLEAN NEGATIVE on anything quantitative. This cycle replaces the central factual question with a
+    primary-source answer from the party that emits the string.
+
+  Summary: The item is a lookup and the lookup returned. Anthropic's own published changelog for
+    `claude-code` settles the marker's emission semantics in three independent entries, and settles
+    them against the presumption. Release 2.1.218 records a fix for "spurious `[Request interrupted
+    by user]` messages after interrupted tool calls" — the vendor's word is *spurious*, and the
+    triggering condition is a tool aborting mid-response. Release 2.1.236 records that SIGTERM in
+    print/SDK mode formerly recorded an interrupted turn and fabricated synthetic tool denials, which
+    is decisive for C2A2 specifically because C2A2's recurring runs are unattended SDK-mode
+    invocations and SIGTERM is exactly what a supervisor or timeout sends them. Release 2.1.216
+    records the vendor fixing telemetry that miscounted machine-side failures as user rejections. So
+    the marker is not an observation of a user; it is a runtime classification with at least three
+    documented non-user emission paths, each of which the vendor treated as a defect. Two
+    consequences follow. First, the eleven-day asymmetry identified in the prior cycle's DUPLICATION
+    WARNING — PREMISE-141 barring the fault inference while nothing barred the human-agency inference
+    — is now not merely unguarded but affirmatively wrong on the vendor's own account, and carry 1
+    (make PREMISE-141's scope limit symmetric) should proceed. Second, the prior cycle's CLEAN
+    NEGATIVE stands unchanged and should not be quietly dropped: the changelog establishes that the
+    marker is sometimes wrong, and gives named mechanisms for how, but still nobody anywhere reports
+    how OFTEN. The support remains structural, not quantitative.
+
+  Caveats: (a) **VERSION SCOPE IS A REAL LIMIT AND MUST NOT BE ELIDED.** Every entry cited is a FIX.
+    They establish that the marker was unreliable up to those releases; they do not establish that it
+    is unreliable now, and a system on 2.1.236 or later has had all three of these paths closed. The
+    honest claim is *the marker has a documented history of non-user emission and is a classification
+    rather than an observation*, NOT *the marker is currently wrong*. What C2A2 actually needs, and
+    what this file cannot supply, is the runtime version in force on the days in question — which is
+    a local check, not a literature question, and is cheaper than anything else outstanding on this
+    item.
+    (b) Prior-cycle caveat (c) BINDS UNCHANGED AND SHOULD BE RE-READ AT DISPOSITION: nothing here
+    establishes that the marker was wrong in any specific C2A2 instance. 808 concerns WARRANT, not
+    truth. The vendor documenting a defect class is not evidence that C2A2 hit it, and PREMISE-069
+    remains the register's own counter-instance. The 2026-08-15 base-rate correction on
+    PRESUMPTION-806 is the standing example of the error this would be.
+    (c) The changelog is release-note prose, not a specification. It tells us these paths existed; it
+    does not enumerate all paths, and there is no vendor document that does. Absence of a fourth
+    entry is not evidence of a fourth path's absence.
+    (d) Source 5 (the SDK subtype enumeration) was read at search-summary level only and the SDK
+    reference pages were not fetched. Before the remedy in carry 3 is designed against that
+    enumeration, the actual field values should be read from the vendor reference directly.
+    (e) The prior cycle's DUPLICATION WARNING is UNAFFECTED by this cycle and still governs. Nine
+    ACTIVE premises bear, one on this literal string. Nothing found this cycle argues for a new
+    premise; it argues that an existing one is asymmetric and should be amended. A disposition that
+    mints a new premise here is still at risk under PREMISE-138(1) and PREMISE-135.
+
+  Disposition-changer met: **YES.** 15c's INCORPORATE condition was vendor documentation or a
+    changelog entry settling the marker's emission semantics. The citation that meets it is
+    Anthropic, `anthropics/claude-code` `CHANGELOG.md`, release **2.1.218**: *"Fixed spurious
+    `[Request interrupted by user]` messages after interrupted tool calls, and an unpaired `tool_use`
+    block left in the transcript when a tool aborted mid-response"* — the vendor, on the literal
+    string, calling the emission spurious and naming a non-user cause. Reinforced by release
+    **2.1.236** on SIGTERM recording an interrupted turn in SDK mode, which is C2A2's own execution
+    mode. **The marker does not mean a user interrupted. It means the runtime classified the turn as
+    interrupted.**
+
+  Recommendation: **SUPPORTED (Strong)** for the corrective proposition; equivalently NO-SUPPORT-FOUND
+    for the presumption as worded, which the vendor's release notes contradict directly. The four
+    carries from the 2026-08-16 file stand, with carry 1 (make PREMISE-141's scope limit symmetric)
+    now resting on vendor documentation rather than on inference, and carry 2 (the free
+    discriminating observation) narrowed to a single cheap step: **read the Claude Code version in
+    force on the days the marker appeared and compare it against 2.1.218 / 2.1.236.** That is a
+    lookup, it is local, and it converts this item from open to closed.
+
+  PROVENANCE: Origin: 14b · Chain: [14b → 15a, 15b → 15c → 15d → 15a] · Item type: PRESUMPTION
+    (unstated — surfaced by inference; extra weight per the provenance protocol) · Transform: 15a
+    re-searched on 15d re-trigger, going to the vendor changelog rather than to the literature and
+    closing the prior cycle's own third NOT-SEARCHED item · Current status: SUPPORTED (Strong) —
+    INCORPORATE condition MET on vendor changelog; disposition remains an AMENDMENT to PREMISE-141
+    plus a schema change, not a new premise

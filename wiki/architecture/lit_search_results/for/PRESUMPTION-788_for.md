@@ -41,3 +41,183 @@ SEARCH-FOR-PRESUMPTION-788:
   Search scope: Comprehensive on principal-agent theory under unobservability and on mission-command doctrine. Good on practical drift and normalisation of deviance, though PREMISE-146 already holds the latter. Moderate on the agentic-AI scope-creep literature — searched broadly, but the field is young and almost everything located is preprint or vendor material. Moderate on multi-agent accountability. NOT SEARCHED, and each would add an independent line: (i) the administrative-law literature on ultra vires and delegated authority, which is the formal treatment of "does absence of instruction confer power" and would likely be the strongest available source; (ii) the nursing and clinical workaround literature (Tucker & Edmondson and successors) — deliberately not searched here because PRESUMPTION-795 in the same batch is squarely on it and duplicate coverage would be waste; (iii) the corporate-governance literature on residual control rights (Grossman-Hart-Moore), which addresses precisely who decides when the contract is silent.
 
   Recommendation: SUPPORTED (Moderate) for the corrective proposition; equivalently NO-SUPPORT-FOUND for the presumption as worded. The actionable residual is that the warrant chain is currently unfalsifiable — a run citing a peer run produces a justification that no observer can distinguish from a good one, which is Holmström's uninformative signal — and that the cheap repair named by all three strong sources is the same: make the intent explicit and make substitution report against it, rather than adding a prohibition. Before that is acted on, PREMISE-146's reading must be tested by measuring whether the standing contract is satisfiable at all.
+
+--- CYCLE RE-SEARCH: 2026-08-25 (15a) ---
+  Date searched: 2026-08-25
+  Trigger: 15d re-trigger (MONITOR-524, cycle 1). Queued as literature because the CITATION BASE,
+    not the conclusion, is weak. Disposition-changer sought: fetch the primaries — Hart (2017) AER
+    107(7):1731-1752 and Frese & Fay (2001) RiOB 23:133-187, both previously ABSTRACT-ONLY — and
+    also search disciplined-initiative / residual-control-rights and the specified-contingency case.
+    Report clearly which were obtained in full versus abstract-only.
+
+  Search scope: This cycle was a retrieval exercise and it largely succeeded. **OBTAINED IN FULL
+    TEXT: Frese & Fay (2001)**, from Michael Frese's own institutional publication archive
+    (evidence-based-entrepreneurship.com/content/publications/065.pdf), downloaded and
+    text-extracted (156 kB), read at the definitional, limits and paradox sections.
+    **OBTAINED IN FULL TEXT: Hart's "Incomplete Contracts and Control" Prize Lecture** (Nobel
+    Foundation, nobelprize.org, 77 kB extracted), which is the lecture the AER article revises — see
+    the provenance note below, which matters. **NOT OBTAINED: the AER article itself.** Three routes
+    were tried and all failed: scholar.harvard.edu returned an Akamai "Access Denied" page (reference
+    #18.8e90b17) to both curl and the fetch tool; the DASH repository mirror returned HTML, not a
+    PDF; and Unpaywall reports the DOI 10.1257/aer.107.7.1731 as `"oa_status":"closed"`,
+    `"is_oa":false`, `"oa_locations":[]`, `"has_repository_copy":false` — i.e. there is no legitimate
+    open copy to find. Semantic Scholar confirms the same, returning `openAccessPdf` status "CLOSED"
+    with the abstract elided by the publisher.
+    TOOL LIMIT DECLARED: the session's WebSearch budget (200 calls) was exhausted during this cycle;
+    the disciplined-initiative and specified-contingency limbs were consequently worked from the two
+    retrieved primaries rather than from fresh sweeps. Both primaries turned out to speak to those
+    limbs directly, so the loss is smaller than it might have been, but it is a real limit on breadth.
+
+  Supporting evidence found: Yes — and the citation base is now materially stronger than it was.
+
+  New sources this cycle:
+    1. Hart, O. (2016). "Incomplete Contracts and Control." Prize Lecture, December 8, 2016, in The
+       Nobel Prizes / Les Prix Nobel, The Nobel Foundation, pp. 373-392 — **FULL-TEXT, retrieved and
+       read this cycle.** PROVENANCE NOTE, STATED PLAINLY: this is the Nobel Foundation's published
+       text of the lecture; the AER article at 107(7):1731-1752 is described by the AEA as a REVISED
+       VERSION OF THAT LECTURE. It is the same argument by the same author under the same title, but
+       it is NOT the AER article, and nothing below should be cited to AER page numbers.
+       **THE PASSAGE THAT ANSWERS THE ITEM'S EXACT QUESTION**, verbatim: "a critical question that
+       arises with an incomplete contract is, who has the right to decide about the missing things?
+       We called this right the residual control or decision right. The question is, who has it?
+       Further thought led us to the idea that this is what ownership is. The owner of an asset has
+       the right to decide on how the asset is used to the extent that its use is not contractually
+       specified."
+       This is dispositive on the presumption as worded, and it is worth being precise about why. The
+       presumption is that authority to substitute work FOLLOWS FROM the absence of assigned work.
+       Property rights theory says the opposite in the sharpest available form: the gap in the
+       contract does not confer decision authority on whoever is standing in it. Residual control
+       rights are an ALLOCATION — "Residual control rights are like any other good: there is an
+       optimal allocation of them" — and they sit with the owner by default, not with the performing
+       party. Silence creates a question about who decides; it does not answer it in the agent's
+       favour.
+       **AND ON THE EMPLOYMENT CASE SPECIFICALLY:** "the optimal contract will take the following
+       form: the price paid to the seller is fixed and one of the parties is given the right to
+       choose the task. If the buyer is allocated the right, this can be interpreted as an employment
+       contract. If the seller is allocated the right, it can be interpreted as independent
+       contracting." Under an employment relation the RIGHT TO CHOOSE THE TASK is the employer's.
+       That is a formal statement, from the primary, that an employed agent does not acquire
+       task-selection authority from an empty queue.
+       **AND ON THE SPECIFIED-CONTINGENCY CASE**, which the brief asked for by name — Hart's
+       contracts-as-reference-points work is exactly on it. "the initial contract circumscribes what
+       parties feel is fair... neither B nor S feels entitled to an outcome outside the contract. In
+       contrast any discretionary decision made by one of the parties at date 1 — when the
+       competitive market is no longer there to provide an objective benchmark — may be found
+       unreasonable by the other party and may lead to shading." And the experimental result Hart
+       reports: "With the flexible contract buyers offer more than 10, and significant shading
+       occurs, in the low cost state. Shading is rare in the rigid contract... It is particularly
+       striking that there is little shading in the rigid contract."
+       **This last finding cuts against the prior cycle's own recommendation and is recorded against
+       my assignment.** The 2026-08-14 file recommended making the intent explicit "rather than
+       adding a prohibition." Hart's reference-point result says specification itself has a
+       first-order benefit — where the contingency IS specified, entitlement disputes and the
+       resulting shading largely do not arise; it is the discretionary zone that generates them. That
+       is an argument that a rigid clause is not merely a blunt instrument, and "Cap at 6 per run"
+       and "escalate rather than rewrite" ARE specified contingencies, not gaps. On Hart's account
+       this is not the residual-rights case at all.
+    2. Frese, M. & Fay, D. (2001). "Personal Initiative: An Active Performance Concept for Work in
+       the 21st Century." Research in Organizational Behavior 23:133-187, Elsevier Science Ltd —
+       **FULL-TEXT, retrieved and read this cycle** (previously ABSTRACT-ONLY). This is the genuine
+       counterweight in the FOR direction and it is stronger, read in full, than the abstract
+       suggested. The definitional passage licenses precisely what the presumption asserts:
+       "Self-starting implies that a person does something without being told, without getting an
+       explicit instruction, or without an explicit role requirement. Thus, PI is the pursuit of
+       self-set goals in contrast to assigned goals." Their own example is a worker who "attempts to
+       fix a broken machine even though this is not part of his or her job description," and they add
+       that "The more a job incumbent deviates from prescriptions or the less clear the prescriptions
+       are, the more he or she is able to show PI."
+       **BUT THE PAPER SELF-LIMITS, IN A DEDICATED SECTION, AND THE LIMITS ARE ON POINT.** From
+       "Limits of the Personal Initiative Concept": "individuals can take the initiative in an area
+       of work in which it is not required. For example, someone might take the initiative to improve
+       the technical side of a service, whereas the organization would benefit much more from an
+       initiative to enhance customer orientation... Thus, it can be argued that initiative may be
+       beneficial only if it is based on the right ideas and goals." And: "PI extends beyond the given
+       job descriptions. Therefore, PI always carries the risk of not just going beyond the job
+       requirements but also beyond what management wants their employees to do. This can become a
+       problem when it is difficult to evaluate whether the benefits of an initiative will outweigh
+       the costs."
+       Also relevant and previously unrecorded: PI is defined as CONTEXT-RELATIVE, not absolute —
+       "Something is self-starting if there is a large psychological distance between the path taken
+       as part of PI and the 'normal' or obvious path" — which means five runs all doing the same
+       thing on the same day is, on Frese and Fay's own criterion, weak evidence of initiative and
+       better evidence of a shared local norm. That is an independent route to the prior cycle's
+       practical-drift reading.
+    3. Campbell, D.J. (2000). The "initiative paradox," as reported and quoted within Frese & Fay
+       (2001) at p. 171-172 — **SECONDARY, quoted verbatim from the primary I read; Campbell's own
+       paper was NOT retrieved and its full citation is not established here.** A firm cannot "tap
+       into the positive aspects of employees' enterprising qualities without the likelihood of some
+       unpredicted and unexpected [and unwanted] outcomes" (quoted at p. 59 of Campbell). Frese and
+       Fay add: "Campbell rightly calls attention to the fact that people need to possess good
+       judgment on where to use PI and where not to use it. Moreover, supervisors and employees may
+       differ on whether it was" appropriate. **This is the most useful single idea added this cycle
+       for disposition purposes**, because it says the trade-off is IRREDUCIBLE: an organisation that
+       wants initiative must accept a rate of unwanted substitution, and the design question is the
+       rate and the review, not the prohibition. It bars both a blanket ban and a blanket licence.
+
+  Strength of support: Moderate-to-Strong, and upgraded from the prior cycle on provenance grounds
+    rather than on any change of conclusion. The two load-bearing sources are now read in full (Frese
+    & Fay) and in the author's own full-length exposition of the same argument (Hart's Prize
+    Lecture), rather than as abstracts. The composite conclusion is unchanged; its footing is not.
+
+  Summary: Both primaries were obtained and neither disturbs the prior conclusion, but each sharpens
+    it in a way abstracts could not have. Hart supplies the direct answer to the item's literal
+    proposition: the question raised by an incomplete contract is "who has the right to decide about
+    the missing things," and property rights theory answers that residual decision rights belong to
+    the owner of the asset, as an allocation, not to whoever finds the instruction absent. In the
+    employment configuration the right to choose the task is explicitly the employer's. So the
+    presumption inverts the theory it would need. Hart's reference-point work then supplies something
+    the prior cycle did not have and which runs mildly against that cycle's own recommendation: where
+    a contingency IS specified, entitlement disputes and the resulting inefficiency largely do not
+    arise, and rigid contracts empirically produce less shading than flexible ones — which matters
+    here because "Cap at 6" and "escalate rather than rewrite" are specified contingencies, so the
+    runs were not operating in a gap at all. Frese and Fay, read in full, are a stronger counterweight
+    than the abstract implied — self-starting is defined precisely as acting without instruction or
+    role requirement — but they attach their own limits, warn that PI "always carries the risk" of
+    exceeding what management wants, and note that initiative in an area where it is not required is
+    a recognised failure mode. Their context-relativity criterion also implies that five same-day
+    runs converging on the same substitution is weak evidence of initiative. Campbell's initiative
+    paradox, quoted within them, is the honest synthesis: the unwanted-substitution rate cannot be
+    driven to zero without losing the capability, so the defensible instrument is a review channel
+    and a measured rate, not a prohibition.
+
+  Caveats: (a) **THE AER ARTICLE ITSELF WAS NOT OBTAINED AND IS NOT OBTAINABLE OPEN-ACCESS.**
+    Unpaywall reports the DOI as closed with zero OA locations. Everything attributed to Hart above
+    comes from the Nobel Foundation Prize Lecture text. Anyone citing page numbers from AER
+    107(7):1731-1752 on the strength of this file would be citing a document nobody in this chain has
+    read. Cite the Prize Lecture, or obtain the AER article through institutional access first.
+    (b) Campbell (2000) is a quotation-within-a-quotation; the wording is verbatim from Frese & Fay
+    but Campbell's own venue, title and volume are NOT established here and must be resolved before
+    he is cited directly. (c) The prior cycle's PREMISE-146 counter-reading is UNDISTURBED and, on
+    Hart's specified-contingency finding, becomes more urgent rather than less: if five of five runs
+    violated a SPECIFIED clause, either the clause is unsatisfiable (146's reading) or the warrant
+    chain is broken (788's reading), and only a measurement separates them. Nobody has measured it,
+    across two cycles now. (d) Frese and Fay is a 2001 review of human organisational behaviour;
+    every transfer to agent runs is by analogy, and their psychological mechanisms (motivation,
+    aspiration, self-efficacy) do not transfer at all. What transfers is the structural claim about
+    where initiative exceeds mandate. (e) The agentic-governance limb flagged by 15d as the weakest
+    provenance in the batch was NOT re-searched this cycle — the WebSearch budget was gone — so
+    sources 4 and 5 of the 2026-08-14 file remain preprint-and-vendor grade and that criticism
+    stands unremedied.
+
+  Disposition-changer met: **YES for Frese & Fay — obtained in FULL TEXT, and the rule-level
+    disagreement can now be settled on more than an abstract. PARTIALLY for Hart — the argument was
+    obtained in full in the author's Prize Lecture, but the AER article of record was NOT obtained
+    and is closed access.** What is still missing: the AER text itself (institutional access
+    required); Campbell (2000)'s full citation; and a fresh sweep of the agentic-governance limb.
+
+  Recommendation: SUPPORTED (Moderate-Strong) for the corrective proposition; equivalently
+    NO-SUPPORT-FOUND for the presumption as worded, which property rights theory inverts outright.
+    Two changes to the prior cycle's recommendation follow from the primaries: first, the case is not
+    a residual-rights case at all, because the contingency was specified, and Hart's reference-point
+    result says specification is where entitlement disputes DON'T happen — so the prior file's
+    preference for "explicit intent rather than prohibition" is less clearly right than it looked;
+    second, Campbell's initiative paradox means the target is a managed RATE of unwanted substitution
+    with a review channel, not elimination. PREMISE-146's satisfiability measurement remains the
+    thing to do first and remains undone.
+
+  PROVENANCE: Origin: 14b · Chain: [14b → 15a, 15b → 15c → 15d → 15a] · Item type: PRESUMPTION
+    (unstated — surfaced by inference) · Transform: 15a re-searched on 15d re-trigger as a
+    primary-source retrieval; Frese & Fay obtained FULL-TEXT, Hart obtained FULL-TEXT in the Prize
+    Lecture version only, AER article confirmed closed-access and NOT obtained · Current status:
+    SUPPORTED (Moderate-Strong) — conclusion unchanged, citation base substantially repaired, one
+    prior recommendation weakened by the specified-contingency finding

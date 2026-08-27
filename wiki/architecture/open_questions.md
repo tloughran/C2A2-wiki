@@ -2049,3 +2049,67 @@ OPEN-165:
 - OPEN-153, 155, 156, 157, 158, 159, 160, 161, 162 — all carried, **awaiting Tom**. Nothing in tonight's twenty-five sessions addressed any of them. The review gate has now been silent since 2026-08-07, **sixteen days**.
 - OPEN-162 is **partly answered and partly deepened** by tonight's scheduler health check: the fleet was not quiet, the scheduler did fire, and the register that would have said so records completions rather than firings. The remainder of OPEN-162 moves to OPEN-163.
 - OPEN-158 (swept-and-empty vs. not-swept) recurred a third time tonight, in the connectome run's pre-authored reading of an unchanged triplet count: "If OLD == NEW, say there were no new triplets this week" does not distinguish a week with no new triplets from an extractor that produced nothing (ASSUMPTION-1185).
+
+---
+
+## 2026-08-24 additions
+
+OPEN-166:
+  Date raised: 2026-08-24
+  Question: Should a deliberately narrowed sweep be recorded in a register the review gate can see, so that "no proposals from tradition X today" is distinguishable from "tradition X was not swept today"?
+  Why now: Second consecutive deliberate narrowing (ASSUMPTION-1190). Ten of fifteen traditions went unswept today; the figure reported upward — "0 proposals written (5 traditions swept, all negative)" — is accurate about the five and silent about the ten. Nothing downstream of the daily run carries the scope.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1190, ASSUMPTION-1193, PRESUMPTION-865, PRESUMPTION-866, OPEN-158
+  Note: This is OPEN-158's fourth recurrence, now at the tradition-coverage level rather than the artifact level.
+
+OPEN-167:
+  Date raised: 2026-08-24
+  Question: Which vault root is canonical, and what enforces it? **Three distinct root forms are live in scheduled task files today**: `/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/` (scheduler health check, and the actual directory), `/Documents/Claude/Projects/RC Karpathy Wiki Project/Wiki/` (this end-of-day task file and the morning chat scrape — capital W), and `/Documents/Claude/RC Karpathy Wiki Project/wiki/` (the Levin/Friston agent — no `Projects/`).
+  Why now: Two runs today disclosed a path deviation and corrected by hand. A run that does not notice will create the wrong directory and succeed silently; on a case-insensitive volume the capital-W form resolves, and on a case-sensitive one it does not — so the same task file behaves differently depending on where it executes.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1197, ASSUMPTION-1205, PRESUMPTION-870
+  Risk: this is the cheapest defect on the register to fix and one of the most expensive to detect.
+
+OPEN-168:
+  Date raised: 2026-08-24
+  Question: What is the system's notification channel of record when the Chrome MCP is unavailable?
+  Why now: **Second consecutive day at zero available channels.** Chrome MCP failed in both directions today (morning scrape in, evening delivery out), as it did on 2026-08-23. The remedy stated on 08-23 was restated today unchanged (ASSUMPTION-1198). Gmail draft creation worked in the daily run, so at least one channel is demonstrably reachable from a scheduled task and is not being used for failure notification.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1198, PRESUMPTION-874, ASSUMPTION-1183, ASSUMPTION-1184
+
+### Status of carried questions — 2026-08-24
+- OPEN-153, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165 — all carried, **awaiting Tom**. Nothing in today's sessions addressed any of them. The review gate has now been silent since 2026-08-08, **sixteen days**; disposition gap unchanged at 16 days (last batch 2026-08-07).
+- OPEN-158 recurred **twice** today: in the narrowed sweep (OPEN-166) and in the tradition-level null reporting (ASSUMPTION-1193). It was also, for the first time on record, **applied prospectively** rather than diagnosed retrospectively (ASSUMPTION-1201).
+- The **46-id offset in this file** noted in the 2026-08-23 post-provenance verification note is carried unresolved: before tonight's additions, 159 unique `OPEN-NNN:` headers against a maximum of OPEN-165. Still not filed, not diagnosed. Readers must not take "max OPEN-168" as a count.
+
+OPEN-169:
+  Date raised: 2026-08-25
+  Question: What does "citation health" measure in this wiki, and which instrument owns the number? The nightly verification reports **zero dead citations over 979 references** across the complete series; two hand-reading frames the same day found **five citation defects, none of which is a dead id.** Both numbers are correct and they describe disjoint classes.
+  Why now: Tonight was the first complete-corpus verification pass, so "zero dead citations" is now a claim about the whole wiki rather than a sample. It is also the strongest evidential claim the system makes about itself and the one most likely to be quoted forward.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1206, PRESUMPTION-877, PRESUMPTION-878, ASSUMPTION-1211
+  Note: Day 237's "Stump corporate-substance node" is the limiting case already on record — a frontmatter phrase with no id in it cannot fail an id-existence test, so it is invisible to the instrument that produced the zero.
+
+OPEN-170:
+  Date raised: 2026-08-25
+  Question: Is an agent's remit boundary allowed to leave a diagnosed defect standing indefinitely, and does remit hold when the party being deferred to has not acted in seventeen days?
+  Why now: **Three known-correct fixes were declined today on remit grounds**, each with the reason volunteered: Day 76's transcript re-render ("outside the reviewer's remit"), the stale `canonical fallback` clause in `refs/Karpathy wiki bridges.md` ("I did not edit that file" — with the recurrence predicted in the same sentence), and Day 76 again by the QC sweep ("stays held"). Day 76's fidelity failure has now been read past by two agents on day eight. Nothing in any agent definition conditions remit on the recipient's availability.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1212, ASSUMPTION-1218, PRESUMPTION-879, OPEN-164, OPEN-165
+  Note: This is the mirror of OPEN-164 (agent-invented conventions, unratified). That question asks when an agent may exceed its definition; this asks whether following it exactly can be the failure.
+
+OPEN-171:
+  Date raised: 2026-08-25
+  Question: Does proposal intake owe anything to the state of the review gate? Should the tradition agents be able to see the gate's depth, and should they slow, sample, or expire when it is stalled?
+  Why now: **Fourteen proposals filed today into a gate silent since 2026-08-08; pending went 60 → 74, +23% in one day, with zero dispositions.** The 08-24 throttle was applied to a sweep's *scope* for reporting reasons, not to admission. No run has proposed coupling the two. The producers and the gate live in different agents with no shared signal, so the coupling cannot currently be expressed.
+  Status: OPEN — awaiting Tom
+  Related: PRESUMPTION-883, PRESUMPTION-875, ASSUMPTION-1220, OPEN-165
+  Note: Distinct from PRESUMPTION-875 (whether a queue is the right container). This is about whether producers can see the container at all.
+
+### Status of carried questions — 2026-08-25
+- OPEN-153, 155–168 — all carried, **awaiting Tom**. Nothing in today's sessions addressed any of them.
+- The review gate has now been silent since 2026-08-08 — **seventeen days** — and the disposition gap is **18 days** (last batch 2026-08-07). Today the gate moved *backwards*: 60 → 74.
+- **OPEN-165 gained a second line of bearing evidence.** Beyond the overlap/novelty question itself, ASSUMPTION-1219's six consecutive downward corrections are explicitly named as bearing on it, and PRESUMPTION-880 argues the evidence feeding that judgment may be an artifact of the correction process. OPEN-165 cannot be adjudicated on a sample whose bias is unexamined.
+- **OPEN-167 (three live vault roots) is carried unresolved.** This task file still carries the capital-`W` form `/RC Karpathy Wiki Project/Wiki/`; the actual directory is lowercase `wiki`. Corrected by hand again tonight — third consecutive run to do so and disclose it. Second cheapest defect on the register, still unfixed.
+- **OPEN-168 (notification channel of record) is carried and worsened: fourth consecutive Chrome failure**, both directions, 08-24 and 08-25. Chat has had no Cowork context since 08-23 and Cowork no walk context for the same span.
+- **The 46-id offset in this file is carried, unchanged and undiagnosed.** Before tonight: 122 unique headers against a maximum of OPEN-168. After tonight: 125 unique, max OPEN-171, offset still **exactly 46** — reproducing the 08-23 and 08-24 figures. **"Max OPEN-171" is not a count of open questions.** Third consecutive record to state it and not file it.

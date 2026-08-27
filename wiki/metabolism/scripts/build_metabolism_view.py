@@ -449,6 +449,7 @@ def main():
     # 4) assemble per-lane rows. Keep only sessions with any token signal OR
     #    that belong to a real agent (so empty agents still show their cadence).
     lanes = defaultdict(list)
+    all_t_end = []   # newest EVENT time, for the right edge (see t_max_event below)
     for sid, s in sess.items():
         key = sid_key[sid]
         if key == "(unmatched)":
@@ -458,6 +459,8 @@ def main():
             continue  # interactive lane: only token-bearing runs, keeps it legible
         if not s["first"]:
             continue
+        if s["last"]:
+            all_t_end.append(s["last"])
         lanes[key].append({
             "sid": sid,
             "t": s["first"],
@@ -517,7 +520,15 @@ def main():
             "lanes": len(lane_meta),
             "total_runs": sum(L["runs"] for L in lane_meta),
             "t_min": min(all_t) if all_t else None,
+            # t_max is the newest session START (lane dots are placed at first_event,
+            # so this is what anchors the rightmost dot). It does NOT answer "how
+            # fresh is the data" -- a dead ingest freezes it and no regen moves it.
             "t_max": max(all_t) if all_t else None,
+            # t_max_event is the newest EVENT (max last_event). This is the right
+            # edge of the time axis and the real freshness signal. The two disagree
+            # when sessions stay open but none start -- which is how the
+            # 2026-08-15..08-24 ingest outage hid.
+            "t_max_event": max(all_t_end) if all_t_end else None,
             "note": "Prototype. Token data summed from event payloads in open-story.db "
                     "(both pre/post 2026-04-07 token_usage paths). Thinking: the PRIMARY "
                     "metric is 'thinking steps (count)' = number of message.assistant.thinking "
@@ -553,9 +564,11 @@ def main():
 
     print("Wrote %s" % json_path)
     print("Wrote %s" % html_path)
-    print("  lanes=%d runs=%d range=%s..%s"
+    print("  lanes=%d runs=%d range=%s..%s (newest event) newest_session_start=%s"
           % (len(lane_meta), data["_meta"]["total_runs"],
-             data["_meta"]["t_min"], data["_meta"]["t_max"]))
+             data["_meta"]["t_min"],
+             data["_meta"]["t_max_event"] or data["_meta"]["t_max"],
+             data["_meta"]["t_max"]))
     print("  signal source: %s" % data["_meta"]["signal_source"])
 
 
@@ -644,13 +657,41 @@ const DATA = /*__DATA__*/;
 const lanes = DATA.lanes;
 const meta = DATA._meta;
 const fmt = d3.format(",");
-const _tmax = meta.t_max ? new Date(meta.t_max) : null;
-const _ageDays = _tmax ? Math.floor((Date.now()-_tmax)/864e5) : null;
+// Two different questions, deliberately both surfaced:
+//   t_max       = newest session START. Lane dots sit at first_event, so this is
+//                 the rightmost DOT. A frozen t_max means no new session began.
+//   t_max_event = newest EVENT anywhere. This is the right EDGE of the axis, and
+//                 the only one of the two that answers "is data still arriving".
+// They disagree when a couple of long-open sessions keep emitting while session
+// creation is dead -- exactly how the 2026-08-15..08-24 ingest outage stayed
+// invisible. Neither is fixed by regenerating, so the banner never says "regen".
+const _tStart = meta.t_max ? new Date(meta.t_max) : null;
+const _tEvent = meta.t_max_event ? new Date(meta.t_max_event) : null;
+const _ageD = t => t ? Math.floor((Date.now()-t)/864e5) : null;
+const _startAge = _ageD(_tStart), _eventAge = _ageD(_tEvent);
+const _rightEdge = (meta.t_max_event || meta.t_max || "").slice(0,10);
+let _warn = "";
+if (!_tEvent) {
+  // Snapshot built before t_max_event existed: the edge below is a session
+  // start wearing an event's clothes. Say so rather than assert either state.
+  if (_startAge != null && _startAge > 1) {
+    _warn = ` · ⚠ snapshot predates event-time tracking, so the right edge is a `
+          + `session start (${_startAge}d old), not a freshness reading — rebuild it`;
+  }
+} else if (_eventAge > 1) {
+  _warn = ` · ⚠ no OpenStory events for ${_eventAge}d (newest ${_rightEdge}) `
+        + `— ingest is down, not the artifact; a regen cannot move the right edge`;
+} else if (_startAge != null && _startAge > 1) {
+  _warn = ` · ⚠ events still arriving, but no session has STARTED in ${_startAge}d `
+        + `(newest start ${(meta.t_max||"").slice(0,10)}) — session capture may be dead`;
+}
 document.getElementById("meta").textContent =
   `${meta.lanes} lanes · ${fmt(meta.total_runs)} runs · `
-  + `${(meta.t_min||"").slice(0,10)} → ${(meta.t_max||"").slice(0,10)} · `
-  + `source: open-story.db (${(meta.db_mtime||"").slice(0,10)})`
-  + (_ageDays!=null && _ageDays>1 ? ` · ⚠ snapshot ${_ageDays}d old — regen to extend right edge` : "");
+  + `${(meta.t_min||"").slice(0,10)} → ${_rightEdge}`
+  + (_tEvent ? ` (newest event) · newest session start ${(meta.t_max||"").slice(0,10)}`
+             : ` (newest session start)`)
+  + ` · source: open-story.db (${(meta.db_mtime||"").slice(0,10)})`
+  + _warn;
 
 const catColor = d3.scaleOrdinal()
   .domain(["c2a2-thinker","c2a2-master","c2a2-meta","c2a2-infra","interactive","agent"])
@@ -674,7 +715,8 @@ function renderRaster() {
   const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
   const x = d3.scaleTime()
-    .domain([new Date(meta.t_min), new Date(meta.t_max)]).range([0, innerW]).nice();
+    .domain([new Date(meta.t_min), new Date(meta.t_max_event || meta.t_max)])
+    .range([0, innerW]).nice();
   const y = d3.scaleBand()
     .domain(lanes.map(L => L.key)).range([0, innerH]).paddingInner(0.25);
 
@@ -803,7 +845,8 @@ function weekendBands(g, days, x, innerW, innerH) {
 }
 function dayAxis() {
   const day = d3.timeDay;
-  const t0 = day.floor(new Date(meta.t_min)), t1 = day.ceil(new Date(meta.t_max));
+  const t0 = day.floor(new Date(meta.t_min));
+  const t1 = day.ceil(new Date(meta.t_max_event || meta.t_max));
   const days = day.range(t0, t1);
   return {day, t0, t1, days, idx:new Map(days.map((d,i)=>[+d,i]))};
 }

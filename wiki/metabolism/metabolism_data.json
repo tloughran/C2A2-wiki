@@ -1,20 +1,21 @@
 {
   "_meta": {
-    "generated": "2026-08-24T13:43:50.438460-04:00",
+    "generated": "2026-08-26T14:13:47.200946-04:00",
     "source": "openstory-db",
-    "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-08-24T13:42:18.979233",
+    "db_path": "/tmp/os_metab_snap_4b2a_l4t.db",
+    "db_mtime": "2026-08-26T14:11:24.084249",
     "lanes": 33,
-    "total_runs": 3150,
+    "total_runs": 3155,
     "t_min": "2026-03-30T19:09:19.612Z",
-    "t_max": "2026-08-24T16:17:11.216Z",
+    "t_max": "2026-08-24T19:24:15.346Z",
+    "t_max_event": "2026-08-26T11:10:15.850Z",
     "note": "Prototype. Token data summed from event payloads in open-story.db (both pre/post 2026-04-07 token_usage paths). Thinking: the PRIMARY metric is 'thinking steps (count)' = number of message.assistant.thinking blocks, captured CONTINUOUSLY (every lane from its first run). Two other thinking figures appear in the tooltip but are NOT good headline metrics: 'chars retained' = plaintext length, which is STRIPPED (signature-only, empty) for the majority of agent runs, so it measures text-retention not reasoning; 'audit-tok' = system.thinking_tokens estimated_tokens_delta, audit-emitted and present only on a few June days. All bucketed by session start like every other metric. Yield = wikilinks/files added per day PLUS PRS-triplet yield (first-seen and articulated series) from wiki/ git history and the WS2 metric CSV (DECISION-058); PRS yield is LIVE, not 'still to come'. Cross-tradition signals/day (yield_signals) are counted from the dated Interactions Level-2 signal stream.",
     "signal_source": {
       "status": "ok",
       "records": 1152,
       "dated": 1152,
       "latest": "2026-08-10",
-      "stale_days": 14
+      "stale_days": 16
     }
   },
   "lanes": [
@@ -25,8 +26,8 @@
       "thinkers": [],
       "schedule": null,
       "runs": 821,
-      "out_total": 40148905,
-      "all_total": 7746607795,
+      "out_total": 40492576,
+      "all_total": 7820083496,
       "median_gap_h": 0.2,
       "rows": [
         {
@@ -46,14 +47,14 @@
         {
           "sid": "07ab764b-395e-422c-bf7b-40555a603a7b",
           "t": "2026-03-30T20:16:08.612Z",
-          "dur_min": 211134.2,
-          "events": 765722,
+          "dur_min": 214014.1,
+          "events": 772317,
           "in": 8933,
           "out": 891015,
           "cache_read": 311583080,
           "cache_creation": 53041850,
           "total": 365524878,
-          "thinking_tokens": 63095,
+          "thinking_tokens": 63374,
           "thinking_chars": 182826,
           "thinking_blocks": 664
         },
@@ -6514,16 +6515,16 @@
         {
           "sid": "45bd80f4-6b93-4562-a8b6-ed61d48d37dc",
           "t": "2026-07-08T19:47:33.492Z",
-          "dur_min": 14726.4,
-          "events": 597,
-          "in": 481,
-          "out": 234967,
-          "cache_read": 32257335,
-          "cache_creation": 793129,
-          "total": 33285912,
-          "thinking_tokens": 62884,
-          "thinking_chars": 129771,
-          "thinking_blocks": 122
+          "dur_min": 67588.7,
+          "events": 627,
+          "in": 494,
+          "out": 235788,
+          "cache_read": 32511129,
+          "cache_creation": 1062348,
+          "total": 33809759,
+          "thinking_tokens": 63044,
+          "thinking_chars": 130134,
+          "thinking_blocks": 123
         },
         {
           "sid": "agent-aec7901e247b5e017",
@@ -7411,7 +7412,7 @@
           "sid": "542f0bad-0d0a-482a-811d-b0e7ece4bdcd",
           "t": "2026-07-27T21:08:21.715Z",
           "dur_min": 7257.4,
-          "events": 3259,
+          "events": 3323,
           "in": 597,
           "out": 310539,
           "cache_read": 57041818,
@@ -7929,7 +7930,7 @@
           "sid": "5fa00f8a-199f-4e74-a390-a4b9a86c8351",
           "t": "2026-08-01T22:09:44.607Z",
           "dur_min": 70.2,
-          "events": 794,
+          "events": 822,
           "in": 405,
           "out": 175337,
           "cache_read": 32600799,
@@ -8055,7 +8056,7 @@
           "sid": "7452015c-576a-4459-97a4-3398316f2039",
           "t": "2026-08-03T17:03:24.772Z",
           "dur_min": 44.9,
-          "events": 733,
+          "events": 749,
           "in": 426,
           "out": 150196,
           "cache_read": 31447335,
@@ -8069,7 +8070,7 @@
           "sid": "e7b65cfa-a12d-447d-857a-7ec2739ec566",
           "t": "2026-08-03T17:49:21.313Z",
           "dur_min": 1385.0,
-          "events": 2029,
+          "events": 2061,
           "in": 753,
           "out": 362609,
           "cache_read": 73589203,
@@ -8209,7 +8210,7 @@
           "sid": "4d783476-2270-4662-bb70-772905b29ae2",
           "t": "2026-08-04T16:56:09.586Z",
           "dur_min": 92.2,
-          "events": 420,
+          "events": 436,
           "in": 230,
           "out": 155979,
           "cache_read": 14512792,
@@ -8223,7 +8224,7 @@
           "sid": "dd750373-5fad-4f2f-b9cf-2fcbe41b4267",
           "t": "2026-08-04T17:30:48.147Z",
           "dur_min": 121.4,
-          "events": 579,
+          "events": 587,
           "in": 446,
           "out": 169655,
           "cache_read": 39087063,
@@ -8251,7 +8252,7 @@
           "sid": "b045bc26-e278-410a-a045-a633d9ad0b85",
           "t": "2026-08-04T19:34:32.903Z",
           "dur_min": 1410.6,
-          "events": 1812,
+          "events": 1868,
           "in": 589,
           "out": 323454,
           "cache_read": 58357618,
@@ -9819,7 +9820,7 @@
           "sid": "67efa67a-f4cc-44f8-8605-df3e69ef3e9b",
           "t": "2026-08-12T14:53:26.429Z",
           "dur_min": 1552.6,
-          "events": 134,
+          "events": 138,
           "in": 84,
           "out": 29009,
           "cache_read": 3541877,
@@ -9833,7 +9834,7 @@
           "sid": "1962ac13-19bc-4785-8d0b-70f0e847c59f",
           "t": "2026-08-12T18:43:47.274Z",
           "dur_min": 1322.2,
-          "events": 80,
+          "events": 84,
           "in": 24,
           "out": 7251,
           "cache_read": 628089,
@@ -10029,7 +10030,7 @@
           "sid": "268eaad1-44a6-4ae7-a52c-d7819c5eb92e",
           "t": "2026-08-13T18:19:28.952Z",
           "dur_min": 51.6,
-          "events": 462,
+          "events": 482,
           "in": 291,
           "out": 173803,
           "cache_read": 21259985,
@@ -10043,7 +10044,7 @@
           "sid": "843a7994-9fde-4d13-93d6-955b1d10da9d",
           "t": "2026-08-13T19:11:46.596Z",
           "dur_min": 1211.4,
-          "events": 575,
+          "events": 607,
           "in": 2139,
           "out": 173193,
           "cache_read": 23561041,
@@ -10225,7 +10226,7 @@
           "sid": "6b0c1860-ef1f-48fb-8b3f-778bad49a4a8",
           "t": "2026-08-14T17:43:00.519Z",
           "dur_min": 113.9,
-          "events": 168,
+          "events": 184,
           "in": 3284,
           "out": 69985,
           "cache_read": 2316849,
@@ -10768,20 +10769,6 @@
           "thinking_blocks": 35
         },
         {
-          "sid": "de9f0b64-5d57-4bab-8e6e-66b74d8903e6",
-          "t": "2026-08-16T08:38:01.041Z",
-          "dur_min": 9.4,
-          "events": 0,
-          "in": 116,
-          "out": 74642,
-          "cache_read": 7012536,
-          "cache_creation": 356804,
-          "total": 7444098,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 20
-        },
-        {
           "sid": "agent-a6b42bceaf8187466",
           "t": "2026-08-16T10:24:56.425Z",
           "dur_min": 0.9,
@@ -11001,48 +10988,6 @@
           "cache_read": 4236860,
           "cache_creation": 408186,
           "total": 4659776,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 15
-        },
-        {
-          "sid": "987bdae4-9308-4c1e-a01d-1aa25070576e",
-          "t": "2026-08-17T11:08:49.069Z",
-          "dur_min": 0.3,
-          "events": 0,
-          "in": 10,
-          "out": 1940,
-          "cache_read": 146024,
-          "cache_creation": 220544,
-          "total": 368518,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 0
-        },
-        {
-          "sid": "131ac7ec-117f-4c0c-bb1c-30b3e464dee6",
-          "t": "2026-08-17T12:51:49.474Z",
-          "dur_min": 1.2,
-          "events": 0,
-          "in": 47,
-          "out": 6061,
-          "cache_read": 1419660,
-          "cache_creation": 156070,
-          "total": 1581838,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 6
-        },
-        {
-          "sid": "bdf6af9b-6370-459d-bd4f-e016a77b7bbc",
-          "t": "2026-08-17T16:16:36.127Z",
-          "dur_min": 5.3,
-          "events": 0,
-          "in": 183,
-          "out": 41017,
-          "cache_read": 5872201,
-          "cache_creation": 464239,
-          "total": 6377640,
           "thinking_tokens": 0,
           "thinking_chars": 0,
           "thinking_blocks": 15
@@ -11512,16 +11457,72 @@
         {
           "sid": "2e86b979-117b-41c9-a224-f8e2db82f303",
           "t": "2026-08-24T12:55:18.193Z",
-          "dur_min": 280.1,
-          "events": 802,
-          "in": 840,
-          "out": 352002,
-          "cache_read": 96866037,
-          "cache_creation": 576563,
-          "total": 97795442,
+          "dur_min": 295.3,
+          "events": 997,
+          "in": 928,
+          "out": 383840,
+          "cache_read": 113294145,
+          "cache_creation": 618068,
+          "total": 114296981,
           "thinking_tokens": 0,
-          "thinking_chars": 108447,
-          "thinking_blocks": 157
+          "thinking_chars": 113658,
+          "thinking_blocks": 168
+        },
+        {
+          "sid": "95398b55-3f54-4ca0-8ac4-0d46040cf174",
+          "t": "2026-08-24T17:54:02.351Z",
+          "dur_min": 39.5,
+          "events": 272,
+          "in": 328,
+          "out": 156695,
+          "cache_read": 21392382,
+          "cache_creation": 382533,
+          "total": 21931938,
+          "thinking_tokens": 0,
+          "thinking_chars": 33713,
+          "thinking_blocks": 45
+        },
+        {
+          "sid": "dc4e371c-0233-4e20-9a03-1a32f219aff1",
+          "t": "2026-08-24T17:54:21.445Z",
+          "dur_min": 63.1,
+          "events": 338,
+          "in": 414,
+          "out": 164546,
+          "cache_read": 30574179,
+          "cache_creation": 820589,
+          "total": 31559728,
+          "thinking_tokens": 0,
+          "thinking_chars": 55524,
+          "thinking_blocks": 72
+        },
+        {
+          "sid": "980cee7a-d2cd-4bd7-85be-a596074ba4fc",
+          "t": "2026-08-24T18:00:00.481Z",
+          "dur_min": 82.9,
+          "events": 193,
+          "in": 210,
+          "out": 58969,
+          "cache_read": 10922959,
+          "cache_creation": 558183,
+          "total": 11540321,
+          "thinking_tokens": 0,
+          "thinking_chars": 14619,
+          "thinking_blocks": 31
+        },
+        {
+          "sid": "84f3bb7a-8161-4a9f-96a7-fab62c8f2770",
+          "t": "2026-08-24T19:24:15.346Z",
+          "dur_min": 226.6,
+          "events": 114,
+          "in": 130,
+          "out": 54462,
+          "cache_read": 6778625,
+          "cache_creation": 357205,
+          "total": 7190422,
+          "thinking_tokens": 0,
+          "thinking_chars": 15931,
+          "thinking_blocks": 25
         }
       ]
     },
@@ -11531,9 +11532,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "every 4h :15",
-      "runs": 479,
-      "out_total": 24917423,
-      "all_total": 3062837627,
+      "runs": 480,
+      "out_total": 24958440,
+      "all_total": 3069215267,
       "median_gap_h": 4.0,
       "rows": [
         {
@@ -17840,7 +17841,7 @@
           "sid": "9fc4e313-58da-444a-b260-afe519dad00e",
           "t": "2026-08-15T08:17:29.854Z",
           "dur_min": 10.4,
-          "events": 187,
+          "events": 189,
           "in": 356,
           "out": 78213,
           "cache_read": 15570568,
@@ -17924,7 +17925,7 @@
           "sid": "09bfe5dd-3801-4824-bd7f-ed85e9ec0dc9",
           "t": "2026-08-16T08:16:32.112Z",
           "dur_min": 4.7,
-          "events": 92,
+          "events": 94,
           "in": 196,
           "out": 36866,
           "cache_read": 5923347,
@@ -17952,13 +17953,13 @@
           "sid": "bf4dba85-22b5-4cc0-8ba5-5855f05baddb",
           "t": "2026-08-16T16:16:33.204Z",
           "dur_min": 6.0,
-          "events": 134,
+          "events": 136,
           "in": 316,
           "out": 47468,
           "cache_read": 10672920,
           "cache_creation": 465950,
           "total": 11186654,
-          "thinking_tokens": 0,
+          "thinking_tokens": 5571,
           "thinking_chars": 0,
           "thinking_blocks": 15
         },
@@ -17980,7 +17981,7 @@
           "sid": "fcaf81b4-51e6-453d-9d67-e261defedc94",
           "t": "2026-08-17T00:16:34.105Z",
           "dur_min": 5.5,
-          "events": 113,
+          "events": 115,
           "in": 233,
           "out": 45377,
           "cache_read": 8204455,
@@ -17994,13 +17995,13 @@
           "sid": "7de5d822-ac9e-4ca6-a70d-65a2d98364b4",
           "t": "2026-08-17T04:16:34.334Z",
           "dur_min": 4.2,
-          "events": 93,
+          "events": 95,
           "in": 188,
           "out": 34990,
           "cache_read": 6347137,
           "cache_creation": 385369,
           "total": 6767684,
-          "thinking_tokens": 0,
+          "thinking_tokens": 3942,
           "thinking_chars": 0,
           "thinking_blocks": 15
         },
@@ -18031,6 +18032,20 @@
           "thinking_tokens": 12957,
           "thinking_chars": 0,
           "thinking_blocks": 16
+        },
+        {
+          "sid": "bdf6af9b-6370-459d-bd4f-e016a77b7bbc",
+          "t": "2026-08-17T16:16:36.127Z",
+          "dur_min": 5.3,
+          "events": 91,
+          "in": 183,
+          "out": 41017,
+          "cache_read": 5872201,
+          "cache_creation": 464239,
+          "total": 6377640,
+          "thinking_tokens": 5721,
+          "thinking_chars": 0,
+          "thinking_blocks": 15
         },
         {
           "sid": "30a86371-d3fb-496c-a321-43510895c5b1",
@@ -18092,7 +18107,7 @@
           "sid": "db17ac31-914b-4b3b-9340-701b5656ec5b",
           "t": "2026-08-18T12:16:38.163Z",
           "dur_min": 5.7,
-          "events": 89,
+          "events": 91,
           "in": 182,
           "out": 43437,
           "cache_read": 5729387,
@@ -18106,7 +18121,7 @@
           "sid": "588c4413-4c35-4332-a602-970e37fbe230",
           "t": "2026-08-18T16:16:38.620Z",
           "dur_min": 6.7,
-          "events": 65,
+          "events": 67,
           "in": 131,
           "out": 28426,
           "cache_read": 4155513,
@@ -18162,7 +18177,7 @@
           "sid": "f995abef-6502-4b52-a7d7-fc3c5846864f",
           "t": "2026-08-23T23:49:39.387Z",
           "dur_min": 9.6,
-          "events": 161,
+          "events": 169,
           "in": 279,
           "out": 80882,
           "cache_read": 13174538,
@@ -18176,7 +18191,7 @@
           "sid": "61f336df-f7fc-49dd-8fe0-4742ba685208",
           "t": "2026-08-24T00:17:10.254Z",
           "dur_min": 12.0,
-          "events": 141,
+          "events": 149,
           "in": 258,
           "out": 106650,
           "cache_read": 12563224,
@@ -18190,7 +18205,7 @@
           "sid": "54fef639-2cb3-4fcb-9c3d-ee60dfe06599",
           "t": "2026-08-24T04:17:09.696Z",
           "dur_min": 7.9,
-          "events": 111,
+          "events": 119,
           "in": 186,
           "out": 57891,
           "cache_read": 8781745,
@@ -18204,7 +18219,7 @@
           "sid": "436efce7-db71-4ce8-80b6-779eb9607352",
           "t": "2026-08-24T08:17:10.217Z",
           "dur_min": 7.8,
-          "events": 132,
+          "events": 140,
           "in": 213,
           "out": 82897,
           "cache_read": 10179312,
@@ -18218,7 +18233,7 @@
           "sid": "f46b11fe-4d09-4a01-a279-35f63f7d8e65",
           "t": "2026-08-24T12:17:11.994Z",
           "dur_min": 9.1,
-          "events": 146,
+          "events": 154,
           "in": 246,
           "out": 87087,
           "cache_read": 12320215,
@@ -18232,7 +18247,7 @@
           "sid": "0f4cc6e0-5368-4629-ad87-e496487a5d0f",
           "t": "2026-08-24T16:17:11.216Z",
           "dur_min": 5.3,
-          "events": 72,
+          "events": 80,
           "in": 130,
           "out": 34707,
           "cache_read": 4567682,
@@ -18250,9 +18265,9 @@
       "category": "project",
       "thinkers": [],
       "schedule": "every 4h :15 (offset)",
-      "runs": 474,
-      "out_total": 22359996,
-      "all_total": 2817066254,
+      "runs": 475,
+      "out_total": 22416053,
+      "all_total": 2825110108,
       "median_gap_h": 4.0,
       "rows": [
         {
@@ -24559,7 +24574,7 @@
           "sid": "b2274bb7-dc67-4cc8-8eba-482726b4ca07",
           "t": "2026-08-16T06:23:37.049Z",
           "dur_min": 10.8,
-          "events": 147,
+          "events": 149,
           "in": 7013,
           "out": 96651,
           "cache_read": 11695471,
@@ -24601,13 +24616,13 @@
           "sid": "9a38692e-e59c-45df-89c7-eae1106cc4f6",
           "t": "2026-08-16T18:23:38.748Z",
           "dur_min": 6.6,
-          "events": 129,
+          "events": 131,
           "in": 276,
           "out": 56204,
           "cache_read": 10857612,
           "cache_creation": 460614,
           "total": 11374706,
-          "thinking_tokens": 0,
+          "thinking_tokens": 8774,
           "thinking_chars": 0,
           "thinking_blocks": 23
         },
@@ -24657,7 +24672,7 @@
           "sid": "58bef2b1-4f01-4978-99e3-3567b666261b",
           "t": "2026-08-17T10:23:40.173Z",
           "dur_min": 3.6,
-          "events": 4,
+          "events": 6,
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -24699,7 +24714,7 @@
           "sid": "971ec93c-a879-4d9b-9b8b-ef8f9afc136d",
           "t": "2026-08-17T22:23:41.364Z",
           "dur_min": 9.5,
-          "events": 159,
+          "events": 161,
           "in": 353,
           "out": 99436,
           "cache_read": 12663946,
@@ -24713,13 +24728,13 @@
           "sid": "e8744e37-d2ce-4403-8683-844c686e9e1f",
           "t": "2026-08-18T02:23:41.529Z",
           "dur_min": 5.1,
-          "events": 124,
+          "events": 126,
           "in": 255,
           "out": 40796,
           "cache_read": 8314556,
           "cache_creation": 378000,
           "total": 8733607,
-          "thinking_tokens": 0,
+          "thinking_tokens": 7447,
           "thinking_chars": 0,
           "thinking_blocks": 15
         },
@@ -24727,13 +24742,13 @@
           "sid": "5b6aa39a-8569-45d7-88e3-92489e354965",
           "t": "2026-08-18T06:23:42.820Z",
           "dur_min": 5.0,
-          "events": 93,
+          "events": 95,
           "in": 186,
           "out": 42475,
           "cache_read": 6244678,
           "cache_creation": 399968,
           "total": 6687307,
-          "thinking_tokens": 0,
+          "thinking_tokens": 8177,
           "thinking_chars": 0,
           "thinking_blocks": 15
         },
@@ -24825,7 +24840,7 @@
           "sid": "31ab9324-1249-401f-b085-281b6d4db6eb",
           "t": "2026-08-23T23:50:39.822Z",
           "dur_min": 8.2,
-          "events": 149,
+          "events": 157,
           "in": 252,
           "out": 56190,
           "cache_read": 11104135,
@@ -24839,7 +24854,7 @@
           "sid": "bd67610b-a582-404b-b82c-dab232439a82",
           "t": "2026-08-24T02:24:16.520Z",
           "dur_min": 5.8,
-          "events": 112,
+          "events": 120,
           "in": 186,
           "out": 52139,
           "cache_read": 8109404,
@@ -24853,7 +24868,7 @@
           "sid": "08e583e8-ae66-4bb6-a9fc-98ec4e8219c9",
           "t": "2026-08-24T06:24:14.999Z",
           "dur_min": 3.4,
-          "events": 8,
+          "events": 16,
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -24867,7 +24882,7 @@
           "sid": "56d45dcc-8097-4d8a-97b7-d104fe3ef774",
           "t": "2026-08-24T10:24:16.702Z",
           "dur_min": 7.8,
-          "events": 162,
+          "events": 170,
           "in": 279,
           "out": 99562,
           "cache_read": 14461967,
@@ -24881,7 +24896,7 @@
           "sid": "661b9218-9630-4592-9c38-1e8a9b4e4bed",
           "t": "2026-08-24T14:24:15.970Z",
           "dur_min": 11.2,
-          "events": 195,
+          "events": 203,
           "in": 351,
           "out": 85806,
           "cache_read": 17605480,
@@ -24890,6 +24905,20 @@
           "thinking_tokens": 14133,
           "thinking_chars": 0,
           "thinking_blocks": 41
+        },
+        {
+          "sid": "a239811f-61d5-448b-82a1-c1ac9c52c7d0",
+          "t": "2026-08-24T18:24:16.225Z",
+          "dur_min": 5.9,
+          "events": 100,
+          "in": 177,
+          "out": 56057,
+          "cache_read": 7581781,
+          "cache_creation": 405839,
+          "total": 8043854,
+          "thinking_tokens": 9156,
+          "thinking_chars": 0,
+          "thinking_blocks": 19
         }
       ]
     },
@@ -26210,7 +26239,7 @@
           "sid": "c2ec10c6-f151-4ac4-97f2-27a5de58bf15",
           "t": "2026-08-23T23:13:40.453Z",
           "dur_min": 13.4,
-          "events": 120,
+          "events": 128,
           "in": 128,
           "out": 123312,
           "cache_read": 6480427,
@@ -26224,7 +26253,7 @@
           "sid": "bab9490f-f7ba-420e-a754-1b845ece7ba9",
           "t": "2026-08-24T03:37:21.299Z",
           "dur_min": 15.5,
-          "events": 104,
+          "events": 112,
           "in": 114,
           "out": 135063,
           "cache_read": 7413856,
@@ -27553,7 +27582,7 @@
           "sid": "8320396a-0d1a-4e7c-b2ee-4315d36fa1da",
           "t": "2026-08-23T23:15:39.774Z",
           "dur_min": 31.8,
-          "events": 202,
+          "events": 210,
           "in": 236,
           "out": 121640,
           "cache_read": 15278610,
@@ -27567,7 +27596,7 @@
           "sid": "1b75752f-f87b-45fa-82b1-3ea5854bbd1b",
           "t": "2026-08-24T04:39:49.535Z",
           "dur_min": 20.2,
-          "events": 78,
+          "events": 86,
           "in": 82,
           "out": 63800,
           "cache_read": 3238646,
@@ -28714,7 +28743,7 @@
           "sid": "eb476896-71a6-4282-863b-3a9e9f173d51",
           "t": "2026-08-23T23:42:40.511Z",
           "dur_min": 0.5,
-          "events": 23,
+          "events": 31,
           "in": 21,
           "out": 3095,
           "cache_read": 499303,
@@ -28728,7 +28757,7 @@
           "sid": "81fd1360-1484-4ee5-a95e-48e86a94637e",
           "t": "2026-08-24T09:02:37.317Z",
           "dur_min": 0.6,
-          "events": 22,
+          "events": 32,
           "in": 24,
           "out": 3504,
           "cache_read": 595806,
@@ -29875,7 +29904,7 @@
           "sid": "34563d84-dc6e-4f6c-95c8-33f4f41f1e93",
           "t": "2026-08-16T03:05:40.396Z",
           "dur_min": 6.2,
-          "events": 72,
+          "events": 74,
           "in": 171,
           "out": 89378,
           "cache_read": 5212506,
@@ -29889,13 +29918,13 @@
           "sid": "b5af2efd-2efd-48a6-8cef-15f57e8b87fd",
           "t": "2026-08-17T03:05:42.639Z",
           "dur_min": 4.9,
-          "events": 44,
+          "events": 46,
           "in": 98,
           "out": 42491,
           "cache_read": 2389700,
           "cache_creation": 186271,
           "total": 2618560,
-          "thinking_tokens": 0,
+          "thinking_tokens": 7056,
           "thinking_chars": 0,
           "thinking_blocks": 12
         },
@@ -29931,7 +29960,7 @@
           "sid": "328d9a0d-b94a-4812-927b-534680669305",
           "t": "2026-08-23T23:39:40.292Z",
           "dur_min": 9.8,
-          "events": 103,
+          "events": 111,
           "in": 183,
           "out": 88192,
           "cache_read": 7773158,
@@ -29945,7 +29974,7 @@
           "sid": "ec1d946d-a69d-4da7-95a0-697868b2540d",
           "t": "2026-08-24T03:06:18.428Z",
           "dur_min": 9.1,
-          "events": 109,
+          "events": 119,
           "in": 192,
           "out": 97456,
           "cache_read": 7585044,
@@ -31148,7 +31177,7 @@
           "sid": "647ea0b2-21e0-4afc-b832-01592c3e2b3e",
           "t": "2026-08-15T08:35:13.243Z",
           "dur_min": 5.4,
-          "events": 148,
+          "events": 150,
           "in": 9394,
           "out": 46208,
           "cache_read": 9216861,
@@ -31162,7 +31191,7 @@
           "sid": "d5c59889-912f-4fdd-bea3-099c7101f3c0",
           "t": "2026-08-16T08:34:16.004Z",
           "dur_min": 13.2,
-          "events": 106,
+          "events": 108,
           "in": 122,
           "out": 71656,
           "cache_read": 7667013,
@@ -31204,7 +31233,7 @@
           "sid": "5becf0a7-9ac4-46b3-925c-79f895e406c5",
           "t": "2026-08-23T22:36:40.517Z",
           "dur_min": 31.8,
-          "events": 46,
+          "events": 54,
           "in": 44,
           "out": 13018,
           "cache_read": 2321355,
@@ -31218,7 +31247,7 @@
           "sid": "a80b5371-fd6a-4d52-b58b-c0c3f001077e",
           "t": "2026-08-24T08:35:12.402Z",
           "dur_min": 6.4,
-          "events": 106,
+          "events": 114,
           "in": 124,
           "out": 43200,
           "cache_read": 7814658,
@@ -32351,7 +32380,7 @@
           "sid": "45c5d9b2-d939-49e1-92ee-aedce6032956",
           "t": "2026-08-16T22:38:02.281Z",
           "dur_min": 2.9,
-          "events": 59,
+          "events": 61,
           "in": 62,
           "out": 20090,
           "cache_read": 2678228,
@@ -32365,7 +32394,7 @@
           "sid": "b2472ebc-604e-4d16-b9e1-3fc2c10e891c",
           "t": "2026-08-17T22:38:05.728Z",
           "dur_min": 2.7,
-          "events": 78,
+          "events": 80,
           "in": 86,
           "out": 26051,
           "cache_read": 3296556,
@@ -32393,7 +32422,7 @@
           "sid": "942adc6e-d455-4cdf-8c91-98185ee432ee",
           "t": "2026-08-23T23:39:40.161Z",
           "dur_min": 2.8,
-          "events": 83,
+          "events": 91,
           "in": 84,
           "out": 14435,
           "cache_read": 3457691,
@@ -32632,7 +32661,7 @@
           "sid": "724517b8-1a86-4250-8ada-7281cd375103",
           "t": "2026-08-23T23:10:39.892Z",
           "dur_min": 4.9,
-          "events": 107,
+          "events": 115,
           "in": 122,
           "out": 39050,
           "cache_read": 7358767,
@@ -33625,7 +33654,7 @@
           "sid": "f672f075-6062-4d8a-968d-2d6bd5d2e4b4",
           "t": "2026-08-23T23:07:42.049Z",
           "dur_min": 30.8,
-          "events": 37,
+          "events": 45,
           "in": 34,
           "out": 6279,
           "cache_read": 992574,
@@ -33639,7 +33668,7 @@
           "sid": "63950aac-1f0b-41b0-93dc-45e7bde500ae",
           "t": "2026-08-24T13:10:33.047Z",
           "dur_min": 30.9,
-          "events": 27,
+          "events": 35,
           "in": 22,
           "out": 3429,
           "cache_read": 568860,
@@ -34842,13 +34871,13 @@
           "sid": "ab0a15ad-f90b-49b4-8afb-4ca5c668ec4e",
           "t": "2026-08-16T06:32:38.607Z",
           "dur_min": 2.3,
-          "events": 43,
+          "events": 45,
           "in": 48,
           "out": 21293,
           "cache_read": 1719929,
           "cache_creation": 168532,
           "total": 1909802,
-          "thinking_tokens": 0,
+          "thinking_tokens": 1893,
           "thinking_chars": 0,
           "thinking_blocks": 9
         },
@@ -34884,13 +34913,13 @@
           "sid": "08eaf89c-1551-4589-b01c-c34ad3c14ca0",
           "t": "2026-08-19T06:32:47.358Z",
           "dur_min": 1.4,
-          "events": 29,
+          "events": 31,
           "in": 31,
           "out": 13801,
           "cache_read": 955959,
           "cache_creation": 180035,
           "total": 1149826,
-          "thinking_tokens": 0,
+          "thinking_tokens": 1173,
           "thinking_chars": 0,
           "thinking_blocks": 5
         },
@@ -34898,7 +34927,7 @@
           "sid": "face2982-54ff-4c4b-8224-2afc480798ab",
           "t": "2026-08-23T23:27:40.295Z",
           "dur_min": 3.0,
-          "events": 39,
+          "events": 49,
           "in": 42,
           "out": 24424,
           "cache_read": 1417379,
@@ -34912,7 +34941,7 @@
           "sid": "be988b63-b700-4545-b26d-e1a8fa29eefc",
           "t": "2026-08-24T06:33:18.028Z",
           "dur_min": 2.5,
-          "events": 44,
+          "events": 52,
           "in": 48,
           "out": 13146,
           "cache_read": 1736564,
@@ -34921,6 +34950,215 @@
           "thinking_tokens": 2080,
           "thinking_chars": 0,
           "thinking_blocks": 10
+        }
+      ]
+    },
+    {
+      "key": "c2a2-sewing-agent-weekly",
+      "label": "c2a2-sewing-agent-weekly",
+      "category": "c2a2-pipeline",
+      "thinkers": [],
+      "schedule": "Sun 04:30",
+      "runs": 14,
+      "out_total": 892884,
+      "all_total": 51696151,
+      "median_gap_h": 168.0,
+      "rows": [
+        {
+          "sid": "107894e4-6fe1-4ed6-a86e-814c9c49732e",
+          "t": "2026-05-08T15:32:37.976Z",
+          "dur_min": 0.0,
+          "events": 4,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 0
+        },
+        {
+          "sid": "7f3d7828-e9c0-4415-84a2-a23f0ad098fa",
+          "t": "2026-05-10T08:38:40.372Z",
+          "dur_min": 15.0,
+          "events": 184,
+          "in": 118,
+          "out": 47993,
+          "cache_read": 5875371,
+          "cache_creation": 265983,
+          "total": 6189465,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 3
+        },
+        {
+          "sid": "b927e503-5839-4a33-88e7-2362cc31b768",
+          "t": "2026-06-07T08:38:42.193Z",
+          "dur_min": 6.4,
+          "events": 79,
+          "in": 38378,
+          "out": 25539,
+          "cache_read": 1799683,
+          "cache_creation": 359751,
+          "total": 2223351,
+          "thinking_tokens": 13856,
+          "thinking_chars": 0,
+          "thinking_blocks": 4
+        },
+        {
+          "sid": "f0828581-66d7-4907-bc09-94a8ff934afd",
+          "t": "2026-06-14T08:38:23.765Z",
+          "dur_min": 0.0,
+          "events": 6,
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_creation": 0,
+          "total": 0,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 0
+        },
+        {
+          "sid": "e325a912-569a-4ce0-a38b-c19a8970a03f",
+          "t": "2026-06-21T10:25:04.502Z",
+          "dur_min": 71.1,
+          "events": 43,
+          "in": 27007,
+          "out": 17365,
+          "cache_read": 788035,
+          "cache_creation": 120836,
+          "total": 953243,
+          "thinking_tokens": 8931,
+          "thinking_chars": 0,
+          "thinking_blocks": 2
+        },
+        {
+          "sid": "1b420324-8f76-4114-8ea6-8c74b67e36d0",
+          "t": "2026-06-28T08:38:54.739Z",
+          "dur_min": 5.1,
+          "events": 278,
+          "in": 40984,
+          "out": 30744,
+          "cache_read": 1095764,
+          "cache_creation": 196395,
+          "total": 1363887,
+          "thinking_tokens": 6170,
+          "thinking_chars": 0,
+          "thinking_blocks": 5
+        },
+        {
+          "sid": "4de81714-0666-42ee-996b-3b0ef14b6de4",
+          "t": "2026-07-06T03:49:53.927Z",
+          "dur_min": 5.1,
+          "events": 45,
+          "in": 29120,
+          "out": 58018,
+          "cache_read": 1980699,
+          "cache_creation": 165281,
+          "total": 2233118,
+          "thinking_tokens": 4940,
+          "thinking_chars": 0,
+          "thinking_blocks": 8
+        },
+        {
+          "sid": "35a7fd1d-98ae-41ce-82f9-fcdadb47c29e",
+          "t": "2026-07-12T08:38:05.691Z",
+          "dur_min": 9.8,
+          "events": 58,
+          "in": 29418,
+          "out": 113562,
+          "cache_read": 2914083,
+          "cache_creation": 358760,
+          "total": 3415823,
+          "thinking_tokens": 6314,
+          "thinking_chars": 0,
+          "thinking_blocks": 12
+        },
+        {
+          "sid": "1d1c168a-895f-40af-accf-80720e931d78",
+          "t": "2026-07-19T08:38:19.379Z",
+          "dur_min": 9.4,
+          "events": 73,
+          "in": 76,
+          "out": 97514,
+          "cache_read": 3404965,
+          "cache_creation": 315189,
+          "total": 3817744,
+          "thinking_tokens": 7509,
+          "thinking_chars": 0,
+          "thinking_blocks": 11
+        },
+        {
+          "sid": "24ee3e5c-3e27-4906-a7cb-9bbf74f58e60",
+          "t": "2026-07-26T08:38:41.826Z",
+          "dur_min": 10.9,
+          "events": 78,
+          "in": 100,
+          "out": 145720,
+          "cache_read": 4602170,
+          "cache_creation": 418262,
+          "total": 5166252,
+          "thinking_tokens": 10400,
+          "thinking_chars": 0,
+          "thinking_blocks": 13
+        },
+        {
+          "sid": "5927409c-125f-49d7-a28a-c019a38e626f",
+          "t": "2026-08-02T08:38:56.696Z",
+          "dur_min": 10.1,
+          "events": 180,
+          "in": 76,
+          "out": 92726,
+          "cache_read": 3464734,
+          "cache_creation": 327873,
+          "total": 3885409,
+          "thinking_tokens": 6438,
+          "thinking_chars": 0,
+          "thinking_blocks": 12
+        },
+        {
+          "sid": "fef9d71e-ad5d-4753-81c8-4dd07f3a25ee",
+          "t": "2026-08-09T08:38:02.800Z",
+          "dur_min": 15.1,
+          "events": 210,
+          "in": 134,
+          "out": 100513,
+          "cache_read": 8111214,
+          "cache_creation": 352691,
+          "total": 8564552,
+          "thinking_tokens": 8243,
+          "thinking_chars": 0,
+          "thinking_blocks": 17
+        },
+        {
+          "sid": "de9f0b64-5d57-4bab-8e6e-66b74d8903e6",
+          "t": "2026-08-16T08:38:01.041Z",
+          "dur_min": 9.4,
+          "events": 99,
+          "in": 116,
+          "out": 74642,
+          "cache_read": 7012536,
+          "cache_creation": 356804,
+          "total": 7444098,
+          "thinking_tokens": 6942,
+          "thinking_chars": 0,
+          "thinking_blocks": 20
+        },
+        {
+          "sid": "27bc78ad-7c36-4414-b74f-91694d7b3605",
+          "t": "2026-08-23T23:47:40.150Z",
+          "dur_min": 10.7,
+          "events": 107,
+          "in": 110,
+          "out": 88548,
+          "cache_read": 6007643,
+          "cache_creation": 342908,
+          "total": 6439209,
+          "thinking_tokens": 10000,
+          "thinking_chars": 0,
+          "thinking_blocks": 19
         }
       ]
     },
@@ -35163,7 +35401,7 @@
           "sid": "1abf790a-8c82-491d-8bd0-96b8ee8d2b6d",
           "t": "2026-08-23T23:31:40.039Z",
           "dur_min": 7.7,
-          "events": 106,
+          "events": 112,
           "in": 124,
           "out": 69902,
           "cache_read": 6126532,
@@ -35172,201 +35410,6 @@
           "thinking_tokens": 8641,
           "thinking_chars": 0,
           "thinking_blocks": 23
-        }
-      ]
-    },
-    {
-      "key": "c2a2-sewing-agent-weekly",
-      "label": "c2a2-sewing-agent-weekly",
-      "category": "c2a2-pipeline",
-      "thinkers": [],
-      "schedule": "Sun 04:30",
-      "runs": 13,
-      "out_total": 818242,
-      "all_total": 44252053,
-      "median_gap_h": 168.0,
-      "rows": [
-        {
-          "sid": "107894e4-6fe1-4ed6-a86e-814c9c49732e",
-          "t": "2026-05-08T15:32:37.976Z",
-          "dur_min": 0.0,
-          "events": 4,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 0
-        },
-        {
-          "sid": "7f3d7828-e9c0-4415-84a2-a23f0ad098fa",
-          "t": "2026-05-10T08:38:40.372Z",
-          "dur_min": 15.0,
-          "events": 184,
-          "in": 118,
-          "out": 47993,
-          "cache_read": 5875371,
-          "cache_creation": 265983,
-          "total": 6189465,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 3
-        },
-        {
-          "sid": "b927e503-5839-4a33-88e7-2362cc31b768",
-          "t": "2026-06-07T08:38:42.193Z",
-          "dur_min": 6.4,
-          "events": 79,
-          "in": 38378,
-          "out": 25539,
-          "cache_read": 1799683,
-          "cache_creation": 359751,
-          "total": 2223351,
-          "thinking_tokens": 13856,
-          "thinking_chars": 0,
-          "thinking_blocks": 4
-        },
-        {
-          "sid": "f0828581-66d7-4907-bc09-94a8ff934afd",
-          "t": "2026-06-14T08:38:23.765Z",
-          "dur_min": 0.0,
-          "events": 6,
-          "in": 0,
-          "out": 0,
-          "cache_read": 0,
-          "cache_creation": 0,
-          "total": 0,
-          "thinking_tokens": 0,
-          "thinking_chars": 0,
-          "thinking_blocks": 0
-        },
-        {
-          "sid": "e325a912-569a-4ce0-a38b-c19a8970a03f",
-          "t": "2026-06-21T10:25:04.502Z",
-          "dur_min": 71.1,
-          "events": 43,
-          "in": 27007,
-          "out": 17365,
-          "cache_read": 788035,
-          "cache_creation": 120836,
-          "total": 953243,
-          "thinking_tokens": 8931,
-          "thinking_chars": 0,
-          "thinking_blocks": 2
-        },
-        {
-          "sid": "1b420324-8f76-4114-8ea6-8c74b67e36d0",
-          "t": "2026-06-28T08:38:54.739Z",
-          "dur_min": 5.1,
-          "events": 278,
-          "in": 40984,
-          "out": 30744,
-          "cache_read": 1095764,
-          "cache_creation": 196395,
-          "total": 1363887,
-          "thinking_tokens": 6170,
-          "thinking_chars": 0,
-          "thinking_blocks": 5
-        },
-        {
-          "sid": "4de81714-0666-42ee-996b-3b0ef14b6de4",
-          "t": "2026-07-06T03:49:53.927Z",
-          "dur_min": 5.1,
-          "events": 45,
-          "in": 29120,
-          "out": 58018,
-          "cache_read": 1980699,
-          "cache_creation": 165281,
-          "total": 2233118,
-          "thinking_tokens": 4940,
-          "thinking_chars": 0,
-          "thinking_blocks": 8
-        },
-        {
-          "sid": "35a7fd1d-98ae-41ce-82f9-fcdadb47c29e",
-          "t": "2026-07-12T08:38:05.691Z",
-          "dur_min": 9.8,
-          "events": 58,
-          "in": 29418,
-          "out": 113562,
-          "cache_read": 2914083,
-          "cache_creation": 358760,
-          "total": 3415823,
-          "thinking_tokens": 6314,
-          "thinking_chars": 0,
-          "thinking_blocks": 12
-        },
-        {
-          "sid": "1d1c168a-895f-40af-accf-80720e931d78",
-          "t": "2026-07-19T08:38:19.379Z",
-          "dur_min": 9.4,
-          "events": 73,
-          "in": 76,
-          "out": 97514,
-          "cache_read": 3404965,
-          "cache_creation": 315189,
-          "total": 3817744,
-          "thinking_tokens": 7509,
-          "thinking_chars": 0,
-          "thinking_blocks": 11
-        },
-        {
-          "sid": "24ee3e5c-3e27-4906-a7cb-9bbf74f58e60",
-          "t": "2026-07-26T08:38:41.826Z",
-          "dur_min": 10.9,
-          "events": 78,
-          "in": 100,
-          "out": 145720,
-          "cache_read": 4602170,
-          "cache_creation": 418262,
-          "total": 5166252,
-          "thinking_tokens": 10400,
-          "thinking_chars": 0,
-          "thinking_blocks": 13
-        },
-        {
-          "sid": "5927409c-125f-49d7-a28a-c019a38e626f",
-          "t": "2026-08-02T08:38:56.696Z",
-          "dur_min": 10.1,
-          "events": 180,
-          "in": 76,
-          "out": 92726,
-          "cache_read": 3464734,
-          "cache_creation": 327873,
-          "total": 3885409,
-          "thinking_tokens": 6438,
-          "thinking_chars": 0,
-          "thinking_blocks": 12
-        },
-        {
-          "sid": "fef9d71e-ad5d-4753-81c8-4dd07f3a25ee",
-          "t": "2026-08-09T08:38:02.800Z",
-          "dur_min": 15.1,
-          "events": 210,
-          "in": 134,
-          "out": 100513,
-          "cache_read": 8111214,
-          "cache_creation": 352691,
-          "total": 8564552,
-          "thinking_tokens": 8243,
-          "thinking_chars": 0,
-          "thinking_blocks": 17
-        },
-        {
-          "sid": "27bc78ad-7c36-4414-b74f-91694d7b3605",
-          "t": "2026-08-23T23:47:40.150Z",
-          "dur_min": 10.7,
-          "events": 97,
-          "in": 110,
-          "out": 88548,
-          "cache_read": 6007643,
-          "cache_creation": 342908,
-          "total": 6439209,
-          "thinking_tokens": 10000,
-          "thinking_chars": 0,
-          "thinking_blocks": 19
         }
       ]
     },
@@ -35598,7 +35641,7 @@
           "sid": "9cbf17f8-7722-47c0-a9b3-35a8604f3682",
           "t": "2026-08-24T07:04:19.974Z",
           "dur_min": 3.2,
-          "events": 10,
+          "events": 18,
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -35616,9 +35659,9 @@
       "category": "bridge",
       "thinkers": [],
       "schedule": "daily 08:45",
-      "runs": 91,
-      "out_total": 497208,
-      "all_total": 104065195,
+      "runs": 92,
+      "out_total": 503269,
+      "all_total": 105647033,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -36854,10 +36897,24 @@
           "thinking_blocks": 3
         },
         {
+          "sid": "131ac7ec-117f-4c0c-bb1c-30b3e464dee6",
+          "t": "2026-08-17T12:51:49.474Z",
+          "dur_min": 1.2,
+          "events": 46,
+          "in": 47,
+          "out": 6061,
+          "cache_read": 1419660,
+          "cache_creation": 156070,
+          "total": 1581838,
+          "thinking_tokens": 963,
+          "thinking_chars": 0,
+          "thinking_blocks": 6
+        },
+        {
           "sid": "4d2393df-770d-437e-aed6-8c5f6f592155",
           "t": "2026-08-18T12:51:52.467Z",
           "dur_min": 1.3,
-          "events": 61,
+          "events": 63,
           "in": 66,
           "out": 9107,
           "cache_read": 1968523,
@@ -36871,7 +36928,7 @@
           "sid": "06794620-371e-4d7a-a99e-8d9ded3f4865",
           "t": "2026-08-23T23:38:40.090Z",
           "dur_min": 0.4,
-          "events": 26,
+          "events": 34,
           "in": 20,
           "out": 2392,
           "cache_read": 480638,
@@ -36885,7 +36942,7 @@
           "sid": "0b9db853-a50d-41e7-80f8-116720e8e353",
           "t": "2026-08-24T12:52:24.625Z",
           "dur_min": 1.0,
-          "events": 28,
+          "events": 36,
           "in": 22,
           "out": 2173,
           "cache_read": 569622,
@@ -37153,7 +37210,7 @@
           "sid": "df3be0b3-4311-4156-86f3-de755d21d717",
           "t": "2026-08-23T23:08:40.476Z",
           "dur_min": 4.6,
-          "events": 114,
+          "events": 122,
           "in": 122,
           "out": 26465,
           "cache_read": 7381071,
@@ -37383,9 +37440,9 @@
       "category": "infrastructure",
       "thinkers": [],
       "schedule": "daily 07:00",
-      "runs": 85,
-      "out_total": 440463,
-      "all_total": 38957325,
+      "runs": 86,
+      "out_total": 442403,
+      "all_total": 39325843,
       "median_gap_h": 24.0,
       "rows": [
         {
@@ -38526,7 +38583,7 @@
           "sid": "2d63e886-97ba-4306-a788-c5a2325dab92",
           "t": "2026-08-16T11:08:46.402Z",
           "dur_min": 0.3,
-          "events": 8,
+          "events": 10,
           "in": 6,
           "out": 1303,
           "cache_read": 108920,
@@ -38537,10 +38594,24 @@
           "thinking_blocks": 0
         },
         {
+          "sid": "987bdae4-9308-4c1e-a01d-1aa25070576e",
+          "t": "2026-08-17T11:08:49.069Z",
+          "dur_min": 0.3,
+          "events": 14,
+          "in": 10,
+          "out": 1940,
+          "cache_read": 146024,
+          "cache_creation": 220544,
+          "total": 368518,
+          "thinking_tokens": 0,
+          "thinking_chars": 0,
+          "thinking_blocks": 0
+        },
+        {
           "sid": "5ab880e7-fb4b-4c06-b8b4-f15072c453ab",
           "t": "2026-08-18T11:08:51.825Z",
           "dur_min": 0.2,
-          "events": 12,
+          "events": 14,
           "in": 10,
           "out": 1901,
           "cache_read": 146005,
@@ -38554,7 +38625,7 @@
           "sid": "ba9c022b-6dbe-49fb-b2f0-7a94d5366720",
           "t": "2026-08-23T23:58:40.695Z",
           "dur_min": 0.5,
-          "events": 15,
+          "events": 23,
           "in": 6,
           "out": 4490,
           "cache_read": 163642,
@@ -38568,7 +38639,7 @@
           "sid": "0e4452a8-e9a8-43cc-9ff7-96b6777e827d",
           "t": "2026-08-24T11:09:26.341Z",
           "dur_min": 0.2,
-          "events": 14,
+          "events": 20,
           "in": 6,
           "out": 1152,
           "cache_read": 109904,
@@ -38749,7 +38820,7 @@
           "sid": "34f5c34e-0d1a-4aab-9d5b-95df6411340e",
           "t": "2026-08-17T10:36:57.676Z",
           "dur_min": 34.9,
-          "events": 58,
+          "events": 60,
           "in": 62,
           "out": 44359,
           "cache_read": 3647245,
@@ -38763,7 +38834,7 @@
           "sid": "190d5bdf-36dc-4dd2-8491-9e000ddf3a53",
           "t": "2026-08-24T10:33:40.768Z",
           "dur_min": 30.8,
-          "events": 15,
+          "events": 21,
           "in": 6,
           "out": 672,
           "cache_read": 56238,
@@ -40064,7 +40135,7 @@
           "sid": "91b11e0d-b29d-4df0-8f5b-608013380947",
           "t": "2026-08-16T10:03:17.668Z",
           "dur_min": 30.5,
-          "events": 12,
+          "events": 14,
           "in": 10,
           "out": 1104,
           "cache_read": 225555,
@@ -40092,7 +40163,7 @@
           "sid": "392c25d8-e876-4562-9a4f-99341288ae64",
           "t": "2026-08-18T10:03:23.431Z",
           "dur_min": 30.5,
-          "events": 12,
+          "events": 14,
           "in": 10,
           "out": 906,
           "cache_read": 225660,
@@ -40106,7 +40177,7 @@
           "sid": "43b10ae6-c78d-4551-b79b-0d338741f409",
           "t": "2026-08-23T22:36:40.264Z",
           "dur_min": 30.8,
-          "events": 21,
+          "events": 31,
           "in": 16,
           "out": 1228,
           "cache_read": 424102,
@@ -40120,7 +40191,7 @@
           "sid": "66e26f8c-f464-4099-9dde-3a97448deca4",
           "t": "2026-08-24T10:03:57.380Z",
           "dur_min": 30.5,
-          "events": 20,
+          "events": 28,
           "in": 12,
           "out": 762,
           "cache_read": 292552,
@@ -40332,13 +40403,13 @@
           "sid": "1b8eea23-d44e-48c2-883d-44f8d111acb0",
           "t": "2026-08-16T07:12:35.022Z",
           "dur_min": 5.7,
-          "events": 75,
+          "events": 77,
           "in": 152,
           "out": 35867,
           "cache_read": 4890907,
           "cache_creation": 449350,
           "total": 5376276,
-          "thinking_tokens": 0,
+          "thinking_tokens": 3159,
           "thinking_chars": 0,
           "thinking_blocks": 9
         },
@@ -40346,7 +40417,7 @@
           "sid": "88b6dc08-326e-4ba2-b93f-49eb7cc6adc5",
           "t": "2026-08-23T23:43:39.387Z",
           "dur_min": 6.3,
-          "events": 69,
+          "events": 79,
           "in": 107,
           "out": 25238,
           "cache_read": 4310217,
@@ -40527,13 +40598,13 @@
           "sid": "82d93165-f744-4bc3-a067-ad657590fb7b",
           "t": "2026-08-16T10:23:03.144Z",
           "dur_min": 4.1,
-          "events": 51,
+          "events": 53,
           "in": 302,
           "out": 25165,
           "cache_read": 2630104,
           "cache_creation": 321275,
           "total": 2976846,
-          "thinking_tokens": 0,
+          "thinking_tokens": 4829,
           "thinking_chars": 0,
           "thinking_blocks": 7
         },
@@ -40541,7 +40612,7 @@
           "sid": "c24593ab-d4d2-4a69-a79a-ea960bea7066",
           "t": "2026-08-23T23:59:42.533Z",
           "dur_min": 30.8,
-          "events": 20,
+          "events": 26,
           "in": 12,
           "out": 2268,
           "cache_read": 331242,
@@ -41772,13 +41843,13 @@
           "sid": "1ae695d5-30ec-4e4f-92bc-06e19acbb83b",
           "t": "2026-08-16T12:08:49.877Z",
           "dur_min": 30.9,
-          "events": 28,
+          "events": 30,
           "in": 28,
           "out": 5660,
           "cache_read": 867550,
           "cache_creation": 149353,
           "total": 1022591,
-          "thinking_tokens": 0,
+          "thinking_tokens": 1008,
           "thinking_chars": 0,
           "thinking_blocks": 4
         },
@@ -41814,7 +41885,7 @@
           "sid": "1ee4a638-f186-4341-973c-eca213be38e3",
           "t": "2026-08-23T22:36:40.277Z",
           "dur_min": 30.8,
-          "events": 29,
+          "events": 37,
           "in": 22,
           "out": 3761,
           "cache_read": 650686,
@@ -41828,7 +41899,7 @@
           "sid": "e1ab823c-d933-4719-aef5-09f721a70ccc",
           "t": "2026-08-24T12:09:27.855Z",
           "dur_min": 31.0,
-          "events": 24,
+          "events": 32,
           "in": 16,
           "out": 2400,
           "cache_read": 431874,
@@ -42082,7 +42153,7 @@
           "sid": "1f1adef5-e659-4230-a1c0-f97fdcb547e5",
           "t": "2026-08-23T23:07:42.187Z",
           "dur_min": 2.4,
-          "events": 85,
+          "events": 93,
           "in": 92,
           "out": 15841,
           "cache_read": 5970578,
@@ -42531,7 +42602,7 @@
           "sid": "0b6ea6be-dac8-4f4c-b99e-3ee9e5c66d14",
           "t": "2026-08-17T09:34:53.018Z",
           "dur_min": 30.9,
-          "events": 14,
+          "events": 16,
           "in": 12,
           "out": 6939,
           "cache_read": 287484,
@@ -42545,7 +42616,7 @@
           "sid": "a92c1f4f-b7ef-4f89-8d6a-089eca7ea170",
           "t": "2026-08-24T09:35:28.380Z",
           "dur_min": 31.0,
-          "events": 17,
+          "events": 25,
           "in": 8,
           "out": 5588,
           "cache_read": 198579,
@@ -42768,7 +42839,7 @@
           "sid": "f7fc596a-0c13-4829-952c-e499ef71cda0",
           "t": "2026-08-24T02:40:06.691Z",
           "dur_min": 31.4,
-          "events": 18,
+          "events": 26,
           "in": 12,
           "out": 5447,
           "cache_read": 288204,
@@ -42963,7 +43034,7 @@
           "sid": "d456183b-2843-4753-9b4d-f4570ad9d0db",
           "t": "2026-08-24T03:01:45.110Z",
           "dur_min": 0.4,
-          "events": 25,
+          "events": 35,
           "in": 20,
           "out": 1490,
           "cache_read": 538456,
@@ -43130,7 +43201,7 @@
           "sid": "a507bdfb-bb4e-4dfe-8ae7-9216b47c8497",
           "t": "2026-08-23T23:59:42.092Z",
           "dur_min": 1.0,
-          "events": 21,
+          "events": 31,
           "in": 16,
           "out": 6116,
           "cache_read": 679534,
@@ -44249,7 +44320,7 @@
           "sid": "495f75d7-c006-4892-ba0d-5406bc1e17e8",
           "t": "2026-08-23T23:59:42.086Z",
           "dur_min": 0.2,
-          "events": 15,
+          "events": 23,
           "in": 6,
           "out": 295,
           "cache_read": 199893,
@@ -44263,7 +44334,7 @@
           "sid": "2ed57f15-44f9-4403-8d4f-a2c1b99818bf",
           "t": "2026-08-24T10:32:41.294Z",
           "dur_min": 0.2,
-          "events": 13,
+          "events": 23,
           "in": 6,
           "out": 294,
           "cache_read": 200006,
@@ -44444,7 +44515,7 @@
           "sid": "b7071f1f-d2bd-4195-b8db-c6e160cc3081",
           "t": "2026-08-24T00:00:39.942Z",
           "dur_min": 0.2,
-          "events": 15,
+          "events": 21,
           "in": 6,
           "out": 517,
           "cache_read": 200799,
@@ -44577,7 +44648,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2024-01-01",
@@ -44587,7 +44660,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2024-04-21",
@@ -44597,7 +44672,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 1,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-01-01",
@@ -44607,7 +44684,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 6,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-02-12",
@@ -44617,7 +44696,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-07-01",
@@ -44627,7 +44708,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-09-17",
@@ -44637,7 +44720,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-09-25",
@@ -44647,7 +44732,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2025-11-11",
@@ -44657,7 +44744,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-01-01",
@@ -44667,7 +44756,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-01-19",
@@ -44677,7 +44768,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-01-30",
@@ -44687,7 +44780,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-02",
@@ -44697,7 +44792,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-08",
@@ -44707,7 +44804,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-12",
@@ -44717,7 +44816,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-17",
@@ -44727,7 +44828,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-19",
@@ -44737,7 +44840,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-02-20",
@@ -44747,7 +44852,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 1,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-03-04",
@@ -44757,7 +44864,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-03-13",
@@ -44767,7 +44876,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-03-16",
@@ -44777,7 +44888,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 1,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-03-19",
@@ -44787,7 +44900,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 1,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-03-28",
@@ -44797,7 +44912,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-03",
@@ -44807,7 +44924,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 46,
-      "signals": 28
+      "signals": 28,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-04",
@@ -44817,7 +44936,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 7
+      "signals": 7,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-05",
@@ -44827,7 +44948,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 17,
-      "signals": 20
+      "signals": 20,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-07",
@@ -44837,7 +44960,9 @@
       "commits": 2,
       "prs_added": 69,
       "prs_articulated": 7,
-      "signals": 8
+      "signals": 8,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-08",
@@ -44847,7 +44972,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 19,
-      "signals": 26
+      "signals": 26,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-09",
@@ -44857,7 +44984,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 8,
-      "signals": 12
+      "signals": 12,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-12",
@@ -44867,7 +44996,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 5,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-13",
@@ -44877,7 +45008,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 44
+      "signals": 44,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-14",
@@ -44887,7 +45020,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 9,
-      "signals": 23
+      "signals": 23,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-15",
@@ -44897,7 +45032,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 4,
-      "signals": 16
+      "signals": 16,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-16",
@@ -44907,7 +45044,9 @@
       "commits": 3,
       "prs_added": 71,
       "prs_articulated": 31,
-      "signals": 47
+      "signals": 47,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-17",
@@ -44917,7 +45056,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-18",
@@ -44927,7 +45068,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-20",
@@ -44937,7 +45080,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 6,
-      "signals": 12
+      "signals": 12,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-21",
@@ -44947,7 +45092,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 6
+      "signals": 6,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-22",
@@ -44957,7 +45104,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-24",
@@ -44967,7 +45116,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 4,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-25",
@@ -44977,7 +45128,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 4,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-27",
@@ -44987,7 +45140,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 58
+      "signals": 58,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-28",
@@ -44997,7 +45152,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 29,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-04-29",
@@ -45007,7 +45164,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 22,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-01",
@@ -45017,7 +45176,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 5,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-02",
@@ -45027,7 +45188,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-03",
@@ -45037,7 +45200,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 4,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-04",
@@ -45047,7 +45212,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 12
+      "signals": 12,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-05",
@@ -45057,7 +45224,9 @@
       "commits": 7,
       "prs_added": 0,
       "prs_articulated": 5,
-      "signals": 68
+      "signals": 68,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-06",
@@ -45067,7 +45236,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-07",
@@ -45077,7 +45248,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-08",
@@ -45087,7 +45260,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 15,
-      "signals": 16
+      "signals": 16,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-09",
@@ -45097,7 +45272,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-10",
@@ -45107,7 +45284,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 20
+      "signals": 20,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-11",
@@ -45117,7 +45296,9 @@
       "commits": 1,
       "prs_added": 65,
       "prs_articulated": 6,
-      "signals": 16
+      "signals": 16,
+      "synthesis_essays": 3,
+      "synthesis_words": 1579
     },
     {
       "date": "2026-05-12",
@@ -45127,7 +45308,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 7
+      "signals": 7,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-13",
@@ -45137,7 +45320,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 11,
-      "signals": 15
+      "signals": 15,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-14",
@@ -45147,7 +45332,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 13
+      "signals": 13,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-15",
@@ -45157,7 +45344,9 @@
       "commits": 5,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-16",
@@ -45167,7 +45356,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 8
+      "signals": 8,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-17",
@@ -45177,7 +45368,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 9,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-18",
@@ -45187,7 +45380,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 3,
-      "signals": 45
+      "signals": 45,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-19",
@@ -45197,7 +45392,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-20",
@@ -45207,7 +45404,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 4
+      "signals": 4,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-22",
@@ -45217,7 +45416,9 @@
       "commits": 2,
       "prs_added": 19,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 3,
+      "synthesis_words": 2132
     },
     {
       "date": "2026-05-23",
@@ -45227,7 +45428,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 8
+      "signals": 8,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-24",
@@ -45237,7 +45440,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 17
+      "signals": 17,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-25",
@@ -45247,7 +45452,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 8
+      "signals": 8,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-26",
@@ -45257,7 +45464,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-27",
@@ -45267,7 +45476,9 @@
       "commits": 7,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 18
+      "signals": 18,
+      "synthesis_essays": 6,
+      "synthesis_words": 4156
     },
     {
       "date": "2026-05-28",
@@ -45277,7 +45488,9 @@
       "commits": 5,
       "prs_added": 0,
       "prs_articulated": 4,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-29",
@@ -45287,7 +45500,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 6
+      "signals": 6,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-30",
@@ -45297,7 +45512,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 4
+      "signals": 4,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-05-31",
@@ -45307,7 +45524,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-01",
@@ -45317,7 +45536,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-02",
@@ -45327,7 +45548,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-03",
@@ -45337,7 +45560,9 @@
       "commits": 0,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 1
+      "signals": 1,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-04",
@@ -45347,7 +45572,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 33,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-05",
@@ -45357,7 +45584,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-06",
@@ -45367,7 +45596,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 4
+      "signals": 4,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-07",
@@ -45377,7 +45608,9 @@
       "commits": 4,
       "prs_added": 38,
       "prs_articulated": 38,
-      "signals": 27
+      "signals": 27,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-08",
@@ -45387,7 +45620,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-09",
@@ -45397,7 +45632,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-10",
@@ -45407,7 +45644,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-11",
@@ -45417,7 +45656,9 @@
       "commits": 5,
       "prs_added": 0,
       "prs_articulated": 2,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-12",
@@ -45427,7 +45668,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-14",
@@ -45437,7 +45680,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-15",
@@ -45447,7 +45692,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-16",
@@ -45457,7 +45704,9 @@
       "commits": 2,
       "prs_added": 2,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-17",
@@ -45467,7 +45716,9 @@
       "commits": 10,
       "prs_added": 19,
       "prs_articulated": 19,
-      "signals": 33
+      "signals": 33,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-18",
@@ -45477,7 +45728,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-19",
@@ -45487,7 +45740,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-20",
@@ -45497,7 +45752,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-21",
@@ -45507,7 +45764,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-22",
@@ -45517,7 +45776,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-23",
@@ -45527,7 +45788,9 @@
       "commits": 5,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-24",
@@ -45537,7 +45800,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 13
+      "signals": 13,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-25",
@@ -45547,7 +45812,9 @@
       "commits": 7,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 12
+      "signals": 12,
+      "synthesis_essays": 0,
+      "synthesis_words": 1313
     },
     {
       "date": "2026-06-26",
@@ -45557,7 +45824,9 @@
       "commits": 7,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-27",
@@ -45567,7 +45836,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 6
+      "signals": 6,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-28",
@@ -45577,7 +45848,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 1610
     },
     {
       "date": "2026-06-29",
@@ -45587,7 +45860,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 13
+      "signals": 13,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-06-30",
@@ -45597,7 +45872,9 @@
       "commits": 6,
       "prs_added": 144,
       "prs_articulated": 0,
-      "signals": 2
+      "signals": 2,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-01",
@@ -45607,7 +45884,9 @@
       "commits": 5,
       "prs_added": 21,
       "prs_articulated": 21,
-      "signals": 19
+      "signals": 19,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-02",
@@ -45617,7 +45896,9 @@
       "commits": 6,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-03",
@@ -45627,7 +45908,9 @@
       "commits": 6,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 2
+      "signals": 2,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-04",
@@ -45637,7 +45920,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-05",
@@ -45647,7 +45932,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 14
+      "signals": 14,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-06",
@@ -45657,7 +45944,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-07",
@@ -45667,7 +45956,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-08",
@@ -45677,7 +45968,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 6
+      "signals": 6,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-09",
@@ -45687,7 +45980,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 1649
     },
     {
       "date": "2026-07-10",
@@ -45697,7 +45992,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-11",
@@ -45707,7 +46004,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-12",
@@ -45717,7 +46016,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 5
+      "signals": 5,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-13",
@@ -45727,7 +46028,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-14",
@@ -45737,7 +46040,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-15",
@@ -45747,7 +46052,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-16",
@@ -45757,7 +46064,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-17",
@@ -45767,7 +46076,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-18",
@@ -45777,7 +46088,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 7,
+      "synthesis_words": 6430
     },
     {
       "date": "2026-07-19",
@@ -45787,7 +46100,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-20",
@@ -45797,7 +46112,9 @@
       "commits": 5,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 14
+      "signals": 14,
+      "synthesis_essays": 0,
+      "synthesis_words": 4250
     },
     {
       "date": "2026-07-21",
@@ -45807,7 +46124,9 @@
       "commits": 12,
       "prs_added": 64,
       "prs_articulated": 64,
-      "signals": 28
+      "signals": 28,
+      "synthesis_essays": 4,
+      "synthesis_words": 1129
     },
     {
       "date": "2026-07-22",
@@ -45817,7 +46136,9 @@
       "commits": 8,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 12
+      "signals": 12,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-23",
@@ -45827,7 +46148,9 @@
       "commits": 8,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-24",
@@ -45837,7 +46160,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 4
+      "signals": 4,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-25",
@@ -45847,7 +46172,9 @@
       "commits": 25,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 3
+      "signals": 3,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-26",
@@ -45857,7 +46184,9 @@
       "commits": 9,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-27",
@@ -45867,7 +46196,9 @@
       "commits": 13,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-28",
@@ -45877,7 +46208,9 @@
       "commits": 13,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 7
+      "signals": 7,
+      "synthesis_essays": 3,
+      "synthesis_words": 2572
     },
     {
       "date": "2026-07-29",
@@ -45887,7 +46220,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 11
+      "signals": 11,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-30",
@@ -45897,7 +46232,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-07-31",
@@ -45907,7 +46244,9 @@
       "commits": 5,
       "prs_added": 2,
       "prs_articulated": 2,
-      "signals": 17
+      "signals": 17,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-01",
@@ -45917,7 +46256,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 7
+      "signals": 7,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-02",
@@ -45927,7 +46268,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 4
+      "signals": 4,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-03",
@@ -45937,7 +46280,9 @@
       "commits": 8,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 20
+      "signals": 20,
+      "synthesis_essays": 3,
+      "synthesis_words": 7343
     },
     {
       "date": "2026-08-04",
@@ -45947,7 +46292,9 @@
       "commits": 7,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 8
+      "signals": 8,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-05",
@@ -45957,7 +46304,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 18
+      "signals": 18,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-06",
@@ -45967,7 +46316,9 @@
       "commits": 4,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 10
+      "signals": 10,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-07",
@@ -45977,7 +46328,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 15
+      "signals": 15,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-08",
@@ -45987,7 +46340,9 @@
       "commits": 3,
       "prs_added": 16,
       "prs_articulated": 16,
-      "signals": 21
+      "signals": 21,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-09",
@@ -45997,7 +46352,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 80,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-10",
@@ -46007,7 +46364,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 27,
-      "signals": 15
+      "signals": 15,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-11",
@@ -46017,7 +46376,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-12",
@@ -46027,7 +46388,9 @@
       "commits": 3,
       "prs_added": 107,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 4,
+      "synthesis_words": 8713
     },
     {
       "date": "2026-08-13",
@@ -46037,7 +46400,9 @@
       "commits": 3,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-14",
@@ -46047,7 +46412,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-15",
@@ -46057,7 +46424,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-16",
@@ -46067,7 +46436,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-17",
@@ -46077,7 +46448,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-18",
@@ -46087,7 +46460,9 @@
       "commits": 1,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-19",
@@ -46097,7 +46472,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-20",
@@ -46107,7 +46484,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-21",
@@ -46117,7 +46496,9 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-22",
@@ -46127,17 +46508,33 @@
       "commits": 2,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     },
     {
       "date": "2026-08-24",
-      "links_added": 150,
+      "links_added": 177,
       "links_removed": 0,
-      "files_added": 262,
-      "commits": 6,
+      "files_added": 267,
+      "commits": 10,
       "prs_added": 0,
       "prs_articulated": 0,
-      "signals": 0
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 7933
+    },
+    {
+      "date": "2026-08-25",
+      "links_added": 0,
+      "links_removed": 0,
+      "files_added": 0,
+      "commits": 2,
+      "prs_added": 0,
+      "prs_articulated": 0,
+      "signals": 0,
+      "synthesis_essays": 0,
+      "synthesis_words": 0
     }
   ]
 }

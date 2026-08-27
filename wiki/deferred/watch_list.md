@@ -21,8 +21,8 @@ WATCH-002:
   Check method: Weekly — fetch the source URL looking for body text beyond the bare media embed; plus targeted web search for the episode title + "Between Beliefs" / KSBJ. [EXTENDED 2026-07-28: also check whether captions/transcript are available for the embedded YouTube video `vshC_TxwrVo`, which would make the content assessable without Tom listening in real time.]
   Check cadence: Weekly
 
-  Last checked: 2026-08-18
-  Check count: 5
+  Last checked: 2026-08-25
+  Check count: 6
   Result history:
     - 2026-07-21: Web search for the episode ("N.T. Wright 'Who is This God' Between Beliefs KSBJ 2026 podcast") returned only the generic NTWrightPage Books category page — no episode entry, no transcript, no show notes. Condition NOT met. Matches the proposal's own assessment (page is a bare media embed; `content_verified: false`).
     - 2026-07-28: Both halves of the check method executed. (a) Fetched the source URL (HTTP 200, 53KB). `entry-content` contains exactly one element: a `wp-block-embed is-type-video is-provider-youtube` figure wrapping `https://www.youtube.com/embed/vshC_TxwrVo` (title "NT Wright: Who is This God?"). The only `<p>` in the document is the footer copyright line. No body text, no show notes, no transcript. Yoast reports "Est. reading time: 1 minute"; `article:modified_time` still 2026-07-17T01:11:13Z — page unchanged since publication. (b) Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ 2026 transcript) returned no episode-specific result; hits were the NTWrightPage Books/Audio-Video category pages and unrelated Wright interviews (OpenTheo, Kate Bowler, Theology in the Raw). Condition NOT met.
@@ -35,6 +35,11 @@ WATCH-002:
     - 2026-08-18: Both halves attempted; (a) executed, (b) still tool-blocked; and one **new route was opened and immediately closed**. (a) Fetched the source URL (HTTP 200, 53.5 KB). Page metadata byte-identical to the 07-28, 08-04 and 08-11 checks: `article:published_time` 2026-07-17T01:11:12+00:00, `article:modified_time` 2026-07-17T01:11:13+00:00 (unchanged for the **fourth** consecutive check), Yoast "Est. reading time: 1 minute" — the reading-time figure is the decisive diagnostic that no body text has been added; a post with a transcript could not report 1 minute. No show notes, no transcript. Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ transcript) again returned no episode-specific result — hits were the NTWrightPage home and Audio/Video category pages plus the same unrelated Wright interviews (Gospel Coalition/Trevin Wax, BioLogos, Theology in the Raw/podscripts, Kate Bowler, Closer To Truth, Lemonada). Condition NOT met.
       **NEW THIS CHECK — the KSBJ route was exercised for the first time and yields nothing fetchable.** The 08-14 amendment named the KSBJ *Between Beliefs* programme archive as one of three remaining live routes but no prior run had located its URL. A targeted search (KSBJ "Between Beliefs" podcast episode archive July 2026 N.T. Wright Admirato) surfaced the programme's own index at **https://ksbj.org/podcasts/between-beliefs** — which, having come from a search result, *was* in the provenance set and so could be fetched. `web_fetch` on it returned **HTTP success with an empty body**: the page is client-rendered, and the episode list does not exist in the served HTML. So the KSBJ route is not dead like Oneplace, but it is not reachable with a non-JS fetcher either. It requires a JavaScript-rendering retrieval (browser tooling), which this scheduled run does not have. Recorded so future runs do not re-spend a check re-discovering the same URL: **the KSBJ index URL is known and the plain fetch of it is settled — do not repeat it; escalate it to a browser-rendered fetch or leave it for Tom.**
       (b) YouTube captions for `vshC_TxwrVo`: unchanged and unexercisable, per the standing TOOLING NOTE. Counter incremented; half (a) ran in full.
+
+    - 2026-08-25: Both halves attempted; (a) executed, (b) unexercisable as standing. **Check count now 6 — stale threshold reached; see STALE FLAGS below.** (a) Fetched the source URL (HTTP 200, 53.7 KB). Page metadata identical to the 07-28, 08-04, 08-11 and 08-18 checks: `article:published_time` 2026-07-17T01:11:12+00:00, `article:modified_time` 2026-07-17T01:11:13+00:00 — unchanged for the **fifth** consecutive check — and Yoast still reports "Est. reading time: 1 minute", the decisive diagnostic that no body text has been added (a post carrying a transcript could not report 1 minute). No body text, no show notes, no transcript. Web search ("N.T. Wright" "Who is This God" Between Beliefs KSBJ transcript) returned no episode-specific result: hits were the NTWrightPage home, Podcasts and Audio/Video category pages, plus the same recurring unrelated Wright interviews (Gospel Coalition/Trevin Wax, Kate Bowler, Closer To Truth, Lemonada, and newly Mere Christians/Jordan Raynor). Condition NOT met.
+      **KSBJ route: deliberately not re-attempted.** The 08-18 check settled it — `https://ksbj.org/podcasts/between-beliefs` is provenance-reachable but client-rendered and returns an empty body under plain fetch. Per that run's own instruction, no check budget was re-spent on it. It needs a JS-rendering retrieval or Tom.
+      (b) YouTube captions for `vshC_TxwrVo`: unchanged and unexercisable, per the standing TOOLING NOTE (both `/watch` and `/embed/` forms refused as outside the provenance set). Counter incremented; half (a) ran in full.
+      **Six checks have now produced six identical results.** The page has not moved a byte since publication on 2026-07-17, and every alternative route is either dead (Oneplace), catalogue-only (Admirato), JS-gated (KSBJ), or tool-blocked (YouTube captions). Further weekly fetching of an unchanging page is not informative.
 
   [AMENDMENT 2026-08-14 — the lost proposal has been re-filed; the *content* condition is unchanged]: The Wright agent independently re-filed this exact source on 2026-08-14 as **PROP-2026-08-14-033** (`pending/2026-08-14_wright_who-is-this-god-admirato.md`) — identical `source_url` (https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/) and `source_date` (2026-07-17), retrieved fresh (`searched_on: 2026-08-14`), and correctly carded on `review/2026-08-14_review.html`. This mirrors what happened to WATCH-003 on 2026-08-12 and means the INTEGRITY-FLAG loss is no longer a *live* loss on either item: both bodies of content are back in the queue.
   **But this does not move WATCH-002's condition.** The new proposal reports the same retrieval failure as the original: `web_fetch` on the ntwrightpage post returns an empty body (bare media embed, no article text); the site's own homepage and Audio/Video index carry title, date and tags but no excerpt; and a search on Admirato / *Between Beliefs* / KSBJ surfaced only the Admirato course catalogue and a **dead Oneplace listing ("This ministry is no longer available")**. The Wright agent states plainly that it heard or read nothing of the source and marks its single PRS candidate Speculative "for that reason alone — a retrieval assignment, not findings." The content is still unassessable, so the condition remains NOT met. Agent 16 has not narrowed or closed it.
@@ -63,8 +68,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-08-18
-  Check count: 5
+  Last checked: 2026-08-25
+  Check count: 6
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -72,6 +77,8 @@ WATCH-003:
     - 2026-08-11: `review/archive/` unchanged at **17 files**, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: **zero matches**. Vault-wide `find` for both slugs: **nothing**. The new `review/2026-08-10_review.html` (8 cards, generated 2026-08-10 05:02) contains **zero** occurrences of either item — as expected, since the source files are still absent from `pending/` and so cannot be carded. Folder census: `pending/` 8, `approved/` 301, `denied/` 1, `needs_review/` 1 — the files have not reappeared. Condition NOT met. Review-pass gap: **3 days**.
 
     - 2026-08-18: `review/archive/` unchanged at **17 files**, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: the **only** matches are the two independent re-filings in `pending/` (PROP-2026-08-12-041, PROP-2026-08-14-033) — no disposition anywhere, and no reappearance of the original files in any proposals/ subfolder. Folder census: `pending/` **53**, `approved/` 301, `denied/` 1, `needs_review/` 1. Condition NOT met. Review-pass gap now **10 days**; this item cannot move until Tom next reviews.
+
+    - 2026-08-25: `review/archive/` unchanged at **17** files, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001` and `beatitudes-week-two`: the **only** match is the `source_url` line of the independent re-filing `pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md` (PROP-2026-08-12-041) — no disposition anywhere, and the original file has not reappeared in any proposals/ subfolder. Folder census: `pending/` **60**, `approved/` 301, `denied/` 1, `needs_review/` 1. Condition NOT met. Review-pass gap now **17 days**. **Check count now 6 — stale threshold reached; see STALE FLAGS below.** Six checks have produced six confirmations of the same unmoved state, and the state cannot move until Tom runs a review pass or rules on the INTEGRITY FLAG — neither of which further checking can cause.
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
 
@@ -86,6 +93,35 @@ WATCH-003:
     Origin: review decision (2026-07-20 blanket-approval pass) — item present on the review page but ABSENT from the decision archive; no disposition recorded.
     Original item: PROP-2026-07-19-001, filed 2026-07-19.
     Chain: Rohr tradition agent (2026-07-19) → pending/ → sewing agent 2026-07-19 deferred it as "the weaker of two Rohr items this week" → present as a card on the 2026-07-20 review page → not among the 34 APPROVEs → file no longer present anywhere in the vault → picked up by Agent 16 on 2026-07-21.
+
+---
+
+## STALE FLAGS
+
+*Raised 2026-08-25, when both active items reached the 6-check threshold defined in the agent brief. Agent 16 recommends; it does not cancel. Only Tom cancels.*
+
+STALE-WATCH-FLAG:
+  Item: WATCH-002 (Wright — "Who is This God?", Between Beliefs / KSBJ, PROP-2026-07-19-003)
+  Checks completed: 6
+  Watching since: 2026-07-21
+  Condition: the episode's content becomes assessable — body text/transcript/show notes appear at the source URL, or Tom listens and records a disposition.
+  Assessment: **The condition is unlikely to be met by anything Agent 16 can do.** Six fetches show the source page byte-frozen since publication (`article:modified_time` 2026-07-17T01:11:13Z, Yoast reading time 1 minute, across five consecutive checks). Every alternative route has been exercised and closed: Oneplace archive **dead**; Admirato **catalogue-only**; KSBJ programme index **located but client-rendered**, empty body under plain fetch; YouTube captions for `vshC_TxwrVo` **tool-blocked** in both URL forms. There is no untried route left within this agent's tooling. Note also that the *content* is no longer at risk — the Wright agent independently re-filed the same source on 2026-08-14 as PROP-2026-08-14-033, which is carded on `review/2026-08-24_review.html` and awaiting the review pass.
+  Recommendation: **Escalate to Tom** — specifically, one of three, none of which Agent 16 will choose for him:
+    (a) paste `https://www.youtube.com/watch?v=vshC_TxwrVo` into a Cowork session once, which puts it in the provenance set and lets a future run test the caption route; or
+    (b) authorise striking the caption and KSBJ routes from the check method and **extending the cadence to monthly**, on the ground that a page frozen for six weeks is not worth a weekly fetch; or
+    (c) close WATCH-002 outright, on the ground that PROP-2026-08-14-033 now carries the same content into the ordinary review cycle and the only thing this watch still tracks is the audit question, which belongs to the INTEGRITY FLAG rather than to a content watch.
+  Not recommended: **Continue unchanged.** Six identical results is the evidence that weekly checking has stopped being informative.
+
+STALE-WATCH-FLAG:
+  Item: WATCH-003 (Rohr — "The Beatitudes: Week Two: Weekly Summary", PROP-2026-07-19-001)
+  Checks completed: 6
+  Watching since: 2026-07-21
+  Condition: Tom records an explicit disposition for PROP-2026-07-19-001, or confirms its omission from the 2026-07-20 approval set was deliberate.
+  Assessment: **The condition is entirely human-dependent and no amount of checking can advance it.** The condition's own check method — look for a later decision file naming the proposal — is unsatisfiable while no review pass runs at all; `review/archive/` has stood at 17 files with nothing after 2026-08-08 for **17 days**. This is not a watch on a world event; it is a watch on a decision only Tom can make. As with WATCH-002 the substantive content is safe: PROP-2026-08-12-041 re-filed the same material on 2026-08-12 and is carded on `review/2026-08-24_review.html`.
+  Recommendation: **Escalate to Tom** — and note that WATCH-003 is not really a separate question from the INTEGRITY FLAG. The clean resolution is a single ruling on the flag: confirm the 2026-07-20 omission was deliberate and record a retroactive disposition in the decision archive (which closes WATCH-003 immediately), or declare it an incidental loss now remedied by the two re-filings (which also closes it). Either way the watch ends; leaving it open at weekly cadence only re-confirms the same absence.
+  Not recommended: **Cancel.** The audit question is real and unanswered; it should be *ruled on*, not dropped.
+
+**Common to both:** these two items are held open by a human dependency, not by a condition further checking can satisfy. Agent 16 will keep checking at the stated cadence until Tom rules, because it does not cancel or re-cadence unilaterally — but it records here that from 2026-08-25 onward each check is expected to add confirmation, not information.
 
 ---
 
@@ -4591,3 +4627,146 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-24.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-25
+
+**Run type:** Daily. **Both weekly checks were due and both ran.** Both active items advance to check count **6 — the stale threshold — and both now carry a STALE-WATCH-FLAG** (recorded in a new `## STALE FLAGS` section above the INTEGRITY FLAG, not buried in this log). Nothing resolved; no intake in any channel. One materially **good** change since yesterday: the review-page coverage gap is **closed**.
+
+**Scheduler:** fired on schedule. Yesterday's entry flagged that today's run was the one that mattered — it carried both weekly checks and both stale flags. It fired, and it did.
+
+**Intake Scans (all three channels):**
+- **Channel 1 (review-conditional):** `needs_review/` holds **1** file, unchanged since 2026-05-14 — `2026-04-21_carroll_singer-mindscape-351.md`, tagged `[TRACKED-16: 2026-05-05]`, tracked as WATCH-001, resolved 2026-05-12, and internally marked `status: superseded`. Tombstone, not live work. `grep -rL "TRACKED-16"` over the folder returns nothing: **zero untracked items.** `pending/` (**60** files) scanned for `CONDITIONAL` → **zero matches**. `review/archive/` unchanged at **17** files, nothing after `2026-08-08_decisions.md`, so no new CHANGE/CHECK/CONDITIONAL disposition can exist to intake.
+- **Channel 2 (agent-deferral):** **zero instances**, seventeenth consecutive empty run. Vault-wide grep for `DEFERRED-HYPOTHESIS` returns only the definitional homes and echoes: the agent definition, `architecture/assumptions.md` (+ 17 dated `.bak` copies, now including `2026-08-25-033913Z-pre-14eod`), the `wiki_narration.html` builds, this file, and `architecture/daily_sync/cowork_to_chat/2026-08-23_cowork_summary.md` (the 08-23 finding surfaced to Tom as decision item #3 — an echo, not intake). Per the 08-24 entry, the Channel-2 question is formally in front of Tom and this run neither re-derived it nor spent budget on it.
+- **Channel 3 (human-watch):** **zero.** Grep for `WATCH-REQUEST` returns the same definitional set; no instances in `inbox/` or `master/`.
+
+**Condition Checks:**
+- **WATCH-002 — CHECKED, condition NOT met. Count 5 → 6.** Source URL fetched (HTTP 200, 53.7 KB): `article:modified_time` still 2026-07-17T01:11:13+00:00 — **fifth consecutive check unchanged** — and Yoast still reports "Est. reading time: 1 minute", the decisive marker that no body text exists. No transcript, no show notes. Targeted web search returned no episode-specific result (only NTWrightPage index pages and unrelated Wright interviews). **KSBJ plain fetch deliberately not repeated** per the 08-18 settled finding; **YouTube captions for `vshC_TxwrVo` still tool-blocked** per the standing TOOLING NOTE. Half (a) ran in full; counter incremented.
+- **WATCH-003 — CHECKED, condition NOT met. Count 5 → 6.** `review/archive/` still **17** files, latest `2026-08-08_decisions.md`; no later disposition on PROP-2026-07-19-001 can exist. Grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/` and `inbox/`: the only hit is the `source_url` of the independent re-filing PROP-2026-08-12-041. Original file still absent from every proposals/ subfolder.
+
+**Stale Item Check — TWO FLAGS RAISED (first of this agent's operating history):**
+- **WATCH-002** — 6 checks, watching since 2026-07-21. Every route exhausted: source page frozen, Oneplace dead, Admirato catalogue-only, KSBJ client-rendered, YouTube tool-blocked. Recommendation **Escalate to Tom**, with three named options: paste the watch URL to unblock the caption route; extend cadence to monthly and strike the closed routes; or close the watch outright since PROP-2026-08-14-033 now carries the content into ordinary review. Explicitly **not** "continue unchanged."
+- **WATCH-003** — 6 checks, watching since 2026-07-21. Purely human-dependent; its check method is unsatisfiable while no review pass runs. Recommendation **Escalate to Tom**, and note it is not separable from the INTEGRITY FLAG — one ruling on the flag closes this watch either way. Explicitly **not** "cancel."
+- Full text in `## STALE FLAGS` above. Agent 16 recommends only; both items remain **WATCHING** at weekly cadence until Tom rules.
+
+**Watch List Status:**
+- Items checked: **2**
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: **2** (flagged, not cancelled)
+- New items added: 0
+- Items amended: 0
+
+**Review-page verification (`review/2026-08-24_review.html`) — THE COVERAGE GAP IS CLOSED:**
+- A new page was generated **2026-08-24 04:37** — the first since 08-18, and the item that has topped the "open for Tom" list for two runs.
+- Programmatic reconciliation of card IDs against `pending/` front-matter `proposal_id`s: `const TOTAL = 60`, **60** `id="card-…"` elements, **60** pending files, **60** pending `proposal_id`s. `pending − carded` is **empty**; `carded − pending` is **empty**. **Exact coverage, zero phantoms, zero strandings.**
+- The six formerly-uncarded 08-23 filings are all carded, including **`PROP-2026-08-23-002`** (Wolfram × McGilchrist Ralston debate recording), the item that can lift the five-triplet evidence gate at `flags/for_pattern_detector.md:482`. Both WATCH-002's and WATCH-003's re-filed twins (PROP-2026-08-14-033, PROP-2026-08-12-041) are carded too.
+- **A complete review pass can now be run from a page that covers the whole queue.** That single action would move the Wolfram gate, both watch twins, and 17 days of accumulated proposals at once. It remains the only thing standing between the current state and the resolution of most of what is flagged below.
+
+**Notes:**
+
+- **REVIEW-GAP — seventeen days, but the blocker has changed character.** `pending/` **60** (flat since yesterday), `approved/` 301, `denied/` 1, `needs_review/` 1. Last recorded disposition **2026-08-08**. For two runs the obstacle was that no usable page existed; **as of 2026-08-24 it does.** The gap is now purely a matter of running the pass. Not Agent 16's to resolve, and still the whole of the operational risk — but it is now a one-step risk rather than a two-step one.
+- **INTEGRITY FLAG — unchanged: live-loss half CLOSED, audit half open (carried from 2026-07-21), and today's stale flags point directly at it.** Both 07-20 casualties are back in the queue via independent re-filings and both are carded on the current review page. The open question is *why* two files left `pending/` with no disposition recorded and no file surviving. **WATCH-003 cannot close without a ruling on this, and WATCH-002's audit half likewise.** As predicted on 08-23 and 08-24, the 6-check threshold has now forced the question rather than merely noting it.
+- **TOOLING NOTE — carried, exercised only in half.** `web_fetch` refuses both `/watch` and `/embed/` forms of `vshC_TxwrVo` as outside the provenance set; the KSBJ index (`https://ksbj.org/podcasts/between-beliefs`) is provenance-reachable but client-rendered and returns an empty body under plain fetch. One route needs a URL pasted by Tom; the other needs a JS-rendering fetch. Neither is obtainable by this agent under current tooling, and both now appear in WATCH-002's stale flag as decision options rather than as standing complaints.
+- **MAINTENANCE FLAG — carried, binding, and now the most overdue item on this list.** `watch_list.md` was **476,806 bytes** before this run's edits and is **493,720 bytes** after. ACTIVE ITEMS + STALE FLAGS + RESOLVED INDEX together are still under 3% of the file; the RUN LOG is everything else. This run again could not use the Read tool on the file and worked entirely through targeted shell greps and a scripted append. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, stale flags, the resolved index and the trailing ~14 days here. Reversible, no data lost. A pre-edit backup of today's file was written to the run sandbox before any modification.
+- **BUDGET NOTE (Rule 6):** this run **exceeded** the 4,000-token per-task budget, and the overrun is legitimate rather than incidental: two due checks with external retrieval, plus two stale flags that had to be written once and written properly. Surfaced, not hidden. No optional investigation was undertaken — the Channel-2 question was left with Tom, and the KSBJ route was left unrepeated exactly as the 08-18 run instructed.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 and WATCH-003, weekly cadence, → check count **7 each**. Both are flagged STALE as of today; if Tom rules on the INTEGRITY FLAG or runs a review pass before then, one or both may resolve or close instead. If WATCH-002's cadence is extended to monthly per the flag's option (b), its next check moves to **2026-09-25**.
+
+**Agent 16 Status:** Operational. Two checks due, two checks run, two conditions unmet, two stale flags raised, nothing resolved, no intake in any channel. Decision archive coverage current through **2026-08-08**; review-pass gap **17 days**; pending queue **60**, uncarded **0**. **Open for Tom, in priority order:** (1) **run the review pass** — `review/2026-08-24_review.html` now covers all 60 pending exactly, and disposing it moves the Wolfram evidence gate, both watch twins, and 17 days of backlog in one action; (2) **rule on the INTEGRITY FLAG** — today's two stale flags both terminate there, and a single ruling closes WATCH-003 and resolves WATCH-002's audit half; (3) choose among WATCH-002's three stale-flag options (paste the `vshC_TxwrVo` URL / extend to monthly / close the watch); (4) decide the **Channel 2** question, standing as morning-discussion item #3 since 08-23; (5) the run-log archival, now the most overdue maintenance item; (6) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-25.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-08-26
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, already carrying `[TRACKED-16: 2026-05-05]` and `status: superseded`. It is the WATCH-001 tombstone, not live work. **No untracked items in any channel.** No agent-deferral submissions, no new human-watch requests.
+
+**Condition Checks — NONE DUE.**
+- **WATCH-002** — next due **2026-09-01**. Not checked; count remains **6**, last checked 2026-08-25. Deliberately not run early: the 08-25 check established the source page has been byte-frozen since 2026-07-17 across five consecutive fetches, and an off-cadence sixth fetch of an unchanging page would consume a retrieval and inflate the counter without producing information.
+- **WATCH-003** — next due **2026-09-01**. Not checked; count remains **6**. Its check method is nonetheless *incidentally* satisfied as negative by today's queue scan: `review/archive/` is still **17** files with `2026-08-08_decisions.md` the latest, so no later disposition on PROP-2026-07-19-001 can exist. The only vault hit for the slug remains the independent re-filing `pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`. Observed, **not** logged as a check — the counter is not incremented on an unbudgeted incidental.
+
+**Stale Item Check:** Both flags raised 2026-08-25 stand unchanged — WATCH-002 and WATCH-003, 6 checks each, both **Escalate to Tom**, both still **WATCHING** at weekly cadence pending his ruling. No new flags; no item has crossed a threshold since yesterday.
+
+**Watch List Status:**
+- Items checked: **0** (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 2 (carried, not re-flagged)
+- New items added: 0
+- Items amended: 0
+
+**Review-page verification (`review/2026-08-25_review.html`) — COVERAGE STILL EXACT AT THE NEW QUEUE SIZE:**
+- A page was generated **2026-08-25 04:53**, one day after the 08-24 page. In the interval **14 new proposals** were filed (six of them in the minutes immediately before generation — three Friston, two Levin, one Wright), taking `pending/` from **60 → 74**.
+- Programmatic reconciliation of card IDs against `pending/` front-matter `proposal_id`s: `const TOTAL = 74`, **74** `id="card-…"` elements, **74** pending files, **74** pending `proposal_id`s, every file carrying an id. `pending − carded` is **empty**; `carded − pending` is **empty**. **Exact coverage, zero phantoms, zero strandings — the generator absorbed a 23% queue growth without dropping anything.**
+- Both watch twins (PROP-2026-08-14-033 for WATCH-002, PROP-2026-08-12-041 for WATCH-003) remain carded, as does `PROP-2026-08-23-002` (Wolfram × McGilchrist Ralston debate recording), the item that can lift the five-triplet evidence gate at `flags/for_pattern_detector.md:482`.
+- **The one-step conclusion from the last two runs holds and has gotten larger:** a single review pass over the current page would dispose 74 proposals, move the Wolfram gate, and put both watch twins in front of Tom at once.
+
+**Notes:**
+
+- **REVIEW-GAP — eighteen days, and now compounding measurably.** `pending/` **74** (+14 in one day), `approved/` 301, `denied/` 1, `needs_review/` 1. Last recorded disposition **2026-08-08**. The blocker is unchanged in character from yesterday — a usable, exactly-covering page exists; only the pass itself is missing — but the cost of the delay is no longer flat. Yesterday the gap was 60 proposals wide; today it is 74. Not Agent 16's to resolve, and still the whole of the operational risk.
+- **INTEGRITY FLAG — unchanged: live-loss half CLOSED, audit half open (carried from 2026-07-21).** Both 07-20 casualties are back in the queue via independent re-filings and both are carded. The open question remains *why* two files left `pending/` with no disposition recorded and no file surviving. WATCH-003 cannot close without a ruling on this; WATCH-002's audit half likewise. Both stale flags terminate here.
+- **TOOLING NOTE — carried, not exercised this run (nothing due).** `web_fetch` refuses both `/watch` and `/embed/` forms of `vshC_TxwrVo` as outside the provenance set; `https://ksbj.org/podcasts/between-beliefs` is provenance-reachable but client-rendered and empty under plain fetch. One route needs a URL pasted by Tom; the other needs a JS-rendering fetch.
+- **MAINTENANCE FLAG — carried, binding, and now demonstrably self-aggravating.** `watch_list.md` was **496,918 bytes** entering this run. ACTIVE ITEMS + STALE FLAGS + RESOLVED INDEX remain under 3% of the file; the RUN LOG is the other 97%+ — **106 run summaries** for **3** watch items in the item's entire history. This run again could not use the Read tool on the file and worked through targeted greps and a scripted append. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, stale flags, the resolved index and the trailing ~14 days here. Reversible, no data lost. Pre-edit backup written to the run sandbox before any modification. **Note the perverse incentive this creates:** on a zero-check day like today the run summary is the single largest thing Agent 16 wrote, and the file grew solely because the agent reported that it had nothing to do.
+- **BUDGET NOTE (Rule 6):** this run came in **under** the 4,000-token per-task budget. No due checks meant no external retrieval; the only discretionary work was the review-page reconciliation, which is cheap, scripted, and directly bears on whether the two stale watches can close.
+- Standing reminder for Tom (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 and WATCH-003, weekly cadence, → check count **7 each**. Both are STALE-flagged; if Tom rules on the INTEGRITY FLAG or runs a review pass before then, one or both may resolve or close instead of being checked. If WATCH-002's cadence is extended to monthly per its flag's option (b), its next check moves to **2026-09-25**.
+
+**Agent 16 Status:** Operational, idle by design. No checks due, none run, nothing resolved, no intake in any channel, no new flags. Decision archive coverage current through **2026-08-08**; review-pass gap **18 days**; pending queue **74**, uncarded **0**. **Open for Tom, in priority order:** (1) **run the review pass** — `review/2026-08-25_review.html` covers all 74 pending exactly, and the backlog grew 14 in the last day alone; (2) **rule on the INTEGRITY FLAG** — both stale flags terminate there, and one ruling closes WATCH-003 and resolves WATCH-002's audit half; (3) choose among WATCH-002's three stale-flag options (paste the `vshC_TxwrVo` URL / extend to monthly / close the watch); (4) decide the **Channel 2** question, standing since 08-23; (5) the run-log archival, now the most overdue maintenance item and visibly worsening; (6) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-26.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-08-27
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, carrying `[TRACKED-16: 2026-05-05]` and `status: superseded`. It is the WATCH-001 tombstone, not live work. **No untracked items.**
+- Channel 2 (agent-deferral): vault-wide grep for `DEFERRED-HYPOTHESIS` outside this file returns only the agent brief, `architecture/assumptions.md`, and the 08-23 cowork summary — **no submissions.** Channel 3 (human-watch): grep for `WATCH-REQUEST` likewise returns only definitional occurrences — **no new requests.**
+
+**Condition Checks — NONE DUE.**
+- **WATCH-002** — next due **2026-09-01**. Not checked; count remains **6**, last checked 2026-08-25. Not run early: the source page has been byte-frozen since 2026-07-17 across five consecutive fetches, and an off-cadence fetch would consume a retrieval and inflate the counter without producing information.
+- **WATCH-003** — next due **2026-09-01**. Not checked; count remains **6**. Incidentally satisfied as negative by today's queue scan: `review/archive/` still **17** files, latest `2026-08-08_decisions.md`, so no later disposition on PROP-2026-07-19-001 can exist; the only vault hit for the slug remains the independent re-filing `pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`. Observed, **not** logged as a check — counter not incremented on an unbudgeted incidental.
+
+**Stale Item Check:** Both flags raised 2026-08-25 stand unchanged — WATCH-002 and WATCH-003, 6 checks each, both **Escalate to Tom**, both still **WATCHING** at weekly cadence pending his ruling. No new flags; nothing has crossed a threshold.
+
+**Watch List Status:**
+- Items checked: **0** (none due)
+- Items resolved: 0
+- Items still watching: 2
+- Items stale: 2 (carried, not re-flagged)
+- New items added: 0
+- Items amended: 0
+
+**Review-page verification (`review/2026-08-26_review.html`) — COVERAGE EXACT FOR A FOURTH CONSECUTIVE DAY:**
+- Page generated **2026-08-26 04:42**. `pending/` **80** (+6 since the 08-25 page's 74). Reconciliation of card IDs against `pending/` front-matter `proposal_id`s: `const TOTAL = 80`, **80** `id="card-…"` elements, **80** pending files, **80** pending `proposal_id`s. `pending − carded` **empty**; `carded − pending` **empty**. **Zero phantoms, zero strandings.**
+- No 08-27 page had been generated at run time (this agent runs before the daily generator).
+- Both watch twins (PROP-2026-08-14-033, PROP-2026-08-12-041) remain carded.
+
+**Notes:**
+
+- **REVIEW-GAP — nineteen days.** `pending/` **80**, `approved/` 301, `denied/` 1, `needs_review/` 1. Last recorded disposition **2026-08-08**. Growth over the last three runs: 60 → 74 → 80. A usable, exactly-covering page exists; only the pass itself is missing. Not Agent 16's to resolve, and still the whole of the operational risk.
+- **EVIDENCE GATE — a condition of the kind this agent tracks was met yesterday, by another agent's route.** The five-triplet gate at `flags/for_pattern_detector.md:482` ("no transcript or recording exists") is now materially answerable: the McGilchrist agent filed **PROP-2026-08-26-001** and **-002** on 2026-08-26 reporting that both Ralston College symposium lectures were posted in full (YouTube `QNAC_QVY9BU`, published 2026-08-18), explicitly upgrading PROP-2026-08-05-001. Recorded here because it is precisely a deferred-condition resolution — it simply arrived through ordinary tradition-agent search rather than through a watch item. **No action by Agent 16:** the gate is the Pattern Detector's and the proposals are already in `pending/`, carded and awaiting the review pass. Worth Tom's attention as a second reason the pass is now high-value.
+- **INTEGRITY FLAG — unchanged: live-loss half CLOSED, audit half open (carried from 2026-07-21).** The open question remains *why* two files left `pending/` with no disposition recorded and no file surviving. WATCH-003 cannot close without a ruling; WATCH-002's audit half likewise. Both stale flags terminate here.
+- **TOOLING NOTE — carried, not exercised (nothing due).** `web_fetch` refuses both `/watch` and `/embed/` forms of `vshC_TxwrVo` as outside the provenance set; `https://ksbj.org/podcasts/between-beliefs` is provenance-reachable but client-rendered and empty under plain fetch.
+- **MAINTENANCE FLAG — carried, binding, worsening.** `watch_list.md` entered this run at **504,078 bytes** — past half a megabyte. ACTIVE ITEMS + STALE FLAGS + RESOLVED INDEX remain under 3%; the RUN LOG is the rest — **108** run summaries for **3** watch items lifetime. This run again could not use the Read tool on the file and worked through targeted greps and a scripted append. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, stale flags, the resolved index and the trailing ~14 days here. Reversible, no data lost. Pre-edit backup written to the run sandbox before any modification.
+- **BUDGET NOTE (Rule 6):** under the 4,000-token per-task budget. No due checks, so no external retrieval; discretionary work was limited to the scripted review-page reconciliation and the intake greps.
+- Standing reminder (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 and WATCH-003, weekly cadence, → check count **7 each**. Both are STALE-flagged; a ruling on the INTEGRITY FLAG or a review pass before then may resolve or close one or both instead. If WATCH-002's cadence is extended to monthly per its flag's option (b), its next check moves to **2026-09-25**.
+
+**Agent 16 Status:** Operational, idle by design. No checks due, none run, nothing resolved, no intake in any channel, no new flags. Decision archive coverage current through **2026-08-08**; review-pass gap **19 days**; pending queue **80**, uncarded **0**. **Open for Tom, in priority order:** (1) **run the review pass** — `review/2026-08-26_review.html` covers all 80 pending exactly, and it now also carries the two Ralston recording proposals that can lift the Pattern Detector's evidence gate; (2) **rule on the INTEGRITY FLAG** — both stale flags terminate there, and one ruling closes WATCH-003 and resolves WATCH-002's audit half; (3) choose among WATCH-002's three stale-flag options (paste the `vshC_TxwrVo` URL / extend to monthly / close the watch); (4) decide the **Channel 2** question, standing since 08-23; (5) the run-log archival, the most overdue maintenance item; (6) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-27.*

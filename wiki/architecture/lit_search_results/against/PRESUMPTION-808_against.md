@@ -101,3 +101,206 @@ Core proposition: **NO-CHALLENGE-FOUND, and externally corroborated in the item'
 **Moderate — and asymmetric, which I flag as the main weakness of this file.** Query families executed: the marker's documented semantics in the Claude Code CLI and Agent SDK; spontaneous/spurious interrupt reports; operator-versus-system attribution accuracy in telemetry and incident classification; audit-trail attribution standards (ALCOA+, audit-trail integrity practice); false-alarm burden, cry-wolf effect and alarm-management benchmarks (EEMUA 191, ISA-18.2). Register grep executed on seven keyword families with three overlapping premises read in full.
 
 **Not searched, or searched and not found:** the direction my brief nominated first — *evidence that operator-attribution in telemetry is usually accurate* — **returned nothing**, and I record that as a genuine empty result rather than substituting weaker material. **No primary regulator guidance was fetched** (FDA 21 CFR Part 11, MHRA GxP Data Integrity Guidance, NIST SP 800-92 log management) and all ALCOA+ content is at snippet level from secondary sources. **The Claude Code changelog was not fetched** and the vendor-acknowledgement claim is therefore unverified — this is the highest-value reachable gap. **Issues #35738, #21505 and claude-agent-sdk-typescript #366 were located but not fetched.** **Wickens et al. 2009 and the Bliss cry-wolf work were not fetched.** The 75.0% failure-attribution agreement figure that surfaced in search returns could not be traced to a source and **must not be cited by anyone downstream** until it is. A broader search is recommended, but the central finding of this file does not depend on it: the item's core claim is externally corroborated, and its framing problem is visible from the register alone.
+
+---
+
+--- CYCLE RE-SEARCH: 2026-08-25 (15b) ---
+
+  Date searched: 2026-08-25
+
+  Original item: PRESUMPTION-808
+
+  Trigger: 15d re-trigger (cycle 1, MONITOR-528). Challenge direction sought: unchanged — search
+    for evidence that `[Request interrupted by user]` **does** mean a user interrupted. 15d added
+    two specific instructions: pursue **vendor documentation, changelogs and public issue
+    trackers** for the marker's emission semantics, and **report what class of evidence was found
+    — vendor doc versus user report — because the distinction matters to the disposition.** 15c's
+    stated INCORPORATE condition was a vendor doc or changelog entry settling the semantics.
+
+  Search scope: Cycle 0's single highest-value outstanding action was "verify the Claude Code
+    changelog entry", which cycle 0 could only see at snippet level. **That action was completed
+    this cycle.** I fetched `https://code.claude.com/docs/en/changelog` in full (122,674 characters,
+    956 lines — the complete published changelog, which the vendor states is generated from
+    `CHANGELOG.md` in the `anthropics/claude-code` repository), and grepped the entire document for
+    interrupt-related entries, then resolved each hit to its enclosing `<Update label=… description=…>`
+    block to obtain **version number and release date** for every entry quoted below. Search
+    returns also surfaced four issue-tracker titles not previously recorded. **Not obtained this
+    cycle:** the full bodies of issues #35738, #21505, #58616, #70543, #32712 (titles only, from
+    search-result listings) — the session's WebSearch budget was exhausted (200/200,
+    session-globally) immediately after these returns and `web_fetch` is provenance-restricted, so
+    the issue pages could not be opened. Cycle 0's full read of issue #21477 stands.
+
+  Challenging evidence found: **No.** The disconfirmatory search failed again, and this time it
+    failed against **vendor documentation** rather than against user reports.
+
+  New sources this cycle:
+    1. **Anthropic, *Claude Code changelog*, version 2.1.218, released 22 July 2026.**
+       `https://code.claude.com/docs/en/changelog` — **FULL-TEXT, fetched and read in full this
+       cycle; version and date resolved from the enclosing changelog block.** Verbatim entry:
+       *"Fixed spurious \"[Request interrupted by user]\" messages after interrupted tool calls,
+       and an unpaired `tool_use` block left in the transcript when a tool aborted mid-response."*
+       **This is the vendor acknowledgement cycle 0 flagged as the single highest-value item to
+       verify, now verified at version-and-date level.** The word "spurious" is the vendor's own.
+       This moves claim (1) from *reported by users* to **confirmed by the vendor**, which is
+       exactly the transition 15c's INCORPORATE condition specified.
+    2. **Anthropic, *Claude Code changelog*, version 2.1.236, released 19 August 2026.** Same
+       source, **FULL-TEXT.** Verbatim entry: *"SIGTERM in print/SDK mode no longer records an
+       interrupted turn or synthetic tool denials before exiting; running commands are still
+       terminated and the process still exits with code 143."* **This entry is new to the register
+       and is more consequential for C2A2 than source 1.** Read plainly, it is a vendor statement
+       that **until 19 August 2026, a SIGTERM — a signal sent by a host, supervisor, orchestrator
+       or container runtime, never by a user typing — did record an interrupted turn**, and it did
+       so specifically in **print/SDK mode**, which is the mode unattended scheduled tasks run in.
+       That is precisely 14b's hypothesised "host restart, sandbox eviction, mount timeout or
+       session-lifetime cap" path, named by the vendor, in the exact execution mode C2A2 uses.
+    3. **Anthropic, *Claude Code changelog*, version 2.1.216, released 20 July 2026.** Same source,
+       **FULL-TEXT.** Two supporting entries. (a) *"Fixed cloud sessions dropping the in-flight
+       message when the session's container restarts mid-turn — the interrupted turn now re-runs on
+       resume instead of leaving the session unresponsive."* — a container restart producing an
+       interrupted turn, vendor-stated. (b) *"Fixed telemetry misreporting permission denials:
+       failed permission-prompt requests no longer count as user rejections, and user interrupts
+       are now reported as user aborts instead of rejections."* — an independent, vendor-confirmed
+       instance of **machine-caused events being recorded against the user** in this runtime's
+       telemetry. That is PREMISE-146 clause (3) reappearing, evidenced from the vendor rather than
+       from the safety-science literature.
+    4. **Anthropic, *Claude Code changelog*, version 2.1.218, released 22 July 2026.** Same source,
+       **FULL-TEXT.** *"Fixed an engine teardown race that could start and abandon a phantom turn,
+       and made input pushed after close consistently rejected."* A vendor-confirmed race producing
+       a turn that was started and abandoned with no user involvement.
+    5. **Issue-tracker titles located but bodies not fetched — SNIPPET-ONLY, recorded at that
+       level and no higher.** `anthropics/claude-code` #35738, *"[BUG] Spontaneous 'Request
+       interrupted by user' triggered by Linux kernel 6.17.0-19-generic"*; #58616, *"[BUG] claude
+       code for vs code Request interrupted by user"*; #70543, *"[BUG] Claude Code fabricated a
+       user interruption/instruction and preserved it after compaction"*; #32712, *"[BUG] SessionEnd
+       hook cancelled with 'Request interrupted by user' on Ctrl+C in Version 2.1.72"*; #21505,
+       *"[BUG] [Request interrupted by user] in claude.ai/code"*. Titles alone; **none of these
+       bodies was read this cycle** and they should not be leaned on. Their value is corroborative
+       only — the vendor changelog does all the work.
+
+  Strength of challenge: **None**
+
+  Summary: **The class of evidence is now vendor documentation, not user report, and that is the
+    reportable result.** Cycle 0 could establish only that users claimed spontaneous emission, on
+    one issue read in full plus a changelog claim it could see only in a search snippet. This
+    cycle fetched the complete published changelog and resolved the entries to versions and dates.
+    Anthropic's own release notes state, at 2.1.218 (22 July 2026), that *"spurious"* `[Request
+    interrupted by user]` messages after interrupted tool calls were a bug that was fixed —
+    the vendor's word, the vendor's document. **Claim (1) is settled affirmatively and 15c's
+    INCORPORATE condition is satisfied.** More important for C2A2, and new to the register: at
+    2.1.236 (19 August 2026) the vendor records that **SIGTERM in print/SDK mode** had until then
+    *"record[ed] an interrupted turn"*. A SIGTERM is not a user; print/SDK mode is how unattended
+    scheduled runs execute. There is now a named, vendor-documented, machine-originated path to an
+    interrupted-turn record in exactly C2A2's execution mode. **The one genuinely new analytic
+    result this cycle is a dating discriminator the item did not have.** The two documented paths
+    have different windows relative to the observed runs: the tool-call path (source 1) closed on
+    22 July 2026, roughly a fortnight *before* the three runs in question, whereas the SIGTERM path
+    (source 2) was still open on the observed date and did not close until 19 August 2026. So if
+    the fleet was running ≥2.1.218 at the time, the live candidate is the SIGTERM/print-mode path,
+    not the spurious-tool-call path — and the fleet can discriminate between them, and against a
+    genuine third path, simply by recording the CLI version alongside the marker. Everything cycle
+    0 said about the item's *framing* stands unchanged and I do not re-argue it: the evidential
+    inference ("no transcript contains a typed human message") remains non-discriminating because
+    it is a constant across a scheduled fleet; PREMISE-141 still holds this question open by name;
+    and the Critical grade still does not follow, because a run that stopped produced no
+    deliverable whichever agent stopped it, so the attribution question moves causes and not
+    counts.
+
+  Specific risks: [What breaks for C2A2 if the marker's plain reading is false — which it now
+    demonstrably is, at least in part.] (i) **Misattribution to an absent human, at vendor-confirmed
+    rates.** The fleet's only mute-cause signal names an agent who was not there, and this is no
+    longer a hypothesis. (ii) **A dated blind spot the register cannot currently see.** The
+    SIGTERM/print-mode path was open from before the observed runs until 19 August 2026; any
+    marker-terminated run in that window is a candidate machine stop, and because the fleet does
+    not record the CLI version, **it cannot currently sort its own history into the two regimes**.
+    That is a concrete, bounded, retrospectively-answerable question that will become unanswerable
+    if version data is never captured. (iii) **Unrepresentable uncertainty.** There is still no
+    field in which "the runtime stopped this" or "unknown" is a storable answer, so every reader
+    re-derives the ambiguity. (iv) **Over-correction into the mirror error**, unchanged from cycle
+    0 and now more live: with vendor confirmation in hand it becomes tempting to read *every* stop
+    as machine fault, which is the same non-discriminating inference with the sign flipped, and
+    PREMISE-141's symmetry is the guard. (v) **Verification-delay cost**, unchanged: reclassifying
+    the signal as untrustworthy without supplying a discriminator converts every mute run into an
+    investigation with no terminating artefact — except that the version-plus-changelog cross-check
+    below is now exactly such an artefact, which lowers this risk materially.
+
+  Mitigations available: (a) **Record the CLI version on every run.** This is the cheapest action
+    in the file and it is newly motivated: with the version and the changelog you can place any
+    marker-terminated run in the pre-2.1.218, 2.1.218-to-2.1.236, or post-2.1.236 regime and read
+    off which documented paths were available. It converts an open cause question into a lookup.
+    (b) **Add the attribution field** — `human` / `runtime` / `unknown`, defaulting to `unknown` —
+    unchanged from cycle 0 and still the correct schema fix. (c) **Route to PREMISE-141 rather than
+    minting**, unchanged: this cycle supplies the measurement PREMISE-141 named as open, which is
+    an update to that premise's scope limit, not a new Critical item. **PREMISE-141's load-bearing
+    clause should now be amended**: the cause is no longer wholly "UNDETERMINED", because at least
+    one machine-originated emission path is vendor-documented and datable. The symmetry guard
+    should survive the amendment; the blanket agnosticism should not. (d) **Check for a third
+    path.** If a marker appears with no user action on a build ≥2.1.236, both documented paths are
+    closed and something else is emitting it — that is a clean, falsifiable test and a reportable
+    bug. (e) **Do not re-open the 35.5% base rate on this ground**, unchanged: the count of
+    deliverable-less runs is invariant under attribution. (f) **Cross-reference an independent
+    record** — host uptime, sandbox eviction log, session-lifetime cap — at the marker's timestamp;
+    given source 2, a SIGTERM should leave a trace outside the transcript, and PREMISE-096 bars the
+    transcript from certifying itself.
+
+  STEELMAN:
+    Strongest counterargument: The changelog proves less about C2A2's three runs than its
+      decisiveness suggests. Both vendor entries describe **bugs that were fixed**, and fixed
+      *before or shortly after* the events at issue — the tool-call path closed on 22 July 2026,
+      about a fortnight ahead of the observed runs, so on any reasonably current build that path
+      was simply not available. The SIGTERM entry is narrower than it first reads: it concerns
+      print/SDK mode receiving a SIGTERM, which means **something sent the process a termination
+      signal**, and that something is usually a supervisor acting under a policy someone
+      configured — a timeout, a budget, a scheduler's own kill. Attributing such a stop to "machine
+      failure" rather than to a human-authored policy is its own misattribution, just displaced up
+      a level, and the register would be trading one unexamined actor for another. Nor does any of
+      this repair the item's evidential defect: "no transcript contains a typed human message" was
+      a constant when 14b wrote it and is a constant now, and the item is being rescued by evidence
+      it did not cite and did not look for. Finally, the register cost is unchanged. PREMISE-141
+      has held this question open by name since 5 August 2026 with a symmetric agnosticism that is
+      *still* the correct posture — the vendor evidence establishes that machine emission is
+      possible, not that it happened in these three cases, and "possible" is what PREMISE-141
+      already licensed. Promoting a rediscovery to Critical on the strength of a possibility the
+      register already recorded is the detection layer competing with itself for saturated closure
+      capacity, and the actual remedy remains what it was: an afternoon's schema change adding an
+      attribution field with `unknown` as its default.
+    What would need to be true for C2A2 to be safe: (1) The CLI version must be recorded per run,
+      because without it the vendor evidence is unusable on any specific case and the whole
+      advantage of this cycle is lost. (2) The terminal-state record must carry an attribution
+      field with `unknown` representable, so uncertainty is stored rather than re-derived. (3)
+      Downstream use must respect PREMISE-141's symmetry as amended: machine emission is
+      **documented as possible**, which is not the same as documented as actual, and a standing
+      bias toward "machine fault" is the same error as the standing bias toward "human stop". (4)
+      If a marker-terminated run is attributed to SIGTERM, the *sender* must be identified, because
+      a supervisor kill under a configured policy is a human-authored stop at one remove and should
+      not be filed as an exogenous machine fault.
+    How to test: (1) **The version cross-check — decisive, cheap, and newly available.** For each
+      of the three runs, recover the CLI version, then read off which documented emission paths
+      were open in that build. Under the null (a real user stop) the version is irrelevant and no
+      path was open. Under 14b's hypothesis the run sits in a window where at least one path was
+      open — and for the observed dates the SIGTERM/print-mode path was. **This is the test cycle 0
+      said did not exist; it exists now.** (2) **The third-path test.** Watch for a marker on a
+      build ≥2.1.236 with no user action. If one occurs, both documented paths are closed and a new
+      one exists; report it upstream. (3) **The independent-trace test**, unchanged from cycle 0:
+      cross the marker against host uptime, sandbox eviction records and session-lifetime caps. A
+      SIGTERM leaves a sender; a human stop does not. (4) **The invariance check on the base rate**,
+      unchanged and still unrun: recount deliverable-less runs with marker-terminated runs excluded
+      and then included. The counts should match, retiring the Critical grade. (5) **The register
+      test**, unchanged: run the PREMISE-105 duplication check against PREMISE-141, PREMISE-146 and
+      PREMISE-139 before minting.
+
+  Recommendation: **NO-CHALLENGE-FOUND** on the core proposition, now at **vendor-documentation
+    grade** rather than user-report grade — 15c's INCORPORATE condition is **satisfied**. The
+    framing objections from cycle 0 (non-discriminating evidence; rediscovery of PREMISE-141's open
+    clause; unsupported Critical grade) are unchanged and remain **PARTIALLY-CHALLENGED /
+    Moderate**. Recommended disposition: **amend PREMISE-141's scope limit** to record a documented,
+    datable machine-emission path and drop the blanket "UNDETERMINED", retaining the symmetry
+    guard; do not mint a new Critical item.
+
+  PROVENANCE: Origin: 14b · Chain: [14b → 15a, 15b → 15c → 15d → 15b] · Item type: PRESUMPTION
+    (unstated — surfaced by inference) · Transform: 15b re-searched on 15d re-trigger (cycle 1,
+    MONITOR-528); cycle 0's highest-value outstanding action (fetch and verify the vendor
+    changelog) **completed**, yielding two dated vendor entries and one new machine-emission path ·
+    Current status: core proposition NO-CHALLENGE-FOUND and vendor-corroborated; framing and grade
+    PARTIALLY-CHALLENGED (Moderate) · Evidence class this cycle: **VENDOR DOCUMENTATION**
+    (official changelog, fetched in full, entries resolved to version and release date), with
+    issue-tracker titles as SNIPPET-ONLY corroboration

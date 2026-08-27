@@ -128,3 +128,116 @@ SEARCH-FOR-PRESUMPTION-690:
     requesting unsatisfiable resources and are a closer institutional analogue;
     and the workflow-orchestration literature (Airflow sensors, task
     preconditions), both recommended as follow-up seams.
+
+--- CYCLE RE-SEARCH: 2026-08-25 (15a) ---
+  Date searched: 2026-08-25
+  Trigger: 15d re-trigger (MONITOR-502, cycle 1). Disposition-changer sought: is periodic
+    re-verification that a RECURRING task's environment still satisfies its STRUCTURAL
+    preconditions — plus a feedback channel by which the task reports "I am not runnable here"
+    and the schedule acts on it — a genuine gap in the literature, or a gap in one search?
+
+  Search scope: Searched scheduling/cron reliability, runtime environment drift, self-adaptive
+    systems (MAPE-K), runtime requirements monitoring, and precondition monitoring. Two seams the
+    2026-08-06 pass explicitly listed as NOT SEARCHED were opened this cycle and both produced
+    direct hits. ACCESSED IN FULL: the kubernetes-sigs/descheduler official repository
+    documentation (fetched, ~103k characters, read at the relevant plugin sections); the SEAMS 2011
+    AwReqs paper PDF (author-hosted at nemo.inf.ufes.br, downloaded and text-extracted, 54kB).
+    NOT ACCESSED: ACM Digital Library full text for the SEAMS paper (author copy used instead);
+    Slurm/PBS and Airflow-sensor literature still not searched in depth.
+    TOOL LIMIT DECLARED: the session's WebSearch budget (200 calls) was exhausted partway through
+    this cycle's work; the remaining retrieval was done by direct fetch and by Crossref/arXiv
+    bibliographic APIs. This limited breadth but not the two findings below, which were already in
+    hand.
+
+  Supporting evidence found: Yes
+
+  New sources this cycle:
+    1. kubernetes-sigs/descheduler, official project documentation (README, "Policy and Strategies"
+       section), github.com/kubernetes-sigs/descheduler — FULL-TEXT (fetched and read this cycle).
+       **THE FINDING THAT CLOSES THE NOVELTY-FLAG.** The descheduler runs periodically over an
+       ALREADY-SCHEDULED workload and evicts it when the environment has drifted out of the
+       workload's declared structural preconditions. Two plugins are exactly on point. Verbatim from
+       the documentation for `RemovePodsViolatingNodeAffinity`: node affinity of the
+       `requiredDuringSchedulingIgnoredDuringExecution` type "tells the scheduler to respect node
+       affinity when scheduling the pod but kubelet to ignore in case node changes over time and no
+       longer respects the affinity. When enabled, the strategy serves as a temporary implementation
+       of `requiredDuringSchedulingRequiredDuringExecution` and evicts pod for kubelet that no
+       longer respects node affinity." And for `RemovePodsViolatingNodeTaints`: "If the node's taint
+       is subsequently updated/removed, taint is no longer satisfied by its pods' tolerations and
+       will be evicted." The decisive detail is the NAME: the platform has a first-class vocabulary
+       term — `requiredDuringSchedulingRequiredDuringExecution` — for precisely the construct the
+       2026-08-06 pass reported as unlocated. The construct is not missing from the literature; it
+       is named, specified, and implemented, and the implementation is a separately-running periodic
+       control loop rather than something the scheduler does inline.
+    2. Souza, V.E.S., Lapouchnian, A., Robinson, W.N. & Mylopoulos, J. (2011). "Awareness
+       Requirements for Adaptive Systems." Proceedings of the 6th International Symposium on
+       Software Engineering for Adaptive and Self-Managing Systems (SEAMS 2011), pp. 60-69. DOI
+       10.1145/1988008.1988018 — FULL-TEXT (author-hosted PDF retrieved and read this cycle).
+       **THE FEEDBACK-CHANNEL HALF.** AwReqs are defined as "requirements that refer to other
+       requirements or domain assumptions and their success or failure at runtime," are "represented
+       in a formal language" and "can be directly monitored by a requirements monitoring framework"
+       (EEAT/ReqMon), and the paper gives "a process for designing full MAPE loops from a set of
+       AwReqs." The paper's own worked types include the simplest AwReq form — "the requirement to
+       which it refers should never fail" — and aggregate AwReqs specifying a success RATE over
+       attempts. This is a formalised, monitorable channel in which "the precondition I depend on is
+       not holding here" is a first-class, machine-readable statement that drives adaptation, which
+       is the second limb of the item's flagged gap.
+    3. Peer-reviewed self-adaptive-systems context located but NOT read in full this cycle (listed
+       for the follow-up seam, not relied on): "Runtime Verification of Self-Adaptive Systems with
+       Changing Requirements" (arXiv:2303.16530) and "A MAPE-K-Based Method for Architectural
+       Conformance Checking in Self-Adaptive Systems" (arXiv:2401.16382). SNIPPET-ONLY. Both are
+       preprints; neither is load-bearing here.
+
+  Strength of support: Strong — and stronger than the prior cycle, because the support now transfers
+    to the item's own case rather than stopping at the admission-control boundary condition.
+
+  Summary: The PARTIAL NOVELTY-FLAG raised on 2026-08-06 does not survive this cycle and should be
+    withdrawn. Both limbs of the construct the flag described as unlocated turn out to exist, to be
+    named, and to be in production. The Kubernetes descheduler is a periodic control loop whose
+    entire purpose is re-verifying that an already-admitted workload's environment still satisfies
+    the workload's declared structural preconditions, and evicting it when it does not — and the
+    platform's own vocabulary carries a term for the exact semantic
+    (`requiredDuringSchedulingRequiredDuringExecution`), which is the strongest possible evidence
+    that this is a recognised design point rather than an unexplored one. On the feedback-channel
+    limb, Souza et al.'s Awareness Requirements supply the peer-reviewed construct: requirements
+    that predicate over the success or failure of OTHER requirements and domain assumptions at
+    runtime, formalised, monitored, and wired into a MAPE loop. Between them these cover "the
+    schedule re-checks feasibility" and "the task can say it is not runnable and be heard." The
+    2026-08-06 file's own stated follow-up seams were where the answer was, which is the honest
+    reading: this was a gap in one search, not a gap in the literature. What survives from the prior
+    cycle unchanged is the substantive finding that cron-class schedulers have none of this by
+    default, and that C2A2's scheduler is in the cron class.
+
+  Caveats: (a) The descheduler is vendor/project documentation, not peer-reviewed research; its
+    standing is as DOCUMENTED PRACTICE and an existence proof, not as measured effect. No source
+    located reports how well this actually works. (b) The transfer is not perfect and the limit
+    should be stated: Kubernetes preconditions are labels, taints and topology — declarative,
+    machine-checkable properties of a node. C2A2's case is a SEMANTIC/structural impossibility
+    ("regen is impossible in this location"), which is only re-checkable if it is first made
+    declarative. That is a real gap, but it is an ENCODING gap in C2A2, not a gap in the literature,
+    and it is the same conclusion the prior cycle reached about utilisation bounds. (c) AwReqs
+    presuppose a requirements model to predicate over; C2A2 has prose contracts, so adopting the
+    construct requires writing the preconditions down first. (d) The SEAMS paper was read from an
+    author-hosted PDF, not the ACM DL copy; page range 60-69 is from the search index and the DOI is
+    confirmed, but I did not verify pagination against the ACM record. (e) WebSearch budget
+    exhaustion (declared above) means the Slurm/PBS and Airflow-sensor seams remain unopened; given
+    two independent direct hits, opening them would likely add confirmation rather than change the
+    reading.
+
+  Disposition-changer met: **YES — and it resolves AGAINST the novelty flag.** The construct is
+    prior art. The citation that meets it is the kubernetes-sigs/descheduler documentation naming
+    `requiredDuringSchedulingRequiredDuringExecution` and implementing it as
+    `RemovePodsViolatingNodeAffinity` / `RemovePodsViolatingNodeTaints`, together with Souza et al.
+    (2011) SEAMS pp. 60-69 for the runtime "this requirement is failing" channel. **The PARTIAL
+    NOVELTY-FLAG of 2026-08-06 should be RETRACTED.**
+
+  Recommendation: SUPPORTED — with the correction that what is supported is the EXISTENCE of the
+    construct in the literature and in practice, which withdraws the novelty claim while leaving the
+    prior cycle's substantive conclusion (cron-class schedulers do not have it; C2A2's does not have
+    it) intact and now better grounded. The remedy shape is named by the sources and is cheap: make
+    the precondition declarative, then re-check it on a period.
+
+  PROVENANCE: Origin: 14b · Chain: [14b → 15a, 15b → 15c → 15d → 15a] · Item type: PRESUMPTION
+    (unstated — surfaced by inference) · Transform: 15a re-searched on 15d re-trigger, opening the
+    two seams the prior pass listed as unsearched · Current status: SUPPORTED (Strong);
+    NOVELTY-FLAG RETRACTED
