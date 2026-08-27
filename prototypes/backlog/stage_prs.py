@@ -25,6 +25,9 @@ Usage:
   python3 stage_prs.py <vault_root> <prs_manifest.json> [OUT_DIR]
 """
 import json, os, re, sys, csv, collections
+import datetime
+
+TODAY = datetime.date.today().isoformat()
 
 VAULT = sys.argv[1]
 MANIFEST = sys.argv[2]
@@ -60,19 +63,41 @@ def next_prs_n(vault, trad):
     nums = [int(n) for n in re.findall(r'^PRS-(\d+)\s*:', txt, flags=re.M)]
     return (max(nums) + 1 if nums else 1), p
 
-def render(prs_n, cand, source_date, source_title, pid):
+# The attended pass authors the claim descriptor; code cannot. Emitted loud and
+# greppable so a block that never got vetted cannot land silently -- apply_prs.py
+# refuses to insert any block still carrying it.
+DESCRIBE = "<<DESCRIBE>>"
+
+def render(prs_n, cand, source_date, source_title, pid, today):
+    """One append block in the house format.
+
+    Three conventions this must match (checked against traditions/hawkins 2026-08-27):
+      - every live triplet carries `Label: P<n> (<pid>) - <claim descriptor>`; the
+        P-number equals the PRS number. Label is the PRIMARY compile record.
+      - `Date Added` is the INGEST date, never the source's publication date
+        (PRS-21: Date Added 2026-08-09, source 2026-02-25). Writing source_date here
+        was the same class of error as the capture-date pollution in prs_pub_years.
+      - `Source` is `<title> (<source_date>); <pid>`.
+      - `Evidence` is carried through only when the card supplies it; never invented.
+    """
     src = source_title
+    if source_date:
+        src = (src + " " if src else "") + "(%s)" % source_date
     if pid:
         src = (src + "; " if src else "") + pid
-    return (
+    out = (
         "PRS-%d:\n" % prs_n +
+        "  Label: P%d (%s) - %s\n" % (prs_n, pid, DESCRIBE) +
         "  Problem: %s\n" % cand.get("Problem", "") +
         "  Resource: %s\n" % cand.get("Resource", "") +
         "  Solution: %s\n" % cand.get("Solution", "") +
-        "  Date Added: %s\n" % source_date +
+        "  Date Added: %s\n" % today +
         "  Source: %s\n" % src +
         "  Confidence: %s\n" % cand.get("Confidence", "Medium")
     )
+    if cand.get("Evidence"):
+        out += "  Evidence: %s\n" % cand["Evidence"]
+    return out
 
 def main():
     units = json.load(open(MANIFEST))
@@ -109,7 +134,7 @@ def main():
         n = start_n
         for c in cands:
             out_lines.append(render(n, c, u["source_date"], u["title"],
-                                    u["proposal_ids"][0]))
+                                    u["proposal_ids"][0], TODAY))
             n += 1
         trad_next[trad] = n
 

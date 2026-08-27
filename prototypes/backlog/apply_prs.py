@@ -84,6 +84,23 @@ def slug_of(unit, vault):
     base = os.path.basename(f)[:-3] if f.endswith(".md") else os.path.basename(f)
     return re.sub(r'^\d{4}-\d{2}-\d{2}_', '', base)
 
+def dup_lines(u, uid, trad):
+    """One log line per SECONDARY proposal_id of a re-staged unit.
+
+    build_prs_manifest collapses same-source re-stagings into one unit keyed on the
+    richest file's proposal_id. Logging only that id leaves the others with no
+    ingestion line and no zero-yield decision, so ingest_ledger reports them OPEN
+    forever and build_prs_manifest re-stages them on every run. The DISPATCH requires
+    both ids be logged and the duplicate marked so it is never re-queued.
+    (Found 2026-08-27; 1 affected unit in the 85-unit manifest.)
+    """
+    out = []
+    for pid in u.get("proposal_ids", [])[1:]:
+        out.append("- %s (re-staging of %s, same source) \u2192 %s duplicate / "
+                   "no-net-new (+0)" % (pid, uid, trad))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("vault"); ap.add_argument("manifest")
@@ -119,6 +136,13 @@ def main():
             print("skip (no staged file):", uid); continue
         blocks = parse_staged(sp)
         keep = [(n, b) for (n, b) in blocks if n not in drops.get(uid, set())]
+        # An unvetted block still carries the stager's <<DESCRIBE>> placeholder in its
+        # Label. Landing one in the vault would put a placeholder in the primary compile
+        # record, so refuse the whole run rather than write a bad triplet (Rule 12).
+        unvetted = [n for (n, b) in keep if "<<DESCRIBE>>" in b]
+        if unvetted:
+            sys.exit("UNVETTED: %s %s still carries <<DESCRIBE>> in %s -- author the "
+                     "claim descriptors before applying." % (trad, uid, ",".join(unvetted)))
         trad_path = os.path.join(a.vault, "traditions", trad, "prs_triplets.md")
         cur = open(trad_path, errors="ignore").read()
         if keep and keep[0][0] + ":" in cur:
@@ -126,6 +150,7 @@ def main():
         slug = slug_of(u, a.vault)
         if not keep:
             log_lines.append("- %s %s → %s no-net-new / duplicate / citation-upgrade (+0)" % (uid, slug, trad))
+            log_lines.extend(dup_lines(u, uid, trad))
             qc_updates[(trad, uid)] = dict(triplets_emitted=0, first_prs_n="",
                                    notes="all candidates dropped (vet)")
             print("ZERO-emit (logged only):", trad, uid); continue
@@ -133,6 +158,7 @@ def main():
         first_n = keep[0][0]; last_n = keep[-1][0]
         rng = first_n if first_n == last_n else "%s..%s" % (first_n, last_n)
         log_lines.append("- %s %s → %s %s (+%d)" % (uid, slug, trad, rng, len(keep)))
+        log_lines.extend(dup_lines(u, uid, trad))
         qc_updates[(trad, uid)] = dict(triplets_emitted=len(keep), first_prs_n=first_n[4:],
                                notes=("dropped " + ",".join(sorted(drops[uid]))) if uid in drops else "")
         if a.apply:

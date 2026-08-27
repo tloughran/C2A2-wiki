@@ -40,11 +40,16 @@ def fm(txt, key):
 # scripts/test_ingest_ledger.py (17 assertions). The copy that used to live here was
 # blind to ASCII "->" log lines and to -SUPP-/-00x proposal ids (found 2026-08-26).
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "scripts"))
-from ingest_ledger import ingested_proposal_ids  # noqa: E402
+from ingest_ledger import ingested_proposal_ids, decided_zero_ids  # noqa: E402
 
 def main():
     log_txt = open(LOG, errors="ignore").read() if os.path.exists(LOG) else ""
     ingested = ingested_proposal_ids(VAULT, log_txt)
+    # Decided-zero is a DECISION, not a gap. '+0' / no-net-new / citation-upgrade /
+    # HELD / NO-OP cards were vetted and deliberately emitted nothing; re-staging them
+    # spends attended judgment on a call already made. Same subtraction survey() applies.
+    # Found 2026-08-27: 11 such cards were being re-queued.
+    decided_zero = decided_zero_ids(log_txt) - ingested
 
     # 1. all dated staging cards at the top level of inbox/
     files = [f for f in glob.glob(os.path.join(INBOX, "*.md"))
@@ -53,6 +58,7 @@ def main():
     # 2. un-ingested = proposal_id NOT already cited in a tradition file or
     #    routed by a PROCESSED_LOG ingestion line (filename test was unreliable).
     skipped_ingested = []
+    skipped_zero = []
 
     # 3. read each card; group by dedup key = source_url (fallback source_title)
     recs = []
@@ -62,6 +68,9 @@ def main():
                                          os.path.basename(f)) or [None, ""])[1]
         if pid in ingested:
             skipped_ingested.append(pid)
+            continue
+        if pid in decided_zero:
+            skipped_zero.append(pid)
             continue
         trad = fm(txt, "tradition_key") or os.path.basename(f).split("_")[1]
         url  = fm(txt, "source_url")
@@ -116,6 +125,7 @@ def main():
 
     by_trad = collections.Counter(u["tradition"] for u in units)
     print("skipped (already ingested) :", len(skipped_ingested))
+    print("skipped (decided +0/HELD)  :", len(skipped_zero))
     print("un-ingested staging files :", n_files)
     print("same-source re-stagings   :", n_restage,
           "->", [u["unit_id"] for u in units if u["restaged"]])
