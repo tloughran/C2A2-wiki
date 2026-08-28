@@ -369,14 +369,47 @@ matching everything, because match-everything turns every stale task into a pass
 
 ### Adding a check
 Append to `ARTIFACTS` in the script (owner, path, dotted JSON field holding an ISO date
-the producer wrote, max age). If a producer does not date itself, **make it** — do not
-fall back to mtime. Then extend the test; every assertion there is driven through its
-failure path.
+the producer wrote, max age, and an optional `failure_means` naming what a stale reading
+actually implies — rows without it keep the generic "the task may report a run and write
+nothing"). If a producer does not date itself, **make it** — do not fall back to mtime.
+Then extend the test; every assertion there is driven through its failure path.
+
+**One artifact can need more than one row.** `metabolism_data.json` now carries two, and
+they ask different questions: `_meta.generated` asks whether the FILE was rebuilt, and
+`_meta.t_max_event` asks whether the DATA moved. The gap between them is real and logged:
+on 2026-07-26 and again on 07-28 the regen ran on time onto a db that was 38 and 24 hours
+cold, and every freshness reading in the system said PASS. **"The producer ran" is never
+evidence that "the upstream is alive."** When an artifact is a window onto a live source,
+check the source's own newest timestamp too, not just the build stamp.
+
+(The August 2026 outage was a *different* shape and is not the case for this row: there
+the regen died too — `_meta.generated` jumps 08-12 to 08-24 — so the artifact gates were
+correctly RED and simply unread. `publish_metabolism.sh` refused to publish on 08-16 at
+57h and on 08-23 at 225h, and logged both. A gate that is red and unread is its own
+problem, and not one this row fixes.)
 
 ```bash
 python3 scripts/test_check_scheduler_health.py
 python3 scripts/check_scheduler_health.py --quiet
+python3 scripts/test_metabolism_monitor.py
 ```
+
+### Metabolism monitor: the artifact gate is not a health gate
+`scripts/metabolism_monitor.py` has always asserted freshness, and that assertion could
+never fail on a dead source. It compares the live db's mtime against the snapshot's build
+time, and the monitor rebuilds at the top of every run — so the difference only exceeds
+the limit when the db is **newer** than the build. A dead ingest drives it **negative**,
+and negative sails through a `>` test. The logbook records it verbatim, from the
+2026-07-04/05 writer outage: `snapshot lag behind db -37.94 h. Gate = 24h; PASS.`
+
+`assess_ingest()` asks the other question, off the data: newest event (`_meta.t_max_event`)
+and newest session START (`_meta.t_max`), carried separately because they fail apart — a
+couple of long-open sessions keep the event clock warm while session capture is dead.
+**WARN at 24h, FAIL at 48h**, chosen from 3150 sessions: p99.9 inter-session gap is 39.9h,
+and the only two gaps over 48h since 2026-05-07 were both real outages (55.1h on 07-03,
+111.5h on 08-19). A FAIL exits **3** — distinct from 1 (script error) — and only **after**
+every report is on disk, because a monitor that dies on the bad day deletes the evidence.
+`--regen-only` and `--dry-run` return the same code.
 
 ---
 

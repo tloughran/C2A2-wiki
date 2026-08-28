@@ -268,6 +268,19 @@ def main():
                                      "max_age_hours": 25}, NOW_UTC)[0],
                mod.FAIL)
 
+        # A row may carry its own failure_means; the generic wording must still
+        # apply to rows that do not, or adding one row rewrites another's message.
+        spec = artifact_file(tmp, {"_meta": {"generated": iso(
+            NOW_UTC - timedelta(days=5))}})
+        spec["failure_means"] = "the source has stopped producing"
+        code, line = mod.verdict_artifact(spec, NOW_UTC)
+        expect("failure_means reaches the reported line",
+               code == mod.FAIL and "the source has stopped producing" in line, True)
+        spec.pop("failure_means")
+        code, line = mod.verdict_artifact(spec, NOW_UTC)
+        expect("rows without failure_means keep the generic wording",
+               "may report a run and write nothing" in line, True)
+
         print("\nartifacts that MUST pass:")
         spec = artifact_file(tmp, {"_meta": {"generated": iso(
             NOW_UTC - timedelta(hours=8))}})

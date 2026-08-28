@@ -98,6 +98,24 @@ ARTIFACTS = [
         "max_age_hours": 25,
         "note": "reported a run every day 07-30..08-04 while this stayed 5 days old",
     },
+    {
+        # The row above asks whether the FILE was rebuilt. This one asks whether
+        # the DATA moved. They are independent, and during 2026-08-15..08-24 the
+        # first was green every morning while the second had been frozen for
+        # days: the regen ran on time, on a source that had stopped producing.
+        # Nothing here could see that, because nothing here read the data.
+        "owner": "openstory-ingest (data inside metabolism_data.json)",
+        "path": "wiki/metabolism/metabolism_data.json",
+        "field": "_meta.t_max_event",
+        "max_age_hours": 48,
+        "failure_means": (
+            "the newest OpenStory EVENT in the snapshot is that old, so the source "
+            "has stopped producing. Check the H-Drive mount and the ingest agents; "
+            "regenerating the artifact cannot move this date"
+        ),
+        "note": "48h chosen from 3150 sessions: p99.9 inter-session gap is 39.9h, and "
+                "the only two gaps over 48h since 2026-05-07 were both real outages",
+    },
 ]
 
 # Git debris left behind when a git process dies mid-write. Two kinds, one cause:
@@ -539,11 +557,13 @@ def verdict_artifact(spec, now_utc, repo=REPO):
 
     age_hours = (now_utc - generated).total_seconds() / 3600
     if age_hours > spec["max_age_hours"]:
+        means = spec.get("failure_means", "the task may report a run and write nothing")
         return FAIL, (
-            f"{owner}: {rel} says it was generated {generated:%Y-%m-%d %H:%M}Z, "
-            f"{age_hours / 24:.1f} days ago — the task may report a run and write nothing"
+            f"{owner}: {rel} {spec['field']} is {generated:%Y-%m-%d %H:%M}Z, "
+            f"{age_hours / 24:.1f} days ago — {means}"
         )
-    return OK, f"{owner}: {rel} generated {generated:%Y-%m-%d %H:%M}Z ({age_hours:.0f}h ago)"
+    return OK, (f"{owner}: {rel} {spec['field']} = {generated:%Y-%m-%d %H:%M}Z "
+                f"({age_hours:.0f}h ago)")
 
 
 # -------------------------------------------------------------------------- inputs

@@ -73,6 +73,40 @@ DEFAULT_DB = next((str(p) for p in _DB_CANDIDATES if p.exists()), str(_DB_CANDID
 
 MAX_STALE_H = 24.0  # Phase-0 done-gate: json must never be >24h behind the db.
 
+# --- Ingest liveness: a SECOND, differently-shaped question --------------------
+# assert_fresh() below asks "is the ARTIFACT a recent rebuild". It cannot answer
+# "is the SOURCE still producing", and the two failures look identical from the
+# outside. Worse, the artifact gate is structurally unable to fail on a dead
+# source: the monitor regenerates at the top of every run, so `generated` is
+# always ~now, and the lag term (db_mtime_live - generated) only goes POSITIVE
+# when the db is NEWER than the snapshot. A dead ingest drives it NEGATIVE, and
+# a negative number sails through a `> MAX_STALE_H` test. The logbook records
+# the failure in its own words, from the 2026-07-04/05 writer outage:
+#
+#     snapshot lag behind db -37.94 h. Gate = 24h; PASS.
+#
+# The db was 38 hours cold and the gate printed PASS. These thresholds ask the
+# question off the DATA instead, using the two timestamps the builder now emits.
+#
+# Empirical, measured over 3150 sessions, 2026-03-30..2026-08-24:
+#     median gap between session starts     0.52h
+#     p99                                  10.90h
+#     p99.9                                39.91h
+#     gaps > 48h since 2026-05-07: exactly two, both genuine outages
+#          55.1h  2026-07-03 -> 07-06   (OpenStory writer idle)
+#         111.5h  2026-08-19 -> 08-23   (H-Drive off the bus after a reboot)
+# 48h therefore fires on 2 of 2 known outages with 0 false positives across the
+# ~110 days since the sparse ramp-up era. 24h is WARN-only: it would have fired
+# ~12 times in 5 months, which a line of prose can carry and an exit code cannot.
+# A watchdog that cries wolf does not get read.
+INGEST_FAIL_H = 48.0
+INGEST_WARN_H = 24.0
+
+# Distinct from 1 (script/validation error): 3 means "I ran fine and the thing I
+# watch is broken". Reports are written BEFORE this is returned -- a monitor that
+# dies on the bad day deletes the evidence you came for.
+EXIT_INGEST_STALE = 3
+
 
 # --- Freshness ---------------------------------------------------------------
 def _parse_iso(s):
@@ -122,7 +156,87 @@ def assert_fresh(data, db_path):
         "db_mtime_meta": db_mtime_meta.isoformat() if db_mtime_meta else None,
         "db_mtime_live": db_mtime_live.isoformat() if db_mtime_live else None,
         "snapshot_lag_behind_db_h": round(lag_h, 2) if lag_h is not None else None,
+        # Named so nobody reads the number above as a health reading again. This
+        # gate is one-directional by construction: it can only fail when the db
+        # is NEWER than the build. See assess_ingest() for the other direction.
+        "gate": "artifact-only",
     }
+
+
+def assess_ingest(data, now=None):
+    """Is the SOURCE still producing? Judged from the data, never from an mtime.
+
+    Returns a verdict dict and NEVER exits. The caller writes every report first
+    and acts on the verdict last, so a stale-ingest day still leaves a census.
+
+    Two timestamps, because they fail apart:
+      _meta.t_max_event  newest event anywhere. Dead => nothing is arriving.
+      _meta.t_max        newest session START. Can freeze while long-open
+                         sessions keep t_max_event fresh -- which is exactly how
+                         the 2026-08 outage stayed invisible.
+    t_max_event >= t_max always, so event age is the tighter number; the case
+    only they can tell apart is "events yes, new sessions no".
+    """
+    now = now or datetime.now(timezone.utc)
+    meta = data.get("_meta", {})
+
+    def age_h(stamp):
+        t = _parse_iso(stamp)
+        if t is None:
+            return None
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+        return round((now - t).total_seconds() / 3600.0, 2)
+
+    event_h = age_h(meta.get("t_max_event"))
+    start_h = age_h(meta.get("t_max"))
+    v = {
+        "event_age_h": event_h,
+        "session_start_age_h": start_h,
+        "newest_event": meta.get("t_max_event"),
+        "newest_session_start": meta.get("t_max"),
+        "warn_h": INGEST_WARN_H,
+        "fail_h": INGEST_FAIL_H,
+    }
+
+    if event_h is None and start_h is None:
+        v["level"] = "FAIL"
+        v["message"] = ("the snapshot carries neither _meta.t_max_event nor _meta.t_max, "
+                        "so ingest liveness is UNKNOWN. Unknown is not OK.")
+        return v
+
+    if event_h is None:
+        # Pre-dates t_max_event (added 2026-08-24). Judge on starts, and say so
+        # rather than let a missing field read as a passing event check.
+        v["level"] = ("FAIL" if start_h > INGEST_FAIL_H
+                      else "WARN" if start_h > INGEST_WARN_H else "OK")
+        v["message"] = ("snapshot predates event-time tracking (no _meta.t_max_event); "
+                        "judged on session starts alone, newest %s (%.1fh ago). "
+                        "Rebuild for a true event reading." % (v["newest_session_start"], start_h))
+        return v
+
+    if event_h > INGEST_FAIL_H:
+        v["level"] = "FAIL"
+        v["message"] = ("NO OpenStory events for %.1fh (newest %s, limit %.0fh). The source is "
+                        "not producing -- this is an ingest outage, not a stale artifact, and "
+                        "regenerating cannot fix it." % (event_h, v["newest_event"], INGEST_FAIL_H))
+    elif start_h is not None and start_h > INGEST_FAIL_H:
+        v["level"] = "FAIL"
+        v["message"] = ("events are still arriving (newest %.1fh ago) but NO session has STARTED "
+                        "for %.1fh (newest %s, limit %.0fh). Session capture looks dead while "
+                        "long-open sessions keep the event clock warm." % (
+                            event_h, start_h, v["newest_session_start"], INGEST_FAIL_H))
+    elif event_h > INGEST_WARN_H or (start_h is not None and start_h > INGEST_WARN_H):
+        v["level"] = "WARN"
+        v["message"] = ("quiet upstream: newest event %.1fh ago, newest session start %.1fh ago "
+                        "(warn %.0fh / fail %.0fh). Not yet an outage; worth a look if it grows."
+                        % (event_h, start_h if start_h is not None else -1.0,
+                           INGEST_WARN_H, INGEST_FAIL_H))
+    else:
+        v["level"] = "OK"
+        v["message"] = ("newest event %.1fh ago, newest session start %.1fh ago (limit %.0fh)."
+                        % (event_h, start_h if start_h is not None else -1.0, INGEST_FAIL_H))
+    return v
 
 
 # --- Census (deterministic; the model does NOT touch this arithmetic) --------
@@ -169,7 +283,8 @@ def compute_census(data):
     sys_total_tok = sys_tot["in"] + sys_tot["out"] + sys_tot["cache_read"] + sys_tot["cache_creation"]
     census = {
         "as_of": datetime.now(timezone.utc).isoformat(),
-        "range": {"t_min": meta.get("t_min"), "t_max": meta.get("t_max")},
+        "range": {"t_min": meta.get("t_min"), "t_max": meta.get("t_max"),
+                  "t_max_event": meta.get("t_max_event")},
         "lanes": len(lanes),
         "runs": sys_tot["runs"],
         "system": {
@@ -271,7 +386,7 @@ def _fmt(n):
     return f"{n:,}" if isinstance(n, int) else ("n/a" if n is None else str(n))
 
 
-def render_logbook_entry(census, fresh):
+def render_logbook_entry(census, fresh, ingest):
     s = census["system"]
     L = []
     L.append("## %s - Phase 0 baseline census (descriptive)" % census["as_of"][:10])
@@ -280,14 +395,22 @@ def render_logbook_entry(census, fresh):
              "below is a descriptive or provisional fact about the signal as it stands. "
              "Interpretation is deferred to Phase 2+.")
     L.append("")
-    L.append("**Freshness** [descriptive]: snapshot generated %s (age %.2fh); live db mtime %s; "
-             "snapshot lag behind db %s h. Gate = %.0fh; PASS." % (
+    L.append("**Artifact freshness** [descriptive]: snapshot generated %s (age %.2fh); live db "
+             "mtime %s; db mtime minus snapshot = %s h. Gate = %.0fh; PASS. Read the sign: "
+             "POSITIVE means the db moved after the build (what this gate catches); NEGATIVE "
+             "means the db itself has not been written since, which this gate cannot fail on "
+             "at any magnitude. Ingest liveness is the line below, not this one." % (
                  fresh["snapshot_generated"], fresh["snapshot_age_h"],
                  fresh["db_mtime_live"], fresh["snapshot_lag_behind_db_h"], MAX_STALE_H))
     L.append("")
-    L.append("**Scope** [descriptive]: %s lanes, %s runs, %s -> %s." % (
-        _fmt(census["lanes"]), _fmt(census["runs"]),
-        (census["range"]["t_min"] or "")[:10], (census["range"]["t_max"] or "")[:10]))
+    L.append("**Ingest liveness** [descriptive]: %s -- %s" % (ingest["level"], ingest["message"]))
+    L.append("")
+    L.append("**Scope** [descriptive]: %s lanes, %s runs, %s -> %s (newest event); newest "
+             "session start %s." % (
+                 _fmt(census["lanes"]), _fmt(census["runs"]),
+                 (census["range"]["t_min"] or "")[:10],
+                 ((census["range"].get("t_max_event") or census["range"]["t_max"]) or "")[:10],
+                 (census["range"]["t_max"] or "")[:10]))
     L.append("")
     L.append("**Token metabolism, system totals** [descriptive]: "
              "out %s, in %s, cache-read %s, cache-creation %s, thinking %s (est.)." % (
@@ -361,13 +484,27 @@ def render_logbook_entry(census, fresh):
     return "\n".join(L)
 
 
-def render_findings(census, fresh, is_baseline):
+def render_findings(census, fresh, is_baseline, ingest):
     L = []
     L.append("# Metabolism Monitor - findings")
     L.append("")
     L.append("_Phase 0 (reliable signal + descriptive census). Generated %s. "
              "Ephemeral: this file is overwritten each run; durable learning lives in "
              "logbook.md._" % census["as_of"][:19])
+    L.append("")
+    # First section on purpose. Everything below describes a snapshot; this says
+    # whether the snapshot describes anything still happening.
+    L.append("## Ingest liveness: %s" % ingest["level"])
+    L.append("")
+    L.append("- %s" % ingest["message"])
+    L.append("- Newest event: `%s` (%s h ago). Newest session start: `%s` (%s h ago). "
+             "Warn at %.0fh, fail at %.0fh." % (
+                 ingest["newest_event"], ingest["event_age_h"],
+                 ingest["newest_session_start"], ingest["session_start_age_h"],
+                 ingest["warn_h"], ingest["fail_h"]))
+    if ingest["level"] == "FAIL":
+        L.append("- The run exits %d. This is the monitor working, not the monitor broken: "
+                 "the census below was still written." % EXIT_INGEST_STALE)
     L.append("")
     L.append("## New since last week")
     L.append("")
@@ -461,26 +598,39 @@ def main():
     with open(DATA_JSON) as fh:
         data = json.load(fh)
 
-    fresh = assert_fresh(data, args.db)        # FAILS LOUD if stale
+    fresh = assert_fresh(data, args.db)        # artifact gate; FAILS LOUD if stale
+    ingest = assess_ingest(data)               # source gate; reports, never exits here
+    _meta = data.get("_meta", {})
+
+    def _report_ingest():
+        """Print the source verdict on the stream that survives, and return the code."""
+        stream = sys.stderr if ingest["level"] != "OK" else sys.stdout
+        stream.write("[ingest] %s: %s\n" % (ingest["level"], ingest["message"]))
+        return EXIT_INGEST_STALE if ingest["level"] == "FAIL" else 0
 
     if args.regen_only:
-        print("[regen-only] freshness PASS: snapshot age %.2fh, lag behind db %s h (limit %.0fh)" % (
-            fresh["snapshot_age_h"], fresh["snapshot_lag_behind_db_h"], MAX_STALE_H))
-        print("  range %s -> %s; lanes=%d" % (
-            (data.get("_meta", {}).get("t_min") or "")[:10],
-            (data.get("_meta", {}).get("t_max") or "")[:10],
-            data.get("_meta", {}).get("lanes", 0)))
-        return
+        print("[regen-only] artifact gate PASS: snapshot age %.2fh, db mtime minus snapshot "
+              "%s h (limit %.0fh; only a POSITIVE excess can fail it)" % (
+                  fresh["snapshot_age_h"], fresh["snapshot_lag_behind_db_h"], MAX_STALE_H))
+        print("  range %s -> %s (newest event); newest session start %s; lanes=%d" % (
+            (_meta.get("t_min") or "")[:10],
+            ((_meta.get("t_max_event") or _meta.get("t_max")) or "")[:10],
+            (_meta.get("t_max") or "")[:10],
+            _meta.get("lanes", 0)))
+        sys.exit(_report_ingest())
+
     census = compute_census(data)
 
-    logbook_entry = render_logbook_entry(census, fresh)
+    logbook_entry = render_logbook_entry(census, fresh, ingest)
 
     if args.dry_run:
-        print("\n----- FRESHNESS -----")
+        print("\n----- ARTIFACT FRESHNESS -----")
         print(json.dumps(fresh, indent=2))
+        print("\n----- INGEST LIVENESS -----")
+        print(json.dumps(ingest, indent=2))
         print("\n----- LOGBOOK ENTRY (not written, --dry-run) -----\n")
         print(logbook_entry)
-        return
+        sys.exit(_report_ingest())
 
     MONITOR_DIR.mkdir(parents=True, exist_ok=True)
     is_baseline = not STATE_PATH.exists()
@@ -497,13 +647,14 @@ def main():
         fh.write("\n---\n\n")
 
     with open(FINDINGS_MD, "w", encoding="utf-8") as fh:
-        fh.write(render_findings(census, fresh, is_baseline))
+        fh.write(render_findings(census, fresh, is_baseline, ingest))
 
     state = {
         "phase": 0,
         "last_run": census["as_of"],
         "baseline_established": True,
         "freshness": fresh,
+        "ingest": ingest,
         "system_totals": census["system"],
         "yield": census["yield"],
     }
@@ -517,6 +668,10 @@ def main():
     print("  system out/in=%s cache-read-frac=%s thinking=%s" % (
         census["system"]["out_per_in"], census["system"]["cache_read_frac"],
         _fmt(census["system"]["thinking_tokens"])))
+
+    # Last, deliberately: every report above is on disk before the verdict is
+    # allowed to change the exit code.
+    sys.exit(_report_ingest())
 
 
 if __name__ == "__main__":
