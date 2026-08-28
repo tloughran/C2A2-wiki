@@ -169,7 +169,7 @@ anti-fabrication, color-is-not-an-identifier, brevity cap, English default.
   "echo": "only levin friston",
   "state": { "page_state": "sociogram.graph.default",     // knowledge-grain key, always present
              "tab": "sociogram",
-             "counts": {"visibleNodes": 412, "totalNodes": 4211},
+             "counts": {"passingNodes": 412, "inViewNodes": 37, "totalNodes": 4211},
              "filters": {"on": ["Levin","Friston"], "offCount": 27},
              "selected": null, "highlight": null,
              "knobs": {"layout": "discipline", "brightness": 0.5} },  // §12/F6: knobs are readable

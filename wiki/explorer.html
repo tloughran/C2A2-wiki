@@ -1694,7 +1694,7 @@ var VoiceGuide = (function() {
       var d = await describeView();
       if (d.supported === false) return 'supported:false';
       var c = d.state && d.state.counts, dom = d.state && d.state.dominant && d.state.dominant[0], sel = d.state && d.state.selected;
-      return 'nodes ' + (c && c.visibleNodes) + ' | dom ' + (dom && dom.label) + ' | sel ' + (sel ? (sel.kind === 'edge' ? 'edge' : (sel.label || sel.kind)) : 'none');
+      return 'nodes ' + (c && (c.passingNodes != null ? c.passingNodes : c.visibleNodes)) + ' inview ' + (c && c.inViewNodes) + ' | dom ' + (dom && dom.label) + ' | sel ' + (sel ? (sel.kind === 'edge' ? 'edge' : (sel.label || sel.kind)) : 'none');
     } catch (e) { return '(describe err: ' + e + ')'; }
   }
   function _gridLabel(t) { if (_test.gridBtn) _test.gridBtn.textContent = t; }

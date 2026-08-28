@@ -1175,6 +1175,10 @@ var BASE_EDGE_BUDGET = 2500;                 // edges visible at 1× zoom
 var currentZoomScale = 1.0;                  // updated by the zoom handler
 var _edgeRebuildTimer = null;                // debounces the expensive edge rebuild
 var _lastEdgePass = 0, _lastEdgeTotal = 0;   // budget-figures paired with the live in-view count
+// The viewport tallies, published so the state bus can report what is ON SCREEN.
+// Passing the filters and being in the viewport are DIFFERENT populations: zoom
+// into empty space and the first is unchanged while the second is zero.
+var _lastInViewNodes = null, _lastInViewEdges = null;
 
 function computeEdgeScore(e) {
   var deg = e.score_deg || 0;
@@ -1232,6 +1236,7 @@ function updateViewportCounts() {
     if ((x1<0&&x2<0) || (x1>w&&x2>w) || (y1<0&&y2<0) || (y1>h&&y2>h)) return;
     eIn++;
   });
+  _lastInViewNodes = nIn; _lastInViewEdges = eIn;
   var ns = document.getElementById('graph-status');
   if (ns) ns.textContent = nIn + ' in view · ' + activeNodes.length + ' / ' + nodeTotalForScope() + ' nodes';
   var es = document.getElementById('edge-status');
@@ -4499,12 +4504,24 @@ document.addEventListener('DOMContentLoaded', function() {
     var tEdges = (typeof _lastEdgeTotal !== 'undefined' && _lastEdgeTotal) ? _lastEdgeTotal
                : ((typeof edgeTotalForScope === 'function') ? edgeTotalForScope() : null);
     var pEdges = (typeof _lastEdgePass !== 'undefined') ? _lastEdgePass : null;
+    // Refresh the viewport tallies before reporting them. updateViewportCounts is
+    // pure arithmetic over the rendered set, and describe_view is pull-on-demand,
+    // so this cannot be hot. Without it a descriptor requested before the first
+    // zoom or pan would carry nulls.
+    try { updateViewportCounts(); } catch (e) {}
     return {
       tab: 'wiki_narration.html', title: 'Sociogram', view: 'graph', supported: true,
       state: {
         selected: selectedState(meta),
         filters: activeFilters(),
-        counts: { visibleNodes: vNodes, totalNodes: tNodes, passingEdges: pEdges, totalEdges: tEdges },
+        // passingNodes = passes the active filters. inViewNodes = actually on screen.
+        // These diverge the moment the user zooms or pans, and conflating them is
+        // how the guide came to report thousands of nodes on an empty screen
+        // (2026-08-28). The old name for passingNodes was `visibleNodes`, which
+        // invited exactly that reading; nothing outside this repo consumed it.
+        counts: { passingNodes: vNodes, inViewNodes: _lastInViewNodes,
+                  totalNodes: tNodes, passingEdges: pEdges,
+                  inViewEdges: _lastInViewEdges, totalEdges: tEdges },
         legend: dl.legend,
         dominant: dl.dominant
       },

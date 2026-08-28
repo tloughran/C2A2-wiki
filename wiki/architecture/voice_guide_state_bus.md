@@ -70,14 +70,25 @@ The shell (`explorer.html`) owns the guide; each tab is an iframe document. Two 
   "state": {
     "selected": { "id": "...", "label": "...", "kind": "node" },   // or null
     "filters":  { "traditions": ["Friston"], "structure": ["Master"] },
-    "counts":   { "visibleNodes": 3992, "totalNodes": 3992,
-                  "visibleEdges": 2500, "totalEdges": 107856 },
+    "counts":   { "passingNodes": 3992, "inViewNodes": 41, "totalNodes": 3992,
+                  "passingEdges": 2500, "inViewEdges": 96, "totalEdges": 107856 },
     "legend":   [ { "label": "Friston", "color": "#5A8EAF", "role": "tradition" } ],
     "dominant": [ { "label": "Friston", "color": "#5A8EAF", "share": 0.31 } ]
   },
   "capabilities": ["focus", "isolate", "search", "select_node"]
 }
 ```
+
+**`passing` and `inView` are different populations, and the difference is the whole
+point of carrying both.** `passingNodes` counts what survives the active filters;
+`inViewNodes` counts what is actually inside the viewport rectangle under the current
+zoom transform. Zoom into empty space and the first is unchanged while the second is
+zero. On 2026-08-28 the guide told a user thousands of nodes were visible on a screen
+he had zoomed to emptiness, because this field was named `visibleNodes` and carried the
+filter count. A consumer answering "what is on screen" MUST read `inViewNodes`.
+
+Note also that `visibleEdges` was documented here but never emitted; the implementation
+has always sent `passingEdges`. Both edge fields are now named for what they hold.
 
 `dominant` answers *"what is the big cluster?"* **truthfully** — share of currently-visible nodes
 per category, computed by the tab that actually knows. This is why grounded state beats vision: a

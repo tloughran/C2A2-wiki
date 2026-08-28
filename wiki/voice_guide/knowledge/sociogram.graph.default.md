@@ -80,6 +80,13 @@ option is reading whenever you name it; collapsing them is the error the labels 
   selection. **As of 2026-08-28 `describe_view` does not yet report them** -- so until it does,
   you cannot learn them by any route: say the axis exists, name what the options mean, and ask
   the user which one they have chosen. Do not infer it from what they seem to be describing.
+- **A count of what is ON SCREEN taken from the filter count.** The bus carries two
+  different node populations and they are not interchangeable: `passingNodes` is what
+  survives the active filters, `inViewNodes` is what is actually inside the viewport.
+  Zoom into empty space and the first does not move while the second goes to zero.
+  Answer "what is on screen" from `inViewNodes` only. (Until 2026-08-28 the filter count
+  was named `visibleNodes`, and the guide duly reported thousands of nodes visible on an
+  empty screen. Say which population you mean.)
 - **That a lifted node is "more connected" or "more important".** Height encodes whichever
   measure is selected, and several of them are inferred rather than authored. A tall node under
   an inferred measure is not evidence that anyone wrote a link.
