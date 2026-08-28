@@ -3,23 +3,23 @@
   "generated_from": "extract_agent_node_refs.py",
   "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
   "vault": "/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 4630,
+  "canonical_nodes": 4752,
   "roster_size": 33,
   "roster_captured": 26,
   "human_node": true,
-  "human_sessions": 954,
+  "human_sessions": 963,
   "unattributed_continuations": 115,
-  "sessions_mapped": 3343,
-  "events_scanned": 185365,
+  "sessions_mapped": 3365,
+  "events_scanned": 186411,
   "session_resolution": {
-   "no_label": 905,
-   "unmatched": 164,
+   "no_label": 913,
+   "unmatched": 165,
    "excluded": 43,
-   "exact": 2240,
+   "exact": 2253,
    "prefix": 149
   },
   "layers": {
-   "coref_substrate": 4506,
+   "coref_substrate": 4512,
    "coref_projected": 278,
    "flow": 52
   },
@@ -33,9 +33,9 @@
    "group": "agents",
    "kind": "human",
    "category": "human",
-   "sessions": 952,
-   "events": 76049,
-   "node_refs": 1415
+   "sessions": 961,
+   "events": 76560,
+   "node_refs": 1418
   },
   {
    "id": "agents/summa-qc-sweep",
@@ -44,8 +44,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 492,
-   "events": 31179,
+   "sessions": 494,
+   "events": 31301,
    "node_refs": 602
   },
   {
@@ -55,8 +55,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 486,
-   "events": 27195,
+   "sessions": 489,
+   "events": 27421,
    "node_refs": 457
   },
   {
@@ -66,8 +66,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 97,
-   "events": 7442,
+   "sessions": 98,
+   "events": 7485,
    "node_refs": 559
   },
   {
@@ -77,8 +77,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 97,
-   "events": 6385,
+   "sessions": 98,
+   "events": 6395,
    "node_refs": 308
   },
   {
@@ -121,9 +121,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 84,
-   "events": 3527,
-   "node_refs": 262
+   "sessions": 85,
+   "events": 3555,
+   "node_refs": 263
   },
   {
    "id": "agents/morning-walk-cowork-handoff",
@@ -132,8 +132,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 73,
-   "events": 2410,
+   "sessions": 74,
+   "events": 2414,
    "node_refs": 20
   },
   {
@@ -143,9 +143,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 92,
-   "events": 2363,
-   "node_refs": 112
+   "sessions": 93,
+   "events": 2380,
+   "node_refs": 113
   },
   {
    "id": "agents/c2a2-morning-chat-scrape",
@@ -154,9 +154,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 94,
-   "events": 1965,
-   "node_refs": 71
+   "sessions": 95,
+   "events": 1977,
+   "node_refs": 72
   },
   {
    "id": "agents/morning-system-health",
@@ -165,8 +165,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "infrastructure",
-   "sessions": 98,
-   "events": 1177,
+   "sessions": 99,
+   "events": 1186,
    "node_refs": 4
   },
   {
@@ -433,12 +433,12 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/06_fredrickson_agent.md",
-   "weight": 6
+   "weight": 8
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/07_stump_agent.md",
-   "weight": 6
+   "weight": 8
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -478,7 +478,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/14a_assumption_extractor_agent.md",
-   "weight": 17
+   "weight": 19
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -488,12 +488,12 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/15a_lit_search_for_agent.md",
-   "weight": 147
+   "weight": 161
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/15b_lit_search_against_agent.md",
-   "weight": 146
+   "weight": 160
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -543,7 +543,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 433
+   "weight": 435
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -648,7 +648,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/assumptions.md",
-   "weight": 120
+   "weight": 123
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -802,6 +802,11 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-08-26_chat_summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "architecture/daily_sync/cowork_to_chat/2026-04-15_cowork_summary.md",
    "weight": 5
   },
@@ -883,7 +888,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/decisions.md",
-   "weight": 81
+   "weight": 82
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -903,7 +908,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/for_lit_search.md",
-   "weight": 548
+   "weight": 565
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -1298,7 +1303,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/ASSUMPTION-1221_against.md",
-   "weight": 4
+   "weight": 6
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -1414,6 +1419,16 @@
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/ASSUMPTION-481_against.md",
    "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-486_against.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-487_against.md",
+   "weight": 1
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -2378,7 +2393,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/PRESUMPTION-808_against.md",
-   "weight": 10
+   "weight": 13
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4198,7 +4213,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/for/PRESUMPTION-808_for.md",
-   "weight": 10
+   "weight": 28
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4463,7 +4478,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_returns.md",
-   "weight": 449
+   "weight": 467
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4538,7 +4553,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/monitor_queue.md",
-   "weight": 239
+   "weight": 241
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4553,7 +4568,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/open_questions.md",
-   "weight": 66
+   "weight": 68
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4568,7 +4583,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/presumptions.md",
-   "weight": 140
+   "weight": 143
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4578,7 +4593,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/revision_flags.md",
-   "weight": 215
+   "weight": 216
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4643,7 +4658,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/validated_premises.md",
-   "weight": 672
+   "weight": 786
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4688,7 +4703,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "deferred/watch_list.md",
-   "weight": 73
+   "weight": 75
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4713,7 +4728,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "flags/for_pattern_detector.md",
-   "weight": 56
+   "weight": 63
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4723,7 +4738,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 68
+   "weight": 73
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -5332,8 +5347,283 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-08_levin_books-in-progress-writing-for-ais.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
+   "weight": 13
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity.md",
+   "weight": 10
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md",
+   "weight": 9
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_friston_integrative-complexity-gueststream.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_kastrup_agency-gods-point-of-view.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_kastrup_objective-vs-subjective-idealism.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_levin_defining-life-conversation.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_rohr_infinite-in-the-finite-sacramental-universe.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_rohr_way-of-early-church-weekly-summary.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_angels-narrowed-modern-imagination.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_ask-ntw-aug10-near-death-sonship-satan.md",
+   "weight": 7
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_ask-ntw-jul20-parables-divorce-isaiah53.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_ask-ntw-jul27-intermediate-state-corporate-faith-sabbath.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_gods-homecoming-four-gospels-deep-dive.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-12_wright_odyssey-homer-new-testament.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_levin_diverse-intelligence-talk-recording.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_levin_free-lunches-agential-gifts.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_levin_mental-health-tolchinsky-weiss-fields.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_mcgilchrist_hidden-forces-metacrisis.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_mcgilchrist_poetry-foundation-handful-of-dust.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_rohr_clare-mirror-theosis.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_rohr_humility-of-god-kenosis.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-14_wright_who-is-this-god-admirato.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_arkanihamed_hydrotope-water-wave-scattering.md",
+   "weight": 8
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_friston_active-inference-test-time-scaling-law.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_friston_adaptive-nature-confirmation-bias.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_friston_renormalising-generative-models.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_levin_causal-emergence-before-self-replicators.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_levin_limbomorphs.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
+   "weight": 7
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-23_rohr_true-self-absolute-reference-point.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_carroll_mindscape-365-cardoso-black-holes-special.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_friston_hippocampal-ripples-predicted-uncertainty.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_friston_let-there-be-information-cultural-evolution.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_friston_rosetta-stone-neurophenomenology.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_levin_flim-long-distance-bioelectric-patterns.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_levin_planarian-habituation-transcriptional-profiling.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_levin_trained-planaria-memory-through-regeneration.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_rohr_everything-belongs-type3-achiever-culture.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_rohr_everything-belongs-type4-suffering-outward.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_rohr_releasing-false-self-launching-pad.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_stump_good-of-forgiveness-oup-chapter.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_wright_ask-ntw-aug17-glory-trinity-dissent.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-25_wright_ask-ntw-aug24-desire-defence-industry-pilate.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-26_hawkins_multi-column-shared-learning-brainstorm.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "inbox/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 140
+   "weight": 144
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -5407,283 +5697,8 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-08_levin_books-in-progress-writing-for-ais.md",
-   "weight": 6
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
-   "weight": 13
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
-   "weight": 6
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity.md",
-   "weight": 10
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md",
-   "weight": 9
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_friston_integrative-complexity-gueststream.md",
-   "weight": 6
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_kastrup_agency-gods-point-of-view.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_kastrup_objective-vs-subjective-idealism.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_levin_defining-life-conversation.md",
-   "weight": 5
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_rohr_infinite-in-the-finite-sacramental-universe.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_rohr_way-of-early-church-weekly-summary.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_angels-narrowed-modern-imagination.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_ask-ntw-aug10-near-death-sonship-satan.md",
-   "weight": 7
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_ask-ntw-jul20-parables-divorce-isaiah53.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_ask-ntw-jul27-intermediate-state-corporate-faith-sabbath.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_gods-homecoming-four-gospels-deep-dive.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-12_wright_odyssey-homer-new-testament.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-13_fredrickson_keep-social-trial-registration.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_levin_diverse-intelligence-talk-recording.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_levin_free-lunches-agential-gifts.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_levin_mental-health-tolchinsky-weiss-fields.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_mcgilchrist_hidden-forces-metacrisis.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_mcgilchrist_poetry-foundation-handful-of-dust.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_rohr_clare-mirror-theosis.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_rohr_humility-of-god-kenosis.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-14_wright_who-is-this-god-admirato.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_arkanihamed_hydrotope-water-wave-scattering.md",
-   "weight": 8
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_friston_active-inference-test-time-scaling-law.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_friston_adaptive-nature-confirmation-bias.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_friston_renormalising-generative-models.md",
-   "weight": 5
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_levin_causal-emergence-before-self-replicators.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_levin_limbomorphs.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
-   "weight": 7
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md",
-   "weight": 6
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-17_hawkins_grid-place-cells-reference-frames.md",
-   "weight": 5
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-18_hawkins_tbs-plain-language-explainer.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_true-self-absolute-reference-point.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_carroll_mindscape-365-cardoso-black-holes-special.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_friston_hippocampal-ripples-predicted-uncertainty.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_friston_let-there-be-information-cultural-evolution.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_friston_rosetta-stone-neurophenomenology.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_levin_flim-long-distance-bioelectric-patterns.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_levin_planarian-habituation-transcriptional-profiling.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_levin_trained-planaria-memory-through-regeneration.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_rohr_everything-belongs-type3-achiever-culture.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_rohr_everything-belongs-type4-suffering-outward.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_rohr_releasing-false-self-launching-pad.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_stump_good-of-forgiveness-oup-chapter.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_wright_ask-ntw-aug17-glory-trinity-dissent.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-25_wright_ask-ntw-aug24-desire-defence-industry-pilate.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-26_hawkins_multi-column-shared-learning-brainstorm.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
-   "target": "inbox/proposals/pending/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/H-Admin-Interactive",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 192
+   "weight": 208
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -5693,17 +5708,17 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/cross_program_index.md",
-   "weight": 362
+   "weight": 374
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/incoming_dispatches.md",
-   "weight": 7
+   "weight": 10
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/paradigm_flags.md",
-   "weight": 133
+   "weight": 139
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -5778,7 +5793,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "review/archive/2026-07-20_decisions.md",
-   "weight": 5
+   "weight": 7
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -5978,17 +5993,17 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1557
+   "weight": 1573
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/wright/wiki.md",
-   "weight": 1008
+   "weight": 1024
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "vault/refs/index_summary.md",
-   "weight": 15
+   "weight": 17
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7612,6 +7627,51 @@
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_hawkins_multi-column-shared-learning-brainstorm.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 454
   },
@@ -7648,51 +7708,6 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/proposals/approved/2026-08-07_carroll_ama-august-2026.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-13_fredrickson_keep-social-trial-registration.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-26_hawkins_multi-column-shared-learning-brainstorm.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c282-wiki-agent-daily-run",
-   "target": "inbox/proposals/pending/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md",
    "weight": 1
   },
   {
@@ -7987,6 +8002,11 @@
   },
   {
    "source": "agents/c2a2-agent-carroll-arkanihamed",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-agent-carroll-arkanihamed",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 1
   },
@@ -8004,11 +8024,6 @@
    "source": "agents/c2a2-agent-carroll-arkanihamed",
    "target": "inbox/proposals/approved/2026-06-26_arkanihamed_amplitudes-2026-qmul.md",
    "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-carroll-arkanihamed",
-   "target": "inbox/proposals/pending/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
-   "weight": 6
   },
   {
    "source": "agents/c2a2-agent-carroll-arkanihamed",
@@ -8087,6 +8102,26 @@
   },
   {
    "source": "agents/c2a2-agent-hawkins-hoffman",
+   "target": "inbox/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-hawkins-hoffman",
+   "target": "inbox/2026-08-11_hoffman_traces-of-the-other-recording.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-hawkins-hoffman",
+   "target": "inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-agent-hawkins-hoffman",
+   "target": "inbox/2026-08-25_hawkins_tbt-2-0-arxiv-v2.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-agent-hawkins-hoffman",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 1
   },
@@ -8099,26 +8134,6 @@
    "source": "agents/c2a2-agent-hawkins-hoffman",
    "target": "inbox/proposals/approved/2026-07-28_hoffman_spacetime-headset-essay.md",
    "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-hawkins-hoffman",
-   "target": "inbox/proposals/pending/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-hawkins-hoffman",
-   "target": "inbox/proposals/pending/2026-08-11_hoffman_traces-of-the-other-recording.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-hawkins-hoffman",
-   "target": "inbox/proposals/pending/2026-08-18_hawkins_tbs-plain-language-explainer.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-agent-hawkins-hoffman",
-   "target": "inbox/proposals/pending/2026-08-25_hawkins_tbt-2-0-arxiv-v2.md",
-   "weight": 3
   },
   {
    "source": "agents/c2a2-agent-hawkins-hoffman",
@@ -8272,47 +8287,47 @@
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-08_levin_books-in-progress-writing-for-ais.md",
+   "target": "inbox/2026-08-08_levin_books-in-progress-writing-for-ais.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-10_friston_generative-modelling-nonequilibrium-statistical-mechanics.md",
+   "target": "inbox/2026-08-10_friston_generative-modelling-nonequilibrium-statistical-mechanics.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-10_levin_causally-emergent-alignment-hypothesis.md",
+   "target": "inbox/2026-08-10_levin_causally-emergent-alignment-hypothesis.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-10_levin_language-game-talking-to-non-human-systems.md",
+   "target": "inbox/2026-08-10_levin_language-game-talking-to-non-human-systems.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-10_levin_metabolic-problem-solving-homeostatic-feedback.md",
+   "target": "inbox/2026-08-10_levin_metabolic-problem-solving-homeostatic-feedback.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
+   "target": "inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-17_levin_cognition-all-the-way-down-2.md",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-levin-friston",
-   "target": "inbox/proposals/pending/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md",
    "weight": 2
   },
   {
@@ -8467,43 +8482,43 @@
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/PROCESSED_LOG.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-12_kastrup_agency-gods-point-of-view.md",
+   "target": "inbox/2026-08-12_kastrup_agency-gods-point-of-view.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-12_kastrup_objective-vs-subjective-idealism.md",
+   "target": "inbox/2026-08-12_kastrup_objective-vs-subjective-idealism.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
+   "target": "inbox/2026-08-12_mcgilchrist_virtue-and-beauty-indelible-mark.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-26_kastrup_goel-quantum-effects-living-systems.md",
+   "target": "inbox/2026-08-26_kastrup_goel-quantum-effects-living-systems.md",
    "weight": 6
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-26_kastrup_levin-mind-is-everywhere-2026.md",
+   "target": "inbox/2026-08-26_kastrup_levin-mind-is-everywhere-2026.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-26_mcgilchrist_ralston-lecture1-recording-released.md",
+   "target": "inbox/2026-08-26_mcgilchrist_ralston-lecture1-recording-released.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "target": "inbox/proposals/pending/2026-08-26_mcgilchrist_ralston-lecture2-recording-released.md",
+   "target": "inbox/2026-08-26_mcgilchrist_ralston-lecture2-recording-released.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/PROCESSED_LOG.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -8577,13 +8592,13 @@
   },
   {
    "source": "agents/c2a2-agent-stump-fredrickson",
-   "target": "inbox/proposals/denied/2026-06-22_levin_cognitive-glue.md",
-   "weight": 1
+   "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 2
   },
   {
    "source": "agents/c2a2-agent-stump-fredrickson",
-   "target": "inbox/proposals/pending/2026-08-13_fredrickson_keep-social-trial-registration.md",
-   "weight": 2
+   "target": "inbox/proposals/denied/2026-06-22_levin_cognitive-glue.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-agent-stump-fredrickson",
@@ -8667,23 +8682,23 @@
   },
   {
    "source": "agents/c2a2-agent-wolfram",
-   "target": "inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-wolfram",
-   "target": "inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
+   "target": "inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-agent-wolfram",
-   "target": "inbox/proposals/pending/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
    "weight": 4
   },
   {
    "source": "agents/c2a2-agent-wolfram",
-   "target": "inbox/proposals/pending/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
    "weight": 6
+  },
+  {
+   "source": "agents/c2a2-agent-wolfram",
+   "target": "inbox/proposals/approved/2026-08-05_mcgilchrist_ralston-wolfram-what-is-ai.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-agent-wolfram",
@@ -8792,63 +8807,63 @@
   },
   {
    "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-09_rohr_franciscan-mysticism-grace-and-connectivity.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-09_rohr_job-weekly-summary-joy-anyway.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-14_rohr_humility-of-god-kenosis.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-16_rohr_francis-clare-mysticism-weekly-summary.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-23_rohr_true-self-absolute-reference-point.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
+   "target": "inbox/2026-08-23_wright_loving-to-know-epistemology-of-love.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-wright-rohr",
    "target": "inbox/proposals/approved/2026-08-07_rohr_job-mystery-of-suffering-week31.md",
    "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-09_rohr_franciscan-mysticism-grace-and-connectivity.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-09_rohr_job-weekly-summary-joy-anyway.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-14_rohr_humility-of-god-kenosis.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_francis-clare-mysticism-weekly-summary.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_true-self-absolute-reference-point.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-agent-wright-rohr",
-   "target": "inbox/proposals/pending/2026-08-23_wright_loving-to-know-epistemology-of-love.md",
-   "weight": 2
   },
   {
    "source": "agents/c2a2-agent-wright-rohr",
@@ -8893,12 +8908,12 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/16_deferred_action_monitor_agent.md",
-   "weight": 284
+   "weight": 287
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "architecture/assumptions.md",
-   "weight": 3
+   "weight": 4
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -8908,22 +8923,22 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "deferred/resolved/2026-05-12_WATCH-001.md",
-   "weight": 73
+   "weight": 74
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "deferred/watch_list.md",
-   "weight": 832
+   "weight": 845
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "flags/for_pattern_detector.md",
-   "weight": 8
+   "weight": 12
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/2026-04-21_carroll_singer-mindscape-351.md",
-   "weight": 169
+   "weight": 171
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -9307,6 +9322,71 @@
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-08_levin_books-in-progress-writing-for-ais.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-14_wright_who-is-this-god-admirato.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_rohr_true-self-absolute-reference-point.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-23_wright_loving-to-know-epistemology-of-love.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
+   "target": "inbox/2026-08-26_mcgilchrist_ralston-lecture1-recording-released.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 4
   },
@@ -9314,66 +9394,6 @@
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md",
    "weight": 72
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-08_levin_books-in-progress-writing-for-ais.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md",
-   "weight": 5
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-14_wright_who-is-this-god-admirato.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_true-self-absolute-reference-point.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-deferred-action-monitor",
-   "target": "inbox/proposals/pending/2026-08-23_wright_loving-to-know-epistemology-of-love.md",
-   "weight": 1
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -9448,7 +9468,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "review/archive/2026-08-08_decisions.md",
-   "weight": 36
+   "weight": 37
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -9458,7 +9478,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 44
+   "weight": 45
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -9473,7 +9493,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/assumptions.md",
-   "weight": 59
+   "weight": 61
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -9902,6 +9922,11 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-08-26_chat_summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/daily_sync/cowork_to_chat/2026-04-13_cowork_summary.md",
    "weight": 6
   },
@@ -10228,7 +10253,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/decisions.md",
-   "weight": 209
+   "weight": 212
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10243,7 +10268,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/for_lit_search.md",
-   "weight": 330
+   "weight": 337
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10303,7 +10328,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/lit_search_returns.md",
-   "weight": 89
+   "weight": 91
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10438,12 +10463,12 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/monitor_queue.md",
-   "weight": 87
+   "weight": 88
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/open_questions.md",
-   "weight": 205
+   "weight": 208
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10453,12 +10478,12 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/presumptions.md",
-   "weight": 46
+   "weight": 48
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/revision_flags.md",
-   "weight": 98
+   "weight": 99
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10508,7 +10533,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/validated_premises.md",
-   "weight": 114
+   "weight": 118
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10538,7 +10563,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "deferred/watch_list.md",
-   "weight": 260
+   "weight": 264
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10637,52 +10662,52 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-11_hoffman_traces-of-the-other-recording.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 7
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "inbox/proposals/README.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-11_hawkins_thousand-brains-systems-peer-reviewed.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-11_hoffman_traces-of-the-other-recording.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-13_fredrickson_keep-social-trial-registration.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-18_hawkins_tbs-plain-language-explainer.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-evening-cowork-to-chat",
-   "target": "inbox/proposals/pending/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
    "weight": 1
   },
   {
@@ -10773,17 +10798,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15a_lit_search_for_agent.md",
-   "weight": 290
+   "weight": 298
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15b_lit_search_against_agent.md",
-   "weight": 297
+   "weight": 305
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15c_net_evaluator_agent.md",
-   "weight": 280
+   "weight": 284
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -10793,7 +10818,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/assumptions.md",
-   "weight": 51
+   "weight": 52
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -10828,7 +10853,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/for_lit_search.md",
-   "weight": 1516
+   "weight": 1537
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -13323,7 +13348,7 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/for/PRESUMPTION-808_for.md",
-   "weight": 1
+   "weight": 5
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -13493,12 +13518,12 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_returns.md",
-   "weight": 711
+   "weight": 722
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/monitor_queue.md",
-   "weight": 554
+   "weight": 558
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -13508,17 +13533,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/provenance_protocol.md",
-   "weight": 275
+   "weight": 278
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/revision_flags.md",
-   "weight": 481
+   "weight": 485
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/validated_premises.md",
-   "weight": 511
+   "weight": 518
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -13907,6 +13932,11 @@
   },
   {
    "source": "agents/c2a2-morning-chat-scrape",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-08-27_chat_summary.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c2a2-morning-chat-scrape",
    "target": "traditions/wright/wiki.md",
    "weight": 3
   },
@@ -13943,12 +13973,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14a_assumption_extractor_agent.md",
-   "weight": 268
+   "weight": 270
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14b_presumption_detector_agent.md",
-   "weight": 288
+   "weight": 290
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -13978,7 +14008,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/assumptions.md",
-   "weight": 811
+   "weight": 813
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -14773,7 +14803,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/decisions.md",
-   "weight": 490
+   "weight": 492
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -14788,7 +14818,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/for_lit_search.md",
-   "weight": 742
+   "weight": 744
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -15268,7 +15298,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/open_questions.md",
-   "weight": 618
+   "weight": 620
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -15278,12 +15308,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/presumptions.md",
-   "weight": 828
+   "weight": 830
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/provenance_protocol.md",
-   "weight": 217
+   "weight": 219
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -15387,27 +15417,27 @@
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
+   "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-self-awareness-daily",
    "target": "inbox/PROCESSED_LOG.md",
    "weight": 13
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "inbox/proposals/denied/2026-06-22_levin_cognitive-glue.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-self-awareness-daily",
-   "target": "inbox/proposals/pending/2026-08-13_fredrickson_keep-social-trial-registration.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-self-awareness-daily",
-   "target": "inbox/proposals/pending/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-self-awareness-daily",
-   "target": "inbox/proposals/pending/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
    "weight": 1
   },
   {
@@ -15892,7 +15922,117 @@
   },
   {
    "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-14_levin_diverse-intelligence-talk-recording.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-14_levin_mental-health-tolchinsky-weiss-fields.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_friston_active-inference-test-time-scaling-law.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_friston_adaptive-nature-confirmation-bias.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_rohr_francis-clare-mysticism-weekly-summary.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-17_hawkins_grid-place-cells-reference-frames.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-18_hawkins_tbs-plain-language-explainer.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
    "target": "inbox/hoffman_levin_transcript_raw.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-all-the-way-down-2.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-sewing-agent-weekly",
+   "target": "inbox/proposals/_pending_dupes_resolved/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md",
    "weight": 1
   },
   {
@@ -15964,116 +16104,6 @@
    "source": "agents/c2a2-sewing-agent-weekly",
    "target": "inbox/proposals/approved/2026-08-07_arkanihamed_correlators-simpler-than-wavefunctions.md",
    "weight": 4
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-08_wolfram_mc0001-machine-thinking-ruliological-insights.md",
-   "weight": 6
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-14_levin_diverse-intelligence-talk-recording.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-14_levin_mental-health-tolchinsky-weiss-fields.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_friston_active-inference-test-time-scaling-law.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_friston_adaptive-nature-confirmation-bias.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_francis-clare-mysticism-weekly-summary.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_franciscan-lectio-gazing-as-knowing.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_rohr_remaining-in-love-univocity-of-being.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-16_wright_gods-homecoming-ch6-paradise-intermediate-state.md",
-   "weight": 3
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_hawkins_grid-cell-module-overlap-brainstorm.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_hawkins_grid-place-cells-reference-frames.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_levin_bootstrapping-life-inspired-machine-intelligence.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_levin_cognition-all-the-way-down-2.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-17_levin_cognition-spaces-natural-artificial-hybrid.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-18_hawkins_tbs-plain-language-explainer.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_hebrew-prophets-weekly-summary.md",
-   "weight": 1
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-23_rohr_prophetic-consciousness-non-dual-seeing.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/c2a2-sewing-agent-weekly",
-   "target": "inbox/proposals/pending/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
-   "weight": 2
   },
   {
    "source": "agents/c2a2-sewing-agent-weekly",
@@ -16483,7 +16513,7 @@
   {
    "source": "agents/morning-system-health",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 222
+   "weight": 226
   },
   {
    "source": "agents/morning-system-health",
@@ -16503,7 +16533,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 342
+   "weight": 344
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -16568,7 +16598,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 350
+   "weight": 352
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -16583,7 +16613,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/incoming_dispatches.md",
-   "weight": 207
+   "weight": 209
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -16712,6 +16742,16 @@
   },
   {
    "source": "agents/reviewer-review-weekly",
+   "target": "inbox/2026-08-08_levin_books-in-progress-writing-for-ais.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/reviewer-review-weekly",
+   "target": "inbox/2026-08-14_rohr_clare-mirror-theosis.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/reviewer-review-weekly",
    "target": "inbox/proposals/_pending_dupes_resolved/2026-05-04_friston_phenotyping-agency-ai.md",
    "weight": 1
   },
@@ -16734,16 +16774,6 @@
    "source": "agents/reviewer-review-weekly",
    "target": "inbox/proposals/approved/2026-07-13_friston_receptor-density-ieeg-dcm.md",
    "weight": 2
-  },
-  {
-   "source": "agents/reviewer-review-weekly",
-   "target": "inbox/proposals/pending/2026-08-08_levin_books-in-progress-writing-for-ais.md",
-   "weight": 2
-  },
-  {
-   "source": "agents/reviewer-review-weekly",
-   "target": "inbox/proposals/pending/2026-08-14_rohr_clare-mirror-theosis.md",
-   "weight": 1
   },
   {
    "source": "agents/reviewer-review-weekly",
@@ -17603,7 +17633,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 145
+   "weight": 158
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -17613,12 +17643,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/cross_program_index.md",
-   "weight": 623
+   "weight": 635
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/paradigm_flags.md",
-   "weight": 224
+   "weight": 242
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -17718,7 +17748,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 89
+   "weight": 90
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -17743,12 +17773,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 2338
+   "weight": 2395
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/wiki.md",
-   "weight": 579
+   "weight": 594
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -17783,32 +17813,32 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-006 - Does God Change - Contemporary.md",
-   "weight": 10
+   "weight": 20
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-007 - The Beatific Vision - Contemporary.md",
-   "weight": 24
+   "weight": 29
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-008 - Does God Have a Name - Contemporary.md",
-   "weight": 10
+   "weight": 15
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-009 - What is Truth - Contemporary.md",
-   "weight": 8
+   "weight": 20
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-010 - What is Life - Contemporary.md",
-   "weight": 10
+   "weight": 22
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-011 - God's Love - Contemporary.md",
-   "weight": 11
+   "weight": 17
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -17818,7 +17848,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-013 - Predestination - Contemporary.md",
-   "weight": 18
+   "weight": 32
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -18133,7 +18163,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-076 - Timeless Delight - Contemporary.md",
-   "weight": 20
+   "weight": 29
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19398,7 +19428,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-076 - Timeless Delight.md",
-   "weight": 4
+   "weight": 5
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19898,7 +19928,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "master/cross_program_index.md",
-   "weight": 310
+   "weight": 317
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -19913,7 +19943,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/fredrickson/prs_triplets.md",
-   "weight": 83
+   "weight": 86
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -19923,7 +19953,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/friston/prs_triplets.md",
-   "weight": 119
+   "weight": 121
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -19963,7 +19993,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/levin/prs_triplets.md",
-   "weight": 70
+   "weight": 71
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -19993,7 +20023,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 88
+   "weight": 89
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -20003,7 +20033,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/stump/prs_triplets.md",
-   "weight": 111
+   "weight": 113
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -20018,12 +20048,12 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1553
+   "weight": 1571
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/wright/wiki.md",
-   "weight": 564
+   "weight": 573
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -20088,7 +20118,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-012 - The Certainty of God's Providence - Contemporary.md",
-   "weight": 7
+   "weight": 15
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -20098,7 +20128,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-014 - Is God Happy - Contemporary.md",
-   "weight": 31
+   "weight": 57
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21613,12 +21643,12 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-013 - Predestination.md",
-   "weight": 11
+   "weight": 13
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-014 - Is God Happy.md",
-   "weight": 14
+   "weight": 16
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22905,7 +22935,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-evening-cowork-to-chat",
-   "weight": 98
+   "weight": 99
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -22915,7 +22945,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-morning-chat-scrape",
-   "weight": 16
+   "weight": 17
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -23390,7 +23420,7 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/c2a2-deferred-action-monitor",
-   "weight": 15
+   "weight": 16
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -23750,7 +23780,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/c2a2-morning-chat-scrape",
-   "weight": 47
+   "weight": 48
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -24327,7 +24357,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/H-Admin-Interactive",
-   "weight": 24
+   "weight": 25
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -24507,7 +24537,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 282
+   "weight": 290
   }
  ]
 }
