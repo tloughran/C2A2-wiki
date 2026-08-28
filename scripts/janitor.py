@@ -1136,6 +1136,52 @@ def check_voice_knowledge_drift():
 
 # --- Orchestration -----------------------------------------------------------
 
+def check_ingest_ledger():
+    """Report approved proposals with no evidence of having been ingested.
+
+    Rule 5: the counting is deterministic, so code does it. This check only
+    surfaces the result. Definitions live in scripts/ingest_ledger.py -- in
+    particular that a '+0' / HELD / no-net-new outcome is a recorded DECISION,
+    not a gap, and is never reported here.
+
+    Why this exists: between 2026-06-30 and 2026-08-26 the backlog figure was
+    quoted as 315, then 158, then 99 -- all wrong -- because the only correct
+    test lived in a one-off script under prototypes/ that nothing ever called.
+    A correct measurement nothing calls is indistinguishable from one that does
+    not exist. This is the caller.
+
+    One finding per open proposal_id, not per file: the approved/ and top-level
+    staging copies are the same card and must not double-report.
+    """
+    import sys as _sys
+    scripts_dir = str(PROJECT_ROOT / "scripts")
+    if scripts_dir not in _sys.path:
+        _sys.path.insert(0, scripts_dir)
+    import ingest_ledger
+
+    data = ingest_ledger.survey(str(VAULT_DIR))
+    findings = []
+
+    seen = {}
+    for queue in ("approved", "staging"):
+        for row in data["queues"].get(queue, {}).get("open_files", []):
+            seen.setdefault(row["proposal_id"], row["file"])
+    for pid, path in sorted(seen.items(), key=lambda kv: kv[1]):
+        findings.append(Finding(
+            "ingest_ledger", path,
+            f"approved, no ingestion evidence ({pid})",
+            "info",
+        ))
+
+    for f in data["no_proposal_id"]:
+        findings.append(Finding(
+            "ingest_ledger", f,
+            "no proposal_id in frontmatter - cannot be judged ingested or open",
+            "warn",
+        ))
+    return findings
+
+
 ALL_CHECKS = [
     # (name, function, takes_apply_fix_arg, takes_name_index_arg)
     ("trailing_whitespace",     check_trailing_whitespace,   True,  False),
@@ -1153,6 +1199,7 @@ ALL_CHECKS = [
     ("tab_description_coverage", check_tab_description_coverage, False, False),
     ("count_drift",             check_count_drift,           False, False),
     ("voice_knowledge_drift",   check_voice_knowledge_drift, False, False),
+    ("ingest_ledger",           check_ingest_ledger,         False, False),
 ]
 
 
