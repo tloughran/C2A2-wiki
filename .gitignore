@@ -148,3 +148,18 @@ wiki/spike.html
 
 # Scheduled-commit detector output — local-only status log, like janitor/
 scheduler/
+
+# --- Machine debris, added 2026-08-28 ---
+# Lock corpses quarantined by the lock-recovery runbook. They are evidence for
+# check_scheduler_health's git-debris check, never repo content.
+_stale_locks/
+_to_delete/
+.tmp_metab/
+
+# Failure markers. Written by a producer on its own failure path, rm -f'd on
+# success. They are read by check_scheduler_health's FAILURE_MARKERS roster;
+# committing one would freeze a transient alarm into history.
+*.FAILED
+
+# One-off probes
+tcc probe.sh
