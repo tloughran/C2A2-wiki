@@ -1,0 +1,124 @@
+{
+  "start_here.default": [
+    {
+      "q": "What is the Start Here page?",
+      "a": "It is the front door to the C2A2 explorer. It asks three questions in order -- What's this, Who's who, So what -- and hands each to a page that answers it. Nothing here filters, draws, or computes; it is prose and doorways."
+    },
+    {
+      "q": "Where should I begin if I'm new?",
+      "a": "Start Here. Its first question is deliberately answered twice, by two doors that are a matched pair: the Saying lens asks what the thing says by being the shape it is, and the Doing lens names a structure and the function it makes possible. Neither is a summary of the other. I would read them in that order."
+    },
+    {
+      "q": "How do I get back to the beginning?",
+      "a": "Click the Start Here tab in the top bar any time -- it's always there."
+    },
+    {
+      "q": "What can I do from the Start Here page?",
+      "a": "Walk the three sections with pick, next and previous, read or summarise the one you are on, or go through a door: What's it saying, What's it doing, Who's who into the Sociogram, the review cards, or the Summa commentary."
+    }
+  ],
+  "sociogram.graph.default": [
+    {
+      "q": "What is the Sociogram?",
+      "a": "A force-directed graph of the RC Wiki knowledge base: nodes are wiki articles, edges are wikilinks, mentions and shared references. It shows the conceptual neighbourhoods of the thinker traditions and where they connect."
+    },
+    {
+      "q": "How many nodes are in the Sociogram?",
+      "a": "That number moves as the wiki grows, and the figure in the older help text is out of date -- so I will not quote one. Ask me to check the current view and I will read you what it actually reports."
+    },
+    {
+      "q": "Can I focus on one thinker?",
+      "a": "Yes -- use the tradition and category filters on the left to isolate a thinker's conceptual neighborhood, or just ask me to show it."
+    },
+    {
+      "q": "What do the edge controls do?",
+      "a": "They let you show or hide link types and adjust how strongly connected nodes attract each other."
+    },
+    {
+      "q": "What do the edge types mean?",
+      "a": "They distinguish wikilinks, mentions, and shared references, and whether a link crosses categories or stays within one."
+    },
+    {
+      "q": "What is a tradition filter?",
+      "a": "A checkbox that isolates one thinker's articles -- Levin, Friston, Hoffman, and so on -- so you can see their neighborhood."
+    },
+    {
+      "q": "What are the structure categories?",
+      "a": "Groupings like Master, Architecture, Agents, and others that organize the wiki by role rather than by thinker."
+    },
+    {
+      "q": "Can I hold the layout still?",
+      "a": "Yes -- use Hold Forces to freeze the graph, and Fit All to recenter everything in view."
+    }
+  ],
+  "sociogram.graph.node_selected": [
+    {
+      "q": "How do I read a specific article?",
+      "a": "Click any node and its article opens in the side panel. Click an edge instead and both endpoint articles show, one per panel."
+    },
+    {
+      "q": "What is this article and what can I do with it?",
+      "a": "The right panel shows the selected node's article as rendered markdown. You can read it, follow any wikilink inside it to traverse onward, pop the panel out, or dismiss it."
+    },
+    {
+      "q": "How do I get back to the full graph?",
+      "a": "Dismiss the panel and you are back to the plain graph. Clicking a different node or an edge re-selects rather than returning."
+    }
+  ],
+  "what_is_c2a2.default": [
+    {
+      "q": "What are the framings on the What's it doing page?",
+      "a": "Each names an arrangement of agents -- a structure -- and carries one line naming the function that arrangement makes possible. The list is open-ended and grows, so I would rather walk you through them than quote a total."
+    },
+    {
+      "q": "Why a set of framings rather than one definition?",
+      "a": "Because no single angle tells the whole story, and the page says exactly that in its own lede. They are a constellation, not a ranking, and none of them reduces to another."
+    },
+    {
+      "q": "What is the difference between a structure claim and a function claim here?",
+      "a": "The structure claim names what kind of arrangement the thing is; the function claim says what that arrangement makes possible, in the form 'so it can...'. Same two moves, every framing, without exception."
+    }
+  ],
+  "00_project": [
+    {
+      "q": "What is C2A2?",
+      "a": "Infrastructure that lets intellectual and spiritual traditions become visible, interact, and reveal themselves to each other -- a particle accelerator for lineages of thought. It is a concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a university where rival traditions of enquiry are made answerable to one another."
+    },
+    {
+      "q": "Why is it called an accelerator and detector?",
+      "a": "Two halves doing two jobs. The accelerator half brings traditions into contact; the detector half instruments what happens when they meet."
+    },
+    {
+      "q": "Which traditions are in it, and what do they argue about?",
+      "a": "Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed, Fredrickson, Stump, Rohr, Wright and Loughran. The questions that recur across programs are whether consciousness is substrate-independent, whether spacetime is fundamental, and the role of attention in constructing reality."
+    }
+  ],
+  "sociogram.graph.edge_selected": [
+    {
+      "q": "What does this connection mean, and why are these two linked?",
+      "a": "Clicking an edge shows both endpoint articles, one per panel, so you can see the two nodes a link connects and read why. It is a comparison view rather than a single-node reading."
+    },
+    {
+      "q": "How do I read each endpoint, or follow it further?",
+      "a": "Read them side by side, or click a wikilink inside either article to traverse onward. Selecting one endpoint drops you to the single-node view."
+    },
+    {
+      "q": "How do I get back to the full graph from here?",
+      "a": "Dismiss, and you are back to the plain graph. Clicking a different edge or node re-selects instead of returning."
+    }
+  ],
+  "what_is_saying.default": [
+    {
+      "q": "What does the Saying page mean by what it is saying?",
+      "a": "It asks what C2A2 communicates as a medium -- what it says by being the shape it is, before it carries any content at all. The worked example the page opens with is a Walkman, which said your music, yours alone, wherever you are, regardless of what was on the tape."
+    },
+    {
+      "q": "How is the Saying lens different from the Doing lens?",
+      "a": "The Saying lens abstracts from content and reads the thing as a medium. The Doing lens names a structure and the function that structure makes possible. They are a matched pair behind the same question, and neither is a summary of the other."
+    },
+    {
+      "q": "Why these readings, and what is the open card at the end?",
+      "a": "They are simultaneous readings of one thing, not a ranking and not a league table. The final card is open on purpose, and the page's own claim is that the list cannot close where it stands -- so the list is open-ended, and I would rather walk it with you than give you a number."
+    }
+  ]
+}
