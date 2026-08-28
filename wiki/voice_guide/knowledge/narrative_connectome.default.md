@@ -11,9 +11,9 @@ authored_at: 2026-08-28
 # Narrative Connectome -- PRS narratives in three dimensions (stable)
 
 ## Purpose
-A 3D connectome of the C2A2 traditions in which **each node is a Problem-Resource-Solution
-narrative** -- a small model of a problem a tradition faces, the resource it brings, and the
-solution that follows. Edges are shared resources, plus the **synergistic coils** where one
+A 3D connectome of the C2A2 traditions in which each node is a Problem-Resource-Solution
+narrative -- a small model of a problem a tradition faces, the resource it brings, and the
+solution that follows. Edges are shared resources, plus the synergistic coils where one
 tradition's solution answers another tradition's problem.
 
 The claim the view is making is that rival master sciences are emerging side by side: each

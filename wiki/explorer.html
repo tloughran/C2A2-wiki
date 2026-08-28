@@ -975,15 +975,15 @@ function showHelp() {
   var descriptions = {
     'community_interactions.html': {
       title: 'Community Interactions',
-      body: 'A scaffold for the four levels at which C2A2 understands community dialogue: Level One Intrapersonal Integration (within a single mind or agent), Level Two Small-Group Tradition (within a research collective), Level Three Inter-Tradition Dialogue (between mature members of different traditions), and Level Four Meta-Traditional Encounter (between whole systems of thought). Each level opens to its meaning, why it matters, and what artifacts are coming. The "Road Ahead" section renders the project\'s development pathways live from the single-source pathways index, so newcomers can see where C2A2 is heading and which pieces are on the ISME demo critical path. This section is an actively-developing scaffold — the shape of what is coming, not the finished architecture.'
+      body: 'A scaffold for the four levels of dialogue C2A2 cares about, and a live rendering of where the project is heading. It is the page that says what "interaction" is going to mean before the instruments exist to measure it.'
     },
     'community_explorer.html': {
       title: 'Community Explorer',
-      body: 'A force-directed graph of 156 curated real-world communities across eight types (Tradition-Constituted Enquiry, Practice, Contemplative, Civic, Scientific Frontier, Interdisciplinary Synthesis, Local, Professional Guilds). Edges are PRS similarity: communities tackling kindred problems sit close together. Filter by type, isolate the exemplary (Q3) set, click a node for its Problem-Resource-Solution narrative, click an edge to compare its endpoints. These 156 are a quality-curated subset of the full directory shown under the Cards sub-tab (1,006 communities); the "?" beside the Graph/Cards toggle explains how the two relate. This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'
+      body: 'A force-directed graph of hand-curated real-world communities, laid out so that communities working on kindred problems sit near each other. Proximity is not decorative: edges are PRS similarity -- shared Problem, Resource and Solution terms -- so two communities are pulled together because they are tackling comparable problems with comparable means. This is the *curated* half of a pair. The **Cards** view (`community_cards.default`) holds the much larger raw directory. The curated set is the quality-controlled subset carrying the richer taxonomy; the Cards set is a bulk import.'
     },
     'community/index.html': {
       title: 'Community Explorer (Cards)',
-      body: 'A faceted directory of 1,006 real-world communities — a bulk web-directory import plus the 156 curated C2A2 communities (which carry the richer 8-type taxonomy and are the set shown in the Graph). Each carries a Problem-Resource-Solution triplet. Filter by type, subtype, country, or source, and inspect each community\'s organizing-principle summary. Ask in plain language: the built-in engine answers from the dataset, AI-enriched via the shared broker. Note: this tool is under construction and was seeded from publicly-available web pages without the communities\' express consent. This is the Pathway-20 substrate: the C2A2 method applied to communities rather than thinkers.'
+      body: 'A faceted directory of real-world communities: a bulk web import together with the curated set that carries the richer taxonomy. Each card holds a Problem-Resource-Solution triplet and a short summary of the community\'s organizing principle. This is the wide, raw half of a pair. The curated graph (`community_explorer.default`) is the quality-controlled half.'
     },
     'wiki_narration.html': {
       title: 'Sociogram',
@@ -991,11 +991,11 @@ function showHelp() {
     },
     'summa_explorer.html': {
       title: 'Curriculum Tools',
-      body: 'The Summa 2026 curriculum dashboard — tracking daily synthesis progress through Austin Habash\'s 308-episode podcast series. Shows which days have been synthesized, coverage gaps, and the current continuous-day high-water mark. Each synthesis ties Habash\'s specific episode content to the RC Wiki thinker network.'
+      body: 'The Summa 2026 curriculum dashboard. It tracks daily synthesis progress through Austin Habash\'s Summa 2026 podcast series, showing which days have been synthesized, where the coverage gaps are, and the current continuous-day high-water mark. Each synthesis ties a specific episode\'s content back to the RC Wiki thinker network, which is what makes this a curriculum tool rather than a listening log: the series becomes an entry point into the tradition graph.'
     },
     'prs_3d.html': {
       title: 'Narrative (PRS) Connectome',
-      body: 'A narrative connectome of the C2A2 traditions: each node is an agentic PRS narrative — a small model (problem → resource → solution) — and edges are shared resources plus the synergistic coils that bridge traditions. Read it as the emergence of rival master sciences. Rotate and zoom to explore.'
+      body: 'A 3D connectome of the C2A2 traditions in which each node is a Problem-Resource-Solution narrative -- a small model of a problem a tradition faces, the resource it brings, and the solution that follows. Edges are shared resources, plus the synergistic coils where one tradition\'s solution answers another tradition\'s problem. The claim the view is making is that rival master sciences are emerging side by side: each tradition growing toward a full account of reality, and the coils showing where they already reach into one another.'
     },
     'rc_document_explorer.html': {
       title: 'RC Document Explorer',
@@ -1003,23 +1003,23 @@ function showHelp() {
     },
     'physics_explorer.html': {
       title: 'Physics Explorer',
-      body: 'A pedagogical companion to the C2A2 explorer: the arc of physics from Newton to contemporary thinkers, laid out as a teachable map — the physics-journey sibling of the RC Document Explorer, applying the same Problem-Resource-Solution (PRS) lens to a curriculum rather than a research dialogue. What\'s inside: Concepts — 75 undergraduate concepts across six topic areas, each card carrying the core formulas plus links to a real-world demonstration and a matching simulation; Physicists — six thinkers, each with a short summary and two triplet sets (concept-demonstration-simulation and the PRS triplets drawn from their work); and Progress — a chart that counts problems solved and resources introduced at each stage, sketching a quantified history of progress in physics by chaining PRS triplets. How to use it: switch Student/Instructor mode (top right) to change the depth shown on each card; use the left sidebar tabs (Concepts, Physicists, Progress) to move between views and filter concepts with the search box; and ask the built-in assistant a physics question, or uncheck "Ask AI" for plain keyword search — it runs on the shared C2A2 pipeline, no key needed.'
+      body: 'A teachable map of physics from Newton to the present, applying the same Problem-Resource-Solution lens the rest of C2A2 uses -- but to a curriculum rather than a research dialogue. That is the point of it: the lens is not special to philosophy or to contested traditions. It reads an undergraduate physics sequence just as well, which is evidence about the lens, not just a teaching tool.'
     },
     'commentary-explorer/commentary_explorer.html': {
       title: 'TRV Commentary',
-      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s "Three Rival Versions of Moral Enquiry" — the 1988 Gifford Lectures (in print from Notre Dame Press, 1990). A D3 force graph lays out the book\'s twelve structural divisions — Preface, Introduction, ten chapters — as chapter nodes, with satellite nodes for Tom Loughran\'s marginal commentary and PRS triplets, companion perspectives from Eleonore Stump and N. T. Wright, and Summa-day crossovers; the left-panel checkboxes show or hide each satellite group. 1,819 annotations across 156 scanned pages. Click a chapter to walk its pages in the breadcrumb-stacked right panel; the OCR pane highlights each annotation\'s anchor in the page text. Chapters IX and X are structural placeholders — the annotated scan covers through Chapter VIII. Third of three planned Education tools.'
+      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright.'
     },
     'heartbeat/index.html': {
       title: 'AI Heartbeat',
-      body: 'A Karpathy-style compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable; heartbeat runs fetch, dedupe, summarize, tag, and score relevance; a compiled markdown layer preserves durable synthesis, contradictions, and decisions; each community applies its own lens, roles, and consent rules; selected stars and rankings can flow to a shared graph. The Pulse view loads from a static digest snapshot (data/digest.json) with an embedded fallback, so the tab is GitHub Pages-safe with no live backend. Readers set a preference lens; magic-link sign-in syncs it across devices. Fourth Education tool.'
+      body: 'A compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable; scheduled runs summarize, tag and score them into the compiled view. The separation is the design: the record of what was said is never rewritten by the process that interprets it.'
     },
     'agents_tab.html': {
       title: 'Agent Map',
-      body: 'A live map of the autonomous agents running the C2A2 system — daily synthesis batch, QC sweep, commentary reviewer, nightly verification, and wiki update agents. Shows each agent\'s last run time, output status, and task schedule.'
+      body: 'A map of the autonomous agents that run the system: the daily synthesis batch, the QC sweep, the commentary reviewer, nightly verification, and the wiki update agents. For each it shows a last-run time, an output status, and a task schedule. This is the tab where the project watches itself work.'
     },
     'metabolism/metabolism_view.html': {
       title: 'Agent Metabolism',
-      body: 'The temporal pulse of the agent swarm (Pathway 29), built from OpenStory run telemetry and the vault git history. Three views: a per-agent Raster of runs over time (size = a chosen amplitude — events, tokens sent/returned, cache-read, duration); a Waveform of the system\'s daily pulse, stacked by category or shown on a log axis; and Returned-vs-sent tokens. The Yield axis is live — wikilinks, files, and PRS triplets per day from the vault\'s git history, a first real measure of useful output. PRS appears as two axes: first-seen (the git day an id first appeared) and articulated (its self-reported Date Added, when the work was actually done). The framing: schedule agents on demand with backpressure (an electron-transport-chain analogy), and treat the human+AI system\'s metabolism as something measurable.'
+      body: 'The temporal pulse of the agent swarm, built from run telemetry and the vault\'s git history. Its premise is that the metabolism of a combined human-and-AI system is something you can actually measure rather than merely describe.'
     }
   };
   var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };

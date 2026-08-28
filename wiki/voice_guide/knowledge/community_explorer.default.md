@@ -13,7 +13,7 @@ authored_at: 2026-08-28
 ## Purpose
 A force-directed graph of hand-curated real-world communities, laid out so that communities
 working on kindred problems sit near each other. Proximity is not decorative: edges are
-**PRS similarity** -- shared Problem, Resource and Solution terms -- so two communities are
+PRS similarity -- shared Problem, Resource and Solution terms -- so two communities are
 pulled together because they are tackling comparable problems with comparable means.
 
 This is the *curated* half of a pair. The **Cards** view (`community_cards.default`) holds the

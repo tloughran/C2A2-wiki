@@ -11,8 +11,8 @@ authored_at: 2026-08-28
 # TRV Commentary -- annotated reading of Three Rival Versions (stable)
 
 ## Purpose
-An annotated-reading explorer for Alasdair MacIntyre's *Three Rival Versions of Moral
-Enquiry* -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is
+An annotated-reading explorer for Alasdair MacIntyre's Three Rival Versions of Moral
+Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is
 laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom
 Loughran's marginal commentary, PRS triplets, and companion views from Eleonore Stump and
 N. T. Wright.

@@ -12,7 +12,7 @@ authored_at: 2026-08-28
 
 ## Purpose
 A compiled wiki over fast-moving AI developments, reframed for community AI education. Raw
-sources stay **immutable**; scheduled runs summarize, tag and score them into the compiled
+sources stay immutable; scheduled runs summarize, tag and score them into the compiled
 view. The separation is the design: the record of what was said is never rewritten by the
 process that interprets it.
 

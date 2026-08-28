@@ -12,7 +12,7 @@ authored_at: 2026-08-28
 
 ## Purpose
 A teachable map of physics from Newton to the present, applying the same
-Problem-Resource-Solution lens the rest of C2A2 uses -- but to a **curriculum** rather than a
+Problem-Resource-Solution lens the rest of C2A2 uses -- but to a curriculum rather than a
 research dialogue. That is the point of it: the lens is not special to philosophy or to
 contested traditions. It reads an undergraduate physics sequence just as well, which is
 evidence about the lens, not just a teaching tool.
