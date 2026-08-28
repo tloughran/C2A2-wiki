@@ -1,0 +1,792 @@
+{
+  "_meta": {
+    "schema": "commentary-apparatus/works_cited v1 (foundation Ref&Link §2)",
+    "generated": "2026-07-17",
+    "generator": "commentary-apparatus/build_works_cited.py",
+    "status": "foundation §7 step 1 COMPLETE; all 46 entries CONFIRMED by Tom 2026-07-17 (verified:true). 3RV print date = 1990 per Tom. Per-entry `note` fields retain original provenance; any 'verify vs source' actions they mention are now done.",
+    "grounding_inputs": [
+      "wiki/ACPA_2026_references.md",
+      "wiki/master/prs_pub_years.json",
+      "wiki/traditions/<all 15 tags>/wiki.md (cross-checked 2026-07-17)"
+    ],
+    "caveats": [
+      "wiki.md cross-check COMPLETE for all 15 roster tags 2026-07-17 (device re-auth cleared the mid-session 'untrusted' block). Cross-check confirmed every canonical pick; it added hoffman-2026-multiscale-logic and wolfram-2026-metaphysics-and-the-ruliad (recent named works), and confirmed the arkanihamed amplituhedron date convention (cite-key uses 2014 JHEP publication per ACPA; wiki cites the 2013 arXiv preprint).",
+      "`canonical:true` marks one designated primary work per roster thinker -- these are seed picks, NOT confirmed against the oracle/guardrail memories; Tom confirms.",
+      "Entries sourced only from prs_pub_years + domain knowledge (no ACPA line) carry a `note` flag and need vol/issue/pages/publisher verification against the source.",
+      "Scripture, Catechism, and council/magisterial texts are NOT enumerated here -- they are added per verbatim quote in the reconcile / quote-verification pass (foundation §6.5)."
+    ],
+    "cite_key_convention": "surname-year-shortslug, lowercase ASCII, hyphen-minus only; first-author key; collisions -a/-b",
+    "roster_tags": [
+      "levin",
+      "friston",
+      "hoffman",
+      "hawkins",
+      "mcgilchrist",
+      "fredrickson",
+      "carroll",
+      "arkanihamed",
+      "wolfram",
+      "kastrup",
+      "stump",
+      "wright",
+      "rohr",
+      "loughran",
+      "macintyre"
+    ],
+    "nonroster_reference_tags": [
+      "aquinas",
+      "kuhn",
+      "cunningham"
+    ]
+  },
+  "works": {
+    "levin-2022-cognitive-light-cones": {
+      "thinker": "levin",
+      "authors": [
+        "Michael Levin"
+      ],
+      "title": "Cognitive Light Cones as a Framework for Defining the Scope of Cognitive Science",
+      "container": "Topics in Cognitive Science",
+      "year": 2022,
+      "publisher": null,
+      "locator": "14: 3-14",
+      "work_type": "article",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(levin-PRS-03=2022)",
+      "note": "canonical pick (scope-of-cognition framework); confirm vs source"
+    },
+    "levin-2018-bioelectric-code": {
+      "thinker": "levin",
+      "authors": [
+        "Michael Levin",
+        "Christopher J. Martyniuk"
+      ],
+      "title": "The Bioelectric Code: An Ancient Computational Medium for Dynamic Control of Growth and Form",
+      "container": "BioSystems",
+      "year": 2018,
+      "publisher": null,
+      "locator": "164: 76-93",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": ""
+    },
+    "levin-2020-xenobots": {
+      "thinker": "levin",
+      "authors": [
+        "Michael Levin",
+        "and others"
+      ],
+      "title": "Xenobots: Implementing a Primitive yet Multicellular Developmental Program Using Computational Design",
+      "container": "PNAS",
+      "year": 2020,
+      "publisher": null,
+      "locator": "117, no. 4: 1853-1859",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "ACPA lists 'et al.'; confirm full author list vs source"
+    },
+    "friston-2010-free-energy-principle": {
+      "thinker": "friston",
+      "authors": [
+        "Karl J. Friston"
+      ],
+      "title": "The Free-Energy Principle: A Unified Brain Theory?",
+      "container": "Nature Reviews Neuroscience",
+      "year": 2010,
+      "publisher": null,
+      "locator": "11: 127-138",
+      "work_type": "article",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(friston-PRS-02=2010)",
+      "note": "canonical pick (FEP statement)"
+    },
+    "friston-2017-active-inference-process-theory": {
+      "thinker": "friston",
+      "authors": [
+        "Karl J. Friston",
+        "and others"
+      ],
+      "title": "Active Inference: A Process Theory",
+      "container": "Neural Computation",
+      "year": 2017,
+      "publisher": null,
+      "locator": "29, no. 1: 1-49",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "ACPA lists 'et al.'; confirm full author list vs source"
+    },
+    "friston-2019-free-energy-particular-physics": {
+      "thinker": "friston",
+      "authors": [
+        "Karl J. Friston"
+      ],
+      "title": "A Free Energy Principle for a Particular Physics",
+      "container": "arXiv:1906.10184",
+      "year": 2019,
+      "publisher": null,
+      "locator": "arXiv:1906.10184",
+      "work_type": "preprint",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "Markov-blanket paper; grounds the boundary-of-perspective claim"
+    },
+    "hoffman-2019-case-against-reality": {
+      "thinker": "hoffman",
+      "authors": [
+        "Donald D. Hoffman"
+      ],
+      "title": "The Case Against Reality: Why Evolution Hid the Truth from Our Eyes",
+      "container": null,
+      "year": 2019,
+      "publisher": "New York: W. W. Norton",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(hoffman-PRS-02=2019)",
+      "note": "canonical pick; matches foundation §2 example cite-key"
+    },
+    "hoffman-2015-interface-theory-perception": {
+      "thinker": "hoffman",
+      "authors": [
+        "Donald D. Hoffman",
+        "Manish Singh",
+        "Chetan Prakash"
+      ],
+      "title": "The Interface Theory of Perception",
+      "container": "Psychonomic Bulletin & Review",
+      "year": 2015,
+      "publisher": null,
+      "locator": "22, no. 6: 1480-1506",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": ""
+    },
+    "hoffman-2014-objects-of-consciousness": {
+      "thinker": "hoffman",
+      "authors": [
+        "Donald D. Hoffman",
+        "Chetan Prakash"
+      ],
+      "title": "Objects of Consciousness",
+      "container": "Frontiers in Psychology",
+      "year": 2014,
+      "publisher": null,
+      "locator": "5: 577",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "trace-logic / conscious-agent structure"
+    },
+    "hoffman-2026-multiscale-logic-collective-intelligence": {
+      "thinker": "hoffman",
+      "authors": [
+        "Donald D. Hoffman",
+        "Chetan Prakash"
+      ],
+      "title": "A Multiscale Logic of Collective Intelligence",
+      "container": "Thoughtforms Life",
+      "year": 2026,
+      "publisher": null,
+      "locator": "April 2026",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "hoffman/wiki.md (wiki cross-check 2026-07-17)",
+      "note": "recent piece named in the wiki (Thoughtforms Life = Levin's platform); confirm exact title/venue/date vs source"
+    },
+    "hawkins-2021-thousand-brains": {
+      "thinker": "hawkins",
+      "authors": [
+        "Jeff Hawkins"
+      ],
+      "title": "A Thousand Brains: A New Theory of Intelligence",
+      "container": null,
+      "year": 2021,
+      "publisher": "New York: Basic Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(hawkins-PRS-02=2021)",
+      "note": "canonical pick (cortical columns / voting)"
+    },
+    "hawkins-2004-on-intelligence": {
+      "thinker": "hawkins",
+      "authors": [
+        "Jeff Hawkins",
+        "Sandra Blakeslee"
+      ],
+      "title": "On Intelligence",
+      "container": null,
+      "year": 2004,
+      "publisher": "New York: Times Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(hawkins-PRS-01=2004)",
+      "note": "not in ACPA; author/publisher from domain knowledge -- verify vs source"
+    },
+    "mcgilchrist-2009-master-and-his-emissary": {
+      "thinker": "mcgilchrist",
+      "authors": [
+        "Iain McGilchrist"
+      ],
+      "title": "The Master and His Emissary: The Divided Brain and the Making of the Western World",
+      "container": null,
+      "year": 2009,
+      "publisher": "New Haven: Yale University Press",
+      "locator": "Expanded ed. 2019",
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(mcgilchrist-PRS-01=2009)",
+      "note": "canonical pick"
+    },
+    "mcgilchrist-2021-matter-with-things": {
+      "thinker": "mcgilchrist",
+      "authors": [
+        "Iain McGilchrist"
+      ],
+      "title": "The Matter with Things: Our Brains, Our Delusions, and the Unmaking of the World",
+      "container": null,
+      "year": 2021,
+      "publisher": "London: Perspectiva Press",
+      "locator": "2 vols.",
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(mcgilchrist-PRS-02=2021)",
+      "note": ""
+    },
+    "fredrickson-2013-love-2-0": {
+      "thinker": "fredrickson",
+      "authors": [
+        "Barbara L. Fredrickson"
+      ],
+      "title": "Love 2.0: Finding Happiness and Health in Moments of Connection",
+      "container": null,
+      "year": 2013,
+      "publisher": "New York: Hudson Street Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(fredrickson-PRS-02=2013)",
+      "note": "canonical pick (positivity resonance)"
+    },
+    "fredrickson-1998-what-good-positive-emotions": {
+      "thinker": "fredrickson",
+      "authors": [
+        "Barbara L. Fredrickson"
+      ],
+      "title": "What Good Are Positive Emotions?",
+      "container": "Review of General Psychology",
+      "year": 1998,
+      "publisher": null,
+      "locator": null,
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(fredrickson-PRS-01=1998)",
+      "note": "broaden-and-build classic; not in ACPA; add vol/issue/pages -- verify vs source"
+    },
+    "fredrickson-2025-loving-moments-strangers": {
+      "thinker": "fredrickson",
+      "authors": [
+        "Barbara L. Fredrickson",
+        "Taylor West"
+      ],
+      "title": "Why Loving Moments With Strangers Carry Lasting Benefits",
+      "container": "Greater Good Magazine",
+      "year": 2025,
+      "publisher": null,
+      "locator": "December 2025",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "RCT reported in a magazine; confirm underlying peer-reviewed source if cited in print"
+    },
+    "carroll-2016-big-picture": {
+      "thinker": "carroll",
+      "authors": [
+        "Sean Carroll"
+      ],
+      "title": "The Big Picture: On the Origins of Life, Meaning, and the Universe Itself",
+      "container": null,
+      "year": 2016,
+      "publisher": "New York: Dutton",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(carroll-PRS-02=2016)",
+      "note": "canonical pick (poetic naturalism)"
+    },
+    "carroll-2019-something-deeply-hidden": {
+      "thinker": "carroll",
+      "authors": [
+        "Sean Carroll"
+      ],
+      "title": "Something Deeply Hidden: Quantum Worlds and the Emergence of Spacetime",
+      "container": null,
+      "year": 2019,
+      "publisher": "New York: Dutton",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(carroll-PRS-18=2019)",
+      "note": "not in ACPA; subtitle/publisher from domain knowledge -- verify vs source"
+    },
+    "arkanihamed-2014-amplituhedron": {
+      "thinker": "arkanihamed",
+      "authors": [
+        "Nima Arkani-Hamed",
+        "Jaroslav Trnka"
+      ],
+      "title": "The Amplituhedron",
+      "container": "Journal of High Energy Physics",
+      "year": 2014,
+      "publisher": null,
+      "locator": "2014, no. 10: 30",
+      "work_type": "article",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(arkanihamed-PRS-02=2013)",
+      "note": "canonical pick; ACPA dates JHEP publication 2014 (preprint 2013)"
+    },
+    "arkanihamed-1998-hierarchy-problem-new-dimensions": {
+      "thinker": "arkanihamed",
+      "authors": [
+        "Nima Arkani-Hamed",
+        "Savas Dimopoulos",
+        "Gia Dvali"
+      ],
+      "title": "The Hierarchy Problem and New Dimensions at a Millimeter",
+      "container": "Physics Letters B",
+      "year": 1998,
+      "publisher": null,
+      "locator": null,
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(arkanihamed-PRS-01=1998)",
+      "note": "not in ACPA; large-extra-dimensions paper from domain knowledge -- verify vol/pages vs source"
+    },
+    "wolfram-2020-project-fundamental-theory": {
+      "thinker": "wolfram",
+      "authors": [
+        "Stephen Wolfram"
+      ],
+      "title": "A Project to Find the Fundamental Theory of Physics",
+      "container": null,
+      "year": 2020,
+      "publisher": "Wolfram Media",
+      "locator": "https://www.wolframphysics.org",
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(wolfram-PRS-02=2020)",
+      "note": "canonical pick"
+    },
+    "wolfram-2022-observer-theory": {
+      "thinker": "wolfram",
+      "authors": [
+        "Stephen Wolfram"
+      ],
+      "title": "Observer Theory",
+      "container": "Complex Systems",
+      "year": 2022,
+      "publisher": null,
+      "locator": "31, no. 4",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": ""
+    },
+    "wolfram-2002-new-kind-of-science": {
+      "thinker": "wolfram",
+      "authors": [
+        "Stephen Wolfram"
+      ],
+      "title": "A New Kind of Science",
+      "container": null,
+      "year": 2002,
+      "publisher": "Champaign, IL: Wolfram Media",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(wolfram-PRS-01=2002)",
+      "note": "not in ACPA; from domain knowledge -- verify vs source"
+    },
+    "wolfram-2026-metaphysics-and-the-ruliad": {
+      "thinker": "wolfram",
+      "authors": [
+        "Stephen Wolfram"
+      ],
+      "title": "Metaphysics and the Ruliad",
+      "container": "Stephen Wolfram Writings",
+      "year": 2026,
+      "publisher": null,
+      "locator": "February 2026",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "wolfram/wiki.md (wiki cross-check 2026-07-17)",
+      "note": "essay named in the wiki (a.k.a. the 'Computational Metaphysics'/Templeton project); confirm exact title/venue/date + URL vs source"
+    },
+    "kastrup-2019-idea-of-the-world": {
+      "thinker": "kastrup",
+      "authors": [
+        "Bernardo Kastrup"
+      ],
+      "title": "The Idea of the World: A Multi-Disciplinary Argument for the Mental Nature of Reality",
+      "container": null,
+      "year": 2019,
+      "publisher": "Winchester: Iff Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(kastrup-PRS-02=2019)",
+      "note": "canonical pick; matches foundation §2 example cite-key"
+    },
+    "kastrup-2020-decoding-schopenhauer": {
+      "thinker": "kastrup",
+      "authors": [
+        "Bernardo Kastrup"
+      ],
+      "title": "Decoding Schopenhauer's Metaphysics",
+      "container": null,
+      "year": 2020,
+      "publisher": "Winchester: Iff Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": ""
+    },
+    "kastrup-2014-why-materialism-is-baloney": {
+      "thinker": "kastrup",
+      "authors": [
+        "Bernardo Kastrup"
+      ],
+      "title": "Why Materialism Is Baloney: How True Skeptics Know There Is No Death and Fathom Answers to Life, the Universe, and Everything",
+      "container": null,
+      "year": 2014,
+      "publisher": "Winchester: Iff Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(kastrup-PRS-01=2014)",
+      "note": "not in ACPA; from domain knowledge -- verify subtitle vs source"
+    },
+    "stump-2010-wandering-in-darkness": {
+      "thinker": "stump",
+      "authors": [
+        "Eleonore Stump"
+      ],
+      "title": "Wandering in Darkness: Narrative and the Problem of Suffering",
+      "container": null,
+      "year": 2010,
+      "publisher": "Oxford: Oxford University Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(stump-PRS-02=2010)",
+      "note": "canonical pick; per TRV memory PRS-05=union, PRS-11=Franciscan second-person knowledge map here"
+    },
+    "stump-2003-aquinas": {
+      "thinker": "stump",
+      "authors": [
+        "Eleonore Stump"
+      ],
+      "title": "Aquinas",
+      "container": null,
+      "year": 2003,
+      "publisher": "London: Routledge",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(stump-PRS-01=2003)",
+      "note": "soul-as-form / agent causation"
+    },
+    "wright-1992-new-testament-people-of-god": {
+      "thinker": "wright",
+      "authors": [
+        "N. T. Wright"
+      ],
+      "title": "The New Testament and the People of God",
+      "container": "Christian Origins and the Question of God, vol. 1",
+      "year": 1992,
+      "publisher": "London: SPCK; Minneapolis: Fortress Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "wright/wiki.md (critical realism + five-act) + prs_pub_years(wright-PRS-01=1992)",
+      "note": "canonical pick; publisher from domain knowledge -- verify vs source"
+    },
+    "wright-2003-resurrection-son-of-god": {
+      "thinker": "wright",
+      "authors": [
+        "N. T. Wright"
+      ],
+      "title": "The Resurrection of the Son of God",
+      "container": "Christian Origins and the Question of God, vol. 3",
+      "year": 2003,
+      "publisher": "London: SPCK; Minneapolis: Fortress Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "foundation §2 example cite-key + wright/wiki.md",
+      "note": "grounds resurrection-as-history claim; publisher from domain knowledge -- verify"
+    },
+    "wright-2008-surprised-by-hope": {
+      "thinker": "wright",
+      "authors": [
+        "N. T. Wright"
+      ],
+      "title": "Surprised by Hope: Rethinking Heaven, the Resurrection, and the Mission of the Church",
+      "container": null,
+      "year": 2008,
+      "publisher": "New York: HarperOne",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "wright/wiki.md (PRS-05/06: salvation vs disembodied-heaven escapism)",
+      "note": "grounds the ingested salvation open-questions; from domain knowledge -- verify vs source"
+    },
+    "rohr-2019-universal-christ": {
+      "thinker": "rohr",
+      "authors": [
+        "Richard Rohr"
+      ],
+      "title": "The Universal Christ: How a Forgotten Reality Can Change Everything We See, Hope For, and Believe",
+      "container": null,
+      "year": 2019,
+      "publisher": "New York: Convergent Books",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "rohr/wiki.md (Universal Christ theology) + foundation §2 example cite-key",
+      "note": "canonical pick; publisher from domain knowledge -- verify vs source"
+    },
+    "rohr-2009-naked-now": {
+      "thinker": "rohr",
+      "authors": [
+        "Richard Rohr"
+      ],
+      "title": "The Naked Now: Learning to See as the Mystics See",
+      "container": null,
+      "year": 2009,
+      "publisher": "New York: Crossroad",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "rohr/wiki.md (non-dual awareness) + prs_pub_years(rohr-PRS-01=2009)",
+      "note": "publisher from domain knowledge -- verify vs source"
+    },
+    "rohr-2011-falling-upward": {
+      "thinker": "rohr",
+      "authors": [
+        "Richard Rohr"
+      ],
+      "title": "Falling Upward: A Spirituality for the Two Halves of Life",
+      "container": null,
+      "year": 2011,
+      "publisher": "San Francisco: Jossey-Bass",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "rohr/wiki.md (order-disorder-reorder; two halves of life) + prs_pub_years(rohr-PRS-02=2011)",
+      "note": "publisher from domain knowledge -- verify vs source"
+    },
+    "loughran-2026-prs-synergistic-coil-form": {
+      "thinker": "loughran",
+      "authors": [
+        "Thomas Loughran"
+      ],
+      "title": "The Problem-Resource-Solution (PRS) Triplet and Synergistic Coil Method",
+      "container": "C2A2 / Resurrecting Civility (Karpathy wiki)",
+      "year": 2026,
+      "publisher": "University of Notre Dame (unpublished / in preparation)",
+      "locator": "wiki/traditions/loughran/",
+      "work_type": "preprint",
+      "canonical": true,
+      "verified": true,
+      "source": "loughran/wiki.md + foundation §3 (loughran = PRS-form scaffolding)",
+      "note": "the FORM itself: a PRS-id endnote resolves to Loughran as author of the form, distinct from the underlying thinker work"
+    },
+    "loughran-2021-computational-natural-law": {
+      "thinker": "loughran",
+      "authors": [
+        "Thomas Loughran"
+      ],
+      "title": "Toward a Computational Natural Law Defense of the Sanctity of Human Life",
+      "container": "de Nicola Center for Ethics and Culture, University of Notre Dame",
+      "year": 2021,
+      "publisher": "University of Notre Dame (paper submitted 2021)",
+      "locator": null,
+      "work_type": "preprint",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(loughran-PRS-01=2021)",
+      "note": "unpublished submitted paper"
+    },
+    "macintyre-1981-after-virtue": {
+      "thinker": "macintyre",
+      "authors": [
+        "Alasdair MacIntyre"
+      ],
+      "title": "After Virtue: A Study in Moral Theory",
+      "container": null,
+      "year": 1981,
+      "publisher": "Notre Dame: University of Notre Dame Press",
+      "locator": "3rd ed. 2007",
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA + prs_pub_years(macintyre-PRS-02=1981)",
+      "note": "canonical pick; living-tradition definition, practice-virtue-institution triad"
+    },
+    "macintyre-1988-whose-justice": {
+      "thinker": "macintyre",
+      "authors": [
+        "Alasdair MacIntyre"
+      ],
+      "title": "Whose Justice? Which Rationality?",
+      "container": null,
+      "year": 1988,
+      "publisher": "Notre Dame: University of Notre Dame Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "second-first-language; tradition-constituted rationality"
+    },
+    "macintyre-1990-three-rival-versions": {
+      "thinker": "macintyre",
+      "authors": [
+        "Alasdair MacIntyre"
+      ],
+      "title": "Three Rival Versions of Moral Enquiry: Encyclopaedia, Genealogy, and Tradition",
+      "container": null,
+      "year": 1990,
+      "publisher": "Notre Dame: University of Notre Dame Press",
+      "locator": null,
+      "work_type": "book",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "3RV; print date = 1990 (Tom's call 2026-07-17; delivered as 1988 Gifford Lectures, in print 1990)"
+    },
+    "macintyre-1977-epistemological-crises": {
+      "thinker": "macintyre",
+      "authors": [
+        "Alasdair MacIntyre"
+      ],
+      "title": "Epistemological Crises, Dramatic Narrative and the Philosophy of Science",
+      "container": "The Monist",
+      "year": 1977,
+      "publisher": null,
+      "locator": null,
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "prs_pub_years(macintyre-PRS-01=1977)",
+      "note": "not in ACPA; classic epistemological-crisis paper -- verify vol/issue/pages vs source"
+    },
+    "macintyre-2016-natural-law-response": {
+      "thinker": "macintyre",
+      "authors": [
+        "Alasdair MacIntyre"
+      ],
+      "title": "Response in symposium on natural law intractability",
+      "container": "American Catholic Philosophical Quarterly",
+      "year": 2016,
+      "publisher": null,
+      "locator": "90, no. 2",
+      "work_type": "article",
+      "canonical": false,
+      "verified": true,
+      "source": "ACPA",
+      "note": "ACPA general note: vol/issue/pages NEED VERIFICATION before print"
+    },
+    "aquinas-summa-theologiae": {
+      "thinker": "aquinas",
+      "authors": [
+        "Thomas Aquinas"
+      ],
+      "title": "Summa Theologiae",
+      "container": null,
+      "year": 1981,
+      "publisher": "Translated by the Fathers of the English Dominican Province. Westminster, MD: Christian Classics",
+      "locator": null,
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA",
+      "note": "PRIMARY TEXT the whole corpus comments on; cite in text by Part, Question, Article; cited translation/edition per ACPA -- confirm the edition actually quoted"
+    },
+    "kuhn-1962-structure-scientific-revolutions": {
+      "thinker": "kuhn",
+      "authors": [
+        "Thomas S. Kuhn"
+      ],
+      "title": "The Structure of Scientific Revolutions",
+      "container": null,
+      "year": 1962,
+      "publisher": "Chicago: University of Chicago Press",
+      "locator": "4th ed. 2012",
+      "work_type": "book",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA",
+      "note": "non-roster; paradigm-shift reference"
+    },
+    "cunningham-2007-intractable-disputes": {
+      "thinker": "cunningham",
+      "authors": [
+        "Lawrence S. Cunningham"
+      ],
+      "title": "The Intractable Disputes Concerning the Natural Law",
+      "container": "American Catholic Philosophical Quarterly",
+      "year": 2007,
+      "publisher": null,
+      "locator": "81, no. 1: 1-12",
+      "work_type": "article",
+      "canonical": true,
+      "verified": true,
+      "source": "ACPA",
+      "note": "non-roster; paired with macintyre-2016-natural-law-response"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+ "_meta": {
+  "schema": "commentary-apparatus/reconcile_decisions v1",
+  "how": "Edit `decision`/policy values, then run merge_decisions.py. staged decision: approve | amend (with fields) | decline (with redirect) | hold. 'hold' blocks the gate (fail loud). overrides[<id>].underlying_work replaces one resolution.",
+  "reading_surface": "Reconcile review.md",
+  "generated_defaults": "2026-07-17 (recommended default for every group; 2 judgment calls held)"
+ },
+ "batch_policies": {
+  "rc_tome_prs_to_canonical": {
+   "decision": "accept",
+   "choices": [
+    "accept",
+    "review_each"
+   ],
+   "note": "RC-Tome PRS re-descriptions resolve to the thinker's canonical work"
+  },
+  "existing_seeded_prs": {
+   "decision": "accept",
+   "choices": [
+    "accept",
+    "review_each"
+   ],
+   "note": "PRS ids that map to an already-seeded non-canonical work (hoffman-07, wolfram-06)"
+  },
+  "generics_canonical_default": {
+   "decision": "accept",
+   "choices": [
+    "accept",
+    "review_each"
+   ],
+   "note": "484 generic surname-only mentions stay resolved to thinker canonical (foundation §4)"
+  },
+  "friston_active_inference": {
+   "decision": "keep_generic",
+   "choices": [
+    "keep_generic",
+    "promote_all",
+    "per_day"
+   ],
+   "note": "44 Friston days matched the denylisted concept-label 'active inference'"
+  },
+  "unscoped_prs_scope": {
+   "decision": "master_framework",
+   "choices": [
+    "master_framework",
+    "per_day"
+   ],
+   "note": "10 unscoped PRS ids -> C2A2/master (Loughran form), or leave per-day open"
+  },
+  "cross_flag_internal": {
+   "decision": "accept",
+   "choices": [
+    "accept",
+    "review_each"
+   ],
+   "note": "33 CROSS + 2 FLAG internal bridges (stripped at export §5) — spot-check only"
+  }
+ },
+ "staged_works": {
+  "friston-2026-active-inference-review": {
+   "decision": "approve",
+   "fields": {},
+   "redirect": null,
+   "note": "Underlying work for friston PRS-07/08 and the CROSS-006/007 substrate-independence confirmation. Venue/DOI/full author list UNVERIFIED - confirm before print."
+  },
+  "levin-2026-ferriss-interview": {
+   "decision": "hold",
+   "fields": {},
+   "redirect": null,
+   "note": "Podcast interview. DECISION: is a podcast episode admissible to the bibliography, or should PRS-07/08 cite a published Levin paper instead (e.g. bioelectric-reprogramming work)?"
+  },
+  "fredrickson-2025-conducive-conditions-positivity-resonance": {
+   "decision": "approve",
+   "fields": {},
+   "redirect": null,
+   "note": "Colloquium talk. Confirm whether a published paper version exists to cite instead."
+  },
+  "stump-2025-biblical-narratives-flourishing": {
+   "decision": "approve",
+   "fields": {},
+   "redirect": null,
+   "note": "Confirm authorship (Stump & Wolfe?), subtitle, and year vs source."
+  },
+  "stump-2024-grains-of-wheat": {
+   "decision": "approve",
+   "fields": {},
+   "redirect": null,
+   "note": "PRS-08 gives '2024/25', PRS-11 gives 2024-10-01 - confirm publication year."
+  },
+  "carroll-2026-mindscape-349-harlow": {
+   "decision": "hold",
+   "fields": {},
+   "redirect": null,
+   "note": "AMBIGUOUS ATTRIBUTION: content is guest Daniel Harlow's, filed under Carroll's program only because it aired on his podcast. Do NOT attribute to Carroll as author. Decide whether it belongs in the bibliography at all."
+  }
+ },
+ "overrides": {
+  "_examples": {
+   "levin-PRS-01": {
+    "underlying_work": "levin-2018-bioelectric-code",
+    "note": "example: prefer the bioelectric paper over the canonical light-cones"
+   }
+  }
+ }
+}

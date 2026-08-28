@@ -1,0 +1,110 @@
+{
+ "_meta": {
+  "schema": "commentary-apparatus/works_cited v1 (STAGED, verified:false)",
+  "generated": "2026-07-17",
+  "generator": "reconcile_reference_master.py",
+  "status": "PROPOSED underlying works surfaced by reconcile step 3; ALL verified:false. Tom confirms each, sets verified:true, then merge into works_cited.json via build_works_cited.py.",
+  "count": 6
+ },
+ "works": {
+  "friston-2026-active-inference-review": {
+   "thinker": "friston",
+   "authors": [
+    "Karl J. Friston",
+    "et al."
+   ],
+   "title": "Active Inference and the Free Energy Principle: A Review",
+   "container": null,
+   "year": 2026,
+   "publisher": null,
+   "locator": null,
+   "work_type": "article",
+   "canonical": false,
+   "verified": false,
+   "source": "friston/prs_triplets.md PRS-07,08; cross_program_index CROSS-006/007 upgrade",
+   "note": "Underlying work for friston PRS-07/08 and the CROSS-006/007 substrate-independence confirmation. Venue/DOI/full author list UNVERIFIED - confirm before print."
+  },
+  "levin-2026-ferriss-interview": {
+   "thinker": "levin",
+   "authors": [
+    "Michael Levin"
+   ],
+   "title": "Michael Levin - interview",
+   "container": "The Tim Ferriss Show, episode 849",
+   "year": 2026,
+   "publisher": null,
+   "locator": "episode #849, aired 2026-01-21",
+   "work_type": "talk",
+   "canonical": false,
+   "verified": false,
+   "source": "levin/prs_triplets.md PRS-07,08",
+   "note": "Podcast interview. DECISION: is a podcast episode admissible to the bibliography, or should PRS-07/08 cite a published Levin paper instead (e.g. bioelectric-reprogramming work)?"
+  },
+  "fredrickson-2025-conducive-conditions-positivity-resonance": {
+   "thinker": "fredrickson",
+   "authors": [
+    "Barbara L. Fredrickson"
+   ],
+   "title": "Conducive Conditions for Positivity Resonance at Multiple Levels of Analysis",
+   "container": "UBC Psychology Colloquium",
+   "year": 2025,
+   "publisher": null,
+   "locator": "colloquium talk, 2025-10-01",
+   "work_type": "talk",
+   "canonical": false,
+   "verified": false,
+   "source": "fredrickson/prs_triplets.md PRS-08",
+   "note": "Colloquium talk. Confirm whether a published paper version exists to cite instead."
+  },
+  "stump-2025-biblical-narratives-flourishing": {
+   "thinker": "stump",
+   "authors": [
+    "Eleonore Stump",
+    "Judith Wolfe"
+   ],
+   "title": "Biblical Narratives and Human Flourishing: Knowledge Through Narrative",
+   "container": null,
+   "year": 2025,
+   "publisher": "Routledge",
+   "locator": null,
+   "work_type": "book",
+   "canonical": false,
+   "verified": false,
+   "source": "stump/prs_triplets.md PRS-07 (PROP-2026-04-08-001)",
+   "note": "Confirm authorship (Stump & Wolfe?), subtitle, and year vs source."
+  },
+  "stump-2024-grains-of-wheat": {
+   "thinker": "stump",
+   "authors": [
+    "Eleonore Stump"
+   ],
+   "title": "Grains of Wheat: Suffering and Biblical Narratives",
+   "container": null,
+   "year": 2024,
+   "publisher": "Oxford University Press",
+   "locator": "https://academic.oup.com/book/59654",
+   "work_type": "book",
+   "canonical": false,
+   "verified": false,
+   "source": "stump/prs_triplets.md PRS-08,11",
+   "note": "PRS-08 gives '2024/25', PRS-11 gives 2024-10-01 - confirm publication year."
+  },
+  "carroll-2026-mindscape-349-harlow": {
+   "thinker": "carroll",
+   "authors": [
+    "Daniel Harlow",
+    "Sean Carroll (host)"
+   ],
+   "title": "What Quantum Gravity Teaches Us About Quantum Mechanics",
+   "container": "Mindscape podcast, episode 349",
+   "year": 2026,
+   "publisher": null,
+   "locator": "episode #349, 2026-03-30",
+   "work_type": "talk",
+   "canonical": false,
+   "verified": false,
+   "source": "carroll/prs_triplets.md PRS-07 (PROP-2026-04-07-004)",
+   "note": "AMBIGUOUS ATTRIBUTION: content is guest Daniel Harlow's, filed under Carroll's program only because it aired on his podcast. Do NOT attribute to Carroll as author. Decide whether it belongs in the bibliography at all."
+  }
+ }
+}

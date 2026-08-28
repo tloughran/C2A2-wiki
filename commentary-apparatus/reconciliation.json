@@ -1,0 +1,2651 @@
+{
+ "_meta": {
+  "schema": "commentary-apparatus/reconciliation v1 (foundation §7 step 3)",
+  "generated_for": "foundation §7 step 3 reconcile",
+  "generator": "reconcile_reference_master.py",
+  "policy": {
+   "bibliography": "stage new works verified:false; freeze confirmed 46",
+   "promotion": "bounded - no auto-promote; denylisted 'active inference' -> review candidate",
+   "generic_default": "resolve to thinker canonical + needs_human_confirm (foundation §4)",
+   "prs_endnote": "[Loughran PRS-form, underlying thinker work] (foundation §4)",
+   "cross_flag": "internal, node + program canonical works, stripped at export (foundation §5)"
+  },
+  "inputs": {
+   "works_cited": "works_cited.json (46 confirmed)",
+   "reference_master": "reference_master.json (307 days)",
+   "cross_program_index": "wiki/master/cross_program_index.md"
+  }
+ },
+ "stats": {
+  "occurrences_total": 634,
+  "specific_kept": 150,
+  "generic_canonical_default_flagged": 484,
+  "auto_promotions": 0,
+  "scoped_prs_ids": 48,
+  "unscoped_prs_ids": 10,
+  "cross_ids": 33,
+  "flag_ids": 2,
+  "staged_new_works": 6,
+  "human_confirm_queue_items": 82
+ },
+ "id_resolution": {
+  "scoped_prs": {
+   "arkanihamed-PRS-01": {
+    "wiki_node": "wiki/traditions/arkanihamed/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "arkanihamed-1998-hierarchy-problem-new-dimensions",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "arkanihamed-1998-hierarchy-problem-new-dimensions"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     28,
+     35
+    ],
+    "needs_human_confirm": false
+   },
+   "carroll-PRS-01": {
+    "wiki_node": "wiki/traditions/carroll/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "carroll-2016-big-picture",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "carroll-2016-big-picture"
+    ],
+    "note": "RC-Tome re-description; ontological-closure/emergence -> Big Picture",
+    "days": [
+     23,
+     34,
+     35,
+     37
+    ],
+    "needs_human_confirm": true
+   },
+   "carroll-PRS-04": {
+    "wiki_node": "wiki/traditions/carroll/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "carroll-2016-big-picture",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "carroll-2016-big-picture"
+    ],
+    "note": "RC-Tome; agency-without-dualism -> Big Picture",
+    "days": [
+     23,
+     34,
+     35,
+     36,
+     37,
+     38
+    ],
+    "needs_human_confirm": true
+   },
+   "carroll-PRS-05": {
+    "wiki_node": "wiki/traditions/carroll/prs_triplets.md#05",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "carroll-2016-big-picture",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "carroll-2016-big-picture"
+    ],
+    "note": "RC-Tome; science-religion dialogue -> Big Picture",
+    "days": [
+     23
+    ],
+    "needs_human_confirm": true
+   },
+   "carroll-PRS-07": {
+    "wiki_node": "wiki/traditions/carroll/prs_triplets.md#07",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "carroll-2026-mindscape-349-harlow",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "carroll-2026-mindscape-349-harlow"
+    ],
+    "note": "Mindscape #349 GUEST (Harlow) - attribution decision needed",
+    "days": [
+     34,
+     35,
+     36,
+     38
+    ],
+    "needs_human_confirm": true
+   },
+   "fredrickson-PRS-01": {
+    "wiki_node": "wiki/traditions/fredrickson/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "fredrickson-1998-what-good-positive-emotions",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "fredrickson-1998-what-good-positive-emotions"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     47,
+     49,
+     50,
+     86
+    ],
+    "needs_human_confirm": false
+   },
+   "fredrickson-PRS-02": {
+    "wiki_node": "wiki/traditions/fredrickson/prs_triplets.md#02",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "fredrickson-2013-love-2-0",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "fredrickson-2013-love-2-0"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     49,
+     50,
+     51,
+     54,
+     55
+    ],
+    "needs_human_confirm": false
+   },
+   "fredrickson-PRS-04": {
+    "wiki_node": "wiki/traditions/fredrickson/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "fredrickson-2013-love-2-0",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "fredrickson-2013-love-2-0"
+    ],
+    "note": "RC-Tome; relational coherence -> Love 2.0",
+    "days": [
+     42
+    ],
+    "needs_human_confirm": true
+   },
+   "fredrickson-PRS-06": {
+    "wiki_node": "wiki/traditions/fredrickson/prs_triplets.md#06",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "fredrickson-2013-love-2-0",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "fredrickson-2013-love-2-0"
+    ],
+    "note": "RC-Tome; democratizing participation -> Love 2.0",
+    "days": [
+     49,
+     50,
+     51,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "fredrickson-PRS-08": {
+    "wiki_node": "wiki/traditions/fredrickson/prs_triplets.md#08",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "fredrickson-2025-conducive-conditions-positivity-resonance",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "fredrickson-2025-conducive-conditions-positivity-resonance"
+    ],
+    "note": "UBC colloquium talk",
+    "days": [
+     86
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-01": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2010-free-energy-principle",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2010-free-energy-principle"
+    ],
+    "note": "RC-Tome; biological agency without vitalism -> FEP",
+    "days": [
+     31,
+     39,
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-02": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#02",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2010-free-energy-principle",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2010-free-energy-principle"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     41,
+     42,
+     43,
+     44,
+     45
+    ],
+    "needs_human_confirm": false
+   },
+   "friston-PRS-04": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2010-free-energy-principle",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2010-free-energy-principle"
+    ],
+    "note": "RC-Tome; organism as active modeler -> FEP",
+    "days": [
+     12,
+     13,
+     14,
+     19,
+     20,
+     22,
+     23,
+     24,
+     25,
+     29,
+     30,
+     31,
+     32,
+     33,
+     39,
+     40,
+     41,
+     42,
+     43,
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-05": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#05",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2010-free-energy-principle",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2010-free-energy-principle"
+    ],
+    "note": "RC-Tome; distributed cognition across scales -> FEP",
+    "days": [
+     37,
+     39,
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-06": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#06",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2010-free-energy-principle",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2010-free-energy-principle"
+    ],
+    "note": "RC-Tome; multi-agent coherence -> FEP",
+    "days": [
+     33,
+     37
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-07": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#07",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2026-active-inference-review",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2026-active-inference-review"
+    ],
+    "note": "2026 review paper (also confirms CROSS-006/007)",
+    "days": [
+     10,
+     30,
+     31,
+     32,
+     33,
+     39,
+     46,
+     48,
+     49,
+     50
+    ],
+    "needs_human_confirm": true
+   },
+   "friston-PRS-08": {
+    "wiki_node": "wiki/traditions/friston/prs_triplets.md#08",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "friston-2026-active-inference-review",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "friston-2026-active-inference-review"
+    ],
+    "note": "same 2026 review, Section 4.1",
+    "days": [
+     8,
+     9,
+     10,
+     12,
+     13,
+     24,
+     29,
+     30,
+     31,
+     32,
+     33,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "hawkins-PRS-01": {
+    "wiki_node": "wiki/traditions/hawkins/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hawkins-2004-on-intelligence",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hawkins-2004-on-intelligence"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     28,
+     39,
+     40,
+     51,
+     52
+    ],
+    "needs_human_confirm": false
+   },
+   "hawkins-PRS-02": {
+    "wiki_node": "wiki/traditions/hawkins/prs_triplets.md#02",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hawkins-2021-thousand-brains",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hawkins-2021-thousand-brains"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     10,
+     18,
+     39,
+     40,
+     41,
+     43,
+     44,
+     45,
+     46,
+     51,
+     52
+    ],
+    "needs_human_confirm": false
+   },
+   "hawkins-PRS-03": {
+    "wiki_node": "wiki/traditions/hawkins/prs_triplets.md#03",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hawkins-2021-thousand-brains",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hawkins-2021-thousand-brains"
+    ],
+    "note": "RC-Tome; knowledge-preserving AGI -> Thousand Brains",
+    "days": [
+     89
+    ],
+    "needs_human_confirm": true
+   },
+   "hawkins-PRS-04": {
+    "wiki_node": "wiki/traditions/hawkins/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hawkins-2021-thousand-brains",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hawkins-2021-thousand-brains"
+    ],
+    "note": "RC-Tome; reference frames -> Thousand Brains",
+    "days": [
+     39,
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "hoffman-PRS-01": {
+    "wiki_node": "wiki/traditions/hoffman/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hoffman-2019-case-against-reality",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hoffman-2019-case-against-reality"
+    ],
+    "note": "RC-Tome; hard-problem transformation -> Case Against Reality",
+    "days": [
+     42,
+     43,
+     44,
+     45,
+     48,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "hoffman-PRS-02": {
+    "wiki_node": "wiki/traditions/hoffman/prs_triplets.md#02",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hoffman-2019-case-against-reality",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hoffman-2019-case-against-reality"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     48,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": false
+   },
+   "hoffman-PRS-03": {
+    "wiki_node": "wiki/traditions/hoffman/prs_triplets.md#03",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hoffman-2019-case-against-reality",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hoffman-2019-case-against-reality"
+    ],
+    "note": "RC-Tome; perception fitness-tracking -> Case Against Reality",
+    "days": [
+     8,
+     9,
+     10,
+     19,
+     24,
+     25,
+     26,
+     27,
+     28,
+     30,
+     31,
+     32,
+     33,
+     36,
+     37,
+     39,
+     40,
+     46
+    ],
+    "needs_human_confirm": true
+   },
+   "hoffman-PRS-04": {
+    "wiki_node": "wiki/traditions/hoffman/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hoffman-2019-case-against-reality",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hoffman-2019-case-against-reality"
+    ],
+    "note": "RC-Tome; observer-dependent spacetime -> Case Against Reality",
+    "days": [
+     40,
+     44,
+     45
+    ],
+    "needs_human_confirm": true
+   },
+   "hoffman-PRS-07": {
+    "wiki_node": "wiki/traditions/hoffman/prs_triplets.md#07",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "hoffman-2026-multiscale-logic-collective-intelligence",
+    "resolution": "existing",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "hoffman-2026-multiscale-logic-collective-intelligence"
+    ],
+    "note": "Thoughtforms Life talk = the seeded 2026 multiscale-logic entry; confirm talk-vs-article container",
+    "days": [
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "kastrup-PRS-01": {
+    "wiki_node": "wiki/traditions/kastrup/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "kastrup-2014-why-materialism-is-baloney",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "kastrup-2014-why-materialism-is-baloney"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     8,
+     23,
+     25,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     38,
+     39,
+     40,
+     43,
+     44,
+     45,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": false
+   },
+   "kastrup-PRS-02": {
+    "wiki_node": "wiki/traditions/kastrup/prs_triplets.md#02",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "kastrup-2019-idea-of-the-world",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     8,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     38,
+     39,
+     40
+    ],
+    "needs_human_confirm": false
+   },
+   "kastrup-PRS-04": {
+    "wiki_node": "wiki/traditions/kastrup/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "kastrup-2019-idea-of-the-world",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "note": "RC-Tome; philosophy<->mathematics bridge -> Idea of the World",
+    "days": [
+     23,
+     30,
+     33
+    ],
+    "needs_human_confirm": true
+   },
+   "levin-PRS-01": {
+    "wiki_node": "wiki/traditions/levin/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "levin-2022-cognitive-light-cones",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "note": "RC-Tome; morphogenetic control -> Cognitive Light Cones (consider levin-2018-bioelectric-code)",
+    "days": [
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     47,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "levin-PRS-03": {
+    "wiki_node": "wiki/traditions/levin/prs_triplets.md#03",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "levin-2022-cognitive-light-cones",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     23,
+     24,
+     25,
+     32,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     41,
+     43,
+     44,
+     45,
+     49
+    ],
+    "needs_human_confirm": false
+   },
+   "levin-PRS-04": {
+    "wiki_node": "wiki/traditions/levin/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "levin-2022-cognitive-light-cones",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "note": "RC-Tome; cognition substrate/xenobots -> Cognitive Light Cones (consider levin-2020-xenobots)",
+    "days": [
+     23,
+     40,
+     47,
+     48,
+     49,
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "levin-PRS-07": {
+    "wiki_node": "wiki/traditions/levin/prs_triplets.md#07",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "levin-2026-ferriss-interview",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "levin-2026-ferriss-interview"
+    ],
+    "note": "Tim Ferriss Show #849",
+    "days": [
+     34,
+     50,
+     51
+    ],
+    "needs_human_confirm": true
+   },
+   "levin-PRS-08": {
+    "wiki_node": "wiki/traditions/levin/prs_triplets.md#08",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "levin-2026-ferriss-interview",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "levin-2026-ferriss-interview"
+    ],
+    "note": "Tim Ferriss Show #849",
+    "days": [
+     23,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "loughran-PRS-08": {
+    "wiki_node": "wiki/traditions/loughran/prs_triplets.md#08",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "note": "RC-Tome tradition-crossing inquiry, re-homed from stump PRS-01 per ASSUMPTION-076; consider a distinct 'RC Tome' work",
+    "days": [
+     1,
+     21
+    ],
+    "needs_human_confirm": true
+   },
+   "mcgilchrist-PRS-01": {
+    "wiki_node": "wiki/traditions/mcgilchrist/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "mcgilchrist-2009-master-and-his-emissary",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     40
+    ],
+    "needs_human_confirm": false
+   },
+   "mcgilchrist-PRS-03": {
+    "wiki_node": "wiki/traditions/mcgilchrist/prs_triplets.md#03",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "mcgilchrist-2009-master-and-his-emissary",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "note": "RC-Tome; hemispheric modes -> Master & Emissary",
+    "days": [
+     48,
+     49
+    ],
+    "needs_human_confirm": true
+   },
+   "mcgilchrist-PRS-04": {
+    "wiki_node": "wiki/traditions/mcgilchrist/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "mcgilchrist-2009-master-and-his-emissary",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "note": "RC-Tome; multi-agent integration -> Master & Emissary",
+    "days": [
+     52,
+     54
+    ],
+    "needs_human_confirm": true
+   },
+   "mcgilchrist-PRS-05": {
+    "wiki_node": "wiki/traditions/mcgilchrist/prs_triplets.md#05",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "mcgilchrist-2009-master-and-his-emissary",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "note": "RC-Tome; attention as ontological act -> Master & Emissary (consider 2021 Matter with Things)",
+    "days": [
+     40
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-04": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2010-wandering-in-darkness",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "note": "RC-Tome; final causality & biology -> Wandering (consider stump-2003-aquinas)",
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     23,
+     25,
+     48,
+     51,
+     53,
+     54,
+     86
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-05": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#05",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2010-wandering-in-darkness",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "note": "RC-Tome; suffering & divine permission -> Wandering in Darkness",
+    "days": [
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     20,
+     21,
+     22,
+     31,
+     32,
+     33,
+     48
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-06": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#06",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2010-wandering-in-darkness",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "note": "RC-Tome; tradition vitality & MacIntyre -> Wandering (cross to macintyre)",
+    "days": [
+     1
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-07": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#07",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2025-biblical-narratives-flourishing",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2025-biblical-narratives-flourishing"
+    ],
+    "note": "Stump & Wolfe, Routledge",
+    "days": [
+     1
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-08": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#08",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2024-grains-of-wheat",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2024-grains-of-wheat"
+    ],
+    "note": "Grains of Wheat, OUP",
+    "days": [
+     23
+    ],
+    "needs_human_confirm": true
+   },
+   "stump-PRS-11": {
+    "wiki_node": "wiki/traditions/stump/prs_triplets.md#11",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "stump-2024-grains-of-wheat",
+    "resolution": "staged",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "stump-2024-grains-of-wheat"
+    ],
+    "note": "Grains of Wheat, OUP",
+    "days": [
+     7,
+     8,
+     9,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     20,
+     21,
+     22,
+     31,
+     32,
+     33
+    ],
+    "needs_human_confirm": true
+   },
+   "wolfram-PRS-01": {
+    "wiki_node": "wiki/traditions/wolfram/prs_triplets.md#01",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "wolfram-2002-new-kind-of-science",
+    "resolution": "existing-canonical-via-source",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "wolfram-2002-new-kind-of-science"
+    ],
+    "note": "deterministic from works_cited source field",
+    "days": [
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": false
+   },
+   "wolfram-PRS-04": {
+    "wiki_node": "wiki/traditions/wolfram/prs_triplets.md#04",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "wolfram-2020-project-fundamental-theory",
+    "resolution": "canonical",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "wolfram-2020-project-fundamental-theory"
+    ],
+    "note": "RC-Tome; computational irreducibility & agency -> Fundamental Theory (consider wolfram-2002-nks)",
+    "days": [
+     53,
+     54,
+     55
+    ],
+    "needs_human_confirm": true
+   },
+   "wolfram-PRS-06": {
+    "wiki_node": "wiki/traditions/wolfram/prs_triplets.md#06",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "wolfram-2026-metaphysics-and-the-ruliad",
+    "resolution": "existing",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "wolfram-2026-metaphysics-and-the-ruliad"
+    ],
+    "note": "= the seeded 2026 Ruliad metaphysics entry",
+    "days": [
+     8,
+     9,
+     10,
+     18,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     28,
+     29,
+     30,
+     32,
+     33,
+     34,
+     35,
+     38
+    ],
+    "needs_human_confirm": true
+   }
+  },
+  "unscoped_prs": {
+   "PRS-01": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 31,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-02": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 18,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-03": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 23,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-04": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 23,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-05": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 5,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-06": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 11,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-07": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 7,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-08": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 20,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-09": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   },
+   "PRS-11": {
+    "provisional_scope": "loughran/C2A2-master",
+    "wiki_node": "wiki/master/C2A2_prs_triplets.md (or wiki/traditions/loughran/prs_triplets.md)",
+    "loughran_form": "loughran-2026-prs-synergistic-coil-form",
+    "underlying_work": "loughran-2026-prs-synergistic-coil-form",
+    "endnote_pair": [
+     "loughran-2026-prs-synergistic-coil-form",
+     "loughran-2026-prs-synergistic-coil-form"
+    ],
+    "n_occurrences": 6,
+    "needs_human_confirm": true,
+    "note": "Unscoped PRS (no adjacent surname). Provisionally the C2A2/RC master framework; could be a thinker's PRS the harvester failed to scope. CONFIRM per day."
+   }
+  },
+  "cross": {
+   "CROSS-001": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-001",
+    "programs": "Levin Agent, Friston Agent, Hawkins Agent, Kastrup Agent, Hoffman Agent",
+    "program_tags": [
+     "levin",
+     "friston",
+     "hawkins",
+     "kastrup",
+     "hoffman"
+    ],
+    "underlying_canonical_works": [
+     "levin-2022-cognitive-light-cones",
+     "friston-2010-free-energy-principle",
+     "hawkins-2021-thousand-brains",
+     "kastrup-2019-idea-of-the-world",
+     "hoffman-2019-case-against-reality"
+    ],
+    "internal": true,
+    "n_occurrences": 23,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-002": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-002",
+    "programs": "Wolfram Agent, Arkani-Hamed Agent, Carroll Agent, Hoffman Agent",
+    "program_tags": [
+     "wolfram",
+     "arkanihamed",
+     "carroll",
+     "hoffman"
+    ],
+    "underlying_canonical_works": [
+     "wolfram-2020-project-fundamental-theory",
+     "arkanihamed-2014-amplituhedron",
+     "carroll-2016-big-picture",
+     "hoffman-2019-case-against-reality"
+    ],
+    "internal": true,
+    "n_occurrences": 7,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-003": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-003",
+    "programs": "McGilchrist Agent, Friston Agent, Hoffman Agent, Fredrickson Agent",
+    "program_tags": [
+     "mcgilchrist",
+     "friston",
+     "hoffman",
+     "fredrickson"
+    ],
+    "underlying_canonical_works": [
+     "mcgilchrist-2009-master-and-his-emissary",
+     "friston-2010-free-energy-principle",
+     "hoffman-2019-case-against-reality",
+     "fredrickson-2013-love-2-0"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-005": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-005",
+    "programs": "Fredrickson Agent, Stump Agent, Kastrup Agent",
+    "program_tags": [
+     "fredrickson",
+     "stump",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "fredrickson-2013-love-2-0",
+     "stump-2010-wandering-in-darkness",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 19,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-006": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-006",
+    "programs": "Levin Agent, Friston Agent",
+    "program_tags": [
+     "levin",
+     "friston"
+    ],
+    "underlying_canonical_works": [
+     "levin-2022-cognitive-light-cones",
+     "friston-2010-free-energy-principle"
+    ],
+    "internal": true,
+    "n_occurrences": 21,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-007": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-007",
+    "programs": "Levin Agent, Friston Agent",
+    "program_tags": [
+     "levin",
+     "friston"
+    ],
+    "underlying_canonical_works": [
+     "levin-2022-cognitive-light-cones",
+     "friston-2010-free-energy-principle"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-008": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-008",
+    "programs": "Levin Agent, Stump Agent",
+    "program_tags": [
+     "levin",
+     "stump"
+    ],
+    "underlying_canonical_works": [
+     "levin-2022-cognitive-light-cones",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "internal": true,
+    "n_occurrences": 7,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-009": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-009",
+    "programs": "Friston Agent, McGilchrist Agent",
+    "program_tags": [
+     "friston",
+     "mcgilchrist"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-010": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-010",
+    "programs": "Friston Agent, Fredrickson Agent",
+    "program_tags": [
+     "friston",
+     "fredrickson"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "fredrickson-2013-love-2-0"
+    ],
+    "internal": true,
+    "n_occurrences": 4,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-011": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-011",
+    "programs": "Friston Agent, Hawkins Agent",
+    "program_tags": [
+     "friston",
+     "hawkins"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "hawkins-2021-thousand-brains"
+    ],
+    "internal": true,
+    "n_occurrences": 5,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-013": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-013",
+    "programs": "Hoffman Agent, McGilchrist Agent",
+    "program_tags": [
+     "hoffman",
+     "mcgilchrist"
+    ],
+    "underlying_canonical_works": [
+     "hoffman-2019-case-against-reality",
+     "mcgilchrist-2009-master-and-his-emissary"
+    ],
+    "internal": true,
+    "n_occurrences": 5,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-014": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-014",
+    "programs": "Hoffman Agent, Kastrup Agent",
+    "program_tags": [
+     "hoffman",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "hoffman-2019-case-against-reality",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 10,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-016": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-016",
+    "programs": "Carroll Agent, Wolfram Agent",
+    "program_tags": [
+     "carroll",
+     "wolfram"
+    ],
+    "underlying_canonical_works": [
+     "carroll-2016-big-picture",
+     "wolfram-2020-project-fundamental-theory"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-018": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-018",
+    "programs": "Fredrickson Agent, Stump Agent",
+    "program_tags": [
+     "fredrickson",
+     "stump"
+    ],
+    "underlying_canonical_works": [
+     "fredrickson-2013-love-2-0",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "internal": true,
+    "n_occurrences": 6,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-019": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-019",
+    "programs": "Stump Agent, Levin Agent",
+    "program_tags": [
+     "stump",
+     "levin"
+    ],
+    "underlying_canonical_works": [
+     "stump-2010-wandering-in-darkness",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-020": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-020",
+    "programs": "McGilchrist Agent, Stump Agent",
+    "program_tags": [
+     "mcgilchrist",
+     "stump"
+    ],
+    "underlying_canonical_works": [
+     "mcgilchrist-2009-master-and-his-emissary",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-021": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-021",
+    "programs": "Wolfram Agent, Hoffman Agent",
+    "program_tags": [
+     "wolfram",
+     "hoffman"
+    ],
+    "underlying_canonical_works": [
+     "wolfram-2020-project-fundamental-theory",
+     "hoffman-2019-case-against-reality"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-022": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-022",
+    "programs": "Kastrup Agent, Stump Agent",
+    "program_tags": [
+     "kastrup",
+     "stump"
+    ],
+    "underlying_canonical_works": [
+     "kastrup-2019-idea-of-the-world",
+     "stump-2010-wandering-in-darkness"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-024": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-024",
+    "programs": "Wolfram Agent, Arkani-Hamed Agent",
+    "program_tags": [
+     "wolfram",
+     "arkanihamed"
+    ],
+    "underlying_canonical_works": [
+     "wolfram-2020-project-fundamental-theory",
+     "arkanihamed-2014-amplituhedron"
+    ],
+    "internal": true,
+    "n_occurrences": 5,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-025": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-025",
+    "programs": "Friston Agent, Levin Agent",
+    "program_tags": [
+     "friston",
+     "levin"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-027": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-027",
+    "programs": "Kastrup Agent, Friston Agent",
+    "program_tags": [
+     "kastrup",
+     "friston"
+    ],
+    "underlying_canonical_works": [
+     "kastrup-2019-idea-of-the-world",
+     "friston-2010-free-energy-principle"
+    ],
+    "internal": true,
+    "n_occurrences": 7,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-028": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-028",
+    "programs": "Levin Agent, Kastrup Agent",
+    "program_tags": [
+     "levin",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "levin-2022-cognitive-light-cones",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-029": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-029",
+    "programs": "McGilchrist Agent, Levin Agent",
+    "program_tags": [
+     "mcgilchrist",
+     "levin"
+    ],
+    "underlying_canonical_works": [
+     "mcgilchrist-2009-master-and-his-emissary",
+     "levin-2022-cognitive-light-cones"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-032": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-032",
+    "programs": "Hoffman Agent, Friston Agent",
+    "program_tags": [
+     "hoffman",
+     "friston"
+    ],
+    "underlying_canonical_works": [
+     "hoffman-2019-case-against-reality",
+     "friston-2010-free-energy-principle"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-037": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-037",
+    "programs": "Friston Agent, Levin Agent, Kastrup Agent",
+    "program_tags": [
+     "friston",
+     "levin",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "levin-2022-cognitive-light-cones",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-038": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-038",
+    "programs": "Hoffman Agent, Kastrup Agent",
+    "program_tags": [
+     "hoffman",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "hoffman-2019-case-against-reality",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-039": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-039",
+    "programs": "Friston Agent, Hoffman Agent",
+    "program_tags": [
+     "friston",
+     "hoffman"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "hoffman-2019-case-against-reality"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-040": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-040",
+    "programs": "Friston Agent, Hawkins Agent",
+    "program_tags": [
+     "friston",
+     "hawkins"
+    ],
+    "underlying_canonical_works": [
+     "friston-2010-free-energy-principle",
+     "hawkins-2021-thousand-brains"
+    ],
+    "internal": true,
+    "n_occurrences": 2,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-041": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-041",
+    "programs": "McGilchrist Agent, Fredrickson Agent",
+    "program_tags": [
+     "mcgilchrist",
+     "fredrickson"
+    ],
+    "underlying_canonical_works": [
+     "mcgilchrist-2009-master-and-his-emissary",
+     "fredrickson-2013-love-2-0"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-049": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-049",
+    "programs": "Wolfram Agent, Friston Agent",
+    "program_tags": [
+     "wolfram",
+     "friston"
+    ],
+    "underlying_canonical_works": [
+     "wolfram-2020-project-fundamental-theory",
+     "friston-2010-free-energy-principle"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-050": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-050",
+    "programs": "Carroll Agent, Levin Agent, Friston Agent, Kastrup Agent",
+    "program_tags": [
+     "carroll",
+     "levin",
+     "friston",
+     "kastrup"
+    ],
+    "underlying_canonical_works": [
+     "carroll-2016-big-picture",
+     "levin-2022-cognitive-light-cones",
+     "friston-2010-free-energy-principle",
+     "kastrup-2019-idea-of-the-world"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-051": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-051",
+    "programs": "Stump Agent, Fredrickson Agent",
+    "program_tags": [
+     "stump",
+     "fredrickson"
+    ],
+    "underlying_canonical_works": [
+     "stump-2010-wandering-in-darkness",
+     "fredrickson-2013-love-2-0"
+    ],
+    "internal": true,
+    "n_occurrences": 4,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   },
+   "CROSS-053": {
+    "wiki_node": "wiki/master/cross_program_index.md#CROSS-053",
+    "programs": "Stump Agent, MacIntyre Agent, C2A2 (meta)",
+    "program_tags": [
+     "stump",
+     "macintyre"
+    ],
+    "underlying_canonical_works": [
+     "stump-2010-wandering-in-darkness",
+     "macintyre-1981-after-virtue"
+    ],
+    "internal": true,
+    "n_occurrences": 1,
+    "needs_human_confirm": true,
+    "note": "Internal cross-program bridge (foundation §5, stripped at export). If cited in body, resolves to the involved programs' canonical works - never a 'CROSS work'."
+   }
+  },
+  "flag": {
+   "FLAG-003": {
+    "wiki_node": "wiki/master/paradigm_flags.md#FLAG-003",
+    "internal": true,
+    "n_occurrences": 7,
+    "needs_human_confirm": true,
+    "note": "Paradigm-shift flag (internal, stripped at export). NOTE: current paradigm_flags.md lists only FLAG-001/002; this id's definition was not found in the staged file - verify its home (wiki/flags/)."
+   },
+   "FLAG-005": {
+    "wiki_node": "wiki/master/paradigm_flags.md#FLAG-005",
+    "internal": true,
+    "n_occurrences": 3,
+    "needs_human_confirm": true,
+    "note": "Paradigm-shift flag (internal, stripped at export). NOTE: current paradigm_flags.md lists only FLAG-001/002; this id's definition was not found in the staged file - verify its home (wiki/flags/)."
+   }
+  }
+ },
+ "occurrence_summary": {
+  "levin": {
+   "canonical_cite_key": "levin-2022-cognitive-light-cones",
+   "days": 50,
+   "total_mentions": 349,
+   "n_specific": 0,
+   "n_generic_canonical_default": 50,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "friston": {
+   "canonical_cite_key": "friston-2010-free-energy-principle",
+   "days": 61,
+   "total_mentions": 372,
+   "n_specific": 2,
+   "n_generic_canonical_default": 59,
+   "specific_works_used": [
+    "friston-2010-free-energy-principle"
+   ],
+   "active_inference_candidate_days": [
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    27,
+    30,
+    31,
+    32,
+    33,
+    34,
+    37,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    88,
+    89,
+    90
+   ],
+   "generic_needs_human_confirm": true
+  },
+  "hoffman": {
+   "canonical_cite_key": "hoffman-2019-case-against-reality",
+   "days": 49,
+   "total_mentions": 224,
+   "n_specific": 3,
+   "n_generic_canonical_default": 46,
+   "specific_works_used": [
+    "hoffman-2015-interface-theory-perception",
+    "hoffman-2019-case-against-reality"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "hawkins": {
+   "canonical_cite_key": "hawkins-2021-thousand-brains",
+   "days": 28,
+   "total_mentions": 108,
+   "n_specific": 5,
+   "n_generic_canonical_default": 23,
+   "specific_works_used": [
+    "hawkins-2021-thousand-brains"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "mcgilchrist": {
+   "canonical_cite_key": "mcgilchrist-2009-master-and-his-emissary",
+   "days": 36,
+   "total_mentions": 125,
+   "n_specific": 7,
+   "n_generic_canonical_default": 29,
+   "specific_works_used": [
+    "mcgilchrist-2009-master-and-his-emissary"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "fredrickson": {
+   "canonical_cite_key": "fredrickson-2013-love-2-0",
+   "days": 31,
+   "total_mentions": 122,
+   "n_specific": 0,
+   "n_generic_canonical_default": 31,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "carroll": {
+   "canonical_cite_key": "carroll-2016-big-picture",
+   "days": 20,
+   "total_mentions": 77,
+   "n_specific": 3,
+   "n_generic_canonical_default": 17,
+   "specific_works_used": [
+    "carroll-2016-big-picture"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "arkanihamed": {
+   "canonical_cite_key": "arkanihamed-2014-amplituhedron",
+   "days": 13,
+   "total_mentions": 26,
+   "n_specific": 2,
+   "n_generic_canonical_default": 11,
+   "specific_works_used": [
+    "arkanihamed-2014-amplituhedron"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "wolfram": {
+   "canonical_cite_key": "wolfram-2020-project-fundamental-theory",
+   "days": 35,
+   "total_mentions": 141,
+   "n_specific": 6,
+   "n_generic_canonical_default": 29,
+   "specific_works_used": [
+    "wolfram-2026-metaphysics-and-the-ruliad"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "kastrup": {
+   "canonical_cite_key": "kastrup-2019-idea-of-the-world",
+   "days": 57,
+   "total_mentions": 256,
+   "n_specific": 4,
+   "n_generic_canonical_default": 53,
+   "specific_works_used": [
+    "kastrup-2019-idea-of-the-world"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "stump": {
+   "canonical_cite_key": "stump-2010-wandering-in-darkness",
+   "days": 54,
+   "total_mentions": 220,
+   "n_specific": 19,
+   "n_generic_canonical_default": 35,
+   "specific_works_used": [
+    "stump-2010-wandering-in-darkness"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "wright": {
+   "canonical_cite_key": "wright-1992-new-testament-people-of-god",
+   "days": 65,
+   "total_mentions": 350,
+   "n_specific": 42,
+   "n_generic_canonical_default": 23,
+   "specific_works_used": [
+    "wright-1992-new-testament-people-of-god",
+    "wright-2003-resurrection-son-of-god",
+    "wright-2008-surprised-by-hope"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "rohr": {
+   "canonical_cite_key": "rohr-2019-universal-christ",
+   "days": 61,
+   "total_mentions": 260,
+   "n_specific": 57,
+   "n_generic_canonical_default": 4,
+   "specific_works_used": [
+    "rohr-2011-falling-upward",
+    "rohr-2019-universal-christ"
+   ],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "loughran": {
+   "canonical_cite_key": "loughran-2026-prs-synergistic-coil-form",
+   "days": 3,
+   "total_mentions": 5,
+   "n_specific": 0,
+   "n_generic_canonical_default": 3,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "macintyre": {
+   "canonical_cite_key": "macintyre-1981-after-virtue",
+   "days": 3,
+   "total_mentions": 6,
+   "n_specific": 0,
+   "n_generic_canonical_default": 3,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "aquinas": {
+   "canonical_cite_key": "aquinas-summa-theologiae",
+   "days": 65,
+   "total_mentions": 828,
+   "n_specific": 0,
+   "n_generic_canonical_default": 65,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "kuhn": {
+   "canonical_cite_key": "kuhn-1962-structure-scientific-revolutions",
+   "days": 3,
+   "total_mentions": 6,
+   "n_specific": 0,
+   "n_generic_canonical_default": 3,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": true
+  },
+  "cunningham": {
+   "canonical_cite_key": "cunningham-2007-intractable-disputes",
+   "days": 0,
+   "total_mentions": 0,
+   "n_specific": 0,
+   "n_generic_canonical_default": 0,
+   "specific_works_used": [],
+   "active_inference_candidate_days": [],
+   "generic_needs_human_confirm": false
+  }
+ },
+ "human_confirm_queue": [
+  {
+   "kind": "CROSS",
+   "id": "CROSS-001",
+   "n_days": 23,
+   "suggested_underlying": "levin-2022-cognitive-light-cones, friston-2010-free-energy-principle, hawkins-2021-thousand-brains, kastrup-2019-idea-of-the-world, hoffman-2019-case-against-reality",
+   "resolution": "internal-bridge",
+   "why": "programs: Levin Agent, Friston Agent, Hawkins Agent, Kastrup Agent, Hoffman Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-002",
+   "n_days": 7,
+   "suggested_underlying": "wolfram-2020-project-fundamental-theory, arkanihamed-2014-amplituhedron, carroll-2016-big-picture, hoffman-2019-case-against-reality",
+   "resolution": "internal-bridge",
+   "why": "programs: Wolfram Agent, Arkani-Hamed Agent, Carroll Agent, Hoffman Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-003",
+   "n_days": 2,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary, friston-2010-free-energy-principle, hoffman-2019-case-against-reality, fredrickson-2013-love-2-0",
+   "resolution": "internal-bridge",
+   "why": "programs: McGilchrist Agent, Friston Agent, Hoffman Agent, Fredrickson Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-005",
+   "n_days": 19,
+   "suggested_underlying": "fredrickson-2013-love-2-0, stump-2010-wandering-in-darkness, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Fredrickson Agent, Stump Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-006",
+   "n_days": 21,
+   "suggested_underlying": "levin-2022-cognitive-light-cones, friston-2010-free-energy-principle",
+   "resolution": "internal-bridge",
+   "why": "programs: Levin Agent, Friston Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-007",
+   "n_days": 1,
+   "suggested_underlying": "levin-2022-cognitive-light-cones, friston-2010-free-energy-principle",
+   "resolution": "internal-bridge",
+   "why": "programs: Levin Agent, Friston Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-008",
+   "n_days": 7,
+   "suggested_underlying": "levin-2022-cognitive-light-cones, stump-2010-wandering-in-darkness",
+   "resolution": "internal-bridge",
+   "why": "programs: Levin Agent, Stump Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-009",
+   "n_days": 1,
+   "suggested_underlying": "friston-2010-free-energy-principle, mcgilchrist-2009-master-and-his-emissary",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, McGilchrist Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-010",
+   "n_days": 4,
+   "suggested_underlying": "friston-2010-free-energy-principle, fredrickson-2013-love-2-0",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Fredrickson Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-011",
+   "n_days": 5,
+   "suggested_underlying": "friston-2010-free-energy-principle, hawkins-2021-thousand-brains",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Hawkins Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-013",
+   "n_days": 5,
+   "suggested_underlying": "hoffman-2019-case-against-reality, mcgilchrist-2009-master-and-his-emissary",
+   "resolution": "internal-bridge",
+   "why": "programs: Hoffman Agent, McGilchrist Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-014",
+   "n_days": 10,
+   "suggested_underlying": "hoffman-2019-case-against-reality, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Hoffman Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-016",
+   "n_days": 2,
+   "suggested_underlying": "carroll-2016-big-picture, wolfram-2020-project-fundamental-theory",
+   "resolution": "internal-bridge",
+   "why": "programs: Carroll Agent, Wolfram Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-018",
+   "n_days": 6,
+   "suggested_underlying": "fredrickson-2013-love-2-0, stump-2010-wandering-in-darkness",
+   "resolution": "internal-bridge",
+   "why": "programs: Fredrickson Agent, Stump Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-019",
+   "n_days": 1,
+   "suggested_underlying": "stump-2010-wandering-in-darkness, levin-2022-cognitive-light-cones",
+   "resolution": "internal-bridge",
+   "why": "programs: Stump Agent, Levin Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-020",
+   "n_days": 1,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary, stump-2010-wandering-in-darkness",
+   "resolution": "internal-bridge",
+   "why": "programs: McGilchrist Agent, Stump Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-021",
+   "n_days": 2,
+   "suggested_underlying": "wolfram-2020-project-fundamental-theory, hoffman-2019-case-against-reality",
+   "resolution": "internal-bridge",
+   "why": "programs: Wolfram Agent, Hoffman Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-022",
+   "n_days": 2,
+   "suggested_underlying": "kastrup-2019-idea-of-the-world, stump-2010-wandering-in-darkness",
+   "resolution": "internal-bridge",
+   "why": "programs: Kastrup Agent, Stump Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-024",
+   "n_days": 5,
+   "suggested_underlying": "wolfram-2020-project-fundamental-theory, arkanihamed-2014-amplituhedron",
+   "resolution": "internal-bridge",
+   "why": "programs: Wolfram Agent, Arkani-Hamed Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-025",
+   "n_days": 1,
+   "suggested_underlying": "friston-2010-free-energy-principle, levin-2022-cognitive-light-cones",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Levin Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-027",
+   "n_days": 7,
+   "suggested_underlying": "kastrup-2019-idea-of-the-world, friston-2010-free-energy-principle",
+   "resolution": "internal-bridge",
+   "why": "programs: Kastrup Agent, Friston Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-028",
+   "n_days": 1,
+   "suggested_underlying": "levin-2022-cognitive-light-cones, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Levin Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-029",
+   "n_days": 2,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary, levin-2022-cognitive-light-cones",
+   "resolution": "internal-bridge",
+   "why": "programs: McGilchrist Agent, Levin Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-032",
+   "n_days": 2,
+   "suggested_underlying": "hoffman-2019-case-against-reality, friston-2010-free-energy-principle",
+   "resolution": "internal-bridge",
+   "why": "programs: Hoffman Agent, Friston Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-037",
+   "n_days": 1,
+   "suggested_underlying": "friston-2010-free-energy-principle, levin-2022-cognitive-light-cones, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Levin Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-038",
+   "n_days": 1,
+   "suggested_underlying": "hoffman-2019-case-against-reality, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Hoffman Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-039",
+   "n_days": 1,
+   "suggested_underlying": "friston-2010-free-energy-principle, hoffman-2019-case-against-reality",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Hoffman Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-040",
+   "n_days": 2,
+   "suggested_underlying": "friston-2010-free-energy-principle, hawkins-2021-thousand-brains",
+   "resolution": "internal-bridge",
+   "why": "programs: Friston Agent, Hawkins Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-041",
+   "n_days": 1,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary, fredrickson-2013-love-2-0",
+   "resolution": "internal-bridge",
+   "why": "programs: McGilchrist Agent, Fredrickson Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-049",
+   "n_days": 1,
+   "suggested_underlying": "wolfram-2020-project-fundamental-theory, friston-2010-free-energy-principle",
+   "resolution": "internal-bridge",
+   "why": "programs: Wolfram Agent, Friston Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-050",
+   "n_days": 1,
+   "suggested_underlying": "carroll-2016-big-picture, levin-2022-cognitive-light-cones, friston-2010-free-energy-principle, kastrup-2019-idea-of-the-world",
+   "resolution": "internal-bridge",
+   "why": "programs: Carroll Agent, Levin Agent, Friston Agent, Kastrup Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-051",
+   "n_days": 4,
+   "suggested_underlying": "stump-2010-wandering-in-darkness, fredrickson-2013-love-2-0",
+   "resolution": "internal-bridge",
+   "why": "programs: Stump Agent, Fredrickson Agent"
+  },
+  {
+   "kind": "CROSS",
+   "id": "CROSS-053",
+   "n_days": 1,
+   "suggested_underlying": "stump-2010-wandering-in-darkness, macintyre-1981-after-virtue",
+   "resolution": "internal-bridge",
+   "why": "programs: Stump Agent, MacIntyre Agent, C2A2 (meta)"
+  },
+  {
+   "kind": "FLAG",
+   "id": "FLAG-003",
+   "n_days": 7,
+   "suggested_underlying": "(internal - node only)",
+   "resolution": "internal-flag",
+   "why": "definition not in current paradigm_flags.md - verify location"
+  },
+  {
+   "kind": "FLAG",
+   "id": "FLAG-005",
+   "n_days": 3,
+   "suggested_underlying": "(internal - node only)",
+   "resolution": "internal-flag",
+   "why": "definition not in current paradigm_flags.md - verify location"
+  },
+  {
+   "kind": "promotion-candidate",
+   "id": "friston: active-inference concept-label",
+   "n_days": 44,
+   "suggested_underlying": "friston-2017-active-inference-process-theory",
+   "resolution": "NOT auto-promoted (denylisted concept)",
+   "why": "44 generic days matched the concept-label 'active inference'; confirm which truly cite the 2017 process-theory paper vs stay generic->FEP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "carroll-PRS-01",
+   "n_days": 4,
+   "suggested_underlying": "carroll-2016-big-picture",
+   "resolution": "canonical",
+   "why": "RC-Tome re-description; ontological-closure/emergence -> Big Picture"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "carroll-PRS-04",
+   "n_days": 6,
+   "suggested_underlying": "carroll-2016-big-picture",
+   "resolution": "canonical",
+   "why": "RC-Tome; agency-without-dualism -> Big Picture"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "carroll-PRS-05",
+   "n_days": 1,
+   "suggested_underlying": "carroll-2016-big-picture",
+   "resolution": "canonical",
+   "why": "RC-Tome; science-religion dialogue -> Big Picture"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "carroll-PRS-07",
+   "n_days": 4,
+   "suggested_underlying": "carroll-2026-mindscape-349-harlow",
+   "resolution": "staged",
+   "why": "Mindscape #349 GUEST (Harlow) - attribution decision needed"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "fredrickson-PRS-04",
+   "n_days": 1,
+   "suggested_underlying": "fredrickson-2013-love-2-0",
+   "resolution": "canonical",
+   "why": "RC-Tome; relational coherence -> Love 2.0"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "fredrickson-PRS-06",
+   "n_days": 5,
+   "suggested_underlying": "fredrickson-2013-love-2-0",
+   "resolution": "canonical",
+   "why": "RC-Tome; democratizing participation -> Love 2.0"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "fredrickson-PRS-08",
+   "n_days": 1,
+   "suggested_underlying": "fredrickson-2025-conducive-conditions-positivity-resonance",
+   "resolution": "staged",
+   "why": "UBC colloquium talk"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-01",
+   "n_days": 3,
+   "suggested_underlying": "friston-2010-free-energy-principle",
+   "resolution": "canonical",
+   "why": "RC-Tome; biological agency without vitalism -> FEP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-04",
+   "n_days": 24,
+   "suggested_underlying": "friston-2010-free-energy-principle",
+   "resolution": "canonical",
+   "why": "RC-Tome; organism as active modeler -> FEP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-05",
+   "n_days": 3,
+   "suggested_underlying": "friston-2010-free-energy-principle",
+   "resolution": "canonical",
+   "why": "RC-Tome; distributed cognition across scales -> FEP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-06",
+   "n_days": 2,
+   "suggested_underlying": "friston-2010-free-energy-principle",
+   "resolution": "canonical",
+   "why": "RC-Tome; multi-agent coherence -> FEP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-07",
+   "n_days": 10,
+   "suggested_underlying": "friston-2026-active-inference-review",
+   "resolution": "staged",
+   "why": "2026 review paper (also confirms CROSS-006/007)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "friston-PRS-08",
+   "n_days": 19,
+   "suggested_underlying": "friston-2026-active-inference-review",
+   "resolution": "staged",
+   "why": "same 2026 review, Section 4.1"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hawkins-PRS-03",
+   "n_days": 1,
+   "suggested_underlying": "hawkins-2021-thousand-brains",
+   "resolution": "canonical",
+   "why": "RC-Tome; knowledge-preserving AGI -> Thousand Brains"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hawkins-PRS-04",
+   "n_days": 2,
+   "suggested_underlying": "hawkins-2021-thousand-brains",
+   "resolution": "canonical",
+   "why": "RC-Tome; reference frames -> Thousand Brains"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hoffman-PRS-01",
+   "n_days": 9,
+   "suggested_underlying": "hoffman-2019-case-against-reality",
+   "resolution": "canonical",
+   "why": "RC-Tome; hard-problem transformation -> Case Against Reality"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hoffman-PRS-03",
+   "n_days": 18,
+   "suggested_underlying": "hoffman-2019-case-against-reality",
+   "resolution": "canonical",
+   "why": "RC-Tome; perception fitness-tracking -> Case Against Reality"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hoffman-PRS-04",
+   "n_days": 3,
+   "suggested_underlying": "hoffman-2019-case-against-reality",
+   "resolution": "canonical",
+   "why": "RC-Tome; observer-dependent spacetime -> Case Against Reality"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "hoffman-PRS-07",
+   "n_days": 1,
+   "suggested_underlying": "hoffman-2026-multiscale-logic-collective-intelligence",
+   "resolution": "existing",
+   "why": "Thoughtforms Life talk = the seeded 2026 multiscale-logic entry; confirm talk-vs-article container"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "kastrup-PRS-04",
+   "n_days": 3,
+   "suggested_underlying": "kastrup-2019-idea-of-the-world",
+   "resolution": "canonical",
+   "why": "RC-Tome; philosophy<->mathematics bridge -> Idea of the World"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "levin-PRS-01",
+   "n_days": 14,
+   "suggested_underlying": "levin-2022-cognitive-light-cones",
+   "resolution": "canonical",
+   "why": "RC-Tome; morphogenetic control -> Cognitive Light Cones (consider levin-2018-bioelectric-code)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "levin-PRS-04",
+   "n_days": 10,
+   "suggested_underlying": "levin-2022-cognitive-light-cones",
+   "resolution": "canonical",
+   "why": "RC-Tome; cognition substrate/xenobots -> Cognitive Light Cones (consider levin-2020-xenobots)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "levin-PRS-07",
+   "n_days": 3,
+   "suggested_underlying": "levin-2026-ferriss-interview",
+   "resolution": "staged",
+   "why": "Tim Ferriss Show #849"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "levin-PRS-08",
+   "n_days": 8,
+   "suggested_underlying": "levin-2026-ferriss-interview",
+   "resolution": "staged",
+   "why": "Tim Ferriss Show #849"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "loughran-PRS-08",
+   "n_days": 2,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "canonical",
+   "why": "RC-Tome tradition-crossing inquiry, re-homed from stump PRS-01 per ASSUMPTION-076; consider a distinct 'RC Tome' work"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "mcgilchrist-PRS-03",
+   "n_days": 2,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary",
+   "resolution": "canonical",
+   "why": "RC-Tome; hemispheric modes -> Master & Emissary"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "mcgilchrist-PRS-04",
+   "n_days": 2,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary",
+   "resolution": "canonical",
+   "why": "RC-Tome; multi-agent integration -> Master & Emissary"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "mcgilchrist-PRS-05",
+   "n_days": 1,
+   "suggested_underlying": "mcgilchrist-2009-master-and-his-emissary",
+   "resolution": "canonical",
+   "why": "RC-Tome; attention as ontological act -> Master & Emissary (consider 2021 Matter with Things)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-04",
+   "n_days": 13,
+   "suggested_underlying": "stump-2010-wandering-in-darkness",
+   "resolution": "canonical",
+   "why": "RC-Tome; final causality & biology -> Wandering (consider stump-2003-aquinas)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-05",
+   "n_days": 17,
+   "suggested_underlying": "stump-2010-wandering-in-darkness",
+   "resolution": "canonical",
+   "why": "RC-Tome; suffering & divine permission -> Wandering in Darkness"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-06",
+   "n_days": 1,
+   "suggested_underlying": "stump-2010-wandering-in-darkness",
+   "resolution": "canonical",
+   "why": "RC-Tome; tradition vitality & MacIntyre -> Wandering (cross to macintyre)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-07",
+   "n_days": 1,
+   "suggested_underlying": "stump-2025-biblical-narratives-flourishing",
+   "resolution": "staged",
+   "why": "Stump & Wolfe, Routledge"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-08",
+   "n_days": 1,
+   "suggested_underlying": "stump-2024-grains-of-wheat",
+   "resolution": "staged",
+   "why": "Grains of Wheat, OUP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "stump-PRS-11",
+   "n_days": 16,
+   "suggested_underlying": "stump-2024-grains-of-wheat",
+   "resolution": "staged",
+   "why": "Grains of Wheat, OUP"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "wolfram-PRS-04",
+   "n_days": 3,
+   "suggested_underlying": "wolfram-2020-project-fundamental-theory",
+   "resolution": "canonical",
+   "why": "RC-Tome; computational irreducibility & agency -> Fundamental Theory (consider wolfram-2002-nks)"
+  },
+  {
+   "kind": "scoped-PRS",
+   "id": "wolfram-PRS-06",
+   "n_days": 18,
+   "suggested_underlying": "wolfram-2026-metaphysics-and-the-ruliad",
+   "resolution": "existing",
+   "why": "= the seeded 2026 Ruliad metaphysics entry"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-01",
+   "n_days": 31,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-02",
+   "n_days": 18,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-03",
+   "n_days": 23,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-04",
+   "n_days": 23,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-05",
+   "n_days": 5,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-06",
+   "n_days": 11,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-07",
+   "n_days": 7,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-08",
+   "n_days": 20,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-09",
+   "n_days": 2,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  },
+  {
+   "kind": "unscoped-PRS",
+   "id": "PRS-11",
+   "n_days": 6,
+   "suggested_underlying": "loughran-2026-prs-synergistic-coil-form",
+   "resolution": "provisional-loughran",
+   "why": "unscoped - confirm whether master-framework or a thinker PRS"
+  }
+ ],
+ "self_check_errors": []
+}
