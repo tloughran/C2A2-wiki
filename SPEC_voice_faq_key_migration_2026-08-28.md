@@ -70,11 +70,52 @@ Two legacy pairs have no home even in principle and are not carried forward: *Wh
 the review cards?* (`review_log.html`) and *Is Start Here different from the Community
 Explorer?* -- both need their target page to gain a knowledge file first.
 
-## Acceptance test
+## Acceptance test -- CORRECTED 2026-08-28, the original was wrong
 
-`python3 scripts/voice_faq.py merge <qa.json>` completes **without `--allow-drop`**.
-That is the whole test. Passing `--allow-drop` today would ship 27 good pairs and delete
-86, stripping the guide of every answer it has for twelve tabs -- a coverage regression
-far larger than the six bad claims it would fix.
+The original text of this spec said the test was `merge` completing **without**
+`--allow-drop`. **That is unachievable by construction and was a mistake.** The guard
+compares published keys against inventory keys as strings; re-keying means
+`community_explorer.html` will never appear in an inventory that says
+`community_explorer.default`. The flag can never become unnecessary.
+
+`b38c469` says so in its own message: the drop "is correct exactly once -- at the end of a
+key migration, after the pairs have been re-homed." The guard is not a condition that clears
+itself. It is a **re-homing checklist that a human signs off.**
+
+The real acceptance test, and the one that was met:
+
+1. Every legacy key has a knowledge file and its Q&A re-homed under the new `state_key`.
+2. `merge --dry-run --allow-drop` reports the expected additions and no dupes.
+3. `scripts/test_voice_faq.sh` passes -- it asserts the old key is gone from the published
+   file and that the report names the drop.
+4. The published file contains none of the forbidden claims.
+
+## RESOLVED 2026-08-28
+
+Published: **19 features, 81 pairs**, no legacy `.html` keys remain. `test_voice_faq.sh`
+19/19. "over sixteen hundred" and "fifteen framings/angles": **0 occurrences**.
+
+Deliberately dropped, one pair: *What are the review cards?* -- `review_log.html` has no
+knowledge file, so it had no home. If that page gains one, re-author it there.
+
+Net 102 -> 81 pairs. Coverage by tab is complete; the reduction is duplicate phrasings and
+every answer whose content was a forbidden count.
+
+### Canonical state_keys (from `wiki/voice_guide/destinations.json`, not guessed)
+`community_explorer.default`, `community_cards.default`, `community_interactions.default`,
+`narrative_connectome.default`, `agent_map.default`, `metabolism.default`,
+`curriculum_tools.default`, `inter_tradition_study.default`, `rc_document_explorer.default`,
+`physics_explorer.default`, `trv_commentary.default`, `ai_heartbeat.default`.
+
+### The editorial rule these files establish
+- A count of **live data** (annotations, communities, nodes, synthesized days) is volatile:
+  never quote it.
+- A fact about a **fixed published artifact** (MacIntyre's 1988 Gifford Lectures, the 471-page
+  tome, Habash's 308 episodes) is stable: state it freely. Files that have such facts carry a
+  `## Stable facts you MAY state` section.
+- **No bus means refuse, not defer.** Only `explorer.html` and `wiki_narration.html` implement
+  `describe_view`. On the other twelve tabs there is nothing to defer to, so the guide says it
+  cannot see the figure and offers to open the tab. Deferring to a non-existent bus would be a
+  new species of fabrication.
 
 Do not hand-edit `wiki/voice_guide_faq.json`. It is generated.

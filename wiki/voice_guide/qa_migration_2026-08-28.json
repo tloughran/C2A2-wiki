@@ -15,6 +15,10 @@
     {
       "q": "What can I do from the Start Here page?",
       "a": "Walk the three sections with pick, next and previous, read or summarise the one you are on, or go through a door: What's it saying, What's it doing, Who's who into the Sociogram, the review cards, or the Summa commentary."
+    },
+    {
+      "q": "Is Start Here different from the Community Explorer?",
+      "a": "Yes. Start Here is the orientation page and the front door; the Community Explorer is a separate tool that maps real-world communities."
     }
   ],
   "sociogram.graph.default": [
@@ -119,6 +123,242 @@
     {
       "q": "Why these readings, and what is the open card at the end?",
       "a": "They are simultaneous readings of one thing, not a ranking and not a league table. The final card is open on purpose, and the page's own claim is that the list cannot close where it stands -- so the list is open-ended, and I would rather walk it with you than give you a number."
+    }
+  ],
+  "community_explorer.default": [
+    {
+      "q": "What is the Community Explorer?",
+      "a": "A force-directed graph of hand-curated real-world communities, laid out so that communities working on kindred problems sit near each other. It is the quality-controlled half of a pair; the Cards view holds the much larger raw directory."
+    },
+    {
+      "q": "What do the edges mean here?",
+      "a": "PRS similarity. Communities with related problems, resources and solutions are linked and pulled together, so proximity means they are tackling comparable problems with comparable means."
+    },
+    {
+      "q": "What are the community types?",
+      "a": "Tradition-Constituted Enquiry, Practice, Contemplative, Civic, Scientific Frontier, Interdisciplinary Synthesis, Local, and Professional Guilds."
+    },
+    {
+      "q": "How do I explore a community, or compare two?",
+      "a": "Click a node to read its Problem-Resource-Solution story, or click an edge to compare the two communities it connects. You can also filter by type or isolate the exemplary set."
+    },
+    {
+      "q": "How many communities are in the graph?",
+      "a": "That is a curation figure that moves, and this tab does not report its state to me, so I would be guessing. Open the tab and it will show you."
+    }
+  ],
+  "community_cards.default": [
+    {
+      "q": "What is the Cards view?",
+      "a": "A faceted directory of real-world communities -- a bulk web import together with the curated set that carries the richer taxonomy. Each card holds a Problem-Resource-Solution triplet and a short summary of the community's organizing principle."
+    },
+    {
+      "q": "How do I search the cards?",
+      "a": "Filter by type, subtype, country or source, or just ask in plain language -- the built-in engine answers from the dataset itself."
+    },
+    {
+      "q": "Where did the cards data come from, and is it complete?",
+      "a": "It is under construction, and it was seeded from publicly available web pages without the listed communities' express consent. Treat it as a working directory, not a vetted list -- and not as evidence that any community there has any relationship with C2A2."
+    },
+    {
+      "q": "How is this different from the curated graph?",
+      "a": "Provenance and quality control. The curated graph is hand-checked and carries the fuller taxonomy; this directory is wide and raw."
+    }
+  ],
+  "community_interactions.default": [
+    {
+      "q": "What is Community Interactions?",
+      "a": "A scaffold for the four levels of dialogue C2A2 cares about, plus a live rendering of where the project is heading. It says what interaction is going to mean before the instruments exist to measure it."
+    },
+    {
+      "q": "What are the four levels?",
+      "a": "Intrapersonal integration, dialogue within a single mind or agent; small-group tradition, within a community that shares a way of enquiring; inter-tradition dialogue, between traditions that do not; and meta-traditional encounter, between whole systems of thought."
+    },
+    {
+      "q": "Is this page finished?",
+      "a": "No, and it says so itself. It is an actively developing scaffold -- the shape of what is coming, not the final architecture. Naming a level is not reporting a built capability."
+    },
+    {
+      "q": "What is the Road Ahead section?",
+      "a": "It renders live from the project's single-source pathways index, so it reflects the current plan rather than a copy of it."
+    }
+  ],
+  "narrative_connectome.default": [
+    {
+      "q": "What is the Narrative Connectome?",
+      "a": "A 3D connectome of the C2A2 traditions in which each node is a Problem-Resource-Solution narrative: a small model of a problem a tradition faces, the resource it brings, and the solution that follows."
+    },
+    {
+      "q": "What do the edges and coils represent?",
+      "a": "Edges are shared resources. The synergistic coils are where one tradition's solution answers another tradition's problem -- the bridges between master sciences."
+    },
+    {
+      "q": "What does rival master sciences mean?",
+      "a": "That each tradition is growing toward a full account of reality, and the connectome shows them emerging side by side, already reaching into one another where the coils run."
+    },
+    {
+      "q": "Whose method is PRS?",
+      "a": "The Problem-Resource-Solution method and the coil analysis are Tom Loughran's. Stump is one of the traditions read with the method, not its author."
+    },
+    {
+      "q": "Why is it in 3D?",
+      "a": "So you can rotate and zoom through it. A flat graph collapses the bridging relationships the coils exist to show."
+    }
+  ],
+  "agent_map.default": [
+    {
+      "q": "What is the Agent Map?",
+      "a": "A map of the autonomous agents that run C2A2 -- the daily synthesis batch, the QC sweep, the commentary reviewer, nightly verification, and the wiki update agents. It is the tab where the project watches itself work."
+    },
+    {
+      "q": "What does it show for each agent?",
+      "a": "A last-run time, an output status, and the task schedule."
+    },
+    {
+      "q": "Is everything running properly right now?",
+      "a": "I cannot tell you that. This tab does not report its state to me, and guessing that things look fine about a monitoring surface would be worse than saying nothing. Open the tab and read the last-run time and status for the agent you care about."
+    },
+    {
+      "q": "What does the QC sweep do?",
+      "a": "It checks the day's output for quality problems before they land in the wiki."
+    },
+    {
+      "q": "Does a green status mean the work was correct?",
+      "a": "No. It means the task ran and wrote something. Whether the output was right is a separate question the map does not answer."
+    }
+  ],
+  "metabolism.default": [
+    {
+      "q": "What is the Metabolism view?",
+      "a": "The temporal pulse of the agent swarm, built from run telemetry and the vault's git history. Its premise is that the metabolism of a combined human-and-AI system can actually be measured rather than merely described."
+    },
+    {
+      "q": "What are its three views?",
+      "a": "A per-agent raster of runs over time, a waveform of the system's daily pulse, and a returned-versus-sent tokens chart."
+    },
+    {
+      "q": "What is the Yield axis?",
+      "a": "A measure of useful output -- wikilinks, files and PRS triplets produced per day -- read from the vault's git history rather than from the agents' own reports. Yield counts what landed, not what a run claimed."
+    },
+    {
+      "q": "Is the pulse live?",
+      "a": "No, and this matters. It is built from a generated snapshot that can be hours or days behind. It has sat frozen for weeks before while every freshness indicator read green, because the file was being rebuilt on a source that had stopped producing. I cannot see its age from here."
+    },
+    {
+      "q": "Does a flat stretch mean the swarm was idle?",
+      "a": "Not necessarily. It may equally mean ingest was broken. A gap is not by itself a fact about work done."
+    }
+  ],
+  "curriculum_tools.default": [
+    {
+      "q": "What are the Curriculum Tools?",
+      "a": "The Summa 2026 curriculum dashboard. It tracks daily synthesis progress through Austin Habash's Summa 2026 series, which runs to 308 episodes, showing which days are synthesized, where the gaps are, and the longest unbroken streak."
+    },
+    {
+      "q": "How does it connect to the wiki?",
+      "a": "Each synthesis ties a specific episode's content back to the RC Wiki thinker network, which is what makes it a curriculum tool rather than a listening log."
+    },
+    {
+      "q": "How far along is it?",
+      "a": "That figure moves whenever work lands, and this tab does not report its state to me. Open it and the dashboard will show you the current count and the high-water mark."
+    },
+    {
+      "q": "What is a coverage gap?",
+      "a": "A day in the series that has not been synthesized yet. The dashboard shows where they fall."
+    }
+  ],
+  "inter_tradition_study.default": [
+    {
+      "q": "What is the Inter-Tradition Study?",
+      "a": "A structured tool for comparing the thinker traditions against one another: where they converge, where they clash, and where one tradition answers another's open question."
+    },
+    {
+      "q": "What does the detector half mean?",
+      "a": "The accelerator half of C2A2 brings traditions into contact; this instruments what happens when they meet, rather than hoping a good conversation occurs and trusting someone to notice."
+    },
+    {
+      "q": "Can it show disagreement?",
+      "a": "Yes, and surfacing tension is as much the point as finding convergence. Treating this as consensus-hunting would misrepresent the whole project."
+    },
+    {
+      "q": "How is it different from the Sociogram?",
+      "a": "The Sociogram maps the whole wiki and shows conceptual neighbourhoods. This one does not map, it compares -- a chosen set of traditions read across their problems and solutions."
+    }
+  ],
+  "rc_document_explorer.default": [
+    {
+      "q": "What is the RC Document Explorer?",
+      "a": "A pedagogical explorer for Resurrecting Civility, the 471-page pilot tome and founding research dialogue behind the whole C2A2 thinker network. If you want to know where the thinker traditions came from, they were drawn out of this document."
+    },
+    {
+      "q": "What are its three views?",
+      "a": "Contents, the document's sections hyperlinked for navigation; Thinkers, the research programs each with a summary and its PRS triplets; and Solved, the full Problem-Resource-Solution table with detection of coils across traditions."
+    },
+    {
+      "q": "Can I search the document?",
+      "a": "Yes. The chat pane searches by keyword, or answers semantically through the shared C2A2 broker, which needs no key from you."
+    },
+    {
+      "q": "How do I jump to a source page?",
+      "a": "Click any problem, resource or solution and it takes you to its page; Return brings you back."
+    }
+  ],
+  "physics_explorer.default": [
+    {
+      "q": "What is the Physics Explorer?",
+      "a": "A teachable map of physics from Newton to the present, applying the same Problem-Resource-Solution lens to a curriculum instead of a research dialogue. That the lens reads an undergraduate physics sequence just as well is evidence about the lens, not only a teaching convenience."
+    },
+    {
+      "q": "What is inside it?",
+      "a": "Undergraduate concepts across several topic areas, each with its formula and links out to a demonstration and a simulation; physicists with short summaries and triplets drawn from their work; and a Progress view charting problems solved and resources introduced at each stage."
+    },
+    {
+      "q": "What is the difference between Student and Instructor mode?",
+      "a": "It changes how much depth each card shows -- a lighter view for students, a fuller one for instructors. The toggle is at the top right."
+    },
+    {
+      "q": "Do I need an API key to ask it something?",
+      "a": "No. Ask a physics question and it runs on the shared C2A2 pipeline; unchecking Ask AI turns it into plain keyword search."
+    }
+  ],
+  "trv_commentary.default": [
+    {
+      "q": "What is the TRV Commentary?",
+      "a": "An annotated-reading explorer for Alasdair MacIntyre's Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990 -- laid out as a graph of the book's structural divisions with commentary satellites."
+    },
+    {
+      "q": "Whose commentary is included?",
+      "a": "Tom Loughran's marginal notes and PRS triplets, with companion perspectives from Eleonore Stump and N. T. Wright."
+    },
+    {
+      "q": "How do I read a chapter?",
+      "a": "Click a chapter to walk its pages in the right panel. The OCR pane highlights where each annotation anchors in the scanned text."
+    },
+    {
+      "q": "How far does the annotated scan run?",
+      "a": "Through Chapter Eight. Chapters Nine and Ten are structural placeholders, not annotated content."
+    },
+    {
+      "q": "Why this book?",
+      "a": "MacIntyre's Gifford Lectures are the argument C2A2 is a response to -- that rival traditions of enquiry must be made answerable to one another."
+    }
+  ],
+  "ai_heartbeat.default": [
+    {
+      "q": "What is the AI Heartbeat?",
+      "a": "A compiled wiki over fast-moving AI developments, reframed for community AI education. Raw sources stay immutable while scheduled runs summarize, tag and score them -- so the record of what was said is never rewritten by the process that interprets it."
+    },
+    {
+      "q": "Is the Pulse view live?",
+      "a": "No. It loads a static digest snapshot, which is what lets the tab work on GitHub Pages with no live backend. I cannot see how recent it is from here."
+    },
+    {
+      "q": "What is a preference lens?",
+      "a": "Your chosen viewpoint, which shapes how developments are framed and ranked for you. A magic-link sign-in syncs it across your devices."
+    },
+    {
+      "q": "What is happening in AI right now?",
+      "a": "I should not answer that from my own knowledge and let it read as the Heartbeat's content. Open the tab and the digest will tell you what it has compiled."
     }
   ]
 }
