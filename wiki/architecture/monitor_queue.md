@@ -21778,3 +21778,260 @@ SYSTEMIC-RISK-2026-08-26-B:
       183, 173; the remedy allocation is REVISION-FLAGGED and awaits Tom)
 
 --------------------------------------------------------------------------------
+
+MONITOR-557:
+  Date queued: 2026-08-28
+  Source item: ASSUMPTION-1222 (14a) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: Sampling rather than exhaustive inspection is appropriate for a class of items at a
+    human-in-the-loop approval gate; secondarily, a rule described as "standing" is in force although
+    its adoption is unrecorded.
+  15a: PARTIALLY-SUPPORTED (Moderate). The general form is uncontroversial quality engineering —
+    sampling is justified where testing is destructive, volume is high, cost is prohibitive, or
+    supplier history supports it, and hybrid criticality-based regimes are normal practice.
+  15b: CHALLENGED (Moderate-Strong). Every endorsement is conditional on a calibrated risk tolerance
+    and a stated defect rate, neither of which exists here; Deming rejected acceptance sampling
+    outright, and the low-PPM argument says sampling degrades precisely where defects are rare and
+    consequences high — the regime of a curation gate. Consumer's risk is structural.
+  Net: the form is supported and this instance is uncalibrated. Not REVISE, because the exemption may
+    well be correct and the cost of being wrong is bounded; not INCORPORATE, because nothing on record
+    earns it.
+  What would change the disposition: a recorded defect-rate basis and adoption record → INCORPORATE.
+    A measured escape rate above zero in the exempted class → REVISE.
+  Discriminating test (cheap, in-house): apply full review to a random 1-in-N of the exempted class
+    for one month and count defects. This converts an untestable exemption into a measurement.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2 (controls adopted without a recorded derivation).
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-828 · Status MONITORING
+
+MONITOR-558:
+  Date queued: 2026-08-28
+  Source item: ASSUMPTION-1223 (14a) · Queue ref 2026-08-27 intake, Priority High
+  Statement: A keyword-triggered escalation filter can invert — holding the highest-value items —
+    because item value and the trigger token co-occur. Precision reported as 1-of-17.
+  15a: PARTIALLY-SUPPORTED (Moderate). Escalation triage is a recall-dominant problem; the
+    precision/recall trade-off is monotone in the threshold; the practice literature has moved to
+    severity-weighted triage scores. The frame is supported; the inversion mechanism is not addressed
+    anywhere found.
+  15b: PARTIALLY-CHALLENGED (Moderate-Strong on the evidential limb). 1-of-17 is a point estimate with
+    one positive event; default Wald and percentile-bootstrap intervals under-cover badly at this n,
+    and reporting a bare ratio produces false definiteness.
+  Net: the concern is well-framed and the evidence for it is one uncounted ratio. Neither direction
+    found anything on the distinctive claim — that value and the trigger token co-occur.
+  What would change the disposition: a measured correlation between held-item value and trigger-token
+    presence → REVISE (the filter inverts). No correlation → a threshold change suffices, and the item
+    closes as ordinary imprecision.
+  Discriminating test: rank the 17 triggered items by value against the unfiltered population's base
+    rate. Two columns. Report precision as a Wilson interval, not a ratio.
+  Monitoring cadence: Weekly
+  Priority: High
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-829 · Status MONITORING
+
+MONITOR-559:
+  Date queued: 2026-08-28
+  Source item: ASSUMPTION-1228 (14a) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: An index at 82% of a hard read limit requires a compaction strategy, and compaction costs
+    the accumulated known-traps record.
+  15a: SUPPORTED (Strong on the mechanism, None on the figure). Compaction is documented as lossy in an
+    unpredictable, structure-destroying way — one observed case reduced 132k tokens of accumulated state
+    to 2.3k; the field's pursuit of "structurally lossless trimming" concedes the premise.
+  15b: PARTIALLY-CHALLENGED (Moderate). Not compacting does not preserve usable memory either:
+    lost-in-the-middle degradation means an index carried at 82% of the limit sits largely in the
+    under-attended region, and retrieval returns term-matches rather than related states. Separately,
+    the 82% figure is unmeasured — the queue entry records the path was out of mount.
+  Net: strong support for the cost of compaction, a real challenge to the framing of the choice, and a
+    trigger condition that has never been measured. MONITOR rather than INCORPORATE because the premise's
+    own precondition is an estimate.
+  What would change the disposition: the measurement. If the index is near the limit → the general
+    premise is worth minting. If the known-traps entries fit in a few kilobytes when extracted, the item
+    dissolves and should be closed rather than carried.
+  Discriminating test: two commands — measure the index; extract the known-traps entries and measure them
+    separately. The blocking issue is a mount path, not a research question.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-831 · Status MONITORING
+
+MONITOR-560:
+  Date queued: 2026-08-28
+  Source item: ASSUMPTION-1231 (14a) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: A queue cleared by hand will refill, arrival rate unchanged, server intermittently absent.
+    Pinned to pending=0 at 2026-08-27, scoreable 2026-09-10.
+  15a: SUPPORTED (Moderate). Little's law gives the result directly: clearing L without touching λ or the
+    service process leaves the relation that produced L intact.
+  15b: PARTIALLY-CHALLENGED (Moderate). The law requires steady state, and a gate whose server has been
+    absent for extended stretches is the paradigm non-stationary case, so the theory supports the sign and
+    not the date. Backlog-recovery literature adds a real defeater: clearance bundled with a
+    prioritisation change is a different intervention and can produce durable reduction.
+  Net: a dated, falsifiable, in-house-scoreable prediction with a defensible basis and an under-specified
+    falsifier. This is the right item to carry to its scoring date rather than to dispose of now.
+  What would change the disposition: the 2026-09-10 measurement itself.
+  Required before scoring, or the test is uninterpretable: (a) state the numeric falsifier now — e.g.
+    "pending ≥ 14 by 09-10 given ~1/day arrival"; (b) record whether anything about admission changed at
+    the time of the 08-27 clearance. If it did, the prediction is confounded and must be re-pinned.
+  Monitoring cadence: Weekly, with a hard checkpoint 2026-09-10
+  Priority: Medium
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-834 · Status MONITORING
+
+MONITOR-561:
+  Date queued: 2026-08-28
+  Source item: ASSUMPTION-1232 (14a) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: When an instruction's wording does not support the distinction an agent draws, governance
+    practices short of halting exist and are appropriate.
+  15a: PARTIALLY-SUPPORTED (Moderate on existence, Weak on adequacy). The practice set exists —
+    confidence-threshold escalation, human checkpoints, risk-class routing, interpretation logging — and
+    is documented mainly in vendor material; no source measures whether it reduces misinterpretation.
+  15b: CHALLENGED (Moderate-Strong). Every practice found terminates in a human decision, and this
+    estate's human channel has demonstrated multi-week latency, so the mitigation is structurally
+    unavailable and "governance short of halting" reduces in practice to proceeding on the agent's own
+    reading with a log. The abstention literature inverts the framing: on an under-specified instruction,
+    informed refusal — naming the unmet precondition — is scored as correct behaviour.
+  Net: subordinate to REVISE-399 (PRESUMPTION-879, diagnosed defects escalated to an unresponsive
+    channel), which is the same defect at the layer that matters. Carried separately because the
+    remedy here is different and cheap.
+  What would change the disposition: an interpretation register. If the interpretations an agent has
+    taken are enumerable and the actions they licensed are traceable, a later human ruling can be applied
+    retroactively and the practice is defensible → INCORPORATE. If they are scattered through run reports,
+    they are not reviewable → REVISE.
+  Discriminating test: ask whether such a register exists. Read together with PRESUMPTION-887 /
+    MONITOR-564 — this is the same object seen from the other side.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2.
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-835 · Status MONITORING
+
+MONITOR-562:
+  Date queued: 2026-08-28
+  Source item: PRESUMPTION-885 (14b) · Queue ref 2026-08-27 intake, Priority High
+  Statement: [inferred] That draining a backlog by hand changes time-to-disposition rather than resetting
+    it; and that the availability of a manual clearance does not suppress investment in a structural remedy.
+  15a: NO-SUPPORT-FOUND (None for the presumption; Strong for its negation). Repenning & Sterman's
+    capability trap states both conjuncts as the loop's entry conditions: firefighting consumes the capacity
+    the structural remedy requires, and its short-run success is what makes the structural option look like
+    it is failing (Worse-Before-Better, then abandonment).
+  15b: PARTIALLY-CHALLENGED (Weak-Moderate). No critique of the capability-trap model was found. What was
+    found is a boundary condition — a clearance bundled with a triage or capacity change is a different
+    intervention, and in facilities and healthcare settings the combined form produces durable improvement
+    (a cited 15–25% labour-capacity recovery). The suppression conjunct is not challenged at all.
+  Net: this is close to REVISE and is held at MONITOR for one reason, stated rather than hidden: the whole
+    supportive case rests on a single research program whose evidence is system-dynamics simulation plus
+    manufacturing field studies, read at snippet level, with the transfer to a one-person estate assumed.
+    A HIGH-priority monitor with a one-question test is the honest placement.
+  What would change the disposition: an answer to the test below. If no admission-side change was
+    considered at the 08-27 clearance → the suppression conjunct is confirmed in-house, no literature
+    needed, and this becomes REVISE. If one was considered and rejected on cost → re-frame.
+  Discriminating test: what admission-side change was considered at the time of the 08-27 clearance?
+  Monitoring cadence: Weekly
+  Priority: High
+  Related: PRESUMPTION-883 / REVISE-402 [FIX FIRST] (admission control), MONITOR-560 (the refill
+    prediction), PREMISE-119. Do not close this without checking whether REVISE-402 moved.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-836 · Status MONITORING
+
+MONITOR-563:
+  Date queued: 2026-08-28
+  Source item: PRESUMPTION-886 (14b) · Queue ref 2026-08-27 intake, Priority High
+  Statement: [inferred] That a single-valued approval token adequately records a curation decision — that
+    endorsement and non-objection need not be distinguished, and that provenance and confidence need not
+    travel with the item.
+  15a: NO-SUPPORT-FOUND. No source endorses a boolean approval record; the documented standards specify a
+    graded outcome plus reviewer identity plus a confidence score, travelling with the item. PARTIAL
+    NOVELTY-FLAG: the endorsement/non-objection distinction was not found named in those terms, though the
+    general requirement it depends on is standard.
+  15b: PARTIALLY-CHALLENGED (Moderate). The challenge is to the fix, not the diagnosis: manual annotation
+    imposes the burden on the human and yields metadata that is "often incomplete and inconsistent";
+    onerous requirements reduce how much gets recorded at all. The literature's recommendation is to derive
+    the richer value automatically rather than to add fields.
+  Net: diagnosis sound, remedy contested, and the contest is empirically settleable here in a month.
+  What would change the disposition: the fill-rate test. Near-100% fill → the burden objection does not
+    transfer to this low-volume estate and the richer token should be INCORPORATED. A defaulting field →
+    the objection is confirmed in-house and the remedy must be derivation, not request.
+  Discriminating test: add the endorsement/non-objection distinction as a two-value field for one month and
+    measure the fill rate. Cheap, dated, and it decides the item either way.
+  Monitoring cadence: Weekly, with a one-month checkpoint 2026-09-28
+  Priority: High
+  Related: PREMISE-188 (a qualifier travels with the claim or it does not travel) — same principle at the
+    approval layer. Consistency-checked: not a duplicate; 188 governs evidentiary qualifiers on claims,
+    this governs the approval token on items.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-837 · Status MONITORING
+
+MONITOR-564:
+  Date queued: 2026-08-28
+  Source item: PRESUMPTION-887 (14b) · Queue ref 2026-08-27 intake, Priority High [14b tagged FIX FIRST]
+  Statement: [inferred] That undocumented local decision rules can be discovered, enumerated and governed,
+    and that detection exists short of the failure that reveals them.
+  15a: PARTIALLY-SUPPORTED (Moderate on the phenomenon, None on detection-before-failure). Shadow processes
+    and unwritten rules are a named, recognised and consequential category. No detection method was found;
+    the process-mining literature, which is where the answer would live, was not reached — recorded as a
+    search failure, not as an absence in the world.
+  15b: CHALLENGED (Moderate). The codification literature challenges the programme: only relational tacit
+    knowledge could in principle be made explicit; collective tacit knowledge resists individual
+    codification; informal arrangements remain locked in despite incentives to formalise; and practitioners
+    often do not experience their rules as rules, which is the mechanism by which self-enumeration returns a
+    short, plausible, incomplete list.
+  Net: **the FIX FIRST tag is explicitly not honoured, and the reason is on the record.** Building a shadow-
+    rule register before knowing what populates it, and before knowing whether the enumeration terminates,
+    would construct the artifact the codification literature predicts will read as complete while being
+    partial — a worse epistemic position than the present one. 15c does not have the authority to remove
+    14b's tag and does not; it declines to act on it and says why.
+  What would change the disposition: convergence. If a behaviour-derived enumeration run on two separate
+    weeks returns a converging count → the programme terminates and this becomes INCORPORATE plus a build.
+    If the count keeps growing → REVISE, and the remedy is detection-at-decision-time rather than a register.
+  Discriminating test, and note it inverts the direction: do not ask an agent to list its rules. Take one
+    week of decisions, extract each stated rationale, and diff against `decisions.md` and the agent specs.
+    Anything with no authority is a shadow rule. Repeat on a second week; convergence is the terminating
+    condition the presumption needs.
+  Monitoring cadence: Weekly
+  Priority: High
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2. Read with MONITOR-561 (ASSUMPTION-1232) — same object.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-838 · Status MONITORING
+
+MONITOR-565:
+  Date queued: 2026-08-28
+  Source item: PRESUMPTION-888 (14b) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: [inferred] That material has value because an existing consumer reads it — value routed
+    through a consumer at every step and never through content.
+  15a: NO-SUPPORT-FOUND (Strong for the negation). The streetlight effect names this exactly: "availability
+    gets mistaken for relevance: a metric is used because the API returns it, and the justification is
+    worked out afterwards," with the reflexive rider that measuring only the lit region makes those things
+    important.
+  15b: PARTIALLY-CHALLENGED (Moderate). Archival appraisal supplies a genuine defence: where future uses
+    are unknowable, observed use is a considered proxy, and the profession has argued this since
+    Schellenberg without settling it. Use-based valuation is a position, not an error.
+  Net: both directions are right about different scopes, and the resolution is a conditional the estate can
+    act on: use-by-a-consumer is a legitimate proxy WHEN the consumer population is external to the thing
+    being assessed, and becomes circular when the only consumer is the assessing system's own instrument.
+    Held at MONITOR rather than minted because the conditional is 15c's synthesis, not a finding either
+    direction reported, and a premise assembled by the evaluator from two half-arguments is exactly the
+    thing PREMISE-124 says needs an external referent.
+  What would change the disposition: independent confirmation of the conditional from the appraisal
+    literature read at more than snippet level → INCORPORATE.
+  Discriminating test: take the material the current instrument does not read and check whether anything in
+    the estate's registers records it as UNASSESSED. If it appears nowhere, the circularity is operative and
+    the conditional's second clause is instantiated here.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-839 · Status MONITORING
+
+MONITOR-566:
+  Date queued: 2026-08-28
+  Source item: PRESUMPTION-892 (14b) · Queue ref 2026-08-27 intake, Priority Medium
+  Statement: [inferred] That a limit continues to carry information after repeated disclosed breach; and
+    that a repeatedly-exceeded budget is a real constraint rather than a mislabelled metric.
+  15a: NO-SUPPORT-FOUND on limb 1 (Strong for its negation) — Vaughan's defining sentence describes a
+    28-for-28 record with unusual precision. **Limb 2 NOT SEARCHED by either direction**, declared.
+  15b: CHALLENGED (Moderate-Strong). Normalisation of deviance carries a documented hindsight problem —
+    practices that "succeeded repeatedly under uncertainty" get overpathologised once an outcome is known —
+    and empirical reviews caution against generalised use without context-specific validation. Applying it
+    to a token budget with no demonstrated adverse outcome is the generalised use they warn about.
+  Net: the observation is not in dispute; the frame is, and the estate currently has two opposite defensible
+    readings and no procedure for choosing. That is not indecision — it is the direct consequence of the
+    missing derivation, which is why this item and ASSUMPTION-1229 (REVISE-404) are the same problem.
+  What would change the disposition: the derivation. Found → the breaches are deviations, the frame applies,
+    and this becomes INCORPORATE. Absent → the number is a placeholder, the breach record is evidence about
+    the number, and both this and REVISE-404 re-frame from defending or excusing a limit to setting one.
+  Discriminating test: one query. Locate the origin of the 4,000-per-task / 30,000-per-session token budget.
+  Monitoring cadence: Weekly
+  Priority: Medium — raised in practice by its coupling to REVISE-404
+  Standing disclosure: this run is itself in breach of both budgets and says so in its run report. It is
+    the 29th consecutive instance and is an in-house data point for this item, not an outside observation.
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-843 · Status MONITORING

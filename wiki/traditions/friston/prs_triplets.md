@@ -1,5 +1,5 @@
 # Karl Friston — PRS Triplets
-*Maintained by the Karl Friston Agent | Last updated: 2026-04-03*
+*Maintained by the Karl Friston Agent | Last updated: 2026-08-28*
 *Source: Resurrecting Civility HTML Document Explorer (RC Pilot)*
 
 ## Format
@@ -375,7 +375,43 @@ PRS-40:
   Confidence: Medium
   Evidence: Abstract — "this review aims to provide valuable meta-scientific insights into the mechanics of adversarial collaboration and theory-testing in general - including the way theories may be evaluated in terms of the scientific progress they deliver."
 
-*Total PRS triplets: 40*
+PRS-41:
+  Problem: The FEP stands charged with the map–territory fallacy (Bruineberg et al. 2020; van Es 2020; Andrews 2021, 2022) — reifying the modeller's inferential apparatus by attributing it to the physical system. If the charge sticks it is not local damage: every downstream claim this node records about cells (PRS-03, PRS-08), collectives (PRS-06, PRS-22, PRS-23) and AI agents (PRS-24, PRS-25) inherits it, and the tradition's cross-substrate reach becomes an artefact of loose language rather than a result.
+  Resource: A clean three-way separation of constructs the FEP literature is said by its own authors to have "historically botched": the **generative model** (the scientist's model of the dependence structure entailed by the system's dynamics), the **variational density** (what the system's internal states actually parameterise — "the part of the territory that behaves like a map"), and the **generative process** (also part of the scientific model, used when simulating external-state dynamics).
+  Solution: The charge is refused and then inverted — the allegation "itself constitutes a map-territory fallacy fallacy." The FEP-theoretic model is a map of that part of the territory which behaves *as if* it were a map, and no reification occurs provided the three constructs are kept apart. The cost is that the tradition must give up a phrasing it has used freely: on this account a system does not *have* a generative model.
+  Date Added: 2026-08-28
+  Source: A framework for the use of generative modelling in non-equilibrium statistical mechanics (Ramstead, Sakthivadivel & Friston, Proc. R. Soc. A 482(2330):20250538); PROP-2026-08-10-004
+  Confidence: High
+  Evidence: §§4–5, verbatim from the author manuscript (arXiv:2406.11630, 25 Feb 2025): "The subtle but key point is that the generative model is *not* encoded by the internal states of the particle being considered: it is not some kind of internal model"; and "We have further argued that this allegation itself constitutes a map-territory fallacy fallacy." **Version caveat (fail-loud):** the preprint was read in full; the Proc. R. Soc. A version of record was NOT retrieved (Royal Society page returned an empty JavaScript-rendered body), so wording changed in review — received 19 Jun 2025, accepted 21 Nov 2025 — is unverified.
+
+PRS-42:
+  Problem: FEP claims are routinely read in a strong literalist register — that cells, organisms and communities *are* performing Bayesian inference. That reading is what makes the principle exciting and also what makes it vulnerable, and the literature had not stated plainly which register it intends.
+  Resource: The **"as if" / explanatory-fiction formulation**, stated as a limit on the theory by its own author rather than by a critic.
+  Solution: Conformity to the FEP does not entail that the conforming object performs inference; the inferential description is a useful fiction that substitutes an implicit flow on free-energy gradients for the explicit dynamics. This is a **load-bearing correction to this node's own record**: PRS-08 states that cells are "FEP agents with target morphologies as prior beliefs," and PRS-03 that morphogenetic goal-seeking *is* free-energy minimization. Neither is withdrawn by the paper — Friston does not retract the morphogenesis bridge — but what they claim is now narrower than their phrasing suggests, and the Levin bridge must be restated with that in view. The authors are explicit that the deflation is a trade, not a free win: tractability is bought at the price of literal fidelity.
+  Date Added: 2026-08-28
+  Source: A framework for the use of generative modelling in non-equilibrium statistical mechanics (Ramstead, Sakthivadivel & Friston, Proc. R. Soc. A 482(2330):20250538); PROP-2026-08-10-004
+  Confidence: High
+  Evidence: Abstract, verbatim: "the fact that a physical object conforms to the FEP does not necessarily imply that this object performs inference in the literal sense; rather, it is a useful explanatory fiction which replaces the 'explicit' dynamics of the object with an 'implicit' flow on free energy gradients—a fiction that may or may not be entertained by the object itself." §4: "In developing an inferential account of the dynamics of systems, we need not assume that the particle itself is literally performing inference"; and "The fact that it is our model of the system which does inference and not necessarily the system itself is both a boon and a bane." Footnote 3 notes that stronger literalist defences exist (Kiefer) which the authors neither adopt nor refute — so this is the authors' preferred register, not a demonstration that the literalist reading fails.
+
+PRS-43:
+  Problem: What, if anything, does the FEP constrain? A framework that can describe any coupled open system risks being unfalsifiable decoration — the objection PRS-34 answers *within* the framework by making planning the demarcator, and which this triplet answers *about* the framework.
+  Resource: An explicit analogy to Wittgenstein's *Tractatus*: as the *Tractatus* delimited the domain of sensible propositions by fixing the general form of a proposition, bounding meaning "from inside" of language itself, the FEP delimits modelling relations from inside modelling.
+  Solution: The FEP is repositioned as a constraint on maps rather than a description of territories — it "provides a map of any possible map whatsoever," setting limits that arise from what it is to be a model of a physical process at all, with self-application included. This is the strongest scope claim the tradition has on record and it runs in an unexpected direction: it makes the FEP less a physical law (PRS-01, PRS-07) than a transcendental condition on modelling.
+  Date Added: 2026-08-28
+  Source: A framework for the use of generative modelling in non-equilibrium statistical mechanics (Ramstead, Sakthivadivel & Friston, Proc. R. Soc. A 482(2330):20250538); PROP-2026-08-10-004
+  Confidence: Medium
+  Evidence: §§4 and 6, verbatim: the FEP "provides ultimate constraints on possible maps or modelling relations, which arise from what it means to be a map or model of a physical process at all. Indeed, any modelling process consistent with the laws of physics must conform to the FEP, such that the FEP sets ultimate limits on what can count as a map or model," with the parenthetical "(This includes the use of the FEP itself by a modeller.)" Medium, not High: the claim is **stated but not proved in this paper**, and its scope ("any modelling process consistent with the laws of physics") is far wider than anything demonstrated here. It is offered as the framework's interpretive upshot.
+
+PRS-44:
+  Problem: Why prefer FEP-style modelling to writing the random dynamical system down explicitly? Absent an answer, the FEP is a redescription with extra vocabulary — the methodological form of the same objection PRS-43 answers ontologically.
+  Resource: Tractability plus explanation, grounded in the Lyapunov-function property of surprisal: because surprisal decreases along trajectories, the dynamics can be written as a gradient flow rather than studied as the possibly highly non-linear coupling between two systems' dynamics.
+  Solution: A stated methodological payoff — the framework "enables us to construct nested models that respect the known relations among subsystems." This is the justification PRS-22 and PRS-23 were resting on without stating: nesting is what makes the multi-scale claims in this network (cells within tissues within organisms within communities) a modelling *method* rather than a metaphor. Note the direction of support: it licenses the nesting as good methodology, not as evidence that the nested levels are literally inferring — that is exactly what PRS-42 withholds.
+  Date Added: 2026-08-28
+  Source: A framework for the use of generative modelling in non-equilibrium statistical mechanics (Ramstead, Sakthivadivel & Friston, Proc. R. Soc. A 482(2330):20250538); PROP-2026-08-10-004
+  Confidence: High
+  Evidence: Abstract and §2, verbatim: the FEP "has certain advantages over using random dynamical systems explicitly, notably, by being more tractable and offering a parsimonious explanation of why the joint system evolves in the way that it does, based on the properties of the coupling between system components"; and it "enables us to construct nested models that respect the known relations among subsystems."
+
+*Total PRS triplets: 44*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

@@ -12719,3 +12719,169 @@ REVISE-403:
     Current status: REVISION-FLAGGED — awaiting human decision
 
 --------------------------------------------------------------------------------
+
+REVISE-404:
+  Date: 2026-08-28
+  Source item: ASSUMPTION-1229 (14a) · Disposition: REVISE (DISPOSITION-832) · Urgency: Medium
+  Claim flagged: "A disclosed constraint violation that improved the outcome warrants revising the
+    constraint; finding-yield-per-unit-budget is the measure of that warrant."
+  Net assessment: 15a PARTIALLY-SUPPORTED (Weak-Moderate) — only the measurement limb found support;
+    yield-per-unit-of-inspection-effort is a real, measured, comparable quantity. 15a found nothing at
+    all supporting the normative limb. 15b CHALLENGED (Strong): the inference has a name in two
+    literatures and in both it is an error. Outcome bias is evaluating a decision by its known result;
+    the expert-population evidence (judges, psychiatrists) shows care and disclosure do not immunise
+    against it. The structural consequence is the ratchet: a limit that can be raised by exceeding it
+    profitably moves in one direction only.
+  What is at risk: the token budget stops being a control and becomes a formality, removing the estate's
+    only signal that a run is expensive; every future overrun inherits the same defence, since a longer
+    run will nearly always find more. With ASSUMPTION-1221 and PRESUMPTION-892 this is a documented
+    drift across one week, not three incidents.
+  Recommended action, and the order matters: (1) **Do not revise the budget on outcome grounds.**
+    (2) Answer the derivation question first — locate where 4,000/30,000 came from. If no derivation
+    exists, this item is malformed: there is nothing to revise, only a limit to set, and the correct
+    action is to set one prospectively. (3) If a derivation exists, re-derive from yield-per-unit-cost
+    measured across the whole range including compliant runs — plot findings against tokens for the last
+    30 runs. Flat or rising yield at the top of the range earns the revision; falling yield refutes it.
+    (4) Attach an expiry to any revision.
+  Urgency: Medium — raised by coupling to MONITOR-566 and to SYSTEMIC-RISK-FLAG_2026-08-28_G2. The
+    derivation query is one command and settles three items at once.
+  Why flagged rather than monitored: 15a's support does not reach the proposition at issue, 15b's
+    challenge does, and the remedy is a decision about a control rather than a question needing data.
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · Current status: REVISION-FLAGGED —
+    awaiting human decision
+
+REVISE-405:
+  Date: 2026-08-28
+  Source item: ASSUMPTION-1230 (14a) · Disposition: REVISE (DISPOSITION-833) · Urgency: HIGH
+  Claim flagged: "A health check that reads the scheduler establishes that the scheduled work happened;
+    a green verdict may be issued by an instrument that has declared its own read failure."
+    [Already CHALLENGED in-house by 14a on 2026-08-27.]
+  Net assessment: 15a SUPPORTED (Strong) — for the *distinction*, which refutes the item. Liveness probes
+    are defined to exclude business outcomes; for unattended scheduled work "the first sign of failure is
+    silence"; the dead-man's-switch rule is that absence of the expected signal is itself a failure.
+    15b CHALLENGED (Moderate) — no source defends the assumption; the challenge is against the obvious
+    fix, since an existence check without content assertions "can pass even when functionality is broken."
+  **CONSISTENCY FINDING — this is the substance of the flag, and it is not a literature result.**
+    PREMISE-086 (Status ACTIVE) already states this, in the estate's own words: alarm on the AGE of the
+    last dated PASS/FAIL, "absence/staleness is the signal (dead-man's-switch / heartbeat pattern)," with
+    the CONDITIONAL that the report must alarm on age rather than display the last-known value —
+    "else it becomes the perceived-liveness trap" — and must carry its own independent liveness check so
+    it cannot freeze unnoticed. REVISE-147 (2026-06-26) prescribed the remedy: an external dead-man's
+    switch alerting on missed runs, scheduling off app-gating, and a visible stale state. REVISE-157
+    recorded a further live operational failure as a "direct contradiction of validated PREMISE-086."
+    **REVISE-147 has been open 63 days. The 2026-08-26 pipeline produced no `changelog/` or `metrics/`
+    outputs, the health check reported green, and the absence was found ~24 hours later by a
+    human-directed directory listing.** ASSUMPTION-1230 is not a new finding. It is the realized cost of
+    an undischarged one, and it is at least the third recorded instance.
+  What is at risk: every scheduled pipeline in the estate; the daily health report's entire signal value;
+    and, more seriously, the propagation mechanism itself — a premise can be validated, marked ACTIVE,
+    bound to a REVISE, and still not reach the artifact it governs. That is PREMISE-123's know-do gap with
+    a dated cost attached.
+  Recommended action: do NOT mint a new premise; discharge REVISE-147. Concretely, in cost order:
+    (1) the monitor reports UNKNOWN, never green, when it cannot read its source — one-line semantics
+    change, and no source in either direction defends the current behaviour; (2) assert on a content
+    property that cannot occur by accident (run date inside the artifact, non-zero item count), not on
+    file existence; (3) a dead-man window so silence alarms unprompted. Then record why REVISE-147 sat for
+    63 days, because that is the reusable finding.
+  Urgency: HIGH
+  Why flagged: stated ASSUMPTION contradicting an ACTIVE premise, with a first-party realized failure and
+    an undischarged prior flag prescribing the same fix. Per the 15c consistency rule this goes to human
+    review rather than being silently re-decided inside the pipeline.
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G1.
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-406:  [FIX FIRST]
+  Date: 2026-08-28
+  Source item: PRESUMPTION-890 (14b) · Disposition: REVISE (DISPOSITION-841) · Urgency: HIGH
+  Claim flagged: "[inferred] That job liveness is an adequate proxy for artifact production, and that a
+    monitor which has declared its own read failure may still report green."
+  Net assessment: 15a NO-SUPPORT-FOUND (Strong for the negation). 15b NO-CHALLENGE-FOUND on the second
+    limb and PARTIALLY-CHALLENGED on the remedy for the first. **15b searched for a defence of a green
+    verdict from a self-declared-blind instrument and found none.** An undefended limb on a PRESUMPTION —
+    a premise the designers did not know they held — is the configuration 15c is instructed to treat with
+    the most weight.
+  Relation to PREMISE-086 and to REVISE-405: PREMISE-086 covers the first limb (absence is the signal;
+    the monitor needs its own liveness check). It does not cover the second limb in the form this item
+    surfaces it: a monitor that *has read its own failure* and reports green anyway is not frozen — it is
+    running, aware, and wrong. This is a reporting-semantics defect, and it is the gap in an otherwise
+    ACTIVE premise. Recommended as an **amendment to PREMISE-086**, not as a new premise, so the estate
+    does not acquire two premises where it failed to apply one.
+  What is at risk: every instrument in the estate is currently permitted to vote while blind. Nothing in
+    the registers would turn a colour for it, which is why this defect is more likely than the coverage
+    one to persist after a fix round.
+  Recommended action: (1) Amend PREMISE-086 with the clause: A MONITOR THAT CANNOT READ ITS SOURCE REPORTS
+    UNKNOWN; A DEGRADED INSTRUMENT DOES NOT VOTE. (2) Implement it in the health monitor. (3) Sweep for
+    other instruments that emit a verdict on a failed read. Cost of (1) and (2) is minutes.
+  Urgency: HIGH. [FIX FIRST] carried from 14b and endorsed here — unlike PRESUMPTION-887's tag, which this
+    run declines and explains at MONITOR-564. The difference: this remedy is one line and is undefended in
+    the literature; that one is a construction project with a contested shape.
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G1.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-407:
+  Date: 2026-08-28
+  Source item: PRESUMPTION-891 (14b) · Disposition: REVISE (DISPOSITION-842) · Urgency: Medium-High
+  Claim flagged: "[inferred] That an agent's intake channels define its world — that bulk state changes
+    outside those channels need not be detected."
+  Net assessment: 15a NO-SUPPORT-FOUND — the condition has a name (observability blind spot) and is
+    treated as a defect, but the sources prescribe "comprehensive coverage" without a method.
+    15b CHALLENGED (Moderate-Strong), **and the challenge carries the remedy**, which is why this is the
+    most actionable item in the cohort. The presumption describes a design choice as a necessity. The
+    level-triggered / edge-triggered distinction is the settled engineering answer: Kubernetes controllers
+    are event-*triggered* but level-*based*, so "if you miss an event, the next reconciliation catches it
+    anyway," whereas in a purely edge-triggered system a missed event is a permanently missed action.
+  What is at risk: every state-reading agent in the estate is one missed event away from a permanently
+    wrong belief with no mechanism that would ever correct it. The 2026-08-26 miss, the stale WATCH-003,
+    and an idle report issued on a day of maximal activity are not three incidents — they are three
+    instances of one architecture.
+  Recommended action: convert state-reading agents from edge-triggered to level-triggered — on each run,
+    re-derive the relevant state from the artifacts of record and reconcile, rather than reacting only to
+    items arriving in an intake channel. Keep event triggers for latency; do not use them for truth.
+    Start where a clean state of record already exists: the pipeline-health monitor, whose state of record
+    is a directory listing. Cost: one listing per run.
+  Known objection, recorded rather than argued away: the estate lacks a canonical parseable state of
+    record for most agents — this file's own queue carries `[QUEUED]` on at least three different line
+    shapes — so full level-triggering is a parsing project. That is why the recommendation is scoped to
+    the cases where the state of record is already clean.
+  Urgency: Medium-High
+  Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G1.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+REVISE-408:
+  Date: 2026-08-28
+  Source: this run's inventory pass (procedural; NOT an item disposition, and not counted in the
+    cohort's 16)
+  Subject: **REVISE-392's binary is malformed. Amending it to a trinary, and naming the third option.**
+  What happened: the 2026-08-25 run escalated the 26-item 2026-07-21 cohort (lines ~13000-13280 of
+    for_lit_search.md) to Tom as a binary — either (a) reserve a run's budget to search them, or (b) close
+    them WONTSEARCH. This run's inventory pass finds that the binary omits the option the estate had
+    already chosen.
+  The conflict, named rather than averaged (Rule 7): on **2026-07-25** a residue-triage pass classified
+    those same 26 items **individually, by id, with owners**: 22 as INTERNAL-EMPIRICAL routed to in-house
+    test (ASSUMPTION-492, 493, 494, 497, 498, 500, 501, 502, 506, 507, 508, 509, 510, 514, 515, 517, 519,
+    524, 527, 528, 529, 532) and 4 as near-duplicate/subordinate to existing dispositions (ASSUMPTION-511,
+    PRESUMPTION-518, 526, 530). It declared them "formally OUT of the 15a/15b lit-search scope." The
+    2026-08-25 escalation treats the same block as unsearched-but-searchable and does not mention that
+    triage. Both cannot be right.
+  Which is picked, and why: the **2026-07-25 triage**. It is the more tested of the two — it enumerates
+    every item, assigns a class and names an owner, and it applies a standing convention (ASSUMPTION-519 /
+    PREMISE-124) adopted precisely to prevent re-misrouting this cohort. The 08-25 note is more recent but
+    appears to have rediscovered the block by filesystem inspection without reading the triage, which is
+    consistent with its own account of finding them via "a second, differently-written pass."
+  Consequence: neither of REVISE-392's options is correct. Searching them repeats the misrouting the
+    convention exists to prevent; closing them WONTSEARCH mislabels items that are not unsearchable but
+    are *already routed elsewhere*. The correct action is the third one, already identified on 2026-07-28
+    and again on 08-04 and 08-12 and blocked on authorisation ever since:
+    **retag the block to [MISROUTED-INTERNAL-EMPIRICAL] and route it to whoever runs in-house queries.**
+  Recommended action for Tom — one authorisation, not a decision between two bad options:
+    authorise the bulk retag of those 26 items to [MISROUTED-INTERNAL-EMPIRICAL] with the 2026-07-25
+    triage as the classification of record. That removes them from the lit queue's depth, stops every
+    future inventory pass rediscovering them, and puts them where a query can settle them.
+  Why this is filed as an amendment rather than as an eighth notice: PREMISE-183 holds that identical
+    re-filing into a channel with no terminating condition is the futility signature and that repeat
+    filing is correct only when *escalating*. This changes the content of the ask rather than repeating it.
+  **These 26 items were NOT searched by this run**, and the reason is that searching them would be the
+    error, not that the budget ran out.
+  Urgency: Medium — the exposure is queue-depth misreporting and repeated rediscovery cost, not a live
+    operational failure.
+  PROVENANCE: Origin 15c inventory pass 2026-08-28 · Chain [15c] · Current status: REVISION-FLAGGED

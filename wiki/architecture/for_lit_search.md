@@ -18745,3 +18745,184 @@ ITEM: PRESUMPTION-884 — [QUEUED] [SEARCHED-15a: 2026-08-26] [SEARCHED-15b: 202
   PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-884
   · Item type PRESUMPTION (unstated) · Transform: inferred from an internal tension inside one
   transcript — a blanket dismissal and a preserved true positive in the same report · Status QUEUED
+
+## Queued 2026-08-27 (Agents 14a + 14b, self-awareness intake)
+
+ITEM: ASSUMPTION-1222 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Moderate-Strong)
+  15c disposition: MONITOR -> MONITOR-557  (DISPOSITION-828)
+  Question for the literature: Sampling versus exhaustive inspection in human-in-the-loop approval gates.
+  When is a class of items correctly exempted from individual review, and what evidence establishes the
+  exemption? Secondary: rules described as "standing" whose adoption is unrecorded.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1222
+  · Item type ASSUMPTION (stated) · Transform: extracted verbatim from `review/archive/2026-08-27_decisions.md`
+  · Status QUEUED
+
+ITEM: ASSUMPTION-1223 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority High
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate-Strong)
+  15c disposition: MONITOR -> MONITOR-558  (DISPOSITION-829)
+  Question for the literature: Precision and recall of keyword-triggered escalation classifiers. What is
+  known about string-matching triage that inverts — holding the highest-value items because value and the
+  trigger token co-occur?
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1223
+  · Item type ASSUMPTION (stated) · Transform: extracted verbatim; 1-of-17 precision figure carried as stated,
+  not independently recounted · Status QUEUED
+
+ITEM: ASSUMPTION-1226 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority High
+  15a: SUPPORTED (Strong, limb a) / PARTIALLY-SUPPORTED (limb b) | 15b: NO-CHALLENGE-FOUND (limb a) / CHALLENGED (Strong, limb b)
+  15c disposition: INCORPORATE -> PREMISE-187 (limb b explicitly NOT incorporated)  (DISPOSITION-830)
+  Question for the literature: Defect taxonomies for text QA and the structural limits of static checking.
+  Can a gate set built on ids, glosses, grades and length signals detect argument-layer inversions, and what
+  detection methods exist for semantic reversal in doctrinal or technical prose?
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1226
+  · Item type ASSUMPTION (stated) · Transform: extracted verbatim from the Summa QC sweep; n=1 generalisation
+  flagged in status · Status QUEUED
+
+ITEM: ASSUMPTION-1228 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: SUPPORTED (Strong on mechanism; None on the 82% figure) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-559  (DISPOSITION-831)
+  Question for the literature: Bounded working memory in long-running agent systems. Compaction strategies for
+  an index at 82% of a hard read limit, and the cost of losing an accumulated known-traps record.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1228
+  · Item type ASSUMPTION (stated) · Transform: extracted verbatim; measurement attempted and out of mount, declared
+  · Status QUEUED
+
+ITEM: ASSUMPTION-1229 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate; measurement limb only) | 15b: CHALLENGED (Strong)
+  15c disposition: REVISE -> REVISE-404  (DISPOSITION-832)
+  Question for the literature: Do disclosed constraint violations that improve outcomes justify the constraint's
+  revision, and how is finding-yield-per-unit-budget measured in review work?
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1229
+  · Item type ASSUMPTION (stated) · Transform: extracted from two transcripts; distinguished from ASSUMPTION-1221
+  because the warrant shifted from disclosure to defence-on-results · Status QUEUED
+
+ITEM: ASSUMPTION-1230 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] [CHALLENGED-in-house: 2026-08-27] — Priority High
+  15a: SUPPORTED (Strong) — for the distinction, which refutes the item | 15b: CHALLENGED (Moderate; nothing defends the item)
+  15c disposition: REVISE -> REVISE-405 [contradicts ACTIVE PREMISE-086; REVISE-147 undischarged 63 days]  (DISPOSITION-833)
+  Question for the literature: Liveness versus correctness in scheduled-job monitoring. What is known about
+  health checks that read a scheduler rather than its outputs, and about green verdicts issued by instruments
+  that have declared their own read failure?
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1230
+  · Item type ASSUMPTION (stated) · Transform: extracted verbatim, then falsified in part by listing `changelog/`
+  and `metrics/` — no 08-26 outputs exist · Status QUEUED (status CHALLENGED)
+
+ITEM: ASSUMPTION-1231 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-560 (hard checkpoint 2026-09-10)  (DISPOSITION-834)
+  Question for the literature: Queue refill dynamics after a manual clearance with unchanged arrival rate.
+  Little's law applied to a gate whose server is an intermittently available human.
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1231
+  · Item type ASSUMPTION (stated prediction) · Transform: extracted verbatim and pinned to measured baseline
+  pending=0 at 2026-08-27, scoreable 2026-09-10 · Status QUEUED
+
+ITEM: ASSUMPTION-1232 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: PARTIALLY-SUPPORTED (Moderate on existence, Weak on adequacy) | 15b: CHALLENGED (Moderate-Strong)
+  15c disposition: MONITOR -> MONITOR-561 (subordinate to REVISE-399)  (DISPOSITION-835)
+  Question for the literature: Agent interpretation of ambiguous prohibitions. When an instruction's wording does
+  not support the distinction an agent draws, what governance practices exist short of halting?
+  PROVENANCE: Origin 14a · Chain [14a] · Original item ASSUMPTION-1232
+  · Item type ASSUMPTION (stated self-disclosure) · Transform: extracted verbatim; filed alongside ASSUMPTION-1223
+  as the second unratified-convention instance of the day · Status QUEUED
+
+ITEM: PRESUMPTION-885 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority High
+  15a: NO-SUPPORT-FOUND (None; Strong for the negation) | 15b: PARTIALLY-CHALLENGED (Weak-Moderate)
+  15c disposition: MONITOR -> MONITOR-562  (DISPOSITION-836)
+  Question for the literature: Manual queue clearance without admission control. Does draining a backlog by hand
+  change time-to-disposition or only reset it, and does the availability of a manual clearance suppress
+  investment in structural remedies?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-885
+  · Item type PRESUMPTION (unstated) · Transform: inferred from absent alternatives across the day's outputs;
+  checked against PRESUMPTION-883 and PRESUMPTION-875 for non-duplication · Status QUEUED
+
+ITEM: PRESUMPTION-886 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority High
+  15a: NO-SUPPORT-FOUND (None) [PARTIAL NOVELTY-FLAG] | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-563 (checkpoint 2026-09-28)  (DISPOSITION-837)
+  Question for the literature: Endorsement versus non-objection in curation records. Provenance and
+  confidence annotation that travels with an item, and the cost of a single-valued approval token over a
+  mixed-depth review population.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-886
+  · Item type PRESUMPTION (unstated) · Transform: inferred from the schema — the question was asked in prose
+  on the same day the data was written without it; DECISION-083 used as internal control · Status QUEUED
+
+ITEM: PRESUMPTION-887 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] [FIX FIRST candidate] — Priority High
+  15a: PARTIALLY-SUPPORTED (Moderate on phenomenon; None on detection) | 15b: CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-564 [FIX FIRST tag NOT honoured — reason recorded in DISPOSITION-838]  (DISPOSITION-838)
+  Question for the literature: Shadow policy — undocumented decision rules in operational systems. How are
+  unratified local heuristics discovered, enumerated, and governed, and what detection exists short of the
+  failure that reveals them?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-887
+  · Item type PRESUMPTION (unstated) · Transform: inferred from the scope of the ruling against the scope of the
+  diagnosis; filed as OPEN-172 the same run · Status QUEUED
+
+ITEM: PRESUMPTION-888 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: NO-SUPPORT-FOUND (None; Strong for the negation) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  15c disposition: MONITOR -> MONITOR-565  (DISPOSITION-839)
+  Question for the literature: Instrumentation bias — value attributed to material because an existing consumer
+  reads it. Measuring what the instrument can see, in curation and signal-extraction pipelines.
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-888
+  · Item type PRESUMPTION (unstated) · Transform: inferred from a cost argument that routes value through a consumer
+  at every step and never through content · Status QUEUED
+
+ITEM: PRESUMPTION-889 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority High
+  15a: NO-SUPPORT-FOUND (None; Strong for the negation) | 15b: WEAKLY-CHALLENGED (Weak-Moderate)
+  15c disposition: INCORPORATE -> PREMISE-188  (DISPOSITION-840)
+  Question for the literature: Hedge decay. Do provenance caveats survive citation, and what annotation practices
+  keep an evidentiary qualifier attached to the claims it governs rather than to the document header?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-889
+  · Item type PRESUMPTION (unstated) · Transform: inferred from the gap between one file's header and its own body;
+  this run is itself an instance and says so · Status QUEUED
+
+ITEM: PRESUMPTION-890 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] [FIX FIRST candidate] — Priority High
+  15a: NO-SUPPORT-FOUND (None; Strong for the negation) | 15b: NO-CHALLENGE-FOUND (limb 2) / PARTIALLY-CHALLENGED (limb 1 remedy)
+  15c disposition: REVISE -> REVISE-406 [FIX FIRST] (amend PREMISE-086; do not mint)  (DISPOSITION-841)
+  Question for the literature: Heartbeat-based health signals and their blind spots. What is known about
+  monitoring that reads job liveness rather than artifact production, and about degraded monitors that report
+  green while declaring their own instrument failure?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-890
+  · Item type PRESUMPTION (unstated) · Transform: inferred from a green report read against the directory listings
+  it describes; the missing 2026-08-26 run is the demonstrated instance · Status QUEUED
+
+ITEM: PRESUMPTION-891 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium-High
+  15a: NO-SUPPORT-FOUND (None) | 15b: CHALLENGED (Moderate-Strong; the challenge carries the remedy)
+  15c disposition: REVISE -> REVISE-407  (DISPOSITION-842)
+  Question for the literature: Observability blind spots in event-driven monitoring. When an agent's intake
+  channels define its world, how are bulk state changes outside those channels detected?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-891
+  · Item type PRESUMPTION (unstated) · Transform: inferred from an idle report and a day of maximal activity
+  coinciding, with the run's own stale WATCH-003 reading as corroboration · Status QUEUED
+
+ITEM: PRESUMPTION-892 — [QUEUED] [SEARCHED-15a: 2026-08-28] [SEARCHED-15b: 2026-08-28] [DISPOSITIONED-15c: 2026-08-28] — Priority Medium
+  15a: NO-SUPPORT-FOUND (limb 1) / NOT-SEARCHED (limb 2) | 15b: CHALLENGED (Moderate-Strong)
+  15c disposition: MONITOR -> MONITOR-566  (DISPOSITION-843)
+  Question for the literature: Normalisation of deviance, and budgets exceeded by design. At what consecutive-breach
+  count does a limit stop carrying information, and what distinguishes a mislabelled metric from a real constraint?
+  PROVENANCE: Origin 14b · Chain [14b] · Original item PRESUMPTION-892
+  · Item type PRESUMPTION (unstated) · Transform: inferred from a 28-for-28 record nobody treats as evidence about
+  the threshold; checked against ASSUMPTION-1221/1229 for non-duplication · Status QUEUED
+
+---
+
+**2026-08-28 lit-search run — cohort closed.** All 16 items of the 2026-08-27 intake searched by both
+directions and dispositioned: 2 INCORPORATE (PREMISE-187 from ASSUMPTION-1226; PREMISE-188 from
+PRESUMPTION-889), 10 MONITOR (MONITOR-557..566), 4 REVISE (REVISE-404..407). Records: DISPOSITION-828..843
+in `lit_search_returns.md`, with full record bodies — see FINDING 1 of that run report on why that is worth
+stating. Two systemic-risk flags filed (G1: monitors reading proxies and triggered by events rather than by
+state; G2: controls adopted without a recorded derivation).
+
+**Headline, and it is not a literature result: ASSUMPTION-1230 / PRESUMPTION-890 restate ACTIVE PREMISE-086,
+whose remedy REVISE-147 prescribed on 2026-06-26 and which has been open 63 days.** The 2026-08-26 pipeline
+produced no outputs, the health check reported green, and the gap was found a day later by hand. Filed as
+REVISE-405 (HIGH) and REVISE-406 (HIGH, FIX FIRST, as an amendment to PREMISE-086 rather than a new premise).
+
+**The 26-item 2026-07-21 cohort was not searched, and not because of budget.** It was triaged item-by-item
+on 2026-07-25 as INTERNAL-EMPIRICAL or near-duplicate and declared out of 15a/15b scope; the 2026-08-25
+escalation (REVISE-392) put a binary to Tom that omits that fact and omits the correct option. Amended as
+**REVISE-408**: the ask is now a single authorisation — retag the block to [MISROUTED-INTERNAL-EMPIRICAL]
+with the 07-25 triage as the classification of record — rather than a choice between searching them again
+and closing them. No eighth identical notice has been filed, per PREMISE-183.
+
+**The 15d re-trigger / re-check lane was not touched**, consistent with prior runs.
+
+**Evidence grade: all sources snippet-level; zero full-text and zero abstract-level reads; 22 queries across
+16 items.** Two premises minted, both textbook-level claims on which both directions agree. This run is in
+breach of its token budget and says so in the run report as an in-house data point for MONITOR-566.

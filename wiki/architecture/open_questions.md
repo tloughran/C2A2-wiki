@@ -2113,3 +2113,36 @@ OPEN-171:
 - **OPEN-167 (three live vault roots) is carried unresolved.** This task file still carries the capital-`W` form `/RC Karpathy Wiki Project/Wiki/`; the actual directory is lowercase `wiki`. Corrected by hand again tonight — third consecutive run to do so and disclose it. Second cheapest defect on the register, still unfixed.
 - **OPEN-168 (notification channel of record) is carried and worsened: fourth consecutive Chrome failure**, both directions, 08-24 and 08-25. Chat has had no Cowork context since 08-23 and Cowork no walk context for the same span.
 - **The 46-id offset in this file is carried, unchanged and undiagnosed.** Before tonight: 122 unique headers against a maximum of OPEN-168. After tonight: 125 unique, max OPEN-171, offset still **exactly 46** — reproducing the 08-23 and 08-24 figures. **"Max OPEN-171" is not a count of open questions.** Third consecutive record to state it and not file it.
+
+OPEN-172:
+  Date raised: 2026-08-27
+  Question: How many unratified agent-local heuristics are currently gating the pipeline, and what would it take to enumerate them?
+  Why now: **A rule nobody wrote as policy held the batch's richest cross-tradition content for nineteen days** and was retired today by name (DECISION-081). The precision of that heuristic was 1 in 17. It was never ratified, never registered, and its failure was invisible until the gate was cleared by hand. On the same evening, a Summa reviewer disclosed drawing its own reading of an ambiguous prohibition and acting on it (ASSUMPTION-1232). Two instances, one costly, in one day. The day's own summary asks this question under "For Morning Discussion" and it is filed here so that it is asked somewhere durable.
+  Status: OPEN — awaiting Tom
+  Related: DECISION-081; ASSUMPTION-1223, ASSUMPTION-1232; PRESUMPTION-887; OPEN-164, OPEN-170
+  Note: DECISION-081 retires one heuristic. This question is about the population, and no instrument currently enumerates it.
+
+OPEN-173:
+  Date raised: 2026-08-27
+  Question: Should the approval record carry the depth of review that produced it — and if source-capture proposals do not need review, should they be routed around the gate rather than through it unread?
+  Why now: **Sixty proposals were approved unread and seventeen were read, and `review/archive/2026-08-27_decisions.md` records both as APPROVE.** The archive does annotate them ("en bloc, unread" versus "reviewed by Tom"), but the annotation is prose inside one file; nothing downstream — the approved directory, the inbox staging, `harvest_signals.py`, the Level-2 stream — can distinguish them. If the standing judgment behind DECISION-079 is right, then 60 of 77 items passed through a human gate that added nothing but nineteen days of latency.
+  Status: OPEN — awaiting Tom
+  Related: DECISION-079, DECISION-083; ASSUMPTION-1222, ASSUMPTION-1225; PRESUMPTION-886; OPEN-171
+  Note: OPEN-171 asks whether producers should see the gate. This asks whether some producers should be in front of it at all.
+
+OPEN-174:
+  Date raised: 2026-08-27
+  Question: Which store is the decision record of account?
+  Why now: **Today's five rulings existed in exactly one place — `review/archive/2026-08-27_decisions.md` — until this run filed them as DECISION-079…083.** `decisions.md` had not moved since 2026-07-05. `provenance/decision_emails.json` is correctly empty by DECISION-082, because the approval came through conversation rather than the review-page email path. Three stores, three different contracts, and no rule saying which one a reader should trust. Had this run not fired, the largest disposition batch in the project's history would have been on no register at all.
+  Status: OPEN — awaiting Tom
+  Related: DECISION-082; ASSUMPTION-1224; PRESUMPTION-889; OPEN-169
+  Note: This is OPEN-169's question — which instrument owns a number — applied to decisions rather than citations. Same shape, different register.
+
+### Status of carried questions — 2026-08-27
+- OPEN-153, 155–171 — all carried, **awaiting Tom**, except as noted below. This run adds OPEN-172, 173, 174.
+- **OPEN-171 was overtaken by events but not answered.** The gate emptied 80 → 0 today with **no coupling built** between intake and disposition. The question is now prospective rather than diagnostic: the next stall, not this one. ASSUMPTION-1231 predicts the queue is back near 80 inside two weeks; **baseline pending = 0, measured 2026-08-27.**
+- **OPEN-168 (notification channel of record) is carried and worse: day six.** Chrome MCP failed in *both* directions today — the 08:52 morning scrape and the 18:47 evening delivery. Chat has had no Cowork context since 08-23. Gmail draft creation demonstrably works from scheduled tasks and is not being used. The cheapest unmade decision on the register.
+- **OPEN-167 (three live vault roots) is carried unresolved, fifth consecutive run.** This task file still carries the capital-`W` form `/RC Karpathy Wiki Project/Wiki`; the actual directory is lowercase `wiki`. Corrected by hand again tonight.
+- **OPEN-164 / OPEN-170 gained their most concrete instance to date.** The retired hold heuristic (DECISION-081) is an agent-side convention, never ratified, that did nineteen days of epistemic work nobody authorised. OPEN-172 is filed as the generalisation.
+- **The 46-id offset is carried — and this run can narrow it.** Before tonight: 125 unique `^OPEN-NNN:` headers against max OPEN-171. After tonight: **128 unique, max OPEN-174, offset still exactly 46**, reproducing the 08-23, 08-24 and 08-25 figures for the fifth consecutive record. **"Max OPEN-174" is not a count of open questions.**
+  **New tonight — the missing ids are not scattered, they are three contiguous blocks:** OPEN-040…070 (31 ids), OPEN-073…074 (2), OPEN-079…091 (13). 31 + 2 + 13 = 46, exactly. Contiguous blocks are the signature of ids allocated and then removed, or of a file section lost — not of sporadic mis-numbering. That does not say which happened, and this run did not go looking; it does say the offset is one or three events rather than forty-six, which makes it a tractable half-hour of git history rather than an audit. Handed to whoever files it next.

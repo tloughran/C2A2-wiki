@@ -977,3 +977,93 @@ DECISION-078:
     Transform at each step:
       14a: Recorded from the lock-clearing instruction, its stated rationale, and the pasted execution results. [stated]
     Current status: ADOPTED
+
+---
+
+## 2026-08-27 — the review-gate clearance
+
+**Filing note.** These five rulings were made in conversation on 2026-08-27 and recorded only in
+`review/archive/2026-08-27_decisions.md`. They are filed here by Agent 14a on **2026-08-27**, the
+same day, on the standing responsibility to maintain the decision index. The register had not moved
+since DECISION-078 (2026-07-05); the largest disposition batch in the project's history was
+otherwise off the register entirely. **No `[C2A2-review-decision]` email exists for any of them**
+(see DECISION-082), so `provenance/decision_emails.json` is silent by design and the archive file is
+the primary source for all five.
+
+DECISION-079:
+  Date: 2026-08-27 (attended — Cowork conversation, ~12:15)
+  Title: Approve 60 source-capture proposals en bloc, unread
+  Decision: After being shown the queue's shape — 80 pending, 18 carrying escalations addressed to a human, 3 duplicate re-proposals — Tom gave a single en-bloc approval of the 60 non-escalation, non-duplicate proposals without individual review. `inbox/proposals/pending/` went 80 → 0 across both of today's batches; `approved/` went 301 → 378.
+  Status: ADOPTED (attended); executed. 60 APPROVE, 0 DENY, 0 CHECK, 0 CHANGE.
+  Rationale: the standing judgment that agent-produced source-capture proposals are *output* rather than candidates for individual review (ASSUMPTION-1222). This ends a nineteen-day gate stall; the last disposition before today was 2026-08-08.
+  Related: ASSUMPTION-1222, ASSUMPTION-1231; PRESUMPTION-885, PRESUMPTION-886; OPEN-171, OPEN-173
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from `review/archive/2026-08-27_decisions.md`, which states the ruling, the count and the rationale verbatim. Filed to the register two days after the register's last entry and the same day as the ruling. [stated]
+    Current status: ADOPTED
+
+DECISION-080:
+  Date: 2026-08-27 (attended — Cowork conversation, later the same day)
+  Title: Approve all 18 held escalation-bearing proposals; defer the recommended actions
+  Decision: Tom reviewed `PENDING_ESCALATIONS_2026-08-27.md` and approved all 18 (17 recorded in the archive's second-batch decision list plus PROP-2026-08-17-003, ruled separately — see DECISION-083). The recommended actions carried inside them were not executed; they were parked at `DEFERRED_ACTIONS_2026-08-27.md` (repo root).
+  Status: ADOPTED (attended); executed. 17 APPROVE, 0 DENY, 0 CHECK, 0 CHANGE, actions DEFERRED.
+  Rationale: the hold was a misclassification (DECISION-081). These are cross-tradition signals, not PRS triplets and not admissibility escalations.
+  Caveat on the record: `PENDING_ESCALATIONS_2026-08-27.md` and `DEFERRED_ACTIONS_2026-08-27.md` are referenced by the archive as living at repo root, **above this run's mount, and could not be verified to exist.** The deferred recommendations from 17 proposals are parked in one of them. Flagged, not resolved.
+  Related: DECISION-081; ASSUMPTION-1223; PRESUMPTION-887, PRESUMPTION-888; OPEN-164, OPEN-170
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the archive's second-batch section. The unverifiability of the two root-level documents was established by this run and is stated as a caveat rather than omitted. [stated]
+    Current status: ADOPTED
+
+DECISION-081:
+  Date: 2026-08-27 (attended)
+  Title: Retire the "Recommend"/"needs a human check" hold heuristic
+  Decision: "Do not re-apply that heuristic." The classifier that held 18 proposals keyed on the strings "Recommend" and "needs a human check." Of the 17 flagged passages, 11 sat under `## Cross-Tradition Signals` and were agent-to-agent dispatch recommendations; 6 were `SOURCE-READ NOTE` fail-loud provenance disclosures; exactly 1 (#16, PROP-2026-08-23-002) was a genuine request for a human ruling on wiki state.
+  Status: ADOPTED (attended). Prohibition is standing.
+  Rationale: the heuristic inverted. `prototypes/harvest_signals.py` harvests exactly the `## Cross-Tradition Signals` sections of `approved/*.md` into the Level-2 signal stream, so the rule held proposals *for carrying the batch's richest cross-tradition content* and suppressed the signal stream's best input for nineteen days.
+  Scope note: the ruling retires **this** heuristic. It does not address whether other unratified agent-local heuristics are gating the pipeline — filed as OPEN-172.
+  Related: ASSUMPTION-1223; PRESUMPTION-887, PRESUMPTION-888; OPEN-164, OPEN-170, OPEN-172
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the archive's second-batch section, which states the diagnosis and the prohibition verbatim. The scope note is 14a's and is marked as such. [stated]
+    Current status: ADOPTED
+
+DECISION-082:
+  Date: 2026-08-27 (attended)
+  Title: Do not fabricate an email entry in `provenance/decision_emails.json` for this batch
+  Decision: No review page was generated and no `[C2A2-review-decision]` email exists for the en-bloc batch, so nothing was appended to the email provenance store.
+  Status: ADOPTED (attended); executed as an omission.
+  Rationale: "fabricating an email entry there would corrupt a store whose stated contract is verbatim email." The store's contract was held to outrank the completeness of the decision record.
+  Stated consequence: the largest disposition batch in the project's history "is invisible to any instrument that reads the email store as the decision record." Three stores now hold parts of today: `review/archive/` (complete), `decisions.md` (complete only as of this filing), `decision_emails.json` (correctly empty).
+  Related: ASSUMPTION-1224; PRESUMPTION-889; OPEN-169, OPEN-174
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the archive's header and the day's summary, which state the rule and its price in the same terms. [stated]
+    Current status: ADOPTED
+
+DECISION-083:
+  Date: 2026-08-27 (attended)
+  Title: PROP-2026-08-17-003 — approve in principle, file stays quarantined
+  Decision: The single proposal that was both escalation-bearing and a duplicate was approved on its content while its file remained in `_pending_dupes_resolved/`. "Approving an escalation does not restore a duplicate."
+  Status: ADOPTED (attended); executed.
+  Rationale: judgment on content and disposition of a file are separate acts. This is the only ruling of the five that draws that distinction; the other four collapse it into a single APPROVE token.
+  Related: ASSUMPTION-1225; PRESUMPTION-886; OPEN-173
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Item type: DECISION
+    Transform at each step:
+      14a: Recorded from the archive's duplicates section and the day's summary. The observation about the other four rulings is 14a's, marked as rationale commentary. [stated]
+    Current status: ADOPTED

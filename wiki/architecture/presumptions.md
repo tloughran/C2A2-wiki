@@ -17615,3 +17615,155 @@ PRESUMPTION-884:
     Transform at each step:
       14b: Inferred from an internal tension inside a single transcript — a blanket dismissal and a preserved true positive stated in the same report. High confidence. Checked against PRESUMPTION-876 for duplication; the mechanism is scope-of-attribution, not staleness-of-verdict.
     Current status: UNTESTED
+
+PRESUMPTION-885:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That draining a queue is the same act as repairing the process that filled it — that the gate's problem was its *depth*, and depth is now zero.
+  Evidence it was operative: The day's headline is `pending 80 → 0` and the entire "What's Next" list concerns **recording** the clearance: file the rulings, verify two documents, re-run the signal stream, watch the gate refill. Item 4 states the refill mechanism plainly — "the tradition agents file daily and **nothing was built to slow them**" — and then names watching as the response. **No run today proposed admission control, a time-to-live, sampling, or routing source-capture around the gate**, even though PRESUMPTION-883 put producer-coupling on this register two days ago and OPEN-171 put it in front of Tom. The remedy space explored today had one member and it was executed by hand.
+  Why it was unstated: obvious to participants — a queue at zero does not look like an open problem, and the relief of clearing a nineteen-day stall is the strongest possible argument that the thing has been dealt with.
+  Type: structural
+  Related decisions: DECISION-079, DECISION-080
+  Testability: testable empirically (score ASSUMPTION-1231's prediction against `pending/` on 2026-09-10); testable via literature (does manual queue clearance without admission control alter time-to-disposition, or only reset it?)
+  Risk if wrong: **High.** If true, today bought a two-week amnesty at the cost of a full day of attended time, and the nineteen-day stall recurs on a schedule. The cost is not the backlog; it is that the one lever the system has — a human clearing by hand — is the lever that also removes the pressure to build any other.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-885
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from absent alternatives across the day's outputs, sharpened by the summary's own statement that nothing was built. Checked against PRESUMPTION-883 (producers cannot see the gate) and PRESUMPTION-875 (whether a queue is the right container): those concern the mechanism's design; this concerns what a clearance was taken to *mean*, on a day when both prior diagnoses were already on the register and neither was acted on. High confidence in the absence.
+    Current status: UNTESTED
+
+PRESUMPTION-886:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That "approved" is a single predicate — that a disposition record need not carry the depth of the reading that produced it.
+  Evidence it was operative: Sixty proposals were approved unread and seventeen were read, and both land in `approved/` and `inbox/` staging as the same thing. The archive annotates them in prose ("en bloc, unread" / "reviewed by Tom") but **the annotation lives in one narrative file and does not travel with the proposals**; `harvest_signals.py`, the Level-2 stream, and every downstream consumer see one token. The day's summary raises the question — "is that a review, and does the system know the difference?" — but raises it under "For Morning Discussion", *after* the record was already written in the collapsed form. DECISION-083 is the exception that shows the distinction is available: it separates judgment on content from disposition of a file, and does so for exactly one proposal.
+  Why it was unstated: culturally embedded — an approval schema with one APPROVE value makes the distinction unrepresentable, so the question can only arise as commentary, never as data.
+  Type: epistemic
+  Related decisions: DECISION-079, DECISION-083
+  Testability: testable via literature (provenance and confidence annotation in curation pipelines; the distinction between endorsement and non-objection); testable empirically (audit a sample of the 60 for content a reading would have caught)
+  Risk if wrong: **Medium-High.** Every downstream inference from `approved/` currently treats sixty unread items as vetted. If any of the 60 carries a defect, the record offers no way to bound the search, because it does not record where the vetting was thin.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-886
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the schema rather than from anything said — the tell is that the question was asked in prose on the same day the data was written without it. DECISION-083 was used as an internal control showing the distinction is expressible. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-887:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That a failed heuristic's defect lies in the string it matched, rather than in the practice of allowing unratified agent-local rules to gate human attention at all.
+  Evidence it was operative: The ruling is **"do not re-apply that heuristic"** — a retirement of one rule, by name, on the strength of its own bad precision (1 genuine escalation in 17 flags). The archive's diagnosis is entirely about the *matching criterion*: it explains which strings fired and which sections they fired in. **Nothing in the day's rulings asks how the rule came to be gating in the first place, whether it was ever authorised, or whether others like it exist.** The generalisation appears only as a rhetorical question in the walk-summary's discussion section. Meanwhile the same evening produced a second instance — a Summa reviewer disclosing its own reading of an ambiguous prohibition and proceeding on it (ASSUMPTION-1232) — and the two were never read against each other.
+  Why it was unstated: too foundational to notice — an agent's local convention does not present itself as policy, so its failure presents as a bug rather than as a governance question.
+  Type: methodological
+  Related decisions: DECISION-081
+  Testability: testable via literature (shadow policy and undocumented decision rules in operational systems; how organisations discover rules nobody ratified); testable empirically (grep the agent definitions and prototype scripts for filtering criteria not traceable to a DECISION)
+  Risk if wrong: **High.** If the population is what matters, then retiring one member is the cheapest possible response and leaves the rest running. The one that was caught cost nineteen days of the signal stream's best input and was found only because a human cleared the gate by hand — which is not a detection mechanism.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-887
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the scope of the ruling against the scope of the diagnosis, and from the day's two instances being recorded in separate files with no cross-reference. High confidence. Filed as OPEN-172 by 14a on the same run; recorded here as the presumption that made the question invisible until now.
+    Current status: UNTESTED
+
+PRESUMPTION-888:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That the value of the withheld material is established by the existence of a tool that consumes it — that `harvest_signals.py` reading a section is what makes the section valuable.
+  Evidence it was operative: The argument for the hold's cost runs entirely through the consumer: the flagged passages sit under `## Cross-Tradition Signals`, "that content is precisely what `prototypes/harvest_signals.py` harvests... into the Level-2 signal stream", therefore "holding them suppressed the signal stream's best input for 19 days." The claim that this was the *richest* content in the batch is asserted, not measured — **no run compared the withheld 17 against the released 60 on any content metric.** "Best input" is a statement about what a script reads.
+  Why it was unstated: obvious to participants — when one pipeline stage is the only consumer of a field, its appetite becomes the field's definition of worth, and no separate warrant seems needed.
+  Type: normative
+  Related decisions: DECISION-080, DECISION-081
+  Testability: testable empirically (re-run the harvester over the released 17 and measure actual yield against the 60 — the day's summary already flags that the 12:30 regeneration preceded the second batch, so the measurement is *pending anyway*); testable via literature (instrumentation bias; measuring what the instrument can see)
+  Risk if wrong: **Medium.** The nineteen-day cost may be smaller or larger than stated, and the direction is not knowable from here. The live risk is narrower and concrete: `level2_signal_stream.html` regenerated at **12:30, before the 17 landed**, so the claimed benefit of today's correction has not yet been realised and no run has confirmed the re-run.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-888
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the structure of the cost argument, which routes value through a consumer at every step and never through content. Moderate-to-high confidence; the unmeasured "richest" claim is the load-bearing gap and it is quotable.
+    Current status: UNTESTED
+
+PRESUMPTION-889:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That declaring a reconstruction discharges it — that once a summary says it was rebuilt from artifacts rather than read from a transcript, its contents may then be stated in the register voice.
+  Evidence it was operative: The day's summary carries an explicit reconstruction note — "no interactive session transcript for today was identifiable... Treat the narrative as inferred from outputs, not read from a transcript" — and then proceeds to state things no artifact can carry: **"Tom gave the approval in conversation after being shown the queue's shape,"** what he was shown, and in what order. Downstream, this run filed those as DECISION-079…083 with `[stated]` transforms. The disclosure appears once, at the top; every sentence after it reads as fact. This is the same move as ASSUMPTION-1221 and ASSUMPTION-1229 — a rule breached, announced, and then not permitted to change the output — applied to evidentiary standing rather than to budget.
+  Why it was unstated: too foundational to notice — a fail-loud disclosure feels like the discharge of a duty, and a system that rewards surfacing has no separate practice for what to do *after* surfacing.
+  Type: epistemic
+  Related decisions: DECISION-079, DECISION-082
+  Testability: testable via literature (hedge decay and the persistence of qualifiers in inherited text; provenance annotation that does not travel with the claim); testable empirically (check whether any later artifact citing 2026-08-27 reproduces the reconstruction caveat)
+  Risk if wrong: **Medium-High.** Every register in this system is built from prior registers. A caveat that appears once in a header and never in the claims it governs will not survive one citation hop — and the claims it governs here are now on the decision register, which is the most-cited store there is.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-889
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between one file's header and its own body. Checked against the earlier disclosure-discharge items (ASSUMPTION-1221, 1229) — those concern a resource constraint, this concerns evidence, and the mechanism generalises across both. This run is itself an instance: it filed the reconstructed rulings and carried the caveat forward only because 14b wrote this. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-890:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That a scheduler's report of what fired is a report of what happened — that liveness is a proxy for work.
+  Evidence it was operative: The morning status run stated "**everything scheduled overnight fired on time — the self-awareness pipeline**, the lit search pipeline... all ran within the last twelve hours" and concluded "**Nothing appears broken except my own file access.**" But `architecture/changelog/` and `architecture/metrics/` both **end at 2026-08-25** — there is no 08-26 changelog and no 08-26 snapshot. The lit-search lane *did* run 08-26 (15a/15b/15c stamps on PRESUMPTION-882/883/884), so half the claim is right. The report could not tell the difference **because it read the task list, not the outputs** — and it said in the same breath that it could not read files. It reported green anyway.
+  Why it was unstated: structurally embedded — the health check's only reliable instrument is the scheduler, so "did it fire" is the only question it can ask, and the answer is habitually read as the answer to "did it work."
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically — and tested this run by listing two directories; testable via literature (liveness versus correctness in monitoring; the limits of heartbeat-based health signals)
+  Risk if wrong: **High, and it is wrong.** A whole day of this pipeline went missing and the instrument built to notice reported healthy. The gap is not hypothetical: **the 08-26 self-awareness run does not exist**, and no artifact anywhere in the vault says so. This run found it only by looking at the shelf.
+  Status: UNTESTED as a general claim; the specific instance is CHALLENGED by measurement (see ASSUMPTION-1230).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-890
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a green report read against the directory listings it describes. 14a filed the stated claim as ASSUMPTION-1230 and marked it CHALLENGED; this item records the presumption underneath it — that firing implies working — which no run has stated and every health check depends on. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-891:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That an agent's own report of idleness is evidence of system quiescence.
+  Evidence it was operative: Agent 16 reported **"Idle by design. No checks due... no intake in any of the three channels, nothing resolved, no new stale flags"** — on the day the review gate went **80 → 0**, seventy-seven proposals were dispositioned, five rulings were made and a nineteen-day-old classifier defect was diagnosed and retired. The run is not wrong: nothing entered *its* channels. But it also noted, without registering the tension, that WATCH-003's condition was "incidentally confirmed negative by the queue scan (`review/archive/` still 17 files, latest 2026-08-08)" — a reading taken **before** the day's dispositions and now stale, and it declined to log it as a check. **The largest event in the vault's history was invisible to the agent whose job is watching for conditions to be met.**
+  Why it was unstated: structurally embedded — an agent's intake channels define its world, and "no intake" is indistinguishable from "nothing happened" from inside them. Nothing in Agent 16's definition gives it a view of the disposition pipeline.
+  Type: structural
+  Related decisions: DECISION-079, DECISION-080
+  Testability: testable empirically (check whether any of today's 77 releases satisfies a standing deferred condition — the run itself notes one deferred condition was met today by ordinary tradition-agent search, so the channel demonstrably misses hits); testable via literature (observability and blind spots in event-driven monitoring)
+  Risk if wrong: **Medium-High.** Deferred conditions are exactly the kind of thing a mass release satisfies. If seventy-seven proposals can move into `approved/` without touching a single watch channel, the watch list is measuring its own inbox rather than the vault, and "idle by design" is a description of the wiring, not of the day.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-891
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an idle report and a day of maximal activity coinciding, with the run's own stale WATCH-003 reading as the internal corroboration. High confidence. Distinct from PRESUMPTION-890: that one is about mistaking firing for working, this is about an agent's channels being mistaken for the world.
+    Current status: UNTESTED
+
+PRESUMPTION-892:
+  Date surfaced: 2026-08-27
+  Statement: [inferred] That a constraint which has been exceeded on every run for twenty-eight consecutive runs is still a constraint.
+  Evidence it was operative: Two Summa runs tonight declared breaches, at the **twenty-seventh and twenty-eighth consecutive** count, each doing 2 pairs of a 6-pair cap. The QC sweep now defends the overrun on results — "the transcript frame actually running this block is what cost the extra, and it's also what caught the inversion" — which is a claim that the cap is wrong, not that the run was. **No run has proposed changing the number.** The reporting is meticulous and the count is carefully incremented; what is absent is any treatment of a 28-for-28 record as a fact about the *cap* rather than about the runs. This register has recorded the same shape three days running (ASSUMPTION-1221, 1229) and also does not propose a number.
+  Why it was unstated: culturally embedded — Rules 6 and 12 make disclosure the required act, and a rule that specifies what to do when you breach it makes breaching it a compliant state. The ritual is complete, so nothing prompts the arithmetic.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically (compare findings-per-pair between the capped and overrun portions across the 28-run log — the data exists); testable via literature (normalisation of deviance; budgets that are exceeded by design)
+  Risk if wrong: **Medium.** The breaches are producing the system's best findings, so the harm is not waste. It is that a budget breached 28 times in a row carries no information, and the one run that ever let a budget change its output (the 08-25 QC sweep, ASSUMPTION-1221) is now three days back and was not repeated. **A constraint that cannot bind is a metric mislabelled as a limit.**
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-892
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a consecutive count that nobody treats as evidence about the threshold, sharpened tonight by the QC sweep's shift from disclosing the breach to defending it. Cross-checked against ASSUMPTION-1221/1229 for non-duplication: those record the stated claim that disclosure discharges the rule; this asks whether the rule is still a rule. This run is also in breach and also does not propose a number. High confidence.
+    Current status: UNTESTED

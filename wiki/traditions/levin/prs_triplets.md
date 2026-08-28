@@ -748,7 +748,97 @@ PRS-82:
   Confidence: High
   Evidence: "Your actual target morphology is the pattern memory in the collective of cells. And the hardware comes and goes." / "The path forward to solving birth defects, injury, cancer leads directly to freedom of embodiment. There's no way to separate it." Independently corroborated in the Thought Economics interview read the same day: "It's going to be complete freedom of embodiment. Nobody will have to be the way the cosmic rays made them." Two sources, two venues, same fortnight — the claim is stable, though it remains a projection rather than a result.
 
-*Total PRS triplets: 82*
+PRS-83:
+  Problem: Expository scientific writing is optimized for a human reader — narrative scaffolding, grammar, the connective filler editors require. Levin's assessment is that the humans positioned to act on his ideas will not read the long form ("most people who are in a position to move the needle based on my ideas will be too busy to read the whole thing anyway, and may ask AI to summarize it for them"), while the machine readers that will read it in full need none of that apparatus. The optimization target for exposition has changed and nobody has re-derived what the right form is.
+  Resource: Levin's own contrast between what the two readerships need: "AI's don't need all the filler text, they don't care about grammar, or any of the other stuff that editors make us polish, freeing up research time if I can just get the ideas down and move on."
+  Solution: The question is placed on the record unsettled — "Should I be writing for the AIs, who will inevitably be the largest audience (whether prompted by humans, or soon, by their own interests), to optimize their understanding and ability to re-tell my story to whatever entity wants to hear it? I can't tell" — with a procedural rather than doctrinal interim answer: write what insists on being written, in the form it insists on. This is PRS-78's cognitive offloading turned on the transmission of a research program rather than on an organism's problem-solving, and it is the first entry in this file where the diverse-intelligence thesis is applied reflexively to Levin's own audience rather than to his subject matter. PRS-01 through PRS-82 concern cognition in cells, tissues, ecosystems and algorithms; this one concerns cognition in the readership.
+  Date Added: 2026-08-28
+  Source: Books in progress – update #3 (thoughtforms.life, 2026-07-11); PROP-2026-08-08-002
+  Confidence: High
+  Evidence: Verbatim from the post's final paragraph; the proposal records the post body as read in full and quoted, not paraphrased. Note the parenthesis "or soon, by their own interests" — the anticipated audience is a genuine agent, not a channel. **Partial-source note:** the 97-comment thread beneath the post, which contains Levin's own same-day replies (comment IDs 6053–6059), was NOT read, so any position he takes there is uncaptured here.
+
+PRS-84:
+  Problem: AI can now produce a competent book-length exposition of a scientist's published corpus. That makes it an open question what an author actually adds, and what a name on a work certifies, once the content can be reconstructed without them.
+  Resource: Levin's own test case — he tried it: "I recently tried AI in this context – it does a really good job. Maybe soon it will do a better job" — paired with the observation that the reader does not need him for that output: "no one needs *me* to put out an AI-written book on my work – if you want that, you can feed your own preferred AI with my published papers and talks, and get it to tell you the story at whatever level of detail you want. You can already do that."
+  Solution: Authorship is defined as personal line-by-line warrant rather than origination of content: "The only reason for me to put something out is if I have personally gone over every line and it says exactly what I want it to say. I'm not putting my name on anything that isn't just what I wanted to say." The efficiency argument for AI drafting is closed separately and practically — "editing others' writing takes me longer than getting it down in the first place." Read against PRS-83 this is an asymmetry rather than a contradiction: Levin will write *for* machine readers and will not sign work written *by* them, and holds both commitments in the same post. This is the only source in the tradition where he states an authorship condition, and it names one thing an agent cannot do on his behalf.
+  Date Added: 2026-08-28
+  Source: Books in progress – update #3 (thoughtforms.life, 2026-07-11); PROP-2026-08-08-002
+  Confidence: High
+  Evidence: Verbatim, post read in full. The separability of the two commitments is the finding; nothing in the post makes writing-for-AI depend on refusing AI drafting, or the reverse.
+
+PRS-85:
+  Problem: Diverse-intelligence claims are multi-scale, dynamic, and often legible only in motion — morphogenetic trajectories, bioelectric voltage patterns, cellular-automata dynamics (PRS-20, PRS-68, PRS-69) — but the codex form cannot carry them, and Levin reports the constraint as harder than usually assumed: "publishers nowadays don't even want us to use color (can you believe that?), nevermind enable interactive figures or a non-linear traversal through the material. The whole medium seems very stuck in the past."
+  Resource: The alternative he names — a work that would "just live online with glorious color, VR, animation, interactive code notebooks, etc." — set against a counterweight he states plainly and does not dismiss: his grandfather's book on radio electronics and his father's books on history are on the shelf behind him, and "Am I going to break the streak? ugh…"
+  Solution: Explicitly unresolved. The recorded finding is that a leading practitioner regards the standard scholarly container as an active constraint on the content and is weighing abandoning it — held in place by a transmission argument (a physical artifact descendants can hold) rather than a scientific one. Extends PRS-83 from prose style to the object itself: PRS-83 asks who the words are for, this asks whether the container can hold the claim at all.
+  Date Added: 2026-08-28
+  Source: Books in progress – update #3 (thoughtforms.life, 2026-07-11); PROP-2026-08-08-002
+  Confidence: High
+  Evidence: Verbatim, post read in full. High applies to the claim recorded here — that the tension is stated and unresolved. Which way Levin goes is Speculative and is not asserted. Directly relevant to this wiki's own premise: the C2A2 explorer is the non-linear, colored, interactively-traversable object Levin describes wanting and says he cannot get from a publisher.
+
+PRS-86:
+  Problem: A tradition's public record may systematically under-report its holder's actual commitments. If so, a wiki that reconstructs a position from published sources reconstructs a censored version, and will mistake the boundary of the public output for the boundary of the view.
+  Resource: Levin says so directly, about his most metaphysically loaded thread. Of the planned Platonic Space trade book: "Part 1 will be rigorous and explain everything we know about non-physical causal forces in biology, computer science, and cognitive science. Part 2 will be a bit of a departure for my outward-facing work – it will contain personal speculations on bigger questions I don't normally talk about in public."
+  Solution: A calibration constraint on this file rather than a claim about biology: PRS-16, PRS-34 and PRS-79 — the tradition's Platonic-space entries — are to be read as a **lower bound** on Levin's position, explicitly flagged as such, pending Part 2.
+  Date Added: 2026-08-28
+  Source: Books in progress – update #3 (thoughtforms.life, 2026-07-11); PROP-2026-08-08-002
+  Confidence: High
+  Evidence: Verbatim from roster item 4, post read in full. High applies only to the fact that the withholding is stated. **Nothing here licenses any inference about the content withheld** — PRS-79 (the Schindler conversation) is the closest existing source to that material and is itself index-only, so speculation about direction has no source in this file.
+
+PRS-87:
+  Problem: Attempts to converse with non-neural intelligences are contaminated by proxy: when a large language model narrates a gene regulatory network's state, the intelligence on display is the model's, and the system contributes nothing countable as its own utterance. Verbatim: "such dialogue is attempted only by proxy: a large language model speaks on the system's behalf, so any intelligence on display originates from the model while the system itself remains silent." This is the standing methodological gap behind PRS-04, PRS-09 and PRS-25 — substrate-independent cognition asserted, and a detection program (SUTI) named, without a protocol for interrogating a system that does not smuggle in the interrogator's own intelligence.
+  Resource: The frozen-core architecture — the target system's own dynamics installed unmodified as the nonlinear core of a reinforcement-learning policy, with only *linear* input and output interfaces trained. The linearity is what carries the argument: a linear map cannot supply nonlinear competence, so whatever competence appears must come from the frozen system.
+  Solution: The first operational protocol captured in this tradition for letting a non-neural system reply through its own behavior with no parameter altered: "Applied across diverse gene regulatory networks and reinforcement-learning tasks, the framework yields fluent dialogue without altering any system parameter." The language model is demoted to routing and staging — given a human prompt it "routes it to the game whose semantics best match it and designs an environmental state for which the desired action is the rational response, letting the system reply through its own behavior."
+  Date Added: 2026-08-28
+  Source: Language Game: Talking to Non-Human Systems (Zhang & Levin, arXiv:2605.16321, 2026-05-05); PROP-2026-08-10-001
+  Confidence: Medium
+  Evidence: All quotations verbatim from the arXiv abstract, which was read along with the author block and section headings. **Sections 2–6, the GRN experiments, the inductive-bias analysis and eight appendices were NOT read** — the HTML fetch exceeded the size limit and returned front matter only. Medium rather than High because the force of the linearity argument depends on interface-capacity details in Appendix H, unretrieved. No quantitative result is claimed here.
+
+PRS-88:
+  Problem: Two systems with irreconcilable internal representations share no vocabulary, so there is no evident basis on which either could be said to understand the other — the general form of the incommensurability problem. PRS-47's remapping/navigation formalism identifies the same cognitive operation across substrates but presupposes a common embedding rather than establishing one between parties that have none.
+  Resource: The shared game as lingua franca. Verbatim: "Because different architectures playing the same game optimize the same reward, their behaviors can all be read as pursuit of that reward; the game serves as a lingua franca across otherwise irreconcilable representations." Meaning is located in use, in the Wittgensteinian sense the authors invoke by name: "Through use and reward, the system's states and responses acquire meaning within the game, so playing becomes speaking."
+  Solution: Common ground relocated from representation to shared task under shared reward — no mapping between internal states, no shared ontology, no common vocabulary required. Arrived at from biology rather than from semantics, and applying to the hardest case, where the parties' representations are not merely different but incommensurable.
+  Date Added: 2026-08-28
+  Source: Language Game: Talking to Non-Human Systems (Zhang & Levin, arXiv:2605.16321, 2026-05-05); PROP-2026-08-10-001
+  Confidence: Medium
+  Evidence: Abstract verbatim. The supporting empirical claim — "well-trained agents of disparate origin converge on similar behavior" — is asserted in the abstract; the convergence measurements (Appendix G, "Full Policy Similarity Results") were NOT read. The convergence is therefore captured as claimed, not as verified.
+
+PRS-89:
+  Problem: If some substrates are better interlocutors than others, that is a property of the substrate rather than of the conversation — but nothing in the program has measured it, so "can this system be talked to?" has had no principled answer. PRS-25's SUTI detection program presupposes an answer it does not supply.
+  Resource: Systematic variation across diverse gene regulatory networks used as frozen reservoirs, with talkability as the dependent variable.
+  Solution: A claimed substrate-level talkability gradient — "specific GRN properties make a system easier or harder to talk with — an inductive bias of the reservoir itself" — which would make interrogability a measurable property of a candidate intelligence rather than a fact about the interrogator's skill.
+  Date Added: 2026-08-28
+  Source: Language Game: Talking to Non-Human Systems (Zhang & Levin, arXiv:2605.16321, 2026-05-05); PROP-2026-08-10-001
+  Confidence: Speculative
+  Evidence: **EVIDENCE GATE OPEN.** Abstract only. *Which* GRN properties, and by what metric, is in Section 5 ("Inductive Biases of Biological ODE Reservoirs"), which was NOT read — the arXiv HTML fetch exceeded the size limit. What this triplet captures is the *existence* of the claim, not its content, direction, or magnitude. Retrieve the PDF before citing any specific property or ranking.
+
+PRS-90:
+  Problem: The tradition claims agency is a matter of degree and that integration into a coherent whole is what makes something an agent. That has been demonstrated qualitatively — planaria, xenobots, cell collectives (PRS-04, PRS-17, PRS-23) — but has resisted general substrate-neutral measurement, so it has functioned as an interpretive frame rather than a testable hypothesis. PRS-13's search-efficiency metric measures competence, not integration, and does not fill this slot.
+  Resource: Causal emergence quantified via ΦID (integrated information decomposition) — how much of what happens next is explained by the agent as an integrated whole rather than by its parts taken separately — computed on reinforcement-learning agents across varying environments, algorithms and architectures, a substrate where the tradition's biological commitments do none of the work.
+  Solution: Integration becomes measurable outside biology, and the measurement behaves as the theory predicts: causal emergence tracks the agent's competence rather than merely describing it after the fact.
+  Date Added: 2026-08-28
+  Source: The Causally Emergent Alignment Hypothesis (Pigozzi & Levin, arXiv:2605.06746, 2026-05-07); PROP-2026-08-10-002
+  Confidence: Medium
+  Evidence: Abstract-level summary retrieved via search; the ΦID metric is named in the source, and authorship and date are confirmed against Levin's preprints page. **Full text NOT read** — the arXiv abstract and PDF URLs were refused as out-of-provenance by the fetch tool. No effect size, task list, or architecture list is claimed. Medium rather than High because the strength of the claim rests on variance explained, which is unretrieved.
+
+PRS-91:
+  Problem: There is no early internal signal of whether a learning agent will end up competent. Reward is the only available measure and it is a lagging one — by the time reward separates agents, training is over.
+  Resource: Causal emergence measured early in training, before reward differentiates the agents.
+  Solution: A leading indicator of competence: "successful agents exhibited causal emergence that was consistently predictive of final reward early in training and whose representational dynamics aligned with reward improvement in most tasks." With PRS-40/PRS-41 (alignment as cognitive-light-cone/externality management) and PRS-54/PRS-55 (the virtual governor), this is the third entry in the tradition's alignment arc and the first quantitative one: externalities → virtual governor → measurable emergence. The three should be read as one position, not three captures.
+  Date Added: 2026-08-28
+  Source: The Causally Emergent Alignment Hypothesis (Pigozzi & Levin, arXiv:2605.06746, 2026-05-07); PROP-2026-08-10-002
+  Confidence: Medium
+  Evidence: Retrieved abstract summary, quoted. Note the hedge in the source — *most* tasks, not all. Where it fails is unread and is an open question, not a footnote. **Full text NOT read** (fetch refused this session); retry from the Mac at arxiv.org/abs/2605.06746. Held apart from the *alignment* reading deliberately: the result quoted is a correlation between causal emergence and **reward**, which is the specified objective, not alignment in the AI-safety sense, which concerns the unspecified one. That stronger reading — the paper's own title claim — is NOT ingested; see the processed note for PROP-2026-08-10-002.
+
+PRS-92:
+  Problem: Homeostatic feedback is standardly read as a *stability* mechanism — it returns a system to setpoint and does nothing more. Whether the same architecture can also produce experience-dependent improvement has not been tested in metabolism. This matters for the program's reach: the basal-cognition case has been argued almost entirely from bioelectric evidence (PRS-01, PRS-17, PRS-22, PRS-35, PRS-58), so a framework claiming substrate-independence has kept returning to one substrate.
+  Resource: A coarse-grained dynamical model of mammalian energy metabolism — glucose, glutamine, fatty-acid and oxidative-phosphorylation pathways with Michaelis–Menten fluxes, product-inhibition feedback, adaptive enzyme-capacity regulation, and **explicit ATP costs for enzyme adjustment**, so that adaptation is not free.
+  Solution: The model "exhibits problem solving behavior" — prior perturbation improves later response — placing basal problem-solving in a second, non-bioelectric information-processing substrate inside the same cell. The costed-adaptation term is what distinguishes an adaptive policy from passive relaxation to equilibrium: any learning shown is learning the system paid for.
+  Date Added: 2026-08-28
+  Source: Homeostatic feedback model of energy metabolism with adaptive enzyme levels exhibits problem solving behavior (de Baat & Levin, bioRxiv 10.64898/2026.05.07.721661, 2026-05-07); PROP-2026-08-10-003
+  Confidence: Medium
+  Evidence: Abstract-level summary retrieved via search; authorship and date confirmed against Levin's preprints page. **Full text, figures and parameter values NOT read** — the bioRxiv page itself was not fetched. What counts as "problem solving" here, and how large the improvement is, are in the unread results; no quantitative claim is made. Retry URL: https://www.biorxiv.org/content/10.64898/2026.05.07.721661v1. The wider generalization — that the operative variable is feedback-plus-costed-plasticity rather than any physical medium — is **not** ingested: it is the wiki's inference, not a position the authors are shown to take, and as a bare substrate-independence claim it is already carried by PRS-04, PRS-09 and PRS-38.
+
+*Total PRS triplets: 92*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

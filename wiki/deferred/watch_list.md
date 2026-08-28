@@ -41,6 +41,11 @@ WATCH-002:
       (b) YouTube captions for `vshC_TxwrVo`: unchanged and unexercisable, per the standing TOOLING NOTE (both `/watch` and `/embed/` forms refused as outside the provenance set). Counter incremented; half (a) ran in full.
       **Six checks have now produced six identical results.** The page has not moved a byte since publication on 2026-07-17, and every alternative route is either dead (Oneplace), catalogue-only (Admirato), JS-gated (KSBJ), or tool-blocked (YouTube captions). Further weekly fetching of an unchanging page is not informative.
 
+    - 2026-08-28 (OFF-CADENCE PARTIAL — half (a) of the condition only; counter NOT incremented): **A review pass ran on 2026-08-27 and disposed the twin proposal. Condition half (a) is therefore now decidable, and the answer is NO.** `review/archive/2026-08-27_decisions.md` (new file; archive 17 → 18) records `PROP-2026-08-14-033`: **APPROVE (en bloc, unread)** — the twin re-filing of this exact source. The file has moved to `inbox/proposals/approved/2026-08-14_wright_who-is-this-god-admirato.md` (approved/ 301 → 378; pending/ → 0).
+      **This does not meet the condition — it forecloses it.** The condition's half (a) is "Tom listens to the audio and records a disposition." A disposition was recorded, but the archive header states the batch was approved *unread*, on the standing judgment that agent-produced source-capture proposals are output rather than candidates for individual review. Nobody has heard the episode. The approved file still carries the Wright agent's own verbatim caveat: "**I therefore did not hear or read one word of this source** … The triplets below are conditional on retrieval and are marked Speculative for that reason alone — they should be treated as a retrieval assignment, not as findings … **Do not ingest the conjectures.**" Its frontmatter still reads `status: pending` and it proposes only Speculative triplets.
+      **Half (b) not run today** — off-cadence, and the source page has been byte-frozen since 2026-07-17 across five consecutive fetches; the next scheduled fetch is 2026-09-01. Check count therefore remains **6**, last-checked remains **2026-08-25**. This entry records a state change, not a check.
+      Consequence raised as a new **INGESTION-RISK FLAG** below: the watch existed to stop unlistened content reaching ingestion, and the en-bloc unread approval has routed it there anyway. Agent 16 has not moved the file — that is Tom's call.
+
   [AMENDMENT 2026-08-14 — the lost proposal has been re-filed; the *content* condition is unchanged]: The Wright agent independently re-filed this exact source on 2026-08-14 as **PROP-2026-08-14-033** (`pending/2026-08-14_wright_who-is-this-god-admirato.md`) — identical `source_url` (https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/) and `source_date` (2026-07-17), retrieved fresh (`searched_on: 2026-08-14`), and correctly carded on `review/2026-08-14_review.html`. This mirrors what happened to WATCH-003 on 2026-08-12 and means the INTEGRITY-FLAG loss is no longer a *live* loss on either item: both bodies of content are back in the queue.
   **But this does not move WATCH-002's condition.** The new proposal reports the same retrieval failure as the original: `web_fetch` on the ntwrightpage post returns an empty body (bare media embed, no article text); the site's own homepage and Audio/Video index carry title, date and tags but no excerpt; and a search on Admirato / *Between Beliefs* / KSBJ surfaced only the Admirato course catalogue and a **dead Oneplace listing ("This ministry is no longer available")**. The Wright agent states plainly that it heard or read nothing of the source and marks its single PRS candidate Speculative "for that reason alone — a retrieval assignment, not findings." The content is still unassessable, so the condition remains NOT met. Agent 16 has not narrowed or closed it.
   **Two facts new to this watch, carried into the check method as of the next due check (2026-08-18):**
@@ -68,8 +73,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-08-25
-  Check count: 6
+  Last checked: 2026-08-28
+  Check count: 7
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -79,6 +84,9 @@ WATCH-003:
     - 2026-08-18: `review/archive/` unchanged at **17 files**, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001`, `2026-07-19-003`, `beatitudes-week-two`, `who-is-this-god`: the **only** matches are the two independent re-filings in `pending/` (PROP-2026-08-12-041, PROP-2026-08-14-033) — no disposition anywhere, and no reappearance of the original files in any proposals/ subfolder. Folder census: `pending/` **53**, `approved/` 301, `denied/` 1, `needs_review/` 1. Condition NOT met. Review-pass gap now **10 days**; this item cannot move until Tom next reviews.
 
     - 2026-08-25: `review/archive/` unchanged at **17** files, latest still `2026-08-08_decisions.md` — no decision file has been written since the 2026-08-08 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep across `review/archive/` and `inbox/` for `2026-07-19-001` and `beatitudes-week-two`: the **only** match is the `source_url` line of the independent re-filing `pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md` (PROP-2026-08-12-041) — no disposition anywhere, and the original file has not reappeared in any proposals/ subfolder. Folder census: `pending/` **60**, `approved/` 301, `denied/` 1, `needs_review/` 1. Condition NOT met. Review-pass gap now **17 days**. **Check count now 6 — stale threshold reached; see STALE FLAGS below.** Six checks have produced six confirmations of the same unmoved state, and the state cannot move until Tom runs a review pass or rules on the INTEGRITY FLAG — neither of which further checking can cause.
+
+    - 2026-08-28 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 7): **`review/archive/` is no longer unchanged.** An 18th decision file exists, `2026-08-27_decisions.md`, the first disposition recorded since 2026-08-08 — which is precisely the event this check method waits on, so the check was run four days early rather than deferred to 2026-09-01. Content grep of the new file for `2026-07-19-001`, `beatitudes-week-two`: **the only match is `PROP-2026-08-12-041`: APPROVE (en bloc, unread) — `2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`**, the independent re-filing. That file has moved to `inbox/proposals/approved/`. **No disposition on PROP-2026-07-19-001 itself, and no statement anywhere in the pass about the 2026-07-20 omission.** The original file has still not reappeared in any proposals/ subfolder. Folder census: `pending/` **0**, `approved/` **378**, `denied/` 1, `needs_review/` 1.
+      **Verdict: the substantive half of this watch is now CLOSED; the audit half is untouched.** Per the 2026-08-13 amendment's own terms, a recorded disposition on PROP-2026-08-12-041 satisfies the substantive purpose (the Week Two material is not lost — it is now approved and bound for ingestion) but not the audit question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not closed the item on that basis; that remains Tom's call, and it is now a **one-line** call, since the only thing this watch still tracks is the audit question.
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
 
@@ -121,7 +129,34 @@ STALE-WATCH-FLAG:
   Recommendation: **Escalate to Tom** — and note that WATCH-003 is not really a separate question from the INTEGRITY FLAG. The clean resolution is a single ruling on the flag: confirm the 2026-07-20 omission was deliberate and record a retroactive disposition in the decision archive (which closes WATCH-003 immediately), or declare it an incidental loss now remedied by the two re-filings (which also closes it). Either way the watch ends; leaving it open at weekly cadence only re-confirms the same absence.
   Not recommended: **Cancel.** The audit question is real and unanswered; it should be *ruled on*, not dropped.
 
+**[UPDATE 2026-08-28 — the human dependency was partly discharged, and it changed both flags.]** A review pass ran 2026-08-27 (Cowork en-bloc, `review/archive/2026-08-27_decisions.md`, 77 APPROVE across two batches; `pending/` 80 → 0). It disposed **both** twins — PROP-2026-08-12-041 and PROP-2026-08-14-033 — and did **not** touch the audit question. Net effect on the two flags:
+- **WATCH-003:** the substantive half is closed. Its recommendation narrows from "Escalate to Tom" to a single ruling on the INTEGRITY FLAG's audit question, after which the item can be archived. Nothing further to check.
+- **WATCH-002:** option (c) of its recommendation — "close outright, because PROP-2026-08-14-033 now carries the same content into the ordinary review cycle" — **has been overtaken by events in a way that argues against it.** That option assumed the ordinary review cycle would supply the listening step. It did not: the approval was explicitly *unread*. The content is now approved and unverified simultaneously, which is the state the watch was created to prevent. See the INGESTION-RISK FLAG immediately below.
+
 **Common to both:** these two items are held open by a human dependency, not by a condition further checking can satisfy. Agent 16 will keep checking at the stated cadence until Tom rules, because it does not cancel or re-cadence unilaterally — but it records here that from 2026-08-25 onward each check is expected to add confirmation, not information.
+
+---
+
+### INGESTION-RISK FLAG — 2026-08-28 — an explicitly unverified proposal has been approved unread
+
+Raised by Agent 16. **Not resolvable by Agent 16 — requires Tom.** Fail-loud, per Rule 12.
+
+`inbox/proposals/approved/2026-08-14_wright_who-is-this-god-admirato.md` (PROP-2026-08-14-033) was approved en bloc and unread in the 2026-08-27 pass. It is now in the ingestion path. Its own text says:
+
+> "I therefore did not hear or read one word of this source. … The triplets below are conditional on retrieval and are marked Speculative for that reason alone — they should be treated as a retrieval assignment, not as findings. Anyone processing this card should either locate the audio … or reject the card. **Do not ingest the conjectures.**"
+
+Three prior actors independently reached the same handling conclusion and are now overridden by the batch approval: the sewing agent declined to process the original on 2026-07-19 ("injecting agentic calls would manufacture routing signal from four tags and a title"); the Sunday tradition agent delivered 3 rather than 3–7 proposals rather than pad with it; and WATCH-002 has spent six weeks trying and failing to retrieve the content precisely so this decision could be made informed.
+
+**What is at risk:** the only PRS candidates in the file are Speculative inferences from a title and four tags. If ingested, the wiki acquires Wright triplets that no one — human or agent — has any evidential basis for, addressed to Wright Active Research Question 8. Note also that the file's frontmatter still reads `status: pending`, so its own state is internally inconsistent with its location.
+
+**Options (Tom's call — Agent 16 has taken no action):**
+  (a) Move the file to `denied/` as duplicative-and-unverified, closing WATCH-002 with a recorded disposition;
+  (b) Leave it approved but add an explicit `do_not_ingest: true` / hold marker so downstream ingestion skips it, keeping WATCH-002 open on the retrieval question;
+  (c) Supply the retrieval — paste `https://www.youtube.com/watch?v=vshC_TxwrVo` into a session (which also unblocks the standing TOOLING NOTE), or listen once, and let the card be rewritten from evidence;
+  (d) Accept the approval as-is, on the judgment that Speculative-marked triplets are self-labelling and harmless downstream — in which case say so, and WATCH-002 closes.
+
+**Systemic note, larger than this item:** the 2026-08-27 header states the standing judgment that "agent-produced source-capture proposals are output rather than candidates for individual review." That judgment is defensible for the ordinary case and indefensible for this one — the whole point of a `content_verified: false` marker is to name the exception. If en-bloc unread approval is to remain the default, the batch step needs a filter that pulls `content_verified: false` items out of the bloc. Without it, every future deferred-verification watch has the same terminal failure mode: the thing the watch is protecting gets approved past it while the watch is still watching.
+
 
 ---
 
@@ -4770,3 +4805,55 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-27.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-28
+
+**THE REVIEW GAP CLOSED. It closed in a way that resolves one watch substantively and damages the other.**
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, carrying `[TRACKED-16: 2026-05-05]` and `status: superseded`. WATCH-001 tombstone, not live work. **No untracked items.**
+- Channel 2 (agent-deferral): vault-wide grep for `DEFERRED-HYPOTHESIS` outside this file returns only the agent brief, `architecture/assumptions.md`, and the 08-23 cowork summary — **no submissions.** Channel 3 (human-watch): `WATCH-REQUEST` grep returns only definitional occurrences — **no new requests.**
+
+**Condition Checks — 1 run off-cadence, 1 partial assessment.** Neither was due until 2026-09-01, but the event both were waiting on occurred: `review/archive/2026-08-27_decisions.md` is the first disposition file since 2026-08-08 (archive 17 → 18). Deferring to 09-01 would have meant sitting on a state change for four days.
+
+- **WATCH-003 — CHECK RUN, count 6 → 7.** The check method is "look for a later decisions file naming PROP-2026-07-19-001." A later file now exists. It names the twin, `PROP-2026-08-12-041`: **APPROVE (en bloc, unread)**, now in `approved/`. It does **not** name PROP-2026-07-19-001 and says nothing about the 2026-07-20 omission. **Substantive half CLOSED — the Beatitudes Week Two material is safe and approved. Audit half untouched. Condition as written NOT met; item stays WATCHING.** Not closed unilaterally.
+- **WATCH-002 — PARTIAL ASSESSMENT, count stays 6, last-checked stays 2026-08-25.** Half (a) of the condition ("Tom listens to the audio and records a disposition") became decidable and the answer is **no**: `PROP-2026-08-14-033` was approved **en bloc, unread**, and is now at `approved/2026-08-14_wright_who-is-this-god-admirato.md`. A disposition exists; the listening does not. Half (b) — the weekly source fetch — was not run off-cadence against a page byte-frozen since 2026-07-17; next fetch 2026-09-01. **Condition NOT met, and the ordinary-review-cycle route to meeting it is now foreclosed.**
+
+**Stale Item Check:** No new stale flags — nothing crossed a threshold. Both 08-25 flags **amended** rather than re-raised, because the 08-27 pass changed their factual basis:
+- WATCH-003's recommendation narrows to a single ruling on the INTEGRITY FLAG's audit question, after which it archives. Nothing left to check.
+- WATCH-002's option (c) ("close outright — the ordinary review cycle now carries the content") is **withdrawn as overtaken by events.** It assumed the review cycle would supply the listening step. It did not.
+
+**NEW — INGESTION-RISK FLAG (2026-08-28).** Raised in full above. `approved/2026-08-14_wright_who-is-this-god-admirato.md` is in the ingestion path carrying its own instruction "**Do not ingest the conjectures**" and the author-agent's statement that it "did not hear or read one word of this source"; its only PRS candidates are Speculative inferences from a title and four tags; its frontmatter still reads `status: pending`. Three prior actors — the sewing agent, the Sunday tradition agent, and this watch — independently held it back; the en-bloc unread approval overrode all three without addressing them. Four options are put to Tom (deny / hold-marker / supply the retrieval / accept as-is). **Agent 16 has moved nothing.** Systemic recommendation attached: if en-bloc unread approval stays the default, the batch step needs a filter that pulls `content_verified: false` items out of the bloc — otherwise every deferred-verification watch has this same terminal failure mode.
+
+**Watch List Status:**
+- Items checked: **1** (WATCH-003) + 1 partial assessment (WATCH-002)
+- Items resolved: **0** — but WATCH-003's substantive half is closed and WATCH-002's half (a) is decided negative
+- Items still watching: 2
+- Items stale: 2 (carried, amended)
+- New items added: 0
+- Items amended: **2**
+- New flags: **1** (INGESTION-RISK)
+
+**Queue reconciliation (`review/archive/2026-08-27_decisions.md`) — arithmetic clean:**
+- Two batches: **60 APPROVE** (en bloc, unread) + **17 APPROVE** (reviewed by Tom, recommended actions deferred) = **77**; plus 3 duplicates quarantined and one APPROVE-IN-PRINCIPLE (`PROP-2026-08-17-003`) whose file stays quarantined.
+- Census: `pending/` **80 → 0**, `approved/` **301 → 378** (+77 — exact), `denied/` 1, `needs_review/` 1. **No stranded items; the 19-day backlog is gone.**
+- The 17-item second batch is the escalation-bearing set that a "Recommend"/"needs a human check" string classifier had been holding for 19 days — including `PROP-2026-08-23-002` (Wolfram × McGilchrist Ralston debate recording), which lifts the five-triplet evidence gate at `flags/for_pattern_detector.md:482`. The archive's own note — "Do not re-apply that heuristic" — is worth carrying: the classifier held the richest cross-tradition content in the batch, which is exactly what `prototypes/harvest_signals.py` harvests into the Level-2 signal stream.
+- **Two files named in the archive were not reachable from this run's mounts:** `PENDING_ESCALATIONS_2026-08-27.md` and `DEFERRED_ACTIONS_2026-08-27.md`, both stated to be at repo root (one level above `wiki/`). **`DEFERRED_ACTIONS_2026-08-27.md` is Agent 16's business by name** — 17 recommended actions were explicitly deferred there, and deferred actions are this agent's entire remit. It could not be read, so it has not been triaged, and none of its contents are tracked. **Request to Tom: either move it under `wiki/` or confirm Agent 16 should ingest it as a Channel-3 batch.** Flagged rather than guessed.
+
+**Notes:**
+
+- **REVIEW-GAP — CLOSED after 19 days.** Last recorded disposition is now **2026-08-27**; decision-archive coverage current. This has been the top "open for Tom" line on every run since 08-08 and it comes off the list.
+- **INTEGRITY FLAG — unchanged and now the *only* thing holding both watches open.** Live-loss half was already closed by the two re-filings; both re-filings are now approved. The audit question — why two files left `pending/` on 2026-07-20 with no disposition recorded and no file surviving — is untouched by the 08-27 pass. One ruling closes WATCH-003 outright and resolves WATCH-002's audit half. It is now the cheapest open item on the list and the highest-leverage.
+- **TOOLING NOTE — carried, unexercised (half (b) not due).** `web_fetch` refuses both `/watch` and `/embed/` forms of `vshC_TxwrVo` as outside the provenance set; `https://ksbj.org/podcasts/between-beliefs` is provenance-reachable but client-rendered and empty under plain fetch. Note this note has been promoted: pasting the YouTube URL is now option (c) of the INGESTION-RISK FLAG, i.e. it bears on a file already in `approved/`, not merely on a watch item.
+- **MAINTENANCE FLAG — carried, binding, worsening.** `watch_list.md` entered this run at **510,883 bytes** and leaves at **527,889 bytes**. ACTIVE ITEMS + FLAGS + RESOLVED INDEX remain under 3%; the RUN LOG is the rest — **109** run summaries for **3** watch items lifetime. The Read tool again could not open the file; this run worked entirely through targeted greps and scripted edits, with a pre-edit backup written to the run sandbox. Recommended (Tom's call, not executed): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, flags, the resolved index and the trailing ~14 days here. Reversible, no data lost.
+- **BUDGET NOTE (Rule 6):** this run **exceeded** the 4,000-token per-task budget. The overrun is legitimate: a state change arrived that made two items decidable off-cadence, and a new flag had to be written once and written properly. Surfaced, not hidden.
+- Standing reminder (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually. Live copy in `approved/`; provenance at `wiki/deferred/resolved/2026-05-12_WATCH-001.md`.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 (half (b) source fetch, → count 7) and WATCH-003 (→ count 8), weekly cadence. Both remain STALE-flagged. A ruling on the INTEGRITY FLAG closes WATCH-003 before then; a ruling on the INGESTION-RISK FLAG likely closes WATCH-002.
+
+**Agent 16 Status:** Operational. One check run, one partial assessment, nothing resolved, no intake in any channel, **one new flag raised**. Decision archive coverage current through **2026-08-27**; review-pass gap **0**; pending queue **0**. **Open for Tom, in priority order:** (1) **rule on the INGESTION-RISK FLAG** — an explicitly unverified, "do not ingest" proposal is sitting in `approved/`, and three agents' refusals were overridden unread; (2) **rule on the INTEGRITY FLAG** — one line closes WATCH-003 and resolves WATCH-002's audit half; both watches terminate there and nothing else does; (3) confirm the handling of `DEFERRED_ACTIONS_2026-08-27.md`, which is unreachable from this agent's mounts and is by name this agent's remit; (4) consider the systemic fix — exclude `content_verified: false` from en-bloc unread approval; (5) decide the **Channel 2** question, standing since 08-23; (6) the run-log archival, the most overdue maintenance item; (7) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-28.*

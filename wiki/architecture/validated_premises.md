@@ -6593,3 +6593,95 @@ first thing to re-consider for mint.
         171, 172, 173, 178, 179, 181, 183 before declining every mint
     Current status: DISPOSITIONED — no addition to the validated basis this batch
     Disposition records: DISPOSITION-814 .. DISPOSITION-827 (2026-08-26)
+
+PREMISE-187:
+  Date validated: 2026-08-28
+  Source item: ASSUMPTION-1226 (14a)
+  Statement: A CHECK OVER SURFACE FORM CANNOT DECIDE WHETHER CONTENT MEANS WHAT IT WAS MEANT TO
+    MEAN, AND A GATE THAT APPEARS TO CHECK WHAT IT CANNOT DECIDE IS WORSE THAN NO GATE. Three
+    clauses, and the third is the one that binds.
+    (1) IDS, GLOSSES, GRADES AND LENGTH SIGNALS ARE STRUCTURAL PREDICATES. They decide
+    well-formedness and resolvability. They are constitutively blind to argument-layer inversion —
+    a passage that says the opposite of what it should say, in well-formed prose, with correct
+    identifiers. The formal-methods literature concedes this in a setting where the static checker
+    is enormously stronger than anything in this estate: "static checkers are cheap and
+    deterministic but cannot assess whether a formalization captures mathematical intent."
+    (2) THE FAILURE IS NOT A COVERAGE GAP, IT IS A CATEGORY BOUNDARY. Adding structural predicates
+    does not asymptotically approach semantic checking; important defects arise from mismatched
+    triggers, partial enforcement and incorrect execution paths rather than from missing keywords
+    or local syntactic violations, so the useful analysis must reason about intended behaviour
+    rather than textual resemblance.
+    (3) A STRUCTURAL GATE MUST REPORT ITS SCOPE, NOT A VERDICT. Automated checking that does not
+    separate what it can decide from what it cannot "can create false confidence." Operationally:
+    a passing structural gate licenses "well-formed," never "correct," and items it did not check
+    semantically must be recorded as UNCHECKED rather than as PASSED.
+    EXPLICITLY NOT INCORPORATED, and the exclusion is load-bearing: the assumption's second limb,
+    that detection methods for semantic reversal exist and can be relied on. They exist and cannot.
+    LLM-as-judge accuracy of roughly 0.60 on comparative judgment, degrading as errors get subtler;
+    NLI models lacking contextual depth and brittle to negation and lexical perturbation. That limb
+    is held as MONITOR-566-adjacent under DISPOSITION-830 and must not be read out of this premise.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: arXiv:2606.29493 (dataset defects and evaluation failures in Lean theorem
+    proving) — the static/semantic division stated directly; arXiv:2605.17926 (LLM-based static
+    verification of code against natural-language requirements, industrial experience report) — the
+    false-confidence finding and the mismatched-trigger defect class. Both SNIPPET-ONLY, authors
+    unverified. (15a SUPPORTED / Strong on this limb.)
+  Challenges noted: 15b CHALLENGED (Strong) — but the challenge is entirely to the excluded second
+    limb. 15b searched for and did not find any source defending structural checking as semantically
+    adequate. The asymmetry is why this limb is minted and the other is not.
+  Confidence: Moderate — the claim is textbook-level and uncontested in both directions, but every
+    source behind it was read at snippet level and none concerns doctrinal prose. The n=1 basis of
+    the originating observation is untouched: the literature supports the mechanism, not a frequency.
+  Applicable to: the Summa QC gate set; any future verification gate over generated text; agents 13,
+    14a, 14b and this pipeline's own result files. Consistency: complements PREMISE-179 (silent
+    readers) and the correlated-input premise at validated_premises ~4360 (a downstream check is
+    structurally blind to an upstream fault); does not contradict any existing premise located in
+    the consistency pass.
+  Re-check due: 2026-09-28 (Monthly — held short because the excluded limb is moving fast)
+  Status: ACTIVE
+
+PREMISE-188:
+  Date validated: 2026-08-28
+  Source item: PRESUMPTION-889 (14b)
+  Statement: AN EVIDENTIARY QUALIFIER TRAVELS WITH THE CLAIM OR IT DOES NOT TRAVEL. A caveat placed
+    in a document header does not govern the claims in the body once those claims are quoted, and
+    the loss is systematic rather than careless.
+    (1) THE STRIPPING IS SELECTIVE, NOT ACCIDENTAL. Hedged statements diffuse less than unhedged
+    ones — measured over two million messages — so retransmission preferentially removes the
+    qualifier, and communicators have a standing incentive to remove it because qualifiers reduce
+    trust and sharing. News coverage of research is "rarely hedged." The header survives; the body
+    is what gets carried.
+    (2) THE SAME OPERATES IN MULTI-AGENT MACHINE SYSTEMS. Communication topology — who receives an
+    uncertainty signal, how it is retransmitted, how contributions are weighted at aggregation — can
+    amplify, damp or distort the evidential content of propagated uncertainty. This estate is such
+    a topology.
+    (3) THE REMEDY IS PER-CLAIM ATTACHMENT, AND IT IS ACHIEVABLE. GRADE's per-outcome certainty
+    rating is a working counterexample to any blanket claim that qualifiers cannot survive: they
+    survive when attached to the individual finding rather than declared once at the top. The cost
+    of the attachment is the work; there is no cheaper mechanism on record.
+    OPERATIONAL FORM for this estate: an access marking ([SNIPPET-ONLY], [authors unverified],
+    [ABSTRACT-ONLY]) belongs on the source line; a run-level evidence-grade statement must be
+    repeated at each finding it degrades, not only in the run header.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight, the designers were unaware)
+  Supporting evidence: PNAS Nexus 3(10):pgae439 (2024), "Expressions of uncertainty in online science
+    communication hinder information diffusion"; Jensen (2008), Human Communication Research, on
+    unhedged news coverage; Gustafson & Rice (2020), Public Understanding of Science, review;
+    arXiv:2604.23505 on uncertainty propagation in LLM-based systems. All SNIPPET-ONLY.
+    (15a NO-SUPPORT-FOUND for the presumption / Strong for its negation.)
+  Challenges noted: 15b WEAKLY-CHALLENGED. The GRADE apparatus is a real counter-mechanism, and it
+    under-performs where it is applied — ratings predominantly low or very low, and only 47% of
+    repeated systematic-review searches retrieved a similar record count. The challenge is folded
+    into clause (3) rather than left outside: survival is achievable, not automatic. 15b also raises
+    a genuine alert-fatigue objection to per-claim repetition, which is why the operational form is
+    scoped to access markings and degradation statements rather than to all caveats.
+  Confidence: Moderate — two independent literatures agree, but both concern public communication of
+    science rather than internal machine-generated records, and the transfer is plausible, not shown.
+  Applicable to: every file produced by 15a, 15b and 15c; the Summa citation apparatus; any artifact
+    whose header carries a scope-degradation statement. Immediate in-house test available and named
+    in PRESUMPTION-889_against.md: take five claims sourced from lit-search files and quoted
+    elsewhere in the estate, and check whether the quoting document repeats the source's evidence
+    grade. The 2026-08-26 run's 198 SNIPPET-ONLY markings are the ready case.
+  Consistency: complements PREMISE-078 (register-then-look honesty) and PREMISE-133; no contradiction
+    found with any existing premise in the consistency pass.
+  Re-check due: 2026-11-28 (Quarterly)
+  Status: ACTIVE

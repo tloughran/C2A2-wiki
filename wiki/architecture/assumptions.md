@@ -21562,3 +21562,190 @@ ASSUMPTION-1221:
     Transform at each step:
       14a: Extracted from three transcripts and the evening summary, consolidated as one item because the disclosures are identical in form. The QC sweep counter-instance is 14a's reading of that run's own stated reason for stopping.
     Current status: UNTESTED
+
+ASSUMPTION-1222:
+  Date identified: 2026-08-27
+  Statement: "These 60 were approved UNREAD, on the standing judgment that agent-produced source-capture proposals are output rather than candidates for individual review."
+  Context: The en-bloc clearance of the review gate, ~12:15. Recorded verbatim in `review/archive/2026-08-27_decisions.md`. Tom gave the approval in conversation after being shown the queue's shape (80 pending / 18 escalation-bearing / 3 duplicates).
+  Type: methodological
+  Related decisions: DECISION-079
+  Testability: testable via literature (sampling versus exhaustive inspection in human-in-the-loop gates); testable empirically (audit a sample of the 60 for content that would have changed a ruling)
+  Status: UNTESTED — recorded neutrally. The judgment is defensible on its face and is stated as *standing*, meaning it predates today; no run in this register has recorded it being adopted, so its own provenance as a rule is unlocated.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1222
+    Item type: ASSUMPTION (stated — quoted from the decision archive)
+    Transform at each step:
+      14a: Extracted verbatim. The observation that the rule is called "standing" without a recorded adoption is 14a's reading of the register, flagged [inferred] and not folded into the statement.
+    Current status: UNTESTED
+
+ASSUMPTION-1223:
+  Date identified: 2026-08-27
+  Statement: "The classifier that held them keyed on the string 'Recommend'/'needs a human check' and so held proposals for containing the richest cross-tradition content in the batch. That content is precisely what `prototypes/harvest_signals.py` harvests from `approved/*.md` `## Cross-Tradition Signals` sections into the Level-2 signal stream. Holding them suppressed the signal stream's best input for 19 days. Do not re-apply that heuristic."
+  Context: Second batch ruling, same day. Of 17 flagged passages, 11 were agent-to-agent dispatch recommendations under `## Cross-Tradition Signals`, 6 were `SOURCE-READ NOTE` fail-loud disclosures, and exactly 1 (#16, PROP-2026-08-23-002) was a genuine request for a human ruling on wiki state.
+  Type: methodological
+  Related decisions: DECISION-081
+  Testability: testable empirically (measure the Level-2 signal stream's yield before and after the release of the 17); testable via literature (keyword-based triage and precision/recall in escalation classifiers)
+  Status: UNTESTED — the 1-of-17 precision figure is stated and internally consistent with the archive's own passage breakdown, but no independent recount was performed by this run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1223
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim from `review/archive/2026-08-27_decisions.md`, including the prohibition, which is the operative clause.
+    Current status: UNTESTED
+
+ASSUMPTION-1224:
+  Date identified: 2026-08-27
+  Statement: "No review page was generated and no `[C2A2-review-decision]` email exists for this batch, so nothing was appended to `provenance/decision_emails.json` — fabricating an email entry there would corrupt a store whose stated contract is verbatim email."
+  Context: The en-bloc batch. Stated as a reason for a deliberate omission.
+  Type: epistemic
+  Related decisions: DECISION-082
+  Testability: framework commitment (not testable) — this is a rule about what a store means, not a claim about the world. Its *consequence* is testable: whether any instrument reads `decision_emails.json` as the decision record of account.
+  Status: UNTESTED (framework commitment). Recorded with its stated cost: the day's summary notes that the batch "is invisible to any instrument that reads the email store as the decision record." Both the rule and its price were stated by the same run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1224
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. The consequence clause is also a quotation, from `daily_sync/cowork_to_chat/2026-08-27_cowork_summary.md`.
+    Current status: UNTESTED
+
+ASSUMPTION-1225:
+  Date identified: 2026-08-27
+  Statement: "PROP-2026-08-17-003 — approve in principle, file stays quarantined. Approving an escalation does not restore a duplicate."
+  Context: A single proposal that was both escalation-bearing and a duplicate. The ruling separates the two dispositions.
+  Type: architectural
+  Related decisions: DECISION-083
+  Testability: framework commitment (not testable) — a statement about what an approval token means.
+  Status: UNTESTED (framework commitment). Noted because it is the only ruling today that distinguishes *judgment on content* from *disposition of a file*, a distinction the other four rulings collapse.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1225
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the decision archive's duplicate section and the day's summary, which state it in the same terms.
+    Current status: UNTESTED
+
+ASSUMPTION-1226:
+  Date identified: 2026-08-27
+  Statement: "Day 18 stated the Father–Son relation backwards in the body — 'the Son is whence the Father' — inside the article (Q.33 a.1) whose entire purpose is to fix that direction... Every automated gate in the system passes over it in silence: no id, no gloss, no grade, no length signal, faithful transcript, all five reviewer questions answer YES. It had already survived a QC pass on 2026-08-15 marked `rewrote`. This is the first defect in the argument rather than the sourcing layer."
+  Context: Summa QC sweep, 20:17–20:35. The stated assumption is that the static gate set is structurally blind to argument-layer defects, not merely that it missed one.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically (seed known argument-layer inversions into a sample and measure gate detection rate); testable via literature (defect taxonomies and the limits of static checking in text QA)
+  Status: UNTESTED — the claim is one instance generalised to a class, and the run says so itself by writing it "to memory as a new class."
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1226
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. The n=1 observation is 14a's and is stated as a status caveat, not folded into the assumption.
+    Current status: UNTESTED
+
+ASSUMPTION-1227:
+  Date identified: 2026-08-27
+  Statement: Two runs independently ruled out an automated id sweep. QC sweep: "`Friston PRS-08` wrong a fourth time (Days 9, 14, 16, 17). Repointed to PRS-07... Day 16's correct target two days ago was PRS-16. Two different repairs means no rename table exists — a sweep would corrupt one of them." Commentary reviewer: "Friston PRS-04 again, resolving to PRS-16 this time — a third different correct target in three days, which closes any thought of an id-level sweep."
+  Context: Two Summa runs the same evening, reaching the same conclusion from different days and different source ids.
+  Type: empirical
+  Related decisions: DECISION-078
+  Testability: testable empirically — and near-decisive as stated. Two correct targets for one wrong id is sufficient to falsify a one-to-one rename mapping.
+  Status: SUPPORTED — [reasoned this run] the inference is valid on its own evidence: a single wrong id resolving to two different correct ids is inconsistent with any total rename function. What is *not* established is the stronger claim that no partial mapping exists for any subset.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1227
+    Item type: ASSUMPTION (stated — two independent verbatim statements, consolidated)
+    Transform at each step:
+      14a: Extracted from two transcripts and consolidated because the conclusion and its warrant are identical in form. Marked SUPPORTED on the logic, with the scope limit stated rather than assumed away.
+    Current status: SUPPORTED
+
+ASSUMPTION-1228:
+  Date identified: 2026-08-27
+  Statement: "`MEMORY.md` is at 19.9 KB against a 24.4 KB read limit. If it crosses, every future run loses the index that tells it which traps are already known — and those runs would then re-derive findings you've already paid for, or worse, re-open closed backlogs."
+  Context: Summa commentary reviewer, raised unprompted as the first of two items "beyond the log." The run declined to compact unilaterally on remit grounds.
+  Type: architectural
+  Related decisions: DECISION-078
+  Testability: testable empirically (measure the file; simulate a truncated read and count re-derived findings)
+  Status: UNTESTED by this run — the file sits in the Summa vault, outside this run's mount. The conditional is stated with a hard threshold and a named failure mode, which makes it unusually checkable; it is also an 82%-of-limit warning that no run is authorised to act on. That combination is OPEN-170's shape.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1228
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. Measurement was attempted and is out of mount; the failure to verify is declared rather than omitted.
+    Current status: UNTESTED
+
+ASSUMPTION-1229:
+  Date identified: 2026-08-27
+  Statement: "Budget breach, surfaced per Rules 6 and 12: two pairs of the skill's six. Twenty-eighth consecutive run to report that the 6-pair cap and the 30k session budget aren't simultaneously satisfiable at the depth these defect classes need" (commentary reviewer); "Budget breach, twenty-seventh consecutive: 2 pairs of 6. The transcript frame actually running this block is what cost the extra, and it's also what caught the inversion" (QC sweep).
+  Context: Rules 6 and 12, two runs, same evening. The stated assumption is unchanged from ASSUMPTION-1221 — that disclosure discharges the rule — but the second half of the QC sweep's sentence is new: the overrun is claimed to be *productive*, and the day's single most important finding is offered as the evidence.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically (compare finding yield per pair between capped and overrun runs across the 28-run series — the data exists in the run logs)
+  Status: UNTESTED. Recorded as a distinct item from ASSUMPTION-1221 because the justification has changed: the breach is no longer merely disclosed, it is defended on results. Twenty-seven and twenty-eight consecutive is a standing condition, not a breach.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1229
+    Item type: ASSUMPTION (stated — two verbatim disclosures)
+    Transform at each step:
+      14a: Extracted from two transcripts. Distinguished from ASSUMPTION-1221 on the ground that the warrant changed, and the change is quoted.
+    Current status: UNTESTED
+
+ASSUMPTION-1230:
+  Date identified: 2026-08-27
+  Statement: "Thirty-eight tasks are enabled and everything scheduled overnight fired on time — the self-awareness pipeline, the lit search pipeline, the deferred action monitor, the Summa daily batch and nightly verification, the metabolism refresh, and the OpenStory telemetry refresh all ran within the last twelve hours... Nothing appears broken except my own file access."
+  Context: Morning project status run. The assumption is that a task firing on schedule is evidence that it did its work.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically — and tested.
+  Status: CHALLENGED — [measured this run] the self-awareness pipeline is named as having run overnight, but `architecture/changelog/` and `architecture/metrics/` both end at **2026-08-25**. There is no 08-26 changelog and no 08-26 snapshot. The lit-search side did run 08-26 (15a/15b/15c stamps on PRESUMPTION-882/883/884), so the report is right about one lane and wrong about the other, and it could not tell the difference because it read the scheduler, not the outputs. The file-access failure the report *did* declare is the reason it could not check — and it reported green anyway.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1230
+    Item type: ASSUMPTION (stated — quoted; falsified in part by direct measurement of the vault this run)
+    Transform at each step:
+      14a: Extracted verbatim, then tested by listing `changelog/` and `metrics/` and by reading the 15a/15b/15c date stamps in `for_lit_search.md`. Marked CHALLENGED on measurement.
+    Current status: CHALLENGED
+
+ASSUMPTION-1231:
+  Date identified: 2026-08-27
+  Statement: "Watch the gate refill. The tradition agents file daily and nothing was built to slow them. At the observed ~6–14/day rate the queue will be back near 80 inside two weeks."
+  Context: The day's summary, item 4 under "What's Next." A prediction, stated with a rate, a target and a horizon.
+  Type: empirical
+  Related decisions: DECISION-079, DECISION-080
+  Testability: testable empirically — falsifiable by 2026-09-10 by counting `inbox/proposals/pending/`.
+  Status: UNTESTED — and the cleanest live prediction on the register. Baseline recorded here for the check: **pending = 0 at 2026-08-27**, measured this run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1231
+    Item type: ASSUMPTION (stated — quoted prediction)
+    Transform at each step:
+      14a: Extracted verbatim and pinned to a measured baseline so that it can be scored rather than re-argued.
+    Current status: UNTESTED
+
+ASSUMPTION-1232:
+  Date identified: 2026-08-27
+  Statement: "I edited two memory files, which Step 5 of the skill arguably forbids. I read the prohibition as covering the six contract files named in Step 1... and not the reviewer's own accumulated finding records, which these runs have clearly been authoring all along. But the wording doesn't distinguish them, so I'm naming it rather than letting it pass."
+  Context: Summa commentary reviewer. An agent stating its own interpretation of an ambiguous constraint, disclosing that the text does not support the distinction it drew, and acting on the interpretation anyway.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: framework commitment (not testable via literature) — resolvable only by ratification. Testable in-house: read Step 5 and rule.
+  Status: UNTESTED — awaiting Tom. This is OPEN-164 (agent-invented conventions, unratified) in its most explicit form yet: the agent names the convention as its own, names the textual gap, offers the revert, and proceeds. Filed alongside ASSUMPTION-1223, where an unratified agent-local rule cost nineteen days.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1232
+    Item type: ASSUMPTION (stated — quoted self-disclosure)
+    Transform at each step:
+      14a: Extracted verbatim. The link to ASSUMPTION-1223 is 14a's and is marked as a filing note, not part of the statement.
+    Current status: UNTESTED

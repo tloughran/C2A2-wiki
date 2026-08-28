@@ -1,5 +1,5 @@
 # Barbara Fredrickson — Tradition Wiki
-*Maintained by the Barbara Fredrickson Agent | Last updated: 2026-08-10*
+*Maintained by the Barbara Fredrickson Agent | Last updated: 2026-08-28*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-05]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -29,7 +29,7 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 3. How does positivity resonance scale from dyadic interaction to group-level collective intelligence?
 4. Is there a formal equivalence between positivity resonance and Friston's shared attractor alignment in collective active inference?
 5. Is Fredrickson's 'positivity resonance' the same phenomenon as Levin's bioelectric synchrony at the neural level?
-6. Can positivity resonance metrics be used to assess the health of inter-tradition dialogue in C2A2 communities?
+6. Can positivity resonance metrics be used to assess the health of inter-tradition dialogue in C2A2 communities? *(Advanced 2026-08-28 by PRS-39: there is now a validated latent-variable measurement model — three assessments loading on one factor, N = 274 — and the composite factor score predicts prosocial tendencies and positive mental health better than any single indicator. The instrument question is answered for a 10-minute laboratory first-acquaintance dyad. What is still open is the transfer: no result here was obtained outside that paradigm, and the deployment question is now specifically "does the three-channel composite survive a community setting where one or two channels are impractical?")
 7. Does loneliness-linked degradation of the allostatic-interoceptive system actually block resource-building, or only co-occur with it? (PRS-34 is an inference the data license but do not test; a spiral design is needed.)
 8. If affect is distinguished by network *configuration* rather than by emotion loci, what is the correct neural formulation of the broadening claim — and does a positive-vs-neutral attention-network contrast exist? (Not reported in nsag008; PRS-CANDIDATE-02 of PROP-2026-08-06-003 was skipped for exactly this.)
 9. Is there a population for whom connection-based interventions work less well because the machinery that converts a socially salient moment into a regulated bodily response has already degraded? (Direct operational consequence of PRS-33 for C2A2 deployment.)
@@ -47,11 +47,12 @@ For the broader Conscious Realist paradigm, Fredrickson’s work is indispensabl
 | Does loneliness degrade physiological regulation in general, or something specific to social processing? | Graph-theoretic connectivity of the allostatic-interoceptive system across matched neutral / pleasant / unpleasant conditions (SCAN 21:nsaf124) | Advanced — the loneliness x age interaction is present in both affective conditions and absent in the neutral one, so the effect is specific to affectively salient social cues, not to general regulatory capacity | High |
 | Does that specificity single out *positive* valence, as positivity resonance requires? | Reading the same design separately by metric instead of collapsing across them (PRS-36) | Advanced, and against the tradition's prior reading — only the static coherence effect is pleasant-specific; the dynamic effects span pleasant and unpleasant alike. "Specific to social affective cues" was being used as if it meant "specific to positive affect." It does not. | High |
 | What would it cost to run the co-experienced-grief boundary test? | The nsaf124/nsag008 paradigm audited against the test's requirements (PRS-38) | Advanced — the gap is now named rather than open: matched-valence induction and static/dynamic graph metrics exist and are validated at N = 73; dyadic co-measurement does not. The test is an extension of an existing paradigm, not a new one. | Medium |
+| Do the three ways of assessing affective quality measure one construct, and does any one of them suffice? | Confirmatory factor analysis over self-report, perceived positivity resonance, and behavioral coding of the same interactions (JSPR 42(10), 2025; N = 274 fast-friends dyads) | **Answered 2026-08-28, in two parts (PRS-39).** One construct: all three indicators load significantly on a single latent factor with good fit — closing the disjunction PRS-23 had to leave open. And no, one does not suffice: the composite factor score predicts prosocial tendencies and positive mental health more consistently than any single indicator, so single-channel measurement is a knowingly weaker instrument rather than a free economy. | High |
 
 ## PRS Triplets
 *See `prs_triplets.md` for full list*
 
-**Count:** 38 recorded (the table below covers only the original RC-Pilot six; PRS-07 onward are in `prs_triplets.md`)
+**Count:** 39 recorded (the table below covers only the original RC-Pilot six; PRS-07 onward are in `prs_triplets.md`)
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -130,3 +131,25 @@ Ingested 3 approved triplet(s): PRS-33, PRS-34, PRS-35. Two companion neuroimagi
 **Honest limits on all of the above.** No effect sizes, coefficients, or interval estimates appear in either source — direction of effect only — so the static/dynamic asymmetry in PRS-36 is a difference in which contrasts were reported, not a quantified difference in magnitude. Designs are cross-sectional (age *differences*, not aging) and loneliness is measured, not manipulated, so nothing here is causal. Full texts were unavailable; an unreported positive-vs-neutral contrast may be underpowered or simply omitted from the abstract rather than absent from the analysis. And it is one cohort of 73, used twice.
 
 **New open questions:** see Active Research Questions 10 and 11.
+
+
+## Ingestion Log — 2026-08-28
+
+**Two proposals dispatched. They are the same paper. It is also a paper this tradition already ingested in May.** Net: **1 triplet added (PRS-39). Total 38 → 39.**
+
+| Proposal | Staged | Disposition |
+|---|---|---|
+| PROP-2026-06-25-004 | 2026-06-25 | **0 promoted — duplicate re-staging.** Same DOI (10.1177/02654075251359408), same paper, and its single candidate is strictly weaker than what is already recorded: its Evidence field is "the paper's design and aim," which is exactly the basis PRS-23 was written on. Nothing to add. |
+| PROP-2026-07-23-001 | 2026-07-23 | **1 of 1 promoted → PRS-39 (High).** Same paper again, but this staging carries the *reported result* with a direct quotation, where the other two carry only the design. |
+
+**The duplication is threefold, not twofold, and that is the more useful finding.** The dispatch flagged these two cards as a possible same-source pair, and they are. But both are re-stagings of a source this tradition ingested on **PROP-2026-05-08-002 → PRS-23 and PRS-24**. So one paper has now been staged three times across roughly four months (2026-05-08, 2026-06-25, 2026-07-23) without the pipeline noticing that the first staging was already compiled. The title drifts slightly between stagings — "the positive affective quality" in the May and June cards, "the affective quality" in the July one — which is a plausible reason a title-based dedup would miss it. The DOI is identical in all of them and would not have. Recorded for the Pattern Detector; this agent writes only inside `traditions/fredrickson/` and cannot file it.
+
+**Why PRS-39 exists at all, given the above.** Re-ingesting a compiled source is normally +0, and two of the three candidates here got exactly that. The July card is the exception because it is not a citation upgrade — it changes what the tradition *claims*. PRS-23 recorded the finding disjunctively ("empirical demonstration of **(or evidence about the limits of)** convergent validity") because the May staging had no result in it. The July staging supplies the result and one thing beyond it: the latent factor score predicts prosocial tendencies and positive mental health **more consistently than any single indicator**. That is incremental predictive validity, a different claim from convergent validity, and it appears nowhere in PRS-23 or PRS-24.
+
+**It also puts pressure on PRS-24, from inside.** PRS-24 framed the tradition's contribution to C2A2 as "an evidence-based decision framework for selecting positivity-resonance assessments... clarifying which compromises in measurement are acceptable in field deployment" — written when the result was unknown, and reading naturally as permission to pick the cheap channel. The actual result says the composite beats all three of its own components. A single-channel field deployment is therefore not a lateral compromise but a measurable downgrade. PRS-24 is left unedited per this file's no-retro-edit practice; PRS-39 states the correction and this log records that the two should be read together.
+
+**Provenance nit, recorded not fixed.** PRS-23 gives the journal as "Journal of Personal and Social Relationships." The correct title is the *Journal of Social and Personal Relationships* (42(10), 2025). Noted in PRS-39's Evidence field.
+
+**Honest limits.** Full text was not available to this agent — everything in PRS-39 rests on the abstract as quoted in the July card, so "good fit" and "most consistent" are the authors' characterisations with no fit indices, loadings, or effect sizes behind them in the vault. N = 274 undergraduates, one 10-minute laboratory first-acquaintance conversation. The tradition should not describe the measurement model as validated for community or inter-tradition settings; it is validated for a fast-friends dyad.
+
+**Question advanced:** Active Research Question 6, annotated rather than closed — the instrument exists, the transfer to field conditions does not.

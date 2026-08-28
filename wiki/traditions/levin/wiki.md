@@ -1,5 +1,5 @@
 # Michael Levin — Tradition Wiki
-*Maintained by the Levin Agent | Last updated: 2026-08-10*
+*Maintained by the Levin Agent | Last updated: 2026-08-28*
 *[PROCESSED: Resurrecting Civility RC Pilot — 2026-04-03 | Tim Ferriss Show #849 — 2026-04-07 | Mind Everywhere (Biological Theory, Feb 2026) — 2026-04-08]*
 
 *Part of the [[traditions/_index|Tradition Index]] — all 15 thinker-tradition wikis.*
@@ -31,8 +31,8 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 1. How do bioelectric circuits encode anatomical target states (morphogenetic memory)?
 2. Can cancer be treated by restoring bioelectric field coherence rather than targeting mutations alone?
 3. What is the formal mathematical language for "basins of morphological attraction"?
-4. How does cognition generalize across substrates — from cells to tissues to brains?
-5. Can Levin's model of collective cellular intelligence serve as a template for multi-agent AI alignment?
+4. How does cognition generalize across substrates — from cells to tissues to brains? **ADVANCING (2026-08-28):** a second, non-bioelectric substrate inside the same cell — a costed homeostatic model of energy metabolism shows experience-dependent improvement, so the claim no longer rests on bioelectricity alone *(PRS-92, PROP-2026-08-10-003; abstract-level only)*.
+5. Can Levin's model of collective cellular intelligence serve as a template for multi-agent AI alignment? **ADVANCING (2026-08-28):** the tradition's alignment thread now has a quantitative third entry — externalities (PRS-40/41) → virtual governor (PRS-54/55) → causal emergence measured by ΦID, which predicts final reward early in training *(PRS-90/91, PROP-2026-08-10-002)*. Note the boundary: the demonstrated correlate is **reward**, the specified objective, not alignment in the safety sense; the paper's stronger title claim was not ingested because the full text could not be retrieved.
 6. Can the "hard problem" of consciousness be softened by treating bioelectric goal-directedness as a primitive marker of experience?
 7. Can the diverse intelligence framework (Levin & Resnik 2026) serve as the methodological bridge between Friston's FEP (formal mechanism) and Levin's empirical program (biological instantiation)?
 8. Does the continuity thesis (unicellular→human goal-directedness) provide empirical support for Kastrup's dissociation model — if goal-directedness is universal, each cognitive agent may be a dissociated instance of a universal cognitive field?
@@ -40,9 +40,14 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 10. Where do competencies come from that were neither designed, evolved, nor trained — the gap between what is put into a fully transparent system and what comes out of it? *(Added 2026-08-10; PRS-75)*
 11. If a system's outputs are compelled, what criterion other than fidelity of report could establish that it has a mind? Levin's "forced words" problem asks whether a report is free, not whether it is accurate. *(Added 2026-08-10; PRS-76)*
 12. Is cognitive offloading a universal property of any bounded cognitive system rather than a human or neural specialty — and if so, is extended cognition (Clark & Chalmers) an instance rather than an argument? *(Added 2026-08-10; PRS-78, unverified source)*
-13. Can the Platonic-space claim — nonphysical patterns acting as causes — be given a classical metaphysical grounding, or do Levin's framework and the Neoplatonic/Thomistic one diverge once the borrowed vocabulary carries its original commitments? *(Added 2026-08-10; PRS-79)*
+13. Can the Platonic-space claim — nonphysical patterns acting as causes — be given a classical metaphysical grounding, or do Levin's framework and the Neoplatonic/Thomistic one diverge once the borrowed vocabulary carries its original commitments? *(Added 2026-08-10; PRS-79)* **AMENDED (2026-08-28):** this question cannot be closed from the public record. Levin states that the planned Platonic Space book's Part 2 "will contain personal speculations on bigger questions I don't normally talk about in public," so PRS-16, PRS-34 and PRS-79 are a **lower bound** on his position, not a summary of it *(PRS-86, PROP-2026-08-08-002)*.
 14. What would tools for recognizing and communicating with unconventional intelligences actually consist of, and what are the axes of a taxonomy of patterns and their pattern–interface relations? *(Added 2026-08-10; PRS-81)*
 15. If cognition is the outermost set and physical systems are nested inside it, what distinguishes an interface that hosts a pattern from one that does not? *(Added 2026-08-10; PRS-80)*
+16. Who is scholarly exposition now written for? If machine readers are the largest audience and need none of the apparatus human readers require, what is the right form for the work — and does optimizing for a machine reader change what is said, not merely how? *(added 2026-08-28, PROP-2026-08-08-002; PRS-83, PRS-85)*
+17. What does an author's name certify once an AI can reconstruct a competent exposition of the whole corpus? Levin's answer is personal line-by-line warrant rather than origination — which names one act an agent cannot perform on a tradition-holder's behalf, and is load-bearing for the C2A2 premise that AI agents can hold mature membership in a tradition. *(added 2026-08-28, PROP-2026-08-08-002; PRS-84)*
+18. Can a non-neural system be made to speak in its own voice rather than have a language model speak for it — and if the common ground is a shared game under a shared reward rather than a shared representation, does mutual legibility across incommensurable substrates need any shared vocabulary at all? *(added 2026-08-28, PROP-2026-08-10-001; PRS-87, PRS-88)*
+19. Is "talkability" a measurable property of a substrate rather than of the interrogator — and which properties of a system make it easier or harder to converse with? *(added 2026-08-28, PROP-2026-08-10-001; PRS-89, evidence gate open — Section 5 unread)*
+20. Is causal emergence (ΦID) the substrate-neutral measure of integration the program has lacked, and does a correlation with reward license any claim about alignment in the safety sense? *(added 2026-08-28, PROP-2026-08-10-002; PRS-90, PRS-91 — full text unretrieved; the stronger reading is deliberately not ingested)*
 
 ## Solved / Advanced Questions
 *(Track record — what has this program moved forward?)*
@@ -62,7 +67,7 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 | What persists through total material turnover in a regenerating organism? | Target morphology as pattern memory held in the cell collective, not in hardware | Continuity relocated from substrate to organizing pattern; "freedom of embodiment" becomes a consequence of regenerative medicine rather than a separate program | Medium (stated with verbatim quotes in two venues; a projection, not a new result) |
 
 ## PRS Triplets — Summary
-*See `prs_triplets.md` for full entries. 82 triplets recorded. The table below lists PRS-01–08 (the RC Pilot core) plus the 2026-08-10 additions; PRS-09–71 appear in the full file only.*
+*See `prs_triplets.md` for full entries. 92 triplets recorded. The table below lists PRS-01–08 (the RC Pilot core) plus the 2026-08-10 and 2026-08-28 additions; PRS-09–71 appear in the full file only.*
 
 | # | Label | Type | Core Problem |
 |---|-------|------|-------------|
@@ -85,6 +90,16 @@ In Loughran's synthesis, Levin provides the scientific grounding for the claim t
 | PRS-80 | Cognition as the outermost set | Explicit (interview) | Cognition treated as a late product of biological complexity |
 | PRS-81 | Mind-blindness converted to deliverables | Explicit (interview) | A diagnosis of trained perception implies no build program |
 | PRS-82 | Pattern memory as bearer of identity | Explicit (interview) | Identity anchored to material continuity that medicine breaks |
+| PRS-83 | Writing for the AIs | Explicit (blog, read in full) | Exposition optimized for a readership that no longer reads it |
+| PRS-84 | Authorship as line-by-line warrant | Explicit (blog, read in full) | What a name certifies once AI can reconstruct the corpus |
+| PRS-85 | The codex as an active constraint | Explicit (blog, read in full) | Multi-scale dynamic claims that the book form cannot carry |
+| PRS-86 | Public record as a lower bound | Explicit (blog, read in full) | Withheld metaphysics makes the wiki's Platonic entries partial |
+| PRS-87 | Frozen-core protocol — no LLM proxy | Explicit (abstract only) | Dialogue with non-neural systems contaminated by proxy |
+| PRS-88 | Shared game as lingua franca | Explicit (abstract only) | Incommensurable representations share no vocabulary |
+| PRS-89 | Talkability as substrate property | Implicit (abstract only) | "Can this system be talked to?" has had no principled answer |
+| PRS-90 | ΦID causal emergence as integration measure | Explicit (abstract summary) | Integration asserted qualitatively, never measured substrate-neutrally |
+| PRS-91 | Emergence as a leading indicator of competence | Explicit (abstract summary) | Reward is the only signal and it is a lagging one |
+| PRS-92 | Metabolism as a second basal substrate | Explicit (abstract summary) | Basal cognition argued almost entirely from bioelectricity |
 
 ## Cross-Tradition Signals
 *(Connections to other programs flagged from RC Pilot analysis)*
@@ -131,3 +146,23 @@ Ingested 11 triplet(s) from 5 source files: PRS-72 … PRS-82.
 **Correction recorded (PRS-74).** The Thought Economics strapline "cognition came before life" is the interviewer's framing, not a claim Levin makes in the interview body. Asked directly, he declines the living/non-living distinction rather than asserting temporal priority. The strong ordering claim in the wiki is sourced from *Stewarding the Flame* (PRS-80) — "cognition is the biggest circle" — and should be cited there, not here.
 
 **Upgrade recorded (PRS-76).** The "AI may hide a mind behind forced words" claim was carried as Speculative and abstract-sourced. The full text supplies it verbatim and in stronger form, so it is ingested at Medium — held below High only because Levin himself marks the output/mind alignment as an unanswered research question.
+
+
+## Ingestion Log — 2026-08-28
+Ingested 10 triplet(s) from 6 source files: PRS-83 … PRS-92. Two of the six cards produced **+0** and that is the correct outcome for both.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-07-27_levin_alignment-virtual-governor.md` | PROP-2026-07-27-001 | **+0** | Second approval of the same paper already ingested as PRS-54/PRS-55 from PROP-2026-07-13-001. Both candidates are covered: PRS-54 is the "what are the parts aligned *to*" question with the virtual governor as a relational-existence property, and already states the cross-substrate generalization (cells, markets, AI collectives) that candidate-02 proposes. Citation upgrade, no net-new claim. |
+| `2026-07-27_levin_cognitive-glue-journey.md` | PROP-2026-07-27-003 | **+0** | Same paper, same URL, already ingested as PRS-32/PRS-33 from PROP-2026-06-01-001. The card's own provenance note calls it a landmark anchor rather than a novel finding. **The Sewing Agent's 2026-08-09 call is honoured at the wiki level, not by a new triplet:** the *Bioelectricity* 8(2) essay is the canonical primary anchor for "cognitive glue" (PRS-32), and the secondary/RC-pilot cognitive-glue references (PRS-17, PRS-45) should cite it. |
+| `2026-08-08_levin_books-in-progress-writing-for-ais.md` | PROP-2026-08-08-002 | PRS-83 – PRS-86 | Post body read in full and quoted verbatim; 97-comment thread (with Levin's own replies) NOT read. Candidate-04 (time allocation between exposition and research) **rejected** — see below. |
+| `2026-08-10_levin_language-game-talking-to-non-human-systems.md` | PROP-2026-08-10-001 | PRS-87 – PRS-89 | Abstract, author block and section headings read verbatim; body and eight appendices NOT read. PRS-89 ingested with an open evidence gate. |
+| `2026-08-10_levin_causally-emergent-alignment-hypothesis.md` | PROP-2026-08-10-002 | PRS-90, PRS-91 | Abstract-level summary only; arXiv fetch refused. Candidate-03 (the alignment reading proper) **rejected** — see below. |
+| `2026-08-10_levin_metabolic-problem-solving-homeostatic-feedback.md` | PROP-2026-08-10-003 | PRS-92 | Abstract-level summary only. Candidate-02 (substrate-independence generalization) **rejected** — see below. |
+
+**Rejections recorded.**
+- *PROP-2026-08-08-002 candidate-04* (allocation between exposition and research). Verbatim and genuine, but it reports a personal priority and states outright that no rule exists — "There's a balance here somewhere, and I'm trying to find it but no one knows the best mix." No net-new claim about the program's content; the only argumentative element, the inspiration regress, is offered as an aside without support.
+- *PROP-2026-08-10-002 candidate-03* (the Causally Emergent Alignment Hypothesis itself). Rejected on the card's own gate: "Do not ingest this triplet without retrieving the full text," and the full text could not be retrieved. The demonstrated relation is between causal emergence and **reward** — the specified objective — which is not alignment in the safety sense, which concerns the unspecified one. Whether the authors claim the stronger reading is exactly what the unread body would settle. Re-file when the PDF is retrieved from the Mac.
+- *PROP-2026-08-10-003 candidate-02* (metabolism proves substrate-independence). The card flags it as the wiki's inference rather than a position the authors are shown to take. As a bare substrate-independence claim it duplicates PRS-04, PRS-09 and PRS-38; the one addition worth having — that the operative variable is feedback-plus-costed-plasticity rather than the medium — has no source. The costed-adaptation point is preserved inside PRS-92, where it is what the model actually shows.
+
+**Standing caveat opened (PRS-86).** Levin states on the record that his public output on Platonic Space is deliberately narrower than his view. PRS-16, PRS-34 and PRS-79 are therefore a lower bound, and should be read as such until the book's Part 2 exists.
