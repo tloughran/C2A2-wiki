@@ -15,8 +15,8 @@ fetched_at: 2026-05-04
 fetch_path: youtube-transcript-api (catch-up batch)
 synthesis: "[[Day-039 - The Soul - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-15T04:24:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-28T12:27:52"
+last_qc_outcome: "rewrote"
 render_pass: auto-catchup-2026-05-04 → qc-structural-2026-05-12
 tags: [summa, day/039, pars/I, q/75, q/76, theme/soul, theme/hylomorphism, theme/subsistence, theme/incorruptibility, theme/embodiment]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/039, pars/I, q/75, q/76, theme/soul, theme/hylomorphism, theme
 > Series: *Summa in a Year* by Austin Habash. Day 39 of 308.
 > Summa reference: *Prima Pars*, Q.75 (seven articles on the essence of the soul) + Q.76 (eight articles on the union of body and soul).
 
-> Typo-cleanup applied to ASR: *suir → Summa; ass → 's; du → two; concerting → concerning; Lang gun → Langone; impressive imper → increasingly impressive evidence for; hely embrac → holy embrace; OB Ely → obstinately; intellect of soul → intellective soul; in inact → in act; homy/homoy → homily; Warner Heisenberg → Werner Heisenberg; aana/aquan → Aquinas; ining → informing; themsel → themselves; abish → Habash; aquinus/ainus/aquanus/aquinas → Aquinas; Suma → Summa; habish → Habash; theologia → Theologiae*. Council of Vienne (1311–1312) decree on the rational soul as form of the body, Pauline echo (Job 14:14), and Aquinas's Q.75 a.2 response are reproduced as Habash delivers them; ASR garbling restored to canonical phrasing where unambiguous.
+> Typo-cleanup applied to ASR: *suir → Summa; ass → 's; du → two; concerting → concerning; Lang gun → Langone; impressive imper → increasingly impressive evidence for; hely embrac → holy embrace; OB Ely → obstinately; intellect of soul → intellective soul; in inact → in act; homy/homoy → homily; Warner Heisenberg → Werner Heisenberg; aana/aquan → Aquinas; ining → informing; themsel → themselves; abish → Habash; aquinus/ainus/aquanus/aquinas → Aquinas; Suma → Summa; habish → Habash; theologia → Theologiae*. **Proper-noun and quotation restorations added by QC 2026-08-28** (each garbled in the ASR and previously restored in the body without an audit line): *Dr Sam paria → Dr. Sam Parnia; Dr Ed faser → Dr. Ed Feser; Council of Vienna → Council of Vienne; the IMM materiality → the immateriality; a Corporal substance → a corporeal substance.* The Vienne restoration is a **correction of the spoken word, not only of the ASR**: the 1311–1312 council that issued the *soul-as-form-of-the-body* decree is Vienne (Dauphiné), and the ASR records "Vienna" — the body follows Habash's own "in the 1300s" dating and does not add the years. Council of Vienne decree on the rational soul as form of the body, Pauline echo (Job 14:14), and Aquinas's Q.75 a.2 response are reproduced as Habash delivers them; ASR garbling restored to canonical phrasing where unambiguous.
 
 ## Transcript
 

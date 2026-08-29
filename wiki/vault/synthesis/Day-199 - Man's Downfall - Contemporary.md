@@ -5,6 +5,7 @@ pairs_with: "[[Day-199 - Man's Downfall]]"
 length_target_words: 2200
 length_actual_words: 2446
 length_ratio_to_target: 1.112
+length_note: "Runs 11% over medium-tier target, just outside the +/-10% band and well inside +/-25%. Justified on QC.md's first acceptable-variation pattern: this is a two-question day (Q.162 pride, Q.163 the first man's sin) and Q.162 alone carries four escalating claims Aquinas explicitly stacks - pride as a special sin, as the cause of all sins, as the most grievous by genus, and as the first sin - plus the substrate-independence argument from the bodiless demons (a.3) and Gregory's four species, each of which is load-bearing for the part-denying-the-whole reading. Nothing here is recapitulation; trimming to 2420 would cost either the four-species mapping or the demons argument, and the demons argument is what licenses the whole substrate-independent reading of the vice. Note also that length_actual_words is known to understate, so the true ratio is likely higher than 1.112 rather than lower."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01, PRS-03 the self as fitness-tuned interface-icon; PRS-08 recursive self-modeling)"
@@ -17,7 +18,7 @@ evidence_strength_summary: "Pride-as-perspective-absolutization = conceptual/str
 mind_first_reframe: "Pride is the self-model not merely mis-calibrated but treating its own constructed vantage as the ground of value and truth — the part claiming to be the whole, the interface-icon mistaken for the real, the agent 'relying on itself in contempt of the order' that constitutes it. This is why it is the FIRST sin: it is the formal structure (self over whole) that every other vice fills in with content."
 central_theme_thread: "Pride is the exact inversion of the project's central claim. If agents are individuated by perspective-limitation and salvation is the limited agent computing toward loving unity under guidance from those who see more, pride is the limited agent refusing that guidance and absolutizing its own vantage — 'you will be like God,' deciding good and evil by oneself."
 tags: [synthesis, day/199, theme/perspective-absolutization]
-last_qc_at: "2026-08-15T22:29:53"
+last_qc_at: "2026-08-28T06:23:02"
 last_qc_outcome: "rewrote"
 ---
 

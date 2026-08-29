@@ -12,14 +12,14 @@ central_theme_thread: "Appetite is a diagnostic of perspectival incompleteness; 
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01, PRS-02, PRS-04, PRS-11)"
   - "traditions/friston/wiki.md (FEP, active inference; PRS-04, PRS-06)"
-  - "traditions/hoffman/wiki.md (interface theory; spacetime as species-specific)"
-  - "traditions/kastrup/wiki.md (analytic idealism; mind-at-large)"
-  - "traditions/rohr/ — *The Universal Christ*; non-dual contemplation"
+  - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem inversion / matter as perceptual interface; PRS-03 interface theory, fitness-payoff replaces truth-tracking — both Confidence High) [repointed 2026-08-28 from traditions/hoffman/wiki.md, which is a truncated snapshot on a different id system]"
+  - "traditions/kastrup/prs_triplets.md (PRS-01 consciousness primary / matter as its expression; PRS-02 dissociation — one consciousness, multiple dissociated points of view, the entry this day's reframe rests on — both Confidence High) [repointed 2026-08-28 from traditions/kastrup/wiki.md]"
+  - "traditions/rohr/ — *The Universal Christ*; non-dual contemplation. NOT anchored to a register id: the rohr node now exists on disk and PRS-03 is labelled 'The Universal Christ', but that entry's Problem/Solution are a warrant for multi-tradition inquiry, not a claim about union-as-substrate-recovery. Only its Resource line matches this day's use, so anchoring it would fit the entry's resource to the wrong problem-type. Left as a canonical-work citation pending Tom."
   - "traditions/wright/ — Pauline corpus on koinonia and resurrection hope"
   - "master/cross_program_index.md CROSS-005 (love as ontological category)"
 evidence_strength_summary: "Q.31 a.2's claim that delight in an unchangeable good is outside time receives speculative metaphysical support from Kastrup/Hoffman (idealism + interface theory) and a strong empirical analogue in 'flow' research; Aquinas's distinction of joy/delight (a.3) is reframed empirically by predictive-processing accounts of valence; the touch/sight ordering (a.6) reads as Hoffman-style fitness-tuned channels — speculative bridge."
 tags: [synthesis, day/076, theme/timeless-delight, theme/perspective-limitation]
-last_qc_at: "2026-08-18T20:22:26"
+last_qc_at: "2026-08-28T06:23:02"
 last_qc_outcome: "rewrote"
 ---
 
@@ -63,8 +63,8 @@ Conscious agents are individuated by the limitations of their perspective. Q.31 
 
 ## Bridges
 
-- **Kastrup, analytic idealism** (Kastrup wiki) — "unchangeable good" reads as the non-dissociative ground; *speculative metaphysical*, internally coherent.
-- **Hoffman, interface theory** (Hoffman wiki) — Q.31 a.6's touch/sight ordering is fitness-tuned channel ordering; "timeless" = substrate-contact not mediated by interface; *formally established, empirically contested*.
+- **Kastrup, analytic idealism** (`traditions/kastrup/prs_triplets.md`, PRS-01 and PRS-02) — PRS-01 carries consciousness-as-primary with matter as its expression; PRS-02 carries the dissociation model (one consciousness, multiple dissociated points of view), which is the entry the day's central reframe actually rests on: "unchangeable good" reads as the non-dissociative ground. *Both Confidence High in the register; the metaphysics itself remains speculative and internally coherent rather than testable.*
+- **Hoffman, interface theory** (`traditions/hoffman/prs_triplets.md`, PRS-01 and PRS-03) — PRS-01 inverts the explanatory order so matter is a perceptual interface; PRS-03 is the fitness-payoff-replaces-truth-tracking result, so Q.31 a.6's touch/sight ordering reads as fitness-tuned channel ordering and "timeless" = substrate-contact not mediated by interface. *Both Confidence High in the register; the underlying result is formally established and empirically contested.*
 - **Friston, active inference + FEP** (`traditions/friston/prs_triplets.md`, PRS-04 and PRS-06; CROSS-006, CROSS-007) — appetite as policy under expected-free-energy minimization; delight as prediction-null state. *The FEP formalism is mathematically mature; both entries cited here are marked (Implicit), Confidence Medium — reconstructions of what it implies for appetite and for multi-agent coupling, not published results in that form.*
 - **Fredrickson, positivity resonance** (`traditions/fredrickson/prs_triplets.md`, PRS-01 and PRS-02) — bodily delight has a measurable substrate: vagal tone, oxytocin, neural synchrony. *Confidence High; this is the empirical anchor of the day.*
 - **Fredrickson, inflammation gating** (same file, PRS-11; with PRS-04 on the community-biomarker extension) — offers a candidate mechanism for Q.31 a.5's "majority turn to bodily pleasure": inflammatory load may contract the radius of available higher delight. *Confidence Medium; a single IL-6 post-vaccination study (West, Jolink, Feldman et al., 2025), and the register itself states the effect hedged. Suggestive, not established — the day's sharpest move rests on its weakest anchor, and is written conditionally for that reason. PRS-04 is (Implicit)/Medium.*

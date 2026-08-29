@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-033 - Fallen Angel - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-14T20:30:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-28T04:24:35"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/033, pars/I]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/033, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 33 of 308.
 > Summa reference: *Prima Pars, Q.63 + Q.64*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic.
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \baanus\b -> Aquinas; \bainus\b -> Aquinas; \baquantis\b -> Aquinas; \baquanus\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic. QC sweep 2026-08-28, further restorations from the live ASR (each corresponds to a real ASR token, per the audit-trail rule): `The Grange` (at [00:09:59]) and `lrange` (at [00:16:37]) -> **Garrigou-Lagrange** — two different garbles of the same name in one episode, neither recoverable by grepping the correct spelling; `father Chad ripberger` -> **Father Chad Ripperger** (at [00:10:30]).
 
 ## Transcript
 
@@ -93,9 +93,9 @@ Article 5 whether the devil was wicked by the fault of his own will in the first
 
 [00:09:46] first instance of the Angel's Creation in which they are immediately from God who is good and their operation and that first moment is simply following their nature which is also oriented towards
 
-[00:09:59] the good as we said in the last article then in this first instance there is no opportunity for evil The Grange will summarize these first three instances of the demon saying since nothing is willed unless first known the first cognition was not from the application of the created will but from the special inspiration of God and under this influence the creature does not sin the Angels sinned in the second instant in which they fully decide the third instance was the the instance of
+[00:09:59] the good as we said in the last article then in this first instance there is no opportunity for evil Garrigou-Lagrange will summarize these first three instances of the demon saying since nothing is willed unless first known the first cognition was not from the application of the created will but from the special inspiration of God and under this influence the creature does not sin the Angels sinned in the second instant in which they fully decide the third instance was the the instance of
 
-[00:10:30] damnation in which there was no longer any demerit or possibility of Merit as an aside the well-known Catholic Exorcist father Chad ripberger was once asked about these instances in an interview and he said that the demons try not to think about this first instance because not only do they remember it but they remember the joy that they possessed in it and according to Father Chad if the demon is forced to think about this first instance for whatever reason while possessing some
+[00:10:30] damnation in which there was no longer any demerit or possibility of Merit as an aside the well-known Catholic Exorcist Father Chad Ripperger was once asked about these instances in an interview and he said that the demons try not to think about this first instance because not only do they remember it but they remember the joy that they possessed in it and according to Father Chad if the demon is forced to think about this first instance for whatever reason while possessing some
 
 [00:11:01] person then the demon will begin to weep through that person in Remembering this first and last moment in which it dwelt in Intimate friendship with its creator
 
@@ -150,7 +150,7 @@ article two whether the will of demons is obstinate in evil can the demons come 
 
 [00:16:07] men is temporary and that it will have an end at some time that is to say that there will be a complete restoration of the Demons or of impious men let him be excommunicated now why is this the case one could say that since the period of choosing the second instance and the resulting reward or punishment the third instance have have passed the demons must now simply receive that Eternal Bliss or Eternal Punishment Due to their choice but Aquinas takes the line of
 
-[00:16:37] argument proceeding from the very nature of angels which is beautifully summarized by lrange this way the angel apprehends immovably and intuitively those things that we apprehend discursively this is particularly true when the angel judges something to be an end to be loved Above All Things the angel sees intuitively and not successively all those things that pertain to the choice of a thing and once the choice has been made the angel
+[00:16:37] argument proceeding from the very nature of angels which is beautifully summarized by Garrigou-Lagrange this way the angel apprehends immovably and intuitively those things that we apprehend discursively this is particularly true when the angel judges something to be an end to be loved Above All Things the angel sees intuitively and not successively all those things that pertain to the choice of a thing and once the choice has been made the angel
 
 [00:17:10] can say I have already considered everything it is because an angel sees all the logical conclusions in the first premise in the beginning that is why their choice is final from the beginning
 

@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-030 - Secret Thoughts - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-12T20:22:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-28T04:24:34"
+last_qc_outcome: "rewrote"
 render_pass: structural-pass-2026-05-12  # article-block headers, Q.N section dividers, and Notes added; prose preserved verbatim from auto-render
 tags: [summa, day/030, pars/I]
 ---
@@ -26,7 +26,7 @@ tags: [summa, day/030, pars/I]
 > Series: *Summa in a Year* by Austin Habash. Day 30 of 308.
 > Summa reference: *Prima Pars, Q.57 + Q.58*
 
-> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic. QC sweep 2026-07-11: Q/Article headers and `## Notes` are now present; content re-verified against raw ASR refetched 2026-07-11 (97% 4-gram overlap, no introduced content).
+> Auto-generated captions, automatic typo cleanup applied: \bSuma\b -> Summa; \bainus\b -> Aquinas; \baquanus\b -> Aquinas; \baquinas\b -> Aquinas; \baquinus\b -> Aquinas; \bhabish\b -> Habash; \btheologia\b -> Theologiae. This is an auto-rendered initial pass — the QC agent or a human editor must add proper `### Q.N — title` and `**Article M — title**` section headers, polish prose, and write the `## Notes` section. Punctuation and paragraph breaks are heuristic. QC sweep 2026-07-11: Q/Article headers and `## Notes` are now present; content re-verified against raw ASR refetched 2026-07-11 (97% 4-gram overlap, no introduced content). QC sweep 2026-08-28, further restorations from the live ASR (each corresponds to a real ASR token, per the audit-trail rule): `aana` -> Aquinas (two occurrences, at [00:01:21] and [00:03:28] — the auto-render's regex list covers `ainus`/`aquanus`/`aquinus` but not this variant); `what no I has Seen` -> *what no eye has seen* (a.5). **Two references are preserved AS HABASH GAVE THEM and are not errors in this file**: at [00:03:28] he cites *Psalm 90:11* (the Douay-Rheims numbering Aquinas uses; modern numbering is Psalm 91:11), and at Article 5 he attributes *what no eye has seen nor ear heard* to "the letter to Ephesians" when the passage is 1 Corinthians 2:9. Both stand as spoken.
 
 ## Transcript
 
@@ -42,7 +42,7 @@ tags: [summa, day/030, pars/I]
 
 [00:00:48] article one whether the Angels know material things it will help at the outset of this article to distinguish it from the article that will immediately follow it this article is asking do angels know those things that exist in the material world do angels know Humanity or other species of animals plant Etc that's not so difficult of a question but in the following article we will ask not do angels know the general essence of material things or humanness helium the various species of dogs but do angels know the individuals within
 
-[00:01:21] those species do angels know you and I the particulars within each category and that's a much more difficult question to answer but we begin here do angels know material things aana says yes writing the angels are intellectual beings therefore as God knows material things by his Essence so do the Angels know them for as much as they are in the Angels by their intelligible species the essence of human or a likeness of it is
+[00:01:21] those species do angels know you and I the particulars within each category and that's a much more difficult question to answer but we begin here do angels know material things Aquinas says yes writing the angels are intellectual beings therefore as God knows material things by his Essence so do the Angels know them for as much as they are in the Angels by their intelligible species the essence of human or a likeness of it is
 
 [00:01:51] poured into the mind of the Angel by God for just as the idea of human nature exists in the mind of God through which creates human beings so to we can Infuse that idea or abstract essence of humanity into the mind of angels now that's pretty straightforward the next article is less straightforward
 
@@ -54,7 +54,7 @@ article two whether an angel knows particular things the problem here is the one
 
 [00:02:57] particular material things because he is the the cause of every aspect of them existing at any moment because he has perfect knowledge of himself which includes that to which his power extends however this kind of knowledge doesn't apply to Angels either so how do angels which cannot sense particular material things and are not causing the existence of those particular material things know them Aquinas first responds from the perspective of Revelation and then defends that Revelation for according to
 
-[00:03:28] scripture it is written psalm 90:1 he hath given his angels charge over thee and aana says no one can guard what he does not know but Angels guard individual men consequently the Angels know singulars but how precisely because they are receiving that Knowledge from God for again in the mind of God all things whether it be your particular material or your general species pre-exist like a table pre-exists in the
+[00:03:28] scripture it is written psalm 90:1 he hath given his angels charge over thee and Aquinas says no one can guard what he does not know but Angels guard individual men consequently the Angels know singulars but how precisely because they are receiving that Knowledge from God for again in the mind of God all things whether it be your particular material or your general species pre-exist like a table pre-exists in the
 
 [00:04:00] mind of the carpenter before he goes out and makes that table and so God can impart that knowledge into the mind of angels and in a manner that not only reveals to them Humanity in general as we said before but also the particular material of each particular person which combined with that General essence or nature constitutes you and I God can do this because he is the Creator sustainer and thereby knower of all the aspects of you and I at any moment and so can impart again that knowledge to his
 
@@ -83,7 +83,7 @@ Article 4 whether Angels know secret thoughts we begin with the words of scriptu
 [00:08:13] 
 **Article 5 — Whether the angels know the mysteries of grace**
 
-Article 5 whether the Angels know the mysteries of Grace did the Angels know before the world was made about the Incarnation the institution of the sacraments Aquinas his response is grounded in scripture especially St Paul who says in the letter to Ephesians none of the rulers of this age understood this for if they had they would not have crucified the Lord Of Glory but as it is written what no I has Seen Nor Ear heard nor the heart of man conceived what God has prepared for those who love him God
+Article 5 whether the Angels know the mysteries of Grace did the Angels know before the world was made about the Incarnation the institution of the sacraments Aquinas his response is grounded in scripture especially St Paul who says in the letter to Ephesians none of the rulers of this age understood this for if they had they would not have crucified the Lord Of Glory but as it is written what no eye has seen nor ear heard nor the heart of man conceived what God has prepared for those who love him God
 
 [00:08:44] has revealed to us through the spirit Aquinas explains the knowledge of the Angels which renders them blessed is the knowledge whereby they see the word and things in the word by such Vision they know mysteries of Grace but not all the Myster Mysteries nor do they all know them equally but just as God Wills them to learn by Revelation yet so that the higher Angels beholding the Divine wisdom more clearly learn more and deeply mysteries in the vision of God which Mysteries they communicate to the
 
