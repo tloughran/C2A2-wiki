@@ -50,14 +50,14 @@ The community-embedded shape of Wright's Phil 2:12 reading and the seeking-couns
 
 ## Bridges
 
-- **Friston PRS-01, PRS-04 + Pezzulo on epistemic value** — Q.45 a.1 contrary-precision; Q.44 a.2 information-seeking under fear; *formal, empirically supported*.
+- **Friston PRS-01, PRS-04 + Pezzulo on epistemic value** — Q.45 a.1 contrary-precision; Q.44 a.2 information-seeking under fear. *Formal, empirically supported — the formal weight is PRS-01's* (Free Energy Principle as variational Bayesian formalism, High); PRS-04 is *(Implicit)* / Medium, the organism-as-active-modeler framing, and states no formalism.
 - **Damasio somatic-marker / interoception literature** — Q.44 a.1 (contraction) and a.3 (trembling) as informational inputs to affective computation; *empirical, well-established*.
 - **Kahneman / Stanovich dual-process literature** — Q.45 a.4 antecedent vs. consequent passions; *behavioral evidence, robust*.
-- **Fredrickson PRS-01, PRS-08, PRS-09 / positivity-resonance cultivation, high-quality connection, weak-tie intellectual humility** — Q.45 a.2 (hope causes daring), Q.43-44 community-embedded fear-reduction; *empirical*.
-- **PRS-01, PRS-05 in the McGilchrist-tradition wiki / hemispheric asymmetry; attention as ontological act** — left-right integration in mature daring (01), and attention as world-constituting, which the entry itself states as compatible with precision-weighted prediction (05); *clinical evidence*.
-- **Stump on antecedent vs. consequent passions and Thomistic will** — rigorous contemporary articulation of Q.45 a.4; *analytic-Thomistic*. **Left without a numbered id on purpose:** the Stump record's will-and-grace entries (PRS-23, PRS-29) are about the will's quiescence before infused grace, not about the antecedent/consequent sorting of the passions, and no entry in that tradition carries the distinction. Anchoring by proximity here would manufacture a citation the record does not support.
+- **Fredrickson PRS-01, PRS-08, PRS-09 / positivity-resonance cultivation, high-quality listening, weak-tie intellectual humility** — Q.45 a.2 (hope causes daring), Q.43-44 community-embedded fear-reduction; *empirical, all three High*. **Scope limit on PRS-09:** the Fredrickson & West (2025) RCT it records measures intellectual humility, prosocial beliefs and civic efficacy after three weeks of weak-tie connection — not perceived feasibility or willingness to engage an obstacle. Reading it as a daring-correlate is this commentary's extension, and "weak-tie social trust" in the Resource paragraph above overstates what the entry says.
+- **PRS-01, PRS-05 in the McGilchrist-tradition wiki / hemispheric asymmetry; attention as ontological act** — left-right integration in mature daring (01), and attention as world-constituting, which the entry itself states as compatible with precision-weighted prediction (05). *Clinical evidence carried by PRS-01 alone* (High); PRS-05 is *(Implicit)* / Medium and is a philosophy-of-attention proposal with no clinical content.
+- **Stump on antecedent vs. consequent passions and Thomistic will** — rigorous contemporary articulation of Q.45 a.4; *analytic-Thomistic*. **Left without a numbered id on purpose, and the search radius is stated:** the Stump record's will-and-grace entries (PRS-23, PRS-29) are about the will's quiescence before infused grace, not about the antecedent/consequent sorting of the passions. A keyword search of the 35-entry register for *antecedent / consequent / passion / sensitive appetite / emotion* returns exactly one near-miss, **PRS-35**, and it is a trap: its "antecedent/consequent distinction" is the antecedent and consequent **will of God** in theodicy, not the antecedent and consequent **passions**. No entry in that tradition carries the distinction. Anchoring by proximity here would manufacture a citation the record does not support. (Declination re-verified 2026-08-29.)
 - **PRS-05 in the Wright-tradition wiki / salvation as incorporation into the people among whom God comes home** — community-embedded eschatological salvation as the theological articulation of "moderate fear" in Q.44 a.4; *historical-theological, well-attested*.
-- **PRS-02 in the Rohr-tradition wiki / order-disorder-reorder** — contemplative reading of the consequent-passion register; *contemplative tradition*.
+- **PRS-02 in the Rohr-tradition wiki / order-disorder-reorder** — contemplative reading of the consequent-passion register; *contemplative tradition, High*. **Scale extension marked:** PRS-02 is stated about *intellectual and spiritual traditions* meeting epistemological crisis, not about one agent's passage from antecedent to consequent passion within a single act. Applying it at the individual-agent scale is this commentary's extension, as it was on Day 73.
 
 ## Where this leaves us
 
@@ -69,22 +69,22 @@ day: 83
 title: Daring (Contemporary)
 pairs_with: "[[Day-083 - Daring]]"
 length_target_words: 1500
-length_actual_words: 2040
-length_ratio_to_target: 1.36
+length_actual_words: 2408
+length_ratio_to_target: 1.605
 length_tier: short
-length_note: "Covers two Summa questions (Q.44 effects of fear + Q.45 daring) and includes the antecedent/consequent passions distinction at Q.45 a.4 — a keystone for the rest of the Prima Secundae and the cleanest medieval anticipation of the dual-process / fast-slow structure of contemporary cognitive science. The Phil 2:12 citation at Q.44 a.4 is the central-theme keystone."
+length_note: "RECOUNTED 2026-08-29: the stored 2040 understated a layout-aware body-only count of 2200 — a true pre-pass ratio of 1.467, OUTSIDE +-25%, not the 1.360 on file. Unlike Days 82 and 84 this note never certified itself from a word figure, so its substantive reasons were not defending a bad number; the flag is the ratio alone. ESCALATED 2026-08-29 rather than trimmed. Tier verified CORRECT (transcript declares short and measures 741 words). Substantive case: covers two Summa questions (Q.44 effects of fear + Q.45 daring) and includes the antecedent/consequent passions distinction at Q.45 a.4 — a keystone for the rest of the Prima Secundae and the cleanest medieval anticipation of the dual-process / fast-slow structure of contemporary cognitive science. The Phil 2:12 citation at Q.44 a.4 is the central-theme keystone. This reviewer pass added ~227 words of citation apparatus (two confidence splits, a PRS-09 scope limit, a Rohr scale extension, and the PRS-35 near-miss warning), post-pass 2408 / 1.605 (measured, not estimated)."
 mind_first_reframe: "Q.44 a.4 makes Phil 2:12 the keystone — moderate fear aids action — and the contemporary frame articulates this as *calibrated precision* on aversive prediction; Q.45 a.4's antecedent/consequent distinction is the medieval anticipation of the modern dual-process / fast-slow structure of affective cognition."
 central_theme_thread: "The agent works out salvation in fear and trembling (Phil 2:12, cited by Aquinas at Q.44 a.4); moderate fear preserves the affective signal of arduous goal without overriding the deliberative policy; the consequent-passion register is the affective shadow of community-and-contemplation-guided endorsement under perspective-limitation."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy principle; PRS-04 organism as active modeler)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation; PRS-08 high-quality listening; PRS-09 weak-tie intellectual humility)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry, right hemisphere primary; PRS-05 attention as ontological act, compatible with precision-weighted prediction)"
-  - "traditions/stump/ — Thomistic will; antecedent/consequent passions (no numbered id: the record carries no entry for this distinction)"
+  - "traditions/stump/ — Thomistic will; antecedent/consequent passions (no numbered id: the record carries no entry for this distinction; PRS-35 is a near-miss to be avoided — it is the antecedent/consequent will of GOD in theodicy)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home); Philippians 2:12"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder)"
 evidence_strength_summary: "Dual-process theory, embodied cognition / somatic-marker, broaden-and-build, and active-inference precision-weighting are empirically robust. Hemispheric account is clinically supported. Conscious-realist-monist reading of antecedent vs. consequent passions as alter-level fast/slow is metaphysically speculative. Wright on Phil 2:12 and Rohr on order-disorder-reorder are theologically well-attested."
 tags: [synthesis, day/083, theme/daring, theme/fear-effects, theme/antecedent-consequent, theme/phil-2-12]
-last_qc_at: "2026-08-16T10:33:32"
+last_qc_at: "2026-08-29T14:30:04"
 last_qc_outcome: "rewrote"
 
 ---

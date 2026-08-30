@@ -15,7 +15,7 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-065 - Mindful Willing - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-14T11:57:58"
+last_qc_at: "2026-08-29T04:23:16"
 last_qc_outcome: "rewrote"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/065, pars/I-II, q/8, q/9]
@@ -98,4 +98,9 @@ tags: [summa, day/065, pars/I-II, q/8, q/9]
 
 ## Notes
 
-<!-- TODO: editor's marginalia — questions, surprising moves, terms to look up, candidate bridges to C2A2 thinkers. Two to seven bullets. -->
+- Habash's ordering of Q.9 is itself an argument: he walks outward from the nearest mover of the will to the most remote — intellect, then sensitive appetite, then the will moving itself, then an exterior principle, then the heavenly bodies (answered in the negative), then God alone. Worth preserving that order in any reframe; the sequence carries the claim.
+- Q.9 a.5, on whether the heavenly bodies move the will, is the article of this question that most resists carrying over, and it is the one most likely to be quietly dropped. Aquinas's answer is *no*, and his reason survives the death of the astronomy: a physical cause can touch the will only indirectly, by presenting something to the senses or by impeding the body. That is a principled line between what modulates the conditions of apprehension and what moves the will as such.
+- The *sed contra* of Q.9 a.6 is Philippians 2:13 — God at work in you both to will and to work. That is the verse immediately after Philippians 2:12, which this project takes as its central-theme anchor. Paul writes the two as one thought and Aquinas is reading its back half to answer exactly how a will can be moved by God and still be the agent's own. Tightest scriptural fit the central theme has had with the article under discussion.
+- Q.8 a.3 — one act of the will covers end and means when the means is willed *because of* the end — is the article to press against Hawkins. The Thousand Brains register now says hierarchy encodes composition rather than abstraction, which is a closer fit than a goals-dictate-downward reading.
+- Term to look up: Habash's "annexed goods" (the good attaching to an act chosen under an aspect of good, e.g. the pleasure elicited by an immoral act). It is doing the load-bearing work in a.1 and recurs in the moral-psychology questions ahead.
+- ASR garbles worth knowing about for search: "suir podcast" (= *Summa* podcast), "Prima suun day" (= *Prima Secundae*), "aquan assumma" (= Aquinas's *Summa*), "questions 8 and N" (= 8 and 9). Left in place per the light-cleanup rule; the declared substitutions above cover only the proper-noun fixes.

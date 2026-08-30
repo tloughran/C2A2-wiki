@@ -3,20 +3,21 @@ day: 64
 title: "Willful Ignorance (Contemporary)"
 pairs_with: "[[Day-064 - Willful Ignorance]]"
 length_target_words: 2200
-length_actual_words: 1571
+length_actual_words: 1971
 length_tier: medium
 karpathy_wiki_sources:
-  - "wiki/traditions/friston/wiki.md (PRS on action under uncertainty; expected free energy)"
-  - "wiki/traditions/mcgilchrist/wiki.md (left-hemispheric closure; willed-not-knowing)"
-  - "wiki/traditions/stump/wiki.md (Wandering in Darkness on willed evil and willed ignorance)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism; protective vs. predatory dissociation)"
-  - "wiki/traditions/fredrickson/wiki.md (broaden-and-build vs. narrow-and-defend)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-16 — expected free energy as unified mathematics of risk + ambiguity; High)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-01 — hemispheric asymmetry; the left-hemisphere closure mode; High)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-11 — Grains of Wheat; narrative/second-person knowing; High)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-07 — analytic idealism applied to psychopathology; dissociative-boundary dysregulation; Medium)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-02 — the disorder necessary for growth; the Falling Upward thesis)"
+  - "wiki/traditions/fredrickson/prs_triplets.md (NO ID — broaden-and-build has no entry in this register; nearest is Hawkins PRS-14)"
 evidence_strength_summary: "Stump on willed ignorance theological-philosophical strong; Friston on action-under-uncertainty mature; McGilchrist on left-hemispheric closure strong neuropsychiatric evidence"
-length_ratio_to_target: 0.714
-length_note: "Q.6–Q.7 (12 articles) treated thematically as the structural-and-diagnostic apparatus of voluntary action. Aquinas's voluntariness/circumstances frame is structurally near-identical to the contemporary action-under-uncertainty frame, so the prose stays compact while the willed-ignorance keystone moves get the load-bearing attention; substantive integrity is preserved at 1571 words. QC 2026-08-14: Q.6's article numbering corrected against the ASR and the a.3->a.8 voluntary-omission arc added."
+length_ratio_to_target: 0.896
+length_note: "Q.6–Q.7 (12 articles) treated thematically as the structural-and-diagnostic apparatus of voluntary action. Aquinas's voluntariness/circumstances frame is structurally near-identical to the contemporary action-under-uncertainty frame, so the prose stays compact while the willed-ignorance keystone moves get the load-bearing attention. QC 2026-08-14: Q.6's article numbering corrected against the ASR and the a.3->a.8 voluntary-omission arc added. QC 2026-08-29: recomputed body-only (YAML and the auto-link footer excluded). The stored 1571 was itself overstated — the honest pre-repair count was 1536, ratio 0.698, i.e. OUTSIDE the ±25% floor that the old note had self-certified past. Anchoring seven id-less bridge bullets took the body to 1971, ratio 0.896, back inside band. The growth is citation text — wiki file paths, PRS ids, the entry content they carry, and two explicit no-id markings. No claim was added, removed or reweighted, and no argument was rewritten."
 mind_first_reframe: "Voluntariness preserves under active inference (the alter's policy-selection from a principle within the agent under terminal-prior knowledge), and willed ignorance is the alter's left-hemispheric refusal of disruptive information — distinguishable as predatory (culpable) versus protective (developmentally-tractable) under Kastrup's dissociation frame."
 central_theme_thread: "The daily task includes catching one's own willed ignorance — the alter's openness to second-person diagnostic surfacing under the substrate-network's pedagogical care is the integrity-of-becoming under perspective-limitation, while closure-against-the-diagnostic compounds the limitation rather than working with it."
-last_qc_at: "2026-08-14T11:57:57"
+last_qc_at: "2026-08-29T02:27:51"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/064, theme/voluntariness, theme/willed-ignorance, theme/circumstances]
 ---
@@ -76,13 +77,13 @@ Wright's covenanted-community frame: the community is the relational locus where
 
 ## Bridges
 
-- **Friston-tradition wiki, PRS on action under uncertainty.** Active-inference formalism for voluntary action and information-gain. *Mature formalism.*
-- **McGilchrist-tradition wiki, PRS on left-hemispheric closure.** Hemispheric anchor for willed not-knowing. *Strong neuropsychiatric evidence.*
-- **Stump-tradition wiki, *Wandering in Darkness* on willed evil and willed ignorance.** Theological-philosophical resource on the diagnostic structure. *Book-length argument.*
-- **Kastrup-tradition wiki, protective vs. predatory dissociation.** Frame for distinguishing developmentally-tractable from culpable not-knowing. *Philosophical-conceptual.*
-- **Fredrickson-tradition wiki, PRS on broaden-and-build vs. narrow-and-defend.** Empirical anchor for closure. *Strong empirical.*
-- **Wright, *Paul and the Faithfulness of God* (Romans 1 readings on willed not-knowing).** Scriptural-historical resource on the structure of culpable ignorance. *Scriptural-historical.*
-- **Rohr, *Falling Upward*; *The Universal Christ*.** Contemplative-tradition resource on the surfacing of willed ignorance. *Contemplative theological.*
+- **PRS-16 in the Friston-tradition wiki** (`wiki/traditions/friston/prs_triplets.md`) — expected free energy as the unified mathematics of risk and ambiguity, where *risk = KL divergence between prior preferences and predicted outcomes* and *ambiguity = volatility of the predictive distribution*. This is the record that actually carries decision-under-uncertainty; the epistemic-value term whose *suppression* this commentary reads as willed ignorance is a component of that same quantity. Confidence **High**. *Mature formalism* (the reading of a policy that deliberately forgoes information-gain as culpable is this commentary's extension, not the triplet's claim).
+- **PRS-01 in the McGilchrist-tradition wiki** (`wiki/traditions/mcgilchrist/prs_triplets.md`) — hemispheric asymmetry and cultural impoverishment: the left-hemisphere mode of abstraction, fragmentation and manipulation operating at the expense of right-hemispheric relational disclosure, with the right hemisphere primary and the left parasitic on what the right first discloses. This is the register's home for left-hemispheric closure. Confidence **High**. *Strong neuropsychiatric evidence.*
+- **PRS-11 in the Stump-tradition wiki** (`wiki/traditions/stump/prs_triplets.md`) — *Grains of Wheat*: narrative-mediated knowledge as philosophically rigorous and irreducible to propositions, giving a form of understanding suffering that propositional theodicy cannot reach. This is the record that carries the second-person / Franciscan mode of knowing on which this day's diagnostic move depends. Confidence **High**. *Book-length argument.* The *Wandering in Darkness* treatment of willed evil is Stump's own book and has no separate entry in the register; it is cited here as a canonical work, not as a wiki id.
+- **PRS-07 in the Kastrup-tradition wiki** (`wiki/traditions/kastrup/prs_triplets.md`) — analytic idealism applied to psychopathology: mental disorders reframed as *dissociative-boundary dysregulation* between the alter and universal consciousness rather than brain malfunction. Confidence **Medium**. *Philosophical-conceptual.* **Marked honestly: the protective-versus-predatory taxonomy of dissociation used in the body above appears nowhere in the Kastrup register.** PRS-07 is the nearest home because it is the record that treats the boundary as a variable that can be well- or badly-regulated; the culpability split laid on top of it is this commentary's extension.
+- **Fredrickson-tradition wiki — no id available.** The broaden-and-build / narrow-and-defend contrast this bullet rests on has **no entry in `wiki/traditions/fredrickson/prs_triplets.md`**; that register's nearest records are PRS-01 (loving-kindness practice raising vagal tone) and PRS-02 (positivity resonance as objective neurophysiological coupling), neither of which states the broaden-and-build claim. The only PRS in the wiki that names broaden-and-build is **Hawkins PRS-14** (`wiki/traditions/hawkins/prs_triplets.md`, *broaden-and-build as reference-frame multiplicity*), which cites the theory from outside Fredrickson's own tradition page. Left deliberately unanchored rather than repointed to a record that does not carry the claim. *Strong empirical in the underlying literature; unhomed in the wiki.*
+- **Wright, *Paul and the Faithfulness of God* (Romans 1 readings on willed not-knowing).** Scriptural-historical resource on the structure of culpable ignorance. *Scriptural-historical.* Cited as a canonical work; `wiki/traditions/wright/prs_triplets.md` now exists (PRS-01–04) but none of its four entries was verified in this pass to carry the Romans 1 not-knowing claim, so no id is asserted.
+- **PRS-02 in the Rohr-tradition wiki** (`wiki/traditions/rohr/prs_triplets.md`) — *the disorder necessary for growth*, which is the register's home for the *Falling Upward* thesis this bullet invokes: the forced surfacing that moves the alter into the second half of life. *Contemplative theological.*
 - **MacIntyre, *After Virtue* on tradition-bound rationality and the diagnostic of decline.**
 - **Aristotle, *Nicomachean Ethics* III on the voluntary and circumstances.**
 

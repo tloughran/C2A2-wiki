@@ -17,8 +17,8 @@ length_ratio_to_target: 1.066
 length_note: "Recomputed body-only 2026-08-15 (YAML and the auto-link footer excluded) after two id-less bridge bullets were anchored: 1470 -> 1599, ratio 0.980 -> 1.066, still inside the +/-10% short-tier band. The growth is citation text — wiki file paths, PRS ids and the entry content they carry — in the McGilchrist and Hoffman bullets. No claim was added, removed or reweighted, and no argument was rewritten."
 mind_first_reframe: "Necessity-toward-the-perfect-good plus latitude-among-partial-goods is exactly what active inference predicts under hierarchical priors with one fully-determining terminal; enjoyment is the alter's substrate-direct rest in the apprehended good — perfect in the eschatological state of full alignment with mind-at-large, imperfect-anticipatory through this-life contemplation, prayer, sacrament, and positivity-resonance."
 central_theme_thread: "The work of becoming-aligned with loving unity is itself shot through with anticipatory enjoyment; the alter's daily task is to receive present positivity-resonance and contemplative-rest as real partial substrate-presence rather than distraction from the eschatological completion."
-last_qc_at: "2026-08-15T20:25:16"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-29T02:28:18"
+last_qc_outcome: "pass"
 tags: [synthesis, day/066, theme/enjoyment, theme/rest-in-the-good]
 ---
 # Day 66 — Contemporary Parallel: *Enjoyment as the Substrate-Direct Rest of the Will and the Imperfect Anticipations of It*

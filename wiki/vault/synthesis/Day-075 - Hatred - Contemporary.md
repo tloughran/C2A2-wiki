@@ -3,9 +3,10 @@ day: 75
 title: "Hatred (Contemporary)"
 pairs_with: "[[Day-075 - Hatred]]"
 length_target_words: 2200
-length_actual_words: 2403
-length_ratio_to_target: 1.092
+length_actual_words: 2699
+length_ratio_to_target: 1.227
 length_tier: medium
+length_note: "Recomputed 2026-08-29, informational — NOT an escalation and not self-certifying. Stored 2403 was understated; body-only recount before this run gave 2541 (ratio 1.155), inside ±25% and outside ±10%. Tier verified correct from the transcript (2724 cleaned body words, 3025 recorded — medium either way). Reviewer footprint disclosed: oracle anchoring added ~158 words (2699, ratio 1.227), still inside ±25%. The pre-pass figure is 2541."
 karpathy_wiki_sources:
   - "wiki/traditions/stump/wiki.md (PRS on willed-evil; Wandering in Darkness on the structure of refusing-the-good; second-personal-knowing as resource for hatred-rectification)"
   - "wiki/traditions/friston/wiki.md (PRS on inverted-prior-structure; affective valence-inversion; precision-collapse closing the alter against substrate-source-integration)"
@@ -18,8 +19,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.29 + C2A2 framew
 mind_first_reframe: "Aquinas's Q.29 a.2 (love is the cause of hatred — one hates only what is contrary to a loved good) preserves under the active-inference frame as the structural-priority of valence-encoding: there is no hate-prior independent of love-prior; hatred is the inversion of valence with respect to objects perceived as obstructing or contrary to a primary love. Q.29 a.4 (one cannot hate self per se) preserves under mind-monist metaphysics: the alter cannot hate its own substrate-source-of-being without inversion-by-confusion (mistaking part-of-self as not-self). Q.29 a.5 (one can hate truth incidentally) preserves under perspective-limited threat-response: the alter can close-against-truth that its current configuration experiences as threat to a held-position."
 central_theme_thread: "Hatred is the central-theme's perspective-limitation made structurally pathological: under the alter's limited perception, when an apprehended object appears contrary to the alter's primary-loved-good, the alter's affective interface inverts valence and closes against the apprehended object. The central-theme commits to the structural-priority-of-love: hatred is derivative, correctable in principle, and pathological-relative-to-the-formal-target-of-loving-unity. Salvation in fear and trembling at this register includes the alter's responsibility for cultivating apprehension that widens beyond the perspective-limited threat-response, receiving second-personal care that rectifies the alter's primary-loved-good when it has misidentified its own integrative-substrate-direction, and refusing the closure-of-the-right-hemispheric-receptivity that locks hatred into rigid left-hemispheric stance."
 tags: [synthesis, day/075, theme/hatred, theme/privation-of-love, theme/affective-pathology, theme/perspective-limited-threat-response, transcript-fetch-failed]
-last_qc_at: "2026-08-16T06:20:45"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-29T08:21:19"
+last_qc_outcome: "rewrote"
 ---
 # Day 75 — Contemporary Parallel: *Hatred as the Privation of Love and the Pathology of Perspective-Limited Closure*
 
@@ -78,9 +79,9 @@ The structural impossibility of universal-hatred (Q.29 a.6) preserves the centra
 - **`traditions/fredrickson/prs_triplets.md` (PRS-11 — inflammatory state as a biological boundary condition narrowing the social radius of resonance toward familiar, safe others).** *Strong empirical*: the closest wiki-side anchor for narrowing-under-negative-affect. The *propagation* half of this bullet is cited to the published corpus — the network-contagion claim has no matching triplet here.
 - **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and fragmentation at the expense of right-hemisphere holistic relational engagement).** *Strong neuropsychiatric*: hemispheric pathology of hatred.
 - **`traditions/levin/prs_triplets.md` (PRS-11 — cancer as "dissociative identity disorder of the body," the bioelectric network failing to maintain collective identity as cells revert to selfish behavior).** *Empirical-suggestive*: privation-frame at biological scale, and a closer match to defection-against-the-collective than a generic form-deficiency gloss.
-- **Rohr, *The Universal Christ*; *Falling Upward*.** *Contemplative-theological*: cosmic-Christ pattern as integrative formal-target.
+- **`traditions/rohr/prs_triplets.md` (PRS-01 — Western rationalism's default to either/or categorization fragments reality and blocks integration; the contemplative practice of non-dual awareness holds both/and without premature resolution, and mature consciousness perceives unity-in-distinction rather than collapsing into false dichotomies; PRS-03 — the divine pattern present in all of creation).** *Contemplative-theological*, PRS-01 High / PRS-03 Medium: cosmic-Christ pattern as integrative formal-target. **PRS-01 is a near-verbatim match** to this commentary's both/and-versus-either/or-closure claim, and it is the record that makes the hemispheric-closure bullet above and the contemplative bullet the same argument at two registers.
 - **`traditions/kastrup/prs_triplets.md` (PRS-02 — one undivided consciousness experiencing multiple dissociated points of view).** *Metaphysical-philosophical*: structural impossibility of universal-hatred under mind-monist substrate-source-being.
-- **Wright on covenanted-community as locus of collective-discernment.** *Scriptural-historical*: community-level supplementation of perspective-limited threat-response.
+- **`traditions/wright/prs_triplets.md` (PRS-8 — the "one new humanity" of Eph 2:11–22 as reconciliation-without-erasure, the church as the overlap of heaven and earth).** *Scriptural-historical*, High: community-level supplementation of perspective-limited threat-response. **Limit stated:** PRS-8 is a record about how distinct agents form one corporate subject, *not* about collective discernment as a corrective procedure. The discernment claim is this commentary's extension; the register carries the unity-in-distinction premise it rests on and not the procedure itself. (Unpadded id per the register's own form.)
 - **MacIntyre on tradition-bound rationality.** *Philosophical-substantial*: tradition as the inherited resource for diagnosing misidentified primary-loved-goods.
 - **Aquinas, *Summa* I-II Q.29; II-II Q.34 on hatred-of-God; Augustine, *Confessions* on the disordered loves that generate hatred.**
 

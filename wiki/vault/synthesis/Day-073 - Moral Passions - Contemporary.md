@@ -3,9 +3,10 @@ day: 73
 title: "Moral Passions (Contemporary)"
 pairs_with: "[[Day-073 - Moral Passions]]"
 length_target_words: 1500
-length_actual_words: 1620
-length_ratio_to_target: 1.080
+length_actual_words: 2053
+length_ratio_to_target: 1.369
 length_tier: short
+length_note: "ESCALATED 2026-08-29, not self-certified. The stored count of 1620 was understated: a body-only recount (YAML footer and auto-link footer excluded) gave 1904 BEFORE this run touched the file, ratio 1.269 — already outside the ±25% band its own arithmetic had reported as 1.080. Tier is CORRECT and re-tiering is not the fix: the transcript's own body measures 1904 cleaned words, under the 2000-word short-tier boundary. Reviewer footprint disclosed: this run's oracle anchoring added ~149 words (2053, ratio 1.369). The number this escalation is about is the pre-pass 1904. Not trimmed — the constitution's run-long clause may well cover this file, but that is Tom's call to make against an honest number, which it has not previously had."
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/wiki.md (PRS on broaden-and-build; positivity:negativity ratio research; affective-rectification)"
   - "wiki/traditions/friston/wiki.md (PRS on precision-weighting; affective-policy-arbitration; emotional regulation as inference)"
@@ -17,8 +18,8 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.24-25 + C2A2 fra
 mind_first_reframe: "Aquinas's 'passions are neither good nor evil per se' (Q.24 a.1) and 'rectified passions add to the moral act' (Q.24 a.3) preserve under active-inference: affect is information-bearing signal that, when calibrated to the alter's formal-direction-toward-loving-unity, increases the precision and behavioral-bandwidth of moral action; affect-rectification is precision-weighting under formal-prior alignment. The order-of-passions (Q.25 — love first) recovers as the active-inference structural finding that valence-encoding (love/hate) is foundational to the policy-selection over which other affective registers (desire, joy, hope, fear, anger) compute."
 central_theme_thread: "Passions can be aligned with the formal direction toward universal-good (rectified) or misaligned (disordered); the work of moral life under perspective-limitation includes the cultivation of passions, not their suppression. Love-as-first-passion anchors the central-theme: every other affective register in the alter's life is downstream of the alter's primary valence-orientation, and salvation in fear and trembling includes the daily-task work of *retuning the primary valence* toward integrative-substrate-states through second-personal-knowing relationships, contemplative practice, and the substrate-source's grace-as-affective-rectification."
 tags: [synthesis, day/073, theme/passions, theme/moral-rectification, theme/order-of-passions, transcript-fetch-failed]
-last_qc_at: "2026-08-16T06:20:43"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-29T08:21:18"
+last_qc_outcome: "rewrote"
 ---
 # Day 73 — Contemporary Parallel: *The Moral Status of the Passions and the Order Anchored on Love*
 
@@ -74,8 +75,8 @@ The central theme says that conscious agents are individuated by perspective-lim
 - **`traditions/levin/prs_triplets.md` (PRS-04 — bioelectric computation as substrate-independent cognition; basal cognition unified across cell, tissue, organ, brain).** *Empirical-suggestive*: substrate-realignment dimension. The extension from goal-directed information processing to *affective* regime is this commentary's move, not the triplet's.
 - **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 — left-hemisphere abstraction and fragmentation at the expense of right-hemisphere holistic relational engagement).** *Strong neuropsychiatric*: disordered-passion closure of right-hemispheric reception.
 - **Aquinas, *Summa* I-II Q.24-25; Aristotle, *Nicomachean Ethics* Books II-III on virtue and passion.**
-- **Wright on the rectified affective life of the resurrection-people.** *Paul and the Faithfulness of God*: agape as the formally-rectified primary valence.
-- **Rohr on contemplative practice as affective rectification.** *Falling Upward*: second-half-of-life retuning of primary valence toward integrative-non-dual-reception.
+- **`traditions/wright/prs_triplets.md` (PRS-13 — *God's Homecoming*: the people of God is the location of God's homecoming, and the working-out of salvation is participation in that homecoming as a member of the people the Spirit is forming).** *Scriptural-historical*, High: the resurrection-people as the locus within which affective rectification happens. The *affective* half of this bullet — agape as the formally-rectified primary valence — has **no matching entry in the Wright register**, which runs to 41 records and nowhere states an affect-rectification claim; that half stays a citation to the published corpus (*Paul and the Faithfulness of God*) with no id asserted.
+- **`traditions/rohr/prs_triplets.md` (PRS-02 — the order–disorder–reorder pattern: epistemological crises are not failures but necessary passages, and the reorder that follows genuine disorder is deeper because it has been tested).** *Contemplative-theological*, High: this is *Falling Upward*'s own thesis in the register, and it is the record the second-half-of-life retuning claim was reaching for. Note the direction of fit: PRS-02 is stated about **traditions and research programs**, and its application to an individual alter's affective retuning is this commentary's extension, not the triplet's.
 - **MacIntyre on tradition-bound rationality as the resource for affective formation.** *After Virtue*: virtue as habituated-rectified-affective-disposition.
 
 ## Where this leaves us

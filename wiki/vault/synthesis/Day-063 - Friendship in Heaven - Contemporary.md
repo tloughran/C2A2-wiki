@@ -3,20 +3,24 @@ day: 63
 title: "Friendship in Heaven (Contemporary)"
 pairs_with: "[[Day-063 - Friendship in Heaven]]"
 length_target_words: 3000
-length_actual_words: 1788
+length_actual_words: 1747
 length_tier: long
 karpathy_wiki_sources:
-  - "wiki/traditions/fredrickson/wiki.md (positivity resonance; Love 2.0; relational well-being)"
-  - "wiki/traditions/stump/wiki.md (union as highest good; second-personal-knowing as constitutive of flourishing)"
-  - "wiki/traditions/mcgilchrist/wiki.md (right-hemispheric receptivity in vision and delight)"
-  - "wiki/traditions/friston/wiki.md (active inference at terminal-prior alignment)"
-  - "wiki/traditions/kastrup/wiki.md (mind-at-large as relational ground)"
-evidence_strength_summary: "Fredrickson on relational well-being empirically robust; Stump on union and friendship theological-philosophical strong; Aquinas's accompaniment-conditions argument structurally preserved by the contemporary relational frame"
-length_ratio_to_target: 0.596
-length_note: "Long-tier transcript distilled to a thematic accompaniments-and-attainment register over Q.4–Q.5 (16 articles). Per the constitution (Summa.md and the length-policy memory), long-tier syntheses 'pick the two or three most generative threads from the transcript rather than mirroring every article'; the relational-flourishing and grace-enabled-attainment threads carry the load and adding length would be padding."
+  - "wiki/traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance scaling from dyadic to group coupling; PRS-02 love as measurable neurophysiological event)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-19 relationships in human flourishing and one's true good; PRS-11 Franciscan second-person knowing)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-11 ritual, communal worship and contemplation as right-hemisphere epistemic access; PRS-05 attention as ontological act)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-16 prior preferences in the expected-free-energy decomposition; PRS-06 multi-agent coherence via mutual modelling)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-39 consciousness as the single primitive; PRS-30 physical entities as relational; PRS-02 dissociation/alter)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 interface theory of perception; PRS-01 conscious realism)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-05 salvation as God's homecoming to a renewed creation)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-01 non-dual contemplative knowing)"
+  - "wiki/master/cross_program_index.md (CROSS-005 love / positivity resonance / union as a fundamental category — Fredrickson x Stump x Kastrup)"
+evidence_strength_summary: "Fredrickson on relational well-being empirically robust (PRS-03 / PRS-02, both High); McGilchrist PRS-11 High, PRS-05 (Implicit)/Medium; Friston PRS-16 High but PRS-06 (Implicit)/Medium, so the multi-agent reading of fellowship is a framework application rather than a measured result; Stump PRS-19 Medium and PRS-11 High, theological-philosophical; Kastrup PRS-39/PRS-30 High on the single primitive and on relationality, but the friendship-grade reading of mind-at-large's relationality is this commentary's own extension; the grace-as-pattern-communication reading is speculative-theological throughout"
+length_ratio_to_target: 0.582
+length_note: "ESCALATED, not padded. Honest recount at the 2026-08-29 QC pass is 1747 words against a long-tier target of 3000 — ratio 0.582, well outside +/-25%. The recorded field of 1788 overstated it, which is the top-frontmatter direction of the length_actual_words bug. The prior note defended the shortfall by citing the constitution's clause that long-tier syntheses 'pick the two or three most generative threads rather than mirroring every article' — but that clause governs WHICH content is selected, not how few words the selected content may occupy, so the note was self-certifying against a policy that does not in fact license a 42% shortfall. The tier itself is correct: the transcript is 3725 cleaned words against a true ASR of 3725, over the 3500 long-tier boundary. Reviewer footprint disclosed: the 2026-08-29 citation-anchoring pass added roughly 700 words of bridge prose, which moves the mechanical ratio but is reviewer apparatus rather than authorial substance; the 1747 figure above is the pre-pass body and is the number the escalation is about."
 mind_first_reframe: "Happiness's accompaniment-conditions (vision, delight, comprehension, rectitude, body, fellowship of friends) preserve as the constitutively relational structure of the alter's integrative act under mind-monism; grace is the substrate-source's communication of its own integration-pattern to the perspective-limited alter."
 central_theme_thread: "Loving unity is constitutively relational; the alter works out salvation 'with' the friends-becoming-aligned-together under the substrate-network's pedagogical care, not solitarily — and Q.4 a.4's rectitude-of-will is the daily-task content of dispositional formation."
-last_qc_at: "2026-08-14T11:57:41"
+last_qc_at: "2026-08-29T00:23:01"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/063, theme/relational-flourishing, theme/friendship]
 ---
@@ -72,16 +76,16 @@ Q.4 a.4's *rectitude of the will* is doing keystone work in today's day: the wil
 
 ## Bridges
 
-- **Fredrickson-tradition wiki, PRS on positivity resonance and Love 2.0.** Empirical relational-flourishing resource. *Strong empirical at dyadic-and-group biology.*
-- **Stump-tradition wiki, PRS on union as highest good and faith-as-second-personal-knowing.** Theological-philosophical resource on the structure of integrative-act. *Book-length argument.*
-- **McGilchrist-tradition wiki, PRS on right-hemispheric receptivity.** Reception-mode anchor for vision-and-delight. *Strong neuropsychiatric evidence.*
-- **Friston-tradition wiki, PRS on terminal-prior alignment.** Active-inference frame for rectitude-of-will. *Mature formalism.*
-- **Kastrup-tradition wiki, PRS on mind-as-relational-ground.** Metaphysical anchor for relational substrate-source. *Philosophical-conceptual.*
-- **Hoffman-tradition wiki, on alter-as-interface and substrate-direct-mode access.** Why grace is needed for full integrative-act. *Philosophical-mathematical.*
-- **Wright, *Surprised by Hope*; *The Resurrection of the Son of God*; *Paul and the Faithfulness of God*.** Scriptural-historical resource on the relational-and-resurrected character of flourishing. *Strong scriptural-historical.*
-- **Rohr, *The Universal Christ*; *Immortal Diamond*.** Cosmic-Christ pattern as relational substrate-source. *Contemplative theological.*
+- **PRS-03 in the Fredrickson-tradition wiki** (`wiki/traditions/fredrickson/prs_triplets.md`), with **PRS-02** behind it. PRS-03 is the sharper anchor for Q.4 a.8: positivity resonance is recorded there as a biophysiological coupling event that *scales from dyadic interaction to group resonance*, which is precisely the fellowship-of-friends claim rather than a claim about individual affect. PRS-02 supplies the prior step — that love so understood correlates with measurable neurophysiological markers rather than reducing to sentiment. *Both marked High confidence; empirical at dyadic-and-group biology.*
+- **PRS-19 in the Stump-tradition wiki**, with **PRS-11** alongside it. PRS-19 is the record this commentary actually needs and it is easy to miss: *The Image of God* on the role of relationships in human flourishing and on what constitutes one's true good — its Problem line names exactly the individualist-versus-relational oscillation that Q.4 a.8 resolves. PRS-11 supplies the Franciscan, non-propositional second-person knowing under which *vision* and *comprehension* are read above. *PRS-19 Medium; PRS-11 High. PRS-19 carries no `Label:` line, so a Label-driven lookup will not surface it.* Note that **PRS-05 is not the record for this day** — it is union as the final cause of *permitted suffering*, which is a different question.
+- **PRS-11 in the McGilchrist-tradition wiki**, with **PRS-05** behind it. PRS-11 records religious ritual, communal worship and contemplation as modes of right-hemisphere epistemic access — the reception-mode anchor for vision-and-delight, and communal rather than solitary, which is the point the day is making. PRS-05 supplies the standing attention-as-world-constituting claim. *PRS-11 High; PRS-05 marked (Implicit), Medium.*
+- **PRS-16 in the Friston-tradition wiki**, with **PRS-06** alongside it. Q.4 a.4's *rectitude of the will* is prior-alignment, and PRS-16 is where the wiki records prior preferences formally — risk as the KL divergence between prior preferences and predicted outcomes. PRS-06 carries the other half the day needs and the one that makes the fellowship claim formal rather than metaphorical: multi-agent coherence through mutual modelling and shared attractor basins — friends becoming aligned *together*. *PRS-16 High; PRS-06 marked (Implicit), Medium — so the multi-agent reading is a framework application, not a measured result.*
+- **PRS-39 in the Kastrup-tradition wiki**, with **PRS-30** and **PRS-02**. PRS-39 is the single-primitive claim (consciousness as the one ground); PRS-30 is the sharper anchor for the *relational* reading this commentary leans on — Kastrup's self-classification as physical non-realist and ontic realist, on which physical entities are relational rather than substantival. PRS-02 is the dissociation/alter record the body's "alter" vocabulary rests on throughout. *All three High.* The claim that mind-at-large's own dynamics are *relational in the sense required for friendship* is this commentary's extension beyond what these records establish.
+- **PRS-03 in the Hoffman-tradition wiki**, with **PRS-01**. Interface theory — fitness-payoff replaces truth-tracking — is why the alter has no substrate-direct-mode access on its own resources, which is the structural reason grace is needed for the full integrative act rather than merely helpful. *Both High; the grace application is theological, not part of the record.*
+- **PRS-04 in the Wright-tradition wiki** (`wiki/traditions/wright/prs_triplets.md`), with **PRS-05**. PRS-04 is the historical argument for bodily resurrection, which Q.4 a.5's *body required for perfect happiness* leans on directly; PRS-05 is the "God's homecoming" frame on which salvation, resurrection and kingdom are one story of God dwelling with a renewed creation — the covenanted-community reading used above. *PRS-04 Medium; PRS-05 High.*
+- **PRS-03 in the Rohr-tradition wiki**, with **PRS-01**. PRS-03 records the Universal Christ as the divine pattern present in all creation; PRS-01 the non-dual contemplative practice that holds both/and without premature resolution, which is the mode the accompaniment-conditions register asks of the reader. *PRS-03 Medium; PRS-01 High.*
+- **CROSS-005 in `wiki/master/cross_program_index.md`.** *Is love / positivity resonance / union a fundamental category?* — Fredrickson, Stump and Kastrup, the exact three traditions this day's argument joins, recorded as a deep structural analogy and a potential explanatory bridge. Status Active. This is the day's most direct cross-program anchor.
 - **Augustine, *De Trinitate*; Aquinas's *Summa Contra Gentiles* III.**
-- **CROSS-005 on love as fundamental category; CROSS on substrate-relational-structure.**
 
 ## Where this leaves us
 

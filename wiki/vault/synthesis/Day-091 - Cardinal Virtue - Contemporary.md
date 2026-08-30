@@ -4,9 +4,9 @@ title: Cardinal Virtue (Contemporary)
 pairs_with: "[[Day-091 - Cardinal Virtue]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1368
-length_ratio_to_target: 0.912
-length_note: "Runs short of the 1500 short-tier target by design: the day's argument is a single structural claim (the cardinal virtues as the minimum coupled dispositions a perspective-limited agent needs), and the constitution prefers short-and-substantive to padded. The previously declared 1490 was self-reported and wrong — the body measured 1118 before the 2026-08-09 citation repairs and 1234 after; the 2026-08-18 CROSS-007 / FLAG-012 repair brought it to 1368 (ratio 0.912, now inside the ±10% band). All three counts taken with the constitution's regex over the body as parsed by qc_sweep.split_frontmatter."
+length_actual_words: 1442
+length_ratio_to_target: 0.961
+length_note: "Runs short of the 1500 short-tier target by design: the day's argument is a single structural claim (the cardinal virtues as the minimum coupled dispositions a perspective-limited agent needs), and the constitution prefers short-and-substantive to padded. The previously declared 1490 was self-reported and wrong — the body measured 1118 before the 2026-08-09 citation repairs and 1234 after; the 2026-08-18 CROSS-007 / FLAG-012 repair brought it to 1368 (ratio 0.912); the 2026-08-29 Friston PRS-04 evidence-badge correction brings it to 1442 (ratio 0.961). Still inside the ±10% band, and now nearer the target than at any prior count. All four counts taken with the constitution's regex over the body as parsed by qc_sweep.split_frontmatter."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-09 gloss — virtue as cooperative causality; Stump on the seven cardinal virtues)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 gloss — positivity resonance; PRS-06 gloss — capacity for love as learnable and scaling)"
@@ -17,7 +17,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under mind/conscious-realist monism virtue is a stable computational invariant in a perspective-limited agent's generative model — a recurring pattern by which limited consciousness organizes its inference and action; Aquinas's formal-object individuation survives intact, but the substantialist ontology of qualities-of-the-soul is reframed as scale-of-coupling within the agent's own optimization loop."
 central_theme_thread: "The cardinal virtues are exactly the minimum stable dispositions a perspective-limited agent needs so its computations toward loving unity remain coherent under finite affective and cognitive resources — cut any one and the others degrade (Gregory the Great's chiasmus reread as an active-inference network prediction)."
 evidence_strength_summary: "Theological claims at full traditional strength; psychological mechanism claims (Fredrickson broaden-and-build, McGilchrist hemispheric character) hold mixed empirical support — replicated for broaden-and-build, contested for some McGilchrist generalizations. Network-of-virtues claim formally analogous to coupled-trait psychometric models with moderate support. PRS/Synergistic-Coil framing is Tom Loughran's, not derived from the traditions."
-last_qc_at: "2026-08-18T02:27:30"
+last_qc_at: "2026-08-29T20:24:52"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/091, theme/virtue-as-network, theme/cardinal-virtues]
 ---
@@ -46,7 +46,7 @@ CROSS-007 in `master/cross_program_index.md` (*is basal cognition, in Levin's se
 
 Aquinas's four cardinal virtues map cleanly onto four functional capacities a perspective-limited agent needs to compute coherently toward loving unity:
 
-- **Prudence** = the agent's capacity for accurate generative-model maintenance and policy selection under uncertainty. Friston's framework gives this empirical teeth: prudence is good active inference over action.
+- **Prudence** = the agent's capacity for accurate generative-model maintenance and policy selection under uncertainty. Friston's framework gives this a *formal* shape rather than empirical teeth: PRS-04 in the Friston-tradition wiki is an **(Implicit) / Medium-confidence** record — predictive coding and the Bayesian brain as a reconceptualization of the organism, not a measurement — so prudence-as-good-active-inference is a modelling claim awaiting empirical discrimination, not an established finding.
 - **Justice** = the agent's stable disposition to render correctly to other agents in the network. Stump's second-personal reframe and the broaden-and-build mechanism converge on this: justice is what makes relationship-graphs computationally sustainable.
 - **Temperance and fortitude** = the regulatory disposition of the agent's own affective state space: temperance attenuates pull-toward stimuli; fortitude attenuates push-away stimuli. McGilchrist's hemispheric framework is suggestive but not necessary; Fredrickson's broaden-and-build is the better empirical anchor.
 
@@ -72,7 +72,7 @@ Cut any one and the others degrade. This is Gregory the Great's chiasmus, and it
 - **`traditions/fredrickson/prs_triplets.md` (PRS-02 gloss — positivity resonance):** love as measurable neurophysiological coupling between agents — the empirical anchor for justice as a sustainable relational graph. Empirical.
 - **`traditions/fredrickson/wiki.md` (PRS-05 row — broadened attention):** empirically grounded mechanism for how habituated dispositions accumulate and couple. Empirical (broadening replicated; the long-term build effect real but smaller than initial estimates).
 - **`traditions/mcgilchrist/prs_triplets.md` (PRS-01 gloss — hemispheric asymmetry):** attentional substrate for the prudence/temperance distinction. Empirical (core asymmetry well-supported, wider cultural generalizations contested).
-- **`traditions/friston/prs_triplets.md` (PRS-04 gloss — organism as active modeler):** the living system as a continuous hypothesis-testing agent that generates predictions and updates its model — the formal anchor for prudence as accurate generative-model maintenance. (The further claim that prudence is *policy selection* under uncertainty is left deliberately unanchored; it belongs to the expected-free-energy side of the Friston record and no id there was verified for it this pass.) Formal/empirical.
+- **`traditions/friston/prs_triplets.md` (PRS-04 gloss — organism as active modeler):** the living system as a continuous hypothesis-testing agent that generates predictions and updates its model — the formal anchor for prudence as accurate generative-model maintenance. (The further claim that prudence is *policy selection* under uncertainty is left deliberately unanchored; it belongs to the expected-free-energy side of the Friston record — PRS-16, expected free energy as the unified mathematics of risk and ambiguity — and is not what PRS-04 states.) **Formal, at Medium confidence and (Implicit) provenance** — corrected 2026-08-29 from the earlier "Formal/empirical" badge, which credited the register with an empirical standing it does not claim.
 - **`master/cross_program_index.md` (CROSS-007 — basal cognition as an instantiation of active inference, Levin × Friston):** the logged cross-program bridge this day extends from cells to dispositions. **Tom's Synergistic Coil**: one resource (the scale-coupling formalism) carrying more than one P⇒S transition — here across virtue ethics, character psychology, and active inference. The coil reading is proposed here, not recorded in the index.
 
 ## Where this leaves us

@@ -63,9 +63,9 @@ A specific dialectical move follows. Stump-tradition Thomism reads infused virtu
 ## Bridges
 
 - **PRS-17 in the Levin-tradition wiki / bioelectric pattern memory persisting across cell divisions and encoding target morphology** — Q.50 a.1 (habit in the body): bodily-level stabilized parameters with lower precision than higher levels; *empirical, growing in scale*.
-- **PRS-04 in the Hawkins-tradition wiki / reference frames as the universal architecture of model-based intelligence (*A Thousand Brains*)** — Q.50 a.2-3 (habit in the powers of the soul): the cortical level at which "habits in the powers" sit; *neuroscientifically grounded*. (Corrected from PRS-03, the knowledge-preserving-AGI entry, which carries no reference-frame claim.)
-- **Friston PRS-04 + hierarchical active inference** — Q.50's essence/powers distinction and Q.51's acts-cause-habits: form-of-model vs. parameters-of-model; experience-driven precision update; *formal, empirically robust*.
-- **McGilchrist / hemispheric specialization** — Q.50 a.3's sensitive-appetite-as-shaped-by-reason: top-down attentional and contextual modulation of affect; *clinical evidence*.
+- **PRS-04 in the Hawkins-tradition wiki / reference frames as the universal architecture of model-based intelligence (*A Thousand Brains*)** — Q.50 a.2-3 (habit in the powers of the soul): the cortical level at which "habits in the powers" sit. *Strength stated at the record's own level:* PRS-04 is an **(Implicit)/Medium** entry — a project-side inference carrying reference frames into inter-tradition methodology, not a reported neuroscience finding. The reference-frame architecture is well-attested in Hawkins's published work; the record cited here is not what attests it. (Corrected from PRS-03, the knowledge-preserving-AGI entry, which carries no reference-frame claim.)
+- **Friston PRS-04 + hierarchical active inference** — Q.50's essence/powers distinction and Q.51's acts-cause-habits: form-of-model vs. parameters-of-model; experience-driven precision update. *Strength split:* hierarchical active inference as a formalism is well-developed in Friston's published work, but PRS-04 itself is an **(Implicit)/Medium** record stating only the organism-as-active-modeler thesis at the individual scale — it carries neither the hierarchical machinery nor an empirical result. Do not read the record as the warrant for the formalism.
+- **PRS-05 in the McGilchrist-tradition wiki / attention as ontological act — the mode of attending constitutes the kind of world that shows up** — Q.50 a.3's sensitive-appetite-as-shaped-by-reason: top-down attentional and contextual modulation of affect. The record itself names the bridge this synthesis needs, glossing attention as Friston's precision-weighted evidence-weighting; *(Implicit)/Medium record, resting on McGilchrist's published clinical work rather than reporting it*. (Anchored 2026-08-29; the prior "no numbered id claimed" declination was false — the register was searched for attention/affect/modulation and PRS-05 returns directly, with PRS-09 and PRS-21 as adjacent but less exact.)
 - **PRS-09, PRS-24, PRS-29 in the Stump-tradition wiki / virtue as cooperative causality; acquired vs. infused virtue; the will's quiescence** — analytic-Thomistic articulation tracking Q.50-51 article by article: PRS-09 for habits-in-the-powers (Q.50), PRS-24 for acquired-by-practice against infused-in-an-instant "at different levels of the soul's powers" (Q.51 a.2 vs a.4), PRS-29 for consent-without-bypass (Q.51 a.4); *philosophically rigorous*. (Corrected from PRS-04, the final-causality-and-modern-biology entry — a teleology-in-biology triplet that carries no habit, virtue, or infusion claim.)
 - **Fredrickson PRS-01, PRS-08** — Q.51 a.2 (habits caused by acts): longitudinal practice-induced stabilization; *empirical, high confidence*.
 - **Hoffman / interface theory** — Q.50 a.4 (angelic habit) and the structural essence/powers distinction; *speculative-formal, internally consistent*.
@@ -83,15 +83,16 @@ day: 86
 title: "The Subject of Habits (Contemporary)"
 pairs_with: "[[Day-086 - The Subject of Habits]]"
 length_target_words: 2200
-length_actual_words: 2215
-length_ratio_to_target: 1.007
+length_actual_words: 2792
+length_ratio_to_target: 1.269
 length_tier: medium
+length_note: "ESCALATED. Recounted 2026-08-29, twice, and the two readings should not be conflated. (1) The previously recorded 2215 words / ratio 1.007 understated the body by 409 words and read as *exactly on tier* when the pre-repair truth was 2624 / 1.193, i.e. +19.3% — inside the +-25% escalation bound but outside the +-10% guideline. A frontmatter figure of 1.007 is the most flattering form this defect takes: it does not merely understate, it certifies. (2) This run's citation repairs — strength-splitting the Hawkins and Friston bullets and anchoring the McGilchrist declination to PRS-05 — added 168 further words and carried the day to 2792 / 1.269, which is now **outside** the +-25% bound. The repair, not the prose, is what crossed the line, and it is escalated rather than trimmed: reverting the anchors to buy back length would trade a real citation defect for a length figure. The underlying overage is substantive — Q.50 and Q.51 are two questions, and Q.51 a.4 (infusion) needs the Stump quiescence machinery and the Kastrup mind-at-large reading set side by side without collapsing either. Tom's call: accept at +26.9%, retier to long, or trim. Not rewritten; see the QC log escalation of 2026-08-29."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory encoding target morphology)"
   - "traditions/hawkins/prs_triplets.md (PRS-04 reference frames as universal cognitive tool)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler); hierarchical generative models"
-  - "traditions/mcgilchrist/wiki.md (hemispheric specialization; top-down attentional modulation — no numbered id claimed)"
-  - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality; PRS-24 acquired vs. infused virtue; PRS-29 the will's quiescence); *Wandering in Darkness*"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; the mode of attention constitutes the world disclosed)"
+  - "traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality; PRS-24 acquired vs. infused virtue; PRS-29 the will's quiescence); *Aquinas's Ethics: the Infused Virtues and the Indwelling Holy Spirit*"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 positivity-resonance cultivation via loving-kindness meditation; PRS-08 high-quality listening)"
   - "traditions/hoffman/wiki.md (interface theory; structural essence/powers)"
   - "traditions/kastrup/wiki.md (analytic idealism; dissociative alter; mind-at-large)"
@@ -101,8 +102,8 @@ mind_first_reframe: "Aquinas's geography of habit-bearing powers (Q.50) recovers
 central_theme_thread: "The central theme acquires its architectural locus. The working-out of salvation in fear and trembling lives in the intermediate parameterizable layers — not in the agent's essence (which simply is) and not in the deepest homeostatic loops (which resist remaking). Q.51's three causes are the central theme's mechanism: nature (the limited starting perspective), acts (the agent's Phil 2:12 working-out under perspective-limitation), infusion (participations in wider perspective the agent cannot supply for itself — Rohr's universal-Christ frame, Wright's life-in-the-Spirit, the 'guidance from those who perceive more of the whole' in its most radical form)."
 evidence_strength_summary: "Practice-induced affective stabilization (Fredrickson) and habitual vs. goal-directed control (Daw, Niv, Dayan; Friston) are empirically robust. Cortical reference-frame learning (Hawkins) and bioelectric pattern memory (Levin) are empirically supported at growing scales. Stump on virtue-as-habituation is philosophically rigorous. The conscious-realist-monist reading of essence/powers/infusion is speculative-metaphysical but internally consistent. Wright on virtue-formation as life-in-the-Spirit and Rohr on contemplative cosmic-Christ habituation are theologically well-attested."
 tags: [synthesis, day/086, theme/habits, theme/subject-of-habits, theme/threefold-causation, theme/infusion, theme/parameterizable-layers]
-last_qc_at: "2026-08-17T02:26:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-29T16:24:12"
+last_qc_outcome: "rewrote"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/levin/prs_triplets|Levin PRS]] · [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/hawkins/prs_triplets|Hawkins PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/stump/prs_triplets|Stump PRS]]
