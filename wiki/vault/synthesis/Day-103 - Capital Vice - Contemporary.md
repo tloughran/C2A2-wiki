@@ -3,8 +3,8 @@ day: 103
 title: Capital Vice (Contemporary)
 pairs_with: "[[Day-103 - Capital Vice]]"
 length_target_words: 2200
-length_actual_words: 2237
-length_ratio_to_target: 1.017
+length_actual_words: 2243
+length_ratio_to_target: 1.020
 length_note: "Recounted 2026-08-18 with the constitution's own [A-Za-z']+ regex over the body (headings included, frontmatter and the Related-records footer excluded). The 2026-08-10 recount of 1893 / 0.86 was correct for the file as it then stood; this run's criterion-(d) citation repair added roughly 345 words of anchoring and search-radius prose, which carries the commentary from 0.86 to 1.017 — now inside the +/-10% guideline. The earlier note defending the short length as unpadded is therefore retired rather than contradicted: nothing was padded, the added words are anchors."
 length_tier: medium
 mind_first_reframe: "The medieval seven capital vices (Q.84) are reframed as the characteristic attractor basins into which a perspective-limited agent's predictive model collapses when broadening practices fail — pride as rigid self-model, envy as other-as-threat, anger as instant precision on injury-priors, sloth as collapse of policy-energy, avarice/gluttony/lust as narrowed appetitive misappraisal patterns. The unifying signature beneath the seven is metastability loss (Friston PRS-13): chronic precision-mis-weighting flattens the attractor landscape, simultaneously generating Aquinas's two named roots — pride and covetousness — as surface presentations of the same dynamical collapse. Q.85's 'diminishes natural good without destroying it' survives as: attractor-basin capture is partial, the agent retains the capacity for broadening but has lost the facility."
@@ -16,10 +16,10 @@ karpathy_wiki_sources:
   - "wiki/traditions/stump/prs_triplets.md (PRS-09 virtue as cooperative causality)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-15 the ego/false-self frame as what liberation is from)"
   - "wiki/master/cross_program_index.md (CROSS-076 Levin × Friston — Vmem-organization loss as bioelectric metastability collapse)"
-  - "Wright, *Paul and the Faithfulness of God* / *Surprised by Hope* on Galatians 5:19–21 — cited to the published work and carrying NO PRS id: the Wright register's 42 triplets contain no Galatians or works-of-the-flesh entry, so the scriptural pedigree is asserted from the corpus, not from the wiki."
+  - "Wright, *Paul and the Faithfulness of God* / *Surprised by Hope* on Galatians 5:19–21 — cited to the published work and carrying NO PRS id: the Wright register's 41 triplets (PRS-01 through PRS-41) contain no Galatians or works-of-the-flesh entry, so the scriptural pedigree is asserted from the corpus, not from the wiki."
 evidence_strength_summary: "Empirical: broaden-and-build under positive emotion (Fredrickson, high); attention narrowing under stress and threat (well-supported across paradigms); metastability collapse as a dynamical signature of pathology (Friston PRS-13, mid). Formal: active-inference account of attractor capture under high precision on threat-priors (formal, mid). Speculative: the precise mapping of the medieval seven onto contemporary attractor basins (speculative but principled). Theological: Wright on the Pauline 'works of the flesh' (Gal 5:19-21) as the same family Aquinas inherits."
 tags: [synthesis, day/103, theme/attractor-collapse, theme/attention-narrowing]
-last_qc_at: "2026-08-18T04:21:00"
+last_qc_at: "2026-08-30T02:29:36"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +53,7 @@ Third, **McGilchrist's hemispheric account** (PRS-01 hemispheric asymmetry; PRS-
 
 **PRS-09 in the Stump-tradition wiki** (virtue as cooperative causality) gives the contrastive frame — virtues are the broadening attractor states that the Holy Spirit cooperatively constitutes in the agent's natural powers. Vices and virtues are not symmetric: vices are attractor *collapses* the agent falls into; virtues are attractor *expansions* the agent cannot achieve unaided. The asymmetry matters for the central-theme thread.
 
-**Wright** on Galatians 5:19–21 supplies the scriptural pedigree: Paul's catalog of "works of the flesh" is structurally the same family Aquinas inherits, and Wright's reading of the Pauline contrast (works of the flesh / fruit of the Spirit) maps onto the broaden-narrow polarity. This one is cited to the published corpus and not to a wiki id, deliberately — the Wright register's forty-two triplets contain no Galatians or works-of-the-flesh entry, so there is nothing in the wiki to point at, and inventing a nearest-neighbour id here would misrepresent the register. **Rohr** on the *false self* supplies the contemplative diagnosis, and this one does have an anchor: PRS-15 in the Rohr-tradition wiki records the ego/false-self frame as precisely what liberation is *from*, and its stated purpose is to let the mind-monist account of the self-as-construction and the scriptural account of liberation be spoken in one register. On that reading the capital vices are the characteristic shapes the false self constructs to maintain itself under perceived threat — pride the architecture, the others its furnishings.
+**Wright** on Galatians 5:19–21 supplies the scriptural pedigree: Paul's catalog of "works of the flesh" is structurally the same family Aquinas inherits, and Wright's reading of the Pauline contrast (works of the flesh / fruit of the Spirit) maps onto the broaden-narrow polarity. This one is cited to the published corpus and not to a wiki id, deliberately — the Wright register's forty-one triplets (PRS-01 through PRS-41) contain no Galatians or works-of-the-flesh entry, so there is nothing in the wiki to point at, and inventing a nearest-neighbour id here would misrepresent the register. **Rohr** on the *false self* supplies the contemplative diagnosis, and this one does have an anchor: PRS-15 in the Rohr-tradition wiki records the ego/false-self frame as precisely what liberation is *from*, and its stated purpose is to let the mind-monist account of the self-as-construction and the scriptural account of liberation be spoken in one register. On that reading the capital vices are the characteristic shapes the false self constructs to maintain itself under perceived threat — pride the architecture, the others its furnishings.
 
 ## Solution (proposed, speculative where speculative)
 
@@ -80,7 +80,7 @@ The capital-vice question is one of the cleanest illustrations of *salvation as 
 - *McGilchrist PRS-01 + PRS-05* — within-agent topology: left-hemispheric closure as the within-individual correlate of attractor narrowing; each capital vice as a characteristic shape that closure takes. *(Empirical mid-high; cultural-scale extrapolation more speculative.)*
 - *Stump PRS-09 — virtue as cooperative causality* — the contrastive frame: vices are attractor collapses the agent falls into; virtues are attractor expansions the agent cannot reach unaided. The asymmetry preserves Aquinas's insistence on grace. *(Theological / philosophical, mid.)*
 - *Rohr PRS-15 (the ego/false-self frame as what liberation is from), `traditions/rohr/prs_triplets.md`* — the contemplative diagnosis: the capital vices as the architecture the false self builds under perceived threat. *(Theological / contemplative; the triplet is marked high confidence in the register.)*
-- *Wright on Galatians 5:19–21 — no wiki id, by inspection* — the scriptural pedigree: Pauline "works of the flesh" as the same family Aquinas inherits. Cited to *Paul and the Faithfulness of God* and *Surprised by Hope*; the Wright register's forty-two triplets contain no Galatians entry, so this bullet names its search radius rather than borrowing a nearby id. *(Theological, high on the exegesis; unanchored on the wiki side and marked so.)*
+- *Wright on Galatians 5:19–21 — no wiki id, by inspection* — the scriptural pedigree: Pauline "works of the flesh" as the same family Aquinas inherits. Cited to *Paul and the Faithfulness of God* and *Surprised by Hope*; the Wright register's forty-one triplets (PRS-01 through PRS-41) contain no Galatians entry, so this bullet names its search radius rather than borrowing a nearby id. *(Theological, high on the exegesis; unanchored on the wiki side and marked so.)*
 
 ## Where this leaves us
 

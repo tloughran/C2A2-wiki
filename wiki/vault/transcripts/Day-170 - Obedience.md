@@ -6,7 +6,7 @@ title: Obedience
 summa_ref: "Secunda Secundae, Q.104-105"
 duration_seconds: 550
 word_count: 1473
-raw_asr_word_count: 1417
+raw_asr_word_count: 1405
 length_tier: short
 segment_count: 211
 caption_kind: asr
@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-170 - Obedience - Contemporary]]"
 tags: [summa, day/170, pars/II-II, q/104-105]
-last_qc_at: "2026-08-11T00:25:07"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-30T16:23:44"
+last_qc_outcome: "pass"
 ---
 
 # Day 170 — Obedience

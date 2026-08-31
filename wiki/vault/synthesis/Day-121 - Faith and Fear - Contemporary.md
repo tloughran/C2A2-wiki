@@ -3,21 +3,21 @@ day: 121
 title: Faith & Fear (Contemporary)
 pairs_with: "[[Day-121 - Faith and Fear]]"
 length_target_words: 1500
-length_actual_words: 1360
-length_ratio_to_target: 0.907
+length_actual_words: 1426
+length_ratio_to_target: 0.951
 length_tier: short
-length_note: "Very short episode (1140w transcript, Q.6-7 as one integrated cause-and-effects argument); the commentary already exceeds transcript length and is substantively complete — under-target rather than padded, per the constitution's short-and-substantive preference."
+length_note: "Very short episode (1140w transcript, Q.6-7 as one integrated cause-and-effects argument); the commentary already exceeds transcript length and is substantively complete — under-target rather than padded, per the constitution's short-and-substantive preference. Recounted 2026-08-30: pre-edit true count 1360, exactly matching the stored value (error 0). The 2026-08-30 QC pass added 66 words splitting an averaged Friston evidence badge across PRS-10 (High) and PRS-04 ((Implicit)/Medium), carrying the file to 1426 / 0.951 — still inside +/-10%."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-04 predictive coding; PRS-10 active reasoning / expected free energy)"
+  - "traditions/friston/prs_triplets.md (PRS-10 active reasoning / expected free energy, Confidence High — the formal weight; PRS-04 predictive coding / organism as active modeler, marked (Implicit) at Confidence Medium — the base case, not co-badged with PRS-10)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable coupling; PRS-04 love as attractor)"
   - "traditions/levin/prs_triplets.md (PRS-03 basins of morphological attraction)"
   - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; PRS-03 inaugurated eschatology)"
   - "traditions/stump/prs_triplets.md (PRS-11 Grains of Wheat — narrative-mediated, non-propositional knowledge; the anchor for faith as second-person knowing)"
-evidence_strength_summary: "Underdetermination of assent by external evidence — formal/empirical (high, Friston). Filial fear as affective signature of high-value coupling — empirical (Fredrickson, medium-high). Purification as re-orientation toward a target basin — empirical in biology, speculative as applied to the heart (Levin). Identification of grace with the wider mind's precision contribution — speculative metaphysics. Faith-by-hearing within covenant — historical-theological (high, Wright)."
+evidence_strength_summary: "Underdetermination of assent by external evidence — formal, and graded per record rather than averaged: the active-reasoning formalism carrying the weight is Friston PRS-10 (Confidence High, published derivation), while the predictive-coding base case is PRS-04, marked (Implicit) at Confidence Medium. Filial fear as affective signature of high-value coupling — empirical (Fredrickson, medium-high). Purification as re-orientation toward a target basin — empirical in biology, speculative as applied to the heart (Levin). Identification of grace with the wider mind's precision contribution — speculative metaphysics. Faith-by-hearing within covenant — historical-theological (high, Wright)."
 mind_first_reframe: "The act of faith is the agent's adoption of a prior that finite evidence cannot compel; the 'interior cause' Aquinas names is read as the contribution of a wider-perceiving node that installs or up-weights a prior the limited agent could not generate alone (supra-evidential, not anti-evidential), and filial fear is the affective signature of that high-value coupling while purification is the re-ordering of the objective function toward the true target basin."
 central_theme_thread: "The cause-of-faith argument is the central claim in epistemic form: the limited agent cannot from its own perspective generate the assent that orients it toward the whole, so individuation-by-perspective-limitation makes guidance from a wider-perceiving node necessary, and filial fear is 'fear and trembling' (Phil 2:12) — the lived awareness of that limitation and dependence, now felt as dread of losing the One who completes it."
 tags: [synthesis, day/121, theme/cause-of-faith]
-last_qc_at: "2026-08-12T12:27:33"
+last_qc_at: "2026-08-30T08:22:20"
 last_qc_outcome: "rewrote"
 ---
 
@@ -57,7 +57,8 @@ The cause-of-faith argument is the project's central claim in epistemic form. Th
 
 ## Bridges
 
-- *PRS-04 + PRS-10 in the Friston-tradition wiki (Tom's PRS-form record of Friston's predictive-coding and active-reasoning work)* — assent is fixed by priors and precision, not by external input; underdetermination is the expected behavior of any inferential agent. (Formal/empirical; high.)
+- *PRS-10 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-reasoning work)* — active reasoning via expected free energy: agents select the observations that maximally disambiguate competing generative models, so assent is an active settling rather than a passive one. This is where the formal weight sits (Confidence High, on a published derivation).
+- *PRS-04 in the same tradition* — the organism as a continuous hypothesis-testing system, so that identical input does not fix identical belief. The base case for the underdetermination claim, but it is marked *(Implicit)* and carries **Confidence Medium**, not the High of PRS-10; the badge is not shared across the two. (Formal; medium.)
 - *PRS-02 + PRS-04 in the Fredrickson-tradition wiki* — love/charity has a measurable coupling-signature and behaves as an attractor; filial fear is its affective register. (Empirical; medium-high.)
 - *PRS-03 in the Levin-tradition wiki* — basins of morphological attraction give the formal language for purification as a contrary motion toward a target state. (Empirical in biology; speculative as applied.)
 - *PRS-02 + PRS-03 in the Wright-tradition wiki* — faithful improvisation and inaugurated eschatology account for the historical progress of faith's "requisite detail." (Historical-theological; high.)

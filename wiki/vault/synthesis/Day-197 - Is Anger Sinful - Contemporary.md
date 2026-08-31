@@ -3,13 +3,14 @@ day: 197
 title: Is Anger Sinful? (Contemporary)
 pairs_with: "[[Day-197 - Is Anger Sinful]]"
 length_target_words: 1500
-length_actual_words: 1619
-length_ratio_to_target: 1.08
+length_actual_words: 1701
+length_ratio_to_target: 1.134
+length_note: "Declared 1619/1.08 before this pass; recount put the pre-pass body at 1642/1.095 (the stored figure understated, as it does vault-wide), and the 2026-08-30 citation repair took it to 1701/1.134 — outside short-tier ±10%, inside the ±25% threshold. The entire overrun is bridge-anchoring text: splitting the precision claim off PRS-10 onto Friston PRS-28 in the sources block and the Bridges bullet, and narrowing the broaden-and-build declination to name Fredrickson PRS-27/28/34 and its search radius. No claim was added, removed, or reweighted; the argument is the one that stood at 1619."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-10 reasoning/action as expected-free-energy minimization; precision-weighting of prediction errors)"
+  - "traditions/friston/prs_triplets.md (PRS-10 reasoning/action/perception unified as expected-free-energy minimization — the appraisal-and-policy half; Friston PRS-28 neuromodulation encodes precision, the inverse variance of prediction error over selected channels — the GAIN half, repointed 2026-08-30 from PRS-10, whose body carries no precision claim)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love/emotion as objective biological coupling; PRS-06 resonance as inclusivity basis)"
-  - "traditions/fredrickson/wiki.md (broaden-and-build core claim — it has no PRS-id home in prs_triplets.md)"
+  - "traditions/fredrickson/wiki.md (broaden-and-build core claim — broadened attention and built durable resources). Declination narrowed 2026-08-30: prs_triplets.md is NOT silent on broaden-and-build — Fredrickson PRS-27 (a primary-source canonical map of the broaden-and-build / positivity-resonance program), PRS-28 (positivity resonance read as a within-program extension of broaden-and-build logic at dyadic rather than individual scale) and PRS-34 (why the capacity-to-be-built itself declines) all name it. What the register lacks is a record whose Resource IS the broadening finding, so wiki.md remains the cite for the claim proper. Search radius: case-insensitive grep for broaden|build.theory|thought-action repertoire across the 40-record prs_triplets.md and wiki.md."
   - "traditions/mcgilchrist/prs_triplets.md (PRS-09 attention as love / value disclosed in encounter)"
   - "master/cross_program_index.md (CROSS-057 trauma/metastability/dissociative-boundary clinical bridge)"
   - "traditions/wright/ (biblical justice, mishpat); traditions/rohr/ (non-dual, hatred of person vs of evil)"
@@ -17,7 +18,7 @@ evidence_strength_summary: "Anger-as-calibrated-signal with a non-zero optimum =
 mind_first_reframe: "Anger is a functional signal that flags injury to a valued order and mobilizes a corrective response; its virtue is calibration — fired at real injustice, sized to it, aimed at repair — so both excess (vengeance for the self) and defect (no response to real injustice) are failures. Cruelty is the corrective signal still tracking (disordered) justice but with the brake removed; savagery is harm pursued for its own reward, a different system entirely."
 central_theme_thread: "Rightly-tuned anger is one of the ways a limited perspective serves the whole: it defends the bound order against injury. The disorder is not the signal but its capture by the self — anger for one's own vanity rather than for the order that unites agents."
 tags: [synthesis, day/197, theme/calibrated-signal]
-last_qc_at: "2026-08-12T02:29:29"
+last_qc_at: "2026-08-30T18:29:55"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +54,7 @@ If the telos is loving unity among limited perspectives, anger turns out to be o
 
 ## Bridges
 
-- **Anger ↔ precision-weighted corrective signal with an optimum** — the Friston-tradition record, PRS-10. *Why:* a functional error signal has a right gain, so both overshoot and undershoot are failures — Aquinas's excess and his defect-of-anger. Evidence: **mechanistic, medium-high**.
+- **Anger ↔ precision-weighted corrective signal with an optimum** — the Friston-tradition record, **PRS-28** (neuromodulation encodes precision, the inverse variance of prediction error, over selected channels) for the *gain* on the signal, with **PRS-10** (reasoning, perception and action unified as expected-free-energy minimization) for the *appraisal and policy* the gain is set on. *Why:* a functional error signal has a right gain, so both overshoot and undershoot are failures — Aquinas's excess and his defect-of-anger. This bullet previously rested the whole claim on PRS-10, whose body contains no precision claim; precision is PRS-28's. Evidence: **mechanistic, medium-high**.
 - **Defect of anger ↔ insufficient signal gain** — the Friston- and Fredrickson-tradition records (PRS-02). *Why:* "unreasonable patience" is a failure to be coupled to real injury. Evidence: **affective-science, medium-high**.
 - **Appraisal of injury ↔ attention as value-disclosure** — the McGilchrist-tradition record, PRS-09. *Why:* whether something merits anger depends on how it is attended to. Evidence: **conceptual, medium**.
 - **Cruelty vs. savagery ↔ brake-failure-on-justice vs. reward-from-harm** — master CROSS-057. *Why:* one is a corrective drive uncapped, the other a different, reward-driven circuit — Aquinas's "bestial." Evidence: **clinical-affective, medium**.

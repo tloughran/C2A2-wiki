@@ -4,15 +4,15 @@ title: The Beatitudes (Contemporary)
 pairs_with: "[[Day-095 - The Beatitudes]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 2293
-length_ratio_to_target: 1.529
-length_note: "Covers two dense questions (Q.68 the seven gifts of the Holy Spirit and Q.69 the eight Beatitudes) and develops the receptivity-as-perfection convergence (FLAG-14) where the central theme surfaces most directly; the over-length is substantive Aquinas-to-contemporary linkage, not padding."
+length_actual_words: 2545
+length_ratio_to_target: 1.697
+length_note: "RECOUNTED 2026-08-29 by the project method (split on the first horizontal-rule separator followed by YAML keys; auto-linked Related-records footer excluded). The stored 2293 / 1.529 understated a true pre-pass body of 2389 / 1.593 — so the day was ALREADY outside +/-25% before this pass, and the previous note was self-certifying from the low figure. This pass's citation repairs (Stump PRS-07 -> PRS-11 with the piety orphan named; Friston PRS-01 anchored beside PRS-28 with its Medium grade stated) added a measured 156 words -> 2545 / 1.697. ESCALATED, not trimmed: the anchors were not reverted to buy back length. The substantive case for over-length stands on the two dense questions (Q.68 seven gifts, Q.69 eight Beatitudes), NOT on the receptivity-as-perfection coil the old note invoked — FLAG-14 has no wiki target (escalated 2026-08-16, open for Tom), so that half of the justification is withdrawn."
 karpathy_wiki_sources:
   - "wright (Jesus and the Victory of God; Paul and the Faithfulness of God; Sermon-on-Mount as covenant-renewal manifesto)"
   - "rohr (Falling Upward; Universal Christ; Beatitudes as non-dual contemplative roadmap)"
   - "friston/wiki.md, friston/prs_triplets.md (hierarchical active inference, top-down precision, passive inference)"
   - "levin/wiki.md (scaffolded competence, multi-scale agency)"
-  - "stump/wiki.md (second-personal knowing, gift of piety)"
+  - "traditions/stump/prs_triplets.md PRS-11 (Franciscan knowledge, non-propositional second-person knowing, High) — was PRS-07 (narrative cognition); no piety record exists in the Stump register, searched in full"
   - "fredrickson/wiki.md (positivity resonance, mourning and recovery)"
   - "mcgilchrist/wiki.md (right-hemisphere openness as substrate of receptivity)"
   - "hawkins/wiki.md (reference-frame learning, hierarchies of prediction)"
@@ -22,7 +22,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "The gifts of the Holy Spirit are scaffolded dispositions in the agent's hierarchical inference architecture by which the highest level (the agent's relation to the conscious whole) supplies real-time top-down precision-weighting for lower-level virtue-driven action; the Beatitudes are the publicly observable acts of an agent operating under that direction."
 central_theme_thread: "Q.68.2 is Aquinas's confession that perspective-limited reasoning is insufficient even when perfected by the theological virtues — the gifts are the receptivity by which the limited agent accepts scaffolded direction toward loving unity it cannot generate from inside its own optimization loop; the Beatitudes are the empirical signatures of an agent that has accepted both the perspective-limit and the scaffolded direction."
 evidence_strength_summary: "Wright's Sermon-on-the-Mount reading: historiographic, strong-but-disputed standing in NT studies. Rohr's contemplative reading of the Beatitudes: contemplative-theological, consistent with patristic and Eastern-Christian tradition. Friston's hierarchical active inference + top-down precision-weighting: empirically robust at modeling level; the 'passive inference under top-down gain' framing is a defensible extension. Fredrickson on mourning/recovery: replicated empirically. Levin/McGilchrist/Hawkins on multi-scale receptivity and right-hemisphere openness: empirically firm. The integration into a single account of gifts-of-Spirit + Beatitudes is speculative-synthetic."
-last_qc_at: "2026-08-16T06:20:56"
+last_qc_at: "2026-08-29T22:29:08"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/095, theme/gifts-of-spirit, theme/beatitudes, theme/passive-inference, theme/scaffolded-receptivity, theme/sermon-on-mount]
 ---
@@ -58,7 +58,7 @@ Levin (scaffolded multi-scale competence): the empirical principle that competen
 
 McGilchrist (right-hemisphere openness as the substrate of receptivity, *The Master and His Emissary*): the right hemisphere's broad-context, presence-tolerant attentional style is the neural substrate for the kind of receptivity the gifts presuppose. The left hemisphere alone — narrow, manipulative, certainty-preferring — cannot receive what is given; it can only re-arrange what it already has. McGilchrist's core attentional-asymmetry claim is well-supported; many of his cultural-historical extensions are contested. The core claim is the load-bearing one here.
 
-PRS-07 in the Stump-tradition wiki: the gift of **piety** as second-personal reverence toward the source of one's existence — God-as-Father, country-as-source, neighbor-as-co-bearer of the imago. Stump's second-personal framework gives the gifts their interpersonal grain.
+PRS-11 in the Stump-tradition wiki (`traditions/stump/prs_triplets.md`, "Grains of Wheat", **High**): Stump's *Franciscan knowledge* — non-propositional, second-person knowing — gives the gifts their interpersonal grain. What the gifts make possible is not additional propositional content about God but a mode of knowing available only in the second person, which is exactly what a disposition-to-be-moved-by-another would have to deliver. *The gift of **piety** specifically has no record in the Stump register* — `traditions/stump/` was searched in full on piety, reverence, and gifts-of-the-Spirit and returns nothing — so the piety framing is this commentary's own extension of PRS-11, not a wiki finding.
 
 Fredrickson (positivity resonance and the recovery-after-loss research): the empirical findings that mourning followed by recovery generates durable resources (broaden-and-build) supplies a contemporary analogue to the *second beatitude* (those who mourn shall be comforted). The empirical evidence for post-traumatic growth and grief-followed-by-meaning-making is robust.
 
@@ -99,12 +99,12 @@ This is exactly the central-theme claim. Perspective-limitation individuates the
 
 - **Wright (canonical: *Jesus and the Victory of God*, *Paul and the Faithfulness of God*):** Sermon on the Mount as covenant-renewal manifesto; the Beatitudes describe the renewed-covenant community. Historiographic (strong-but-disputed).
 - **Rohr (canonical: *Falling Upward*, *Universal Christ*):** Beatitudes as the contemplative developmental arc — obstacle-removal, active perfection, contemplative perfection. Theological-contemplative.
-- **`traditions/friston/prs_triplets.md` (PRS-28 — neuromodulation encodes precision, the inverse variance of prediction error, over selected sensory channels; psychopathology as aberrant precision-weighting on belief updates):** formal architecture for the gifts-of-the-Spirit as scaffolded high-level priors gating real-time inference. Formal/empirical. Note: the *passive-inference-under-high-gain-priors* half of this bullet has no matching triplet and is cited to the published active-inference corpus, not to a PRS id.
+- **`traditions/friston/prs_triplets.md` PRS-01 (the Free Energy Principle — variational free-energy minimization as a unified, empirically testable account of order maintenance and learning; **High**) + PRS-28 (neuromodulation encodes precision, the inverse variance of prediction error, over selected sensory channels; psychopathology as aberrant precision-weighting on belief updates; **Medium**, source a forthcoming lecture):** PRS-01 carries the formalism; PRS-28 carries the precision-weighting mechanism this day's gifts-argument actually turns on, and its Medium grade is why the precision half is offered as a defensible reading rather than an established result. Note: the *passive-inference-under-high-gain-priors* half of this bullet has no matching triplet and is cited to the published active-inference corpus, not to a PRS id.
 - **Hawkins (reference-frame learning):** empirical substrate for hierarchical context-supply. Empirical (core).
 - **Levin (scaffolded multi-scale agency):** empirical principle that competence is cross-scale scaffolded. Empirical.
 - **`traditions/fredrickson/prs_triplets.md` (PRS-01 — cultivated shared positive emotional experience rebuilds vagal tone, enhances resilience, and generates upward spirals of health and connection):** empirical mechanism for the second beatitude. Empirical (replicated). Note: the *mourning-then-recovery* framing is this commentary's extension — the post-traumatic-growth and grief-to-meaning literature is cited to the published corpus, not to a PRS id.
 - **McGilchrist (right-hemisphere openness):** neural substrate for non-grasping receptivity. Empirical (core well-supported).
-- **Stump, PRS-07 (piety as second-personal reverence):** the interpersonal grain of the gifts. Theological-philosophical.
+- **`traditions/stump/prs_triplets.md` PRS-11 (Franciscan knowledge — non-propositional, second-person knowing; **High**):** the interpersonal grain of the gifts. Theological-philosophical. *Was PRS-07, whose recorded entry is "Narrative cognition and philosophical epistemology" and carries no piety or reverence claim; the piety framing is the commentary's own extension, with the Stump register searched in full and no record found.*
 - **Kastrup (alters receiving at the boundary):** metaphysical frame for *infused* dispositions in a mind-monist ontology. Speculative-metaphysical.
 - **FLAG-14 (cross-program index: receptivity-as-perfection):** Tom's Synergistic Coil — receptivity-as-perfection as a single Resource solving Aquinas's gifts-and-Beatitudes, Friston's hierarchical inference, Rohr's contemplative arc, and Wright's renewed-covenant ecclesiology simultaneously.
 

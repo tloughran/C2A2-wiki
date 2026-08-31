@@ -3,24 +3,24 @@ day: 108
 title: Natural and Human Law (Contemporary)
 pairs_with: "[[Day-108 - Natural and Human Law]]"
 length_target_words: 1500
-length_actual_words: 1644
+length_actual_words: 2052
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; species-specific access)"
-  - "wiki/traditions/friston/wiki.md (generative models; priors)"
-  - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 hemispheric asymmetry; rule vs. relational cognition)"
-  - "wiki/traditions/wolfram/wiki.md (computational irreducibility; emergent rule from local dynamics)"
-  - "wiki/master/C2A2_master_wiki.md (CROSS-08 on emergent norms in agent systems)"
-  - "Wright, Paul and the Faithfulness of God (Israel's vocation as norming-norm)"
-  - "Rohr, Falling Upward (rule-following as first-half-of-life pedagogy)"
-evidence_strength_summary: "Empirical: Friston's predictive-processing, McGilchrist's hemispheric data, Wolfram's computational results, the descriptive variability of natural-law applications across cultures. Speculative: the deeper-pattern claim and the interface-theoretic reading of why natural law generalizes."
-length_ratio_to_target: 1.096
-length_note: "Short tier (cleaned transcript 1220 words); 1644 actual vs 1500 target = ratio 1.096, within ±10%. Q.94-95 covered in full (Q.94 a.2/a.4, Q.95 a.2/a.4); substantively complete, no padding warranted."
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking — Interface Theory of Perception, Confidence High)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 the organism as active modeler — predictive coding and the Bayesian brain, Confidence Medium; PRS-01 the free-energy formalism itself, Confidence High)"
+  - "wiki/traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry and cultural impoverishment, Confidence High)"
+  - "wiki/traditions/wolfram/prs_triplets.md (PRS-04 computational irreducibility and agency — no shortcut but running the computation, Confidence Medium)"
+  - "wiki/master/C2A2_master_wiki.md (FLAG-009 Wolfram x Friston — computational irreducibility forces approximate inference, Confidence High)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-20 call-and-vocation into covenanted purpose, Confidence Medium-High); Wright, Paul and the Faithfulness of God"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-37 the two-halves-of-life transition mechanism, Confidence Medium); Rohr, Falling Upward"
+evidence_strength_summary: "Empirical: the cross-cultural robustness of deep moral priors; McGilchrist's hemispheric neuroscience (Confidence High in the register); the descriptive variability of natural-law applications across cultures. Formal: computational irreducibility as a general result; the register's own application of it to agency is graded Medium and marked (Implicit). Speculative: the deeper-pattern claim, the interface-theoretic reading of why natural law generalizes, and the predictive-processing account of moral cognition specifically."
+length_ratio_to_target: 1.368
+length_note: "ESCALATED 2026-08-30 — read this before treating the ratio as a defect in the prose. The pre-edit stored figure was 1644 and the true pre-edit count was 1644: error 0, an honest count, verified by two agreeing methods. This run's criterion-(d) repair carried it to 2052 / 1.368, outside ±25%, and every added word is citation anchoring: five bridge ids were pointing at records that do not hold the cited content (FLAG-02/05/09 are Levin×Friston, Stump×Levin and Wolfram×Friston respectively, not Hoffman, Friston and McGilchrist; Wolfram PRS-03 is 'Research agenda extensions', not computational irreducibility), each replacement carries its record's own Confidence grade, and one claim had no target at all and is now a recorded declination. Anchoring cost roughly 410 words across five bullets. SECOND AND SEPARATE POINT, which is the one worth Tom's attention: the short tier here is itself an artifact of upstream transcript drift. Day 108's transcript is inside the known 106-115 length-drift band — 1221 cleaned words against 2757 raw ASR words, 44%. At full ASR length the pair would be MEDIUM tier (2000-3500) with a 2200 target, and 2052 words would sit at ratio 0.93, comfortably in band. The tier was not retiered here, deliberately: retiering would paper over the transcript drift rather than record it. The ±25% breach is therefore a downstream reading of an upstream defect, not an over-written commentary."
 mind_first_reframe: "Natural law is the set of deep priors in the human cognitive-affective generative model — species-invariant interface-features that orient rational agents toward fitness-, flourishing-, and cooperation-relevant goods; human law is the locally-determined coordination scheme a community builds from those priors under specific historical conditions, irreducibly local per Wolfram-computational-irreducibility while bound to the natural-law alignment condition."
 central_theme_thread: "The natural-law interface gives every rational creature access to the deep prior pattern but in a species-specific format locally shaped by cultural and individual history; the work of perceiving the deeper pattern is the work of unmaking those local distortions, and the covenantal community is where the alignment-work is jointly undertaken — Wright's salvation-as-inclusion at its sharpest."
 tags: [synthesis, day/108, theme/natural-law-interface, theme/human-law-determination]
-last_qc_at: "2026-08-17T02:26:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-30T04:25:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 108 — Natural and Human Law (Contemporary)
@@ -39,13 +39,17 @@ The contemporary version: how can there be objective constraints on flourishing 
 
 ## Resource: interface-real natural law and convention-determined human law
 
-**Hoffman's interface theory** (FLAG-02): perception delivers fitness-tracking signals in a species-specific format. The interface is *invariant up to the species*: humans see roughly the same affordances; humans see them in a different format than bats or octopuses. This maps onto Q.94 a.4 with high precision. The general principles of natural law (first principle of practical reason; basic goods) are species-invariant features of the rational-creature interface. The specific conclusions vary because (a) they depend on local conditions the interface picks up, (b) cultural priors shape which signals get attended to, and (c) the same general principle can be cashed out into different local determinations.
+**Hoffman's interface theory** (PRS-03 in the Hoffman-tradition wiki, *Perception fitness-tracking*, Confidence High): perception delivers fitness-tracking signals in a species-specific format. The interface is *invariant up to the species*: humans see roughly the same affordances; humans see them in a different format than bats or octopuses. This maps onto Q.94 a.4 with high precision. The general principles of natural law (first principle of practical reason; basic goods) are species-invariant features of the rational-creature interface. The specific conclusions vary because (a) they depend on local conditions the interface picks up, (b) cultural priors shape which signals get attended to, and (c) the same general principle can be cashed out into different local determinations.
 
-**Friston's active inference** (FLAG-05): each agent has a generative model whose priors determine what counts as low-prediction-error behavior. Aquinas's natural law as "imprinted" on the human heart maps to: human cognitive architecture instantiates certain *deep priors* (pursuit-of-good, avoidance-of-harm, social-cooperation, fairness-sensitivity — all robust findings in moral psychology). These deep priors are species-invariant. Their *expressions* are shaped by local training distributions (cultures, traditions, life histories). This explains both the universality (deep priors are the same) and the variability (training distributions differ).
+**Friston's active inference** (PRS-04 in the Friston-tradition wiki, *the organism as active modeler* — predictive coding and the Bayesian brain, Confidence Medium and marked *(Implicit)*; the underlying free-energy formalism is PRS-01, Confidence High): each agent has a generative model whose priors determine what counts as low-prediction-error behavior. Aquinas's natural law as "imprinted" on the human heart maps to: human cognitive architecture instantiates certain *deep priors* (pursuit-of-good, avoidance-of-harm, social-cooperation, fairness-sensitivity — all robust findings in moral psychology). These deep priors are species-invariant. Their *expressions* are shaped by local training distributions (cultures, traditions, life histories). This explains both the universality (deep priors are the same) and the variability (training distributions differ).
 
-**McGilchrist's hemispheric asymmetry** (FLAG-09): the right hemisphere tracks relational, contextual, embedded patterns; the left tracks rule-following, decontextualized abstraction. Natural law operating *as recognition* of what is good in concrete situations is largely right-hemispheric; natural law operating *as systematized rule* (Aquinas's reductive move) is left-hemispheric. Both are needed; the right-hemispheric grasp is *prior* and is what the left-hemispheric system formalizes. Q.94 a.2's "first principle" is left-hemispheric formalization; the recognition itself runs deeper.
+**McGilchrist's hemispheric asymmetry** (PRS-01 in the McGilchrist-tradition wiki, *Hemispheric asymmetry and cultural impoverishment*, resourced on *The Master and His Emissary* and marked Confidence High): the right hemisphere tracks relational, contextual, embedded patterns; the left tracks rule-following, decontextualized abstraction. Natural law operating *as recognition* of what is good in concrete situations is largely right-hemispheric; natural law operating *as systematized rule* (Aquinas's reductive move) is left-hemispheric. Both are needed; the right-hemispheric grasp is *prior* and is what the left-hemispheric system formalizes. Q.94 a.2's "first principle" is left-hemispheric formalization; the recognition itself runs deeper.
 
-**Wolfram's computational irreducibility** (traditions/wolfram/wiki.md, PRS-03 in Tom's re-description): even with simple rules, the global behavior of a complex system is not predictable except by running the computation. This is the *human-law* point exactly: the natural-law general principles do not algorithmically determine what the human law should be; the local determinations are computationally irreducible from the general principles alone. Q.95 a.2's "every human law has just so much of the nature of law as it is derived from the law of nature; but if in any point it deflects from the law of nature it is no longer a law" gives the necessary alignment condition (the local determination must not contradict the deep prior) without claiming it can be derived.
+**Wolfram's computational irreducibility** (PRS-04 in the Wolfram-tradition wiki, *Computational irreducibility and agency* — "the only way to find out what will happen is to run the computation"; the record is marked *(Implicit)* and Confidence Medium): even with simple rules, the global behavior of a complex system is not predictable except by running the computation. This is the *human-law* point exactly: the natural-law general principles do not algorithmically determine what the human law should be; the local determinations are computationally irreducible from the general principles alone.
+
+The network already records this coupling: FLAG-009 in `master/C2A2_master_wiki.md` (Wolfram × Friston, Confidence High) runs the chain *irreducibility → forced approximation → free-energy minimization*. That is the formal reason human law must be *determined* rather than *deduced* — a legislating community has no shortcut and must run the computation historically. The read-across from competing agents to legislating communities is this commentary's; the flag itself says nothing about law.
+
+Q.95 a.2's "every human law has just so much of the nature of law as it is derived from the law of nature; but if in any point it deflects from the law of nature it is no longer a law" gives the necessary alignment condition (the local determination must not contradict the deep prior) without claiming it can be derived.
 
 ## Solution (proposed, speculative)
 
@@ -72,7 +76,7 @@ Human law is the *locally-determined coordination scheme* a community builds fro
 
 *Empirical*: Predictive-processing accounts of cognition are well-developed. The application to moral cognition is plausible but still under active research.
 
-*Formal*: Wolfram's computational irreducibility is a mathematical result with deep implications.
+*Formal*: computational irreducibility is a general result about computation, and firm as such. The step this entry actually leans on — irreducibility as a constraint on *agency* and on what a deliberating community can determine in advance — is the register's PRS-04, which is marked *(Implicit)* at Confidence Medium. The firmness of the underlying mathematics should not be read forward onto the application; the wiki does not grade it that way.
 
 *Speculative*: The interpretation of *deep priors* as Aquinas's "natural law imprinted on the heart" is a translation between vocabularies; the metaphysical commitments are not identical (the monist reading dispenses with a separate divine intellect "doing the imprinting"; the prior is intrinsic to the structure of mind-at-large as instantiated in human cognitive architecture).
 
@@ -88,13 +92,13 @@ The "work out your salvation in fear and trembling" (Phil 2:12) attaches here to
 
 ## Bridges
 
-- **FLAG-02 (Hoffman interface theory)**: natural law as species-invariant interface; cultural variation as interface-layer noise. *Formal + interpretive*.
-- **FLAG-05 (Friston active inference)**: deep moral priors + local training distributions = universality + variability. *Empirical/formal*.
-- **FLAG-09 (McGilchrist hemispheric asymmetry)**: relational/contextual grasp underlies rule-formalization. *Empirical*.
-- **PRS-03 (Tom's re-description of the Wolfram-tradition wiki on computational irreducibility)**: human law is irreducibly local determination of general principles. *Formal*.
-- **CROSS-08 (master wiki on emergent norms in agent systems)**: stable coordination schemes emerge from local interaction under shared deep priors. *Computational/anthropological*.
-- **Wright, *Paul and the Faithfulness of God***: Israel as the covenant locus where natural-law access is being healed and extended. *Exegetical/theological*.
-- **Rohr, *Falling Upward***: first-half-of-life is the loading of the rule-system; second-half is the recognition that rules are scaffolding for love. *Developmental-spiritual*.
+- **Hoffman PRS-03 — *Perception fitness-tracking*** (`traditions/hoffman/prs_triplets.md`): the Interface Theory of Perception; natural law as species-invariant interface, cultural variation as interface-layer shaping. *(Confidence High; the natural-law read-across is this commentary's.)*
+- **Friston PRS-04 — *the organism as active modeler*** (`traditions/friston/prs_triplets.md`): deep moral priors + local training distributions = universality + variability. *(Marked (Implicit), Confidence Medium; PRS-01's free-energy formalism is High, but neither record grades the moral-cognition application.)*
+- **McGilchrist PRS-01 — *Hemispheric asymmetry and cultural impoverishment*** (`traditions/mcgilchrist/prs_triplets.md`): relational grasp underlies rule-formalization; the right hemisphere primary, the left parasitic on what it first discloses. *(Confidence High.)*
+- **Wolfram PRS-04 — *Computational irreducibility and agency*** (`traditions/wolfram/prs_triplets.md`): human law is irreducibly local determination, because there is no shortcut but running the computation. *(Marked (Implicit), Confidence Medium.)*
+- **FLAG-009 — Wolfram × Friston** (`master/C2A2_master_wiki.md`): irreducibility → forced approximation → free-energy minimization. *(Confidence High in the flag; the extension to legislating communities is this commentary's.)* **Declination:** an earlier draft cited a cross-program record for "emergent norms in agent systems." No such entry exists — `master/cross_program_index.md` was searched in full through CROSS-107 — and CROSS-008, the id then named, is the Stump × Levin final-causality entry whose stronger form was *withdrawn* on 2026-08-10. The emergent-coordination claim is therefore carried here **unanchored in the wiki**, as this commentary's own.
+- **Wright PRS-20 — call-and-vocation into covenanted purpose** (`traditions/wright/prs_triplets.md`; *Paul and the Faithfulness of God* behind it): Israel as the covenant locus where natural-law access is healed and extended; the record itself ties call-and-vocation to perspective-limitation. *(Confidence Medium-High; searched across the register's forty-one triplets, PRS-01 to PRS-41.)*
+- **Rohr PRS-37 — the two-halves-of-life transition mechanism** (`traditions/rohr/prs_triplets.md`; *Falling Upward*): first-half is the loading of the rule-system, second-half the recognition that rules scaffold love. *(Confidence Medium; searched across the register's forty-four triplets, PRS-01 to PRS-44.)*
 
 ## Where this leaves us
 

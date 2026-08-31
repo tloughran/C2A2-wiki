@@ -15,7 +15,7 @@ fetched_at: 2026-05-15
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-096 - Fruits and Vice - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-17T10:28:58"
+last_qc_at: "2026-08-29T22:29:59"
 last_qc_outcome: "pass"
 tags: [summa, day/096, pars/I-II, q/70, q/71]
 ---

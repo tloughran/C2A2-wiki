@@ -10,14 +10,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-09 minimal theory of consciousness in active inference)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 the form's command of its matter)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing; PRS-04 embodied love as epistemology)"
-evidence_strength_summary: "The 'sensation as reception of form/information without material residue' reading is interface-theoretic and predictive-coding-based (Hoffman formal-to-speculative; Friston formal); 'soul's command of matter perfected = impassibility' is conceptual; the non-dual purified-perception register is theological (Rohr); the qualities of glorified bodies remain theological projection."
+evidence_strength_summary: "The 'sensation as reception of form/information without material residue' reading is interface-theoretic and predictive-coding-based (Hoffman formal-to-speculative; Friston formal at PRS-09, but PRS-04 is (Implicit)/Medium and carries only the base case); 'soul's command of matter perfected = impassibility' is conceptual; the non-dual purified-perception register is theological (Rohr); the qualities of glorified bodies remain theological projection."
 length_note: "Runs ~27% under the short tier (1088 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
 length_ratio_to_target: 0.73
 mind_first_reframe: "Glorified sensation is the perceptual interface purified — receiving the *form* of its object without the disordering material passion; impassibility is the limit-case of the form's complete command of its matter, not the body's numbness."
 central_theme_thread: "A perfected perspective receives more of the whole with less distortion: the glorified senses take in the form of things without the self-obscuring passivity that limited perception imposes — perspective-limitation lifted at the level of perception itself."
 tags: [synthesis, day/298, theme/glorified-perception-as-the-interface-purified]
-last_qc_at: "2026-08-11T22:30:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-30T06:36:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 298 — Heavenly Senses (Contemporary Parallel)
@@ -45,7 +45,7 @@ A perfected perspective is one that receives *more* of the whole with *less* dis
 ## Bridges
 
 - **Hoffman PRS-03 / PRS-04 (formal-to-speculative; load-bearing):** perception as reception of form/information through an interface — "color without the matter" is an interface picture.
-- **Friston PRS-04 / PRS-09 (formal):** impassibility as the limit-case of an active model informed without destabilization — reception without disorder.
+- **Friston PRS-09 (formal):** impassibility as the limit-case of an active model informed without destabilization — reception without disorder. **PRS-04** (*organism as active modeler*) supplies the active-modelling base case only; its record is *(Implicit)* / **Medium**, so the formal weight rests on PRS-09 and not on it.
 - **Levin PRS-01 (empirical figure):** impassibility as the form's complete command of its matter, not numbness.
 - **Rohr PRS-01 / PRS-04 (theological):** glorified perception as healed, non-dual seeing — receiving the known without grasping or distortion.
 

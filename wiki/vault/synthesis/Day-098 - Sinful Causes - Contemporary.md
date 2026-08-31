@@ -3,21 +3,21 @@ day: 98
 title: Sinful Causes (Contemporary)
 pairs_with: "[[Day-098 - Sinful Causes]]"
 length_target_words: 1500
-length_actual_words: 1849
+length_actual_words: 2060
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/friston/wiki.md (PRS-04 organism as active modeler; precision-weighting; predictive coding)"
+  - "traditions/friston/prs_triplets.md PRS-01 (Free Energy Principle, High) + PRS-06 (multi-agent coherence, Medium) — PRS-04 (Implicit/Medium) retained as framing vocabulary only, not as a formal warrant"
   - "traditions/hawkins/prs_triplets.md (PRS-01 HTM as world-modelling cortical architecture; attention-allocation half declined — no target id, radius PRS-05/PRS-14 searched)"
   - "traditions/stump/wiki.md + prs_triplets.md (PRS-09 cooperative-causality account of virtue)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control — bioelectric target states as the regulating signal)"
 evidence_strength_summary: "The reason-as-seat-of-mortality and morose-delectation analyses are philosophical (Aquinas + interpretive bridging). Friston/Hawkins on precision-attention as substrate of voluntary cognition are formal-empirical (high). The privation-with-positive-cause structure is metaphysical-medieval but converges with control-theoretic regulator-failure accounts (medium)."
-length_ratio_to_target: 1.233
-length_note: "Covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 causes, 4 articles) including the privation-with-positive-cause keystone; the four-causal-modes re-description is substantive linkage, not padding."
+length_ratio_to_target: 1.373
+length_note: "RECOUNTED 2026-08-29 by the project method (split on the first horizontal-rule separator followed by YAML keys; auto-linked Related-records footer excluded). Stored 1849 / 1.233 understated a true pre-pass body of 1947 / 1.298; this pass's Friston PRS-01/PRS-06 anchor and McGilchrist PRS-05 grade added a measured 113 words -> 2060 / 1.373. Outside +/-10% but inside +/-25%, so informational. Substantive case: covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 causes, 4 articles) including the privation-with-positive-cause keystone; the four-causal-modes re-description is substantive linkage, not padding."
 mind_first_reframe: "Aquinas's architecture-level question (Q.74 powers of the soul / Q.75 internal-and-external causes of sin) recovers cleanly in a hierarchical active-inference frame: mortal sin lives in the will-and-reason coupling because only top-level priors re-target the whole policy stack; morose delectation is precision-on-attention (what the agent attends to is what it becomes); the privation-with-positive-cause structure is regulator-failure (the act has full positive being while its disorder traces to the absence of the directing signal); and one sin causes another by removing the high-precision integrating prior that suppressed further failure."
 central_theme_thread: "Q.75 a.4's indirect-efficient mode — one sin causes another by removing the protective state — is the central theme's mechanism for cumulative decoupling: the protective state is the high-precision integrating prior (charity / loving unity), the prior that couples the agent's policy to the wider conscious-agent network. Once removed, further failures follow naturally because nothing now suppresses them; the agent that was one under reason / charity becomes plural under unintegrated appetites."
 tags: [synthesis, day/098, theme/will-and-faculty, theme/attention-as-action]
-last_qc_at: "2026-08-17T22:27:37"
+last_qc_at: "2026-08-29T22:29:59"
 last_qc_outcome: "rewrote"
 ---
 
@@ -69,9 +69,9 @@ The deepest hit today is Q.75 a.4's *indirect efficient* mode — *one sin cause
 
 ## Bridges
 
-- **PRS-04 + PRS-06 in the Friston-tradition wiki** (organism as active modeler; multi-agent coherence). Formal/empirical. Pairs with Q.74 a.4 — mortal sin as top-of-stack mis-alignment.
+- **`traditions/friston/prs_triplets.md` PRS-01 (the Free Energy Principle — variational free-energy minimization as a unified, empirically testable framework, **High**) + PRS-06 (multi-agent coherence via mutual modeling, **Medium**).** PRS-01 is the record carrying the formalism the hierarchical-stack argument leans on; PRS-06 carries the coupling-to-the-wider-network claim, at Medium. *Not PRS-04:* "Organism as active modeler" is *(Implicit)* / **Medium** and states predictive coding without deriving it, so it cannot carry a formal/empirical badge — it is retained only as framing vocabulary. Pairs with Q.74 a.4 — mortal sin as top-of-stack mis-alignment.
 - **PRS-01 in the Hawkins-tradition wiki** (Hierarchical Temporal Memory as a cortical architecture that genuinely models the world). Empirical. Pairs with Q.74 a.6 for the *architecture* half of morose delectation. The *attention-allocation* half is cited to the Hawkins corpus rather than to an id: the Hawkins register carries no triplet for precision-on-a-single-trace deepening into a prior — the nearest candidates are PRS-05 (temporal-sequence prediction) and PRS-14 (broadened attention as reference-frame multiplicity, and expressly Fredrickson-coupled), neither of which is the morose-delectation claim.
-- **PRS-05 in the McGilchrist-tradition wiki** (attention as ontological act). Empirical-philosophical. Pairs with Q.74 a.5-6.
+- **PRS-05 in the McGilchrist-tradition wiki** (attention as ontological act — *Implicit* / **Medium**; the record's own Solution offers itself as compatible with Friston's precision-weighting, which is the bridge this day makes). Philosophical, at Medium — the *high* confidence claimed in the Resource section above belongs to the Hawkins and Friston limbs of that convergence, not to this one. Pairs with Q.74 a.5-6.
 - **PRS-09 in the Stump-tradition wiki** (cooperative-causality account of virtue). Analytic-theological. Pairs with Q.75 a.4 indirect-efficient mode.
 - **PRS-01 in the Levin-tradition wiki** (morphogenetic control — bioelectric circuits encode anatomical target states; membrane voltage as morphogenetic memory). Empirical (high) on the bioelectric target-state; metaphysical bridging on the privation-with-positive-cause structure (medium). The target state *is* the regulating signal whose absence the privation names.
 

@@ -3,13 +3,13 @@ day: 172
 title: Vengeance & Truthfulness (Contemporary)
 pairs_with: "[[Day-172 - Vengeance and Truthfulness]]"
 length_target_words: 1500
-length_actual_words: 1148
+length_actual_words: 1532
 length_tier: short
-length_ratio_to_target: 0.77
-length_note: "Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution."
+length_ratio_to_target: 1.021
+length_note: "Deliberately compact: Q.108 and Q.109 are two brief questions whose PRS treatment completes without padding; short-and-substantive preferred per constitution. CORRECTED 2026-08-30 QC: the stored count of 1148 was stale by ~300 words and the declared 0.77 was never true after the 08-19 unbundling pass. A body recount reads 1452 before this pass and 1532 after — ratio 1.021, comfortably in band. The 'deliberately compact' framing above was written for the original draft and no longer describes the file; it is retained because the reason it gives is still the right one, but the number it was defending was wrong. This pass added ~80 words scoping McGilchrist PRS-01."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; honest signaling; cooperation maintenance)"
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry; grasping vs relational attention)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry and cultural impoverishment; the grasping-vs-relational reading of the corrector's disposition is this commentary's extension, not the record's scope)"
   - "traditions/levin/prs_triplets.md (PRS-17 bioelectricity as cognitive glue constituting a collective knower; PRS-18 cancer as a decision problem for the cell collective)"
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan / non-propositional second-person knowledge)"
   - "Stump canonical: medicinal punishment in the Thomistic tradition — no PRS-form record of this in the wiki; cited to the work, not to an id"
@@ -19,7 +19,7 @@ evidence_strength_summary: "Altruistic punishment and cooperation maintenance ar
 mind_first_reframe: "Vengeance and truthfulness are the two guardians of a cooperative model among limited agents: correction of defection as bounded delegation ordered to restoration, and honest self-disclosure as the signal-integrity that keeps mutual models calibrated."
 central_theme_thread: "Loving unity is computed by perspective-limited agents who must both correct defection and disclose themselves honestly; vengeance-as-passion and deception each refuse the cooperative structure and fracture the shared computation."
 tags: [synthesis, day/172, theme/correction-signals, theme/honest-signaling, q/108, q/109]
-last_qc_at: "2026-08-19T02:28:23"
+last_qc_at: "2026-08-30T16:24:01"
 last_qc_outcome: "rewrote"
 ---
 
@@ -58,7 +58,7 @@ Loving unity is computed by perspective-limited agents who must both correct def
 ## Bridges
 
 - **Friston PRS-06** (multi-agent coherence via mutual modeling) — truthfulness as signal-integrity; deception as model-corruption. *(Implicit), Medium in the wiki — a reconstruction of the multi-agent extension rather than a derived result, so the active-inference half of this bullet is a well-posed framing, not a finding.* The separate empirical claim in this section — that cooperation in large groups is sustained by costly altruistic punishment — comes from the experimental game-theory literature, not from this entry, and is genuinely empirical. The two should not be read as one body of support.
-- **McGilchrist PRS-01** (grasping vs relational attention) — the line between vengeance-as-possession and vengeance-as-restorative-justice. *Empirical.*
+- **McGilchrist PRS-01** (hemispheric asymmetry and cultural impoverishment) — the line between vengeance-as-possession and vengeance-as-restorative-justice. *High in the wiki, and the lateralization neuroscience it rests on is empirical — but the record's own scope is a claim about modern Western culture operating in a left-hemisphere mode, not about punishment. Reading the grasping/relational contrast onto the corrector's disposition toward the wrongdoer is this commentary's extension of the record, not something the record contains; McGilchrist's cultural thesis about the lateralization data is itself his interpretation. Grade High, scope narrower than the use made of it here.*
 - **PRS-17 + PRS-18 in the Levin-tradition wiki** (bioelectricity as the cognitive glue constituting a collective knower above the level of the single cell; cancer reframed as a *decision problem* for that collective rather than a purely genetic failure) — the biological instance of the day's structure: a member whose goal-state has come apart from the collective's, and a correction aimed at restoring the shared target rather than at destroying the member. *Empirical.*
 - **PRS-11 in the Stump-tradition wiki** (Franciscan knowledge — non-propositional, second-person) — truthfulness as self-giving-to-be-known rather than as accurate report. *Philosophical.*
 - **Stump on medicinal punishment (cited to the work, not to an id)** — punishment ordered to the good of the one corrected. The C2A2 Stump wiki has no PRS-form record of this; PRS-05 is suffering-and-divine-permission, which is an adjacent but distinct claim, so no id is asserted here. *Philosophical.*

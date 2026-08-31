@@ -6,7 +6,7 @@ title: Paradise Lost
 summa_ref: Secunda Secundae (II-II), Q.164-165
 duration_seconds: 497
 word_count: 1403
-raw_asr_word_count: 1404
+raw_asr_word_count: 1398
 length_tier: short
 segment_count: 206
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-200 - Paradise Lost - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/200, pars/II, q/164, q/165]
-last_qc_at: "2026-08-07T20:23:57"
+last_qc_at: "2026-08-30T20:25:07"
 last_qc_outcome: "pass"
 ---
 

@@ -9,7 +9,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating across developmental stages)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; positive-affect scaffolding)"
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 rule-following vs. relational integration)"
-  - "wiki/master/C2A2_master_wiki.md (CROSS-04 developmental sequencing in cognitive maturation)"
+  - "wiki/master/cross_program_index.md (searched 2026-08-30: no CROSS entry records developmental sequencing in cognitive maturation; the claim is carried by the developmental-psychology literature, not by a register node)"
   - "Wright, Paul and the Faithfulness of God (Israel as norming-norm; covenant vocation)"
   - "Wright, The Resurrection of the Son of God (covenant fulfillment)"
   - "Rohr, Falling Upward (developmental stages of moral / spiritual life)"
@@ -18,8 +18,8 @@ length_ratio_to_target: 1.079
 mind_first_reframe: "The Old Law is the developmental curriculum through which an agent-community (Israel) and through it humanity is brought from natural-law-only-access (impaired by fomes) toward grace-enabled charity — external rules training pattern-recognition that natural-law access alone could not reliably deliver, temporal goods meeting agents at their current motivational state (Fredrickson broaden-and-build), prophetic typology training pattern-recognition (Hoffman interface), friendship-as-likeness as the telos."
 central_theme_thread: "Perspective-limitation is not just an obstacle but the condition under which developmental staging makes sense — an agent at New-Law level does not need the Old Law; an agent at fomes-dominated post-Fall level cannot receive the New Law directly; the staged sequence is the path by which limited perspectives are brought into closer alignment with the loving-unity telos under the resources available."
 tags: [synthesis, day/110, theme/covenantal-pedagogy, theme/developmental-stages]
-last_qc_at: "2026-08-17T02:27:09"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-30T14:29:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 110 — The Old Law (Contemporary)
@@ -98,7 +98,7 @@ The Wright-Rohr-monist synthesis here is unusually clean: Wright provides the *c
 - **FLAG-05 (Friston, developmental priors updating)**: Old Law as curriculum for stage-dependent generative-model formation. *Empirical/formal*.
 - **FLAG-11 (Fredrickson, broaden-and-build)**: temporal-goods pedagogy meets agents at their current affect. *Empirical*.
 - **FLAG-09 (McGilchrist, hemispheric scaffolding)**: rule-system as left-hemispheric scaffold for right-hemispheric integration. *Empirical*.
-- **CROSS-04 (master wiki, developmental sequencing)**: stage-dependent learning across cognitive maturation. *Cross-disciplinary empirical*.
+- **Developmental-staging literature (no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30 and records no entry for stage-dependent moral maturation)**: stage-dependent learning across cognitive maturation. *Cross-disciplinary empirical*.
 - **Wright, *Paul and the Faithfulness of God***: Israel's covenant vocation as norming-norm. *Exegetical/theological*.
 - **Wright, *The Resurrection of the Son of God***: covenant fulfillment as the telos of the developmental staging. *Exegetical/theological*.
 - **Rohr, *Falling Upward***: first-half-of-life rule-acquisition as scaffold. *Developmental-spiritual*.

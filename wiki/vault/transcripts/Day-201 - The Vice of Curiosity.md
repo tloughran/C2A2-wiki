@@ -6,7 +6,7 @@ title: The Vice of Curiosity
 summa_ref: Secunda Secundae (II-II), Q.166-167
 duration_seconds: 367
 word_count: 1037
-raw_asr_word_count: 1037
+raw_asr_word_count: 1031
 length_tier: short
 segment_count: 156
 caption_kind: asr
@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-201 - The Vice of Curiosity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/201, pars/II, q/166, q/167]
-last_qc_at: "2026-08-16T00:25:50"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-30T20:25:24"
+last_qc_outcome: "pass"
 ---
 
 # Day 201 — The Vice of Curiosity

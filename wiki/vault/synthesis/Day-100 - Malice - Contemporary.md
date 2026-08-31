@@ -3,7 +3,7 @@ day: 100
 title: Malice (Contemporary)
 pairs_with: "[[Day-100 - Malice]]"
 length_target_words: 1500
-length_actual_words: 2157
+length_actual_words: 2717
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 union as final cause of permitted suffering; PRS-08 second-personal narrative knowledge of suffering)"
@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 the Universal Christ)"
   - "traditions/wright/prs_triplets.md (PRS-11 hope as the renewal of creation through God's arrival)"
 evidence_strength_summary: "The trichotomy ignorance/passion/malice and the privation-in-the-act analysis are textual-philosophical (high). Friston-style policy-malice modeling is formal but interpretive (medium). The hardness-of-heart-as-just-withdrawal account requires theological vocabulary that mind-monism preserves only partially (medium). Wright + Rohr on cosmic-scope ordering of evil are theological (high within their frames)."
-length_ratio_to_target: 1.438
-length_note: "Covers two questions (Q.78 malice and the metaphysical-keystone Q.79 on whether God is a cause of sin, including the cosmic-scope ordering of evil) at the Day-100 milestone; the over-length is substantive linkage on one of the Prima Secundae's highest-altitude articles, not padding."
+length_ratio_to_target: 1.811
+length_note: "Covers two questions (Q.78 malice and the metaphysical-keystone Q.79 on whether God is a cause of sin, including the cosmic-scope ordering of evil) at the Day-100 milestone; the over-length is substantive linkage on one of the Prima Secundae's highest-altitude articles, not padding. RECOUNT 2026-08-30, two independent methods agreeing: 2717 / 1.811, against a stored 2157 / 1.438. The 560-word gap is the LARGEST understatement of length_actual_words recorded on this project to date (20.6 percent), and it is load-bearing rather than cosmetic - the stored figure put the day just inside the escalation boundary while the true figure is well outside it. Nothing was added to this body by the 2026-08-30 QC pass; the citation frame verified clean and was not edited, so the entire gap is pre-existing measurement error, not repair drift. Tier verified CORRECT (transcript 798 cleaned words, short tier is <2000); do not retier. Escalated on length, not rewritten."
 mind_first_reframe: "Aquinas's trichotomy of sin's causes (ignorance / passion / malice) recovers as three distinct failure modes in a hierarchical active-inference agent: model error (ignorance), precision error (passion), and policy mis-alignment (malice — model and precision intact, but the policy itself selects the disordered outcome because it dominates on some other dimension). Q.79 a.2's act/defect structure is regulator-failure raised to its theological maximum: the act traces to the integrating field of all positive being, the defect traces to the agent's voluntary decoupling. Q.79 a.4's cosmic-scope ordering of evil names the limit-perspective in which every local disorder is contained and re-ordered."
 central_theme_thread: "Day 100 states the central theme from the terminal end. The cosmic-scope perspective — the limit-perspective at which all limitations are removed and the simple whole is seen — contains every limited perspective and re-orders every local disorder (Q.79 a.4: every evil is ordered to some good in the universe-scope frame). The forward statement of the central theme says perspective-limitation individuates conscious agents and loving unity is the computational telos; stated backward, every limited perspective is contained in the loving unity that perceives the whole. Wright on new-creation and Rohr on the Universal Christ name this pattern theologically; the mind-monism frame names it formally but does not yet derive its goodness."
 tags: [synthesis, day/100, theme/malice-as-policy-not-capture, theme/cosmic-ordering, milestone/day100]
-last_qc_at: "2026-08-18T06:27:24"
+last_qc_at: "2026-08-30T00:24:16"
 last_qc_outcome: "rewrote"
 ---
 

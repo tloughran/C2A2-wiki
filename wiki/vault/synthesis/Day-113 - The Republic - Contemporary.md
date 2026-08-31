@@ -12,14 +12,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 left- and right-hemispheric political cognition)"
   - "wiki/traditions/wolfram/wiki.md (PRS-03 computational irreducibility; emergent structure)"
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; legitimate-authority signal)"
-  - "wiki/master/cross_program_index.md (CROSS-14 institutional design under bounded rationality)"
+  - "wiki/master/cross_program_index.md (searched 2026-08-30: no CROSS entry records institutional design under bounded rationality; the claim rests on the public-choice and constitutional-economics literature, not on a register node)"
   - "Wright, Paul and the Faithfulness of God (Pauline political theology)"
   - "Rohr, The Universal Christ (non-violence; the cosmic Christ frame on conflict)"
 mind_first_reframe: "Institutional design under perspective-limitation: distributed structures that integrate many limited perspectives lower variance and approximate the common good better than concentrated power, which presupposes a perspective-rich ruler who is empirically rare."
 central_theme_thread: "No single perspective can see the common good fully, so the loving-unity telos is approached in the social-institutional space by mixed structures that allow many limited perspectives to inform one another — the Trinitarian relational archetype, instantiated politically."
 evidence_strength_summary: "Empirical: institutional-design work in political science and public choice on diffused power; psychology on cognitive limits of single rulers. Formal: mechanism-design and multi-agent inference. Theological: covenant-political theology. Hard: herem texts deserve theological work beyond what the host's harmonization supplies."
-last_qc_at: "2026-08-17T02:27:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-30T14:30:16"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/113, theme/mixed-form, theme/institutional-design]
 ---
 
@@ -49,7 +49,7 @@ The shared problem: how to organize *coercive* authority within a community such
 
 **Hoffman's interface theory** (FLAG-02): legitimate authority is a *signal* in the political interface — it tracks something real (the community's coordination needs and its members' deep priors) but is not the same as the underlying reality. Communities can mis-recognize legitimacy; legitimacy can be transferred, lost, or restored. Q.105 a.5's "even foreigners are subject to higher powers" is the recognition that the legitimacy signal can extend across community boundaries.
 
-**CROSS-14 (master wiki on institutional design under bounded rationality)**: public-choice theory, mechanism-design, and constitutional economics have independently arrived at structurally similar conclusions to Q.105 a.1. Concentrated power is high-variance under bounded-rationality conditions: when the concentrated ruler is virtuous, results are excellent; when not, results are catastrophic. Distributed power has lower variance and higher mean under realistic conditions where rulers are not reliably virtuous. Aquinas's prudential argument is the medieval formulation of this empirical-economic insight.
+**Institutional design under bounded rationality** (public-choice and constitutional-economics literature; no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30): public-choice theory, mechanism-design, and constitutional economics have independently arrived at structurally similar conclusions to Q.105 a.1. Concentrated power is high-variance under bounded-rationality conditions: when the concentrated ruler is virtuous, results are excellent; when not, results are catastrophic. Distributed power has lower variance and higher mean under realistic conditions where rulers are not reliably virtuous. Aquinas's prudential argument is the medieval formulation of this empirical-economic insight.
 
 ## Solution (proposed, speculative)
 
@@ -94,7 +94,7 @@ This is the central-theme claim in its political-theological form: *the loving-u
 - **FLAG-09 (McGilchrist hemispheric integration)**: mixed institutional form as analog of integrated cognition. *Empirical/interpretive*.
 - **PRS-03 (Tom's re-description of the Wolfram-tradition wiki, computational irreducibility)**: local institutional design is irreducibly local. *Formal*.
 - **FLAG-02 (Hoffman interface theory, legitimate authority as signal)**: authority-recognition as a signal that tracks but is not identical with deeper coordination realities. *Formal/interpretive*.
-- **CROSS-14 (master wiki, institutional design under bounded rationality)**: variance-reduction properties of distributed power. *Empirical cross-disciplinary*.
+- **Institutional design under bounded rationality (public-choice / constitutional economics; no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30)**: variance-reduction properties of distributed power. *Empirical cross-disciplinary*.
 - **Wright, *Paul and the Faithfulness of God***: Pauline political theology of authority under Christ's lordship. *Exegetical/theological*.
 - **Rohr, *The Universal Christ***: cosmic-Christ frame applied to community and conflict. *Contemplative-theological*.
 

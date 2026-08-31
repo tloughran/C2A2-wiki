@@ -13,14 +13,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model priors; grace as imported prior)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; intrinsic-motivation dynamics)"
-  - "wiki/master/cross_program_index.md (CROSS-11 intrinsic vs. extrinsic motivation across traditions)"
+  - "wiki/master/cross_program_index.md (searched 2026-08-30: no CROSS entry records intrinsic vs. extrinsic motivation; the claim rests on self-determination theory and the wider motivation literature, not on a register node)"
   - "Wright, Paul and the Faithfulness of God (indwelling Spirit; new-creation theology)"
   - "Rohr, The Universal Christ (Christ as eternal pattern; sacramental ontology)"
 mind_first_reframe: "The new law is not text but indwelling pattern — the imported, recalibrating prior-update that rewrites the agent's generative model so the loving-unity end becomes the spontaneous, intrinsic prior rather than an externally enforced constraint."
 central_theme_thread: "The agent cannot bootstrap from perspective-limited resources into charity; the new law is the import of priors from outside the agent that makes loving-unity intrinsically motivating, dissolving the interior/exterior dichotomy under mind-monism."
 evidence_strength_summary: "Empirical: self-determination theory on intrinsic motivation, broaden-and-build, developmental moral psychology. Theological: Pauline pneumatology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Trinitarian pneumatology."
-last_qc_at: "2026-08-17T02:27:11"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-30T14:30:17"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/114, theme/new-law-as-Spirit, theme/intrinsic-motivation]
 ---
 
@@ -50,7 +50,7 @@ This is the central problem the entire law-and-grace treatise has been building 
 
 **Fredrickson's broaden-and-build** (FLAG-11): intrinsic motivation produces broaden-and-build dynamics; extrinsic motivation under threat produces narrow-and-defend dynamics. Q.107 a.4's "the new law is a yoke that is easy" is the empirical claim: the agent who loves does not experience the same action as burdensome that the agent who fears does. Modern self-determination theory (Deci, Ryan) has empirically established this across domains.
 
-**CROSS-11 (master wiki on intrinsic vs. extrinsic motivation)**: multiple traditions converge on the finding that intrinsic motivation is more durable, more flexible, more generative, more cooperative, and more resistant to perturbation than extrinsic motivation. The medieval phrase is "law of love"; the contemporary phrase is "intrinsic motivation"; the underlying claim is the same.
+**Intrinsic vs. extrinsic motivation** (self-determination theory — Deci and Ryan — and the wider motivation literature; no C2A2 wiki node, `wiki/master/cross_program_index.md` searched 2026-08-30): multiple research literatures converge on the finding that intrinsic motivation is more durable, more flexible, more generative, more cooperative, and more resistant to perturbation than extrinsic motivation. The medieval phrase is "law of love"; the contemporary phrase is "intrinsic motivation"; the underlying claim is the same.
 
 **Wright's Pauline pneumatology** (*Paul and the Faithfulness of God*): Paul's theology of the Spirit is not "an extra moral resource" added to a complete agent — it is the *constitutive* presence by which the covenant community lives. Rom 5:5 ("God's love has been poured into our hearts through the Holy Spirit") is the key text; Gal 5:22-23 (the fruit of the Spirit) is the corresponding behavioral description. The new law as Spirit-indwelling is not an exotic theological add-on; it is Paul's central claim about how the New Covenant differs from the Old.
 
@@ -107,7 +107,7 @@ Rohr's reading attaches: the agent's perspective limitation is *not* the ultimat
 - **FLAG-02 (Hoffman interface theory)**: indwelling Spirit as recalibration of the value-interface. *Formal / interpretive*.
 - **FLAG-05 (Friston active inference)**: new law as imported prior-update. *Empirical/formal*.
 - **FLAG-11 (Fredrickson broaden-and-build)**: love-driven engagement broadens; fear-driven compliance narrows. *Empirical*.
-- **CROSS-11 (master wiki, intrinsic vs. extrinsic motivation)**: intrinsic motivation is empirically more durable, flexible, and generative. *Cross-disciplinary empirical*.
+- **Intrinsic vs. extrinsic motivation (self-determination theory, Deci and Ryan; no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30)**: intrinsic motivation is empirically more durable, flexible, and generative. *Cross-disciplinary empirical*.
 - **Wright, *Paul and the Faithfulness of God***: Pauline pneumatology of indwelling Spirit. *Exegetical/theological*.
 - **Rohr, *The Universal Christ* and *Immortal Diamond***: cosmic-Christ as pattern, true-self as pattern-within-the-whole. *Contemplative-theological*.
 

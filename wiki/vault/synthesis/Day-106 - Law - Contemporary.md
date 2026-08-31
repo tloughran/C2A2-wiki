@@ -10,7 +10,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (morphogenetic field as eternal-form analog)"
   - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology; Thomistic final cause framing Levin's morphogenetic teleology)"
   - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific access to a deeper reality)"
-  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; dissociation)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 consciousness primary, matter its expression — the mind-as-primitive resource this entry uses; PRS-02 individual identity within monism / dissociation, which anchors the perspective-limitation thread)"
   - "wiki/traditions/friston/wiki.md (active inference; agents under generative models)"
   - "wiki/master/C2A2_master_wiki.md (cross-program convergence on form/pattern as causally real)"
   - "Wright, Surprised by Hope (law in service of new-creation vocation)"
@@ -20,7 +20,7 @@ length_ratio_to_target: 1.149
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-08-17T18:30:40"
+last_qc_at: "2026-08-30T14:29:46"
 last_qc_outcome: "rewrote"
 ---
 
@@ -46,7 +46,7 @@ The most important contemporary move available to this question is the recovery 
 
 **Hoffman's interface theory** (traditions/hoffman/wiki.md) cashes out the perspective-side: agents do not perceive the deeper reality directly; they perceive a species-specific *interface* — fitness-relevant signals organized in a format the agent can navigate. The natural law in Aquinas's account is *exactly* this: not the eternal pattern as such, but the eternal pattern *as accessible to rational creatures by their natural light*. Different agents see different interfaces; the pattern itself is invariant.
 
-**Kastrup's analytic idealism** (traditions/kastrup/wiki.md, PRS-02 on mind as primitive) supplies the metaphysical reframe Aquinas needs: the eternal law is *in the divine mind* not because mind is a privileged container but because mind is what reality fundamentally is. The pattern is mind-shaped because patterns *just are* mind-shaped. This dissolves the Cartesian worry about how a normative pattern could be real in a value-neutral universe.
+**Kastrup's analytic idealism** (`wiki/traditions/kastrup/prs_triplets.md`, PRS-01 — the hard problem answered by an inverted ontology in which consciousness is primary and matter its expression; recorded Explicit, Confidence High) supplies the metaphysical reframe Aquinas needs: the eternal law is *in the divine mind* not because mind is a privileged container but because mind is what reality fundamentally is. The pattern is mind-shaped because patterns *just are* mind-shaped. This dissolves the Cartesian worry about how a normative pattern could be real in a value-neutral universe.
 
 **Friston's active inference** (traditions/friston/wiki.md) supplies the agent-side dynamics. Each agent operates with a generative model of its world; behavior is the minimization of long-term prediction error against priors. The *fomes* is exactly what active inference predicts when an agent's priors are locally adapted to a corrupt training distribution: the agent will reliably pursue what locally minimizes prediction-error even when the locally-adapted priors are systematically miscalibrated relative to the deeper truth. Aquinas's "wounded nature" is a generative model whose priors have drifted from the true target distribution.
 
@@ -99,7 +99,7 @@ The *fomes* (Q.91 a.6) is the empirical fact that this is hard. The Levin/Fristo
 - **PRS-04 (Stump-tradition wiki — Tom's re-description of Stump on final causality)**: Aquinas's eternal-law-as-exemplar maps to final-cause-as-real. *Speculative* metaphysically; *empirical* in Levin's morphogenetic instantiation.
 - **Hoffman (species-specific interface)**: Natural law as interface-real. *Formal* mathematically; *interpretive* metaphysically.
 - **Friston (active-inference dynamics)**: *Fomes* as miscalibrated generative-model priors. *Empirical* in formal models; *speculative* as full account of moral psychology.
-- **PRS-02 (Kastrup, analytic idealism)**: Eternal law as structure of universal mind. *Theological/metaphysical*.
+- **PRS-01 (`wiki/traditions/kastrup/prs_triplets.md`, Kastrup — consciousness primary, matter its expression)**: the register supplies mind-as-primitive (Explicit, Confidence High); the further identification of the eternal law with the *structure* of that mind is this commentary's own extension, not a recorded claim. *Metaphysical resource empirically unforced; the eternal-law identification theological/interpretive*.
 - **Wright, *Surprised by Hope* (covenant theology of law)**: Old/New distinction as developmental stages of vocation. *Theological/exegetical*.
 - **Rohr, *Universal Christ***: Eternal Logos as cosmic pattern, eternal law non-dualistically. *Contemplative-theological*.
 

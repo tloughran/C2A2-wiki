@@ -6,7 +6,7 @@ length_target_words: 3000
 length_actual_words: 2796
 length_ratio_to_target: 0.932
 length_tier: long
-length_note: "Long-tier transcript (3715w) but Q.112-113's three articles consolidate around a single cooperation-architecture move (re-prioring belongs to the embedding system); commentary develops that move tightly across every required bridge without expanding into each article — padding would dilute. Ratio rose from 0.68 to 0.932 in the 2026-08-17 QC pass, entirely from anchoring three previously id-less Resource paragraphs and bridge bullets against the Friston/Hoffman/Kastrup registers; no prose argument was added or expanded. This is the recorded cost of citation repair on an under-length file (~30-60 words per bullet anchored), here landing the file inside tier tolerance rather than pushing it past it."
+length_note: "Long-tier transcript (3674 cleaned words, 3689 raw ASR — both measured 2026-08-30; the earlier note's 3715 matched neither) but Q.112-113's three articles consolidate around a single cooperation-architecture move (re-prioring belongs to the embedding system); commentary develops that move tightly across every required bridge without expanding into each article — padding would dilute. Ratio rose from 0.68 to 0.932 in the 2026-08-17 QC pass, entirely from anchoring three previously id-less Resource paragraphs and bridge bullets against the Friston/Hoffman/Kastrup registers; no prose argument was added or expanded. This is the recorded cost of citation repair on an under-length file (~30-60 words per bullet anchored), here landing the file inside tier tolerance rather than pushing it past it."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-04 final causality; PRS-05 suffering and divine permission)"
   - "traditions/friston/prs_triplets.md (PRS-23 nested generative models embedded in a group-level model, Confidence Medium; PRS-22 group-level Markov blanket makes 'one' and 'many' two consistent levels of description, Confidence High; PRS-08 morphogenetic active inference — cells as FEP agents with target morphologies as prior beliefs, Confidence Medium)"
@@ -21,7 +21,7 @@ evidence_strength_summary: "Prevenient grace claim: theological. Friston prior-s
 mind_first_reframe: "Aquinas's 'God alone causes grace' reads, under active-inference + mind-monism, as the architectural fact that an agent cannot install from inside its own prior a prior including the wider mind — that re-prioring belongs to the embedding system; agent/wider-mind cooperation is internal to one ground, not bilateral between two substances."
 central_theme_thread: "The cooperation architecture (prevenient grace, free will, first grace not meritable, subsequent merit real) is the central claim's working-out-of-salvation-in-fear-and-trembling: perspective-limitations real, resources installed from outside, the transcending still requires the agent's work."
 tags: [synthesis, day/117, theme/grace, theme/causation, theme/free-will]
-last_qc_at: "2026-08-17T04:22:21"
+last_qc_at: "2026-08-30T08:21:53"
 last_qc_outcome: "rewrote"
 ---
 

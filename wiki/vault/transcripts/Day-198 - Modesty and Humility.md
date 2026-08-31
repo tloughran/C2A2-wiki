@@ -6,7 +6,7 @@ title: Modesty & Humility
 summa_ref: Secunda Secundae (II-II), Q.160-161
 duration_seconds: 694
 word_count: 1864
-raw_asr_word_count: 1860
+raw_asr_word_count: 1857
 length_tier: short
 segment_count: 281
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-198 - Modesty and Humility - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/198, pars/II, q/160, q/161]
-last_qc_at: "2026-08-14T12:21:08"
+last_qc_at: "2026-08-30T20:24:47"
 last_qc_outcome: "pass"
 ---
 

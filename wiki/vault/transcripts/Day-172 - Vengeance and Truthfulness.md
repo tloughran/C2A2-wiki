@@ -6,7 +6,7 @@ title: Vengeance & Truthfulness
 summa_ref: "Secunda Secundae, Q.108-109"
 duration_seconds: 727
 word_count: 1981
-raw_asr_word_count: 1981
+raw_asr_word_count: 1971
 length_tier: short
 segment_count: 294
 caption_kind: asr
@@ -16,8 +16,8 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-172 - Vengeance and Truthfulness - Contemporary]]"
 tags: [summa, day/172, pars/II-II, q/108-109]
-last_qc_at: "2026-08-11T00:25:07"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-30T16:24:01"
+last_qc_outcome: "pass"
 ---
 
 # Day 172 — Vengeance & Truthfulness
