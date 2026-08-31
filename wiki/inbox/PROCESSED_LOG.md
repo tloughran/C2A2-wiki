@@ -814,3 +814,20 @@ record. See the run report for the standing fix.
 - PROP-2026-08-17-011 hawkins_grid-cell-module-overlap-brainstorm → hawkins PRS-29..PRS-30 (+2)
 - PROP-2026-08-17-012 hawkins_grid-place-cells-reference-frames → hawkins PRS-31..PRS-33 (+3)
 - PROP-2026-08-25-001 hawkins_tbt-2-0-arxiv-v2 → hawkins PRS-34..PRS-35 (+2)
+
+## 2026-08-29 — daily run
+- PROP-2026-08-12-010 levin_defining-life-conversation -> levin PRS-93..PRS-95 (+3) [2026-08-29; CROSS-104..CROSS-107; PRS-94 downgraded High->Medium on ingest, see levin/wiki.md]
+
+### Ledger backfill — adjudicated in tradition wiki.md, never logged here
+These were decided (mostly +0 duplicate / citation-upgrade) on their ingest day and recorded in the relevant `traditions/<key>/wiki.md` ingestion table, but not in this file, so `scripts/ingest_ledger.py` kept reporting them OPEN. Logging them here closes the phantom backlog; the adjudication text stays on the tradition page.
+- PROP-2026-05-16-002 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-06-25-004 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-07-06-003 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-07-27-001 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-07-27-003 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-07-28-002 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-07-29-002 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-08-08-001 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-08-11-002 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-08-12-001 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+- PROP-2026-08-12-011 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]

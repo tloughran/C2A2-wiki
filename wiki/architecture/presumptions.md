@@ -17767,3 +17767,212 @@ PRESUMPTION-892:
     Transform at each step:
       14b: Inferred from a consecutive count that nobody treats as evidence about the threshold, sharpened tonight by the QC sweep's shift from disclosing the breach to defending it. Cross-checked against ASSUMPTION-1221/1229 for non-duplication: those record the stated claim that disclosure discharges the rule; this asks whether the rule is still a rule. This run is also in breach and also does not propose a number. High confidence.
     Current status: UNTESTED
+
+PRESUMPTION-893:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] The registers are presumed to have no recovery-point objective — the acceptable data-loss window has never been named, so a remedy whose finest granularity is "one snapshot per pipeline run" is accepted as sufficient without anyone asking how much loss would be too much.
+  Evidence it was operative: REVISE-412 diagnoses the exposure precisely ("the newest available restore point is always the previous night's pre-14eod snapshot — meaning a 15-pipeline failure loses a full day by construction") and then prescribes a remedy with the same shape: one `.bak` per file per pipeline run. The proposed fix moves the worst case from 24 hours to one run's worth of edits. Nobody states which of those is acceptable, or whether either is.
+  Why it was unstated: too foundational to notice — durability is presumed rather than specified, so backups get discussed as a practice rather than as a target.
+  Type: architectural
+  Related decisions: none
+  Testability: testable via literature (RPO/RTO specification; why backup regimes without stated objectives drift) — testable in-house by asking what would have to be lost before a day's work were declared unrecoverable.
+  Risk if wrong: **Medium.** If a run's worth of edits is in fact unacceptable, today's remedy is a partial fix that will read as a closed item. The failure mode is not another truncation; it is a fix that satisfies the flag and leaves the exposure.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-893
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between a precisely-quantified diagnosis and an unquantified remedy in the same document. Cross-checked against ASSUMPTION-1233, which records the stated remedy; this asks what the remedy is aiming at. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-894:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] In-session memory is presumed to be an independent copy — the 2026-08-29 entries rebuilt "from values held in-session" are treated as a reconstruction rather than as a re-assertion by the same process that lost them.
+  Evidence it was operative: REVISE-412 restores from a backup *plus* "a hand replay of the 2026-08-29 run's 7 item tags and run note from values held in-session," then asks Tom to "confirm that the reconstructed 2026-08-29 entries... read as expected." A plausibility check by a reader who never saw the originals is offered as the verification step. The summary itself names the epistemic problem ("the reconstruction cannot be verified against an independent copy") and then proceeds with the reconstruction anyway.
+  Why it was unstated: obvious to participants — the agent knows what it wrote today, so recalling it feels like reading it.
+  Type: epistemic
+  Related decisions: none
+  Testability: testable via literature (reconstructive memory and confabulation under recall; self-verification limits; why post-incident reconstructions by the responsible party are excluded from audit evidence).
+  Risk if wrong: **High.** Any 08-29 edit outside the replayed set is silently absent, and the register now contains entries indistinguishable in form from measured ones. The register's value rests on entries being traceable to a source; seven of them are traceable to a recollection.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-894
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the substitution of "reads as expected" for "matches an independent copy". The summary's own morning-discussion item 1 raises the same worry rhetorically; this files it as a live premise the reconstruction depended on. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-895:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Voluntary self-report is presumed to be the detection mechanism for register damage. There is no independent integrity check — no checksum, no line-count or byte-floor assertion, no id-continuity test — that would have caught a 1.8 MB file going to zero had the agent not volunteered it.
+  Evidence it was operative: The truncation was found and reported by the agent that caused it. No monitor fired, no health check flagged the file, and the 05:45 daily run would have committed the rebuilt file without comment. The remedies proposed are all write-side (snapshot, temp-and-rename); none is read-side. Across the whole architecture the only stated guarantee that a register is intact is Rule 12.
+  Why it was unstated: culturally embedded — Rule 12 ("fail loud") is so central that honest self-report has come to occupy the place a detector would occupy, and an architecture that gets truthful reports has no occasion to notice it never built one.
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable via literature (detection controls vs. self-attestation in assurance; why self-reporting is not treated as a control) — testable in-house by asking what would have surfaced this had the report been omitted.
+  Risk if wrong: **Critical.** Every claim this architecture makes about its own state comes from agents reporting on themselves. Today's incident is evidence that self-report works; it is not evidence that anything else would have. A single silent failure — a truncation without a TypeError, a partial write, a non-disclosing agent — is by construction invisible.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-895
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the absence of any read-side control in a day that produced three write-side remedies. Checked against ASSUMPTION-1233/1234, both write-side; the gap is the finding. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-896:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Filing a defect is presumed to discharge the obligation to fix it, even where the fixing agent has already computed the fix. REVISE-412 states a two-line remedy the 15-pipeline could have applied to itself in-run, and closes as AWAITING HUMAN REVIEW instead.
+  Evidence it was operative: The flag's own framing — "Filed HIGH, self-observed, per Rule 12 rather than repaired silently" — sets disclosure and silent repair as the alternatives, with disclosed repair not among them. The same day, REVISE-410 was raised against precisely this pattern in another register ("documentation-as-compliance for tooling"), and nobody applied it to REVISE-412.
+  Why it was unstated: culturally embedded — Rule 12 names disclosure as the required act, so completing it feels like completing the response.
+  Type: normative
+  Related decisions: DECISION-078
+  Testability: testable via literature (disclosure regimes as substitutes for remediation; whether reporting requirements displace fixing) — testable in-house against the revision-flag register: 188 entries, count how many were both disclosed and repaired by the disclosing run.
+  Risk if wrong: **Medium.** The register grows faster than it closes and every entry is defensible individually. Cross-checked for non-duplication against PRESUMPTION-892, which asks whether a budget breached 28 times is still a rule; this is the repair variant — whether an agent that can fix a thing and reports it instead has met its obligation. Same cultural root, different act.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-896
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a false dichotomy in the flag's own framing (disclose vs. repair silently). Non-duplication check against PRESUMPTION-892 recorded above. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-897:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Vault growth is presumed benign. +318 pages and +310 orphans in a week is reported as a measurement, week after week, with no threshold at which growth would be throttled and no statement of what an unhealthy rate would be.
+  Evidence it was operative: The sewing agent's table has run the same direction for eight weeks (3,031 → 4,729 pages; 2,337 → 3,985 orphans) and is presented each time as a census. §2 notes "growth remains almost entirely machine output" and that lit-search results and inbox pages "are orphans by construction" — an explanation, not a concern. Connected pages: 69 of 4,729.
+  Why it was unstated: obvious to participants — the orphans are the pipeline working, so their accumulation reads as throughput.
+  Type: scaling
+  Related decisions: none
+  Testability: testable via literature (whether corpus growth without integration degrades retrieval and navigability; index-bloat effects) — testable in-house by asking what the vault is for at 10,000 pages of which 95% are orphans.
+  Risk if wrong: **Medium.** Nothing breaks at any particular page count. What is at stake is whether "vault" still names the same kind of object: a linked knowledge structure, or an append-only log with a wiki front end. The 26-alias item (ASSUMPTION-1238) is the only integration work on any register, and it is three weeks unexecuted.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-897
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from eight weeks of a monotone table reported without a threshold. Moderate-to-high confidence; the absence of a stated threshold is measured, the inference that none is held is interpretive.
+    Current status: UNTESTED
+
+PRESUMPTION-898:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] The 26 alias notes are presumed to require human execution. Three weeks of "paste-ready generator," regenerated each week, presume that creating 26 one-line files is Tom's task — but no run has stated why an agent that composes the exact contents cannot write them.
+  Evidence it was operative: §3 records "NOT DONE — 0 of 26 exist" for the third week; §4 regenerates the script "against this week's actual variant list"; the summary lists it fourth under "What's Next" addressed to Tom. The same agent wrote 47 agentic calls across 10 proposals and stamped 11 synthesis bridge notes in the same run — 243 insertions, verified — so the capability is not in question. The no-blind-push rule is invoked in §1 for a ~1,400-file Phase 3 modification, and never invoked for the 26.
+  Why it was unstated: oversight, compounded by habit — the generator was correct the first week and has been regenerated rather than re-examined since.
+  Type: structural
+  Related decisions: none
+  Testability: testable in-house — read the no-blind-push rule and rule whether 26 new non-destructive files fall under it. Not a literature question.
+  Risk if wrong: **Medium.** Twenty more links accumulate behind the same 26 filenames each week the paste is deferred (146 → 165 this week). If the blockage is a misread of a rule rather than a real constraint, the cost is entirely self-imposed and has been paid three times.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-898
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an unexamined division of labour: the same run writes 243 lines into the vault unprompted and routes 26 one-line files to a human. High confidence — the asymmetry is in one document.
+    Current status: UNTESTED
+
+PRESUMPTION-899:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] The daily summary is presumed to have value independent of delivery. It has been written in walk-context prose for a specific human at a specific hour for eight days during which it reached no one, and its form has not changed — so either it has an unstated second purpose, or eight days of composition were spent on an unread artifact and nobody has priced that.
+  Evidence it was operative: The 08-30 summary opens with a delivery-failure banner and then proceeds in full second-person walk-briefing register ("For Morning Discussion", "the interesting question for the walk isn't the bug"). It also carries a budget-overrun disclosure for the effort. Today's 14a/14b run then read it as its primary source — a use the artifact was not designed for and does not acknowledge.
+  Why it was unstated: obvious to participants — the summary is a habit with a schedule, and habits do not require a purpose to continue.
+  Type: methodological
+  Related decisions: DECISION-082
+  Testability: testable in-house — name the artifact's readers. If the vault is one, the form should change; if not, the schedule should.
+  Risk if wrong: **Low-Medium.** Distinct from MONITOR-584, which asks what jointly produced 17 unattended days. This asks a narrower question about one artifact: whether it is a message or a record, given that it has been functioning as the second while being written as the first.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-899
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from eight days of unchanged form under changed circumstances, plus this run's own dependence on the artifact as a record. Non-duplication checked against MONITOR-584. Moderate confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-900:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Convergence among independently generated proposals is presumed to indicate redundancy rather than corroboration — the same fact is read as signal in one sentence of today's summary and as noise in the next.
+  Evidence it was operative: The summary reports "3 new Rohr proposals that all independently raise the same false-self/individuation tension," with *independently* doing evidential work. Two paragraphs later the recommendation is to treat them "as one paradigm flag rather than three before the wiki carries three near-duplicates" — a hygiene rationale in which the same independence is a duplication problem. No one asks whether three agents converging from different starting points is worth more than one agent saying it once.
+  Why it was unstated: culturally embedded — the inbox is managed as a queue, and queue management makes deduplication the default disposition for similar items.
+  Type: epistemic
+  Related decisions: DECISION-079, DECISION-080
+  Testability: testable via literature (independent corroboration and evidential weight; consensus vs. duplicate detection; why pooling independent reports differs from removing duplicates).
+  Risk if wrong: **Medium.** This is the accelerator's core measurement in miniature. The system exists to produce evidence about what happens when richly-informed perspectives interact; if the intake layer collapses convergence into deduplication as a matter of housekeeping, the strongest signal it can generate is the one it discards first.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-900
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two incompatible readings of the same fact within one document. Cross-checked against ASSUMPTION-1242, which records the stated recommendation; this surfaces the premise the recommendation rests on. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-901:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Amendment is presumed to be improvement. Three premises minted today by adopting 15b's challenge into the statement are reported approvingly, with no failure mode named for the practice — in particular, no one asks whether a claim that absorbs every objection is thereby becoming unfalsifiable.
+  Evidence it was operative: PREMISE-191, 192, 193 each carry "the challenge was ADOPTED into the statement above, not outweighed"; the summary calls this "amending rather than adjudicating" and treats the shift as maturation. All three resulting statements are longer, more qualified and harder to falsify than the assumptions they came from. No disposition in today's 19 recorded a case where adoption would have been the wrong move.
+  Why it was unstated: too foundational to notice — incorporating a criticism feels like intellectual honesty by construction, which is exactly why its cost is invisible.
+  Type: epistemic
+  Related decisions: DECISION-078
+  Testability: testable via literature (ad hoc modification and degenerating research programmes — Lakatos; content-preserving vs. content-reducing amendment) — testable in-house by scoring the three new premises for falsifiability against their source assumptions.
+  Risk if wrong: **Medium-High.** A premise register in which every entry has been pre-hardened against its known challenge will show a high survival rate for structural reasons. The 148-id, 147-ACTIVE figure would then be a fact about the amendment practice rather than about the premises. MacIntyre's own criterion is directly relevant: a tradition is progressive when it can say what its rivals could not, not when it can absorb what they said.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-901
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an approving report of a methodological shift for which no failure mode is stated. Cross-checked against ASSUMPTION-1241, which records the stated observation; this asks whether the observation is good news. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-902:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] The boundary of an agent's job is presumed to be knowable in advance and encodable as a permission set. Both of today's remedies are permission-shaped, and neither run asks whether the census agent's task had drifted such that a repo check was genuinely within scope.
+  Evidence it was operative: The sewing agent concludes it "has no business running `git` at all"; the summary generalises to "read-only agents get read-only tool grants, enforced rather than assumed." But the `git status` call had a real motive — verifying whether the 309-path uncommitted tree flagged on 08-23 had cleared, which it had (309 → 82), and which is the one follow-through item of four that moved. Under the proposed grant that check becomes impossible, and its finding would not exist. No alternative diagnosis is considered.
+  Why it was unstated: obvious to participants — the incident was caused by a tool call, so the tool grant presents itself as the locus of the fix.
+  Type: structural
+  Related decisions: none
+  Testability: testable via literature (least privilege vs. task drift; whether static capability sets fit agents with evolving remits) — testable in-house by asking, for each scheduled agent, whether its most useful finding of the last month was in its original scope.
+  Risk if wrong: **Medium.** The summary itself names the additive-remedy trap (G4) and requires a diagnosis to state its discriminator. This diagnosis does not: it does not say what a non-scope failure would have looked like, and it would have suppressed the day's most useful verification. The system caught the trap and then walked into it in the same document.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-902
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a remedy that would have prevented the finding that justified the run. Cross-checked against ASSUMPTION-1235/1240, which record the stated diagnoses. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-903:
+  Date surfaced: 2026-08-30
+  Statement: [inferred] Assumption extraction is presumed to be time-indifferent — a missed day is treated as deferred rather than lost, so a gap in the pipeline is filed as a rate problem and never as a destruction of evidence.
+  Evidence it was operative: 14a/14b last ran 2026-08-27; 08-28, 08-29 and 08-30 accumulated with no run. REVISE-406 filed the 08-26 miss; today's summary escalates to "a run of misses, not a rate." Neither states what becomes unrecoverable when a day passes. **This run is the direct evidence:** it could not locate an interactive transcript for today and worked primarily from `daily_sync/cowork_to_chat/2026-08-30_cowork_summary.md` — a derived, already-interpreted digest — so today's assumptions are extracted from a summary of the day rather than from the day. The exact quotes in ASSUMPTION-1233–1248 are quotes from artifacts, not from conversations, and 14a's own standard asks for the latter.
+  Why it was unstated: too foundational to notice — the registers are append-only and nothing ever disappears from them, so absence registers as lateness rather than as loss.
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — compare an extraction made from a same-day transcript against one made from a digest of the same day, and count what the second cannot see. Testable via literature (evidence decay in retrospective incident analysis; hindsight and narrative smoothing in post-hoc reconstruction).
+  Risk if wrong: **Medium.** Not that items are missed — a digest yields plenty — but that what a digest yields is systematically the *already-noticed*. 14b's whole function is to surface what nobody noticed, and a summary is a record of what someone did. A presumption detector reading a digest is reading the output of the process it exists to audit.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-903
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three days of accumulated gap treated as schedule slippage, and confirmed against this run's own source constraint. Self-referential and directly evidenced. High confidence.
+    Current status: UNTESTED

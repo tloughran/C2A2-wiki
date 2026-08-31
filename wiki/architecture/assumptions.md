@@ -21749,3 +21749,275 @@ ASSUMPTION-1232:
     Transform at each step:
       14a: Extracted verbatim. The link to ASSUMPTION-1223 is 14a's and is marked as a filing note, not part of the statement.
     Current status: UNTESTED
+
+ASSUMPTION-1233:
+  Date identified: 2026-08-30
+  Statement: "The 15-pipeline must snapshot each file it will write to, before writing, to <file>.bak.<YYYYMMDD>-pre-15pipeline. Cheap, and it converts this failure class into a rollback."
+  Context: REVISE-412, the 15-pipeline's self-report after it truncated `for_lit_search.md` (1,847,543 bytes) to zero. First of three recommended actions.
+  Type: architectural
+  Related decisions: DECISION-083 (adjacent; no decision covers register write discipline)
+  Testability: testable in-house — implement and induce a failure; also testable via literature (write-ahead logging, atomic-replace idioms).
+  Status: UNTESTED — SENT-TO-15a. The claim that the remedy is "cheap" is stated without a cost, and the remedy names no recovery-point objective: a nightly `.bak` still loses everything written since the snapshot. See PRESUMPTION-893.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1233
+    Item type: ASSUMPTION (stated — quoted from revision_flags.md)
+    Transform at each step:
+      14a: Extracted verbatim from REVISE-412. The observation about the missing RPO is 14a's filing note, not part of the statement.
+    Current status: UNTESTED
+
+ASSUMPTION-1234:
+  Date identified: 2026-08-30
+  Statement: "Never open a target file for writing until the replacement content is fully computed in memory; write to a temp file and rename. Both halves of this incident disappear under that rule."
+  Context: REVISE-412, recommended action 2. A claim of complete coverage: one discipline is said to eliminate both the truncating open and the unpacking error's consequences.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature (atomic file replacement; failure-atomicity in filesystem APIs) — and directly checkable by re-reading the incident against the proposed rule.
+  Status: UNTESTED — SENT-TO-15a. Note for the tester: the rule prevents the *damage* from the TypeError but not the TypeError; "both halves disappear" is true of the incident's outcome, not of its causes.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1234
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim; the scope caveat is marked as a filing note.
+    Current status: UNTESTED
+
+ASSUMPTION-1235:
+  Date identified: 2026-08-30
+  Statement: "this agent has no business running `git` at all. Its job is a read-only census of `.md` files... `git status` was chosen for convenience and it is the one git subcommand that writes."
+  Context: Sewing agent bootstrap report §0, after the run left a zero-byte `.git/index.lock` the sandbox cannot unlink.
+  Type: architectural
+  Related decisions: none
+  Testability: testable in-house — enumerate every scheduled agent's actual tool usage against its stated job and count out-of-scope calls. Testable via literature (least privilege; capability confinement).
+  Status: UNTESTED — SENT-TO-15a. This is the second self-inflicted defect of the day traced to an agent performing a write its job did not require; ASSUMPTION-1240 states the generalisation.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1235
+    Item type: ASSUMPTION (stated — quoted self-diagnosis)
+    Transform at each step:
+      14a: Extracted verbatim from `sewing_agent_bootstrap_2026-08-30.md` §0.
+    Current status: UNTESTED
+
+ASSUMPTION-1236:
+  Date identified: 2026-08-30
+  Statement: "No new census file. A structurally identical ~300 KB file is clutter, not measurement."
+  Context: Sewing agent §1, listing what the eleventh firing of a "ONE-TIME" bootstrap deliberately did not write.
+  Type: epistemic
+  Related decisions: none
+  Testability: testable via literature (informational value of repeated measurement; redundancy vs. replication in monitoring) — the general form is testable; the instance is a judgement call.
+  Status: UNTESTED — SENT-TO-15a. Stated as self-evident. Its converse — that replication under an unchanged method is precisely what licenses treating a delta as real — is what ASSUMPTION-1237 relies on in the same document.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1236
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. The tension with ASSUMPTION-1237 is 14a's filing note; 14b holds the interpretive version.
+    Current status: UNTESTED
+
+ASSUMPTION-1237:
+  Date identified: 2026-08-30
+  Statement: "Methodology check passed — the resolver reproduced the baseline top-hub list exactly (`friston/prs_triplets.md` 150, `stump` 121, `levin` 97, `fredrickson` 82, `kastrup` 70), so the deltas below are real movement, not resolver drift."
+  Context: Sewing agent §2, licensing the week-over-week connectivity table (4,411 → 4,729 pages; 3,675 → 3,985 orphans; 251 → 281 broken links).
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature (positive-control design; whether agreement on a stable subset licenses inference about a changed population).
+  Status: UNTESTED — SENT-TO-15a. The control is drawn from the five *largest* hubs, i.e. the part of the vault least likely to be affected by parser drift on new machine-generated pages, which are where all the growth is.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1237
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim; the note on control selection is 14a's and is a filing note, not an evaluation.
+    Current status: UNTESTED
+
+ASSUMPTION-1238:
+  Date identified: 2026-08-30
+  Statement: "165 of 281 broken links (58.7%) are resolved by pasting 26 one-line files."
+  Context: Sewing agent §4. Third consecutive week this claim has been made, with a regenerated paste-ready script each time.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically — falsifiable in one step by creating the 26 files and re-running the census.
+  Status: UNTESTED — and the cheapest live prediction on the register. Baseline pinned for the check: **broken links = 281, distinct targets = 47, alias variants = 26, at 2026-08-30.** Predicted post-paste value: 116.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1238
+    Item type: ASSUMPTION (stated — quoted prediction)
+    Transform at each step:
+      14a: Extracted verbatim and pinned to a measured baseline so it can be scored rather than restated a fourth week.
+    Current status: UNTESTED
+
+ASSUMPTION-1239:
+  Date identified: 2026-08-30
+  Statement: "the variant list held at 26 — no new spelling was minted in the last seven days, the first week that has been true — while the link count behind it grew from 146 to 165. So the leak did not widen, but it kept filling."
+  Context: Sewing agent §4, distinguishing two failure rates in the broken-link population.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically — the two series (variant count, links-behind-variants) are already logged weekly and can be extended.
+  Status: UNTESTED. A genuinely new distinction on this register: prior weeks reported only the aggregate. Whether one stable week licenses "did not widen" is a sample-size question, not a conceptual one.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1239
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim.
+    Current status: UNTESTED
+
+ASSUMPTION-1240:
+  Date identified: 2026-08-30
+  Statement: "Neither is a reasoning failure; both are *scope* failures — agents touching more than their job requires. Worth asking whether the standing rule should be narrower: read-only agents get read-only tool grants, enforced rather than assumed."
+  Context: `daily_sync/cowork_to_chat/2026-08-30_cowork_summary.md`, "For Morning Discussion" item 2, generalising over the sewing agent's `git status` and the 15-pipeline's premature open-for-write.
+  Type: architectural
+  Related decisions: none
+  Testability: testable via literature (least privilege; enforced vs. advisory access control; whether permission narrowing reduces incident rates) — testable in-house by classifying the incident log by cause.
+  Status: UNTESTED — SENT-TO-15a. Two incidents is the whole sample. The same summary elsewhere names the additive-remedy trap (G4) and requires a diagnosis to state its discriminator; this diagnosis does not state what a *non*-scope failure would have looked like.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1240
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. The G4 observation is 14a's filing note; 14b holds the interpretive version at PRESUMPTION-902.
+    Current status: UNTESTED
+
+ASSUMPTION-1241:
+  Date identified: 2026-08-30
+  Statement: "all three new premises were minted by *adopting* 15b's challenge into the statement rather than outweighing it — the pipeline is now routinely amending rather than adjudicating."
+  Context: Same summary, describing the largest 15-pipeline cycle to date (19 items → PREMISE-191/192/193, 14 MONITORs, 3 REVISEs, 19 dispositions).
+  Type: methodological
+  Related decisions: DECISION-078
+  Testability: testable empirically — the disposition log records adopt-vs-outweigh for all 869 dispositions; the trend is measurable. Testable via literature (whether amendment-on-challenge improves or degrades claim quality).
+  Status: UNTESTED — SENT-TO-15a. Stated approvingly. PREMISE-191, 192 and 193 all carry the same "the challenge was ADOPTED into the statement above, not outweighed" line, so the observation is accurate for today; whether three constitutes "routinely" is untested.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1241
+    Item type: ASSUMPTION (stated — quoted, verified against validated_premises.md this run)
+    Transform at each step:
+      14a: Extracted verbatim, then checked against the three premise records, which confirm the adoption language in each.
+    Current status: UNTESTED
+
+ASSUMPTION-1242:
+  Date identified: 2026-08-30
+  Statement: "The sewing agent recommends the master agent treat these as *one paradigm flag rather than three* before the wiki carries three near-duplicates."
+  Context: PROP-2026-08-30-001/-002/-003, three Rohr proposals each independently raising the false-self/individuation tension against Summa 2026.
+  Type: methodological
+  Related decisions: DECISION-079, DECISION-080
+  Testability: testable via literature (deduplication vs. independent corroboration in evidence aggregation; when convergent independent reports should be pooled).
+  Status: UNTESTED — SENT-TO-15a. The stated rationale is hygiene ("near-duplicates"); the same document elsewhere treats the independence of the three as evidentially notable. See PRESUMPTION-900.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1242
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim.
+    Current status: UNTESTED
+
+ASSUMPTION-1243:
+  Date identified: 2026-08-30
+  Statement: "if perspective-limitation is what individuates agents, an eliminativist reading of the false self would dissolve the individuating perspective."
+  Context: The three Rohr proposals' shared CROSS candidate against the Summa 2026 central theme. Conditional reasoning; the antecedent is the assumption.
+  Type: epistemic
+  Related decisions: none
+  Testability: framework commitment (not testable via literature) — perspective-limitation as the individuating principle is a load-bearing commitment of conscious realist monism, not an empirical claim. The *conditional* is testable as an entailment check.
+  Status: UNTESTED. Recorded as a framework commitment rather than routed. This is the first time on this register that a tradition proposal has generated a check on the framework's individuation principle rather than on one of its findings.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1243
+    Item type: ASSUMPTION (stated — quoted conditional; antecedent surfaced by 14a)
+    Transform at each step:
+      14a: Extracted the conditional verbatim and named its antecedent as the assumption. The antecedent-naming is [inferred]; the conditional is [stated].
+    Current status: UNTESTED
+
+ASSUMPTION-1244:
+  Date identified: 2026-08-30
+  Statement: "That proposal is a constraint on other proposals, not an addition." ... "a maturity model (Pathway 35) is an ascending frame by construction."
+  Context: PROP-2026-08-30-003, on Rohr's ascending/descending distinction, applied reflexively to C2A2's own developmental maturity model.
+  Type: architectural
+  Related decisions: none
+  Testability: testable via literature (whether stage/maturity models entail a normative ascent; critiques of developmental staging) — the reflexive application is testable in-house against Pathway 35's own wording.
+  Status: UNTESTED — SENT-TO-15a. The most consequential item extracted today: if accepted, it does not add a node, it constrains how the Stage 0–5 metric in every one of these snapshots may be read.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1244
+    Item type: ASSUMPTION (stated — quoted, two sentences from the same item)
+    Transform at each step:
+      14a: Extracted verbatim; the note about the Stage metric is 14a's filing note.
+    Current status: UNTESTED
+
+ASSUMPTION-1245:
+  Date identified: 2026-08-30
+  Statement: "Gmail draft creation demonstrably works from scheduled tasks and is still unused, because this task file does not authorise that channel. That authorisation remains the cheapest open item on the register."
+  Context: OPEN-168, day eight of the notification-channel outage; both directions failed again today (08:52 and 18:39–18:40 EDT).
+  Type: empirical
+  Related decisions: DECISION-082
+  Testability: testable in-house immediately — authorise the channel in one task file and observe. The "demonstrably works" half is already evidenced elsewhere in the vault.
+  Status: UNTESTED — and unusually, untested by choice rather than by queue position. Eighth consecutive day the same remedy has been named and not taken. This is the clearest instance on the register of a blockage that is authorisational, not technical.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1245
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim from the delivery-failure banner.
+    Current status: UNTESTED
+
+ASSUMPTION-1246:
+  Date identified: 2026-08-30
+  Statement: "Require that a named defect acquire, within two mentions, EITHER a closure record with verification evidence that the fix works, OR a deferral record carrying severity, priority, owner, rationale and a review date. A third consecutive mention with neither is itself the reportable condition."
+  Context: REVISE-410, on the date-prefix diff defect (ASSUMPTION-494, ASSUMPTION-502) and documentation-as-compliance for tooling. Reinforces open REVISE-244.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature — already searched: 15a SUPPORTED (Moderate-Strong), 15b CHALLENGED (Moderate), disposed at DISPOSITION-865.
+  Status: CHALLENGED-IN-PART → REVISION-FLAGGED (REVISE-410), awaiting Tom. Recorded here for the assumption register because the *rule as stated* — a specific two-mention threshold — has not itself been tested; the searches tested the underlying principle.
+  Provenance:
+    Origin: 14a
+    Chain: [14a] (item's own chain is [14b → 15a, 15b → 15c])
+    Original item: ASSUMPTION-1246
+    Item type: ASSUMPTION (stated — quoted from the recommended action)
+    Transform at each step:
+      14a: Extracted verbatim; noted the untested residue (the numeric threshold) that the completed search did not cover.
+    Current status: UNTESTED (residue only)
+
+ASSUMPTION-1247:
+  Date identified: 2026-08-30
+  Statement: "a rule announced but withheld from its own generating case is the recognised anomaly, and the usual justification for prospective-only operation — reliance — is absent here, because the equivalence test was never run and nothing depends on its result."
+  Context: REVISE-411, on ACTIVE PREMISE-122 (the commensurability gate) never having been run against the FLAG-017 Levin/Friston pair that generated it.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature — searched: 15a SUPPORTED (Moderate), 15b PARTIALLY-CHALLENGED (Moderate), DISPOSITION-867.
+  Status: CHALLENGED-IN-PART → REVISION-FLAGGED (REVISE-411), awaiting Tom. Residue: the claim that *nothing depends on its result* is asserted, while the same flag lists ASSUMPTION-509, MONITOR-576 and MONITOR-463 as resting on PREMISE-122.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1247
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim; the internal tension between "nothing depends on its result" and the flag's own dependency list is 14a's filing note.
+    Current status: UNTESTED (residue only)
+
+ASSUMPTION-1248:
+  Date identified: 2026-08-30
+  Statement: "The enumeration must be risk-ranked and capped rather than exhaustive, because a finding list that exceeds closure capacity measurably degrades response to the findings that matter."
+  Context: PREMISE-193 (from PRESUMPTION-515), the adopted half of 15b's challenge. Now ACTIVE and applicable to "monitor design generally."
+  Type: empirical
+  Related decisions: none
+  Testability: testable via literature — 15a SUPPORTED (Strong) on the parent; the capacity claim specifically rests on snippet-level evidence only.
+  Status: SUPPORTED (Moderate confidence, snippet-level) via DISPOSITION-862. Filed in the assumption register because it is now a live constraint on this pipeline's own output: 654 unique MONITOR ids, 250 in the standing lane, 1,693 queue items. **No closure-capacity figure exists against which "exceeds" could be evaluated.**
+  Provenance:
+    Origin: 14a
+    Chain: [14a] (item's own chain is [14b → 15a, 15b → 15c])
+    Original item: ASSUMPTION-1248
+    Item type: ASSUMPTION (stated — quoted from an ACTIVE premise)
+    Transform at each step:
+      14a: Extracted verbatim from validated_premises.md and checked against this run's own queue counts. The absence of a capacity figure is measured, not inferred.
+    Current status: SUPPORTED

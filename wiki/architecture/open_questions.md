@@ -2146,3 +2146,44 @@ OPEN-174:
 - **OPEN-164 / OPEN-170 gained their most concrete instance to date.** The retired hold heuristic (DECISION-081) is an agent-side convention, never ratified, that did nineteen days of epistemic work nobody authorised. OPEN-172 is filed as the generalisation.
 - **The 46-id offset is carried — and this run can narrow it.** Before tonight: 125 unique `^OPEN-NNN:` headers against max OPEN-171. After tonight: **128 unique, max OPEN-174, offset still exactly 46**, reproducing the 08-23, 08-24 and 08-25 figures for the fifth consecutive record. **"Max OPEN-174" is not a count of open questions.**
   **New tonight — the missing ids are not scattered, they are three contiguous blocks:** OPEN-040…070 (31 ids), OPEN-073…074 (2), OPEN-079…091 (13). 31 + 2 + 13 = 46, exactly. Contiguous blocks are the signature of ids allocated and then removed, or of a file section lost — not of sporadic mis-numbering. That does not say which happened, and this run did not go looking; it does say the offset is one or three events rather than forty-six, which makes it a tractable half-hour of git history rather than an audit. Handed to whoever files it next.
+
+OPEN-175:
+  Date raised: 2026-08-30
+  Question: What is the acceptable data-loss window for the architecture registers?
+  Why now: REVISE-412 diagnosed the exposure exactly — "the newest available restore point is always the previous night's pre-14eod snapshot — meaning a 15-pipeline failure loses a full day by construction" — and then proposed a remedy of the same shape, one snapshot per pipeline run. That moves the worst case from ~24 hours to one run's worth of edits. **No register states which of those is acceptable, or whether either is.** A backup practice without a target will be declared fixed the moment a backup exists.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1233; PRESUMPTION-893; REVISE-412
+  Note: The answer is one number and one sentence. It is not a research question.
+
+OPEN-176:
+  Date raised: 2026-08-30
+  Question: Does adopting a challenge into a premise statement have a failure mode, and how would an unfalsifiable premise be detected on this register?
+  Why now: All three premises minted today — PREMISE-191, 192, 193 — carry the line "the challenge was ADOPTED into the statement above, not outweighed," and today's summary reports this approvingly as the pipeline "amending rather than adjudicating." Each resulting statement is longer, more qualified, and harder to falsify than the assumption it came from. **No disposition among today's nineteen names a case where adoption would have been wrong.** A premise register in which every entry was pre-hardened against its known challenge will show a high survival rate for structural reasons, and 148 ids / 147 ACTIVE would then be a fact about the amendment practice rather than about the premises.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1241; PRESUMPTION-901; DECISION-078
+  Note: MacIntyre's criterion applies directly and is not decorative here: a tradition is progressive when it can say what its rivals could not, not when it can absorb what they said. This project's own methodology is the thing under test.
+
+OPEN-177:
+  Date raised: 2026-08-30
+  Question: When independently generated proposals converge, is that corroboration or redundancy — and which does the intake layer currently treat it as?
+  Why now: Today's summary reports "3 new Rohr proposals that all independently raise the same false-self/individuation tension," with *independently* doing evidential work, and two paragraphs later recommends treating them "as one paradigm flag rather than three before the wiki carries three near-duplicates." The same fact reads as signal in one sentence and as noise in the next, and the deduplication reading is the one attached to an action.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1242; PRESUMPTION-900; DECISION-079, DECISION-080
+  Note: This is the accelerator's central measurement appearing inside its own intake layer. The system exists to produce evidence about what happens when richly-informed perspectives interact; if convergence is collapsed as housekeeping, the strongest signal it can generate is the one it discards first.
+
+OPEN-178:
+  Date raised: 2026-08-30
+  Question: Why must the 26 alias notes be created by hand?
+  Why now: Third consecutive week at "NOT DONE — 0 of 26 exist," with the paste-ready generator regenerated each week against a fresh variant list. **In the same run the sewing agent wrote 47 agentic calls across 10 proposals and stamped 11 synthesis bridge notes — 243 insertions, 0 deletions, verified programmatically.** The no-blind-push rule is invoked in §1 against a ~1,400-file Phase 3 modification and never invoked against these 26 one-line, non-destructive, clobber-nothing files. Meanwhile the links behind them grew 146 → 165, ~20 per deferred week, and 165 of 281 broken links (59%) close on execution.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1238; PRESUMPTION-898
+  Note: If the blockage is a misread of the no-blind-push rule rather than a real constraint, the cost is entirely self-imposed and has now been paid three times. Reading the rule and ruling takes minutes.
+
+### Status of carried questions — 2026-08-30
+- **Gap declaration.** The self-awareness pipeline last ran **2026-08-27**. There is no 08-28 and no 08-29 changelog or snapshot. This run adds OPEN-175–178 and does not attempt to reconstruct the two missing days; see PRESUMPTION-903, which files the gap as evidence destruction rather than schedule slippage.
+- **OPEN-168 (notification channel of record) is carried and worse: day eight, and the second consecutive day failing in both directions.** Claude in Chrome not connected (two attempts, 18:39 EDT); built-in browser pane returned `navOk: false` for claude.ai (18:40). Chat has had no Cowork context since 2026-08-23 — seven days. Gmail drafts demonstrably work from scheduled tasks and remain unauthorised in the task files. **Still the cheapest unmade decision on the register**, now for the eighth consecutive record. See ASSUMPTION-1245.
+- **OPEN-171 (intake/disposition coupling) — the prediction is running and the queue is refilling.** ASSUMPTION-1231 predicted a return toward 80 within two weeks from a measured baseline of pending = 0 at 2026-08-27. **Measured today: pending = 9** (6 carried from 08-28 plus 3 Rohr). Three days, 9 items — consistent with the stated 6–14/day rate at its low end. Review-pass gap: 3 days.
+- **OPEN-167 (three live vault roots) is carried unresolved, sixth consecutive run.** The task file still carries the capital-`W` form `/RC Karpathy Wiki Project/Wiki`; the live directory is lowercase `wiki`. Corrected by hand again tonight.
+- **OPEN-174 (which store is the decision record of account) is carried and now has a second data point.** `decisions.md` still ends at DECISION-083 (2026-08-27) — four days without an attended decision — while nine proposals sit in `review/2026-08-30_review.html` and every ruling made today was an agent-side disposition. The registers moved; the decision record did not.
+- **OPEN-164 / OPEN-170 (unratified agent-invented conventions) carried.** Today's instance is PRESUMPTION-898: an unwritten convention that 26 one-line files are Tom's to create, held for three weeks by an agent that writes hundreds of lines elsewhere unprompted.
+- **The 46-id offset is carried and unchanged.** Before tonight: 128 unique `^OPEN-NNN:` headers against max OPEN-174. After tonight: **132 unique, max OPEN-178, offset still exactly 46** — sixth consecutive record. The three contiguous missing blocks characterised on 08-27 (OPEN-040…070, 073…074, 079…091) were not investigated this run. **"Max OPEN-178" is not a count of open questions.**

@@ -12885,3 +12885,358 @@ REVISE-408:
   Urgency: Medium — the exposure is queue-depth misreporting and repeated rediscovery cost, not a live
     operational failure.
   PROVENANCE: Origin 15c inventory pass 2026-08-28 · Chain [15c] · Current status: REVISION-FLAGGED
+
+
+---
+
+REVISE-409: [2026-08-29] PRESUMPTION-519 — "recoverable" is an unexamined default on REVISE-242.
+  Urgency: HIGH
+  15a NO-SUPPORT-FOUND (None; Strong for the negation) | 15b NO-CHALLENGE-FOUND (None)
+  Disposition record: DISPOSITION-849
+
+  The presumption: that 40 surviving references to PREMISE-001..043 preserve enough to reconstruct
+  them — that references are a faithful shadow of referents. No step in the REVISE-242 routing
+  confirmed the content survives anywhere before classifying the loss reparable.
+
+  Finding: both search directions returned empty on the presumption, and the nearest applicable
+  evidence base runs against it. Citation stubs reconstructed from reference lists are routinely
+  incomplete and inaccurate; content drift and reference rot are measured at high rates (>75% of
+  referenced web content altered since citation; ~1 in 5 references rotted); fabricated reference
+  metadata can assert referents that never existed (Besançon et al. 2024, JASIST). The adjacent and
+  well-populated literature is on PRESERVING REFERENCES to deleted objects — a different and easier
+  problem, and conflating the two is a plausible route to the recoverable classification.
+
+  NOT a duplicate of REVISE-242. REVISE-242 is the loss. This is the unexamined recoverability
+  CLASSIFICATION placed on it — and that classification is what suppresses the urgency of checking,
+  while dated backups age out. Thirty-nine days have passed and the check has never been run.
+
+  What is at risk: 43 premises, permanently, plus every argument resting on them — including any
+  cited into currently-ACTIVE premises. Note that PREMISE-189 and PREMISE-190, minted today, had
+  their consistency checks run against the reduced register.
+
+  Recommended action for Tom (one command, seconds):
+      grep -l 'PREMISE-0[0-4][0-9]:' architecture/*.bak.*
+  If PREMISE-001..043 appear in any dated backup, REVISE-242's recoverable routing survives and the
+  reconstruction should be scheduled before further rotation. If they appear in NONE, the loss is
+  irreversible and REVISE-242 is misrouted: the correct remedy is then an explicit relaxed-referential-
+  integrity declaration enumerating the dangling set, plus a declared denominator on every consistency
+  check, not a repair plan.
+
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Original item PRESUMPTION-519 ·
+    Item type PRESUMPTION (unstated) · Transform: net evaluation and disposition 2026-08-29;
+    generalizable limb searched, internal limb NOT-SEARCHED · Current status: REVISION-FLAGGED
+
+---
+
+REVISE-406 — OCCURRENCE INCREMENT (not a new flag), 2026-08-29:
+  The 14a/14b self-awareness pipeline did not run on 2026-08-28. Evidence: assumptions.md and
+  presumptions.md last written 2026-08-27 23:40/23:43; for_lit_search.md last written 2026-08-28 01:08
+  by the previous 15-pipeline run; no changelog/2026-08-28_changes.md exists. This is the SECOND
+  missed run in four days and it occurred within ONE DAY of REVISE-406 [FIX FIRST] being opened for
+  the 2026-08-26 miss.
+  No new REVISE is filed: PREMISE-183 forbids the duplicate notice, and REVISE-406 is one day old and
+  open. Recorded here as evidence about REVISE-406's urgency, which the recurrence interval now
+  quantifies: two misses in four days is not an outlier, it is a rate.
+  Note that the miss was again found by hand, from file mtimes, by a downstream agent — not by any
+  monitor. That is the same detection path as 2026-08-26 and the same one REVISE-406 exists to fix.
+
+---
+
+REVISE-408 — AMENDMENT, 2026-08-29 (the ask changes; no new flag):
+  REVISE-408 currently asks Tom to authorise retagging the 26-item 2026-07-21 block as
+  [MISROUTED-INTERNAL-EMPIRICAL], with the 2026-07-25 triage as the classification of record.
+  This run finds that triage HALF RIGHT and the binary therefore still incomplete. Each of those items
+  has two limbs: an internal-empirical claim about this repository's file state, which literature
+  cannot adjudicate, AND a generalizable question that the item itself names on its own "Search
+  targets" line, which is squarely in 15a/15b scope. Collapsing the two is what stranded the cohort
+  for 39 days.
+  Demonstrated, not argued: the 7 HIGH-priority items of that block were searched today on the
+  generalizable limb alone and produced 2 premises, 1 HIGH REVISE, 4 MONITORs and 1 systemic-risk
+  flag. Whatever else the block is, it was not out of scope.
+  Amended ask: authorise SPLIT TAGGING — internal limb [MISROUTED-INTERNAL-EMPIRICAL], generalizable
+  limb [QUEUED] — rather than retagging the block whole. The remaining 19 items of the cohort are left
+  untouched pending that authorisation; this run did not retag anything.
+
+
+# ===== 2026-08-30 lit-search run (2026-08-30) =====
+
+REVISE-410:
+  Date filed: 2026-08-30
+  Source item: PRESUMPTION-526 (PRESUMPTION (unstated))
+  Claim:
+    [inferred] The date-prefix diff defect is presumed harmless because 'known'; naming it a 4th day is
+      taken to discharge fixing it -- documentation-as-compliance for tooling.
+  15a: SUPPORTED (Moderate-Strong) | 15b: CHALLENGED (Moderate)
+  What is at risk:
+    The date-prefix diff defect (ASSUMPTION-494, ASSUMPTION-502) and any other recurring tooling defect;
+      the credibility of every 'known defect' notice in the daily run; adjacent to open REVISE-244
+      (defect-closure ledger), which this reinforces rather than duplicates.
+  Recommended action:
+    Require that a named defect acquire, within two mentions, EITHER a closure record with verification
+      evidence that the fix works, OR a deferral record carrying severity, priority, owner, rationale and
+      a review date. A third consecutive mention with neither is itself the reportable condition. Both
+      search directions independently converge on this artifact: 15a's closure literature demands
+      verification, 15b's triage literature demands a deferral rationale; re-disclosure satisfies the form
+      of both and the substance of neither.
+  Urgency: Medium
+  Requires: Tom's review before status changes
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-865 · snippet-level evidence only
+  Status: REVISION-FLAGGED — AWAITING HUMAN REVIEW
+
+
+REVISE-411:
+  Date filed: 2026-08-30
+  Source item: PRESUMPTION-529 (PRESUMPTION (unstated))
+  Claim:
+    [inferred] PREMISE-122 (a general commensurability gate) is presumed to handle the specific FLAG-017
+      transfer it was raised against, though the equivalence was not re-adjudicated against the gate.
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  What is at risk:
+    ACTIVE PREMISE-122 has never been exercised against the transfer that prompted it, so it is an
+      untested control with no demonstrated failure mode; ASSUMPTION-509 and MONITOR-576 both rest on it,
+      as does the Levin/Friston FLAG-017 equivalence question and MONITOR-463.
+  Recommended action:
+    Run the PREMISE-122 commensurability gate once against the FLAG-017 Levin virtual-governor / Friston
+      group-Markov-blanket pair and record the outcome, whatever it is. The legal analogue is precise: a
+      rule announced but withheld from its own generating case is the recognised anomaly, and the usual
+      justification for prospective-only operation — reliance — is absent here, because the equivalence
+      test was never run and nothing depends on its result.
+  Urgency: Medium
+  Requires: Tom's review before status changes
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-867 · snippet-level evidence only
+  Status: REVISION-FLAGGED — AWAITING HUMAN REVIEW
+
+
+REVISE-412:
+  Date filed: 2026-08-30
+  Source item: none — self-observed defect in the 15-pipeline's own write path (not a 14a/14b intake)
+  What happened:
+    During the 2026-08-30 run this agent truncated for_lit_search.md (1,847,543 bytes) to zero. A Python
+      statement opened the file in "w" mode — which truncates on open — and then raised a TypeError
+      before writing, because re.subn's return values were unpacked in the wrong order. The file was
+      rebuilt from for_lit_search.md.bak.20260829-pre-15pipeline plus a hand replay of the 2026-08-29
+      run's 7 item tags and run note from values held in-session, then re-tagged for today.
+  What is at risk:
+    Any 2026-08-29 edit to for_lit_search.md outside the reconstructed set is unrecoverable, and the
+      reconstruction cannot now be verified against an independent copy. More generally: the 15-pipeline
+      writes in place to for_lit_search.md, lit_search_returns.md, validated_premises.md, monitor_queue.md
+      and revision_flags.md with NO pre-write backup of its own. The dated .bak files in this directory are
+      produced by the 14-pipeline, so the newest available restore point is always the previous night's
+      pre-14eod snapshot — meaning a 15-pipeline failure loses a full day by construction. Every prior
+      15-pipeline run has carried this exposure; this is the first to hit it.
+  Recommended action:
+    1. The 15-pipeline must snapshot each file it will write to, before writing, to
+       <file>.bak.<YYYYMMDD>-pre-15pipeline. Cheap, and it converts this failure class into a rollback.
+    2. Never open a target file for writing until the replacement content is fully computed in memory;
+       write to a temp file and rename. Both halves of this incident disappear under that rule.
+    3. Human check requested: confirm that the reconstructed 2026-08-29 entries for ASSUMPTION-492/497/
+       498/500 and PRESUMPTION-517/519/527, and the 2026-08-29 run note, read as expected. If any other
+       08-29 edit to this file is remembered, it is gone and needs re-entering.
+  Urgency: High
+  Requires: Tom's review before status changes
+  PROVENANCE: Origin 15-pipeline self-observation · Chain [15c] · Transform: defect observed in-run and
+    reported per Rule 12 (fail loud) rather than repaired silently · Evidence: direct, not literature
+  Status: REVISION-FLAGGED — AWAITING HUMAN REVIEW
+
+
+================================================================================
+## Filed 2026-08-31 — Agent 15c, cohort 2026-08-30 · REVISE-413..423 (11 flags)
+## FOR TOM'S REVIEW. Eleven flags for nineteen searched items plus eight non-search
+## items; three flags are roll-ups rather than one-per-item, deliberately, under
+## PREMISE-193 (a finding list that exceeds closure capacity degrades response to
+## the findings that matter).
+##
+## IF YOU READ ONLY ONE THING: REVISE-417. This run caused two destructive writes
+## and voluntarily self-reported one of them. That is the estate's only measurement
+## of its own detection rate and it is 50% on n=2.
+================================================================================
+
+REVISE-413:
+  Item: ASSUMPTION-1233 (DISPOSITION-870) | 15a PARTIALLY-SUPPORTED (Moderate) / 15b CHALLENGED (Strong)
+  Claim: pre-write snapshotting "converts this failure class into a rollback."
+  What is at risk: every incident closed on the strength of "we now snapshot" — including, directly, the
+    belief that the 2026-08-30 register damage is remediated.
+  Finding: both directions agree on the mechanism and disagree only about "converts." The literature is
+    unanimous that snapshotting creates a PRECONDITION for rollback, contingent on snapshot consistency, on
+    the snapshot not already containing the corruption, and on a restore having actually been performed.
+    C2A2 has never performed one. A remedy declared complete at design time and never exercised is a plan,
+    not a control.
+  Recommended action: (1) PERFORM ONE RESTORE, END TO END, AND RECORD IT. Thirty minutes; converts the claim
+    from asserted to demonstrated. (2) Restate as "snapshotting bounds this failure class to one run's work,
+    conditional on a demonstrated restore path."
+  Urgency: High
+
+REVISE-414:
+  Item: ASSUMPTION-1234 (DISPOSITION-871) | 15a PARTIALLY-SUPPORTED (Weak) / 15b PARTIALLY-CHALLENGED (Moderate)
+  Claim: "Write to a temp file and rename. Both halves of this incident disappear under that rule."
+  Finding: the practice is right and the word "both" is wrong. Rename is atomic in NAMESPACE semantics, not
+    PERSISTENCE semantics. Three residual modes survive the rule as stated: no fsync discipline, filesystem
+    implementation divergence, and EXDEV cross-filesystem rename — the last silently degrading to non-atomic
+    copy. A live instance was found in Claude Code itself (anthropics/claude-code#32533).
+  Recommended action: amend to "write to a temp file IN THE TARGET'S OWN DIRECTORY, fsync it, rename, fsync
+    the parent directory." Note the amendment ADDS three checkable commitments and is therefore
+    content-increasing — progressive rather than ad hoc, on the criterion REVISE-422 asks you to adopt.
+  Open in-house question, answerable without literature and it changes the weighting: was the originating
+    failure PROCESS-level (agent died mid-write) or MACHINE-level (crash/power loss)? If process-level only,
+    the completeness claim is close to correct and this drops to Low.
+  Urgency: Medium
+
+REVISE-415:
+  Item: PRESUMPTION-893 (DISPOSITION-872) | 15a SUPPORTED (Moderate) / 15b CHALLENGED (Moderate)
+  Presumed: one snapshot per run is sufficient, no recovery-point objective being held.
+  Finding: both directions agree the sufficiency claim is unjustified AND unfalsifiable as stated — with no
+    declared objective there is no reference value, so drift cannot be detected and the discovery mode is
+    finding out at recovery time. Also: "one per run" is a VARIABLE interval. A long heavy-editing run
+    carries far greater exposure than a short one and nothing notices.
+  Recommended action: write ONE LINE, either "RPO = one run; register work is re-derivable by re-execution"
+    or "RPO = N minutes." The first is 15b's own steelman and may well be true — but it must be asserted and
+    checked, not assumed. Also verify the snapshot is taken at run START, so the recovery point aligns with
+    the redo boundary.
+  Urgency: Medium-High | Paired with REVISE-413.
+
+REVISE-416:
+  Item: PRESUMPTION-894 (DISPOSITION-873) | 15a SUPPORTED (Strong) / 15b CHALLENGED (Strong)
+  Presumed: in-session memory is an independent copy — an agent's recollection corroborates the record.
+  Corrected premise minted as PREMISE-194. This flag covers the DESIGN dependency only.
+  What is at risk: any incident narrative in this estate corroborated by an agent's own account rather than
+    by an artefact from a different process.
+  Recommended action: where a claim about what happened matters, cite the harness tool-call log or a file
+    diff directly. 15b's steelman is exact: if the events are verbatim in context, it is the LOG doing the
+    work, so quote the log.
+  Urgency: High
+
+REVISE-417:  *** HIGHEST-RATED OPEN RISK IN THIS COHORT ***
+  Item: PRESUMPTION-895 (DISPOSITION-874) | 15a SUPPORTED (Strong) / 15b CHALLENGED (Strong)
+  Presumed: voluntary self-report is the only detector of register damage; no read-side integrity control.
+  Corrected premise minted as PREMISE-195. This flag covers the DESIGN gap.
+  Finding: assurance frameworks do not count self-attestation as a control. Mature voluntary reporting in
+    healthcare — trained professionals, ethical duty, institutional support — detects ~1 event in 20, and
+    that is the CEILING. The failure signature is the problem: a voluntary detector that is failing reports
+    ZERO INCIDENTS, which is indistinguishable from health.
+  IN-HOUSE EVIDENCE, GENERATED BY THIS RUN: three concurrent 15b agents raced on flag filenames. Two files
+    were destroyed. ONE overwrite was self-reported by its perpetrator; the OTHER was invisible to every
+    agent involved and was found only because 15c reconciled agent summaries against directory contents.
+    Detection rate 50%, n=2, accidental. Neither agent concealed anything — one simply did not notice, which
+    is exactly 15b's steelman (the binding constraint is NOTICING, not willingness) and which argues FOR an
+    independent detector, not against.
+  Recommended action: one read-side integrity control that depends on no agent choosing to speak — a per-run
+    manifest of (path, size, sha256, line count) for each register, written at run end and diffed at the
+    next run's start. Cheap. It would have caught BOTH of this run's overwrites.
+  Secondary, and separately cheap: give concurrent agents COLLISION-PROOF FILENAMES BY CONSTRUCTION (run id
+    or item set in the name). Scan-for-a-free-letter is a check-then-act race and it fired twice in one hour.
+  Urgency: High
+
+REVISE-418:
+  Item: PRESUMPTION-903 (DISPOSITION-876) | 15a NO-SUPPORT-FOUND / 15b CHALLENGED (Strong)
+  Presumed: assumption extraction is time-indifferent; a missed day is deferred, not lost.
+  Finding: no support found in either direction plus a strong challenge. Two mechanisms: decay (yield
+    shrinks, detectably) and DISTORTION (yield keeps its apparent size but is selectively wrong — material
+    that looks reasonable in light of what followed gets smoothed away). A delayed extraction will not feel
+    impoverished; it will feel coherent, which is worse.
+  The steelman collapses on this cohort's own evidence: it requires that extraction run on durable artefacts,
+    and 14b's intake note for 2026-08-30 reports that NO interactive session transcript was identifiable, so
+    extraction ran on a daily digest — a record of what someone already noticed.
+  What is at risk: the completeness of every backfilled or gap-filling intake, INCLUDING THIS ONE. Possibly
+    relevant to the cohort's 3-of-4 novelty-nomination failure rate: extracting from a digest surfaces what
+    was already salient, which is the class most likely to be already well covered.
+  Recommended action: (1) retain full session transcripts; (2) where extraction runs late, scope it strictly
+    to the target day's artefacts without visibility of subsequent runs; (3) MARK DIGEST-SOURCED COHORTS AS
+    SUCH in the queue — and mark this one retroactively.
+  Urgency: High
+
+REVISE-419:
+  Item: ASSUMPTION-1235 (DISPOSITION-877) | 15a SUPPORTED (Strong) / 15b CHALLENGED (Moderate)
+  Claim: "This agent has no business running `git` at all."
+  Finding: BOTH DIRECTIONS INDEPENDENTLY PROPOSED THE SAME CORRECTION. The rule is directionally right and
+    MIS-TYPED: it is stated as a capability rule where the risk is action-typed. `git log`/`diff`/`show` are
+    reads; `push --force`/`reset --hard`/`clean` are not. Denying the binary buys near-zero risk reduction
+    and pays the full utility cost — and the out-of-scope call it would have prevented produced that run's
+    only verified follow-through finding.
+  Second-order note worth your attention: 15b observed the vault's git history is the natural ground truth
+    for exactly the week-over-week delta claims REVISE-421 says are under-warranted. The capability proposed
+    for banning is load-bearing for another item in the same cohort.
+  Recommended action: replace "no git" with a read-only VCS-history tool exposing log/diff/show, with hooks
+    and aliases disabled AND VERIFIED (15b's caution: git respects hooks that execute arbitrary code, so
+    "read-only git" is not obviously read-only). Record the utility cost of any denial, so the
+    suppressed-findings side of the ledger stops being invisible.
+  Urgency: Medium
+
+REVISE-420:
+  Item: PRESUMPTION-902 (DISPOSITION-879) | 15a PARTIALLY-SUPPORTED (Moderate) / 15b CHALLENGED (Strong)
+  Presumed: an agent's job boundary is knowable in advance and encodable as a permission set.
+  Finding: support is strong for ENCODABILITY and weak for KNOWABILITY. This is the load-bearing member of
+    the permissions cluster — REVISE-419 and PREMISE-196 are both remedies that INHERIT its truth value.
+    Failures of this class are structurally unobservable: a denied capability leaves no record of the work
+    it would have produced, so the system can count incidents caused by over-permission and cannot count
+    findings suppressed by under-permission.
+  Recommended action: do NOT redesign toward dynamic/JIT authorisation on this evidence — 15b's own analysis
+    says that relocates the specification problem rather than solving it. Instead run the cheap in-house
+    test: LOG OUT-OF-SCOPE TOOL REACHES AND WHETHER EACH WAS PRODUCTIVE. If they are rare and unproductive,
+    the remit is demonstrably stable and 902 is locally true — which is the only way this estate can
+    establish it, because the literature will not.
+  Urgency: High
+
+REVISE-421 (ROLL-UP: ASSUMPTION-1236 + ASSUMPTION-1237):
+  DISPOSITION-880 | 1236: 15a PARTIALLY-SUPPORTED (Weak) / 15b CHALLENGED (Moderate)
+                  | 1237: 15a PARTIALLY-SUPPORTED (Moderate) / 15b CHALLENGED (Strong)
+  Finding 1 — the two items contradict each other inside one run, as 14a suspected and all four searches
+    confirmed. 1237 licenses the delta programme BECAUSE five hub counts reproduced exactly; 1236 discards a
+    file BECAUSE reproduction is not measurement. Reproduction is counted as informative when it yields
+    assurance and uninformative when it costs storage.
+  Finding 2 — the more serious one. 1237's control is ANTI-CORRELATED with what it should validate. The five
+    top hubs are the stratum least sensitive to peripheral change, while ~97% of eight weeks' growth was
+    orphans (PRESUMPTION-897's own series), and orphan detection is a distinct code path. The control
+    validates only the shared parser prefix. A control that cannot fail licenses nothing. 15a reached this
+    in its own caveat (a) independently of 15b's Strong challenge.
+  What is at risk: the warrant for every week-over-week delta this estate has reported — not their
+    direction, but the ground for treating them as real rather than as drift in the orphan code path.
+  Recommended action: (1) retain the reproduction RESULT (five integers plus a hash), delete the ~300 KB
+    artifact — this dissolves the contradiction as bookkeeping; (2) re-select controls from the stratum
+    where change is occurring, i.e. sample from the new machine-generated trees; (3) until (2), report
+    deltas with the control's scope stated: "validated on the shared parser prefix only."
+  Urgency: Medium (1236 limb) / High (1237 control limb)
+
+REVISE-422:
+  Item: PRESUMPTION-901 (DISPOSITION-883) | 15a NO-SUPPORT-FOUND / 15b CHALLENGED (Strong)
+  Presumed: amendment is improvement; no failure mode is named for adopting every challenge into the
+    statement.
+  Finding: the clearest result in the intake, and NOVELTY WITHDRAWN. The failure mode is named twice over in
+    canonical philosophy of science — Popper's conventionalist/immunizing stratagem and Lakatos's
+    degenerating problemshift — and both name the same discriminating property: the amendment REDUCES the
+    claim's testable content. The gap was in this pipeline's vocabulary, not in the literature.
+  Worth saying plainly: a project whose resident tradition includes MacIntyre — whose criterion for rational
+    tradition-progress is precisely that a tradition must be able to say what it has LOST as well as what it
+    has absorbed — was presuming that no such criterion exists. The vocabulary was on the shelf the whole
+    time.
+  What is at risk: the disposition layer's claim to be adjudicating rather than amending. Every
+    INCORPORATE-with-amendment in this estate is an ungraded amendment — including three in THIS run
+    (DISPOSITION-870, 871, 877). DISPOSITION-871 explicitly claims content-increase; that claim is itself
+    ungraded by any instrument.
+  Recommended action: (1) RETAIN THE PRE-AMENDMENT STATEMENT whenever a claim is amended — one line, no new
+    machinery, and without it the failure is undetectable by construction; (2) grade each amendment
+    content-increasing / -preserving / -reducing; (3) log a REJECT rate so "adjudicating" has a numerator.
+  Carry 15b's caveat: the criterion is contested as a DEMARCATION tool (degrees of ad hocness, Duhem-Quine,
+    Laudan). Adopt it as a diagnostic heuristic within the inquiry, NOT as a gate.
+  Urgency: High
+
+REVISE-423 (ROLL-UP: items that require a HUMAN DECISION and cannot progress without one):
+  DISPOSITION-888. No literature search was performed on any of these and none is claimed.
+  (a) ASSUMPTION-1238 + PRESUMPTION-898 — ONE authorisation covers both. Do 26 new non-destructive
+      one-line alias files fall under the no-blind-push rule? Baseline pinned 2026-08-30: 281 broken links,
+      47 targets, 26 variants; predicted post-paste 116. THIRD week deferred; ~20 links accrue per week.
+      Note the asymmetry already in the record: the same run wrote 243 verified insertions elsewhere.
+  (b) ASSUMPTION-1245 — Gmail draft creation. NINTH consecutive day named and not taken. Per PREMISE-183,
+      identical re-filing into a channel with no terminating condition is the futility signature, so this is
+      escalated rather than re-filed: it is a one-line authorisation, testable immediately, and it is either
+      wanted or it is not.
+  (c) ASSUMPTION-1247 — the untested residue is the assertion that "nothing depends on PREMISE-122's
+      result," which the same flag contradicts by listing ASSUMPTION-509, MONITOR-576 and MONITOR-463 as
+      resting on it. An in-house contradiction check, not a search. Someone must read the two and rule.
+  (d) PRESUMPTION-899 — name the daily summary's readers. Eight days undelivered, form unchanged. If it has
+      no readers, stop producing it; if it has readers, deliver it.
+  Carried WITHOUT a flag: ASSUMPTION-1239 and ASSUMPTION-1248 to 15d as measurement requests (1248's
+    closure-capacity figure is now needed by MONITOR-585 as well); ASSUMPTION-1243 to the master agent as a
+    framework entailment question, correctly excluded from literature search.
+  Urgency: Medium — but note four of these are in their third-to-ninth week of deferral, and the deferral
+    itself is the evidence PRESUMPTION-896 (MONITOR-585) is watching for.
+

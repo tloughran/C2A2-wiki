@@ -3794,5 +3794,44 @@
   "card": "",
   "text": "**Why this has its own number rather than being folded into FINDING-065: it is not a finding about a tradition, it is a finding about the instrument.** Every other item in this batch tells the network something about the thinkers it tracks. This one tells the network something about itself, and the two kinds should not share a slot, because they have different readers and different remedies \u2014 a tr",
   "action": "**Flag for Tom as an architectural ruling, not a research dispatch.** This is the sort of question a network cannot answer about itself by collecting more evidence; it needs a decision about what C2A2 claims. Two concrete preparatory steps that *are* agent work: (1) put the \"definition or prediction\" question to the Hawkins agent directly \u2014 what observation, if any, would Hawkins accept as a text-only system understanding something? If the answer is \"none,\" the criterion is a definition and should be recorded as one; (2) put the Friston rider to the Friston agent \u2014 **is the cortical column something the FEP would *derive*, or something it would have to *accommodate*?** That node has asserted \"structural analogy\" with active inference since April without ever saying which relation it means, and the ambiguity is load-bearing for the network's paradigm map: derivation would make Hawkins a special case of Friston, accommodation would make them rivals, and the wiki has been quietly enjoying both readings. Master index: CROSS-098. Related: FLAG-011, FINDING-056 (the Carroll AI-participation cluster, still pending audio), CROSS-094."
+ },
+ {
+  "a": "Hoffman",
+  "b": "Wolfram",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag."
+ },
+ {
+  "a": "Carroll",
+  "b": "Hoffman",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag."
+ },
+ {
+  "a": "Carroll",
+  "b": "Wolfram",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag."
  }
 ]

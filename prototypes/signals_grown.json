@@ -19318,5 +19318,47 @@
   "card": "PROP-2026-08-26-004",
   "text": "Hoffman: \u2014 the nested-hierarchy-of-intelligent-entities claim is structurally Hoffman's conscious-agent composition. Three traditions converge on agent composition from three directions and the wiki has no single place where that convergence is stated.",
   "action": ""
+ },
+ {
+  "a": "Hoffman",
+  "b": "Wolfram",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag.",
+  "source_date": "2026-08-29"
+ },
+ {
+  "a": "Carroll",
+  "b": "Hoffman",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag.",
+  "source_date": "2026-08-29"
+ },
+ {
+  "a": "Carroll",
+  "b": "Wolfram",
+  "date": "2026-08-29",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**A standing cluster put to a question it has not been asked**",
+  "source": "finding",
+  "sid": "[PROP-2026-08-12-010] Pavlic and Reber turns (PRS-94; CROSS-105), read against FLAG-013 / FINDING-042",
+  "card": "",
+  "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
+  "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag.",
+  "source_date": "2026-08-29"
  }
 ]

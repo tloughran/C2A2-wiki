@@ -166,3 +166,12 @@ Ingested 10 triplet(s) from 6 source files: PRS-83 … PRS-92. Two of the six ca
 - *PROP-2026-08-10-003 candidate-02* (metabolism proves substrate-independence). The card flags it as the wiki's inference rather than a position the authors are shown to take. As a bare substrate-independence claim it duplicates PRS-04, PRS-09 and PRS-38; the one addition worth having — that the operative variable is feedback-plus-costed-plasticity rather than the medium — has no source. The costed-adaptation point is preserved inside PRS-92, where it is what the model actually shows.
 
 **Standing caveat opened (PRS-86).** Levin states on the record that his public output on Platonic Space is deliberately narrower than his view. PRS-16, PRS-34 and PRS-79 are therefore a lower bound, and should be read as such until the book's Part 2 exists.
+
+## Ingestion Log — 2026-08-29
+Ingested 3 triplet(s) from 1 source file: PRS-93 - PRS-95.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-08-12_levin_defining-life-conversation.md` | PROP-2026-08-12-010 | PRS-93 - PRS-95 | Full 37-page PDF retrieved; front matter, abstract, Introduction, Methods and roughly one third of the Conversation read verbatim; the remaining two thirds and the reference list NOT read. **The card's load-bearing finding is carried into every triplet: Levin contributes no speaker turn.** He is corresponding author and co-compiler only. PRS-93 is therefore the only Levin-voiced claim and is methodological, not biological. **PRS-94 was ingested at Medium against the card's own High** — the quotations are High-confidence as quotations, but as positions held by this tradition they are not, because the namesake compiled the exchange rather than taking part in it. PRS-95 is Medium because it is Gentili paraphrasing Levin; check against McMillen & Levin 2024 before downstream use. |
+
+**Ledger correction recorded the same day.** Eleven approved proposals that `scripts/ingest_ledger.py` reports as OPEN were in fact adjudicated in tradition `wiki.md` ingestion tables (mostly as **+0** duplicates) and were never written to `inbox/PROCESSED_LOG.md`, which is the only file the ledger reads. Two of them — PROP-2026-07-27-001 and PROP-2026-07-27-003 — are on this page's own 2026-08-28 table. They have now been logged; see PROCESSED_LOG under 2026-08-29.

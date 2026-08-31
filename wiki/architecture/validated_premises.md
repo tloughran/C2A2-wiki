@@ -6685,3 +6685,283 @@ PREMISE-188:
     found with any existing premise in the consistency pass.
   Re-check due: 2026-11-28 (Quarterly)
   Status: ACTIVE
+
+
+---
+
+PREMISE-189:
+  Date validated: 2026-08-29
+  Source item: ASSUMPTION-497
+  Statement: Where a record is absent from an artifact set, the artifact set ALONE cannot distinguish
+    deliberate omission from incidental loss. Detection of omission requires an independently
+    maintained expectation about what should be present — a peer log, a pre-declared state-transition
+    set, or a pre-move manifest — and where one actor produces both the records and the operation that
+    moved them, the two hypotheses are formally indistinguishable. Two corollaries are load-bearing.
+    (a) Bulk state transitions are independently documented as a high-loss operation, so "incidental
+    loss" is not the courtesy hypothesis; it carries its own positive prior. (b) RANKING the two
+    hypotheses from an evidence gap is a known bias, not an inference: attribution research finds that
+    negative outcomes plus missing evidence reliably produce intent attributions, and blameless-
+    postmortem practice exists specifically to suppress that move. The correct output of such an
+    analysis is a DISJUNCTION plus the manifest that makes the next occurrence decidable — never a
+    ranked reading, and never one that assigns intent to a person.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Aura Docs 2026, "The Immutable Audit Trail" (omission detectable only via an
+    independent tip; a party controlling both log and committer can silence an entry undetectably);
+    USPTO 7,908,160 (anomaly audit events require a pre-declared expected-event set); Datamondial 2026
+    (bulk migration as a documented audit-trail-loss operation).
+  Challenges noted: 15b challenged the SOURCE ITEM's ranking of withholding over loss (PagerDuty
+    blameless-postmortem practice; attribution-bias findings; Augment Code 2026 on causality existing
+    where evidence does not). That challenge is not outweighed — it is INCORPORATED as corollary (b).
+    The ranking itself is explicitly NOT part of this premise.
+  Confidence: Moderate
+  Confidence rationale (stated, not implied): the claim is close to definitional and both search
+    directions reached it, but 15a and 15b ran in the same process this cycle, so their agreement is
+    discounted below the usual standing discount. Moderate, not High, for that reason alone.
+  Applicable to: Agent 16 (deferred-action monitor); any bulk state transition over proposals or
+    premises; all forensic reasoning this system performs on its own artifacts.
+  Consistency check: run 2026-08-29 against validated_premises.md; no contradiction with any ACTIVE premise.
+    DENOMINATOR DECLARED: check covered 78 of 118 premise IDs. PREMISE-001..043 are absent from the
+    register (REVISE-242, open 39 days), so a contradiction with a missing premise would not be seen.
+  Re-check due: 2026-11-29 (Quarterly)
+  Status: ACTIVE
+  Disposition record: DISPOSITION-845 (lit_search_returns.md, 2026-08-29)
+
+---
+
+PREMISE-190:
+  Date validated: 2026-08-29
+  Source item: ASSUMPTION-498
+  Statement: Action controls in generated list UIs must be bound to a STABLE UNIQUE IDENTIFIER of the
+    record they act on, never to the record's position in the list. Position-based binding is a
+    correctness defect, not a cosmetic one: it causes a control to act on a different record than the
+    one rendered beside it. LOAD-BEARING CORRECTION to the source item's proposed remedy: the fault is
+    unstable keys, not a wrong offset, and it is triggered by list MUTATION (insert, delete, reorder,
+    sort). Correcting an offset therefore restores correctness only until the next mutation, and in a
+    queue that mutates by construction that is a repair with a scheduled expiry — worse than the known
+    defect, because the generator then carries a "fixed" label and attracts less suspicion. The
+    verification that follows the fix must be a STANDING INVARIANT (diff control-target against record
+    id after a deliberate mutation), not a one-time reconciliation.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Vue.js Guide, "List Rendering" (default in-place patch reflects what belongs at
+    that INDEX; unique key required to track identity); Wikipedia, "Off-by-one error"; practitioner
+    consensus on index-as-key (Developer Way; Medium/techsolutionsx; DEV Community) documenting node
+    reuse against the wrong data on reorder/insert/delete.
+  Challenges noted: the challenge did not weaken the claim, it CHANGED THE REMEDY, and the changed
+    remedy is what appears above. Recorded because it is the reason this premise does not rest on this
+    run's compromised 15a/15b agreement: 15b altered the conclusion rather than echoing it.
+  Confidence: Moderate
+  Confidence rationale: the defect class is uncontroversial and the transfer to a hand-rolled Python
+    HTML generator is favourable (simpler than the framework case the sources describe); held at
+    Moderate only for the snippet-level evidence grade and the same-process independence defect.
+  Applicable to: generate_review_page.py; the proposal review/approval path; any generated artifact
+    that places an action control beside a record.
+  Consistency check: run 2026-08-29; no contradiction with any ACTIVE premise. Same declared denominator
+    caveat as PREMISE-189 (78 of 118).
+  Re-check due: 2026-11-29 (Quarterly)
+  Status: ACTIVE
+  Disposition record: DISPOSITION-846 (lit_search_returns.md, 2026-08-29)
+
+
+# ===== 2026-08-30 lit-search run (2026-08-30) =====
+
+PREMISE-191:
+  Date validated: 2026-08-30
+  Source item: ASSUMPTION-493
+  Statement:
+    A derived aggregate that is computed independently by more than one consumer will circulate in
+      mutually inconsistent versions, and repetition rather than re-derivation will settle which version
+      is treated as authoritative. The remedy is not to select one surviving number but to designate a
+      single mastering site for the underlying measures and dimensions, from which each reported figure is
+      derived with its scope stated; multiple correctly-scoped figures are legitimate, undocumented scope
+      is not.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-493_for.md (15a SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-493_against.md (15b PARTIALLY-CHALLENGED, Moderate) — the challenge was ADOPTED into the statement above, not outweighed
+  Confidence: Moderate
+  Applicable to:
+    Any reported network/PRS count; morning email figures; ASSUMPTION-493/510, PRESUMPTION-514/528;
+      outbound artifacts that quote a total.
+  Re-check due: 2026-11-30 (Quarterly via 15d)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-851 · Evidence grade: snippet-level only
+
+
+PREMISE-192:
+  Date validated: 2026-08-30
+  Source item: ASSUMPTION-501
+  Statement:
+    Where two search directions return conflicting evidence, the conflict is settled by the directness and
+      quality of the sources rather than by averaging the two verdicts — and, because directness judgments
+      are themselves known to have poor inter-rater reliability, the criterion applied must be recorded
+      alongside the decision so the adjudication remains reviewable rather than merely asserted.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: see lit_search_results/for/ASSUMPTION-501_for.md (15a SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/ASSUMPTION-501_against.md (15b PARTIALLY-CHALLENGED, Moderate) — the challenge was ADOPTED into the statement above, not outweighed
+  Confidence: Moderate
+  Applicable to:
+    Agent 15c disposition procedure; all cross-agent conflict resolution; the disposition records in this
+      file, including those written today.
+  Re-check due: 2026-11-30 (Quarterly via 15d)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-853 · Evidence grade: snippet-level only
+
+
+PREMISE-193:
+  Date validated: 2026-08-30
+  Source item: PRESUMPTION-515
+  Statement:
+    Repairing a named single-point-of-read (or equivalent single-source dependency) at the instance does
+      not discharge the class: sibling channels sharing the same structure remain untested until
+      enumerated. The enumeration must be risk-ranked and capped rather than exhaustive, because a finding
+      list that exceeds closure capacity measurably degrades response to the findings that matter.
+  Item type: PRESUMPTION (unstated)
+  Supporting evidence: see lit_search_results/for/PRESUMPTION-515_for.md (15a SUPPORTED, Strong)
+  Challenges noted: see lit_search_results/against/PRESUMPTION-515_against.md (15b PARTIALLY-CHALLENGED, Moderate) — the challenge was ADOPTED into the statement above, not outweighed
+  Confidence: Moderate
+  Applicable to:
+    Phase 0 and all agent intake channels; ASSUMPTION-492/PRESUMPTION-515; monitor design generally;
+      relates to open systemic-risk flags G1 and G2.
+  Re-check due: 2026-09-30 (Monthly via 15d)
+  Status: ACTIVE
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-862 · Evidence grade: snippet-level only
+
+
+
+================================================================================
+## Minted 2026-08-31 — c2a2-lit-search-pipeline, cohort 2026-08-30
+## Four premises. All four were searched under GENUINE 15a/15b context separation
+## (see the 2026-08-31 RUN HEADER in lit_search_returns.md); the same-process
+## coupling discount in force since 2026-08-29 does not apply to them.
+## Read PREMISE-197's reflexive note before treating that separation as independence.
+================================================================================
+
+PREMISE-194:
+  Date validated: 2026-08-31
+  Source item: PRESUMPTION-894  (DISPOSITION-873 — REVISE for the design limb, INCORPORATE for this limb)
+  Statement: An agent's in-session recollection of its own work is not an independent copy of the record
+    that work produced. Independence is a property of provenance, not of storage medium: a recollection and
+    a record generated by the same process are one source counted twice, and their errors will tend to agree
+    rather than to conflict, producing false confirmation instead of detectable divergence. Corroboration of
+    a claim about what happened requires an artefact produced by a different process — a harness tool-call
+    log, a file diff, a checksum — cited directly rather than narrated.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight, the designers were unaware)
+  Supporting evidence: PCAOB AS 1105 (Audit Evidence) — evidence from a source independent of the entity is
+    more reliable; a representation about one's own reliability is not ground for relying on it.
+    Reconstructive-memory literature — recall fills gaps with plausible material and the result is
+    experienced as faithful. LLM-specific self-report work (arXiv:2605.26242, 2603.01254 — snippet-level,
+    unverified, corroborating only).
+  Challenges noted (15b, CHALLENGED Strong — same direction, not opposing): Turpin et al., 2023 (NeurIPS),
+    unfaithful chain-of-thought. 15b's steelman is preserved and is the operative caveat: where events are
+    present VERBATIM in context as tool calls and results, the agent is reading a log rather than
+    introspecting — but in that case the honest move is to cite the log, because the log is doing the work.
+    The steelman's three conditions (verbatim, uncompacted, same session) must all hold, and they fail
+    silently when they do not.
+  Confidence: High — both search directions returned Strong, independently, and reached the same conclusion.
+  In-house evidence: on 2026-08-31 this pipeline destroyed two SYSTEMIC-RISK-FLAG files by concurrent write
+    and reconstructed both from the authoring agents' end-of-run summaries. Both reconstructions are labelled
+    LOSSY and DERIVATIVE precisely because of this premise. The premise was applied to its own minting run.
+  Applicable to: incident narratives; 14a/14b extraction from recollection rather than artefact; any
+    disposition citing "the agent reported that..."; Agent 16's follow-through verification.
+  Re-check due: 2026-11-30 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-195:
+  Date validated: 2026-08-31
+  Source item: PRESUMPTION-895  (DISPOSITION-874 — REVISE for the design limb, INCORPORATE for this limb)
+  Statement: Voluntary self-report is not a detection control. A control whose only output is the assertion
+    of the controlled party produces silence as the shared output of "nothing went wrong" and "detection is
+    not working," and nothing downstream can distinguish them. Detection must be evidenced by an artefact
+    produced independently of the party being assessed. Self-report remains useful as a supplementary
+    channel and is never sufficient as the sole one.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: SOC 2 / ISO 27001 attestation practice — operating effectiveness must be tested by an
+    external party; self-assessment carries no evidentiary weight. arXiv:2501.14778 — AI incident reporting
+    under voluntary regimes under-reports because reporting depends on discretion and carries cost to the
+    discloser. Silent-data-corruption literature — defined by producing wrong results while raising no log.
+  Challenges noted (15b, CHALLENGED Strong — same direction): Bates et al., 2023, NEJM 388:142-153 — mature
+    voluntary reporting systems, staffed by trained professionals with ethical duty and institutional
+    support, detect on the order of one event in twenty. That is the CEILING under favourable conditions.
+    15b's steelman is preserved: agents lack the disincentives (blame culture, career risk) that drive
+    hospital under-reporting, so the binding constraint may be NOTICING rather than WILLINGNESS. This run's
+    incident supports the steelman's diagnosis and not its conclusion — neither agent concealed anything;
+    one simply did not notice.
+  Confidence: High
+  In-house evidence: n=2, accidental, and the only such datum this estate has ever held. Of two destructive
+    writes caused by concurrent agents on 2026-08-31, one was voluntarily self-reported and one was
+    invisible to every agent involved, found only by an external reconciliation pass. 50% on a sample of
+    two, pointing the same way as the ~5% in the healthcare literature.
+  Caveat carried from 15a: file integrity monitoring is the off-the-shelf remedy, but against registers that
+    legitimately change every run a naive checksum baseline alarms constantly. The transfer requires design
+    work the sources do not supply. See REVISE-417 for the specific proposal (per-run manifest + diff).
+  Applicable to: all register writes; the daily/weekly scheduled agents; any run that reports success.
+  Re-check due: 2026-09-30 (Monthly — elevated cadence; this is the estate's highest-rated open risk)
+  Status: ACTIVE
+
+PREMISE-196:
+  Date validated: 2026-08-31
+  Source item: ASSUMPTION-1240  (DISPOSITION-878)
+  Statement: An access restriction enforced in the capability grant has a lower violation rate than the same
+    restriction expressed as an instruction, because instruction-following is probabilistic and capability
+    withholding is not. Enforcement is necessary and not sufficient: it does not bound risk arising from what
+    a read-only agent can still read and still emit.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: OWASP LLM06:2025 Excessive Agency — specifies the restriction be implemented in the
+    connecting identity's permissions rather than in instructions. arXiv:2605.18414 "Prompts Don't Protect" —
+    prompt-level restriction fails in 4-37% of adversarial cases, failure rate highest precisely when the
+    forbidden tool is the most useful one for the task.
+  Challenges noted (15b, PARTIALLY-CHALLENGED Moderate): Willison, 2025, "The lethal trifecta" — read access
+    is itself a leg of the exfiltration path, and C2A2's agents read a vault of arbitrary ingested
+    third-party text while emitting files and web searches, which is all three legs. 15b's own steelman
+    concedes the comparative claim ("nobody claims read-only is sufficient, only that an unenforced grant is
+    strictly worse"), which is why this challenge limits the premise rather than defeating it. The
+    incident-reduction benefit of enforcement is close to UNMEASURED; the corpus is largely vendor advocacy.
+  Confidence: Moderate — NOT High. The 4-37% figure is an unverified 2026 preprint seen at snippet level;
+    the adversarial framing may not transfer to benign scope drift; much of the corpus is vendor material.
+  Inherited limitation: this premise says enforcement beats exhortation ONCE THE BOUNDARY IS DRAWN. It says
+    nothing about whether the boundary is drawable, which is PRESUMPTION-902 (CHALLENGED Strong, REVISE-420).
+  Applicable to: agent tool-grant design estate-wide; ASSUMPTION-1235's remedy (REVISE-419); scheduled-agent
+    configuration for Agents 15d and 16.
+  Re-check due: 2026-09-30 (Monthly — flagged for 15d because the sourcing is thin and recent; if
+    arXiv:2605.18414 fails verification, drop confidence to Weak and re-open)
+  Status: ACTIVE
+
+PREMISE-197:
+  Date validated: 2026-08-31
+  Source item: PRESUMPTION-900  (DISPOSITION-885 — conditional form INCORPORATED, unconditional form
+    explicitly NOT incorporated, per the ASSUMPTION-1226 limb-split precedent)
+  Statement: Agreement among independently-run generators is corroboration by default and redundancy only
+    when a common cause screens it off. For agents sharing a base model, prompt scaffold, or upstream
+    context, the common cause is present, and agreement carries far less information than the count of
+    agreeing agents suggests. Convergence may be pooled and up-weighted only after an explicit independence
+    judgement; absent that judgement, C2A2 treats agreement among its own agents as approximately one
+    observation.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Supporting evidence: Bommasani et al., 2022, algorithmic monoculture (NeurIPS). Pseudoreplication
+    literature (the older statistical form of the same error). arXiv:2605.29800 — nine frontier LLM judges
+    across seven families carry approximately two votes of independent information.
+  Challenges noted (15b, CHALLENGED Strong — directed at the UNCONDITIONAL form, which is not incorporated):
+    Bovens & Hartmann, 2003, Bayesian Epistemology (OUP); Lewis; Olsson; Roche. Agreement among sources is
+    the paradigm case of confirmation, defeated by failure of individual credibility or collective
+    independence. The unconditional rule would also fire on cases where independence DOES hold, discarding
+    real corroboration. Olsson's further point is carried: agreement without established individual
+    credibility is not truth-conducive at all, and C2A2 has never established that its proposal-generating
+    agents are better than chance on proposal quality.
+  Confidence: Moderate-High — peer-reviewed anchors on both sides; the LLM-specific preprints corroborate
+    rather than carry the weight.
+  Consistency check: CONSISTENT with and generalises PREMISE-096 (the standing 15a/15b correlation
+    discount), which is this principle applied to one pair of agents. No ACTIVE premise contradicts it. It
+    TIGHTENS several existing consensus premises (ASSUMPTION-008, PRESUMPTION-004, the tripled-agent 2/3
+    threshold) without superseding them; 15d should re-read those against this premise next monthly cycle.
+  REFLEXIVE NOTE — recorded deliberately, not as a caveat but as an application: this premise partially
+    undercuts the headline improvement of the run that minted it. The six 15a/15b contexts were SEPARATE
+    CONTEXTS, not independent generators — same base model, same prompt scaffold. Context separation removed
+    a contamination channel; it did not create statistical independence. Every "both directions converged"
+    claim in the 2026-08-31 run should be read at that discount: stronger than same-process coupling,
+    weaker than independent corroboration.
+  Applicable to: the intake dedup rule (ASSUMPTION-1242 / MONITOR-588); the two-mention promotion threshold
+    (ASSUMPTION-1246 / MONITOR-590); the 2/3 consensus machinery; the 15a/15b independence discount itself;
+    and the accelerator's core measurement problem — what counts as evidence that richly-informed
+    perspectives have genuinely converged rather than shared a prior.
+  Re-check due: 2026-11-30 (Quarterly)
+  Status: ACTIVE
+

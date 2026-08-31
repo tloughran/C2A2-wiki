@@ -41,3 +41,18 @@ Kastrup's idealism is *dissociative* — the many alters are real boundaries wit
 **Synthesis claim:** Rohr supplies a resolution Kastrup gropes for: joy-as-ground need not deny suffering if the ground is a *wounded* love (solidarity-in-suffering) rather than a bliss that overlooks it. That reframes 'inherent joy' as inherent compassionate presence, which does not insult the sufferer.
 
 **Open question:** Can an idealist metaphysics distinguish 'the ground is joy' from 'the ground is love that suffers-with' — and does Kastrup's dissociation model have room for the second without collapsing into the first?
+
+---
+
+## Does the correction leave a person standing?
+*Sewing Agent, 2026-08-30*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-08-28_rohr_glory-of-god-point-of-nothingness.md` (0 backlinks).
+
+**Why it sits here:** Rohr's load-bearing line — "Thinking creates the separate self, the ego self, the insecure self" — is a claim that apparent separateness is *manufactured by a process* rather than being fundamental. That is the shape of Kastrup's dissociation claim, in devotional register. Merton's "point of nothingness... inaccessible to the fantasies of our own mind or the brutalities of our own will" then names an inner locus explicitly beyond both cognition and volition.
+
+**Synthesis claim:** The two accounts agree that the separate subject is generated, and disagree about what remains when the generation is seen through. Rohr locates the ground *inside* the person — a point that was always there, untouched, and is still in some sense theirs. Kastrup locates it *outside* every person, as the one mind of which persons are alters. Rohr's correction leaves an individual who now sees truly; Kastrup's, taken to its end, leaves no individual to do the seeing. The network has repeatedly filed these as the same insight in two idioms, and on this point they are not.
+
+**Open question the wiki cannot yet answer:** Is there any observation, phenomenological or otherwise, that distinguishes "the separate self was constructed by thought and the true self is what was always underneath" from "the separate self is a dissociative boundary in Mind at Large"? If not, the convergence is verbal, and saying so is a result — it would mean the traditions differ in what they *promise*, not in what they *predict*.
+
+**Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_glory-of-god-point-of-nothingness]]

@@ -1067,3 +1067,25 @@ DECISION-083:
     Transform at each step:
       14a: Recorded from the archive's duplicates section and the day's summary. The observation about the other four rulings is 14a's, marked as rationale commentary. [stated]
     Current status: ADOPTED
+
+---
+
+### Run note — 2026-08-30 (14a)
+
+**No new decisions.** The register still ends at **DECISION-083 (2026-08-27)** — four days without an
+attended ruling. Every disposition made on 08-28, 08-29 and 08-30 was agent-side: 19 lit-search
+dispositions (DISPOSITION-851–869), 3 revision flags (REVISE-410, 411, 412), 3 validated premises
+(PREMISE-191, 192, 193), 14 monitor entries (MONITOR-571–584).
+
+Nine proposals are waiting in `review/2026-08-30_review.html` (the six from 08-28 plus today's three
+Rohr proposals, PROP-2026-08-30-001/-002/-003). Review-pass gap: **3 days.**
+
+Four decisions are now queued for Tom and are recorded as OPEN-175–178 rather than pre-empted here:
+the register's recovery-point objective, whether premise-amendment has a failure mode, whether
+convergence among independent proposals is corroboration or redundancy, and why the 26 alias notes
+must be created by hand. Two further items require only authorisation, not deliberation:
+the notification channel of record (OPEN-168, day eight) and REVISE-412's human check on the
+reconstructed 2026-08-29 register entries.
+
+*(14a does not make decisions. This note exists so that the four-day gap is on the decision register
+rather than only in the changelog. See OPEN-174.)*

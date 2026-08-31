@@ -145,3 +145,21 @@ Rohr frames exile as a condition to be *healed* (return to union); but the netwo
 **Synthesis claim.** The two readings are separable and testable against each other, and the discriminating question is what the textual shift is *evidence of*. On Rohr's reading, a movement from judgment to patience within a book is evidence about the author's development. On Wright's, the same movement is evidence about the narrative position of the material within an exile-and-return arc — judgment before the exile, consolation after — and has nothing to do with the prophet's psychology. Redaction history alone could produce Rohr's pattern with no development in anyone. This is the first item in the vault where the Rohr and Wright wings make incompatible claims about the same primary text.
 
 **Open question the wiki cannot yet answer.** Does the judgment-to-patience arc hold *within* material securely attributed to a single hand and a single period, or does it track the canonical arrangement of pre- and post-exilic material? That is a question a scholar can answer and the wiki cannot. Until it is answered, PROP-2026-08-23-003's PRS-CANDIDATE-A — canonical prophetic books as a naturally occurring longitudinal corpus — is measuring an unknown mixture of authorial development and editorial arrangement, and should not be ingested as settled exegesis. The proposal itself names Wright as the ground-truth check; this note records what the check has to decide.
+
+---
+
+## Does the Spirit individuate or incorporate?
+*Sewing Agent, 2026-08-30*
+
+**Pages at the intersection (both orphaned, both from this run's batch):**
+`inbox/proposals/pending/2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation.md` and
+`inbox/proposals/pending/2026-08-28_rohr_realigned-true-self-sin-as-separateness.md` (0 backlinks each), with
+`inbox/proposals/pending/2026-08-30_rohr_descending-religion-jesus-christ-distinction.md` bearing on the second half.
+
+**Why they sit here:** Wright and Rohr published on Romans 8 in the same week of August 2026 and read it in opposite directions. Wright takes the Spirit's indwelling corporately and eschatologically: the Spirit-filled Church is a *sign in the present* of what God intends for the whole world, and "filled with the Spirit" is relocated from individual interiority to communal function. Rohr takes the same indwelling as the definition of the true self — "who you are because of the divine indwelling" — and reads the Christ event as "an announcement of what is happening in all of us."
+
+**Synthesis claim:** The two are not offering different emphases within one doctrine; they are answering different questions with the same texts. Wright's question is what the Church is *for* in the interval before new creation, and his answer makes the Spirit's presence publicly inspectable. Rohr's question is what a person most fundamentally *is*, and his answer makes the Spirit's presence the ground of individual identity. The Jesus/Christ distinction of PROP-2026-08-30-003 sharpens this: Rohr's kenotic path is walked by an individual from inside their own limitation, where Wright's sign-hood is a property only a community can have.
+
+**Open question the wiki cannot yet answer:** Is Rohr's universalising of the Christ event ("what is happening in all of us") licensed by Colossians 1:17–20 and Romans 8:9 as Wright reads them, or is it an over-read? This is decidable by exegesis and the network has the tradition to decide it — but has not, and has instead been quietly filing the two as compatible mystical and historical registers of one claim.
+
+**Wikilinks (sewing, 2026-08-30):** [[2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation]] · [[2026-08-28_rohr_realigned-true-self-sin-as-separateness]] · [[2026-08-30_rohr_descending-religion-jesus-christ-distinction]]

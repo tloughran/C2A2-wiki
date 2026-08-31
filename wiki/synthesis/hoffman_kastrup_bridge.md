@@ -58,3 +58,18 @@
 **Synthesis claim.** If the two defenses are the same move, interface theory has an ally it has never claimed, arriving from analytic idealism rather than from evolutionary game theory — and the 'fitness beats truth' result stops being the sole load-bearing support for the interface reading, since Kastrup reaches the same conclusion with no appeal to selection at all. That would make the representational thesis considerably more robust than either tradition's own argument makes it look.
 
 **Open question the wiki cannot yet answer.** Do the two accounts agree on *what* the appearance is a mismatch with? Hoffman's answer is a structure of conscious agents; Kastrup's is the intrinsic mental character of Mind-at-Large's excitations. Those may or may not be the same referent, and the question is not rhetorical: if they differ, the shared defense is a coincidence of form and the alliance is illusory in the ordinary sense.
+
+---
+
+## Many subjects from one, without adding a substance
+*Sewing Agent, 2026-08-30*
+
+**Orphaned pages at the intersection:** `inbox/proposals/pending/2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket.md` (0 backlinks); see also `inbox/proposals/approved/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md`, on which both thinkers appear.
+
+**Why it sits here:** Kastrup's "an alter is a collection of many dissociations," and his separation of *decombination* from *dissociation*, parallel Hoffman's fusion and fission operations on conscious agents. Both are attempts to get many subjects out of one without positing a new kind of stuff — the combination problem, approached from opposite directions.
+
+**Synthesis claim:** The two programmes differ less in what they claim than in how far the claim is formalised. Hoffman's agents combine and decompose under operations that are defined mathematically; Kastrup's dissociation and decombination are, so far, described. The asymmetry is the finding. It means the pair is not a symmetric convergence to be recorded and left, but a place where one tradition has machinery the other's question needs — and where borrowing it would commit Kastrup to structure (plurality of agents as basic) that his one-mind ontology may not accept.
+
+**Open question the wiki cannot yet answer:** Can Kastrup's decombination be stated as one of Hoffman's operations without smuggling in agent plurality at the base? If it cannot, the two accounts are rivals rather than allies, and every page in this wiki that lists them together as consciousness-first fellow travellers is glossing over the thing that actually separates them.
+
+**Wikilinks (sewing, 2026-08-30):** [[2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket]] · [[2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel]]

@@ -85,3 +85,20 @@ The genuinely exposed entry is **2026-07-26**, and not for the reason given: it 
 **2026-08-09 survives weakened.** Its claim is about the output signature of a mode of knowing — it yields relation, never a point estimate — and that argument runs under either doctrine. But its force depends on "relation" meaning the same thing in the divine and the human case, which is what analogy denies. The diagnostic still works; under analogy it stops being one diagnostic and becomes two.
 
 **Note for the record:** the strongest Rohr↔Stump convergence the wiki holds (2026-08-02, so described in its own entry) is one of the robust ones. The audit did not cost the network its best material.
+
+---
+
+## Is the disordered will re-ordered or removed?
+*Sewing Agent, 2026-08-30*
+
+**Orphaned pages at the intersection (both from this run's batch, 0 backlinks each):**
+`inbox/proposals/pending/2026-08-28_rohr_realigned-true-self-sin-as-separateness.md` and
+`inbox/proposals/pending/2026-08-30_rohr_true-seed-within-soulmaking-as-integration.md`.
+
+**Why they sit here:** The first redefines sin functionally as a *relational state* of disconnection rather than as an act, with addictive substitution as its downstream signature — close in shape to Stump's account of the will's internal division and of shame as isolation from union. The second supplies the mechanism the first lacks: transformation gathers the pared-off ego patterns and integrates them, so the false self is material rather than waste, and the endpoint is a new wholeness rather than a recovered original.
+
+**Synthesis claim:** Read together, Rohr's account is *non-eliminative* about the faculty that went wrong — the separateness is healed by reconnection and the ego structures are re-ordered, not deleted. That is the same commitment Stump's Thomism makes about the will under grace: the faculty is redirected, not replaced, because a replaced faculty would not be the same person's. The convergence is between a Franciscan and an analytic Thomist and is structural rather than devotional, which is what makes it worth verifying rather than admiring.
+
+**Open question the wiki cannot yet answer:** Is Aquinas on mortification actually re-ordering rather than suppressive? The Monk Kidd proposal asserts the contrast — Aquinas standardly read as suppressive, Rohr as integrative — and the wiki has taken it on trust. If the standard reading of Aquinas is wrong, the convergence is much stronger than either tradition has claimed; if it is right, Rohr's integrative move is a real departure and should not be filed as agreement.
+
+**Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_realigned-true-self-sin-as-separateness]] · [[2026-08-30_rohr_true-seed-within-soulmaking-as-integration]]

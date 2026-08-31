@@ -158,6 +158,12 @@ Three prior actors independently reached the same handling conclusion and are no
 **Systemic note, larger than this item:** the 2026-08-27 header states the standing judgment that "agent-produced source-capture proposals are output rather than candidates for individual review." That judgment is defensible for the ordinary case and indefensible for this one — the whole point of a `content_verified: false` marker is to name the exception. If en-bloc unread approval is to remain the default, the batch step needs a filter that pulls `content_verified: false` items out of the bloc. Without it, every future deferred-verification watch has the same terminal failure mode: the thing the watch is protecting gets approved past it while the watch is still watching.
 
 
+**[ADDENDUM 2026-08-30 — the file is not merely approved; it is staged in the ingestion mirror, and the ledger has not yet consumed it.]** Agent 16 established this run that `inbox/` (root) is the ingestion staging mirror, not an archive: it holds **377 of the 378** files in `approved/` (the sole exception is `2026-05-12_repair_manifest.md`), holds **none** of the 6 files currently in `pending/`, and its `PROCESSED_LOG.md` was last written **2026-08-29 22:00**. `inbox/2026-08-14_wright_who-is-this-god-admirato.md` (mtime 2026-08-27 10:36, i.e. written by the 08-27 en-bloc pass) is **byte-identical** to the approved copy — same "Do not ingest the conjectures" text, same `status: pending` frontmatter. So the unverified card sits in the staging mirror in duplicate.
+**The one piece of good news:** a grep of `PROCESSED_LOG.md` (833 lines) for `who-is-this-god` returns **zero matches** — the card has **not been ingested**. Its twin `beatitudes-week-two` (PROP-2026-08-12-041) is likewise unlogged. Both are therefore *open* in the ledger's terms and eligible for the next ingestion run. The 08-29 log entry shows that run doing exactly this kind of work (one Levin proposal ingested to PRS-93..95, plus an eleven-item backfill of phantom-open entries), so the next daily ingest is a live opportunity for the risk to be realised.
+**Effect on the flag: unchanged in substance, sharper in urgency.** Tom's four options (deny / hold-marker / supply the retrieval / accept as-is) all remain open and all remain cheaper than a retraction, but the window is now measured in ingest runs rather than review passes. Option (b) — a `do_not_ingest: true` marker — would have to be applied to **both** copies (`approved/` and `inbox/` root) to bind. **Agent 16 has still moved and marked nothing.**
+Caveat on method: `scripts/ingest_ledger.py`, named in the 08-29 log entry, is **not present under the mounted `wiki/`** (only `tools/generate_review_page.py` is), so this finding rests on the log's own contents rather than on running the ledger. If the script reads a manifest Agent 16 cannot see, the OPEN/CLOSED reading above could be incomplete — but the absence of the slug from the log is direct evidence either way.
+
+
 ---
 
 ### INTEGRITY FLAG — 2026-07-21 — two proposals left the pipeline with no recorded disposition
@@ -4857,3 +4863,141 @@ This is a one-line change and removes both failure modes (dropped real decisions
 ---
 
 *Run completed 2026-08-28.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-29
+
+**Quiet run. No checks due, no intake in any channel, no state change since 2026-08-28. Nothing moved.**
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, `[TRACKED-16: 2026-05-05]`, `status: superseded`. WATCH-001 tombstone, not live work. **No untracked items.**
+- Channel 2 (agent-deferral): vault-wide grep for `DEFERRED-HYPOTHESIS` outside this file returns only the agent brief, `architecture/assumptions.md`, and the 08-23 cowork summary — **no submissions.** Channel 3 (human-watch): `WATCH-REQUEST` grep returns only definitional occurrences in the brief and `assumptions.md` — **no new requests.**
+
+**Condition Checks — none due.** WATCH-002 (last checked 2026-08-25) and WATCH-003 (last checked 2026-08-28) are both next due **2026-09-01** on weekly cadence. Counters unchanged at **6** and **7**. Unlike 08-28, no state change arrived that would justify running either off-cadence:
+- `review/archive/` still **18** files, latest still `2026-08-27_decisions.md` — no disposition file written since. WATCH-003's check method (a later decisions file naming PROP-2026-07-19-001) therefore cannot have new evidence today; verified by content grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/` and `inbox/` — only match remains the approved re-filing `PROP-2026-08-12-041`.
+- WATCH-002's half (b) source fetch deliberately not run: the ntwrightpage post has been byte-frozen since 2026-07-17 across five consecutive weekly fetches, and spending a check three days early on it would add confirmation, not information. Half (a) was decided negative on 08-28 and nothing has changed it.
+
+**Stale Item Check:** No new flags, no thresholds crossed. Both 08-25 flags stand as amended on 08-28.
+
+**Flag status — all three open flags unchanged, and none has been acted on:**
+- **INGESTION-RISK (2026-08-28):** `approved/2026-08-14_wright_who-is-this-god-admirato.md` verified unchanged this run — mtime still 2026-08-24 13:30, frontmatter still reads `status: pending`, no `do_not_ingest` marker present. The file is still in the ingestion path carrying its own "**Do not ingest the conjectures**" instruction. Tom's four options (deny / hold-marker / supply the retrieval / accept as-is) all still open. **Agent 16 has moved nothing.**
+- **INTEGRITY (2026-07-21):** untouched. Still the only thing holding both watches open, still a one-line ruling, still the highest-leverage open item.
+- **TOOLING NOTE:** carried, unexercised (half (b) not due).
+
+**`DEFERRED_ACTIONS_2026-08-27.md` — re-checked, still unreachable.** This run enumerated the session mounts directly: only `wiki/` and `wiki/review/` are mounted; the repo root one level above `wiki/` is not. `find` across all mounts for `DEFERRED_ACTIONS*` and `PENDING_ESCALATIONS*` returns nothing. The 17 deferred recommended actions named in the 08-27 archive remain untriaged and untracked. **Request to Tom stands: move the file under `wiki/`, or confirm Agent 16 should ingest it as a Channel-3 batch.** This is the one item where the blockage is purely mechanical.
+
+**Pipeline note (not Agent 16 business, recorded for continuity):** `pending/` has refilled **0 → 6** with 2026-08-28 tradition-agent proposals (Friston, Kastrup, Rohr ×2, Wolfram, Wright). None bears on either watch — grep for the two watched slugs across `pending/` is negative. Census: `pending/` 6, `approved/` 378, `denied/` 1, `needs_review/` 1.
+
+**Watch List Status:**
+- Items checked: **0** (none due)
+- Items resolved: **0**
+- Items still watching: **2**
+- Items stale: **2** (carried)
+- New items added: **0**
+- New flags: **0**
+
+**Notes:**
+- **MAINTENANCE FLAG — carried, binding.** `watch_list.md` entered this run at **527,895 bytes**; the Read tool still cannot open it and this run worked entirely through targeted greps, with a pre-edit backup written to the run sandbox. **110** run summaries for **3** lifetime watch items. Recommendation unchanged and unexecuted (Tom's call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, flags, the resolved index and the trailing ~14 days here. Reversible, no data lost. Today's entry is kept deliberately short for this reason.
+- **BUDGET NOTE (Rule 6):** within budget. Last run overran and said so; this one had no state change to write up.
+- Standing reminder (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 (half (b) source fetch, → count 7) and WATCH-003 (→ count 8), weekly cadence. Both remain STALE-flagged. A ruling on the INTEGRITY FLAG closes WATCH-003 before then; a ruling on the INGESTION-RISK FLAG likely closes WATCH-002.
+
+**Agent 16 Status:** Operational, idle by design. Nothing due, nothing new, nothing moved. Decision-archive coverage current through **2026-08-27**; review-pass gap **2 days**. **Open for Tom, unchanged in priority order:** (1) rule on the **INGESTION-RISK FLAG**; (2) rule on the **INTEGRITY FLAG**; (3) make `DEFERRED_ACTIONS_2026-08-27.md` reachable or confirm Channel-3 ingest; (4) the systemic fix — exclude `content_verified: false` from en-bloc unread approval; (5) the Channel 2 question, standing since 08-23; (6) run-log archival; (7) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-29.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-30
+
+**Quiet run for the watch list; one substantive new finding on the INGESTION-RISK FLAG.** No checks due, no intake in any channel, nothing resolved, nothing moved.
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, `[TRACKED-16: 2026-05-05]`, `status: superseded`. WATCH-001 tombstone, not live work. **No untracked items.**
+- Channel 2 (agent-deferral): vault-wide grep for `DEFERRED-HYPOTHESIS` outside this file returns only the agent brief, `architecture/assumptions.md`, and the 08-23 cowork summary — **no submissions.** Channel 3 (human-watch): `WATCH-REQUEST` grep returns only definitional occurrences in the brief and `assumptions.md` — **no new requests.**
+
+**Condition Checks — none due; both correctly deferred to 2026-09-01.** Counters unchanged at **6** (WATCH-002) and **7** (WATCH-003).
+- WATCH-003: `review/archive/` still **18** files, latest still `2026-08-27_decisions.md`. No decision file written since, so the check method (a later decisions file naming PROP-2026-07-19-001) can have no new evidence today. Grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/` and `inbox/` confirms: the only matches remain the approved re-filing PROP-2026-08-12-041 and its staging-mirror copy. Off-cadence check **not** justified.
+- WATCH-002: source fetch not run — the ntwrightpage post has been byte-frozen since 2026-07-17 across five consecutive weekly fetches, and half (a) was decided negative on 08-28. Spending a check two days early would add confirmation, not information. Half (b) remains tool-blocked per the standing TOOLING NOTE.
+
+**NEW THIS RUN — `inbox/` (root) identified as the ingestion staging mirror, and the unverified Wright card is in it.** Full evidence recorded as an ADDENDUM under the INGESTION-RISK FLAG above. In brief: `inbox/` root mirrors 377 of 378 approved files and none of the 6 pending ones; `inbox/2026-08-14_wright_who-is-this-god-admirato.md` is byte-identical to the approved copy and was written by the 08-27 en-bloc pass; and `PROCESSED_LOG.md` (833 lines, last written 2026-08-29 22:00) contains **no** `who-is-this-god` entry — so the card is staged and un-ingested, i.e. eligible for the next daily ingest. This does not change the flag's substance or Tom's four options; it changes the timescale from review passes to ingest runs, and it means a hold marker would have to be applied to **both** copies to bind. Prior runs had verified the `approved/` copy only; the duplicate in the staging mirror was not previously on the record.
+
+**Stale Item Check:** No new flags, no thresholds crossed. Both 08-25 flags stand as amended 08-28.
+
+**Flag status — three open flags, none acted on:**
+- **INGESTION-RISK (2026-08-28):** amended today (see above). `approved/` copy verified unchanged — mtime still 2026-08-24 13:30, frontmatter still `status: pending`, no `do_not_ingest` marker; the newly-recorded `inbox/`-root copy is in the same state. **Agent 16 has moved and marked nothing.**
+- **INTEGRITY (2026-07-21):** untouched. Still the only thing holding WATCH-003 open, still a one-line ruling.
+- **TOOLING NOTE:** carried, unexercised (half (b) not due).
+
+**`DEFERRED_ACTIONS_2026-08-27.md` — re-checked, still unreachable.** `find` across all mounts for `DEFERRED_ACTIONS*` / `PENDING_ESCALATIONS*` returns nothing; only `wiki/` and `wiki/review/` are mounted. The 17 deferred recommended actions from the 08-27 archive remain untriaged and untracked. **Request to Tom stands: move the file under `wiki/`, or confirm Agent 16 should ingest it as a Channel-3 batch.**
+
+**Pipeline note (not Agent 16 business, recorded for continuity):** `review/2026-08-29_review.html` was generated 2026-08-29 04:38 carding the **6** proposals filed 2026-08-28 (Friston, Kastrup, Rohr x2, Wolfram, Wright — PROP-2026-08-28-001/-020/-040/-060/-061/-062). No decisions file has followed, so those 6 are awaiting Tom's pass. None bears on either watch. Census unchanged: `pending/` 6, `approved/` 378, `denied/` 1, `needs_review/` 1.
+
+**Watch List Status:**
+- Items checked: **0** (none due)
+- Items resolved: **0**
+- Items still watching: **2**
+- Items stale: **2** (carried)
+- New items added: **0**
+- New flags: **0** (one existing flag amended with new evidence)
+
+**Notes:**
+- **MAINTENANCE FLAG — carried, binding.** `watch_list.md` entered this run at **533,375 bytes**; the Read tool cannot open it, so this run worked entirely through targeted greps with a pre-edit backup. **111** run summaries for **3** lifetime watch items. Recommendation unchanged and unexecuted (Tom's call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, flags, the resolved index and the trailing ~14 days here. Reversible, no data lost.
+- **BUDGET NOTE (Rule 6):** over the 4,000-token per-task budget, and saying so rather than truncating the finding. The overrun is the ingestion-mirror investigation, which was not on the plan for a no-checks-due day.
+- Standing reminder (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually.
+
+**Next scheduled checks:**
+- **2026-09-01** — WATCH-002 (half (b) source fetch, -> count 7) and WATCH-003 (-> count 8), weekly cadence. Both remain STALE-flagged.
+
+**Agent 16 Status:** Operational. Nothing due, nothing new in intake, nothing moved. Decision-archive coverage current through **2026-08-27**; review-pass gap **3 days**. **Open for Tom, unchanged in priority order:** (1) rule on the **INGESTION-RISK FLAG** — now time-sensitive against the daily ingest, not the review pass; (2) rule on the **INTEGRITY FLAG**; (3) make `DEFERRED_ACTIONS_2026-08-27.md` reachable or confirm Channel-3 ingest; (4) the systemic fix — exclude `content_verified: false` from en-bloc unread approval; (5) the Channel 2 question, standing since 08-23; (6) run-log archival; (7) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-30.*
+
+## AGENT 16 RUN SUMMARY — 2026-08-31
+
+**Quiet run. No checks due, no intake in any channel, no state change since 2026-08-30. Nothing moved.**
+
+**Intake Scan:**
+- `needs_review/` — **1** item, unchanged: `2026-04-21_carroll_singer-mindscape-351.md`, `[TRACKED-16: 2026-05-05]`, `status: superseded`. WATCH-001 tombstone, not live work. **No untracked items.**
+- Channel 2 (agent-deferral): vault-wide grep for `DEFERRED-HYPOTHESIS` outside this file returns only the agent brief, `architecture/assumptions.md`, and the 08-23 cowork summary — **no submissions.** Channel 3 (human-watch): `WATCH-REQUEST` grep returns only definitional occurrences in the brief and `assumptions.md` — **no new requests.**
+
+**Condition Checks — none due; both correctly held to 2026-09-01.** Counters unchanged at **6** (WATCH-002) and **7** (WATCH-003).
+- WATCH-003: `review/archive/` still **18** files, latest still `2026-08-27_decisions.md`. The check method (a later decisions file naming PROP-2026-07-19-001) can have no new evidence today. Grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/`, `inbox/` and `pending/`: only matches remain the approved re-filing PROP-2026-08-12-041 and its staging-mirror copy. Off-cadence check **not** justified.
+- WATCH-002: source fetch not run — one day early, and the ntwrightpage post has been byte-frozen since 2026-07-17 across five consecutive weekly fetches; half (a) was decided negative on 08-28. Spending the check a day early would add confirmation, not information. Half (b) remains tool-blocked per the standing TOOLING NOTE.
+
+**Stale Item Check:** No new flags, no thresholds crossed. Both 08-25 flags stand as amended 08-28.
+
+**INGESTION-RISK FLAG — re-verified this run, state unchanged, and the ingest window did not close.**
+- `approved/2026-08-14_wright_who-is-this-god-admirato.md`: mtime still 2026-08-24 13:30, frontmatter still `status: pending`, **no `do_not_ingest` marker**. The staging-mirror copy `inbox/2026-08-14_wright_who-is-this-god-admirato.md` (mtime 2026-08-27 10:36) is confirmed byte-identical — both files md5 `885b300e0b640845f37bd3946fc11e54`. **Agent 16 has moved and marked nothing.**
+- `PROCESSED_LOG.md` (833 lines, unchanged): grep for `who-is-this-god` and `beatitudes-week-two` both return **zero**. Neither card has been ingested; both remain open in the ledger's terms.
+- **Note: no ingest run appears to have occurred on 2026-08-30.** The log's last dated section is still `## 2026-08-29 — daily run` plus its backfill; there is no 2026-08-30 section and no new entry. Whether the daily ingest is paused or simply logged nothing, the practical effect is that the window Tom has to rule in has not narrowed — but it has not widened either, and one un-run ingest is not a reason to relax the flag.
+- Staging-mirror census re-confirmed: `inbox/` root holds **377 of 378** approved files (sole exception `2026-05-12_repair_manifest.md`) plus four non-proposal legacy files (`README.md`, `c2a2_hoffman_levin_multiscale_proposal.md`, `hoffman_levin_transcript_raw.md`, `pending_hoffman_multiscale.md`) and **none** of the 9 files now in `pending/`.
+
+**`DEFERRED_ACTIONS_2026-08-27.md` — re-checked, still unreachable.** `find` across all mounts for `DEFERRED_ACTIONS*` / `PENDING_ESCALATIONS*` returns nothing; only `wiki/` and `wiki/review/` are mounted. The 17 deferred recommended actions from the 08-27 archive remain untriaged and untracked. **Request to Tom stands: move the file under `wiki/`, or confirm Agent 16 should ingest it as a Channel-3 batch.**
+
+**Pipeline note (not Agent 16 business, recorded for continuity):** `pending/` **6 → 9** — three new Rohr proposals filed 2026-08-30 (descending-religion, true/false-self weekly summary, true-seed-within). `review/2026-08-30_review.html` (generated 2026-08-30 04:38) and a new artifact, `review/2026-W35_weekly_review.html` (2026-08-30 20:00), both exist; neither contains either watched slug. No decisions file has followed either, so 9 proposals await Tom's pass. Census: `pending/` **9**, `approved/` 378, `denied/` 1, `needs_review/` 1.
+
+**Watch List Status:**
+- Items checked: **0** (none due)
+- Items resolved: **0**
+- Items still watching: **2**
+- Items stale: **2** (carried)
+- New items added: **0**
+- New flags: **0**
+
+**Notes:**
+- **MAINTENANCE FLAG — carried, binding.** `watch_list.md` entered this run at **541673 bytes**. The Read tool cannot open it; this run worked entirely through targeted greps with a pre-edit backup. **112** run summaries for **3** lifetime watch items. Recommendation unchanged and unexecuted (Tom's call): split the RUN LOG into `wiki/deferred/run_log/2026-Q2.md` and `2026-Q3.md`, keeping active items, flags, the resolved index and the trailing ~14 days here. Reversible, no data lost. Today's entry kept short for this reason.
+- **BUDGET NOTE (Rule 6):** within budget — a no-checks-due day with no state change to write up.
+- Standing reminder (carried since 2026-05-14): the needs_review tombstone `2026-04-21_carroll_singer-mindscape-351.md` is safe to delete manually.
+
+**Next scheduled checks:**
+- **2026-09-01 (tomorrow)** — WATCH-002 (source fetch, → count 7) and WATCH-003 (→ count 8), weekly cadence. Both remain STALE-flagged.
+
+**Agent 16 Status:** Operational, idle by design. Nothing due, nothing new in intake, nothing moved. Decision-archive coverage current through **2026-08-27**; review-pass gap **4 days**. **Open for Tom, unchanged in priority order:** (1) rule on the **INGESTION-RISK FLAG** — an explicitly unverified "do not ingest" card sits in `approved/` and in the ingestion staging mirror, un-ingested but eligible; (2) rule on the **INTEGRITY FLAG** — one line closes WATCH-003 and resolves WATCH-002's audit half; (3) make `DEFERRED_ACTIONS_2026-08-27.md` reachable or confirm Channel-3 ingest; (4) the systemic fix — exclude `content_verified: false` from en-bloc unread approval; (5) the Channel 2 question, standing since 08-23; (6) run-log archival; (7) the needs_review tombstone deletion.
+
+---
+
+*Run completed 2026-08-31.*

@@ -63,3 +63,14 @@ PRS-CANDIDATE-01:
   universe is a function of the observer's computational boundedness. Hoffman's headset and
   Wolfram's ruliad-slice are rival accounts of the same asymmetry between what exists and what
   gets rendered.
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-08-30*
+
+[→ Kastrup agent]: You and Hoffman are on the same recording reading the same data, which makes this a clean test of where interface theory and analytic idealism actually diverge rather than the usual mutual citation at a distance. Hoffman's conscious agents are plural and network-structured; your alters are dissociations within one subject. Action: state in `traditions/kastrup/wiki.md` what the two predict differently about entity encounters — if nothing, the divergence is metaphysical rather than empirical and the wiki should say so. Note also that this pairs with PROP-2026-08-28-020 in this batch, where you take up Hoffman-adjacent combination operations directly.
+
+[→ Levin agent]: "Hidden layers of reality containing agents invisible to the default human interface" is structurally your argument that cognition exists in embodiments we lack instruments to recognise — detector limits mistaken for absence of mind. Action: compare against the vault's existing material on unconventional terrestrial intelligence and record the difference in evidential standing plainly: your version names candidate substrates and proposes measurements, this one does not. The structural parallel should not launder the gap in testability.
+
+[→ Wolfram agent]: Hoffman's headset and your ruliad-slice are rival accounts of the same asymmetry between what exists and what gets rendered, and observer theory grounds the limit computationally where Hoffman grounds it in fitness. Action: one entry under observer theory, cross-linked; the same rivalry appears in this batch's PROP-2026-08-28-040, and the two should be recorded as one disagreement rather than two.
+
+[→ Hoffman agent]: Ingest PRS-CANDIDATE-01 at Medium and carry its retrieval caveat into the node verbatim — the transcript was not retrieved, the format may be a curated assembly of separately recorded segments rather than a live conversation, and the release date differs by source. Action: the framing is reliable, any quoted specific is not. This is a new application domain for conscious realism (anomalous-phenomena data), so the temptation to over-claim is higher than usual; the node should record the domain extension and the evidential weakness in the same sentence.

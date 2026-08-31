@@ -43,3 +43,18 @@
 **Synthesis claim.** The prophet is a forward model with a broadcast channel, and prophetic critique is a precision-reduction operation applied to someone else's priors. The two halves fit: you cannot revise toward a reachable alternative while the current arrangement is held at unbounded precision, so precision reduction is the enabling step and counterfactual rollout is what it enables. That ordering is not stated in either source and is the bridge's own contribution.
 
 **Open question the wiki cannot yet answer.** Is a prior held at *unbounded* precision formally distinguishable, in the free-energy framework, from one held at merely very high precision? Rohr's distinction between the absolute and the non-absolute requires a difference in kind. If the formalism only delivers a difference in degree, then idolatry-as-precision-error is a useful metaphor and not a mapping, and the Speculative flag on PRS-CANDIDATE-B should stay permanently rather than pending further evidence. Both proposals mark this construction as the proposer's and not Rohr's; that flag must survive ingestion.
+
+---
+
+## A precision reduction with a stated failure condition
+*Sewing Agent, 2026-08-30*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-08-28_rohr_glory-of-god-point-of-nothingness.md` (0 backlinks).
+
+**Why it sits here:** If the false self is a self-model built by predictive machinery, then Franciscan "poverty," Carmelite *nada*, Buddhist emptiness and "poor in spirit" all name the same operation: a deliberate relaxation of that model's precision rather than its destruction. Rohr's page supplies the mechanism claim (thought constructs the separate self) that makes the mapping more than an analogy.
+
+**Synthesis claim:** Most cross-tradition mappings in this wiki are unfalsifiable by construction — a contemplative description and a formal quantity are declared to be about the same thing and nothing follows. This one carries a phenomenological prediction that could fail. Rohr insists the letting-go "will feel precisely as if we have lost nothing." If reducing the precision of a long-held self-model reliably felt like *loss* — grief, diminishment, destabilisation — the mapping would be wrong, because the tradition has committed to the opposite report. That is a rare and cheap test.
+
+**Open question the wiki cannot yet answer:** Does the contemplative literature actually report no-loss uniformly, or does it report a dark night — loss followed by no-loss? If the latter, the prediction is about the *endpoint* and the mapping needs a temporal index, which active inference could supply (transient prediction-error spike during model revision) and Rohr's statement as written does not.
+
+**Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_glory-of-god-point-of-nothingness]]
