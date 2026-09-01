@@ -163,3 +163,4 @@ _to_delete/
 
 # One-off probes
 tcc probe.sh
+narration/
