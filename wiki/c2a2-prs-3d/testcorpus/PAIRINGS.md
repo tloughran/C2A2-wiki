@@ -88,8 +88,13 @@ Recorded because a cleared suspicion is worth as much as a confirmed one.
   that two-valuedness is Uhlenbeck and Goudsmit, *Naturwissenschaften*, letter dated
   17 October 1925 — different people, different result, and correctly absent here.
 - **GPT-3 / DDPM are already in the right order.** GPT-3 arXiv v1 is 28 May 2020; DDPM is
-  19 June 2020. The fixture has them that way round. The worry came from a claimed ordering
-  in the source image, and per `SOURCE.md` the source asserts no ordering at all.
+  19 June 2020. The fixture has them that way round, so the fixture is correct.
+
+  *Corrected later the same day, once the source image was supplied:* the reason given here
+  first was wrong. The image **does** assert an ordering — it is a row of dominoes read
+  left to right — and it places **DDPM before GPT-3**. So this is not a cleared suspicion
+  but a real divergence in which the fixture follows the record and the image does not.
+  See `SOURCE.md`.
 
 ## Row-by-row verification
 
@@ -128,6 +133,13 @@ different events), `conflated` (row covers more than one result).
 | 10 | DeepSeek-R1 | 2025-01-22 | arXiv v1 | arXiv:2501.12948 v1, 22 Jan 2025 | exact |
 
 ## What Phase A does not yet deliver
+
+**Provenance note, added after the source image was supplied.** All twenty names and all
+twenty *years* come from the image and match the fixture exactly; the fixture is sourced at
+that level. What remains Claude-authored is the triplet prose, the **month and day** on
+every date, and the six cross-connections. That matters for the ruler finding above rather
+than weakening it: the image asserts years, and the day-level precision the fixture renders
+was invented on top of them, drawn from seven kinds of event in the quantum row alone.
 
 Phase A verified **dates and citations**. It did **not** do Phase B (coding the twenty
 against a typed vocabulary of cascade roles) or Phase C (rebuilding the cross-links from

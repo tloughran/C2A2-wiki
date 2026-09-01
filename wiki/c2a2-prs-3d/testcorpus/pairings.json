@@ -3,7 +3,7 @@
     "phase": "Step 1 Phase A - source verification",
     "verified_on": "2026-09-01",
     "verified_by": "Claude (Cowork), against published sources; see PAIRINGS.md for the narrative",
-    "fixture_provenance": "SOURCE.md - results, dates and cross-links are Claude-authored, not asserted by the Welch Labs video",
+    "fixture_provenance": "SOURCE.md - the twenty names and YEARS come from the Welch Labs domino image and match the fixture exactly. Claude-authored: the triplet prose, the month/day on every date (the image carries years only), and the six cross-connections.",
     "rows": 20,
     "event_type_counts": {
       "presentation": 1,
@@ -32,7 +32,23 @@
       "Phase B - cascade-role coding",
       "Phase C - relinkage from role and problem structure",
       "the six cross-connections remain Claude-authored and unvalidated; the fixture is not yet a labelled evaluation set"
-    ]
+    ],
+    "source_image": {
+      "url": "https://www.youtube.com/watch?v=QgH9sr7G13Q",
+      "asserts": [
+        "20 names",
+        "20 years",
+        "two traditions",
+        "left-to-right order",
+        "ten and ten",
+        "the 32yr vs 13yr compression"
+      ],
+      "does_not_assert": [
+        "month or day precision",
+        "pairwise correspondence between the rows (column alignment is undetermined)"
+      ],
+      "known_error": "orders DDPM before GPT-3; the record is GPT-3 arXiv 2020-05-28, DDPM 2020-06-19. The fixture follows the record."
+    }
   },
   "pairings": [
     {
