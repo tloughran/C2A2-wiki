@@ -13,6 +13,7 @@ ambiguous the script raises instead of producing a silently-broken file.
 Usage:
   python3 generate_prs_3d.py <prs_data.json> <template_prs_3d.html> <out.html>
 """
+import datetime
 import json
 import re
 import sys
@@ -286,11 +287,65 @@ function showEdgeInfo(edge) {
 '''
 
 
+def parse_tau(argv):
+    """--tau <days|linear>. Returns (value_or_None, remaining_argv).
+
+    The template ships TAU_DAYS = 90, chosen for a corpus that lives in the last
+    three months. That is a PRIOR, not a neutral axis: it spends the column on
+    whatever is most recent. On a long-baseline corpus it crushes the old material
+    into a mat on the floor -- measured 2026-09-01, a 32-year tradition got 1.66 of
+    40 units against 22.66 for a 13-year one, a 33x rate distortion that renders the
+    comparison backwards. tau is therefore a per-corpus choice. Default stays 90 so
+    the live build is unchanged; 'linear' (tau -> inf) is the regression control.
+    """
+    rest, tau = [], None
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--tau" and i + 1 < len(argv):
+            tau, i = argv[i + 1], i + 2
+            continue
+        if a.startswith("--tau="):
+            tau, i = a.split("=", 1)[1], i + 1
+            continue
+        rest.append(a)
+        i += 1
+    if tau is None:
+        return None, rest
+    if tau.lower() in ("linear", "inf", "infinity"):
+        return 1e9, rest
+    try:
+        v = float(tau)
+    except ValueError:
+        raise SystemExit("FAIL: --tau expects a number of days or 'linear', got %r" % tau)
+    if v <= 0:
+        raise SystemExit("FAIL: --tau must be positive, got %r" % tau)
+    return v, rest
+
+
+def baseline_years(triplets):
+    """Span of the corpus in years, from the dates the renderer actually places on."""
+    ds = []
+    for t in triplets:
+        d = (t.get("date") or "")[:10]
+        try:
+            ds.append(datetime.date.fromisoformat(d).toordinal())
+        except ValueError:
+            continue
+    return (max(ds) - min(ds)) / 365.25 if len(ds) >= 2 else 0.0
+
+
 def main():
-    if len(sys.argv) != 4:
-        raise SystemExit("usage: generate_prs_3d.py <prs_data.json> <template.html> <out.html>")
-    data = json.load(open(sys.argv[1], encoding="utf-8"))
-    html = open(sys.argv[2], encoding="utf-8").read()
+    tau, argv = parse_tau(sys.argv[1:])
+    if len(argv) != 3:
+        raise SystemExit("usage: generate_prs_3d.py [--tau days|linear] "
+                         "<prs_data.json> <template.html> <out.html>")
+    data = json.load(open(argv[0], encoding="utf-8"))
+    html = open(argv[1], encoding="utf-8").read()
+
+    if tau is not None:
+        html = replace_once(html, r"^var TAU_DAYS = .*;[ \t]*$",
+                            "var TAU_DAYS = %r;" % tau, "axis:TAU_DAYS", flags=re.M)
 
     # 1) Swap data arrays (single-line `var NAME = ...;`).
     for name in ["DISCIPLINES", "THINKER_DISC", "THINKER_COLORS", "THINKER_DISPLAY",
@@ -540,11 +595,20 @@ def main():
         "  if (_lg && _lb) { _lb.style.left = (_lg.offsetLeft + 4) + 'px'; _lb.style.top = (_lg.offsetTop - 22) + 'px'; _lb.style.display = 'block'; }",
         "pop:legend-floatbtn-init")
 
-    open(sys.argv[3], "w", encoding="utf-8").write(html)
+    open(argv[2], "w", encoding="utf-8").write(html)
     s = data.get("summary", {})
-    print("wrote %s" % sys.argv[3])
+    print("wrote %s" % argv[2])
     print("  triplets=%s cross=%s coils=%s findings=%s"
           % (s.get("triplets"), s.get("cross_connections"), s.get("coils"), s.get("findings")))
+    span = baseline_years(data.get("PRS_TRIPLETS", []))
+    print("  axis: TAU_DAYS=%s  corpus baseline=%.1f years"
+          % ("90 (template default)" if tau is None else tau, span))
+    if tau is None and span > 5:
+        sys.stderr.write(
+            "WARN: corpus spans %.1f years but TAU_DAYS is 90 days. The log-on-age axis\n"
+            "      will compress the older traditions toward the floor. Pass --tau to choose\n"
+            "      deliberately, and check the per-tradition rate spread:\n"
+            "        python3 scripts/prs_axis_max_share.py %s\n" % (span, argv[2]))
 
 
 if __name__ == "__main__":
