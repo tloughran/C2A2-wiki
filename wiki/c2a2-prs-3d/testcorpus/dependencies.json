@@ -1,0 +1,259 @@
+{
+  "_meta": {
+    "phase": "Step 1 Phase B - hand-labelled dependency gold set",
+    "labelled_on": "2026-09-01",
+    "labelled_by": "Claude (Cowork), from the published record; every row states its own basis",
+    "purpose": "A fixed answer key for the two paradigm cases (quantum mechanics 1900-1932, deep learning 2012-2025), so that any candidate method for detecting semantically meaningful and plausibly causal connections can be scored instead of admired. The lexical Jaccard scorer already in extract_prs_data.py is the baseline it has to beat.",
+    "field_notes": {
+      "relation": "What kind of link this is. Only resource_supplying is a generative coil: A's SOLUTION becomes B's RESOURCE. problem_setting means A's solution created the problem B answers. contrastive means B defines itself against A. corroborating means B confirms or is confirmed by A without using it. This is the operational form of Tom's question - a reference can be a historical note or a dependency claim, and the relation field is where the two stop being the same edge.",
+      "status": "attested | plausible | ruled_out | unexamined. Per the epistemics ruling: NOT a confidence score, because a score averages evidence and absence into one number. attested means the published record shows the link. ruled_out means the record contradicts it - a finding, drawn differently, never deleted.",
+      "textual": "expressed | partial | unexpressed. Whether the FIXTURE PROSE of the target carries any evidence pointing at the source. This separates two failures that look identical in a recall number: the method missed a signal that was there, versus the text never said it. No method reading these summaries can recover an unexpressed dependency, so it is the ceiling, not a defect to tune away. A pair is 'partial' when only one side expresses the link: the target may point at something the source never names.",
+      "cue": "The phrase in the target's own text that a reader would point at. Empty when textual is unexpressed."
+    }
+  },
+  "dependencies": [
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-02",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Taking Planck's discrete energy elements as real properties of the radiation field",
+      "basis": "Einstein 1905 takes Planck's energy elements as physically real. Planck's constant and the quantisation of energy are the resource; Einstein's move is to promote them from a fitting device to an ontological claim."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-03",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "partial",
+      "cue": "fixing the Rydberg constant from h, e and the electron mass",
+      "basis": "Bohr's stationary orbits quantise angular momentum in units of h and his derived Rydberg constant contains h. Planck's constant is load-bearing in the resource; the fixture names h but not Planck."
+    },
+    {
+      "source": "quantum-PRS-02",
+      "target": "quantum-PRS-03",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Quantisation applied to the mechanical system rather than to radiation",
+      "basis": "Bohr transfers the quantisation idea from radiation to matter. The target's own resource sentence states the transfer and names what it is transferring from."
+    },
+    {
+      "source": "quantum-PRS-02",
+      "target": "quantum-PRS-04",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "The light quantum was still widely read as a heuristic ... rested on the photoelectric effect alone",
+      "basis": "Compton treats the light quantum as a particle with momentum in an elastic collision. Einstein's quantum is the resource; Compton supplies the experimental fact Einstein could not."
+    },
+    {
+      "source": "quantum-PRS-02",
+      "target": "quantum-PRS-05",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Symmetry between matter and radiation",
+      "basis": "de Broglie generalises Einstein's wave-particle duality for radiation to matter. The symmetry argument IS the resource, and it has nothing to symmetrise without Einstein."
+    },
+    {
+      "source": "quantum-PRS-03",
+      "target": "quantum-PRS-05",
+      "relation": "problem_setting",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Bohr's quantisation condition on angular momentum remains an arbitrary postulate with no underlying mechanism",
+      "basis": "Bohr's condition is what de Broglie sets out to explain, and his solution derives it. It is the problem, not the resource. Scoring this as a generative coil would assert the arrow backwards."
+    },
+    {
+      "source": "quantum-PRS-03",
+      "target": "quantum-PRS-06",
+      "relation": "problem_setting",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "The Bohr-Sommerfeld atom does not explain why electrons do not all collapse into the lowest orbit",
+      "basis": "Pauli's exclusion principle answers a failure of the Bohr-Sommerfeld model. Bohr supplies the unsolved question and the shell vocabulary, not the fourth quantum number."
+    },
+    {
+      "source": "quantum-PRS-03",
+      "target": "quantum-PRS-07",
+      "relation": "problem_setting",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Matrix mechanics is a direct response to the failure of the Bohr-Sommerfeld orbit picture, and Heisenberg worked in Bohr's institute. The fixture's problem sentence says 'the old quantum theory' and names nobody, so no method reading this text can recover the link."
+    },
+    {
+      "source": "quantum-PRS-05",
+      "target": "quantum-PRS-08",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "de Broglie's matter waves lack a governing equation of motion",
+      "basis": "Schrodinger read de Broglie's thesis at Debye's prompting and wrote the equation the matter waves lacked. This is the clearest resource_supplying edge in the corpus, and the lexical baseline scores it 0.033."
+    },
+    {
+      "source": "quantum-PRS-07",
+      "target": "quantum-PRS-08",
+      "relation": "contrastive",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Matrix mechanics works but is opaque, offers no continuous picture of the process, and is hard to apply",
+      "basis": "Schrodinger names matrix mechanics as the thing his formulation is not, and later proves the two equivalent. The mention is real and load-bearing for the problem."
+    },
+    {
+      "source": "quantum-PRS-07",
+      "target": "quantum-PRS-08",
+      "relation": "resource_supplying",
+      "status": "ruled_out",
+      "textual": "expressed",
+      "cue": "Matrix mechanics works but is opaque",
+      "basis": "RULED OUT by the record: wave mechanics was not derived from matrix mechanics. Schrodinger's route was de Broglie and Hamiltonian optics, and he said in print that he was discouraged by the matrix formalism. The two are attested equivalent, which is not the same as one supplying the other. This row exists to be drawn differently, not deleted - a mention in the target's text is exactly what a naive method converts into a dependency claim."
+    },
+    {
+      "source": "quantum-PRS-06",
+      "target": "quantum-PRS-09",
+      "relation": "problem_setting",
+      "status": "attested",
+      "textual": "partial",
+      "cue": "neither is compatible with special relativity, so spin has to be inserted by hand",
+      "basis": "Pauli's fourth quantum number, and Pauli's own 1927 spin matrices, are the hand-inserted spin Dirac's equation makes unnecessary. Dirac's problem sentence states it. RELABELLED expressed -> partial on 2026-09-01 after measuring: the dependency is expressed on the TARGET side only. Dirac's problem names spin; Pauli's entry never uses the word, calling its own contribution 'a fourth two-valued quantum number' (which is Pauli's own formulation - spin is Uhlenbeck and Goudsmit). No text-matching method can join two entries that share no expression of the thing being handed over, so scoring this as a recoverable miss would have blamed the method for the corpus."
+    },
+    {
+      "source": "quantum-PRS-07",
+      "target": "quantum-PRS-09",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Wave mechanics and matrix mechanics are two dialects with no common formulation",
+      "basis": "Dirac's transformation theory contains matrix mechanics as one representation. The earlier theory is the material the abstract formalism is built to contain."
+    },
+    {
+      "source": "quantum-PRS-08",
+      "target": "quantum-PRS-09",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Wave mechanics and matrix mechanics are two dialects with no common formulation",
+      "basis": "Same sentence, other dialect. Dirac's formalism contains wave mechanics as a representation."
+    },
+    {
+      "source": "quantum-PRS-09",
+      "target": "quantum-PRS-10",
+      "relation": "problem_setting",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "resting on the delta function and other objects with no defined status",
+      "basis": "The delta function is Dirac's, and von Neumann's Hilbert-space axiomatisation is explicitly a repair of its lack of mathematical standing. The fixture names the object but not the man, so the cue is present and the alias is not."
+    },
+    {
+      "source": "quantum-PRS-07",
+      "target": "quantum-PRS-10",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Von Neumann's spectral theory of self-adjoint operators formalises exactly the noncommuting observables matrix mechanics introduced. The fixture's problem sentence generalises to 'quantum mechanics', naming no predecessor."
+    },
+    {
+      "source": "deeplearning-PRS-01",
+      "target": "deeplearning-PRS-02",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "ResNet is a deep convolutional network trained on ImageNet with the AlexNet recipe; degradation past twenty layers is only a problem once depth is the strategy. The fixture's problem sentence states the degradation and never says whose networks."
+    },
+    {
+      "source": "deeplearning-PRS-01",
+      "target": "deeplearning-PRS-03",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "AlphaGo's policy and value networks are deep convolutional networks over the board. Nothing in the fixture's AlphaGo entry points back at AlexNet."
+    },
+    {
+      "source": "deeplearning-PRS-02",
+      "target": "deeplearning-PRS-04",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Residual connections are used inside every Transformer block, around attention and the feed-forward layer, and are load-bearing for training depth. The fixture's Transformer entry lists self-attention, positional encodings and multiple heads and never mentions the residual stream. The strongest attested dependency in the deep-learning arm is invisible in its own text."
+    },
+    {
+      "source": "deeplearning-PRS-04",
+      "target": "deeplearning-PRS-06",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "An autoregressive transformer of 175 billion parameters",
+      "basis": "GPT-3 is a Transformer decoder. The architecture is named in the target's own resource sentence."
+    },
+    {
+      "source": "deeplearning-PRS-05",
+      "target": "deeplearning-PRS-06",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "confirming the scaling laws in the direction they predicted",
+      "basis": "Same lab, four months apart; the scaling fits are the argument for spending the compute. The lexical baseline scores this pair 0.000 - no shared token at all - and the phrase naming the dependency sits in the target's SOLUTION, not its resource."
+    },
+    {
+      "source": "deeplearning-PRS-04",
+      "target": "deeplearning-PRS-08",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "using attention over the multiple sequence alignment and over residue pairs",
+      "basis": "Evoformer is attention-based. The mechanism is named in the target's resource sentence, though the Transformer paper is not."
+    },
+    {
+      "source": "deeplearning-PRS-06",
+      "target": "deeplearning-PRS-09",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "preferred by human raters over the 175 billion parameter base model",
+      "basis": "InstructGPT is GPT-3 fine-tuned; the base model in the comparison IS the source. The fixture identifies it by parameter count rather than name."
+    },
+    {
+      "source": "deeplearning-PRS-09",
+      "target": "deeplearning-PRS-10",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "expressed",
+      "cue": "Large-scale reinforcement learning on verifiable outcomes with no supervised reasoning traces",
+      "basis": "R1 keeps the RL machinery of the RLHF line and replaces the learned human-preference reward with a verifiable one. Partly contrastive - the entry defines itself against supervised traces - but the optimisation apparatus is inherited, so the relation is resource_supplying with a contrastive framing."
+    },
+    {
+      "source": "deeplearning-PRS-03",
+      "target": "deeplearning-PRS-10",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "partial",
+      "cue": "letting the model discover its own long chains, self-checking and backtracking from the reward alone",
+      "basis": "Self-play against a verifiable outcome is AlphaGo's mechanism, and R1's discovery of its own search behaviour from reward is the same idea moved to text. The fixture's AlphaGo entry says self-play and search but never reinforcement learning, so the terms do not line up."
+    },
+    {
+      "source": "deeplearning-PRS-07",
+      "target": "deeplearning-PRS-06",
+      "relation": "resource_supplying",
+      "status": "ruled_out",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "RULED OUT on both counts: GPT-3 (28 May 2020) precedes DDPM (19 Jun 2020), and the diffusion and autoregressive language lines are independent. Recorded because the Welch Labs image asserts the opposite ORDER for this pair, placing DDPM before GPT-3; the fixture is right and the source image is wrong."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "deeplearning-PRS-01",
+      "relation": "resource_supplying",
+      "status": "ruled_out",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "RULED OUT as a dependency of any kind: 112 years and no causal path. It is the archetype of the third edge type the schema still lacks - ANALOGICAL, same structural role in two traditions, explicitly non-causal. All six of the fixture's cross-epoch connections are currently typed synergistic, which asserts a shared resource that does not exist. This row is the one to point at when that retype lands."
+    }
+  ]
+}
