@@ -3,21 +3,22 @@ day: 252
 title: Eucharistic Reception (Contemporary)
 pairs_with: "[[Day-252 - Eucharistic Reception]]"
 length_target_words: 3000
-length_actual_words: 1074
+length_actual_words: 1671
 length_tier: long
-length_ratio_to_target: 0.358
-length_note: "Compact-by-design: III Q.79-80 (worthy/unworthy and sacramental/spiritual reception) rendered in tight, complete PRS form with Friston's disposition-as-prior the sharpest resource; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+length_ratio_to_target: 0.557
+length_tier_dispute: "UNRESOLVED, escalated, not changed here. This file is set to tier `long` (target 3000), but its paired transcript `Day-252 - Eucharistic Reception.md` carries `length_tier: medium` and a cleaned `word_count` of 3308, which the Summa.md tier table (medium = 2000-3500 cleaned words) puts squarely in medium. The two paired files therefore disagree, and the arithmetic favours medium. The effect of the disagreement is not neutral: at the medium target of 2200 the current ratio is 0.760, versus 0.557 at 3000, so the `long` setting makes this file look considerably shorter of its target than it is. Day 252 is already on the recorded genuine-tier-error list (with 061, 071, 072, 074) awaiting Tom's decision, so the field is left as found rather than silently corrected."
+length_note: "1671 words after the 2026-08-31 repair; the stored figure of 1074 was understated by 597. Against the medium target the paired transcript's word_count implies (2200), that is 0.760 — inside the compact-frontier band rather than far below it; against the `long` target currently set here (3000) it reads 0.557. See `length_tier_dispute` above: which of those two numbers is the real one turns on an unresolved tier question, so no compactness claim is made until Tom settles it. Substance whole and the five reviewer criteria pass; III Q.79-80 rendered in complete PRS form with Friston's disposition-as-prior the sharpest resource."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — goal-directedness within naturalism; PRS-14 symptom-formation as Bayesian self-trapping, applied here beyond its clinical scope)"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler — goal-directedness within naturalism, Confidence Medium and marked Implicit; PRS-14 symptom-formation as Bayesian self-trapping, Confidence High, applied here beyond its clinical scope)"
   - "traditions/kastrup/prs_triplets.md (PRS-09 representation versus participatory encounter — records McGilchrist's counter-proposal at Confidence Medium; cited as a proposed refinement, not as settled Kastrup program content)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism — outcome governed by target state)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ); grace-meeting-readiness carried on Rohr's published contemplative work, no triplet in the register"
+  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ, Medium; PRS-29 love as a high-precision prior and PRS-33 poverty of spirit as precision down-weighting, both Speculative — these carry grace-meeting-readiness in the register's own precision-weighting vocabulary; PRS-30 local propagation of grace, Medium)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home)"
-evidence_strength_summary: "Same-signal-different-update is formal (Friston active inference, well-developed); reception-by-desire as dispositional reality is metaphysical-speculative (Kastrup); the worthiness content is theological (Wright/Rohr)."
+evidence_strength_summary: "Same-signal-different-update is formal in kind, but the records differ sharply and are graded separately: Friston PRS-14 (Bayesian self-trapping) is Confidence High and is the best-graded citation on the day, while Friston PRS-04 (organism as active modeler) is Confidence Medium and marked Implicit — the active-inference literature is well-developed, this record is not, and the badge reports the record. Reception-by-desire as dispositional reality is metaphysical and contested (Kastrup PRS-09, Medium, and a proposed refinement rather than settled program content). The worthiness content is theological (Wright PRS-05, High). Grace-meets-readiness is anchored in the Rohr register at PRS-29/PRS-33 (both Speculative — weakest citations here, and named so) plus PRS-30 (Medium)."
 mind_first_reframe: "The one offered whole produces divergent effects because reception is governed by the receiver's disposition — its generative prior (Friston) and participatory uptake (Kastrup) — not by any variation in the offering."
 central_theme_thread: "The same whole is offered entire to every perspective yet assimilated only to the measure of each finite disposition, so growing in charity is the lifelong revision of the prior toward the loving-unity attractor."
 tags: [synthesis, day/252, theme/one-whole-received-by-readiness]
-last_qc_at: "2026-08-16T22:28:14"
+last_qc_at: "2026-08-31T12:27:05"
 last_qc_outcome: "rewrote"
 ---
 
@@ -39,7 +40,9 @@ Kastrup supplies the ontology of *reception itself* — with a provenance qualif
 
 Levin gives the in-domain hinge: in Tom's PRS-form record of Levin's program, PRS-03 (target-state specification) shows a system's outcome governed by its set-point rather than by the raw stimulus — the same intervention drives different morphological results depending on the bioelectric prior the tissue holds.
 
-Rohr (PRS-03, the Universal Christ — the divine pattern present in all of creation) and Wright (PRS-05, salvation as incorporation into the people among whom God comes home rather than a relocation of souls) remain the theological ground for the *content*: that the reality offered is Christ, and that worthiness is a matter of charity, not merit ledgered.
+Rohr (PRS-03, the Universal Christ — the divine pattern present in all of creation) and Wright (PRS-05, salvation as incorporation into the people among whom God comes home rather than a relocation of souls, Confidence High) remain the theological ground for the *content*: that the reality offered is Christ, and that worthiness is a matter of charity, not merit ledgered.
+
+The contemplative register also supplies the disposition side directly, and in the same formal vocabulary this synthesis borrows from Friston. **Rohr PRS-29** (Confidence Speculative) states that love functions as a *high-value, high-precision prior* that re-weights action selection, so that conduct is motivated by the commitment itself rather than by predicted success. **Rohr PRS-33** (Speculative) reads poverty of spirit as the radical down-weighting of the self-model's precision — the reputation-defending prior — and makes it the *entry condition* for everything that follows. Between them these give a contemplative account of readiness in precision-weighting terms, which is the exact structure the Friston resource is being used to supply: a well-disposed receiver is one whose priors are weighted toward the gift rather than toward self-defence, and the hardened prior of PRS-14 is the same variable set the other way. **Rohr PRS-30** (Medium) then carries the grace-transmission half: grace's universality is ontological but its propagation is local, moving only through agents in whom it is internally realized. Together these mean the grace-meets-readiness claim is anchored in the register and not merely in the published work.
 
 ## Solution (proposed, speculative)
 
@@ -51,10 +54,13 @@ Here the project's central motif takes one of its clearest sacramental forms: th
 
 ## Bridges
 
-- **Friston PRS-04 (organism as active modeler) + PRS-14 (Bayesian self-trapping)** — *formal, well-developed; PRS-14 extended past its clinical scope, flagged in the Resource above.* Same signal, disposition-dependent update; sharpest resource.
+- **Friston PRS-04 (organism as active modeler)**, `traditions/friston/prs_triplets.md` — *formal in kind; the record is Confidence **Medium** and marked **(Implicit)**, i.e. a PRS-form re-description of the program rather than a claim Friston states in this shape.* Supplies the prior-determines-uptake structure. The active-inference literature is well-developed; **this record is not, and the badge must report the record.**
+- **Friston PRS-14 (symptom-formation as Bayesian self-trapping)**, `traditions/friston/prs_triplets.md` — *formal, Confidence **High** — the best-graded citation on the day.* Supplies the mechanism of refusal: locally optimal attractors that resist update because revision raises free energy in the short term. Graded separately from PRS-04 rather than bundled: the two records sit two grades apart and one is Implicit, so a single badge would misreport both. Scope caveat unchanged and stated in the Resource above — PRS-14 is an account of *symptom*-formation and its clinical resolution, and its use here for a culpable spiritual indisposition extends it past the domain in which it was stated.
 - **Kastrup PRS-09 (representation versus participatory encounter)** — *metaphysical, contested; and a proposed refinement rather than program content.* Reception as participation; why desire obtains the res. The entry records McGilchrist's counter-proposal against Kastrup's dashboard metaphor at Confidence: Medium, with its own Solution allowing that Kastrup's idealism "may need refinement" — the direction is stated in the Resource section above so the citation is not read as settled Kastrup.
 - **Levin PRS-03 (morphological attractor formalism)** — *empirical-in-domain.* Outcome governed by target state, not raw stimulus.
-- **Rohr PRS-03 (the Universal Christ)** — *theological / contemplative.* The pattern already present in what is received; the grace-meets-readiness half is carried on Rohr's published contemplative work, which the register has no triplet for.
+- **Rohr PRS-03 (the Universal Christ)**, `traditions/rohr/prs_triplets.md` — *theological / contemplative, Confidence Medium.* The pattern already present in what is received.
+- **Rohr PRS-29 (love as a high-precision prior re-weighting action selection) + PRS-33 (poverty of spirit as down-weighting of the self-model's precision)**, `traditions/rohr/prs_triplets.md` — *contemplative, both Confidence **Speculative** — the weakest-graded citations on the day, and named as such.* These carry the grace-meets-readiness half **in the register's own precision-weighting vocabulary**, which is the same formal idiom this synthesis imports from Friston. That convergence is the bridge's interest and also its risk: two traditions reaching for the same formalism is suggestive, not corroborating, and at Speculative these records cannot bear argumentative weight.
+- **Rohr PRS-30 (grace's universality is ontological, its propagation local — moving only through agents in whom love is internally realized)**, `traditions/rohr/prs_triplets.md` — *contemplative, Confidence Medium.* The transmission half of grace-meets-readiness.
 - **Wright PRS-05 (salvation as incorporation)** — *theological, high within method.* The worthiness content: charity as covenant participation, not merit ledgered.
 
 ## Where this leaves us

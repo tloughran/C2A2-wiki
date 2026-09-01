@@ -3,9 +3,10 @@ day: 221
 title: Christ's Wills (Contemporary)
 pairs_with: "[[Day-221 - Christ's Wills]]"
 length_target_words: 1500
-length_actual_words: 1604
-length_ratio_to_target: 1.069
+length_actual_words: 1677
+length_ratio_to_target: 1.118
 length_tier: short
+length_note: "WRITTEN 2026-08-31; the file previously had no length note and has now crossed out of ±10%. Recount preceded the edit: the stored 1604 / 1.069 measured against a clean body count of 1547 / 1.031, so the file entered this pass comfortably in band. It leaves at 1677 / 1.118 — outside ±10%, far inside the ±25% escalation band — and the difference is entirely grading apparatus. Two bundled badges were dissolved: Kastrup PRS-02 and PRS-08 were levelled under 'speculative-formal (medium)' when BOTH records are Confidence High, which understated two firm records while leaving the genuinely speculative step (from a dissociated point of view to a dissociated WILL — neither record is about volition) unnamed; and the Rohr PRS-01 badge stated kind with no grade on a High record. Tier re-verified CORRECT from the paired transcript (1339 ASR words = short). Not escalated. Recorded as a CONTROL on the Friston bullet, which was left untouched: PRS-04 and PRS-06 are both Medium, so 'speculative-formal (medium)' was already exactly right there — the defect in this file was selective, not general."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling) — a will aligning its generative model to a superordinate one without coercion"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociated point of view; PRS-08 the Daimon as principle of individuation) — one being holding a bounded will [metaphysical guardrail]"
@@ -15,8 +16,8 @@ evidence_strength_summary: "Two wills in one person with no contrariety = theolo
 mind_first_reframe: "The conformed-but-free human will is read as a sub-agent freely aligning its own generative model to a superordinate one (active inference, Friston), not a will overridden — alignment that honors rather than erases the limited perspective."
 central_theme_thread: "A limited will that freely brings itself into accord with the One who sees the whole — 'not as I will, but as thou wilt' running into 'work out your salvation, for it is God who works in you' (Phil 2:12-13) — the project's banner stated as Christology."
 tags: [synthesis, day/221, theme/conformed-but-free-will]
-last_qc_at: "2026-08-15T18:29:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T04:26:50"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 221 — Contemporary Parallel: The Conformed-but-Free Will
@@ -50,8 +51,8 @@ This is the day the project's premise gets stated as a problem about *willing*. 
 ## Bridges
 
 - **A limited will freely conformed to a superordinate will, no coercion ↔ a sub-agent aligning its own generative model to a higher model** — Tom's PRS-form record of Friston, PRS-04 / PRS-06. *Why:* alignment as the agent's own action, not an external override — conformity that honors rather than erases the perspective. Evidence: **speculative-formal (medium)**.
-- **One being holding a real, bounded human will ↔ one consciousness holding a genuinely individuated point of view** — Tom's PRS-form record of Kastrup, PRS-02 / PRS-08. *Why:* dissociation-without-fragmentation models the unity-of-being across registers. Evidence: **speculative-formal (medium)**.
-- **Two wills, one harmony, no contrariety ↔ non-dual knowing: unity-in-distinction, both/and not either/or** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the posture that holds two real wills together without fusing or dividing them. Evidence: **theological/contemplative**.
+- **One being holding a real, bounded human will ↔ one consciousness holding a genuinely individuated point of view** — Tom's PRS-form record of Kastrup, PRS-02 (individuation as dissociative boundary; Confidence **High**) and PRS-08 (*The Daimon as principle of individuation* — each individual not a generic dissociation but one with its own character and vocation; Confidence **High**). *Why:* dissociation-without-fragmentation models the unity-of-being across registers, and PRS-08 in particular is what keeps the bounded will *its own* rather than an arbitrary partition — which is precisely Aquinas's a.4 point that the human will has genuine free choice of means. Evidence: **both records are graded High in the register and neither is speculative; what is speculative-formal (medium) is this commentary's step from a dissociated point of view to a dissociated *will*, since neither record is about volition**.
+- **Two wills, one harmony, no contrariety ↔ non-dual knowing: unity-in-distinction, both/and not either/or** — Tom's PRS-form record of Rohr, PRS-01 (*Dualistic knowing*; holding both/and without premature resolution; Confidence **High**). *Why:* the posture that holds two real wills together without fusing or dividing them — the refusal of both the Monothelite and the Nestorian collapse. Evidence: **contemplative-epistemological, record graded High; the application to the two-wills grammar is this commentary's extension**.
 - **"Not as I will, but as thou wilt" ↔ "work out your salvation... for it is God who works in you"** — the Pauline corpus (Phil 2:6-13); Tom's PRS-form record of Wright (PRS-05). *Why:* the limited will's working and the higher will's working are one, not rivals — the project's banner stated as Christology. Evidence: **scriptural (strong)**.
 
 ## Where this leaves us

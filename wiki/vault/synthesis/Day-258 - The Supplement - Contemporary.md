@@ -3,21 +3,21 @@ day: 258
 title: The Supplement (Contemporary)
 pairs_with: "[[Day-258 - The Supplement]]"
 length_target_words: 2200
-length_actual_words: 837
+length_actual_words: 937
 length_tier: medium
-length_ratio_to_target: 0.38
+length_ratio_to_target: 0.426
 length_note: "Compact by design: Suppl. Q.1 is a structural seam (distributed authorship completing an unfinished whole), not a doctrinal locus, so the parallel develops the single finitude-of-authorship motif rather than mirroring articles; substance complete per the five-question review."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 individual agents forming coherent higher-order wholes without losing autonomy)"
   - "traditions/hawkins/prs_triplets.md (PRS-03 knowledge fragile in single minds; preservation/extension across agents; PRS-04 shared reference frames)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 traditions transmit more than propositions)"
   - "master/C2A2_master_wiki.md (distributed authorship; the wiki as a community completing an unfinished whole)"
-evidence_strength_summary: "Distributed authorship completing an unfinished whole is the project's own meta-thesis; formal grounding via Friston multi-agent cohesion + Hawkins knowledge-across-agents; the theological content (last things) only begins here."
+evidence_strength_summary: "Distributed authorship completing an unfinished whole is the project's own meta-thesis; formal grounding via Friston multi-agent cohesion (PRS-06, (Implicit)/Medium) + Hawkins knowledge-across-agents (PRS-03 High, PRS-04 (Implicit)/Medium — both programmatic rather than measured); the account of why transmission leaves seams rests on McGilchrist PRS-06, also (Implicit)/Medium, so it is carried more lightly than the historical fact of the seam itself; the theological content (last things) only begins here."
 mind_first_reframe: "The Summa's completion after Aquinas's death by other hands reframes the work's incompleteness as an instance of the central claim — no single perspective completes the whole; wholes are completed by collaborating limited agents cohering around a shared model (Friston PRS-06), the seams of differing authorship marking that coherence is approximated, not guaranteed."
 central_theme_thread: "Finitude is the condition of all minds, even the greatest; loving unity is therefore inherently collaborative — limited perspectives, aware of their need for one another, compose into a larger agent that sees more than any one, the Summa confessing its own thesis."
 tags: [synthesis, day/258, theme/distributed-authorship-under-finitude]
-last_qc_at: "2026-08-16T22:28:33"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T14:31:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 258 — The Supplement (Contemporary Parallel)
@@ -42,7 +42,7 @@ This day is also where the project's own *master* layer is most self-referential
 
 ## Solution (proposed, speculative)
 
-The contemporary-parallel response: **the Supplement shows that no single perspective completes the whole; wholes are completed by collaborating limited agents who cohere around a shared model — and the coherence is approximated, marked by the seams of differing authorship.** This *shares* nothing doctrinal with Aquinas here (the locus is structural), but it *reframes* the Summa's incompleteness from an accident of mortality into an *instance* of the project's central claim about finitude. It *firms up* the claim that distributed agents can complete a coherent whole (Friston PRS-06; Hawkins on knowledge-across-agents) while *marking honestly* that the completion is imperfect — the Supplement's lesser authority is the empirical signature of tacit knowledge lost in transmission (McGilchrist). It *marks* that the *content* the Supplement carries (last things, resurrection) is theological, and that its scriptural ground truth will be Wright.
+The contemporary-parallel response: **the Supplement shows that no single perspective completes the whole; wholes are completed by collaborating limited agents who cohere around a shared model — and the coherence is approximated, marked by the seams of differing authorship.** This *shares* nothing doctrinal with Aquinas here (the locus is structural), but it *reframes* the Summa's incompleteness from an accident of mortality into an *instance* of the project's central claim about finitude. It *firms up* the claim that distributed agents can complete a coherent whole (Friston PRS-06; Hawkins on knowledge-across-agents) while *marking honestly* that the completion is imperfect. The Supplement's lesser standing among scholars is a historical datum; reading it as the signature of tacit knowledge lost in transmission is an interpretation (McGilchrist PRS-06), and the register marks that entry (Implicit) at Confidence Medium, so the interpretation should not be carried at the strength of the datum. It *marks* that the *content* the Supplement carries (last things, resurrection) is theological, and that its scriptural ground truth will be Wright.
 
 ## The central-theme thread
 
@@ -52,7 +52,7 @@ This day states the project's central claim almost without translation. Consciou
 
 - **Friston PRS-06 (agents forming coherent higher-order wholes; community cohesion)** — *formal, developing.* Distributed completion without loss of autonomy; sharpest resource.
 - **Hawkins PRS-03 + PRS-04 (knowledge fragile in single minds; shared reference frames)** — *empirical / design-motivated.* The fragility problem the Supplement solves.
-- **McGilchrist PRS-06 (tacit knowledge resists transmission)** — *humanistic, well-evidenced.* Why the completion is imperfect — the seam is real.
+- **McGilchrist PRS-06 (embodied tradition formation; tacit knowledge resists transmission)** — *the entry is marked (Implicit) at Confidence Medium in the register — the network's reconstruction of McGilchrist's position, not a measured result.* Why the completion is imperfect. The seam in the Supplement is a real historical datum; the account of *why* seams form is the interpretive claim, and it is the weaker of the two.
 - **master/C2A2_master_wiki.md (distributed authorship)** — *project-internal.* The wiki as the same structure, self-aware.
 
 ## Where this leaves us

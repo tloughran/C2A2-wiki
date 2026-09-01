@@ -3,8 +3,8 @@ day: 239
 title: Resurrection (Contemporary)
 pairs_with: "[[Day-239 - Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1524
-length_ratio_to_target: 1.002
+length_actual_words: 1600
+length_ratio_to_target: 1.067
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Resurrection as 'beginning and exemplar of all good 
 mind_first_reframe: "The resurrection is read as the installation of a new attractor — life utterly immortal, a mode of embodiment that did not previously exist — with the risen body as the first node from which the pattern propagates; identity is carried by the form, so the same person is re-embodied in a transformed mode, the wounds retained not as damage but as features of the new pattern."
 central_theme_thread: "The resurrection is the loving-unity telos shown to be achievable in a body: the goal is not escape from limited embodied perspective but its transformation, the same form re-expressed in a mode where limitation no longer means corruption — the first instance of what the whole computation is for."
 tags: [synthesis, day/239, theme/identity-through-transformation]
-last_qc_at: "2026-08-18T00:19:52"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T08:25:43"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 239 — Contemporary Parallel: The First Instance of a New Mode of Being
@@ -58,10 +58,10 @@ The resurrection is what the whole computation is *for*. The central theme holds
 ## Bridges
 
 - **PRS-03 + PRS-01, Levin-tradition wiki** (morphological attractor; morphogenetic control) — the resurrection as a new attractor, the risen body as first node; perfect vs imperfect as new-target vs old-target. Evidence: empirical in-domain; structural analogy, marked.
-- **PRS-04, Stump-tradition wiki** (formal/final causality) — identity-through-transformation: the same form re-expressed in a glorified mode. Evidence: live analytic-Thomist metaphysics.
+- **PRS-04, Stump-tradition wiki** (formal/final causality) — identity-through-transformation: the same form re-expressed in a glorified mode. Evidence: **Medium**, and the record is marked *(Implicit)* — its Solution line states it as a C2A2 integration claim (Loughran) that Thomistic formal and final causality frames Levin's morphogenetic teleology, not as a settled position argued in Stump's own published voice. The metaphysics is live; the record carrying it is a proposal.
 - **PRS-03, Wright-tradition wiki** (inaugurated eschatology) — "beginning and exemplar of all good things" as new creation begun. Evidence: strong NT scholarship on the texts' claim.
 - **PRS-04, Wright-tradition wiki + master-index Carroll tension** (resurrection as historical) — the contested historical occurrence; Medium confidence, live tension with Core Theory closure. Evidence: explicitly contested; named, not resolved.
-- **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the rising as tested reorder; the scars as survival made visible, the particular wound making the particular glory. Evidence: contemplative-phenomenological.
+- **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the rising as tested reorder; the scars as survival made visible, the particular wound making the particular glory. Evidence: contemplative-phenomenological, **Confidence High** — the record is one of the firmest in that register, and the reorder-deeper-than-the-original-order claim is its own, not an extension made here.
 
 ## Where this leaves us
 

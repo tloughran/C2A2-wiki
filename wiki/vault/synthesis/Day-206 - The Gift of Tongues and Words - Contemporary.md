@@ -3,9 +3,10 @@ day: 206
 title: The Gift of Tongues and Words (Contemporary)
 pairs_with: "[[Day-206 - The Gift of Tongues and Words]]"
 length_target_words: 1500
-length_actual_words: 1527
-length_ratio_to_target: 1.018
+length_actual_words: 1663
+length_ratio_to_target: 1.109
 length_tier: short
+length_note: "Added 2026-08-31 by reviewer pass. An independent recount put the pre-pass body at 1568 (1.045, in band, against a stored 1527/1.018); this pass took it to 1663/1.109, just outside ±10% and well inside ±25%. The whole of the difference is evidence-grading apparatus with no claim added, removed or reweighted: two bundled badges were dissolved into one grade per record — McGilchrist PRS-09 (High) separated from PRS-12 (Medium), which a single 'conceptual, medium' had been averaging, and the Rohr bullet's kind-only 'theological + analogical' given the grades it was silently levelling (PRS-03 Medium, PRS-01 High). Tier re-verified CORRECT from the paired transcript's own count (1347 words, short band)."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — communication as alignment of generative models; PRS-04 organism as active modeler)"
   - "traditions/hoffman/prs_triplets.md (PRS-03/PRS-04 the species-specific interface — the same content rendered/decoded in each hearer's own tongue)"
@@ -16,8 +17,8 @@ evidence_strength_summary: "Meaning reconstructed receiver-side (not token-trans
 mind_first_reframe: "Communication across individuated perspectives is one intelligible content re-rendered through each receiver's own perspective-specific interface, completed not by the utterance but by an inner reconstruction in which the hearer's generative model aligns on the shared latent cause."
 central_theme_thread: "Babel is perspective-individuation hardened into mutual opacity through self-absolutizing; the gift of tongues is its first repair — one content reaching all perspectives without erasing them — instrumental to the loving communal union (Wright's inclusion) that is the telos, not to a private virtuosity of cross-encoding."
 tags: [synthesis, day/206, theme/communication-across-perspectives]
-last_qc_at: "2026-08-15T18:29:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T02:34:37"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 206 — The Gift of Tongues and Words (Contemporary Parallel)
@@ -52,8 +53,8 @@ This day is the project's thesis told as a *founding myth and its repair*. The p
 
 - **"Heard in each hearer's own tongue" ↔ decoding through a perspective-specific interface** — Tom's PRS-form record of Hoffman, PRS-03/PRS-04; master CROSS-003. *Why:* one intelligible content re-rendered across encodings; those without the codec hear only noise. Evidence: **structural, medium**.
 - **The utterance insufficient; completed "within the hearer" ↔ receiver-side reconstruction / mutual-model alignment** — Tom's PRS-form record of Friston, PRS-06 and PRS-04. *Why:* communication succeeds when the hearer's generative model converges on the shared latent cause, not when sound reaches the ear. Evidence: **empirical/formal, medium-strong**.
-- **Teaching that moves the hearer to love the teaching ↔ truth as participatory encounter that changes both** — Tom's PRS-form record of McGilchrist, PRS-09 and PRS-12. *Why:* the grace of the word is uptake, not transfer; the deepest transmission is participatory. Evidence: **conceptual, medium**.
-- **Reversal of Babel: many tongues, one name ↔ one pattern across many encodings (unity-in-distinction)** — Tom's PRS-form record of Rohr, PRS-03 and PRS-01; master CROSS-005. *Why:* the re-gathering does not flatten the distinct perspectives; it reaches the same content through each, toward communal union. Evidence: **theological + analogical**.
+- **Teaching that moves the hearer to love the teaching ↔ truth as participatory encounter that changes both** — PRS-09 in `traditions/mcgilchrist/prs_triplets.md` (participatory realism: truth arises through encounter and both participants are changed; knowing as encounter, attention as love), a record at **Confidence High**, together with PRS-12 (embodied tradition transmission — experiential wisdom passes through shared living in communities of practice, not propositionally), at **Confidence Medium**. *Why:* the grace of the word is uptake, not transfer; the deepest transmission is participatory. Evidence: **PRS-09 philosophical/participatory-realist at High; PRS-12 conceptual at Medium — graded apart, because a single "conceptual, medium" badge understates the first while describing the second, and an averaged badge conceals which of the two is carrying the claim**.
+- **Reversal of Babel: many tongues, one name ↔ one pattern across many encodings (unity-in-distinction)** — PRS-03 in `traditions/rohr/prs_triplets.md` (the Universal Christ: the divine pattern present across creation, not confined to one tradition), at **Confidence Medium**, and PRS-01 (non-dual knowing, unity-in-distinction rather than false dichotomy), at **Confidence High**; master CROSS-005. *Why:* the re-gathering does not flatten the distinct perspectives; it reaches the same content through each, toward communal union. Evidence: **theological + analogical — Medium on PRS-03, High on PRS-01; grades stated, since a kind-only badge silently levels the two**.
 
 ## Where this leaves us
 

@@ -3,12 +3,12 @@ day: 232
 title: Christ's Baptism (Contemporary)
 pairs_with: "[[Day-232 - Christ's Baptism]]"
 length_target_words: 2200
-length_actual_words: 1324
-length_ratio_to_target: 0.602
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis; accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_actual_words: 1410
+length_ratio_to_target: 0.641
+length_note: "OUTSIDE the -25% floor (0.641), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's own cleaned count (2252 words = medium), so 'length out of bounds, tier may be wrong' would be false here. The file is a complete PRS synthesis — Frame, Problem, three named Resources, Solution with the shared/reframed/evidence split, central-theme thread, five bridges, closer — and is short because Q.39-40 is a fittingness question that resolves into one idea (exemplarity as coupling) rather than several; it is under-written, not truncated. Reviewer pass 2026-08-31 added ~86 words dissolving two evidence badges. Flagged to Tom as part of the 223-235 boilerplate-note band, where a single template sentence has been certifying a systematic 0.60-0.73 under-length."
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology) [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, High; PRS-03 inaugurated eschatology, High)"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology; PRS-03 the Universal Christ)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "traditions/fredrickson/prs_triplets.md (PRS-06 democratizing participation; PRS-08 high-quality listening as resonance enabler)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learni
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-08-12T10:30:26"
+last_qc_at: "2026-08-31T06:36:06"
 last_qc_outcome: "rewrote"
 ---
 
@@ -57,9 +57,9 @@ Day 231 and Day 232 are a diptych of the central claim. Yesterday the limited pe
 
 - **PRS-06, Tom's PRS-form record of the Friston program** (mutual modeling) — "do first thyself" as the condition for coupling; the exemplar renders the goal-state modelable in the learner's medium. Evidence: formal-speculative.
 - **CROSS-018, master index** (positivity resonance ↔ Thomistic union) — presence-among as love's empirical form; Christ's table-sharing manner of life as the means union actually requires. Evidence: empirical at the psychophysiology level; speculative as the bridge to Christology.
-- **PRS-04, Rohr-tradition wiki** (embodied love as epistemology) — the real dove, the real water: manifestation refuses abstraction. Evidence: theological.
-- **PRS-05, Wright-tradition wiki** (salvation as incorporation) — the Father's voice demonstrates adoption: grafting into the body, inclusion in the people. Evidence: strong textually (Pauline), theological in force.
-- **PRS-06 + PRS-08, Fredrickson-tradition wiki** (democratizing participation; listening as resonance enabler) — "to show sinners that access was available to them": the manner of life as open-access design. Evidence: empirical core, speculative extension.
+- **PRS-04, Rohr-tradition wiki** (embodied love as epistemology — the spiritual is always embodied, never purely abstract), **Confidence Medium** — the real dove, the real water: manifestation refuses abstraction. Evidence: theological, at the register's middle grade.
+- **PRS-05, Wright-tradition wiki** (salvation as incorporation), **Confidence High** — the Father's voice demonstrates adoption: grafting into the body, inclusion in the people. Evidence: strong textually (Pauline), theological in force.
+- **PRS-06 and PRS-08, Fredrickson-tradition wiki** — "to show sinners that access was available to them": the manner of life as open-access design. Evidence, per record: PRS-08 (*high-quality listening as resonance enabler* — a lab finding, with sensory attunement and psychological safety as the proximate mechanisms) is **Confidence High** and supplies the empirical core; PRS-06 (*democratizing participation in reality* — the capacity for love as biologically modifiable and available to all) is an **(Implicit) reading at Confidence Medium**, and is the one carrying the open-access claim. The extension from either to the manner of the incarnate life is this commentary's speculative step.
 
 ## Where this leaves us
 

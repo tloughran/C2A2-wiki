@@ -3,21 +3,21 @@ day: 263
 title: Making Satisfaction (Contemporary)
 pairs_with: "[[Day-263 - Making Satisfaction]]"
 length_target_words: 1500
-length_actual_words: 756
+length_actual_words: 936
 length_tier: short
-length_ratio_to_target: 0.5
-length_note: "Compact by design: Suppl. Q.11–12 (seal + satisfaction) maps to two tight motifs — the trusted disclosure channel and the restored equality — both fully developed without padding."
+length_ratio_to_target: 0.624
+length_note: "Compact by design: Suppl. Q.11–12 (seal + satisfaction) maps to two tight motifs — the trusted disclosure channel and the restored equality — both fully developed without padding. RECOUNTED 2026-08-31 after this run's McGilchrist PRS-06 bridge repair, which added 180 words: 756 → 936, ratio 0.50 → 0.624. Still under tier and still noted, so no flag is suppressed by the update. The recount was taken AFTER editing and so cannot separate the added words from any pre-existing miscount; recorded as a limitation."
 karpathy_wiki_sources:
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-06 relational trust as the condition of truthful disclosure)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-06 embodied tradition formation — knowledge is person-involving and resists context-free transfer; the step from that to a *confidential* channel is this day's extension, see Bridges note)"
   - "traditions/friston/prs_triplets.md (safe low-cost channel for error-sharing; satisfaction as corrective action closing the loop)"
   - "traditions/levin/prs_triplets.md (PRS-03 restoration of a disturbed equality toward the set-point)"
   - "traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior; honor as right relation)"
 evidence_strength_summary: "Seal-as-trust-condition is humanistic-empirical (McGilchrist) + formal (Friston channel); satisfaction-as-equality-restoration is formal/empirical-in-domain (Levin); 'due honor to God' content is theological."
-mind_first_reframe: "The seal is reframed as the constitutive trust-condition that makes honest error-disclosure possible (McGilchrist PRS-06, Friston), and satisfaction as the corrective action returning a disturbed equality to its set-point (Levin PRS-03, Friston), with 'due honor' read as a relation set right rather than a ledger balanced (Rohr PRS-7)."
+mind_first_reframe: "The seal is reframed as the constitutive trust-condition that makes honest error-disclosure possible (McGilchrist PRS-06 on person-involving knowledge, extended here to confidentiality; Friston), and satisfaction as the corrective action returning a disturbed equality to its set-point (Levin PRS-03, Friston), with 'due honor' read as a relation set right rather than a ledger balanced (Rohr PRS-7)."
 central_theme_thread: "The seal is the held space in which a perspective-limited agent can safely disclose its hidden deviation, and satisfaction is that agent's resource-bounded labor of re-aligning the disturbed relation toward loving unity — both conditions of a finite perspective being re-included."
 tags: [synthesis, day/263, theme/trusted-channel-and-restored-equality]
-last_qc_at: "2026-08-14T00:21:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T18:28:34"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 263 — Making Satisfaction (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem: **what condition makes truthful disclosure possible,
 
 ## Resource
 
-McGilchrist supplies the seal's rationale. In Tom's PRS-form record of McGilchrist's program, PRS-06 (knowledge and self-disclosure are transmitted within trusted, embodied relationships, not as context-free data) explains why the seal is constitutive rather than incidental: honest self-disclosure is only available inside a relationship the discloser can trust absolutely, and a leaking channel destroys the very condition that makes confession work. Friston's program names the same point formally — a safe, low-cost channel is what allows an agent to externalize its hidden error without defensive distortion; the seal is the guarantee that makes the error-sharing channel usable.
+McGilchrist supplies the seal's rationale, though one step of it is this commentary's own. In Tom's PRS-form record of McGilchrist's program, PRS-06 is written on *embodied tradition formation*: traditions transmit skills, perceptual habits, and tacit knowledge that resist formalization, so what is passed between persons is person-involving and contextual rather than context-free information transfer. That warrants the first half of the claim — confession is a relational act, not the filing of a report, and its content does not survive extraction from the relationship. **The second half is an extension declared here rather than a citation:** the record says nothing about *confidentiality*, and the McGilchrist register carries no triplet on a non-leaking channel or on what a betrayed disclosure destroys. Read forward, PRS-06 makes the seal intelligible — a relationship whose contents can be exported is not the kind of relationship inside which person-involving knowledge moves — but the inference is the commentary's, not the record's. Friston's program names the same point formally — a safe, low-cost channel is what allows an agent to externalize its hidden error without defensive distortion; the seal is the guarantee that makes the error-sharing channel usable.
 
 Levin supplies the satisfaction half. In Tom's PRS-form record of Levin's program, PRS-03 (target morphology) and the restoration of a perturbed system toward its set-point give "equality of justice" a concrete shape: satisfaction is the corrective action that returns a disturbed configuration to balance — the closing, action-stage of the repair loop (Day 254), not merely the registration (contrition) or representation (confession) of the deviation. Friston's account of action reducing divergence is the formal complement.
 
@@ -48,7 +48,7 @@ The motif appears twice. The seal is the held space in which a perspective-limit
 
 ## Bridges
 
-- **McGilchrist PRS-06 (relational trust as condition of disclosure)** — *humanistic, well-evidenced.* The seal is constitutive of honest confession.
+- **PRS-06 in the McGilchrist-tradition wiki** (`wiki/traditions/mcgilchrist/prs_triplets.md`) — embodied tradition formation: traditions transmit tacit, person-involving knowledge that resists context-free transfer. *Humanistic; the record is Label "(Implicit)" and Confidence Medium — not a strongly-evidenced entry.* It grounds confession as a relational rather than informational act. **The step to the seal as a confidential, non-leaking channel is this commentary's extension** — the register holds no entry on confidentiality or on betrayed disclosure.
 - **Friston (safe error-sharing channel; action reducing divergence)** — *formal, well-developed.* Trust enables disclosure; satisfaction as corrective action.
 - **Levin PRS-03 (restoration to a set-point)** — *empirical-in-domain.* Satisfaction as return of a disturbed equality to balance.
 - **Rohr PRS-7 (relationship ontologically prior; honor as right relation)** — *theological / contemplative.* Equality restored is a relation set right.

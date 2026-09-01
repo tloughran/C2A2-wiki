@@ -3,22 +3,22 @@ day: 278
 title: Marriage (Contemporary)
 pairs_with: "[[Day-278 - Marriage]]"
 length_target_words: 2200
-length_actual_words: 1098
+length_actual_words: 1197
 length_tier: medium
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 is relationship ontologically prior?, PRS-04 embodied love as epistemology)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales, PRS-32 goal-directed cognition scaling cell->organism, PRS-10 continuity of goal-directedness)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling, PRS-05 distributed cognition)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; canonical: Paul and the Faithfulness of God on Eph 5)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-8 one-new-humanity: unity-in-distinction as reconciliation-without-erasure; canonical: Paul and the Faithfulness of God on Eph 5)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-25 dissociative constructs both real and not-ultimate)"
 evidence_strength_summary: "Levin multiscale-individuality empirical at biological scales, speculative for human dyads; Friston dyadic mutual modeling formal/speculative; Rohr/Wright theological-scriptural, firm within tradition."
-length_ratio_to_target: 0.50
+length_ratio_to_target: 0.544
 mind_first_reframe: "Marriage is the covenantal, sacramental case of a higher-order individual genuinely emerging from two; the bond Aquinas calls real is real in the way that an organism is more than its cells."
 central_theme_thread: "Two radically partial perspectives undertake to form a single life in which each sees through the other what neither sees alone — union without erasure, the project's eschatological picture rendered at the scale of two."
 tags: [synthesis, day/278, theme/one-flesh-as-higher-individual]
-last_qc_at: "2026-08-13T08:22:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T20:22:42"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 278 — Marriage (Contemporary Parallel)
@@ -33,7 +33,7 @@ The shared inquiry-problem is the **ontology of union**: is a "one flesh" a real
 
 ## Resource
 
-The Levin-tradition program is the leading resource, and on this locus the project's mind-first frame and the topic coincide. Tom's PRS-form record of Levin's work (PRS-32 in the Levin-tradition wiki, *how goal-directed cognition scales up from individual cells to integrated organisms*; PRS-09, *a principled framework for cognitive attribution across scales*; PRS-10, *continuity of goal-directedness*) is precisely a research program on how lower individuals become a higher individual with its own goals, its own competencies, its own coherent agency. Levin's central empirical finding — that cells coordinate via a shared bioelectric "cognitive glue" into a collective that pursues a target morphology no cell represents alone — is the best available naturalistic model of *two-or-more becoming a real one*. The Friston-tradition program supplies the dynamics of the dyad specifically: PRS-06 (*multi-agent coherence via mutual modeling*) and PRS-05 (*distributed cognition across scales*) model a couple as two generative models that come to share a Markov blanket, so that the pair minimizes free energy *as a unit*. Theologically, the Rohr-tradition program goes furthest: PRS-7 in the Rohr-tradition wiki (*is relationship a derived feature of already-existing individuals, or is it ontologically prior?*) directly answers the medieval substance-bias — relationship is not built on top of finished individuals but is constitutive of them. Wright's program grounds the scriptural register: the Pauline reading of marriage (Eph 5) as a "great mystery" signifying Christ and the Church places the one-flesh union inside covenant theology, not mere contract.
+The Levin-tradition program is the leading resource, and on this locus the project's mind-first frame and the topic coincide. Tom's PRS-form record of Levin's work (PRS-32 in the Levin-tradition wiki, *how goal-directed cognition scales up from individual cells to integrated organisms*; PRS-09, *a principled framework for cognitive attribution across scales*; PRS-10, *continuity of goal-directedness*) is precisely a research program on how lower individuals become a higher individual with its own goals, its own competencies, its own coherent agency. Levin's central empirical finding — that cells coordinate via a shared bioelectric "cognitive glue" into a collective that pursues a target morphology no cell represents alone — is the best available naturalistic model of *two-or-more becoming a real one*. The Friston-tradition program supplies the dynamics of the dyad specifically: PRS-06 (*multi-agent coherence via mutual modeling*) and PRS-05 (*distributed cognition across scales*) model a couple as two generative models that come to share a Markov blanket, so that the pair minimizes free energy *as a unit*. Theologically, the Rohr-tradition program goes furthest: PRS-7 in the Rohr-tradition wiki (*is relationship a derived feature of already-existing individuals, or is it ontologically prior?*) directly answers the medieval substance-bias — relationship is not built on top of finished individuals but is constitutive of them. Wright's program grounds the scriptural register, and the register has an entry written for exactly this question: PRS-8 in the Wright-tradition wiki reads the "one new humanity" of Eph 2:11–22 as *reconciliation-without-erasure*, and its stated Problem is that the network's loving-unity claim needs a scriptural account of how a plurality of perspective-limited agents becomes one body without dissolving difference. That is the one-flesh problem stated in advance. It is marked Confidence High and is the anchor for the union-without-erasure claim below; the Pauline reading of marriage (Eph 5) as a "great mystery" signifying Christ and the Church then places one-flesh inside covenant theology rather than contract.
 
 ## Solution (proposed, speculative)
 
@@ -48,7 +48,7 @@ This article sits at the heart of the project's claim. Conscious agents are indi
 - **Levin PRS-32 / PRS-09 / PRS-10 (empirical at biological scales, speculative for human dyads):** the science of how lower individuals become a real higher individual; the strongest naturalistic model of "one flesh."
 - **Friston PRS-06 / PRS-05 (formal / speculative):** the couple as two generative models sharing a Markov blanket, minimizing free energy as a unit — the dynamics of union.
 - **Rohr PRS-7 (theological):** relationship is ontologically prior to the related individuals — the direct answer to substance-bias.
-- **Wright (scriptural, theological):** Eph 5 places one-flesh inside covenant and the Christ–Church mystery, not contract.
+- **Wright PRS-8 (`wiki/traditions/wright/prs_triplets.md`; scriptural, Confidence High):** the "one new humanity" of Eph 2:11–22 as reconciliation-without-erasure — the record written to supply a scriptural account of how perspective-limited agents become one body without dissolving difference, which is the one-flesh question in its scriptural form. Eph 5 then places the union inside covenant and the Christ–Church mystery, not contract.
 - **Kastrup PRS-02 / PRS-25 (metaphysical, speculative):** individuation and the joining of dissociated alters within one mind — a monist substrate in which union of perspectives is natural.
 
 ## Where this leaves us

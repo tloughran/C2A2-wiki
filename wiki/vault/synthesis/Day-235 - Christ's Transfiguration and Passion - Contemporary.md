@@ -3,13 +3,13 @@ day: 235
 title: Christ's Transfiguration and Passion (Contemporary)
 pairs_with: "[[Day-235 - Christ's Transfiguration and Passion]]"
 length_target_words: 2200
-length_actual_words: 1481
-length_ratio_to_target: 0.673
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis; accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_actual_words: 1624
+length_ratio_to_target: 0.738
+length_note: "OUTSIDE the -25% floor (0.738), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's cleaned count (3375 words = medium, near the top of the band). This is the file where the shortfall is most worth Tom's eye — Q.46 is the most sustained question in this stretch of the Tertia Pars (twelve articles) and the commentary treats it alongside Q.45, so the material would justify running long rather than short. It is not truncated (four named Resources, five anchored bridges, full shared/reframed/evidence split), but it is the strongest candidate in this queue for genuine expansion rather than acceptance. Reviewer pass 2026-08-31 added ~143 words dissolving a bundled Stump badge, grading the Rohr record, and restoring the Fredrickson PRS-02 solution line. Flagged to Tom as part of the 223-235 boilerplate-note band."
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission; PRS-08 suffering reframed through narrative phenomenology; PRS-11 Grains of Wheat) [Stump on the atonement — love and union, per bridges file]"
-  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-04 resurrection as historical) [Wright primary on Christology III Q.1-59]"
+  - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission, Medium; PRS-08 suffering reframed through narrative phenomenology, High; PRS-11 Grains of Wheat, High)"
+  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology, High; PRS-05 salvation as incorporation, High; PRS-04 resurrection as historical, Medium)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 the Universal Christ)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love reduced to sentiment; PRS-03 scale-bridging in agent coupling)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; PRS-08 the Daimon as principle of individuation)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "The a.3 hinge — deliverance perfected by love free
 mind_first_reframe: "The passion is read as the cost the loving-unity computation pays under its own constraint — that union must be freely computed by each limited perspective, so love can only be evoked, never imposed; the transfiguration is the foretaste installed in a few so the many can endure the cost."
 central_theme_thread: "This is the day the central theme stops being structure and becomes price: 'work out your salvation in fear and trembling' is Philippians' own commentary on the obedience-unto-death hymn that precedes it — the loving unity is obtained from within limitation, at full cost, and the perfection of salvation is Aquinas's own a.3 claim: to know how much one is loved, and be stirred to love in return."
 tags: [synthesis, day/235, theme/love-evoked-not-imposed]
-last_qc_at: "2026-08-16T22:27:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T06:36:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 235 — Contemporary Parallel: The Cost of Evoking Love
@@ -38,7 +38,7 @@ The inquiry-problem, medieval and contemporary: **love cannot be commanded into 
 
 **Love as union, suffering as its condition.** The Stump-tradition record carries the closest contemporary scholarship: PRS-05 (suffering and divine permission as a condition for deep personal union), PRS-08 (suffering reframed through narrative phenomenology — what suffering means is inseparable from the story it occurs in), PRS-11/PRS-12 (the Grains of Wheat material, which takes its very title from the saying quoted in Day 233's episode). On this account the atonement is not primarily a ledger transaction but the act that makes the deepest union possible — which is article 3 read philosophically.
 
-**Love as resonance, which requires a response.** The Fredrickson-tradition record's PRS-02 names the deflationary danger (love reduced to sentiment) and PRS-03 the constructive claim: love as positivity resonance is intrinsically dyadic — it does not exist until the other responds. CROSS-005 and CROSS-018 record the convergence: the psychophysiology, the Thomistic metaphysics of union, and the monist account of re-integration all center love as a *two-sided* event. This is empirical at the level of measured resonance; its application to the passion is the speculative bridge, marked as such. But it gives "stirred to love him in return" a contemporary mechanism-shape: the cross as the maximal display that evokes, in whoever will receive it, the answering movement that constitutes union.
+**Love as resonance, which requires a response.** The Fredrickson-tradition record's PRS-02 takes *love reduced to sentiment* as its problem, but its solution is the constructive one and should be read as such: love (positivity resonance) correlates with measurable neurophysiological synchrony — vagal tone, oxytocin, neural coupling — which is offered precisely as an empirical substrate for theological and metaphysical claims about love (Confidence High). PRS-03 (scale-bridging in agent coupling, Confidence High) carries it across scales: love as positivity resonance is intrinsically dyadic — it does not exist until the other responds. CROSS-005 and CROSS-018 record the convergence: the psychophysiology, the Thomistic metaphysics of union, and the monist account of re-integration all center love as a *two-sided* event. This is empirical at the level of measured resonance; its application to the passion is the speculative bridge, marked as such. But it gives "stirred to love him in return" a contemporary mechanism-shape: the cross as the maximal display that evokes, in whoever will receive it, the answering movement that constitutes union.
 
 **The layered soul.** Articles 7-8 contain the strangest claim of the day: the lower faculties of Christ's soul suffered totally while "the higher part of his soul enjoyed fruition perfectly while Christ was suffering." One person; two simultaneous registers; neither canceling the other. PRS-02 in the Kastrup-tradition record (individual identity within monism, via dissociation) and PRS-08 (the Daimon as individuation principle) supply the contemporary structure: a single consciousness can sustain nested, partially-screened registers — the structure monism uses to explain how the one mind is many without ceasing to be one. The fit is structural and speculative; Aquinas reaches it from the metaphysics of faculties, the monist from dissociation — that two such different toolkits carve the same joint is itself worth flagging.
 
@@ -56,11 +56,11 @@ This is the day the central theme stops being structure and becomes price. The p
 
 ## Bridges
 
-- **PRS-05 + PRS-08, Stump-tradition wiki** (suffering and divine permission; narrative phenomenology of suffering) — the atonement as the act that makes deepest union possible; article 3 read philosophically. Evidence: serious contemporary philosophy, theological in force.
+- **PRS-08 and PRS-05, Stump-tradition wiki** (narrative phenomenology of suffering; suffering and divine permission) — the atonement as the act that makes deepest union possible; article 3 read philosophically. Evidence, per record: PRS-08 (*Grains of Wheat* — biblical narratives yielding second-personal knowledge of suffering irreducible to propositional argument) is **Confidence High**; PRS-05 (union as the final cause of permitted suffering, from *Wandering in Darkness*) is an **(Implicit) reading at Confidence Medium** — and it is PRS-05, the softer record, that carries this day's load-bearing claim that suffering is permitted *for* union. Naming that asymmetry is the honest form of the citation.
 - **CROSS-005 + CROSS-018, master index** (love/union as fundamental; resonance ↔ Thomistic union) — "stirred to love him in return" given a two-sided, response-requiring mechanism-shape. Evidence: empirical in-domain (resonance), speculative as soteriology.
 - **PRS-02 + PRS-08, Kastrup-tradition wiki** (identity within monism; Daimonic individuation) — the fruition/suffering simultaneity as nested registers of one consciousness. Evidence: structural fit, speculative.
 - **PRS-05 + PRS-03, Wright-tradition wiki** (incorporation; inaugurated eschatology) — the Pasch timing, the people founded at the cross, the decisive event whose implications are still being worked out. Evidence: strong historical scholarship, theological in force.
-- **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the cross as the great disorder through which reorder comes; the transfiguration as the foretaste that makes the disorder bearable. Evidence: contemplative-phenomenological.
+- **PRS-02, Rohr-tradition wiki** (*The disorder necessary for growth* — the order-disorder-reorder pattern, and the claim that the reorder following genuine disorder is deeper than the original because it has been tested), **Confidence High** — the cross as the great disorder through which reorder comes; the transfiguration as the foretaste that makes the disorder bearable. Evidence: contemplative-phenomenological, but at the register's firmest grade, not an impressionistic reading.
 
 ## Where this leaves us
 

@@ -16,8 +16,8 @@ evidence_strength_summary: "Virtue-as-stable-attractor / deepened-prior is forma
 mind_first_reframe: "The virtue of penance is a habituated mode of attention (McGilchrist) and a deepened generative prior — a stabilized attractor (Friston, Levin) — that reconfigures the agent's default engagement toward detecting and repairing deviation from the good."
 central_theme_thread: "Through habit a limited perspective becomes the kind of agent for which return to the whole is connatural, widening its attractor toward loving unity so that fewer perturbations dislodge it."
 tags: [synthesis, day/255, theme/habit-as-stabilized-attractor]
-last_qc_at: "2026-08-18T22:32:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-31T14:31:14"
+last_qc_outcome: "pass"
 ---
 
 # Day 255 — Penance as a Virtue (Contemporary Parallel)

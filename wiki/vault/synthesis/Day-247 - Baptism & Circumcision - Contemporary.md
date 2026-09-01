@@ -3,20 +3,20 @@ day: 247
 title: Baptism & Circumcision (Contemporary)
 pairs_with: "[[Day-247 - Baptism & Circumcision]]"
 length_target_words: 2200
-length_actual_words: 690
+length_actual_words: 867
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler; PRS-10 active inference as framework for reasoning — selection among competing world models)"
-  - "traditions/wright/wiki.md (five-act drama; faithful improvisation; new perspective on Paul)"
-  - "traditions/loughran/ (PRS lineage: Kuhn + MacIntyre + Levin via James)"
-  - "traditions/rohr/wiki.md (order-disorder-reorder)"
+  - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation on the five-act drama; PRS-34 'works of the law' as covenant badge practices — circumcision named among them)"
+  - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry; PRS-09 Synergistic Coils — the PRS lineage: Kuhn + MacIntyre + Levin via James)"
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder — the disorder necessary for growth)"
 evidence_strength_summary: "Covenant continuity-with-revision theological (Wright, high); generative-model revision formal (Friston); tradition-as-rational-progress is Tom's PRS lineage (Kuhn/MacIntyre), not a thinker's self-description; central-theme moderately engaged."
-length_ratio_to_target: 0.31
+length_ratio_to_target: 0.394
 length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
 central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
-last_qc_at: "2026-08-13T02:29:02"
+last_qc_at: "2026-08-31T10:42:12"
 last_qc_outcome: "rewrote"
 ---
 
@@ -50,10 +50,10 @@ The project holds that limited agents need guidance from those who perceive more
 
 - **Friston PRS-04 (active modeler)** — *formal.* Belief revision within a scheme.
 - **Friston PRS-10 (active inference as framework for reasoning)** — *formal.* Selection among competing world models — the structural revision that conserves the deep prior while changing surface signs.
-- **Wright (faithful improvisation; new perspective on Paul)** — *theological, high within method.* Covenant continuity-with-revision.
-- **Tom's PRS framework (Kuhn + MacIntyre + Levin-via-James)** — *methodological lens, authored by Tom.* Tradition as rational P/R/S progress — cited by direction-of-authorship.
-- **Rohr (order-disorder-reorder)** — *theological / contemplative.* The crisis-and-reorder arc that preserves prior truth.
-- **Stump (sacraments of the old and new law)** — *theological-philosophical.* Interlocutor on efficacy across covenants.
+- **Wright PRS-02 (`traditions/wright/prs_triplets.md`; faithful improvisation on the five-act drama)** — *scriptural, high within method.* Covenant continuity-with-revision: deep immersion in the preceding acts plus creative responsiveness to the present scene.
+- **Wright PRS-34 (`traditions/wright/prs_triplets.md`; "works of the law" as covenant badge practices)** — *scriptural, high within method.* Circumcision is named among the badges: justification is the declaration of membership, so the badge is the tracking sign, not the mechanism — exactly the conserved-prior-under-revised-sign structure.
+- **Loughran PRS-08 / PRS-09 (`traditions/loughran/prs_triplets.md`; tradition-crossing inquiry; Synergistic Coils)** — *methodological lens, authored by Tom.* Tradition as rational P/R/S progress, with MacIntyre's second-first-language criterion for tradition maturity — cited by direction-of-authorship.
+- **Rohr PRS-02 (`traditions/rohr/prs_triplets.md`; the disorder necessary for growth)** — *theological / contemplative.* Order-disorder-reorder: the reorder that follows genuine disorder is deeper than the original because it has passed through the crisis.
 
 ## Where this leaves us
 

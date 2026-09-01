@@ -3,10 +3,10 @@ day: 216
 title: Christ as Head (Contemporary)
 pairs_with: "[[Day-216 - Christ as Head]]"
 length_target_words: 2200
-length_actual_words: 1846
-length_ratio_to_target: 0.839
+length_actual_words: 1909
+length_ratio_to_target: 0.868
 length_tier: medium
-length_note: "Runs under medium target: Q.7's twelve articles on Christ's individual grace are treated as setup for the capital-grace question of Q.8, where the contemporary linkage actually lives, rather than mirrored article-by-article."
+length_note: "Runs under medium target: Q.7's twelve articles on Christ's individual grace are treated as setup for the capital-grace question of Q.8, where the contemporary linkage actually lives, rather than mirrored article-by-article. UPDATED 2026-08-31: the stored figure (1846 / 0.839) was measured against a clean body count of 1793, i.e. it OVERSTATED by 53 — the recount preceded any edit, so the file was further under tier than the note claimed, not less. The 2026-08-31 QC pass dissolved two bundled evidence badges (Friston PRS-01 High vs PRS-04 Medium; Wright PRS-05 High vs Rohr PRS-03/04 Medium), costing ~116 words of grading apparatus. Tier re-verified CORRECT from the paired transcript (2389 ASR words = medium). Still outside ±10%, well inside the ±25% escalation band; advisory only."
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as objective neurophysiological coupling; PRS-03 positivity resonance scale-bridging cells -> organisms -> communities -> traditions)"
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy minimization; PRS-04 organism as active modeler) [Markov-blanket nesting of bodies-within-bodies]"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Capital grace as a head's influx into its members ~ 
 mind_first_reframe: "Capital grace — the influx by which the Head communicates its fullness to the members — is read as a coupling-and-nesting picture: love as a measurable resonance that knits limited perspectives into one higher-order body, the whole's fullness flowing into its parts and incorporating them rather than a juridical transfer of merit."
 central_theme_thread: "The grace of headship is the loving-unity computation made visible: a whole, fuller perspective pouring its fullness into limited members and binding them into one body united with God — exactly the telos toward which each limited agent computes, here flowing from the Head who already contains the whole."
 tags: [synthesis, day/216, theme/capital-grace-fullness-to-members]
-last_qc_at: "2026-08-16T08:20:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T04:25:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 216 — Christ as Head (Contemporary Parallel)
@@ -52,9 +52,9 @@ This is one of the most central-theme-resonant articles in the entire *Summa*. T
 ## Bridges
 
 - **Capital grace (gratia capitis), the influx from Head to members ↔ love as a measurable coupling that scales from dyad toward community** — Tom's PRS-form record of Fredrickson, PRS-02 (love as objective neurophysiological coupling) and PRS-03 (scale-bridging). *Why:* the head-to-body influx is reread as resonance propagating through a body, the biological echo of capital grace. Evidence: **empirical (strong) at small scale; extrapolated (medium) to communities/traditions**.
-- **The body of Christ as one body made of many members ↔ a nested multi-scale agent (Markov blankets within blankets)** — Tom's PRS-form record of Friston, PRS-01 (free-energy minimization) and PRS-04 (organism as active modeler). *Why:* "from a head to the body" maps onto the highest-scale integrating agent binding lower-scale members into one. Evidence: **formal analogy, medium**.
+- **The body of Christ as one body made of many members ↔ a nested multi-scale agent (Markov blankets within blankets)** — Tom's PRS-form record of Friston, PRS-01 (the Free Energy Principle itself: all biological systems minimize variational free energy; Confidence **High**) and PRS-04 (organism as active modeler; *implicit*, Confidence **Medium**). *Why:* "from a head to the body" maps onto the highest-scale integrating agent binding lower-scale members into one. Evidence: the two records are **not** of one grade and should not be read as one — **PRS-01 is a firmly established formalism (High), PRS-04 an implicit reading of it (Medium)**; the *nesting-of-blankets* step this bullet takes, and its application to a grace-bearing body, is **this commentary's formal analogy, medium**.
 - **Love/union as the fundamental category the headship serves ↔ the convergence on union as basic** — master CROSS-005 (Fredrickson/Stump/Kastrup). *Why:* capital grace presupposes that union is real and primary, not a derived sentiment. Evidence: **central-theme (strong) + theological**.
-- **Christ as Head of all men and angels; the fullness flows to incorporate the members ↔ salvation as incorporation into the people among whom God comes home** — Tom's PRS-form record of Wright, PRS-05; of Rohr, PRS-03/PRS-04 (the Universal Christ, embodied love). *Why:* the influx's purpose is to knit limited perspectives into one people united with God — the loving-unity telos. Evidence: **theological + central-theme (strong)**.
+- **Christ as Head of all men and angels; the fullness flows to incorporate the members ↔ salvation as incorporation into the people among whom God comes home** — Tom's PRS-form record of Wright, PRS-05 (Confidence **High**); of Rohr, PRS-03 (the Universal Christ, Confidence **Medium**) and PRS-04 (embodied love as epistemology, Confidence **Medium**). *Why:* the influx's purpose is to knit limited perspectives into one people united with God — the loving-unity telos. Evidence: **the scriptural leg is the firm one — Wright PRS-05 at High is what carries "incorporation"; the two Rohr records are Medium and carry the cosmic *scope* (PRS-03) and the insistence that the love is embodied (PRS-04), not the incorporation claim itself. Central-theme fit strong; the whole is theological**.
 
 ## Where this leaves us
 

@@ -18,8 +18,8 @@ evidence_strength_summary: "Contemplation engages intellect AND affection (the k
 mind_first_reframe: "Contemplation is a limited perspective being progressively informed by — and in the same act drawn in love toward — the whole that exceeds it; the many-act human ascent is inference up a mediating interface toward the near-unmediated vision (reached here only transiently, in rapture), and the active life terminates at its goal while the loving contemplation remains."
 central_theme_thread: "The resource-bounded computation toward loving unity halts when limitation is removed and the simple whole is seen: the active life — the working-out 'in fear and trembling' under scarcity — is terminal, while the contemplative vision of the whole, communal in its final form, is what is 'not taken away.'"
 tags: [synthesis, day/208, theme/contemplation-as-the-telos]
-last_qc_at: "2026-08-12T06:34:07"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-30T22:29:15"
+last_qc_outcome: "pass"
 ---
 
 # Day 208 — The Contemplative Life (Contemporary Parallel)

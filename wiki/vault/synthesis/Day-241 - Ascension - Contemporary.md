@@ -3,7 +3,7 @@ day: 241
 title: Ascension (Contemporary)
 pairs_with: "[[Day-241 - Ascension]]"
 length_target_words: 2200
-length_actual_words: 965
+length_actual_words: 1252
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-37 Ascension as enthronement, heaven-and-earth overlap; PRS-02 faithful improvisation / five-act drama; PRS-03 inaugurated eschatology)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 attractor formalism)"
 evidence_strength_summary: "Christology/eschatology theological (Wright, high within its method); interface read of 'place' formal-speculative (Hoffman); non-local form-influence an empirical-analogy bridge (Levin); central-theme claim speculative."
-length_ratio_to_target: 0.44
-length_note: "Concise by design — a single-focus III Pars Q.57 (Ascension) article carried in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
+length_ratio_to_target: 0.569
+length_note: "Recounted 2026-08-31: the stored 965 / 0.44 understated the body by roughly 190 words even before repair; true post-repair count is 1252, ratio 0.569. Still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2043 words, inside the 2000-3500 medium band), so escalating this as a tier error would be false. Q.57 is a single narrow article and the PRS form is complete, which is the real justification; note that the identical sentence previously here also appears on Days 242-246, i.e. it was a template rather than a per-day reason, and the reviewer escalation it deferred to (QC log 2026-06-16) is still open."
 mind_first_reframe: "If perceived spacetime is a species-specific interface, the Ascension is a change of interface — a withdrawal from the shared sensory presentation — not a subtraction from Christ's real presence or universal governance."
 central_theme_thread: "The ascended Christ's recession from the shared interface is what constitutes the community as perspective-limited agents who must now compute toward loving unity through faith and one another rather than direct sight."
 tags: [synthesis, day/241, theme/presence-under-limitation]
-last_qc_at: "2026-08-16T14:27:40"
+last_qc_at: "2026-08-31T08:26:06"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,11 +51,11 @@ The project's claim is that conscious agents are individuated by the limitations
 
 ## Bridges
 
-- **Hoffman PRS-04 (observer-dependent spacetime)** — *interface / formal-speculative.* Lets "local withdrawal" be a fact about presentation, not subtraction from being; the cleanest resource for Aquinas's spatial worry.
+- **Hoffman PRS-04 (observer-dependent spacetime)** — *interface / formal-speculative; record **Medium**, marked (Implicit).* Lets "local withdrawal" be a fact about presentation, not subtraction from being; the cleanest resource for Aquinas's spatial worry — and, since this bullet is the day's leading move, worth stating that it leads on the softest-graded record cited here.
 - **Levin PRS-01 + PRS-03 (morphogenetic control; attractor formalism)** — *empirical-in-domain, speculative-in-transfer.* A non-local governing set-point that orders a whole without occupying it.
 - **Wright PRS-37 (Ascension inaugurates rather than suspends the reign) + PRS-02 (faithful improvisation), the Wright-tradition wiki** — *theological, high confidence within method; PRS-37 itself marked Medium and flagged "verify against the audio."* PRS-37 is written for this exact locus: heaven is not a distant location but God's dimension intersecting this one, and the Daniel-7 frame has the Son of Man going *up to be enthroned*, not away — so the present is the period of the reign rather than an interval before it. PRS-02 supplies what the community does inside that period.
-- **Rohr PRS-03 (the Universal Christ) + PRS-11 (the cosmic pattern without dissolving Yeshua), the Rohr-tradition wiki** — *theological / contemplative.* PRS-03 gives the cosmic scope: the divine pattern present in all creation, so the ascended Christ is pattern-in-reality rather than a relocated body. PRS-11 is the guard this synthesis's own closing paragraph asks for — the cosmic frame articulated so that the unique embodied disclosure in Yeshua of Nazareth is preserved rather than absorbed.
-- **Stump PRS-34 (love as an ontological claim about what is foundational), the Stump-tradition wiki** — *theological-philosophical.* Governance-by-union rather than governance-by-location: her own retrospective statement puts "love in powerful, welcoming personal relationship" at the irreducible foundation of reality, which is the ontological register this bullet needs. *Scope note:* the tradition file has no atonement-specific triplet — PRS-34 names the atonement book only as one link in the book-chain — so the union claim is anchored at the ontological level it is actually being used at, not at an atonement id that does not exist.
+- **Rohr PRS-03 (the Universal Christ) + PRS-11 (the cosmic pattern without dissolving Yeshua), the Rohr-tradition wiki** — *theological / contemplative; **one grade per record**: PRS-03 is **Medium**, PRS-11 is **High**.* The asymmetry matters and runs against the order they are named in: the cosmic-scope claim this bullet leans on hardest is the softer record, and the guard against it is the firmer one. PRS-03 gives the cosmic scope: the divine pattern present in all creation, so the ascended Christ is pattern-in-reality rather than a relocated body. PRS-11 is the guard this synthesis's own closing paragraph asks for — the cosmic frame articulated so that the unique embodied disclosure in Yeshua of Nazareth is preserved rather than absorbed.
+- **Stump PRS-34 (love as an ontological claim about what is foundational), the Stump-tradition wiki** — *theological-philosophical, **Confidence High**.* Governance-by-union rather than governance-by-location: her own retrospective statement puts "love in powerful, welcoming personal relationship" at the irreducible foundation of reality, which is the ontological register this bullet needs. *Scope note:* the tradition file has no atonement-specific triplet — PRS-34 names the atonement book only as one link in the book-chain — so the union claim is anchored at the ontological level it is actually being used at, not at an atonement id that does not exist.
 
 ## Where this leaves us
 

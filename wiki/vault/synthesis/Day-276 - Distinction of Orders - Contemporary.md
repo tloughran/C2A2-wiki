@@ -17,8 +17,8 @@ length_ratio_to_target: 0.664
 mind_first_reframe: "The priestly character is the theological limit-case of durable, function-bearing form assigned to a member by the whole it serves — a real-but-immaterial role, which mind-monism accommodates more readily than physicalism."
 central_theme_thread: "An order is the institutional admission that no single member sees the whole; ordination is a confessed perspective-limitation made fruitful within a body that together perceives more than any of its members."
 tags: [synthesis, day/276, theme/order-as-form-in-a-body]
-last_qc_at: "2026-08-13T06:32:39"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-31T20:22:25"
+last_qc_outcome: "pass"
 ---
 
 # Day 276 — Distinction of Orders (Contemporary Parallel)

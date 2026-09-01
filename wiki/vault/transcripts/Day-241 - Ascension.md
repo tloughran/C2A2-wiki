@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-241 - Ascension - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/241, pars/3, q/57]
-last_qc_at: "2026-07-27T12:20:07"
+last_qc_at: "2026-08-31T08:26:06"
 last_qc_outcome: "pass"
 ---
 

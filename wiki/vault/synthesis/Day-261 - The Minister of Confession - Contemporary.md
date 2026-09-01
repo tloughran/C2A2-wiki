@@ -16,7 +16,7 @@ evidence_strength_summary: "Both the disclosure half and the minister half rest 
 mind_first_reframe: "Confession is reframed as externalizing a hidden deviation into a shared field where it becomes jointly correctable (Friston), within a relationship that enables truthfulness (McGilchrist), and the minister as a nested agent through whom a larger authority looses it (Friston PRS-06)."
 central_theme_thread: "The motif is the move from private limitation to shared correction: a perspective-limited agent harbors a deviation it cannot fully see or repair alone and voices it to one who perceives more — the project's claim that limited perspectives need guidance from those who perceive more of the whole, enacted in miniature."
 tags: [synthesis, day/261, theme/disclosure-into-a-shared-field]
-last_qc_at: "2026-08-17T00:19:24"
+last_qc_at: "2026-08-31T16:23:06"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,8 +51,8 @@ The motif appears as the move from private limitation to shared correction. A pe
 ## Bridges
 
 - **Friston PRS-06 (`traditions/friston/prs_triplets.md`) — multi-agent coherence via mutual modeling** — *formal, but Confidence: Medium and labelled implicit.* One record carries both halves: penitent and minister as a coupled pair whose mutual model-building makes the hidden deviation jointly representable and so correctable, and the minister as the nested agent through whom a larger agency acts. The disclosure reading is this synthesis's extension of PRS-06 — the register holds no entry on externalization as such.
-- **McGilchrist PRS-06 (relational/embodied disclosure)** — *humanistic, well-evidenced.* Truthful confession depends on a held relationship.
-- **Rohr PRS-05 (surfacing the false self)** — *theological / contemplative.* Disclosure as condition of transformation.
+- **McGilchrist PRS-06 (`traditions/mcgilchrist/prs_triplets.md`) — embodied tradition formation** — *humanistic, well-evidenced.* The record is written on how *traditions* transmit — through mentorship, shared practice and contextual immersion rather than information transfer, because right-hemisphere knowledge is skill-based, contextual and person-involving. Applying that person-involving condition to the confessional dyad is this synthesis's extension: truthful confession depends on a held relationship, not a data-dump.
+- **Rohr PRS-05 (`traditions/rohr/prs_triplets.md`) — the false self transformed, not erased** — *theological / contemplative.* The record's mechanism is the redemptive re-reading of the characteristic wound: transformation is not erasure of the wounded pattern but its re-reading, so the limitation becomes the gift. That warrants "transformed rather than hidden" directly; the further step to *disclosure* as the surfacing act is this synthesis's extension, since the register carries no entry on voicing the false self to another.
 - **Wright PRS-13 (`traditions/wright/prs_triplets.md`) — salvation as inclusion in the covenanted people united with God** — *scriptural, high within method.* Absolution as real re-inclusion, not a private therapeutic act; this is the content of the loosing. The delegated-keys structure itself is theological and has no corresponding wiki node — cited here as canonical-work ground truth, not as an id.
 
 ## Where this leaves us

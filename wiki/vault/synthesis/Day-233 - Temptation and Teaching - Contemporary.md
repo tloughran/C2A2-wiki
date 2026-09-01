@@ -3,21 +3,21 @@ day: 233
 title: Temptation and Teaching (Contemporary)
 pairs_with: "[[Day-233 - Temptation and Teaching]]"
 length_target_words: 2200
-length_actual_words: 1401
-length_ratio_to_target: 0.637
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis; accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_actual_words: 1469
+length_ratio_to_target: 0.668
+length_note: "OUTSIDE the -25% floor (0.668), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's cleaned count (2064 words = medium, just over the 2000 boundary), so the tier is right and the shortfall is real. The file is a complete PRS synthesis covering two questions (Q.41 temptation, Q.42 teaching) as inverse operations on one structure, with four named Resources and five anchored bridges; it is dense rather than truncated. Reviewer pass 2026-08-31 added ~68 words dissolving a bundled McGilchrist/Stump badge. Flagged to Tom as part of the 223-235 boilerplate-note band."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-11 cancer as dissociative identity disorder of the body; PRS-09 cognitive attribution across scales)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; PRS-17 ITP-internal redefinition of illusion)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-12 embodied tradition transmission; PRS-09 value and the sacred in attention)"
   - "traditions/stump/prs_triplets.md (PRS-07 narrative cognition; PRS-11 Grains of Wheat — suffering and biblical narratives)"
-  - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; PRS-05 salvation as incorporation) [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation, High; PRS-05 salvation as incorporation, High)"
 evidence_strength_summary: "The third temptation as defection-from-the-whole ~ Levin's cancer-as-defection (PRS-02/PRS-11) = empirical at the bioelectric level, speculative as moral theology; parables as truth dosed to receivable capacity ~ interface theory (Hoffman PRS-03) = formal-theoretic (FBT theorem-grade) with a speculative homiletic bridge; the living-page doctrine ~ embodied tradition transmission (McGilchrist PRS-12, Stump PRS-07) = neuropsychological/philosophical, medium; Jews-first as vocational order = Wright's historical scholarship on Israel's election (strong textually/historically); the wedge-order of temptation = phenomenological observation carried theologically."
 mind_first_reframe: "Temptation is read as the adversarial probe inviting a perspective to defect from the whole it belongs to; teaching is read as its constructive inverse — the calibrated disclosure of the whole to perspectives that can only receive it in doses."
 central_theme_thread: "Both questions are the central claim under stress-test: the devil's third offer is the refusal of perspective-limitation (seize the whole now, on the self's terms), while parables, Jews-first ordering, and the living page are limitation honored — the whole transmitted at the rate limited perspectives can compute."
 tags: [synthesis, day/233, theme/defection-and-calibrated-disclosure]
-last_qc_at: "2026-08-12T10:30:27"
+last_qc_at: "2026-08-31T06:36:28"
 last_qc_outcome: "rewrote"
 ---
 
@@ -57,7 +57,7 @@ This pair of questions is the central claim stress-tested from both sides. The t
 
 - **PRS-02 + PRS-11, Tom's PRS-form record of the Levin program** (cancer as defection; dissociative boundary) — the third temptation as re-scaling goals to the self; the wedge as graded defection. Evidence: empirical at the bioelectric level; speculative as moral theology.
 - **PRS-03 + PRS-17, Hoffman-tradition wiki** (fitness-tracking perception; illusion redefined) — parables as honest interfaces: the whole dosed to receivable format. Evidence: formal-theoretic; speculative homiletic bridge.
-- **PRS-12, McGilchrist-tradition wiki** (embodied tradition transmission) + **PRS-07, Stump-tradition wiki** (narrative cognition) — the living page: why the doctrine was written on disciples, not papyrus. Evidence: interpretive-neuropsychological/philosophical, medium.
+- **PRS-12, McGilchrist-tradition wiki** (embodied tradition transmission) and **PRS-07, Stump-tradition wiki** (narrative cognition) — the living page: why the doctrine was written on disciples, not papyrus. Evidence, per record: PRS-07 (*narrative cognition as a philosophical category*) is **Confidence High** and is the firmer leg — it establishes that knowledge carried by narrative is rigorous rather than merely evocative; PRS-12 (*embodied tradition transmission*, tradition as a form of life whose medium is communal embodied practice) is **Confidence Medium**, and is the one making the stronger empirical claim about transmission. The bridge to "a living page" is interpretive in both cases.
 - **PRS-02, Wright-tradition wiki** (faithful improvisation) — Jews-first as covenant vocation: election *for* the nations, harvest after the grain of wheat dies. Evidence: strong textual/historical scholarship.
 - **PRS-09, Levin-tradition wiki** (cognitive attribution across scales) — "greater power by means of others": delegated, multi-scale agency as the mission's architecture. Evidence: empirical-conceptual, speculative as ecclesiology.
 

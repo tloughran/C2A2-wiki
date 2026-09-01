@@ -3,20 +3,21 @@ day: 248
 title: Confirmation (Contemporary)
 pairs_with: "[[Day-248 - Confirmation]]"
 length_target_words: 2200
-length_actual_words: 652
+length_actual_words: 849
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in anatomical morphospace; PRS-10 continuity of human and unicellular goal-directedness — cognition as graded rather than binary)"
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler; precision-weighting)"
-  - "traditions/mcgilchrist/prs_triplets.md (attention and the mode of engagement)"
-  - "traditions/rohr/wiki.md (second-half-of-life maturation)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry — recovery of right-hemisphere modes of attention)"
+  - "traditions/rohr/prs_triplets.md (PRS-37 descent as the transition mechanism between the two halves of life)"
+  - "traditions/wright/prs_triplets.md (PRS-18 a focused Wright pneumatology sized for the Tertia Pars sacramental questions, confirmation named; PRS-16 cosmic and personal-indwelling registers of Spirit integrated without a metaphysical seam)"
 evidence_strength_summary: "Developmental strengthening empirical-analogy (Levin); precision-weighting that licenses costly action formal (Friston); maturation-of-consciousness theological/psychological (Rohr/McGilchrist); central-theme moderately engaged."
-length_ratio_to_target: 0.30
+length_ratio_to_target: 0.386
 length_note: "Compact-by-design: III Q.72 (confirmation as maturation) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 mind_first_reframe: "Confirmation is reframed as the developmental strengthening of an already-constituted agent — a competency-scaling (Levin) and precision-raising (Friston) on its deep commitments that licenses mature, costly witness — not a new identity but a new robustness of an existing one."
 central_theme_thread: "Confirmation raises the limited agent's capacity to compute toward loving unity under cost — the 'fear and trembling' register — enabling it to act toward the whole even when acting is risky, actively extending the unity it belongs to into a resistant world."
 tags: [synthesis, day/248, theme/maturation-of-agency]
-last_qc_at: "2026-08-13T02:29:02"
+last_qc_at: "2026-08-31T10:42:13"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,9 +52,10 @@ The project holds that loving unity is a computation each limited agent performs
 - **Levin PRS-08 (cells as cognitive agents in anatomical morphospace)** — *empirical-in-domain, analogical transfer.* The collective as a problem-solving agent at all.
 - **Levin PRS-10 (continuity of human and unicellular goal-directedness)** — *empirical-in-domain, analogical transfer.* Competency as graded rather than binary — strengthening as scaled competency for the agent's proper goal.
 - **Friston PRS-04 (active modeler; precision-weighting)** — *formal.* Boldness as raised precision licensing costly action under uncertainty.
-- **McGilchrist (modes of attention)** — *psychological / theoretical.* Maturation as re-balanced world-engagement.
-- **Rohr (second-half-of-life maturation)** — *theological / contemplative.* The arc from identity to mission.
-- **Wright (Spirit and witness in Paul)** — *theological, high within method.* The Spirit's empowerment for public confession.
+- **McGilchrist PRS-01 (`traditions/mcgilchrist/prs_triplets.md`; hemispheric asymmetry)** — *empirical neuroscience, contested in its cultural application.* Maturation as recovery of the right-hemisphere mode of attention — relational, embodied knowing prior to and founding the analytic mode.
+- **Rohr PRS-37 (`traditions/rohr/prs_triplets.md`; the transition mechanism between the halves of life)** — *theological / contemplative.* Descent as what actually moves an agent from the first-half task to the second-half capacity — not optional, merely avoidable, and at a cost.
+- **Wright PRS-18 (`traditions/wright/prs_triplets.md`; a citable 2020s Wright pneumatology)** — *scriptural, high within method.* The Tertia Pars Spirit source named for confirmation specifically.
+- **Wright PRS-16 (`traditions/wright/prs_triplets.md`; *ruach* as simultaneously cosmic and personal)** — *scriptural, high within method.* Personal indwelling for public confession, integrated with the cosmic register without a metaphysical seam.
 
 ## Where this leaves us
 

@@ -17,8 +17,8 @@ evidence_strength_summary: "Fasting as resource-reallocation / allostatic self-r
 mind_first_reframe: "Fasting is the deliberate down-regulation of a lower predictive appetite so a finite agent can re-weight its scarce attention toward modeling the whole — a self-imposed prediction-error undertaken because the agent's true setpoint lies beyond bodily homeostasis."
 central_theme_thread: "An agent individuated by the limits of its resources cannot attend to everything at once; fasting is the in-via discipline of clearing resource-load so the perspective can widen toward the loving unity it computes toward but cannot yet hold."
 tags: [synthesis, day/191, theme/self-regulation]
-last_qc_at: "2026-08-30T18:27:40"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T00:25:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 191 — Fasting (Contemporary Parallel)
@@ -35,7 +35,7 @@ The shared inquiry-problem is **self-regulation under resource scarcity**. Aquin
 
 For the temperance treatise (II-II Q.141–170), the productive contemporary contact runs through the Friston- and Fredrickson-tradition records, summed in the phrase "precision-weighting as temperance." That phrase is exactly the resource. In the Friston-tradition record, the organism is an active modeler that minimizes long-run prediction error by acting on the world and updating its models (Tom's PRS-form record of Friston's free-energy work, PRS-01 and PRS-04). Appetite, in this frame, is a high-precision interoceptive prediction — "I will be fed" — and ordinary behavior services it almost automatically. Fasting is the deliberate *de-weighting* of that prediction: the agent withholds the expected input and tolerates the resulting prediction-error (hunger) on purpose, because a higher-level policy values an outcome the appetitive level cannot represent. This is precisely "precision-weighting as temperance" — temperance is the standing capacity to set how much a given appetite gets to drive action, and fasting is that capacity exercised acutely. Aquinas's first good, the bridling of concupiscence, is the re-training of the precision itself; his second good, "freedom of mind to consider the things of God," is the predicted consequence of releasing attentional and metabolic load from the lower loop so the higher one can run.
 
-The Fredrickson-tradition wiki supplies the embodied half. Self-regulation there is not bloodless cognition but a vagally-mediated, measurable bodily capacity (PRS-01, vagal tone and the physiology of regulation; PRS-05, the bodily signature of higher commitments). Aquinas's insistence that fasting be calibrated to the body — one meal, suspended for the sick (Q.147 a.4) — and Austin's chemotherapy example land here: regulation is an embodied control system with real limits, not a war on the flesh.
+The Fredrickson-tradition record at `traditions/fredrickson/prs_triplets.md` supplies the embodied half. Self-regulation there is not bloodless cognition but a vagally-mediated, measurable bodily capacity (PRS-01, vagal tone and the physiology of regulation; PRS-05, the bodily signature of higher commitments). Aquinas's insistence that fasting be calibrated to the body — one meal, suspended for the sick (Q.147 a.4) — and Austin's chemotherapy example land here: regulation is an embodied control system with real limits, not a war on the flesh.
 
 ## Solution (proposed, speculative)
 
@@ -54,7 +54,7 @@ The project's claim is that conscious agents are individuated by the limitations
 ## Bridges
 
 - **Fasting ↔ precision-weighting / active inference** — `traditions/friston/prs_triplets.md`, PRS-28 (neuromodulation encoding precision, the inverse variance of prediction error over selected channels) with PRS-04 (the organism as active modeler) and PRS-01 (the Free Energy Principle itself); bridges file "precision-weighting as temperance." *Why:* fasting is the acute exercise of temperance read as adjustable precision over an interoceptive appetite — and precision proper lives at PRS-28, not at the two more general entries this bullet previously cited alone. Evidence: **mechanistic, medium**.
-- **Regulation ↔ embodied vagal control** — the Fredrickson-tradition wiki (PRS-01, PRS-05). *Why:* Aquinas's calibrated, dispensable fast matches self-regulation as a real bodily control system with limits. Evidence: **empirical, medium**.
+- **Regulation ↔ embodied vagal control** — the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`, PRS-01 and PRS-05). *Why:* Aquinas's calibrated, dispensable fast matches self-regulation as a real bodily control system with limits. Evidence: **empirical, medium**.
 - **"Freeing the mind" ↔ attentional/metabolic load-shedding** — Friston-tradition wiki. *Why:* releasing the lower loop frees budget for higher-order modeling. Evidence: **mechanistic-speculative**.
 - **Discipline ↔ new-creation rehearsal** — `traditions/wright/prs_triplets.md`, PRS-30 (the functionally Platonic "souls escaping bodies" hope corrected toward embodied new creation); *Surprised by Hope*. *Why:* the body trained toward the age to come, not despised. Evidence: **theological**.
 - **Chosen deprivation ↔ the necessary falling** — `traditions/rohr/prs_triplets.md`, PRS-37 (the path of descent as transition mechanism, and modernity's manufactured ascent that substitutes for it); *Falling Upward*. *Why:* voluntary loss loosens the false self so the whole can be seen. Evidence: **theological**.

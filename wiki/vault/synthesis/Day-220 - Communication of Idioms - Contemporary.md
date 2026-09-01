@@ -3,9 +3,9 @@ day: 220
 title: Communication of Idioms (Contemporary)
 pairs_with: "[[Day-220 - Communication of Idioms]]"
 length_target_words: 2200
-length_actual_words: 1926
-length_ratio_to_target: 0.875
-length_note: "Under the medium-tier guideline (ratio 0.875, outside ±10% but well inside the ±25% escalation band). Tier verifies correct against the transcript (3066 ASR words = medium). Not padded: Q.15's defects-of-soul catalogue and Q.16's communication of idioms converge on a single figure — wayfarer-and-comprehensor — and the commentary spends its length on that convergence rather than mirroring each article, per the constitution's pick-two-or-three-threads clause. Advisory only; recorded here so the static check's repeated ±10% flag is legible rather than re-derived each run."
+length_actual_words: 2055
+length_ratio_to_target: 0.934
+length_note: "RESTATED 2026-08-31 — the previous note defended a 0.875 ratio the file no longer has; it is now 2055 / 0.934, INSIDE ±10%. The design reason stands and is preserved: Q.15's defects-of-soul catalogue and Q.16's communication of idioms converge on a single figure — wayfarer-and-comprehensor — and the commentary spends its length on that convergence rather than mirroring each article, per the constitution's pick-two-or-three-threads clause. Tier re-verified CORRECT against the transcript (3066 ASR words = medium). Recount preceded the edit: the stored 1926 overstated a clean body count of 1856 by 70, so the file was further under tier than the old note claimed. The QC pass then added ~200 words: the Rohr bullet had bundled PRS-01 (High) with PRS-03 (Medium) under a kind-only badge with no grade, and Wright PRS-36 was added because it is the register's own statement of this day's structure."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — one consciousness holding a bounded alter's point of view; mind-at-large AND the finite perspective at once)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Christ as wayfarer AND comprehensor at once ~ the br
 mind_first_reframe: "Wayfarer-and-comprehensor is read as one mind genuinely spanning the comprehensive whole-vision and the limited road-walking perspective at once — a non-dual holding (Rohr) and a dissociation-without-fragmentation (Kastrup) — the very structure the project posits for the divine guide who perceives more yet walks with us."
 central_theme_thread: "This is the project's keystone figure stated in Aquinas's own terms: the one who already beholds the whole (comprehensor) while still inhabiting the limited, suffering perspective (wayfarer) is the divine guide of Phil 2 who 'perceives more of the whole than we do' yet works out the road 'in fear and trembling' alongside us."
 tags: [synthesis, day/220, theme/wayfarer-and-comprehensor]
-last_qc_at: "2026-08-14T16:23:03"
+last_qc_at: "2026-08-31T04:26:49"
 last_qc_outcome: "rewrote"
 ---
 
@@ -52,8 +52,8 @@ This is the day the treatise on the assumed humanity hands the project its centr
 
 - **Christ as wayfarer AND comprehensor at once ↔ one mind spanning the comprehensive whole-vision and the limited, located perspective without fragmenting** — Tom's PRS-form record of Kastrup, PRS-02 (dissociation-without-fragmentation). *Why:* one consciousness can inhabit a bounded point of view while remaining the whole — the simultaneity's structure. Evidence: **central-theme (strongest) + speculative-formal (medium)**.
 - **One person genuinely many-and-one ↔ conscious agents integrate into higher-order unified agents (confirmed by split-brain data)** — Tom's PRS-form record of Hoffman, PRS-03; master CROSS-013. *Why:* an agent can span modes and scales and still be one — and the claim has an empirical leg (McGilchrist). Evidence: **speculative-formal with empirical leg (medium-strong)**.
-- **The comprehensor who walks the wayfarer's road to bring the limited home ↔ the Phil 2 kenosis hymn + salvation as incorporation** — Tom's PRS-form record of Wright, PRS-05 and the Pauline corpus (Phil 2:6-12). *Why:* the guide enters the guided's condition so they can be included in the people united with God — the loving-unity telos. Evidence: **scriptural/theological (strong)**.
-- **Holding comprehensor-and-wayfarer without collapse ↔ non-dual knowing: unity-in-distinction, both/and not either/or** — Tom's PRS-form record of Rohr, PRS-01; PRS-03 (the Universal Christ). *Why:* the contemplative posture that keeps the paradox intact rather than resolving it away. Evidence: **theological/contemplative**.
+- **The comprehensor who walks the wayfarer's road to bring the limited home ↔ the Phil 2 kenosis hymn + salvation as incorporation** — Tom's PRS-form record of Wright, PRS-05 (salvation as incorporation into the people among whom God comes home; Confidence **High**) and **PRS-36** (the incarnation as the joint where heaven and earth actually overlap, "salvation effected in the joint, not negotiated across a gap"; Confidence **Medium**), with the hymn itself cited from the Pauline corpus directly (Phil 2:6-12). *Why:* the guide enters the guided's condition so they can be included in the people united with God — the loving-unity telos. PRS-36 is added here because it is the register's own statement of *this day's* structure: wayfarer-and-comprehensor is what a heaven-earth joint looks like when it is a person rather than a place. Evidence: **scriptural (the hymn, strong) + PRS-05 at High carrying incorporation and PRS-36 at Medium carrying the joint; the register holds no kenosis triplet, so the hymn is cited from the text, not routed through an id**.
+- **Holding comprehensor-and-wayfarer without collapse ↔ non-dual knowing: unity-in-distinction, both/and not either/or** — Tom's PRS-form record of Rohr, PRS-01 (*Dualistic knowing*; non-dual awareness holding both/and without premature resolution; Confidence **High**) and PRS-03 (the Universal Christ, the divine pattern present in all creation; Confidence **Medium**). *Why:* the contemplative posture that keeps the paradox intact rather than resolving it away. Evidence: **the two records are not of one grade. PRS-01 at High is what carries this bullet's actual load — the refusal to resolve the both/and is the day's whole method, and it rests on the firmer record. PRS-03 at Medium supplies cosmic scope only, and no part of the wayfarer-comprehensor argument depends on it. Contemplative-epistemological; the application to the hypostatic union is this commentary's extension**.
 
 ## Where this leaves us
 

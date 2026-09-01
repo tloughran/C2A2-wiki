@@ -3,21 +3,21 @@ day: 246
 title: Baptism & Salvation (Contemporary)
 pairs_with: "[[Day-246 - Baptism & Salvation]]"
 length_target_words: 2200
-length_actual_words: 775
+length_actual_words: 981
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking / Interface Theory — interface rules vs. underlying reality; PRS-04 observer-dependent spacetime)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism)"
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler under resource limits)"
-  - "traditions/wright/wiki.md (salvation as covenant inclusion)"
-  - "traditions/rohr/wiki.md (Universal Christ; invincible ignorance)"
+  - "traditions/wright/prs_triplets.md (PRS-34 justification as declaration of covenant membership, badge practices individuating not constituting; PRS-13 salvation as inclusion in the covenanted people)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — divine pattern present in all creation; PRS-26 election as role-conferral whose telos is its own universalization)"
 evidence_strength_summary: "Interface-rules vs. underlying-freedom formal (Hoffman); resource-bounded moral computation formal (Friston); necessity-of-baptism and its exceptions theological (Wright/Rohr); central-theme claim strongly aligned."
-length_ratio_to_target: 0.35
+length_ratio_to_target: 0.446
 length_note: "Concise by design — a single-focus III Q.68-69 (necessity of baptism and its exceptions) article in complete PRS form; brevity reflects the narrow article, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
 mind_first_reframe: "Necessity-of-baptism is reframed as interface-rules vs. underlying reality: the ordinary rule binds limited agents at the interface, while the underlying freedom of grace can reach the genuinely-disposed where the rule's resources are unavailable."
 central_theme_thread: "Salvation is the perspective-limited agent's inclusion in loving unity computed with the resources it perceives; the exceptions to baptism's necessity are where grace meets the agent whose resources cannot reach the rite."
 tags: [synthesis, day/246, theme/necessity-and-the-limited-perspective]
-last_qc_at: "2026-08-13T02:29:01"
+last_qc_at: "2026-08-31T10:41:56"
 last_qc_outcome: "rewrote"
 ---
 
@@ -55,8 +55,10 @@ This is the project's central claim in near-explicit form. Agents are individuat
 - **Hoffman PRS-04 (observer-dependent spacetime)** — *formal-speculative.* Mutually consistent interfaces across agents — why the rule is a public institution, not a private one.
 - **Friston PRS-04 (active modeler under resource limits)** — *formal.* Culpability tracks the computation the agent's resources permitted; "ignorance excuses" naturalized.
 - **Kastrup PRS-02 (identity within monism)** — *metaphysical.* Operative reality remains dispositional.
-- **Wright (covenant inclusion)** — *theological, high within method.* Salvation as membership; exceptions are still membership. Guards against fiat-universalism.
-- **Rohr (Universal Christ; wide mercy)** — *theological / contemplative.* Mercy meeting the agent where its perception ends.
+- **Wright PRS-34 (`traditions/wright/prs_triplets.md`; "works of the law" as covenant badge practices)** — *scriptural, high within method.* Justification is God's declaration of covenant membership and the badge individuates rather than constitutes — so the exceptions are still membership, not a second mechanism. Guards against fiat-universalism.
+- **Wright PRS-13 (`traditions/wright/prs_triplets.md`; the people of God as the location of God's homecoming)** — *scriptural, high within method.* Salvation as inclusion in the covenanted people, which is what the ordinary means delivers.
+- **Rohr PRS-03 (`traditions/rohr/prs_triplets.md`; the Universal Christ)** — *theological / contemplative.* The divine pattern present in all creation and not confined to a single institutional form — the warrant for mercy reaching past the instituted rite.
+- **Rohr PRS-26 (`traditions/rohr/prs_triplets.md`; election and universal belovedness)** — *theological.* Election as a real role-conferral whose telos is its own universalization: mercy is wide without the ordinary means becoming empty.
 
 ## Where this leaves us
 

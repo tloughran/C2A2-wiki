@@ -3,21 +3,23 @@ day: 242
 title: Judgement & Sacrament (Contemporary)
 pairs_with: "[[Day-242 - Judgement & Sacrament]]"
 length_target_words: 2200
-length_actual_words: 806
+length_actual_words: 1199
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism)"
-  - "traditions/rohr/wiki.md (sacramental presence; Universal Christ)"
-  - "traditions/wright/wiki.md (judgement as setting-right; new creation)"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-04 embodied love as epistemology — the body as a site of knowing)"
+  - "traditions/wright/prs_triplets.md (PRS-18 a contemporary register for the Tertia Pars sacramental loci; PRS-05 salvation as incorporation rather than relocation; PRS-11 new creation against souls-escaping eschatology)"
+  - "traditions/stump/prs_triplets.md (PRS-04 formal and final causality)"
+  - "SCOPE NOTE on the judgement half: all 41 Wright records read (2026-08-31). The register holds NO judgement-as-rectification / setting-right triplet — the nearest are PRS-05, PRS-11 and PRS-30, which establish the new-creation frame the setting-right reading presupposes but do not state it. The judgement claim is therefore carried by that frame plus Wright's published work, and the gap is named rather than papered over with a near-miss id."
 evidence_strength_summary: "Judgement-as-restoration theological (Wright); sign-that-effects read formal (Friston active inference); efficient causality across signs metaphysical; central-theme claim speculative."
-length_ratio_to_target: 0.37
-length_note: "Concise by design — bridges the close of the treatise on Christ (III Q.59) and the opening of the sacraments (III Q.60) in complete PRS form; brevity reflects the focused hinge, not dropped substance. Tier/target calibration pending reviewer escalation (see QC log 2026-06-16)."
+length_ratio_to_target: 0.545
+length_note: "Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2879 words, medium band), so this is not a mistiering. The largest single repair in this queue sits here: three Bridges bullets (Wright, Rohr, Stump) carried NO PRS/CROSS/FLAG id at all and cited traditions/wright/wiki.md and traditions/rohr/wiki.md, the stale canonical-works fallback — both registers now exist (41 and 44 records). Anchoring them, and stating the one genuine absence found (no judgement-as-setting-right triplet in the Wright register), is what moved the count. The replaced note was a template also appearing on Days 241 and 243-246."
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-08-12T16:22:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T08:26:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 242 — Judgement & Sacrament (Contemporary Parallel)
@@ -36,7 +38,7 @@ Friston's active inference supplies the leading move. In Tom's PRS-form record o
 
 Levin's morphological-attractor formalism (PRS-03 in Tom's PRS-form record of Levin) offers a complementary image: a target state toward which a system is drawn once the right signal is present; the signal does not "contain" the outcome but reliably triggers convergence on it.
 
-Wright grounds the judgement half: biblical judgement is less courtroom-verdict than *setting-right*, the new-creation rectification of a world out of joint. Rohr supplies the sacramental ontology — the Universal Christ already present in matter, so that the sensible sign is not an arbitrary token but the place where the indwelling pattern becomes locally operative.
+Wright grounds the judgement half: biblical judgement is less courtroom-verdict than *setting-right*, the new-creation rectification of a world out of joint. The anchoring here needs care, and the honest form of it is a stated gap. PRS-05 (salvation as incorporation into the people among whom God comes home, not relocation of souls) and PRS-11 (new creation against an inherited eschatology of souls going elsewhere), both Confidence High in the Wright-tradition wiki, establish the frame in which rectification rather than verdict is the natural reading — but a reading of all 41 records finds **no judgement triplet in the register**, so the setting-right claim itself rests on that frame plus Wright's published work rather than on a record stating it. PRS-18 (Medium) is the record written for this hinge, naming the Tertia Pars sacramental loci as needing a contemporary register. Rohr supplies the sacramental ontology: PRS-03 (the Universal Christ, Medium) puts the divine pattern already in matter, and PRS-04 (embodied love as epistemology, Medium) sharpens it for this locus — the body as a *site of knowing* rather than a vehicle for it, which is why the sensible sign can be the place where the indwelling pattern becomes locally operative rather than an arbitrary token pointing elsewhere.
 
 ## Solution (proposed, speculative)
 
@@ -50,11 +52,12 @@ Judgement is the moment the project's central claim becomes explicit: every limi
 
 ## Bridges
 
-- **Friston PRS-04 + PRS-06 (active modeler; multi-agent coherence)** — *formal, well-developed in domain.* Sacrament as enacted prediction that helps constitute the communal state it signifies.
-- **Levin PRS-03 (morphological attractor)** — *empirical-in-domain, analogical transfer.* Signal-triggered convergence on a target state.
-- **Wright (judgement as setting-right)** — *theological, high within method.* Re-reads judiciary power as new-creation rectification.
-- **Rohr (sacramental presence; Universal Christ)** — *theological / contemplative.* Matter as already Christ-bearing; the sign is where the pattern becomes operative.
-- **Stump (causality in Aquinas)** — *theological-philosophical.* Instrumental causality reframed as enacted-sign coupling.
+- **Friston PRS-04 + PRS-06 (active modeler; multi-agent coherence), the Friston-tradition wiki** — *formal; **both records Medium**, both marked (Implicit).* Sacrament as enacted prediction that helps constitute the communal state it signifies. The active-inference literature behind them is well developed; the two records re-describing it for this project are proposals, and "well-developed in domain" was claiming the former's standing for the latter.
+- **Levin PRS-03 (morphological attractor), the Levin-tradition wiki** — *empirical-in-domain (**Confidence High**), analogical in transfer.* Signal-triggered convergence on a target state.
+- **Wright PRS-05 + PRS-11 (salvation as incorporation, not relocation; new creation against souls-escaping eschatology), the Wright-tradition wiki** — *theological, **both High**.* These supply the new-creation frame in which judgement reads as rectification rather than courtroom verdict. **Stated absence:** all 41 records were read and the register holds no judgement-as-setting-right triplet of its own, so the rectification reading rests on this frame plus Wright's published work, not on a record that states it.
+- **Wright PRS-18 (a contemporary register for the Tertia Pars sacramental loci), the Wright-tradition wiki** — *theological, **Medium**.* The record written for exactly this hinge: the sacraments, confirmation, the eucharist and indwelling as this project reaches them.
+- **Rohr PRS-03 (the Universal Christ) + PRS-04 (embodied love as epistemology), the Rohr-tradition wiki** — *theological / contemplative; **both Medium**.* PRS-03 gives matter as already Christ-bearing; PRS-04 is the sharper one for sign-efficacy — the body as a site of knowing, not merely a vehicle for it, which is why the sensible sign can be where the pattern becomes operative rather than where it is merely announced.
+- **Stump PRS-04 (formal and final causality), the Stump-tradition wiki** — *theological-philosophical, **Medium**, marked (Implicit).* The formal-causality register in which instrumental causality can be reframed as enacted-sign coupling rather than moved-mover mechanics.
 
 ## Where this leaves us
 

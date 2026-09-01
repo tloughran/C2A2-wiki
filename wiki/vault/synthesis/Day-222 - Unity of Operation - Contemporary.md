@@ -3,20 +3,20 @@ day: 222
 title: Unity of Operation (Contemporary)
 pairs_with: "[[Day-222 - Unity of Operation]]"
 length_target_words: 1500
-length_actual_words: 1479
-length_ratio_to_target: 0.986
+length_actual_words: 1428
+length_ratio_to_target: 0.952
 length_tier: short
 karpathy_wiki_sources:
   - "master/cross_program_index.md (CROSS-013 conscious-agent integration — agents integrate into higher-order unified agents, confirmed by McGilchrist split-brain data)"
   - "master/cross_program_index.md (CROSS-010 positivity resonance as the biophysiological implementation of collective active inference)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling) + traditions/fredrickson/prs_triplets.md (PRS-03 micro-moment resonance as the scale-bridging coupling mechanism)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + Pauline corpus, Phil 2:6-7, Gal 3:27 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, Confidence High) + Pauline corpus, Phil 2:6-7, Gal 3:27"
 evidence_strength_summary: "Two operations concurring in one work (instrumental causality) = theological/formal; merit of the Head extending to members as one mystical person ~ conscious agents integrating into a higher-order unified agent = speculative-formal WITH an empirical leg (CROSS-013, McGilchrist split-brain data) — medium-strong; coupling that binds members into one ~ positivity resonance as collective active inference (CROSS-010, Fredrickson) = empirical (the vagal/oxytocin coupling is measured) applied speculatively to incorporation; 'form of a servant' / incorporation by baptism = scriptural (Wright, strong); central-theme fit (the one who acts draws the many into one) = strong."
 mind_first_reframe: "Christ as Head whose act reaches the members is read as a higher-order unified agent into which the limited perspectives are really integrated (CROSS-013, McGilchrist's split-brain leg), bound by measurable resonance-coupling (collective active inference), not mere association."
 central_theme_thread: "The one who aligns to the whole draws the many limited perspectives into one mystical person — the loving-unity telos as incorporation, the kenotic Head descending into the servant-form so the members can be raised."
 tags: [synthesis, day/222, theme/incorporation-into-one-mystical-person]
-last_qc_at: "2026-08-15T18:29:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T06:36:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 222 — Contemporary Parallel: The Head Whose Act Reaches the Members

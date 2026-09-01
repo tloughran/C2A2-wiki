@@ -3,9 +3,10 @@ day: 217
 title: Christ's Knowledge (Contemporary)
 pairs_with: "[[Day-217 - Christ's Knowledge]]"
 length_target_words: 1500
-length_actual_words: 1422
-length_ratio_to_target: 0.948
+length_actual_words: 1438
+length_ratio_to_target: 0.959
 length_tier: short
+length_note: "Recounted 2026-08-31 before any edit: the stored 1422 was the count INCLUDING the auto-linked Related-records footer (1421 by that convention); the clean body count was 1392 / 0.928. Both figures sit inside ±10%, so nothing was ever mis-flagged here, but the two conventions differ by roughly the footer's length and the discrepancy is worth naming rather than re-deriving. The QC pass added a grade to the Rohr PRS-01 bullet (the record is Confidence High and the badge had stated kind with no grade), costing ~46 words. In band throughout."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 conscious realism — consciousness primary; PRS-03 interface theory — perception tracks fitness, not the whole truth) [Hoffman/Kastrup lead on the epistemic locus per the guardrail]"
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — a real but bounded point of view within mind-at-large)"
@@ -15,8 +16,8 @@ evidence_strength_summary: "A created finite mind beholds the divine essence tru
 mind_first_reframe: "Beholding-without-comprehending is read as the constitutive structure of any created knower: to be a finite perspective is to know the whole truly yet never to contain it — Hoffman's interface and Kastrup's dissociated alter make perspective-boundedness the very condition of being an individual knower, not a defect awaiting removal."
 central_theme_thread: "Q.10's distinction between beholding and comprehending is the central claim in its purest form: even the summit of finite knowing — Christ's human soul seeing the divine essence — sees the simple whole really and yet, being finite, does not exhaust it; perspective-limitation is constitutive even at the top."
 tags: [synthesis, day/217, theme/behold-not-comprehend]
-last_qc_at: "2026-08-16T08:20:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T04:26:22"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 217 — Christ's Knowledge (Contemporary Parallel)
@@ -52,7 +53,7 @@ The project holds that agents are individuated by the limitations of their persp
 - **A finite mind beholds the divine essence truly yet does not comprehend it ↔ a finite agent is in real contact with the whole (true interface) but never contains it** — Tom's PRS-form record of Hoffman, PRS-01/PRS-03. *Why:* the interface is genuine contact, not total possession — visio without comprehensio. Evidence: **central-theme (strong); metaphysics speculative-formal (medium)**.
 - **Perspective-boundedness as the very condition of being a created knower ↔ the individual mind as a dissociated alter within mind-at-large** — Tom's PRS-form record of Kastrup, PRS-02. *Why:* to be a bounded point of view within the one mind is what makes one an individual knower at all. Evidence: **speculative-formal, medium**.
 - **Real vision that is nonetheless perspectival ↔ critical realism: knowing is always from within a story, yet tests against reality** — Tom's PRS-form record of Wright, PRS-01. *Why:* perspectival knowing is not false knowing; the boundedness does not impugn the contact. Evidence: **philosophical, strong**.
-- **Holding behold-yet-not-comprehend without collapse ↔ non-dual perception of unity-in-distinction** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the contemplative form of refusing both skepticism and hubris about the whole. Evidence: **theological/contemplative**.
+- **Holding behold-yet-not-comprehend without collapse ↔ non-dual perception of unity-in-distinction** — Tom's PRS-form record of Rohr, PRS-01 (*Dualistic knowing*; the contemplative tradition's practice of holding both/and without premature resolution; Confidence **High**). *Why:* the contemplative form of refusing both skepticism and hubris about the whole. Evidence: **contemplative-epistemological, and the record is graded High — this is one of the firmer legs in the day, not a soft one**; the application to the *visio/comprehensio* distinction is this commentary's extension.
 
 ## Where this leaves us
 

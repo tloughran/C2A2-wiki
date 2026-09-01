@@ -16,8 +16,8 @@ evidence_strength_summary: "Nativity regards the person (Theotokos), not the nat
 mind_first_reframe: "The manifestation is read as the whole made known under limitation (faith preserved by partial vision = the perspective-limitation premise) yet to every category of limited perspective (radical inclusion / democratized participation, Fredrickson; Universal Christ, Rohr); nativity regards the individuated person."
 central_theme_thread: "Both halves of the central claim at once: the whole is not flooded to all (faith = computing toward the unseen whole), yet is made known to every kind of limited perspective 'that none be excluded' — loving unity as radical inclusion of persons, not absorption."
 tags: [synthesis, day/230, theme/the-whole-made-known-to-every-limited-perspective]
-last_qc_at: "2026-08-12T08:22:53"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-08-30T22:29:16"
+last_qc_outcome: "pass"
 ---
 
 # Day 230 — Contemporary Parallel: The Whole Made Known to Every Limited Perspective

@@ -3,12 +3,12 @@ day: 234
 title: Christ's Miracles (Contemporary)
 pairs_with: "[[Day-234 - Christ's Miracles]]"
 length_target_words: 1500
-length_actual_words: 1209
-length_ratio_to_target: 0.806
-length_note: "Length-light vs the 1500 short-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding) on the shortest transcript of the cohort (1597 words); accepted under the flexible length policy — complete-not-truncated, per Day-188/194 precedent."
+length_actual_words: 1293
+length_ratio_to_target: 0.862
+length_note: "Outside +/-10% but INSIDE +/-25% (0.862) against the 1500 short-tier guideline; tier re-verified CORRECT (paired transcript cleaned count 1597 words = short, the shortest of this cohort). A complete PRS synthesis with no padding, accepted under the flexible length policy per the Day-188/194 precedent. Reviewer pass 2026-08-31 added ~84 words separating a bundled Hoffman badge and grading the second Wright record."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (PRS-06 resurrection and natural law — new creation, not law-violation; PRS-04 resurrection as historical and cosmological) [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-06 resurrection and natural law — new creation, not law-violation, Confidence High; PRS-04 resurrection as historical and cosmological, Confidence Medium)"
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-18 IOS Theorem route to 'spacetime is doomed')"
   - "traditions/levin/prs_triplets.md (PRS-07 bioelectric reprogramming as therapeutic paradigm; PRS-01 morphogenetic control)"
   - "traditions/kastrup/prs_triplets.md (PRS-10 idealism as empirical consciousness-science framework)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Miracle-as-deeper-layer-override is a CONCEPTUAL rem
 mind_first_reframe: "If 'nature' is the default rendering of a species-specific interface rather than the bedrock of reality, a miracle is not a violation of law but an address to a deeper control layer — the whole acting in the rendered world at a level the interface normally hides."
 central_theme_thread: "Miracles on every kind of creature say that no scale of the rendered world is outside the whole's address; healing the visible body to certify invisible forgiveness is the same accommodation-to-limited-perception that runs from Day 230's manifestation through Day 233's parables."
 tags: [synthesis, day/234, theme/miracle-as-deeper-layer-address]
-last_qc_at: "2026-08-12T10:30:28"
+last_qc_at: "2026-08-31T06:36:28"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,10 +53,10 @@ Q.44's sweep — demons, sun, bodies, sea, bread — is Aquinas insisting that e
 ## Bridges
 
 - **PRS-06, Wright-tradition wiki** (new creation, not law-violation) — the master reframe of the category; the dispute is open vs. closed naturalism. Evidence: theological, on strong scholarly footing.
-- **PRS-04 + PRS-18, Hoffman-tradition wiki** (spacetime as interface; IOS theorem) — "laws of nature" as interface regularities, silent about depth. Evidence: formal-theoretic.
+- **PRS-18 and PRS-04, Hoffman-tradition wiki** (IOS theorem; observer-dependent spacetime) — "laws of nature" as interface regularities, silent about depth. Evidence, per record: PRS-18 (the IOS theorem as a perceptual-science-internal route to "spacetime is doomed") is **Confidence High** and carries the formal-theoretic weight cited here; PRS-04 (observer-dependent spacetime — how distinct agents construct mutually consistent interfaces) is an **(Implicit) reading at Confidence Medium**. The two are not interchangeable: only the first is a theorem.
 - **PRS-07, Tom's PRS-form record of the Levin program** (bioelectric override of default morphogenesis) — empirical proof that biological "impossibles" were defaults with deeper addressable layers; conceptual remodel only, no evidential transfer to miracles. Evidence: empirical (in-domain), speculative (as analogy).
 - **PRS-10, Kastrup-tradition wiki** (idealism as empirical framework) — a deeper layer of mind with write-access is coherent if mind is primitive. Evidence: philosophical-speculative.
-- **PRS-04, Wright-tradition wiki** (resurrection as historical claim) — the limit case where the category rebuild meets actual historiography. Evidence: historical argument, metaphysically contested verdict.
+- **PRS-04, Wright-tradition wiki** (resurrection as historical and cosmological), **Confidence Medium** — the limit case where the category rebuild meets actual historiography. Evidence: historical argument, metaphysically contested verdict — and the register grades it below PRS-06 for exactly that reason, which is worth stating rather than letting the two Wright records read as equally firm.
 
 ## Where this leaves us
 

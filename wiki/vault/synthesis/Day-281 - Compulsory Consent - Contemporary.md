@@ -3,21 +3,21 @@ day: 281
 title: Compulsory Consent (Contemporary)
 pairs_with: "[[Day-281 - Compulsory Consent]]"
 length_target_words: 1500
-length_actual_words: 871
+length_actual_words: 1257
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler, PRS-16 expected free energy as unified objective)"
-  - "wiki/traditions/stump/prs_triplets.md (counterpoint: free will and the will's responsiveness to reasons; Wandering in Darkness on willed surrender)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-29 will-quiescence as genuinely the agent's own act; PRS-23 quiescence as a non-meritorious threshold condition grace converts)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
-  - "wiki/traditions/wright/prs_triplets.md (canonical: salvation as un-coerced covenant inclusion)"
-evidence_strength_summary: "Friston free-policy-selection formal; its identification with juridical 'free consent' conceptual/speculative; Stump on freedom philosophical; the coercion-voids-consent claim is normative-conceptual, not empirical."
-length_ratio_to_target: 0.58
+  - "wiki/traditions/wright/prs_triplets.md (PRS-13 salvation as participation in God's homecoming among the people being formed)"
+evidence_strength_summary: "The formal weight sits on Friston PRS-16 (expected free energy as the decision objective, Confidence High); PRS-04 is marked (Implicit) at Confidence Medium in the register and is cited for framing, not as a formal result. The identification of either with juridical 'free consent' is conceptual/speculative. Stump PRS-29/PRS-23 philosophical; Wright PRS-13 scriptural. The coercion-voids-consent claim is normative-conceptual, not empirical."
+length_ratio_to_target: 0.838
 mind_first_reframe: "Coerced consent fails to constitute a marriage because a clamped state is not an act of the agent's own model; only freely selected policies couple agents into a real shared unit, so a forced configuration couples nothing."
 central_theme_thread: "The reverent self-determination of 'fear and trembling' is the opposite of coercive fear: loving unity must be chosen from within a perspective, never imposed on it from without."
 tags: [synthesis, day/281, theme/freedom-as-condition-of-union]
-last_qc_at: "2026-08-13T08:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T20:23:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 281 — Compulsory Consent (Contemporary Parallel)
@@ -32,7 +32,9 @@ The shared inquiry-problem is the **freedom-condition on a constituting act**. A
 
 ## Resource
 
-The Friston-tradition program supplies the leading move. Tom's PRS-form record of Friston's work (PRS-04 in the Friston-tradition wiki, *the organism as active modeler*; PRS-16, *expected free energy as the unified objective*) treats genuine agency as *free policy selection*: the agent chooses among possible actions by their expected free energy under its own model and preferences. A clamp — a state imposed from outside that bypasses policy selection — is precisely *not* an action of the agent; it is the agent being moved as an object. This gives Aquinas's "the will moves but does not freely determine itself" an operational reading: coerced consent is a clamped state, not a selected policy, and so cannot be the act that constitutes a union *of agents*. The Stump-tradition program enters here: Stump's analyses of the will's free responsiveness to reasons, and of the difference between surrender and capitulation, articulate philosophically what active inference models formally — and the two should be triangulated, not blended. PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) and Wright's covenant theology converge on the same point from the theological side: covenant love is *won*, never extracted; a God who coerces assent would void the very relation sought.
+The Friston-tradition program supplies the leading move, and it matters which of its records carries the weight. PRS-16 in the Friston-tradition wiki (*expected free energy as the unified mathematics of risk and ambiguity*, Confidence High) is the formal one: it gives the agent a single decision objective under which policies are *selected* — chosen among by their expected free energy under the agent's own model and preferences. PRS-04 (*the organism as active modeler*) supplies the surrounding picture of a living system as a continuous hypothesis-testing agent rather than a stimulus-driven machine, but the register marks that record Label "(Implicit)" at Confidence **Medium** — it is the C2A2 network's reconstruction of the position, not a measured or fully formalized result, and it is cited here for framing rather than as a proof. With that division held, the operational reading is clean: a clamp — a state imposed from outside that bypasses policy selection — is precisely *not* an action of the agent; it is the agent being moved as an object. Aquinas's "the will moves but does not freely determine itself" becomes: coerced consent is a clamped state, not a selected policy, and so cannot be the act that constitutes a union *of agents*.
+
+The Stump-tradition program supplies the Thomistic articulation, and here the register's actual holdings matter more than the general reputation of her work on freedom. Searched across all 35 numbered entries of `wiki/traditions/stump/prs_triplets.md` for *coercion, free will, surrender, capitulation,* and *responsiveness*, the register returns **nothing on any of the five** — it carries no entry on coerced assent as such. What it does carry, and what is nearer the mark than a general appeal to freedom would have been, is the will-quiescence pair: PRS-29 reconstructs Aquinas's account of quiescence as *a non-resisting state that is genuinely the agent's own act*, into which grace is infused so the resulting willing is both gift and the agent's own; PRS-23 adds that quiescence is a non-meritorious *threshold condition* grace then converts. That is exactly the distinction this article needs — between a state the agent owns and a state merely imposed on it — and it is the register's own, not an analogy borrowed from elsewhere. PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*, Confidence Medium) and PRS-13 in the Wright-tradition wiki (*salvation as participation in God's homecoming among the people the Spirit is forming*, Confidence High) converge from the theological side: if salvation is inclusion in a people rather than a verdict imposed on an individual, then covenant love is *won*, never extracted, and a God who coerced assent would void the very relation sought.
 
 ## Solution (proposed, speculative)
 
@@ -44,9 +46,11 @@ The project's signature phrase is "fear and trembling" (Phil 2:12) — and this 
 
 ## Bridges
 
-- **Friston PRS-04 / PRS-16 (formal; juridical application speculative):** freely selected policy vs. externally clamped state — the operational meaning of "coerced consent is no consent."
-- **Stump (Thomistic, philosophical; triangulated):** the will's free responsiveness to reasons and the difference between surrender and capitulation; articulate, do not fuse with, the formal account.
-- **Rohr PRS-04 (theological) / Wright (scriptural):** covenant love is won, not extracted; coercion would void the relation sought.
+- **Friston PRS-16 (`wiki/traditions/friston/prs_triplets.md`; formal, Confidence High; juridical application speculative):** expected free energy as the decision objective under which a policy is *selected* — this is the record that carries the formal weight for "freely selected policy vs. externally clamped state."
+- **Friston PRS-04 (same file; Label "(Implicit)", Confidence Medium):** the organism as active modeler. Cited for the framing of agency-as-modeling, *not* as a formal result; the register marks it a reconstruction of the position rather than a developed formalism.
+- **Stump PRS-29, with PRS-23 (`wiki/traditions/stump/prs_triplets.md`; philosophical, second-personal):** will-quiescence as a non-resisting state that is nonetheless *genuinely the agent's own act* (PRS-29), and as a non-meritorious threshold condition grace converts (PRS-23) — the register's own version of the line between a state the agent owns and a state imposed on it. **Search radius named:** the register carries no entry on coercion, free will, surrender, or capitulation as such; these two are the nearest anchored resources, not an approximation to a closer one that was missed.
+- **Wright PRS-13 (`wiki/traditions/wright/prs_triplets.md`; scriptural, Confidence High):** salvation as participation in God's homecoming among the people the Spirit is forming — membership, not an imposed verdict, which is why covenant assent must be un-coerced.
+- **Rohr PRS-04 (`wiki/traditions/rohr/prs_triplets.md`; theological, Confidence Medium):** love known and enacted bodily, in offered signs — covenant love is won, not extracted.
 
 ## Where this leaves us
 

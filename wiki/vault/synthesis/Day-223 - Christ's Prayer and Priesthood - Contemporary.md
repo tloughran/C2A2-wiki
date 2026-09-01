@@ -3,21 +3,21 @@ day: 223
 title: Christ's Prayer and Priesthood (Contemporary)
 pairs_with: "[[Day-223 - Christ's Prayer and Priesthood]]"
 length_target_words: 2200
-length_actual_words: 1663
-length_ratio_to_target: 0.756
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_actual_words: 1705
+length_ratio_to_target: 0.775
+length_note: "Length-light vs the 2200 medium-tier guideline, but a complete PRS synthesis with no padding; accepted under the flexible length policy (substantive integrity > word count). NOTE ON THE ARITHMETIC (reviewer pass 2026-08-31): the previously stored 1663 / 0.756 OVERSTATED the clean body count by 59; the true pre-repair figure was 1604 / 0.729, i.e. this file was in fact OUTSIDE the -25% floor while its own frontmatter reported it inside. Splitting two bundled evidence badges added ~100 words of citation apparatus and carried it back to 1705 / 0.775, inside +/-25%. Tier re-verified CORRECT (cleaned transcript 2217 words = medium)."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-10 reasoning/perception/action unified as expected-free-energy minimization) — prayer as the unfolding/alignment of a generative model to a superordinate one"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing; PRS-03 the Universal Christ) — prayer as participatory non-dual encounter; cosmic-scope mediation"
   - "master/cross_program_index.md (CROSS-013 conscious-agent integration) + traditions/fredrickson/prs_triplets.md (PRS-03 resonance as scale-bridging coupling) — priesthood as the binding/uniting of many into one"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + Hebrews 7:23-27, John 11, John 17 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, Confidence High) + Hebrews 7:23-27, John 11, John 17"
 evidence_strength_summary: "Prayer as 'the unfolding of the will to God' ~ the limited agent aligning its generative model to the One who sees more (Friston) = speculative-formal (medium); priest-and-victim / expiation = theological; permanent intercession binding the many to God ~ agent-integration + resonance-coupling (CROSS-013/Fredrickson) = speculative-formal with empirical leg (medium); the order of Melchizedek / Heb 7 + Christ's high-priestly prayer (John 17) = scriptural (Wright, strong); central-theme fit (prayer as guidance-seeking; priesthood as sustained loving-unity) = strong."
 mind_first_reframe: "Prayer is read as the limited agent unfolding and aligning its generative model to the One who sees more (active inference) and as non-dual participatory encounter (Rohr); priesthood as the permanent sustaining of agent-integration in loving unity."
 central_theme_thread: "Even the comprehensor prays — the central-theme posture of seeking guidance performed — and the priesthood is the permanent mediation that holds the many in the loving unity the project computes toward (John 17, 'that they may be one')."
 tags: [synthesis, day/223, theme/prayer-as-alignment-priesthood-as-union]
-last_qc_at: "2026-08-15T18:29:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T06:36:06"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 223 — Contemporary Parallel: Prayer as Alignment, Priesthood as Union
@@ -50,8 +50,8 @@ The project says the limited "work out [their] salvation... aware of [their] nee
 
 ## Bridges
 
-- **Prayer as "the unfolding of the will to God" ↔ the limited agent aligning its generative model to a superordinate one** — Tom's PRS-form record of Friston, PRS-04 / PRS-10. *Why:* prayer is the structured act of seeking and receiving guidance — the central-theme posture performed. Evidence: **speculative-formal (medium)**.
-- **The comprehensor who prays without needing information ↔ prayer as non-dual participatory encounter** — Tom's PRS-form record of Rohr, PRS-01. *Why:* prayer as union-in-act, not data-transfer, explains how the one who already sees can still pray. Evidence: **theological/contemplative**.
+- **Prayer as "the unfolding of the will to God" ↔ the limited agent aligning its generative model to a superordinate one** — Tom's PRS-form record of Friston, PRS-10 and PRS-04. *Why:* prayer is the structured act of seeking and receiving guidance — the central-theme posture performed. Evidence, per record: PRS-10 (*Active inference as framework for artificial reasoning* — reasoning, perception and action formally unified as expected-free-energy minimization) is **Confidence High**, and is the record carrying the formal weight here; PRS-04 (*Organism as active modeler*) is an **(Implicit) reading at Confidence Medium**, at individual scale. What is **speculative** is neither record but the step from either to *prayer* — a coherent structural analogue, not a demonstration that petition is active inference.
+- **The comprehensor who prays without needing information ↔ prayer as non-dual participatory encounter** — Tom's PRS-form record of Rohr, PRS-01 (*Dualistic knowing* — non-dual awareness holding both/and without premature resolution), **Confidence High**. *Why:* prayer as union-in-act, not data-transfer, explains how the one who already sees can still pray. Evidence: **theological/contemplative, and on the register's firmest Rohr grade** — the contemplative leg of this day is not its softest.
 - **Permanent priesthood holding the many in one ↔ conscious-agent integration sustained by ongoing resonance-coupling** — master CROSS-013; Tom's PRS-form record of Fredrickson (PRS-03). *Why:* loving unity is maintained, not banked; the mediator keeps the integration running. Evidence: **speculative-formal with empirical leg (medium)**.
 - **"He always lives to make intercession... a priest forever after the order of Melchizedek" ↔ salvation as incorporation into the people God indwells** — Hebrews 7:23-27, John 17; Tom's PRS-form record of Wright (PRS-05). *Why:* the intercession *includes* — permanence of priesthood = permanence of the union it sustains. Evidence: **scriptural (strong)**.
 
