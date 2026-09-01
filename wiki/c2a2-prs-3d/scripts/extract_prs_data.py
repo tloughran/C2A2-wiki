@@ -25,6 +25,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 # NOTE: these three maps are preserved verbatim from the prior prs_3d.html so the
 # discipline-wedge layout and colors stay identical across regenerations.
@@ -354,8 +355,40 @@ GEN_STOP = set((
 ).split())
 
 
-def gen_tokens(s):
-    return set(w for w in re.findall(r"[a-z]{4,}", (s or "").lower()) if w not in GEN_STOP)
+def _deaccent(s):
+    """NFKD-fold so accented words survive the [a-z] token regex intact.
+
+    Without this, "Schrodinger" written with an umlaut splits into the fragments
+    'schr' and 'dinger', both of which then count as shared evidence. That is
+    visible in the shipped build: one live edge's entire justification is
+    ['dinger', 'equation', 'schr'].
+    """
+    return "".join(c for c in unicodedata.normalize("NFKD", s or "")
+                   if not unicodedata.combining(c))
+
+
+def name_tokens(thinker):
+    """The tokens that are just this tradition's own name."""
+    raw = [thinker, THINKER_DISPLAY.get(thinker, "")]
+    out = set()
+    for r in raw:
+        for w in re.findall(r"[a-z]{3,}", _deaccent(r).lower()):
+            out.add(w)
+    return out
+
+
+def gen_tokens(s, drop=None):
+    """Significant tokens. `drop` removes a triplet's OWN tradition name.
+
+    Deliberately narrow: only the triplet's own name is removed, never every
+    thinker's name. A Levin resource that names Friston is real evidence of
+    dependency and must survive; a Carroll solution matching a Carroll resource
+    on the token 'carroll' is an artifact of the author writing about themselves.
+    Dropping all names would delete the first along with the second.
+    """
+    drop = drop or set()
+    return set(w for w in re.findall(r"[a-z]{4,}", _deaccent(s).lower())
+               if w not in GEN_STOP and w not in drop)
 
 
 def gen_direction(a, b):
@@ -405,8 +438,9 @@ def gen_chains(triplets, min_shared=4, min_jaccard=0.18,
     Overlap is still Jaccard on significant tokens -- lexical, not semantic. It
     detects shared topic at least as readily as it detects reuse of a resource.
     """
-    sol = {t["id"]: gen_tokens(t["solution"]) for t in triplets}
-    res = {t["id"]: gen_tokens(t["resource"]) for t in triplets}
+    own = {t["id"]: name_tokens(t["thinker"]) for t in triplets}
+    sol = {t["id"]: gen_tokens(t["solution"], own[t["id"]]) for t in triplets}
+    res = {t["id"]: gen_tokens(t["resource"], own[t["id"]]) for t in triplets}
     by_id = {t["id"]: t for t in triplets}
     out, stats = [], {"forward": 0, "backward": 0, "same": 0}
     for a in triplets:
@@ -438,8 +472,28 @@ def gen_chains(triplets, min_shared=4, min_jaccard=0.18,
                 "direction": direction, "direction_basis": basis,
                 "pub_year_source": a.get("pub_year"), "pub_year_target": b.get("pub_year"),
                 "shared": sorted(inter)[:6], "score": round(j, 3),
+                "_key": (b["id"], frozenset(inter)),
             })
-    return out, stats
+    # Collapse duplicate-prose edges. Two sources whose solutions match the same
+    # target on the SAME token set are one finding, not two -- in the shipped build
+    # carroll-PRS-20 and carroll-PRS-43 both reached carroll-PRS-23 on the identical
+    # set {cyclic, exactly, periodic, quantum, universe}, which is repeated text
+    # rather than two dependencies. Keep the best-scoring source and record the rest
+    # on it, so the collapse is inspectable instead of a silent deletion.
+    best = {}
+    for e in out:
+        k = e["_key"]
+        if k not in best or e["score"] > best[k]["score"]:
+            best[k] = e
+    for e in out:
+        k = e["_key"]
+        if best[k] is not e:
+            best[k].setdefault("duplicate_prose_sources", []).append(e["source"])
+    stats["duplicate_prose_collapsed"] = len(out) - len(best)
+    deduped = [e for e in out if best[e["_key"]] is e]
+    for e in deduped:
+        del e["_key"]
+    return deduped, stats
 
 
 def main():
@@ -512,7 +566,8 @@ def main():
             "coils_direction_unknown": sum(1 for c in coils if c["forward"] is None),
             "generative": len(generative),
             "generative_within_tradition": sum(1 for g in generative if g["same_tradition"]),
-            "generative_candidates": sum(gen_stats.values()),
+            "generative_candidates": gen_stats["forward"] + gen_stats["backward"] + gen_stats["same"],
+            "generative_duplicate_prose_collapsed": gen_stats["duplicate_prose_collapsed"],
             "generative_backward_rejected": gen_stats["backward"],
             "generative_same_date_rejected": gen_stats["same"],
             "findings": len(findings),
@@ -536,6 +591,8 @@ def main():
              s["generative"] - s["generative_within_tradition"]))
     print("  rejected (backward)       %d" % s["generative_backward_rejected"])
     print("  rejected (same date)      %d" % s["generative_same_date_rejected"])
+    print("  collapsed (duplicate prose to the same target) %d"
+          % s["generative_duplicate_prose_collapsed"])
     basis = {}
     for g in generative:
         basis[g["direction_basis"]] = basis.get(g["direction_basis"], 0) + 1
