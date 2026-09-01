@@ -2,7 +2,7 @@
 title: Developmental Maturity Model — The Ladder the Metrics Are Keyed To
 pathway_id: maturity_model
 status: drafted
-created: 2026-08-24
+created: 2026-09-01
 depends_on: [cortical_column, active_inquiry]
 enables: []
 isme_critical: no
@@ -155,16 +155,12 @@ measurements while looking authoritative.
 Lifted from **revised changes 7 and 8** of the 2026-04-09 Thousand Brains redesign
 proposal (revised 2026-04-10), which together specified the voting layer, the definition
 and three-way interpretation of r, the null hypothesis it is tested against, and the
-full Stage 0–5 ladder with benchmarks. Elevated to a Dev Pathway on 2026-08-24 during
+full Stage 0–5 ladder with benchmarks. Elevated to a Dev Pathway on 2026-09-01 during
 the incorporation audit, which found the ladder live and measured nightly but absent
 from the published pathway inventory — the sharpest gap the audit turned up. This
 pathway adds the Stage 1 discrepancy between the ladder's benchmark and the snapshot's
 gloss, recorded for a later review pass.
 
 Source document: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
-· [[C2A2_redesign_proposal_2026-04-09_revised]]
-· [[31_cortical_column_architecture]]
-· [[32_lateral_channels]]
-· [[33_active_inquiry]]
-· [[34_prs_displacement]]
-· [[pathways]]
+
+Related: [Pathway 31 — Cortical column architecture](31_cortical_column_architecture.md) · [Pathway 32 — Lateral tradition channels](32_lateral_channels.md) · [Pathway 33 — Active cross-tradition inquiry](33_active_inquiry.md) · [Pathway 34 — PRS displacement phrasings](34_prs_displacement.md) · [Pathway inventory](pathways.md)

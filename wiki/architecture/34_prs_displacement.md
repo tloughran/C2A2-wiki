@@ -2,7 +2,7 @@
 title: PRS Displacement Phrasings — The Path, Not Just the Endpoints
 pathway_id: prs_displacement
 status: outlined
-created: 2026-08-24
+created: 2026-09-01
 depends_on: []
 enables: [maturity_model]
 isme_critical: no
@@ -92,13 +92,11 @@ to justify the field on its own — it is unproven.
 Lifted from **revised change 3** of the 2026-04-09 Thousand Brains redesign proposal
 (revised 2026-04-10), which specified the `Displacement` field, the phrasing-not-pointer
 commitment, the finite-connecting-memes hypothesis, and the 14a / 15a / 15b assignment
-for tracking and testing it. Elevated to a Dev Pathway on 2026-08-24 during the
+for tracking and testing it. Elevated to a Dev Pathway on 2026-09-01 during the
 incorporation audit, which found no `Displacement` or `Path` field in any PRS template.
 This pathway adds the falsifiable success criterion and separates the field's own
 justification from the unproven typology claim.
 
 Source document: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
-· [[C2A2_redesign_proposal_2026-04-09_revised]]
-· [[31_cortical_column_architecture]]
-· [[35_maturity_model]]
-· [[pathways]]
+
+Related: [Pathway 31 — Cortical column architecture](31_cortical_column_architecture.md) · [Pathway 35 — Developmental maturity model](35_maturity_model.md) · [Pathway inventory](pathways.md)

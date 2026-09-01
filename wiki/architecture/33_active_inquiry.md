@@ -2,7 +2,7 @@
 title: Active Cross-Tradition Inquiry — Sensorimotor Learning
 pathway_id: active_inquiry
 status: outlined
-created: 2026-08-24
+created: 2026-09-01
 depends_on: [cortical_column, lateral_channels]
 enables: [maturity_model]
 isme_critical: no
@@ -87,13 +87,10 @@ Lifted from **revised change 6** of the 2026-04-09 Thousand Brains redesign prop
 (revised 2026-04-10), which specified the generate-route-evaluate cycle, the
 CONFIRM / REVISE / REJECT contract, the survival-rate metric, and — from review feedback
 — the critical ordering note that inquiry runs on consensus outputs. Elevated to a Dev
-Pathway on 2026-08-24 during the incorporation audit, which found no hypothesis
+Pathway on 2026-09-01 during the incorporation audit, which found no hypothesis
 generation or evaluation section in any tradition agent. This pathway adds the
 falsifiable success criterion framed against both degenerate extremes.
 
 Source document: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
-· [[C2A2_redesign_proposal_2026-04-09_revised]]
-· [[31_cortical_column_architecture]]
-· [[32_lateral_channels]]
-· [[35_maturity_model]]
-· [[pathways]]
+
+Related: [Pathway 31 — Cortical column architecture](31_cortical_column_architecture.md) · [Pathway 32 — Lateral tradition channels](32_lateral_channels.md) · [Pathway 35 — Developmental maturity model](35_maturity_model.md) · [Pathway inventory](pathways.md)

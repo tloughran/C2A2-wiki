@@ -156,7 +156,7 @@ detector output, the cost collision with Pathway 29 and the resulting one-track-
 discipline, an operational definition demand on the adjudicator's agreement contract,
 and an explicit falsifiable success criterion.
 
-**Earlier origin, recorded 2026-08-24.** The DEVPATH-031 proposal was not the idea's first
+**Earlier origin, recorded 2026-09-01.** The DEVPATH-031 proposal was not the idea's first
 appearance. This pathway descends from the 2026-04-09 Thousand Brains redesign proposal
 (revised 2026-04-10), where it appears as **revised change 5** (tripling of tradition agents
 for intra-tradition consensus) together with half of **revised change 7** (the 2-of-3 voting
@@ -171,6 +171,5 @@ The remaining half of revised change 7 — the health metric `r` — is carried 
 pathway's consensus mechanism is the Stage 2 benchmark.
 
 See: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
-· [[C2A2_redesign_proposal_2026-04-09_revised]]
-· [[35_maturity_model]]
-· [[33_active_inquiry]]
+
+Related: [Pathway 35 — Developmental maturity model](35_maturity_model.md) · [Pathway 33 — Active cross-tradition inquiry](33_active_inquiry.md)

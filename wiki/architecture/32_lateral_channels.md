@@ -2,7 +2,7 @@
 title: Lateral Tradition Channels — Heterarchy Alongside Hierarchy
 pathway_id: lateral_channels
 status: outlined
-created: 2026-08-24
+created: 2026-09-01
 depends_on: [broker, cortical_column]
 enables: [active_inquiry]
 isme_critical: no
@@ -84,12 +84,10 @@ what the hub already carried, the channel is overhead and should be closed.
 Lifted from **revised change 4** of the 2026-04-09 Thousand Brains redesign proposal
 (revised 2026-04-10), which specified the `wiki/lateral/` shape, the Master-Agent
 read-access requirement, and the four-bridge-pair start-narrow mitigation. Elevated to
-a Dev Pathway on 2026-08-24 during the incorporation audit, which found the change had
+a Dev Pathway on 2026-09-01 during the incorporation audit, which found the change had
 never landed — `wiki/lateral/` does not exist. This pathway adds the falsifiable
 success criterion and the dependency ordering behind Pathway 31.
 
 Source document: [C2A2 Redesign Proposal (revised)](../review/C2A2_redesign_proposal_2026-04-09_revised.md)
-· [[C2A2_redesign_proposal_2026-04-09_revised]]
-· [[31_cortical_column_architecture]]
-· [[33_active_inquiry]]
-· [[pathways]]
+
+Related: [Pathway 31 — Cortical column architecture](31_cortical_column_architecture.md) · [Pathway 33 — Active cross-tradition inquiry](33_active_inquiry.md) · [Pathway inventory](pathways.md)
