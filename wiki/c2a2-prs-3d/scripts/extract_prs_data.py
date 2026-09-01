@@ -181,6 +181,7 @@ def extract_triplets(vault, carryforward):
                 "solution": fields.get("solution", ""),
                 "date": (cf or {}).get("date") or date_added,
                 "pub_year": pub_year,
+                "pub_year_fallback": is_fb,
                 "confidence": fields.get("confidence", ""),
                 "first_seen": yield_map.get((thinker, _prs_int(num)), ""),
             })
@@ -278,13 +279,51 @@ def extract_findings(vault):
     return out
 
 
-def derive_coils(cross):
-    """A coil = a structural-bridge cross-connection. Returns coil records."""
+def coil_thinkers(programs):
+    """Normalise a coil's 'programs' string to thinker keys.
+
+    Mirrors the normalisation the template already does in buildCoilLines
+    ('Levin Agent' -> 'levin'); kept identical on purpose so the Python check and
+    the rendered arcs cannot disagree about which programs a coil connects.
+    """
+    out = []
+    for p in re.split(r"[,;]", programs or ""):
+        k = re.sub(r"\s*\(.*$", "", p.strip())
+        k = re.sub(r"\s+Agent$", "", k).strip().lower()
+        if k:
+            out.append(k)
+    return out
+
+
+def derive_coils(cross, triplets=None):
+    """A coil = a structural-bridge cross-connection. Returns coil records.
+
+    Also asserts that the coil runs FORWARD in time (added 2026-09-01). A
+    synergistic coil claims that several programs draw on a shared resource
+    discovered in coil['year']; for that to be a claim about causal history rather
+    than a decoration, each program it links must have done work at or after that
+    year. A coil dated later than everything a program ever produced asserts a
+    resource that postdates every use of it.
+
+    This is weaker than the generative check on purpose. A coil names PROGRAMS, not
+    individual triplets, so the strongest statement available is 'this program has
+    at least one triplet at or after the coil year'. It annotates rather than drops:
+    coils are hand-authored in cross_program_index.md, and silently discarding a
+    curated bridge would hide an editorial decision inside a build step.
+    """
+    latest = {}
+    for t in (triplets or []):
+        y = t.get("pub_year")
+        if isinstance(y, int):
+            latest[t["thinker"]] = max(latest.get(t["thinker"], y), y)
     coils = []
     for c in cross:
         nat = (c.get("nature") or "").lower()
         if any(m in nat for m in COIL_MARKERS):
             progs = [p.strip() for p in re.split(r"[,;]", c.get("programs", "")) if p.strip()]
+            year = c.get("year", 2026)
+            known = [k for k in coil_thinkers(c.get("programs", "")) if k in latest]
+            stale = [k for k in known if latest[k] < year]
             coils.append({
                 "id": "COIL-" + c["id"].split("-", 1)[1],
                 "cross_id": c["id"],
@@ -292,8 +331,14 @@ def derive_coils(cross):
                 "nature": c["nature"],
                 "programs": c["programs"],
                 "program_count": len(progs),
-                "year": c.get("year", 2026),
+                "year": year,
                 "notes": c.get("notes", ""),
+                # forward: every linked program has work at or after the coil year.
+                # unknown: none of the linked programs resolved to a tradition we
+                # have triplets for, so the question was not asked -- never call
+                # that a pass.
+                "forward": (None if not known else not stale),
+                "programs_predating_coil": stale,
             })
     return coils
 
@@ -313,32 +358,88 @@ def gen_tokens(s):
     return set(w for w in re.findall(r"[a-z]{4,}", (s or "").lower()) if w not in GEN_STOP)
 
 
-def gen_chains(triplets, min_shared=4, min_jaccard=0.18):
-    """Directed 'generative coil': triplet A's SOLUTION feeds triplet B's RESOURCE,
-    across traditions. Conservative significant-token overlap (descriptive, not exact)."""
+def gen_direction(a, b):
+    """Is A's solution EARLIER than B's resource? Returns (direction, basis).
+
+    direction is 'forward' (A before B -- the only ordering a generative coil may
+    claim), 'backward', or 'same'. basis names the evidence the ordering rests on,
+    because the two are not equally good: pub_year is a curated or cited publication
+    year, whereas a Date-Added fallback records when WE filed the triplet and says
+    nothing about when the work happened. An edge ordered on filing dates is a much
+    weaker claim than one ordered on publication, and callers need to be able to
+    tell them apart rather than reading one confidence number over both.
+    """
+    ya, yb = a.get("pub_year"), b.get("pub_year")
+    solid = not (a.get("pub_year_fallback") or b.get("pub_year_fallback"))
+    if isinstance(ya, int) and isinstance(yb, int) and ya != yb:
+        return ("forward" if ya < yb else "backward",
+                "pub_year" if solid else "pub_year_with_fallback")
+    # Same year (or no year): fall back to the date string, which is finer-grained
+    # but is Date-Added for most of the corpus. Tag it so nobody mistakes it.
+    da, db = (a.get("date") or "")[:10], (b.get("date") or "")[:10]
+    if da and db and da != db:
+        return ("forward" if da < db else "backward", "date_string")
+    return ("same", "none")
+
+
+def gen_chains(triplets, min_shared=4, min_jaccard=0.18,
+               cross_tradition_only=False, keep_backward=False):
+    """Directed 'generative coil': triplet A's SOLUTION feeds triplet B's RESOURCE.
+
+    Two standing decisions, both changed 2026-09-01 -- see the commit message:
+
+      * WITHIN-tradition pairs are now considered. The old code skipped
+        a.thinker == b.thinker, which made every within-tradition reuse invisible
+        by construction. On the domino fixture, where each epoch is one 'thinker',
+        that discarded all 180 within-epoch ordered pairs and left only cross-epoch
+        pairs that share no vocabulary -- so it reported 0 generative coils and the
+        zero looked like a fact about the corpus. Pass cross_tradition_only=True
+        for the old behaviour.
+
+      * The arrow is now asserted. Nothing previously compared dates, so 'directed'
+        meant source->target in the loop, not older->newer. 15 of the 23 edges in
+        the shipped live build ran backwards in time. Backward and same-date edges
+        are dropped unless keep_backward=True, which emits them tagged for
+        inspection rather than silently.
+
+    Overlap is still Jaccard on significant tokens -- lexical, not semantic. It
+    detects shared topic at least as readily as it detects reuse of a resource.
+    """
     sol = {t["id"]: gen_tokens(t["solution"]) for t in triplets}
     res = {t["id"]: gen_tokens(t["resource"]) for t in triplets}
-    out = []
+    by_id = {t["id"]: t for t in triplets}
+    out, stats = [], {"forward": 0, "backward": 0, "same": 0}
     for a in triplets:
         sa = sol[a["id"]]
         if len(sa) < min_shared:
             continue
         for b in triplets:
-            if a["id"] == b["id"] or a["thinker"] == b["thinker"]:
+            if a["id"] == b["id"]:
+                continue
+            if cross_tradition_only and a["thinker"] == b["thinker"]:
                 continue
             rb = res[b["id"]]
             if len(rb) < min_shared:
                 continue
             inter = sa & rb
-            if len(inter) >= min_shared:
-                j = len(inter) / len(sa | rb)
-                if j >= min_jaccard:
-                    out.append({
-                        "source": a["id"], "target": b["id"],
-                        "thinker_source": a["thinker"], "thinker_target": b["thinker"],
-                        "shared": sorted(inter)[:6], "score": round(j, 3),
-                    })
-    return out
+            if len(inter) < min_shared:
+                continue
+            j = len(inter) / len(sa | rb)
+            if j < min_jaccard:
+                continue
+            direction, basis = gen_direction(by_id[a["id"]], by_id[b["id"]])
+            stats[direction] += 1
+            if direction != "forward" and not keep_backward:
+                continue
+            out.append({
+                "source": a["id"], "target": b["id"],
+                "thinker_source": a["thinker"], "thinker_target": b["thinker"],
+                "same_tradition": a["thinker"] == b["thinker"],
+                "direction": direction, "direction_basis": basis,
+                "pub_year_source": a.get("pub_year"), "pub_year_target": b.get("pub_year"),
+                "shared": sorted(inter)[:6], "score": round(j, 3),
+            })
+    return out, stats
 
 
 def main():
@@ -351,6 +452,10 @@ def main():
                          "tradition maps. For fixture corpora (see c2a2-prs-3d/testcorpus) "
                          "so a test tradition gets a real colour and discipline wedge "
                          "without being added to the live maps.")
+    ap.add_argument("--keep-backward", action="store_true",
+                    help="Emit generative coils that run backwards or level in time, "
+                         "tagged with their direction, instead of dropping them. For "
+                         "inspection; the renderer's legend claims a forward arrow.")
     ap.add_argument("--write-pubmap", action="store_true",
                     help="Persist merged pub_year map into <vault>/master/prs_pub_years.json")
     args = ap.parse_args()
@@ -371,8 +476,9 @@ def main():
     triplets, fallbacks = extract_triplets(args.vault, carryforward)
     cross, cross_dups = extract_cross(args.vault)
     findings = extract_findings(args.vault)
-    coils = derive_coils(cross)
-    generative = gen_chains(triplets, min_shared=3, min_jaccard=0.15)
+    coils = derive_coils(cross, triplets)
+    generative, gen_stats = gen_chains(triplets, min_shared=3, min_jaccard=0.15,
+                                       keep_backward=args.keep_backward)
     if cross_dups:
         fallbacks.append("CROSS dup headers (kept newer em-dash form): " + ", ".join("CROSS-" + d for d in cross_dups))
 
@@ -402,7 +508,13 @@ def main():
             "traditions": len({t["thinker"] for t in triplets}),
             "cross_connections": len(cross),
             "coils": len(coils),
+            "coils_backward": sum(1 for c in coils if c["forward"] is False),
+            "coils_direction_unknown": sum(1 for c in coils if c["forward"] is None),
             "generative": len(generative),
+            "generative_within_tradition": sum(1 for g in generative if g["same_tradition"]),
+            "generative_candidates": sum(gen_stats.values()),
+            "generative_backward_rejected": gen_stats["backward"],
+            "generative_same_date_rejected": gen_stats["same"],
             "findings": len(findings),
             "pub_year_fallbacks": len(fallbacks),
             "generated": datetime.datetime.now().isoformat(timespec="seconds"),
@@ -414,6 +526,29 @@ def main():
     print("=== extract_prs_data summary ===")
     for k in ("triplets", "traditions", "cross_connections", "coils", "generative", "findings", "pub_year_fallbacks"):
         print("  %-20s %s" % (k, s[k]))
+    # The arrow's own audit. A generative coil that runs backwards in time is not a
+    # weak edge, it is the opposite of the claim its legend makes -- so the count of
+    # what was rejected is reported next to what survived, never just the survivors.
+    print("--- generative coil direction (solution must precede resource) ---")
+    print("  candidates over threshold %d" % s["generative_candidates"])
+    print("  kept (forward)            %d  (%d within-tradition, %d across)"
+          % (s["generative"], s["generative_within_tradition"],
+             s["generative"] - s["generative_within_tradition"]))
+    print("  rejected (backward)       %d" % s["generative_backward_rejected"])
+    print("  rejected (same date)      %d" % s["generative_same_date_rejected"])
+    basis = {}
+    for g in generative:
+        basis[g["direction_basis"]] = basis.get(g["direction_basis"], 0) + 1
+    for b in sorted(basis):
+        print("    ordered on %-24s %d" % (b, basis[b]))
+    if s["coils_backward"] or s["coils_direction_unknown"]:
+        print("--- synergistic coil direction (resource must precede its use) ---")
+        print("  coils predating a linked program's whole output  %d" % s["coils_backward"])
+        print("  coils whose programs resolve to no tradition     %d" % s["coils_direction_unknown"])
+        for c in coils:
+            if c["forward"] is False:
+                print("    %s (%s) predates: %s" % (c["id"], c["year"],
+                                                    ", ".join(c["programs_predating_coil"])))
     print("  pub_year carried-fwd  %d / %d" % (
         sum(1 for t in triplets if t["id"] in carryforward), len(triplets)))
     if fallbacks:
