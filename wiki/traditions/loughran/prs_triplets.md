@@ -97,3 +97,30 @@ PRS-09:
   Date Added: 2026-06-11
   Source: Resurrecting Civility — RC Pilot GPT Tome / Document Explorer; re-homed from traditions/stump/prs_triplets.md (was Stump PRS-03, added 2026-04-05) per ASSUMPTION-076
   Confidence: High
+
+PRS-10:
+  Label: P10 (architecture/prs_axis_formative_assessment_2026-09-01.md) — The instrument that cannot measure itself
+  Problem: A visualization encodes a model of what is being visualized, but nothing in the C2A2 build asks whether the rendered picture still means what the model says it means; the Narrative (PRS) Connectome's own freshness and integrity gates all passed while its vertical axis had quietly stopped carrying the comparison it exists to support
+  Resource: A formative assessment by adversarial fixture: a small corpus built to be structurally known in advance and deliberately unlike the live one — twenty landmark results across two traditions with a 124-year baseline and disjoint technical vocabularies — pushed through the unmodified production pipeline so that every failure is a property of the instrument rather than of the data
+  Solution: Four defects surfaced that no existing gate could see, and a new standing metric (rate_spread — column units per year of span, per tradition) that measures what max_share is structurally blind to; the live corpus, previously reported healthy, measures 5.41x on it
+  Date Added: 2026-09-01
+  Source: C2A2 formative assessment, wiki/architecture/prs_axis_formative_assessment_2026-09-01.md
+  Confidence: High
+
+PRS-11:
+  Label: P11 (architecture/prs_axis_formative_assessment_2026-09-01.md) — A metric invariant to its own failure
+  Problem: max_share, the standing check on the connectome's vertical axis, counts the largest fraction of nodes landing on one rendered level; it is therefore invariant under every monotonic transform of the date, so an axis can be perfectly discriminating and still unreadable, and the metric will report health throughout
+  Resource: Per-tradition rate measurement rather than tie counting: column units of vertical span divided by years of span, compared across traditions, with the ratio between the fastest and slowest as a single number; a linear axis gives exactly 1.00 by construction, which makes the metric's floor provable rather than asserted
+  Solution: rate_spread, added to scripts/prs_axis_max_share.py alongside max_share rather than replacing it — the two ask different questions and fail apart; measured 34.89x on the domino fixture at the shipped time constant and 1.00x on its linear control
+  Date Added: 2026-09-01
+  Source: C2A2 formative assessment, wiki/architecture/prs_axis_formative_assessment_2026-09-01.md
+  Confidence: High
+
+PRS-12:
+  Label: P12 (architecture/prs_axis_formative_assessment_2026-09-01.md) — Lexical matching cannot find an association fiber
+  Problem: The connectome model holds that coils are association fibers binding otherwise-separate narrative modules, but the only automatic cross-tradition detector in the pipeline scores word overlap between one narrative's solution and another's resource, and traditions worth bridging are precisely those that do not share a vocabulary
+  Resource: A fixture in which the structural correspondences are known and stated in advance but the two traditions share almost no technical language, so the detector's blindness is measurable rather than suspected
+  Solution: Zero links found across all 200 cross-tradition pairs, best score 0.061 on the tokens 'plus' and 'self' — establishing that the generative-coil layer is a vocabulary-similarity detector rather than an analogy detector, and that replacing it is a project rather than a threshold adjustment
+  Date Added: 2026-09-01
+  Source: C2A2 formative assessment, wiki/architecture/prs_axis_formative_assessment_2026-09-01.md
+  Confidence: High

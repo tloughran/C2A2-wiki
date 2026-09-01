@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Narrative (PRS) Connectome — Corpus vs Test Case</title>
+<!--
+  Self-contained by design: all CSS and JS are inline. This page can be loaded into the
+  explorer's iframe, and the standing rule is that an iframe-loaded tab must never ship a
+  bare local asset include (explorer.html force-freshes the iframe DOCUMENT but cannot
+  reach assets inside it, so fresh HTML + cached asset is a guaranteed mismatch). Inlining
+  makes the whole file the iframe document, which is immune.
+
+  The three builds it frames are themselves single-file, and are loaded with a ?v= stamp
+  so a rebuild is picked up without a hard refresh.
+-->
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --panel: #12121c;
+    --edge: #24243a;
+    --ink: #e8e8ef;
+    --dim: #9a9ab0;
+    --gold: #C9A84C;
+    --teal: #3FE0D0;
+    --qm: #5A9E6B;
+    --dl: #B0B0B8;
+    --bad: #E0795C;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    flex: 0 0 auto;
+    padding: 12px 18px 0;
+    border-bottom: 1px solid var(--edge);
+  }
+  h1 {
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    color: var(--gold);
+  }
+  .sub { margin: 0 0 11px; color: var(--dim); max-width: 108ch; font-size: 12.5px; }
+  .panes {
+    flex: 1 1 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--edge);
+    min-height: 0;
+  }
+  /* Stacked: the panes can no longer split the viewport height between them, so give
+     each one a workable height of its own and let the document scroll. A 3D view
+     squeezed into 120px is not a smaller version of the tool, it is an unusable one. */
+  @media (max-width: 900px) {
+    html, body { height: auto; }
+    .panes { grid-template-columns: 1fr; }
+    .pane { min-height: 82vh; }
+  }
+  .pane { background: var(--bg); display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+  .panehead {
+    flex: 0 0 auto;
+    padding: 9px 14px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--edge);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .panehead h2 { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+  .tag {
+    font-size: 10px;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+  }
+  .t-live { color: var(--gold); }
+  .t-fix { color: var(--teal); }
+  .arms { margin-left: auto; display: flex; gap: 0; }
+  .arms button {
+    background: #191926;
+    color: var(--dim);
+    border: 1px solid var(--edge);
+    padding: 4px 11px;
+    font: inherit;
+    font-size: 11.5px;
+    cursor: pointer;
+  }
+  .arms button:first-child { border-radius: 3px 0 0 3px; }
+  .arms button:last-child { border-radius: 0 3px 3px 0; border-left: 0; }
+  .arms button[aria-pressed="true"] { background: var(--teal); color: #06202a; border-color: var(--teal); font-weight: 600; }
+  .arms button:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+  .frame { flex: 1 1 auto; min-height: 320px; }
+  iframe { width: 100%; height: 100%; border: 0; display: block; background: var(--bg); }
+  .readout {
+    flex: 0 0 auto;
+    padding: 8px 14px 10px;
+    background: var(--panel);
+    border-top: 1px solid var(--edge);
+    display: flex;
+    gap: 8px 22px;
+    flex-wrap: wrap;
+    font-variant-numeric: tabular-nums;
+    font-size: 11.5px;
+    color: var(--dim);
+  }
+  .readout b { color: var(--ink); font-weight: 600; }
+  .readout .warn { color: var(--bad); }
+  .readout .good { color: var(--qm); }
+  footer {
+    flex: 0 0 auto;
+    padding: 9px 18px 12px;
+    border-top: 1px solid var(--edge);
+    color: var(--dim);
+    font-size: 11.5px;
+    display: flex;
+    gap: 6px 26px;
+    flex-wrap: wrap;
+  }
+  footer b { color: var(--ink); font-weight: 600; }
+  code { font-family: ui-monospace, Menlo, monospace; color: var(--teal); font-size: .93em; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Narrative (PRS) Connectome — corpus beside test case</h1>
+  <p class="sub">Left: the live C2A2 corpus, 679 narratives across 16 traditions. Right: the domino fixture, 20 narratives across 2 traditions with a 124-year baseline, switchable between the shipped axis and its linear control. The fixture exists because the live corpus is ~95&nbsp;% recent and therefore cannot exercise the vertical axis at all.</p>
+</header>
+
+<div class="panes">
+
+  <section class="pane">
+    <div class="panehead">
+      <span class="tag t-live">Live corpus</span>
+      <h2>C2A2 &mdash; 679 narratives, 16 traditions</h2>
+    </div>
+    <div class="frame"><iframe id="fLive" title="Narrative PRS Connectome over the live C2A2 corpus"></iframe></div>
+    <div class="readout">
+      <span>baseline <b>49.3 yr</b></span>
+      <span>TAU_DAYS <b>90</b></span>
+      <span>max_share <b class="good">5.2 %</b></span>
+      <span>rate_spread <b class="warn">6.53&times;</b></span>
+      <span>MacIntyre <b>0.62</b> vs Loughran <b>4.01</b> units/yr</span>
+    </div>
+  </section>
+
+  <section class="pane">
+    <div class="panehead">
+      <span class="tag t-fix">Test fixture</span>
+      <h2>Quantum 1900&ndash;1932 vs deep learning 2012&ndash;2025</h2>
+      <div class="arms" role="group" aria-label="Axis setting">
+        <button id="bTau" aria-pressed="true">Shipped &tau;&nbsp;=&nbsp;90</button>
+        <button id="bLin" aria-pressed="false">Linear control</button>
+      </div>
+    </div>
+    <div class="frame"><iframe id="fTest" title="Narrative PRS Connectome over the domino test fixture"></iframe></div>
+    <div class="readout" id="testReadout"></div>
+  </section>
+
+</div>
+
+<footer>
+  <span><b>Read the two together.</b> The live pane looks healthy on <code>max_share</code> and still spends six and a half times more column per year on its newest tradition than its oldest.</span>
+  <span><b>Flip the right arm.</b> Same twenty narratives, same build, one constant changed.</span>
+</footer>
+
+<script>
+// Force-fresh each build: these files are regenerated by
+// scripts/regen_prs_connectome.sh and scripts/regen_prs_testcorpus.sh, and a stale
+// cached copy would silently show yesterday's axis next to today's numbers.
+var STAMP = '?v=' + Date.now();
+var TEST_BASE = 'c2a2-prs-3d/testcorpus/';
+
+// Measured by scripts/prs_axis_max_share.py on the built artifacts, 2026-09-01.
+// Hardcoded rather than computed: this page frames the builds, it does not parse them,
+// and a number invented in the browser would not be the one the standing check reports.
+var ARMS = {
+  tau: {
+    file: 'prs_3d_test_tau90.html',
+    row: '<span>baseline <b>124.1 yr</b></span>'
+       + '<span>TAU_DAYS <b>90</b></span>'
+       + '<span>max_share <b class="good">5.0 %</b></span>'
+       + '<span>rate_spread <b class="warn">34.89&times;</b></span>'
+       + '<span>quantum <b class="warn">0.054</b> vs deep learning <b>1.867</b> units/yr</span>'
+  },
+  lin: {
+    file: 'prs_3d_test_linear.html',
+    row: '<span>baseline <b>124.1 yr</b></span>'
+       + '<span>TAU_DAYS <b>linear</b></span>'
+       + '<span>max_share <b class="good">5.0 %</b></span>'
+       + '<span>rate_spread <b class="good">1.00&times;</b></span>'
+       + '<span>quantum <b>0.290</b> vs deep learning <b>0.290</b> units/yr</span>'
+  }
+};
+
+var fLive = document.getElementById('fLive');
+var fTest = document.getElementById('fTest');
+var bTau = document.getElementById('bTau');
+var bLin = document.getElementById('bLin');
+var readout = document.getElementById('testReadout');
+
+function setArm(key) {
+  var a = ARMS[key];
+  fTest.src = TEST_BASE + a.file + STAMP;
+  readout.innerHTML = a.row;
+  bTau.setAttribute('aria-pressed', key === 'tau' ? 'true' : 'false');
+  bLin.setAttribute('aria-pressed', key === 'lin' ? 'true' : 'false');
+}
+
+bTau.addEventListener('click', function() { setArm('tau'); });
+bLin.addEventListener('click', function() { setArm('lin'); });
+
+fLive.src = 'prs_3d.html' + STAMP;
+setArm('tau');
+</script>
+
+</body>
+</html>
