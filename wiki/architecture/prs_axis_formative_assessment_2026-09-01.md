@@ -5,9 +5,11 @@
 
 ## What was done
 
-A test corpus was built to be **structurally known in advance and deliberately unlike the live one**, then pushed through the unmodified production pipeline. Twenty landmark results — quantum mechanics 1900–1932 and deep learning 2012–2025, from Karpathy's domino image — written as full PRS triplets in each tradition's own vocabulary, with no tuning for word overlap, plus six hand-authored cross-connections stating the correspondences the image asserts.
+A test corpus was built to be **structurally known in advance and deliberately unlike the live one**, then pushed through the unmodified production pipeline. Twenty landmark results — quantum mechanics 1900–1932 and deep learning 2012–2025 — written as full PRS triplets in each tradition's own vocabulary, with no tuning for word overlap, plus six hand-authored cross-connections.
 
-The image is a good probe because it carries four separable claims: two distinct traditions; each a cascade; a structural correspondence between them; and a compression — the second cascade covers comparable ground in 13 years against 32. The instrument either draws each claim or it does not.
+**Provenance, corrected 2026-09-01 (see `../c2a2-prs-3d/testcorpus/SOURCE.md`).** This paragraph originally credited "Karpathy's domino image." Wrong on both counts. The prompt was the closing minute of a [Welch Labs video on residual networks](https://www.youtube.com/watch?v=QgH9sr7G13Q), which narrates a shared *shape* — Planck's quanta taken as a mathematical device, Einstein and Bohr carrying it forward, a late-1920s reconceptualization, and ResNets as an early domino of the current wave — and names no dates, no ten-and-ten list, and no pairing of specific results. **The twenty results, their dates and all six cross-connections are Claude-authored.**
+
+The fixture is a good probe because it carries four separable claims: two distinct traditions; each a cascade; a structural correspondence between them; and a compression — the second cascade covers comparable ground in 13 years against 32. The instrument either draws each claim or it does not.
 
 **It drew the first and got the other three wrong.**
 

@@ -1,5 +1,5 @@
 # Deep Learning (2012-2025) — PRS Triplets
-*Test corpus. Encoded from the Karpathy domino image, 2026-09-01.*
+*Test corpus. Claude-authored results and dates, prompted by the closing analogy in the Welch Labs ResNet video (https://www.youtube.com/watch?v=QgH9sr7G13Q). Not sourced from it — see `../../SOURCE.md`. 2026-09-01.*
 
 ## Triplets
 

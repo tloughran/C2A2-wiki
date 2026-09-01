@@ -3,7 +3,7 @@
 # regen_prs_testcorpus.sh
 # Build the Narrative (PRS) Connectome over the DOMINO TEST FIXTURE — twenty landmark
 # results, quantum mechanics 1900-1932 against deep learning 2012-2025, encoded as PRS
-# triplets from Karpathy's domino image.
+# triplets from the Welch Labs ResNet video's closing quantum-mechanics analogy (see testcorpus/SOURCE.md).
 #
 # WHY THIS EXISTS
 #   The live corpus is ~95% recent, so it cannot exercise the axis. This fixture has a
