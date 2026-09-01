@@ -346,6 +346,11 @@ def main():
     ap.add_argument("vault")
     ap.add_argument("--carryforward", default="")
     ap.add_argument("--out", default="prs_data.json")
+    ap.add_argument("--thinker-map", default="",
+                    help="JSON {colors:{},display:{},disc:{}} merged over the built-in "
+                         "tradition maps. For fixture corpora (see c2a2-prs-3d/testcorpus) "
+                         "so a test tradition gets a real colour and discipline wedge "
+                         "without being added to the live maps.")
     ap.add_argument("--write-pubmap", action="store_true",
                     help="Persist merged pub_year map into <vault>/master/prs_pub_years.json")
     args = ap.parse_args()
@@ -353,6 +358,15 @@ def main():
     carryforward = {}
     if args.carryforward and os.path.isfile(args.carryforward):
         carryforward = json.load(open(args.carryforward))
+
+    if args.thinker_map:
+        tm = json.load(open(args.thinker_map))
+        THINKER_COLORS.update(tm.get("colors", {}))
+        THINKER_DISPLAY.update(tm.get("display", {}))
+        THINKER_DISC.update(tm.get("disc", {}))
+        print("thinker-map: merged %d colour / %d display / %d discipline entries from %s"
+              % (len(tm.get("colors", {})), len(tm.get("display", {})),
+                 len(tm.get("disc", {})), args.thinker_map))
 
     triplets, fallbacks = extract_triplets(args.vault, carryforward)
     cross, cross_dups = extract_cross(args.vault)

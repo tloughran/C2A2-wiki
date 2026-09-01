@@ -28,6 +28,12 @@ def check(cond, msg):
         FAIL.append(msg)
 
 
+def note(cond, msg):
+    """Reported, never fatal. For conditions that are true of the CORPUS rather than
+    broken in the BUILD -- a correct build of an unusual corpus must still ship."""
+    print(("  ok  " if cond else " WARN ") + msg)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("html")
@@ -73,14 +79,46 @@ def main():
             return None
         arr = json.loads(m.group(1).replace("<\\/", "</"))
         if not arr:
-            return 0.0
+            # An EMPTY layer is a fact about the corpus, not a parse regression.
+            # This guard exists to catch fields that silently stopped populating;
+            # zero records means there is nothing to populate. Returning 0.0 here
+            # failed the build for any corpus whose traditions share no vocabulary
+            # -- and under `set -e` in regen_prs_connectome.sh that aborts the regen.
+            return None
         return sum(1 for r in arr if str(r.get(key, "")).strip()) / len(arr)
     for name, key in [("PRS_TRIPLETS", "resource"), ("CROSS_CONNECTIONS", "question"),
                       ("FINDINGS", "programs"), ("FINDINGS", "finding"), ("COILS", "label"),
                       ("GENERATIVE", "source"), ("GENERATIVE", "target")]:
         frac = field_filled(name, key)
-        check(frac is not None and frac >= 0.95,
-              "%s.%s populated on %s of records" % (name, key, "n/a" if frac is None else "%.0f%%" % (frac * 100)))
+        arr_missing = re.search(r"var " + name + r" = (\[.*?\]);", html, re.S) is None
+        check((frac is None and not arr_missing) or (frac is not None and frac >= 0.95),
+              "%s.%s populated on %s of records"
+              % (name, key, "n/a (layer empty)" if frac is None else "%.0f%%" % (frac * 100)))
+
+    print("\n[2c] coil altitude inside the corpus range")
+    # ordToZ clamps now, but a coil dated past the newest triplet still means the
+    # altitude is a guess rather than a placement. Before the clamp (pre 2026-09-01)
+    # it was NaN: geometry built, visible:true, legend counting it, nothing drawn.
+    mt = re.search(r"var PRS_TRIPLETS = (\[.*?\]);", html, re.S)
+    mc = re.search(r"var COILS = (\[.*?\]);", html, re.S)
+    if mt and mc:
+        trs = json.loads(mt.group(1).replace("<\\/", "</"))
+        coils = json.loads(mc.group(1).replace("<\\/", "</"))
+        yrs = [int(str(r.get("date") or "")[:4]) for r in trs
+               if str(r.get("date") or "")[:4].isdigit()]
+        newest = max(yrs) if yrs else None
+        late = [c["id"] for c in coils
+                if newest is not None and int(c.get("year") or 0) > newest]
+        # WARN, not FAIL: a coil legitimately postdates the corpus -- the architecture
+        # doc places it at the moment its bridging insight formed, which is by
+        # construction the newest thing in the system. ordToZ clamps it to the top of
+        # the column. Say so out loud; the altitude is a ceiling, not a placement.
+        note(not late, "coil altitude: %d/%d coils sit past the newest triplet (%s)%s"
+             % (len(late), len(coils), newest,
+                " and are CLAMPED to the top of the column: " + ", ".join(late[:6])
+                if late else " -- all inside the range"))
+    else:
+        check(mt is not None and mc is not None, "PRS_TRIPLETS and COILS both present")
 
     print("\n[3] coil layer wired")
     check("function buildCoilLines()" in html, "buildCoilLines defined")

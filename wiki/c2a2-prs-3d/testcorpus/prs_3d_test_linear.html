@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C2A2 — Narrative (PRS) Connectome</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a0f;
+  color: #d0d0d0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+#prs-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;     /* anchor for help popover and similar overlays */
+}
+
+/* "How filters work" help — small ? button + lightweight popover (not modal) */
+.prs-help-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+#prs-help-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #888;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  line-height: 18px;
+  text-align: center;
+}
+#prs-help-btn:hover, #prs-help-btn.active {
+  background: #2a2a3a;
+  color: #C9A84C;
+  border-color: #C9A84C;
+}
+#prs-help-popover {
+  position: fixed;
+  top: 70px;          /* below the page header band */
+  left: 212px;        /* just outside the 200px left panel */
+  width: 300px;
+  background: #14141e;
+  border: 1px solid #3a3a4a;
+  border-radius: 6px;
+  padding: 12px 28px 12px 14px;
+  z-index: 250;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #d0d0d0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.55);
+}
+.prs-help-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #C9A84C;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+#prs-help-popover p { margin: 4px 0; }
+#prs-help-popover ul { margin: 6px 0 0 0; padding-left: 18px; }
+#prs-help-popover li { margin-bottom: 5px; }
+#prs-help-popover strong { color: #f0f0f0; }
+.prs-help-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+.prs-help-close:hover { color: #C9A84C; }
+
+#prs-left-page { position:absolute; left:0; top:0; bottom:0; width:320px; background:#0e0e16; border-right:1px solid #1a1a2e; overflow-y:auto; padding:12px; z-index:150; }
+#prs-left-page h3 { color:#f0f0f0; font-size:14px; margin:6px 0; }
+#prs-left-page .field-label { color:#888; font-size:10px; text-transform:uppercase; letter-spacing:1px; margin-top:10px; }
+#prs-left-page .field-value { color:#c0c0c0; font-size:12px; line-height:1.5; }
+#prs-left-page .thinker-tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; margin:2px 4px 2px 0; }
+#prs-left-panel {
+  width: 200px;
+  flex-shrink: 0;
+  background: #0e0e16;
+  overflow-y: auto;
+  padding: 8px;
+  font-size: 12px;
+  z-index: 100;
+  border-right: 1px solid #1a1a2e;
+}
+#prs-left-panel h3 {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 8px 0 4px 0;
+  letter-spacing: 1px;
+}
+.prs-filter-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  cursor: pointer;
+}
+.prs-filter-item input[type="checkbox"] { cursor: pointer; }
+.prs-filter-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.prs-filter-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#prs-search-box {
+  width: 100%;
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #e0e0e0;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+#prs-search-box::placeholder { color: #666; }
+#prs-search-box:focus { outline: none; border-color: #FFD700; }
+.prs-search-results {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #888;
+}
+.prs-search-hit {
+  padding: 4px 6px;
+  margin: 2px 0;
+  background: #1a1a2a;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #ccc;
+  line-height: 1.3;
+}
+.prs-search-hit:hover { background: #2a2a3a; }
+.prs-search-hit .hit-thinker { font-weight: 600; }
+#prs-search-clear, #prs-search-reset {
+  background: #1a1a2a;
+  border: 1px solid #3a3a4a;
+  color: #e0e0e0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+#prs-search-clear { display: none; }   /* Search-only Clear: shown when a query is active */
+#prs-search-reset { display: inline-block; }  /* Always available */
+#prs-search-clear:hover, #prs-search-reset:hover { background: #2a2a3a; }
+
+#canvas-container {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  filter: brightness(1.35);
+}
+
+#header {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 44px;
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #1a1a2e;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 100;
+  gap: 12px;
+}
+#header h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #C9A84C;
+  white-space: nowrap;
+}
+#header .controls {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-left: auto;
+}
+#header .controls button {
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  color: #d0d0d0;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#header .controls button:hover { background: #2a2a3e; }
+#header .controls button.active { background: #FFD700; color: #0a0a0f; border-color: #FFD700; }
+
+#info-panel {
+  position: absolute;
+  top: 54px;
+  right: 10px;
+  width: 340px;
+  max-height: calc(100vh - 70px);
+  background: rgba(12, 12, 20, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-y: auto;
+  z-index: 90;
+  display: none;
+  font-size: 13px;
+  line-height: 1.5;
+}
+#info-panel h3 {
+  color: #C9A84C;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+#info-panel .prs-type {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#info-panel .prs-type.problem { background: #C45B5B33; color: #E87070; }
+#info-panel .prs-type.resource { background: #5A8EAF33; color: #7AB0CF; }
+#info-panel .prs-type.solution { background: #3D9E8933; color: #5DC0AB; }
+#info-panel .field-label {
+  color: #888;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+#info-panel .field-value {
+  color: #d0d0d0;
+  margin-top: 2px;
+}
+#info-panel .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+}
+#info-panel .close-btn:hover { color: #aaa; }
+#info-panel .thinker-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+#legend {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(12, 12, 20, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid #1a1a2e;
+  border-radius: 8px;
+  padding: 12px 14px;
+  z-index: -1;
+  font-size: 11px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.prs-pop-btn { background:#1a1a2e; color:#C9A84C; border:1px solid #2a2a3e; border-radius:50%; width:18px; height:18px; font-size:11px; line-height:16px; cursor:pointer; padding:0; margin-left:6px; }
+.prs-pop-btn:hover { background:#2a2a3e; }
+.prs-pop { position:absolute; background:rgba(12,12,20,0.96); backdrop-filter:blur(8px); border:1px solid #2a2a3e; border-radius:8px; padding:12px 14px; font-size:11px; line-height:1.5; max-width:320px; z-index:400; color:#d0d0d0; }
+.prs-pop h4 { margin:0 0 6px 0; color:#C9A84C; font-size:12px; }
+.prs-pop b { color:#f0f0f0; }
+#legend h4 {
+  color: #C9A84C;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+#legend .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+#legend .legend-item.dimmed { opacity: 0.3; }
+#legend .legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(12, 12, 20, 0.95);
+  border: 1px solid #2a2a3e;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #d0d0d0;
+  pointer-events: none;
+  z-index: 200;
+  display: none;
+  max-width: 300px;
+}
+
+#disc-labels { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+.disc-label {
+  position: absolute;
+  color: #888;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a3e; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<div id="prs-layout">
+
+<div id="prs-left-panel">
+  <div class="prs-help-row">
+    <button id="prs-help-btn" onclick="prsToggleHelp(event)" aria-label="How filters work" title="How filters work">?</button>
+  </div>
+  <div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 10px">Showing … triplets</div>
+  <h3>Traditions</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all" checked onchange="prsToggleAll(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-tradition-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Edges</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-edges" checked onchange="prsToggleEdges(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">Edges (threads)</span>
+  </div>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-coils" checked onchange="prsToggleCoils(this.checked)">
+    <span class="prs-filter-dot" style="background:#3FE0D0"></span>
+    <span class="prs-filter-label" style="font-weight:600">Coils</span>
+  </div>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-generative" checked onchange="prsToggleGenerative(this.checked)">
+    <span class="prs-filter-dot" style="background:#F09A3C"></span>
+    <span class="prs-filter-label" style="font-weight:600">Generative</span>
+  </div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Disciplines</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all-discs" checked onchange="prsToggleAllDiscs(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-discipline-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Years</h3>
+  <div class="prs-filter-item">
+    <input type="checkbox" id="prs-chk-all-years" checked onchange="prsToggleAllYears(this.checked)">
+    <span class="prs-filter-label" style="font-weight:600">All</span>
+  </div>
+  <div id="prs-year-filters"></div>
+  <hr style="border:none;border-top:1px solid #2a2a3a;margin:8px 0">
+  <h3>Search PRS</h3>
+  <input type="text" id="prs-search-box" placeholder="Search problems, resources, solutions...">
+  <button id="prs-search-clear" onclick="prsClearSearch()">Clear</button>
+  <button id="prs-search-reset" onclick="prsResetAll()" title="Restore the full dataset (all Traditions, Disciplines, Years, Edges, search)">Reset</button>
+  <div id="prs-search-results" class="prs-search-results"></div>
+</div>
+
+<!-- Help popover (sibling of left panel so it isn't clipped by overflow-y: auto) -->
+<div id="prs-help-popover" style="display:none;" role="dialog" aria-label="How filters work">
+  <button class="prs-help-close" onclick="prsToggleHelp(event)" aria-label="Close">&times;</button>
+  <div class="prs-help-title">How filters work</div>
+  <div>
+    <p><strong>Each section filters independently.</strong></p>
+    <ul>
+      <li>Within a section (e.g. Traditions), checked items are included &mdash; select Levin + Hoffman to show both.</li>
+      <li>Across sections (Traditions &times; Disciplines &times; Years), a data point must pass every active section simultaneously.</li>
+      <li>Edges only connect two nodes that are both visible (turn off the Edges box to hide them all).</li>
+      <li>Checking everything shows the full dataset. <strong>Reset</strong> restores that state from anywhere.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="prs-left-page" style="display:none"><button class="close-btn" onclick="closePanel()" style="position:absolute;top:8px;right:10px;z-index:1;background:none;border:none;color:#888;font-size:18px;cursor:pointer">&times;</button><div id="prs-left-page-content"></div></div>
+<div style="flex:1;position:relative;overflow:hidden">
+
+<div id="canvas-container"></div>
+
+<div id="header">
+  <h1>C2A2 &mdash; Narrative (PRS) Connectome</h1>
+  <button class="prs-pop-btn" title="What is this view?" onclick="prsTogglePop('prs-title-pop', event)">?</button>
+  <div class="controls">
+    <button onclick="resetCamera()">Reset View</button>
+    <button id="btn-labels" onclick="toggleLabels()" class="active">Labels</button>
+    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Bright</span>
+    <input type="range" id="prs-brightness" min="0.6" max="2.5" step="0.05" value="1.35" style="vertical-align:middle;width:80px" oninput="setBrightness(this.value)">
+    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Year &#8805;</span>
+    <input type="range" id="prs-year-slider" min="0" max="0" value="0" step="1" style="vertical-align:middle;width:90px" oninput="setYearThreshold(this.value)">
+    <span id="prs-year-slider-label" style="font-size:11px;color:#9a9a9a">all years</span>
+    <!-- Threads/Disciplines top buttons removed: superseded by left-panel Edges and Disciplines sections -->
+  </div>
+</div>
+
+<div id="info-panel">
+  <button class="close-btn" onclick="closePanel()">&times;</button>
+  <div id="info-content"></div>
+</div>
+
+<div id="legend"></div>
+
+<div id="tooltip"></div>
+<div id="prs-title-pop" class="prs-pop" style="display:none;top:54px;left:24px"><h4>Narrative (PRS) Connectome</h4><p>Each <b>node</b> is an agentic PRS narrative &#8212; a small model (problem &#8594; resource &#8594; solution). <b>Edges</b> wire narratives together: shared threads within a tradition; across traditions, the <b>coils</b> (association fibers). Read it as the emergence of rival <b>master sciences</b>. Axes: angle = discipline, height = year.</p></div><button id="prs-legend-help-btn" class="prs-pop-btn" title="Legend key" style="position:absolute;display:none;z-index:401" onclick="prsTogglePop('prs-legend-pop', event)">?</button>
+<div id="prs-legend-pop" class="prs-pop" style="display:none;bottom:54px;left:24px"><h4>Legend key</h4><p><b>Problem / Resource / Solution</b> &#8212; the three node shapes of one narrative.</p><p><b>Synergistic coil</b> (teal) &#8212; a cross-tradition bridge: a shared resource linking programs, placed at its discovery year.</p><p><b>Cross-tradition link</b> (gold) &#8212; a finding-driven connection between traditions.</p><p><b>Convergence hub</b> (gold glow) &#8212; a resource shared across &#8805;2 traditions; a candidate master-science seed.</p><p><b>Generative coil</b> (orange &#8594;) &#8212; one narrative's solution feeding another's resource: the directed spiral.</p></div>
+
+<div id="disc-labels"></div>
+
+</div><!-- end flex:1 wrapper -->
+</div><!-- end prs-layout -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ── DATA ──
+var DISCIPLINES = ["Foundational Physics", "Machine Learning"];
+var THINKER_DISC = {"deeplearning": "Machine Learning", "quantum": "Foundational Physics"};
+var THINKER_COLORS = {"deeplearning": "#B0B0B8", "quantum": "#5A9E6B"};
+var THINKER_DISPLAY = {"deeplearning": "Deep Learning", "quantum": "Quantum Mechanics"};
+var PRS_TRIPLETS = [{"id": "deeplearning-PRS-01", "thinker": "deeplearning", "prs_num": "01", "label": "AlexNet (2012) — scale beats hand-engineering", "problem": "Computer vision rests on hand-designed features and shallow classifiers, ImageNet error has plateaued near 26 percent, and neural networks are widely held to be unable to reach that scale", "resource": "A deep convolutional network of 60 million parameters trained on two GPUs, with ReLU units, dropout and heavy data augmentation making the optimisation tractable", "solution": "A drop to 15.3 percent top-5 error, roughly ten points below the runner-up, establishing that a learned representation trained at scale beats a designed one and redirecting the entire field toward deep networks", "date": "2012-12-03", "pub_year": 2012, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-02", "thinker": "deeplearning", "prs_num": "02", "label": "ResNet (2015) — depth made trainable", "problem": "Adding layers past roughly twenty makes networks worse on training error as well as test error, so degradation is an optimisation failure and not overfitting, and depth cannot be exploited", "resource": "Identity skip connections that make each block learn a residual correction, so an unneeded layer can represent the identity and gradients reach early layers undecayed", "solution": "Networks of 152 layers train stably and win ImageNet 2015 at 3.57 percent top-5 error; depth stops being a limit and the residual block becomes a default component of nearly every later architecture", "date": "2015-12-10", "pub_year": 2015, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-03", "thinker": "deeplearning", "prs_num": "03", "label": "AlphaGo (2016) — search plus learned evaluation", "problem": "Go has a branching factor near 250 and a state space beyond exhaustive search, and no hand-written evaluation function for board position had ever reached professional strength", "resource": "Policy and value networks trained on human games and then on self-play, used to bias and truncate a Monte Carlo tree search so that learned intuition guides the search rather than replacing it", "solution": "A 4-1 win over Lee Sedol a decade ahead of expert forecasts, showing that learned evaluation plus search solves problems too large to enumerate and that self-play generates its own training signal", "date": "2016-01-28", "pub_year": 2016, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-04", "thinker": "deeplearning", "prs_num": "04", "label": "Transformer (2017) — attention as the whole architecture", "problem": "Recurrent sequence models process tokens strictly in order, so training cannot be parallelised across a sequence and long-range dependencies decay across many steps", "resource": "Self-attention alone, with every position attending to every other in one operation, plus positional encodings and multiple heads, discarding recurrence and convolution entirely", "solution": "Better translation quality at a fraction of the training cost, and an architecture whose cost is parallel in sequence length; it becomes the substrate for essentially all later large models across text, vision and biology", "date": "2017-06-12", "pub_year": 2017, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-05", "thinker": "deeplearning", "prs_num": "05", "label": "Neural scaling laws (2020) — performance as a predictable function", "problem": "Choices about model size, dataset size and compute budget are made by intuition and folklore, and there is no way to predict what a model not yet trained will achieve", "resource": "A systematic sweep across seven orders of magnitude fitting test loss as a power law in parameters, data and compute, with the compute-optimal allocation derived from the fits", "solution": "Loss becomes predictable in advance from a budget, so a large training run can be justified before it is executed; capability turns into an engineering variable and the case for scale becomes quantitative rather than rhetorical", "date": "2020-01-23", "pub_year": 2020, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-06", "thinker": "deeplearning", "prs_num": "06", "label": "GPT-3 (2020) — in-context learning at scale", "problem": "Every new language task requires collecting a labelled dataset and fine-tuning a separate copy of the model, which does not match how a competent system ought to generalise", "resource": "An autoregressive transformer of 175 billion parameters trained on a broad corpus, evaluated with the task described in the prompt and a handful of examples, with no gradient updates at all", "solution": "Competitive few-shot performance across many tasks from prompting alone, making the trained model a general interface rather than a task-specific artifact and confirming the scaling laws in the direction they predicted", "date": "2020-05-28", "pub_year": 2020, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-07", "thinker": "deeplearning", "prs_num": "07", "label": "DDPM (2020) — generation as learned denoising", "problem": "Generative adversarial networks produce sharp images but train unstably and collapse modes, while likelihood-based models are stable but blurry; no generative family was both reliable and high quality", "resource": "A fixed forward process that gradually adds Gaussian noise to data, with a network trained to reverse one step at a time, reducing generation to a sequence of simple denoising regressions", "solution": "Sample quality competitive with adversarial models under a stable regression objective, opening the diffusion line that becomes the standard method for image, audio and video generation", "date": "2020-06-19", "pub_year": 2020, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-08", "thinker": "deeplearning", "prs_num": "08", "label": "AlphaFold 2 (2021) — a fifty-year problem closed", "problem": "Predicting a protein structure from its sequence had resisted fifty years of effort, and experimental determination is slow and expensive, so most known sequences have no structure", "resource": "An architecture built around the geometry of the problem, using attention over the multiple sequence alignment and over residue pairs, with an end-to-end structure module and recycling of its own predictions", "solution": "Median accuracy near experimental resolution at CASP14 and a public release of predicted structures for most known proteins, showing that a learned model can close a long-standing scientific problem outright", "date": "2021-07-15", "pub_year": 2021, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-09", "thinker": "deeplearning", "prs_num": "09", "label": "RLHF / InstructGPT (2022) — alignment to intent", "problem": "A model trained to predict the next token is optimised for corpus likelihood and not for what a user asked, so it is untruthful, unhelpful and hard to steer despite being highly capable", "resource": "A reward model fitted to human comparisons between candidate outputs, used to optimise the policy with reinforcement learning against that learned preference signal", "solution": "A 1.3 billion parameter model preferred by human raters over the 175 billion parameter base model; the training objective shifts from imitation to preference, which is what makes deployed assistants possible", "date": "2022-03-04", "pub_year": 2022, "confidence": "High", "first_seen": ""}, {"id": "deeplearning-PRS-10", "thinker": "deeplearning", "prs_num": "10", "label": "DeepSeek R1 (2025) — reasoning from reinforcement learning alone", "problem": "Extended reasoning was assumed to require supervised chains of thought written by humans, which is expensive to collect and caps the model at the quality of the demonstrations", "resource": "Large-scale reinforcement learning on verifiable outcomes with no supervised reasoning traces, letting the model discover its own long chains, self-checking and backtracking from the reward alone", "solution": "Reasoning behaviour emerges without demonstrations and reaches frontier benchmark performance, with an openly released model, moving the axis of progress from pretraining scale to test-time computation", "date": "2025-01-22", "pub_year": 2025, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-01", "thinker": "quantum", "prs_num": "01", "label": "Planck (1900) — the quantum of action", "problem": "Classical electrodynamics predicts that a blackbody radiates infinite energy at short wavelengths; the observed spectrum falls off instead, and no continuous theory reproduces the measured curve", "resource": "A formal trick treating the energy of the oscillators in the cavity wall as divisible only into finite elements proportional to frequency, with a new constant h fixed by fitting the measured spectrum", "solution": "A radiation law matching experiment across the whole spectrum, at the cost of admitting discreteness into a continuous theory; the constant h enters physics as an unexplained but load-bearing quantity", "date": "1900-12-14", "pub_year": 1900, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-02", "thinker": "quantum", "prs_num": "02", "label": "Einstein (1905) — the light quantum", "problem": "Planck quantised the emitter but left radiation itself continuous; the photoelectric effect shows electron energy depending on frequency and not on intensity, which no wave picture of light explains", "resource": "Taking Planck's discrete energy elements as real properties of the radiation field rather than a bookkeeping device, so that light itself travels in localised quanta of energy proportional to frequency", "solution": "A quantitative prediction for the photoelectric effect and the first claim that quantisation is physical rather than formal; discreteness is promoted from a fitting device to an ontological commitment", "date": "1905-03-17", "pub_year": 1905, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-03", "thinker": "quantum", "prs_num": "03", "label": "Bohr (1913) — quantised atomic structure", "problem": "The Rutherford nuclear atom is unstable under classical electrodynamics, the orbiting electron should radiate and spiral inward in nanoseconds, and nothing accounts for the sharp discrete lines of the hydrogen spectrum", "resource": "Quantisation applied to the mechanical system rather than to radiation: stationary orbits of quantised angular momentum in which the electron does not radiate, with emission occurring only on transition between them", "solution": "A model deriving the Balmer series from first principles and fixing the Rydberg constant from h, e and the electron mass; quantisation becomes a structural principle of matter, though the stationary states remain unexplained postulates", "date": "1913-07-01", "pub_year": 1913, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-04", "thinker": "quantum", "prs_num": "04", "label": "Compton (1922) — the quantum carries momentum", "problem": "The light quantum was still widely read as a heuristic; a wave theory of X-ray scattering predicts no wavelength shift, and the case for genuinely particulate radiation rested on the photoelectric effect alone", "resource": "Treating an X-ray photon and a free electron as two particles in an elastic collision, and applying relativistic conservation of energy and momentum to predict the scattered wavelength as a function of angle", "solution": "A measured wavelength shift matching the collision prediction exactly, establishing that radiation carries momentum as well as energy; the particle aspect of light becomes an experimental fact rather than an interpretation", "date": "1922-12-01", "pub_year": 1922, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-05", "thinker": "quantum", "prs_num": "05", "label": "de Broglie (1924) — matter waves", "problem": "Radiation has been shown to be both wave and particle, but matter is still treated as purely corpuscular, and Bohr's quantisation condition on angular momentum remains an arbitrary postulate with no underlying mechanism", "resource": "Symmetry between matter and radiation: assigning every particle a wavelength inversely proportional to its momentum, so that an electron in orbit is a standing wave that must close on itself", "solution": "Bohr's quantisation condition becomes a derived consequence of a standing-wave boundary condition, and wave-particle duality is extended from radiation to all matter, later confirmed by electron diffraction", "date": "1924-11-25", "pub_year": 1924, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-06", "thinker": "quantum", "prs_num": "06", "label": "Pauli (1925) — the exclusion principle", "problem": "The Bohr-Sommerfeld atom does not explain why electrons do not all collapse into the lowest orbit, nor why the periodic table closes its shells at 2, 8, 18; the anomalous Zeeman effect resists every existing scheme", "resource": "A fourth two-valued quantum number per electron plus a hard combinatorial constraint: no two electrons in an atom may share the same complete set of quantum numbers", "solution": "Shell structure and the length of the periods of the periodic table follow from the constraint; chemistry becomes a consequence of a quantum bookkeeping rule, and the constraint later grounds the stability of all bulk matter", "date": "1925-01-16", "pub_year": 1925, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-07", "thinker": "quantum", "prs_num": "07", "label": "Heisenberg (1925) — matrix mechanics", "problem": "The old quantum theory is a patchwork of postulates about unobservable electron orbits, it fails for helium and for spectral intensities, and its visualisable pictures generate no systematic calculus", "resource": "A methodological restriction to observable quantities alone: represent each transition by an array indexed by pairs of states, and let the algebra of these arrays, which does not commute, replace classical kinematics", "solution": "The first complete and internally consistent quantum mechanics, reproducing the harmonic oscillator and spectral intensities; noncommutation appears as the formal core of the theory and yields the uncertainty relations two years later", "date": "1925-07-29", "pub_year": 1925, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-08", "thinker": "quantum", "prs_num": "08", "label": "Schrodinger (1926) — the wave equation", "problem": "Matrix mechanics works but is opaque, offers no continuous picture of the process, and is hard to apply; de Broglie's matter waves lack a governing equation of motion", "resource": "A differential wave equation for a complex amplitude over configuration space, whose stationary solutions are eigenfunctions and whose eigenvalues are the allowed energies of the system", "solution": "The hydrogen spectrum falls out as an eigenvalue problem in a familiar mathematical language, the theory becomes broadly calculable, and Schrodinger then proves his formulation equivalent to Heisenberg's", "date": "1926-01-27", "pub_year": 1926, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-09", "thinker": "quantum", "prs_num": "09", "label": "Dirac (1930) — unification and the relativistic electron", "problem": "Wave mechanics and matrix mechanics are two dialects with no common formulation, and neither is compatible with special relativity, so spin has to be inserted by hand", "resource": "An abstract transformation theory in which states are vectors and observables are operators, together with a first-order relativistic wave equation for the electron", "solution": "A single formalism containing both earlier theories as representations, with electron spin and the magnetic moment emerging as necessary consequences and the prediction of antimatter; the field acquires its canonical textbook", "date": "1930-05-29", "pub_year": 1930, "confidence": "High", "first_seen": ""}, {"id": "quantum-PRS-10", "thinker": "quantum", "prs_num": "10", "label": "von Neumann (1932) — the mathematical foundation", "problem": "Quantum mechanics is empirically successful but mathematically unrigorous, resting on the delta function and other objects with no defined status, and its measurement step has no formal treatment", "resource": "Hilbert space and the spectral theory of self-adjoint operators, plus the density matrix, giving states, observables and probabilities a single rigorous setting", "solution": "An axiomatic foundation on which the theory can be proved about rather than merely used, separating unitary evolution from the measurement postulate and closing the founding period of the discipline", "date": "1932-01-01", "pub_year": 1932, "confidence": "High", "first_seen": ""}];
+var CROSS_CONNECTIONS = [{"id": "CROSS-001", "question": "An unfittable anomaly forces adoption of a device the field believes is wrong - Planck 1900 quantising the oscillator, AlexNet 2012 winning with a deep net", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Structural analogy - opening move of a cascade", "year": 2026, "notes": "In both the device is initially defended as expedient rather than true"}, {"id": "CROSS-002", "question": "The expedient device is promoted to a real principle you can predict with - Einstein 1905 making the quantum physical, Kaplan 2020 making scale a law", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Structural homology - fitting device becomes ontological commitment", "year": 2026, "notes": ""}, {"id": "CROSS-003", "question": "A single public demonstration converts the remaining skeptics - Compton 1922 measuring photon momentum, AlphaGo 2016 beating Lee Sedol", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Structural analogy - the decisive demonstration", "year": 2026, "notes": ""}, {"id": "CROSS-004", "question": "A patchwork of postulates is replaced by one calculus everything is then written in - Heisenberg 1925 and Schrodinger 1926, the Transformer 2017", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Deep structural homology - the unifying formalism", "year": 2026, "notes": "The strongest of the six; both produce a substrate the whole later field builds on"}, {"id": "CROSS-005", "question": "A symmetry argument carries a mechanism into a domain it was not built for - de Broglie 1924 extending waves to matter, diffusion 2020 extending denoising to generation", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Structural analogy - mechanism transfer by symmetry", "year": 2026, "notes": ""}, {"id": "CROSS-006", "question": "The founding period closes when the field acquires foundations it can reason about in advance - von Neumann 1932 axiomatising, scaling laws and RLHF making capability and behaviour designable", "programs": "Quantum Agent, Deeplearning Agent", "nature": "Explanatory bridge - closure of a founding period", "year": 2026, "notes": ""}];
+var FINDINGS = [{"id": "FINDING-001", "date": "2026-09-01", "programs": "Quantum Agent, Deeplearning Agent", "type": "Structural homology - cascade shape", "finding": "Both traditions show the same five-stage shape - anomaly, expedient device, decisive demonstration, unifying formalism, foundations - but quantum mechanics takes 32 years from Planck to von Neumann while deep learning takes 13 from AlexNet to DeepSeek R1."}, {"id": "FINDING-002", "date": "2026-09-01", "programs": "Quantum Agent, Deeplearning Agent", "type": "Structural analogy - compression of the interval", "finding": "The 1924-1926 cluster (de Broglie, Pauli, Heisenberg, Schrodinger) and the 2020 cluster (scaling laws, GPT-3, DDPM) are both moments where several independent lines land within months of each other."}];
+var COILS = [{"id": "COIL-001", "cross_id": "CROSS-001", "label": "An unfittable anomaly forces adoption of a device the field believes is wrong - Planck 1900 quantising the oscillator, AlexNet 2012 winning with a deep net", "nature": "Structural analogy - opening move of a cascade", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "In both the device is initially defended as expedient rather than true"}, {"id": "COIL-002", "cross_id": "CROSS-002", "label": "The expedient device is promoted to a real principle you can predict with - Einstein 1905 making the quantum physical, Kaplan 2020 making scale a law", "nature": "Structural homology - fitting device becomes ontological commitment", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": ""}, {"id": "COIL-003", "cross_id": "CROSS-003", "label": "A single public demonstration converts the remaining skeptics - Compton 1922 measuring photon momentum, AlphaGo 2016 beating Lee Sedol", "nature": "Structural analogy - the decisive demonstration", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": ""}, {"id": "COIL-004", "cross_id": "CROSS-004", "label": "A patchwork of postulates is replaced by one calculus everything is then written in - Heisenberg 1925 and Schrodinger 1926, the Transformer 2017", "nature": "Deep structural homology - the unifying formalism", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": "The strongest of the six; both produce a substrate the whole later field builds on"}, {"id": "COIL-005", "cross_id": "CROSS-005", "label": "A symmetry argument carries a mechanism into a domain it was not built for - de Broglie 1924 extending waves to matter, diffusion 2020 extending denoising to generation", "nature": "Structural analogy - mechanism transfer by symmetry", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": ""}, {"id": "COIL-006", "cross_id": "CROSS-006", "label": "The founding period closes when the field acquires foundations it can reason about in advance - von Neumann 1932 axiomatising, scaling laws and RLHF making capability and behaviour designable", "nature": "Explanatory bridge - closure of a founding period", "programs": "Quantum Agent, Deeplearning Agent", "program_count": 2, "year": 2026, "notes": ""}];
+var GENERATIVE = [];
+
+// ── Z-AXIS: temporal placement (must be before camera state) ──
+// Day-precision placement on a SINGLE ordinal scale. yearToZ and dateToZ must
+// share it: nodes are placed by dateToZ, while the decade rings, ticks and year
+// labels are placed by yearToZ. Two scales would silently float the furniture
+// off the nodes.
+//
+// Before 2026-08-27 dateToZ truncated every date to its year, which put 581 of
+// 642 nodes (90.5%) on one plane — the axis had stopped discriminating while the
+// corpus kept growing. See SPEC_prs_time_axis_2026-08-27.md; the standing check
+// is scripts/prs_axis_max_share.py.
+var zHeight = 40; // total vertical span
+
+function dateOrd(dateStr) {
+  if (!dateStr) return null;
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(dateStr);
+  if (m) return Date.UTC(+m[1], +m[2] - 1, +m[3]) / 86400000;
+  var y = parseInt(String(dateStr).slice(0, 4), 10);   // year- or month-only value
+  return isNaN(y) ? null : Date.UTC(y, 0, 1) / 86400000;
+}
+
+var allOrds = PRS_TRIPLETS.map(function(t) { return dateOrd(t.date); })
+                          .filter(function(v) { return v !== null; });
+var minOrd = allOrds.length ? Math.min.apply(null, allOrds) : 0;
+var maxOrd = allOrds.length ? Math.max.apply(null, allOrds) : 0;
+
+// The decade furniture still needs year bounds. Derive them from the SAME range
+// the nodes occupy, so no ring is drawn at a height no node can reach.
+var minYear = new Date(minOrd * 86400000).getUTCFullYear();
+var maxYear = new Date(maxOrd * 86400000).getUTCFullYear();
+
+// Log-on-AGE, not on date. The corpus is ~95% recent, so a linear date scale
+// crushes it into a thin band at the top of the column: measured 2026-08-27,
+// linear put 618 of 642 triplets above z=34 while max_share read a healthy 5.5%.
+// max_share cannot see this — it counts nodes sharing an EXACT level, and any
+// monotonic transform preserves ties, so it reads 5.5% at every tau below. The
+// axis was fixed by that metric and still unreadable by eye. Look at the render.
+//
+// TAU_DAYS is the time constant in days. Small tau expands recent material and
+// compresses the deep past; tau -> infinity recovers the linear scale EXACTLY and
+// is the regression control (scripts/prs_axis_max_share.py reports it as
+// legacy_year's sibling). Measured spread over 642 triplets, low/mid/top of column:
+//     tau   30 -> 357 / 175 / 110      (recent dominates the whole column)
+//     tau   90 -> 143 / 296 / 203      <- chosen: balanced, and the spec's default
+//     tau  180 ->  78 / 192 / 372
+//     linear ->   20 /   4 / 618       (the crush)
+//
+// NOT YET BUILT: the spec also calls for tau as a live slider plus a two-handle
+// age window that renormalises to fill the column, with out-of-window nodes DIMMED
+// never hidden. Both need reposition machinery this file does not have — meshes,
+// threadLines, labelSprites, coils and the decade furniture are all built once with
+// baked vertex positions. Next increment; do not bolt a slider on without it.
+var TAU_DAYS = 1000000000.0;
+
+function ordToZ(o) {
+  if (maxOrd === minOrd) return zHeight / 2;
+  var ageMax = maxOrd - minOrd;
+  if (ageMax <= 0) return zHeight / 2;
+  // Clamp to the corpus range BEFORE taking the log. An ordinal past maxOrd gives a
+  // negative age, and once |age| > TAU_DAYS the log argument goes negative and the
+  // result is NaN -- silently, with the geometry still built and counted. Coils are
+  // the live case: they sit at DISCOVERY time, which is by construction the newest
+  // thing in the system. Measured 2026-09-01: 6 coils at 2026 over a corpus ending
+  // 2025-01-22 produced 6 arcs, visible:true, every vertex NaN, legend reading 6.
+  var oc = Math.max(minOrd, Math.min(maxOrd, o));
+  var age = maxOrd - oc;
+  var u = Math.log(1 + age / TAU_DAYS) / Math.log(1 + ageMax / TAU_DAYS);
+  return 2 + (1 - u) * (zHeight - 4);
+}
+
+function yearToZ(year) {
+  return ordToZ(Date.UTC(year, 0, 1) / 86400000);
+}
+
+function dateToZ(dateStr) {
+  var o = dateOrd(dateStr);
+  return o === null ? zHeight / 2 : ordToZ(o);
+}
+
+// ── STATE ──
+var scene, camera, renderer, raycaster, mouse;
+var meshes = [];        // all clickable meshes
+var threadLines = [];   // P-R-S connection lines
+var discMeshes = [];    // discipline slice meshes
+var decadeRings = [];   // tagged with userData.decade for per-year filter
+var labelSprites = [];  // text labels
+var showLabels = true;
+var showThreads = true;
+var showCoils = true;
+var coilLines = [];
+var showGenerative = true;
+var generativeLines = [];
+var yearThreshold = null;
+// (showDiscs removed — discipline visibility now lives entirely in prsDiscState, set by left-panel checkboxes.)
+// Per-item filter state — populated by buildDisciplineFilters / buildYearFilters
+var prsDiscState = {};   // discipline name -> bool
+var prsYearState = {};   // decade (number) -> bool
+var prsDecades = [];     // [1980, 1990, 2000, ...]
+var selectedMesh = null;
+var hoveredMesh = null;
+
+// Camera orbit
+var isMouseDown = false;
+var mouseDownPos = { x: 0, y: 0 };
+var cameraTheta = Math.PI * 0.25;
+var cameraPhi = Math.PI * 0.35;
+var cameraRadius = 50;
+var cameraTarget = new THREE.Vector3(0, zHeight / 2, 0);
+var lastMouse = { x: 0, y: 0 };
+
+// ── DISCIPLINE GEOMETRY ──
+var discCount = DISCIPLINES.length;
+var discAngle = (Math.PI * 2) / discCount;
+var discRadius = 25;
+
+function getDiscIndex(discipline) {
+  return DISCIPLINES.indexOf(discipline);
+}
+
+function getDiscAngle(idx) {
+  return idx * discAngle - Math.PI / 2;
+}
+
+// ── THINKER POSITION WITHIN DISCIPLINE ──
+// Multiple thinkers may share a discipline; offset them within the slice
+var thinkersByDisc = {};
+Object.keys(THINKER_DISC).forEach(function(t) {
+  var d = THINKER_DISC[t];
+  if (!thinkersByDisc[d]) thinkersByDisc[d] = [];
+  thinkersByDisc[d].push(t);
+});
+
+function getThinkerAngleOffset(thinker) {
+  var disc = THINKER_DISC[thinker];
+  var group = thinkersByDisc[disc] || [thinker];
+  var idx = group.indexOf(thinker);
+  var count = group.length;
+  if (count <= 1) return 0;
+  // Spread within the slice
+  return (idx - (count - 1) / 2) * (discAngle * 0.5 / count);
+}
+
+// ── COUNT RESOURCE CONNECTIONS (pluripotency) ──
+var resourceConnections = {};
+PRS_TRIPLETS.forEach(function(t) {
+  var rKey = t.resource.toLowerCase().trim().slice(0, 60);
+  if (!resourceConnections[rKey]) resourceConnections[rKey] = [];
+  resourceConnections[rKey].push(t.id);
+});
+var resourceTraditions = {};
+PRS_TRIPLETS.forEach(function(t) {
+  var rKey = t.resource.toLowerCase().trim().slice(0, 60);
+  if (!resourceTraditions[rKey]) resourceTraditions[rKey] = {};
+  resourceTraditions[rKey][t.thinker] = true;
+});
+function convergenceCount(rKey) { return Object.keys(resourceTraditions[rKey] || {}).length; }
+
+function getResourceScale(triplet) {
+  var rKey = triplet.resource.toLowerCase().trim().slice(0, 60);
+  var count = (resourceConnections[rKey] || []).length;
+  return 1 + Math.min(count - 1, 4) * 0.4;
+}
+
+// ── THREE.JS SETUP ──
+function init() {
+  scene = new THREE.Scene();
+  scene.background = null;  // transparent: vis composites over the legend
+  scene.fog = new THREE.FogExp2(0x0a0a0f, 0.008);
+
+  var container = document.getElementById('canvas-container');
+  var cw = container.clientWidth;
+  var ch = container.clientHeight;
+  camera = new THREE.PerspectiveCamera(50, cw / ch, 0.1, 500);
+  updateCameraPosition();
+
+  // Try multiple renderer strategies
+  var rendererCreated = false;
+  var lastErr = '';
+  var attempts = [
+    { antialias: true, alpha: true },
+    { antialias: false, alpha: false, failIfMajorPerformanceCaveat: false },
+    { antialias: false, alpha: false, failIfMajorPerformanceCaveat: false, powerPreference: 'low-power' }
+  ];
+  for (var ai = 0; ai < attempts.length; ai++) {
+    try {
+      renderer = new THREE.WebGLRenderer(attempts[ai]);
+      rendererCreated = true;
+      break;
+    } catch(e) {
+      lastErr = e.message || String(e);
+    }
+  }
+  if (!rendererCreated) {
+    container.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#C45B5B;font-size:16px;text-align:center;padding:40px;"><div><h2 style="color:#FFD700;margin-bottom:12px;">WebGL Unavailable</h2><p>Chrome refused to create a 3D context.</p><p style="margin-top:12px;"><button onclick="location.reload()" style="background:#FFD700;color:#0a0a0f;border:none;padding:8px 20px;border-radius:6px;cursor:pointer;font-size:14px;font-weight:600;">Retry</button></p></div></div>';
+    return;
+  }
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(cw, ch);
+  container.appendChild(renderer.domElement);
+
+  raycaster = new THREE.Raycaster();
+  raycaster.params.Points = { threshold: 0.5 };
+  raycaster.params.Line = { threshold: 1.0 };
+  mouse = new THREE.Vector2();
+
+  // Lights
+  var ambient = new THREE.AmbientLight(0x404060, 0.6);
+  scene.add(ambient);
+  var dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
+  dirLight.position.set(20, 40, 30);
+  scene.add(dirLight);
+  var pointLight = new THREE.PointLight(0xC9A84C, 0.4, 100);
+  pointLight.position.set(0, zHeight, 0);
+  scene.add(pointLight);
+
+  buildDisciplineSlices();
+  buildPRSNodes();
+  buildThreads();
+  buildLegend();
+  var _ys = document.getElementById('prs-year-slider'); if (_ys) { _ys.min = minYear; _ys.max = maxYear; _ys.value = minYear; }
+  var _b = document.getElementById('prs-brightness'); if (_b) setBrightness(_b.value);
+  var _lg = document.getElementById('legend'); var _lb = document.getElementById('prs-legend-help-btn');
+  if (_lg && _lb) { _lb.style.left = (_lg.offsetLeft + 4) + 'px'; _lb.style.top = (_lg.offsetTop - 22) + 'px'; _lb.style.display = 'block'; }
+  buildCrossConnectionLines();
+  buildCoilLines();
+  buildGenerativeChains();
+  updatePrsCount();   // else the readout sits on its placeholder until the first filter toggle
+
+  // Events
+  renderer.domElement.addEventListener('mousedown', onMouseDown);
+  renderer.domElement.addEventListener('mousemove', onMouseMove);
+  renderer.domElement.addEventListener('mouseup', onMouseUp);
+  renderer.domElement.addEventListener('wheel', onWheel);
+  renderer.domElement.addEventListener('dblclick', onDoubleClick);
+  window.addEventListener('resize', onResize);
+
+  animate();
+}
+
+// ── DISCIPLINE SLICES (floor pie) ──
+function buildDisciplineSlices() {
+  DISCIPLINES.forEach(function(disc, i) {
+    var startAngle = getDiscAngle(i) - discAngle / 2;
+    var endAngle = getDiscAngle(i) + discAngle / 2;
+
+    // Create a filled wedge on the floor
+    var shape = new THREE.Shape();
+    shape.moveTo(0, 0);
+    var segments = 24;
+    for (var s = 0; s <= segments; s++) {
+      var a = startAngle + (endAngle - startAngle) * (s / segments);
+      shape.lineTo(Math.cos(a) * discRadius, Math.sin(a) * discRadius);
+    }
+    shape.lineTo(0, 0);
+
+    var geo = new THREE.ShapeGeometry(shape);
+    var mat = new THREE.MeshBasicMaterial({
+      color: new THREE.Color(0x1a1a2e),
+      transparent: true,
+      opacity: 0.35,
+      side: THREE.DoubleSide,
+    });
+    var mesh = new THREE.Mesh(geo, mat);
+    mesh.rotation.x = -Math.PI / 2;
+    mesh.position.y = 0;
+    mesh.userData = { type: 'discipline', discipline: disc, index: i };
+    scene.add(mesh);
+    discMeshes.push(mesh);
+
+    // Divider lines between slices
+    var lineGeo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(0, 0.05, 0),
+      new THREE.Vector3(Math.cos(startAngle) * discRadius, 0.05, -Math.sin(startAngle) * discRadius),
+    ]);
+    var lineMat = new THREE.LineBasicMaterial({ color: 0x2a2a3e, transparent: true, opacity: 0.6 });
+    var line = new THREE.Line(lineGeo, lineMat);
+    scene.add(line);
+    discMeshes.push(line);
+  });
+}
+
+// ── PRS NODES ──
+function buildPRSNodes() {
+  // ── DETERMINISTIC FAN (de-overlap) ──
+  // Position is fixed by (thinker -> angle, year -> height), so every triplet sharing a
+  // (thinker, year) lands on the same point. Spread each such group over a small grid
+  // within the thinker's wedge: columns fan the angle, rows fan the radius. Index is
+  // PRS_TRIPLETS order -> stable/reproducible across regens (no randomness).
+  var prsFan = {};
+  (function() {
+    var groups = {};
+    PRS_TRIPLETS.forEach(function(t) {
+      var yr = (t.date || '').slice(0, 4) || String(t.pub_year || '');
+      var k = t.thinker + '|' + yr;
+      (groups[k] = groups[k] || []).push(t);
+    });
+    Object.keys(groups).forEach(function(k) {
+      var arr = groups[k], n = arr.length;
+      var cols = Math.max(1, Math.ceil(Math.sqrt(n)));
+      var rows = Math.max(1, Math.ceil(n / cols));
+      arr.forEach(function(t, i) {
+        var col = i % cols, row = Math.floor(i / cols);
+        prsFan[t.id] = {
+          colFrac: cols > 1 ? (col / (cols - 1) - 0.5) : 0,
+          rowFrac: rows > 1 ? (row / (rows - 1) - 0.5) : 0
+        };
+      });
+    });
+  })();
+
+  PRS_TRIPLETS.forEach(function(triplet) {
+    var disc = THINKER_DISC[triplet.thinker] || 'Systems Integration';
+    var dIdx = getDiscIndex(disc);
+    if (dIdx < 0) dIdx = 0;
+    var baseAngle = getDiscAngle(dIdx);
+    var thinkerOffset = getThinkerAngleOffset(triplet.thinker);
+    var angle = baseAngle + thinkerOffset;
+    // apply deterministic fan within the thinker's wedge
+    var prsGrp = thinkersByDisc[disc] || [triplet.thinker];
+    var prsArc = Math.min((discAngle * 0.5 / prsGrp.length) * 0.85, 0.6);
+    var prsF = prsFan[triplet.id] || { colFrac: 0, rowFrac: 0 };
+    angle += prsF.colFrac * prsArc;
+    var rMul = 1 + prsF.rowFrac * 0.35;
+
+    var z = dateToZ(triplet.date);
+    var color = new THREE.Color(THINKER_COLORS[triplet.thinker] || '#888888');
+
+    // Place P, R, S as three connected nodes
+    var prsTypes = ['problem', 'resource', 'solution'];
+    var prsTexts = [triplet.problem, triplet.resource, triplet.solution];
+    var radii = [0.35, 0.45 * getResourceScale(triplet), 0.35];
+    var rOffsets = [0.6, 0.75, 0.9]; // radial position fraction within the slice
+
+    var nodeGroup = [];
+
+    prsTypes.forEach(function(pType, pi) {
+      var r = discRadius * rOffsets[pi] * rMul;
+      var x = Math.cos(angle) * r;
+      var yPos = z + pi * 1.2; // stack slightly along z (vertical)
+      var zPos = -Math.sin(angle) * r;
+
+      var nodeColor = color.clone();
+      if (pType === 'problem') nodeColor.offsetHSL(0, 0, -0.1);
+      if (pType === 'solution') nodeColor.offsetHSL(0, 0, 0.1);
+
+      var geo;
+      if (pType === 'problem') {
+        // Octahedron for problems
+        geo = new THREE.OctahedronGeometry(radii[pi], 0);
+      } else if (pType === 'resource') {
+        // Sphere for resources (scaled by pluripotency)
+        geo = new THREE.SphereGeometry(radii[pi], 12, 8);
+      } else {
+        // Dodecahedron for solutions
+        geo = new THREE.DodecahedronGeometry(radii[pi], 0);
+      }
+
+      var mat = new THREE.MeshPhongMaterial({
+        color: nodeColor,
+        emissive: nodeColor.clone().multiplyScalar(0.2),
+        shininess: 40,
+        transparent: true,
+        opacity: 0.9,
+      });
+      var mesh = new THREE.Mesh(geo, mat);
+      mesh.position.set(x, yPos, zPos);
+      mesh.userData = {
+        type: 'prs',
+        prsType: pType,
+        triplet: triplet,
+        text: prsTexts[pi],
+        thinker: triplet.thinker,
+      };
+      if (pType === 'resource') {
+        var rk = triplet.resource.toLowerCase().trim().slice(0, 60);
+        var ct = convergenceCount(rk);
+        if (ct >= 2) {
+          mesh.userData.convergence = ct;
+          mat.emissive = new THREE.Color(0xC9A84C).multiplyScalar(0.35 + 0.12 * Math.min(ct, 4));
+          mesh.scale.multiplyScalar(1.25);
+        }
+      }
+      scene.add(mesh);
+      meshes.push(mesh);
+      nodeGroup.push(mesh);
+    });
+
+    // Connect P → R → S with thin lines
+    if (nodeGroup.length === 3) {
+      for (var li = 0; li < 2; li++) {
+        var pts = [nodeGroup[li].position.clone(), nodeGroup[li + 1].position.clone()];
+        var lGeo = new THREE.BufferGeometry().setFromPoints(pts);
+        var lMat = new THREE.LineBasicMaterial({
+          color: color,
+          transparent: true,
+          opacity: 0.5,
+        });
+        var line = new THREE.Line(lGeo, lMat);
+        line.userData = {
+          type: 'thread',
+          thinker: triplet.thinker,
+          mesh1: nodeGroup[li],
+          mesh2: nodeGroup[li + 1]
+        };
+        scene.add(line);
+        threadLines.push(line);
+      }
+    }
+  });
+}
+
+// ── CROSS-TRADITION CONNECTION LINES ──
+function buildCrossConnectionLines() {
+  // Find triplets that share cross-connections via findings
+  // Group triplets by thinker for cross-discipline arcs
+  var thinkerTriplets = {};
+  PRS_TRIPLETS.forEach(function(t) {
+    if (!thinkerTriplets[t.thinker]) thinkerTriplets[t.thinker] = [];
+    thinkerTriplets[t.thinker].push(t);
+  });
+
+  // Draw arcs between thinkers mentioned in the same finding
+  // One arc per thinker PAIR, not per finding: the endpoints are chosen from the
+  // thinker (first resource mesh of each), not from the finding, so N findings over
+  // the same pair drew N arcs on identical endpoints. Keep the first finding as the
+  // arc's payload and record how many findings it stands for.
+  var pairSeen = {};
+  FINDINGS.forEach(function(finding) {
+    var progs = finding.programs.split(',').map(function(p) {
+      return p.trim().replace(/ Agent$/, '').replace(/ \(.*$/, '').toLowerCase();
+    });
+    // Normalize to our thinker keys
+    var thinkers = progs.filter(function(p) { return THINKER_COLORS[p]; });
+    // Unique pairs
+    for (var i = 0; i < thinkers.length; i++) {
+      for (var j = i + 1; j < thinkers.length; j++) {
+        var t1 = thinkerTriplets[thinkers[i]];
+        var t2 = thinkerTriplets[thinkers[j]];
+        if (!t1 || !t2 || !t1.length || !t2.length) continue;
+        var pairKey = [thinkers[i], thinkers[j]].sort().join('|');
+        if (pairSeen[pairKey]) { pairSeen[pairKey].userData.findingCount++; continue; }
+
+        // Connect the resource nodes of the first triplet of each
+        var r1Idx = meshes.findIndex(function(m) {
+          return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.thinker === thinkers[i];
+        });
+        var r2Idx = meshes.findIndex(function(m) {
+          return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.thinker === thinkers[j];
+        });
+
+        if (r1Idx >= 0 && r2Idx >= 0) {
+          var p1 = meshes[r1Idx].position.clone();
+          var p2 = meshes[r2Idx].position.clone();
+          // Create curved arc
+          var mid = p1.clone().add(p2).multiplyScalar(0.5);
+          mid.y += 3; // arc upward
+          var curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+          var points = curve.getPoints(20);
+          var arcGeo = new THREE.BufferGeometry().setFromPoints(points);
+          var arcMat = new THREE.LineBasicMaterial({
+            color: 0xC9A84C,
+            transparent: true,
+            opacity: 0.15,
+          });
+          var arc = new THREE.Line(arcGeo, arcMat);
+          arc.userData = {
+            type: 'cross',
+            finding: finding,
+            findingCount: 1,
+            thinker1: thinkers[i],
+            thinker2: thinkers[j],
+            mesh1: meshes[r1Idx],
+            mesh2: meshes[r2Idx]
+          };
+          scene.add(arc);
+          threadLines.push(arc);
+          pairSeen[pairKey] = arc;
+        }
+      }
+    }
+  });
+}
+
+
+// == SYNERGISTIC COIL LINES (structural-bridge cross-connections) ==
+function buildCoilLines() {
+  var thinkerResourceIdx = {};
+  meshes.forEach(function(m, i) {
+    if (m.userData.type === 'prs' && m.userData.prsType === 'resource'
+        && thinkerResourceIdx[m.userData.thinker] === undefined) {
+      thinkerResourceIdx[m.userData.thinker] = i;
+    }
+  });
+  COILS.forEach(function(coil) {
+    var cy = yearToZ(coil.year || maxYear);  // coil sits at its discovery-year altitude
+    var progs = (coil.programs || '').split(',').map(function(p) {
+      return p.trim().replace(/ Agent$/, '').replace(/ \(.*$/, '').toLowerCase();
+    });
+    var thinkers = progs.filter(function(p) { return THINKER_COLORS[p]; });
+    for (var i = 0; i < thinkers.length; i++) {
+      for (var j = i + 1; j < thinkers.length; j++) {
+        var a = thinkerResourceIdx[thinkers[i]];
+        var b = thinkerResourceIdx[thinkers[j]];
+        if (a === undefined || b === undefined) continue;
+        var pa = meshes[a].position, pb = meshes[b].position;
+        var p1 = new THREE.Vector3(pa.x, cy, pa.z);
+        var p2 = new THREE.Vector3(pb.x, cy, pb.z);
+        var mid = p1.clone().add(p2).multiplyScalar(0.5);
+        mid.y += 4;  // gentle arch within the discovery-year band
+        var curve = new THREE.QuadraticBezierCurve3(p1, mid, p2);
+        var arcGeo = new THREE.BufferGeometry().setFromPoints(curve.getPoints(24));
+        var arcMat = new THREE.LineBasicMaterial({
+          color: 0x3FE0D0, transparent: true, opacity: 0.55
+        });
+        var arc = new THREE.Line(arcGeo, arcMat);
+        arc.userData = {
+          type: 'coil', coil: coil,
+          thinker1: thinkers[i], thinker2: thinkers[j],
+          mesh1: meshes[a], mesh2: meshes[b]
+        };
+        scene.add(arc);
+        coilLines.push(arc);
+      }
+    }
+  });
+}
+
+function prsToggleCoils(checked) {
+  showCoils = checked;
+  applyPRSFilters();
+}
+
+// == DIRECTED GENERATIVE COILS (a solution feeding another tradition's resource) ==
+function buildGenerativeChains() {
+  var solNode = {}, resNode = {};
+  meshes.forEach(function(m) {
+    if (m.userData.type === 'prs' && m.userData.triplet) {
+      if (m.userData.prsType === 'solution') solNode[m.userData.triplet.id] = m;
+      if (m.userData.prsType === 'resource') resNode[m.userData.triplet.id] = m;
+    }
+  });
+  GENERATIVE.forEach(function(gc) {
+    var s = solNode[gc.source], r = resNode[gc.target];
+    if (!s || !r) return;
+    var geo = new THREE.BufferGeometry().setFromPoints([s.position.clone(), r.position.clone()]);
+    var c1 = new THREE.Color(0x6A3A12), c2 = new THREE.Color(0xF09A3C);  // dim source -> bright target = direction
+    geo.setAttribute('color', new THREE.Float32BufferAttribute([c1.r, c1.g, c1.b, c2.r, c2.g, c2.b], 3));
+    var mat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.5 });
+    var line = new THREE.Line(geo, mat);
+    line.userData = { type: 'generative', chain: gc, mesh1: s, mesh2: r };
+    scene.add(line);
+    generativeLines.push(line);
+  });
+}
+
+function prsToggleGenerative(checked) {
+  showGenerative = checked;
+  applyPRSFilters();
+}
+
+// == BRIGHTNESS + TIME SLIDER (control schema mirrored from the Sociogram) ==
+function setBrightness(v) {
+  var cc = document.getElementById('canvas-container');
+  if (cc) cc.style.filter = 'brightness(' + v + ')';
+}
+
+function setYearThreshold(v) {
+  v = parseInt(v, 10);
+  yearThreshold = v;
+  var lbl = document.getElementById('prs-year-slider-label');
+  if (lbl) lbl.textContent = (v <= minYear) ? 'all years' : ('≥ ' + v);
+  applyPRSFilters();
+}
+
+function prsTogglePop(id, ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById(id);
+  if (!pop) return;
+  var open = pop.style.display === 'block';
+  var all = document.querySelectorAll('.prs-pop');
+  for (var i = 0; i < all.length; i++) all[i].style.display = 'none';
+  pop.style.display = open ? 'none' : 'block';
+}
+
+// -- THREADS VISIBILITY --
+function buildThreads() {
+  // Already built in buildPRSNodes and buildCrossConnectionLines
+}
+
+// ── TRADITION FILTERS (left panel checkboxes) ──
+var prsFilterState = {}; // thinker -> boolean
+
+function buildTraditionFilters() {
+  var container = document.getElementById('prs-tradition-filters');
+  var html = '';
+  var sortedThinkers = Object.keys(THINKER_DISPLAY).sort(function(a, b) {
+    return THINKER_DISPLAY[a].localeCompare(THINKER_DISPLAY[b]);
+  });
+  sortedThinkers.forEach(function(t) {
+    prsFilterState[t] = true;
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="prs-chk-' + t + '" checked onchange="prsToggleThinker(\'' + t + '\', this.checked)">';
+    html += '<span class="prs-filter-dot" style="background:' + THINKER_COLORS[t] + '"></span>';
+    html += '<span class="prs-filter-label">' + THINKER_DISPLAY[t] + '</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleThinker(thinker, checked) {
+  prsFilterState[thinker] = checked;
+  applyPRSFilters();
+  // Update All checkbox
+  var allChecked = Object.keys(prsFilterState).every(function(t) { return prsFilterState[t]; });
+  document.getElementById('prs-chk-all').checked = allChecked;
+}
+
+function prsToggleAll(checked) {
+  Object.keys(prsFilterState).forEach(function(t) {
+    prsFilterState[t] = checked;
+    var chk = document.getElementById('prs-chk-' + t);
+    if (chk) chk.checked = checked;
+  });
+  applyPRSFilters();
+}
+
+// ── Centralised node-visibility predicate ──
+// Three filter axes — Traditions × Disciplines × Years — compose with AND.
+// Edges are NOT considered here; this predicate is for nodes only.
+function prsNodeVisible(mesh) {
+  if (!mesh || !mesh.userData) return true;
+  var thinker = mesh.userData.thinker;
+  if (thinker && prsFilterState[thinker] === false) return false;
+  if (thinker) {
+    var disc = THINKER_DISC[thinker];
+    if (disc && prsDiscState[disc] === false) return false;
+  }
+  var triplet = mesh.userData.triplet;
+  if (triplet && triplet.pub_year) {
+    var dec = Math.floor(triplet.pub_year / 10) * 10;
+    if (prsYearState[dec] === false) return false;
+  }
+  if (yearThreshold && triplet && triplet.pub_year && triplet.pub_year < yearThreshold) return false;
+  return true;
+}
+
+function applyPRSFilters() {
+  // Pass 1 — nodes: composed AND of tradition × discipline × year.
+  meshes.forEach(function(m) {
+    if (m.userData && m.userData.type === 'prs') {
+      m.visible = prsNodeVisible(m);
+    }
+  });
+  // Pass 2 — edges: never connect to a hidden node. Edges flag gates the whole class.
+  threadLines.forEach(function(l) {
+    if (!showThreads) { l.visible = false; return; }
+    var m1 = l.userData && l.userData.mesh1;
+    var m2 = l.userData && l.userData.mesh2;
+    // Both endpoints must exist and be visible after Pass 1.
+    l.visible = !!(m1 && m2 && m1.visible && m2.visible);
+  });
+
+  // Pass 3 - coils: their own gate; never connect to a hidden node.
+  coilLines.forEach(function(l) {
+    if (!showCoils) { l.visible = false; return; }
+    var cm1 = l.userData && l.userData.mesh1;
+    var cm2 = l.userData && l.userData.mesh2;
+    l.visible = !!(cm1 && cm2 && cm1.visible && cm2.visible);
+  });
+  // Pass 4 - generative chains: own gate; endpoints must be visible.
+  generativeLines.forEach(function(l) {
+    if (!showGenerative) { l.visible = false; return; }
+    var gm1 = l.userData && l.userData.mesh1;
+    var gm2 = l.userData && l.userData.mesh2;
+    l.visible = !!(gm1 && gm2 && gm1.visible && gm2.visible);
+  });
+  updatePrsCount();
+}
+
+function updatePrsCount() {
+  // Distinct triplets currently visible (each triplet = 3 P/R/S meshes sharing one id).
+  var seen = {}, n = 0;
+  meshes.forEach(function(m) {
+    if (m.userData && m.userData.type === 'prs' && m.visible) {
+      var id = m.userData.triplet.id;
+      if (!seen[id]) { seen[id] = 1; n++; }
+    }
+  });
+  var el = document.getElementById('prs-count');
+  if (el) el.textContent = 'Showing ' + n + ' / ' + PRS_TRIPLETS.length + ' triplets';
+}
+
+// ── DISCIPLINES (per-discipline filter section) ──
+function prsBuildDisciplineFilters() {
+  var container = document.getElementById('prs-discipline-filters');
+  if (!container) return;
+  var html = '';
+  DISCIPLINES.forEach(function(disc) {
+    prsDiscState[disc] = true;
+    var safeId = 'prs-chk-disc-' + disc.replace(/\s+/g, '-').toLowerCase();
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="' + safeId + '" checked onchange="prsToggleDisc(\'' + disc.replace(/'/g, "\\'") + '\', this.checked)">';
+    html += '<span class="prs-filter-label">' + disc + '</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleDisc(disc, checked) {
+  prsDiscState[disc] = checked;
+  applyDiscFilters();
+  applyPRSFilters();   // Disciplines is a data cut: re-evaluate nodes & edges
+  // Sync section master
+  var allChecked = DISCIPLINES.every(function(d) { return prsDiscState[d]; });
+  document.getElementById('prs-chk-all-discs').checked = allChecked;
+}
+
+function prsToggleAllDiscs(checked) {
+  DISCIPLINES.forEach(function(d) {
+    prsDiscState[d] = checked;
+    var safeId = 'prs-chk-disc-' + d.replace(/\s+/g, '-').toLowerCase();
+    var cb = document.getElementById(safeId);
+    if (cb) cb.checked = checked;
+  });
+  applyDiscFilters();
+  applyPRSFilters();   // Disciplines is a data cut: re-evaluate nodes & edges
+}
+
+function applyDiscFilters() {
+  // Discipline wedges — the structural framework. Independent of Tradition/Year cuts:
+  // a wedge shows iff its discipline checkbox is on.
+  discMeshes.forEach(function(m) {
+    if (m.userData && m.userData.discipline) {
+      m.visible = prsDiscState[m.userData.discipline] !== false;
+    }
+  });
+  // Discipline labels follow the same per-discipline state (gated in updateDiscLabels).
+}
+
+// ── YEARS (per-decade filter section) ──
+function prsBuildYearFilters() {
+  var container = document.getElementById('prs-year-filters');
+  if (!container) return;
+  var html = '';
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = true;
+    html += '<div class="prs-filter-item">';
+    html += '<input type="checkbox" id="prs-chk-year-' + yr + '" checked onchange="prsToggleYear(' + yr + ', this.checked)">';
+    html += '<span class="prs-filter-label">' + yr + 's</span>';
+    html += '</div>';
+  });
+  container.innerHTML = html;
+}
+
+function prsToggleYear(yr, checked) {
+  prsYearState[yr] = checked;
+  applyYearFilters();
+  applyPRSFilters();   // Years is a data cut: re-evaluate nodes & edges
+  var allChecked = prsDecades.every(function(d) { return prsYearState[d]; });
+  document.getElementById('prs-chk-all-years').checked = allChecked;
+}
+
+function prsToggleAllYears(checked) {
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = checked;
+    var cb = document.getElementById('prs-chk-year-' + yr);
+    if (cb) cb.checked = checked;
+  });
+  applyYearFilters();
+  applyPRSFilters();   // Years is a data cut: re-evaluate nodes & edges
+}
+
+function applyYearFilters() {
+  decadeRings.forEach(function(d) {
+    var on = prsYearState[d.decade] !== false;
+    if (d.ring) d.ring.visible = on;
+    if (d.tick) d.tick.visible = on;
+  });
+  // Year labels are gated in updateYearLabels at draw time.
+}
+
+// ── EDGES (left-panel checkbox) ──
+// Edges are a function of visible nodes — no edge to a hidden node is ever drawn.
+// This handler just flips the Edges flag and re-runs the centralised filter pass.
+function prsToggleEdges(checked) {
+  showThreads = checked;
+  applyPRSFilters();
+}
+
+// ── LEGEND (node shapes only now, thinker list moved to left panel) ──
+function buildLegend() {
+  var legendEl = document.getElementById('legend');
+  var html = '<h4>Node Shapes</h4>';
+  html += '<div class="legend-item"><span style="color:#E87070;font-size:14px">&#9670;</span> Problem</div>';
+  html += '<div class="legend-item"><span style="color:#7AB0CF;font-size:14px">&#9679;</span> Resource</div>';
+  html += '<div class="legend-item"><span style="color:#5DC0AB;font-size:14px">&#11206;</span> Solution</div>';
+  html += '<h4 style="margin-top:10px">Connections</h4>';
+  html += '<div class="legend-item"><span style="color:#3FE0D0;font-size:15px">&#10026;</span> Synergistic coil (' + (typeof COILS !== 'undefined' ? COILS.length : 0) + ')</div>';
+  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#8722;</span> Cross-tradition link</div>';
+  var nConv = 0; for (var k in resourceTraditions) { if (Object.keys(resourceTraditions[k]).length >= 2) nConv++; }
+  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#9673;</span> Convergence hub &#8212; resource shared across &#8805;2 traditions (' + nConv + ')</div>';
+  html += '<div class="legend-item"><span style="color:#F09A3C;font-size:15px">&#8594;</span> Generative coil &#8212; a solution feeding a downstream resource (' + (typeof GENERATIVE !== 'undefined' ? GENERATIVE.length : 0) + ')</div>';
+  legendEl.innerHTML = html;
+}
+
+// ── SEARCH ──
+var prsSearchTimer = null;
+function prsSearch(query) {
+  var resultsEl = document.getElementById('prs-search-results');
+  var clearBtn = document.getElementById('prs-search-clear');
+  if (!query || query.length < 2) {
+    resultsEl.innerHTML = '';
+    clearBtn.style.display = 'none';
+    // Reset all node opacity
+    meshes.forEach(function(m) {
+      if (m.userData.type === 'prs' && m.material) {
+        m.material.opacity = 0.9;
+        m.material.emissive.copy(new THREE.Color(THINKER_COLORS[m.userData.thinker] || '#888').multiplyScalar(0.2));
+      }
+    });
+    return;
+  }
+  clearBtn.style.display = 'inline-block';
+
+  // Check for API key — if available and query is 4+ chars, do semantic search
+  var apiKey = '';
+  try { apiKey = localStorage.getItem('tts_api_key') || ''; } catch(e) {}
+  if (apiKey && query.length >= 4) {
+    // Debounce semantic search
+    if (prsSearchTimer) clearTimeout(prsSearchTimer);
+    prsSearchTimer = setTimeout(function() { prsSemanticSearch(query, apiKey); }, 600);
+    return;
+  }
+
+  // Fallback: text matching
+  prsTextSearch(query);
+}
+
+function prsTextSearch(query) {
+  var q = query.toLowerCase();
+  var hits = [];
+  PRS_TRIPLETS.forEach(function(t) {
+    var searchable = (t.label + ' ' + t.problem + ' ' + t.resource + ' ' + t.solution).toLowerCase();
+    if (searchable.indexOf(q) >= 0) {
+      hits.push(t);
+    }
+  });
+  // Also search cross-connections and findings
+  CROSS_CONNECTIONS.forEach(function(c) {
+    var searchable = (c.question + ' ' + c.programs + ' ' + c.nature + ' ' + (c.notes || '')).toLowerCase();
+    if (searchable.indexOf(q) >= 0) {
+      // Find related PRS triplets via program names
+      var progs = c.programs.toLowerCase();
+      PRS_TRIPLETS.forEach(function(t) {
+        if (progs.indexOf(t.thinker) >= 0 && hits.indexOf(t) < 0) hits.push(t);
+      });
+    }
+  });
+  prsShowSearchResults(hits, query);
+}
+
+function prsSemanticSearch(query, apiKey) {
+  var resultsEl = document.getElementById('prs-search-results');
+  resultsEl.innerHTML = '<div style="color:#888;font-style:italic">Searching...</div>';
+
+  // Build compact PRS summary for the LLM
+  var prsText = PRS_TRIPLETS.map(function(t) {
+    return t.id + ': ' + t.label + ' | P: ' + t.problem.slice(0, 120) + ' | R: ' + t.resource.slice(0, 120) + ' | S: ' + t.solution.slice(0, 120);
+  }).join('\n');
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://api.openai.com/v1/chat/completions', true);
+  xhr.setRequestHeader('Authorization', 'Bearer ' + apiKey);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.timeout = 15000;
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      try {
+        var resp = JSON.parse(xhr.responseText);
+        var content = resp.choices[0].message.content;
+        // Parse out PRS IDs from the response
+        var matchedIds = content.match(/[a-z]+-PRS-\d+/gi) || [];
+        var hits = [];
+        matchedIds.forEach(function(id) {
+          var t = PRS_TRIPLETS.find(function(p) { return p.id.toLowerCase() === id.toLowerCase(); });
+          if (t && hits.indexOf(t) < 0) hits.push(t);
+        });
+        if (hits.length === 0) {
+          // Fallback to text search
+          prsTextSearch(query);
+        } else {
+          prsShowSearchResults(hits, query);
+        }
+      } catch(e) {
+        prsTextSearch(query);
+      }
+    } else {
+      prsTextSearch(query);
+    }
+  };
+  xhr.onerror = function() { prsTextSearch(query); };
+  xhr.ontimeout = function() { prsTextSearch(query); };
+  xhr.send(JSON.stringify({
+    model: 'gpt-4o-mini',
+    messages: [
+      { role: 'system', content: 'You are a search assistant. Given PRS triplets (Problem-Resource-Solution) from research traditions, return the IDs of triplets most relevant to the user query. Return ONLY a comma-separated list of IDs (e.g. levin-PRS-01, friston-PRS-03). No explanation.' },
+      { role: 'user', content: 'Query: ' + query + '\n\nPRS Triplets:\n' + prsText }
+    ],
+    max_tokens: 200,
+    temperature: 0.1
+  }));
+}
+
+function prsShowSearchResults(hits, query) {
+  var resultsEl = document.getElementById('prs-search-results');
+
+  // Dim non-matching nodes, highlight matching
+  var hitIds = {};
+  hits.forEach(function(h) { hitIds[h.id] = true; });
+  meshes.forEach(function(m) {
+    if (m.userData.type === 'prs') {
+      var isHit = hitIds[m.userData.triplet.id];
+      m.material.opacity = isHit ? 1.0 : 0.15;
+      if (isHit) {
+        m.material.emissive.setHex(0x555555);
+      } else {
+        m.material.emissive.copy(new THREE.Color(THINKER_COLORS[m.userData.thinker] || '#888').multiplyScalar(0.1));
+      }
+    }
+  });
+
+  var html = '<div style="color:#888;margin-bottom:4px">' + hits.length + ' result' + (hits.length !== 1 ? 's' : '') + '</div>';
+  hits.slice(0, 15).forEach(function(h) {
+    var tName = THINKER_DISPLAY[h.thinker] || h.thinker;
+    var tColor = THINKER_COLORS[h.thinker] || '#888';
+    html += '<div class="prs-search-hit" onclick="prsSearchClickResult(\'' + h.id + '\')">';
+    html += '<span class="hit-thinker" style="color:' + tColor + '">' + tName + '</span> ';
+    html += '<span>' + h.label + '</span>';
+    html += '</div>';
+  });
+  if (hits.length > 15) {
+    html += '<div style="color:#666;font-size:10px;margin-top:4px">...and ' + (hits.length - 15) + ' more</div>';
+  }
+  resultsEl.innerHTML = html;
+}
+
+function prsSearchClickResult(tripletId) {
+  // Find the resource node for this triplet and click it
+  var target = meshes.find(function(m) {
+    return m.userData.type === 'prs' && m.userData.prsType === 'resource' && m.userData.triplet && m.userData.triplet.id === tripletId;
+  });
+  if (target) {
+    showNodeInfo(target);
+    // Center camera on it
+    cameraTarget.copy(target.position);
+    cameraRadius = 30;
+    updateCameraPosition();
+  }
+}
+
+function prsClearSearch() {
+  document.getElementById('prs-search-box').value = '';
+  prsSearch('');
+}
+
+// "How filters work" popover. Lightweight (not modal): click ? to open, click ?
+// or × or anywhere outside to close. Description below must remain accurate to
+// applyPRSFilters / prsNodeVisible / prsToggleEdges semantics.
+function prsToggleHelp(ev) {
+  if (ev) ev.stopPropagation();
+  var pop = document.getElementById('prs-help-popover');
+  var btn = document.getElementById('prs-help-btn');
+  if (!pop) return;
+  var isOpen = pop.style.display === 'block';
+  pop.style.display = isOpen ? 'none' : 'block';
+  if (btn) btn.classList.toggle('active', !isOpen);
+}
+// Click-outside-to-close. Registered once at script load.
+document.addEventListener('click', function(ev) {
+  var pop = document.getElementById('prs-help-popover');
+  var btn = document.getElementById('prs-help-btn');
+  if (!pop || pop.style.display !== 'block') return;
+  if (pop.contains(ev.target)) return;
+  if (btn && btn.contains(ev.target)) return;
+  pop.style.display = 'none';
+  if (btn) btn.classList.remove('active');
+});
+
+// Reset the entire visualization — every cut on every axis returns to default.
+// This is distinct from prsClearSearch, which only clears the search-box cut.
+function prsResetAll() {
+  // Traditions: every thinker back to checked
+  Object.keys(prsFilterState).forEach(function(t) {
+    prsFilterState[t] = true;
+    var cb = document.getElementById('prs-chk-' + t);
+    if (cb) cb.checked = true;
+  });
+  var allMaster = document.getElementById('prs-chk-all');
+  if (allMaster) allMaster.checked = true;
+  // Disciplines: every discipline back to checked
+  DISCIPLINES.forEach(function(d) {
+    prsDiscState[d] = true;
+    var safeId = 'prs-chk-disc-' + d.replace(/\s+/g, '-').toLowerCase();
+    var cb = document.getElementById(safeId);
+    if (cb) cb.checked = true;
+  });
+  var discMaster = document.getElementById('prs-chk-all-discs');
+  if (discMaster) discMaster.checked = true;
+  // Years: every decade back to checked
+  prsDecades.forEach(function(yr) {
+    prsYearState[yr] = true;
+    var cb = document.getElementById('prs-chk-year-' + yr);
+    if (cb) cb.checked = true;
+  });
+  var yearMaster = document.getElementById('prs-chk-all-years');
+  if (yearMaster) yearMaster.checked = true;
+  // Edges: back on
+  showThreads = true;
+  var edgesCb = document.getElementById('prs-chk-edges');
+  if (edgesCb) edgesCb.checked = true;
+  // Search: clear
+  prsClearSearch();
+  // Re-apply structure + node/edge cuts in the right order
+  applyDiscFilters();
+  applyYearFilters();
+  applyPRSFilters();
+}
+
+// ── CAMERA ──
+function updateCameraPosition() {
+  var x = cameraRadius * Math.sin(cameraPhi) * Math.cos(cameraTheta);
+  var y = cameraRadius * Math.cos(cameraPhi);
+  var z = cameraRadius * Math.sin(cameraPhi) * Math.sin(cameraTheta);
+  camera.position.set(
+    cameraTarget.x + x,
+    cameraTarget.y + y,
+    cameraTarget.z + z
+  );
+  camera.lookAt(cameraTarget);
+}
+
+function resetCamera() {
+  cameraTheta = Math.PI * 0.25;
+  cameraPhi = Math.PI * 0.35;
+  cameraRadius = 50;
+  cameraTarget.set(0, zHeight / 2, 0);
+  updateCameraPosition();
+}
+
+// ── EVENTS ──
+function onMouseDown(e) {
+  isMouseDown = true;
+  mouseDownPos = { x: e.clientX, y: e.clientY };
+  lastMouse = { x: e.clientX, y: e.clientY };
+}
+
+function onMouseMove(e) {
+  if (isMouseDown) {
+    var dx = e.clientX - lastMouse.x;
+    var dy = e.clientY - lastMouse.y;
+    cameraTheta -= dx * 0.005;
+    cameraPhi = Math.max(0.1, Math.min(Math.PI * 0.85, cameraPhi - dy * 0.005));
+    updateCameraPosition();
+    lastMouse = { x: e.clientX, y: e.clientY };
+  }
+
+  // Hover detection
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+
+  var intersects = raycaster.intersectObjects(meshes);
+  var tooltip = document.getElementById('tooltip');
+  renderer.domElement.style.cursor = 'default';
+
+  if (intersects.length > 0) {
+    var hit = intersects[0].object;
+    if (hit.userData.type === 'prs') {
+      renderer.domElement.style.cursor = 'pointer';
+      hoveredMesh = hit;
+
+      var typeLabel = hit.userData.prsType.charAt(0).toUpperCase() + hit.userData.prsType.slice(1);
+      var tName = THINKER_DISPLAY[hit.userData.thinker] || hit.userData.thinker;
+      tooltip.innerHTML = '<strong>' + tName + '</strong> &mdash; ' + typeLabel +
+        '<br><span style="color:#888">' + (hit.userData.text || '').slice(0, 120) + '</span>';
+      tooltip.style.display = 'block';
+      tooltip.style.left = (e.clientX + 14) + 'px';
+      tooltip.style.top = (e.clientY + 14) + 'px';
+
+      // Highlight
+      if (selectedMesh !== hit) {
+        hit.material.emissive.setHex(0x444444);
+      }
+    }
+  } else {
+    if (hoveredMesh && hoveredMesh !== selectedMesh) {
+      var origColor = new THREE.Color(THINKER_COLORS[hoveredMesh.userData.thinker] || '#888888');
+      hoveredMesh.material.emissive.copy(origColor.multiplyScalar(0.2));
+    }
+    hoveredMesh = null;
+    tooltip.style.display = 'none';
+  }
+}
+
+function onMouseUp(e) {
+  isMouseDown = false;
+  var dist = Math.sqrt(Math.pow(e.clientX - mouseDownPos.x, 2) + Math.pow(e.clientY - mouseDownPos.y, 2));
+  if (dist < 5) {
+    // It's a click, not a drag
+    onClick(e);
+  }
+}
+
+function onClick(e) {
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  prsClosePops();
+  // Nodes take priority; fall through to edges (coils, generative, threads/cross).
+  var nodeHits = raycaster.intersectObjects(meshes);
+  if (nodeHits.length > 0 && nodeHits[0].object.userData.type === 'prs') {
+    if (selectedMesh === nodeHits[0].object) { closePanel(); return; }
+    showNodeInfo(nodeHits[0].object);
+    return;
+  }
+  var edgeHits = raycaster.intersectObjects(coilLines.concat(generativeLines, threadLines));
+  if (edgeHits.length > 0) {
+    showEdgeInfo(edgeHits[0].object);
+    return;
+  }
+  closePanel();
+}
+
+function onDoubleClick(e) {
+  // Double-click to center on a node
+  var rect = renderer.domElement.getBoundingClientRect();
+  mouse.x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((e.clientY - rect.top) / rect.height) * 2 + 1;
+  raycaster.setFromCamera(mouse, camera);
+  var intersects = raycaster.intersectObjects(meshes);
+  if (intersects.length > 0) {
+    cameraTarget.copy(intersects[0].object.position);
+    updateCameraPosition();
+  }
+}
+
+function onWheel(e) {
+  cameraRadius = Math.max(15, Math.min(120, cameraRadius + e.deltaY * 0.05));
+  updateCameraPosition();
+  e.preventDefault();
+}
+
+function onResize() {
+  var container = document.getElementById('canvas-container');
+  var w = container.clientWidth;
+  var h = container.clientHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+
+// ── INFO PANEL ──
+function showNodeInfo(mesh) {
+  prsExpandFilters();
+  selectedMesh = mesh;
+  var d = mesh.userData;
+  var triplet = d.triplet;
+  var panel = document.getElementById('info-panel');
+  var content = document.getElementById('info-content');
+
+  var typeClass = d.prsType;
+  var typeLabel = d.prsType.charAt(0).toUpperCase() + d.prsType.slice(1);
+  var tName = THINKER_DISPLAY[d.thinker] || d.thinker;
+  var tColor = THINKER_COLORS[d.thinker] || '#888';
+  var disc = THINKER_DISC[d.thinker] || '';
+
+  var html = '<h3>' + triplet.label + '</h3>';
+  html += '<span class="thinker-tag" style="background:' + tColor + '33;color:' + tColor + '">' + tName + '</span>';
+  html += '<span class="prs-type ' + typeClass + '">' + typeLabel + '</span>';
+  html += '<div class="field-label">Discipline</div>';
+  html += '<div class="field-value">' + disc + '</div>';
+  html += '<div class="field-label">Problem</div>';
+  html += '<div class="field-value">' + triplet.problem + '</div>';
+  html += '<div class="field-label">Resource</div>';
+  html += '<div class="field-value">' + triplet.resource + '</div>';
+  html += '<div class="field-label">Solution</div>';
+  html += '<div class="field-value">' + triplet.solution + '</div>';
+  html += '<div class="field-label">Publication Year</div>';
+  html += '<div class="field-value">' + (triplet.pub_year || 'Unknown') + '</div>';
+  html += '<div class="field-label">Confidence</div>';
+  html += '<div class="field-value">' + triplet.confidence + '</div>';
+  if (triplet.first_seen) {
+    html += '<div class="field-label">First produced (git yield)</div>';
+    html += '<div class="field-value">' + triplet.first_seen + '</div>';
+  }
+
+  // Find related cross-connections
+  var related = CROSS_CONNECTIONS.filter(function(cc) {
+    var progs = cc.programs.toLowerCase();
+    return progs.indexOf(d.thinker) >= 0 || progs.indexOf(tName.toLowerCase()) >= 0;
+  });
+  if (related.length > 0) {
+    html += '<div class="field-label" style="margin-top:14px">Cross-Tradition Connections</div>';
+    related.forEach(function(cc) {
+      html += '<div class="field-value" style="margin-top:6px;padding:6px;background:#1a1a2e;border-radius:4px">';
+      html += '<strong>' + cc.id + ':</strong> ' + cc.question;
+      html += '<br><span style="color:#888;font-size:11px">' + cc.nature + '</span>';
+      html += '</div>';
+    });
+  }
+
+  content.innerHTML = html;
+  panel.style.display = 'block';
+}
+
+function prsClosePops() {
+  var all = document.querySelectorAll('.prs-pop');
+  for (var i = 0; i < all.length; i++) all[i].style.display = 'none';
+}
+function prsCollapseFilters() {
+  var lp = document.getElementById('prs-left-page');
+  if (lp) lp.style.display = 'block';
+}
+function prsExpandFilters() {
+  var lp = document.getElementById('prs-left-page');
+  if (lp) lp.style.display = 'none';
+}
+function narrativeHTML(triplet, thinker) {
+  var tn = THINKER_DISPLAY[thinker] || thinker;
+  var tc = THINKER_COLORS[thinker] || '#888';
+  var disc = THINKER_DISC[thinker] || '';
+  var h = '<h3>' + (triplet.label || triplet.id) + '</h3>';
+  h += '<span class="thinker-tag" style="background:' + tc + '33;color:' + tc + '">' + tn + '</span>';
+  h += '<div class="field-label">Discipline</div><div class="field-value">' + disc + '</div>';
+  h += '<div class="field-label">Problem</div><div class="field-value">' + (triplet.problem || '') + '</div>';
+  h += '<div class="field-label">Resource</div><div class="field-value">' + (triplet.resource || '') + '</div>';
+  h += '<div class="field-label">Solution</div><div class="field-value">' + (triplet.solution || '') + '</div>';
+  h += '<div class="field-label">Publication Year</div><div class="field-value">' + (triplet.pub_year || 'Unknown') + '</div>';
+  return h;
+}
+function edgeLabelHTML(d) {
+  var txt = 'PRS thread', col = '#888';
+  if (d.type === 'coil' && d.coil) { col = '#3FE0D0'; txt = 'Synergistic coil &#8212; ' + (d.coil.nature || '') + (d.coil.year ? ' &#183; ' + d.coil.year : ''); }
+  else if (d.type === 'generative') { col = '#F09A3C'; txt = 'Generative coil &#8212; solution &#8594; resource'; }
+  else if (d.type === 'cross' && d.finding) { col = '#C9A84C'; txt = 'Cross-tradition link &#8212; ' + (d.finding.type || ''); }
+  return '<div style="font-size:11px;color:' + col + ';border-bottom:1px solid #2a2a3e;padding-bottom:6px;margin-bottom:8px">' + txt + '</div>';
+}
+function showEdgeInfo(edge) {
+  var d = edge.userData;
+  var m1 = d.mesh1, m2 = d.mesh2;
+  var t1 = (m1 && m1.userData) ? m1.userData.triplet : null;
+  var t2 = (m2 && m2.userData) ? m2.userData.triplet : null;
+  var th1 = (m1 && m1.userData) ? m1.userData.thinker : null;
+  var th2 = (m2 && m2.userData) ? m2.userData.thinker : null;
+  var rightPanel = document.getElementById('info-panel');
+  var rightContent = document.getElementById('info-content');
+  var leftPage = document.getElementById('prs-left-page');
+  var leftContent = document.getElementById('prs-left-page-content');
+  var header = edgeLabelHTML(d);
+  if (t1 && t2 && t1.id !== t2.id && leftPage && leftContent) {
+    selectedMesh = null;
+    leftContent.innerHTML = header + '<div class="field-label">Source narrative</div>' + narrativeHTML(t1, th1);
+    rightContent.innerHTML = header + '<div class="field-label">Target narrative</div>' + narrativeHTML(t2, th2);
+    prsCollapseFilters();
+    leftPage.style.display = 'block';
+    rightPanel.style.display = 'block';
+  } else if (m1) {
+    showNodeInfo(m1);
+  }
+}
+
+function closePanel() {
+  document.getElementById('info-panel').style.display = 'none';
+  prsExpandFilters();
+  if (selectedMesh) {
+    var origColor = new THREE.Color(THINKER_COLORS[selectedMesh.userData.thinker] || '#888888');
+    selectedMesh.material.emissive.copy(origColor.multiplyScalar(0.2));
+  }
+  selectedMesh = null;
+}
+
+// ── TOGGLE CONTROLS ──
+function toggleLabels() {
+  showLabels = !showLabels;
+  document.getElementById('btn-labels').classList.toggle('active', showLabels);
+  document.getElementById('disc-labels').style.display = showLabels ? 'block' : 'none';
+}
+
+// (toggleThreads and toggleDiscs removed with their top buttons —
+//  Edges visibility lives in prsToggleEdges, discipline visibility in prsToggleDisc / prsToggleAllDiscs.)
+
+// ── DISCIPLINE LABELS (2D overlay) ──
+// Always clears the shared label container at the top of the frame so year labels
+// (appended by updateYearLabels right after) don't accumulate, and so a stale label
+// can't survive a state change. Per-discipline rendering is gated by prsDiscState.
+function updateDiscLabels() {
+  var container = document.getElementById('disc-labels');
+  if (container) container.innerHTML = '';
+  if (!showLabels || !container) return;
+  var canvasRect = renderer.domElement.getBoundingClientRect();
+  DISCIPLINES.forEach(function(disc, i) {
+    // Label visibility is a side effect of the discipline data cut.
+    // Default (undefined or true) → show; only an explicit false hides.
+    if (prsDiscState[disc] === false) return;
+    var angle = getDiscAngle(i);
+    var r = discRadius + 3;
+    var worldPos = new THREE.Vector3(
+      Math.cos(angle) * r,
+      0.5,
+      -Math.sin(angle) * r
+    );
+    var screenPos = worldPos.project(camera);
+    var x = (screenPos.x * 0.5 + 0.5) * canvasRect.width;
+    var y = (-screenPos.y * 0.5 + 0.5) * canvasRect.height;
+
+    if (screenPos.z < 1) {
+      var label = document.createElement('div');
+      label.className = 'disc-label';
+      label.textContent = disc;
+      label.style.left = x + 'px';
+      label.style.top = y + 'px';
+      label.style.transform = 'translate(-50%, -50%)';
+      container.appendChild(label);
+    }
+  });
+}
+
+// ── Z-AXIS MARKERS ──
+function buildZAxis() {
+  // Vertical line at center
+  var topY = zHeight + 2;
+  var pts = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, topY, 0)];
+  var axGeo = new THREE.BufferGeometry().setFromPoints(pts);
+  var axMat = new THREE.LineBasicMaterial({ color: 0x2a2a3e, transparent: true, opacity: 0.4 });
+  scene.add(new THREE.Line(axGeo, axMat));
+
+  // Decade markers along the axis
+  prsDecades = [];
+  var startDecade = Math.ceil(minYear / 10) * 10;
+  for (var yr = startDecade; yr <= maxYear; yr += 10) {
+    var y = yearToZ(yr);
+    // Horizontal tick
+    var tickPts = [new THREE.Vector3(-1, y, 0), new THREE.Vector3(1, y, 0)];
+    var tickGeo = new THREE.BufferGeometry().setFromPoints(tickPts);
+    var tickMat = new THREE.LineBasicMaterial({ color: 0x3a3a4e, transparent: true, opacity: 0.5 });
+    var tickLine = new THREE.Line(tickGeo, tickMat);
+    tickLine.userData = { type: 'decade-tick', decade: yr };
+    scene.add(tickLine);
+
+    // Faint horizontal ring at each decade — tagged so it can be filtered by year
+    var ringGeo = new THREE.RingGeometry(discRadius - 0.5, discRadius + 0.5, 64);
+    var ringMat = new THREE.MeshBasicMaterial({ color: 0x1a1a2e, transparent: true, opacity: 0.12, side: THREE.DoubleSide });
+    var ring = new THREE.Mesh(ringGeo, ringMat);
+    ring.rotation.x = -Math.PI / 2;
+    ring.position.y = y;
+    ring.userData = { type: 'decade-ring', decade: yr };
+    decadeRings.push({ ring: ring, tick: tickLine, decade: yr });
+    scene.add(ring);
+    prsDecades.push(yr);
+  }
+}
+
+// Year labels rendered as 2D overlays
+function updateYearLabels() {
+  var container = document.getElementById('disc-labels');
+  var canvasRect = renderer.domElement.getBoundingClientRect();
+  var startDecade = Math.ceil(minYear / 10) * 10;
+  for (var yr = startDecade; yr <= maxYear; yr += 10) {
+    // Per-decade filter gating
+    if (prsYearState[yr] === false) continue;
+    var y = yearToZ(yr);
+    var worldPos = new THREE.Vector3(2, y, 0);
+    var screenPos = worldPos.project(camera);
+    var sx = (screenPos.x * 0.5 + 0.5) * canvasRect.width;
+    var sy = (-screenPos.y * 0.5 + 0.5) * canvasRect.height;
+    if (screenPos.z < 1) {
+      var label = document.createElement('div');
+      label.className = 'disc-label';
+      label.textContent = yr.toString();
+      label.style.left = sx + 'px';
+      label.style.top = sy + 'px';
+      label.style.transform = 'translate(-50%, -50%)';
+      label.style.color = '#C9A84C';
+      label.style.fontSize = '13px';
+      label.style.fontWeight = '600';
+      container.appendChild(label);
+    }
+  }
+}
+
+// ── ANIMATE ──
+function animate() {
+  requestAnimationFrame(animate);
+
+  // Slow rotation of nodes for visual interest
+  meshes.forEach(function(m) {
+    if (m.userData.type === 'prs') {
+      m.rotation.y += 0.003;
+      if (m.userData.prsType === 'problem') m.rotation.x += 0.002;
+    }
+  });
+
+  renderer.render(scene, camera);
+  updateDiscLabels();
+  updateYearLabels();
+}
+
+// ── SEARCH EVENT ──
+document.getElementById('prs-search-box').addEventListener('input', function(e) {
+  prsSearch(e.target.value);
+});
+
+// ── INIT ──
+init();
+buildZAxis();
+buildTraditionFilters();
+prsBuildDisciplineFilters();
+prsBuildYearFilters();
+</script>
+</body>
+</html>

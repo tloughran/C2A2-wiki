@@ -496,7 +496,14 @@ function ordToZ(o) {
   if (maxOrd === minOrd) return zHeight / 2;
   var ageMax = maxOrd - minOrd;
   if (ageMax <= 0) return zHeight / 2;
-  var age = maxOrd - o;
+  // Clamp to the corpus range BEFORE taking the log. An ordinal past maxOrd gives a
+  // negative age, and once |age| > TAU_DAYS the log argument goes negative and the
+  // result is NaN -- silently, with the geometry still built and counted. Coils are
+  // the live case: they sit at DISCOVERY time, which is by construction the newest
+  // thing in the system. Measured 2026-09-01: 6 coils at 2026 over a corpus ending
+  // 2025-01-22 produced 6 arcs, visible:true, every vertex NaN, legend reading 6.
+  var oc = Math.max(minOrd, Math.min(maxOrd, o));
+  var age = maxOrd - oc;
   var u = Math.log(1 + age / TAU_DAYS) / Math.log(1 + ageMax / TAU_DAYS);
   return 2 + (1 - u) * (zHeight - 4);
 }
@@ -638,6 +645,7 @@ function init() {
   buildThreads();
   buildLegend();
   buildCrossConnectionLines();
+  updatePrsCount();   // else the readout sits on its placeholder until the first filter toggle
 
   // Events
   renderer.domElement.addEventListener('mousedown', onMouseDown);
@@ -824,6 +832,11 @@ function buildCrossConnectionLines() {
   });
 
   // Draw arcs between thinkers mentioned in the same finding
+  // One arc per thinker PAIR, not per finding: the endpoints are chosen from the
+  // thinker (first resource mesh of each), not from the finding, so N findings over
+  // the same pair drew N arcs on identical endpoints. Keep the first finding as the
+  // arc's payload and record how many findings it stands for.
+  var pairSeen = {};
   FINDINGS.forEach(function(finding) {
     var progs = finding.programs.split(',').map(function(p) {
       return p.trim().replace(/ Agent$/, '').replace(/ \(.*$/, '').toLowerCase();
@@ -836,6 +849,8 @@ function buildCrossConnectionLines() {
         var t1 = thinkerTriplets[thinkers[i]];
         var t2 = thinkerTriplets[thinkers[j]];
         if (!t1 || !t2 || !t1.length || !t2.length) continue;
+        var pairKey = [thinkers[i], thinkers[j]].sort().join('|');
+        if (pairSeen[pairKey]) { pairSeen[pairKey].userData.findingCount++; continue; }
 
         // Connect the resource nodes of the first triplet of each
         var r1Idx = meshes.findIndex(function(m) {
@@ -863,6 +878,7 @@ function buildCrossConnectionLines() {
           arc.userData = {
             type: 'cross',
             finding: finding,
+            findingCount: 1,
             thinker1: thinkers[i],
             thinker2: thinkers[j],
             mesh1: meshes[r1Idx],
@@ -870,6 +886,7 @@ function buildCrossConnectionLines() {
           };
           scene.add(arc);
           threadLines.push(arc);
+          pairSeen[pairKey] = arc;
         }
       }
     }
