@@ -1,0 +1,251 @@
+{
+  "_meta": {
+    "phase": "Step 1 Phase A - source verification",
+    "verified_on": "2026-09-01",
+    "verified_by": "Claude (Cowork), against published sources; see PAIRINGS.md for the narrative",
+    "fixture_provenance": "SOURCE.md - results, dates and cross-links are Claude-authored, not asserted by the Welch Labs video",
+    "rows": 20,
+    "event_type_counts": {
+      "presentation": 1,
+      "journal receipt": 3,
+      "publication": 1,
+      "conference announcement": 1,
+      "thesis defence": 1,
+      "journal submission": 1,
+      "book publication": 1,
+      "none": 1,
+      "conference opening": 1,
+      "arxiv v1": 7,
+      "journal issue": 1,
+      "journal online publication": 1
+    },
+    "verification_status_counts": {
+      "exact": 12,
+      "off_by_1": 1,
+      "placeholder": 2,
+      "exact_for_event": 3,
+      "conflated": 1,
+      "mismatch": 1
+    },
+    "headline_finding": "The deep-learning arm places 7 of 10 rows on one event type (arXiv v1 submission), all confirmed exact; the other three have no arXiv preprint to place on. The quantum arm spans seven event types across ten rows plus one row with no event at all and carries two placeholders. The 32-vs-13-year compression claim is computed across these two columns, so the ruler changes definition between the arms being compared - and it cannot be repaired by convention, because the arXiv-submission event does not exist for 1900-1932. Quote any rate ratio off this fixture to the year, never the day.",
+    "not_yet_done": [
+      "Phase B - cascade-role coding",
+      "Phase C - relinkage from role and problem structure",
+      "the six cross-connections remain Claude-authored and unvalidated; the fixture is not yet a labelled evaluation set"
+    ]
+  },
+  "pairings": [
+    {
+      "id": "quantum/PRS-01",
+      "label": "Planck — the quantum of action",
+      "fixture_date": "1900-12-14",
+      "event_type": "presentation",
+      "reference": "Planck, 'Zur Theorie des Gesetzes der Energieverteilung im Normalspectrum', Verh. Dtsch. Phys. Ges. 2 (1900) 237",
+      "reference_locator": "presented to the German Physical Society, 14 Dec 1900",
+      "reference_status": "verified",
+      "verification_status": "exact",
+      "note": "The 19 Oct 1900 talk gave the empirical radiation law; h enters at the 14 Dec derivation. The fixture's label names the quantum of action, so December is the correct event."
+    },
+    {
+      "id": "quantum/PRS-02",
+      "label": "Einstein — the light quantum",
+      "fixture_date": "1905-03-17",
+      "event_type": "journal receipt",
+      "reference": "Einstein, 'Ueber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt', Annalen der Physik 17 (1905) 132-148",
+      "reference_locator": "received by Annalen der Physik 18 Mar 1905",
+      "reference_status": "verified",
+      "verification_status": "off_by_1",
+      "corrected_date": "1905-03-18",
+      "note": "Fixture is one day early."
+    },
+    {
+      "id": "quantum/PRS-03",
+      "label": "Bohr — quantised atomic structure",
+      "fixture_date": "1913-07-01",
+      "event_type": "publication",
+      "reference": "Bohr, 'On the Constitution of Atoms and Molecules, Part I', Philosophical Magazine 26 (1913) 1-25",
+      "reference_locator": "Philosophical Magazine, July 1913 (Parts II and III Sept and Nov 1913)",
+      "reference_status": "verified",
+      "verification_status": "placeholder",
+      "note": "Month is right; the 1st is filler. No day established in the sources checked."
+    },
+    {
+      "id": "quantum/PRS-04",
+      "label": "Compton — the quantum carries momentum",
+      "fixture_date": "1922-12-01",
+      "event_type": "conference announcement",
+      "reference": "Compton, 'A Quantum Theory of the Scattering of X-rays by Light Elements', Physical Review 21 (1923) 483-502",
+      "reference_locator": "read at the APS meeting, Chicago, 1-2 Dec 1922; submitted to Physical Review 13 Dec 1922; published May 1923",
+      "reference_status": "verified",
+      "verification_status": "exact_for_event",
+      "note": "Three candidate dates exist. The fixture chooses announcement; that is a third convention again and should be stated rather than assumed."
+    },
+    {
+      "id": "quantum/PRS-05",
+      "label": "de Broglie — matter waves",
+      "fixture_date": "1924-11-25",
+      "event_type": "thesis defence",
+      "reference": "de Broglie, 'Recherches sur la theorie des quanta', doctoral thesis, Paris (1924)",
+      "reference_locator": "defended 25 Nov 1924; published in Annales de Physique early 1925",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "quantum/PRS-06",
+      "label": "Pauli — the exclusion principle",
+      "fixture_date": "1925-01-16",
+      "event_type": "journal submission",
+      "reference": "Pauli, 'Ueber den Zusammenhang des Abschlusses der Elektronengruppen im Atom mit der Komplexstruktur der Spektren', Zeitschrift fuer Physik 31 (1925) 765-783",
+      "reference_locator": "submitted 16 Jan 1925",
+      "reference_status": "verified",
+      "verification_status": "exact",
+      "note": "Does NOT blur exclusion with spin: the Resource says 'a fourth two-valued quantum number', which is Pauli's own formulation. Spin is Uhlenbeck and Goudsmit, Naturwissenschaften, letter dated 17 Oct 1925 - different people, different result, correctly absent."
+    },
+    {
+      "id": "quantum/PRS-07",
+      "label": "Heisenberg — matrix mechanics",
+      "fixture_date": "1925-07-29",
+      "event_type": "journal receipt",
+      "reference": "Heisenberg, 'Ueber quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen', Zeitschrift fuer Physik 33 (1925) 879-893",
+      "reference_locator": "received 29 Jul 1925",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "quantum/PRS-08",
+      "label": "Schroedinger — the wave equation",
+      "fixture_date": "1926-01-27",
+      "event_type": "journal receipt",
+      "reference": "Schroedinger, 'Quantisierung als Eigenwertproblem' (First Communication), Annalen der Physik 384 (1926) 361-376",
+      "reference_locator": "received 27 Jan 1926",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "quantum/PRS-09",
+      "label": "Dirac — unification and the relativistic electron",
+      "fixture_date": "1930-05-29",
+      "event_type": "book publication",
+      "reference": "Dirac, 'The Quantum Theory of the Electron', Proc. R. Soc. A 117 (1928) 610-624; AND Dirac, 'The Principles of Quantum Mechanics', Clarendon Press (1930)",
+      "reference_locator": "relativistic equation submitted 2 Jan 1928, published 1 Feb 1928; transformation theory 1927; Principles published summer 1930, no day sourced",
+      "reference_status": "verified",
+      "verification_status": "conflated",
+      "note": "PRIMARY DEFECT. The row is dated and sourced to the 1930 textbook, but its Solution claims spin, the magnetic moment and antimatter - consequences of the Jan 1928 equation. The carried day 1930-05-29 is unverifiable. Split into two rows or pick one."
+    },
+    {
+      "id": "quantum/PRS-10",
+      "label": "von Neumann — the mathematical foundation",
+      "fixture_date": "1932-01-01",
+      "event_type": "none",
+      "reference": "von Neumann, 'Mathematische Grundlagen der Quantenmechanik', Springer (1932)",
+      "reference_locator": "1932; no day or month established",
+      "reference_status": "verified",
+      "verification_status": "placeholder",
+      "note": "Jan 1 is an absence dressed as a measurement."
+    },
+    {
+      "id": "deeplearning/PRS-01",
+      "label": "AlexNet — scale beats hand-engineering",
+      "fixture_date": "2012-12-03",
+      "event_type": "conference opening",
+      "reference": "Krizhevsky, Sutskever, Hinton, 'ImageNet Classification with Deep Convolutional Neural Networks', NeurIPS 2012",
+      "reference_locator": "NeurIPS 2012, Lake Tahoe, 3-6 Dec 2012 (tutorials 3 Dec)",
+      "reference_status": "verified",
+      "verification_status": "exact_for_event",
+      "note": "No arXiv preprint exists, so this row cannot use the arm's arXiv-submission convention."
+    },
+    {
+      "id": "deeplearning/PRS-02",
+      "label": "ResNet — depth made trainable",
+      "fixture_date": "2015-12-10",
+      "event_type": "arxiv v1",
+      "reference": "He, Zhang, Ren, Sun, 'Deep Residual Learning for Image Recognition', arXiv:1512.03385",
+      "reference_locator": "https://arxiv.org/abs/1512.03385 v1, 10 Dec 2015 19:51:55 UTC",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "deeplearning/PRS-03",
+      "label": "AlphaGo — search plus learned evaluation",
+      "fixture_date": "2016-01-28",
+      "event_type": "journal issue",
+      "reference": "Silver et al., 'Mastering the game of Go with deep neural networks and tree search', Nature 529 (2016) 484-489",
+      "reference_locator": "Nature issue 28 Jan 2016, online 27 Jan 2016; Lee Sedol match Seoul 9-15 Mar 2016",
+      "reference_status": "verified",
+      "verification_status": "mismatch",
+      "note": "Date names the paper; the Solution text rests on the 4-1 win over Lee Sedol six weeks later. Pick one."
+    },
+    {
+      "id": "deeplearning/PRS-04",
+      "label": "Transformer — attention as the whole architecture",
+      "fixture_date": "2017-06-12",
+      "event_type": "arxiv v1",
+      "reference": "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762",
+      "reference_locator": "https://arxiv.org/abs/1706.03762 v1, 12 Jun 2017",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "deeplearning/PRS-05",
+      "label": "Neural scaling laws",
+      "fixture_date": "2020-01-23",
+      "event_type": "arxiv v1",
+      "reference": "Kaplan et al., 'Scaling Laws for Neural Language Models', arXiv:2001.08361",
+      "reference_locator": "https://arxiv.org/abs/2001.08361 v1, 23 Jan 2020 03:59:20 UTC",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "deeplearning/PRS-06",
+      "label": "GPT-3 — in-context learning at scale",
+      "fixture_date": "2020-05-28",
+      "event_type": "arxiv v1",
+      "reference": "Brown et al., 'Language Models are Few-Shot Learners', arXiv:2005.14165",
+      "reference_locator": "https://arxiv.org/abs/2005.14165 v1, 28 May 2020",
+      "reference_status": "verified",
+      "verification_status": "exact",
+      "note": "Precedes DDPM in the record, and the fixture already has that order."
+    },
+    {
+      "id": "deeplearning/PRS-07",
+      "label": "DDPM — generation as learned denoising",
+      "fixture_date": "2020-06-19",
+      "event_type": "arxiv v1",
+      "reference": "Ho, Jain, Abbeel, 'Denoising Diffusion Probabilistic Models', arXiv:2006.11239",
+      "reference_locator": "https://arxiv.org/abs/2006.11239 v1, 19 Jun 2020",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "deeplearning/PRS-08",
+      "label": "AlphaFold 2 — a fifty-year problem closed",
+      "fixture_date": "2021-07-15",
+      "event_type": "journal online publication",
+      "reference": "Jumper et al., 'Highly accurate protein structure prediction with AlphaFold', Nature 596 (2021) 583-589",
+      "reference_locator": "received 11 May 2021, accepted 12 Jul 2021, published online 15 Jul 2021",
+      "reference_status": "verified",
+      "verification_status": "exact_for_event",
+      "note": "Correct for publication, but a different event type from the arm's arXiv convention."
+    },
+    {
+      "id": "deeplearning/PRS-09",
+      "label": "InstructGPT / RLHF — alignment to intent",
+      "fixture_date": "2022-03-04",
+      "event_type": "arxiv v1",
+      "reference": "Ouyang et al., 'Training language models to follow instructions with human feedback', arXiv:2203.02155",
+      "reference_locator": "https://arxiv.org/abs/2203.02155 v1, 4 Mar 2022 07:04:42 UTC",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    },
+    {
+      "id": "deeplearning/PRS-10",
+      "label": "DeepSeek-R1 — reasoning from reinforcement learning alone",
+      "fixture_date": "2025-01-22",
+      "event_type": "arxiv v1",
+      "reference": "DeepSeek-AI, 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning', arXiv:2501.12948",
+      "reference_locator": "https://arxiv.org/abs/2501.12948 v1, 22 Jan 2025",
+      "reference_status": "verified",
+      "verification_status": "exact"
+    }
+  ]
+}
