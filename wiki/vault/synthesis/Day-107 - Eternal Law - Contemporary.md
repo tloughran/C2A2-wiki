@@ -3,23 +3,24 @@ day: 107
 title: Eternal Law (Contemporary)
 pairs_with: "[[Day-107 - Eternal Law]]"
 length_target_words: 1500
-length_actual_words: 1532
+length_actual_words: 1692
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (morphogenetic-field target morphology)"
-  - "wiki/traditions/hoffman/wiki.md (interface theory)"
-  - "wiki/traditions/kastrup/wiki.md (analytic idealism)"
-  - "wiki/traditions/friston/wiki.md (active inference, generative models)"
-  - "wiki/master/cross_program_index.md (CROSS entries on form/pattern across traditions)"
+  - "wiki/traditions/hoffman/wiki.md (interface theory). CITATION CONSTRAINT: NOT FLAG-02 — master paradigm_flags.md holds only FLAG-001/FLAG-002 and both are Levin x Friston, so no padded form of that token names Hoffman; anchor to the tradition node."
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 analytic idealism, High — consciousness primary, matter its expression: the record carrying 'the eternal pattern IS a structure of mind-at-large'. PRS-02 individuation-as-dissociative-boundary, High, carries only the alters clause; do not use PRS-02 for the ontological-primitive claim.)"
+  - "wiki/traditions/friston/wiki.md (active inference, generative models). CITATION CONSTRAINT: NOT FLAG-05 — that token exists nowhere in the wiki."
+  - "wiki/master/cross_program_index.md (cross-program convergence on form/pattern). CITATION CONSTRAINT: NOT CROSS-12/CROSS-012 — CROSS-012 is 'are Hoffman's conscious agents and Levin's basal cognition the same thing at different scales', i.e. substrate-independent agency, not form-as-causally-real. No correct target has been identified for this claim."
+  - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology — (Implicit), Confidence Medium. STANDING CONSTRAINT: its Solution IS the C2A2 integration claim restated downward on 2026-08-10 as CROSS-008; cite it as a Medium reconstruction, never as empirical support.)"
   - "Rohr, The Universal Christ (eternal Logos as cosmic pattern)"
   - "Wright, Surprised by Hope (Christ as the telos of creation)"
 evidence_strength_summary: "The form-as-real claim is empirically grounded in morphogenetic and developmental work; the identification with mind-stuff is metaphysical interpretation; the Christological reading is theological."
-length_ratio_to_target: 1.021
-length_note: "Short tier (1500); at 1532 words (1.02x target), within +-10%. Q.93's single ambitious claim (eternal pattern, a.4-a.6) developed in full; lean by design, no padding warranted (better short than padded). NOTE: re-tiered short during the 2026-06-07 cluster word_count de-inflation; prior note referenced the superseded medium-2200 target."
+length_ratio_to_target: 1.128
+length_note: "Short tier (1500). RECOUNTED 2026-09-01 after a citation-standing repair: body-only 1692 words, ratio 1.128 — outside +-10%, well inside +-25%, and all of the growth is evidence surfacing (the Stump PRS-04 standing note, the Kastrup PRS-01 repoint) rather than new argument. Prior note recorded 1532 words / 1.02x. Q.93's single ambitious claim (eternal pattern, a.4-a.6) developed in full; lean by design, no padding warranted (better short than padded). NOTE: re-tiered short during the 2026-06-07 cluster word_count de-inflation; prior note referenced the superseded medium-2200 target."
 mind_first_reframe: "The eternal law on a mind-monist reading is the structural pattern of mind-at-large that constrains what counts as flourishing for kinds of agents — Aquinas's type/exemplar in the divine mind cashed out as the deepest computational specification of well-functioning, real and prior to created things but internal to reality rather than a transcendent extra entity."
 central_theme_thread: "Q.93 a.6's distinction between the wicked and the good reads as differing degrees of generative-model alignment with the eternal pattern; agents are individuated by their perspective-limitations relative to that pattern, and the loving-unity telos is the pattern as fully accessed — the simple whole seen, containing every limited perspective."
 tags: [synthesis, day/107, theme/eternal-law-as-pattern]
-last_qc_at: "2026-08-23T19:57:17"
+last_qc_at: "2026-09-01T08:24:47"
 last_qc_outcome: "rewrote"
 ---
 
@@ -39,7 +40,7 @@ A second problem nested inside: how are the *necessary* and *contingent* aspects
 
 ## Resource: form as informational/computational primitive
 
-**Levin's morphogenetic work** (traditions/levin/wiki.md): the developmental "target" of an organism is *not* coded in DNA in any straightforward sense. DNA codes proteins; the *topology* of a frog or a salamander is encoded in dynamic bioelectric networks that exhibit attractor behavior toward functional anatomy. When the network is perturbed, development relaxes back to the target. This is Aquinas's "type/exemplar" cashed out empirically: an attractor-shaped pattern that is real *as pattern* and causally active in development. The pattern is not a mysterious extra entity; it is the dynamical structure of the bioelectric system. (See PRS-04 in Tom's re-description of the Stump-tradition wiki, where this maps to a defense of final causality on naturalistic grounds.)
+**Levin's morphogenetic work** (traditions/levin/wiki.md): the developmental "target" of an organism is *not* coded in DNA in any straightforward sense. DNA codes proteins; the *topology* of a frog or a salamander is encoded in dynamic bioelectric networks that exhibit attractor behavior toward functional anatomy. When the network is perturbed, development relaxes back to the target. This is Aquinas's "type/exemplar" cashed out empirically: an attractor-shaped pattern that is real *as pattern* and causally active in development. The pattern is not a mysterious extra entity; it is the dynamical structure of the bioelectric system. (PRS-04 in Tom's re-description of the Stump-tradition wiki maps this to a defense of final causality on naturalistic grounds — but that entry is (Implicit) at Medium confidence and its grounding claim was restated downward on 2026-08-10; the empirical weight above is Levin's, not the record's.)
 
 **Hoffman's interface theory** (traditions/hoffman/wiki.md): perception is fitness-tracking, not truth-tracking. What we see — spacetime, objects, three-dimensional volume — is the species-specific interface. Behind it is a reality whose structure we infer but do not directly perceive. Q.93 a.5's "irrational creatures are subject to the eternal law through being moved by Divine Providence" reads naturally as: organisms below the threshold of explicit cognitive interface *still operate under the deeper structure*, just without the meta-cognitive layer.
 
@@ -86,11 +87,11 @@ The Wright-shaped reading is that this is not an individual project. It is a *co
 
 ## Bridges
 
-- **PRS-04 (Tom's re-description of the Stump-tradition wiki, on final causality)**: eternal-law-as-target maps to final-cause-as-real-attractor. *Empirical* in Levin's instantiation; *metaphysical* in scope.
-- **traditions/hoffman/wiki.md (interface theory)**: agents access the pattern through fitness-shaped interfaces. *Formal* + *interpretive*. (Id withdrawn 2026-08-23: this line carried "FLAG-02", which does not name Hoffman anywhere — the master `paradigm_flags.md` holds only FLAG-001 and FLAG-002, both Levin x Friston. Anchored to the tradition node; a determinate repoint is not asserted here.)
-- **PRS-02 (Kastrup analytic idealism)**: eternal pattern as structure of mind-at-large. *Metaphysical argument*.
-- **traditions/friston/wiki.md (active inference)**: agents minimize prediction-error under generative models. *Empirical/formal*. (Id withdrawn 2026-08-23: this line carried "FLAG-05", which exists nowhere in the wiki.)
-- **master/cross_program_index.md (cross-program convergence on form/pattern)**: multiple traditions independently arrive at form-as-causally-real. *Pattern of agreement*, not single proof. (Id withdrawn 2026-08-23: this line carried "CROSS-12"; the register's CROSS-012 is "are Hoffman's conscious agents and Levin's basal cognition the same thing at different scales" — substrate-independent agency, not form-as-causally-real. No correct target identified.)
+- **PRS-04 in the Stump-tradition wiki** (`wiki/traditions/stump/prs_triplets.md`): eternal-law-as-target maps to final-cause-as-real-attractor. *Metaphysical in scope, and cited at its own standing:* the entry is **(Implicit), Confidence Medium**, and its Solution is the C2A2 integration claim — that Thomistic final causality supplies the framework within which Levin's morphogenetic teleology is descriptive rather than metaphorical — which was **restated downward on 2026-08-10** as CROSS-008, on the ground that Stump nowhere addresses Levin, morphogenesis, or final causality. The empirical weight here belongs to **Levin's own bioelectric work**, not to this record; the record is a philosophical reconstruction, and the grounding relation it asserts is a network inference rather than a claim Stump makes.
+- **traditions/hoffman/wiki.md (interface theory)**: agents access the pattern through fitness-shaped interfaces. *Formal* + *interpretive*.
+- **PRS-01 in the Kastrup-tradition wiki** (`wiki/traditions/kastrup/prs_triplets.md`, High): analytic idealism's inverted ontology — consciousness primary, matter its expression — so the eternal pattern is a structure of mind-at-large. PRS-02 (dissociative individuation, High) carries only the *alters* clause above, not this one. *Metaphysical argument*.
+- **traditions/friston/wiki.md (active inference)**: agents minimize prediction-error under generative models. *Empirical/formal*.
+- **master/cross_program_index.md (cross-program convergence on form/pattern)**: multiple traditions independently arrive at form-as-causally-real. *Pattern of agreement*, not single proof; no single CROSS id certifies it.
 - **Wright, *Surprised by Hope* (chs. 7-12)**: Christ as the telos of creation; new creation as the realization of the pattern. *Exegetical/theological*.
 - **Rohr, *The Universal Christ***: eternal Logos as the cosmic pattern. *Contemplative-theological*.
 

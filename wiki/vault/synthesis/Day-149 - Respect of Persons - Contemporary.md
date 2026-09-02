@@ -3,10 +3,10 @@ day: 149
 title: Respect of Persons (Contemporary)
 pairs_with: "[[Day-149 - Respect of Persons]]"
 length_target_words: 2200
-length_actual_words: 1669
-length_ratio_to_target: 0.759
+length_actual_words: 1780
+length_ratio_to_target: 0.809
 length_tier: medium
-length_note: "Compact at 0.76x medium target by design - Q.62 (restitution) and Q.63 (respect of persons) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
+length_note: "Recount 2026-09-01: pre-edit body was 1704 words, not the stored 1669 (understated by 35); true pre-edit ratio 0.775. Compact at 0.78x medium target by design - Q.62 (restitution) and Q.63 (respect of persons) are fully developed under the PRS form with evidence strength marked; substantive completeness prioritized over padding to tier, per the constitution."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02/11 cancer as defection / restoring the cell to the cooperative field — restitution as re-integration of the part into the whole; PRS-16 Platonic space — graded ontology of the 'virtual' form not yet actual)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — restitution as re-alignment of agents' models, restoring the collective)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Restitution as restoration of disturbed equality —
 mind_first_reframe: "Restitution, Aquinas says, is the act of commutative ('arithmetical') justice: the disturbed equality must be made level again. To withhold what is another's 'is to deprive him of the use of what belongs to him, and to do him an injury' — and so restitution is 'necessary for salvation,' since holding what is another's bars forgiveness. Read through mind / conscious-realist monism, restitution is the conservation law of the relational order: an injustice opens an imbalance in the web binding agents, and the order is repaired only when the part is returned to its right relation with the whole — the precise structure of restoring a defecting cell to the body's cooperative field (Levin) or re-aligning agents' models into a coherent collective (Friston). Respect of persons (Q.63) is the dual failure: a distribution that tracks a variable irrelevant to the real relation — wealth, kinship to the judge — rather than the warrant (need, dignity, office) the good actually answers to."
 central_theme_thread: "Justice is the maintenance and repair of the web that binds limited perspectives; restitution is its repair-mechanism — the re-inclusion of the one who defected into the people united, which is why Aquinas can tie it to salvation (inclusion in the people united with God, on Wright's reading). Respect of persons is the false weighting that fractures the whole: distributing the goods of the community on a feature that has nothing to do with the relation the good is meant to honor. Both turn on the same insight the central claim names — that each perspective has its real, proportionate place in the whole, and justice is the practice of honoring that place and restoring it when it is violated."
 tags: [synthesis, day/149, theme/restitution-and-the-wrong-variable]
-last_qc_at: "2026-08-24T00:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T14:33:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 149 — Contemporary Parallel: Restitution as Repair, Respect of Persons as the Wrong Variable
@@ -54,7 +54,7 @@ Restitution is the central claim's repair-mechanism. The claim holds that each l
 - *PRS-02 + PRS-11 in the Levin-tradition wiki (defection / restoration of the cooperative field)* — restitution as re-integration of the part into the whole; repair, not mere punishment. (Empirically strong at cell scale; analogical at social.)
 - *PRS-06 in the Friston-tradition wiki (multi-agent coherence via mutual modeling)* — injustice de-aligns agents' models; restitution re-aligns them, restoring the collective agent. (Formal/analogical; medium.)
 - *PRS-16 in the Levin-tradition wiki (Platonic space)* — the virtual-vs-actual argument (a.4) as a graded ontology of potential goods: a form not yet actualized is a real but graded target. (Metaphysical; medium.) The act/potency half of this argument is Aquinas's own Aristotelian apparatus and is left without a numbered Thomistic anchor: no Stump triplet carries act/potency, and the one that reads closest by title (PRS-04, *Final causality and modern biology*) is about the teleology ban in biology, not the ontology of the not-yet-actual.
-- *PRS-14/15 in the Stump-tradition wiki (corporate substance)* — cooperation in injustice (a.7) as culpability distributed across a real corporate body. (Medium-speculative.)
+- *PRS-14 in the Stump-tradition wiki (hylomorphic metaphysics of corporate substance, Confidence **High**)* — cooperation in injustice (a.7) as culpability distributed across a real corporate body. This is the load-bearing record: it is the only one whose Label names corporate substance, and the distributed-culpability reading rests on it alone. (Philosophical; the record is High, and the *medium-speculative* hedge below belongs to the interpretive step of applying it to a juridical cooperation-list, not to the record.) *PRS-15 (non-metaphorical body of Christ, Medium) is excluded by name: it is ecclesiological and does not carry a culpability claim.* (QC 2026-09-01: PRS-14 and PRS-15 had been bundled under one "medium-speculative" badge, grading the High load-bearing record at the weaker partner's level — the recorded downward bundled-badge shape, same pair as Days 148 and 150.)
 - *PRS-01 in the Wright-tradition wiki (critical realism) + PRS-01 in the Carroll-tradition wiki (levels of description)* — respect of persons as weighting a variable irrelevant to the real relation the good answers to. (Interpretive; medium-strong; theologically anchored, strong in field.)
 
 ## Where this leaves us

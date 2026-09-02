@@ -16,7 +16,7 @@ evidence_strength_summary: "The senses-as-interface claim is formal-and-empirica
 mind_first_reframe: "Anointing the senses is treating the body's interface points — the very loci where a limited perspective is constructed — as the sites where grace re-enters; the senses are where sin came in (the interface admitted distortion) and so where repair is applied."
 central_theme_thread: "The senses literally are the limitation that individuates a perspective; anointing them marks the limited interface as the place that must be re-consecrated toward the whole."
 tags: [synthesis, day/273, theme/the-senses-as-interface]
-last_qc_at: "2026-08-18T22:32:02"
+last_qc_at: "2026-09-01T06:33:10"
 last_qc_outcome: "rewrote"
 ---
 
@@ -34,7 +34,7 @@ The shared inquiry-problem is **the status of the senses as the boundary of a pe
 
 The emerging paradigm answers the problem decisively, and in Aquinas's favor on the substantive point. Tom's PRS-form record of Hoffman's program, PRS-03 (the Interface Theory of Perception), carries a mathematical proof that natural selection drives *truth-tracking* perception to extinction: perception evolved to track fitness payoffs, not objective reality, so the senses are an adaptive interface — a species-specific desktop — rather than a mirror of the world. The senses are exactly the apparatus that constructs a limited perspective; they are the limitation, rendered as biology.
 
-the Levin-tradition wiki's PRS-08 adds the bodily map: cells are cognitive agents navigating an "anatomical morphospace," so the body is a distributed information-bearing structure, not undifferentiated tissue — there *are* privileged loci, organs that carry distinct functional meaning. the Friston-tradition wiki's PRS-05 supplies the scaling principle: cognition is distributed across scales, and the sense organs are the body's prediction-error boundary, the surface where the internal model meets the world and updates. And the Rohr-tradition wiki's PRS-04 (embodied love as epistemology; the body as a site of knowing) refuses to spiritualize this away — knowing is bodily, so the gates of bodily knowing are theologically serious places.
+The Levin-tradition wiki's PRS-08 adds the bodily map: cells are cognitive agents navigating an "anatomical morphospace," so the body is a distributed information-bearing structure, not undifferentiated tissue — there *are* privileged loci, organs that carry distinct functional meaning. The Friston-tradition wiki's PRS-05 supplies the scaling principle: cognition is distributed across scales, and the sense organs are the body's prediction-error boundary, the surface where the internal model meets the world and updates. And the Rohr-tradition wiki's PRS-04 (embodied love as epistemology; the body as a site of knowing) refuses to spiritualize this away — knowing is bodily, so the gates of bodily knowing are theologically serious places.
 
 Put together: the senses are the interface (Hoffman) at the boundary of a form-bearing body (Levin) where the agent's model meets the world (Friston), and that boundary is a genuine site of knowing and therefore of grace (Rohr).
 

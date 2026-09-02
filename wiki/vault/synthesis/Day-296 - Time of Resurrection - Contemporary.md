@@ -3,21 +3,21 @@ day: 296
 title: Time of Resurrection (Contemporary)
 pairs_with: "[[Day-296 - Time of Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1070
+length_actual_words: 1230
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 target-state selects which matter realizes the form; PRS-03 morphological attractor; PRS-17 bioelectric pattern memory persisting across cell divisions)"
   - "wiki/traditions/carroll/prs_triplets.md (PRS-13 timeless universe / Wheeler-DeWitt; PRS-15 Past Hypothesis / arrow of time)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; canonical: the unknown day, watchfulness)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; the unknown-day/watchfulness reading is carried canonically by declared absence from the register, not by id)"
 evidence_strength_summary: "That identity is carried by an organizing principle and not by the specific matter is empirical at the biological scale (Levin); the time/arrow framing is physical (Carroll); persistence of the individuated perspective is philosophical (Kastrup); the deliberate hiddenness of the day is scriptural-theological (Wright); the two-tier divine/angelic causation stays theological."
 length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1034 -> 1070, +36 (3.5%), ratio 0.689 -> 0.713. Seventh independent confirmation that the field understates, same direction. Still ~29% under the short tier (tier verified correct: transcript word_count 1236): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated."
-length_ratio_to_target: 0.713
+length_ratio_to_target: 0.820
 mind_first_reframe: "The matter has no claim on the soul; an extrinsic organizing principle selects which matter realizes the form — identity rides the pattern and its ordination, never the atoms. The day is hidden by design, to keep every perspective awake."
 central_theme_thread: "Aquinas says outright that the ashes have no natural inclination to the soul — identity is not in the matter but in the principle that orders it; and the hour is hidden precisely so that every limited perspective stays watchful: epistemic limitation deployed for the agent's good."
 tags: [synthesis, day/296, theme/identity-rides-the-organizing-principle-not-the-matter]
-last_qc_at: "2026-08-16T00:25:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T00:23:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 296 — Time of Resurrection (Contemporary Parallel)
@@ -44,10 +44,12 @@ Two project themes converge here. First, *identity is the pattern, not the atoms
 
 ## Bridges
 
-- **Levin PRS-01 / PRS-03 / PRS-17 (empirical; load-bearing):** identity carried by an organizing target-state that selects and arranges matter — the modeled face of "the ashes have no inclination; providence ordains which parts are reunited."
+- **Levin PRS-01 (empirical, high confidence; load-bearing):** bioelectric circuits encode an anatomical target state — identity carried by an organizing pattern that recruits and arranges whatever matter is available.
+- **Levin PRS-17 (empirical, high confidence):** that pattern memory persists across cell divisions and constitutes a knower above the individual cells — the modeled face of "the ashes have no inclination; providence ordains which parts are reunited."
+- **Levin PRS-03 (formal, high confidence — a modelling language, not a measured result):** the morphological-attractor formalism borrows free-energy/least-action machinery to describe basins of morphological attraction. It supplies the vocabulary in which the above is stated; it is not itself the empirical finding, and is not cited here as one.
 - **Carroll PRS-13 / PRS-15 (physical):** a layered time/atemporality picture in which "instantaneous at the end of time" connects to real questions of whether time is fundamental.
 - **Kastrup PRS-02 (philosophical):** the same individuated perspective is the one reunited.
-- **Wright PRS-03 (scriptural):** the unknown day as a *vocational* hiddenness ordered to watchfulness, not a withheld fact.
+- **Wright PRS-03 (scriptural, high confidence):** inaugurated eschatology — the present as the space between a decisive event and its full elaboration. This carries the *already/not-yet* structure of the deferral. The further reading of the unknown hour as a *vocational* hiddenness ordered to watchfulness is carried canonically (*Surprised by Hope*), not by id: a term scan of the live Wright node for *watchful*, *unknown day*, *unknown hour*, *parousia*, *second coming*, *delay*, and *imminen-* returns no record, so this synthesis declares the extension as its own rather than attributing it to an entry that does not exist.
 
 ## Where this leaves us
 

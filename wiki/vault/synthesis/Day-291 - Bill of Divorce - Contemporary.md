@@ -3,21 +3,21 @@ day: 291
 title: Bill of Divorce (Contemporary)
 pairs_with: "[[Day-291 - Bill of Divorce]]"
 length_target_words: 1500
-length_actual_words: 1091
+length_actual_words: 1320
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-16 expected free energy as unified objective)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-02 faithful improvisation, PRS-03 inaugurated eschatology; canonical: covenant membership / salvation as inclusion)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-13 God's Homecoming — salvation as participation in God's homecoming among the people the Spirit is forming; PRS-03 inaugurated eschatology as the already/not-yet frame)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; offspring as continuation of an anatomical target-state across generations)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
 evidence_strength_summary: "The long-horizon-objective reading of indissolubility is formal/structural (Friston) and conceptual; the covenant-membership reading of legitimacy is scriptural-scholarly (Wright); Aquinas's tolerated-by-dispensation reading is historical-theological; the cross-generational form claim is empirical at the biological scale (Levin)."
-length_note: "Runs ~27% under the short tier (1091 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.73
+length_note: "Runs ~12% under the short tier (1320 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after a citation repair (Wright PRS-02/03 repointed to PRS-13; Levin PRS-01 extension declared) added ~229 words to the stored 1091."
+length_ratio_to_target: 0.88
 mind_first_reframe: "Indissolubility is the natural signature of a bond constituted by an objective whose horizon is the whole life of the offspring; legitimacy is conferred standing within a community, not an intrinsic property of the child."
 central_theme_thread: "Standing-in-the-people — Wright's 'salvation as inclusion' — gets its first explicit run here: legitimacy is membership conferred by relation to a covenanted body, the small-scale rehearsal of the larger inclusion the project's loving unity consummates."
 tags: [synthesis, day/291, theme/bonds-as-long-horizon-objectives-and-conferred-standing]
-last_qc_at: "2026-08-14T12:21:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T22:29:59"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 291 — Bill of Divorce (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the source of a bond's normativity and the natur
 
 ## Resource
 
-The Friston-tradition program supplies the leading structural move. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-16, *expected free energy as a unified objective*) lets us read indissolubility precisely: a bond becomes a single coupled agent when two parties adopt a *shared objective whose horizon is long*. Expected-free-energy accounts of agency are explicit that the planning horizon shapes the commitment — an objective indexed to the whole life of a third party (the offspring) underwrites a coupling meant to persist across that whole horizon. Dissolving it mid-horizon is not merely rule-breaking; it abandons an objective the bond was constituted to pursue. This gives Aquinas's "ordered to the lifelong good of the offspring" a structural rather than merely customary reading. The Wright-tradition program governs the scriptural register and does the load-bearing work on legitimacy: PRS-02 (*faithful improvisation*) and PRS-03 (*inaugurated eschatology*) frame biblical status-language as membership in a *covenanted people* — "salvation" in Wright's sense is precisely *inclusion in the people united with God*. Read through that lens, legitimacy is the small-scale civic analogue of covenant membership: a *conferred standing within a body*, not a metaphysical mark on the individual — which is exactly how Aquinas treats it (a disability the law adds and legitimization removes). The Levin-tradition program supplies the biological precedent that an end can span generations: PRS-01 (*morphogenetic control*; bioelectric circuits encode and hand on anatomical target-states) shows form being *transmitted and conserved across the parent–offspring boundary* — the empirical face of Aquinas's "offspring never cease to be the effect of their cause." PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) keeps the analysis personal: the bond is known from within the practice of love, not deduced from outside it.
+The Friston-tradition program supplies the leading structural move. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-16, *expected free energy as a unified objective*) lets us read indissolubility precisely: a bond becomes a single coupled agent when two parties adopt a *shared objective whose horizon is long*. Expected-free-energy accounts of agency are explicit that the planning horizon shapes the commitment — an objective indexed to the whole life of a third party (the offspring) underwrites a coupling meant to persist across that whole horizon. Dissolving it mid-horizon is not merely rule-breaking; it abandons an objective the bond was constituted to pursue. This gives Aquinas's "ordered to the lifelong good of the offspring" a structural rather than merely customary reading. The Wright-tradition program governs the scriptural register and does the load-bearing work on legitimacy. The record written for exactly this citation is PRS-13 (*God's Homecoming*): the people of God is the location of God's homecoming, and the working-out of salvation is participation in that homecoming as a member of the people the Spirit is forming — "salvation" in Wright's sense is precisely *inclusion in the covenanted people united with God*. PRS-03 (*inaugurated eschatology*, Confidence High) supplies the temporal frame in which such standing is already conferred and not yet complete. Read through that lens, legitimacy is the small-scale civic analogue of covenant membership: a *conferred standing within a body*, not a metaphysical mark on the individual — which is exactly how Aquinas treats it (a disability the law adds and legitimization removes). The Levin-tradition program supplies the biological precedent that form is a real, persisting target-state: PRS-01 (*morphogenetic control*; bioelectric circuits encode anatomical target states as morphogenetic memory, Confidence High) shows form conserved and repaired *within* an organism. Extending that conservation across the parent–offspring boundary — the empirical face of Aquinas's "offspring never cease to be the effect of their cause" — is this synthesis's own extension, not something the record states; a term scan of the Levin register (*generation, inherit, offspring, germline*) returns no entry on cross-generational transmission of anatomical target-states. PRS-04 in the Rohr-tradition wiki (*embodied love as epistemology*) keeps the analysis personal: the bond is known from within the practice of love, not deduced from outside it.
 
 ## Solution (proposed, speculative)
 
@@ -45,8 +45,8 @@ The project's loving unity is *inclusion* — every limited perspective held wit
 ## Bridges
 
 - **Friston PRS-06 / PRS-16 (formal; load-bearing):** indissolubility as a long-horizon shared objective underwriting a long-horizon coupling — the structural reading of "ordered to the lifelong good of the offspring."
-- **Wright PRS-02 / PRS-03 (scriptural/theological):** legitimacy as conferred covenant-membership standing, not an intrinsic mark — salvation-as-inclusion at the civic scale.
-- **Levin PRS-01 (empirical, biological):** anatomical target-states conserved across the parent–offspring boundary — the empirical face of "offspring never cease to be the effect of their cause."
+- **Wright PRS-13 (scriptural/theological; load-bearing):** salvation as participation in God's homecoming among the people the Spirit is forming — the register's own record for this project's salvation-as-inclusion claim. Legitimacy is conferred covenant-membership standing at the civic scale, not an intrinsic mark. **Wright PRS-03 (scriptural, Confidence High):** inaugurated eschatology — the already/not-yet frame in which such standing is conferred and still being worked out. (Repointed 2026-08-31 from PRS-02, *faithful improvisation*, which is about extending a tradition into circumstances its founders never anticipated and does not carry the covenant-membership content this bullet needs.)
+- **Levin PRS-01 (empirical *within the organism*, Confidence High; the cross-generational reading is this file's declared extension):** bioelectric circuits encode anatomical target states as morphogenetic memory. The record establishes form as a real, memory-bearing organizing pattern in a single organism; the register carries no entry on transmission across the parent–offspring boundary (searched: generation, inherit, offspring, germline).
 - **Rohr PRS-04 (theological):** the bond and the child are known from within the practice of embodied love, not from an external ledger of worth.
 
 ## Where this leaves us

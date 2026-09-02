@@ -3,8 +3,9 @@ day: 143
 title: Kinds of Prudence (Contemporary)
 pairs_with: "[[Day-143 - Kinds of Prudence]]"
 length_target_words: 1500
-length_actual_words: 1517
-length_ratio_to_target: 1.011
+length_actual_words: 1698
+length_ratio_to_target: 1.132
+length_note: "Recounted 2026-09-01. The stored 1517 was understating a true 1545; post-repair 1698, ratio 1.132 — outside short-tier ±10%, inside ±25%. The increase is entirely citation apparatus: three bundled badges split and each record's own confidence grade stated. No argument was added."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-10 continuity of goal-directedness from unicellular to human — no categorical break, only degree; PRS-30 scale-continuous nesting of cognitive vantage points across cells, tissues, organisms, collectives; individual / household / city / kingdom as the same multi-scale competency architecture in the social register. Anchored 2026-08-24; the line had named the tradition with no id.)"
@@ -17,7 +18,7 @@ evidence_strength_summary: "Subjective parts (individual / domestic / political 
 mind_first_reframe: "Q.50 multiplies prudence by its ends — individual, domestic, political, regnative, military — and Q.51 names the deliberation and judgment virtues (eubulia, synesis, gnome) that feed command. Read through mind-monism, the species of prudence are the same practical-reasoning competency instantiated at nested agent-scales: the individual inside the household inside the city inside the kingdom, each a perspective computing toward the common good of the whole it is part of (Levin's agency-across-levels; Friston's nested blankets). And gnome — the higher judgment that overrides the common rule when the rule fails the case (the deposit one must not return to a traitor) — is out-of-distribution judgment: the agent recognizing that its learned rule does not cover this state and reaching to a more universal principle, the letter yielding to the spirit."
 central_theme_thread: "Two of the central claim's threads meet here. First, loving unity is computed at every scale: the subjective parts show one practical-reasoning competency running in the individual, the household, the city, and the kingdom — each a limited perspective ordering itself toward a common good larger than itself, the part computing for the whole it belongs to. Second, gnome is the precise moment perspective-limitation bites: the rule learned from 'the majority of cases' (Day 142) fails the singular case, and the agent must reach past its own settled model toward a higher principle it sees only partly. That reach — beyond the letter one has mastered toward a spirit one is still learning to see — is 'fear and trembling' in miniature: acting rightly in the case the rule did not anticipate, by a judgment that must answer to more of the whole than the rule contained."
 tags: [synthesis, day/143, theme/prudence-at-scale-and-the-rule-that-fails]
-last_qc_at: "2026-08-24T04:22:47"
+last_qc_at: "2026-09-01T16:28:39"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,10 +52,12 @@ Two threads of the central claim cross here. The first is that loving unity is c
 
 ## Bridges
 
-- *PRS-10 + PRS-30 in the Levin-tradition wiki (continuity of goal-directedness across scales; scale-continuous nesting of cognitive vantage points) + PRS-06 in the Friston-tradition wiki* — the subjective parts (Q.50) as one competency at nested agent-scales; political prudence (a.2) as the part computing for the whole it belongs to. (Formal at the social scale, empirical at the cellular; medium.)
-- *PRS-02 in the MacIntyre-tradition wiki + PRS-16 in the Friston-tradition wiki* — gnome vs. synesis (a.3–4) as out-of-distribution judgment: the common rule fails, the agent escalates to higher principles; the epistemological crisis in miniature. (Formal + interpretive; medium-strong.)
-- *PRS-05 in the McGilchrist-tradition wiki + PRS-01 in the Rohr-tradition wiki* — attending to the particular the rule cannot anticipate; the letter→spirit move that holds rule and exception together without collapsing either. (Interpretive; medium.)
-- *PRS-01 in the MacIntyre-tradition wiki + PRS-01 in the Wright-tradition wiki* — practical reason as polis- and tradition-constituted; critical-realist judgment, perspectival and revisable, tested against the case. (Interpretive; medium.)
+- *PRS-10 + PRS-30 in the Levin-tradition wiki* (continuity of goal-directedness across scales; scale-continuous nesting of cognitive vantage points) — the subjective parts (Q.50) as one competency at nested agent-scales. (*Both records High. Note the evidence kind: PRS-10's Resource is the continuity thesis and PRS-30's is the Kastrup–Levin dialogue on where the nesting stops — these are research-programme and metaphysical-sharpening records. Levin's measured bioelectric entries are PRS-01 and PRS-17, and the "empirical at the cellular" credit this bullet used to carry belongs to those, not to these two.*)
+- *PRS-06 in the Friston-tradition wiki* — political prudence (a.2) as the part computing for the whole it belongs to; nested blankets and multi-agent coherence. (*Record: P6 (Implicit), Confidence Medium — a proposed extension of FEP to multi-agent systems. Split from the Levin pair on 2026-09-01, where one badge had been carrying three records across two grades.*)
+- *PRS-02 in the MacIntyre-tradition wiki + PRS-16 in the Friston-tradition wiki* — gnome vs. synesis (a.3–4) as out-of-distribution judgment: the common rule fails, the agent escalates to higher principles; the epistemological crisis in miniature. (*Both records High. The "medium-strong" hedge is the analogy's — reading gnome as model-mismatch — not the register's grade on either record.*)
+- *PRS-05 in the McGilchrist-tradition wiki* — attending to the particular the rule cannot anticipate. (*Record: P5 (Implicit), Medium.*)
+- *PRS-01 in the Rohr-tradition wiki* — the letter→spirit move that holds rule and exception together without collapsing either; non-dual awareness as unity-in-distinction. (*Record: High. Split from PRS-05 on 2026-09-01; a single "medium" badge had been grading a High record at the Medium one's level.*)
+- *PRS-01 in the MacIntyre-tradition wiki + PRS-01 in the Wright-tradition wiki* — practical reason as polis- and tradition-constituted; critical-realist judgment, perspectival and revisable, tested against the case. (*Both records High; the "medium" is the interpretive step of applying them to gnome, not the records' standing.*)
 
 ## Where this leaves us
 

@@ -3,9 +3,9 @@ day: 269
 title: Absolution of Excommunication (Contemporary)
 pairs_with: "[[Day-269 - Absolution of Excommunication]]"
 length_target_words: 1500
-length_actual_words: 919
+length_actual_words: 970
 length_tier: short
-length_ratio_to_target: 0.61
+length_ratio_to_target: 0.647
 length_note: "Compact by design: the source episode is short (~5.5 min, 988 transcript words) and develops the contact-limit and binding/loosing-symmetry motifs completely without padding."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-07 bioelectric reprogramming — restoring a defected cell to the collective field)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "The binding/loosing symmetry and absolution-as-re-co
 mind_first_reframe: "Absolution is reframed as re-coupling: the same jurisdictional power that drew the boundary now dissolves it, restoring the member to the collective field (Levin PRS-07) — the Markov blanket re-incorporates what it had excluded (Friston) — so the body's boundary is permeable by design, ordered to reintegration."
 central_theme_thread: "Re-inclusion is the telos the cut was for: the same power that bound looses, returning the perspective-limited member to the whole — disorder resolved into a deeper reorder."
 tags: [synthesis, day/269, theme/absolution-as-re-coupling]
-last_qc_at: "2026-08-18T10:27:13"
+last_qc_at: "2026-09-01T02:29:49"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,7 +51,7 @@ Absolution is where the central claim shows its direction. Excommunication indiv
 - **PRS-07 in the Levin-tradition wiki (bioelectric reprogramming — normalizing, not ablating, a defected cell)** — *empirical-in-domain.* Absolution as restoration of the member to the collective field.
 - **PRS-22 / PRS-06 in the Friston-tradition wiki (the group-level Markov blanket; coupling by mutual modeling)** — *formal.* Binding and loosing as the one boundary-operation run in both directions.
 - **PRS-02 in the Rohr-tradition wiki (the disorder necessary for growth — order/disorder/reorder)** — *theological / contemplative.* Absolution as the reorder that re-includes at a deeper level.
-- **Wright, dominical binding/loosing; restoration to the covenant body** — *scriptural / theological.* The symmetry grounded in the grant of the keys.
+- **PRS-34 in the Wright-tradition wiki (justification as God's declaration of covenant membership; table fellowship, not badge-keeping, as the operative test of belonging)** — *scriptural / theological, Confidence High.* Restoration to the table is restoration to the body — the register entry the `karpathy_wiki_sources` line already named but the bullet left unanchored. The dominical grant of the keys itself (binding/loosing) has no Wright register entry and stands as canonical/scriptural.
 
 ## Where this leaves us
 

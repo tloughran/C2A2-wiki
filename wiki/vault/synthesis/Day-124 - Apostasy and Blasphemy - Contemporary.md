@@ -3,8 +3,9 @@ day: 124
 title: Apostasy & Blasphemy (Contemporary)
 pairs_with: "[[Day-124 - Apostasy and Blasphemy]]"
 length_target_words: 1500
-length_actual_words: 1370
-length_ratio_to_target: 0.91
+length_actual_words: 1461
+length_ratio_to_target: 0.974
+length_count_note: "Recounted 2026-09-01 by the recorded method (strip frontmatter from either end; drop the auto-linker **Related tradition records** trailer; count [A-Za-z']+). Prior value 1370 understated the body by ~57 words before this run's badge edit. Inside +/-10pct either way."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 generative model; PRS-08 target morphology as prior belief)"
@@ -16,7 +17,7 @@ evidence_strength_summary: "Will-as-orientation (the object of the will is a cla
 mind_first_reframe: "An agent's deepest valuation is a truth-apt commitment about what is fundamental, because under monism valuing and representing are one operation (Friston: the set-point is part of the generative model); so 'interior blasphemy of the heart' (Q.13 a.4) is a model whose highest-precision set-point is fixed on something that is not the ground — false as lived, not merely as spoken — and apostasy is the complete loss of the target set-point (Levin), distinct from local divergence within the basin."
 central_theme_thread: "This is the will-as-orientation face of the central theme: the deepest fact about a perspective is the target toward which it computes, so to set the will on something-other-than-the-whole is to render, in the only currency that finally counts, a false verdict about what the whole is; 'the damned blaspheme' is the central theme's shadow — a perspective so fixed away from the whole that even its silence testifies against the good — while the saints' praise is the computation toward loving unity completed."
 tags: [synthesis, day/124, theme/will-as-orientation]
-last_qc_at: "2026-08-24T14:29:02"
+last_qc_at: "2026-09-01T18:30:56"
 last_qc_outcome: "rewrote"
 ---
 
@@ -56,7 +57,7 @@ This is the will-as-orientation face of the central theme. Each conscious agent 
 
 ## Bridges
 
-- *PRS-04 + PRS-08 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference work)* — the agent is a generative model whose set-point is inseparable from its representation; the will's object is a model-level commitment. (Formal; high.)
+- *PRS-04 + PRS-08 in the Friston-tradition wiki (Tom's PRS-form record of Friston's active-inference work)* — the agent is a generative model whose set-point is inseparable from its representation; the will's object is a model-level commitment. (Formal in framing; both records carried at **Medium**, and PRS-08's own Problem line states the FEP-morphogenesis relation "has been asserted but not formally modeled" — so the bridge is a *proposed* formalization, not an achieved one. Not "high.")
 - *PRS-03 + PRS-04 in the Hoffman-tradition wiki* — a model can be coherent yet systematically wrong about the underlying reality; blasphemy as the limiting misrepresentation. (Formal/evolutionary; medium, speculative in application.)
 - *PRS-02 in the Kastrup-tradition `prs_triplets.md` (mind-at-large and the dissociated alter)* — the register's individuation claim is that individual beings are "dissociated points of view" of one undivided consciousness; taking the transient/dissociated for the fundamental is therefore the deepest category error, and blasphemy is its limit case. (Metaphysical; speculative.)
 - *PRS-02 + PRS-03 in the Levin-tradition wiki* — apostasy as a lost set-point / departure from the basin, distinct from local divergence within it. (Analogical; medium.)

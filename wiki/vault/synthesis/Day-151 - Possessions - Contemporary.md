@@ -17,8 +17,8 @@ mind_first_reframe: "Aquinas grounds property in the natural-law function of ste
 central_theme_thread: "Property is a perspective-relative allocation that exists for the sake of the whole's flourishing. The agent's perspective is finite; resources are finite; allocation is the working-out of how parts that cannot see the whole hold goods on the whole's behalf. Theft is the part absolutizing its own perspective against the whole; the judge's injustice is the same defection from a position of office. The central claim — loving unity as the computational target each limited perspective pursues — names theft as the local-optimum policy that defects from the global target, and the judge's injustice as a higher-stakes version of the same defection: the office that exists to track the global target abandons it for self-interest."
 tags: [synthesis, day/151, theme/possessions-stewardship-and-the-whole]
 length_note: "Under tier target (1600/2200, 0.73) by substantive choice — Q.66 (8 articles on possession, theft, necessity) and Q.67 (4 articles on judicial injustice) share a single arc and one PRS structure; the tight treatment carries the central theme cleanly without padding."
-last_qc_at: "2026-08-24T12:21:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T20:23:18"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 151 — Contemporary Parallel: Possessions, Theft, and the Whole That Holds
@@ -56,7 +56,7 @@ External possessions are the most concrete arena of the central claim. Each agen
 - *PRS-10 + PRS-17 + PRS-02 + PRS-11 in the Levin-tradition wiki (graded goal-directedness; bioelectric cognitive glue constituting a collective knower; cancer as defection; bioelectric identity re-integration as therapy)* — theft as the part's defection from the field's allocation; restitution as the morphogenetic-field analogue of cancer therapy. Necessity (a.7) as the field's reclamation of its prior allocation when a part's survival is at stake. (Empirical at biological scale; analogy interpretive, medium.)
 - *PRS-01 in the Wright-tradition wiki (critical realism) + PRS-01 + PRS-28 in the Carroll-tradition wiki (poetic naturalism's legitimate higher-level descriptions; moral facts real at the agent-and-wellbeing level without smuggled non-natural properties)* — property as a real-but-perspective-relative allocation; the political whole's apportionment as a real higher-level pattern. (Formal; strong-in-field.)
 - *PRS-14/15 in the Stump-tradition wiki (corporate substance)* — the political whole as a real unity, the part holding the whole's goods for the whole's flourishing. (Medium-speculative.)
-- *PRS-28 + PRS-04 in the Friston-tradition wiki (precision-weighting over selected channels; the organism as active modeler)* — judicial offices as bounded inference; the species of judicial injustice (Q.67 a.2-5) as specific failure modes of a bounded inferential apparatus. (Formal; medium-strong.)
+- *PRS-28 + PRS-04 in the Friston-tradition wiki (precision-weighting over selected channels; the organism as active modeler)* — judicial offices as bounded inference; the species of judicial injustice (Q.67 a.2-5) as specific failure modes of a bounded inferential apparatus. (Formal, and graded down to what the register actually says: **both records are Medium**, PRS-04 is marked **(Implicit)**, and **PRS-28's confidence line states in its own words** that the abstract "represents Friston's stated intent rather than published derivation" — a lecture forthcoming. The precision-weighting reading of judicial office is the most speculative move in this synthesis, not one of its firmer ones.)
 - *Wright on jubilee + the Pauline collection (PRS-02 faithful improvisation)* — the scriptural-tradition counterpart to the necessity provision: positive law repeatedly reasserts that allocation is for the whole's flourishing, not against the part's survival. (Theological; strong in tradition.)
 
 ## Where this leaves us

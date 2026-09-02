@@ -16,8 +16,8 @@ length_ratio_to_target: 0.754
 mind_first_reframe: "The conflagration is the renewal of one conserved cosmos — matter changed in state, not destroyed; the same purifying process is felt differently by different perspectives according to what each contains to be purged."
 central_theme_thread: "One process, perspective-relative effect: the fire that is mere transformation 'from outside' is pain or peace 'from inside' depending on the perspective's own state — the project's individuation-by-limitation written across the whole cosmos at its renewal."
 tags: [synthesis, day/294, theme/cosmic-renewal-as-transformation-not-annihilation]
-last_qc_at: "2026-08-17T12:20:26"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-01T02:29:48"
+last_qc_outcome: "pass"
 ---
 
 # Day 294 — Final Conflagration (Contemporary Parallel)

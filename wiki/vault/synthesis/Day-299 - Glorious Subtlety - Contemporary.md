@@ -3,21 +3,21 @@ day: 299
 title: Glorious Subtlety (Contemporary)
 pairs_with: "[[Day-299 - Glorious Subtlety]]"
 length_target_words: 2200
-length_actual_words: 1423
+length_actual_words: 1566
 length_tier: medium
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/prs_triplets.md (PRS-01 the form's command of its matter; PRS-03 morphological attractor; PRS-04 substrate-independent control)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 the form's command of its matter, empirical/High; PRS-03 morphological attractor, a formalism; PRS-04 substrate-independent basal cognition, Implicit/Medium)"
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-13 spacetime bounds on unified consciousness)"
   - "wiki/traditions/carroll/prs_triplets.md (PRS-13 Wheeler-DeWitt / timeless universe — time not fundamental; PRS-11 emergence classification Type-0/1/2). Emergent *spatial* extension has no Carroll triplet and is carried canonically."
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-11 scalable control)"
-evidence_strength_summary: "'Subtlety/agility = the form's command of its matter taken to a limit' is conceptual, with an empirical figure from substrate-independent morphological control (Levin); the 'spacetime as interface, so location is rendered not fundamental' move is interface-theoretic (Hoffman) and connects to emergent-spacetime physics (Carroll, frontier); the 'two bodies in one place by divine power' cases are explicitly miraculous-theological and NOT endorsed by physics; agility's temporality is consistent with motion being a real process (Carroll/Friston)."
+evidence_strength_summary: "'Subtlety/agility = the form's command of its matter taken to a limit' is conceptual, with an empirical figure from bioelectric morphological control (Levin PRS-01, High) — while the substrate-independence extension of it (Levin PRS-04) is Implicit/Medium and the attractor formalism (PRS-03) is a modelling language rather than a measured result; the 'spacetime as interface, so location is rendered not fundamental' move is interface-theoretic (Hoffman) and connects to emergent-spacetime physics (Carroll, frontier); the 'two bodies in one place by divine power' cases are explicitly miraculous-theological and NOT endorsed by physics; agility's temporality is consistent with motion being a real process (Carroll/Friston)."
 length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1264 -> 1423, +159 (12.6%), ratio 0.575 -> 0.647. Eighth independent confirmation that the field understates, same direction, and the largest since Day 262. Still ~35% under the medium tier (tier verified correct: transcript word_count 2123, medium): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated."
-length_ratio_to_target: 0.647
+length_ratio_to_target: 0.712
 mind_first_reframe: "Subtlety and agility are the body's responsiveness to the soul taken toward its limit — the form's command of its matter so complete that location and motion answer to the will; the 'two bodies in one place' cases are flagged as miraculous, not as physics."
 central_theme_thread: "The glorified body's spatial freedom is the perfected perspective's agency: control overflowing from the higher (soul) to the lower (body), so the embodied viewpoint moves and is placed as love directs — without the resource-scarcity that limits agency now."
 tags: [synthesis, day/299, theme/subtlety-and-agility-as-the-forms-command-of-matter-at-its-limit]
-last_qc_at: "2026-08-16T00:25:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T00:23:58"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 299 — Glorious Subtlety (Contemporary Parallel)
@@ -46,10 +46,12 @@ The glorified body's spatial freedom is the project's perfected *agency*. In thi
 
 ## Bridges
 
-- **Levin PRS-01 / PRS-03 / PRS-04 (empirical figure; load-bearing on the natural articles):** the depth of a form's command over its substrate as a real, scalable variable — subtlety/agility as that variable at its limit.
+- **Levin PRS-01 (empirical, high confidence; load-bearing on the natural articles):** bioelectric circuits encode an anatomical target state and command the matter that realizes it — the depth of a form's command over its substrate as a real, measurable variable. Subtlety and agility are that variable at its limit.
+- **Levin PRS-03 (formal, high confidence):** the morphological-attractor formalism is a modelling language for target states, not a measured result; it supplies the vocabulary of "command taken to a limit," not evidence for it.
+- **Levin PRS-04 (Implicit, Confidence Medium):** substrate-independent basal cognition is the network's own extension of the empirical work rather than a settled finding, and the "responsiveness scales past its familiar substrate" move rests on it. Named at its actual standing rather than bundled with PRS-01.
 - **Hoffman PRS-04 / PRS-13 (formal-to-speculative):** spacetime as interface — location and palpability become rendered, interface-relative, illuminating "loses its distinction of place."
 - **Carroll PRS-13 / PRS-11 (frontier physics):** PRS-13 (Wheeler–DeWitt, timeless universe) makes "*time* is not fundamental" a live position within the Carroll-tradition record, and PRS-11 (emergence classification: Type-0 / Type-1 / Type-2) supplies the vocabulary for saying precisely *what kind* of emergence is being claimed. The stronger claim in play here — that *spatial extension* is emergent — has no home in the Carroll record and is carried canonically (*The Big Picture*, Part One) rather than by id.
-- **Friston PRS-04 / PRS-11 (formal):** motion as a temporal, active process — consonant with Aquinas's denial of instantaneous motion.
+- **Friston PRS-04 / PRS-11 (both Confidence Medium; PRS-04 is Label "(Implicit)" — the network's reconstruction of the organism-as-active-modeler picture, not a published formal result, and PRS-11 is a tractability result about control parameterization):** motion as a temporal, active process of policy execution — consonant with Aquinas's denial of instantaneous motion. The consonance is real; the formal weight it can bear is Medium, and is stated at that.
 
 ## Where this leaves us
 

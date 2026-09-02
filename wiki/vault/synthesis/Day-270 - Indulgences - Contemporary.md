@@ -3,12 +3,12 @@ day: 270
 title: Indulgences (Contemporary)
 pairs_with: "[[Day-270 - Indulgences]]"
 length_target_words: 2200
-length_actual_words: 1487
+length_actual_words: 1602
 length_tier: medium
-length_ratio_to_target: 0.68
+length_ratio_to_target: 0.728
 length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review."
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (collective morphogenetic field as a shared informational store the whole applies to a part; PRS-07 normalization from the field)"
+  - "traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue — the target pattern held by the collective, not the cell; PRS-07 bioelectric reprogramming as the mechanism of application)"
   - "traditions/friston/prs_triplets.md (PRS-06 the collective agent; mutual modeling pools resources across members)"
   - "traditions/loughran/prs_triplets.md (PRS-09 Synergistic Coils as meta-tools — one abstract resource recurring across levels, solving more than one P-to-S transition)"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — merit as participation in one pattern, not accounting)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "The treasury-as-shared-field and one-resource-meetin
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-08-14T18:35:44"
+last_qc_at: "2026-09-01T00:23:09"
 last_qc_outcome: "rewrote"
 ---
 
@@ -37,7 +37,7 @@ Two programs converge here, and a third concept of Tom's names the structure the
 
 Friston's program gives the formal sense of a *pooled* resource. In Tom's PRS-form record of Friston's work, PRS-06 (multi-agent coherence via mutual modeling) describes how members, by reducing prediction error in one another's models, come to share a single generative model — a common store of expectations, competences, and corrections that no member built alone and on which each can draw. A collective agent of this kind *holds* something its members severally do not: the pooled model is a real, super-individual resource. The treasury of merit, read through this lens, is the limit case of such pooling — a shared store of the whole's accumulated good, held by the collective and applicable to any member coupled into it.
 
-Levin's program gives the biological instance. In Tom's PRS-form record of Levin's work, the body's collective morphogenetic field is exactly a *shared informational store*: the pattern toward which the whole organizes is held at the level of the field, and individual cells draw on it — a damaged or deficient region is repaired by signaling from the surrounding field, which carries the target pattern the local cells have lost. PRS-07 (bioelectric reprogramming / normalization) shows the mechanism: the field supplies to a deficient part what that part cannot supply itself. An indulgence has precisely this form — the whole's stored good applied to a member's deficit by the authority that holds the store.
+Levin's program gives the biological instance, and it takes two records rather than one. PRS-17 in the Levin-tradition wiki (bioelectric pattern memory as *cognitive glue*, constituting a collective knower above the level of individual cells; Confidence High) is where the *store* itself lives: the target morphology is held as a spatial voltage pattern at the level of the collective, not in any single cell, so the pattern toward which the whole organizes is genuinely super-individual and a deficient region can be repaired by signaling from a surrounding field that still carries what the local cells have lost. PRS-07 (bioelectric reprogramming as a therapeutic paradigm — updating the voltage instructions rather than the genetic code; Confidence High) is the *mechanism* by which that stored pattern is applied to a part that has departed from it. An indulgence has precisely this form — the whole's stored good applied to a member's deficit by the authority that holds the store.
 
 And here the deep structure is one of Tom's own concepts. The *Synergistic Coil* — Tom's term for a configuration in which a single resource solves more than one Problem-to-Solution transition — names exactly the economy of the treasury. The merit of Christ is *one* resource that meets the deficits of *indefinitely many* members; the saints' superabundance is a surplus that, once produced, can be applied across the body without being used up. This one-R-serving-many-Ps structure is the formal signature of the *thesaurus meritorum*: not a ledger in which each member pays his own balance, but a coil in which a single superabundant resource discharges into many distinct needs. (The Synergistic Coil is Tom's concept, with the lineage Kuhn + MacIntyre + Levin-via-James; it is not any tradition's self-description.)
 
@@ -53,7 +53,8 @@ Indulgences bring the central claim to a quiet climax. The synthesis's governing
 
 ## Bridges
 
-- **Levin-tradition wiki (collective morphogenetic field as a shared store; PRS-07 the field supplies what a deficient part lacks)** — *empirical-in-domain.* The treasury as a common field applied to a member's deficit.
+- **PRS-17 in the Levin-tradition wiki (bioelectric pattern memory as cognitive glue — a collective knower above the individual cells)** — *empirical, high confidence.* Where the shared store is held: the target pattern belongs to the whole, not to any member.
+- **PRS-07 in the Levin-tradition wiki (bioelectric reprogramming as therapeutic paradigm)** — *empirical, high confidence.* The mechanism of application: the stored pattern is re-imposed on a part that has departed from it.
 - **PRS-06 in the Friston-tradition wiki (mutual modeling pools a super-individual generative model)** — *formal, medium confidence.* The whole holds a shared resource no member built alone.
 - **PRS-09 in the Loughran-tradition wiki (Synergistic Coils as meta-tools — one resource solving many P-to-S transitions)** — *formal / structural.* Names the treasury's economy: one superabundant source meeting many members' needs.
 - **PRS-03 in the Rohr-tradition wiki (the Universal Christ)** — *theological / contemplative.* Merit as participation in one pattern, not accounting.

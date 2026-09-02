@@ -3,22 +3,22 @@ day: 272
 title: Extreme Unction (Contemporary)
 pairs_with: "[[Day-272 - Extreme Unction]]"
 length_target_words: 2200
-length_actual_words: 1372
-length_ratio_to_target: 0.62
+length_actual_words: 1600
+length_ratio_to_target: 0.727
 length_note: "Under medium-tier target — the threshold-sacrament questions (Q.29–30) are short in Habash's treatment; the contemporary engagement on form-bearing matter is complete, not padded."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 bioelectric anatomical target states / morphogenetic memory; PRS-07 bioelectric reprogramming as therapeutic paradigm; PRS-08 cells as cognitive agents in anatomical morphospace)"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — divine pattern present in matter; PRS-04 embodied love as epistemology, the body as a site of knowing)"
-  - "traditions/wright/wiki.md (resurrection as historical event with cosmological significance; new creation; Surprised by Hope)"
+  - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-06 resurrection as the firstfruits of new creation breaking into the old — repointed at QC 2026-09-01 from the stale canonical-works fallback, which had cited only wright/wiki.md and Surprised by Hope)"
   - "master/cross_program_index.md (CROSS-008, as RESTATED 2026-08-10: Levin and Stump share a rejection of isolated individualism about the unit of explanation. The stronger 2026-04 form — that Thomistic final causality supplies the framework Levin's teleology requires — was withdrawn as unsupported by author testimony and is no longer relied on here.)"
   - "traditions/friston/prs_triplets.md (PRS-03 morphogenesis as free energy minimization toward a target anatomy)"
 evidence_strength_summary: "Form-bearing matter and target-state restoration are empirical (Levin PRS-01/07) and formal (Friston PRS-03); the hylomorphic reading of sacramental matter is metaphysical and is this commentary's own interpretation (CROSS-008 was restated downward 2026-08-10 and no longer underwrites it); the conferral of grace and the orientation toward resurrection are theological (Rohr, Wright)."
 mind_first_reframe: "Extreme Unction is a material sign acting on form-bearing matter at the body's limit — anointing read against Levin's bioelectric target-states, where matter is continually re-pointed toward the form it is meant to hold, and oriented (Wright) toward the bodily future of new creation."
 central_theme_thread: "At the threshold of death the agent's perceptual resources are most depleted; the sacrament supplies guidance and re-orientation from the whole precisely where the limited perspective can do least for itself."
 tags: [synthesis, day/272, theme/form-bearing-matter-at-the-limit]
-last_qc_at: "2026-08-18T14:27:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T02:30:07"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 272 — Extreme Unction (Contemporary)
@@ -62,7 +62,7 @@ This project reads agents as individuated by the limitations of their perspectiv
 - **CROSS-008** (`master/cross_program_index.md`) **as restated 2026-08-10** (metaphysical, downgraded): Levin and Stump converge on rejecting *isolated individualism about the unit of explanation*. Why: it supports reading both programs as denying that a cell or a mind is explicable apart from its relations — which is what this commentary needs. It no longer licenses the stronger claim that Thomistic final causality *grounds* the biology; that inference was withdrawn as unsupported by Stump's own testimony, and the hylomorphic reading here stands as interpretation rather than as confirmed bridge.
 - **Friston PRS-03** (formal): morphogenesis as free-energy minimization toward target anatomy. Why: it supplies the mathematics for the body's continual self-re-pointing.
 - **Rohr PRS-03 / PRS-04** (theological): the Universal Christ in matter; the body as a site of knowing. Why: it forbids treating sacramental matter as idle symbol.
-- **Wright, *Surprised by Hope*** (theological): resurrection and new creation as the body's final target form. Why: it gives the threshold sacrament its forward vector beyond this-life restoration.
+- **Wright PRS-04** (`traditions/wright/prs_triplets.md`; theological / historical-scriptural): *resurrection as historical and cosmological* — resurrection and new creation as the body's final target form. Why: it gives the threshold sacrament its forward vector beyond this-life restoration. *Anchoring note:* this bullet previously cited only *Surprised by Hope*, and the sources line only `wright/wiki.md`. That was the canonical-works fallback, which is now stale — the Wright register carries the entry (PRS-04), and the sibling Day 294 anchors the same claim to it. Wright PRS-06 (*resurrection as the firstfruits of new creation breaking into the old, not an anomaly within a closed system*) is the adjacent entry if the new-creation half needs its own anchor.
 
 ## Where this leaves us
 

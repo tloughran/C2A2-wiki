@@ -16,8 +16,8 @@ evidence_strength_summary: "The role-independent-of-bearer claim is formal (Fris
 mind_first_reframe: "The validity of an unworthy minister's act is read against substrate-independence: the office is a structural role whose function is fixed by the collective's boundary conditions (Friston PRS-07), not by the bearer's interior state — while the sacrament's claim that grace truly flows is marked as theological."
 central_theme_thread: "Even a deeply limited, compromised perspective can be a faithful conduit of guidance from the whole; the grace channeled exceeds what the channel itself perceives or deserves."
 tags: [synthesis, day/275, theme/the-office-exceeds-its-bearer]
-last_qc_at: "2026-08-15T06:29:53"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-01T00:22:48"
+last_qc_outcome: "pass"
 ---
 
 # Day 275 — Ordaining the Unworthy (Contemporary)

@@ -3,8 +3,8 @@ day: 271
 title: Public Penance (Contemporary)
 pairs_with: "[[Day-271 - Public Penance]]"
 length_target_words: 1500
-length_actual_words: 1094
-length_ratio_to_target: 0.73
+length_actual_words: 1185
+length_ratio_to_target: 0.79
 length_note: "Short tier — Habash's treatment of indulgences' recipients and the solemn rite of public penance is brief; the contemporary engagement is fully developed without padding."
 length_tier: short
 karpathy_wiki_sources:
@@ -17,7 +17,7 @@ evidence_strength_summary: "Sin-as-defection and restoration-as-re-coherence are
 mind_first_reframe: "Public penance is the collective agent visibly re-admitting a member whose generative model had defected from the shared field — reincorporation modeled as bioelectric re-coherence (Levin) achieved through mutual remodeling (Friston PRS-06)."
 central_theme_thread: "The penitent's perspective had narrowed to the self; the solemn rite re-includes that perspective in the whole through the guidance of those who perceive more of it — the institutional shape of 'working out salvation in fear and trembling.'"
 tags: [synthesis, day/271, theme/defection-and-reincorporation]
-last_qc_at: "2026-08-18T12:20:30"
+last_qc_at: "2026-09-01T02:29:50"
 last_qc_outcome: "rewrote"
 ---
 
@@ -55,7 +55,7 @@ The defected member is, in this project's terms, a perspective that has collapse
 - **Friston PRS-06** (formal): reincorporation as mutual remodeling that re-aligns a divergent generative model with the community's shared attractor. Why: it specifies the *mechanism* of re-binding that Aquinas describes only juridically.
 - **FINDING-007** (`flags/pattern_detector_findings.md`) **/ CROSS-006** (`master/cross_program_index.md`) (formal): the Levin × Friston identity — one substrate-independent law of self-organization — so the cellular and social images are the same object, not loose analogy.
 - **Rohr PRS-02** (theological-developmental): order–disorder–reorder; penance as the passage to a deeper, tested order. Why: it dignifies the disorder as necessary rather than merely shameful.
-- **Rohr PRS-07 / Wright on covenant** (theological): salvation as inclusion in the relational pattern / the people, not private escape. Why: it anchors the reframe to Rohr's non-dual Christ and Wright's covenant ecclesiology.
+- **Rohr PRS-07 / Wright PRS-13** (theological): salvation as inclusion in the relational pattern / the people, not private escape. Why: it anchors the reframe to Rohr's relation-is-basal claim and Wright's covenant ecclesiology. *Anchoring note:* the Wright half was previously unanchored; the register entry is PRS-13 (*God's Homecoming* — the people of God as the location of God's homecoming, the working-out of salvation as participation in it as a member of the people the Spirit is forming), which the `karpathy_wiki_sources` line already named. The Rohr id is written `PRS-7` in the register (unpadded above 05, a known register data form, not a missing id); its Solution carries the cited words verbatim — *salvation is conversion into that relational pattern, not an individual escape*.
 
 ## Where this leaves us
 

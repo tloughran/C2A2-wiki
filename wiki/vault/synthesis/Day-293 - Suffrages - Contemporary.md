@@ -3,21 +3,21 @@ day: 293
 title: Suffrages (Contemporary)
 pairs_with: "[[Day-293 - Suffrages]]"
 length_target_words: 2200
-length_actual_words: 1200
+length_actual_words: 1274
 length_tier: medium
-length_note: "Runs ~45% under the medium tier (1200 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.55
+length_note: "Runs ~42% under the medium tier (1274 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after a citation repair (Wright PRS-02 repointed to PRS-13) added ~74 words to the stored 1200."
+length_ratio_to_target: 0.579
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-16 expected free energy as shared objective; PRS-05 distributed cognition across scales)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-04 embodied love as epistemology)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; canonical: the one body, salvation as incorporation)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-13 God's Homecoming — salvation as participation in God's homecoming among the people the Spirit is forming; the register's record for salvation-as-incorporation)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales; PRS-08 cells as agents in a collective)"
-evidence_strength_summary: "The 'one coupled agent shares an objective' reading is formal (Friston); that help flows along a charity-bond but cannot flip an agent's fundamental orientation is a structural/conceptual claim; the communion-of-the-one-body register is scriptural-theological (Wright, Rohr); the multi-scale collective-agent precedent is empirical (Levin)."
+evidence_strength_summary: "The 'one coupled agent shares an objective' reading is formal (Friston); that help flows along a charity-bond but cannot flip an agent's fundamental orientation is a structural/conceptual claim; the communion-of-the-one-body register is scriptural-theological (Wright PRS-13, Rohr); the multi-scale collective-agent precedent is empirical (Levin)."
 mind_first_reframe: "Suffrages model a community of coupled agents pooling resources toward one shared objective; transfer of merit is real along the bond of union, but a recipient's fundamental orientation (their 'state') is set by their own perspective and cannot be paid for from outside."
 central_theme_thread: "This is the project's loving unity stated almost directly: many limited perspectives bound into one body by charity, each contributing to the others' completion — yet inclusion still turns on the agent's own orientation, the 'fear and trembling' that no one else can supply for them."
 tags: [synthesis, day/293, theme/communion-as-coupled-agents-sharing-one-objective]
-last_qc_at: "2026-08-14T12:21:19"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T22:30:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 293 — Suffrages (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the structure of a community of coupled agents p
 
 ## Resource
 
-The Friston-tradition program supplies the leading structural move. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-16, *expected free energy as a shared objective*; PRS-05, *distributed cognition across scales*) lets us state suffrages precisely. When agents mutually model one another and *adopt a common objective*, they become a single higher-order system over which work is, in a real sense, *pooled*: free-energy reduction achieved by one member improves the joint state, and the more tightly coupled the members (Aquinas's "the more one with me in charity"), the more fully one member's work counts as the system's. This is a clean structural reading of "the work of one who is one with me is somewhat mine." The same framework explains the *limit*. An agent's *own* policy — its fundamental orientation toward or away from the shared objective — is constitutive of its being that agent; it can be *influenced* through coupling, but it cannot be *set from outside* without dissolving the agent's agency. That is Aquinas's hard line exactly: suffrages can reduce a member's debt and aid one already oriented toward the good, but cannot *flip* a fundamentally averted orientation — that orientation is the one thing only the agent's own perspective can determine. The Rohr-tradition program governs the theological register: PRS-03 (*the Universal Christ*) reads the whole communion as members of one cosmic body in whom Christ is the binding principle, and PRS-04 (*embodied love as epistemology*) keeps the transfer personal — it is *love*, not bookkeeping, that makes one member's work available to another. The Wright-tradition program supplies the scriptural ground: PRS-02 (*faithful improvisation*) and Wright's reading of "the one body" frame salvation itself as *incorporation* into a people, so that mutual bearing of one another's burdens (Col 1:24, "I complete what is lacking…") is the body acting as one. The Levin-tradition program supplies the empirical precedent: PRS-09 (*cognitive attribution across scales*) and PRS-08 (*cells as agents in a morphogenetic collective*) show real multi-scale agents in which lower units' work is pooled into a higher individual's goal — the biological face of "one body, many members."
+The Friston-tradition program supplies the leading structural move. Tom's PRS-form record of Friston's work (PRS-06, *multi-agent coherence via mutual modeling*; PRS-16, *expected free energy as a shared objective*; PRS-05, *distributed cognition across scales*) lets us state suffrages precisely. When agents mutually model one another and *adopt a common objective*, they become a single higher-order system over which work is, in a real sense, *pooled*: free-energy reduction achieved by one member improves the joint state, and the more tightly coupled the members (Aquinas's "the more one with me in charity"), the more fully one member's work counts as the system's. This is a clean structural reading of "the work of one who is one with me is somewhat mine." The same framework explains the *limit*. An agent's *own* policy — its fundamental orientation toward or away from the shared objective — is constitutive of its being that agent; it can be *influenced* through coupling, but it cannot be *set from outside* without dissolving the agent's agency. That is Aquinas's hard line exactly: suffrages can reduce a member's debt and aid one already oriented toward the good, but cannot *flip* a fundamentally averted orientation — that orientation is the one thing only the agent's own perspective can determine. The Rohr-tradition program governs the theological register: PRS-03 (*the Universal Christ*) reads the whole communion as members of one cosmic body in whom Christ is the binding principle, and PRS-04 (*embodied love as epistemology*) keeps the transfer personal — it is *love*, not bookkeeping, that makes one member's work available to another. The Wright-tradition program supplies the scriptural ground: PRS-13 (*God's Homecoming*) frames salvation itself as *incorporation* — the people of God as the location of God's homecoming, and the working-out of salvation as participation in it as a member of the people the Spirit is forming — so that mutual bearing of one another's burdens (Col 1:24) is the body acting as one. The Levin-tradition program supplies the empirical precedent: PRS-09 (*cognitive attribution across scales*) and PRS-08 (*cells as agents in a morphogenetic collective*) show real multi-scale agents in which lower units' work is pooled into a higher individual's goal — the biological face of "one body, many members."
 
 ## Solution (proposed, speculative)
 
@@ -46,7 +46,7 @@ This article states the project's destination almost in plain words. Loving unit
 
 - **Friston PRS-06 / PRS-16 / PRS-05 (formal; load-bearing):** coupled agents pooling work toward a shared objective explains both the reality of transferred merit and its limit at the other's own policy.
 - **Rohr PRS-03 / PRS-04 (theological):** the one cosmic body bound in Christ; the transfer is love, not accounting.
-- **Wright PRS-02 (scriptural):** salvation as incorporation into a people — "the one body" bearing one another's burdens.
+- **Wright PRS-13 (scriptural; load-bearing):** salvation as participation in God's homecoming among the people the Spirit is forming — the register's own record for salvation-as-incorporation, which is what this article's "one body" turns on. (Repointed 2026-08-31 from PRS-02, *faithful improvisation*, whose Problem is how a community extends a tradition into unanticipated circumstances; it does not carry the incorporation claim.)
 - **Levin PRS-09 / PRS-08 (empirical):** real multi-scale collectives in which lower units' work is pooled into a higher individual's goal.
 
 ## Where this leaves us

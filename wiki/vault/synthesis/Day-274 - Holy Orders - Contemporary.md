@@ -16,7 +16,7 @@ evidence_strength_summary: "Role-differentiation within a collective agent is fo
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-08-14T12:21:09"
+last_qc_at: "2026-08-31T22:29:38"
 last_qc_outcome: "pass"
 ---
 

@@ -3,25 +3,25 @@ day: 168
 title: Simony and Piety (Contemporary)
 pairs_with: "[[Day-168 - Simony and Piety]]"
 length_target_words: 2200
-length_actual_words: 1969
+length_actual_words: 2372
 length_tier: medium
-length_ratio_to_target: 0.895
-length_note: "Under tier target by ~10% (ratio 0.895, after the 2026-08-12 QC pass added the ten article anchors; was 0.78). Q.100–101 mirror cleanly around the gift/market boundary; the prose tracks the load-bearing moves (gift-economy / constitutive-debt / Levin-defection) without padding the parallels."
+length_ratio_to_target: 1.078
+length_note: "Recounted 2026-09-01: 1969 pre-edit (the stored figure was exact), 2372 post-repair against a 2200 medium-tier target, ratio 1.078 — inside ±10%. The file was at 0.895 before this pass and 0.78 before the 2026-08-12 pass added the ten article anchors; both increases are citation apparatus, and the 2026-09-01 one is the Fredrickson ids, the Rohr anchors, four split badges and one named search radius. Q.100–101 mirror cleanly around the gift/market boundary; the prose tracks the load-bearing moves (gift-economy / constitutive-debt / Levin-defection) without padding the parallels."
 mind_first_reframe: "Under mind-monism, individual conscious agents are constituted-by-relation (Kastrup's dissociated alters, Friston's mutually-modeling agents, Levin's collective-cognition cells, Stump's second-personal narrative knowing); spiritual goods are gifts within constitutive relations, and simony is the category-error of subjecting such goods to market-economy exchange while piety is the foundational recognition of constitutive debt."
 central_theme_thread: "The perspective-limited agent computes loving unity from a position of having-been-given, not self-origination; piety is the disposition that lets the cooperative computation proceed honestly, simony the disposition that systematically corrupts the substrate by privatizing what was only ever conferred-by-relation."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-04 final causality; PRS-05 union-as-final-cause; PRS-07 narrative cognition)"
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-04 substrate-independent cognition; PRS-08 cells as cognitive agents in morphospace)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence; PRS-07 substrate-independent FEP)"
-  - "traditions/fredrickson/wiki.md (positivity resonance as biophysiological coupling; love as kin-extension mechanism)"
-  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-  - "Wright canonical: 'Paul and the Faithfulness of God' on the household-of-God ekklesia; the gift-economy critique of patronage in 1 Cor 1–4"
-  - "Rohr canonical: 'The Universal Christ' on gift-economy theology and 'Falling Upward' on first-half-of-life debt to origins"
+  - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable neurophysiological synchrony — vagal tone, oxytocin, neural phase-locking; PRS-03 positivity resonance as a coupling event that scales from the dyad to group resonance. Both High. Anchored 2026-09-01: this line had carried a bare wiki.md path with no id, while the body leaned on the tradition for a load-bearing empirical claim. PRS-03 is the record the community-scale reading of piety actually needs.)"
+  - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — Confidence HIGH, not speculative; see the Bridges note)"
+  - "Wright canonical: 'Paul and the Faithfulness of God' on the household-of-God ekklesia; the gift-economy critique of patronage in 1 Cor 1–4. Declination, 2026-09-01: the Wright register's 59 records were scanned at body level for charis / gift / patronage / Corinth / ekklesia / household. The only charis hit is PRS-18 (a pneumatology chapter) and the only Corinth hit is PRS-31 (Phoebe as bearer and expositor of Romans); there is no patronage, ekklesia or gift-economy entry to repoint to, so the canonical anchor stands and the search radius is named here rather than left implicit."
+  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ — the divine pattern present in all creation, Medium; PRS-37 the two-halves-of-life transition and what modernity has substituted for the path of descent, Medium — the record behind the 'first-half-of-life debt to origins' reading. Anchored 2026-09-01, replacing a bare canonical-works fallback; the Rohr node holds 66 records.)"
   - "master/cross_program_index.md CROSS-018 on positivity resonance as measurement of union"
 evidence_strength_summary: "The gift-economy / market-economy distinction is well-documented in economic anthropology (Mauss, Graeber, Polanyi — empirical). The neurobiology of kin-attachment and positivity resonance is empirical (Fredrickson lab). Cancer as morphogenetic defection is empirical (Levin lab). The reading of simony as category-error between economies is interpretive; the further reading of piety as the original positive-pattern of relational-debt recognition is philosophical."
 tags: [synthesis, day/168, theme/gift-economy, theme/relational-debt, q/100, q/101]
-last_qc_at: "2026-08-24T04:23:07"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T16:29:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 168 — Simony and Piety (Contemporary)
@@ -70,13 +70,18 @@ The perspective-limited agent computes loving unity not from a position of self-
 
 ## Bridges
 
-- **Stump PRS-04, PRS-05, PRS-07** (final causality; union as final cause; narrative second-personal knowing) — spiritual goods are second-personal-relational, so their good cannot be reached through impersonal exchange; simony is the structural corruption of the final-causal order of a spiritual good. *Philosophical / formal.*
-- **Friston PRS-06, PRS-07** (multi-agent coherence; substrate-independent FEP) — constitutive gifts function as signals in a collective; commodifying them degrades the signaling substrate for everyone. *Empirical / mathematically formal.*
-- **Levin PRS-02, PRS-04, PRS-08** (cancer as defection; substrate-independent cognition; cells as cognitive agents) — cancer is the cellular analog of simony: privatization of collectively-conferred capacities; piety is the cellular analog of within-field coherence. *Empirical.*
-- **Fredrickson** (positivity resonance; see CROSS-018 in master/cross_program_index.md) — piety honors the biological substrate from which constitutive gifts flow; the measurable substrate of love-as-coupling. *Empirical.*
-- **Kastrup PRS-02** (individuation as dissociation within unitary consciousness) — no agent is self-originating; recognizing the receivedness of one's capacities is the metaphysical core of piety. *Speculative / metaphysical.*
-- **Wright (canonical, PFG, 1 Cor 1–4)** — *charis* as gift-economy keystone; the early ekklesia as gift-economy household. *Theological / scriptural.*
-- **Rohr (canonical, *Universal Christ*, *Falling Upward*)** — first-half-of-life recognition of debt to origins as foundational piety. *Theological / contemplative.*
+- **PRS-07 in the Stump-tradition wiki** (narrative second-personal knowing) — spiritual goods are second-personal-relational, so their good cannot be reached through impersonal exchange. *Record: High.*
+- **PRS-05 in the Stump-tradition wiki** (union as the final cause of permitted suffering) — union is the kind of good exchange cannot purchase, because the willingness to exchange has already changed the receiver's stance. *Record: Medium.*
+- **PRS-04 in the Stump-tradition wiki** (final causality against the modern teleology ban) — simony as the corruption of the final-causal order of a spiritual good. *Record: P4 (Implicit), Medium — and note its own Solution is a C2A2 integration claim rather than a finding of Stump's. Split from PRS-05 and PRS-07 on 2026-09-01, where one unlabelled "philosophical / formal" badge was covering Medium, Medium and High together.*
+- **PRS-07 in the Friston-tradition wiki** (FEP substrate-independence formally established) — the formal core: any system with an internal/external statistical separation satisfies the principle, which is what lets the argument run from cells to congregations. *Record: High; a formal derivation, not a measurement.*
+- **PRS-06 in the Friston-tradition wiki** (multi-agent coherence via mutual modeling) — constitutive gifts function as signals in a collective; commodifying them degrades the signaling substrate for everyone. *Record: P6 (Implicit), Medium — a proposed extension to multi-agent systems. Split from PRS-07 on 2026-09-01: the pair carried one "empirical / mathematically formal" badge, and neither record is empirical.*
+- **PRS-02 in the Levin-tradition wiki** (cancer as defection) — the cellular analog of simony: privatization of collectively-conferred capacities. *Record: High, and the empirically anchored one — bioelectric coherence in the lab.*
+- **PRS-08 in the Levin-tradition wiki** (cells as cognitive agents in anatomical morphospace) — the gift the defecting cell privatizes is an identity conferred by the field. *Record: High.*
+- **PRS-04 in the Levin-tradition wiki** (bioelectric computation as substrate-independent cognition; xenobots as proof of concept) — *Record: P4 (Implicit), Medium. Split out on 2026-09-01: the three Levin records sat under a single "Empirical" badge, and this one is a proof-of-concept framework claim at Medium rather than a measured result.*
+- **PRS-02 + PRS-03 in the Fredrickson-tradition wiki** (love as measurable neurophysiological synchrony; positivity resonance scaling from dyad to group), with **CROSS-018 in the master cross-program index** (positivity resonance as the biological measurement of the union Stump describes metaphysically — verified against the index by program set, Fredrickson × Stump). Piety honors the substrate from which constitutive gifts flow; PRS-03 is what carries the move from the family to the community scale. *Both records High; genuinely empirical.* (Ids supplied 2026-09-01; the bullet had named the tradition with none.)
+- **PRS-02 in the Kastrup-tradition wiki** (individuation as dissociation within unitary consciousness) — no agent is self-originating; recognizing the receivedness of one's capacities is the metaphysical core of piety. *Record: **High**, not speculative. Corrected 2026-09-01: the "speculative / metaphysical" badge describes this commentary's application of the record to piety, not the register's grade on the record itself.*
+- **Wright (canonical, PFG, 1 Cor 1–4)** — *charis* as gift-economy keystone; the early assembly as a gift-economy household. *Theological / scriptural. Canonical by necessity, not by default: the 59-record Wright register was searched for charis, gift, patronage, Corinth, ekklesia and household, and holds no entry on the patronage critique or the gift economy — the nearest hits are PRS-18 (pneumatology) and PRS-31 (Phoebe and Romans), neither of which carries this claim.*
+- **PRS-03 in the Rohr-tradition wiki** (the Universal Christ — the divine pattern present in all creation) and **PRS-37 in the Rohr-tradition wiki** (the two-halves-of-life transition, and modernity's manufactured ascent in place of the path of descent) — first-half-of-life recognition of debt to origins as foundational piety. *Both Medium.* (Anchored 2026-09-01, replacing canonical-works citations.)
 
 ## Where this leaves us
 

@@ -3,23 +3,23 @@ day: 161
 title: Tithes (Contemporary)
 pairs_with: "[[Day-161 - Tithes]]"
 length_target_words: 1500
-length_actual_words: 1545
-length_ratio_to_target: 1.030
+length_actual_words: 1560
+length_ratio_to_target: 1.040
 length_tier: short
-length_note: "1545 words against the 1500 short-tier target — ratio 1.030, inside the ±10% band. (Recount history on the constitution's regex: 1376, then 1415 after the 2026-08-13 bridge repairs, then 1545 after the 2026-08-23 citation repair, which re-anchored the Levin and Friston bullets and cost the usual 30-60 words per anchor.) Q.86 a.1-a.4 and Q.87 a.1-a.3 are covered; Q.87 a.4 — the clergy remitting upward so that whoever has charge of the common estate can meet the common welfare — is not, and is the article closest to this day's own scale-coordination thesis. No padding warranted."
+length_note: "1560 words against the 1500 short-tier target — ratio 1.040, inside the ±10% band. (Recount history on the constitution's regex: 1376, then 1415 after the 2026-08-13 bridge repairs, then 1545 after the 2026-08-23 citation repair, which re-anchored the Levin and Friston bullets and cost the usual 30-60 words per anchor. RECOUNTED 2026-09-01: the pre-edit recount gave 1560 against the stored 1545 — a +15 understatement present before this run — and the 2026-09-01 repair added only the Carroll id in frontmatter, which the body count does not see, so 1560 stands.) Q.86 a.1-a.4 and Q.87 a.1-a.3 are covered; Q.87 a.4 — the clergy remitting upward so that whoever has charge of the common estate can meet the common welfare — is not, and is the article closest to this day's own scale-coordination thesis. No padding warranted."
 mind_first_reframe: "Tithes are the symbolic protocol by which a perspective-limited agent participates in the larger composite agent it is already part of. The medieval church specified precept-plus-positive-determination; cooperation-or-defection in a multi-scale morphogenetic field (Levin) and the conditions under which coupled agents constitute one inferring collective (Friston) describe the same scale-coordination problem at the level of any composite agent, with Pauline koinōnia (Wright) and the Universal Christ (Rohr) supplying the theological reading of religious giving as participation rather than transaction."
 central_theme_thread: "Aquinas at Q.86 a.3 — that an oblation is not lawful when it sabotages a prior natural-law duty to parents or dependents — makes the perspective-limitation principle explicit. Each limited perspective has a domain in which it sees more clearly than the levels above; loving unity is computed by giving only what one can spare without becoming derelict to what is directly entrusted. Salvation in fear and trembling requires the limited agent to judge, from inside her limits, what is hers to release and what is hers to keep."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the cooperative morphogenetic field; PRS-07 the bioelectric layer coordinating cell behavior; PRS-04 basal cognition across scales, Medium)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — coupling without loss of autonomy; PRS-22 the group-level Markov blanket as the condition for a collective being one agent)"
-  - "wiki/traditions/carroll/wiki.md (poetic naturalism: economic facts and normative facts as separate-but-compatible levels)"
+  - "wiki/traditions/carroll/prs_triplets.md (PRS-01 poetic naturalism, High — multiple levels of description as legitimate stories told about one physical substrate; here, economic facts and normative facts as separate-but-compatible levels. CONSULTED, NOT LOAD-BEARING: the record supports the level-compatibility framing only, and nothing in the body or Bridges rests on it. Id supplied 2026-09-01, where the line previously named the tradition with no id at all)"
   - "wiki/traditions/wright/wiki.md (Pauline collection, koinōnia-as-resource-sharing in 2 Cor 8–9)"
   - "wiki/traditions/rohr/wiki.md (Universal Christ: the cosmic body whose cells share)"
   - "wiki/traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance as the scale-bridging coupling event, dyad to communal worship)"
   - "wiki/master/cross_program_index.md (CROSS-069 Stump x Friston x Fredrickson — corporate substance as the ontological status of collective free-energy minimization / positivity resonance)"
 evidence_strength_summary: "Empirical on cooperation-and-defection in the morphogenetic field (Levin PRS-02/07, both High) and on prosocial neurobiology (Fredrickson PRS-03). Formal on the conditions for collective agency (Friston PRS-22 High, PRS-06 Medium); the narrower reading of the tithe-fraction as precision released upward is this synthesis's own extension of the formalism and is marked speculative rather than carried by the register. Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-08-23T20:26:35"
+last_qc_at: "2026-09-01T10:34:23"
 last_qc_outcome: "rewrote"
 ---
 

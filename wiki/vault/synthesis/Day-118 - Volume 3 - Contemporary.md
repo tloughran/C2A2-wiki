@@ -3,26 +3,27 @@ day: 118
 title: Volume 3 — Merit and the Opening of II-II (Contemporary)
 pairs_with: "[[Day-118 - Volume 3]]"
 length_target_words: 3000
-length_actual_words: 1987
-length_ratio_to_target: 0.662
+length_actual_words: 2284
+length_ratio_to_target: 0.761
 length_tier: long
 length_note: "Volume-transition episode pairing Q.114 (merit, 20 articles compressed) with II-II Q.1 (faith); commentary names the two load-bearing moves — collective-substance merit (Stump PRS-14/15/16); faith as relational-cognitive orientation toward First Truth — without expanding into each article. The transition shape calls for focused linkage, not article-by-article mirroring; substantively complete in this form."
 karpathy_wiki_sources:
   - "traditions/stump/wiki.md (Thomistic union as final cause; PRS-05, PRS-13 on suffering and union)"
-  - "traditions/stump/prs_triplets.md (PRS-14, PRS-15, PRS-16 collective-substance hylomorphism)"
-  - "traditions/fredrickson/wiki.md (positivity resonance as biological substrate of charity)"
+  - "traditions/stump/prs_triplets.md (PRS-14 hylomorphic metaphysics of corporate substance, High — load-bearing; PRS-15 non-metaphorical body of Christ, Medium — the ecclesial extension; PRS-16 tradition as hylomorphic united-something-or-other, Speculative. CITATION CONSTRAINT: these three span High/Medium/Speculative and must not share one badge)"
+  - "traditions/stump/prs_triplets.md (PRS-11 Franciscan / second-person knowledge of persons, High — the faith-as-relational-knowing move in the Resource section; previously used in the body without appearing in this source list)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-02 love as measurable positivity resonance, High; PRS-03 positivity resonance as the scale-bridging coupling mechanism, High)"
   - "traditions/friston/prs_triplets.md (PRS-22 — when a group of agents is itself a single agent rather than a crowd)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 — perception as fitness-tracking; the interface)"
-  - "traditions/levin/wiki.md (multiscale agency)"
+  - "traditions/levin/wiki.md (multiscale agency — CONSULTED, NOT LOAD-BEARING: no Levin id is cited in the body or Bridges and nothing here rests on one)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 — individual identity within monism)"
   - "master/cross_program_index.md (CROSS-005 love-as-real; CROSS-008 shared rejection of isolated individualism about the unit of explanation — the original final-causality-bridge formulation was withdrawn upstream 2026-08-10 and is not relied on here)"
-  - "Wright canonical: Paul and the Faithfulness of God; Surprised by Hope"
+  - "traditions/wright/prs_triplets.md (PRS-45 corporate faith — pistis in the New Testament constituted partly at the level of a community rather than exclusively an individual, Medium; PRS-03 inaugurated eschatology, High). The Wright node now exists and carries 59 records, so the canonical-works fallback is no longer the right first move; *Paul and the Faithfulness of God* and *Surprised by Hope* remain the underlying works"
   - "Rohr canonical: The Universal Christ; Falling Upward"
 evidence_strength_summary: "Merit as recursive divine self-gift: theological. Charity as form of merit + Fredrickson positivity resonance: empirical biology (high) + speculative bridge to metaphysical 'form.' Collective merit via Stump's collective hylomorphism: speculative philosophical (medium). Faith's formal object as First Truth read through interface theory: formal-philosophical (medium)."
 mind_first_reframe: "Merit is the agent-alter's contributive participation in the form of the larger composite (covenant people / body of Christ) that the embedding system is constituting through the agents; faith is the first virtue the installed wider prior makes available, the cognitive-affective state in which the alter is oriented toward the wider mind it cannot directly perceive."
 central_theme_thread: "Merit ramifies the central claim into community — loving unity is computed not just in the individual but in the form being built across individuals; faith is the entry condition; the cycle runs from installed prior through cooperative action to a real composite that includes its contributors."
 tags: [synthesis, day/118, theme/merit, theme/faith, theme/transition]
-last_qc_at: "2026-08-23T22:29:18"
+last_qc_at: "2026-09-01T12:27:04"
 last_qc_outcome: "rewrote"
 ---
 
@@ -78,13 +79,13 @@ The opening of faith ties the same thread. Faith is the *first* orientation of t
 
 ## Bridges
 
-- *Stump PRS-14, PRS-15, PRS-16 (Tom Loughran's PRS-form record of Stump's collective-substance hylomorphism)* — provides the metaphysics of the composite whose form an agent's merit contributes to. The covenant people / body of Christ as real hylomorphic substance, not metaphor. (Philosophical; medium-speculative.)
-- *Fredrickson positivity resonance — CROSS-005 in C2A2 master* — charity has measurable biology; merit-via-charity has biological texture. (Empirical.)
+- *PRS-14 in the Stump-tradition wiki (Tom Loughran's PRS-form record of Stump's hylomorphic metaphysics of corporate substance)* — the load-bearing record here: it is the one whose Problem is the absence of a rigorous account of supra-individual wholes, and it alone carries the claim that the composite an agent's merit contributes to is a real substance. **(High.)** *PRS-15 (non-metaphorical body of Christ)* extends that to the ecclesial case specifically — **(Medium)**, and it is cited as an extension, not as joint support. *PRS-16 (tradition as hylomorphic united-something-or-other)* is the record behind the "tradition" phrasing in the central-theme thread below and is **(Speculative)** — the weakest of the three and the one carrying the least of the argument. **The three do not share a badge: they span High, Medium and Speculative, and averaging them to "medium-speculative" graded the load-bearing record at its weakest partner's level.**
+- *PRS-02 in the Fredrickson-tradition wiki (love reduced to sentiment → love as measurable positivity resonance, High) with PRS-03 (positivity resonance as the scale-bridging coupling mechanism, High); CROSS-005 in the C2A2 master index (Fredrickson × Stump × Kastrup, love as a fundamental category)* — charity has measurable biology (vagal tone, oxytocin signalling, neural synchrony); merit-via-charity has biological texture. (Empirical; High.) *The tradition was previously named here with no id at all — Day 133 in this vault was already citing PRS-02 for exactly this claim.*
 - *PRS-22 in the Friston-tradition wiki (`wiki/traditions/friston/prs_triplets.md`) — when a group of agents is itself a single agent rather than merely a crowd* — agents in attractor alignment compose collective trajectories; individual contribution and collective form are both real. Architecture of merit. (Formal/empirical in narrow domains.)
 - *PRS-03 in the Hoffman-tradition wiki (`wiki/traditions/hoffman/prs_triplets.md`) — perception as fitness-tracking rather than reality-tracking* — faith's formal object (First Truth) is the underlying reality the interface compresses; faith is the agent's epistemic orientation toward what the interface cannot deliver but presupposes. (Formal.)
 - *PRS-02 in the Kastrup-tradition wiki (`wiki/traditions/kastrup/prs_triplets.md`) — individual identity within monism* — Augustine's "God crowns his own gifts" as the recursive structure of one ground knowing itself through the alter. (Speculative metaphysics.)
 - *Rohr, The Universal Christ; Falling Upward* — grace as always-already-present cosmic ground rather than dispatched commodity; the non-meritability of first grace as structural description, not imposed rule. (Contemplative-theological; interpretive.)
-- *Wright, Paul and the Faithfulness of God; Surprised by Hope* — covenant-people framing of salvation; Pauline pistis as covenant-fidelity. The central-theme phrase "salvation in fear and trembling" is Wright-derived. (Historical-theological; high.)
+- *PRS-45 in the Wright-tradition wiki (corporate faith — pistis constituted partly at the level of a community, not exclusively the individual; **Medium**) with PRS-03 (inaugurated eschatology, **High**), read alongside* Paul and the Faithfulness of God *and* Surprised by Hope — covenant-people framing of salvation; Pauline pistis as covenant-fidelity. PRS-45 is the record that does the work on this bullet, since merit-into-a-composite is precisely faith held at community level; it is Medium and is not carried up by PRS-03's High. The central-theme phrase "salvation in fear and trembling" is Wright-derived. (Historical-theological.)
 
 ## Where this leaves us
 

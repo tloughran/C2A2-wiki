@@ -3,7 +3,7 @@ day: 284
 title: Impediment of Consanguinity (Contemporary)
 pairs_with: "[[Day-284 - Impediment of Consanguinity]]"
 length_target_words: 1500
-length_actual_words: 866
+length_actual_words: 981
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric interface to collective intelligence, PRS-09 cognitive attribution across scales)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing, PRS-7 relationship ontologically prior)"
   - "wiki/master/cross_program_index.md (community-widening / kinship-extension theme)"
-evidence_strength_summary: "Friston community-widening formal but socially speculative — and both Friston entries are the weakest cited here (PRS-18 Confidence Speculative; PRS-06 (Implicit)/Medium), against Levin PRS-17/PRS-09 and Rohr PRS-01 which are all High; Levin collective-intelligence empirical at biological scale; the incest-prohibition-as-bond-widening reading is anthropological/conceptual, partly empirically supported (exogamy literature) but not derived from the formal models."
-length_ratio_to_target: 0.58
+evidence_strength_summary: "Friston community-widening formal but socially speculative — and both Friston entries are the weakest cited here (PRS-18 Confidence Speculative; PRS-06 (Implicit)/Medium). The Levin and Rohr records are stronger but are not all of one kind: Levin PRS-17 (High) is measured work — bioelectric pattern memory as cognitive glue — while Levin PRS-09 (High) is the diverse-intelligence *framework* for when cognitive attribution is warranted, and Rohr PRS-01 (High) is theological where Rohr PRS-7 (Medium) is the weaker of the two Rohr anchors. Confidence and evidence-kind are tracked separately here on purpose. The incest-prohibition-as-bond-widening reading is anthropological/conceptual, partly empirically supported (exogamy literature) but not derived from the formal models."
+length_ratio_to_target: 0.654
 mind_first_reframe: "The consanguinity impediment is a community-widening mechanism — suppressing the easy near coupling to compel the bond-extending distant one — mirroring how collective intelligences stay open and coherent at larger scales."
 central_theme_thread: "The kin-rule is loving unity's missionary edge: love is forbidden to curl up among the already-near so that it must reach the stranger, moving the circle of union from clan toward universal communion."
 tags: [synthesis, day/284, theme/widening-the-circle-of-union]
-last_qc_at: "2026-08-18T22:31:39"
+last_qc_at: "2026-09-01T04:22:54"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the widening of the circle of union**. Aquinas s
 
 ## Resource
 
-The Friston-tradition program supplies the leading move with unusual directness. Tom's PRS-form record of Friston's work (PRS-18 in the Friston-tradition wiki, *what it would mean, formally, to widen a community so it can engage rival traditions*) is a research program *on exactly this*: the conditions under which a collective extends its shared generative model to incorporate the distant rather than collapsing inward on the familiar. Read onto Q.53–54, the consanguinity prohibition is a coherence-and-openness rule — it blocks the low-cost local coupling precisely to drive the high-value distant one, widening the community's model. PRS-06 (*multi-agent coherence via mutual modeling*) explains the cost of *not* doing so: a collective that only models its near neighbors never builds the cross-links that make a larger unity coherent. The Levin-tradition program supplies the biological precedent: PRS-17 (*the bioelectric interface to collective intelligence*) and PRS-09 (*cognitive attribution across scales*) describe how collectives integrate across distance to form larger competent individuals — integration *requires* reaching beyond the immediately adjacent. Rohr's program names the theological telos: PRS-01 (*non-dual knowing*) and PRS-7 (*relationship ontologically prior*) read the widening as charity refusing to stop at the boundary of the familiar — the kin-rule serves the universal communion.
+The Friston-tradition program supplies the leading move with unusual directness. Tom's PRS-form record of Friston's work (PRS-18 in the Friston-tradition wiki, *what it would mean, formally, to widen a community so it can engage rival traditions*) is a research program *on exactly this*: the conditions under which a collective extends its shared generative model to incorporate the distant rather than collapsing inward on the familiar. Read onto Q.53–54, the consanguinity prohibition is a coherence-and-openness rule — it blocks the low-cost local coupling precisely to drive the high-value distant one, widening the community's model. PRS-06 (*multi-agent coherence via mutual modeling*) explains the cost of *not* doing so: a collective that only models its near neighbors never builds the cross-links that make a larger unity coherent. The Levin-tradition program supplies the biological precedent, in two records that do different jobs: PRS-17 (*bioelectric pattern memory as the cognitive glue constituting a collective knower*) is the measured case of collectives integrating across distance to form a larger competent individual — integration *requires* reaching beyond the immediately adjacent — while PRS-09 (*the diverse-intelligence framework for cognitive attribution across scales*) supplies the criteria that license describing a community in those terms at all, without itself measuring one. Rohr's program names the theological telos: PRS-01 (*non-dual knowing*) and PRS-7 (*relationship ontologically prior*) read the widening as charity refusing to stop at the boundary of the familiar — the kin-rule serves the universal communion.
 
 ## Solution (proposed, speculative)
 
@@ -46,7 +46,8 @@ The project holds that loving unity is to be extended until every limited perspe
 
 - **Friston PRS-18 (formal; social application speculative):** community-widening — suppress near coupling to drive distant bond-formation; the structural meaning of the impediment.
 - **Friston PRS-06 (formal, but marked (Implicit) at Confidence Medium in the register — a reconstruction of the multi-agent extension of free-energy minimization, not a demonstrated result):** the cost of modeling only near neighbors — no cross-links, no larger coherent unity.
-- **Levin PRS-17 / PRS-09 (empirical at biological scale):** collective integration requires reaching beyond the adjacent — the biological precedent for exogamy.
+- **Levin PRS-17 (empirical, Confidence High):** bioelectric pattern memory as *cognitive glue* constituting a collective knower above the individual cells — the measured case for integration across distance, and the biological precedent for exogamy.
+- **Levin PRS-09 (Confidence High, but a *framework* rather than a finding):** the Levin & Resnik "diverse intelligence" criteria for when goal-directed and cognitive language may be attributed at a given scale. It licenses talking about a community as a collective knower at all; it does not itself measure one. Named separately because bundling it under "empirical at biological scale" promotes a methodological framework into a result.
 - **Rohr PRS-01 / PRS-7 (theological):** charity refusing to stop at the familiar; the kin-rule serves universal communion.
 
 ## Where this leaves us

@@ -3,13 +3,13 @@ day: 214
 title: The Mode of Union (Contemporary)
 pairs_with: "[[Day-214 - The Mode of Union]]"
 length_target_words: 2200
-length_actual_words: 2068
-length_ratio_to_target: 0.94
+length_actual_words: 2285
+length_ratio_to_target: 1.039
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor / target-form — the Son as the craftsman's idea returning to restore the form man wandered from) [Levin/Hoffman/Kastrup lead on the metaphysical mode-of-union locus per the guardrail]"
+  - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor / target-form, High — a FORMALISM, not a measurement: its Resource is free-energy/least-action borrowed from physics and its Solution is formal modelling of morphogenetic goal-seeking. Levin's measured entries are PRS-01/PRS-17; do not badge PRS-03 as empirical)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociative boundary — personhood supplied by the Word, not duplicated)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people; PRS-03 inaugurated eschatology — the 'comeback story' of Adam's race) [Wright primary on Christology, III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people, High; PRS-03 inaugurated eschatology, High — the 'comeback story' of Adam's race)"
   - "traditions/stump/prs_triplets.md (PRS-14 hylomorphic metaphysics of corporate substance, High; PRS-15 non-metaphorical body of Christ, Medium) — CONSULTED AND DECLINED for the nature/suppositum distinction: the register carries no entry on it, and the two above concern supra-individual wholes rather than one person in two natures. That distinction is cited to Aquinas directly (Summa III Q.2 aa.2-3, Q.17)."
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ becoming a particular)"
   - "master/cross_program_index.md (CROSS-008 restated 2026-08-10 to a shared rejection of the isolated unit of explanation — the 'final causality grounds Levin's teleology' form is withdrawn; CROSS-019 still carries it undowngraded)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Son fits because He is the eternal Word/idea by whom
 mind_first_reframe: "It befits the Son to assume because the Son is the Word — the idea by which all was made — returning to restore the form a perspective wandered from; and the Word assumes a human nature rather than a human person because the individuating boundary (personhood) is supplied by the Word itself, the one case where a limited perspective is individuated not by its own limitation but by the whole's own person — and it must be a genuinely particular nature, never 'humanity in general,' because the whole reaches the parts only by becoming an actual part."
 central_theme_thread: "Yesterday the whole took a limited perspective as its own; today we learn how — the Word (the target-form) supplies the very personhood that would otherwise individuate the human nature, so that this one perspective is individuated by the whole rather than by its limitation, and only by becoming a particular, fallen-race human does the universal reach all the others."
 tags: [synthesis, day/214, theme/personhood-supplied-by-the-whole]
-last_qc_at: "2026-08-23T19:56:08"
+last_qc_at: "2026-09-01T08:25:08"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,8 +51,8 @@ Yesterday the whole took a limited perspective *as its own*; today we learn *how
 
 ## Bridges
 
-- **The Son fits because He is the Word/idea by whom all was made ↔ the target-form/attractor returning to restore a degraded morphology** — Tom's PRS-form record of Levin, PRS-03 (High in the register, and the sole empirical anchor here). *Why:* restoration of a wandered form is fitting work for the very idea the form was made toward. Master CROSS-008/019 is **not** cited in support — CROSS-008's grounding form was restated downward 2026-08-10, and CROSS-019 still carries that form undowngraded. Evidence: **central-theme + Levin analogy, medium**.
-- **Word assumed a nature, not a person — personhood supplied by the Word ↔ a perspective individuated by the whole rather than by its own limitation (the unique inversion)** — Tom's PRS-form record of Kastrup, PRS-02; of Stump, PRS-14/PRS-15 (nature/person come apart). *Why:* a complete human nature subsists in a person not its own — the one case where individuation comes from the whole. Evidence: **central-theme type-case (strong as analogy) + theological; guardrail: unique, not a template**.
+- **The Son fits because He is the Word/idea by whom all was made ↔ the target-form/attractor returning to restore a degraded morphology** — Tom's PRS-form record of Levin, PRS-03 (High in the register, and the sole formal anchor here; it is a formalism for morphogenetic goal-seeking, not a measurement — Levin's measured entries are PRS-01/PRS-17). *Why:* restoration of a wandered form is fitting work for the very idea the form was made toward. Master CROSS-008/019 is **not** cited in support — CROSS-008's grounding form was restated downward 2026-08-10, and CROSS-019 still carries that form undowngraded. Evidence: **central-theme + Levin analogy, medium**.
+- **Word assumed a nature, not a person — personhood supplied by the Word ↔ a perspective individuated by the whole rather than by its own limitation (the unique inversion)** — Tom's PRS-form record of Kastrup, PRS-02 (High). The Thomistic nature/person grammar is taken **directly from Aquinas** (*Summa* III Q.2 aa.2–3, Q.17) and carries **no wiki id**: Stump PRS-14/PRS-15 were consulted and declined, the register holding no entry on the nature/suppositum distinction. *Why:* a complete human nature subsists in a person not its own — the one case where individuation comes from the whole. Evidence: **central-theme type-case (strong as analogy) + theological; guardrail: unique, not a template**.
 - **Not abstracted / not in all individuals — "no fictitious incarnation" ↔ perspective-taking requires real, particular limitation, not a generic one** — Tom's PRS-form record of Rohr, PRS-03 (the Universal becoming particular). *Why:* the whole reaches the parts only by becoming one actual part. Evidence: **central-theme, strong**.
 - **Stock of Adam, the "comeback story" ↔ salvation as the race's incorporation and inaugurated new-creation victory** — Tom's PRS-form record of Wright, PRS-05 / PRS-03. *Why:* restoration is by membership in the fallen race, not by external correction. Evidence: **theological (Wright), firm**.
 

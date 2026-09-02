@@ -3,20 +3,20 @@ day: 289
 title: The Marriage Debt (Contemporary)
 pairs_with: "[[Day-289 - The Marriage Debt]]"
 length_target_words: 1500
-length_actual_words: 1055
+length_actual_words: 1296
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
   - "wiki/traditions/wright/prs_triplets.md (PRS-05 salvation as covenant inclusion; canonical: 1 Cor 7 mutual conjugal obligation)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-7 relationship ontologically prior)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — symmetric coupling)"
-  - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism — mutual constitution of the whole)"
-evidence_strength_summary: "Wright scriptural (1 Cor 7) firm within scholarship; Rohr theological; Friston symmetric-coupling formal; the 'debt as paradigm of loving unity' reading is the project's central-theme claim, theological-conceptual."
-length_ratio_to_target: 0.68
+  - "wiki/traditions/levin/prs_triplets.md (PRS-32 cognitive glue as unifying thesis, Confidence High but programmatic not measured; PRS-17 bioelectric pattern memory, the measured work under it)"
+evidence_strength_summary: "Wright PRS-05 (covenant belonging) is Confidence High and is what the id carries; the 1 Cor 7 exegesis itself is canonical Wright with no register entry (term scan returns zero) and is marked as such rather than absorbed into PRS-05. Rohr PRS-04/PRS-7 theological, both Confidence Medium. Friston PRS-06 is (Implicit)/Medium — a well-posed formal analogy, not a demonstrated multi-agent result. Levin PRS-32 is High but a unifying programmatic thesis rather than a measurement. The 'debt as paradigm of loving unity' reading is the project's central-theme claim, theological-conceptual."
+length_ratio_to_target: 0.864
 mind_first_reframe: "The marriage debt is the formalization of symmetric mutual self-gift — each agent ceding sole self-authority to the other equally — and this symmetry is what makes the union a real 'we' rather than a possession of one by the other."
 central_theme_thread: "Loving unity is achieved when each limited perspective gives itself wholly to the other without being erased; the symmetric mutual self-gift of the marriage debt is that claim in its most concrete human form."
 tags: [synthesis, day/289, theme/symmetric-self-giving-as-paradigm-of-unity]
-last_qc_at: "2026-08-18T20:22:27"
+last_qc_at: "2026-09-01T04:23:56"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the structure of complete mutual self-gift**. Th
 
 ## Resource
 
-Since the locus is a Pauline text, the Wright-tradition program supplies the leading move. Tom's PRS-form record of Wright's work (PRS-05, *salvation as covenant inclusion*) and Wright's scholarship on 1 Corinthians read the marriage debt within Paul's covenantal vision: belonging in a body where members are members *of one another*, the mutual self-gift of marriage as a microcosm of the covenant community in which no one any longer belongs only to themselves. The radical mutuality of 1 Cor 7:4 is, on Wright's reading, the new-creation logic breaking into the most intimate human relation. The Rohr-tradition program supplies the contemplative depth: PRS-04 (*embodied love as epistemology*) reads the debt not as a grim duty but as love enacted bodily — the body itself as the medium of mutual knowing and self-gift — and PRS-7 (*relationship ontologically prior*) grounds the whole in the claim that the spouses are constituted by the relation, so that "ceding power over one's body to the other" is not loss but the very form of their being. The Friston-tradition program supplies the formal structure: PRS-06 (*multi-agent coherence via mutual modeling*) makes the deepest, most stable dyadic unit the *symmetric* one, where each agent's policy is selected with the other's preferences as its own — the operational shape of "I do not have sole power over my own body." PRS-32 in the Levin-tradition wiki (*goal-directed cognition scaling to the organism*) gives the precedent: in a true higher individual, no part retains sole authority over itself; authority is shared into the whole.
+Since the locus is a Pauline text, the Wright-tradition program supplies the leading move. Tom's PRS-form record of Wright's work (PRS-05, *salvation as covenant inclusion*) and Wright's scholarship on 1 Corinthians read the marriage debt within Paul's covenantal vision: belonging in a body where members are members *of one another*, the mutual self-gift of marriage as a microcosm of the covenant community in which no one any longer belongs only to themselves. The radical mutuality of 1 Cor 7:4 is, on Wright's reading, the new-creation logic breaking into the most intimate human relation. The Rohr-tradition program supplies the contemplative depth: PRS-04 (*embodied love as epistemology*) reads the debt not as a grim duty but as love enacted bodily — the body itself as the medium of mutual knowing and self-gift — and PRS-7 (*relationship ontologically prior*) grounds the whole in the claim that the spouses are constituted by the relation, so that "ceding power over one's body to the other" is not loss but the very form of their being. The Friston-tradition program supplies the formal structure: PRS-06 (*multi-agent coherence via mutual modeling*) makes the deepest, most stable dyadic unit the *symmetric* one, where each agent's policy is selected with the other's preferences as its own — the operational shape of "I do not have sole power over my own body." PRS-32 in the Levin-tradition wiki (*the "cognitive glue" thesis: bioelectric networks as the binding medium that scales selfhood from cells to organisms*) gives the precedent: in a true higher individual, no part retains sole authority over itself; authority is shared into the whole. That record stands at high confidence but is a *unifying programmatic claim* rather than a measured finding — the measured work beneath it is PRS-17, bioelectric pattern memory persisting across cell divisions.
 
 ## Solution (proposed, speculative)
 
@@ -44,10 +44,11 @@ This is the article in which the central theme is least forced and most fully pr
 
 ## Bridges
 
-- **Wright PRS-05 (scriptural/theological; the load-bearing bridge):** 1 Cor 7 within covenant theology — members *of one another*; the debt as new-creation mutuality.
+- **Wright PRS-05 (scriptural/theological, Confidence High; the load-bearing bridge):** *salvation is incorporation into the people among whom God comes home, not relocation of souls* — the covenant-belonging frame within which "members of one another" is not a metaphor. This is the record's own claim, and it is what PRS-05 supplies.
+- **Wright on 1 Cor 7 (canonical, not by id):** the mutual-conjugal-obligation exegesis itself is carried canonically. A term scan of the live Wright register on *marriage*, *conjugal*, *spouse*, *marital*, *one flesh* and *sexual* returns **zero** records, so there is no entry to anchor it to and PRS-05 must not be made to absorb it — the covenant frame and the 1 Cor 7 reading are two claims, and only the first has a record.
 - **Rohr PRS-04 / PRS-7 (theological):** love enacted bodily; the spouses constituted by the relation, so self-gift is the form of their being, not loss.
 - **Friston PRS-06 (formal; `traditions/friston/prs_triplets.md`):** symmetric coupling produces a shared-authority *we*; the operational shape of mutual self-gift. *Marked (Implicit), Confidence Medium — an implicit extension of free-energy minimization to multi-agent systems, so the formalism is well-posed but the multi-agent application is reconstructed rather than demonstrated.*
-- **Levin PRS-32 (empirical at biological scale):** in a true higher individual no part retains sole self-authority — the precedent for ceded self-possession.
+- **Levin PRS-32 (Confidence High — but a *unifying thesis*, not a measurement):** the "cognitive glue" claim that bioelectric signalling is the binding medium scaling selfhood from cells to organisms, offered as a programmatic retrospective unifying Levin's developmental, regenerative and basal-cognition work. It supplies the precedent for ceded self-possession — in a true higher individual no part retains sole self-authority — but it is a synthesizing framework at High confidence, not an empirical result, and should not be badged "empirical at biological scale." The measured work under it is **PRS-17** (bioelectric pattern memory persisting across cell divisions, constituting a collective knower; Confidence High).
 
 ## Where this leaves us
 

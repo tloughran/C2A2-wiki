@@ -3,8 +3,8 @@ day: 305
 title: Heavenly Crowns (Contemporary)
 pairs_with: "[[Day-305 - Heavenly Crowns]]"
 length_target_words: 2200
-length_actual_words: 1482
-length_ratio_to_target: 0.67
+length_actual_words: 1587
+length_ratio_to_target: 0.721
 length_tier: medium
 length_note: "Body 1440 words vs ~2200 tier guideline (-35%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
 karpathy_wiki_sources:
@@ -18,7 +18,7 @@ evidence_strength_summary: "Differentiated-reward-by-contribution read as formed
 mind_first_reframe: "The dowries and aureoles describe a community whose shared end (union with the whole) is reached through irreducibly differentiated contributions, with the highest — the doctor's crown — going to the agent who makes the truth modelable to other minds and so raises the coherence of the whole."
 central_theme_thread: "Individuation is not overcome in glory but crowned: each limited perspective is rewarded as the one it is, and the doctor's crown names the cooperative mechanism — informing one another — by which limited perspectives help each other toward the loving unity that is the telos."
 tags: [synthesis, day/305, theme/crown-for-informing-others]
-last_qc_at: "2026-08-18T18:28:42"
+last_qc_at: "2026-09-01T04:23:56"
 last_qc_outcome: "rewrote"
 ---
 
@@ -60,9 +60,10 @@ And the doctor's crown names the mechanism by which limited perspectives help on
 
 - **PRS-06 + PRS-18 in the Friston-tradition wiki** — *multi-agent coherence via mutual modeling; widening a community to engage rivals*. Formal in shape, but the two are not equally supported and the bullet should not bundle them: PRS-06 is recorded as an implicit reconstruction at *Confidence: Medium*, PRS-18 at *Confidence: Speculative*. The contemporary content of the doctor's crown — making truth modelable to others raises collective coherence — is therefore a well-posed model rather than a demonstrated result.
 - **PRS-08 + PRS-09 in the Loughran-tradition wiki** — *tradition-crossing inquiry; the Synergistic Coil* (methodological, Tom's own). Teaching as cross-perspectival repair; the project's instrument for exactly the act Aquinas crowns.
-- **PRS-07 in the Rohr-tradition wiki / CROSS-005** — *perichoretic relation as basal; love/union fundamental* (theological/convergent). Reads the dowry's marriage figure as constituted belonging, not payment.
+- **PRS-7 in the Rohr-tradition wiki / CROSS-005** — *perichoretic relation as basal; love/union fundamental* (theological/convergent; the Rohr record is *Confidence: Medium*, and CROSS-005 is an active cross-program analogy joining Fredrickson, Stump and Kastrup rather than a settled result). Reads the dowry's marriage figure as constituted belonging, not payment. (The register writes this record `PRS-7`, unpadded; it is the same entry.)
 - **PRS-02 + PRS-08 in the Fredrickson-tradition wiki** — *love beyond sentiment; high-quality listening as resonance enabler* (empirical). The embodied counterpart of fruition-answering-to-charity, and of the teacher's receptive art.
-- **PRS-02 + PRS-08 in the Kastrup-tradition wiki** — *individuation; the Daimon as principle of individuation* (philosophical/speculative). Underwrites "crowned as the one it is" — each perspective fulfilled, not flattened.
+- **PRS-02 in the Kastrup-tradition wiki** — *individual identity within monism*: one undivided consciousness experiencing multiple dissociated points of view, with individuality preserved as a real construct of that dissociation (philosophical; *Confidence: High* as a record, though the ontology it belongs to remains contested).
+- **PRS-08 in the Kastrup-tradition wiki** — *the Daimon as principle of individuation*: each alter is specifically characterized rather than generic, which is what actually underwrites "crowned as the one it is" (philosophical; *Confidence: Medium*, and the weaker of the two — named separately so the load-bearing claim is not read at PRS-02's standing).
 
 ## Where this leaves us
 

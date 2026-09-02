@@ -3,21 +3,21 @@ day: 295
 title: The Necessity of Resurrection (Contemporary)
 pairs_with: "[[Day-295 - The Necessity of Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1069
+length_actual_words: 1235
 length_tier: short
-length_note: "Runs ~29% under the short tier (1069 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
-length_ratio_to_target: 0.71
+length_note: "Runs ~18% under the short tier (1235 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after the Levin PRS-01/03/04 badge was split into three bullets with their actual standings (+166 words on the stored 1069)."
+length_ratio_to_target: 0.823
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control / form as target-state memory; PRS-03 morphological attractor formalism; PRS-04 substrate-independent basal cognition)"
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-01 hard-problem transformation)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; canonical: The Resurrection of the Son of God)"
-evidence_strength_summary: "The 'form as real, scaling, substrate-spanning pattern' reading is empirical at the biological scale (Levin); the interface reframe of embodiment is formal-to-speculative (Hoffman); the persistence-of-identity claim is philosophical (Kastrup); the bodily-resurrection hope is scriptural-historical (Wright); that only God reunites soul to body stays theological."
+evidence_strength_summary: "Form as a real, memory-bearing organizing pattern is empirical at the biological scale (Levin PRS-01, Confidence High); the attractor formalism is a modelling language, not a measured result (Levin PRS-03), and Friston PRS-42 narrows it further — conformity to the FEP does not entail that the system literally performs inference; substrate-independent basal cognition is the network's reconstruction, Label (Implicit) at Confidence Medium (Levin PRS-04); the interface reframe of embodiment is formal-to-speculative (Hoffman); the persistence-of-identity claim is philosophical (Kastrup); the bodily-resurrection hope is scriptural-historical (Wright); that only God reunites soul to body stays theological."
 mind_first_reframe: "The soul is the form of the body — an organizing pattern that is real and constitutive, not a ghost in a husk; a perspective without its body is genuinely incomplete, so its completion requires re-embodiment, not escape."
 central_theme_thread: "Embodiment is constitutive of the human perspective, not a limitation to be shed; loving unity is the union of embodied perspectives perfected, which is exactly why the hope is resurrection of the body and not the soul's flight from it."
 tags: [synthesis, day/295, theme/soul-as-form-and-the-necessity-of-re-embodiment]
-last_qc_at: "2026-08-14T00:21:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-08-31T22:30:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 295 — The Necessity of Resurrection (Contemporary Parallel)
@@ -44,7 +44,9 @@ The project's loving unity is the union of *embodied, perspectival* agents — a
 
 ## Bridges
 
-- **Levin PRS-01 / PRS-03 / PRS-04 (empirical; load-bearing):** form as a real, memory-bearing, substrate-constituting organizing pattern — hylomorphism with a working model.
+- **Levin PRS-01 (empirical, Confidence High; load-bearing):** bioelectric circuits encode anatomical target states as morphogenetic memory — form as a real, memory-bearing, causally potent organizing pattern. This is the empirical half of "hylomorphism with a working model."
+- **Levin PRS-03 (formal, *not* empirical):** the morphological attractor formalism — free-energy/least-action modelling of morphogenetic goal-seeking. A modelling language, not a measured result. **Friston PRS-42** (2026-08-28, Confidence High) narrows it further and is later than this file's first drafting: conformity to the FEP does not entail that the conforming system literally performs inference — the inferential description is an explanatory fiction — so "the separated form seeks re-expression" is here a description in that register, not a demonstrated mechanism.
+- **Levin PRS-04 (Label (Implicit), Confidence Medium):** substrate-independent basal cognition — the network's reconstruction of Levin's position rather than a measured result; cited for the claim that the organizing work of form is not tied to a neural substrate.
 - **Hoffman PRS-04 / PRS-01 (formal-to-speculative):** the body as the interface a perspective needs to act and know — completion requires its restoration.
 - **Kastrup PRS-02 (philosophical):** the same individuated perspective persists across death to be re-embodied.
 - **Wright PRS-04 (scriptural; load-bearing):** the earliest Christian hope is *bodily* resurrection, not a disembodied afterlife — the ground truth under Aquinas's "no beatitude in the separated soul."

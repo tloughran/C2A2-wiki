@@ -3,12 +3,12 @@ day: 139
 title: Scandal (Contemporary)
 pairs_with: "[[Day-139 - Scandal]]"
 length_target_words: 2200
-length_actual_words: 2137
-length_ratio_to_target: 0.971
+length_actual_words: 2154
+length_ratio_to_target: 0.979
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence and error propagation through coupled generative models; PRS-04 the organism as active modeler updating on observed evidence)"
-  - "traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance as scale-bridging coupling; PRS-08 high-quality listening as resonance enabler)"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03 positivity resonance as scale-bridging coupling, High; PRS-08 high-quality listening as resonance enabler, High)"
   - "traditions/levin/prs_triplets.md (PRS-02 defection at collective scale — sedition as multitude-secession)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception as fitness-tracking — the weaker agent's corrupted interface)"
   - "master/cross_program_index.md (CROSS-010 positivity resonance as the signature of collective free-energy minimization)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Sedition as collective-scale defection (Levin PRS-02
 mind_first_reframe: "Sedition (Q.42) and scandal (Q.43) are two harms in a network of coupled conscious agents. Sedition is collective-scale defection — a multitude, not one person, seceding from the common good (Levin PRS-02 at the scale of the body politic). Scandal is the subtler and, for the project, more central harm: the propagation of spiritual error through the coupling that binds agents into a shared model. In the active-inference frame, a stronger agent's actions are evidence in a weaker agent's generative model (Friston PRS-04/06); when the stronger acts wrongly — or even acts in a way the weaker's corrupted prior cannot read rightly — the weaker's model updates toward error. This is exactly Aquinas's 1 Cor 8 case (the man of knowledge whose eating 'destroys the weak brother'): the responsibility of the more-informed perspective toward the less-informed is the ethical correlate of an informational asymmetry."
 central_theme_thread: "The central claim says explicitly that limited perspectives need 'guidance from those who perceive more of the whole than we do.' Scandal is the precise failure mode of that asymmetry: the agent who perceives more, instead of guiding the one who perceives less, emits behavior that draws them into error. The whole architecture of the project — traditions informing one another, the richly-informed scaffolding the less-informed toward the whole — depends on getting this transmission right; scandal names getting it wrong. And Aquinas's most luminous line in the episode points straight at Day 140: 'those who adhere to the immutable become immutable themselves' — the perfect cannot be tripped interiorly because their connaturality to the unchanging whole stabilizes their perspective. The goal of the computation is a perspective so coupled to the whole that no corrupting evidence can dislodge it."
 tags: [synthesis, day/139, theme/transmission-and-asymmetry]
-last_qc_at: "2026-08-23T22:29:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T12:27:27"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 139 — Contemporary Parallel: The Multitude That Secedes, and the Stronger Who Trips the Weak
@@ -60,8 +60,8 @@ This episode is where the central claim becomes operational. The claim states th
 
 - *PRS-02 in the Levin-tradition wiki* — sedition (Q.42) as collective-scale defection; legitimacy tracks orientation to the genuine common good, so resisting a tyrant (the prior defector) is not sedition. (Empirical at cell scale; analogical at political scale.)
 - *PRS-04 + PRS-06 in the Friston-tradition wiki* — scandal (Q.43) as error propagation through coupled generative models: a stronger agent's behavior is evidence that can update a weaker agent's posterior toward error, even when the act is innocent in itself. (Formal; medium.)
-- *PRS-03 + PRS-08 in the Fredrickson-tradition wiki + CROSS-010* — the transmission medium: agents are continuously co-regulating through real biophysiological coupling, which is why one can trip another (and why care can scaffold instead). (Empirical; medium.)
-- *1 Cor 8 (Wright, by canonical work) + PRS-04 in the Rohr-tradition wiki* — the asymmetric responsibility of the strong toward the weak as the ethical correlate of informational asymmetry; love as the medium of right transmission. (Scriptural / theological; high in field.)
+- *PRS-03 + PRS-08 in the Fredrickson-tradition wiki (**both High**) + CROSS-010 (Friston × Fredrickson, positivity resonance as the biophysiological implementation of collective active inference — verified against the index)* — the transmission medium: agents are continuously co-regulating through real biophysiological coupling, which is why one can trip another (and why care can scaffold instead). (Empirical; **both records High** — the earlier "medium" badge graded two High records down.)
+- *1 Cor 8 (Wright — **no register id**: the Wright node's 59 records were searched and none treats 1 Cor 8 or the strong/weak conscience; PRS-28 and PRS-29, both High, give the cruciform pattern but not this passage, so the claim rests on the canonical work with the search radius named) + PRS-04 in the Rohr-tradition wiki (**Medium**)* — the asymmetric responsibility of the strong toward the weak as the ethical correlate of informational asymmetry; love as the medium of right transmission. (Scriptural / theological; the Rohr record is Medium, and "high in field" describes the standing of the Pauline reading, not the grade of the record.)
 - *Q.43 a.5 ↔ Day 140* — "those who adhere to the immutable become immutable" as connaturality to the whole stabilizing a perspective; the horizon of the computation toward loving unity. (Theological; structural bridge forward.)
 
 ## Where this leaves us

@@ -3,20 +3,20 @@ day: 285
 title: Affinity (Contemporary)
 pairs_with: "[[Day-285 - Affinity]]"
 length_target_words: 1500
-length_actual_words: 970
+length_actual_words: 1027
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism, PRS-17 bioelectric interface to collective intelligence)"
-  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociation as what makes perspectives separate)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue, Confidence High, the measured case; PRS-32 the cognitive-glue thesis, Confidence High but programmatic)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociation as what makes perspectives separate, Confidence High. NOT PRS-23, which is the origin-of-mental-contents record and defers the separation account to PRS-02.)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-18 widening a community)"
-evidence_strength_summary: "Levin multiscale boundary-redraw empirical at biological scale; Kastrup boundary metaphysics speculative; the 'one flesh redraws kinship' reading follows analytically from the Day-278 union-realism plus the affinity doctrine."
-length_ratio_to_target: 0.65
+evidence_strength_summary: "The Levin anchor is two records of different kinds at the same Confidence High and is not bundled: PRS-17 is measured work (bioelectric pattern memory persisting across cell divisions), PRS-32 is the programmatic cognitive-glue thesis that generalizes it. Kastrup PRS-02 is Confidence High as a record though the idealist ontology it belongs to remains contested. Rohr PRS-7 theological, Confidence Medium. Friston PRS-18 is Confidence Speculative and supports rather than carries the reading. The 'one flesh redraws kinship' claim follows analytically from the Day-278 union-realism plus the affinity doctrine, and its transfer from cellular integration to human marriage is analogical, not demonstrated."
+length_ratio_to_target: 0.685
 mind_first_reframe: "Affinity is real because a one-flesh union genuinely redraws the boundary of the related individual — the spouse's connections become the union's — just as integrating into a higher biological individual reconfigures the system's boundary."
 central_theme_thread: "Each marriage knits two webs of relation into one, a concrete down-payment on the project's final unity in which every perspective is related to every other — loving unity made contagious through structure."
 tags: [synthesis, day/285, theme/union-redraws-the-boundary-of-kin]
-last_qc_at: "2026-08-18T18:28:41"
+last_qc_at: "2026-09-01T04:22:53"
 last_qc_outcome: "rewrote"
 ---
 
@@ -32,7 +32,7 @@ The shared inquiry-problem is **boundary-redrawing by union**. Affinity only mak
 
 ## Resource
 
-The Levin-tradition program supplies the leading move. Tom's PRS-form record of Levin's work (PRS-32, *goal-directed cognition scaling from cells to organisms*; PRS-17, *the bioelectric interface to collective intelligence*) shows that when components integrate into a higher individual, the *boundary* of the system is redrawn — the cells that join an organism share a new collective interface, and what was external to each becomes internal to the whole. Translated: when two persons form one flesh, the relational boundary of the new dyadic individual incorporates connections that were external to each partner alone. Affinity is boundary-incorporation at the kin scale. The Kastrup-tradition program supplies the metaphysics of how boundaries between individuals are real yet movable: PRS-02 (*individual identity within monism*) and PRS-23 (*how individual minds separate — and, by implication, join — dissociative boundaries*) hold that the borders that individuate are soft features within one mind, so a union that relaxes and reconfigures a boundary genuinely changes the relational topology rather than merely renaming it. Rohr-tradition PRS-7 (*relationship ontologically prior*) underwrites the whole move: relations are not labels stuck onto finished individuals but constitutive, so a real new relation reshapes the field. Friston-tradition PRS-18 (*community-widening*) connects affinity to the prior day: affinity is *how* the consanguinity-driven outward marriage actually widens the net — each marriage knits two kin-networks into one.
+The Levin-tradition program supplies the leading move. Tom's PRS-form record of Levin's work — PRS-17, *bioelectric pattern memory as the cognitive glue constituting a collective knower*, which is the measured case, generalized by PRS-32 into the programmatic claim that this binding scales selfhood from physiology to mind — shows that when components integrate into a higher individual, the *boundary* of the system is redrawn — the cells that join an organism share a new collective interface, and what was external to each becomes internal to the whole. Translated: when two persons form one flesh, the relational boundary of the new dyadic individual incorporates connections that were external to each partner alone. Affinity is boundary-incorporation at the kin scale. The Kastrup-tradition program supplies the metaphysics of how boundaries between individuals are real yet movable: PRS-02 (*individual identity within monism* — the universe as a single undivided consciousness experiencing multiple dissociated points of view, so that individuality is preserved as a real construct of the dissociation process; Confidence High) holds that the borders which individuate are features within one mind, so a union that relaxes and reconfigures a boundary genuinely changes the relational topology rather than merely renaming it. Rohr-tradition PRS-7 (*relationship ontologically prior*) underwrites the whole move: relations are not labels stuck onto finished individuals but constitutive, so a real new relation reshapes the field. Friston-tradition PRS-18 (*community-widening*) connects affinity to the prior day: affinity is *how* the consanguinity-driven outward marriage actually widens the net — each marriage knits two kin-networks into one.
 
 ## Solution (proposed, speculative)
 
@@ -44,8 +44,9 @@ The project envisions a final unity in which every perspective is included in th
 
 ## Bridges
 
-- **Levin PRS-32 / PRS-17 (empirical at biological scale):** integration into a higher individual redraws the system boundary — the model for affinity as boundary-incorporation.
-- **Kastrup PRS-02 (metaphysical, speculative):** individuating boundaries are real — dissociation within a single consciousness is what makes separate perspectives separate — so a union that reshapes relational topology is reshaping something real rather than relabelling it. (PRS-23 was cited here as "how minds separate/join dissociative boundaries"; read at the body it is about how mental *contents arise* — thought-formation, creativity, cosmogenesis — and it explicitly defers the separation account to PRS-02. Removed as a mis-gloss; the claim it was asked to carry is PRS-02's.)
+- **Levin PRS-17 (empirical, Confidence High):** bioelectric pattern memory persisting across cell divisions, treated as *cognitive glue* constituting a collective knower above the individual cells — the measured case of a boundary redrawn by integration, and the model for affinity as boundary-incorporation.
+- **Levin PRS-32 (Confidence High, but a unifying thesis rather than a measurement):** the programmatic "cognitive glue" claim that bioelectric signalling scales selfhood from physiology to mind. It generalizes PRS-17 rather than adding evidence, and is named separately here so the generalization is not read as a second empirical result.
+- **Kastrup PRS-02 (metaphysical; Confidence High as a record, speculative as an ontology):** individuating boundaries are real — dissociation within a single consciousness is what makes separate perspectives separate — so a union that reshapes relational topology is reshaping something real rather than relabelling it.
 - **Rohr PRS-7 (theological):** relations are constitutive, not labels; a real new relation reshapes the field.
 - **Friston PRS-18 (formal in shape; register *Confidence: Speculative*):** affinity is the mechanism by which exogamous marriage widens the community's web. The widening account is a proposed parameterization rather than an established result; it supports the day's reading here but does not carry it — the leading move is Levin's.
 

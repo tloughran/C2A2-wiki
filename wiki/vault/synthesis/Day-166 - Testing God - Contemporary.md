@@ -3,10 +3,10 @@ day: 166
 title: Testing God (Contemporary)
 pairs_with: "[[Day-166 - Testing God]]"
 length_target_words: 1500
-length_actual_words: 1403
+length_actual_words: 1644
 length_tier: short
-length_ratio_to_target: 0.935
-length_note: "Under tier target (ratio 0.935, inside ±10%). Q.96–97 are tightly focused on the agent–test–source structure; the contemporary frame articulates this without recapitulation, so the prose is held to load-bearing moves. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.96 a.1–a.4, Q.97 a.1–a.4), which the commentary had been treating at question level only."
+length_ratio_to_target: 1.096
+length_note: "Recount 2026-09-01: pre-edit body was 1426 words, not the stored 1403 (understated by 23); true pre-edit ratio 0.951. Under tier target, inside ±10%. Q.96–97 are tightly focused on the agent–test–source structure; the contemporary frame articulates this without recapitulation, so the prose is held to load-bearing moves. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.96 a.1–a.4, Q.97 a.1–a.4), which the commentary had been treating at question level only."
 mind_first_reframe: "Under mind-monism, the medieval prohibition on tempting God reads as a constraint on the testing apparatus itself: an embodied predictive agent under uncertainty should run cheap in-distribution tests that update its priors honestly; demanding miracle-cost confirmation is the agent's corruption of its own test in order to protect a prior it already knows is failing."
 central_theme_thread: "Salvation in fear and trembling is the patient running of honest in-distribution tests whose accumulating results genuinely update one's priors; the tempter-of-God anti-pattern short-circuits the slow cooperative computation of loving unity from within perspective-limitation."
 karpathy_wiki_sources:
@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "Rohr canonical: 'The Universal Christ' on grasping vs. receiving"
 evidence_strength_summary: "Active-inference framing is mathematically formal; the prudential 'no-cheap-tests' rule for agents under uncertainty is empirical (decision theory, control theory); the theological framing of why an agent should refuse to commodify guidance is interpretive — speculative bridge work."
 tags: [synthesis, day/166, theme/epistemic-humility, theme/active-inference, q/96, q/97]
-last_qc_at: "2026-08-24T00:23:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-01T14:33:19"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 166 — Testing God (Contemporary)
@@ -59,9 +59,9 @@ The perspective-limited agent who would be wholly delivered from limitation in a
 
 ## Bridges
 
-- **Friston PRS-04, PRS-07** (active inference; FEP substrate-independence) — Q.97 a.1–a.2's prohibition on tempting God — deeds whose expected result can come from God alone, demanded as a sin against religion — maps onto the principle that an agent in homeostasis runs cheap, in-distribution tests, not extortionate out-of-distribution ones. *Empirical / mathematically formal.*
-- **Levin PRS-04, PRS-08** (substrate-independent cognition; cells as cognitive agents) — Q.96 a.2–a.3's distinction between licit observances grounded in the nature of the thing and illicit ones grounded in occult pact — the crystal ball is unlawful because a useless means expected to work anyway implies an appeal elsewhere — maps onto the difference between cells signaling within the morphogenetic field and cancers defecting from it. *Empirical.*
-- **McGilchrist PRS-05** (attention as ontological act) — the *mode* of testing (grasping vs. receiving) constitutes the kind of world the agent encounters. The medieval prohibition is a prohibition on a corrupted mode of attending. *Empirical (hemispheric neuroscience) + interpretive.*
+- **Friston PRS-07** (FEP substrate-independence formally established, Confidence **High**) — the formal core: Markov-blanket conditions are substrate-agnostic, so the cheap-test principle is a property of self-organizing systems as such, not of brains. *Mathematically formal.* Paired with **Friston PRS-04** (organism as active modeler, `P4 (Implicit)`, Confidence **Medium**), which supplies the predictive-coding framing at the individual-organism scale. Q.97 a.1–a.2's prohibition on tempting God — deeds whose expected result can come from God alone, demanded as a sin against religion — maps onto the principle that an agent in homeostasis runs cheap, in-distribution tests, not extortionate out-of-distribution ones. (QC 2026-09-01: the two had been bundled under one *Empirical / mathematically formal* badge. PRS-04's Resource line is the Bayesian-brain hypothesis — a reconceptualization of the organism as a hypothesis-testing system, not a measured result — so *empirical* overstated it, and the High record's formal standing was the one actually carrying the bullet. The recorded "Friston PRS-04 sold as mature" shape; check both confidence and scale.)
+- **Levin PRS-04** (cognition substrate — bioelectric computation as substrate-independent cognition, with xenobots as empirical proof of concept; `P4 (Implicit)`, Confidence **Medium**) **and PRS-08** (cells as cognitive agents in anatomical morphospace, **High**) — Q.96 a.2–a.3's distinction between licit observances grounded in the nature of the thing and illicit ones grounded in occult pact — the crystal ball is unlawful because a useless means expected to work anyway implies an appeal elsewhere — maps onto the difference between cells signaling within the morphogenetic field and cancers defecting from it. *Empirical — and here the label is carried by PRS-04's own Resource line, which names xenobots as proof of concept, rather than being averaged across the pair.* **Do not repoint this PRS-04.** It is a recorded vault-wide catch-all id and is repointed on many days, but its citation here is for substrate-independent cognition, which is its literal subject; verified at register body level 2026-09-01.
+- **McGilchrist PRS-05** (attention as ontological act, `P5 (Implicit)`, Confidence **Medium**) — the *mode* of testing (grasping vs. receiving) constitutes the kind of world the agent encounters. The medieval prohibition is a prohibition on a corrupted mode of attending. *Philosophical claim about attention, recorded at Medium; the hemispheric neuroscience it draws on is empirical, but this record is the world-constituting claim built on it, not the measurement.* (QC 2026-09-01: previously badged *Empirical*; corrected to the record's own kind and grade.)
 - **Stump-wiki PRS-06 with Loughran-wiki PRS-08** (tradition-crossing inquiry; MacIntyre criterion) — licit observances are those validated by a living tradition's accumulated practice; the test for licit-vs-illicit is itself a tradition-internal achievement. *Philosophical / methodological.*
 - **Wright (canonical, Matt./Luke temptation; Pauline pistis)** — refusal to extort confirmation is the shape of trust in the covenant frame. *Theological / scriptural.*
 
