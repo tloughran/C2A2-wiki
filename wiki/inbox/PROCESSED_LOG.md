@@ -831,3 +831,119 @@ These were decided (mostly +0 duplicate / citation-upgrade) on their ingest day 
 - PROP-2026-08-11-002 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
 - PROP-2026-08-12-001 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
 - PROP-2026-08-12-011 -> adjudicated in tradition wiki.md, not re-ingested (+0) [backfilled 2026-08-29]
+
+## 2026-09-01 — daily run (backlog clear: Rohr x16, Wright x11)
+
+### Rohr — 16 proposals -> PRS-45..PRS-66 (+22 distinct triplets from 46 candidates)
+Several triplets are anchored by more than one proposal, so the per-source anchors below
+sum to more than 22. That is merge working as intended, not double-counting.
+- PROP-2026-08-09-002 rohr_franciscan-mysticism-grace-and-connectivity -> rohr PRS-45, PRS-46, PRS-66 (+3)
+- PROP-2026-08-09-001 rohr_job-weekly-summary-joy-anyway -> rohr PRS-65 (+1)
+- PROP-2026-08-12-041 rohr_beatitudes-week-two-weekly-summary -> rohr PRS-63, PRS-64, PRS-65 (+3)
+- PROP-2026-08-12-040 rohr_infinite-in-the-finite-sacramental-universe -> rohr PRS-46, PRS-47 (+2)
+- PROP-2026-08-12-042 rohr_way-of-early-church-weekly-summary -> rohr PRS-66 (+1)
+- PROP-2026-08-14-031 rohr_clare-mirror-theosis -> rohr PRS-49 (+1)
+- PROP-2026-08-14-032 rohr_humility-of-god-kenosis -> rohr PRS-50 (+1)
+- PROP-2026-08-16-004 rohr_francis-clare-mysticism-weekly-summary -> rohr PRS-51, PRS-49 (+2)
+- PROP-2026-08-16-002 rohr_franciscan-lectio-gazing-as-knowing -> rohr PRS-47 (+1)
+- PROP-2026-08-16-003 rohr_remaining-in-love-univocity-of-being -> rohr PRS-48, PRS-49, PRS-46 (+3)
+- PROP-2026-08-23-004 rohr_hebrew-prophets-weekly-summary -> rohr PRS-61, PRS-62, PRS-63 (+3)
+- PROP-2026-08-23-003 rohr_prophetic-consciousness-non-dual-seeing -> rohr PRS-58, PRS-59, PRS-60 (+3)
+- PROP-2026-08-23-005 rohr_true-self-absolute-reference-point -> rohr PRS-52, PRS-53 (+2)
+- PROP-2026-08-25-052 rohr_everything-belongs-type3-achiever-culture -> rohr PRS-56 (+1)
+- PROP-2026-08-25-053 rohr_everything-belongs-type4-suffering-outward -> rohr PRS-57 (+1)
+- PROP-2026-08-25-051 rohr_releasing-false-self-launching-pad -> rohr PRS-54, PRS-55 (+2)
+
+### Wright — 11 proposals -> PRS-42..PRS-59 (+18 distinct triplets from 29 candidates)
+- PROP-2026-08-12-044 wright_angels-narrowed-modern-imagination -> wright PRS-42 (+1)
+- PROP-2026-08-12-047 wright_ask-ntw-jul20-parables-divorce-isaiah53 -> wright PRS-43, PRS-44 (+2)
+- PROP-2026-08-12-046 wright_ask-ntw-jul27-intermediate-state-corporate-faith-sabbath -> wright PRS-45, PRS-46 (+2)
+- PROP-2026-08-12-045 wright_gods-homecoming-four-gospels-deep-dive -> wright PRS-47, PRS-48 (+2)
+- PROP-2026-08-16-001 wright_gods-homecoming-ch6-paradise-intermediate-state -> wright PRS-49, PRS-50 (+2)
+- PROP-2026-08-12-043 wright_ask-ntw-aug10-near-death-sonship-satan -> wright PRS-51, PRS-52 (+2)
+- PROP-2026-08-12-048 wright_odyssey-homer-new-testament -> wright PRS-53 (+1)
+- PROP-2026-08-23-006 wright_loving-to-know-epistemology-of-love -> wright PRS-54, PRS-55 (+2)
+- PROP-2026-08-25-054 wright_ask-ntw-aug17-glory-trinity-dissent -> wright PRS-56, PRS-57 (+2)
+- PROP-2026-08-25-055 wright_ask-ntw-aug24-desire-defence-industry-pilate -> wright PRS-58, PRS-59 (+2)
+- PROP-2026-08-14-033 wright_who-is-this-god-admirato -- ATTEMPTED, NOT DECIDED. The proposal
+  itself records that no source text was retrieved and instructs the processor not to ingest its
+  conjectures, so nothing was extracted. **This is deliberately phrased to leave the id OPEN in
+  scripts/ingest_ledger.py.** It is a standing RETRIEVAL ASSIGNMENT, not a zero-yield decision --
+  the work is blocked on obtaining the source, and marking it closed would hide that. Re-run once
+  the source is in hand. (First phrasing of this line used the zero-yield token and did close it;
+  corrected in the same run.)
+
+Backlog effect: approved OPEN 59 -> 33, measured by scripts/ingest_ledger.py after the writes.
+26 closed by ingest. PROP-2026-08-14-033 stays a retrieval assignment and is NOT closed.
+
+## 2026-09-02 — C2A2 daily run (Phase 1 ingest)
+Processed 32 of the 33 approved-and-staged proposals the ledger reported OPEN. 26 produced triplets
+(69 minted across 9 traditions); 6 were locator or verification cards that carried no ingestible
+content and are recorded as decided with zero yield below, each on the card's own instruction.
+
+- PROP-2026-08-16-025 2026-08-16_arkanihamed_hydrotope-water-wave-scattering -> arkanihamed PRS-28, PRS-29, PRS-30 (+3)
+- PROP-2026-08-12-030 2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins -> carroll PRS-68, PRS-69, PRS-70, PRS-71, PRS-72 (+5)
+- PROP-2026-08-23-001 2026-08-23_carroll_mindscape-364-firestein-ignorance-failure -> carroll PRS-73, PRS-74, PRS-75 (+3)
+- PROP-2026-08-25-030 2026-08-25_carroll_mindscape-365-cardoso-black-holes-special -> carroll PRS-76, PRS-77, PRS-78 (+3)
+- PROP-2026-08-12-003 2026-08-12_kastrup_agency-gods-point-of-view -> kastrup PRS-64 (+1)
+- PROP-2026-08-12-002 2026-08-12_kastrup_objective-vs-subjective-idealism -> kastrup PRS-65, PRS-66, PRS-67 (+3)
+- PROP-2026-08-26-003 2026-08-26_kastrup_goel-quantum-effects-living-systems -> kastrup PRS-68, PRS-69 (+2)
+- PROP-2026-08-13-001 2026-08-13_fredrickson_keep-social-trial-registration -> fredrickson PRS-40, PRS-41, PRS-42 (+3)
+- PROP-2026-08-14-003 2026-08-14_levin_diverse-intelligence-talk-recording -> levin PRS-96 (+1)
+- PROP-2026-08-14-001 2026-08-14_levin_free-lunches-agential-gifts -> levin PRS-97, PRS-98, PRS-99 (+3)
+- PROP-2026-08-14-002 2026-08-14_levin_mental-health-tolchinsky-weiss-fields -> levin PRS-100, PRS-101 (+2)
+- PROP-2026-08-16-008 2026-08-16_levin_causal-emergence-before-self-replicators -> levin PRS-102, PRS-103, PRS-104 (+3)
+- PROP-2026-08-16-009 2026-08-16_levin_limbomorphs -> levin PRS-105, PRS-106, PRS-107 (+3)
+- PROP-2026-08-25-011 2026-08-25_levin_flim-long-distance-bioelectric-patterns -> levin PRS-108, PRS-109, PRS-110 (+3)
+- PROP-2026-08-25-012 2026-08-25_levin_planarian-habituation-transcriptional-profiling -> levin PRS-111, PRS-112, PRS-113 (+3)
+- PROP-2026-08-25-010 2026-08-25_levin_trained-planaria-memory-through-regeneration -> levin PRS-114, PRS-115 (+2)
+- PROP-2026-08-15-001 2026-08-15_wolfram_avocational-science-ruliology-onramp -> wolfram PRS-55, PRS-56, PRS-57, PRS-58 (+4)
+- PROP-2026-08-16-006 2026-08-16_friston_active-inference-test-time-scaling-law -> friston PRS-45, PRS-46, PRS-47, PRS-48 (+4)
+- PROP-2026-08-16-005 2026-08-16_friston_adaptive-nature-confirmation-bias -> friston PRS-49, PRS-50, PRS-51 (+3)
+- PROP-2026-08-16-007 2026-08-16_friston_renormalising-generative-models -> friston PRS-52, PRS-53, PRS-54 (+3)
+- PROP-2026-08-17-004 2026-08-17_friston_designing-ecosystems-of-intelligence -> friston PRS-55, PRS-56, PRS-57 (+3)
+- PROP-2026-08-25-013 2026-08-25_friston_hippocampal-ripples-predicted-uncertainty -> friston PRS-58, PRS-59 (+2)
+- PROP-2026-08-25-014 2026-08-25_friston_let-there-be-information-cultural-evolution -> friston PRS-60, PRS-61 (+2)
+- PROP-2026-08-25-015 2026-08-25_friston_rosetta-stone-neurophenomenology -> friston PRS-62, PRS-63 (+2)
+- PROP-2026-08-25-050 2026-08-25_stump_good-of-forgiveness-oup-chapter -> stump PRS-39, PRS-40 (+2)
+- PROP-2026-08-26-006 2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel -> hoffman PRS-40 (+1)
+
+Decided with zero yield — locator and verification cards, each on its own instruction:
+
+- PROP-2026-08-12-031 arkanihamed_pitp-2026-dualities-at-infinity -- +0. All three candidates have
+  Solution lines reading "(to be confirmed from the recording)"; the YouTube page returned no
+  description or transcript, so every candidate is inferred from the lecture title and program copy.
+  The verified part (PiTP 2026 dates, venue, stated theme, organizing team, lecture title and
+  "Part 1" numbering) is recorded as arkanihamed Active Research Question 12. Promote nothing
+  without watching the recording.
+- PROP-2026-08-15-002 mcgilchrist_commencement-2026-reopen -- +0. The card's own Handling Note:
+  "There are no triplets here to ingest." It establishes only that the 2026-08-11 verification
+  gate's re-open condition is met (the address is live on channelmcgilchrist.com/free-videos/,
+  00:08:58). The content gate still stands.
+- PROP-2026-08-26-001 mcgilchrist_ralston-lecture1-recording-released -- +0, citation-upgrade.
+  Candidate-01 is a verification assignment against PRS-61/62/63. Candidate-02 was applied as a
+  METADATA CORRECTION per the card's own recommendation: the Ralston symposium was delivered
+  May 2026, not July/August. See the dated CORRECTION block in traditions/mcgilchrist/prs_triplets.md
+  and traditions/wolfram/prs_triplets.md.
+- PROP-2026-08-26-002 mcgilchrist_ralston-lecture2-recording-released -- +0. Candidate-02 says
+  outright it "should not be promoted to a triplet on the strength of this proposal alone" and is
+  coded Speculative so approval schedules a listen; filed as mcgilchrist Active Research Question 21.
+  Note the card also records that the video page returned HTTP 429 and was not retried -- verify the
+  ID resolves before scheduling transcription.
+- PROP-2026-08-23-002 wolfram_ralston-mcgilchrist-mechanism-debate-recording -- +0. Locator only;
+  its own Evidence line says the confidence "attaches to the existence and identity of the record,
+  not to any claim about its contents." Candidate-02 (host-frame divergence) was also declined as a
+  triplet and filed to master/cross_program_index.md instead, because minting a second
+  agent-inference triplet into this tradition would repeat the defect the same card names about
+  PRS-54. The standing UNVERIFIED LEAD in the master index is retired.
+- PROP-2026-08-26-004 kastrup_levin-mind-is-everywhere-2026 -- +0. The card's Evidence line: "None
+  from the event, which has not occurred at the time of writing." Its candidate is a prediction
+  about what to listen for. The question it points at is sharpened as kastrup Active Research
+  Question 18.
+
+One approved-and-staged proposal was deliberately NOT processed and remains a standing retrieval
+assignment logged on 2026-08-29; it is not re-listed here, because re-listing an id on a line
+carrying a zero-yield token is what closed it by accident once already (FINDING-079).
+
+Pattern detector: 7 signals forwarded, FINDING-080 through FINDING-082 written. FINDING-080
+("interface" is a homonym across three pairs) escalated to the master Paradigm Shift Watch List.

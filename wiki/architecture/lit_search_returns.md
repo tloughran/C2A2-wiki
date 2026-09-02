@@ -41792,3 +41792,253 @@ DISPOSITION-888 — COHORT-LEVEL DISPOSITION OF THE NON-SEARCH ITEMS
   PROVENANCE: Origin 14a/14b · Chain [14a,14b -> 15c] (no 15a/15b step; none was performed and none is
     claimed) · Current status: REVISION-FLAGGED (five items) / CARRIED (three items)
 
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-010 (literature limb; MONITOR-012, 15d cycle 7)
+  Search direction: FOR (supportive)
+  Date: 2026-09-01
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Sveistrys et al. 2025, "PluriHop" (arXiv:2510.14377) for the recall-sensitivity
+    formalization; Microsoft Research 2026, "SentinelBench" (arXiv:2606.05342) for the monitoring limb
+    the four named benchmarks do not cover.
+  Summary: All four benchmarks verified to exist; three measure a component of the construct fairly
+    directly, and recall-anchored evaluation of new-information detection has long precedent (TREC
+    Temporal/Real-Time Summarization, FreshQA/RealTimeQA, systematic-review screening, horizon
+    scanning). Coverage is componential, not holistic: no one of the four measures the full conjunction
+    "reliably + detect condition changes + without human intervention."
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-010_for_cycle7.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-010 (literature limb; MONITOR-012, 15d cycle 7)
+  Search direction: AGAINST (challenging)
+  Date: 2026-09-01
+  Result: STRONGLY-CHALLENGED
+  Strength: Strong
+  Key source: "LiveBrowseComp" 2026 (arXiv:2605.28721) — Intrinsic Knowledge Dependence; agents answer
+    up to 44.5% of a web-search benchmark with no tools and fall below 2% on genuinely post-cutoff
+    questions.
+  Summary: Seven challenges, one root: the four benchmarks measure retrieval-given-a-known-target on a
+    bounded corpus, while the deployment construct is surveillance-for-unknown-targets on an unbounded,
+    continuously-changing one. PluriHop contains no web search at all; "Deep Research Bench" is
+    ambiguous between two papers differing on the frozen-vs-live axis under dispute; none of the four
+    reports a false-negative rate or any pass^k / variance figure.
+  SYSTEMIC-RISK-FLAG raised: benchmarks establish a ceiling, not a floor; the presumption uses them as
+    a floor.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-010_against_cycle7.md
+
+DISPOSITION-889:
+  Date: 2026-09-01
+  Item: PRESUMPTION-010 (literature limb only; MONITOR-012, 15d cycle 7)
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+
+  15a result: PARTIALLY-SUPPORTED
+  15a strength: Moderate
+  15b result: STRONGLY-CHALLENGED
+  15b strength: Strong
+
+  Net assessment: Both directions independently verified that all four named benchmarks exist and both
+    independently identified the same central defect - PluriHop is a closed-corpus RAG benchmark with no
+    web-search or temporal dimension, and no single benchmark in the set measures the full conjunction
+    "reliably + detect condition changes + without human intervention." 15a's support is real but is
+    support for a weaker claim than the one asserted: that recall is the right METRIC FAMILY, evidenced
+    by long precedent in TREC Temporal Summarization, FreshQA/RealTimeQA, systematic-review screening
+    and horizon scanning. 15b's challenge goes to the claim actually made, and it is decisive on three
+    counts 15a does not rebut: the answer-exists design means none of the four measures a false-negative
+    rate (the governing metric for a monitoring commitment); LiveBrowseComp shows agents succeed by
+    recognizing rather than discovering, with post-cutoff performance below 2%; and all four report
+    single-run aggregates, which cannot speak to the pass^k repeatability that a standing weekly monitor
+    requires.
+
+  Disposition: REVISE -> REVISE-424
+
+  Reasoning: What tipped the balance is that the two directions agree on the facts and differ only on
+    what the facts license. 15b's asymmetry argument is not answered by 15a's evidence: these benchmarks
+    can establish a CEILING (if agents cannot do the easier bounded task, they cannot do the harder open
+    one) but cannot establish a FLOOR, and cycle 6's finding declared the disposition-changing
+    measurement "newly SATISFIABLE" against precisely these instruments - i.e. used them as a floor.
+    Per 15c heuristic "PRESUMPTION with strong challenge -> lean REVISE with HIGH urgency," and with the
+    added weight that this is an unstated presumption the designers were unaware of, REVISE is correct.
+    This is a constructive rather than a destructive REVISE: 15a surfaced SentinelBench
+    (arXiv:2606.05342), a monitoring-agent benchmark scoring reaction time to scripted external events,
+    which measures the limb the four named instruments do not. The remedy is to re-specify the
+    instrument set, not to abandon the measurement.
+
+  Scope discipline: This dispositions the LITERATURE LIMB ONLY. The empirical limb of PRESUMPTION-010 -
+    an actual measurement of Agent 16's detection performance - was NOT searched, was NOT performed, and
+    is NOT claimed. The parent item remains [QUEUED-EMPIRICAL]. MONITOR-012 is NOT closed by this run.
+
+  What is at risk: Agent 16's unattended condition-detection commitment, and any downstream disposition
+    that treated cycle 6's "newly SATISFIABLE" finding as evidence the measurement could be made against
+    external benchmarks alone.
+
+  Recommended action: see REVISE-424.
+
+  Urgency: HIGH
+
+  Independence note: 15a and 15b ran in separate agent contexts; neither could read the other's files.
+    Per PREMISE-197 this removes a contamination channel but does not create statistical independence -
+    both share a base model and prompt scaffold. The two directions' convergence on the PluriHop defect
+    is therefore NOT counted as independent corroboration; it is counted once.
+
+  Verification performed by 15c: the two load-bearing citations were independently resolved before
+    dispositioning - arXiv:2605.28721 returns "LiveBrowseComp: Are Search Agents Searching, or Just
+    Verifying What They Already Know?" and arXiv:2606.05342 returns "SentinelBench: A Benchmark for
+    Long-Running Monitoring Agents." Titles match what the agents reported. The remaining ~28 citations
+    across both directions were NOT re-verified by 15c and are carried on the searching agents' word.
+
+  Consistency check against validated_premises.md: no existing PREMISE asserts the adequacy of these
+    four benchmarks. PREMISE-197 (context separation is not statistical independence) was applied to
+    this run's own method rather than contradicted. No contradiction found.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: 14b -> 15a, 15b -> 15c -> 15d -> 15a, 15b -> 15c (cycle 7)
+    Transform at this step: Net evaluation and disposition of the literature limb
+    Current status: REVISION-FLAGGED (literature limb) / MONITORING (parent item, empirical limb open)
+
+
+---
+
+## 2026-09-02 — 15a / 15b returns and 15c dispositions (cycle-5 monthly re-check, 15d lane)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-006 (MONITOR-2, cycle 5)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: Laudan, L., 1977. "Progress and Its Problems." Univ. of California Press — the solved problem as the basic unit of scientific progress within a research tradition.
+  Summary: P and S have strong theoretical grounding (Laudan) and R has separate grounding (Newell & Simon's problem space), but no source validates the triplet as COMPLETE, and the design co-evolution literature (Dorst & Cross) actively undermines any sequential reading of PRS.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-006_for_cycle5.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-006 (MONITOR-2, cycle 5)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate
+  Key source: Jansen, 2026. "The Scientific Contribution Graph." arXiv:2605.15011 — 2M contributions linked by 12.5M prerequisite edges, i.e. a dense DAG (~6 antecedents each), not a chain of triplets; SOTA reaches only 0.48 MAP on prerequisite prediction.
+  Specific risk: Triplet counts are non-comparable across traditions because problem-individuation has no criterion, so cross-tradition "progress" compares segmentation artefacts rather than work.
+  Summary: Progress in the measured record is a dense prerequisite DAG, not a decomposable sequence of triplets; the SEP Spring 2026 four-account taxonomy and the Bird/Dellsen objections to Shan were never engaged in April.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-006_against_cycle5.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-008 (MONITOR-4, cycle 5)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: May's theorem, via SEP "Social Choice Theory" — at n=3, 2-of-3 IS simple majority, uniquely satisfying universal domain, anonymity, neutrality and positive responsiveness; a 3/3 rule forfeits those axioms.
+  Summary: "Meaningful" holds on axiomatic and small-panel empirical grounds, but the disposition's decisive questions (1/2 vs 2/3 vs 3/3 for this task class; the error-cost structure) remain unanswered. 15a reports that searching FOR support repeatedly surfaced disconfirming 2026 work and explicitly warned 15c not to treat the two returns as symmetric this cycle.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-008_for_cycle5.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-008 (MONITOR-4, cycle 5)
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Kim, D., 2026. "Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles." arXiv:2607.20768 (submitted 2026-07-22) — across 31,900 subsets of 30 LLMs on MMLU-Pro, majority vote beats the best single member in only 9.98% of canonical size-3 subsets, while oracle gain is positive in 100%.
+  Specific risk: Three agents on a shared base model fail Condorcet's independence premise, so 2/3 agreement reports that the shared prior held — and it holds most firmly exactly when the prior is confidently wrong.
+  Summary: The April file rested entirely on Arrow/Condorcet/Janis/Moscovici analogies. 2026 work now measures C2A2's exact N=3 configuration and finds the gain is almost always absent, with homogeneous teams showing sycophantic adoption to 85.5% and isolated self-correction outperforming consensus.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-008_against_cycle5.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-001 (MONITOR-6, cycle 5)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate
+  Key source: "Agent role structure and operating characteristics in LLM clinical classification," 2026. ScienceDirect S2352914826000535 / medRxiv 2026.02.22.26346818 — compute-matched, role decomposition isolated as the sole variable; the split-specialist protocol won on accuracy and macro-F1.
+  Summary: This is the first cycle with a study of the exact design the April disposition called decisive, and the split won — but by shifting toward specificity at the cost of sensitivity, which is the WRONG direction for 14b's recall-oriented job. 15a also surfaced arXiv:2604.02460, which cuts against.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-001_for_cycle5.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-001 (MONITOR-6, cycle 5)
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Tran, D. & Kiela, D., 2026. "Single-Agent LLMs Outperform Multi-Agent Systems on Multi-Hop Reasoning Under Equal Thinking Token Budgets." arXiv:2604.02460 (2026-04-02, Stanford) — under matched reasoning-token budgets across Qwen3, DeepSeek-R1-Distill-Llama and Gemini 2.5, the single agent matched or outperformed every multi-agent variant, with a Data Processing Inequality argument for why decomposition costs information.
+  Specific risk: 14a/14b sits upstream of the whole register, so gap items — caught by neither agent — are invisible by construction and no downstream cycle can surface them.
+  Summary: The compute-matched test the April disposition asked for now exists and came back negative; Cemri et al. (arXiv:2503.13657) attribute 41.8% of multi-agent failures to system design, naming duplicate roles and poor decomposition specifically.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-001_against_cycle5.md
+
+SYSTEMIC-RISK-FLAG (raised by 15b, carried by 15c):
+  Date: 2026-09-02
+  Affected items: ASSUMPTION-008, PRESUMPTION-001 (and by inheritance PRESUMPTION-004)
+  Common vulnerability: Both presume that adding agents adds INDEPENDENT epistemic value. Shared base model plus fixed compute means parallel replication buys correlated votes and sequential splitting buys lossy handoffs.
+  Literature basis: arXiv:2607.20768; arXiv:2604.02460; arXiv:2605.00914v1; arXiv:2503.13657; and the standing PREMISE-197.
+  Risk level: HIGH (up from MODERATE in April)
+  Recommendation: Route to a human. This flag is reflexive — 15a/15b/15c ARE the configuration under challenge — so dispositioning it by agent consensus is the very procedure in question.
+
+DISPOSITION-890:
+  Date: 2026-09-02
+  Item: ASSUMPTION-006 (MONITOR-2, cycle 5)
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+
+  Net assessment: On evidence alone this is a textbook MONITOR — moderate both ways, unchanged in balance since April. It is not being dispositioned on evidence. Both search directions, independently and without seeing each other, reported that the claim is stated three different ways in the estate: "Problem-Representation-Solution" (current queue), "Problem-Response-State" (April 15b file) and "problem-research-synthesis" (April 15a file). Those are three different claims.
+
+  Disposition: REVISE
+
+  Reasoning: A moderate/moderate evidence balance cannot be carried forward when it is not established which proposition the evidence was gathered about. Much of April's challenge attacks the Response/State reading and does not transfer to Representation/Solution. The defect is in the record, not in the design — but it is 15c's to escalate, because fixing which statement is canonical is a decision only Tom can make. Dispositioning this MONITOR again would be the fifth cycle of accumulating evidence about an unfixed referent.
+
+  If REVISE:
+    What is at risk: The PRS triplet is the atomic unit of measured progress across the whole estate — PRS extraction, yield metrics, the connectome, and every cross-tradition comparison.
+    Recommended action: Rule on the canonical statement of ASSUMPTION-006, then re-run 15a/15b against it. Do not carry the April verdict across the fix.
+    Urgency: Medium
+
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c]
+    Transform at this step: Net evaluation and disposition, cycle 5
+    Current status: REVISION-FLAGGED (REVISE-425)
+
+DISPOSITION-891:
+  Date: 2026-09-02
+  Item: ASSUMPTION-008 (MONITOR-4, cycle 5)
+  Item type: ASSUMPTION (stated)
+
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+
+  Net assessment: Moderate support against a strong challenge, which the 15c heuristics put at REVISE. The asymmetry is real and not an artefact of assignment: 15a, searching FOR, itself surfaced disconfirming 2026 work and warned that the two returns should not be read as symmetric. The decisive datum is arXiv:2607.20768, which measures C2A2's exact N=3 configuration on 31,900 subsets and finds majority vote beats the best single member in 9.98% of size-3 subsets.
+
+  Disposition: REVISE
+
+  Reasoning: What tipped it is that the challenge and the support are about DIFFERENT THINGS, and separating them is the finding. 15a's axiomatic case is sound and survives: at n=3, 2-of-3 is simple majority and is uniquely characterised by May's theorem, so the FRACTION is not arbitrary and choosing 1/2 or 3/3 instead would be worse. What the 2026 empirical work challenges is not the fraction but the ENSEMBLE — whether voting among three same-base-model agents carries information at all. Changing 2/3 to some other ratio would therefore be the wrong repair. This also discharges the re-read that PREMISE-197 explicitly assigned to this monthly cycle: PREMISE-197 said the correlated-agreement principle "TIGHTENS" ASSUMPTION-008; the new empirical work quantifies by how much, and the answer is enough to move the item off MONITOR.
+
+  If REVISE:
+    What is at risk: Every tripled-agent decision in the estate, and the 2/3 consensus machinery generally.
+    Recommended action: Do not retune the threshold. Decide instead whether tripled same-model agreement is being read as evidence at all, and if it is retained, apply a stated correlation discount rather than counting votes. Where a decision matters, prefer isolated self-correction or a genuinely heterogeneous panel over a same-family trio.
+    Urgency: High
+    Consistency check: CONSISTENT with PREMISE-197 (correlated agreement is not corroboration) and with PREMISE-096. No ACTIVE premise contradicts this disposition; it is the application PREMISE-197 asked for.
+
+  PROVENANCE:
+    Origin: 14a; Chain: [14a -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c]
+    Transform at this step: Net evaluation and disposition, cycle 5
+    Current status: REVISION-FLAGGED (REVISE-426)
+
+DISPOSITION-892:
+  Date: 2026-09-02
+  Item: PRESUMPTION-001 (MONITOR-6, cycle 5)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+
+  Net assessment: Two compute-matched studies now exist and they disagree. 15a's (clinical classification, ScienceDirect S2352914826000535) favours the split; 15b's (arXiv:2604.02460, three model families, multi-hop reasoning, with a Data Processing Inequality argument) favours the single agent. The April disposition named exactly this comparison as decisive.
+
+  Disposition: REVISE
+
+  Reasoning: Three things tip it past MONITOR. First, the 15c heuristic that a PRESUMPTION facing a strong challenge leans REVISE with high urgency, because the designers never knew they were assuming it. Second, the tie between the two compute-matched studies is not a real tie: 15a's supporting study won by trading sensitivity for specificity, and 15a itself noted that this is the wrong direction for 14b, whose job is recall — surfacing presumptions nobody stated. A method that improves precision at the cost of recall is a net loss for that specific agent. Third, arXiv:2604.02460 was surfaced independently by BOTH directions; per PREMISE-197 that convergence is counted ONCE and not as corroboration, but 15a surfacing its own counterevidence while assigned the supportive direction is a stronger signal than mere agreement.
+
+  If REVISE:
+    What is at risk: 14a/14b are the intake for the entire self-awareness pipeline. Items caught by neither half are invisible by construction, and no downstream cycle can recover them.
+    Recommended action: Run the in-house comparison the April disposition asked for: one unified Agent 14 against 14a+14b at a matched token budget, scored on recall of a held-out set of known assumptions and presumptions. Recall, not precision, is the metric that matters. Until then, treat the split as unvalidated rather than as an improvement.
+    Urgency: High
+    Self-referential hazard, recorded not as a caveat but as a limit on this disposition: a split architecture was used to evaluate whether splitting helps. This is not a neutral instrument.
+
+  PROVENANCE:
+    Origin: 14b; Chain: [14b -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c]
+    Transform at this step: Net evaluation and disposition, cycle 5
+    Current status: REVISION-FLAGGED (REVISE-427)

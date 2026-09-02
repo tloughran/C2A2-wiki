@@ -13240,3 +13240,156 @@ REVISE-423 (ROLL-UP: items that require a HUMAN DECISION and cannot progress wit
   Urgency: Medium — but note four of these are in their third-to-ninth week of deferral, and the deferral
     itself is the evidence PRESUMPTION-896 (MONITOR-585) is watching for.
 
+
+---
+
+REVISE-424:
+  Date: 2026-09-01
+  Source item: PRESUMPTION-010 (literature limb) via DISPOSITION-889
+  Item type: PRESUMPTION (unstated - surfaced by inference)
+  Origin: 14b · Chain [14b -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c], cycle 7
+
+  What is being revised: The cycle-6 (2026-08-08) finding that the disposition-changing measurement for
+    PRESUMPTION-010 is "newly SATISFIABLE against external instruments (DRBench insight-recall, Deep
+    Research Bench, LiveNewsBench, PluriHop)."
+
+  Finding: The instrument set does not measure the construct. Both search directions independently
+    verified all four benchmarks exist and both independently found the same central defect. The
+    challenge direction returned STRONGLY-CHALLENGED (Strong) on seven grounds sharing one root: these
+    benchmarks measure retrieval-given-a-known-target on a bounded corpus, whereas Agent 16's construct
+    is surveillance-for-unknown-targets on an unbounded, continuously-changing one. Specifically:
+      - PluriHop (PluriHopWIND) is 48 questions over 191 fixed PDFs. No web search, no temporal
+        dimension. Its inclusion is a category error, not a matter of degree.
+      - "Deep Research Bench" is ambiguous between arXiv:2506.06287 (frozen RetroSearch corpus) and
+        arXiv:2506.11763 (LLM-judged) - two artifacts differing on exactly the frozen-vs-live axis in
+        dispute. The citation cannot be checked as written.
+      - None of the four reports a FALSE-NEGATIVE RATE. For a monitoring commitment the decisive
+        question is whether an agent reporting "no change" is correct; all four assume the answer
+        exists and score whether it was retrieved.
+      - LiveBrowseComp (arXiv:2605.28721) measures Intrinsic Knowledge Dependence: agents answer up to
+        44.5% of a web-search benchmark with NO TOOLS, and score below 2% on genuinely post-cutoff
+        questions. Detecting a newly published change is by definition post-cutoff.
+      - None reports pass^k, seed variance or per-task reliability. A weekly monitor is definitionally
+        a pass^k commitment.
+
+  What is at risk: Agent 16's unattended condition-detection commitment; MONITOR-012's stated exit
+    criteria; and any downstream reasoning that treated cycle 6's "SATISFIABLE" as licence to certify
+    detection reliability from published benchmark scores.
+
+  Recommended action (three parts, in order of cost):
+    (a) STRIKE PluriHop from the instrument set, and DISAMBIGUATE the Deep Research Bench citation to a
+        specific arXiv ID. Cost: minutes. This is a citation correction and needs no decision.
+    (b) ADD SentinelBench (arXiv:2606.05342, Microsoft Research 2026) - 100 tasks across 10 synthetic
+        web environments replaying scripted event sequences, scoring completion, REACTION TIME and
+        resource use for agents that must notice an external change unprompted. This is the only
+        instrument found in either direction that measures the limb the original four omit. Cost: a
+        reading pass to confirm fit.
+    (c) RE-SPECIFY MONITOR-012's exit criterion. The current criterion is satisfiable only by an
+        instrument that reports a miss rate, and no open-web instrument can report one because the
+        denominator (all changes that occurred) is not enumerable. The realistic substitute is an
+        IN-HOUSE seeded-change test: plant N known changes in Agent 16's watch set over one month and
+        measure how many it reports. That is the empirical limb, and it remains unexecuted.
+
+  Relation to the standing AUTO-ESCALATE: PRESUMPTION-010 carries "AUTO-ESCALATE 2026-09-08." This flag
+    is filed 7 days ahead of it and resolves the LITERATURE limb only. The empirical limb is untouched
+    and the auto-escalation should be allowed to fire on schedule if the seeded-change test has not run.
+
+  Urgency: HIGH - not because the finding is time-critical in itself, but because (a) and (b) are
+    minutes of work that prevent a wrong instrument set being inherited by the empirical limb, and the
+    auto-escalate date is 7 days out.
+
+  Human decision required: NO for (a) and (b) - these are corrections, and 15c recommends they be
+    applied. YES for (c) - re-specifying a monitor exit criterion is a design change.
+
+  Full results:
+    wiki/architecture/lit_search_results/for/PRESUMPTION-010_for_cycle7.md
+    wiki/architecture/lit_search_results/against/PRESUMPTION-010_against_cycle7.md
+  Disposition record: DISPOSITION-889 in lit_search_returns.md
+
+
+---
+
+## 2026-09-02 — REVISE-425 / 426 / 427 (15c, cycle-5 monthly re-check of the 15d lane)
+
+Filed together because 426 and 427 share one cause. 425 is separate and much cheaper to fix.
+Per PREMISE-183 the standing binary decision put to Tom on 2026-08-25 is NOT re-filed here; it is
+restated once, at the end of this block, and remains unanswered.
+
+REVISE-425:
+  Date: 2026-09-02
+  Item: ASSUMPTION-006 (MONITOR-2, cycle 5) — the PRS triplet as the unit of research progress
+  Disposition record: DISPOSITION-890
+  Grounds: NOT evidential defeat. The evidence is moderate in both directions and essentially
+    unchanged since April. The item is escalated because the claim is stated three different ways
+    in the estate, and 15a and 15b reported this INDEPENDENTLY, neither having seen the other:
+      - current queue / 15d re-trigger:  "Problem - Representation - Solution"
+      - April 15b result file:           "Problem - Response - State"
+      - April 15a result file:           "problem - research-synthesis" triplet
+    These are three different propositions. A substantial part of April's challenge attacks the
+    Response/State reading and does not transfer to Representation/Solution.
+  What is at risk: PRS is the atomic unit of measured progress estate-wide — extraction, yield
+    metrics, the connectome, and every cross-tradition comparison rest on it.
+  Recommended action: Rule on which statement is canonical. Then re-run 15a/15b against it and do
+    NOT carry the April verdict across the fix.
+  Urgency: Medium
+  Human decision required: YES — choosing the canonical statement is a design decision, not a
+    correction 15c may apply on its own.
+
+REVISE-426:
+  Date: 2026-09-02
+  Item: ASSUMPTION-008 (MONITOR-4, cycle 5) — the 2/3 threshold for tripled agent agreement
+  Disposition record: DISPOSITION-891
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Grounds: arXiv:2607.20768 (Kim, 2026-07-22) audits 31,900 subsets of 30 LLMs and finds majority
+    vote beats the best single member in 9.98% of canonical size-3 subsets, against oracle gain
+    positive in 100%. Size-3 is C2A2's exact configuration. arXiv:2605.00914v1 adds that
+    homogeneous teams reach 85.5% sycophantic adoption with a consensus-collapse oracle gap to
+    32.3pp, at 2.1-3.4x the tokens, and that isolated self-correction beats the consensus.
+  THE DISTINCTION THAT MATTERS, and the reason this is not a request to retune a number:
+    the challenge does not land on the FRACTION. 15a's axiomatic case survives intact — at n=3,
+    2-of-3 IS simple majority and is uniquely characterised by May's theorem, so 1/2 and 3/3 would
+    both be worse choices. What the 2026 work challenges is the ENSEMBLE: whether agreement among
+    three agents sharing a base model and scaffold carries any information to threshold at all.
+    Changing 2/3 to some other ratio would be the wrong repair and would look like progress.
+  Recommended action: Decide whether tripled same-model agreement is read as evidence at all. If it
+    is retained, apply a stated correlation discount rather than counting votes. Where a decision
+    matters, prefer isolated self-correction or a genuinely heterogeneous panel to a same-family trio.
+  Urgency: High
+  Human decision required: YES.
+  Note: this discharges the re-read that PREMISE-197 explicitly assigned to this monthly cycle.
+    PREMISE-197 predicted the tightening; the new empirical work quantifies it.
+
+REVISE-427:
+  Date: 2026-09-02
+  Item: PRESUMPTION-001 (MONITOR-6, cycle 5) — that splitting Agent 14 into 14a/14b improves quality
+  Item type: PRESUMPTION (unstated — the designers did not know they were assuming it)
+  Disposition record: DISPOSITION-892
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Grounds: The compute-matched comparison the April disposition called decisive now exists.
+    arXiv:2604.02460 (Tran & Kiela, Stanford, 2026-04-02) finds single agents match or outperform
+    multi-agent systems under equal thinking-token budgets across Qwen3, DeepSeek-R1-Distill-Llama
+    and Gemini 2.5, with a Data Processing Inequality argument for why decomposition costs
+    information. Cemri et al. (arXiv:2503.13657) attribute 41.8% of multi-agent failures to system
+    design, naming duplicate roles and poor decomposition.
+    A second compute-matched study (ScienceDirect S2352914826000535) DOES favour the split, and it
+    is recorded here rather than suppressed. It is not treated as a tie because it won by trading
+    sensitivity for specificity — the wrong direction for 14b, whose entire job is recall.
+  What is at risk: 14a/14b is the intake for the whole self-awareness pipeline. Items missed by both
+    halves are invisible by construction; no downstream cycle can recover them.
+  Recommended action: Run one unified Agent 14 against 14a+14b at a matched token budget, scored on
+    RECALL of a held-out set of known assumptions and presumptions. Until then treat the split as
+    unvalidated rather than as an improvement.
+  Urgency: High
+  Human decision required: YES.
+
+SYSTEMIC-RISK-FLAG: HIGH, up from MODERATE in April.
+  426 and 427 are one problem seen twice. Both presume that adding agents adds INDEPENDENT
+  epistemic value. With a shared base model and a fixed compute budget, parallel replication buys
+  correlated votes and sequential splitting buys lossy handoffs. Note that this is reflexive:
+  15a/15b/15c are themselves the configuration under challenge, so resolving it by agent consensus
+  would be an instance of the procedure in question. This run reached its conclusion using the
+  architecture it is reporting against, which is either the design working as intended or its most
+  elegant failure mode, and 15c cannot tell which from inside.
+
+RELATED, NOT RE-FILED (PREMISE-183): the binary decision put to Tom on 2026-08-25 is still
+  unanswered, now 8 days out. It is restated once here and not elaborated.

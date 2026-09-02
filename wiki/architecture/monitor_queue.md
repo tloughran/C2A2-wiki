@@ -508,6 +508,31 @@ FOR shows >90% detection for discrete, known changes. AGAINST identifies critica
 
 **Next check:** 2026-05-03
 
+**--- 15d cycle 7 update, 2026-09-01 (15a/15b/15c literature limb executed) ---**
+**Cycle:** 7 · **Last checked:** 2026-09-01
+**Literature limb:** SEARCHED and DISPOSITIONED this date. 15a PARTIALLY-SUPPORTED (Moderate) /
+  15b STRONGLY-CHALLENGED (Strong) -> **REVISE (DISPOSITION-889 -> REVISE-424)**.
+**Finding:** the instrument set named at cycle 6 (DRBench, Deep Research Bench, LiveNewsBench,
+  PluriHop) does not measure this monitor's construct. PluriHop is a closed-corpus RAG benchmark with
+  no web search; "Deep Research Bench" is an ambiguous citation resolving to two papers that differ on
+  the frozen-vs-live axis; none of the four reports a false-negative rate, which is the governing
+  metric for "what would change disposition" above.
+**Consequence for this monitor's exit criteria:** the criterion "false negative rates in actual
+  detection tasks" is NOT satisfiable by any published open-web benchmark, because the denominator
+  (all changes that occurred) is not enumerable. Cycle 6's "newly SATISFIABLE" finding is withdrawn.
+  Substitute proposed in REVISE-424(c): an in-house seeded-change test — plant N known changes in
+  Agent 16's watch set over one month, measure how many are reported. Requires human sign-off.
+**Instrument added:** SentinelBench (arXiv:2606.05342) measures unprompted reaction to scripted
+  external change and covers the limb the original four omit.
+**STALE-MONITOR-FLAG:** cycle 7 with no resolution. 15d's own spec requires this flag at 4+ cycles;
+  it was not raised at cycles 4, 5 or 6. Raised now. Evidence trajectory: SUPPORTING stable,
+  CHALLENGING **growing** (three 2026 sources this cycle that did not exist at earlier cycles).
+  Recommendation: do NOT downgrade to low-priority — the trajectory is moving, not stalled.
+**Status:** MONITORING (empirical limb open; literature limb closed to REVISE-424).
+  This monitor is NOT closed by the 2026-09-01 run. The 2026-09-08 AUTO-ESCALATE still stands for the
+  empirical limb.
+**Next check:** 2026-09-08 (coincides with auto-escalate)
+
 **Monitoring approach:**
 - Benchmark Agent 16 against known changes (discrete vs. novel)
 - Measure false negative rates
@@ -22933,3 +22958,53 @@ MONITOR-590:
     and both directions said so explicitly.
   PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+
+
+---
+
+## 2026-09-02 — 15d lane cycle-5 monthly re-check: MONITOR-002, MONITOR-004, MONITOR-006
+
+These three were re-triggered by 15d on 2026-07-05 at cycle 5 with "Next check: 2026-08-02" and sat
+unsearched for 59 days. They were searched by 15a and 15b on 2026-09-02 and dispositioned by 15c.
+All three leave MONITORING for REVISION-FLAGGED. Their per-entry records above are superseded by this
+block for cycle 5; the entries themselves are left in place rather than edited in situ.
+
+MONITOR-002 (ASSUMPTION-006, "PRS triplet captures research progress")
+  Cycle count: 5 -> 6 | Last checked: 2026-09-02 (15a/15b searched; 15c dispositioned)
+  Evidence trajectory: Supporting stable (Moderate); Challenging strengthened slightly (Moderate).
+  New sources this cycle: YES — arXiv:2605.15011 (scientific contribution graph as a dense
+    prerequisite DAG); SEP "Scientific Progress" Spring 2026; Bird/Dellsen on Shan. Cycles 1-3 had
+    recorded "no new sources" with no queries listed; that was wrong for this item.
+  STALE-MONITOR-FLAG: RAISED. Cycle 5 with no resolution; 15d's own spec requires this flag at 4+
+    cycles and it was not applied.
+  Status: MONITORING -> REVISION-FLAGGED (REVISE-425, DISPOSITION-890). Escalated for statement
+    ambiguity, not for evidential defeat: the claim exists in three incompatible statements.
+
+MONITOR-004 (ASSUMPTION-008, "2/3 consensus threshold meaningful")
+  Cycle count: 5 -> 6 | Last checked: 2026-09-02
+  Evidence trajectory: Supporting stable-narrowed (the axiomatic case survives, the empirical case
+    does not); Challenging STRENGTHENED sharply, Moderate -> Strong.
+  New sources this cycle: YES, and they are the whole story — arXiv:2607.20768, arXiv:2608.11403v2,
+    arXiv:2605.00914v1, arXiv:2605.29800. April rested entirely on Arrow/Condorcet/Janis analogies;
+    2026 work measures the N=3 case directly.
+  STALE-MONITOR-FLAG: RAISED (cycle 5, no resolution).
+  Status: MONITORING -> REVISION-FLAGGED (REVISE-426, DISPOSITION-891).
+  Note for 15d: do not re-queue this as a threshold-tuning question. The surviving finding is that
+    the fraction is fine and the ensemble is the problem.
+
+MONITOR-006 (PRESUMPTION-001, "splitting 14 into 14a/14b improves quality")
+  Cycle count: 5 -> 6 | Last checked: 2026-09-02
+  Evidence trajectory: Supporting strengthened (first compute-matched study favouring a split);
+    Challenging strengthened more (first compute-matched study against, plus a theoretical argument).
+    Net: the decisive test the April disposition asked for now exists and came back negative.
+  New sources this cycle: YES — arXiv:2604.02460; arXiv:2503.13657; arXiv:2606.20629;
+    ScienceDirect S2352914826000535 / medRxiv 2026.02.22.26346818.
+  STALE-MONITOR-FLAG: RAISED (cycle 5, no resolution).
+  Status: MONITORING -> REVISION-FLAGGED (REVISE-427, DISPOSITION-892).
+
+NOT SEARCHED THIS CYCLE, recorded so it is not mistaken for done:
+  MONITOR-009 (PRESUMPTION-004, "2/3 threshold optimal") is a near-duplicate of MONITOR-004
+  ("2/3 threshold meaningful"). It is in the same cycle-5 cohort and is also unsearched. It was NOT
+  searched by this run and is NOT tagged. It should inherit REVISE-426's reasoning when it is taken
+  up, and the duplication itself is worth a look: two monitor entries, two cycle counters and two
+  re-trigger streams have been tracking one question for five cycles.

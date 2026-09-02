@@ -19360,5 +19360,61 @@
   "text": "The observer-relativity cluster (FLAG-013 / FINDING-042) has collected several traditions saying that classification depends on the observer. Reber's one-line objection is a different move and a harder one: if being alive is what the observer decides, the observer must be alive to decide it, so the criterion consumes itself. Applied to the wider cluster the question generalizes \u2014 **what licenses t",
   "action": "**Test FLAG-013 against Reber's objection explicitly** \u2014 one pass over the Hoffman, Wolfram and Carroll captures asking only \"does this framework say what licenses its observer?\" A clean \"no\" in all three is the interesting result and would be worth escalating; a \"yes\" in any one of them is worth more, because it supplies the answer the other two need. Not escalated this run: an unverified reading of one's own vault is not a paradigm flag.",
   "source_date": "2026-08-29"
+ },
+ {
+  "a": "Rohr",
+  "b": "Wright",
+  "date": "2026-09-01",
+  "strength": "Speculative",
+  "weight": 1.0,
+  "nature": "**Structural correction to a standing axis** -- the axis is carrying three relations under one label",
+  "source": "finding",
+  "sid": "Rohr PRS-49 / PRS-58 read against Wright PRS-45, PRS-58 (CROSS-110, CROSS-111), and against FINDING-058",
+  "card": "",
+  "text": "The Rohr-Wright axis has been filed since FINDING-058 as a single preserved disagreement about whether historical settling is what is wanted. Reading both traditions in the same pass shows that description is now wrong in two directions at once. **First, there is a convergence and it is a good one.** Both traditions reach Philippians 2:12-13 for the same problem -- how divine action and human acti",
+  "action": "**Split the axis into three indexed entries** -- FINDING-058 unchanged, CROSS-110 as convergence, CROSS-111 as a second and separate tension -- and record the split in `synthesis/rohr_wright_bridge.md`. Do NOT escalate to the Paradigm Shift Watch List: this is the network learning that one of its own entries was under-resolved, which is housekeeping, not a shift. The falsifier for the convergence is cheap and should be run before it is cited: search both corpora for the other party by name. If Rohr has read Wright on Philippians, the independence claim dies and the convergence is worth much less.",
+  "source_date": "2026-09-01"
+ },
+ {
+  "a": "Rohr",
+  "b": "Stump",
+  "date": "2026-09-01",
+  "strength": "Strong",
+  "weight": 2.5,
+  "nature": "**Retroactive invalidation risk on existing entries** -- a reason to distrust work already done",
+  "source": "finding",
+  "sid": "Rohr PRS-48, PRS-49 (CROSS-108, CROSS-109)",
+  "card": "",
+  "text": "Rohr names Duns Scotus and the univocity of being in his own voice, not as a gloss a proposal supplied for him. Univocity is the historic alternative to the Thomist analogy of being, and analogy is load-bearing for Stump. The consequence runs backwards through the wiki: wherever this network has recorded Rohr and Stump agreeing about God and creature, the agreement may hold at the level of the Eng",
+  "action": "**Run the audit before citing any Rohr-Stump convergence, including in the ISME paper.** One pass over every existing Rohr-Stump CROSS asking only: does this agreement survive if Rohr means univocally what Stump means analogically? Entries that survive are strengthened by surviving. Not escalated: an audit request is not a paradigm flag, and escalating it would be a way of appearing to have done it.",
+  "source_date": "2026-09-01"
+ },
+ {
+  "a": "Rohr",
+  "b": "Wright",
+  "date": "2026-09-01",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**Pipeline defect that silently caps the value of research output** -- reported as a defect, not a research signal",
+  "source": "finding",
+  "sid": "The evidence base of the entire 2026-09-01 batch -- 10 of 11 Wright sources, plus Rohr PRS-56, PRS-57",
+  "card": "",
+  "text": "Ten of the eleven Wright sources are podcast episodes and **no audio was retrieved for any of them**; six are subscriber-only. Every Wright triplet in this batch except PRS-55 -- the one non-podcast source -- rests on a publisher-written episode description. On the Rohr side, PRS-56 and PRS-57 rest on publisher metadata alone, because cac.org returns 403 to automated requests. What a description a",
+  "action": "**Escalate as a pipeline item, not to the Paradigm Shift Watch List, and give it an owner.** Concretely, in order of cheapness: (1) try the institution-page check on the Wright material before another Ask-NTW proposal is filed on a description alone; (2) have the specialist agent record `source_url` as an episode permalink rather than the show index, which several of these do not; (3) if audio remains unobtainable, the honest fix is to stop minting triplets from descriptions and file them as retrieval assignments instead -- PROP-2026-08-14-033 was handled that way this run and is the right precedent. **Standing consequence until fixed: nothing in the Wright tradition except PRS-55 may be quoted externally, including in the ISME paper.**",
+  "source_date": "2026-09-01"
+ },
+ {
+  "a": "Fredrickson",
+  "b": "Rohr",
+  "date": "2026-09-01",
+  "strength": "Moderate",
+  "weight": 2.0,
+  "nature": "**Accumulating challenge to an operational construct from a tradition with no apparatus to test it**",
+  "source": "finding",
+  "sid": "Rohr PRS-46, PRS-65 (CROSS-113, CROSS-114), read against the standing grief boundary test (PROP-2026-08-07-003) and the dyadic co-measurement gap (FINDING-063..069)",
+  "card": "",
+  "text": "This is the third separate week of Rohr material to produce a boundary test for the positivity-resonance construct, and the two new ones are of different kinds. **Gate versus gradient (CROSS-113):** Rohr states the recognition constraint absolutely -- you cannot perceive what you have not become -- where Fredrickson's instruments treat the same constraint as continuous and measurable. One of these",
+  "action": "**Fold into the existing dyadic-co-measurement item rather than opening a new one** -- that item already proposes the right instrument (hyperscanning / dyadic physiology) and these two sharpen what it should measure. Concretely, CROSS-113 gives it a discriminating prediction it currently lacks: if the constraint is a gate, the measure should show a threshold; if a gradient, a slope. That is testable with the extension already proposed. **Escalate to the Paradigm Shift Watch List only if the gate reading survives** -- a genuine threshold in an affect measure would be a substantive result, and this is the first time the network has had a way to ask for one.",
+  "source_date": "2026-09-01"
  }
 ]

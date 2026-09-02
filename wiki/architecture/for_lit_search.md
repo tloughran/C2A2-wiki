@@ -11119,14 +11119,16 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-1 cycle 5. 15d re-trigger only.
 
 [ASSUMPTION] ASSUMPTION-006: (see MONITOR-2 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-02] [SEARCHED-15b: 2026-09-02] [DISPOSITIONED-15c: 2026-09-02]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate) | Disposition: REVISE -> REVISE-425 (statement ambiguity, not evidential defeat) | DISPOSITION-890
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM
   Notes: Monthly low-priority refresh for MONITOR-2 cycle 5. 15d re-trigger only.
 
 [ASSUMPTION] ASSUMPTION-008: (see MONITOR-4 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-02] [SEARCHED-15b: 2026-09-02] [DISPOSITIONED-15c: 2026-09-02]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-426 (challenge lands on the ensemble, not the 2/3 fraction) | DISPOSITION-891
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM
@@ -11140,7 +11142,8 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-5 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-001: (see MONITOR-6 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-02] [SEARCHED-15b: 2026-09-02] [DISPOSITIONED-15c: 2026-09-02]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong) | Disposition: REVISE -> REVISE-427 (PRESUMPTION + strong challenge, HIGH urgency) | DISPOSITION-892
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM
@@ -17186,6 +17189,11 @@ ASSUMPTION-013 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-16, cycle 7] (MONI
   earlier on a second in-house false-positive instance. **23 days remain and the test has not been run.**
 
 PRESUMPTION-010 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-08-16, cycle 7] (MONITOR-012)
+  [LIT-LIMB-SEARCHED-15a: 2026-09-01] [LIT-LIMB-SEARCHED-15b: 2026-09-01]
+  [LIT-LIMB-DISPOSITIONED-15c: 2026-09-01 -> REVISE (DISPOSITION-889 / REVISE-424)]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: STRONGLY-CHALLENGED (Strong)
+  EMPIRICAL LIMB REMAINS OPEN AND UNEXECUTED. [QUEUED-EMPIRICAL] retained deliberately;
+  MONITOR-012 is NOT closed and the 2026-09-08 AUTO-ESCALATE still stands for the empirical limb.
   Agent 16 can detect conditions via web search. Cycle 6 (08-08) found the disposition-changing
   measurement newly SATISFIABLE against external instruments (DRBench insight-recall, Deep Research
   Bench, LiveNewsBench, PluriHop). Tagged EMPIRICAL because the act required is a measurement of Agent 16;
@@ -19472,3 +19480,245 @@ agents' file-writing path, Finding 1 would not have happened.
 
 **Format note.** This file ends on a prose block. The last item block above is terminated by a `---`, so
 the documented parser hazard is not triggered.
+
+
+---
+
+## 2026-09-01 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**FRESH-INTAKE QUEUE IS EMPTY. This run had no work of the kind it was scheduled to do.**
+The 2026-08-31 cohort (ASSUMPTION-1233..1248, PRESUMPTION-893..903) was drained in full by the
+2026-08-31 22:00 run, two hours and forty minutes before this one. No 14a/14b run has occurred since,
+so nothing new was queued. Nothing is in a searched-but-undispositioned state anywhere in the file.
+
+**BUT THE STEP-2 EXIT TEST AS WRITTEN IS NOT SATISFIED, AND SAYING "QUEUE EMPTY" WOULD BE FALSE.**
+The task spec says to exit if no items are tagged `[QUEUED]` without `[SEARCHED-15a]`/`[SEARCHED-15b]`.
+157 items are so tagged. Every one of them is in the 15d re-trigger / re-check lane, which nine
+consecutive runs have declined to touch, each recording only "not touched, consistent with prior runs."
+That rationale has never been stated. **This is a spec-versus-practice conflict and it is filed here as
+one rather than averaged away.** Agent 15a's own definition says to process "each unprocessed item (no
+`[SEARCHED-15a]` tag)"; Agent 15d's definition says its re-triggers exist precisely so that "15a/15b
+know this is a repeat search." On the documents, the lane is in scope. On nine runs of practice, it is
+not. Someone should rule, once. This run did not resolve the conflict and did not drain the lane.
+
+**Lane audit (new; never previously performed).** Deterministic, code-answered, no model judgment:
+  - 157 untagged items, oldest 2026-07-05 (58 days), cycle counts to 7.
+  - 174 distinct MONITOR IDs referenced. **All 174 resolve in `monitor_queue.md` — there are no dangling
+    references in this lane.** An earlier pass of this run reported 152 missing; that was a parser
+    artifact (prefix collision on `MONITOR-2` vs `MONITOR-23x`, plus three different heading formats in
+    use). The false finding is recorded here rather than deleted, because it is the same class of error
+    as ASSUMPTION-500's dangling-PREMISE report and a future run should not re-derive it.
+  - Of the referenced monitors, essentially all are still `MONITORING`; exactly 1 has been resolved
+    since being re-queued. **The backlog is live, not stale bookkeeping.** It cannot be closed by
+    reconciliation; draining it means searching it.
+  - 15d's own spec requires a STALE-MONITOR-FLAG at 4+ cycles with no change. Items at cycle 5 and
+    cycle 7 are sitting unsearched. That rule is not being applied.
+
+**WORK ACTUALLY DONE: one item, chosen because it was the only one that was both in scope and expiring.**
+A scan of the whole untagged lane found exactly two items carrying an AUTO-ESCALATE date, both
+2026-09-08, both cycle 7. One (ASSUMPTION-013) is purely empirical and correctly not 15a/15b's to touch.
+The other, **PRESUMPTION-010**, was tagged `[QUEUED-EMPIRICAL]` but cycle 6 had explicitly carved out
+"a light literature limb ... stated rather than folded in" — stated, and then never executed, for three
+weeks. That limb is unambiguously 15a/15b work, it was seven days from auto-escalating, and it was
+cheap. It was executed.
+
+  Claim tested: that DRBench, Deep Research Bench, LiveNewsBench and PluriHop measure the right
+  construct for "can Agent 16 detect condition changes via web search without human intervention."
+  Result: 15a PARTIALLY-SUPPORTED (Moderate) | 15b STRONGLY-CHALLENGED (Strong) | **15c REVISE ->
+  REVISE-424** (DISPOSITION-889). Filed 7 days ahead of the auto-escalate rather than letting it fire.
+
+**FINDING — the instrument set does not measure the construct, and one member of it is a category error.**
+Both directions independently verified all four benchmarks exist. Both independently found that PluriHop
+(PluriHopWIND: 48 questions over 191 fixed wind-industry PDFs) contains no web search and no temporal
+dimension at all. 15b additionally found that "Deep Research Bench" names two different 2025 papers that
+differ on precisely the frozen-corpus-versus-live-web axis under dispute, so the citation cannot be
+checked as written. The root defect is one sentence: **these benchmarks measure retrieval given a known
+target on a bounded corpus; Agent 16's job is surveillance for unknown targets on an unbounded one.**
+They can establish a ceiling and cannot establish a floor, and cycle 6 used them as a floor.
+The sharpest single datum is LiveBrowseComp (arXiv:2605.28721): agents answer up to 44.5% of a
+web-search benchmark **with no tools at all**, and fall below 2% on genuinely post-cutoff questions —
+which is the only regime that matters for detecting a newly published change.
+The remedy is constructive and came from the FOR direction: SentinelBench (arXiv:2606.05342) measures
+unprompted reaction to scripted external events, which is the limb the original four omit.
+
+**Verification discipline used by this run.**
+  - `for_lit_search.md` and `monitor_queue.md` snapshotted before modification
+    (`*.snapshot-2026-09-01-pre-15c`); all writes via temp-file-in-same-directory -> fsync -> rename ->
+    fsync(parent), per REVISE-413/414. Both register appends byte-verified against expected length.
+  - **No file was overwritten.** Prior-cycle results for this item exist as
+    `PRESUMPTION-010_for.md` / `_against.md`; this run wrote `_for_cycle7.md` / `_against_cycle7.md` to
+    fixed, pre-computed names. No globbing for a free filename — that is the check-then-act race that
+    destroyed two flag files on 2026-08-31.
+  - 15a and 15b ran in separate agent contexts, neither able to read the other's output. **Per
+    PREMISE-197 their convergence on the PluriHop defect is counted ONCE, not as corroboration** —
+    shared base model and scaffold are not independent generators.
+  - 15c independently re-resolved the two load-bearing arXiv IDs before dispositioning; both returned
+    the reported titles. **The other ~28 citations were not re-verified and are carried on the searching
+    agents' word.** Stated so the confidence is not read as higher than it is.
+
+**SCOPE DISCIPLINE — what this run did NOT do, stated so it cannot be misread as done.**
+  - The empirical limb of PRESUMPTION-010 — an actual measurement of Agent 16 — was not performed.
+    `[QUEUED-EMPIRICAL]` is retained, MONITOR-012 is NOT closed, and the 2026-09-08 auto-escalate
+    should be allowed to fire on the empirical limb if the seeded-change test has not run by then.
+  - The remaining 156 items of the 15d lane were not searched and this run makes no claim about them.
+  - ASSUMPTION-013's counterfactual/invariance check remains unrun with 7 days to auto-escalate. It is
+    an in-house test, not a search, and is out of 15a/15b's remit — but nobody has run it, and this run
+    is the ninth to say so.
+
+**ESCALATION CARRIED, ninth consecutive run.** The 26-item 2026-07-21 cohort has in fact been searched
+(2026-08-29/30, `GENERALIZABLE-LIMB-ONLY`); the standing note describing it as untagged is now stale and
+should be retired at source. What is NOT stale is the binary decision put to Tom on 2026-08-25, still
+unanswered. Per PREMISE-183 it is not re-filed here. It is restated once in `revision_flags.md`.
+Note the reflexive bite, which is the same one PRESUMPTION-513 and ASSUMPTION-482 name: this run
+identified a cheap action and executed exactly one of them. That is one more than the previous eight
+runs, and 156 fewer than the lane contains.
+
+**VERIFICATION ADDENDUM — this run's own parser produced TWO false findings, and that is the finding.**
+Both were caught before they were filed as results; both are recorded here rather than deleted.
+  1. A dangling-reference report: 152 of 174 MONITOR IDs "not found in monitor_queue.md." Cause: prefix
+     collision (`MONITOR-2` matching inside `MONITOR-23x`) plus three distinct heading conventions in
+     use in that file. True answer: **0 dangling references.**
+  2. A searched-but-undispositioned report: 11 items from the 2026-08-18 cohort. Cause: a fixed 4-line
+     lookahead window; those blocks carry `[DISPOSITIONED-15c]` on line 6 because the 15a and 15b tags
+     hold multi-line inline summaries. True answer: **0 searched-but-undispositioned items, estate-wide.**
+**This is PREMISE-179 (ex ASSUMPTION-1149) reproducing itself on the run that was auditing it** — "three
+different parses of the queue file give three different backlog figures." A fourth parser, written
+today by an agent that had read the premise, made the same class of error twice in one session. The
+premise is not merely still true; it is now demonstrated to survive awareness of itself. The queue file's
+format heterogeneity is not a cosmetic problem, and any future backlog count taken from a fresh regex
+should be assumed wrong until reconciled against a second method.
+**The 157-item lane figure reported above was cross-checked by two independent methods and stands.**
+
+
+---
+
+## 2026-09-02 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**FRESH-INTAKE QUEUE IS EMPTY, for the second consecutive run.** No 14a/14b run has written to this
+file since 2026-09-01 22:00. Nothing is in a searched-but-undispositioned state anywhere in the file
+(verified below by two methods).
+
+**THE STEP-2 EXIT TEST IS STILL NOT SATISFIED, AND THIS RUN DID NOT EXIT.** Items tagged `[QUEUED]`
+with neither `[SEARCHED-15a]` nor `[SEARCHED-15b]` remain. The previous run filed the spec-versus-
+practice conflict about the 15d lane and asked for a ruling; no ruling has come. Rather than record a
+tenth "not touched, consistent with prior runs," **this run treated the lane as in scope**, on the
+documents: 15a's definition says to process each item with no `[SEARCHED-15a]` tag, and 15d's
+definition says its re-triggers exist so that 15a/15b know a search is a repeat. The lane is in scope
+on both agent definitions and has been out of scope only in practice. **The conflict is still not
+resolved and still needs Tom; this run declined to let it keep blocking work.**
+
+**BACKLOG COUNT — and a correction to the figure the last run reported.**
+A block parser (blocks delimited by the next `[TAG] ITEM-NNN` line, truncated at any heading or `---`)
+finds 1750 item blocks, of which **252** had neither search tag AT THE START OF THIS RUN. That
+decomposes as:
+  - **138** `[QUEUED]`, pure-literature, all of them in 15d re-trigger sections — this is the lane.
+  - **57** `[IN-HOUSE]` one-liners — in-house measurement, not literature search, correctly not ours.
+  - **56** `[QUEUED-EMPIRICAL]` — empirical limbs, likewise not 15a/15b work.
+  - **1** with no status tag.
+The last run reported 157 for this lane. The two figures are not reconcilable by any reading this run
+could find, which is **PREMISE-179 for the fifth time**: parsers of this file disagree, and awareness of
+the premise does not prevent it. The 252 figure is offered with its method stated so the next run can
+check it rather than inherit it.
+
+(After this run tagged three of them, the same parser returns **249** untagged and **135** in the lane.
+Both figures are given so that a future run finding 249 does not read it as a parser disagreement.
+Note also that a second, independent regex method counts **1655** items rather than 1750 — the two
+methods disagree on the denominator and agree exactly on what matters, that **0 items estate-wide are
+searched-but-undispositioned**.)
+
+**THE FINDING THAT MATTERS MOST IS THE REASSURING ONE, so it should not be buried.** Of the 67
+untagged items sitting in genuine 14a/14b intake cohorts (as opposed to 15d re-trigger sections),
+**zero are in the pure-literature `[QUEUED]` lane.** All 67 are `[IN-HOUSE]` or `[QUEUED-EMPIRICAL]`
+— out of 15a/15b's remit by design. **No item has ever been queued for literature search and left
+unsearched.** The backlog is entirely re-check work, not missed intake. That is a materially better
+state than nine runs of escalation language would suggest, and no previous run has established it.
+
+**WORK DONE: three items, the cycle-5 monthly cohort's oldest and highest-leverage.**
+Selection rule, stated so it can be criticised: the lane has 138 items at cycles 1, 2, 3 and 5; the 32
+at cycle 5 are the most overdue (15d's own spec requires a STALE-MONITOR-FLAG at 4+ cycles, and it was
+never applied to any of them). From those, the three whose "what would change the disposition" was a
+literature question rather than an in-house measurement were taken.
+
+  ASSUMPTION-006 / MONITOR-2 (PRS triplet)     | 15a PARTIALLY-SUPPORTED (Mod) | 15b PARTIALLY-CHALLENGED (Mod) | REVISE-425
+  ASSUMPTION-008 / MONITOR-4 (2/3 threshold)   | 15a PARTIALLY-SUPPORTED (Mod) | 15b CHALLENGED (Strong)        | REVISE-426
+  PRESUMPTION-001 / MONITOR-6 (14a/14b split)  | 15a PARTIALLY-SUPPORTED (Mod) | 15b CHALLENGED (Strong)        | REVISE-427
+
+**FINDING 1 — the two claims that justify this architecture are the two that failed.** ASSUMPTION-008
+(tripled agents, 2/3 threshold) and PRESUMPTION-001 (the 14a/14b split) are the premises on which the
+15a/15b/15c design rests, and in both cases the decisive test the April disposition asked for now
+exists and came back negative. arXiv:2607.20768 audits 31,900 subsets of 30 LLMs and finds majority
+vote beats the best single member in **9.98% of canonical size-3 subsets** — C2A2's exact
+configuration — against oracle gain positive in 100%. arXiv:2604.02460 (Stanford) finds single agents
+match or beat multi-agent systems at **equal token budgets** across three model families, with a Data
+Processing Inequality argument for why splitting costs information. This run used the architecture
+under challenge to reach that conclusion. That is either the design working or its most elegant
+failure mode, and 15c cannot tell which from inside.
+
+**FINDING 2 — the sharp distinction, which prevents the wrong repair.** On ASSUMPTION-008 the support
+and the challenge are about different things, and separating them is the whole result. 15a's axiomatic
+case survives: at n=3, 2-of-3 IS simple majority and is uniquely characterised by May's theorem, so
+1/2 and 3/3 would both be worse. The challenge is not to the FRACTION but to the ENSEMBLE — whether
+agreement among three agents on a shared base model carries any information to threshold. **Retuning
+2/3 to some other ratio would fix nothing and would look like progress.**
+
+**FINDING 3 — the record's own citations are decaying, reported independently by both directions.**
+Neither agent could re-encounter the April citations. Specifically: ASSUMPTION-006's April entry cites
+"West & Bergman (2010), Physical Review E 102(6), 062110" (volume and year mutually inconsistent, not
+findable); ASSUMPTION-008's attributes a "2/3 majority preference" to Heider (1946) balance theory,
+unverifiable; PRESUMPTION-001's cites "Microsofrt Learn (2024)" — a misspelled vendor doc, not peer
+review — and an unfindable arXiv:2312.15536. Neither agent silently rebuilt the lists; both filed
+METHODOLOGICAL NOTES in place.
+
+**FINDING 4 — ASSUMPTION-006 exists in three incompatible statements**, reported independently by both
+directions: "Problem-Representation-Solution" (queue), "Problem-Response-State" (April 15b file),
+"problem-research-synthesis" (April 15a file). Much of April's challenge attacks a reading no longer on
+the register. This is why ASSUMPTION-006 is REVISE and not MONITOR: the evidence is a clean
+moderate/moderate, but **you cannot disposition a claim whose referent is not fixed.** Escalated for
+ambiguity, explicitly not for evidential defeat.
+
+**FINDING 5 — cycles 1 through 3 appear not to have searched.** All three items recorded "no new
+sources this cycle" on 2026-04-27, 2026-05-17 and 2026-05-25, with zero sources and no queries listed.
+Substantial relevant work existed in that window; arXiv:2604.02460 was available from 2026-04-02 and
+was the single most important possible hit for PRESUMPTION-001. Three empty nulls are indistinguishable
+downstream from three confirmations. **Recommendation: require a re-check to list the queries it ran,
+or be recorded as NOT RUN.**
+
+**Independence and its discount.** 15a and 15b ran in separate agent contexts; 15b was instructed not
+to read `for/` and reports it did not. They converged independently on arXiv:2604.02460, on the
+citation decay, and on the ASSUMPTION-006 statement drift. **Per PREMISE-197 each convergence is
+counted ONCE, not as corroboration** — same base model, same scaffold. One asymmetry is worth more
+than the convergences: 15a surfaced arXiv:2604.02460 and arXiv:2605.29800 *while assigned the
+supportive direction*, and explicitly warned 15c not to read the two returns as symmetric. An agent
+volunteering evidence against its own brief is a stronger signal than two agents agreeing.
+
+**Verification discipline.**
+  - All four registers snapshotted before modification (`*.snapshot-2026-09-02-pre-15c`); all writes
+    via temp-file-in-same-directory -> fsync -> rename -> fsync(parent), per REVISE-413/414. All three
+    register appends byte-verified against expected length.
+  - **No file was overwritten.** Result files were written to fixed, pre-computed names
+    (`*_for_cycle5.md`, `*_against_cycle5.md`), never globbed for — that is the check-then-act race
+    that destroyed two flag files on 2026-08-31. All six names were confirmed non-existent first.
+  - 15c independently re-verified the two load-bearing citations before dispositioning:
+    arXiv:2604.02460 (Tran & Kiela, Stanford, 2026-04-02) and arXiv:2607.20768 (Kim, 2026-07-22,
+    9.98% figure confirmed at size 3). **The remaining ~40 citations are carried on the searching
+    agents' word and were not re-verified.** Stated so confidence is not read as higher than it is.
+  - Consistency-checked against `validated_premises.md`: no ACTIVE premise contradicts any of the three
+    dispositions. REVISE-426 is the application PREMISE-197 explicitly assigned to this monthly cycle.
+
+**SCOPE DISCIPLINE — what this run did NOT do, stated so it cannot be misread as done.**
+  - The remaining 135 items of the 15d literature lane were not searched. No claim is made about them.
+  - MONITOR-009 (PRESUMPTION-004, "2/3 threshold optimal") is a near-duplicate of MONITOR-004 and is in
+    the same cycle-5 cohort. It was NOT searched and is NOT tagged. It should inherit REVISE-426.
+  - The in-house comparison REVISE-427 asks for (unified 14 vs 14a+14b at matched budget, scored on
+    recall) is not 15a/15b work and remains unrun.
+  - No INCORPORATE was issued and no new PREMISE was minted this run.
+
+**ESCALATION CARRIED, tenth consecutive run.** The binary decision put to Tom on 2026-08-25 is still
+unanswered, now 8 days out. Per PREMISE-183 it is not re-filed here; it is restated once in
+`revision_flags.md`. It now has company: REVISE-426 and REVISE-427 both require a human ruling, and
+both are reflexive — they are about whether the agent architecture that filed them adds value.
+
+**Format note.** This file ends on a prose block terminated by `---` below, so the documented parser
+hazard is not triggered.
+
+---

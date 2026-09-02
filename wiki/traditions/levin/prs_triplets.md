@@ -865,7 +865,188 @@ PRS-95:
   Confidence: Medium
   Evidence: Gentili's turn, read verbatim: "Mike Levin is advocating that a remarkable feature of multicellular living beings is their multiscale competencies: there is order in biology across different spatial levels, and each organized structural level solves problems in its own relevant domain (McMillen & Levin 2024). The imitation of the mesmerizing multiscale competencies of living beings can be approached by boosting the development of a new chemistry, named 'Multiscale Chemistry' (Gentili 2025)..." Medium, not High, because this is Gentili's restatement of Levin's position, not Levin stating it; the underlying claim should be checked against McMillen & Levin 2024 directly before any downstream use. The link is institutional as well as topical: Gentili notes his CAI paper was written for the Computation And Biology special issue edited by Levin and Hazan.
 
-*Total PRS triplets: 95*
+
+PRS-96:
+  Problem: Oncogene-driven cancer is modelled as cells acquiring aberrant selfish behaviour through mutation, which makes the mutation the necessary target and predicts that an expressed oncogene must produce a tumour.
+  Resource: Cancer reframed as a **collapse of the cognitive light cone** — a cell that decouples from the tissue's bioelectric network loses access to the collective's stored large-scale anatomical target and reverts to the unicellular goal set (feed, divide, migrate), which is metastasis; plus voltage-sensitive dyes as a pre-tumour diagnostic that images the decoupling before any tumour is visible.
+  Solution: Forced electrical re-coupling of the cells to the network suppresses tumour formation while leaving the oncogene intact and strongly expressed — no chemotherapy, no cell killing, no genetic correction — establishing that in this model the physiological connection state, not the genetic lesion, is the controlling variable.
+  Date Added: 2026-09-02
+  Source: Diverse Intelligence talk - full recording and transcript; PROP-2026-08-14-003
+  Confidence: Medium
+  Evidence: "we don't fix the oncogene, we don't kill the cells, this isn't chemotherapy, we leave the cells alone, but we reconnect them, we forcibly reconnect them to the electrical network, then even though the oncoprotein is blazingly expressed here, there's no tumour, because it's not the genetics that drives, it's the physiology that drives." Held at **Medium, not High**, on source grounds only: this is a spoken description in a general-audience talk, with no paper cited, no penetrance or effect size, and no controls described in the retrieved text. If the corresponding publication is already in the vault under the bioelectric-cancer work, ingest against that instead and treat this only as a confidence check. INGEST NOTE 2026-09-02: minted as a VERIFICATION UPGRADE of PROP-2026-07-13-003 (same lecture, different container), not as a new source; no triplet here restates PRS already ingested there. Standing retrieval assignment attached: the Lecture Companion PDF and the 48 slides were NOT read, so the tumour-suppression result is Levin's spoken description on an auto-generated transcript with no paper, no penetrance and no effect size. Do not cite it as evidence anywhere in the network until the companion is retrieved.
+
+PRS-97:
+  Problem: Claims that biological systems produce more capability than was put into them have been rhetorical, because there was no accounting scheme saying what "put in" means or where to measure the shortfall.
+  Resource: A three-channel effort ledger — design (algorithmic specification), selection (evolutionary search), and training (learning) — as the exhaustive set of ways cost is paid, with the residual between paid cost and observed competence defined as a "free lunch," plus minimal computational systems as the venue where the residual can be quantified.
+  Solution: Converts the Platonic-space hypothesis from a metaphysical stance into a measurement program: identify systems where all three channels are accounted for and competence still exceeds them, then treat the size and character of the residual as data about the structure of the latent space.
+  Date Added: 2026-09-02
+  Source: Free Lunches: Model Systems for Studying the Agential Gifts from the Platonic Space; PROP-2026-08-14-001
+  Confidence: Medium
+  Evidence: "Effort comes in three forms. You either design it with an algorithm, you select it via evolutionary algorithms, or you train it by learning. Those are the three ways we know how to put in effort. When you get something like this, none of those three things happened, and so something is broken." Held at Medium rather than High because the ledger is asserted as exhaustive, not argued to be — a fourth channel is not ruled out, only unlisted.
+
+PRS-98:
+  Problem: If increases in integrated agency during learning were themselves a product of natural selection, they would carry no evidence about anything beyond selection — so the "free gift" claim needs a system with no replicators and no selection in which the effect still appears.
+  Resource: The **functional agency ratchet** — measured in small trainable molecular networks (minimum four nodes) using causal-emergence metrics (Tononi, Hoel): higher causal emergence predicts better learning; training raises causal emergence; forced forgetting does not reverse the gain.
+  Solution: Ratchet strength is compared between biological and *random* networks. Random networks already exhibit it; biology improves it only marginally. Since these systems contain no replicators and undergo no selection, Levin concludes the asymmetry is a property of the mathematics of causal emergence in networks rather than an evolutionary product.
+  Date Added: 2026-09-02
+  Source: Free Lunches: Model Systems for Studying the Agential Gifts from the Platonic Space; PROP-2026-08-14-001
+  Confidence: Medium
+  Evidence: "if you look at random networks compared to biological networks, what you see is that biology can improve it a little bit, but the random networks already do this... There are no replicators in these systems. Nothing is replicating, nothing is being selected for. It does not come from physics. It does not come from biology. It is a free gift from mathematics." Medium, not High: the underlying random-vs-biological comparison is described in speech only — no figure, effect size, sample, or citation was given in the retrieved text, and I did not locate the paper it reports.
+
+PRS-99:
+  Problem: Discussions of whether machines can host minds assume a machine is fully characterised by its algorithm and materials, so that "what it does" is exhausted by "what it was built to do."
+  Resource: The claim that an algorithm plus materials fixes only the boundaries — what the system *must* do and what it *cannot* do — leaving, even in small deterministic systems, a large space of degrees of freedom between those bounds; and robots driven not by controllers but by external pattern sources (mathematical objects, bacterial signals, cosmic microwave background) as a test bed.
+  Solution: Erases the machine/organism divide from the machine side rather than the organism side: if even simple deterministic systems host competencies "not in the algorithm," then formal models of computation never capture the whole system, and the residue we were willing to call negligible for machines is not negligible.
+  Date Added: 2026-09-02
+  Source: Free Lunches: Model Systems for Studying the Agential Gifts from the Platonic Space; PROP-2026-08-14-001
+  Confidence: Speculative
+  Evidence: "even extremely simple deterministic systems are susceptible to ingressions of not just complexity, not just unpredictability, but competencies that are familiar to any behavioral scientist, and they are not in the algorithm... I'm not sure at this point there is any dead matter or dumb machines." Speculative: the robot work is described as ongoing ("a couple papers out, many more coming this summer and fall") and no specific result was stated in the retrieved text.
+
+PRS-100:
+  Problem: Why do cognitive systems represent the world in terms of agents and goals at all, when a sufficiently powerful system could in principle track microstates? Agential framing is usually explained by its usefulness, which is circular, or treated as a human projection.
+  Resource: An energetic-scarcity derivation — organisms originate in a regime of severe time and energy limitation, which makes Laplacian microstate-tracking lethal, so coarse-graining into persistent goal-bearing entities is forced by the budget rather than selected for its accuracy; the same operation, applied reflexively, yields a self-model of the same type.
+  Solution: Predicts agential self- and world-modelling as a generic consequence of resource-bounded existence, and yields the testable-in-principle corollary that any resource-constrained evolved system will represent itself and others as free agents, whether or not it is one.
+  Date Added: 2026-09-02
+  Source: Conversation #1 with Tolchinsky, Weiss and Fields; PROP-2026-08-14-002
+  Confidence: Medium
+  Evidence: "you can't afford to track microstates. You can't afford to be a Laplacian demon. You're gonna be eaten and dead in no time... it kind of forces you to see agency in the world... any being that evolves under strong resource constraints is going to believe in free will. I'm not saying they have it." Medium: Levin explicitly frames this as a conjecture ("you could even imagine some sort of a conjecture"), and no empirical test is proposed.
+
+PRS-101:
+  Problem: The thoughts-are-thinkers framework treats sub-personal patterns as agents with agendas, but has named no currency they compete over, so "negotiating with" a symptom-pattern (PROP-2026-07-13-003) had no mechanism and no intervention beyond persuasion.
+  Resource: Neural real estate and metabolic supply as the contested resource — grounded in the observed takeover of deprived cortical territory by other modalities, plus the inference that under normal conditions such takeover is actively *prevented*, implying standing territorial pushback rather than mere vacancy.
+  Solution: Two consequences follow. Upward: augmentation becomes plausible, since algorithms already good at colonising new tissue might spread into added tissue (Levin notes extra brain tissue can be induced embryonically in chick and frog). Downward: a **decoy** intervention — supply a maladaptive pattern with its own territory or metabolic supply so it persists without drawing from the main system, instead of attempting to eliminate it.
+  Date Added: 2026-09-02
+  Source: Conversation #1 with Tolchinsky, Weiss and Fields; PROP-2026-08-14-002
+  Confidence: Speculative
+  Evidence: "there might be decoy scenarios where you can take negative patterns and say, well, okay, I'm not gonna try to sort of wipe you out. I'm gonna give you some place to live, and you can be over here, and that's fine. Just don't bother this other partner... if they are competing for metabolism, that may be a whole new set of interventions." Speculative: offered as a direction he is "in particular interested in," with no experiment described.
+
+PRS-102:
+  Problem: Causal power in the world is standardly explained as a product of selection among replicators — which leaves the causal structure of the medium *before* replicators unexplained and usually unexamined.
+  Resource: Information-theoretic measurement of causal emergence applied to the GARD model of catalytic networks.
+  Solution: Causal emergence rises before self-replication appears and predicts its onset, so integrated causality is detectable in active media prior to any evolutionary dynamics.
+  Date Added: 2026-09-02
+  Source: Causal Architecture Dynamics Prior to Arrival of Self-replicators (arXiv:2607.28250); PROP-2026-08-16-008
+  Confidence: High
+  Evidence: "We... found that causal emergence predicted the initial appearance of self-replication," and the closing claim that "progressive increases in integrated causality are detectable in active media before evolutionary dynamics begin to operate."
+
+PRS-103:
+  Problem: A predictive correlation does not establish that causal emergence is doing any work; it could be a readout of something else.
+  Resource: Bidirectional interventions on causal emergence within the model.
+  Solution: Driving causal emergence up increases self-replicator longevity; driving it down decreases self-replicator abundance — supporting causal emergence as a functional control knob rather than a passive index.
+  Date Added: 2026-09-02
+  Source: Causal Architecture Dynamics Prior to Arrival of Self-replicators (arXiv:2607.28250); PROP-2026-08-16-008
+  Confidence: Medium
+  Evidence: Both intervention directions are reported with distinct outcomes (longevity vs. abundance). That the two directions act on *different* dependent variables is worth attention — it is a weaker result than a single quantity moving both ways, and the full text should be checked on this point.
+
+PRS-104:
+  Problem: Why causal power has risen across the biosphere over evolutionary time.
+  Resource: The pre-replicator result generalised beyond the specific GARD setting.
+  Solution: Proposes that the same increase-in-integrated-causality dynamic underlies both the origin of life across diverse scenarios and the observed rise in causal power on Earth.
+  Date Added: 2026-09-02
+  Source: Causal Architecture Dynamics Prior to Arrival of Self-replicators (arXiv:2607.28250); PROP-2026-08-16-008
+  Confidence: Speculative
+  Evidence: Framed by the authors themselves as an implication ("may have implications for"), derived from one model system.
+
+PRS-105:
+  Problem: Artificial-life systems normally presuppose the very things whose emergence they claim to study — an agent, an environment, or dynamical rules over both.
+  Resource: Gifbreeder, whose genomes encode a spatiotemporal field and evolve by human aesthetic selection alone, with no agent, environment, or interaction rules specified.
+  Solution: A substrate in which agent-like dynamics, if they appear, cannot have been built in by the designer.
+  Date Added: 2026-09-02
+  Source: Limbomorphs; PROP-2026-08-16-009
+  Confidence: High
+  Evidence: The abstract states the system has "no explicitly defined agent, environment, or interaction rules," contrasted against the standard artificial-life setup.
+
+PRS-106:
+  Problem: How to test for behaviour in an entity that has no sensors, no actuators, and no defined environment to act in.
+  Resource: Input-space perturbation as the assay — disturb the field's inputs and characterise the response.
+  Solution: Species-specific reactions to different kinds of perturbation, giving a behavioural signature that distinguishes Limbomorph types.
+  Date Added: 2026-09-02
+  Source: Limbomorphs; PROP-2026-08-16-009
+  Confidence: Medium
+  Evidence: "We assess their behavior via input-space perturbations and find species-specific reactions to different kinds of perturbations." How many types, and how the species boundaries were drawn, needs the full text.
+
+PRS-107:
+  Problem: Whether such reactions constitute goal-directed behaviour (e.g. navigation) or only its appearance — the perennial charge against ascribing cognition to unconventional substrates.
+  Resource: The three-second deterministic loop itself as a constraint: nothing here can learn, remember across loops, or be selected for competence, since selection was aesthetic.
+  Solution: The authors pose the question rather than settle it, and use it to ask more broadly how agent-like dynamics arise where nothing agent-like was specified.
+  Date Added: 2026-09-02
+  Source: Limbomorphs; PROP-2026-08-16-009
+  Confidence: Speculative
+  Evidence: The abstract explicitly frames this as a discussion — "We discuss whether these reactions may reflect goal-directed behavior like navigation, or merely the appearance of it." Treating it as a settled finding would misread the source.
+
+PRS-108:
+  Problem: Bioelectric signals cannot be decoded because no method reads membrane voltage quantitatively, in living tissue, across the seconds-to-hours range and the multi-cell distances at which morphogenetic decisions occur.
+  Resource: Quantitative FLIM-based optical estimation of membrane potential (V_mem^oe) applied to spreading Xenopus laevis neural crest explants for over 17 hours.
+  Solution: Resolves three distinct temporal components — an hours-scale slow component plus faster minutes- and seconds-scale components — many of which span multiple cells, establishing FLIM as a tool for observing subtle bioelectric signals at developmental spatial and temporal scale.
+  Date Added: 2026-09-02
+  Source: FLIM readout of long-distance bioelectric patterns; PROP-2026-08-25-011
+  Confidence: High
+  Evidence: Peer-reviewed in Developmental Biology (2026-08-05). The paper reports mapping V_mem^oe dynamics over >17 h and identifying "a slow hours-scale bioelectric component and distinct faster minutes-scale and seconds-scale components" that "often span multiple cells, consistent with roles in the collective behavior of NCEs."
+
+PRS-109:
+  Problem: Whether bioelectric voltage dynamics carry their own information or merely track calcium signalling, which is the better-characterised and more commonly measured channel.
+  Resource: An information-theoretic comparison of minutes-scale V_mem^oe dynamics against simultaneously recorded calcium dynamics in the same explants.
+  Solution: Shows the two are largely distinct, so voltage is not a readout of calcium and constitutes a separate information channel worth decoding in its own right.
+  Date Added: 2026-09-02
+  Source: FLIM readout of long-distance bioelectric patterns; PROP-2026-08-25-011
+  Confidence: High
+  Evidence: "We then use information theory to show that minutes-scale NCE V_mem^oe dynamics are largely distinct from calcium dynamics."
+
+PRS-110:
+  Problem: The physical mechanism by which bioelectric state propagates across cell boundaries over long distances is unresolved.
+  Resource: A survey of diverse bioelectric events observed in the FLIM recordings, examined for their spatial transmission route.
+  Solution: Implicates tunneling nanotubes — thin membrane bridges between non-adjacent cells — as a likely transmission channel for collective bioelectric dynamics.
+  Date Added: 2026-09-02
+  Source: FLIM readout of long-distance bioelectric patterns; PROP-2026-08-25-011
+  Confidence: Speculative
+  Evidence: The paper reports complexity in collective bioelectric dynamics "likely involving tunneling nanotubes in their transmission, which suggests numerous avenues for further investigation" — the authors' own hedge marks this as a proposed avenue, not a demonstrated mechanism.
+
+PRS-111:
+  Problem: Whether a body solving a genuinely novel physiological problem converges on one solution or finds several — a question that pooled sequencing cannot answer, because pooling averages the individuals away.
+  Resource: RNA sequencing performed on individual planaria rather than pooled samples, during regeneration of BaCl2-insensitive heads after barium-chloride-induced head degeneration.
+  Solution: Identifies one robust transcriptional strategy plus a candidate sub-strategy for building the insensitive head, giving a first map of the solution space available to the tissue.
+  Date Added: 2026-09-02
+  Source: Planarian habituation and transcriptional profiling; PROP-2026-08-25-012
+  Confidence: Medium
+  Evidence: "We identified a robust transcriptional strategy and a potential sub-strategy for enabling BaCl2-insensitive head formation." Medium because this is a bioRxiv preprint (2026-07-29), not yet peer reviewed, and the sub-strategy is labelled "potential" by the authors.
+
+PRS-112:
+  Problem: Whether an organism's history of regeneration leaves any durable trace, or whether a regenerated animal is transcriptionally equivalent to one that never lost tissue.
+  Resource: A comparison of untreated worms regenerated from tail-fission fragments against untreated intact worms that never fissioned during the experiment.
+  Solution: Demonstrates a lasting history effect: tail-regenerated worms upregulate neurodevelopmental and morphogenetic programs while downregulating mitochondrial transport and stress-response pathways, relative to intact controls.
+  Date Added: 2026-09-02
+  Source: Planarian habituation and transcriptional profiling; PROP-2026-08-25-012
+  Confidence: Medium
+  Evidence: The paper reports "pronounced transcriptional differences" between tail-regenerated and intact controls, "highlighting the lasting impact of regeneration history," with the named directional changes above. Same preprint caveat.
+
+PRS-113:
+  Problem: Whether social context modulates a body's molecular response to chemical stress, as it does for many behavioural measures.
+  Resource: A comparison of BaCl2-exposed worms housed in isolation against BaCl2-exposed worms housed in groups.
+  Solution: A negative result that narrows the hypothesis space — social condition produces minimal transcriptional divergence under this stressor, so the collective dynamics observed here are within-body rather than between-animal.
+  Date Added: 2026-09-02
+  Source: Planarian habituation and transcriptional profiling; PROP-2026-08-25-012
+  Confidence: Medium
+  Evidence: "Comparison of BaCl2-exposed isolated and BaCl2-exposed group-housed worms revealed minimal transcriptional divergence between social conditions." A null result from one experiment; the abstract gives no power analysis.
+
+PRS-114:
+  Problem: Whether learned behaviour survives the destruction and regrowth of the brain that learned it — historically reported but never on a protocol reliable enough to build on.
+  Resource: A light-to-food associative conditioning paradigm that trains planaria to override their innate photophobia, paired with a two-week regeneration interval and re-testing of the conditioned stimulus.
+  Solution: A low-cost, repeatable protocol showing that the majority of regenerated animals retain the trained response, supporting a model in which behavioural patterns regenerate alongside anatomical ones.
+  Date Added: 2026-09-02
+  Source: Trained planaria: memory through regeneration; PROP-2026-08-25-010
+  Confidence: Medium
+  Evidence: The preprint reports that "the majority of regenerated planaria retained the learned response," and frames the contribution as "a consistent, low-cost, and effective protocol" replacing earlier unreliable ones. Confidence is Medium rather than High because this is a bioRxiv preprint (2026-08-11), not yet peer reviewed, and the abstract reports a majority rather than an effect size.
+
+PRS-115:
+  Problem: Memory loss in neurodegenerative disease is studied almost entirely inside the brain, so there is no model organism for asking whether memory can be recovered from outside it.
+  Resource: Regenerating planaria as a tractable system in which memory persistence can be separated from the survival of the neural tissue that encoded it.
+  Solution: Proposes the system as a route into research on memory loss, resilience and recovery in neurodegenerative conditions.
+  Date Added: 2026-09-02
+  Source: Trained planaria: memory through regeneration; PROP-2026-08-25-010
+  Confidence: Speculative
+  Evidence: The authors state the work "may help inform future research on memory loss, resilience, and recovery in neurodegenerative diseases" — an offered direction, not a demonstrated result.
+
+*Total PRS triplets: 115*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

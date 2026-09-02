@@ -682,3 +682,28 @@ PRS-72:
   Evidence: Verified metadata only — episode existence, McGilchrist as guest (not as subject of commentary), host, series, publication date, and the canonical Poetry Foundation audio URL. **EVIDENCE GATE OPEN, AND THIS TRIPLET CLAIMS NOTHING McGILCHRIST SAID.** The audio was not heard; the page's "View Audio Transcript" control is a client-side accordion whose contents are absent from the fetched document, and the Channel McGilchrist syndication page is a bare stub. Both of the proposal's content candidates — that the episode works the metaphor-priority claim through actual poems (bearing on open question 2), and the "real word for sunshine" lexical claim (bearing on open question 12) — are **HELD**, not ingested: the proposing agent states outright that it does not know which word is meant, what the argument for it is, or whether McGilchrist is the one making the claim. This entry records reception and locatability, which the metadata establishes, and stops there. Re-open on retrieval of the audio or transcript.
 
 *Total PRS triplets: 72*
+
+
+---
+
+## CORRECTION — 2026-09-02: Ralston symposium delivery date
+
+*Applied by the daily run from proposal 2026-08-26-001 (CANDIDATE-02), which recommended this be
+handled as a metadata correction across the batch rather than minted as a new triplet.*
+
+**The Ralston College symposium "AI and the Battle for the Soul" was delivered in MAY 2026, not
+July/August 2026.** The July and August dates attached to Ralston material in this wiki are
+*release* dates for the recordings, not delivery dates. Source: McGilchrist's own Substack post
+"Nate Hagens; and Ralston (very slightly revised)", published 2026-05-28, in which he writes that
+he has "only recently returned from Ralston College, Savannah," was installed as Chancellor, and
+"took part in an all-day symposium on 'AI and the Battle for the Soul', at which I gave an opening
+and concluding lecture, and was, separately, in conversation with Jonathan Pageau and Stephen
+Wolfram." Corroborated by a Ralston College page stating the college "welcomed Iain McGilchrist and
+Stephen Wolfram in May of 2026 for a public conversation during the symposium."
+
+**Affected entries:** PRS-61 through PRS-69 (from proposal 2026-08-05-001, -002, -003). The triplet text is unchanged; only the chronology attached to them is
+corrected. Any downstream ordering built on the July/August dates was wrong by roughly two months.
+
+This also settles the date discrepancy carried on the held commencement proposal
+(proposal 2026-07-22-002 / proposal 2026-08-15-002): Ralston dates the installation-and-conferral ceremony
+2026-05-09 — the same visit.

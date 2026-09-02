@@ -341,4 +341,23 @@ PRS-38:
   Confidence: High
   Evidence: Verbatim: "In philosophy, taxonomy was (and still is) one of the weapons enforcing orthodoxy in the profession. Often enough when there was some topic that seemed interesting, it was dismissed with condescending authority by the question, 'Yes, but is it philosophy?'" and "a gate-keeping that impoverished the discipline." **Register caveat:** this is autobiographical testimony about a discipline, not a study of it. It is one philosopher's account of her own field over sixty years, and it is offered as such. It should not be cited as evidence about rates or prevalence.
 
-*Total PRS triplets: 35*
+
+PRS-39:
+  Problem: Forgiveness is standardly credited with removing a wrongdoer's guilt and thereby restoring both his inner condition and his relationships to their pre-wrongdoing state. Can the act of forgiving actually do this?
+  Resource: Stump's distinction (developed at length in *Atonement*) between guilt as an objective standing incurred by the wrongdoer and the relational rupture that wrongdoing produces — two things that come apart, and only one of which is in the victim's power to alter.
+  Solution: On the abstract's report, Stump argues that forgiveness alone cannot remove guilt or effect restoration, so the standard account misdescribes what the forgiver is doing. The positive account of where the good lies is stated in the chapter, which was not retrieved.
+  Date Added: 2026-09-02
+  Source: The Good of Forgiveness (OUP chapter); PROP-2026-08-25-050
+  Confidence: Medium
+  Evidence: Publisher abstract, verbatim: "it is commonly thought that forgiveness of a wrongdoer removes the wrongdoer's guilt. With guilt removed, the wrongdoer is then restored to the same status he had before his wrongdoing... This chapter argues that forgiveness alone can do neither of these things and that the good of forgiveness has to be sought elsewhere." METADATA-ONLY: the chapter is paywalled (OUP) and was not retrieved. Authorship ("Eleonore Stump"), pagination (351–375), container (*The Virtue of Forgiveness*, OUP New York) and publication date (2026-07-07) verified via the Crossref record for DOI 10.1093/9780197752470.003.0018.
+
+PRS-40:
+  Problem: Forgiveness is also promoted as therapy for the forgiver — it is said to bring peace by removing wrath, resentment and the desire for vengeance. Is the peace a *product* of forgiving?
+  Resource: The same abstract's second target: the psychological-benefit rationale for forgiveness.
+  Solution: Stump denies that forgiveness alone produces this peace. The likely direction of her argument — that the disturbing attitudes are removed by something else (on her *Atonement* framework, by the healing of the forgiver's own relation to the good), and that forgiveness follows rather than causes that removal — is INFERENCE from her prior work and is not stated in the abstract.
+  Date Added: 2026-09-02
+  Source: The Good of Forgiveness (OUP chapter); PROP-2026-08-25-050
+  Confidence: Speculative
+  Evidence: Abstract states the target and the denial ("forgiveness brings peace to the person who forgives, because it removes... wrath, resentment, desire for vengeance, and so on... forgiveness alone can do neither of these things"). It does not state Stump's replacement account. Nothing should be attributed to her here beyond the denial without reading the chapter.
+
+*Total PRS triplets: 37*

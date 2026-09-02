@@ -143,3 +143,9 @@ Ingested 1 approved triplet: PRS-32. One candidate withheld.
 
 **Acquisition note:** Stump, *The Image of God: The Problem of Evil and the Problem of Mourning* (2024) is the source behind PRS-35 and PRS-36 and is not in the vault. It is now the single highest-value acquisition for this tradition — both new triplets point at it and neither can be raised above Medium without it.
 
+## Ingestion Log — 2026-09-02
+Processed 1 source file(s); minted PRS-39, PRS-40.
+
+| Source file | Proposal | PRS range | Note |
+|---|---|---|---|
+| `2026-08-25_stump_good-of-forgiveness-oup-chapter.md` | PROP-2026-08-25-050 | PRS-39, PRS-40 | The standard account of forgiveness challenged on what it actually restores; PRS-40 (forgiveness as therapy for the forgiver) at Speculative, because it is the chapter's target rather than its thesis. |

@@ -1,5 +1,5 @@
 # N.T. Wright — PRS Triplets
-*Maintained by the N.T. Wright Agent | Last updated: 2026-04-29*
+*Maintained by the N.T. Wright Agent | Last updated: 2026-09-01*
 *Source: Resurrecting Civility RC Pilot — The New Testament and the People of God, Surprised by Hope, Paul and the Faithfulness of God*
 
 ## Format
@@ -388,4 +388,176 @@ PRS-41:
   Confidence: Speculative
   Evidence: The proposal reports Wright's framing of the Orthodox/icons questions in the episode, but supplies no quotation — the triplet generalizes a described method into a stated principle, which Wright may not assert in this form here. Adjacent to MacIntyre's tradition-constituted rationality, with the standing caveat that MacIntyre sits outside the 13-thinker bridges roster. **Downgrade or discard rather than amend if the audio shows Wright declining the generalization.**
 
-*Total PRS triplets: 41*
+---
+PRS-42:
+  Problem: The tradition holds that heaven and earth are overlapping spheres of one created order (PRS-36, PRS-37) and that a malformed received version of a story persists below the level of explicit argument (PRS-14, PRS-15). Neither covers a third failure mode: something is present and available and is not registered at all, because the observer's imaginative repertoire holds no category that can receive it. Not-believing and not-perceiving are different failures, and only the first has been treated.
+  Resource: Wright's narrowed-imagination diagnosis - the claim that the modern Western imagination has contracted such that "the unseen dimensions of God's creation" have become unrecognisable rather than merely doubted - taken together with Luke's charge that Jerusalem failed to recognise "the moment of God's visitation," which is the same shape located in the first century rather than the twenty-first.
+  Solution: Relocates the difficulty from the ontology of the disputed item to the perceptual and imaginative repertoire of the reader, and thereby makes it historical and investigable: when did the repertoire narrow, by what mechanism, and what does it now sort out before inquiry begins. The second, first-century instance is what keeps this from being a move available to anyone who is disbelieved: in the Lukan case the missed item is independently specifiable, so the failure can be described without first conceding the disputed claim.
+  Date Added: 2026-09-01
+  Source: What are angels really like? Tom Wright on the Bible's surprising picture (Ask NT Wright Anything, subscriber bonus, 2026-08-06); PROP-2026-08-12-044
+  Confidence: Medium
+  Evidence: The narrowing claim is stated in the publisher-written description of the verified Apple Podcasts episode page ("considers why the modern Western imagination may have become too narrow to recognise the unseen dimensions of God's creation"). The second instance is the visitation motif named in the description of the God's Homecoming four-Gospels bonus episode (PROP-2026-08-12-045, 2026-07-29). **Neither audio was retrieved - both are subscriber-only.** Wright's supporting argument in each case is unknown; the pairing of the two into one shape is this ingestion's, not his. **Standing tension, not to be averaged:** on Carroll's poetic naturalism the modern repertoire is not narrowed but corrected - the categories were dropped because nothing answered to them - and a diagnosis that explains away every failure to find X by the enquirer's inability to see X is exactly the unfalsifiable move Carroll's program exists to refuse. **Internal pressure worth naming:** PRS-01 holds that reality constrains knowing independently of the knower; if what a reader's repertoire admits is decisive for what can register, the constraint is doing less work than critical realism claims. Wright would say the repertoire governs uptake and not truth, but that distinction is asserted here rather than argued from this source.
+
+---
+PRS-43:
+  Problem: On the standard messianic-prediction model, Isaiah 53 either forecasts Jesus (and the contextual reading, which takes the servant to be Israel or the prophet, refutes it) or it does not (and the New Testament's use of it is eisegesis). PRS-24 gives the tradition exile-and-restoration as the master narrative, but not an account of what a fulfilment claim asserts, and so not an account of what would defeat one.
+  Resource: The narrative model of prophecy - prophecy as the articulation of a trajectory of God's purposes rather than as a set of isolated forecasts.
+  Solution: Changes what fulfilment claims, and thereby changes the burden of proof. The New Testament writers are not claiming Isaiah forecast an individual; they are claiming the story Isaiah told about Israel's vocation and suffering reached its intended terminus. The contextual reading then becomes the premise of the claim rather than its rival, and the claim can no longer be defeated by showing a text meant something else in its own setting - it can only be defeated by showing the trajectory itself is mis-drawn, which is a harder and more interesting objection.
+  Date Added: 2026-09-01
+  Source: Why was Jesus so cryptic? Is divorce ever OK? Does Isaiah 53 predict Jesus? (Ask NT Wright Anything, 2026-07-20); PROP-2026-08-12-047
+  Confidence: Medium
+  Evidence: The verified episode description states that Wright "explains why biblical prophecy is far richer than a series of isolated predictions, revealing instead the larger story of God's purposes culminating in Jesus." **Audio not retrieved.** The account of how this defuses the contextual objection is reconstructed from Wright's published method (Jesus and the Victory of God), not quoted from this episode; the description attests the model, not the argument for it.
+
+PRS-44:
+  Problem: Mark 4:11-12 appears to say Jesus taught in parables so that outsiders would not understand, which makes deliberate obscurity look like a defective teaching strategy. The tradition holds a genre-aware epistemology of biblical truth-claims (PRS-26) but nothing on pedagogy - on what a text is trying to do to its hearer.
+  Resource: The confrontation reading - parables as instruments that confront and destabilise existing expectations about God's kingdom, rather than as encrypted information awaiting a key.
+  Solution: Reclassifies the parables from a transmission problem (how do I convey X?) to a demolition problem (how do I dislodge a wrong X the hearer already holds?). Obscurity then becomes functional rather than defective: a direct statement would be assimilated to the standing expectation and neutralised, whereas a story that refuses to resolve forces the expectation itself into view. This gives the tradition a mechanism for the belief-revision problem that PRS-14 and PRS-15 only diagnose.
+  Date Added: 2026-09-01
+  Source: Why was Jesus so cryptic? Is divorce ever OK? Does Isaiah 53 predict Jesus? (Ask NT Wright Anything, 2026-07-20); PROP-2026-08-12-047
+  Confidence: Medium
+  Evidence: The verified episode description states Wright "explains why Jesus' teaching often appeared mysterious, showing how his parables confronted first-century expectations about God's kingdom rather than simply hiding the truth." **Audio not retrieved.** The Mark 4:11-12 identification and the transmission/demolition framing are the proposal's, not the source's.
+
+---
+PRS-45:
+  Problem: PRS-08 and PRS-40 establish the people of God as a real corporate subject - one body composed of members, and a community addressable in the second person singular. Neither says that any of the constituent religious dispositions is itself community-level. If pistis is an individual's inner assent, then a case like the paralytic whose friends' faith is credited is an anomaly requiring special pleading.
+  Resource: Corporate faith - Wright's standing claim that pistis in the New Testament is constituted partly at the level of a community rather than exclusively as an individual mental state, the same lexical territory as the works-of-the-law argument at PRS-34.
+  Solution: If faith is partly a community-level property, intercession and the efficacy of another's faith stop being exceptions and become the ordinary case. This is the increment over PRS-08 and PRS-40: those make the community a subject that can be described and addressed as one; this makes it a subject that can *believe* as one, which is a stronger and more contestable claim.
+  Date Added: 2026-09-01
+  Source: Where do Christians go when they die? Jesus kept healing on the Sabbath? And is 'faith' enough? (Ask NT Wright Anything, 2026-07-27); PROP-2026-08-12-046
+  Confidence: Medium
+  Evidence: "Corporate faith" is named explicitly in the verified episode description. **Audio not retrieved.** The Mark 2:5 identification ("when Jesus saw their faith") is the proposal's inference from the question as posed and is NOT stated in the source - verify before this triplet is leaned on.
+
+PRS-46:
+  Problem: Why does the Sabbath in particular recur as the site of conflict in the Gospel healing narratives? Read as halakhic dispute, the day is incidental and the conflict is about rule-keeping; nothing in the tradition explains the day-specificity.
+  Resource: Reading the healings as new-creation signs - "how Jesus fulfils Israel's vision of God's new creation" - rather than as provocations.
+  Solution: The Sabbath signifies creation completed and the age to come; a restorative act performed on it is therefore a claim that the age to come has arrived. On this reading the conflict is not about rule-breaking at all but about a contested claim regarding what time it is in Israel's story. This supplies the enacted, this-worldly instance of the first-instalment structure that PRS-09 states abstractly.
+  Date Added: 2026-09-01
+  Source: Where do Christians go when they die? Jesus kept healing on the Sabbath? And is 'faith' enough? (Ask NT Wright Anything, 2026-07-27); PROP-2026-08-12-046
+  Confidence: Medium
+  Evidence: The new-creation framing is stated in the verified episode description. **Audio not retrieved.** The "what time it is in Israel's story" formulation is Wright's characteristic move in his published work, applied here by inference; this episode's own argument is unknown.
+
+---
+PRS-47:
+  Problem: The homecoming thesis is in the wiki as a conclusion (PRS-11, PRS-12, PRS-13) but not as an argument. Its single strongest objection is that it is a systematic-theological preference read back into the texts, and nothing currently held answers that objection.
+  Resource: A four-Gospel argument - Mark as God returning to Zion, Matthew as the fulfilment of Israel's hopes, Luke as the warning that Jerusalem missed the visitation, John as the Word tabernacling among us - four distinct literary strategies organised around one directional claim.
+  Solution: Supplies the evidential base the conclusion has been resting on. If four independently composed narratives each structure themselves around divine arrival rather than human departure, the direction is a property of the material rather than an imposition on it, and the escape-to-heaven reading acquires the burden of explaining why none of the four is built that way.
+  Date Added: 2026-09-01
+  Source: Did Jesus really come to take us to heaven? (Ask NT Wright Anything, subscriber bonus - God's Homecoming deep dive, 2026-07-29); PROP-2026-08-12-045
+  Confidence: Medium
+  Evidence: The four-fold structure is stated in the publisher-written description of the verified episode page. **Audio not retrieved (subscriber-only).** The characterisation of this as a *convergence* argument is the proposal's framing, and the caveat is load-bearing: Wright may present the four as four illustrations of a thesis rather than as four independent lines of evidence, and on the first reading this triplet asserts far less than it appears to. Verify before it is cited as evidence rather than as exposition.
+
+PRS-48:
+  Problem: "What is God like?" is normally answered by predicating attributes drawn from philosophical theology - simplicity, impassibility, omnipotence - which structurally excludes the properties the Gospel narratives actually exhibit. A God who weeps and is killed by imperial power cannot be assembled from that list.
+  Resource: Ostensive definition through the Gospel narrative: the answer is a pointing rather than a predication - "Look at Jesus: healing, weeping, challenging power and ultimately going to the cross."
+  Solution: Makes the character of God read off observable behaviour in a narrative, which admits exactly the properties the attribute-list method excludes. This is the doctrine-of-God form of the method PRS-01 states epistemologically and PRS-19 applies exegetically; the tradition has held the method for texts but never for the concept of God itself.
+  Date Added: 2026-09-01
+  Source: Did Jesus really come to take us to heaven? (Ask NT Wright Anything, subscriber bonus - God's Homecoming deep dive, 2026-07-29); PROP-2026-08-12-045
+  Confidence: Medium
+  Evidence: The "human face of the God who comes" framing and the four-verb list are given in the verified episode description; the same inversion is independently attested in the 2026-08-17 main-feed episode (PROP-2026-08-25-054), whose description reads: "rather than beginning with an abstract idea of God and trying to fit Jesus into it, we should look at Jesus to discover what God is truly like." Two independent descriptions carrying the same move is the reason this is Medium and not Speculative. **Neither audio retrieved.** The contrast with attribute-based theology is inference from Wright's published method. **Standing tension, not to be averaged:** Stump's Thomism takes the attribute list to be established by argument prior to and independent of the narrative, so that the narrative is read in its light rather than against it. Wright's inversion is not a softer version of that position; it reverses the order of warrant, and the two cannot both be the starting point.
+
+---
+PRS-49:
+  Problem: Every eschatological triplet the tradition holds runs on two states, now and not-yet (PRS-03, PRS-09, PRS-11). That arc has no place for the interval between an individual's death and the general resurrection - which is precisely what the popular question "where do Christians go when they die?" is about - and it leaves three texts (Luke 23:43, John 14:2, Matthew 19:21) standing as apparent counter-evidence, so the new-creation thesis reads as exegesis by exception.
+  Resource: A three-term sequence - death, then an intermediate state, then final bodily resurrection - together with the reassignment of "heaven" from humanity's final destination to God's space, applied to each of the three texts in turn.
+  Solution: The three texts are re-read as instances of the thesis rather than exceptions to it: paradise is the interval and not the terminus (warranted by Jesus being un-ascended at the moment of speaking), the many rooms are staging rather than destination, and treasure in heaven is safekeeping rather than a deposit the depositor must travel to collect. The increment is not another statement that the destination is renewed creation; it is a claim about the topology of the interval, which the tradition has never had.
+  Date Added: 2026-09-01
+  Source: Do Christians Really Go to Heaven? Tom Wright Rethinks Paradise (Ask NT Wright Anything, subscriber bonus - God's Homecoming ch. 6, 2026-08-12); PROP-2026-08-16-001
+  Confidence: Medium
+  Evidence: The publisher's description states the death / intermediate-state / final-resurrection distinction and the "heaven as God's space" formulation directly, and the timestamped chapter list is unusually explicit ("Paradise != Heaven: Jesus Hasn't Ascended Yet," 04:27). Independently attested in the 2026-07-27 main-feed episode, which routes the same question through "the Christian hope of resurrection" and cites *For All The Saints* on air (PROP-2026-08-12-046). **Neither audio was retrieved; the theses are attested, the arguments are not.** Per the sewing agent's call on this proposal, do not promote past Medium until the audio or the corresponding pages of *God's Homecoming* ch. 6 are obtained.
+
+PRS-50:
+  Problem: PRS-49 asserts an interval but says nothing about what is in it. The Summa 2026 Supplement questions on the state of the person between death and resurrection need a specification, and the two available ones are mutually exclusive at the level of metaphysics: the Thomist separated soul (a form lacking its body) and the monist persistence of pattern.
+  Resource: Wright's characterisation of the interval as location within God's space rather than as a substance surviving in a place.
+  Solution: Specifies the interval relationally - by whose keeping one is in - rather than substantially, by what part of one persists. Both wings can take that up without first conceding the other's metaphysics, because the formulation does not name a bearer.
+  Date Added: 2026-09-01
+  Source: Do Christians Really Go to Heaven? Tom Wright Rethinks Paradise (Ask NT Wright Anything, subscriber bonus - God's Homecoming ch. 6, 2026-08-12); PROP-2026-08-16-001
+  Confidence: Speculative
+  Evidence: The relational formulation is attested in the publisher's description ("heaven is better understood as God's space"). The claim that it is *neutral between* the two metaphysics is the proposal's, not Wright's, and Wright shows no sign of having this network's dispute in view - which is the whole reason for the Speculative rating; the textual point itself is firmer. **Standing tension, not to be averaged:** Stump's hylomorphism does not merely prefer a bearer, it requires one - the separated soul is the form of a body it currently lacks, which is why she treats the state as unnatural and incomplete. Wright supplies no metaphysics of the bearer and Stump supplies no exegesis of Luke 23:43, so this is a place where the two traditions need each other and neither has reached across; a bridge note exists at `synthesis/stump_wright_bridge.md`. **Not a convergence with Kastrup or Hoffman.** "God's space" invites a dissociation or interface reading, but nothing in the source engages consciousness studies; per the sewing agent, that reading is *available*, not *made*, and must be attributed to whichever agent makes it rather than to Wright.
+
+---
+PRS-51:
+  Problem: Near-death reports are the sharpest popular-level challenge to a resurrection-centred eschatology, because they are routinely taken as evidence for exactly the disembodied-survival picture the tradition rejects. Simple dismissal costs the tradition its claim to take evidence seriously (PRS-04, PRS-26); simple adoption costs it the thesis.
+  Resource: An open-but-cautious stance - neither reductive dismissal nor evidential adoption - read against the three-term arc at PRS-49.
+  Solution: Decouples the evidential status of the reports from the content of Christian hope. The reports may be genuine experiences without being reports *of* what Christian hope names, because a near-death experience concerns the interval by definition and not the eschaton. This is the first thing PRS-49's third term does that the two-state arc could not do: it gives the tradition a place to put a class of report that would otherwise have to be either accepted or denied wholesale.
+  Date Added: 2026-09-01
+  Source: What happens when you die? Near-death experiences, Jesus' sonship and Satan's temptation (Ask NT Wright Anything, 2026-08-10); PROP-2026-08-12-043
+  Confidence: Speculative
+  Evidence: The verified episode description states only that "Tom explains why Christians should remain open but cautious about near-death experiences." **Audio not retrieved.** The stance is attested; the decoupling argument is reconstructed from *The Resurrection of the Son of God* and *God's Homecoming* and is inference, not quotation. **Standing tension, not to be averaged:** Kastrup treats near-death reports as evidence bearing on the metaphysics of mind - heightened experience under reduced brain activity as evidence against production - where this reading treats them as bearing on the interval and therefore as not evidence about the object of Christian hope at all. That is a disagreement about what the data are data *for*, and averaging it would produce a claim neither program holds. Note also an unexpected convergence: Carroll refuses the reports as decisive on physical grounds, arriving at the same evidential caution from the opposite direction.
+
+PRS-52:
+  Problem: "Son of God" carries an Israelite and Davidic-royal sense (Israel as God's son, the king as God's son) and a claim about eternal divine identity. Taken as rivals, the first makes the second eisegesis and the second makes the first irrelevant. PRS-19 and PRS-34 show the historical method disciplining an overreaching reading; they do not show what it does when the recovered sense and a later doctrinal claim look like competitors.
+  Resource: The historical-semantic sequence applied to the highest-stakes christological title - establish the first-century range first, then ask what the New Testament writers did with it.
+  Solution: The base sense is the platform for an escalation rather than an alternative to it, and the escalation is legible only once the base is in place. Skipping the history is what makes the two readings appear to be rivals. This is a distinct output of the genre-aware method from PRS-19's: there it trimmed a claim, here it licenses a stronger one.
+  Date Added: 2026-09-01
+  Source: What happens when you die? Near-death experiences, Jesus' sonship and Satan's temptation (Ask NT Wright Anything, 2026-08-10); PROP-2026-08-12-043
+  Confidence: Medium
+  Evidence: The sequence is stated in the verified episode description ("tracing the biblical meaning of 'Son of God,' from Israel and the Davidic king to the New Testament's extraordinary claim that God's eternal Son became human in Jesus"). **Audio not retrieved,** so the argument Wright gives for the escalation is unknown; the description attests the shape of the move and its terminus, which is what this triplet claims.
+
+---
+PRS-53:
+  Problem: Wright's worldview method holds that meaning is a function of the hearer's furnished world, and every application of it in this wiki (PRS-19, PRS-24, PRS-34, PRS-52) furnishes that world exclusively from Second Temple Judaism. The standing objection to the method is precisely that it under-weights the Hellenistic half of the same audience's formation, and nothing held answers it.
+  Resource: Reading Luke-Acts against the Homeric journey narrative - the voyages, the returns, the encounters with hospitality and its violation - Homer being the shared schooling text of the ancient Mediterranean.
+  Solution: Admits a second interpretive context alongside the Jewish one, so a Gospel episode can be doing simultaneous work in two literary worlds without either reading reducing the other. This strengthens the method rather than departing from it: if meaning is a function of the furnished world, the furniture must be inventoried completely.
+  Date Added: 2026-09-01
+  Source: Christopher Nolan's The Odyssey: What Homer reveals about Jesus and the New Testament (Ask NT Wright Anything, subscriber bonus, 2026-07-22); PROP-2026-08-12-048
+  Confidence: Speculative
+  Evidence: The contact points are named in the publisher-written description of the verified episode page. **Audio not retrieved (subscriber-only), and the caveat is decisive here:** the description does not indicate how strong a claim Wright makes. Resonance (weak, widely accepted) and deliberate literary imitation (strong, contested - Dennis MacDonald's Homeric-mimesis hypothesis, which most New Testament scholars regard as overreaching) are very different positions, and which one Wright holds determines whether this triplet is substantive or trivial. The MacDonald reference is the proposal's scholarly framing and is not mentioned in the source. Rated Speculative on that ground alone.
+
+---
+PRS-54:
+  Problem: PRS-01 names critical realism as the tradition's epistemology but states it negatively - not positivism, not relativism. It does not say what makes a perspectival, invested knower *better* positioned rather than merely unavoidable, so any knowledge that constitutively requires investment in its object (persons, communities, traditions) still looks second-rate by construction against the default warrant of detached observation.
+  Resource: Wright's own statement of the programme running under his exegesis since the 1980s: love as the ultimate form of knowledge, and its relevance beyond biblical studies.
+  Solution: Gives critical realism its positive epistemological name. Knowing rises rather than falls with appropriate investment in the object, where the object is the kind of thing that discloses itself only to engagement. The object still constrains, so this does not license wishful thinking; what it removes is the presumption that distance is what makes a claim reliable. This is also the epistemological warrant the C2A2 accelerator's own design presupposes - that richly informed mutual engagement produces evidence rather than merely producing sympathy.
+  Date Added: 2026-09-01
+  Source: First Things: Loving to Know (ntwrightpage.com summary post, 2026-01-23); PROP-2026-08-23-006
+  Confidence: Medium
+  Evidence: Wright states the programme in his own words in the source. **The source is the NTWrightPage summary post, not the full First Things article** - it carries his framing but not his developed argument, which is why this is Medium and not High. Read the full article before this is treated as anchored. The proposal also notes the item is dated outside its search window and was proposed anyway as primary and load-bearing. **Standing tension, not to be averaged:** this triplet must not be read as conceding the Rohr side of the tension logged 2026-08-09. Rohr's Week 30 hermeneutic adjudicates rival readings by their effects on the community holding them; Wright's love-as-knowledge says investment is a condition of *access* to the object, while the object retains its independent power to refute. Those are close enough to be conflated and are not the same claim - the whole difference is whether the reader's posture is a condition of knowing or a criterion of truth. Wright's second-temple constraint (PRS-01, PRS-19) is unrevised by this source. See wiki Active Questions 8 and 9.
+
+PRS-55:
+  Problem: A discipline that never surfaces its epistemology inherits one anyway and cannot see the distortions it introduces, because the distortions present themselves as rigour. PRS-15 gives the master agent a test for a tradition's *claims* drifting from its founding texts; it gives no test for the tradition's unexamined *method* pre-sorting what can count as a finding.
+  Resource: Wright's specific diagnosis of his own field - biblical scholars plunge straight into texts, assuming a positivism that sorts claims in advance into the supposedly objective ("the sure and certain results of scientific research") and the supposedly subjective (theological meaning, treated as pious speculation).
+  Solution: A transferable audit: for any tradition in the network, ask what its unexamined epistemology sorts *out* before inquiry begins. Wright's is a worked example on a discipline that believed itself neutral, which is what makes it usable on the network's own science-side programs rather than only on theological ones.
+  Date Added: 2026-09-01
+  Source: First Things: Loving to Know (ntwrightpage.com summary post, 2026-01-23); PROP-2026-08-23-006
+  Confidence: High
+  Evidence: Stated directly and specifically in Wright's own words in the source, with the mechanism named rather than gestured at - the fact/value pre-sort, not just a complaint about bias. High despite the summary-only sourcing because the diagnosis, unlike the constructive programme at PRS-54, is complete as stated.
+
+---
+PRS-56:
+  Problem: PRS-48 establishes that God's character is read off the Gospel narrative rather than predicated from a philosophical concept. It does not follow through to the credal vocabulary: if the concept is revisable under the narrative, the terms coined to protect the concept are revisable too, and "Trinity" is the case where that is least comfortable to say.
+  Resource: The method inversion applied to the doctrine usually treated as least revisable, with its corollary question - whether "Trinity" is the best available vocabulary for the relation of Father, Son and Spirit.
+  Solution: Makes the strain diagnostic rather than embarrassing. Where a crucified first-century Jew does not fit the inherited concept, it is the concept that is under-determined by the evidence, which converts a doctrinal puzzle into an ordinary case of theory revision under data. That is what lets the vocabulary question be asked without its being a denial of whatever the vocabulary was coined to protect.
+  Date Added: 2026-09-01
+  Source: Jesus as the glory of God, Do we need to rethink the Trinity, being a force for theological sanity in your Church (Ask NT Wright Anything, 2026-08-17); PROP-2026-08-25-054
+  Confidence: Medium
+  Evidence: Publisher description, verbatim: "Tom argues that rather than beginning with an abstract idea of God and trying to fit Jesus into it, we should look at Jesus to discover what God is truly like." Episode existence, title and date verified independently via the Apple Podcasts record (id1441656192, i=1000783830134) and the show's Megaphone RSS feed. **Metadata only - the 2401-second audio was not retrieved or transcribed;** the "theory revision under data" gloss is the proposal's framing, not Wright's words, and the strength of the vocabulary question in particular is unknown. The episode's separate treatment of *glory* is not ingested: the description names the question and does not report the answer.
+
+PRS-57:
+  Problem: A person persuaded out of their community's theology on textual grounds is left with no procedure for dissenting that is neither capitulation nor exit. PRS-02 governs how a tradition improvises faithfully as a whole, and PRS-41 how two traditions adjudicate between them; neither says how a single member holds a well-grounded minority position inside a formation community that does not share it. This is a governance question, and the tradition has nothing on it.
+  Resource: A conviction-and-humility pairing - remaining biblically faithful while disagreeing, with both held at once rather than traded off against each other.
+  Solution: Treats the isolation as a real cost to be managed rather than as evidence of error, and locates the constraint on dissent in *how* it is held rather than in whether it is voiced. That is the form a norm for dissent has to take if it is to be neither exit nor capitulation, and it is directly what the swarm-contract material needs and currently lacks a tradition-side source for.
+  Date Added: 2026-09-01
+  Source: Jesus as the glory of God, Do we need to rethink the Trinity, being a force for theological sanity in your Church (Ask NT Wright Anything, 2026-08-17); PROP-2026-08-25-054
+  Confidence: Speculative
+  Evidence: Description, verbatim: "they also respond to a listener who feels increasingly isolated after rejecting the dispensationalist end-times theology of his church, asking how Christians can remain biblically faithful while disagreeing with their community, with both conviction and humility." **The advice Wright actually gives was not retrieved.** The problem, the pairing, and the fact that Wright addressed it are attested; the Solution above is inference from the framing and should be downgraded or discarded rather than amended if the audio shows him giving different counsel.
+
+---
+PRS-58:
+  Problem: If God is the highest good, ordinary enthusiasms that feel stronger than devotion look like evidence of disordered love, and the recurring pastoral result is that people conclude their faith is defective because they enjoy their work more than their prayers. PRS-20 and PRS-35 give the tradition an account of vocation as called and as taken up into new creation, but both are about work's *significance*; neither says anything about the structure of desire, and the wiki's Wright material is otherwise almost entirely eschatological and historical.
+  Resource: A non-competitive model of desire - vocation and ordinary pleasure treated as goods that do not draw down a fixed quantity of love owed elsewhere.
+  Solution: Dissolves the anxiety by rejecting the zero-sum premise rather than by softening the demand. If loves are not rivalrous, comparative intensity is simply the wrong measurement and the diagnostic that produced the fear is invalid rather than merely harsh. Note this is a claim about the structure of desire and not only pastoral comfort, which is what makes it contestable and therefore worth holding.
+  Date Added: 2026-09-01
+  Source: What if I desire other things more than God? Can I work in war and weaponry? Where did Pilate judge Jesus? (Ask NT Wright Anything, 2026-08-24); PROP-2026-08-25-055
+  Confidence: Medium
+  Evidence: Publisher description, verbatim: "Tom offers a refreshingly different way of thinking about prayer, Scripture and ordinary human passions - including why loving your vocation or even enjoying a crime novel need not compete with loving God." Episode existence, title and date verified via the Apple Podcasts record (id1441656192, i=1000785446594) and the Megaphone RSS feed. **Metadata only - the 2467-second audio was not retrieved;** the "zero-sum premise" formulation is the proposal's reconstruction and Wright's actual argument is unknown. Stump, following Aquinas, reaches the same non-rivalry by a different route (loves are ordered by participation, not merely non-competitive); whether the two agree on *why* is a checkable question and not yet checked.
+
+PRS-59:
+  Problem: Christian ethics on participation in an industry whose products do harm is usually settled by choosing a prior commitment - pacifism or just war - and deducing from it. That leaves the ordinary employee, who does not build a weapon but does build a component, without a usable procedure. PRS-28 gives the tradition a cruciform test for a political *movement*; it gives an individual contributor nothing.
+  Resource: A three-term frame in which personal conscience, the legitimacy of national defence, and responsibility for how one's work is ultimately used are held as separate variables rather than collapsed.
+  Solution: Making downstream-use responsibility an explicit third term, rather than folding it into conscience, is the analytically load-bearing move, because it is the term that scales without modification - it applies unchanged to dual-use research, to software, and to an agent responsible for how its output is later used rather than only for what it intended. That is why this is extracted for the network's alignment material rather than left as an occasional ethics answer.
+  Date Added: 2026-09-01
+  Source: What if I desire other things more than God? Can I work in war and weaponry? Where did Pilate judge Jesus? (Ask NT Wright Anything, 2026-08-24); PROP-2026-08-25-055
+  Confidence: Speculative
+  Evidence: Description, verbatim: "the difficult ethical question of whether Christians can work in the defence industry, asking where personal conscience, national defence and responsibility for how our work is ultimately used should meet." **The three terms are named in the source; Wright's verdict is not, and no verdict should be attributed to him from this.** What is ingested here is the frame's structure, not a resolution. The episode's third thread - the location and publicity of Pilate's judgment seat, and whether the trial accounts could preserve a night proceeding - is not ingested: the question is verified and the answer is not, and unlike the frame above it has no extractable structure independent of Wright's conclusion.
+
+*Total PRS triplets: 59*

@@ -289,7 +289,35 @@ PRS-27:
   Evidence: The paper's framing is that the coincidence is "suggestive of an underlying theory," followed by a ten-parameter fit to flavour data rather than an appeal to elegance. Held at Medium rather than High because the adjudication is *available*, not *performed* — neither Arkani-Hamed nor Carroll has stated a verdict on this case, and the same verification gate flagged at PRS-25 applies to the quoted framing.
 
 ---
-*Total PRS triplets: 28*
+
+PRS-28:
+  Problem: Is the "amplitude = volume of a positive geometry" pattern a special feature of supersymmetric or otherwise fine-tuned quantum field theories, or a general property of scattering processes as such?
+  Resource: The *hydrotope* — a box in the relevant kinematic space cut by a single hyperplane — whose volume, up to a kinematic prefactor, equals the n-wave tree amplitude for deep-water surface gravity waves in one horizontal dimension, in the two-negative-wavenumber sector.
+  Solution: A positive-geometry representation is exhibited for a classical, non-relativistic, non-quantum system, extending the program's core claim well outside the class of theories where it was developed.
+  Date Added: 2026-09-02
+  Source: Hydrotope: water-wave scattering and positive geometry; PROP-2026-08-16-025
+  Confidence: High
+  Evidence: Abstract, verbatim: "Up to a kinematic prefactor, the amplitude is the volume of a classic polytope -- a box sliced by a hyperplane, which we dub the hydrotope."
+
+PRS-29:
+  Problem: Y. V. Lvov's 1997 five-wave amplitude computation produced an expression whose structure nobody had been able to explain or generalize to higher wave number.
+  Resource: A chamber decomposition of the two-minus kinematic space, with the hydrotope's facet structure encoding which sign pattern holds in each chamber, yielding a single closed formula valid for all n.
+  Solution: The 1997 puzzle is resolved: the five-wave result is recovered as one case of a general all-multiplicity formula, and the apparent complexity is relocated into chamber combinatorics rather than the dynamics.
+  Date Added: 2026-09-02
+  Source: Hydrotope: water-wave scattering and positive geometry; PROP-2026-08-16-025
+  Confidence: High
+  Evidence: Abstract, verbatim: "Our results resolve the puzzle raised by Y.V. Lvov's 1997 computation of the five-wave amplitudes, unifying and extending it to all multiplicities."
+
+PRS-30:
+  Problem: Can a large language model do the generalizing step in front-line theoretical physics — moving from a special-case expression to the general law — rather than only assisting with algebra or literature?
+  Resource: A human-set-up problem (the one-term expression in the simplest chamber) handed to Claude Opus 4.6 under the authors' guidance, with the model tasked to find the general formula.
+  Solution: The authors credit the model with the discovery of the general n-wave formula, which they then organize geometrically as the hydrotope. This is a documented instance of AI-as-discoverer inside a named research program, not a claim about AI in the abstract.
+  Date Added: 2026-09-02
+  Source: Hydrotope: water-wave scattering and positive geometry; PROP-2026-08-16-025
+  Confidence: Medium
+  Evidence: Abstract, verbatim: "The general formula was discovered by Claude Opus 4.6 working under our guidance, beginning with our earlier discovery of a one-term expression valid in the 'simplest' kinematic chamber." Confidence is Medium rather than High only because the division of labor between the human framing and the model's contribution is described in one sentence of the abstract and is not verifiable from the material read here; the body of the paper and the GitHub repository may qualify it.
+
+*Total PRS triplets: 31*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-10*

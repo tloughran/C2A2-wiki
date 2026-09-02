@@ -613,4 +613,104 @@ PRS-67:
   Confidence: Speculative
   Evidence: Linda Tullberg's submitted question in the July 2026 AMA, as recorded in PROP-2026-07-24-001's Cross-Tradition Signals section: Carroll is asked for his view on Hoffman's "Trace" mathematics (Markov-chain based, aiming to derive SR and GR en route to a theory of consciousness). **Carroll's answer was not captured** — the proposal records the question and its significance but no audio or transcript of the response, and the same gap is why PRS-61 carries `(ANSWER DIRECTION UNRECORDED)`. Do not cite this as Carroll's assessment of Trace. Filed because the item is a PRS-shaped problem inside Carroll's own programme that the 2026-08-09 ingestion missed: it appeared only in the proposal's cross-tradition section, never as a `PRS-CANDIDATE-`, so it was never eligible for promotion. Pairs with the pending Hoffman Trace proposals (PROP-2026-07-21).
 
-*Total PRS triplets: 67*
+
+PRS-68:
+  Problem: The Turing test settles only input-output indistinguishability, so it cannot decide whether an LLM has rediscovered human cognitive mechanisms or found a different route to human-sounding output. Behavioural anomaly-counting (the strawberry-R case) does not settle it either, in the other direction.
+  Resource: The "cognitive cousin" criterion — test the system against specific effects from cognitive science whose *underlying mechanism* is already understood, rather than tabulating surface similarities and dissimilarities.
+  Solution: Replace the behavioural test with a mechanism-matched one: an LLM counts as a cognitive cousin to the degree it reproduces effects whose human explanation is known, so that a shared effect licenses an inference to a shared mechanism.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada, verbatim: "counting and tabulating at the level of behavioral outputs is probably not gonna get us very far. We need to look mechanistically, and we need to think about which are the mechanisms that we actually care about that are core processing principles for the human mind-brain." Carroll frames the two options explicitly at 0:15:48 — rediscovered mechanisms versus "a wholly new way of sounding human ... an alien kind of intelligence."
+
+PRS-69:
+  Problem: If LLMs are human-like, is that convergence a designed-in resemblance, or does it fall out of something more basic?
+  Resource: Prediction as, in Sripada's phrase, "the mother of all training signals" — the claim that dual-process structure and other cognitive principles previously thought innately specified or evolutionarily contingent are instead *downstream of* prediction, in humans as well as in machines.
+  Solution: A common-cause account of the convergence: both systems are prediction machines, so similar representations, procedural techniques, and modes of inferential organization emerge in both without either copying the other.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada at 0:18:15: "a lot of cognitive principles that we thought were innately specified or due to some sort of contingent evolutionary trajectory, they actually are emergent ... they are downstream of prediction ... at the level of basic core cognitive principles, the LLMs and humans, they identify similar representations, similar procedural techniques."
+
+PRS-70:
+  Problem: What specific empirical findings would count as evidence for mechanism-sharing, as opposed to anecdote?
+  Resource: Three families of pre-registered-by-history cognitive effects, documented in humans decades before LLMs existed: (a) psycholinguistic parsing costs — center-embedding degradation ("A man that a woman that a child knows loves ran"), garden-path sentences ("The horse raced past the barn fell"), similarity-based interference; (b) serial-list memory — primacy, recency, lost-in-the-middle, contiguity, forward temporal asymmetry; (c) visual search — pop-out in disjunctive search versus serial, set-size-proportional search time in conjunctive search.
+  Solution: All three families reproduce in LLMs (visual search in vision-language models), and because the human mechanisms behind them are independently known — incremental parsing that commits early and must backtrack; compositional coding versus feature binding — the shared effects support shared mechanisms rather than coincidence.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Sripada enumerates each effect and states "LLMs exhibit all these effects," then: "The fact that you're seeing these non-obvious patterns of similarities in LLMs and people, especially where we know some of the mechanisms that happened in these effects in cognitive science, they point to similar mechanisms being operative in the LLMs and people."
+
+PRS-71:
+  Problem: Anomalies such as an LLM's inability to count the letter R in "strawberry" have been treated (by Carroll among others) as strong disconfirming evidence for human-like cognition.
+  Resource: A sensory-primitive account of the anomaly: tokens are the model's sensory interface, so sub-token structure is not normally available to it — letter-level manipulation was never a candidate "core processing principle" to begin with.
+  Solution: Reclassify such anomalies as expected consequences of a different sensory channel rather than as evidence against mechanism-sharing, and restrict the evidential weight of behavioural anomalies to principles that cognitive science independently regards as core.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: Medium
+  Evidence: Sripada: "their contact with the 'world' is exclusively textual via these tokens, which essentially serve as kind of sensory primitives ... there's a very natural explanation for why they can't count the number of Rs in strawberry." Marked Medium rather than High because the account is offered as an explanation and not tested against a control in the episode.
+
+PRS-72:
+  Problem: Where does Carroll himself now stand, given that he had publicly used the anomaly evidence to argue LLMs are not thinking as humans do?
+  Resource: Carroll's own stated Bayesian discipline, applied to himself on the record, plus his separation of cognition from consciousness ("Cognition is easier to understand than consciousness").
+  Solution: Carroll revises his credence toward the cognitive-cousin position while explicitly bounding what that does and does not license — not consciousness, not moral agency, but a step in that direction that should be established first.
+  Date Added: 2026-09-02
+  Source: Mindscape 363 — Chandra Sripada on cognitive cousins; PROP-2026-08-12-030
+  Confidence: High
+  Evidence: Carroll, monologue: "this is one of those podcasts that has shifted my credences in important ways ... one should always be a good Bayesian." And, bounding it: "It's not the same as saying that LLMs are conscious or responsible moral agents or anything like that, but this is something we should establish in that direction."
+
+PRS-73:
+  Problem: Science education transmits results but not the practice that produces them, leaving the public without a working model of how scientific claims get made, revised, or abandoned.
+  Resource: Firestein's ignorance/failure pedagogy (Columbia "Ignorance" course; *Ignorance*, *Failure*, *It Could Be Otherwise*), plus Carroll's product-vs-process framing and the art-class/piano-lesson analogy.
+  Solution: Teach the *structure of what is not yet known* as the primary curricular object — organize instruction around live open questions and productive failures rather than around a settled fact inventory.
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: High
+  Evidence: Carroll, opening monologue: "we sort of teach the product of science and not the process of science… you're given facts. 'F equals MA…' And then you're tested on your knowledge of the facts."
+
+PRS-74:
+  Problem: If ignorance is what drives science, what stops "we don't know" from collapsing into relativism where any hypothesis is as good as any other?
+  Resource: The known-unknowns / unknown-unknowns distinction, applied as a map of the frontier rather than a confession of emptiness.
+  Solution: Ignorance is *structured* — a large body of secure knowledge defines a bounded, navigable space of live possibilities. Carroll's gloss: "Some things don't go, but a lot of things go."
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: High
+  Evidence: Carroll: "that structured ignorance that we're trying to uncover the facts hidden amongst is what science is all about… It's not like, 'Oh, we don't know anything, anything could happen.'"
+
+PRS-75:
+  Problem: Working scientists are trained inside one discipline's methods and often cannot articulate, or examine, the assumptions that method rests on.
+  Resource: Firestein's own route — a bench neuroscientist (olfaction) who went to Cambridge HPS as a visiting scholar, and who hosted philosopher of science Ann-Sophie Barwich as a four-year postdoc in his lab.
+  Solution: Embed history-and-philosophy-of-science practitioners inside working laboratories, as ordinary lab members rather than external commentators, so that assumption-examination becomes part of the research process.
+  Date Added: 2026-09-02
+  Source: Mindscape 364 — Stuart Firestein on ignorance and failure; PROP-2026-08-23-001
+  Confidence: Medium
+  Evidence: Firestein describes the HPS turn and the Barwich postdoc; Carroll: "it's a credit to you that as a working biologist, neuroscientist, you were welcoming philosophers into your lab."
+
+PRS-76:
+  Problem: How can an observation establish that a given dark, massive object is a black hole in the technical sense — an object with an event horizon — rather than merely something very massive and very dark?
+  Resource: Ringdown spectroscopy and horizon-scale precision measurement, treated as an empirical test of a theoretical concept rather than as a parameter fit within an assumed model.
+  Solution: Reframe "is it a black hole?" as a testable question about deviations from the Einstein prediction near the horizon, so that the concept itself, not just its parameters, is exposed to data.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: High
+  Evidence: Cardoso: "Just this question, how do we test the concept of a black hole, in itself requires a lot of effort... How can we know that we're looking at a black hole other than just saying, 'Oh, it looks very massive and it looks dark?'" (transcript, approx. 0:06:11 and 0:06:33).
+
+PRS-77:
+  Problem: Quantum gravity makes no sharp, falsifiable prediction about what observers should see near a black hole, which leaves the field without an empirical handle on its most fundamental open problem.
+  Resource: The singularity as the diagnostic pressure point — the place where general relativity is known to break down — combined with the argument that whatever resolves singularities should also perturb the near-horizon region.
+  Solution: Direct observational search toward the horizon for departures from Einstein's predictions, on the reasoning that horizon-scale physics is where a singularity-resolving theory would first become visible.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: Medium
+  Evidence: Cardoso: "the most serious problem we face in gravitational physics... is the existence of gravitational singularities... it's a natural expectation that if there's a theory of quantum gravity that's gonna... do away with singularities... it's gonna do something to the region close to the horizon. In fact... there are issues in doing quantum mechanics around the horizon" (transcript, approx. 0:49:13).
+
+PRS-78:
+  Problem: Theoretical physics currently lacks the data-driven discipline that historically forced conceptual revision, risking a field that refines models nothing can contradict.
+  Resource: The stance that physics is and should remain "driven by data and by observations," with increasing measurement precision as the mechanism that generates anomalies.
+  Solution: Treat rising precision in gravitational-wave data as the expected source of the next inconsistency with the paradigm, and hold modelling in reserve until such an inconsistency arrives.
+  Date Added: 2026-09-02
+  Source: Mindscape 365 — Vitor Cardoso on what makes black holes special; PROP-2026-08-25-030
+  Confidence: Medium
+  Evidence: Cardoso: "physics used to be, and I want to think it still is, driven by data and by observations. And so hopefully as precision in data gathering increases, we're gonna find something that's really not consistent with the paradigm. And that's when you and I need to sit down and think how can we model this in a better way" (transcript, approx. 0:48:20).
+
+*Total PRS triplets: 78*

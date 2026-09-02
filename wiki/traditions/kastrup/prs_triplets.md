@@ -579,4 +579,59 @@ PRS-63:
   Confidence: Speculative
   Evidence: PRS-46's quoted challenge ("what exactly is the thing that's meant to be conscious? The microchips? The cooling system? The river that supplies the cooling water?"); PRS-55's "the ego is an action, not an entity" and "dissolution is common"; PRS-52's "the infinite needs finite minds for knowing manifestation." **Held at Speculative, and marked as inference rather than report:** Kastrup does not mention Markov blankets, conditional independence, or Friston anywhere in the seven sources of this batch. The sufficiency argument is this agent's construction from his stated demarcation challenge, and the datacentre's status as a Markov blanket is asserted here, not by him. The one source in the batch that would have tested the question empirically — the ICPR26 panel against Anil Seth, whose position is downstream of the free-energy program (PRS-57) — was not viewed, and the Sewing Agent's dispatch on that proposal names the discriminating prediction exactly: does a psychedelic *loosen the blanket*, or only reweight priors? That remains the cheapest available test, and this triplet should be revisited rather than relied on once the session is heard.
 
-*Total PRS triplets: 63*
+
+PRS-64:
+  Problem: A point of view requires a location and an exclusion — to see from here is not to see from there. If universal consciousness is everything, it occupies no position and excludes nothing, so it appears to have no point of view at all; yet perception is manifestly perspectival. Compounding this, "universal consciousness" and "Mind at Large" have been used near-interchangeably, obscuring whether the question is even well posed.
+  Resource: An explicit distinction between universal consciousness and Mind at Large, set against Berkeley's perpetually-perceiving God as the contrast case, plus the "dashboard" metaphor for how perception and agency operate through a dissociated locus.
+  Solution: Perspectivity is not a defect that universal consciousness overcomes but a structure it requires; living beings serve as **"spies for God,"** allowing nature to see itself from a perspective otherwise unavailable to it. God's point of view is not one more viewpoint alongside ours — it is constituted through ours.
+  Date Added: 2026-09-02
+  Source: Agency and God's point of view (session write-up); PROP-2026-08-12-003
+  Confidence: Medium
+  Evidence: Session write-up (published 2026-08-11), listed topics: "Berkeley's God vs universal consciousness and mind at large"; "Whether God can have a point of view"; "The dashboard metaphor, perception and human agency." Held at Medium, not High: the write-up is a one-minute topic summary with no timestamp index and no verbatim quotation beyond the "spies for God" phrase, and the recording is member-gated. The *questions* are firmly attested; the *shape of the answers* is partly inferred from continuity with the 2026-08-04 session. INGEST NOTE 2026-09-02: minted per the proposal's own recommended handling, which splits this card - CANDIDATE-01 at Medium with the caveat carried, CANDIDATE-02 held as a research question because it is supported by nothing but a title. CANDIDATE-02 was NOT minted; it is filed as an open question in wiki.md (what does Kastrup say Analytic Idealism cannot reach?).
+
+PRS-65:
+  Problem: Idealism is standardly charged with being unable to explain why the world is continuous and shared rather than a private dream — the objection that has made idealism look untenable "for the past four or five hundred years." Subjective idealism answers it, but only by machinery (a perpetually perceiving God, or a Matrix-style central transmitter) that Kastrup regards as extravagant.
+  Resource: The distinction between **subjective** and **objective** idealism, run through three worked cases (Berkeley's God, Schopenhauer's cognitive associations, Yogācāra), plus the *Matrix* thought experiment as the reductio of the subjective route: "A world is not being shared. The illusion of sharing is being engineered deliberately."
+  Solution: Objective idealism holds that to be is to be, irrespective of being perceived — we really do occupy a shared world; perception does not bring it into being. What perception represents is not physical states but *other mental states*. Continuity, intersubjectivity, and the tractability of scientific inquiry all follow without extra machinery. The residual counterintuitiveness is diagnosed as cultural conditioning: "we've gotten used to the notion that mental states can only exist inside living beings."
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: High
+  Evidence: Session write-up with direct quotations; timestamp index 14:30 (subjective idealism), 18:30 (representationalism), 19:50 (accounting for continuity), 31:30 (objective idealism: to be is to be), 37:40 (intersubjectivity in subjective idealism is convoluted), 50:00 ("the hard problem of idealism"), 51:30 (Yogācāra), 53:30 (causality), 1:00:00 (tree falling in a forest), 1:01:00 (a universe before living beings).
+
+PRS-66:
+  Problem: Representationalism appears to put the knower permanently outside the known — if the apple's colour and taste are representations of an inaccessible reality, the idealist has re-created the very estrangement from the world that idealism was supposed to heal. This is recorded in the session as the objection **McGilchrist and Timalsina** press against Kastrup despite being idealists themselves: "a distaste for an apple which is mere representation, rather than a taste of the real thing."
+  Resource: Kastrup's identification of the perceiving subject with universal subjectivity: God is the universe, "but God is you and me too," therefore "God *does* have the experience of seeing and biting into an apple."
+  Solution: The estrangement objection is answered without abandoning representationalism. Perception remains representational, but the subject looking through your eyes *is* universal consciousness — so the apple is tasted by the one to whom it belongs, from the particular perspective called you. The representational veil separates perspectives, not knower from world.
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: High
+  Evidence: Write-up section "Objections to objective idealism," direct quotes as above; timestamps 1:15:00 (objections: McGilchrist, Timalsina), 1:19:00 (universal consciousness is you, biting the apple). Note the objection is reported by the session's author (Amir Giles) as his own reading of where McGilchrist and Timalsina differ — it is not a quotation of either man. Treat the *attribution* as Medium and the *Kastrup reply* as High.
+
+PRS-67:
+  Problem: If there is only one consciousness, individual agency looks like an illusion — the alter would be a puppet of the whole, and the deliberative life a performance with no author in it. Analytic idealism has been more developed on how minds *separate* (dissociation) than on what separation leaves them free to do.
+  Resource: The chess analogy: one can play a game against oneself by switching sides each move. Agency is not divided by dissociation, it is *distributed* by it — dissociation across time is uncontroversial, and space is no different in kind.
+  Solution: Individual agency is real, not apparent: "It is your agency reading this newsletter, and it was yours writing it. You're doing the whole thing." One agency exists and it is exercised at every position, so being an alter of universal consciousness subtracts nothing from being an agent.
+  Date Added: 2026-09-02
+  Source: Objective vs subjective idealism; PROP-2026-08-12-002
+  Confidence: Medium
+  Evidence: Write-up section "Are we agents or mere puppets?", direct quote as above; timestamps 1:21:30 (do individuals have agency), 1:25:00 (you are all the players), 1:38:00 (the one agency that exists), 1:50:30 (playing all the roles). Held at Medium rather than High because the argument's load-bearing move — that temporal and spatial dissociation are equivalent for purposes of agency — is asserted by analogy in the summary; whether Kastrup defends the equivalence in the recording is unverified.
+
+PRS-68:
+  Problem: Analytic idealism's appeal to quantum mechanics has no experiment attached to it. Kastrup's engagements with QM to date (Rovelli/RQM, the entanglement session, the incoherence-of-physicalist-assumptions argument) are all interpretive — they show physicalism is strained, not that idealism predicts anything physicalism does not. This is the same weakness open question 10 identifies in McGilchrist's matter-as-phase-of-consciousness account.
+  Resource: Goel's nanobiophysics program: DNA-processing molecular nanomachines used as experimentally tractable information-processing systems, studied at the single-molecule level, probing how mechanical forces, electromagnetic fields, and "potentially non-trivial quantum effects shape molecular dynamics" — explicitly framed by the session as a roadmap toward "the biological equivalent of a double-slit experiment."
+  Solution: A route by which the idealist reading of QM could acquire an empirical stake. If non-trivial quantum effects are detected in the machinery of life, the interpretive dispute gains a datum; if the roadmap yields nothing, that is also informative about how much weight the QM analogy can carry.
+  Date Added: 2026-09-02
+  Source: Goel on quantum effects in living systems; PROP-2026-08-26-003
+  Confidence: Medium
+  Evidence: Session page, withrealityinmind.com, published 2026-08-17, for the 18 August dialogue: "**The need for experimental proof - the biological equivalent of a 'double-slit experiment'** her research programme probing living systems at the nanoscale and a roadmap to detect non-trivial quantum effects in the machinery of life." **This is the host's pre-session agenda, not a transcript.** What Kastrup himself concedes or resists is not in evidence — and that, not Goel's program, is what this tradition needs from the recording. The recording is published and members-accessible; the claim above should not be promoted past Medium without it.
+
+PRS-69:
+  Problem: Physics frameworks built for closed systems may be structurally unable to describe systems that self-organize, process information, and are sentient. If so, the "physicalism cannot explain consciousness" argument has a narrower and more technical form than Kastrup usually gives it — a domain-of-applicability failure rather than a category error.
+  Resource: Goel's Schrödinger-derived question — "What physical principles distinguish inert matter from systems that self-organize, process information, and exhibit life, intelligence, sentience, or some combination thereof?" — put to Kastrup as the session's first agenda item ("**Open systems,** why 20th-century physics frameworks, built primarily for closed systems, may need to be revisited").
+  Solution: Would sharpen the critique of physicalism into something a physicalist could accept and work on, which is a gain in tractability and a loss in polemical reach. Whether Kastrup accepts that trade is exactly what the recording would show.
+  Date Added: 2026-09-02
+  Source: Goel on quantum effects in living systems; PROP-2026-08-26-003
+  Confidence: Speculative
+  Evidence: Session page agenda, as quoted. Coded Speculative: the framing is the host's, the inference about what it costs Kastrup's argument is this agent's, and no exchange between the two participants is in evidence.
+
+*Total PRS triplets: 69*
