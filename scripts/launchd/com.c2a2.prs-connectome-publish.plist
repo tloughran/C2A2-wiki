@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.c2a2.prs-connectome-publish</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/publish_prs_connectome.sh</string>
+    </array>
+
+    <!-- Daily 04:30 local. Deliberately placed in an empty stretch of the clock:
+         the daily thinker run writes the vault ~02:11, the openstory telemetry
+         refresh is 06:05, metabolism-publish is Sunday 06:30, and the evening
+         agent pile-up is 19:45-21:30. 04:30 shares its window with nothing.
+
+         The hour matters much less than it looks. This job is a POLL, not the
+         decision: if no vault source is newer than wiki/prs_3d.html it exits in
+         under a second having touched neither git nor the vault. Firing at a bad
+         moment costs nothing; firing at a good moment does the work. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>4</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <!-- The Mac sleeps. A missed 04:30 fires once on wake, which is the desired
+         behaviour: the gate re-evaluates and either does the work or no-ops. -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <!-- launchd starts with a bare PATH; add the dirs git/node/python3 live in. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-prs-connectome-publish.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/tomloughran/Library/Logs/c2a2-prs-connectome-publish.log</string>
+</dict>
+</plist>
