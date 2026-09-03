@@ -453,6 +453,43 @@ def main():
     expect("sync_vault.FAILED is on the shipped marker roster",
            any(s["path"] == "sync_vault.FAILED" for s in mod.FAILURE_MARKERS), True)
 
+    # The unattended permission mode. Nothing else in this script notices a task
+    # that hangs on a prompt: the run commits its work BEFORE it blocks, so
+    # lastRunAt looks healthy and the artifact checks stay green while the agent
+    # holds its slot for hours. The absent field is the only symptom.
+    print("\nunattended permission mode:")
+    SPEC = {"id": "t", "note": "n"}
+    expect("permissionMode set reads OK",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "permissionMode": "bypassPermissions"}})[0],
+           mod.OK)
+    expect("permissionMode absent FAILs",
+           mod.verdict_unattended_permissions(SPEC, {"t": {"id": "t"}})[0],
+           mod.FAIL)
+    expect("permissionMode present but empty FAILs",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "permissionMode": ""}})[0],
+           mod.FAIL)
+    # approvedPermissions is NOT a substitute. c282 carried five of them (all Gmail)
+    # and still hung on eight other tools. A check that accepted the list would have
+    # read green through every one of those stalls.
+    expect("approvedPermissions alone does NOT satisfy it",
+           mod.verdict_unattended_permissions(
+               SPEC, {"t": {"id": "t", "approvedPermissions": [
+                   {"toolName": "mcp__x__create_draft"}]}})[0],
+           mod.FAIL)
+    expect("task missing from the registry FAILs",
+           mod.verdict_unattended_permissions(SPEC, {})[0],
+           mod.FAIL)
+    # And the one that actually protects the machine: run the real specs against the
+    # real registry. This is what turns red if the desktop app rewrites the file from
+    # a state predating the 2026-09-03 hand edit.
+    live_tasks, _ = mod.load_registry_tasks()
+    for spec in mod.UNATTENDED_PERMISSION_TASKS:
+        expect(f"LIVE: {spec['id']} still carries a permission mode",
+               mod.verdict_unattended_permissions(spec, live_tasks)[0],
+               mod.OK)
+
     print("\nthe live roster must be reachable (a check that sees nothing passes "
           "everything):")
     tasks, paths = mod.load_registry_tasks()

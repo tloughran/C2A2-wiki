@@ -236,6 +236,30 @@ def verdict_git_debris(git_dir, now_local, min_age_hours=GIT_DEBRIS_MIN_AGE_HOUR
 #
 # The timestamp is read from the line the writer stamps into the file, never
 # from the mtime -- same rule as the artifact checks.
+# Tasks that MUST carry an unattended permission mode.
+#
+# An unattended scheduled run has nobody to answer a permission prompt, so it holds
+# until the permission stream closes. c282-wiki-agent-daily-run stalled on eight
+# separate days in the 30 to 2026-09-03 -- 08-04 (13.7h), 08-06, 08-09, 08-27 (4.4h),
+# 08-28, 08-30, 08-31, 09-03 -- each time on a DIFFERENT tool: WebSearch, TaskUpdate,
+# mcp__workspace__bash, Desktop_Commander write_file and start_process, an MCP
+# update_draft. Its approvedPermissions list held five Gmail tools and not one of
+# them. Worst observed hold: 5.1 days. An allowlist chases tools one at a time and
+# never converges, so the task carries permissionMode instead.
+#
+# This check exists because the registry is written by the Claude desktop app from
+# its own in-memory state. The setting was applied by hand on 2026-09-03 while the
+# app was running; if the app ever rewrites the file from a state that predates that
+# edit, the field vanishes silently and the stalls resume with no other symptom.
+UNATTENDED_PERMISSION_TASKS = [
+    {
+        "id": "c282-wiki-agent-daily-run",
+        "note": "set 2026-09-03 after 8 stalls in 30 days on 8 different tools; "
+                "the daily run commits its work BEFORE it hangs, so a stall costs "
+                "the slot and every step that waits on the run to finish, not data",
+    },
+]
+
 FAILURE_MARKERS = [
     {
         "owner": "com.tloughran.summa-vault-sync",
@@ -639,6 +663,30 @@ def parse_iso(stamp):
     return datetime.fromisoformat(stamp.replace("Z", "+00:00"))
 
 
+def verdict_unattended_permissions(spec, tasks):
+    """Is this task still set to run without waiting on a permission prompt?
+
+    Split from the registry loop so it can be driven in a test with a dict of
+    tasks and no real registry on disk.
+    """
+    task = tasks.get(spec["id"])
+    if task is None:
+        return FAIL, (
+            f"{spec['id']}: not in any registry — it cannot carry a permission mode "
+            f"because the task is gone. {spec['note']}"
+        )
+    mode = task.get("permissionMode")
+    if not mode:
+        return FAIL, (
+            f"{spec['id']}: permissionMode is absent, so an unattended run will HANG "
+            f"on the first prompt for an unapproved tool. Re-apply it "
+            f"(permissionMode + chromePermissionMode) with the Claude desktop app "
+            f"quit, or the app will write the field back out from memory. "
+            f"{spec['note']}"
+        )
+    return OK, f"{spec['id']}: permissionMode = {mode} — an unattended prompt cannot hang it"
+
+
 def load_registry_tasks():
     """Every scheduled task across every account registry on this machine.
 
@@ -747,6 +795,9 @@ def main():
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))
 
+    for spec in UNATTENDED_PERMISSION_TASKS:
+        results.append(verdict_unattended_permissions(spec, tasks))
+
     results.append(verdict_git_debris(git_common_dir(REPO), now_local))
 
     for spec in FAILURE_MARKERS:
@@ -761,6 +812,7 @@ def main():
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
         f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
+        f"{len(UNATTENDED_PERMISSION_TASKS)} permission-mode check(s), "
         f"1 git-debris check, {len(FAILURE_MARKERS)} failure marker(s): "
         f"{counts[OK]} OK, {counts[WARN]} WARN, {counts[FAIL]} FAIL"
     )
