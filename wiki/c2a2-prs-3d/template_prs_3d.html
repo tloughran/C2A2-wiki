@@ -538,7 +538,22 @@ var isMouseDown = false;
 var mouseDownPos = { x: 0, y: 0 };
 var cameraTheta = Math.PI * 0.25;
 var cameraPhi = Math.PI * 0.35;
-var cameraRadius = 50;
+// LOAD PROFILE (2026-09-03). The old default of 50 framed ~95% of node centres and
+// read as a wall of nodes -- you could not see that the thing has a shape. One wheel
+// notch is |deltaY| 100 * 0.05 = 5 units (see onWheel), so two steps back is 60,
+// measured to put 100% of node centres inside the frame at 1500x940.
+var PRS_ZOOM_STEP = 5;
+var PRS_LOAD_RADIUS = 50 + 2 * PRS_ZOOM_STEP;
+// Slow orbit: 2.4 deg/sec -> one revolution in 2.5 minutes. Integrated against
+// ELAPSED TIME, not per frame -- a per-frame constant makes the rate a function of
+// the viewer's hardware (measured 2.6fps under headless swiftshader vs 60fps on a
+// real GPU: same constant, a 23x difference in speed). dt is clamped so a
+// backgrounded tab does not resume with a jump.
+// It exists to show the structure, so it yields the moment the viewer takes over.
+var PRS_ORBIT_DEG_PER_SEC = 2.4;
+var autoOrbit = true;
+var orbitLastT = null;
+var cameraRadius = PRS_LOAD_RADIUS;
 var cameraTarget = new THREE.Vector3(0, zHeight / 2, 0);
 var lastMouse = { x: 0, y: 0 };
 
@@ -1328,13 +1343,15 @@ function updateCameraPosition() {
 function resetCamera() {
   cameraTheta = Math.PI * 0.25;
   cameraPhi = Math.PI * 0.35;
-  cameraRadius = 50;
+  cameraRadius = PRS_LOAD_RADIUS;
   cameraTarget.set(0, zHeight / 2, 0);
+  autoOrbit = true;   // Reset View restores the load profile, orbit included
   updateCameraPosition();
 }
 
 // ── EVENTS ──
 function onMouseDown(e) {
+  autoOrbit = false;   // the viewer is driving now
   isMouseDown = true;
   mouseDownPos = { x: e.clientX, y: e.clientY };
   lastMouse = { x: e.clientX, y: e.clientY };
@@ -1430,6 +1447,7 @@ function onDoubleClick(e) {
 }
 
 function onWheel(e) {
+  autoOrbit = false;   // the viewer is driving now
   cameraRadius = Math.max(15, Math.min(120, cameraRadius + e.deltaY * 0.05));
   updateCameraPosition();
   e.preventDefault();
@@ -1618,6 +1636,16 @@ function updateYearLabels() {
 // ── ANIMATE ──
 function animate() {
   requestAnimationFrame(animate);
+
+  // Slow orbit of the CAMERA about the z-axis, so the whole connectome turns.
+  var nowT = (typeof performance !== 'undefined' ? performance.now() : Date.now());
+  if (autoOrbit) {
+    if (orbitLastT === null) orbitLastT = nowT;
+    var dt = Math.min((nowT - orbitLastT) / 1000, 0.25);   // clamp: backgrounded tab
+    cameraTheta += PRS_ORBIT_DEG_PER_SEC * Math.PI / 180 * dt;
+    updateCameraPosition();
+  }
+  orbitLastT = nowT;
 
   // Slow rotation of nodes for visual interest
   meshes.forEach(function(m) {

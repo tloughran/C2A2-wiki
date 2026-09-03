@@ -22,6 +22,27 @@ import tempfile
 FAIL = []
 
 
+def js_func_body(html, name):
+    """Return the source of `function <name>(...)` up to its matching closing brace,
+    or '' if absent. Lets a check be scoped to one function instead of the whole file
+    (e.g. 'resetCamera restores the orbit', not 'the file mentions autoOrbit')."""
+    i = html.find("function %s(" % name)
+    if i < 0:
+        return ""
+    j = html.find("{", i)
+    if j < 0:
+        return ""
+    depth = 0
+    for k in range(j, len(html)):
+        if html[k] == "{":
+            depth += 1
+        elif html[k] == "}":
+            depth -= 1
+            if depth == 0:
+                return html[i:k + 1]
+    return ""
+
+
 def check(cond, msg):
     print(("  ok  " if cond else " FAIL ") + msg)
     if not cond:
@@ -108,6 +129,30 @@ def main():
     check('id="prs-month-slider"' in html, "month-resolution time slider present")
     check("function setMonthThreshold(" in html, "setMonthThreshold defined")
     check("yearThreshold" not in html, "no residual year-resolution threshold")
+
+    # [3d] Load profile + camera orbit (2026-09-03). Three defects this guards:
+    #  (a) the old default radius of 50 framed only ~95% of node centres, so the
+    #      view opened on a wall of nodes and the structure's shape was invisible;
+    #  (b) a per-frame rotation constant makes the rate a function of the viewer's
+    #      hardware — measured 2.6fps headless vs 60fps on a GPU, a 23x spread —
+    #      so the orbit MUST integrate against elapsed time;
+    #  (c) an orbit that does not yield fights the viewer the moment they drag.
+    reset_fn = js_func_body(html, "resetCamera")
+    animate_fn = js_func_body(html, "animate")
+    theta_lines = [l for l in animate_fn.splitlines() if "cameraTheta" in l and "+=" in l]
+
+    check("PRS_LOAD_RADIUS = 50 + 2 * PRS_ZOOM_STEP" in html,
+          "load radius derived from the zoom step, not a bare literal")
+    check("var cameraRadius = PRS_LOAD_RADIUS;" in html,
+          "camera opens at the load radius")
+    check(bool(reset_fn) and "PRS_LOAD_RADIUS" in reset_fn and "autoOrbit = true" in reset_fn,
+          "resetCamera restores the load profile, orbit included")
+    check(len(theta_lines) == 1 and "dt" in theta_lines[0],
+          "orbit integrates elapsed time, not frames (rate must not depend on fps)")
+    check("Math.min((nowT - orbitLastT) / 1000, 0.25)" in html,
+          "orbit dt clamped, so a backgrounded tab does not resume with a jump")
+    check(html.count("autoOrbit = false;") >= 2,
+          "orbit yields to the viewer on both drag and wheel")
 
     # Advisory only: literal parens/braces inside data strings make raw counts
     # uneven even when the JS is valid. node --check (above) is authoritative.
