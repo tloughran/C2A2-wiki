@@ -53,6 +53,9 @@ def iso(dt):
 # 2026-08-04 is a Tuesday; 15:00 local. The Sunday before it is 08-02.
 NOW_LOCAL = datetime(2026, 8, 4, 15, 0, tzinfo=timezone(timedelta(hours=-4)))
 NOW_UTC = NOW_LOCAL.astimezone(timezone.utc)
+# The Sunday-20:00 fire immediately before NOW_LOCAL. Used as the mtime of a log
+# that proves a runs = 0 job did fire.
+LOGGED = datetime(2026, 8, 2, 20, 0, tzinfo=timezone(timedelta(hours=-4)))
 
 
 RUNS_ZERO = ("\tstate = not running\n\truns = 0\n"
@@ -197,6 +200,61 @@ def main():
                                context={"crons": [], "reloaded_at": datetime(2026, 8, 3)},
                                now_local=NOW_LOCAL)[0],
            mod.FAIL)
+    # The 2026-09-03 defect, and its falsifier. Three agents carried a never-fired
+    # FAIL while their logs held clean fires; the checker asserted "no log exists"
+    # without opening one. These four cases pin the fix in BOTH directions -- a
+    # patch that simply stopped failing on runs = 0 would pass the first two and
+    # fail these last two.
+    with tempfile.TemporaryDirectory() as tmp:
+        wrote = os.path.join(tmp, "ran.log")
+        with open(wrote, "w") as fh:
+            fh.write("2026-08-30 20:00:01 generate_weekly_review exit=0\n")
+        os.utime(wrote, (LOGGED.timestamp(), LOGGED.timestamp()))
+        empty = os.path.join(tmp, "empty.log")
+        open(empty, "w").close()
+        os.utime(empty, (LOGGED.timestamp(), LOGGED.timestamp()))
+
+        # MUST FAIL: log path declared, but launchd only ever created the file.
+        # An empty log is not evidence of a run.
+        expect("runs = 0 with an EMPTY log is still never-fired",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [empty]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.FAIL)
+        # MUST FAIL: the declared log is not on disk at all.
+        expect("runs = 0 with a missing log is still never-fired",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [os.path.join(tmp, "nope.log")]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.FAIL)
+
+        print("\nthe runs = 0 log evidence (2026-09-03 false-FAIL fix):")
+        # MUST PASS: com.tloughran.summa-weekly-review's shape. Sunday 20:00,
+        # loaded 07-13, log written on the 08-02 fire -- the most recent one before
+        # NOW_LOCAL. The counter says 0; the log says it ran.
+        expect("runs = 0 but the log was written on the last fire is OK",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * 0"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [wrote]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.OK)
+        # MUST WARN, not pass: same log, but on a DAILY schedule the 08-03 20:00
+        # fire came round after that write and left nothing. Proof of life is not
+        # proof of the latest run.
+        expect("runs = 0, log present but a later fire left no write, warns",
+               mod.parse_launchctl("a", 0, RUNS_ZERO,
+                                   context={"crons": ["0 20 * * *"],
+                                            "reloaded_at": datetime(2026, 7, 13),
+                                            "logs": [wrote]},
+                                   now_local=NOW_LOCAL)[0],
+               mod.WARN)
+
+    print("\nlaunchd agents that MUST fail (continued):")
     # An assertion-agent's UNLISTED exit codes are still faults: 78 is the
     # macl-xattr trap, 2 is the check itself failing to run.
     label = next(iter(mod.VERDICT_EXITS))

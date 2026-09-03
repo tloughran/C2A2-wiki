@@ -481,6 +481,48 @@ def not_yet_due(context, now_local):
     return True, min(upcoming) if upcoming else None
 
 
+def plist_logs(job):
+    """The log paths a job declares in its own plist."""
+    paths = []
+    for key in ("StandardOutPath", "StandardErrorPath"):
+        value = job.get(key)
+        if value:
+            paths.append(os.path.expanduser(value))
+    return paths
+
+
+def newest_log_write(context):
+    """(path, mtime) of the most recent non-empty log this job owns, else (None, None).
+
+    2026-09-03: `runs = 0` was reported for com.tloughran.summa-weekly-review,
+    com.c2a2.metabolism-publish and com.tomloughran.openstory-version-check, and all
+    three had logs showing clean fires on 08-16, 08-23, 08-30 and 08-31. launchd's
+    counter is NOT a run record for a calendar job that completed and was unloaded
+    from memory. Three of the six FAIL lines on that morning's panel were false, and
+    the one real FAIL -- the H-Drive unmounted, stopping OpenStory ingest -- sat
+    unactioned for seven days behind them.
+
+    The lesson is narrower than "the counter is wrong": this function exists so the
+    checker never again ASSERTS the absence of an artifact it did not try to open.
+    An empty log is not evidence of a run -- launchd creates the file when it
+    bootstraps the job, before anything writes to it -- so size 0 does not count.
+    """
+    newest = (None, None)
+    for path in context.get("logs") or []:
+        try:
+            stat = os.stat(path)
+        except OSError:
+            continue
+        if stat.st_size == 0:
+            continue
+        # Naive local, matching installed_plist's mtime and what previous_fires
+        # returns -- this module compares those two directly (see not_yet_due).
+        when = datetime.fromtimestamp(stat.st_mtime)
+        if newest[1] is None or when > newest[1]:
+            newest = (path, when)
+    return newest
+
+
 def parse_launchctl(label, returncode, text, context=None, now_local=None):
     """Turn `launchctl print` output into a verdict.
 
@@ -511,9 +553,32 @@ def parse_launchctl(label, returncode, text, context=None, now_local=None):
                 f"{context['reloaded_at']:%Y-%m-%d} and no scheduled fire has come "
                 f"round since{when} — not yet proven, not yet broken"
             )
+        # Before calling it never-fired, open the log. See newest_log_write.
+        log_path, log_at = newest_log_write(context)
+        if log_at is not None:
+            now = now_local or datetime.now().astimezone()
+            missed = None
+            for cron in context.get("crons") or []:
+                try:
+                    last_due = previous_fires(cron, now, 1)[0]
+                except (ValueError, IndexError):
+                    continue
+                if last_due > log_at and (missed is None or last_due > missed):
+                    missed = last_due
+            if missed is not None:
+                return WARN, (
+                    f"{label}: runs = 0, but {os.path.basename(log_path)} was written "
+                    f"{log_at:%Y-%m-%d %H:%M}, so it HAS fired — the fire due "
+                    f"{missed:%Y-%m-%d %H:%M} left no write. Read the log, not the counter."
+                )
+            return OK, (
+                f"{label}: runs = 0, but {os.path.basename(log_path)} was written "
+                f"{log_at:%Y-%m-%d %H:%M} — it fired and finished; launchd's counter "
+                f"does not survive the unload"
+            )
         return FAIL, (
-            f"{label}: loaded but has NEVER fired (runs = 0), and at least one "
-            f"scheduled fire has passed. No log exists to read, because it never started."
+            f"{label}: loaded but has NEVER fired (runs = 0), at least one scheduled "
+            f"fire has passed, and its log is absent or empty. It never started."
         )
 
     # A KeepAlive daemon that is up right now has usually exited nonzero at some
@@ -632,7 +697,8 @@ def launchd_labels():
             problems.append((FAIL, f"{os.path.basename(path)}: plist has no Label key"))
             continue
         labels.append((label, {"crons": plist_schedule(job),
-                               "reloaded_at": installed_plist(label)}))
+                               "reloaded_at": installed_plist(label),
+                               "logs": plist_logs(job)}))
     return labels, problems
 
 
