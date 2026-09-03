@@ -93,6 +93,22 @@ def main():
     check('id="prs-chk-generative"' in html, "generative toggle checkbox present")
     check("Synergistic coil (' +" in html or "Synergistic coil ('+" in html, "legend coil count present")
 
+    # [3b] Readouts must be POPULATED, not merely present. The triplet counter
+    # shipped reading "Showing ... triplets" for months because updatePrsCount()
+    # was only ever called from applyPRSFilters() — nothing ran it on load, so a
+    # viewer who touched no filter never saw a number. Assert the init call, not
+    # the element. (2026-09-03)
+    check(html.count("updatePrsCount();") >= 2, "updatePrsCount called on load, not only from applyPRSFilters")
+    check('id="prs-build-stamp"' in html and "PRS_BUILD_TS" in html, "build stamp present and timestamped")
+    check("Cross-tradition link (' +" in html, "legend cross-connection count present")
+    check("Pattern-detector findings: ' +" in html, "legend findings count present")
+    check("prs-filter-count" in html, "per-tradition counts present")
+    # [3c] Time control must be month-resolution over `date`. A year-step slider
+    # over pub_year cannot separate the 560 triplets that share pub_year 2026.
+    check('id="prs-month-slider"' in html, "month-resolution time slider present")
+    check("function setMonthThreshold(" in html, "setMonthThreshold defined")
+    check("yearThreshold" not in html, "no residual year-resolution threshold")
+
     # Advisory only: literal parens/braces inside data strings make raw counts
     # uneven even when the JS is valid. node --check (above) is authoritative.
     print("\n[4] brace/bracket balance (advisory only - node --check is authoritative)")

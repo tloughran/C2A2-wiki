@@ -326,6 +326,12 @@ body {
 }
 
 #disc-labels { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 50; }
+.prs-filter-count {
+  margin-left: auto;
+  font-size: 10px;
+  color: #6f6f80;
+  font-variant-numeric: tabular-nums;
+}
 .disc-label {
   position: absolute;
   color: #888;
@@ -887,6 +893,9 @@ var prsFilterState = {}; // thinker -> boolean
 function buildTraditionFilters() {
   var container = document.getElementById('prs-tradition-filters');
   var html = '';
+  // Per-tradition triplet counts, derived from the shipped data — never a literal.
+  var tCount = {};
+  PRS_TRIPLETS.forEach(function(t) { tCount[t.thinker] = (tCount[t.thinker] || 0) + 1; });
   var sortedThinkers = Object.keys(THINKER_DISPLAY).sort(function(a, b) {
     return THINKER_DISPLAY[a].localeCompare(THINKER_DISPLAY[b]);
   });
@@ -896,6 +905,7 @@ function buildTraditionFilters() {
     html += '<input type="checkbox" id="prs-chk-' + t + '" checked onchange="prsToggleThinker(\'' + t + '\', this.checked)">';
     html += '<span class="prs-filter-dot" style="background:' + THINKER_COLORS[t] + '"></span>';
     html += '<span class="prs-filter-label">' + THINKER_DISPLAY[t] + '</span>';
+    html += '<span class="prs-filter-count">' + (tCount[t] || 0) + '</span>';
     html += '</div>';
   });
   container.innerHTML = html;
@@ -930,8 +940,12 @@ function prsNodeVisible(mesh) {
     if (disc && prsDiscState[disc] === false) return false;
   }
   var triplet = mesh.userData.triplet;
-  if (triplet && triplet.pub_year) {
-    var dec = Math.floor(triplet.pub_year / 10) * 10;
+  // Time cut keys on `date` — the SAME field dateToZ places the node by. Keying the
+  // decade buckets on pub_year while the axis used `date` meant the two disagreed
+  // wherever a curated pub_year and its date year differ (2026-09-03).
+  var _ord = triplet ? dateOrd(triplet.date) : null;
+  if (_ord !== null) {
+    var dec = Math.floor(new Date(_ord * 86400000).getUTCFullYear() / 10) * 10;
     if (prsYearState[dec] === false) return false;
   }
   return true;

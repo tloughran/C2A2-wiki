@@ -118,11 +118,31 @@ function setBrightness(v) {
   if (cc) cc.style.filter = 'brightness(' + v + ')';
 }
 
-function setYearThreshold(v) {
-  v = parseInt(v, 10);
-  yearThreshold = v;
-  var lbl = document.getElementById('prs-year-slider-label');
-  if (lbl) lbl.textContent = (v <= minYear) ? 'all years' : ('≥ ' + v);
+// -- TIME THRESHOLD, MONTH RESOLUTION (2026-09-03) --
+// The slider was year-step over pub_year. 560 of 785 triplets share pub_year 2026,
+// so every position from 2020 up was the same picture. Month index over `date`
+// gives ~600 distinct steps across the corpus and matches dateToZ's own field.
+var MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function monthIndexOfOrd(o) {
+  var d = new Date(o * 86400000);
+  return d.getUTCFullYear() * 12 + d.getUTCMonth();
+}
+function ordOfMonthIndex(mi) {
+  return Date.UTC(Math.floor(mi / 12), mi % 12, 1) / 86400000;
+}
+function monthLabel(mi) {
+  return MONTH_NAMES[mi % 12] + ' ' + Math.floor(mi / 12);
+}
+function setMonthThreshold(v) {
+  var mi = parseInt(v, 10);
+  var lo = monthIndexOfOrd(minOrd), hi = monthIndexOfOrd(maxOrd);
+  monthThreshold = (mi <= lo) ? null : ordOfMonthIndex(mi);
+  var lbl = document.getElementById('prs-month-slider-label');
+  if (lbl) {
+    lbl.textContent = (mi <= lo)
+      ? ('all dates (' + monthLabel(lo) + ' \u2192 ' + monthLabel(hi) + ')')
+      : (monthLabel(mi) + ' \u2192 ' + monthLabel(hi));
+  }
   applyPRSFilters();
 }
 
@@ -163,10 +183,11 @@ NEW_LEGEND = r"""function buildLegend() {
   html += '<div class="legend-item"><span style="color:#5DC0AB;font-size:14px">&#11206;</span> Solution</div>';
   html += '<h4 style="margin-top:10px">Connections</h4>';
   html += '<div class="legend-item"><span style="color:#3FE0D0;font-size:15px">&#10026;</span> Synergistic coil (' + (typeof COILS !== 'undefined' ? COILS.length : 0) + ')</div>';
-  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#8722;</span> Cross-tradition link</div>';
+  html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#8722;</span> Cross-tradition link (' + (typeof CROSS_CONNECTIONS !== 'undefined' ? CROSS_CONNECTIONS.length : 0) + ')</div>';
   var nConv = 0; for (var k in resourceTraditions) { if (Object.keys(resourceTraditions[k]).length >= 2) nConv++; }
   html += '<div class="legend-item"><span style="color:#C9A84C;font-size:15px">&#9673;</span> Convergence hub &#8212; resource shared across &#8805;2 traditions (' + nConv + ')</div>';
   html += '<div class="legend-item"><span style="color:#F09A3C;font-size:15px">&#8594;</span> Generative coil &#8212; a solution feeding a downstream resource (' + (typeof GENERATIVE !== 'undefined' ? GENERATIVE.length : 0) + ')</div>';
+  html += '<div class="legend-item" style="color:#6f6f80;font-size:10px;margin-top:6px">Pattern-detector findings: ' + (typeof FINDINGS !== 'undefined' ? FINDINGS.length : 0) + '</div>';
   legendEl.innerHTML = html;
 }"""
 
@@ -302,7 +323,8 @@ def main():
 
     # 2) Inject COILS right after the FINDINGS array line.
     extra_js = ("\nvar COILS = " + jsdata(data["COILS"]) + ";"
-                + "\nvar GENERATIVE = " + jsdata(data.get("GENERATIVE", [])) + ";")
+                + "\nvar GENERATIVE = " + jsdata(data.get("GENERATIVE", [])) + ";"
+                + "\nvar PRS_BUILD_TS = " + jsdata(data.get("summary", {}).get("generated", "")) + ";")
     html = replace_once(
         html, r"^var FINDINGS = .*;[ \t]*$",
         lambda m: m.group(0) + extra_js,
@@ -311,7 +333,7 @@ def main():
     # 3) Globals for the coil layer.
     html = replace_once(
         html, r"^var showThreads = true;[ \t]*$",
-        "var showThreads = true;\nvar showCoils = true;\nvar coilLines = [];\nvar showGenerative = true;\nvar generativeLines = [];\nvar yearThreshold = null;",
+        "var showThreads = true;\nvar showCoils = true;\nvar coilLines = [];\nvar showGenerative = true;\nvar generativeLines = [];\nvar monthThreshold = null;",
         "globals:coils", flags=re.M)
 
     # 4) Call buildCoilLines() after the cross-connection build.
@@ -437,14 +459,16 @@ def main():
     html = replace_once(
         html,
         re.escape("    if (prsYearState[dec] === false) return false;\n  }\n  return true;\n}"),
-        "    if (prsYearState[dec] === false) return false;\n  }\n  if (yearThreshold && triplet && triplet.pub_year && triplet.pub_year < yearThreshold) return false;\n  return true;\n}",
-        "ctrl:year-cut")
+        "    if (prsYearState[dec] === false) return false;\n  }\n  if (monthThreshold !== null && _ord !== null && _ord < monthThreshold) return false;\n  return true;\n}",
+        "ctrl:month-cut")
     # 11c) initialise the year slider range from the data + sync brightness on load.
     html = replace_once(
         html, r"^  buildLegend\(\);[ \t]*$",
         "  buildLegend();\n"
-        "  var _ys = document.getElementById('prs-year-slider'); if (_ys) { _ys.min = minYear; _ys.max = maxYear; _ys.value = minYear; }\n"
-        "  var _b = document.getElementById('prs-brightness'); if (_b) setBrightness(_b.value);",
+        "  var _ms = document.getElementById('prs-month-slider');\n"
+        "  if (_ms) { _ms.min = monthIndexOfOrd(minOrd); _ms.max = monthIndexOfOrd(maxOrd); _ms.value = _ms.min; setMonthThreshold(_ms.value); }\n"
+        "  var _b = document.getElementById('prs-brightness'); if (_b) setBrightness(_b.value);\n"
+        "  updatePrsCount();  // the counter shipped as 'Showing … triplets' because nothing called this on load\n",
         "ctrl:slider-init", flags=re.M)
     # 11d) header controls: brightness + year sliders beside Labels.
     html = replace_once(
@@ -453,10 +477,26 @@ def main():
         '    <button id="btn-labels" onclick="toggleLabels()" class="active">Labels</button>\n'
         '    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Bright</span>\n'
         '    <input type="range" id="prs-brightness" min="0.6" max="2.5" step="0.05" value="1.35" style="vertical-align:middle;width:80px" oninput="setBrightness(this.value)">\n'
-        '    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Year &#8805;</span>\n'
-        '    <input type="range" id="prs-year-slider" min="0" max="0" value="0" step="1" style="vertical-align:middle;width:90px" oninput="setYearThreshold(this.value)">\n'
-        '    <span id="prs-year-slider-label" style="font-size:11px;color:#9a9a9a">all years</span>',
+        '    <span style="margin-left:12px;font-size:11px;color:#9a9a9a">Date &#8805;</span>\n'
+        '    <input type="range" id="prs-month-slider" min="0" max="0" value="0" step="1" style="vertical-align:middle;width:140px" oninput="setMonthThreshold(this.value)">\n'
+        '    <span id="prs-month-slider-label" style="font-size:11px;color:#9a9a9a;font-variant-numeric:tabular-nums">all dates</span>',
         "ctrl:header-sliders")
+
+    # 11e) Build stamp: makes a stale artifact visible without opening a console.
+    html = replace_once(
+        html,
+        re.escape('<div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 10px">Showing \u2026 triplets</div>'),
+        '<div id="prs-count" style="font-size:12px;color:#9a9aa8;margin:2px 0 2px">Showing \u2026 triplets</div>\n'
+        '  <div id="prs-build-stamp" style="font-size:10px;color:#6f6f80;margin:0 0 10px;line-height:1.4"></div>',
+        "stamp:html")
+    html = replace_once(
+        html, re.escape("  updatePrsCount();  // the counter shipped as 'Showing \u2026 triplets' because nothing called this on load"),
+        "  updatePrsCount();  // the counter shipped as 'Showing \u2026 triplets' because nothing called this on load\n"
+        "  var _bs = document.getElementById('prs-build-stamp');\n"
+        "  if (_bs) { _bs.textContent = 'Built ' + (typeof PRS_BUILD_TS !== 'undefined' ? PRS_BUILD_TS.replace('T', ' ').slice(0, 16) : '?')\n"
+        "    + ' \\u00b7 ' + Object.keys(THINKER_DISPLAY).length + ' traditions \\u00b7 '\n"
+        "    + monthLabel(monthIndexOfOrd(minOrd)) + ' \\u2013 ' + monthLabel(monthIndexOfOrd(maxOrd)); }",
+        "stamp:init")
 
     # 12) Edge-picking: raycast the edge lines (nodes still take priority).
     html = replace_once(
@@ -515,7 +555,7 @@ def main():
         '<h4>Narrative (PRS) Connectome</h4>'
         '<p>Each <b>node</b> is an agentic PRS narrative &#8212; a small model (problem &#8594; resource &#8594; solution). '
         '<b>Edges</b> wire narratives together: shared threads within a tradition; across traditions, the <b>coils</b> (association fibers). '
-        'Read it as the emergence of rival <b>master sciences</b>. Axes: angle = discipline, height = year.</p>'
+        'Read it as the emergence of rival <b>master sciences</b>. Axes: angle = discipline, height = date (day precision, log-on-age, &#964;=90d).</p>'
         '</div>'
         '<div id="prs-legend-pop" class="prs-pop" style="display:none;bottom:54px;left:24px">'
         '<h4>Legend key</h4>'
