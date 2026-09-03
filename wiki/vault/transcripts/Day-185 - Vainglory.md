@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-185 - Vainglory - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/185, pars/II-II, q/132-133]
-last_qc_at: "2026-08-04T20:22:36"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T16:22:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 185 — Vainglory
@@ -25,6 +25,8 @@ last_qc_outcome: "pass"
 > Typo cleanup (QC sweep 2026-06-12): pellanimity / pussolinimity / pilanimity / pussellinimity / pelonymity / palenimity / pelonyimity → pusillanimity; magnanmity → magnanimity; comerate → commensurate; smallalness → smallness; slugard → sluggard (Proverbs 26:16); Austin Abbish → Austin Habash. All fixes verified against the raw ASR (refetched 2026-06-12); 1:1 token substitutions, no content change.
 
 Day 185 covers vainglory — the inordinate desire for the manifestation of one's own excellence — and pusillanimity, the smallness of soul opposed to magnanimity by defect. (Habash notes this should precede Day 184.)
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas, a Summa
 

@@ -15,7 +15,7 @@ fetched_at: 2026-05-14
 fetch_path: youtube-transcript-api (re-fetch after 2026-05-10 fetch-failed placeholder)
 synthesis: "[[Day-071 - Moral Consequences - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-17T20:20:54"
+last_qc_at: "2026-09-02T00:21:46"
 last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-14  # auto-rendered to replace fetch-failed placeholder; structural Article-N headers + Notes section pending per Days 49–60 precedent
 tags: [summa, day/071, pars/I-II, q/20, q/21]

@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-140 - Wisdom - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/140, pars/2, q/44-45]
-last_qc_at: "2026-08-25T12:25:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T14:28:36"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 140 — Wisdom
@@ -27,6 +27,8 @@ last_qc_outcome: "pass"
 ---
 
 > **Typo cleanup (ASR fixes):** *Sumanir / Suma / sumat* → Summa; *theologia* → Theologiae; *Aquinus / Aquinus's* → Aquinas / Aquinas's; *Habish* → Habash; *sukunda / sukund / Sukund* → Secunda Secundae; *a Maria Press* → Ave Maria Press; *biatitude* → beatitude (×2); *Dionius* → Dionysius; *Heroththeus* → Hierotheus; *Aisi* → Assisi; *themsel* → themselves; stray caption token *[Music]* dropped. Restored 2026-08-11 (this pass), verified against the live ASR: *inexpressable* → inexpressible (Q.44 a.1).
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast where we study St. Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses discovering the brilliance of Aquinas and his Catholic faith is day 140. So let's get started. We're covering today questions 44 and 45 of the Secunda Secundae that is of the precepts of charity and of the gift of
 

@@ -3,9 +3,9 @@ day: 175
 title: Affability & Flattery (Contemporary)
 pairs_with: "[[Day-175 - Affability and Flattery]]"
 length_target_words: 1500
-length_actual_words: 1395
+length_actual_words: 1430
 length_tier: short
-length_ratio_to_target: 0.930
+length_ratio_to_target: 0.953
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-01 micro-moments of warmth cultivated into upward spirals; PRS-02 positivity resonance as measurable vagal tone, oxytocin, neural phase-locking)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; flattery as corruption of the mutual-model coupling — entry is Implicit, Confidence Medium)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Positivity resonance as a bond-building mechanism is
 mind_first_reframe: "Affability names the empirically real micro-mechanism (positivity resonance) by which honest warmth builds the bonds a cooperative community runs on; flattery is its counterfeit — warmth decoupled from regard to manipulate another's self-model."
 central_theme_thread: "Loving unity is not only computed but lived among perspective-limited agents, and the texture of that life is warmth; affability is its small daily form, while flattery counterfeits the meeting and isolates the flatterer behind a performance."
 tags: [synthesis, day/175, theme/positivity-resonance, theme/honest-warmth, q/114, q/115]
-last_qc_at: "2026-08-24T18:32:01"
+last_qc_at: "2026-09-02T02:32:32"
 last_qc_outcome: "rewrote"
 ---
 
@@ -59,7 +59,7 @@ Loving unity is not only computed; it is *lived* among perspective-limited agent
 - **PRS-06 in the Friston-tradition wiki** (multi-agent coherence via mutual modeling — agents couple by reducing prediction error in each other's behavior, and the triplet's own solution line names love as the mechanism by which agents synchronize models into a coherent collective agent) — affability is that coupling working; flattery corrupts it, feeding the other a false model to be aligned to. Gloss verified verbatim at the entry body. *Formal — but the entry is labelled "Implicit" and carries **Confidence: Medium**, so this is the least firmly held of the day's anchors and the bullet should not be read as carrying empirical weight.*
 - **McGilchrist PRS-01** (attunement vs manipulation) — genuinely meeting the other vs simulating it for advantage. Verified verbatim at the entry body, which sets left-hemisphere "abstraction, fragmentation, **manipulation**" against right-hemisphere "holistic, **relational** engagement with reality"; the bullet's contrast is the entry's own wording. *Empirical, Confidence High.*
 - **PRS-11 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — Franciscan knowledge, explicitly non-propositional and **second-person**, as a philosophically rigorous form of understanding irreducible to propositions. Affability is limited genuine second-personal regard; flattery instrumentalizes it, wearing friendship's face while withholding the regard that would make the knowing second-personal at all. *Philosophical, Confidence High.*
-- **Wright — canonical work, anchor declined on a tested radius.** "Let love be genuine" (Rom 12:9, *anhypokritos*); building one another up (1 Thess 5:11). The 41-entry Wright register was searched this run for *genuine*, *hypocrisy*, *Romans 12*, *build up*, and *Thessalonians*; the sole hit is PRS-9, the already/not-yet *arrabōn* frame, which is not this claim. No numbered Wright triplet covers sincere love as the bond of community, so the anchor stays canonical rather than inventing an id. *Theological / scriptural.*
+- **Wright — canonical work, anchor declined on a tested radius.** "Let love be genuine" (Rom 12:9, *anhypokritos*); building one another up (1 Thess 5:11). The Wright register was searched for *genuine*, *hypocrisy*, *Romans 12*, *build up*, and *Thessalonians*; the sole hit is PRS-9, the already/not-yet *arrabōn* frame, which is not this claim. **Re-tested 2026-09-02 against the register at 59 entries — it grew by 18 (PRS-42 to PRS-59, all added 2026-09-01) after the radius was first tested at 41, and the declination still holds: zero hits on *flattery*, *affability*, *friendliness*, *courtesy* or praise-of-others.** No numbered Wright triplet covers sincere love as the bond of community, so the anchor stays canonical rather than inventing an id. *Theological / scriptural.*
 - **Rohr PRS-15** (`traditions/rohr/prs_triplets.md`) — the ego/false-self frame named as the thing Jesus liberates from, offered as the contemplative pair for the mind-monist account of the constructed self. Warmth offered freely by the self with nothing to secure, against the False Self's people-pleasing. *Theological / contemplative, Confidence High.*
 
 ## Where this leaves us

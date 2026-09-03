@@ -3,20 +3,20 @@ day: 225
 title: Honoring the Saints (Contemporary)
 pairs_with: "[[Day-225 - Honoring the Saints]]"
 length_target_words: 1500
-length_actual_words: 1472
-length_ratio_to_target: 0.981
+length_actual_words: 1448
+length_ratio_to_target: 0.965
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-08 the Daimon as principle of individuation) — honor tracks the one individuated person across natures [metaphysical guardrail]"
   - "master/cross_program_index.md (CROSS-013 conscious-agent integration) + traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; agents construct mutually consistent interfaces) — one agent across modes; mediation as integration"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing) — honor passes to the person without collapsing the natures"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + 1 Tim 2:5, Heb 9:15 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + 1 Tim 2:5, Heb 9:15"
 evidence_strength_summary: "One adoration of the one person across natures (latria), images/relics honored because honor passes to the prototype = theological/formal grammar of personhood; honor tracking the one individuated locus ~ person as principle of individuation (Kastrup PRS-08) = speculative-formal (medium); Mediator-as-man uniting the many to God ~ one agent integrating many (CROSS-013) = speculative-formal with empirical leg (medium); 'one mediator between God and men, the man Christ Jesus' (1 Tim 2:5) = scriptural (Wright, strong); central-theme fit (individuation-by-person; the mediator who unites the many) = strong."
 mind_first_reframe: "Honor is read as tracking the one individuated person (Daimonic individuation, Kastrup), and the Mediator as uniting the many through the limited human interface where agents integrate — limitation as the organ of mediation, not its obstacle."
 central_theme_thread: "Individuation-by-person (honor tracks the person) plus the project's reversal: the whole unites the limited not by bypassing limitation but through a perspective that inhabits the 'middle position.'"
 tags: [synthesis, day/225, theme/individuation-by-person-and-mediation]
-last_qc_at: "2026-08-08T08:19:18"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T08:23:20"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 225 — Contemporary Parallel: Honor Tracks the Person, the Mediator Unites the Many

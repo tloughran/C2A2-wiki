@@ -4,9 +4,9 @@ video_id: lIS5eO9WxGo
 url: https://www.youtube.com/watch?v=lIS5eO9WxGo
 title: Defending the Guilty
 summa_ref: Secunda Secundae, Q.70-71
-duration_seconds: 534
+duration_seconds: 546
 word_count: 1589
-raw_asr_word_count: 1590
+raw_asr_word_count: 1581
 segment_count: 234
 caption_kind: asr
 language: en
@@ -16,13 +16,15 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-153 - Defending the Guilty - Contemporary]]"
 tags: [summa, day/153, pars/2, q/70]
-last_qc_at: "2026-08-25T10:28:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T12:24:25"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 153 — Defending the Guilty
 
 > Context: Q.70 injustice with regard to the person of the witness; Q.71 injustice and judgment on the part of counsel (advocates).
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas, a Summa Theologiae, in a way simple and
 

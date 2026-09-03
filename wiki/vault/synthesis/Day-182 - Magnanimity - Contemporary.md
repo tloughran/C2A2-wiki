@@ -3,9 +3,10 @@ day: 182
 title: Magnanimity (Contemporary)
 pairs_with: "[[Day-182 - Magnanimity]]"
 length_target_words: 1500
-length_actual_words: 1637
-length_ratio_to_target: 1.09
+length_actual_words: 1709
+length_ratio_to_target: 1.139
 length_tier: short
+length_note: "Overrun is the Friston PRS-58/59 evidence upgrade recorded at the 2026-09-02 review — the precision parameter this day's self-model reading rides on now has a measured neural mechanism rather than only PRS-28's Medium/forthcoming status. Argument unchanged; within +/-25pct."
 mind_first_reframe: "Magnanimity is the self-model calibrated to its real (large) capacity: an agent that accurately estimates high resources attempts correspondingly great policies, and relates to honor as a *signal* of worth rather than its source. It is not pride, because it is anchored in truth about the self; the vice would be mis-estimation in either direction."
 central_theme_thread: "A perspective that accurately knows its own large capacity, and stretches toward great goods within the whole, is not curved in on itself — it is most itself when most given over to the great thing. The great-souled agent computes toward loving unity at scale, undistracted by the small economy of honor."
 karpathy_wiki_sources:
@@ -17,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-05: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-08-25T06:21:32"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-02T06:36:01"
+last_qc_outcome: "pass"
 ---
 
 # Day 182 — Magnanimity (Contemporary)
@@ -57,7 +58,7 @@ A perspective is individuated by its limits — but not every largeness of self 
 
 ## Bridges
 
-- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as the inverse variance of prediction error, Confidence Medium) and PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal — the self-model claim published, the precision-encoding claim still forthcoming.*
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as the inverse variance of prediction error, Confidence Medium) and PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal — the self-model claim published, the precision-encoding claim still forthcoming.* **Upgrade recorded 2026-09-02:** the Friston register has grown to 63 entries, and **PRS-58 / PRS-59** supply what PRS-28's Medium status was standing in for — pre-stimulus hippocampal ripple activity, raised under uncertainty, as a measured mechanism that tunes cortical precision ahead of the stimulus. The claim that confidence *is* precision on a self-model remains this commentary's extension; but the precision parameter it rides on is now empirically anchored rather than only formally posited.
 - **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (micro-moments of resonance as what builds durable resource, Confidence High) with PRS-28 (positivity resonance read as a within-program extension of broaden-and-build, Confidence Medium): the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical on PRS-01; PRS-28 is a program-historiographic reading, not an experimental result.*
 - **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-05 (attention as ontological act; the mode of attending constitutes the world disclosed): true magnanimity as less self-occupied, drawn out by the great good. *Empirical / interpretive.*
 - **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*

@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-177 - Covetousness - Contemporary]]"
 tags: [summa, day/177, pars/II-II, q/118-119]
-last_qc_at: "2026-08-24T20:24:47"
+last_qc_at: "2026-09-02T02:32:34"
 last_qc_outcome: "pass"
 ---
 

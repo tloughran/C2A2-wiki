@@ -3,8 +3,8 @@ day: 176
 title: Quarreling and Liberality (Contemporary)
 pairs_with: "[[Day-176 - Quarreling and Liberality]]"
 length_target_words: 1500
-length_actual_words: 1580
-length_ratio_to_target: 1.053
+length_actual_words: 1614
+length_ratio_to_target: 1.076
 length_tier: short
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
 central_theme_thread: "Liberality is a plain down-payment on loving unity — acting as though the boundary between my good and yours were already thinner than fear insists — while the quarrelsome agent defends a small self against a world it meets as adversary."
@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9) — no numbered Wright triplet covers this; anchor declined on a tested radius, see Bridges"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-08-24T18:32:02"
+last_qc_at: "2026-09-02T02:32:33"
 last_qc_outcome: "rewrote"
 ---
 
@@ -62,7 +62,7 @@ Loving unity is the goal toward which each limited agent computes — and libera
 - **PRS-02 in the Levin-tradition wiki** (cancer as defection from the body's cooperative morphogenetic community) — the empirical face of the same claim, seen from its failure side: cells cooperate into a body by holding a boundary of concern wider than the single cell, and cancer is that boundary collapsing back to one. PRS-40 names this register entry's own track record as what its criterion inherits. *Empirical, Confidence High.*
 - **PRS-01 + PRS-02 in the Fredrickson-tradition wiki** — PRS-01 carries the bond-building (micro-moments of positivity resonance cultivated into upward spirals of connection); PRS-02 carries the *measurability* the bullet leans on (positivity resonance correlated with vagal tone, oxytocin, neural phase-locking). Generosity generates these moments; quarreling starves them. *Empirical, both Confidence High.*
 - **Carroll PRS-01 (poetic naturalism)** — generosity as a real higher-level pattern, not an illusion atop physics. Verified at the entry body: higher-level descriptions are legitimate stories about one substrate, requiring no ontological addition. *Formal, Confidence High.*
-- **Wright — canonical work, anchor declined on a tested radius.** Giving as *koinonia* / the grace of participation (2 Cor 8–9). The 41-entry Wright register was searched this run for *koinonia*, *collection*, *generosity*, *giving*, *gift*, and *2 Corinthians 8*; the only hits are the Spirit-in-the-Psalter, cruciform suffering, ministerial gifts, resurrection-grounded hope, and self-forgiveness — none of them the claim. No numbered Wright triplet covers the grace of giving, so the anchor stays canonical rather than inventing an id. *Theological.*
+- **Wright — canonical work, anchor declined on a tested radius.** Giving as *koinonia* / the grace of participation (2 Cor 8–9). The Wright register was searched for *koinonia*, *collection*, *generosity*, *giving*, *gift*, and *2 Corinthians 8*; the only hits are the Spirit-in-the-Psalter, cruciform suffering, ministerial gifts, resurrection-grounded hope, and self-forgiveness — none of them the claim. **Re-tested 2026-09-02 against the register at 59 entries — it grew by 18 (PRS-42 to PRS-59, all added 2026-09-01) after the radius was first tested at 41, and the declination still holds: zero hits on *quarrel*, *strife*, *contention*, *liberality*, *almsgiving* or *generosity*.** No numbered Wright triplet covers the grace of giving, so the anchor stays canonical rather than inventing an id. *Theological.*
 - **Rohr PRS-15** (`traditions/rohr/prs_triplets.md`) — the ego/false-self frame named explicitly as what Jesus liberates from, and offered as the contemplative pair for the mind-monist account of the self as construction. The released hand is the mark of the self with nothing to defend. *Theological, Confidence High.*
 
 ## Where this leaves us

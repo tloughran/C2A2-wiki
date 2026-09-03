@@ -3,20 +3,21 @@ day: 228
 title: Christ's Ancestry (Contemporary)
 pairs_with: "[[Day-228 - Christ's Ancestry]]"
 length_target_words: 2200
-length_actual_words: 1496
-length_ratio_to_target: 0.680
+length_actual_words: 1774
+length_ratio_to_target: 0.806
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 morphological attractor formalism; PRS-06 continuum from bioelectricity to mind) — form imposed on/scaling through matter [metaphysical guardrail: primary]"
+  - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 morphological attractor formalism; PRS-06 continuum from bioelectricity to mind) — form imposed on/scaling through matter"
   - "master/cross_program_index.md (CROSS-006 FEP as substrate-independent self-organization; CROSS-008 as RESTATED 2026-08-10 — Levin and Stump share a rejection of the isolated unit of explanation; the earlier 'final causality frames Levin's teleology' claim is withdrawn)"
   - "traditions/friston/prs_triplets.md (PRS-03 morphogenesis as free-energy minimization) + traditions/fredrickson/prs_triplets.md (PRS-02 love as objective coupling mechanism) — the active principle as Love"
-  - "traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology) — Thomistic interlocutor receiving the monist reframe; + Rom 1:3, Gal 4:4-6 [Wright on the Pauline corpus]"
+  - "traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology) — Thomistic interlocutor receiving the monist reframe"
+  - "traditions/wright/prs_triplets.md (PRS-52 the Davidic-royal base sense of 'Son of God' as platform for the eternal-identity escalation, added 2026-09-01, Confidence Medium, audio unretrieved) + Rom 1:3, Gal 4:4-6"
 evidence_strength_summary: "Soul informing matter at conception / hylomorphism = theological-metaphysical (Aquinas's frame); form imposed on matter and scaling across levels ~ morphogenetic control + the morphological attractor formalism (Levin) = empirical-as-biology (planaria/xenobots), applied to the Incarnation by analogy (medium); morphogenesis as free-energy minimization (Friston, CROSS-006) = formal; final causality framing real teleology (Stump/CROSS-008) = theological/formal; the active principle attributed to the Spirit who is Love ~ love as objective coupling (Fredrickson PRS-02) = empirical-as-physiology applied speculatively (medium); 'descended from David... born of woman' = scriptural (Wright, strong); central-theme fit (form-bearing matter; the active principle as Love at the origin) = medium-strong."
 mind_first_reframe: "The informing of matter at conception is read as form-bearing matter — form as a real, causally efficacious organizer scaling onto matter (morphogenetics, Levin) — with the active principle, the Spirit who is Love, as the organizing coupling (guardrail: Levin/Friston/Fredrickson lead, Stump interlocutor)."
 central_theme_thread: "Form-bearing matter organized by Love places the loving-unity telos at the very origin of the Incarnation; the 'rounding out' of the modes of human origin reads as the whole completing the limited forms it contains."
 tags: [synthesis, day/228, theme/form-bearing-matter-and-love-as-active-principle]
-last_qc_at: "2026-08-19T00:21:09"
+last_qc_at: "2026-09-02T08:23:47"
 last_qc_outcome: "rewrote"
 ---
 
@@ -54,6 +55,7 @@ The project writes from "form as empirically real and scaling (Levin)" as one of
 - **The informing modeled formally ↔ morphogenesis as free-energy minimization toward an attractor** — Tom's PRS-form record of Friston, PRS-03; master CROSS-006. *Why:* a formalism for form coming to matter. Evidence: **formal**.
 - **Hylomorphism read as confirmed, not refuted, by modern biology** — Tom's PRS-form record of Stump, PRS-04; master CROSS-008 **as restated 2026-08-10** (the entry's original claim, that final causality frames Levin's teleology, was withdrawn). *Why:* the medieval frame and the empirical data converge on rejecting the isolated unit of explanation; the stronger grounding relation is this commentary's own philosophical reading. Evidence: **theological/formal, and one step weaker than the index once suggested**.
 - **The active principle as the Spirit-who-is-Love ↔ love as an objective coupling mechanism** — Tom's PRS-form record of Fredrickson, PRS-02. *Why:* the loving-unity telos as the organizing force at the origin of the Incarnation. Evidence: **empirical-as-physiology, applied speculatively (medium)**.
+- **The genealogical realism — Adam's race, David's line, "descended from David according to the flesh" ↔ the Davidic-royal sense of "Son of God" as the platform the eternal-identity claim escalates from, not a sense it displaces** — Rom 1:3; Tom's PRS-form record of Wright, PRS-52 (added 2026-09-01, Confidence **Medium**). *Why:* it is the register's own answer to why the ancestry is load-bearing rather than decorative — skipping the history is what makes the royal and the eternal readings look like rivals. **This day previously carried the Pauline corpus as a bare canonical reference with no numbered Wright anchor**; PRS-52 replaces it. Evidence: **scriptural-historical (medium)**, with the register's **audio-unretrieved** caveat: the shape and terminus of the move are attested by the episode description, Wright's argument for it is not.
 
 ## Where this leaves us
 

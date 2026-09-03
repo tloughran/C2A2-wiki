@@ -3,20 +3,20 @@ day: 229
 title: Christ's Conception (Contemporary)
 pairs_with: "[[Day-229 - Christ's Conception]]"
 length_target_words: 1500
-length_actual_words: 1521
-length_ratio_to_target: 1.014
+length_actual_words: 1686
+length_ratio_to_target: 1.124
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociated point of view) — one mind whole-and-bounded: comprehensor while inhabiting a limited body [metaphysical guardrail]"
   - "master/cross_program_index.md (CROSS-013 conscious-agent integration; CROSS-001 substrate-independence of consciousness)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor — form complete from the start, not gradually assembled) — reframing Aquinas's Aristotelian gradual-ensoulment [metaphysical guardrail]"
-  - "traditions/wright/prs_triplets.md (PRS-05) + traditions/rohr/prs_triplets.md (PRS-03 Universal Christ) + 1 John 3:2 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05) + traditions/rohr/prs_triplets.md (PRS-03 Universal Christ; PRS-49 the divine image objectively given at conception, likeness developed over time, added 2026-09-01, Confidence Medium) + 1 John 3:2"
 evidence_strength_summary: "Body perfectly formed and animated in the first instant; flesh assumed in conception not after = theological/formal (and Habash notes Aquinas's Aristotelian gradual-ensoulment for humanity generally is corrected by modern embryology); comprehensor from the first instant ~ dissociation-without-fragmentation, one mind whole-and-bounded (Kastrup, CROSS-013) = speculative-formal with empirical leg (medium); meritorious free choice from the first instant = theological; the beatific vision from conception (Mystici Corporis) + 1 John 3:2 = theological/scriptural; central-theme fit (the wayfarer-comprehensor keystone restated at the start of the human life) = strong."
 mind_first_reframe: "Comprehensor-from-the-first-instant is read as one mind beholding the whole while inhabiting the most limited, just-conceived body — dissociation-without-fragmentation (Kastrup) — with form present as an organizing attractor from the start, correcting Aquinas's Aristotelian embryology."
 central_theme_thread: "The wayfarer-and-comprehensor keystone (Day 220) at its sharpest: whole-vision and most-limited embodiment given together from instant one, with meritorious free choice as limited agency computing toward the good under grace."
 tags: [synthesis, day/229, theme/comprehensor-from-the-first-instant]
-last_qc_at: "2026-08-08T08:19:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T08:23:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 229 — Contemporary Parallel: The Whole-Seeing Perspective at the First Instant
@@ -53,6 +53,7 @@ This is the keystone figure (Day 220's comprehensor-and-wayfarer) pressed to its
 - **"Perfectly formed in the first instant" ↔ form present as an organizing attractor from the start, not assembled stepwise** — Tom's PRS-form record of Levin, PRS-03. *Why:* makes instant-perfection natural and vindicates the correction of Aquinas's Aristotelian embryology. Evidence: **empirical-as-biology, applied by analogy (medium)**.
 - **Mind fully present at the first instant, not awaiting bodily maturation ↔ substrate-independence of consciousness** — master CROSS-001. *Why:* the rational soul (mind) need not wait on the body to be whole. Evidence: **speculative-formal (medium)**.
 - **The beatific vision from conception ↔ "we shall see him as he is"; the cosmic comprehensor** — 1 John 3:2; Tom's PRS-form record of Rohr (PRS-03) and Wright (PRS-05). *Why:* the comprehensor at the first instant is already the one who will incorporate the many. Evidence: **theological/scriptural (strong on the scriptural anchor)**.
+- **Given whole at the first instant, yet with something still to be worked out over a life ↔ the divine image objectively given at conception, the likeness developed subjectively over time** — Tom's PRS-form record of Rohr, PRS-49 (added 2026-09-01, Confidence **Medium**). *Why:* this is the day's structure stated for creatures generally, which makes Christ's case the **limit** of a general pattern rather than a Christological exception — the given is constitutive from instant one and the operation on it is fidelity-improving, not additive. That also relieves the pressure a.4 feels about merit: effort and gift are not two contributions to apportion. Evidence: **theological/contemplative (medium)**, carrying the register's two named weak points — the identity claim behind it is asserted rather than argued, and one of its three supporting statements is a curated source its own author hedges.
 
 ## Where this leaves us
 

@@ -3,20 +3,20 @@ day: 227
 title: The Annunciation (Contemporary)
 pairs_with: "[[Day-227 - The Annunciation]]"
 length_target_words: 1500
-length_actual_words: 1489
-length_ratio_to_target: 0.993
+length_actual_words: 1622
+length_ratio_to_target: 1.081
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-02 faithful improvisation) — Mary's fiat as a covenantal-representative act on the community's behalf"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler) — free consent as an act under uncertainty, aligning to the One who sees more"
   - "traditions/fredrickson/prs_triplets.md (PRS-03 micro-moment resonance) — the Annunciation as a high-quality attuned encounter eliciting free assent"
-  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing) + Luke 1:26-38 [Wright primary on Christology III Q.1-59]"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing; PRS-50 self-donation as God's mode of being, added 2026-09-01, Confidence Medium, guest-voice caveat: Delio extracts under Rohr's endorsement) + Luke 1:26-38"
 evidence_strength_summary: "Mary's free act of faith ('more blessed in receiving the faith of Christ than in conceiving the flesh') received 'on behalf of humankind' = theological, and the central-theme keystone for free consent; consent under uncertainty to one who sees more ~ active inference (Friston) = speculative-formal (medium); the Annunciation as attuned encounter eliciting assent ~ positivity resonance (Fredrickson) = empirical-as-physiology applied speculatively (medium); the fiat as covenant-representative incorporation = scriptural (Wright, strong); central-theme fit (a limited perspective freely aligning to the whole, representatively for the community) = strong."
 mind_first_reframe: "Mary's fiat is read as the limit case of an agent freely committing its generative model to a more-seeing authority under uncertainty (active inference), elicited by a resonant encounter (Fredrickson), and given representatively for the community."
 central_theme_thread: "The free yes of one limited perspective to the One who sees the whole, given 'on behalf of humankind' — a covenant-act opening the incorporation of the many; the individual complement to Day 226's tradition-level development."
 tags: [synthesis, day/227, theme/free-consent-on-behalf-of-the-community]
-last_qc_at: "2026-08-08T08:19:30"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T08:23:47"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 227 — Contemporary Parallel: The Free Fiat, on Behalf of the Many
@@ -53,6 +53,7 @@ The project's banner is that the limited "work out [their] salvation in fear and
 - **The Annunciation eliciting assent rather than compelling it ↔ a high-quality attuned resonant encounter** — Tom's PRS-form record of Fredrickson, PRS-03. *Why:* the manner of the encounter frees rather than coerces the consent. Evidence: **empirical-as-physiology, applied speculatively (medium)**.
 - **The fiat as covenant-act on the community's behalf ↔ salvation as incorporation; faithful improvisation of the next act** — Luke 1:26-38; Tom's PRS-form record of Wright (PRS-05, PRS-02). *Why:* one limited perspective's free yes opens the incorporation of the many. Evidence: **scriptural (strong)**.
 - **Participatory faith in the unseen without demanding visibility ↔ non-dual knowing** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the knowing that can say yes to the unseen as real. Evidence: **theological/contemplative**.
+- **The descent asked for and consented to at the Annunciation ↔ self-donation as God's *mode of being* rather than a temporary posture** — Tom's PRS-form record of Rohr, PRS-50 (added 2026-09-01, Confidence **Medium**). *Why:* it reformulates the divine "need" that the fiat appears to presuppose as self-donative mode, which does not obviously require lack, so Mary's yes answers a giving rather than filling a gap. Evidence: **theological (medium)**, with the register's **guest-voice caveat carried explicitly**: the entry is built from Delio extracts with Rohr supplying selection and editorial framing, not authored argument — record it as what Rohr commends, not as Rohr's argued position.
 
 ## Where this leaves us
 

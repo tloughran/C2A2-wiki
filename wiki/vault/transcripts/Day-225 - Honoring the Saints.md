@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-225 - Honoring the Saints - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/225, pars/III, q/25 q/26]
-last_qc_at: "2026-08-08T08:19:18"
+last_qc_at: "2026-09-02T08:23:20"
 last_qc_outcome: "pass"
 ---
 

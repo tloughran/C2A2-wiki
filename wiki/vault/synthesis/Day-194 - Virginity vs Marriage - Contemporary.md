@@ -3,9 +3,8 @@ day: 194
 title: Virginity vs. Marriage (Contemporary)
 pairs_with: "[[Day-194 - Virginity vs Marriage]]"
 length_target_words: 2200
-length_actual_words: 1724
-length_ratio_to_target: 0.78
-length_note: "Length-light vs the 2200 medium-tier guideline but a complete PRS synthesis covering both Q.152 and Q.153 (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
+length_actual_words: 2096
+length_ratio_to_target: 0.953
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling; PRS-36 pathology as mathematical attention disorder / precision failure)"
@@ -14,11 +13,12 @@ karpathy_wiki_sources:
   - "refs/Karpathy wiki bridges.md (II-II Q.141-170 temperance -> fredrickson, friston)"
   - "traditions/wright/prs_triplets.md (PRS-11 new-creation hope as participation in God's arrival, not escape)"
   - "traditions/rohr/prs_triplets.md (PRS-15 liberation from the ego / false self)"
+  - "traditions/wright/prs_triplets.md (PRS-58 non-competitive model of desire, Confidence Medium, added 2026-09-01 — a STANDING TENSION with this commentary's scarce-bandwidth reading of Paul's 'divided'; carried in Bridges, not averaged)"
 evidence_strength_summary: "Virginity as resource-reallocation toward the whole + division-of-labor for collective good = conceptual/speculative with empirical multi-agent anchor; daughters-of-lust as corruption of the action-selection pipeline = mechanistic, medium; the excellence ranking and kingdom-orientation = theological."
 mind_first_reframe: "Virginity is a finite agent reallocating its scarce relational and attentional bandwidth from a divided, dyadic load toward undivided modeling of the whole; lust is the corruption of the entire perception-policy-action pipeline, terminating in self-love where loving unity should stand."
 central_theme_thread: "The central claim is exactly staged here: self-love as disordered end versus loving unity as the agent's telos. Virginity is the deliberate widening of perspective toward the whole; the daughters of lust are the step-by-step collapse of a perspective back onto itself."
 tags: [synthesis, day/194, theme/perspective-and-union]
-last_qc_at: "2026-08-16T14:26:22"
+last_qc_at: "2026-09-02T02:32:31"
 last_qc_outcome: "rewrote"
 ---
 
@@ -59,6 +59,7 @@ This is the day the project's central claim is staged most directly. The claim i
 - **Redirected, not renounced, love ↔ scale-bridging resonance** — the Fredrickson-tradition wiki (PRS-02, PRS-03). *Why:* the contemplative's coupling to the whole is the same mechanism as the dyad's, retuned to a wider object. Evidence: **empirical (mechanism), medium**.
 - **Daughters of lust ↔ corruption of the perception–policy–action pipeline** — the Friston-tradition wiki (PRS-04, the organism as continuous hypothesis-testing modeler; PRS-36, pathology as a *mathematical attention disorder* — failure to appropriately ignore uninformative prediction error, with delusion as type-1 and neglect as type-2). *Why:* blindness/rashness/thoughtlessness/inconstancy track apprehension→counsel→judgment→command stage-for-stage, and "blindness of mind" is precisely a precision failure at apprehension rather than a want of information. Evidence: **mechanistic, medium**.
 - **Undivided devotion ↔ new-creation vocation; self-love ↔ the false self** — the Wright-tradition wiki (PRS-11, hope as the renewal of creation through God's arrival, replacing "wait until you die" with participation now) and the Rohr-tradition wiki (PRS-15, the ego / false self named as the thing Jesus liberates from, bridging mind-monist ego-as-construct to scriptural soteriology). *Why:* the kingdom-orientation that virginity frees for — and the daughters' "despair of the future world" is the loss of exactly the new-creation hope PRS-11 names; the inward curl that lust ends in is PRS-15's false self. Evidence: **theological**.
+- **STANDING TENSION — the zero-sum premise this commentary's ascending argument runs on is contested inside the Wright register** — `traditions/wright/prs_triplets.md`, **PRS-58** (non-competitive model of desire, Confidence *Medium*, **added 2026-09-01, after this file's last review**). Its Resource treats vocation and ordinary pleasure as goods "that do not draw down a fixed quantity of love owed elsewhere," and its Solution dissolves the anxiety about divided affection "by rejecting the zero-sum premise rather than by softening the demand," adding that this is a claim about the structure of desire and not only pastoral comfort. The bandwidth-reallocation reading above is *explicitly* zero-sum: it takes Paul's "divided" as a real resource constraint and makes virginity the reallocation of a scarce quantity. If loves are not rivalrous, then comparative allocation is the wrong measurement and the ascending argument loses its mechanism — while Aquinas's a.4 ranking, which the synthesis had marked as theological rather than empirical, would stand on grounds this synthesis has not supplied. **Both cannot be right, and the tension is recorded rather than averaged.** Note also that PRS-58's own Problem line observes that the Wright register is "otherwise almost entirely eschatological and historical," which is the same gap the II-II declinations elsewhere in this vault keep testing true. Evidence: **theological; the conflict itself is structural**.
 
 ## Where this leaves us
 

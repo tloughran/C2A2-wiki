@@ -26,6 +26,8 @@ Austin Habash's Day 164 episode of the *Summa* podcast covers Aquinas's Secunda 
 
 > Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); Theologia → Theologiae; Habish → Habash; sukunda sukund → Secunda Secundae.
 
+## Transcript
+
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
 Theologiae in a way simple and insightful for anyone to understand. The Summa in a Year podcast is brought to you by Think Catholic. Taking two questions of the

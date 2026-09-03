@@ -4,9 +4,9 @@ video_id: wuOzx-lUhoo
 url: https://www.youtube.com/watch?v=wuOzx-lUhoo
 title: Schism
 summa_ref: II-II Q.38-39
-duration_seconds: 433
+duration_seconds: 444
 word_count: 1146
-raw_asr_word_count: 1149
+raw_asr_word_count: 1144
 length_tier: short
 segment_count: 176
 caption_kind: asr
@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-137 - Schism - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/137, pars/2, q/38-39]
-last_qc_at: "2026-08-25T10:30:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T12:24:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 137 — Schism
@@ -25,6 +25,8 @@ last_qc_outcome: "pass"
 *Questions 38 and 39 of the Secunda Secundae — on contention and on schism. Q.38: contention is contrariety of speech (as discord is contrariety of wills); it is mortal (a.1) when waged against the truth or out of hatred, venial when only immoderate with good intent, praiseworthy when against falsehood out of charity; and it is a daughter of vainglory (a.2), defending one's own opinion by words for the sake of one's own glory. Q.39: schism is a special sin (a.1), distinct from heresy — Augustine: the schismatic holds the same faith and worship yet takes pleasure in disunion, while the heretic holds another faith (hence the Orthodox are reckoned schismatic, not heretical, their orders valid); schism is a *lesser* sin than unbelief (a.2), being opposed to ecclesiastical unity — a participated good, the secondary object of charity (the neighbor) — rather than to God himself, the object of faith; schismatic bishops keep valid orders but lose jurisdiction (a.3, per Pope Urban II); and the fitting punishment is excommunication (a.4).*
 
 ---
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith. This is day 136. So let's get started. We're covering today questions 38 and 39 of the Secunda Secundae that is of contention and of schism. The
 

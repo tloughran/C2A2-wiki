@@ -3,20 +3,20 @@ day: 224
 title: Adopted Sons (Contemporary)
 pairs_with: "[[Day-224 - Adopted Sons]]"
 length_target_words: 1500
-length_actual_words: 1518
-length_ratio_to_target: 1.012
+length_actual_words: 1603
+length_ratio_to_target: 1.069
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 morphological attractor formalism) — being drawn toward a form/telos not yet realized [metaphysical guardrail]"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociated point of view) — heirship as the alter sharing in the life of the whole [metaphysical guardrail]"
   - "traditions/stump/prs_triplets.md (PRS-05 suffering toward the telos of union) — as Thomistic interlocutor receiving the monist reframe"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + traditions/rohr/prs_triplets.md (PRS-03 Universal Christ) + Rom 8:14-17, Eph 1:5 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-52 the Davidic-royal base sense of 'Son of God' as platform for the eternal-identity escalation, added 2026-09-01, Confidence Medium, audio unretrieved) + traditions/rohr/prs_triplets.md (PRS-03 Universal Christ) + Rom 8:14-17, Eph 1:5"
 evidence_strength_summary: "Grace divinizing the rational creature into an heir of God's own beatitude = theological; being elevated toward a beatitude not yet possessed ~ morphogenetic attraction toward a form not yet realized (Levin) = empirical-as-biology applied speculatively to grace (medium); heirship/sharing in the whole's life ~ dissociated alter participating in mind-at-large (Kastrup) = speculative-formal (medium); Christ as exemplar-and-cause of our predestination = theological/formal; adoption/heirship in Rom 8 + Eph 1 = scriptural (Wright, strong); central-theme fit (the limited elevated to share the whole's vision; the bridge figure grounding the limited's destiny) = strong."
 mind_first_reframe: "Adoption is read as the limited perspective drawn toward a beatitude not yet possessed (morphogenetic attraction to an unrealized form, Levin) and sharing the whole's life without losing individuation (dissociated alter, Kastrup); Christ the exemplar-and-cause."
 central_theme_thread: "The limited contained-in-the-whole named as inheritance: elevated by grace to share the whole's own vision, drawn toward the goal-state held exemplarily by the one who sees the whole."
 tags: [synthesis, day/224, theme/adoption-as-divinization]
-last_qc_at: "2026-08-08T08:19:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T08:23:20"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 224 — Contemporary Parallel: Adoption as Divinization, the Exemplar of the Limited
@@ -53,6 +53,7 @@ The project's claim is that "every limited perspective is contained in" the simp
 - **Heirship: sharing the whole's life without losing individuation ↔ the dissociated alter partaking of mind-at-large while remaining bounded** — Tom's PRS-form record of Kastrup, PRS-02. *Why:* the limited shares the inheritance without being absorbed. Evidence: **speculative-formal (medium)**.
 - **Christ as exemplar-and-cause of the limited's predestination ↔ salvation as incorporation into the people God indwells** — Rom 8:14-17, Eph 1:5; Tom's PRS-form record of Wright (PRS-05). *Why:* the bridge figure grounds and models the limited's destiny toward shared vision. Evidence: **scriptural/theological (strong)**.
 - **The whole trajectory intelligible through its telos of union ↔ suffering instrumentally permitted for the highest good of union** — Tom's PRS-form record of Stump (PRS-05). *Why:* the elevation is intelligible through its loving-unity end. Evidence: **theological**.
+- **Adoptive sonship as real participation, not a courtesy title ↔ the Davidic-royal sense of "Son of God" as the platform for the eternal-identity claim, not its rival** — Tom's PRS-form record of Wright, PRS-52 (added 2026-09-01, Confidence **Medium**). *Why:* the question of Q.23 is how creatures can share a sonship that is Christ's by nature. PRS-52 supplies the shape: the covenantal-royal sense and the eternal-identity sense are one escalating sequence rather than two competing senses, so adoption participates in the *same* title rather than borrowing a lower one. Evidence: **scriptural-historical (medium)** — the register records the audio as **unretrieved**, so the shape of the move is attested by the episode description and Wright's argument for it is not.
 
 ## Where this leaves us
 

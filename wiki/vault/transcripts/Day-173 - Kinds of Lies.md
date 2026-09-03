@@ -16,7 +16,7 @@ fetched_at: 2026-05-30
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-173 - Kinds of Lies - Contemporary]]"
 tags: [summa, day/173, pars/II-II, q/110-111]
-last_qc_at: "2026-08-24T20:27:39"
+last_qc_at: "2026-09-02T02:32:34"
 last_qc_outcome: "pass"
 ---
 

@@ -3,8 +3,8 @@ day: 177
 title: Covetousness (Contemporary)
 pairs_with: "[[Day-177 - Covetousness]]"
 length_target_words: 1500
-length_actual_words: 1590
-length_ratio_to_target: 1.06
+length_actual_words: 1621
+length_ratio_to_target: 1.081
 length_tier: short
 mind_first_reframe: "Under mind-monism, covetousness is the pathological contraction of the self to the boundary of its own holdings — a defection from the cooperative whole driven by a resource-estimate detached from real need — with prodigality as the opposite mis-calibration."
 central_theme_thread: "Covetousness is what happens when a perspective-limited agent mistakes scarce resources for the goal and answers its limitation by contracting rather than trusting the larger whole: fear and trembling curdled into a clenched fist."
@@ -14,10 +14,10 @@ karpathy_wiki_sources:
   - "traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence — poetic naturalism; meaning/value as real patterns not located in accumulation)"
   - "traditions/stump/prs_triplets.md (PRS-22 vices as predictable failure modes of the intellect-will system, Confidence Medium — the general form under which avarice is read as disordered love of possessing; no possession-specific entry exists in the register)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, source Falling Upward, Confidence High — the second-half-of-life passage; PRS-17 the obstacle-side letting-go the loving-unity telos requires, Medium-High; PRS-15 the False Self as what is let go, High)"
-  - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10; Col 3:5), treasure in heaven (Matt 6:19-21) — declined anchor, tested 2026-08-24 against the 41-entry Wright register on money/wealth/possession/treasure/mammon/riches/generosity/economic/property, nothing on topic"
+  - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10; Col 3:5), treasure in heaven (Matt 6:19-21) — declined anchor, tested 2026-08-24 at 41 entries and re-tested 2026-09-02 at 59 on money/wealth/possession/treasure/mammon/riches/generosity/economic/property plus covetousness/avarice/greed, nothing on topic"
 evidence_strength_summary: "Defection-from-the-whole is empirical-analogical (Levin); over-provisioning is formal (Friston); value-not-in-accumulation is formal (Carroll); covetousness-as-idolatry is theological (Wright, Rohr)."
 tags: [synthesis, day/177, theme/defection, theme/resource-estimate, q/118, q/119]
-last_qc_at: "2026-08-24T20:24:47"
+last_qc_at: "2026-09-02T02:32:34"
 last_qc_outcome: "rewrote"
 ---
 
@@ -63,7 +63,7 @@ The synthesis holds that conscious agents are individuated by the limits of thei
 - **Friston PRS-16 (expected free energy as the unified mathematics of risk + ambiguity) + PRS-14 (symptoms as locally optimal but globally suboptimal Bayesian attractors that resist update because updating itself increases short-term free energy)** — `traditions/friston/prs_triplets.md`. PRS-16 gives the reserve-estimate its formalism: risk as divergence between prior preferences and predicted outcomes, ambiguity as volatility of the predictive distribution, both collapsed into one optimization target — hoarding as that machinery run open-loop against modeled future surprise. PRS-14 supplies the self-trapping that explains why the covetous never reach "enough": the disposition is locally optimal and resists revision because revising it is itself costly. *Formal.*
 - **Carroll PRS-01 (poetic naturalism)** — the level-confusion of seeking agent-level meaning in accumulated objects. *Formal.*
 - **Stump PRS-22** (`traditions/stump/prs_triplets.md` — vices as predictable failure modes of the intellect-will system, Confidence Medium) — the general form under which avarice is read as disordered love of possessing. *Philosophical-psychological; the vice-specific application is this commentary's, since the register holds no possession or avarice entry.*
-- **Wright (1 Tim 6:10; Col 3:5; Matt 6:19–21)** — love of money as idolatry; treasure stored toward the new creation. *Theological.* **Declined anchor, tested 2026-08-24:** the 41-entry Wright register was searched for money / wealth / possession / treasure / mammon / riches / generosity / economic / property and returns nothing on topic, so the canonical anchor stands. Falsify by re-running those terms.
+- **Wright (1 Tim 6:10; Col 3:5; Matt 6:19–21)** — love of money as idolatry; treasure stored toward the new creation. *Theological.* **Declined anchor, tested 2026-08-24 and re-tested 2026-09-02:** the Wright register was searched for money / wealth / possession / treasure / mammon / riches / generosity / economic / property and returns nothing on topic, so the canonical anchor stands. The re-test matters because the register grew from 41 to 59 entries in between (PRS-42 to PRS-59, all added 2026-09-01), and the added terms *covetousness*, *avarice* and *greed* return nothing either. Falsify by re-running those terms.
 - **Rohr PRS-02 + PRS-17 + PRS-15** (`traditions/rohr/prs_triplets.md`) — PRS-02 (Confidence High, source *Falling Upward*) carries the order–disorder–reorder passage that is the second-half-of-life claim; PRS-17 (Medium-High) carries the letting-go the telos requires; PRS-15 (High) carries the False Self as what is let go. *Theological-contemplative.* The bullet previously named *Falling Upward* with no id: the work is registered, at PRS-02, and the release half it leans on lives at the two ego/false-self entries instead — so the halves are anchored separately rather than swept to the work's own entry.
 
 ## Where this leaves us

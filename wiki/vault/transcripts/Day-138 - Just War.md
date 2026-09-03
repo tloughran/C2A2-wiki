@@ -16,8 +16,8 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-138 - Just War - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/138, pars/2, q/40-41]
-last_qc_at: "2026-08-25T12:25:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T14:28:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 138 — Just War
@@ -25,6 +25,8 @@ last_qc_outcome: "pass"
 *Questions 40 and 41 of the Secunda Secundae — on war and on strife. Q.40: it is not always sinful to wage war (a.1) — a just war requires legitimate authority, a just cause (the avenging of wrongs, the restoring of what was unjustly seized), and right intention (the securing of peace, not aggrandizement or cruelty); "all who take the sword shall perish by the sword" condemns *unauthorized* vigilante violence (Peter in Matthew 26), not war as such; clerics may not fight (a.2), being deputed to a higher work — imaging Christ, who shed his own blood — though they may minister in battle; ambushes are lawful (a.3), for concealment is not lying, and even sacred doctrine conceals some things; and one may fight on holy days when necessary to protect life (a.4). Q.41: strife — a private, physical altercation declared by an inordinate will rather than public authority — is always sinful (a.1), mortal in the unjust aggressor though not in the one defending himself; and it is a daughter of anger (a.2), for the vengeful man wishes his victim to feel the hurt as vengeance.*
 
 ---
+
+## Transcript
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa Theologiae in a way simple and insightful for anyone to understand. The Summa podcast is brought to you by Think Catholic. Taking two questions of the Summa a day will seek to summarize St. Thomas's responses, discovering the brilliance of Aquinas and his Catholic faith is day 138. So let's get started. We're covering today questions 40 and 41 of the Secunda Secundae that is of war and of strife. The translation that I always
 

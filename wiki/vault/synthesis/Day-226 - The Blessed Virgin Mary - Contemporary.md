@@ -3,8 +3,8 @@ day: 226
 title: The Blessed Virgin Mary (Contemporary)
 pairs_with: "[[Day-226 - The Blessed Virgin Mary]]"
 length_target_words: 2200
-length_actual_words: 1678
-length_ratio_to_target: 0.763
+length_actual_words: 1652
+length_ratio_to_target: 0.751
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
@@ -16,8 +16,8 @@ evidence_strength_summary: "The development of the Immaculate Conception dogma (
 mind_first_reframe: "The development from Aquinas's view to the defined dogma is read as a tradition-constituted inquiry perceiving more of the whole than any single perspective — faithful improvisation (Wright) and a resolved epistemological crisis / order-disorder-reorder (Rohr, MacIntyre)."
 central_theme_thread: "The project's engine in miniature: the limited perspective here is Aquinas himself, exceeded not by a greater individual but by the tradition across time — the C2A2 wager that a tradition computes toward a fuller perception of the whole than its members hold."
 tags: [synthesis, day/226, theme/tradition-as-inquiry-perceiving-more-over-time]
-last_qc_at: "2026-08-08T08:19:26"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T08:23:21"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 226 — Contemporary Parallel: A Tradition Perceives More of the Whole Than Any One Perspective

@@ -15,8 +15,8 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-188 - Temperance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-07T06:35:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-02T16:22:09"
+last_qc_outcome: "rewrote"
 tags: [summa, day/188, pars/II, q/140]
 ---
 
@@ -25,6 +25,8 @@ tags: [summa, day/188, pars/II, q/140]
 > Typo cleanup (QC sweep 2026-06-12): Perence → Temperance (within the Aquinas quote, ST II-II Q.141 a.1 ad 3); aforce said → aforesaid (within the Aquinas quote, Q.141 a.3); Aquana → Aquinas; unchased → unchaste. Verified against raw ASR refetched 2026-06-12.
 
 *Aquinas closes fortitude with its precepts in the divine law (Q.140), then opens the treatise on temperance (Q.141). Temperance moderates the greatest bodily pleasures — those of touch, in food and procreation — bringing the concupiscible passions under reason. It is a cardinal virtue but not the greatest, since it regards the good of the individual rather than the many.*
+
+## Transcript
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 
