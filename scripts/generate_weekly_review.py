@@ -73,10 +73,31 @@ def read_pace_tracker(vault_dir):
                         "cumulative": int(m.group(4)),
                         "pars":       m.group(5).strip(),
                         "done":       "✅" in m.group(6),
+                        "status":     m.group(6).strip(),
                     })
     except OSError:
         pass
     return rows
+
+
+SERIES_COMPLETE_MARKER = "SERIES COMPLETE"
+
+
+def series_finale_row(rows, before_date):
+    """Return the completed Pace-tracker row that marks the end of the series, if
+    the series had already finished before `before_date`.
+
+    A week with no completed days has two very different causes, and they must not
+    be reported the same way:
+      - the series is over (there will never be another day)      -> nothing to review
+      - the series is running but nothing landed (ingestion broke) -> a real failure
+    Only the tracker's own SERIES COMPLETE marker distinguishes them. Returns None
+    when the series was still open during the week in question.
+    """
+    for r in rows:
+        if r["done"] and SERIES_COMPLETE_MARKER in r.get("status", "") and r["date"] < before_date:
+            return r
+    return None
 
 
 def read_qc_log(vault_dir):
@@ -382,12 +403,24 @@ def main():
     all_days = sorted(set(all_days))
 
     if not all_days:
-        # Fallback: include all completed rows up to today even if outside window
-        print(f"No completed days found in {week_label}. Including last 5 completed days.", file=sys.stderr)
-        done_all = [r for r in all_rows if r["done"]][-5:]
-        for r in done_all:
-            all_days.extend(range(r["day_start"], r["day_end"] + 1))
-        all_days = sorted(set(all_days))
+        # Never reprint an earlier week's days under this week's label: a review that
+        # silently republishes stale content is indistinguishable from a fresh one and
+        # went unnoticed for ten weeks. Say which of the two causes this is, and write
+        # nothing either way.
+        finale = series_finale_row(all_rows, monday)
+        if finale:
+            print(
+                f"{week_label}: no completed days — the series finished "
+                f"{finale['date']} at Day {finale['day_end']}. Nothing to review; "
+                f"no file written.")
+            return 0
+        print(
+            f"ERROR: {week_label} ({monday} – {sunday}) has no completed days in the "
+            f"Pace tracker, and the tracker carries no {SERIES_COMPLETE_MARKER!r} "
+            f"marker dated before this week. Either the week's days never landed or "
+            f"the tracker was not updated. Refusing to write a review.",
+            file=sys.stderr)
+        return 3
 
     pars_labels = list(dict.fromkeys(r["pars"] for r in done_rows)) if done_rows else ["—"]
     pars_label  = " → ".join(pars_labels)
@@ -418,7 +451,8 @@ def main():
     print(f"  Days:  {all_days}")
     print(f"  Words: {total_words:,}")
     print(f"  QC:    {'all pass' if all_pass else 'NEEDS ATTENTION'}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
