@@ -8,7 +8,7 @@ length_ratio_to_target: 1.113
 length_note: "Over ±10% only because of reviewer citation repair (2026-08-25): the barrier-removal claim was split off PRS-03 onto its true home PRS-49 with its evidence grade stated, and a frontmatter-declared but body-uncited Rohr source was given a real bridge. Body-recount verified at 1670; no prose was added for its own sake."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission; PRS-08 suffering reframed through narrative phenomenology) [Stump on the atonement — love and union, per bridges file]"
+  - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission / union as final cause — the record actually cited in the body at Q.48 a.2. PRS-08, suffering reframed through narrative phenomenology, was consulted as the nearest neighbour and is NOT cited in the body; it is listed as read, not as used — disclosed 2026-09-03 rather than forced into a bridge.) [Stump on the atonement — love and union, per bridges file]"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism, Conf High; PRS-49 HCN2 electroceutical repair despite persisting mutation, Conf High; PRS-09 principled framework for cognitive attribution across scales, Conf High)"
   - "traditions/hoffman/wiki.md (interface theory — action rendered at the interface)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Instrumental causality as nested agency = structural
 mind_first_reframe: "The passion's efficiency is read as nested agency all the way down: the principal cause works through an instrument that is itself a full agent, and salvation operates not by adding something missing but by removing the obstacles that block limited perspectives from an attractor already established — union already merited, blockage locally cleared."
 central_theme_thread: "Q.47's agents — Judas, the rulers, Pilate, the Father, Christ's own two wills — are perspectives at different scales acting in one event without collapsing into each other; the deicide verdict turns on what each limited perspective could and could not see, and culpability tracks the limitation each agent chose to keep."
 tags: [synthesis, day/236, theme/nested-agency]
-last_qc_at: "2026-08-25T18:27:59"
+last_qc_at: "2026-09-03T14:29:40"
 last_qc_outcome: "rewrote"
 ---
 
