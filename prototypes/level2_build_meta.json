@@ -3,7 +3,7 @@
  "pairs": 86,
  "span_first": "2026-04-03",
  "span_last": "2026-09-01",
- "stale_days": 1,
+ "stale_days": 2,
  "by_source": {
   "card": 1146,
   "finding": 147,

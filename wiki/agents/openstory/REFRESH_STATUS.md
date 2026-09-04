@@ -1,1 +1,1 @@
-2026-09-02T10:15Z  FAIL  step2b extract_agent_node_refs.py — non-zero exit (see stderr above) | DB age 1h
+2026-09-03T10:15Z  PASS  telemetry=2026-09-03/33 agents  node_edges=2026-09-03  | DB age 6h

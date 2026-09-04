@@ -226,6 +226,37 @@ Either way the disposition is unrecorded and the source files are gone.
 
 ---
 
+### DEFERRED-CONDITION LEAKAGE FLAG — 2026-09-04 — five retrieval assignments were created and closed on the same day, outside every tracker
+
+Raised by Agent 16. **Not resolvable by Agent 16 — it would require a fourth intake channel, which is Tom's call to open.** Fail-loud, per Rule 12.
+
+The 2026-09-02 ingest run (`inbox/PROCESSED_LOG.md`, section `## 2026-09-02 — C2A2 daily run (Phase 1 ingest)`) added a block that does not appear in the 08-29 or 09-01 sections: **"Decided with zero yield — locator and verification cards, each on its own instruction."** Five cards. Each was correctly refused a mint, and each carries an explicit, checkable, *future* condition:
+
+| Proposal | Condition left standing | Parked as |
+|---|---|---|
+| PROP-2026-08-12-031 `arkanihamed_pitp-2026-dualities-at-infinity` | "Promote nothing without watching the recording." "Re-file when the recording is watched." | arkanihamed Active Research Question 12 |
+| PROP-2026-08-26-002 `mcgilchrist_ralston-lecture2-recording-released` | "Verify the ID resolves before scheduling transcription" (video page returned HTTP 429, not retried); approval "schedules a listen" | mcgilchrist Active Research Question 21 |
+| PROP-2026-08-26-001 `mcgilchrist_ralston-lecture1-recording-released` | Candidate-01 is a verification assignment against PRS-61/62/63 | dated CORRECTION block, two tradition files |
+| PROP-2026-08-15-002 `mcgilchrist_commencement-2026-reopen` | Re-open condition met; "the content gate still stands" | prose in the ingestion table |
+| PROP-2026-08-23-002 `wolfram_ralston-mcgilchrist-mechanism-debate-recording` | Locator only — confidence "attaches to the existence and identity of the record, not to any claim about its contents" | master/cross_program_index.md |
+
+**The asymmetry is the finding.** On 2026-09-01 the same processor met one card of exactly this kind — PROP-2026-08-14-033, WATCH-002's twin — and *deliberately left it OPEN* in `scripts/ingest_ledger.py`, writing that "marking it closed would hide" the fact that work was blocked on obtaining a source. That was the right instinct and it is on the record. One day later, five comparable cards were **closed** as decided-with-zero-yield, and their conditions were written into tradition wiki tables and Active Research Questions instead.
+
+**Why that matters.** An Active Research Question has no cadence, no owner, and no resolution routing. Nothing re-reads it when the recording is posted. The ledger will not re-surface these ids, because they are closed. The tradition agent that filed them has moved on. So five conditions that would each qualify as a WATCH item — "recording watched", "video ID resolves", "audio heard" — now exist only as prose in a table that nothing polls. That is precisely the failure mode this agent was created to prevent, arriving through a door the agent brief does not have.
+
+**Agent 16 has created no watch items for these.** Its three intake channels are `needs_review/`, agent-exchange deferrals, and Tom's direct watch requests. Ingest-time deferrals are none of the three, and opening a fourth channel unilaterally is not this agent's call.
+
+**Options (Tom's):**
+  (a) **Open Channel 4 — ingest-time deferrals.** Agent 16 reads each daily `PROCESSED_LOG.md` section for zero-yield/locator/verification cards and opens a watch on each stated condition. Cost: roughly 5 new watch items today and a small number per ingest run thereafter; benefit: retrieval assignments stop depending on someone remembering an Active Research Question.
+  (b) **Keep the 09-01 convention instead** — instruct the ingest step to leave *any* card whose refusal names a future condition OPEN in the ledger, as it did for PROP-2026-08-14-033. Cheaper, no new agent surface, and it puts the tracking where the work is. Cost: the OPEN backlog stops being a clean work queue.
+  (c) **Accept the current state**, on the judgment that Active Research Questions are read by the tradition agents often enough to serve. If so, say so, and this flag closes.
+
+Note (a) and (b) are not exclusive, and (b) alone would have caught all five.
+
+**Scope note:** this flag does not touch the substance of any of the five decisions. Each refusal to mint was correct and well-reasoned; the ingest layer is doing careful work. The gap is in what happens to the condition *after* the refusal.
+
+---
+
 ## RESOLVED INDEX
 
 ### WATCH-001 — RESOLVED 2026-05-12
@@ -5109,3 +5140,46 @@ The 2026-09-01 daily ingestion run wrote to `inbox/PROCESSED_LOG.md` at 22:00, i
 **Census this run:** `pending/` 15 · `approved/` 378 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 18 files (latest `2026-08-27_decisions.md`) · `PROCESSED_LOG.md` 877 lines.
 
 **Agent 16 Status:** Operational. Intake clean, no checks due, two off-cadence state changes recorded, two stale flags standing on Tom's ruling. Nothing was moved, marked, cancelled or re-cadenced — all four remain Tom's calls.
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-04
+
+**Run-continuity note first: there is no 2026-09-03 run summary in this file, and the 2026-09-03 Cowork summary does not record an Agent 16 run.** The previous summary is 2026-09-02. Treating 09-03 as a **missed run**, not an idle one. Nothing was lost by it — both active items are weekly-cadence and were not due on either day — but the gap is recorded rather than papered over, and today's scan was widened to cover 09-02 through 09-04 in one pass.
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: 1 file, `2026-04-21_carroll_singer-mindscape-351.md` — carries `[TRACKED-16: 2026-05-05]`, `status: superseded`, WATCH-001 resolved 2026-05-12. It is a tombstone. **0 new items, 0 untracked.**
+- Channel 2 (agent-exchange deferrals): no `DEFERRED-HYPOTHESIS` blocks anywhere in intake. Channel still unexercised since it was raised on 08-23.
+- Channel 3 (human watch requests): none. Note the **2026-09-03 Chat→Cowork sync failed outright** (`architecture/daily_sync/chat_to_cowork/2026-09-03_chat_summary.md`: Claude-in-Chrome not connected; browser-pane navigation to claude.ai denied). So if Tom voiced a watch request in Chat on 09-03, this agent has no way to have seen it. Recorded as a known blind spot for that date, not as an absence.
+
+**Condition checks (Step 3): 0 due.** WATCH-002 and WATCH-003 are both weekly and were last checked 2026-09-01; next due **2026-09-08**. No page was fetched, no counter incremented, no check logged against either item.
+
+**State changes since the 09-02 run (1 material, and it does not touch either watch):**
+The 2026-09-02 ingest run wrote `inbox/PROCESSED_LOG.md` at 22:11 (833 → 949 lines), after that day's Agent 16 run. Checked directly for both watch slugs: `who-is-this-god` and `beatitudes-week-two` appear only in the 09-01 section, unchanged. **Neither active watch moved.** PROP-2026-08-14-033 remains ATTEMPTED-NOT-DECIDED and OPEN in the ledger; PROP-2026-08-12-041 remains ingested as rohr PRS-63/64/65.
+
+**New flag raised this run: DEFERRED-CONDITION LEAKAGE — see FLAGS above.** The 09-02 ingest introduced a block absent from the 08-29 and 09-01 runs: five locator/verification cards "decided with zero yield," each correctly refused a mint, each leaving an explicit future condition ("promote nothing without watching the recording", "verify the ID resolves before scheduling transcription", "the content gate still stands"), and each **closed** in the ledger with its condition parked in an Active Research Question or a tradition-wiki table. One day earlier the same processor deliberately left a comparable card OPEN precisely so the blocked work would not be hidden. Five conditions now sit where nothing polls them. Agent 16 has opened no watch items for them — that would be a fourth intake channel, which is Tom's call — but it will not let the divergence go unrecorded. Three options are set out in the flag; option (b) alone would have caught all five and costs no new agent surface.
+
+**Metric error worth correcting at source:** `architecture/daily_sync/cowork_to_chat/2026-09-03_cowork_summary.md` line 104 reports "Deferred items watching: **2,188** in `deferred/watch_list.md`". The true figure is **2**. The 2,188 is almost certainly a line or token count of this file rather than a count of WATCHING items — which is itself a symptom of the file's size, since a 5,000-line watch list invites exactly that mistake. Agent 16 has not edited another agent's summary; flagging for whoever owns the Cowork→Chat metric block.
+
+**Stale items (Step 4): 2, both flagged 2026-08-25, neither newly stale, no counters moved.** WATCH-002 stands at 7 checks, WATCH-003 at 8. Recommendations unchanged from 09-02: WATCH-003 needs one line from Tom on the INTEGRITY FLAG's audit question and then archives; WATCH-002 needs either one attended session (to exercise the caption/KSBJ/`@BetweenBeliefsofficial` routes, which the 09-01 addendum established are blocked by *site approval*, not capability) or a ruling to extend cadence to monthly or close.
+
+**Housekeeping, now overdue rather than cosmetic:** this file is **570 KB / ~5,100 lines**, of which the RUN LOG is roughly 95%, holding ~100 daily summaries back to 2026-04-10 for 2 active items. Run-log archival has been on the open list since 08-29. Today it produced its first observable harm — a downstream agent reporting 2,188 watching items. Recommend splitting the RUN LOG to `deferred/run_log_2026-Q2.md` and `run_log_2026-Q3.md`, leaving ACTIVE ITEMS, FLAGS and RESOLVED INDEX in `watch_list.md`. Agent 16 has not done this unilaterally because the file is read by other agents and the split changes their target.
+
+**Census this run:** `pending/` **20** (+8 since 09-02: 3 Hawkins, 2 Kastrup, 2 McGilchrist, 1 Carroll, all filed 09-01/09-02) · `approved/` 378 · `denied/` 1 · `needs_review/` 1 · `review/archive/` **18** files, latest still `2026-08-27_decisions.md` · `PROCESSED_LOG.md` 949 lines. **Review-pass gap: 8 days.**
+
+**Agent 16 Status:** Operational. No checks due, no intake in any channel, nothing moved, marked, cancelled or re-cadenced. One missed run recorded, one new systemic flag raised, one downstream metric error flagged.
+
+**Open for Tom, in priority order:**
+1. **The new DEFERRED-CONDITION LEAKAGE FLAG** — five retrieval assignments closed on 09-02 with no tracker. Option (b) is a one-line instruction to the ingest step and would have caught all five.
+2. **One attended Cowork session settles WATCH-002's retrieval question** — approve the site once and the caption, KSBJ and `@BetweenBeliefsofficial` routes all open. Minutes of Tom's time against weeks of agent checking.
+3. **Rule on the INTEGRITY FLAG** — one line closes WATCH-003 immediately and resolves WATCH-002's audit half.
+4. **Rule on the INGESTION-RISK FLAG** — open-but-quiescent since the 09-01 ingest refused the card; the `status: pending`-in-`approved/` inconsistency on both copies is still untouched.
+5. **The systemic fix** — exclude `content_verified: false` items from en-bloc unread approval.
+6. **Run-log archival** — now producing downstream errors, not just bulk.
+7. **The Channel 2 question**, standing since 08-23.
+8. **The needs_review tombstone deletion.**
+9. **Chat→Cowork sync is broken** (09-03 scrape failed; Chrome extension not connected) — Channel 3 is deaf until it is fixed.
+
+---
+
+*Run completed 2026-09-04.*

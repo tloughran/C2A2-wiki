@@ -3,23 +3,23 @@
   "generated_from": "extract_agent_node_refs.py",
   "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
   "vault": "/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki",
-  "canonical_nodes": 4885,
+  "canonical_nodes": 4902,
   "roster_size": 33,
   "roster_captured": 26,
   "human_node": true,
-  "human_sessions": 1000,
+  "human_sessions": 1007,
   "unattributed_continuations": 115,
-  "sessions_mapped": 3528,
-  "events_scanned": 194432,
+  "sessions_mapped": 3576,
+  "events_scanned": 197792,
   "session_resolution": {
-   "no_label": 937,
-   "unmatched": 178,
+   "no_label": 942,
+   "unmatched": 180,
    "excluded": 43,
-   "exact": 2371,
-   "prefix": 157
+   "exact": 2410,
+   "prefix": 159
   },
   "layers": {
-   "coref_substrate": 4833,
+   "coref_substrate": 4915,
    "coref_projected": 278,
    "flow": 52
   },
@@ -33,9 +33,9 @@
    "group": "agents",
    "kind": "human",
    "category": "human",
-   "sessions": 998,
-   "events": 77799,
-   "node_refs": 1522
+   "sessions": 1005,
+   "events": 78830,
+   "node_refs": 1539
   },
   {
    "id": "agents/summa-qc-sweep",
@@ -44,9 +44,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 521,
-   "events": 33619,
-   "node_refs": 608
+   "sessions": 531,
+   "events": 34329,
+   "node_refs": 609
   },
   {
    "id": "agents/summa-commentary-reviewer",
@@ -55,9 +55,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 516,
-   "events": 29548,
-   "node_refs": 464
+   "sessions": 527,
+   "events": 30543,
+   "node_refs": 474
   },
   {
    "id": "agents/c2a2-lit-search-pipeline",
@@ -66,9 +66,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 103,
-   "events": 7942,
-   "node_refs": 658
+   "sessions": 104,
+   "events": 8004,
+   "node_refs": 664
   },
   {
    "id": "agents/c2a2-self-awareness-daily",
@@ -77,8 +77,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 103,
-   "events": 6587,
+   "sessions": 104,
+   "events": 6603,
    "node_refs": 321
   },
   {
@@ -88,9 +88,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 97,
-   "events": 5931,
-   "node_refs": 119
+   "sessions": 98,
+   "events": 6058,
+   "node_refs": 148
   },
   {
    "id": "agents/summa-2026-nightly-verification",
@@ -99,9 +99,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 93,
-   "events": 5072,
-   "node_refs": 86
+   "sessions": 94,
+   "events": 5152,
+   "node_refs": 89
   },
   {
    "id": "agents/summa-2026-daily-batch",
@@ -110,8 +110,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "project",
-   "sessions": 89,
-   "events": 4038,
+   "sessions": 90,
+   "events": 4048,
    "node_refs": 63
   },
   {
@@ -121,9 +121,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 90,
-   "events": 3795,
-   "node_refs": 287
+   "sessions": 92,
+   "events": 3894,
+   "node_refs": 296
   },
   {
    "id": "agents/c2a2-deferred-action-monitor",
@@ -132,8 +132,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "c2a2-pipeline",
-   "sessions": 98,
-   "events": 2519,
+   "sessions": 99,
+   "events": 2548,
    "node_refs": 120
   },
   {
@@ -143,8 +143,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 76,
-   "events": 2444,
+   "sessions": 78,
+   "events": 2477,
    "node_refs": 20
   },
   {
@@ -154,9 +154,9 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "bridge",
-   "sessions": 99,
-   "events": 2032,
-   "node_refs": 76
+   "sessions": 101,
+   "events": 2087,
+   "node_refs": 78
   },
   {
    "id": "agents/morning-system-health",
@@ -165,8 +165,8 @@
    "group": "agents",
    "kind": "scheduled",
    "category": "infrastructure",
-   "sessions": 104,
-   "events": 1221,
+   "sessions": 105,
+   "events": 1227,
    "node_refs": 4
   },
   {
@@ -203,6 +203,17 @@
    "node_refs": 43
   },
   {
+   "id": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "taskId": "c2a2-agent-mcgilchrist-kastrup",
+   "label": "c2a2-agent-mcgilchrist-kastrup",
+   "group": "agents",
+   "kind": "scheduled",
+   "category": "c2a2-thinker",
+   "sessions": 16,
+   "events": 932,
+   "node_refs": 43
+  },
+  {
    "id": "agents/c2a2-agent-wolfram",
    "taskId": "c2a2-agent-wolfram",
    "label": "c2a2-agent-wolfram",
@@ -214,15 +225,15 @@
    "node_refs": 19
   },
   {
-   "id": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "taskId": "c2a2-agent-mcgilchrist-kastrup",
-   "label": "c2a2-agent-mcgilchrist-kastrup",
+   "id": "agents/scheduler-health-check",
+   "taskId": "scheduler-health-check",
+   "label": "scheduler-health-check",
    "group": "agents",
    "kind": "scheduled",
-   "category": "c2a2-thinker",
-   "sessions": 15,
-   "events": 868,
-   "node_refs": 38
+   "category": "infrastructure",
+   "sessions": 94,
+   "events": 839,
+   "node_refs": 5
   },
   {
    "id": "agents/c2a2-agent-stump-fredrickson",
@@ -234,17 +245,6 @@
    "sessions": 17,
    "events": 834,
    "node_refs": 17
-  },
-  {
-   "id": "agents/scheduler-health-check",
-   "taskId": "scheduler-health-check",
-   "label": "scheduler-health-check",
-   "group": "agents",
-   "kind": "scheduled",
-   "category": "infrastructure",
-   "sessions": 92,
-   "events": 829,
-   "node_refs": 5
   },
   {
    "id": "agents/c2a2-agent-hawkins-hoffman",
@@ -543,7 +543,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 453
+   "weight": 455
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -623,27 +623,27 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/31_cortical_column_architecture.md",
-   "weight": 27
+   "weight": 29
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/32_lateral_channels.md",
-   "weight": 10
+   "weight": 12
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/33_active_inquiry.md",
-   "weight": 9
+   "weight": 11
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/34_prs_displacement.md",
-   "weight": 9
+   "weight": 11
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/35_maturity_model.md",
-   "weight": 13
+   "weight": 16
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -914,6 +914,21 @@
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/kuhnian_evidence_framework.md",
    "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-006_against_cycle5.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-008_against.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-008_against_cycle5.md",
+   "weight": 3
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -1549,6 +1564,16 @@
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/against/ASSUMPTION-968_against.md",
    "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-001_against.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-001_against_cycle5.md",
+   "weight": 3
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -2847,6 +2872,21 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-006_for_cycle5.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-008_for.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-008_for_cycle5.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/for/ASSUMPTION-009_recheck-2026-07-05_for.md",
    "weight": 3
   },
@@ -3469,6 +3509,16 @@
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/lit_search_results/for/ASSUMPTION-968_for.md",
    "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-001_for.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-001_for_cycle5.md",
+   "weight": 4
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4748,7 +4798,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/metrics/bootstrap_backlink_census_2026-06-28.md",
-   "weight": 16
+   "weight": 17
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4768,7 +4818,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/narrative_prs_connectome.md",
-   "weight": 5
+   "weight": 7
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4778,7 +4828,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "architecture/pathways.md",
-   "weight": 139
+   "weight": 144
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -4953,7 +5003,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 73
+   "weight": 77
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6118,7 +6168,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "master/cross_program_index.md",
-   "weight": 410
+   "weight": 431
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6143,7 +6193,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "review/C2A2_redesign_proposal_2026-04-09_revised.md",
-   "weight": 56
+   "weight": 58
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6288,17 +6338,17 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/fredrickson/prs_triplets.md",
-   "weight": 62
+   "weight": 67
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/fredrickson/wiki.md",
-   "weight": 75
+   "weight": 76
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/friston/prs_triplets.md",
-   "weight": 130
+   "weight": 138
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6343,7 +6393,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/levin/wiki.md",
-   "weight": 98
+   "weight": 100
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6353,7 +6403,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/loughran/prs_triplets.md",
-   "weight": 9
+   "weight": 13
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6368,17 +6418,17 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/mcgilchrist/prs_triplets.md",
-   "weight": 76
+   "weight": 77
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/mcgilchrist/wiki.md",
-   "weight": 76
+   "weight": 78
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 72
+   "weight": 76
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6388,7 +6438,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/stump/prs_triplets.md",
-   "weight": 89
+   "weight": 96
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6408,12 +6458,12 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1831
+   "weight": 1875
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "traditions/wright/wiki.md",
-   "weight": 1112
+   "weight": 1118
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6548,7 +6598,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "vault/synthesis/Day-026 - The Angels - Contemporary.md",
-   "weight": 4
+   "weight": 12
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6862,8 +6912,13 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "vault/synthesis/Day-118 - Volume 3 - Contemporary.md",
+   "weight": 14
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "vault/synthesis/Day-119 - The Act of Faith - Contemporary.md",
-   "weight": 5
+   "weight": 17
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -6907,6 +6962,11 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "vault/synthesis/Day-133 - Mercy and Beneficence - Contemporary.md",
+   "weight": 12
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "vault/synthesis/Day-134 - Required Almsgiving - Contemporary.md",
    "weight": 4
   },
@@ -6922,6 +6982,11 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "vault/synthesis/Day-139 - Scandal - Contemporary.md",
+   "weight": 8
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "vault/synthesis/Day-143 - Kinds of Prudence - Contemporary.md",
    "weight": 8
   },
@@ -6934,6 +6999,11 @@
    "source": "agents/H-Admin-Interactive",
    "target": "vault/synthesis/Day-146 - Right and Just - Contemporary.md",
    "weight": 5
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "vault/synthesis/Day-148 - Judgement - Contemporary.md",
+   "weight": 14
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7388,7 +7458,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "vault/transcripts/Day-026 - The Angels.md",
-   "weight": 4
+   "weight": 6
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7597,8 +7667,13 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "vault/transcripts/Day-118 - Volume 3.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "vault/transcripts/Day-119 - The Act of Faith.md",
-   "weight": 4
+   "weight": 6
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7627,13 +7702,18 @@
   },
   {
    "source": "agents/H-Admin-Interactive",
+   "target": "vault/transcripts/Day-133 - Mercy and Beneficence.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
    "target": "vault/transcripts/Day-138 - Just War.md",
    "weight": 6
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "vault/transcripts/Day-139 - Scandal.md",
-   "weight": 2
+   "weight": 4
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7654,6 +7734,11 @@
    "source": "agents/H-Admin-Interactive",
    "target": "vault/transcripts/Day-146 - Right and Just.md",
    "weight": 2
+  },
+  {
+   "source": "agents/H-Admin-Interactive",
+   "target": "vault/transcripts/Day-148 - Judgement.md",
+   "weight": 3
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -7963,7 +8048,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "flags/for_pattern_detector.md",
-   "weight": 378
+   "weight": 387
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -7973,7 +8058,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 252
+   "weight": 259
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8223,17 +8308,27 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-12_arkanihamed_pitp-2026-dualities-at-infinity.md",
-   "weight": 1
+   "weight": 4
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md",
-   "weight": 1
+   "weight": 3
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-12_friston_integrative-complexity-gueststream.md",
    "weight": 1
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-12_kastrup_agency-gods-point-of-view.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-12_kastrup_objective-vs-subjective-idealism.md",
+   "weight": 2
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8248,7 +8343,22 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-13_fredrickson_keep-social-trial-registration.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-14_levin_diverse-intelligence-talk-recording.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-14_levin_free-lunches-agential-gifts.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-14_levin_mental-health-tolchinsky-weiss-fields.md",
+   "weight": 3
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8263,6 +8373,96 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-15_mcgilchrist_commencement-2026-reopen.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-15_wolfram_avocational-science-ruliology-onramp.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_arkanihamed_hydrotope-water-wave-scattering.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_friston_active-inference-test-time-scaling-law.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_friston_adaptive-nature-confirmation-bias.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_friston_renormalising-generative-models.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_levin_causal-emergence-before-self-replicators.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-16_levin_limbomorphs.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-17_friston_designing-ecosystems-of-intelligence.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_carroll_mindscape-365-cardoso-black-holes-special.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_friston_hippocampal-ripples-predicted-uncertainty.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_friston_let-there-be-information-cultural-evolution.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_friston_rosetta-stone-neurophenomenology.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_levin_flim-long-distance-bioelectric-patterns.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_levin_planarian-habituation-transcriptional-profiling.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_levin_trained-planaria-memory-through-regeneration.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-25_stump_good-of-forgiveness-oup-chapter.md",
    "weight": 2
   },
   {
@@ -8273,12 +8473,32 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_kastrup_goel-quantum-effects-living-systems.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_kastrup_levin-mind-is-everywhere-2026.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_mcgilchrist_ralston-lecture1-recording-released.md",
    "weight": 1
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/2026-08-26_mcgilchrist_ralston-lecture2-recording-released.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 505
+   "weight": 511
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8317,8 +8537,13 @@
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
+   "target": "inbox/proposals/pending/2026-09-02_carroll_mindscape-366-al-khalili-time.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 493
+   "weight": 506
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8328,7 +8553,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "master/cross_program_index.md",
-   "weight": 268
+   "weight": 284
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8394,6 +8619,11 @@
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "review/archive/2026-08-27_decisions.md",
    "weight": 2
+  },
+  {
+   "source": "agents/c282-wiki-agent-daily-run",
+   "target": "synthesis/fredrickson_levin_bridge.md",
+   "weight": 1
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8473,12 +8703,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/levin/wiki.md",
-   "weight": 9
+   "weight": 10
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/mcgilchrist/prs_triplets.md",
-   "weight": 6
+   "weight": 7
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8508,7 +8738,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/wolfram/prs_triplets.md",
-   "weight": 3
+   "weight": 4
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -8518,12 +8748,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 267
+   "weight": 297
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "traditions/wright/wiki.md",
-   "weight": 150
+   "weight": 159
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -9028,12 +9258,12 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/05_mcgilchrist_agent.md",
-   "weight": 41
+   "weight": 45
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/11_kastrup_agent.md",
-   "weight": 39
+   "weight": 43
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -9187,8 +9417,33 @@
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-09-02_kastrup_levin-redefining-rules-of-life.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-09-02_mcgilchrist_can-you-still-be-human.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
+   "target": "inbox/proposals/pending/2026-09-02_mcgilchrist_unherd-live-can-ai-rival-human-soul.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/kastrup/prs_triplets.md",
-   "weight": 12
+   "weight": 13
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -9198,7 +9453,7 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/mcgilchrist/prs_triplets.md",
-   "weight": 13
+   "weight": 14
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -9208,12 +9463,12 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 44
+   "weight": 51
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "traditions/wright/wiki.md",
-   "weight": 39
+   "weight": 45
   },
   {
    "source": "agents/c2a2-agent-stump-fredrickson",
@@ -9593,7 +9848,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "agents/16_deferred_action_monitor_agent.md",
-   "weight": 307
+   "weight": 311
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -9618,7 +9873,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "deferred/watch_list.md",
-   "weight": 930
+   "weight": 947
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -9628,7 +9883,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/2026-04-21_carroll_singer-mindscape-351.md",
-   "weight": 184
+   "weight": 185
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -10028,7 +10283,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/2026-08-14_wright_who-is-this-god-admirato.md",
-   "weight": 31
+   "weight": 33
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -10078,7 +10333,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 28
+   "weight": 43
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -10103,12 +10358,12 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/proposals/approved/2026-08-14_wright_who-is-this-god-admirato.md",
-   "weight": 8
+   "weight": 10
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "inbox/proposals/needs_review/2026-04-21_carroll_singer-mindscape-351.md",
-   "weight": 74
+   "weight": 76
   },
   {
    "source": "agents/c2a2-deferred-action-monitor",
@@ -10188,7 +10443,7 @@
   {
    "source": "agents/c2a2-deferred-action-monitor",
    "target": "review/archive/2026-08-27_decisions.md",
-   "weight": 19
+   "weight": 21
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10198,7 +10453,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 53
+   "weight": 55
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10208,12 +10463,32 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/31_cortical_column_architecture.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/32_lateral_channels.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/33_active_inquiry.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/34_prs_displacement.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/35_maturity_model.md",
    "weight": 2
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/assumptions.md",
-   "weight": 71
+   "weight": 76
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -10677,6 +10952,16 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-09-01_chat_summary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-09-02_chat_summary.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/daily_sync/cowork_to_chat/2026-04-13_cowork_summary.md",
    "weight": 6
   },
@@ -11027,8 +11312,18 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/cowork_to_chat/2026-09-01_cowork_summary.md",
+   "weight": 9
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "architecture/daily_sync/cowork_to_chat/2026-09-02_cowork_summary.md",
+   "weight": 5
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/decisions.md",
-   "weight": 237
+   "weight": 246
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11043,7 +11338,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/for_lit_search.md",
-   "weight": 385
+   "weight": 404
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11118,7 +11413,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/lit_search_returns.md",
-   "weight": 108
+   "weight": 112
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11253,27 +11548,27 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/monitor_queue.md",
-   "weight": 103
+   "weight": 108
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/open_questions.md",
-   "weight": 229
+   "weight": 239
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/pathways.md",
-   "weight": 9
+   "weight": 16
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/presumptions.md",
-   "weight": 56
+   "weight": 61
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/revision_flags.md",
-   "weight": 119
+   "weight": 126
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11333,7 +11628,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "architecture/validated_premises.md",
-   "weight": 139
+   "weight": 144
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11363,17 +11658,17 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "deferred/watch_list.md",
-   "weight": 293
+   "weight": 305
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "flags/for_pattern_detector.md",
-   "weight": 6
+   "weight": 8
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 7
+   "weight": 11
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11508,7 +11803,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "inbox/PROCESSED_LOG.md",
-   "weight": 10
+   "weight": 15
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11533,12 +11828,12 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 31
+   "weight": 35
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "master/cross_program_index.md",
-   "weight": 11
+   "weight": 14
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11592,6 +11887,11 @@
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
+   "target": "traditions/rohr/prs_triplets.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "traditions/stump/prs_triplets.md",
    "weight": 6
   },
@@ -11603,12 +11903,12 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 4
+   "weight": 11
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "traditions/wright/wiki.md",
-   "weight": 5
+   "weight": 8
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -11638,17 +11938,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15a_lit_search_for_agent.md",
-   "weight": 317
+   "weight": 320
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15b_lit_search_against_agent.md",
-   "weight": 322
+   "weight": 325
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "agents/15c_net_evaluator_agent.md",
-   "weight": 303
+   "weight": 306
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -11693,12 +11993,22 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/for_lit_search.md",
-   "weight": 1713
+   "weight": 1733
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/against/ASSUMPTION-003_against.md",
    "weight": 3
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-006_against_cycle5.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/ASSUMPTION-008_against_cycle5.md",
+   "weight": 1
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -12198,6 +12508,11 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/against/ASSUMPTION-966_against.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/against/PRESUMPTION-001_against_cycle5.md",
    "weight": 1
   },
   {
@@ -13297,6 +13612,16 @@
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-006_for_cycle5.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/for/ASSUMPTION-008_for_cycle5.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/for/ASSUMPTION-013_for.md",
    "weight": 1
   },
@@ -13824,6 +14149,11 @@
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_results/for/ASSUMPTION-966_for.md",
    "weight": 1
+  },
+  {
+   "source": "agents/c2a2-lit-search-pipeline",
+   "target": "architecture/lit_search_results/for/PRESUMPTION-001_for_cycle5.md",
+   "weight": 2
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -14843,12 +15173,12 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/lit_search_returns.md",
-   "weight": 787
+   "weight": 793
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/monitor_queue.md",
-   "weight": 615
+   "weight": 625
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -14858,17 +15188,17 @@
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/provenance_protocol.md",
-   "weight": 294
+   "weight": 296
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/revision_flags.md",
-   "weight": 534
+   "weight": 543
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
    "target": "architecture/validated_premises.md",
-   "weight": 578
+   "weight": 583
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -15288,6 +15618,16 @@
   {
    "source": "agents/c2a2-morning-chat-scrape",
    "target": "architecture/daily_sync/chat_to_cowork/2026-08-31_chat_summary.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-morning-chat-scrape",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-09-01_chat_summary.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/c2a2-morning-chat-scrape",
+   "target": "architecture/daily_sync/chat_to_cowork/2026-09-02_chat_summary.md",
    "weight": 3
   },
   {
@@ -15328,12 +15668,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14a_assumption_extractor_agent.md",
-   "weight": 289
+   "weight": 291
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "agents/14b_presumption_detector_agent.md",
-   "weight": 310
+   "weight": 314
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -15363,7 +15703,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/assumptions.md",
-   "weight": 847
+   "weight": 849
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -16193,7 +16533,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/decisions.md",
-   "weight": 537
+   "weight": 540
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -16208,7 +16548,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/for_lit_search.md",
-   "weight": 784
+   "weight": 786
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -16698,7 +17038,7 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/open_questions.md",
-   "weight": 663
+   "weight": 666
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -16708,12 +17048,12 @@
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/presumptions.md",
-   "weight": 864
+   "weight": 866
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
    "target": "architecture/provenance_protocol.md",
-   "weight": 235
+   "weight": 237
   },
   {
    "source": "agents/c2a2-self-awareness-daily",
@@ -18013,7 +18353,7 @@
   {
    "source": "agents/morning-system-health",
    "target": "agents/openstory/REFRESH_STATUS.md",
-   "weight": 246
+   "weight": 250
   },
   {
    "source": "agents/morning-system-health",
@@ -18033,7 +18373,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 349
+   "weight": 355
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -18098,7 +18438,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 358
+   "weight": 365
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -18113,7 +18453,7 @@
   {
    "source": "agents/morning-walk-cowork-handoff",
    "target": "master/incoming_dispatches.md",
-   "weight": 213
+   "weight": 218
   },
   {
    "source": "agents/morning-walk-cowork-handoff",
@@ -18388,22 +18728,22 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 208
+   "weight": 212
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/cross_program_index.md",
-   "weight": 221
+   "weight": 225
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/incoming_dispatches.md",
-   "weight": 104
+   "weight": 106
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "master/paradigm_flags.md",
-   "weight": 105
+   "weight": 107
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -18463,17 +18803,17 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 354
+   "weight": 360
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "traditions/wright/wiki.md",
-   "weight": 216
+   "weight": 220
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "vault/refs/index_summary.md",
-   "weight": 104
+   "weight": 106
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -18708,7 +19048,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "flags/pattern_detector_findings.md",
-   "weight": 7
+   "weight": 8
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18763,22 +19103,22 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/C2A2_master_wiki.md",
-   "weight": 629
+   "weight": 640
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/C2A2_prs_triplets.md",
-   "weight": 18
+   "weight": 21
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/cross_program_index.md",
-   "weight": 667
+   "weight": 690
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "master/paradigm_flags.md",
-   "weight": 547
+   "weight": 556
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18803,7 +19143,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/friston/prs_triplets.md",
-   "weight": 10
+   "weight": 11
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18853,7 +19193,12 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/macintyre/prs_triplets.md",
-   "weight": 18
+   "weight": 19
+  },
+  {
+   "source": "agents/summa-2026-nightly-verification",
+   "target": "traditions/macintyre/wiki.md",
+   "weight": 1
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18868,7 +19213,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 13
+   "weight": 14
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18878,7 +19223,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/stump/prs_triplets.md",
-   "weight": 51
+   "weight": 52
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18888,12 +19233,12 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 775
+   "weight": 784
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "traditions/wright/wiki.md",
-   "weight": 561
+   "weight": 568
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18908,7 +19253,7 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "vault/synthesis/Day-002 - Does God Exist - Contemporary.md",
-   "weight": 25
+   "weight": 27
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -18952,6 +19297,11 @@
   },
   {
    "source": "agents/summa-2026-nightly-verification",
+   "target": "vault/synthesis/Day-041 - Understanding and Conscience - Contemporary.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/summa-2026-nightly-verification",
    "target": "vault/synthesis/Day-050 - The Tree of Life - Contemporary.md",
    "weight": 2
   },
@@ -18984,6 +19334,11 @@
    "source": "agents/summa-2026-nightly-verification",
    "target": "vault/synthesis/Day-086 - The Subject of Habits - Contemporary.md",
    "weight": 6
+  },
+  {
+   "source": "agents/summa-2026-nightly-verification",
+   "target": "vault/synthesis/Day-090 - Moral Virtue - Contemporary.md",
+   "weight": 4
   },
   {
    "source": "agents/summa-2026-nightly-verification",
@@ -19183,12 +19538,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/cross_program_index.md",
-   "weight": 726
+   "weight": 736
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "master/paradigm_flags.md",
-   "weight": 244
+   "weight": 247
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19198,7 +19553,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/carroll/prs_triplets.md",
-   "weight": 32
+   "weight": 38
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19208,32 +19563,32 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/fredrickson/prs_triplets.md",
-   "weight": 114
+   "weight": 120
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/fredrickson/wiki.md",
-   "weight": 45
+   "weight": 47
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/friston/prs_triplets.md",
-   "weight": 180
+   "weight": 187
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/friston/wiki.md",
-   "weight": 28
+   "weight": 30
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/hawkins/prs_triplets.md",
-   "weight": 42
+   "weight": 43
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/hawkins/wiki.md",
-   "weight": 8
+   "weight": 9
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19258,17 +19613,17 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/levin/prs_triplets.md",
-   "weight": 116
+   "weight": 118
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/levin/wiki.md",
-   "weight": 12
+   "weight": 13
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/loughran/prs_triplets.md",
-   "weight": 10
+   "weight": 12
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19278,17 +19633,17 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/mcgilchrist/prs_triplets.md",
-   "weight": 87
+   "weight": 90
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/mcgilchrist/wiki.md",
-   "weight": 25
+   "weight": 27
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 123
+   "weight": 141
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19298,7 +19653,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/stump/prs_triplets.md",
-   "weight": 168
+   "weight": 179
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19313,12 +19668,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 2818
+   "weight": 2903
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "traditions/wright/wiki.md",
-   "weight": 739
+   "weight": 754
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19433,7 +19788,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-022 - The Father in the Son - Contemporary.md",
-   "weight": 25
+   "weight": 26
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19518,7 +19873,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-039 - The Soul - Contemporary.md",
-   "weight": 8
+   "weight": 9
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19633,7 +19988,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-062 - The Pursuit of Happiness - Contemporary.md",
-   "weight": 23
+   "weight": 28
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19868,7 +20223,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-109 - Changing Laws - Contemporary.md",
-   "weight": 49
+   "weight": 65
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19903,7 +20258,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-116 - Grace - Contemporary.md",
-   "weight": 31
+   "weight": 47
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19933,7 +20288,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-122 - Faith-Filled Gifts - Contemporary.md",
-   "weight": 21
+   "weight": 23
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19943,7 +20298,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-124 - Apostasy and Blasphemy - Contemporary.md",
-   "weight": 14
+   "weight": 18
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19958,7 +20313,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-127 - The Gift of Fear - Contemporary.md",
-   "weight": 14
+   "weight": 28
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -19998,7 +20353,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-135 - Laziness - Contemporary.md",
-   "weight": 8
+   "weight": 16
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20013,7 +20368,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-138 - Just War - Contemporary.md",
-   "weight": 20
+   "weight": 29
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20023,7 +20378,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-140 - Wisdom - Contemporary.md",
-   "weight": 18
+   "weight": 22
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20033,7 +20388,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-142 - Parts of Prudence - Contemporary.md",
-   "weight": 19
+   "weight": 31
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20043,7 +20398,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-144 - Gifted Counsel - Contemporary.md",
-   "weight": 18
+   "weight": 24
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20053,7 +20408,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-146 - Right and Just - Contemporary.md",
-   "weight": 14
+   "weight": 18
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20068,12 +20423,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-149 - Respect of Persons - Contemporary.md",
-   "weight": 12
+   "weight": 18
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-150 - The Death Penalty - Contemporary.md",
-   "weight": 14
+   "weight": 26
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20083,7 +20438,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-152 - Accusation - Contemporary.md",
-   "weight": 25
+   "weight": 30
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20093,7 +20448,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-154 - Gossip - Contemporary.md",
-   "weight": 14
+   "weight": 18
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20103,7 +20458,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-156 - Buying and Selling - Contemporary.md",
-   "weight": 14
+   "weight": 23
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20128,12 +20483,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-161 - Tithes - Contemporary.md",
-   "weight": 31
+   "weight": 39
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-162 - Vows and Oaths - Contemporary.md",
-   "weight": 19
+   "weight": 29
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20143,22 +20498,22 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-164 - Superstition - Contemporary.md",
-   "weight": 22
+   "weight": 64
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-165 - Idolatry and Divination - Contemporary.md",
-   "weight": 17
+   "weight": 19
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-166 - Testing God - Contemporary.md",
-   "weight": 28
+   "weight": 40
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-167 - Perjury and Sacrilege - Contemporary.md",
-   "weight": 27
+   "weight": 38
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20168,7 +20523,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-169 - Observance and Dulia - Contemporary.md",
-   "weight": 16
+   "weight": 24
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20188,27 +20543,27 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-173 - Kinds of Lies - Contemporary.md",
-   "weight": 15
+   "weight": 29
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-174 - Boasting - Contemporary.md",
-   "weight": 16
+   "weight": 28
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-175 - Affability and Flattery - Contemporary.md",
-   "weight": 22
+   "weight": 28
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-176 - Quarreling and Liberality - Contemporary.md",
-   "weight": 30
+   "weight": 36
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-177 - Covetousness - Contemporary.md",
-   "weight": 22
+   "weight": 30
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20223,27 +20578,27 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-180 - Timidity - Contemporary.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/summa-commentary-reviewer",
-   "target": "vault/synthesis/Day-181 - Fearlessness - Contemporary.md",
-   "weight": 9
-  },
-  {
-   "source": "agents/summa-commentary-reviewer",
-   "target": "vault/synthesis/Day-182 - Magnanimity - Contemporary.md",
    "weight": 26
   },
   {
    "source": "agents/summa-commentary-reviewer",
+   "target": "vault/synthesis/Day-181 - Fearlessness - Contemporary.md",
+   "weight": 29
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/synthesis/Day-182 - Magnanimity - Contemporary.md",
+   "weight": 32
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-183 - Ambition - Contemporary.md",
-   "weight": 25
+   "weight": 41
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-184 - Magnificence - Contemporary.md",
-   "weight": 10
+   "weight": 13
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20293,7 +20648,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-194 - Virginity vs Marriage - Contemporary.md",
-   "weight": 17
+   "weight": 27
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20373,7 +20728,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-210 - Christian Perfection - Contemporary.md",
-   "weight": 26
+   "weight": 27
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20688,7 +21043,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-273 - Anointing Members - Contemporary.md",
-   "weight": 18
+   "weight": 24
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -20828,17 +21183,17 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-301 - General Judgement - Contemporary.md",
-   "weight": 12
+   "weight": 14
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-302 - General Judges - Contemporary.md",
-   "weight": 28
+   "weight": 30
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/synthesis/Day-303 - New Heavens and Earth - Contemporary.md",
-   "weight": 22
+   "weight": 24
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -21077,6 +21432,11 @@
   },
   {
    "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-124 - Apostasy and Blasphemy.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-126 - Heavenly Hope.md",
    "weight": 1
   },
@@ -21097,13 +21457,33 @@
   },
   {
    "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-131 - The Order of Charity.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-132 - Joy and Peace.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-135 - Laziness.md",
+   "weight": 2
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-137 - Schism.md",
    "weight": 3
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-138 - Just War.md",
-   "weight": 1
+   "weight": 6
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-140 - Wisdom.md",
+   "weight": 5
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -21133,7 +21513,7 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-164 - Superstition.md",
-   "weight": 1
+   "weight": 8
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -21187,13 +21567,33 @@
   },
   {
    "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-184 - Magnificence.md",
+   "weight": 6
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-185 - Vainglory.md",
    "weight": 12
   },
   {
    "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-186 - Patience and Perseverance.md",
+   "weight": 3
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-187 - Softness.md",
+   "weight": 4
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-188 - Temperance.md",
    "weight": 4
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-189 - Childish Vice.md",
+   "weight": 1
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -21203,6 +21603,11 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "vault/transcripts/Day-194 - Virginity vs Marriage.md",
+   "weight": 1
+  },
+  {
+   "source": "agents/summa-commentary-reviewer",
+   "target": "vault/transcripts/Day-195 - Kinds of Lust.md",
    "weight": 1
   },
   {
@@ -21503,12 +21908,12 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "master/cross_program_index.md",
-   "weight": 390
+   "weight": 405
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "master/paradigm_flags.md",
-   "weight": 120
+   "weight": 121
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21518,22 +21923,22 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/fredrickson/prs_triplets.md",
-   "weight": 92
+   "weight": 93
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/fredrickson/wiki.md",
-   "weight": 28
+   "weight": 30
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/friston/prs_triplets.md",
-   "weight": 155
+   "weight": 158
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/friston/wiki.md",
-   "weight": 14
+   "weight": 16
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21548,17 +21953,17 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/hoffman/prs_triplets.md",
-   "weight": 38
+   "weight": 40
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/hoffman/wiki.md",
-   "weight": 5
+   "weight": 7
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/kastrup/prs_triplets.md",
-   "weight": 48
+   "weight": 54
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21568,7 +21973,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/levin/prs_triplets.md",
-   "weight": 98
+   "weight": 106
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21588,17 +21993,17 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/mcgilchrist/prs_triplets.md",
-   "weight": 72
+   "weight": 75
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/mcgilchrist/wiki.md",
-   "weight": 18
+   "weight": 20
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/rohr/prs_triplets.md",
-   "weight": 137
+   "weight": 154
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21608,7 +22013,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/stump/prs_triplets.md",
-   "weight": 132
+   "weight": 138
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21628,12 +22033,12 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/wright/prs_triplets.md",
-   "weight": 1984
+   "weight": 2100
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "traditions/wright/wiki.md",
-   "weight": 731
+   "weight": 742
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21923,7 +22328,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-057 - Angels and Men - Contemporary.md",
-   "weight": 13
+   "weight": 27
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21943,7 +22348,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-061 - Volume 2 - Contemporary.md",
-   "weight": 12
+   "weight": 20
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -21988,17 +22393,17 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-070 - Morality - Contemporary.md",
-   "weight": 26
+   "weight": 43
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-071 - Moral Consequences - Contemporary.md",
-   "weight": 10
+   "weight": 14
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-072 - Human Emotions - Contemporary.md",
-   "weight": 19
+   "weight": 23
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22018,7 +22423,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-076 - Timeless Delight - Contemporary.md",
-   "weight": 25
+   "weight": 27
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22173,7 +22578,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-107 - Eternal Law - Contemporary.md",
-   "weight": 6
+   "weight": 20
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22213,7 +22618,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-115 - Divine Assistance - Contemporary.md",
-   "weight": 31
+   "weight": 32
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22263,7 +22668,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-125 - The Sin Against the Holy Spirit - Contemporary.md",
-   "weight": 5
+   "weight": 13
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22308,7 +22713,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-134 - Required Almsgiving - Contemporary.md",
-   "weight": 13
+   "weight": 25
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22323,7 +22728,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-137 - Schism - Contemporary.md",
-   "weight": 9
+   "weight": 26
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22343,7 +22748,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-141 - Prudence - Contemporary.md",
-   "weight": 13
+   "weight": 23
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22353,7 +22758,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-143 - Kinds of Prudence - Contemporary.md",
-   "weight": 30
+   "weight": 37
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22363,7 +22768,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-145 - False Prudence - Contemporary.md",
-   "weight": 19
+   "weight": 30
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22373,7 +22778,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-147 - General Justice - Contemporary.md",
-   "weight": 4
+   "weight": 16
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22393,7 +22798,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-151 - Possessions - Contemporary.md",
-   "weight": 6
+   "weight": 10
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22403,7 +22808,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-153 - Defending the Guilty - Contemporary.md",
-   "weight": 32
+   "weight": 57
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22413,7 +22818,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-155 - Tale-Bearing and Derision - Contemporary.md",
-   "weight": 9
+   "weight": 18
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22423,22 +22828,22 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-157 - Usury - Contemporary.md",
-   "weight": 4
+   "weight": 8
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-158 - Religion - Contemporary.md",
-   "weight": 4
+   "weight": 12
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-159 - The Our Father - Contemporary.md",
-   "weight": 71
+   "weight": 82
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-160 - Sacrifice - Contemporary.md",
-   "weight": 77
+   "weight": 81
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22463,7 +22868,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-165 - Idolatry and Divination - Contemporary.md",
-   "weight": 36
+   "weight": 42
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22478,7 +22883,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-168 - Simony and Piety - Contemporary.md",
-   "weight": 23
+   "weight": 33
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22493,7 +22898,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-171 - Gratitude - Contemporary.md",
-   "weight": 20
+   "weight": 28
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22528,12 +22933,12 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-178 - Equity - Contemporary.md",
-   "weight": 18
+   "weight": 28
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-179 - Fortitude - Contemporary.md",
-   "weight": 11
+   "weight": 23
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22563,7 +22968,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-185 - Vainglory - Contemporary.md",
-   "weight": 12
+   "weight": 24
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22578,7 +22983,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-188 - Temperance - Contemporary.md",
-   "weight": 6
+   "weight": 11
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22658,7 +23063,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-204 - Prophetic Causes - Contemporary.md",
-   "weight": 11
+   "weight": 29
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22703,17 +23108,17 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-213 - Volume 4 - Contemporary.md",
-   "weight": 30
+   "weight": 48
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-214 - The Mode of Union - Contemporary.md",
-   "weight": 24
+   "weight": 36
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-215 - The Order of Assumption - Contemporary.md",
-   "weight": 39
+   "weight": 53
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -22758,32 +23163,32 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-224 - Adopted Sons - Contemporary.md",
-   "weight": 4
+   "weight": 14
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-225 - Honoring the Saints - Contemporary.md",
-   "weight": 4
+   "weight": 10
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-226 - The Blessed Virgin Mary - Contemporary.md",
-   "weight": 4
-  },
-  {
-   "source": "agents/summa-qc-sweep",
-   "target": "vault/synthesis/Day-227 - The Annunciation - Contemporary.md",
    "weight": 8
   },
   {
    "source": "agents/summa-qc-sweep",
+   "target": "vault/synthesis/Day-227 - The Annunciation - Contemporary.md",
+   "weight": 18
+  },
+  {
+   "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-228 - Christ's Ancestry - Contemporary.md",
-   "weight": 12
+   "weight": 17
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/synthesis/Day-229 - Christ's Conception - Contemporary.md",
-   "weight": 4
+   "weight": 9
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -23773,7 +24178,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-137 - Schism.md",
-   "weight": 1
+   "weight": 9
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -23819,6 +24224,11 @@
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-152 - Accusation.md",
    "weight": 1
+  },
+  {
+   "source": "agents/summa-qc-sweep",
+   "target": "vault/transcripts/Day-153 - Defending the Guilty.md",
+   "weight": 8
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -23878,7 +24288,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-165 - Idolatry and Divination.md",
-   "weight": 12
+   "weight": 13
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -23973,7 +24383,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-185 - Vainglory.md",
-   "weight": 27
+   "weight": 30
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -23988,7 +24398,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "vault/transcripts/Day-188 - Temperance.md",
-   "weight": 22
+   "weight": 25
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -24495,7 +24905,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c282-wiki-agent-daily-run",
-   "weight": 95
+   "weight": 115
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -24515,7 +24925,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "weight": 26
+   "weight": 27
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -24540,12 +24950,12 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-evening-cowork-to-chat",
-   "weight": 107
+   "weight": 112
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-lit-search-pipeline",
-   "weight": 328
+   "weight": 334
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -24610,22 +25020,22 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/summa-2026-nightly-verification",
-   "weight": 63
+   "weight": 65
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 260
+   "weight": 265
   },
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/summa-qc-sweep",
-   "weight": 321
+   "weight": 327
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-agent-carroll-arkanihamed",
-   "weight": 7
+   "weight": 8
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -24635,12 +25045,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-agent-levin-friston",
-   "weight": 15
+   "weight": 16
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-agent-mcgilchrist-kastrup",
-   "weight": 12
+   "weight": 18
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -24650,7 +25060,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-agent-wolfram",
-   "weight": 7
+   "weight": 9
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -24660,12 +25070,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-deferred-action-monitor",
-   "weight": 43
+   "weight": 47
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-evening-cowork-to-chat",
-   "weight": 27
+   "weight": 31
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -24685,12 +25095,12 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-self-awareness-daily",
-   "weight": 19
+   "weight": 21
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/c2a2-sewing-agent-weekly",
-   "weight": 43
+   "weight": 52
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -25055,7 +25465,7 @@
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
    "target": "agents/c2a2-sewing-agent-weekly",
-   "weight": 14
+   "weight": 15
   },
   {
    "source": "agents/c2a2-agent-mcgilchrist-kastrup",
@@ -25250,7 +25660,7 @@
   {
    "source": "agents/c2a2-agent-wright-rohr",
    "target": "agents/c2a2-evening-cowork-to-chat",
-   "weight": 5
+   "weight": 6
   },
   {
    "source": "agents/c2a2-agent-wright-rohr",
@@ -25385,7 +25795,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/c2a2-morning-chat-scrape",
-   "weight": 53
+   "weight": 55
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -25405,7 +25815,7 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/c2a2-sewing-agent-weekly",
-   "weight": 34
+   "weight": 35
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
@@ -25435,22 +25845,22 @@
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/summa-2026-daily-batch",
-   "weight": 7
+   "weight": 8
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/summa-2026-nightly-verification",
-   "weight": 14
+   "weight": 15
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 16
+   "weight": 17
   },
   {
    "source": "agents/c2a2-evening-cowork-to-chat",
    "target": "agents/summa-qc-sweep",
-   "weight": 13
+   "weight": 14
   },
   {
    "source": "agents/c2a2-lit-search-pipeline",
@@ -25690,7 +26100,7 @@
   {
    "source": "agents/c2a2-sewing-agent-weekly",
    "target": "agents/summa-2026-nightly-verification",
-   "weight": 26
+   "weight": 27
   },
   {
    "source": "agents/c2a2-sewing-agent-weekly",
@@ -25860,7 +26270,7 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 54
+   "weight": 56
   },
   {
    "source": "agents/summa-2026-daily-batch",
@@ -25870,17 +26280,17 @@
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 71
+   "weight": 73
   },
   {
    "source": "agents/summa-2026-nightly-verification",
    "target": "agents/summa-qc-sweep",
-   "weight": 69
+   "weight": 71
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "agents/summa-qc-sweep",
-   "weight": 445
+   "weight": 454
   }
  ],
  "flow": [
@@ -25912,7 +26322,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/c2a2-deferred-action-monitor",
-   "weight": 73
+   "weight": 75
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -25942,7 +26352,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/morning-walk-cowork-handoff",
-   "weight": 28
+   "weight": 29
   },
   {
    "source": "agents/H-Admin-Interactive",
@@ -25957,7 +26367,7 @@
   {
    "source": "agents/H-Admin-Interactive",
    "target": "agents/summa-qc-sweep",
-   "weight": 101
+   "weight": 106
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -25977,7 +26387,7 @@
   {
    "source": "agents/c282-wiki-agent-daily-run",
    "target": "agents/morning-walk-cowork-handoff",
-   "weight": 28
+   "weight": 29
   },
   {
    "source": "agents/c282-wiki-agent-daily-run",
@@ -26107,17 +26517,17 @@
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 86
+   "weight": 89
   },
   {
    "source": "agents/summa-2026-daily-batch",
    "target": "agents/summa-qc-sweep",
-   "weight": 39
+   "weight": 40
   },
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "agents/H-Admin-Interactive",
-   "weight": 59
+   "weight": 62
   },
   {
    "source": "agents/summa-commentary-reviewer",
@@ -26127,12 +26537,12 @@
   {
    "source": "agents/summa-commentary-reviewer",
    "target": "agents/summa-qc-sweep",
-   "weight": 325
+   "weight": 351
   },
   {
    "source": "agents/summa-qc-sweep",
    "target": "agents/H-Admin-Interactive",
-   "weight": 49
+   "weight": 51
   },
   {
    "source": "agents/summa-qc-sweep",
@@ -26142,7 +26552,7 @@
   {
    "source": "agents/summa-qc-sweep",
    "target": "agents/summa-commentary-reviewer",
-   "weight": 349
+   "weight": 366
   }
  ]
 }

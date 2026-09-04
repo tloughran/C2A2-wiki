@@ -11164,7 +11164,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-8 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-004: (see MONITOR-9 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-04 (cycle 5) - PARTIALLY-SUPPORTED (Moderate; support only for "2-of-3 is a robust default", NONE for context-invariance; 15a flagged against its own brief)] [SEARCHED-15b: 2026-09-04 (cycle 5) - CHALLENGED (Strong): optimal threshold is analytically a function of error costs and base rate (t*=C_FP/(C_FP+C_FN)); arXiv:2608.06940 shows the extra vote helps only on one-vote-margin decisions] [DISPOSITIONED-15c: 2026-09-04 -> REVISE (DISPOSITION-893 / REVISE-428). NOT folded into REVISE-426 - independent grounds; supersedes the 2026-09-02 "should inherit REVISE-426" note]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM
@@ -11484,7 +11484,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   Notes: Monthly low-priority refresh for MONITOR-67 cycle 5. 15d re-trigger only.
 
 [PRESUMPTION] PRESUMPTION-073: (see MONITOR-68 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-04 (cycle 5) - PARTIALLY-SUPPORTED (Weak): only ER density-expectation invariance under an exchangeable null; NOVELTY-FLAG (weak form); no paper licenses node addition without recalibration] [SEARCHED-15b: 2026-09-04 (cycle 5) - CHALLENGED (Strong): van Wijk 2010 size-dependence; dyadic non-independence (Type I >50%); informative unit is the tradition (11/13 vs ~250 stability); selection not sampling] [DISPOSITIONED-15c: 2026-09-04 -> REVISE (DISPOSITION-894 / REVISE-429). PREMISE-094 already refuted this item and was never applied - see run note]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
   Provenance: Origin=14b; Chain=[14b->15a,15b->15c->15d]; Item type=PRESUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM-HIGH
@@ -11501,7 +11501,7 @@ Processed the 2026-06-02 evening Sociogram batch (ASSUMPTION-266/267/268 + PRESU
   15c: REVISE -> REVISE-369 (High). DISPOSITION-778. Self-demonstrating: this run is a four-day gap absorbed without alert, processing a 49-day-unconsumed cohort as routine.
 
 [ASSUMPTION] ASSUMPTION-071: (see MONITOR-70 in monitor_queue.md for full statement)
-  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5] [SEARCHED-15a: 2026-09-04 (cycle 5) - SUPPORTED (Strong): OWASP Agentic Top 10 2026 ASI03; standards consensus on per-agent identity and short-lived scoped tokens] [SEARCHED-15b: 2026-09-04 (cycle 5) - PARTIALLY-CHALLENGED (Strong against the REFRAME, Weak against the ORIGINAL): BioShocking shows a live authenticated session is the ENABLING capability; "defined scope" and "audit" are the two properties pre-auth profiles destroy] [DISPOSITIONED-15c: 2026-09-04 -> INCORPORATE (DISPOSITION-895 / PREMISE-198). ORIGINAL incorporated; MONITOR-070's own reframe INCORPORATE-condition REJECTED as pointing the wrong way]
+  Status: [QUEUED] [RE-TRIGGER by 15d: 2026-07-05, cycle 5]
   Provenance: Origin=14a; Chain=[14a->15a,15b->15c->15d]; Item type=ASSUMPTION
   Cycle: cycle 5; Cadence: Monthly (LOW-PRIORITY-MONITOR); Next 15d check: 2026-08-02
   Priority: MEDIUM-HIGH
@@ -19717,189 +19717,6 @@ volunteering evidence against its own brief is a stronger signal than two agents
 unanswered, now 8 days out. Per PREMISE-183 it is not re-filed here; it is restated once in
 `revision_flags.md`. It now has company: REVISE-426 and REVISE-427 both require a human ruling, and
 both are reflexive — they are about whether the agent architecture that filed them adds value.
-
-**Format note.** This file ends on a prose block terminated by `---` below, so the documented parser
-hazard is not triggered.
-
----
-
-## 2026-09-04 - 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
-
-**No 14a/14b intake to process. This file, `lit_search_returns.md`, `monitor_queue.md` and
-`revision_flags.md` were all last written 2026-09-02 22:11; the most recent genuine 14a/14b intake
-cohort is 2026-08-30.** The 2026-09-03 pipeline run left no trace in any of the four registers, so
-either it did not fire or it fired and wrote nothing without saying so. **That is flagged and NOT
-investigated - it is outside 15a/15b/15c's remit, and the honest report is that a scheduled run is
-unaccounted for.** Work was drawn from the 15d re-trigger backlog lane, per the precedent the
-2026-09-02 run set and argued for.
-
-**BACKLOG COUNT, with the method stated so the next run can check it rather than inherit it.**
-A block parser (blocks opened by a `[TAG] ITEM-NNN` line at column 0, closed by the next such line
-or by any heading or `---`) finds **1750 item blocks**, of which **249 carried neither search tag at
-the start of this run**. That decomposes as **135** `[QUEUED]` pure-literature (the lane), **57**
-`[IN-HOUSE]`, **56** `[QUEUED-EMPIRICAL]`, **1** with a `[HELD - GROUNDED]` status. These figures
-reproduce the 2026-09-02 run's post-run numbers **exactly** (249 untagged, 135 in lane). **This is
-the first time in the recorded history of this file that two consecutive runs' parsers have agreed.**
-PREMISE-179 (parsers of this file disagree) is not thereby refuted - one agreement is not a fix - but
-it is the first data point against it, and the reason is probably that this run deliberately
-reimplemented the method the previous run documented rather than inventing a new one. **Recommended:
-future runs reuse the documented block parser rather than writing a fresh regex.** After this run
-tagged three items the lane stands at **132**, and 26 of the 29 cycle-5 items remain.
-
-**WORK DONE: three items, all monthly cycle 5, the most overdue cohort in the lane.**
-
-  PRESUMPTION-004 / MONITOR-009  (2/3 threshold optimal)  | 15a PART-SUPP (Mod) | 15b CHAL (Strong)   | REVISE-428
-  PRESUMPTION-073 / MONITOR-068  (N=11->13 metric-neutral) | 15a PART-SUPP (Weak)| 15b CHAL (Strong)   | REVISE-429
-  ASSUMPTION-071  / MONITOR-070  (browser-auth gated)      | 15a SUPPORTED (Str) | 15b PART-CHAL       | PREMISE-198
-
-Selection rule, stated so it can be criticised: PRESUMPTION-004 was named by the previous run as
-next-up. The other two were the cycle-5 items with MEDIUM-HIGH priority whose
-"what would change the disposition" was a literature question rather than an in-house measurement.
-ASSUMPTION-055 / MONITOR-058 was inspected and **declined** - both its criteria are mount-topology
-probes, which is in-house work and not 15a/15b's.
-
----
-
-**FINDING 1 - the previous run's own handoff instruction was wrong, and this run says so rather than
-following it.** The 2026-09-02 note recorded that PRESUMPTION-004 "is a near-duplicate of MONITOR-004
-and should inherit REVISE-426." It should not. REVISE-426 attacks the **ensemble** - whether
-agreement among three same-base-model agents carries information to threshold at all. This run
-attacks the **fraction's uniformity** - whether one threshold can serve decision types with different
-error-cost structures. The two are independent and each survives a fix to the other: swap in
-genuinely heterogeneous agents tomorrow and 426 is resolved while 428 is untouched. Inheriting would
-have hidden a second defect behind the first. Filed as REVISE-428, cross-referenced.
-
-**FINDING 2 - 15c's citation verification caught 15a's strongest new source being read backwards,
-and this is the pipeline's own quality control working for the first time at this step.** 15a cited
-arXiv:2606.29270 ("Minority Sentinel") as its best NEW evidence for context-invariance, reporting a
-wide flat threshold band and no benefit from stricter rules. On verification that band is the
-operating range of the paper's meta-classifier's *flip* threshold, not a vote threshold, and the
-paper's headline runs the **opposite** way: **39.1% of samples exhibit 2:1 splits, and in 25.5% of
-those the minority is correct** - a 10.0pp margin majority voting forfeits. The paper's stated thesis
-is a shift from "counting heads" to "auditing evidence."
-**The misreading was caught and its correction is recorded in the result file rather than the
-citation being deleted.** Prior runs have found this failure mode only cycles later, as citation
-decay. Found at the verification step is the right place to find it.
-
-**FINDING 3 - and it makes the disposition, not just the record.** That same verification closed the
-only real escape route in 15b's own steelman. 15b granted that if disagreement is rare, the choice
-among {1/3, 2/3, 3/3} is near-inert and the whole question is low priority. 39.1% 2:1 splits says
-disagreement is common. **The rule fires often and is wrong about a quarter of the times it does.**
-The escape was closed by measurement, not by argument.
-
-**FINDING 4 - THE MOST IMPORTANT ONE, and it is about the pipeline rather than any item.**
-PREMISE-094 (validated 2026-07-03, ACTIVE) already holds that when observations are nested, the
-honest unit of replication is the cluster and inference must not be pseudoreplicated on the nested
-units. Traditions are clusters; the N(N-1)/2 pairs are nested units. **C2A2 has held the premise that
-refutes PRESUMPTION-073 for fourteen months and never applied it there.** No literature search was
-strictly required to disposition that item - the register already contained the answer, and five
-monitoring cycles passed without anyone joining them up. The same is true of 15b's SYSTEMIC-RISK-FLAG:
-both vulnerabilities it raises are PREMISE-094, PREMISE-197 and the stuck-at-nominal detector
-polarity restated in new domains. **The system is not short of premises. It is short of the habit of
-reading its own register before monitoring an item for a fifth cycle.** Recommended concretely: 15d
-should consult `validated_premises.md` for an applicable ACTIVE premise BEFORE issuing a re-trigger,
-and record that it did.
-
-**FINDING 5 - a monitor's own INCORPORATE condition turned out to point the wrong way, and four
-cycles were spent waiting for it.** MONITOR-070 said ASSUMPTION-071 could be INCORPORATED once
-reframed as "pre-issued tokens / pre-authenticated profiles are explicitly permitted under defined
-scope and audit." The 2026 evidence **inverts** that risk ordering. LayerX's BioShocking disclosure
-(2026-06-24, verified across five outlets) shows six AI browsers - **including Claude Chrome** -
-steered into exfiltrating SSH credentials out of an **authenticated GitHub session**, with no
-credential ever entered. The live session is not a weaker capability than credential entry; it is the
-enabling one. And the reframe's two safeguards are exactly the two properties a pre-authenticated
-profile destroys - scope becomes the union of the user's entitlements, and audit attribution
-collapses into the user's identity. **The ORIGINAL assumption was incorporated; the reframe was
-rejected.** April's reasoning was not unreasonable - it correctly read the *standards* as endorsing
-token substitutes - but it inferred deployment safety from standards prescription. **A monitor's
-stated disposition-changing condition is itself a claim that can be wrong.**
-
-**FINDING 6 - the strongest evidence for ASSUMPTION-071 came out of the AGAINST agent's own source,
-and neither agent noticed.** LayerX's recommended mitigation for BioShocking is that AI browsers
-should **ask before reading from a logged-in account** - one prompt, "I'm about to copy data from
-your GitHub repository. Continue?", breaks the chain. That is ASSUMPTION-071's explicit-permission
-clause, arrived at independently by the researchers who demonstrated the attack. 15b cited the
-disclosure only for its challenge to the reframe and did not report the mitigation; 15c surfaced it
-during verification. **Note also: LayerX reports Anthropic's patch to the Claude extension did not
-hold. C2A2 runs in an affected environment. PREMISE-198 is the standing posture for a demonstrated
-risk, not a precaution against a modelled one.**
-
----
-
-**INDEPENDENCE, AND ITS DISCOUNT.** 15a and 15b ran in separate agent contexts; 15b was instructed
-not to read `for/` and reports it did not. **They ran sequentially, not concurrently** - 15a first -
-which is recorded because it differs from the concurrent design; 15b's context contained no part of
-15a's output, so search independence holds even though execution was serial. They converged
-independently on van Wijk 2010, on Dekker/Krackhardt/Snijders, on arXiv:2604.17139 and on
-arXiv:2606.29270. **Per PREMISE-197 each convergence is counted ONCE, not as corroboration** - same
-base model, same scaffold. Two asymmetries are worth more than the convergences, and both point the
-same way: **15a volunteered evidence against its own brief on all three items** (SDT and
-cost-sensitive thresholding on item 1; van Wijk and dyadic non-independence on item 2; the
-confused-deputy exposure of pre-authenticated profiles on item 3), and explicitly asked 15c not to
-let a PARTIALLY-SUPPORTED verdict launder the first of those. An agent arguing against its own
-assignment is a stronger signal than two agents agreeing.
-
-**A DEVIATION FROM THE AGENT DEFINITIONS, DECLARED.** 15a and 15b's definitions have them write their
-own result files. This run had them return formatted blocks and 15c wrote all six files, so that the
-atomic-write discipline of REVISE-413/414 was applied uniformly and no subagent held a write handle
-on a register. **Search independence is unaffected** (neither agent saw the other's output at any
-point); **authorship is not** - the result files are 15a's and 15b's content transcribed by 15c, with
-every 15c addition explicitly labelled as such inline. Flagged rather than left to be inferred.
-
-**VERIFICATION DISCIPLINE.**
-  - All four registers snapshotted before modification (`*.snapshot-2026-09-04-pre-15c`). All writes
-    via temp-file-in-same-directory -> fsync -> rename -> fsync(parent), per REVISE-413/414.
-  - **All four appends byte-verified against expected length**: lit_search_returns.md
-    3880798 -> 3899989 (+19191); validated_premises.md 645502 -> 652351 (+6849); revision_flags.md
-    1252743 -> 1263871 (+11128); for_lit_search.md 1907847 -> 1909642 by inline tagging, then this
-    note.
-  - **No file was overwritten.** All six result files were written to fixed, pre-computed names
-    (`*_for_cycle5.md`, `*_against_cycle5.md`), confirmed non-existent BEFORE writing and never
-    globbed for - that is the check-then-act race that destroyed two flag files on 2026-08-31.
-  - Inline tagging asserted on three conditions per item before mutating: header contains the
-    expected item ID, status line begins `Status: [QUEUED]`, and neither search tag already present.
-  - **15c independently re-verified four load-bearing citations by fresh search**: arXiv:2608.06940
-    (Shu, Zhejiang University, Aug 2026 - author, affiliation and both figures confirmed);
-    arXiv:2606.29270 (He et al., AgentSearch @ SIGIR 2026 - and this is where the 15a misreading was
-    caught); van Wijk/Stam/Daffertshofer, PLoS ONE 5(10):e13701, PMID 21060892; and the LayerX
-    BioShocking disclosure across five independent outlets. **The remaining ~55 citations are carried
-    on the searching agents' word and were NOT re-verified.** Stated so confidence is not read as
-    higher than it is. Both agents filed METHODOLOGICAL NOTES on identifiers they could not resolve
-    (the Fey supermajority note; "The Robust Beauty of Majority Rules"; a preprints.org manuscript
-    with no determinable author; the FAccT 2026 oversight paper's author list; a 2013/2016 year
-    discrepancy on Schonbrodt & Perugini which 15b flagged rather than guessed) - **none silently
-    rebuilt a citation.**
-  - Consistency-checked against `validated_premises.md` before INCORPORATE: PREMISE-198 EXTENDS
-    PREMISE-093 and PREMISE-015/DECISION-022 (which govern credential ENTRY) with the
-    pre-authenticated-session limb, which neither covers. No ACTIVE premise contradicts it.
-
-**SCOPE DISCIPLINE - what this run did NOT do, stated so it cannot be misread as done.**
-  - The remaining **132** items of the 15d literature lane were not searched. No claim is made about
-    them. 26 of the 29 cycle-5 items remain, still with no STALE-MONITOR-FLAG applied despite 15d's
-    own spec requiring one at 4+ cycles.
-  - **MONITOR-009, MONITOR-068 and MONITOR-070 were left ACTIVE in `monitor_queue.md` and are now
-    stale** - their items are dispositioned but their monitor records still say MONITORING. Closing
-    them is 15d's lane, not 15c's, and this run declined to reach into it. **It is a real
-    inconsistency in the registers as of this run's end.**
-  - No monitor item was minted for the habituation challenge to explicit-permission gating, though
-    it is a genuine live risk. The claim "explicit-permission gating remains protective under routine
-    use" has never been through 14a/14b intake, and minting it at 15c would create a register entry
-    with no provenance chain. **HANDED TO 14a AS A CANDIDATE ASSUMPTION** - the concrete, cheap check
-    is to count C2A2's explicit-permission prompts over recent sessions and compute the approval
-    rate; above ~95% the gate is a formality and PREMISE-198's clause (b) is already failing in
-    practice.
-  - The in-house computations REVISE-428 step 1 and REVISE-429 steps 1-3 ask for are not 15a/15b work
-    and remain unrun.
-  - The unaccounted-for 2026-09-03 run was not investigated.
-
-**ESCALATION CARRIED, eleventh consecutive run.** The binary decision put to Tom on 2026-08-25 is
-still unanswered, now 10 days out. Per PREMISE-183 it is not re-filed here. It now has company:
-REVISE-426, REVISE-427 and REVISE-428 all require a human ruling, and all three are about whether
-adding agents adds independent epistemic value. **This run reached that conclusion using the
-architecture under challenge - the same reflexive condition the last run named, and 15c still cannot
-tell from inside whether that is the design working or its most elegant failure mode.** One thing did
-change: this run's most decisive move was 15c disbelieving 15a and going to check, which is a
-different mechanism from agents agreeing, and it is the mechanism REVISE-426 would leave standing.
 
 **Format note.** This file ends on a prose block terminated by `---` below, so the documented parser
 hazard is not triggered.
