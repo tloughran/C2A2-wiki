@@ -22021,3 +22021,245 @@ ASSUMPTION-1248:
     Transform at each step:
       14a: Extracted verbatim from validated_premises.md and checked against this run's own queue counts. The absence of a capacity figure is measured, not inferred.
     Current status: SUPPORTED
+
+## Intake — 2026-09-04 · 14a run (gap-filling; 14a last ran 2026-08-30)
+
+*Source declaration.* No interactive session transcript for 2026-09-04 was reachable via `session_info` (the 120 most-recent sessions are all scheduled runs; the attended RC Sandbox session is not among them). Unlike 08-30, this run had **authored working artifacts** to read rather than only a digest: `inbox/rc_sandbox/outline_v3.md` (incl. CORRECTION LOG and RULINGS), `inbox/rc_sandbox/batches/CLASSIFY_SPEC.md`, `assignments.csv` (2,402 rows, re-counted), `toc_sandbox.csv`, and `daily_sync/cowork_to_chat/2026-09-04_cowork_summary.md`. Quotes below are from those files. PRESUMPTION-903 still applies to the digest-sourced items (1259–1262).
+
+ASSUMPTION-1249:
+  Date identified: 2026-09-04
+  Statement: "the ladder is resolved from the source (sheet rows 247-250), not guessed." The A-I-S-N-B-P-C-S header row and the three pass rows are treated as the authoritative statement of Tom's layered account.
+  Context: outline_v3.md, superseding v2, which had inferred the ladder from the three overlapping band names.
+  Type: methodological
+  Related decisions: none registered (ruling lives in outline_v3.md — see OPEN-174)
+  Testability: framework commitment (source-authority rule); the *consequence* — that v2's guessed ladder differed from the authored one by exactly one rung — is an in-house data point on guessing vs. reading.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1249
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim from outline_v3.md header.
+    Current status: UNTESTED
+
+ASSUMPTION-1250:
+  Date identified: 2026-09-04
+  Statement: "`pass` is therefore a FACET, not a node ... The table renders as a grid at III.2.0 — it is the single most structurally important object in the corpus and must not be scattered into its rungs."
+  Context: outline_v3.md, "The table is 8 levels x 3 passes." 27 cells carry the `pass` facet.
+  Type: architectural
+  Related decisions: none registered
+  Testability: framework commitment (a representation choice); the claim of "single most structurally important object" is a ranking with no stated criterion.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1250
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. The 27-cell figure was checked against assignments.csv (`pass` column populated on 27 rows; III.2.B also holds exactly 27 cells — see PRESUMPTION-905).
+    Current status: UNTESTED
+
+ASSUMPTION-1251:
+  Date identified: 2026-09-04
+  Statement: "a table's column LABELS are apparatus *unless the table is itself an authored structure*, in which case the labels ARE the structure."
+  Context: outline_v3.md RULINGS; the generalised fix for the pre-pass length rule (≤2 chars → X.1) that binned the eight ladder header letters. Applied to r291c4–c6 ("level", "features 1", "features 2"), which label a second, earlier ladder at row 292.
+  Type: methodological
+  Related decisions: none registered (delegated: "as you incline")
+  Testability: testable via literature — table-structure semantics; header/apparatus discrimination in document-structure extraction; when schema is content.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1251
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim from the RULINGS block. This rule is stated as the *class* the length rule got wrong, i.e. a post-hoc generalisation from one error.
+    Current status: UNTESTED
+
+ASSUMPTION-1252:
+  Date identified: 2026-09-04
+  Statement: "A substantive row header (col D) CONFERS CONTENT on the bare items in its row; those items are placed topically, not as X.2 apparatus. Both batch workers had already inclined that way, so the ~40 cells flagged as inconsistent need no change."
+  Context: outline_v3.md RULINGS — the row-header rule, delegated by Tom.
+  Type: methodological
+  Related decisions: none registered
+  Testability: testable empirically — the ~40 flagged cells are enumerable; whether "need no change" holds is a spot-check away.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1252
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. Note the inference "already inclined that way → need no change" was asserted, not verified on the 40.
+    Current status: UNTESTED
+
+ASSUMPTION-1253:
+  Date identified: 2026-09-04
+  Statement: "Renaming the IDs would churn 2,402 rows to no benefit: an ID is an identifier, a number is a label. This also retires the C-collision (cellular vs communal) and the doubled S."
+  Context: outline_v3.md RULINGS — rung labelling (L0–L9 as display labels; node IDs III.2.A … III.2.SO unchanged). Two proposed rungs (L3 pre-biotic, L4 cellular) have numbers but no nodes.
+  Type: architectural
+  Related decisions: none registered
+  Testability: framework commitment (identifier/label separation — standard practice).
+  Status: GROUNDED (standard practice; not routed)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1253
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. Filed because the label scheme now reserves L3/L4 for rungs the source table does not contain — see OPEN-179.
+    Current status: GROUNDED
+
+ASSUMPTION-1254:
+  Date identified: 2026-09-04
+  Statement: "`voice` — `Loughran` (the DEFAULT, ~92% of cells)"
+  Context: CLASSIFY_SPEC.md, the classification spec given to 8 parallel batch workers.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically — **tested this run:** assignments.csv shows 183 of 2,402 cells with a voice other than Loughran/apparatus = 7.6%, i.e. 92.4% Loughran-or-apparatus. Consistent with the prior.
+  Status: SUPPORTED (in-house count)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1254
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim; counted against the final assignments.csv. Caveat: the prior was given to the workers, so the outcome is not independent of it (anchoring) — see PRESUMPTION-906.
+    Current status: SUPPORTED
+
+ASSUMPTION-1255:
+  Date identified: 2026-09-04
+  Statement: "II.1 membership criterion (expect ~zero cells; it is to be written, not harvested)"
+  Context: CLASSIFY_SPEC.md / toc_sandbox.py ("TO BE WRITTEN, NOT HARVESTED (Tom, amendment)").
+  Type: epistemic
+  Related decisions: none registered (Tom's amendment to outline v2)
+  Testability: testable empirically — **tested this run:** II.1 = 0 cells in assignments.csv. Prediction met.
+  Status: SUPPORTED (in-house count)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1255
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim; verified count. Filed because it is the one node the outline reserves for authorship rather than harvesting — a stated position on what the corpus cannot supply.
+    Current status: SUPPORTED
+
+ASSUMPTION-1256:
+  Date identified: 2026-09-04
+  Statement: "The sandbox output needs Tom's eyes, not more agent passes. ... The question they answer — *what is actually in the sandbox, and does the outline hold* — can only be closed by reading it."
+  Context: 2026-09-04_cowork_summary.md, "What's Next" §1.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature — diminishing returns of iterated automated self-review vs. a single expert read; reviewer-fatigue effects on a 16,102-line document.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1256
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim. Paired with PRESUMPTION-910 (no success criterion for "the outline holds").
+    Current status: UNTESTED
+
+ASSUMPTION-1257:
+  Date identified: 2026-09-04
+  Statement: "B = the neocortical column — 'the thousand brains of TBT ... this is at the neocortical column, the Brains of the 1000 Brains theory. This is the Brain's interpretation.' (r247c8)"
+  Context: outline_v3.md — the new rung III.2.B, sitting between Neuronal and Personal; quoting Tom's own cell.
+  Type: architectural (a transferred concept from Hawkins)
+  Related decisions: none registered
+  Testability: testable via literature — whether the cortical column is a defensible level of organisation distinct from "neuronal" and below "personal"; the standing dispute over column functional identity (Horton & Adams 2005 vs. Hawkins/Numenta).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1257
+    Item type: ASSUMPTION (stated — quoted, Tom's cell via outline_v3)
+    Transform at each step:
+      14a: Extracted verbatim. The Hawkins transfer is explicit in the source; 14b files the unstated part (PRESUMPTION-909).
+    Current status: UNTESTED
+
+ASSUMPTION-1258:
+  Date identified: 2026-09-04
+  Statement: "Two authored ladders now exist in the corpus (rows 247-250 and rows 292+). The earlier one reaches for an OBJECTIVE ordering principle (entropy). Worth comparing before III.2.0 is written."
+  Context: outline_v3.md RULINGS; r291c3 introduces "an outline here based on hierarchy (perhaps of entropy, from highest to lower, from simplicity to complexity, from cause to effect...)".
+  Type: epistemic
+  Related decisions: none
+  Testability: testable via literature — entropy / complexity as an ordering principle for levels of organisation (Carroll, Wolfram traditions in-vault); whether the two ladders are the same order under two descriptions.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1258
+    Item type: ASSUMPTION (stated — quoted)
+    Transform at each step:
+      14a: Extracted verbatim. Filed with OPEN-181 (which ladder is the spine of III.2.0).
+    Current status: UNTESTED
+
+ASSUMPTION-1259:
+  Date identified: 2026-09-04
+  Statement: "Deferred items watching: 2 — WATCH-002, WATCH-003 ... (Not 2,188. Yesterday's figure was a file line count.)" and "The watch-list run log is now producing downstream errors, not just bulk."
+  Context: 2026-09-04_cowork_summary.md, Pipeline Status and For Morning Discussion §6.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically — **verified this run:** `deferred/watch_list.md` carries 2 unique WATCH ids.
+  Status: SUPPORTED (in-house count)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1259
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim; verified the 2. Filed as a second instance of PREMISE-191's pattern (a derived aggregate circulating in inconsistent versions) — yesterday's digest carried 2,188, today's carries 2, and nothing in between corrected the first.
+    Current status: SUPPORTED
+
+ASSUMPTION-1260:
+  Date identified: 2026-09-04
+  Statement: "DEFERRED-CONDITION LEAKAGE ... five locator/verification cards from the 09-02 ingest were closed with their future conditions parked where nothing polls them. Option (b) — a one-line instruction to the ingest step — would have caught all five."
+  Context: Agent 16 flag, relayed in 2026-09-04_cowork_summary.md.
+  Type: architectural
+  Related decisions: none
+  Testability: testable empirically — the five cards are enumerable; whether one ingest-step line would have routed all five is checkable by dry-run.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1260
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim. Counterfactual ("would have caught all five") is asserted, not tested. See OPEN-180.
+    Current status: UNTESTED
+
+ASSUMPTION-1261:
+  Date identified: 2026-09-04
+  Statement: "Restart the self-awareness pipeline — five days dark means five days of assumptions, presumptions and open questions unsurfaced."
+  Context: 2026-09-04_cowork_summary.md, What's Next §4.
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — compare what this gap-filling run recovers for 08-31…09-03 (nothing: it does not attempt to) against what a same-day run would have produced.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1261
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim. **Rationale drift flagged:** "unsurfaced" frames the gap as deferred work; PRESUMPTION-903 (08-30) filed the same gap as evidence destroyed. The digest has reverted to the frame 903 challenged, five days later. Recorded, not adjudicated.
+    Current status: UNTESTED
+
+ASSUMPTION-1262:
+  Date identified: 2026-09-04
+  Statement: "This is the largest single corpus operation the project has run on Tom's own material, and it finished." — 2,402 cells classified, 2,191 placed, 16,102 lines.
+  Context: 2026-09-04_cowork_summary.md, opening paragraph.
+  Type: empirical
+  Related decisions: none
+  Testability: testable in-house — **partly verified:** assignments.csv = 2,402 rows; TL_sandbox_reordered.md = 16,102 lines. "Largest" is not verified (no register of corpus-operation sizes exists). 211 cells (2,402 − 2,191) are apparatus-excluded: X.1 118 + X.2 93 = 211. Reconciles.
+  Status: SUPPORTED (counts reconcile; superlative unverified)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1262
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim; re-counted three of four figures from primary files.
+    Current status: SUPPORTED

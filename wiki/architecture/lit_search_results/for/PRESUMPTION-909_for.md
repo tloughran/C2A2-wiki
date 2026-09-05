@@ -1,0 +1,32 @@
+SEARCH-FOR-PRESUMPTION-909:
+  Date searched: 2026-09-05
+  Original item: PRESUMPTION-909
+  Original statement: [inferred] The layered account is a total linear order — every level sits strictly above one and below one — so it can be numbered L0…L9 and gaps can be filled by inserting rungs.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-909
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the numbering scheme against the source's own description of overlapping bands. Medium-high confidence; this is the run's principal interpretive finding.
+      15a: Searched for supporting literature — levels of organisation treated as a linear order; whether a single-axis ladder is a defensible representation.
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Oppenheim, P., Putnam, H., 1958. "Unity of Science as a Working Hypothesis." Minnesota Studies in the Philosophy of Science 2: 3-36. [VERIFIED: title, series, volume, pages seen in search results] — The classic "layer-cake" model: six reductive levels (social groups, organisms, cells, molecules, atoms, elementary particles) in a strict linear order, each level's objects decomposing into objects of the next level down. The canonical precedent for treating levels as a total order numbered top to bottom.
+    2. Churchland, P. S., Sejnowski, T. J., 1988. "Perspectives on Cognitive Neuroscience." Science 242(4879): 741-745. [VERIFIED: title, journal, volume, pages seen in search results] — The "structural levels of organization of the nervous system" ladder (molecules → synapses → neurons → networks → maps → systems → CNS), ordered by spatial scale over many orders of magnitude and reproduced as a linear figure throughout neuroscience. Direct empirical precedent for a numbered linear ladder in a domain the C2A2 account draws on.
+    3. Anderson, P. W., 1972. "More Is Different." Science 177: 393-396. [VERIFIED: title seen in search results; volume/pages NOT verified] — Presents the hierarchy of the sciences as a linear list (few-body physics → many-body physics → chemistry → molecular biology → physiology → psychology → social sciences) with the rule that level-N entities obey level-(N-1) laws. Linear ordering used as a working assumption by a physicist explicitly arguing *against* reductionism — showing a total order can be adopted without the reductive commitment.
+    4. Salthe, S. N., 1985. Evolving Hierarchical Systems. Columbia University Press. [VERIFIED: title, publisher, year seen in search results] — Hierarchy theory's scalar hierarchy is operated as a *basic triadic system*: a focal level with exactly one level above and one below. This is precisely the "sits strictly above one and below one" structure the presumption assumes, offered as a methodological principle rather than an ontological claim.
+    5. Simon, H. A., 1962. "The Architecture of Complexity." Proceedings of the American Philosophical Society 106(6): 467-482. [VERIFIED: title, year seen in search results; journal/pages NOT verified] — Argues that complex systems are near-decomposable hierarchies of nested subsystems, with successive levels separated by interaction-frequency (time-scale) bands. Supports a discrete, ordered level structure with the possibility of identifying "missing" intermediate assemblies — analogous to inserting rungs.
+    6. DiFrisco, J., 2017. "Time Scales and Levels of Organization." Erkenntnis (DOI 10.1007/s10670-016-9844-4). [VERIFIED: title, journal, DOI seen in search results] — After diagnosing problems with compositional and organisational-type criteria, proposes rate/time-scale as the ordering criterion. Since rates are real-valued, this yields a single-axis (totally ordered) placement of levels — theoretical grounding for a linear ladder, if one axis is chosen.
+
+  Strength of support: Moderate
+
+  Summary: The linear ladder is the dominant representation of levels of organisation in the literature the C2A2 account inherits from: Oppenheim–Putnam's six reductive levels, Anderson's hierarchy of the sciences and Churchland–Sejnowski's scale ladder are all presented and used as total orders, and hierarchy theory (Salthe) formalises working with levels as a focal level flanked by exactly one above and one below. Simon's near-decomposability gives a structural rationale for why discrete, ordered levels appear at all (interaction-frequency gaps), which also licenses the idea that an unoccupied gap can be filled by an intermediate level. DiFrisco shows that if a *single* quantitative criterion (scale or rate) is adopted, a total order follows. So the presumption has strong precedent as a methodological convention.
+
+  Caveats: The support is conditional on choosing one ordering axis; every source above orders by a single criterion (scale, rate, composition), and the C2A2 source table orders by disciplines that "contribute at" bands, which is not one of those criteria. Wimsatt (1976; 1994, "The Ontology of Complex Systems: Levels of Organization, Perspectives, and Causal Thickets," Canadian Journal of Philosophy suppl. vol. 20 [VERIFIED: title seen in search results; volume NOT verified]) characterises levels as "local maxima of regularity and predictability" and explicitly allows perspectives and causal thickets where the level structure breaks down — i.e. linearity is the well-behaved case, not the general one. Potochnik & McGill 2012, "The Limitations of Hierarchical Organization," Philosophy of Science 79(1): 120-140 [VERIFIED: full citation seen in search results] argue that discrete hierarchical levels face pervasive difficulties and recommend continuous *scale* instead of levels — which would support the numbering (a scale is totally ordered) while undermining rung insertion as discrete. Domain-transfer issue: the Thousand Brains column is a parallel, non-hierarchical unit within its own level, so its placement as a serial rung is not addressed by any of these sources. Search scope: 6 web searches (Oppenheim & Putnam; Churchland & Sejnowski; Anderson; Salthe; Simon; DiFrisco; Wimsatt and Potochnik & McGill located incidentally). Not covered: Craver's mechanistic levels, Eronen's "no levels" eliminativism, and lattice/poset formalisations of hierarchy in category theory. Preliminary search — broader search recommended on whether overlapping "contributes at" relations have been formalised as partial orders.
+
+  Recommendation: PARTIALLY-SUPPORTED

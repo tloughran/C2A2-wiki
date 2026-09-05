@@ -17976,3 +17976,159 @@ PRESUMPTION-903:
     Transform at each step:
       14b: Inferred from three days of accumulated gap treated as schedule slippage, and confirmed against this run's own source constraint. Self-referential and directly evidenced. High confidence.
     Current status: UNTESTED
+
+## Intake — 2026-09-04 · 14b run (gap-filling; 14b last ran 2026-08-30)
+
+*Source declaration.* Same sources as 14a's 09-04 intake: authored working files under `inbox/rc_sandbox/` plus the cowork digest. No interactive transcript was reachable. Presumptions are inferred from what those files depended on, not from what they say.
+
+PRESUMPTION-904:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] A spreadsheet cell is the correct unit of classification — each of 2,402 cells receives exactly one node, and no cell is ever split or merged.
+  Evidence it was operative: CLASSIFY_SPEC.md: "ONE line per cell ... `node` — EXACTLY one ID." The `run_id` facet and "runs render contiguous" acknowledge that meaning spans cells, but no rule permits a cell to carry two nodes or a cell to be divided. The unit was inherited from the storage format, not chosen.
+  Why it was unstated: too foundational to notice — the source was a spreadsheet, so its cells arrived as the atoms.
+  Type: structural
+  Related decisions: none registered
+  Testability: testable via literature — segmentation-unit choice in corpus annotation; multi-label vs. single-label assignment error rates when units are storage-defined. Testable empirically — sample the 70 `low`-confidence cells for multi-topic content.
+  Risk if wrong: Medium — long multi-topic cells are filed under one node and silently lost to the others; the ToC's per-node cell counts inherit the error.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-904
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the spec's one-node-per-cell constraint and the absence of any split rule. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-905:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] A classification made against outline v2 remains valid under outline v3 — adding a rung after the batches ran can be repaired by a targeted re-pass without re-classifying the neighbours.
+  Evidence it was operative: CLASSIFY_SPEC.md instructs workers to read `outline_v2.md`; its controlled node list contains **no III.2.B**. Outline v3 introduced III.2.B after the 8 batches were classified. assignments.csv now holds exactly 27 III.2.B cells — the same number as cells carrying the `pass` facet — which indicates the NB re-pass, not the batch workers, assigned them, from a scope that was never stated. No recall estimate exists for B-content that the batch workers filed at III.2.N (98 cells) or III.2.0 (49) because B did not exist for them.
+  Why it was unstated: oversight — the re-pass was framed as a correction of the length-rule bug, and the rung addition rode along with it.
+  Type: methodological
+  Related decisions: none registered
+  Testability: testable empirically — re-classify the 98 III.2.N cells against v3 and count migrations to III.2.B.
+  Risk if wrong: High for III.2.B specifically — the rung the summary calls a discovery may be under-populated by construction, and its "27" is an artefact of re-pass scope.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-905
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the node list in CLASSIFY_SPEC.md (no III.2.B), the v3 timestamp (15:45) vs. batch outputs (≤14:44), and the 27/27 coincidence in assignments.csv. Medium-high confidence; the coincidence is suggestive, not proven.
+    Current status: UNTESTED
+
+PRESUMPTION-906:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] Worker-reported confidence (high 1,255 / med 1,077 / low 70) is calibrated — a `high` from batch 3 means the same as a `high` from batch 7, and the distribution is usable as a quality signal.
+  Evidence it was operative: the pilot (pilot_assignments.csv, 13:20) preceded the spec; no post-batch gold-sample check is recorded; the summary reports "2,402 cells classified" with no accuracy figure. The 92% Loughran prior handed to workers (ASSUMPTION-1254) came back at 92.4% — consistent with calibration, and equally consistent with anchoring.
+  Why it was unstated: culturally embedded — self-reported confidence is the conventional output field of LLM classification and its meaning is rarely audited.
+  Type: epistemic
+  Related decisions: none
+  Testability: testable via literature — calibration of LLM self-reported confidence in classification; inter-batch consistency without shared context. Testable empirically — 50-cell blind re-label.
+  Risk if wrong: Medium — the 70 `low` cells are the only ones flagged for review; miscalibration hides errors among the 1,255 `high`.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-906
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the absence of any accuracy measurement in the pipeline record and the prior/outcome match on `voice`. High confidence that it is unstated; medium on risk.
+    Current status: UNTESTED
+
+PRESUMPTION-907:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] The sandbox's original sheet order carries no authored meaning — topical reordering loses nothing that matters.
+  Evidence it was operative: the deliverable is `TL_sandbox_reordered.md`; the "verbatim rule" protects cell *content* and "runs render contiguous" protects local adjacency, but nothing protects global sequence. Yet the sheet is a sandbox — a chronology of Tom's thinking — and the two authored ladders (rows 247 and 292) are dated by position: v3 calls row 292 "earlier." Order was used as evidence in the same file that discards it.
+  Why it was unstated: obvious to participants — "reordering" was the task name, so the loss was the point.
+  Type: epistemic / normative
+  Related decisions: none registered
+  Testability: framework commitment in part; testable empirically — does `sheet_row` survive into the notebook HTML as a recoverable facet? (assignments.csv keeps it; whether the reader can sort by it is unverified.)
+  Risk if wrong: Medium — the development of a position over time is exactly what a tradition-history project would want, and it is now a column, not a view.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-907
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the deliverable's definition and the internal use of row position as dating evidence in outline_v3. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-908:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] Eight parallel workers with no shared context produce mutually consistent classifications, and the one consistency check performed (the row-header rule, ~40 cells) is representative of inter-batch drift in general.
+  Evidence it was operative: outline_v3 RULINGS: "Both batch workers had already inclined that way, so the ~40 cells flagged as inconsistent need no change." One axis was checked because one axis was flagged; no drift check on `about`, `discipline`, `work_order` (195 cells) or node choice at boundaries (III.3 vs III.4, 146 vs 151 cells) is recorded.
+  Why it was unstated: oversight — parallelism was a throughput decision and its consistency cost was not itemised.
+  Type: scaling
+  Related decisions: none
+  Testability: testable empirically — overlap 50 cells across two batches and measure agreement. Testable via literature — inter-annotator agreement under independent annotators with a shared written spec.
+  Risk if wrong: Medium — per-node counts in toc_sandbox.csv (the "thin" flags on I.3.1, I.3.3, I.5) may be batch artefacts rather than corpus facts.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-908
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the single-axis consistency check and the batch architecture. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-909:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] The layered account is a total linear order — every level sits strictly above one and below one — so it can be numbered L0…L9 and gaps can be filled by inserting rungs.
+  Evidence it was operative: the L0–L9 labelling; "[L3 pre-biotic] [L4 cellular] — proposed, no node yet"; the OPEN item asks whether sub-neuronal life needs "an implicit rung between S and N." But the source table describes three *overlapping bands* (A-I-S, S-N-B-P, P-C-S) with disciplines that "contribute at" a band rather than own a level, and a second ladder ordered by a different principle (entropy). Overlap and multiple orderings are features of a partial order or a lattice, not a ladder. The Thousand Brains transfer (ASSUMPTION-1257) brings a column-based *parallel* architecture into a rung that is then treated as *serial*.
+  Why it was unstated: transferred assumption — "ladder" was the metaphor in the source, and a ladder has rungs in a line.
+  Type: structural
+  Related decisions: none registered
+  Testability: testable via literature — levels of organisation as partial orders; mereological vs. causal hierarchies; whether "contributes at" relations compose into a linear order.
+  Risk if wrong: High — the sub-neuronal question (OPEN-179) is unanswerable as posed if the structure is not linear; inserting L3/L4 would be solving a lattice problem with a ladder tool.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-909
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the numbering scheme against the source's own description of overlapping bands. Medium-high confidence; this is the run's principal interpretive finding.
+    Current status: UNTESTED
+
+PRESUMPTION-910:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] "Does the outline hold" has a recognisable answer when Tom reads the reordered document — a human read of 16,102 lines will detect misplacement without a stated criterion for what misplacement looks like.
+  Evidence it was operative: summary §1: the question "can only be closed by reading it." No definition of failure is offered: not a misfile rate, not a list of nodes whose cells should be checked first, not the 70 low-confidence cells as a starting point.
+  Why it was unstated: obvious to participants — the author of the sandbox will know his own material when he sees it.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature — expert review sensitivity on large documents without a checklist; success-criteria specification effects on review yield.
+  Risk if wrong: Medium — the read closes the question by exhaustion rather than by evidence, and a 16k-line read is unlikely to be finished.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-910
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a success-criteria gap in the digest's hand-off. Paired with ASSUMPTION-1256. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-911:
+  Date surfaced: 2026-09-04
+  Statement: [inferred] Authored working files (outline_v3.md with its CORRECTION LOG and RULINGS, CLASSIFY_SPEC.md) are an adequate substitute for the session transcript — closer to the conversation than a digest, and close enough for 14a's "exact quote" standard.
+  Evidence it was operative: this run. 14a quoted outline_v3 and the spec as if they were transcript, and 14b inferred from them. They are better than the 08-30 digest (they were written *during* the work, by the agent doing it, and contain a correction log) but they are still the agent's account of Tom's rulings — "as you incline" is reported speech. The rulings' wording is the agent's.
+  Why it was unstated: oversight — this run's own coverage declaration treats the upgrade from digest to working files as sufficient without saying what the working files still cannot show (what Tom said, what he rejected, what was tried and abandoned before v1).
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — when a transcript for 09-04 becomes reachable, diff the quoted rulings against Tom's actual words.
+  Risk if wrong: Low–Medium — attribution of the two rulings to Tom may be over-firm; the register would then hold agent rulings under Tom's delegation with no record of the delegation's scope.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-911
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Self-referential; inferred from this run's source declaration. Successor to PRESUMPTION-903. High confidence.
+    Current status: UNTESTED

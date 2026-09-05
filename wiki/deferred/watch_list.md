@@ -5183,3 +5183,26 @@ The 2026-09-02 ingest run wrote `inbox/PROCESSED_LOG.md` at 22:11 (833 → 949 l
 ---
 
 *Run completed 2026-09-04.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-05
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: 1 file, `2026-04-21_carroll_singer-mindscape-351.md` — tombstone (`[TRACKED-16: 2026-05-05]`, `status: superseded`, WATCH-001 resolved 2026-05-12). **0 new, 0 untracked.**
+- Channel 2 (agent-exchange deferrals): vault-wide grep for `DEFERRED-HYPOTHESIS` / `WATCH-REQUEST` outside `deferred/` and the agent brief matches only `architecture/assumptions.md` and the 08-23 Cowork summary (format definitions, not items). **0.**
+- Channel 3 (human watch requests): **0 visible — and the channel is still deaf.** `architecture/daily_sync/chat_to_cowork/2026-09-04_chat_summary.md` records a second consecutive failed scrape (Claude in Chrome not connected; browser-pane navigation to claude.ai denied). Any watch request voiced in Chat on 09-03 or 09-04 is invisible to this agent. Blind spot now spans two days.
+
+**Condition checks (Step 3): 0 due.** WATCH-002 (7 checks) and WATCH-003 (8 checks) are weekly, last checked 2026-09-01, next due **2026-09-08**. No fetch, no counter, no check logged.
+
+**State changes since 09-04: none on either watch.** `inbox/PROCESSED_LOG.md` unchanged (949 lines, mtime 2026-09-02 22:11 — no ingest run on 09-03 or 09-04). `review/archive/` still 18 files, latest `2026-08-27_decisions.md`. Both watch slugs appear only in the 09-01 section, as before. No ingest run means no new DEFERRED-CONDITION LEAKAGE instances to report; the five from 09-02 stand as flagged.
+
+**Stale items (Step 4): 2, both flagged 2026-08-25, neither newly stale, no counters moved.** Recommendations unchanged from 09-04.
+
+**Census:** `pending/` **21** (+1 since 09-04: `2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence.md`) · `approved/` 378 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 18 · `PROCESSED_LOG.md` 949 lines. **Review-pass gap: 9 days.**
+
+**Agent 16 Status:** Operational. Idle run — nothing due, nothing in intake, nothing moved, marked, cancelled or re-cadenced. Next action of any substance is 2026-09-08 unless Tom rules on an open flag first.
+
+**Open for Tom (priority order unchanged from 09-04):** (1) DEFERRED-CONDITION LEAKAGE ruling — option (b) is one line to the ingest step; (2) one attended session for WATCH-002's retrieval routes; (3) one-line INTEGRITY FLAG ruling closes WATCH-003; (4) INGESTION-RISK FLAG ruling + `status: pending`-in-`approved/` fix; (5) `content_verified: false` en-bloc filter; (6) run-log archival; (7) Channel 2 question; (8) needs_review tombstone deletion; (9) **Chat→Cowork sync broken two days running — Channel 3 is deaf until Chrome extension is reconnected.**
+
+---
+
+*Run completed 2026-09-05.*

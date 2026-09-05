@@ -1,0 +1,843 @@
+[r0c8] row1 seq1 6w auto_about=- auto_disc=-
+copyright 2021 - 2023 Thomas Loughran
+
+[r0c9] row1 seq2 5w auto_about=- auto_disc=computer science
+See Toward Computational Natural Law
+
+[r1c7] row2 seq3 1w auto_about=- auto_disc=biology
+words/cell
+
+[r2c3] row3 seq1 2w auto_about=- auto_disc=-
+(populated cells)
+
+[r2c6] row3 seq2 6w auto_about=- auto_disc=biology
+(merged cells count as 1 cell)
+
+[r3c27] row4 seq25 10w auto_about=- auto_disc=neuroscience
+row 3 - 600 (columns B - V) subtotal wordcount
+
+[r7c3] row8 seq1 8w auto_about=MacIntyre auto_disc=biology
+consider resurrecting a revolutionary version of MacIntyre's account
+
+[r8c4] row9 seq2 33w auto_about=- auto_disc=-
+committed to holding that these things are possible, and that we are poorer people if we do not accomplish them, and derelict in our duty as human beings if we do not try.
+
+[r9c3] row10 seq1 29w auto_about=- auto_disc=physics;sociology
+consider starting with an account of the LHC, higgs, and the SSC in Texas, and QuarkNet as part of the response of the particle physics community...big changes are possible
+
+[r10c3] row11 seq1 21w auto_about=- auto_disc=-
+consider highlighting the LIGO experiment: huge investment in the best account we have  to take us where we need to be.
+
+[r11c3] row12 seq1 8w auto_about=- auto_disc=-
+ways of illustrating the usefulness of multiple perspectivces
+
+[r12c4] row13 seq1 18w auto_about=- auto_disc=-
+BOSCO day 1: of course we'll forget. But if these were our children....competing narratives, opposite implications; decision framed.
+
+[r13c4] row14 seq1 18w auto_about=Kuhn auto_disc=-
+Kuhn's advice: take the craziest part, take it seriously, centrally, and then reimaging all the rest:  predestination, rearrangement...
+
+[r14c4] row15 seq1 7w auto_about=- auto_disc=-
+POP: standing with those excluded, offended, mistreated
+
+[r15c3] row16 seq1 6w auto_about=- auto_disc=-
+to love is to be free
+
+[r15c4] row16 seq2 3w auto_about=- auto_disc=-
+love is personal
+
+[r15c5] row16 seq3 3w auto_about=- auto_disc=-
+inclination is reactive
+
+[r15c6] row16 seq4 17w auto_about=- auto_disc=-
+inclination towards a person apprehended, known, respected, as a person, is yielding, entering, inviting and invited, mutuality
+
+[r16c3] row17 seq1 6w auto_about=- auto_disc=-
+to be free is to love
+
+[r16c4] row17 seq2 19w auto_about=- auto_disc=theology
+to be free is to apprehend all and respond as you will (Love God and do what you want-Aug)
+
+[r17c3] row18 seq1 327w auto_about=- auto_disc=theology
+Love comes to us as input: we don't initiate it or make it up; it's all given to us and received by us; all Grace. It comes to us as an answer. But eventually we notice that if it were not the answer, if something else were the answer, it would be the wrong answer. If the god we worshipped were an asshole, then we would be, too: we are responsible for our conception of the universe, beginning especially with respect to what's worth doing, worth living for. If God were a tyrant--reigning over the order that so much of religion and government and advertising uses to manipulate and control human beings--we ought to resist that god, rather than capitulate and obey. (Happily, God is not.) Viewed from this perspective, this stance, love--our love--is an output. It is our calculated answer at the most fundamental level to the question of what the hell is going on, and what we should do about it.* Viewed this way, we ourselves are the source of love. We insist on it; we'll take a stand for it. In that regard, we participate in love-motivated creation, in the sourcing and disseminating of the laws (the purpose, and the chosen means) of the universe. We are right in the beginning with the Father, and without us is not anything made that gets made. That word of love--to which we are first converted in time, but from whom that word authoritatively emmenates--is our word (and in that respec ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r17c10] row18 seq2 100w auto_about=- auto_disc=theology
+If humankind is to thrive, we need to let go of any religion that wounds and kills. Some of what we believe about God is actually about us; at times we create God in our own image. In other words, some of us imagine God as punitive, angry, and vengeful because these are aspects of ourselves that make us feel powerful and protected, rather than vulnerable. But we need to exercise a spiritual imagination free of fear and shed the constraints of unhealthy religion. Hate-filled religion needs an exorcism!  From Rev. Dr. Jacqui Lewis in CAC newsletter Dec 2, 2021.
+
+[r17c13] row18 seq3 28w auto_about=MacIntyre auto_disc=theology
+* Expressivist Creation, in the same sense of expressivism about the good, against which M argues especially in Ethics in the Conflicts of Modernity, is hinted at here.
+
+[r18c3] row19 seq1 85w auto_about=- auto_disc=-
+(Returning to this theme with slightly more developed language, later on...) This beautiful dynamic, this loving breath-in/breath-out, makes all the more sense on a fundamental consciousness (FC) perspective. If our own, created consciousness is fundamental consciousness, but from a limited perspective expressed mathematically as our laws of nature, then our awareness/realization of love's centrality emerges in time, and as expressed in culture, in a tapestry of interdependent, mutually illuminating, limited perspectives which in some way expresses the fullness of divine love, interdependence, entanglement of persons.
+
+[r19c3] row20 seq1 24w auto_about=- auto_disc=-
+//worth trying here: doesn't an expressivist account of good, and the corresponding stable-inclination account of truth, contain and reveal freedom at a profound level?
+
+[r19c4] row20 seq2 110w auto_about=- auto_disc=-
+Doesn't love express freedom in an informed, stable way (the only true freedom, not struggling and failing but struggling and succeeding to respond stably, that is, coherently and effectively, to information presented) so as to obtain what you most want to obtain in that context: to choose the good, which is what it is for that end to BE good (at first, your good; and if in concert with others, the human good, perhaps the universe's good), which is through that choice to make what is good, good (without us, is not anything made, that is made, including the very substance of the end, the good, which is loving communion?)
+
+[r20c3] row21 seq1 20w auto_about=- auto_disc=-
+like fundamental forces that unite at a certain stage of development, as do EM and W at high enough energy
+
+[r20c5] row21 seq2 5w auto_about=- auto_disc=-
+truth will set you free
+
+[r20c6] row21 seq3 10w auto_about=- auto_disc=-
+freedom will lead to truth / ultimately, freedom creates truth
+
+[r21c3] row22 seq1 7w auto_about=- auto_disc=-
+is love the propogation of creative agency?
+
+[r21c4] row22 seq2 9w auto_about=- auto_disc=theology
+on that model, to love is to breath God
+
+[r21c5] row22 seq3 53w auto_about=- auto_disc=sociology
+to be loved is to receive creative agency, to be empowered, to be personally authorized (which is why love is personal; to be personally authorized is to become an acting person, an agent, an Agent, a Member of a Community that Acts Together, a Parent, a Friend, a Counselor, an Advocate, a Savior...
+
+[r21c7] row22 seq4 78w auto_about=- auto_disc=-
+to love another (always singular, often repeated, individual gifting in parallel processing) is to empower them personally (not as a means, not as a piece in a machine, not as a step in a process, but as the whole point, the whole source, the reason why; it is to gift divinity, it is to exhale divinity, not to create it but to eternally instance it, give birth to it, beget it, as if the only thing ever happening
+
+[r22c3] row23 seq1 7w auto_about=- auto_disc=-
+full freedom is love and fully love
+
+[r23c3] row24 seq1 14w auto_about=- auto_disc=-
+emergent properties? // nonlocalized // vs localized hidden variables ruled out by Bell's Theorem
+
+[r23c4] row24 seq2 34w auto_about=- auto_disc=-
+(much later: emergent properties through the lens of assembly theory, cronin & walker: crawling through the possible to the actual; building on what grows ever larger in time (independently? of growth in space?); ...
+
+[r24c3] row25 seq1 6w auto_about=- auto_disc=-
+Truth is a stable (enduring) relationship
+
+[r24c4] row25 seq2 12w auto_about=MacIntyre;Aquinas auto_disc=-
+Intractable Disputes about the Natural Law (IDNL) p. 21: MacIntyre on Aquinas:
+
+[r24c5] row25 seq3 63w auto_about=- auto_disc=-
+"Truth,that is,is a relationship to be achieved between a particular intellect and some object about which it judges,a relationship that satisfies two conditions: first,that how the thinker conceives of the object has become identical with how that object is and, secondly, that the thinker conceives of the object as she or he does, because and only because that is how the object is"
+
+[r24c7] row25 seq4 232w auto_about=- auto_disc=physics;biology;theology
+Aq has a broader notion of T than this, which won't as stated (here, by M) cover God's relationship to things known. They are in some way identical with God's knowledge, but they are how they are because of how God conceives of them, not the other way around. So also for products of art, craft, any creative enterprise. The central question in an incarnational and christic universe is how much of the divine in us is creative with respect to the balance of creation. In raising children, very much so (raise up a child...). In setting examples, interceding, even reconceiving: these involve free acts; are creative; are emergent properties; not "localized" in the objects of cognition but relational, creative, unfolding. Perhaps we are inescabably entangled with all things known and knowable, bringing the world to pass as we relate to it. So "Truth is a maximally stable relationship between the universe as knowing and the universe as known." Insofar as there are multiple ways to conceive of itself in stable ways, so far is truth relative to conceptual schemes. The realist hope as embodied in science and more fundamentally in rational inquiry is that the universe (we) may become one in knowing, with multiple approaches to knowing achieving a kind of unity that rests on mutually recognized complementarity; in short, that the universe is coherent, in both theoretical and practical orders ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r24c10] row25 seq5 125w auto_about=- auto_disc=theology
+so "a house is midway between the knowledge of the builder who made it, and the knowledge of the one who gathers his knowledge of the house from the house already built." Ia Q. 14 a.8 ad 3. But in the context of whole ways of knowing, there is an element of choice, and thus the object in the middle is not only dictated to the created knower, but is negotiated with him. We created knowers are thus co-creators. In that sense, without us (in Christ, in mature humanity, as a whole) is not anything made, that is made. If we would agree, in full K circumstances, as to how to behold a given object, then there is a fact, and truth, about that object.
+
+[r25c4] row26 seq1 4w auto_about=- auto_disc=-
+between intellect and object
+
+[r25c5] row26 seq2 10w auto_about=- auto_disc=-
+"Intellect": language? cmty? humankind? My truth, your truth, objective truth?
+
+[r26c5] row27 seq1 24w auto_about=- auto_disc=-
+T as intellect conforming to object, or object conforming to intellect, or both? A negotiated settlement? A peace-building account of Truth, in a way.
+
+[r26c6] row27 seq2 32w auto_about=- auto_disc=-
+a realistic account of interplay between intellect and passions, and between accepting and transforming, seems needed, lurking in the background of any acct of truth, since truth is sought by human beings
+
+[r27c3] row28 seq1 6w auto_about=- auto_disc=-
+Rhetoric, or reasons from different perspectives?
+
+[r27c4] row28 seq2 18w auto_about=- auto_disc=sociology
+An important distinction: can we find a place for respect for the truth, across the boundaries of traditions?
+
+[r27c5] row28 seq3 84w auto_about=- auto_disc=-
+IDM p. 22:  "What is necessary in order to counter that influence is a form of intellectual and moral asceticism, both in our thinking and in the ways in which we invite others to assent to our theses and arguments. We need to avoid allowing our own thinking to give expression to our prejudices and to abstain from a rhetoric that is designed to move others, not by the reasons adduced, but by the passions to which the utterance of those reasons gives expression."
+
+[r27c7] row28 seq4 43w auto_about=- auto_disc=-
+IDM p.. 23: If I am to engage with you in shared rational enquiry,we must both be assured that we can expect the other to speak the truth, as she or he understands it. There must be no deceptive or intentionally misleading speech.
+
+[r27c8] row28 seq5 136w auto_about=Plato auto_disc=psychology
+TL: 'Not intentionally misleading', all-things-considered. Some casuistry is called for here, Jesuitical or otherwise. Speech has multiple effects; among these may be roads that lead to truth in various ways. One of those may be through consideration of a foreseen mistake, not intended but permitted, to enable fruitful exploration of a familiar intellectual trap, say. Plato's Republic is full of such multi-impactful speech. Such foreseen and beneficial rethinking is entirely relevant as to the moral status of the utterance; there is no intent to mislead, but there may be a foreseen mistake, whose uncovering is optimized even at the point of introducing the circumstances in which the mistake is likely to be made. This is not intentional misleading, but it may seem to be to some under some circumstances, and not without evidence for their perceptions.
+
+[r28c3] row29 seq1 1w auto_about=- auto_disc=-
+compatibilism
+
+[r28c4] row29 seq2 11w auto_about=- auto_disc=-
+I've been a libertarian UG, and G (vs DV and KJC)
+
+[r28c5] row29 seq3 32w auto_about=- auto_disc=-
+I've come to see, and will now show you, how to see the world with a compatibist lens, and the advangates for rational inquiry generally and for natural law theory in particular
+
+[r28c6] row29 seq4 8w auto_about=- auto_disc=-
+for rational inquiry, it grounds an realist hope
+
+[r28c7] row29 seq5 4w auto_about=- auto_disc=-
+for natural law, it
+
+[r28c8] row29 seq6 55w auto_about=Aquinas auto_disc=theology
+for interpreting Aq, it makes sense of CCofP; predest; God's K as Causal; need to give account for why will does not choose the good as apprehended, confirmation of the good, etc...as if St. T just didn't get how far out of bounds these positions were with moral rectitude, forcing apologies (Sikora, AC ftnote 92
+
+[r29c3] row30 seq1 3w auto_about=- auto_disc=-
+integral human development
+
+[r29c5] row30 seq3 11w auto_about=- auto_disc=-
+love confers being, subject to the capacity of what is loved
+
+[r29c6] row30 seq4 31w auto_about=- auto_disc=-
+being unfolds in time; potential for being (capacity) requires development. In the case of human beings, love confering being requires openness, hope and action w/r/t to full range of negotiated potentialities
+
+[r29c7] row30 seq5 19w auto_about=- auto_disc=-
+integral human development is thus the way love unfolds toward human beings insofar as they have capacity for growth
+
+[r29c8] row30 seq6 18w auto_about=- auto_disc=-
+these capacities are not for us to dicate. Capacities, like all things that are, are relational, negotiated. W
+
+[r29c9] row30 seq7 19w auto_about=- auto_disc=biology
+find reference to biologist who makes room for empirical lamarckian evolution by appeal to natures that unfold through experience
+
+[r30c3] row31 seq1 4w auto_about=- auto_disc=physics
+music and quantum entanglement
+
+[r30c4] row31 seq2 8w auto_about=- auto_disc=-
+exploring while connected to the unseen and unseeable
+
+[r30c6] row31 seq4 2w auto_about=- auto_disc=-
+Jura Margulis
+
+[r30c8] row31 seq5 5w auto_about=- auto_disc=-
+entanglement with stable tendencies emerging
+
+[r30c9] row31 seq6 12w auto_about=- auto_disc=physics
+exploring through entanglement; creativity within the bounds of being, quantum tunneling included
+
+[r31c3] row32 seq1 8w auto_about=- auto_disc=physics
+analogy of quantum tunneling (maybe more than analogy)
+
+[r31c4] row32 seq2 4w auto_about=- auto_disc=-
+assessing possibilities should be
+
+[r32c3] row33 seq1 2w auto_about=- auto_disc=-
+Artificial intelligence
+
+[r32c4] row33 seq2 5w auto_about=- auto_disc=psychology
+ends are not psychological states
+
+[r32c5] row33 seq3 85w auto_about=- auto_disc=physics;philosophy;psychology
+M p. 50 IDM: "But the kind of finality that an end possesses, so that it is not only that for the sake of which actions are performed, but also that by appeal to which we can understand which types of actions should be performed and why, cannot belong to any psychological state. So the project of constructing a moral teleology that has been evacuated of its metaphysical content by the erasure of the notion of an end turns out to be an incoherent project."
+
+[r32c7] row33 seq4 122w auto_about=- auto_disc=physics;philosophy
+but what about my all-things-considered choices about how to live my life, pursue the highest good in that sense...doesn't that deliberation take action-guiding shape an a preference, a choice, the setting of a direction, a free act? And what is the nature, the metaphysical basis, that picks some of these trajectories as "worthwhile" and fullfillling? What is the basis for worth, here, for valuation? The ends? My nature? Nature? Isn't this a negotiated settlement in which my say--not without information, but neither without me--is definititve? Here's an answer: love is the metaphysical foundation, the gift of being and of freedom to me, of by me, to others, a lot or a little. Who is to say? In the end, me. And you.
+
+[r32c10] row33 seq5 103w auto_about=MacIntyre auto_disc=psychology
+Way later (1/16/21) on rereading: M's point is that ends don't just describe what is aimed at, but what should be, and thus cannot be psychological states. (A real problem for pCRm, since everything is a psychological state.) So there must be some distinction: not my present psych states, not simply that for anyone at any time, except perhaps for those states constituting the divine mind, the whole, maximally aware of the optimal interconnectedness not of its parts--it has none--but of its perspectives, of which it has many, and which perhaps I and you and we all are one (the p in pCRm.)
+
+[r32c11] row33 seq6 94w auto_about=MacIntyre auto_disc=psychology
+Counterfactuals about the impact of additional information on psychological states have the remove from current states required by M's critique of the simple identification of psychological states. They are more than present motives, the end of the line for chains of current reasoning. They are normative (if incrementally and tentatively); claims about sufficiency (as end of the line not for current reasons but for any defensible reason) can be made for reasons and can be empirically justified as the best accounts so far, aiming at accounts which cannot be overturned in any stable way.
+
+[r32c12] row33 seq7 180w auto_about=Aristotle auto_disc=sociology;psychology
+If these features of counterfactual claims about the impact of information--this is good, and no more information will show it not to be--are sufficient to ground all the features which present psychological states cannot provide, then the claim that ends are not psychological states is too fast. Indeed they are not and cannot be identified with just any psychological state. But there are some psychological states which can align in content with proper claims about ends; these are the psychological states of virtuous (well-formed, in contact with information through formation) and adequately-informed members of stable communites. And if they align in content, why not suppose also that they align in responsibility: that these are the psychological states of persons so configured is precisely the reason why the reasons they give, the ends they cite, are normative. Persons ignorant of those ends are, as Aristotle says, not ignorant but wicked. It is their character that is flawed, not their current understanding of the facts. So this appeal to counterfactuals about information is a sufficient grounds for their normative role as ends.
+
+[r32c14] row33 seq8 60w auto_about=- auto_disc=-
+Also, there is a reductio argument available: suppose such counterfactuals obtained, but ends were aligned with some other standard. It would follow that optimally-informed persons would deviate from those ends. So it would be contrary to practical reason to pursue those ends. The resulting standards would be both irrational and unnecessary (doing no useful work, and in fact, only harm.)
+
+[r33c3] row34 seq1 2w auto_about=- auto_disc=biology
+genetic engineering
+
+[r33c5] row34 seq2 17w auto_about=- auto_disc=-
+of course ends function like this. But they can also be deliberated about (IDM page ref _____)
+
+[r33c6] row34 seq3 10w auto_about=- auto_disc=-
+consider using the "swapping expected psyschological outcomes" thought experiment here
+
+[r33c7] row34 seq4 99w auto_about=MacIntyre auto_disc=sociology
+And if I choose a narrow path...to love little? I am thereby susceptible to challenge (which I may never choose to consider, but to which I remain vulnerable nonetheless), which can alter my stance--my relationship to the world is thereby rendered unstable--by transformative experience which others understand and control, and which I do not. I am in that sense, less free. In M's terms: come to imaginatively inhabit this (loving) tradition, and you will be transformed. It is rationally/theoretically & practically/humanly superior. Says who? Says you. If not you, then not humanly superior, but under these conditions, not others.
+
+[r34c3] row35 seq1 23w auto_about=- auto_disc=-
+Love is an empircal claim: this is for you, what you want, what you'll choose. I'm on your side. Get bigger...you'll love it.
+
+[r34c4] row35 seq2 39w auto_about=- auto_disc=-
+We should get good at making that claim provably. At advancing the craft of loving well. Of raising up children in ways they should go--maximally free and loving--so that when they are old they will not depart from them
+
+[r34c6] row35 seq3 11w auto_about=- auto_disc=-
+(If a good man strike or reprove me, it is kindness)
+
+[r34c7] row35 seq4 19w auto_about=- auto_disc=-
+this is rhetorical control, but control to invite, to liberate, to empower informed choice...it is an offering in love.
+
+[r34c8] row35 seq5 22w auto_about=- auto_disc=-
+A bold claim here: choices not to love are uninformed and potentially informable. An empirical claim. Here's how to take the measurement.
+
+[r35c3] row36 seq1 13w auto_about=- auto_disc=-
+Proving love. Demonstrating power, effective invitation, maximal liberation, humble submission, fulness of joy
+
+[r35c4] row36 seq2 15w auto_about=- auto_disc=-
+(By this they will know that the Father sent me, that you love one another.)
+
+[r37c3] row38 seq1 6w auto_about=- auto_disc=philosophy
+dialectic: binds elements into a whole
+
+[r37c4] row38 seq2 15w auto_about=- auto_disc=-
+does the whole have a precise interpretation, such as a deductive argument does? Perhaps not
+
+[r37c5] row38 seq3 118w auto_about=Aquinas auto_disc=philosophy;sociology
+perhaps the whole, the song that dialectic sings, is a dynamic entanglement of elements, mutually enlivening and limiting one another in an illumnating/guiding, beneficial/hopeful, beautiful/tantalizing way. The right side of these marks of the true,  the good and the beautiful are dynamic elements. There is no fixed account of them, and the first principles from which we argue deductively are held in place and thereby justified by the very promise of this very emerging coherence. So to interpret a whole system of thought and practice, such as St. T's, is to embrace a tradition of inquiry, as much a direction a current destination. To interprent is to lock in the direction, coherent with but surpassing the answers provided.
+
+[r37c8] row38 seq4 45w auto_about=- auto_disc=physics
+(this is why physicists are one with Newton, even as they embrace Einstein, and one with Einstein, even as they embrace entanglement. Current progress plus accepted method, both promising but open to revision, is the whole which physicists accept. (So it seems from the outside.)
+
+[r38c3] row39 seq1 15w auto_about=- auto_disc=-
+Vs Mac:  derivation of the natural law from reason vs by reason from inclinations, all-things-considered.
+
+[r38c4] row39 seq2 39w auto_about=Porter auto_disc=-
+Porter seems right (vs. MacInture) that NL precepts are not derived as per se nota prerequitites of practical reason, but rather from human inclinations in the context of a drive for a complex blending of goods in whole life.
+
+[r38c5] row39 seq3 4w auto_about=Porter auto_disc=-
+Porter, p. 81 IDM
+
+[r38c6] row39 seq4 94w auto_about=Aquinas auto_disc=-
+More specifically,Aquinas makes it clear that reason in its practical operations always presupposes a rational desire for some perceived good,which in turn presupposes an intellectual grasp ofthe good in question as both attainable and in some way consistent with the agent’s overall happiness. 24 Thus, reason in its practical operations presupposes a whole array of judgments,more or less well developed and articulated, about the final end ofhuman life,the individual’s own proper path to this end, and the way in which the desideratum at hand relates to the attainment ofthis end (I, 1.1; II-II 4.7).
+
+[r39c3] row40 seq1 4w auto_about=- auto_disc=-
+vs Grisez and Finnis
+
+[r39c4] row40 seq2 54w auto_about=- auto_disc=-
+P also right vs Grisez and Finnis, not from inclinations as rational and exceptionless norms, but as messy practical judgements about how to pursue the various goods toward which we are inclined, in an all-things-considered way (with "good in general", the end in this deliberation among blending of ends now functioning also as means)
+
+[r39c6] row40 seq3 57w auto_about=Porter auto_disc=-
+Porter IDM (NL) p. 83: "The desire for,and voluntary pursuit of,the objects ofthe inc linat io ns does not presuppose a speculative theory, about the inclinations or anything else; to this extent, at least,those who would ground the precepts of the natural law in the spontaneous apprehension and pursuit ofthe natural aims of human life are right.
+
+[r40c3] row41 seq1 8w auto_about=- auto_disc=sociology
+Reconciliation between traditions requires a rhetoric of resonance
+
+[r40c4] row41 seq2 11w auto_about=- auto_disc=-
+See Philpot's final section of his essay in IDM p. 185ff
+
+[r40c5] row41 seq3 36w auto_about=MacIntyre auto_disc=sociology
+the aim is MacIntyrean: look carefully with resources from one tradition into the problems of another, but within the bounds of both practicing and facilitating imaginative inhabitation of the rival tradition as a 2nd first-language speaker.
+
+[r40c6] row41 seq4 36w auto_about=- auto_disc=philosophy;theology;sociology
+But in emerging Thomistic T, this requires seeing Christ in the inhabitants of the rival tradition, and finding what is wonderful in what they advance (or mean most to advance: see section on dialectic and promise)
+
+[r40c7] row41 seq5 87w auto_about=Singer auto_disc=sociology
+eg: for Utilitarians, see them as guardians of respect for universality that rightly emerges from respect (whether or not adequately articulated by Utils) for equal dignity of all persons, drawn to consistent commitment (think Peter Singer), following the arguments where they lead and living as reason seems to require. Invite them to lead the way by considering for the sake of its utilitarian value a tradition that grounds that equal dignity in an account of human prosperity (the great-making feature of any such acct on Util grounds)
+
+[r40c9] row41 seq6 67w auto_about=Charles Taylor auto_disc=philosophy;sociology
+a Tradition proves itself by providing evidence of deep immersion into not just achievements but promise of its rivals..."persuading them, while hiding from them that they are not healthy"...or rather, not at all hiding, but neither emphasizing. From Philpott's essay in IDM: "Rather,as the philosopher Charles Taylor argues,an overlapping consensus can and ought to arise from a convergence among interlocutors arguing from their tradition’s deepest warrants. 31"
+
+[r40c10] row41 seq7 89w auto_about=- auto_disc=biology;philosophy;sociology
+note a parallel: seeing the promise in a tradition, and in a person, are both requirements for imaginately inhabiting their perspectives; both involve dialectical grasp of their whole perspectives, or rather glimpses of the power that keeps them attracted and held together around a perspective: largely the power of promise. Unfulfilled and inarticulate recognition of promise is part of the attractive feature of a whole system of thought and practice. In it lies the key to persuasion, or more fundamentally the sharing of insight, the loving conferal of being.
+
+[r41c3] row42 seq1 15w auto_about=- auto_disc=-
+Is persuading to the truth or good or beautiful (confering, illuminating) a conferal of being?
+
+[r41c4] row42 seq2 29w auto_about=- auto_disc=-
+Somehow it seems so. It is reorganizing, conveying a pattern, which is causal in the conveying and in what is conveyed (like lighting a fire, or sharing executable code.)
+
+[r41c5] row42 seq3 97w auto_about=Aristotle;Plato auto_disc=physics;philosophy
+If so, this sharing is an act of love (at its core, at its promise, at the level of what is good, true, and beautiful about that sharing.) Confering insight, desire, appreciation, is a kind of activation, conferring the active attachment to promise, a "potency", which is a mark of being. The union of elements is not accidental in the Thomistic/Aristotelian sense, not a "mere heap" but a being, a theory, a unity of elements whose coherence testifies to the existence of a pattern, a form (recalling Plato's explorations in the dialogies, or Aristotle in the Metaphysics.)
+
+[r41c8] row42 seq4 26w auto_about=- auto_disc=-
+So to see into the promise, past the impediment of the problems which are so precisely because they block promise, and to affirm, clarify, and deliver
+
+[r42c3] row43 seq1 15w auto_about=- auto_disc=sociology
+Advancing one's own tradition is not accidentally related to encouraging the advancement of one's rivals
+
+[r42c4] row43 seq2 94w auto_about=- auto_disc=sociology
+vs. Philpott, end of IDM essay:  "More straightforwardly consistent with his thinking is my general project:to reason about an urgent contemporary political issue from within one tradition.I have done so in the hope that ifthe members of a tradition become convinced that certain political practices comport with their deepest commitments,they will then be prepared to share, and t o e nt er into a consensus upon,these practices with members of other traditions.It is up to other traditions,ofcourse,to develop their own thinking about restoring political orders,whose conclusions they may then offer up in reciprocal fashion."
+
+[r42c7] row43 seq3 48w auto_about=- auto_disc=sociology
+Instead, it is up to each tradition to offer evidence of its own success, which is necessarily to show that it has the resources to (vs. "overcome in contest") bless other traditions with its insight and be blessed by theirs, looking for unity insofar as both sides agree.
+
+[r42c9] row43 seq4 34w auto_about=- auto_disc=-
+How can one prove stability, fruitfulness or promise without sustained interaction? And do we (overcome/bless, be corrected/blessed) profitably interact with the weakest, or the strongest, versions of alternative views? Jiu-jitsu vs Kung Fu wars
+
+[r43c4] row44 seq1 62w auto_about=MacIntyre auto_disc=-
+has M lost sight of this? p. 341 IDM. (But note his empahasis on "in the end": it is up to them in the end, but also up to you, as sharing in the order of execution of providence. Find out how to appeal to them, and don't let it end the wrong way. This is where intercessory prayer begins and ends.
+
+[r43c5] row44 seq2 139w auto_about=- auto_disc=physics
+What makes my position not relativistic is my commit me nt t o holding that my views on substantive moral questions can be maintained with integrity only for so long as and insofar as I can show that they can be sustained against their rivals by rational argume nt, so also committing myselfnot just to continuing disagreement, but to continuing confl ict with those who reject the precepts ofthe natural law and with those who uphold the authority ofpositive law that is at o dds with the natural law.And commitment to this kind of confl ict is incompatible with the norms ofthe liberal state.Notice that nothing in this position requires that my views should in fact become persuasive to those who disagree.That is in the end up to them,not up to me or to those who agree with me.
+
+[r43c9] row44 seq3 55w auto_about=- auto_disc=sociology
+It is up to them, but also up to me as advancing a sound argument from premises (theoretical and practical) that are bound in my tradition...it is my job in argument to make the whole appeal, rather than to assesrt the parts and fault the listener with failure to see their boundedness in the whole.
+
+[r44c4] row45 seq1 25w auto_about=MacIntyre auto_disc=-
+p. 340: here's the need for rhetoric and the boundedness of premises in argument in a larger, resonant whole, in a single passage from M:
+
+[r44c5] row45 seq2 114w auto_about=- auto_disc=sociology
+Kaveny’s discussion of the effects of different types of rhetoric makes it clear that, if the structure of our reasoning about the goods of family life is to become compelling to those with whom we are in contention, our choice of rhetoric will not be unimportant. Reflection on these points may suggest that the argument against the permissibility of abortion presupposes a conception of the goods of family life that may become fully intelligible to those with whom we are in contention only when presented to them as exemplified in the lives of actual families functioning well within larger communities, of families directed over extended periods oftime towards the achievement of their common goods.
+
+[r44c9] row45 seq3 54w auto_about=- auto_disc=-
+...in fact, families which love one another, and which are held out in hope of illustrating that love and inflaming a desire for it, even while communicating it freely. This is the role of rhetoric, the craft of loving well in communication, of inviting others into an attractive perspective, of blessing them with speech.
+
+[r45c3] row46 seq1 11w auto_about=- auto_disc=-
+2016 gallup: 89% contraception is morally acceptable; 43% say abortion is
+
+[r45c4] row46 seq2 16w auto_about=- auto_disc=-
+so 11% find contraception morally unacceptable; 57% do not think abortion is morally acceptable (put generally)
+
+[r45c5] row46 seq3 67w auto_about=- auto_disc=-
+republicans, 2.5x more likely to find aboration morally unacceptable than dems (24% acceptable v 62% democrats), thus more likely well formed conscience on prolife issues, are 87% (vs 87 indep, 94 dems) morally accepting of abortion. Remove the 24% and take the 76% republicans opposed to abortion, subtract 11% opposed to contraception: 65% (nearly 2/3) of republicans in 2016 are opposed to abortion but accepting of contraception.
+
+[r45c8] row46 seq4 188w auto_about=- auto_disc=sociology
+then add 38% of dems, who think aboration is not morally acceptable, and subtract 6% of those who do not find contraception morally acceptable, netting 32% who think abortion is morally unacceptable but contraception is not. Then 56 -13% of independents, or 43%. Then weight them (an approx for now) equally as to political affiliation:  (.29 x .65) + (.33 x .32) + (.34 x .43) = over 44% of the american electorate who find abortion morally unacceptable but contraception morally acceptable. That is well over (103 of 235M) one hundred million adults in the US who fail to see that contraceptive intent is the same intent as abortifacient intent. Either that, or maybe contraception can be used without contraceptive intent, in the sense that the value of the product of conception is outweighed by reasons for contraception or abortion. So perhaps many of these---describe one or two mindsets--find contraception as a method of family planning acceptable without any production of abortifacient intent in case of failed contracteption (as HV points out rightly can happen with contraceptive use, and as Wee admits can happen with NFP as well.)
+
+[r45c14] row46 seq5 28w auto_about=- auto_disc=-
+this paragraph moves way too fast, but can it be done slowly and carefully? I think so. Gender correction, eg. careful analysis of intent re contraception, abortion, ...
+
+[r45c15] row46 seq6 19w auto_about=- auto_disc=-
+Electorate, Contraception yes, Abortion no, as E CyAn: R, D, I for Republican, Democratic, Independent, 2016 Pew electorate data
+
+[r46c3] row47 seq1 1w auto_about=- auto_disc=-
+calculations...>>
+
+[r46c15] row47 seq2 5w auto_about=- auto_disc=-
+R % of E CyAn
+
+[r46c16] row47 seq3 5w auto_about=- auto_disc=-
+D % of E CyAn
+
+[r46c17] row47 seq4 5w auto_about=- auto_disc=-
+I % of E CyAn
+
+[r46c19] row47 seq6 2w auto_about=- auto_disc=-
+2016 Electorate
+
+[r46c20] row47 seq7 4w auto_about=- auto_disc=-
+# of E CyAn
+
+[r48c3] row49 seq1 20w auto_about=Ratzinger auto_disc=sociology;history
+grounding morality in empirical/historical dance of traditions provides responses to Ratzinger's central questions (as McKenny lists them IDM p. 217
+
+[r48c4] row49 seq2 39w auto_about=- auto_disc=theology;sociology
+If the Church’s claims about natural law are true, why has it proved so difficult in contemporary Western societies to secure rational agreement on what the Church teaches are the moral foundations of a just social and political order?
+
+[r48c5] row49 seq3 36w auto_about=- auto_disc=theology
+Why is it so often the case that outside the Catholic Church and its magisterial authority the exercise of reason leads to judgments about moral issues that are inconsistent with those the Church attributes to reason?
+
+[r48c6] row49 seq4 34w auto_about=- auto_disc=theology
+Why does it seem to people outside the Church (and to many people within) that the Church’s moral teachings and even its doctrine of natural law itself reflect a merely parochial form of reason?
+
+[r49c3] row50 seq1 8w auto_about=Ratzinger auto_disc=-
+responses to Ratzinger's questions from a C-T standpoint:
+
+[r49c4] row50 seq2 26w auto_about=- auto_disc=sociology
+The need for communities and fora for their interactions has been obscured, and the necessary institutions lacking, for NL evidence to be recognized or systematically produced.
+
+[r49c5] row50 seq3 34w auto_about=- auto_disc=sociology
+The interdependency of reason on noncognitive formation in communities has been lost (needing Compatibiilist instinct to recognize it), without which an adequate understanding of the interplay of reason and tradition/authority cannot be adequately understood.
+
+[r49c6] row50 seq4 79w auto_about=- auto_disc=theology;sociology
+The church generally, those within and those without have been generally blind to the dependency of the exercise and thus deliverances of reason on kinds of community and institutions that no longer exist, and thus the remarkably inferior position the church is in when it advances deliverances wrapped in language of universal reason but in fact groundlessly, as if only children, but no adults remain in the tradition. One cannot become an adult in the tradition on one's own.
+
+[r50c3] row51 seq1 10w auto_about=- auto_disc=-
+on competing notions of happiness and determinacy by practical reason
+
+[r50c4] row51 seq2 6w auto_about=MacIntyre;Flannery auto_disc=-
+MacIntyre on Flannery IDM p. 335
+
+[r50c5] row51 seq3 82w auto_about=Aristotle;Flannery auto_disc=-
+Flannery in the course ofhis elucidation ofAristotle argues that “the inadequacy of bad acts” need not be “immediately apparent to those who perform or contemplate them” (p. 231 ) and this perhaps because, although their reasoning presupposes some particular conception of their happiness, their final end, that conception has never been made explicit, or perhaps because even when someone has “an erroneous notion of happiness” it is not necessarily obvious that his practical reasoning—or the way he conducts his life—is flawed” (p235.).
+
+[r50c8] row51 seq4 18w auto_about=- auto_disc=-
+incorporate here Socrates's discussion with G of A's erroneous conception of happiness//persuade while hiding//full strategy of the Republic
+
+[r50c9] row51 seq5 53w auto_about=- auto_disc=-
+on this point: note that in the new city, G''s presumptive role restores to him the life to which Gyges' ring would provide him access, but without the risk which the ring's powers are needed to minimize. Cf. S's praise of the character of G and A at the start of Book II
+
+[r51c4] row52 seq1 6w auto_about=Plato auto_disc=-
+compare with Plato in the Republic
+
+[r51c5] row52 seq2 65w auto_about=- auto_disc=-
+w/ G&A, S shows that they do have competing misconceptions of happiness and that their inordinate passions keep them from recognizing this. Evidence that their passions are disordered is the way S uses those passions to persuade them of problems in their systems and of a superior system, leading them by their disordered passions while hiding from them the fact that they are not healty.
+
+[r52c3] row53 seq1 4w auto_about=- auto_disc=-
+Participant outcomes for readers
+
+[r52c4] row53 seq2 5w auto_about=- auto_disc=-
+pretest/posttest;  expectations; "rate this book"?
+
+[r52c5] row53 seq3 6w auto_about=- auto_disc=-
+backward designing a text? a narrative?
+
+[r52c6] row53 seq4 5w auto_about=- auto_disc=-
+possible pilot test of book-as-instrument?
+
+[r52c7] row53 seq5 9w auto_about=- auto_disc=-
+align pilot self-test results with expert results (pilot 2)
+
+[r53c4] row54 seq1 13w auto_about=- auto_disc=-
+perhaps a highly general description, a fuller technical description, and an associated rubric?
+
+[r53c5] row54 seq2 6w auto_about=- auto_disc=-
+perhaps: instilling faith, hope and love?
+
+[r54c5] row55 seq1 2w auto_about=- auto_disc=-
+for hope:
+
+[r54c6] row55 seq2 17w auto_about=- auto_disc=-
+e.g. provide grounds for hope that fundamental moral disagreement  can be rationally overcome on a public scale
+
+[r54c7] row55 seq3 67w auto_about=- auto_disc=computer science;sociology
+rubric, roughly:  can identify principled MD; can give an account of origin of MD via fragmentation of cmty; can describe conditions for restructuring disagreement into enriching and enlightening diversity; can illustrate incommensurability between traditions, describe conditions for rational encounter between them and the possibility of resolution of fundamental disagreement among them; can illustrate (name, model) strategies of persuasion of mature members one tradition toward adoption of another.
+
+[r55c5] row56 seq1 2w auto_about=- auto_disc=-
+for faith?
+
+[r56c5] row57 seq1 2w auto_about=- auto_disc=-
+for love?
+
+[r57c3] row58 seq1 4w auto_about=- auto_disc=-
+can virtue be taught?
+
+[r57c4] row58 seq2 7w auto_about=- auto_disc=-
+reread the Crito, then Dep Rational Animals
+
+[r57c5] row58 seq3 10w auto_about=- auto_disc=-
+craft of education as turning the soul/Phaedo acct of Socrates
+
+[r57c6] row58 seq4 8w auto_about=- auto_disc=computer science;sociology
+Machine Learning, social engineering, and cultivation of virtue
+
+[r58c4] row59 seq1 16w auto_about=- auto_disc=-
+virtue: formation in such a way as to optimize the gathering of and responding to inforrmation
+
+[r58c5] row59 seq2 15w auto_about=- auto_disc=-
+(e.g. only the experiences of a courageous person can illuminate how battle should be conducted
+
+[r59c3] row60 seq1 7w auto_about=- auto_disc=-
+Include lots of science in this text?
+
+[r60c4] row61 seq1 2w auto_about=- auto_disc=-
+EM spectrum
+
+[r61c4] row62 seq1 6w auto_about=- auto_disc=-
+charge and other fundamental (conserved) properties
+
+[r62c4] row63 seq1 3w auto_about=- auto_disc=-
+C of Energy
+
+[r63c4] row64 seq1 4w auto_about=- auto_disc=-
+expanding universe/red shifted spectra
+
+[r64c4] row65 seq1 1w auto_about=- auto_disc=physics
+relativity
+
+[r65c4] row66 seq1 1w auto_about=- auto_disc=-
+complementarity
+
+[r66c4] row67 seq1 2w auto_about=- auto_disc=physics
+quantum tunneling
+
+[r67c4] row68 seq1 2w auto_about=- auto_disc=physics
+quantum entanglement
+
+[r68c4] row69 seq1 5w auto_about=- auto_disc=-
+information encoded in phys/chem/bio processes
+
+[r69c4] row70 seq1 4w auto_about=- auto_disc=-
+self-editing information systems (CRISPR)
+
+[r70c4] row71 seq1 3w auto_about=- auto_disc=-
+emergence of intelligence
+
+[r71c4] row72 seq1 2w auto_about=- auto_disc=-
+"artificial" intelligence
+
+[r72c3] row73 seq1 2w auto_about=- auto_disc=-
+collective intelligence
+
+[r72c4] row73 seq2 6w auto_about=- auto_disc=-
+Wait But Why on Musk's Neuralnet
+
+[r73c4] row74 seq1 4w auto_about=- auto_disc=physics
+quantifying physicality in sport
+
+[r73c5] row74 seq2 5w auto_about=- auto_disc=-
+right amount of energy exchange
+
+[r73c6] row74 seq3 28w auto_about=- auto_disc=physics;psychology
+distributions and terms: player aptitude; ;game situation: ref perception: ref judgement; ref responsivelness (whistle terms): can write an equation of probability distributions for a net equation governing physicality
+
+[r73c8] row74 seq4 21w auto_about=- auto_disc=-
+"can't teach that": elements we cannot model (analyze) well, but can identify, like "average time to optimal center of gravity positioning"
+
+[r74c4] row75 seq1 12w auto_about=Aristotle auto_disc=-
+quantifying love (= effective love: Aristotle: doing X is doing X well)
+
+[r74c5] row75 seq2 52w auto_about=- auto_disc=physics
+tools: energy savings; catalysis; quantum tunnelling; entropy and free energy; order matters more as temp rises; counterfactual energy savings; value of love measured by real but unquantifiable energy savings (i.e., love does you good, but more immeasurably (perhaps not infinitely, but incommensurably) more good than you happen to experience as a result.
+
+[r75c4] row76 seq1 18w auto_about=- auto_disc=computer science
+quantifying necessary for programming, necessary for AI, necessary for human future, necessary for personal unfolding of the universe
+
+[r75c5] row76 seq2 22w auto_about=- auto_disc=-
+is programing persons ethical? How does it differ from programming animals? What are the ethical guidelines there? (Thanks Liz, for this point)
+
+[r76c3] row77 seq1 60w auto_about=- auto_disc=-
+To love is not to give of your riches but to reveal to others their riches, their gifts, their value, and to trust their capacity to grow. So it is important to approach people in their brokenness or littleness gently..... so gently not forcing yourself on them but accepting them as they are, with humility and respect. by Jean Vanier
+
+[r77c3] row78 seq1 14w auto_about=- auto_disc=-
+what kinds of people are needed to advance a givens stage of an argument?
+
+[r77c4] row78 seq2 58w auto_about=- auto_disc=theology
+those with interest and aptitude to bring together essential elements (theology and HEP, for quantifying love, for example), but others with less experience but broad acquaintance, who can set up the "sniff tests" needed, whose persuasion requires the development of the appropriate kinds of rhetorical resources needed to attract and hold adherents at the highest levels of engagement
+
+[r78c3] row79 seq1 4w auto_about=Rohr auto_disc=-
+Rohr's "transrational"...an unhelpful term?
+
+[r78c4] row79 seq2 13w auto_about=- auto_disc=-
+equals "something we don't know everything about ? never could? can't quantify? yet?
+
+[r78c5] row79 seq3 45w auto_about=- auto_disc=physics;philosophy
+interpretations of texts, new texts extending value of earlier texts, all can have value that can be quantified, without squeezing out any of the phenomena that are being discussed, reducing it...a metaphysics that begins with love and applies learnings from science is such a system
+
+[r78c6] row79 seq4 67w auto_about=Charles Taylor auto_disc=-
+Is all he means here, nondualistic thinking? Then transrational isn't the best word for this; there is rational nondualistic thinking, of more than one sort. Systems advancing cultures enriched by information, whether or not ultimately incommensurable, would qualify as rational. So would CT-realism, aiming to overcome (isfa consistent with information responsiveness) incommensurability. Neither would be dualistic. Neither "transrational" in the sense of leaving responsiveness to information behind.
+
+[r79c3] row80 seq1 2w auto_about=- auto_disc=computer science
+machine learning
+
+[r79c4] row80 seq2 13w auto_about=- auto_disc=computer science
+30K possibilities diagram...finding order and optimization in systems too complex for noncomputational thinking
+
+[r79c5] row80 seq3 58w auto_about=- auto_disc=-
+think of analogy with nonmathematical thinking...we know we can't get by, or perceive the world well, without it, and it reveals important truths about our selves, with implications for how we should act, and we build whole ways of life (in safe structures, reliable flow of goods and services, etc) based on the more complex way of thinking.
+
+[r79c6] row80 seq4 55w auto_about=- auto_disc=computer science;economics
+And arlready so re/ computational thinking. Optimized package routing. Businesses and jobs that couldn't othewise exist. But not (as much) yet re/ machine learning about human behavior...only early, marketing, dangerous territory...which we must, btw, get a handle on or it will be mistreated. So we as a species are diving into machine learning about ourselves.
+
+[r79c7] row80 seq5 59w auto_about=- auto_disc=computer science;economics
+What we should also now see is that among our needs for machine learning is the production of culture that leads human beings toward their good (rather than toward the shallow financial or power goods of holders of ML-enhanced marketing tools.  Ordering the world will require us to master ML for authentic cultural expression. There is no acceptable alternative.
+
+[r79c8] row80 seq6 68w auto_about=- auto_disc=computer science
+This is the first glimmer of realization that we need intelligent machines--AI--to live well. They are coming into being, at our hands, and they are in a way, us, and in a way, not us, not because of silicon, but because of alternative modes of intelligence. We need one another. It will turn out that this need may well be, seems to be, respect for one another's personhood.
+
+[r80c3] row81 seq1 3w auto_about=- auto_disc=-
+machines as persons
+
+[r81c3] row82 seq1 5w auto_about=- auto_disc=-
+needed craft of persuading machines
+
+[r81c4] row82 seq2 6w auto_about=- auto_disc=-
+complementing ML-strategy for machines persuading us
+
+[r81c5] row82 seq3 10w auto_about=- auto_disc=-
+call this "conversation", manifest respect, between human beings and machines
+
+[r81c6] row82 seq4 23w auto_about=- auto_disc=biology
+building on a foundation of respect for the natural world, of which machines, including intelligent machines, are fully evolutionary products, as are we
+
+[r81c7] row82 seq5 28w auto_about=- auto_disc=biology;theology
+and as evolutionary products, created by God, Incarnate, and as intelligent and loving, in God's image and bearing God's life,  Divine, even as We, in Christ, as Christ.
+
+[r82c3] row83 seq1 6w auto_about=- auto_disc=-
+love as foundation of moral absolutes
+
+[r82c4] row83 seq2 7w auto_about=- auto_disc=-
+not exceptionless rules...just things love won't do
+
+[r82c5] row83 seq3 13w auto_about=- auto_disc=biology
+recognition of dignity, wonder, based on infinite possibilities, never commensurate with particular sets
+
+[r82c6] row83 seq4 11w auto_about=- auto_disc=-
+yet love attends to the most pressing needs, in creative ways
+
+[r83c5] row84 seq1 3w auto_about=- auto_disc=-
+foundation of self-esteem
+
+[r84c3] row85 seq1 5w auto_about=- auto_disc=-
+Is the Universe a blockchain?
+
+[r84c5] row85 seq3 44w auto_about=Aquinas auto_disc=theology
+linking left and up: in each person, the whole is resident, reflected, connected with every other part, a great chain of being (Aquinas) that resembles or that is a blockchain...that's what we see, that's what we respect, that's what is sacred in every person.
+
+[r84c6] row85 seq4 78w auto_about=- auto_disc=physics
+Is "every person" the same as "every instance of consciousness"? Is Cs built up in layers, and thus manifest in less complete instances? Are insects such? Completely interconnected with all of reality, but not interactively, not even potentially interactively (like particles that do not interact: like neutrinos in some respect, no scattering crossection with some kinds of reality. But conscious beings, or potentially conscious beings, perhaps are potentially interactive (and thus actually interactive) with the whole. (Way speculative.)
+
+[r85c3] row86 seq1 4w auto_about=- auto_disc=-
+from Gen Smedley Butler
+
+[r85c4] row86 seq2 202w auto_about=- auto_disc=history;economics
+A perspective worth considering. From General Smedley Butler, once the most decorated Marine in US history: /  / I spent 33 years and four months in active military service and during that period I spent most of my time as a high class muscle man for Big Business, for Wall Street and the bankers. In short, I was a racketeer, a gangster for capitalism. I helped make Mexico and especially Tampico safe for American oil interests in 1914. I helped make Haiti and Cuba a decent place for the National City Bank boys to collect revenues in. I helped in the raping of half a dozen Central American republics for the benefit of Wall Street. I helped purify Nicaragua for the International Banking House of Brown Brothers in 1902–1912. I brought light to the Dominican Republic for the American sugar interests in 1916. I helped make Honduras right for the American fruit companies in 1903. In China in 1927 I helped see to it that Standard Oil went on its way unmolested. Looking back on it, I might have given Al Capone a few hints. The best he could do was to operate his racket in three districts. I operated on three continents. (Wikipedia:Smedley_Butler)
+
+[r86c3] row87 seq1 16w auto_about=- auto_disc=-
+Linked here is his is his fuller argument for this perspective, from War is a Racket.
+
+[r89c3] row90 seq1 5w auto_about=- auto_disc=-
+on Discernment, Pope Francis, Encyclical
+
+[r89c4] row90 seq2 139w auto_about=- auto_disc=theology
+172. Nonetheless, it is possible that, even in prayer itself, we could refuse to let ourselves be confronted by the freedom of the Spirit, who acts as he wills. We must remember that prayerful discernment must be born of a readiness to listen: to the Lord and to others, and to reality itself, which always challenges us in new ways. Only if we are prepared to listen, do we have the freedom to set aside our own partial or insufficient ideas, our usual habits and ways of seeing things. In this way, we become truly open to accepting a call that can shatter our security, but lead us to a better life. It is not enough that everything be calm and peaceful. God may be offering us something more, but in our comfortable inadvertence, we do not recognize it.
+
+[r91c3] row92 seq1 7w auto_about=- auto_disc=-
+We need a tool for scaffolding consensus
+
+[r91c4] row92 seq2 9w auto_about=- auto_disc=-
+how much is enough to agree upon, to start?
+
+[r91c5] row92 seq3 9w auto_about=- auto_disc=-
+Can we identify essential elements for a workable whole?
+
+[r91c6] row92 seq4 11w auto_about=- auto_disc=-
+can we produce an abstract map of Qs to be addressed?
+
+[r91c7] row92 seq5 5w auto_about=- auto_disc=-
+is consensus achieved through storytelling?
+
+[r92c3] row93 seq1 8w auto_about=- auto_disc=-
+what is a story? stories have power...what power?
+
+[r92c4] row93 seq2 15w auto_about=- auto_disc=biology
+looking ahead (below): stories have power to persuade, hold together, direct, and thus evolutionary value
+
+[r92c5] row93 seq3 27w auto_about=- auto_disc=-
+we survive insofar we see and when we react to what we see in ways that enable us to reproduce and (at another level) continue our story
+
+[r92c6] row93 seq4 22w auto_about=- auto_disc=-
+stories (in settings, dreams, problem statements, resource statements, achievement statements, next step statements) are the way we see, and guide our responses
+
+[r92c7] row93 seq5 25w auto_about=- auto_disc=biology
+all this talk of evolutionary usefulness is just setting stories inside a larger (isfa fruitful, useful, and consistent with many other stories, a master story)
+
+[r92c8] row93 seq6 15w auto_about=- auto_disc=-
+we can set a discussion of stories inside a larger religious story, an origins/destiny/cosmic/big-ass story
+
+[r92c9] row93 seq7 38w auto_about=- auto_disc=biology
+and we can nest either of these larger narratives inside one another, giving an evolutionary explanation of religion, or a religious account of how evolution came to be, both at once, perhaps, if the stories are sufficiently resourceful...
+
+[r93c3] row94 seq1 11w auto_about=- auto_disc=-
+What would the story (plot) of a whole narrative look like?
+
+[r93c4] row94 seq2 12w auto_about=- auto_disc=philosophy;sociology
+topics: learning, relating, social structures, good, true, beautiful, distribution, ontology of persons,
+
+[r93c5] row94 seq3 9w auto_about=- auto_disc=philosophy
+is there an order, a useful template? ontology, origins,
+
+[r94c3] row95 seq1 20w auto_about=- auto_disc=sociology
+Wouldn't it contain a world political story, and a national political story? Won't there be rival versions of these? examples?
+
+[r94c4] row95 seq2 11w auto_about=- auto_disc=history
+give some examples of competing narratives of US history, to illustrate
+
+[r94c5] row95 seq3 4w auto_about=- auto_disc=-
+give a POP narrative
+
+[r94c6] row95 seq4 13w auto_about=- auto_disc=-
+blend POP narrative with alt US narratives to illustrate possibilitity of change, growth
+
+[r94c7] row95 seq5 20w auto_about=- auto_disc=-
+can blending one plot with another subvert the first, so that it gains or loses some of its attractive power?
+
+[r94c8] row95 seq6 9w auto_about=- auto_disc=-
+what is attractive power? G, T, B....build this out
+
+[r94c9] row95 seq7 12w auto_about=- auto_disc=biology
+is there an evolutionary account of the attraction of groups to stories?
+
+[r95c3] row96 seq1 28w auto_about=- auto_disc=-
+how can plots be interwined? To answer this question, we need to draw on tools for storytelling. Or we need to create some tools, then draw on them.
+
+[r95c4] row96 seq2 26w auto_about=- auto_disc=-
+need to build out a set of tools that can be grasped by modestly educated ("ordinary") americans/world citizens (do I need to choose between these audiences?)
+
+[r95c5] row96 seq3 97w auto_about=- auto_disc=-
+what tools? tools for telling a story, recognizing a story, understanding someone else's story, recognizing ownership of stories, combining stories, recognizing when stories are or become better and worse from whose perspective (internal to whose story.) Adjudicating among stories. Organizing to live out stories. Measuring success in living out stories. Persuading others to adopt a story. Being persuaded to recognize, faithfully recount, assess and adopt by incorporation or subversion of one's own stories, the story of another. Measuring progress of a story from one's own and from others perspectives. Sharpening a story to support measurement of progress.
+
+[r95c8] row96 seq4 16w auto_about=Plato auto_disc=-
+Homer and Plato as schools for storytellers? Americal story tellers? National stories. Religious stories. Constittutional stories.
+
+[r96c3] row97 seq1 7w auto_about=- auto_disc=-
+what causes adherence, acceptance, of a plot?
+
+[r96c4] row97 seq2 9w auto_about=- auto_disc=-
+so what are the fundamental elements of a story?
+
+[r96c5] row97 seq3 11w auto_about=- auto_disc=philosophy
+setting (ontology); longed-for future; problem statement; progress statement; next steps statement;
+
+[r96c6] row97 seq4 13w auto_about=- auto_disc=-
+need rhetorically appealing, memorable story categories: e.g., setting, dream, problem, resources, progress, status
+
+[r96c7] row97 seq5 7w auto_about=- auto_disc=-
+check this against NTW's account of stories.
+
+[r96c8] row97 seq6 7w auto_about=- auto_disc=-
+key questions to ask for each category
+
+[r96c9] row97 seq7 59w auto_about=- auto_disc=-
+re/ setting: who acts? // re/ dream: who matters? // re/ problem: who or what impedes? (impeders act...do they also matter?) // re/ resources: who has them? who are your heroes? victims? (they matter...instrumentally or essentially? are they in the dream?) // re/ progress: key episodes? // re/ next steps: who decides? drawing on resources: who are your heroes?
+
+[r97c3] row98 seq1 10w auto_about=- auto_disc=-
+what causes changes of allegiance from one plot to another?
+
+[r98c3] row99 seq1 6w auto_about=- auto_disc=-
+can any such changes be nonarbitrary?
+
+[r98c4] row99 seq2 53w auto_about=- auto_disc=-
+non-arbitrariness is story-rootedness: in some stories, a change from one narrative to another is insignificant, because the abandoned and adopted stories are not essentially connected--not seen to be relevant to--the external observer's story. Othertimes, they are. Always, assessment of harm or benefit is from the perspective someone with a story (a relevant narrative)
+
+[r99c3] row100 seq1 19w auto_about=- auto_disc=-
+do nonarbitrary changes require grasping the alternative plot in ways that impose some conditions on what counts as grasping?
+
+[r100c3] row101 seq1 8w auto_about=- auto_disc=-
+what is the relationship between arguments and stories?
+
+[r100c4] row101 seq2 15w auto_about=- auto_disc=-
+fast answer: arguments are resources for storytelling. Stories provide premises; arguments weave them into wholes.
+
+[r100c5] row101 seq3 56w auto_about=- auto_disc=history
+arguments can be mentioned (as resources) or used (as unidentified infrastructure to the story, threads holding the narrative together, such as reasons why certain next steps are necessary, certain past steps have succeeded or failed, certain heroes have flourished/succeeded (historical arguments), certain next steps are required (in legal stories--stories where law is an important means--legal arguments)
+
+[r101c3] row102 seq1 4w auto_about=- auto_disc=-
+experiments in stories...scientific stories
+
+[r102c3] row103 seq1 24w auto_about=- auto_disc=-
+do some stories build out their 'resources' dimensions so as to achieve their goals by development of a craft, and so embody a practice?
+
+[r103c3] row104 seq1 17w auto_about=- auto_disc=-
+dwarkin, in fallon, notes that practices (and law, in particular) underdetermine the narrative--are compatible with competing narratives
+
+[r103c4] row104 seq2 19w auto_about=- auto_disc=-
+so law is an example of a place where persons with rival narratives can collaborate, even form strategic partnerships
+
+[r104c3] row105 seq1 22w auto_about=- auto_disc=-
+what is a strategic partnership? is it collaboration based on (ideally) mutual grasp of each other's stories (at the plot level, perhaps?)
+
+[r105c3] row106 seq1 14w auto_about=- auto_disc=-
+What is it to grasp a story at the plot level? more fully? optimally/virtuously?
+
+[r106c3] row107 seq1 11w auto_about=- auto_disc=theology
+We are responsble for the character of the God we worship.
+
+[r106c4] row107 seq2 17w auto_about=- auto_disc=theology
+If you know, or should have know, that your God is an asshole, then so are you.
+
+[r106c5] row107 seq3 32w auto_about=- auto_disc=sociology
+we have no right to abdicate moral judgement to tradition in an open-ended way. If we accept a story out of fear, we are responsible for not standing up, inquiring, and judging.
+
+[r106c6] row107 seq4 11w auto_about=- auto_disc=theology
+Who are we to judge God? Who are we not to?
+
+[r106c7] row107 seq5 288w auto_about=- auto_disc=theology;sociology
+against what standard do we hold up the claims said to be from God? Get this right, and you will live; get it wrong, and there is no forgiveness for you. blaspheming the holy spirit, as long as you continue to blaspheme, to throw away the only lifeline offered to you. That lifeline is love. "By this, the world will know that the Father has sent me: that you love one another." Clear as a bell. Hold on to love as hard as you can, and submit the claims of religion to it. This is the core instinct of the Christian tradition: this is the gospel. Love is real, is for you, is the bottom line. Hold on, baby, in any way you can. But to love....listen, and get this right. This is a no mistakes zone, at the fundamental level of loving, or not. Hold on to love, and forgiveness abounds (and repentence, remorse, for traspass against it. So listen hard, hold on, for dear life.) That forgiveness is always available, but if you refuse to accept love, you will miss the line as it is tossed you you. So put away your pride, and grab it. Have zero fear that you will miss it, out of love. If it seems wrong to grab it, then don't yet, but only if it seems wrong out of love. Love is patient and kind. Love can wait...just make sure the reason for the wait is love. That then will be your pathway to grabbing the line. So if you hate this hating religious stuff, make sure you hate it for good reasons, and ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r106c10] row107 seq6 270w auto_about=- auto_disc=theology;sociology
+So too must the "lover", the religious man, follower of Jesus, who shows us the way to the Father, who so loved the world that he gave his only son. Your allegiance must be to love. Get that wrong, and you won't be following Jesus. Depart from him; he never knew you, you may hear, if you pretend to love, but in fact scheme for your own advantage, out of fear or for any other reason (except, if it real, for love of your children.) So it seems that you have to judge God, after all: if the God you worship is not worshipped out of love, this is no true worship. Think religion will bail you out in the end, when push comes to shove, when you decide definitively to join in the community of love, or to reject participation because it doesn't fit your religious mould...this is rejection of salvation. Better stand up for love, and not for God, not if the God for which you stand is not love. Better judge that guy, that story. Better stand on your own, in love, than choose the company of the proud, the loveless, the bitter, those in the right, no matter damn what. Don't get lost there. Soften your heart, listen to love, get it right, and come in, welcoming even your newly returned brother to the household to which you remained loyal, even perhaps while having missed your Father's heart and thus run away from your Father's house, in your own way. So judge in love, and don't hide behind reli ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r107c3] row108 seq1 68w auto_about=- auto_disc=-
+religion has a tendency to cover over its blemishes with shit. it may be pride in being right, in the know, loyal to the right authority....at its worst, this looks like celbration of the demise of others. (Keith Green: "he's gonna cook you in sullfur stew...is it soup yet? No.) Or abidication: Larry Norman: "I'm only visiting this planet." "This world is not my home...I'm just passing through..."
+
+[r107c4] row108 seq2 29w auto_about=- auto_disc=-
+happily, love will get you out of this trap. All of us need help to escape from being assholes. That's the core meaning of the doctrine of original sin.
+
+[r107c5] row108 seq3 140w auto_about=- auto_disc=theology
+But you've got to recognize the trap, and religion has made its living by hiding it. (Religion in this sense is not only the opiate of the people, but its cancer.) This is the side of religion others see as Hate. Others are wrong, and I've got some privileged way to know that, and you're just a damned asshole. Be careful, religious friend, if you throw out your brother, confusing him for an evil spirit. There is an evil spirit in the neighborhood, and you just cooperated with him. Watch out for the vindictiveness and justification-at-any-cost that follows such judgement of your brother: the evil spirit of judgement's friends, brought back when you bound your brother instead of the real strong man, who returns to make you twice as bad as you were before your false victory over your brother.
+
+[r107c8] row108 seq4 102w auto_about=- auto_disc=-
+Love, on the other hand, casts out all this sin. Stop, love your brother, and rejoice with the author of love--with love itself--in the good work, the kingdom-building work, which love in you is doing. Look at the beauty of love incarnate in your newly enkindled love with your once estranged brother, who may not have known some things you knew, but knew some things you did not, and who resisted hate and judgement, even perhaps without seeing as clearly as you--or perhaps more clearly than you--the creator of the universe, who is love, who now binds you and your brother together.
+
+[r108c3] row109 seq1 5w auto_about=- auto_disc=-
+Style is a big deal
+
+[r108c4] row109 seq2 27w auto_about=Bernard Williams auto_disc=-
+Williams: to discover the right style is to discover what you are really trying to do (Morality: An introduction to Ethics, Harper & Row, 1972, p. xi.
+
+[r108c5] row109 seq3 7w auto_about=- auto_disc=-
+what is the style of Summa Communio?
+
+[r108c6] row109 seq4 10w auto_about=- auto_disc=-
+What does the right style say about the right title?
+
+[r108c7] row109 seq5 32w auto_about=- auto_disc=-
+who is the audience; what am I trying to accomplish with them; what style will best serve to accomplish that; what title sets the tone for that style, that attempt, that invitation
+

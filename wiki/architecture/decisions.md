@@ -1089,3 +1089,18 @@ reconstructed 2026-08-29 register entries.
 
 *(14a does not make decisions. This note exists so that the four-day gap is on the decision register
 rather than only in the changelog. See OPEN-174.)*
+
+## 2026-09-04 — 14a run note (no attended DECISION entries; gap-filling after 08-30)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — eight days. Two rulings were made today
+under Tom's delegation ("as you incline") and are recorded in `inbox/rc_sandbox/outline_v3.md`
+(RULINGS block): the **row-header rule** and the **authored-table refinement** (ASSUMPTION-1251,
+ASSUMPTION-1252). A third, the **rung-labelling scheme** (ASSUMPTION-1253), is recorded in the same
+place without a stated delegation. None is registered here because none carries a DECISION number
+and 14a does not assign them; the digest itself files this as an OPEN-174 instance.
+
+Twenty-one proposals are pending in `review/2026-09-04_review.html`. Three new questions are queued
+for Tom as OPEN-179–181: the sub-neuronal rung, deferred-condition polling ownership, and which of
+two authored ladders is the spine of III.2.0.
+
+*(14a does not make decisions. See OPEN-174.)*

@@ -2187,3 +2187,32 @@ OPEN-178:
 - **OPEN-174 (which store is the decision record of account) is carried and now has a second data point.** `decisions.md` still ends at DECISION-083 (2026-08-27) — four days without an attended decision — while nine proposals sit in `review/2026-08-30_review.html` and every ruling made today was an agent-side disposition. The registers moved; the decision record did not.
 - **OPEN-164 / OPEN-170 (unratified agent-invented conventions) carried.** Today's instance is PRESUMPTION-898: an unwritten convention that 26 one-line files are Tom's to create, held for three weeks by an agent that writes hundreds of lines elsewhere unprompted.
 - **The 46-id offset is carried and unchanged.** Before tonight: 128 unique `^OPEN-NNN:` headers against max OPEN-174. After tonight: **132 unique, max OPEN-178, offset still exactly 46** — sixth consecutive record. The three contiguous missing blocks characterised on 08-27 (OPEN-040…070, 073…074, 079…091) were not investigated this run. **"Max OPEN-178" is not a count of open questions.**
+
+OPEN-179:
+  Date raised: 2026-09-04
+  Question: Does sub-neuronal life (bacteria, plants, basal cognition; the Lyon/Keijzer material) file at N, or is there a rung between S and N that the authored table (rows 247–250) does not show — and is "rung" even the right shape for the answer?
+  Why now: outline_v3.md marks this OPEN, "do not guess," and blocks further III.2 placement. The L3/L4 labels are reserved. PRESUMPTION-909 asks whether the structure is linear at all; if the bands overlap, the question may need reframing before it can be ruled.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1253, ASSUMPTION-1257; PRESUMPTION-909
+
+OPEN-180:
+  Date raised: 2026-09-04
+  Question: Who polls a deferred condition? Five cards from the 09-02 ingest were closed with their future conditions parked where nothing checks them (Agent 16: DEFERRED-CONDITION LEAKAGE). Is the fix a one-line instruction to the ingest step (option b), and who owns it?
+  Why now: Agent 16 will not alter a file other agents read without authorisation; the five conditions are silently expiring meanwhile.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1260
+
+OPEN-181:
+  Date raised: 2026-09-04
+  Question: Two authored ladders exist in the sandbox — rows 247–250 (A-I-S-N-B-P-C-S, 8×3) and rows 292+ (ordered by "hierarchy, perhaps of entropy"). Which is the spine of III.2.0, and are they the same order under two descriptions or two different orders?
+  Why now: outline_v3 says "worth comparing before III.2.0 is written"; III.2.0 currently renders the later table only. The earlier one claims an objective ordering principle the later one does not.
+  Status: OPEN — awaiting Tom
+  Related: ASSUMPTION-1258; PRESUMPTION-909
+
+### Status of carried questions — 2026-09-04
+- **Gap declaration.** 14a/14b last ran 2026-08-30; no 08-31, 09-01, 09-02 or 09-03 changelog or snapshot. This run adds OPEN-179–181 for 09-04 only and does not reconstruct the four missing days. Register now 135 unique `^OPEN-NNN:` headers against max OPEN-181 — offset still exactly 46, seventh consecutive record.
+- **OPEN-168 (notification channel of record) — day thirteen; failed in both directions again today** (Chat→Cowork scrape 08:53, Cowork→Chat delivery 18:39). Unchanged shape; unchanged remedy.
+- **OPEN-174 (which store is the decision record of account) — third data point.** Two rulings delegated by Tom today ("as you incline") were recorded in `inbox/rc_sandbox/outline_v3.md`, not `decisions.md`, which still ends at DECISION-083 (08-27), eight days. The digest itself names this as an OPEN-174 instance.
+- **OPEN-171 (intake/disposition coupling) — pending is 21** (was 9 at 08-30). ASSUMPTION-1231's two-week window closes 2026-09-10; 21 in 8 days ≈ 2.6/day, still below the predicted 6–14 band. Review-pass gap: 8 days.
+- **OPEN-167 (vault root casing)** — the task file still says capital-`W` `Wiki`; live directory is `wiki`. Seventh run.
+- **OPEN-175–178** — no ruling recorded; carried.

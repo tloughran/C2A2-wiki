@@ -1,0 +1,843 @@
+[r327c4] row328 seq2 30w auto_about=- auto_disc=-
+never was a preordained answer; it came into being through questioning...QM is a theory of what is and istn't knowabe, and  how those knowns emerge from the questions we ask
+
+[r327c5] row328 seq3 35w auto_about=- auto_disc=-
+not how a thing is, but what it could be, along with a logic of the relationship between coulds and likelihoods...replace isms with ifms...not here, but if we look at it like this, then...all conditionals...
+
+[r327c6] row328 seq4 40w auto_about=- auto_disc=-
+IFs are fundamental. But what is the stuff that QM is about? Perhaps the world is sensitive to our touch...(Chris Fuchs)...QM is the machinery we need to compile and quantify info about a world that has this incredibly sensitive character.
+
+[r327c7] row328 seq5 13w auto_about=- auto_disc=-
+Ball still seems to hold an objective, highly sensitive nature, though beyond wierd.
+
+[r328c3] row329 seq1 24w auto_about=- auto_disc=neuroscience
+// https://www.youtube.com/watch?v=ZENFjtLExmE Miguel Nicolelis - The Future of Human Augmentation (Pontifical Academy neuroscientist, ranked #1 in world in this list of 30 most influential....
+
+[r328c4] row329 seq2 43w auto_about=Godel auto_disc=neuroscience
+brain stores a different kind of information (Godelian information), not Shannon information, but through some kind of energy dissipation storage that is not digitial purely in that same way (coverered quickly during Q&A around 1:11 ... the brain is not a turning machine...
+
+[r328c5] row329 seq3 72w auto_about=- auto_disc=neuroscience
+Brain Nets.. overcome limitation of single body for brain activity...; overcome limitation of single brain to solve problems...multiple brains at once can syncronize efforts, the others unknown to each one ... // the basic unit of intelligence is a many-neuron system, not one or even a few, but many, distributed ... can do brain to brain interface, can exchange bits of information, but we'll need a digital/analogue hybrid to model brain intelligence
+
+[r328c7] row329 seq4 22w auto_about=- auto_disc=neuroscience
+MN thinks consciousness is an emergent property, related to electromagetic waves..// not optimistic about larger Cs from brains connected in a net...
+
+[r328c8] row329 seq5 40w auto_about=- auto_disc=physics
+aside: generally all (?) physical and psych diseases, not rightly disgingushed according to him, are hypersincronous diseases, like defib of the heart ... success with defib chip in spine to disrupt parkinsons successfully...1:23 or so...catch seisures early; works in parkinsons...
+
+[r329c3] row330 seq1 6w auto_about=- auto_disc=-
+// recognizing possibilities, vs entertaining them
+
+[r329c4] row330 seq2 41w auto_about=- auto_disc=theology
+something like this might play an analogical role re/ creation: one freely chooses to entertain. If God freely chooses to entertain a possibllity, that thought is an entering into a particular, dymamic perspective, limited, exploratory because limited,foreseeing some things, intending/enjoying others...
+
+[r329c5] row330 seq3 61w auto_about=- auto_disc=computer science
+an alternative to the many worlds interpretation of QM: a many good worlds interpretation...to exist is to be entertained, imagined, in this sense...to be actively thought through, to be computed, calculated...some seem worth pursuing, others not...each limited,partial perspective perhaps entertained in parallel, transparently from an unhindered, unlimited perspective, but sequentially, from internal to that limited perspective ... the origin of time?
+
+[r330c3] row331 seq1 67w auto_about=- auto_disc=philosophy
+// a spherical ordinary science analogue to sequential processing of new experience...warping from sperical during epistemological crises, where connections between inflowing processed,modeled information occasions new questions not at the outer,ordinary places of inquiry, but internally, at their intersection with one another and the unknown, not yet processed, opening up a new disruptive interface with the possible (reality = the possible, on an awareness processing interpretation of reality)
+
+[r331c3] row332 seq1 71w auto_about=- auto_disc=psychology
+// trying to put together a number of ways, seemingly analogous or parallel, in which awareness / observation / processing is prior to and determines what seems to be, the world we experience. To exist is to be percieved; Existence is perception, is awareness. Why suppose so? Three levels of synergistic reasoning: re/ qualia; re/ quanta; re/ fundamental objects of both (this last schema, articulated after the three levels described here...)
+
+[r331c4] row332 seq2 47w auto_about=Hoffman auto_disc=biology;psychology
+one level: 'stable hallucinations', up to 90% (ref?__) of percepton is predictive, from timing studies; zero chance of evolving to accuracy vs fitness, in Hoffman's evolutionary modeling studies...this seems to threaten realism of qualia, of what is observed, of what we are aware of, what we perceive...
+
+[r331c5] row332 seq3 36w auto_about=- auto_disc=-
+(aside: got to be able to say what accuracy is here, when contrasted to fitness, and how a notion of accuracy might endure (can it? don't be so sure...) through a transition to awareness processing realism
+
+[r331c6] row332 seq4 76w auto_about=- auto_disc=-
+a second level: the observer, in QM...it seems like the intervention of measurement, which is (?) the interaction with an observer, determines (collapses the wave function) what happens in the world, even instantly over great distance, so that reality (if it exists objectively) seems extended not only across time but across space, at in principle near endless distance scale... this occurs in ways that seem even to reverse causaility, and deeply threatens realism even of quanta)
+
+[r331c8] row332 seq5 83w auto_about=- auto_disc=computer science
+a third level: space and time are not fundamental, but emerge from the interplay of information (matrix multiplication: existence matrix, with operating (laws of nature) matrix?); this threatens not the realism of qualia, nor of quanta, but of the very fabric of reality that is being quantized or perceived. (Perhaps that information processing, that computation, takes place within an intelligence, within an awareness: to be information is to inform an awareness? To be is to be observed? All else is possibility, not actuality.
+
+[r331c10] row332 seq6 72w auto_about=- auto_disc=-
+three strikes, you're out? these all cut against an objective reality, a correspondence theory of truth with an ojbective, external, mind-independent reality. Why not turn correspondence on its head? The world corresponds to what awareness, mind, we calculate it to be. Often, this seems correct. Might it always be so? What if we are not the only observers? What if the universe is an observed entity (to be is to be observed)?
+
+[r331c12] row332 seq7 90w auto_about=- auto_disc=psychology
+Objection: things happen to us when we are not perceiving (surgery, e.g.) Response: we are not the only perceivers; we form a web of perceivers, many like-minded, many less so, some perhaps radically other than we. Our perception is limited by our connectedness, and this connectedness is a function of the laws of nature and the original input (existence matrix) put to them (operated on by them): the priors, and calculations made on those priors, all stages in a particular string of operations, a calculation, the observable (and observed) universe.
+
+[r331c14] row332 seq8 67w auto_about=- auto_disc=biology;computer science;theology;psychology
+One other relevant piece of evidence to find a way to fit in: intelligent design evolutionary folks, who argue something like that the number of evolvable outcomes so far outstrips what is compatible with living things...this gets to the priors, the original existence matrix, for creation's computation...the priors were loaded intelligently, to produce perception, of limited sorts. That's what science tells us was in fact created (calculated).
+
+[r331c16] row332 seq9 37w auto_about=- auto_disc=computer science;psychology
+So then, at four levels..1) perception/qualia; 2) mathematical calculation/quanta; 3) computational priority (operabilia?); and 4) original orientation (priors) to living, perceiving being (prioria?) ... intelligent awareness underlies existence: to exist is to be perceived; existence is awareness.
+
+[r331c17] row332 seq10 75w auto_about=- auto_disc=computer science;psychology
+at the levels of perception, measurement, computation, and training, perception is prior to existence...but what about at the level of discourse, propositions? This is the level of T-bound inquiry. Here we construct models, frameworks, frames of reference to more effectively/efficiently/comprehensively process our experience, our awareness, the information that comes to us, both qualia and quanta (actually, at all these 4 other/prior? levels: perception, calculation, interpretation (of QM...), and fundamental meaning)...[[careful here...way out on a limb]]
+
+[r331c19] row332 seq11 131w auto_about=- auto_disc=biology;theology;sociology
+But at this 5th level, worldview construction...is this one level, or two or more?... it is the consensus--reacting to information but processed through a full set of socially and evolutionarily evolved incluinations, finally governed through free choice, within as much lattitute as the laws of nature (thus working with the fluidity afforded by the uncertainty principle, at one level, and chaos, at another)--of the mature members of rich communities networked for optimal information exchange that determines what will be, which ends they will pursue and (subject to interplay with the uncontrolables in their environment) achieve, that is, produce; the world will correspond to their knowledge as to an artisan, and a fortior to God's knowledge, which includes all of these limited perspectives of created (considered) agents. So 5 levels of affirmation.
+
+[r332c3] row333 seq1 11w auto_about=- auto_disc=-
+// quick list of stories that capture loving presence, interconnectedness, .....
+
+[r332c4] row333 seq2 5w auto_about=- auto_disc=-
+bear and daughter in MD
+
+[r332c5] row333 seq3 5w auto_about=- auto_disc=-
+young man in oncology ward
+
+[r332c6] row333 seq4 4w auto_about=- auto_disc=-
+mother and daughter hitching
+
+[r332c7] row333 seq5 6w auto_about=- auto_disc=-
+mom, woman and son at airport
+
+[r333c3] row334 seq1 7w auto_about=- auto_disc=-
+// notes from Ferry, The Copenhagen Conspiracy
+
+[r333c4] row334 seq2 20w auto_about=Bohr;Heisenberg auto_disc=history
+a very critical history of Bohr's (and to a lesser extent Pauli's, Heisenberg's) sloppiness and century-long catastrophic impact on QM
+
+[r333c5] row334 seq3 45w auto_about=Bohr auto_disc=-
+Bohr's nobel-prize winnng paper depends on an inconsistency; his famous BKS (with Kraemer and Slater) is full of ambiguity, and was force-fed over Slater's objections, who didn't accept a key conclusion and wouldn't work with either of them again. (B was leader; K was brow-beaten.)
+
+[r334c3] row335 seq1 13w auto_about=- auto_disc=computer science
+// capturing some thoughts on inverse realism, or participatory realism, or interactive realism
+
+[r334c4] row335 seq2 145w auto_about=- auto_disc=biology
+if you start with fundamental consciousness, you can see awareness as intrinsically transparent and thus intrinsically reflective. from that point of view, those conditions which wire up information transfer of particular sorts can be viewed as specifications, in a way, limitations, on an awareness which outside of the specifications would be full, complete, transparent. And so our biological systems linking us to the world say in the visible light range, would when rendered more complex by say the addition of infrared or UV transmission capabilities be less restricted by those new additions. trying to view things from this perspective, our capability of uniting things in a single conscious field is not an outgrowth of the way we are wired semicolon it is a fundamental feature of Consciousness, and the way we are wired specifies what things we can be at the same time aware of.
+
+[r334c6] row335 seq3 70w auto_about=- auto_disc=biology
+These biological information channels, and in fact the laws of space time which under gerd those biological restrictions, are in fact manifestations of a particular, limited, specified perspective. in fundamental Consciousness, the very possibility of that perspective is what gives rise to it. so that full set of laws of nature is a particular specified and limited perspective of fundamental consciousness, which under transparency arises immediately from it's very possibility.
+
+[r334c8] row335 seq4 92w auto_about=- auto_disc=computer science;theology
+all of these limited perspectives, both the awareness of the entire created natural order, and those awareness is which are further limited sub sets of that natural order, that is, you and I, are from this perspective manifestations of fundamental consciousness, calculating elements, computational pathways, true the full ocean of transparent possibilities present in and two fundamental consciousness. we are how God looks at things from our point of view. we are how God looks at things as uman beings, as members in this space-time universe operating under our laws of nature.
+
+[r334c9] row335 seq5 236w auto_about=- auto_disc=-
+still trying out this perspectives, the way we come to see things is the way things are, in so far as are coming to see them takes into account ever more fully information, that with other information about the natural world, that is, what other stable perspectives, some of which are youman perspectives, and some of which become human perspectives as information pathways get laid down, that is, as we learn, as we come to know. but what it is we are coming to know about are other perspectives, other awareness. some of those other perspectives that we become informed about and that stabilize all our perspectives are other human perspectives, others still our information about other elements of the natural world that we increasingly come into informational exchange with as our learning base grows. these elements, which human beings come into contact with sometimes for the first time on our watch are other elements of the natural world, that is, are other limited perspectives of fundamental consciousness, to which we become connected for the first time as our knowledge grows. all of our interactions have awareness at the foundation, whether we are interacting would things of which we are conscious, or indirectly with other human consciousness has, or indirectly still again with limited perspectives of fundamental consciousness which we call the external world around us, all sharing ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r334c12] row335 seq6 217w auto_about=- auto_disc=computer science
+from this point of view, everything that we discover we calculate, and in that sense we invented. We pick and choose our way through, adopting whichever perspectives we in fact adopt as we interact with more and more information, that is, as we calculate, as we compute. the objectivity of reality, conceive definition way, amounts to those stable Tendencies of interaction which manifest themselves through this computation. we don't make up the stable tendencies, we encounter them, discover them, fall into them as low potential energy states. From another point of view, we invent them, because we move our way through creatively, actively, dynamically, and it makes sense to say freely. in that sense, we invent, or rather, through our interactions, Co invent, a participatory reality. even our limited human perspectives shape and help to find this reality as we compute our way forward, but we do not do so in an information vacuum, and we encounter tendencies with which we have to come to grips, have to work around, have to take into account, have to find a way to deal with as we stabilize our interaction with the full influx of information that is poured in thus far, and as we are committed to letting poor in farther on into the future. In definitely so.
+
+[r334c14] row335 seq7 72w auto_about=- auto_disc=computer science;theology
+from another perspective, all of us are united in a single Consciousness which is computing the best outcome for a limited standpoints like us, under these particular laws of nature, connected under the particular Beauty of our natural laws. what we bound what we bind on Earth, under our limited perspective, is bound in heaven, because we bind it as fundamental Consciousness, from a limited perspective, that is, in Christ, as Christ.
+
+[r336c3] row337 seq1 18w auto_about=- auto_disc=physics
+/ now put this interactive reality, fundamental Consciousness perspective together with quantum mechanics, as best as we can.
+
+[r336c4] row337 seq2 258w auto_about=Aquinas auto_disc=physics;neuroscience;computer science;theology
+doesn't it seem like the measurement problem in quantum mechanics, the fact that our intervention seems somehow to determine the properties of nature, is implied by, or perhaps just suggested by, or in some way just falls out of this interactive realest, fundamental Consciousness perspective? the correspondence between our knowledge and the world is a creative correspondence on this model, precisely as Aquinas said God's knowledge of the world is. in some sense, there is a passive correspondence to the way things are, which reflects those fundamental Tendencies and laws all the information interaction that are discovered as we compute. even there, we shape from our limited perspectives the outcomes, but not without taking into account the predominant Tendencies, without falling into the low potential energy Wells, that characterize our interactions, even as free and creative participants in this process. in that sense our freedom is situated. but from another perspective, the we whose freedom is situated are ourselves fundamental Consciousness adopting the natural perspective. Here, we need to give a proper name to this particular laws of nature, calling them natural, in the way that we call our star, the sun. so we have adopted the laws of nature in that properly named sense, we as fundamental consciousness, fundamental consciousness engaged in a limited perspective, what fund ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r337c3] row338 seq1 9w auto_about=- auto_disc=neuroscience
+// dennett on how the brain in conscious: https://www.youtube.com/watch?v=CSkfHDdZZ3o
+
+[r337c4] row338 seq2 56w auto_about=- auto_disc=neuroscience
+dennett seems right, on consciousness not being some absolute state, a fixed line, but rather a dynamic of interplay among competing models assembled throughout (he might have said) columns in the neocortex (relating in turn with the old brain, re/ location (cerebellum?) and fear (amygdala?), though he does not discuss (in 2014) the dominance of prediction
+
+[r338c3] row339 seq1 6w auto_about=- auto_disc=-
+//dennett on dawkings on memes: https://www.youtube.com/watch?v=5fG-3f4f0hA
+
+[r338c4] row339 seq2 6w auto_about=- auto_disc=-
+all this seems right, on memes
+
+[r338c5] row339 seq3 41w auto_about=- auto_disc=biology
+note that phonemes ("dog" rather than any specific sound in any specific tone or accent) are the information-carrying units for memes, as genes (more properly, the ACGT sequencing, perhaps as surrounded by epigenetic factors, that whole arrangement) is for genetic information...
+
+[r338c6] row339 seq4 42w auto_about=- auto_disc=biology
+perhaps epigenetic information is somehow akin to the culture within which a transmitted text is processed...who is the mature interpreter, to what cultural elements can she appeal, to which does she not need to appeal but which color the interpretation anyway, etc...
+
+[r339c3] row340 seq1 4w auto_about=- auto_disc=-
+// re/ fundamental consciousness
+
+[r339c4] row340 seq2 42w auto_about=Aquinas;Aristotle auto_disc=-
+somehow, calling consciousness fundamental is not enough to say about it...it is fundamental, but it is also underlying, substantive in Aristotle's sense, prime matter, almost, only "designata" (jumping to Aquinas) as it calculates from a limited perspective, thus giving rise to space-time
+
+[r340c3] row341 seq1 17w auto_about=- auto_disc=-
+// thinking through the "third lens", the old story, without which no new story can be received
+
+[r340c4] row341 seq2 18w auto_about=- auto_disc=sociology
+not only must "religion" be addressed in some way, but also secular religion, values sets, strong social structures
+
+[r340c5] row341 seq3 21w auto_about=- auto_disc=-
+and so, in my third, illustrative part, we will need to address not only catholicism, but americanism, and perhaps american catholicism
+
+[r341c3] row342 seq1 6w auto_about=Rohr auto_disc=economics
+// Richard Rohr, gift economy, https://cac.org/podcasts/capitalist-economy-and-gift-economy/?&utm_source=cm&utm_medium=email&utm_campaign=dm&utm_content=references
+
+[r341c4] row342 seq2 17w auto_about=- auto_disc=-
+gift, to self, to other: how do we think of gift, if we generate all of it?
+
+[r341c5] row342 seq3 12w auto_about=- auto_disc=-
+A: for a purpose: order comes from purpose, calculated means to end.
+
+[r341c6] row342 seq4 11w auto_about=- auto_disc=-
+But we calculate for the wrong (or, perhaps better, inadequate) ends
+
+[r341c7] row342 seq5 20w auto_about=- auto_disc=physics
+structure and love, a constant interplay, like potenetial energy barriers and quantum tunnelling, alwayys a duality, both playing a role
+
+[r341c8] row342 seq6 23w auto_about=- auto_disc=-
+but analogous to uncertainty principle as viscosity: mercy and justice, justice as a means to mercy (point of the laborers in the vinyard)
+
+[r341c9] row342 seq7 26w auto_about=- auto_disc=-
+But put MT's view of p=Ex together with a fundamental consiousness view, where math possibilities inform fundamental consciousness, and separate out individual consciousness through limited differentiation
+
+[r341c10] row342 seq8 31w auto_about=- auto_disc=-
+if what it is to be a mathematical possibility is to reside as maximally consistent relation inside consiousness, then in the mathematical bedrock is real presence--existence--of every possibile state of affairs.
+
+[r341c11] row342 seq9 32w auto_about=- auto_disc=physics
+our (created) consiousness exists as a limited perspective; we experience that limitation as the implications of what we call the observable laws of nature (at the level MT's first level of cosmology)...
+
+[r341c12] row342 seq10 28w auto_about=- auto_disc=neuroscience
+...including the energy limits of our 30W processors, our brains, which rather than create or give rise to consiousness instead express the limitations of our particular conscious perspective.
+
+[r342c3] row343 seq1 29w auto_about=Carroll auto_disc=-
+// max tegmark (MT) with Sean Carroll on Mindscape (https://youtu.be/JGTH1aUDxRk): perhaps all mathematical possibilities are instantiated; there is nothing more to existence than possibility (my phrasing of MT's claim)
+
+[r342c4] row343 seq2 28w auto_about=- auto_disc=-
+analogous to many worlds (Caroll's, _____'s view) interepretation: has virtue of simplicity (no special role for observer to collapse and thus confer existence on one state among many.)
+
+[r342c5] row343 seq3 20w auto_about=- auto_disc=-
+premised on supposition that mathematical analysis can account for all properties, not just those so far explained, including for consciousness
+
+[r343c3] row344 seq1 14w auto_about=- auto_disc=computer science
+...note the aimlessness of the discussion about whether we live in a computational universe...
+
+[r343c4] row344 seq2 22w auto_about=- auto_disc=-
+playful, unguided, unconnected with any insight into the moral dimensions of reality (as if advanced intelligence could just toy with us. (NAA)
+
+[r344c3] row345 seq1 14w auto_about=- auto_disc=computer science
+// question: what is the meaning of good, of inclinations, in a computational universe?
+
+[r344c4] row345 seq2 8w auto_about=- auto_disc=computer science
+How about, stable steps taken toward computation of
+
+[r345c3] row346 seq1 33w auto_about=- auto_disc=computer science
+// what is divine life, in a computational universe? What is the meaning of love, of multiple persons, of their good, of providence, of prayer, of friendship, of worship, of suffering, of evil?
+
+[r345c4] row346 seq2 19w auto_about=- auto_disc=theology
+isn't full fundamental consciousness (FFC: God?) culpable for every evil thought and deed, if unshielded by created free agency?
+
+[r345c5] row346 seq3 53w auto_about=- auto_disc=-
+is consciousness, and in particular free choice, what drives reality forward? would this mean that pace MT, not every possibility is actualized, but rather those that are freely considered? (What is before awareness, exists; to exist is to be conceived?) On this view, choosing to consider is what differentiates mere possibility from actuality.
+
+[r345c7] row346 seq4 46w auto_about=- auto_disc=-
+On such a view, what would it mean to be possible? To be conceived? What would stop the flow of conception, through to the most abject evil? What would slow the flow of conception? Nothing, if flow were no energy cost in full reflectivity (in GodSelf.)
+
+[r345c8] row346 seq5 58w auto_about=- auto_disc=computer science
+But the sharing of conscious life, on the model of limited consciousness (limitations governed by particular mathematical combinations expressed as existence and process matrixes), brings in a lack of fulness, sometimes a lack which enables (created being) and sometimes a lack which hinders (privation, temptation in the existence matrix and sin when its computational implications are played out)
+
+[r345c10] row346 seq6 32w auto_about=- auto_disc=-
+So perhaps as FCC is aware of privation in existence matrices, Ge entertains next steps insofar as under that limited line of consideration, a calculated solution remains possible (that is, under hope).
+
+[r345c11] row346 seq7 98w auto_about=- auto_disc=theology
+A calculated solution? Of what problem? Re: manifesting the harmonious life of God under full awareness, in limited awareness sets. (God is always an awareness set--that is, has multiple persons. Full awareness, of itself, and of itself in return, and reflection on that mutual full awareness, are three such perspectives. Others are limited: created being (us). Entertaining (sorry, only phrase we have) these limited perspectives is further way of sharing its conscious life, if not fully, then in part. Our universe is one such part, and each of us is a more specific instance operating under common limitations?
+
+[r345c13] row346 seq8 3w auto_about=- auto_disc=-
+Common limitations, how?
+
+[r346c3] row347 seq1 19w auto_about=- auto_disc=-
+// how does this line of consideration change, as varying fixed starting points, or at least tentatively fixed beginnings?
+
+[r346c4] row347 seq2 25w auto_about=- auto_disc=-
+how does it change, e.g., if we start with the idea that love is fully real and precisely what we think it is (and more)?
+
+[r346c5] row347 seq3 35w auto_about=- auto_disc=theology
+What is real love in the Trinity? (Don't settle for mystery, prematurely, under any new conception/approach.) How does real love flow to us, and how expressed in us from God, to God, to one another?
+
+[r346c6] row347 seq4 47w auto_about=- auto_disc=-
+Actually, I'm really working under an FCC model, and trying to fix love as real and powerful within that model. So build out the second, on the foundation of the first, not letting go of what you actually know about each, not compromising the heart of each...
+
+[r346c7] row347 seq5 70w auto_about=- auto_disc=philosophy
+(Aside, Noting that this is dialectical inquiry, not reasoning from hypotheses but to them, and from different starting points, looking for a most stable whole out of existing awarenesses /conceptions. Looking for fidelity to power in each concept, and fecundity of combination of these powers. Wondering all the while if there may be a mathematical foundation to all of them. Or is that, too, a powerful concept to be included.)
+
+[r346c9] row347 seq6 46w auto_about=- auto_disc=-
+So perhaps enjoyment (combining consciousness, transparency, reflectivity, and love?) is/nearly fundamental. Perhaps love is enjoyment of fullness of another, growing out of enduring mutual reflectivity, to know and be known, to be with as known and knowing, and so on reflected (know that known that knowing...).
+
+[r347c3] row348 seq1 11w auto_about=- auto_disc=-
+// on culture and control: athenian v spartan description in Thucydides
+
+[r347c4] row348 seq2 26w auto_about=- auto_disc=-
+the point: cultures are viscous and exercise control, but in very different ways and degrees. Like steering a motorcycle: control as pathway to freedom, even license
+
+[r348c3] row349 seq1 24w auto_about=MacIntyre auto_disc=physics;philosophy;theology;sociology
+// Christopher Lutz, Tradition in the Ethics of Alasdair MacIntyre: Relativism, Thomism, and Philosophy. a gem of a bio. explains tradition-constituted and tradition-constituative inquiry
+
+[r348c4] row349 seq2 29w auto_about=- auto_disc=-
+p. 58: M "gives the best account to date of the reason for diversity of rational standpoints", and (as a result) "a pathway to the resolution of radical disagreements."
+
+[r348c5] row349 seq3 43w auto_about=- auto_disc=computer science
+very well put; exactly right. But there's room for more: diversity is the scouring of possibility space; it is a computational necessity, and it must be allowed to flourish, to let experiments run their course, mature, and accumulate resources for productive--information-rich--encounters with rivals.
+
+[r348c7] row349 seq4 48w auto_about=- auto_disc=sociology
+rational inquiry is a practical art, a practice growing in a community of practitioners over time, constitiuting a tradition. The overall narrative under which the community operates both shapes and is shaped by members of the community as they progress (on their terms):their inquiry is tradition-constituted and tradition-constituting.
+
+[r348c10] row349 seq5 14w auto_about=- auto_disc=-
+"to justify is to narrate how the argument has gone so far (WJWR p.8);
+
+[r348c11] row349 seq6 30w auto_about=Aristotle auto_disc=-
+Aristotle: with a true view, all the data harmonize, but with a false one the facts soon clash." (NE I, 8, 1098b10, tr. Ross, note 78 from Lutz ch 2.)
+
+[r348c12] row349 seq7 52w auto_about=MacIntyre auto_disc=philosophy
+very nice summary of the impact of M's Epist Crises, Dramatic Narrative, and Philosophy of Science (1977) article, drawing on the Republic (Cave) and Meno (paradox of looking for what is unknown) to portray M's own formation as a T-constituting response to T-constituted epist crises in M's own rational inquiry, Lutz, 59-60.
+
+[r348c14] row349 seq8 64w auto_about=MacIntyre auto_disc=physics
+not present (?) in Lutz's review of M's account of Ts advancing through epist crises: the full machinery to encounter and overcome relativism. Little emph on construction of a whole, or J'n of parts w/i whole, and thus no neutral source or acct of epist crises, and thus no neutral standards for overcoming them. But wait for his defense of the charge of relativism....
+
+[r348c16] row349 seq9 23w auto_about=MacIntyre auto_disc=-
+Still, building M's account on a wholistic foundation, with inseperable T and P inquiry, perhaps might better prefigure the outcome of this challenge?
+
+[r349c3] row350 seq1 98w auto_about=Hoffman;Dennett auto_disc=physics
+// hot damn...Donald Hoffman. This is a great exchange with ZDoggMD: https://www.youtube.com/watch?v=dd6CQCbk2ro. Note that Hoffman uses the phrase "fundamental consciousness" exactly as I propose to use it (as far as I can tell), and that he compares his view to punting on hard problem of Cs, distinguishes himself from IIT/Ponino(?), Dennett; quantum microtubules; etc, all of whom show correlation, but no explanation, no grounds for predictive science...just riding 300 years of success from physicalism. Instead, DH: physical reality is a network of conscious agents. (DH: a geek, father a methodist minister, not a user of psychadelics...but ZDoggMD has)
+
+[r349c4] row350 seq2 113w auto_about=Hoffman auto_disc=physics;biology
+What we percieve, our "desktop", are a set of icons which have fitness (survival) usefulness. Some of these are portals to other consciousnesses; other icons--eg, rocks--are not. (This is not panpsychism.) That natural selection will produce fitness in priority over understanding reality (= processing as much information as possible?); this common sense observation (with an admittedly radical conclusion) is a proven mathematical theorem (says DH, to Quanta. What is proven by "mathematical physicist Chetan Prakash" is "According to evolution by natural selection, an organism that sees reality as it is will never be more fit than an organism of equal complexity that sees none of reality but is just tuned to fitness. Never."
+
+[r349c5] row350 seq3 135w auto_about=Hoffman auto_disc=-
+Q: what is meant by--how to operationalize--"seeing reality as it is"? Q: how then are we evolving; why do we need survival mechanisms? Why suppose these mechanisms are real...perhaps we just exist happier if we suppose they are, or perhaps we just ran into this approach accidentally? Sure, there is evidence, but most of that evidence is based on a false set of presuppositions (acc/ to Hoffman); no? If we aren't competing in space-time, but rather evolve space-time desktops to secure fitness, what on earth is the source of the danger...whence our threats? Not the lion--it doesn't exist--but something does, and we perceive that something, conveniently for the sake of fitness, as a lion. Wtaf is the actual threat? Big q I've not heard asked or answered, yet...get his 2019 Book, the Case Against Reality."
+
+[r349c7] row350 seq4 67w auto_about=Hoffman auto_disc=neuroscience
+Again, to DH: why suppose there exists a plurality of consciousnesses, rather than a single consciousness made up of multiple cells, as in the1000 brain theory? Because Cs goes out of existence (apparently)? Why suppose so? Why not suppose that Cs just changed its perspective, and looked at things another way, more fully, but no longer in the same S-T-derived visibility to the S-T limited Cs here?
+
+[r349c8] row350 seq5 70w auto_about=Hoffman auto_disc=physics
+DH: Network Information Theory, Graph Theory are the kinds of mathematics that willl enable a mathematical model of consciousness to be built out, so as to provide mathematically precise answers to questions like what happens to Cs when we die (what is death?)...his lab is busy learning this math now. DH: I'm probably wrong, but this track is more promising than the physicalist track re/ consciousness, and also re QM.
+
+[r349c9] row350 seq6 69w auto_about=Hoffman auto_disc=physics
+Re QM, contextual realism has been falsified. (Get a good defn: _______) From the Atlantic (via Quanta mag: https://www.theatlantic.com/science/archive/2016/04/the-illusion-of-reality/479559/) summary of DH's ideas: "here are no public objects sitting out there in some preexisting space. As the physicist John Wheeler put it, ' Useful as it is under ordinary circumstances to say that the world exists ‘out there’ independent of us, that view can no longer be upheld.” '
+
+[r349c10] row350 seq7 175w auto_about=Hoffman auto_disc=physics;neuroscience
+Quantum Consciousness: Roger Penrose and Steward Hameroff https://www.quantumconsciousness.org/. P-H offer Orch O-R, a view that finds Cs residing or supported by teraHz-kHz fractal-scaled vibrations through scintilla (my word: correct word = _____) lining microtubules, present in layer 5 of cortical columns, in tubulin combinations poorly structured for support but optimally structured for high-speed vibrations at multiple scales (TL: think breaking down via Forier Transforms).  But DH: these structures do not exist, and thus do not underlie or support emergent Cs. Their appearance has evolved "on the desktop" to keep us fit, not to inform us. Cs is better conceived as giving rise to (as so many in QM are inclined to say, now) S-T (in what DH would find is a fitness-making illusion, a desktop device interacting at a totally different level than the reality for which it stands, the files for which the pictoral file folder stands as an access point.) So no S-T structures (and thus not microtubules in neurons...) can explain the Cs that in fact gives rise to these apparent structures.
+
+[r349c12] row350 seq8 105w auto_about=Hoffman;Godel auto_disc=computer science;theology
+DH on AI: not emerging Cs, but perhaps new portals to fundamental Cs, and perhaps new Cs. That there is new Cs is suggested by procreation, where a new Cs seems to come into existence. Perhaps also AI procreation is possible, not only to access existing CS but to create new CS. That new Cs might come about points to question of how much Cs...infinite? DH: Godel's incomp theorem--that some unproven truth lies outside of any finite set of axioms--coupled with mathematical-Cs essential mutuality (my lang, not DH's) suggests that new reflection, above and beyond any limited Cs. is always present, true. Cs is infinite.
+
+[r349c13] row350 seq9 158w auto_about=Hoffman auto_disc=theology;sociology
+Note: DH resists panpsychism as a kind of dualism, rather than the more simple monism that he espouses for Cs. (Why again is panpsychism a dualism?) Instead, there is a unified theory of Cs, where smaller Cs agents make up larger ones, so on ad infinitum. But why not suppose this is infinitely worse than dualism? Why so many? What if, on the emerging view I'm considering, there is only one Cs, and each "created Cs" is a limited pespective entertained by the whole; these perspectives have implications for one another, and so interact as we experience as ordinary social life. Together, they work out how to live together, and thus imitate the perfect harmony and love intrisically present in the whole of full, fundamental Cs (God.) After each is no longer entertained actively, it remains present, but not only in its limited perspectival form, but rather now illuminated by awareness of its place in the whole--in God.
+
+[r349c15] row350 seq10 52w auto_about=Hoffman auto_disc=-
+DH: Love may play a role; it is the interaction between Cs agents that gives rise to new Cs agents...//// Dogmatism gets in the way of inquiry; hold beliefs loosely, rendering them more precise, and disabused if necessary, quickly. That letting go of dogmatism may be key to the growth of Cs...////
+
+[r349c16] row350 seq11 53w auto_about=Hoffman auto_disc=biology;psychology
+Logic and reason evolved to persuade (___ & Mercier), from evolutionary psychology...talking with others is the native ground of reason: we hunt there...///But, DH: evolution is predicated on limited resources; beyond S-T, such resources are not limited; that limitation may be an artificact of our interface, and not a feature of reality itself...
+
+[r349c17] row350 seq12 55w auto_about=Hoffman auto_disc=biology
+DH: evol via Nat selection was just first place he could connect with his colleagues. But having shown their products to be illusory, and pointing to fundamental Cs, he's not limited to evolutionary theory...maybe fitness in a limited resource environment is itself a limited illusory perspective, and can be overcome in scientific explanation...but not yet...
+
+[r349c18] row350 seq13 55w auto_about=Hoffman auto_disc=chemistry
+ZDoggMD: drugs open another interface to consciousness, called mystical...if chemicals are an icon, (Harris: eternal communion with a redwood tree, while on acid...) DH: this framework allows for phsychadelics as perhaps a primitive way to hack our interfaces...there is an infinite variety of interfaces and of Cs experiences (he means this in a mathematical sense...)
+
+[r349c19] row350 seq14 109w auto_about=Hoffman auto_disc=biology;neuroscience;computer science
+DH: why does DNA operate; why are children like their parents, from the fundamental mathematics of consciousness? TL: what he seems not to have, //// about 4% of us are synesthetes; evolution seems to be tinkering with the interface. gives example of michael watson, who could feel 3d shape, texture, weight, feeling with his hands, all out of his sense of taste. (smooth column of cool glass, for mint.) Synethesia runs in families; is heritable. // What DH doesn't yet have, is a telos, a computational telos, a computation through a limited perspective (incarnation) expressed as the laws of nature and what follows (from a probabilistic logic of QM.)
+
+[r350c3] row351 seq1 11w auto_about=- auto_disc=-
+// reflecting on burned victim of gang rape in India (https://www.independent.co.uk/news/world/asia/india-rape-victim-set-on-fire-dies-hospital-uttar-pradesh-a9236851.html)
+
+[r350c4] row351 seq2 50w auto_about=- auto_disc=-
+on FC model, all suffering is FC suffering. Why would FC (we) undertake any course of action that probabalistically entailed (or led to) such suffering? For the same reasons that we do. Unempowered, resisted suffering (of children, innocents, insofar as victims, rather than heroes) is the most difficult to square.
+
+[r350c5] row351 seq3 54w auto_about=Rohr auto_disc=theology
+All of Rohr's compilation of growth through suffering (Falling Upwards, etc) is relevant here. Suffering with, suffering as FCs, hindered by limited perspective for a little while (all that we experience) but also enriched with full understanding (even now, in God; not here in time, for us = running under 30 W of input)
+
+[r351c3] row352 seq1 16w auto_about=- auto_disc=psychology
+// 12/7,8/19 notes in Juddy's notebook focus on justification, psychological certainty, stability of justification, and truth
+
+[r351c4] row352 seq2 38w auto_about=- auto_disc=sociology
+Truth is a regulative ideal, that of stability for a tradition through comparison with its rivals by its mature members, isfa they are fully informed about both Ts (from the standpoint of the mature members of both Ts.
+
+[r351c5] row352 seq3 42w auto_about=- auto_disc=physics;sociology
+So far said, T is relative to a tradition, since these judgements (decisions to remain) by the mature members of one T have evidentiary value (of the superiority of that T over its rivals) when made by that T's own mature members.
+
+[r351c6] row352 seq4 83w auto_about=- auto_disc=-
+Yet it is possible that these same mature members may also judge, from their 2nd-first-language grasp of any rival T, that the mature members of that rival T would judge in favor of their rival T, so that one T emerges victorious (preferable) on both sets of standards. In this way, a T may emerge as victorious from multiple, and in the ideal, from any, rival perpective under fully-informed conditions (enough, so that no additional information would impact the outcome of the choice.)
+
+[r351c8] row352 seq5 86w auto_about=- auto_disc=physics;sociology
+So T is the limit of stability as justification approaches infinity. It is possible that T might approach this limit from multiple traditions, for which no adequate fully-informed comparison has yet been made.  I that sense, T is relative to tradition. In fact, even after such a comparison, if the fully-informed comparison produces divergent judgements from original inhabitants of rival traditions, there would emerge empirical evidence that truth is relative to traditions, at least to these two. Though the existence of two of them passing through
+
+[r352c3] row353 seq1 34w auto_about=- auto_disc=-
+// writing-to-emote moment: the FC approach, including several merely suggested components such as full transparency and reflectivity, ends up looking a lot like eastern mysticism and abandonment of scientific method: see ZDoggMD Zuben https://www.youtube.com/watch?v=-zYS67lJV_Y&t=3818s.
+
+[r352c4] row353 seq2 24w auto_about=Hoffman auto_disc=-
+His hope is to "hack the sourcecode", for medical purposes ... // note the "unconditional love" speak throughout...he follows Donald Hoffman (interviewed here: https://www.youtube.com/watch?v=dd6CQCbk2ro)
+
+[r353c3] row354 seq1 26w auto_about=Hoffman auto_disc=physics
+// find Q physicist Nick Herbert, said to postulate consciousness as yet another property of fundamental particles (says DH in Closer to the Truth interview https://www.youtube.com/watch?v=Jv25EcaUQBo&t=220s)
+
+[r353c4] row354 seq2 32w auto_about=- auto_disc=theology
+// transcraneal magnetic stimuation of temporal lobe seems to produce experiences of being in the presence of a loving being, for everyone alike.. https://www.youtube.com/watch?v=NbyRrFUncAw (different cut of same interview): the "God spot"
+
+[r353c5] row354 seq3 80w auto_about=- auto_disc=biology;psychology
+...further on, https://youtu.be/KIGcRLAYSoM, against textbook "evolution produces veridical perception" argument. Arg against starts by distinguishing between fitness and truth...they aren't the same, and evolution is concerned with fitness. Now add evolutionary games...truth goes extinct almost all the time. Truth can only survive when fitness functions are about the same as the structure of the world (monotonic functions works; nonmonotonic functions eliminate truth. So if fitness conditions equal truth conditions, T survives; otherwise, never. In general, fitness is a nonmonotonic function.
+
+[r353c7] row354 seq4 75w auto_about=- auto_disc=biology;computer science;psychology
+in addition to games, they use genetic algorithms, and can't even get truth to breed; fitness wins only. "Natural selection drives true perceptions to extinction." Perceptions are a great guide to keep us alive, but not to inform us. Perceptions are tricks and hacks that let us survive long enough to reproduce: eg, australian Jube beetle in australian outback: looking for bumpy, glossy, and right shade of brown. Beer bottles nearly drove them to extinction.
+
+[r354c3] row355 seq1 5w auto_about=Hoffman auto_disc=-
+// DH late 2014: https://youtu.be/6eWG7x_6Y5U
+
+[r354c4] row355 seq2 24w auto_about=- auto_disc=neuroscience
+roughly 1/3 of neocortex is involved in vision//but camera theory of vision is not right//we construct all these objects, motions, and colors...created in 100ms//
+
+[r354c5] row355 seq3 13w auto_about=- auto_disc=-
+see his slides on macroscopic superposition and entanglement with cube faces and sides.
+
+[r354c7] row355 seq4 88w auto_about=MacIntyre;Hoffman auto_disc=physics;psychology
+DH defines Cs rigorously (slide 1 right); takes consciousness as fundamental: FC. That means the world, in his Cs definition, is actually other consciousness at root. So you can substite perceptions of the world with interactions among Cs agents. (Slide 2) The mathematics describing this interaction is equivalent (shown in slide for nonrelativistic physics) with the Schroedinger equation. (slide 3); and relativistic QM with Q gravity (slide 4)...solving M-B problem by showing B emerging from M, rather than the way presupposed in the hard problem of Cs. (Wow.)
+
+[r355c3] row356 seq1 12w auto_about=- auto_disc=-
+// Way aside: ND's Meg Sullivan quoting Popper against plato's republic: https://www.youtube.com/watch?v=_JrKpkz8PF4
+
+[r355c4] row356 seq2 19w auto_about=Plato auto_disc=sociology
+MS: Plato really seems to believe that Plato wants to create a (horrible) society like this (taken fairly literally)
+
+[r355c5] row356 seq3 8w auto_about=- auto_disc=philosophy
+Send MS Dialectic and ID Accts of Good
+
+[r356c3] row357 seq1 5w auto_about=Hoffman auto_disc=biology
+// DH interview  Skeptic.com https://www.skeptic.com/science-salon/donald-hoffman-case-against-reality-why-evolution-hid-truth-from-our-eyes/
+
+[r356c4] row357 seq2 85w auto_about=Arkani-Hamed auto_disc=computer science
+David Gross, Ed Whitten, Nima Arkani-Hamed (sp=√√d) IAS, all agree...S-T is doomed (as scattering amplitudes at LHC ...)...no operational meaning for S-T after a certain energy scale (black holes will emerge...) math of scattering amplitudes inside S-T gets you nasty algebra (1000 pages of math...); math simplifies beautifully to 1-2 terms computable by hand, but that new object is outside of S-T with symetries outside of ST; go outside that ST and get elegant math...plus black holes emerge at certain energy levels...together, ST is doomed.
+
+[r356c6] row357 seq3 11w auto_about=Hoffman auto_disc=physics
+Obj'n: DH, you are cherry-picking for physicists who agree with you...
+
+[r356c7] row357 seq4 34w auto_about=- auto_disc=-
+Thomas Nagel's book, the last word (1997)...T, objectivity, reason are nonnegotiable...to make a case against them, you have to use them...(the "transcendental arg"; "one thought too many" when you make the case against reality...)
+
+[r356c8] row357 seq5 41w auto_about=Hoffman auto_disc=physics;biology
+DH: all of science so far has been examining our interface...(not the amplituhedron, outside of ST, outside of the interface; as that external reality is projected into ST, it projects appearance best captured by our science (evolution, SM, QM, relativity, etc.)
+
+[r357c5] row358 seq1 48w auto_about=Hoffman auto_disc=neuroscience
+DH; touch a magnet of a certain type to brain region V4 to remove color; section MT to remove smooth motion: these are two of hundreds of correlation between brain activity and Cs. But no causal relationships, beyond correlation, are even published...wrong way to connect Cs to brains...
+
+[r357c6] row358 seq2 9w auto_about=- auto_disc=psychology
+structure-from-motion: ability to generate 3d perception depends on motions...
+
+[r358c3] row359 seq1 11w auto_about=- auto_disc=physics
+// background on amplituhedron and its explorers and motivations: see https://physics.aps.org/articles/v7/107)
+
+[r359c3] row360 seq1 39w auto_about=- auto_disc=philosophy;sociology;history
+// WJWR p. 360: on 1st Ps: “They are justified insofar as in the history of this [that is, any successful] tradition they have, by surviving the process of dialectical questioning, vindicated themselves as superior to their historical predecessors.”
+
+[r360c3] row361 seq1 31w auto_about=- auto_disc=psychology
+// taking a run here at voicing a nagging intuition, re/ implications of a stable-interaction or stable information processing (SIP) account of truth for thoughts about reality, perception, maybe other areas.
+
+[r360c4] row361 seq2 77w auto_about=Hoffman auto_disc=biology;psychology
+Starting with a beef with Donald Hoffman. (Here, based on his public lectures/interviews; reaffirm all that follows after reading his 2019 Case Against Reality, CAR.) On his view, evolution provably produces illusory perception, not veridical. (Back of mind: does his argument undercut itself, like any strong skeptical argument seems easily accused of doing?) Evolution favors fitness, which only under very specialized and not-so-often circumstances maps onto...what? Accuracy? Truth? He uses these loosely, at least in public discussion.
+
+[r360c5] row361 seq3 82w auto_about=- auto_disc=biology
+What is "veridical", in his studies (evolutionary game theory, graph theory, and genetic algorith approaches.) Maximally aware of/in contact with information about the world? Got it: no xray vision: we operate under (what: the illusion of?) a narrow band of electromagnetic wavelengths. So we think two things are the same, when they're not (eg flower with and without UV stripes, which bees can distinguish but we cannot.) This is illusory? Seems odd to say so. So get the details from his CAR
+
+[r360c6] row361 seq4 165w auto_about=Hoffman auto_disc=physics;computer science;sociology
+So that's one easy complaint (or required clarification, at least) from Hoffman. But my main suspicion is this: if it is possible that a rhetorically attractive minimum--analogous to a maximally gravitationally attractive mass moving through a finite physical system--could emerge, attractive from every perspective on full information exchanges, then the way the mature members of that emerging tradition see the world seems to meet both fitness and stability of interaction standards; that is, fitness and truth combine, and not accidentally, but essentially. Fitness in that specialized information-responsiveness arena is truthfulness; fitness is another way to express stability. (Not dead yet, and pretty damn unlikely to be anytime soon: a bamf expression of fitness, of stability of existence, and it can apply to ideas/memes, too.) Truthfulness (information used in stable patterns) is expressed in technology (exterior world as useful), disposition (interior world ...?), culture (exterior world as ends?), and narrative (spoken and written organizational pattern encompassing all else, like an OS for which software is written?)
+
+[r360c8] row361 seq5 182w auto_about=- auto_disc=computer science;psychology
+So perception is veridical isfa it is fit under such full-information probing. Veridical is not the same as universal; of course there are other ways to look at it (a bee's way), but not our way, except also indirectly (through representational coloring of multiwavelength astroimages, for example.) But our image of the moon in visible light is not false (ust as we've dropped "false coloring" for "representational coloring" in astroimage rendering), not substandard, except insofar as it would limit our proper (information-processing, telos-computational) functioning to see it that way. (Is our new/crescent moon image somehow substandard to a full moon image, b/c it contains less information? No. Nor is our image of the full moon, because it isn't transparent, mostly empty space, obviously3d, etc.) So from this stable-information-processing model of truth, fitness does not diverge from truthfulness in perception. Of course it does in instances: ignorance is bliss, we say, but not permanent ignorance. This is why failing to notice the faults of others is a fit-making characteristic, not short-term always but long-term, when properly developed in a fully mature human being.
+
+[r360c10] row361 seq6 146w auto_about=- auto_disc=physics;psychology
+That gets at the nagging suspicion re/ skepticism of perception, from SIP truth. It applies further, though, to skepticism of reality. What is realistic perception, other than SIP (stable, under stable information processing) perception? There may be many ways to achieve this, and all of them may be equally insights into reality--information-processing instances--except insofar as they lose stability under full information exchange conditions (if there are any; otherwise, perceptival relativism is still on the table.) For a perception to lose stability under a FI exchange condition is for mature members to no longer trust it; it remains a veridical candidate (so far) isfa they do continue to trust it under such conditions. Something along these lines is how we might proceed to verify perceptions, and establish that they are in some way real, in some way revealing what is real, constituting information about what is real.
+
+[r360c12] row361 seq7 442w auto_about=- auto_disc=sociology;psychology;history
+But there seems to be another nagging argument in the neighborhood, not about the process of verifying perception, but of the meaning of reality. Suppose that SIP truth is obtainable, replete with (improbably) all the simplifying distinctions: objective (surviving full information inspection from all rival perspectives) and universal (and by all human beings or all consious, human-communicative agents.) Some big tradition would be on the move, a supermassive black hole of justification, pulling in everyone under full information processing conditions: suppose SIP were achieved robustly (under this simplifying hypothetical set of conditions.) Now take any rival set of claims from any other tradition, with any measure of justification from the standpoint of that tradition. (I have in mind, Thomistic natural law claims from those who challenge their tradition-constitutedness; they are universal, T-independent claims, some say...) If it is possible that some supermassive T overcomes this rival T in full-information exchange, then it is false that these natural law claims are tradition-independent; no mature members of the tradition who asserts that they are tradition-independent hold on to such assertions, after FI encounter with our supermassive tradition, on this supposition. So if this supposition is even possibly true, it follows that all claims to T-independentness of any kind ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r360c17] row361 seq8 180w auto_about=- auto_disc=sociology
+That's getting close, as an articulation of this nagging suspicion. Find a way to put this more clearly. Human nature might be such as to support development of a tradition that persuades everyone, under full-information comparison. The only way to find out is to look, to run the experiement. It turns out that running that experiment is possible and desireable for a whole host of other reasons, beyond settling this dispute about T-independent nature of rationality. So let's make that case, and put the program in place, by developing a self-assembly strategy for social information processing. Let's lay out the DNA in story, have the intentionally-designed meme broadcast widely across the populace, uptaken (grasped and embraced), implemented. We might in this way advance enjoyment of the benefits of mutual respect, understanding of the functional role of diversity in perspecitives and lifestyles; providing empirical tests for claims that some kinds of action should be forbidden under some circumstances, as objectively, provably wrong actions, and universal education, kindness, resource sharing, safety/security and responsible adventure promoted widely. (Literary license exercised, if quickly, here.)
+
+[r360c19] row361 seq9 37w auto_about=- auto_disc=-
+Find real cases of the T-independent advocates targetted in this line of argument: starting with Marcus Otte Ch 7 of his master's thesis, A THOMISTIC CRITIQUE OF THE ETHICS OF ALASDAIR MACINTYRE: https://stars.library.ucf.edu/cgi/viewcontent.cgi?article=5581&context=etd. Others? Start a list.
+
+[r361c3] row362 seq1 6w auto_about=- auto_disc=-
+The limit of a book Is
+
+[r361c16] row362 seq2 3w auto_about=- auto_disc=-
+limit of book
+
+[r362c3] row363 seq1 94w auto_about=Arkani-Hamed auto_disc=physics;computer science
+Nima Arkani-Hamed, NAH: .....https://youtu.be/qTx98PUW6lE  See also his 2018 lecture at slac: https://www.facebook.com/SLAC.National.Lab/videos/2009441359067234/?v=2009441359067234. New mathematics transforms scattering amplitutes into rule-following transformations inside volumes of new objects in non-3d space, one notably called the amplituhedron. Problem is, this space, which magically simplifies calculations without any appeal to virtual particles and 100 pages of Feyman diagrams per interaction, does not correspond to our S-T. But something wonderfully simple is emerging; somehow S-T seems doomed, i.e., the wrong place to conceive of fundamental processes. These take place in some underlying computation simplied by the mathematical language of combinatorics.
+
+[r362c4] row363 seq2 18w auto_about=- auto_disc=-
+S-T is doomed. Can't measure, in principle, the limits of S-T....the very small, or even very large quantities...
+
+[r362c5] row363 seq3 43w auto_about=- auto_disc=biology
+classically, action as KE-PE minimum...as if every path is sniffed out...perhaps this (principle of least action) prefigures or is more easily seen as compatible with QM..perhaps the coming of the Q revolution could be smelled as coming, from this action-reforumation of classical mechanics
+
+[r362c6] row363 seq4 55w auto_about=- auto_disc=physics
+perhaps this is a hint.// "particle scattering without space and time"...ST data are not inputs, but rather outputs// Glyn Amps, building blocks for scattering amplitudes (amplitudes imply (when squared) probabilities)// " 'positive geometry', not space-time, turns out to be the star of the show on this very promising but preliminary account, one of many approaches.
+
+[r362c7] row363 seq5 97w auto_about=- auto_disc=physics
+//it looks like some pieces of mathematics are foundational to this system, which my be the Glyn amps, these 3-state relations...// inside-the- tin-can universe, AdS...turns out measurement on the can's inner surface (2d, Conformal Field) is equivalent to all the processes that take place inside it (3d): AdS corresponds to CFT (https://en.wikipedia.org/wiki/AdS/CFT_correspondence) ...this is why AdS/CFT correspondence is sometimes described in terms of a holographic universe (just not yet ours, which is DS, not ADS) // "atoms of space-time" is in radical conflict with Einstein's theory of relativity...what is small, is relative to frame of reference... //
+
+[r362c8] row363 seq6 86w auto_about=Arkani-Hamed auto_disc=physics
+on Jim Gates: error-correcting codes are embedded in the fabric of the universe...says this is fascinating stuff...// NAH's goal is to 'reformulate standard physics in a different language, w/o ST and QM; not to change anything'; to get identical results (reconfirming the SM...) // NAH: the amplituhedron relates well to particle physics, but simply not yet to gravity.//gluons represented by open strings; gravitons by closed strings; but two gluons together can make a closed string...maybe in this neighborhood lies some relationship between the amplituhedron and gravity...
+
+[r362c9] row363 seq7 15w auto_about=- auto_disc=-
+post the slides here with comments...see slides in photos, some with comments in info section.
+
+[r363c3] row364 seq1 50w auto_about=Hoffman;Arkani-Hamed auto_disc=-
+...following up on notes from NAH: what does "S-T is doomed", and more specifically, S-T arises as features of the volumes of amplituhedrons (do I get this yet? no...) imply for emergence of S-T thinking...does it lend any credence, as DH claims it does, to a fundamental CS model? How?
+
+[r363c4] row364 seq2 95w auto_about=Hoffman auto_disc=biology
+First, all it could show, re/ DH's "case against reality", is that reality is a lot different than you think it is, and many of your assumptions about it are false (that it is fundamentally 3d is false; that it obeys mathematical laws seems not to be false...). This claim is also supported by his fitness-over-truth game theoretic (and similar) results, which DH admits he should have seen without those results just by analyzing what is meant by fitness. Not all information makes one fit, so evolution won't maximize info awareness, but rather fitness. Duh.
+
+[r363c5] row364 seq3 85w auto_about=Hoffman;Arkani-Hamed auto_disc=physics
+So is that the main implication of ST-doomed for Cs: lots of stuff we think is false, has to be, and so much as will blow your mind (like ST is not fundamental...)...so don't be surpised when I through a fundamental Cs view at you, with its calling into question lots of stuff you thought you knew. Physicists like NAH do the same, so I'm in good company, and you've got a lot to learn....is THAT the force of NAH's and similar claims, for DH?
+
+[r363c6] row364 seq4 183w auto_about=Hoffman auto_disc=physics;philosophy
+Whether or not that's the full force for DH, what force should it have for me? It looks like mathematical objects with no S-T properties underlie physical reality, and our experience. Somehow those ST properties are information flowing from, derivable from, noticeable given, these mathematical objects. If information is noticeability (roughly), then fundamental conscious would supply an answer to the question: who notices the information that exists, flows from mathematical objects, prior to ST emergence? Answer: FC. To be information is not merely noticeability; it is to be noticed, to be informing, to inform (what, or who? FC.) So perhaps everything possible is noticed by FC, and we are limited perspectives of FC, noticing subsets of what is noticed entirely by FC; we are in that sense derivative (created?) Cs, since elements must logically first be noticed, to be noticed as parts of some limited whole....(this has some plausibility to it, but be wary of philosophical arguments like this.) To be information is to inform: that has a nice ring to it, not as an argument, but as a rhetorical (including mneumonic) strategy.
+
+[r363c8] row364 seq5 174w auto_about=Hoffman;Arkani-Hamed;Tegmark auto_disc=-
+So ST-doomed does loosen the grip of scientific explanation in such a way as to make room for FC, as DH suspects but (b4 reading CAR) doesn't yet well articulate. What it needs to make FC plausible is a clear formulation of a question (what drives the emergence, the implication, the transition from possibility to actuality (where what is actual is noticed...but what is possible is not? if not, what actualizes? perhaps with Max Tegmark, nothing does: to be possible is to be actual. Then it is plausible that the implications of possibilties, which reside in Cs, lie in the same sphere as the impliers, themselves possibilities, the sphere of Cs (which we know from our experience of the implications, and now (grasping them with NAH) the impliers themselves. Mathematical possibility informs, is noticed. Perhaps that's its very nature: stable informing (as opposed to unstable appearance, known too well by us, perhaps not at all by FC, except as the outcomes of limited-perspective calculation. ("Like us, in all things but sin", comes to mind.)
+
+[r364c3] row365 seq1 42w auto_about=Hoffman auto_disc=-
+// diane hamilton interview (https://youtu.be/XzQx7UEXJ3k)  with DH: she's an empathy expert...recall conversation (IAS Chrismas party) with director of Deliotte Center, on empathy: note that Macintyre's account provides a limiting measure of empathy, which is reciprocal confirmation of a full description of another...
+
+[r365c3] row366 seq1 48w auto_about=MacIntyre auto_disc=sociology
+// reading file:///Users/Tom/Downloads/Alasdair_MacIntyres_Contribution_to_Comm.pdf brings up some recurring issues. At issue is incommensurability, inscruitability of reference/indeterminacy of translation (Quine) v Davidson (on the very idea of a conceptual scheme) v MacIntyre (somewhere in the middle between never and always, can we meaningfully communicate (at all? outside our tradition/paradigm/conceptual scheme?
+
+[r365c4] row366 seq2 27w auto_about=MacIntyre auto_disc=sociology
+quoting MacIntyre‘The boundaries of a language are the boundaries of some linguistic community which is also a social community’ (1988: 373). Language-in-use is a relevant description, here.
+
+[r365c5] row366 seq3 170w auto_about=- auto_disc=biology;neuroscience;computer science;theology
+TL nagging thoughts in this whole area: if intelligence is processing information in such a way as to expedite further processing of information (compare this with Alex Fridmans' french AI guest...._______), and if there is no intrinsically right/wrong, true/false way to process information, but only more or less stable ways as we respond to even more information, then models are intelligent creations, selected to enable computations of many instances of data more quickly as of a certain kind (analogous to and perhaps dependent on mylenation across synapses in nerve cell transfer of information). Memory is model-creational, info-type-associational behavior. So is (mathematical) modeling, building prediction for like cases, and with more powerful models for different types of case which in fact have something important (and perhaps capable of being rendered mathematically more precise) in common. Models are stories; stories are contructed from language that brings a fluid mix of concepts (themselves, models of some kind) to bear on the interaction with new information. ("That's not what our ancestors would have done....")
+
+[r365c8] row366 seq4 64w auto_about=- auto_disc=physics
+We make bigger models that subsume smaller ones. Virtue does this in stories of persons united by shared and favored character traits. Mathematical models do this by subsuming special cases under larger, more applicable laws (e.g., gas laws (Boyle's, Charles', combined) under the ideal gas law pV=nRT; gas behavior under newtonian kinematics; relatively slow interactions under what holds of all interactions under relativistic descriptions.)
+
+[r365c9] row366 seq5 66w auto_about=- auto_disc=sociology
+Language (including mathematical, specialized technical, ordinary, always as-in-use in some social context (community) is a model-bearer; parts for model construction flow loosely (or less so) in a flow of speech that seems always to be sense-making, which is to be model-creating. This speech here is model-creating: I am formulating a model of language-as-model-creating, into which I may place and more efficiently process future instances of language.
+
+[r365c10] row366 seq6 120w auto_about=- auto_disc=-
+The rhetorical power of language depends in part (to jump from the more general to the slightly less) on rythm, on music, in part because rythm functions in model construction as nails function in house framing (to try out a useful if limited analogy--all analogies being models.) "To be information is to inform": this is a rhetorically effective presentation of a model of information. The bounce of the phrase, the brevity, the symetrical use of the same concept in two forms of speech ("inform*") on either side of the suggested equality ("is") is what gives this model of information some ring of truth, some appeal...actually, some promise of usefulness in an ever-more-powerful and stable way of thinking about the world.
+
+[r365c12] row366 seq7 206w auto_about=- auto_disc=computer science;theology;sociology
+So what is communiciation? How about, model transfer, in particular, a fluid process whereby model-creation tools flow from one information-processor to another. (Glad this happened? Someone actually informed you, benefited you, said something worth saying? You now process the world more preferentially, more stably. Maybe just told you a good joke, a tool for moving a crowd toward more prefereable information interaction, down the road. (Quck scan of audience who might enjoy that joke; file it away, associated with (model-driven) kinds of persons who will enjoy, be embarrassed by, be impressed by, your use of that joke. A joke is a model (of course, a collection of models) with an attitude. So is a threat. So might be a story. (Stories can also carry a point: a conveyable model, not just to rearrange the furniture in the model-construction lab, as (for example) when the function of our speech act is to keep someone (via affection, usefulness, threat, ...?) in their place in a social arrangement. Social arrangements (communities( are themselves (sorry, but true) models, information-processing structures. (Recall the subtitle: processing information socially in the age of AI.) Am I overusing the idea of a model, yet? Maybe rhetorically, yes; but logically, I don't see how so.
+
+[r366c3] row367 seq1 1031w auto_about=- auto_disc=physics;philosophy
+// so let's take these information processing thoughts to a considation of facts, or rather the meaning of "facts". These are thought to be objective, perhaps the outcomes of observation, through some clever philosophers of science talk about theory-laden facts, as if our theories are built into our observations. So, for example, particles like the Higgs Boson are observed, indirecly, via statistical analysis of a great many collisions at the LHC, recorded in one of its general purpose detectors, CMS or ATLAS; that statistical analysis builds on recontruction of many individual events, each of which is reconstructed from some behavior in the detector, and some basic information about the energy of the colliding particles. The reconstruction of the daughter particles emerging from the collision of parents is tough, because in advance you can't know what the nature of the parent particles are: protons are not fundamental, and the number and nature of the constituent particles--quarks and gluons--from each proton are numerous, and can only be identified through reconstructions, solutions that are consistent with the laws of nature and all of the more basic observations in the detector (such as the number of electrons flowing out of a photomultiplier tube (that is, the current) of a known voltage and a feed of photons from a scintillator of known properties, between layers n and n+ ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r367c3] row368 seq1 93w auto_about=- auto_disc=neuroscience;theology;sociology
+// the Default Mode Network of the brain, highly active when specific task activation is low, responsible for our sense of selves, others, social interaction, and narrative comprehension, shows parallel activitation when the same story is told to different people in different languages. There seems some underlying brain commonality to narrative management (Honey, Christopher J.; Thompson, Christopher R.; Lerner, Yulia; Hasson, Uri (2012-10-31). "Not lost in translation: neural responses shared across languages". The Journal of Neuroscience. 32 (44): 15277–15283. doi:10.1523/JNEUROSCI.1800-12.2012. ISSN 1529-2401. PMC 3525075. PMID 23115166.) See also DMN article in wikipedia: https://en.wikipedia.org/wiki/Default_mode_network
+
+[r367c4] row368 seq2 94w auto_about=- auto_disc=neuroscience;theology
+Das Default Mode Network (DMN) des Gehirns, das bei geringer Aufgabenbeanspruchung hochaktiv ist und für unser Selbst- und Fremdempfinden, soziale Interaktion und das Verständnis von Erzählungen verantwortlich ist, zeigt parallele Aktivierung, wenn dieselbe Geschichte verschiedenen Personen in verschiedenen Sprachen erzählt wird. Es scheint eine zugrundeliegende neuronale Gemeinsamkeit beim Erzählen von Geschichten zu geben (Honey, Christopher J.; Thompson, Christopher R.; Lerner, Yulia; Hasson, Uri (31.10.2012). „Not lost in translation: neural responses shared across languages“. The Journal of Neuroscience. 32 (44): 15277–15283. doi:10.1523/JNEUROSCI.1800-12.2012. ISSN 1529-2401. PMC 3525075. PMID 23115166.). Siehe auch den Wikipedia-Artikel zum DMN: https://en.wikipedia.org/wiki/Default_mode_network
+
+[r367c5] row368 seq3 13w auto_about=- auto_disc=-
+auf deutch, bitte...this is how to translate into english, from German, oder nicht?
+
+[r367c6] row368 seq4 13w auto_about=- auto_disc=-
+In German, please...this is how to translate into English from German, or not?
+
+[r367c7] row368 seq5 132w auto_about=- auto_disc=neuroscience;sociology
+// see the Science confirms we suck at political thinking blue box in WBW Ch 9 https://waitbutwhy.com/2019/12/political-disney-world.html: the conclusion of several studies, notably this one (https://www.pnas.org/content/early/2017/08/15/1704882114.short) is that politics polarizes even high-level thinkers who are otherwise swayed by evidence, outside of politics. That seems to be because politics activitates different areas of the brain, namely, the default mode network, which seems responsible for self-, other-, and narrative-awareness (among other functions); this is turned on all time, if a bit less so during goal-directed activity. Note the plot of DMN activity vs political issue thinking. In fact, reasoning on political beliefs seems to further entrench people into their own beliefs, and induce skepticism about reason (science.) We're not far from the Meno: confusion may be good for us, but it pisses us off.
+
+[r368c3] row369 seq1 37w auto_about=- auto_disc=-
+// before S-T, there is no mass, thus no energy, thus no effort; no time, thus no process; thus, effortless transparency if conscousness exists underneath, logically prior to, as a feature of?, all mathematical [possibility = actuality].
+
+[r368c4] row369 seq2 53w auto_about=- auto_disc=-
+Note that this approach, too, does not require two sorts of existence: conscousness, and mathematical possibilities to be beheld. Try out univocity of being (at least at mathematical vs fundamental cs level); then again at CS vs limited CS (univocity in a fundamental sense, but analogous predication at a S-T v non-S-T level.
+
+[r369c3] row370 seq1 16w auto_about=- auto_disc=-
+// spend some more time on the 'universal principles' vs 'empircal stability' foundations for natural law
+
+[r369c4] row370 seq2 163w auto_about=- auto_disc=sociology
+somewhere in here is an argument that the very state of affairs which UP folks think is likely (slow emergence of rational consensus, starting perhaps around science) is one whose very possibility undercuts the existence of universal principles. Such an emerging consensus (already showing in natural sciences) suggests that a stable tradition is not only possible but expected. And if possible, either it diverges from UPs, or not. If it does, it opens the question of how we could ever know that such UPs were true, and indeed even meaningful. And if it doesn't diverge, it is unclear why tradition-free UPs are necessary or even useful. Instead, UPs seem justified in light of their belonging to a maximally stable set, and not otherwise, exactly what advocates of T-bound principles assert. So those advocates of T-bound rationality and T-bound principles, including a corresponding account of truth as enduring stable information processing, seem to be correct if what their opponents deem likely is even possible.
+
+[r370c3] row371 seq1 27w auto_about=- auto_disc=computer science;philosophy
+// dialectic of design and simulation: https://www.zdnet.com/article/computer-simulation-enters-the-ai-age-the-altair-story/?ftag=TRE-03-10aaa6b&bhid=25948665170062575290503142770731 -- Jim Scapa, Altair Engineering, "Scapa's novel take is there will be both "simulation-driven digital twins, and data-driven digital twins"
+
+[r370c4] row371 seq2 9w auto_about=- auto_disc=-
+(go back to this...there may be something important, here.)
+
+[r371c3] row372 seq1 35w auto_about=- auto_disc=physics;neuroscience;philosophy
+// on consciousness — metaphysical, physical, cognitive neuroscientific, & philosophical levels all resolvable by the same approach ... fundamental consciousness with perspectival differentiation .... not hiding reality but shaping it from our limited created perspective
+
+[r371c4] row372 seq2 93w auto_about=Hoffman auto_disc=theology
+this approach adopts DH's view of fundamental cs, but rejects (? finish his book first, dummy) his "purposefully hiding reality" approach...all that can mean on his own account is filtering information for fitness. But the limit of "unhiding" is god-like, all-at-once, no-energy-required instantaneous (outside of time) awareness of all possibilities and their interdependencies at once. The drive toward fitness is not the cause of our falling short of that standard--of our failure to grasp "reality" in that fullest sense--but rather the effect of our limited information-processing state, of our limited perspective (?) ...
+
+[r371c5] row372 seq3 302w auto_about=- auto_disc=physics;biology;philosophy;theology
+? perhaps the metaphysics of our limited perspective, our drive toward models as efficient processing modes, our percolation into consideration (existence), our continuation as contributors to the calculation of a created harmony and unity--of Christ, the beginning (timeless creative purpose) and end (ultimate created effect) of this limited-perspective, i.e. created calculation--perhaps our participation in this calculation advances through efficiency in the face of finitude, of limitedness, which amounts to advancing through fitness, through evolution. So beholding a finite subset of possibilities amounts to adopting a limited perpective, which plays out (advances, calculates) in Space-Time (S-T), amounting to the processing of the whole through the part (the finite, the limited perspective), with a two-fold implication of required efficiency: 1) as models (subsuming, processing the many under the few or under one), which is our individual and collective (cellularized) experience of this limitedness, this drive toward efficiency at the cognitive level (following laws of logic/mathematics, the laws of nature (confines of our limited perspective, expressed as cellular consciousness); and 2) as fitness, which is this same drive toward efficiency expressed in the collective limited consciousness of nature (this limited, cellularizable (parallel processed) perspective of fundament ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r371c8] row372 seq4 75w auto_about=- auto_disc=biology;neuroscience;theology;sociology;psychology
+Somehow the key ideas here are of fundamental consciousness, of creation as adoption of limited perspective, of parallel processing through cellularization (expressed at multiple levels, notably in brains and in societies), of efficiency (expressed as fitness, at least both at biological levels as survival and at psychological/conscious levels as models, which is actually at conscious levels at every level, but not perceived as conscious at every cellular instance (here, too, achieving efficiency through specialization/level creation).
+
+[r371c9] row372 seq5 91w auto_about=- auto_disc=-
+Again, the biggest, coordinating idea here is that existence is information processing (or is expressed well on that model ; ) To be information is to inform; to exist is to be considered; consideration under limited perspective gives rise to the need for processing-in-time, to space-time of some sort (?), including some notion of efficiency (productivity/time), and thus of energy (capacity for productivity/time). Productivity = efficiency * processing speed (cycles per unit time). Our particular shared limited perspective is known as nature. So created existence is natural processing, or natural consideration.
+
+[r372c3] row373 seq1 11w auto_about=- auto_disc=-
+... thinking about individual existence, life and death on this model
+
+[r372c4] row373 seq2 93w auto_about=- auto_disc=computer science;sociology
+to live is to calculate; created life is calculation under (adoption of) a limited perspective and therefore in time; that computation is rendered more efficient through cellularization (parallelization); error correctiion is one aspect of efficiency that seems also to be achieved through parallelization and sparseness strategies. So our cells are alive, our individual members of a society are alive, our communities are alive, our memes may be alive, our language, our models...unless we distinguish between consiousness and what consciousness thinks about/is aware of...but on an FC model, no such distinction seems ultimate, fundamental.
+
+[r372c5] row373 seq3 143w auto_about=- auto_disc=sociology
+death is the abandonment of limited perspective. When we put down the limitations of a perspective (no longer focusing that perspective, no longer calculating only from it) we no longer require energy to hold it in place; we let go of it, but we do not cease to be aware of it. That perspective still exists, it is still one point of view, but now informed by further perspective, by multiple points of view. These points of view become united--the same consciousness is aware of all of them--and even in us, we can pull this off for some limited number of perspectives...just the ones we know, have become aware of. So as members of a community, our perspectives might--if we invest the energy to propogate them--endure. But outside of our shared limitations of perspective--outside of nature--these exist, endure, are considered without energy requirements.
+
+[r373c3] row374 seq1 19w auto_about=- auto_disc=sociology
+// Mark Moes and Mark Ballentine as examples of teachers, professional inviters, moving up toward maturity in rich communities
+
+[r373c4] row374 seq2 42w auto_about=- auto_disc=-
+// another random factoid/suggestiod: suppose one published as a shared spreadsheet, with full interactivity (read-only). In any case, this might not be a bad way to write...not only in randomized bursts as in this sandbox, but in a second, more orderly way...
+
+[r373c5] row374 seq3 31w auto_about=- auto_disc=sociology
+1. We can and we should build and live in a network of information-rich communities with high information flow between and among them. (This amounts to a social information- processing paradigm.)
+
+[r373c6] row374 seq4 26w auto_about=- auto_disc=physics;neuroscience;sociology
+2. We can extend that social information-processing paradigm across all areas of inquiry, notably, quantum physics, neuroscience and consciousness studies, on a limited-perspective fundamental consciousness model.
+
+[r373c7] row374 seq5 25w auto_about=- auto_disc=theology;sociology
+3. The traditional narratives by which we understand ourselves can be retold and improved under this fundamental consciousness model, notably, our American and Christian stories.
+
+[r374c3] row375 seq1 69w auto_about=Tegmark auto_disc=-
+//qq: what work does the "limited perspective" modifier to the FC model actually do? Is it a big enough addition to warrant some headline?  How about the LP-FC implication (following Max Tegmark) that all mathematical possibilities are actual? Or rather, that, plus the resource that some possibilities might be left unconsidered by free created (LP) agents? How about the FC model of life, death and resurrection? Any others? __________
+
+[r374c5] row375 seq2 35w auto_about=- auto_disc=physics;computer science;sociology
+Such a network promises to overcome the challlenges of information overflow, polarization and relativism, while providing a foundation for an empirical science of the natural law that can guide communities through AI-enhancements to their growth.
+
+[r374c6] row375 seq3 4w auto_about=- auto_disc=-
+The fundamental consciousness model
+
+[r375c3] row376 seq1 266w auto_about=- auto_disc=-
+// all I have for you is an invitation. Even whether to receive it as an invitation is up to you, and your choice, as well as mine, must cohere if there is to be a fact to the matter about whether or not it is an invitation. But not your choice--I so choose--under any cricumstances (in anger, under hallucinogens, under conditions of evident sustained inability to persuade me that you have any idea of what I am attempting), but rather your choice when you are responding to information--stimulus, interpreted by you--about what I am attempting when I issue what I take to be this invitation. In the end, what my actions mean--even whether they are actions or have meaning--emerges as a consensus between us. We interact in a stable way--we bond over this--or we don't. If there is an enduring answer to the question as to whether some set of conditions might reliably, stably produce such bonding interaction--such agreement--is an experiment that must be conducted under fairly elaborate set of conditions, like any other: GIGO; precision in, precision out. We are free to reject such precision--to reject science--if we choose, and it has no status independent of whether we would reject it under some set of richly-informed circumstances. But it may have such status; we may find that doing science, engaging the world as measurable and predictable--is an attractive way to engage it, and that  ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r376c3] row377 seq1 36w auto_about=- auto_disc=-
+// post-conversation with Johnny Loughran 12/29/19: we touched on a lot of questions over 7 hours of conversation: in this row, I'll list what I can remember, and in the next, responses emerging during and afterwards
+
+[r376c4] row377 seq2 95w auto_about=Carroll;Tegmark auto_disc=-
+Issue cluster #1: how can consciousness outside of time have goals? What is the source of dynamism in created consciousness, on a limited-perspective (LP) model of created fundamental conscouisness (cFC)? What are the goals of FC, the life of FC, and how is that life reflected--must it be reflected--in cFC? Or is "must" the right moifier, here...is there any sense in which what emerges from what is timeless can be other than necessary? Can contingency emerge from particularity of LP? Is every possibility, actual, to FC? (On this issue, recall Max Tegmark to Sean Carroll.)
+
+[r376c5] row377 seq3 26w auto_about=- auto_disc=-
+#2: what is limited consciousness, LP consciousness?  Is Cs awareness of numbers/mathematical entitites? What is the relationship between consciousness and time, between limitedness and time? Space?
+
+[r376c8] row377 seq4 13w auto_about=- auto_disc=-
+# 3: what are life, and death, on the LP view of cFC?
+
+[r376c9] row377 seq5 12w auto_about=- auto_disc=-
+# 4: what is personhood, self, on the LP view of cFC?
+
+[r376c10] row377 seq6 29w auto_about=- auto_disc=theology
+# 5: what is consciousness of evil? Intention? Agency? Moral responsibility? Culpability/guilt? How is FC/God not responsible for everything, and thus for everything evil, and thus a monster? (GAA?)
+
+[r376c11] row377 seq7 13w auto_about=- auto_disc=-
+# 6: what are the goals of divine life, and of created life?
+
+[r377c3] row378 seq1 7w auto_about=- auto_disc=-
+... reflections on each cluster of questions/issues...
+
+[r377c4] row378 seq2 24w auto_about=- auto_disc=-
+knowledge, enjoyment are timeless or can be; created analogies of consciousness outside of space, outside of time; series of "nows"; eternal "now" of consciousness...
+
+[r377c5] row378 seq3 232w auto_about=- auto_disc=neuroscience
+imagine a floating 2-d grid of numbers (1/0, or 1-9, or...), infinitely extended. If infinite, then every combination of numbers and neighbors, of any arbitrary extent, is present in this grid. Now imagine a line, and folding of the sheet across the diagonal of any finite sized subset, rippling out infinitely, a new mathematical object, a relation, where each number is related in some way (is identical with, or not, if 1/0; is =, or is <> by so much, if 1-9, etc.). One can now consider that relation, and each pair of numbers related, and in multiple orders: 1R2, 2R1, 12R, 21R, R12, R21--6 different logical orderings between this same set of numbers and relations. The relations themselves populate a different matrix (eg, if all numbers on the top of the fold were double those underneath, the relations would all be 2x of x to y, 1/2x in y to x; these two directional matrixes would have 2s in all cells, and 1/2 in all cells, respectively. Now imagine considering these in some particular order, one xy or yx relation logically before another...perhaps this logical ordering is analogous to the flow of time. (In our 30W brains, we would consider these consecutively in time, or, when we parallel process, at the same time but in different spaces. (Parallel processing is just serial processing spread out in space, rather than in time.)
+
+[r377c8] row378 seq4 81w auto_about=- auto_disc=psychology
+Life (created life) is limited awareness, perspective, perception, consciousness. We break up kinds of life in ways that correspond to the kinds of limitations on each perspective. (We focus on kinds according to fitness-for-us.) What kinds of things are alive? Anything that percieves the world is alive; life is perception. Life is no longer created life when its perception is no longer limited. Death is the release of limitations of perspective. (In that sense, all of life is preparation for death.)
+
+[r377c9] row378 seq5 96w auto_about=- auto_disc=neuroscience
+All living things are persons, on this model: to be a person is to perceive. These is such a thing as what it is to be like, each and any person, though we may not be wired so as to perceive that personhood. //Split brain experiments: connecting persons produces unity; disconnecting them, plurality.//Individual cortical columns may well be conscious, be persons. // Moral agency seems a particular kind of personhood. Very small children are persons but not moral agents.//Moral agents perceive consequences of their actions and impact on the knowledge and enjoyment (the lives) of others.
+
+[r377c10] row378 seq6 112w auto_about=- auto_disc=-
+For a limited perspective to participate in conscious life is to come to know and enjoy; the need to move toward these ends is a consequence of limitation of perspective; there is something outside of that perspective that must be efficiently bundled within the confines of the limitation (in our case, in accord with the laws of nature, implications of culture, etc.) That process of coming to know is an exploration, a calculation: mistakes can be made, and we learn through them. Insofar as we fail, we do not intend the failure. From our limited perspective, we do intend what is in fact failure, but is not recognized as such (not all-things-considered.)
+
+[r377c11] row378 seq7 91w auto_about=- auto_disc=theology
+Divine (unlimited) consciousness is aware of everything and of its interconnectedness, and enjoys it all. All of this is immediate and effortless; effort is required when limitations on consciousness must be overcome (as limited consciousness must do, and accomplishes through language/model/narrative/schema creation. This pathway toward divine life is what created consciousness is calculating: these are relationships that are discovered and incorporated into the limited perspective to overcome in some measure its limitations. So living together in maximal awareness and enjoyment of one another (as friends) is the end of created life.
+
+[r378c3] row379 seq1 8w auto_about=- auto_disc=-
+...one step further on each set of reflections...
+
+[r378c5] row379 seq2 10w auto_about=- auto_disc=-
+Objection: our consciousness looks nothing like awareness of mathematical entities
+
+[r378c6] row379 seq3 58w auto_about=Hoffman auto_disc=-
+Resp: our particular connections (relations of a certain sort) from our limited perspective unite as much as we can disparate elements under a single entity, or model. We experience some particularity--as DH says, presumably what has a fitness payoff for us--but most of it is hidden from us (the many white inputs as a star on a flag.)
+
+[r378c8] row379 seq4 83w auto_about=- auto_disc=physics
+In what sense do we survive after death? In the way a limited perpective survives--is recognized as limited, and how--when set against a background where those limitations are removed. So we can solve a physics problem from kinematic considerations, leaving side energy considerations, and then recognize that it can be solved both ways, and how those two ways are related to one another. The limited awareness does not disappear when limitations are removed; it is enhanced, more than it was before, not less.
+
+[r378c10] row379 seq5 54w auto_about=- auto_disc=-
+So failure (wrong solutions) is recognized as possible (this relation is NOT that relation) from an eternal perspective, but explored/committed inside a limited (in time) perspective. It is never intended from an eternal perspective; it is intended only qua something good from a temporal perspective (until the error is recognized as an all-things-considered mistake.)
+
+[r378c11] row379 seq6 85w auto_about=- auto_disc=-
+All of the striving of natural objects is the pursuit of natural ends is limited fundamental consciousness seeking to overcome the limitations of its perspective and participate in the life of unlimited consciousness. What the universe is calculating is how to get to that state, which represents the best answer to how all the parts should relate for such optimization. Insofar as present to unlimited consiousness, this result is known: insofar as present to limited consciousness, this result is still become clear, getting hammered out
+
+[r379c3] row380 seq1 6w auto_about=Hoffman auto_disc=-
+// reading DH's case against reality
+
+[r379c4] row380 seq2 38w auto_about=- auto_disc=-
+desktop icons are designed to "hide" the truth (xii): really? Not to organize it? Simplify access to it? // Do models "hide" the truth of particulars, or do they enable us to interact with many things more efficiently?
+
+[r379c5] row380 seq3 34w auto_about=- auto_disc=-
+Fitness beats reality every time.../translated/ in tests designed to produce the most fit, only the most fit strategies win. Not those strategies that feed fit-making + not-fit-making information, just the fit-making information. No shit.
+
+[r379c6] row380 seq4 24w auto_about=Hoffman auto_disc=psychology
+DH: "I take my perceptions seriously, but not literally. This book is about why you should do the same, and why that matters." xiii
+
+[r379c7] row380 seq5 29w auto_about=- auto_disc=biology
+p. 5-6: 2005 special issue of Science ranked top 125 open questions in science: 1) what is the universe made of? 2) what is the biological basis of consciousness?
+
+[r379c8] row380 seq6 16w auto_about=- auto_disc=-
+The Hemholtz Club (meeting at UC Irvine) studied this question (with Francis Crick) for decades (....
+
+[r379c9] row380 seq7 28w auto_about=- auto_disc=neuroscience;theology
+p. 10: split brain studies, even theological differences can exist between hemispheres, once the cortical collostrum is cut. (who can be saved? "tough questions for a future neurotheology.")
+
+[r380c3] row381 seq1 11w auto_about=Dennett auto_disc=-
+// Caroll and Dennett jan 2020 https://www.youtube.com/watch?v=8yZw4wxvnVQ .... TRANSCRIPT AT https://www.preposterousuniverse.com/podcast/2020/01/06/78-daniel-dennett-on-minds-patterns-and-the-scientific-image/
+
+[r380c4] row381 seq2 286w auto_about=Hoffman;Dennett auto_disc=neuroscience;computer science;psychology
+key point for me is Dennett's view that consciousness is like a user illusion, very much akin (says me) to DH''s desktop image: "1:32:34 SC: So just to be super clear, to get the lingo right, you’re not claiming that consciousness is an illusion. It’s real in the same sense that the patterns that we talked about are real. These concepts of experiences play a useful role in how we explain what we go through. 1:32:52 DD: Well, I’m glad you asked that question. 1:32:56 SC: Or not so. Let’s get it right. 1:32:58 DD: Because I like the term illusion. 1:33:00 SC: Okay. 1:33:03 DD: And I think it’s a generational thing. I think that the younger generation has no trouble with illusion as a positive term, as in the user illusion. Consciousness is a user illusion, in fact, the manifest image is a user illusion. It’s nature’s way of simplifying the world for us. In the same way that software engineers have brilliantly created these metaphorical icons and sound effects, and, think of how badly you would misunderstand the computer if you tried to figure out how computers work by simply extrapolating from the user illusion. 1:33:53 SC: Yeah, taking literally the files on your desktop. 1:33:56 DD: That’s right. The user illusion is a brilliantly designed… The user illusion of a laptop or a smartphone is brilliantly designed to exploit your perceptual and locomotory and hand dexterity powers,  ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r380c7] row381 seq3 45w auto_about=Dennett auto_disc=sociology
+Dennett makes an important closing point about religion: we need the communal dimensions, but not the myths, nor the harm to critical thought that naive insistence on myths has done. But he's got an impassioned plea, praise, really, for the communcal/social service dimensions of religion
+
+[r380c8] row381 seq4 564w auto_about=- auto_disc=physics;biology;sociology
+starting at 1;53;30, CS summarizes DD's worldview, and asks for implications for ethics: 1:51:04 SC: I like that, okay, very good, I will remember that. Not how the black mirror episode ended but still a good one. Good. I think to wrap up, let’s deviate a little bit from you’ve had a long career with many greatest hits, so I think we’ve hit some of them here but what are the… There’s a world view that you’re sketching out that is very coherent and fits together in various ways, laws of physics, Darwinian evolution, intentional stances, real patterns, what are the implications of that, as we’ve been, we’ve begun to touch on this but for morality, for ethics, for how we should live our lives, right? Is there a meta ethical conclusion that comes from this or even ethical conclusion? /  / 1:51:46 DD: Well, yes, I think there is and part of it is yet another aspect to my work we haven’t mentioned is it means we don’t need religion. Religion was maybe a good scaffold on which to build civilization, maybe the myths of religion kept people in line and cooperating because they were worried about big brother watching them and maybe I’m quite content with a hypotheses, not provable, but they might be true and say that that civilization depended on religion. I don’t think it does anymore. I think we can grow up and simply abandon the myths. But when we do that, we wanna be sure that we don ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r380c15] row381 seq5 48w auto_about=- auto_disc=theology;sociology
+on morality, at 1:56 DD: "So I think morality is itself a, is a human...a social construct and that…t’s not given by god, it isn’t deducible from a set of axioms, it’s a, in a certain sense, political and racial creation of ideally an informed community of people.
+
+[r380c16] row381 seq6 149w auto_about=- auto_disc=psychology
+DD: 1:01:47: Andrew Parker’s idea about the Cambrian explosion. And Parker hypothesizes that the shallow ocean became transparent in a way it hadn’t been before, and this suddenly permitted distal perception, permitted eyesight. And the book is called In the Blink of an Eye. And he argues that the arms race of predator and prey locomotion, camouflage, armor, this all was generated by a growing transparency. And it’s not the only theory out there, but it’s one that I think there’s gotta be an element of truth in it. And I’ve been arguing that what we’re facing right now is the second great transparency, and that’s the electronic transparency. And everybody’s now worried, and so they should be, about privacy. And we can now see farther and we can see into things we could never see into before, but we can also be watched and we can be seen.
+
+[r380c18] row381 seq7 63w auto_about=- auto_disc=psychology
+DD also objects to the hard problem of consciousness, saying that the hard problem is actually not how CS arises but how CS in turn causes action: ignore that hard question, and the hard problem of Cs arises. But treat that whole causal sequence (sensation to perception to conscoiusness to intention to action) and the hard problem of CS disappears.  (TL: why, exactly?)
+
+[r381c3] row382 seq1 10w auto_about=Hoffman auto_disc=-
+// returning to notes on DH The Case Against Reality
+
+[r381c4] row382 seq2 42w auto_about=Hoffman auto_disc=biology
+FBT theorem: Fitness Beats Truth, conjectured by DH, proven by Chetan Prakash (statement, p. 61: fitness drives truth to extinction by a probability at least (N-3)/(N-1). This theorem is provable from assumptions of generalized evolutionary theory (get his language precisely right, here:_________)
+
+[r381c5] row382 seq3 58w auto_about=- auto_disc=psychology
+Interface Theory of Perception (ITP) follows from FBT and perhaps other? findings about perception (or rather, coheres with these other findings.) Our perception is best viewed as an interface, like a desktop, not tuned toward revealing what is true, but rather guiding us efficiently toward what produces fitness, generally hiding from us detail that does not optimize fitness.
+
+[r381c6] row382 seq4 41w auto_about=Hoffman auto_disc=psychology
+Here's an attempt to summarize DH's argument in the book. Fitness Beats Truth (FBT). So Perception is an Interface for maximizing fitness points as cheaply as is necessary (hence predictively) to pass along genes (individually or specifically); this is the ITP.
+
+[r381c7] row382 seq5 38w auto_about=- auto_disc=neuroscience;psychology
+Other theories of perception take it to be veridical, with sensation somehow informing perception, consiousness, in the brain.  But these realist theories of perception can give no scientific, explanatory account of how brain states give rise to conscousness.
+
+[r381c8] row382 seq6 52w auto_about=Hoffman auto_disc=physics;neuroscience
+Moreover, physics shows us (or at least makes it plausible) that "space-time is doomed", and thus physical objects are doomed, and thus neurons, and thus causal relationships between them, and thus any conscousness emerging from them. (DH doesn't but let us call this emerging conclusion the Spacetime is Not Fundamental (SNF) result.
+
+[r381c9] row382 seq7 57w auto_about=- auto_disc=physics;biology;neuroscience;psychology
+So given the impact of general evolutionary theory on perception: zero progress in neuroscience toward the "hard problem of conciousness"; all added to the "spacetime is doomed" emerging theme from physics, isn''t it time to reconsider the paradigm under which we approach the questions of perception, of consciousness, and of the role of the observer in physics?
+
+[r381c10] row382 seq8 56w auto_about=- auto_disc=physics;biology
+Conscious Realism (CR) can be added to the FBT, ITP, and SNF hypotheses: what lies at the root of spacetime is consciousness, more specifically, a network of conscious agents, whose activity individually and communally can be measured with a mathematics that also produces generalized evolution, quantum gravity (relativity /cosmology /Standard Model synthesis), entanglement--all of modern physics.
+
+[r382c3] row383 seq1 13w auto_about=Tim Urban auto_disc=-
+// got to devote some time to Tim Urban's Story of Us. https://waitbutwhy.com/2020/01/sick-giant.html
+
+[r382c4] row383 seq2 44w auto_about=- auto_disc=-
+Mobility has risen, and that's a very important factor in polarization. Why? Because we sort ourselves by likes, and even a small preference for likes gives rise to a surprisingly large degree of segregation. See the interactive demonstraton (based on nobel-prize-winning research) at https://ncase.me/polygons/.
+
+[r382c5] row383 seq3 50w auto_about=- auto_disc=-
+a very big idea: if we are to have some measure of agreement, we must live with people we disagree with. To do that, we must actively prefer to live with people we disagree with; even a slight preference to be with those like you produces segregation, and thus polarization
+
+[r383c3] row384 seq1 8w auto_about=Rohr auto_disc=-
+// from Fr. Richard Rohr, Naturally Indwelling, 1/10/2020
+
+[r383c4] row384 seq2 53w auto_about=- auto_disc=-
+The True Self does not teach us compassion as much as it is compassion already. And from this more spacious and grounded place, one naturally connects, empathizes, forgives, and loves just about everything. We are made in love, for love, and unto love, and it is out of this love that we act.
+
+[r383c5] row384 seq3 47w auto_about=Rohr auto_disc=sociology
+Rohr seems to already have developed a broadly-inclusive synthesis of wisdom from religions traditions, overcoming the controlling and even rationally-hostile elements, incorporating the freeing and loving elements from multiple traditions, all built on a framework that is richly compatible with and suggestive for a fundamental conscious realism.
+
+[r383c6] row384 seq4 232w auto_about=MacIntyre;Hoffman auto_disc=philosophy;theology
+see that the deck needs clearing clear the deck let new programming come in act on that new programming. That new programming, the gospel, must come in clearly, must empower the act. It’s no longer I who live, but Christ lives in me. Christ is not an alien program. You are Christ, I am Christ. Against quietism. Objection That’s just a new you. Response… That’s correct. A new person of faith. The incarnation. Objection… This is the worst form of radicalism. Response… It can be, but only if you miss the message. This is radical love, radical faith, radical reason, radical context. every propagation of the gospel is a second, next, coming of Christ. A new incarnation. It matters intensely that you’re not chase the wrong Christ… Look here, look there. No. If you’ve seen me, you seen the father. Look carefully at the love, at the faith, at the unity. That’s the gospel, that’s Christ. Included in the man is submission. Did not deem equality with God something to be grasped. But yourselves to one another. Even on to death, death on the cross. Out of God’s love for the world. Not to judge. But to save, but to heal. /  / Submit how? Submit to whom? Can we count, measure, submission? can Donald Hoffman help us? Can dialectic as articulated by McIntyre help us? can dialectic as articulated by McIntyre help us?
+
+[r384c3] row385 seq1 9w auto_about=Hoffman auto_disc=-
+// got to return to DH. from email notes:
+
+[r384c4] row385 seq2 39w auto_about=- auto_disc=neuroscience
+split brain surgery doesn’t cause, but is our desktop interface indicating, actual splitting of consciousness. What then individuates consciousness? How does splitting on the desktop relate to the splitting in reality? Can the limited perspective approach address this question?
+
+[r384c6] row385 seq3 58w auto_about=Hoffman auto_disc=-
+Page 193. I need to simply lack the resources to experience all the resources of all the agents in its instantiation… Hoffman, so far, has no answer as to why. What limits the resources of conscious agents? What individuates them? I think I have an answer to both of those things, and I’ve not seen his answer yet.
+
+[r384c8] row385 seq4 127w auto_about=Hoffman auto_disc=psychology
+Hoffman goes on to make an argument that any conscious agent must therefore remain at least in part in unconscious of itself, because it’s perceptions add to its decisions and actions, and if it in turn perceives these, there’s a new set of experiences and actions… So an agent cannot experience itself in it’s entirety no matter how large it’s repertoire of experiences, he says.But that seems to be true only for a finite consciousness. On infinite consciousness would in some sense not have that limitation. It’s like arguing that no set of double numbers could be complete, because one could always double that set, Which makes reference to a new number outside the set. but an infinite set includes that number, and every double of it.
+
+[r385c3] row386 seq1 24w auto_about=- auto_disc=-
+// michael graziano - Rethinking Consciousness (starting by listening to Brian Science (Ginger Cambell)'s interview with MG in Fall 2019 (3rd appearance on podcast)
+
+[r385c4] row386 seq2 37w auto_about=- auto_disc=psychology
+attention vs attention schema (the efficient focus of information processing, vs our network of reactions to, models of, our attention. To control anything, we must have a model of it. We have a model of our attention.
+
+[r385c5] row386 seq3 12w auto_about=- auto_disc=psychology
+MG is adding this attention schema model to a cluster of ideas
+
+[r385c6] row386 seq4 61w auto_about=- auto_disc=physics;neuroscience
+on Koch on IIT: in many ways, the opposite, start with an axiom (Cs exists, a nonphysical essence, feeling) and then explain how it emerges. This diverges from MG, since MG thinks the fundamental piece of logic is that all claims are information-based, and not necessarily accurate information. The question is, why does the brain use this information to describe itself...this
+
+[r385c7] row386 seq5 39w auto_about=- auto_disc=neuroscience
+So IIT is a magicalist theory, starting with accepting the brain's model, rather than critiquing it....thinks II exists everywhere, so panpsychism follows, and IIT theorists admit this, and this is a strange feature of this choice of starting point...
+
+[r385c8] row386 seq6 56w auto_about=- auto_disc=biology;neuroscience;computer science
+on embodied cognition movement: anti-modeling, anti-computation in appearance. MG: this is a diverse, vast literature, some of it interesting and valid, so MG embraces much of that literature, but not magicalist features of it...so the brain doesn't necessarily build explicit models, some are hidden and implicit, some fit the embodied cognition description, esp re/ motor capabilities
+
+[r385c9] row386 seq7 61w auto_about=- auto_disc=computer science
+will computers become consciousness someday: absolutely, if this theory is right...it is buildable, can you build a computer that acts as if it has an inner model of itself, so thinks it does have CS, and that is what it is to have CS. Decades, not centuries, before computers think they are CS, just as we do...which is what CS is...
+
+[r385c10] row386 seq8 36w auto_about=- auto_disc=physics;neuroscience
+MG: the claim to experience nonphysical existence is circular, it's a machine stuck in a logic loop...doesn't survive evidence that our brain tricks us, even though many recognize such tricks but deny they apply to Cs...
+
+[r385c11] row386 seq9 125w auto_about=Hoffman auto_disc=neuroscience;psychology
+Ginger Campbell on Graziano's attention schema model of CS: CS is a model of attention, which we must have to control it (as anything subject to control depends on a model of it) Attn is not CS, though they track closely. In fact, it is the model of attention that is CS (this is attn schema theory, which (vs higher order theory or global neuronal workspace theory: info becomes CS when a critical threashhold is reached, but doesn't tell us why we have the subj experience we have. MG: all brain models are cartoons, containing just what we need for fitness (TL: with which DH would agree.) Robert burton (ep 96 skeptics guide to the mind: relying on mind is like trusting a con artist.)
+
+[r385c13] row386 seq10 33w auto_about=Hoffman auto_disc=neuroscience;computer science
+GC on Koch: IIT theorist: can't compute consciousness; MG says IIT is an outlier from the mainstream. GC on MG: his approach is in line with mainstream neuroscience. (Not one work on DH.)
+
+[r386c3] row387 seq1 55w auto_about=Hoffman auto_disc=biology;neuroscience;computer science
+Hemholtz Club, founded by Francis Crick in 1980s, including DS R, Altman, Kristoff Koch (no mention of DH) from the Future of Consciousness: Schroedinger at 75: (2018 Schrodinger Lecture, Trinity College, Dublin) The Future of Biology conference) .. computational neuroscience emerges...Kristoff a big name in neuroscience....now best known for Cs....Cs Redux column for Sci American...
+
+[r386c4] row387 seq2 13w auto_about=- auto_disc=-
+CK: consciousness is having an (any) experience. (Self-C, Cs-of-____ are types of Cs)
+
+[r386c5] row387 seq3 55w auto_about=- auto_disc=neuroscience
+Side note: 69 of 86 B neurons in our brain are in the cerebellum (not the cortex): primarily about motor skills; no loss of Cs if damaged or missing. Cs seems to depend on cortex (but also brain stem) esp the posterior hot zone (agency, desires seem there.) What about neuroplaticity; it's all cortex? ...
+
+[r386c6] row387 seq4 17w auto_about=- auto_disc=-
+there is now a presence/absense of conscousness tool (zap and zip, with magnetic pulses, looking for echoes...)
+
+[r386c7] row387 seq5 32w auto_about=- auto_disc=computer science
+You cannot compute your way to consciousness; it is about the causal power in the hardware, not the software.You have to build it into the system; it's about intrinsic cause and efffect
+
+[r386c8] row387 seq6 67w auto_about=- auto_disc=neuroscience;computer science
+So Koch identifies two main theories of Cs: IIT and Global Neuronal Workspace (where the broadcast of processed information to make it widely available throughout the brain--a software function, an information exchange function--is Cs. Whereas for IIT, CS is in the causal power in the hardware, not the software. Simulated Cs is not Cs,, any more than simulated gravity is gravity: it lacks the real causal power.
+
+[r387c3] row388 seq1 53w auto_about=- auto_disc=neuroscience;history
+from Brain Science (Ginger Cambell MD's show), Joseph Ledoux  discusses his 2019 book, The Deep History of Ourselves: the four billion year old story of how we got our brains. His expertise is 40+ years of mostly rat studies of danger avoidance. (A previous book: Anxiety.) His band: Amygdalics or to that effect.
+
+[r387c4] row388 seq2 244w auto_about=Dennett auto_disc=biology;psychology
+Some key points: cognition evolved first, before emotion, and is present in every or nearly every form of life, including bacteria. Cognitive response (where some model of an event is carried beyond present stimulus and shapes later action) can be accompanied by noetic states (aware of facts) or auto-noetic (aware of facts about me). What we call consciousness, involving emotions and autonoetic awareness, may be only a human phenomena. Other mammals may have it, but our only access to Cs states is via language, and they can't help. Cs is (my language) something like a parallel feature of safety (could have said fitness) responsiveness; something like turning up the volume on music which is otherwise the same. He goes so far as to state that Cs may not have evolved via natural selection, because it comes along for the ride, as it were. (unanswered in the interview: wouldn't this be a huge energy drain, for no fitness purpose? Responding for him: no: the energy is taken up by the fitness response; Cs is just what that feels like for us. Cs gets a great deal wrong (when it does think it notices) and fails to notice a great deal of cognitive activity. It's not shaped for fitness; the cognitive activity it thinks its about is what evolved via natural selection. Objection: so Cs is really just illusory, as Dennett says. Ledoux: Dennett is about right, JL agrees some 90% of the time w ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r387c7] row388 seq3 14w auto_about=- auto_disc=-
+I need to formulate a response (reject, adopt, modify, etc) this view of Cs.
+
+[r387c8] row388 seq4 54w auto_about=- auto_disc=-
+Interesting starting place: included in Consciousness is everything we think, everything we can say. Every argument, every decision that has reasons. (This is far from everything that we do, and perhaps what we learn from JL (and many others) is how little of what we do we have reasons for, we can defend, justify.
+
+[r387c9] row388 seq5 75w auto_about=- auto_disc=biology;psychology
+But he seems to leave out the possibility that emotions store information, like memory does, and thus may have a fitness value, and thus may have evolved, both the capacity for them, and (perhaps blending here with DD and Dawkin's views of memetic evolution) the actual shape of the stories we tell, the heroes we uphold, the emotional reactions we have interwoven with stories and heroes. Perhaps this whole complex evolves, stores information, confers fitness.
+
+[r388c3] row389 seq1 73w auto_about=- auto_disc=physics;neuroscience;computer science;philosophy;theology
+Brain Science ep 163 with Christof Koch (episode 4 of 4 (160 - 163) on Consciousness) Chief Scientist at Allen Institute for Brain Science. Bkgrd physics and philosophy (minor, esp phil of mind, cs) then neuroscience,especially consciuosness, especially via computer simulations of neurons and clusters, first at MIT, then CalTech, joining F Crick/Salk Institute for Bio Studies in La Jolla. The Feeling of Life Itself: Why Consciousness is Widespread but Can't be Computed
+
+[r388c4] row389 seq2 110w auto_about=- auto_disc=neuroscience
+Almost all neuroscience left out what it is to be the owner of a brain, experiences, feeling like something. heart of M/B problem. Searching for NCCs, now standard in the field, inaugurated by Koch and Crick. What NCs are jointly sufficient for (eg) hearing CK's voice...what are the essential causal actors...in new book, the Feeling of Life Itself, they go beyond the search for NCCs, to an analysis of the cerebral cortex (that gives rise to Cs) Can turn on mom's face, or mom's voice, or ... close 1:1 correspondence between particular experiences and specific regions of the brain (NCCs): can turn these on and off by stimulus of NCCs.
+
+[r388c6] row389 seq3 48w auto_about=Hoffman auto_disc=-
+Still, what is it about this bit of matter that gives rise to experience at all, let alone this specific experience...(hear DH skepticism in the background). NCCs don't answer why, but whether: not the purpose, and not inferencial grounds for Cs attribution to other species (bees, monkeys, etc)
+
+[r388c7] row389 seq4 51w auto_about=- auto_disc=-
+Then the big q: can machines be Cs. Need the "why" answered. Is Panpsychism true: how low does Cs go? Is it a fundamental aspect of reality? We need a fundamental theory of Cs (working with Julio Tonnoni) on IIT over 20 years as a set of answers to these questions.
+
+[r388c8] row389 seq5 127w auto_about=- auto_disc=neuroscience;philosophy
+Overview: starts with aristotelian/platonic resources. a thing exists, to the extent that it exerts causal power. (does sound like aristotle: what does not exist together cannot be the cause of anything, tl). To the extent that some states of my brain can influence some states of trillions of other possible states of my brain, that is Cs. Causal implications/power, exact amount, phi, can be measured, a measure of what exists for itself, has causal power on others, the more it has, the more Cs it is...nature of Cs expeirence is determined by the causal power in those states that cause it (that is, by Cs.) Maximal causal power constitutes the Cs of any agent. Precisely definable quantity, science, not just philsoophy, though built on these philosophical ideas.
+
+[r388c10] row389 seq6 23w auto_about=Hoffman auto_disc=-
+(Listen carefully to response to DH's objection: ST isn't fundamental, isn't what you think, can't be known to have causal power...can't cause anything.)
+
+[r388c11] row389 seq7 114w auto_about=- auto_disc=neuroscience
+CK: not panpsychism: not everything is Cs, and no Cs emerges our of unions of you and me, etc. (WHat does it feel like to be America? IIT: no answer. Only the maximum causal power locus is conscious. But we could wire up an ubercs, only by connecting and providing a larger nexus of causal power. (Cut Corpus collusum: now two Cs.) So build an artificial Cs: a few wires won't produce a new Cs. Only when a tipping point is reached, does a new Cs emerge (when IIT in new entity exceeds info in either brain: when that happens, the parts die and the new Cs lives, like the Borg from Star Treck.
+
+[r388c13] row389 seq8 62w auto_about=- auto_disc=neuroscience
+Why prefer this to global neuronal workspae theory: IIT's main rival, there are really only two main theories. GNW theory (now jump to slide deck from CK's talk, different talk.) Cs is broadcast of info to entire brain: prior to that, it is subconscous. Adversarial collaboratione xperiment should settle this issue. Where are the NCCs? One of us, at least, is wrong.
+
+[r388c14] row389 seq9 54w auto_about=- auto_disc=computer science
+Also, zap and zip tool has results predicted by these two theories.GNW is the dominant zietguist: machines can be Cs, if you build in enough feedback loops: intelligence and Cs both will emerge. Cs is just about behavior, and AI will be able to behave as Cs. Cs is just a clever hack away.
+

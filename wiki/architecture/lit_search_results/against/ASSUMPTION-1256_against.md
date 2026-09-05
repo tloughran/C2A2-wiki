@@ -1,0 +1,44 @@
+SEARCH-AGAINST-ASSUMPTION-1256:
+  Date searched: 2026-09-05
+  Original item: ASSUMPTION-1256
+  Original statement: "The sandbox output needs Tom's eyes, not more agent passes. ... The question they answer — *what is actually in the sandbox, and does the outline hold* — can only be closed by reading it."
+
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15b]
+    Original item: ASSUMPTION-1256
+    Item type: ASSUMPTION (stated — quoted from a derived digest, 2026-09-04_cowork_summary.md "What's Next" §1)
+    Transform at each step:
+      14a: Extracted verbatim. Paired with PRESUMPTION-910 (no success criterion for "the outline holds").
+      15b: Searched for challenging literature — searched jointly with PRESUMPTION-910 as instructed; separate files written.
+    Current status: PARTIALLY-CHALLENGED
+
+  Challenging evidence found: Partial
+
+  Sources:
+    1. Cohen, J. (ed.), 2006. "Best Kept Secrets of Peer Code Review" (SmartBear; includes the Cisco Systems case study, ~3.2M LOC, 2,500 reviews). [VERIFIED: title and Cisco study seen in search results; the specific thresholds below were seen in SmartBear's secondary summary page, not in the primary text] — Defect detection by human reviewers falls off sharply above ~200-400 lines per review and above ~500 lines/hour, and after ~60-90 minutes of continuous review. A single human read is a rate-limited, fatigue-limited instrument; at code-review pace, 16,102 lines is roughly 32-54 hours of reading and 30+ separate sessions.
+    2. Skinner, S. & Giesbrecht, B., 2025. "Beyond detection rate: understanding the vigilance decrement using signal detection theory" (UCSB Attention Lab PDF). [VERIFIED: title seen in search results; author list from URL, NOT independently verified] — Sustained-attention detection declines over time through three mechanisms (conservative response-bias shift, reduced perceptual sensitivity, more frequent attentional lapses). A long read does not merely tire the reader; it changes the reader's criterion for what counts as a hit.
+    3. Panko, R., "Errors in Proofreading" (panko.com Human Error site, undated). [VERIFIED: page title seen; the figures below appear on that page as reported by search summary] — Even professional proofreaders catch ~81% of non-word errors but only ~66% of real-word errors. The direct analogue: a cell misfiled under a plausible-but-wrong node reads like a "real word" and is the class most likely to survive a human read.
+    4. Huang, J. et al., 2023/ICLR 2024. "Large Language Models Cannot Self-Correct Reasoning Yet." arXiv:2310.01798. [VERIFIED: title, arXiv id and venue seen in search results] — NOTE: this cuts in the assumption's favour on its first clause (more intrinsic agent passes without external feedback do not improve and can degrade output). It is cited here because it is the strongest evidence the literature offers on the "not more agent passes" half, and because it shows the assumption's real content is the SECOND clause — that a human read closes the question — which the sources above challenge.
+    5. Madaan, A. et al., 2023. "Self-Refine: Iterative Refinement with Self-Feedback." arXiv:2303.17651. [VERIFIED: title and id seen] — Gains from iterated self-review saturate after ~2-4 cycles. Same direction as source 4: supports "not more agent passes" as diminishing, but says nothing about the sufficiency of one human read.
+    6. "Are Large Language Models Reliable Reviewers? A Benchmark for Error Detection in Financial Documents." arXiv:2608.12342 (2026). [VERIFIED: title and id seen; authors NOT verified] and "Neither Valid nor Reliable? Investigating the Use of LLMs as Judges." arXiv:2508.18076 (2025). [VERIFIED: title and id seen] — The automated-review literature is split: benchmarks show LLM reviewers reach parity with human experts on some error classes when given targeted, externally specified criteria, while the judge-validity literature warns LLM judgments are neither valid nor reliable without such criteria. Both sides agree the decisive variable is the criterion, not the reviewer's substrate. This undercuts the dichotomy "Tom's eyes vs. agent passes" as the wrong axis.
+
+  Strength of challenge: Moderate
+
+  Summary: The literature does not contradict the claim that further intrinsic agent self-review would be low-yield — Huang et al. and Self-Refine both support that. What it challenges is the second and load-bearing clause: that the question "does the outline hold" can "only be closed by reading it." Human review is a rate- and fatigue-limited instrument whose detection rate collapses beyond a few hundred lines per session (Cohen/Cisco), whose response criterion drifts over time on task (vigilance decrement), and which systematically misses the plausible-looking error class (Panko). A 16k-line read is not one read; it is dozens of sessions, each of which starts with a different reader. The automated-review literature adds that the axis that actually predicts review yield — for humans and LLMs alike — is whether the reviewer has an externally specified error criterion, which is precisely what PRESUMPTION-910 notes is absent. The dichotomy in the assumption (human vs. agent) may be the wrong cut; the literature's cut is criterion-guided vs. unguided.
+
+  Specific risks: (a) The read is started, never finished, and the question is closed by exhaustion or by a partial read reported as whole. (b) The read finds the non-word class (cells that are obviously wrong) and misses the real-word class (cells that read plausibly in the wrong node), so "the outline holds" is affirmed for exactly the errors it cannot see. (c) The digest's framing forecloses the cheapest instrument — a criterion-guided sample (e.g. the 70 low-confidence cells, or boundary nodes III.3/III.4) — by declaring that only a full read can answer.
+
+  Mitigations available: Yes, and they are well established: sample-based review scoped to the highest-risk cells first; session-limited reading (≤400 lines, ≤90 minutes) with a stated per-session target; a written misplacement criterion before reading (see PRESUMPTION-910); externally supplied criteria to agent reviewers (the condition under which the LLM-review literature reports parity with experts); and inserted-error seeding to measure the read's own detection rate before trusting its verdict.
+
+  Search scope: Preliminary search — broader search recommended. Six web queries across code-review yield, vigilance/proofreading, LLM self-correction, and LLM-as-reviewer benchmarks. Not covered: the formal-inspection literature on reading rate for prose/specification documents (Fagan; Gilb & Graham), eye-tracking studies of long-document review, and the in-vault traditions (no tradition wiki searched — none obviously bears on review yield). No source located that directly measures expert detection rates on 10k+ line prose documents; the 16k-line scale claim is extrapolated from code-review and vigilance data. This is "no evidence found at that scale," not "no evidence against."
+
+  METHODOLOGICAL NOTE: The Cohen/Cisco thresholds (200-400 LOC, 500 LOC/hr, 60-90 min) were seen only in SmartBear's own secondary summaries; the primary chapter was not read. The Panko figures were seen via search-summary text of the page. Source 2's author list was inferred from the file URL.
+
+  Recommendation: PARTIALLY-CHALLENGED
+
+STEELMAN:
+  Item: ASSUMPTION-1256
+  Strongest counterargument: The assumption is right that more intrinsic agent passes would be low-yield, but it draws the wrong conclusion from that. The review literature — human and automated — converges on a single predictor of yield: an externally specified criterion for what counts as an error. A human reading 16,102 lines without one is the worst-instrumented reviewer in the literature: rate-limited to a few hundred lines per effective session, subject to criterion drift as vigilance decays, and blind to the misfile class that reads plausibly. Framing the choice as "Tom's eyes vs. agent passes" replaces a criterion problem with a substrate problem, and the substrate that gets chosen is the one whose detection rate on this document nobody has measured.
+  What would need to be true for C2A2 to be safe: The reader must be able to recognise misplacement on sight at a rate that does not decay over 30+ sessions; the errors that matter must be of the obvious ("non-word") class rather than the plausible class; and the read must actually complete. Alternatively, the read must be reframed as a scoped, criterion-guided sample rather than a full pass.
+  How to test: Seed 20 known misplacements (10 obvious, 10 plausible) into a 400-line slice of the sandbox; have the read proceed as planned; measure hit rate by class and by session position. If plausible-class recall is below ~50%, the read cannot close the question as posed.

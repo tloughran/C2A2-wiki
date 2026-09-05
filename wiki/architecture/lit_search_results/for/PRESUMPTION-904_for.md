@@ -1,0 +1,34 @@
+SEARCH-FOR-PRESUMPTION-904:
+  Date searched: 2026-09-05
+  Original item: PRESUMPTION-904
+  Original statement: [inferred] A spreadsheet cell is the correct unit of classification — each of 2,402 cells receives exactly one node, and no cell is ever split or merged.
+
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a]
+    Original item: PRESUMPTION-904
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from CLASSIFY_SPEC.md's one-node-per-cell constraint ("ONE line per cell ... EXACTLY one ID") and the absence of any split/merge rule; unit was inherited from the storage format. High confidence.
+      15a: Searched for supporting literature — unitising in content analysis, storage-defined units in spreadsheet/table annotation, and single-label classification practice.
+    Current status: PARTIALLY-SUPPORTED
+
+  Supporting evidence found: Partial
+
+  Sources:
+    1. Krippendorff, K., 2004 (2nd ed.). "Content Analysis: An Introduction to Its Methodology." Sage. Chapter 5, "Unitizing." [VERIFIED: book and chapter subject seen in search results (Google Books; Sage; ERIC digest ED458218)] — Distinguishes sampling, recording and context units, and recognises *physical* units (defined by the medium's own boundaries — pages, columns, cells) as a legitimate unitising scheme, with the advantage that they are unambiguous and require no interpretive segmentation; reliability of unitising is a precondition for reliable coding. Theoretical grounding for taking the storage unit as the recording unit when reliability of segmentation is a concern.
+    2. Krippendorff, K., 2004. "Reliability in Content Analysis: Some Common Misconceptions and Recommendations." Human Communication Research. [VERIFIED: title seen in search results, faculty.washington.edu PDF] — Argues that unitising disagreements are a distinct and often larger source of unreliability than coding disagreements; pre-defined units remove that source. Indirect support: fixing the unit in advance to the cell eliminates unitising error entirely.
+    3. Koci, E., Thiele, M., Romero, O., Lehner, W., 2016. "A Machine Learning Approach for Layout Inference in Spreadsheets." IC3K/KDIR. [VERIFIED: title and author list seen in search results (scitepress; Semantic Scholar)] — Cell-level classification of spreadsheets (each cell receives exactly one of a fixed set of layout roles). Empirical precedent that the cell is a workable single-label unit in spreadsheet understanding.
+    4. Koci, E., Thiele, M., et al., 2018. "Cell Classification for Layout Recognition in Spreadsheets." Springer (IC3K post-proceedings). [VERIFIED: title seen in search results, Springer 10.1007/978-3-319-99701-8_4; full author list NOT verified] — Supervised, per-cell, single-role labelling; reports high accuracy, which supports the cell as a stable classification unit.
+    5. Koci, E., Thiele, M., et al. "DECO: A Dataset of Annotated Spreadsheets for Layout and Table Recognition." [VERIFIED: title seen in search results, Semantic Scholar; year/author list NOT verified] — A published annotated corpus (1,165 Enron files) built on cell-level annotation, i.e. storage-defined units are the community norm for spreadsheet corpora.
+    6. "Active Learning for Spreadsheet Cell Classification." CEUR-WS Vol. 2578 (SEAData workshop). [VERIFIED: title/venue seen in search results; authors NOT verified] — Further precedent for the cell as unit.
+    7. Wang, X., 1996. "Tabular Abstraction, Editing, and Formatting." PhD thesis, University of Waterloo. [VERIFIED: seen in search results for ASSUMPTION-1251 same day] — In the abstract-table model the cell (entry) is the atomic element indexed by the category labels; theoretical grounding that a spreadsheet's own logical structure has the cell as its atom.
+    8. Kuckartz, U. (attrib.). "Qualitative Text Analysis: A Systematic Approach", ch. 8 (Springer). [VERIFIED: chapter seen in search results, Springer 10.1007/978-3-030-15636-7_8; author NOT verified] — Notes that in *quantitative* content analysis coding units are defined in advance, whereas qualitative coding creates units during coding. Supports pre-fixed units for a pipeline that counts cells per node.
+
+  Strength of support: Moderate (for the unit choice) / Weak (for the one-node-per-cell rule)
+
+  Summary: The content-analysis methodology literature (Krippendorff 2004) explicitly sanctions "physical" units set by the medium as a unitising scheme, precisely because they eliminate unitising disagreement, which Krippendorff identifies as a major and usually unmeasured source of unreliability; a quantitative design that will count cells per category is expected to fix its units in advance. Spreadsheet-understanding research (Koci et al. 2016, 2018; DECO; the CEUR active-learning work) uses the cell as the single-label unit as a matter of course and achieves high accuracy with it, so there is direct empirical precedent for the choice. Wang's abstract-table model also gives the cell theoretical standing as the atom of a table's logical structure. Support for the stronger part of the presumption — that a cell never needs two nodes — is weaker: the spreadsheet precedents label *layout role*, a property each cell can have only one of, whereas the sandbox labels *topic*, which cells can plausibly have several of.
+
+  Caveats: (a) Krippendorff's endorsement of physical units is explicitly a trade: they are reliable but may not be semantically valid; he recommends checking that unit boundaries respect meaning. (b) The cell-classification precedents are single-label because the target property is inherently exclusive (header/data/derived); this does not transfer automatically to topical classification. (c) The multi-label text-classification literature (seen incidentally: e.g. arXiv 1107.2462 "Statistical Topic Models for Multi-Label Document Classification"; arXiv 2508.09878 survey noting that the single-label assumption "neglects" overlapping categories in longer texts) is evidence against the one-node-per-cell rule for long cells — noted here, not searched for. (d) The spec's `run_id` facet already concedes that meaning spans cells, which is the merge case; no precedent was found that treats cross-cell runs as units while keeping cells as atoms, though Krippendorff's "context unit" (overlapping, may contain many recording units) is a close conceptual match. (e) Search scope: web search only (approx. 5 queries) across content-analysis methodology, spreadsheet-understanding, and single/multi-label classification. Not covered: discourse-segmentation literature (EDUs), the qualitative-coding software literature on overlapping codes, in-vault tradition wikis. Preliminary search — the cheap empirical test proposed by 14b (sample the 70 low-confidence cells) would be more informative than further literature.
+
+  Recommendation: PARTIALLY-SUPPORTED

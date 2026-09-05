@@ -1,0 +1,44 @@
+node_id,parent_id,depth,title,page_start,page_end,note,anchor_unit,anchor_heading,headings_inside,words,toc_role,cells,cells_incl
+I,,1,THE APPARATUS — the accelerator/detector complex,8,616,outline v2 division I; the rules of the inter-tradition-dialogue game,sandbox:r7c3,,0,35104,structural,0,628
+I.1,I,2,The diagnosis — why civility failed; what is at stake,9,615,,sandbox:r8c4,,0,4174,structural,74,74
+I.2,I,2,MacIntyre's algorithm — the structure of evidence to be produced,8,616,,sandbox:r7c3,,0,13661,structural,18,180
+I.2.1,I.2,3,Traditions as the unit of rational enquiry,38,616,,sandbox:r37c3,,0,1819,structural,38,38
+I.2.2,I.2,3,Epistemological crisis and its resolution,14,565,,sandbox:r13c4,,0,3007,structural,37,37
+I.2.3,I.2,3,Incommensurability and vindication on the rival's own terms,13,609,,sandbox:r12c4,,0,4818,structural,61,61
+I.2.4,I.2,3,Natural law and intractable dispute,39,603,the IDM / IDNL reading seam,sandbox:r38c3,,0,2360,structural,26,26
+I.3,I,2,The detector — what is observed when traditions meet,35,609,,sandbox:r34c4,,0,5028,structural,0,91
+I.3.1,I.3,3,Observables: what counts as a signal,36,609,12 cells — thin; see the seventh-entry finding,sandbox:r35c4,,0,583,structural,12,12
+I.3.2,I.3,3,"Scoring: rubrics, and the quantitative model of inter-tradition information transfer",35,540,,sandbox:r34c4,,0,3838,structural,67,67
+I.3.3,I.3,3,Provenance and the evidentiary record,188,535,12 cells — thin,sandbox:r187c8,,0,607,structural,12,12
+I.4,I,2,The accelerator — controlled contact between traditions,10,609,,sandbox:r9c3,,0,11626,structural,25,274
+I.4.1,I.4,3,"Conditions of encounter: in person/online, in print, AI-accelerated",82,606,,sandbox:r81c5,,0,2029,structural,34,34
+I.4.2,I.4,3,"Rhetoric, invitation, and the boundedness of argument",12,609,,sandbox:r11c3,,0,5376,structural,138,138
+I.4.3,I.4,3,Community as the medium,15,609,,sandbox:r14c4,,0,3049,structural,77,77
+I.5,I,2,Failure modes — what would falsify the design,44,603,cornerstone: MacIntyre AV2:277; 9 cells — thin,sandbox:r43c5,,0,615,structural,9,9
+II,,1,SOURCES AND FIGURES,1,618,"outline v2 division II (renamed from ""The Players"", amendment)",sandbox:r0c9,,0,8627,structural,0,297
+II.1,II,2,Membership — the criterion and the set,,,"TO BE WRITTEN, NOT HARVESTED (Tom, amendment); no source cells",,,0,0,structural,0,0
+II.2,II,2,Figures engaged,263,591,"one node per figure, populated from `about`",sandbox:r262c5,,0,435,structural,16,16
+II.3,II,2,"Modes of interaction — in person/online, in print, AI-accelerated in the vault",356,591,,sandbox:r355c5,,0,322,structural,15,15
+II.4,II,2,Bibliography and source pointers,1,618,"cited works, bare URLs, reading notes",sandbox:r0c9,,0,7870,structural,266,266
+III,,1,THE POSITION — mind-only metaphysics and the layered account,16,618,outline v2 division III,sandbox:r15c3,,0,94058,structural,0,1263
+III.1,III,2,The core claim — conscious realist monism,19,616,,sandbox:r18c3,,0,35791,structural,107,351
+III.1.1,III.1,3,Against physicalist priority,131,599,"incl. rival positions at full strength: IIT, GNW",sandbox:r130c4,,0,12025,structural,129,129
+III.1.2,III.1,3,"Prediction, modeling, interface, and the construction of ideas",93,616,,sandbox:r92c5,,0,6990,structural,67,67
+III.1.3,III.1,3,Truth as an achieved relation between intellect and object,21,548,,sandbox:r20c6,,0,4670,structural,48,48
+III.2,III,2,"The layered account — ""a comprehensive, hierarchical, computational theory of intelligence, both theoretical and practical""",24,618,"authored: r251c5; rebuilt on TL's own ladder, sheet rows 247-250 (v3)",sandbox:r23c3,,0,39681,structural,0,615
+III.2.0,III.2,3,"The ladder itself — 8 rungs x 3 passes, rendered as a grid",85,372,"AUTHORED STRUCTURE: header row 247 A I S N B P C S (r246c4..c11); passes at rows 248-250; a second, earlier ladder at row 292 (r291c3) — compare before writing",sandbox:r84c6,,0,1874,structural,49,49
+III.2.A,III.2,3,L0 Awareness,248,611,"A-I-S band: physics, CS, philosophy contribute (r251c5)",sandbox:r247c4,,0,1453,structural,14,14
+III.2.I,III.2,3,L1 Information,33,611,,sandbox:r32c3,,0,4448,structural,73,73
+III.2.S,III.2,3,L2 Space-Time,24,595,"S appears twice in the header (Space-Time, Social) — never merge",sandbox:r23c3,,0,5431,structural,99,99
+III.2.N,III.2,3,L5 Neuronal,30,613,"S-N-B-P band (r253c6); sub-neuronal biology filed here pending the S->N rung question (L3 pre-biotic, L4 cellular proposed, no node yet)",sandbox:r29c9,,0,6646,structural,98,98
+III.2.B,III.2,3,L6 Brain / neocortical column,221,590,"NEW in v3; r247c8 ""the thousand brains of TBT ... at the neocortical column""",sandbox:r220c4,,0,3748,structural,27,27
+III.2.P,III.2,3,L7 Personal,84,582,"P-C-S band: psychology, sociology, MacIntyre",sandbox:r83c5,,0,2405,structural,34,34
+III.2.C,III.2,3,L8 Communal,113,586,,sandbox:r112c7,,0,3666,structural,61,61
+III.2.SO,III.2,3,L9 Social,58,618,,sandbox:r57c6,,0,4844,structural,101,101
+III.2.X,III.2,3,Cross-level claims,166,615,"""Empirical everywhere. Philosophy and Computer science at every level.""; computation as matrix multiplication",sandbox:r165c3,,0,5166,structural,59,59
+III.3,III,2,"Goods, freedom, and the will — the ethical spine; natural law",16,613,,sandbox:r15c3,,0,10303,structural,146,146
+III.4,III,2,"Love, community, and the person",16,582,,sandbox:r15c4,,0,8283,structural,151,151
+X,,1,"SHEET APPARATUS — retained in the table, excluded from the reading document",1,609,apparatus division (= toc_role apparatus),sandbox:r0c8,,0,587,apparatus,0,211
+X.1,X,2,Numeric and bookkeeping cells,2,604,"bare numbers, subtotals, ""Sum by row headers""",sandbox:r1c3,,0,150,apparatus,118,118
+X.2,X,2,"In-sheet labels, stray table headers, numbered list items",1,609,"row-header rule (Tom): a substantive row header confers content; bare items in that row are placed topically, not here",sandbox:r0c8,,0,437,apparatus,93,93
+Z,,1,HOLDING PEN — unclassified content,32,393,"visible, never hidden",sandbox:r31c4,,0,39,structural,3,3

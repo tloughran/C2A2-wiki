@@ -1,0 +1,843 @@
+[r261c3] row262 seq1 4w auto_about=- auto_disc=-
+explaining the blind spots
+
+[r261c4] row262 seq2 41w auto_about=- auto_disc=sociology
+(we live in thin communities, and don't notice what is possible since the clearest cases are so often remote in time, past or future. We have no awareness of social information processing, and thus no craft of social information processing architecture)
+
+[r261c5] row262 seq3 62w auto_about=- auto_disc=-
+(we live in a disciplinary, fractured world, a necessary phase for information processing but not yet re-integrated in such a way that any whole might be considered, and their features investigated; we move too fast, and have failed to solve the problem of how to connect with one another. So we have no wholes to assess, and are strangers to their assessment)
+
+[r262c3] row263 seq1 8w auto_about=- auto_disc=computer science
+// Pamela McCorduck AI podcast with Alex Fridman
+
+[r262c4] row263 seq2 5w auto_about=- auto_disc=-
+Machines that think; Aaron _______;
+
+[r262c5] row263 seq3 20w auto_about=- auto_disc=-
+4 founders: Marvin Minsky, John McCarthy; Herbert Simon: Alan Newell, all present at Dartmouth. (Check Machines of Loving Grace account...)
+
+[r262c6] row263 seq4 5w auto_about=- auto_disc=-
+S, N were cognitive scientists
+
+[r262c7] row263 seq5 11w auto_about=- auto_disc=computer science
+algorithmic approach has taken off; symbolic approach has been dropped, largely...
+
+[r263c3] row264 seq1 9w auto_about=- auto_disc=computer science
+cont....Jeffery Hinton came up with ML algorithm in 86...
+
+[r263c4] row264 seq2 12w auto_about=- auto_disc=-
+Ed Fiegenbaum at Stanford...check him out...//Expert learning systems, at Stanford, at CMU,
+
+[r263c5] row264 seq3 10w auto_about=- auto_disc=neuroscience;computer science
+"the male gaze": fear of AI is a male-brained reaction...
+
+[r263c6] row264 seq4 10w auto_about=- auto_disc=computer science
+AI, non-male, is a paradigm of alternative patterns/instances of intelligence...
+
+[r264c3] row265 seq1 9w auto_about=- auto_disc=economics
+// friedman 3 accelerations: market, mother nature, moore's law
+
+[r264c4] row265 seq2 6w auto_about=- auto_disc=-
+mother nature: hockey stick change...climate change...
+
+[r264c5] row265 seq3 12w auto_about=- auto_disc=-
+54 years of moore's law growth, 2x processing power density per year
+
+[r264c6] row265 seq4 11w auto_about=- auto_disc=sociology
+threse three accelierations are reshaping politics, geopolitics, workplace, ethics, and community
+
+[r264c7] row265 seq5 58w auto_about=- auto_disc=computer science;economics
+2007 supernova: iPhone; Facebook to all users; twitter; VMware...cloud computing; Hadoop big data clustering...; GitHub open source software; Google lauches YouTube; launches Android; Watson: Kindle; NetFlix; 1b users of intern: bitcoin essay; AirBnB; Genone sequencing prices plung; fracking; natural gas reserves up 35%; MB of data cost collapses; cloud born 2007; greatest inflection point since Gutenberg in 2007
+
+[r264c9] row265 seq6 6w auto_about=- auto_disc=-
+hourglass foundation (the hour is late)
+
+[r264c10] row265 seq7 5w auto_about=- auto_disc=-
+rich coalition to rebuild Landcaster
+
+[r264c11] row265 seq8 5w auto_about=- auto_disc=-
+complex, adaptive coalition: what works
+
+[r264c12] row265 seq9 3w auto_about=- auto_disc=-
+leaders without authority...
+
+[r264c13] row265 seq10 6w auto_about=- auto_disc=-
+5G is a BIG freaking deal
+
+[r265c3] row266 seq1 10w auto_about=- auto_disc=-
+//susanne simard ted talk "how trees talk to each other
+
+[r265c4] row266 seq2 4w auto_about=- auto_disc=-
+forests of british columbia
+
+[r265c5] row266 seq3 5w auto_about=- auto_disc=-
+microrrhizal networks of tree communciation
+
+[r266c3] row267 seq1 6w auto_about=- auto_disc=theology
+//thomas metzinger Spirituality and Intellectual Honesty
+
+[r267c3] row268 seq1 8w auto_about=- auto_disc=-
+Annaka Harris (Sam's spouse) on Rich Roll podcast
+
+[r267c4] row268 seq2 9w auto_about=- auto_disc=-
+sense of self and free will is an illusion
+
+[r267c5] row268 seq3 8w auto_about=- auto_disc=neuroscience
+brain split studies suggest separate persons, conjoined twins
+
+[r267c6] row268 seq4 16w auto_about=- auto_disc=-
+also, interpreter effect, where one side, cut off from information moving the other side, interprets action
+
+[r267c7] row268 seq5 19w auto_about=- auto_disc=-
+the combination problem in panpsychism: how can these smaller points of conscousness come together to create larger, higher forms...
+
+[r267c8] row268 seq6 13w auto_about=- auto_disc=-
+curiosity can be an antidote to pain, not resisting, but letting it be...
+
+[r268c3] row269 seq1 6w auto_about=- auto_disc=-
+Carlo Rovelli The Order of Time
+
+[r268c4] row269 seq2 8w auto_about=- auto_disc=-
+eternalism v presentism (Rovelli: neither is quite right)
+
+[r268c5] row269 seq3 2w auto_about=- auto_disc=-
+Annaka Harris
+
+[r269c3] row270 seq1 6w auto_about=Hoffman auto_disc=-
+Donald Hoffman The Case Against Reality
+
+[r270c3] row271 seq1 11w auto_about=- auto_disc=computer science
+Jack Ma and Elon Musk at World AI Conference in Shanghai
+
+[r270c4] row271 seq2 13w auto_about=- auto_disc=computer science
+Ma: for AI, we need to understand ourselves better; perhaps AI could help
+
+[r270c5] row271 seq3 37w auto_about=- auto_disc=computer science
+Ma: tech changes makes new jobs...life science tech will expand life span to up to 150 years...we should work less, 12 hrs per week (3dx 4hr/wk) AI will provide more time to enjoy being a human being
+
+[r270c6] row271 seq4 57w auto_about=- auto_disc=computer science
+across generations, 3:30:300 (Jack):3000 cities visited (his children)...eg of change to quality of life. So we'll have a lot of jobs under AI, and we don't need a lot of jobs...so life will get better, longer; grandparents shouldn't have to work (disaster); we should prep for 130 year life span. Jobs in AI? Don't worry about it.
+
+[r270c7] row271 seq5 45w auto_about=- auto_disc=neuroscience;computer science
+Musk: AI will make jobs pointless. Last jobs: writing AI software; eventually AI will take over that, too. So learn to enjoy interacting with other people. Need Brain:AI interface, or we'll be left behind, our input for AI as slow as communicating with a tree.
+
+[r270c8] row271 seq6 58w auto_about=- auto_disc=computer science
+Jack: don't worry about what you can't solve.  On Education: young professionals who want to pursue AI...we won't in fact have any such people in the future...machines will figure it all out in the future...how can human beings become wiser...change education...not memory, not calculation, not running faster//learn what we can do better: creative, constructive, arts, painting, singing, dancing...
+
+[r270c10] row271 seq7 23w auto_about=- auto_disc=-
+Ma: wisdom comes from the heart; we cannot manufacture that; we need an education system for that, move toward 12 hr work week
+
+[r270c11] row271 seq8 31w auto_about=- auto_disc=-
+Musk: learn as much as possible so as to create/predict the future, with less error...including art...close the loop on being less wrong about the future...matrix movie education is the future...uploading capabilities...
+
+[r270c12] row271 seq9 22w auto_about=- auto_disc=computer science
+Ma: don't worry about mistakes; our mistakes will cause damage, not AI's; and we'll get better at minimizing these mistakes, don't worry
+
+[r270c13] row271 seq10 49w auto_about=- auto_disc=biology;computer science
+Ma: impossible to be controlled by AI: we invent them. They can't make us. Musk very much disagrees. We are very dumb, and can certainly make things smarter than us. WE are not the last step in evolution. Worst mistake smart people make is to assume they are smart.
+
+[r270c14] row271 seq11 48w auto_about=- auto_disc=computer science
+22 years ago, deep blue beat casperov in chess. Now your smart phone could beat the world chess champion. Now Go. We are hopelessly behind AI now in these areas. Our corner of intellectual pursuits that we are better than AI is getting ever smaller and will disappear.
+
+[r270c15] row271 seq12 76w auto_about=- auto_disc=computer science
+Ma: clever vs smart (wise)...chess/go/cars: you're crazy to race them; stupid to compete in those areas. // Musk: where are people better? Ma: computers we created are clever, and human beings will create even more clever tools than computers. Musk: most degrees of freedom resides in reality. Computers are mastering ever more degrees (checkers, to chess, to Go...on the way to reality.) Eventually we will be able to simulate people, many people, simultaneously in every way.
+
+[r270c17] row271 seq13 30w auto_about=- auto_disc=-
+Musk: too many people? an outdated view. Ma and Musk agree: population collapse is our biggest threat in this area...20 year boot sequence...population decrease is a huge (accelerating collapse) problem
+
+[r270c18] row271 seq14 27w auto_about=- auto_disc=computer science
+Ma: human beings can do better where logic and order are not the drivers...eg, love. (Ma: can AI bring love? LQ needed, added to EQ and IQ.)
+
+[r271c3] row272 seq1 11w auto_about=- auto_disc=-
+// Thinking through the context in which to set the project
+
+[r271c4] row272 seq2 7w auto_about=- auto_disc=sociology;economics
+fractured social order? loss of social capital...
+
+[r271c5] row272 seq3 5w auto_about=- auto_disc=-
+information deluge? rise of internet?
+
+[r271c6] row272 seq4 14w auto_about=- auto_disc=computer science
+rise of AI without resources?  unbridled, unguided, untransparent, unequally distributed, . . . .
+
+[r271c7] row272 seq5 5w auto_about=- auto_disc=-
+connect these: fractured because overwhelmed
+
+[r272c3] row273 seq1 68w auto_about=- auto_disc=computer science;theology
+// THIS is what it is like to be embodied, developing, particular, freely choosing, connected and connecting, individually and micro-corporately members of a larger whole that has learned what it is to be voluntarily connected, lovingly connected, fullfilling our nature, having together computed a solution for the problem of how being can be particularly, freely and harmoniously interconnected in love, that is, to be in Christ, as Christ.
+
+[r272c4] row273 seq2 41w auto_about=- auto_disc=computer science;theology;sociology
+This is what we are learning, experiencing, suffering to achieve through the trials and errors of embodied social computation, as we stand up a network of interconnected and mutually inclusive computation. We are God's computation, God's calculation, God's thought and action,..
+
+[r272c5] row273 seq3 207w auto_about=- auto_disc=neuroscience;computer science;sociology
+We are individual members of a single whole awareness, just as the computational components of our brains are connected in a single awareness, a single conscious being, which is each of us, ourselves. So are each of us part of a larger whole. i know what it is like to be me (albeit indistinctly...more to be reflected upon here.) But I can also, empathetically, know much about what it is like to be you. I can know much about what it is like to be US (especially evident in long-term and very close relationships.) Though there is a complementary perspective on what it is like to be us (Lisa and I): hers. Others can know something of what it is like to be us (children), the two of us, the five of us, etc. So I at every age  have a complemtary perspective on what it is like to be me. Even at the same time, there are multiple dimensions which I might visit...me as father, me as son, me as professsional, me as athlete, me as learner, me as community member, me as a human being, contributing to humanity (and this, over time, in multiple awarenesses many of which are now far from top of mind.
+
+[r272c9] row273 seq4 82w auto_about=- auto_disc=chemistry
+We often transcend our limitations, becoming more aware of ourselves, of others, of what it is like to be others, groups of others, members of other groups...imagine this process continuing, stripped away from the punctuated chemical interruptions (sleep), limitations (of memory, especially), of perspective/filtering, able to experience the same things from multiple perspectives...imagine all this growing, merging into a unified consiousness containing multiple experiences (as ours already does, over time, pespectives, even relationships) united in a single harmonized awareness, a cosmic wake-up.
+
+[r272c11] row273 seq5 41w auto_about=- auto_disc=-
+From that perspective, all of suffering and resurrection, pain and gain, etc, is united as the experience of a single consious being...just as ours now does, across time. (I am that child, I experience that past, I will experience this future...)
+
+[r272c12] row273 seq6 45w auto_about=- auto_disc=theology
+From that perspective, our challenge is to connect with one another optimally, to THINK, to share information/perpectives, to unify, to care, to take on "other selves", which is friendship, the ties that bind us into one body, one spirit in a single emerging cosmic awareness
+
+[r272c13] row273 seq7 69w auto_about=- auto_disc=-
+Emerging, at any given time, but all present, as my past is integrated with my present, as I and I are one. As the meaning of my past is determined by my present and future choices, and thus to truly understand or be aware of my past is something that can only happen afterwards, and that later experience--freely chosen--shapes the meaning and impact of what happened in the past.
+
+[r273c3] row274 seq1 8w auto_about=- auto_disc=computer science
+// The computational natural law project (CNLP) goals:
+
+[r273c4] row274 seq2 53w auto_about=- auto_disc=sociology
+to articulate and deploy an overview of a new way of conceiving of the world, by recasting the A/T tradition in light of contemporary science, technology, and humanities, so as to illuminate and launch progress toward resolution of the current knot of contemporary social/political/techical challenges as a consitiuative means toward refounding civil society
+
+[r273c5] row274 seq3 124w auto_about=- auto_disc=computer science
+Deploying that overview, which requires a series of transformations on a large scale, requires a multi-front approach: a single ordered account (in a book); regular, conversational, multidimensional interaction among a range of informed individuals (in a podcast); a series of separate pools of like-minded collective action (fostered in an interconnected series of reasonably private, AI-assisted online platforms: Co-Labs); a forum for sharing perspectives, progress and people (a regular (annual?) meeting, with funded internships for interchange among young but reasonably mature members ); an online journal chronicalling these exchanges and providing materials for smaller group processing in Co-Labs; and a backbone organization upholding a collective vision of exchange and shared progress, measurement, and onboarding of new partners, promulgated more frequently in a blog or newsletter
+
+[r274c3] row275 seq1 2w auto_about=- auto_disc=-
+CNLP metrics:
+
+[r275c3] row276 seq1 11w auto_about=- auto_disc=-
+CNlP means: book, podcast, co-Labs, forums, internships, journal(s), backbone organization, blog-or-newsletters
+
+[r276c3] row277 seq1 12w auto_about=- auto_disc=-
+keep it simple, seraph. But don't cut corners, or think too small
+
+[r277c3] row278 seq1 3w auto_about=- auto_disc=economics
+CNLP business model
+
+[r278c3] row279 seq1 5w auto_about=- auto_disc=-
+CNLP partnership pool (possible collaborators)
+
+[r279c3] row280 seq1 8w auto_about=- auto_disc=-
+// Informed voters make better choices (india study)
+
+[r280c3] row281 seq1 14w auto_about=- auto_disc=-
+// greater availability of information does not make for better informed voters (2007 study)
+
+[r281c3] row282 seq1 11w auto_about=- auto_disc=-
+In general, people feel better informed with the internet (2014 study)
+
+[r282c3] row283 seq1 4w auto_about=- auto_disc=-
+// a story line...
+
+[r282c4] row283 seq2 73w auto_about=- auto_disc=-
+Once upon a time, people used to live in big, imperfect but much happier, tribes. They were big enough to develop promising answers to all the questions they had, and reasonable solutions to all the problems they had. These famlies had their ups and downs, but on the whole, they lived together in very rewarding relationships sharing very helpful common answers and solutions to all of life's challenges. And it was very good.
+
+[r282c6] row283 seq3 69w auto_about=- auto_disc=-
+One day, though, these families grew big enough and moved far enough to encounter other tribes. When they did, it took a long time to exchange their answers and solutions, especially because they understood the questions and problems differently.  Sometimes, these meetings went well, and both tribes learned a lot. When they did, their set of answers and solutions grew even greater, enabling them to travel farther and wider.
+
+[r283c3] row284 seq1 11w auto_about=Carroll auto_disc=-
+// Sean Carroll Mindscape Finding Gravity within QM https://www.youtube.com/watch?v=jHLfMXvQqX8&t=385s min 108
+
+[r283c4] row284 seq2 17w auto_about=- auto_disc=physics;philosophy
+Theoretical physics advances by grabbing a new idea, blending it in, and seeing what happens...frontier dialectical reasoning
+
+[r283c5] row284 seq3 21w auto_about=- auto_disc=philosophy;sociology
+appeal to this frontier dialectical reasoning model to explain what is happening during theory-of-the-whole construction, in the new science of politics...
+
+[r284c3] row285 seq1 46w auto_about=- auto_disc=-
+// listening requires taking in some else's account of what exists, and applying their filter, both on the other's terms, in order to generate a new account of what is the case--about the other, in part--to which you can then apply your own filter toward change.
+
+[r284c4] row285 seq2 75w auto_about=- auto_disc=-
+Simply taking in their account of what exists, or of what should be done (the proposed new existence state after their existience input and filter applied) without replicating their model is incomplete: no answer is available, for example, to why certain features in their existence account are there (because their model may require them...), or others missing (because those same kinds of facts viewed through your own filter have import, but perhaps not through theirs
+
+[r285c3] row286 seq1 35w auto_about=- auto_disc=-
+trying this: all interaction involves an existence account (matrix) including any and all elements we understand as interacting,and a change filter (matrix, the application of a model about how existence input will change the world)
+
+[r285c4] row286 seq2 26w auto_about=- auto_disc=-
+Is it right to say that we see through a filter (that observation is data-laden), that our existence matrix is shaped by our model (change matrix)
+
+[r285c5] row286 seq3 19w auto_about=- auto_disc=-
+should we call these existence matrixes, and change matrixes (which represent our take on the laws that govern change),
+
+[r285c6] row286 seq4 13w auto_about=- auto_disc=-
+it's as if the facts are pushed through a given filter, we think
+
+[r286c3] row287 seq1 71w auto_about=- auto_disc=neuroscience
+if consciousness underlies information processing (underlies, holds, drives): if information is what occurs to consious beings, both as to what is and what could be...our models improve with experience, as we make predictions based on our current best understanding (which is in fact a complex next of predictive models, each in 1 of a 1000 "brains" at the personal level, and for all of science, from the consensus of the field...)
+
+[r286c4] row287 seq2 110w auto_about=- auto_disc=biology;computer science;sociology
+...if all that, then we should be able to give an account of what information processing is like at every level, including emergent (created) conscousness, and also of original consciousness. Original consiousness must model, too, and drive change through that model, from an intial set of conceived conditions through a selected set of laws (at every stage expressed as code, as matrix model applied to existence input) to a fruitful set of outcomes, from which participatory and co-creative consciousness emerges, builds what it needs (socially, technologically, eventually computationally, biologically) to be able to drive the computation of how to spread shared, loving consciousness everywhere and every way it can go
+
+[r286c6] row287 seq3 116w auto_about=Chalmers auto_disc=physics
+so what we experience is already the shared product of consciousness, it is already a subjective experience...there is no jump from external to subjective, no hard problem of conscousness (Chalmers), not even a hard or easy problem of physical existence from consciousness...physical existence is subjective experience, but shared subjective experience...just as we share our own subjective experience with others but only in some measure, so to original consciousness with us. We have to work hard to uncover the model (the operations matrix, the laws of nature), first conscious in original consciousness but over time also to us, but what we experience throughout is the existence matrix (in some measure)...already a conscious, subjective experience in original consciousness
+
+[r286c8] row287 seq4 75w auto_about=- auto_disc=theology
+Original consiousness seems to want to share consciousness, subjectivity, creative sharing of subjectivity, all with us, and has postulated a set of laws to operate on a set of original conditions, both of which we can become aware of in some degree, which produce circumstances to enable us (emergent consiousness) to participate and drive to fullness (maturity) our co-calculated outcome: a harmonious, shared, diverse, united, productive order (Wright on OT: God's wise and loving rule)
+
+[r286c10] row287 seq5 57w auto_about=- auto_disc=neuroscience;computer science
+Advantages of an Original Consciousness, comprehensive intelligence-as-information-processing approach: 1) No Hard Problem; 2) unified account of intelligence; 3) telos of whole order has meaning (i.e., what is being computed); 4) compatible with computational model of universe, emergence of space-time from information states; 5) compatible with 1000 brains shared-input account of intelligence, and necessary extenstion to consciousness; 6)
+
+[r288c3] row289 seq1 174w auto_about=- auto_disc=physics
+three aspects of quantum physics first minimum smallest size bunk cubed second uncertainty third no fact of the matter until we measure or until we interact. set these three inside a original Consciousness theory of information processing. That there is a smallest size is just a function of a given set of relationships being established. Information surely has the smallest units which are just a downward facing implication of the amount of complexity in the emergent Consciousness which the original Consciousness set out to produce. second, the uncertainty is related to of viscosity for a fluidity of the resulting answer, one could say of reality as normally perceived by us, which is in fact calculated by us, and this fluidity or uncertainty enables creativity in the match between predictive outcomes and the end being calculated, which is emergent Consciousness in full Harmony the original Consciousness and with itself. thirdly, the measurement problem just becomes a feature of calculation. There is no right answer. We're narrowing down the possibilities as we calculate, as we predict.
+
+[r288c4] row289 seq2 657w auto_about=- auto_disc=neuroscience;computer science;theology;sociology
+this seems like a denial of reality. It seems sort of the opposite of the Everett interpretation which postulates an infinity of independent worlds. This view argues that there are no mind independent worlds. And it seems this contradicts our ordinary experience as the Everett interpretation does, but on the other side of the spectrum. Most of us would have thought there is exactly one, not zero, not infinitely many mind independent worlds. It just turns out that nature is a bitch and doesn't seem to agree with that view. But in fact, this view contradicts nothing in ordinary experience. None of us ever experienced anything that isn't experienced by anyone. We have no data on the world that does not come to us out of her experience. when we set up one part of the world to watch another part of the world, independently, we think, of ordinary experienced, in fact, all of those elements The observed in The Observer AR entangled would the conscious architect of the experiment. but wait, the rash of objections continues, we're not conscious and in fact nobody's conscious of everything, and as we unfold the laws of nature or rather explore them, we become conscious of them for the first time perhaps they be very few of us too. That's the objection. The response: that these things are all part of the consciousness of the original Consciousness, and they are shared with us, which shari ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r288c9] row289 seq3 107w auto_about=- auto_disc=neuroscience
+add to this line of thought, reflection on the fact that brains already in fact can be wired to control the same shared body, the new arm controlled in part by the paraplegic and in part by her fuller functioning assistant, until the control of the two gets enough success for the assistant to back out. // in experimental, nontherapeutic cases, 3 monkeys brains can share control of a mouse/hand (each with 1 axis of freedom), so multiple brains can share one control, one sense of ownership, belonging of one single body part...// coming soon, brains controlling things very far away, or multiple brains...no limits apparent, here...
+
+[r289c3] row290 seq1 25w auto_about=Chollet auto_disc=-
+// Francois Chollet, creater of Karas (embedded now in Tensor Flow), now at Google, in a podcast with Lex Fridman, offers a definition of intelligence:
+
+[r289c4] row290 seq2 31w auto_about=- auto_disc=-
+human intelligence-likeness has magnitude and degree, a vector, direction is human-like; magnitude measured by (not skill at given task, but) skill within a set of given constraints (data, memory, other capabilities).
+
+[r289c5] row290 seq3 31w auto_about=- auto_disc=-
+Definition of intelligence (FC's): the efficiency with which you turn experience into generalizable programs//sampling of experience base-->ability to process (write better programs that operate on) a larger chunk of experience base
+
+[r289c6] row290 seq4 36w auto_about=- auto_disc=-
+so since intelligence by definition makes reference to an experience base, it is always by nature specialized...we understand human priors/core knowledge (language skills, etc) pretty well, and thus know a fair bit about what HI is.
+
+[r289c7] row290 seq5 64w auto_about=- auto_disc=biology
+objectness, agents, goal-directed behavior, language...all these are human priors (not an exhaustive list) AF: How hard is it to encode those priors? Maybe you need to build a universe? FC: need stable basis to encode via evolutionary pressure...millions of years...dna is low bandwidth (rephrases AF), so a long time is rquired to encode this innate K (most of which is shared with great apes)
+
+[r290c3] row291 seq1 6w auto_about=- auto_disc=-
+//Geoffre Hinton...The foundations of deep learning
+
+[r290c4] row291 seq2 32w auto_about=- auto_disc=biology;neuroscience;computer science
+what a thought is, is an activity pattern in neurons (biological or otherwise); in a recurrent neural network, the thought (check this) is the state of the last layer of artificial neurons...
+
+[r291c3] row292 seq1 26w auto_about=- auto_disc=physics
+// trying an outline here based on hierarchy (perhaps of entropy,from highest to lower, from simplicity to complexity, from cause to effect, from premises to implication...?)
+
+[r291c4] row292 seq2 1w auto_about=- auto_disc=-
+level
+
+[r291c5] row292 seq3 2w auto_about=- auto_disc=-
+features 1
+
+[r291c6] row292 seq4 2w auto_about=- auto_disc=-
+features 2
+
+[r292c4] row293 seq1 9w auto_about=- auto_disc=-
+original, loving consiousness with end of created loving consciousness
+
+[r292c5] row293 seq2 4w auto_about=- auto_disc=-
+reflection, love: full actuality,
+
+[r292c6] row293 seq3 18w auto_about=- auto_disc=-
+full awareness of particular possibilities, intention to to share creative consciousness throughout a complete spectrum of inherited actuality
+
+[r292c7] row293 seq4 23w auto_about=- auto_disc=computer science
+goal follows from love (end state to be computed): generative (co-creative) order of shared, loving, creative consciousness reflecting the beauty of loving actuality
+
+[r292c8] row293 seq5 12w auto_about=- auto_disc=-
+love: active favor toward active favor of another; harmony through generative reflection
+
+[r293c4] row294 seq1 10w auto_about=- auto_disc=computer science;theology
+information loaded for computation (creation) of means to that end
+
+[r293c5] row294 seq2 28w auto_about=- auto_disc=-
+conception of means to that creative end: identification of transformation matrix (laws of nature, particular information, a model of how that creative end could be brought to pass
+
+[r293c6] row294 seq3 6w auto_about=- auto_disc=-
+selection of first state: existence matrix
+
+[r293c7] row294 seq4 27w auto_about=- auto_disc=-
+(no reason to suppose there is only one of either of these matrixes. But there is reason to suppose that everrettian many worlds (every world) is false
+
+[r293c8] row294 seq5 19w auto_about=- auto_disc=-
+to exist is to be thought (not I conceive, therefore I am; rather, I am, therefore I am conceived)
+
+[r294c4] row295 seq1 4w auto_about=- auto_disc=computer science
+space-time-energy-matter emerges from computation
+
+[r294c5] row295 seq2 15w auto_about=- auto_disc=-
+QM with three features: quantized around minimum volume; minimum uncertainty; and "measurement problem"...observation drives outcome
+
+[r294c6] row295 seq3 9w auto_about=- auto_disc=-
+1. minimum volume/digital increments...follows from complexity of dependent observer
+
+[r294c7] row295 seq4 5w auto_about=- auto_disc=neuroscience
+1000 Brain Theory of intelligence
+
+[r294c8] row295 seq5 4w auto_about=- auto_disc=physics
+at quantum entanglement level
+
+[r294c9] row295 seq6 20w auto_about=- auto_disc=-
+2. uncertainty amounts to fluidity (1/viscosity) in the outcome of a calculation, enabling greater variation and creativity in calculated outcomes.
+
+[r294c10] row295 seq7 69w auto_about=- auto_disc=computer science
+3. observation dependence is just what you'd expect with a calculated, computed outcome. What exists is calculated, optimized from a range of possible outcomes, to conform to us. When no choice is made, the inherent probablities become evident. When a loving free choice is made, those possibilities (envisioned and set for optimization) become optimized, in a tendency toward the computed end, how to live together in inherited loving consciousness..
+
+[r294c12] row295 seq8 9w auto_about=- auto_disc=computer science
+to interact (to change) is to be computed, calculated
+
+[r294c13] row295 seq9 29w auto_about=- auto_disc=computer science
+3': 20 questions analogy: realistic (T/F) answers based on pre-established mental referent, or goal-directed, procedural answers where no referent exists, and one is calculated only if necessary (computed univocally.)
+
+[r294c14] row295 seq10 5w auto_about=- auto_disc=computer science
+self-assembly leveraged to compute/drive/emerge complexity
+
+[r295c4] row296 seq1 9w auto_about=- auto_disc=computer science
+computation experienced across emergent spectrum of shared (created) consciousness
+
+[r295c5] row296 seq2 10w auto_about=- auto_disc=biology;economics
+biology emerges as self-assembling, self-replicating (implying self-energizing, like a business)
+
+[r295c6] row296 seq3 4w auto_about=- auto_disc=-
+definition of consciousness/shared consciousness
+
+[r295c7] row296 seq4 5w auto_about=- auto_disc=neuroscience
+1000 Brain Theory of intelligence
+
+[r295c8] row296 seq5 5w auto_about=- auto_disc=neuroscience
+at neuronal stack unit level
+
+[r295c9] row296 seq6 3w auto_about=- auto_disc=-
+resolving stacks (voting)
+
+[r296c4] row297 seq1 1w auto_about=- auto_disc=sociology
+community
+
+[r296c7] row297 seq2 5w auto_about=- auto_disc=neuroscience
+1000 Brain Theory of intelligence
+
+[r296c8] row297 seq3 6w auto_about=- auto_disc=sociology
+at human community member unit level
+
+[r296c9] row297 seq4 4w auto_about=- auto_disc=-
+resolving like-minded member preferences
+
+[r297c4] row298 seq1 1w auto_about=- auto_disc=sociology
+society/nation-state
+
+[r297c7] row298 seq2 5w auto_about=- auto_disc=neuroscience
+1000 Brain Theory of intelligence
+
+[r297c8] row298 seq3 5w auto_about=- auto_disc=sociology
+at human community unit level
+
+[r297c9] row298 seq4 3w auto_about=- auto_disc=sociology
+resolving community differences
+
+[r298c4] row299 seq1 2w auto_about=- auto_disc=-
+global order
+
+[r298c7] row299 seq2 5w auto_about=- auto_disc=neuroscience
+1000 Brain Theory of intelligence
+
+[r298c8] row299 seq3 5w auto_about=- auto_disc=-
+at state actor unit level
+
+[r298c9] row299 seq4 3w auto_about=- auto_disc=-
+maintaining international peace
+
+[r299c3] row300 seq1 6w auto_about=- auto_disc=-
+// a single information-processing paradigm that
+
+[r300c3] row301 seq1 6w auto_about=- auto_disc=-
+frm WBW Ch 6, Rauch, https://www.jonathanrauch.com/jrauch_articles/2013/11/hate-speech-minorities-and-moral-learning.html
+
+[r300c4] row301 seq2 119w auto_about=- auto_disc=sociology
+What took place was not just empirical learning but also moral learning. How can it be wicked to love? How can it be noble to lie? How can it be compassionate to reject your own children? How can it be kind to harass and taunt? How can it be fair to harp on one Biblical injunction when so many others are ignored? How can it be just to penalize what does no demonstrable harm? Gay people were asking straight people to test their values against logic, against compassion, against life. Gradually, then rapidly, the criticism had its effect. You cannot be gay in America today and doubt that moral learning is real and that the open society fosters it.
+
+[r300c8] row301 seq3 9w auto_about=- auto_disc=sociology
+from Urban, direct quote, Ch 6, on political leadeship;
+
+[r300c9] row301 seq4 119w auto_about=- auto_disc=neuroscience;sociology
+If you live in a democracy, and you’re not zoomed out far enough, you might look at the politicians running your government and mistake them for your leaders. In the short term, sure, they jostle with each other over the country’s policies and steer the country on the international stage. But with a step back, the real long-term leader of a democracy is the giant communal brain of the citizen body. Politicians are all about principles…as long as those principles fit on the top of the country’s Thought Pile, safely inside the Overton window. But when that Thought Pile moves, like it did on the topic of gay marriage between 2008 and 2012, politicians drop everything and start swimming.
+
+[r300c13] row301 seq5 133w auto_about=- auto_disc=biology;neuroscience
+With the right idea and a lot of courage, a single person can spark a mind-changing movement that gains so much momentum, it moves our beliefs and our cultural norms, which in turn moves the Overton window, which moves policy, which moves law....Whenever a citizen of a democracy speaks up in a classroom or town hall, writes an op-ed, makes a movie, tweets a tweet, or yells something out on the street, they’re sending an idea out into the great network—firing a little neural impulse into the workings of the larger system. Every citizen, whether they realize it or not, is a neuron in the mind of a giant organism (emph mine), and what they do and say in their lifetime contributes to who that organism is, even if only a little bit.
+
+[r301c3] row302 seq1 8w auto_about=- auto_disc=-
+// Tonini https://www.youtube.com/watch?v=huxh9YCL5nM Consciousness has 5 essential properties:
+
+[r301c4] row302 seq2 10w auto_about=Descartes auto_disc=-
+0. Existing (Cs exists, as Descartes recognized; this is undeniable)
+
+[r301c5] row302 seq3 7w auto_about=- auto_disc=-
+1. immediate, subjective, your own, indubitably yours
+
+[r301c6] row302 seq4 6w auto_about=- auto_disc=-
+2. Composition: structured, with interrelated parts
+
+[r301c7] row302 seq5 15w auto_about=- auto_disc=-
+3. information: each is individuated, not generic, each unique from other experiences in some way
+
+[r301c8] row302 seq6 9w auto_about=- auto_disc=-
+4. unified (integrated elements in one single interconnected awareness)
+
+[r301c9] row302 seq7 36w auto_about=- auto_disc=-
+5. Exclusion: each experience is definite (contains what it contains, not less, not more; experience has borders, some things in, others out (and we can ask, why this is so, why they are what they are.)
+
+[r301c11] row302 seq8 16w auto_about=- auto_disc=physics
+IIS accepts and translates the phenomenology of consiousness into the physics of underlying causal substructure ------------------------------>
+
+[r302c3] row303 seq1 13w auto_about=- auto_disc=-
+Integrated Information Theory (IIT) translates these phenomenological properties into properties of its substrate
+
+[r303c3] row304 seq1 16w auto_about=- auto_disc=physics
+TL: Tonino is answering the hard problem, treating physical substrate as basic, and cs as emergent
+
+[r303c4] row304 seq2 48w auto_about=- auto_disc=-
+another way to go (mine?): see CS as fundamental, information / space-time as resident in consciousness; find complexity inherent in original consiousness as mirrored (envisioned, ideated,created) in less complete manifestations of consciousness, as further occasions for loving awareness across the spectrum of complexity, the great chain of being
+
+[r303c6] row304 seq3 27w auto_about=- auto_disc=-
+But this would also require analysis of the complexity of created consciousness, which should be measurable as any other mathematically-fashioned expression of being (= of loving consciousness)
+
+[r303c7] row304 seq4 56w auto_about=- auto_disc=sociology
+So on either account, consciousness should be measurable. But not on my account because it subsists in a different substrate; it subsists in conscious substrate, the same way our own cs seems to exist in the substrate of 1000 neural stack awareness, or a community undestanding subsists in/emerges from/interacts with(?) the minds of its individual members
+
+[r303c9] row304 seq5 14w auto_about=- auto_disc=-
+Q: is this approach just adopting two sets of problems? What are its advantages?
+
+[r303c10] row304 seq6 75w auto_about=- auto_disc=-
+Advantages: 1) coheres with QM (emergence of S-T from QE/info interaction/calculation) 2) solves the unrecognized? math relevancy problem: Q - why are the properties of the universe mathematically discernable? A - because math is its creative language, the language of its creator; 3) solves "hard problem" of CS (or at least turns it on its head: the new hard problem is sensation and the appearance of mind-independent reality. That independence reduces to logical independency (?)
+
+[r303c12] row304 seq7 47w auto_about=- auto_disc=-
+New Problems/disadvantages: 1) appearance of mind-independent reality (sol: logical indep); 2) lack of responsiveness of some elements, and not others, to intentions of cs beings (sol: just not how the program was written, expressed/experienced as entanglement? 3) Two levels of consciousness, original (full) and created (limited standpoints);
+
+[r304c3] row305 seq1 14w auto_about=- auto_disc=-
+Splintered mind...a great blog source on theories of Consciousness, including arguments against Tonino... https://schwitzsplinters.blogspot.com/search?q=consciousness&max-results=20&by-date=false
+
+[r305c3] row306 seq1 30w auto_about=- auto_disc=-
+// Arthur Brooks, Love Your Enemies:How Decent People can save America from the Culture of Contempt// check out his podcast...all last season was on love...// find his "Pursuit" on Netflix
+
+[r305c4] row306 seq2 12w auto_about=- auto_disc=-
+The art and science of love (the only thing that really matters)
+
+[r305c5] row306 seq3 5w auto_about=- auto_disc=-
+student of James Q Wilson
+
+[r305c6] row306 seq4 18w auto_about=- auto_disc=-
+1969 vet heroin study//oxytosin (infant child beheld first time...) look for the love solution for big problems, first
+
+[r305c7] row306 seq5 69w auto_about=- auto_disc=sociology
+1. epidemic of loneliness: 20s...1/3 less likely to be in love (dating: 85 to 55 % drop in 1 gen...50% less likely to marry in 20s...) (social media time correlates linearly w/ depression, but that's not the real reason...) Jonathan Heit's work on fear....people are afraid of real relationships / fear is oppsed to love (perfect love casts out fear: biblical and soc sci) fear of what? social rejection
+
+[r305c8] row306 seq6 38w auto_about=- auto_disc=sociology
+2. the culture of contempt (book topic) // motive attribution asymmetry .. in politics in 2014 of same measure as palestinian/israelis ... // take it personally when people you agree with trash people on the other side //
+
+[r306c3] row307 seq1 4w auto_about=- auto_disc=-
+outline, audience, further steps....
+
+[r307c3] row308 seq1 6w auto_about=- auto_disc=neuroscience
+// consciousness as controlled hallucination https://www.ted.com/talks/anil_seth_how_your_brain_hallucinates_your_conscious_reality?language=en
+
+[r307c4] row308 seq2 20w auto_about=- auto_disc=neuroscience;psychology
+the brain basis of perception...we actively generate the world, as much or more from inside out as from outside, in
+
+[r307c5] row308 seq3 15w auto_about=- auto_disc=-
+when we agree about our halliucinatins, when our best guesses align, we call that reality
+
+[r307c6] row308 seq4 25w auto_about=- auto_disc=-
+even so for our experience to be me, ourselves, is a controlled hallucination...the experience of a unified self, with many dimensions, can easily come apart
+
+[r307c7] row308 seq5 37w auto_about=- auto_disc=psychology
+interoception--nonconscious tracking of bodily states of various sorts--is aligned, presumably causally?, with perception (eg, a that a fake hand is my hand, if flashing red in alignment with my heart rate, of which I am not conscious.
+
+[r307c8] row308 seq6 31w auto_about=- auto_disc=-
+these experiences of being an embodied self are more about control and regulation than about what's there, about obects. We don't experience our heartbeat as a object (unless thngs go wrong)
+
+[r308c3] row309 seq1 27w auto_about=- auto_disc=neuroscience
+// back propagation, the ML paradigm, is NOT how error correction happens in the brain, at least not with the best-known and highly intense visual sensory system
+
+[r308c4] row309 seq2 50w auto_about=- auto_disc=neuroscience;psychology
+the brain operates on Predictive Processing, where expecations for the next perception are sent up to neurons much nearer to the source of visual stimuli...these predictions are compared there, and error adjument signals are sent back to the amygdala for processing...what this "fear center" primarily responds to is missed predications
+
+[r308c5] row309 seq3 51w auto_about=- auto_disc=biology;neuroscience;history
+"Note that because of the predictions the amygdala is finding out about a possible threat over a half second earlier than in a body using only the forward network. That half second has been the difference between life and death over our entire evolutionary history." John Light, neurotheorist, in quora: https://www.quora.com/Neuroscience-How-does-backpropagation-work-in-the-brain
+
+[r308c7] row309 seq4 26w auto_about=- auto_disc=physics
+...."The predictive path might be considered “back propagation” relative to the forward direction, but it is nothing like back propagation in current ML." also from Light
+
+[r308c8] row309 seq5 14w auto_about=- auto_disc=-
+careful: Light is an inventor in this space, an interesting but not authoritative guide
+
+[r308c9] row309 seq6 23w auto_about=- auto_disc=neuroscience;psychology
+research on the kind of predictive processing timing he discusses: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006178/ Hebbian learning and predictive mirror neurons for actions, sensations and emotions 2014
+
+[r309c3] row310 seq1 8w auto_about=- auto_disc=-
+// a few thoughts about priors, or biases
+
+[r309c4] row310 seq2 9w auto_about=- auto_disc=-
+no intelligence works in a vaccuum, without any direction.
+
+[r309c5] row310 seq3 40w auto_about=- auto_disc=computer science
+in ML, direction for the calculation is either set by supervised learning, a 'ground truth' dataset which the neural network is programmed to emulate as closely as possible (and then set to work on much larger and open-ended inputs) ...
+
+[r309c6] row310 seq4 36w auto_about=- auto_disc=computer science
+OR the weighting and biasing that is done via back propagation in supervised ML is instead provided up front as "priors", as initial weightings and biasings to make that neural network especially adapted for some purpose.
+
+[r309c7] row310 seq5 27w auto_about=- auto_disc=computer science
+priors across the disciplines: isn't feeding the operation matrix-laws of nature with the first existence matrix-original conditions at big bang?...isn't that a first step in a computation
+
+[r310c3] row311 seq1 54w auto_about=- auto_disc=-
+// maybe intelligence doesn't need to be conscious (IIT...simulation need not be conscious, and won't be unless the causal nexus is present in the right kind of way)...maybe love does need to be conscious, is intrinsically conscious. Can we define both, so that L implies C? maybe love is creative consciousness. Why suppose so?
+
+[r310c6] row311 seq2 15w auto_about=- auto_disc=-
+would original conciousness need to be perfect, crystal clear, pefectly reflective, perfectly expressing and expressed?
+
+[r310c7] row311 seq3 8w auto_about=- auto_disc=-
+if creative consciousness (OC) works to share itself
+
+[r310c8] row311 seq4 53w auto_about=- auto_disc=-
+might it be the case that to be perfectly consious, to be consciousness, is to be aware of all the relationships that exist between every possibility, and thus of the particular set that amounts to our particular, emerging consious creative awarenesses--our selves--so that to be conscious IS to create, and to create us?
+
+[r310c9] row311 seq5 68w auto_about=- auto_disc=computer science;theology
+...does this possibility (Cs-->Creation) lead to everettian intepretation, everything that can be is (if to be is to be considered)? What room is there, then, for selection? For intending some outcomes rather than others, and computing those? Maybe outside of time there are no computing limits, so all is seen at once. But is all equally preferred, at once? What is preference? What is willing? What is good?
+
+[r310c10] row311 seq6 162w auto_about=- auto_disc=computer science;theology;sociology
+Maybe start with an easier case; what is error? only mathematical incoherency, perhaps.(is math God? Is God, math?) There would be such a thing as complexity, and pathways to computing complex outcomes (logical steps in an optimally efficient order--so efficiency.) Information would improve efficiency, stability, in computation. is efficiency, stability in computation the good, which we understand information to improve, or does info improve both what we would prefer, and what is most efficient in computation? (Error is related to efficiency: you didn't listen again.) So perhaps we are what it is like to compute a loving society under partial transparency. To be under partial transparency is to be wired in some ways but not others, to get some information but not other, in certain order, not other. Such pathways are also effective in producing the end of loving conscious created and creative community; in fact, they are not only useful for such computation: they are constiuative means (essential parts of it.)
+
+[r310c12] row311 seq7 103w auto_about=- auto_disc=computer science;sociology
+In that world, all of us are individual modes of common consciousness, all part of a beautiful tapestry of desired outcome, loving community of created possibilities. Here is the real appeal of everettianism: every possible person is created and included. We experience only a proper subset of that whole, as our information wiring grows through the operation of the laws of nature that essentially constitute the limitiation on our information flow, that is, laws essential to our particular existence. Don't complain...it is a good perspective; it is good to be each of us. (The computation of the end proceeds efficiently through our participation.)
+
+[r310c14] row311 seq8 223w auto_about=- auto_disc=biology;computer science
+OK: P of E. Not every possibility is good. Unless we can distinguish between and actively select among outcomes, good from bad, efficient from inefficient, instantiating the former and eliminating the latter, then we produce everything, efficiency seems out the window (since we also try, create, every wrong version, like the evil village idiot.) Suppose we postulate what seems actual to us, in a modified everrettian world: successful (good) conscious agents calculate in ways that minimize error, and what is chosen to minimize error--what is chosen in love (under active favor toward the active favor of another concious, calculating agent)--IS, = is retained in memory?, not forgotten?, whereas what is computed without love is possible, is entertained, but only as long as not recognized from some created standpoint as error, as wrong. Good is to be done, evil avoided (turned away from, feared), and love overcomes fear, healing, consigning to asheap of forgotten inefficiency, in every everettian instance. So every possibility breaks out into consideration=actuality, but many are turned back to loving lines of inquiry, to efficient computation under the existing limitations, and these are what is retained in memory. To do anything less in our own limited memory is inefficient, other than to retain a minimum recognition for future guidance (which is efficient, is good.) The pain fade ...[TRUNCATED, full text in tl_sandbox_cells.json]
+
+[r311c3] row312 seq1 52w auto_about=- auto_disc=-
+So perpahsp the laws of nature can be explained on this model, perhaps they are what they need to be to accomplish this end. (That would be a mark of a GUT, actually, to explain what seems plural and arbitrary in terms of what is necessary for what is desirable and nonarbitrary.
+
+[r311c4] row312 seq2 10w auto_about=- auto_disc=-
+The 1-2-3 of QM: for here, quantized, uncertain, dependent (QUD).
+
+[r311c5] row312 seq3 67w auto_about=- auto_disc=-
+1: quantized: information comes in qbits. The minimum size of considered structures (things that are, to be is to be considered) is a function of their complexity, and thus, for creatures sufficiently complex to understand the laws of nature, there will be a correponding, measurable distance to the minimum info qbit, correspondiing to a corresponding minimum volume of emergent space-time, which is how we experience our limitations
+
+[r311c6] row312 seq4 76w auto_about=- auto_disc=physics;computer science;sociology
+2. uncertain: minimum uncertainty is the optimized value supplying fluidity, room for creativity, as the kind of creatures we are compute our way to a shared loving outcome. Anthropic principle: duh. Laws of nature are precisely chosen means to promote a loving community of creatures like us (and perhaps, in some everettian explosion, other laws are expressed to operate under different initial conditions to optimally produce other loving creatures.) (E.G. limited quantum nonlocality as discussed https://www.youtube.com/watch?v=5_0o2fJhtSc&t=17s.)
+
+[r311c7] row312 seq5 106w auto_about=- auto_disc=physics;computer science
+3. dependent: everything that exists does so as considered. Information resides in one informed. S-T limitations emerge from the interplay of information, that is, from conscious calculation. Not always our--emergent, creative, loving--calculation, until we arrive at awareness of what is already in another way known by Us, outside of time. But under the limitations expressed as emergent S-T, we do not always consciously participate (since the connections are not yet made in our limited connections/reflections set.) So as connections form, we are computing the world into existence. This will become an important tool for us, as already seems to be happening, most notably in quantum computing.
+
+[r311c9] row312 seq6 86w auto_about=- auto_disc=physics
+3 ct: As _________ explains in his Royal Instittute Lecture, the model we should use to undertand quantum phenom is the 20 Questions game, where instead of finding a predetermined answer, we are working our way toward an undetermined answer as we question the inventive holder of not the real answer, but the answers not yet ruled out. All the creative action lies with the questioner, not the questioned. So to for our inquiring into "reality"; we make it real as we go, as we consider.
+
+[r312c4] row313 seq1 9w auto_about=- auto_disc=theology
+Taking information seriously, taking love seriously, taking Christ seriously
+
+[r313c3] row314 seq1 6w auto_about=- auto_disc=physics
+Quantum Reconstruction (John Ball's article: https://www.quantamagazine.org/quantum-theory-rebuilt-from-simple-physical-principles-20170830/
+
+[r313c4] row314 seq2 94w auto_about=- auto_disc=physics
+"The general idea for all approaches in quantum reconstruction, then, is to start by listing the probabilities that a user of the theory assigns to each of the possible outcomes of all the measurements the user can perform on a system. That list is the “state of the system.” The only other ingredients are the ways in which states can be transformed into one another, and the probability of the outputs given certain inputs." ... "'Shouldn’t this shock anyone who thinks of quantum theory as an expression of properties of nature? - Adán Cabello'"
+
+[r313c5] row314 seq3 119w auto_about=Chiribella auto_disc=physics
+Chirbella et al: "Quantum theory can be derived from purely informational principles. In particular, it belongs to a broad class of theories of information-processing that includes classical and quantum information theory as special cases. Within this class, quantum theory is identified uniquely by the purification postulate, stating that the ignorance about a part is always compatible with the maximal knowledge of the whole in an essentially unique way. ... The suggestion coming from our work is that a “quantum” theory is a theory satisfying the purification principle, which can be suitably formulated even in the absence of / causality [42]. The discussion of theories with purification in the non-causal scenario is an exciting avenue of future research. (from the conclusion)
+
+[r313c7] row314 seq4 41w auto_about=- auto_disc=physics
+(TL, aside: is this point about noncausal theories related to the series of observable phenomena that call causality into question, such as this one: Indefinite Causal Order in a Quantum Switch K. Goswami et al 2018 https://journals-aps-org.proxy.library.nd.edu/prl/pdf/10.1103/PhysRevLett.121.090503 ... described here https://physicsworld.com/a/quantum-mechanics-defies-causal-order-experiment-confirms/
+
+[r313c8] row314 seq5 110w auto_about=- auto_disc=physics
+Back to Ball's article from this row...quantum baysianism, QBism, produces laws that describe what we will observe...not at all what is: "In this view, the world isn’t bound by rules — or at least, not by quantum rules. Indeed, there may be no fundamental laws governing the way particles interact; instead, laws emerge at the scale of our observations. This possibility was considered by John Wheeler, who dubbed the scenario Law Without Law. It would mean that “quantum theory is merely a tool to make comprehensible a lawless slicing-up of nature,” said Adán Cabello, a physicist at the University of Seville. Can we derive quantum theory from these premises alone?"
+
+[r313c10] row314 seq6 97w auto_about=- auto_disc=physics;philosophy;theology;psychology
+See the line of thought to be explored below, linking perceptions-as-common-hallucination to QBism as theory describing just what we will (stably) observe to a theory of truth as common stable judgement=cognitive interaction among items in our consious field to an account of consciousness built on integrated information theory (IIT) to a metaphysics of Cs-to-Info-to ST experience and so on up the complexity-generating stack, to a theology of Cs sharing, from original generative cs to limited, particular perspectival, shared Cs that follows freely from the nature of infinite original Cs, possibly with love and beauty at the foundation.
+
+[r314c3] row315 seq1 6w auto_about=- auto_disc=-
+// jeff hawkins on intelligence https://www.youtube.com/watch?time_continue=93&v=fiZESDyPPag
+
+[r314c4] row315 seq2 37w auto_about=- auto_disc=biology;neuroscience
+grid cells in hippocampus were grabbed and reused throughout the neocortex...evolved for spacial navigation, but uptaken in the neocortex (enlarged from the single grid cell model, and repeated many times, but now for objects, not just location...
+
+[r314c5] row315 seq3 14w auto_about=- auto_disc=-
+intelligence is tied to the quality of the model you build about the world
+
+[r314c6] row315 seq4 13w auto_about=- auto_disc=biology;neuroscience
+neocortex got big rapidly like anything that changes in evolution rapidly: by replication
+
+[r314c7] row315 seq5 34w auto_about=- auto_disc=neuroscience
+1000 models doing visual, 1000s for auditory, for language, etc, each column modeling its inputs, some building models of models....each unit votes (not clear...each unit knows what the object is, recognizes it...must be predictive???--TL)
+
+[r314c8] row315 seq6 46w auto_about=- auto_disc=computer science
+turing test is a poor way to measure intelligence, not the imitation game, can you imitate a human being...framed intelligence the wrong way...if you can do x....but you can always engineer one thing...Go, etc...Q: what kind of model does it have? could be hard-coded...could be learned...
+
+[r314c9] row315 seq7 73w auto_about=- auto_disc=neuroscience;computer science
+but our brain learns anything, using the same basic algorithm, all at the same time (car, family, house, music, ...) key intelligence Q: what is its model like, and how can we enrich it? We can enrich our own...grid cells are a very general purpose (GP) reference frame...a way of locating and assigning knowledge to a thing...need a RF to store structure (cart coords are an example; grid cells are another GP RF.
+
+[r314c10] row315 seq8 65w auto_about=- auto_disc=neuroscience;computer science
+very little assigned RF is in CNN these days; most models are learned...does it even use a RF? not easy to tell w/ AI, but brains have RFs...cant be smart w/o a GP RF. So there are different types of RFs, and they can be anchored to different things (like setting zero in different places, in cartesian coords, vs first row of a chess board...
+
+[r314c11] row315 seq9 74w auto_about=- auto_disc=neuroscience;computer science
+egocentric v object-centric reference frames in human brains HBs, where vs what, and these can be independently damaged to different effect...intelligence dimensions: reference frame types, GP types or less so, capacity (#s of each type), complexity of each...a mouse has neocortex (all mammals do) and learns like we do, but with very limited capacity...computing same way...universal Turing machine, gp computer, can solve any problem w/ enough memory and time. other computers much less GP
+
+[r314c12] row315 seq10 34w auto_about=- auto_disc=computer science
+so what RF, how has it been programmed, what is it's capacity, what has it learned...method, capacity, learning for computers. For us, method (GP or not), capacity, learning/training...these are the three dimensons of intelligence
+
+[r314c13] row315 seq11 80w auto_about=- auto_disc=neuroscience
+so humans have abstract refernce frames...how does that bear on our measure of intellligence? JH: the point is, our brain in fact uses RFs...that's what is in there, that's how it works. So abstract learning must use RFs in some way.// K is information assigned to a RF, with corresponding ability to navigate through this information, these facts, to achieve certain results...high level K is org of concepts in RF, and being able to navigate it to get things done.
+
+[r314c14] row315 seq12 70w auto_about=- auto_disc=physics;biology
+experts look at same facts, but has them assigned in a familiar reference frame, navigate them faster, recognizing patterns...facts get organized in reference frames...different reference frames...can't all be correct//test of model is how well it predicts the future...(JF uses model, reference frame, belief system, your reality, interchangeably) RFs are physical structure; connectins need to be redone to change an RF...we feel good when we have a useful RF, evolutionary advantage...
+
+[r314c15] row315 seq13 71w auto_about=- auto_disc=-
+so to change your model is difficult, painful, you feel lost, part of you is missing...not a good feeling...so (TL: we need a new, higher level GP reference frame, where we can navigate other reference frames w/o getting lost...)  to be intelligent, you have to have GP RFs, learned through movement--grid cells--that have high capacity, and train it on a lot (so HIFNRCs, highly GP, with lots of cases added in...
+
+[r314c16] row315 seq14 65w auto_about=- auto_disc=neuroscience;psychology
+This defn of intelligence is not limited to humans and does not include emotions...separate issue says JF...he's missing how emotion codes in prior k. Emotional centers are not in the neocortex...but they do contribute to how we learn (JF: need a new talk for that...) but this is an emotionless model of intellegience...but (TL: it doesn't wire us together to take advantage of noncognitive formation
+
+[r315c3] row316 seq1 35w auto_about=- auto_disc=physics
+// reading quantum reconstruction stuff: simple rules governing information give rise to QM phenomena like entanglement, uncertainty, superposition, nonlocality... Philip Ball draws it all together well, such as in this Nature article in 2013  https://www.nature.com/articles/501154a
+
+[r315c4] row316 seq2 112w auto_about=- auto_disc=physics
+one example (if I undertand it) from that article:  the limitation that one's knowledge of a system can never exceed the total amount of what you don't know about it--an information restriction--gives rise (perhaps) to a variety of quantum phenomen. (TL Q: Doesn't this imply the uncertainty principle?) The idea is that limitations on what we know give rise to quantum phenomena. WTF...unless quantum phen, and S-T reality built up from these?--is a function of what we know, rather than what we know being a function of some "external world".  (That is, realism seems false, or some exteral world realism, in any case. How ecn we state any other kind? mind-interdependent realism?
+
+[r315c6] row316 seq3 56w auto_about=- auto_disc=physics
+"Perimeter Institute colleague Robert Spekkens ... carried out a thought experiment asking what physics would look like if nature somehow limited what any observer could know about a system by imposing a “knowledge balance principle”: no observer's information about the system, as measured in bits, can ever exceed the amount of information he or she lacks."
+
+[r316c3] row317 seq1 25w auto_about=- auto_disc=physics;biology;philosophy
+// ... continuing from above on an integrated epistemology and metaphysics of information processing, repeating (literal, importing) first this next cell from several lines above:
+
+[r316c4] row317 seq2 97w auto_about=- auto_disc=physics;philosophy;theology;psychology
+See the line of thought to be explored below, linking perceptions-as-common-hallucination to QBism as theory describing just what we will (stably) observe to a theory of truth as common stable judgement=cognitive interaction among items in our consious field to an account of consciousness built on integrated information theory (IIT) to a metaphysics of Cs-to-Info-to ST experience and so on up the complexity-generating stack, to a theology of Cs sharing, from original generative cs to limited, particular perspectival, shared Cs that follows freely from the nature of infinite original Cs, possibly with love and beauty at the foundation.
+
+[r316c6] row317 seq3 61w auto_about=- auto_disc=biology;philosophy;sociology
+All of the words in that previous cell are important and need to be unpacked. What we're looking for here is a consistent framework for reunderstanding and refounding science (as conceived of in that cell without yet incorporating, actually, skipping over, politics, or social information processing), built on a consistently applied epist and metaphys foundation. I need to build a table...
+
+[r317c3] row318 seq1 10w auto_about=- auto_disc=-
+// notes from 37-minute Royal Institute talks on Behavior change.
+
+[r317c4] row318 seq2 32w auto_about=Hawkins auto_disc=-
+from the first talk, get the behavior change chart. Also, think about the three Behavior change fundamentals, opportunity, motivation, capacity, with respect to the three dimensions of intelligence that Jeff Hawkins discusses
+
+[r317c5] row318 seq3 43w auto_about=- auto_disc=-
+from the second set of slides, get the plastic bag tax plot, and think about taxes as cultural priors, where a great deal of research can be wrapped up in an effective almost non-cognitive cultural prompt that plastic bags are bad, for example.
+
+[r317c6] row318 seq4 27w auto_about=- auto_disc=computer science;psychology
+also 2nd talk: note connection with perception and surroundings, making same point with shadow on B&W checkerboard that others use to make the point about predictive computing
+
+[r318c3] row319 seq1 17w auto_about=- auto_disc=-
+from wbw story of us Ch 7, on the belief ladder, and on trust in particular: https://waitbutwhy.com/2019/09/thinking-ladder.html?utm_source=Main+List&utm_campaign=e4557a67ec-STORY_CH07_2019_09_27_02_43&utm_medium=email&utm_term=0_5b568bad0b-e4557a67ec-51598769&mc_cid=e4557a67ec&mc_eid=5979573f2a
+
+[r318c4] row319 seq2 82w auto_about=- auto_disc=-
+"The fact is, almost all the learning you’ve done in your life has flowed into you through a trust channel presided over by your Belief Bouncer. But what matters far more than the quantity of your cumulative learning is the quality—the legitimacy—of what you’ve learned. And the quality of your knowledge is a function of how good your Belief Bouncer is at assigning trust." ... "If you can’t judge incoming information, you can’t take advantage of the critical tool of indirect knowledge."
+
+[r318c5] row319 seq3 32w auto_about=- auto_disc=neuroscience
+Note that the belief bouncer, trust-assigner, here, is in your own brain. But trust can be assigned without talking to you about it...not by your own belief bouncer, but by someone else's.
+
+[r318c6] row319 seq4 46w auto_about=- auto_disc=-
+That can be done by a "trust this guy" command by someone you trust. OR it can be done noncognitively, by association (everyone you've ever seen in a uniform is trustworthy; this gal wears a uniform; she's likely to be trustworthy...none of this perhaps cognitively realized.
+
+[r318c7] row319 seq5 18w auto_about=- auto_disc=-
+Such patterning might be accidentally, or intentionally, shaped in you by others. Narrative formation, narrative control fits here...
+
+[r318c8] row319 seq6 40w auto_about=- auto_disc=-
+Patterning is one such case...are there others? can we name them? how about intense experiences (pos or neg), including trauma? How about language (perhaps an instance of patterning, but a particular sort.) Visual accompaniments...eg beauty? Stories/Narrative/Reference Frame formation...think more, here...
+
+[r318c9] row319 seq7 11w auto_about=Tim Urban auto_disc=-
+Tim Urban's "belief ladder" is his proposed shortcut for allocating trust.
+
+[r318c11] row319 seq8 166w auto_about=Tim Urban auto_disc=neuroscience;psychology
+TU on motivated skepticism/confirmation bias, rung 2, and real study of coffee drinker-cancer mock study results, and smoking-cancer real study results: motivation actually changes brain patterns in reasoning; CB is hard-wired. So it is difficult to avoid (w/ my own CB showing), or opportune to ask (w/ less CB): Big Q: how to avoid hard-wired CB in 2nd-1st-language competency immersion? Best current Hyp: by deliberate reframing of the investigation as an imaginative, rather than truth-related, exercise. OBJ'N: imagination (says perception theory--predictive hallucination stuff) seems to work the same way in the as actual reasoning, according to fMRI studies...Are we just screwed into motivation bias? Key Q in response: is this process the same for every type of reference frame used in reasoning? Can we re-frame some investigations so that the habitual brain patterns are different than investigations on other reference frames? (Could be an empirical predication in this space, for what theory, exactly...that reframing inquiry in terms of a HIFNRC is helpful for minimizing confirmation bias?)
+
+[r318c14] row319 seq9 130w auto_about=MacIntyre;Tim Urban auto_disc=-
+// another point re TU Ch 7 SofU: he seems to think that bias is eliminable, at least ideally, for scientists: "Humans with bias works like trains in motion. When you’re thinking clearly and objectively, like a Scientist, you’re like a stationary train. You see objectivity and bias in other thinkers for what they are. But when you’re seeing through a biased lens, you’re like a train in motion. Someone who shares your bias seems objective to you, while someone being objective seems to you to be biased the other way. And when you come across someone who is actually biased the other way, you’ll see their bias as more extreme than it is." Think MacIntyre, what it takes to miss real incommensurability...TU has missed it (it seems, thus far.)
+
+[r318c16] row319 seq10 116w auto_about=- auto_disc=physics
+// a good line from rung 3:  "In such rapid “bias motion” yourself, anyone who disagrees with you, objective or biased, appears to you to be a terrible thinker. A surefire sign that you’re thinking like an Attorney is when you believe—really believe, in your heart—that the people who disagree with you are not just wrong, but wrong because of who they are—fundamentally bad thinkers—despite having a relatively small amount of experience getting to know them." Particularly when you know they grew up like you...they've been sucked in by a mind virus of some kind...."everything you need to know" you learn quickly, just be hearing a few thoughts....oh, Fox News is where you get your info....
+
+[r318c21] row319 seq11 59w auto_about=- auto_disc=sociology
+The 2D picture we’ve painted so far in this post is still an incomplete picture. It’s a 2D cross-section of what’s actually a 3D system—a single slice of bread in the loaf of human behavior. To bring our lens into full focus, we’ll need to zoom out and look deeper into the loaf, exploring how thinking happens in communities.
+
+[r319c3] row320 seq1 7w auto_about=- auto_disc=-
+Will Wilkerson on Sean Caroll's mindscape: https://www.preposterousuniverse.com/podcast/2019/09/30/66-will-wilkinson-on-partisan-polarization-and-the-urban-rural-divide/
+
+[r319c4] row320 seq2 16w auto_about=Schelling auto_disc=-
+Urbanization attracts minorities for behavioral weak preferencial reasons that Thomas Shelling describes (ch 4 his book.)
+
+[r319c5] row320 seq3 27w auto_about=- auto_disc=-
+Red/blue voting patterns are all about urbanization, and this from these modest behavioral preferences...Rep party almost all white people who didn't sort into cities. Q is, why...
+
+[r319c6] row320 seq4 20w auto_about=- auto_disc=economics
+WW: almost all mobility is from less to more dense...exceptions is getting priced out from HD to slightly less HD...
+
+[r319c7] row320 seq5 22w auto_about=Pentland auto_disc=physics;sociology
+idea production goes up with density, and productivity goes up (in largest measure) with idea production:  D->I->P. (Sounds like Social Physics-Pentland's findings.)
+
+[r319c8] row320 seq6 16w auto_about=- auto_disc=-
+(this is what's missing in PoP: very little idea production from density, short-circuited by leadership model.)
+
+[r319c9] row320 seq7 22w auto_about=- auto_disc=neuroscience
+"Big 5": OCEAN: openness to experience (curiosity: openness tend lib), conscienciousness (c people dislike uncertainty, tend toward convervatism), extrovertedness, agreeableness, and neuroticism...
+
+[r319c10] row320 seq8 24w auto_about=- auto_disc=sociology
+Cf Jonathan Heit's moral foundation theory...//big 5 isn't intended to explain your politics, though a number of traits are correlated, but in complicated ways...
+
+[r319c11] row320 seq9 30w auto_about=- auto_disc=-
+Goal: investigate how all of these traits cluster and function well, or not in a HIFNRCs...map advantages and disadvantages of these, each and in combination, and find roles in HIFNRCs...
+
+[r320c3] row321 seq1 9w auto_about=- auto_disc=-
+// new overview of book for Fetzer and IHS
+
+[r320c4] row321 seq2 29w auto_about=MacIntyre auto_disc=computer science;sociology
+The broad goal of the computational natural law project is the relaunching of Alasdair MacIntyre's recovery of aristotelian political thought in light of a consistent reading of contemporary science.
+
+[r320c5] row321 seq3 37w auto_about=- auto_disc=physics;biology;neuroscience;computer science;theology;sociology
+Theoretically, this change in paradigm is accomplished through development of a new comprehensive paradigm of information processing, one that runs from theology to quantum gravitational cosmology, to evolutionary neuroscience, to empirical sociology, to computer science and AI.
+
+[r320c6] row321 seq4 27w auto_about=- auto_disc=sociology
+Practically, the transformation is accomplished by invitation into a new conceptual framework, or reference frame, for social life and thought; a high information-flow network of rich communities.
+
+[r321c3] row322 seq1 42w auto_about=- auto_disc=computer science;philosophy
+// capturing a line of argument, dialectical, for the nature and primacy of (original) consciousness, and the computation of shared consciousness, and the nature of love as following from consciousness. (Need a name for this...or did I do this already, above? _____)
+
+[r321c4] row322 seq2 99w auto_about=- auto_disc=physics;chemistry
+Start with IIT:  Cs (nature characterized in 5 central claims) is equivalent to a particular causal set that can be measured with a number (related to complexity: precisely how?), so that Cs is on a spectrum, and comes into being precisely as this complex set of biochemical causal conditions comes into being: they are the same, complementary expressions of one another. (How close is this, precisely, to IIT language?) But the causation of this equivalency lies at the physical level, not the other way around: physical reality underlies, is primary to, the consciousness that emerges from those physical interactions.
+
+[r321c5] row322 seq3 178w auto_about=- auto_disc=physics;computer science;philosophy
+Qs for IIT: 1) what an amazing development, the emergence of complexity of precisely this sort. There IS Cs, there is Us. Why? This question hangs w/o an answer: it is a brute, unexplained fact in the IIT system.  2) Aren't the external realist foundations of IIT thinking (am I right in this? source __) at odds with quantum gravitational thinking, where S-T emerges from information processing (It from qBit), in a world that has the measurement problem, suggesting some computational entity, and perhaps an observational entity, underlying the computation that is our universe? It's as if Cs shows up twice, with different definitions/origins: once emergent and secondary, once metaphysically primary. And even if that putative primary Cs were NOT Cs, the causal primacy of the physical seems undone in the IT fro qBit computational universe. So Q1 comes back with a vengeance: How does a computational reality produce BOTH a physical interactive system (nature) AND the happy emergence of the Cs that is Us? (There IS phys reality, out of which we emerge as Us: why either?)
+
+[r321c7] row322 seq4 156w auto_about=- auto_disc=physics;neuroscience;theology
+Solution to these IIT worries: Start with a definition of CS that fits the IIT 5-fold account (give it, show this fit) but reverses the dependency in the IIT pairing: now Cs as primary, phys reality emerging from it. Provide a definition of love as a feature of consciousness (slowly, in emergent Cs), and as having causal power (illstrated with stories; rendered measurable ... empirical theology.) So Cs has causal powers, which are precisely reflected in our expeience of the world: I now understand, and can apply a fix, choosing a means to achieve results as an agent in pursuit of ends: precisely features of Cs. These are not illusory, emergent features supervening on physical reality; these are foundational features of the world, with physical reality emerging from Cs activity. Objection: we have lots of evidence for mind-independent reality (our bodlily existence through sleep or, better, anasthesia or death-recovery after brain function goes apparently to zero.)
+
+[r322c3] row323 seq1 22w auto_about=- auto_disc=computer science
+// how to translate ethical guidelines into code? first do no harm: what does the neural network look like that identifies harm?
+
+[r322c4] row323 seq2 22w auto_about=- auto_disc=-
+from Lex Fridmans' 10/1/19? interview with _______, an advocate of symbolic systems interwoven with DL, which is currently (he claims) much oversold
+
+[r323c3] row324 seq1 35w auto_about=Carroll auto_disc=physics
+// listening to Sean Carroll on his new book something deeply hidden. gravity emerges from his account Quantum phenomena. Two tasks. Number one. Get to the bottom of Heart of articulate just what he's claiming.
+
+[r323c4] row324 seq2 66w auto_about=- auto_disc=-
+task number two. this one's harder to put into words, but I've got to get this right also. Somehow, put in Consciousness first changes what is plausible in this space. Calculating an outcome is different than discovering an outcome. I've seen one or two places where this perspective seems to transform what Carol is claiming, or rather, where it might. Get to the bottom of this.
+
+[r323c5] row324 seq3 40w auto_about=- auto_disc=physics
+aside, says Carol colon the mathematics of the foundations of quantum mechanics, or better, Quantum world, I really just undergraduate level, linear algebra and calculus, but not generally prohibitive to keep people from understanding what's going on in this area.
+
+[r324c3] row325 seq1 52w auto_about=- auto_disc=chemistry;neuroscience
+// Francis Crick your sense of personal identity in Free Will, or in Sac no more than the behavior of a vast assembly of nerve cells and their Associated molecules. Who you are is nothing but a pack of neurons on quote from the astonishing hypothesis the scientific search for the soul
+
+[r324c4] row325 seq2 149w auto_about=- auto_disc=physics;computer science;philosophy
+got to resync free will in terms of a Consciousness first, computational metaphysic. on one hand, the outcome is not at all determined, since there are a variety of creative ways to find the way forward. those calculations Maybe deterministic, once you bring in the right number of causal antecedents. Fox from our limited perspectives, we have no access to those antecedents, and in fact, they may not actually antecedent in time, if all of time and text all the time all the time. Entering into our limited perspective with this limited set of awarenesses, Shirley what impact what we can calculate, and what looks like Discovery to us. that Discovery is no less a creative achievement on that account, just as we Marvel in the creativity of our children as they discover Solutions 2 problems which we know lie before them and have been discovered by others before.
+
+[r324c5] row325 seq3 67w auto_about=Hoffman auto_disc=neuroscience
+still, contemporary neuroscience seems to limit the number of relevant causal antecedents to choice, suggesting that the phenomenon of consciously choosing postdates the brain activity that underlies it by some substantial. Of time, in some cases, as much as seven seconds later. that's a common line, but the 7-second claim is from David Hoffman in his mystery of Free Will video from the science and non-duality channel
+
+[r324c6] row325 seq4 98w auto_about=- auto_disc=-
+we're thinking about at least 4 minutes colon this argument seems to isolate some myself as a chooser the specific elements of conscious choice. Why not suppose that it's the choosing agents as a whole to which a kind of indeterminacy applies, and an awareness of that indeterminacy, even if that awareness comes after the fact of the choice. What this argument might show is that our choices in their indeterminacy AR in a more complex causal position than one might I only suppose when one thinks that one is doing exactly what one consciously intends to do.
+
+[r324c7] row325 seq5 63w auto_about=- auto_disc=physics;computer science
+even so, that last argument seems to have nothing to do with computational perspectives. If I were in fact reacting to and completely external physical world, that same argument could be made. So how is it different, when the world is only determined insofar as we have calculated it to be so thus far, a calculation that has got an into it, purpose?
+
+[r324c8] row325 seq6 9w auto_about=- auto_disc=-
+check out Norton's Dome as a challenge to determinacy
+
+[r324c9] row325 seq7 103w auto_about=Hoffman auto_disc=biology
+Donald Hoffman addresses the hard problem of consciousness thus far in soluble, and proposes, my words not his, to turn the debate on its head, and start with consciousness first, which gives rise to space-time, and calls his conscious realism. This does look like exactly the View I've been chewing on. he trots out a mathematical formula which claims to show that if there were an exterior external reality, Evolution would not have produce creatures that would come to know it, the probability is doing so approaches 0. Hoffman's book is the case against reality how Evolution hid the truth from our eyes
+
+[r324c10] row325 seq8 42w auto_about=- auto_disc=physics;neuroscience
+his analogy is with virtual reality colon everything you see around you is virtual reality that you create. in his View, physical Universe seems to supervene on consciousness, again my word not his. He does say that neurons have no causal powers.
+
+[r325c3] row326 seq1 23w auto_about=- auto_disc=computer science
+// need some short summaries (sketch of key findings and questions, state of discussion) of Cs, QG, Cos, Chem, EB, NS, SP, AI,
+
+[r325c4] row326 seq2 7w auto_about=- auto_disc=-
+need some kind of map with interlinkages
+
+[r326c3] row327 seq1 13w auto_about=- auto_disc=sociology
+// from the hoover institute's the intellectual poverty of the new socialists... (epstein?):
+
+[r326c4] row327 seq2 42w auto_about=- auto_disc=sociology;economics
+"When viewing the proposals of the New Socialists, one looks for any kind of explanation for how their proposals for the radical expansion of government control over the economy aimed at mitigating income inequality will protect both personal liberty and economic well-being"
+
+[r326c5] row327 seq3 44w auto_about=- auto_disc=economics
+personal liberty, economic wellbeing: freedom to pursue as much wealth for yourself as you choose, and success in that endeavor. Doesn't soud like economic well-being to me: Economic well-being involves loving well with money. Distributing goods and services beneficially...in an informed way...outstripping individual information-gathering...
+
+[r327c3] row328 seq1 13w auto_about=- auto_disc=-
+20 questions done backwards, from Philip Ball,  https://www.youtube.com/watch?v=q7v5NtV8v6I&t=2144s at 36 min mark roughly...
+

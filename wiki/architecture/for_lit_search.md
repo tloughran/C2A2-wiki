@@ -19905,3 +19905,84 @@ different mechanism from agents agreeing, and it is the mechanism REVISE-426 wou
 hazard is not triggered.
 
 ---
+
+## Intake — 2026-09-04 · 14a/14b run (gap-filling; 14a/14b last ran 2026-08-30)
+
+**Run note.** 14 assumptions (ASSUMPTION-1249–1262) and 8 presumptions (PRESUMPTION-904–911)
+extracted. **11 are routed below**; 11 are framework commitments, in-house-verified counts, or
+in-house tests and are not search requests. Sources: `inbox/rc_sandbox/outline_v3.md`,
+`inbox/rc_sandbox/batches/CLASSIFY_SPEC.md`, `assignments.csv`, `toc_sandbox.csv`, and
+`daily_sync/cowork_to_chat/2026-09-04_cowork_summary.md`. No interactive transcript was reachable;
+see PRESUMPTION-911. Days 08-31 … 09-03 are not reconstructed.
+
+--------------------------------------------------------------------------------
+### ASSUMPTION intake (14a → 15a/15b)
+
+ASSUMPTION-1251 [QUEUED]
+  "A table's column LABELS are apparatus unless the table is itself an authored structure, in which
+  case the labels ARE the structure." Search: header/apparatus discrimination in document-structure
+  and table-understanding literature; cases where schema is content (authored taxonomies, controlled
+  vocabularies). Test whether "authored structure" is a decidable class. Priority: Medium.
+
+ASSUMPTION-1256 [QUEUED]
+  "The sandbox output needs Tom's eyes, not more agent passes." Search: marginal yield of iterated
+  automated review vs. one expert read; reviewer fatigue and detection rate on very long documents
+  (16k lines). Search jointly with PRESUMPTION-910. Priority: Medium.
+
+ASSUMPTION-1257 [QUEUED]
+  "B = the neocortical column — the thousand brains of TBT." Search: the cortical column as a
+  functional unit (Mountcastle; Horton & Adams 2005 "the cortical column: a structure without a
+  function"; Hawkins/Numenta reply); whether "column" is a defensible level between neuron and
+  person. In-vault: Hawkins tradition. Priority: High.
+
+ASSUMPTION-1258 [QUEUED]
+  "The earlier [ladder] reaches for an OBJECTIVE ordering principle (entropy)." Search: entropy /
+  complexity as an ordering principle for levels of organisation; simplicity-to-complexity vs.
+  cause-to-effect hierarchies (Carroll "Biggest Ideas 3: complexity and emergence" — PROP-2026-09-04-001
+  is on the same topic; Wolfram computational irreducibility). Priority: Medium.
+
+ASSUMPTION-1261 [QUEUED]
+  "Five days dark means five days of assumptions ... unsurfaced." Rationale drift against
+  PRESUMPTION-903 (evidence destroyed vs. work deferred). Search: recoverability of design rationale
+  from artifacts after the fact (rationale-capture literature, design-rationale decay). Search jointly
+  with PRESUMPTION-911. Priority: Medium.
+
+--------------------------------------------------------------------------------
+### PRESUMPTION intake (14b → 15a/15b) — unstated, surfaced by inference
+
+PRESUMPTION-904 [QUEUED] [PRESUMPTION]
+  A spreadsheet cell is the correct unit of classification. Search: segmentation-unit choice in corpus
+  annotation; single-label vs. multi-label assignment when units are storage-defined; error
+  propagation into per-category counts. Priority: Medium.
+
+PRESUMPTION-905 [QUEUED] [PRESUMPTION]
+  A v2 classification stays valid under v3 after a targeted re-pass. Search: taxonomy evolution and
+  re-annotation cost; recall loss when a category is added post hoc and only keyword-scoped items are
+  re-labelled. Priority: High (empirical test is cheap: re-classify the 98 III.2.N cells).
+
+PRESUMPTION-906 [QUEUED] [PRESUMPTION]
+  Worker-reported confidence is calibrated across independent batches. Search: calibration of LLM
+  self-reported confidence in text classification; anchoring by supplied priors (the 92% Loughran
+  default). Priority: High.
+
+PRESUMPTION-908 [QUEUED] [PRESUMPTION]
+  Eight parallel workers without shared context classify consistently. Search: inter-annotator
+  agreement with written guidelines and no adjudication; boundary-category drift. Priority: Medium.
+
+PRESUMPTION-909 [QUEUED] [PRESUMPTION]
+  The layered account is a total linear order. Search: levels of organisation as partial orders /
+  lattices; mereological vs. causal hierarchies (Wimsatt, Craver, Potochnik & McGill 2012 "the
+  limitations of hierarchical organization"); whether overlapping bands compose into a ladder.
+  Priority: High — governs OPEN-179 and OPEN-181.
+
+PRESUMPTION-910 [QUEUED] [PRESUMPTION]
+  A human read detects misplacement without a stated failure criterion. Search: checklist vs.
+  unstructured expert review yield; success-criteria specification and review sensitivity. Search
+  jointly with ASSUMPTION-1256. Priority: Medium.
+
+### Not routed (11)
+ASSUMPTION-1249, 1250, 1253 — framework commitments / representation choices.
+ASSUMPTION-1252, 1260 — in-house empirical checks (40 flagged cells; 5 deferred cards).
+ASSUMPTION-1254, 1255, 1259, 1262 — verified in-run by count.
+PRESUMPTION-907 — framework commitment in part; in-house check on `sheet_row` recoverability.
+PRESUMPTION-911 — in-house test when a transcript becomes reachable.

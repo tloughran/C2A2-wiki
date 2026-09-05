@@ -1,0 +1,360 @@
+[r1c26] row2 seq4 4w A_frag<=5
+Sum by row headers
+
+[r3c26] row4 seq24 1w A_frag<=5
+36060
+
+[r5c9] row6 seq7 1w A_frag<=5
+1487
+
+[r5c15] row6 seq13 1w A_frag<=5
+830
+
+[r6c25] row7 seq23 5w A_frag<=5
+row 401 - 500 subtotal
+
+[r20c3] row21 seq1 20w B_6-20
+like fundamental forces that unite at a certain stage of development, as do EM and W at high enough energy
+
+[r29c9] row30 seq7 19w B_6-20
+find reference to biologist who makes room for empirical lamarckian evolution by appeal to natures that unfold through experience
+
+[r30c6] row31 seq4 2w A_frag<=5
+Jura Margulis
+
+[r44c9] row45 seq3 54w C_21-60
+...in fact, families which love one another, and which are held out in hope of illustrating that love and inflaming a desire for it, even while communicating it freely. This is the role of rhetoric, the craft of loving well in communication, of inviting others into an attractive perspective, of blessing them with speech.
+
+[r46c18] row47 seq5 5w A_frag<=5
+Total % of E CyAn
+
+[r46c19] row47 seq6 2w A_frag<=5
+2016 Electorate
+
+[r50c3] row51 seq1 10w B_6-20
+on competing notions of happiness and determinacy by practical reason
+
+[r52c4] row53 seq2 5w A_frag<=5
+pretest/posttest;  expectations; "rate this book"?
+
+[r52c5] row53 seq3 6w B_6-20
+backward designing a text? a narrative?
+
+[r54c5] row55 seq1 2w A_frag<=5
+for hope:
+
+[r54c7] row55 seq3 67w D_61-200
+rubric, roughly:  can identify principled MD; can give an account of origin of MD via fragmentation of cmty; can describe conditions for restructuring disagreement into enriching and enlightening diversity; can illustrate incommensurability between traditions, describe conditions for rational encounter between them and the possibility of resolution of fundamental disagreement among them; can illustrate (name, model) strategies of persuasion of mature members one tradition toward adoption of another.
+
+[r56c5] row57 seq1 2w A_frag<=5
+for love?
+
+[r62c4] row63 seq1 3w A_frag<=5
+C of Energy
+
+[r84c6] row85 seq4 78w D_61-200
+Is "every person" the same as "every instance of consciousness"? Is Cs built up in layers, and thus manifest in less complete instances? Are insects such? Completely interconnected with all of reality, but not interactively, not even potentially interactively (like particles that do not interact: like neutrinos in some respect, no scattering crossection with some kinds of reality. But conscious beings, or potentially conscious beings, perhaps are potentially interactive (and thus actually interactive) with the whole. (Way speculative.)
+
+[r85c4] row86 seq2 202w E_>200
+A perspective worth considering. From General Smedley Butler, once the most decorated Marine in US history: /  / I spent 33 years and four months in active military service and during that period I spent most of my time as a high class muscle man for Big Business, for Wall Street and the bankers. In short, I was a racketeer, a gangster for capitalism. I helped make Mexico and especially Tampico safe for American oil interests in 1914. I helped make Haiti and Cuba a decent place for the National City Bank boys to collect revenues in. I helped in the raping of half a dozen Central American republics for the benefit of Wall Street. I helped purify Nicaragua for the International Banking House o ...[TRUNC 1151ch]
+
+[r94c4] row95 seq2 11w B_6-20
+give some examples of competing narratives of US history, to illustrate
+
+[r94c6] row95 seq4 13w B_6-20
+blend POP narrative with alt US narratives to illustrate possibilitity of change, growth
+
+[r108c4] row109 seq2 27w C_21-60
+Williams: to discover the right style is to discover what you are really trying to do (Morality: An introduction to Ethics, Harper & Row, 1972, p. xi.
+
+[r122c6] row123 seq1 1w A_frag<=5
+police/order
+
+[r124c6] row125 seq1 6w B_6-20
+information flow: oomputational savvy, resources, safety
+
+[r130c4] row131 seq1 8w B_6-20
+Organisms are algorithms, and algorithms can hack organisms
+
+[r151c3] row152 seq1 22w C_21-60
+(look for a chance, if it comes up, to talk about healing, as an expression of love in the face of illness
+
+[r156c6] row157 seq3 5w A_frag<=5
+incarnation of love (full picture
+
+[r171c3] row172 seq1 12w B_6-20
+Rohr, on reading scripture - What Do We Do with the Bible?
+
+[r172c4] row173 seq2 400w E_>200
+I’d like to offer some spiritual advice so that you can read Scripture the way that Jesus did and use it for good purposes. Offer a prayer for guidance from the Holy Spirit before you make your interpretation of an important text. With an open heart and mind, seek the attitude of a beginner and learner. Pray as long as it takes to feel any certitudes loosen. Once you have attained some degree of openness, try to move to a position of detachment from your own egoic will and its goals and desires—to be correct, to be secure, to stay with the familiar. This might take some time, but without such freedom from your own need for control, you will invariably make a text say what you need and want i ...[TRUNC 2324ch]
+
+[r178c4] row179 seq2 15w B_6-20
+value, prices set by mature members of communities negotiating with mature members of other communities
+
+[r186c5] row187 seq3 57w C_21-60
+background: can now measure how human beings interact at millisecond level (computational social science) (See Thasos, a company by one of AP's students: tracks (privacy compliant) data re shopping relationships for almost every store in the US and Europe. Cogito: tracks effective strategies for persuading costomers to take their medicine in HC industry...(an example of AI persuasion)
+
+[r186c8] row187 seq6 43w C_21-60
+connections predict behavior 300% better than demographics // what predicts grade performance? Peer academic performance. Relationships, not test perf, money, etc... (Poor and rich don't spend time together in any country...biggest opportunity for significant change...)  Knowledge is worthless for job mobility...connection skills are.
+
+[r193c8] row194 seq5 168w D_61-200
+Here’s most of Deepak’s "wisdom" from this video. 2:07 "Science is now in a process of overthrowing the climactic overthrow of the superstition of materialism." 2:05 "The essential nature of the physical world is not physical. The essential stuff of the universe is non-stuff." 2:43 "Science tells us that nature is a discontinuity. It’s an on-off phenomenon. There are gaps between every two ons where you find a field of possibilities. A field of pure potentiality." 3:00 "What is god if not the immeasurable potential of all that was, all that is, and all that will be. Science also tells us there’s a field of non-locality where everything is correlated with everything else." 3:23 "I hope you wi ...[TRUNC 1040ch]
+
+[r197c3] row198 seq1 9w B_6-20
+enriching family ties with intellectual content (family case study?)
+
+[r207c8] row208 seq5 278w E_>200
+Need an example, here...take present case of Michigan congressman Justin Amash, just pulled out of the Congressinal Freedom Causus, who read the mueller report and finds clear grounds for impeachment. Suppose, in some such case, someone had information that this individual is an especially careful reader and fair interpreter, following arguments where they lead...how does that information filter back into the freedom caucus? (ex member Barton: " “There’s no member of the Freedom Caucus more intellectually honest than he is. So my guess is that he agonized over this and felt like he couldn’t, in good conscience, not say something and still be honest to his oath of office.”) (Amash gets a 100% ...[TRUNC 2244ch]
+
+[r215c11] row216 seq8 45w C_21-60
+So it is actually possible to compute--we're actually computing--what is true, good and right...this goes far beyond living in a computable universe where TGR has meaning, but may or may not be computable. It IS computable, and we're doing it now. But not very well.
+
+[r224c7] row225 seq5 21w C_21-60
+successful implementation of remedy (rhetorical appealing success story which accepting this substantial part suggests, as a model for further success)  #1
+
+[r231c12] row232 seq7 37w C_21-60
+But isn't that plausibly because we have no paradigm for how the brain works, and doesn't Jeff Hawkin's 1000 brain paradigm change that (if not supply everything needed to overcome) that skeptical judgement ("we have no idea")?
+
+[r232c6] row233 seq4 62w D_61-200
+"Properly aligning advanced AI systems with human values will require resolving many uncertainties related to the psychology of human rationality, emotion, and biases. These can only be resolved empirically through experimentation — if we want to train AI to do what humans want, we need to study humans." The intro of the Open AI paper linked at https://distill.pub/2019/safety-needs-social-scientists/, by Irving and Askell.
+
+[r239c6] row240 seq4 5w A_frag<=5
+Am T 3: human rights
+
+[r241c7] row242 seq5 18w B_6-20
+undesired, unplanned, stealth politicization of separate powers, erosion of checks and balances, incivility of interaction, erosion of rights
+
+[r246c6] row247 seq3 1w A_frag<=5
+S
+
+[r248c11] row249 seq5 93w D_61-200
+These communal judgements, variously expressed, are perceived and responded to by other communities (sometimes populated by very few, very loosely connected; or, etc.) in yet a 4th application of preference resolution to a perceived state of affairs (the existence matrix of what are now both perceived and preferred states of affairs at the previous level.) These value judgements are made in what we today call the political process and the marketplace, both of ideas and of products/services. Here we inch forward toward a stable wise and loving order, through an iterative experimental process.
+
+[r249c3] row250 seq1 21w C_21-60
+starting again a third time, with AI reflections both with respect to informing and guiding, which cut across the stimulus/reponse distinction
+
+[r251c5] row252 seq2 61w D_61-200
+first, it needs a name. it is a comprehensive, hierarchical, computational theory of intelligence, both theoretical and practical. Physics, computer science and philosophy contribute at the Awareness, Information, and Space-time levels. Chemistry, Biology and Neuroscience contribute at neuronal, columnal, and personal levels. Psychology at personal, communal, social. Sociology at communal and social. Empirical everywhere. Philosophy and Computer science at every level.
+
+[r253c7] row254 seq5 33w C_21-60
+This consistent computational analysis, cast as matrix multiplication (as is done in physics) is the unifying theme running throughout these layers, understood also in light of a computational account of truth and goodness.
+
+[r253c10] row254 seq8 70w D_61-200
+This provides us with a rationale for intervening in nature, for ordering the future calculations as best we see fit, with humility and clarity of purpose, toward establishing loving, conscious, reflective community on those principles (expressed in operation matrixes as the natural law) that prove necessary or optimal for such community. (This sounds scary...unless respect for dignity, freedom of choice and loving kindness are among those principles, which they are.)
+
+[r254c5] row255 seq3 62w D_61-200
+Quantum information theory, related to Quantum reconstruction...one approach, built on just three postulates (of information capacity (bit as basic unit) localtity (no hidden variables), and reversibility...up to down and back again...) about what is and is not permitted with information (Decket et al Univ of Vienna) Classical Physics comes from 1 and 0 bit values; quantum rules, from the full clock dial)
+
+[r256c5] row257 seq3 1w A_frag<=5
+https://file.scirp.org/Html/5-1390478_87017.htm
+
+[r258c3] row259 seq1 18w B_6-20
+Question: what needs to be shown, when demonstrating what a whole system of thought and practice looks like?
+
+[r258c4] row259 seq2 18w B_6-20
+1. Coherence lite; no internal inconsistencies; i.e., no mutual repulsions, or if any, with promise of overcoming these
+
+[r265c4] row266 seq2 4w A_frag<=5
+forests of british columbia
+
+[r270c14] row271 seq11 48w C_21-60
+22 years ago, deep blue beat casperov in chess. Now your smart phone could beat the world chess champion. Now Go. We are hopelessly behind AI now in these areas. Our corner of intellectual pursuits that we are better than AI is getting ever smaller and will disappear.
+
+[r279c4] row280 seq2 1w A_frag<=5
+https://scholar.harvard.edu/files/rpande/files/do_informed_voters_make_better_choices.pdf
+
+[r281c3] row282 seq1 11w B_6-20
+In general, people feel better informed with the internet (2014 study)
+
+[r288c4] row289 seq2 657w E_>200
+this seems like a denial of reality. It seems sort of the opposite of the Everett interpretation which postulates an infinity of independent worlds. This view argues that there are no mind independent worlds. And it seems this contradicts our ordinary experience as the Everett interpretation does, but on the other side of the spectrum. Most of us would have thought there is exactly one, not zero, not infinitely many mind independent worlds. It just turns out that nature is a bitch and doesn't seem to agree with that view. But in fact, this view contradicts nothing in ordinary experience. None of us ever experienced anything that isn't experienced by anyone. We have no data on the world that  ...[TRUNC 3770ch]
+
+[r289c3] row290 seq1 25w C_21-60
+// Francois Chollet, creater of Karas (embedded now in Tensor Flow), now at Google, in a podcast with Lex Fridman, offers a definition of intelligence:
+
+[r313c5] row314 seq3 119w D_61-200
+Chirbella et al: "Quantum theory can be derived from purely informational principles. In particular, it belongs to a broad class of theories of information-processing that includes classical and quantum information theory as special cases. Within this class, quantum theory is identified uniquely by the purification postulate, stating that the ignorance about a part is always compatible with the maximal knowledge of the whole in an essentially unique way. ... The suggestion coming from our work is that a “quantum” theory is a theory satisfying the purification principle, which can be suitably formulated even in the absence of / causality [42]. The discussion of theories with purification in t ...[TRUNC 784ch]
+
+[r314c12] row315 seq10 34w C_21-60
+so what RF, how has it been programmed, what is it's capacity, what has it learned...method, capacity, learning for computers. For us, method (GP or not), capacity, learning/training...these are the three dimensons of intelligence
+
+[r318c14] row319 seq9 130w D_61-200
+// another point re TU Ch 7 SofU: he seems to think that bias is eliminable, at least ideally, for scientists: "Humans with bias works like trains in motion. When you’re thinking clearly and objectively, like a Scientist, you’re like a stationary train. You see objectivity and bias in other thinkers for what they are. But when you’re seeing through a biased lens, you’re like a train in motion. Someone who shares your bias seems objective to you, while someone being objective seems to you to be biased the other way. And when you come across someone who is actually biased the other way, you’ll see their bias as more extreme than it is." Think MacIntyre, what it takes to miss real incommensurab ...[TRUNC 746ch]
+
+[r319c4] row320 seq2 16w B_6-20
+Urbanization attracts minorities for behavioral weak preferencial reasons that Thomas Shelling describes (ch 4 his book.)
+
+[r320c5] row321 seq3 37w C_21-60
+Theoretically, this change in paradigm is accomplished through development of a new comprehensive paradigm of information processing, one that runs from theology to quantum gravitational cosmology, to evolutionary neuroscience, to empirical sociology, to computer science and AI.
+
+[r321c3] row322 seq1 42w C_21-60
+// capturing a line of argument, dialectical, for the nature and primacy of (original) consciousness, and the computation of shared consciousness, and the nature of love as following from consciousness. (Need a name for this...or did I do this already, above? _____)
+
+[r329c4] row330 seq2 41w C_21-60
+something like this might play an analogical role re/ creation: one freely chooses to entertain. If God freely chooses to entertain a possibllity, that thought is an entering into a particular, dymamic perspective, limited, exploratory because limited,foreseeing some things, intending/enjoying others...
+
+[r333c4] row334 seq2 20w B_6-20
+a very critical history of Bohr's (and to a lesser extent Pauli's, Heisenberg's) sloppiness and century-long catastrophic impact on QM
+
+[r334c14] row335 seq7 72w D_61-200
+from another perspective, all of us are united in a single Consciousness which is computing the best outcome for a limited standpoints like us, under these particular laws of nature, connected under the particular Beauty of our natural laws. what we bound what we bind on Earth, under our limited perspective, is bound in heaven, because we bind it as fundamental Consciousness, from a limited perspective, that is, in Christ, as Christ.
+
+[r342c5] row343 seq3 20w B_6-20
+premised on supposition that mathematical analysis can account for all properties, not just those so far explained, including for consciousness
+
+[r357c5] row358 seq1 48w C_21-60
+DH; touch a magnet of a certain type to brain region V4 to remove color; section MT to remove smooth motion: these are two of hundreds of correlation between brain activity and Cs. But no causal relationships, beyond correlation, are even published...wrong way to connect Cs to brains...
+
+[r366c3] row367 seq1 1031w E_>200
+// so let's take these information processing thoughts to a considation of facts, or rather the meaning of "facts". These are thought to be objective, perhaps the outcomes of observation, through some clever philosophers of science talk about theory-laden facts, as if our theories are built into our observations. So, for example, particles like the Higgs Boson are observed, indirecly, via statistical analysis of a great many collisions at the LHC, recorded in one of its general purpose detectors, CMS or ATLAS; that statistical analysis builds on recontruction of many individual events, each of which is reconstructed from some behavior in the detector, and some basic information about the ene ...[TRUNC 5963ch]
+
+[r373c3] row374 seq1 19w B_6-20
+// Mark Moes and Mark Ballentine as examples of teachers, professional inviters, moving up toward maturity in rich communities
+
+[r375c3] row376 seq1 266w E_>200
+// all I have for you is an invitation. Even whether to receive it as an invitation is up to you, and your choice, as well as mine, must cohere if there is to be a fact to the matter about whether or not it is an invitation. But not your choice--I so choose--under any cricumstances (in anger, under hallucinogens, under conditions of evident sustained inability to persuade me that you have any idea of what I am attempting), but rather your choice when you are responding to information--stimulus, interpreted by you--about what I am attempting when I issue what I take to be this invitation. In the end, what my actions mean--even whether they are actions or have meaning--emerges as a consensus b ...[TRUNC 1596ch]
+
+[r379c7] row380 seq5 29w C_21-60
+p. 5-6: 2005 special issue of Science ranked top 125 open questions in science: 1) what is the universe made of? 2) what is the biological basis of consciousness?
+
+[r380c7] row381 seq3 45w C_21-60
+Dennett makes an important closing point about religion: we need the communal dimensions, but not the myths, nor the harm to critical thought that naive insistence on myths has done. But he's got an impassioned plea, praise, really, for the communcal/social service dimensions of religion
+
+[r381c5] row382 seq3 58w C_21-60
+Interface Theory of Perception (ITP) follows from FBT and perhaps other? findings about perception (or rather, coheres with these other findings.) Our perception is best viewed as an interface, like a desktop, not tuned toward revealing what is true, but rather guiding us efficiently toward what produces fitness, generally hiding from us detail that does not optimize fitness.
+
+[r386c7] row387 seq5 32w C_21-60
+You cannot compute your way to consciousness; it is about the causal power in the hardware, not the software.You have to build it into the system; it's about intrinsic cause and efffect
+
+[r388c14] row389 seq9 54w C_21-60
+Also, zap and zip tool has results predicted by these two theories.GNW is the dominant zietguist: machines can be Cs, if you build in enough feedback loops: intelligence and Cs both will emerge. Cs is just about behavior, and AI will be able to behave as Cs. Cs is just a clever hack away.
+
+[r392c7] row393 seq5 256w E_>200
+at another place, Sarah indicated that information was a limiting of possibilities. She referred to a table which was this and not something else. It says if she was trying to say, particularity, thisness, rather than otherness. This line of thought, that information is the exclusion of possibility, the particularization of what, of being?, seems a kin to the idea of a limited perspective. Especially against the background of fundamental consciousness, or is Hoffman puts it, conscious realism, a limited perspective, whether chosen intentionally, as we are selves can do,Or whether just existing in possibility space, either as one finite set among other finite sets, or some particular infinite ...[TRUNC 1604ch]
+
+[r392c17] row393 seq11 156w D_61-200
+jumping to the theological, one might ask what the role is for this whole conscious nature, and perhaps other more limited or less limited holes, in the created order. Somehow, this seems too small for Christ.For this natural order is too small, it’s just one among many. Of course, my perspective is too small, one among many, and yet we say that I am Christ. Using such language,, I may be identifying with a whole of which I am apart. Not of course the physical part, but a conscious part, a limited perspective, someone who sees as if in a mirror, dimly, later to see as I am clearly seen, know as I am clearly known. From the perspective of one in time, I am limited, and not at the same extent. ...[TRUNC 841ch]
+
+[r392c20] row393 seq13 266w E_>200
+This line of reflection, barely present in the in the podcast, brings up for me the question of theological reflection in this exploration. start with Thomas Kuhn’s observation the changes and paradigms, about for non-scientific reasons, for reasons that are theological, personal,…. The take I am exploring is that full human thought is dialectical, holistic. What you see when science jumps from one place to another place without a good explanation is in fact a thirst for a holistic explanation, which people are generally not accustomed to pursuing or slaking. So starting with a love-centered bias, one rooted in recognition that love is real, and that somehow outstrips what we can generate ou ...[TRUNC 1580ch]
+
+[r394c5] row395 seq2 13w B_6-20
+There is moreover, a Telos which emerges from this Love-centric perspectival fundamental consciousness.
+
+[r395c15] row396 seq7 143w D_61-200
+Notice that an essential creative role of the observer (QM3) follows from LPCR. That fundamental answer is that actuality is relational; subsets exist, limited perspectives exist, and the universe is our evolved, calculated, best-yet-take on how to render the content of our limited perspective consistent with itself and with everything not yet considered, that is, beyond our limited perspective. (This is at the same time an answer to why the universe exists, and why science exists.) And it rests on a single premise, that fundamental consciousness exists, that is on what DH calls conscious realism, with the features that emerge immediately out of our own experience of consciousness (wholistic ...[TRUNC 1026ch]
+
+[r404c12] row405 seq6 173w D_61-200
+But now watch (thanks, KT) Of Montreal's "It's different for girls": https://www.youtube.com/watch?v=7_WDugKPnlk. The very picture of Bloom's licensiousness, on the surface. Except for the joy, the freedom, the intelligence it expresses. At its extreme, Bloom's culture becomes Nazi culture: the approved, what the wise know, in their shameful ignorance. Somehow, Bloom's recognition of the role that evocation of the passions through the senses plays in education--making what is good, seem good--has got to be acknowledged while also acknowledging and avoiding not only the threatended loss of happiness of straightjacketed persons (as 10,000 pricks do for every crazy bitch), but also the threat o ...[TRUNC 1133ch]
+
+[r416c3] row417 seq1 17w B_6-20
+Julian of Norwich (1342 - 1442?): https://www.gutenberg.org/files/52958/52958-h/52958-h.htm  Rohr weekly summary of blogs on Julian of Norwich: https://email.cac.org/t/ViewEmail/d/980DC864FF287F1D2540EF23F30FEDED/B8222996A2E679602A1BF84ACBDD178B
+
+[r421c4] row422 seq2 248w E_>200
+This video introduces a podcast series (a Zoom conversation, broadcast live to YouTube) focused on the creation of a new science of computational politics. That science emerges from the creation of a high-information-flow network of rich communities. In a rich community, information drawn from (optimally) a full range of experience about the world by members united in a common worldview is parallel processed in communities that become richer through growth in ordered causal contact with the world as they progress. As Alasdair MacIntyre has taught us, the incommensurable differences that emerge between such communities can be overcome through information exchange that preserves such causal co ...[TRUNC 1678ch]
+
+[r422c8] row423 seq5 48w C_21-60
+Isn't there a broadly cultivatable desire to know or have access to such background for claims made publicly? There's a right to full information provenance brewing here...a need, it is in the best interest of all to satisfy...of all, according to some set of signatory communities and organizations...
+
+[r426c12] row427 seq5 243w E_>200
+So Max Tegmark is in a way right: every possbility (on pCR) is actual...but actual as considered on the way to an integrated, loving, whole perspective. Not everything that can be considered, will be considered, as we experience as we contrain our loving reflections on where and how to proceed away from possibilities we can--may start to--consider, but pull back from. it is not good that I engage in a preditory relationship with my brothers and sisters, and I will not do so. This is a calculation--I've been raised up in the way I should go, and as older, I do not depart from it--though there are many truly good things about many of those ways that are not the right ways. I see these goods, b ...[TRUNC 1453ch]
+
+[r439c3] row440 seq1 128w D_61-200
+bllindsight video 2: Helen, the monkey, taught to see with no visual cortex (which had been removed 2 years earlier) https://www.youtube.com/watch?v=2EQTqea67Ic Nicholas Humphry. Blindsight is unconscious vision; it's not like anything to see, but if the subject is asked to guess what might be there, were he able to see, he can get it right. Helen, the monkey, developed this. So, Q: if we can see without subjective sensation, why does it exist? A: evolution has more to do with social life than anything else. Enables speculation of the contents of another person's mind. Cs is difficult to explain because that's it's function: gives us a new reason for living and caring about future of others  ...[TRUNC 770ch]
+
+[r444c13] row445 seq7 235w E_>200
+I remember when World Vision announced it would hire LGBTQ people and Christians responded by dropping their sponsorships of children in protest, so much so that World Vision was forced to reverse their announcement and no longer hire LGBTQ people. In that moment, I knew evangelicalism was an empty belief system that didn’t have anything to do with repairing real harm and injustice in the world. So many of the teachings of Jesus run in diametrical opposition to the popular teachings of the well-known evangelical celebrities of today. I still believe in a God that created and sustains the universe as we know it. It’s ridiculous to know how small we are and how big everything else is and under ...[TRUNC 1364ch]
+
+[r455c5] row456 seq3 39w C_21-60
+Against naturalism, a reductionist, mechanistic scientism, AM & CT put forward a humanism, in which human interpretations of their world, defended in narrative accounts and replete with intentions and puposes, which when it matures becomes a human social science.
+
+[r456c17] row457 seq7 175w D_61-200
+Way out on a limb, here, bearing in mind the distinctions among content (amount) of info transfered, rate of that transfer to mature members of t1, rate of transfer throughout t1 to less mature members, and degree of saturation of that information throughout all members):  is the total effective information transfer from t2 to t1 (I-trans-t2->t1) equal to the product of the amount of information available in t2 (I-total-t2) * # of full information transfers through cohabitation of mature members from t1 in t2 (I-trans-mt1<-t2) * speed of that transfer * average rate of transfer from mature members of t1 to less mature members of t1 * # of less mature members. This is something like the growt ...[TRUNC 1010ch]
+
+[r457c5] row458 seq3 37w C_21-60
+Botlzman: course-graining approach, where entropy seems a subjective state of affairs because choice of course-graining does...but the laws of physics determine to a large extent how we can course-grain the universe; that is, what we can measure...
+
+[r469c19] row470 seq17 5w A_frag<=5
+16. Mike Sweikar at CSC
+
+[r469c23] row470 seq21 3w A_frag<=5
+20. gethsemany KY
+
+[r469c24] row470 seq22 6w B_6-20
+21. 2 brothers & catholic ed
+
+[r471c4] row472 seq2 93w D_61-200
+DH with two presumptions: 1) that conscious experiences exist (taste of garlic, etc); and 2) that those experiences nontrivially influence some kind of action (some probabilitist relationship with action). That's it. Then DH builds analogue to a Turing Machine: DH wants to compute everything from these two initial presumptions: experiences exist, and stand in some probabilistic relationship through actions to other conscious experiences (of itself, or other conscious agents)  Q: isn't existience of multiple Cs agency yet a different assumption? A solipsist version seems possible...isn't possibility of multiple Cs agency a 3rd presumption?
+
+[r474c3] row475 seq1 57w C_21-60
+// a fresh overview of the RC project, from HIFNRCs, to where to start, to 2nd lens issues, to example of fuller account, growing in increasing particularity through particular embodiment of shared lensing (American, Catholic, PoP), perhaps through even deeper particularity, the resolution of existing differences, chief among these political factioning at all three of those levels?
+
+[r494c4] row495 seq2 70w D_61-200
+First, I really like DWP. // So what is real? On the DWP view, what is real is something near to the deliverances of our senses, and the distance between the real and the perceived narrows as we extend our senses with various detectors (DWP: "our technology will save us".) What I want to explore here are the advantages of pCRm with respect to our intuitions re/ what is real.
+
+[r495c8] row496 seq5 214w E_>200
+"Gödel also expresses himself in no uncertain terms in a discussion of Russell's mathematical logic (Gödel, 1964): 'The analogy between mathematics and a natural science is enlarged upon by Russell also in another respect... axioms need not be evident in themselves, but rather their justification lies (exactly as in physics) in the fact that they make it possible for these ``sense perceptions'' to be deduced... I think that... this view has been largely justified by subsequent developments, and it is to be expected that it will be still more so in the future. It has turned out that the solution of certain arithmetical problems requires the use of assumptions essentially transcending arithmet ...[TRUNC 1350ch]
+
+[r496c12] row497 seq9 91w D_61-200
+Weight runs in families for reasons of heritability, not nurture. There are 40% of factors unexplained by heritabililty. But those 40% factors are not controlled, by, say, the same raising (based on studies of unrelated adoptions, where correlation is about zero.) TL: this is a BIG DEAL in understanding why RP emphasizes just the DNA side of explanation for individual differences. There are other factors, but you can't appeal to them in explanation in any easy way (such as "raised in the same home" that "nurture" would be used to reference.
+
+[r499c3] row500 seq1 16w B_6-20
+// GameStop - Robinhood - Reddit event: Billions lost by wealthiest in social market move: https://www.msnbc.com/stephanie-ruhle/watch/gamestock-surge-shows-power-shift-on-wall-street-100159557645
+
+[r499c6] row500 seq4 239w E_>200
+i’ve been waiting for this for years, but hadn’t seen it coming from the small guy, up. I thought it would come from a band of very wealthy people with conscience leading the charge...and maybe that’s happening; hard to tell. (is there a trading cap on robin hood?) This is how capitalism will be infused with social responsibility--a bunch of traders will back a company that pledges not to follow shareholder profit outside of fairly well articulated social guidelines. Tons of people say, F yea, and jump on, pushing stock and thus capital into that social business. I also thought it needs to be a very big social business, like an Apple. Then everyone says, right, I’m not putting my money in a  ...[TRUNC 1342ch]
+
+[r502c13] row503 seq5 247w E_>200
+So here, just sketched, is the background against which to understand Sneed’s book. (Actually, it’s the context for understanding every book on every subject, if the master science argument holds. That “master science” argument goes like this: it is all of human inquiry, theoretical and practical, that forms and informs a person. Communities that aim toward complete accounts of the world and how to live in it are the only communities that can produce stable opinion and desire--expressive desire. There are many rival ways to do this, currently almost none of them tried. (PoP is becoming an exception, and there are others.) But until such communities flourish, and until M’s algorithm for profi ...[TRUNC 1574ch]
+
+[r506c6] row507 seq4 190w D_61-200
+Relate this to the enjoy/calculate duality, the lived experience side of a limited perspective/unlimited perspective duality, in a universe of conscious perspective, where Cs itself unifies, integrates, 'at-onces', but where focus on elements is possible, and limited perspective results; we are such limited perspective. Created being (created perspective) is driven into existence as a feature, an abstractable element, of uncreated conscious dynamism, dynamic not in time but in relation-space, in logic, but experienced (from a limited perspective) as the unfolding of ordered relations in (Eric Weinstein) our perceived shared experience as 3 - 1 space. (perceived, because not all consciousable ...[TRUNC 1327ch]
+
+[r511c5] row512 seq3 37w C_21-60
+moves so fast, it's hard to digest. A few nuggets: importantly, gets plato wrong, as a spartan, a pythagorean. Missing good readings of Phaedo and Republic. I've got to get an account of the Laws, Statesman, though.
+
+[r517c20] row518 seq8 20w B_6-20
+The thirteenth principle of modularity: Organisms that are ubiquitous are those with predictive behavior that are compatible with their environment.
+
+[r519c20] row520 seq8 139w D_61-200
+So in that context, any argument for particular moral stances, such as requiring respect for the sanctity of human life, will both have to include considerations from the moral law, and yet go beyond those considerations. Let us call an argument which is such that being able to reproduce it to the satisfaction of everyone else able to produce it, produces acceptance of its conclusion that no further consideration of additional, currently available considerations could unseat, a full justification for a conclusion. Such full justifications would be time-indexed, and person-indexed, amounting to the best arguments so far available for a given conclusion for a given person. It is possible that  ...[TRUNC 854ch]
+
+[r522c5] row523 seq3 98w D_61-200
+If the 4th or 5th, what would that case look like? In short: the Church is called to draw people into wise and loving order, so transforming this world. We are not succeeding, and in many ways hindering. There are prophetic voices, but also deeply bound and binding, rather than liberated and freeing, forces which are often most associated with what it means to be Catholic. This deep entanglement extends to both pastoral/leadership life, intellectual foundation, as well as to traditional teaching that unites the practical with the theoretical. All together, this is a skeleton case for reform
+
+[r522c9] row523 seq7 124w D_61-200
+So write the paper (Detecting the Sanctity of Human Life), make the case that in the intellectual realm, when it comes to the foundation of the natural moral law, we need a new, wholistic rational process that involves restructuring of the social information-processing motherboard and the beginning of a master science of the full natural law, not just the moral, but the whole. This is the new Summa project, the Summa in the sense of MacIntyre's reading of Aquinas, an exercise (then) in the integration of all of rational inquiry that needed a new social foundation for it to take root, which it lacked, and thus withered. We live in that withered after math...withered, not dead. But in serious  ...[TRUNC 751ch]
+
+[r530c4] row531 seq2 60w C_21-60
+McIntyre credits Peter Singer with having Sean that there are no contemporary justifications of treating human beings qua human has possessing some sort of special dignity. Any attempt to formulate a justification of that special moral status appeals to premises that are at least as controversial as their conclusion. This, at the 46 minute mark. Pull these quotes out carefully.
+
+[r533c5] row534 seq3 408w E_>200
+What then do you say about what seems to us like the external world; it certainly is external to our body, things happen to us that we do not plan, that we cannot control, or rather, some of the things that happen to us we can't control, and can instill order in the world of our own making; other order in the world we simply experience has not coming to us from our old making and not obviously from any other agents on making. But why suppose that we have a good grasp on what conscious agents there are? We have some preliminary indication that we do not have a good grasp on what conscious agents there are. If we've got 150,000 candidate cortical columns at work on the very same set of input,  ...[TRUNC 2311ch]
+
+[r560c3] row561 seq1 15w B_6-20
+William P Miller bio verse how the cellular world contains the secret to life's questions
+
+[r567c3] row568 seq1 79w D_61-200
+Nothing that I have said goes any way to show that a situation could not arise in which it proved possible to discover no rational way tosettle the disagreements between two rival moral and epistemological traditions, so that positive grounds for a relativistic thesis would emerge. But this I have no interest in denying. For my position entails that there are no successful a priori arguments which will  guarantee in advance that such a situation could not occur. AV2:277
+
+[r585c3] row586 seq1 188w D_61-200
+POP area improvement: two emphasis. 1) the essential core of our life in the spirit is not where it needs to be. We fall short on service and apostolic activity, just to grab two familiar terms. And to grow in this area, we must stop conflicting either of these with familiar charismatic evangelism. 2) shifting the essential core of our life in the spirit to where it ought to be requires a deep dive into the lives of people and problems which as a body we are generally unconnected with. The shift would require a substantial change in our pattern of life. 3) as we make the shift, we will need to strengthen a set of capabilities which have atrophy through our inward focus on our life hanging wi ...[TRUNC 1062ch]
+
+[r592c3] row593 seq1 9w B_6-20
+reading Kastrup (BK) on information-based physics from 2019: https://www.scientificamerican.com/blog/observations/physics-is-pointing-inexorably-to-mind/
+
+[r595c18] row596 seq11 183w D_61-200
+What do we mean by ‘cognition’? The short answer is we don’t know because we can’t agree, and unambiguous, biologically grounded proposals are effectively non-existent. Cognition—and where it is found in the natural world—has been an inexhaustably meaty bone of contention since (in ‘western’ culture) Aristotle (384–322 BCE), for whom animals marked a singular transition [35], and (in ‘eastern’ culture) the Rig Veda (1700–1000 BCE) and associated texts, many of which admitted cognition in plants [36]. Not so long ago, it was suggested that an adequate definition would be possible when we have sufficient data [37], but this is not how it has worked out. The data available even 20 years ago ‘al ...[TRUNC 1158ch]
+
+[r608c11] row609 seq5 4w A_frag<=5
+Steps toward implementing theoretically?
+
+[r609c5] row610 seq2 277w E_>200
+Taking Shettleworth as the jumping-off point, we offer the following working definition: Cognition comprises the sensory and other information-processing mechanisms an organism has for becoming familiar with, valuing, and interacting productively with features of its environment [exploring, exploiting, evading] in order to meet existential needs, the most basic of which are survival/persistence, growth/ thriving, and reproduction. [21, p. 416] This phyletically neutral definition specifies the adaptive value of cognition for an organism and has the additional virtue of differentiating cognition from metabolic functions, such as respiration, which arguably also employ mechanisms for acquiring ...[TRUNC 1910ch]
+
+[r613c4] row614 seq1 106w D_61-200
+Levin-McGilchrist conversation, and again, Levin Spivak 1: mathematical realities find expression, like solutions seeking problems, in evolution, in problem-solving. Random walks would take far too long. (Boy, does this sound like model projection, active inference, in the brain.) Sounds a lot like stephen wolfram: mathematical forms exist, play out in computationally irrediciblbe processes; got to look to find them, find their natures, and no amount of observation finally determines the nature of the pattern (as functions cannot be read from any finite or even any infinite plot expressing them. (Any plot may be incomplete...correct?....may not show all relevant features necessary to determi ...[TRUNC 725ch]
+
+[r615c6] row616 seq3 254w E_>200
+There seems to be something in a model of the whole which is conscious of the whole of which it is a model, and which thus springboards back to a now-differently and -better-understood whole. This seems to be an idea that wants find its way into articulation. I don't think it's the same as the sense that drew me to revisit this topic, which was more a need for a rigorous account of an instinct that I've long had. So let's watch for two things as we proceed here: an instinct, pressing itself in (perhaps from right to left in terms of brain functions), and perhaps separately a sense that such articulation should be more rigorous, clear, precise than I was able to muster (perhaps in parallel wi ...[TRUNC 1518ch]
+
