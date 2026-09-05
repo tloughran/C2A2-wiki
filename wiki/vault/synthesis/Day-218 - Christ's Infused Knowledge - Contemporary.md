@@ -10,13 +10,13 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy minimization; PRS-04 organism as active modeler — knowledge as iterative prediction-error reduction under bounded resources)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface theory — the empirical pathway constructs a serviceable world-model, not the totality)"
   - "refs/Karpathy wiki bridges.md (I Q.84-89 'how the soul knows' -> hoffman, hawkins, friston: phantasms <-> predictive coding; agent intellect <-> generative models)"
-  - "traditions/wright/prs_triplets.md (PRS-01 critical realism — perspectival, revisable knowing) [Wright primary on Christology, III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism — perspectival, revisable knowing)"
 evidence_strength_summary: "'Broken up knowledge of the world' acquired piecemeal under finite resources ~ bounded-rational active-inference learning = empirical/formal (strong) + central-theme (strong); Christ truly advanced in wisdom and learned through sense (Luke 2:52) even alongside infused knowledge = theological; the single divine sweep (knowing all in knowing oneself) vs. piecemeal finite knowing = the perspective-limitation contrast (strong analogy); infused vs. acquired as two distinct habits = theological/metaphysical."
 mind_first_reframe: "The acquired, 'broken up' knowledge of a finite mind is read as the default agent-under-scarcity mode — active inference building a world-model piece by piece by minimizing prediction error — so that 'advancing in wisdom' is the signature of a genuinely limited perspective, present in Christ even where infused knowledge is also present."
 central_theme_thread: "Aquinas's contrast between God's single sweep (in knowing Himself He knows all else) and our 'broken up knowledge of the world' is the perspective-limitation claim stated as an epistemology of resources: the limited agent never has the whole at once but assembles it under scarcity, and Christ's real acquired knowing honors that limited pathway from within."
 tags: [synthesis, day/218, theme/broken-up-knowledge-bounded-resources]
-last_qc_at: "2026-08-30T22:29:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T06:31:49"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 218 — Christ's Infused Knowledge (Contemporary Parallel)

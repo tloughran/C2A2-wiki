@@ -11,12 +11,12 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling) — a will aligning its generative model to a superordinate one without coercion"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociated point of view; PRS-08 the Daimon as principle of individuation) — one being holding a bounded will [metaphysical guardrail]"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing — both/and without collapse)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + Pauline corpus, Phil 2:6-13 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation) + Pauline corpus, Phil 2:6-13"
 evidence_strength_summary: "Two wills in one person with no contrariety = theological/formal grammar (the predication is rigorous within its terms); a limited will freely conformed to a superordinate will without coercion ~ active-inference model-alignment (Friston) = speculative-formal (medium); one being holding a bounded will ~ dissociation-without-fragmentation (Kastrup) = speculative-formal (medium); 'not as I will, but as thou wilt' running into Phil 2:12-13 = scriptural (Wright, strong); central-theme fit (conformed-but-free limited will) = strong."
 mind_first_reframe: "The conformed-but-free human will is read as a sub-agent freely aligning its own generative model to a superordinate one (active inference, Friston), not a will overridden — alignment that honors rather than erases the limited perspective."
 central_theme_thread: "A limited will that freely brings itself into accord with the One who sees the whole — 'not as I will, but as thou wilt' running into 'work out your salvation, for it is God who works in you' (Phil 2:12-13) — the project's banner stated as Christology."
 tags: [synthesis, day/221, theme/conformed-but-free-will]
-last_qc_at: "2026-08-31T04:26:50"
+last_qc_at: "2026-09-04T06:31:52"
 last_qc_outcome: "rewrote"
 ---
 

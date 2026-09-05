@@ -73,14 +73,14 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (active inference / FEP — embedded directedness; gestured in prose, not id-anchored)"
   - "wiki/traditions/carroll/wiki.md (poetic naturalism — the foil; and the conservative fourth member of the CROSS-002 roster)"
   - "wiki/traditions/arkanihamed/wiki.md (what physics treats as fundamental, post-spacetime)"
-  - "wiki/traditions/stump/prs_triplets.md (PRS-04 'P4 (Implicit) — Final causality and modern biology', Confidence Medium; Solution line opens 'A C2A2 integration claim (Loughran)' — Tom's claim on Stump's Thomism, not a move Stump makes. Interlocutor, not authority.)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-04 'P4 (Implicit) — Final causality and modern biology', Confidence Medium; Solution line opens 'A C2A2 integration claim (Loughran)' — Tom's claim on Stump's Thomism, not a move Stump makes, and cited here on that understanding.)"
   - "wiki/master/cross_program_index.md (CROSS-001 substrate-independence, roster of five — exact as cited; CROSS-002 spacetime-fundamental, roster of FOUR incl. Carroll; CROSS-100 equivocation verdict, 'do not upgrade' — supersedes the CROSS-002 convergence branch)"
   - "wiki/master/C2A2_master_wiki.md (FLAG-005 Stump × Levin, High, 'directly citable in DCEC paper draft'; FLAG-003 Kastrup × Friston, formal-equivalence CANDIDATE — cite by program pair, FLAG-003 is a duplicate id whose other entry is Hoffman × McGilchrist). NOT master/paradigm_flags.md, which holds only FLAG-001/002."
   - "wiki/traditions/wright/prs_triplets.md — node EXISTS (42 records), but searched 2026-08-26 for Acts 17 / Areopagus / Athens / Stoic / Epicurean with NO hit; canonical-work citation (*Paul and the Faithfulness of God*) stands on its merits. Recorded negative. Same for Exodus 3:14 / the divine name."
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ, Medium, *The Universal Christ* 2019 — divine pattern present in all creation; PRS-9 contemplative practice as operational pathway from perspective-limitation to inhabited loving unity, High). Note unpadded ids above 05."
 mind_first_reframe: "Aquinas's Five Ways are not five proofs of an external entity but five facets of how a perspective-limited conscious agent finds the structure of its own experience implying an unconditioned ground; God-as-existence-itself becomes mind-at-large as ontological primitive, with each finite perspective dissociated from but contained within it."
 central_theme_thread: "Q.1 a.7 — 'we cannot know what God is in himself; we know him by his effects' — is the apophatic acknowledgment that conscious agents are individuated by the limitations of their perspective; loving unity (Aquinas's beatific vision; Wright's covenant inclusion; Rohr's Universal Christ; Kastrup's reintegration into mind-at-large) is the computational telos that finite agents work toward through limited resources."
-last_qc_at: "2026-09-03T16:26:47"
+last_qc_at: "2026-09-04T04:21:24"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/002, theme/sacred-doctrine, theme/existence-of-god, theme/five-ways, theme/apophatic, theme/metaphysical-keystone]
 

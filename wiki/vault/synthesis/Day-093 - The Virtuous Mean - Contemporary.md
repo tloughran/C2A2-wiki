@@ -4,8 +4,8 @@ title: The Virtuous Mean (Contemporary)
 pairs_with: "[[Day-093 - The Virtuous Mean]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1261
-length_ratio_to_target: 0.841
+length_actual_words: 1739
+length_ratio_to_target: 1.159
 karpathy_wiki_sources:
   - "stump/prs_triplets.md — PRS-24 (acquired vs infused virtue: the practice-built track), PRS-09 (virtue as cooperative causality) [corrected 2026-08-16 from PRS-04, which is the final-causality-and-modern-biology entry and carries no virtue claim]"
   - "fredrickson/prs_triplets.md — PRS-02 (love as measurable neurophysiological synchrony; the coupling mechanism). Broaden-and-build cited to Fredrickson's corpus: it has no numbered entry in this register."
@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under conscious-realist monism the 'mean of virtue' is the optimal action-and-affect policy of a perspective-limited agent under its constraints; formalized as active-inference precision-weighting, Aquinas's real/rational-mean bifurcation (Q.64.2) maps onto exogenous vs. endogenous precision-dominated optimization, and 'right reason' names the agent's best policy under its commitments and situation — normative because the underlying mind-stuff itself has normative structure. The connection-of-virtues (Q.65) becomes a network-topology fact: prudence hubs the natural network, charity hubs the infused network."
 central_theme_thread: "The perspective-limited agent's computation toward loving unity is constrained at every step by what it can perceive and feel; the mean is the good policy under those constraints, and the connection of the virtues is the network-fact that good policies couple — cut one and the rest drift. We work out salvation in fear and trembling because the disposition-network is fragile and no agent can hold it coherent alone — hence the need for community and for contemplative testimony to charity's hub-role."
 evidence_strength_summary: "The 'mean of virtue' as objective-rule (justice) vs. agent-state-sensitive (temperance, fortitude) bifurcation is well captured by Friston's distinction between exogenous and endogenous precision-weighting — empirically robust. The connection-of-virtues network claim has formal-network support and partial empirical support from coupled-trait psychometrics. Theological-virtue claims about charity-as-integration-hub are Wright/Rohr territory — historiographically and contemplatively grounded, not natural-science-empirical."
-last_qc_at: "2026-08-28T06:22:51"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T20:19:24"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/093, theme/mean-of-virtue, theme/connection-of-virtues, theme/charity-as-hub]
 ---
 

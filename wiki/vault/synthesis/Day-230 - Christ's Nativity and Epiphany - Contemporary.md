@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-06 democratizing participation — all capable of resonance participate; PRS-09/10 weak-tie cross-category connection) — manifestation to every condition 'that none be excluded'"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern present in and to all)"
   - "traditions/kastrup/prs_triplets.md (PRS-08 the Daimon as principle of individuation) — nativity regards the person, the individuated locus [metaphysical guardrail]"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology) + Luke 2, Matt 2, Heb 11:1 [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology) + Luke 2, Matt 2, Heb 11:1"
 evidence_strength_summary: "Nativity regards the person (Theotokos), not the nature = theological/formal grammar of personhood; manifestation to representatives of every condition 'that none be excluded' ~ radical inclusivity / democratized participation (Fredrickson PRS-06, PRS-09/10) and the Universal Christ (Rohr PRS-03) = the loving-unity telos as inclusion (theological + speculative-formal, medium); faith preserved by partial manifestation ~ the perspective-limitation premise (we are not given the whole) = central-theme structural fit (strong); the person as individuated locus ~ Daimonic individuation (Kastrup PRS-08) = speculative-formal (medium); Theotokos / Gentiles-grafted-in / 'faith is the evidence of things not seen' = scriptural (Wright, strong)."
 mind_first_reframe: "The manifestation is read as the whole made known under limitation (faith preserved by partial vision = the perspective-limitation premise) yet to every category of limited perspective (radical inclusion / democratized participation, Fredrickson; Universal Christ, Rohr); nativity regards the individuated person."
 central_theme_thread: "Both halves of the central claim at once: the whole is not flooded to all (faith = computing toward the unseen whole), yet is made known to every kind of limited perspective 'that none be excluded' — loving unity as radical inclusion of persons, not absorption."
 tags: [synthesis, day/230, theme/the-whole-made-known-to-every-limited-perspective]
-last_qc_at: "2026-08-30T22:29:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T06:31:52"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 230 — Contemporary Parallel: The Whole Made Known to Every Limited Perspective

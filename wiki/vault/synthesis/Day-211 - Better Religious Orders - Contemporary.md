@@ -8,7 +8,7 @@ length_ratio_to_target: 0.93
 length_tier: medium
 length_note: "Runs ~14% under medium target (within ±25%) by design: Q.187-188 (a.6-8) are covered through their three generative threads — plural-orders/one-telos, 'better' as propagation of loving union, and the solitary-vs-communal boundary-scaffold — without padding the remaining article-by-article material. Short-and-substantive per the length policy. Restated 2026-08-31 by reviewer pass: the '~14% under' figure is now stale — an independent recount put the pre-pass body at 1912 (0.869) and this pass took it to 2046/0.930, so the file runs ~7% under target and is inside ±10%. The design rationale above still holds; only the arithmetic moved. The ~135 added words are citation apparatus with no claim added, removed or reweighted: the id-less Wright reference was anchored to PRS-13, and McGilchrist PRS-01 and Kastrup PRS-02 were restated at their own Confidence High with the solitary/communal transposition marked as this commentary's analogy."
 karpathy_wiki_sources:
-  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual unity-in-distinction; PRS-02 order-disorder-reorder; PRS-03 the Universal Christ — one pattern, many expressions) [Rohr primary on the contemplative life, II-II Q.171-189]"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual unity-in-distinction; PRS-02 order-disorder-reorder; PRS-03 the Universal Christ — one pattern, many expressions)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry and cultural impoverishment — right hemisphere primary, left parasitic on what it first discloses; empirical neuroscience at Confidence High, scoped to modern Western culture rather than to a single agent in solitude, so the solitary/communal application below is this commentary's extension. PRS-03 team/game — plural modes both needed for one inquiry, Confidence Medium)"
   - "traditions/wright/prs_triplets.md (PRS-13 salvation as inclusion in the covenanted people united with God, God's Homecoming — Confidence High; the record behind the claim that 'sharing the fruits' is the form charity takes when it is real, not optional ornament)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociative boundary — the solitary/communal question)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Religious state = training-school for the perfection
 mind_first_reframe: "A religious order is one stable allocation of a finite agent's attention and labor toward the single telos of loving union; the plurality of orders is the plurality of partial perspectives that the one good can be pursued from, and an order is 'better' not by rank on a ladder but by how fully the loving union it attains overflows into other perspectives — contemplation received and then transmitted."
 central_theme_thread: "Each order individuates a perspective on the one loving-union telos; 'better' tracks how far that union propagates beyond the agent who attains it; and the whole apparatus of states remains scaffold, never the charity it is built to grow."
 tags: [synthesis, day/211, theme/many-orders-one-telos]
-last_qc_at: "2026-08-31T02:34:38"
+last_qc_at: "2026-09-04T06:31:47"
 last_qc_outcome: "rewrote"
 ---
 

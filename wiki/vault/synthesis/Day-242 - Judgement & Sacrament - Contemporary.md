@@ -14,11 +14,11 @@ karpathy_wiki_sources:
   - "SCOPE NOTE on the judgement half: all 41 Wright records read (2026-08-31). The register holds NO judgement-as-rectification / setting-right triplet — the nearest are PRS-05, PRS-11 and PRS-30, which establish the new-creation frame the setting-right reading presupposes but do not state it. The judgement claim is therefore carried by that frame plus Wright's published work, and the gap is named rather than papered over with a near-miss id."
 evidence_strength_summary: "Judgement-as-restoration theological (Wright); sign-that-effects read formal (Friston active inference); efficient causality across signs metaphysical; central-theme claim speculative."
 length_ratio_to_target: 0.545
-length_note: "Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2879 words, medium band), so this is not a mistiering. The largest single repair in this queue sits here: three Bridges bullets (Wright, Rohr, Stump) carried NO PRS/CROSS/FLAG id at all and cited traditions/wright/wiki.md and traditions/rohr/wiki.md, the stale canonical-works fallback — both registers now exist (41 and 44 records). Anchoring them, and stating the one genuine absence found (no judgement-as-setting-right triplet in the Wright register), is what moved the count. The replaced note was a template also appearing on Days 241 and 243-246."
+length_note: "Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2879 words, medium band), so this is not a mistiering. The largest single repair in this queue sits here: three Bridges bullets (Wright, Rohr, Stump) carried NO PRS/CROSS/FLAG id at all and cited the Wright and Rohr wiki nodes rather than their PRS registers, the stale canonical-works fallback — both registers now exist (41 and 44 records). Anchoring them, and stating the one genuine absence found (no judgement-as-setting-right triplet in the Wright register), is what moved the count. The replaced note was a template also appearing on Days 241 and 243-246."
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-08-31T08:26:16"
+last_qc_at: "2026-09-04T08:23:58"
 last_qc_outcome: "rewrote"
 ---
 

@@ -12,14 +12,14 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md (downward spiral; broaden-and-build)"
   - "traditions/levin/prs_triplets.md (PRS-67 adaptive plasticity; PRS-32 bioelectric scaling; PRS-21 minimal thinkers — searched and ruled out for the closing-window claim, which is carried on the literature)"
   - "traditions/stump/prs_triplets.md (PRS-22 seven deadly sins as typology of disordered will; the culpability ranking itself has no register home)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into a people; PRS-34 table fellowship as the operative test of belonging); traditions/rohr/wiki.md (first-half-of-life appetite)"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into a people; PRS-34 table fellowship as the operative test of belonging); traditions/rohr/prs_triplets.md (PRS-54 the egoic self as obstacle, together with the register's own warning that the two-halves frame is widely misread as a stage theory keyed to age — the misreading this day's 'childish' language most invites; PRS-37 descent as the transition mechanism; repointed at QC 2026-09-04 from the stale canonical-works fallback)"
   - "master/cross_program_index.md (CROSS-003 attention cluster)"
 evidence_strength_summary: "Intemperance-as-runaway-precision / habit-hardening = formal-speculative with developmental-plasticity support (medium); the culpability-by-voluntariness argument = philosophical; insensibility-as-defect against nature = philosophical/theological."
 mind_first_reframe: "Intemperance is a runaway endogenous prior — a self-reinforcing appetitive set-point the agent trained and could have retrained — and insensibility its mirror suppression of necessary set-points; the 'childish' label marks the developmental fact that the loop hardens as plastic windows close."
 central_theme_thread: "This article shows perspective-limitation is not static but self-deepening: by its own repeated acts an agent contracts its field until the petty fills it and the whole is lost — formation runs whether or not we attend to it."
 tags: [synthesis, day/189, theme/maladaptive-habit]
-last_qc_at: "2026-09-01T18:31:33"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T08:23:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 189 — Childish Vice (Contemporary Parallel)

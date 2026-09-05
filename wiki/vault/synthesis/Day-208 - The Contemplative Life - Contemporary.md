@@ -7,7 +7,7 @@ length_actual_words: 2193
 length_ratio_to_target: 0.997
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual unity-in-distinction; PRS-04 embodied love as epistemology — contemplation that ignites love) [Rohr PRIMARY on contemplation per bridges file]"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual unity-in-distinction; PRS-04 embodied love as epistemology — contemplation that ignites love)"
   - "traditions/kastrup/prs_triplets.md (PRS-09 representation vs participatory encounter; PRS-02 individuation as dissociative boundary — rapture as transient relaxation)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-09 participatory realism, attention as love; PRS-01 receptive vs manipulative modes; PRS-07 division and union)"
   - "traditions/hoffman/prs_triplets.md (PRS-03/PRS-04 mediated knowing via the interface — progressive abstraction vs immediate/angelic knowing)"
@@ -18,8 +18,8 @@ evidence_strength_summary: "Contemplation engages intellect AND affection (the k
 mind_first_reframe: "Contemplation is a limited perspective being progressively informed by — and in the same act drawn in love toward — the whole that exceeds it; the many-act human ascent is inference up a mediating interface toward the near-unmediated vision (reached here only transiently, in rapture), and the active life terminates at its goal while the loving contemplation remains."
 central_theme_thread: "The resource-bounded computation toward loving unity halts when limitation is removed and the simple whole is seen: the active life — the working-out 'in fear and trembling' under scarcity — is terminal, while the contemplative vision of the whole, communal in its final form, is what is 'not taken away.'"
 tags: [synthesis, day/208, theme/contemplation-as-the-telos]
-last_qc_at: "2026-08-30T22:29:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T06:31:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 208 — The Contemplative Life (Contemporary Parallel)

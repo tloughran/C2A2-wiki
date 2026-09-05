@@ -8,7 +8,7 @@ length_ratio_to_target: 0.948
 length_tier: medium
 length_note: "Q.184 states the project's telos almost verbatim (perfection = charity = loving union), and Q.185 applies it; the synthesis runs to the full medium tier to give the capstone article (a.1-a.4) its PRS treatment and to handle the episcopal-office material in brief. (Reviewer 2026-08-30: the note previously read 'runs slightly long', which was directionally wrong — an independent recount of the body prose gives 2080 words, 0.945 of the 2200 target, i.e. slightly UNDER and inside +/-10%. No length defence is actually required here.)"
 karpathy_wiki_sources:
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — 'seeing God in all things'; PRS-01 non-dual unity-in-distinction; PRS-02 order-disorder-reorder) [Rohr primary on the contemplative/cosmic-Christ reframe]"
+  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — 'seeing God in all things'; PRS-01 non-dual unity-in-distinction; PRS-02 order-disorder-reorder)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as a real category, not sentiment — charity as the perfection)"
   - "traditions/friston/prs_triplets.md (PRS-04 precision-weighted attention under resource scarcity — the 'distraction' that keeps charity unfocused in this life)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation as dissociative boundary — the limit-removal completed only beyond this life)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Perfection = attaining the proper end = charity ~ lo
 mind_first_reframe: "The perfection of a limited perspective is its loving union with the whole — the completion-category of a relational being, not a capability; it is partial now because a finite agent must divide attention/precision under resource scarcity ('distraction'), and complete only when the individuating boundary is transfigured, not by more effort within it."
 central_theme_thread: "Perfection is charity — loving union worked out asymptotically against a divided attention 'in fear and trembling' — measured in the heart and not the office, so the state of perfection only scaffolds the essence toward the day when every limited perspective is at last contained in the simple whole it loves."
 tags: [synthesis, day/210, theme/perfection-is-loving-union]
-last_qc_at: "2026-08-30T22:29:14"
+last_qc_at: "2026-09-04T06:31:46"
 last_qc_outcome: "rewrote"
 ---
 

@@ -10,13 +10,13 @@ length_tier: medium
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — one consciousness holding a bounded alter's point of view; mind-at-large AND the finite perspective at once)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface theory) + master/cross_program_index.md (CROSS-013 conscious-agent integration — agents integrate into higher-order unified agents, confirmed by McGilchrist split-brain data)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; the Phil 2 kenosis hymn + 'fear and trembling' Phil 2:12) [Wright primary on Christology, III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; the Phil 2 kenosis hymn + 'fear and trembling' Phil 2:12)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing — holding both/and without collapse; PRS-03 the Universal Christ)"
 evidence_strength_summary: "Christ as wayfarer AND comprehensor at once ~ the bridge figure who perceives the whole while inhabiting the limited, suffering perspective = central-theme (strongest of the five) + theological; one mind spanning the comprehensive and the limited ~ dissociation-without-fragmentation (Kastrup) / conscious-agent integration (Hoffman/CROSS-013) = speculative-formal (medium); the communication of idioms (predication across two natures of one person) = theological/formal grammar; defects of soul (real sorrow/fear, no sin) freely borne = theological; Phil 2 anchor = scriptural (Wright)."
 mind_first_reframe: "Wayfarer-and-comprehensor is read as one mind genuinely spanning the comprehensive whole-vision and the limited road-walking perspective at once — a non-dual holding (Rohr) and a dissociation-without-fragmentation (Kastrup) — the very structure the project posits for the divine guide who perceives more yet walks with us."
 central_theme_thread: "This is the project's keystone figure stated in Aquinas's own terms: the one who already beholds the whole (comprehensor) while still inhabiting the limited, suffering perspective (wayfarer) is the divine guide of Phil 2 who 'perceives more of the whole than we do' yet works out the road 'in fear and trembling' alongside us."
 tags: [synthesis, day/220, theme/wayfarer-and-comprehensor]
-last_qc_at: "2026-08-31T04:26:49"
+last_qc_at: "2026-09-04T06:31:51"
 last_qc_outcome: "rewrote"
 ---
 

@@ -10,13 +10,13 @@ length_note: "Recounted 2026-08-31 before any edit: the stored 1422 was the coun
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 conscious realism — consciousness primary; PRS-03 interface theory — perception tracks fitness, not the whole truth) [Hoffman/Kastrup lead on the epistemic locus per the guardrail]"
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — a real but bounded point of view within mind-at-large)"
-  - "traditions/wright/prs_triplets.md (PRS-01 critical realism — all knowing is perspectival yet tests against reality) [Wright primary on Christology, III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism — all knowing is perspectival yet tests against reality)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual/apophatic knowing — unity-in-distinction without collapse)"
 evidence_strength_summary: "A created finite mind beholds the divine essence truly yet does NOT comprehend it ~ the highest finite perspective sees the whole really but not exhaustively = central-theme (strong) + theological; perspective-boundedness as what individuates a knower (interface, dissociated alter) = speculative-formal (medium); the beatific vision claim itself = theological; critical realism (perspectival-but-real knowing) = philosophical (strong)."
 mind_first_reframe: "Beholding-without-comprehending is read as the constitutive structure of any created knower: to be a finite perspective is to know the whole truly yet never to contain it — Hoffman's interface and Kastrup's dissociated alter make perspective-boundedness the very condition of being an individual knower, not a defect awaiting removal."
 central_theme_thread: "Q.10's distinction between beholding and comprehending is the central claim in its purest form: even the summit of finite knowing — Christ's human soul seeing the divine essence — sees the simple whole really and yet, being finite, does not exhaust it; perspective-limitation is constitutive even at the top."
 tags: [synthesis, day/217, theme/behold-not-comprehend]
-last_qc_at: "2026-08-31T04:26:22"
+last_qc_at: "2026-09-04T06:31:49"
 last_qc_outcome: "rewrote"
 ---
 

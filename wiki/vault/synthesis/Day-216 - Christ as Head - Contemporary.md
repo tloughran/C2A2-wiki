@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love as objective neurophysiological coupling; PRS-03 positivity resonance scale-bridging cells -> organisms -> communities -> traditions)"
   - "traditions/friston/prs_triplets.md (PRS-01 free-energy minimization; PRS-04 organism as active modeler) [Markov-blanket nesting of bodies-within-bodies]"
   - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern present in all creation; PRS-04 embodied love as epistemology)"
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home) [Wright primary on Christology, III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home)"
   - "master/cross_program_index.md (CROSS-005 love/union as a fundamental category — Fredrickson/Stump/Kastrup)"
 evidence_strength_summary: "Capital grace as a head's influx into its members ~ the loving-unity-of-perspectives telos enacted = central-theme (strong) + theological; love/positivity resonance as a measurable coupling mechanism that scales dyad -> group ~ the biological echo of capital grace = empirical (strong) at small scale, extrapolated (medium) to communities/traditions; the body of Christ as a nested multi-scale agent ~ Markov-blanket nesting = formal analogy (medium); Christ as Head of all men and angels (cosmic headship) = theological."
 mind_first_reframe: "Capital grace — the influx by which the Head communicates its fullness to the members — is read as a coupling-and-nesting picture: love as a measurable resonance that knits limited perspectives into one higher-order body, the whole's fullness flowing into its parts and incorporating them rather than a juridical transfer of merit."
 central_theme_thread: "The grace of headship is the loving-unity computation made visible: a whole, fuller perspective pouring its fullness into limited members and binding them into one body united with God — exactly the telos toward which each limited agent computes, here flowing from the Head who already contains the whole."
 tags: [synthesis, day/216, theme/capital-grace-fullness-to-members]
-last_qc_at: "2026-08-31T04:25:55"
+last_qc_at: "2026-09-04T06:31:48"
 last_qc_outcome: "rewrote"
 ---
 

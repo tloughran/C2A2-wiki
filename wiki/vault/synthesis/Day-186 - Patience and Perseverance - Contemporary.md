@@ -12,14 +12,14 @@ karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/stump/prs_triplets.md (PRS-18 suffering defeated through union, mourning still warranted; PRS-09 virtue as cooperative causality)"
-  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-02 faithful improvisation); traditions/rohr/wiki.md (order-disorder-reorder)"
+  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-02 faithful improvisation); traditions/rohr/prs_triplets.md (PRS-02 the disorder necessary for growth — order-disorder-reorder; PRS-29 how agency is sustained when no path to a preferred outcome is visible, which is perseverance stated as the register poses it; repointed at QC 2026-09-04 from the stale canonical-works fallback)"
   - "master/cross_program_index.md (CROSS-003 attention cluster)"
 evidence_strength_summary: "Broaden-and-build = empirical (high); active inference as persistence-policy = formal/medium; the gift-of-perseverance claim = theological, not empirical."
 mind_first_reframe: "Patience and perseverance are one self-regulatory competence viewed along two axes — holding a far-horizon goal-prior above the narrowing pull of sorrow (affect) and across the decay of delay (time)."
 central_theme_thread: "Perseverance is the name for working out salvation in fear and trembling under temporal scarcity — a limited perspective computing toward loving unity across time it cannot compress, aware of its need for guidance from one who perceives more of the whole."
 tags: [synthesis, day/186, theme/persistence-under-time]
-last_qc_at: "2026-09-01T18:31:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T08:23:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 186 — Patience & Perseverance (Contemporary Parallel)

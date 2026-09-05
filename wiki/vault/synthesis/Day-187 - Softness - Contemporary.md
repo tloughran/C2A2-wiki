@@ -12,14 +12,14 @@ karpathy_wiki_sources:
   - "traditions/friston/wiki.md (PRS-04 organism as active modeler; precision-weighting)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/stump/prs_triplets.md (PRS-22 seven deadly sins as typology of disordered will — esteem as the good vainglory misorders)"
-  - "traditions/wright/prs_triplets.md (PRS-16 integrated pneumatology; PRS-02 faithful improvisation); traditions/rohr/wiki.md (first-half-of-life ego)"
+  - "traditions/wright/prs_triplets.md (PRS-16 integrated pneumatology; PRS-02 faithful improvisation); traditions/rohr/prs_triplets.md (PRS-37 descent as the transition mechanism out of the first half of life, and the register's own claim that it is failing at scale in the modern West; PRS-16 the disordered loves treated without reducing to 'ego is bad'; repointed at QC 2026-09-04 from the stale canonical-works fallback)"
   - "master/cross_program_index.md (CROSS-003 attention cluster)"
 evidence_strength_summary: "Habituation-to-pleasure as runaway precision = formal/speculative; broaden-and-build downward spiral = empirical/medium-high; gift of fortitude = theological."
 mind_first_reframe: "Softness and pertinacity are the two precision pathologies of a self-regulating agent — under-weighting the goal-prior (yielding to gentle pressure) and over-weighting the self-prior (clinging past reason) — and the gift of fortitude is firmness supplied from beyond the agent's own resources."
 central_theme_thread: "Softness is what it looks like when an individuated agent's perspective collapses to its immediate resources and loses the whole; the cure is not more grit but a gift from one who sees and wills more than the limited frame can — 'fear and trembling' read from the side of our insufficiency."
 tags: [synthesis, day/187, theme/regulatory-failure]
-last_qc_at: "2026-09-01T18:31:15"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T08:23:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 187 — Softness (Contemporary Parallel)

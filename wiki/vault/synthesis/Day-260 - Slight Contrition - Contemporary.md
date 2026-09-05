@@ -9,14 +9,14 @@ length_ratio_to_target: 0.683
 length_note: "Compact by design: Suppl. Q.3–5 develops the single threshold-and-disproportion motif (minimal turn met by grace); substance complete per the five-question review. Recount at QC 2026-08-17: the 816 figure verified exactly against the body before this run's edit — the one-directional understatement defect does NOT fire here; 816 -> 1024 (0.544 -> 0.683) is this run's bridge-anchoring text, not a correction."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference; threshold-crossing in evidence accumulation)"
-  - "traditions/rohr/wiki.md (Universal Christ; grace exceeding the measure of the act)"
+  - "traditions/rohr/prs_triplets.md (cited at canonical Rohr for grace-exceeding-the-measure and DELIBERATELY UNANCHORED: PRS-03 warrants multi-tradition inquiry rather than disproportion, and PRS-30 answers transmission rather than disproportion, so the register has no disproportion-of-grace entry — see the Bridges bullet, which states the declination in full; the file pointer was corrected at QC 2026-09-04 from the stale canonical-works fallback, and the declination itself is unchanged)"
   - "traditions/wright (the minimal true turn sufficing for inclusion)"
 evidence_strength_summary: "Threshold-crossing / minimal-sufficient-evidence is formal (Friston); grace exceeding the act's measure is theological (Rohr); the sufficiency of a minimal true turn is scriptural-theological (Wright)."
 mind_first_reframe: "Slight contrition suffices when a genuine minimal turn crosses the threshold into a changed disposition (Friston evidence-accumulation), and the remission exceeds the act because grace, already present (Rohr's Universal Christ), meets the smallest true turn with more than its measure."
 central_theme_thread: "The whole accepts even a maximally limited perspective's smallest true turn: loving unity is a computation under limited resources, and for a perspective with almost none the requirement is a genuine turn, not a large one — 'salvation as inclusion' shown gracious at its lower bound."
 tags: [synthesis, day/260, theme/minimal-turn-met-by-grace]
-last_qc_at: "2026-08-31T16:22:57"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T08:23:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 260 — Slight Contrition (Contemporary Parallel)

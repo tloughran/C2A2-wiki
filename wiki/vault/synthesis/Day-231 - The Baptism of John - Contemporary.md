@@ -8,7 +8,7 @@ length_ratio_to_target: 0.613
 length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-02 faithful improvisation) [Wright primary on Christology III Q.1-59]"
+  - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-02 faithful improvisation)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 the Universal Christ)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
   - "master/cross_program_index.md (CROSS-004 second-first-language competence — Stump/McGilchrist/Fredrickson)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updati
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-08-30T22:29:17"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-04T06:31:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 231 — Contemporary Parallel: The Forerunner and the Formation of Readiness

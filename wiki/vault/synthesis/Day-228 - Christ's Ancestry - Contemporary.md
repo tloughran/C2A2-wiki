@@ -14,10 +14,10 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology) — Thomistic interlocutor receiving the monist reframe"
   - "traditions/wright/prs_triplets.md (PRS-52 the Davidic-royal base sense of 'Son of God' as platform for the eternal-identity escalation, added 2026-09-01, Confidence Medium, audio unretrieved) + Rom 1:3, Gal 4:4-6"
 evidence_strength_summary: "Soul informing matter at conception / hylomorphism = theological-metaphysical (Aquinas's frame); form imposed on matter and scaling across levels ~ morphogenetic control + the morphological attractor formalism (Levin) = empirical-as-biology (planaria/xenobots), applied to the Incarnation by analogy (medium); morphogenesis as free-energy minimization (Friston, CROSS-006) = formal; final causality framing real teleology (Stump/CROSS-008) = theological/formal; the active principle attributed to the Spirit who is Love ~ love as objective coupling (Fredrickson PRS-02) = empirical-as-physiology applied speculatively (medium); 'descended from David... born of woman' = scriptural (Wright, strong); central-theme fit (form-bearing matter; the active principle as Love at the origin) = medium-strong."
-mind_first_reframe: "The informing of matter at conception is read as form-bearing matter — form as a real, causally efficacious organizer scaling onto matter (morphogenetics, Levin) — with the active principle, the Spirit who is Love, as the organizing coupling (guardrail: Levin/Friston/Fredrickson lead, Stump interlocutor)."
+mind_first_reframe: "The informing of matter at conception is read as form-bearing matter — form as a real, causally efficacious organizer scaling onto matter (morphogenetics, Levin) — with the active principle, the Spirit who is Love, as the organizing coupling. The morphogenetic and free-energy records carry the informing; Stump's record is cited for the reading of final causality, not for that frame."
 central_theme_thread: "Form-bearing matter organized by Love places the loving-unity telos at the very origin of the Incarnation; the 'rounding out' of the modes of human origin reads as the whole completing the limited forms it contains."
 tags: [synthesis, day/228, theme/form-bearing-matter-and-love-as-active-principle]
-last_qc_at: "2026-09-02T08:23:47"
+last_qc_at: "2026-09-04T04:21:30"
 last_qc_outcome: "rewrote"
 ---
 
