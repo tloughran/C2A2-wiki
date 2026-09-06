@@ -1,1 +1,1 @@
-2026-09-04T10:15Z  PASS  telemetry=2026-09-04/33 agents  node_edges=2026-09-04  | DB age 9h
+2026-09-05T21:02Z  FAIL  step2 extractors — sandbox cannot run them: 6.1GB DB exceeds local disk (4.3GB free), full events scan over FUSE mount exceeds 180s bash cap, background procs die at call end (prior Mac-wrapper PASS 2026-09-05T10:30Z still stands; feeds dated 2026-09-05) | DB age 2h
