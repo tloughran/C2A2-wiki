@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "master/cross_program_index.md CROSS-005 (is love/positivity resonance/union a fundamental category? — Fredrickson, Stump, Kastrup)"
 evidence_strength_summary: "Q.32 a.4's claim that sorrow is the accidental cause of pleasure is empirically well-grounded — bittersweet emotional research (Frijda, Larsen) confirms mixed valence; Q.32 a.5 on praise/honor maps onto Fredrickson's high-quality listening evidence (PRS-08, high confidence); Q.33 a.3 on pleasure hindering reason is empirically supported (attentional narrowing). Theological move on universal participation in being is speculative-but-coherent."
 tags: [synthesis, day/077, theme/delightful-sorrow, theme/mixed-valence]
-last_qc_at: "2026-08-29T10:26:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-05T13:56:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 77 — Delightful Sorrow (Contemporary)
@@ -63,7 +63,7 @@ The central claim — that conscious agents are individuated by perspective-limi
 
 ## Bridges
 
-- **Friston PRS-06 (multi-agent coherence)** — collective active inference frames *shared* mourning (Q.32 a.5, Q.32 a.6) as alignment of generative models around a shared model-state; *empirical, growing literature*.
+- **Friston PRS-06 (multi-agent coherence)** — collective active inference frames *shared* mourning (Q.32 a.5, Q.32 a.6) as alignment of generative models around a shared model-state; *empirical, growing literature* — though PRS-06 itself is an Implicit-source, Medium-confidence record, so the grade describes the multi-agent active-inference literature, not this entry.
 - **Fredrickson PRS-08, PRS-09, PRS-10** — high-quality listening (Q.32 a.5 praise/honor) and weak-tie connection as the empirical mechanism for Aquinas's "pleasure from being-known"; *empirical, high confidence*.
 - **PRS-05 in the McGilchrist-tradition wiki (attention as ontological act)** — Q.33 a.3 (pleasure hinders reason) as affective gain on precision-weighting; the entry's claim that the *mode* of attention shapes what kind of world is disclosed is the general form of which the pleasure-narrowing is one case; *formally suggestive*.
 - **PRS-02 + PRS-07 in the Kastrup-tradition wiki (dissociated alters; the dissociative boundary as clinically variable)** — grief as alter-loosening admits more of mind-at-large. PRS-02 supplies the individuation claim; PRS-07 is the entry that treats the boundary itself as something that can be disturbed and shifted, which is what "loosening" requires; *speculative metaphysical*, theologically congruent.

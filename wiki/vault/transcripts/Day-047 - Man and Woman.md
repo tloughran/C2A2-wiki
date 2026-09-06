@@ -15,7 +15,7 @@ fetched_at: 2026-05-05
 fetch_path: "tactiq.io via Chrome MCP (catch-up batch)"
 synthesis: "[[Day-047 - Man and Woman - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-28T16:22:02"
+last_qc_at: "2026-09-05T01:24:49"
 last_qc_outcome: "pass"
 render_pass: auto-catchup-2026-05-05
 tags: [summa, day/047, pars/I]

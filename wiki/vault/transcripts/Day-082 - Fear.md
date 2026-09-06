@@ -17,7 +17,7 @@ synthesis: "[[Day-082 - Fear - Contemporary]]"
 # Note: passes with advisory warnings only; editorial-paraphrase style flagged for Tom in 2026-05-15T04:29 QC log
 fidelity_checked: true
 tags: [summa, day/082, pars/I-II, q/42, q/43]
-last_qc_at: "2026-08-16T04:19:40"
+last_qc_at: "2026-09-05T17:43:23"
 last_qc_outcome: "pass"
 ---
 

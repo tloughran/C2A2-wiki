@@ -15,8 +15,8 @@ fetched_at: 2026-05-02
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com)
 synthesis: "[[Day-064 - Willful Ignorance - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-14T11:57:57"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-05T09:36:25"
+last_qc_outcome: "pass"
 render_pass: auto-initial-2026-05-02  # auto-rendered; needs human/QC pass for article-block headers, prose smoothing, and Notes section
 tags: [summa, day/064, pars/I-II, q/6, q/7]
 ---
