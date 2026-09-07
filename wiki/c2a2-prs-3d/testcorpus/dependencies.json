@@ -1,7 +1,7 @@
 {
   "_meta": {
     "phase": "Step 1 Phase B - hand-labelled dependency gold set",
-    "labelled_on": "2026-09-01",
+    "labelled_on": "2026-09-07",
     "labelled_by": "Claude (Cowork), from the published record; every row states its own basis",
     "purpose": "A fixed answer key for the two paradigm cases (quantum mechanics 1900-1932, deep learning 2012-2025), so that any candidate method for detecting semantically meaningful and plausibly causal connections can be scored instead of admired. The lexical Jaccard scorer already in extract_prs_data.py is the baseline it has to beat.",
     "field_notes": {
@@ -118,7 +118,7 @@
       "status": "attested",
       "textual": "partial",
       "cue": "neither is compatible with special relativity, so spin has to be inserted by hand",
-      "basis": "Pauli's fourth quantum number, and Pauli's own 1927 spin matrices, are the hand-inserted spin Dirac's equation makes unnecessary. Dirac's problem sentence states it. RELABELLED expressed -> partial on 2026-09-01 after measuring: the dependency is expressed on the TARGET side only. Dirac's problem names spin; Pauli's entry never uses the word, calling its own contribution 'a fourth two-valued quantum number' (which is Pauli's own formulation - spin is Uhlenbeck and Goudsmit). No text-matching method can join two entries that share no expression of the thing being handed over, so scoring this as a recoverable miss would have blamed the method for the corpus."
+      "basis": "Pauli's fourth quantum number, and Pauli's own 1927 spin matrices, are the hand-inserted spin Dirac's equation makes unnecessary. Dirac's problem sentence states it. RELABELLED expressed -> partial on 2026-09-07 after measuring: the dependency is expressed on the TARGET side only. Dirac's problem names spin; Pauli's entry never uses the word, calling its own contribution 'a fourth two-valued quantum number' (which is Pauli's own formulation - spin is Uhlenbeck and Goudsmit). No text-matching method can join two entries that share no expression of the thing being handed over, so scoring this as a recoverable miss would have blamed the method for the corpus."
     },
     {
       "source": "quantum-PRS-07",
@@ -254,6 +254,15 @@
       "textual": "unexpressed",
       "cue": "",
       "basis": "RULED OUT as a dependency of any kind: 112 years and no causal path. It is the archetype of the third edge type the schema still lacks - ANALOGICAL, same structural role in two traditions, explicitly non-causal. All six of the fixture's cross-epoch connections are currently typed synergistic, which asserts a shared resource that does not exist. This row is the one to point at when that retype lands."
+    },
+    {
+      "source": "quantum-PRS-01",
+      "target": "quantum-PRS-04",
+      "relation": "resource_supplying",
+      "status": "attested",
+      "textual": "unexpressed",
+      "cue": "",
+      "basis": "Planck's constant is a term in the predicted Compton shift, h/(m_e c)(1 - cos theta); remove h and the collision calculation predicts no specific wavelength shift and cannot be compared with the measurement. ADDED 2026-09-07: this row was MISSING and was found by the reconstruction batch, which drew the pair as a random control. The key already held Einstein -> Compton (the light-quantum ontology) and had silently treated that as the whole of Compton's inheritance. Two distinct components, two distinct dependencies. Recorded as unexpressed: the fixture's Compton entry names neither Planck nor h."
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Criteria for a semantically meaningful, plausibly causal link
 
-*Written 2026-09-01. Scope item 1 and 2 of the current PRS brief: criteria for
+*Written 2026-09-07. Scope item 1 and 2 of the current PRS brief: criteria for
 identifying semantically meaningful and plausibly causal connections in the main body
 of text, shown working on the two paradigm cases — quantum mechanics 1900–1932 and
 deep learning 2012–2025.*
@@ -13,7 +13,7 @@ Every number below is printed by the script; none is typed by hand.
 ## The problem this replaces
 
 The connectome scored candidate generative coils with Jaccard overlap on significant
-tokens. Measured against a hand-labelled answer key of 24 attested dependencies across
+tokens. Measured against a hand-labelled answer key of 25 attested dependencies across
 the two paradigm cases, that scorer finds **zero** of them. Not a few. Zero.
 
 This is not a threshold that needs lowering. Bag-of-words overlap measures *shared
@@ -56,25 +56,26 @@ corpus: 20 entries, 380 ordered pairs, 120 shareable distinctive terms of 638 vo
 rejected: {'no_qualifying_evidence': 349}
 
                                                  found   gold     tp   prec recall
-TIER 'named' (C1 fired)                             10     24     10  1.00   0.42
+TIER 'named' (C1 fired)                             10     25     10  1.00   0.40
   ...textually expressed                            10     16     10  1.00   0.62
-ANY attested link                                   31     24     19  0.61   0.79
+ANY attested link                                   31     25     20  0.65   0.80
   ...on pairs both entries express (the ceiling)    31     16     16  0.52   1.00
   ...on pairs only one side expresses               31      3      1  0.03   0.33
-  ...on pairs the corpus never expresses            31      5      2  0.06   0.40
-GENERATIVE only (resource_supplying)                18     18      8  0.44   0.44
+  ...on pairs the corpus never expresses            31      6      3  0.10   0.50
+GENERATIVE only (resource_supplying)                18     19      9  0.50   0.47
   ...of those, textually expressed                  18     12      8  0.44   0.67
-BASELINE lexical Jaccard, any attested link          0     24      0  0.00   0.00
+BASELINE lexical Jaccard, any attested link          0     25      0  0.00   0.00
 BASELINE lexical Jaccard, on the ceiling set         0     16      0  0.00   0.00
 
 
-NOT RECOVERABLE from these summaries (8) - one side silent (3) or the corpus silent (5):
+NOT RECOVERABLE from these summaries (9) - one side silent (3) or the corpus silent (6):
   deeplearning-PRS-03      -> deeplearning-PRS-10      [one side silent]
   quantum-PRS-01           -> quantum-PRS-03           [one side silent]
   quantum-PRS-06           -> quantum-PRS-09           [one side silent]
   deeplearning-PRS-01      -> deeplearning-PRS-02      [corpus silent]
   deeplearning-PRS-01      -> deeplearning-PRS-03      [corpus silent]
   deeplearning-PRS-02      -> deeplearning-PRS-04      [corpus silent]
+  quantum-PRS-01           -> quantum-PRS-04           [corpus silent]
   quantum-PRS-03           -> quantum-PRS-07           [corpus silent]
   quantum-PRS-07           -> quantum-PRS-10           [corpus silent]
 
@@ -83,12 +84,11 @@ RULED OUT by the record, and whether the criteria proposed them anyway:
   quantum-PRS-01           -> deeplearning-PRS-01      not proposed
   quantum-PRS-07           -> quantum-PRS-08           PROPOSED as undetermined (strength 7.80) - draw differently, do not delete
 
-PROPOSED but not in the gold set (12) - unexamined, not wrong:
+PROPOSED but not in the gold set (11) - unexamined, not wrong:
   deeplearning-PRS-01      -> deeplearning-PRS-05      resource_supplying 3.44  engineering
   deeplearning-PRS-01      -> deeplearning-PRS-06      resource_supplying 2.52  making
   deeplearning-PRS-03      -> deeplearning-PRS-09      resource_supplying 3.69  signal
   deeplearning-PRS-04      -> deeplearning-PRS-07      resource_supplying 2.85  quality
-  quantum-PRS-01           -> quantum-PRS-04           resource_supplying 4.95  matching
   quantum-PRS-01           -> quantum-PRS-08           undetermined       1.90  continuous
   quantum-PRS-02           -> quantum-PRS-06           undetermined       2.33  bookkeeping
   quantum-PRS-02           -> quantum-PRS-09           undetermined       3.04  prediction
@@ -98,15 +98,15 @@ PROPOSED but not in the gold set (12) - unexamined, not wrong:
 
 - **On the ceiling set — the 16 dependencies both entries put in words — recall is
   1.00 and the lexical baseline is 0.00.** That is the result the brief asked for.
-- **Precision is 0.52 overall and 1.00 in the `named` tier.** Every one of the ten
+- **Precision is 0.65 overall (0.52 on the ceiling set) and 1.00 in the `named` tier.** Every one of the ten
   pairs C1 proposes is an attested dependency. Nothing else in this work is that clean,
   and it has a direct consequence for the visualisation: a named link can be drawn
   solid and asserted; an inherited link is a lead, and should look like one.
-- **Relation typing fails: 0.44 precision on `resource_supplying`.** This is C3's
+- **Relation typing fails: 0.50 precision on `resource_supplying`.** This is C3's
   failure and it is the honest headline (see below).
-- The three "not recoverable" pairs where **one side is silent** and the five where
-  **the corpus is silent** are the corpus's limit, not the method's. Two of the silent
-  ones are still proposed, for the wrong reason — Bohr → Heisenberg on
+- The three "not recoverable" pairs where **one side is silent** and the six where
+  **the corpus is silent** are the corpus's limit, not the method's. Three of the silent
+  ones are still proposed, two of them for the wrong reason — Bohr → Heisenberg on
   `postulates, transition, orbits` and AlexNet → ResNet on `roughly, optimisation,
   error, percent` are topical continuity, not stated dependency. Right answers, shaky
   reasons; both are `inherited` tier.

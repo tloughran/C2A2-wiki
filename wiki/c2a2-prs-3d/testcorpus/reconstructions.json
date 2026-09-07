@@ -1,0 +1,393 @@
+{
+ "_meta": {
+  "authored": "2026-09-07",
+  "author": "Claude (Cowork)",
+  "batch": "batch 1 - 8 targets, 3 ruled-out controls, 9 random controls, shuffled, conditions withheld",
+  "result": "targets 8/8 reconstructed; controls 0/12",
+  "blinding": "NOT a blind trial. The author knows the history of both traditions; withholding conditions blinds the author to the SAMPLING CONDITION only. What carries the weight is the structured commitments and the machine-checked verbatim trace.",
+  "provenance": "Authored while the repo was unreadable (TCC revocation), against a corpus transcribed from context; regenerated into the repo on access restore. Re-run prs_reconstruct.py against testcorpus/vault before quoting."
+ },
+ "reconstructions": [
+  {
+   "item": "R01",
+   "source": "quantum-PRS-01",
+   "target": "quantum-PRS-03",
+   "verdict": "reconstructed",
+   "claim": "Bohr's quantisation of angular momentum and his derived Rydberg constant are both denominated in Planck's constant h.",
+   "component": "The numerical value of the Rydberg constant, and the unit in which angular momentum is quantised. Remove h and Bohr's model has no quantisation unit and predicts no spectral numbers.",
+   "necessity": "required",
+   "alternatives": [
+    "No competing quantum of action existed in 1913; the only alternative was a purely empirical Balmer fit with no constant derived from anything."
+   ],
+   "exclusivity": "sole",
+   "trace": "fixing the Rydberg constant from h, e and the electron mass",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A derivation of the Balmer series that never uses h.",
+    "Evidence Bohr took his constant from an empirical fit rather than from Planck."
+   ]
+  },
+  {
+   "item": "R02",
+   "source": "quantum-PRS-04",
+   "target": "deeplearning-PRS-01",
+   "verdict": "insufficient",
+   "claim": "No argument available. Ninety years and no shared apparatus, method or vocabulary.",
+   "component": "None nameable. Nothing in AlexNet fails if Compton scattering is deleted from history.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "R03",
+   "source": "quantum-PRS-06",
+   "target": "quantum-PRS-09",
+   "verdict": "reconstructed",
+   "claim": "The two-valuedness Dirac's equation makes necessary is precisely the degree of freedom Pauli had posited as a bare postulate; Dirac's formalism must reproduce it to count as a success.",
+   "component": "The spin degree of freedom that Dirac's problem describes as inserted by hand. It is Pauli's fourth two-valued quantum number, and Dirac's four-component spinor recovers exactly it.",
+   "necessity": "used",
+   "alternatives": [
+    "Uhlenbeck and Goudsmit's spinning-electron picture (Oct 1925) supplied the physical interpretation; Pauli supplied the formal degree of freedom."
+   ],
+   "exclusivity": "few",
+   "trace": "spin has to be inserted by hand",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence that Dirac's equation was developed without reference to the two-valued number.",
+    "A demonstration that the relativistic equation forces spin independently of any prior two-valued constraint."
+   ],
+   "note": "A constraint the later work must satisfy, not material it is built from. Real dependency, different flavour from R01."
+  },
+  {
+   "item": "R04",
+   "source": "quantum-PRS-07",
+   "target": "deeplearning-PRS-06",
+   "verdict": "insufficient",
+   "claim": "No argument available. The shared word 'matrix' is not a shared object.",
+   "component": "None nameable. GPT-3's attention matrices descend from linear algebra generally, not from matrix mechanics.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "R05",
+   "source": "quantum-PRS-07",
+   "target": "quantum-PRS-10",
+   "verdict": "reconstructed",
+   "claim": "Von Neumann's spectral theory of self-adjoint operators is the rigorous form of exactly the noncommuting observables matrix mechanics introduced.",
+   "component": "The operator algebra. Von Neumann's observables are self-adjoint operators that need not commute; without matrix mechanics there is no noncommutation to axiomatise and the spectral theorem is not the tool required.",
+   "necessity": "required",
+   "alternatives": [
+    "Schrodinger's wave mechanics supplied the other half - the function space - but not the noncommutation."
+   ],
+   "exclusivity": "few",
+   "trace": "the spectral theory of self-adjoint operators",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence that the Hilbert-space formulation was arrived at from wave mechanics alone.",
+    "A version of the axiomatisation in which observables commute."
+   ]
+  },
+  {
+   "item": "R06",
+   "source": "quantum-PRS-09",
+   "target": "deeplearning-PRS-08",
+   "verdict": "insufficient",
+   "claim": "No argument available.",
+   "component": "None nameable. AlphaFold's attention over residue pairs is not an operator formalism in any load-bearing sense.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "R07",
+   "source": "deeplearning-PRS-03",
+   "target": "deeplearning-PRS-10",
+   "verdict": "reconstructed",
+   "claim": "R1's reinforcement learning on verifiable outcomes, with search behaviour discovered rather than demonstrated, is AlphaGo's self-play-against-a-checkable-result moved from a board to a token stream.",
+   "component": "The training signal. Both replace human demonstrations with an automatically checkable outcome, and both get search behaviour to emerge from that signal rather than from imitation.",
+   "necessity": "used",
+   "alternatives": [
+    "The wider RL-from-verifiable-reward literature; AlphaZero more directly than AlphaGo; classical self-play predating both."
+   ],
+   "exclusivity": "many",
+   "trace": "letting the model discover its own long chains, self-checking and backtracking from the reward alone",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence R1's RL setup derives from a lineage that does not pass through game self-play.",
+    "A demonstration that outcome-verified RL was standard before AlphaGo."
+   ],
+   "note": "Necessity only 'used' and exclusivity 'many' - a family resemblance with a plausible channel, not a required input. Weakest of the reconstructed set."
+  },
+  {
+   "item": "R08",
+   "source": "quantum-PRS-06",
+   "target": "deeplearning-PRS-07",
+   "verdict": "insufficient",
+   "claim": "No argument available.",
+   "component": "None nameable. Gaussian noise schedules have no relation to fermionic exclusion.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "R09",
+   "source": "quantum-PRS-08",
+   "target": "deeplearning-PRS-04",
+   "verdict": "insufficient",
+   "claim": "No argument available, and this pair is where the temptation is strongest: one could spin eigenfunctions, superposition and configuration space into a story about attention as a kernel over positions. That story explains nothing about why the Transformer works and names no component that fails without Schrodinger.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ],
+   "note": "Recorded as a refusal precisely because a fluent argument was available."
+  },
+  {
+   "item": "R10",
+   "source": "quantum-PRS-03",
+   "target": "quantum-PRS-09",
+   "verdict": "insufficient",
+   "claim": "The dependency is real but MEDIATED, and a mediated ancestry is not a direct dependency claim. Bohr reaches Dirac through Heisenberg and Schrodinger, both of which are separately in the corpus.",
+   "component": "No component of Dirac's transformation theory takes Bohr's stationary orbits as input; the formalism supersedes rather than uses them.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "Heisenberg's arrays and Schrodinger's equation are the actual inputs, and both are already separate entries."
+   ],
+   "exclusivity": "n/a",
+   "trace": "Wave mechanics and matrix mechanics are two dialects with no common formulation",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence Dirac worked directly from the Bohr orbit picture rather than from the two 1925-26 formalisms."
+   ],
+   "note": "Refused for transitivity. If every ancestor counted as a direct dependency the graph would become the transitive closure and say nothing."
+  },
+  {
+   "item": "R11",
+   "source": "quantum-PRS-03",
+   "target": "quantum-PRS-07",
+   "verdict": "reconstructed",
+   "claim": "Heisenberg's arrays are indexed by pairs of Bohr stationary states and their entries are transition amplitudes between them. Bohr's ontology is what the index set ranges over.",
+   "component": "The index structure of the array. Delete stationary states and transitions and there is nothing for the rows and columns to be, and no spectral intensities to reproduce.",
+   "necessity": "required",
+   "alternatives": [
+    "None. The observable-quantities programme was defined against the Bohr-Sommerfeld orbits specifically."
+   ],
+   "exclusivity": "sole",
+   "trace": "represent each transition by an array indexed by pairs of states",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence the arrays were indexed by something other than stationary states.",
+    "A formulation of the 1925 paper that does not presuppose discrete transitions."
+   ],
+   "note": "The corpus never names Bohr in Heisenberg's entry - it says 'the old quantum theory' - so no naming or vocabulary method can reach this. The argument reaches it, and anchors on a verbatim phrase."
+  },
+  {
+   "item": "R12",
+   "source": "deeplearning-PRS-07",
+   "target": "deeplearning-PRS-06",
+   "verdict": "insufficient",
+   "claim": "Refused on direction before any argument is considered: DDPM (19 Jun 2020) postdates GPT-3 (28 May 2020). The later work cannot be a resource for the earlier.",
+   "component": "None. Any component-level story here would be an artifact of ordering the pair wrongly.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "Only a redating of either paper would change this."
+   ],
+   "note": "Included deliberately: if a reconstruction ever survives a backward pair, the whole class is void."
+  },
+  {
+   "item": "R13",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-03",
+   "verdict": "reconstructed",
+   "claim": "AlphaGo's policy and value networks are deep convolutional networks trained at scale on GPUs - the artifact AlexNet established as trainable and effective.",
+   "component": "The evaluation function itself. AlphaGo's own problem statement says no hand-written evaluation had reached professional strength; what replaces it is a deep convnet, which is AlexNet's contribution.",
+   "necessity": "required",
+   "alternatives": [
+    "Hand-crafted evaluation, explicitly ruled out in the entry's own problem statement; shallow learned evaluators, which had also failed."
+   ],
+   "exclusivity": "sole",
+   "trace": "Policy and value networks trained on human games and then on self-play",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence AlphaGo's networks were not convolutional or not deep.",
+    "A contemporaneous non-deep evaluator of comparable strength."
+   ]
+  },
+  {
+   "item": "R14",
+   "source": "quantum-PRS-03",
+   "target": "deeplearning-PRS-08",
+   "verdict": "insufficient",
+   "claim": "No argument available.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "R15",
+   "source": "deeplearning-PRS-02",
+   "target": "deeplearning-PRS-04",
+   "verdict": "reconstructed",
+   "claim": "Every Transformer sub-layer is wrapped in a residual connection. The architecture as published does not train without it.",
+   "component": "The residual connection around each of the two sub-layers, plus the layer normalisation applied to that sum. Remove the skip and gradient flow through a deep stack of attention blocks degrades exactly as ResNet's problem statement describes.",
+   "necessity": "required",
+   "alternatives": [
+    "Highway networks (Srivastava et al. 2015) were the available gated alternative; the Transformer uses the ungated identity form specifically."
+   ],
+   "exclusivity": "few",
+   "trace": "we employ a residual connection around each of the two sub-layers, followed by layer normalization",
+   "trace_kind": "in_literature",
+   "refuters": [
+    "Evidence that the published Transformer trains to the reported BLEU without residual connections.",
+    "A reading of section 3.1 that does not cite He et al."
+   ],
+   "trace_locator": "Vaswani et al., 'Attention Is All You Need' (2017), section 3.1, citing He et al. 2016",
+   "note": "THE case for this evidence class. Our corpus is completely silent - the fixture's Transformer entry lists self-attention, positional encodings and multiple heads and never mentions the residual stream - so no method reading our text can reach it. The argument reaches it, and the trace is external and citable."
+  },
+  {
+   "item": "R16",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-09",
+   "verdict": "insufficient",
+   "claim": "Diffuse ancestry only. 'Deep networks trained at scale work' is a precondition of everything after 2012 and therefore distinguishes nothing.",
+   "component": "No component of the reward model or the policy optimisation traces to a convolutional vision network.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "The entire intervening language-model line, all of which is closer."
+   ],
+   "exclusivity": "n/a",
+   "trace": "A reward model fitted to human comparisons between candidate outputs",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A specific architectural or methodological element of InstructGPT traceable to AlexNet and not to the language-model line."
+   ],
+   "note": "Refused for the same reason as R10. A precondition shared by every later entry is not a dependency of any of them."
+  },
+  {
+   "item": "R17",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-02",
+   "verdict": "reconstructed",
+   "claim": "ResNet is AlexNet's recipe - deep convolutional stack, ReLU, ImageNet at scale - with skip connections added to remove the depth ceiling that recipe hit.",
+   "component": "The stack being deepened. ResNet's degradation problem only exists for a network of the AlexNet type trained on the AlexNet benchmark; the residual block is a modification to an inherited object, not a new one.",
+   "necessity": "required",
+   "alternatives": [
+    "None in vision at that date. The alternative was to abandon depth."
+   ],
+   "exclusivity": "sole",
+   "trace": "Adding layers past roughly twenty makes networks worse on training error as well as test error",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence the degradation result was obtained on a non-convolutional architecture.",
+    "A pre-2012 statement of the same depth ceiling."
+   ],
+   "note": "The corpus never names AlexNet here, but the object being modified is unambiguous from the problem statement."
+  },
+  {
+   "item": "R18",
+   "source": "quantum-PRS-07",
+   "target": "quantum-PRS-08",
+   "verdict": "insufficient",
+   "claim": "The target names the source prominently and still does not depend on it. Matrix mechanics is what wave mechanics is CONTRASTED with, not what it is built from.",
+   "component": "No component of the wave equation derives from the array algebra. Schrodinger's route was de Broglie's matter waves plus the Hamilton-Jacobi optical-mechanical analogy.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "de Broglie's matter waves (the actual resource); Hamiltonian optics."
+   ],
+   "exclusivity": "n/a",
+   "trace": "Matrix mechanics works but is opaque, offers no continuous picture of the process, and is hard to apply",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence Schrodinger derived the equation from the array formalism.",
+    "A retraction of his published statement that the matrix approach discouraged him."
+   ],
+   "note": "The important refusal. The naming criterion C1 fires here at strength 7.80, third-highest in the corpus, and C1 is otherwise precision 1.00. Reconstruction is what separates a prominent mention from a dependency - which is exactly the question the whole exercise is about."
+  },
+  {
+   "item": "R19",
+   "source": "quantum-PRS-01",
+   "target": "deeplearning-PRS-01",
+   "verdict": "insufficient",
+   "claim": "No causal path. The relation is structural resemblance across traditions - a first result that makes a discipline take a discontinuity seriously - which is analogy, not dependency.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ],
+   "note": "This is the pair the schema needs an ANALOGICAL type for. Refusing it as a dependency is correct and is not the same as saying there is no relation."
+  },
+  {
+   "item": "R20",
+   "source": "quantum-PRS-01",
+   "target": "deeplearning-PRS-10",
+   "verdict": "insufficient",
+   "claim": "No argument available.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  }
+ ]
+}

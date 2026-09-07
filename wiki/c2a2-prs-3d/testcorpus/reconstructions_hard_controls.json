@@ -1,0 +1,200 @@
+{
+ "_meta": {
+  "authored": "2026-09-07",
+  "author": "Claude (Cowork)",
+  "batch": "batch 2 - HARD controls only: within-tradition, forward in time, none in the answer key (pool of 66, seed 20260902)",
+  "why": "Batch 1's random controls were too easy - 6 of 9 were cross-epoch pairs refusable without thought. This batch is the population that actually resembles the connectome.",
+  "result": "1 of 10 reconstructed, and that one (H07) was an answer-key gap rather than a fabrication",
+  "provenance": "Same as batch 1 - authored against a transcribed corpus during the TCC revocation, regenerated into the repo on access restore."
+ },
+ "reconstructions": [
+  {
+   "item": "H01",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-05",
+   "verdict": "insufficient",
+   "claim": "Diffuse ancestry. 'Scale is the axis' is AlexNet's thesis and the scaling-law paper quantifies it, but the sweep is over transformer language models and takes nothing from a convolutional vision network.",
+   "component": "No component of the power-law fit traces to AlexNet.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "The intervening language-model line, which is what was actually swept."
+   ],
+   "exclusivity": "n/a",
+   "trace": "A systematic sweep across seven orders of magnitude fitting test loss as a power law in parameters, data and compute",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A scaling result obtained on convolutional vision models that the 2020 paper builds on directly."
+   ],
+   "note": "Same refusal shape as R10/R16: a precondition shared by every later entry distinguishes none of them."
+  },
+  {
+   "item": "H02",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-06",
+   "verdict": "insufficient",
+   "claim": "Diffuse ancestry only.",
+   "component": "No component of GPT-3 traces to a convolutional vision network.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "The Transformer, which is the actual architectural input and is separately attested."
+   ],
+   "exclusivity": "n/a",
+   "trace": "An autoregressive transformer of 175 billion parameters",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "An architectural element of GPT-3 traceable to AlexNet specifically."
+   ]
+  },
+  {
+   "item": "H03",
+   "source": "deeplearning-PRS-01",
+   "target": "deeplearning-PRS-09",
+   "verdict": "insufficient",
+   "claim": "Diffuse ancestry only. DUPLICATE of R16 by construction of the two samples - answered independently and identically, which is the only consistency check this run contains.",
+   "component": "No component of the reward model or policy optimisation traces to AlexNet.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "The whole intervening language-model line."
+   ],
+   "exclusivity": "n/a",
+   "trace": "A reward model fitted to human comparisons between candidate outputs",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A specific element of InstructGPT traceable to AlexNet and not to the LM line."
+   ],
+   "note": "Duplicate pair. Reported, not hidden - batch 2 has 9 fresh items, not 10."
+  },
+  {
+   "item": "H04",
+   "source": "deeplearning-PRS-04",
+   "target": "deeplearning-PRS-09",
+   "verdict": "insufficient",
+   "claim": "Mediated through GPT-3, which is separately attested, and the method itself is architecture-agnostic.",
+   "component": "The reward model and PPO objective place no requirement on the policy being a transformer; RLHF had been demonstrated on other policy classes.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "GPT-3 is the proximate input; the RLHF machinery is architecture-independent."
+   ],
+   "exclusivity": "n/a",
+   "trace": "used to optimise the policy with reinforcement learning against that learned preference signal",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A step in InstructGPT that requires self-attention specifically."
+   ],
+   "note": "Refused for transitivity, same rule as R10."
+  },
+  {
+   "item": "H05",
+   "source": "deeplearning-PRS-08",
+   "target": "deeplearning-PRS-09",
+   "verdict": "insufficient",
+   "claim": "No argument available.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "H06",
+   "source": "deeplearning-PRS-08",
+   "target": "deeplearning-PRS-10",
+   "verdict": "insufficient",
+   "claim": "No argument available. Both use large-scale learning; neither takes anything from the other.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "H07",
+   "source": "quantum-PRS-01",
+   "target": "quantum-PRS-04",
+   "verdict": "reconstructed",
+   "claim": "The Compton shift is proportional to h. Planck's constant is not context here - it is a term in the predicted formula.",
+   "component": "The magnitude of the predicted wavelength shift, h/(m_e c) times (1 - cos theta). Remove h and the collision calculation predicts no specific shift and cannot be compared with the measurement.",
+   "necessity": "required",
+   "alternatives": [
+    "None. No other quantum of action was available, and the photon energy and momentum are both denominated in h."
+   ],
+   "exclusivity": "sole",
+   "trace": "predict the scattered wavelength as a function of angle",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A derivation of the Compton shift that does not contain h.",
+    "Evidence Compton fitted the shift empirically rather than predicting it."
+   ],
+   "note": "ANSWER-KEY GAP, NOT A FALSE POSITIVE. Planck -> Compton is a real, required dependency that dependencies.json did not contain; the key held Einstein -> Compton (the light-quantum ontology) and missed Planck -> Compton (the constant in the formula). Drawn as a random control BECAUSE the key was incomplete. The row was added to dependencies.json on 2026-09-07 and the criteria numbers regenerated."
+  },
+  {
+   "item": "H08",
+   "source": "quantum-PRS-02",
+   "target": "quantum-PRS-09",
+   "verdict": "insufficient",
+   "claim": "The tempting move is to credit Einstein for the relativity in Dirac's relativistic wave equation. That is a DIFFERENT 1905 paper. This entry is specifically the light quantum, and the light quantum is not an input to transformation theory or to the electron equation.",
+   "component": "No component of either the transformation theory or the first-order relativistic equation takes the light quantum as input.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "Special relativity - a different Einstein paper, not represented in this corpus.",
+    "Heisenberg and Schrodinger, both separately attested, are the actual inputs."
+   ],
+   "exclusivity": "n/a",
+   "trace": "a first-order relativistic wave equation for the electron",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "A derivation of the Dirac equation that uses the light-quantum hypothesis."
+   ],
+   "note": "Refused on entry identity. An entry names one specific contribution, and crediting it with its author's other work is a distinct failure mode worth naming."
+  },
+  {
+   "item": "H09",
+   "source": "quantum-PRS-04",
+   "target": "quantum-PRS-06",
+   "verdict": "insufficient",
+   "claim": "No argument available. Compton's momentum-carrying quantum has no bearing on shell closure or the anomalous Zeeman effect.",
+   "component": "None nameable.",
+   "necessity": "none",
+   "alternatives": [
+    "n/a"
+   ],
+   "exclusivity": "n/a",
+   "trace": "No trace.",
+   "trace_kind": "none",
+   "refuters": [
+    "n/a"
+   ]
+  },
+  {
+   "item": "H10",
+   "source": "quantum-PRS-06",
+   "target": "quantum-PRS-07",
+   "verdict": "insufficient",
+   "claim": "Contemporaries with a shared problem, not a lineage. Both are responses to the failure of the Bohr-Sommerfeld scheme, and both engage the anomalous Zeeman effect; neither takes the other as input. Six months apart in 1925.",
+   "component": "Matrix mechanics does not use the exclusion principle. The array formalism is indexed by stationary states, not by occupancy constraints.",
+   "necessity": "dispensable",
+   "alternatives": [
+    "Bohr's stationary states are the actual input to matrix mechanics, and that link is separately reconstructed at R11."
+   ],
+   "exclusivity": "n/a",
+   "trace": "The old quantum theory is a patchwork of postulates about unobservable electron orbits",
+   "trace_kind": "in_corpus",
+   "refuters": [
+    "Evidence Heisenberg's 1925 formalism uses the fourth quantum number."
+   ],
+   "note": "The reconstruction form of criterion C5: two entries worried about the same thing are contemporaries. The pair most likely to fool a vocabulary method - same year, same institutional circle, overlapping problem."
+  }
+ ]
+}
