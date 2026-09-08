@@ -20,8 +20,8 @@ karpathy_wiki_sources:
   - "NOTE 2026-08-11 (QC): a CROSS-019 citation was removed here. It was glossed as 'right-hemisphere mode in cross-tradition engagement'; read at the wiki body, CROSS-019 is Stump x Levin — whether Thomistic final causality grounds Levin's morphogenetic teleology. The right-hemisphere/cross-tradition-engagement claim is McGilchrist PRS-03, already cited above, so nothing in the argument depended on the wrong id."
 evidence_strength_summary: "Hierarchical Bayesian inference (Friston) and split-brain hemispheric data (McGilchrist) are empirical. The bounded-delegation account of obedience as preserving lower-level inference under higher-level constraint is mathematically formal. The reading of disobedience-as-contempt vs. legitimate refusal is interpretive but converges with bounded-rationality results on principal-agent problems."
 tags: [synthesis, day/170, theme/bounded-delegation, theme/legitimate-authority, q/104, q/105]
-last_qc_at: "2026-08-30T16:23:44"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-07T20:21:23"
+last_qc_outcome: "pass"
 ---
 
 # Day 170 — Obedience (Contemporary)

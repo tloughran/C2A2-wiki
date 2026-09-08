@@ -6,18 +6,18 @@ length_target_words: 1500
 length_actual_words: 1055
 length_tier: short
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic target-state; PRS-03 morphological attractor; PRS-23 memory/pattern persisting through material turnover)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic target-state; PRS-03 morphological attractor; PRS-82 identity as pattern persisting through total material turnover, Ship-of-Theseus framing)"
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime / body as rendered interface)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; canonical: continuity-with-transformation, 1 Cor 15)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-27 resurrection as transformed physicality, not resuscitation; PRS-12 the risen body as actual body transformed, non-dualist; canonical: 1 Cor 15)"
 evidence_strength_summary: "That bodily identity is 'totality of species, not totality of matter' is empirical at the biological scale (Levin) — the single tightest science/Summa convergence in this stretch; the interface reading of bodily perfection is formal-to-speculative (Hoffman); persistence of the perspective is philosophical (Kastrup); the continuity-with-transformation hope is scriptural (Wright)."
 length_note: "Runs ~30% under the short tier (1055 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
 length_ratio_to_target: 0.7
 mind_first_reframe: "The risen body is the same body because the same *form* — its organization, proportion, and order of parts — is restored, not because the same atoms return; 'totality of species, not of matter' is the ship-of-Theseus answer stated in the thirteenth century."
 central_theme_thread: "What is gathered into loving unity is the embodied *perspective as form* — the way of being and seeing — perfected and made whole; numerical sameness of matter is neither necessary nor the point."
 tags: [synthesis, day/297, theme/same-body-as-same-form-not-same-matter]
-last_qc_at: "2026-08-30T06:36:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-07T12:24:28"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 297 — Returning Flesh (Contemporary Parallel)
@@ -32,7 +32,7 @@ The shared inquiry-problem is **the criterion of bodily identity across total ma
 
 ## Resource
 
-The Levin-tradition program supplies the load-bearing move, and this is the single tightest convergence between contemporary science and the *Summa* in the entire last-things stretch. Tom's PRS-form record of Levin's work (PRS-01, *morphogenetic control* — a stored anatomical target-state; PRS-03, *morphological attractor formalism* — the target morphology as a basin of attraction; PRS-23, *pattern persisting through material turnover*) establishes that a body's identity is precisely its *organization*: a form that specifies quantity, shape, and the order and position of parts, and that re-establishes that order through continuous replacement of the matter realizing it. Aquinas's "totality of species (quantity, shape, position, order of parts), not totality of matter" is, almost word for word, a target-morphology criterion of identity. The biology even matches the details: that hair and nails are "secondary perfection" (continually shed and regrown, not identity-critical) and that the body need not reclaim *every* past particle to be the same body are exactly what a pattern-over-matter account predicts. The Hoffman-tradition program (PRS-04, *observer-dependent spacetime / body as rendered interface*) reads the risen body's "perfection of integrity" as the interface restored to full function — every member present because the perspective's mode of engagement is complete. The Kastrup-tradition program (PRS-02) secures the persistence of the *who* whose form is restored. The Wright-tradition program supplies the scriptural shape: PRS-04 (*resurrection as historical and cosmological*) and Wright's reading of 1 Cor 15 frame the risen body as *continuous-yet-transformed* — the same body, gloriously changed ("sown perishable, raised imperishable") — which is exactly Aquinas's "same in species, transformed in condition," and which guards against both a crude resuscitation of corpse-matter and a spiritualizing dissolution of the body.
+The Levin-tradition program supplies the load-bearing move, and this is the single tightest convergence between contemporary science and the *Summa* in the entire last-things stretch. Tom's PRS-form record of Levin's work (PRS-01, *morphogenetic control* — a stored anatomical target-state; PRS-03, *morphological attractor formalism* — the target morphology as a basin of attraction; PRS-82, *identity as pattern persisting through total material turnover* — the record's own Ship-of-Theseus framing: "the hardware comes and goes") establishes that a body's identity is precisely its *organization*: a form that specifies quantity, shape, and the order and position of parts, and that re-establishes that order through continuous replacement of the matter realizing it. Aquinas's "totality of species (quantity, shape, position, order of parts), not totality of matter" is, almost word for word, a target-morphology criterion of identity. The biology even matches the details: that hair and nails are "secondary perfection" (continually shed and regrown, not identity-critical) and that the body need not reclaim *every* past particle to be the same body are exactly what a pattern-over-matter account predicts. The Hoffman-tradition program (PRS-04, *observer-dependent spacetime / body as rendered interface*) reads the risen body's "perfection of integrity" as the interface restored to full function — every member present because the perspective's mode of engagement is complete. The Kastrup-tradition program (PRS-02) secures the persistence of the *who* whose form is restored. The Wright-tradition program supplies the scriptural shape: PRS-04 (*resurrection as historical and cosmological*) secures that a bodily resurrection is on the table at all, and PRS-27 (*resurrection as transformed physicality, not resuscitation of the old*) with PRS-12 (*the risen body as Jesus's actual body transformed*) carry Wright's reading of 1 Cor 15, framing the risen body as *continuous-yet-transformed* — the same body, gloriously changed ("sown perishable, raised imperishable") — which is exactly Aquinas's "same in species, transformed in condition," and which guards against both a crude resuscitation of corpse-matter and a spiritualizing dissolution of the body.
 
 ## Solution (proposed, speculative)
 
@@ -44,10 +44,10 @@ This article tells the project what, exactly, is gathered into loving unity. It 
 
 ## Bridges
 
-- **Levin PRS-01 / PRS-03 / PRS-23 (empirical; load-bearing, tightest convergence):** bodily identity as organization persisting through material turnover — the modeled form of "totality of species, not of matter."
-- **Hoffman PRS-04 (formal-to-speculative):** integral perfection of the risen body as the interface restored to full function.
-- **Kastrup PRS-02 (philosophical):** the same individuated perspective whose form is restored.
-- **Wright PRS-04 (scriptural):** 1 Cor 15 continuity-with-transformation — same body, gloriously changed — guarding against both resuscitation and spiritualization.
+- **Levin PRS-01 / PRS-03 / PRS-82 (empirical; all three High in the register; load-bearing, tightest convergence):** bodily identity as organization persisting through material turnover — the modeled form of "totality of species, not of matter."
+- **Hoffman PRS-04 (formal-to-speculative; the record is *(Implicit)* / **Medium**):** integral perfection of the risen body as the interface restored to full function.
+- **Kastrup PRS-02 (philosophical; High):** the same individuated perspective whose form is restored.
+- **Wright PRS-04 / PRS-27 / PRS-12 (scriptural; the register splits them — PRS-04 **Medium**, PRS-27 **Speculative**, PRS-12 **High**):** 1 Cor 15 continuity-with-transformation — same body, gloriously changed — PRS-27 guarding against resuscitation, PRS-12 against spiritualization.
 
 ## Where this leaves us
 

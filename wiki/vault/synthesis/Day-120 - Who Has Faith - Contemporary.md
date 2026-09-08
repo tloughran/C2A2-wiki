@@ -13,14 +13,14 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 bioelectric circuits encode anatomical target states — form as real, located, causally efficacious, Confidence High; PRS-03 morphological attractor formalism, Confidence High) — CROSS-008's stronger Thomistic-grounding claim restated downward 2026-08-10 and not relied on"
   - "traditions/hoffman/wiki.md (interface theory)"
   - "traditions/kastrup/wiki.md (analytic idealism; de-dissociation)"
-  - "master/cross_program_index.md (CROSS-005 love-as-real; CROSS-008 final-causality)"
-  - "Wright canonical: Paul and the Faithfulness of God (pistis as relational covenant)"
+  - "master/cross_program_index.md (CROSS-005 love-as-real; CROSS-008 restated downward 2026-08-10 — cited here only as withdrawn, never as live support)"
+  - "traditions/wright/prs_triplets.md (PRS-13 salvation in fear and trembling as inclusion in the covenanted people, God's Homecoming, Confidence High) — Wright canonical: Paul and the Faithfulness of God (pistis as relational covenant)"
   - "Rohr canonical: The Universal Christ; Falling Upward (faith as primary trust)"
 evidence_strength_summary: "Hebrews 11:1 read as joint cognitive-volitional state: philosophical (high in Thomism). Charity as form of faith via Fredrickson + Stump CROSS-005: empirical biology (high) + speculative metaphysical bridge. Lifeless/living-faith asymmetry: theological structural claim. Wright's pistis as covenant-fidelity: historical-theological (high)."
 mind_first_reframe: "Charity-as-form-of-faith is, under mind-monism, the active de-dissociation of the alter from its ground — what makes the held cognitive structure operative as a real relational coupling between alter and ground; Levin's empirical re-grounding of form licenses the strong hylomorphic reading, and positivity resonance gives the measurable biology."
 central_theme_thread: "The lifeless/living distinction is the central claim at the personal level — faith provides the cognitive structure for cooperation; charity makes the cooperation operative; without charity the agent has the map but not the journey toward the loving unity that is the computational telos."
 tags: [synthesis, day/120, theme/faith, theme/charity, theme/form]
-last_qc_at: "2026-08-30T08:22:06"
+last_qc_at: "2026-09-07T12:24:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -42,7 +42,7 @@ The connected P: Aquinas insists on the strong hylomorphic reading — charity i
 
 ## Resource
 
-The Stump-tradition wiki (CROSS-005 in the master index) marks the convergence: love as a fundamental category in Fredrickson, Stump, and Kastrup. Tom Loughran's PRS-form record of Stump's program (PRS-05 union; PRS-11 Franciscan/second-person knowing) reads charity as second-person knowing — the kind of knowing that obtains between persons mutually open to each other. Charity is not, on this reading, an emotion or sentiment laid on top of faith. It is the relational structure that makes faith function as relational knowing rather than information-holding.
+The Stump-tradition wiki (CROSS-005 in the master index) marks the convergence: love as a fundamental category in Fredrickson, Stump, and Kastrup. Tom Loughran's PRS-form record of Stump's program (PRS-05 union as the final cause of permitted suffering, Confidence Medium; PRS-11 Franciscan/second-person knowing, Confidence High — the two do not share a grade) reads charity as second-person knowing — the kind of knowing that obtains between persons mutually open to each other. Charity is not, on this reading, an emotion or sentiment laid on top of faith. It is the relational structure that makes faith function as relational knowing rather than information-holding.
 
 Fredrickson's positivity resonance supplies the biological substrate. Love is a biophysiological event: vagal coupling, oxytocin signaling, neural synchrony between agents. Fredrickson's Love 2.0 establishes that love is measurable, durable, cultivable. When Aquinas says charity is the form of faith, the contemporary parallel can say: the cognitive habit of faith becomes alive — operative in the agent's actual cooperation with the wider mind — when the agent's biology and orientation are configured in the positivity-resonance mode that constitutes lived relational coupling. Charity is what makes faith a *relation* rather than a *representation*.
 
@@ -80,7 +80,7 @@ The lifeless/living distinction is precisely where the project's central claim i
 - *Fredrickson positivity resonance / Love 2.0* — biological substrate of charity; what makes faith alive has measurable correlates. (Empirical; high.)
 - *PRS-01 + PRS-03 in the Levin-tradition wiki (`traditions/levin/prs_triplets.md`); CROSS-008 restated downward 2026-08-10* — empirical re-grounding of "form" as real, located, causally efficacious (PRS-01, Confidence High), with the morphological attractor formalism supplying the formal treatment of the goal-seeking (PRS-03, Confidence High). (Empirical at the biological scale.) The extension to the strong hylomorphic reading of "charity as form of faith" is this commentary's own, not a bridge the index certifies: CROSS-008's stronger claim — that Thomistic final causality frames Levin's teleology — was withdrawn, and what remains is a shared rejection of the isolated unit of explanation.
 - *Hoffman interface theory* — *fides informis* read as cognitive presence with low precision-weighting; explains the lifeless-but-real asymmetry. (Formal.)
-- *Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity; the loss-of-charity-while-faith-remains corresponds to slack fidelity within ongoing covenant membership. (Historical-theological; high.)
+- *PRS-13 in the Wright-tradition wiki (`traditions/wright/prs_triplets.md`, Confidence High); Wright, Paul and the Faithfulness of God* — pistis as covenant-fidelity, with salvation as inclusion in the covenanted people and its working-out as participation in that people; the loss-of-charity-while-faith-remains corresponds to slack fidelity within ongoing covenant membership. (Historical-theological; high.)
 
 ## Where this leaves us
 

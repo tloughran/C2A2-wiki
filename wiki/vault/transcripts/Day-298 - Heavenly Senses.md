@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-298 - Heavenly Senses - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/298, pars/suppl, q/81-82]
-last_qc_at: "2026-08-03T08:24:53"
+last_qc_at: "2026-09-07T12:24:28"
 last_qc_outcome: "pass"
 ---
 

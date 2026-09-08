@@ -9,16 +9,18 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating across developmental stages)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; positive-affect scaffolding)"
   - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 rule-following vs. relational integration)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 Perception fitness-tracking — the Interface Theory of Perception, Confidence High; supplies the interface claim the prophetic-typology bullet leans on. The register carries no record on typology, figure or symbol, so the step from interface to figure-trains-recognition is this commentary's own extension)"
   - "wiki/master/cross_program_index.md (searched 2026-08-30: no CROSS entry records developmental sequencing in cognitive maturation; the claim is carried by the developmental-psychology literature, not by a register node)"
   - "Wright, Paul and the Faithfulness of God (Israel as norming-norm; covenant vocation)"
   - "Wright, The Resurrection of the Son of God (covenant fulfillment)"
   - "Rohr, Falling Upward (developmental stages of moral / spiritual life)"
 evidence_strength_summary: "Empirical: developmental psychology on stage-dependent learning, Fredrickson on positive-affect broadening, predictive-processing on stage-wise prior updating. Theological: Wright's covenant-vocation reading. Speculative: identification of Old-Law pedagogy with curriculum-staged cognitive maturation."
 length_ratio_to_target: 1.079
+length_note: "Recounted 2026-09-07 at 1704 body words / ratio 1.136 (short tier, target 1500) — outside ±10% but inside ±25%. The over-run is citation anchoring, not prose: this run added the Hoffman PRS-03 source line and Bridges bullet that the Solution section's prophetic-typology claim was leaning on without either, roughly 85 words. The stored length_actual_words (1619) and length_ratio_to_target (1.079) are the pre-edit figures and were deliberately left untouched, pending the vault-wide length-arithmetic recompute open since 2026-08-15."
 mind_first_reframe: "The Old Law is the developmental curriculum through which an agent-community (Israel) and through it humanity is brought from natural-law-only-access (impaired by fomes) toward grace-enabled charity — external rules training pattern-recognition that natural-law access alone could not reliably deliver, temporal goods meeting agents at their current motivational state (Fredrickson broaden-and-build), prophetic typology training pattern-recognition (Hoffman interface), friendship-as-likeness as the telos."
 central_theme_thread: "Perspective-limitation is not just an obstacle but the condition under which developmental staging makes sense — an agent at New-Law level does not need the Old Law; an agent at fomes-dominated post-Fall level cannot receive the New Law directly; the staged sequence is the path by which limited perspectives are brought into closer alignment with the loving-unity telos under the resources available."
 tags: [synthesis, day/110, theme/covenantal-pedagogy, theme/developmental-stages]
-last_qc_at: "2026-08-30T14:29:47"
+last_qc_at: "2026-09-07T18:29:23"
 last_qc_outcome: "rewrote"
 ---
 
@@ -98,6 +100,7 @@ The Wright-Rohr-monist synthesis here is unusually clean: Wright provides the *c
 - **FLAG-05 (Friston, developmental priors updating)**: Old Law as curriculum for stage-dependent generative-model formation. *Empirical/formal*.
 - **FLAG-11 (Fredrickson, broaden-and-build)**: temporal-goods pedagogy meets agents at their current affect. *Empirical*.
 - **FLAG-09 (McGilchrist, hemispheric scaffolding)**: rule-system as left-hemispheric scaffold for right-hemispheric integration. *Empirical*.
+- **Hoffman PRS-03 — *Perception fitness-tracking*** (`traditions/hoffman/prs_triplets.md`): perception delivers a species-specific adaptive interface rather than a truth-mirror, which is what the prophetic-typology claim in the Solution section borrows. *(Confidence High for the interface result; the further step — that a figure trains recognition of what it points at — has no record in the Hoffman register and is this commentary's own extension.)*
 - **Developmental-staging literature (no C2A2 wiki node — `wiki/master/cross_program_index.md` searched 2026-08-30 and records no entry for stage-dependent moral maturation)**: stage-dependent learning across cognitive maturation. *Cross-disciplinary empirical*.
 - **Wright, *Paul and the Faithfulness of God***: Israel's covenant vocation as norming-norm. *Exegetical/theological*.
 - **Wright, *The Resurrection of the Son of God***: covenant fulfillment as the telos of the developmental staging. *Exegetical/theological*.

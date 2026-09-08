@@ -8,8 +8,8 @@ length_actual_words: 1906
 length_ratio_to_target: 1.271
 length_note: "Over target: two questions (Q.106-107) at the pivot of the law treatise, and the entry is a central-theme keystone (new law as imported prior-update) doing substantive linkage across five traditions plus Wright/Rohr."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS-04 morphogenetic field; pattern as cause)"
-  - "wiki/traditions/kastrup/wiki.md (PRS-02 analytic idealism; mind as ontological primitive)"
+  - "wiki/traditions/levin/wiki.md (PRS-01 morphogenetic control; bioelectric target states as the cause of form. Repointed 2026-09-07 from PRS-04, whose record is substrate-independent cognition, not pattern-as-cause)"
+  - "wiki/traditions/kastrup/wiki.md (PRS-01 analytic idealism; inverted ontology, mind as primitive. Repointed 2026-09-07 from PRS-02, whose record is individuation by dissociation)"
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model priors; grace as imported prior)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; intrinsic-motivation dynamics)"
@@ -19,7 +19,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "The new law is not text but indwelling pattern — the imported, recalibrating prior-update that rewrites the agent's generative model so the loving-unity end becomes the spontaneous, intrinsic prior rather than an externally enforced constraint."
 central_theme_thread: "The agent cannot bootstrap from perspective-limited resources into charity; the new law is the import of priors from outside the agent that makes loving-unity intrinsically motivating, dissolving the interior/exterior dichotomy under mind-monism."
 evidence_strength_summary: "Empirical: self-determination theory on intrinsic motivation, broaden-and-build, developmental moral psychology. Theological: Pauline pneumatology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Trinitarian pneumatology."
-last_qc_at: "2026-08-30T14:30:17"
+last_qc_at: "2026-09-07T16:21:41"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/114, theme/new-law-as-Spirit, theme/intrinsic-motivation]
 ---
@@ -40,9 +40,9 @@ This is the central problem the entire law-and-grace treatise has been building 
 
 ## Resource: form-as-person, intrinsic motivation, indwelling Spirit, sacramental ontology
 
-**Levin's morphogenetic-field work** (PRS-04): the field is not merely a pattern *describing* the organism's development; it is causally responsible *in* the development. There is no separation between the pattern and the system actualizing it. This is the structural analog Aquinas needs: the new law is not a code *external* to the agent; it is the indwelling principle *in* the agent that orients its development.
+**Levin's morphogenetic-control work** (PRS-01 in the Levin-tradition wiki: bioelectric circuits encode anatomical target states; Confidence High): the field is not merely a pattern *describing* the organism's development; it is causally responsible *in* the development. There is no separation between the pattern and the system actualizing it. This is the structural analog Aquinas needs: the new law is not a code *external* to the agent; it is the indwelling principle *in* the agent that orients its development.
 
-**Kastrup's analytic idealism** (PRS-02): if mind is ontologically primitive, then *persons* (rather than codes) are the fundamental locus of normative orientation. The Spirit indwelling the agent is *not* a strange exception to a code-governed universe; it is the *default* mode of normative reality on a mind-monist account — mind operates through mind, person operates through person.
+**Kastrup's analytic idealism** (PRS-01 in the Kastrup-tradition wiki, the inverted-ontology record; Confidence High): if mind is ontologically primitive, then *persons* (rather than codes) are the fundamental locus of normative orientation. The Spirit indwelling the agent is *not* a strange exception to a code-governed universe; it is the *default* mode of normative reality on a mind-monist account — mind operates through mind, person operates through person.
 
 **Hoffman's interface theory** (FLAG-02): an agent's interface includes not only world-representations but *value-representations* and *agent-representations*. The indwelling Spirit, on a Hoffman-shaped reading, is the *update to the agent's value-interface* — not a strange addition to a value-neutral cognitive architecture, but a recalibration of the value-tracking signals the agent already has.
 
@@ -102,8 +102,8 @@ Rohr's reading attaches: the agent's perspective limitation is *not* the ultimat
 
 ## Bridges
 
-- **PRS-04 in the Levin-tradition wiki (morphogenetic field; pattern as cause)**: the indwelling Spirit as the pattern-in-the-agent. *Empirical / metaphysical*.
-- **PRS-02 (Kastrup analytic idealism)**: mind-monism makes person-as-locus-of-normativity default rather than exotic. *Metaphysical argument*.
+- **PRS-01 in the Levin-tradition wiki (morphogenetic control; bioelectric target states as cause of form, Confidence High)**: the indwelling Spirit as the pattern-in-the-agent. *Empirical at the bioelectric level; the transfer to the new law is the commentary's own analogy, speculative.*
+- **PRS-01 in the Kastrup-tradition wiki (inverted ontology; mind as primitive, Confidence High)**: mind-monism makes person-as-locus-of-normativity default rather than exotic. *Metaphysical argument; the step from mind-as-primitive to person-as-locus is the commentary's extension, not a recorded claim.*
 - **FLAG-02 (Hoffman interface theory)**: indwelling Spirit as recalibration of the value-interface. *Formal / interpretive*.
 - **FLAG-05 (Friston active inference)**: new law as imported prior-update. *Empirical/formal*.
 - **FLAG-11 (Fredrickson broaden-and-build)**: love-driven engagement broadens; fear-driven compliance narrows. *Empirical*.
