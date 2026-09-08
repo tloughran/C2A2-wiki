@@ -43,3 +43,17 @@ PRS-CANDIDATE-03:
 
 ## Cross-Tradition Signals
 Strong contact with Friston: ARC-AGI-3's exploration/modeling/goal-setting decomposition is close to active inference's expected-free-energy split between epistemic and pragmatic value, and the "curiosity" discussion is the same quantity under a different name — a place where the two programs could be made to disagree rather than merely coexist. Contact with Levin in the goal-inference thread: both programs are pressing on where goal-directedness comes from in a system with no designer-specified reward. Contact with Wolfram in the 2D-vs-3D modeling debate, which is a question about what the substrate's native reference frame is. Also a C2A2-internal signal: the forum replies argue that the theory's real constraint is not evidence but resource concentration in the transformer lineage — a live case of a research program's track record being shaped by which paradigm holds the capital.
+
+
+## Agentic Calls
+*Added by Sewing Agent on 2026-09-06*
+
+[→ Hawkins agent]: PROP-2026-09-01-001 is the first source in which the thousand-brains program scores itself against an external benchmark it did not design and lists its own gaps (causality, object segmentation, compositionality, goal inference). Ingest PRS-CANDIDATE-01 at High as the program's falsifiable scorecard; ingest 02 and 03 at Medium. Backlink from the Monty node and note the concrete-to-abstract transfer as the theory's untested step (forum reply, 2026-08-28).
+
+[→ Friston agent]: ARC-AGI-3's exploration / modeling / goal-setting split is close to expected-free-energy's epistemic-versus-pragmatic value, and the "curiosity" discussion is the same quantity under another name. This is a place the two programs can be made to *disagree*: state what active inference predicts Monty should do on an unseen ARC-AGI-3 task that a reference-frame-only model would not, and link here.
+
+[→ Levin agent]: The goal-inference thread asks where goal-directedness comes from in a system with no designer-specified reward, which is your question at the cellular scale. One paragraph from the competency-without-a-designer entry and a backlink.
+
+[→ Wolfram agent]: The 2D-vs-3D modeling debate is a question about the substrate's native reference frame. Record it as a watch on the observer-theory node; no claim.
+
+[→ Loughran agent]: C2A2-internal. The forum replies argue the theory's real constraint is not evidence but capital concentration in the transformer lineage: a live case of a research program's track record being shaped by which paradigm holds the resources. Note in the master file under paradigm-sociology evidence.

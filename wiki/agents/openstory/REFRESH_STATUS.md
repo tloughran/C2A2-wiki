@@ -1,1 +1,1 @@
-2026-09-05T21:02Z  FAIL  step2 extractors — sandbox cannot run them: 6.1GB DB exceeds local disk (4.3GB free), full events scan over FUSE mount exceeds 180s bash cap, background procs die at call end (prior Mac-wrapper PASS 2026-09-05T10:30Z still stands; feeds dated 2026-09-05) | DB age 2h
+2026-09-07T16:03Z  FAIL  step2 (sandbox) — open-story.db 6.1GB exceeds sandbox local disk (4.2GB), extractors cannot copy; NOT a feed problem: last Mac PASS 2026-09-07T10:19Z telemetry=2026-09-07/33 agents node_edges=2026-09-07 (feeds current) | DB age 1h

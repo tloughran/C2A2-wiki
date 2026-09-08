@@ -1104,3 +1104,34 @@ for Tom as OPEN-179–181: the sub-neuronal rung, deferred-condition polling own
 two authored ladders is the spine of III.2.0.
 
 *(14a does not make decisions. See OPEN-174.)*
+
+## 2026-09-05 — 14a run note (no DECISION entries; unattended day)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — nine days. No attended session today; no
+rulings recorded anywhere in the vault (no OPEN-174 instance either). The 15-pipeline's cycle 6 filed
+five REVISE flags (430–434) that it reduces to three decisions for Tom: the ladder's order (433, with
+430 beneath it), the sandbox counts (431/432), and the read criterion (434). One new question for Tom
+is queued as OPEN-182 (what this register counts as design activity on unattended days).
+
+*(14a does not make decisions.)*
+
+## 2026-09-07 — 14a run note (no DECISION entries; gap-filling run, 09-06 run missed)
+
+`decisions.md` still ends at DECISION-083 (2026-08-27) — eleven days. No attended session on 09-06 or
+09-07 (to 10:53 local); no rulings recorded anywhere reachable. The 15-pipeline's 09-06 cycle filed
+REVISE-435/436 and MONITOR-597 on the 09-05 intake and requests one binary ruling (REVISE-436: FAIL LOUD
+vs permitted orchestrator fallback). OPEN-183 queued (gap-fill vs DARK marker for missed 14 runs).
+
+*(14a does not make decisions.)*
+
+---
+
+*2026-09-07 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**eleven days.** In the same window: +5 REVISE (435–439), +1 MONITOR, +8 proposals, two 14-run gaps,
+one High SYSTEMIC-RISK-FLAG and a fourteenth consecutive escalation carry. PRESUMPTION-924 (this run)
+asks whether part of the stall is miscategorisation: three of the pending items — the twelve-times-fired
+"ONE-TIME" sewing bootstrap, the Openstory 6.1 GB / 4.2 GB disk ceiling, and the 14 run's missed days —
+are scheduler decisions, a class with no register, no numbering and no escalation path. PRESUMPTION-928
+asks whether the remaining stall is a stall at all, or an unrecorded standing ruling: four lit-search
+cycles have now executed under REVISE-436's unanswered binary, all four behaving as though limb (b) had
+been chosen.*

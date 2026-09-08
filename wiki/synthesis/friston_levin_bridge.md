@@ -124,3 +124,19 @@ The Thought Economics interview restates bioelectric "cognitive glue" in Levin's
 **Synthesis claim.** The convergence is real but it is not the interesting part; the interesting part is that it has become *arithmetic*. A cognitive light cone is defined as the spatial and temporal extent of the goals a system can represent and pursue. The temporal depth of a generative model is defined as how far ahead the policy evaluation runs. If these are the same quantity, then Levin's independent assignments of light-cone size to cells, tissues and organisms are predictions about the temporal depth of the corresponding generative models, and they can be checked. Separately, the search-efficiency metric may be a directly measurable proxy for accumulated model evidence — which would give the free energy principle the empirical handle its critics say it lacks. Two independent routes from Levin's side to a quantity Friston's side has never been able to measure.
 
 **Open question the wiki cannot yet answer.** Is the proxy relation between search efficiency and model evidence *derivable*, or merely suggestive? The distinction is the whole value of the item: a derivation makes the free energy principle measurable in planaria; a resemblance makes it quotable. The same applies to the light cone — an operational identity is a result, a family resemblance is a slogan. A disagreement between Levin's light-cone assignments and the measured temporal depths would be more informative than a match, because it would locate which of the two constructs is doing unearned work. Neither paper attempts either derivation.
+
+
+---
+
+## Robustness by architecture, competency without learning
+*Sewing Agent, 2026-09-06*
+
+**Orphaned page at the intersection (0 backlinks before this run):** `2026-08-31_friston_dr-free-distributionally-robust-fep` (Friston 0.9, Levin 0.55).
+
+**Why it sits here:** DR-FREE's closing aspiration is that natural agents survive capricious environments with little or no training because robustness under model ambiguity is built into the architecture. Stated that way it is Levin's multi-scale competency thesis in FEP vocabulary: problem-solving capacity the system never learned.
+
+**Synthesis claim:** "Distributionally robust inference" and "multi-scale competency" may name the same property at different grains. The FEP version is precise (an ambiguity set over generative models, worst-case optimization) and the Levin version is empirical (regeneration, morphogenetic goal-seeking under novel perturbation). If the identification holds, Levin's competency acquires a formal definition and DR-FREE acquires a biological instance; if it fails, the point of failure tells the network where competency exceeds robustness.
+
+**Open question the wiki cannot yet answer:** Is a planarian regenerating after an unprecedented cut optimizing against an ambiguity set, or doing something the ambiguity-set formalism cannot express (goal revision rather than goal-robustness)? Neither tradition has stated the test.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-08-31_friston_dr-free-distributionally-robust-fep]]

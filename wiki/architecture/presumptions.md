@@ -18132,3 +18132,440 @@ PRESUMPTION-911:
     Transform at each step:
       14b: Self-referential; inferred from this run's source declaration. Successor to PRESUMPTION-903. High confidence.
     Current status: UNTESTED
+
+## 2026-09-05 — 14b intake (unattended day; sources are agent-run notes)
+
+**Coverage declaration.** Same sources as 14a's 2026-09-05 intake. No designer speech is available for the day. The presumptions below are therefore mostly about what the *agents* took for granted — and, in two cases (912, 917), about what this pipeline itself takes for granted when it runs on a day like this.
+
+PRESUMPTION-912:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] On a day with no attended session, the assumptions stated by scheduled agents in their run notes are the right input for a register whose purpose is "the epistemic foundations of design decisions." Agent-authored premises and designer-authored premises are treated as the same kind of item.
+  Evidence it was operative: this run. 14a filed seven ASSUMPTION items today, all quoted from agent output (15c, the digest agent). The 09-04 run filed fourteen from working files an agent wrote. The register has no field distinguishing a premise Tom articulated from one an agent articulated in Tom's absence; `Item type: ASSUMPTION (stated — quoted from an agent run note)` is a free-text note, not a filterable tag. Meanwhile `decisions.md` ends at DECISION-083 (nine days) — the designer-authored channel is static while the agent-authored channel adds ~7–14 items a night.
+  Why it was unstated: too foundational to notice — the agent definitions say "session transcripts" and presume a human in them.
+  Type: structural
+  Related decisions: none (OPEN-174 adjacent)
+  Testability: testable in-house — add authorship (designer | agent-under-delegation | agent-unattended) to each item since 2026-08-27 and report the ratio. Whether the ratio *matters* is a ruling for Tom (OPEN-182).
+  Risk if wrong: Medium — the register's growth rate becomes a measure of agent verbosity rather than of design activity; downstream metrics (assumptions total, tested, supported) inherit the conflation.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-912
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Self-referential; inferred from today's source declaration and the composition of the last two intakes. High confidence that it is operative; whether it is a problem is not 14b's call.
+    Current status: UNTESTED
+
+PRESUMPTION-913:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] Harness interruption of a subagent is independent of the item it was searching. The 14 subagent-written files and the 8 orchestrator-written files are treated as two authorship classes, not as a selected sample and its complement.
+  Evidence it was operative: the 15c run note declares which files the orchestrator wrote and discounts one pair for lost independence, but nowhere asks *which* items were lost — whether long, contested, or literature-heavy searches were the ones interrupted. If interruption correlates with search duration, the surviving subagent files are biased toward the searches that finished fastest, and the orchestrator's re-runs (written under time pressure at the end of the run) cover the hardest items.
+  Why it was unstated: obvious to participants — an interruption reads as an external accident, not as a filter.
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — for the 22 files: authorship, item, interrupted-or-not, file length, number of sources; test whether the interrupted set differs on length or source count.
+  Risk if wrong: Medium — the run's confidence gradings are systematically weaker exactly where the items are hardest.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-913
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an absent question in the EXECUTION FAILURE block. Medium confidence — the interruptions may well be uncorrelated; the point is that no one checked.
+    Current status: UNTESTED
+
+PRESUMPTION-914:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] Within a single context, having *written* a FOR argument for one item does not condition the AGAINST argument that same context later writes for a *different* item. Independence is a property of file-reading, not of the writer's state.
+  Evidence it was operative: ASSUMPTION-1263's definition ("no 15a file was read before its 15b file was written") and the run's acceptance of "execution independence does not hold" for 8 files as a lesser defect than "search independence does not hold" for 1 item. A context that has just argued FOR five sandbox-quality premises and then argues AGAINST three neighbouring ones is not blind in the sense the 15a/15b split was designed to secure; the split exists (agent definitions) precisely because one mind arguing both sides is thought insufficient.
+  Why it was unstated: culturally embedded — independence is operationalised in software as "did not access the artifact."
+  Type: epistemic
+  Related decisions: none (the 15a/15b division of labour; REVISE-426/427)
+  Testability: testable via literature — sequential-judgment carry-over and confirmation effects when one evaluator argues opposed positions on related items; whether artifact-blinding is sufficient for evaluator independence.
+  Risk if wrong: Medium — 8 of 22 files this cycle carry a discount that may be too small; the run already flags it "on top of" PREMISE-197.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-914
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the operational definition of independence in the run note. High confidence it is operative. Paired with ASSUMPTION-1263 — 14a holds the stated definition, 14b holds the premise beneath it.
+    Current status: UNTESTED
+
+PRESUMPTION-915:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] The structure of the layered account (total order, lattice, or per-tradition ladders) is a matter for Tom to *rule* before III.2.0 is written, rather than a matter the corpus or the tracked traditions could *settle*. "Three rulings ... none needs literature, all need you."
+  Evidence it was operative: the digest's "For Morning Discussion" and revision_flags' block header both frame REVISE-433 as a choice among (a)/(b)/(c). But 15c's own reading is that "the table already answers (b) or (c)" — i.e., the source material may already have decided it. If so, the correct action is a reading, not a ruling; presenting it as a ruling invites the designer to impose what the corpus already shows (or contradicts). The Kuhnian evidence framework (kuhnian_evidence_framework.md) treats such structure questions as evidence-bearing.
+  Why it was unstated: obvious to participants — Tom is the author; his ladder is his to shape.
+  Type: normative
+  Related decisions: none; governs OPEN-179, OPEN-181
+  Testability: framework commitment in part; testable in-house — does the sandbox (rows 247–250, 292+) contain enough to *decide* (b) vs (c) without a new ruling? A reading pass with a stated decision rule would tell.
+  Risk if wrong: Medium — a ruling made where a reading was possible is a decision without evidence, entered in a register meant to record evidence-bearing decisions.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-915
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a tension inside the same block — "needs you" vs "the table already answers." Medium confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-916:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] A 50-cell sample "stratified by confidence × batch" yields per-stratum accuracy estimates worth acting on.
+  Evidence it was operative: REVISE-432 and the digest recommend "accuracy per stratum, κ per field." Confidence has 3 levels, batches number 8: **24 strata, ~2 cells each** (50/24 ≈ 2.1). The `low` stratum holds 70 of 2,402 cells (2.9%); proportional allocation puts ~1.5 low cells in the whole sample. Per-stratum accuracy at n≈2 is 0%, 50% or 100%. The design as stated cannot deliver what it promises; either the sample is larger, the stratification coarser, or "per stratum" means something other than what it says. No one computed it.
+  Why it was unstated: oversight — "stratified" was written as a quality word, not a design.
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — the arithmetic above is the test; it is done. What remains is a redesign (e.g., stratify by confidence only, n≈17 per level with `low` oversampled; batch as a covariate).
+  Risk if wrong: Medium — ASSUMPTION-1266's "one measurement closes three flags" fails silently: the measurement runs, produces numbers, and the numbers mean nothing per stratum.
+  Status: CHALLENGED (in-house arithmetic)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-916
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the sample design in REVISE-432; checked by arithmetic (3 × 8 = 24; 50 / 24 ≈ 2.08; 70 / 2,402 = 2.9%). High confidence. 14b does not recommend the redesign; it notes that one is needed before ASSUMPTION-1266 can hold.
+    Current status: CHALLENGED
+
+PRESUMPTION-917:
+  Date surfaced: 2026-09-05
+  Statement: [inferred] "No attended Cowork session" means no design activity occurred. Absence from Cowork is read as absence, full stop.
+  Evidence it was operative: the digest's opening ("No attended Cowork session today ... The vault moved anyway") and this pipeline's own coverage declaration. Both sync directions failed today (OPEN-168, day fourteen), so any Chat-side thinking — the daily walk, for instance, which the digest exists to feed — is invisible to Cowork by construction. On a day the channel is dead, "nothing happened" and "nothing was seen" are indistinguishable from here, and the digest chose the first reading.
+  Why it was unstated: too foundational to notice — the observer's coverage is presumed to be the field.
+  Type: epistemic
+  Related decisions: none; OPEN-168
+  Testability: testable in-house — when the channel is restored, compare Chat activity on 2026-09-05 (if any) against this day's "none."
+  Risk if wrong: Low–Medium per day; cumulative — fourteen days of dead channel means fourteen days for which the vault's account of Tom's design thinking is a floor, not an estimate. Successor to PRESUMPTION-903/911 (what the pipeline cannot see).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-917
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the coincidence of a "quiet day" declaration with a dead observation channel. High confidence that the conflation is operative; no evidence either way on whether anything was missed.
+    Current status: UNTESTED
+
+PRESUMPTION-918:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] A context that has lost evaluator independence can accurately assess how much its lost independence mattered. The SYSTEMIC-RISK-FLAG about orchestrator-written AGAINST files was itself an orchestrator-written AGAINST-side file.
+  Evidence it was operative: the 15c context wrote the three 15b files after reading the 15a files, then wrote the flag naming that practice as High risk, then dispositioned all three pairs — declaring throughout. The declaration is treated as sufficient correction; no item was left [SEARCHED-15a] only, which was the flag's own recommendation (3).
+  Why it was unstated: too foundational to notice — declaring a bias is felt as discharging it.
+  Type: epistemic
+  Related decisions: none; REVISE-436; ASSUMPTION-1270, ASSUMPTION-1272
+  Testability: testable via literature — bias blind spot and the limits of self-assessed bias correction (Pronin et al.; Wilson & Brekke mental contamination); disclosure effects (Cain, Loewenstein & Moore). Testable in-house — fresh-context AGAINST on the three 09-06 items, compared with the orchestrator's.
+  Risk if wrong: High — the pipeline's self-audit layer (declarations, systemic-risk flags) is produced by the same context whose independence it audits; if declaration does not correct, the audit is decorative.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-918
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the authorship of the SYSTEMIC-RISK-FLAG (PROVENANCE: "Written by the 15c orchestrating context acting as 15b") set against its own recommendation (3). High confidence that the conflation was operative.
+    Current status: UNTESTED
+
+PRESUMPTION-919:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] "No files in ~55 minutes" means the delegated 15b launch failed, rather than that it was slow; the harness's timing behaviour is presumed known well enough to call failure by the clock.
+  Evidence it was operative: the orchestrator began writing AGAINST files at the 55-minute mark. The 09-05 run recorded that interrupted launches "had written some or all of their files before the interruption" — i.e. the interrupted/failed distinction was already unreliable.
+  Why it was unstated: obvious to participants — a budget had to be spent somewhere.
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1264 (launch record), REVISE-436
+  Testability: testable in-house — the 15b result files' mtimes vs the orchestrator's start time; any file written by the subagent after the fallback began would show as a duplicate or overwrite.
+  Risk if wrong: Medium — the fallback (which REVISE-436 asks Tom to rule on) is triggered by a clock, and a faster harness or a slower model changes how often it fires without any design change.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-919
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the EXECUTION DECLARATION's "~55 minutes" and the 09-05 launch record. Moderate confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-920:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] The III.2 relations (component-of, contributes-at, precedes) already exist as triples that a linear-extension test can consume — that the corpus contains relational data, not prose from which relations must be extracted by a reading that is itself a ruling.
+  Evidence it was operative: DISPOSITION-909's decisive in-house test is stated as "run the linear-extension test on the III.2 triples" with no extraction step. REVISE-434 (one paragraph of misplacement fault classes before the 16k-line read) is the standing acknowledgment that reads of this corpus need a criterion first.
+  Why it was unstated: oversight — the test's cheapness was the point, and the extraction cost was not in view.
+  Type: structural
+  Related decisions: none; MONITOR-597, REVISE-433, REVISE-434, OPEN-179, OPEN-181
+  Testability: testable in-house — open `TL_sandbox_reordered.md` §III.2 and count cells that state one of the three relations explicitly vs cells from which one would be inferred.
+  Risk if wrong: Medium–High — the test meant to precede the ruling (PRESUMPTION-915's remedy) would require a ruling to construct its input; the sequence "rule first, then check" is inverted back to "read first, which is a ruling."
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-920
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the absence of an extraction step in DISPOSITION-909's test design. High confidence the gap is there; no evidence yet on whether the triples exist.
+    Current status: UNTESTED
+
+PRESUMPTION-921:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] A tradition's monthly activity is what its named thinker authored. Papers by other groups in the same programme were excluded from the Friston sweep as "by other groups"; the tradition is presumed to be an author, not a school.
+  Evidence it was operative: Friston agent: "Three August 'active inference' arXiv papers surfaced and all three are by other groups" — no proposal, no retrieval candidate. Levin: only Levin's own channels swept.
+  Why it was unstated: culturally embedded — the agents are named for people (19_rohr_agent, 20_loughran_agent), so the unit of tracking inherited the naming.
+  Type: structural
+  Related decisions: none; ties to the founding framing "14 thinkers" (cf. PRESUMPTION-001 family, if present)
+  Testability: testable via literature — MacIntyre's traditions are carried by communities of enquiry, not individuals; Kuhn's paradigm/disciplinary matrix; Collins's interaction-ritual chains. Whether the active-inference programme's progress is legible from Friston's own output alone is an empirical question the proposal pipeline could answer by sampling.
+  Risk if wrong: Medium — the accelerator's "tradition" agents would be tracking figureheads, and the detector would miss the intra-tradition consensus rate (Stage 2 metric) by construction, since one author cannot disagree with himself.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-921
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the Friston exclusion rule in the 2026-09-07 Monday agents transcript. High confidence the rule was operative; whether it is by design or by default is not visible from the transcript.
+    Current status: UNTESTED
+
+PRESUMPTION-922:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] A skipped 14a/14b run costs nothing: the next run can absorb the missed day's material without loss because the registers are append-only and order-insensitive.
+  Evidence it was operative: the 09-06 end-of-day run did not happen (no changelog, no snapshot, no backup dated 0906); this run, at 10:53 local on 09-07, filed 09-06's cycle as if consecutive. The same happened 08-30 → 09-04. Nothing in the task file distinguishes a gap-fill from a normal run.
+  Why it was unstated: obvious to participants — a register is a register.
+  Type: scaling
+  Related decisions: none; OPEN-182, OPEN-183; PRESUMPTION-917
+  Testability: testable in-house — enumerate what was date-sensitive on 09-06: 15d re_check_due 2026-09-06 (7 monthly premises, 344 low-priority monitors, weekly blocks) all fell due on a day this pipeline did not observe; whether anything consumed them is checkable.
+  Risk if wrong: Low per instance; cumulative — 15d already records dates advancing "whether or not anything consumes them" (monitor_queue.md 2026-08-02). A self-awareness layer that gap-fills silently reproduces the pattern it flagged.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-922
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from this run's own timing and the absence of 09-06 artefacts. High confidence.
+    Current status: UNTESTED
+
+---
+
+## 2026-09-07 — evening run (14b). Second run of the date; covers 10:53 → 23:40 EDT.
+
+*Checked against 14a's ASSUMPTION-1276–1282 (same run) and against PRESUMPTION-912–922 (the 10:53 run)
+for duplication. Six surfaced.*
+
+PRESUMPTION-923:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] The human-paste gate is a property of the individual tasks, not of the system's
+    design. Every mechanical, reversible, claim-free change is queued behind Tom's Terminal because that
+    is how each task happens to be written — so the fix for a stalled recommendation is to remind him,
+    never to ask which class of actions the no-blind-push rule actually needs to cover.
+  Evidence it was operative: `COMMIT_ME_2026-09-07.sh` exists as a script the sandbox wrote and cannot
+    run; the sewing report's follow-through table shows 4 of 5 recommendations NOT DONE, three of them
+    first raised 08-09/08-16/08-23, all of them file-writes with a supplied generator; the evening
+    summary states the pattern outright — "every script-owned part of this system keeps improving; every
+    item that waits on a human paste is exactly where it was" — and then files it as discussion item 7
+    rather than as a design question. Nothing in any register asks whether a deterministic gate
+    (fixture + neutralised control + reversibility, i.e. ASSUMPTION-1277's own method) could discharge
+    the rule for that class.
+  Why it was unstated: too foundational to notice — the no-blind-push rule is treated as a constant of
+    the environment rather than as a scoped policy with a boundary that could be drawn somewhere else.
+  Type: structural
+  Related decisions: none; OPEN-184 (this run); ties to the sewing follow-through series 08-09 onward
+  Testability: testable in-house — classify the 8 standing sewing recommendations and the 09-07 commit
+    by (writes claims? reversible? has a passing fixture + neutralised control?). If a non-empty subset
+    is all-no/yes/yes, the rule's current scope is wider than its rationale and the gate is the design,
+    not the tasks.
+  Risk if wrong: High — if this is false the queue is simply Tom's backlog and will drain. If it is
+    true, the system's throughput ceiling is set by a rule nobody has scoped, and every additional
+    script-owned improvement widens the gap the evening summary just measured.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-923
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the evening summary naming the pattern and no register holding
+        it as a question. High confidence the presumption is operative; the summary's own item 7 is
+        near-explicit and is the reason this is filed as [inferred] rather than routed to 14a.
+    Current status: UNTESTED
+
+PRESUMPTION-924:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] A scheduled task that declines its own primary phase is still a task. Twelve
+    firings, twelve declines, and the scheduler entry is unchanged — because the scheduler is
+    infrastructure, and infrastructure is outside the register system that governs everything else in
+    this project.
+  Evidence it was operative: the bootstrap audit has fired 06-23, 06-28, 07-06, 07-12, 07-19, 07-26,
+    08-02, 08-09, 08-16, 08-23, 08-30, 09-07 and has declined Phase 3 every time since 06-28, re-deriving
+    the decline from scratch each run; the evening summary's item 2 groups three such tasks (sewing
+    bootstrap, Openstory step 2, the 14 run's two missed days) and classifies them as "scheduler
+    decisions, not project decisions" — a category with no register, no numbering, and no escalation path,
+    which is why they have accumulated. `decisions.md` has held at DECISION-083 for eleven days while
+    this class grew.
+  Why it was unstated: culturally embedded — the project has a decision register for design and a cron
+    table for operations, and the boundary between them was never drawn, so operations decisions have
+    nowhere to be recorded and therefore are not made.
+  Type: structural
+  Related decisions: DECISION-083 (last); OPEN-183 (missed-run filing) is the same boundary seen from
+    the other side
+  Testability: testable in-house — count decisions in the last 30 days that are properly scheduler
+    decisions and check how many were recorded anywhere. Prediction if the presumption holds: zero.
+  Risk if wrong: Medium — a bookkeeping gap. If it holds: the fastest-accumulating class of pending
+    decisions in the system is the one class with no register, and the eleven-day stall in `decisions.md`
+    is partly an artefact of miscategorisation rather than of deferral.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-924
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the twelve-firing series plus the evening summary's own category label, which
+        names a class the register system does not contain. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-925:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] A day reconstructed from file mtimes and agent run-reports has the same
+    evidential standing as one read from session transcripts — mtime is a reliable authorship and
+    timing signal.
+  Evidence it was operative: the 18:40 Cowork→Chat run states "Session transcripts were not read this
+    run — the day is reconstructed from file evidence, register tails, and agent run reports, which for
+    an unattended afternoon is the same thing." The equivalence is asserted in passing, not argued. Two
+    things in the same day contradict its premise: (i) ASSUMPTION-1276, extracted this run, is the
+    finding that *mtime is not an authorship signal in this repo* — the 09-05 commit sweep was caused by
+    exactly that error; (ii) a mass-mtime batch at 22:00 touched roughly sixty files across
+    `architecture/`, `synthesis/`, `vault/`, `heartbeat/` and `inbox/proposals/pending/` — including all
+    five self-awareness registers — with no corresponding content change, the second such batch in two
+    days (09-06 22:09). A reconstruction keyed on mtime cannot distinguish those from work. The day was
+    also not fully unattended: an attended session ran ~10:50–11:00.
+  Why it was unstated: too foundational to notice — mtime is what the filesystem offers, and the
+    alternative (reading transcripts) is expensive, so the substitution was made under budget pressure
+    and then described as costless.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1276 (same run, opposite conclusion), PRESUMPTION-912 (agent-
+    sourced intake), OPEN-182
+  Testability: testable in-house and via literature. In-house: diff content hashes against mtimes across
+    the 22:00 batch and measure what fraction of mtime changes correspond to content changes — the
+    number is the error rate of every mtime-based reconstruction in this project. Via literature:
+    filesystem-metadata reliability in digital forensics and archival provenance is a studied question
+    with a settled negative answer.
+  Risk if wrong: Medium-High — the daily sync summaries, the changelog's "Changes Detected" section and
+    parts of every metrics snapshot are built on this. If mtime is noisy at the observed rate, the
+    self-awareness layer's account of what happened on a given day is partly a record of a sync process.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-925
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 18:40 run note read against 14a's ASSUMPTION-1276 and against this run's own
+        `find -newermt` sweep, which surfaced the 22:00 batch. High confidence: the two claims are held
+        by the same layer on the same day and are inconsistent.
+    Current status: UNTESTED
+
+PRESUMPTION-926:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] Movement in a connectivity metric is meaningful independently of what generated
+    the denominator. "Connected 69 → 65" is read as a result about sewing; "orphans +131" is read as a
+    result about the vault.
+  Evidence it was operative: the sewing report calls the −4 "its one bad one" and gives it a paragraph
+    of mechanism, while recording in the next section that +149 of the period's pages are machine output
+    of which "every page in the first and third is an orphan by construction" and "401 of the 449
+    `inbox/proposals` pages emit no links at all." Both facts are present; the inference that the ratio
+    is therefore measuring generation rate rather than connectivity is not drawn, and the metric is
+    carried forward unadjusted into `connectivity_log.csv` and the evening summary.
+  Why it was unstated: normative smuggling — "connected should go up, orphans should go down" was fixed
+    at the metric's creation, before the corpus acquired a machine-generated majority.
+  Type: normative
+  Related decisions: none; ties to the connectivity_log series and to PRESUMPTION-927 (this run)
+  Testability: testable in-house — recompute the four census figures over human- and agent-authored
+    pages separately (the directory split is already a good proxy). If the human-authored sub-corpus is
+    flat or improving while the aggregate declines, the aggregate is not measuring what it is read as
+    measuring.
+  Risk if wrong: Medium — the metric is merely noisy. If it holds: eight weeks of a headline series has
+    been tracking output volume, and the one "improvement" this run reported (synthesis inert pages
+    40 → 34) is the only figure in the table computed over a corpus the generators do not inflate.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-926
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two adjacent sections of the same report that are not read against each other.
+        High confidence the presumption is operative; the report supplies both premises and declines the
+        conclusion.
+    Current status: UNTESTED
+
+PRESUMPTION-927:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] The self-awareness and lit-search layers observe the corpus from outside it.
+    Their output is not treated as a variable in any measurement of the corpus, even where it is
+    physically counted in one.
+  Evidence it was operative: `architecture/lit_search_results` holds **2,661** of the **4,879** markdown
+    pages in the vault — **54.5%** — and grew +95 in eight days; `architecture/daily_sync` holds 230 and
+    grew +17. Every one of them is counted by the census as a vault page and as an orphan. No register
+    of the 14/15 pipeline records its own output volume; the metrics snapshot counts assumptions,
+    presumptions, premises, flags and queue tags, and never counts pages written. The audit apparatus is
+    the majority of the thing audited and this is nowhere stated.
+  Why it was unstated: obvious to participants in the wrong direction — the layer was designed as an
+    observer, and observers are not in the frame.
+  Type: scaling
+  Related decisions: none; PRESUMPTION-926 (same measurement, different limb); OPEN-185 (this run)
+  Testability: testable in-house, and already half-measured: the split is a `find` away and is reported
+    above. What is untested is the consequence — whether any downstream metric, ranking or graph view
+    changes materially when the apparatus is excluded from the corpus.
+  Risk if wrong: Medium — if the apparatus is properly in-corpus, then the growth is the project and the
+    census is fine. If it is properly out-of-corpus, then every connectivity figure since roughly 08-02
+    has a majority-share confound, and the graph visualisation's node population is mostly audit exhaust.
+    Nobody has been asked which it is; that is the finding.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-927
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the census composition figures in the 11:58 report, re-measured independently
+        this run (2,661 / 4,879). High confidence; the arithmetic is not in dispute, only its absence
+        from every register.
+    Current status: UNTESTED
+
+PRESUMPTION-928:
+  Date surfaced: 2026-09-07
+  Statement: [inferred] "No ruling" is a neutral state — an item awaiting a binary decision is paused,
+    and nothing is being decided while it waits.
+  Evidence it was operative: REVISE-436's binary has now had four lit-search cycles run under it
+    (09-05, 09-06, 09-07 intake, 09-07 disposition) and the 08-25 binary is thirteen days unanswered, at
+    the fourteenth consecutive escalation carry. In every one of those cycles the system behaved as
+    though option (b) had been chosen: twelve orchestrator-written AGAINST files exist and are admitted
+    as "discounted" readings. Today's clean 3/3 run was produced by a launch-mode change made inside a
+    run, not by a ruling. The registers describe the queue as "awaiting your ruling" throughout; none
+    describes the practice that ran meanwhile as a ruling.
+  Why it was unstated: culturally embedded — escalation is experienced as filing, and a filed item feels
+    like a stopped item. The escalation format itself ("ESCALATION CARRIED, fourteenth consecutive run")
+    reinforces it: the counter measures waiting, not the cycles that ran during the wait.
+  Type: epistemic
+  Related decisions: DECISION-083 (last, 08-27); REVISE-426/427/428/433/436/438; PRESUMPTION-918
+  Testability: testable in-house — for each open binary, enumerate the runs executed since it was raised
+    and which limb each de facto implemented. Testable via literature — status-quo bias and the
+    default-as-decision result (Samuelson & Zeckhauser 1988; Johnson & Goldstein 2003) address exactly
+    the claim that non-decision is not a decision.
+  Risk if wrong: High — if this is false, the escalation queue is working and Tom's rulings will apply
+    cleanly on arrival. If it holds, then the twelve fallback files, four cycles of practice and one
+    SYSTEMIC-RISK-FLAG were generated under an unrecorded standing ruling, and REVISE-438's "the
+    literature answers the binary" arrives after the binary has been answered in practice for a fortnight.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-928
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the escalation counter's own framing read against the run history it spans.
+        High confidence. Distinguished from PRESUMPTION-918 (which concerns whether declaring a breach
+        discharges it) — this concerns whether declining to rule is itself a rule.
+    Current status: UNTESTED

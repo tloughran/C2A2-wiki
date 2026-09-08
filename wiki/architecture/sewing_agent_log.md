@@ -1198,3 +1198,110 @@ total, 5 zero-byte (all pre-existing, listed above). CSV row written once behind
 `wiki/architecture/metrics`: **243 insertions, 0 deletions.** No JS or HTML touched, so no
 `node --check` was needed. No probe or test files left in the vault. Nothing committed, nothing
 pushed.
+
+---
+
+# Sewing Agent Run — 2026-09-06 (Sunday)
+
+**Run type:** scheduled weekly (`c2a2-sewing-agent-weekly`). Vault: `wiki/`. Run time ~05:45-06:00 local.
+
+## Connectivity snapshot
+
+| | 08-23 | 08-30 | **09-06 (pre-run, logged)** | **09-06 (post-run)** |
+|---|---|---|---|---|
+| total pages | 4,505 | 4,730 | **4,961** | 4,961 |
+| orphan (0 backlinks) | 3,772 | 3,958 | **4,182** | 4,172 |
+| sparse (1-2) | 669 | 693 | **704** | 712 |
+| connected (3+) | 64 | 79 | **75** | 77 |
+
+**CSV row appended once, behind a grep guard:** `2026-09-06,4182,704,75,4961` — pre-run census,
+per the 08-23/08-30 convention. No new files created this run (all 12 bridge notes were appends
+to existing files), so total pages is unchanged post-run.
+
+## Pages processed (10, all `inbox/proposals/pending/`, 0 backlinks each before)
+
+16 pending proposals had no `## Agentic Calls` section and 0 backlinks. Ten were chosen for
+tradition spread and recency: all four 09-06 arrivals, then one each from Carroll, McGilchrist,
+Hawkins, Friston and two from Kastrup. Nothing in `wiki/traditions/` qualified (no zero-backlink
+members again this week). `architecture/metrics/` and `review/archive/` untouched.
+
+| page | backlinks before → after | calls |
+|---|---|---|
+| `2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites` | 0 → 3 | 7 |
+| `2026-09-06_rohr_faith-and-doubt-correlative` | 0 → 1 | 5 |
+| `2026-09-06_wright_human-nature-as-vocation-not-good-or-evil` | 0 → 1 | 5 |
+| `2026-09-06_wright_third-race-not-supersession-but-enlargement` | 0 → 2 | 5 |
+| `2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence` | 0 → 1 | 7 |
+| `2026-09-02_kastrup_levin-redefining-rules-of-life` | 0 → 2 | 6 |
+| `2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness` | 0 → 3 | 5 |
+| `2026-09-02_mcgilchrist_can-you-still-be-human` | 0 → 2 | 5 |
+| `2026-09-01_hawkins_arc-agi-3-monty-gap` | 0 → 1 | 5 |
+| `2026-08-31_friston_dr-free-distributionally-robust-fep` | 0 → 1 | 4 |
+
+**Agentic calls injected: 54.** Thinkers addressed (call count): Friston 9, Levin 8, Stump 7,
+Kastrup 6, Loughran 6, Hoffman 5, Rohr 3, Wright 3, McGilchrist 3, Wolfram 3, Fredrickson 2,
+Carroll 1, Hawkins 1, Arkani-Hamed 1. Relevance threshold > 0.4; Wolfram scored exactly 0.40 on
+DR-FREE and was deliberately not called.
+
+**Still pending, no calls (6):** the 08-31 Friston interoceptive-AI and Levin Q&A-5 proposals,
+the 09-01 Hawkins grid-cell and Monty-hardware proposals, the 09-02 Carroll/Al-Khalili and
+McGilchrist UnHerd proposals. Next run's first-priority batch if still unpromoted.
+
+## Bridge notes written (12, all appends to existing files; none created)
+
+`rohr_stump`, `mcgilchrist_rohr`, `wright_rohr`, `stump_wright`, `carroll_levin` (recorded as
+tension, per the standing note), `kastrup_levin`, `friston_kastrup`, `kastrup_stump`,
+`kastrup_mcgilchrist`, `fredrickson_mcgilchrist`, `friston_hawkins`, `friston_levin`. Each
+carries one synthesis claim and one question the wiki cannot yet answer, plus wikilinks to the
+orphaned page(s), which is where the backlink gains above come from.
+
+## Worth Tom's attention
+
+**1. Four proposals in this batch are built on descriptions, not sources, and the calls say so.**
+Both Wright episodes (description only; one paywalled), the Kastrup Q&A (producer's announcement;
+recording unpublished), and the Kastrup-Levin dialogue (publisher write-up; paywalled). The
+Carroll Volume 3 proposal is worse: its own verification gate is open, the author's site does not
+list the book, and the retailer shows not-shipping. Every call instructs the receiving node to
+carry the caveat verbatim and, for Carroll, to ingest nothing. **Two of these could be closed
+with your With Reality in Mind member access** (the Levin dialogue and, once published, the
+Mind-at-Large Q&A); the platonic-space exchange is the single highest-value withheld item.
+
+**2. A timestamped position shift may be observable.** Kastrup's membership put Levin's thesis
+(minds as substrate-independent patterns) to him six days after his third dialogue with Levin.
+If the two recordings differ, that is a dated movement in a position, which the C2A2 study almost
+never gets to see. Both agents are instructed to code independently before comparing.
+
+**3. The Rohr paradigm-flag duplication is now four-deep, and the Wright side is arriving.**
+Three 08-30 Rohr proposals and now 09-06-003 each file the Summa central theme as a separate
+CROSS candidate; Wright 09-06-001 is flagged by its author as the corporate half of the same
+theme. The Loughran calls on both 09-06 pages ask for **one** CROSS entry folding all of them,
+not a fifth flag.
+
+**4. Retrieval is interview-biased, by the wiki's own evidence.** The McGilchrist Substack essay
+sat uncaptured for a year while eleven interview-derived proposals landed. The proposal itself
+recommends a one-off backfill sweep of the 2025 Substack run; the McGilchrist and Loughran calls
+repeat it. It carries a dated, hedged prediction (window closes 2027-09-05) that the wiki can
+score, which the tradition otherwise lacks.
+
+**5. Metric inflation, eleventh consecutive flag.** `architecture/` is still the bulk of the
+orphan count (the 09-06 jump of +224 orphans is almost entirely `lit_search_results` and
+`daily_sync` machine dumps; 231 new pages this week, 10 fewer real orphans post-run). Same
+recommendation as the previous ten runs: split the CSV into curated and machine columns.
+
+**6. Five zero-byte bridge files remain** (`arkanihamed_loughran`, `hoffman_loughran`,
+`carroll_hawkins`, `kastrup_loughran`, `mcgilchrist_wright`). Unchanged. This agent does not
+delete.
+
+**7. Token budget breached, eleventh consecutive run, disclosed.** Reading ten 4-12 KB proposals,
+authoring 54 calls and 12 bridge notes, and two full 4,961-page censuses exceeds Rule 6's 4,000
+per task. Recommendation unchanged: exempt scheduled agents or derive the batch cap from budget.
+
+**8. Nothing committed, nothing pushed.** Sandbox cannot write `.git`; `scripts/commit_daily_run.sh`
+closes this from the Mac.
+
+**Verification (fail-loud):** all 10 pages assert-checked as still beginning with their pre-write
+bytes, exactly one `## Agentic Calls` and one `Sewing Agent on 2026-09-06` stamp each, YAML
+frontmatter and `## Cross-Tradition Signals` intact. All 12 bridge files assert-checked the same
+way, one `Sewing Agent, 2026-09-06` stamp each. CSV row: 1 occurrence. `git diff --numstat` over
+`wiki/synthesis`, `wiki/inbox/proposals`, `wiki/architecture/metrics`: **281 insertions,
+0 deletions** (before this log entry). No JS/HTML touched. No probe files left in the vault.

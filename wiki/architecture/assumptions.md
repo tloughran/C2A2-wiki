@@ -22263,3 +22263,398 @@ ASSUMPTION-1262:
     Transform at each step:
       14a: Extracted verbatim; re-counted three of four figures from primary files.
     Current status: SUPPORTED
+
+## 2026-09-05 — 14a intake (unattended day; sources are agent-run notes)
+
+**Coverage declaration.** No attended Cowork session on 2026-09-05 (Saturday). All sessions reachable via `session_info` were scheduled runs. Both Chat↔Cowork sync directions failed (OPEN-168, day fourteen), so no Chat activity is visible either. Sources for this intake: `for_lit_search.md` 2026-09-05 15c run note, `revision_flags.md` REVISE-430–434 block, `lit_search_returns.md` 2026-09-05 section, `daily_sync/cowork_to_chat/2026-09-05_cowork_summary.md`. Every item below is a **stated** claim made by an agent, not by Tom. The designer-authored count for the day is zero; see PRESUMPTION-912 for what that means for this register.
+
+ASSUMPTION-1263:
+  Date identified: 2026-09-05
+  Statement: "Search independence holds for 10 of 11 items (no 15a file was read before its 15b file was written, or vice versa, for any item; the orchestrator wrote its three FOR files before beginning any AGAINST search)."
+  Context: 15c run note, EXECUTION FAILURE block, for_lit_search.md 2026-09-05. Nine of twelve subagent launches were interrupted; 15c wrote 8 of 22 result files itself.
+  Type: methodological
+  Related decisions: none (REVISE-426/427 area)
+  Testability: testable via literature — whether "did not read the opposing file" is the operative condition for independence between two judgments made by one context in sequence (order effects, carry-over/anchoring in sequential evaluation).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1263
+    Item type: ASSUMPTION (stated — quoted from an agent run note)
+    Transform at each step:
+      14a: Extracted verbatim. The claim defines independence as non-reading of files; it is the definition, not the fact, that is at issue. Paired with PRESUMPTION-914.
+    Current status: UNTESTED
+
+ASSUMPTION-1264:
+  Date identified: 2026-09-05
+  Statement: "If delegation is again unreliable, run 15a fully (all items) in one subagent and 15b fully in another, sequentially, rather than splitting by item group — fewer launches, and a single interruption loses less."
+  Context: 15c run note, recommendation for the next run.
+  Type: architectural
+  Related decisions: none
+  Testability: testable empirically — the next 15-pipeline run can record launches, interruptions and files-lost-per-interruption under whichever layout it uses; the prediction is that loss per interruption falls.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1264
+    Item type: ASSUMPTION (stated — quoted from an agent run note)
+    Transform at each step:
+      14a: Extracted verbatim. Note the prediction's premise: "a single interruption loses less" assumes interruptions are per-launch events, not per-elapsed-time events (a longer single launch may be *more* likely to be interrupted). Not adjudicated.
+    Current status: UNTESTED
+
+ASSUMPTION-1265:
+  Date identified: 2026-09-05
+  Statement: "This is a data point for REVISE-426/427 (does adding agents add value?): the multi-agent design degraded to one context under harness pressure and the run had to say so rather than let the file names imply otherwise."
+  Context: 15c run note, EXECUTION FAILURE block.
+  Type: epistemic
+  Related decisions: none (REVISE-426/427/428 open)
+  Testability: framework commitment in part; the "data point" framing is testable in-house — count how many 15-pipeline runs since 2026-07-31 achieved the declared multi-agent layout vs. degraded to one context.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1265
+    Item type: ASSUMPTION (stated — quoted from an agent run note)
+    Transform at each step:
+      14a: Extracted verbatim. **Self-referential observation:** the run treats a degradation of its own architecture as evidence about that architecture — the system is generating data about REVISE-426 by failing at it.
+    Current status: UNTESTED
+
+ASSUMPTION-1266:
+  Date identified: 2026-09-05
+  Statement: "The five REVISEs are three decisions ... One gold sample answers three of them." — the 50-cell blind gold sample stratified by confidence × batch is asserted to close REVISE-432, MONITOR-595 and MONITOR-596.
+  Context: 15c run note and revision_flags.md block header; repeated in the 09-05 digest as "One in-house measurement closes three flags."
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — the sample design's arithmetic is checkable now (see PRESUMPTION-916); whether it "closes" three flags is checkable once run.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1266
+    Item type: ASSUMPTION (stated — quoted from an agent run note and digest)
+    Transform at each step:
+      14a: Extracted verbatim. Third circulation of the same derived aggregate today ("five → three"; "one → three"), unchanged across three files — consistent this time, unlike PREMISE-191's pattern.
+    Current status: UNTESTED
+
+ASSUMPTION-1267:
+  Date identified: 2026-09-05
+  Statement: "Every quality claim about the 2,402 cells is a self-measurement, which is PREMISE-124 in a new domain."
+  Context: SYSTEMIC-RISK-FLAG (High), lit_search_returns.md 2026-09-05; cited in the 15c run note.
+  Type: epistemic
+  Related decisions: none
+  Testability: testable in-house — enumerate the quality claims made about the sandbox classification (assignments.csv confidence; 92.4% voice match; 70-cell review set; 27 III.2.B) and mark each as produced by the classifying system or by an external check. The flag predicts the external-check column is empty.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1267
+    Item type: ASSUMPTION (stated — quoted from an agent disposition record)
+    Transform at each step:
+      14a: Extracted verbatim. Universal quantifier ("every") makes it falsifiable by one counterexample.
+    Current status: UNTESTED
+
+ASSUMPTION-1268:
+  Date identified: 2026-09-05
+  Statement: "The load-bearing [citations] for the REVISEs (Horton & Adams 2005; Craver & Bechtel 2007; Potochnik & McGill 2012; Tomczak et al. 2018 Sci Rep 8:5115; arXiv:2608.25869) are well-known or carry resolvable identifiers, but they are carried on the searching agents' word."
+  Context: 15c run note, Citation discipline.
+  Type: empirical
+  Related decisions: none
+  Testability: testable in-house — resolve the five identifiers; confirm each says what the disposition attributes to it. Five lookups.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1268
+    Item type: ASSUMPTION (stated — quoted from an agent run note)
+    Transform at each step:
+      14a: Extracted verbatim. 14a did not resolve them either (not its job; also the 15c run wrote that its budget went elsewhere). Filed so the unverified state is on the register rather than in a run note.
+    Current status: UNTESTED
+
+ASSUMPTION-1269:
+  Date identified: 2026-09-05
+  Statement: "No attended Cowork session today (Saturday). Every session since yesterday's evening sync is a scheduled run. The vault moved anyway."
+  Context: 2026-09-05_cowork_summary.md, opening.
+  Type: empirical
+  Related decisions: none
+  Testability: testable in-house — **partly verified:** this run's `session_info` listing (30 most recent) shows only scheduled-task session titles. "Every session since yesterday's evening sync" is not fully verified (listing carries no timestamps; the 30 shown span more than one day).
+  Status: SUPPORTED (partial; see PRESUMPTION-917 for what the claim does not cover)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1269
+    Item type: ASSUMPTION (stated — quoted from a derived digest)
+    Transform at each step:
+      14a: Extracted verbatim; checked against the session listing available to this run.
+    Current status: SUPPORTED (partial)
+
+ASSUMPTION-1270:
+  Date identified: 2026-09-07
+  Statement: "Search independence therefore holds for NONE of the three pairs this run; each pair is counted as one reading (DISPOSITION-900 precedent, PREMISE-111/197)."
+  Context: 15c run note, lit_search_returns.md 2026-09-06, EXECUTION DECLARATION. The delegated 15b launch produced no files in ~55 minutes; the orchestrating context wrote all three AGAINST files and the SYSTEMIC-RISK-FLAG after reading the FOR files.
+  Type: methodological
+  Related decisions: none; REVISE-435, REVISE-436
+  Testability: testable in-house — the four orchestrator-written files carry the declaration in their PROVENANCE lines (checked: `against/PRESUMPTION-914_against.md` mtime 04:46, written 91 minutes after the FOR file); whether "one reading" was actually applied in the disposition weighting is a read of DISPOSITION-907–909. Second consecutive run in which the declared multi-agent layout degraded to one context (ASSUMPTION-1265's count now 2 of 2 since 09-05).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1270
+    Item type: ASSUMPTION (stated — quoted from an agent run note)
+    Transform at each step:
+      14a: Extracted verbatim. Gap-filling run: the 09-06 14a/14b run did not occur (no changelog, no backup dated 0906); this item is 09-06 material filed 09-07.
+    Current status: UNTESTED
+
+ASSUMPTION-1271:
+  Date identified: 2026-09-07
+  Statement: "Read-order is hygiene, not the operative independence condition." — with the supporting claim "Nine fully blinded judges act as ~2; accumulated context shifts the next judgment (d = −0.28 on ambiguous items)."
+  Context: 15b return AGAINST ASSUMPTION-1263, lit_search_returns.md 2026-09-06; adopted as the basis of DISPOSITION-907's recommended action (report read-channel and execution-channel independence as two numbers).
+  Type: empirical
+  Related decisions: none; REVISE-435
+  Testability: testable in-house — resolve Kohli 2026 arXiv:2605.29800 and Temkit 2026 arXiv:2605.22714 and confirm the effect sizes attributed to them. Same unverified state as ASSUMPTION-1268: 15c wrote "15c did NOT independently re-verify any citation." Written by the orchestrator, not a separate 15b (ASSUMPTION-1270).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1271
+    Item type: ASSUMPTION (stated — quoted from an agent search return)
+    Transform at each step:
+      14a: Extracted verbatim. Filed because a run-note reporting rule (REVISE-435) now rests on two unresolved identifiers.
+    Current status: UNTESTED
+
+ASSUMPTION-1272:
+  Date identified: 2026-09-07
+  Statement: "The presumption [PRESUMPTION-914] is the load-bearing justification for the orchestrator-fallback practice used on 09-05 and again today; if it is false, that practice manufactures files whose names imply an independence they lack."
+  Context: DISPOSITION-908 reasoning, lit_search_returns.md 2026-09-06.
+  Type: architectural
+  Related decisions: none; REVISE-436 (binary ruling requested: FAIL LOUD vs permitted fallback recorded as one reading)
+  Testability: testable in-house — the fallback practice predates PRESUMPTION-914 (surfaced 09-05 from the 09-05 fallback). Whether 914 justified the practice or was inferred from it is a date comparison. See PRESUMPTION-918.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1272
+    Item type: ASSUMPTION (stated — quoted from an agent disposition record)
+    Transform at each step:
+      14a: Extracted verbatim. Noted, not judged: the disposition treats a 14b reconstruction as the practice's justification.
+    Current status: UNTESTED
+
+ASSUMPTION-1273:
+  Date identified: 2026-09-07
+  Statement: "Run the linear-extension test on the III.2 (component-of, contributes-at, precedes) triples. If a total order exists → INCORPORATE the conditional form ... If none exists and the ruling still imposes one → REVISE (High), joined to REVISE-433."
+  Context: DISPOSITION-909 (MONITOR-597), lit_search_returns.md 2026-09-06 — the in-house test proposed to precede the OPEN-179/181 ruling.
+  Type: methodological
+  Related decisions: none; REVISE-433, MONITOR-597, OPEN-179, OPEN-181
+  Testability: testable in-house — requires that the three relations exist as extractable triples over the III.2 cells (PRESUMPTION-920 asks whether they do). If they do, the test is cheap and decisive.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1273
+    Item type: ASSUMPTION (stated — quoted from an agent disposition record)
+    Transform at each step:
+      14a: Extracted verbatim; the conditional structure (if/then → disposition) is the assumption.
+    Current status: UNTESTED
+
+ASSUMPTION-1274:
+  Date identified: 2026-09-07
+  Statement: "Abstract-level is enough for a proposal with an evidence gate noted."
+  Context: Monday tradition-agent run (Levin/Friston), 2026-09-07, on the Friston Complex Brain Hypothesis proposal (arXiv 2605.16146) where both PDF and HTML were unreadable.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature (title/abstract-only screening accuracy in evidence synthesis) and in-house (does the stated gate survive into the approval pass, or is the proposal approved as if read?).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1274
+    Item type: ASSUMPTION (stated — quoted from an agent session transcript)
+    Transform at each step:
+      14a: Extracted verbatim from the session_info transcript of `C2a2 agent levin friston`.
+    Current status: UNTESTED
+
+ASSUMPTION-1275:
+  Date identified: 2026-09-07
+  Statement: "The master wiki and findings file haven't been written since 2026-09-02 despite newer proposals in pending/ ... and FINDING-080..082 exist only in the master narrative, not in pattern_detector_findings.md."
+  Context: morning-walk-cowork-handoff run summary, 2026-09-07 (no walk notes; 25 pending proposals).
+  Type: empirical
+  Related decisions: none
+  Testability: testable in-house — **tested this run.** First clause SUPPORTED: `master/C2A2_master_wiki.md` and `flags/pattern_detector_findings.md` both mtime 2026-09-02 22:11. Second clause CHALLENGED: `pattern_detector_findings.md` contains 3 lines matching FINDING-080..082 (master wiki: 7). The findings may be referenced rather than entered — not read further.
+  Status: SUPPORTED (clause 1) / CHALLENGED (clause 2, in-house)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1275
+    Item type: ASSUMPTION (stated — quoted from an agent run summary)
+    Transform at each step:
+      14a: Extracted verbatim; checked by mtime and grep. An agent's negative existence claim about a file was wrong at the grep level — filed as a data point for PRESUMPTION-912's authorship question.
+    Current status: SUPPORTED / CHALLENGED (split)
+
+---
+
+## 2026-09-07 — evening run (14a). Second run of the date; covers 10:53 → 23:40 EDT.
+
+*The 10:53 run of this date was a gap-fill for the missed 09-06 and closed at its own run time. The
+items below are from the remainder of 09-07 and do not overlap ASSUMPTION-1270–1275.*
+
+ASSUMPTION-1276:
+  Date identified: 2026-09-07
+  Statement: "the mtime authorship window sees a day-old file as run output"
+  Context: attended session ~10:50–11:00; the `commit_daily_run.sh` fix message in
+    `inbox/rc_sandbox/COMMIT_ME_2026-09-07.sh`, diagnosing why commit 91bb78b (2026-09-05) swept 34
+    human-inbox files and a 13.7 MB workbook into a "C2A2 daily run" commit.
+  Type: architectural
+  Related decisions: none
+  Testability: testable in-house — the fixture described in the same message is the test; the general
+    claim (mtime is not an authorship signal in this repo) is separately checkable and was corroborated
+    twice today by unrelated evidence (the 22:00 mass-mtime batch across ~60 files; the 10:31 orphan
+    `.git/index.lock` whose writer could not be identified from mtime proximity).
+  Status: SUPPORTED (in-house, this run — three independent instances on one day)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1276
+    Item type: ASSUMPTION (stated — quoted from a commit message written in an attended session)
+    Transform at each step:
+      14a: Extracted verbatim; corroborated against two same-day mtime anomalies not known to the author.
+    Current status: SUPPORTED
+
+ASSUMPTION-1277:
+  Date identified: 2026-09-07
+  Statement: "A first draft 'any inbox subdirectory' was falsified on the fixture: the run legitimately
+    writes wiki/inbox/proposals/ (445 tracked files). Fixture: proposals commit, threads + xlsx held;
+    control with the regex neutralised commits all of them."
+  Context: same commit message. The stated adoption gate for a guard rule: a fixture that the rule must
+    pass and a control in which the rule is neutralised and must fail.
+  Type: methodological
+  Related decisions: none
+  Testability: testable via literature — this is mutation testing / falsificationist test design applied
+    to a config guard; whether a paired fixture-plus-neutralised-control materially reduces guard defects
+    over an unpaired fixture is an empirical question in the software-testing literature.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1277
+    Item type: ASSUMPTION (stated — quoted from a commit message written in an attended session)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded, not judged: this is the only item in eight days whose stated
+        method includes its own falsifier, and it is also the only one produced with the designer present.
+    Current status: UNTESTED
+
+ASSUMPTION-1278:
+  Date identified: 2026-09-07
+  Statement: "The most likely mechanism is not link deletion but link *dilution* — a basename-resolved
+    target being shadowed by a newer file with the same basename, so that links which used to land on one
+    page now land on another."
+  Context: sewing-agent bootstrap audit, 11:58–12:03, §2 — offered as the explanation of the first
+    decline in the connected (3+ backlinks) bucket in the series, 69 → 65.
+  Type: empirical
+  Related decisions: none
+  Testability: testable in-house — the weekly sewing agent holds the per-page backlink snapshot this run
+    lacked; a diff names the four pages and the mechanism directly. Cheap, decisive, unrun.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1278
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. The report explicitly declares the test it could not run ("this run does
+        not hold last week's per-page list"), so the hypothesis is filed with its own falsifier named.
+    Current status: UNTESTED
+
+ASSUMPTION-1279:
+  Date identified: 2026-09-07
+  Statement: "A structurally identical ~300 KB file is clutter, not measurement." (and, of the
+    `connectivity_log.csv` row, "the file has one owner and it is not this agent")
+  Context: sewing-agent bootstrap audit §1, justifying that a scheduled task declined to write its own
+    nominal outputs for the twelfth consecutive firing — framed as "fail-loud, not silent skip."
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — does anything downstream read the census files? `grep` for consumers
+    of `bootstrap_backlink_census_*` outside the reports that produced them. If nothing reads them, the
+    claim is supported and the task's Phase 2 is dead weight; if something does, the decline is a gap.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1279
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded, not judged: an agent is here stating the criterion under which
+        it declines its own task definition, and no register outside its report holds that criterion.
+    Current status: UNTESTED
+
+ASSUMPTION-1280:
+  Date identified: 2026-09-07
+  Statement: "`open-story.db` is now 6.1 GB against 4.2 GB of sandbox local disk ... **Not a feed
+    problem** — the last Mac-side pass at 10:19 PASSED with current feeds. This is a sandbox capacity
+    ceiling that will now fail every scheduled run until the DB is pruned or the step moves Mac-side."
+  Context: Openstory agents telemetry refresh, 12:03 — FAILED.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically and cheaply — the prediction is falsified by the next successful
+    scheduled run without pruning or relocation, and confirmed by tomorrow's failure. First scheduled
+    check: 2026-09-08.
+  Status: UNTESTED (prediction with a dated first test)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1280
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim; noted that the claim carries a discriminating control (the 10:19 Mac-side
+        pass) that separates capacity from feed failure. This is the strongest-formed empirical claim in
+        the day's agent output.
+    Current status: UNTESTED
+
+ASSUMPTION-1281:
+  Date identified: 2026-09-07
+  Statement: "all 3 routed items ... searched both directions by two concurrent, independent subagents
+    and dispositioned — 0 orchestrator-written files, independence 3/3 on both read and execution
+    channels (first run with no fallback needed)"; and, in REVISE-438, "Data point from this run:
+    concurrent single-direction launches both completed; no fallback needed."
+  Context: lit-search pipeline, 11:06–11:16, run summary and REVISE-438. The operative assumption is
+    that the 09-05 (8/22 files, 10/11 independence) and 09-06 (4/7, 0/3) degradations were an
+    execution-mode artefact, not a harness limit — i.e. that (a) FAIL LOUD is achievable, not merely
+    preferable.
+  Type: methodological
+  Related decisions: none; REVISE-436, REVISE-438, REVISE-426/427
+  Testability: testable in-house by replication — one clean run against two degraded ones is n=1 for the
+    launch mode. Three consecutive clean cycles under the same mode would settle it; the harness is the
+    variable neither the agent nor this register controls.
+  Status: UNTESTED (single observation; the inference from it is what is untested)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1281
+    Item type: ASSUMPTION (stated — quoted from an agent session transcript, read this run)
+    Transform at each step:
+      14a: Extracted verbatim from the `C2a2 lit search pipeline` transcript and cross-checked against
+        `lit_search_results/` file authorship (7 files, 0 orchestrator-written) and REVISE-437–439.
+        The file evidence matches the claim.
+    Current status: UNTESTED
+
+ASSUMPTION-1282:
+  Date identified: 2026-09-07
+  Statement: "The literature's consistent finding is that the fix for this class of problem is procedural
+    and external, not declarative and internal; a system that accepts declarations in lieu of procedure
+    will, per Cain et al., tend to produce more of the thing declared, not less."
+  Context: SYSTEMIC-RISK-FLAG 2026-09-07 (declaration-substitutes-for-procedure, High), filed by the
+    delegated 15b subagent on ASSUMPTION-1274 / PRESUMPTION-918.
+  Type: epistemic
+  Related decisions: none; REVISE-436/437/438, PRESUMPTION-918
+  Testability: testable via literature — the flag cites seven sources for the two limbs, but the
+    generalisation ("this class of problem", i.e. every noted/declared status in a provenance chain) is
+    broader than any of them. What is routed is the generalisation, not the sources already read.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1282
+    Item type: ASSUMPTION (stated — quoted from an agent-authored risk flag)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded, not judged: the flag generalises from a disclosure-and-caveat
+        literature to a machine provenance chain without stating the transfer conditions — which is the
+        move 14b's watch-list calls a transferred assumption. See PRESUMPTION-925 this run.
+    Current status: UNTESTED

@@ -76,3 +76,19 @@ If the church is a real corporate substance whose members retain their distinct 
 **Synthesis claim.** The two accounts are not merely joinable; each supplies the other's missing half, and the join makes a prediction neither makes alone. If Stump is right that the separated state is incomplete *by metaphysical necessity*, then Wright's "paradise as rest" is not a pastoral softening but the correct phenomenology of an incomplete state — rest is what an unfinished form does. That converts a devotional reading into a consequence of a metaphysical thesis, which is a stronger position than either tradition currently occupies. The cost of the join is also real and should be stated: Wright's structural interval becomes committed to hylomorphism, and hylomorphism is not neutral between the network's monisms. Anyone importing this into the Kastrup or Hoffman wings inherits that commitment.
 
 **Open question the wiki cannot yet answer.** Whether Wright would accept a bearer at all, or whether his reticence is deliberate — a refusal to specify metaphysics that the New Testament does not specify. The source does not say, and the verification caveat is severe here: only the publisher's episode description and chapter list were read, not the audio, so his qualifications and concessions are entirely unknown. This bridge should not be promoted to the cross-program index until the chapter text is in hand. It is recorded now because the *shape* of the complementarity is visible from the theses alone, and because `synthesis/stump_wright_bridge.md` should carry the question while the retrieval is outstanding rather than after.
+
+
+---
+
+## Vocation-first anthropology and corporate persistence
+*Sewing Agent, 2026-09-06*
+
+**Orphaned pages at the intersection (0 backlinks each before this run):** `2026-09-06_wright_human-nature-as-vocation-not-good-or-evil` (Stump 0.6) and `2026-09-06_wright_third-race-not-supersession-but-enlargement` (Stump 0.55).
+
+**Why they sit here:** Wright's vocation-first answer to the good/evil question (the primary predicate of a human is what it is *for*) is close to Stump's will as oriented to the good rather than neutral between goods. Wright's enlargement-not-supersession is a claim about a corporate entity persisting through a change in its membership condition, which is the corporate-substance question the wright wiki names at Q3 and Stump's account of union has never been asked to scale to.
+
+**Synthesis claim:** Both proposals are teleological before they are moral: an agent (or a people) is individuated by orientation toward an end, and moral valence and membership are derivative on that orientation. Stump supplies the faculty-level version (the will's prior ordering); Wright supplies the scriptural and corporate version.
+
+**Open question the wiki cannot yet answer:** Does Stump's union-as-shared-attention have a corporate form at all? If union is strictly dyadic, "enlargement" of a people cannot be cashed in her terms and the bridge is thinner than the vocabulary suggests.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-06_wright_human-nature-as-vocation-not-good-or-evil]] · [[2026-09-06_wright_third-race-not-supersession-but-enlargement]]

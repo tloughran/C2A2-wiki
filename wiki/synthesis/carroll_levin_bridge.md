@@ -33,3 +33,19 @@ Luis Bettencourt, on Mindscape 362, contrasts organisms — closed-ended, they a
 **Synthesis claim.** If structured ignorance and Levin's problem space are the same object, then a research program's health is measurable in the same units as an amoeba's chemotaxis: how many orders of magnitude of wasted search does the program's current question-set save relative to blind exploration? That is not a rhetorical flourish. C2A2 already represents every tradition as PRS triplets whose *Problem* slot is, on Firestein's account, exactly the structured-ignorance map — so the vault holds the raw material for the measurement it has never attempted.
 
 **Open question the wiki cannot yet answer.** What is the maximal-entropy baseline for a *research program*? Levin's metric works because the random-walk cost is defined by the problem space independently of the agent. For an intellectual tradition there is no obvious analogue — no agreed enumeration of the moves available at a given point in inquiry — and without it the ratio is undefined rather than merely hard to estimate. Constructing that baseline is the same task the Master agent has been asked to take on for tradition-interaction progress, and it is the single technical obstacle between C2A2's outputs being anecdotes and being measurements. Note also the honest secondary prediction, which is checkable today: Firestein's thesis implies a healthy tradition generates Problems faster than Solutions. The triplet inventory can be counted.
+
+
+---
+
+## A criterion for emergence, awaited
+*Sewing Agent, 2026-09-06*
+
+**Orphaned page at the intersection (0 backlinks before this run):** `2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence` (Carroll 0.9, Levin 0.6). Verification gate open: only the publisher's description was read.
+
+**Why it sits here:** The carroll wiki's strongest live tension (Active Questions 12, 13) is Levin's manipulable causal emergence and mathematical-facts-as-constraints against Carroll's one-world-many-vocabularies reading. A book-length Carroll statement on emergence, with equations, is where his criterion for when a coarse-grained variable earns its keep would appear. The existing note says the readings are not compatible and must not be smoothed; this entry does not smooth them.
+
+**Synthesis claim:** The dispute is decidable only once both sides state a *criterion*: Levin's is intervention (a coarse-grained variable is real if manipulating it changes outcomes); Carroll's is presumed to be predictive compression. If those two criteria disagree on a worked case (Pigozzi and Levin's pre-replicator medium), the disagreement is real and located; if they agree, the tension was verbal.
+
+**Open question the wiki cannot yet answer:** Does Volume 3 exist as a shipping book, and if so does it state a criterion at all? Both unknown as of 2026-09-06.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence]]

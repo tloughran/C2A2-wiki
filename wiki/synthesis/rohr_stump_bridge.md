@@ -102,3 +102,19 @@ The genuinely exposed entry is **2026-07-26**, and not for the reason given: it 
 **Open question the wiki cannot yet answer:** Is Aquinas on mortification actually re-ordering rather than suppressive? The Monk Kidd proposal asserts the contrast — Aquinas standardly read as suppressive, Rohr as integrative — and the wiki has taken it on trust. If the standard reading of Aquinas is wrong, the convergence is much stronger than either tradition has claimed; if it is right, Rohr's integrative move is a real departure and should not be filed as agreement.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_realigned-true-self-sin-as-separateness]] · [[2026-08-30_rohr_true-seed-within-soulmaking-as-integration]]
+
+
+---
+
+## Faith as trust versus faith as assent; solidarity in suffering
+*Sewing Agent, 2026-09-06*
+
+**Orphaned pages at the intersection (0 backlinks each before this run):** `2026-09-06_rohr_faith-and-doubt-correlative` (Stump 0.7) and `2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites` (Stump 0.6).
+
+**Why they sit here:** The faith proposal defines faith as trust that reality is coherent and on our side, with a person as its object, and calls doubt correlative rather than contradictory. That is Stump's second-personal knowing (PRS-07) rather than Aquinas's assent (II-II Q.1-7), and the proposal names the register mismatch in the bridges file (PRS-05 cited in error). The cruciform proposal has the Divine Mind transform suffering by identifying with the human predicament, which is Stump's divine-solidarity territory.
+
+**Synthesis claim:** Rohr and Stump share a *person-first* epistemology of faith: what is known is a person, and propositional doubt is compatible with it. But they part on whether this is a departure from Aquinas (Rohr says yes, explicitly) or a reading of him (Stump says it is Aquinas correctly read). The convergence is on the content; the disagreement is on the pedigree, and the wiki should not let a shared conclusion hide a real dispute about the tradition.
+
+**Open question the wiki cannot yet answer:** Is Rohr's "vote for coherence and benevolence" a form of second-personal knowing at all, or is it a propositional trust claim about the universe with a person substituted as object after the fact? If the latter, PRS-07 is the wrong target too.
+
+**Wikilinks (sewing, 2026-09-06):** [[2026-09-06_rohr_faith-and-doubt-correlative]] · [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]

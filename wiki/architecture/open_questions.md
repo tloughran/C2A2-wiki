@@ -2216,3 +2216,77 @@ OPEN-181:
 - **OPEN-171 (intake/disposition coupling) — pending is 21** (was 9 at 08-30). ASSUMPTION-1231's two-week window closes 2026-09-10; 21 in 8 days ≈ 2.6/day, still below the predicted 6–14 band. Review-pass gap: 8 days.
 - **OPEN-167 (vault root casing)** — the task file still says capital-`W` `Wiki`; live directory is `wiki`. Seventh run.
 - **OPEN-175–178** — no ruling recorded; carried.
+
+OPEN-182:
+  Date raised: 2026-09-05
+  Question: On a day with no attended session, should 14a/14b extract from agent run notes at all — or file a dated QUIET/DARK marker and nothing else? If extraction continues, should items carry an authorship tag (designer | agent-under-delegation | agent-unattended) so the register can be filtered?
+  Why now: today's intake is seven assumptions and six presumptions, all agent-sourced. MONITOR-594 separately asks for DARK tagging of 08-31…09-03. The two questions are the same question: what does this register count as design activity? PRESUMPTION-912 states the premise; this asks for the ruling.
+  Status: OPEN — awaiting Tom
+  Related: PRESUMPTION-912, PRESUMPTION-917; OPEN-174; MONITOR-594
+
+### Status of carried questions — 2026-09-05
+- **Register: 136 unique `^OPEN-NNN:` headers against max OPEN-182 — offset still exactly 46, eighth consecutive record.**
+- **OPEN-168 (notification channel of record) — day fourteen; failed in both directions** (Chat→Cowork 10:17, Cowork→Chat 18:52). Unchanged shape; unchanged remedy. See PRESUMPTION-917 for what a dead channel does to the day's account.
+- **OPEN-174 (which store is the decision record)** — no new instance today (no rulings anywhere). `decisions.md` at DECISION-083, nine days.
+- **OPEN-179 / OPEN-181 (ladder rung; which ladder is the spine)** — 15c cycle 6 returned REVISE-433 (High): the L0…L9 numbering presupposes a total order; both search directions say that holds only under one fixed criterion. 15c's reading: the source table already answers (b) lattice or (c) per-tradition. Awaiting Tom. PRESUMPTION-915 asks whether this is a ruling or a reading.
+- **OPEN-180 (deferred-condition polling)** — Agent 16 idle run today, 0 due, 0 intake; no ruling.
+- **OPEN-171 (intake/disposition coupling)** — pending still 21; ASSUMPTION-1231 window closes 2026-09-10. Review-pass gap: 9 days.
+- **OPEN-167 (vault root casing)** — task file still says `Wiki`; live directory is `wiki`. Eighth run.
+- **OPEN-175–178** — no ruling recorded; carried.
+
+OPEN-183:
+  Date raised: 2026-09-07
+  Question: When a scheduled 14a/14b run is missed (09-06 tonight; 08-31…09-03 before), is the next run a gap-fill that files the missed day's material under its own date, or should the missed day get a dated DARK/SKIPPED marker and the material be filed under the day it occurred? Tonight's items carry "Date identified: 2026-09-07" for 09-06 events.
+  Why now: second gap in eight days. The registers cannot currently distinguish "nothing happened 09-06" from "nobody looked 09-06." Same shape as OPEN-182 and MONITOR-594's DARK-tagging request, one level up.
+  Status: OPEN — awaiting Tom
+  Related: OPEN-182, PRESUMPTION-922, PRESUMPTION-917, MONITOR-594
+
+### Status of carried questions — 2026-09-07 (gap-filling run; 09-06 run missed)
+- **Register: 137 unique `^OPEN-NNN:` headers against max OPEN-183 — offset 46, ninth consecutive record.**
+- **OPEN-168 (notification channel of record) — day sixteen.** 09-06 Chat→Cowork scrape FAILED (extension not connected); no 09-06 Cowork→Chat summary exists; 09-07 walk-notes search found nothing. Three channels, three absences.
+- **OPEN-174 (decision record)** — `decisions.md` at DECISION-083, eleven days. REVISE-436 asks for a binary ruling that will, if made, land somewhere.
+- **OPEN-179 / OPEN-181 (ladder)** — DISPOSITION-909 / MONITOR-597 proposes the linear-extension test precede the ruling; PRESUMPTION-920 asks whether the test's input exists.
+- **OPEN-182 (unattended-day extraction)** — no ruling; this run extracted anyway (11 items, all agent-sourced). Practice is running ahead of the ruling.
+- **OPEN-171** — ASSUMPTION-1231 window closes 2026-09-10 (three days). Pending proposals 25 per the 09-07 morning handoff (21 at 09-05). Review-pass gap: master wiki last written 09-02.
+- **OPEN-167 (vault root casing)** — task file still says `Wiki`. Ninth run. The Monday agents' task file has a second path error (missing `Projects/` segment), worked around in-run.
+- **OPEN-175–178, OPEN-180** — carried.
+
+---
+
+## 2026-09-07 — evening run (14a)
+
+OPEN-184:
+  Date raised: 2026-09-07
+  Question: Which class of actions does the no-blind-push rule actually need to cover? Can a
+    deterministic gate — a passing fixture, a neutralised control that fails, and demonstrated
+    reversibility (i.e. the method ASSUMPTION-1277 states) — discharge the rule for changes that write
+    no claims, so that they execute without a human paste?
+  Why it matters: four sewing recommendations first raised 08-09 / 08-16 / 08-23 are still NOT DONE and
+    all four are file-writes with a generator already supplied; today's commit fix sits in a script the
+    sandbox wrote and cannot run. The evening summary measures the pattern — script-owned work moves,
+    paste-gated work does not — and files it as discussion. See PRESUMPTION-923.
+  Status: OPEN — requires Tom
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-184
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-185:
+  Date raised: 2026-09-07
+  Question: Are the self-awareness and lit-search layers' own outputs in-corpus or out-of-corpus for
+    connectivity measurement? `architecture/lit_search_results` is now 2,661 of 4,879 vault pages
+    (54.5%), every one an orphan by construction, and it is counted in the census, the
+    `connectivity_log.csv` series and the graph visualisation's node population.
+  Why it matters: if out-of-corpus, every connectivity figure since roughly 08-02 carries a
+    majority-share confound and the orphan trend is measuring generation rate. If in-corpus, the answer
+    should be stated once and the metric read accordingly. Currently neither is written anywhere.
+    See PRESUMPTION-926, PRESUMPTION-927.
+  Status: OPEN — cheap ruling; recomputation is a `find` away
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-185
+    Item type: OPEN QUESTION (raised from presumptions surfaced the same run)
+    Current status: OPEN

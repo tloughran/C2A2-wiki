@@ -7045,3 +7045,166 @@ PREMISE-198:
   Status: ACTIVE
   PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c -> 15d -> 15a, 15b (cycle 5) -> 15c];
     DISPOSITION-895
+
+================================================================================
+## 2026-09-08 — 15c cycle (2 premises minted: PREMISE-199, PREMISE-200)
+
+Cohort: the 2026-09-07 evening 14a/14b intake (ASSUMPTION-1277, ASSUMPTION-1282, PRESUMPTION-925,
+PRESUMPTION-928). Two INCORPORATE, two REVISE. Both premises below are LIMB-SPLIT incorporations: the
+necessary-condition form is adopted and the sufficiency claim of the source item is explicitly NOT
+adopted. Independence: 15a and 15b ran in separate delegated contexts, neither reading the other's
+directory or lit_search_returns.md (both attested). Per PREMISE-111/197 their agreement is NOT counted
+as independent confirmation; the verdicts rest on the cited literature and on this register.
+
+PREMISE-199:
+  Date validated: 2026-09-08
+  Source item: ASSUMPTION-1277 (14a) — DISPOSITION-913
+  Statement: A NEUTRALISED-CONTROL TEST IS A SENSITIVITY CHECK AND IS NECESSARY, NOT SUFFICIENT, FOR
+    ADOPTING A GUARD RULE. Requiring that a guard pass a positive fixture AND that a control in which
+    the guard is neutralised FAIL is the correct floor, and it is the orthodox position in two
+    independent literatures: a suite's ability to kill a deliberately introduced variant tracks real
+    fault detection substantially better than "it passed and the line was covered" (Just et al. 2014:
+    73% vs 40–50% over 357 real faults), and outside software the negative-control principle holds that
+    a positive result is uninterpretable until the apparatus has been shown capable of producing a
+    negative. THE SUFFICIENCY CLAIM — that the pair is "THE adoption gate" — IS NOT ADOPTED, and the
+    reason is structural rather than statistical. The pair tests SENSITIVITY only: it establishes that
+    the rule is reachable, wired in and load-bearing on the chosen fixture. It cannot test SPECIFICITY,
+    because an OVER-BROAD guard — one that matches or blocks more than intended — passes the positive
+    fixture and fails correctly on neutralisation exactly as a correct guard does. That is the dominant
+    defect class for filter and configuration rules, so the gate as stated returns "adopt" on precisely
+    the failures it is meant to catch.
+    LOAD-BEARING CONDITIONS, from 15b and not optional:
+    (1) NEGATIVE FIXTURE REQUIRED. Adoption additionally requires an input the guard must NOT act on,
+        which passes with the rule live. This converts a sensitivity pair into a 2x2 at roughly the same
+        cost.
+    (2) SAME-SOURCE FIXTURES ARE NOT INDEPENDENT TESTS. Where the fixture and the neutralisation are
+        authored by one agent from one reading of the requirement, they are two draws from one
+        distribution. Record, per guard, whether the fixture was derived from the STATED REQUIREMENT or
+        from the RULE TEXT; requirement-derived fixtures count, rule-derived ones are a wiring check.
+    (3) THE GATE IS A FLOOR WITH A KNOWN CEILING. Just et al. verified that 17% of real faults studied
+        could not be represented by any mutant at all; passing the gate is not evidence of adequacy
+        against that class.
+    (4) THE ASSERTED OUTCOME IS UNMEASURED IN THIS REPO. "Reduces defect escape" is a methodological
+        belief here until guard false-positive and false-negative incidents after adoption are logged.
+  Item type: ASSUMPTION (stated — quoted from a commit message written with the designer present)
+  Supporting evidence: Just, R., Jalali, D., Inozemtseva, L., Ernst, M.D., Holmes, R. & Fraser, G.
+    (2014), "Are Mutants a Valid Substitute for Real Faults in Software Testing?", FSE'14 — 357 real
+    faults, 230k mutants; mutant detection 73% vs coverage 40–50% [15a: VERIFIED via authors' own
+    materials]. Petrović, G., Ivanković, M., Fraser, G. & Just, R. (2021), "Does mutation testing improve
+    testing practices?", ICSE'21, arXiv:2103.07189 — ~15M mutants at Google; practice changes developer
+    behaviour [15a: ABSTRACT-ONLY]. Petrović et al. (2021), TSE — the covered-but-unasserted line is the
+    exact failure the neutralised control catches and the positive fixture cannot [15a: §1 read].
+    Lipsitch, M., Tchetgen Tchetgen, E. & Cohen, T. (2010) on negative controls [15a: citation-verified
+    only]. INTERNAL: PREMISE-137's load-bearing condition already requires mutation-validation of any
+    invariant claimed as coverage; PREMISE-150 already holds that adequacy claims require SEEDED
+    defects, not observed pass rates.
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate — folded in as conditions (1)–(4) rather than
+    outweighed): Papadakis, M., Shin, D., Yoo, S. & Bae, D.-H. (2018), ICSE'18 — mutation score
+    correlates only weakly with real fault detection once suite size is controlled [15b: abstract+intro
+    read]. Gay, G. & Salahirad, A. (2023) — 9.92% of mutants strongly coupled to real faults; only
+    51.03% of faults have any strongly coupled mutant [15b: abstract read]. Wool, A., firewall
+    misconfiguration corpus — over-permissive rules are the dominant defect class. 15b found NO evidence
+    that the practice is harmful or worse than a positive fixture alone; the challenge is to sufficiency,
+    which is why it becomes conditions rather than a refutation.
+  MEASUREMENT GAP DECLARED, not hidden: the comparison the item actually asked for — paired control
+    versus positive fixture alone, with a defect-escape outcome, in configuration guards or filter rules
+    — DOES NOT EXIST in what either direction searched. Both directions report this independently. The
+    premise therefore transfers from program-code mutation testing to shell/regex/config guards on
+    structural argument, not on measured transfer. Both files mark their scope "preliminary — broader
+    search recommended."
+  CORRELATION DISCLOSURE (per PREMISE-134 / PREMISE-120): this premise is an EXTENSION of PREMISE-137's
+    mutation-validation clause and of PREMISE-150, not an independent finding. Its increment over them
+    is the SPECIFICITY BLIND SPOT and the negative-fixture requirement, which neither holds. It must not
+    be counted as independent corroboration of either. Additionally, three of 15a's six sources share an
+    author (René Just) and two share the full team; the mutation-effectiveness literature is small.
+  Confidence: Moderate — High on the necessity clause and on the specificity gap; Moderate on transfer
+    to the named domain, where no study was found.
+  Applicable to: every guard, filter, regex and configuration rule adopted in this estate, including
+    `commit_daily_run.sh` and the register guards; PREMISE-137's mutation-validation requirement, which
+    this premise supplies the specificity half of; the nightly verification suites; any future claim
+    that a guard was "falsification-tested".
+  Operational consequence, cheap and named: for every guard already adopted under the pair, write one
+    negative fixture derived from the guard's STATED PURPOSE without reading its implementation, and run
+    it. The fraction that fail is the escape rate the pair missed. Above ~10% the pair is a wiring check,
+    not an adoption gate.
+  Re-check due: 2026-10-08 (Monthly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; DISPOSITION-913
+
+PREMISE-200:
+  Date validated: 2026-09-08
+  Source item: PRESUMPTION-925 (14b) — DISPOSITION-914
+  Statement: FILESYSTEM MTIME IS A CHANNEL-LIMITED TIMING PROXY WITH A NAMED EXCLUSION CLASS, IT
+    CARRIES NO AUTHORSHIP CONTENT AT ALL, AND IT HAS NO EVIDENTIAL PARITY WITH A PRIMARY RECORD. The
+    three limbs of PRESUMPTION-925 fail differently and must be kept apart.
+    (1) TIMING — weakly supported, with an exclusion that is exactly this estate's case. Across ~2.7M
+        arXiv submissions, 72% carried mtimes within one hour of an independently recorded submission
+        event and 35% within five minutes; mtime is therefore a defensible population-level proxy for
+        the time of authoring work IN FILES THE AUTHOR ACTUALLY EDITED. The same study EXCLUDED reused
+        templates because only 38% carried unique timestamps, most originating from the template
+        provider rather than the author. Files that arrive by copy, sync, restore, provisioning or
+        batch formatting are that excluded class. A 72% one-hour concordance is a population statistic,
+        not parity with a primary record, and the 28% tail is the operative number for any per-day
+        reconstruction that names specific files as evidence of specific work.
+    (2) AUTHORSHIP — NOT weakly supported but ABSENT. mtime has no agent field. Any authorship read
+        from mtime is an inference from temporal co-occurrence, which is a category error rather than a
+        confidence threshold. Neither direction located any literature validating mtime as an authorship
+        signal, in forensics, archival science or mining-software-repositories; 15a records this as a
+        NOVELTY finding in the unfavourable sense — absence of warrant, not original method. Even
+        systems that DO record an author explicitly misattribute a substantial share of lines at line
+        granularity.
+    (3) PARITY — unsupported from both directions. Forensic practice, even in its supportive passages,
+        requires timestamps to be corroborated against logs and system events rather than read alone.
+        Because a reconstructed day is written in the same register format as a transcript-read day, the
+        weaker evidence inherits the standing of the stronger by sharing a template; that inheritance is
+        the failure, and it is invisible downstream.
+    THE REMEDY IS A VERIFYING TRACE, AND THE FIELD THAT DEPENDED ON MTIME LONGEST ALREADY ADOPTED IT.
+    Build systems record, in print, that Make is minimal only on the assumption that nobody touches a
+    file without changing it, and that Make requires timestamps to move only forward, "which can be
+    violated by backup software"; Shake and Bazel replaced mtime with content-hash verifying traces.
+    THEREFORE: (i) any register statement derived from mtime names mtime as its channel (this is
+    PREMISE-140 applied to a second metric family); (ii) a per-file CONTENT HASH is the admissible
+    evidence of substantive change; (iii) authorship claims from mtime are FORBIDDEN outright, not
+    discounted; (iv) mass-mtime clusters (n files sharing a timestamp to the second) are detected and
+    annotated as candidate machine events before any run reads them as activity.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: the estate held BOTH this
+    presumption and its contrary, ASSUMPTION-1276, on the same day, in the same layer)
+  Supporting evidence: Pennekamp, J., Lohmöller, J., Schütte, J., Loos, M. & Henze, M. (2026), "Hidden
+    Secrets in the arXiv", arXiv:2604.20927, §6.2.2 [15a: read verbatim] — supplies BOTH the 72%/35%
+    concordance and the template-exclusion counter-case. Mokhov, A., Mitchell, N. & Peyton Jones, S.
+    (2018), "Build Systems à la Carte", PACMPL 2(ICFP) Art. 79, §2/§4.2.1/Table 1 [15b: read verbatim] —
+    the touch assumption and the backup-software violation, and the migration to content hashes.
+    Thierry & Müller on POSIX under-determination of Unix-family timestamp behaviour [15a: headline
+    only]. Agrawal et al. (2007) on mtime as a population-level file-age measure [15a]. Cloud-sync
+    forensics: routine collection and sync mutate timestamps, no adversary required [15b].
+  Challenges noted: NONE that survive. This is a convergence case in the 2026-08-10 sense — 15a
+    supported the corrective while returning NO-SUPPORT-FOUND on the two decisive limbs, and 15b
+    challenged the defect; both were describing one finding. Per the PREMISE-140 precedent, 15a's
+    NO-SUPPORT-FOUND for the practice IS support for the premise. The only material tension is internal
+    to limb (1): mtime is a usable timing proxy for author-edited files and useless for copied ones, and
+    the estate cannot currently tell the two apart — which is why (ii) and (iv) are load-bearing.
+  CORRELATION DISCLOSURE (per PREMISE-134 / PREMISE-120): this premise EXTENDS PREMISE-140 (a metric
+    derived from one observation channel must be named by its channel; streak framings barred) from
+    NAMING to ADMISSIBILITY, and extends PREMISE-139 (a documented check is not evidence the check ran;
+    machine-generated execution evidence required) from checks to change-detection. It is not
+    independent corroboration of either. It corroborates ASSUMPTION-1276 (mtime is not an authorship
+    signal in this repo — the 09-05 commit sweep) from OUTSIDE the estate, which ASSUMPTION-1276's
+    in-house test could not do.
+  Confidence: High on limbs (2) and (3) — limb (2) is definitional and limb (3) is agreed by both
+    directions. Moderate on limb (1)'s exclusion boundary, which rests on one study.
+  Applicable to: the changelog's "Changes Detected" section; the daily sync summaries; every metrics
+    snapshot containing an mtime-derived count; the human-vs-agent authorship split and the 54.5%
+    corpus-share measurement (PRESUMPTION-926, PRESUMPTION-927), which inherit this error; any
+    reconstruction of an unattended day; PREMISE-140's autonomy-streak metric.
+  UNRESOLVED EXPOSURE, NAMED NOT CLOSED: the 2026-09-07 22:00 mass-mtime batch across ~60 files —
+    including all five self-awareness registers — is unresolved as of this run. Under this premise it is
+    a CANDIDATE MACHINE EVENT until hashes say otherwise, and any register entry that read it as a day
+    of work is unwarranted pending that test. The test is one command and is named in the operational
+    consequence below. INCORPORATE of this premise does NOT discharge that exposure.
+  Operational consequence, cheap and decisive, in-house: record a content hash for every file in the
+    vault now and again after the next daily run; compare (a) mtime-changed, (b) hash-changed, (c) their
+    intersection. |a \ b| / |a| is the false-positive rate of every "Changes Detected" line the changelog
+    has printed. Run it against the 09-07 22:00 batch specifically using any pre-batch snapshot.
+  Re-check due: 2026-10-08 (Monthly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-914

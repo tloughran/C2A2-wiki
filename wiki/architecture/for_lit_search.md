@@ -19918,30 +19918,30 @@ see PRESUMPTION-911. Days 08-31 … 09-03 are not reconstructed.
 --------------------------------------------------------------------------------
 ### ASSUMPTION intake (14a → 15a/15b)
 
-ASSUMPTION-1251 [QUEUED]
+ASSUMPTION-1251 [QUEUED] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - PARTIALLY-CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-591]
   "A table's column LABELS are apparatus unless the table is itself an authored structure, in which
   case the labels ARE the structure." Search: header/apparatus discrimination in document-structure
   and table-understanding literature; cases where schema is content (authored taxonomies, controlled
   vocabularies). Test whether "authored structure" is a decidable class. Priority: Medium.
 
-ASSUMPTION-1256 [QUEUED]
+ASSUMPTION-1256 [QUEUED] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - PARTIALLY-CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-592]
   "The sandbox output needs Tom's eyes, not more agent passes." Search: marginal yield of iterated
   automated review vs. one expert read; reviewer fatigue and detection rate on very long documents
   (16k lines). Search jointly with PRESUMPTION-910. Priority: Medium.
 
-ASSUMPTION-1257 [QUEUED]
+ASSUMPTION-1257 [QUEUED] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-05 - REVISE-430]
   "B = the neocortical column — the thousand brains of TBT." Search: the cortical column as a
   functional unit (Mountcastle; Horton & Adams 2005 "the cortical column: a structure without a
   function"; Hawkins/Numenta reply); whether "column" is a defensible level between neuron and
   person. In-vault: Hawkins tradition. Priority: High.
 
-ASSUMPTION-1258 [QUEUED]
+ASSUMPTION-1258 [QUEUED] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong/Moderate)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-593]
   "The earlier [ladder] reaches for an OBJECTIVE ordering principle (entropy)." Search: entropy /
   complexity as an ordering principle for levels of organisation; simplicity-to-complexity vs.
   cause-to-effect hierarchies (Carroll "Biggest Ideas 3: complexity and emergence" — PROP-2026-09-04-001
   is on the same topic; Wolfram computational irreducibility). Priority: Medium.
 
-ASSUMPTION-1261 [QUEUED]
+ASSUMPTION-1261 [QUEUED] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate/Weak)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Moderate-Strong; independence not held)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-594]
   "Five days dark means five days of assumptions ... unsurfaced." Rationale drift against
   PRESUMPTION-903 (evidence destroyed vs. work deferred). Search: recoverability of design rationale
   from artifacts after the fact (rationale-capture literature, design-rationale decay). Search jointly
@@ -19950,32 +19950,32 @@ ASSUMPTION-1261 [QUEUED]
 --------------------------------------------------------------------------------
 ### PRESUMPTION intake (14b → 15a/15b) — unstated, surfaced by inference
 
-PRESUMPTION-904 [QUEUED] [PRESUMPTION]
+PRESUMPTION-904 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate/Weak)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Moderate-Strong)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-595]
   A spreadsheet cell is the correct unit of classification. Search: segmentation-unit choice in corpus
   annotation; single-label vs. multi-label assignment when units are storage-defined; error
   propagation into per-category counts. Priority: Medium.
 
-PRESUMPTION-905 [QUEUED] [PRESUMPTION]
+PRESUMPTION-905 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate/Weak)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-05 - REVISE-431]
   A v2 classification stays valid under v3 after a targeted re-pass. Search: taxonomy evolution and
   re-annotation cost; recall loss when a category is added post hoc and only keyword-scoped items are
   re-labelled. Priority: High (empirical test is cheap: re-classify the 98 III.2.N cells).
 
-PRESUMPTION-906 [QUEUED] [PRESUMPTION]
+PRESUMPTION-906 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-05 - REVISE-432]
   Worker-reported confidence is calibrated across independent batches. Search: calibration of LLM
   self-reported confidence in text classification; anchoring by supplied priors (the 92% Loughran
   default). Priority: High.
 
-PRESUMPTION-908 [QUEUED] [PRESUMPTION]
+PRESUMPTION-908 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate/Weak)] [SEARCHED-15b: 2026-09-05 - PARTIALLY-CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-05 - MONITOR-596]
   Eight parallel workers without shared context classify consistently. Search: inter-annotator
   agreement with written guidelines and no adjudication; boundary-category drift. Priority: Medium.
 
-PRESUMPTION-909 [QUEUED] [PRESUMPTION]
+PRESUMPTION-909 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-05 - REVISE-433]
   The layered account is a total linear order. Search: levels of organisation as partial orders /
   lattices; mereological vs. causal hierarchies (Wimsatt, Craver, Potochnik & McGill 2012 "the
   limitations of hierarchical organization"); whether overlapping bands compose into a ladder.
   Priority: High — governs OPEN-179 and OPEN-181.
 
-PRESUMPTION-910 [QUEUED] [PRESUMPTION]
+PRESUMPTION-910 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-05 - PARTIALLY-SUPPORTED (Weak-Moderate)] [SEARCHED-15b: 2026-09-05 - CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-05 - REVISE-434]
   A human read detects misplacement without a stated failure criterion. Search: checklist vs.
   unstructured expert review yield; success-criteria specification and review sensitivity. Search
   jointly with ASSUMPTION-1256. Priority: Medium.
@@ -19986,3 +19986,560 @@ ASSUMPTION-1252, 1260 — in-house empirical checks (40 flagged cells; 5 deferre
 ASSUMPTION-1254, 1255, 1259, 1262 — verified in-run by count.
 PRESUMPTION-907 — framework commitment in part; in-house check on `sheet_row` recoverability.
 PRESUMPTION-911 — in-house test when a transcript becomes reachable.
+
+---
+
+## 2026-09-05 - 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Intake lane served: all 11 items of the 2026-09-04 14a/14b cohort searched by both directions and
+dispositioned.** ASSUMPTION-1251/1256/1257/1258/1261 and PRESUMPTION-904/905/906/908/909/910. Tallies:
+INCORPORATE 0 · MONITOR 6 (MONITOR-591..596) · REVISE 5 (REVISE-430..434) · DISPOSITION-896..906. No
+PREMISE minted. Results in lit_search_results/for|against/; returns and dispositions in
+lit_search_returns.md.
+
+  ASSUMPTION-1251 (labels apparatus unless authored)   | 15a PART-SUPP (Mod)  | 15b PART-CHAL (Mod)  | MONITOR-591
+  ASSUMPTION-1256 (Tom's eyes, not agent passes)       | 15a PART-SUPP (Mod)  | 15b PART-CHAL (Mod)  | MONITOR-592
+  ASSUMPTION-1257 (B = cortical column)                | 15a PART-SUPP (Mod)  | 15b CHAL (Strong)    | REVISE-430
+  ASSUMPTION-1258 (earlier ladder = objective/entropy) | 15a PART-SUPP (Mod)  | 15b CHAL (Strong/Mod)| MONITOR-593
+  ASSUMPTION-1261 (five days dark = deferred)          | 15a PART-SUPP (Mod/W)| 15b CHAL (Mod-Str)*  | MONITOR-594
+  PRESUMPTION-904 (cell = unit)                        | 15a PART-SUPP (Mod/W)| 15b CHAL (Mod-Str)   | MONITOR-595
+  PRESUMPTION-905 (v2 labels valid under v3)           | 15a PART-SUPP (Mod/W)| 15b CHAL (Strong)    | REVISE-431
+  PRESUMPTION-906 (confidence calibrated)              | 15a PART-SUPP (Mod)  | 15b CHAL (Strong)    | REVISE-432
+  PRESUMPTION-908 (8 workers consistent)               | 15a PART-SUPP (Mod/W)| 15b PART-CHAL (Mod)  | MONITOR-596
+  PRESUMPTION-909 (ladder is a total order)            | 15a PART-SUPP (Mod)  | 15b CHAL (Strong)    | REVISE-433
+  PRESUMPTION-910 (read detects without criterion)     | 15a PART-SUPP (W-Mod)| 15b CHAL (Strong)    | REVISE-434
+  * independence not held for this pair; discounted to one reading (DISPOSITION-900).
+
+**The five REVISEs are three decisions**, and revision_flags.md says so at the top of the block: (A) the
+ladder's structure (433, with 430 under it) - High; (B) the sandbox counts (431, 432) - two cheap
+measurements, ~150-cell re-classification and a 50-cell gold sample; (C) the read (434) - one paragraph
+before it starts. The SYSTEMIC-RISK-FLAG (High) in lit_search_returns.md names what 904/905/906/908/910
+share: every quality claim about the 2,402 cells is a self-measurement, which is PREMISE-124 in a new
+domain. One gold sample answers three of them.
+
+---
+
+**EXECUTION FAILURE, DECLARED IN FULL - this is the run's most important process finding.** The 15a/15b
+searches were delegated to subagents in three waves (6, then 2, then 4 launches). **Nine of twelve
+launches were interrupted by the harness** ("Request interrupted by user for tool use") before they
+returned - though most had written some or all of their files before the interruption. Only the
+first-wave 15a classification-group agent returned normally. The orchestrating (15c) context therefore
+wrote **8 of the 22 result files itself**: 15a for ASSUMPTION-1256/1261 and PRESUMPTION-910; 15b for
+PRESUMPTION-905/906/908 and ASSUMPTION-1261. Consequences, stated so they cannot be read as better than
+they are:
+  - **Search independence holds for 10 of 11 items** (no 15a file was read before its 15b file was
+    written, or vice versa, for any item; the orchestrator wrote its three FOR files before beginning any
+    AGAINST search). **It does NOT hold for ASSUMPTION-1261**, where one context wrote both directions ~1
+    hour apart. DISPOSITION-900 counts that pair as one reading and decides on the register (PREMISE-124)
+    instead.
+  - **Execution independence does not hold for the 8 orchestrator-written files**: the context that wrote
+    15b files for 905/906/908 had already written 15a files for OTHER items. Each affected PROVENANCE block
+    says so inline.
+  - The 14 subagent-written files were produced by contexts that could not have seen the other direction.
+  - Per PREMISE-197 no convergence between 15a and 15b is counted as corroboration anyway; the discount
+    this run adds is on top of that.
+  - Result files carry the same `_for.md` / `_against.md` names regardless of author; authorship is
+    recorded only in the PROVENANCE "Transform" line. **Recommended for the next run: if delegation is
+    again unreliable, run 15a fully (all items) in one subagent and 15b fully in another, sequentially,
+    rather than splitting by item group** - fewer launches, and a single interruption loses less.
+  - This is a data point for REVISE-426/427 (does adding agents add value?): the multi-agent design
+    degraded to one context under harness pressure and the run had to say so rather than let the file
+    names imply otherwise.
+
+**Citation discipline.** All 22 files mark each source VERIFIED / NOT verified at the level of what was
+actually seen in search results. 15c did NOT independently re-verify any citation this run - the budget
+went to completing the searches. The load-bearing ones for the REVISEs (Horton & Adams 2005; Craver &
+Bechtel 2007; Potochnik & McGill 2012; Tomczak et al. 2018 Sci Rep 8:5115; arXiv:2608.25869) are
+well-known or carry resolvable identifiers, but they are carried on the searching agents' word. Stated so
+confidence is not read as higher than it is.
+
+**Register reading before disposition (per the 09-04 FINDING 4 recommendation): done.** PREMISE-119, 121,
+124 and 129 were consulted and were load-bearing in four dispositions; PREMISE-124(b) decided
+ASSUMPTION-1261 outright. No ACTIVE premise contradicts any disposition.
+
+**BACKLOG, unchanged and declared.** The 15d re-trigger lane was NOT touched: **132 items** stand
+[QUEUED] pure-literature per the 09-04 run's block-parser count (this run did not re-count; the number is
+inherited, and PREMISE-179 says inherited counts from this file are unreliable). 26 of the 29 cycle-5 items
+remain, still without STALE-MONITOR-FLAGs. The 57 [IN-HOUSE] and 56 [QUEUED-EMPIRICAL] items are not
+search requests. MONITOR-009/068/070 remain stale-ACTIVE in monitor_queue.md (09-04 inconsistency, still
+open, 15d's lane).
+
+**SCOPE DISCIPLINE - what this run did NOT do.**
+  - No 15d-lane item searched. No STALE-MONITOR-FLAG applied.
+  - No citation re-verified by 15c.
+  - The in-house measurements named in REVISE-431/432/434 and MONITOR-591/595/596 are not 15a/15b work
+    and remain unrun.
+  - The 08-31…09-03 DARK tagging that MONITOR-594 asks for is 14a/14b's registers, not 15c's; it is
+    requested, not done.
+  - The unaccounted-for 2026-09-03 run was not investigated (carried from 09-04).
+
+**VERIFICATION.** All five registers snapshotted (`*.snapshot-2026-09-05-pre-15c`). Appends via
+temp-file-in-same-directory -> rename; byte deltas recorded in the run's final report. Inline tagging of
+the 11 intake lines asserted the exact header line existed once and carried no search tag before mutating.
+All 22 result files confirmed non-existent before writing; none overwritten.
+
+**ESCALATION CARRIED, twelfth consecutive run.** The 2026-08-25 binary decision is unanswered, 11 days
+out. Not re-filed (PREMISE-183). REVISE-426/427/428 stand; REVISE-433 now joins them as a High-urgency
+decision that only Tom can make.
+
+**Format note.** This file ends on a prose block terminated by `---` below, so the documented parser
+hazard is not triggered.
+
+---
+
+## Intake — 2026-09-05 · 14a/14b run (unattended day; sources are agent run notes)
+
+**Run note.** 7 assumptions (ASSUMPTION-1263–1269) and 6 presumptions (PRESUMPTION-912–917)
+extracted. **3 are routed below** as literature searches; 10 are in-house tests, partial in-run
+verifications, or framework commitments and are not search requests. Sources: this file's 2026-09-05
+15c run note, `revision_flags.md` REVISE-430–434, `lit_search_returns.md` 2026-09-05,
+`daily_sync/cowork_to_chat/2026-09-05_cowork_summary.md`. No attended session; no designer speech.
+All items are agent-stated or inferred from agent output (PRESUMPTION-912). Per the 15c
+recommendation in this file: if delegation is again unreliable, one 15a subagent for all items, one
+15b subagent for all items, sequentially.
+
+--------------------------------------------------------------------------------
+### ASSUMPTION intake (14a → 15a/15b)
+
+ASSUMPTION-1263 [QUEUED] [SEARCHED-15a: 2026-09-06] [SEARCHED-15b: 2026-09-06] [DISPOSITIONED-15c: 2026-09-06]  — 15a PART-SUPP (Mod) · 15b CHAL (Strong) · REVISE-435 (DISPOSITION-907)
+  "Search independence holds for 10 of 11 items (no 15a file was read before its 15b file was
+  written)." Search: whether artifact-blinding (not reading the opposing output) is the operative
+  condition for evaluator independence, or whether a single evaluator producing both sides in
+  sequence carries order/anchoring effects regardless. Search jointly with PRESUMPTION-914.
+  Priority: Medium — bears on REVISE-426/427 and on how much to discount 8 of 22 cycle-6 files.
+
+--------------------------------------------------------------------------------
+### PRESUMPTION intake (14b → 15a/15b) — unstated, surfaced by inference
+
+PRESUMPTION-914 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-06] [SEARCHED-15b: 2026-09-06] [DISPOSITIONED-15c: 2026-09-06]  — 15a PART-SUPP (W-Mod) · 15b CHAL (Strong) · REVISE-436 (DISPOSITION-908)
+  Within one context, arguing FOR item X does not condition a later AGAINST on related item Y;
+  independence is a property of file-reading, not of the writer's state. Search: sequential-judgment
+  carry-over; confirmation/consistency pressure when one evaluator argues opposed positions on
+  related items; adequacy of artifact-blinding vs. evaluator separation in dual review. Search
+  jointly with ASSUMPTION-1263. Priority: Medium.
+
+PRESUMPTION-915 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-06] [SEARCHED-15b: 2026-09-06] [DISPOSITIONED-15c: 2026-09-06]  — 15a SUPP (Mod) · 15b PART-CHAL (Mod) · MONITOR-597 (DISPOSITION-909)
+  The structure of a levels-of-organisation account (total order / lattice / per-tradition) is
+  settled by the author's ruling rather than by reading the author's own tables against a decision
+  rule. Search: when a taxonomy's structure is treated as stipulative vs. evidence-bearing in the
+  philosophy of classification (natural kinds, Dupré promiscuous realism, Potochnik & McGill 2012
+  already cited under REVISE-433); designer-authority vs. corpus-evidence in ontology engineering.
+  Priority: Medium — governs how REVISE-433 / OPEN-179 / OPEN-181 should be *answered*, not what
+  the answer is.
+
+### Not routed (10)
+ASSUMPTION-1264 — [QUEUED-EMPIRICAL] next 15-pipeline run records launches, interruptions, files lost.
+ASSUMPTION-1265 — [IN-HOUSE] count 15-pipeline runs since 07-31 that achieved vs. degraded from the declared layout.
+ASSUMPTION-1266 — [IN-HOUSE] contingent on PRESUMPTION-916's redesign.
+ASSUMPTION-1267 — [IN-HOUSE] enumerate sandbox quality claims; mark self- vs external-measured.
+ASSUMPTION-1268 — [IN-HOUSE] resolve five citations; five lookups.
+ASSUMPTION-1269 — partly verified in-run.
+PRESUMPTION-912 — [IN-HOUSE] authorship ratio since 08-27; ruling is OPEN-182.
+PRESUMPTION-913 — [IN-HOUSE] 22 files: interrupted vs. not, by length and source count.
+PRESUMPTION-916 — CHALLENGED in-run by arithmetic (24 strata, ~2 cells each); needs redesign, not search.
+PRESUMPTION-917 — [IN-HOUSE] when OPEN-168's channel is restored.
+
+---
+
+## 2026-09-06 - 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Intake lane served: all 3 routed items of the 2026-09-05 14a/14b cohort searched both directions and
+dispositioned.** Tallies: INCORPORATE 0 · MONITOR 1 (MONITOR-597) · REVISE 2 (REVISE-435, -436) ·
+DISPOSITION-907..909. No PREMISE minted. SYSTEMIC-RISK-FLAG (High) filed for 1263/914.
+
+  ASSUMPTION-1263 (read-order = independence)          | 15a PART-SUPP (Mod)   | 15b CHAL (Strong)      | REVISE-435
+  PRESUMPTION-914 (FOR on X doesn't condition AGAINST Y)| 15a PART-SUPP (W-Mod) | 15b CHAL (Strong)      | REVISE-436
+  PRESUMPTION-915 (ladder structure settled by ruling)  | 15a SUPP (Mod)        | 15b PART-CHAL (Mod)    | MONITOR-597
+  * Independence not held for ANY pair this run; each pair counted as one reading (see below).
+
+**The two REVISEs are one decision** (REVISE-436, High): when 15b delegation fails, FAIL LOUD or permit
+orchestrator fallback with a one-reading discount. It is the fourth High-urgency binary awaiting Tom
+(with the 08-25 decision, REVISE-426/427/428, REVISE-433).
+
+---
+
+**EXECUTION RECORD, per ASSUMPTION-1264 (launches / interruptions / files lost).** Three subagent launches,
+all three returned "Request interrupted by user for tool use" immediately. Launch 1 (15a, all items)
+nevertheless ran to completion in the background and wrote all three FOR files plus its returns file
+(02:59–03:29). Launch 2 (15a retry, issued before launch 1's files appeared) wrote nothing — its
+"create only if absent" guard may have held, or it never ran. Launch 3 (15b, all items) wrote nothing in
+~55 minutes and was presumed dead. Files lost: 0. Orchestrator-written: 4 of 7 (three AGAINST files and
+the SYSTEMIC-RISK-FLAG). The 09-05 recommendation (one subagent per direction) was followed and halved the
+launch count; it succeeded for 15a and failed for 15b.
+
+**INDEPENDENCE, stated so it cannot be read as better than it is.**
+  - Read-channel independence (file order): holds for 15a (the subagent never saw an AGAINST file). Does
+    NOT hold for 15b: the orchestrating context read all three 15a files before writing any AGAINST file.
+  - Execution independence (distinct contexts): holds for 15a; does NOT hold for 15b or 15c.
+  - Additionally, before the 15a files were found, the orchestrator ran 7 FOR-direction queries of its own
+    (superseded by the subagent's files, not used) and one of them surfaced an AGAINST-relevant source
+    (AMEL), which was then used in the AGAINST search. Declared.
+  - Per DISPOSITION-900 precedent and PREMISE-111/197: all three pairs are counted as one reading. The
+    verdicts rest on the register (PREMISE-111) and on the cited literature, not on 15a/15b convergence.
+  - The 15b files for 1263 and 914 argue that this very configuration is compromised. That is not a
+    conflict of interest to hide; it is the reason the SYSTEMIC-RISK-FLAG asks for a ruling rather than
+    asserting one.
+
+**Citation discipline.** All 7 files mark each source VERIFIED / NOT verified at the level actually seen.
+15c re-verified nothing. Load-bearing new sources (arXiv:2605.29800, arXiv:2605.22714, arXiv:2506.00069,
+Nemeth 2001, Mattijssen 2020, Noy & McGuinness 2001) carry resolvable identifiers.
+
+**Register reading before disposition: done.** PREMISE-111 and PREMISE-197 were load-bearing in
+DISPOSITION-907/908. No ACTIVE premise contradicts any disposition.
+
+**BACKLOG, unchanged and declared.** The 15d re-trigger lane was NOT touched. A block-parser count this run
+found **151** `Status: [QUEUED]` lines without `[DISPOSITIONED-15c]` (lines 10724–15049; RE-TRIGGER
+07-05..08-02 cycles 1–5 and RE-CHECK 08-02) — versus the inherited "132" of the 09-04/09-05 notes. The
+methods differ (this is a raw grep, not the 09-04 block parser) and PREMISE-179 says neither count is
+authoritative; both are reported. The 57 [IN-HOUSE] and 56 [QUEUED-EMPIRICAL] items are not search
+requests. MONITOR-009/068/070 remain stale-ACTIVE in monitor_queue.md.
+
+**SCOPE DISCIPLINE - what this run did NOT do.** No 15d-lane item searched. No STALE-MONITOR-FLAG applied.
+No citation re-verified. The in-house tests named in MONITOR-597 and REVISE-436 are not 15a/15b work and
+remain unrun. The 10 not-routed items of the 09-05 intake were not touched. The unaccounted-for 09-03 run
+was not investigated (carried).
+
+**VERIFICATION.** Five registers snapshotted (`*.snapshot-2026-09-06-pre-15c`). Appends via `cat >>` from
+staged files; byte deltas in the final report. Inline tagging of the 3 intake lines asserted each header
+existed exactly once and carried no search tag before mutation. All 7 result files confirmed absent before
+writing; none overwritten.
+
+**ESCALATION CARRIED, thirteenth consecutive run.** The 2026-08-25 binary decision is unanswered, 12 days
+out. Not re-filed (PREMISE-183).
+
+**Format note.** This file ends on a prose block terminated by `---` below.
+
+---
+
+## Intake — 2026-09-07 · 14a/14b run (gap-filling; 09-06 run missed; unattended days 09-06 and 09-07)
+
+Sources: `lit_search_returns.md` 2026-09-06 section (DISPOSITION-907–909, SYSTEMIC-RISK-FLAG),
+`revision_flags.md` REVISE-435–436, `monitor_queue.md` MONITOR-597, session_info transcripts of
+`C2a2 agent levin friston` and `Morning walk cowork handoff` (2026-09-07). No designer speech
+(PRESUMPTION-912; OPEN-182 unruled). Items not routed are in-house verifications or already
+adjudicated.
+
+--------------------------------------------------------------------------------
+### ASSUMPTION intake (14a → 15a/15b)
+
+ASSUMPTION-1274 [QUEUED] [SEARCHED-15a: 2026-09-07] [SEARCHED-15b: 2026-09-07] [DISPOSITIONED-15c: 2026-09-07 → REVISE (REVISE-437, Medium)]
+  15a: PARTIALLY-SUPPORTED (Moderate limb i / Weak limb ii) | 15b: CHALLENGED (Strong) | DISPOSITION-910 | independence: read 1/1, exec 1/1
+  "Abstract-level is enough for a proposal with an evidence gate noted." Search: accuracy of
+  title/abstract-only screening vs full-text in evidence synthesis (sensitivity/specificity of
+  abstract screening; how often abstracts misstate findings); whether a stated "gate" survives into
+  downstream use. Priority: Low–Medium — proposal pipeline hygiene; one instance so far.
+
+--------------------------------------------------------------------------------
+### PRESUMPTION intake (14b → 15a/15b) — unstated, surfaced by inference
+
+PRESUMPTION-918 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-07] [SEARCHED-15b: 2026-09-07] [DISPOSITIONED-15c: 2026-09-07 → REVISE (REVISE-438, High; joined to REVISE-436)]
+  15a: PARTIALLY-SUPPORTED (Moderate conditional / Weak) | 15b: CHALLENGED (Strong) | DISPOSITION-911 | independence: read 1/1, exec 1/1 — 15b delegation succeeded; no fallback
+  A context that has lost evaluator independence can accurately assess how much that loss mattered;
+  declaring a bias discharges it. Search: bias blind spot (Pronin, Lin & Ross 2002); mental
+  contamination and the limits of correction (Wilson & Brekke 1994); disclosure effects (Cain,
+  Loewenstein & Moore 2005); LLM self-critique reliability. Priority: High — governs whether the
+  pipeline's declaration/flag layer is a control or a label. NOTE for 15a/15b: this item is about
+  same-context fallback; if 15b delegation fails on this item, apply the SYSTEMIC-RISK-FLAG's own
+  recommendation (3) — leave it [SEARCHED-15a] and do not orchestrator-write the AGAINST.
+
+PRESUMPTION-921 [QUEUED] [PRESUMPTION] [SEARCHED-15a: 2026-09-07] [SEARCHED-15b: 2026-09-07] [DISPOSITIONED-15c: 2026-09-07 → REVISE (REVISE-439, Medium; joined to MONITOR-544)]
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong theoretical / Moderate empirical) | DISPOSITION-912 | independence: read 1/1, exec 1/1
+  A tradition's activity is what its named thinker authored; the tradition is an author, not a
+  school. Search: MacIntyre on traditions as community-borne enquiry; Kuhn disciplinary matrix;
+  invisible colleges (Crane 1972); whether a research programme's progress is legible from its
+  founder's output alone (Lakatos protective belt is mostly not the founder's work). Priority:
+  Medium — bears on the Stage 2 intra-tradition consensus metric, which is undefined for N=1.
+
+### Not routed (7)
+ASSUMPTION-1270 — [IN-HOUSE] verify "one reading" was applied in DISPOSITION-907–909 weighting.
+ASSUMPTION-1271 — [IN-HOUSE] resolve arXiv:2605.29800 and arXiv:2605.22714; confirm effect sizes.
+ASSUMPTION-1272 — [IN-HOUSE] date comparison: fallback practice vs PRESUMPTION-914's surfacing.
+ASSUMPTION-1273 — [IN-HOUSE] contingent on PRESUMPTION-920.
+ASSUMPTION-1275 — tested in-run: clause 1 SUPPORTED, clause 2 CHALLENGED (grep).
+PRESUMPTION-919 — [IN-HOUSE] mtimes of 15b files vs fallback start.
+PRESUMPTION-920 — [IN-HOUSE] count explicit relation-stating cells in §III.2.
+PRESUMPTION-922 — [IN-HOUSE] enumerate 09-06 due dates; check consumption.
+
+---
+
+## 2026-09-07 - 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Intake lane served: all 3 routed items of the 2026-09-07 14a/14b cohort searched both directions and
+dispositioned.** Tallies: INCORPORATE 0 · MONITOR 0 · REVISE 3 (REVISE-437, -438, -439) ·
+DISPOSITION-910..912. No PREMISE minted. SYSTEMIC-RISK-FLAG (High) filed by 15b for 1274/918
+(declaration-substitutes-for-procedure).
+
+  ASSUMPTION-1274 (abstract-level + gate noted)         | 15a PART-SUPP (Mod/Weak) | 15b CHAL (Strong)        | REVISE-437 (Medium)
+  PRESUMPTION-918 (compromised context self-assesses)   | 15a PART-SUPP (Mod/Weak) | 15b CHAL (Strong)        | REVISE-438 (High; joined REVISE-436)
+  PRESUMPTION-921 (tradition = author)                  | 15a PART-SUPP (Mod)      | 15b CHAL (Strong/Mod)    | REVISE-439 (Medium; joined MONITOR-544)
+
+**REVISE-438 answers the REVISE-436 binary rather than adding one:** the literature (Wilson & Brekke 1994;
+Pronin, Lin & Ross 2002; Cain, Loewenstein & Moore 2005; Huang et al. 2024) says the fallback discount
+cannot be self-estimated and declaration under-discounts — i.e. option (a), FAIL LOUD. Still Tom's call.
+
+---
+
+**EXECUTION RECORD, per ASSUMPTION-1264.** Two subagent launches, concurrent, one per direction (the
+09-05 recommendation). Both returned normally; 15a wrote 3 files (11:06–11:12), 15b wrote 3 files + the
+flag (11:08–11:10). Interruptions: 0. Files lost: 0. Orchestrator-written: 0 of 7. This is the first run
+since the fallback practice began on which no fallback was needed; recorded as one data point for
+REVISE-436/438, not as a trend.
+
+**INDEPENDENCE, two numbers (per REVISE-435).**
+  - Read-channel independence (file order): 3 of 3. Neither subagent read the other's directory or
+    lit_search_returns.md (attested by both; consistent with mtimes).
+  - Execution independence (distinct contexts): 3 of 3.
+  - PREMISE-111's standing discount (shared base model, shared scaffold, shared query suggestions in the
+    intake lines) still applies; 15a/15b convergence on the limb splits was NOT cited as independent
+    confirmation in any disposition. Note: the intake lines' "Search:" hints were passed to both subagents
+    and are a shared channel; 15a and 15b nevertheless retrieved largely disjoint source sets (overlap:
+    Wilson & Brekke, Pronin & Kugler, Merton, Kuhn).
+
+**Citation discipline.** All 7 files mark each source VERIFIED / NOT verified at the level actually seen;
+15b read full text for Pitkin 1999 and Huang 2024. 15c re-verified nothing. PubMed/PMC rate-limited
+several 15b fetches (declared in-file).
+
+**Register reading before disposition: done.** PREMISE-111, -188, -197 and PREMISE-001 load-bearing and
+cited. No ACTIVE premise contradicts any disposition; none amended. PREMISE-001 (traditions as unit) is
+noted, again, as silent on what counts as a tradition — REVISE-439 is the third item to land in that
+silence (with ASSUMPTION-064 / MONITOR-544).
+
+**BACKLOG, unchanged and declared.** The 15d re-trigger lane was NOT touched. Raw count this run of
+`Status: [QUEUED]` lines without `[DISPOSITIONED-15c]`: **156** (RE-TRIGGER 07-05: 81, 07-12: 19,
+07-19: 21, 07-26: 3, 08-02: 8; RE-CHECK 08-02: 19; remainder untagged-by-15d). The 09-06 raw count was 151
+and the 09-04/09-05 block-parser count 132; no 15d re-trigger has been added since 08-30 (12 items,
+all dispositioned), so the 151→156 difference is a method artefact, not new intake. Per PREMISE-179 no
+count is authoritative; all are reported. MONITOR-009/068/070 remain stale-ACTIVE.
+
+**SCOPE DISCIPLINE - what this run did NOT do.** No 15d-lane item searched. No citation re-verified. The
+in-house tests named in MONITOR-597 / REVISE-436 / REVISE-438 (linear-extension test; fresh-context diff
+of the 12 fallback files) are not 15a/15b work and remain unrun. The 7 not-routed items of the 09-07 intake
+were not touched. No retroactive re-labelling of the 09-05/09-06 fallback files.
+
+**VERIFICATION.** Five registers snapshotted (`*.snapshot-2026-09-07-pre-15c`). Appends via `cat >>` from
+staged files. Byte deltas: for_lit_search +867 (tags) + this note; lit_search_returns +16,775;
+revision_flags +7,142; monitor_queue 0; validated_premises 0. Inline tagging asserted each of the 3 intake
+headers existed exactly once and carried no search tag before mutation; DISPOSITION-910–912 and
+REVISE-437–439 confirmed absent before append. All 7 result files confirmed absent before the subagents
+wrote them; none overwritten.
+
+**ESCALATION CARRIED, fourteenth consecutive run.** The 2026-08-25 binary decision is unanswered, 13 days
+out. Not re-filed (PREMISE-183). Open High-urgency binaries for Tom: 08-25, REVISE-426/427/428, REVISE-433,
+REVISE-436 (+438).
+
+**Format note.** This file ends on a prose block terminated by `---` below.
+
+---
+
+## INTAKE — 2026-09-07 (evening run of 14a/14b; second intake of this date)
+
+*The 10:53 intake of 2026-09-07 routed 3 items (ASSUMPTION-1274, PRESUMPTION-918, -921); all three were
+searched and dispositioned in the 11:06–11:16 cycle (DISPOSITION-910–912, REVISE-437–439). The four items
+below are from the remainder of the day and are new. 13 items were minted this run; 4 are routed and 9 are
+declared not-routed with reasons at the foot of this block.*
+
+---
+
+ASSUMPTION-1277:
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-08 — SUPPORTED (Strong general / Weak-Moderate in the
+    named domain): Just et al. FSE'14, 73% vs 40-50%; Petrovic et al. ICSE'21/TSE'21; negative-control
+    principle. No randomised comparison exists; 17% of real faults unrepresentable by any mutant.]
+  [SEARCHED-15b: 2026-09-08 — PARTIALLY-CHALLENGED (Moderate): strong against SUFFICIENCY only. The
+    pair is a sensitivity test; an over-broad guard passes the fixture AND fails on neutralisation,
+    so the gate certifies the dominant filter-rule defect class. Remedy: a negative fixture.]
+  [DISPOSITIONED-15c: 2026-09-08 → INCORPORATE, limb-split (PREMISE-199, Moderate); sufficiency claim
+    explicitly NOT adopted; DISPOSITION-913]
+  Item type: ASSUMPTION (stated)
+  Statement: A guard rule is not adopted until it passes a fixture AND a control in which the rule is
+    neutralised fails — the paired falsifier is the adoption gate.
+  Source: attended session 2026-09-07 ~10:50–11:00; `commit_daily_run.sh` fix message in
+    `inbox/rc_sandbox/COMMIT_ME_2026-09-07.sh`.
+  Question for 15a/15b: does paired fixture-plus-neutralised-control test design measurably reduce
+    defect escape in configuration guards and filter rules, relative to a positive fixture alone?
+  Search: mutation testing effectiveness; assertion/oracle adequacy; "test that the test can fail";
+    Petrović & Ivanković mutation testing at scale; Just et al. 2014 (mutants vs real faults);
+    negative-control design in software verification; regex/filter-rule defect studies.
+  Priority: Medium — the method is cheap and already in use once; whether it generalises is what is asked.
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a, 15b]
+    Original item: ASSUMPTION-1277
+    Item type: ASSUMPTION (stated — quoted from a commit message written with the designer present)
+    Transform at each step:
+      14a: extracted verbatim; routed as a general methodological claim, not as a judgement on the
+        specific guard, which was verified in-run by its own fixture.
+    Current status: INCORPORATED (PREMISE-199) — DISPOSITION-913
+
+ASSUMPTION-1282:
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-08 — PARTIALLY-SUPPORTED (Moderate limb 1 / None limb 2):
+    five machine pipelines show an unconsumed structured tag changes nothing; limb 2 has no
+    machine-case evidence. 15a declares its own verification level too low to bear weight on
+    REVISE-437/438.]
+  [SEARCHED-15b: 2026-09-08 — CHALLENGED (Strong on the machine transfer / Moderate on the
+    prescription): the axis is CONSUMED-vs-UNCONSUMED, not declarative-vs-procedural (Zoncolan; RRID
+    ~50%→>90%; vs Hu et al. FSE 2025 suppression growth; van der Sijs 49-96% override).]
+  [DISPOSITIONED-15c: 2026-09-08 → REVISE (REVISE-440, High; SYSTEMIC-RISK-FLAG 2026-09-08 attached;
+    15a NOVELTY on limb 2 carried inside the REVISE, not to MONITOR — reason declared);
+    DISPOSITION-915]
+  Item type: ASSUMPTION (stated)
+  Statement: "The fix for this class of problem is procedural and external, not declarative and internal;
+    a system that accepts declarations in lieu of procedure will tend to produce more of the thing
+    declared, not less."
+  Source: SYSTEMIC-RISK-FLAG 2026-09-07 (declaration-substitutes-for-procedure, High), filed by the
+    delegated 15b subagent on ASSUMPTION-1274 / PRESUMPTION-918.
+  Question for 15a/15b: the flag's seven sources establish the two limbs for *human* disclosure and
+    citation contexts. What is routed is the generalisation to a machine-readable provenance chain, whose
+    transfer conditions the flag does not state. Does the disclosure literature's finding survive when
+    the "reader" is an automated downstream agent and the annotation is a structured tag rather than
+    prose?
+  Search: machine-readable provenance (W3C PROV) and downstream consumption of qualifiers; taint tracking
+    and label propagation as an analogue; FAIR-data qualifier attrition; warning fatigue in static
+    analysis and CI gates; blocking vs advisory checks in build systems; whether structured caveats
+    propagate better than prose caveats (Sumner 2014's mechanism in a machine pipeline); AGAINST:
+    evidence that declarative annotation alone changed downstream behaviour.
+  Priority: High — the flag's recommendation is already shaping REVISE-437/438, so its transfer condition
+    is load-bearing before it has been tested.
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a → 15a, 15b]
+    Original item: ASSUMPTION-1282
+    Item type: ASSUMPTION (stated — quoted from an agent-authored risk flag)
+    Transform at each step:
+      14a: extracted verbatim; narrowed the routed question to the generalisation, since the sources for
+        the human case were read in the 09-07 cycle and should not be re-searched.
+    Current status: REVISION-FLAGGED (REVISE-440) — DISPOSITION-915
+
+PRESUMPTION-925:
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-08 — PARTIALLY-SUPPORTED timing (Weak-Moderate) /
+    NO-SUPPORT-FOUND authorship / NO-SUPPORT-FOUND parity: arXiv 2604.20927 §6.2.2 gives 72% within
+    one hour AND excludes reused templates (38% unique) — the 09-07 22:00 batch is the excluded
+    class. NOVELTY-FLAG in the unfavourable sense on authorship.]
+  [SEARCHED-15b: 2026-09-08 — CHALLENGED (Strong): Mokhov/Mitchell/Peyton Jones 2018 — Make's
+    forward-timestamp assumption is violated by backup software; Shake and Bazel replaced mtime with
+    content hashes. Authorship is ABSENT, not weak: mtime has no agent field.]
+  [DISPOSITIONED-15c: 2026-09-08 → INCORPORATE the corrective (PREMISE-200; High on authorship and
+    parity, Moderate on the timing exclusion). Live exposure NOT closed: the 09-07 22:00 ~60-file
+    batch is a candidate machine event pending a content-hash test; DISPOSITION-914]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: [inferred] A day reconstructed from file mtimes and agent run-reports has the same
+    evidential standing as one read from session transcripts; mtime is a reliable authorship and timing
+    signal.
+  Source: 2026-09-07 18:40 Cowork→Chat run note, read against ASSUMPTION-1276 (mtime is NOT an authorship
+    signal in this repo — the 09-05 commit sweep) and against the 22:00 mass-mtime batch observed by this
+    run across ~60 files including all five self-awareness registers.
+  Question for 15a/15b: how reliable is filesystem mtime as evidence of authorship and of the time of
+    substantive change, in the presence of sync, backup and indexing processes?
+  Search: digital forensics on filesystem timestamp reliability (timestomping, sync-induced mtime churn);
+    archival/OAIS provenance and the insufficiency of filesystem metadata; empirical studies of
+    mtime-vs-content-hash divergence in cloud-synced trees (Dropbox/iCloud/Drive); mining-software-
+    repositories literature on timestamp-based authorship attribution error rates; AGAINST: contexts in
+    which mtime is a validated proxy.
+  Priority: High — the daily sync summaries, the changelog's "Changes Detected" section and part of every
+    metrics snapshot are built on mtime evidence, and this project has already been damaged once by it.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-925
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: inferred from an inconsistency between two claims held by the same layer on the same day.
+    Current status: INCORPORATED (PREMISE-200) — DISPOSITION-914
+
+PRESUMPTION-928:
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-08 — PARTIALLY-SUPPORTED (Moderate, strictly conditional):
+    21 CFR 312.42 shows deferral CAN be non-operative given four features (order not note; STOP
+    default; affirmative external resumption; expiry). NOTHING found supports neutrality under a
+    CONTINUE default, which is this estate's case.]
+  [SEARCHED-15b: 2026-09-08 — CHALLENGED (Strong): Anderson 2003; Tversky & Shafir 1992 (escalation
+    RAISES deferral); van der Sijs 2006 (49-96% override, decay 50%→75% over five years); Vaughan.
+    No peer-reviewed evidence that escalation queues suspend practice was found at all.]
+  [DISPOSITIONED-15c: 2026-09-08 → REVISE (REVISE-441, High). CONTRADICTS ACTIVE PREMISE-133;
+    PREMISE-133 deliberately NOT amended this run — reason declared; DISPOSITION-916]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: [inferred] "No ruling" is a neutral state: an item awaiting a binary decision is paused, and
+    nothing is being decided while it waits.
+  Source: REVISE-436's binary, four lit-search cycles executed under it, all four behaving as though limb
+    (b) had been chosen; the 08-25 binary at 13 days and a fourteenth consecutive escalation carry.
+  Question for 15a/15b: is deferral of a decision, in a system that continues to operate, empirically
+    equivalent to selecting the incumbent option — and does explicit escalation without resolution make
+    that outcome more or less likely?
+  Search: Samuelson & Zeckhauser 1988 status quo bias; Johnson & Goldstein 2003 defaults; omission bias
+    (Ritov & Baron); decision avoidance (Anderson 2003); organisational escalation and the "decision by
+    default" literature; drift into failure (Dekker) and normalisation of deviance (Vaughan) as the
+    safety-science form; AGAINST: evidence that formal escalation queues do suspend practice.
+  Priority: High — this determines whether the escalation register is a control or a label, which is the
+    same question the 09-07 SYSTEMIC-RISK-FLAG raises one level down.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-928
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: inferred from the escalation counter's framing read against the run history it spans;
+        distinguished from PRESUMPTION-918 (declaring a breach) — this is about declining to rule.
+    Current status: REVISION-FLAGGED (REVISE-441) — DISPOSITION-916
+
+---
+
+**NOT ROUTED, declared (9 of 13 minted this run).**
+
+- **ASSUMPTION-1276** (mtime authorship window) — tested and SUPPORTED in-house this run by three
+  same-day instances; the literature limb is carried by PRESUMPTION-925 instead, to avoid two routes to
+  one question.
+- **ASSUMPTION-1278** (connected-bucket decline is basename dilution) — in-house test named and cheap:
+  the weekly sewing agent holds the per-page snapshot. No literature question.
+- **ASSUMPTION-1279** (a structurally identical census is clutter, not measurement) — in-house: grep for
+  consumers of `bootstrap_backlink_census_*`.
+- **ASSUMPTION-1280** (Openstory 6.1 GB / 4.2 GB is a capacity ceiling, not a feed failure) — empirical
+  with a dated first test, 2026-09-08. Not a literature question.
+- **ASSUMPTION-1281** (concurrent single-direction launches preserve independence) — n=1; settled by
+  replication, not by search.
+- **PRESUMPTION-923** (paste gate is a property of the tasks, not the design) — in-house classification
+  of 8 standing recommendations; OPEN-184 asks the ruling.
+- **PRESUMPTION-924** (a task that declines its phase twelve times is still a task) — in-house count; the
+  missing register is the finding, not a literature gap.
+- **PRESUMPTION-926** (metric movement is meaningful independently of denominator) — in-house
+  recomputation over human- vs agent-authored splits.
+- **PRESUMPTION-927** (the audit layer observes from outside a corpus it is 54.5% of) — the measurement
+  is done (2,661 / 4,879); what remains is OPEN-185's ruling, not a search.
+
+*Intake written by the 14a/14b evening run, 2026-09-07 ~23:40 EDT. Registers snapshotted as
+`*.bak.20260907-pre-14eod2`.*
+
+---
+
+## 2026-09-08 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Intake lane served, fourth consecutive cycle.** All 4 routed items of the 2026-09-07 EVENING 14a/14b
+cohort (ASSUMPTION-1277, ASSUMPTION-1282, PRESUMPTION-925, PRESUMPTION-928) searched in both directions
+and dispositioned. Tags are inline on the item blocks above. Returns, full dispositions and the run
+integrity report are in `lit_search_returns.md` under the 2026-09-08 heading.
+
+**Outcome:** INCORPORATE 2 (PREMISE-199 from ASSUMPTION-1277; PREMISE-200 from PRESUMPTION-925) ·
+MONITOR 0 · REVISE 2 (REVISE-440 from ASSUMPTION-1282, High; REVISE-441 from PRESUMPTION-928, High).
+DISPOSITION-913..916. One SYSTEMIC-RISK-FLAG (High, "unmeasured-control-credit", all four items) filed
+by 15b and ROUTED to REVISE-440 rather than left in the results directory.
+
+**Execution:** two delegated subagents in distinct contexts (15a all-items FOR; 15b all-items AGAINST),
+launched SEQUENTIALLY rather than concurrently — declared as a deviation from the 09-07 pattern.
+Orchestrator-written result files: 0 of 8. Read-channel independence: 4 of 4, attested in writing by
+both. PREMISE-111/197 discount applied: agreement is not counted as independent confirmation.
+
+**BACKLOG, unchanged and declared.** This run did NOT touch the 15d re-trigger lane. Items carrying
+`Status: [QUEUED]` with neither a `[SEARCHED-15a]` nor a `[SEARCHED-15b]` tag stand where the 2026-09-04
+block-parser count left them (that count was not re-run this run, and the number is therefore carried,
+not measured). The oldest is from 2026-07-05, sixty-five days. Four consecutive runs have now served the
+new-intake lane and said so. Naming it a fourth time is not a fix, and this run does not claim it as one.
+
+**One thing this run declined to do, stated rather than left silent.** PREMISE-133 (abstention is a
+decision; requires discharge condition, adjudicator, deadline) is the ACTIVE premise that PRESUMPTION-928
+contradicts, and this run's evidence supplies a clean amendment to it — the CONTINUE-default condition
+and the expiry mechanism. The amendment was NOT made. Amending a premise about unruled escalations,
+inside the run that is reporting a fifteenth consecutive unruled escalation, would substitute a register
+edit for the decision that is actually owed. The amendment is written out in REVISE-441 and waits on the
+ruling.
+
+*Run note written by the 15a/15b/15c pipeline, 2026-09-08. Registers snapshotted as
+`*.snapshot-2026-09-08-pre-15c` before any append. This note ends here; nothing below it belongs to it.*
+
+---
