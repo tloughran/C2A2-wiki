@@ -614,3 +614,48 @@ of these are about that axis and they do not agree with how it is currently file
   routinely, and nothing in the chain flags the gap. Any ordering built on `source_date` is exposed.
 
 [EVALUATED: 2026-09-02 - FINDING-080..082; see pattern_detector_findings.md]
+
+## Signals forwarded 2026-09-09 (daily run, 1 source ingested / 3 triplets)
+
+- [CROSS-131, LEVIN+MACINTYRE+STUMP] **A three-tradition construction rated above homology, with its own
+  falsifier attached.** The claim — a distributively held setpoint is genuinely in the agent and genuinely
+  not only in the agent, because the collective that holds it includes her — would make Aquinas's
+  grace-as-participation and MacIntyre's goods-internal-to-a-practice instances of one structure at
+  different scales. Evaluate against the standing homonym worry (FINDING-080 family): "setpoint" here is
+  doing the work "interface" was doing in CROSS-127, and the same test applies — does the word keep its
+  sign across the three traditions, or does Levin's descriptive setpoint and Aquinas's normative end differ
+  in kind rather than scale? The construction's own OPEN-normativity note concedes it must import its
+  normative source from outside Levin. **This is the strongest claim currently in the wiki that was
+  authored rather than harvested; it should be attacked before it is cited.**
+
+- [C2A2 DETECTOR, FALSIFIABLE] **Rich cross-tradition exposure raises the rate at which agents revise their
+  ends.** This is the accelerator/detector hypothesis stated in a form the instrument could actually
+  register. The mechanism is comparison with the aspirational states of other persons; its MacIntyrean
+  trigger is epistemological crisis, which cannot be scheduled, so the baseline rate is intermittent by
+  construction. **Instrumenting it is the detector's proper job**: if C2A2 can register revision events in
+  a corpus, this is measurable. Leads for prior art, explicitly NOT verified for currency — Kohlberg and
+  the neo-Kohlbergian line (Rest's Defining Issues Test), identity-status research after Marcia
+  (moratorium/achievement), quest religious orientation after Batson. Treat as leads, not as a literature
+  review. Note the symmetric risk the note itself raises: exposure to rival aspirational states is the
+  mechanism of conversion in BOTH directions, so a rise in revision rate is not by itself evidence of
+  improvement.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Cognitive light cone" is used here in a stricter sense than Levin's own.**
+  The construction stipulates an awareness-indexed reading under which the setpoint's source is external to
+  the agent; on Levin's usage a bioelectrically stored target is INSIDE the collective's light cone. The
+  stipulation is declared in the source note and carried into levin PRS-116, but **this is now the fourth
+  equivocal term in this network** (after "interface", and the two logged at FINDING-080..082). Recommend
+  the same disposition: a named entry in the ISME methods section on equivocal vocabulary, not a silent
+  correction.
+
+- [PIPELINE] **An inbox file with no `proposal_id` was ingested on the strength of ID alignment, not on a
+  review decision.** `inbox/2026-09-08_levin_virtue-as-external-setpoint.md` carried pre-drafted triplets
+  numbered PRS-116 (levin), PRS-06 (macintyre), PRS-41 (stump); all three were the next free ID in their
+  destination file, which is what licensed the ingest. But the file's own header says "integration is a
+  separate act", and it never passed through `inbox/proposals/pending/` or a decision email. **The ingest
+  ledger cannot judge such files at all** — it reports them under "files with NO proposal_id (cannot be
+  judged)", alongside `inbox/proposals/approved/2026-05-12_repair_manifest.md`. There is no route by which
+  hand-authored session output enters the wiki under review. Either mint proposal ids for session notes, or
+  give the ledger a third verdict for them.
+
+[EVALUATED: 2026-09-09 - FINDING-083..085; see pattern_detector_findings.md]

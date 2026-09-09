@@ -1083,3 +1083,76 @@ run does. Six such tasks are now outstanding and they are recorded only in tradi
 queue and into a standing retrieval list, so that approval means "queued for retrieval" rather than
 "approved for ingest." The precedent already exists — PROP-2026-08-14-033 is deliberately held OPEN in the
 ledger as a retrieval assignment rather than closed as zero-yield.
+
+## FINDING-083 — The first authored (not harvested) bridge in the wiki, and it names its own falsifier
+**Date:** 2026-09-09 | **Signal:** CROSS-131, LEVIN+MACINTYRE+STUMP | **Confidence:** MEDIUM-HIGH
+**Recommended action:** ESCALATE to the Paradigm Shift Watch List — as a claim to be attacked, not adopted.
+
+Every prior CROSS entry in this index was *harvested*: two thinkers said things, and the detector noticed a
+relation. CROSS-131 is different in kind. It is a construction Loughran authored, in which Levin's
+participation-without-representation is offered as the mechanism MacIntyre's *Dependent Rational Animals*
+lacks and as the scale-model of Aquinas's grace-as-participation. That difference is the finding: **the wiki
+has begun producing claims rather than only indexing them**, which is what an accelerator is supposed to do
+and is also where its error modes change.
+
+**Why MEDIUM-HIGH and not HIGH.** The construction rests on a stipulated, awareness-indexed reading of
+"cognitive light cone" that is *not* Levin's — on his usage the stored target is inside the collective's
+light cone. The stipulation is declared, which is the system working. But a declared stipulation still makes
+the load-bearing term equivocal across the three traditions it joins, and this is now the fourth equivocal
+term in this network after "interface" (CROSS-127) and the two logged at FINDING-080..082. **The pattern is
+no longer incidental.** Recommend it be handled where the others were sent: a named entry in the ISME methods
+section on equivocal vocabulary across traditions.
+
+**The two OPEN problems the note states against itself are the right attack surfaces.** (a) NORMATIVITY:
+Levin's setpoints are descriptive, so the recasting describes vice exactly as well as virtue and must import
+its normative source from outside Levin. (b) BOOTSTRAPPING: judging whether one's source is a tyrant requires
+standards that came from that source; MacIntyre's crisis-plus-encounterable-rival reply converts this from a
+philosophical problem into an engineering problem about the availability of rivals — converted, not solved.
+A construction that supplies its own falsifiers is worth more than one that does not; it should be cited only
+after someone has tried them.
+
+## FINDING-084 — The detector's own hypothesis is now stated in registrable form
+**Date:** 2026-09-09 | **Signal:** C2A2 DETECTOR, FALSIFIABLE | **Confidence:** MEDIUM
+**Recommended action:** ESCALATE to the Paradigm Shift Watch List as a measurement target; do NOT treat the
+literature leads as verified.
+
+"Rich cross-tradition exposure raises the rate at which agents revise their ends" is the first version of the
+accelerator/detector thesis written so that the instrument could register it: the unit is a **revision event
+in a corpus**, and C2A2 either can count those or cannot. That makes it the natural companion to the existing
+uptake and yield axes rather than a new programme.
+
+**Two cautions, both from the note itself.** First, the mechanism's MacIntyrean trigger is epistemological
+crisis, which cannot be scheduled — so the baseline rate is intermittent by construction and a null result
+over a short window means very little. Second, and more serious for interpretation: **exposure to rival
+aspirational states is the mechanism of conversion in both directions.** A measured rise in revision rate is
+evidence that the accelerator works, not that it works *well*; the instrument as specified cannot tell
+improvement from capture. Any claim made from this measurement at ISME needs that stated in the same
+paragraph.
+
+Prior-art leads named by Loughran and explicitly **not verified for currency**: Kohlberg and the
+neo-Kohlbergian line (Rest's Defining Issues Test), identity-status research after Marcia, quest religious
+orientation after Batson. These are leads. Nothing here is a literature review, and the ISME paper should not
+cite them until someone has read them.
+
+## FINDING-085 — Hand-authored session output has no reviewed route into the wiki
+**Date:** 2026-09-09 | **Signal:** PIPELINE | **Confidence:** HIGH
+**Recommended action:** REPAIR. Deterministic; no model pass needed.
+
+Today's ingest wrote three triplets into three tradition files from a file with **no `proposal_id`**. It never
+passed through `inbox/proposals/pending/`, no decision email approved it, and `scripts/ingest_ledger.py`
+cannot judge it at all — it appears under "files with NO proposal_id (cannot be judged)", the same bucket as
+`inbox/proposals/approved/2026-05-12_repair_manifest.md`.
+
+**What actually licensed the ingest was ID alignment**, and that deserves to be stated plainly because it is
+weak evidence dressed as strong. PRS-116 (levin), PRS-06 (macintyre) and PRS-41 (stump) were each the next
+free number in their destination file, which shows the note was authored against the current vault state and
+meant for those files. It does not show anyone approved it. Meanwhile the note's own header says "integration
+is a separate act" — an instruction the run overrode on the reading that placement in `inbox/` *is* the
+integration request.
+
+**This is the same family as FINDING-082.** There, approval could not distinguish "ingest this" from "go
+retrieve this". Here, the ledger cannot distinguish "unreviewed" from "reviewed elsewhere". In both cases a
+single status field is being asked to carry two facts. Repair: either mint a `PROP-` id for session-authored
+notes so they enter the normal review loop, or give the ledger an explicit third verdict — `authored`,
+carrying the session id as its warrant — so that an ingest of this kind is visible in the ledger instead of
+invisible to it.

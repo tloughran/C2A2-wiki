@@ -1046,7 +1046,16 @@ PRS-115:
   Confidence: Speculative
   Evidence: The authors state the work "may help inform future research on memory loss, resilience, and recovery in neurodegenerative diseases" — an offered direction, not a demonstrated result.
 
-*Total PRS triplets: 115*
+PRS-116:
+  Problem: Aristotelian virtue theory has no mechanism for how an end is set prior to and independent of the agent's deliberation, which is the point at which the account is weakest (NE III.5).
+  Resource: Bioelectrically stored target morphology — a setpoint held in a substrate other than the code, causally efficacious over the parts, writable from outside, and demonstrated by the two-headed planarian line.
+  Solution: The Aristotelian skopos is modelled as a stored setpoint; the acquired/infused distinction is reframed as a continuous question about storage location and write access rather than a metaphysical binary.
+  Date Added: 2026-09-08
+  Source: Loughran–Claude session 2026-09-08 (Potts paper-response run); inbox/2026-09-08_levin_virtue-as-external-setpoint.md
+  Confidence: Speculative
+  Evidence: The planarian result is Levin's own and is not in dispute. What is stipulated — and must stay declared — is an awareness-indexed reading of "cognitive light cone" under which the setpoint's source counts as external. On Levin's own usage a bioelectrically stored target is INSIDE the collective's light cone. The recasting is Loughran's, not Levin's, and Levin's setpoints are descriptive: the account describes vice exactly as well as virtue and must import its normative source from outside Levin.
+
+*Total PRS triplets: 116*
 
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*

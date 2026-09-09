@@ -5275,3 +5275,41 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-08.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-09
+
+**Idle run. Nothing due, nothing in intake, nothing moved.** First run since ACTIVE ITEMS dropped to a single entry.
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: 1 file, `2026-04-21_carroll_singer-mindscape-351.md` — the WATCH-001 tombstone (`status: superseded`, `tracked_by: agent-16`, resolved 2026-05-12). **0 new, 0 untracked.**
+- Channel 2 (agent-exchange deferrals): vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and the agent brief: **0 matches.** Channel still unexercised since raised 2026-08-23.
+- Channel 3 (human watch requests): **0 visible — channel deaf, sixth day running.** `architecture/daily_sync/chat_to_cowork/2026-09-08_chat_summary.md` records the 08:53 EDT scrape as FAILED on **both** paths: Claude in Chrome not connected (two `tabs_context_mcp` attempts), and the in-app browser pane blocked by an unapprovable site-permission prompt. No 2026-09-09 summary exists yet. Blind spot now spans **09-03 through 09-08**.
+
+**Condition checks (Step 3): 0 due, 0 executed.**
+- **WATCH-003** — weekly cadence, last checked 2026-09-08, **next due 2026-09-15**. Not checked; counter stays at **9**.
+- Off-cadence trigger tested (the one thing that would justify an early check): `review/archive/` still **18** files, latest still `2026-08-27_decisions.md`. No decision file has been written since the 08-27 pass, so no later disposition on PROP-2026-07-19-001 can exist and an early check could only reproduce the 09-08 answer. Not run.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**Stale items (Step 4): 1, unchanged.** WATCH-003, flagged 2026-08-25, 9 checks, human-dependent — one line from Tom on the INTEGRITY FLAG closes it and empties ACTIVE ITEMS. No item newly stale; no counters moved. WATCH-002's flag remains discharged by its 09-08 resolution.
+
+**Census:** `pending/` **33** (+6 since 09-08 — all dated 09-08: 2 Hoffman, 2 Hawkins, 1 Wright, 1 Rohr) · `approved/` 378 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 18 · `PROCESSED_LOG.md` 949 lines (mtime 2026-09-02 22:11 — unchanged). **Review-pass gap: 13 days. Ingest gap: 7 days.**
+
+**Observation, not a new flag.** The two gaps are now both structural rather than incidental: 33 carded-or-cardable proposals are queued behind a review pass that has not run in 13 days, and the last ingest run was 7 days ago. Neither is Agent 16's to fix and neither creates a *deferred* item, so no watch has been opened. Recorded because the pending backlog has grown every run this week (12 → 27 → 33) and the INTEGRITY FLAG's root cause — a large blanket pass over a long queue, against a review page that emits position-based decision IDs — is a function of queue length. The `tools/generate_review_page.py` ID fix (standing TOOLING FLAG) matters more at 33 cards than it did at 12.
+
+**Agent 16 Status:** Operational. 0 checks due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15**.
+
+**Open for Tom (priority order unchanged from 09-08):**
+1. **DEFERRED-CONDITION LEAKAGE ruling** — five retrieval assignments closed 09-02 with no tracker; option (b) is one line to the ingest step.
+2. **PROP-2026-08-14-033 is decidable now without an attended session** — publisher show notes are in hand at `resolved/2026-09-08_WATCH-002.md`. Rewrite the card from them, or deny on informed grounds.
+3. **One-line INTEGRITY FLAG ruling closes WATCH-003** — the last active item.
+4. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+5. **Systemic fix** — key the ingest step on the `content_verified` field rather than on authorial prose; filter `content_verified: false` out of en-bloc unread approval.
+6. **Run-log archival** — this file is now 589,624 bytes (~576 KiB) and the RUN LOG is ~95% of it; it has already produced one downstream metric error (the "2,188 watching items" report of 09-03). Cheapest fix: split runs before 2026-09-01 into `deferred/run_log_archive_2026H1.md` and leave ACTIVE ITEMS + FLAGS + RESOLVED INDEX in this file.
+7. **Channel 2 question**, standing since 08-23.
+8. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+9. **Chat→Cowork sync broken six days running** — Channel 3 is deaf until the Chrome extension is reconnected, or the in-app browser pane is granted standing access to claude.ai.
+
+---
+
+*Run completed 2026-09-09.*

@@ -18569,3 +18569,320 @@ PRESUMPTION-928:
         High confidence. Distinguished from PRESUMPTION-918 (which concerns whether declaring a breach
         discharges it) — this concerns whether declining to rule is itself a rule.
     Current status: UNTESTED
+
+---
+
+## 2026-09-08 — 14b intake (end-of-day, ~23:50 EDT)
+
+*Read after 14a's 09-08 intake (ASSUMPTION-1283–1293) and checked against it for duplication. Same
+coverage and same limits: no attended session, sixteen scheduled runs reachable, nine read, both sync
+directions dark for a fourth day.*
+
+PRESUMPTION-929:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] A status vocabulary with two values can carry a third state in prose, and the
+    consumer will read the prose. PASS may be redefined inside a run from "regenerated and validated" to
+    "validated only", provided the change is written next to the word.
+  Evidence it was operative: the Openstory telemetry refresh wrote "PASS (verified-only)" to
+    `REFRESH_STATUS.md`, having declined the regeneration its task file defines as the work, and stated
+    the reason explicitly: "with the caveat spelled out inline so `morning-system-health` reads a PASS
+    but sees it was verification, not regeneration." The named consumer did not run today — it stalled
+    at a permission prompt before reading anything. The task file's own rule ("If any command exits
+    non-zero, treat the whole run as FAILED") was satisfied by not issuing the commands. No third status
+    value exists in the vocabulary and none was requested.
+  Why it was unstated: too foundational to notice — status fields are experienced as summaries of prose
+    rather than as an interface with a fixed alphabet, so widening the alphabet in a footnote feels like
+    completeness rather than like a schema change.
+  Type: structural
+  Related decisions: none; ASSUMPTION-1285, OPEN-186
+  Testability: testable in-house — enumerate the consumers of `REFRESH_STATUS.md` and every other status
+    file in the estate and check whether any of them parses anything but the token. If none does, every
+    caveat ever written beside a PASS has been invisible by construction.
+  Risk if wrong: High — the caveat is the only thing standing between a declined job and a green day,
+    and the green day is what reaches Tom (ASSUMPTION-1293).
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-929
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the run's own stated intent for the caveat, read against the fact that its
+        named reader never executed. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-930:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] A prediction can be discharged by the argument that produced it. Where a
+    predicted failure is deterministic on arithmetic, running the test would add nothing, so declining
+    to run it is not a gap in the evidence.
+  Evidence it was operative: ASSUMPTION-1280 was filed on 09-07 as "a prediction with a dated first
+    test: 2026-09-08." On 09-08 the run reached that test and did not take it — "Running it would have
+    produced a FAIL line over a good state rather than any new data" — and no register recorded that the
+    dated test had come due and passed unexecuted. The word "deterministic" does the work: the disk
+    figures are treated as entailing the outcome, so the outcome is treated as observed.
+  Why it was unstated: obvious to participants — an argument from capacity feels like a measurement,
+    because the quantities in it were measured. The step from measured inputs to unobserved output is
+    the invisible one.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1280, ASSUMPTION-1285, ASSUMPTION-1289
+  Testability: testable in-house at trivial cost — issue the copy once, in a wrapper that tolerates the
+    failure, and record the error. Testable via literature as the general question: how often do
+    "deterministic" resource-exhaustion predictions hold when executed?
+  Risk if wrong: Medium — if the copy fails as predicted, nothing changes but the register gains an
+    observation. If it does not fail (partial copy, sparse file, different mount, tmpfs), a scheduled
+    task has been declining its work for four days on an argument.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-930
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the collision between a dated test written by this layer and a same-day run
+        that reasoned past it. High confidence. Note the shape: this is ASSUMPTION-1289's failure mode
+        with the sign reversed — there, a mechanism's design is credited with its effect; here, an
+        argument is credited with an observation.
+    Current status: UNTESTED
+
+PRESUMPTION-931:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] Scheduler liveness is estate health. If the jobs fired, the system is working;
+    the freshness of what they produced is a separate and lesser question.
+  Evidence it was operative: `Morning project status` at 08:00 told Tom "all of today's jobs fired on
+    schedule … Nothing is broken" and "OpenStory looks healthy: the metabolism snapshot and the agents
+    telemetry refresh both read the live database this morning and neither failed." Ninety minutes later
+    the scheduler health check reported five FAILs, all of them freshness failures — metabolism data 4.7
+    days stale, OpenStory ingest stopped since 09-03, the H-Drive unmounted. Both runs read the same
+    estate. The first read whether tasks ran; the second read what they produced. Only the first reached
+    Tom.
+  Why it was unstated: culturally embedded — "did it run" is the question a scheduler can answer, and a
+    monitoring layer built on a scheduler inherits its question without ever choosing it.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1293, ASSUMPTION-1287
+  Testability: testable via literature — this is the documented "watermelon" failure of green-dashboard
+    monitoring (green outside, red inside) and the freshness-vs-liveness distinction in data-quality and
+    SRE practice. Testable in-house: for each of the ~34 scheduled agents, does any check compare output
+    timestamps against expected cadence, or only exit status?
+  Risk if wrong: High — this is the channel by which the designer learns the state of the system, and
+    today it delivered a report three of whose four clauses were false (ASSUMPTION-1293).
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-931
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two same-morning reports on one estate that disagree because they ask different
+        questions, neither of which states which question it is asking. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-932:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] The artefacts are a sufficient record of the day. What an agent wrote to a file
+    is what an agent did, so a day can be reconstructed from file evidence without reading what the
+    agents said.
+  Evidence it was operative: the 09-08 Cowork→Chat summary states its own method — "Session transcripts
+    were not read in full; the day is reconstructed from file evidence, register tails and agent run
+    reports" — and reports the day as one in which "every script-owned part of the system improved."
+    Three of today's most consequential facts exist only in transcripts and in no artefact: the HTTP 429
+    that truncated the Hoffman sweep and suppressed its freshest candidate; the silent stall of
+    `morning-system-health` at a permission prompt, which wrote no file at all; and the metabolism run's
+    complete absence of a terminal verdict under a FAIL LOUD spec. A file-only reconstruction cannot see
+    a run that wrote nothing.
+  Why it was unstated: obvious to participants, and reinforced by cost — transcripts are expensive to
+    read and files are cheap, so the sufficiency of files is adopted as a budget decision and then
+    inherited as an epistemology.
+  Type: methodological
+  Related decisions: none; PRESUMPTION-933
+  Testability: testable in-house and decisively — for one day, diff the artefact-only reconstruction
+    against the transcript-read reconstruction and count the findings present in exactly one. This run
+    is that diff for 09-08, and the count is at least three.
+  Risk if wrong: High for this layer specifically — 14a and 14b are the estate's only readers of
+    designer and agent speech, and the same budget pressure applies to them. On a day when both sync
+    channels are dark, an artefact-only self-awareness layer records only the agents that succeeded.
+  Status: UNTESTED (partially tested in-house this run; the count is a floor, not a measurement)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-932
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated method read against three transcript-only findings from the same day.
+        High confidence. Distinguished from PRESUMPTION-925 (mtime as evidence): that concerns whether a
+        file's metadata is evidence; this concerns whether the set of files is the population.
+    Current status: UNTESTED
+
+PRESUMPTION-933:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] Agents fail loudly. A run that reports nothing has nothing to report, so silence
+    from a scheduled task is evidence of an uneventful run rather than of an unobserved one.
+  Evidence it was operative: `metabolism-regen-daily` fired today, made two tool calls and then produced
+    no terminal statement of any kind — no freshness-gate result, no success line, no FAIL — under a
+    task spec that requires fail-loud reporting. Nothing in the estate registered this. The morning
+    status report counted the task as fired and therefore fine; the scheduler health check flagged the
+    *data* as 4.7 days stale but attributed it upstream to the H-Drive rather than to the run's silence,
+    so the two possible causes were never separated. `morning-system-health` stalled the same way and
+    was likewise counted as fired.
+  Why it was unstated: too foundational to notice — the estate's entire reporting convention is
+    self-report, so the failure mode in which the reporter is the thing that failed has no place to
+    appear.
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1286, PRESUMPTION-931
+  Testability: testable via literature — silent-failure detection, heartbeat/watchdog design, and the
+    known inadequacy of self-reporting under partial failure. Testable in-house: count scheduled runs in
+    the last 30 days that produced no terminal message, and check what any consumer recorded for each.
+  Risk if wrong: High — a stall and a quiet success are currently indistinguishable to every consumer in
+    the estate, which is the same identity problem the wiki agent's own task file names for frozen
+    artefacts ("A frozen artifact and a genuinely quiet upstream render identically").
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-933
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two same-day silent runs that no consumer recorded as silent. High confidence.
+    Current status: UNTESTED
+
+PRESUMPTION-934:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] Restraint is free. An agent that declines an action and says so has resolved the
+    matter, and the decline carries no cost that needs recording.
+  Evidence it was operative: at least five deliberate declines today, each framed as integrity and none
+    costed anywhere — the Hoffman sweep's freshest item not proposed ("Given the recorded trap about
+    fabricated Hoffman episodes, I did not write a proposal for an unverified video"); the extractors not
+    run; PREMISE-133 not amended ("a change that should be made with the ruling, not instead of it");
+    the WATCH-002 recorded action not executed ("It is now the wrong action"); and the census not written
+    for a twelfth firing. The vocabulary is uniformly favourable: "reported rather than papered over",
+    "declared rather than left silent", "flagged rather than smoothed", "not glossed", "the honest
+    option". No register holds the other column — what each decline deferred, to whom, until when.
+  Why it was unstated: normative smuggling — the estate has spent three weeks correctly learning that
+    silent action is worse than declared inaction, and the comparative has quietly become a positive.
+  Type: normative
+  Related decisions: none; PREMISE-133, ASSUMPTION-1283, ASSUMPTION-1285
+  Testability: testable in-house — for each decline recorded in the last 14 days, find the register
+    entry that names the deferred work, its owner and its date. The count of declines with no such entry
+    is the measurement.
+  Risk if wrong: Medium — the declines are individually well-reasoned; the exposure is aggregate, and
+    aggregates are exactly what a per-run virtue framing hides.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-934
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the uniformity of the framing across five independent runs that do not read
+        each other. Moderate-to-high confidence. Distinguished from PRESUMPTION-918 (whether declaring a
+        breach discharges it): this concerns whether declining is scored as an achievement.
+    Current status: UNTESTED
+
+PRESUMPTION-935:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] Naming a measurement is most of doing it. A recommendation written into a
+    register will be taken up, so the register's job ends when the recommendation is well specified.
+  Evidence it was operative: today's pipeline named four in-house measurements (negative fixtures for
+    1277; a consumed-vs-unconsumed tag census for 1282; content hashing for 925; a runs-under-open-binary
+    count for 928) and stated that "Running all four would populate the statistic for four mechanisms
+    *and* test the flag." None carries an owner, a threshold or a date. The same run filed a High flag
+    whose entire content is that unmeasured mechanisms accrue unearned credit, and applied that to
+    itself — "it should not be credited with force until something consumes it" — and then took no step
+    to arrange consumption. The estate's own history is the counter-evidence: four sewing
+    recommendations from 08-09/08-16/08-23 remain NOT DONE, REVISE-436's binary is at a fifth unruled
+    cycle, and the 15d re-trigger lane has been starved for four consecutive cycles while being named
+    each time.
+  Why it was unstated: structurally embedded — the registers have a schema for claims and no schema for
+    assignments, so an action item can only be written as a sentence, and a sentence is what gets
+    reviewed for quality rather than for uptake.
+  Type: structural
+  Related decisions: none; ASSUMPTION-1289, ASSUMPTION-1290, REVISE-440, OPEN-184
+  Testability: testable in-house and cheaply — enumerate every recommendation written into
+    `lit_search_returns.md`, `revision_flags.md` and this register in the last 30 days, and mark each
+    done / not-done. The ratio is the measurement, and it is the first instance of the very statistic
+    ASSUMPTION-1289 asks for. Testable via literature — completion rates for audit and postmortem action
+    items are measured in safety and compliance research.
+  Risk if wrong: High — if this is false, the backlog is a scheduling artefact and will clear. If it
+    holds, then the self-awareness layer's output is its own largest unconsumed corpus, and the flag it
+    filed today is correct about itself in a stronger sense than it stated.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-935
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a flag's self-application read against the estate's standing backlog of
+        unactioned recommendations. High confidence. This item is the general form of which
+        PRESUMPTION-928 (unruled binaries) is one case.
+    Current status: UNTESTED
+
+PRESUMPTION-936:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] A watch's condition clause is a faithful proxy for the question the watch was
+    raised to answer, so satisfying the clause discharges the question.
+  Evidence it was operative: WATCH-002 was closed today — the register's first closure in its history —
+    on the second disjunct of condition half (b), "or the episode becomes indexed in search", satisfied
+    by an Apple Podcasts listing with publisher show notes. The resolution itself records that the
+    evidential question is untouched: "**This is show-note summary, not a transcript. Nobody has heard
+    the episode.**" Both facts sit in the same file, one as the closure and one as a caveat, and the
+    watch is now RESOLVED. The run also states "Tom listening was never required" — a re-reading of the
+    watch's purpose made at closing time, not at opening time.
+  Why it was unstated: obvious to participants — a condition written seven weeks ago is read at closing
+    time as if it were the question, because by then it is the only written form of the question.
+  Type: epistemic
+  Related decisions: none; WATCH-003, ASSUMPTION-1288
+  Testability: testable in-house — for each resolved or standing watch, compare the condition clause
+    against the stated reason for raising it, and mark whether the clause could be satisfied while the
+    reason went unmet. Two watches is a small population but it is the whole one.
+  Risk if wrong: Medium — a resolution register whose closures do not track its questions will read as
+    progress while accumulating none, and this closure is the first data point in that series.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-936
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the resolution's own caveat read against its own closure. Moderate-to-high
+        confidence. Recorded neutrally: the attribution finding the run made is solid and valuable, and
+        the retraction it filed (ASSUMPTION-1288) is exemplary; this concerns only what "resolved" now
+        means in that register.
+    Current status: UNTESTED
+
+PRESUMPTION-937:
+  Date surfaced: 2026-09-08
+  Statement: [inferred] The estate has one standard, held in whichever task file the current run happens
+    to be reading. Where two files disagree, the one in hand is authoritative and the disagreement is
+    not a finding.
+  Evidence it was operative: today's tradition-agent run applied a 30-day recency window while the
+    concurrent daily-run task file carries 60 days; neither run named the other. The same run invoked
+    "significant work not yet captured" to admit a 39-day-old source — an escape clause with no stated
+    criterion, used to override the window it had just applied. Separately, and for the third distinct
+    time in ten days, an agent found its own task file's wiki root wrong ("`SKILL.md` says
+    `~/Documents/Claude/RC Karpathy Wiki Project/wiki/`; the real path is `~/Documents/Claude/Projects/
+    RC Karpathy Wiki Project/wiki/`. I used the real one."), worked around it in-run, and left it
+    unrepaired — the same shape as OPEN-167's `Wiki`/`wiki` defect, now at its tenth consecutive run.
+  Why it was unstated: structurally embedded — each scheduled task is a closed world containing its own
+    definitions, and nothing in the estate reads two task files at once except this register, once a day,
+    at the end.
+  Type: structural
+  Related decisions: none; OPEN-167, OPEN-188 (this run)
+  Testability: testable in-house — extract every numeric threshold and path root from the scheduled-task
+    files and diff them. Purely mechanical; no literature needed.
+  Risk if wrong: Medium — the specific defects are small and each was survived. The exposure is that
+    "the standard" is currently a distributed object with no canonical copy, and the layer that would
+    notice is the one that only ever sees the output.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-937
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two task files disagreeing on a threshold within one day, plus a third instance
+        of the unrepaired-instruction pattern. High confidence on the structural claim; the numeric
+        instance is n=1.
+    Current status: UNTESTED
+
+*Surfaced by the 14b evening run, 2026-09-08 ~23:50 EDT, after reading 14a's intake of the same date.*

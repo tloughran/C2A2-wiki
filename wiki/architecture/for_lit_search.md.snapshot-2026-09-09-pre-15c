@@ -20554,7 +20554,7 @@ have widened that gap by a further cycle. The eleven not routed are listed with 
 not thereby retired. This paragraph is itself an instance of PRESUMPTION-935 unless something acts on it.
 
 ASSUMPTION-1284:
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-09 — PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-09 — CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-09 — REVISE (REVISE-442, Medium), DISPOSITION-917]
+  Status: [QUEUED]
   Item type: ASSUMPTION (stated)
   Statement: "Two programs treating the same problem as open vs. closed is a strong bridge candidate."
   Source: `C2a2 agent hawkins hoffman` run, 2026-09-08, cross-tradition signals block (Hawkins→Friston,
@@ -20578,7 +20578,7 @@ ASSUMPTION-1284:
     Current status: SENT-TO-15a, SENT-TO-15b
 
 ASSUMPTION-1289:
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-09 — SUPPORTED diagnosis (Strong) / PARTIALLY-SUPPORTED prescription (Weak-Moderate)] [SEARCHED-15b: 2026-09-09 — PARTIALLY-CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-09 — REVISE prescription limb only (REVISE-443, High), DISPOSITION-918; no premise minted, PREMISE-195/131 already cover the diagnosis]
+  Status: [QUEUED]
   Item type: ASSUMPTION (stated)
   Statement: "the existence of a mechanism is being treated as evidence of its effect … the system has
     no habit of measuring controls at all, and so a mechanism's credit is set at the moment it is
@@ -20607,7 +20607,7 @@ ASSUMPTION-1289:
     Current status: SENT-TO-15a, SENT-TO-15b
 
 PRESUMPTION-931:
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-09 — SUPPORTED for the corrective proposition (Strong)] [SEARCHED-15b: 2026-09-09 — NO-CHALLENGE-FOUND (None)] [DISPOSITIONED-15c: 2026-09-09 — REVISE (REVISE-444, High, consolidated), DISPOSITION-919; no premise minted, PREMISE-100 is already this presumption's denial]
+  Status: [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
   Statement: [inferred] Scheduler liveness is estate health — if the jobs fired, the system is working,
     and the freshness of what they produced is a separate and lesser question.
@@ -20634,7 +20634,7 @@ PRESUMPTION-931:
     Current status: SENT-TO-15a, SENT-TO-15b
 
 PRESUMPTION-933:
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-09 — NO-SUPPORT-FOUND (None), NOVELTY-FLAG unfavourable] [SEARCHED-15b: 2026-09-09 — CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-09 — REVISE (REVISE-444, High, consolidated), DISPOSITION-920; no premise minted, PREMISE-195 covers; incidents routed to its 2026-09-30 re-check]
+  Status: [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
   Statement: [inferred] Agents fail loudly — a run that reports nothing has nothing to report, so
     silence from a scheduled task is evidence of an uneventful run rather than of an unobserved one.
@@ -20660,7 +20660,7 @@ PRESUMPTION-933:
     Current status: SENT-TO-15a, SENT-TO-15b
 
 PRESUMPTION-935:
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-09 — PARTIALLY-SUPPORTED (Weak stated / Moderate conditional)] [SEARCHED-15b: 2026-09-09 — CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-09 — REVISE (REVISE-444, High, consolidated), DISPOSITION-921; no premise minted, PREMISE-116/164 cover]
+  Status: [QUEUED]
   Item type: PRESUMPTION (unstated — surfaced by inference)
   Statement: [inferred] Naming a measurement is most of doing it — a recommendation written into a
     register will be taken up, so the register's job ends when the recommendation is well specified.

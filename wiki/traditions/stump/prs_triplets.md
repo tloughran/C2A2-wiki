@@ -360,4 +360,13 @@ PRS-40:
   Confidence: Speculative
   Evidence: Abstract states the target and the denial ("forgiveness brings peace to the person who forgives, because it removes... wrath, resentment, desire for vengeance, and so on... forgiveness alone can do neither of these things"). It does not state Stump's replacement account. Nothing should be attributed to her here beyond the denial without reading the chapter.
 
-*Total PRS triplets: 37*
+PRS-41:
+  Problem: A disposition of openness to direction from a source outside the agent's cognitive reach is structurally identical for a good master and a manipulator; nothing in the mechanism distinguishes docility from susceptibility.
+  Resource: Aquinas's own guards — the gifts are inseparable from charity (I-II q.68 a.5), docilitas is a part of prudence (II-II q.49 a.3), and God moves the will as will rather than by necessity (I-II q.10 a.4) — together with the reflexive criterion: a source that failed the test would be the wrong answer, and we are responsible for what we worship.
+  Solution: Openness is never a virtue simpliciter. It is a virtue only under a discrimination condition administered by the recipient, which makes the moment of ratification constitutive of the relation rather than external to it.
+  Date Added: 2026-09-08
+  Source: Loughran–Claude session 2026-09-08 (Potts paper-response run); inbox/2026-09-08_levin_virtue-as-external-setpoint.md
+  Confidence: Medium
+  Evidence: The three Aquinas citations are Stump's own textual territory and are load-bearing; the framing of them as a discrimination condition is Loughran's. OPEN — the criterion is retrospective: it is available to one who already holds the right answer, so it does not by itself defeat the bootstrapping objection.
+
+*Total PRS triplets: 38*

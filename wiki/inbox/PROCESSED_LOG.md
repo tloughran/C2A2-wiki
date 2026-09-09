@@ -947,3 +947,33 @@ carrying a zero-yield token is what closed it by accident once already (FINDING-
 
 Pattern detector: 7 signals forwarded, FINDING-080 through FINDING-082 written. FINDING-080
 ("interface" is a homonym across three pairs) escalated to the master Paradigm Shift Watch List.
+
+---
+
+## 2026-09-09 — Daily run (Wed, McGilchrist + Kastrup specialist day)
+
+**Processed: 1 file. Triplets extracted: 3, across 3 traditions.**
+
+- `2026-09-08_levin_virtue-as-external-setpoint.md` — **+3.** levin PRS-116 (Speculative),
+  macintyre PRS-06 (Medium), stump PRS-41 (Medium). Source is a Loughran–Claude session note from
+  the 2026-09-08 Potts paper-response run, not a hunt proposal.
+  **Read this before treating the line above as routine.** The file carries **no `proposal_id`**, so
+  `scripts/ingest_ledger.py` cannot judge it — it appears under "files with NO proposal_id (cannot be
+  judged)". It never entered `inbox/proposals/pending/` and no decision email approved it. What
+  licensed the ingest was that PRS-116 / PRS-06 / PRS-41 were each the next free number in their
+  destination file, which shows the note was written against the current vault state and meant for
+  those files. It does not show that anyone approved it, and the note's own header says "integration
+  is a separate act." Logged as **FINDING-085** so this does not become a silent precedent.
+  Cross-program: **CROSS-131** (Levin × MacIntyre × Stump). Escalated: **FLAG-021**, **FLAG-022**.
+
+**Not processed, on purpose, and still open:** `2026-08-14_wright_who-is-this-god-admirato.md`
+(PROP-2026-08-14-033), the standing retrieval assignment first logged 2026-08-29. Its own card states
+"I did not hear or read one word of this source" and "Do not ingest the conjectures." Deliberately not
+re-listed with a yield token — doing that is what closed a held id by accident once already
+(FINDING-079). Retrieval target: the Admirato / KSBJ *Between Beliefs* archive, mid-July 2026.
+
+**Also unjudgeable by the ledger, and untouched:** `inbox/proposals/approved/2026-05-12_repair_manifest.md`
+— no `proposal_id`, and it is a manifest rather than a source.
+
+Pattern detector: 5 signals forwarded, FINDING-083 through FINDING-085 written; 083 and 084 escalated
+to the master Paradigm Shift Watch List as FLAG-021 and FLAG-022.

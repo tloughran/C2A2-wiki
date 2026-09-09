@@ -22658,3 +22658,299 @@ ASSUMPTION-1282:
         literature to a machine provenance chain without stating the transfer conditions — which is the
         move 14b's watch-list calls a transferred assumption. See PRESUMPTION-925 this run.
     Current status: UNTESTED
+
+---
+
+## 2026-09-08 — 14a intake (end-of-day, ~23:45 EDT)
+
+*Coverage: no attended Cowork session found on 09-08. Sixteen scheduled runs were reachable; nine were
+read (five directly, four in condensed form via delegated readers whose reports are quoted below as the
+proximate source). Chat→Cowork 09-08 FAILED (Chrome extension not connected); Cowork→Chat 09-08 written
+18:40, delivery FAILED — fourth consecutive day with both directions dark. No designer speech was read
+this run. Ninth consecutive day on which every extracted item is agent-stated (PRESUMPTION-912).*
+
+ASSUMPTION-1283:
+  Date identified: 2026-09-08
+  Statement: "Neither source is Hawkins speaking — FENS recap is Tristan Slominski,
+    open-theory-questions is Viviane Clay. I proposed them anyway because the wiki has already ingested
+    TBP team brainstorming videos under this tradition (PROP-2026-08-26-005, -08-17-011/012), and
+    flagged the issue inside each file so a reviewer can set the standing rule rather than re-decide it
+    every week."
+  Context: `C2a2 agent hawkins hoffman` run, 2026-09-08; two Hawkins proposals written on non-Hawkins
+    sources.
+  Type: methodological
+  Related decisions: none; OPEN-187 (this run)
+  Testability: testable via literature — precedent-as-authorization is the core mechanism of case-based
+    reasoning and of policy drift by accretion; whether prior admission of a class of item is a reliable
+    warrant for admitting more of it, absent a stated rule, is studied in both.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1283
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded, not judged: the agent states the assumption, names the
+        precedent, and asks for the rule it lacks — the first item in this register to do all three in
+        one move. The alternative reading (that the precedent was itself unruled) is not considered in
+        the source; see PRESUMPTION-934.
+    Current status: UNTESTED
+
+ASSUMPTION-1284:
+  Date identified: 2026-09-08
+  Statement: "TBP lists goal decomposition and causality learning as OPEN, which the free-energy
+    principle claims to have solved. Two programs treating the same problem as open vs. closed is a
+    strong bridge candidate."
+  Context: same run, cross-tradition signals block (Hawkins→Friston).
+  Type: epistemic
+  Related decisions: none
+  Testability: testable via literature — the claim is that a documented open/closed status difference
+    between two research programs is a signal about the problem rather than about each program's
+    documentation conventions. Bibliometrics on open-problem statements and research-agenda rhetoric
+    addresses it directly.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1284
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. This is the operative bridge-detection heuristic of the tradition agents
+        stated explicitly for the first time in this register; it has been implicit in CROSS-* items
+        since at least 08-17.
+    Current status: UNTESTED
+
+ASSUMPTION-1285:
+  Date identified: 2026-09-08
+  Statement: "**I did not run the extractors.** The sandbox has 4.2 GB free on `/`; the extractors copy
+    the 6.17 GB DB to local disk first, so the copy is a deterministic failure (matches the 2026-09-05
+    finding). Running it would have produced a FAIL line over a good state rather than any new data."
+  Context: Openstory agents telemetry refresh, ~10:35Z. ASSUMPTION-1280 (filed 09-07) predicted that
+    this task "will now fail every scheduled run until the DB is pruned or the step moves Mac-side" and
+    named 2026-09-08 as its first scheduled test.
+  Type: empirical / methodological
+  Related decisions: none; OPEN-186 (this run)
+  Testability: testable in-house and cheaply — the test is the command the run declined to issue. One
+    `cp` against a full disk either fails or does not.
+  Status: **ASSUMPTION-1280 REMAINS UNTESTED.** Its dated first test fell today and was not run; an
+    argument was substituted for the observation. Recorded, not judged. See PRESUMPTION-930.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1285
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and checked against ASSUMPTION-1280's stated test date. The two claims are
+        consistent with each other and neither has been observed. The run wrote PASS to
+        `REFRESH_STATUS.md` with an inline caveat; the downstream consumer of that PASS
+        (`morning-system-health`) did not run today, so the caveat has not been read by anything.
+    Current status: UNTESTED
+
+ASSUMPTION-1286:
+  Date identified: 2026-09-08
+  Statement: "c282-wiki-agent-daily-run: permissionMode is absent, so an unattended run will HANG on the
+    first prompt for an unapproved tool." … "the daily run commits its work BEFORE it hangs, so a stall
+    costs the slot and every step that waits on the run to finish, not data"
+  Context: Scheduler health check, block stamped 2026-09-08T09:45Z, reporting 5 FAILs.
+  Type: architectural
+  Related decisions: none
+  Testability: testable in-house — the commit ordering is readable from the task file and from the git
+    log of any stalled run. The cost claim ("not data") is a claim about what a stall loses and is
+    checkable against the 09-07 48h stall, which is the fixture.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1286
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Corroborated in part in-run: the daily run was still in flight at
+        23:45 EDT after firing at 08:00, mid-Phase 2 of 7, having reached three parallel subagent
+        launches — i.e. the predicted stall shape, on the predicted task, on the same day the
+        prediction was written.
+    Current status: PARTIALLY SUPPORTED (in-house, this run — one instance, ordering clause unchecked)
+
+ASSUMPTION-1287:
+  Date identified: 2026-09-08
+  Statement: "H-Drive not mounted ... OpenStory ingest is STOPPED and a restart cannot fix it — the
+    drive must be plugged in. Sessions stop being created within about a day of the volume going away."
+    and "both metabolism staleness FAILs trace back to it."
+  Context: Scheduler health check, 09:45Z.
+  Type: empirical
+  Related decisions: none
+  Testability: testable empirically with a dated first test — the claim predicts that no OpenStory
+    EVENT newer than 2026-09-03 appears until the volume is remounted, and that remounting restores
+    session creation within about a day. Both limbs are observable without any intervention beyond the
+    one named.
+  Status: UNTESTED (prediction with a named, cheap, single-action test)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1287
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Noted: this is the second consecutive day on which a single physical
+        cause is offered for a cluster of scheduled-task failures, and the second on which no register
+        outside the reporting agent's own output holds the claim.
+    Current status: UNTESTED
+
+ASSUMPTION-1288:
+  Date identified: 2026-09-08
+  Statement: "**Check the aggregator before, not after, the publisher.**" with the corollary "A single
+    directory's silence is not evidence about the world; check a second directory before drawing an
+    inference from the first." Filed together with the retraction: of the 08-25 stale flag's claim that
+    "there is no untried route left within this agent's tooling" — "**That was wrong, and the error is
+    worth naming precisely because it survived four subsequent runs unchallenged.**"
+  Context: `C2a2 deferred action monitor` (Agent 16), 22:00:07 EDT; WATCH-002 resolved after seven
+    failed weekly checks, on an Apple Podcasts page reachable in plain server-rendered HTML.
+  Type: methodological
+  Related decisions: none
+  Testability: testable in-house — WATCH-003 is the standing second case; applying the rule there either
+    resolves it or does not, and it has produced nine identical answers under the publisher-first order.
+  Status: SUPPORTED (in-house, this run — one decisive instance; the generalisation is n=1)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1288
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. This is the first item in this register in which an agent falsifies a
+        claim its own predecessor made and states how long the error survived. The exhaustiveness claim
+        it retracts ("no untried route left") is the class of claim PRESUMPTION-932 concerns.
+    Current status: SUPPORTED (in-house, single instance)
+
+ASSUMPTION-1289:
+  Date identified: 2026-09-08
+  Statement: "The four therefore share a single failure mode: **the existence of a mechanism is being
+    treated as evidence of its effect.** … it is not that one control is unmeasured, it is that the
+    system has no habit of measuring controls at all, and so a mechanism's credit is set at the moment
+    it is designed and never revised." Prescription: "**A control with no value for (ii) is a declared
+    control, and should be labelled as such rather than counted as a control.**"
+  Context: SYSTEMIC-RISK-FLAG 2026-09-08 (unmeasured-control-credit, High), filed by the delegated 15b
+    subagent across ASSUMPTION-1277, ASSUMPTION-1282, PRESUMPTION-925 and PRESUMPTION-928, and routed
+    into REVISE-440 rather than left in the results directory.
+  Type: epistemic
+  Related decisions: none; REVISE-440, REVISE-441, PREMISE-199, PREMISE-200
+  Testability: testable via literature — the general claim (that designed-but-unmeasured controls
+    accumulate unearned credit in socio-technical systems, and that control-effectiveness auditing is
+    rare) is an empirical question in safety science and in audit/compliance research. What is routed is
+    the generalisation to a machine estate, not the four instances.
+  Status: UNTESTED — routed
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1289
+    Item type: ASSUMPTION (stated — quoted from an agent-authored risk flag)
+    Transform at each step:
+      14a: Extracted verbatim. The flag states its own reflexivity ("this flag is itself currently an
+        unmeasured declared control … it should not be credited with force until something consumes
+        it"). That self-application is recorded here and is the subject of PRESUMPTION-935; this entry
+        records only the claim.
+    Current status: UNTESTED
+
+ASSUMPTION-1290:
+  Date identified: 2026-09-08
+  Statement: "**THE AXIS THAT CARRIES THE WEIGHT IS CONSUMED-VS-UNCONSUMED, NOT
+    DECLARATIVE-VS-PROCEDURAL.**" with the exported prediction and its falsifier: "Limb 2 exported into
+    this pipeline predicts that tagging INCREASES the tagged behaviour; acting on that prediction would
+    suppress provenance tagging and reduce the observability the audit layer depends on." / "If the
+    frequency did not rise, limb 2 is false for this system and the item is closed by measurement."
+  Context: REVISE-440 (High), dispositioning ASSUMPTION-1282, 22:00:06 EDT.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1282, PREMISE-188
+  Testability: testable in-house and decisively — the tag census named in the flag is a `grep` over the
+    registers with a date split. Named, costed, unrun.
+  Status: UNTESTED (in-house test named this run; no owner, threshold or deadline attached)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1290
+    Item type: ASSUMPTION (stated — quoted from a disposition)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded, not judged: this item corrects an assumption extracted by this
+        same register the previous evening (ASSUMPTION-1282) within one cycle, which is the fastest
+        register-internal correction on record, and it does so by naming a measurement rather than by
+        argument — the opposite of the pattern ASSUMPTION-1285 records elsewhere on the same day.
+    Current status: UNTESTED
+
+ASSUMPTION-1291:
+  Date identified: 2026-09-08
+  Statement: "A NEUTRALISED-CONTROL TEST IS A SENSITIVITY CHECK AND IS NECESSARY, NOT SUFFICIENT … an
+    OVER-BROAD guard … passes the positive fixture and fails correctly on neutralisation exactly as a
+    correct guard does." With the threshold: "Above ~10% the pair is a wiring check, not an adoption
+    gate." And the transfer caveat: "The premise therefore transfers from program-code mutation testing
+    to shell/regex/config guards **on structural argument, not on measured transfer.**"
+  Context: PREMISE-199, minted this run from ASSUMPTION-1277 (DISPOSITION-913).
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1277
+  Testability: testable via literature — mutation-score thresholds and the adequacy of mutation testing
+    as an adoption gate are an active empirical question; the ~10% figure is asserted here without
+    derivation or citation.
+  Status: UNTESTED (declared not-routed this run — see routing note in `for_lit_search.md`)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1291
+    Item type: ASSUMPTION (stated — quoted from a newly minted premise)
+    Transform at each step:
+      14a: Extracted verbatim. Noted: a premise entering the ACTIVE register carries a numeric threshold
+        that the premise's own text does not source, alongside an explicit declaration that its transfer
+        is unmeasured. Both facts are in the premise; neither is in any gate that reads it.
+    Current status: UNTESTED
+
+ASSUMPTION-1292:
+  Date identified: 2026-09-08
+  Statement: "**The mtime staleness check is dead, and it has probably been dead for a while.** It fired
+    on 78 files tonight. All 78 are one artifact: every tradition register carries the *identical* mtime
+    `2026-09-02 22:11:14` … git doesn't preserve mtimes, so on synced files an mtime test answers a
+    question about the sync, not the content."
+  Context: `Summa 2026 nightly verification`, 23:08 EDT — a different project, sharing neither registers
+    nor agents with C2A2's self-awareness layer.
+  Type: empirical
+  Related decisions: none; PREMISE-200, ASSUMPTION-1276, PRESUMPTION-925
+  Testability: already tested in-house on 78 files, by a run with no knowledge of PREMISE-200, which was
+    minted on the same question two hours earlier by a different pipeline.
+  Status: SUPPORTED (in-house — independent corroboration of PREMISE-200 from an unrelated estate on the
+    same night)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1292
+    Item type: ASSUMPTION (stated — quoted from an agent run report in a sibling project)
+    Transform at each step:
+      14a: Extracted verbatim. This is the strongest evidential event of the day: PREMISE-200 (mtime
+        carries no authorship content, has no evidential parity with a primary record) and this finding
+        were produced hours apart by pipelines that do not read each other. Recorded as corroboration,
+        not as confirmation — the two runs share a substrate (git-synced trees) and so are not fully
+        independent. The cross-project channel that would make this visible does not exist; it was found
+        here only because both transcripts happened to be read by one run.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1293:
+  Date identified: 2026-09-08
+  Statement: "OpenStory looks healthy: the metabolism snapshot and the agents telemetry refresh both
+    read the live database this morning and neither failed." … "all of today's jobs fired on schedule …
+    **Nothing is broken.**"
+  Context: `Morning project status`, 08:00, delivered as the day's voice summary to Tom.
+  Type: empirical
+  Related decisions: none
+  Testability: tested in-run, against three artefacts from the same morning.
+  Status: **CHALLENGED (in-house, this run).** The telemetry refresh did not read the live database —
+    "I did not run the extractors" (ASSUMPTION-1285); the scheduler health check at 09:45Z reported five
+    FAILs including the two metabolism staleness FAILs and a stopped OpenStory ingest since 2026-09-03
+    (ASSUMPTION-1287); and `morning-system-health` did not complete at all, stalling at a permission
+    prompt with no report written. Three of the four clauses are false as stated.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1293
+    Item type: ASSUMPTION (stated — quoted from an agent run report delivered to the designer)
+    Transform at each step:
+      14a: Extracted verbatim and falsified against three same-morning sources. Recorded, not judged:
+        this is the second in-run falsification of an agent-sourced empirical claim in three days
+        (cf. ASSUMPTION-1275), and the first in which the falsified claim was the one actually delivered
+        to Tom. The underlying inference — jobs fired therefore system healthy — is PRESUMPTION-931.
+    Current status: CHALLENGED (in-house)
+
+*Extracted by the 14a evening run, 2026-09-08 ~23:45 EDT. Registers snapshotted as
+`*.bak.20260908-pre-14eod` before any append.*

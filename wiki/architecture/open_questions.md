@@ -2290,3 +2290,60 @@ OPEN-185:
     Original item: OPEN-185
     Item type: OPEN QUESTION (raised from presumptions surfaced the same run)
     Current status: OPEN
+
+OPEN-186:
+  Date raised: 2026-09-08
+  Question: Does a scheduled task that cannot perform its nominal work in the environment it is
+    scheduled into stay scheduled? `openstory-agents-telemetry-refresh` has now declined its
+    regeneration step for a fourth day — 6.17 GB database against 4.2 GB of sandbox scratch — and today
+    wrote PASS on validation alone. Four fixes have been named across two runs (prune the DB; read it in
+    place or via a size-bounded attach/snapshot; give the sandbox ≥8 GB; repoint the schedule at the Mac
+    wrapper that is actually producing the feeds). None has been chosen. The agent's own framing:
+    "Right now it's a validator wrapped around the Mac wrapper's work. Worth deciding whether to repoint
+    the schedule at the Mac wrapper directly."
+  Why it matters: this is the third member of the class PRESUMPTION-924 named — scheduler decisions,
+    which have no register, no numbering and no escalation path — and the first with a live green status
+    covering it. See ASSUMPTION-1280, ASSUMPTION-1285, PRESUMPTION-929, PRESUMPTION-930.
+  Status: OPEN — requires Tom (one of four named options; all four are stated, none is costed)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-186
+    Item type: OPEN QUESTION (raised from an assumption and two presumptions surfaced the same run)
+    Current status: OPEN
+
+OPEN-187:
+  Date raised: 2026-09-08
+  Question: What is the standing rule for tradition attribution when the source is a collaborator or
+    team member rather than the named thinker? Two of today's four proposals are filed under Hawkins on
+    sources authored by Tristan Slominski and Viviane Clay; the agent proposed them on the precedent of
+    three earlier TBP-team ingestions, flagged the issue inside each file, and asked explicitly for the
+    rule: "so a reviewer can set the standing rule rather than re-decide it every week."
+  Why it matters: the question has now been decided four times by precedent and never once by ruling,
+    and the precedent chain is self-reinforcing (ASSUMPTION-1283). It also bears on PRESUMPTION-921 —
+    whether the network's units are traditions or authors — which is a Stage-2 blocker, not a filing
+    convention.
+  Status: OPEN — requires Tom (cheap; one line settles it either way)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-187
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-188:
+  Date raised: 2026-09-08
+  Question: What is the estate's recency window for tradition-agent intake — 30 days or 60 — and what
+    does the "significant work not yet captured" clause license? Two scheduled task files carry the two
+    different numbers and neither run reconciled them; the clause was used today to admit a 39-day-old
+    source without a stated criterion.
+  Why it matters: the numbers govern what enters the corpus, and the corpus is what every downstream
+    metric measures. This is the cheap, mechanical half of PRESUMPTION-937; the general fix (one
+    canonical copy of every threshold) is the expensive half.
+  Status: OPEN — in-house reconcilable; a ruling is needed only on which number is right
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-188
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN

@@ -1135,3 +1135,19 @@ are scheduler decisions, a class with no register, no numbering and no escalatio
 asks whether the remaining stall is a stall at all, or an unrecorded standing ruling: four lit-search
 cycles have now executed under REVISE-436's unanswered binary, all four behaving as though limb (b) had
 been chosen.*
+
+---
+
+*2026-09-08 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**twelve days.** In the same window: +5 REVISE (437–441), +4 DISPOSITION (913–916), +2 PREMISE
+(199–200), +1 High SYSTEMIC-RISK-FLAG, +6 proposals, and the first WATCH closure in the register's
+history. Four rulings are owed and named: REVISE-436's FAIL LOUD binary (fifth cycle unruled, and
+REVISE-441 is the measurement of what that has cost), the shared audit question left by WATCH-002 and
+WATCH-003, OPEN-185's in-corpus/out-of-corpus ruling on the lit-search layer, and OPEN-186's four-way
+choice on the Openstory schedule. Two more are queued this run (OPEN-187, OPEN-188). PRESUMPTION-935
+asks the register-level question underneath all of them: whether naming a recommendation well is being
+treated as most of doing it. Today's evidence is that the pipeline named four measurements, filed a High
+flag stating that unmeasured mechanisms accrue unearned credit, applied that judgement to itself, and
+attached no owner to any of the four.*
+
+*(14a does not make decisions.)*

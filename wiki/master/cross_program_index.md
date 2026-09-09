@@ -1760,3 +1760,29 @@ naturalism: one world describable in many vocabularies, none of which introduces
 ingredients. Filed as carroll Active Research Question 13. The Pigozzi–Levin pre-replicator result
 (levin PRS-102/103) makes it testable-shaped rather than verbal, because causal emergence there is
 **manipulable** — the strong reading of emergence, and the natural target for a deflationary account.
+
+**CROSS-131 — Levin × MacIntyre × Stump: the distributively-held setpoint.** A three-tradition
+construction, not a two-tradition bridge, and the claim is deliberately stated at its strongest so it can
+be attacked. Claim: *a distributively held setpoint is genuinely in the agent and genuinely not only in
+the agent, because the collective that holds it includes her.* If that holds, Aquinas's
+grace-as-participation (I-II q.110) and MacIntyre's goods-internal-to-a-practice are instances at
+different scales of one structure — Levin's participation without representation, in which no single cell
+represents the morphology the collective pursues — and the input/output complementarity (grace received,
+love authored) does not need the temporal/eternal move to dissolve.
+
+**Load-bearing stipulation, or the whole thing reads as a misuse of Levin's term.** The construction runs
+on an *awareness-indexed* reading of "cognitive light cone" under which the source of the goal is external
+to the agent. That is not Levin's usage: on his own account a bioelectrically stored target is INSIDE the
+collective's light cone. The stipulation is what generates the theological structure, and it is Loughran's,
+not Levin's.
+
+**Where it is exposed.** (a) NORMATIVITY — Levin's setpoints are descriptive; an induced two-headed target
+is a stored goal and cancer is reversion to a smaller light cone, so the recasting describes vice exactly
+as well as virtue and must import its normative source from outside Levin, or it is a theory of habit in
+virtue's clothing. (b) BOOTSTRAPPING — judging whether one's source is a tyrant requires standards that
+came from the source; MacIntyre's reply (crisis plus an encounterable rival with superior resources)
+converts this into an engineering problem about the availability of rivals, which is what C2A2 is for.
+Converted, not solved.
+
+Triplets: levin PRS-116, macintyre PRS-06, stump PRS-41. Source: Loughran–Claude session 2026-09-08
+(Potts paper-response run), `inbox/2026-09-08_levin_virtue-as-external-setpoint.md`.
