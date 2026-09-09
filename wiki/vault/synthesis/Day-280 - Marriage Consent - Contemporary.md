@@ -3,7 +3,7 @@ day: 280
 title: Marriage Consent (Contemporary)
 pairs_with: "[[Day-280 - Marriage Consent]]"
 length_target_words: 1500
-length_actual_words: 792
+length_actual_words: 838
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-8 one-new-humanity: unity-in-distinction as reconciliation-without-erasure)"
 evidence_strength_summary: "Friston coupling formal/speculative; Hoffman interface/trace-blanket formal and speculative; Rohr and Wright theological/scriptural. The 'consent must be outwardly expressed' point maps firmly to the formal requirement that coupling pass through a shared boundary."
-length_ratio_to_target: 0.53
+length_ratio_to_target: 0.559
 mind_first_reframe: "Expressed consent is necessary because coupling between two perspectival agents can occur only across a shared interface — the union is realized at the boundary where signs are exchanged, not in two private wills that never meet."
 central_theme_thread: "Because no spouse can inhabit the other's interior, loving unity must be built on signs offered and received in trust — the central theme's epistemology made liturgical."
 tags: [synthesis, day/280, theme/expressed-consent-as-shared-boundary]
-last_qc_at: "2026-08-31T20:22:55"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T18:29:41"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 280 — Marriage Consent (Contemporary Parallel)

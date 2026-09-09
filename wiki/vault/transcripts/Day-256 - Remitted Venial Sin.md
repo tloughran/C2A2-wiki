@@ -15,7 +15,7 @@ fetched_at: 2026-06-16
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-256 - Remitted Venial Sin - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-07-27T16:19:46"
+last_qc_at: "2026-09-08T14:31:39"
 last_qc_outcome: "pass"
 tags: [summa, day/256, pars/3, q/87]
 ---

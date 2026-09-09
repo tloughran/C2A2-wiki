@@ -3,10 +3,10 @@ day: 259
 title: Continual Contrition (Contemporary)
 pairs_with: "[[Day-259 - Continual Contrition]]"
 length_target_words: 1500
-length_actual_words: 1007
+length_actual_words: 1015
 length_tier: short
-length_ratio_to_target: 0.671
-length_note: "Compact by design: Suppl. Q.2–3 turns on the single motif of contrition-as-persistent-corrective-signal; the one-to-one parallel is complete without padding."
+length_ratio_to_target: 0.677
+length_note: "Compact by design: Suppl. Q.2–3 turns on the single motif of contrition-as-persistent-corrective-signal; the one-to-one parallel is complete without padding. The stored 1007 recounted EXACT on 2026-09-08; the +8 since is citation apparatus only — the Stump register re-count and re-test date in the absence declination."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle, High — where the continuous-correction claim's formal weight sits; PRS-04 the organism as active modeler, (Implicit)/Medium — the goal-directed framing)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, *Falling Upward* — the falling-and-rising rhythm; PRS-05 the wounded pattern redemptively re-read — what happens to the self within it)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Continual contrition as persistent error signal is f
 mind_first_reframe: "Continual contrition is reframed as an agent's persistent corrective signal — sustained model revision toward the good (Friston) taking the contemplative shape of ongoing falling-and-rising (Rohr) rather than one-time remorse."
 central_theme_thread: "'Working out salvation in fear and trembling' (Phil 2:12) is continual contrition: the perspective-limited agent, unable to see the whole, keeps a standing corrective orientation toward loving unity, the ongoing sorrow the felt form of a finite agent computing its way under guidance toward a unity it does not yet possess."
 tags: [synthesis, day/259, theme/continual-contrition-as-sustained-revision]
-last_qc_at: "2026-08-31T14:31:17"
+last_qc_at: "2026-09-08T14:32:01"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +53,7 @@ This day states the project's governing scripture directly. "Working out salvati
 - **Rohr PRS-02 (order-disorder-reorder; *Falling Upward*)** — *theological / contemplative.* The rhythm of falling-and-rising, and why the reorder can run deeper than what it replaced.
 - **Rohr PRS-05 (the wounded pattern redemptively re-read, not erased)** — *theological / contemplative.* What happens to the self within that rhythm; the non-dual shape that keeps it from scrupulosity.
 - **Wright PRS-13 (Phil 2:12; the working-out of salvation as ongoing participation in the people God is forming) with PRS-05 (salvation as incorporation, not relocation)** — *scriptural, high within method.* The charter of the ongoing posture: a relation kept, which is why the corrective is continual.
-- **Stump PRS-29 (the moral life as second-personal relationship under cooperative causality)** — *theological / philosophical-psychological.* Supplies the check on the persistent-signal reading: a standing corrective signal is a relation being kept, not a disposition being drilled. Searching that register's 35 numbered entries for contrition, confession, satisfaction, penance, penitent, repentance, absolution, remission, and venial returns nothing, so PRS-29 is the nearest anchored resource rather than an approximation to a closer one.
+- **Stump PRS-29 (the moral life as second-personal relationship under cooperative causality)** — *theological / philosophical-psychological.* Supplies the check on the persistent-signal reading: a standing corrective signal is a relation being kept, not a disposition being drilled. Searching that register's 37 numbered entries — which run non-contiguously to PRS-40 — for contrition, confession, satisfaction, penance, penitent, repentance, absolution, remission, and venial returns nothing (re-tested 2026-09-08), so PRS-29 is the nearest anchored resource rather than an approximation to a closer one.
 
 ## Where this leaves us
 

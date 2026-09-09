@@ -6,7 +6,7 @@ length_target_words: 2200
 length_actual_words: 1053
 length_tier: medium
 length_ratio_to_target: 0.479
-length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move per the guardrail; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; substance-as-mental-reality)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
@@ -14,12 +14,12 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
   - "Stump, *Aquinas* (Routledge 2003), on the metaphysics of matter, form and accident — canonical-work anchor; the Stump register carries no Eucharistic-accidents entry"
-evidence_strength_summary: "Accidents-without-substrate is metaphysical/contested (Kastrup, lead per guardrail); appearance-decoupled-from-reality formal with argued evolutionary basis (Hoffman); form-without-fixed-matter empirical-in-domain (Levin); content theological (Rohr/Wright)."
+evidence_strength_summary: "Accidents-without-substrate is metaphysical/contested (Kastrup, leading); appearance-decoupled-from-reality formal with argued evolutionary basis (Hoffman); form-without-fixed-matter empirical-in-domain (Levin); content theological (Rohr/Wright)."
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-08-31T12:26:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T12:24:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 251 — Accidents Remaining (Contemporary Parallel)

@@ -3,10 +3,10 @@ day: 258
 title: The Supplement (Contemporary)
 pairs_with: "[[Day-258 - The Supplement]]"
 length_target_words: 2200
-length_actual_words: 937
+length_actual_words: 1002
 length_tier: medium
-length_ratio_to_target: 0.426
-length_note: "Compact by design: Suppl. Q.1 is a structural seam (distributed authorship completing an unfinished whole), not a doctrinal locus, so the parallel develops the single finitude-of-authorship motif rather than mirroring articles; substance complete per the five-question review."
+length_ratio_to_target: 0.455
+length_note: "Compact by design: Suppl. Q.1 is a structural seam (distributed authorship completing an unfinished whole), not a doctrinal locus, so the parallel develops the single finitude-of-authorship motif rather than mirroring articles; substance complete per the five-question review. The stored 937 recounted EXACT on 2026-09-08; the +65 since is citation apparatus only — the bundled Hawkins PRS-03/PRS-04 badge split into two bullets at their own register grades."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 individual agents forming coherent higher-order wholes without losing autonomy)"
   - "traditions/hawkins/prs_triplets.md (PRS-03 knowledge fragile in single minds; preservation/extension across agents; PRS-04 shared reference frames)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Distributed authorship completing an unfinished whol
 mind_first_reframe: "The Summa's completion after Aquinas's death by other hands reframes the work's incompleteness as an instance of the central claim — no single perspective completes the whole; wholes are completed by collaborating limited agents cohering around a shared model (Friston PRS-06), the seams of differing authorship marking that coherence is approximated, not guaranteed."
 central_theme_thread: "Finitude is the condition of all minds, even the greatest; loving unity is therefore inherently collaborative — limited perspectives, aware of their need for one another, compose into a larger agent that sees more than any one, the Summa confessing its own thesis."
 tags: [synthesis, day/258, theme/distributed-authorship-under-finitude]
-last_qc_at: "2026-08-31T14:31:16"
+last_qc_at: "2026-09-08T14:32:01"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,7 +51,8 @@ This day states the project's central claim almost without translation. Consciou
 ## Bridges
 
 - **Friston PRS-06 (agents forming coherent higher-order wholes; community cohesion)** — *formal, developing.* Distributed completion without loss of autonomy; sharpest resource.
-- **Hawkins PRS-03 + PRS-04 (knowledge fragile in single minds; shared reference frames)** — *empirical / design-motivated.* The fragility problem the Supplement solves.
+- **Hawkins PRS-03 (knowledge fragile in single minds and dying institutions; preservation requires a path beyond the single mind)** — *High in the register; design-motivated rather than measured.* The fragility problem the Supplement solves.
+- **Hawkins PRS-04 (reference frames as a universal cognitive tool)** — *stated separately because its standing differs: the entry is marked (Implicit) at Confidence Medium, and its recorded Solution is a proposal for tradition-crossing inquiry as reference-frame translation, not an empirical cortical result.* Why later compilers could carry Aquinas's frame at all.
 - **McGilchrist PRS-06 (embodied tradition formation; tacit knowledge resists transmission)** — *the entry is marked (Implicit) at Confidence Medium in the register — the network's reconstruction of McGilchrist's position, not a measured result.* Why the completion is imperfect. The seam in the Supplement is a real historical datum; the account of *why* seams form is the interpretive claim, and it is the weaker of the two.
 - **master/C2A2_master_wiki.md (distributed authorship)** — *project-internal.* The wiki as the same structure, self-aware.
 

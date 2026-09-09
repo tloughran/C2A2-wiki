@@ -3,7 +3,7 @@ day: 241
 title: Ascension (Contemporary)
 pairs_with: "[[Day-241 - Ascension]]"
 length_target_words: 2200
-length_actual_words: 1252
+length_actual_words: 1263
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-37 Ascension as enthronement, heaven-and-earth overlap; PRS-02 faithful improvisation / five-act drama; PRS-03 inaugurated eschatology)"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 attractor formalism)"
 evidence_strength_summary: "Christology/eschatology theological (Wright, high within its method); interface read of 'place' formal-speculative (Hoffman); non-local form-influence an empirical-analogy bridge (Levin); central-theme claim speculative."
-length_ratio_to_target: 0.569
-length_note: "Recounted 2026-08-31: the stored 965 / 0.44 understated the body by roughly 190 words even before repair; true post-repair count is 1252, ratio 0.569. Still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2043 words, inside the 2000-3500 medium band), so escalating this as a tier error would be false. Q.57 is a single narrow article and the PRS form is complete, which is the real justification; note that the identical sentence previously here also appears on Days 242-246, i.e. it was a template rather than a per-day reason, and the reviewer escalation it deferred to (QC log 2026-06-16) is still open."
+length_ratio_to_target: 0.574
+length_note: "Recounted 2026-09-08: the 08-31 figure of 1252 was EXACT for the pre-edit body; post-repair count 1263, ratio 0.574. The 11 added words anchor Wright PRS-03, which sat in karpathy_wiki_sources while the Resource paragraph stated its content with no id. Prior note, still standing: recounted 2026-08-31, the stored 965 / 0.44 understated the body by roughly 190 words even before repair. Still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2043 words, inside the 2000-3500 medium band), so escalating this as a tier error would be false. Q.57 is a single narrow article and the PRS form is complete, which is the real justification; note that the identical sentence previously here also appears on Days 242-246, i.e. it was a template rather than a per-day reason, and the reviewer escalation it deferred to (QC log 2026-06-16) is still open."
 mind_first_reframe: "If perceived spacetime is a species-specific interface, the Ascension is a change of interface — a withdrawal from the shared sensory presentation — not a subtraction from Christ's real presence or universal governance."
 central_theme_thread: "The ascended Christ's recession from the shared interface is what constitutes the community as perspective-limited agents who must now compute toward loving unity through faith and one another rather than direct sight."
 tags: [synthesis, day/241, theme/presence-under-limitation]
-last_qc_at: "2026-08-31T08:26:06"
+last_qc_at: "2026-09-08T08:22:43"
 last_qc_outcome: "rewrote"
 ---
 
@@ -37,7 +37,7 @@ The leading move comes from Hoffman's interface theory of perception. In Tom's P
 
 A second resource comes from Levin. Tom's PRS-form record of Levin's work (PRS-01, morphogenetic control; PRS-03, the morphological-attractor formalism) describes how a target form governs a developing system non-locally: cells are pulled toward an anatomical set-point that is not itself a cell, not located "in" any tissue, yet decisively ordering all of them. This gives a naturalized analogy — strictly an analogy, flagged as such — for a governing center that orders a whole without occupying a position within it.
 
-Wright's inaugurated eschatology (the decisive event has happened; its full implications are still unfolding) reframes the Ascension not as Jesus going "up and away" but as the enthronement that inaugurates a reign now being worked out within history. Rohr's Universal Christ supplies the cosmic scope: the ascended Christ is the pattern present in all reality, not a body relocated to a far compartment of the sky.
+Inaugurated eschatology — PRS-03 in the Wright-tradition wiki, **Confidence High**: the decisive event has already occurred and its full implications are still being worked out — reframes the Ascension not as Jesus going "up and away" but as the enthronement that inaugurates a reign now being worked out within history. Rohr's Universal Christ supplies the cosmic scope: the ascended Christ is the pattern present in all reality, not a body relocated to a far compartment of the sky.
 
 ## Solution (proposed, speculative)
 

@@ -3,21 +3,22 @@ day: 255
 title: Penance as a Virtue (Contemporary)
 pairs_with: "[[Day-255 - Penance as a Virtue]]"
 length_target_words: 2200
-length_actual_words: 975
+length_actual_words: 1020
 length_tier: medium
-length_ratio_to_target: 0.443
-length_note: "Runs ~56% under the medium tier (975 vs 2200): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.464
+length_note: "Runs ~54% under the medium tier (1020 vs 2200; the stored 975 UNDERSTATED the body, which recounted to 994 before this run's edits, and the +26 since is the Friston PRS-04 register-standing marking added as citation apparatus): held to the PRS argument for a single question (III Q.85) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act; PRS-06 embodied/tacit habituation)"
   - "traditions/levin/prs_triplets.md (PRS-03 stabilized target attractor)"
   - "traditions/friston/prs_triplets.md (PRS-04 deepened prior; habituation as learned model)"
   - "traditions/rohr/prs_triplets.md (PRS-05 sustained contemplative transformation)"
+  - "traditions/stump/prs_triplets.md (PRS-24 the acquired/infused dual-track virtue theory, Medium — what receives the habit-as-prior reframe and marks its limit)"
 evidence_strength_summary: "Virtue-as-stable-attractor / deepened-prior is formal-analogical (Friston, Levin); habituation reshaping attention rests on empirical attentional and hemispheric neuroscience, but the two register entries carrying it (McGilchrist PRS-05, PRS-06) are both (Implicit)/Medium reconstructions, so the day's closest resource is also among its weakest-attested; the virtue's orientation to God is theological."
 mind_first_reframe: "The virtue of penance is a habituated mode of attention (McGilchrist) and a deepened generative prior — a stabilized attractor (Friston, Levin) — that reconfigures the agent's default engagement toward detecting and repairing deviation from the good."
 central_theme_thread: "Through habit a limited perspective becomes the kind of agent for which return to the whole is connatural, widening its attractor toward loving unity so that fewer perturbations dislodge it."
 tags: [synthesis, day/255, theme/habit-as-stabilized-attractor]
-last_qc_at: "2026-08-31T14:31:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T14:31:38"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 255 — Penance as a Virtue (Contemporary Parallel)
@@ -49,7 +50,7 @@ The motif appears as the consolidation of a perspective's orientation. A limited
 ## Bridges
 
 - **McGilchrist PRS-05 + PRS-06 (attention as ontological act; embodied habituation)** — *the closest resource, and therefore the one whose strength most needs stating: both entries are marked (Implicit) at Confidence Medium in the register — the C2A2 network's reconstruction of McGilchrist's position, not a measured result. The underlying attentional and hemispheric neuroscience McGilchrist draws on is empirical; the claim that the mode of attention constitutes a world is his philosophical thesis about that evidence. Virtue as retrained attention constituting a world.*
-- **Friston PRS-04 (deepened prior)** — *formal analogy.* The habit as a sculpted generative model.
+- **Friston PRS-04 (deepened prior)** — *formal analogy, and the entry carrying it is marked (Implicit) at Confidence Medium in the register — a reconstruction, not the standing of the active-inference literature it interprets.* The habit as a sculpted generative model.
 - **Levin PRS-03 (stabilized attractor)** — *formal analogy, biologically motivated.* The basin deepened by repetition.
 - **Rohr PRS-05 (sustained transformation)** — *theological / contemplative.* The settled shape of dying-into-the-true.
 - **PRS-24 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological, dual-track.* Acquired virtue built up by practice and infused virtue received in an instant with grace, held as operating at different levels of the soul's powers rather than as rivals. This is what receives the habit-as-prior/attractor reframe, and it also marks that reframe's limit: infused virtue is precisely the track repetition does not produce.

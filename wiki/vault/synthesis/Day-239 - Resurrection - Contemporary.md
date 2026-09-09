@@ -3,9 +3,10 @@ day: 239
 title: Resurrection (Contemporary)
 pairs_with: "[[Day-239 - Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1600
-length_ratio_to_target: 1.067
+length_actual_words: 1692
+length_ratio_to_target: 1.128
 length_tier: short
+length_note: "Recounted 2026-09-08 against the recorded parser rule: the stored 1600 was EXACT for the pre-edit body (a clean 08-31 count, in the opposite direction from that pass's 2-3% overstatements on Days 202/205/206). Post-repair count 1692, ratio 1.128 — inside +25%, no escalation. The 92 added words are citation apparatus only: two sources listed in karpathy_wiki_sources but cited nowhere in the body (Wright PRS-05, Rohr PRS-04) were anchored at the sites whose claims they already carried. No argument altered."
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism; PRS-01 morphogenetic control)"
@@ -17,7 +18,7 @@ evidence_strength_summary: "Resurrection as 'beginning and exemplar of all good 
 mind_first_reframe: "The resurrection is read as the installation of a new attractor — life utterly immortal, a mode of embodiment that did not previously exist — with the risen body as the first node from which the pattern propagates; identity is carried by the form, so the same person is re-embodied in a transformed mode, the wounds retained not as damage but as features of the new pattern."
 central_theme_thread: "The resurrection is the loving-unity telos shown to be achievable in a body: the goal is not escape from limited embodied perspective but its transformation, the same form re-expressed in a mode where limitation no longer means corruption — the first instance of what the whole computation is for."
 tags: [synthesis, day/239, theme/identity-through-transformation]
-last_qc_at: "2026-08-31T08:25:43"
+last_qc_at: "2026-09-08T08:22:11"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +54,7 @@ Difference from Aquinas made explicit: Aquinas establishes sameness-and-glory by
 
 ## The central-theme thread
 
-The resurrection is what the whole computation is *for*. The central theme holds that loving unity is the telos toward which limited perspectives compute, and the standing worry is whether that telos requires escaping limited embodied perspective altogether. Q.53-54 answers no: the goal is not flight from the body but its transformation — the same form, the same person, re-embodied in a mode where limitation no longer means decay. The risen body is the first instance of a perspective still particular (these hands, these feet, these scars) yet no longer corruptible — limitation transfigured rather than abolished. That is the project's wager about persons confirmed in a body: the loving unity does not dissolve the many into the simple whole; it glorifies each limited perspective into an incorruptible particular within it.
+The resurrection is what the whole computation is *for*. The central theme holds that loving unity is the telos toward which limited perspectives compute, and the standing worry is whether that telos requires escaping limited embodied perspective altogether. Q.53-54 answers no: the goal is not flight from the body but its transformation — the same form, the same person, re-embodied in a mode where limitation no longer means decay. PRS-04 in the Rohr-tradition wiki (the spiritual is always embodied, never purely abstract; the body a site of knowing; **Confidence Medium**) is the contemplative record that refuses the escape reading in advance, and it is the register in which "same body, entire, yet glorified" is a *theological* claim rather than a concession to materialism. The risen body is the first instance of a perspective still particular (these hands, these feet, these scars) yet no longer corruptible — limitation transfigured rather than abolished. That is the project's wager about persons confirmed in a body: the loving unity does not dissolve the many into the simple whole; it glorifies each limited perspective into an incorruptible particular within it — which is PRS-05 in the Wright-tradition wiki (salvation as incorporation into the people among whom God comes home, not relocation of souls; **Confidence High**) stated at the level of the individual body rather than the community.
 
 ## Bridges
 

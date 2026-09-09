@@ -13,11 +13,11 @@ karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological, Confidence Medium)"
 evidence_strength_summary: "Real Presence theological (Rohr PRS-21/PRS-04 both Medium; Wright PRS-04 Medium, and the register has no Real-Presence entry — gap named in Bridges); substance-as-mental-reality metaphysical and contested (Kastrup PRS-02, High); participatory-encounter reading Medium and a proposed refinement, not settled program content (Kastrup PRS-09); accidents-as-interface formal, and PRS-03 is a rigorous mathematical result at High rather than a speculation (Hoffman PRS-01/PRS-03 High, PRS-04 Medium — graded separately); identity-through-turnover empirical-in-domain (Levin PRS-01, High); central-theme strongly engaged."
 length_ratio_to_target: 0.617
-length_note: "Compact-by-design: III Q.73-74 (Real Presence / matter of the sacrament) rendered in tight, complete PRS form with the metaphysical guardrail leading Kastrup/Hoffman/Levin; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
-mind_first_reframe: "Under mind-monism with the metaphysical guardrail leading Kastrup/Hoffman/Levin, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
+length_note: "Compact-by-design: III Q.73-74 (Real Presence / matter of the sacrament) rendered in tight, complete PRS form, leading with Kastrup, Hoffman and Levin; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+mind_first_reframe: "Under mind-monism, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
 central_theme_thread: "The Eucharist is the maximal case of the whole present under a limited perspective's signs: agents perceive only the interface (bread) while the reality (Christ) is present precisely under the limitation of their perception, and communion is participative inclusion in that reality — 'salvation as inclusion in the people united with God.'"
 tags: [synthesis, day/249, theme/presence-and-substance]
-last_qc_at: "2026-08-31T12:26:33"
+last_qc_at: "2026-09-08T12:23:48"
 last_qc_outcome: "rewrote"
 ---
 

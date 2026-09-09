@@ -3,10 +3,10 @@ day: 264
 title: Vicarious Satisfaction (Contemporary)
 pairs_with: "[[Day-264 - Vicarious Satisfaction]]"
 length_target_words: 1500
-length_actual_words: 841
+length_actual_words: 996
 length_tier: short
-length_ratio_to_target: 0.56
-length_note: "Compact by design: Suppl. Q.13–14 develops the proportion-not-quantity and shared-corrective-work motifs completely; substance complete per the five-question review."
+length_ratio_to_target: 0.664
+length_note: "Compact by design: Suppl. Q.13–14 develops the proportion-not-quantity and shared-corrective-work motifs completely; substance complete per the five-question review; sits inside the accepted Days 241-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recounted 2026-09-08: the stored figure of 841 UNDERSTATED the pre-edit body, which measured 943 — a 12% gap, and the file had not been edited at its previous mark, which is the likely reason the arithmetic was never recomputed. The reviewer pass then added 53 words splitting a bundled Wright badge (PRS-25 is Medium, PRS-8 is High; the single 'high within method' badge had sold the Medium record at the High grade), which is citation apparatus rather than new argument."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 agents forming higher-order wholes; corrective work shared across a multi-agent system)"
   - "traditions/wright/prs_triplets.md (PRS-25 the one stands for the many, corporate identity through rupture; PRS-8 one new humanity — distinct agents as a single corporate subject)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "Finite-by-proportion-not-quantity is formal-analogic
 mind_first_reframe: "Finite satisfaction suffices by proportion (the whole-hearted orientation of the limited self), not quantity, and vicarious satisfaction is real because charity-bound agents compose a higher-order body within which corrective work is genuinely shared (Friston PRS-06), grounded in covenant solidarity (Wright)."
 central_theme_thread: "The perspective-limited agent cannot match the infinite whole by quantity, yet is included by the proportionate turning of all it is and by being a member whose corrective work is borne with and for others — loving unity as the interdependence of limited agents in one body."
 tags: [synthesis, day/264, theme/proportionate-and-shared-satisfaction]
-last_qc_at: "2026-08-31T10:42:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T10:31:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 264 — Vicarious Satisfaction (Contemporary Parallel)
@@ -49,7 +49,8 @@ The motif reaches one of its deepest statements. The perspective-limited agent c
 ## Bridges
 
 - **Friston PRS-06 (agents forming a higher-order body; shared corrective work)** — *formal, developing.* Vicarious satisfaction as distributed free-energy reduction within a charity-bound whole.
-- **Wright PRS-25 / PRS-8 (`traditions/wright/prs_triplets.md`)** — *scriptural, high within method.* The one standing for the many (PRS-25) and distinct agents as one corporate subject (PRS-8): the scriptural basis for satisfying for another.
+- **Wright PRS-8 (`traditions/wright/prs_triplets.md`; the "one new humanity" of Eph 2:11–22)** — *scriptural, high within method; the record is graded High.* Distinct agents as one corporate subject without erasure of difference — the firmer of the two Wright legs here.
+- **Wright PRS-25 (`traditions/wright/prs_triplets.md`; remnant and restoration read Christologically)** — *scriptural, but the record is graded Medium and the difference matters.* The one standing for the many, corporate identity surviving rupture: the closer analogue to satisfying *for* another, and the softer-evidenced of the pair.
 - **Rohr PRS-7 (`traditions/rohr/prs_triplets.md`; relationship ontologically prior; shared Body)** — *theological / contemplative.* Why one's work can be genuinely for another.
 - **Fredrickson PRS-01 (`traditions/fredrickson/prs_triplets.md`; cultivated positive practice, upward spirals)** — *empirical (affective science).* Good deeds void punishment more than mere omission.
 

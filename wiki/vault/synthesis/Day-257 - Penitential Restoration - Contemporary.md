@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 the morphological-attractor formalism — a formal language for target morphology; PRS-82 target morphology as pattern memory held in the cell collective rather than the hardware, which is where the empirical regeneration claim actually sits)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; goal-directedness. The path-dependence of the recovered prior is a general FEP point, not PRS-04's own content.)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation into the people among whom God comes home, not relocation of souls; PRS-13 God's Homecoming as the canonical articulation)"
-  - "traditions/rohr/prs_triplets.md (PRS-05 the recovered self is transformed, not merely reset)"
+  - "traditions/rohr/prs_triplets.md (PRS-05 the recovered self is transformed, not merely reset, Medium; PRS-02 order-disorder-reorder, *Falling Upward*, High — why the reorder can run deeper than the order it replaced)"
 evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-domain (Levin regeneration); equal-measure question framed by path-dependence is formal (Friston); restored-membership content is scriptural (Wright)."
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-08-31T14:31:16"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T14:32:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 257 — Penitential Restoration (Contemporary Parallel)

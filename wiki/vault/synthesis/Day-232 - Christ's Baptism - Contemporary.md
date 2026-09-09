@@ -17,8 +17,8 @@ evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learni
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-08-31T06:36:06"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-08T06:33:53"
+last_qc_outcome: "pass"
 ---
 
 # Day 232 — Contemporary Parallel: The Exemplar in the Water

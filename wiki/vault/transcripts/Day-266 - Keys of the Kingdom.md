@@ -15,7 +15,7 @@ fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-266 - Keys of the Kingdom - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-13T00:21:40"
+last_qc_at: "2026-09-08T16:22:52"
 last_qc_outcome: "pass"
 tags: [summa, day/266, pars/supplement, q/17-18]
 ---

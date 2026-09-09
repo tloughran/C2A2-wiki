@@ -16,7 +16,7 @@ raw_asr_word_count: 1277
 length_tier: short
 fidelity_checked: true
 tags: [summa, day/280, pars/suppl, q/45-46]
-last_qc_at: "2026-08-13T08:22:43"
+last_qc_at: "2026-09-08T18:29:41"
 last_qc_outcome: "pass"
 ---
 

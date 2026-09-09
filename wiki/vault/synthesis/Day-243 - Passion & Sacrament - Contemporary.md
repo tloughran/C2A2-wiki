@@ -17,8 +17,8 @@ length_note: "Recounted 2026-08-31: stored 645 understated the pre-repair body b
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
 tags: [synthesis, day/243, theme/causality-across-time]
-last_qc_at: "2026-08-31T08:26:30"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-08T08:22:56"
+last_qc_outcome: "pass"
 ---
 
 # Day 243 — Passion & Sacrament (Contemporary Parallel)

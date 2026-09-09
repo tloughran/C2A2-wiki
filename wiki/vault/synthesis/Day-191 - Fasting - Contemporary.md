@@ -5,7 +5,7 @@ pairs_with: "[[Day-191 - Fasting]]"
 length_target_words: 1500
 length_actual_words: 1387
 length_ratio_to_target: 0.92
-length_note: "Length-light vs the 1500 short-tier guideline but a complete PRS synthesis (Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy — substantive integrity over word count."
+length_note: "SUPERSEDED 2026-09-08 — the file is no longer length-light. It was 1387 / 0.92 and the old note accepted that under the flexible length policy; the 2026-09-08 reviewer pass split the Fredrickson bullet's single averaged evidence badge into its two registered grades (PRS-01 High / empirical, PRS-05 Implicit-Medium / frame), and the recount is 1471 body words / 0.981 — inside the short-tier ±10% band. The added words are grade-marking and a scope disclaimer, not argument; no claim was added, removed, or reweighted. Numeric frontmatter fields left untouched per the batch length recompute open since 2026-08-15."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-28: neuromodulation encoding precision, the inverse variance of prediction error — the actual home of the precision-weighting claim; PRS-04: organism as active modeler; PRS-01: the Free Energy Principle itself)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Fasting as resource-reallocation / allostatic self-r
 mind_first_reframe: "Fasting is the deliberate down-regulation of a lower predictive appetite so a finite agent can re-weight its scarce attention toward modeling the whole — a self-imposed prediction-error undertaken because the agent's true setpoint lies beyond bodily homeostasis."
 central_theme_thread: "An agent individuated by the limits of its resources cannot attend to everything at once; fasting is the in-via discipline of clearing resource-load so the perspective can widen toward the loving unity it computes toward but cannot yet hold."
 tags: [synthesis, day/191, theme/self-regulation]
-last_qc_at: "2026-08-31T00:25:58"
+last_qc_at: "2026-09-08T02:32:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -54,7 +54,7 @@ The project's claim is that conscious agents are individuated by the limitations
 ## Bridges
 
 - **Fasting ↔ precision-weighting / active inference** — `traditions/friston/prs_triplets.md`, PRS-28 (neuromodulation encoding precision, the inverse variance of prediction error over selected channels) with PRS-04 (the organism as active modeler) and PRS-01 (the Free Energy Principle itself); bridges file "precision-weighting as temperance." *Why:* fasting is the acute exercise of temperance read as adjustable precision over an interoceptive appetite — and precision proper lives at PRS-28, not at the two more general entries this bullet previously cited alone. Evidence: **mechanistic, medium**.
-- **Regulation ↔ embodied vagal control** — the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`, PRS-01 and PRS-05). *Why:* Aquinas's calibrated, dispensable fast matches self-regulation as a real bodily control system with limits. Evidence: **empirical, medium**.
+- **Regulation ↔ embodied vagal control** — the Fredrickson-tradition wiki (`traditions/fredrickson/prs_triplets.md`, PRS-01 and PRS-05). *Why:* Aquinas's calibrated, dispensable fast matches self-regulation as a real bodily control system with limits. Evidence, split by grade rather than averaged: PRS-01 is **Confidence High** and genuinely empirical — deliberately cultivated positivity resonance raising vagal tone and generating upward spirals of resilience is the record's own Solution line. PRS-05 is marked *(Implicit)* / **Medium**, and what it records is the program's claim that abstract commitments have measurable bodily signatures — the frame under which the vagal data are read, not a second measurement. The single "empirical, medium" badge this bullet previously carried averaged the two downward and understated PRS-01. Neither record treats fasting; that application is this commentary's extension.
 - **"Freeing the mind" ↔ attentional/metabolic load-shedding** — Friston-tradition wiki. *Why:* releasing the lower loop frees budget for higher-order modeling. Evidence: **mechanistic-speculative**.
 - **Discipline ↔ new-creation rehearsal** — `traditions/wright/prs_triplets.md`, PRS-30 (the functionally Platonic "souls escaping bodies" hope corrected toward embodied new creation); *Surprised by Hope*. *Why:* the body trained toward the age to come, not despised. Evidence: **theological**.
 - **Chosen deprivation ↔ the necessary falling** — `traditions/rohr/prs_triplets.md`, PRS-37 (the path of descent as transition mechanism, and modernity's manufactured ascent that substitutes for it); *Falling Upward*. *Why:* voluntary loss loosens the false self so the whole can be seen. Evidence: **theological**.

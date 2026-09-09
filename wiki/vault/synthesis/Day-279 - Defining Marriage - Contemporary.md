@@ -3,7 +3,7 @@ day: 279
 title: Defining Marriage (Contemporary)
 pairs_with: "[[Day-279 - Defining Marriage]]"
 length_target_words: 1500
-length_actual_words: 835
+length_actual_words: 818
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism)"
 evidence_strength_summary: "Friston dyadic-coupling formal/speculative; Kastrup metaphysical (firm within idealism, not empirical); Levin empirical at biological scale; the consent-as-constitution claim is conceptual."
-length_ratio_to_target: 0.56
+length_ratio_to_target: 0.545
 mind_first_reframe: "The marriage bond is constituted by an act of mutual intentional adoption — two generative models electing to be one — which is why consent, not consummation, makes the marriage."
 central_theme_thread: "Marriage begins not with achieved union but with a vow to pursue it: two perspectives that cannot see the whole elect a shared whole and bind themselves to compute their lives from it together."
 tags: [synthesis, day/279, theme/consent-as-constitutive-act]
-last_qc_at: "2026-08-31T20:22:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T18:29:40"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 279 — Defining Marriage (Contemporary Parallel)

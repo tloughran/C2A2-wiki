@@ -3,20 +3,20 @@ day: 263
 title: Making Satisfaction (Contemporary)
 pairs_with: "[[Day-263 - Making Satisfaction]]"
 length_target_words: 1500
-length_actual_words: 936
+length_actual_words: 975
 length_tier: short
-length_ratio_to_target: 0.624
-length_note: "Compact by design: Suppl. Q.11–12 (seal + satisfaction) maps to two tight motifs — the trusted disclosure channel and the restored equality — both fully developed without padding. RECOUNTED 2026-08-31 after this run's McGilchrist PRS-06 bridge repair, which added 180 words: 756 → 936, ratio 0.50 → 0.624. Still under tier and still noted, so no flag is suppressed by the update. The recount was taken AFTER editing and so cannot separate the added words from any pre-existing miscount; recorded as a limitation."
+length_ratio_to_target: 0.650
+length_note: "Compact by design: Suppl. Q.11–12 (seal + satisfaction) maps to two tight motifs — the trusted disclosure channel and the restored equality — both fully developed without padding. RECOUNTED 2026-08-31 after this run's McGilchrist PRS-06 bridge repair, which added 180 words: 756 → 936, ratio 0.50 → 0.624. Still under tier and still noted, so no flag is suppressed by the update. The recount was taken AFTER editing and so cannot separate the added words from any pre-existing miscount; recorded as a limitation. RECOUNTED AGAIN 2026-09-08 BEFORE editing: 936 exactly as stored, so the 08-31 figure was sound and the earlier limitation is now closed. This run's Levin PRS-03 badge correction then added 39 words of citation apparatus: 936 → 975, ratio 0.624 → 0.650. Still under tier, still noted, no flag suppressed."
 karpathy_wiki_sources:
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 embodied tradition formation — knowledge is person-involving and resists context-free transfer; the step from that to a *confidential* channel is this day's extension, see Bridges note)"
   - "traditions/friston/prs_triplets.md (safe low-cost channel for error-sharing; satisfaction as corrective action closing the loop)"
   - "traditions/levin/prs_triplets.md (PRS-03 restoration of a disturbed equality toward the set-point)"
   - "traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior; honor as right relation)"
-evidence_strength_summary: "Seal-as-trust-condition is humanistic-empirical (McGilchrist) + formal (Friston channel); satisfaction-as-equality-restoration is formal/empirical-in-domain (Levin); 'due honor to God' content is theological."
+evidence_strength_summary: "Seal-as-trust-condition is humanistic-empirical (McGilchrist) + formal (Friston channel); satisfaction-as-equality-restoration is formal (Levin PRS-03, Confidence High, an explicit attractor formalism rather than an empirical result); 'due honor to God' content is theological."
 mind_first_reframe: "The seal is reframed as the constitutive trust-condition that makes honest error-disclosure possible (McGilchrist PRS-06 on person-involving knowledge, extended here to confidentiality; Friston), and satisfaction as the corrective action returning a disturbed equality to its set-point (Levin PRS-03, Friston), with 'due honor' read as a relation set right rather than a ledger balanced (Rohr PRS-7)."
 central_theme_thread: "The seal is the held space in which a perspective-limited agent can safely disclose its hidden deviation, and satisfaction is that agent's resource-bounded labor of re-aligning the disturbed relation toward loving unity — both conditions of a finite perspective being re-included."
 tags: [synthesis, day/263, theme/trusted-channel-and-restored-equality]
-last_qc_at: "2026-08-31T18:28:34"
+last_qc_at: "2026-09-08T16:22:51"
 last_qc_outcome: "rewrote"
 ---
 
@@ -50,7 +50,7 @@ The motif appears twice. The seal is the held space in which a perspective-limit
 
 - **PRS-06 in the McGilchrist-tradition wiki** (`wiki/traditions/mcgilchrist/prs_triplets.md`) — embodied tradition formation: traditions transmit tacit, person-involving knowledge that resists context-free transfer. *Humanistic; the record is Label "(Implicit)" and Confidence Medium — not a strongly-evidenced entry.* It grounds confession as a relational rather than informational act. **The step to the seal as a confidential, non-leaking channel is this commentary's extension** — the register holds no entry on confidentiality or on betrayed disclosure.
 - **Friston (safe error-sharing channel; action reducing divergence)** — *formal, well-developed.* Trust enables disclosure; satisfaction as corrective action.
-- **Levin PRS-03 (restoration to a set-point)** — *empirical-in-domain.* Satisfaction as return of a disturbed equality to balance.
+- **Levin PRS-03 (morphological attractor formalism; restoration to a set-point)** — *formal, Confidence High.* The record's Solution is the formal modeling of morphogenetic goal-seeking — free-energy minimization and Lagrangian paths for morphological attractors — so it supplies the *formalism* of return-to-set-point, not an empirical measurement of one. Satisfaction as return of a disturbed equality to balance.
 - **Rohr PRS-7 (relationship ontologically prior; honor as right relation)** — *theological / contemplative.* Equality restored is a relation set right.
 
 ## Where this leaves us

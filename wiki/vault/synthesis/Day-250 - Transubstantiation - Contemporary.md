@@ -3,7 +3,7 @@ day: 250
 title: Transubstantiation (Contemporary)
 pairs_with: "[[Day-250 - Transubstantiation]]"
 length_target_words: 2200
-length_actual_words: 946
+length_actual_words: 1027
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem transformation; PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
@@ -11,14 +11,14 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-52 longevity as pattern-persistence across substrate turnover)"
   - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
-evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal-speculative (Hoffman, his core empirical-evolutionary claim); identity-through-turnover empirical (Levin); central-theme strongly engaged; guardrail leads Hoffman/Kastrup/Levin."
-length_ratio_to_target: 0.43
-length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal-speculative (Hoffman, his core empirical-evolutionary claim); identity-through-turnover empirical (Levin); central-theme strongly engaged."
+length_ratio_to_target: 0.467
+length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here."
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-08-31T12:26:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T12:24:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 250 — Transubstantiation (Contemporary Parallel)

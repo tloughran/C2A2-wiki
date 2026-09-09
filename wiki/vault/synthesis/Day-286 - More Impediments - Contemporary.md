@@ -3,21 +3,21 @@ day: 286
 title: More Impediments (Contemporary)
 pairs_with: "[[Day-286 - More Impediments]]"
 length_target_words: 1500
-length_actual_words: 865
+length_actual_words: 925
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. Recounted 2026-09-08: the stored figure of 865 OVERSTATED the pre-edit body, which measured 846; the reviewer pass then added 79 words splitting a bundled Friston badge (PRS-06 is Medium, PRS-18 is graded Speculative; the single 'formal' badge had sold the Speculative record as formal) and marking the direction-of-use step taken off PRS-18. Citation apparatus, not new argument."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling, PRS-18 widening a community)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace — licensing/blocking of role)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociative boundaries separating/joining)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
 evidence_strength_summary: "Friston coupling-preconditions formal; the impediments-as-boundary-conditions reading is conceptual; specific canonical impediments are historical-juridical, treated descriptively."
-length_ratio_to_target: 0.58
+length_ratio_to_target: 0.617
 mind_first_reframe: "The further impediments are a taxonomy of failed coupling-preconditions — prior saturation (vow), freedom-failure (abduction), and trust-failure (crime) — each making a new constitutive union impossible rather than merely illicit."
 central_theme_thread: "The impediments protect the seriousness of the project's central act: loving unity can be built only from free, available, trusting perspectives freely electing union, never extracted from an unfree or already-bound agent."
 tags: [synthesis, day/286, theme/boundary-conditions-on-coupling]
-last_qc_at: "2026-08-31T10:42:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T10:31:55"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 286 — More Impediments (Contemporary Parallel)
@@ -44,7 +44,8 @@ The project's loving unity is built only from free, available, trusting perspect
 
 ## Bridges
 
-- **Friston PRS-06 / PRS-18 (formal; juridical mapping speculative):** valid coupling needs free, available, mutually modeling agents — the structural reading of vow / abduction / crime impediments.
+- **Friston PRS-06 (formal; the record is graded Medium; juridical mapping speculative):** valid coupling needs free, available, mutually modeling agents — the structural reading of vow / abduction / crime impediments. This bullet's load-bearing leg.
+- **Friston PRS-18 (the record is graded *Speculative* in the register, and is cited here at that strength):** the band-width parameter governing what a community can assimilate. Note the direction of use — PRS-18 is written about *widening* a community's tolerance for outside evidence, and the inference drawn here, that the same parameter implies real conditions on admission, is this commentary's step off the record rather than something the record asserts.
 - **Levin PRS-08 (empirical at tissue scale):** the whole licenses roles and there are real bars — the biological analogue of a diriment impediment.
 - **Kastrup PRS-02 (metaphysical, speculative):** an already-fully-joined boundary has none free to relax — why a prior total vow forecloses a new union.
 - **Rohr PRS-7 (theological):** the bonds are constitutive relations, not contracts.
