@@ -10,13 +10,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-18 widening a community to engage rival traditions, PRS-06 multi-agent coherence)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric interface to collective intelligence, PRS-09 cognitive attribution across scales)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing, PRS-7 relationship ontologically prior)"
-  - "wiki/master/cross_program_index.md (community-widening / kinship-extension theme)"
+  - "wiki/master/cross_program_index.md — NO CROSS-NN id. Checked 2026-09-09: the index carries perspective-widening only in its Friston ZBS entry (the dispatch note under PRS-18, linking Friston to the Loughran/MacIntyre tradition-rivalry frame and to Fredrickson); there is no kinship-extension entry and no id to cite. Listed as a pointer, not an anchor."
 evidence_strength_summary: "Friston community-widening formal but socially speculative — and both Friston entries are the weakest cited here (PRS-18 Confidence Speculative; PRS-06 (Implicit)/Medium). The Levin and Rohr records are stronger but are not all of one kind: Levin PRS-17 (High) is measured work — bioelectric pattern memory as cognitive glue — while Levin PRS-09 (High) is the diverse-intelligence *framework* for when cognitive attribution is warranted, and Rohr PRS-01 (High) is theological where Rohr PRS-7 (Medium) is the weaker of the two Rohr anchors. Confidence and evidence-kind are tracked separately here on purpose. The incest-prohibition-as-bond-widening reading is anthropological/conceptual, partly empirically supported (exogamy literature) but not derived from the formal models."
 length_ratio_to_target: 0.654
 mind_first_reframe: "The consanguinity impediment is a community-widening mechanism — suppressing the easy near coupling to compel the bond-extending distant one — mirroring how collective intelligences stay open and coherent at larger scales."
 central_theme_thread: "The kin-rule is loving unity's missionary edge: love is forbidden to curl up among the already-near so that it must reach the stranger, moving the circle of union from clan toward universal communion."
 tags: [synthesis, day/284, theme/widening-the-circle-of-union]
-last_qc_at: "2026-09-01T04:22:54"
+last_qc_at: "2026-09-09T04:23:25"
 last_qc_outcome: "rewrote"
 ---
 

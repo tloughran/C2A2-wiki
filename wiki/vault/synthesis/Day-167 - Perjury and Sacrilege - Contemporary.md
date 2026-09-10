@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "Rohr canonical: 'The Universal Christ' on the sacramental as bearing the divine presence"
 evidence_strength_summary: "Costly-signaling theory (oath as binding commitment) is well-established game theory and behavioral biology. The neurobiology of trust-and-betrayal is empirical. The reading of sacrilege as violation of a community's symbolic infrastructure is interpretive but converges with research on ritual function in social cognition."
 tags: [synthesis, day/167, theme/costly-signal, theme/commitment, q/98, q/99]
-last_qc_at: "2026-09-01T14:33:37"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-09T12:22:41"
+last_qc_outcome: "pass"
 ---
 
 # Day 167 — Perjury and Sacrilege (Contemporary)

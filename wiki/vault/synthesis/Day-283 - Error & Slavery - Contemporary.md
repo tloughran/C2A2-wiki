@@ -3,7 +3,7 @@ day: 283
 title: Error & Slavery (Contemporary)
 pairs_with: "[[Day-283 - Error & Slavery]]"
 length_target_words: 1500
-length_actual_words: 915
+length_actual_words: 943
 length_tier: short
 length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
 karpathy_wiki_sources:
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales)"
 evidence_strength_summary: "Hoffman interface formal/speculative; Kastrup identity metaphysical; the error-of-person-voids-consent claim is conceptual; the servile-condition material is treated historically, not endorsed."
-length_ratio_to_target: 0.61
+length_ratio_to_target: 0.629
 mind_first_reframe: "Error voids marital consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — while mis-valued attributes of the right referent are tolerable error."
 central_theme_thread: "Marriage is undertaken across an irreducible epistemic gap — we consent to icons, never to the person seen whole — which is the central theme's 'fear and trembling' at the scale of the marrying pair."
 tags: [synthesis, day/283, theme/identity-tracking-and-consent]
-last_qc_at: "2026-08-31T22:29:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T22:28:00"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 283 — Error & Slavery (Contemporary Parallel)

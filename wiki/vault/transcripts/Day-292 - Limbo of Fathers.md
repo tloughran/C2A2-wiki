@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-292 - Limbo of Fathers - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/292, pars/suppl, q/69-70]
-last_qc_at: "2026-08-15T04:25:47"
+last_qc_at: "2026-09-09T00:23:34"
 last_qc_outcome: "pass"
 ---
 

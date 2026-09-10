@@ -16,8 +16,8 @@ length_ratio_to_target: 0.88
 mind_first_reframe: "Indissolubility is the natural signature of a bond constituted by an objective whose horizon is the whole life of the offspring; legitimacy is conferred standing within a community, not an intrinsic property of the child."
 central_theme_thread: "Standing-in-the-people — Wright's 'salvation as inclusion' — gets its first explicit run here: legitimacy is membership conferred by relation to a covenanted body, the small-scale rehearsal of the larger inclusion the project's loving unity consummates."
 tags: [synthesis, day/291, theme/bonds-as-long-horizon-objectives-and-conferred-standing]
-last_qc_at: "2026-08-31T22:29:59"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-08T22:28:01"
+last_qc_outcome: "pass"
 ---
 
 # Day 291 — Bill of Divorce (Contemporary Parallel)

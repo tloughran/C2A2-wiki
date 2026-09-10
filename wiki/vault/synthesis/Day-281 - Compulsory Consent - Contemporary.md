@@ -16,8 +16,8 @@ length_ratio_to_target: 0.838
 mind_first_reframe: "Coerced consent fails to constitute a marriage because a clamped state is not an act of the agent's own model; only freely selected policies couple agents into a real shared unit, so a forced configuration couples nothing."
 central_theme_thread: "The reverent self-determination of 'fear and trembling' is the opposite of coercive fear: loving unity must be chosen from within a perspective, never imposed on it from without."
 tags: [synthesis, day/281, theme/freedom-as-condition-of-union]
-last_qc_at: "2026-08-31T20:23:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-08T22:27:58"
+last_qc_outcome: "pass"
 ---
 
 # Day 281 — Compulsory Consent (Contemporary Parallel)

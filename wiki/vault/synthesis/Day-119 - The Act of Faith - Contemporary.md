@@ -3,10 +3,10 @@ day: 119
 title: The Act of Faith (Contemporary)
 pairs_with: "[[Day-119 - The Act of Faith]]"
 length_target_words: 3000
-length_actual_words: 2139
-length_ratio_to_target: 0.713
+length_actual_words: 2190
+length_ratio_to_target: 0.730
 length_tier: long
-length_note: "Long-tier transcript (3602w) but Q.2 a.1-3 develops as a single integrated architecture-claim — one act with three aspects, intellect/will unified under active-inference, faith's necessity above natural reason as Hoffman-interface structural consequence; commentary follows that integration rather than spreading across articles. Substantively complete in focused form; padding would dilute the single move."
+length_note: "RECOUNTED 2026-09-09: pre-edit body 2139 words, EXACT against the stored field; this run's Wright PRS-45 provenance caveat brought it to 2190 = ratio 0.730. Both figures recorded so the note cannot self-certify from a superseded number; the added words are apparatus, not argument. Long-tier transcript (3602w) but Q.2 a.1-3 develops as a single integrated architecture-claim — one act with three aspects, intellect/will unified under active-inference, faith's necessity above natural reason as Hoffman-interface structural consequence; commentary follows that integration rather than spreading across articles. Substantively complete in focused form; padding would dilute the single move."
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-11 Franciscan/second-person knowing — faith-as-knowledge-of-persons)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking / Interface Theory of Perception — the interface cannot represent what it compresses)"
@@ -19,7 +19,7 @@ evidence_strength_summary: "Augustine's 'think with assent' read as joint intell
 mind_first_reframe: "Faith is a single integrated active-inference operation by which a generative model containing the wider mind as a high-precision node is held — 'thinking with assent' is cognitive engagement and volitional commitment as one model-based act rather than two faculties; the necessity above natural reason follows from the interface's structural insufficiency to deliver what it presupposes."
 central_theme_thread: "Faith is where the central claim becomes operational at the personal level — the structural opening of the perspective-limited agent to what its interface cannot deliver but presupposes, the entry condition for cooperation with the wider mind that grace installed."
 tags: [synthesis, day/119, theme/faith, theme/epistemology]
-last_qc_at: "2026-09-01T12:27:06"
+last_qc_at: "2026-09-09T10:31:03"
 last_qc_outcome: "rewrote"
 ---
 
@@ -84,7 +84,7 @@ Loving unity as the computational telos requires faith as the entry condition. T
 - *`traditions/hoffman/prs_triplets.md` — PRS-03 (perception fitness-tracking / Interface Theory of Perception)* — the interface cannot represent what it compresses; faith's necessity above natural reason is the structural consequence. (Formal.)
 - *`traditions/stump/prs_triplets.md` — PRS-11 (Tom Loughran's PRS-form record of Stump's Franciscan/second-person "knowledge of persons")* — faith as relational knowing, not propositional believing; preserves the cognitive character while explaining the firmness-without-sight structure. (Philosophical; high in field.)
 - *PRS-11 in the McGilchrist-tradition wiki (religion and right-hemisphere epistemic access, **High**) with PRS-01 (hemispheric asymmetry and cultural impoverishment, **High**)* — PRS-11 is the exact record for this bullet: its Problem is that modernity has dismantled the religious forms of attention that made certain kinds of knowing available, and its Resource applies the neurological account to religious practice. PRS-01 supplies the underlying asymmetry it rests on. The neural style of relating-by-presence is what the act of faith requires; it complements the left-hemisphere representational mode rather than competing with it. (Empirical with field contestation; both records High.) *The tradition was previously named here with a bare `wiki.md` path and no id — the same absence Day 109 in this vault was repaired for on 2026-09-01.*
-- *PRS-45 in the Wright-tradition wiki (corporate faith — pistis constituted partly at community level, **Medium**), read with* Paul and the Faithfulness of God — pistis as covenant-fidelity, not propositional assent. The relational reading of faith is scripturally anchored. **The Wright node exists and carries 59 records; the canonical-work fallback is no longer the first move.** (Historical-theological; the record is Medium, and "high in field" describes the standing of Wright's reading of *pistis*, not the grade of the record.)
+- *PRS-45 in the Wright-tradition wiki (corporate faith — pistis constituted partly at community level, **Medium**), read with* Paul and the Faithfulness of God — pistis as covenant-fidelity, not propositional assent. The relational reading of faith is scripturally anchored. **The Wright node exists and carries 59 records; the canonical-work fallback is no longer the first move.** **Provenance caveat, added 2026-09-09:** PRS-45's own Evidence line records that the source audio was *not retrieved* — "corporate faith" is named in the verified episode description, but the Mark 2:5 identification is the proposal's inference, not the source's claim, and the register asks that this be verified before the triplet is leaned on. Nothing in this commentary rests on that identification. (Historical-theological; the record is Medium, and "high in field" describes the standing of Wright's reading of *pistis*, not the grade of the record.)
 
 ## Where this leaves us
 

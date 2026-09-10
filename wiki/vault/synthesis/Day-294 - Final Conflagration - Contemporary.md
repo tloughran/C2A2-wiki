@@ -3,21 +3,21 @@ day: 294
 title: Final Conflagration (Contemporary)
 pairs_with: "[[Day-294 - Final Conflagration]]"
 length_target_words: 1500
-length_actual_words: 1131
+length_actual_words: 1316
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/carroll/prs_triplets.md (PRS-01 ontological closure vs. emergence / poetic naturalism; PRS-11 emergence taxonomy; PRS-13 timeless universe, arrow emerging from the wavefunction; PRS-15 Past Hypothesis, the low-entropy boundary condition grounding the thermodynamic arrow)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological; canonical: new creation, Surprised by Hope)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-04 resurrection as historical and cosmological, Confidence Medium; PRS-06 the new-creation reframe replacing miracle-as-law-violation, Confidence High; PRS-05 salvation as incorporation into the people among whom God comes home, not relocation of souls, Confidence High — PRS-05/06 added at QC 2026-09-09, which is where the new-creation load actually sits; canonical: Surprised by Hope)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-02 the disorder necessary for growth; PRS-03 withdrawn at QC 2026-08-17 — its body warrants multi-tradition inquiry, not cosmic-body Christology; the cosmic-Christ reading is canonical Rohr, The Universal Christ)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 target-state restoration without loss of substance)"
 evidence_strength_summary: "The 'transformation not annihilation' reading is empirical/physical (Carroll, thermodynamics — matter conserved, state changed); the new-creation reading is scriptural-scholarly (Wright); the one-fire-perspective-relative-effect point is conceptual; the cosmic-restoration register is theological (Rohr); Aquinas's own physics is flagged obsolete by the speaker."
-length_note: "Runs under the short tier (1131 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recount at QC 2026-08-17: the 1039 figure verified exactly against the body before this run's edit — the one-directional understatement defect does NOT fire here; 1039 -> 1131 is this run's Rohr-bullet correction text."
-length_ratio_to_target: 0.754
+length_note: "Runs under the short tier: written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recount at QC 2026-08-17: the 1039 figure verified exactly against the body; 1039 -> 1131 was that run's Rohr-bullet correction text. RECOUNTED 2026-09-09, and the stored field had gone stale WITHOUT the note noticing: the true body count before this run's edit was 1152, not the 1131 recorded — a 21-word drift left by a later touch that updated prose and not arithmetic. Post-repair the body is 1316 (ratio 0.877); the +164 is the Wright PRS-04 badge-and-anchoring note, i.e. apparatus, not argument. No claim was added or altered. The lesson worth keeping: a length_note that certifies a figure does not keep that figure true, so the note must be re-derived from the body rather than trusted."
+length_ratio_to_target: 0.877
 mind_first_reframe: "The conflagration is the renewal of one conserved cosmos — matter changed in state, not destroyed; the same purifying process is felt differently by different perspectives according to what each contains to be purged."
 central_theme_thread: "One process, perspective-relative effect: the fire that is mere transformation 'from outside' is pain or peace 'from inside' depending on the perspective's own state — the project's individuation-by-limitation written across the whole cosmos at its renewal."
 tags: [synthesis, day/294, theme/cosmic-renewal-as-transformation-not-annihilation]
-last_qc_at: "2026-09-01T02:29:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-09T02:30:38"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 294 — Final Conflagration (Contemporary Parallel)
@@ -45,7 +45,7 @@ The conflagration is the project's individuation-by-limitation written across th
 ## Bridges
 
 - **Carroll PRS-01 / PRS-11 / PRS-13 / PRS-15 (empirical/physical):** conservation and the thermodynamic arrow make "transformation not annihilation" and "the heavens set at rest" the natural modern readings.
-- **Wright PRS-04 (scriptural; load-bearing):** new creation — renewal of the present cosmos, not escape from matter — recovers Aquinas's core intuition against the popular distortion.
+- **Wright PRS-04 (scriptural, *Confidence: Medium*; load-bearing here) + PRS-05 / PRS-06 (both *Confidence: High*):** new creation — renewal of the present cosmos, not escape from matter — recovers Aquinas's core intuition against the popular distortion. *Badge and anchoring note, body-verified at QC 2026-09-09:* this bullet previously stated no confidence grade at all, and PRS-04 is the file's only Medium record among a bridge list otherwise resting on High ones — the silence read as strength it does not have. PRS-04's own body is narrower than the use made of it: it argues that historical method must be willing to consider explanations exceeding naturalism, with "resurrection as historical *and cosmological*" supplying only the cosmic reach. The two records that carry "new creation" proper are **PRS-06** (the science/faith conflict dissolves once *new creation* replaces *miracle-as-law-violation*) and **PRS-05** (salvation is incorporation into the people among whom God comes home, *not relocation of souls* — which is precisely the "not escape from matter" clause). PRS-04 is kept because its cosmological reach is genuinely in play; the load it was silently carrying alone is redistributed to the two High records that hold it.
 - **Rohr PRS-02 (theological):** the disorder necessary for growth — conflagration as purgative transformation rather than punitive erasure. *Correction, body-verified:* this bullet previously also claimed **PRS-03** for "the renewed cosmos as the body in which Christ is all in all." Read at the body, PRS-03's Solution is a *warrant for multi-tradition inquiry* — the divine pattern present in all creation, so encountering truth through biology, mathematics and contemplation at once is not eclecticism. That is a methodological claim, not a cosmic-body Christology, and the cosmic-Christ reading here is canonical Rohr (*The Universal Christ*), not that triplet. The id is withdrawn rather than repointed; the Rohr register has no consummated-cosmos entry.
 - **Levin PRS-01 (empirical figure):** return to proper form after perturbation without loss of substance — the incandescent iron, biologized.
 

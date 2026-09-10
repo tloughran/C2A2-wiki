@@ -3,10 +3,10 @@ day: 295
 title: The Necessity of Resurrection (Contemporary)
 pairs_with: "[[Day-295 - The Necessity of Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1235
+length_actual_words: 1311
 length_tier: short
-length_note: "Runs ~18% under the short tier (1235 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after the Levin PRS-01/03/04 badge was split into three bullets with their actual standings (+166 words on the stored 1069)."
-length_ratio_to_target: 0.823
+length_note: "Runs ~13% under the short tier (1311 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after the Levin PRS-01/03/04 badge was split into three bullets with their actual standings (+166 words on the stored 1069) -> 1235, which this run's independent recount confirmed EXACT. The count was then re-staled by this run's own Wright PRS-04 badge repair (+76 words, 1235 -> 1311, ratio 0.823 -> 0.874); the sequence is recorded here so the note cannot self-certify from a superseded figure."
+length_ratio_to_target: 0.874
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control / form as target-state memory; PRS-03 morphological attractor formalism; PRS-04 substrate-independent basal cognition)"
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-04 observer-dependent spacetime; PRS-01 hard-problem transformation)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Form as a real, memory-bearing organizing pattern is
 mind_first_reframe: "The soul is the form of the body — an organizing pattern that is real and constitutive, not a ghost in a husk; a perspective without its body is genuinely incomplete, so its completion requires re-embodiment, not escape."
 central_theme_thread: "Embodiment is constitutive of the human perspective, not a limitation to be shed; loving unity is the union of embodied perspectives perfected, which is exactly why the hope is resurrection of the body and not the soul's flight from it."
 tags: [synthesis, day/295, theme/soul-as-form-and-the-necessity-of-re-embodiment]
-last_qc_at: "2026-08-31T22:30:00"
+last_qc_at: "2026-09-09T00:23:48"
 last_qc_outcome: "rewrote"
 ---
 
@@ -49,7 +49,7 @@ The project's loving unity is the union of *embodied, perspectival* agents — a
 - **Levin PRS-04 (Label (Implicit), Confidence Medium):** substrate-independent basal cognition — the network's reconstruction of Levin's position rather than a measured result; cited for the claim that the organizing work of form is not tied to a neural substrate.
 - **Hoffman PRS-04 / PRS-01 (formal-to-speculative):** the body as the interface a perspective needs to act and know — completion requires its restoration.
 - **Kastrup PRS-02 (philosophical):** the same individuated perspective persists across death to be re-embodied.
-- **Wright PRS-04 (scriptural; load-bearing):** the earliest Christian hope is *bodily* resurrection, not a disembodied afterlife — the ground truth under Aquinas's "no beatitude in the separated soul."
+- **Wright PRS-04 (scriptural, Confidence Medium; load-bearing here, and the lowest-graded record this file leans on):** the earliest Christian hope is *bodily* resurrection, not a disembodied afterlife — the ground truth under Aquinas's "no beatitude in the separated soul." Two qualifications, since this bullet carries weight. The record's *Problem* and *Solution* are about historical method — whether historiography may entertain an explanation that exceeds naturalism — and the bodily-resurrection claim sits in its *Resource* line; the fuller case for what the earliest Christians meant is carried canonically by *The Resurrection of the Son of God*, cited above, rather than by the record's own argument.
 
 ## Where this leaves us
 

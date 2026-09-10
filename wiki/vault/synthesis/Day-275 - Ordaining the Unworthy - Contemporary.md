@@ -3,9 +3,9 @@ day: 275
 title: Ordaining the Unworthy (Contemporary)
 pairs_with: "[[Day-275 - Ordaining the Unworthy]]"
 length_target_words: 1500
-length_actual_words: 1163
-length_ratio_to_target: 0.78
-length_note: "Short tier — Q.35–36 (effect of Order; qualities of ordinands) get compact treatment in Habash's walk-through; the substrate-independence engagement is complete, not padded. Within ±25%; under-length by design, not a silent breach."
+length_actual_words: 1224
+length_ratio_to_target: 0.816
+length_note: "Short tier — Q.35–36 (effect of Order; qualities of ordinands) get compact treatment in Habash's walk-through; the substrate-independence engagement is complete, not padded. Within ±25%; under-length by design, not a silent breach. RECOUNTED 2026-09-09 (layout-aware, body-only, frontmatter stripped, regex [A-Za-z']+) on an UNTOUCHED file: 1163 -> 1224, +61 (5.2%), ratio 0.78 -> 0.816. The stored field understated, the recorded one-directional direction; the ±25% judgement above is restated from the corrected count, not from the superseded one."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-07 FEP substrate-independence — function defined by structural/boundary conditions, not the bearer's interior; PRS-06 the collective agent and its roles)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "The role-independent-of-bearer claim is formal (Fris
 mind_first_reframe: "The validity of an unworthy minister's act is read against substrate-independence: the office is a structural role whose function is fixed by the collective's boundary conditions (Friston PRS-07), not by the bearer's interior state — while the sacrament's claim that grace truly flows is marked as theological."
 central_theme_thread: "Even a deeply limited, compromised perspective can be a faithful conduit of guidance from the whole; the grace channeled exceeds what the channel itself perceives or deserves."
 tags: [synthesis, day/275, theme/the-office-exceeds-its-bearer]
-last_qc_at: "2026-09-01T00:22:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-09T00:23:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 275 — Ordaining the Unworthy (Contemporary)

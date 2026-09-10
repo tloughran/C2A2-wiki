@@ -8,7 +8,7 @@ length_ratio_to_target: 0.70
 length_note: "Short tier — the repetition/character question and the opening of Order (Q.33–34) are brief in Habash's treatment; the contemporary engagement on durable role-differentiation is complete, not padded."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/levin/prs_triplets.md (PRS-01 bioelectric anatomical target states as morphogenetic memory — a stable imprinted target; PRS-08 anatomical morphospace)"
+  - "traditions/levin/prs_triplets.md (PRS-01 bioelectric anatomical target states as morphogenetic memory — a stable imprinted target)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — role-differentiation within the collective agent for joint inference)"
   - "traditions/rohr/prs_triplets.md (PRS-07 perichoretic relation — differentiation as gift-and-receipt, not domination)"
   - "traditions/wright/prs_triplets.md (PRS-32 — roles individuated by call, gift, and commission; members differentiated by function within one composite agent, not ranked by category; 1 Cor 12)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "Role-differentiation within a collective agent is fo
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-08-31T22:29:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-08T22:27:59"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 274 — Holy Orders (Contemporary)

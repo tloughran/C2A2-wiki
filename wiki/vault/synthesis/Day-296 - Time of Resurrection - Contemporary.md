@@ -16,8 +16,8 @@ length_ratio_to_target: 0.820
 mind_first_reframe: "The matter has no claim on the soul; an extrinsic organizing principle selects which matter realizes the form — identity rides the pattern and its ordination, never the atoms. The day is hidden by design, to keep every perspective awake."
 central_theme_thread: "Aquinas says outright that the ashes have no natural inclination to the soul — identity is not in the matter but in the principle that orders it; and the hour is hidden precisely so that every limited perspective stays watchful: epistemic limitation deployed for the agent's good."
 tags: [synthesis, day/296, theme/identity-rides-the-organizing-principle-not-the-matter]
-last_qc_at: "2026-09-01T00:23:57"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-09T00:23:20"
+last_qc_outcome: "pass"
 ---
 
 # Day 296 — Time of Resurrection (Contemporary Parallel)

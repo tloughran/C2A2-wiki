@@ -5,7 +5,7 @@ pairs_with: "[[Day-292 - Limbo of Fathers]]"
 length_target_words: 2200
 length_actual_words: 1287
 length_tier: medium
-length_note: "Runs ~48% under the medium tier (1148 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach."
+length_note: "Runs ~42% under the medium tier (1287 vs 2200): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Note corrected 2026-09-09: it previously read '~48% under (1148 vs 2200)', a superseded count that no longer matched the length_actual_words field beside it (1287, recount-confirmed exact this run). Restated so the note cannot self-certify from a stale figure."
 length_ratio_to_target: 0.585
 karpathy_wiki_sources:
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; PRS-08 the daimon as principle of individuation)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "The 'place = state, not location' reading is concept
 mind_first_reframe: "For a non-spatial perspective, 'place' just is its state of relation to the whole; capacities lost with the body persist 'radically' as a pattern that can re-express, not as a ghost retaining organs."
 central_theme_thread: "Death strips a perspective to its barest individuation — the limit-case of the project's thesis that perspectives are individuated by what they cannot yet see; the limbo of the fathers (rest without vision, resolved by Christ) is inaugurated eschatology made vivid."
 tags: [synthesis, day/292, theme/place-as-state-and-identity-through-substrate-loss]
-last_qc_at: "2026-09-01T00:23:13"
+last_qc_at: "2026-09-09T00:23:34"
 last_qc_outcome: "rewrote"
 ---
 

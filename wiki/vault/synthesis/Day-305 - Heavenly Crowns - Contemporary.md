@@ -3,10 +3,10 @@ day: 305
 title: Heavenly Crowns (Contemporary)
 pairs_with: "[[Day-305 - Heavenly Crowns]]"
 length_target_words: 2200
-length_actual_words: 1587
-length_ratio_to_target: 0.721
+length_actual_words: 1614
+length_ratio_to_target: 0.734
 length_tier: medium
-length_note: "Body 1440 words vs ~2200 tier guideline (-35%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
+length_note: "Body 1614 words vs ~2200 tier guideline (-27%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. (Recounted 2026-09-09: the note previously certified from 1440, a figure matching neither length_actual_words nor the true body count; length_ratio_to_target 0.721 was already correct. Body then grew to 1614 (ratio 0.734) in the same pass by the Kastrup PRS-08 badge repair; both figures recorded so this note cannot self-certify from the superseded one.)"
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love beyond sentiment; PRS-08 high-quality listening as resonance enabler; PRS-14 conducive conditions)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-18 widening a community to engage rival traditions)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Differentiated-reward-by-contribution read as formed
 mind_first_reframe: "The dowries and aureoles describe a community whose shared end (union with the whole) is reached through irreducibly differentiated contributions, with the highest — the doctor's crown — going to the agent who makes the truth modelable to other minds and so raises the coherence of the whole."
 central_theme_thread: "Individuation is not overcome in glory but crowned: each limited perspective is rewarded as the one it is, and the doctor's crown names the cooperative mechanism — informing one another — by which limited perspectives help each other toward the loving unity that is the telos."
 tags: [synthesis, day/305, theme/crown-for-informing-others]
-last_qc_at: "2026-09-01T04:23:56"
+last_qc_at: "2026-09-09T04:23:25"
 last_qc_outcome: "rewrote"
 ---
 
@@ -63,7 +63,7 @@ And the doctor's crown names the mechanism by which limited perspectives help on
 - **PRS-7 in the Rohr-tradition wiki / CROSS-005** — *perichoretic relation as basal; love/union fundamental* (theological/convergent; the Rohr record is *Confidence: Medium*, and CROSS-005 is an active cross-program analogy joining Fredrickson, Stump and Kastrup rather than a settled result). Reads the dowry's marriage figure as constituted belonging, not payment. (The register writes this record `PRS-7`, unpadded; it is the same entry.)
 - **PRS-02 + PRS-08 in the Fredrickson-tradition wiki** — *love beyond sentiment; high-quality listening as resonance enabler* (empirical). The embodied counterpart of fruition-answering-to-charity, and of the teacher's receptive art.
 - **PRS-02 in the Kastrup-tradition wiki** — *individual identity within monism*: one undivided consciousness experiencing multiple dissociated points of view, with individuality preserved as a real construct of that dissociation (philosophical; *Confidence: High* as a record, though the ontology it belongs to remains contested).
-- **PRS-08 in the Kastrup-tradition wiki** — *the Daimon as principle of individuation*: each alter is specifically characterized rather than generic, which is what actually underwrites "crowned as the one it is" (philosophical; *Confidence: Medium*, and the weaker of the two — named separately so the load-bearing claim is not read at PRS-02's standing).
+- **PRS-08 in the Kastrup-tradition wiki** — *the Daimon as principle of individuation*: each alter is specifically characterized rather than generic, which is what actually underwrites "crowned as the one it is" (philosophical; *Confidence: High*). It is named separately from PRS-02 not because it stands weaker — the register grades both **High** — but because it does a different job: PRS-02 accounts for why perspectives are *separate*, PRS-08 for why each is *specifically itself*, and only the second carries the load-bearing claim here.
 
 ## Where this leaves us
 
