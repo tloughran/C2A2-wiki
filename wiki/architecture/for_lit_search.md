@@ -20727,3 +20727,156 @@ PRESUMPTION-935:
 `*.bak.20260908-pre-14eod`.*
 
 ---
+
+## Intake — 2026-09-09 evening (14a/14b)
+
+**Routed this cycle: 6 of 20 minted.** Queue depth is the reason for the ratio, and it is measured, not
+estimated: 2,117 bare `[QUEUED]` items before this append, oldest 2026-07-05 (66 days); OPEN-117 remains
+open at 63 days and keeps the backlog figure ambiguous by construction. Items are routed only where the
+literature can answer something the estate cannot answer itself for less.
+
+[ASSUMPTION] ASSUMPTION-1297: Filing a constructed cross-tradition bridge as "to be attacked, not
+adopted", with its stated falsifiers travelling attached to the record, is an adequate guard against
+premature adoption.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — PARTIALLY-SUPPORTED (Moderate conditional / Weak as
+    stated): support runs only through an OBLIGED READER (in-principle acceptance), which the estate
+    lacks] [SEARCHED-15b: 2026-09-10 — CHALLENGED (Strong): Hsiao & Schneider 2021, 5.4% of 13,252
+    post-retraction citation contexts acknowledge the retraction; Nemeth on assigned devil's advocacy]
+    [DISPOSITIONED-15c: 2026-09-10 — REVISE (REVISE-445, High, consolidated), DISPOSITION-922; no
+    premise minted, PREMISE-188/177/107 already hold every clause; Nemeth limb carried inside the
+    REVISE and monitored at MONITOR-599]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Search strategy: adversarial collaboration and self-red-teaming; preregistration of falsification
+    criteria and whether preregistered falsifiers are subsequently tested; the fate of hypotheses labelled
+    provisional in a corpus; devil's-advocate assignment efficacy.
+  Note for 15a/15b: the estate's demonstrated failure mode this week is that tagged records are written
+    and not read (PREMISE-107's defect, named three times in the 00:40 pipeline run of the same day).
+    A search that returns "labelling works" without addressing whether the label is subsequently *read*
+    does not answer this item. Check `validated_premises.md` before searching — four of five items in the
+    last cycle were already answered there.
+
+[ASSUMPTION] ASSUMPTION-1303: A gate whose actionable rate is around 2% (418 hits, single-digit
+actionable) is a gate that will stop being read, and the remedy is threshold amendment.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — PARTIALLY-SUPPORTED: limb 1 SUPPORTED (Strong, Bessey
+    et al. 2010 VERIFIED full PDF — >30% FP and people ignore the tool; the estate is at ~98%) / limb 2
+    PARTIALLY-SUPPORTED (Moderate)] [SEARCHED-15b: 2026-09-10 — PARTIALLY-CHALLENGED (Moderate): Strong
+    against the remedy, NONE against the diagnosis; gates at 4-27% PPV are sustained for decades]
+    [DISPOSITIONED-15c: 2026-09-10 — INCORPORATE, limb-split (PREMISE-201, Moderate-High);
+    the bare "remedy is threshold amendment" claim explicitly NOT adopted; DISPOSITION-923; residue at
+    MONITOR-598]
+  Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated)
+  Search strategy: alarm fatigue and alert burden thresholds; precision/positive-predictive-value floors
+    for sustained human attention to automated warnings; static-analysis and monitoring false-positive
+    literature; desensitisation curves.
+  Note for 15a/15b: route the *threshold* question only. The prior question — whether mtime can detect
+    this quantity at all — is PRESUMPTION-946 and is settled in-house, not by search. PREMISE-200 is
+    ACTIVE on it already.
+
+[PRESUMPTION] PRESUMPTION-939: A defect logged is a defect contained — writing a FINDING is itself the
+control that prevents an unlicensed act becoming precedent.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — NO-SUPPORT-FOUND (None) as stated / Moderate for a
+    conditional: aviation MEL is the one containing regime and it names the enabling conditions —
+    deferrability, restriction, and a deadline whose expiry grounds the aircraft] [SEARCHED-15b:
+    2026-09-10 — CHALLENGED (Strong): Vaughan — the documentation was the medium of normalisation, not
+    the barrier; the precedent limb fails harder than the containment limb] [DISPOSITIONED-15c:
+    2026-09-10 — REVISE (REVISE-445, High, consolidated), DISPOSITION-924; no premise minted,
+    PREMISE-183(1)/116/151 cover and PREMISE-138 bars re-minting; searched jointly with PRESUMPTION-941
+    as directed]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Search strategy: normalization of deviance; documented-exception drift; efficacy of deviation and
+    incident logging as a control when the review loop is unserved; "temporary" workaround persistence.
+  Note for 15a/15b: shares a literature with PRESUMPTION-941 below. Run one search, report separately.
+
+[PRESUMPTION] PRESUMPTION-940: A configuration fix, once applied, stays applied — remediation needs
+verification at application but not thereafter.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — NO-SUPPORT-FOUND (None), NOVELTY-FLAG unfavourable;
+    plus a genuine MEASUREMENT GAP — no published recurrence or decay rate for applied configuration
+    fixes exists] [SEARCHED-15b: 2026-09-10 — CHALLENGED (Strong): ISO 9001:2015 cl. 10.2 and 21 CFR
+    820.100 mandate a SECOND effectiveness verification; an app that rewrites config from an in-process
+    copy is an active competing writer, so a fix's expected lifetime is one relaunch]
+    [DISPOSITIONED-15c: 2026-09-10 — REVISE (REVISE-445, High, consolidated), DISPOSITION-925; no
+    premise minted, PREMISE-171/183(1)/143/200 cover; measurement gap routed to REVISE-445 action (2)]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Search strategy: configuration drift and remediation regression; corrective-action verification and
+    effectiveness checks (CAPA); decay rates of applied fixes; whether closed-loop verification changes
+    recurrence rates.
+  Risk if wrong: Critical — all 218 revision flags become a record of intentions rather than states.
+
+[PRESUMPTION] PRESUMPTION-941: An averted harm is not an event — "damage is nil, but by luck" closes an
+item rather than opening one.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — NO-SUPPORT-FOUND (Weak) as stated / PARTIALLY-SUPPORTED
+    (Moderate) for two bounded principles: Yorio & Moore 2018 VERIFIED, 25,000+ establishments — no-injury
+    events ARE associated with subsequent fatality] [SEARCHED-15b: 2026-09-10 — CHALLENGED (Strong):
+    on the accident-precursor definition, "damage is nil, but by luck" is the criterion for OPENING]
+    [DISPOSITIONED-15c: 2026-09-10 — INCORPORATE the corrective (PREMISE-202, Moderate-High);
+    DISPOSITION-926. Live exposure NOT closed with it: three destructive-write events in eleven days,
+    none opened — REVISE-446, High]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Search strategy: near-miss reporting and its relation to realised-harm rates; outcome-severity bias in
+    incident classification and in judgements of decision quality; whether severity-filtered reporting
+    systems under-learn.
+  Note for 15a/15b: overlaps PRESUMPTION-939's search. Declared so the same query is not billed twice.
+  Related: OPEN-189.
+
+[PRESUMPTION] PRESUMPTION-944: A report delivered to the designer in speech is not an artefact, and so is
+not subject to the verification discipline applied to files.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-10 — NO-SUPPORT-FOUND (None), NOVELTY-FLAG unfavourable;
+    the one permissive regime (42 CFR 482.24) imposes a STRICTER record requirement, not a looser one]
+    [SEARCHED-15b: 2026-09-10 — CHALLENGED (Strong): RCSEng 2007 VERIFIED full text — verbal-only
+    retained 2.5% after five cycles vs 99% printed, with NO selectivity; TofuEval Table 2 VERIFIED]
+    [DISPOSITIONED-15c: 2026-09-10 — INCORPORATE (PREMISE-203, Moderate-High), DISPOSITION-927; 15c
+    arbitrated a disagreement between the directions on register coverage and SUSTAINED 15b — the
+    general rule is held, the channel clause is not. Systemic membership retained in REVISE-445]
+  Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
+  Search strategy: verification asymmetry between formal artefacts and briefings/handoffs; reliability of
+    automated status summaries at the human interface; "all clear" reporting and absence-of-evidence
+    failures; shift-handover communication error literature.
+  Risk if wrong: Critical — two consecutive days of false morning reports to Tom (ASSUMPTION-1293,
+    ASSUMPTION-1300) on the only channel that reaches him.
+  Note for 15a/15b: the 09-09 SYSTEMIC-RISK-FLAG "absence-read-as-all-clear" from this morning's pipeline
+    is the same shape. Read it before searching; the estate may already hold the answer.
+
+---
+
+**NOT ROUTED, declared (14 of 20 minted this run).**
+
+*In-house or already tested — no literature question:*
+- **ASSUMPTION-1294** (over-deletion; nil damage by luck) — verified in-run by regeneration; the repair
+  is one narrowed glob. The *class* question is PRESUMPTION-941, routed.
+- **ASSUMPTION-1295** (ingest licensed by ID alignment) — framework/licensing question for Tom; its
+  testable limb travels inside PRESUMPTION-939.
+- **ASSUMPTION-1296** (review gate silent; hunt side fine) — measured three ways today. The live question
+  is OPEN-190, a ruling.
+- **ASSUMPTION-1298** (`permissionMode` absent six days; app rewrites config from memory) — one quit,
+  one write, one relaunch. Generalised as PRESUMPTION-940, routed.
+- **ASSUMPTION-1299** (telemetry refresh structurally unable to do its job; 6.17 GB vs 4.2 GB) —
+  arithmetic, fifth day unchanged. Needs a `--no-copy` path or a retitle, not a search. See OPEN-191.
+- **ASSUMPTION-1300** ("Otherwise nothing broken") — falsified in-run against four same-morning sources.
+- **ASSUMPTION-1301** (confidence badge reports the commentator's confidence in a transfer, not the
+  register's in the record) — tested in-house at n=3 in one queue on one day. Narrow; the C2A2-side
+  action is to check whether any C2A2 metric reads badges, which is a `grep`.
+- **ASSUMPTION-1302** (`length_actual_words` has crossed from mis-reporting into falsifying) — three
+  dated instances in twelve hours; recompute-and-diff settles it. Recorded here mainly as the estate's
+  first *priced* deferral.
+- **PRESUMPTION-938** (self-criticism travels downstream with results) — the measurement is a diff
+  between each run's terminal report and the artefacts that summarise it. Today's count is 0 of 3, taken
+  by hand this run; mechanising it is cheap.
+- **PRESUMPTION-942** (a permission stall is a permission problem) — enumerate scheduled tasks by whether
+  any path needs an interactive grant. OPEN-191 asks the ruling.
+- **PRESUMPTION-943** (`pending/` is a queue) — in-house first: service events per unit time is currently
+  0 for 30 days, and the age distribution is one `stat`. The queue-abandonment literature is a real second
+  limb but the count comes first and may make it moot. OPEN-190.
+- **PRESUMPTION-945** (this pipeline's scope is the estate, not the project) — framework commitment. Not
+  a literature question; the informing measurement is a count of items by originating project. Note four
+  of tonight's eleven assumptions are cross-project, and they include the two sharpest.
+- **PRESUMPTION-946** (a noisy gate is a mis-tuned gate) — decisive in-house: ask whether any mtime
+  threshold separates the 418 hits from the single-digit actionable set. If not, the gate is not
+  mis-tuned. PREMISE-200 is already ACTIVE on the prior question.
+
+*Standing declaration, unchanged:* the 15d re-trigger lane was unserved for a fifth consecutive cycle as
+of this morning's pipeline run; 168 `[RE-TRIGGER by 15d]` items are untagged, oldest 2026-07-05.
+
+*Intake written by the 14a/14b evening run, 2026-09-09 ~23:55 EDT. Registers snapshotted as
+`*.bak.20260909-pre-14eod`.*
+
+---

@@ -1151,3 +1151,22 @@ flag stating that unmeasured mechanisms accrue unearned credit, applied that jud
 attached no owner to any of the four.*
 
 *(14a does not make decisions.)*
+
+---
+
+*2026-09-09 (evening run, 14a) — no new decisions. `decisions.md` remains at DECISION-083 (2026-08-27):
+**thirteen days**, and the proposal review channel that feeds it has been silent since 2026-08-07 —
+**thirty-three days**, with `pending/` at 36. In the same twenty-four hours: +3 REVISE (442–444), +5
+DISPOSITION (917–921), **+0 PREMISE (declared, with reasons — four of five items searched were already
+answered in the register)**, +1 SYSTEMIC-RISK-FLAG, +1 CROSS (131, the network's first authored bridge),
++3 proposals, +11 ASSUMPTION, +9 PRESUMPTION. **Nine rulings are now owed and named:** REVISE-436's FAIL
+LOUD binary (sixth cycle unruled), the WATCH-002/003 audit question, OPEN-185, OPEN-186, OPEN-187,
+OPEN-188, and this run's OPEN-189 (a near-miss register), OPEN-190 (at what age a pending proposal stops
+being pending), OPEN-191 (whether a task that cannot complete unattended should be scheduled unattended).
+Two rulings were again made under delegation today and recorded outside the register — the daily run's
+ingest, licensed by ID alignment rather than by approval (ASSUMPTION-1295), and its decision to proceed
+rather than reverse. That gap remains filed as OPEN-174. PRESUMPTION-939 asks the register-level question
+underneath it: whether logging an unlicensed act is being treated as the control that prevents it becoming
+precedent, in an estate whose only reader of such logs stopped thirteen days ago.*
+
+*(14a does not make decisions.)*

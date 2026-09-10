@@ -5313,3 +5313,49 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-09.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-10
+
+**Second consecutive idle run on its own items — but not an idle vault. An ingest run fired last night, and it re-affirmed the held card using a retrieval target that WATCH-002 retired two days earlier.** Nothing due, nothing in intake, nothing moved. One new cross-link recorded for Tom.
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: 1 file, `2026-04-21_carroll_singer-mindscape-351.md` — the WATCH-001 tombstone (`status: superseded`, `tracked_by: agent-16`, `tracking_id: WATCH-001`, resolved 2026-05-12, carries its `[TRACKED-16: 2026-05-05]` tag). **0 new, 0 untracked.** No item required tagging this run.
+- Channel 2 (agent-exchange deferrals): vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and the agent brief: **0 matches.** Channel unexercised since raised 2026-08-23 — 18 days.
+- Channel 3 (human watch requests): **0 visible — channel deaf, seventh day running.** Latest file in `architecture/daily_sync/chat_to_cowork/` is still `2026-09-08_chat_summary.md`; no 09-09 or 09-10 summary exists. Blind spot now spans **09-03 through 09-09**.
+
+**Condition checks (Step 3): 0 due, 0 executed.**
+- **WATCH-003** — weekly cadence, last checked 2026-09-08, **next due 2026-09-15**. Counter stays at **9**.
+- Off-cadence trigger tested (the only thing that would justify an early check): `review/archive/` still **18** files, latest still `2026-08-27_decisions.md`. No decision file written since the 08-27 pass, so no later disposition on PROP-2026-07-19-001 can exist and an early check could only reproduce the 09-08 answer. Not run.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**State change in the vault, relevant to the INGESTION-RISK FLAG — an ingest run fired 2026-09-09 22:00 (`PROCESSED_LOG.md` 949 → 979 lines).** Checked because the held card sits in its path.
+- **The held card was held again, correctly.** `2026-08-14_wright_who-is-this-god-admirato.md` (PROP-2026-08-14-033) is logged as **"Not processed, on purpose, and still open"**, with the card's own "Do not ingest the conjectures" instruction quoted, and deliberately **not** re-listed with a yield token so the id stays OPEN in `scripts/ingest_ledger.py` (the FINDING-079 lesson, applied for the second consecutive run). **Still no unverified Wright triplets in the wiki.** The flag remains open-but-quiescent; the 09-02 downgrade stands, now with a second independent confirmation.
+- **NEW, and the one actionable finding of this run: the ingest layer does not know WATCH-002 resolved.** The 09-09 entry states the retrieval target as *"the Admirato / KSBJ* Between Beliefs *archive, mid-July 2026"* — i.e. the publisher surface. That surface was **retired as a route on 2026-09-08**: publisher show notes were recovered from the Apple Podcasts feed (`id1867302876?i=1000776861203`, "NT Wright: Who is the God of the Bible?", 2026-07-15, 46 min) and are archived verbatim at `resolved/2026-09-08_WATCH-002.md`. The ingest ledger is therefore holding a card open against a retrieval target that has already been partly satisfied, and will keep doing so every run until someone tells it. **Cost to fix: one line in the next ingest log or on the card, pointing at the resolved archive.** Agent 16 has not written it — `inbox/` and `approved/` are outside what this agent edits, and the 09-08 run made the same abstention for the same reason. This is item 2 on the open list, now with a concrete mechanism attached.
+- **Evidence for the DEFERRED-CONDITION LEAKAGE ruling (open item 1).** The 09-09 run is the second clean instance of the behaviour option (b) would make mandatory: it identified a deferred-condition card, held it open rather than closing it zero-yield, and said why. Two runs is a practice, not yet a guarantee — both were hand-reasoned from prose, which is exactly the fragility the 09-02 revision named. The narrow fix (key the ingest step on `content_verified` rather than on authorial prose) is unchanged and is now cheap to justify: the desired behaviour already exists and only needs to be made non-optional.
+
+**Stale items (Step 4): 1, unchanged.** WATCH-003, flagged 2026-08-25, **9** checks, human-dependent. One line from Tom on the INTEGRITY FLAG closes it and empties ACTIVE ITEMS. No item newly stale; no counters moved. WATCH-002's flag remains discharged by its 09-08 resolution.
+
+**Observation, not a watch.** The 09-09 ingest run logged **FINDING-085**: `2026-09-08_levin_virtue-as-external-setpoint.md` was ingested (+3: levin PRS-116, macintyre PRS-06, stump PRS-41) although it carries **no `proposal_id`**, never entered `pending/`, and was approved by nobody — the ledger cannot judge it, and the run licensed it on the circumstantial ground that its PRS numbers were each next-free. The run flagged this itself rather than letting it pass silently, which is the right handling. Recorded here only because it is the mirror image of the held Wright card: one file was refused for being unverified, another was admitted for being plausibly current, and neither decision came from a recorded disposition. **No deferred item exists, so no watch is opened** — this belongs to the ingestion-integrity thread, not to this tracker.
+
+**Census:** `pending/` **36** (+3 since 09-09 — all dated 09-09: 2 McGilchrist, 1 Kastrup, matching the specialist day) · `approved/` 378 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 18, latest `2026-08-27_decisions.md` · `PROCESSED_LOG.md` **979** lines (mtime 2026-09-09 22:00). **Review-pass gap: 14 days. Ingest gap: 1 day.**
+
+**The two gaps have decoupled.** As of 09-09 both were structural; ingestion has resumed and is current, review has not. The pending queue has grown every run this week (12 → 27 → 33 → 36) with no pass since 08-27. Not Agent 16's to fix and not a deferred item, so no watch opened — recorded because the INTEGRITY FLAG's root cause is a blanket pass over a long queue against a review page emitting position-based decision IDs, and the standing `tools/generate_review_page.py` ID fix matters more at 36 cards than at 12.
+
+**Agent 16 Status:** Operational. 0 checks due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15**.
+
+**Open for Tom (one item re-ranked — item 2 now has a one-line mechanism):**
+1. **Tell the ingest ledger that WATCH-002 resolved.** PROP-2026-08-14-033's retrieval target is recorded as the stale publisher surface; the show notes are in hand at `resolved/2026-09-08_WATCH-002.md`. One line on the card or in the next ingest log stops the card being re-held against an obsolete target every run.
+2. **Then decide PROP-2026-08-14-033 — still no attended session needed.** Rewrite the card from the recovered show notes (Speculative → Low/Medium, basis stated as show notes not audio), or deny on now-informed grounds.
+3. **DEFERRED-CONDITION LEAKAGE ruling** — option (b) is one line to the ingest step, and two consecutive runs have now demonstrated the target behaviour voluntarily.
+4. **One-line INTEGRITY FLAG ruling closes WATCH-003** — the last active item.
+5. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+6. **Systemic fix** — key the ingest step on the `content_verified` field rather than on authorial prose; filter `content_verified: false` out of en-bloc unread approval.
+7. **Run-log archival** — this file is now ~576 KiB and the RUN LOG is ~95% of it; it has already caused one downstream metric error (the "2,188 watching items" report of 09-03). Cheapest fix: split pre-2026-09-01 runs into `deferred/run_log_archive_2026H1.md`, leaving ACTIVE ITEMS + FLAGS + RESOLVED INDEX here.
+8. **Channel 2 question**, standing since 08-23 (18 days unexercised).
+9. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+10. **Chat→Cowork sync broken seven days running** — Channel 3 is deaf until the Chrome extension is reconnected or the in-app browser pane is granted standing access to claude.ai.
+
+---
+
+*Run completed 2026-09-10.*

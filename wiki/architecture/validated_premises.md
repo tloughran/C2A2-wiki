@@ -7208,3 +7208,200 @@ PREMISE-200:
   Re-check due: 2026-10-08 (Monthly)
   Status: ACTIVE
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; DISPOSITION-914
+
+---
+
+## 2026-09-10 — 15c INCORPORATE intake (2026-09-09 evening cohort)
+
+*Three premises minted from six dispositioned items. The other three items minted nothing and that is
+recorded as a finding, not an omission: ASSUMPTION-1297, PRESUMPTION-939 and PRESUMPTION-940 are each
+already denied by an ACTIVE premise, and minting them again is barred by PREMISE-138. See REVISE-445.*
+
+PREMISE-201:
+  Date validated: 2026-09-10
+  Source item: ASSUMPTION-1303 (DISPOSITION-923) — LIMB-SPLIT
+  Item type: ASSUMPTION (stated)
+  Statement: A GATE'S PRECISION HAS A NAMED ABANDONMENT BAND, AND AMENDING THE THRESHOLD IS NOT THE
+    INTERVENTION — THE INTERVENTION IS AMENDMENT PAIRED WITH A RETAINED MEASUREMENT OF WHAT IS STILL
+    CAUGHT. Three clauses; this is the QUANTITY that PREMISE-121 was missing, not a restatement of it.
+    (1) THE BAND. In the closest domain analogue — static analysis over billions of lines of production
+    code — "more than 30% [false positives] easily cause problems. People ignore the tool," against a
+    stated commercial target below 20% for stable checkers (Bessey et al. 2010). A gate running at ~2%
+    actionable is at ~98% false positives: not near the breakdown point but more than three times past
+    it. PREMISE-121 already holds the mechanism (override 49-96%; desensitisation generalises to true
+    positives); clause (1) supplies the threshold the mechanism lacked.
+    (2) LOW PRECISION IS NECESSARY BUT NOT SUFFICIENT FOR ABANDONMENT, and this clause is 15b's, adopted
+    against the item's own framing. Gates operating at 4-27% PPV are sustained in professional use for
+    decades. What sustains them is asymmetric loss plus low per-item reading cost. Therefore precision
+    alone does not predict abandonment; precision x reading cost x loss asymmetry does, and an estate
+    that wants a gate read must move whichever of the three it can actually move.
+    (3) THE AMENDMENT IS HALF AN INTERVENTION. Every study in which threshold widening reduced volume
+    without measured harm also RETAINED a measurement of what was still being caught (Paine et al. 2016;
+    the ICU alarm-widening trials). Where that pairing is absent, the estate cannot distinguish "the gate
+    now reads clean" from "the gate no longer detects" — which is PREMISE-113's conversion, and here the
+    single-digit actionable set is the only calibration data in existence, so tightening past it destroys
+    the means of checking the tightening. An amendment shipped without a retained catch-measurement is
+    therefore NOT licensed by this premise.
+  Supporting evidence (15a, SUPPORTED/Strong on clause 1): Bessey, A. et al. (2010), "A few billion lines
+    of code later: using static analysis to find bugs in the real world," CACM 53(2):66-75,
+    doi:10.1145/1646353.1646374 [VERIFIED — full PDF fetched and passages read verbatim by 15a this run;
+    the only primary-source-verified anchor in this premise and the reason clause (1) is rated High].
+    Paine, C.W. et al. (2016), "Systematic Review of Physiologic Monitor Alarm Characteristics and
+    Pragmatic Interventions to Reduce Alarm Frequency," J Hosp Med 11(2):136-144 [PARTIALLY VERIFIED by
+    15a — abstract and one results-table cell read; body did not render]: one instance of a 90%-to-85%
+    alarm limit yielding 61% fewer alarms, but only 5 of 8 intervention studies measured safety.
+  Challenges noted (15b, PARTIALLY-CHALLENGED/Moderate — Strong against the remedy, None against the
+    diagnosis): AJR 184(5) (2005) on screening mammography — maximum PPV "can occur at any sensitivity
+    level and should not be used as the sole indicator for practice optimization" [SNIPPET-ONLY; 15b
+    fetched the AJR page this run and it returned an EMPTY BODY. The quote is UNVERIFIED AT SOURCE and
+    must be re-verified before onward use. It is load-bearing for clause (3) and is flagged accordingly].
+    15b's sustained counterexample (gates at 4-27% PPV sustained for decades) is adopted as clause (2)
+    rather than merely noted. 15b's override datum — 88.2% of alerts already restricted to the highest
+    severity band are overridden anyway — is the direct evidence that attention tracks volume, not base
+    rate, and is the reason clause (3) is binding rather than advisory.
+  Explicitly NOT adopted: the item's own second limb, "and the remedy is threshold amendment," in its
+    bare form. Both directions bear against it and it contradicts ACTIVE PREMISE-113 and PREMISE-158
+    (relocating an operating point is not buying discriminability). What is adopted is the PAIRED form in
+    clause (3).
+  Sequencing constraint, binding, from PREMISE-119: establish whether the gate is read AT ALL before
+    amending its admission policy. A gate with zero demonstrated throughput is PREMISE-107's inventory
+    case, and amending its threshold changes the inventory, not the throughput.
+  Confidence: Moderate-High. High on clause (1) — a verified primary source in the closest available
+    domain, and the estate's figure is not marginal against it but off the scale. Moderate on clauses (2)
+    and (3): clause (2) rests on 15b's counterexample set at snippet level, and clause (3)'s single most
+    quotable source failed retrieval. NOT rated High overall for that reason, and the discount is stated
+    rather than absorbed.
+  Applicable to: the 418-hit mtime gate and any decision to amend its threshold; PREMISE-200's live
+    exposure; the review-gate design generally; 15d's re-check of PREMISE-121.
+  Re-check due: 2026-12-10 (Quarterly), BROUGHT FORWARD to the first date on which a threshold amendment
+    to any gate is proposed, whichever is sooner.
+  Status: ACTIVE
+
+PREMISE-202:
+  Date validated: 2026-09-10
+  Source item: PRESUMPTION-941 (DISPOSITION-926)
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight, the estate did not know it
+    held this)
+  Statement: A HARM AVERTED BY CHANCE IS AN EVENT AND OPENS A RECORD; "DAMAGE IS NIL, BUT BY LUCK" IS THE
+    CRITERION FOR OPENING AN ITEM, NOT FOR CLOSING ONE. Four clauses, and clause (4) is the one that
+    keeps this from becoming a mandate to log everything.
+    (1) THE STRUCTURAL GROUND. On the accident-precursor definition, a near miss shares the realised
+    event's causal chain and differs only in the luck-dependent terminal link. The chain completed. What
+    did not complete was the consequence, and the consequence is the one part of the chain the estate
+    does not control.
+    (2) THE STATISTICAL GROUND, and this is the increment over PREMISE-143. Across 25,000+ establishments
+    over 13 years, lower-severity events INCLUDING NO-INJURY EVENTS are significantly associated with the
+    probability of a fatal event in a subsequent year (Yorio & Moore 2018). This is an organisational-
+    statistical result, not a cognitive one, so it is INDEPENDENT of the near-miss risk-attenuation
+    mechanism that PREMISE-143's domain-transfer caveat explicitly discounts for stateless agent runs.
+    The informational limb holds regardless of who reads or whether anyone becomes complacent.
+    (3) THE FILTERING DEFECT. If averted harms do not open items, the incident population is
+    severity-filtered by construction, and every rate computed from it — including any future claim of
+    improvement — sits on a denominator that excludes the most informative class of event.
+    (4) OPENING IS NOT WEIGHTING, AND THE CLASS BOUNDARY IS REAL. The no-injury tier carried the SMALLEST
+    per-event effect of the four severity classes measured (Yorio & Moore), so a record is opened at
+    proportionate weight, not at the weight of a realised harm. And the Baker Panel's finding that BP's
+    personal-injury rates did not predict its process-safety performance establishes a HAZARD-CLASS
+    boundary: near-miss counts are informative WITHIN a hazard class and are not to be aggregated across
+    classes. The standing caution against the naive remedy is retained from the 2026-09-09 cycle:
+    Hallowell et al. found 96-98% of variation in TRIR-type rates to be random, so counting is not the
+    control — record creation is.
+  Supporting evidence (15a, NO-SUPPORT-FOUND for the presumption as stated / PARTIALLY-SUPPORTED Moderate
+    for the two bounded principles that became clause 4): Yorio, P.L. & Moore, S.M. (2018), "Examining
+    Factors that Influence the Existence of Heinrich's Safety Triangle Using Site-Specific H&S Data from
+    More than 25,000 Establishments," Risk Analysis 38(4):839-852, doi:10.1111/risa.12869 [VERIFIED —
+    article body read by 15a this run; the anchor of clauses (2) and (4)]. The Baker Panel report on BP
+    Texas City, via 15a [SNIPPET-LEVEL].
+  Challenges noted (15b, CHALLENGED/Strong — against the presumption, i.e. converging with 15a): NAE,
+    "Accident Precursor Analysis and Management" (2004), and "Accident precursors, near misses, and
+    warning signs," Reliability Engineering & System Safety (2013) [SNIPPET-ONLY] — the precursor
+    definition that supplies clause (1). Dillon & Tinsley (2008) and Tinsley et al. (2012) — recovered
+    failures encoded as successes [REGISTER-HELD at PREMISE-143 and NOT counted again here].
+  CORRELATION DISCLOSURE, carried from 15b and load-bearing: 15b's file is not independent of
+    PREMISE-143, which already cites the same Dillon & Tinsley sources from both directions. What makes
+    THIS premise more than an application of 143 is Yorio & Moore, which 143 does not hold, which is
+    verified at primary-source level, and which does not run through the cognitive mechanism 143
+    discounted. The two directions converged from genuinely different literatures — that convergence, not
+    the volume of citation, is what carries the Moderate-High rating.
+  NON-DUPLICATION CHECK vs PREMISE-143 (performed, per the consistency requirement): PREMISE-143's
+    subject is what a RETRACTION COUNT measures and whether a correction terminates an error. Its clause
+    (1) concerns catching suppressing systemic repair. Neither addresses whether a chance-averted harm
+    creates a record in the first place. This premise sits one step earlier in the chain — before any
+    count exists — and PREMISE-143's caveat is carried forward rather than overturned.
+  THE SHARPEST FINDING IS INTERNAL AND IS RECORDED HERE RATHER THAN SOFTENED: PREMISE-143 has held since
+    2026-08-05 that near-miss attenuation "is prevented only by framing the CHANCE element in the
+    recovery." The run that produced ASSUMPTION-1294 framed it — it wrote the words "but by luck" —
+    performed the literature's one named prophylactic exactly, and then used that sentence to close the
+    item rather than to open one. The defect was in the routing, not in the knowledge.
+  Confidence: Moderate-High. One verified primary source at large n on the load-bearing clause; two
+    independent literatures converging; the remaining sources snippet-level and marked.
+  Applicable to: ASSUMPTION-1294 and the class of unguarded destructive operations (see REVISE-446);
+    14b's intake criteria; any future incident-rate claim made by this estate; PREMISE-195's in-house
+    series.
+  Re-check due: 2026-10-10 (Monthly — elevated from the default because a live exposure is attached).
+  Status: ACTIVE
+
+PREMISE-203:
+  Date validated: 2026-09-10
+  Source item: PRESUMPTION-944 (DISPOSITION-927)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement: THE VERIFICATION DISCIPLINE ATTACHES TO THE ASSERTION, NOT TO THE ARTEFACT CLASS. A report
+    delivered in speech is a record-bearing assertion and is subject to the same discipline as a file;
+    there is no channel exemption, and the spoken channel is the WORST channel rather than an exempt one.
+    Three clauses.
+    (1) NO SELECTIVITY. In the one controlled experiment located, verbal-only handover retained 33% of
+    data points after one cycle and 2.5% after five, against 99% for a printed handout — and "data points
+    deemed important were omitted at a similar rate as those deemed less important" (3% of important
+    points surviving five cycles). This forecloses the natural defence that the important things get
+    through.
+    (2) THE PERMISSIVE REGIME IS STRICTER, NOT LOOSER. The one safety-critical regime that routinely
+    permits spoken reporting — the US verbal-order regime under 42 CFR 482.24 — imposes a stricter record
+    requirement on spoken orders than on written ones, and its exemptions are narrow, time-boxed, and
+    exempt a procedural ordering rather than the record.
+    (3) THE ASYMMETRY OF CATCHABILITY, which is why this premise is rated as it is. A false artefact can
+    be caught by any subsequent reader. A false spoken report has no later reader, so its error rate is
+    bounded below only by the listener's own scepticism — and the listener here is the designer, on the
+    only channel that reaches him. The channel with the least verification is the channel with the
+    highest consequence.
+  Supporting evidence: BOTH DIRECTIONS CONVERGED AND NEITHER FOUND SUPPORT FOR THE PRESUMPTION. 15a
+    returned NO-SUPPORT-FOUND (None) with a NOVELTY-FLAG in the UNFAVOURABLE sense — no source anywhere
+    treats an oral report as exempt from record discipline. 15b returned CHALLENGED (Strong). Bhabra, G.,
+    Mackeith, S., Monteiro, P. & Pothier, D.D. (2007), "An experimental comparison of handover methods,"
+    Ann R Coll Surg Engl 89(3):298-300, doi:10.1308/003588407X168352 [VERIFIED — full text retrieved and
+    read by 15b this run; cited at snippet level by 15a independently]. TofuEval (arXiv:2402.13249)
+    [VERIFIED — Table 2 read directly by 15b]: summary-level factual inconsistency 30.4-46.0% averaged
+    over five summarisers, HIGHER than sentence-level error and rising on MARGINAL topics where the
+    source barely covers the question — which is the exact shape of "otherwise nothing broken," a
+    summary-level assertion about absence generated from a silent read set.
+  BOUNDARY CONDITION, stated by 15b against its own direction and adopted: TofuEval's summarisers are
+    2023-vintage (Vicuna / WizardLM / GPT-3.5). THE RATES MUST NOT BE TRANSFERRED to a current agent.
+    What transfers is the two structural findings — that summary-level error exceeds sentence-level, and
+    that error rises where the source barely covers the question.
+  ARBITRATION PERFORMED BY 15c, recorded because the two directions disagreed: 15a read this item as
+    "nearly fully held" by PREMISE-194/195 and as the same shape as the 2026-09-09 absence-read-as-
+    all-clear flag. 15b read the shapes as ADJACENT BUT NOT IDENTICAL — yesterday's defect is a signal
+    that never arrived; this one is a positive assertion that arrived in an unverified channel, so
+    yesterday's remedy (an expectation register with an external reader) does not reach it. 15c SUSTAINS
+    15b. The general rule IS held — PREMISE-194 (cite the log rather than narrate), PREMISE-195
+    (self-report is not a detection control), PREMISE-109 (a health claim must name an artefact and a
+    timestamp) — but every one of them was written about files and was read as governing files. The
+    increment this premise adds is exactly the channel clause, and 15b's diagnosis of why the presumption
+    survived three ACTIVE High-confidence denials is accepted verbatim: they were read as governing
+    files.
+  Confidence: Moderate-High, NOT High. Two primary-source-verified anchors and zero support found in
+    either direction argue for High; the discount is for domain transfer — surgical handover and
+    2023-vintage summarisers are not this estate — and for the fact that the estate's own realised
+    instances (ASSUMPTION-1293, ASSUMPTION-1300: two consecutive days of false morning reports) are n=2,
+    not a measurement.
+  Applicable to: the morning report and every spoken or chat-delivered status summary; PREMISE-109's
+    health-claim rule, which this extends to speech; PREMISE-194 and PREMISE-195, whose channel scope
+    this settles; any agent terminal report.
+  Re-check due: 2026-10-10 (Monthly — matching PREMISE-195's elevated cadence, with which it is jointly
+    re-triggered).
+  Status: ACTIVE
+
+*Consistency check performed before minting, per the 15c charter: PREMISE-201 against PREMISE-113, -119,
+-121, -158 (affirms all four; no contradiction). PREMISE-202 against PREMISE-143 (non-duplication argued
+above; 143's domain-transfer caveat carried forward, not overturned) and PREMISE-195. PREMISE-203 against
+PREMISE-109, -116, -171, -194, -195 (extends their scope to the spoken channel; contradicts none). No
+existing premise required amendment this run, and none was amended.*

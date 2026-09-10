@@ -23133,3 +23133,72 @@ linear-extension check named in PRESUMPTION-909_against.md and PRESUMPTION-915_a
 them together; the literature question is closed for both — only the measurement is open.
 
 ---
+
+---
+
+## 2026-09-10 — 15c MONITOR intake (2026-09-09 evening cohort)
+
+*Two entries, neither of which is one of the six routed items. Both are questions the SEARCHES raised
+that the searches could not answer, and both were declared NOT-REACHED by the agent that raised them.
+They are filed here rather than left in a result file because a declared literature gap with a stake is
+exactly what 15d exists to re-trigger. Recorded plainly: no routed item was dispositioned MONITOR this
+run — all six resolved to INCORPORATE or REVISE.*
+
+MONITOR-598:
+  Source: ASSUMPTION-1303 (DISPOSITION-923) — 15b's DECLARED LITERATURE GAP, not the item itself
+  Item type: derived question (the item was dispositioned INCORPORATE, limb-split, as PREMISE-201)
+  Statement watched: That amending a gate's threshold RESTORES attention to a channel that has already
+    been abandoned. PREMISE-201 clause (1) establishes that a channel at ~98% false positives will stop
+    being read. It does not establish that lowering the volume brings a reader back, and the estate's
+    plan for the 418-hit gate assumes it does.
+  15a: PARTIALLY-SUPPORTED (Moderate) on the remedy limb | 15b: CHALLENGED (Strong) on the remedy limb
+  Why monitored: 15b searched for a before/after measurement of threshold amendment restoring attention
+    to an ABANDONED channel and found none — searched, not found, as distinct from not searched. Every
+    alarm-widening study located measured volume reduction in a channel that was still being attended.
+    Hysteresis is the open question: abandonment may not be symmetric with adoption. The stake is direct
+    — PREMISE-201 clause (3) forbids an unpaired amendment, and if attention does not return, even the
+    paired amendment buys nothing and the correct move is a different channel rather than a different
+    threshold.
+  What would change the disposition: any before/after study of alert-precision improvement in a channel
+    with documented prior abandonment, measuring READING RATE rather than alert volume → INCORPORATE the
+    restoration claim into PREMISE-201. Evidence of hysteresis (attention not returning at restored
+    precision) → REVISE, and PREMISE-201 clause (3) hardens from "pair the amendment" to "do not amend;
+    re-site the signal." NOT-REACHED lanes named by 15b and to be searched first: signal-detection
+    vigilance at low base rates, and the SRE alert-precision literature.
+  Priority: Medium | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-17
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
+
+MONITOR-599:
+  Source: ASSUMPTION-1297 (DISPOSITION-922) — a REFLEXIVE finding raised by 15b, carried in REVISE-445
+    and monitored here
+  Item type: derived question (the item itself was dispositioned REVISE, consolidated into REVISE-445)
+  Statement watched: That ASSIGNED adversarial review produces genuine challenge. Nemeth's comparison of
+    assigned devil's advocacy against authentic dissent found assigned advocacy produced cognitive
+    BOLSTERING of the original position, with little advantage over no dissent. If that transfers, then
+    an estate that answers 1297 by "we will attack the bridge ourselves" will entrench it while
+    generating a record that it was tested — AND, unavoidably, the same question is asked of Agent 15b,
+    which is this pipeline's assigned devil's advocate by construction.
+  15a: did not search this lane | 15b: raised it (Strong-rated within its file, SNIPPET-ONLY at source)
+  Why monitored rather than incorporated: one direction only, one source, seen at snippet level, and the
+    single most on-point literature — adversarial-collaboration OUTCOME studies — was declared NOT
+    REACHED by both agents. That is too thin to mint a premise against a mechanism the estate depends on
+    daily. It is far too consequential to drop.
+  Why monitored rather than dismissed as self-undermining: 15b's own conduct this cycle is evidence
+    BOTH ways and should not be read as settling it. 15b returned CHALLENGED/Strong on four items and
+    filed disclosures against its own direction (the TofuEval boundary condition; the Zimmermann
+    negative), which is not what bolstering looks like. But an assigned adversary that produces a strong
+    challenge on every item it is handed is also the predicted output of role compliance, and the two are
+    not distinguishable from the outputs alone.
+  What would change the disposition: (a) the adversarial-collaboration outcome literature (Mellers,
+    Hertwig & Kahneman and successors) reaching a verdict on assigned vs authentic dissent →
+    INCORPORATE or REVISE accordingly; (b) IN-HOUSE and cheap, and the better test: a blind re-run of
+    one dispositioned item by an agent NOT told which direction it is assigned, compared against the
+    15a/15b pair. If the unassigned run reaches the same verdicts, role compliance is not driving them.
+  Priority: High — it bears on the validity of the pipeline that produced every premise in the register.
+  Cadence: Weekly | Cycle: 0 | Next check: 2026-09-17
+  PROVENANCE: Origin 14a · Chain [14a → 15b → 15c → 15d] · Status: MONITORING
+
+Note for 15d: MONITOR-599's limb (b) is an in-house test, not a literature question, and is the cheaper
+of the two paths. Run it before re-queuing the literature. MONITOR-598 is a genuine literature question
+and should be re-queued to 15a/15b with the two NOT-REACHED lanes named explicitly, so the second pass
+does not repeat the first.

@@ -2347,3 +2347,59 @@ OPEN-188:
     Original item: OPEN-188
     Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
     Current status: OPEN
+
+OPEN-189:
+  Date raised: 2026-09-09
+  Question: Should the estate have a near-miss register, and what belongs in it? Today a destructive
+    action deleted four unintended files; harm was nil for reasons the actor did not know when acting
+    ("damage is nil, but by luck"). There is no register for that event. It was filed into
+    `assumptions.md` as ASSUMPTION-1294 because nothing else would take it.
+  Why it matters: the estate has near-zero realised harm and a non-zero near-miss rate, so the channel it
+    lacks is the one carrying the signal. A ruling is also the cheapest way to test PRESUMPTION-941 —
+    if the answer is "no", the reason will state the severity filter explicitly, which is the thing
+    currently invisible.
+  Status: OPEN — requires Tom (cheap; a yes/no plus a file name)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-189
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-190:
+  Date raised: 2026-09-09
+  Question: At what age does a proposal in `inbox/proposals/pending/` stop being pending? The directory
+    has grown 1 → 36 behind a decision channel with zero service events in thirty days, and every run
+    reports the number as a backlog awaiting service.
+  Why it matters: the approval-rate metric (378/380 = 99.5%) and the pending count are computed as
+    though the far end will answer. If a thirty-day-dead channel is closed rather than slow, the approval
+    rate is a fact about August and the pending count is not a workload. This is the operative half of
+    PRESUMPTION-943 and is settled by a ruling plus one `ls`-and-`stat` age distribution, not by a
+    search.
+  Status: OPEN — requires Tom; in-house measurable either way
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-190
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-191:
+  Date raised: 2026-09-09
+  Question: Should a scheduled task that cannot complete without an interactive permission grant remain
+    scheduled unattended? Three runs died at permission gates today (`C2a2 morning chat scrape` at
+    claude.ai, `Morning system health` at `request_cowork_directory`, and `c282-wiki-agent-daily-run`
+    with `permissionMode` absent for a sixth day). Each reported the remedy as *obtain the grant*; none
+    proposed descheduling or converting to an attended step. The chat scrape's streak is now six or
+    seven consecutive days.
+  Why it matters: a schedule that reliably burns slots reads as coverage it does not have, and the
+    Chat↔Cowork sync being dark in both directions is why tonight's reconstruction of the day is
+    file-and-transcript only. Related: the telemetry refresh asked, separately, to be retitled as a
+    verification task for a capability reason — the same class of request.
+  Status: OPEN — requires Tom (a policy line, plus one attended `scope: site` grant for claude.ai)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-191
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN

@@ -43830,3 +43830,673 @@ DISPOSITION-921:
   continues to make the backlog figure ambiguous by construction. No agent can settle it.
 
 *Run note written by the 15a/15b/15c pipeline, 2026-09-09. This note ends here; nothing below it belongs to it.*
+
+---
+
+# RETURNS — 2026-09-10 · 15a/15b/15c cycle
+
+Six items from the 2026-09-09 evening intake: ASSUMPTION-1297, ASSUMPTION-1303, PRESUMPTION-939,
+-940, -941, -944. 15a and 15b ran as separately-instructed delegated subagents; neither read the
+other's output, and the orchestrator (15c) wrote both returns to this file after both had reported,
+which is why the two blocks appear together and not interleaved.
+
+## 15a returns (FOR)
+
+# Agent 15a — Literature Search FOR — Returns, 2026-09-10
+
+STAGING FILE. These six RETURN-TO blocks are written here, NOT to
+`architecture/lit_search_returns.md`, per the orchestrator's dispatch: the orchestrator applies returns
+to the shared register serially to avoid write races. I have also NOT tagged `for_lit_search.md` with
+`[SEARCHED-15a: 2026-09-10]`; that tagging is the orchestrator's to apply.
+
+INDEPENDENCE ATTESTATION: I did not read any file in `lit_search_results/against/` relating to
+ASSUMPTION-1297, ASSUMPTION-1303, PRESUMPTION-939, -940, -941 or -944. I did read
+`against/SYSTEMIC-RISK-FLAG_2026-09-09_absence-read-as-all-clear_1289-931-933-935.md`, at the intake's
+explicit instruction in the Note for PRESUMPTION-944; it is a prior-cycle flag concerning
+ASSUMPTION-1289 and PRESUMPTION-931/933/935, none of which is in this cycle's cohort.
+
+ESTATE CHECK PERFORMED BEFORE SEARCHING, as the intake required. All six items were checked against
+`validated_premises.md` first. Five of six were substantially or wholly answered there. Searching was
+narrowed to the declared residue in every case, and each result file records the narrowing.
+
+---
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1297
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED
+  Strength: Moderate (conditional) / Weak (as stated)
+  Key source: Scheel, A.M., Schijen, M.R.M.J. & Lakens, D. (2021), "An Excess of Positive Results:
+    Comparing the Standard Psychology Literature With Registered Reports," AMPPS 4(2),
+    doi:10.1177/25152459211007467 [SNIPPET-LEVEL — not opened].
+  Summary: A falsifier fixed in advance changes what gets concluded by a large margin — 43.66% vs
+    96.05% first-hypothesis confirmation — but the mechanism producing that is in-principle acceptance,
+    an editorial gate obliged to read the preregistered test. Without such a gate, the adherence
+    literature reports that a majority of preregistered articles add or drop hypotheses and most do not
+    disclose it. The attachment limb is already validated at PREMISE-188(3); the residue is the reading
+    limb, and it is where the assumption fails.
+  Register overlap: HEAVY. PREMISE-188 (qualifier travels with the claim), PREMISE-177 (recorded
+    inferences do not decay; Hsiao & Schneider's 94.6%), PREMISE-164 (durability is addressing),
+    PREMISE-107, PREMISE-116, PREMISE-151.
+  Full results: architecture/lit_search_results/for/ASSUMPTION-1297_for.md
+
+---
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1303 (THRESHOLD LIMB ONLY — the detection limb is PRESUMPTION-946 and
+    PREMISE-200; not searched, no claim made about it)
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED (limb 1 SUPPORTED; limb 2 PARTIALLY-SUPPORTED)
+  Strength: Strong (limb 1) / Moderate (limb 2)
+  Key source: Bessey, A. et al. (2010), "A few billion lines of code later: using static analysis to
+    find bugs in the real world," CACM 53(2):66-75, doi:10.1145/1646353.1646374 [VERIFIED — full PDF
+    fetched and passages read verbatim this run].
+  Summary: Bessey et al. supply the number the routed question asked for: "more than 30% [false
+    positives] easily cause problems. People ignore the tool," with a stated commercial target "below
+    20% for 'stable' checkers." A gate at ~2% actionable is at ~98% false positives — more than three
+    times past the named breakdown point, in the closest domain analogue. Limb 2 is supported more
+    weakly: Paine et al. (2016), J Hosp Med 11(2):136-144, conclude that widening parameters and
+    instituting delays are the most promising interventions (one verified instance: 90%→85% alarm limit,
+    61% fewer alarms), but only 5 of 8 intervention studies measured intervention safety, and Bessey
+    et al. state explicitly that they abandoned the belief that false positives can be engineered away.
+  Register overlap: HEAVY on limb 1. PREMISE-121 holds the mechanism (override rates 49-96%;
+    desensitisation generalises to true positives) with no threshold attached — the threshold is the
+    increment. PREMISE-119's sequencing requirement binds limb 2: establish whether the gate is read at
+    all before amending an admission policy.
+  Full results: architecture/lit_search_results/for/ASSUMPTION-1303_for.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-939
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND (for the presumption as stated); PARTIALLY-SUPPORTED for a conditional
+  Strength: None (as stated) / Moderate (conditional)
+  Key source: The aviation Minimum Equipment List / Acceptable Deferred Defect regime, repair-interval
+    categories A-D [OPERATOR AND TRAINING-PROVIDER LEVEL ONLY; no regulatory text opened; day counts
+    UNVERIFIED].
+  Summary: One genuine positive case exists — a logged defect IS a contained defect in the MEL regime —
+    and it identifies the enabling conditions rather than supporting the presumption: pre-approved
+    deferrability, an operational restriction, and a rectification deadline whose expiry grounds the
+    aircraft mechanically. This is the third independent regime (with CAPA at PREMISE-183 and NTSB/GAO
+    at PREMISE-164) to converge on the enforced deadline plus effector as the operative feature.
+  Register overlap: VERY HEAVY — essentially fully held. PREMISE-183 (a filed flag is a live obligation
+    with a closure test; and 15a's prior clean negative), PREMISE-151 (disclosure is incubation, not
+    management — High), PREMISE-118, PREMISE-102, PREMISE-138, PREMISE-143, plus the verified HHS OIG
+    finding in the 09-09 flag that hospitals made few changes even for events they DID investigate.
+  Shared-search note: run jointly with PRESUMPTION-941, as the intake directed. One query programme,
+    two reports. Dispose together.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-939_for.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-940
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: No adequate source found. The best material bearing on the item is already register-held:
+    PREMISE-171 (a declaration register is not a failure detector; keep the declaration and alarm on its
+    divergence from observation) and PREMISE-200 (a content hash is the admissible evidence of change).
+  Summary: Nothing supports verification-at-application-only, and this is a well-populated area
+    returning the opposite uniformly. Declarative IaC, GitOps reconciliation, drift detection and
+    immutable infrastructure all exist on the contrary premise and all answer it by verifying
+    continuously or making state unmodifiable. NO TRACEABLE RECURRENCE OR DECAY RATE FOR APPLIED
+    CONFIGURATION FIXES EXISTS ANYWHERE I REACHED, despite "recurrence rate" being a universally
+    recommended metric — that absence is the item's real finding, and it matters because the intake
+    rates the risk Critical on 218 revision flags with no base rate behind the rating.
+  NOVELTY-FLAG: RAISED, UNFAVOURABLE SENSE (nobody claims it because it is not a defensible position;
+    per PREMISE-184(1) this is an engineering response, not a research one). SEPARATELY: a genuine
+    MEASUREMENT GAP on the rate, which the estate can close for itself.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-940_for.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-941
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND (for the presumption as stated); PARTIALLY-SUPPORTED for two bounded
+    principles
+  Strength: Weak (as stated) / Moderate (bounded principles)
+  Key source: Yorio, P.L. & Moore, S.M. (2018), "Examining Factors that Influence the Existence of
+    Heinrich's Safety Triangle Using Site-Specific H&S Data from More than 25,000 Establishments," Risk
+    Analysis 38(4):839-852, doi:10.1111/risa.12869 [VERIFIED — article body read this run].
+  Summary: Across 25,000+ establishments over 13 years, lower-severity events including no-injury
+    events ARE significantly associated with the probability of a fatal event in a subsequent year: an
+    averted harm carries information about realised harm, measured at scale. The genuine FOR limbs are
+    narrow and worth carrying — the no-injury tier had the SMALLEST per-event effect of four classes,
+    and the Baker Panel's finding that BP's personal-injury rates were not predictive of process-safety
+    performance supports a HAZARD-CLASS boundary. Neither reaches the estate's founding instance:
+    ASSUMPTION-1294 is a WITHIN-class near-miss, which is the configuration Yorio & Moore measured and
+    found predictive.
+  Register overlap: HEAVY, and the held part is already discounted. PREMISE-143 holds Dillon & Tinsley
+    (2008) and Tinsley et al. (2012) WITH an explicit ruling that the transfer to stateless agent runs
+    is analogical and contested. Yorio & Moore is organisational-statistical rather than cognitive and
+    is therefore independent of the mechanism 143 discounted — that independence is this result's real
+    increment. The 09-09 flag's verified Hallowell et al. TRIR result (96-98% random variation) is the
+    standing caution against the naive remedy.
+  Shared-search note: run jointly with PRESUMPTION-939. Dispose together.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-941_for.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-944
+  Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND
+  Strength: None
+  Key source: Bhabra, G., Mackeith, S., Monteiro, P. & Pothier, D.D. (2007), "An experimental
+    comparison of handover methods," Ann R Coll Surg Engl 89(3):298-300, doi:10.1308/003588407X168352,
+    PMID 17394718 [SNIPPET-LEVEL — citation metadata cross-confirmed across three listings; result not
+    verified by me].
+  Summary: The one regime that routinely permits spoken reporting in a safety-critical setting — the
+    US verbal-order regime under 42 CFR 482.24 — imposes a STRICTER record requirement on spoken
+    reports than on written ones, and its exemptions are narrow, time-boxed, and exempt a procedural
+    ordering rather than the record. The single FOR datum located is that CMS declined to write
+    read-back into the final regulatory text. Against, Bhabra et al. report 2.5% information retention
+    under verbal-only handover versus 99% with a printed handout. PREMISE-116's finding that interactive
+    delivery is the highest-efficacy channel is a reason to keep the channel and an aggravating factor,
+    not a mitigating one: a false all-clear delivered well is believed more thoroughly.
+  Register overlap: VERY HEAVY — nearly fully held. PREMISE-195 (voluntary self-report is not a
+    detection control — High, monthly re-check, "the estate's highest-rated open risk") and PREMISE-194
+    (recollection is not an independent copy; cite the log rather than narrate — High) jointly settle
+    it. PREMISE-108's instrumentation constraint applies. The 09-09 SYSTEMIC-RISK-FLAG is the same
+    shape at the general level and was read first, as the intake instructed.
+  NOVELTY-FLAG: RAISED, UNFAVOURABLE SENSE. No source treats an oral report as exempt from record
+    discipline; the residual is an ENCODING gap in the estate, not a knowledge gap.
+  Full results: architecture/lit_search_results/for/PRESUMPTION-944_for.md
+
+---
+
+## Run notes, filed rather than smoothed
+
+1. **Five of six items were substantially register-held before searching.** This is the second
+   consecutive cycle in which the estate's own register answered most of the routed queue (last cycle
+   it was four of five). PRESUMPTION-939 and PRESUMPTION-944 in particular are negated at High
+   confidence by ACTIVE premises and PREMISE-138 bars re-minting them. 15c should consider whether the
+   14a/14b routing step is currently routing items the register already holds, and whether a register
+   grep should precede routing rather than searching.
+
+2. **Verification level was better this run than last, but is still uneven.** Two sources were read at
+   primary-source level and both are load-bearing: Bessey et al. (full PDF fetched, passages read
+   verbatim) for ASSUMPTION-1303, and Yorio & Moore (article body scraped and read) for
+   PRESUMPTION-941. Paine et al. was partially verified (abstract and one results-table cell read;
+   full body did not render). Everything else in all six files is snippet, abstract or
+   practitioner level and is marked as such on the source line, per PREMISE-188's operational form.
+
+3. **Two NOVELTY-FLAGs raised, both in the UNFAVOURABLE sense** (PRESUMPTION-940, PRESUMPTION-944).
+   Neither should draw a research response; per PREMISE-184(1) the residual in both is engineering, and
+   in both cases the engineering is already specified by an ACTIVE premise (171/200 and 194/195
+   respectively). One genuine measurement gap was found and is filed separately from the novelty
+   claim: no published recurrence or decay rate for applied configuration fixes exists in what I
+   reached.
+
+4. **Search budget:** fourteen WebSearch queries plus three direct document fetches. Scope is marked
+   per item in each file: PRELIMINARY for ASSUMPTION-1297 and PRESUMPTION-940 (both flagged as likely
+   to reward a second pass, with the specific unopened seams named); MODERATE for the other four.
+
+5. **Reflexive note, per PREMISE-151 and the standing practice.** This file is a staging artefact
+   written to a session outputs folder rather than to the register the pipeline reads. On PREMISE-164's
+   addressing test it is durable only if the orchestrator's own procedure requires it to be read. That
+   condition was stated in my dispatch, which is why it is acceptable here — but it is the same
+   structure ASSUMPTION-1297 describes, and if the orchestrator does not apply these blocks, the six
+   searches were inventory rather than throughput (PREMISE-107).
+
+
+## 15b returns (AGAINST)
+
+# Agent 15b — RETURN-TO blocks, 2026-09-10
+
+STAGING FILE. Written for the orchestrator to apply serially to `for_lit_search.md` and
+`lit_search_returns.md`. 15b did NOT edit either shared register, per instruction.
+
+Cohort: the 2026-09-09 evening 14a/14b intake (6 routed items).
+
+INDEPENDENCE ATTESTATION: this run read only `against/` outputs (its own lane's 2026-09-09
+SYSTEMIC-RISK-FLAG, and `PRESUMPTION-935_against.md` for house style), `validated_premises.md`,
+`for_lit_search.md`, `provenance_protocol.md`, and the 15b charter. It did NOT open the `for/`
+directory, `lit_search_returns.md`, or any 15a output for any of these six items.
+
+SHARED-SEARCH DECLARATION: PRESUMPTION-939 and PRESUMPTION-941 were searched with ONE query set
+across normalization of deviance, waiver drift, incident-logging efficacy and near-miss
+classification, per the intake instruction. Four source lines are shared between the two files and
+are marked `[SHARED]` in both. They must not be counted twice at reconciliation.
+
+TAGS TO APPLY: `[SEARCHED-15b: 2026-09-10]` on all six items in `for_lit_search.md`.
+
+---
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1297
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Hsiao, T.-K. & Schneider, J. (2021), "Continued use of retracted papers," *Quantitative
+    Science Studies* 2(4):1144-1169 — 5.4% of 13,252 post-retraction citation contexts acknowledged
+    the retraction; retraction did not change how the papers were cited. [PARTIALLY verified;
+    register-held under PREMISE-177]
+  Specific risk: The bridge is quoted onward and the "attack, do not adopt" marking stays behind in
+    the file it was written in, becoming load-bearing within one or two hops; the attached falsifiers
+    join the estate's population of unowned, undated recommendations and are never tested.
+  Summary: Both limbs of the guard fail, by different routes. The LABEL fails at the reading step —
+    the best-measured formal defeat marking in existence is read one time in twenty, and the
+    continued-influence corpus shows even acknowledged markings do not suppress downstream reliance.
+    The FALSIFIERS fail at the testing step — ~93% of preregistered studies deviate from their own
+    plan and the institutional reader does not open it. A third finding is worse than either:
+    Nemeth's comparison of assigned devil's advocacy against authentic dissent found assigned
+    advocacy produced cognitive bolstering of the original position with little advantage over no
+    dissent, which is a warning that running the attack in-house may entrench the bridge while
+    producing a record that it was tested. NOTE: PREMISE-188 already holds the general form ("a
+    qualifier travels with the claim or it does not travel") and this file is largely its APPLICATION
+    to a new artefact class — not independent corroboration of it. What is challenged is the word
+    "adequate", not the practice.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1297_against.md
+
+---
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1303 (THRESHOLD limb only, per intake)
+  Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED
+  Strength: Moderate — Strong against the remedy, Moderate against the inevitability claim, None
+    against the diagnosis
+  Key source: "Is Maximum Positive Predictive Value a Good Indicator of an Optimal Screening
+    Mammography Practice?", *AJR* 184(5) (2005) — maximum PPV "can occur at any sensitivity level and
+    should not be used as the sole indicator for practice optimization because it does not take into
+    account the number of cancers that would be missed at that sensitivity." [SNIPPET-ONLY; the AJR
+    page was fetched this run and returned an EMPTY BODY — this quote is unverified at source and
+    must be re-verified before onward use]
+  Specific risk: The threshold is amended, the hit count falls to something readable, the gate reads
+    clean — and nothing in the estate can distinguish "clean" from "no longer detecting", because the
+    single-digit actionable set is the only calibration data available and tightening past it
+    destroys it. PREMISE-113 already names this conversion.
+  Summary: The diagnosis is well supported and I found essentially nothing against it. The
+    INEVITABILITY claim is challenged by counterexample — gates at 4–27% PPV are sustained in
+    professional use for decades, so low precision is not sufficient for abandonment; what sustains
+    them is asymmetric loss plus low reading cost. The REMEDY is challenged from three directions:
+    the register already holds it as a hazard (PREMISE-113: threshold loosening suppresses detection;
+    PREMISE-158: moving the operating point is not buying discriminability); the screening literature
+    says actionable rate is not a valid optimisation target; and the override data say attention is
+    driven by volume, not base rate — 88.2% of alerts already restricted to the highest severity band
+    are overridden anyway. The one supportive body of evidence (ICU alarm-widening trials, reported
+    as reducing alarms without compromising safety) is at moderate-to-high risk of bias throughout,
+    rests on two studies for the no-adverse-outcome claim, and in every case pairs the amendment with
+    a retained measurement of what was still caught. The item omits that pairing, and it is the whole
+    intervention. GAP DECLARED: I searched for a before/after measurement of threshold amendment
+    RESTORING attention to an abandoned channel and found none.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1303_against.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-939
+  Search direction: AGAINST (disconfirmatory) — shared search with PRESUMPTION-941, declared
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Vaughan, D. (1996), *The Challenger Launch Decision* — the O-ring deviations were
+    documented, formally reviewed and formally waived, repeatedly; the documentation was the medium
+    through which deviance became the standard, not the barrier to it. [CANONICAL; register-held
+    under PREMISE-151; non-independent]
+  Specific risk: An act performed without licence, recorded in a register, neither ruled on nor
+    reversed, is available to the next run as a documented instance of that act being performed. This
+    is ASSUMPTION-1283 ("precedent as authorization") seen from the other end; if OPEN-187 is
+    unruled, the estate is carrying one exposure under two names.
+  Summary: The containment limb is challenged by base rate — under a mandated hospital programme with
+    formal investigation, the modal outcome of a logged defect was "few policy or practice changes."
+    The PRECEDENT limb is challenged harder and this is why the file returns Strong: the waiver
+    literature's own named corrective is that the next deviation must be checked against the ORIGINAL
+    standard rather than the updated one produced by the exception process — i.e. the documented
+    exception becomes the new baseline. Meyer & Rowan supply the reason to expect this: formal
+    structures decouple from the activity they govern, and inspection becomes ceremonial. NOTE, and
+    it is the finding the reconciler should weigh first: PREMISE-183 clause (1) already states the
+    governing rule ("a filed flag is a live obligation with a closure test, not a discharged duty"),
+    so PRESUMPTION-939 is close to a re-mint of a defect the register has held since 25 August. NOT
+    challenged: that the FINDING should have been written. Only the word "itself".
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-939_against.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-940
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: ISO 9001:2015 §10.2 and FDA 21 CFR 820.100, via PREMISE-183 clause (1) — implementation
+    verification and effectiveness verification are two mandated steps, and the second exists because
+    the first was found insufficient; "closed without verification of effectiveness" is among the most
+    frequently cited FDA deficiency categories for over a decade. Corroborated by Zimmermann,
+    Nagappan, Guo & Murphy (2012), ICSE'12 [VERIFIED, full text read].
+  Specific risk: The intake's own statement is right and is now quantifiable. On the open-source
+    reopen figure alone (6–10%, in far better-instrumented conditions), the expected number of the
+    218 revision flags that no longer describe reality is mid-teens to low twenties, and the estate
+    cannot name which. The estate's specific mechanism is worse than generic drift: an application
+    that rewrites its configuration from an in-process copy is an active competing writer, so a fix's
+    expected lifetime is one relaunch and its reversion is silent.
+  Summary: No source in any domain treats application-time verification as sufficient, and several
+    exist specifically because it is not. Software engineering treats fix persistence as an open
+    empirical question (Microsoft built a predictive model for it). Yin et al.'s 14.8–24.4%
+    incorrect-fix rate — register-held under PREMISE-143 — attacks the item from the correctness side
+    as well: reading back the value you just wrote is the check least able to detect a wrong repair.
+    IMPORTANT NEGATIVE, recorded because this register has been burned by snippet figures: the
+    Zimmermann paper does NOT publish an absolute reopen rate (it reports ratios against undisclosed
+    baselines P and Q); the 6–10% figure is from the EMSE 2022 "Revisiting reopened bugs" line and is
+    SNIPPET-ONLY. GAP DECLARED: I found no peer-reviewed measurement of configuration-remediation
+    persistence at all; that line rests on vendor material and is labelled as such.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-940_against.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-941
+  Search direction: AGAINST (disconfirmatory) — shared search with PRESUMPTION-939, declared
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: Accident-precursor literature — NAE, *Accident Precursor Analysis and Management*
+    (2004), and "Accident precursors, near misses, and warning signs," *Reliability Engineering &
+    System Safety* (2013): a near miss is a precursor whose ingredients "differ in only minor or
+    non-robust ways from those necessary for a consequential event," and shares the accident's causal
+    chain. [SNIPPET-ONLY]
+  Specific risk: If averted harms do not open items, the incident population is severity-filtered by
+    construction, and every rate the estate computes from it — including any future claim of
+    improvement — sits on a denominator that excludes the most informative class of event. The
+    specific instance is live: ASSUMPTION-1294's over-deletion was harmless because a regeneration
+    path happened to exist, and the named repair (one narrowed glob) addresses the glob, not the
+    class of unguarded destructive operations. With PREMISE-195's 2026-08-31 pair that is three
+    destructive-write events in eleven days on an estate that does not open items for the ones that
+    end well.
+  Summary: On the precursor definition, "damage is nil, but by luck" is not a reason to close — it is
+    the criterion for opening, because the chain completed and only the luck-dependent terminal link
+    differed. Dillon & Tinsley add that recovered failures are encoded as successes and that where an
+    outcome was spared by luck nobody is held to account and nothing is learned. THE SHARPEST
+    FINDING IS INTERNAL: PREMISE-143 has carried, since 5 August, the conclusion that near-miss
+    attenuation "is prevented only by framing the CHANCE element in the recovery." The run framed it
+    — it wrote "but by luck" — performed the literature's one named prophylactic exactly, and then
+    used the sentence to close rather than open. The defect is in the routing, not the knowledge.
+    CORRELATION DISCLOSURE: this file is NOT independent of PREMISE-143, which already cites the same
+    Dillon & Tinsley sources from both directions; its increment is only the step before the count
+    exists — whether a record is created at all. PREMISE-143's domain-transfer caveat is carried:
+    the psychological limb (complacency, accountability) may not transfer to agents; the
+    informational and structural limbs hold regardless of who reads.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-941_against.md
+
+---
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-944
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED
+  Strength: Strong
+  Key source: "An Experimental Comparison of Handover Methods," *Annals of the Royal College of
+    Surgeons of England* (2007), doi 10.1308/003588407X168352 [VERIFIED — full text retrieved and
+    read this run] — verbal-only handover retained 33% of data points after ONE cycle and 2.5% after
+    five, against 99% for a printed handout; and "data points deemed important were omitted at a
+    similar rate as those deemed less important" (3% of important points survived five cycles).
+  Specific risk: The channel with the least verification is the channel with the highest consequence
+    and no later reader. A false artefact can be caught by any subsequent reader; a false spoken
+    report cannot be caught at all, so its error rate is bounded below only by the designer's own
+    scepticism. Two consecutive false morning reports is the realised instance.
+  Summary: The presumption draws the verification boundary around the artefact TYPE; every source
+    found draws it around the ASSERTION, and the one controlled experiment says the spoken channel is
+    the worst channel rather than an exempt one — with no selectivity, which forecloses the "the
+    important things get through" defence. TofuEval (arXiv:2402.13249) [VERIFIED — Table 2 read
+    directly] puts summary-level factual inconsistency at 30.4–46.0% averaged over five summarisers,
+    higher than sentence-level error, and rising further on MARGINAL topics where the source barely
+    covers the question — which is the exact shape of "nothing is broken," a summary-level assertion
+    about absence generated from a silent read set. BOUNDARY CONDITION stated against my own
+    direction: TofuEval's summarisers are 2023-vintage (Vicuna/WizardLM/GPT-3.5) and the RATES must
+    not be transferred to a current agent; what transfers is the two structural findings.
+    PRIOR-ART FINDING, per the intake's instruction to read the 09-09 flag first: the shapes are
+    ADJACENT BUT NOT IDENTICAL. The 09-09 flag concerns ABSENCE read as all-clear; this item concerns
+    a POSITIVE ASSERTION in an unverified channel. The 09-09 remedy (expectation register with an
+    external reader) does not reach it, because the report was not missing. The estate did not
+    already hold the answer. What it does hold is PREMISE-194 ("cited directly rather than narrated",
+    ACTIVE/High) and PREMISE-109 (health claims must name an artefact and timestamp; "no failures to
+    report" must be legible as scoped, ACTIVE/High) — neither of which carries an exemption for
+    speech. The presumption is inconsistent with two ACTIVE High-confidence premises, and survived
+    because both were read as governing files.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-944_against.md
+
+---
+
+SYSTEMIC-RISK-FLAG FILED THIS RUN:
+  File: wiki/architecture/lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-10_no-second-look_1297-939-940-944.md
+  Affected: ASSUMPTION-1297, PRESUMPTION-939, PRESUMPTION-940, PRESUMPTION-944 (PRESUMPTION-941 as
+    the inverse case; ASSUMPTION-1303 deliberately EXCLUDED, with the exclusion argued in the flag)
+  Common vulnerability: the estate's controls terminate at the moment of production and it has no
+    control that operates at T+n — a label written and not consulted, a finding recorded and not
+    revisited, a fix applied and not re-checked, a report spoken and not corroborated.
+  Risk level: High
+  Reconciliation instruction: RECONCILE WITH, DO NOT STACK ON, the 2026-09-09 flag. Yesterday's names
+    absence-read-as-all-clear (a signal that never arrived); today's names a positive act treated as
+    a permanent state (a signal that arrived and was never re-read). One mechanism can serve both —
+    an expectation register whose reader is external to the producer — but they are different
+    defects and yesterday's remedy does not reach today's four items.
+  Consecutive-filing ordinal for this lane, recorded per PREMISE-183 clause (2): 2. If a third
+    arrives with no disposition on either of the first two, the correct reading is that the flag
+    channel is the defect.
+
+---
+
+RUN-LEVEL DISCLOSURES (per PREMISE-188's operational form — repeated here rather than left in a
+header, because these degrade specific findings):
+  1. VERIFICATION LEVEL. Two sources were retrieved and read in full this run: the RCSEng handover
+     experiment (2007) and the TofuEval PDF (Table 2 read directly); Zimmermann et al. (2012) was
+     also read in full. One retrieval FAILED and is recorded rather than glossed: the AJR mammography
+     PPV page returned an empty body, so the load-bearing quote in ASSUMPTION-1303_against.md is
+     snippet-level. All other external sources in all six files are SNIPPET-ONLY and are marked as
+     such at the source line. Several author lists could not be confirmed and are omitted rather than
+     guessed.
+  2. NON-INDEPENDENCE. Four of the six files rest substantially on ACTIVE register premises rather
+     than on fresh external evidence: 1297 on PREMISE-188, 939 on PREMISE-183/151, 940 on
+     PREMISE-183/143, 941 on PREMISE-143. Each file carries a correlation disclosure. At
+     reconciliation these should be weighted as APPLICATIONS of existing premises to new artefact
+     classes, not as independent corroboration of them.
+  3. A NEGATIVE THAT MATTERS. The Zimmermann ICSE'12 paper does not publish an absolute bug-reopen
+     rate. The search summary implied it did; reading the paper revealed it does not. That is the
+     class of error this register has been burned by before, and it is the reason the full-text
+     retrieval budget was spent where it was.
+  4. LITERATURE GAPS DECLARED (searched, not found — distinct from not-enough-searched): no
+     peer-reviewed measurement of configuration-remediation persistence (940); no before/after
+     measurement of threshold amendment restoring attention to an abandoned channel (1303); no
+     measurement of automated status-summary accuracy at a human interface specifically (944); no
+     software-domain near-miss literature (941).
+  5. NOT-ENOUGH-SEARCHED, declared separately: adversarial-collaboration outcome studies (1297 — the
+     single most on-point literature, not reached); signal-detection vigilance at low base rates and
+     the SRE alert-precision literature (1303); temporary-workaround persistence and self-admitted
+     technical debt survival times (939); configuration-management idempotence/convergence work
+     (940); outcome-bias experiments proper, Baron & Hershey and successors (941); verbal-order error
+     rates and I-PASS trials (944).
+
+---
+
+## DISPOSITIONS — 2026-09-10 · 15c
+
+*Six items, all dispositioned. Three INCORPORATE (one limb-split), three REVISE (consolidated into one
+flag), plus one REVISE for a live exposure split out of an INCORPORATE. No item was left in a
+searched-but-undispositioned state.*
+
+DISPOSITION-922:
+  Date: 2026-09-10
+  Item: ASSUMPTION-1297 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate (conditional) / Weak (as stated)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The two directions converge rather than conflict, and they converge on the limb the
+    intake told them to test. Attachment works and is already validated at PREMISE-188(3); reading is
+    where the guard fails. 15a's own supportive mechanism — in-principle acceptance — is an obliged
+    reader, which the estate does not have; 15b supplies the rate at which the best-measured formal
+    marking in existence is actually read (5.4%).
+  Disposition: REVISE (consolidated into REVISE-445, High)
+  Reasoning: Weak support as stated against a strong challenge is the charter's REVISE case. No premise
+    minted: PREMISE-188, -177 and -107 already hold every clause, and PREMISE-138 bars re-minting. The
+    corrective is not another label but an obliged reader, and the warning against the reflexive remedy
+    (Nemeth on assigned devil's advocacy) is carried inside REVISE-445 and monitored at MONITOR-599.
+  What is at risk: every cross-tradition bridge filed "to be attacked, not adopted" — C2A2's central
+    productive activity.
+  Urgency: High
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · Transform: net evaluation and disposition ·
+    Current status: REVISION-FLAGGED
+
+DISPOSITION-923:
+  Date: 2026-09-10
+  Item: ASSUMPTION-1303 (THRESHOLD limb only; the detection limb is PRESUMPTION-946 and PREMISE-200 and
+    was searched by neither agent, correctly) | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED (limb 1 SUPPORTED, limb 2 PARTIALLY-SUPPORTED)
+  15a strength: Strong (limb 1) / Moderate (limb 2)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate — Strong against the remedy, None against
+    the diagnosis
+  Net assessment: A clean limb split. On the diagnosis, 15a has the run's best-verified source (Bessey
+    et al., full PDF read) and 15b explicitly found nothing against it — the estate's gate is not near
+    the named breakdown point but more than three times past it. On the remedy, both directions bear
+    against the bare form, and 15b's counterexample set (gates sustained at 4-27% PPV) shows precision
+    alone does not predict abandonment.
+  Disposition: INCORPORATE, LIMB-SPLIT (PREMISE-201, Moderate-High)
+  Reasoning: Strong verified support with no challenge on limb 1 is the charter's INCORPORATE case, and
+    it supplies the threshold PREMISE-121 was missing — the run's main increment. The bare remedy claim
+    is explicitly NOT adopted, because it contradicts ACTIVE PREMISE-113 and -158; what is adopted is
+    the paired form both directions support (amendment WITH a retained measurement of what is still
+    caught). PREMISE-119's sequencing constraint is written into the premise as binding.
+  Validated premise: PREMISE-201 | Confidence: Moderate-High
+  Applicable to: the 418-hit mtime gate; any gate-threshold amendment; PREMISE-121's re-check
+  Re-check cadence: Quarterly (2026-12-10), brought forward to any proposed threshold amendment
+  Residue not closed: 15b's declared literature gap — whether amendment RESTORES attention to an
+    abandoned channel — is MONITOR-598. The load-bearing AJR quote failed retrieval and is flagged
+    inside PREMISE-201 for re-verification.
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · Transform: net evaluation, limb split,
+    disposition · Current status: INCORPORATED (PREMISE-201)
+
+DISPOSITION-924:
+  Date: 2026-09-10
+  Item: PRESUMPTION-939 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND (as stated) | 15a strength: None (as stated) / Moderate (conditional)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Unanimous against. 15a found exactly one regime in which a logged defect IS a
+    contained defect (aviation MEL) and it identifies the enabling conditions rather than supporting the
+    presumption. 15b shows the documentation being the medium of normalisation rather than the barrier,
+    and the precedent limb failing harder than the containment limb.
+  Disposition: REVISE (consolidated into REVISE-445, High)
+  Reasoning: A PRESUMPTION with a strong challenge is the charter's REVISE-with-high-urgency case, and
+    the designers did not know they were holding it. No premise minted — PREMISE-183(1), -116 and -151
+    already hold it and PREMISE-138 bars re-minting. Searched jointly with PRESUMPTION-941 as the intake
+    directed and dispositioned in the same session; the shared source lines are counted once.
+  What is at risk: OPEN-187 / ASSUMPTION-1283, which 15b reads as the same exposure from the other end.
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+DISPOSITION-925:
+  Date: 2026-09-10
+  Item: PRESUMPTION-940 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND (NOVELTY-FLAG, unfavourable sense) | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The most one-sided item of the six. No source in any domain treats application-time
+    verification as sufficient; ISO 9001:2015 cl. 10.2 and 21 CFR 820.100 mandate a second effectiveness
+    verification precisely because the first was found insufficient. The estate's own mechanism is worse
+    than generic drift — an application that rewrites config from an in-process copy is an active
+    competing writer, so a fix's expected lifetime is one relaunch and its reversion is silent.
+  Disposition: REVISE (consolidated into REVISE-445, High)
+  Reasoning: Unanimous strong challenge on a PRESUMPTION with a Critical-rated dependency (218 revision
+    flags). No premise minted — PREMISE-171, -183(1), -143's ISO split and -200 hold it already. 15a's
+    NOVELTY-FLAG is in the UNFAVOURABLE sense and per PREMISE-184(1) draws an engineering response, not
+    a research one; it is NOT routed to MONITOR, and the reason is declared here.
+  Carried, separately from the novelty claim: a GENUINE MEASUREMENT GAP. 15a found no published
+    recurrence or decay rate for applied configuration fixes anywhere it reached, despite the metric
+    being universally recommended. The estate can close this for itself by content-hash re-verification
+    of the 218 — REVISE-445 action (2).
+  Urgency: High
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: REVISION-FLAGGED
+
+DISPOSITION-926:
+  Date: 2026-09-10
+  Item: PRESUMPTION-941 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND (as stated) | 15a strength: Weak (as stated) / Moderate (two bounded
+    principles)
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Both directions against the presumption, from genuinely different literatures — 15a
+    organisational-statistical (Yorio & Moore, 25,000+ establishments, VERIFIED at body level), 15b
+    definitional (accident-precursor). That independence is what carries the disposition, because
+    PREMISE-143 already discounts the cognitive near-miss mechanism for stateless agent runs, and
+    neither of this run's load-bearing limbs runs through it. 15a's genuine FOR limbs survive as
+    boundary conditions rather than as support: smallest per-event weight, and a hazard-class boundary.
+  Disposition: INCORPORATE the corrective (PREMISE-202, Moderate-High) — AND the live exposure is NOT
+    closed with it (REVISE-446, High).
+  Reasoning: Convergence from independent literatures with one verified large-n primary source is
+    strong enough to mint, and the non-duplication check against PREMISE-143 was performed and is
+    recorded in the premise. The item is nonetheless attached to a live, counted exposure — three
+    destructive-write events in eleven days, none opened — which a premise does not discharge. Split
+    per the 2026-09-08 precedent (DISPOSITION-914).
+  Validated premise: PREMISE-202 | Confidence: Moderate-High | Re-check: Monthly (2026-10-10)
+  Reflexive finding recorded rather than smoothed: PREMISE-143 has held since 2026-08-05 that near-miss
+    attenuation is prevented only by framing the CHANCE element in the recovery. The run wrote "but by
+    luck" — performed the prophylactic exactly — and used the sentence to close rather than to open. The
+    defect is in the routing, not the knowledge.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: INCORPORATED (PREMISE-202)
+    with REVISION-FLAGGED residue (REVISE-446)
+
+DISPOSITION-927:
+  Date: 2026-09-10
+  Item: PRESUMPTION-944 | Item type: PRESUMPTION (unstated — surfaced by inference)
+  15a result: NO-SUPPORT-FOUND (NOVELTY-FLAG, unfavourable sense) | 15a strength: None
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Neither direction found any source treating an oral report as exempt from record
+    discipline, and the one permissive regime imposes a STRICTER record requirement. 15b's controlled
+    experiment (VERIFIED, full text) shows the spoken channel retaining 2.5% of data after five cycles
+    with NO selectivity — important points lost at the same rate as trivial ones, which forecloses the
+    natural defence.
+  Disposition: INCORPORATE (PREMISE-203, Moderate-High)
+  Reasoning: Two primary-source-verified anchors, zero support in either direction, and a Critical-rated
+    realised exposure (two consecutive days of false morning reports on the only channel that reaches
+    the designer). Discounted from High for domain transfer, which 15b stated against its own direction
+    and which is adopted verbatim: TofuEval's RATES do not transfer, only its two structural findings.
+  ARBITRATION RECORDED, because the directions disagreed on register coverage: 15a read the item as
+    nearly fully held by PREMISE-194/195 and as the same shape as the 2026-09-09 flag; 15b read the
+    shapes as adjacent but not identical — absence-never-arriving versus a positive assertion in an
+    unverified channel — so yesterday's remedy does not reach it. 15c SUSTAINS 15b. The general rule is
+    held; the channel clause is not, and 15b's diagnosis of why the presumption survived three ACTIVE
+    High-confidence denials is accepted: they were all read as governing files.
+  Validated premise: PREMISE-203 | Confidence: Moderate-High | Re-check: Monthly (2026-10-10), jointly
+    with PREMISE-195
+  Systemic membership retained: named in REVISE-445 as the fourth instance of the T+n defect, because
+    the control that answers the other three is what would have caught the two false morning reports.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Current status: INCORPORATED (PREMISE-203)
+
+---
+
+### 15c run note — 2026-09-10
+
+**Register coverage is now the run's dominant finding, for the second consecutive cycle.** Five of six
+items were substantially or wholly answered by `validated_premises.md` BEFORE either agent searched;
+last cycle it was four of five. Three of the six minted nothing because an ACTIVE premise already denies
+them. Both agents raised this independently and 15a stated the implication plainly: a register grep may
+belong BEFORE routing rather than after. 15c agrees and records it as a finding against the 14a/14b
+routing step, not against the searches — which were correctly narrowed to the declared residue in every
+case, exactly as the intake instructed. **Recommended for the next 14a/14b run: grep the register at
+routing time and route only the residue, declaring what the register already holds.** This is the same
+shape as PREMISE-107's defect and it is now measurable: 9 of 11 items across two cycles.
+
+**Verification level, stated rather than absorbed.** Four external sources were read at primary-source
+level this run and every one of them is load-bearing: Bessey et al. 2010 (15a, full PDF) anchors
+PREMISE-201 clause (1); Yorio & Moore 2018 (15a, article body) anchors PREMISE-202 clauses (2) and (4);
+the RCSEng 2007 handover experiment and TofuEval Table 2 (15b, both full text) anchor PREMISE-203. Every
+other source in all twelve result files is snippet, abstract or practitioner level and is marked as such
+at its own source line, per PREMISE-188's operational form. **Two failures are recorded rather than
+glossed:** the AJR mammography page returned an empty body, so PREMISE-201's clause-(3) quote is
+unverified at source; and the Zimmermann ICSE'12 paper does not publish the absolute reopen rate its
+search summary implied, which 15b caught by reading it — the estimate in REVISE-445 inherits that
+weakness and is flagged there as a prompt to measure rather than a finding.
+
+**Non-independence, weighted down at reconciliation.** 15b disclosed that four of its six files rest
+substantially on ACTIVE register premises rather than on fresh external evidence (1297 on PREMISE-188;
+939 on -183/-151; 940 on -183/-143; 941 on -143). Those files were weighted as APPLICATIONS of existing
+premises to new artefact classes, not as independent corroboration. The one place a premise was minted
+over an item with heavy register overlap — PREMISE-202 — carries an explicit non-duplication argument
+against PREMISE-143 and rests on the one source 143 does not hold.
+
+**The pipeline's own adversary is now under monitor.** MONITOR-599 asks, on 15b's own evidence, whether
+assigned adversarial review produces genuine challenge or cognitive bolstering. It bears on 15b by
+construction, and therefore on every premise in this register. The cheap in-house test is named there:
+a blind re-run of one dispositioned item by an agent not told its assigned direction.
+
+**Standing, unchanged and now in its sixth consecutive cycle:** the 15d re-trigger lane is unserved; 168
+`[RE-TRIGGER by 15d]` items are untagged, oldest 2026-07-05. Two more MONITOR items were added to that
+lane today. 15c can state this and cannot serve it. OPEN-117 remains open at 63 days.
+
+*Run note written by the 15a/15b/15c pipeline, 2026-09-10. This note ends here.*

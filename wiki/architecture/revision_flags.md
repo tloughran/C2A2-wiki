@@ -14112,3 +14112,172 @@ REVISE-444:
     Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Item type: PRESUMPTION (unstated) ×3
     Transform at this step: net evaluation, then consolidation of three items into one defect per DEFECT-J
     Current status: REVISION-FLAGGED
+
+---
+
+## 2026-09-10 — 15c REVISE intake (2026-09-09 evening cohort)
+
+REVISE-445 (CONSOLIDATED — four items, one defect):
+  Date: 2026-09-10
+  Items: ASSUMPTION-1297, PRESUMPTION-939, PRESUMPTION-940, PRESUMPTION-944
+    (DISPOSITION-922, -924, -925, -927)
+  Item types: ASSUMPTION (stated) x1; PRESUMPTION (unstated — surfaced by inference) x3
+  Consolidated because 15b filed SYSTEMIC-RISK-FLAG_2026-09-10 over exactly this set and the flag's own
+    reconciliation instruction forbids stacking. Filing four flags would have manufactured four defects
+    out of one, which is the self-amplification the 2026-08-12 run named and the 2026-09-09 run avoided
+    the same way.
+  THE DEFECT, in 15b's words and adopted: every control in this estate terminates at the moment of
+    production and none operates at T+n. A label written and not consulted (1297). A finding recorded and
+    not revisited (939). A fix applied and not re-checked (940). A report spoken and not corroborated
+    (944). Four items, four artefact classes, one missing control.
+  What the evidence says, per item:
+    1297 — 15a PARTIALLY-SUPPORTED (Moderate conditional / Weak as stated); 15b CHALLENGED (Strong).
+      The two directions converge precisely: the ATTACHMENT limb works and is already validated at
+      PREMISE-188(3); the READING limb is where the guard fails, which is what the intake told both
+      agents to test. Hsiao & Schneider (2021), Quantitative Science Studies 2(4):1144-1169 — 5.4% of
+      13,252 post-retraction citation contexts acknowledged the retraction [register-held at
+      PREMISE-177; not counted twice]. Preregistration works through IN-PRINCIPLE ACCEPTANCE — an
+      editorial gate OBLIGED to read the preregistered test (43.66% vs 96.05% first-hypothesis
+      confirmation, Scheel, Schijen & Lakens 2021, AMPPS 4(2) [SNIPPET-LEVEL]) — and absent such a gate
+      the majority of preregistered articles add or drop hypotheses without disclosing it. What is
+      challenged is the word "adequate", not the practice of filing the falsifiers.
+    939 — 15a NO-SUPPORT-FOUND (None) as stated, Moderate for a conditional; 15b CHALLENGED (Strong).
+      Vaughan's O-ring deviations were documented, formally reviewed and formally waived, repeatedly:
+      the documentation was the MEDIUM of normalisation, not the barrier to it [register-held at
+      PREMISE-151]. The precedent limb fails harder than the containment limb — the waiver literature's
+      own corrective is that the next deviation must be checked against the ORIGINAL standard, because
+      the documented exception otherwise becomes the new baseline.
+    940 — 15a NO-SUPPORT-FOUND (None) with a NOVELTY-FLAG in the UNFAVOURABLE sense; 15b CHALLENGED
+      (Strong). No source in any domain treats application-time verification as sufficient, and several
+      exist specifically because it is not: ISO 9001:2015 cl. 10.2 and 21 CFR 820.100 mandate a SECOND,
+      effectiveness verification, and "closed without verification of effectiveness" has been among the
+      most frequently cited FDA deficiency categories for over a decade [the ISO clause is already
+      register-held inside PREMISE-143]. Declarative IaC, GitOps reconciliation, drift detection and
+      immutable infrastructure all exist on the contrary premise. The estate's specific mechanism is
+      worse than generic drift: an application that rewrites its configuration from an in-process copy is
+      an ACTIVE COMPETING WRITER, so a fix's expected lifetime is one relaunch and its reversion is
+      silent.
+    944 — 15a NO-SUPPORT-FOUND (None), NOVELTY-FLAG unfavourable; 15b CHALLENGED (Strong). Dispositioned
+      INCORPORATE (PREMISE-203) because the corrective is clean and both directions converged on it.
+      944 is named here anyway: its SYSTEMIC MEMBERSHIP stands, and the T+n control that answers the
+      other three is what would have caught the two false morning reports.
+  NO PREMISES MINTED FOR 1297, 939 OR 940, AND THAT IS THE FINDING — the second consecutive cycle in
+    which this is the finding. Each is already denied by an ACTIVE premise: 1297 by PREMISE-188 (a
+    qualifier travels with the claim or it does not travel) with PREMISE-177 and PREMISE-107 supplying
+    the reading-step evidence; 939 by PREMISE-183 clause (1) (a filed flag is a live obligation with a
+    closure test, not a discharged duty, ACTIVE since 2026-08-25) and PREMISE-116 (a finding does not
+    change the behaviour it describes) and PREMISE-151; 940 by PREMISE-171, PREMISE-183(1) and
+    PREMISE-143's ISO 10.2 split, with PREMISE-200 supplying the admissible instrument. Minting them
+    again is barred by PREMISE-138. This is PREMISE-107's defect for the second consecutive intake: a
+    validated premise as a record that something was once concluded, and nothing more.
+  A CONVERGENCE WORTH MORE THAN THE ITEMS, recorded because it is the only constructive result of the
+    four: three INDEPENDENT regimes now name the same operative feature. Aviation's Minimum Equipment
+    List / Acceptable Deferred Defect regime is the one case 15a found in which a logged defect IS a
+    contained defect — and it achieves that through pre-approved deferrability, an operational
+    restriction, and a rectification deadline whose EXPIRY MECHANICALLY GROUNDS THE AIRCRAFT. CAPA
+    (PREMISE-183) and the NTSB/GAO material (PREMISE-164) converge on the same shape. The operative
+    feature is an ENFORCED DEADLINE WITH AN EFFECTOR, and this estate has deadlines without effectors
+    everywhere. NOT MINTED as a premise: 15a marks the MEL material as operator- and training-provider-
+    level with no regulatory text opened and day counts unverified. It is carried here for Tom and for
+    15d, not asserted.
+  What is at risk:
+    (a) All 218 revision flags (940). If a fix applied is not a fix held, the register is a record of
+        intentions rather than states, and the estate cannot name WHICH of the 218 no longer describe
+        reality. On the best available reopen figure (6-10%, and see the negative below), the expected
+        number is mid-teens to low twenties.
+    (b) Every cross-tradition bridge filed under "to be attacked, not adopted" (1297) — which is C2A2's
+        central productive activity, so the exposure is to the substance, not to the bookkeeping.
+    (c) OPEN-187 / ASSUMPTION-1283 (939). 15b's reading is that "precedent as authorization" and "a
+        defect logged is a defect contained" are one exposure seen from two ends. If OPEN-187 is unruled,
+        the estate is carrying it twice under two names and will close neither.
+  Recommended action, in priority order:
+    (1) ONE control, not four: a T+n re-read obligation with an external reader. Every artefact that
+        asserts a state — a label, a finding, an applied fix, a spoken report — carries a date at which
+        something OTHER than its producer must re-read it against the world. This is the same shape as
+        the 2026-09-09 flag's negative-observation record and SHOULD BE BUILT AS ONE MECHANISM WITH IT,
+        but they are different defects and must be specified as two triggers: absence-not-arriving
+        (09-09) and arrived-then-never-re-read (this flag).
+    (2) MEASURE THE 218 (940). This is cheap and closes a gap the literature cannot close: re-verify the
+        revision flags' asserted states by content hash per PREMISE-200 and publish the recurrence rate.
+        15a searched and found NO published recurrence or decay rate for applied configuration fixes
+        anywhere — that absence is a genuine measurement gap, and the estate is in a position to close it
+        for itself rather than wait on a literature that does not exist.
+    (3) RULE ON OPEN-187 (939), or state that the estate is carrying one exposure under two names.
+    (4) FOR 1297, DO NOT ADD A LABEL. Add the obliged reader. The label is already there and is already
+        validated at PREMISE-188; what is missing is a step that CANNOT PROCEED without reading it.
+  A WARNING AGAINST THE OBVIOUS REMEDY FOR 1297, and it is the single genuinely new external result of
+    this run: Nemeth's comparison of ASSIGNED devil's advocacy against AUTHENTIC dissent found assigned
+    advocacy produced cognitive BOLSTERING of the original position, with little advantage over no
+    dissent at all. So "we will attack it ourselves" may entrench the bridge while producing a record
+    that it was tested. This is carried INSIDE this flag rather than routed to MONITOR as a literature
+    item — but it also bears reflexively on 15b, which is this pipeline's assigned devil's advocate, and
+    that reading is filed as MONITOR-599 because it is one direction only, at snippet level, and the
+    adversarial-collaboration outcome literature was declared NOT REACHED by both agents.
+  Urgency: High
+  DISCHARGE OF THE FLAG-CHANNEL WARNING, recorded because it was made in advance and would otherwise
+    come true: 15b's 2026-09-10 flag records its consecutive-filing ordinal for that lane as 2, and
+    states that a third arriving with no disposition on the first two means the flag channel is itself
+    the defect. BOTH ARE NOW DISPOSITIONED. The 2026-09-09 flag (absence-read-as-all-clear) is carried in
+    the 2026-09-09 REVISE entry and its recommended action (1) above is now written as the joint
+    mechanism it asked for. The 2026-09-10 flag is this entry. The ordinal is reset; the underlying
+    complaint — that neither has an owner — is not, and is restated below.
+  Owner: UNASSIGNED, no deadline, no threshold. Filed on the same day as PREMISE-183, which says a filed
+    flag is a live obligation with a closure test, and as a disposition whose subject is that controls
+    terminating at production do not work. THIS FLAG IS ITSELF A T+0 ARTEFACT. Its uptake is the test of
+    the four items it dispositions, and the pipeline cannot assign an owner to itself.
+  Full results: lit_search_results/{for,against}/ASSUMPTION-1297_*.md ·
+    lit_search_results/{for,against}/PRESUMPTION-939_*.md ·
+    lit_search_results/{for,against}/PRESUMPTION-940_*.md ·
+    lit_search_results/{for,against}/PRESUMPTION-944_*.md ·
+    lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-10_no-second-look_1297-939-940-944.md
+  Status: OPEN — awaiting Tom or master agent
+  PROVENANCE:
+    Origin: 14a (1297) and 14b (939, 940, 944); Chain: [14a/14b → 15a, 15b → 15c]
+    Transform at this step: net evaluation of four items, then consolidation into one defect on the
+      systemic flag's own instruction
+    Current status: REVISION-FLAGGED
+
+REVISE-446:
+  Date: 2026-09-10
+  Item: PRESUMPTION-941 (DISPOSITION-926) — the LIVE EXPOSURE only. The corrective proposition was
+    INCORPORATED this run as PREMISE-202; this flag is what the premise does not close.
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  What is at risk: the class of unguarded destructive operations, and every incident rate this estate
+    will ever compute.
+  The exposure, stated as a count rather than a worry: ASSUMPTION-1294's over-deletion was harmless
+    because a regeneration path happened to exist, and the named repair is ONE NARROWED GLOB — it
+    addresses the glob, not the class. With PREMISE-195's 2026-08-31 pair that is THREE destructive-write
+    events in eleven days on an estate whose convention has been not to open items for the ones that end
+    well. Under PREMISE-202 clause (3), the estate's incident population is therefore severity-filtered
+    by construction and its denominator is unknown.
+  What the evidence says: 15a NO-SUPPORT-FOUND (Weak) as stated; 15b CHALLENGED (Strong). Both directions
+    are against the presumption, from independent literatures — see PREMISE-202 for the citations and for
+    the correlation disclosure.
+  Recommended action:
+    (1) OPEN the three events retrospectively as items at the proportionate weight PREMISE-202 clause (4)
+        specifies. Do NOT route them to a new register; PREMISE-195's existing elevated re-check due
+        2026-09-30 is the right home, as n=5 and n=6 of its in-house series.
+    (2) Answer the CLASS, not the instance: enumerate destructive operations (delete, overwrite, truncate,
+        force-push, mass-rename) that run without a guard or a reversibility path. PREMISE-176 already
+        holds the governing rule — for an irreversible operation, review is not a control, reversibility
+        is. This is a grep and an inventory, not a research question.
+    (3) DO NOT institute a near-miss COUNT as the remedy. PREMISE-202 clause (4) carries Hallowell et
+        al.'s 96-98%-random-variation result specifically to forestall this. Record creation is the
+        control; the count is not.
+  Urgency: High
+  Owner: UNASSIGNED
+  Full results: lit_search_results/{for,against}/PRESUMPTION-941_*.md
+  Status: OPEN — awaiting Tom or master agent
+  PROVENANCE:
+    Origin: 14b; Chain: [14b → 15a, 15b → 15c]; Item type: PRESUMPTION (unstated)
+    Transform at this step: net evaluation; corrective INCORPORATED as PREMISE-202, live exposure split
+      out and flagged rather than closed with the premise
+    Current status: REVISION-FLAGGED
+
+*A NEGATIVE THIS RUN WILL NOT LAUNDER, carried from 15b and repeated here because the 6-10% figure
+appears in REVISE-445's risk statement: the Zimmermann et al. ICSE'12 paper does NOT publish an absolute
+bug-reopen rate. It reports ratios against undisclosed baselines. 15b's search summary implied otherwise
+and reading the paper revealed it did not — which is the exact class of error this register has been
+burned by. The 6-10% figure comes from a different, SNIPPET-ONLY source (the EMSE 2022 "Revisiting
+reopened bugs" line) and the "mid-teens to low twenties" estimate in REVISE-445 inherits that weakness
+in full. It is an order-of-magnitude prompt to go and measure, not a finding.*
