@@ -13,11 +13,11 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference: vainglory as high precision on the 'how I appear in others' generative models' term; pusillanimity as self-model precision set below true capacity)"
   - "traditions/fredrickson/prs_triplets.md (display as counterfeit positivity resonance vs genuine connection; pusillanimity as a chronically narrow repertoire from low self-estimate, not from fear of harm)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-05 attention as ontological act, world-constituting mode of attending — vainglory as attention captured by one's own representation; PRS-05 is also where the precision-weighting formalism lives in the wiki)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: glory as the manifestation of excellence; its vanity is emptiness — referred to nothing real or to unworthy judges)"
+  - "traditions/stump/prs_triplets.md (glory as the manifestation of excellence; its vanity is emptiness — referred to nothing real or to unworthy judges)"
   - "Wright canonical: boasting only in the Lord / in the cross, Gal 6:14, 1 Cor 1 (Paul and the Faithfulness of God); Rohr canonical: vainglory as the False Self's whole economy; pusillanimity as the failure to claim the True Self's given largeness (Immortal Diamond)"
 evidence_strength_summary: "Graded per record rather than averaged per tradition (corrected 2026-09-02). Empirical and firm: the relational leg — Fredrickson PRS-01, Confidence High, vagal tone and upward spirals. Medium and partly interpretive: the self-estimate and appearance legs — Friston PRS-04 and McGilchrist PRS-05 are both labelled (Implicit) and both Confidence Medium, so the predictive-coding formalism is mature in the literature but the C2A2 records carrying it are reconstructions. Analytic-philosophical/theological: the vainglory-as-misordered-esteem typology, Stump PRS-22, Confidence Medium. Theological: the claim that worth should be sourced in God's verdict rather than self-display or self-diminishment — Rohr PRS-16 (Confidence Medium-High) and Wright, whose half of that bullet is a canonical-work citation carrying no id."
 tags: [synthesis, day/185, theme/vainglory, theme/self-image, q/132, q/133]
-last_qc_at: "2026-09-02T16:22:08"
+last_qc_at: "2026-09-10T06:53:34"
 last_qc_outcome: "rewrote"
 ---
 
@@ -43,7 +43,7 @@ The self can be mis-perceived in two opposite ways, and both are failures of the
 
 **McGilchrist** names the cognitive signature of vainglory directly: attention captured by one's own *representation* — the explicit, abstractable image of oneself in others' minds — rather than by the living work or the living other. It is the left hemisphere's attachment to the token in its purest social form. Pusillanimity, conversely, is a failure of the right hemisphere's reverent confidence: the agent cannot let itself be drawn out toward the great good because it has mis-read its own standing before it.
 
-**Stump** enters as Thomistic interlocutor, holding the precise sense of "vain": glory is the manifestation of real excellence, and its vanity is *emptiness* — manifestation referred to nothing real, or to judges whose recognition is worthless. The disorder is not visibility as such but visibility *decoupled from the reality it should show*.
+**Stump** holds the precise sense of "vain": glory is the manifestation of real excellence, and its vanity is *emptiness* — manifestation referred to nothing real, or to judges whose recognition is worthless. The disorder is not visibility as such but visibility *decoupled from the reality it should show*.
 
 **Wright** grounds the re-sourcing. Paul's resolution of the glory problem is not to seek no glory but to relocate its source: "Far be it from me to boast except in the cross of our Lord" (Gal 6:14), and "let the one who boasts, boast in the Lord" (1 Cor 1:31). The cure for vainglory is not self-effacement but a true object of glory — God's act, not the self's image. **Rohr** gives the contemplative form on both sides: vainglory is the False Self's *whole economy*, the self constructed for and sustained by being seen; and pusillanimity is, in his terms, the failure to claim the True Self's *given* largeness — a false humility that declines the greatness God has actually conferred. For Rohr both are healed in the same move: worth received in union, neither performed for an audience nor disbelieved.
 

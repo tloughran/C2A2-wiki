@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-05: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-09-02T06:36:01"
+last_qc_at: "2026-09-10T02:30:39"
 last_qc_outcome: "pass"
 ---
 

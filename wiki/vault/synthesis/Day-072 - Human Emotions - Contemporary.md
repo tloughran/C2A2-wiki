@@ -3,9 +3,9 @@ day: 72
 title: "Human Emotions (Contemporary)"
 pairs_with: "[[Day-072 - Human Emotions]]"
 length_target_words: 1500
-length_actual_words: 2138
-length_ratio_to_target: 1.425
-length_measurement_note: "Recounted 2026-08-24 with the constitution's regex over the parsed body (qc_sweep.split_frontmatter) after four Bridges bullets were anchored; 1762 -> 2138, and every added word is a file path, a PRS id, or the register content justifying it. No claim was added, removed or reweighted. NEW EVIDENCE ON THE STANDING TIER ESCALATION: the PAIRED TRANSCRIPT file already carries `length_tier: medium` (word_count 2918), so this is not a policy question but a two-file disagreement — the transcript says medium, the synthesis says short. Against MEDIUM the post-anchor count reads 0.972, inside +/-10%; against the SHORT label it reads 1.425, outside +/-25%. The file is correctly sized for the tier its own transcript assigns. Escalated, not rewritten; the tier label is Tom's to settle (standing since 2026-06-22)."
+length_actual_words: 2207
+length_ratio_to_target: 1.471
+length_measurement_note: "Recounted 2026-09-09, layout-aware over the parsed body (qc_sweep.split_frontmatter) with the auto-linked Related-records footer excluded: 2207 words, superseding the 2026-08-24 figure of 2138 (a +69 drift, above the ~1% heading-count convention, so the field is corrected rather than tolerated). The 2026-08-24 anchoring pass took this file 1762 -> 2138; every added word was a file path, a PRS id, or the register content justifying it, and no claim was added, removed or reweighted. STANDING TIER ESCALATION, arithmetic restated only: the PAIRED TRANSCRIPT carries `length_tier: medium` (word_count 2918), so this is a two-file disagreement, not a policy question — the transcript says medium, the synthesis says short. Against MEDIUM the recount reads 1.003, essentially exact; against the SHORT label it reads 1.471, outside +/-25%. The file is correctly sized for the tier its own transcript assigns. Escalated, not rewritten; the tier label is Tom's to settle (standing since 2026-06-22)."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-21 positivity resonance as measurable behavioural signature of love; PRS-35 affective states as network configuration rather than dedicated affect centres)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "Synthesis written from Summa I-II Q.22-23 + C2A2 fra
 mind_first_reframe: "Aquinas's eleven-passion catalog (Q.23) preserves under a contemporary appraisal-and-active-inference frame as the alter's distinct affective-modes of registering relational substrate-state: love/hate as primary valence; desire/aversion as future-orientation; joy/sorrow as present-state-evaluation [concupiscible]; hope/despair as future-attainability; fear/daring as threat-response; anger as obstruction-response [irascible]. The sensitive-appetite locus (Q.22) preserves as the embodied register that interfaces with intellective evaluation; affect is data, not noise."
 central_theme_thread: "Passions are the embodied-affective-interface through which the alter's perspective-limited apprehension of substrate-source-integration vs. dis-integration registers as feeling. Affect is computational signal of alignment-or-mismatch between current apprehension and felt-direction-toward-loving-unity; passions broaden the alter's repertoire (Fredrickson) when aligned with formal direction, narrow when misaligned. The alter's individuation-by-perspective-limitation is what produces affect at all — a fully integrated perspective would not need affect as signal."
 tags: [synthesis, day/072, theme/passions, theme/sensitive-appetite, theme/affective-interface]
-last_qc_at: "2026-09-02T00:21:47"
+last_qc_at: "2026-09-09T22:32:06"
 last_qc_outcome: "rewrote"
 ---
 # Day 72 — Contemporary Parallel: *Human Emotions, the Sensitive Appetite, and Affect as the Substrate-Network Integration Signal*

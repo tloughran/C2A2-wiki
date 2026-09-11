@@ -3,8 +3,8 @@ day: 184
 title: Magnificence (Contemporary)
 pairs_with: "[[Day-184 - Magnificence]]"
 length_target_words: 1500
-length_actual_words: 1697
-length_ratio_to_target: 1.131
+length_actual_words: 1693
+length_ratio_to_target: 1.129
 length_tier: short
 length_note: "The prior declaration of 1550 was recounted 2026-08-25 and found HONEST — exact to the word — which is worth recording against the standing presumption that this field understates. The file then went out of band on this review's own edits: 147 words of register disclosure (the Rohr abundance/overflow framing has no triplet and is anchored to the canonical work; PRS-03's named group settings in the Fredrickson register are worship and meditation, not shared making). Held rather than trimmed, because the added words are exactly the anchoring honesty the reviewer questions ask for."
 mind_first_reframe: "Magnificence is broaden-and-build externalized: a resourced agent letting its surplus flow outward into great, generative works for the shared world. Meanness is the inverse contraction — an over-applied scarcity model that hoards against a danger no longer real, so the agent stints on great works it has the means and occasion to do."
@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-35, Confidence High: building *the* kingdom, which is God's act, distinguished from building *for* the kingdom — present faithful work taken up into new creation)"
 evidence_strength_summary: "Broaden-and-build and the scarcity-prior account are empirical/formal (Fredrickson, Friston); the claim that great works participate in a divine abundance and last into new creation is theological (Rohr, Wright)."
 tags: [synthesis, day/184, theme/magnificence, theme/generative-overflow, q/134, q/135]
-last_qc_at: "2026-09-02T10:32:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-10T06:53:33"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 184 — Magnificence (Contemporary)
@@ -44,7 +44,7 @@ Surplus has to go somewhere, and an agent's disposition toward its own surplus i
 
 **McGilchrist** names the cognitive signature. In his key, the great work — the building, the made thing of scale and beauty — is the right hemisphere's mode: a creation answered to the whole, valued as living reality. Meanness is the left hemisphere's penny-counting, the grasp that measures and retains and cannot let resource flow toward something larger than its own ledger.
 
-**Stump** enters as Thomistic interlocutor, holding the distinction the reframe needs: magnificence is about the great *work*, not money-management. This matters for the contemporary version — it keeps the virtue from collapsing into "philanthropy" and locates it in the *making of great real goods*, which is what the broaden-and-build externalization is actually describing.
+**Stump** holds the distinction the reframe needs: magnificence is about the great *work*, not money-management. This matters for the contemporary version — it keeps the virtue from collapsing into "philanthropy" and locates it in the *making of great real goods*, which is what the broaden-and-build externalization is actually describing.
 
 **Rohr** grounds the theology. In Tom's PRS-form record of his work, creation is itself the first incarnation — the divine pattern present in what is made, not added to it afterward — so a human great work is a making inside a reality that is already God's making. The stronger claim the reframe wants, that grace is *overflow* rather than a scarce quantity and that meanness is the refusal of a God who pours out, is drawn from *The Universal Christ* directly: no triplet in the Rohr register states abundance or names scarcity, so that step is anchored to the canonical work and marked as the register's gap rather than dressed in an id it does not have. **Wright** adds the eschatological warrant: in *Surprised by Hope*, works done for the kingdom are not lost but *last into the new creation* — which makes the great work a genuinely long-horizon investment in the most literal sense, not spent into the void but built into what endures.
 

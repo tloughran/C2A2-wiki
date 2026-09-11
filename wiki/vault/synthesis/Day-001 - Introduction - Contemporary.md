@@ -26,7 +26,7 @@ Chesterton's Aquinas dreamed like a hunting dog: not pursuing systems for their 
 
 - **PRS triplet + Synergistic Coil (Tom Loughran)** — the project's own contribution. Convergence of Kuhn (problem as unit of progress), MacIntyre (tradition as P/R/S narrative), Levin via James (problem-solving under resource scarcity). The form in which Tom describes and interlinks every tradition.
 - **PRS-08 in the Loughran-tradition wiki ("Tradition-crossing inquiry"; formerly Stump-wiki PRS-01)** — Tom's PRS-form record of the silos problem as it surfaces in her work; a worked instance of the framework, not its origin.
-- **PRS-06 in the Stump-tradition wiki (MacIntyre tradition-vitality criterion)** — Tom's record of the test that maps onto Pius X's warning.
+- **PRS-06 in the Stump-tradition wiki (MacIntyre tradition-vitality criterion)** — Tom's record of the test that maps onto Pius X's warning. Carried at the register's own strength: labelled *(Implicit)*, Confidence Medium, and its Solution field is a C2A2 assessment of Loughran's — that Stump's body of work meets the criterion — rather than a claim Stump advances under that description.
 - **PRS-07 in the Stump-tradition wiki (Narrative cognition)** — Tom's record of Stump & Wolfe 2025 on knowledge transmitted through narratives. Day 1 *is* a narrative-epistemology episode (Aquinas-via-Chesterton).
 - **C2A2 Master Wiki** — `wiki/master/C2A2_master_wiki.md` — the contemporary *Summa* in form; Tom's design.
 - **FLAG-005 (Stump × Levin)** — final causality formally mapping onto Levin's morphogenetic teleology — the cleanest current Synergistic Coil candidate (one R bridging Stump's metaphysical and Levin's empirical P⇒S chains).
@@ -42,9 +42,9 @@ title: "Introduction (Contemporary)"
 pairs_with: "[[Day-001 - Introduction]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1719
-length_ratio_to_target: 1.146
-length_note: "Over tier tolerance (short tier 1500 ±10% = 1350-1650; 1705 is 3.3% over the upper bound, well inside ±25%). Day 1 is the methodological frame for Days 2+; pre-dates the central-theme articulation. Recounted 2026-08-26 with the constitution's regex over the parsed body (YAML footer and Related-records footer excluded): pre-repair true count 1662 against a declared 1664 — overstated by 2, i.e. near-exact. The 2026-08-26 reviewer repair added 43 words in total and no new argument: 16 for the CROSS-002 program count and the Wright/Rohr node pointers, and 27 for disclosing that Stump PRS-04 is marked (Implicit)/Medium and is Loughran's integration claim rather than Stump's own move."
+length_actual_words: 1757
+length_ratio_to_target: 1.171
+length_note: "Over tier tolerance (short tier 1500 ±10% = 1350-1650; the file's verified count of 1757 is 6.5% over the upper bound, ratio 1.171, well inside ±25%). Day 1 is the methodological frame for Days 2+; pre-dates the central-theme articulation. Recounted 2026-08-26 with the constitution's regex over the parsed body (YAML footer and Related-records footer excluded): pre-repair true count 1662 against a declared 1664 — overstated by 2, i.e. near-exact. The 2026-08-26 reviewer repair added 43 words in total and no new argument: 16 for the CROSS-002 program count and the Wright/Rohr node pointers, and 27 for disclosing that Stump PRS-04 is marked (Implicit)/Medium and is Loughran's integration claim rather than Stump's own move. Arithmetic reconciled 2026-09-10: the chain above (1662 pre-repair + 43) reaches 1705, but the declared field and an independent recount both return 1719 EXACTLY, so 14 words entered after 2026-08-26 — almost certainly in the 2026-09-03 pass, which marked 'rewrote' without restating the note. Those 14 are not decomposed here because no pre-2026-09-03 baseline survives to decompose them against; recorded rather than guessed. The note's CONCLUSION is unaffected, since 1719 and 1705 both sit well inside ±25%, but the specific figure it self-certified from had gone stale — the recorded shape in which a repair batch stales the length arithmetic without touching the prose, and the reason a recount was run instead of the note being trusted. This run then added 38 words of its own (1719 -> 1757, ratio 1.146 -> 1.171) restoring Stump PRS-06's (Implicit)/Medium/Loughran-assessment marking in the Bridges section; that increment IS decomposed, because the 1719 baseline was verified exact before the edit."
 karpathy_wiki_sources:
   - "wiki/traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry, PRS-09 synergistic coils; formerly Stump-wiki PRS-01, PRS-03 — re-homed 2026-06-11)"
   - "wiki/traditions/stump/prs_triplets.md (PRS-06 MacIntyre tradition-vitality criterion, PRS-07 narrative cognition)"
@@ -55,7 +55,7 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ, Medium — the record behind Day 1's 'divine pattern present in all creation' gesture; node exists, verified 2026-08-26)"
 mind_first_reframe: "Day 1 is the methodological frame, not yet the metaphysical reframe: Aquinas's Summa-as-instruction-of-beginners is matched by the C2A2 wiki as contemporary tradition-accelerator scaffold (Karpathy's compounding-knowledge thesis + MacIntyre's tradition-vitality criterion + Kuhn's solved-problem-as-unit-of-progress). The mind-first move proper begins with Day 2's 'Does God exist?'; Day 1 establishes that the inquiry has the right architectural shape to receive it."
 central_theme_thread: "Pre-dates the central theme articulation (2026-04-27 onward). Day 1 engages the *form* of the inquiry — what makes a body of knowledge one trajectory beginners can follow — without yet stating the perspective-limitation/loving-unity claim. From Day 2 forward the central theme is explicit; Day 1 reads as the staging ground."
-last_qc_at: "2026-09-03T16:26:46"
+last_qc_at: "2026-09-10T14:30:24"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/001, theme/method, theme/scaffold]
 

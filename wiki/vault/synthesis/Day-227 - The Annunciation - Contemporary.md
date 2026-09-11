@@ -3,19 +3,20 @@ day: 227
 title: The Annunciation (Contemporary)
 pairs_with: "[[Day-227 - The Annunciation]]"
 length_target_words: 1500
-length_actual_words: 1622
-length_ratio_to_target: 1.081
+length_actual_words: 1682
+length_ratio_to_target: 1.121
+length_note: "Pre-edit body recounted to 1622, EXACTLY the stored field. The 2026-09-10 QC pass added +60 words of apparatus only — register Confidence grades stated on the Friston, Fredrickson, Wright and Rohr PRS-01 bullets, with the speculative weight on the Fredrickson bullet relocated from the record (High) to the application. No claim or citation target altered. At 1.121 this sits outside ±10% and inside ±25%; informational, not a tier error."
 length_tier: short
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-02 faithful improvisation) — Mary's fiat as a covenantal-representative act on the community's behalf"
-  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler) — free consent as an act under uncertainty, aligning to the One who sees more"
-  - "traditions/fredrickson/prs_triplets.md (PRS-03 micro-moment resonance) — the Annunciation as a high-quality attuned encounter eliciting free assent"
-  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing; PRS-50 self-donation as God's mode of being, added 2026-09-01, Confidence Medium, guest-voice caveat: Delio extracts under Rohr's endorsement) + Luke 1:26-38"
+  - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, Confidence High; PRS-02 faithful improvisation, Confidence High) — Mary's fiat as a covenantal-representative act on the community's behalf"
+  - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler, Confidence Medium, Label-marked (Implicit)) — free consent as an act under uncertainty, aligning to the One who sees more"
+  - "traditions/fredrickson/prs_triplets.md (PRS-03 scale-bridging in agent coupling / micro-moment resonance, Confidence High) — the Annunciation as a high-quality attuned encounter eliciting free assent"
+  - "traditions/rohr/prs_triplets.md (PRS-01 non-dual knowing, Confidence High; PRS-50 self-donation as God's mode of being, added 2026-09-01, Confidence Medium, guest-voice caveat: Delio extracts under Rohr's endorsement) + Luke 1:26-38"
 evidence_strength_summary: "Mary's free act of faith ('more blessed in receiving the faith of Christ than in conceiving the flesh') received 'on behalf of humankind' = theological, and the central-theme keystone for free consent; consent under uncertainty to one who sees more ~ active inference (Friston) = speculative-formal (medium); the Annunciation as attuned encounter eliciting assent ~ positivity resonance (Fredrickson) = empirical-as-physiology applied speculatively (medium); the fiat as covenant-representative incorporation = scriptural (Wright, strong); central-theme fit (a limited perspective freely aligning to the whole, representatively for the community) = strong."
 mind_first_reframe: "Mary's fiat is read as the limit case of an agent freely committing its generative model to a more-seeing authority under uncertainty (active inference), elicited by a resonant encounter (Fredrickson), and given representatively for the community."
 central_theme_thread: "The free yes of one limited perspective to the One who sees the whole, given 'on behalf of humankind' — a covenant-act opening the incorporation of the many; the individual complement to Day 226's tradition-level development."
 tags: [synthesis, day/227, theme/free-consent-on-behalf-of-the-community]
-last_qc_at: "2026-09-02T08:23:47"
+last_qc_at: "2026-09-10T04:25:14"
 last_qc_outcome: "rewrote"
 ---
 
@@ -49,10 +50,10 @@ The project's banner is that the limited "work out [their] salvation in fear and
 
 ## Bridges
 
-- **Mary's free consent to the unseen, on the angel's authority ↔ an agent freely committing its generative model to a more-seeing authority under uncertainty** — Tom's PRS-form record of Friston, PRS-04. *Why:* the fiat is the limit case of the central-theme posture performed as a free act. Evidence: **speculative-formal (medium)**.
-- **The Annunciation eliciting assent rather than compelling it ↔ a high-quality attuned resonant encounter** — Tom's PRS-form record of Fredrickson, PRS-03. *Why:* the manner of the encounter frees rather than coerces the consent. Evidence: **empirical-as-physiology, applied speculatively (medium)**.
-- **The fiat as covenant-act on the community's behalf ↔ salvation as incorporation; faithful improvisation of the next act** — Luke 1:26-38; Tom's PRS-form record of Wright (PRS-05, PRS-02). *Why:* one limited perspective's free yes opens the incorporation of the many. Evidence: **scriptural (strong)**.
-- **Participatory faith in the unseen without demanding visibility ↔ non-dual knowing** — Tom's PRS-form record of Rohr, PRS-01. *Why:* the knowing that can say yes to the unseen as real. Evidence: **theological/contemplative**.
+- **Mary's free consent to the unseen, on the angel's authority ↔ an agent freely committing its generative model to a more-seeing authority under uncertainty** — Tom's PRS-form record of Friston, PRS-04 (Confidence **Medium**, Label-marked *(Implicit)*). *Why:* the fiat is the limit case of the central-theme posture performed as a free act. Evidence: **speculative-formal, Medium** — stated rather than assumed, because PRS-04 is one of the register's implicit reconstructions and is not a mature empirical result.
+- **The Annunciation eliciting assent rather than compelling it ↔ a high-quality attuned resonant encounter** — Tom's PRS-form record of Fredrickson, PRS-03 (Confidence **High**). *Why:* the manner of the encounter frees rather than coerces the consent. Evidence: the record is **empirical (physiology of positivity resonance), High**; the **application to the Annunciation is speculative (medium)** — the softness is in reading a scriptural encounter through the coupling mechanism, not in the record.
+- **The fiat as covenant-act on the community's behalf ↔ salvation as incorporation; faithful improvisation of the next act** — Luke 1:26-38; Tom's PRS-form record of Wright (PRS-05, PRS-02 — both Confidence **High**). *Why:* one limited perspective's free yes opens the incorporation of the many. Evidence: **scriptural, High**.
+- **Participatory faith in the unseen without demanding visibility ↔ non-dual knowing** — Tom's PRS-form record of Rohr, PRS-01 (Confidence **High**). *Why:* the knowing that can say yes to the unseen as real. Evidence: **theological/contemplative, High**.
 - **The descent asked for and consented to at the Annunciation ↔ self-donation as God's *mode of being* rather than a temporary posture** — Tom's PRS-form record of Rohr, PRS-50 (added 2026-09-01, Confidence **Medium**). *Why:* it reformulates the divine "need" that the fiat appears to presuppose as self-donative mode, which does not obviously require lack, so Mary's yes answers a giving rather than filling a gap. Evidence: **theological (medium)**, with the register's **guest-voice caveat carried explicitly**: the entry is built from Delio extracts with Rohr supplying selection and editorial framing, not authored argument — record it as what Rohr commends, not as Rohr's argued position.
 
 ## Where this leaves us

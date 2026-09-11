@@ -3,8 +3,8 @@ day: 194
 title: Virginity vs. Marriage (Contemporary)
 pairs_with: "[[Day-194 - Virginity vs Marriage]]"
 length_target_words: 2200
-length_actual_words: 2096
-length_ratio_to_target: 0.953
+length_actual_words: 2198
+length_ratio_to_target: 0.999
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling; PRS-36 pathology as mathematical attention disorder / precision failure)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Virginity as resource-reallocation toward the whole 
 mind_first_reframe: "Virginity is a finite agent reallocating its scarce relational and attentional bandwidth from a divided, dyadic load toward undivided modeling of the whole; lust is the corruption of the entire perception-policy-action pipeline, terminating in self-love where loving unity should stand."
 central_theme_thread: "The central claim is exactly staged here: self-love as disordered end versus loving unity as the agent's telos. Virginity is the deliberate widening of perspective toward the whole; the daughters of lust are the step-by-step collapse of a perspective back onto itself."
 tags: [synthesis, day/194, theme/perspective-and-union]
-last_qc_at: "2026-09-02T02:32:31"
+last_qc_at: "2026-09-09T22:31:49"
 last_qc_outcome: "rewrote"
 ---
 
@@ -54,8 +54,8 @@ This is the day the project's central claim is staged most directly. The claim i
 
 ## Bridges
 
-- **Virginity ↔ bandwidth reallocation toward the whole** — the Friston-tradition wiki (PRS-04). *Why:* declining a high-cost dyadic coupling concentrates scarce capacity on modeling/serving the whole. Evidence: **conceptual-speculative, empirical anchor**.
-- **Division of labor ↔ role-specialization in a collective agent** — the Friston-tradition multi-agent record (PRS-06) and master CROSS-069. *Why:* a corporate substance minimizing free energy needs differentiated perspectives, not uniform ones. Evidence: **mechanistic-speculative**.
+- **Virginity ↔ bandwidth reallocation toward the whole** — the Friston-tradition wiki (PRS-04). *Why:* declining a high-cost dyadic coupling concentrates scarce capacity on modeling/serving the whole. Evidence: **conceptual-speculative**, resting on a record that is **Confidence Medium** and Label-marked **`(Implicit)`** — a reading drawn out of active inference rather than a published result in that form. The earlier "empirical anchor" overstated it: PRS-04 is the ascending argument's sole load-bearing record and it is the register's weaker kind, which matters here because the whole scarce-bandwidth premise is the thing PRS-58 contests below.
+- **Division of labor ↔ role-specialization in a collective agent** — the Friston-tradition multi-agent record (PRS-06) and master CROSS-069. *Why:* a corporate substance minimizing free energy needs differentiated perspectives, not uniform ones. Evidence: **mechanistic-speculative**; PRS-06 is likewise **Confidence Medium** and Label-marked **`(Implicit)`**, so the division-of-labor defense is carried by an extension of the program rather than by a stated result. CROSS-069 verified live this run in the index's dash-block format.
 - **Redirected, not renounced, love ↔ scale-bridging resonance** — the Fredrickson-tradition wiki (PRS-02, PRS-03). *Why:* the contemplative's coupling to the whole is the same mechanism as the dyad's, retuned to a wider object. Evidence: **empirical (mechanism), medium**.
 - **Daughters of lust ↔ corruption of the perception–policy–action pipeline** — the Friston-tradition wiki (PRS-04, the organism as continuous hypothesis-testing modeler; PRS-36, pathology as a *mathematical attention disorder* — failure to appropriately ignore uninformative prediction error, with delusion as type-1 and neglect as type-2). *Why:* blindness/rashness/thoughtlessness/inconstancy track apprehension→counsel→judgment→command stage-for-stage, and "blindness of mind" is precisely a precision failure at apprehension rather than a want of information. Evidence: **mechanistic, medium**.
 - **Undivided devotion ↔ new-creation vocation; self-love ↔ the false self** — the Wright-tradition wiki (PRS-11, hope as the renewal of creation through God's arrival, replacing "wait until you die" with participation now) and the Rohr-tradition wiki (PRS-15, the ego / false self named as the thing Jesus liberates from, bridging mind-monist ego-as-construct to scriptural soteriology). *Why:* the kingdom-orientation that virginity frees for — and the daughters' "despair of the future world" is the loss of exactly the new-creation hope PRS-11 names; the inward curl that lust ends in is PRS-15's false self. Evidence: **theological**.

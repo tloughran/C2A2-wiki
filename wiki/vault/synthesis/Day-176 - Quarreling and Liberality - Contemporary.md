@@ -3,9 +3,10 @@ day: 176
 title: Quarreling and Liberality (Contemporary)
 pairs_with: "[[Day-176 - Quarreling and Liberality]]"
 length_target_words: 1500
-length_actual_words: 1614
-length_ratio_to_target: 1.076
+length_actual_words: 1818
+length_ratio_to_target: 1.212
 length_tier: short
+length_note: "RECOUNTED 2026-09-10 (layout-aware, body only: top frontmatter and the Related-records footer excluded, regex [A-Za-z']+). The pre-edit body measured 1614, EXACTLY the stored figure — this file is clear of the systemic length_actual_words understatement, as is every file in the 2026-09-10 cohort. The +204 is citation apparatus installed this pass: the Stump anchor, which had been carried with no PRS id anywhere in the file, resolved to PRS-29 (Medium) with PRS-11 (High) supplying the second-personal category, plus the register-gap disclosure and a Bridges bullet. No claim was added, removed or reweighted; no prose trimmed or padded. 1818 = 1.212 of the 1500 short-tier target, outside +/-10pct and inside +/-25pct, and the overrun is verification apparatus rather than substance. Tier verified correct: paired transcript word_count 1444, short."
 mind_first_reframe: "Under mind/conscious-realist monism the question becomes one about the size of the self: quarreling and liberality both answer how far an agent's circle of care extends and whether its conduct widens that circle or starves it."
 central_theme_thread: "Liberality is a plain down-payment on loving unity — acting as though the boundary between my good and yours were already thinner than fear insists — while the quarrelsome agent defends a small self against a world it meets as adversary."
 karpathy_wiki_sources:
@@ -14,11 +15,11 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-01 micro-moments cultivated into upward spirals; PRS-02 positivity resonance as measurable vagal tone, oxytocin, neural phase-locking)"
   - "traditions/carroll/prs_triplets.md (PRS-01 poetic naturalism — generosity as a real higher-level pattern, not an illusion)"
   - "traditions/rohr/prs_triplets.md (PRS-15 the ego/false-self frame as the contemplative pair for the constructed self)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: liberality as right second-personal stance toward goods)"
+  - "traditions/stump/prs_triplets.md (PRS-29 Confidence Medium — Aquinas's ethics reframed as second-personal relationship rather than disposition-acquisition, which is the form the liberality claim needs; PRS-11 Confidence High supplies the second-personal category itself. The register holds no liberality- or generosity-specific entry, so the application to Q.117 is the general account applied to this virtue, not a citation of it)"
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9) — no numbered Wright triplet covers this; anchor declined on a tested radius, see Bridges"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-09-02T02:32:33"
+last_qc_at: "2026-09-10T00:25:53"
 last_qc_outcome: "rewrote"
 ---
 
@@ -42,7 +43,7 @@ The leading move comes from **Levin's** program. In Tom's PRS-form record of Lev
 
 **Carroll** secures the ontology against deflation. His poetic naturalism (PRS-01 in the Carroll-tradition wiki) holds that higher-level descriptions — persons, meaning, value — are legitimate stories about the one physical substrate, not illusions to be explained away. So "generosity" names a real pattern at the agent level even though no new substance is added to physics. This matters: it lets the synthesis treat liberality as a genuine feature of the world rather than sentimental gloss.
 
-**Stump** enters as Thomistic interlocutor: liberality as a right second-personal stance toward goods — holding wealth in a way that keeps the other in view as a person to be served, not a rival to be out-held.
+**Stump** reads liberality as a right second-personal stance toward goods — holding wealth in a way that keeps the other in view as a person to be served, not a rival to be out-held. PRS-29 in the Stump-tradition wiki carries the form of that move (Confidence Medium): Aquinas's ethics reframed as second-personal *relationship* rather than disposition-acquisition, so that a virtue is constituted by how it holds the other rather than by what it accumulates in the agent. PRS-11 (Confidence High) supplies the second-personal category itself, though its own material is non-propositional knowledge of persons in the biblical suffering narratives, so the transfer to the disposition toward goods is this commentary's step. The register holds no liberality- or generosity-specific entry, so the application to Q.117 is the general account applied to this virtue rather than a citation of it.
 
 **Wright** grounds the scriptural form: Paul's collection for Jerusalem casts giving as *koinonia*, the grace (*charis*) of participation in one another's lives (2 Cor 8–9), where "God loves a cheerful giver" precisely because cheerful giving enacts the shared life of the new-creation community. **Rohr** gives the contemplative form: the non-grasping posture of the True Self, which has nothing to defend and so can release goods freely, against the False Self's compulsion to accumulate and to win every exchange.
 
@@ -62,6 +63,7 @@ Loving unity is the goal toward which each limited agent computes — and libera
 - **PRS-02 in the Levin-tradition wiki** (cancer as defection from the body's cooperative morphogenetic community) — the empirical face of the same claim, seen from its failure side: cells cooperate into a body by holding a boundary of concern wider than the single cell, and cancer is that boundary collapsing back to one. PRS-40 names this register entry's own track record as what its criterion inherits. *Empirical, Confidence High.*
 - **PRS-01 + PRS-02 in the Fredrickson-tradition wiki** — PRS-01 carries the bond-building (micro-moments of positivity resonance cultivated into upward spirals of connection); PRS-02 carries the *measurability* the bullet leans on (positivity resonance correlated with vagal tone, oxytocin, neural phase-locking). Generosity generates these moments; quarreling starves them. *Empirical, both Confidence High.*
 - **Carroll PRS-01 (poetic naturalism)** — generosity as a real higher-level pattern, not an illusion atop physics. Verified at the entry body: higher-level descriptions are legitimate stories about one substrate, requiring no ontological addition. *Formal, Confidence High.*
+- **Stump PRS-29 + PRS-11** (`traditions/stump/prs_triplets.md`) — PRS-29 (Confidence **Medium**) reframes Aquinas's ethics as second-personal relationship rather than disposition-acquisition, which is what makes liberality a matter of how the agent holds the other rather than of quantity given; PRS-11 (Confidence **High**) supplies the second-personal category, though its own material is non-propositional knowledge of persons in the biblical suffering narratives. *Philosophical; Medium at the load-bearing entry.* The register holds no liberality or generosity entry, so the vice/virtue-specific application is this commentary's — the same disclosure Day 177 makes for PRS-22 on avarice.
 - **Wright — canonical work, anchor declined on a tested radius.** Giving as *koinonia* / the grace of participation (2 Cor 8–9). The Wright register was searched for *koinonia*, *collection*, *generosity*, *giving*, *gift*, and *2 Corinthians 8*; the only hits are the Spirit-in-the-Psalter, cruciform suffering, ministerial gifts, resurrection-grounded hope, and self-forgiveness — none of them the claim. **Re-tested 2026-09-02 against the register at 59 entries — it grew by 18 (PRS-42 to PRS-59, all added 2026-09-01) after the radius was first tested at 41, and the declination still holds: zero hits on *quarrel*, *strife*, *contention*, *liberality*, *almsgiving* or *generosity*.** No numbered Wright triplet covers the grace of giving, so the anchor stays canonical rather than inventing an id. *Theological.*
 - **Rohr PRS-15** (`traditions/rohr/prs_triplets.md`) — the ego/false-self frame named explicitly as what Jesus liberates from, and offered as the contemplative pair for the mind-monist account of the self as construction. The released hand is the mark of the self with nothing to defend. *Theological, Confidence High.*
 

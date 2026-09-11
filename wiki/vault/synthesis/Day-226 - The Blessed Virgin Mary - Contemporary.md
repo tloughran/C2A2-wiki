@@ -3,20 +3,20 @@ day: 226
 title: The Blessed Virgin Mary (Contemporary)
 pairs_with: "[[Day-226 - The Blessed Virgin Mary]]"
 length_target_words: 2200
-length_actual_words: 1652
-length_ratio_to_target: 0.751
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_actual_words: 1741
+length_ratio_to_target: 0.791
+length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated. UPDATED 2026-09-10: pre-edit body recounted to 1652, EXACTLY the stored field, so the note's basis was sound and not self-certifying off an understated count; the QC pass then added +89 words of apparatus only (register Confidence grades on the Wright, Rohr and Stump bullets), moving the ratio 0.751 to 0.791. Worth recording that the pre-edit reading sat 0.0009 ABOVE the ±25% floor — this file was one word from a length escalation on a purely arithmetic margin, and the repair moved it away from that edge rather than toward it."
 length_tier: medium
 karpathy_wiki_sources:
-  - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation — the five-act drama hermeneutic; PRS-03 inaugurated eschatology) — a tradition extending its insight without rigid repetition or unfaithful innovation"
-  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, 'parallels MacIntyre's epistemological crisis'; PRS-05 limitation-becomes-gift)"
-  - "traditions/stump/prs_triplets.md (PRS-06 tradition vitality and the MacIntyre criterion) — Thomism as a live, generative tradition"
+  - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation — the five-act drama hermeneutic, Confidence High; PRS-03 inaugurated eschatology, Confidence High) — a tradition extending its insight without rigid repetition or unfaithful innovation"
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, 'parallels MacIntyre's epistemological crisis', Confidence High; PRS-05 limitation-becomes-gift, Confidence Medium)"
+  - "traditions/stump/prs_triplets.md (PRS-06 tradition vitality and the MacIntyre criterion, Confidence Medium, Label-marked (Implicit)) — Thomism as a live, generative tradition"
   - "traditions/macintyre/ (epistemological crisis + tradition-constituted inquiry) [bridge node outside the bridges-file roster — form-check only, per standing note]"
 evidence_strength_summary: "The development of the Immaculate Conception dogma (Aquinas's contracted-then-cleansed view superseded by Ineffabilis Deus 1854) = historical/theological fact, the strongest evidence on offer here; tradition extending an insight over centuries without rupture ~ faithful improvisation / inaugurated eschatology (Wright PRS-02/03) and order-disorder-reorder / epistemological crisis (Rohr PRS-02, MacIntyre) = formal-philosophical (the project's own meta-claim); 'full of grace, dispensing grace to all' / Theotokos preparation = theological; the central-theme fit operates at the META level (a tradition perceiving more of the whole over time than any one perspective) = strong and distinctive to this day."
 mind_first_reframe: "The development from Aquinas's view to the defined dogma is read as a tradition-constituted inquiry perceiving more of the whole than any single perspective — faithful improvisation (Wright) and a resolved epistemological crisis / order-disorder-reorder (Rohr, MacIntyre)."
 central_theme_thread: "The project's engine in miniature: the limited perspective here is Aquinas himself, exceeded not by a greater individual but by the tradition across time — the C2A2 wager that a tradition computes toward a fuller perception of the whole than its members hold."
 tags: [synthesis, day/226, theme/tradition-as-inquiry-perceiving-more-over-time]
-last_qc_at: "2026-09-02T08:23:21"
+last_qc_at: "2026-09-10T04:24:17"
 last_qc_outcome: "rewrote"
 ---
 
@@ -50,10 +50,10 @@ This is the day the project's deepest premise appears *not* as a claim about Chr
 
 ## Bridges
 
-- **The move from Aquinas's view to the defined dogma ↔ faithful improvisation: extending a tradition by its internal logic, neither repetition nor invention** — Tom's PRS-form record of Wright, PRS-02 (with PRS-03, inaugurated eschatology). *Why:* the dogma is drawn out of the tradition, completing what Aquinas approached. Evidence: **historical fact framed by a formal model (strong fact, model-level theory)**.
-- **Aquinas's flagged uncertainty → the deeper reorder ↔ order-disorder-reorder / the resolved epistemological crisis** — Tom's PRS-form record of Rohr, PRS-02 (explicitly paralleling MacIntyre); the MacIntyrean tradition node. *Why:* the reorder explains both the truth and why the earlier perspective missed it. Evidence: **formal-philosophical (the project's meta-claim)**.
-- **Aquinas corrected without Thomism dissolving ↔ tradition vitality and the MacIntyre criterion** — Tom's PRS-form record of Stump, PRS-06. *Why:* absorbing the correction is the mark of a *live* tradition, not a refuted one. Evidence: **formal-philosophical**.
-- **Mary's limitation as the site of her unique participation ↔ limitation-becomes-gift** — Tom's PRS-form record of Rohr, PRS-05. *Why:* the creature "full of grace, dispensing grace to all" is the perspective most transparent to the whole. Evidence: **theological/contemplative**.
+- **The move from Aquinas's view to the defined dogma ↔ faithful improvisation: extending a tradition by its internal logic, neither repetition nor invention** — Tom's PRS-form record of Wright, PRS-02 (Confidence **High**), with PRS-03, inaugurated eschatology (Confidence **High**). *Why:* the dogma is drawn out of the tradition, completing what Aquinas approached. Evidence: the historical development is **fact**; the records framing it are stated at **High**; what remains **model-level** is the claim that this particular development instantiates the hermeneutic.
+- **Aquinas's flagged uncertainty → the deeper reorder ↔ order-disorder-reorder / the resolved epistemological crisis** — Tom's PRS-form record of Rohr, PRS-02 (Confidence **High**, explicitly paralleling MacIntyre); the MacIntyrean tradition node. *Why:* the reorder explains both the truth and why the earlier perspective missed it. Evidence: the record is **High**; the application to this development is **formal-philosophical — the project's own meta-claim, not an independent result**.
+- **Aquinas corrected without Thomism dissolving ↔ tradition vitality and the MacIntyre criterion** — Tom's PRS-form record of Stump, PRS-06 (Confidence **Medium**, Label-marked *(Implicit)*). *Why:* absorbing the correction is the mark of a *live* tradition, not a refuted one. Evidence: **formal-philosophical, Medium** — the weakest-graded record carrying this bullet's weight, and the register itself marks the assessment as Loughran's rather than Stump's stated claim.
+- **Mary's limitation as the site of her unique participation ↔ limitation-becomes-gift** — Tom's PRS-form record of Rohr, PRS-05 (Confidence **Medium**). *Why:* the creature "full of grace, dispensing grace to all" is the perspective most transparent to the whole. Evidence: **theological/contemplative, Medium** — the record is drawn from a podcast series rather than an argued text, which is why it is graded below PRS-01/PRS-02.
 
 ## Where this leaves us
 

@@ -3,9 +3,10 @@ day: 174
 title: Boasting (Contemporary)
 pairs_with: "[[Day-174 - Boasting]]"
 length_target_words: 1500
-length_actual_words: 1613
+length_actual_words: 1710
 length_tier: short
-length_ratio_to_target: 1.075
+length_ratio_to_target: 1.140
+length_note: "Recount 2026-09-09 after this run's badge repair on the Friston bullet: 1613 -> 1710 (ratio 1.075 -> 1.140), which carries the file just past the +-10% advisory band. Every added word is register content — the two records' Confidence grades and the provenance caveat the register attaches to PRS-28's grade — and no claim was added, removed or reweighted. Not padding; the alternative was leaving the day's lead anchors ungraded."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-28 neuromodulation as precision-weighting on belief updates; PRS-06 multi-agent coherence via mutual modeling)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-01 hemispheric asymmetry — left-hemisphere abstraction, fragmentation and manipulation set against right-hemisphere holistic relational engagement; applied here to self-presentation)"
@@ -17,7 +18,7 @@ evidence_strength_summary: "Metacognitive calibration / overconfidence effects a
 mind_first_reframe: "Truthfulness about oneself is accurate self-calibration: boasting and false self-deprecation are the two miscalibrations of self-report that corrupt a community's allocation of trust, boasting being at depth the false claim to self-completeness by a perspective-limited agent."
 central_theme_thread: "Agents are individuated by the limitation of their perspective; boasting is the agent treating its limited perspective as if it were the whole — the precise error the central theme warns against — while accurate self-assessment lets an agent know when to defer to those who see more and when to offer what only it can see."
 tags: [synthesis, day/174, theme/self-calibration, theme/perspective-limitation, q/112, q/113]
-last_qc_at: "2026-09-02T02:32:31"
+last_qc_at: "2026-09-09T22:31:48"
 last_qc_outcome: "rewrote"
 ---
 
@@ -55,7 +56,7 @@ This question sits unusually close to the project's center. Agents are individua
 
 ## Bridges
 
-- **Friston PRS-28, PRS-06** (precision-weighting on belief updates; multi-agent coherence via mutual modeling) — boasting as false-precision self-signaling; the mean-of-truth as calibration. *Empirical / formal.*
+- **Friston PRS-28, PRS-06** (precision-weighting on belief updates; multi-agent coherence via mutual modeling) — boasting as false-precision self-signaling; the mean-of-truth as calibration. *Formal — and these are the day's weakest anchors, not its firmest, which the bullet should say outright because the Resource section leans on them first. PRS-06 is **Confidence Medium** and Label-marked **`(Implicit)`** — drawn out of the program rather than stated in it. PRS-28 is **Confidence Medium** and the register attaches a provenance caveat to the grade itself: "lecture forthcoming; abstract represents Friston's stated intent rather than published derivation," i.e. not a published derivation at all. The empirical weight in this day belongs to the metacognitive-calibration and overconfidence literature named in the Solution, not to either record.*
 - **McGilchrist PRS-01** (hemispheric asymmetry and cultural impoverishment: left-hemisphere abstraction and manipulation vs right-hemisphere relational engagement) — read onto self-presentation, the part mistaking itself for more than a part. *Empirical at the hemispheric level; the self-report application is this commentary's extension.*
 - **Kastrup PRS-02** (individuation-within-monism) — boasting as the false claim to self-completeness. *Speculative / metaphysical.*
 - **Fredrickson — anchor declined on a tested radius, and the claim downgraded accordingly.** The Fredrickson register was searched for *self-worth*, *authentic*, *superiority*, *secure*, and *status*; the only hit is PRS-35, a graph-theoretic network-metrics entry on the neural status of affective states, which is not this claim. **Re-tested 2026-09-02 against the register at 39 entries (38 when first tested): the declination holds, same sole hit.** Nothing in the register treats secure self-worth against performed superiority. The affective contrast is retained as this commentary's own extension from the broader program, **not** as an anchored empirical finding — the earlier *Empirical* marker overstated it. *Suggestive; unanchored.*

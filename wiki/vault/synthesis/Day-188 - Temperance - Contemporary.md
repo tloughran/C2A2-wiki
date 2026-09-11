@@ -11,7 +11,7 @@ karpathy_wiki_sources:
   - "traditions/friston/wiki.md + prs_triplets.md (PRS-01 agency without vitalism; PRS-04 active modeler; precision-weighting = temperance per bridges)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01 cultivated micro-moments of positivity resonance rebuilding vagal tone and resilience — the self-regulation biomarker; PRS-02 love as measurable neurophysiological coupling)"
   - "traditions/levin/prs_triplets.md (PRS-09 principled framework for cognitive attribution across scales — goal-directedness defined by empirical toolkit, applicable from molecules to multicellular organisms; PRS-10 continuity of goal-directedness from unicellular to human, graded rather than binary — agency scaling from cell to community)"
-  - "traditions/stump/wiki.md (Thomistic interlocutor on virtue)"
+  - "traditions/stump/wiki.md (on virtue)"
   - "traditions/wright/prs_triplets.md (PRS-05 God's homecoming — salvation as incorporation into a renewed-creation people, not disembodiment; the anti-dualist reading of the body)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual awareness — holding both/and without premature resolution; using not grasping)"
   - "master/cross_program_index.md (CROSS-003 attention cluster; CROSS-005 love as fundamental)"
@@ -19,8 +19,8 @@ evidence_strength_summary: "Precision-weighting / homeostatic regulation as temp
 mind_first_reframe: "Temperance is well-calibrated interoceptive precision — the embodied agent tracking its necessary appetitive set-points by need rather than maximization — and Aquinas's demotion of it as 'merely individual' is only half right, since internal self-regulation is the homeostatic floor on which collective goods stand."
 central_theme_thread: "Temperance is the agent computing the good under the scarcity of its own body — the most constitutive perspective-limitation there is — working out salvation at the level of the flesh by ordering embodiment toward the whole rather than escaping it."
 tags: [synthesis, day/188, theme/self-regulation-and-scale]
-last_qc_at: "2026-09-02T16:22:09"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-10T06:53:35"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 188 — Temperance (Contemporary Parallel)
