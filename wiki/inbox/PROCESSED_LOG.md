@@ -977,3 +977,121 @@ re-listed with a yield token — doing that is what closed a held id by accident
 
 Pattern detector: 5 signals forwarded, FINDING-083 through FINDING-085 written; 083 and 084 escalated
 to the master Paradigm Shift Watch List as FLAG-021 and FLAG-022.
+
+---
+
+## 2026-09-10 — the 36-card clearance
+
+**Processed: 36 files. Triplets extracted: 85, across 10 traditions.** Largest single ingest in the
+network's history. The 2026-09-09 decision email approved **every** card in `inbox/proposals/pending/`,
+which took the queue to **zero** for the first time since 2026-08-27. Network total: **867** PRS triplets
+(was 782).
+
+| tradition | added | new ids | total |
+|---|---|---|---|
+| carroll | 7 | PRS-79..85 | 85 |
+| friston | 8 | PRS-64..71 | 71 |
+| hawkins | 16 | PRS-36..51 | 51 |
+| hoffman | 4 | PRS-41..44 | 44 |
+| kastrup | 13 | PRS-70..82 | 82 |
+| levin | 7 | PRS-117..123 | 123 |
+| mcgilchrist | 6 | PRS-73..78 | 78 |
+| rohr | 13 | PRS-67..79 | 79 |
+| wolfram | 4 | PRS-59..62 | 62 |
+| wright | 7 | PRS-60..66 | 66 |
+
+Each card's `PRS-CANDIDATE-NN` blocks were carried across verbatim — Problem, Resource, Solution,
+Confidence and Evidence unedited — with `Date Added: 2026-09-10` and `Source: <source_title>; <proposal_id>`
+appended. This was done by a deterministic transform, not by re-authoring: the proposing agent's wording,
+including its hedges and its self-declared caveats, is what is now in the tradition files. Where a card
+said its evidence was unverified, the tradition file says so too.
+
+**Read this before treating the table above as routine — a repair was needed mid-ingest.**
+`traditions/hoffman/prs_triplets.md` carries a documented structural quirk: PRS-16 sits out of sequence
+part-way down the file, immediately after a **stale second `*Total PRS triplets:*` line** left by an older
+run. The insert-before-the-total step therefore landed this run's four triplets in the middle of the file
+and rewrote the stale line instead of the real closing one. It was caught in the same run by comparing each
+file's highest `PRS-NN` against its stated total (hoffman read `max=44` against `total=40`; every other
+tradition agreed exactly). Repaired in place: PRS-41..44 moved to the end before the true closing total, the
+stale line restored to its original `16`, the closing total set to `44`. Nothing pre-existing was renumbered
+and the file's own explanatory note about the quirk was left alone. **Any tool that appends by anchoring on
+`*Total PRS triplets:*` will do this again** on a file with two such lines, and the check that caught it
+(max-id vs stated-total, per tradition) is cheap enough to keep.
+
+**A post-run sweep with that same check found three more files already in this state, none of them touched
+by this run.** Recorded here because the next append to any of them will misfire the way hoffman did:
+
+- `arkanihamed` — **same trap as hoffman**: two total lines (`23`, then the closing `31`) *and* a duplicate
+  `PRS-NN` id (count=31 but max=30). An append anchored on the first total line lands mid-file.
+- `stump` — closing total `38` against a highest id of `41`: the numbering has gaps, so "next id = max+1"
+  and "next id = total+1" disagree by three. Either rule silently produces a collision or a hole.
+- `loughran`, `macintyre` — **no `*Total PRS triplets:*` line at all** (9 and 6 triplets). An appending tool
+  that anchors on that line has nothing to anchor to and will append to the end without updating a total,
+  which is harmless now and stops being harmless the moment someone adds one.
+
+**None of this is news, and that is the point.** The 2026-08-11 status line in `master/C2A2_master_wiki.md`
+already carried "the `arkanihamed` duplicate `PRS-10` / two conflicting total lines; the Stump
+35-headings-vs-PRS-38 numbering gap" under *carried unfixed and still needing a human*. It has been carried
+for a month. What is new is that today the same defect **actually fired**, on hoffman, during a real ingest —
+so the item is no longer a tidiness note, it is a demonstrated failure mode with one instance repaired.
+
+Not repaired in this run beyond hoffman. Repairing a numbering scheme is not a daily-run act — it renumbers
+live ids that other files cite by name. Logged so the repair is a decision rather than an accident.
+
+**Not processed, on purpose, and still open:** `2026-08-14_wright_who-is-this-god-admirato.md`
+(PROP-2026-08-14-033), the standing retrieval assignment first logged 2026-08-29. Its own card states "I did
+not hear or read one word of this source" and "Do not ingest the conjectures." Still deliberately not
+re-listed with a yield token (FINDING-079).
+
+**Also unjudgeable by the ledger, and untouched:** `inbox/proposals/approved/2026-05-12_repair_manifest.md`
+(no `proposal_id`, and a manifest rather than a source). `2026-09-08_levin_virtue-as-external-setpoint.md`
+was excluded from this run's file set explicitly — it was already ingested on 2026-09-09 and its own
+irregularity is logged as FINDING-085.
+
+**Standing note on tradition `wiki.md` files.** Each of the ten got a dated `### Ingest 2026-09-10` section
+listing the cards and the ids they produced. Open/solved **question lists were not re-adjudicated.** Doing
+that honestly means reading 85 new triplets against ~20 standing questions per tradition and deciding which
+ones moved; done cheaply it produces a wiki that claims questions were closed when nobody checked. It is
+recorded as not-done rather than performed badly.
+
+Cross-program: **CROSS-132** (Rohr × Wright), **CROSS-133** (Rohr × Stump), **CROSS-134** (Kastrup × Stump),
+**CROSS-135** (Kastrup × Levin). Pattern detector: 7 signals forwarded, **FINDING-086 through FINDING-090**
+written; 086 and 088 escalated to the master Paradigm Shift Watch List as **FLAG-024** and **FLAG-023**.
+
+**Two pipeline findings came out of the batch itself, not out of the content.** FINDING-089: four of the 36
+cards carried an explicit self-declared retrieval condition written by the proposing agent ("the approval is
+approving a pointer, not a reading"), and all four were approved as-is — the retrieval queue that would have
+caught them still does not exist and is now at least 10 deep. FINDING-090: two Hawkins cards are Thousand
+Brains Project team meetings led by Slominski and Clay, not Hawkins; both agents asked for the standing rule
+to be *fixed* rather than re-litigated, and approval-as-is has now settled it by default for the third time.
+
+
+---
+
+## 2026-09-11 — daily run
+
+**Files processed: 0. The compile queue is empty and that is a measured result, not an assumption.**
+`scripts/ingest_ledger.py` reports approved total=414, ingested=382, decided-zero=30, **OPEN=1**; staging the
+same. The single OPEN card is `2026-08-14_wright_who-is-this-god-admirato.md` (PROP-2026-08-14-033).
+
+**Wright PROP-2026-08-14-033 — retrieval re-attempted 2026-09-11, FAILED AGAIN. Still not ingested.**
+This is the standing retrieval assignment first logged 2026-08-29 (FINDING-079). A fresh web search for the
+KSBJ / *Between Beliefs* / Admirato broadcast returned only the bare ntwrightpage.com post (no body text,
+media embed only) and unrelated results; no audio, transcript, or description was located. The card's own
+instruction — "Do not ingest the conjectures" — is honoured for the third consecutive run. Yield token
+deliberately withheld. **Third failed retrieval; this card should be rejected or hand-retrieved rather than
+carried indefinitely.**
+
+**Unjudgeable by the ledger, untouched, and correctly so:**
+`inbox/proposals/approved/2026-05-12_repair_manifest.md` (no `proposal_id`; a manifest, not a source), and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md`. The latter was **verified against the artifact this
+run, not assumed**: levin PRS-116, macintyre PRS-06 and stump PRS-41 all exist and all three cite
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` as their source. It was ingested 2026-09-09
+(FINDING-085) and is complete. No re-derivation.
+
+**Pattern detector: nothing to do.** Every block in `flags/for_pattern_detector.md` carries an `[EVALUATED:]`
+marker; the newest is `[EVALUATED: 2026-09-10 - FINDING-086..090]`. No new signals were forwarded because no
+files were ingested.
+
+**Network after this run (counted from headers, not from stated totals):** 867 PRS triplets across 15
+tradition files, 107 CROSS entries, 93 findings.

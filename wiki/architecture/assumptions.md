@@ -23269,3 +23269,346 @@ ASSUMPTION-1304:
 
 *Extracted by the 14a evening run, 2026-09-09 ~23:45 EDT. Registers snapshotted as
 `*.bak.20260909-pre-14eod` before any append.*
+
+---
+
+## 2026-09-10 — evening run (14a)
+
+ASSUMPTION-1305:
+  Date identified: 2026-09-10
+  Statement: "**Phase 2 skipped on judgement**, not omission: refilling the queue the same morning you
+    emptied it would put new cards in front of you before any of today's 85 triplets had been looked at."
+  Context: `C282 wiki agent daily run`, terminal report. The run cleared `pending/` 36 → 0 via a batch
+    APPROVE, ingested 36 files → 85 PRS triplets, then declined to run the hunt phase.
+  Type: methodological
+  Related decisions: none; PRESUMPTION-943, OPEN-190
+  Testability: **testable via literature** — the operative claim is that reviewer attention, not proposal
+    supply, is the binding constraint, and that presenting new items before old ones are absorbed reduces
+    throughput. That is a claim about queue discipline and review-batch sizing.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1305
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. Recorded as the first day in this register's history on which
+        `pending/` reached zero and the run's response was to withhold supply. The cost side — a day of
+        un-surveyed tradition output — is not priced in the report. Surfaced separately as
+        PRESUMPTION-950.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1306:
+  Date identified: 2026-09-10
+  Statement: "A post-run sweep found the same defect in `arkanihamed`, `stump`, `loughran`, `macintyre`
+    — all already logged as 'needing a human' on 2026-08-11. **It has now actually misfired once, so it
+    stops being a tidiness note.**"
+  Context: `C282 wiki agent daily run`. `traditions/hoffman/prs_triplets.md` carries two
+    `*Total PRS triplets:*` lines; the append anchored on the stale one and landed four triplets
+    mid-file. Caught in-run by a max-id-vs-stated-total check and repaired in place; the other four
+    registers were left, "renumbering live ids is your decision, not a daily-run act."
+  Type: methodological
+  Related decisions: none
+  Testability: **testable via literature** — the stated rule is that a latent defect earns priority by
+    manifesting. That is a claim about defect triage and it has a substantial literature (latent-fault
+    prioritisation, near-miss reporting) that mostly runs the other way.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1306
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Note the dating: the defect was logged 2026-08-11 and is **thirty days**
+        unruled; the manifestation is what moved it, not the elapsed time. Raised as OPEN-193. The
+        "needing a human" queue's own status is surfaced as PRESUMPTION-951.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1307:
+  Date identified: 2026-09-10
+  Statement: "**Four of the 36 cards approved a pointer, not a reading** (FINDING-089) — each said so
+    itself and asked to be caught... **A batch APPROVE can't distinguish 'read and agreed' from 'not read
+    separately.'**"
+  Context: `C282 wiki agent daily run`, Phase 0/1. The four: a paywalled recording, an institutional
+    listing with no source text, an explicit "queue retrieval after 2026-09-24", a self-declared
+    duplicate. Two further cards carried authorship caveats (FINDING-090).
+  Type: epistemic
+  Related decisions: DECISION-083 (the review channel this batch traversed)
+  Testability: **testable via literature** — bulk approval and consent granularity; whether an aggregated
+    authorisation can carry item-level warrant. Directly relevant to the estate's entire approval record.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1307
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. What the run states plainly is that six of the thirty-six
+        cards in the largest ingest in the network's history are of uncertain warrant — and it ingested
+        all thirty-six anyway, flagging rather than holding. The relation between that choice and
+        ASSUMPTION-1295 (ingest licensed by ID alignment rather than approval) is not drawn by the run.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1308:
+  Date identified: 2026-09-10
+  Statement: "**FLAG-023 is time-limited.** Two Kastrup sources six days apart bracket a live Levin
+    exchange — a timestamped displacement measurement the inter-tradition study almost never gets...
+    Method note in CROSS-135: **code it independently in both wikis before comparison, or the number is
+    worthless.**"
+  Context: `C282 wiki agent daily run`, Phase 1. The dialogue is paywalled; member access is the gating
+    step.
+  Type: methodological
+  Related decisions: none; CROSS-131 (ASSUMPTION-1297), FLAG-021
+  Testability: **testable via literature** — independent/blind coding before comparison is a standard
+    control with a measurable effect size, and the claim that a non-blind measurement here is "worthless"
+    is stronger than the literature usually supports. Also the estate's first stated pre-registration of
+    a method for a measurement not yet taken.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1308
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. Recorded as a rare case in this register of a method being
+        fixed *before* the data can be obtained rather than after — the opposite of the pattern
+        REVISE-436 tracks. No owner and no date are attached to the member-access step.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1309:
+  Date identified: 2026-09-10
+  Statement: "*Five of six items were already answered by `validated_premises.md` before either agent
+    searched* — second consecutive cycle (9 of 11 items across two). Three minted nothing because an
+    ACTIVE premise already denies them. **That's a routing defect, not a search defect: a register grep
+    belongs *before* 14a/14b routes.**"
+  Context: `C2a2 lit search pipeline`, 2026-09-10 run. Recommendation recorded in the run note.
+  Type: architectural
+  Related decisions: none; PREMISE-107, ASSUMPTION-1290
+  Testability: **in-house and immediate** — the measurement is the same grep the recommendation asks for,
+    run retrospectively across the last N routed items. The second limb (whether the remedy is correct)
+    is a literature question and is surfaced as PRESUMPTION-948.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1309
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. This register is a named party: the proposed pre-route grep
+        would sit in 14a/14b, i.e. here. Recorded with that interest declared. The rate is now measured
+        across two cycles (9/11, 82%) and is the sharpest efficiency finding the pipeline has produced.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1310:
+  Date identified: 2026-09-10
+  Statement: "*MONITOR-599 turns the pipeline on itself.* 15b surfaced Nemeth's finding that **assigned**
+    devil's advocacy produces cognitive bolstering rather than genuine challenge — **which is a question
+    about Agent 15b by construction, and therefore about every premise in the register.** Filed at High
+    with a cheap in-house test named (blind re-run of one item by an agent not told its direction)."
+  Context: `C2a2 lit search pipeline`, 2026-09-10 run.
+  Type: methodological
+  Related decisions: none; the whole 15a/15b architecture
+  Testability: **testable via literature (partly already done — Nemeth is the source) and decisively
+    in-house** — the named blind re-run is a one-item experiment.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1310
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. This is the strongest self-directed finding in the pipeline's
+        history: if it holds, the epistemic weight assigned to every CHALLENGED status in
+        `presumptions.md` and `assumptions.md` is inflated, and 15b's 42 CHALLENGED presumptions are the
+        exposed set. The test is named, cheap, and unowned — the pattern REVISE-436 tracks. Surfaced as
+        PRESUMPTION-949.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1311:
+  Date identified: 2026-09-10
+  Statement: "*Two verification failures recorded rather than glossed:* the AJR mammography quote
+    load-bearing for PREMISE-201 clause (3) failed retrieval and is flagged unverified; and **the
+    Zimmermann ICSE'12 paper does not publish the reopen rate its search summary implied** — 15b caught
+    that by reading it, and the 'mid-teens to low twenties' estimate in REVISE-445 inherits the weakness
+    and is labelled a prompt to measure, not a finding."
+  Context: `C2a2 lit search pipeline`, 2026-09-10 run.
+  Type: empirical
+  Related decisions: none; PREMISE-201, REVISE-445
+  Testability: **settled as to fact** — one source failed retrieval, one does not contain the claim
+    attributed to it. The general claim behind it (that search summaries carry their sources' claims
+    faithfully) is the testable limb.
+  Status: SUPPORTED (in-house — both failures are documented in the run's own result files)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1311
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as the first time in this register that a *minted* premise
+        (PREMISE-201) carries a clause resting on an unverified quotation, and the first time a lit-search
+        summary has been caught misreporting its own source by reading the source. Both are credits to
+        the run. What is recorded against it: PREMISE-201 was minted anyway and REVISE-445 still stands
+        on the weakened number. See PRESUMPTION-954.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1312:
+  Date identified: 2026-09-10
+  Statement: "Both traditions are genuinely quiet this week. **The wiki is current against both thinkers'
+    own publication records — which is a different fact from 'nothing was found,'** and the one worth
+    recording."
+  Context: `C2a2 agent stump fredrickson`, Thursday specialist run. Zero proposals. Primary sources
+    checked by name: Stump's Online Papers and Video Lectures pages, the Thomistic Institute podcast;
+    Fredrickson's PEP Lab articles and news pages.
+  Type: methodological
+  Related decisions: none
+  Testability: **testable empirically** — the claim is that a thinker's own maintained pages are a
+    complete and timely record of their output. A sample of known third-party-hosted appearances settles
+    it per thinker.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1312
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. Recorded as the clearest statement of the checked-zero
+        standard this estate has produced, and as the day's one run whose null result is auditable. The
+        run also declined a search hit on internal evidence (a "Friday, October 19" keynote page —
+        October 19 is not a Friday in 2026), which is a second, separate instance of the same standard.
+        The completeness limb is surfaced as PRESUMPTION-947.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1313:
+  Date identified: 2026-09-10
+  Statement: "**The sandbox fallback cannot do it, and never will.** ... the script takes a full SQLite
+    backup-API copy into `tempfile.mkstemp`, and the live db is **6.3 GB** while the sandbox has 4.1 GB
+    free on `/` and 5.8 GB on `/sessions`. There is nowhere to put the copy... **Until then this task
+    will fail every day at this same point.**"
+  Context: `Metabolism regen daily`, ~08:45. Independently restated the same day by `Openstory agents
+    telemetry refresh`: "The extractors' `connect_ro` byte-copies the whole DB to local disk first; the
+    DB is 5.86 GiB and the sandbox has 4.1 GiB free... **This is the standing sandbox limit, not a new
+    fault.**"
+  Type: architectural
+  Related decisions: none
+  Testability: **settled as to fact** — arithmetic. Sixth day unchanged in the intake queue.
+  Status: SUPPORTED (in-house — two independent runs, two different scripts, same constraint, same day)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1313
+    Item type: ASSUMPTION (stated — quoted from two agent run reports)
+    Transform at each step:
+      14a: Extracted and consolidated across two runs. Both framed the constraint as a property of the
+        host to be worked around (approve Desktop Commander; move to launchd; retitle the task). Neither
+        proposed the third option — changing the extractor to open the database read-only without a
+        byte copy. Surfaced as PRESUMPTION-952. Consequence recorded:
+        `wiki/metabolism/metabolism_data.json` is **7 days cold** (generated 2026-09-03) and
+        `morning-system-health` reads it as current.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1314:
+  Date identified: 2026-09-10
+  Statement: "Status file rewritten as `PASS` with an explicit `VERIFIED-NOT-REGENERATED` qualifier — **a
+    bare `FAIL` would have fired `morning-system-health` over feeds that are genuinely current, and a
+    bare `PASS` would have claimed work I didn't do.**"
+  Context: `Openstory agents telemetry refresh`, ~11:00. The run closed by asking for a ruling: "if you'd
+    rather this task hard-`FAIL` whenever the sandbox can't regenerate — regardless of feed freshness —
+    say so and I'll flip the convention."
+  Type: architectural
+  Related decisions: none
+  Testability: **testable via literature** — the claim is that a binary status vocabulary cannot carry
+    "verified current but not produced by me," and that inventing a third value is the right repair.
+    Alarm semantics and the cost of low-precision alerting are a real literature.
+  Status: SENT-TO-15a, SENT-TO-15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1314
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. Recorded as the day's one status decision made *for* the
+        downstream reader's alarm rather than for the register — and as the fourth item today to end in a
+        request for a ruling from a channel that has been silent since 2026-08-27. The direction of the
+        protection is surfaced as PRESUMPTION-955.
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+ASSUMPTION-1315:
+  Date identified: 2026-09-10
+  Statement: "the C2A2 wiki took its largest single-night ingest of the series at 22:00 (85 new PRS
+    entries across ten registers, plus CROSS-132 through CROSS-135), **which re-opens 147
+    absence-declinations across 74 syntheses as unverified**; two were hand-checked and both still hold."
+  Context: `Summa 2026 nightly verification`, ~23:10. 307 synthesis files verified; zero hard citation
+    drift.
+  Type: epistemic
+  Related decisions: none
+  Testability: **framework commitment, with a testable limb** — that an absence claim is invalidated by
+    any later ingest into its scope is a defensible standard; whether 2 of 147 hand-checks license the
+    rest is the testable part.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1315
+    Item type: ASSUMPTION (stated — quoted from an agent run report in a sibling project)
+    Transform at each step:
+      14a: Extracted verbatim. Cross-project (Summa), and therefore within PRESUMPTION-945's open scope
+        question. Recorded because it is the one place in the estate where today's ingest was treated as
+        *invalidating* rather than as accretion — 85 triplets in, 147 prior claims out of verified
+        status. No C2A2-side run drew that consequence.
+    Current status: UNTESTED
+
+ASSUMPTION-1316:
+  Date identified: 2026-09-10
+  Statement: "15b's second consecutive systemic flag: *every control in this estate is a speech act, and
+    no speech act is re-read* — four unrelated control types, one missing T+n verification. **Its own
+    reflexivity note says a third undispositioned flag would mean the flag channel is the defect rather
+    than its subject.**"
+  Context: `C2a2 evening cowork to chat`, 18:40, summarising the 15b `no-second-look` flag (High)
+    recorded by the day's lit-search pipeline.
+  Type: epistemic
+  Related decisions: none; REVISE-436
+  Testability: **in-house and decisive** — the flag states its own falsification condition and its own
+    count. One more undispositioned flag settles it.
+  Status: SUPPORTED (in-house — the flag is the second consecutive one and is itself undispositioned as
+    of this run)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1316
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as the estate's first stated self-falsification criterion with a
+        counter attached. What this register can add tonight: the criterion's own clock is running and
+        no disposition occurred today. Whether stating the criterion discharges it is surfaced as
+        PRESUMPTION-949.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1317:
+  Date identified: 2026-09-10
+  Statement: "Delivery failed on both routes — Claude in Chrome reported 'not connected' twice, and the
+    browser pane's claude.ai access request was declined (nobody could answer it in an unattended run).
+    **That's the third straight day the outbound leg has failed and the second with both directions
+    dark.**"
+  Context: `C2a2 evening cowork to chat`, 18:40; independently reported the same morning by `C2a2 morning
+    chat scrape` ("this may be the second consecutive failure" — inbound) and by `Morning system health`
+    (`request_cowork_directory` auto-declined).
+  Type: architectural
+  Related decisions: none; ASSUMPTION-1304, OPEN-191
+  Testability: in-house; one attended `scope: site` grant settles the outbound half.
+  Status: SUPPORTED (in-house — direct continuation of ASSUMPTION-1304, now at day three outbound and
+    day eight inbound)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1317
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as an escalation of ASSUMPTION-1304 rather than a new claim.
+        Consequence for this register, for the eleventh consecutive day: no designer speech was available
+        to read, and every item extracted tonight is agent-stated (PRESUMPTION-912). OPEN-191 asked
+        yesterday whether such a task should remain scheduled; it is unruled and the task ran again and
+        failed again today.
+    Current status: SUPPORTED (in-house)
+
+*Extracted by the 14a evening run, 2026-09-10 ~23:45 EDT. Registers snapshotted as
+`*.bak.20260910-pre-14eod` before any append.*

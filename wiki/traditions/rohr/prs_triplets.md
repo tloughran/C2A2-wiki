@@ -614,4 +614,121 @@ PRS-66:
   Confidence: High
   Evidence: The "living organism" claim and the five-part specification are verbatim from Rohr's Monday and Friday entries; the lineage-transmission material is Rohr's own in the Week 32 opener. **Guest-voice caveat:** the decentralization-to-vitality correlation is McLaren's, offered historically rather than demonstrated. **A fourth candidate from this week was not ingested:** Stephanie Spellers's "homing device" - an asserted innate human responsiveness to communities driven by self-giving love, held to operate whether or not the observer is religious - is a guest voice asserting a universal human feature with no evidence offered, and the work it does is already carried by PRS-30 and PRS-39. This week is also the closest thing in the Rohr corpus to a design brief for the C2A2 community model itself, and should be read against `architecture/swarm-contract.md` rather than only filed as tradition content.
 
-*Total PRS triplets: 66*
+PRS-67:
+  Problem: The true self / false self distinction is usually stated descriptively (two things that both feel like self) without an account of what *produces* the false one, which leaves it unfalsifiable and purely exhortatory.
+  Resource: A generative mechanism — thought itself as the constructor of the separate self — paired with Merton's "point of nothingness," an inner locus explicitly characterised as inaccessible to both cognition ("the fantasies of our own mind") and volition ("the brutalities of our own will").
+  Solution: Reframes contemplative practice as suspension of a specific self-modelling operation rather than as improved introspection, which makes the claim answerable to cognitive accounts of self-construction instead of only to spiritual authority.
+  Date Added: 2026-09-10
+  Source: The Glory of God in Us; PROP-2026-08-28-060
+  Confidence: Medium
+  Evidence: "Thinking creates the separate self, the ego self, the insecure self. The God-given contemplative mind, on the other hand, recognizes the God self, the Christ self, the true self of abundance and deep inner security."
+
+PRS-68:
+  Problem: Claims about a universal inner ground are hard to distinguish from claims about a rare achieved state available to mystics.
+  Resource: Merton's dual specification that the point of nothingness "is in everybody" AND that "I have no program for this seeing. It is only given" — universality of possession decoupled from availability of access.
+  Solution: Separates the ontological claim (everyone has it) from the epistemic claim (almost nobody sees it), so failure to experience it is not evidence against it — but at the cost of the claim's testability, which is worth naming rather than hiding.
+  Date Added: 2026-09-10
+  Source: The Glory of God in Us; PROP-2026-08-28-060
+  Confidence: Speculative
+  Evidence: "It is in everybody, and if we could see it we would see these billions of points of light coming together in the face and blaze of a sun that would make all the darkness and cruelty of life vanish completely.... I have no program for this seeing. It is only given. But the gate of heaven is everywhere."
+
+PRS-69:
+  Problem: A moral account of sin as transgression makes the remedy juridical (forgiveness of acts) and leaves unexplained why guilt-focused repentance so often fails to change the underlying condition.
+  Resource: Sin redefined functionally as a *relational state* — "the result of being separate from the Whole" — with addictive substitution as its predicted downstream signature.
+  Solution: Relocates the remedy from absolution of acts to restoration of connection, and yields a testable-ish prediction: interventions that reduce felt separateness should reduce compulsive filling behaviour more than interventions that increase guilt over acts.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Medium
+  Evidence: "The false self is characterized by separateness. Jewish and Christian traditions call this state of disconnectedness 'sin.' When we're separated from our deepest being, we are in a state of sin or alienation. When we are disconnected from our true self in God, we look for various false and addictive ways to fill our emptiness."
+
+PRS-70:
+  Problem: Contemplative traditions that valorise the true self risk pathologising ordinary ego development, which makes their advice useless or harmful to people who have not yet built a functioning self.
+  Resource: An explicitly developmental concession — the false self is a necessary construction ("We have to create a false self to get started"), assembled from "culture, education, class, race, friends, gender, clothes, and money," whose defect is temporal (it stays too long) rather than moral.
+  Solution: Converts the true/false self teaching from a binary into a staged account with a timing failure mode, which is what makes it compatible with developmental psychology rather than opposed to it.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Medium
+  Evidence: "It seems that we have to leave the garden. We have to create a false self to get started; the trouble is that we take it far too seriously."
+
+PRS-71:
+  Problem: Claims of transformation are usually stated as achieved states, which are falsified the moment the claimant behaves badly, so the tradition either overclaims or retreats into unfalsifiability.
+  Resource: An asymmetry between behavioural stability (explicitly denied) and epistemic irreversibility (claimed) — you do not stay in the true self, but having seen the big picture you cannot be satisfied by the small one.
+  Solution: Gives the tradition an honest success criterion — dissatisfaction with the smaller frame rather than continuous residence in the larger — which is closer to something a longitudinal measure could actually track.
+  Date Added: 2026-09-10
+  Source: Realigned with the True Self; PROP-2026-08-28-061
+  Confidence: Speculative
+  Evidence: "That doesn't mean we stay in the true self twenty-four hours a day. Life is three steps forward and two steps backward. Yet once we know the big picture, we will never be satisfied with the little picture."
+
+PRS-72:
+  Problem: The Universal Christ frame asserts that Christ is the eternal pattern present in all matter, but leaves unspecified what work the particular first-century human does within that frame — the cosmic claim threatens to make the historical Jesus decorative.
+  Resource: Rohr's formulation that Christ represents the resurrected state and Jesus represents the crucified/resurrecting path of getting there, together with his insistence on "a Jesus-kind-of Christ" — a God going to the mat with humanity rather than only presenting a cosmic vision.
+  Solution: The two names pick out endpoint and trajectory in one system. The particular is not an instance of the universal but the *route* into it, which is why the cross rather than the resurrection became the central symbol.
+  Date Added: 2026-09-10
+  Source: Following in Jesus's Footsteps; PROP-2026-08-30-003
+  Confidence: High
+  Evidence: Stated directly in the meditation and sourced to *The Universal Christ* (Convergent, 2021), 216-217. PRS-CANDIDATE-B: Label: descending-religion-as-diagnostic
+
+PRS-73:
+  Problem: Contemplative literature on the ego reads easily as a moral condemnation of ordinary functioning selfhood, which puts it in apparent conflict with any account (Thomistic included) on which the natural powers are good and their disorder is privative.
+  Resource: Rohr's Tuesday statement that the false self is good and necessary as far as it goes, and that its failure mode is falling short and posing as the real thing.
+  Solution: The false self is a *scope* failure and a *substitution* failure, not a moral one. This lines the frame up with a privative account of disorder — the false self is not a rival good but a partial one mistaken for the whole.
+  Date Added: 2026-09-10
+  Source: True Self and False Self: Weekly Summary; PROP-2026-08-30-002
+  Confidence: High
+  Evidence: The Tuesday entry states the point directly and in Rohr's own voice; it is a restatement of *Immortal Diamond*'s position, not a new move, but this is the compact citable form. PRS-CANDIDATE-B: Label: persona-as-type-error
+
+PRS-74:
+  Problem: The true-self / false-self distinction is standardly read subtractively — the false self is removed and the true self is what remains. That reading makes the contemplative path look like loss, and gives no account of what happens to the ego structures that are pared away.
+  Resource: Sue Monk Kidd's "spiritual whittling," presented in Rohr's Daily Meditations frame: the shavings are gathered and integrated rather than discarded, and the result is described as a *new wholeness* not a recovered original.
+  Solution: The false self is reclassified from waste product to material. Transformation is a re-ordering of existing structure, not its deletion — which makes the true self an achieved integration rather than an excavated substrate.
+  Date Added: 2026-09-10
+  Source: The True Seed Within; PROP-2026-08-30-001
+  Confidence: Medium
+  Evidence: The whittling passage states explicitly that the shavings are not discarded and that transformation happens by gathering and integrating them; the sequel sentence names the endpoint as a new wholeness. PRS-CANDIDATE-B: Label: contemplative-crisis-as-non-optional
+
+PRS-75:
+  Problem: The Universal-Christ claim that Christ is present in all matter is a claim about extension; it does not say what structure that presence has, so it cannot be tested against any other account of the structure of reality.
+  Resource: Rohr's statement that the cross is a statement that reality has a cruciform pattern: a coincidence of opposites (Bonaventure, Alan of Lille, Cusa) that is held rather than resolved, and that is simultaneously broken and whole.
+  Solution: The cosmic Christ is given a definite structural content, contradiction-holding, which can be compared with other structural accounts (complementarity, hemispheric integration, opposed priors) instead of remaining a bare universality claim.
+  Date Added: 2026-09-10
+  Source: Full of Suffering, Full of Love; PROP-2026-09-06-003
+  Confidence: High
+  Evidence: Stated directly and sourced to *The Universal Christ*, 147-148. PRS-CANDIDATE-B: Label: contradiction-resolved-in-the-agent
+
+PRS-76:
+  Problem: If faith is assent to propositions, doubt is faith's contradictory, and any honest uncertainty counts as loss of faith.
+  Resource: Rohr's redefinition of faith as trust that reality is coherent, purposeful, benevolent and going somewhere good, with a person rather than a doctrine as its object.
+  Solution: Faith and doubt become correlative rather than contradictory: doubt is uncertainty about propositions, faith is trust in a direction, and the two can rise together.
+  Date Added: 2026-09-10
+  Source: The Dance of Faith and Doubt; PROP-2026-09-06-004
+  Confidence: High
+  Evidence: Stated directly; sourced to *Falling Upward* 70-71 and *The Naked Now* 117. PRS-CANDIDATE-B: Label: certainty-as-first-half-survival-strategy
+
+PRS-77:
+  Problem: Contemplative and theological accounts of suffering routinely collapse pain and suffering into one category, which makes "redemptive suffering" sound like an endorsement of harm and leaves no way to say which part of an affliction is optional.
+  Resource: A two-term decomposition — pain as the given discomfort, suffering as the added layer produced by resistance, denial, and the judgment that the pain is unjust — with the corollary that pain is unavoidable for humans while suffering is usually not.
+  Solution: Relocates the transformative work from the affliction to the response, so that spiritual practice targets the resistance rather than seeking or valorizing the pain. Gives a testable pastoral criterion: if a practice does not reduce resistance, it is not doing the work Rohr claims for it.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: High
+  Evidence: Rohr writes that pain is physical discomfort but suffering "comes from our resistance, denial, and sense of injustice or wrongness about that pain," and adds that pain is the rent we pay for being human while suffering is usually optional.
+
+PRS-78:
+  Problem: If God is impassible — outside suffering, observing it — then solidarity with the suffering is a human imitation of something God does not do, and the cross is a transaction rather than a disclosure.
+  Resource: The "crucified God" read as revealing that God is on the side of suffering wherever it is found, including on both sides of any war and among oppressors as well as victims.
+  Solution: Converts solidarity from imitation into participation: the disciple does not perform solidarity alongside a detached God but is taken into an act God is already performing. Rohr is explicit that this reading pleases very few people, which functions as a falsifier — a version of the claim that comforted every party would not be this one.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: High
+  Evidence: Rohr's conditional — if God is participating in human suffering rather than passively tolerating and observing it, that changes everything — placed against his claim that the cross was voluntary acceptance of undeserved suffering as total solidarity with the world's pain.
+
+PRS-79:
+  Problem: Religious traditions have no clean way to distinguish membership from transformation, so belonging can be mistaken for change indefinitely.
+  Resource: The belonging-system / transformational-system contrast, anchored to a behavioural test — whether one accepts the invitation to solidarity with the world's pain, freely, and not in order to earn love.
+  Solution: Makes the distinction diagnosable rather than rhetorical, and decouples the acceptance from merit: Rohr insists the invitation is optional (yes, no, or maybe are all live) and that God's love is not contingent on the answer. Solidarity is then motivated by love returned rather than by fear of exclusion.
+  Date Added: 2026-09-10
+  Source: Standing in Solidarity; PROP-2026-09-08-031
+  Confidence: Medium
+  Evidence: Rohr's claim that we are either baptized into Christ's death and resurrection or Christianity is largely a mere belonging system rather than a transformational one that will change the world, alongside his insistence that none of this is done to make God love us.
+
+*Total PRS triplets: 79*

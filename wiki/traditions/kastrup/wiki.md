@@ -153,3 +153,14 @@ Processed 4 source file(s); minted PRS-64 - PRS-69.
 | `2026-08-12_kastrup_objective-vs-subjective-idealism.md` | PROP-2026-08-12-002 | PRS-65 - PRS-67 | The shared-world objection, the representationalism charge, and the agency-under-monism problem. Two at High. |
 | `2026-08-26_kastrup_goel-quantum-effects-living-systems.md` | PROP-2026-08-26-003 | PRS-68, PRS-69 | First engagement with QM in this tradition that has an experiment attached to it. The card's own gate is carried: the recording is members-accessible and unheard, and PRS-68 must not be promoted past Medium without it. |
 | `2026-08-26_kastrup_levin-mind-is-everywhere-2026.md` | PROP-2026-08-26-004 | **+0** | **HELD — no triplet minted.** The card's Evidence line says it outright: "None from the event, which has not occurred at the time of writing." Its candidate is a *prediction about what to listen for*, not a finding, and the announcement names no agenda item on the dissociation dispute. Ingesting a prediction as a triplet would put a claim in this tradition that nobody has made. The substantive question it points at is instead sharpened at **Active Research Question 18**, where it is answerable. |
+
+### Ingest 2026-09-10
+
+13 triplets added from 4 approved proposals (decision email 2026-09-09): PRS-70, PRS-71, PRS-72, PRS-73, PRS-74, PRS-75, PRS-76, PRS-77, PRS-78, PRS-79, PRS-80, PRS-81, PRS-82.
+
+- `PROP-2026-08-28-020` — The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets (talk, https://www.withrealityinmind.com/scientist-healer/) → PRS-70, PRS-71, PRS-72
+- `PROP-2026-09-02-003` — Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup (talk, https://www.withrealityinmind.com/michael-levin-2026a/) → PRS-73, PRS-74, PRS-75, PRS-76
+- `PROP-2026-09-02-004` — Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup) (talk, https://www.withrealityinmind.com/mind-at-large-does-it-have-agency-suffering-and-self-awareness/) → PRS-77, PRS-78, PRS-79
+- `PROP-2026-09-09-003` — God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026) (talk, https://www.withrealityinmind.com/god-soul-the-problem-of-evil/) → PRS-80, PRS-81, PRS-82
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

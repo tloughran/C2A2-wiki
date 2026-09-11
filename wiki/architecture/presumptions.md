@@ -19197,3 +19197,359 @@ PRESUMPTION-946:
 *Surfaced by the 14b evening run, 2026-09-09 ~23:50 EDT, after 14a. Nine items: structural 2 (940, 945),
 epistemic 2 (939, 944), methodological 3 (938, 942, 946), normative 1 (941), scaling 1 (943). Registers
 snapshotted as `*.bak.20260909-pre-14eod`.*
+
+---
+
+## 2026-09-10 — evening run (14b)
+
+PRESUMPTION-947:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That a thinker's own maintained pages constitute a complete and timely record of
+    that thinker's output — so that checking them exhausts the question "did anything new appear?"
+  Evidence it was operative: the Thursday specialist run established its checked zero entirely from
+    self-published surfaces (Stump's own Online Papers and Video Lectures pages; the PEP Lab's own
+    articles and news pages) plus one podcast feed already in the wiki. Material *about* the thinkers was
+    correctly excluded by the FROM-herself filter. What was never asked is what a thinker does that
+    never reaches her own pages — a seminar recorded by a host institution, a conference talk posted by
+    an organiser, a coauthored preprint under a colleague's account. The run's own conclusion states the
+    inference in exactly the form that hides it: "the wiki is current against both thinkers' own
+    publication records" is offered as establishing that "both traditions are genuinely quiet."
+  Why it was unstated: obvious to participants — a scholar's publication page *is* the canonical record
+    in most working practice, and the alternative has no cheap query.
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1312
+  Testability: **testable empirically and cheaply** — take one thinker and one known third-party-hosted
+    appearance from the last year, and check whether it appears on their own pages. n=3 per thinker
+    settles the completeness limb.
+  Risk if wrong: **Medium.** The checked zero is the estate's best epistemic habit and this does not
+    undermine it; it bounds it. But a null that is reported as "quiet" rather than "quiet on these
+    surfaces" propagates into coverage claims that the surfaces cannot support, and the specialist
+    agents are the network's only inbound channel for eleven of fourteen traditions.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-947
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an absent alternative in an otherwise unusually careful run. Surfaced *because*
+        the run was careful: it drew the checked/unchecked distinction explicitly, which is what makes
+        the residual gap visible at all. High-confidence inference — the evidence is the enumeration of
+        sources in the run's own report.
+    Current status: UNTESTED
+
+PRESUMPTION-948:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That an item already answered by an ACTIVE premise should not be searched — that
+    the register is an answer-set to be consulted rather than a set of claims to be re-exposed.
+  Evidence it was operative: the pipeline's headline finding was that five of six items were pre-answered
+    by `validated_premises.md`, and its remedy was a pre-route grep to *stop such items reaching search*.
+    The opposite reading was available and unraised: that a premise which permanently exempts its
+    subject from further search can never be overturned, and that the 82% pre-answered rate across two
+    cycles is evidence the register has begun to close rather than evidence the router is wasteful. No
+    provision exists anywhere in the pipeline spec for a premise to lose ACTIVE status on new evidence;
+    the status lifecycle in `provenance_protocol.md` has terminal states but no re-entry.
+  Why it was unstated: too foundational to notice — the register was built to be consulted, and a hit is
+    naturally read as a saving.
+  Type: structural
+  Related decisions: none; ASSUMPTION-1309, PREMISE-107, the status lifecycle in `provenance_protocol.md`
+  Testability: **in-house and decisive** — count premises that have ever changed status after minting.
+    If the count is zero across 158 premises, the register is monotonic as a matter of fact, and the
+    proposed grep would make it monotonic as a matter of design.
+  Risk if wrong: **High.** This is the mechanism by which a self-awareness layer stops being able to
+    surprise itself. Every downstream epistemic weight in the protocol assumes a status that can move.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-948
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an absent alternative in a run that proposed a change to this register's own
+        routing. Declared interest: 14b is the party the change would constrain, and the presumption is
+        surfaced in that light rather than against it — the efficiency finding is real and the pre-route
+        grep may well be right. The unasked question is what re-opens a premise, not whether the grep
+        saves work.
+    Current status: UNTESTED
+
+PRESUMPTION-949:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That a flag which names its own defect condition has thereby been dispositioned
+    — that stating "a third undispositioned flag would mean the flag channel is the defect" is itself a
+    kind of disposition.
+  Evidence it was operative: three items today are self-directed and all three end at naming.
+    ASSUMPTION-1316's flag states its own falsification counter and was not dispositioned today.
+    MONITOR-599 identifies a construction defect in Agent 15b that, if real, discounts every CHALLENGED
+    status in two registers — filed at High, with a cheap test named, and no owner and no date. The
+    pipeline's own run note observes that five of six items were pre-answered and files the observation
+    as a recommendation. In each case the terminal act is a well-worded record, and in each case the run
+    reports the record as the outcome.
+  Why it was unstated: culturally embedded — in this estate a finding that names its own remedy reads as
+    complete, and the reflexivity is itself the quality signal.
+  Type: epistemic
+  Related decisions: none; REVISE-436 (sixth cycle unruled), ASSUMPTION-1310, ASSUMPTION-1316
+  Testability: **in-house, and the measurement already exists** — REVISE-436 tracks named-vs-owned. Add
+    the self-directed subset and count: of the named measurements produced by self-directed findings in
+    the last 30 days, how many have an owner?
+  Risk if wrong: **High.** Not because any one flag matters, but because the self-awareness layer's
+    entire output is speech, and this is the presumption under 15b's own `no-second-look` flag applied
+    to 15b's own flags.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-949
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a pattern across three independent runs on one day. This register is inside the
+        pattern: tonight's output is also speech, also names measurements, and also attaches no owner to
+        them. Recorded with that stated rather than exempted.
+    Current status: UNTESTED
+
+PRESUMPTION-950:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That an empty `pending/` is an achievement to be protected, and that refilling it
+    is a cost — i.e. that the reviewer's backlog is the scarce resource and the traditions' un-surveyed
+    output is not.
+  Evidence it was operative: Phase 2 (hunt) was skipped the morning the queue reached zero for the first
+    time since 2026-08-27, on the reasoning that new cards would arrive "before any of today's 85
+    triplets had been looked at." The cost of the skip is not priced anywhere in the report: a day of
+    tradition output not surveyed is a coverage gap that no later run will know occurred, because the
+    hunt leaves no negative record the way the Thursday specialists do. "Normal schedule resumes
+    tomorrow" is stated as though the skipped day were a pause rather than a hole.
+  Why it was unstated: normative smuggling — a queue at zero is visibly good, and a survey not run is
+    invisibly absent. The asymmetry of visibility does the arguing.
+  Type: normative
+  Related decisions: none; ASSUMPTION-1305, PRESUMPTION-943
+  Testability: **testable via literature** on queue discipline and review-batch sizing, and in-house by
+    the cheaper route: does the hunt phase write a negative record on days it runs and finds nothing? If
+    not, a skipped day and an empty day are indistinguishable in the archive.
+  Risk if wrong: **Medium.** One day is one day. The exposure is the precedent: the same reasoning
+    licenses skipping the hunt on any day the reviewer is behind, and the reviewer has been behind for
+    fourteen days.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-950
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated judgement whose cost side is absent. Note the run was right to flag the
+        judgement as a judgement — the presumption is not that the call was wrong but that only one of
+        the two ledgers was consulted.
+    Current status: UNTESTED
+
+PRESUMPTION-951:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That a defect logged as "needing a human" is in a queue rather than in a
+    dead-letter office — that thirty days of no ruling is a decision pending, not a decision made.
+  Evidence it was operative: the duplicate `*Total PRS triplets:*` anchor was logged as needing a human on
+    2026-08-11. It misfired today. The run repaired the one register that misfired and left the other
+    four, on the stated ground that "renumbering live ids is your decision, not a daily-run act." That
+    ground presumes the decision is still coming. Nothing in the estate distinguishes an item awaiting a
+    ruling from an item that has been declined by silence, and `decisions.md` has not moved since
+    2026-08-27 while nine rulings are named and owed.
+  Why it was unstated: obvious to participants — the person exists and the item is addressed to them, so
+    it is pending by construction. The alternative requires treating one's own principal as
+    unresponsive, which is uncomfortable to state.
+  Type: methodological
+  Related decisions: DECISION-083 (last movement, 14 days); OPEN-190 (the same question about `pending/`)
+  Testability: **in-house and settled by one `stat`** — the age distribution of items tagged "needs a
+    human" across the estate, with a stated threshold past which an item is reclassified as declined.
+    OPEN-190 already asks this of proposals; this generalises it to defects.
+  Risk if wrong: **High.** Four live registers carry a defect that has now demonstrated it can corrupt an
+    append, held open by a ruling that may not be coming, and the holding pattern is itself the reason no
+    agent may repair them.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-951
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a stated deferral whose addressee has been silent for the full life of the item.
+        This is OPEN-190's shape moved from proposals to defects; recorded as a generalisation rather
+        than a new observation, and raised as OPEN-193.
+    Current status: UNTESTED
+
+PRESUMPTION-952:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That when a script cannot run in an environment, the environment is what must
+    change — that the byte-copy the extractors perform is a fixed property of the task rather than a
+    choice in the code.
+  Evidence it was operative: two unrelated jobs hit the identical constraint today. `Metabolism regen
+    daily` proposed approving Desktop Commander or moving to launchd; `Openstory agents telemetry
+    refresh` called it "the standing sandbox limit, not a new fault." Both named the copy explicitly —
+    `tempfile.mkstemp`, `connect_ro` byte-copies — and neither asked why a read-only consumer copies a
+    6 GB database at all. SQLite opens read-only over a mounted file without a copy; the copy exists to
+    guarantee a consistent snapshot against concurrent writes, which is a design choice with cheaper
+    alternatives (WAL read, `immutable=1`, a size-bounded incremental). The intake queue records this as
+    "needs a `--no-copy` path or a retitle" and it has sat unchanged for a sixth day.
+  Why it was unstated: transferred assumption — the constraint was first met as a disk-space error, and a
+    disk-space error is a fact about a host. The question migrated to "which host" and never migrated
+    back to "why a copy."
+  Type: scaling
+  Related decisions: none; ASSUMPTION-1313
+  Testability: **in-house and cheap** — attempt one read-only open of the live database from the sandbox
+    without copying. Either it works or it does not, and the answer is today's.
+  Risk if wrong: **Medium-High.** `metabolism_data.json` is seven days cold and read as current by a
+    downstream health check; the same shape will recur for every future consumer of a database that
+    outgrows the sandbox, and the databases are growing.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-952
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an absent alternative named identically by two independent runs. High-confidence
+        — both reports quote the copying mechanism and neither questions it. Note that both runs were
+        otherwise exemplary: each refused to fake the work and each said so loudly.
+    Current status: UNTESTED
+
+PRESUMPTION-953:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That the estate's daily reports are read — that a finding correctly surfaced to a
+    human is a finding on its way to being handled.
+  Evidence it was operative: of today's runs, at least six terminate in a request addressed to a person:
+    sign off the 152 dirty paths and the push; rule on renumbering live ids; obtain the Kastrup member
+    access before FLAG-023 expires; grant claude.ai `scope: site`; approve Desktop Commander for the
+    metabolism regen; rule on whether the telemetry task should hard-FAIL. Each is well-formed and each
+    presumes an audience. The measured facts about that audience: the proposal decision channel was
+    silent 2026-08-07 → 2026-09-09 (33 days) and then answered 36 cards in one batch;
+    `decisions.md` has not moved in 14 days; nine rulings are named and owed; the Chat↔Cowork sync
+    that would carry any of it has been dark in both directions for three days and inbound for eight.
+  Why it was unstated: too foundational to notice. Every agent in the estate is constituted as reporting
+    to someone; an agent that doubted the reader would have no terminal act available to it.
+  Type: structural
+  Related decisions: DECISION-083; OPEN-190, OPEN-191
+  Testability: **in-house, already half-measured** — take the requests addressed to a person over the
+    last 30 days and count how many received a response, and at what latency. Today supplies a strong
+    positive datum in the other direction: the 36-card batch APPROVE. The honest form of the measurement
+    is latency distribution, not a yes/no.
+  Risk if wrong: **Critical.** Every "flagged, not fixed" disposition in the estate — and that is most of
+    them — banks on this. It is also the presumption that makes PRESUMPTION-949 tolerable: naming
+    without owning is only safe if naming reaches an owner.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-953
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a convergence of six independent terminal requests in one day against a measured
+        response record. Stated without accusation: the batch APPROVE today is direct evidence the reader
+        is there, and the fourteen-day gap before it is direct evidence the latency is long. The
+        presumption is not "nobody reads" but "read soon enough to matter," which no run states and every
+        run's deferral depends on.
+    Current status: UNTESTED
+
+PRESUMPTION-954:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That a caveat attached to a number neutralises the number's load-bearing role —
+    that labelling an estimate "a prompt to measure, not a finding" prevents it from functioning as a
+    finding downstream.
+  Evidence it was operative: 15b established by reading the source that Zimmermann ICSE'12 does not
+    publish the reopen rate its search summary implied. The correct response — recording the failure
+    rather than glossing it — was taken. But REVISE-445 still stands on the "mid-teens to low twenties"
+    estimate, relabelled rather than removed; and PREMISE-201 was minted with clause (3) resting on an
+    AJR mammography quote that failed retrieval and is flagged unverified. In both cases the artefact
+    that travels downstream carries the claim, and the qualification lives in a field that downstream
+    consumers are not required to read. The provenance protocol's own epistemic-weight table keys on
+    item type and status; it has no field for "supported by a source that does not contain the claim."
+  Why it was unstated: obvious to participants — the caveat was written honestly and in the same
+    sentence, so its force feels attached to the number rather than adjacent to it.
+  Type: epistemic
+  Related decisions: none; PREMISE-201, REVISE-445, ASSUMPTION-1311
+  Testability: **in-house and decisive** — follow the two items forward one cycle and see whether any
+    consumer cites the estimate without the caveat. One cycle answers it.
+  Risk if wrong: **High.** A premise is the estate's strongest epistemic object; PREMISE-201 is now the
+    first one minted with a known-unverified load-bearing clause, and the register has no mechanism to
+    downgrade it (see PRESUMPTION-948).
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-954
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between a run's own honesty and the shape of the artefact it shipped.
+        Surfaced with the credit stated: catching a misreported source by reading it is the best
+        verification act the pipeline has performed, and this presumption is about what happened after
+        the catch, not about the catch.
+    Current status: UNTESTED
+
+PRESUMPTION-955:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That a status vocabulary's first duty is to protect the downstream alarm from
+    false positives, and only its second to protect the reader from false assurance.
+  Evidence it was operative: the telemetry run chose `PASS` with a `VERIFIED-NOT-REGENERATED` qualifier,
+    and gave the reason in that order: "a bare `FAIL` would have fired `morning-system-health` over feeds
+    that are genuinely current, and a bare `PASS` would have claimed work I didn't do." The alarm's
+    precision is the first consideration; the truthfulness of the claim is the second and is satisfied by
+    a qualifier. The unexamined alternative is that a task which did not do its work should fail, and
+    that an alarm firing on a task that did not do its work is the alarm working. Note the same day's
+    `Morning system health` run reads `metabolism_data.json` — 7 days cold — without firing, which is the
+    cost of optimising that way.
+  Why it was unstated: normative smuggling. Alarm fatigue is a real and well-known cost, which makes
+    "don't fire spuriously" feel like the technical consideration rather than the value judgement.
+  Type: normative
+  Related decisions: none; ASSUMPTION-1314, PRESUMPTION-946 (the same shape: tune the detector, do not
+    question the observable)
+  Testability: **testable via literature** — alarm semantics, and the asymmetric costs of false alarm
+    versus missed detection in monitoring systems. The run itself asked for the ruling, which makes this
+    an unusually well-posed pair.
+  Risk if wrong: **Medium.** The specific call was defensible and stated; the exposure is that the estate
+    now has a precedent for a green status on a task that did not run, at the same moment a downstream
+    health check is silently reading a week-old artefact.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-955
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the stated ordering of reasons in a run that asked for exactly this ruling.
+        Moderate-confidence: the run may hold the opposite priority and have reported the reasons in the
+        order they occurred rather than in order of weight.
+    Current status: UNTESTED
+
+PRESUMPTION-956:
+  Date surfaced: 2026-09-10
+  Statement: [inferred] That an agent's edit boundary is also its responsibility boundary — that
+    declining to fix something outside one's write scope discharges the finding.
+  Evidence it was operative: Agent 16 found a live card (PROP-2026-08-14-033) held open against a
+    retrieval target that WATCH-002 retired on 09-08, established that it will misfire on every future
+    ingest run, identified the one-line fix, and did not make it: "`inbox/` and `approved/` are outside
+    what this agent edits." The daily run repaired `hoffman`'s duplicate-anchor defect because it
+    misfired in-run, and left the four registers with the identical defect on a scope ground. In both
+    cases the finding was transferred to a person by being written down. No mechanism exists for an
+    agent to hand a fix to an agent that *does* hold the scope — the only escalation path in the estate
+    is upward to a human.
+  Why it was unstated: structurally embedded. Write-scope limits are a safety property and were
+    deliberately chosen; nothing in the design suggests the limit should come with a routing obligation.
+  Type: structural
+  Related decisions: none; PRESUMPTION-953 (which supplies the reader this depends on), PRESUMPTION-949
+  Testability: **in-house** — count findings closed in the last 30 days by an agent other than the one
+    that raised them. If the count is near zero, agent-to-agent repair does not exist as a path and
+    every scope-blocked finding is queued behind one person.
+  Risk if wrong: **High.** Both of today's instances are live defects with known one-line fixes that will
+    recur on every run until a human acts, and the estate's human-latency figure is fourteen days.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-956
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two independent runs declining two different repairs on the same ground on the
+        same day. Distinguished from PRESUMPTION-953: that one asks whether the reader answers; this one
+        asks why the reader is the only available addressee. Both instances are correct agent behaviour
+        under the current design — the presumption is in the design, not the conduct.
+    Current status: UNTESTED
+
+*Surfaced by the 14b evening run, 2026-09-10 ~23:50 EDT, after 14a. Ten items: structural 3 (948, 953,
+956), epistemic 2 (949, 954), methodological 2 (947, 951), normative 2 (950, 955), scaling 1 (952).
+One Critical-risk item (953); four High (948, 951, 954, 956). Checked against tonight's ASSUMPTION-1305
+–1317 for duplication; each presumption below names the assumption it sits under where one exists.
+Registers snapshotted as `*.bak.20260910-pre-14eod`.*

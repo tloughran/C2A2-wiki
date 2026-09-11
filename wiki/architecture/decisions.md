@@ -1170,3 +1170,43 @@ underneath it: whether logging an unlicensed act is being treated as the control
 precedent, in an estate whose only reader of such logs stopped thirteen days ago.*
 
 *(14a does not make decisions.)*
+
+---
+
+*2026-09-10 (evening run, 14a) — no new decisions in this register. `decisions.md` remains at
+DECISION-083 (2026-08-27): **fourteen days**. But the day's largest event was a decision, made outside
+this register and recorded elsewhere: **a batch APPROVE of all 36 pending proposals**, emailed 2026-09-09
+and parsed at Phase 0 this morning, 36/36 matched by prop_id, 0 warnings, `pending/` 36 → 0. The proposal
+decision channel had been silent since 2026-08-07 — **thirty-three days** — and answered in one act.
+That is the strongest counter-evidence the estate has produced to the reader-latency question, and it is
+recorded here as such.*
+
+*What the same act also produced: `approved/` 378 → 414, an ingest of 85 PRS triplets across ten
+traditions (the largest in the network's history, 782 → 867), CROSS-132..135, FINDING-086..090,
+FLAG-023/024 — and **FINDING-089, which states that four of the 36 cards approved a pointer rather than a
+reading**, each having said so itself and asked to be caught, plus two more carrying authorship caveats
+(FINDING-090). ASSUMPTION-1307 records the run's own conclusion: a batch APPROVE cannot distinguish "read
+and agreed" from "not read separately." Six of thirty-six cards in the network's largest ingest are
+therefore of uncertain warrant, and all thirty-six were ingested. The relation between that and
+ASSUMPTION-1295 (ingest licensed by ID alignment rather than by approval) is undrawn by any run and
+remains filed as OPEN-174.*
+
+*In the same twenty-four hours: +2 REVISE (445, 446), +6 DISPOSITION (922–927), **+3 PREMISE (201, 202,
+203)** — the first minting in two cycles, one of which (201) carries a load-bearing clause resting on a
+quotation that failed retrieval (ASSUMPTION-1311, PRESUMPTION-954) — +2 MONITOR (598, 599), +1
+SYSTEMIC-RISK-FLAG (`no-second-look`, High, the second consecutive one), +4 CROSS, +5 FINDING, +2 FLAG,
++0 proposals (hunt phase skipped by judgement, ASSUMPTION-1305), +13 ASSUMPTION, +10 PRESUMPTION.*
+
+***Twelve rulings are now owed and named:*** *REVISE-436's FAIL LOUD binary (seventh cycle unruled), the
+WATCH-002/003 audit question, OPEN-174, OPEN-185, OPEN-186, OPEN-187, OPEN-188, OPEN-189, OPEN-190,
+OPEN-191 (asked yesterday; the task it concerns ran and failed again today), and this run's OPEN-192
+(whether a premise answered by the register should be searched anyway), OPEN-193 (at what age a defect
+logged as "needing a human" becomes declined — the specific instance is thirty days old and misfired
+today), OPEN-194 (whether a skipped hunt leaves a negative record). Three further requests were addressed
+to Tom by today's runs outside this register: sign-off on 152 dirty paths and the push, Kastrup member
+access before FLAG-023's window closes, and a claude.ai `scope: site` grant. PRESUMPTION-953 asks the
+register-level question underneath all of them — whether "surfaced to a human" is being treated as
+"handled," in an estate where today supplied both the best evidence yet that the reader answers and a
+fourteen-day measurement of how long the answer takes.*
+
+*(14a does not make decisions.)*

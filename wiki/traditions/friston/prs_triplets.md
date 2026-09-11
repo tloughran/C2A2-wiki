@@ -583,7 +583,79 @@ PRS-63:
   Confidence: High
   Evidence: "Testing our predictions will inform the validity of the central assumption connecting beliefs and phenomenology, and advance the neurophenomenology research programme."
 
-*Total PRS triplets: 63*
+PRS-64:
+  Problem: Predictive coding requires a Comparator that subtracts prediction from evidence, and a precision term that weights the result, but neither has had a concrete neural implementation at the level of populations rather than single cells.
+  Resource: A laminar neural mass model (LaNMM) exhibiting two distinct cross-frequency couplings — Signal-Envelope Coupling (SEC) and Envelope-Envelope Coupling (EEC) — analysed through an amplitude-modulation (AM radio) encoding framework.
+  Solution: SEC is identified as the subtraction operation that generates prediction error, and EEC as a slower-timescale gate that implements precision weighting; the pair together constitute a physically realised Comparator.
+  Date Added: 2026-09-10
+  Source: Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach; PROP-2026-08-28-001
+  Confidence: Medium
+  Evidence: The paper states that SEC "generates prediction-error signals by subtracting top-down predictions from bottom-up oscillatory envelopes, while EEC operates at slower timescales to implement gating — a critical mechanism for precision weighting."
+
+PRS-65:
+  Problem: Accounts of altered states and of neurodegeneration are usually built from separate vocabularies, with no shared computational quantity that both disrupt.
+  Resource: Parameter perturbation of the LaNMM — specifically, deficits in fast inhibitory synapses and increased glutamate receptor gain.
+  Solution: Both perturbations are shown to compromise the same Comparator function, so Alzheimer's disease and psychedelic states become two failure modes of one inferential mechanism rather than unrelated phenomena.
+  Date Added: 2026-09-10
+  Source: Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach; PROP-2026-08-28-001
+  Confidence: Speculative
+  Evidence: The authors "discuss how deficits in fast inhibitory synapses, as seen in Alzheimer's Disease, and increased glutamate receptor gain, characteristic of serotonergic psychedelic states, may disrupt the Comparator process and compromise effective information processing." The claim is offered as a modelling implication, not an empirical result.
+
+PRS-66:
+  Problem: Active inference optimizes against a single generative model, so an agent has no principled response when the deployment environment lies outside that model — the training-environment ambiguity problem.
+  Resource: A distributionally robust extension of the free energy functional, in which the agent optimizes against an ambiguity set of candidate environmental distributions rather than a point estimate, paired with a resolution engine that embeds the robustness in the decision mechanism.
+  Solution: Robustness becomes a property of the inference itself rather than an add-on, and the resulting policies remain viable under model-environment mismatch — demonstrated by benchmark tasks completed where comparison models fail.
+  Date Added: 2026-09-10
+  Source: Distributionally robust free energy principle for decision-making; PROP-2026-08-31-003
+  Confidence: High
+  Evidence: "Combining a robust extension of the free energy principle with a resolution engine, DR-FREE wires robustness into the agent decision-making mechanisms. Across benchmark experiments, DR-FREE enables the agents to complete the task even when, in contrast, state-of-the-art models fail."
+
+PRS-67:
+  Problem: Natural agents survive novel and hostile environments on little or no prior experience of them; no account has explained how, without positing training data the organism does not have.
+  Resource: The DR-FREE result read backwards — robustness under model ambiguity achieved by design rather than by exposure.
+  Solution: A hypothesis that biological survival under novelty reflects distributionally robust inference built into the organism's architecture, not accumulated learning; offered by the authors as a direction, not a finding.
+  Date Added: 2026-09-10
+  Source: Distributionally robust free energy principle for decision-making; PROP-2026-08-31-003
+  Confidence: Speculative
+  Evidence: The paper suggests the milestone "may inspire both deployments in multi-agent settings and, at a perhaps deeper level, the quest for an explanation of how natural agents — with little or no training — survive in capricious environments." This is stated as an aspiration in the abstract's closing sentence and carries no evidence in the paper.
+
+PRS-68:
+  Problem: Artificial agents pursue goals given to them from outside and cannot select goals of their own, because they have no internal environment whose condition could ground a need.
+  Resource: Explicit factorization of state variables into internal-environment and external-environment representations, with internal-state dynamics given life-inspired mathematical properties (viability bounds, homeostatic regulation).
+  Solution: Autonomy is recast as a structural property of the state space rather than a capability to be trained in — an agent with a regulated internal environment has needs, and needs generate goals without external specification.
+  Date Added: 2026-09-10
+  Source: Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents; PROP-2026-08-31-002
+  Confidence: Medium
+  Evidence: The paper states that developing interoceptive AI "requires explicit factorization of state variables representing internal and external environments, together with mathematical formalization of life-inspired properties governing internal-state dynamics." It is presented as a Perspective's design claim, not a demonstrated result.
+
+PRS-69:
+  Problem: Agents degrade when the environment shifts away from training conditions, because every reference signal they hold is external and shifts with it.
+  Resource: Internal states treated as "universally available and intrinsically valuable contexts" — reference signals that persist across external change — together with neuromodulatory mechanisms as the modulation channel.
+  Solution: Adaptivity is grounded in a signal the environment cannot move. Learning and behaviour are modulated against the agent's own internal condition, giving a stable context under distribution shift.
+  Date Added: 2026-09-10
+  Source: Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents; PROP-2026-08-31-002
+  Confidence: Medium
+  Evidence: "internal states can also function as universally available and intrinsically valuable contexts, serving as stable reference signals that modulate learning and behaviour under changing external environments."
+
+PRS-70:
+  Problem: Brain entropy is elevated in both high-content psychedelic states and low-content meditative MPEs, so entropy cannot be the index of phenomenal richness the Entropic Brain Hypothesis takes it to be.
+  Resource: The Complex Brain Hypothesis — richness of experience is indexed by the complexity ("length") of the generative model, with entropy reinterpreted as variability *around* that structure rather than as a measure of the structure.
+  Solution: Separates two quantities the EBH had conflated: a model-structure quantity (complexity) that should differ between MPE and psychedelic states, and a dynamical-variability quantity (entropy) that is permitted to rise in both. Predicts that a complexity measure will dissociate the two state classes where entropy does not.
+  Date Added: 2026-09-10
+  Source: The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience; PROP-2026-09-07-002
+  Confidence: Medium (the dissociation is the paper's stated claim; whether it is demonstrated on data or proposed for testing is unread)
+  Evidence: Abstract: MPEs "defined by their phenomenological simplicity, also show signs of increased neurophysiological entropy"; CBH proposes richness "is better indexed by complexity than by entropy."
+
+PRS-71:
+  Problem: Active-inference theories of consciousness (PRS-21) have lacked a stated *neural measure* that should track the theory's central variable — the structure of the generative model — as opposed to proxies borrowed from the entropy literature.
+  Resource: The identification of phenomenal content with generative-model description length ("length" of the model) — a minimum-description-length / complexity reading of the generative model, which is a quantity the FEP already defines (model complexity is the KL term in variational free energy).
+  Solution: Gives the consciousness thread a candidate bridge from theory to measurement: if content tracks model complexity, then the complexity penalty in free energy is not only a cost the system minimises but a correlate of what it is like to be in the state. The MPE — minimal content, preserved wakefulness — becomes the limiting case of a low-complexity generative model with high variability, which is a precise and testable description.
+  Date Added: 2026-09-10
+  Source: The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience; PROP-2026-09-07-002
+  Confidence: Speculative (the link from the paper's "complexity of the generative model" to the KL complexity term in variational free energy is this agent's inference, not confirmed from the text)
+  Evidence: Abstract: phenomenology "might also align with the complexity, or 'length', of the generative model, while entropy reflects variability around that underlying structure."
+
+*Total PRS triplets: 71*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

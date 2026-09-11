@@ -23,8 +23,8 @@ WATCH-003:
   Check method: Check `review/archive/` for a later decisions file naming PROP-2026-07-19-001 or the beatitudes-week-two slug; check whether the file reappears in any proposals/ subfolder.
   Check cadence: Weekly
 
-  Last checked: 2026-09-08
-  Check count: 9
+  Last checked: 2026-09-11
+  Check count: 10
   Result history:
     - 2026-07-21: No disposition found in any decision archive file. File absent from pending/, approved/, denied/, needs_review/, inbox/, and the vault. Condition NOT met.
     - 2026-07-28: `review/archive/` unchanged at 16 files, latest still `2026-07-23_decisions.md` — no decision file has been written since intake, so no later disposition can exist. Content grep across `review/archive/` for `2026-07-19-001` and `beatitudes-week-two`: zero matches. Filename/content search across `pending/` (16 files), `approved/` (254), `denied/` (1), `needs_review/` (1): absent. Condition NOT met. No review pass has run since 2026-07-23, so this item cannot move until Tom next reviews.
@@ -45,6 +45,11 @@ WATCH-003:
       **What remains is one thing only: the audit question, which is a one-line ruling by Tom** — see INTEGRITY FLAG. Agent 16 records that continued weekly checking of this item can now produce nothing except re-confirmation of that single outstanding ruling, and reiterates the 08-25 STALE recommendation accordingly. Not a check: no folder census or grep sweep was re-run beyond confirming the archive count and the ingest line.
 
     - 2026-09-08: On-cadence check; count now **9**. `review/archive/` still **18** files, latest still `2026-08-27_decisions.md` — no decision file written since the 08-27 pass, so no later disposition on PROP-2026-07-19-001 can exist. Content grep for `2026-07-19-001` / `beatitudes-week-two` across `review/archive/` and `inbox/`: matches remain confined to `review/archive/2026-08-27_decisions.md` (the APPROVE of the re-filing PROP-2026-08-12-041), the approved and staged copies of that re-filing, and the 09-01 ingest line in `PROCESSED_LOG.md`. The original file has still not reappeared in any proposals/ subfolder. Folder census: `pending/` **27**, `approved/` 378, `denied/` 1, `needs_review/` 1. `PROCESSED_LOG.md` unchanged (949 lines, mtime 2026-09-02 22:11 — no ingest run 09-03 through 09-07). Condition NOT met. Review-pass gap: **12 days**. **Nine checks, nine identical answers.** Unchanged since 08-25: this item tracks exactly one thing — the INTEGRITY FLAG's audit question, a one-line ruling by Tom — and no further checking can advance it. Note that WATCH-002, with which this item shares that audit question, RESOLVED today on its *content* half; the audit half it shared with this item did not move and remains the sole content of both.
+
+    - 2026-09-11 (CHECK RUN OFF-CADENCE — the awaited event occurred; counter incremented to 10; next on-cadence check was 2026-09-15): **`review/archive/` is no longer unchanged.** A **19th** decision file exists, `2026-09-10_decisions.md` — the first disposition recorded since 2026-08-27, a **14-day** gap. This is precisely the event this check method waits on, so the check was run four days early rather than deferred. Content grep of the new file for `2026-07-19-001` and `beatitudes-week-two`: **zero matches.** The file records **36 APPROVE and nothing else** — no DENY, no CHECK, no CHANGE, no CONDITIONAL — and contains no statement anywhere about the 2026-07-20 omission. Grep across all of `review/archive/` and `inbox/` for `2026-07-19-001` / `2026-07-19-003` / `beatitudes-week-two` / `who-is-this-god`: matches remain confined to the 08-27 APPROVEs of the two re-filings, the approved and staged copies of those re-filings, and the ingest lines in `PROCESSED_LOG.md`. Vault-wide `find` for the two original slugs returns only those four re-filing copies. The original file has still not reappeared in any proposals/ subfolder. Folder census: `pending/` **0**, `approved/` **414**, `denied/` 1, `needs_review/` 1, `review/archive/` **19**. Condition NOT met. **Ten checks, ten identical answers.**
+      **Two collateral findings from this pass, both of which bear on the INTEGRITY FLAG rather than on this condition:**
+      (i) **The arithmetic closes exactly this time.** 36 cards in `pending/` before the pass, 36 dispositions recorded, `approved/` 378 → **414** (= 378 + 36), `pending/` → **0**. There is no gap of the kind that created this watch. Verified further by machine: all 36 decision lines parse, all 36 ids are unique, every id's date-prefix matches its named filename, every named file exists in `approved/`, and every file **contains its own `proposal_id`** in its frontmatter. This is the first review pass since the INTEGRITY FLAG was raised that can be audited end-to-end from the decision record alone.
+      (ii) **The mechanism that the INTEGRITY FLAG blamed is no longer in the path.** `2026-09-10_decisions.md` names its source as **`Gmail [C2A2-review-decision] 2026-09-09 (thread 1a087dd9595a1b4d)`** — not the generated review page. Each line carries **both** the `proposal_id` and the filename, which is self-checking. The `review/` root now holds **zero** `*.html` review pages (they have been moved to `_superseded/`, `.stale_review_pages/` and `_trash/`). The position-based decision IDs emitted by `tools/generate_review_page.py` (~line 304), which the standing TOOLING FLAG named as the plausible mechanism for a silent 2-item loss, therefore cannot produce that failure on the current route. **This does not answer the audit question about 2026-07-20** — it removes the most likely explanation for it going forward, and it downgrades the TOOLING FLAG from a correctness fix to a cleanup item *if* the email route is now the standing mechanism. Whether it is standing or was a one-off is not something Agent 16 can determine from the artifacts; recorded for Tom.
 
   [AMENDMENT 2026-08-13 — alternative resolution route now exists]: The *content* of PROP-2026-07-19-001 re-entered the pipeline on 2026-08-12 as **PROP-2026-08-12-041** (`pending/2026-08-12_rohr_beatitudes-week-two-weekly-summary.md`) — same source_url (https://cac.org/daily-meditations/beatitudes-week-two-weekly-summary/), same source_date (2026-07-18), same weekly summary, filed independently by the Rohr agent and correctly carded on `review/2026-08-12_review.html`. A recorded disposition on PROP-2026-08-12-041 therefore satisfies the *substantive* purpose of this watch (the Week Two material is not lost) but NOT the *audit* question (why -001 left the pipeline undisposed and undeleted-from-record). Agent 16 has not narrowed or closed the condition on this basis — that is Tom's call.
 
@@ -102,6 +107,14 @@ Two consequences beyond the item itself:
 **WATCH-003 is unaffected.** Its condition was never a retrieval question and no aggregator can answer it. It remains what it has been since 08-25: one line from Tom on the INTEGRITY FLAG.
 
 **Common to both:** these two items are held open by a human dependency, not by a condition further checking can satisfy. Agent 16 will keep checking at the stated cadence until Tom rules, because it does not cancel or re-cadence unilaterally — but it records here that from 2026-08-25 onward each check is expected to add confirmation, not information.
+
+
+**[UPDATE 2026-09-11 — the human dependency that holds WATCH-003 open was exercised and did not touch it. Tenth check; recommendation unchanged and now cheaper to act on.]**
+
+The 08-25 assessment said WATCH-003's condition "is entirely human-dependent and no amount of checking can advance it," and that its check method "is unsatisfiable while no review pass runs at all." A review pass has now run — 2026-09-10, 36 APPROVE, the queue cleared to zero. **The human acted, and the audit question was not among what he acted on.** That is not a failure of the pass; PROP-2026-07-19-001 was not on it and could not have been, since the file is still absent from every proposals/ subfolder. But it settles a question the flag left open: the condition is not blocked on *review cadence*, it is blocked on a **retroactive ruling**, which no ordinary review pass will ever deliver because no card exists to carry it.
+
+**Consequence for the recommendation: unchanged in substance, narrowed in form.** WATCH-003 still needs exactly one line from Tom on the INTEGRITY FLAG. What has changed is the cost of composing that line — the 09-10 pass supplies the missing comparison case. The 07-20 pass had 36 cards and 34 dispositions; the 09-10 pass had 36 cards and 36 dispositions, machine-verified id-to-file. Tom can now rule on the 07-20 gap against a known-good pass rather than against nothing.
+
 
 ---
 
@@ -218,6 +231,31 @@ The 2026-09-02 ingest run (`inbox/PROCESSED_LOG.md`, section `## 2026-09-02 — 
 Note (a) and (b) are not exclusive, and (b) alone would have caught all five.
 
 **Scope note:** this flag does not touch the substance of any of the five decisions. Each refusal to mint was correct and well-reasoned; the ingest layer is doing careful work. The gap is in what happens to the condition *after* the refusal.
+
+
+**[ADDENDUM 2026-09-11 — THE LEAKAGE IS NOW INDEPENDENTLY CORROBORATED BY THE PATTERN DETECTOR, THE QUEUE HAS ROUGHLY DOUBLED, AND ONE CONDITION HAS BEEN VIOLATED RATHER THAN MERELY UNTRACKED. This flag escalates from open to urgent.]**
+
+The 2026-09-10 ingest run — 36 cards, **85 triplets, the largest in the network's history** — carried two pipeline findings of its own. One of them, **FINDING-089** (`flags/pattern_detector_findings.md`), is this flag arrived at independently, from the other end of the pipeline, by a different agent:
+
+> "Four approvals approved a pointer, not a reading, and the retrieval queue still does not exist … The 2026-09-02 backlog review already recorded 'a retrieval queue that doesn't exist is 6 deep.' **It is now at least 10.**"
+
+**Three things this changes.**
+
+1. **Convergent detection.** The 09-04 flag was raised from the *deferral* end — five conditions written into Active Research Questions that nothing polls. FINDING-089 reaches the same conclusion from the *ingestion* end — conditions written into Evidence fields that nothing polls. Two agents, two channels, one missing structure. Agent 16 records this as materially raising the confidence on the flag: it is not an artifact of how this agent reads the log.
+
+2. **The queue grew faster than it was described.** 09-02: six. 09-04 (this flag): five newly identified, closed the same day. 09-10: four more, **approved and ingested**, bringing FINDING-089's count to at least ten. The four new ones are PROP-2026-09-08-003, PROP-2026-09-02-003, PROP-2026-09-02-002, PROP-2026-09-08-004.
+
+3. **The escalation that matters: one of the four states a condition that ingestion was supposed to wait for, and did not.** PROP-2026-09-02-003's own text asks that "Tom's member access be used to obtain it **before this proposal is ingested**." It was ingested on 2026-09-10. And PROP-2026-09-02-002 carries a **dated** condition — *"queue a retrieval check after 2026-09-24"* — which is the single most watch-shaped item this tracker has ever been shown: a specific check, a specific date, an owner-shaped gap, and **no tracker holding it**. On 2026-09-24 nothing will fire.
+
+**Contrast with the handling that works.** PROP-2026-08-14-033 was held open for the fourth consecutive run (09-10 log: "Not processed, on purpose, and still open"), because its card carried prose an attentive processor could act on. These four carried prose too — and were approved in a 36-card batch and ingested the next day. **The difference was not the marking; it was that a batch APPROVE cannot distinguish "I read this and agree" from "I did not read this one separately."** FINDING-089 says exactly this. The 09-02 revision's narrow fix — key the ingest step on a structured `content_verified` field rather than on authorial prose — would not have caught these four either, because none of them carries that field: a grep of the whole of `approved/` for `content_verified: *false` returns **zero** files. The field the systemic fix was to key on **does not exist in the corpus.** That is new and it invalidates the fix as currently worded.
+
+**Revised options for Tom.** (a), (b) and (c) from 2026-09-04 all stand. Two amendments:
+- **(b) is now the cheaper of the two live options and also the more robust**, because it needs no new field and no new agent surface: instruct the ingest step to leave OPEN in `scripts/ingest_ledger.py` any card whose text names a future condition — exactly what it already does, voluntarily, for PROP-2026-08-14-033, and has now done four runs running.
+- **A new (d), from FINDING-089's own recommendation, addressing the cause rather than the symptom:** make a card carrying a retrieval condition **un-APPROVE-able in one keystroke alongside 35 others**. This is upstream of both (a) and (b) and would have prevented all four of this run's leaks. It is a review-mechanism change, not a tracker change, so it is not Agent 16's to propose beyond naming it.
+- **Dependency to note:** any fix keyed on a `content_verified` frontmatter field must first *create* that field. It is not in use.
+
+**Agent 16 has still created no watch items for any of these ten.** Channel 4 remains unopened, and opening it unilaterally remains outside this agent's brief. Recording, for the record, what that abstention now costs: **a dated condition falling due on 2026-09-24 is visible to this agent, is exactly the shape of thing this agent exists to hold, and will not be held.**
+
 
 ---
 
@@ -5359,3 +5397,56 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-10.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-11
+
+**Not an idle run. The 14-day review gap broke overnight, WATCH-003 was checked off-cadence because of it, and the result is the tenth identical answer — but two collateral findings from the same pass are worth more than the check was.** Separately, the pattern detector independently raised this agent's own 09-04 leakage flag from the far end of the pipeline, and the queue it describes has roughly doubled.
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: 1 file, `2026-04-21_carroll_singer-mindscape-351.md` — the WATCH-001 tombstone (`status: superseded`, `tracked_by: agent-16`, `tracking_id: WATCH-001`, resolved 2026-05-12, carries its `[TRACKED-16: 2026-05-05]` tag). **0 new, 0 untracked.** No item required tagging this run.
+- **New disposition file checked for Channel 1 intake: none generated.** `review/archive/2026-09-10_decisions.md` records **36 APPROVE and nothing else** — zero DENY, zero CHECK, zero CHANGE, zero CONDITIONAL. A pass of that size producing no conditional disposition is itself worth one line: the review layer is not routing anything to this agent, which is consistent with the batch-APPROVE pattern FINDING-089 describes.
+- Channel 2 (agent-exchange deferrals): vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and the agent brief: **0 matches.** Channel unexercised since raised 2026-08-23 — **19 days**.
+- Channel 3 (human watch requests): **0 visible — channel deaf, eighth day running.** A `2026-09-10_chat_summary.md` now exists (mtime 08:53) but records the scrape as **FAILED on both paths**: Claude in Chrome returned "not connected" on two `tabs_context_mcp` calls, and the in-app browser pane was refused `claude.ai` for want of site approval a non-interactive run cannot give. No 09-09 or 09-11 summary. Blind spot spans **09-03 through 09-10**.
+
+**Condition checks (Step 3): 1 due-by-trigger, 1 executed, 0 resolved.**
+- **WATCH-003 — checked OFF-CADENCE; count 9 → 10.** Next on-cadence check was 2026-09-15; the check method's awaited event (a later decision file) occurred, so the check was run four days early, as on 2026-08-28. `review/archive/` **17 → 18 → 19** files; the new `2026-09-10_decisions.md` is the first disposition since 2026-08-27. Grep for `2026-07-19-001` / `beatitudes-week-two`: **zero matches in the new file**, and no statement anywhere in it about the 2026-07-20 omission. Vault-wide `find` for both original slugs returns only the four re-filing copies. **Condition NOT met. Ten checks, ten identical answers.** Next check: **2026-09-15**, on cadence.
+
+**Two collateral findings from the 09-10 pass, both bearing on the INTEGRITY FLAG:**
+- **(i) The arithmetic closes exactly, and is machine-verified.** 36 cards pending → 36 dispositions → `approved/` 378 → **414** (= 378 + 36) → `pending/` **0**. All 36 decision lines parse; all 36 ids unique; every id's date-prefix matches its named filename; every named file exists in `approved/`; **every file contains its own `proposal_id`**. This is the first pass since the INTEGRITY FLAG was raised that can be audited end-to-end from the decision record alone, and it is the known-good comparison case the flag has lacked: 07-20 was 36 cards and 34 dispositions, 09-10 is 36 and 36.
+- **(ii) The mechanism the INTEGRITY FLAG blamed is out of the path.** The new decisions file names its source as **`Gmail [C2A2-review-decision] 2026-09-09`**, not the generated review page, and each line carries **both** `proposal_id` and filename — self-checking by construction. `review/` root now holds **zero** `*.html` review pages. The position-based decision IDs from `tools/generate_review_page.py` (~line 304) therefore cannot produce the silent-loss failure on the current route. **The audit question is untouched by this**; what changes is that the standing TOOLING FLAG drops from correctness-critical to cleanup — *conditional on the email route being standing rather than a one-off, which Agent 16 cannot determine from artifacts.* Flagged for Tom as a question, not recorded as a fact.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**Stale items (Step 4): 1, unchanged — but its diagnosis has sharpened.** WATCH-003, flagged 2026-08-25, now **10** checks. The 08-25 assessment held that its condition was unsatisfiable "while no review pass runs at all." A pass has now run and did not touch it. **The item is therefore not blocked on review cadence but on a retroactive ruling, which no ordinary pass can ever deliver, because no card exists to carry it.** One line from Tom on the INTEGRITY FLAG closes it and empties ACTIVE ITEMS. No item newly stale; no counters moved beyond WATCH-003's.
+
+**DEFERRED-CONDITION LEAKAGE FLAG escalated to urgent — see the 2026-09-11 addendum.** Three changes:
+- **Independent corroboration.** The 09-10 ingest run's **FINDING-089** reaches this agent's 09-04 conclusion from the opposite end of the pipeline: "the retrieval queue still does not exist … it is now at least 10." Two agents, two channels, one missing structure.
+- **A condition was violated, not merely untracked.** PROP-2026-09-02-003 asked that the paywalled recording be obtained "**before this proposal is ingested**." It was ingested 2026-09-10. And PROP-2026-09-02-002 carries a **dated** condition — *"queue a retrieval check after 2026-09-24"* — the most watch-shaped item this tracker has ever been shown. **On 2026-09-24 nothing will fire.**
+- **The previously-recommended systemic fix is invalid as worded.** It keyed the ingest step on a `content_verified` frontmatter field. A grep of the whole of `approved/` (414 files) for `content_verified: *false` returns **zero**. The field does not exist in the corpus; any fix keyed on it must first create it. Option (b) — leave OPEN in the ledger any card whose text names a future condition — needs no new field, and the ingest step has now done exactly that voluntarily for **four consecutive runs** on PROP-2026-08-14-033.
+
+**INGESTION-RISK FLAG: quiescent, fourth consecutive confirmation.** The 09-10 log again records `2026-08-14_wright_who-is-this-god-admirato.md` as "Not processed, on purpose, and still open," quoting the card's own instruction and deliberately withholding a yield token so the id stays OPEN (FINDING-079). **Still no unverified Wright triplets in the wiki.** The 09-10 ingest note does not repeat the 09-09 entry's stale retrieval target, but neither does it record that WATCH-002 resolved — open item 1 stands unchanged and still costs one line.
+
+**Census:** `pending/` **0** (36 → 0) · `approved/` **414** (+36) · `denied/` 1 · `needs_review/` 1 · `review/archive/` **19**, latest `2026-09-10_decisions.md` · `PROCESSED_LOG.md` **1066** lines (979 → 1066, mtime 2026-09-10 22:00). **Review-pass gap: 1 day. Ingest gap: 1 day.** Network total **867** PRS triplets (was 782; +85 in one run).
+
+**Both gaps are now closed, and the pending queue is empty for the first time since 2026-08-27.** Recorded because every run this week noted the backlog growing (12 → 27 → 33 → 36) and the INTEGRITY FLAG's root cause being a function of queue length. The queue length problem has resolved itself; whether the *mechanism* problem resolved with it depends on finding (ii) above.
+
+**Not a watch, recorded once.** The 09-10 log documents a real mid-ingest defect that fired for the first time — `traditions/hoffman/prs_triplets.md` has two `*Total PRS triplets:*` lines, so the append landed mid-file; caught and repaired in-run by a max-id-vs-stated-total check, with three more files (`arkanihamed`, `stump`, `loughran`/`macintyre`) found in the same state and left unrepaired by design. This is a known item carried in `master/C2A2_master_wiki.md` since 2026-08-11. **No deferred condition, so no watch opened** — it belongs to the ingestion-integrity thread. Named here only because "carried unfixed for a month" and "fired today" are different states and the second one is now true.
+
+**Agent 16 Status:** Operational. 1 check due-by-trigger, 1 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15**.
+
+**Open for Tom (re-ranked — item 1 is newly time-bounded):**
+1. **DEFERRED-CONDITION LEAKAGE ruling, now with a deadline.** PROP-2026-09-02-002's condition falls due **2026-09-24** and nothing holds it. Option (b) is one line to the ingest step and needs no new field. Note the previously-named `content_verified` fix does not work — the field is in zero of 414 approved files.
+2. **Tell the ingest ledger that WATCH-002 resolved.** Show notes are in hand at `resolved/2026-09-08_WATCH-002.md`; one line on the card or in the next ingest log.
+3. **Then decide PROP-2026-08-14-033 — still no attended session needed.** Rewrite from the recovered show notes (Speculative → Low/Medium, basis stated as show notes not audio), or deny on informed grounds.
+4. **One-line INTEGRITY FLAG ruling closes WATCH-003** — the last active item, and now rulable against a known-good comparison pass (09-10: 36 cards, 36 dispositions, machine-verified).
+5. **Is the Gmail decision route standing or a one-off?** If standing, the `tools/generate_review_page.py` position-based-ID fix drops from correctness to cleanup. If one-off, it stays correctness-critical. One line settles it.
+6. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+7. **FINDING-089's upstream fix** — make a card carrying a retrieval condition un-APPROVE-able in one keystroke alongside 35 others. Prevents the leak rather than tracking it.
+8. **Run-log archival** — this file is now ~589 KiB and the RUN LOG is ~95% of it; it has already caused one downstream metric error (the "2,188 watching items" report of 09-03). Cheapest fix: split pre-2026-09-01 runs into `deferred/run_log_archive_2026H1.md`, leaving ACTIVE ITEMS + FLAGS + RESOLVED INDEX here.
+9. **Channel 2 question**, standing since 08-23 (19 days unexercised).
+10. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+11. **Chat→Cowork sync broken eight days running** — Channel 3 is deaf until the Chrome extension is reconnected or the in-app browser pane is granted standing access to `claude.ai`.
+
+---
+
+*Run completed 2026-09-11.*

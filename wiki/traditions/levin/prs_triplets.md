@@ -1055,8 +1055,70 @@ PRS-116:
   Confidence: Speculative
   Evidence: The planarian result is Levin's own and is not in dispute. What is stipulated — and must stay declared — is an awareness-indexed reading of "cognitive light cone" under which the setpoint's source counts as external. On Levin's own usage a bioelectrically stored target is INSIDE the collective's light cone. The recasting is Loughran's, not Levin's, and Levin's setpoints are descriptive: the account describes vice exactly as well as virtue and must import its normative source from outside Levin.
 
-*Total PRS triplets: 116*
+PRS-117:
+  Problem: The claim that a tissue "represents" its target anatomy is usually dismissed as metaphor, because no one has stated what would count as evidence for a representation in a non-neural system.
+  Resource: Three criteria adapted from the cognitive-science literature on memory engrams: a biophysically measurable state that (a) precedes the outcome, (b) is decodable such that its features map onto the outcome, and (c) can be re-written so the system then builds to a different, predictably controllable outcome.
+  Solution: Goal representation in morphogenesis becomes an empirical question with a decision procedure attached; Levin claims published cases already satisfy all three, which converts "emergence is sufficient for biology" from a background assumption into a falsifiable hypothesis.
+  Date Added: 2026-09-10
+  Source: Q&A from the internet and recent presentations 5; PROP-2026-08-31-001
+  Confidence: High
+  Evidence: "we'd have to find a biophysically measurable state that (a) precedes the final outcome, (b) has some specificity with the final outcome... and most importantly, (c) can be re-written such that the system then goes to a different, predictably controllable outcome." He offers the thermostat's readable-writable setpoint as the disambiguating case and states that published examples match a, b, and c.
 
+PRS-118:
+  Problem: If different agents traverse mathematical space along species-specific paths and find different things, Platonism appears to collapse into construction — the objection most frequently put to the Platonic Space model.
+  Resource: A landscape framing in which axioms fix the starting point and species-specific traversal fixes the route, with reachability rather than content varying by observer.
+  Solution: Discovery survives observer-relativity. That different agents reach different regions does not make the contents of those regions constructed, because within any traversal the agent is handed results it did not choose — "you got more than you had at the start."
+  Date Added: 2026-09-10
+  Source: Q&A from the internet and recent presentations 5; PROP-2026-08-31-001
+  Confidence: Medium
+  Evidence: "I don't claim (and my current view doesn't require) that all species see the same math... that doesn't mean that the contents of that space aren't providing something that is discovered, not created." He grants that some regions may be permanently unreachable to a given kind of agent.
+
+PRS-119:
+  Problem: "Anthropomorphism" functions as a stopping rule in biology, blocking investigation of memory, goal-directedness and decision-making outside brains before any data is gathered.
+  Resource: An inversion of the charge — the term is recast as itself resting on a pre-scientific premise, namely that the competencies in question are proprietary to humans.
+  Solution: The unexamined axiom is restated in testable form ("everything other than brains can be handled with the lowest rung of the cybernetic hierarchy"), which converts a philosophical prohibition into an empirical claim that can be, and Levin argues has been, falsified.
+  Date Added: 2026-09-10
+  Source: Q&A from the internet and recent presentations 5; PROP-2026-08-31-001
+  Confidence: Medium
+  Evidence: "Anthropomorphism is the pre-scientific assumption that humans are a special category that can do amazing magical things and that seeking those same competencies in other substrates should be banned by philosophical fiat." He adds that the cybernetic-hierarchy restatement is what makes it checkable.
+
+PRS-120:
+  Problem: Levin's programme is repeatedly asked why it does not simply reduce to physics, and has lacked a compact statement of where the boundary is drawn.
+  Resource: An asymmetry argument: physicists treat a time-varying speed of light or gravitational constant as thinkable, but treat a time-varying value of *e* as impossible — so no one in fact holds that mathematical and physical facts are the same kind of thing.
+  Solution: A criterion for separating the two realms by what is discoverable and changeable by the efforts of physicists, with pattern-facts placed outside it; offered alongside the concession that if "physics" is redefined as everything that exists, the two sub-realms simply reappear inside it.
+  Date Added: 2026-09-10
+  Source: Q&A from the internet and recent presentations 5; PROP-2026-08-31-001
+  Confidence: Speculative
+  Evidence: "even people who say 'it's just physics'... universally have very different reactions when I ask them to consider a non-stationary value of the speed of light... vs. when I ask them to consider that the value of *e* changed over time." The argument is rhetorical-diagnostic rather than experimental, and is flagged Speculative on that basis.
+
+PRS-121:
+  Problem: If the Platonic space is a causal source of patterns (ingressing minds), what does it mean to *explain* a fact that lives there, and is explanation in mathematics directional (down toward something deeper) or lateral (toward an analogous structure)?
+  Resource: Strogatz's two-tier account: (a) deduction from axioms is an explanation but "not what mathematicians mean"; (b) the working criterion is "morally, why should this be true" — and in his own cases the felt-deeper explanation was a hidden symmetry (hyperbolic geometry / group theory) found years after the algebraic proof, with the Watanabe-Strogatz and Ott-Antonsen tricks turning out to be "the same trick at a very deep level."
+  Solution: Directionality is real but partly personal — "geometry feels deeper to me, lower, it does feel vertical" — with algebraists and geometers disagreeing about which is on top. Levin's own reductive chain (cicadas → primes → "go see the math department") places the Platonic space at the terminus of scientific explanation, not beside it.
+  Date Added: 2026-09-10
+  Source: Conversation #1 with Steven Strogatz; PROP-2026-09-07-001
+  Confidence: Medium
+  Evidence: Levin at 07:28-09:14 ("at some point, you always end up in the math department"); Strogatz at 11:04-18:31 (Lean vs "morally"; the Josephson-junction n-3 constants of motion story); 19:29-22:53 (vertical vs lateral, personal).
+
+PRS-122:
+  Problem: Is the claim that mathematical facts are independent of physics — "not discoverable by physicists, not changeable by things you tweak in the universe" — a fringe position (as Levin reports his interlocutors treat it) or a working consensus?
+  Resource: Strogatz's testimony on the sociology of mathematical Platonism: "almost all mathematicians would be Platonists as working mathematicians"; Reuben Hersh's Platonist-on-weekends joke; the Euler log(-1) case study as a "fork in the road" where one definition (multivalued, i*pi) was *found* to be right and the Bernoulli alternative (log(-1) = 0, preserving the product rule) wrong.
+  Solution: The independence thesis is the working default among mathematicians ("no serious person who's educated would believe" otherwise) — which relocates Levin's disagreement: it is with biologists and physicists, not with mathematics. The Euler case gives Levin a concrete non-biological example of pattern discovery-under-constraint that he did not previously have in the record.
+  Date Added: 2026-09-10
+  Source: Conversation #1 with Steven Strogatz; PROP-2026-09-07-001
+  Confidence: High (for the testimony); Speculative (for what it licenses about ingressing minds)
+  Evidence: 23:54-29:38 (Platonism, Euler and log of negative one); 35:32-36:33 (Levin: "most people that I interact with don't believe that statement"; Strogatz: "they just haven't been educated").
+
+PRS-123:
+  Problem: Do the fundamental constants of mathematics cluster near order 1 (e, pi, sqrt 2, Feigenbaum), and if so is that a fact about the Platonic space or about human cognition?
+  Resource: Levin's proposed measurement (histogram the Wikipedia table of mathematical constants; compare to the physical constants' spread across ~120 orders of magnitude); Strogatz's two counters: Littlewood's number (a prime-number crossing point of enormous size that has a claim to being fundamental) and the psychological hypothesis that order-1 quantities are "sticky" because humans think at one scale and multiscale phenomena are "very conceptually challenging for us."
+  Solution: No resolution; Strogatz declines the premise and offers the psychological explanation, then adds — "I don't really believe this, but let's just entertain it" — a stratification argument: nature likes hierarchies where things too much bigger or smaller do not interact, so an observer at scale 1 sees order-1 constants. Logged as an open empirical question with a specified test.
+  Date Added: 2026-09-10
+  Source: Conversation #1 with Steven Strogatz; PROP-2026-09-07-001
+  Confidence: Speculative
+  Evidence: 36:33-46:55 (constants on the number line; Littlewood's number; "tells us more about psychology than about math"; the multiscale stratification aside).
+
+*Total PRS triplets: 123*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

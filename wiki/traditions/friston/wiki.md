@@ -195,3 +195,14 @@ Processed 7 source file(s); minted PRS-45 - PRS-63.
 | `2026-08-25_friston_hippocampal-ripples-predicted-uncertainty.md` | PROP-2026-08-25-013 | PRS-58, PRS-59 | Both High. PRS-59 is unusually clean for this vault: amplification and dampening are opposite predictions from the same framework, and the experiment separates them. |
 | `2026-08-25_friston_let-there-be-information-cultural-evolution.md` | PROP-2026-08-25-014 | PRS-60, PRS-61 | Both Medium. A formal construct tying novelty tolerance to transmission rate is new; the cultural-evolution application remains a formalism looking for its data. |
 | `2026-08-25_friston_rosetta-stone-neurophenomenology.md` | PROP-2026-08-25-015 | PRS-62, PRS-63 | Both High. PRS-63 — experience as a function of beliefs, given an empirical handle — is the sharpest available test of a commitment this program has carried without one. |
+
+### Ingest 2026-09-10
+
+8 triplets added from 4 approved proposals (decision email 2026-09-09): PRS-64, PRS-65, PRS-66, PRS-67, PRS-68, PRS-69, PRS-70, PRS-71.
+
+- `PROP-2026-08-28-001` — Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar Neural Mass Modeling Approach (paper, https://direct.mit.edu/neco/article/38/8/1299/137926/Cross-Frequency-Coupling-as-a-Neural-Substrate-for) → PRS-64, PRS-65
+- `PROP-2026-08-31-003` — Distributionally robust free energy principle for decision-making (paper, https://www.nature.com/articles/s41467-025-67348-6) → PRS-66, PRS-67
+- `PROP-2026-08-31-002` — Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents (paper, https://www.nature.com/articles/s42256-026-01296-8) → PRS-68, PRS-69
+- `PROP-2026-09-07-002` — The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience (paper, https://arxiv.org/abs/2605.16146) → PRS-70, PRS-71
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

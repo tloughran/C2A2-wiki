@@ -14281,3 +14281,589 @@ and reading the paper revealed it did not — which is the exact class of error 
 burned by. The 6-10% figure comes from a different, SNIPPET-ONLY source (the EMSE 2022 "Revisiting
 reopened bugs" line) and the "mid-teens to low twenties" estimate in REVISE-445 inherits that weakness
 in full. It is an order-of-magnitude prompt to go and measure, not a finding.*
+
+## 2026-09-11 — 15c REVISE intake (2026-09-10 evening cohort)
+
+*Twelve flags: REVISE-447–451 from the ASSUMPTION half, REVISE-452–458 from the PRESUMPTION half.
+REVISE-452 is CONSOLIDATED over five items (PRESUMPTION-949, -950, -951, -953, -956) and adopts rather
+than restates 15b's Critical SYSTEMIC-RISK-FLAG of the same date; per the same non-stacking rule that
+governed REVISE-445, five flags were not filed where one defect exists. REVISE-458 records two
+contradictions between remedies proposed tonight and ACTIVE premises (PREMISE-154's trigger-bound
+condition; PREMISE-108's instrumentation constraint) and is routed to human review unresolved, per the
+15c charter's requirement that a contradiction flag BOTH sides rather than silently overwrite one.*
+
+*Five flags for ten items. Six candidate flags were identified and consolidated to five; two further
+candidates were NOT minted because they belong to items the concurrent sibling run is dispositioning
+(the unanswered-ruling channel → PRESUMPTION-953; the completeness n=3 test → PRESUMPTION-947) and one
+because it belongs inside an existing flag family rather than beside it. Naming them is the correct
+act, not duplicating them.*
+
+---
+
+REVISE-447 (CONSOLIDATED — two items, one defect):
+  Date: 2026-09-11
+  Items: ASSUMPTION-1307 (limb C), ASSUMPTION-1311 (residue) — DISPOSITION-930, DISPOSITION-934
+  Item types: ASSUMPTION (stated) x2
+  THE DEFECT, one sentence: **material that PREMISE-103 requires be held in an explicit
+    `UNFOUNDED-PENDING-RETRIEVAL` state was instead admitted WITH A CAVEAT — into the vault in one case
+    and into the premise register in the other.** PREMISE-103 is explicit that "downgrading confidence
+    is not a valid substitute for an explicit 'unfounded pending retrieval' state," and both instances
+    are that exact substitution. Consolidated because it is one premise, one substitution and one
+    remedy shape; filing two flags would manufacture two defects out of one.
+  The two instances:
+    (1) Four of the 36 cards in the largest ingest in the network's history approved a POINTER, NOT A
+        READING (FINDING-089) — a paywalled recording, an institutional listing with no source text, an
+        explicit "queue retrieval after 2026-09-24", a self-declared duplicate. Each SAID SO ITSELF and
+        asked to be caught. All four were ingested with flags. Two further cards carry authorship
+        caveats (FINDING-090). These cards fed 85 PRS triplets and CROSS-132..135.
+    (2) PREMISE-201 clause (3) was MINTED while resting on the AJR mammography quotation, which failed
+        retrieval and is flagged unverified. This is the register's first minted premise carrying a
+        load-bearing clause on an unverified quotation.
+  What is at risk: six cards of uncertain warrant sit inside the network's largest ingest with no
+    distinguishing state, and one of the 158 ACTIVE premises rests on a clause nobody has read. Both
+    are invisible downstream by construction: PREMISE-188 holds that the qualifier does not travel once
+    the claim is quoted, and the stripping is systematic rather than careless. The compounding risk is
+    ASSUMPTION-1295's: if ingest is licensed by ID alignment rather than by approval, the APPROVE was
+    never the control and the estate believes it has a gate it does not have — PREMISE-187's failure,
+    where a gate that appears to check what it cannot decide is worse than no gate.
+  What the evidence says: 1307 — 15a SUPPORTED (Strong); 15b PARTIALLY-CHALLENGED (Moderate) but
+    explicitly NOT on this limb: "nothing found here licenses ingesting the four metadata-only cards,
+    and PREMISE-103 forbids it." 1311 — 15a SUPPORTED (Strong); 15b NO-CHALLENGE-FOUND, recommending
+    the item be STRENGTHENED. Neither direction found anything supporting the substitution.
+  Recommended action:
+    (1) Give the four pointer-cards the state PREMISE-103 requires: `UNFOUNDED-PENDING-RETRIEVAL`, not
+        `INGESTED (flagged)`. One of them supplies its own review date ("queue retrieval after
+        2026-09-24"). Owner: the C282 wiki agent daily run, next run.
+    (2) Move PREMISE-201 clause (3) to the same state, OR retrieve the AJR quotation. Do not leave it
+        ACTIVE-with-a-note. This is the live instance named in
+        SYSTEMIC-RISK-FLAG_2026-09-11_load-bearing-sources-unretrievable recommendation (3).
+    (3) ANSWER THE REVERSIBILITY QUESTION FIRST — it reframes everything above (PREMISE-176). Can the
+        36 cards, the 85 triplets and CROSS-132..135 be reverted at ITEM granularity? If yes,
+        flag-and-ingest is defensible and this is a throughput question. If no, that is the finding,
+        and approval granularity is second-order. This is determinate and ownable, not a research
+        question. Owner: C282 wiki agent.
+    (4) ADD A PER-CLAIM VERIFICATION GRADE as a required field on every load-bearing quantity —
+        VERIFIED / SECONDARY / UNVERIFIED — **stored beside the number, not in a document header**
+        (PREMISE-188 clause (3): survival is achievable only by per-claim attachment). The eleven
+        lit-search files already do this; `validated_premises.md` does not. This is the cheapest item
+        on the list and it is the one that stops the next instance.
+    (5) NOT RECOMMENDED, and recorded so it is not proposed later: splitting every batch into item-level
+        approvals. PREMISE-204 clause (4) and the DORA evidence both say the lever is the CLASS
+        DEFINITION and the automatic fall-out rule, not the granularity of the signature. The machinery
+        to route the exceptions already existed in the cards themselves.
+    (6) PREMISE-118's RETROSPECTIVE IMPACT ASSESSMENT IS OWED AND IS NOT DISCHARGED BY THIS FLAG: the
+        obligation runs over every prior batch APPROVE and every prior lit-search output since last
+        known-good. Recorded here as an open obligation with no owner, deliberately, rather than
+        silently omitted.
+  Urgency: High
+  Owner: UNASSIGNED — actions (1)-(3) are executable by the C282 wiki agent without the human channel;
+    action (4) needs a schema decision.
+  Status: OPEN
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-930, -934 · Transform at this
+    step: net evaluation; the warrant-design corrective INCORPORATED as PREMISE-204, the live
+    evidence-state exposure split out and flagged rather than closed with the premise
+
+---
+
+REVISE-448:
+  Date: 2026-09-11
+  Item: ASSUMPTION-1306 (limb B) — DISPOSITION-929
+  Item type: ASSUMPTION (stated)
+  THE DEFECT: an operating rule — "it has now actually misfired once, so it stops being a tidiness
+    note" — that is DENIED BY AN ACTIVE PREMISE MINTED THE PREVIOUS DAY. PREMISE-202 (2026-09-10,
+    DISPOSITION-926): "A HARM AVERTED BY CHANCE IS AN EVENT AND OPENS A RECORD; 'damage is nil, but by
+    luck' is the criterion for OPENING an item, not for closing one," with clause (3) naming the exact
+    consequence — an incident population that excludes averted harms is severity-filtered by
+    construction and every rate computed from it sits on a denominator that excludes the most
+    informative class of event.
+  What is at risk:
+    (1) Four registers — `arkanihamed`, `stump`, `loughran`, `macintyre` — each carrying a defect that
+        has now been DEMONSTRATED to corrupt silently: the hoffman instance landed four triplets
+        mid-file with no exception and plausible-looking output. PREMISE-128: blast radius is unknown
+        at the point of failure and cannot be certified benign from the visible outcome.
+    (2) Every append to any of the five since 2026-08-11 — thirty days — none of which has been
+        assessed. PREMISE-118 requires contain / assess impact / fix cause / verify, INCLUDING a
+        retrospective impact assessment, and the ASSESSMENT is the missing step, not the fix.
+    (3) **The RULE itself, which is the durable exposure.** It licenses every future latent defect to
+        sit until it fires, in a system whose defects are specifically of the silent kind.
+  What the evidence says: 15a PARTIALLY-SUPPORTED (Moderate) — and only for limb A, the narrow
+    capacity-constrained reading; 15a returns NO-SUPPORT-FOUND for limb B and surfaces its own
+    principal counter-source (IOM/NAP Near-Miss Analysis) in the FOR direction. 15b CHALLENGED
+    (Strong) — "wait until it misfires" is run-to-failure applied BY DEFAULT rather than by assessment,
+    which the maintenance literature itself calls reactive maintenance and treats as the failure mode;
+    run-to-failure is legitimate only where a prior criticality assessment establishes no safety,
+    quality or production consequence, and the silent misfire has now reclassified the consequence and
+    removed the remaining four from eligibility. The near-miss literature measures the precise bias the
+    rule institutionalises (Dillon & Tinsley 2008, SECONDARY): people given near-miss information make
+    RISKIER subsequent decisions, experts as well as novices.
+  Recommended action:
+    (1) **HEAD ACTION — free, decisive, and it settles the steelman in one pass.** Run the
+        max-id-vs-stated-total check retrospectively over all ten `prs_triplets.md` registers for every
+        append since 2026-08-11 and count how many landed mid-file. If the answer is 1 (the hoffman
+        case), the interim really was benign and the run's judgement holds. If it is >1, limb B has
+        already cost the estate data integrity and is refuted empirically, in-house, today. Cost: one
+        script, one pass. **This requires no human ruling and should be run by the next daily run.**
+    (2) Promote the same check to a standing PRE-APPEND ASSERTION on all ten registers, so the defect
+        cannot misfire silently anywhere. This is the final element PREMISE-173 requires — it is what
+        ACTS on the signal.
+    (3) Treat the four as ONE DEFECT CLASS per PREMISE-130 and close them as one item with one closure
+        test, not four notes. PREMISE-193: repairing the named instance does not discharge the class.
+    (4) Replace the manifestation trigger with a CRITICALITY trigger: a defect whose failure mode is
+        SILENT is never run-to-failure eligible, regardless of how tidy it looks. One sentence of
+        policy, and it is the reliability-centred-maintenance answer.
+    (5) The "renumbering live ids is your decision" escalation needs a DATE and an OWNER. Per
+        PREMISE-138, repetition inside a channel with no effector is not a remedy; its only admissible
+        function is transfer of obligation to a named actor OUTSIDE the channel.
+    (6) NOT RECOMMENDED: instituting a near-miss COUNT as the remedy. PREMISE-202 clause (4) carries
+        Hallowell et al.'s 96-98%-random-variation result specifically to forestall this. Record
+        creation is the control; the count is not.
+  Urgency: High
+  Owner: UNASSIGNED — action (1) is executable by the C282 wiki agent tonight; action (5) needs Tom.
+  Status: OPEN
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-929 · Transform at this step:
+    net evaluation; limb A recorded as covered by PREMISE-130, limb B flagged against ACTIVE
+    PREMISE-202 and PREMISE-118
+
+---
+
+REVISE-449:
+  Date: 2026-09-11
+  Item: ASSUMPTION-1309 (limbs B and C) — DISPOSITION-932
+  Item type: ASSUMPTION (stated)
+  THE DEFECT: a diagnosis that n=11 cannot carry, attached to a remedy that an ACTIVE premise denies
+    outright, aimed at a layer that is not where the fault is.
+  What is at risk:
+    (1) **The falsifiability of all 158 ACTIVE premises.** PREMISE-174: belief revision is DEFINED as
+        contraction followed by expansion; a knowledge base that can add but not retract cannot perform
+        it. A pre-route grep that SUPPRESSES search on premise-match removes the only channel through
+        which a premise has ever been exposed to disconfirming evidence. The efficiency gain is real
+        and bounded (roughly eight search slots per cycle); the epistemic cost is unbounded and
+        irreversible. Note the compounding case: the register knows of at least one premise minted on a
+        known-unverified load-bearing clause (PREMISE-201 clause 3, REVISE-447), and a filter would
+        shield exactly that class permanently.
+    (2) **The correct diagnosis.** 9/11 = 0.818 with a Wilson 95% interval of **[0.523, 0.949]**
+        (re-computed by me this run; 5/6 gives [0.436, 0.970]). A point estimate with a floor of 52%
+        does not distinguish a routing defect from a register that has grown large relative to a
+        bounded topic space — and PREMISE-107 says that where two mechanisms present the same symptom,
+        the discriminating test IS the operative construct and skipping it is the defining error of
+        fault isolation. A third mechanism, better evidenced than either, is named in
+        SYSTEMIC-RISK-FLAG_2026-09-11_premise-propagation-not-routing (filed at **Critical**): the
+        ORIGINATING runs did not hold the premise when they acted. A routing remedy leaves those runs
+        exactly as uninformed as they are today.
+  What the evidence says: 15a PARTIALLY-SUPPORTED (Moderate-to-Strong on the remedy's SHAPE) — but
+    15a's own caveats supply the objection: the literature's remedy is "check, then decide whether to
+    UPDATE," never "check, then EXCLUDE," and a grep is a surface-form check that PREMISE-187 governs.
+    15b CHALLENGED (Strong on limbs B and C jointly): in the closest measured analogue — duplicate bug
+    reports, Bettenburg et al. ICSM'08 (SECONDARY) — duplicates carry additional information and
+    IMPROVE triage, and the recommendation is to MERGE, not to suppress at intake.
+  Recommended action, in order. The first two are free and they decide the item:
+    (1) **Count how many of the last 30 days of run reports cite a PREMISE-nnn identifier.** If near
+        zero, the propagation flag is confirmed and the routing diagnosis is refuted in-house without a
+        search. One grep.
+    (2) **Run PRESUMPTION-948's count: premises that have EVER changed status after minting.** If zero
+        across 158, the register is already monotonic as a matter of fact and the falsifiability cost
+        of a grep is zero because the capability it would remove does not exist. If non-zero, the grep
+        destroys the mechanism that produced those changes. Either result settles limb C. One pass.
+    (3) **UNTIL (1) AND (2) ARE RUN: DO NOT ADOPT THE PRE-ROUTE GREP AS A FILTER.** This is the
+        operative instruction of this flag.
+    (4) If adopted at all, adopt it as an ANNOTATOR AT THE POINT OF ORIGINATION, not as a gate on the
+        pipeline that reviews the originating runs. 14a already does this informally. Annotation costs
+        nothing and suppresses nothing, and it addresses the propagation mechanism rather than the
+        routing one. Per PREMISE-164, a record is durable only where the next executor's own procedure
+        requires it to be read.
+    (5) Adopt the MERGE remedy rather than the suppression remedy: route the item, search it, and
+        record the outcome as either "premise confirmed on a new case" (currently discarded evidence)
+        or "premise contradicted" (the only contraction path the register has).
+    (6) Quote the 82% WITH its interval wherever it appears (PREMISE-188), or not at all.
+    (7) Consider the possibility the flag raises and this disposition does not resolve: a register that
+        pre-answers 10 of 10 items may have LEARNED ITS DOMAIN, in which case the correct response is
+        to WIDEN THE INTAKE SCOPE, not to narrow the search. The two diagnoses are distinguishable by
+        the single count in (1).
+  Urgency: **Critical** — the governing systemic-risk flag is filed at Critical, the change is under
+    active consideration, and its effect is not reversible by inspection.
+  Owner: UNASSIGNED — actions (1) and (2) require no human channel and should be run by the next
+    pipeline run. Action (3) is a standing instruction effective immediately.
+  Status: OPEN
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-932 · Transform at this step:
+    net evaluation; remedy declined against ACTIVE PREMISE-174; diagnosis suspended pending
+    PREMISE-107's discriminating test; the register declares its interest — 14a/14b is where the
+    proposed grep would sit, and 15a/15b's inflow is what it would reduce
+
+---
+
+REVISE-450 (CONSOLIDATED — four items, one defect, four one-line repairs):
+  Date: 2026-09-11
+  Items: ASSUMPTION-1312 (limb B), ASSUMPTION-1314 (limb C), ASSUMPTION-1315 (limb B),
+    ASSUMPTION-1308 (limb B) — DISPOSITION-935, -936, -937, -931
+  Item types: ASSUMPTION (stated) x4
+  THE DEFECT, in one sentence: **four artefacts assert a state their method does not establish, each
+    repair is one line, and in every case an ACTIVE PREMISE NAMES THE REPAIR VERBATIM.** Consolidated
+    because it is one defect class with one remedy shape; filing four flags would manufacture four
+    defects out of one, which is the self-amplification REVISE-445 avoided by the same reasoning.
+    That every repair is already written down somewhere in the register, in the exact words needed, is
+    itself the evidence for
+    SYSTEMIC-RISK-FLAG_2026-09-11_premise-propagation-not-routing — and it is the strongest form of
+    that evidence, because these are not premises the runs merely failed to cite; they are premises
+    whose absence is visible in the wording.
+  What is at risk: four independent FALSE-REASSURANCE CHANNELS, each with a measurable gap between
+    what the sentence conveys and what its method licenses, and each of which PREMISE-188 predicts will
+    shed its qualifier on first quotation while the reassurance travels.
+  The four instances, their governing premise, and the one-line repair:
+    (1) **ASSUMPTION-1312** — "the wiki is current against both thinkers' own publication records."
+        Governing premise: **PREMISE-140** ("A METRIC DERIVED FROM ONE OBSERVATION CHANNEL MUST BE
+        NAMED BY ITS CHANNEL, NOT BY THE THING THE CHANNEL PROXIES FOR"), reinforced by PREMISE-189
+        (an artifact set cannot certify its own completeness) and PREMISE-171 (a declaration register's
+        completeness is zero). REPAIR: report "current against Stump's Online Papers page, his Video
+        Lectures page, the Thomistic Institute podcast feed, and Fredrickson's PEP Lab article and news
+        pages, as of 2026-09-10." The run's own method already conceded the point — it checked the
+        Thomistic Institute feed precisely because Stump's page would not have carried it. ALSO: record
+        each checked page's own last-modified date (one `curl -I` per source), which converts the
+        unmeasured timeliness limb into a datum; and record the denominator per PREMISE-168 ("zero
+        proposals out of N sources checked"). CREDIT PRESERVED: the checked-zero standard itself is
+        sound and is NOT what is being repaired — the repair is to the claim's NAME, not to the
+        practice, and the run's decline of a "Friday, October 19" keynote page on internal evidence
+        (October 19 is not a Friday in 2026) is good source criticism that should survive this flag.
+    (2) **ASSUMPTION-1314** — status file written `PASS` with a `VERIFIED-NOT-REGENERATED` qualifier.
+        Governing premise: **PREMISE-167** ("an escalation expressed only as a WITHHELD PASS-MARK has
+        no representation on disk distinct from staleness... an escalation requires a POSITIVE,
+        ADDRESSED, PERSISTENT STATE"), with PREMISE-100 and PREMISE-110 naming the failure it creates
+        and PREMISE-179 predicting exactly how it will be read. REPAIR: **change the token, keep the
+        reason** — write `UNKNOWN` (or `WARNING`) as the status token with `VERIFIED-NOT-REGENERATED`
+        as the reason. This satisfies BOTH of the run's stated constraints exactly and fails CLOSED for
+        naive consumers rather than open. The third value did not need inventing: the monitoring-plugin
+        API has carried 0 OK / 1 WARNING / 2 CRITICAL / 3 UNKNOWN for two decades, with UNKNOWN meaning
+        "the check could not be carried out." **ADDITIONAL ACTION, HIGH AND SEPARATE — `grep -rl` the
+        fleet for consumers of this status file and classify each by match type. Any prefix or
+        substring matcher is reading `PASS VERIFIED-NOT-REGENERATED` as green TODAY, and the count of
+        such consumers IS the size of the false-green exposure.** This takes minutes. Then split the
+        two facts into two fields per PREMISE-167(3) (`regenerated: false`, `feeds_current: true`), and
+        declare the permitted status values so an unrecognised value errors rather than defaults.
+    (3) **ASSUMPTION-1315** — "two were hand-checked and both still hold." Governing premise:
+        **PREMISE-182** (the closed-form identity, ACTIVE since 2026-08-25). REPAIR: "2 of 147
+        hand-checked, zero failures; this excludes at 95% confidence only that more than 113 are
+        stale." **Arithmetic independently re-computed by me this run and confirmed exactly**: for
+        N=147, n=2 → D≤113 (P(0 fail | D=113) = 0.0523; D=114 → 0.0492); n=26 → 14; n=45 → 7; and
+        R_L = 0.05^(1/2) = 0.2236. ALSO, and it is free and it changes the verdict: **ask what rule
+        selected the two.** If they were the two declinations most likely to have flipped, the sample
+        is adversarial and licenses materially more than a random pair; if they were the first two, the
+        arithmetic stands unmodified. An adversarial sample with an UNRECORDED selection rule is
+        indistinguishable from a convenience sample and licenses nothing. ALSO: give the 145 re-opened
+        claims a discharge rule per PREMISE-133/154 — what closes one, who adjudicates, by when.
+        Without all three, "re-opened as unverified" is not a state, and PREMISE-174 says it may be one
+        nothing ever exits.
+    (4) **ASSUMPTION-1308** — "code it independently in both wikis before comparison, or the number is
+        worthless." Governing premise: **PREMISE-076** (a displacement rate is meaningful only above a
+        MEASURED NOISE FLOOR — which is a sharper requirement than the note's, and one the note does
+        not mention). REPAIR: drop "worthless" and state the direction instead. 15a returns
+        NO-SUPPORT-FOUND for the word and 15b rates it a Strong challenge, for the same reason: non-
+        blind assessment produces a BIASED BUT INFORMATIVE estimate with a characterised direction,
+        which is why meta-epidemiology can correct for it. **THE MAGNITUDE MAY NOT BE STATED** — the
+        Hróbjartsson figures are SECONDARY in both directions and the source is unretrievable (rule 3,
+        MONITOR-601). The risk this repair addresses is precise and asymmetric: "worthless" is
+        exactly the sentence that will justify not taking a degraded reading in the last week of a
+        closing window. The method design itself is REVISE-451.
+  What the evidence says: 1312 — 15a PARTIALLY-SUPPORTED (None for limb B) / 15b CHALLENGED
+    (Moderate-to-Strong). 1314 — 15a SUPPORTED (Weak for the implementation) / 15b PARTIALLY-CHALLENGED
+    (Strong on the encoding). 1315 — 15a PARTIALLY-SUPPORTED (None for limb B) / 15b CHALLENGED
+    (Strong, by exact calculation). 1308 — 15a PARTIALLY-SUPPORTED (None for "worthless") / 15b
+    PARTIALLY-CHALLENGED (Strong on "worthless"). **In all four, the two directions AGREE, and in all
+    four they agree with an ACTIVE premise. Per PREMISE-111 that agreement carries a standing
+    correlation discount — but in instances (2) and (3) the finding is an inspectable property of a
+    string and a re-derivable calculation respectively, where the discount bites least.**
+  Recommended action: the four repairs above, plus the consumer enumeration in (2), which is the only
+    one with a live fail-open condition. Each is a one-line edit except the enumeration, which is a
+    grep. **None requires a human ruling.**
+  Urgency: High for instance (2)'s consumer enumeration (live false-green); Medium for the four
+    wording repairs, whose urgency derives from downstream reuse rather than from the artefacts
+    themselves.
+  Owner: UNASSIGNED — all five actions are executable by the owning runs without the human channel.
+  Status: OPEN
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-931, -935, -936, -937 ·
+    Transform at this step: net evaluation; four limbs consolidated into one defect class on the
+    ground that each repair is named verbatim by an ACTIVE premise, which is the propagation finding
+    in its sharpest form
+
+---
+
+REVISE-451:
+  Date: 2026-09-11
+  Item: ASSUMPTION-1308 (limb C and the access dependency) — DISPOSITION-931
+  Item type: ASSUMPTION (stated)
+  THE DEFECT: a pre-registered method whose control may be UNACHIEVABLE as written, attached to a
+    gating step that has **no owner and no date**, inside a window that is stated to be closing.
+    Distinct from REVISE-450 instance (4), which repairs the note's WORDING; this flag concerns the
+    method's DESIGN and its execution dependency.
+  What is at risk: **the measurement itself.** FLAG-023 is time-limited; the dialogue is paywalled;
+    member access is the gating step; no owner and no date are attached to it. Two Kastrup sources six
+    days apart bracketing a live Levin exchange is a timestamped displacement bracket that "the
+    inter-tradition study almost never gets." The live failure mode is not a bad number — it is NO
+    NUMBER, with "the number is worthless" supplying the justification for not taking a degraded
+    reading in the last week. This is the REVISE-436 pattern — a named, cheap, unowned step — applied
+    to an item with an EXTERNAL CLOCK, which is what distinguishes it.
+  What the evidence says: 15a PARTIALLY-SUPPORTED — Strong for limb A (independent coding is the right
+    control) but naming the gating step as "the actual load-bearing dependency" and "the binding risk."
+    15b PARTIALLY-CHALLENGED — Moderate-to-Strong on achievability, with a VERIFIED in-house
+    observation: the two wikis are differently structured and differently authored, so a coder knows
+    which is which from format alone; "independent" here can only mean sequentially isolated, not
+    blind, and the note does not say which it means. Blinding is routinely unachievable in practice and
+    the field's response is to proceed with the limitation declared, not to abandon the measurement.
+  Recommended action:
+    (1) **ATTACH AN OWNER AND A DATE TO THE MEMBER-ACCESS STEP TODAY.** This is the binding constraint
+        and the only action here with an external clock. It is the one action in this flag that
+        requires the human channel; per PREMISE-138 it must be addressed to a NAMED ACTOR with a date,
+        not filed.
+    (2) SPECIFY WHICH CONTROL IS MEANT, because the note does not. Three candidates, in descending
+        strength and ascending achievability: blind-to-source (probably impossible here — format gives
+        it away); **blind-to-hypothesis (ACHIEVABLE, and the one worth specifying — do not tell the
+        coder what displacement is predicted)**; sequential isolation (weakest). Amend CROSS-135 to
+        name blind-to-hypothesis.
+    (3) **SATISFY PREMISE-076 FIRST — this is prior, not parallel.** Establish a noise floor by
+        double-coding a neutral control period with no known exchange. Without it NO displacement
+        figure is interpretable however it was coded, and the blinding question does not arise.
+    (4) PRE-COMMIT THE REST OF THE SPECIFICATION. PREMISE-078: register-then-look is necessary but
+        sufficient only when thresholds, exclusions and the analysis path are pre-committed. CROSS-135
+        pre-commits none of the three, so its protection is currently partial. Add a reliability
+        statistic to the pre-commitment (PREMISE-080's "conditional on demonstrated independence").
+    (5) IF THE WINDOW CLOSES BEFORE (1)-(3) ARE DONE: take the degraded reading and LABEL IT AT THE
+        FIGURE, not in a header (PREMISE-188). Per PREMISE-117, publish-then-revise is codified
+        practice. A labelled biased measurement inside the window beats a clean measurement that never
+        happens — and this instruction is written HERE, in advance, precisely so that "worthless" does
+        not become the reason.
+    (6) RECORDED, NOT ACTED ON: n=2 sources, six days apart, one exchange. PREMISE-136's accrual-design
+        point applies and no blinding protocol recovers power the design does not have. The
+        methodological care here may be disproportionate to the achievable denominator, and that is
+        worth knowing before the access cost is paid.
+  Urgency: **High** — solely because of the external clock. The method-design actions are Medium; the
+    access ownership is not.
+  Owner: UNASSIGNED — action (1) requires Tom or a named agent with member access; actions (2)-(4) are
+    executable by the owning run.
+  Status: OPEN
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-931 · Transform at this step:
+    net evaluation; the method's wording routed to REVISE-450, its design and execution dependency
+    flagged here; the magnitude limb withheld to MONITOR-601 because its source is unretrievable
+
+---
+
+*ITEMS NOT FLAGGED, AND WHY — recorded so the omissions are visible rather than silent:*
+  - **The unanswered-ruling channel.** Three items in this cohort (1306, 1308, 1314) end in a request
+    for a ruling from a channel silent since 2026-08-27, and PREMISE-102/138 govern. This is the
+    concurrent sibling run's **PRESUMPTION-953** ("transmission is not delivery") and overlaps
+    **PRESUMPTION-949**. Named here, not duplicated. The coordinating run should check that the
+    sibling's disposition covers the three instances above; if it does not, they need a home.
+  - **The completeness n=3 test** for ASSUMPTION-1312 is the sibling's **PRESUMPTION-947**. Named, not
+    duplicated.
+  - **The ownership gap across the cohort's named tests.** Six cheap, decisive, unowned in-house tests
+    are named across these ten items. Rather than mint a seventh flag for "assign owners," I have
+    placed each test inside the flag or monitor whose item it settles, and noted for each whether it
+    needs the human channel. **Four need no human at all** — REVISE-448(1) the max-id retrospective,
+    REVISE-449(1) the PREMISE-nnn citation count, REVISE-449(2) PRESUMPTION-948's status-change
+    count, and MONITOR-599(4)'s full-corpus NO-CHALLENGE-FOUND count. Per PREMISE-173, naming the final
+    element: **these four should be executed by the next pipeline run, not filed for Tom.** That is the
+    single highest-leverage instruction in this staging file and it costs four greps.
+
+
+REVISE-452  — CONSOLIDATED: no clock on human-addressed items
+  Date: 2026-09-11
+  Items: PRESUMPTION-949, 950, 951, 953, 956 (DISPOSITION-940, 941, 942, 944, 947)
+  **This flag ADOPTS, rather than restates, the existing Critical flag filed by Agent 15b earlier today:**
+  `lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-11_no-expiry-on-human-addressed-items_949-950-951-953-956.md`.
+  Per rule 7 and PREMISE-138 clause (1), one flag is minted rather than five, and the analysis is not
+  duplicated. What this entry adds that the flag could not add for itself is an owner-shaped action, a
+  closure test, and a date — which is the only thing that would make the flag's own reflexivity note
+  false. It also records two constraints the flag's recommendations do not satisfy as written; those are
+  carved out to REVISE-458 rather than adopted here.
+
+  What is at risk: every item the estate addresses to a human is created without an age, so an unanswered
+    item, an unrouted item, an unrun survey and an unread report all occupy one undifferentiated "open"
+    state with no semantics, no default and no terminal condition. The estate cannot distinguish a queue
+    from a dead-letter office, nor either from a decision. The defect is monotonic and self-concealing —
+    items enter and nothing removes them, while under PREMISE-108 the record simultaneously shows each as
+    discharged — and it has already produced two live failures (the duplicate-anchor defect misfiring on
+    2026-09-10 after 30 undated days; PROP-2026-08-14-033 held against a target retired on 09-08).
+
+  Recommended action — five items, each ownable, in dependency order:
+    1. **Write the negative record** (PRESUMPTION-950; OPEN-194). One dated line per hunt-day, run or
+       skipped, with the reason on skip. This is the precondition for everything else: an object with no
+       record has no age. Owner: the daily hunt run's template.
+    2. **Report AGE, not count, everywhere** (PREMISE-147, ACTIVE and unenforced). Applied to 950: the
+       age of the oldest un-surveyed tradition-day. To 951: the age distribution of items tagged "needs a
+       human." To 953: the latency distribution of human-addressed requests, in 30/60/90 buckets. All
+       three are one pass over existing files and none requires a design ruling first.
+    3. **Give every human-addressed item an addressee and an age at creation** — and see REVISE-458
+       before attaching a DEFAULT that fires on a date, which PREMISE-154 constrains.
+    4. **Apply PREMISE-173's acceptance test at filing** (PRESUMPTION-949): no item may be recorded as
+       dispositioned unless it names a final element — an actor, an action, and a date. Template change,
+       not a subsystem. Store FINDING and ESCALATION as different objects per PREMISE-167 so that "named"
+       and "owned" are distinguishable by query rather than by reading prose.
+    5. **Build the ownership topology** (PRESUMPTION-956): one table, register/directory → write-scope
+       holder. Agent-to-agent ADDRESSING only; no write scope is widened and PREMISE-196's capability
+       control is untouched. Where no holder exists, the finding must say so explicitly.
+  Closure test: three counts, all one pass each — (a) of self-directed findings in the last 30 days, how
+    many have an owner AND a date; (b) findings closed in the last 30 days by an agent other than the
+    raiser, with 15b's discriminator (did any agent hold scope for the target?); (c) the latency
+    distribution of MONITOR-604. The flag closes when all three exist and items (1)–(5) are in the
+    templates, not when this entry is read.
+  Also owed under this flag: **ASSUMPTION-1316's stated counter is at two and today is the third
+    consecutive cycle in which this lane has filed a flag on how the estate observes itself.** On the
+    register's own stated rule the trip condition is met. Honour the counter or strike it; a stated
+    counter that does not bind manufactures the appearance of a trip point, which is worse than no
+    counter.
+  Urgency: **Critical.** 15b's justification for Critical over High is accepted: the conjunction of
+    (i) being the common dependency of the batch's two highest-risk items, (ii) monotonic and
+    self-concealing growth, and (iii) two already-realised failures.
+
+REVISE-453  — the register has no contraction path
+  Date: 2026-09-11
+  Item: PRESUMPTION-948 (DISPOSITION-939); compounds with PRESUMPTION-954 (DISPOSITION-945)
+  What is at risk: adopting the pre-route grep as a FILTER would make all 158 ACTIVE premises
+    unfalsifiable in one edit, and every epistemic weight in `provenance_protocol.md` that keys on a
+    movable status would then be measuring an invariant. PREMISE-174 already records that no register in
+    this architecture has a representable withdrawn state for a FINDING, and that PREMISE-143 clause (3)
+    remains undischarged — this is now the third instance. The compound case is live: PREMISE-201 carries
+    a known-unverified load-bearing clause and cannot be downgraded.
+  Recommended action: (1) adopt the grep as an ANNOTATOR at ORIGINATION, not a FILTER at routing — attach
+    the governing premise to the item and let the search proceed with the premise in view (Bettenburg's
+    merge-do-not-suppress answer, and it captures most of the claimed saving); (2) add the status
+    transition ACTIVE → CONTESTED → (ACTIVE | RETIRED) to `provenance_protocol.md`, recorded by
+    SUPERSESSION per PREMISE-174 clause (3), never by mutating a prior entry; (3) declare the re-exposure
+    conditions — an item contradicts the premise; the premise's load-bearing source is found unretrievable
+    or misreported; (a stated interval — see REVISE-458); (4) publish CORRECTION LATENCY as the
+    statistic, per PREMISE-174 clause (2), not a retraction rate, which is confounded with scrutiny.
+  Closure test: 14b's count — premises that have ever changed status after minting, across 158 — plus
+    15b's addition: classify the 158 as structural or empirical and count how many empirical ones rest on
+    a source flagged unverified or unretrievable (PREMISE-201 is already one). A zero status-change count
+    over a non-trivial empirical subset is the worst case and is measurable today.
+  Urgency: HIGH.
+
+REVISE-454  — the checked zero must be named by its channel
+  Date: 2026-09-11
+  Item: PRESUMPTION-947 (DISPOSITION-938)
+  What is at risk: the estate's only inbound channel for eleven of fourteen traditions reports a
+    surface-scoped null in tradition-scoped language. The error is silent by construction and compounds
+    into a dormancy prior that lowers future search effort.
+  Recommended action: (1) change the specialist run's output template so the null reads "quiet on the
+    checked surfaces (own pages + N named feeds), as of DATE" — one sentence, discharging PREMISE-097 and
+    PREMISE-140; (2) bar streak framings on this metric per PREMISE-140 clause (2); (3) add one
+    non-author-controlled surface per thinker — a host institution's events/media page or one
+    OpenAlex/Scholar author query — as a second channel with disjoint provenance.
+  Closure test: read the next specialist run's report and confirm the null names its surfaces and its
+    date. One read.
+  Urgency: Medium. Independent of MONITOR-603 and must not wait on it.
+
+REVISE-455  — establish whether the 6 GB copy is required, today, by one command
+  Date: 2026-09-11
+  Item: PRESUMPTION-952 (DISPOSITION-943)
+  What is at risk: `metabolism_data.json` is seven days cold and read as current by a downstream health
+    check; the shape recurs for every future consumer of a database that outgrows the sandbox, and the
+    databases are growing. The intake queue has carried "needs a `--no-copy` path or a retitle" unchanged
+    for six days while the question was treated as a host-permissions request.
+  Recommended action, as an ACTION not a search: (1) from the sandbox, against the live file, run
+    `sqlite3 'file:/path/to/db?mode=ro' 'pragma journal_mode; pragma quick_check; select count(*) from
+    sqlite_master;'`; attempt a second concurrent connection to confirm locking is functional; record the
+    outcome and the wall-clock cost. (2) If locking works: `mode=ro`, no copy, plus PREMISE-098's startup
+    assertion on lock state with fail-loud. (3) If locking does not work: take an APFS (or equivalent)
+    snapshot and open the snapshot with `immutable=1` — the documented-safe configuration. (4) **Binding
+    negative result, recorded so it travels: do NOT use `immutable=1` or `nolock=1` against the live file.
+    SQLite's own URI documentation (VERIFIED, read in full by 15b, 2026-09-11) warns that `immutable=1`
+    skips all file locking and change detection and that if the file changes anyway SQLite "might return
+    incorrect query results and/or SQLITE_CORRUPT errors," with a parallel warning for `nolock=1`.**
+    Reaching for either to save disk space trades a loud correct failure for a silent one, which
+    PREMISE-128 names as strictly worse. (5) Retitle the task if it is not doing what its name says
+    (PREMISE-140) — repairable without touching the database question.
+  Closure test: the command's output, recorded with a date, plus the code change or the snapshot path.
+  Urgency: HIGH. The answer is today's.
+
+REVISE-456  — bind the qualifier to the quotable unit, and repair the two named artefacts
+  Date: 2026-09-11
+  Item: PRESUMPTION-954 (DISPOSITION-945)
+  What is at risk: the epistemic-weight table in `provenance_protocol.md` keys on item type and status
+    and has no field for "supported by a source that does not contain the claim," so a defective clause is
+    consumed at full premise weight by construction. PREMISE-201 is the estate's first premise minted with
+    a known-unverified load-bearing clause, and (per REVISE-453) the register cannot demote it.
+  Recommended action: (1) apply PREMISE-103 to PREMISE-201 clause (3) — give it an explicit "unfounded
+    pending retrieval" state; a confidence downgrade is not a valid substitute and PREMISE-103 says so;
+    (2) rewrite REVISE-445's estimate so the qualifier is inside the same string as the number —
+    `"mid-teens to low twenties" [SOURCE (Zimmermann ICSE'12) DOES NOT PUBLISH THIS FIGURE — established
+    by 15b by reading the source]` — or replace it with the in-house measurement it was standing in for;
+    a marking that does not survive copy-paste is not a marking (PREMISE-188 clause 3); (3) add one column
+    to the epistemic-weight table — "load-bearing source verified Y / N / UNRETRIEVABLE" — with a rule
+    that UNRETRIEVABLE caps the item's weight regardless of type and status. This is the enforcement point
+    PREMISE-099 requires and its absence is the whole mechanism. **Deletion is NOT the prescribed remedy**
+    — PREMISE-117's publish-then-revise standard and PREMISE-145 both cut against it, and the literature
+    licenses re-siting the qualifier, not suppressing the estimate.
+  Closure test: 14b's one-cycle follow of both artefacts, plus 15b's control — seed one deliberately
+    caveated figure into a register and check whether it emerges uncaveated downstream within the same
+    cycle. The control converts a single-case observation into a measured stripping rate.
+  Urgency: HIGH.
+
+REVISE-457  — alarm on the AGE of every artefact a health check reads
+  Date: 2026-09-11
+  Item: PRESUMPTION-955 (DISPOSITION-946)
+  What is at risk: realised, not prospective. On 2026-09-10 `Morning system health` read a seven-day-cold
+    `metabolism_data.json` and did not fire. That is PREMISE-086's control not enforced, PREMISE-100's
+    false-green, and PREMISE-110's stuck-at-nominal inversion — three ACTIVE premises, none applied. The
+    generalisation is worse than the instance: because a qualified PASS and an unqualified PASS are
+    indistinguishable to any consumer keying on the status token, the estate's monitoring becomes more
+    reassuring as the number of non-running tasks grows.
+  Recommended action: alarm on the AGE of the last dated result for `metabolism_data.json` and, per
+    PREMISE-089 (freshness is a per-source property), for every artefact any health check reads. One
+    comparison per artefact. PREMISE-086's own conditional is binding: the report must ALARM on age, not
+    merely display the last known value, and the monitor must have its own liveness check. **Independent
+    of REVISE-455 and of MONITOR-605 — do not sequence it behind either.** If a signal must be
+    suppressed, record the suppression as a time-bounded self-clearing object rather than as an
+    indefinite qualifier on a green token.
+  Closure test: deliberately stale one monitored artefact in a sandbox and confirm the monitor turns red
+    within the expected interval — PREMISE-110's live proof-test, not a discrepancy check.
+  Urgency: HIGH.
+
+REVISE-458  — TWO CONTRADICTIONS BETWEEN TODAY'S PROPOSED REMEDIES AND ACTIVE PREMISES
+  Date: 2026-09-11
+  Items: PRESUMPTION-951 (DISPOSITION-942), PRESUMPTION-953 (DISPOSITION-944), PRESUMPTION-956
+    (DISPOSITION-947), PRESUMPTION-948 (DISPOSITION-939, third re-exposure condition)
+  **Filed under rule 4: contradiction found, both sides flagged for human review, and the check recorded.
+  Neither contradiction is resolved by this run and neither should be resolved by an agent.**
+
+  CONTRADICTION 1 — clock vs trigger.
+    Proposed (today's systemic flag, item 1; 15b's mitigation for 951; 15a's audit-RISS pattern): every
+    human-addressed item acquires an addressee, a DATE, and a DEFAULT stating what it becomes if the date
+    passes with no ruling.
+    Contrary ACTIVE premise: **PREMISE-154**, whose LOAD-BEARING FORM CONDITION reads "the discharging
+    mechanism must be TRIGGER-BOUND, NOT A CLOCK," and which explicitly does NOT incorporate "a hold
+    decays with elapsed time," on the grounds that automatic closure destroys accumulated triage state
+    and that a repeated re-audit prompt becomes a rubber stamp within a few cycles. PREMISE-154 already
+    records a NOTED TENSION with PREMISE-049 on this same axis; today's proposal is the third instance.
+    Narrow reading that satisfies both, offered but not imposed: record an AGE on every item
+    (PREMISE-147 requires it), and schedule an event that FORCES A STATUS STATEMENT from the adjudicator
+    — the observable is then the adjudicator's response, not the calendar, which is trigger-bound in
+    154's sense. No automatic status transition. The wide reading — a default that fires on the date —
+    is not adopted here.
+    Also not adopted: **deemed-AUTHORISATION at expiry.** It would let an agent acquire write scope by
+    the passage of time, converting a capability grant into an instruction, which **PREMISE-196**
+    (capability withholding is the strong control precisely because it is not probabilistic) cuts
+    against. 15b raises this objection against its own proposal and is right to.
+    For human review: which construction the estate wants, and whether PREMISE-154 should be amended or
+    the remedy reshaped. PREMISE-049 should be re-read against whichever is chosen.
+
+  CONTRADICTION 2 — acknowledgement as the instrument of transfer.
+    Proposed (today's systemic flag, item 5; PRESUMPTION-956's mitigation list; AHRQ TeamSTEPPS, VERIFIED
+    by 15b): a scope-blocked finding stays attributed to the raiser until a named receiver acknowledges.
+    Contrary ACTIVE premise: **PREMISE-108**, whose clause marked load-bearing reads "the measure of
+    delivery is the flagged content APPEARING IN THE RECIPIENT'S OUTPUT, never an acknowledgement
+    receipt. An acknowledgement makes 'acknowledged' measurable and leaves 'acted on' exactly as
+    unmeasurable as before, installing a green metric over the unchanged failure — the same defect the
+    presumption exists to name." The 15c run that minted PREMISE-108 explicitly EXCLUDED the
+    acknowledgement remedy, and Callen's EHR finding (SECONDARY) independently reports that physicians
+    electronically acknowledging alerts does not indicate they read or acted on the result.
+    Narrow reading that satisfies both, offered but not imposed: an ACK may be recorded and MUST live in
+    its own field (PREMISE-167 requires escalation and measurement be stored as different objects), but
+    attribution is released only on evidence of the flagged content appearing in the receiver's output.
+    That keeps AHRQ's accountability-persists rule while honouring 108's instrument.
+    For human review: whether PREMISE-108's instrumentation constraint should be narrowed now that a
+    VERIFIED federal standard states the accountability rule in acknowledgement terms, or whether the
+    two-field reading suffices.
+
+  Urgency: HIGH — both contradictions sit inside REVISE-452's recommended actions, so REVISE-452
+    items (3) and (5)(c) cannot be implemented as literally written until this is ruled on. Items (1),
+    (2) and (4) of REVISE-452 are unaffected and should proceed.
+
+---

@@ -534,7 +534,43 @@ PRS-58:
   Confidence: Medium
   Evidence: "It basically never happens that there are sudden flashes of insight that come out of nowhere"; "I've never rejected anything lightly. I always make a point of thoroughly understanding what I'm rejecting—and as part of that it's become my practice to make a detailed study of its history."
 
-*Total PRS triplets: 58*
+PRS-59:
+  Problem: Physics has no account of why time *passes* — why we experience an inexorable forward flow rather than a static block in which any moment is equally reachable.
+  Resource: Computational irreducibility, plus the identification of a moment of time with one update step of the universe's rule.
+  Solution: Time is redefined as "the irreducible doing of computation." The flow is not an extra ingredient added to physics; it is what it is like, from inside, for successive states to be computed one from the previous, in a case where no shortcut formula exists to jump ahead.
+  Date Added: 2026-09-10
+  Source: Does time come from the entire universe running computations?; PROP-2026-08-28-040
+  Confidence: High
+  Evidence: Wolfram, verbatim: "Time is the irreducible doing of computation," and "What we perceive as time is our experience of the process of the universe computing its successive states." He contrasts this with the mathematical-physics tradition in which "if you know the underlying rules, you can kind of just work out a formula for what the state of the system will be at any future time" and plug in any value of the time variable.
+
+PRS-60:
+  Problem: If the universe follows a definite rule, why can a sufficiently clever observer not simply compute ahead and predict the future — and what stops time travel?
+  Resource: The observer's own physical embedding: any computer an observer can build is itself made of universe-stuff and runs at the universe's own rate.
+  Solution: A no-go boundary on embedded prediction. Wolfram's formulation: "You can't out-predict the universe from inside the universe." Prediction would require a substrate that steps faster than the substrate being predicted, and inside the universe there is no such raw material.
+  Date Added: 2026-09-10
+  Source: Does time come from the entire universe running computations?; PROP-2026-08-28-040
+  Confidence: High
+  Evidence: Asked whether a better brain could predict the future, Wolfram answers that a computer doing "each step twice as fast as the universe does" would suffice, "but since the only computers we have are ones made out of things in the universe, if we're trying to predict the universe, there's no raw material out of which we can make a computer that will run twice as fast."
+
+PRS-61:
+  Problem: Rule-governed determinism appears to leave no room for free will; if each state is fixed by the last, agency looks like an illusion.
+  Resource: The distinction between determinism (the rule fixes the sequence) and predictability (someone can know the sequence in advance more cheaply than living it).
+  Solution: Computational irreducibility severs the two. The external observer and the system "run at the same rate," so no one — including the agent — can outrun the process; "to see what's going to happen, you have to experience it." Wolfram then reads this positively: living through time performs an irreducible computation that nothing else could have performed on your behalf, so "the experience of time means something."
+  Date Added: 2026-09-10
+  Source: Does time come from the entire universe running computations?; PROP-2026-08-28-040
+  Confidence: Medium
+  Evidence: Direct answer to Crane's question about superdeterminism and free will. The positive gloss is Wolfram's own: "on another level, it means that when we live our lives and we experience time, we've actually achieved something. There's some irreducible computation that's been done by that passage of time." Marked Medium rather than High because the move from "unpredictable-in-principle from inside" to "free will" is an interpretive step the interview asserts but does not argue for.
+
+PRS-62:
+  Problem: What kind of thing must an observer be, for computational irreducibility to bite?
+  Resource: Computational boundedness of observers, illustrated by encryption — a human cannot read an encrypted message by inspection and must instead try possibilities.
+  Solution: Irreducibility only produces the experience of time for observers who are themselves computationally limited. The felt inexorability of time is therefore a joint property of the universe's rule *and* the observer's finite computational budget, not of the rule alone.
+  Date Added: 2026-09-10
+  Source: Does time come from the entire universe running computations?; PROP-2026-08-28-040
+  Confidence: Medium
+  Evidence: "As observers, humans are computationally limited... To say that humans are computationally limited or computationally bounded is to say that when there has been a computationally irreducible process, you can't do that whole irreducible computation. You can do only a limited computation."
+
+*Total PRS triplets: 62*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

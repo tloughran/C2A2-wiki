@@ -1156,3 +1156,117 @@ single status field is being asked to carry two facts. Repair: either mint a `PR
 notes so they enter the normal review loop, or give the ledger an explicit third verdict — `authored`,
 carrying the session id as its warrant — so that an ingest of this kind is visible in the ledger instead of
 invisible to it.
+
+## FINDING-086 — "Substance" is the fourth equivocal term, and the fifth is in the same batch
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-09-003 (Kastrup × Hecht)
+**Confidence:** High · **Recommended action:** ISME methods section, named entry — not a silent correction
+
+Hecht defines substance *per Aquinas* and then applies it inside an idealist ontology. The definition
+survives the import; hylomorphism does not. Hylomorphism is what does the work for Aquinas in explaining how
+a soul is the form of *this* body rather than an immaterial thing standing nearby — so Stump's separated
+soul and "an alter that has stopped extending into physicality" are not the same claim, and the announcement
+text slides between the two senses inside one paragraph.
+
+**Why this is a finding and not a footnote.** The network now has a *series*: "interface" (FLAG-020, Levin
+adds where Hoffman subtracts), the two logged at FINDING-080..082, "cognitive light cone" (FINDING-085,
+awareness-indexed reading stipulated against Levin's own usage), and now "substance". A fifth is in this
+same batch — see FINDING-087. At one, it is a correction. At five, it is a fact about cross-tradition
+indexing itself, and it belongs in the methods section as a declared hazard of the method rather than as
+five separate repairs.
+
+**Escalated** to the master Paradigm Shift Watch List as FLAG-024.
+
+## FINDING-087 — "Markov" equivocation, caught in-flight by the agent that could have made it
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-02-005 (Carroll / Al-Khalili, Mindscape 366)
+**Confidence:** High · **Recommended action:** same disposition as FINDING-086; also record the catch
+
+Al-Khalili's account of how quantum biology survives a warm wet environment is that life may tune its
+environment so decoherence does not simply drain coherence away — "the environment isn't Markovian, there's
+some non-Markovianity... it's helping keep the quantumness going." A system that shapes its own environment
+to preserve an internal state is the *shape* of active inference at a scale nobody has claimed it at. But
+non-Markovianity here is a technical term about bath memory in an open quantum system; a Markov blanket is a
+statistical-independence boundary. Nobody in the conversation mentions the free energy principle.
+
+**The finding has two halves and the second is the more useful one.** (a) The equivocation is real and would
+have produced a spurious Friston–Carroll bridge. (b) **The Carroll agent caught it itself**, recorded the
+item as "a shape match, not a claim", and cited FLAG-020 as the precedent. That is the first observed case
+of the equivocation register being used *prospectively* by an agent rather than applied retrospectively by
+the detector. Worth noting in the methods section as evidence the register changes agent behaviour, which is
+otherwise an assumption.
+
+## FINDING-088 — A timestamped displacement measurement is available and expires
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-02-003, PROP-2026-09-02-004
+**Confidence:** Medium-High · **Recommended action:** escalate; act before the recordings become hard to get
+
+Two Kastrup sources six days apart bracket a live exchange with Levin, and both put the same question —
+minds as patterns, intention substrate-independent across cells, organisms, AI and larger scales. The
+inter-tradition study is built to detect movement in a position under exposure to a rival and normally has to
+infer it across years and venues. Here the interval is one week, the object is fixed, and both recordings
+exist.
+
+**What would make it a measurement rather than a story.** Code the shared dialogue in the Levin wiki and the
+Kastrup wiki *independently, before comparison*. That yields an inter-rater agreement number on a shared
+source — a quantity the network has repeatedly wanted and has never produced, because the standing practice
+is to write one summary and copy it into both files. If the coding is done after comparison the number is
+worthless and the pair should not be claimed as a measurement.
+
+**Blocked on retrieval.** See FINDING-089: the dialogue is paywalled and the platonic-space exchange is the
+part the public summary omits. The kastrup triplets ingested this run rest on the summary.
+
+**Escalated** to the master Paradigm Shift Watch List as FLAG-023.
+
+## FINDING-089 — Four approvals approved a pointer, not a reading, and the retrieval queue still does not exist
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-08-003, -09-02-003, -09-02-002, -09-08-004
+**Confidence:** High · **Recommended action:** build the queue, or stop approving cards that ask for one
+
+Of the 36 cards approved in the 2026-09-09 decision email and ingested in this run, four carry an explicit
+self-declared retrieval condition, written by the proposing agent:
+
+| card | condition, in the agent's own words |
+|---|---|
+| PROP-2026-09-08-003 | submitted on an institutional listing without the source text; "if it is approved as-is, the approval is approving a pointer, not a reading" |
+| PROP-2026-09-02-003 | recording paywalled; the platonic-space exchange is the part the summary omits; "recommend Tom's member access be used to obtain it **before this proposal is ingested**" |
+| PROP-2026-09-02-002 | "queue a retrieval check after 2026-09-24 rather than treating this proposal as ingestible material" |
+| PROP-2026-09-08-004 | self-declared duplicate risk against PROP-2026-06-23-001 and PROP-2026-08-04-002; "if the reviewer judges the marginal yield too thin, reject as duplicate" |
+
+All four were approved and are now ingested. The triplets they produced are in the tradition files with their
+caveats preserved in the Evidence lines, which is the correct fallback — but the caveat is now the only thing
+standing between a pointer and a reading, and caveats do not expire, get assigned, or come back round.
+
+**This is not new and that is the finding.** The 2026-09-02 backlog review already recorded "a retrieval
+queue that doesn't exist is 6 deep." It is now at least 10. A queue that only exists as prose inside Evidence
+fields is indistinguishable, at read time, from a source that was actually read. Either mint a retrieval
+queue with dates and owners, or change the review page so a card carrying a retrieval condition cannot be
+APPROVEd in one keystroke alongside 35 others.
+
+**Also worth naming:** the decision email approved all 36 cards, including the four above and the two in
+FINDING-090. A batch APPROVE is a legitimate act — but it cannot distinguish "I read this and agree" from "I
+did not read this one separately," and four of these cards were specifically written to be caught by a
+reviewer.
+
+## FINDING-090 — The Hawkins authorship rule has now been settled three times by default
+
+**Date:** 2026-09-10 · **Source signals:** PROP-2026-09-08-001, PROP-2026-09-08-002
+**Confidence:** High · **Recommended action:** write the rule down, either way; it costs nothing and ends the loop
+
+PROP-2026-09-08-001 is a Thousand Brains Project team meeting led by Tristan Slominski. PROP-2026-09-08-002
+is led by Viviane Clay. Neither is Hawkins speaking. Both proposing agents flagged this themselves, cited the
+precedent (PROP-2026-08-26-005, PROP-2026-08-17-011/012), and asked in almost identical words that a reviewer
+either reject on that ground or fix the standing rule "so it gets fixed rather than re-litigated."
+
+Both were approved. Sixteen triplets — hawkins PRS-36..51, the largest single-tradition yield in this run —
+now rest on a rule that has never been stated, only repeatedly not-rejected.
+
+**Both answers are defensible.** *Institution-scoped:* the Hawkins tradition tracks the Thousand Brains
+research programme, in which case TBP output is in scope by definition and the caveat paragraph is wasted
+effort on every future card. *Voice-scoped:* the tradition tracks Hawkins, in which case sixteen triplets are
+mis-filed and a `traditions/hawkins/tbp/` split is the repair. What is not defensible is the current state,
+where the agents ask each time and the pipeline answers by saying nothing.
+
+**Note on yield.** PROP-2026-09-08-002 was also 39 days old at proposal time — outside the 30-day window,
+submitted under the "significant work not yet captured" clause. That clause is being used often enough now
+that its own rate is worth counting.

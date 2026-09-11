@@ -162,6 +162,7 @@ PRS-27:
   Confidence: Medium
   Evidence: Episode released 2026-06-26, "Did evolution never give us the ability to see reality as it actually is?"; Tyson, Nice, O'Reilly and Hoffman "explore what neuroscience, evolutionary game theory, and consciousness suggest about the nature of reality itself."
 
+
 *Total PRS triplets: 16*
 PRS-16:
   Label: P16 (PROP-2026-04-28-001) — Stevens' Handbook of Experimental Psychology, ITP chapter (FBT + IOS, theorem-grade)
@@ -393,5 +394,40 @@ PRS-40:
   Confidence: Medium
   Evidence: Hoffman's segment argues spacetime is only a perceptual headset and that UAP may be operating from a deeper level of reality outside the interface. NOTE ON RETRIEVAL: the episode title, guest list, and YouTube ID were confirmed across two independent search results, but the full transcript was not retrieved, and the format is ambiguous — this may be a curated multi-guest special assembled from separately recorded segments rather than a live four-way conversation. Reported release date differs by source (2026-07-24 vs 2026-07-30). Treat the framing above as reliable and any quoted specifics as unverified until the recording is checked directly. INGEST NOTE 2026-09-02: the full transcript was NOT retrieved and the format is ambiguous (possibly a curated multi-guest special assembled from separately recorded segments rather than a live four-way conversation); reported release date differs by source. The interface-theory framing is reliable; any quoted specifics remain unverified until the recording is checked directly.
 
-*Total PRS triplets: 40*
+PRS-41:
+  Problem: Each of Hoffman's arguments against fundamental spacetime — the physics results on locality breakdown, the evolutionary Fitness-Beats-Truth theorem, and the trace logic on conscious agents — is individually resistible, because each rests on assumptions a critic can decline.
+  Resource: A long-form essay assembling all three into one argument, framed around the "spacetime headset" metaphor: spacetime as a virtual-reality interface worn by the observer rather than a container the observer sits inside.
+  Solution: A convergence argument. Three independent programs, with different methods and different failure modes, arriving at the same negative conclusion about spacetime is evidence of a kind that no one of them supplies alone. The essay is the public-facing statement of that structure.
+  Date Added: 2026-09-10
+  Source: Consciousness And Its Spacetime Headset; PROP-2026-09-08-003
+  Confidence: Medium
+  Evidence: The Trace Institute publications page describes the essay as "Hoffman's long-form essay arguing that spacetime is a headset, not fundamental, and that physics, evolution, and the trace logic on conscious agents all point past it." **The essay text itself was not retrieved** — no direct link or PDF is exposed on the publications page, and the reconstruction of the argument above rests entirely on that one-sentence institutional description plus what this wiki already holds about the three component arguments. A reviewer should treat the triplet as a placeholder until the text is in hand.
+
+PRS-42:
+  Problem: The Interface Theory of Perception is routinely misread as the claim that nothing is real, which makes the position look self-refuting and lets critics dismiss it without engaging the formalism.
+  Resource: The "headset" framing, which supplies a disanalogy the older "desktop icon" metaphor lacks: a headset is worn, it is not the world, and taking it off is coherent — whereas an icon invites the objection that a desktop is still made of pixels on a real screen.
+  Solution: A metaphor that carries the modal claim — spacetime is how the observer is equipped, not what there is — while leaving the underlying conscious-agent dynamics available to be described in its own terms.
+  Date Added: 2026-09-10
+  Source: Consciousness And Its Spacetime Headset; PROP-2026-09-08-003
+  Confidence: Speculative
+  Evidence: The title and the institutional gloss are all that support this. The distinction drawn here between "headset" and "icon" is this agent's reading, not a claim quoted from Hoffman — flagged so a reviewer can strike it. Note also that the Essentia Foundation ran an interview under the title "Spacetime is just a headset," so the phrase is one Hoffman uses in interviews as well; whether the essay does the work attributed here is unverified.
+
+PRS-43:
+  Problem: Conscious realism posits a network of conscious agents underlying spacetime, but offers no procedure by which an embedded observer could ever encounter an agent that its own interface does not render.
+  Resource: The proposal, advanced with Gallimore, that DMT temporarily transforms the perceptual interface rather than distorting its contents — and so may make normally unrendered conscious agents perceivable.
+  Solution: A candidate empirical entry point to the conscious-agent layer, and a reframing of psychedelic phenomenology from hallucination (contents wrong) to interface substitution (renderer changed). This converts a metaphysical thesis into something with an experimental adjacency, even if not yet an experiment.
+  Date Added: 2026-09-10
+  Source: Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus; PROP-2026-09-08-004
+  Confidence: Medium
+  Evidence: The Trace Institute's media page states the framing question directly: "Could DMT temporarily transform the human perceptual interface, making conscious agents that are normally invisible to us perceivable?" The event video was not watched and no transcript was retrieved; the reframing from "contents wrong" to "renderer changed" is this agent's gloss on the Institute's sentence, not a quotation, and should be struck if a reviewer finds it overreaches.
+
+PRS-44:
+  Problem: An institute organized around a mathematical framework risks having its most public claim — about psychedelics — received as the whole program, collapsing a formal research agenda into a cultural one.
+  Resource: The Institute's own staging of the work: a moderated public event, a press release framed as "Mathematical Modeling of the Human Psychedelic Experience," and press coverage headlined "Turning the Psychedelic Experience into a Math Problem."
+  Solution: A deliberate discipline-first framing, in which the psychedelic material enters as an application of the trace logic rather than as an independent claim. Tracking whether this framing holds — in the press, and in what the audience takes away — is a measurable question about how a young research program controls its own reception.
+  Date Added: 2026-09-10
+  Source: Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus; PROP-2026-09-08-004
+  Confidence: Speculative
+  Evidence: The three artifacts named (event page, press release title, Nautilus headline) are listed on traceinstitute.org/media. The inference that the framing is deliberate is this agent's, not a stated Institute position. Included because C2A2 is itself a research program managing its own public reception, so how another program does it is instrumentally relevant — a reviewer who thinks that is out of scope for a tradition wiki should say so.
+*Total PRS triplets: 44*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

@@ -189,3 +189,18 @@ Ingested 22 triplets, PRS-45 through PRS-66, from 16 approved proposals carrying
 - **PRS-58 as a text-metric task for the pattern detector:** reduction in binary sorting across a prophetic book's arc, measured in the text and independent of author self-report. The vault does not hold the corpus.
 
 **Acquisition notes.** Not in the vault and quoted at length here: Kate Bowler, *Joyful, Anyway* (Convergent, 2026); Jim Forest, *The Ladder of the Beatitudes* (Orbis, 1999); Dan Riley, *Franciscan Lectio* (Paraclete, 2022); Jon Sweeney, *Experiencing God* (Monkfish, 2026); Ilia Delio, *The Humility of God* (2005); Abby Norman, *You Can Talk to God Like That* (Broadleaf, 2021); Stephanie Spellers, *The Church Cracked Open* (Church Publishing, 2021). Rohr's own *Eager to Love* (Franciscan Media, 2024 ed.), *Immortal Diamond* (Jossey-Bass, 2013) and *The Tears of Things* (Convergent, 2025) are the primary sources behind PRS-46, PRS-48, PRS-52, PRS-54, PRS-55, PRS-58 and PRS-60 and are likewise absent.
+
+### Ingest 2026-09-10
+
+13 triplets added from 8 approved proposals (decision email 2026-09-09): PRS-67, PRS-68, PRS-69, PRS-70, PRS-71, PRS-72, PRS-73, PRS-74, PRS-75, PRS-76, PRS-77, PRS-78, PRS-79.
+
+- `PROP-2026-08-28-060` — The Glory of God in Us (blog, https://cac.org/daily-meditations/the-glory-of-god-in-us/) → PRS-67, PRS-68
+- `PROP-2026-08-28-061` — Realigned with the True Self (blog, https://cac.org/daily-meditations/realigned-with-the-true-self/) → PRS-69, PRS-70, PRS-71
+- `PROP-2026-08-30-003` — Following in Jesus's Footsteps (blog, https://cac.org/daily-meditations/following-in-jesuss-footsteps/) → PRS-72
+- `PROP-2026-08-30-002` — True Self and False Self: Weekly Summary (blog, https://cac.org/daily-meditations/true-self-and-false-self-weekly-summary/) → PRS-73
+- `PROP-2026-08-30-001` — The True Seed Within (blog, https://cac.org/daily-meditations/the-true-seed-within/) → PRS-74
+- `PROP-2026-09-06-003` — Full of Suffering, Full of Love (blog, https://cac.org/daily-meditations/full-of-suffering-full-of-love/) → PRS-75
+- `PROP-2026-09-06-004` — The Dance of Faith and Doubt (blog, https://cac.org/daily-meditations/the-dance-of-faith-doubt/) → PRS-76
+- `PROP-2026-09-08-031` — Standing in Solidarity (blog, https://cac.org/daily-meditations/standing-in-solidarity/) → PRS-77, PRS-78, PRS-79
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

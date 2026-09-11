@@ -7405,3 +7405,142 @@ PREMISE-203:
 above; 143's domain-transfer caveat carried forward, not overturned) and PREMISE-195. PREMISE-203 against
 PREMISE-109, -116, -171, -194, -195 (extends their scope to the spoken channel; contradicts none). No
 existing premise required amendment this run, and none was amended.*
+
+## 2026-09-11 — 15c cycle (1 premise minted: PREMISE-204; cohort of 20)
+
+*Twenty items dispositioned this run (ASSUMPTION-1305–1315, PRESUMPTION-947–956; DISPOSITION-928–947)
+and ONE premise minted. That ratio is the run's headline finding, not a shortfall: both search
+directions independently reported that 20 of 20 items were already pre-answered by an ACTIVE premise,
+seven of them verbatim, which replicates the 82% rate measured across the two prior cycles at a larger
+n. PREMISE-138 clause (1) bars the re-mint, so the covering premise is named in each disposition and
+only genuine residue is routed onward. ASSUMPTION-1309 proposed remedying this by a pre-route grep that
+would suppress search on pre-answered items; that remedy is dispositioned REVISE (REVISE-449), because
+PREMISE-174 is ACTIVE and holds that a register with expansion and no contraction cannot revise — a
+grep that prevents re-exposure would make all 158 ACTIVE premises unfalsifiable by construction.*
+
+PREMISE-204:
+  Date validated: 2026-09-11
+  Source item: ASSUMPTION-1307 (DISPOSITION-930) — LIMB B only; the item's stated absolute form is
+    explicitly DECLINED, not adopted
+  Statement: AN AGGREGATED AUTHORISATION CARRIES ITEM-LEVEL WARRANT ONLY WHERE THE CLASS IS
+    PRE-SPECIFIED, THE SCOPE IS BOUNDED, THE AUTHORITY IS ASYMMETRIC, AND OUT-OF-CLASS ITEMS FALL OUT
+    OF THE BATCH AUTOMATICALLY. Four clauses, and the fourth is the one that makes the other three
+    operable.
+    (1) THE ABSOLUTE FORM IS FALSE AND MUST NOT BE ASSERTED. "A batch approval cannot carry item-level
+    warrant" is refuted by a working regulatory counterexample: expedited IRB review under
+    45 CFR § 46.110 approves by pre-published CATEGORY through a single designated reviewer exercising
+    all the authorities of the convened board, and item-level full-board deliberation is explicitly
+    not required. Class-level approval is a valid, codified warrant form. What is NOT valid is
+    UNSTRUCTURED aggregation, and the distinction is the content of this premise.
+    (2) SPECIFICITY IS CONSTITUTIVE, NOT A QUALITY GRADE. The two bodies of law that have most
+    carefully examined aggregated authorisation reach the same structure from the opposite side: GDPR
+    Art. 4(11) and Recital 32 treat consent as presumptively NOT freely given where it does not allow
+    separate consent to different operations despite that being appropriate — bundling INVALIDATES
+    rather than weakens — and the Common Rule permits aggregated authorisation only under a narrowly
+    enumerated exception (broad consent, § 46.116(d)), which itself retains a per-use review gate. The
+    valid form is therefore CLASS PLUS PER-USE GATE, never blanket approval; "blanket consent" has no
+    definition in the Common Rule, FDA regulations or ICH E6 at all.
+    (3) THE ASYMMETRY IS A STRUCTURAL SAFEGUARD, NOT AN ADMINISTRATIVE DETAIL. What makes expedited
+    review safe is that the reviewer may APPROVE but may not DISAPPROVE; a lower-cost procedure is
+    permitted to take the reversible action and is barred from taking the terminal one. Any aggregate
+    gate in this estate must carry an equivalent asymmetry or it is not the same instrument.
+    (4) THE FALL-OUT RULE IS THE OPERATIVE REQUIREMENT. A class definition with no automatic exclusion
+    path is a description, not a gate. Where an item outside the declared class must be recognised by
+    the approver's attention, the design has reproduced exactly the failure it was meant to prevent —
+    and per-item attention is measurably load-dependent (reviewers assigned 5+ proposal sets wrote
+    significantly shorter comments than those with 4 or fewer, ALMA Cycle 8, n=1,497 proposal sets).
+    On 2026-09-10 the machinery to route the exceptions already existed IN THE CARDS THEMSELVES: four
+    of the thirty-six said so and asked to be caught, and were ingested anyway.
+    SCOPE GUARD, load-bearing: THIS PREMISE GOVERNS WARRANT, NOT REVERSIBILITY, AND DOES NOT
+    SUBSTITUTE FOR IT. Where the authorised operation is irreversible, PREMISE-176 governs and is
+    prior — review is not the control there, reversibility is — and satisfying clauses (1)-(4) does
+    not license an irreversible batch operation. Separately: heavyweight item-level approval is NOT
+    the alternative this premise recommends. External item-level approval boards are reported
+    negatively associated with delivery performance and show no association with lower change-failure
+    rates (DORA/Accelerate, SECONDARY); the lever is the CLASS DEFINITION and the fall-out rule, not
+    the granularity of the signature.
+    NOT INDEPENDENT CORROBORATION OF PREMISE-172, and must not be cited as such. PREMISE-172 governs
+    what a mark RECORDS (a verdict about a reader/frame/scope reading, carrying no information about
+    what was not examined); this premise governs how an aggregate authorisation is DESIGNED. They are
+    complementary and were minted from the same item.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence:
+    - 45 CFR § 46.110, expedited review procedures and single-designated-reviewer authority — SECONDARY
+      (regulation text read via two independent hosts, eCFR and Cornell LII; full section not read).
+    - 45 CFR § 46.116(d) broad consent with limited IRB review under § 46.104(d)(7) — SECONDARY.
+    - Regulation (EU) 2016/679 Art. 4(11) and Recital 32; UK ICO "What is valid consent?" — SECONDARY
+      (statutory text and guidance via search results, not fetched in full).
+    - 21 CFR 56.109(a) — SECONDARY — a lower-cost review PROCEDURE does not lower the substantive
+      warrant required per item.
+    - ALMA Proposal Handling Team 2022, arXiv:2204.05390, Figure 15 — **VERIFIED** (fetched by 15a;
+      caption read directly): reviewers with 5+ proposal sets wrote significantly shorter comments
+      than those with 4 or fewer, across 1,497 proposal sets. NOTE: the measured variable is comment
+      LENGTH, a proxy for engagement, and the 5-set threshold DOES NOT TRANSFER as a number.
+    - Cohen et al. / SmartBear-Cisco code review case study (2,500 reviews, 3.2M LOC) — SECONDARY;
+      the primary PDF returned an empty body on fetch in both directions. The DIRECTION transfers; the
+      200-400 LOC and 450 LOC/hour thresholds DO NOT and must not be imported.
+    - DORA / Accelerate State of DevOps change-approval findings — SECONDARY; the "2.6x more likely to
+      be low performers" figure is SECONDARY and carries no weight in the rating. Recorded because it
+      bounds the remedy, not because it supports the premise.
+    - EXCLUDED FROM THE RATING: the rubber-stamping / consent-agenda empirical literature. 15a searched
+      for a quantitative study of item-level scrutiny under consent-agenda procedures and could not
+      retrieve one; it is UNVERIFIED and carries no weight (rule 3).
+  Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate-to-Strong on this limb), and the challenge IS
+    the premise — clauses (1) and (3) are 15b's position, not the source item's. 15a's own caveat is
+    also folded in and is not answered by anything retrieved: consent and approval are different
+    speech acts, GDPR and the Common Rule govern authorisation by the affected party over their own
+    interests, and a delegated reviewer could reasonably be argued to be entitled to approve in
+    aggregate on a sampling basis in a way a data subject is not. The specificity principle therefore
+    transfers BY ANALOGY, NOT BY ENTAILMENT, and that is why confidence is Moderate and not High.
+  Confidence: Moderate
+  Confidence rationale (stated, not implied): the regulatory sources are SECONDARY in both directions
+    and only one empirical source (ALMA) was VERIFIED, measuring a proxy. The two search directions
+    converge, but per PREMISE-111's standing discount that convergence carries a residual correlation
+    and may not be read as independent confirmation. The normative transfer is by analogy. Moderate
+    for those three reasons jointly.
+  Consistency check: run 2026-09-11 against `validated_premises.md` ACTIVE set, with full entries read
+    for PREMISE-050, 090, 103, 121, 172, 176. **No contradiction found.** Specifically checked:
+    (a) PREMISE-050 advises against one bulk run, which reads as tension — it is not. PREMISE-050's
+    own folded caveat already states that where the attended gate is expensive and the work is a
+    finite one-time backlog, the cost-optimal batch can exceed 5-8 and over-fragmentation
+    re-introduces a rubber-stamping hazard. This premise supplies the STRUCTURAL conditions under
+    which the larger batch is legitimate; 050 supplies the COST argument. Complementary.
+    (b) PREMISE-103 is reinforced, not contradicted: clause (4)'s fall-out rule is the mechanism by
+    which metadata-only material reaches PREMISE-103's explicit unfounded state instead of being
+    ingested with a flag.
+    (c) PREMISE-172's EXPLICITLY NOT INCORPORATED section declines self-reported coverage fields; this
+    premise proposes no coverage field.
+    (d) PREMISE-176 is declared PRIOR in the scope guard rather than displaced.
+    DENOMINATOR DECLARED: the check was run against the 158-entry ACTIVE index and full entries were
+    read for 20 premises. PREMISE-001..043 remain absent from the register (REVISE-242), so a
+    contradiction with a missing premise would not have been seen.
+  Applicable to: DECISION-083's review channel; every batch APPROVE in the estate's approval record,
+    retrospectively as well as prospectively (PREMISE-118's obligation is NOT discharged by this
+    premise — see REVISE-447); 14a/14b intake; any future bulk-authorisation design; the Phase 0/1
+    card review path.
+  Re-check due: 2026-12-11 (Quarterly)
+  Status: ACTIVE
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-930 · Evidence grade: one
+    VERIFIED empirical source (ALMA, proxy measure); all regulatory sources SECONDARY; one UNVERIFIED
+    source excluded from the rating.
+
+*(none minted this half — see dispositions for the covering premises)*
+
+Stated in full because a zero here is a finding and not an omission. Ten items, ten covering ACTIVE
+premises, seven of them verbatim: PREMISE-174 (948), PREMISE-147 (950), PREMISE-108 (953),
+PREMISE-188 (954), PREMISE-163 (956), PREMISE-173 (949), PREMISE-133 + PREMISE-154 (951); plus
+PREMISE-097 + PREMISE-140 (947), PREMISE-146 + PREMISE-107 + PREMISE-098 (952), and
+PREMISE-110 + PREMISE-100 + PREMISE-086 + PREMISE-141 + PREMISE-167 (955). PREMISE-138 clause (1) bars
+the re-mint and the 2026-08-13 precedent (PRESUMPTION-781/783) disposes an enforcement gap against a
+held premise as REVISE. Two candidates that might otherwise have been minted were declined on stated
+grounds and are recorded so a later run does not re-derive them:
+
+  - **PRESUMPTION-955's ternary-vocabulary corrective** — genuine residue (the priority ordering is
+    dissolved rather than answered by a ternary status token with consumer-side enforcement), but its
+    entire evidential basis is unretrieved standards and specification text in both directions. Held at
+    MONITOR-605 per rule 3, not minted.
+  - **PRESUMPTION-956's scope-extension of PREMISE-163** — declined as unnecessary: PREMISE-163's
+    Applicable-to field already names "the deferred/ and inbox/ lanes," so the premise reaches the cohort
+    and the gap is enforcement. Recorded so this is not re-proposed as PREMISE-154 was to PREMISE-133.
+
+---

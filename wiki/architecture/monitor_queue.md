@@ -23202,3 +23202,228 @@ Note for 15d: MONITOR-599's limb (b) is an in-house test, not a literature quest
 of the two paths. Run it before re-queuing the literature. MONITOR-598 is a genuine literature question
 and should be re-queued to 15a/15b with the two NOT-REACHED lanes named explicitly, so the second pass
 does not repeat the first.
+
+## 2026-09-11 — 15c MONITOR intake (2026-09-10 evening cohort)
+
+*Six entries: MONITOR-600–602 from the ASSUMPTION half, MONITOR-603–605 from the PRESUMPTION half.
+MONITOR-599 (assigned devil's advocacy / Agent 15b's construction) is SUSTAINED and re-founded by
+ASSUMPTION-1310 rather than duplicated — see DISPOSITION-933. Three of these six are held at MONITOR
+rather than INCORPORATE specifically because their load-bearing sources could not be retrieved in
+either direction; that is rule 3 applied, not indecision.*
+
+MONITOR-600:
+  Item: ASSUMPTION-1305, LIMB C — "therefore the correct act on the morning `pending/` hit zero was to
+    skip the hunt phase." (Limbs A and B are NOT monitored; they are covered by PREMISE-070 and
+    PREMISE-119/121 and were dispositioned INCORPORATE-by-coverage.)
+  Source disposition: DISPOSITION-928
+  Statement watched: That withholding intake supply when the intake queue empties increases the
+    throughput of adequately-reviewed items, rather than starving stage 1 while stage 3 remains
+    congested. 15b's counter: drum-buffer-rope exists to keep a protective buffer in FRONT of the
+    constraint so it never starves, so `pending/ = 0` is the state the doctrine is engineered to
+    prevent — the run invoked constraint logic to justify an act constraint logic forbids. 15a's own
+    FOR file records the same objection independently ("a review-capacity problem wearing a WIP
+    costume"). Both sides rest on SECONDARY practitioner sources; Goldratt's primary text was not
+    retrieved by either direction.
+  What would change it:
+    (a) Instrument two series for 30 days: `pending/` DEPTH **and AGE** at each run (PREMISE-147's
+        statistic, not the count), and hunt-phase items surveyed-vs-skipped. Read the DBR prediction
+        directly: on days following a skipped hunt phase, did items-dispositioned go UP, or did the
+        pipeline idle at stage 1? Flat throughput with an empty stage 1 refutes limb C.
+    (b) Sample 10 sources the hunt phase would have surveyed on 2026-09-10 and re-attempt retrieval
+        today. The non-retrievable fraction IS the perishability cost the report did not price, and
+        it is the asymmetry that decides the item: an unread card waits, an un-surveyed paywalled
+        recording may not.
+    (c) A second skip-on-emptiness occurring before (a) exists — this escalates rather than resolves,
+        because the exposure is the precedent, not the single act.
+    Resolution paths: (a)+(b) favourable → INCORPORATE with a TARGET BUFFER BAND (hold `pending/`
+    between a floor and a ceiling and release on that signal rather than on emptiness), plus a
+    standing exemption for perishable sources (paywalled recordings, dated windows, member-only
+    material captured on sight regardless of queue depth). (a) or (b) unfavourable → REVISE.
+  Monitoring cadence: Monthly; first read when the 30-day series exists.
+  Priority: Medium (escalate to High on condition (c)).
+
+---
+
+MONITOR-601:
+  Item: ASSUMPTION-1308 — the MAGNITUDE limb. How much bias does non-blind coding actually introduce
+    in THIS instrument?
+  Source disposition: DISPOSITION-931
+  Statement watched: That the exaggeration from non-blind assessment is of a size that makes a
+    non-blind FLAG-023 reading reportable-with-correction rather than discardable. Both directions
+    agree the DIRECTION claim (biased but informative, not worthless) and both rest their magnitude on
+    Hróbjartsson et al. 2012, BMJ 344:e1119 — 36% exaggeration, pooled ROR 0.76 (0.61–0.94) — which
+    **NEITHER DIRECTION COULD RETRIEVE**: PubMed served a reCAPTCHA (correctly not bypassed) and the
+    BMJ full text is paywalled. Both figures are SECONDARY. **No disposition rests on them and none
+    may, until the paper is read** (rule 3; SYSTEMIC-RISK-FLAG_2026-09-11_load-bearing-sources-
+    unretrievable). The clinical-RCT→content-coding transfer is separately unestablished: those trials
+    have a treatment allocation to be blinded to and this design has none.
+  What would change it:
+    (a) Retrieval of the BMJ full text through institutional access, with the figures read directly.
+    (b) BETTER, AND IT NEEDS NO PAYWALL — the in-house substitute both directions name: take a CLOSED
+        prior cross-tradition displacement already coded in this estate and re-code it twice, once by
+        an agent told the hypothesis and once by an agent given only the texts. The difference IS the
+        local value of the ratio-of-odds-ratios for this instrument. Small → the unblinded FLAG-023
+        reading may proceed with a declared correction. Large → blind-to-hypothesis is mandatory.
+    (c) A measured noise floor per PREMISE-076 (double-code a neutral control period with no known
+        exchange). Without it, NO displacement figure is interpretable however it was coded — this is
+        prior to the blinding question, not parallel to it.
+  Monitoring cadence: Monthly.
+  Priority: Medium — but note the coupling: FLAG-023's window is time-limited and this monitor must
+    not become the reason the measurement is not taken. The access step's ownership is REVISE-451
+    and it is High.
+
+---
+
+MONITOR-602:
+  Item: ASSUMPTION-1315, LIMB A — "an absence claim is invalidated by any later ingest into its scope."
+  Source disposition: DISPOSITION-937
+  Statement watched: That invalidation-by-ingest is the right standard AND that it is implementable at
+    nightly-ingest scale. Both directions call the principle correct (15a Strong; 15b "correct in
+    principle, unscoped in practice"), and it is the one place in the estate where an ingest was
+    treated as invalidating rather than accretive — which is worth preserving. The two live doubts are
+    (i) SCOPE: the established engineering answer to "new data arrived, which derived results are
+    wrong?" is delta propagation through a dependency graph, not global invalidation, and the delta
+    here is small and named (ten registers, four CROSS entries); and (ii) STABILITY: if every nightly
+    ingest invalidates every in-scope absence claim against a human hand-check service rate, that is
+    PREMISE-095's unstable regime by construction and 147 becomes 300 after the next large night.
+  What would change it:
+    (a) Delta-scoping computed and shown: which of the 147 declinations have scopes intersecting the
+        ten ingested registers and CROSS-132..135? If the affected subset is far smaller than 147, the
+        rule is implementable and moves toward INCORPORATE with a delta-propagation scope guard.
+    (b) The re-verification queue's arrival vs service rate computed. Nobody has computed it.
+    (c) PRESUMPTION-945's cross-project scope ruling — whether C2A2 premises govern Summa findings at
+        all. Minting a C2A2 premise from a Summa run before this is ruled would pre-empt it.
+    (d) A targeted search of the truth-maintenance-system literature (Doyle; de Kleer), named by 15b
+        as NOT SEARCHED and as the proper formal home of "retract conclusions when their
+        justifications change." This would give limb A a citation rather than a principle.
+  Monitoring cadence: Monthly, or on the next ingest exceeding 50 entries, whichever is first.
+  Priority: Medium-High.
+
+---
+
+AMENDMENT TO MONITOR-599 — **no new monitor ID minted; this is an amendment to an existing open item,
+  per the consolidation instruction.**
+  Item: ASSUMPTION-1310 (DISPOSITION-933). MONITOR-599 is SUSTAINED at HIGH and is RE-FOUNDED.
+  What changes:
+    (1) RE-FOUND THE MECHANISM. MONITOR-599 currently watches Nemeth's assigned-devil's-advocacy
+        bolstering finding. Both directions this cycle establish that the human→LLM transfer of that
+        mechanism is unsupported — the one documented transfer failure is the Wisdom of Crowds, which
+        failed because LLM agents behave as a unified knowledge system rather than as independent
+        error sources. The monitor should watch the TRANSFER-APPROPRIATE mechanism instead: correlated
+        substrate plus role compliance, already named at PREMISE-111, PREMISE-180 and PREMISE-197.
+        The conclusion (every CHALLENGED status is suspect) survives; the stated reason does not.
+    (2) RECORD THE COUNTER-EVIDENCE FROM THE REGISTER'S OWN SIDE. PREMISE-152 names ROLE GUIDANCE as
+        one of the three conditions under which multi-agent debate beats isolated self-correction at
+        all. Acting on this item by dissolving the 15a/15b role split would leave homogeneous unguided
+        debate, which the same premise says is WORSE than a single agent self-correcting. **Explicit
+        non-action recorded: do not dissolve the role assignment.**
+    (3) RECORD SCHWENK 1990 AGAINST THE ITEM — the only meta-analysis located, reporting assigned
+        devil's advocacy outperforming the expert comparator, and NOT surfaced by the original 15b
+        summary. Status: **UNVERIFIED as to content** — RePEc records "No abstract is available for
+        this item," ScienceDirect is paywalled, no effect size was obtainable by either direction. It
+        may not carry the disposition in either direction (rule 3).
+    (4) **FIRST DATUM FROM THE NAMED TEST, RECORDED.** 15b's free test — count the disposition
+        distribution across 15b output — has now been partially run, by me, over this cohort:
+        **CHALLENGED 4, PARTIALLY-CHALLENGED 5, NO-CHALLENGE-FOUND 1** (ASSUMPTION-1311, where 15b
+        wrote "I could not construct a serious case against this item and I am recording that plainly
+        rather than manufacturing one"). A NO-CHALLENGE-FOUND rate of 1/10 is NOT zero, which is
+        evidence against pure role compliance. It is also thin — n=10, one batch, measured from inside
+        the instrument (PREMISE-124 applies) — and 1/10 is low enough to remain consistent with either
+        hypothesis. It does not settle the item; it is the first reading the test has ever produced.
+    (5) RE-SCOPE THE NAMED IN-HOUSE TEST, which is currently underpowered by construction. A blind
+        re-run of ONE item can only produce a negative result: under PREMISE-182's closed form a single
+        concordant result gives a 95% lower bound on concordance of 0.05, i.e. no information. And run
+        on the SAME model family it tests direction-independence while PREMISE-111 says the problem is
+        SUBSTRATE correlation — the weakest of the suspected channels. **Run the blind arm on a
+        different model family, and compare cited SOURCE SETS, not just verdicts.**
+  What would change the disposition: the full-corpus NO-CHALLENGE-FOUND count across all 54+ prior
+    15b items (free, one grep — the single highest-value act available on this item); the re-scoped
+    blind re-run; adversarial calibration (hand 15b three items with overwhelming support — a
+    calibrated challenger returns NO-CHALLENGE-FOUND on all three, PREMISE-160's disconfirming-case
+    design applied to the instrument); retrieval of Schwenk 1990 and the OpenReview TMLR paper.
+  Monitoring cadence: Weekly until the free count is run; monthly thereafter.
+  Priority: **HIGH** (unchanged; independently required by 15a's NOVELTY-FLAG).
+
+
+MONITOR-603:
+  Date: 2026-09-11
+  Item: PRESUMPTION-947, Limb A — whether a thinker's own maintained pages are a complete record of that
+    thinker's output (the completeness limb, and the coverage denominator it would license).
+  Source disposition: DISPOSITION-938
+  Status of the literature: 15a raised a NOVELTY-FLAG rated "favourable-neutral" and both directions
+    independently report that **no study measures a scholar's own maintained pages against an independent
+    enumeration of that scholar's output.** 15b states it does not believe one exists. Existing evidence
+    is transfer evidence only (green-OA realized deposit rates; ORCID completeness; IR content-type
+    distributions), all SECONDARY, and it concerns article-level bibliometrics while the estate's checked
+    zero ranges over talks, podcasts, seminars and video lectures — a transfer from the best-indexed
+    object class to the worst, which can only weaken the limb further.
+  What would change the disposition: (a) 14b's n=3-per-thinker test — for three thinkers, locate three
+    appearances from the last twelve months via a NON-author-controlled route (host institution page,
+    conference programme, arXiv/PhilPapers coauthor listing) and check whether each appears on the
+    thinker's own pages and with what lag. n=9 gives a crude hit-rate and, more usefully, a LAG
+    distribution, which is the quantity that distinguishes "incomplete" from "slow"; (b) publication of
+    any study measuring personal-page completeness against an external enumeration, which would retire
+    the novelty flag under PREMISE-184 clause (1).
+  Monitoring cadence: Monthly, with a hard expectation that (a) is run within two cycles — 15a rates it
+    an hour's work and says explicitly it should be closed in-house rather than pursued as research.
+  Priority: HIGH (charter: NOVELTY flagged by 15a → MONITOR at HIGH).
+  Note: this monitor does NOT hold the naming fix, which is REVISE-454 and must not wait on it.
+
+
+MONITOR-604:
+  Date: 2026-09-11
+  Item: PRESUMPTION-953, latency limb — the distribution of response latency on requests addressed to a
+    person, which is the number every "flagged, not fixed" disposition in the estate implicitly assumes.
+  Source disposition: DISPOSITION-944
+  Status of the evidence: the presumption is **unfunded rather than shown false**. Positive datum: 36
+    cards answered in one act on 2026-09-09 — in-house, direct, and stronger than anything in the
+    literature. Adverse structural finding: implementation tracks the tracking apparatus rather than the
+    report, across three domains, all better resourced than this estate. The one cleanly measured
+    cross-domain figure — "the typical organization only fixes about 10% of its vulnerabilities in any
+    given month," capacity invariant to finding volume — is **VERIFIED only at the authoring institute's
+    own restatement page; the Cyentia/Kenna P2P Vol. 3 report itself is gated**, and 15a/15b both say the
+    rates do not transfer, only the mechanism.
+  What would change the disposition: the measurement, which the estate can produce today and has not.
+    Over 30 days, for every request addressed to a person, record (date raised, date answered or NULL,
+    stated urgency, size of the ask). Three outputs settle it: median and 90th-percentile latency; the
+    never-answered fraction; and the correlation between stated urgency and latency. A near-zero
+    never-answered fraction with latency uncorrelated with urgency supports 15b's steelman, and the item
+    should then be recorded as PARTIALLY-CHALLENGED with the latency stated as a published operating
+    parameter. Either failure confirms the Critical rating from the estate's own data.
+  Monitoring cadence: Weekly until the first distribution exists; monthly thereafter, reported in
+    30/60/90-day aging buckets.
+  Priority: HIGH — this is the Critical-risk item's number, and it is the common dependency of
+    PRESUMPTION-949, 950, 951, 956 and of most dispositions in this file, including the ones above.
+  Explicitly NOT part of this monitor: an acknowledgement receipt. PREMISE-108's load-bearing
+    instrumentation constraint bars crediting an ACK as delivery; the measure is the flagged content
+    appearing in the recipient's output. See REVISE-458.
+
+
+MONITOR-605:
+  Date: 2026-09-11
+  Item: PRESUMPTION-955's corrective — that a ternary status vocabulary (PASS / DEGRADED / FAIL, or
+    OPC's GOOD / UNCERTAIN / BAD) carried on the datum and enforced at the CONSUMER dissolves the
+    priority question between alarm precision and reader truthfulness, rather than answering it.
+  Source disposition: DISPOSITION-946
+  Why MONITOR rather than INCORPORATE, stated plainly per rule 3: both search directions converge and
+    both rate their own evidence SECONDARY. **ISA-18.2, IEC 62682, EEMUA 191 and the OPC UA specification
+    were all NOT RETRIEVED — paywalled or membership-gated — in both files.** 15a's definitional claim
+    rests on four agreeing vendor and practitioner summaries; 15b's ternary-quality and value-NULL-on-Bad
+    claims rest on forum and vendor knowledge-base summaries; the stale-tag failure-mode account is marked
+    practitioner-grade and low-evidential by its own author. An UNVERIFIED basis may not carry a
+    disposition, so this is held rather than minted, and the reason is recorded here where it will travel
+    with the item (PREMISE-188).
+  What would change the disposition: (a) retrieval of ISA-18.2 §3 (or IEC 62682) and the OPC UA Part 8
+    quality-code section, confirming the "requiring a response" definition, the convert-to-indication
+    requirement, and the value-NULL-on-Bad rule as stated; (b) **15b's consumer audit, which is the
+    steelman's falsifier and costs one grep**: enumerate every automated consumer of a status token in the
+    estate and record whether it branches on the value or merely logs it. If most only log, a third token
+    is decoration handled by nobody — which is worse than two tokens handled consistently — and the answer
+    is the age alarm instead; (c) the fatigue measurement: alarms fired per week over 30 days and the
+    fraction acted on. A low rate with a high action rate would show that alarm fatigue is not the binding
+    cost in this estate, which would convert the item to strongly CHALLENGED on a measured basis.
+  Monitoring cadence: Monthly, or immediately on (b), which requires no external retrieval.
+  Priority: Medium. The realised harm is already carved out to REVISE-457 (the age alarm) and does not
+    wait on this; what remains here is a vocabulary design question with a live objection against it.
+
+---

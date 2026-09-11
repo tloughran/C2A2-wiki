@@ -681,9 +681,61 @@ PRS-72:
   Confidence: Medium
   Evidence: Verified metadata only — episode existence, McGilchrist as guest (not as subject of commentary), host, series, publication date, and the canonical Poetry Foundation audio URL. **EVIDENCE GATE OPEN, AND THIS TRIPLET CLAIMS NOTHING McGILCHRIST SAID.** The audio was not heard; the page's "View Audio Transcript" control is a client-side accordion whose contents are absent from the fetched document, and the Channel McGilchrist syndication page is a bare stub. Both of the proposal's content candidates — that the episode works the metaphor-priority claim through actual poems (bearing on open question 2), and the "real word for sunshine" lexical claim (bearing on open question 12) — are **HELD**, not ingested: the proposing agent states outright that it does not know which word is meant, what the argument for it is, or whether McGilchrist is the one making the claim. This entry records reception and locatability, which the metadata establishes, and stops there. Re-open on retrieval of the audio or transcript.
 
-*Total PRS triplets: 72*
+PRS-73:
+  Problem: The hemispheric diagnosis of modernity is argued at a level — cognitive style, attention, metaphysics — that a rival tradition can decline to enter, so the argument has no purchase on anyone who has not already accepted the frame.
+  Resource: A signed first-person essay stating the case entirely in institutional and technological terms: attested thought-transcription devices, UK identity cards, implantable chips replacing stolen phones, biometric identification feeding social-credit-style inducements, behaviour-altering nanoparticles, platform bureaucracy as time-theft, and automation-driven unemployment as a route to depression rather than leisure.
+  Solution: A form of the metacrisis thesis that can be adjudicated without granting the hemispheric frame first — the diagnosis restated as claims about practices and devices, each of which is separately checkable.
+  Date Added: 2026-09-10
+  Source: Can you still be human?; PROP-2026-09-02-001
+  Confidence: High
+  Evidence: The essay's own framing of the argument's target — "the brutal, overt mind control possibilities" — is presented as the narrow sharp end of a larger and more covert change in human nature, with the covert half explicitly deferred to other writing. The exhibits are named individually and attributed to identifiable programmes and reports.
 
+PRS-74:
+  Problem: The program's claims about AI have been, to date, in-principle claims (what AI can never do), which are hard to falsify and easy to restate when circumstances change.
+  Resource: An explicit temporal commitment — implementation "within *two years*", attributed by McGilchrist to WEF rumour and hedged as such — attached to the specific claim about overt mind-control technology rather than to the general cultural thesis.
+  Solution: A dated, checkable prediction. The essay was published 2025-09-05, so the window closes 2027-09-05; the wiki can score it. This is a stronger falsifiability handle than anything at PRS-22 or the Ralston lectures, and it is one the author volunteered.
+  Date Added: 2026-09-10
+  Source: Can you still be human?; PROP-2026-09-02-001
+  Confidence: Medium
+  Evidence: The two-year figure is explicitly sourced to rumour and flagged by McGilchrist as such — so a miss is a miss for the *rumour*, not necessarily for the thesis. The wiki should record the hedge with the prediction, or the scoring will be unfair to him.
 
+PRS-75:
+  Problem: The program's positive prescription has generally been contemplative and personal (spaciousness, attention, the sacred), which leaves it open to the charge that it counsels retreat.
+  Resource: An explicit call to scepticism and pushback framed as a political act, with agency asserted as presently available and expected to narrow — and an explicit rejection of the "AI is here to stay" resignation that prompted the piece.
+  Solution: A political register for the tradition, distinct from the contemplative one, in which the recommended response to left-hemisphere encroachment is public refusal rather than private rebalancing.
+  Date Added: 2026-09-10
+  Source: Can you still be human?; PROP-2026-09-02-001
+  Confidence: Medium
+  Evidence: The essay names the prompting occasion (a conversation in which a friend expressed the fatalist sentiment) and treats fatalism as the thing to be argued against, not the technology alone.
+
+PRS-76:
+  Problem: *(Held. No triplet can be responsibly proposed from an event blurb.)* The open question this event is positioned to address is whether McGilchrist's in-principle AI limit (PRS-22 as superseded by the 2026-07 batch) survives a second pass with the same interviewer a year later, or whether the position has moved.
+  Resource: The scheduled event itself, plus the existing April 2026 Sayers conversation as the matched prior measurement.
+  Solution: *(Pending the recording.)* If both transcripts are obtained, this becomes a same-interviewer, same-format, twelve-month-apart pair — a controlled comparison this wiki does not currently have for any tradition.
+  Date Added: 2026-09-10
+  Source: UnHerd Live — Can AI rival the human soul? with Iain McGilchrist (in conversation with Freddie Sayers), UnHerd Club, London; PROP-2026-09-02-002
+  Confidence: Speculative
+  Evidence: None yet. The only text is a promotional blurb written by the publisher.
+
+PRS-77:
+  Problem: Does sustained inquiry into the self and consciousness destabilise the inquirer, and if so, what keeps a person in equilibrium while doing it?
+  Resource: McGilchrist's account of attention — that the mode of attention brought to a question partly constitutes what the question can return — applied to self-inquiry as a practice rather than as a doctrine.
+  Solution: Announced-only. The episode is presented as McGilchrist giving Syed practical counsel on maintaining equilibrium during such inquiry.
+  Date Added: 2026-09-10
+  Source: BBC Sounds 'Sideways' — 'Know It All', with Iain McGilchrist and Matthew Syed; PROP-2026-09-09-001
+  Confidence: Speculative
+  Evidence: channelmcgilchrist.com post "BBC Sounds 'Sideways' Podcast — 'Know It All' with Iain Mcgilchrist & Matthew Syed," published 2026-09-08T13:20:09Z, credited to "Iain McGilchrist, BBC Sounds and Matthew Syed." **The episode has not been listened to.** The equilibrium framing comes from a search-result description of the episode, not from the audio, and the Channel McGilchrist page carries no description of its own. Confidence is High only for *the appearance existing and being reachable*; the Problem/Solution above are hypotheses to be checked against the audio before any ingest.
+
+PRS-78:
+  Problem: If modern life systematically narrows attention, what has been excluded from awareness, and is the exclusion reversible at the level of an individual life?
+  Resource: Hemisphere theory as set out in *The Master and His Emissary* and *The Matter with Things*, applied to ordinary contemporary experience.
+  Solution: Announced-only. The title asserts that modern life has *forced* a category of things to be ignored, which implies both an inventory of what was dropped and, given the venue, some account of recovering it.
+  Date Added: 2026-09-10
+  Source: What Modern Life Forced Your Brain to Ignore — Dr Iain McGilchrist with 'Rewind Yourself'; PROP-2026-09-09-002
+  Confidence: Speculative
+  Evidence: channelmcgilchrist.com post published 2026-09-08T13:07:46Z, listing "Running Time: 01:09:16" and embedding https://www.youtube.com/embed/U87oh4ahzi4. **The video has not been watched and no transcript was retrieved.** The page carries a title and a runtime and nothing else. Confidence is High only for *the interview existing, being 69 minutes, and being freely reachable*; the Problem/Solution above are inferred from the title and must be checked against the recording before ingest.
+
+*Total PRS triplets: 78*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

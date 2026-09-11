@@ -2403,3 +2403,62 @@ OPEN-191:
     Original item: OPEN-191
     Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
     Current status: OPEN
+
+OPEN-192:
+  Date raised: 2026-09-10
+  Question: When a routed item is already answered by an ACTIVE premise, should it be excluded from
+    literature search — or searched precisely because that is the only occasion on which the premise
+    would be re-exposed to evidence? The 09-10 pipeline measured the pre-answered rate at 9 of 11 items
+    across two cycles and proposed a pre-route register grep to stop such items reaching search
+    (ASSUMPTION-1309). No mechanism currently exists for a premise to lose ACTIVE status; the status
+    lifecycle in `provenance_protocol.md` has terminal states but no re-entry.
+  Why it matters: the grep is a real efficiency gain and probably right. But adopting it without a
+    re-entry rule makes `validated_premises.md` monotonic by construction — 158 premises that can be
+    added to and never revised. Settled cheaply either way: count premises that have ever changed status
+    after minting. Related: PRESUMPTION-948.
+  Status: OPEN — requires Tom (a rule); the informing count is one grep
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-192
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-193:
+  Date raised: 2026-09-10
+  Question: At what age does an item logged as "needing a human" stop being pending and become declined?
+    The duplicate `*Total PRS triplets:*` anchor was logged on 2026-08-11 across five tradition registers.
+    On 2026-09-10 it misfired for the first time, landing four Hoffman triplets mid-file; the daily run
+    repaired `hoffman` in place and left `arkanihamed`, `stump`, `loughran`, `macintyre` on the stated
+    ground that renumbering live ids is a human decision (ASSUMPTION-1306). That decision is thirty days
+    old and unmade.
+  Why it matters: four live registers carry a defect that has now demonstrated it can corrupt an append,
+    and the holding pattern is itself the reason no agent may repair them. This is OPEN-190's question
+    ("at what age does a pending proposal stop being pending") applied to defects rather than proposals;
+    one threshold could answer both. Related: PRESUMPTION-951, PRESUMPTION-956.
+  Status: OPEN — requires Tom (a ruling on renumbering, and a general threshold)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-193
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-194:
+  Date raised: 2026-09-10
+  Question: Should a skipped hunt phase leave a negative record? Phase 2 was skipped on 09-10 by explicit
+    judgement — the queue had just reached zero and refilling it would have put new cards in front of 85
+    unread triplets (ASSUMPTION-1305). The judgement may well be right. What is absent is any artefact
+    distinguishing "surveyed, found nothing" from "not surveyed," which is the distinction the Thursday
+    specialist run took care to preserve on the same day (ASSUMPTION-1312).
+  Why it matters: the two states are indistinguishable in the archive, so a coverage gap created by a
+    deferral is invisible to every later run, including this register's. Cheap fix if wanted: the hunt
+    writes a one-line dated record on every run, including skips, with the reason. Related:
+    PRESUMPTION-950.
+  Status: OPEN — requires Tom (or a one-line convention change the daily run can adopt)
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-194
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN

@@ -1786,3 +1786,37 @@ Converted, not solved.
 
 Triplets: levin PRS-116, macintyre PRS-06, stump PRS-41. Source: Loughran–Claude session 2026-09-08
 (Potts paper-response run), `inbox/2026-09-08_levin_virtue-as-external-setpoint.md`.
+
+**CROSS-132 — Rohr × Wright: the same question from opposite ends, and the network has still not recorded whether they agree.** Both sides of this pairing asked for it independently in the same run, which is why it is being opened rather than left as a signal. Wright's *enlargement-not-supersession* (PRS-60..66, PROP-2026-09-06-001) is a claim about **who** is united: a corporate entity keeps its identity while its membership condition widens — the boundary moves, the people persists. Rohr's *state-versus-path* (PROP-2026-08-30-003) is a claim about **how** a perspective-limited agent moves toward that union: Christ names the state, Jesus names the path, and the giving-away is performed by the limited agent from inside the limitation rather than by erasing it.
+
+**Why it is a bridge and not a resonance.** The Summa 2026 central theme needs both halves and currently has neither in a form that can be attacked. If perspective-limitation individuates agents and loving unity is the telos, then an account in which the limitation is dissolved cannot reach the telos — there is no agent left to arrive. Wright supplies the ecclesial form of the constraint (enlarge the boundary, do not dissolve the people); Rohr supplies the interior form (the limited agent gives itself away without ceasing to be limited). Together they state the theme's anthropology twice, from historical exegesis and from contemplative practice, with no shared vocabulary and no shared method.
+
+**Where it is exposed.** The two ground the transformative moment differently — Wright in resurrection and new creation, Rohr in cross and descent (PROP-2026-09-08-031). That is not a difference of emphasis that can be smoothed; it is a disagreement about which event does the work, and a real bridge essay has to say whether the accounts are complementary or rivals. Second exposure: Rohr's universalising gloss on *en Christo* (PROP-2026-08-28-061) reads the Christ event as "an announcement of what is happening in all of us, too." Whether Wright's participatory-but-covenantal exegesis licenses that move is exactly the disagreement worth staging rather than smoothing, and the Wright register does not obviously permit it.
+
+Triplets: wright PRS-60, PRS-61 (and the state/path Rohr material at rohr PRS-71..73). Sources: PROP-2026-09-06-001, PROP-2026-08-30-003, PROP-2026-09-08-031, PROP-2026-08-28-061.
+
+**CROSS-133 — Rohr × Stump: divine solidarity in suffering, and faith as second-person knowing.** Two contacts, one axis, both flagged by the Rohr agent in the same week and both landing on Stump's principal subject matter.
+
+(a) *Solidarity.* Rohr's "God is always on the side of suffering wherever it is found" (PROP-2026-09-08-031) is *Wandering in Darkness* in homiletic register: the problem of suffering is answered by second-person knowledge of persons rather than by a defence. Rohr's pain/suffering split — the perturbation versus the resistance to it — gives the claim an operational edge Stump's account does not have. The hard case is shared: Rohr's formula has to hold for oppressors too, and Stump's account of the goodness of forgiveness has to reach the same place.
+
+(b) *Faith.* Rohr's faith-as-relation-to-a-person rather than assent-to-a-proposition (PROP-2026-09-06-004) is the strongest Rohr–Stump contact this month. **The correct Stump target is PRS-07.** The synthesis bridges file names PRS-05 for this and that is an error; it is recorded here rather than repointed, because repointing a live id from inside a daily run is how a wrong target becomes a confirmed one.
+
+**Standing caution, carried from the Rohr agent's own briefs:** do not anchor Rohr material on stump PRS-04. It is a documented low-range catch-all and would absorb these without discriminating. The virtue/vice/habit/grace tract (stump PRS-09, 22, 23, 24, 29) is the place to check.
+
+Triplets: rohr PRS-74..79 (this run), stump PRS-07 (existing). Sources: PROP-2026-09-08-031, PROP-2026-09-06-004.
+
+**CROSS-134 — Kastrup × Stump: an idealist theodicy built on a half-imported Aquinas.** Jamey Hecht, in dialogue with Kastrup (PROP-2026-09-09-003), defines substance *per Aquinas* and then applies it inside an idealist ontology to the problem of evil. This is the most direct Kastrup–Stump contact in the corpus, and the synthesis-bridge corpus is thinnest exactly here.
+
+**The bridge starts at the defect, not at the agreement.** The Thomistic move is partial: Hecht takes Aquinas' definition of substance and drops hylomorphism — which is precisely what does the work for Aquinas in explaining how a soul is the form of *this* body rather than an immaterial thing standing nearby. Stump's separated soul is therefore **not** the same claim as "an alter that has stopped extending into physicality," and an essay that opens by noting the two agree has already lost the thread.
+
+Secondary contacts on the same theodicy axis, both captured 2026-09-08: **Rohr** (undeserved suffering; the pain-versus-suffering distinction) and **Wright** (theodicy of a renewed rather than a discarded creation). See CROSS-132 and CROSS-133 — the three sit on one axis and this run is the first time all three have been in the vault in the same week.
+
+Triplets: kastrup PRS-80..82. Source: PROP-2026-09-09-003. Terminology exposure logged as FINDING-086.
+
+**CROSS-135 — Kastrup × Levin: a timestamped pair, and a measurement the study almost never gets.** Two Kastrup sources six days apart (PROP-2026-09-02-003, the third Levin dialogue; PROP-2026-09-02-004, a members' Q&A) put the same question — minds as patterns, intention substrate-independent across cells, organisms and AI — to the same person on either side of a live exchange with the rival tradition.
+
+**Why this is instrumentation and not just content.** The inter-tradition study wants to detect movement in a position under exposure to a rival, and normally has to infer it across years and venues. Here the interval is one week, the object is fixed, and both recordings exist. If Kastrup's members' answer differs from what he conceded in the dialogue, that is a measured displacement with a timestamp. **Method note, and it is the whole value of the pair:** the two wikis should code the shared dialogue *independently before comparison*, so the network gets an inter-rater agreement number out of it rather than one summary copied into two files.
+
+**Blocked, and this is the honest state.** The dialogue recording is paywalled and the platonic-space exchange is the part the public summary omits. The Kastrup triplets ingested this run rest on the summary, not on the recording. Logged as retrieval debt in FINDING-089.
+
+Triplets: kastrup PRS-70..79 (this run), levin PRS-117..123 (this run). Sources: PROP-2026-09-02-003, PROP-2026-09-02-004.

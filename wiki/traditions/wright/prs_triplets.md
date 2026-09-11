@@ -560,4 +560,67 @@ PRS-59:
   Confidence: Speculative
   Evidence: Description, verbatim: "the difficult ethical question of whether Christians can work in the defence industry, asking where personal conscience, national defence and responsibility for how our work is ultimately used should meet." **The three terms are named in the source; Wright's verdict is not, and no verdict should be attributed to him from this.** What is ingested here is the frame's structure, not a resolution. The episode's third thread - the location and publicity of Pilate's judgment seat, and whether the trial accounts could preserve a night proceeding - is not ingested: the question is verified and the answer is not, and unlike the frame above it has no extractable structure independent of Wright's conclusion.
 
-*Total PRS triplets: 59*
+PRS-60:
+  Problem: Popular Christian pneumatology splits into two options — the Spirit as interim comfort until Jesus returns, or the Spirit as the engine of extraordinary personal experience — and both quietly assume the Church's ultimate destination is elsewhere.
+  Resource: Reading the Spirit's function off the *goal* of new creation rather than off the believer's felt experience, grounded in Romans 8 (creation's groaning and the Spirit's role in its renewal), Acts 2 and Ephesians.
+  Solution: Both popular options are diagnosed as the same error under two disguises — an escapist eschatology — and are replaced by a single account in which the Spirit is the present operation of the future world.
+  Date Added: 2026-09-10
+  Source: Tom Wright on the Holy Spirit, spiritual gifts and new creation (Ask NT Wright Anything, bonus); PROP-2026-08-28-062
+  Confidence: Medium
+  Evidence: Episode premise as published: the episode "challenge[s] two common assumptions: that the Spirit is simply a consolation while Christians wait for Jesus to return, or primarily a source of extraordinary spiritual experiences and gifts," and instead "Tom explains how the Spirit fits into God's much bigger purpose of new creation."
+
+PRS-61:
+  Problem: If new creation is genuinely future, it is unclear what the Church is *for* in the meantime, which is what makes the consolation-prize reading attractive in the first place.
+  Resource: The Church as sign — a community whose corporate life is meant to be a present, visible instance of the world's intended end state, not merely a body that announces it verbally.
+  Solution: Gives the Church a public, inspectable vocation with a corresponding failure condition: a church that signifies nothing about the world's future has not merely underperformed but has misidentified what the Spirit is for. This also relocates "filled with the Spirit" from individual interiority to communal function.
+  Date Added: 2026-09-10
+  Source: Tom Wright on the Holy Spirit, spiritual gifts and new creation (Ask NT Wright Anything, bonus); PROP-2026-08-28-062
+  Confidence: Medium
+  Evidence: "The Church, filled with God's Spirit, is called to become a sign in the present of what God ultimately intends for the whole world."
+
+PRS-62:
+  Problem: The good/evil question about human nature presupposes that the primary predicate of a human is a moral valence; every answer inherits that presupposition.
+  Resource: Wright's claim that the primary biblical identity of humans is vocational: people are created for God's calling, and goodness and sin are secondary descriptions of how that calling is met or refused.
+  Solution: Replace the valence question with a teleological one. The relevant fact about an agent is what it is *for*; moral valence is derivative on the orientation toward or away from that end.
+  Date Added: 2026-09-10
+  Source: Are people basically 'good' or 'evil'? Who was the 'beloved' disciple? And is the Sermon on the Mount legalism?; PROP-2026-09-06-002
+  Confidence: Medium
+  Evidence: Episode description: "our primary identity is not simply 'good' or 'bad' but people created for God's vocation." PRS-CANDIDATE-B: Label: sermon-on-the-mount-as-kingdom-description
+
+PRS-63:
+  Problem: If the Church is a new people, the standing question is whether it replaces Israel (supersession) or is merely a subset of it; both options make "new" and "continuous" compete.
+  Resource: Wright's formula that the Messiah-people is Israel's story with its boundary opened to every nation: continuity of identity with a widened membership condition.
+  Solution: Newness is located in the boundary, not in the substance. The same corporate entity persists while its individuation condition changes, which dissolves the replacement-versus-subset dilemma.
+  Date Added: 2026-09-10
+  Source: Are Christians a 'third race'? Jews, Gentiles and the Church; PROP-2026-09-06-001
+  Confidence: Medium (would be High on hearing the audio)
+  Evidence: The quoted formula "not supersession, but enlargement" in the episode description, and the description's account of Paul's "radically new" people "rooted in Israel's story." PRS-CANDIDATE-B: Label: transcultural-humanity-as-ecclesial-claim
+
+PRS-64:
+  Problem: 2 Peter 3's fire imagery is read across large parts of Western Christianity as teaching the annihilation of the present creation, which underwrites an escape-plan soteriology and a corresponding indifference to the material world.
+  Resource: A rereading of the passage that the episode description signals Wright offers, framed as "the destruction or renewal of the world" rather than as a settled destruction.
+  Solution: Unknown. The description states the topic, not Wright's answer or its exegetical basis.
+  Date Added: 2026-09-10
+  Source: Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leave room for the \"gap theory\"?; PROP-2026-09-08-032
+  Confidence: Speculative
+  Evidence: Publisher's episode description only: "does 2 Peter really teach that the earth will be destroyed by fire?" and "whether the Christian hope is the destruction or renewal of the world." No claim of Wright's is quoted anywhere I retrieved.
+
+PRS-65:
+  Problem: The "gap theory" reading of Genesis 1:1-2 is one of several harmonisations offered to reconcile the text with deep time, and it is unclear how Wright's account of Genesis as vocation-and-temple narrative bears on such harmonisations.
+  Resource: Wright's response to the gap-theory question, per the description.
+  Solution: Unknown.
+  Date Added: 2026-09-10
+  Source: Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leave room for the \"gap theory\"?; PROP-2026-09-08-032
+  Confidence: Speculative
+  Evidence: Publisher's episode description only: "Does Genesis 1 leave room for the 'gap theory'?"
+
+PRS-66:
+  Problem: How a working theologian adjudicates between the internal traditions of his own communion — which Anglican tradition is "most faithful" — is a question about the criteria for tradition-internal judgement, not just about Anglicanism.
+  Resource: Wright's stated criteria, per the description's framing of "church tradition and biblical faithfulness."
+  Solution: Unknown.
+  Date Added: 2026-09-10
+  Source: Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leave room for the \"gap theory\"?; PROP-2026-09-08-032
+  Confidence: Speculative
+  Evidence: Publisher's episode description only.
+
+*Total PRS triplets: 66*

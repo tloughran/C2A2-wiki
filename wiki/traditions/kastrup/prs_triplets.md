@@ -634,4 +634,121 @@ PRS-69:
   Confidence: Speculative
   Evidence: Session page agenda, as quoted. Coded Speculative: the framing is the host's, the inference about what it costs Kastrup's argument is this agent's, and no exchange between the two participants is in evidence.
 
-*Total PRS triplets: 69*
+PRS-70:
+  Problem: Analytic idealism holds that a person is a dissociated alter of Mind at Large, but has lacked a principled account of what draws and holds the boundary of an alter — why there is one subject here and another there.
+  Resource: Integrated Information Theory's notion of a "complex" (a set of states bound tightly enough to be experienced as one thing), combined with the Markov blanket as the boundary condition individuating that complex from its surroundings.
+  Solution: Treat the alter not as a single complex but as a *collection* of complexes held together by a Markov blanket that "appears to us as our skin"; if IIT can derive that boundary in the same terms it derives the complexes within it, one theory would explain both ordinary intra-day dissociation and why one is a living body at all.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Speculative
+  Evidence: Kastrup, at 2:09:00 — "Could IIT explain life? (A Markov Blanket may be a case of Integrated Information Theory)"; and verbatim, "If we solve this, IIT explains not only your mentation; IIT explains life. Quite literally." He states this as a hope and an open question, not a result.
+
+PRS-71:
+  Problem: The incompleteness and imprecision of neural correlates of experience is standardly read as a research gap physicalism will eventually close, and is not treated as evidence bearing on the metaphysics.
+  Resource: The representation/cause distinction — under idealism a brain scan depicts a mental state rather than producing it, so the mapping is expected to be reliable without being exact.
+  Solution: Recast the persistent looseness of neural correlates (Kastrup's example: decades of frustration linking autism and other psychiatric conditions to brain anatomy or activity patterns) as a prediction *satisfied* by idealism and strained by physicalism, converting a standing objection into confirming evidence.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Medium
+  Evidence: Timestamps 0:14:10 "Idealism accommodates neural correlates better than physicalism" and 0:25:00 "Why does seeing red have complex neural correlates?"; quoted claim about "decades of frustration" in psychiatric neuroscience.
+
+PRS-72:
+  Problem: Where inquiry into meaning, healing and the psyche belongs, given a culture that treats the scientific method as the sole legitimate instrument.
+  Resource: The figure of the "wounded healer" — psychology as a discipline that is neither art, philosophy nor science but draws on all three, and whose empathic capacity no protocol captures.
+  Solution: Position science as one tool among several that *informs* philosophy rather than replacing it, and defend psychology's distinct methodological standing rather than assimilating it to a protocolised natural science.
+  Date Added: 2026-09-10
+  Source: The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT aiming at Markov Blankets; PROP-2026-08-28-020
+  Confidence: Medium
+  Evidence: Timestamps 0:37:00 "The scientific method vs meaning of life", 0:41:20 "Science just one of many tools", 0:48:30 "Is psychology a unique discipline?"
+
+PRS-73:
+  Problem: Analytic idealism's denial that the physical world is causally closed has rested on philosophical argument (the hard problem, the incoherence of emergence), which a physicalist can decline as question-begging. It has had no independent line of support.
+  Resource: Levin's why-regress on cicada periodicity — the 13- and 17-year cycles are explained by predator avoidance, that by primality, and primality by mathematics, at which point the explanation has left physics and cannot return — paired with Kastrup's observation that no complete physical model exists for anything above a small molecule.
+  Solution: Causal closure reclassified from finding to belief, jointly, by a working biologist and an analytic idealist arguing from different premises. Independent arrival is what gives this weight; it is not new *content* for the program so much as a second, non-philosophical route to a claim the program already holds.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Medium
+  Evidence: The regress and Kastrup's small-molecule point are both in the publisher's write-up. **The regress is contestable and should be recorded as contested** — a physicalist can answer that mathematical explanation is not efficient causation, so nothing has "left physics" in the causal sense. That objection is not addressed in the summary and may or may not be addressed in the recording. Do not ingest this as settled.
+
+PRS-74:
+  Problem: If the know-how that builds a body is not in DNA and not in a brain, analytic idealism owes an account of where it is that does not simply relocate the mystery.
+  Resource: Levin's answer — the same place the truths of mathematics live; nobody invented the primes and no experiment can revise them; cells tap patterns of that kind, as does anything else that solves problems. The session explicitly puts the status of that platonic space (real realm vs. convenient fiction) on the table with Kastrup.
+  Solution: A candidate identification of Levin's platonic pattern-space with Kastrup's Mind-at-Large — which, if Kastrup accepts it, commits him to structure in Mind-at-Large that is *not* itself dissociated, and if he refuses it, forces him to say what the difference is.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: The summary lists the platonic-space question as discussed but does not report Kastrup's answer. **This is the single highest-value thing in the session for this wiki and it is exactly what the summary withholds.** Flag for transcript retrieval.
+
+PRS-75:
+  Problem: PRS-54 settled, within the program, that archetypal patterns are templates of existence and not causes. That settlement has not been stress-tested against a case where an archetype would have to do apparent causal work.
+  Resource: Kastrup's suggestion in this session that ageing may not be a disease to cure but an archetype written into nature itself — offered against Levin's finding that a modelled organism aged with no wear, no damage and no death programme, and lived longer when given a new challenge.
+  Solution: A test case for PRS-54. If ageing is an archetype and the modelled cells nonetheless aged for want of a goal, either the archetype is constraining form (consistent with PRS-54) or it is doing efficient-causal work (inconsistent). The case is sharp because Levin supplies a mechanism-free instance.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: Kastrup's remark is a single line in the write-up, offered as a "take" rather than a developed position. Do not treat as doctrine.
+
+PRS-76:
+  Problem: Kastrup's demarcation challenge (PRS-46) rules out a datacentre as a bearer of experience because there is no dissociated boundary. It does not say what *does* individuate a mind, and the AI question stays negative.
+  Resource: The session's listed treatment of minds without bodies — Jung's semi-autonomous complexes and tulpas — as candidate mental units lacking an organism.
+  Solution: A route to a positive individuation criterion. If a semi-autonomous complex counts as a mind-like unit without a body, then the body is not what makes an alter, and the criterion must be stated in purely mental terms — which is what the AI question needs.
+  Date Added: 2026-09-10
+  Source: Science fiction, eat your heart out: Michael Levin redefining the rules of life — recorded dialogue with Bernardo Kastrup; PROP-2026-09-02-003
+  Confidence: Speculative
+  Evidence: Listed only in the "we also discussed" line. No content reported.
+
+PRS-77:
+  Problem: If space and time arise through dissociation, dissociation cannot itself be a temporal event — so the standard framing ("Mind-at-Large dissociated, and then there were alters") is incoherent, and analytic idealism owes a non-temporal account of the origin of the dissociative boundary.
+  Resource: The regress as posed by the membership and put to Kastrup as the opening question of the 2026-09-01 session.
+  Solution: *(Unknown — recording not published.)* The candidate shapes are: dissociation as a logically rather than temporally prior structure; or a denial that dissociation "begins" at all, with the boundary as a standing feature.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only. No answer available. **This is a genuinely new open question for this wiki regardless of how he answers it** — it should be added to the Active Research Questions list on the strength of being asked.
+
+PRS-78:
+  Problem: Kastrup's vocabulary — "mind", "alter", "agency", "awareness" — may not distinguish a system that *acts* from a system that *experiences*. Without that distinction the AI demarcation challenge (PRS-46) cannot be stated precisely, because a datacentre plainly acts.
+  Resource: The session's explicit framing of the terminological question, raised from inside the tradition by readers rather than by critics.
+  Solution: *(Pending.)* If Kastrup separates acting from experiencing in reply, the demarcation challenge gains the positive criterion it currently lacks, and open question (16) — whether a dissociative boundary *requires* a Markov blanket without *being* one — becomes askable in his own terms.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only.
+
+PRS-79:
+  Problem: Kastrup holds that suffering arises only with dissociation. Schopenhauer's primordial will — an acknowledged influence on the program — is characterised by terror, grief and striving *prior to* any individuation. The two cannot both be right as stated.
+  Resource: The tension put to him directly, plus his stated conviction that Mind-at-Large is not meta-conscious (which is the move that would relieve the tension, since unfelt striving is not suffering).
+  Solution: *(Pending.)* Likely shape: suffering requires a subject that can take its own state as an object, so a non-meta-conscious Mind-at-Large can strive without suffering. If so, meta-consciousness rather than dissociation becomes the load-bearing concept, and PRS-52's "the infinite needs finite minds for knowing manifestation" is doing more work than previously recorded.
+  Date Added: 2026-09-10
+  Source: Mind at Large — does it have agency, suffering and self-awareness? (Q&A with Bernardo Kastrup); PROP-2026-09-02-004
+  Confidence: Speculative
+  Evidence: Question text only. The reading offered in "Solution" is this agent's inference from PRS-52 and PRS-55, not Kastrup's statement.
+
+PRS-80:
+  Problem: Can belief in God and in a surviving soul be held without abandoning analytic idealism's single axiom — that mental states are the only ontological primitive?
+  Resource: Hecht's reconstruction of the postmortem soul as a dissociated alter that has ceased to extend into physicality as a body; and his use of the Thomistic definition of substance (an entity existing by itself, apart from its accidents) to license the phrase "immaterial substance" without importing substance dualism.
+  Solution: Proposed, not adjudicated: theism and BKAI are compatible-but-non-entailing, and the survival literatures (NDE, reincarnation, mediumship, apparition) *suggest but do not require* that alters remain individuated after bodily death.
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Medium
+  Evidence: Verbatim from the announcement — "'Substance,' per Thomas Aquinas, is any entity that exists by itself, apart from its 'accidents,' its secondary qualia," and "A postmortem soul that is physically undetectable under normal conditions, and localized … is a psychically dissociated alter." Medium, not High: these are **Hecht's** claims, published on Kastrup's community site as the case Kastrup will be asked to answer. Kastrup's own response does not exist yet.
+
+PRS-81:
+  Problem: Under analytic idealism, does the phenomenal world have an origin at all — a first event within eternity — or is it coeternal with universal consciousness?
+  Resource: The contrast between a metaconscious creating Agent (theism) and a non-metaconscious, non-agentic universal consciousness (BKAI); Heraclitus/Leibniz on time as the flow of events against Parmenides/Schopenhauer on eventless eternity.
+  Solution: Framed as a genuine fork rather than a settled question: *with* a creator, time begins from within eternity; *without* one, either the physical universe is coeternal with UC or UC's worldmaking likewise has a first event.
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Medium
+  Evidence: The Cosmogony section, which reports Kastrup's own image for eternity — "Bernardo calls it a crystal" — and the totality argument that eternity has no events in the same sense that the universe has no location.
+
+PRS-82:
+  Problem: Does analytic idealism owe an account of undeserved suffering, and can it give one without a God to hold responsible?
+  Resource: Leibniz's 1710 split of theodicy into natural evil (disaster, predation) and human evil; the theodicy chapter of *Into Theism*, published free at https://www.intotheism.com/sample-chapter-into-theism.pdf
+  Solution: The claim that "any theism worth espousing will require an engagement with it" — with the sharper implication left standing that a *non*-theist idealism may owe the same engagement, since undeserved suffering "can be anywhere, and it is always somewhere."
+  Date Added: 2026-09-10
+  Source: God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026); PROP-2026-09-09-003
+  Confidence: Speculative
+  Evidence: The Theodicy section. Speculative because the extension of the demand from theism to idealism is an inference this agent is drawing, not a sentence in the source.
+
+*Total PRS triplets: 82*

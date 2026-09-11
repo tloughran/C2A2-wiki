@@ -80,6 +80,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-08-003",
+  "tradition": "hoffman",
+  "source_date": "2025",
+  "title": "Consciousness And Its Spacetime Headset",
+  "file": "inbox/proposals/approved/2026-09-08_hoffman_consciousness-and-its-spacetime-headset.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-04-27-002",
   "tradition": "fredrickson",
   "source_date": "2025",
@@ -256,6 +264,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-02-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2025-09-05",
+  "title": "Can you still be human?",
+  "file": "inbox/proposals/approved/2026-09-02_mcgilchrist_can-you-still-be-human.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-08-001",
   "tradition": "fredrickson",
   "source_date": "2025-09-17",
@@ -373,6 +389,14 @@
   "source_date": "2025-12-10",
   "title": "Why Loving Moments With Strangers Carry Lasting Benefits",
   "file": "inbox/proposals/approved/2026-04-16_fredrickson_strangers-prosocial-cooperation.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-31-003",
+  "tradition": "friston",
+  "source_date": "2025-12-17",
+  "title": "Distributionally robust free energy principle for decision-making",
+  "file": "inbox/proposals/approved/2026-08-31_friston_dr-free-distributionally-robust-fep.md",
   "processed": false
  },
  {
@@ -1224,6 +1248,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-07-002",
+  "tradition": "friston",
+  "source_date": "2026-05",
+  "title": "The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomena",
+  "file": "inbox/proposals/approved/2026-09-07_friston_complex-brain-hypothesis-mpe.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-11-001",
   "tradition": "hawkins",
   "source_date": "2026-05",
@@ -1608,6 +1640,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-08-004",
+  "tradition": "hoffman",
+  "source_date": "2026-06",
+  "title": "Traces of the Other \u2014 Hoffman and Gallimore on stage at The Lighthouse Campus",
+  "file": "inbox/proposals/approved/2026-09-08_hoffman_traces-of-the-other-lighthouse-stage.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-23-002",
   "tradition": "hawkins",
   "source_date": "2026-06",
@@ -1661,6 +1701,14 @@
   "source_date": "2026-06-02",
   "title": "A Science of Reality: Observers, Interfaces, and Traces (The Trace Institute Whitepaper)",
   "file": "inbox/proposals/approved/2026-07-21_hoffman_trace-institute-whitepaper.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-04-001",
+  "tradition": "carroll",
+  "source_date": "2026-06-02",
+  "title": "The Biggest Ideas in the Universe 3: Complexity and Emergence",
+  "file": "inbox/proposals/approved/2026-09-04_carroll_biggest-ideas-vol3-complexity-emergence.md",
   "processed": false
  },
  {
@@ -2144,6 +2192,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-28-040",
+  "tradition": "wolfram",
+  "source_date": "2026-07-07",
+  "title": "Does time come from the entire universe running computations?",
+  "file": "inbox/proposals/approved/2026-08-28_wolfram_newscientist-time-computation-free-will.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-12-010",
   "tradition": "levin",
   "source_date": "2026-07-08",
@@ -2392,6 +2448,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-28-001",
+  "tradition": "friston",
+  "source_date": "2026-07-27",
+  "title": "Cross-Frequency Coupling as a Neural Substrate for Prediction Error Evaluation: A Laminar ",
+  "file": "inbox/proposals/approved/2026-08-28_friston_cross-frequency-coupling-comparator.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-05-002",
   "tradition": "mcgilchrist",
   "source_date": "2026-07-28",
@@ -2464,6 +2528,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-08-002",
+  "tradition": "hawkins",
+  "source_date": "2026-07-30",
+  "title": "2026/07 - Open-Ended Discussion on Open Theory Questions",
+  "file": "inbox/proposals/approved/2026-09-08_hawkins_open-theory-questions-taxonomy.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-02-001",
   "tradition": "rohr",
   "source_date": "2026-08-01",
@@ -2496,6 +2568,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-01-003",
+  "tradition": "hawkins",
+  "source_date": "2026-08-04",
+  "title": "2026/07 - Robotic Object Recognition for Thousand Brains Systems",
+  "file": "inbox/proposals/approved/2026-09-01_hawkins_monty-robotic-hardware-thesis.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-25-011",
   "tradition": "levin",
   "source_date": "2026-08-05",
@@ -2509,6 +2589,14 @@
   "source_date": "2026-08-06",
   "title": "What are angels really like? Tom Wright on the Bible's surprising picture (Ask NT Wright A",
   "file": "inbox/proposals/approved/2026-08-12_wright_angels-narrowed-modern-imagination.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-08-001",
+  "tradition": "hawkins",
+  "source_date": "2026-08-06",
+  "title": "07/2026 - FENS Conference Recap",
+  "file": "inbox/proposals/approved/2026-09-08_hawkins_fens-2026-conference-recap.md",
   "processed": false
  },
  {
@@ -2680,11 +2768,27 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-01-002",
+  "tradition": "hawkins",
+  "source_date": "2026-08-19",
+  "title": "07/2026 - Deep Dive into Grid Cell Literature",
+  "file": "inbox/proposals/approved/2026-09-01_hawkins_grid-cell-literature-deep-dive.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-25-001",
   "tradition": "hawkins",
   "source_date": "2026-08-20",
   "title": "The Thousand Brains Theory 2.0: An Extension for the Long-Range Connections of the Neocort",
   "file": "inbox/proposals/approved/2026-08-25_hawkins_tbt-2-0-arxiv-v2.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-07-001",
+  "tradition": "levin",
+  "source_date": "2026-08-22",
+  "title": "Conversation #1 with Steven Strogatz",
+  "file": "inbox/proposals/approved/2026-09-07_levin_strogatz-explanation-platonism.md",
   "processed": false
  },
  {
@@ -2728,6 +2832,30 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-28-020",
+  "tradition": "kastrup",
+  "source_date": "2026-08-25",
+  "title": "The scientist & the wounded healer: On Western Enlightenment, neural correlates and IIT ai",
+  "file": "inbox/proposals/approved/2026-08-28_kastrup_scientist-wounded-healer-iit-markov-blanket.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-02-003",
+  "tradition": "kastrup",
+  "source_date": "2026-08-26",
+  "title": "Science fiction, eat your heart out: Michael Levin redefining the rules of life \u2014 recorded",
+  "file": "inbox/proposals/approved/2026-09-02_kastrup_levin-redefining-rules-of-life.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-31-001",
+  "tradition": "levin",
+  "source_date": "2026-08-26",
+  "title": "Q&A from the internet and recent presentations 5",
+  "file": "inbox/proposals/approved/2026-08-31_levin_qa-internet-recent-presentations-5.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-26-002",
   "tradition": "mcgilchrist",
   "source_date": "2026-08-26",
@@ -2736,11 +2864,171 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-08-30-001",
+  "tradition": "rohr",
+  "source_date": "2026-08-26",
+  "title": "The True Seed Within",
+  "file": "inbox/proposals/approved/2026-08-30_rohr_true-seed-within-soulmaking-as-integration.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-26-004",
   "tradition": "kastrup",
   "source_date": "2026-08-26",
   "title": "Michael Levin: Mind is Everywhere \u2014 dialogue on the frontier of biology, computer science ",
   "file": "inbox/proposals/approved/2026-08-26_kastrup_levin-mind-is-everywhere-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-31-002",
+  "tradition": "friston",
+  "source_date": "2026-08-26",
+  "title": "Life-inspired interoceptive artificial intelligence for autonomous and adaptive agents",
+  "file": "inbox/proposals/approved/2026-08-31_friston_interoceptive-ai-autonomous-adaptive-agents.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-01-001",
+  "tradition": "hawkins",
+  "source_date": "2026-08-26",
+  "title": "07/2026 - ARC-AGI 3 Review and What Monty Would Need to Solve it",
+  "file": "inbox/proposals/approved/2026-09-01_hawkins_arc-agi-3-monty-gap.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-28-060",
+  "tradition": "rohr",
+  "source_date": "2026-08-27",
+  "title": "The Glory of God in Us",
+  "file": "inbox/proposals/approved/2026-08-28_rohr_glory-of-god-point-of-nothingness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-28-062",
+  "tradition": "wright",
+  "source_date": "2026-08-27",
+  "title": "Tom Wright on the Holy Spirit, spiritual gifts and new creation (Ask NT Wright Anything, b",
+  "file": "inbox/proposals/approved/2026-08-28_wright_ask-ntw-aug27-spirit-as-sign-new-creation.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-28-061",
+  "tradition": "rohr",
+  "source_date": "2026-08-28",
+  "title": "Realigned with the True Self",
+  "file": "inbox/proposals/approved/2026-08-28_rohr_realigned-true-self-sin-as-separateness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-30-002",
+  "tradition": "rohr",
+  "source_date": "2026-08-29",
+  "title": "True Self and False Self: Weekly Summary",
+  "file": "inbox/proposals/approved/2026-08-30_rohr_true-false-self-weekly-summary-persona.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-08-30-003",
+  "tradition": "rohr",
+  "source_date": "2026-08-30",
+  "title": "Following in Jesus's Footsteps",
+  "file": "inbox/proposals/approved/2026-08-30_rohr_descending-religion-jesus-christ-distinction.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-08-031",
+  "tradition": "rohr",
+  "source_date": "2026-08-31",
+  "title": "Standing in Solidarity",
+  "file": "inbox/proposals/approved/2026-09-08_rohr_standing-in-solidarity-pain-vs-suffering.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-06-002",
+  "tradition": "wright",
+  "source_date": "2026-08-31",
+  "title": "Are people basically 'good' or 'evil'? Who was the 'beloved' disciple? And is the Sermon o",
+  "file": "inbox/proposals/approved/2026-09-06_wright_human-nature-as-vocation-not-good-or-evil.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-02-005",
+  "tradition": "carroll",
+  "source_date": "2026-08-31",
+  "title": "Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology",
+  "file": "inbox/proposals/approved/2026-09-02_carroll_mindscape-366-al-khalili-time.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-02-004",
+  "tradition": "kastrup",
+  "source_date": "2026-09-01",
+  "title": "Mind at Large \u2014 does it have agency, suffering and self-awareness? (Q&A with Bernardo Kast",
+  "file": "inbox/proposals/approved/2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-06-003",
+  "tradition": "rohr",
+  "source_date": "2026-09-03",
+  "title": "Full of Suffering, Full of Love",
+  "file": "inbox/proposals/approved/2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-06-001",
+  "tradition": "wright",
+  "source_date": "2026-09-03",
+  "title": "Are Christians a 'third race'? Jews, Gentiles and the Church",
+  "file": "inbox/proposals/approved/2026-09-06_wright_third-race-not-supersession-but-enlargement.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-06-004",
+  "tradition": "rohr",
+  "source_date": "2026-09-06",
+  "title": "The Dance of Faith and Doubt",
+  "file": "inbox/proposals/approved/2026-09-06_rohr_faith-and-doubt-correlative.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-08-032",
+  "tradition": "wright",
+  "source_date": "2026-09-07",
+  "title": "Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leav",
+  "file": "inbox/proposals/approved/2026-09-08_wright_ask-ntw-sep07-earth-burned-or-renewed.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-09-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-09-08",
+  "title": "BBC Sounds 'Sideways' \u2014 'Know It All', with Iain McGilchrist and Matthew Syed",
+  "file": "inbox/proposals/approved/2026-09-09_mcgilchrist_bbc-sideways-know-it-all.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-09-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-09-08",
+  "title": "What Modern Life Forced Your Brain to Ignore \u2014 Dr Iain McGilchrist with 'Rewind Yourself'",
+  "file": "inbox/proposals/approved/2026-09-09_mcgilchrist_rewind-yourself-what-modern-life-forced-brain-to-ignore.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-09-003",
+  "tradition": "kastrup",
+  "source_date": "2026-09-15",
+  "title": "God, soul & the problem of evil \u2014 dialogue with guest Jamey Hecht (With Reality in Mind, 1",
+  "file": "inbox/proposals/approved/2026-09-09_kastrup_god-soul-problem-of-evil-hecht.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-02-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-09-24",
+  "title": "UnHerd Live \u2014 Can AI rival the human soul? with Iain McGilchrist (in conversation with Fre",
+  "file": "inbox/proposals/approved/2026-09-02_mcgilchrist_unherd-live-can-ai-rival-human-soul.md",
   "processed": false
  }
 ]

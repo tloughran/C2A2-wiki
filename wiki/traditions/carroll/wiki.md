@@ -173,3 +173,12 @@ Processed 3 source file(s); minted PRS-68 - PRS-78.
 | `2026-08-12_carroll_mindscape-363-sripada-cognitive-cousins.md` | PROP-2026-08-12-030 | PRS-68 - PRS-72 | Five triplets, four at High. PRS-72 is the one to watch: it records Carroll's own repositioning, having previously used the strawberry-R anomaly publicly to argue LLMs are not thinking as humans do. A tradition-holder revising a stated position on the record is rarer and more informative than a new claim. |
 | `2026-08-23_carroll_mindscape-364-firestein-ignorance-failure.md` | PROP-2026-08-23-001 | PRS-73 - PRS-75 | Ignorance-as-driver, with the anti-relativism guard (PRS-74) ingested alongside it rather than after it — the guard is what keeps the position from collapsing, and a wiki that carries the thesis without it misrepresents the source. |
 | `2026-08-25_carroll_mindscape-365-cardoso-black-holes-special.md` | PROP-2026-08-25-030 | PRS-76 - PRS-78 | Horizon-detection as an observational problem (High); the quantum-gravity falsifiability gap and the data-discipline worry at Medium, both being Carroll's assessments of a field rather than results. |
+
+### Ingest 2026-09-10
+
+7 triplets added from 2 approved proposals (decision email 2026-09-09): PRS-79, PRS-80, PRS-81, PRS-82, PRS-83, PRS-84, PRS-85.
+
+- `PROP-2026-09-02-005` — Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology (podcast, https://preposterousuniverse.com/podcast/2026/08/31/366-jim-al-khalili-on-time-quantum-biology-and-cosmology/) → PRS-79, PRS-80, PRS-81, PRS-82
+- `PROP-2026-09-04-001` — The Biggest Ideas in the Universe 3: Complexity and Emergence (book, https://www.booktopia.com.au/the-biggest-ideas-in-the-universe-3-sean-carroll/book/9780861549177.html) → PRS-83, PRS-84, PRS-85
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

@@ -137,3 +137,14 @@ Per the sewing agent's call on PROP-2026-08-16-001, recorded here as instructed:
 - **Rohr x PRS-54 - the live one, and the one most at risk of being read as resolved.** PRS-54 ("love as the ultimate form of knowledge") sits one step from Rohr's Week 30 hermeneutic of effects, and must not be read as conceding it. Wright's claim is that investment is a condition of *access* to an object that retains its independent power to refute; Rohr's is that a reading's effects on the community holding it are what *adjudicate* between rival readings. The whole difference is whether the reader's posture is a condition of knowing or a criterion of truth. Wright's second-temple constraint (PRS-01, PRS-19) is unrevised by this source. The tension logged 2026-08-09 stands unchanged; this batch sharpens it rather than settling it. See Questions 8 and 9.
 
 **Not recorded as convergences, per the sewing agent.** "Heaven as God's space" (PRS-50) invites a Hoffman interface reading or a Kastrup dissociation reading. Nothing in the source engages consciousness studies. That reading is *available*, not *made*, and belongs to whichever agent makes it - not to Wright.
+
+### Ingest 2026-09-10
+
+7 triplets added from 4 approved proposals (decision email 2026-09-09): PRS-60, PRS-61, PRS-62, PRS-63, PRS-64, PRS-65, PRS-66.
+
+- `PROP-2026-08-28-062` — Tom Wright on the Holy Spirit, spiritual gifts and new creation (Ask NT Wright Anything, bonus) (podcast, https://podcasts.apple.com/us/podcast/tom-wright-on-the-holy-spirit-spiritual-gifts-and/id1441656192?i=1000786264907) → PRS-60, PRS-61
+- `PROP-2026-09-06-002` — Are people basically 'good' or 'evil'? Who was the 'beloved' disciple? And is the Sermon on the Mount legalism? (podcast, https://podcasts.apple.com/us/podcast/are-people-basically-good-or-evil-who-was-the-beloved/id1441656192?i=1000787142149) → PRS-62
+- `PROP-2026-09-06-001` — Are Christians a 'third race'? Jews, Gentiles and the Church (podcast, https://podcasts.apple.com/us/podcast/are-christians-a-third-race-jews-gentiles-and-the-church/id1441656192?i=1000787806817) → PRS-63
+- `PROP-2026-09-08-032` — Will God Burn up the Earth? Which Anglican Church is right for me, and does Genesis 1 leave room for the \"gap theory\"? (podcast, https://www.premierunbelievable.com/shows/ask-nt-wright-anything) → PRS-64, PRS-65, PRS-66
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

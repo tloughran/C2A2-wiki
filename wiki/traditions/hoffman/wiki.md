@@ -172,3 +172,12 @@ Processed 1 source file(s); minted PRS-40.
 | Source file | Proposal | PRS range | Note |
 |---|---|---|---|
 | `2026-08-26_hoffman_four-thinkers-ufo-consciousness-panel.md` | PROP-2026-08-26-006 | PRS-40 | Ingested at Medium with the retrieval caveat carried in-line: the full transcript was not retrieved, the format is ambiguous (possibly a curated multi-guest special assembled from separately recorded segments rather than a live four-way conversation), and the reported release date differs by source. The interface-theory framing is reliable; quoted specifics are not. The substance — reframing an anomaly as a rendering problem rather than a physics problem — is a clean application of an existing commitment to a new domain, not a new commitment. |
+
+### Ingest 2026-09-10
+
+4 triplets added from 2 approved proposals (decision email 2026-09-09): PRS-41, PRS-42, PRS-43, PRS-44.
+
+- `PROP-2026-09-08-003` — Consciousness And Its Spacetime Headset (blog, https://traceinstitute.org/publications/) → PRS-41, PRS-42
+- `PROP-2026-09-08-004` — Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus (talk, https://traceinstitute.org/events/traces-of-the-other) → PRS-43, PRS-44
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

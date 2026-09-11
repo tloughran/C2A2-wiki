@@ -194,3 +194,12 @@ Processed 8 source file(s); minted PRS-96 - PRS-115.
 | `2026-08-25_levin_flim-long-distance-bioelectric-patterns.md` | PROP-2026-08-25-011 | PRS-108 - PRS-110 | A quantitative in-vivo voltage readout is the instrument this program has most conspicuously lacked; PRS-109 (voltage carries its own information, not merely calcium's) is the load-bearing one, because the whole bioelectric-code claim depends on it. |
 | `2026-08-25_levin_planarian-habituation-transcriptional-profiling.md` | PROP-2026-08-25-012 | PRS-111 - PRS-113 | All three at Medium. Single-animal rather than pooled sequencing is what makes the convergence question (one solution or several?) askable at all. |
 | `2026-08-25_levin_trained-planaria-memory-through-regeneration.md` | PROP-2026-08-25-010 | PRS-114, PRS-115 | Historically reported, never on a reliable protocol. PRS-115 (a model organism for asking whether memory can be recovered from outside the brain) at Speculative — it is an implication the authors draw, not a result. |
+
+### Ingest 2026-09-10
+
+7 triplets added from 2 approved proposals (decision email 2026-09-09): PRS-117, PRS-118, PRS-119, PRS-120, PRS-121, PRS-122, PRS-123.
+
+- `PROP-2026-08-31-001` — Q&A from the internet and recent presentations 5 (blog, https://thoughtforms.life/qa-from-the-internet-and-recent-presentations-5/) → PRS-117, PRS-118, PRS-119, PRS-120
+- `PROP-2026-09-07-001` — Conversation #1 with Steven Strogatz (podcast, https://thoughtforms-life.aipodcast.ing/conversation-1-with-steven-strogatz) → PRS-121, PRS-122, PRS-123
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

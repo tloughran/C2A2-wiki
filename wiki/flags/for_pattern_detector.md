@@ -659,3 +659,52 @@ of these are about that axis and they do not agree with how it is currently file
   give the ledger a third verdict for them.
 
 [EVALUATED: 2026-09-09 - FINDING-083..085; see pattern_detector_findings.md]
+
+## Forwarded 2026-09-10 — 36-proposal ingest batch (decision email 2026-09-09)
+
+All 36 approved cards carried a `## Cross-Tradition Signals` section; the full harvest is in the cards
+themselves under `inbox/proposals/approved/`. Forwarded here are the five that make a claim the network
+has not already recorded, plus the two that are about the pipeline rather than about the traditions.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Substance" is behaving as a homonym across traditions.** In
+  PROP-2026-09-09-003, Aquinas' *substantia* and the "immaterial substance" of survival literature slide
+  into one another inside a single paragraph of the announcement text. The Kastrup agent flagged it itself
+  and named it as ISME methods-section material rather than a correction to make silently.
+
+- [TERMINOLOGY, LOAD-BEARING] **"Markov" is the same trap, and the Carroll agent caught it mid-signal.**
+  Al-Khalili's non-Markovianity (PROP-2026-09-02-005) is a technical term about *bath memory* in open
+  quantum systems. Friston's Markov blanket is a statistical-independence boundary. The shape match — a
+  system tuning its environment to preserve an internal state — is real and worth recording; the word is
+  not shared. The agent recorded it explicitly as "a shape match, not a claim" and named FLAG-020 as the
+  precedent.
+
+- [MEASUREMENT OPPORTUNITY] **Two Kastrup sources six days apart bracket a live exchange with Levin**
+  (PROP-2026-09-02-003, -004). Same question, fixed object, one-week interval, both recordings extant. This
+  is the displacement measurement the inter-tradition study is built to detect and normally cannot observe
+  with a timestamp. See CROSS-135 for the independent-coding method note.
+
+- [DISAGREEMENT, NOT BRIDGE] **Levin dissolves the hemisphere question** ("why stop at hemispheres — why
+  not the stuff inside each hemisphere?", PROP-2026-08-31-001). That is a direct challenge to the asymmetry
+  McGilchrist's whole account rests on. Filed as disagreement; a sweep that records it as a bridge would be
+  recording the opposite of what the source says.
+
+- [ARCHITECTURE] **A tradition-holder independently asked for the thing this project builds.** Carroll, on
+  physicists not knowing what philosophers of physics or statisticians are saying: "I think we need to
+  actually talk to each other and there should be more formal structures to allow that to happen"
+  (PROP-2026-09-02-005). It is an aside, not an argument, and is recorded as one — but it is unprompted
+  external corroboration of the C2A2 premise and the vault has almost none.
+
+- [PIPELINE] **Four of the 36 approvals approved a pointer, not a reading.** PROP-2026-09-08-003 was
+  submitted on an institutional listing with no source text and says so ("the approval is approving a
+  pointer, not a reading"); PROP-2026-09-02-003's decisive passage is paywalled and the agent recommended
+  retrieval *before* ingest; PROP-2026-09-02-002 asked the orchestrator to queue a retrieval check after
+  2026-09-24 rather than treat the card as ingestible; PROP-2026-09-08-004 carries a self-declared
+  duplication warning against PROP-2026-06-23-001 and PROP-2026-08-04-002. All four were approved as-is and
+  ingested this run.
+
+- [PIPELINE, AUTHORSHIP] **Two Hawkins-tradition cards are not Hawkins.** PROP-2026-09-08-001 is a TBP team
+  meeting led by Tristan Slominski; PROP-2026-09-08-002 is led by Viviane Clay. Both agents flagged the
+  authorship themselves and asked that a reviewer either reject on that ground or fix the standing rule, so
+  it stops being re-litigated every run. Approval-as-is has now settled it by default, three times.
+
+[EVALUATED: 2026-09-10 - FINDING-086..090; see pattern_detector_findings.md]

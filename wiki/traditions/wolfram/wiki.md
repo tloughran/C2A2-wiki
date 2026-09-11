@@ -166,3 +166,11 @@ Processed 2 source file(s); minted PRS-55 - PRS-58.
 |---|---|---|---|
 | `2026-08-15_wolfram_avocational-science-ruliology-onramp.md` | PROP-2026-08-15-001 | PRS-55 - PRS-58 | Three at High. The credential-versus-contribution filter (PRS-56) is directly load-bearing for C2A2's own premise about who can hold mature membership in a tradition. |
 | `2026-08-23_wolfram_ralston-mcgilchrist-mechanism-debate-recording.md` | PROP-2026-08-23-002 | **+0** | **Locator, not content — no triplet minted, deliberately.** Candidate-01's own Evidence line says the confidence "attaches to *the existence and identity of the record*, not to any claim about its contents"; the YouTube page returned empty and no transcript was obtained. PRS-53 and PRS-54 stay at Medium and Speculative and must not be cited for anything Wolfram said until someone watches https://www.youtube.com/watch?v=N0STggIKDPA. **Candidate-02 (host-frame divergence: Wolfram's index says "debate," Ralston's copy says "less a debate than an encounter") was also declined as a triplet and filed to `master/cross_program_index.md` instead** — the same card's complaint is that PRS-54 is the agent's reading rather than Wolfram's view, and minting a second agent-inference triplet here would repeat the defect it names. The observation is real and is kept; it is just not a Wolfram claim. **The standing UNVERIFIED LEAD in the master index (a direct 2026 McGilchrist-Wolfram dialogue "could NOT be confirmed") is retired.** See also the Ralston date correction appended to `prs_triplets.md`. |
+
+### Ingest 2026-09-10
+
+4 triplets added from 1 approved proposals (decision email 2026-09-09): PRS-59, PRS-60, PRS-61, PRS-62.
+
+- `PROP-2026-08-28-040` — Does time come from the entire universe running computations? (interview, https://www.newscientist.com/article/2532871-does-time-come-from-the-entire-universe-running-computations/) → PRS-59, PRS-60, PRS-61, PRS-62
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

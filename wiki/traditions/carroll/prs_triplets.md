@@ -713,4 +713,67 @@ PRS-78:
   Confidence: Medium
   Evidence: Cardoso: "physics used to be, and I want to think it still is, driven by data and by observations. And so hopefully as precision in data gathering increases, we're gonna find something that's really not consistent with the paradigm. And that's when you and I need to sit down and think how can we model this in a better way" (transcript, approx. 0:48:20).
 
-*Total PRS triplets: 78*
+PRS-79:
+  Problem: Whether living organisms are in some sense fighting the second law of thermodynamics — a framing common in popular and some scientific writing, and one that would make life anomalous with respect to physics.
+  Resource: The free-energy accounting: low-entropy photons arrive from the sun, the organism uses them to maintain structure, organisation and metabolism far from equilibrium, and radiates a much larger number of high-entropy thermal photons.
+  Solution: The framing is exactly backwards. Life does not struggle against the second law; it is a mechanism that **takes advantage** of it, and the entropy books balance in the ordinary direction with room to spare. No new physics is required and life is not anomalous.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: Carroll, in his own voice and unprompted: "my personal reaction is no, that's exactly backwards. Life is taking advantage of the second law of thermodynamics. It's using that free energy from the sun to maintain its equil... Not its equilibrium, its structure, its organization, its metabolism, and so forth." Al-Khalili agrees and supplies the photon accounting. High because it is Carroll's own stated position, verbatim, on a question he raised himself.
+
+PRS-80:
+  Problem: Having deflated "life fights entropy," the symmetric temptation is to inflate in the other direction — to say life exists *in order that* the universe increase its entropy, a maximum-entropy-production teleology that has real currency in origin-of-life and complexity work.
+  Resource: The observation that the second law fixes a direction but not a rate: "There's no law that says it increases as fast as possible."
+  Solution: The strong reading is declined rather than refuted. Carroll states he does not know whether it is true, gives the rate objection as the reason for doubt, and says the question is unfinished. **The Solution is a withheld endorsement, and that is the content** — a tradition-holder refusing a teleological gloss that his own deflationary move had made rhetorically available.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: "sometimes people wanna say in that spirit, life is a way for the universe to increase entropy, right?... I don't know if that's true or not. I mean, I kind of have a feeling like the entropy is gonna increase anyway. There's no law that says it increases as fast as possible. You got to think harder about what life is doing." Al-Khalili adds an independent objection from scale: if life is rare, the universe would be "relying on this tiny planet in this outer suburbs of some galaxy to help it increase its entropy," which "seems a bit wacky." High as a record of Carroll's stated position; the *underlying question* is explicitly open, and this triplet records the refusal, not an answer.
+
+PRS-81:
+  Problem: Where quantum irreversibility comes from, given that Schrödinger evolution is time-symmetric and measurement is not — and whether decoherence or entanglement is the operation that supplies the arrow.
+  Resource: Decoherence defined as entanglement with an environment, plus the observation that entanglement with a *single* qubit is straightforwardly reversible.
+  Solution: Neither entanglement nor decoherence is irreversible in itself. The arrow is statistical-mechanical: "Once you entangle with enough things, you effectively in practice lose the ability to reverse it." Quantum irreversibility is therefore the same kind of fact as classical thermodynamic irreversibility, not an additional one — which is what poetic naturalism requires if the quantum arrow is not to be a second, independent ingredient.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: High
+  Evidence: Al-Khalili poses it directly — "would you say that entanglement of a system with something else is itself an irreversible process?" Carroll: "If you just want to entangle with one qubit, you can easily reverse that... So I think it's exactly thermodynamics or stat mech at work. Once you entangle with enough things, you effectively in practice lose the ability to reverse it." Earlier in the same exchange: "I like to just define decoherence as entanglement with an environment. And once you agree on what the environment is, which is a tricky thing, I admit, but that is what counts as decoherence for me."
+
+PRS-82:
+  Problem: Whether time's directionality is derived or primitive. The standard programme, which Carroll has spent two books on, derives the arrow from time-symmetric fundamental laws plus a low-entropy past hypothesis.
+  Resource: Al-Khalili's contrary position, stated in Carroll's own venue with Carroll present: irreversibility is the more fundamental fact, and time-symmetric laws are an artefact of idealisation.
+  Solution: **No solution — this is a recorded, unresolved disagreement between the tradition-holder and a guest whose competence he affirms.** Al-Khalili: "my view... is that it's the other way around, that time's direction, directionality, irreversibility is more fundamental. And symmetric equations and symmetric laws of physics, I think are just idealizations that aren't giving us the whole picture." Carroll flags it for the audience as a controversy, says "we'll come back to it later," and does not litigate it in the read portion.
+  Date Added: 2026-09-10
+  Source: Mindscape 366 | Jim Al-Khalili on Time, Quantum, Biology, and Cosmology; PROP-2026-09-02-005
+  Confidence: Medium
+  Evidence: Quotations above, verbatim. **Medium, and the reason is a coverage gap, not a source problem: the final third of the transcript was not read, and Carroll said he would return to this.** He may answer it there. Anyone using this triplet should read the closing section first. It is filed rather than withheld because the *existence* of an aired, unresolved disagreement with a competent interlocutor is itself the datum this project collects, and it is attested in the portion that was read.
+
+PRS-83:
+  Problem: Poetic naturalism asserts that higher-level descriptions are real without being fundamental, but the position has been stated mostly in prose and defended conversationally; it has never been given a sustained technical exposition with the mathematics on the page.
+  Resource: A book-length treatment of complexity and emergence in the trilogy's declared format — real equations, high-school-algebra prerequisite, "established knowledge rather than speculation."
+  Solution: Would convert the tradition's central philosophical commitment into an examinable technical claim, at which point rival traditions can engage the machinery rather than the slogan.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Publisher description: the volume "explores the extraordinary physics which governs complex systems." Trilogy method from Carroll's own site: "This is the real stuff -- equations and all." **No text of Volume 3 was read.**
+
+PRS-84:
+  Problem: Active Question 12 in this wiki asks whether higher-level causal structure is real or bookkeeping when it is manipulable — sharpened by Pigozzi & Levin's report that causal emergence in a pre-replicator medium responds to intervention. Carroll's deflationary account of emergence is the natural opposing position but has no worked statement to test against.
+  Resource: Carroll's own extended account of emergence, if the book delivers criteria rather than description.
+  Solution: Would supply the opposing term the Levin × Carroll tension currently lacks, letting the disagreement be adjudicated rather than merely noted.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Publisher description names "its profound metaphysical implications." Whether Carroll offers a *criterion* for when a coarse-grained variable earns its keep — the standard set at PRS-53 and partially met by the derived urban-scaling exponent at Active Question 9 — is exactly what the text must be checked for. **Unverified.**
+
+PRS-85:
+  Problem: Carroll's public case for emergence has been made in venues (podcast, lecture, trade book without equations) that rival traditions can dismiss as popularization rather than physics.
+  Resource: The trilogy's stated bridge function — "between popular-science treatments of modern physics and true expert knowledge."
+  Solution: Would remove the popularization objection as an argumentative move against the poetic-naturalist account of emergence, since the account would then exist in a form that carries its own derivations.
+  Date Added: 2026-09-10
+  Source: The Biggest Ideas in the Universe 3: Complexity and Emergence; PROP-2026-09-04-001
+  Confidence: Speculative
+  Evidence: Trilogy framing on Carroll's site. This candidate is about the *epistemic standing* of the tradition's exposition, not about a physical result; it should be dropped if the book turns out to be lighter on mathematics than Volumes 1 and 2. **Unverified.**
+
+*Total PRS triplets: 85*
