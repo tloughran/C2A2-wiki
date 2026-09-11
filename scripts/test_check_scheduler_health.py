@@ -345,6 +345,90 @@ def main():
         expect("artifact generated this morning",
                mod.verdict_artifact(spec, NOW_UTC)[0], mod.OK)
 
+    # ---------------------------------------------------------------- lag rows
+    # The lag row exists because an AGE row asks the wrong question of a
+    # publisher that deliberately no-ops on a quiet source. The case that
+    # matters most below is "quiet vault": a six-day-old artifact that is
+    # CORRECT, which a max_age_hours row would have called FAIL for six
+    # consecutive days. If that case ever goes red, the row has regressed into
+    # the age check it was written to replace.
+    print("\nlag rows:")
+    with tempfile.TemporaryDirectory() as tmp:
+        repo = Path(tmp)
+        (repo / "wiki" / "traditions" / "levin").mkdir(parents=True)
+        art = repo / "wiki" / "prs_3d.html"
+        src = repo / "wiki" / "traditions" / "levin" / "prs_triplets.md"
+
+        def local_stamp(dt):
+            """The generator writes a naive LOCAL timestamp; mirror that."""
+            return dt.astimezone().replace(tzinfo=None).isoformat(timespec="seconds")
+
+        def build(built_at, source_at, body=None):
+            stamp = local_stamp(built_at)
+            art.write_text(body if body is not None
+                           else 'const PRS_BUILD_TS = "%s";' % stamp)
+            src.write_text("PRS-01: ...")
+            os.utime(src, (source_at.timestamp(), source_at.timestamp()))
+            return {"owner": "pub", "path": "wiki/prs_3d.html",
+                    "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+                    "sources": ["wiki/traditions/*/prs_triplets.md"],
+                    "grace_hours": 48}
+
+        spec = build(NOW_UTC - timedelta(days=5), NOW_UTC - timedelta(days=2))
+        code, line = mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))
+        expect("source 3 days newer than the build is a FAIL", code, mod.FAIL)
+        expect("the FAIL names the source that moved",
+               "prs_triplets.md" in line, True)
+
+        spec = build(NOW_UTC - timedelta(hours=30), NOW_UTC - timedelta(hours=10))
+        expect("20h behind is inside one publish cycle",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.OK)
+
+        # THE case: quiet vault. Artifact six days old, sources older still.
+        spec = build(NOW_UTC - timedelta(days=6), NOW_UTC - timedelta(days=10))
+        code, line = mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))
+        expect("a six-day-old artifact on a QUIET vault is OK", code, mod.OK)
+        expect("the OK line says it is current, not that it is fresh",
+               "current with its newest source" in line, True)
+
+        spec = build(NOW_UTC - timedelta(days=5), NOW_UTC - timedelta(days=2))
+        spec["failure_means"] = "not on the live page"
+        expect("failure_means reaches the lag line",
+               "not on the live page" in
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[1], True)
+
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2),
+                     body="<html>no stamp here</html>")
+        expect("an artifact with no build stamp cannot be checked",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2),
+                     body='const PRS_BUILD_TS = "last Tuesday";')
+        expect("a build stamp that is not a timestamp",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        # A source list matching nothing would pass forever while asserting
+        # nothing -- the blindness the whole file exists to end.
+        spec = build(NOW_UTC - timedelta(days=1), NOW_UTC - timedelta(days=2))
+        spec["sources"] = ["wiki/nothing/*/matches.md"]
+        expect("source patterns matching no file must FAIL, not pass",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+        art.unlink()
+        spec = {"owner": "pub", "path": "wiki/prs_3d.html",
+                "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+                "sources": ["wiki/traditions/*/prs_triplets.md"],
+                "grace_hours": 48}
+        expect("a missing artifact is a FAIL",
+               mod.verdict_artifact_lag(spec, NOW_UTC, repo=str(repo))[0], mod.FAIL)
+
+    # Every shipped LAG_ARTIFACTS row must name real source patterns in the real
+    # repo. A typo in a glob is silent otherwise: the row goes green forever.
+    for row in mod.LAG_ARTIFACTS:
+        code, line = mod.verdict_artifact_lag(row, NOW_UTC)
+        expect(f"LIVE: {row['path']} lag row is asserting something",
+               "asserting nothing" in line, False)
+
     # Git debris. The previous accumulation (535 stranded tmp_obj files, 07-31..08-13)
     # could not be pinned on any job because nothing reported it and the evidence was
     # deleted before its mtimes were read. Every case below is therefore about what

@@ -537,8 +537,32 @@ def _snapshot_db(live_db):
     src = sqlite3.connect("file:%s?mode=ro" % urllib.parse.quote(live_db), uri=True)
     dst = sqlite3.connect(snap)
     src.backup(dst)
+
+    # The backup INHERITS the source's journal mode, and the live db is WAL. A
+    # WAL-mode file with no -wal/-shm beside it cannot be opened `mode=ro` at
+    # all: SQLite answers "unable to open database file", which reads like a
+    # missing or unreadable path and is neither. That is exactly how the regen
+    # died silently from 2026-09-03 to 2026-09-10 -- the builder opens the
+    # snapshot read-only, so every run failed on its first PRAGMA while the
+    # task itself reported a clean fire each morning. Converting the COPY to a
+    # rollback journal makes it a self-contained single file. The live db is
+    # untouched; this pragma runs on the destination only.
+    dst.execute("PRAGMA journal_mode=DELETE")
     dst.close()
     src.close()
+
+    # Assert the snapshot is readable THE WAY THE BUILDER WILL READ IT. Opening
+    # is lazy in sqlite3, so this needs a statement to actually touch the file.
+    # Deliberately not quick_check: a full scan of a 6GB db costs ~90s every
+    # morning, and the failure this guards against is at open, not in the pages.
+    try:
+        probe = sqlite3.connect("file:%s?mode=ro" % snap, uri=True)
+        probe.execute("select count(*) from sqlite_master").fetchone()
+        probe.close()
+    except sqlite3.Error as exc:
+        sys.exit("ERROR: snapshot %s is not readable read-only (%s). The builder "
+                 "would fail on its first PRAGMA. Check the live db's journal "
+                 "mode." % (snap, exc))
     return snap
 
 

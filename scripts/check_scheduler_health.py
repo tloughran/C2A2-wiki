@@ -109,12 +109,64 @@ ARTIFACTS = [
         "field": "_meta.t_max_event",
         "max_age_hours": 48,
         "failure_means": (
-            "the newest OpenStory EVENT in the snapshot is that old, so the source "
-            "has stopped producing. Check the H-Drive mount and the ingest agents; "
-            "regenerating the artifact cannot move this date"
+            "the newest OpenStory EVENT IN THE SNAPSHOT is that old. That has TWO "
+            "causes and this row cannot tell them apart: the source stopped, or the "
+            "snapshot did. Disambiguate before chasing the H-Drive -- if the row "
+            "above is also red the FILE is stale and this date is just its frozen "
+            "window. The test is one line against the live db: "
+            "sqlite3 open-story.db 'select max(timestamp) from events'"
         ),
         "note": "48h chosen from 3150 sessions: p99.9 inter-session gap is 39.9h, and "
                 "the only two gaps over 48h since 2026-05-07 were both real outages",
+    },
+]
+
+# Lag assertions. An age limit is the WRONG QUESTION for an artifact whose
+# producer deliberately does nothing when there is no work. wiki/prs_3d.html is
+# republished only when a vault source is newer than it, so from 2026-09-03 to
+# 2026-09-09 it sat six days old while every part of the chain was healthy: the
+# daily poll fired, read its gate, and correctly no-opped on a quiet vault. A
+# max_age_hours row would have screamed FAIL through all six of those days, and
+# a row that cries wolf is not read.
+#
+# So the question is LAG, not age: is the artifact behind its own inputs? That
+# is the same comparison the publisher's gate makes, which is the point -- this
+# row asks whether the publisher DID WHAT ITS GATE TOLD IT TO.
+#
+# stamp_regex reads the date the PRODUCER wrote into the page (the build stamp a
+# viewer can see), never the file's mtime. The SOURCES are compared by mtime,
+# deliberately, and that is a considered exception to this file's never-an-mtime
+# rule: that rule protects the artifact's own production date, which is still
+# self-recorded here. Mirroring the gate's own clock is what stops checker and
+# publisher disagreeing for reasons that are not defects. A fresh clone restamps
+# every source and turns this row red -- loud, and in the safe direction, on a
+# tree nobody built on purpose.
+LAG_ARTIFACTS = [
+    {
+        "owner": "com.c2a2.prs-connectome-publish",
+        "path": "wiki/prs_3d.html",
+        "stamp_regex": r'PRS_BUILD_TS\s*=\s*"([^"]+)"',
+        # The publisher's own gate list, verbatim. If one moves, move both.
+        "sources": [
+            "wiki/traditions/*/prs_triplets.md",
+            "wiki/master/prs_triplets.md",
+            "wiki/master/cross_program_index.md",
+            "wiki/flags/pattern_detector_findings.md",
+            "wiki/c2a2-prs-3d/prs_pub_years.json",
+            "wiki/c2a2-prs-3d/template_prs_3d.html",
+            "wiki/c2a2-prs-3d/scripts/generate_prs_3d.py",
+            "wiki/c2a2-prs-3d/scripts/extract_prs_data.py",
+        ],
+        # The daily run writes the vault ~05:45; the publisher polls 04:30, so
+        # morning work legitimately waits ~23h for the next fire. 48h passes that
+        # plus ONE missed fire (a laptop asleep at 04:30) and fails on two --
+        # MISSED_FIRES_ALLOWED's tolerance applied to the output, not the trigger.
+        "grace_hours": 48,
+        "failure_means": (
+            "new PRS triplets are in the vault but not on the live page. The job "
+            "may be firing and no-opping, so read the GATE DECISION in "
+            "~/Library/Logs/c2a2-prs-connectome-publish.log, not merely that it ran"
+        ),
     },
 ]
 
@@ -655,6 +707,60 @@ def verdict_artifact(spec, now_utc, repo=REPO):
                 f"({age_hours:.0f}h ago)")
 
 
+def verdict_artifact_lag(spec, now_utc, repo=REPO):
+    """Is the artifact BEHIND ITS INPUTS? (Not: is the artifact old?)
+
+    A producer that no-ops on a quiet source is working correctly, and an age
+    limit cannot tell that apart from one that has died. Lag can.
+    """
+    owner, rel = spec["owner"], spec["path"]
+    path = rel if os.path.isabs(rel) else os.path.join(repo, rel)
+
+    if not os.path.exists(path):
+        return FAIL, f"{owner}: artifact {rel} does not exist"
+
+    try:
+        with open(path, encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    except OSError as exc:
+        return FAIL, f"{owner}: cannot read {rel}: {exc}"
+
+    match = re.search(spec["stamp_regex"], text)
+    if not match:
+        return FAIL, (f"{owner}: {rel} carries no build stamp matching "
+                      f"{spec['stamp_regex']} -- it does not date itself")
+    try:
+        built = parse_iso(match.group(1)).astimezone(timezone.utc)
+    except ValueError:
+        return FAIL, (f"{owner}: {rel} build stamp is not a timestamp: "
+                      f"{match.group(1)!r}")
+
+    newest, newest_rel = None, None
+    for pattern in spec["sources"]:
+        for src in glob.glob(os.path.join(repo, pattern)):
+            mtime = datetime.fromtimestamp(os.path.getmtime(src), timezone.utc)
+            if newest is None or mtime > newest:
+                newest, newest_rel = mtime, os.path.relpath(src, repo)
+
+    # A source list that matches nothing would make this row pass forever while
+    # asserting nothing at all -- the exact blindness this file exists to end.
+    if newest is None:
+        return FAIL, (f"{owner}: none of the {len(spec['sources'])} source pattern(s) "
+                      f"for {rel} matched a file -- this row is asserting nothing")
+
+    lag_hours = (newest - built).total_seconds() / 3600
+    if lag_hours <= 0:
+        return OK, (f"{owner}: {rel} built {built:%Y-%m-%d %H:%M}Z, current with its "
+                    f"newest source ({newest_rel}, {newest:%Y-%m-%d %H:%M}Z)")
+    if lag_hours > spec["grace_hours"]:
+        means = spec.get("failure_means", "the artifact is behind its sources")
+        return FAIL, (f"{owner}: {rel} was built {built:%Y-%m-%d %H:%M}Z but "
+                      f"{newest_rel} changed {newest:%Y-%m-%d %H:%M}Z, "
+                      f"{lag_hours / 24:.1f} days later -- {means}")
+    return OK, (f"{owner}: {rel} is {lag_hours:.0f}h behind {newest_rel}, within the "
+                f"{spec['grace_hours']}h publish cycle")
+
+
 # -------------------------------------------------------------------------- inputs
 
 
@@ -795,6 +901,9 @@ def main():
     for spec in ARTIFACTS:
         results.append(verdict_artifact(spec, now_utc))
 
+    for spec in LAG_ARTIFACTS:
+        results.append(verdict_artifact_lag(spec, now_utc))
+
     for spec in UNATTENDED_PERMISSION_TASKS:
         results.append(verdict_unattended_permissions(spec, tasks))
 
@@ -812,6 +921,7 @@ def main():
     summary = (
         f"{len(tasks)} registry task(s) across {len(registry_paths)} file(s), "
         f"{len(labels)} launchd agent(s), {len(ARTIFACTS)} artifact(s), "
+        f"{len(LAG_ARTIFACTS)} lag assertion(s), "
         f"{len(UNATTENDED_PERMISSION_TASKS)} permission-mode check(s), "
         f"1 git-debris check, {len(FAILURE_MARKERS)} failure marker(s): "
         f"{counts[OK]} OK, {counts[WARN]} WARN, {counts[FAIL]} FAIL"
