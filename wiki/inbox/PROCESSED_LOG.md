@@ -1095,3 +1095,65 @@ files were ingested.
 
 **Network after this run (counted from headers, not from stated totals):** 867 PRS triplets across 15
 tradition files, 107 CROSS entries, 93 findings.
+
+
+---
+
+## 2026-09-12 — daily run
+
+**Phase 0: no decision emails.** The only `[C2A2-review-decision]` thread in the last 3 days is
+`[C2A2-review-decision] 2026-09-09` (thread 1a087dd9595a1b4d), already read and already processed —
+`wiki/review/archive/2026-09-10_decisions.md` names it as its source and lists all 16 of its PROP ids.
+No re-processing, no duplicate archive entry.
+
+**Phase 1: files processed 0 — the compile queue is empty, measured not assumed.**
+`scripts/ingest_ledger.py wiki` reports approved total=414, ingested=382, decided-zero=30, **OPEN=1**;
+staging identical. (A naive filename-not-in-log scan reports 261 "unprocessed" — that is the known
+slug/filename trap and is phantom backlog. The ledger is the answer.)
+
+**Wright PROP-2026-08-14-033 — retrieval re-attempted 2026-09-12, FAILED. Fourth consecutive failure.**
+Searched for the KSBJ / *Between Beliefs* / Admirato broadcast. Result is the same bare
+ntwrightpage.com post (media embed, no body text) plus unrelated hits. **One new concrete lead this run:**
+KSBJ hosts a *Between Beliefs* podcast index at `https://ksbj.org/podcasts/between-beliefs` — not machine
+-retrievable here, but hand-checkable for a mid-July-2026 Wright episode. Card's own instruction
+("Do not ingest the conjectures") honoured for the fourth run; yield token withheld again.
+**RECOMMENDATION, escalating: reject the card or hand-retrieve it via the KSBJ podcast index.
+Four runs is past the point where carrying it is free.**
+
+**Unjudgeable by the ledger, untouched, correctly so:**
+`inbox/proposals/approved/2026-05-12_repair_manifest.md` (no `proposal_id`; a manifest, not a source), and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` — re-verified against the artifact this run:
+levin PRS-116, macintyre PRS-06 and stump PRS-41 all exist and all three cite that note as source.
+Ingested 2026-09-09 (FINDING-085). Complete. No re-derivation.
+
+**Pattern detector: nothing forwarded, nothing to evaluate.** No files were ingested, so no new signals
+entered `flags/for_pattern_detector.md`. Newest marker there remains `[EVALUATED: 2026-09-10 -
+FINDING-086..090]`.
+
+**Phase 2: 3 proposals written** (PROP-2026-09-12-002/003/004), all Levin, all verified against Levin's
+own preprint index at drmichaellevin.org rather than from search snippets alone. Abstracts retrieved for
+all three; full texts NOT read, and each card says so. Wolfram was skipped — the Saturday specialist agent
+already filed PROP-2026-09-12-001. Searches for Arkani-Hamed, Fredrickson and Stump (the three longest
+capture gaps) returned only pre-existing/background material inside the 60-day window; no proposals
+written, which is the filter working, not a miss.
+
+**Known lead NOT written up:** Erickson et al. (2026-08-13), "A platform for automated training of
+mammalian cell physiology," bioRxiv 10.64898/2026.08.13.744473. Genuinely new and in-window, but its
+abstract was not retrieved this run and a card built from the title alone is the Wright mistake. Next run
+should retrieve it. Also unlogged and in-window: Fields & Levin, "Cognitive Offloading Is a Cognitive
+Universal" (2026, preprints.org 10.20944/preprints202607.0507.v1), which bears directly on
+PROP-2026-09-12-002.
+
+**Retracted mid-run — a "data inconsistency" I reported and then falsified.** I flagged
+`traditions/stump/prs_triplets.md` as inconsistent because its footer says `*Total PRS triplets: 38*`
+while its last entry is PRS-41. Counting headers showed 38 entries: the numbering has gaps, the footer is
+**correct**, and the flag was mine, not the file's. Recorded rather than deleted because the near-miss is
+the lesson — "last id" is not "count," and I reached for the discrepancy before doing the count that the
+standing rule (derive, never read stated totals) exists to force.
+
+**Network after this run, derived by counting headers:** **867** PRS triplets across 15 tradition files
+(arkanihamed 31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123,
+loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66), **108** CROSS entries
+in `master/cross_program_index.md`, **91** distinct FINDING ids in `flags/pattern_detector_findings.md`.
+867 agrees independently with the Level-2 rebuild's own `triplets=867`. The 09-11 entry's "93 findings"
+was counted by a different rule; 91 is the distinct-id count and is what this entry means.

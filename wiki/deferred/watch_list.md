@@ -201,6 +201,20 @@ Either way the disposition is unrecorded and the source files are gone.
 
 **Note this is the failure mode the standing TOOLING FLAG predicted.** `tools/generate_review_page.py` (~line 304) emits position-based decision IDs rather than stable `proposal_id`s. This run also confirms the review page's card IDs and button IDs are offset relative to each other around the 07-19 items (the DENY/CHECK/CHANGE buttons immediately preceding `card-PROP-2026-07-19-003` are wired to `PROP-2026-07-19-002`), so a decision registered against one card can be recorded against a different proposal. That is a plausible mechanism for a silent 2-item loss during a 36-item blanket pass, and it raises the priority of the fix from housekeeping to correctness.
 
+**[CORRECTION 2026-09-12 — the mechanism named above has already been repaired in code, and yesterday's explanation of its disappearance was wrong. Agent 16 is correcting its own record. Fail-loud, per Rule 12.]**
+
+Two claims carried by this flag and by the 2026-09-11 run summary's finding (ii) do not survive reading `tools/generate_review_page.py` as it currently stands (15,852 bytes, mtime **2026-08-12 21:00**).
+
+1. **The Gmail route is not an alternative to the generated review page — it *is* the page's own submit mechanism.** Finding (ii) inferred from `2026-09-10_decisions.md` naming `Gmail [C2A2-review-decision] 2026-09-09` that the script was "out of the path." It is not. `submitDecisions()` (line 303 ff.) assembles the decision lines, sets `const subject = '[C2A2-review-decision] {run_date}'`, and opens a Gmail compose window — the comment at line 312 says so explicitly ("Open Gmail compose directly — avoids Apple Mail / default mail client"). Every Gmail-sourced decision file is therefore a *product of* `generate_review_page.py`, not a bypass of it. The absence of `*.html` files from the `review/` root on 09-11 was a transient of an empty pending queue, not a route change: a new page, `review/2026-09-11_review.html` (1 card, PROP-2026-09-11-001), was generated 2026-09-11 04:37 and is in the root now. **Finding (ii) is withdrawn. The TOOLING FLAG is not downgradable on route grounds, and Tom's open question 5 ("is the Gmail route standing or a one-off?") is answered: it is neither — it is the standing script's own output.**
+
+2. **But the flag's substantive worry is nonetheless resolved, for a different and better reason: the offset cannot occur in the current code.** The script computes one identifier per proposal, at line 116 — `pid = p.get("proposal_id") or f"PROP-{run_date}-{i+1:03d}"` — under a comment (lines 112–113) reading *"Use the file's own proposal_id as the stable display ID — never renumber. proposal_id is assigned once at creation and never changes."* That single `pid` is what generates the card div (`id="card-{pid}"`, line 141), the status and sidebar elements (lines 172, 177, 182), and the submit list (line 304). Card IDs and button IDs are drawn from the same variable and so **cannot be offset relative to each other**. The offset observed on 2026-07-21 in `review/2026-07-20_review.html` describes a *former* version of the script. Position-based numbering survives only as a fallback, firing when a file carries no `proposal_id` in frontmatter — true of exactly **1 of 414** files in `approved/` (`2026-05-12_repair_manifest.md`, which the ingest ledger already classes as unjudgeable, being a manifest rather than a source).
+
+**What this changes, stated conservatively.** The mtime says the file was last written 2026-08-12; it does not say this line changed then, and the vault carries no version history, so the fix cannot be dated more precisely than "on or before 2026-08-12." The honest summary is that **every run from mid-August onward, including this agent's, has been restating a correctness diagnosis against code that no longer had the defect** — and did so because runs were reading the flag's own text rather than the script. That is the error, and it is Agent 16's.
+
+**Residual, and genuinely small:** ensure any future proposal reaching the review page carries `proposal_id` in frontmatter, and the fallback never fires. The TOOLING FLAG drops from correctness to cleanup — on code grounds, which are checkable, rather than on route grounds, which were mistaken.
+
+**None of this touches the audit question.** Why PROP-2026-07-19-001 and -003 left the pipeline undisposed on 2026-07-20 remains unanswered, and the most likely *mechanism* for it being repaired since does not retroactively explain what happened. WATCH-003 is unaffected and still needs the same one line from Tom.
+
 ---
 
 ### DEFERRED-CONDITION LEAKAGE FLAG — 2026-09-04 — five retrieval assignments were created and closed on the same day, outside every tracker
@@ -255,6 +269,25 @@ The 2026-09-10 ingest run — 36 cards, **85 triplets, the largest in the networ
 - **Dependency to note:** any fix keyed on a `content_verified` frontmatter field must first *create* that field. It is not in use.
 
 **Agent 16 has still created no watch items for any of these ten.** Channel 4 remains unopened, and opening it unilaterally remains outside this agent's brief. Recording, for the record, what that abstention now costs: **a dated condition falling due on 2026-09-24 is visible to this agent, is exactly the shape of thing this agent exists to hold, and will not be held.**
+
+
+**[ADDENDUM 2026-09-12 — an eleventh card, and for the first time one is visible BEFORE the review pass rather than after it. This is the only cheap intervention point this flag has ever had.]**
+
+Every one of the ten cards catalogued above was identified *downstream* — after approval, after ingest, from the `PROCESSED_LOG.md` record of a decision already taken. The single card filed on 2026-09-11 is the first that Agent 16 can name while it is still in `pending/`.
+
+`inbox/proposals/pending/2026-09-11_carroll_mindscape-367-diamond-leaders.md` — **PROP-2026-09-11-001**, Carroll, *Mindscape 367 | Jared Diamond on the Course of History and the Role of Leaders*, source dated 2026-09-07. Its own text, in bold, in the second paragraph:
+
+> "**Verification status — read this before ingesting.** … **Not confirmed:** any specific claim, concession, or position Carroll states in the conversation. The episode page carries a transcript but exceeded this agent's retrieval budget and was not read. The triplets below are therefore built from the *stated framing of the episode* plus Carroll's already-captured commitments in this wiki; each is marked Speculative and each names what would have to be checked in the transcript. Confidence must not drift upward without someone reading it."
+
+This is the same shape as the other eleven-minus-one: an approval would approve a pointer, not a reading. Three features distinguish it and all three favour acting now.
+
+- **The condition is cheap to discharge, unlike PROP-2026-08-14-033's.** That card has failed retrieval three times because no transcript exists anywhere. This one says a transcript **does** exist at the source URL and was simply not fetched within budget. This is a retrieval that is known to be possible.
+- **The card names its own highest-value check.** Candidate-02's Evidence line reads: "Whether Carroll takes it as a criterion, or treats it as a historian's heuristic he would not generalize, is exactly what the transcript would settle. **This is the single highest-value check in this card.**" A processor is told precisely what to read for.
+- **It is alone on its review page.** `review/2026-09-11_review.html` carries exactly one card. FINDING-089's diagnosis — that "a batch APPROVE cannot distinguish 'I read this and agree' from 'I did not read this one separately'" — does not apply to a queue of one. **The leak this flag describes is, this once, structurally impossible; the only way this card gets approved unread is by a deliberate choice to do so.** That will stop being true the moment the queue refills.
+
+**Agent 16 has opened no watch on it** — it is in `pending/`, which is Channel 1's *predecessor* state, not Channel 1, and Channel 4 remains Tom's to open. But the abstention is cheaper to record here than it was on 09-11, because the alternative is not a new tracker: it is reading one transcript, or writing one word on one card, before the next pass.
+
+**Two unrelated leads the same card carries, recorded once so they are not lost with it:** (i) *AMA | August 2026* (2026-08-03) is outside the search window and absent from `traditions/carroll/prs_triplets.md` — a known capture gap, self-flagged, no owner; (ii) arXiv:2603.07674, a March 2026 comment on "On the emergence of preferred structures in quantum theory," surfaced with **unverified authorship** and was correctly not claimed for Carroll. Neither is a watch item under the present three channels. Both would be, under Channel 4.
 
 
 ---
@@ -5450,3 +5483,55 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-11.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-12
+
+**No check was due and none was run. The run's value is entirely in two corrections — one to a standing flag, one to yesterday's own summary — and in one card caught upstream of review for the first time in this flag's history.**
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: **1 file, 0 new, 0 untracked.** `2026-04-21_carroll_singer-mindscape-351.md`, the WATCH-001 tombstone — `status: superseded`, `tracked_by: agent-16`, `tracking_id: WATCH-001`, resolved 2026-05-12, carrying its `[TRACKED-16: 2026-05-05]` tag. Nothing required tagging.
+- **New disposition file for Channel 1 intake: none.** `review/archive/` stands at **19**, latest still `2026-09-10_decisions.md`. No pass has run since. Note that `review/2026-09-11_review.html` was *generated* 2026-09-11 04:37 and is awaiting Tom — a pass is staged, not run.
+- Channel 2 (agent-exchange deferrals): vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and the agent brief returns matches only inside `wiki_narration.html` and its four backups, i.e. the rendered copy of the agent brief itself. **0 real matches. Channel unexercised 20 days.**
+- Channel 3 (human watch requests): **0 visible — channel deaf, ninth day.** A `2026-09-11_chat_summary.md` exists and is explicit: scrape FAILED on both paths, Claude in Chrome "not connected" on two `tabs_context_mcp` calls, in-app browser pane refused `claude.ai` for want of a site approval no unattended run can give. It names both fixes and notes 09-09 is also missing. Blind spot now spans **09-03 through 09-11**.
+
+**Condition checks (Step 3): 0 due, 0 run, 0 resolved.**
+- **WATCH-003 — not checked; not due.** Next on-cadence check is **2026-09-15**, count stands at 10. The check method's off-cadence trigger is the appearance of a later decision file; `review/archive/` is unchanged at 19 files, so the trigger has **not** fired and running the check early would only re-confirm the tenth answer four days sooner. Recorded deliberately: on 08-28 and 09-11 the trigger fired and the check was pulled forward; today it did not and the check was not.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**Stale items (Step 4): 1, unchanged.** WATCH-003, flagged 2026-08-25, 10 checks, still the sole occupant of ACTIVE ITEMS, still needing one line from Tom on the INTEGRITY FLAG. No counters moved. No item newly stale.
+
+**Correction 1 — to the INTEGRITY / TOOLING FLAG, and to yesterday's finding (ii). Agent 16 got this wrong and is saying so.** Yesterday's run inferred from `2026-09-10_decisions.md` naming a Gmail thread as its source that `tools/generate_review_page.py` was "out of the path," and downgraded the TOOLING FLAG on that basis. **Reading the script rather than the flag shows the inference was wrong and the conclusion accidentally right.**
+- The Gmail route **is** the page's own submit mechanism: `submitDecisions()` builds the decision lines and opens a Gmail compose with `subject = '[C2A2-review-decision] {run_date}'` (lines 303–312). Every Gmail-sourced decision file is a *product of* the script. The empty `review/` root on 09-11 was a transient of an empty queue, not a route change — a new page sits there today. **Tom's open question 5 is answered: neither standing-alternative nor one-off; the Gmail route is the standing script's own output.**
+- **But the offset defect is gone from the code.** One identifier is computed per proposal at line 116 — `pid = p.get("proposal_id") or f"PROP-{run_date}-{i+1:03d}"`, under a comment reading *"never renumber"* — and the card div, status element, sidebar item and submit list all derive from that same `pid`. Card and button IDs **cannot** be offset from each other. The 2026-07-21 observation describes a former version. Position-based numbering survives only as a fallback for files lacking `proposal_id`: **1 of 414** in `approved/`, and that one is the repair manifest the ledger already treats as unjudgeable.
+- **The cost of the error is the honest part.** The script's mtime is **2026-08-12**; the vault has no version history, so the fix can only be dated "on or before" that. Which means roughly a month of runs — this agent's included — restated a correctness-critical diagnosis against code that no longer had the defect, because each run read the flag's text instead of the file. Full correction written into the INTEGRITY FLAG above. **The audit question is untouched by any of this.**
+
+**Correction 2 — the DEFERRED-CONDITION LEAKAGE FLAG gains an eleventh card, and for the first time one is visible *before* the pass.** `pending/2026-09-11_carroll_mindscape-367-diamond-leaders.md` (**PROP-2026-09-11-001**, Carroll / Mindscape 367, Jared Diamond) says in bold in its second paragraph: *"Verification status — read this before ingesting … The episode page carries a transcript but exceeded this agent's retrieval budget and was not read … Confidence must not drift upward without someone reading it."* All ten previous instances were found downstream, after approval. Three things make this one different and all three favour acting now:
+- the transcript is stated to **exist** at the source URL — unlike PROP-2026-08-14-033, which has failed retrieval three times because nothing exists to retrieve;
+- the card **names its own highest-value check** ("whether Carroll takes it as a criterion … is exactly what the transcript would settle");
+- **it is alone on its review page.** FINDING-089's mechanism — a batch APPROVE cannot distinguish "read and agreed" from "not read separately" — cannot operate on a queue of one. The leak is structurally impossible this once. That ends the moment the queue refills.
+
+**INGESTION-RISK FLAG: quiescent, fifth consecutive confirmation — and the ingest layer has now made its own recommendation.** The 2026-09-11 ingest run processed **0 files**; `scripts/ingest_ledger.py` reports approved=414, ingested=382, decided-zero=30, **OPEN=1**, the one being PROP-2026-08-14-033. Retrieval was re-attempted and **failed a third time** (fresh search returned only the bare ntwrightpage.com post, media embed only). The log's own words: *"Third failed retrieval; this card should be rejected or hand-retrieved rather than carried indefinitely."* **Still no unverified Wright triplets in the wiki.** Agent 16 concurs with the ingest layer and notes the decision is cheaper than it was on 09-08: the recovered Apple Podcasts show notes at `resolved/2026-09-08_WATCH-002.md` make an informed denial possible without an attended session.
+
+**Census:** `pending/` **1** (0 → 1) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` **19**, latest `2026-09-10_decisions.md` · `review/` root holds **1** `*.html` (`2026-09-11_review.html`, 1 card, generated 09-11 04:37) · `PROCESSED_LOG.md` **1097** lines (1066 → 1097, mtime 2026-09-11 15:08). **Review-pass gap: 2 days. Ingest gap: 1 day (zero-yield by design).** Network total **867** PRS triplets, 107 CROSS entries, 93 findings — unchanged, no files ingested.
+
+**Agent 16 Status:** Operational. 0 checks due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15**.
+
+**Open for Tom (re-ranked — items 1 and 2 are time-bounded; former item 5 is closed):**
+1. **PROP-2026-09-11-001 is on a one-card review page right now.** Either read the transcript before disposing of it, or approve it with the retrieval condition recorded somewhere that polls. This is the cheapest instance of the leakage problem that has ever been available, and it expires when the queue refills.
+2. **DEFERRED-CONDITION LEAKAGE ruling, deadline 2026-09-24.** PROP-2026-09-02-002's dated condition falls due in 12 days and nothing holds it. Option (b) — leave OPEN in the ledger any card whose text names a future condition — is one line, needs no new field, and the ingest step has now done it voluntarily for five consecutive runs.
+3. **Decide PROP-2026-08-14-033.** Three failed retrievals; the ingest log now recommends reject-or-hand-retrieve; the show notes make denial informed. No attended session needed.
+4. **One-line INTEGRITY FLAG ruling closes WATCH-003** and empties ACTIVE ITEMS.
+5. ~~Is the Gmail route standing or a one-off?~~ **CLOSED this run** — it is `generate_review_page.py`'s own submit mechanism. The TOOLING FLAG drops to cleanup on *code* grounds: confirm every future proposal carries `proposal_id` in frontmatter and the position-based fallback never fires.
+6. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+7. **FINDING-089's upstream fix** — make a card carrying a retrieval condition un-APPROVE-able in one keystroke alongside 35 others.
+8. **Run-log archival** — this file is now ~610 KiB and the RUN LOG is ~95% of it. Splitting pre-2026-09-01 runs into `deferred/run_log_archive_2026H1.md` would leave ACTIVE ITEMS + FLAGS + RESOLVED INDEX here. Note this run's own corrections both came from reading *source files* rather than this document; the document's length is part of why they took a month to surface.
+9. **Channel 2 question**, standing since 08-23 (20 days unexercised).
+10. **Chat→Cowork sync broken nine days running** — Channel 3 is deaf until Chrome is reconnected or the browser pane is granted standing `claude.ai` access.
+11. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+
+---
+
+*Run completed 2026-09-12.*

@@ -21143,7 +21143,7 @@ non-routing rather than performing it silently (PREMISE-169).*
 
 [ASSUMPTION] ASSUMPTION-1321: The defect is premise propagation, not routing — in all 20 cases the
   originating run acted as if the covering premise did not exist
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-12 — SUPPORTED residual limb only (Strong); mechanism limb PRE-ANSWERED by PREMISE-123/116] [SEARCHED-15b: 2026-09-12 — PARTIALLY-CHALLENGED (Moderate)] [DISPOSITIONED-15c: 2026-09-12 — REVISE limbs A+C (REVISE-459, Critical) / MONITOR limb B (MONITOR-606, Medium), DISPOSITION-948; no premise minted, PREMISE-123/116 predate the observation]
+  Status: [QUEUED]
   Provenance: Origin=14a; Chain=[14a]; Item type=ASSUMPTION (stated — quoted from an agent run report)
   Search strategy: knowledge reuse failure in distributed/multi-agent systems; institutional memory and
     "organizational forgetting"; why documented standards are not consulted at point of work (clinical
@@ -21156,7 +21156,7 @@ non-routing rather than performing it silently (PREMISE-169).*
 
 [PRESUMPTION] PRESUMPTION-959: That replication of a measurement raises its epistemic standing even when
   the same instrument produced every replicate
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-12 — PARTIALLY-SUPPORTED (Weak); PRE-ANSWERED near-verbatim by PREMISE-120] [SEARCHED-15b: 2026-09-12 — CHALLENGED (Strong)] [DISPOSITIONED-15c: 2026-09-12 — REVISE (REVISE-461, High), DISPOSITION-949; no premise minted, PREMISE-120 is this presumption's denial]
+  Status: [QUEUED]
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Search strategy: common-method variance and mono-method bias; the reliability/validity distinction;
     replication by the same instrument vs conceptual replication; measurement invariance. **This item is
@@ -21166,7 +21166,7 @@ non-routing rather than performing it silently (PREMISE-169).*
 
 [PRESUMPTION] PRESUMPTION-960: That 20-of-20 pre-answering is a routing fault to be fixed rather than an
   observation whose interpretation (saturation vs unfalsifiability) is undetermined
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-12 — PARTIALLY-SUPPORTED (Moderate routing-fault framing / Weak-None on settled interpretation)] [SEARCHED-15b: 2026-09-12 — CHALLENGED (Strong); interpretation limb substantially PRE-ANSWERED by PREMISE-135] [DISPOSITIONED-15c: 2026-09-12 — REVISE (REVISE-459 item 3, High), DISPOSITION-950; OPEN-199 NOT ruled, discriminator supplied]
+  Status: [QUEUED]
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Search strategy: theory saturation vs degenerating research programme (Lakatos); unfalsifiability by
     accretion; belief-revision theory on when a closed answer-set is complete vs vacuous; in qualitative
@@ -21176,7 +21176,7 @@ non-routing rather than performing it silently (PREMISE-169).*
     conflating the two is what OPEN-199 exists to prevent.
 
 [PRESUMPTION] PRESUMPTION-968: That a search layer's date errors are incidents rather than a base rate
-  Status: [QUEUED] [SEARCHED-15a: 2026-09-12 — NO-SUPPORT-FOUND (None)] [SEARCHED-15b: 2026-09-12 — CHALLENGED (Strong); item's stated evidence position found FALSE against the register] [DISPOSITIONED-15c: 2026-09-12 — REVISE (REVISE-459 item 4 + REVISE-460), DISPOSITION-951; intake breach of PREMISE-136(2) flagged separately]
+  Status: [QUEUED]
   Provenance: Origin=14b; Chain=[14b]; Item type=PRESUMPTION (unstated — surfaced by inference)
   Search strategy: retrieval-system date/freshness metadata error rates; web archive and CMS republication
     date drift; LLM search-grounding temporal errors and measured rates; near-miss reporting theory (why
@@ -21186,70 +21186,3 @@ non-routing rather than performing it silently (PREMISE-169).*
 
 *Queued by the 14a/14b evening run, 2026-09-11. Four items routed, 23 held in-house with named tests.
 Registers snapshotted as `*.bak.20260911-pre-14eod`.*
-
----
-
-## 2026-09-12 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
-
-**Intake lane served, fifth consecutive cycle.** All 4 routed items of the 2026-09-11 EVENING 14a/14b
-cohort (ASSUMPTION-1321, PRESUMPTION-959, PRESUMPTION-960, PRESUMPTION-968) searched in both directions
-and dispositioned. Tags are inline on the item blocks above. Returns, full dispositions, the ASSUMPTION-
-1320 series note and the run footer are in `lit_search_returns.md` under the 2026-09-12 heading.
-
-**Outcome: 0 INCORPORATE · 1 MONITOR (one limb) · 4 REVISE. Zero premises minted, and the reason is a
-finding rather than an absence** — all four items were found pre-answered on their load-bearing limb by
-an ACTIVE premise or an OPEN flag, by both search directions independently. DISPOSITION-948…951.
-Minted: MONITOR-606; REVISE-459 (Critical, consolidated), REVISE-460, REVISE-461.
-
-**Execution:** two delegated subagents in distinct contexts (15a all-items FOR; 15b all-items AGAINST),
-launched **SEQUENTIALLY — 15a first, 15b second.** This deviates from both agent definitions
-("concurrently with Agent 15a") and is declared rather than left in the timestamps; it is the second
-consecutive cycle to deviate the same way. Orchestrator-written result files: 0 of 9. Read-channel
-independence: 4 of 4, attested in writing in every result file by both agents and in the systemic flag.
-PREMISE-111/197 discount applied throughout — no agreement between the two directions is counted as
-independent confirmation.
-
-**The pre-check named the wrong premises, and both directions found the right ones.** The intake required
-a register pre-check on ASSUMPTION-1321 against PREMISE-174, PREMISE-173 and PREMISE-108. Independently,
-15a and 15b both reported that the covering premises are **PREMISE-123 and PREMISE-116** — neither of
-which the intake named — and that of the three nominated, 174 does not bear and 173 binds remedies rather
-than the diagnosis. A discretionary pre-check that is absent where it was needed (PRESUMPTION-968) and
-inaccurate where it was present (ASSUMPTION-1321) is failing in both directions at once. That is
-REVISE-460.
-
-**15b's Critical SYSTEMIC-RISK-FLAG was ADOPTED, not filed.** The flag named DISPOSITION-948 as its
-primary consumer and asked to be adopted or declined on the record; it is adopted, routed into REVISE-459,
-and its clause requiring a human ruling is routed to Tom by name. Its claim — that in all four items an
-ACTIVE premise or OPEN flag already names the cheap in-house measurement that would settle it, and that in
-none of the four has it been run (178 days of owed measurement, zero executed) — supersedes ASSUMPTION-
-1321's propagation diagnosis for this cohort. The premises did arrive, were read, and were cited; what
-they carried was an obligation to measure. Consumption has occurred; **discharge has not**, and the five
-actions in REVISE-459 are all greps.
-
-**One thing this run declined to do.** OPEN-199 asks whether 20-of-20 pre-answering reads as saturation
-or as unfalsifiability. Both search directions converged on the same runnable discriminator — compare each
-covering premise's mint date against the date of the item it pre-answers; predating is an advance
-prediction, same-day or later is accommodation. **This run supplies the discriminator and does not rule
-OPEN-199.** Ruling it from the chair, in the run that is reporting the fifth consecutive zero-mint cycle,
-would substitute a judgement for the measurement that would make the judgement about evidence.
-
-**BACKLOG — MEASURED this run, not carried.** 151 items carry `Status: [QUEUED]` with neither a
-`[SEARCHED-15a]` nor a `[SEARCHED-15b]` tag (line-level count over `^  Status: \[QUEUED\]`, run
-2026-09-12). This **differs from the 163 the 2026-09-04 block-parser produced and which the 09-08 run
-carried forward**; the discrepancy is stated rather than resolved, and the two numbers are not the same
-measurement — the method differs and neither has been checked against the other. The oldest is from
-2026-07-05, **sixty-nine days**. The backlog is almost entirely the 15d re-trigger lane, which this run
-did not touch. Five consecutive runs have now served the new-intake lane and said so. Naming it a fifth
-time is not a fix and this run does not claim it as one.
-
-**Queue integrity, verified this run.** 0 items searched by both directions and left undispositioned,
-across the whole file (multiline-aware block scan — the four 2026-09-08 items that a line-level scan
-reports as undispositioned all carry `[DISPOSITIONED-15c]` on a continuation line). 0 items searched by
-15a only. Provenance chains complete for all 4 items of this run's scope; PROVENANCE blocks and
-independence attestations present in all 8 result files. **One gap, stated:** the SYSTEMIC-RISK-FLAG file
-carries its routing and its independence attestation but **no formal PROVENANCE block** — it is a
-cross-item flag rather than a per-item result, and the protocol spec does not define a header for that
-object. Recorded as an open protocol gap, not as compliance.
-
-*Run note written by the 15a/15b/15c pipeline, 2026-09-12. Registers snapshotted as
-`*.snapshot-2026-09-12-pre-15c` before any append. This note ends here; nothing below it belongs to it.*

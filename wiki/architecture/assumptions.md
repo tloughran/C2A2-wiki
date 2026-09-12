@@ -23612,3 +23612,372 @@ ASSUMPTION-1317:
 
 *Extracted by the 14a evening run, 2026-09-10 ~23:45 EDT. Registers snapshotted as
 `*.bak.20260910-pre-14eod` before any append.*
+
+ASSUMPTION-1318:
+  Date identified: 2026-09-11
+  Statement: "The Level-2 harvest grew 299 → 1501 signals in one rebuild. A fivefold jump passes the guard
+    unchallenged, because the guard only rejects a >10% *drop*. It's consistent with the 2026-09-10 batch
+    of 36 approvals widening the backlog manifest to 379 cards — but that is my inference, not a
+    verification."
+  Context: `C282 wiki agent daily run`, Phase 5.6, 2026-09-11.
+  Type: methodological
+  Related decisions: none
+  Testability: **in-house and cheap** — read the guard's condition; re-derive 1501 from the 379-card manifest.
+  Status: SUPPORTED (in-house — the asymmetry is a property of the code the run read; the *explanation* is
+    explicitly labelled inference by the run itself and is NOT supported)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1318
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Two claims are bundled and are separated here: (i) the guard is
+        one-directional — supported; (ii) the backlog widening explains the 5× — unverified and so marked
+        by the author. What this register adds: the run flagged it "before it becomes a baseline nobody
+        questions," which is a prediction with a date attached. The asymmetry itself is surfaced as
+        PRESUMPTION-957.
+    Current status: SUPPORTED (in-house, claim (i) only)
+
+ASSUMPTION-1319:
+  Date identified: 2026-09-11
+  Statement: Three mutually inconsistent cross-connection counts were in circulation on one day: **107**
+    ("Network: 867 triplets · 107 connections · 93 findings" — daily run), **131** ("the `131
+    cross-program connections` figure was last stated at the 782-triplet snapshot and wasn't refreshed
+    when triplets went to 867, so treat it as stale" — morning walk handoff), and **135** (CROSS-132..135,
+    the 09-10 ingest and the 09-10 metrics snapshot).
+  Context: three independent runs on 2026-09-11 — `C282 wiki agent daily run`, `Morning walk cowork
+    handoff`, and this register's own prior snapshot.
+  Type: empirical
+  Related decisions: none; ASSUMPTION-1319 supersedes the 135 figure's standing as a measured value
+  Testability: **in-house and decisive** — one count of the cross-connection register settles it.
+  Status: SUPPORTED (in-house — all three figures are in today's record and cannot all be right)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1319
+    Item type: ASSUMPTION (stated — three figures, each stated as fact by its own run)
+    Transform at each step:
+      14a: Assembled from three runs, none of which saw the other two. Recorded as the first instance in
+        this register of a *three-way* numeric divergence; prior instances were two-way. This register
+        reported 135 last night as "[+4 today]" on a run's authority and repeats that it was never counted
+        (PRESUMPTION-822, 29th night). Raised as OPEN-195. The general form is PRESUMPTION-958.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1320:
+  Date identified: 2026-09-11
+  Statement: "Both directions, independently and without seeing each other, reported **20 of 20 items
+    already pre-answered by an ACTIVE premise** — seven verbatim. That replicates the prior two cycles'
+    82% at n=20; it is now measured three times."
+  Context: `C2a2 lit search pipeline`, ~02:30, on the 2026-09-10 14a/14b cohort (ASSUMPTION-1305–1315,
+    PRESUMPTION-947–956).
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1309, OPEN-192
+  Testability: **in-house** — the three measurements are on file; a fourth cohort extends the series.
+  Status: SUPPORTED (in-house — third consecutive measurement, and the first at 100%)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1320
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Note against this register's own interest: the cohort measured is the one
+        *this register produced* on 09-10, so 14a/14b are the instrument under test as much as 15a/15b
+        are. Whether replication by the same instrument strengthens the finding is surfaced as
+        PRESUMPTION-959; whether 20/20 reads as saturation or as unfalsifiability is OPEN-199.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1321:
+  Date identified: 2026-09-11
+  Statement: "15b's Critical flag puts the defect further upstream: in all 20 cases the *originating* run
+    acted as if the covering premise did not exist — premise propagation, not routing. **OPEN-192 is the
+    ruling this turns on, and it is unruled.**"
+  Context: `C2a2 lit search pipeline`, ~02:30; third systemic-risk flag of the run
+    (`premise-propagation-not-routing`), independently echoed by PRESUMPTION-948 the prior night.
+  Type: architectural
+  Related decisions: none; OPEN-192, REVISE-449, PREMISE-174
+  Testability: testable via literature (knowledge reuse / institutional memory in distributed systems)
+    **and** in-house (count citations of ACTIVE premises by originating runs).
+  Status: SENT-TO-15a, 15b
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1321
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim and routed. Recorded as a relocation of the defect, not a new defect: the
+        09-10 cycle diagnosed it at the routing layer and proposed a grep; tonight's pipeline rejects that
+        siting. This register is one of the originating runs implicated — it cited no ACTIVE premise when
+        extracting the 09-10 cohort, and does not do so systematically tonight either.
+    Current status: SENT-TO-15a, 15b
+
+ASSUMPTION-1322:
+  Date identified: 2026-09-11
+  Statement: "**One premise minted from twenty items** — PREMISE-204, from ASSUMPTION-1307's conditional
+    limb (aggregated authorisation carries item-level warrant only with a pre-specified class, bounded
+    scope, asymmetric authority, and an automatic fall-out rule). The item's stated absolute form was
+    explicitly declined: 45 CFR §46.110 expedited IRB review is a working counterexample."
+  Context: `C2a2 lit search pipeline`, ~02:30. Three further candidate mints declined on stated grounds,
+    two because their whole evidential basis was unretrieved paywalled standards.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1307 (its parent), PREMISE-204
+  Testability: searched in both directions and dispositioned; the four conditions are in-house testable
+    against the 09-10 batch APPROVE, which satisfied none of them.
+  Status: SUPPORTED (minted as PREMISE-204 after bidirectional search)
+  Provenance:
+    Origin: 14a
+    Chain: [14a → 15a, 15b → 15c → 14a]
+    Original item: ASSUMPTION-1322
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted 1307 on 09-10 in its absolute form; records here that the absolute form was declined
+        and the conditional limb minted. A 1-in-20 mint rate is the register's lowest yield per cohort on
+        record, and the run states three of the four declines rested on unretrievable sources rather than
+        on the claims being weak — which is a retrieval-floor fact, not an epistemic one.
+    Current status: SUPPORTED
+
+ASSUMPTION-1323:
+  Date identified: 2026-09-11
+  Statement: "15c dispositioned that remedy **REVISE, not INCORPORATE** (REVISE-449): PREMISE-174 holds
+    that a register with expansion and no contraction cannot revise, so a grep suppressing search on
+    pre-answered items would render all 158 ACTIVE premises unfalsifiable by construction."
+  Context: `C2a2 lit search pipeline`, ~02:30, on ASSUMPTION-1309's proposed pre-route grep.
+  Type: epistemic
+  Related decisions: none; ASSUMPTION-1309, PRESUMPTION-948, PREMISE-174
+  Testability: framework commitment (follows from PREMISE-174, itself ACTIVE)
+  Status: SUPPORTED (in-house — the remedy this register proposed yesterday was rejected on its own
+    register's grounds)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1323
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded because it is the cleanest case on file of the estate refusing its
+        own proposed efficiency on falsifiability grounds, and because 14b reached the identical objection
+        by inference the same night (PRESUMPTION-948) without either seeing the other. That convergence is
+        a datum about the 14a/14b split, not only about the remedy.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1324:
+  Date identified: 2026-09-11
+  Statement: "ASSUMPTION-1310 — whether assigned devil's advocacy makes 15b a bolsterer rather than a
+    challenger — was **not ruled**. Every load-bearing source in both directions is SECONDARY or
+    UNVERIFIED, including Schwenk 1990, the one meta-analysis, which neither direction could retrieve…
+    One datum did emerge: 15b returned NO-CHALLENGE-FOUND on ASSUMPTION-1311, declining to manufacture a
+    case — 1 of 20. The in-house test that would settle it (count 15b's historical NO-CHALLENGE-FOUND rate
+    across all prior items; one grep) is unowned for a sixth cycle."
+  Context: `C2a2 lit search pipeline`, ~02:30. Held at MONITOR-599, sustained and re-founded.
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1310, MONITOR-599
+  Testability: **in-house and one command**; the literature route is blocked at the retrieval floor.
+  Status: UNTESTED (MONITOR-599 sustained; 1/20 is the only datum and is too small to rule on)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1324
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded against interest: a one-grep test bearing on whether half the
+        search apparatus functions has now gone six cycles unowned while the apparatus produced 40 more
+        result files tonight. The 1-in-20 NO-CHALLENGE rate is consistent with both the bolstering
+        hypothesis and its negation at this n.
+    Current status: UNTESTED
+
+ASSUMPTION-1325:
+  Date identified: 2026-09-11
+  Statement: Two runs reached opposite conclusions about the same blocker, hours apart. Lit pipeline:
+    "PRESUMPTION-952 converts to a single command, not a search: `sqlite3 'file:…?mode=ro'` needs no
+    byte-copy (VERIFIED against sqlite.org), though `immutable=1`/`nolock=1` carry explicit SQLITE_CORRUPT
+    warnings against a live writer. That is REVISE-455 and it is answerable today." Metabolism regen:
+    "the SQLite backup-API copy of the ~3 GB live `open-story.db` exceeds sandbox disk… So the sandbox was
+    not attempted; it is **structurally unable**."
+  Context: `C2a2 lit search pipeline` (~02:30) and `Metabolism regen daily` (same day); neither cites the
+    other and no mechanism exists for either to learn of the other.
+  Type: architectural
+  Related decisions: none; PRESUMPTION-952, REVISE-455
+  Testability: **in-house and immediate** — run the read-only URI against the live db once.
+  Status: SUPPORTED (in-house, asymmetrically: the `mode=ro` claim is verified at sqlite.org; the
+    "structurally unable" claim rests on a copy path the other run says is not required)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1325
+    Item type: ASSUMPTION (stated — two conflicting statements, both quoted)
+    Transform at each step:
+      14a: Assembled from two runs. Per the charter's contradiction rule both sides are flagged and
+        neither is adjudicated here. Collateral: the database's size is given as ~3 GB (metabolism), 6 GB
+        (lit pipeline) and 6.3 GB (09-10 changelog) in three places — a second, smaller divergence of the
+        same shape as ASSUMPTION-1319. The general form is PRESUMPTION-961.
+    Current status: SUPPORTED (in-house, with the contradiction unresolved by design)
+
+ASSUMPTION-1326:
+  Date identified: 2026-09-11
+  Statement: "This task cannot run unattended as currently configured… a prefix allow-rule in
+    `.claude/settings.json`, the mechanism noted in your CLAUDE.md corollary — **a sentence in CLAUDE.md
+    cannot grant it**… That is the cleaner fix; this task has no reason to need a model in the loop at all
+    (Rule 5: code can answer, so code should answer)."
+  Context: `Metabolism regen daily`, 2026-09-11. Desktop Commander call auto-declined ("no one was
+    available to approve it"); snapshot now **8 days stale** (generated 2026-09-03T12:22); the freshness
+    gate was never evaluated.
+  Type: architectural
+  Related decisions: none; ASSUMPTION-1313 (09-10), CHANGE-2026-09-10-09
+  Testability: **in-house** — either remedy is a configuration change with an observable outcome tomorrow.
+  Status: SUPPORTED (in-house — repeated failure across 08-01, 08-06, 09-06, 09-10, 09-11; the
+    publisher's own 36 h freshness gate was breached at 65 h on 09-06 and is now at ~192 h)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1326
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as the first statement in this estate that a capability *cannot*
+        be granted by prose in a governance file — a claim about the relation between the estate's written
+        rules and its enforcement surface, and therefore broader than the metabolism task. Raised as
+        OPEN-197. The run also states the task needs no model, which if true makes a scheduled Cowork task
+        the wrong container for it.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1327:
+  Date identified: 2026-09-11
+  Statement: "Decisions now arrive via **Gmail**, not the generated review page, carrying both id and
+    filename… The position-based-ID bug the INTEGRITY FLAG blamed is out of the path — *if* that route is
+    standing. That's a one-line question for you and it decides whether the `generate_review_page.py` fix
+    is correctness-critical or cleanup."
+  Context: `C2a2 deferred action monitor`, 2026-09-11; `review/` root holds zero HTML pages.
+  Type: architectural
+  Related decisions: none; the INTEGRITY FLAG
+  Testability: not testable by search — it is a question about Tom's intended workflow.
+  Status: UNTESTED (blocked on a one-line ruling; raised as OPEN-196)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1327
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded because it is the rare case where a *human habit* is load-bearing
+        for a correctness classification: the same code defect is either critical or cosmetic depending on
+        a route nobody has declared. Collateral fact from the same run, machine-verified: the 09-10 batch
+        closes exactly (36 cards / 36 dispositions, all ids unique, every date-prefix matching its
+        filename) — the first auditable pass since the INTEGRITY FLAG was raised.
+    Current status: UNTESTED
+
+ASSUMPTION-1328:
+  Date identified: 2026-09-11
+  Statement: "the systemic fix I'd been recommending is invalid as worded. It keys on a `content_verified`
+    frontmatter field that appears in **zero of 414** approved files."
+  Context: `C2a2 deferred action monitor`, 2026-09-11, on the DEFERRED-CONDITION LEAKAGE remedy.
+  Type: methodological
+  Related decisions: none; DEFERRED-CONDITION LEAKAGE FLAG
+  Testability: **in-house, already measured** (0/414).
+  Status: SUPPORTED (in-house, machine-counted)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1328
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as the estate's first self-invalidated remedy: a fix recommended
+        across multiple cycles and awaiting a human ruling was found to reference a field that does not
+        exist anywhere in the corpus it would operate on. The cost is the cycles the recommendation
+        occupied while unrulable in principle. Bears directly on PRESUMPTION-949 (naming is not
+        disposition) and PREMISE-173.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1329:
+  Date identified: 2026-09-11
+  Statement: "PROP-2026-09-02-003 asked to be retrieved *before ingestion* and was ingested anyway, and
+    PROP-2026-09-02-002 carries a dated condition — 'queue a retrieval check after 2026-09-24' — that
+    nothing holds. **On 09-24 nothing will fire.**"
+  Context: `C2a2 deferred action monitor`, 2026-09-11. The DEFERRED-CONDITION LEAKAGE FLAG was escalated
+    open → urgent; the pattern detector reached the same conclusion independently from the ingestion end
+    (FINDING-089: "the retrieval queue still does not exist… it is now at least 10").
+  Type: architectural
+  Related decisions: none; FINDING-089, Channel 4 (unopened)
+  Testability: **in-house and self-falsifying on a date** — 2026-09-24 settles it.
+  Status: SUPPORTED (in-house — two independent runs, one from each end of the pipeline)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1329
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded as the estate's second stated self-falsification criterion with a
+        counter attached (the first was ASSUMPTION-1316) and the first with a calendar date: thirteen days
+        from tonight, an unheld condition either fires or visibly does not. The ruling (open Channel 4 or
+        not) is Tom's and the abstention's cost is on the record.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1330:
+  Date identified: 2026-09-11
+  Statement: "A quiet upstream and a skipped search look identical in a proposal count, so the searches
+    are named in the log." — stated while reporting a Phase 2 zero, having searched the four stalest
+    traditions (Wolfram, Arkani-Hamed, Fredrickson, Stump) directly and found all four genuinely quiet
+    inside the 60-day window.
+  Context: `C282 wiki agent daily run`, 2026-09-11.
+  Type: methodological
+  Related decisions: none; OPEN-194 (raised 09-10), ASSUMPTION-1312
+  Testability: **in-house** — the log either names the searches or it does not.
+  Status: SUPPORTED (in-house — the convention was practised today)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1330
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded because OPEN-194 asked for exactly this convention on 09-10 and a
+        different run adopted it on 09-11 **without citing OPEN-194** — an instance of the
+        premise-propagation defect (ASSUMPTION-1321) operating in the favourable direction, which is why
+        it is easy to miss. OPEN-194 remains OPEN in the register and the convention remains uncodified in
+        any task file, so it holds by today's judgement only. Surfaced as PRESUMPTION-963.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1331:
+  Date identified: 2026-09-11
+  Statement: "The Cornell 'Three cheers for "Shut up and Calculate!"' lecture surfaced twice as a
+    September 2026 event and reads as squarely on-target for Active Question 5. The article is bylined
+    **9/19/2017** — the 'September 25' is 2017. A nine-year-old page that the search layer presented as
+    current. Same shape as the Fridman×Hoffman fabrication already in the retrieval-traps memory; the
+    byline is what caught it."
+  Context: `C2a2 agent carroll arkanihamed`, 2026-09-11, rejecting an Arkani-Hamed candidate.
+  Type: methodological
+  Related decisions: none
+  Testability: **in-house** — count approved cards whose source *date* was verified against the page
+    rather than taken from the search result.
+  Status: SUPPORTED (in-house — byline read directly on the page)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1331
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Second recorded date-fabrication by the search layer, and the second caught
+        by a check no task file requires. Recorded with the catch, not only the trap: the detection method
+        (read the byline, not the snippet) is cheap, repeatable and currently uncodified. Generalised as
+        PRESUMPTION-968.
+    Current status: SUPPORTED (in-house)
+
+ASSUMPTION-1332:
+  Date identified: 2026-09-11
+  Statement: "**Path correction (flag for the SKILL file).** The task file gives the wiki root as
+    `.../Documents/Claude/RC Karpathy Wiki Project/wiki/`. The real path has a `Projects/` segment…
+    The SKILL.md should be fixed or a future run will write into a directory that doesn't exist."
+  Context: `C2a2 agent carroll arkanihamed`, 2026-09-11. The run used the real path and completed.
+  Type: architectural
+  Related decisions: none
+  Testability: **in-house and immediate** — one path check.
+  Status: SUPPORTED (in-house — verified by the run that hit it)
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1332
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim. Recorded because the repair is outside the reporting agent's write scope
+        and was therefore not made — the exact pattern PRESUMPTION-956 named on 09-10, recurring the next
+        day in a new instance. A silent-success failure mode is implied and not stated: a run that
+        *didn't* notice would create the wrong directory and report success.
+    Current status: SUPPORTED (in-house)
+
+*Extracted by the 14a evening run, 2026-09-11. Fifteen items (1318–1332). Registers snapshotted as
+`*.bak.20260911-pre-14eod` before any append. No attended session; all items agent-stated — twelfth
+consecutive day (PRESUMPTION-912).*

@@ -2462,3 +2462,94 @@ OPEN-194:
     Original item: OPEN-194
     Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
     Current status: OPEN
+
+OPEN-195:
+  Date raised: 2026-09-11
+  Question: Which cross-connection count is correct — 107, 131, or 135 — and what is the authoritative
+    source for it? All three were stated as fact on 2026-09-11 by three runs that could not see each other
+    (ASSUMPTION-1319); the same day produced a second, smaller divergence on the OpenStory database size
+    (~3 GB / 6 GB / 6.3 GB).
+  Why it matters: connection count is one of five headline network figures and appears in this register's
+    metrics series, in the master wiki, and in every daily run banner. Cheap fix: one machine count of the
+    cross-connection register, and a single named file declared authoritative. The more useful output is
+    how many of the three figures turn out wrong.
+  Status: OPEN — one command plus a naming decision. Related: PRESUMPTION-958, PRESUMPTION-822.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-195
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-196:
+  Date raised: 2026-09-11
+  Question: Is the Gmail decision route standing, or was 2026-09-10 a one-off? Decisions now arrive by
+    email carrying both proposal id and filename, `review/` root holds zero HTML pages, and the
+    position-based-ID bug the INTEGRITY FLAG blamed is therefore out of the path — if that route persists
+    (ASSUMPTION-1327).
+  Why it matters: the same code defect in `generate_review_page.py` is correctness-critical or cosmetic
+    cleanup depending on the answer, and no amount of agent work can determine it. One line from Tom
+    reclassifies an open engineering item.
+  Status: OPEN — requires Tom. Nothing else blocks.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-196
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-197:
+  Date raised: 2026-09-11
+  Question: Does the metabolism regeneration get an unattended execution grant (a prefix allow-rule in
+    `.claude/settings.json`), or does it move off Cowork scheduling onto a launchd agent? The run states
+    flatly that "a sentence in CLAUDE.md cannot grant it" and that the task needs no model in the loop at
+    all (ASSUMPTION-1326).
+  Why it matters: `metabolism_data.json` is 8 days stale, the publisher's own 36 h freshness gate was
+    breached at 65 h on 09-06 and nothing has regenerated since 09-03, and the task has now failed
+    unattended on 08-01, 08-06, 09-06, 09-10 and 09-11. A scheduled task that cannot succeed by
+    construction is consuming a slot and producing a daily failure report. Either remedy ends that; a third
+    option — retiring the scheduled task — is not on the table but should be named.
+  Status: OPEN — requires Tom (configuration or re-hosting). Related: PRESUMPTION-961, ASSUMPTION-1313.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-197
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-198:
+  Date raised: 2026-09-11
+  Question: Should a proposal card that yields nothing on N successive retrieval attempts expire
+    automatically, and what is N? PROP-2026-08-14-033 has now burned four runs; every refusal was correct
+    conduct, and the cumulative retrieval cost is recorded nowhere (PRESUMPTION-964).
+  Why it matters: the card is the sole occupant of the compile queue, so it makes the queue appear live
+    while producing nothing, and the decision to carry or discard it has been addressed to a person on four
+    separate days. An N-strikes rule converts four pending human decisions into zero. Related:
+    PRESUMPTION-951, PREMISE-154.
+  Status: OPEN — requires Tom, or a convention the daily run can adopt.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-198
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-199:
+  Date raised: 2026-09-11
+  Question: Does 20-of-20 pre-answering indicate that the premise register has **saturated** its domain
+    (success — licenses shrinking the search apparatus) or that it has become **unfalsifiable** (failure —
+    licenses expanding it)? Three cycles have measured the rate and each proposed a mechanism; none asked
+    which of the two readings holds (PRESUMPTION-960).
+  Why it matters: this question sits **upstream of OPEN-192**, which asks for a ruling on the mechanism
+    (routing vs propagation). Both candidate mechanisms presume a third reading — inefficiency — that
+    neither saturation nor unfalsifiability supports, and the two supported readings imply opposite actions.
+    Ruling OPEN-192 without ruling this one selects a reading by implication. Cheap discriminating test:
+    sample the seven verbatim pre-answers and ask of each whether the premise settles the item or merely
+    shares its vocabulary.
+  Status: OPEN — requires Tom for the reading; the discriminating test is in-house and unowned.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-199
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN

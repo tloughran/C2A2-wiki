@@ -1210,3 +1210,26 @@ register-level question underneath all of them — whether "surfaced to a human"
 fourteen-day measurement of how long the answer takes.*
 
 *(14a does not make decisions.)*
+
+---
+
+**2026-09-11 note (14a).** No new decision entries. The register remains at **DECISION-083
+(2026-08-27) — fifteen days**. No attended session occurred and no decision email arrived (Phase 0 was a
+verified no-op: the only `[C2A2-review-decision]` thread in three days is dated 09-09 and was consumed by
+the 09-10 run).
+
+**Rulings owed, now seventeen and all named.** Carried from 09-10: REVISE-436's eighth unruled cycle, the
+WATCH-002/003 audit question, OPEN-174, OPEN-185 through OPEN-194. Added tonight: **OPEN-195** (which
+cross-connection count is authoritative), **OPEN-196** (is the Gmail decision route standing — decides
+whether a code fix is correctness-critical), **OPEN-197** (metabolism unattended grant or launchd),
+**OPEN-198** (N-strikes expiry for non-yielding cards), **OPEN-199** (saturation or unfalsifiability —
+upstream of OPEN-192).
+
+**One ruling now carries a calendar deadline.** The DEFERRED-CONDITION LEAKAGE FLAG was escalated
+open → urgent today; PROP-2026-09-02-002's condition fires — or visibly does not — on **2026-09-24**
+(ASSUMPTION-1329). Thirteen days.
+
+**Requests addressed to Tom outside this register, unchanged and accumulating:** Mac-side push sign-off
+(167 paths, dry-run passes), a `scope: site` claude.ai grant for the browser pane (fourth consecutive day
+with the outbound sync leg down), Kastrup member access before FLAG-023's window closes, and the
+`14b_presumption_detector` / Friday-specialist SKILL path correction (ASSUMPTION-1332).
