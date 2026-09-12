@@ -15,7 +15,7 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-272 - Extreme Unction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-08-12T00:22:28"
+last_qc_at: "2026-09-11T10:30:01"
 last_qc_outcome: "pass"
 tags: [summa, day/272, pars/suppl, q/29-30]
 ---

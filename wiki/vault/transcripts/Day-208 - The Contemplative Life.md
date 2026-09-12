@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-208 - The Contemplative Life - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/208, pars/II, q/180 q/181]
-last_qc_at: "2026-07-27T08:19:27"
+last_qc_at: "2026-09-11T00:25:01"
 last_qc_outcome: "pass"
 ---
 

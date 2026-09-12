@@ -3,10 +3,10 @@ day: 134
 title: Required Almsgiving (Contemporary)
 pairs_with: "[[Day-134 - Required Almsgiving]]"
 length_target_words: 3000
-length_actual_words: 2557
-length_ratio_to_target: 0.852
+length_actual_words: 2851
+length_ratio_to_target: 0.950
 length_tier: long
-length_note: "Came in under the 3000 long target (0.852, advisory — within ±25%). Per the length policy's long-tier guidance, the synthesis picks the three most generative threads from the eighteen articles — act-identity as formal cause (Hoffman/Friston), required help grounded in the Universal Christ and discharged by resource-bounded allocation, and the Matthew-18 correction protocol read as the C2A2 inter-perspective dialogue mechanism — rather than mirroring every article. The under-target reflects disciplined selection, not thin linkage; the Q.33 thread runs at full substantive length. Substantive integrity over word count."
+length_note: "RECOUNTED 2026-09-11 and the premise of the prior note is RETIRED, not merely corrected. The stored 2557 UNDERSTATED the body by 294 words — the recorded one-directional arithmetic-staleness pattern — and the true layout-aware count is 2851, ratio 0.950, which is INSIDE the long tier's plus-or-minus-10-percent band. The prior note excused an under-length that does not exist: it justified 0.852 on the ground that the synthesis selects three generative threads from the eighteen articles rather than mirroring every article. That selection description remains an accurate account of the file's method (act-identity as formal cause, required help grounded in the Universal Christ and discharged by resource-bounded allocation, and the Matthew-18 correction protocol read as the C2A2 inter-perspective dialogue mechanism), but it is no longer doing length-justification work, because no justification is needed. Recorded as an instance of the standing shape in which a length_note self-certifies from a bad count: here the bad count ran in the harmless direction, so the note suppressed no flag — but it did make a compliant file read as a disciplined exception, which is its own small misreport. Prose untouched; frontmatter arithmetic only."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception — the act's icon vs. its underlying reality)"
   - "traditions/friston/prs_triplets.md (PRS-04 behavior as readout of an internal model; PRS-10 expected-free-energy allocation; PRS-06 mutual modeling)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Material-vs-formal act (Q.32 a.1) reframed mind-firs
 mind_first_reframe: "An act's moral identity is set by its formal cause — the intention / generative model behind it — not by its material surface (Q.32 a.1): the same $10 is charity or theft-cover depending on the mind it serves (Hoffman icon-vs-reality; Friston PRS-04). Required almsgiving reads the neighbor's need as the whole's need — the Universal Christ in the least (Rohr PRS-03) — and rations help under finitude (Friston PRS-10). Fraternal correction (Q.33) is the charitable protocol for truth-telling across perspectives: graduated escalation (private, then witnesses, then community), evidence-seeking, aimed at the other's restoration to the bond, forborne when it would backfire, and licensed only from a stance that owns its own limitation (a.5) — which is MacIntyre's tradition-constituted rational correction and Tom's C2A2 detector in nuce."
 central_theme_thread: "Fraternal correction operationalizes the central theme's social half. The theme says limited perspectives need 'guidance from those who perceive more of the whole than we do' — but how does a limited perspective correct another without coercion, when neither sees the whole? Matthew 18's protocol answers: own your own limitation first (a.5), approach privately, escalate only as needed, bring witnesses so the correction rests on shared evidence rather than one perspective's assertion, and aim always at the other's amendment — re-inclusion in the bond — not at his condemnation. This is exactly how perspective-bounded agents compute toward loving unity together: charitable, evidence-producing, amendment-aimed dialogue. It is the C2A2 accelerator/detector's own design, found already in the Gospel."
 tags: [synthesis, day/134, theme/correction-as-dialogue]
-last_qc_at: "2026-09-01T20:23:18"
+last_qc_at: "2026-09-11T14:30:18"
 last_qc_outcome: "rewrote"
 ---
 

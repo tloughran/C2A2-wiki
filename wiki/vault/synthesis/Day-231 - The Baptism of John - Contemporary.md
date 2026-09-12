@@ -5,7 +5,7 @@ pairs_with: "[[Day-231 - The Baptism of John]]"
 length_target_words: 2200
 length_actual_words: 1349
 length_ratio_to_target: 0.613
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated."
+length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated. VERIFIER ANSWER, 2026-09-11: read fresh and CONFIRMED complete, not truncated — Frame/Problem/Resource/Solution/central-theme/Bridges/closer all present, survives-reframes-evidence all explicit, every id verified at the register. Layout-aware recount 1366 against the declared 1349 (+17, heading-convention scale), so the note is NOT self-certifying from an understated count. No repair made; no words added. BUT the ratio is 0.621, outside +-25%, which is a Step-4 escalation trigger reading 'tier may be wrong'. Tier tested and it is NOT wrong: the paired transcript is 2082 cleaned words, which is medium (2000-3500) by the letter of the policy. It sits 82 words — 4.1 percent — above the short/medium boundary, and crossing that boundary raises the target from 1500 to 2200, a 46.7 percent step. Measured against the short target this file reads 0.911, comfortably in band. The tier function is a step, and this file is a boundary case; the gate is firing on the step, not on a defect. ESCALATED to Tom in the QC log as a gate-design question, not as a fault in this file."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-02 faithful improvisation)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updati
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-09-04T06:31:53"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-11T04:25:47"
+last_qc_outcome: "pass"
 ---
 
 # Day 231 — Contemporary Parallel: The Forerunner and the Formation of Readiness

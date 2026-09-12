@@ -18,8 +18,8 @@ length_note: "Recounted 2026-08-31: true post-repair count 1199, ratio 0.545, st
 mind_first_reframe: "A sacrament is an enacted, world-changing prediction whose efficacy lies in coupling a public sign to the dispositional-and-communal state it helps constitute; judgement is the whole rendering each limited part's enacted history true."
 central_theme_thread: "Judgement is the whole rendering each perspective-limited agent's real trajectory legible, and the sacraments are how limited agents who cannot see the whole are coupled to it."
 tags: [synthesis, day/242, theme/sign-that-effects]
-last_qc_at: "2026-09-04T08:23:58"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-11T10:30:03"
+last_qc_outcome: "pass"
 ---
 
 # Day 242 — Judgement & Sacrament (Contemporary Parallel)

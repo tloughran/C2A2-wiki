@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-221 - Christ's Wills - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/221, pars/III, q/17 q/18]
-last_qc_at: "2026-08-31T04:26:50"
+last_qc_at: "2026-09-11T04:25:32"
 last_qc_outcome: "pass"
 ---
 

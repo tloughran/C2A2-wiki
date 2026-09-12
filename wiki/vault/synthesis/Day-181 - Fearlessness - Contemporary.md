@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "Wright canonical: the fear of the Lord as accurate orientation to the One who holds life and death (Surprised by Hope). NOTE: declination re-tested 2026-09-02 against traditions/wright/prs_triplets.md at 59 entries (was 41) — no triplet treats the fear of the Lord, awe, or reverence. Cited canonically and the gap stated."
 evidence_strength_summary: "Precision-weighting of threat and the approach/avoidance balance are formal/empirical (Friston, Fredrickson, affective neuroscience); the claim that one *ought* to fear God and the loss of higher goods rests on a theological premise (Wright, Rohr) the formalism cannot supply."
 tags: [synthesis, day/181, theme/threat-calibration, theme/fearlessness, q/126, q/127]
-last_qc_at: "2026-09-02T06:36:01"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-11T16:22:39"
+last_qc_outcome: "pass"
 ---
 
 # Day 181 — Fearlessness (Contemporary)
