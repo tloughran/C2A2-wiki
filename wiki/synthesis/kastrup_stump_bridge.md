@@ -47,3 +47,19 @@
 **Open question the wiki cannot yet answer:** If suffering requires a subject that takes its own state as object, does Stump's Incarnate Christ (who suffers) count as meta-conscious in Kastrup's sense, and does that make the Incarnation a dissociation? Neither tradition has been asked.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-02_kastrup_mind-at-large-agency-suffering-self-awareness]]
+
+
+---
+
+## Aquinas's substance without hylomorphism
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-09-09_kastrup_god-soul-problem-of-evil-hecht.md` (0 backlinks).
+
+**Why it sits here:** Hecht's position paper, published by Kastrup's own foundation ahead of the 15 September session, takes Aquinas's definition of substance — an entity existing by itself, apart from its accidents — and applies it inside an idealist ontology, to license "immaterial substance" without importing substance dualism. The postmortem soul is then reconstructed in Kastrup's own vocabulary: a psychically dissociated alter whose dissociation no longer extends into physicality as a body.
+
+**Synthesis claim:** The move is partial in a way that decides everything. Hecht takes the definition and drops hylomorphism — and hylomorphism is what does the work for Aquinas, because it explains how a soul is the form of *this* body rather than an immaterial thing in the vicinity of one. **Without it, "substance" is doing no more than marking ontological independence, which is a much weaker notion than Aquinas's and is compatible with almost anything.** Stump's separated soul is individuated by its relation to the matter it informed; Hecht's alter is individuated by a dissociative boundary that has stopped extending into physicality. These are not the same claim and a bridge that treats them as the same claim will be wrong in the specific way the wiki is prone to: agreement produced by a shared word.
+
+**Open question the wiki cannot yet answer:** Can an alter be individuated at all without a body to have been dissociated *around*? Kastrup's dissociation is, in the standard exposition, dissociation of universal consciousness into a living organism's boundary. Remove the organism and it is unclear what sustains the boundary, or what makes this alter that one. Aquinas has an answer to the parallel question and it is hylomorphic. Hecht needs one and the announcement does not supply it. **That gap, not the theism, is where the real Kastrup–Stump argument is**, and it is available before the recording exists.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-09_kastrup_god-soul-problem-of-evil-hecht]]

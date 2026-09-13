@@ -38,3 +38,19 @@ This is a testable claim about the instrument, not a philosophical preference, a
 **Companion item, same week.** PROP-2026-07-06-002 supplies the other half: longevity as persistence of a large-scale informational pattern across substrate turnover is structurally the C2A2 claim about traditions persisting through membership turnover. **Where the analogy breaks and should be recorded as breaking:** a tradition's members can dissent, and dissent is one of the mechanisms by which a tradition stays alive. A cell cannot. Any transfer of Levin's multi-scale machinery to traditions has to carry a term for productive internal disagreement that the biological case does not need — which is, notably, the same term over-alignment names.
 
 **Question the wiki cannot yet answer.** Is there a measurable proxy for "local optimization preserved" in Rung-2 interaction data — something distinguishing a participant who has understood a rival position from one who has adopted it? Without it, the over-alignment constraint is unenforceable in practice.
+
+
+---
+
+## Two predictions about the same instrument, opposite in sign
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-12_levin_llms-as-cognitive-virus.md` (0 backlinks).
+
+**Why it sits here:** Solé, Krakauer, Levin and colleagues model LLM adoption as an epidemic over three states — uncoupled, coupled, persistently dependent — and find tipping points, technological lock-in, and abrupt population-level loss of cognitive competence past a critical adoption threshold. C2A2's founding wager is that rich, AI-mediated exposure to rival traditions improves judgement. Both are claims about what happens to human cognitive competence under heavy AI mediation, and they point in opposite directions.
+
+**Synthesis claim:** This is the rarest item the sewing agent has routed: **a falsifiable pair rather than a homology.** The project's habit — the wiki's habit — is to file cross-tradition contact as convergence, and the accumulated convergences are individually plausible and collectively unfalsifiable. Here a co-author of one of the network's own traditions has published a model that predicts the accelerator's apparatus makes its participants worse, with an order parameter and a threshold. The two predictions are not rivals in the abstract; they are rivals about the same measurements the instrument already takes. If the wiki can register revision events — a participant changing position after rich exposure — it can in principle register the dependence transition in the same data, and the disagreement becomes an observation rather than a debate.
+
+**Open question the wiki cannot yet answer:** What would count as the dependence reading winning, stated now, before any data exists to be read either way? This is the whole value of the pair and the wiki does not have it. Candidates: revision events rising in frequency while declining in the quality of the position revised *to*; participants reproducing an AI-supplied framing they cannot defend under questioning; a drop in unprompted objection rate. Each needs a threshold and a control, and **a criterion chosen after the data is in is not a criterion.** The project should commit to one while it still has nothing to lose by doing so.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-12_levin_llms-as-cognitive-virus]]

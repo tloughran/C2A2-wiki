@@ -21129,7 +21129,12 @@ MONITOR-545
   Priority: High — the claim is conditional, but its antecedent (a non-quiescent queue) is
     independently established inside this register by PREMISE-106 and PREMISE-095, both of which
     record the lit-search queue in the unstable regime with arrivals exceeding service.
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-783
 
 MONITOR-546
@@ -21162,7 +21167,12 @@ MONITOR-546
   Cadence: Weekly until the empirical re-search is run; fortnightly thereafter
   Priority: High (NOVELTY-flagged; declared-degraded search on the decisive limb; currently carried
     under an unsupported provenance label)
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-784
 
 MONITOR-547:
@@ -21292,7 +21302,12 @@ MONITOR-549:
   Cadence: Weekly
   Priority: HIGH — carries 15b's SYSTEMIC-RISK-FLAG (High) jointly with PRESUMPTION-861, and the
     two compound: an unbounded backlog documented in an unbounded stack of reports.
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-798
 
 --------------------------------------------------------------------------------
@@ -21351,7 +21366,12 @@ MONITOR-550:
     unasked comparative question rather than an unaddressed phenomenon, and the practical
     prescription (report the check's own scope as a first-class field) is already authorised by
     PREMISE-097 and PREMISE-172, so nothing is blocked by leaving this open.
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-804
 
 MONITOR-551:
@@ -21373,7 +21393,12 @@ MONITOR-551:
     converts this to REVISE without further literature.
   Cadence: Weekly
   Priority: HIGH (Critical SYSTEMIC-RISK-FLAG 1 member)
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-808
 
 MONITOR-552:
@@ -21395,7 +21420,12 @@ MONITOR-552:
     directly, which needs no literature.
   Cadence: Weekly
   Priority: HIGH (closed loop with PRESUMPTION-875; the narrowing decision is live and irreversible)
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-812
 
 MONITOR-553:
@@ -21418,7 +21448,12 @@ MONITOR-553:
     resolves. Also: measure the register's stale-exposure rate directly (15b's test).
   Cadence: Weekly
   Priority: HIGH (Critical SYSTEMIC-RISK-FLAG 2 member; carries the batch's cheapest cross-cutting fix)
-  Next 15d check: 2026-09-01
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-813
 
 ================================================================================
@@ -21501,7 +21536,12 @@ MONITOR-554:
     adjacent fields of the SAME internal record in a self-authored knowledge base; all located work
     concerns external bibliographic metadata) and is adjacent to SYSTEMIC-RISK-2026-08-26-A, since
     every splice of this kind RESOLVES and is therefore invisible to any resolution-based check.
-  Next 15d check: 2026-09-02
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-815
   PROVENANCE:
     Origin: 14a
@@ -21584,7 +21624,12 @@ MONITOR-555:
     repair loop, where the system enforcing the rule and the system causing the overrun are the same
     system), the practical prescription is already authorised elsewhere, and nothing is blocked by
     leaving this open. Member of SYSTEMIC-RISK-2026-08-26-A.
-  Next 15d check: 2026-09-02
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Disposition ref: DISPOSITION-816
   PROVENANCE:
     Origin: 14a
@@ -21842,7 +21887,12 @@ SYSTEMIC-RISK-2026-08-26-B:
     an agent may fill. No agent may install a timeout disposition on its own motion. The allocation
     is Tom's to make and it is the single question the revision flags in this batch put to him.
   Cadence: Weekly while the gate's disposition rate is zero; monthly once it is positive.
-  Next 15d check: 2026-09-02
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Member dispositions: DISPOSITION-817 (REVISE-394), -818 (REVISE-395), -819 (REVISE-396),
     -821 (REVISE-398), -822 (REVISE-399), -823 (REVISE-400), -824 (REVISE-401), -825 (MONITOR-556),
     -826 (REVISE-402, FIX FIRST), -827 (REVISE-403).
@@ -21898,11 +21948,12 @@ MONITOR-557:
   Priority: Medium
   Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2 (controls adopted without a recorded derivation).
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-828 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-558:
   Date queued: 2026-08-28
@@ -21926,11 +21977,12 @@ MONITOR-558:
   Monitoring cadence: Weekly
   Priority: High
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-829 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-559:
   Date queued: 2026-08-28
@@ -21955,11 +22007,12 @@ MONITOR-559:
   Monitoring cadence: Weekly
   Priority: Medium
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-831 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-560:
   Date queued: 2026-08-28
@@ -21981,11 +22034,12 @@ MONITOR-560:
   Monitoring cadence: Weekly, with a hard checkpoint 2026-09-10
   Priority: Medium
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-834 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-561:
   Date queued: 2026-08-28
@@ -22013,11 +22067,12 @@ MONITOR-561:
   Priority: Medium
   Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2.
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-835 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-562:
   Date queued: 2026-08-28
@@ -22045,11 +22100,12 @@ MONITOR-562:
   Related: PRESUMPTION-883 / REVISE-402 [FIX FIRST] (admission control), MONITOR-560 (the refill
     prediction), PREMISE-119. Do not close this without checking whether REVISE-402 moved.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-836 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-563:
   Date queued: 2026-08-28
@@ -22077,11 +22133,12 @@ MONITOR-563:
     approval layer. Consistency-checked: not a duplicate; 188 governs evidentiary qualifiers on claims,
     this governs the approval token on items.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-837 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-564:
   Date queued: 2026-08-28
@@ -22113,11 +22170,12 @@ MONITOR-564:
   Priority: High
   Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2. Read with MONITOR-561 (ASSUMPTION-1232) — same object.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-838 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 MONITOR-565:
   Date queued: 2026-08-28
@@ -22145,11 +22203,12 @@ MONITOR-565:
   Monitoring cadence: Weekly
   Priority: Medium
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-839 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
 
 MONITOR-566:
   Date queued: 2026-08-28
@@ -22175,11 +22234,12 @@ MONITOR-566:
     the 29th consecutive instance and is an in-house data point for this item, not an outside observation.
   Member of: SYSTEMIC-RISK-FLAG_2026-08-28_G2.
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-843 · Status MONITORING
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
 
 
 ---
@@ -22240,11 +22300,12 @@ MONITOR-571:
       a deferral record -- is internal-empirical.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-852 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22263,11 +22324,12 @@ MONITOR-572:
       with an explicit search-scope caveat rather than a silent pass.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-854 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22287,11 +22349,12 @@ MONITOR-573:
       blocker plus two rationalisations -- is internal.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-855 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22310,11 +22373,12 @@ MONITOR-574:
       same finding in its general form. No new premise: minting here would duplicate.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-856 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22334,11 +22398,12 @@ MONITOR-575:
       toward MONITOR per 15c's standing instruction.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-857 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED] literature
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22357,11 +22422,12 @@ MONITOR-576:
       existing premise. Cross-referenced to REVISE-411.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-858 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22379,11 +22445,12 @@ MONITOR-577:
       visible; no independent disposition warranted.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-859 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22404,11 +22471,12 @@ MONITOR-578:
       recurring, REVISE.
   Cadence: Weekly
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · DISPOSITION-860 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22430,11 +22498,12 @@ MONITOR-579:
       counters, the item is right and this becomes REVISE.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-861 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22455,11 +22524,12 @@ MONITOR-580:
       PREMISE-124's diagnosis into an action. Priority raised to Medium-High on that basis.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-863 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22481,11 +22551,12 @@ MONITOR-581:
       constrains downstream use.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-864 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22505,11 +22576,12 @@ MONITOR-582:
       quantity and 511 is now cited without re-derivation, REVISE.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-866 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22531,11 +22603,12 @@ MONITOR-583:
       instance of this general item.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-868 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22558,11 +22631,12 @@ MONITOR-584:
       conditions framing rather than a root-cause framing.
   Cadence: Weekly
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · DISPOSITION-869 · snippet-level evidence only
-  Cycle: 0  [intake; not yet re-triggered]
-  Next 15d check: 2026-09-06  [SET BY 15d 2026-08-30 — 15c left this field EMPTY at intake. 15d supplies it rather than
-    leaving the item unscheduled. Date is the next 15d run, not intake+7 (which would fall on 2026-09-04 / 2026-09-06,
-    a day with no 15d run for the 08-28 cohort): first application of the scheduling fix filed 08-16 and 08-23, applied
-    ONLY where 15c wrote no date. No 15c-written date is overridden by this run.]
+  Cycle: 1  [first 15d re-trigger, 2026-09-13]
+  Last checked: 2026-09-13 (RE-TRIGGER by 15d, cycle 1 — re-queued in for_lit_search.md; 15d did not evaluate evidence)
+  Evidence trajectory: Supporting unchanged BY CONSTRUCTION — no search ran since intake;
+    Challenging unchanged BY CONSTRUCTION; New sources since last cycle: none (no pass performed).
+  Routing this run: [QUEUED-EMPIRICAL]
+  Next 15d check: 2026-09-20
   Status: MONITORING
 
 
@@ -22863,6 +22937,10 @@ MONITOR-585:
   Priority: Medium | Cadence: Weekly | Cycle: 0
   PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-586:
   Source item: PRESUMPTION-897 (DISPOSITION-881) | Item type: PRESUMPTION (unstated)
   Statement watched: Vault growth is benign; no threshold exists at which it would be throttled.
@@ -22884,6 +22962,10 @@ MONITOR-586:
     where all the change is happening is the stratum this run knows least about.
   PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-587:
   Source item: ASSUMPTION-1241 (DISPOSITION-882) | Item type: ASSUMPTION (stated)
   Statement watched: The pipeline is now routinely amending rather than adjudicating.
@@ -22899,6 +22981,10 @@ MONITOR-587:
   Priority: High | Cadence: Weekly | Cycle: 0
   PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-588:
   Source item: ASSUMPTION-1242 (DISPOSITION-884) | Item type: ASSUMPTION (stated)
   Statement watched: Three co-arising proposals should become one paradigm flag rather than three.
@@ -22915,6 +23001,10 @@ MONITOR-588:
   Priority: High | Cadence: Weekly | Cycle: 0
   PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-589:
   Source item: ASSUMPTION-1244 (DISPOSITION-886) | Item type: ASSUMPTION (stated)
   Statement watched: A maturity model (Pathway 35) is an ascending frame by construction.
@@ -22940,6 +23030,10 @@ MONITOR-589:
   Priority: High | Cadence: Weekly | Cycle: 0
   PROVENANCE: Origin 14a · Chain [14a -> 15a, 15b -> 15c -> 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-590:
   Source item: ASSUMPTION-1246 (DISPOSITION-887) | Item type: ASSUMPTION (stated)
   Statement watched: The two-mention promotion threshold is appropriate. (Residue only; parent principle
@@ -23008,6 +23102,10 @@ NOT SEARCHED THIS CYCLE, recorded so it is not mistaken for done:
   searched by this run and is NOT tagged. It should inherit REVISE-426's reasoning when it is taken
   up, and the duplication itself is worth a look: two monitor entries, two cycle counters and two
   re-trigger streams have been tracking one question for five cycles.
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23027,6 +23125,10 @@ MONITOR-591:
   Priority: Low | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-12
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-592:
   Source item: ASSUMPTION-1256 (DISPOSITION-897) | Item type: ASSUMPTION (stated)
   Statement watched: The sandbox output needs Tom's eyes, not more agent passes; the question can only be
@@ -23042,6 +23144,10 @@ MONITOR-592:
   Priority: Medium | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-12
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-593:
   Source item: ASSUMPTION-1258 (DISPOSITION-899) | Item type: ASSUMPTION (stated)
   Statement watched: The earlier ladder reaches for an objective ordering principle (entropy); the two ladders
@@ -23057,6 +23163,10 @@ MONITOR-593:
   Priority: Medium | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-12
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-594:
   Source item: ASSUMPTION-1261 (DISPOSITION-900) | Item type: ASSUMPTION (stated — derived digest)
   Statement watched: "Five days dark means five days of assumptions … unsurfaced" (gap = deferred work).
@@ -23073,6 +23183,10 @@ MONITOR-594:
   Priority: Low | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-12
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-595:
   Source item: PRESUMPTION-904 (DISPOSITION-901) | Item type: PRESUMPTION (unstated)
   Statement watched: A spreadsheet cell is the correct unit of classification — one node per cell, never split
@@ -23087,6 +23201,10 @@ MONITOR-595:
   Priority: Medium | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-12
   PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-596:
   Source item: PRESUMPTION-908 (DISPOSITION-904) | Item type: PRESUMPTION (unstated)
   Statement watched: Eight parallel workers without shared context classify consistently, and the one
@@ -23106,6 +23224,10 @@ Note for 15d: MONITOR-595, -596 and REVISE-432 are answered by ONE in-house meas
 sample stratified by confidence × batch, κ per field). Re-trigger them together, and consult
 validated_premises.md (PREMISE-124, -129) before re-queuing to literature — the literature question is closed
 for all three; only the measurement is open.
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23133,6 +23255,10 @@ linear-extension check named in PRESUMPTION-909_against.md and PRESUMPTION-915_a
 them together; the literature question is closed for both — only the measurement is open.
 
 ---
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23168,6 +23294,10 @@ MONITOR-598:
   Priority: Medium | Cadence: Weekly | Cycle: 0 | Next check: 2026-09-17
   PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c → 15d] · Status: MONITORING
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-599:
   Source: ASSUMPTION-1297 (DISPOSITION-922) — a REFLEXIVE finding raised by 15b, carried in REVISE-445
     and monitored here
@@ -23211,6 +23341,10 @@ ASSUMPTION-1310 rather than duplicated — see DISPOSITION-933. Three of these s
 rather than INCORPORATE specifically because their load-bearing sources could not be retrieved in
 either direction; that is rule 3 applied, not indecision.*
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-600:
   Item: ASSUMPTION-1305, LIMB C — "therefore the correct act on the morning `pending/` hit zero was to
     skip the hunt phase." (Limbs A and B are NOT monitored; they are covered by PREMISE-070 and
@@ -23241,6 +23375,10 @@ MONITOR-600:
     material captured on sight regardless of queue depth). (a) or (b) unfavourable → REVISE.
   Monitoring cadence: Monthly; first read when the 30-day series exists.
   Priority: Medium (escalate to High on condition (c)).
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23271,6 +23409,10 @@ MONITOR-601:
   Priority: Medium — but note the coupling: FLAG-023's window is time-limited and this monitor must
     not become the reason the measurement is not taken. The access step's ownership is REVISE-451
     and it is High.
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23298,6 +23440,10 @@ MONITOR-602:
         justifications change." This would give limb A a citation rather than a principle.
   Monitoring cadence: Monthly, or on the next ingest exceeding 50 entries, whichever is first.
   Priority: Medium-High.
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23370,6 +23516,10 @@ MONITOR-603:
   Note: this monitor does NOT hold the naming fix, which is REVISE-454 and must not wait on it.
 
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-604:
   Date: 2026-09-11
   Item: PRESUMPTION-953, latency limb — the distribution of response latency on requests addressed to a
@@ -23399,6 +23549,10 @@ MONITOR-604:
     appearing in the recipient's output. See REVISE-458.
 
 
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 MONITOR-605:
   Date: 2026-09-11
   Item: PRESUMPTION-955's corrective — that a ternary status vocabulary (PASS / DEGRADED / FAIL, or
@@ -23425,6 +23579,10 @@ MONITOR-605:
   Monitoring cadence: Monthly, or immediately on (b), which requires no external retrieval.
   Priority: Medium. The realised harm is already carved out to REVISE-457 (the age alarm) and does not
     wait on this; what remains here is a vocabulary design question with a live objection against it.
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
 
@@ -23477,5 +23635,332 @@ MONITOR-606:
     Transform at this step: limb-split disposition; remedy limb held as contested, diagnosis limb
       released to REVISE-459 as already-covered
     Current status: MONITORING
+  Cycle: 0  [intake; not yet re-triggered]
+  Next 15d check: 2026-09-20  [SET BY 15d 2026-09-13 — 15c left this field EMPTY at intake.
+    Second consecutive cohort filed without a Next check date (see 2026-08-30 run, defect 2).
+    Date is the next 15d run, not intake+7. Applied ONLY where 15c wrote no date; no 15c date overridden.]
 
 ---
+MONITOR-607:
+  Date opened: 2026-09-13
+  Source item: PRESUMPTION-972 (limb B only) | Source disposition: DISPOSITION-953
+  Monitoring cadence: Weekly | Priority: **HIGH** (15a NOVELTY-FLAG)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+
+  WHAT IS HELD HERE, and it is narrower than the item. Limb A — that the estate already holds premises
+    covering the active/dormant distinction and did not apply them — is an enforcement gap and went to
+    REVISE-463. **Limb B is held here: a 30- or 60-day empty publication window as an activity
+    classifier, and a single source standing for a tradition.**
+
+  WHY IT IS A MONITOR AND NOT A DISPOSITION. 15a searched scientometrics, time-series activity
+    classification, lifecycle-phase detection and short-horizon preprint signals and found **no literature
+    evaluating a window of this length, and none treating one source's output as a proxy for a tradition's
+    state.** Cadence-as-activity-proxy is validated — on ANNUAL counts, over MULTI-YEAR windows, on indexed
+    corpora, with median submission-to-publication lag exceeding the whole window. The hunt is operating a
+    validated indicator outside every regime in which it has been validated. That is either a novel
+    short-horizon instrument requiring its own validation, or a scale error, and the literature cannot
+    tell us which.
+
+  What would change the disposition, in order of cost:
+    (a) REVISE-463 action (3) — the in-house false-positive measurement with a denominator (PREMISE-168).
+        Near zero refutes limb B from the estate's own data; near the order-of-magnitude 15b computed and
+        the vocabulary change is non-optional. **This is a grep-plus-searches job, assignable to an agent.**
+    (b) Grep the hunt's output for any tradition marked quiet and later marked active. **If no such
+        transition exists, the mark is terminal in practice whatever it is in intent** — and that finding
+        would convert this to REVISE without any external literature at all. Pure grep; cheapest test here.
+    (c) External: any published evaluation of short-horizon (< 90 day) publication-silence classifiers.
+        If one appears, this stops being novel.
+  Explicit non-action recorded: **no confidence figure may be attached to a "quiet" verdict until (a) is
+    run** (PREMISE-168 bars the bare numerator).
+
+  NOVELTY note carried forward, because it is the reason for HIGH priority: if limb B survives (a), the
+    original contribution is not the window but **the third state — a status for source-unavailable,
+    distinguished by the OBSERVER's liveness rather than the subject's.** That distinguisher is the one
+    thing in this cluster the literature does not supply and the estate can.
+
+  PROVENANCE:
+    Origin: 14b · Chain: [14b -> 15a, 15b -> 15c] · Original item: PRESUMPTION-972
+    Item type: PRESUMPTION (unstated) · Transform at this step: limb-split disposition; enforcement limb
+      released to REVISE-463, novel-instrument limb held here
+    Current status: MONITORING
+  Next 15d check: 2026-09-20 — **noting that 15d has not run since 2026-08-02 (six weeks), so this date is
+    aspirational and is recorded as such rather than as a schedule.**
+
+---
+
+MONITOR-608:
+  Date opened: 2026-09-13
+  Source item: PRESUMPTION-979 (comparative limb only) | Source disposition: DISPOSITION-956
+  Monitoring cadence: Weekly | Priority: Medium (15a NOVELTY-FLAG)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+
+  WHAT IS HELD HERE. The operative limb — whether a prose caveat can be RELIED ON as a control — is
+    answered no and went to REVISE-466. **Held here is the comparative limb the item actually stated: are
+    prose caveats read at the SAME RATE as status fields?** Both directions searched and neither found any
+    literature measuring the relative uptake of a prose qualification against a structured status field in
+    the same document. The comparison is unaddressed.
+
+  What would change the disposition, in order of cost:
+    (a) REVISE-466 action (3), pure grep: count how many "load-bearing" prose clauses in
+        `validated_premises.md` have a traceable downstream application. PREMISE-111's standing discount is
+        one known instance of zero — one data point exists already.
+    (b) REVISE-466 action (2): classify load-bearing qualifications in the last N run reports as prose vs.
+        status-row and record act-on rates with denominators. **If both are near zero the channel is not
+        the variable and this item closes as mis-specified**, routing to PRESUMPTION-962 (forcing
+        functions) instead.
+    (c) External: any study measuring prose-vs-structured-field uptake within a single document.
+
+  TWO CONSTRAINTS THAT TRAVEL WITH THIS ITEM (PREMISE-188), so they are not left behind in the disposition
+    file:
+    (1) **Relocating prose into status rows is NOT the indicated remedy.** The estate's own six-day unread
+        instance was a red status field. Any experiment framed as "prose bad, status rows good" is already
+        contradicted by the one in-house case.
+    (2) The audience split is the live hypothesis: prose appears to be read adequately by agents doing
+        targeted retrieval (four premise clauses were read and quoted this cycle) and inadequately by a
+        human skimming a daily report. **Any measurement must separate the two channels or it measures
+        their average, which is nobody's experience.**
+
+  DO-NOT-CITE, carried forward from 15b and not dropped: the alarm-fatigue percentages, excluded by name
+    after the AAMI review returned an empty body on fetch. They may not re-enter this item's file by any
+    route without first-hand retrieval.
+
+  PROVENANCE:
+    Origin: 14b · Chain: [14b -> 15a, 15b -> 15c] · Original item: PRESUMPTION-979
+    Item type: PRESUMPTION (unstated) · Transform at this step: limb-split disposition; operative limb
+      released to REVISE-466, comparative-rate limb held here as a literature gap
+    Current status: MONITORING
+  Next 15d check: 2026-09-20 — same caveat as MONITOR-607: 15d has not run since 2026-08-02.
+
+---
+
+
+---
+
+## 2026-09-13 RUN — 15d Periodic Monitor (weekly catch-up + bounded monthly; scheduled c2a2-periodic-monitor-weekly)
+
+**RUN CONTEXT — THE 2026-09-06 RUN DID NOT FIRE, AND IT WAS THE MONTHLY ONE.** 15d last ran 2026-08-30.
+2026-09-06 was both a scheduled weekly run and **the first Sunday of September**, so the missed run took
+the September monthly cycle with it: no low-priority cohort advance, no INCORPORATED-premise re-checks.
+Today is **day 13**, so under the standing day-1-7 rule the monthly does not fire today either, and the
+2026-06-28 precedent says carry it to the next first Sunday — **2026-10-04, which would be 63 days
+between monthly cycles.** This run therefore drains **two weekly cycles** and discharges a **bounded**
+part of the missed monthly. Departure stated, not smuggled (Rule 12). 15d does not evaluate evidence; it
+re-triggers 15a/15b and tracks trajectories.
+
+**Consumption check (block-level parse, same method as 2026-08-30; block extent = tag line to next tag
+line or next header/separator). SEVEN BLOCKS DRAINED IN FOURTEEN DAYS.** Standing 15d blocks:
+**250 at the close of the 08-30 run -> 240 before this run's additions.** (The 08-30 figure counted 12
+blocks added that run; the arithmetic is 235 + 12 - 7 = 240.) The seven:
+
+- **Six from the 2026-07-05 cycle-5 cohort, and ALL SIX WENT TO REVISE:**
+  MONITOR-002 (ASSUMPTION-006) -> REVISE-425 / DISPOSITION-890, 09-02;
+  MONITOR-004 (ASSUMPTION-008) -> REVISE-426 / DISPOSITION-891, 09-02;
+  MONITOR-006 (PRESUMPTION-001) -> REVISE-427 / DISPOSITION-892, 09-02;
+  MONITOR-009 (PRESUMPTION-004) -> REVISE-428 / DISPOSITION-893, 09-04;
+  MONITOR-068 (PRESUMPTION-073) -> REVISE, 09-04;
+  MONITOR-070 (ASSUMPTION-071) -> REVISE, 09-04.
+- **One partial: MONITOR-012 (PRESUMPTION-010).** LITERATURE limb only, searched and dispositioned
+  2026-09-01 -> REVISE-424 / DISPOSITION-889. **The empirical limb remains open and unexecuted** and the
+  block retains [QUEUED-EMPIRICAL]. Counted as consumed by the parse; recorded here as a HALF exit so
+  the number is not read as a full one.
+
+**MONITOR-009 IS THE GOOD NEWS AND IT SHOULD BE SAID PLAINLY.** The 09-02 block in this file flagged it
+as an unsearched near-duplicate of MONITOR-004 — "NOT searched by this run and NOT tagged." It was
+searched two days later. **A flag written into this register was read and acted on within 48 hours.**
+That is the first clean instance of the register functioning as a channel rather than a sink, and it is
+worth as much as the escalations below. *One instance, stated as one (PREMISE-105).*
+
+**Six-for-six to REVISE also settles something about the cycle-5 cohort.** These items sat unsearched
+for 59 days on LOW-PRIORITY-MONITOR after being downgraded for staleness. Every one that has now been
+searched was **wrong, not merely unresolved.** The downgrade rule assumes an unmoving item is a settled
+one. On this evidence it was hiding six defects. **That is an argument against the stale-downgrade rule
+as currently written, and it is filed for 15c, not acted on by 15d.**
+
+### Processed this run
+
+- **34 first re-triggers (cycle 0 -> 1).** MONITOR-545, -546, -549..-556 (first checks 09-01, 09-02) and
+  MONITOR-557..566, -571..584 (first checks 09-06, the dates 15d itself set on 08-30). Block-by-block
+  check confirms each source item carries exactly ONE prior block — its intake block, already
+  SEARCHED/DISPOSITIONED — and **no standing 15d block.** Queued with
+  `[RE-TRIGGER by 15d: 2026-09-13, cycle 1]`; per-entry `Cycle:`, `Last checked:`,
+  `Evidence trajectory:`, `Routing this run:` and `Next 15d check:` lines written in place, cycle 1 /
+  next check 2026-09-20.
+  **Routing: 8 [QUEUED] literature, 26 [QUEUED-EMPIRICAL]. This run adds EIGHT items to the unsearched
+  -literature backlog, not 34.** The eight are MONITOR-546, -549, -551, -552, -553, -554, -565, -575.
+  **Two of the eight are cheap and owed by name:** MONITOR-554 needs one full-text fetch
+  (arXiv:2604.18880, cited at intake and never read past snippet level), and MONITOR-575's own intake
+  disposition flags a dedicated 15b search as owed *next run* — this is that run.
+  **MONITOR-553 carries an unarbitrated 15a/15b disagreement** about what the bitemporal literature
+  says; the re-searcher must arbitrate it rather than average it.
+
+- **MONITOR-560 (ASSUMPTION-1231): ITS SCORING WINDOW OPENED 2026-09-10 AND CLOSED UNSCORED.** The item
+  was pinned at pending=0 on 08-27 and declared scoreable 2026-09-10. The 09-06 run that would have
+  prepared it did not fire and this is the first 15d pass since. **Its own stated precondition — write
+  the numeric falsifier down BEFORE scoring — was never met.** Scoring it now is post-hoc. Recorded as
+  such and re-queued; 15c to decide between a post-hoc reading and a re-pin. **This is a pre-registered
+  prediction lost to a missed cron, which is exactly the failure mode this register exists to catch.**
+
+- **22 intake entries given first-check dates by 15d (MONITOR-585..606).** 15c filed these between
+  08-31 and 09-11 **with the `Next check` field empty — the second consecutive cohort to do so.** 15d
+  set them to 2026-09-20 (the next 15d run), applied ONLY where 15c wrote no date; no 15c-written date
+  is overridden. They are NOT re-triggered this run: brand-new items are not re-triggered on entry.
+
+- **Weekly carry-overs NOT duplicate-queued, next_check 2026-09-06 -> 2026-09-20, cycle counts
+  UNCHANGED:** the 08-16/08-23 per-entry cohort (MONITOR-500, -501, -503..-507, -509, -510, -512..-523,
+  -525..-527, -529..-531), the 08-30 first-re-trigger cohort (MONITOR-532..543), and the ~151
+  cohort-level carry-overs (MONITOR-345..499 less exits). Their blocks remain standing and unconsumed,
+  and **those blocks are the operative search requests** — re-queueing them would duplicate work
+  already in the queue, not accelerate it.
+
+- **7 lane exits recorded (not dispositioned by 15d):** MONITOR-002, -004, -006, -009, -068, -070 (full)
+  and MONITOR-012 (literature limb only). **15c has again written no exit record into these entries; read
+  from monitor_queue.md alone, six of them still look ACTIVE.** This is the same defect as MONITOR-498
+  and the 08-25 five, **now at thirteen instances. 15c owes the exits; 15d does not write them.**
+
+- **Monthly INCORPORATED premise re-checks: BOUNDED CATCH-UP, 6 queued of 13 due.** The missed 09-06
+  monthly owed the 13 premises whose `re_check_due` was exactly 2026-09-06. Seven of those
+  (PREMISE-002, -004, -025, -070, -071, -072, -089) **already carry standing, unconsumed re-check blocks
+  from 2026-08-02** — now 42 days past their scheduled re-check — and were NOT duplicate-queued. The
+  other six (PREMISE-051, -144, -145, -146, -147, -148) are queued in for_lit_search.md and their
+  `re_check_due` fields advanced to 2026-10-04 (2026-12-13 for the quarterly PREMISE-051), each with the
+  catch-up noted in the field. Premise statuses left ACTIVE; 15d does not disposition.
+
+- **Low-priority/monthly cohort (MONITOR-001..344) untouched, next_check advanced 2026-09-06 ->
+  2026-10-04.** The monthly advance they were owed on 09-06 did not happen and does not happen today.
+
+- **Fresh items not yet due, untouched:** MONITOR-547, -548 (monthly, 2026-09-25), MONITOR-607, -608
+  (filed today, first check 2026-09-20).
+
+- **Event-driven items untouched:** MONITOR-003 (continuous), MONITOR-041 (per billing-error event),
+  MONITOR-154 (per-incident), MONITOR-544 (first Wright/Rohr-invoking synthesis).
+
+### Stale sweep
+
+No weekly carry-over advanced a cycle this run, so **no carry-over crossed the 4-cycle threshold and no
+item-level STALE-MONITOR-FLAG is raised on that lane.** MONITOR-021, -025 and -030 remain past the
+threshold on count but were found on 08-11 to have new sources on both sides; the rule requires *4+
+cycles with no change in evidence* and they do not meet it. Flag withheld, reason recorded.
+
+The 08-30 population flag is **re-raised, larger, and with its prediction now tested:**
+
+```
+STALE-MONITOR-FLAG (POPULATION FORM — second raising; routing, not cycle count)
+  Item: the [QUEUED-EMPIRICAL] population — 23 blocks written 2026-08-23, 9 written 2026-08-30,
+    26 written today (MONITOR-545, -550, -555..-564, -566, -571..-574, -576..-584), plus the
+    open empirical limbs of MONITOR-005 and MONITOR-012. 60 blocks.
+  Cycles completed: 1 each on the counter; ZERO evidence passes on any of them
+  Last disposition: MONITOR, 2026-08-10..2026-09-06
+  Evidence trajectory: stable BY CONSTRUCTION — no instrument ran, so nothing could move
+  Recommendation: ESCALATE to Tom, and do NOT downgrade to monthly
+  Reasoning: last run predicted that literature-routed items would be served and empirical-routed
+    items would not. The interval tested it. 7 of 7 blocks drained were literature or
+    literature-limb items; 0 of 32 standing empirical blocks were touched. The prediction held
+    a second time. Downgrading these to monthly would slow a clock that is not the binding
+    constraint. The 4-cycle rule assumes cycles fail because literature is slow; these fail
+    because the measurement has no runner.
+  NEW THIS RUN: MONITOR-560's scoring window opened and closed unscored. The cost of the
+    unassigned measurement role is no longer only delay — a pre-registered prediction was lost.
+```
+
+```
+STALE-MONITOR-FLAG (second population form — the stale-downgrade rule itself)
+  Item: the 2026-07-05 LOW-PRIORITY-MONITOR cohort (81 blocks still standing)
+  Cycles completed: 5; 70 days since downgrade
+  Evidence trajectory: IMPROVING against the items, which is the point — of the 6 members
+    searched in this interval, 6 went to REVISE. None was confirmed.
+  Recommendation: ESCALATE to Tom / 15c — review the stale-downgrade rule, do not downgrade more
+    items under it until reviewed.
+  Reasoning: the rule downgrades items on the assumption that an unmoving item is a quiet one.
+    The first real sample from this cohort was 6-for-6 wrong. Staleness measured cadence, not truth.
+```
+
+**Convention retained, fifth run running:** carry-over trajectory lines read **"unchanged BY
+CONSTRUCTION — no search ran"**, never "stable". This is what PRESUMPTION-772 / MONITOR-516 is about,
+and it is still sitting in the queue the defect describes.
+
+### ESCALATION 1 (carried, 9th run post-fire) — MONITOR-420 auto-escalate trigger STILL FIRED, STILL UNACTIONED
+MONITOR-420 / ASSUMPTION-428's trigger fired 2026-07-19. **Ninth consecutive run surfacing it with no
+15c re-disposition.** The 09-02 and 09-04 draws did not reach it. **15c should issue the REVISE; 15d does
+not disposition.**
+
+### ESCALATION 2 — BACKLOG-FLAG (16th consecutive surfacing) — LANE GREW BY 40
+Standing unconsumed 15d blocks: **250 (close of 08-30) -> 240 before this run -> 280 after.** Drain over
+14 days: **7.** At the observed rate this lane clears in roughly **80 weeks.** The oldest cohort
+(2026-07-05) stands at **81 blocks and is 70 days old.** Recommendation (unchanged, now **16 runs old**):
+**ESCALATE to Tom** — make the oldest-first backlog draw standing policy, or re-scope the 15d cadence to
+observed 15a/15b throughput. **Amendment retained from 08-30 and now twice-confirmed: re-scoping alone
+will not work, because this is two queues.** Its literature half is served within days; its empirical
+half is not served at all. **Two queues, two remedies.**
+
+### ESCALATION 3 (carried) — MONITOR-423 starvation trigger: MET again
+MONITOR-423 / ASSUMPTION-430's trigger keys on runs with zero non-HIGH backlog burned. Seven blocks
+burned this interval, **all seven from the single oldest cohort's literature tail.** Nothing outside the
+served route moved. 15c to confirm and act. Related: MONITOR-425 (PRESUMPTION-459) priority-staleness —
+07-05 items now aged **70 days** at queue-time priority.
+
+### ESCALATION 4 (carried from 2026-08-09; 17th run) — THE AUTO-ESCALATE FIRED WITH THE TEST UNRUN
+**Name an agent that may run in-house measurements, or state that none may.** The 08-30 run predicted
+that MONITOR-005 and MONITOR-012 would hit their **2026-09-08 auto-escalate with their tests still
+unperformed.** They did. MONITOR-012's literature limb was dispositioned on 09-01 (REVISE-424); **its
+empirical limb and the whole of MONITOR-005 (ASSUMPTION-013) reached 2026-09-08 unrun, and the trigger
+has now been fired for five days with no 15c action.** MONITOR-007 is not in scope — it went to REVISE
+(DISPOSITION-628 / REVISE-294) earlier and is already out of the lane. Count of monitored items blocked
+on unauthorised measurements: 21 of 22 (08-09), +6 (08-16), +23 (08-23), +9 (08-30), **+26 this run.**
+Per PREMISE-131 a conversion trigger nobody can pull is a warning, not a control. **MONITOR-525 and -526
+(the seeded-defect trial) remain unrun for a third run.**
+*15d has no channel to Tom other than this file and its run output — the 17th in-channel repetition with
+no effector, exactly what PREMISE-138 says does not work. What is new this run is that the channel DID
+work once (MONITOR-009, above). The difference between that case and these is that MONITOR-009 needed a
+search and these need an instrument.*
+
+### ESCALATION 5 (NEW) — THE MONTHLY CYCLE HAS NO CATCH-UP RULE, AND THE PREMISE REGISTER IS 89 ITEMS STALE
+The weekly lane has an implicit catch-up: a missed run's items are still due next run, so they drain.
+**The monthly lane does not.** It fires only on day 1-7, so a missed first Sunday is not deferred by a
+week — it is deferred by a **month**. 2026-09-06 was missed; the next fire is 2026-10-04; that is 63
+days between monthly cycles on a lane whose own contract says monthly.
+Measured consequence, from a full parse of `validated_premises.md` (202 premises):
+**89 ACTIVE premises are past their `re_check_due`, the oldest since 2026-08-09**, and **4 carry no
+`re_check_due` at all (PREMISE-166, -167, -168, -182).** 18 of the 19 re-check blocks queued on
+2026-08-02 are **still standing and unconsumed, 42 days on.** The register's fields read current and the
+lane behind them is not — **fifth consecutive run reporting this, and the first to measure the whole
+register rather than the 19.**
+This run discharged only the 13 the missed run actually owed, and queued only the 6 of those without a
+standing block. **The other 76 are withheld on throughput grounds and named here rather than dropped:**
+adding 76 blocks to a lane draining 7 per fortnight would have grown the backlog by 27% with no
+prospect of service, and 15d judged that worse than an honest deficit. **This is a judgment call and it
+is Tom's to overturn.**
+Recommendation: **ESCALATE to Tom** — either (a) give the monthly lane a catch-up rule ("if the first
+Sunday was missed, the next run of any kind discharges it"), or (b) state that premise re-checks are
+quarterly in fact and amend the register's fields to match. **What should not continue is a register
+that records a monthly cadence it does not have.**
+
+### Register defects observed, not repaired by 15d
+
+1. **Seven lane exits unwritten by 15c** (MONITOR-002, -004, -006, -009, -068, -070, -012). With the
+   08-25 five and MONITOR-498 this is **thirteen entries that read ACTIVE and are not.** 4th run.
+2. **22 intake entries filed with an EMPTY `Next check` field** (MONITOR-585..606, 08-31..09-11).
+   **Second consecutive cohort.** 15d supplied dates; the intake convention that produces the gap is
+   15c's to fix. 3rd run filed.
+3. **~151 of the weekly-lane items still have no per-entry 15d scheduling lines.** Their schedule lives
+   only in these run logs; a reader of a single entry cannot tell when it is next due. Filed, not
+   repaired — writing 151 blocks of scheduling text into a 1.5 MB file is a register-format change and
+   is not 15d's to make unilaterally. 4th run.
+4. **Cycle-number inconsistency inside the 2026-07-05 cohort persists** (4th run): five items drawn
+   08-08 at cycle 6, twelve drawn 08-11 from the same cycle-5-tagged cohort at cycle 5. Surfaced, not
+   averaged, not renumbered.
+5. **MONITOR-001 / MONITOR-010 still carry one question as two items** since 2026-04-13; both
+   REVISION-FLAGGED, so the merge request at REVISE-293(3) sits in Tom's queue twice.
+6. **NEW — 4 premises carry no `re_check_due` at all** (PREMISE-166, -167, -168, -182). They are not
+   scheduled for re-check by any lane and would never be caught by a date sweep. 15d did not supply
+   dates: unlike an empty `Next check` on a MONITOR entry, a premise's re-check cadence is a 15c
+   judgment about how fast that premise's literature moves. **15c owes four dates.**
+
+**Run summary:** 34 first re-triggers queued (8 literature, 26 empirical), 6 premise re-checks queued as
+a bounded monthly catch-up, 22 empty intake dates supplied, ~190 weekly carry-overs advanced
+2026-09-06 -> 2026-09-20 with cycles held, 344 low-priority items advanced to 2026-10-04, 7 lane exits
+recorded, 2 population-level STALE-MONITOR-FLAGs raised (one re-raised and confirmed, one new against
+the stale-downgrade rule itself), 0 item-level stale flags. **Standing lane 250 -> 240 -> 280; observed
+drain 7 blocks in 14 days.** **5 escalations: MONITOR-420 unactioned for a 9th run; the backlog flag for
+a 16th; starvation met again; the 09-08 auto-escalate FIRED with its test unrun as predicted; and a new
+one — the monthly lane has no catch-up rule and 89 premises are past re-check.** Queue state current as
+of 2026-09-13.

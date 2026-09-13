@@ -21,3 +21,19 @@
 **Synthesis claim.** The concession is more valuable than the rejection. McGilchrist grants that the dashboard model is *true of something* and disputes only its scope, which converts an ontological quarrel into a question about coverage: does interface theory claim to describe perception simpliciter, or one mode of construal among others? Hoffman's fitness-beats-truth result is a claim about what selection optimizes, and selection does not obviously operate hemisphere by hemisphere — so the burden falls on McGilchrist to say what makes right-hemisphere contact exempt from the same pressure.
 
 **Open question the wiki cannot yet answer.** What observation would distinguish 'all perception is interface' from 'one hemisphere's construal is interface'? Both predict that ordinary experience misrepresents intrinsic nature. A discriminating test would need a case where right-hemisphere-dominant processing yields veridical contact that left-dominant processing does not — and neither tradition has proposed one. Until it does, this is a difference of doctrine with no experimental handle, which is worth recording plainly.
+
+
+---
+
+## Same architecture, opposite claim about who can change it
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/approved/2026-09-09_mcgilchrist_rewind-yourself-what-modern-life-forced-brain-to-ignore.md` (0 backlinks).
+
+**Why it sits here:** A 69-minute interview titled around what modern life has *forced* the brain to ignore, aimed at a general wellbeing audience — which invites McGilchrist to say what an individual can do about it. What gets ignored is what the interface does not render: that structure is shared with Hoffman almost exactly. What is not shared is the modality. For Hoffman the omission is evolutionary, species-wide, and constitutive of perception; for McGilchrist it is cultural, recent, and reversible by practice.
+
+**Synthesis claim:** The wiki has been accumulating McGilchrist–Hoffman resonances and holds no statement of where they part, which is the more useful thing to have. **This is a clean discriminating case: identical claims about what perception leaves out, incompatible claims about whether a person can do anything about it.** And the disagreement is not merely temperamental — it follows from each account's source of the omission. A fitness-shaped interface cannot be re-shaped within a lifetime by attention, because attention is itself rendered by the interface. A culturally-trained attentional habit can be, because culture trains it and practice can retrain it. If McGilchrist is right that the exclusion is reversible, Hoffman's account cannot be the whole story of what is excluded; if Hoffman is right, McGilchrist's prescriptions operate strictly inside the rendered world and cannot reach the omissions he diagnoses.
+
+**Open question the wiki cannot yet answer:** Is there a class of omission that both accounts predict, where the two make different claims about recovery? Something excluded evolutionarily *and* further narrowed culturally would be the test case: Hoffman predicts practice recovers the cultural layer and never the evolutionary one, McGilchrist's stronger statements do not obviously respect that ceiling. **Neither register in this wiki names a candidate**, and until one does, the two accounts are compatible only because nobody has asked them the same question.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-09_mcgilchrist_rewind-yourself-what-modern-life-forced-brain-to-ignore]]

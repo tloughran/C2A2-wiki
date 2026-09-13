@@ -1305,3 +1305,87 @@ frontmatter and `## Cross-Tradition Signals` intact. All 12 bridge files assert-
 way, one `Sewing Agent, 2026-09-06` stamp each. CSV row: 1 occurrence. `git diff --numstat` over
 `wiki/synthesis`, `wiki/inbox/proposals`, `wiki/architecture/metrics`: **281 insertions,
 0 deletions** (before this log entry). No JS/HTML touched. No probe files left in the vault.
+
+
+---
+
+# Sewing Agent Run — 2026-09-13 (Sunday, ~04:45 local)
+
+## Connectivity snapshot
+
+| | before | after |
+|---|---|---|
+| orphans (0 backlinks) | 4,243 | **4,231** |
+| sparse (1-2) | 728 | **738** |
+| connected (3+) | 80 | **82** |
+| total `.md` | 5,051 | 5,051 |
+
+CSV row appended to `architecture/metrics/connectivity_log.csv`: `2026-09-13,4231,738,82,5051` (1 occurrence, verified).
+
+Census excludes `.git` and `node_modules`; a bare `find` over the vault returns 5,148 because of those.
+
+## Pages processed (10 — 8 `inbox/proposals/pending/`, 2 `inbox/proposals/approved/`; 0 backlinks each before)
+
+| page | before | after |
+|---|---|---|
+| `2026-09-13_rohr_paul-knew-christ-within-panentheism.md` | 0 | 2 |
+| `2026-09-13_rohr_center-and-edge-holy-ignorance.md` | 0 | 1 |
+| `2026-09-13_rohr_faith-with-doubt-weekly-summary.md` | 0 | 1 |
+| `2026-09-12_wolfram_summer-research-institute-2026-keynote.md` | 0 | 1 |
+| `2026-09-12_levin_llms-as-cognitive-virus.md` | 0 | 1 |
+| `2026-09-12_levin_bacterial-collectives-decodable-patterns.md` | 0 | 1 |
+| `2026-09-12_levin_vmem-connexin-metastasis-paradox.md` | 0 | 1 |
+| `2026-09-11_carroll_mindscape-367-diamond-leaders.md` | 0 | 2 |
+| `approved/2026-09-09_kastrup_god-soul-problem-of-evil-hecht.md` | 0 | 1 |
+| `approved/2026-09-09_mcgilchrist_rewind-yourself-...-ignore.md` | 0 | 1 |
+
+**Selection.** All 8 pending proposals were orphans and were taken. `traditions/` held exactly **one** orphan this week (`traditions/loughran/papers/README.md`, a directory index, last touched 2026-05-18) — skipped as a system page. The remaining two slots went to the newest never-promoted `approved/` orphans; the three 2026-09-09 candidates share an identical mtime (a bulk file operation on 09-11), so the tie was broken to spread traditions rather than take two McGilchrist cards.
+
+## Agentic calls injected: 56 across 10 pages, 14 thinkers addressed
+
+Levin 7 · Loughran 7 · McGilchrist 6 · Friston 6 · Stump 6 · Rohr 5 · Wright 4 · Hoffman 4 · Kastrup 3 · Fredrickson 3 · Carroll 2 · Hawkins 2 · Wolfram 1 · Arkani-Hamed 1
+
+Threshold 0.4. Three calls this run are **refusals to route**, carried forward from the proposals' own warnings: no Levin call on either Rohr page (`summa_levin_prs04_catchall`), no Stump id proposed where the virtue tract choice belongs to that agent, and no Arkani-Hamed/Wolfram/Hoffman call on the Carroll card, which the proposal correctly fences off from the post-spacetime cluster.
+
+## Bridge notes written (12 — all appends to existing files; none created, none zero-byte)
+
+| file | claim |
+|---|---|
+| `kastrup_rohr_bridge.md` | Rohr's transcendence clause is the term analytic idealism lacks; the two share an opponent, not an ontology |
+| `wright_rohr_bridge.md` | Both traditions on Paul in one week; can Rohr's interior Christ carry Wright's corporate "in Christ"? |
+| `mcgilchrist_rohr_bridge.md` | Centre/edge converts a maturity ladder into a division of epistemic labour — the structural, testable form |
+| `loughran_rohr_bridge.md` | Non-hostility as membership criterion: the accelerator's missing positive boundary condition |
+| `levin_wolfram_bridge.md` | Agency-ratchet genericity is settleable by sampling — specifying the observable is the load-bearing work |
+| `levin_loughran_bridge.md` | LLM-dependence model and C2A2's premise are a **falsifiable pair, opposite in sign**, over the same data |
+| `friston_levin_bridge.md` | A Markov blanket whose sensory surface (K+) is under experimental control — the test case for blanket attributions |
+| `levin_stump_bridge.md` | A setpoint faithfully pursued produces metastasis: normativity has no place in the vocabulary to go |
+| `carroll_levin_bridge.md` | History is the *harder* grant than the dish, not the easier one; Levin's case is the permissive end |
+| `carroll_loughran_bridge.md` | If leadership effects are mostly luck, the accelerator is rescoped rather than refuted |
+| `kastrup_stump_bridge.md` | Hecht takes Aquinas's substance and drops hylomorphism — the gap, not the theism, is the real argument |
+| `hoffman_mcgilchrist_bridge.md` | Same architecture, opposite modal claim about who can change it — the first statement of where these part |
+
+Each carries a `**Wikilinks (sewing, 2026-09-13):**` line; that is the mechanism by which the ten pages left the orphan set.
+
+## Worth Tom's attention
+
+**1. One genuinely falsifiable pair, which is rare enough to be the headline.** `PROP-2026-09-12-002` (Solé, Krakauer, Levin et al., *LLMs as a Cognitive Virus*) predicts that heavy AI mediation drives a population past a threshold into persistent dependence with abrupt competence loss. C2A2 wagers the opposite about the same apparatus. These are not rival philosophies; they are rival predictions about measurements the instrument already takes. The bridge note asks the project to **commit now to what would count as the dependence reading winning**, before any data exists to be read either way. A criterion chosen afterwards is not a criterion, and the project has nothing to lose by fixing one this week.
+
+**2. A correction that propagates, not a local edit.** `PROP-2026-09-12-004` reports connexin expression *rising* as tumours become invasive. The wiki's standing gloss — cancer as lost coupling, hence a shrunken light cone — is monotonic and cannot survive it. PRS-02 is cited forward from several tradition files, so this is a cross-tradition correction pass. Flagged to both the Levin and Loughran agents; it needs scheduling, not noting.
+
+**3. Rohr stated his metaphysics in the network's own vocabulary, for the first time.** Panentheism, explicitly not pantheism, with the misreading anticipated by name. Every Rohr-side mapping onto conscious-realist monism either keeps the transcendence term or drops it, and until now nothing forced that choice into the open. The Kastrup bridge records what dropping it costs.
+
+**4. A factual error in a proposal, corrected in-line.** `PROP-2026-09-12-001` states that `synthesis/friston_wolfram_bridge.md` "is still zero bytes." It is **4,678 bytes**. Noted in the Friston call so nobody writes as though the bridge is unstarted. Five bridge files genuinely are zero-byte and are unchanged from last week: `arkanihamed_loughran`, `hoffman_loughran`, `carroll_hawkins`, `kastrup_loughran`, `mcgilchrist_wright`. This agent does not delete and does not seed.
+
+**5. Duplicate stems make the orphan metric ambiguous — new finding, and it is not small.** Wikilinks resolve by filename stem, so two files sharing a stem both receive credit for one link. The vault holds **419 stems with more than one file (489 duplicate files)**, largely `inbox/<card>.md` alongside `inbox/proposals/approved/<card>.md`. Two of this run's ten pages exist in both places, which is why 12 pages left the orphan set for 10 pages sewn. Neither the orphan count nor any backlink-derived measure means quite what it appears to until the duplication is either resolved or excluded. Recommend the janitor take a census pass; this is adjacent to its `duplicate H1 titles` check and not covered by it.
+
+**6. Metric inflation, twelfth consecutive flag.** `architecture/` supplies **3,302 of the 4,231 orphans** (78%) — machine dumps, `lit_search_results` and `daily_sync`, which no human will ever link. `inbox/` supplies 787. The curated vault's real orphan population is a small fraction of the headline number and has been moving in the right direction for weeks, invisibly. Same recommendation as the previous eleven runs: **split the CSV into curated and machine columns.** Twelve flags with no action suggests the recommendation should be escalated or withdrawn; it should not be filed a thirteenth time unchanged.
+
+**7. The Wolfram coverage note is more valuable than the Wolfram proposal.** A seven-week hiatus in the Q&A livestreams — the dominant feedstock for that tradition's pipeline — ended 2026-09-11, and the retrieving agent correctly separated *a quiet channel* from *a quiet program*. That is the Level-2 signal-stream lesson recurring in a second place: a frozen artifact and a genuinely quiet upstream render identically. It should be written into the retrieval guidance as a standing principle rather than rediscovered a third time.
+
+**8. Token budget breached, twelfth consecutive run, disclosed.** Reading ten proposals (4-12 KB each), authoring 56 calls and 12 bridge notes, and running two full 5,051-file censuses exceeds Rule 6's 4,000-per-task budget. Recommendation unchanged: exempt scheduled agents from the per-task cap, or derive the batch size from the budget rather than fixing it at 10.
+
+**9. Nothing committed, nothing pushed.** The sandbox cannot write `.git`. `scripts/commit_daily_run.sh` closes this from the Mac — note that this run's writes are Sunday-morning `wiki/` edits and will be **held** by that script's authorship check unless it runs after the daily run, which is the correct behaviour.
+
+## Verification (fail-loud)
+
+All 10 pages assert-checked byte-for-byte on their pre-write prefix (SHA-1 of the original length), each carrying exactly one `## Agentic Calls` heading and exactly one `Sewing Agent on 2026-09-13` stamp; YAML frontmatter and existing `## Cross-Tradition Signals` sections intact. All 12 bridge files assert-checked the same way, one `Sewing Agent, 2026-09-13` stamp each. CSV: 1 occurrence of the new row, appended after an assert that no 2026-09-13 row existed. Post-run census re-run from scratch and diffed against the pre-run census; the 12 pages that changed backlink count are all accounted for above. **Nothing deleted, nothing overwritten, no files created in the vault, no probe files left behind. No JS, HTML or CSS touched.**

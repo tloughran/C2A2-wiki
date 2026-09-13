@@ -19911,3 +19911,394 @@ epistemic 3 (958, 962, 967), methodological 3 (959, 963, 968), normative 2 (960,
 One Critical-risk item (962); five High (958, 960, 961, 967, 968); two Medium-High (957, 966). Checked
 against tonight's ASSUMPTION-1318–1332 for duplication; each presumption names the assumption it sits
 under where one exists. Registers snapshotted as `*.bak.20260911-pre-14eod`.*
+
+PRESUMPTION-969:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a numeric divergence, once recorded, is on its way to being resolved.
+  Evidence it was operative: the cross-connection count now stands at **five figures** — 107, 108, 131,
+    135, 136 — across three days, and today's two new figures came from two runs *inside the same day*,
+    each stating its number as fact in a banner or a summary and moving on. No run has ever been asked to
+    reconcile; this register records the divergence nightly with no authority to rule it; OPEN-195 has sat
+    unruled since it was raised. The measurement that would settle it is one `grep -c`.
+  Why it was unstated: too foundational to notice. Recording a discrepancy *feels* like acting on it, and
+    the register's nightly note is the estate's only reconciliation ritual.
+  Type: structural
+  Related decisions: OPEN-195; ASSUMPTION-1333, ASSUMPTION-1344
+  Testability: **in-house** — of all numeric divergences this register has recorded since 2026-08-01, how
+    many were subsequently resolved by any run? The register holds the data to answer this about itself.
+  Risk if wrong: **High.** Connection density — a headline metric of the maturity model — has been
+    non-computable for two days, and the estate's response has been to record the reason more precisely
+    each night. Note the contrast the same day: the lit pipeline *measured* its backlog (151 vs 163),
+    declared its method, and named the discrepancy as unresolved. One subsystem knows how to do this.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-969
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the gap between the register's recording behaviour and the estate's resolving
+        behaviour over three days. The evidence is the widening itself: divergences here grow by one
+        figure per run that bothers to count, which is the signature of recording without ruling.
+    Current status: UNTESTED
+
+PRESUMPTION-970:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a withdrawn diagnosis costs only the time it occupied.
+  Evidence it was operative: Agent 16 withdrew a standing TOOLING/INTEGRITY flag today, dated the defect's
+    repair to "on or before 2026-08-12," and named the cost precisely as "runs kept reading the flag's text
+    instead of the file." That accounting covers attention. It does not ask which *decisions* were taken
+    while the flag stood — whether any card was held, any route avoided, any remedy designed around a
+    defect that no longer existed. Yesterday's ASSUMPTION-1328 (a fix keyed on a field present in zero of
+    414 files) was accounted the same way: "the cost is not the bad fix but the cycles it occupied."
+  Why it was unstated: obvious to participants. The retracting agent is the one best placed to name the
+    cost and the one least placed to audit a month of other runs' decisions.
+  Type: epistemic
+  Related decisions: OPEN-196; ASSUMPTION-1341, ASSUMPTION-1328
+  Testability: **in-house** — grep the changelog and disposition registers for citations of the withdrawn
+    flag between 2026-08-12 and 2026-09-12, and check whether any of them is load-bearing for a decision
+    still standing.
+  Risk if wrong: **High.** A withdrawn premise that was cited in a still-standing decision leaves the
+    decision intact and its warrant gone, which is invisible by construction.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-970
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the *shape* of two cost accountings on consecutive days, both of which counted
+        attention and neither of which counted consequences. The retraction itself is exemplary; the
+        presumption sits in what a retraction is taken to conclude.
+    Current status: UNTESTED
+
+PRESUMPTION-971:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That reciting a flag is reading it.
+  Evidence it was operative: two consecutive days have now produced a standing architectural claim that
+    collapsed the moment somebody opened the artefact it named — 09-11's remedy keyed on a nonexistent
+    frontmatter field, 09-12's defect fixed a month earlier. Both had been carried across multiple cycles
+    by runs that quoted the flag's text accurately. Today added a third instance in miniature: the daily
+    run's stump alarm, raised from a footer/last-id mismatch and killed by counting headers, which also
+    retroactively invalidated the 09-10 sweep's defect list — whose **remaining entries were not
+    re-checked**.
+  Why it was unstated: culturally embedded. A flag written in this estate's house voice is precise,
+    sourced and confident; quoting it accurately feels like verification, and the register rewards
+    accurate citation.
+  Type: methodological
+  Related decisions: none; ASSUMPTION-1334, ASSUMPTION-1341
+  Testability: **in-house** — enumerate every standing flag and check each against its named artefact.
+    Three of the last three so checked were wrong. n=3 is not a rate, but it is the entire sample.
+  Risk if wrong: **High.** Every standing flag in this estate is currently unverified against its
+    artefact, and the flags are what runs consult in place of the artefacts.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-971
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three instances in two days, in three different subsystems (deferred-action
+        monitor, lit pipeline, daily run), each caught by the same trivial act. The common factor is not
+        carelessness — every run involved was careful — but that opening the file is nobody's required
+        step.
+    Current status: UNTESTED
+
+PRESUMPTION-972:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That an empty recency window is evidence about a research tradition.
+  Evidence it was operative: the Wolfram specialist had to argue *explicitly* that a seven-week silence
+    following a bereavement "reflects that hiatus, not a quiet research program," and noted "the vault has
+    been bitten by that exact confusion before." That the argument had to be made means the default
+    reading runs the other way. The hunt's apparatus is built entirely on recency windows (30-day, 60-day);
+    nothing in it distinguishes a tradition that has stopped producing from a person who has stopped
+    posting, and the same day the daily run reported "genuine zeros" for three further traditions without
+    any such distinction available to it.
+  Why it was unstated: obvious to participants — a human reading the memorial post would never confuse the
+    two, so the confusion is invisible until an agent has to name it.
+  Type: normative
+  Related decisions: none; ASSUMPTION-1338, ASSUMPTION-1340
+  Testability: **testable via literature** — bibliometrics and science-of-science have a substantial body
+    on inferring research activity from publication silence, including base rates for career interruption.
+  Risk if wrong: **Medium-High.** The cost is asymmetric and hidden: a tradition wrongly read as quiet
+    generates no card and therefore no record of the misreading. Today produced four such zeros.
+  Status: UNTESTED — ROUTED to 15a/15b
+  Provenance:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-972
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the fact that the argument had to be made at all, and from the absence of any
+        status in the hunt's vocabulary between "active" and "quiet."
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a/15b
+
+PRESUMPTION-973:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That epistemic warrant travels with a card into the review lane.
+  Evidence it was operative: today's review page carries **five proposals of at least three distinct
+    warrant classes** — three Levin cards from read sources, one Wolfram card written as an explicit
+    *retrieval instruction* with its Solution field unclaimed, and one Carroll card verification-gated
+    with its transcript unread — under one page, one decision channel and one APPROVE button. Each card
+    states its own standing carefully in prose. Agent 16 observed the same day that the one-card window in
+    which batch-approval was structurally impossible has now closed. Nothing downstream of the button
+    reads the prose.
+  Why it was unstated: too foundational to notice. The care is real and visible in every card; the
+    presumption is that the lane preserves it.
+  Type: structural
+  Related decisions: FINDING-089/090, PREMISE-204; PRESUMPTION-967 (09-11), ASSUMPTION-1339
+  Testability: **in-house** — of the 414 approved cards, how many carried an explicit
+    unread/unverified/unclaimed marker at approval, and what happened to those markers after ingest?
+  Risk if wrong: **High.** PREMISE-204 states the four conditions under which aggregated authorisation
+    carries item-level warrant. A five-card page of mixed warrant classes satisfies none of them, and
+    tonight's page is the second consecutive one to which that applies.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-973
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Second instance of PRESUMPTION-967's class, with the mechanism now named: the gap is not that a
+        gated card enters the lane, but that the lane has **no field** in which gating is represented, so
+        it survives only as prose the approving mechanism does not parse.
+    Current status: UNTESTED
+
+PRESUMPTION-974:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That an unassigned in-house test is deferred rather than declined.
+  Evidence it was operative: 15b's Critical flag, adopted today, counts **178 days of owed measurement
+    with zero executed** across four named premises, and every one of the five remedial actions is a grep.
+    This register has named an in-house test on nearly every item it has filed for over a month.
+    Separately today, two different runs independently named the same one-line sqlite query as the
+    disambiguating test and neither ran it — in that case because neither could reach the file, which is a
+    *different* failure and is why the general question has never been asked. In no case has anyone
+    recorded a test as declined; they accumulate as pending.
+  Why it was unstated: culturally embedded. Naming a cheap test is treated in this estate as a form of
+    rigour, and it is one — but naming and owning have never been separated, so an unowned test reads as
+    scheduled work rather than as work nobody will do.
+  Type: epistemic
+  Related decisions: OPEN-192, OPEN-199, OPEN-200; ASSUMPTION-1342, ASSUMPTION-1349
+  Testability: **testable via literature** on task ownership, diffusion of responsibility and the fate of
+    unassigned action items in organisational and incident-review settings — plus the in-house limb: has
+    any in-house test named anywhere in this estate ever been executed by an agent?
+  Risk if wrong: **Critical.** The entire self-awareness apparatus routes its conclusions into in-house
+    tests. If unowned tests are declined rather than deferred, then the apparatus's output is a growing
+    list of measurements that will never be taken, and its nightly claim to have identified cheap
+    discriminators is the load-bearing illusion of the whole system.
+  Status: UNTESTED — ROUTED to 15a/15b
+  Provenance:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-974
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the 178-day figure read against this register's own filing habit. The flag asks
+        why four premises went unmeasured; the presumption asks whether "named" has ever meant anything
+        other than "not done." Surfaced against this register's own interest and routed.
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a/15b
+
+PRESUMPTION-975:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That independence is a property an agent can attest to, rather than a property of
+    how the searches were run.
+  Evidence it was operative: 15a and 15b ran **sequentially for a second consecutive cycle**, the deviation
+    was declared, and independence attestations were nonetheless present in all eight result files. The
+    pipeline's strongest reported evidence this cycle is that "both directions independently found" the
+    same covering premises and the same defect — which is also precisely the pattern an order effect would
+    produce. Nothing in the artefacts distinguishes a blind second search from one run in a context that
+    has already seen the first.
+  Why it was unstated: oversight compounded by good faith. The attestation was designed for a concurrent
+    architecture; when the architecture changed the attestation was carried forward unexamined, and the
+    run declared the deviation honestly in the same breath.
+  Type: methodological
+  Related decisions: `provenance_protocol.md` independence requirement; ASSUMPTION-1345
+  Testability: **testable via literature** — order and anchoring effects in sequential retrieval and in
+    LLM-mediated search are an active literature; plus an in-house limb: re-run one dispositioned cohort
+    with the directions genuinely blinded and compare convergence.
+  Risk if wrong: **High.** Convergence between the two directions is the pipeline's primary quality
+    signal and the ground on which today's Critical flag was adopted rather than filed.
+  Status: UNTESTED — ROUTED to 15a/15b
+  Provenance:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-975
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the co-occurrence of a declared sequencing deviation and an undiminished
+        independence claim, twice. The run's honesty is what makes the presumption visible; a run that
+        hid the sequencing would have left nothing to infer from.
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a/15b
+
+PRESUMPTION-976:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a parser is an implementation detail rather than a measuring instrument.
+  Evidence it was operative: three runs today independently hit the same frontmatter/footer trigger — a
+    blank line after a `---` separator. One "nearly produced a 69-item false report" across 65 files before
+    catching it; one found its word count off "by the entire YAML footer"; one specified the exact fix
+    ("skip blanks before the lookahead"). Each fixed its own copy and recorded the trap in its own log.
+    No parser in this vault has a fixture, and no run proposed one. Every count this estate publishes —
+    triplets, cross-connections, findings, signals, word ratios, queue depths — is a parser's output.
+  Why it was unstated: too foundational to notice. A parser is written to get at the data; the data is
+    what gets audited.
+  Type: structural
+  Related decisions: none; ASSUMPTION-1351, ASSUMPTION-1333, ASSUMPTION-1335, ASSUMPTION-1344
+  Testability: **in-house and cheap** — one fixture file per parser, containing the known trigger. The
+    qc sweep already demonstrated the method by cross-validating its corrected parser against an
+    independently recorded figure and agreeing to the word.
+  Risk if wrong: **High.** Today produced four separate numeric disputes (CROSS 108/136; 261 phantom
+    files; 41-vs-38; 151-vs-163) and at least three are parser-method disagreements rather than
+    disagreements about the world.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-976
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three independent same-day hits on one trigger, each repaired locally and none
+        escalated to a shared fix — which is the signature of a class of object nobody owns.
+    Current status: UNTESTED
+
+PRESUMPTION-977:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a defect caught before publication cost nothing.
+  Evidence it was operative: today produced at least four near-misses, each recorded as a catch and none
+    as a datum — the 69-item false report, the stump false alarm, the upward-failing word count, and the
+    stale "now live" banner on a 2021 livestream. Every one was written up as a story with a moral. None
+    entered a denominator. This is PRESUMPTION-968's shape (filed 09-11 about the search layer's dates)
+    recurring one day later in three different subsystems, which is itself the evidence that the
+    generalisation was not adopted.
+  Why it was unstated: culturally embedded. This estate's house voice rewards the narrated near-miss, and
+    a narrated near-miss reads as a defect handled.
+  Type: epistemic
+  Related decisions: none; PRESUMPTION-968
+  Testability: **in-house** — count near-misses per run over the last thirty days from the run reports
+    themselves, which narrate them reliably. The data exists; only the tally is missing.
+  Risk if wrong: **Medium-High.** If the rate is high and flat, the estate's accuracy depends on each run
+    happening to check, and the checks are discretionary in every case recorded today.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-977
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the recurrence of a presumption filed the previous day, in new subsystems, with
+        no sign that the prior filing reached them. The recurrence is the finding as much as the content.
+    Current status: UNTESTED
+
+PRESUMPTION-978:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a scheduled job's resource envelope is static, and that such a job degrades
+    gracefully when it isn't.
+  Evidence it was operative: the OpenStory database grew **3.05 GB → 6.43 GB in six weeks** and crossed
+    the sandbox's capacity somewhere in that interval. Two jobs discovered this today by running and
+    failing — one with `OSError: [Errno 28] No space left on device`, one by computing that a 140-second
+    copy will not fit a 45-second ceiling. Neither failure was predicted; no monitor watches headroom;
+    the diagnosis both runs cite was written on 2026-08-01 against a 3 GB database and was never
+    re-measured until it broke. The metabolism failure is the **sixth** recorded, and the previous five
+    were each read as a permissions problem.
+  Why it was unstated: oversight of a specific kind — the 2026-08-01 diagnosis recorded a *blocker* and
+    not a *trend*, so subsequent runs inherited a static picture of a moving quantity.
+  Type: scaling
+  Related decisions: OPEN-197; ASSUMPTION-1348
+  Testability: **in-house** — record db size and sandbox free space daily; both numbers are one command
+    each and both were measured today by runs that then discarded them.
+  Risk if wrong: **High.** Two scheduled jobs are now permanently dead in their current form, and the
+    estate learned this by failing rather than by watching. Whatever else shares that envelope has not
+    been enumerated.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-978
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two same-day capacity failures read against a six-week-old diagnosis that named a
+        size as a fact. The presumption is not that anyone thought the database would stop growing, but
+        that nobody's job was to notice that it hadn't.
+    Current status: UNTESTED
+
+PRESUMPTION-979:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That a report's caveats are read at the same rate as its status fields.
+  Evidence it was operative: the system-health run disclosed voluntarily that two of its own sections
+    report on the wrong machine — "'nothing unusual' because there is nothing visible, not because your
+    Mac's processes were checked" — and placed that disclosure in prose beneath a green summary. The
+    metabolism run's most important sentence was a refusal to conclude, placed after its tables. The
+    OpenStory run's was a rejected workaround, placed after its error. The scheduler check built the
+    disambiguation *into* its FAIL row, which is the exception that shows the rule. Meanwhile the
+    metabolism freshness gate has been red and unread for six days, a fact named by the run whose file it
+    describes.
+  Why it was unstated: obvious to participants. Every author here writes the caveat because they believe
+    it will be read; the belief is never separated from the practice of writing it.
+  Type: epistemic
+  Related decisions: PRESUMPTION-962 (Critical, 09-11); ASSUMPTION-1355
+  Testability: **testable via literature** — warning compliance, alarm fatigue and automation bias are a
+    mature applied literature with measured rates; plus an in-house limb: trace whether any caveat filed
+    in prose beneath a green status in the last thirty days was subsequently acted on.
+  Risk if wrong: **High.** PRESUMPTION-962 filed the status-field limb at Critical yesterday. This is its
+    complement and the more tractable one: not "is green checked" but "is the sentence under it read." If
+    it isn't, then the estate's entire epistemic discipline — which is almost wholly prose — is invisible
+    to its own consumers.
+  Status: UNTESTED — ROUTED to 15a/15b
+  Provenance:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-979
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from four same-day reports whose load-bearing qualification sat below their headline,
+        and from one (the scheduler check) that put it in the row instead — supplying the contrast that
+        makes the presumption visible rather than merely stylistic.
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a/15b
+
+PRESUMPTION-980:
+  Date surfaced: 2026-09-12
+  Statement: [inferred] That the estate's token budget is a constraint on work rather than a measurement
+    of its contract layer.
+  Evidence it was operative: a run declared the per-task 4,000-token budget breached *before any work
+    began* — "contracts and six memory files are ~15k" — and reported the breach dutifully as required.
+    The rule is still cited as governing in task files. Every task in this estate loads the same contract
+    layer, so every task breaches on load; a rule breached universally at t=0 selects nothing and
+    prohibits nothing. **This register's own run breaches it identically.**
+  Why it was unstated: culturally embedded. The rule was written when the contract layer was small, and
+    compliance-by-declaration has substituted for compliance ever since, which keeps the rule feeling live.
+  Type: structural
+  Related decisions: the standing per-task 4,000 / per-session 30,000 rule; ASSUMPTION-1356
+  Testability: **in-house and immediate** — measure load-time context for three task types. One run
+    already did.
+  Risk if wrong: **Medium.** Low direct cost, but a governing rule that no task can satisfy trains every
+    agent in the estate to report a breach and proceed, which is the habit that matters. Note the shape:
+    the same day, 178 days of named-and-undone measurement were surfaced as Critical. Both are rules that
+    are cited rather than binding.
+  Status: UNTESTED — in-house first
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-980
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a compliance declaration that records its own impossibility without drawing the
+        conclusion. Surfaced against this register's interest, since this register is among the estate's
+        largest per-task consumers.
+    Current status: UNTESTED
+
+*Surfaced by the 14b evening run, 2026-09-12, after 14a. Twelve items (969–980): structural 4 (969, 973,
+976, 980), epistemic 4 (970, 974, 977, 979), methodological 2 (971, 975), normative 1 (972), scaling 1
+(978). **One Critical-risk item (974** — whether an unowned in-house test has ever been anything but
+declined, which is load-bearing for this entire apparatus**)**; seven High (969, 970, 971, 973, 975, 976,
+978); one Medium-High (977); one Medium (980). Checked against tonight's
+ASSUMPTION-1333–1356 for duplication; each presumption names the assumption it sits under where one
+exists. **Four routed to 15a/15b (972, 974, 975, 979); eight held in-house with named tests** — and
+PRESUMPTION-974 is the presumption that those eight will not be run. Registers snapshotted as
+`*.bak.20260912-pre-14eod`.*

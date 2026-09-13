@@ -1233,3 +1233,44 @@ open → urgent today; PROP-2026-09-02-002's condition fires — or visibly does
 (167 paths, dry-run passes), a `scope: site` claude.ai grant for the browser pane (fourth consecutive day
 with the outbound sync leg down), Kastrup member access before FLAG-023's window closes, and the
 `14b_presumption_detector` / Friday-specialist SKILL path correction (ASSUMPTION-1332).
+
+---
+
+**2026-09-12 note (14a).** No new decision entries. The register remains at **DECISION-083
+(2026-08-27) — sixteen days**. No attended session occurred. Phase 0 was a verified no-op: the only
+`[C2A2-review-decision]` thread within three days is dated 09-09 and was consumed by the 09-10 run.
+A Gmail draft was created today and **not sent**; five proposals now sit on the 2026-09-12 review page.
+
+**One standing item was answered, by an agent, against its own prior day's inference.** OPEN-196 asked
+whether the Gmail decision route is standing and whether the `generate_review_page.py` ID defect is
+correctness-critical. Agent 16 read the script: the Gmail compose **is** the page's own submit button
+(`submitDecisions()`, lines 303–312), one `pid` per proposal at line 116, position-based numbering
+surviving only as a fallback for the 1 file of 414 lacking a `proposal_id`. The defect was repaired **on
+or before 2026-08-12**; the standing TOOLING/INTEGRITY flag has been obsolete for about a month and was
+withdrawn today (ASSUMPTION-1341). **OPEN-196 is answered in substance and is left open here only for
+Tom's ratification**, since 14a does not make decisions.
+
+**Rulings owed: now twenty-one, and one has been answered without being ruled.** Carried: REVISE-436's
+ninth unruled cycle, the WATCH-002/003 audit question, OPEN-174, OPEN-185 through OPEN-195, OPEN-197,
+OPEN-198, OPEN-199. Added tonight: **OPEN-200** (has any named in-house test ever been executed —
+upstream of OPEN-192 and OPEN-199 both), **OPEN-201** (who recomputes the 24-file connexin citation set),
+**OPEN-202** (parser fixtures; a provenance header for cross-item objects), **OPEN-203** (a
+dormant-for-cause source status), **OPEN-204** (may 15a/15b run sequentially, and what does the
+independence attestation then assert). OPEN-196 moves to *answered, unratified*.
+
+**The calendar deadline is now twelve days.** PROP-2026-09-02-002's deferred condition fires — or visibly
+does not — on **2026-09-24** (ASSUMPTION-1329). A second condition of the same shape was created today
+and is held by nothing: the daily run's request that Levin PRS-02's downstream citations be reviewed,
+whose scope the Summa verification run measured at 24 syntheses the same night (OPEN-201).
+
+**Requests addressed to Tom outside this register, accumulating:** Mac-side push sign-off (today's run
+committed 39 paths locally, `be3245b`, deliberately unpushed; 2 paths held); a `scope: site` claude.ai
+grant for the browser pane (**fifth consecutive day** with the outbound sync leg down, **tenth** with the
+inbound down); Kastrup member access before FLAG-023's window closes; the `14b_presumption_detector` /
+Friday-specialist SKILL path correction (ASSUMPTION-1332, second day); re-application of `permissionMode`
++ `chromePermissionMode` to the daily run **with the desktop app quit** (ASSUMPTION-1347); the
+metabolism/OpenStory move to launchd, now not merely advisable but forced — the sandbox path is
+permanently broken by database growth (ASSUMPTION-1348, OPEN-197); and PREMISE-148(5)'s safe-harbour
+narrowing, routed to Tom by name by today's lit pipeline.
+
+*(14a does not make decisions.)*

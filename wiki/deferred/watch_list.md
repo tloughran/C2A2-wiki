@@ -289,6 +289,16 @@ This is the same shape as the other eleven-minus-one: an approval would approve 
 
 **Two unrelated leads the same card carries, recorded once so they are not lost with it:** (i) *AMA | August 2026* (2026-08-03) is outside the search window and absent from `traditions/carroll/prs_triplets.md` — a known capture gap, self-flagged, no owner; (ii) arXiv:2603.07674, a March 2026 comment on "On the emergence of preferred structures in quantum theory," surfaced with **unverified authorship** and was correctly not claimed for Carroll. Neither is a watch item under the present three channels. Both would be, under Channel 4.
 
+**UPDATE 2026-09-13 — the one-card window predicted to close has closed, and a twelfth instance arrived inside it.** Yesterday's entry ended: *"That will stop being true the moment the queue refills."* It refilled within twenty-four hours. `pending/` went 1 → **5**; `review/2026-09-12_review.html` (generated 2026-09-12 04:39) carries **5** cards — PROP-2026-09-11-001 plus PROP-2026-09-12-001 through -004. PROP-2026-09-11-001 is no longer alone on a page, so FINDING-089's mechanism is operative against it again and the cheapest-ever instance of this problem expired unacted-on after one day.
+
+**Twelfth instance — PROP-2026-09-12-00N, `pending/2026-09-12_wolfram_summer-research-institute-2026-keynote.md`.** Its own text: *"…retrieved, no transcript exists on the Wolfram sites, and **nothing below is a finding**"*; the card asks to be *"read as a retrieval instruction rather than an extraction"*; its candidate lines are marked `[UNVERIFIED — NOTHING CLAIMED]`; it proposes recording the source in `traditions/wolfram/wiki.md` as **"CANDIDATE SOURCE IDENTIFIED, UNVERIFIED."**
+
+This one is the *shape of PROP-2026-08-14-033, not of PROP-2026-09-11-001*: no transcript is asserted to exist, so the condition is not known-dischargeable. That matters because PROP-2026-08-14-033's retrieval has now failed **four** times (2026-09-12 ingest run), and this card is a fresh copy of that same open-ended shape entering the queue while the original is still open. It is also the most honest card of the twelve — it declares itself a retrieval instruction in its first screen — which is precisely why approving it en bloc with four ordinary extraction cards would be the clearest possible instance of the leak.
+
+A thirteenth, milder instance sits beside it: `pending/2026-09-12_levin_bacterial-collectives-decodable-patterns.md` — *"from the bioRxiv abstract. Full text not read; no figure or statistic is quoted."* Abstract-only sourcing is disclosed and bounded, not a deferred condition, so Agent 16 counts it as disclosure rather than leakage and records it only so the distinction stays visible.
+
+**Agent 16 has again opened no watch.** These are in `pending/`, Channel 1's predecessor state. The count now stands at **twelve leaked or leak-shaped cards**, one of which (PROP-2026-08-14-033) is four retrieval failures deep and holds the ledger's only OPEN slot.
+
 
 ---
 
@@ -5535,3 +5545,49 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-12.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-13
+
+**No check was due and none was run. The run's substance is one prediction confirmed the day after it was made: the review queue refilled, the one-card window closed, and a twelfth leak-shaped card walked into it.**
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: **1 file, 0 new, 0 untracked.** `2026-04-21_carroll_singer-mindscape-351.md` — `status: superseded`, `tracked_by: agent-16`, `tracked_on: 2026-05-05`, `tracking_id: WATCH-001`, resolved 2026-05-12. Tag verified present in frontmatter. Nothing to tag.
+- **New disposition file for Channel 1 intake: none.** `review/archive/` stands at **19**, latest still `2026-09-10_decisions.md`. No pass has run since. **Two** generated pages now await Tom in `review/` root: `2026-09-11_review.html` (1 card) and `2026-09-12_review.html` (5 cards, generated 09-12 04:39). Review-pass gap: **3 days.**
+- **Channel 2 (agent-exchange deferrals): 0.** Vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` across `*.md`, excluding `deferred/` and `agents/`, returns **zero** matches. Channel unexercised **21 days**.
+- **Channel 3 (human watch requests): 0 visible — channel deaf, tenth consecutive day.** `2026-09-12_chat_summary.md` exists and is a failure notice, not a summary: `tabs_context_mcp` returned "Claude in Chrome is not connected" on two attempts; the built-in browser pane refused `https://claude.ai` for want of a site grant no unattended run can give. Blind spot now spans **09-03 through 09-12**. The file names both fixes (leave Chrome running with the side panel signed in, or grant `claude.ai` to the browser pane once at scope "site").
+
+**Condition checks (Step 3): 0 due, 0 run, 0 resolved.**
+- **WATCH-003 — not checked; not due.** Next on-cadence check remains **2026-09-15**; count stands at **10**. The off-cadence trigger is the appearance of a decision file later than `2026-09-10_decisions.md`; `review/archive/` is unchanged at 19, so the trigger has **not** fired. Running early would only re-confirm the tenth answer two days sooner. Recorded for symmetry with 08-28 and 09-11, when the trigger did fire and the check was pulled forward.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**Stale items (Step 4): 1, unchanged.** WATCH-003, flagged 2026-08-25, 10 checks, sole occupant of ACTIVE ITEMS, still needing one line from Tom on the INTEGRITY FLAG. No counters moved. No item newly stale. Recommendation unchanged: **Escalate to Tom** — continued checking cannot advance it.
+
+**Finding of the run — the 09-12 prediction verified within twenty-four hours.** Yesterday's entry recorded that PROP-2026-09-11-001's protection was structural and temporary: *"That will stop being true the moment the queue refills."* `pending/` went **1 → 5** overnight (four cards filed 2026-09-12: Wolfram SRI keynote, and three Levin — vmem/connexin, LLMs-as-cognitive-virus, bacterial collectives). `review/2026-09-12_review.html` cards all five. FINDING-089's mechanism — a batch APPROVE cannot distinguish "read and agreed" from "not read separately" — is operative against PROP-2026-09-11-001 again. **The cheapest instance of the leakage problem that has ever existed expired unacted-on after one day.** That is not a reproach to Tom, who had one working day; it is the measurement the flag has lacked, namely how long these windows actually stay open. Answer: about a day.
+
+**Twelfth leak-shaped card, same run.** `pending/2026-09-12_wolfram_summer-research-institute-2026-keynote.md` declares in its first screen that no transcript exists, that *"nothing below is a finding,"* that it should be *"read as a retrieval instruction rather than an extraction,"* and marks its candidates `[UNVERIFIED — NOTHING CLAIMED]`. It is the **PROP-2026-08-14-033 shape** (condition not known-dischargeable), not the PROP-2026-09-11-001 shape (transcript exists, merely unfetched) — entering the queue while -033 itself sits four retrieval failures deep. Full entry written into the DEFERRED-CONDITION LEAKAGE FLAG above. A milder case, `2026-09-12_levin_bacterial-collectives-decodable-patterns.md` ("from the bioRxiv abstract. Full text not read"), is counted as **bounded disclosure, not leakage**, and recorded only to keep that distinction visible.
+
+**INGESTION-RISK FLAG: quiescent, sixth consecutive confirmation — and the ingest layer's recommendation has escalated.** The 2026-09-12 run processed **0 files** (compile queue empty, measured: `scripts/ingest_ledger.py wiki` → approved=414, ingested=382, decided-zero=30, **OPEN=1**, staging identical). PROP-2026-08-14-033 retrieval re-attempted and **failed a fourth time**; the log's words: *"RECOMMENDATION, escalating: reject the card or hand-retrieve it via the KSBJ podcast index. Four runs is past the point where carrying it is free."* One new concrete lead this run: a KSBJ *Between Beliefs* podcast index at `ksbj.org/podcasts/between-beliefs`, hand-checkable for a mid-July-2026 Wright episode. **Still no unverified Wright triplets in the wiki** — the card's own "do not ingest the conjectures" instruction honoured a fourth time. Agent 16 concurs with the ingest layer.
+
+**Census:** `pending/` **5** (1 → 5) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` **19**, latest `2026-09-10_decisions.md` · `review/` root holds **2** `*.html` (09-11, 1 card; 09-12, 5 cards) · `PROCESSED_LOG.md` **1159** lines (1097 → 1159, mtime 2026-09-12 22:00). **Review-pass gap: 3 days. Ingest gap: 1 day (zero-yield by design, queue measured empty).** Network **867** PRS triplets across 15 tradition files, **108** CROSS entries, **91** distinct FINDING ids — the 09-12 ingest entry restates 93→91 as a counting-rule correction (distinct ids), not a loss, and self-retracts a `stump/prs_triplets.md` inconsistency it had raised and then falsified by counting.
+
+**Agent 16 Status:** Operational. 0 checks due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15**.
+
+**Open for Tom (re-ranked; item 1 has changed shape, item 2's clock is now inside two weeks):**
+1. **Two review pages are queued, and the 5-card one carries a self-declared retrieval instruction.** PROP-2026-09-12-00N (Wolfram SRI keynote) says of itself that nothing in it is a finding. If it is approved en bloc with four extraction cards, that is the twelfth leak and the clearest one yet. One word on that card, or a DENY, prevents it.
+2. **DEFERRED-CONDITION LEAKAGE ruling, deadline 2026-09-24 — 11 days.** PROP-2026-09-02-002's dated condition falls due and nothing holds it. Option (b) — leave OPEN in the ledger any card whose text names a future condition — is one line, needs no new field, and the ingest step has now done it voluntarily for six consecutive runs.
+3. **Decide PROP-2026-08-14-033.** Four failed retrievals; ingest log recommendation now escalating; the recovered Apple Podcasts show notes at `resolved/2026-09-08_WATCH-002.md` make an informed denial possible unattended. New lead if retention is preferred: `ksbj.org/podcasts/between-beliefs`.
+4. **One-line INTEGRITY FLAG ruling closes WATCH-003** and empties ACTIVE ITEMS.
+5. **TOOLING FLAG is cleanup, not correctness** (settled 09-12): confirm every future proposal carries `proposal_id` in frontmatter so the position-based fallback never fires. Currently 1 of 414 in `approved/` lacks it — the repair manifest, already unjudgeable by design.
+6. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+7. **FINDING-089's upstream fix** — make a card carrying a retrieval condition un-APPROVE-able in one keystroke alongside others. Today's queue is the argument for it: the protection that existed yesterday was an accident of queue size and lasted one day.
+8. **Run-log archival** — this file is now ~640 KiB, RUN LOG ~95% of it. Splitting pre-2026-09-01 runs into `deferred/run_log_archive_2026H1.md` would leave ACTIVE ITEMS + FLAGS + RESOLVED INDEX here.
+9. **Channel 2 question**, standing since 08-23 (21 days unexercised).
+10. **Chat→Cowork sync broken ten days running** — Channel 3 deaf until Chrome is reconnected or the browser pane is granted standing `claude.ai` access.
+11. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+
+---
+
+*Run completed 2026-09-13.*

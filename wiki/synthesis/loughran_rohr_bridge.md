@@ -24,3 +24,19 @@ That is the form every tradition's claims must take to be admissible as evidence
 **Synthesis claim.** The contemplative tradition has independently described the intended output of the interaction apparatus, and described it as a *conversion of relation type* rather than as agreement, information transfer, or attitude change. That is a more precise target than the accelerator's own architecture currently states, and it is measurable in principle: the claim is not that participants come to agree but that a stranger becomes a second person. The Rohr/Wright tension on the same page is a live instance of the network's standing rule to hold disagreements open, which makes this page do double duty — content for the accelerator and a test of its governance.
 
 **Open question the wiki cannot yet answer.** What distinguishes a converted relation from a merely cordial one? Without that, boundary-crossing is unfalsifiable and PRS-CANDIDATE-C's Speculative rating is correct. Fredrickson's positivity-resonance instruments are the nearest available apparatus and have been dispatched on exactly this question; whether they measure conversion or only warmth is unresolved.
+
+
+---
+
+## A membership criterion that can actually exclude something
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-13_rohr_faith-with-doubt-weekly-summary.md` (0 backlinks).
+
+**Why it sits here:** Willse's reading of Mark 9:39-40, carried in the week's closing practice: the disciples try to exclude an outsider of uncertain ancestry and motive, and are overruled with "whoever is not against us is for us." The criterion is non-hostility, not assent. Doubt does not disqualify; belief is not the entry condition. The C2A2 accelerator has needed exactly this and has never had it stated — the instrument's whole premise is that rival traditions can occupy the same apparatus without converging, and nothing in the design said what *would* put a participant outside it.
+
+**Synthesis claim:** The project has been describing its boundary condition negatively — no over-alignment, no forced convergence, disagreement preserved — without a positive statement of what membership requires. This supplies one, and it is the right shape: **orientation rather than agreement.** A participant who holds a rival position in good faith is inside; a participant oriented against the others is not, regardless of what they believe. That is a criterion an instrument can operationalize, unlike shared belief (which the design forbids) or mere participation (which excludes nothing). It also inherits the property the accelerator needs most: it is satisfiable by people who think each other wrong.
+
+**Open question the wiki cannot yet answer:** What is the observable of non-hostility in Rung-2 interaction data? "Not against us" is a disposition, and the instrument records behaviour. Uncharitable reading, refusal to state an opponent's position in a form they would accept, and argument aimed at an audience rather than an interlocutor are candidate proxies — but each is also compatible with ordinary vigorous disagreement, which the design is meant to protect. Until the discrimination is specified, the criterion is a good principle and not yet a measurement, and it should be recorded as the former.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_faith-with-doubt-weekly-summary]]

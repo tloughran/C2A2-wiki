@@ -15032,3 +15032,251 @@ REVISE-461:
   Status: OPEN — awaiting human review.
 
 ---
+REVISE-462:
+  Date flagged: 2026-09-13
+  Source item: ASSUMPTION-1336 | Source disposition: DISPOSITION-952
+  Urgency: MEDIUM-HIGH
+  Addressee: the coupling-loss gloss wherever it appears — 24 syntheses (OPEN-201) at minimum.
+
+  THE FINDING. The gloss has two limbs and only one survives. Gap-junctional coupling as a substrate of
+    collective scope: supported. Coupling as MONOTONIC with cooperation, such that cancer reads as loss of
+    coupling and hence a shrunken light cone: **not supported, and contradicted in the primary
+    literature.** Connexin expression, functional GJIC and cell adhesion are three separable variables.
+    Cx26-mediated coupling reduces adhesion and drives single-cell migration; Cx43-mediated coupling
+    promotes extravasation; coupling is upregulated at micrometastatic sites. Chernet & Levin 2015 — a
+    Levin-lab source — found Cx26 overexpression INCREASING tumour incidence. The FOR direction, looking
+    for the monotonicity limb, could not source it.
+
+  RECOMMENDED ACTIONS.
+    (1) Withdraw the monotonic phrasing, or reindex it to FUNCTIONAL coupling (Vmem-gated), which is where
+        the Grodstein-Mathews-Levin result points. **Reindexing is not free**: 15b's steelman establishes
+        that the Vmem-gating reading is currently an in-silico result in an unretrieved preprint, and that
+        Polusani's phenotype tracked functionally-measured GJIC via mutant controls — i.e. already
+        downstream of Vmem gating — so the reindex may not survive.
+    (2) Two paper-fetches settle it: Polusani et al. 2016 as primary (read the coupling assay), and
+        Grodstein-Mathews-Levin (does it report wet-lab Vmem validation, or only simulation?).
+  OWNER: **unassigned.** Per DISPOSITION-954 this flag is therefore, on its own finding, not yet created
+    as a corrective action. Recorded rather than concealed.
+
+  OPEN-206 RAISED, and it is larger than this item: if coupling was the observable standing in for light-
+    cone size, the light-cone construct is unoperationalised wherever it is used, not only in the 24
+    syntheses. 15c did not adjudicate this and is not competent to.
+
+  Status: OPEN — awaiting human review.
+
+---
+
+REVISE-463:
+  Date flagged: 2026-09-13
+  Source item: PRESUMPTION-972 (limb A) | Source disposition: DISPOSITION-953
+  Urgency: HIGH
+  Addressee: the hunt's recency-window vocabulary, and any outbound artifact describing a tradition as
+    quiet.
+
+  THE FINDING — AN ENFORCEMENT GAP, NOT A KNOWLEDGE GAP. The estate already holds what it needed.
+    PREMISE-089 (ACTIVE): liveness is a per-source property; one feed's liveness must never be taken as
+    evidence for another's. PREMISE-141 (ACTIVE): absence of a report is a THIRD TERMINAL STATE, not a
+    value of the other two. A two-valued active/quiet vocabulary is precisely what PREMISE-141 forbids.
+    **Both were read at source, not matched on keyword.** The intake's pre-check reported no covering
+    premise; that failure is REVISE-467's subject.
+
+  RECOMMENDED ACTIONS.
+    (1) Add the third state. The distinguisher is available and is NOT the subject's heartbeat but the
+        OBSERVER's: did the feed return anything at all, for anyone, in this window? That is a real
+        heartbeat and it defeats the strongest objection to adding the state.
+    (2) Attach an expiry to every "quiet" verdict. A quiet mark with no re-examination date is terminal in
+        practice whatever it is in intent.
+    (3) Measure the false-positive rate with a denominator (PREMISE-168): for every tradition marked quiet
+        in the last six months, run an unrestricted undated search and record whether the program produced
+        anything in the surrounding twelve months. This is in-house and cheap.
+  **What is NOT recommended**: acting on the 37-61% figures as measurements. They are 15b's own arithmetic
+    under a Poisson model 15b then argues is wrong. Order-of-magnitude only.
+
+  THE EXPOSURE THAT SETS URGENCY. Four traditions were marked quiet this cycle. The surfacing instance was
+    a seven-week silence following a bereavement — so the exposure includes published claims about a named
+    living person's research activity. That is a reputational and ethical exposure, not only an epistemic
+    one, and it is why this is HIGH and not MEDIUM.
+  OWNER: **unassigned.**
+
+  Status: OPEN — awaiting human review.
+
+---
+
+REVISE-464:
+  Date flagged: 2026-09-13
+  Source item: PRESUMPTION-974 | Source disposition: DISPOSITION-954
+  Urgency: HIGH | **CRITICAL — load-bearing for the entire self-awareness apparatus**
+  Addressee: Tom, directly. The filing format of Agents 14a and 14b; and the 132-item 15d re-trigger lane.
+
+  THE FINDING. An in-house test named but unassigned is **not deferred work.** Under the canonical
+    corrective-action standard (RCA² step 6, VERIFIED at source), ownership, a date, and monitoring are
+    CONSTITUTIVE of a corrective action — so an unassigned undated test has not been deferred, it has not
+    been created. The estate holds this already: **PREMISE-026, validated 2026-05-18, Confidence High,
+    read at source by 15c at `validated_premises.md:981`, states that remediation of a long-unowned cohort
+    "requires owner assignment, not item-by-item action," and its scope clause reads "any long-running
+    unowned queue across C2A2 pipelines."** PREMISE-108 ("transmission is not delivery") is the same
+    finding from the other side, is ACTIVE, and is 54 days past its re-check — it is itself one of the
+    four owed tests it would govern.
+
+  THE CAPACITY DEFENCE, AND WHY IT FAILS. The strongest defence is that C2A2 has no workforce: every agent
+    is a process, and the only persistent actor with an effector is one human with a finite evening.
+    Assigning 178 owed days to Tom would convert an honest record of limits into a list of one person's
+    failures. **That defence is good for the handful of items that genuinely need Tom and no defence at
+    all for the rest: 28 of the 31 items held in-house on 2026-09-12 are settleable by a grep, a file read,
+    or an arithmetic recount — by an agent, in seconds.** The 178 days are a ROUTING failure.
+
+  SCOPE, MEASURED THIS RUN AND NOT INHERITED. Tonight's census found **132 unserved 15d RE-TRIGGER
+    entries**, oldest 2026-07-05 (70 days), newest 2026-08-02 (42 days), and **no re-trigger queued since
+    2026-08-02 — 15d has not run in six weeks.** This is the paradigm case of PREMISE-026's scope clause.
+    It has been reported as a gap for six consecutive cycles and remedied in none.
+
+  RECOMMENDED ACTIONS, in order of what they cost you.
+    (1) **A schema forcing function, not a guideline**: 14a/14b may not file an item carrying an in-house
+        test unless the test names an owner and a date. If neither can be supplied, the item is filed
+        WITHOUT a test and the absence is visible. This ends the manufacture of apparent remediation at
+        source and costs nothing to implement.
+    (2) Route the 28 grep-settleable held items to an agent run. They are agent work; they have been
+        filed as though they were human work.
+    (3) Decide the 132-item re-trigger lane one way or the other: assign it an owner (an agent run is
+        sufficient) **or record that the estate is declining to serve it.** Either is honest. Six cycles
+        of reporting it is neither.
+    (4) Adopt "at least one strong or intermediate action per identified cause" (REVISE-467), or record
+        the decline.
+
+  THE REFLEXIVE FACT, STATED PLAINLY. This flag recommends owner assignment and does not assign one. It is
+    the **fifth cycle** in which that has happened. The finding is therefore demonstrated by the document
+    reporting it, and that is not a rhetorical flourish — it is the measurement 15b's steelman asked for,
+    returned in the affirmative.
+
+  Status: OPEN — awaiting human review. **This one actually needs you.**
+
+---
+
+REVISE-465:
+  Date flagged: 2026-09-13
+  Source item: PRESUMPTION-975 | Source disposition: DISPOSITION-955
+  Urgency: HIGH
+  Addressee: `provenance_protocol.md` v1.0; the 15a/15b reconciliation rule in the 15a and 15b role files.
+
+  THE FINDING, WITH THE ITEM'S OWN DIAGNOSIS CORRECTED. The item asked whether independence is attestable
+    or a property of execution order. The answer is neither: **sequencing is second-order.** The dominant
+    correlation channel is shared weights, which no procedural fix touches. A 9-judge panel spanning 7
+    model families retains 2.18 effective independent votes; across 350+ models, pairs agree on the same
+    wrong answer 60% of the time against a 33% baseline, with correlation rising for shared provider, base
+    architecture, size and accuracy — 15a and 15b share all four. **PREMISE-111 (ACTIVE, read at source at
+    `validated_premises.md:2527`, 23 days past re-check) already holds this and imposes a standing
+    discount. This run found no instance of that discount having been applied. It is applied for the first
+    time in DISPOSITION-952…956.**
+
+  THE ACTIONABLE GAP, verified by reading the spec and not by grep: `provenance_protocol.md` v1.0 mandates
+    an independence attestation and specifies **no constraint on its content and no condition on execution
+    order.** The attestation is therefore unfalsifiable as specified — which is what makes it attestable
+    rather than demonstrable, and that is the item's real target.
+
+  RECOMMENDED ACTIONS.
+    (1) Amend the protocol so the attestation must state the MECHANISM (what barrier existed, what each
+        agent could and could not read, launch ordering) rather than the CONCLUSION ("independent"). A
+        mechanism statement is auditable; "independent" is not. This cycle's run footer is written in that
+        form as a worked example.
+    (2) Amend the reconciliation rule. "Both support → SUPPORTED (high confidence)" is vote aggregation
+        over two votes that are not independent, and PREMISE-111 bars citing 15a/15b agreement as
+        independent confirmation. The rule as written converts correlated error directly into status.
+    (3) Cheap measurement, data already on disk: for every item searched by both directions in the last N
+        cycles, compute the Jaccard overlap of cited source sets and of identified covering premises, with
+        denominators. Low overlap supports the adversarial-briefs reading; high overlap confirms
+        correlation.
+    (4) The only experiment that isolates the weight channel: run one direction on a different provider's
+        model for a single cycle and measure whether overlap drops. **Until (3) or (4) is run, no agent —
+        including the ones that searched this item — is entitled to a quantitative claim about how
+        independent 15a and 15b are.**
+  OWNER: **unassigned.**
+
+  Status: OPEN — awaiting human review.
+
+---
+
+REVISE-466:
+  Date flagged: 2026-09-13
+  Source item: PRESUMPTION-979 (operative limb) | Source disposition: DISPOSITION-956
+  Urgency: MEDIUM
+  Addressee: every place the estate relies on a prose qualification as a control.
+
+  THE FINDING. A prose caveat cannot be relied on as a control. 300 expert readers randomised to
+    systematic-review abstracts with and without a PRISMA-standard limitations section showed no effect on
+    confidence in results (0.19 [-0.37, 0.74], p=0.50), validity of conclusions (0.07 [-0.49, 0.62],
+    p=0.80), or judged benefit (0.12 [-0.42, 0.44], p=0.65). **SECONDARY VIA TWO AGENTS — 15c did not
+    retrieve this paper.** The canonical action hierarchy independently places "Warnings" in its weakest
+    tier.
+
+  THE WARRANT THAT ACTUALLY DECIDED IT, because the trial is secondary and the convergence is discounted:
+    PREMISE-111's standing discount is prose; it WAS read this cycle, by a search agent, and quoted; and
+    it had still not been applied anywhere in the registers. **A caveat read and not acted on is the
+    presumption's claim in its strongest form, demonstrated inside this run.**
+
+  WHAT CUTS THE OTHER WAY, and it constrains the remedy. The estate's own six-day unread instance was a
+    red STATUS FIELD, not prose. **Moving prose into status rows is therefore not supported by the
+    estate's own data.** The live variable is the forcing function, which is PRESUMPTION-962's territory.
+    Second counter-instance, recorded: prose scope limits inside premises (026, 089, 111, 141) WERE found,
+    read and acted on by agents doing retrieval this cycle. The honest generalisation is an audience split
+    — prose is unread by a human skimming a daily report and read adequately by an agent doing targeted
+    retrieval — not that prose is unread.
+
+  RECOMMENDED ACTIONS.
+    (1) For qualifications addressed to Tom, stop relying on prose alone. Not by relocation into a status
+        row — see above — but by a forcing function that blocks progress.
+    (2) Cheap measurement: take the last N daily run reports, classify each load-bearing qualification as
+        prose-beneath-a-headline or built-into-a-status-row, and record whether any subsequent artifact
+        acted on it, with denominators. If both rates are near zero, the channel is not the variable.
+    (3) Cheaper still: count how many "load-bearing" prose clauses in `validated_premises.md` have a
+        traceable downstream application. PREMISE-111's discount is one known instance of zero.
+  OWNER: **unassigned.**
+
+  Status: OPEN — awaiting human review.
+
+---
+
+REVISE-467:
+  Date flagged: 2026-09-13
+  Source: 15b SYSTEMIC-RISK-FLAG ×2, 2026-09-13 | Affects PRESUMPTION-972, -974, -975, -979
+  Urgency: HIGH | Risk level as filed by 15b: **Critical** (flag 1), **High** (flag 2)
+  Addressee: the pre-check step in 14a/14b item drafting; and the estate's remedial-action mix.
+
+  **THIS FLAG IS ADOPTED, NOT RESTATED** (PREMISE-138). 15b's two systemic flags are at
+    `lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-13_pre-checks-assert-absent-covering-premises_972-974-975.md`.
+    15c adopts both. The condition for adopting rather than re-deriving was that the flag's own citations
+    survive audit: **15c independently read PREMISE-026 at `validated_premises.md:981` and confirms the
+    characterisation is exact**, including the scope clause and Confidence: High. PREMISE-089, 108, 111
+    and 141 were confirmed ACTIVE at source.
+
+  FLAG 1 — THE PRE-CHECK ASSERTS ABSENCE WITHOUT ESTABLISHING IT. On **three of five items in one cycle**,
+    the intake reported "no covering premise found" when an ACTIVE premise covered the item: 972
+    (PREMISE-141, -089), 974 (PREMISE-026, -108), 975 (PREMISE-111). In each case the grep terms the
+    pre-check reports using would have returned the premise. **The failure is in reading the return, not
+    in the search.** Consequence: an enforcement gap is converted into an apparent research question,
+    consuming search budget, leaving the premise unenforced, and producing a register entry whose
+    existence then argues the matter is attended to. Second consecutive cycle with a PREMISE-136-shaped
+    breach (PRESUMPTION-968 was the first). Compounding: all four missed premises are past re-check
+    (026 by 26 days, 111 by 23, 141 by 8, 089 by 7) and all still read ACTIVE.
+    **Remedy, and it is a schema forcing function rather than a guideline**: the pre-check must report the
+    grep terms used AND the premise IDs returned — not a conclusion. A negative finding then becomes
+    auditable at drafting time by anyone, including the drafter.
+
+  FLAG 2 — BOTH PRINCIPAL CONTROLS SIT IN THE WEAKEST TIER. The canonical action hierarchy places
+    "procedure/memorandum," "Warnings" and "Training" in Weaker Actions because they "require more
+    reliance on humans to remember to perform the task correctly." The register's remedial output is
+    named-but-unowned tests (procedure); its epistemic discipline is prose qualifications (warnings).
+    **82% weak recommendations is the measured NORM in a mandatory regulator-facing safety system (760
+    recommendations, 43 hospitals) — so weak actions are not the anomaly. Zero in the top two tiers is.**
+    All five of 2026-09-12's remedial actions were greps.
+    Remedy: adopt "at least one strong or intermediate action per identified cause," or record explicitly
+    that the estate declines to — and either way stop treating the weak tier as coverage.
+
+  NOT ADOPTED, and why: 15b recommends applying PREMISE-111's discount or recording it unapplied. **It has
+    been applied**, this run, in DISPOSITION-952…956, so that sub-recommendation is discharged rather than
+    carried. This is the only item in this flag that is closed.
+  OWNER: **unassigned**, on a flag whose first finding is that unassigned remedies are not remedies.
+
+  Status: OPEN — awaiting human review.
+
+---
+

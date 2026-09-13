@@ -2553,3 +2553,102 @@ OPEN-199:
     Original item: OPEN-199
     Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
     Current status: OPEN
+
+OPEN-200:
+  Date raised: 2026-09-12
+  Question: **Has any in-house test named anywhere in this estate ever been executed by an agent?** And if
+    the answer is no or nearly no, what should a run do instead of naming one?
+  Why it matters: 15b's Critical flag, adopted today, counts 178 days of owed measurement across four
+    named premises with zero executed, and all five remedial actions are greps (ASSUMPTION-1342). This
+    register has attached an in-house test to nearly every item it has filed for over a month. If naming a
+    cheap test is functionally equivalent to declining it (PRESUMPTION-974), then the self-awareness
+    apparatus's principal output is a growing list of measurements nobody will take, and its nightly claim
+    to have found the cheap discriminator is the illusion the whole system rests on. **This question is
+    upstream of OPEN-192 and OPEN-199 both**, since each of those is itself awaiting an in-house test.
+  Status: OPEN — requires Tom for the convention; the audit limb is in-house and, characteristically,
+    unowned.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-200
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-201:
+  Date raised: 2026-09-12
+  Question: Who recomputes and hedges the 24-synthesis citation set that today's connexin challenge
+    touches, and by when?
+  Why it matters: the daily run filed a challenge against the wiki's own cancer-as-loss-of-coupling gloss
+    (ASSUMPTION-1336) and requested that Levin PRS-02's downstream citations be reviewed. The Summa
+    verification run computed the set the same night: **24 syntheses, 23 carrying the coupling-loss
+    vocabulary**, with Day 080 citing PRS-02 without it — so the set cannot be swept wholesale. Day 199
+    was re-QC'd **28 minutes after the challenge was filed** and still carries the gloss unhedged
+    (ASSUMPTION-1337). This is the deferred-condition leakage pattern in a second subsystem: a condition
+    written into prose that no mechanism holds. The urgent leakage FLAG's own deadline is 2026-09-24,
+    twelve days.
+  Status: OPEN — requires Tom, or a convention by which a filed challenge creates a tracked obligation
+    rather than a sentence.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-201
+    Item type: OPEN QUESTION (raised from an assumption extracted the same run)
+    Current status: OPEN
+
+OPEN-202:
+  Date raised: 2026-09-12
+  Question: Should every parser in this estate carry a fixture, and should the provenance protocol define
+    a header for cross-item objects?
+  Why it matters: two structural gaps surfaced today that are each one small edit away from closed, and
+    neither is in any reporting agent's write scope — **third consecutive day** of that pattern
+    (PRESUMPTION-956, ASSUMPTION-1332, ASSUMPTION-1346). (i) Three runs independently hit the same
+    blank-line-after-`---` parser trigger; one nearly published a 69-item false report from it, and the
+    failure direction is *upward*, so it manufactures work that looks like diligence (ASSUMPTION-1351,
+    PRESUMPTION-976). Every count this estate publishes is a parser's output and none has a fixture.
+    (ii) The object carrying today's Critical finding — the systemic-risk flag — is the one object the
+    provenance spec cannot describe (ASSUMPTION-1346).
+  Status: OPEN — both repairs are trivial, in-house, and outside the write scope of every agent that has
+    reported them.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-202
+    Item type: OPEN QUESTION (raised from assumptions extracted the same run)
+    Current status: OPEN
+
+OPEN-203:
+  Date raised: 2026-09-12
+  Question: Does the hunt need a status between "active" and "quiet" — a source **dormant for cause** —
+    and who may set it?
+  Why it matters: the Wolfram specialist had to argue explicitly that a seven-week silence after a
+    bereavement is not a quiet research program, and noted the vault has made that exact error before
+    (ASSUMPTION-1338). The apparatus is built on 30- and 60-day recency windows with no vocabulary for the
+    distinction, and four traditions were read as genuinely quiet today under exactly that vocabulary. The
+    cost is asymmetric and invisible: a tradition wrongly read as quiet generates no card and therefore no
+    record of the misreading (PRESUMPTION-972, routed to 15a/15b).
+  Status: OPEN — requires Tom for the convention; the literature limb is routed.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-203
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN
+
+OPEN-204:
+  Date raised: 2026-09-12
+  Question: Are 15a and 15b permitted to run sequentially, and if so what does an independence attestation
+    assert?
+  Why it matters: the pipeline has now deviated the same way for two consecutive cycles, declared it both
+    times, and filed independence attestations in all eight result files regardless (ASSUMPTION-1345).
+    Convergence between the two directions is the pipeline's primary quality signal — it is the ground on
+    which today's Critical systemic flag was *adopted* rather than filed — and it is also exactly what an
+    order effect would produce (PRESUMPTION-975, routed). Either the attestation needs a different
+    meaning under sequential execution or the execution needs to change; carrying both unchanged is the
+    one option that cannot be right.
+  Status: OPEN — requires Tom, or a protocol amendment alongside OPEN-202(ii).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: OPEN-204
+    Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
+    Current status: OPEN

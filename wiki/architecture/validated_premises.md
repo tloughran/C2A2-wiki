@@ -1622,7 +1622,7 @@ PREMISE-051:
   Challenges noted: 15b PARTIALLY-CHALLENGED (Moderate) — Baldonado's own Rule of Parsimony (each added view costs learning/space/maintenance and must be justified vs a single-view alternative) and an empirical finding that more coordinated views do not monotonically help and can impose context-switching cost (arXiv 2204.09524). Resolved by folding the non-absorption / parsimony test into the statement rather than blocking INCORPORATE.
   Confidence: Moderate
   Applicable to: Community Explorer Graph + Cards dual-surface design; any C2A2 tool considering a second coordinated view over one corpus. Reinforces Tom's Rule 2 (simplicity) / Rule 3 (surgical changes) — the parsimony caveat is the guard against speculative second surfaces. SCOPE NOTE: this premise validates the COMPLEMENTARITY of the two views only; the "over ONE dataset" claim depends on the curated↔directory join, which is REVISE-flagged (PRESUMPTION-306 → REVISE-089). If 306 resolves that the two record sets are distinct populations, ASSUMPTION-275's "one dataset" framing weakens even though the views-complementarity premise stands.
-  Re-check due: 2026-09-06 (Quarterly; via 15d)
+  Re-check due: 2026-12-13 (Quarterly; via 15d) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   Rationale: Stated assumption with strong, well-established CMV support; the only challenge is the parsimony/cost guard, folded in as the non-absorption test. Consistency-checked vs PREMISE-001..050: no conflict — new UI-coordinated-views domain, complements none directly. Moderate (not High) confidence because non-absorption is asserted but not yet demonstrated for CE (no task inventory provided) and because the "one dataset" substrate is contested by PRESUMPTION-306.
 
@@ -3386,7 +3386,7 @@ PREMISE-144:
     and whether detection was internal or external. If (i) is large and every entry in (iii) is
     "external," the class claim is confirmed in-system and clause (5)'s representation problem
     becomes the next question. NOT RUN this session.
-  Re-check due: 2026-09-06 (Monthly)
+  Re-check due: 2026-10-04 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3510,7 +3510,7 @@ PREMISE-145:
     the bandwagon signature; (iii) for every instance where a run withheld its own figure citing an
     instrument fault, check whether the fault was documented BEFORE or AFTER the disagreement was
     observed. NOT RUN this session.
-  Re-check due: 2026-09-06 (Monthly)
+  Re-check due: 2026-10-04 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3658,7 +3658,7 @@ PREMISE-146:
     class (i) dominating quantifies the misattribution; no change across all disclosures confirms
     there is no feedback channel and the disclosures are ritual in the normalisation sense. NOT RUN
     this session.
-  Re-check due: 2026-09-06 (Monthly)
+  Re-check due: 2026-10-04 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3801,7 +3801,7 @@ PREMISE-147:
     is confirmed exactly and the Goodhart risk is live. (iii) Check whether any item has been in the
     queue longer than the oldest item was when the queue stood at 34 — if so the growth is not
     turnover, it is sedimentation. NOT RUN this session.
-  Re-check due: 2026-09-06 (Monthly)
+  Re-check due: 2026-10-04 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -3939,7 +3939,7 @@ PREMISE-148:
     machinery-directed or content-directed to confirm the ~1,460-to-few ratio, then compute the same
     ratio for ERRORS ACTUALLY FOUND — if machinery audits find errors at a far lower rate per item
     than the content sample, audit effort is demonstrably misallocated. NOT RUN this session.
-  Re-check due: 2026-09-06 (Monthly)
+  Re-check due: 2026-10-04 (Monthly) [re-checked by 15d 2026-09-13 — BOUNDED CATCH-UP for the missed 2026-09-06 monthly run; re-queued in for_lit_search.md. Status left ACTIVE; 15d does not disposition.]
   Status: ACTIVE
   PROVENANCE:
     Origin: 14b
@@ -7544,3 +7544,38 @@ grounds and are recorded so a later run does not re-derive them:
     and the gap is enforcement. Recorded so this is not re-proposed as PREMISE-154 was to PREMISE-133.
 
 ---
+
+---
+
+### 2026-09-13 run note — NO PREMISES MINTED
+
+The 15a/15b/15c run of 2026-09-13 dispositioned five items and minted **zero** premises.
+Outcomes: 0 INCORPORATE · 2 MONITOR (limbs only) · 5 REVISE. See DISPOSITION-952…956 in
+`lit_search_returns.md`.
+
+**Why nothing was added.** Three of the five items were found to be ENFORCEMENT gaps against premises this
+register already holds — PRESUMPTION-972 against PREMISE-089 and PREMISE-141, PRESUMPTION-974 against
+PREMISE-026 and PREMISE-108, PRESUMPTION-975 against PREMISE-111. PREMISE-135 (terminality is purchased by
+enumerating the domain, not by accumulating instances) and PREMISE-138(1) bar re-minting them. Minting a
+premise to cover an unenforced premise would be the exact defect 15b's Critical systemic flag names
+(REVISE-467).
+
+**Four premises were read at source by 15c this run** rather than accepted from the search agents' reports
+— PREMISE-026 (line 981), PREMISE-108 (2447), PREMISE-111 (2527), PREMISE-141 — which is the
+ASSUMPTION-1343 correction applied to 15c's own consistency check for the first time. PREMISE-026's
+characterisation in REVISE-464 was confirmed exact, including its scope clause "any long-running unowned
+queue across C2A2 pipelines" and Confidence: High.
+
+**Standing discount applied.** PREMISE-111 imposes a discount on 15a/15b agreement as evidence. This run
+found no prior instance of its application and applied it in all five dispositions; on PRESUMPTION-975 the
+convergence was discarded outright per 14b's routing instruction. That sub-recommendation of REVISE-467 is
+thereby discharged.
+
+**Re-check status of the premises this run relied on, recorded because four are overdue and all still read
+ACTIVE:** PREMISE-026 (due 2026-08-18, 26 days over), PREMISE-108 (due 2026-08-20, 24 over), PREMISE-111
+(due 2026-08-21, 23 over), PREMISE-141 (due 2026-09-05, 8 over), PREMISE-089 (due 2026-09-06, 7 over).
+All five re-check dates were read from each premise's own block by 15c and are not carried from 15b's
+report; one of the five (141) was checked twice because a cross-reference elsewhere in this file carries a
+different date (2026-11-13) and does not govern. 15d has not run since 2026-08-02.
+**This register is currently enforcing premises it has not re-checked.** Stated here rather than in a
+disposition file so it travels with the register (PREMISE-188).

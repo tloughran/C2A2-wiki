@@ -103,3 +103,19 @@ This is exactly the kind of question PROP-2026-05-18-006's PRS-CANDIDATE-03 *ges
 **Open question the wiki cannot yet answer:** Does McGilchrist anywhere claim that the *world* is a coincidence of opposites, or only that attending as if it were is the healthier stance? Without the first, the bridge is one-directional.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]
+
+
+---
+
+## Centre and edge as a division of epistemic labour
+*Sewing Agent, 2026-09-13*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-13_rohr_center-and-edge-holy-ignorance.md` (0 backlinks).
+
+**Why it sits here:** Brown Taylor's map image, carried in a Rohr-curated meditation: at the centre the institution, sustained practice, inherited objects, children known by name, continuity across generations — these keep the map from blowing away. At the edge, unscripted encounter with an undomesticated God, no furniture and no signage — these keep the map from becoming redundant. Both are said to be necessary, and the inhabitants of each struggle to grant that the other belongs on the same map. McGilchrist's hemispheric account says the same three things: two modes, both required, and a characteristic mutual incomprehension.
+
+**Synthesis claim:** The wiki has been reading Rohr's two-halves-of-life material as a maturity ladder, which makes the centre a stage to be outgrown and quietly converts McGilchrist's claim into the same shape — right hemisphere good, left hemisphere to be transcended. This source blocks that reading from the Rohr side, and it blocks it in the way McGilchrist himself insists on: **the failure mode is imbalance, not the presence of either pole, and the two are simultaneously occupied positions in one community rather than successive stages in one life.** Read together, the pair converts a developmental claim into a structural one, which is a considerably stronger and more testable thing to say about a tradition.
+
+**Open question the wiki cannot yet answer:** Is the centre/edge distribution stable across individuals, or does a healthy community require each *person* to hold both? McGilchrist's account is intra-cranial and therefore per-person by construction; Brown Taylor's is explicitly social, with different people at different positions. Those are not the same claim, and a tradition could satisfy one while failing the other — a community of specialists, each internally imbalanced, that is balanced in aggregate. The wiki has no way to tell these apart, and the accelerator's design depends on which one it is aiming at.
+
+**Wikilinks (sewing, 2026-09-13):** [[2026-09-13_rohr_center-and-edge-holy-ignorance]]

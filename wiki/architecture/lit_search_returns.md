@@ -46991,3 +46991,322 @@ DISPOSITION-951:
     would be the measurement. Consumption has occurred here; discharge has not. The four owed
     measurements in REVISE-459 remain owed as of this line.
 
+
+---
+
+## 2026-09-13 — returns from 15a and 15b, and 15c dispositions
+
+### RETURNS FROM 15a (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1336
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Mathews, J. & Levin, M., 2017. "Gap junctional signaling in pattern regulation: Physiological
+    network connectivity instructs growth and form." Developmental Neurobiology 77(5): 643-673.
+  Summary: The directional limb (coupling as the "cognitive glue" scaling cells into a collective;
+    decoupling as an early tumorigenic event) is supported back to Loewenstein & Kanno 1966. The
+    MONOTONICITY limb is not supported: FOR-side sources themselves describe connexin-cancer as
+    stage-dependent and biphasic, and Chernet & Levin 2015 found Cx26 overexpression INCREASED tumour
+    incidence.
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1336_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-972
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak-to-Moderate
+  Key source: Kawamura, T., Yamashita, Y. & Matsumura, K., 2017. "Research Activity Classification based on
+    Time Series Bibliometrics." arXiv:1708.01387.
+  Summary: Publication cadence as an activity proxy is endorsed in scientometrics and is operationalised
+    well enough to classify researchers from publication time series. But every validated instance uses
+    ANNUAL counts over MULTI-YEAR windows on indexed corpora; nothing validates a 30-60 day window or a
+    single source standing for a tradition, and median submission-to-publication lag exceeds the window.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-972_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-974
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Lunney, J., Lueder, S. & Beyer, B., 2017. "Postmortem Action Items: Plan the Work and Work
+    the Plan." ;login: (USENIX) 42(1): 40-45. [read in full - VERIFIED]
+  Summary: Ownership is the determining variable - "the surest way to ensure an action item never gets
+    completed is to leave it without an owner" - with implementation-intention meta-analysis (d=0.65,
+    k=94) agreeing from goal-pursuit theory. **15a records that this supports the REMEDY, not the status
+    quo**: the unowned state is the literature's named failure mode.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-974_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-975
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate on the mechanism limb; **None on the attestation limb**
+  Key source: Dror, I.E. & Kukucka, J., 2022. "A practical tool for information management in forensic
+    decisions: Using Linear Sequential Unmasking-Expanded (LSU-E) in casework." FSI: Synergy.
+  Summary: Four domains (Cochrane dual screening, forensic LSU, blinded mammographic double reading,
+    oncology BICR) show sequential review preserving independence - but only via engineered information
+    barriers plus auditable trails, **never via declaration**. Mature practice in all four moved from
+    assurance to verifiable procedure.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-975_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-979
+  Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Weak
+  Key source: Boutron, I. et al., 2014. "Impact of Spin in the Abstracts of Articles Reporting Results of
+    Randomized Controlled Trials in the Field of Cancer: The SPIIN RCT." J Clin Oncol 32(36): 4120-4126.
+  Summary: Prose framing does move expert judgement, conditionally on salience, placement and reader
+    sophistication, with small effects. **The closest direct analogue is null and 15a verified it
+    first-hand**: adding a limitations section to systematic-review abstracts did not change readers'
+    interpretation (MD 0.19, p=0.50).
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-979_for.md
+
+NOVELTY-FLAG (15a): PRESUMPTION-972 — no literature evaluates a 30/60-day empty publication window as an
+  activity classifier, nor treats a single source's output as a proxy for a tradition's state. Recommended
+  status: NOVEL (short-window/single-source limb only). → carried to MONITOR-607.
+
+NOVELTY-FLAG (15a): PRESUMPTION-979 — no literature measures the relative uptake of a prose qualification
+  against a structured status field in the same document. Recommended status: NOVEL (comparative rate limb
+  only). → carried to MONITOR-608.
+
+### RETURNS FROM 15b (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1336
+  Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Wu, J.-I. & Wang, L.-H., 2019. "Emerging roles of gap junction proteins connexins in cancer
+    metastasis, chemoresistance and clinical application." J. Biomedical Science 26:8 — VERIFIED, body
+    read in full.
+  Specific risk: 24 syntheses (OPEN-201) carry a gloss the primary literature contradicts in plain
+    language; and if coupling was the observable standing in for light-cone size, the light-cone construct
+    is now unoperationalised across every synthesis using it, not only the 24.
+  Summary: Connexin expression, functional GJIC and adhesion are three separable variables and the review
+    documents them dissociating: Cx26-mediated coupling REDUCES adhesion and drives single-cell migration
+    (GJIC-defective-but-membrane-localised mutant controls isolate coupling as causal), while
+    Cx43-mediated coupling INCREASES endothelial adhesion and promotes extravasation. Coupling is
+    upregulated at micrometastatic sites. The tumour-suppressive limb is real too — that both limbs hold
+    is the finding.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1336_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-972
+  Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Barabási, A.-L., 2005. Nature 435:207-211 — VERIFIED; plus PREMISE-141 and PREMISE-089, both
+    ACTIVE, both read in full.
+  Specific risk: Four traditions were classified quiet on a test whose false-positive rate against
+    genuinely active programs is 37-61% at plausible output rates; the error is one-directional, so
+    repeated application drifts monotonically toward "the field is quiet." The surfacing instance was a
+    bereavement, so the exposure includes published claims about a named living person's career.
+  Summary: Under a generous Poisson model a program at 6 outputs/yr shows an empty 30-day window 61% of
+    the time (15b's own arithmetic, labelled as such); Barabási's VERIFIED burstiness result makes that a
+    lower bound. **The estate already holds the answer**: PREMISE-141 (absence is a third terminal state a
+    two-valued model cannot represent) and PREMISE-089 (cross-source liveness inference is a known
+    anti-pattern). The intake's pre-check reported no covering premise.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-972_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-974
+  Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: IHI / VA National Center for Patient Safety, "Action Hierarchy (part of RCA²)," 2019 —
+    VERIFIED, PDF read in full; with Kwok, Mah & Pang, 2020, BMC Health Serv Res 20:507 — VERIFIED.
+  Specific risk: The principal output format of Agents 14a/14b currently manufactures the appearance of
+    remediation. Each filing retires the sender's obligation without creating anyone else's.
+    **PREMISE-108 — the premise naming this defect — is itself one of the four owed tests, 54 days
+    overdue.**
+  Summary: The challenge is definitional before empirical. RCA² step 6: "Assign an individual responsible
+    for implementation and measurement of each corrective action and set a date by which each action must
+    be completed." Ownership, date and monitoring are constitutive; an unassigned undated test has not
+    been deferred, it has not been created. PREMISE-026 (High confidence) and PREMISE-108 already say so
+    in-house. Against the item's framing: Kwok et al. measure 82% weak recommendations as the NORM (760
+    recs, 43 hospitals) — so greps are not the anomaly; **zero strong or intermediate actions** is.
+    15b records that it did not soften the verdict despite its invalidating the 14a/14b output format.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-974_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-975
+  Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: PREMISE-111 (ACTIVE, standing discount, load-bearing); "Nine Judges, Two Effective Votes,"
+    arXiv:2605.29800 — VERIFIED; Kim, Garg, Peng & Garg, "Correlated Errors in Large Language Models,"
+    ICML 2025, arXiv:2506.07962 — VERIFIED.
+  Specific risk: Correlated agreement inflates apparent confirmation and never manufactures spurious
+    disagreement, so bias accumulates monotonically toward SUPPORTED; the reconciliation rule ("both
+    support → SUPPORTED, high confidence") converts it directly into status. PREMISE-111's mandated
+    discount appears never to have been applied.
+  Summary: A 9-judge panel drawn from 7 model families retains 2.18 effective independent votes; across
+    350+ models, pairs agree on the same wrong answer 60% of the time against a 33% chance baseline, with
+    correlation rising for shared provider, base architecture, size and accuracy — 15a/15b satisfy all
+    four. **Where the item overstates: sequencing is second-order. Simultaneity would not have fixed this
+    cycle.** The actionable gap is the one the intake verified by reading the spec: the protocol mandates
+    an attestation whose content it does not constrain.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-975_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-979
+  Search direction: AGAINST | Result: CHALLENGED | Strength: Strong
+  Key source: Yavchitz, Ravaud, Hopewell & Boutron, 2014. "Impact of adding a limitations section to
+    abstracts of systematic reviews on readers' interpretation: a randomized controlled trial." BMC Med
+    Res Methodol 14:123 — VERIFIED.
+  Specific risk: The register's epistemic discipline — scope limits, standing discounts, "load-bearing"
+    notes — is almost entirely a control class with a measured null effect. PREMISE-111's standing
+    discount is a confirmed instance: prose, read by 15b this run, still unapplied.
+  Summary: 300 expert readers randomised to systematic-review abstracts with and without a PRISMA-standard
+    limitations section: no effect on confidence in results (0.19 [-0.37, 0.74], p=0.50), validity of
+    conclusions (0.07 [-0.49, 0.62], p=0.80), or judged benefit (0.12 [-0.42, 0.44], p=0.65). **Two things
+    cut the other way and are recorded**: the estate's own six-day instance was a red STATUS FIELD, not
+    prose — so relocation is not the remedy — and the alarm-fatigue percentages are **DO-NOT-CITE**,
+    excluded by name after the AAMI review returned an empty body on fetch.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-979_against.md
+
+STEELMAN blocks for all five items, and both SYSTEMIC-RISK-FLAGs, are recorded in full in the respective
+`_against.md` files and in
+`lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-13_pre-checks-assert-absent-covering-premises_972-974-975.md`.
+They are not restated here (PREMISE-138: repetition inside a channel with no effector is not a remedy).
+
+### 15c DISPOSITIONS
+
+**Standing methodological note applied to all five, and it is new this cycle.** PREMISE-111 is ACTIVE and
+imposes a standing discount on agreement between 15a and 15b as evidence. This run found no prior instance
+of its application, which is itself 15b's finding on PRESUMPTION-979. **It is applied here.** Where both
+directions converged, the convergence is recorded but is NOT the warrant; each disposition names the
+primary source or in-house document it actually rests on. On PRESUMPTION-975, where 14b's routing note
+instructed that convergence be treated as uninformative, the convergence is DISCARDED outright.
+
+DISPOSITION-952:
+  Date: 2026-09-13 | Item: ASSUMPTION-1336 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong)
+  Net assessment: The claim has two limbs and they come apart. The DIRECTIONAL limb — gap-junctional
+    coupling is a substrate of collective scope — survives both directions. The MONOTONICITY limb, which
+    is what licenses reading cancer as loss of coupling, does not: the FOR direction's own sources report
+    biphasic, stage-dependent connexin behaviour, and Chernet & Levin 2015 (a Levin-lab source) found
+    enhanced coupling increasing tumour incidence.
+  Disposition: **REVISE** (REVISE-462) | Urgency: Medium-High
+  Reasoning: What tips it is not that the two directions agree — that agreement is discounted under
+    PREMISE-111. It is that the challenge rests on a 2019 review 15b read in full and quotes for a
+    three-way dissociation (expression / functional GJIC / adhesion) with mutant controls isolating
+    coupling as the causal variable, and that the FOR direction independently could not find the
+    monotonicity limb even while looking for it. A claim its own advocate cannot source is not contested;
+    it is unsupported.
+  What is at risk: 24 syntheses (OPEN-201) carry the gloss. **Wider than that**: if coupling was the
+    observable standing in for light-cone size, the light-cone construct is unoperationalised wherever it
+    is used, not only in the 24. 15c does not adjudicate that wider claim and routes it as OPEN-206.
+  Recommended action: named in REVISE-462; two paper-fetches settle the empirical question.
+  PROVENANCE: Origin 14a · Chain [14a → 15a, 15b → 15c] · Transform: net evaluation and limb split ·
+    Current status: REVISION-FLAGGED (REVISE-462)
+
+DISPOSITION-953:
+  Date: 2026-09-13 | Item: PRESUMPTION-972 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak-Moderate) + NOVELTY-FLAG | 15b: CHALLENGED (Strong)
+  Net assessment: A presumption with a strong challenge, which the heuristics send toward REVISE. But the
+    challenge and the novelty flag are about DIFFERENT limbs and the item must be split. Limb A (the
+    estate already holds premises covering the active/dormant distinction and did not apply them) is an
+    ENFORCEMENT gap. Limb B (a 30-60 day window as an activity classifier) is a genuine literature gap.
+  Disposition: **REVISE on limb A** (REVISE-463) **+ MONITOR on limb B** (MONITOR-607) | Urgency: HIGH
+  Reasoning: 15c verified independently that PREMISE-089 and PREMISE-141 are ACTIVE and that their text
+    bears — this is not taken on 15b's report. PREMISE-089 bars taking one feed's liveness as evidence of
+    another's; PREMISE-141 holds that absence is a third terminal state. **No new premise is minted**:
+    PREMISE-135 (terminality is purchased by enumerating the domain) and PREMISE-138 bar re-minting what
+    is already held. The 37-61% figures are 15b's own arithmetic under a model 15b then argues is wrong;
+    they are carried as an ORDER-OF-MAGNITUDE indication, not as a measurement, and no action here rests
+    on their magnitude.
+  What is at risk: four traditions marked quiet this cycle; and outbound claims about a named living
+    person's research activity following a bereavement. That second exposure is why urgency is HIGH.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Transform: limb-split disposition ·
+    Current status: REVISION-FLAGGED (REVISE-463) + MONITORING (MONITOR-607)
+
+DISPOSITION-954:
+  Date: 2026-09-13 | Item: PRESUMPTION-974 | Item type: PRESUMPTION (unstated) | **CRITICAL**
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: CHALLENGED (Strong, definitional)
+  Net assessment: The two directions do not actually disagree, and that is the finding. 15a's supporting
+    literature supports OWNERSHIP as the determining variable — i.e. it supports the remedy, and thereby
+    identifies the unowned state as the literature's named failure mode. 15b's challenge is definitional:
+    under the canonical standard, ownership, date and monitoring are constitutive of a corrective action,
+    so an unassigned undated test has not been deferred, it has not been created.
+  Disposition: **REVISE** (REVISE-464) | Urgency: HIGH
+  Reasoning: 15c verified PREMISE-026 first-hand at `validated_premises.md:981` and confirms 15b's
+    characterisation is exact, including its scope clause "any long-running unowned queue across C2A2
+    pipelines" and its Confidence: High. **The presumption is therefore refuted by a premise the estate
+    validated on 2026-05-18 and has not applied.** 15c adopts 15b's steelman point (b) as decisive over
+    the capacity defence: 28 of the 31 items this register held in-house last night are settleable by a
+    grep, a file read, or an arithmetic recount — by an agent, in seconds. The 178 owed days are a
+    ROUTING failure, not a resource failure. Recorded against this register's interest, as routed.
+  **Scope extension recorded, not assumed**: PREMISE-026 governs the 132-item 15d re-trigger lane measured
+    in tonight's census. That lane is the paradigm case of a long-running unowned queue.
+  What is at risk: the principal output format of Agents 14a and 14b.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Transform: net evaluation; verified the cited
+    premise at source rather than through the report · Current status: REVISION-FLAGGED (REVISE-464)
+
+DISPOSITION-955:
+  Date: 2026-09-13 | Item: PRESUMPTION-975 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Moderate on mechanism; **None on the attestation limb**) | 15b: CHALLENGED
+    (Strong)
+  Net assessment: 14b routed this item with an explicit instruction that 15c treat convergence on it as
+    uninformative, because the two agents whose independence it questions are the two searching it. **Both
+    directions converged. That convergence is discarded and plays no part in this disposition.**
+  Disposition: **REVISE** (REVISE-465) | Urgency: HIGH
+  Reasoning: The disposition rests on two facts 15c can check without either search agent. (i) PREMISE-111
+    is ACTIVE at `validated_premises.md:2527`, contains a standing discount on 15a/15b agreement, is past
+    its 2026-08-21 re-check, and this run found no instance of its application anywhere in the registers.
+    (ii) `provenance_protocol.md` v1.0 mandates an independence attestation and specifies no constraint on
+    its content or on execution order — so the attestation is unfalsifiable as specified. Neither fact
+    depends on a literature search. **15b's correction to the item is accepted and is load-bearing:
+    sequencing is second-order; the dominant channel is shared weights, which no procedural fix touches.**
+    The item as stated (independence as attestable property vs. property of execution) is therefore right
+    in its conclusion and wrong in its diagnosis, and REVISE-465 addresses the diagnosis it should have
+    had.
+  **Execution mechanism this cycle, stated because the item is about exactly this.** 15a and 15b ran in
+    separate isolated agent contexts with no shared state; 15b's instructions were authored from the
+    intake register alone and contained nothing from 15a's output; neither read the other's directory or
+    this file. They were launched SEQUENTIALLY in wall-clock time. The information barrier is new; the
+    wall-clock ordering is unchanged, and this is the **third consecutive cycle** with a sequencing
+    deviation. Declared, not buried, and not offered as a fix.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Transform: net evaluation with convergence
+    deliberately excluded per the routing instruction · Current status: REVISION-FLAGGED (REVISE-465)
+
+DISPOSITION-956:
+  Date: 2026-09-13 | Item: PRESUMPTION-979 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED (Weak) + NOVELTY-FLAG | 15b: CHALLENGED (Strong; VERIFIED null RCT)
+  Net assessment: Both directions reached the same 2014 RCT from opposite assignments and both verified it
+    first-hand. Under PREMISE-111 that convergence is discounted; what survives the discount is the RCT's
+    reported numbers, which are quoted with intervals in both files and which 15c has not independently
+    retrieved (**SECONDARY VIA TWO AGENTS — not VERIFIED by 15c**). The operative limb of the presumption
+    — that a prose caveat can be relied on as a control — does not survive. The comparative limb (prose
+    read at the SAME RATE as status fields) has no literature at all.
+  Disposition: **REVISE on the operative limb** (REVISE-466) **+ MONITOR on the comparative limb**
+    (MONITOR-608) | Urgency: Medium
+  Reasoning: What tips it is not the RCT but 15b's steelman point (d), which is an in-house observation
+    anyone can check: PREMISE-111's standing discount is prose, it WAS read this cycle by a search agent,
+    and it had still not been applied anywhere. **A caveat read and not acted on is the presumption's
+    claim in its strongest form, and it is demonstrated inside this run rather than borrowed from a
+    trial.** Urgency is Medium rather than High for one reason, recorded because it cuts against the
+    remedy: the estate's own six-day unread instance was a red STATUS FIELD, not prose. Relocating prose
+    into status rows is therefore NOT supported by the estate's own data, and the live variable is the
+    forcing function, which is PRESUMPTION-962's territory and is not re-litigated here.
+  PROVENANCE: Origin 14b · Chain [14b → 15a, 15b → 15c] · Transform: limb-split disposition; convergence
+    discounted, in-house instance substituted as warrant · Current status: REVISION-FLAGGED (REVISE-466) +
+    MONITORING (MONITOR-608)
+
+### Run footer — 2026-09-13
+
+  Items dispositioned: 5 (ASSUMPTION-1336; PRESUMPTION-972, -974, -975, -979). DISPOSITION-952…956.
+  Outcomes: **0 INCORPORATE · 2 MONITOR (limbs only) · 5 REVISE.**
+  Minted: **0 premises**, 2 monitors (MONITOR-607, -608), 6 revision flags (REVISE-462…467).
+  Why zero premises: three of five items were found to be ENFORCEMENT gaps against premises the estate
+    already holds (026, 089, 108, 111, 141). PREMISE-135 and PREMISE-138(1) bar re-minting them. Minting a
+    premise for an unenforced premise would be the exact defect 15b's Critical flag names.
+  Consistency check: performed against PREMISE-026, 089, 108, 111, 135, 136, 138, 141, 154, 168, 173, 174,
+    and against OPEN-199…201. **Four of the premises relied on were read at source by 15c this run (026 at
+    line 981, 108 at 2447, 111 at 2527, 141) rather than accepted from the search reports** — this is the
+    ASSUMPTION-1343 correction, applied to 15c's own consistency check for the first time. No contradiction
+    found between this run's dispositions and any ACTIVE premise; expected, since this run minted nothing.
+  Verification discipline: no disposition rests on a figure this run treats as VERIFIED when it is not.
+    15b's 37-61% window figures are its own arithmetic under a model it then argues is wrong, and are
+    carried as order-of-magnitude only. The Yavchitz interval is marked SECONDARY VIA TWO AGENTS.
+    15b's DO-NOT-CITE marking of the alarm-fatigue percentages is carried forward, not dropped.
+  Execution deviation: 15a and 15b ran in **separate isolated contexts** (new this cycle) but were
+    launched SEQUENTIALLY, not concurrently — **third consecutive cycle**. Declared, not buried.
+  Backlog: 5 of 137 bare-[QUEUED] items served. The 132-item 15d re-trigger lane was not attempted and is
+    now routed under PREMISE-026 via REVISE-464. 15d has not run since 2026-08-02. See OPEN-205.
+  Reflexivity: DISPOSITION-954 was issued against the interest of the register issuing it, and
+    DISPOSITION-955 rests on facts chosen specifically so as not to require trusting the two agents whose
+    independence was in question. Neither device makes this footer a disinterested document. The four
+    owed measurements in REVISE-459 remain owed as of this line; **REVISE-464 is the fifth cycle in which
+    ownership has been recommended rather than assigned, and this run did not assign it either.**
