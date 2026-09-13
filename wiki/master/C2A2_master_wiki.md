@@ -1,5 +1,5 @@
 # C2A2 Master Wiki
-*Maintained by the Master C2A2 Agent | Last updated: 2026-09-12 (full daily run — zero ingest, 3 new Levin proposals; Run Narrative entry written this run, verified present. NB: the 2026-09-10 header claimed a Run Narrative refresh that did not happen — that gap is recorded in the 2026-09-11 entry rather than backfilled.)*
+*Maintained by the Master C2A2 Agent | Last updated: 2026-09-13 (full daily run - zero ingest for the third consecutive day, zero proposals written; the run's result is a correction to yesterday's own network numbers. Run Narrative entry written this run, verified present.)*
 *Network initialized: 2026-04-03 — within 24 hours of Karpathy's Wiki-agent methodology proposal*
 
 ---
@@ -8,7 +8,7 @@
 
 The C2A2 tradition-accelerator network consists of **13 agents** maintaining **11 research program Wikis** and **2 integration layers**. The network was initialized on 2026-04-03.
 
-**Current status:** Daily run complete (**2026-09-12, Saturday** — Wolfram specialist day; PROP-2026-09-12-001 was already in `pending/` from the specialist agent, so Wolfram was correctly not re-searched). **Zero ingest for the second consecutive day — the review gate, not the hunt, is the binding constraint.** `scripts/ingest_ledger.py`: approved OPEN **1**, unchanged, and that one card (PROP-2026-08-14-033, Wright) **failed retrieval for the fourth consecutive run** and is now formally recommended for rejection or hand-retrieval via the KSBJ *Between Beliefs* podcast index. Phase 2 wrote **3 proposals, all Levin** (PROP-2026-09-12-002/003/004), each verified against Levin's own preprint index at drmichaellevin.org with the abstract retrieved and the full text explicitly NOT read. `pending/` now stands at **5**. Network, derived by counting headers rather than reading stated totals: **867 PRS triplets** across 15 traditions, **108** CROSS entries, **91** distinct FINDING ids. Level-2 stream rebuilt: 1501 signals / 87 pairs / span to 2026-09-09, no staleness WARN. **The run's one substantive result is a challenge to the wiki's own gloss:** the Grodstein–Mathews–Levin cancer preprint reports that invasive tumours *over*express connexins while non-invasive ones underexpress them, which is not compatible with reading cancer as simple loss of gap-junctional coupling. Carried as a Speculative candidate with a request to review PRS-02's downstream citations — not ingested.
+**Current status:** Daily run complete (**2026-09-13, Sunday**). **Third consecutive zero-ingest day**, and the first run in this stretch to also write **zero proposals** - Rohr was covered by the 07:00 specialist (3 cards), and searches for the four longest capture gaps (Fredrickson 31d, Arkani-Hamed 28d, Stump 19d, Friston 6d) returned only background inside the 60-day window. `scripts/ingest_ledger.py`: approved OPEN **1**, unchanged - PROP-2026-08-14-033 (Wright/Admirato) failed retrieval a **fifth** time. `pending/` stands at **8**. **The substantive result is a correction, not an acquisition.** Yesterday's entry recorded **108** CROSS entries and **91** distinct FINDING ids. Neither file has changed since yesterday's own commit (`git diff --name-only c2f3e2b HEAD` returns empty for both), and at that commit the derived counts were already **135** and **90**. The correct figures are **867 PRS triplets** across 15 traditions (unchanged, and independently confirmed by the Review Log rebuild's own `triplets=867`), **135 distinct CROSS ids** (contiguous 001-135, every one defined at line start, none referenced-only), and **90 distinct FINDING ids** (contiguous 001-090). 108 was the highest id in the newest *narrative* block - the file has two eras of formatting, block-style `CROSS-NNN:` entries and later bolded `**CROSS-NNN - ...**` ones, and a line-anchored count sees only the first. This is the same failure mode the standing rule already names: **last id is not count**, and here a pattern that matched one era of the file was read as a census of the whole. Level-2 stream rebuilt: **1501 signals / 87 pairs / span to 2026-09-09**, byte-identical to the accepted build, no staleness WARN (4 days).
 
 **Correction to the 2026-09-10 sweep, from this run:** that sweep listed `stump` among files carrying a total-line defect ("closing total 38 against a highest id of 41"). Counting headers this run gives **38 entries**. The numbering simply has gaps; the footer is right and stump is **not** defective. The other three files named in that sweep were not re-checked and their status is unchanged.
 
@@ -484,6 +484,48 @@ These are the meta-questions the entire network is organized to answer:
 *To update this document: run the Master C2A2 Agent after dispatches have been filed.*
 
 ## Run Narrative
+
+**2026-09-13** - Full daily run (Sun). **Zero ingest, zero proposals.** Phase 0 found no new decision
+emails (the only `[C2A2-review-decision]` thread, 2026-09-09 / `1a087dd9595a1b4d`, was processed by the
+09-10 run and archived). Phase 1: inbox clear by `ingest_ledger.py`; the single OPEN card is still
+PROP-2026-08-14-033. Phase 2 wrote nothing, and two things are worth separating in that zero. The first
+is the filter working: Fredrickson, Arkani-Hamed, Stump and Friston all returned pre-existing or
+background material only. The second is **not** the filter working: the two retrieval assignments
+yesterday's run left behind - Erickson et al., *A platform for automated training of mammalian cell
+physiology* (bioRxiv 10.64898/2026.08.13.744473), and Fields & Levin, *Cognitive Offloading Is a
+Cognitive Universal* (10.20944/preprints202607.0507.v1) - **were not retrieved.** Both DOIs sit outside
+the fetch provenance set; the Levin preprint index resolved their existence and citations but carries no
+abstracts, and browser access to bioRxiv was declined with no human present to approve it. No card was
+written from a title. That is now the **sixth** consecutive run in which the binding constraint on this
+network is retrieval access rather than discovery, and the third distinct source (after the Wolfram/
+Ralston arXiv abstract and the Wright/Admirato audio) to fail the same way.
+
+**The run's actual finding is about this wiki's own arithmetic.** Yesterday's entry reported 108
+cross-program connections and 91 findings. Both files are untouched since that commit, and both counts
+were wrong at the moment they were written: the derived figures were 135 and 90. The CROSS undercount
+has a mechanical cause worth recording, because it will recur - `cross_program_index.md` holds two
+formats, the original `CROSS-NNN:` blocks (54 of them) and later narrative `**CROSS-NNN - ...**` entries
+(the rest), and any line-anchored count sees only the first family. 108 happened to be the highest id in
+the newest narrative block, which is why it looked like a plausible total. The check that settles it is
+cheap and should be the standing one: count distinct ids with `grep -oE 'CROSS-[0-9]+' | sort -u | wc -l`,
+then separately confirm every id is *defined* somewhere rather than merely referenced (today: 135
+distinct, 135 defined, 0 referenced-only). The FINDING overcount of one was not diagnosed and is left
+named rather than explained.
+
+**Phase 6 note, and a real failure caught in passing.** `commit_daily_run.sh` refused at first on a stale
+0-byte `.git/index.lock` dated 04:49 with no git process alive - the known mount-side stranded-lock
+signature. That same lock is why **this morning's 05:45 commit job failed**; `scheduler/commit_check.md`
+carries a FAIL for 2026-09-13 and `held_paths.md` has no 09-13 line at all, because the script bailed
+before reaching the hold stage. Lock cleared from the Mac side, commit re-run: **bf80b51, 54 paths, not
+pushed.** The authorship window then held `wiki/review_log.html` and `prototypes/level2_build_meta.json`
+as "written after the run's 45-minute window" - correctly by its own rule, wrongly in fact, because
+Phases 5.5 and 5.6 ran at run+125m on a long run. They were committed separately and explicitly as
+**52836c0**. **The 45-minute window assumes the run is short; on a long run it holds the run's own late
+phases.** Worth widening to cover the run's actual duration, or keying off run *completion* rather than
+run start.
+
+Review Log refreshed: 463 cards, 121 dates, 15 responses, 17 addresses scrubbed, grep-verified clean.
+Review page generated and opened (8 proposals). Gmail digest drafted. Nothing pushed.
 
 **2026-09-12** - Full daily run (Sat, Wolfram specialist day). **Second consecutive zero-ingest run, but the hunt broke its own two-day drought: three proposals, all Levin, all verified against the lab's own index rather than against a search snippet.**
 
