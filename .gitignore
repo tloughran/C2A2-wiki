@@ -164,3 +164,10 @@ _to_delete/
 # One-off probes
 tcc probe.sh
 narration/
+
+# Source workbooks under the inbox threads -- 13.7 MB binaries; the derivatives
+# (CSV/MD/HTML) are what the repo tracks. Added 2026-09-07 after the daily-run
+# commit swept "Resurrecting Civility Master 9-4-2026.xlsx" in (commit 91bb78b).
+# The file is still in history; removing it from HEAD does not remove it there.
+wiki/inbox/**/*.xlsx
+wiki/inbox/*.xlsx

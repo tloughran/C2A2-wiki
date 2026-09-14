@@ -75,6 +75,13 @@ WIP_STALE_DAYS = 14
 SKIP_DIRS = {".git", ".obsidian", "__pycache__", "node_modules", ".trash"}
 SKIP_FILE_GLOBS = {"_fs_probe_test.tmp"}
 
+# Verbatim corpora: the text IS the data, and a trailing double-space is a
+# Markdown hard line break. On 2026-09-07 the trailing_whitespace fix had
+# silently edited 3 lines each in tl_sandbox_verbatim.md and
+# TL_sandbox_reordered.md. The auto-fix never touches these directories;
+# report-only checks still walk them.
+VERBATIM_DIRS = {VAULT_DIR / "inbox" / "rc_sandbox", VAULT_DIR / "inbox" / "rc_tome"}
+
 WIKILINK_RE = re.compile(r"\[\[([^\]\|#]+)(?:[#|][^\]]*)?\]\]")
 H1_RE       = re.compile(r"^\#\s+(.+)$", re.MULTILINE)
 
@@ -274,6 +281,8 @@ def check_trailing_whitespace(apply_fix: bool):
     """Trim trailing whitespace from .md files in the vault."""
     findings, fixes = [], []
     for path in walk_md(VAULT_DIR):
+        if any(d in path.parents for d in VERBATIM_DIRS):
+            continue
         try:
             text = path.read_text(encoding="utf-8")
         except (OSError, UnicodeDecodeError):

@@ -90,6 +90,18 @@ POST_RUN_PRODUCERS=(
   "wiki/agents_tab.html"
 )
 
+# Never the run's output, whatever the clock says. On 2026-09-05 the authorship
+# window above swept 34 files and a 13.7 MB workbook from wiki/inbox/rc_sandbox/
+# into "C2A2 daily run" -- they were a day old, so they LOOKED like run output.
+# These are human working threads under wiki/inbox/; the run's own inbox writes
+# are loose files (PROCESSED_LOG.md, ingested items) and wiki/inbox/proposals/,
+# which is why this is a named list and NOT "any inbox subdirectory" -- that
+# broader rule was tried first and would have held the proposals. Workbooks are
+# binaries nobody should commit by automation. Both classes are held and
+# reported like any other foreign path, never staged. Add a thread here when
+# you open one.
+NEVER_RUN_OUTPUT_RE='(^wiki/inbox/(rc_sandbox|rc_tome)/|\.xlsx$)'
+
 # Repo-relative. Same status-file shape as scheduler/commit_check.md and
 # scheduler/run_stall.md: one appended dated line per run, so a held path is still
 # legible tomorrow when the launchd log has scrolled. gitignored like the rest of
@@ -257,6 +269,19 @@ $escaped"
 # correct, on a tree nobody built on purpose.
 mkdir -p "$REPO/$(dirname "$HELD_STATUS_FILE")"
 held_line="$(ts)  OK    nothing held; every staged path is the run's own output"
+foreign=$(git -C "$REPO" diff --cached --name-only | grep -E "$NEVER_RUN_OUTPUT_RE" || true)
+if [ -n "$foreign" ]; then
+  foreign_n=$(printf '%s\n' "$foreign" | grep -c .)
+  while IFS= read -r f; do
+    [ -n "$f" ] || continue
+    git -C "$REPO" restore --staged -- "$f" 2>/dev/null || true
+  done <<EOF
+$foreign
+EOF
+  log "HELD $foreign_n path(s) the run never writes (human inbox thread or .xlsx) -- left in the working tree:"
+  printf '%s\n' "$foreign" | sed 's/^/  /'
+  held_line="$(ts)  HELD  $foreign_n path(s) never run output (inbox thread / .xlsx):$(printf ' %s' $foreign)"
+fi
 if [ -n "$RUN_START_EPOCH" ]; then
   cutoff=$(( RUN_START_EPOCH + RUN_WRITE_WINDOW_SECONDS ))
   held=""
@@ -282,13 +307,13 @@ EOF
     held_n=$(printf '%s\n' "$held" | grep -c . )
     log "HELD $held_n path(s) written after the run's $(( RUN_WRITE_WINDOW_SECONDS / 60 ))-minute window -- not this run's output, left in the working tree:$held"
     log "     commit them yourself, or re-run once their author is done"
-    held_line="$(ts)  HELD  $held_n path(s) not written by the run:$held_names"
+    held_line="$(ts)  HELD  $held_n path(s) not written by the run:$held_names${foreign:+ ; plus $foreign_n never-run-output path(s)}"
   else
     log "authorship check clean: every staged path predates run+$(( RUN_WRITE_WINDOW_SECONDS / 60 ))m or is a named producer"
   fi
 else
   log "GUARD SKIPPED: --skip-run-check leaves no run timestamp; staged-path authorship NOT verified"
-  held_line="$(ts)  SKIP  --skip-run-check: staged-path authorship not verified"
+  held_line="$(ts)  SKIP  --skip-run-check: staged-path authorship not verified${foreign:+ ; $foreign_n never-run-output path(s) held}"
 fi
 [ "$DRY_RUN" -eq 0 ] && printf '%s\n' "$held_line" >> "$REPO/$HELD_STATUS_FILE"
 
