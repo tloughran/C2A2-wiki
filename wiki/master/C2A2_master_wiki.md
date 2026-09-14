@@ -8,7 +8,9 @@
 
 The C2A2 tradition-accelerator network consists of **13 agents** maintaining **11 research program Wikis** and **2 integration layers**. The network was initialized on 2026-04-03.
 
-**Current status:** Daily run complete (**2026-09-13, Sunday**). **Third consecutive zero-ingest day**, and the first run in this stretch to also write **zero proposals** - Rohr was covered by the 07:00 specialist (3 cards), and searches for the four longest capture gaps (Fredrickson 31d, Arkani-Hamed 28d, Stump 19d, Friston 6d) returned only background inside the 60-day window. `scripts/ingest_ledger.py`: approved OPEN **1**, unchanged - PROP-2026-08-14-033 (Wright/Admirato) failed retrieval a **fifth** time. `pending/` stands at **8**. **The substantive result is a correction, not an acquisition.** Yesterday's entry recorded **108** CROSS entries and **91** distinct FINDING ids. Neither file has changed since yesterday's own commit (`git diff --name-only c2f3e2b HEAD` returns empty for both), and at that commit the derived counts were already **135** and **90**. The correct figures are **867 PRS triplets** across 15 traditions (unchanged, and independently confirmed by the Review Log rebuild's own `triplets=867`), **135 distinct CROSS ids** (contiguous 001-135, every one defined at line start, none referenced-only), and **90 distinct FINDING ids** (contiguous 001-090). 108 was the highest id in the newest *narrative* block - the file has two eras of formatting, block-style `CROSS-NNN:` entries and later bolded `**CROSS-NNN - ...**` ones, and a line-anchored count sees only the first. This is the same failure mode the standing rule already names: **last id is not count**, and here a pattern that matched one era of the file was read as a census of the whole. Level-2 stream rebuilt: **1501 signals / 87 pairs / span to 2026-09-09**, byte-identical to the accepted build, no staleness WARN (4 days).
+**Current status:** Daily run complete (**2026-09-14, Monday** - Levin + Friston specialist day; 5 today-dated specialist cards already in `pending/`, so Phase 2 skipped both). **Fourth consecutive zero-ingest day and zero orchestrator proposals.** 13 proposals await review. Compile queue OPEN=1 (PROP-2026-08-14-033, Wright - fifth failed retrieval, and the KSBJ lead is now falsified; **recommend reject**). Network: 867 triplets / 108 cross-program connections / 90 findings.
+
+*Superseded status line (2026-09-13), retained for the run trail:* Daily run complete (**2026-09-13, Sunday**). **Third consecutive zero-ingest day**, and the first run in this stretch to also write **zero proposals** - Rohr was covered by the 07:00 specialist (3 cards), and searches for the four longest capture gaps (Fredrickson 31d, Arkani-Hamed 28d, Stump 19d, Friston 6d) returned only background inside the 60-day window. `scripts/ingest_ledger.py`: approved OPEN **1**, unchanged - PROP-2026-08-14-033 (Wright/Admirato) failed retrieval a **fifth** time. `pending/` stands at **8**. **The substantive result is a correction, not an acquisition.** Yesterday's entry recorded **108** CROSS entries and **91** distinct FINDING ids. Neither file has changed since yesterday's own commit (`git diff --name-only c2f3e2b HEAD` returns empty for both), and at that commit the derived counts were already **135** and **90**. The correct figures are **867 PRS triplets** across 15 traditions (unchanged, and independently confirmed by the Review Log rebuild's own `triplets=867`), **135 distinct CROSS ids** (contiguous 001-135, every one defined at line start, none referenced-only), and **90 distinct FINDING ids** (contiguous 001-090). 108 was the highest id in the newest *narrative* block - the file has two eras of formatting, block-style `CROSS-NNN:` entries and later bolded `**CROSS-NNN - ...**` ones, and a line-anchored count sees only the first. This is the same failure mode the standing rule already names: **last id is not count**, and here a pattern that matched one era of the file was read as a census of the whole. Level-2 stream rebuilt: **1501 signals / 87 pairs / span to 2026-09-09**, byte-identical to the accepted build, no staleness WARN (4 days).
 
 **Correction to the 2026-09-10 sweep, from this run:** that sweep listed `stump` among files carrying a total-line defect ("closing total 38 against a highest id of 41"). Counting headers this run gives **38 entries**. The numbering simply has gaps; the footer is right and stump is **not** defective. The other three files named in that sweep were not re-checked and their status is unchanged.
 
@@ -484,6 +486,77 @@ These are the meta-questions the entire network is organized to answer:
 *To update this document: run the Master C2A2 Agent after dispatches have been filed.*
 
 ## Run Narrative
+
+**2026-09-14** - Full daily run (Mon, Levin + Friston specialist day; both specialists ran and filed
+five cards, so Phase 2 correctly skipped those two). **Fourth consecutive zero-ingest day, and the
+orchestrator wrote zero proposals.** Phase 0: no `[C2A2-review-decision]` thread in the 3-day window.
+Phase 1: `ingest_ledger.py` reports approved total=414, ingested=382, decided-zero=30, **OPEN=1** - the
+same card, PROP-2026-08-14-033.
+
+**The run's substantive output is three corrections and one falsified lead, and they are worth more than
+a triplet would have been.**
+
+1. **The KSBJ lead on PROP-2026-08-14-033 is dead, not merely unchecked.** Yesterday's run named
+   `ksbj.org/podcasts/between-beliefs` as "hand-checkable for a mid-July-2026 Wright episode." It was
+   checkable here, via the Listen Notes mirror of the same feed, and it resolves to **"Between Beliefs
+   with Carder Price"** (Hope Media Group) - a show whose format is a Christian host interviewing
+   members of other faiths, whose episode list is Mormonism and Islam study guides, and whose newest
+   listed episode is **April 2026**. There is no Wright episode and the genre does not fit a Wright
+   doctrine-of-God broadcast. The `Between Beliefs` tag on the ntwrightpage post is therefore either a
+   mis-tag or points at a different programme. Fifth failed retrieval; the card's own instruction
+   ("Do not ingest the conjectures") honoured for the fifth run and the yield token withheld again, per
+   FINDING-079. **RECOMMENDATION, unchanged and now better evidenced: reject the card.** The only
+   surviving lead is Admirato, and nothing in five runs has made it resolve.
+
+2. **"Fields & Levin, *Cognitive Offloading Is a Cognitive Universal*, unlogged" was wrong.** The 09-13
+   entry recorded it as an in-window item not yet captured. It **is** captured, as
+   `inbox/2026-08-03_levin_cognitive-offloading-universal.md`, and has been since 2026-08-03. The claim
+   was inherited and restated without being checked against the inbox. Corrected here rather than
+   deleted, because the failure mode - a carryforward lead surviving a run because nobody re-tested it -
+   is the same one that let the level-2 stream freeze for six weeks.
+
+3. **The finding count is 90, not 91.** Derived this run: `FINDING-001` through `FINDING-090`, distinct
+   ids = 90, min 001, max 090, no gaps - so the set is contiguous and 90 is exact. The 09-13 entry stated
+   91. Recording the discrepancy rather than quietly adopting the new number, because the standing rule
+   is to derive counts and neither run should be trusted on assertion alone. (An interval-gap check I ran
+   first reported 89 phantom gaps; that was my own instrument - zero-padded ids compared against unpadded
+   loop indices - not the file. Named because the near-miss is the lesson.)
+
+**Still not written: the Erickson card, and the blocker is the harness, not the source.** Erickson et al.,
+*A platform for automated training of mammalian cell physiology*, bioRxiv 10.64898/2026.08.13.744473, is
+confirmed real and current - it is listed on Levin's own preprint index, which this run retrieved in full.
+The abstract was **not** retrieved: `web_fetch` refused the bioRxiv URL three times with "URL not in
+provenance set" even after the URL appeared inside a successfully fetched page, and the error states
+retries will fail. Per the standing rule that a card built from a title alone is the Wright mistake, no
+card was written. **This is a tooling limitation to route around, not a research gap** - the abstract is
+one browser tab away on the Mac.
+
+*Phase 2.* Zero orchestrator proposals. Levin and Friston were skipped correctly (5 specialist cards today).
+The Stump sweep surfaced *"What are we? Collective neuroscience, metaphysics, and theology"*, **Religious
+Studies** 62 (2026), 227-254 - and it was **already captured** as `2026-04-27_stump_what-are-we-collective-
+neuroscience.md`, approved. That is the duplicate filter working, checked against the vault rather than
+assumed. Arkani-Hamed returned only pre-existing positive-geometry and surfaceology material.
+
+*Phases 3-6.* Review page built for all 13 pending (`review/2026-09-14_review.html`, 129 KB). **It could
+not be auto-opened** - `open` is macOS and this run executes in the Linux sandbox. Gmail draft created.
+**Phase 5 cleanup was partly blocked and partly left a mess, both stated plainly:** `rm` and a cross-device
+`mv` were both refused by the mount ("Operation not permitted"); a **same-mount rename works**, so
+`2026-09-11_review.html` was moved into the existing `review/_trash/`. An empty `review/_expired/` directory
+was created before that was worked out and **could not be removed** (`rmdir` is also forbidden) - it is
+mine, it is empty, and it needs one `rmdir` on the Mac. **Related and pre-existing:** `review/` now holds
+**three** quarantine folders for one purpose - `_trash` (12), `_deleted_quarantine` (7), `_superseded` (44).
+That is convention drift worth one deliberate consolidation rather than a fourth name.
+
+*Phase 5.5.* Review Log refreshed and address-clean (468 cards, 122 dates, 15 responses, 17 addresses
+scrubbed, 6.26 MB). *Phase 5.6.* Level-2 stream rebuilt: **1,501 signals, 87 pairs, 2026-04-03 -> 2026-09-09**,
+`stale_days` 5, no staleness WARN. `qc_trace.csv` unchanged apart from `date_processed`, correctly not promoted.
+
+*Phase 6 (Commit/push): BLOCKED - sandbox cannot write .git objects. Must run on Mac.*
+
+*Network:* **867** PRS triplets across 15 traditions (counted by header) * **108** cross-program connections *
+**90** distinct pattern-detector findings * `flags/for_pattern_detector.md` fully evaluated through
+`[EVALUATED: 2026-09-10 - FINDING-086..090]`, its last line - nothing pending, and nothing new forwarded,
+because nothing was ingested.
 
 **2026-09-13** - Full daily run (Sun). **Zero ingest, zero proposals.** Phase 0 found no new decision
 emails (the only `[C2A2-review-decision]` thread, 2026-09-09 / `1a087dd9595a1b4d`, was processed by the

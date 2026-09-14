@@ -1157,3 +1157,56 @@ loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 6
 in `master/cross_program_index.md`, **91** distinct FINDING ids in `flags/pattern_detector_findings.md`.
 867 agrees independently with the Level-2 rebuild's own `triplets=867`. The 09-11 entry's "93 findings"
 was counted by a different rule; 91 is the distinct-id count and is what this entry means.
+
+---
+
+## 2026-09-14 — Daily run (Mon, Levin + Friston specialist day)
+
+**Processed: 0 files. Triplets extracted: 0.** `scripts/ingest_ledger.py wiki` reports approved
+total=414, ingested=382, decided-zero=30, **OPEN=1**; staging identical. Fourth consecutive zero-ingest
+day. No decision emails in the 3-day window, so nothing entered the queue.
+
+**The one OPEN card — PROP-2026-08-14-033 (`2026-08-14_wright_who-is-this-god-admirato`) — fifth run,
+and this run FALSIFIED the standing lead rather than merely failing again.** The 09-13 entry named
+`ksbj.org/podcasts/between-beliefs` as hand-checkable for a mid-July-2026 Wright episode. Checked here
+through the Listen Notes mirror of that feed: the show is **"Between Beliefs with Carder Price"**
+(Hope Media Group) — a Christian host interviewing members of other faiths; episode list is Mormonism
+and Islam study guides; newest listed episode **April 2026**. No Wright episode, and the genre does not
+fit a doctrine-of-God broadcast. The `Between Beliefs` tag on the ntwrightpage post is a mis-tag or
+points elsewhere. Card's own instruction ("Do not ingest the conjectures") honoured for the fifth run;
+**yield token withheld again** (FINDING-079 — re-listing the id on a line carrying a zero-yield token is
+what closed it by accident once). **RECOMMENDATION, unchanged and better evidenced: reject the card.**
+
+**Correction to the 2026-09-13 entry.** It recorded Fields & Levin, *Cognitive Offloading Is a Cognitive
+Universal*, as "unlogged and in-window." It is **logged** — `inbox/2026-08-03_levin_cognitive-offloading-
+universal.md`, present since 2026-08-03. The claim was inherited and restated without a vault check.
+
+**Carryforward NOT closed, and the blocker is the harness.** Erickson et al., *A platform for automated
+training of mammalian cell physiology*, bioRxiv 10.64898/2026.08.13.744473 — confirmed real and current
+against Levin's own preprint index (retrieved in full this run). The abstract was NOT retrieved:
+`web_fetch` refused the bioRxiv URL with "URL not in provenance set" on three attempts, including after
+that exact URL appeared inside a successfully fetched page. No card written, per the standing rule that a
+title-only card is the Wright mistake. Closable in one browser tab on the Mac.
+
+**Unjudgeable by the ledger, untouched, correctly so:**
+`inbox/proposals/approved/2026-05-12_repair_manifest.md` (no `proposal_id`; a manifest, not a source), and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` — no `proposal_id`, but ingested 2026-09-09
+(levin PRS-116, macintyre PRS-06, stump PRS-41, all present and all citing that note). Complete.
+
+**Pattern detector: nothing forwarded, nothing to evaluate.** No files ingested, so no new signals.
+`flags/for_pattern_detector.md` is evaluated through its final line,
+`[EVALUATED: 2026-09-10 - FINDING-086..090]`.
+
+**Phase 2: 0 orchestrator proposals.** Levin (3) and Friston (2) skipped — specialists filed today.
+Stump sweep surfaced *"What are we? Collective neuroscience, metaphysics, and theology"*, Religious
+Studies 62 (2026) 227–254, and it is **already captured** (`2026-04-27_stump_what-are-we-collective-
+neuroscience.md`, approved) — duplicate filter working, verified against the vault. Arkani-Hamed returned
+only pre-existing positive-geometry / surfaceology material.
+
+**Network after this run, derived by counting headers:** **867** PRS triplets across 15 tradition files
+(arkanihamed 31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123,
+loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66) — unchanged, correctly,
+since nothing was ingested. **108** CROSS entries. **90** distinct FINDING ids, `FINDING-001`..`FINDING-090`,
+contiguous (min 001, max 090, count 90). **The 09-13 entry stated 91.** Recorded as a discrepancy rather
+than silently adopting either figure. A gap-check I ran first reported 89 phantom missing ids; that was my
+own instrument (zero-padded ids against unpadded loop indices), not the file.

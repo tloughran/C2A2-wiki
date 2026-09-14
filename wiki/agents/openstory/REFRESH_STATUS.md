@@ -1,1 +1,2 @@
 2026-09-13T10:15Z  PASS  telemetry=2026-09-13/33 agents  node_edges=2026-09-13  | DB age 1h
+2026-09-13T12:15Z  FAIL  step 2 (sandbox cannot copy DB) — extractor needs a 6.05GiB local copy of open-story.db; largest writable fs has 5.68GiB free (short 370MiB). DB itself FRESH (age 0h). Feeds NOT stale: last Mac PASS 2026-09-13T10:15Z telemetry=2026-09-13/33 agents node_edges=2026-09-13 (both re-validated OK this run). Refresh on the Mac via refresh_openstory_feeds.sh.

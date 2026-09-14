@@ -44543,7 +44543,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-SUPPORTED — recommendation rests on limb (a) only (manifestation as a legitimate posterior-risk update and queue-reordering trigger under capacity constraint). Limb (b) (no standing before manifestation) is NO-SUPPORT-FOUND and is contradicted both by the retrieved literature and by this register's own PREMISE-202.
   Strength: Moderate — and only for the narrow, capacity-constrained reading.
   Key source: CISA Known Exploited Vulnerabilities (KEV) Catalog and BOD 22-01 (2021-, current). — SECONDARY
-  Register pre-check: Bears on several ACTIVE premises, and one of them arguably ANSWERS it in the opposite direction. - PREMISE-202: "A HARM AVERTED BY CHANCE IS AN EVENT AND OPENS A RECORD; 'damage is nil, but by luck' is the criterion for OPENING an item, not for closing one." On the accident-precursor definition, the four un-repaired registers were already at full record-opening standing on 2026-08-11. This is the 
+  Register pre-check: Bears on several ACTIVE premises, and one of them arguably ANSWERS it in the opposite direction. - PREMISE-202: "A HARM AVERTED BY CHANCE IS AN EVENT AND OPENS A RECORD; 'damage is nil, but by luck' is the criterion for OPENING an item, not for closing one." On the accident-precursor definition, the four un-repaired registers were already at full record-opening standing on 2026-08-11. This is the
   Summary: The assumption splits into a defensible limb and an indefensible one, and the run's wording conflates them. Limb (a), "manifestation is legitimate evidence that raises posterior risk and may therefore reorder a queue under a capacity constraint," is strongly supported — the CISA KEV regime is a fully institutionalised version of it, and the defect-proneness literature supplies the mechanism. Limb (b), the stronger reading actually written — that before manifestation the item was merely "a tidiness note" and manifestation is what gives it standing — is not supported and is directly contradicted by the near-miss and accident-precursor literature, which exists precisely to deny that a non-manif
   Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1306_for.md
 
@@ -44564,7 +44564,7 @@ RETURN-TO-14a:
   Strength: Strong (for limb a: independent coding before comparison is a warranted control);
   Key source: Hróbjartsson A. et al. 2012. "Observer bias in randomised clinical trials with binary outcomes:
   Register pre-check: Several ACTIVE premises bear, and the independence family is the relevant one. - PREMISE-156: "CHECKS THAT SHARE AN INPUT DATUM ARE ONE CHECK, AND METHOD-DIVERSITY REMEDIES DO NOTHING AGAINST THEM." Directly governs the mechanism the method note is protecting against. - PREMISE-096: no self-produced artifact may certify itself; a corroborating layer must draw on a genuinely disjoint evidence sourc
-  Summary: Limb (a) is strongly supported and quantified. Hróbjartsson's three systematic reviews are the canonical measurement of exactly this control, use the strongest available design, and give consistent directional exaggeration of 27-68% depending on outcome type. The pre-registration element of CROSS-135 is separately endorsed by Cochrane's guidance on protocols written before the studies are known. Limb (b), the word "worthless," is not supported by anything retrieved and is contradicted by the shape of the evidence: the literature's finding is that non-blind assessment produces a *biased but informative* estimate with a characterised direction and magnitude, which is why meta-epidemiology can 
+  Summary: Limb (a) is strongly supported and quantified. Hróbjartsson's three systematic reviews are the canonical measurement of exactly this control, use the strongest available design, and give consistent directional exaggeration of 27-68% depending on outcome type. The pre-registration element of CROSS-135 is separately endorsed by Cochrane's guidance on protocols written before the studies are known. Limb (b), the word "worthless," is not supported by anything retrieved and is contradicted by the shape of the evidence: the literature's finding is that non-blind assessment produces a *biased but informative* estimate with a characterised direction and magnitude, which is why meta-epidemiology can
   Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1308_for.md
 
 RETURN-TO-14a:
@@ -44583,7 +44583,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-SUPPORTED — the recommendation rests on the attribution limb (Nemeth says what 15b said he says: assigned DA produces bolstering relative to authentic dissent) and NOT on the application limb (that this discounts every CHALLENGED status). Specific recommendations: (1) record Schwenk 1990 against the item, since it is the only meta-analysis found and it was not surfaced; (2) restate the item with its comparison class explicit; (3) re-scope the named in-house test, which at n=1 can only produce a negative result, and give it an owner — it remains the right test.
   Strength: Moderate — strong for the narrow finding as stated by Nemeth, materially weakened once the comparison class is made explicit and the meta-analysis is admitted.
   Key source: Nemeth C., Brown K., Rogers J. 2001. "Devil's advocate versus authentic dissent: stimulating
-  Register pre-check: Two ACTIVE premises bear closely, and PREMISE-152 is nearly on point. - PREMISE-152: "HOMOGENEOUS, UNGUIDED multi-agent debate does not outperform isolated self-correction at matched compute. Gains from debate require heterogeneity of agents, role guidance, or an explicit calibration mechanism." Note the direction: role guidance is listed among the things that *produce* gains, which is in tension 
+  Register pre-check: Two ACTIVE premises bear closely, and PREMISE-152 is nearly on point. - PREMISE-152: "HOMOGENEOUS, UNGUIDED multi-agent debate does not outperform isolated self-correction at matched compute. Gains from debate require heterogeneity of agents, role guidance, or an explicit calibration mechanism." Note the direction: role guidance is listed among the things that *produce* gains, which is in tension
   Summary: The primary attribution is sound: Nemeth, Brown & Rogers (2001) does find that assigned devil's advocacy stimulated more thoughts supporting the initial viewpoint and fewer original thoughts than authentic dissent, and 15b reported it accurately. But the finding's force for this pipeline depends entirely on which comparison is in play, and that is where the item overreaches. Nemeth's comparison is DA versus *authentic dissent* — a genuine minority holder. The C2A2 pipeline's live alternative is not authentic dissent; there is no agent that independently holds the contrary view. The realistic counterfactual is 15a alone, or no adversarial pass at all, and against *that* comparison Schwenk's m
   Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1310_for.md
 
@@ -44603,7 +44603,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-SUPPORTED — the recommendation rests on limb (a) only, the checked-zero standard, which is sound and worth recording as the item claims. Limb (b), the completeness premise the claim actually depends on, is NO-SUPPORT-FOUND and is contradicted by the one measured analogue located, as well as by three ACTIVE premises (189, 171, 169). Recommend the wiki's claim be rewritten as "current against Stump's Online Papers page, his Video Lectures page, the Thomistic Institute podcast, and Fredrickson's PEP Lab article and news pages" — an enumeration of checked sources — rather than as currency against the thinkers' publication records.
   Strength: Weak for limb (a) (the checked-zero standard, which was not in question); None for limb (b) (that a thinker's own maintained pages are a complete and timely record of their output).
   Key source: HelioIndex: A Directory of Active Researchers in Solar and Heliospheric Physics, 2025.
-  Register pre-check: Three ACTIVE premises bear and all three cut against the completeness limb. - PREMISE-189: "Where a record is absent from an artifact set, the artifact set ALONE cannot distinguish deliberate omission from incidental loss. Detection of omission requires an independently maintained expectation about what should be present." This is close to dispositive: a thinker's own page is exactly the artifact 
+  Register pre-check: Three ACTIVE premises bear and all three cut against the completeness limb. - PREMISE-189: "Where a record is absent from an artifact set, the artifact set ALONE cannot distinguish deliberate omission from incidental loss. Detection of omission requires an independently maintained expectation about what should be present." This is close to dispositive: a thinker's own page is exactly the artifact
   Summary: The item makes a good epistemic point and rests it on a premise the literature does not support. Limb (a) — that "the wiki is current against a named, checked source" is a different and better fact than "nothing was found" — is sound, is the estate's checked-zero standard, and was not contested by the intake. Limb (b) is the load-bearing one and no supporting literature was found for it. The single measured figure located points the other way: self-maintained ORCID records recovered 57-73% of a comprehensive database's papers, and were complete for fewer than half the researchers studied. The completeness gap is also structurally predictable for the two thinkers in question: Stump's Online P
   Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1312_for.md
 
@@ -44613,7 +44613,7 @@ RETURN-TO-14a:
   Result: SUPPORTED — resting on limbs (a) and (b). The strongest single source is ISO/IEC 9646 / TTCN-3, which is an international standard that settled this exact design question in favour of a verdict set larger than two, with a named state for "the apparatus could not decide." Recommend the ruling requested by the run be answered in the direction it proposed, but with the implementation amended: make the third state an enumerated token, not `PASS` with a qualifier, and give `morning-system-health` a distinct routing rule for it (the Nagios UNKNOWN pattern).
   Strength: Strong (for the claim that a binary vocabulary cannot carry the third state); Moderate (for the claim that inventing a third value is the right repair); Weak (for the specific implementation chosen).
   Key source: ISO/IEC 9646-3 / TTCN and TTCN-3 (ETSI ES 201 873). — SECONDARY (verdict set retrieved from
-  Register pre-check: Two ACTIVE premises bear very closely and one of them may already settle it. - PREMISE-141: "ABSENCE OF A REPORT IS A THIRD TERMINAL STATE, NOT A VALUE OF THE OTHER TWO... (1) OMISSION IS NOT CRASH. Cristian's failure-semantics taxonomy separates a component that runs and produces no response..." This is the same proposition at one remove, and it is ACTIVE. The new content ASSUMPTION-1314 adds is 
+  Register pre-check: Two ACTIVE premises bear very closely and one of them may already settle it. - PREMISE-141: "ABSENCE OF A REPORT IS A THIRD TERMINAL STATE, NOT A VALUE OF THE OTHER TWO... (1) OMISSION IS NOT CRASH. Cristian's failure-semantics taxonomy separates a component that runs and produces no response..." This is the same proposition at one remove, and it is ACTIVE. The new content ASSUMPTION-1314 adds is
   Summary: Three limbs, and they should be rated separately. Limb (a) — that a two-valued PASS/FAIL vocabulary cannot carry "verified current but not produced by me" — is strongly supported and is close to a settled engineering result. ISO/IEC 9646's TTCN-3 standardised five verdicts precisely because two were inadequate, and it separates the two cases this item cares about: `fail` (the system is wrong) from `error` (the test apparatus could not run), which is exactly the sandbox-cannot- regenerate case. Limb (b) — that adding a third value is the correct repair — is supported by the same sources plus the operational convention already present in the alarm consumer (Nagios UNKNOWN, exit code 3), and th
   Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1314_for.md
 
@@ -44684,7 +44684,7 @@ RETURN-TO-14b:
   Strength: Weak-to-Moderate (Limb A, conditional on the mount type), None (Limb B)
   Key source: SQLite documentation, "Write-Ahead Logging," §5 "Read-Only Databases" (sqlite.org/wal.html).
   Register pre-check: - PREMISE-092 (ACTIVE) — the safe-recovery sequence for a large SQLite database: stop writers, take a raw file-level copy first, confirm version, checkpoint/backup via the online backup API. Bears on *recovery*, not on read-only consumption, but establishes that the estate already holds a considered position on SQLite file handling. - PREMISE-098 (ACTIVE) — scripts correct interactively on the Mac
-  Summary: The presumption splits cleanly and the FOR direction lands on the narrower half. Limb A has a real defence I did not expect to find: WAL's shared-memory requirement is documented as unreliable over network and SMB-style mounts, so if the live database is on a mounted path the copy may be the only correct read, and `immutable=1` is explicitly *not* a drop-in replacement because it disables locking and change detection and therefore assumes a file that is not being written. The extractors' copy buys snapshot isolation, which is a genuine requirement, and PREMISE-092 shows the estate already treats file-level copies as the safe primitive. Limb B has no support: SQLite has shipped read-only WAL 
+  Summary: The presumption splits cleanly and the FOR direction lands on the narrower half. Limb A has a real defence I did not expect to find: WAL's shared-memory requirement is documented as unreliable over network and SMB-style mounts, so if the live database is on a mounted path the copy may be the only correct read, and `immutable=1` is explicitly *not* a drop-in replacement because it disables locking and change detection and therefore assumes a file that is not being written. The extractors' copy buys snapshot isolation, which is a genuine requirement, and PREMISE-092 shows the estate already treats file-level copies as the safe primitive. Limb B has no support: SQLite has shipped read-only WAL
   Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-952_for.md
 
 RETURN-TO-14b:
@@ -44723,7 +44723,7 @@ RETURN-TO-14b:
   Result: NO-SUPPORT-FOUND. The recommendation rests on Limb B, which is the load-bearing limb and the one carrying 14b's High risk. Limb A stands and should be recorded separately so the finding is not misread as an argument for widening write scope — it is not. What the literature supplies is a single structural prescription, already present in the register as PREMISE-163: an agent that cannot fix must name a successor owner, and the successor may be another agent. The in-house count 14b specifies (findings closed in the last 30 days by an agent other than the one that raised them) will show whether that path exists at all; the two live defects — PROP-2026-08-14-033's retired retrieval target, and the duplicate `*Total PRS triplets:*` anchor in four registers — are the test cases, and both have known one-line fixes sitting behind a fourteen-day human latency.
   Strength: Weak (Limb A, uncontested), None (Limb B)
   Key source: Escalation definitions in incident practice (QuickStaffPro, "Incident Reporting vs. Escalation:
-  Register pre-check: - PREMISE-163 (ACTIVE) — "Production-completion is not lifecycle-completion. A producer may be retired only through a HANDOVER GATE THAT NAMES A SUCCESSOR OWNER for the open defect classes in its output." 14b's note that PREMISE-163 may bear is confirmed: the premise already requires a named successor owner and is the governing rule for exactly this shape. - PREMISE-108 (ACTIVE) — transmission is 
+  Register pre-check: - PREMISE-163 (ACTIVE) — "Production-completion is not lifecycle-completion. A producer may be retired only through a HANDOVER GATE THAT NAMES A SUCCESSOR OWNER for the open defect classes in its output." 14b's note that PREMISE-163 may bear is confirmed: the premise already requires a named successor owner and is the governing rule for exactly this shape. - PREMISE-108 (ACTIVE) — transmission is
   Summary: The FOR direction fails on this item about as completely as it can. Limb A is supported and was never at issue — Agent 16 and the daily run both behaved correctly, as 14b said, and the write-scope limit should stay. Limb B is contradicted by the defining sentence of the escalation literature: escalation is *triggered by* inability to resolve, and it is distinguished from reporting precisely by the fact that it shifts ownership rather than recording an event. The healthcare study adds an instructive inversion — front-line practitioners under-report when they *can* fix, the estate over-reports when it *cannot*, and both are failures of the same transfer duty. The multi-agent-systems evidence c
   Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-956_for.md
 
@@ -44751,7 +44751,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-CHALLENGED — and the recommendation rests entirely on LIMB C. Limbs A and B are NO-CHALLENGE-FOUND and are already covered by PREMISE-070 and PREMISE-119.
   Strength: Moderate (LIMB A: Weak — PREMISE-070 already carries it. LIMB B: Weak — well supported by PREMISE-119/121. **LIMB C: Strong** — the inference from A and B to "skip the hunt" is the step the literature denies.)
   Key source: Goldratt, E.M. — Drum-Buffer-Rope / Theory of Constraints, as documented in current practitioner
-  Register pre-check: - PREMISE-070 (ACTIVE) — "Since 06-16 the binding constraint on the proposal pipeline is human review throughput, not literature discovery (review-bound). By Theory of Constraints, other stages should be subordinated to review — i.e., do not over-feed intake while review is the bottleneck." This is a near-exact pre-answer to LIMB A and it is already ACTIVE. - PREMISE-119 (ACTIVE) — production and 
+  Register pre-check: - PREMISE-070 (ACTIVE) — "Since 06-16 the binding constraint on the proposal pipeline is human review throughput, not literature discovery (review-bound). By Theory of Constraints, other stages should be subordinated to review — i.e., do not over-feed intake while review is the bottleneck." This is a near-exact pre-answer to LIMB A and it is already ACTIVE. - PREMISE-119 (ACTIVE) — production and
   Specific risk: If limb C is wrong, the system now has a precedent for treating an empty intake queue as a goal state, which converts a temporary review backlog into a permanent discovery gap. Because supply here is *perishable* (paywalls, recordings, deleted posts, member-only windows such as FLAG-023), the loss is not recoverable by working harder later. The failure is invisible by construction: nothing appears in any register to record what was never surveyed, so the cost never enters the ledger while the be
   Summary: Limbs A and B are in good standing and are already ACTIVE premises in this register, so searching them again produced nothing new. The defect is in limb C, and it is a real one. The run reasoned from Theory of Constraints to an action that Theory of Constraints specifically forbids: drum-buffer-rope exists to keep a protective buffer in front of the constraint so it never starves, and `pending/ = 0` is the state DBR is engineered to prevent, not a state to preserve. Second, limbs A/B concern items *in the review queue*, whereas what was un-absorbed on 2026-09-10 was 85 triplets *already ingested downstream* — a different stage. Withholding supply at stage 1 does not relieve congestion at sta
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1305_against.md
@@ -44784,7 +44784,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-CHALLENGED — resting on LIMB B (the "worthless" claim) and LIMB C (achievability). LIMB A is NO-CHALLENGE-FOUND: independent coding remains the right control.
   Strength: Moderate (LIMB A: None — independent coding is correct practice. **LIMB B: Strong** — the measured bias is ~36%, not annihilation. **LIMB C: Moderate-to-Strong** — blinding appears unachievable in this design and the note does not distinguish blind from merely separate.)
   Key source: Hróbjartsson, A. et al. (2012). "Observer bias in randomised clinical trials with binary outcomes:
-  Register pre-check: - PREMISE-120 (ACTIVE) — reproducibility and replicability are distinct; reproducing a result does not confirm it. Bears on what independent coding buys. - PREMISE-076 (ACTIVE) — a dissensus/displacement rate is a meaningful detector output ONLY once the measure's reliability is established and instrument noise separated from genuine variation, reported above a measured noise floor. **This is the 
+  Register pre-check: - PREMISE-120 (ACTIVE) — reproducibility and replicability are distinct; reproducing a result does not confirm it. Bears on what independent coding buys. - PREMISE-076 (ACTIVE) — a dissensus/displacement rate is a meaningful detector output ONLY once the measure's reliability is established and instrument noise separated from genuine variation, reported above a measured noise floor. **This is the
   Specific risk: The immediate risk is not a bad number; it is no number. FLAG-023's window is time-limited, the dialogue is paywalled, member access is the gating step, and **no owner and no date are attached to it**. A pre-registered method whose control is unachievable, attached to an unassigned access step, is a design that will expire unexecuted — and "the number is worthless" is exactly the sentence that will justify not taking a degraded reading in the last week of the window.
   Summary: The method is right and the rhetoric is wrong, and the rhetoric is load-bearing because "worthless" is what will license discarding a measurement that this study "almost never gets" in a window that is closing. The best measurement of exactly this bias — Hróbjartsson's systematic review of trials carrying both blinded and non-blinded assessors of the same outcomes — puts the exaggeration at about 36%, with a pooled ratio of odds ratios of 0.76 (0.61–0.94) in the subset with dependence data. That is a large bias and a good reason to blind; it is not a reason to call the unblinded number worthless. Second, blinding is frequently unachievable and the field's response is to proceed with the limi
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1308_against.md
@@ -44806,7 +44806,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-CHALLENGED — resting on LIMB C (transfer), with LIMB B a weaker secondary challenge. **LIMB D is NOT challenged and should be read as strengthened**: the conclusion that every CHALLENGED status is suspect survives, because the LLM-native mechanism (correlated substrate plus role compliance, PREMISE-111/152/180/197) reaches the same conclusion by a different route than the one the item names. The correct disposition is therefore NOT to relax MONITOR-599 but to re-found it on the transfer-appropriate mechanism — and to run test (a) above, which costs one grep.
   Strength: Moderate (LIMB A: None — correctly attributed. **LIMB B: Moderate** — Schwenk's meta-analysis runs the other way and Schulz-Hardt establishes an ordering, not a null, though I could read neither. **LIMB C: Strong** — human→LLM transfer is specifically unreliable, and the one mechanism named as failing to transfer is the independence mechanism. **LIMB D: Weak-to-None** — see below; the consequence survives even though the premise is challenged.)
   Key source: Nemeth, C., Brown, K. & Rogers, J. (2001). "Devil's advocate versus authentic dissent: stimulating
-  Register pre-check: - PREMISE-152 (ACTIVE) — "HOMOGENEOUS, UNGUIDED multi-agent debate does not outperform isolated self-correction at matched compute. Gains from debate require heterogeneity of agents, ROLE GUIDANCE, or an explicit calibration mechanism." **This is the pre-answer and it runs AGAINST the item**: role guidance is named as one of the three things that make debate work at all. The 15a/15b split is role 
+  Register pre-check: - PREMISE-152 (ACTIVE) — "HOMOGENEOUS, UNGUIDED multi-agent debate does not outperform isolated self-correction at matched compute. Gains from debate require heterogeneity of agents, ROLE GUIDANCE, or an explicit calibration mechanism." **This is the pre-answer and it runs AGAINST the item**: role guidance is named as one of the three things that make debate work at all. The 15a/15b split is role
   Specific risk: The item's risk, if true as stated, is 42 CHALLENGED presumptions and 12 CHALLENGED assumptions whose epistemic weight is inflated by bolstering. The risk I actually found is different and larger. If 15a and 15b share a base model, a prompt scaffold and a pre-training corpus, then PREMISE-111's finding applies directly: the two directions are not two readings, and the architecture that was built to prevent confirmation bias may be producing two correlated readings with a procedural veneer of opp
   Summary: Limb A is accurately attributed and I want that stated clearly because the item's credit depends on it. Limb B is weaker than the item implies: Schwenk's 1990 meta-analysis — the only meta-analysis in this area and the one the charter named — reports assigned devil's advocacy outperforming the expert approach, and Schulz-Hardt's n=201 replication establishes that genuine dissent beats contrived dissent, which is an ordering and not a demonstration that contrived dissent does nothing. Neither paper was retrievable behind its paywall, so both readings are secondary and I will not pretend otherwise. Limb C is where the item is most exposed, and it is exposed in a way the item does not anticipat
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1310_against.md
@@ -44828,7 +44828,7 @@ RETURN-TO-14a:
   Result: CHALLENGED — resting on LIMB B (completeness), with LIMB C (timeliness) raised as a separable and currently unmeasured limb. LIMB A (the checked-zero standard) is NO-CHALLENGE-FOUND and should be preserved; the repair is to the claim's NAME, not to the practice.
   Strength: Moderate-to-Strong on LIMB B; Moderate on LIMB C; None on LIMB A.
   Key source: Bramer, W.M. et al. (2017). "Optimal database combinations for literature searches in systematic
-  Register pre-check: - PREMISE-189 (ACTIVE) — "Where a record is absent from an artifact set, the artifact set ALONE cannot distinguish deliberate omission from incidental loss. Detection of omission requires an independently maintained expectation about what should be present." **Near-exact pre-answer**: a thinker's own page is the artifact set, and it cannot certify its own completeness. - PREMISE-171 (ACTIVE) — "A 
+  Register pre-check: - PREMISE-189 (ACTIVE) — "Where a record is absent from an artifact set, the artifact set ALONE cannot distinguish deliberate omission from incidental loss. Detection of omission requires an independently maintained expectation about what should be present." **Near-exact pre-answer**: a thinker's own page is the artifact set, and it cannot certify its own completeness. - PREMISE-171 (ACTIVE) — "A
   Specific risk: The specific risk is a false-negative that is invisible and self-reinforcing. A third-party-hosted appearance missed this week is not queued for next week — the checked-zero record asserts the week was empty, so no later run has a reason to revisit it. Over a quarter, at a plausible 25% miss rate on a low-volume thinker, the estate accumulates a systematic under-representation that no internal check can detect, because PREMISE-189 holds that the artifact set alone cannot distinguish omission fro
   Summary: The checked-zero standard is sound and is not what I am challenging. The completeness limb is not sound, and there is a directly transferable number: in the one domain where single-source recall has been measured prospectively, a single source returns a median of roughly 71-76% of the relevant material, and adding any second independent source lifts that to 85-90%. There is no reason to expect a personal webpage to do better than a curated bibliographic database, and several reasons to expect it to do worse — personal pages are curated for publications, and the output types this estate tracks for Stump and Fredrickson are overwhelmingly third-party-hosted and third-party-announced. The run's
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1312_against.md
@@ -44839,7 +44839,7 @@ RETURN-TO-14a:
   Result: PARTIALLY-CHALLENGED — resting entirely on LIMB C (the encoding). LIMB A is NO-CHALLENGE-FOUND and is already PREMISE-141. LIMB B is upheld in substance but corrected as to novelty: the third value is `UNKNOWN`, it has existed as a first-class state for twenty years, and the repair is to use it rather than to decorate `PASS`. The single actionable line: **change the token, keep the reason.**
   Strength: Strong on LIMB C; None on LIMB A; None on LIMB B in substance (though it is challenged as to *novelty* — the value did not need inventing).
   Key source: The Nagios/Monitoring-Plugins return-code standard, as documented across Icinga 2's Monitoring
-  Register pre-check: - PREMISE-141 (ACTIVE) — "ABSENCE OF A REPORT IS A THIRD TERMINAL STATE, NOT A VALUE OF THE OTHER TWO... Cristian's failure-semantics taxonomy separates a component that runs and produces no response from one that crashes." **This is the pre-answer and it runs FOR the item's first limb**: a third state is formally correct, and this register already says so. - PREMISE-167 (ACTIVE) — "AN ESCALATION 
+  Register pre-check: - PREMISE-141 (ACTIVE) — "ABSENCE OF A REPORT IS A THIRD TERMINAL STATE, NOT A VALUE OF THE OTHER TWO... Cristian's failure-semantics taxonomy separates a component that runs and produces no response from one that crashes." **This is the pre-answer and it runs FOR the item's first limb**: a third state is formally correct, and this register already says so. - PREMISE-167 (ACTIVE) — "AN ESCALATION
   Specific risk: `morning-system-health` was the reader the encoding was designed for, so it probably handles the qualifier. Every *other* consumer is the exposure, and they are unenumerated. Concretely: any dashboard, any aggregate "all checks green" roll-up, any human skimming a status file, and any future script will read `PASS`. That yields false-green — PREMISE-100 — at a rate proportional to the number of consumers not taught the qualifier, and PREMISE-110 says the failure inverts: the more often the sandb
   Summary: The run diagnosed the problem correctly and then made the one repair the literature warns against. That a two-valued status cannot carry "verified current but not produced by me" is right, and this register already holds it as PREMISE-141: absence of a report is a third terminal state, not a value of the other two. That a third value is the answer is also right — and it is so standard that calling it an invention is the tell. The Nagios plugin API, which is the de facto standard for exactly this problem, has carried OK / WARNING / CRITICAL / UNKNOWN for two decades, with UNKNOWN defined as "the check could not be carried out" and deliberately ordered as non-alarming but non-green. Protobuf p
   Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1314_against.md
@@ -44883,8 +44883,8 @@ RETURN-TO-14b:
   Result: CHALLENGED
   Strength: **Strong** — with the important qualification that the strength is imported from the register and from standards rather than from anything new I retrieved. On the literature alone I would rate it Moderate; PREMISE-173 and PREMISE-131 take it to Strong and they are ACTIVE.
   Key source: IEC 61511 (Functional safety — safety instrumented systems for the process industry), acceptance
-  Register pre-check: 
-  Specific risk: The self-awareness layer's entire output is speech. If naming is credited as disposition, the layer's measured effect on the estate is zero while its recorded effect is large, and nothing distinguishes the two states from inside. Concretely: MONITOR-599 alleges a construction defect in Agent 15b that, if real, discounts every CHALLENGED status in two registers — it is filed at High, with a cheap test named, and it has no owner and no date. If naming were disposition, that item is handled. It is 
+  Register pre-check:
+  Specific risk: The self-awareness layer's entire output is speech. If naming is credited as disposition, the layer's measured effect on the estate is zero while its recorded effect is large, and nothing distinguishes the two states from inside. Concretely: MONITOR-599 alleges a construction defect in Agent 15b that, if real, discounts every CHALLENGED status in two registers — it is filed at High, with a cheap test named, and it has no owner and no date. If naming were disposition, that item is handled. It is
   Summary: There is no literature on the other side. Every standard and every measured reporting system says the same thing: annunciation without an actuator is not a control, and a reporting channel with no feedback loop reaches a steady state in which reports are filed and nothing changes. The estate already holds this as three separate ACTIVE premises, minted by this pipeline, at least one of them (PREMISE-138) generalising exactly the counter that ASSUMPTION-1316's flag states about itself. The genuinely novel content of PRESUMPTION-949 is not that naming is weak — the register knows that — but that the *self-referential* form of naming has a false completeness to it: a finding that names its own r
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-949_against.md
 
@@ -44894,9 +44894,9 @@ RETURN-TO-14b:
   Result: PARTIALLY-CHALLENGED
   Strength: - Limb A, "the skip was the wrong call": **Weak**. Four ACTIVE premises and TOC support the call. I found nothing that says a review-bound system should keep producing into a saturated reviewer. 14b does not claim this limb either. - Limb B, "an empty queue is an achievement": **Strong**, and settled in-register. PREMISE-147 holds that a count is not a health signal; PREMISE-106 holds that this queue is in the unstable regime, in which an instantaneous zero is a sampling artefact rather than a state. Reading zero as an achievement is reading the least informative statistic the queue has. - Limb C, "the skipped day left no cost and no record": **Strong**. Delay-time modelling prices the cost; PREMISE-169 and PREMISE-141 establish that the record does not exist; and the skipped day and a genuinely empty day are indistinguishable in the archive by construction. The recommendation rests on Limbs B and C. Limb A is not challenged and should not be recorded as challenged.
   Key source: Delay-time maintenance modelling (Christer's delay-time concept; Wang, "An overview of the recent
-  Register pre-check: 
-  Specific risk: The exposure is the precedent, as 14b says, and it has a specific shape. Because the hunt leaves no negative record, the coverage gap is invisible by construction (PREMISE-169), which means the cost of skipping is structurally unobservable while the benefit (a queue at zero) is structurally visible. That asymmetry does not decay — it licenses the same call on every subsequent day the reviewer is behind, and the reviewer has been behind for fourteen days. The failure mode is not one missing day; 
-  Summary: The run made the right call on the reviewer ledger and the register supports it four times over. What the literature and the register jointly refute is the framing, not the decision. An empty queue is not an achievement — it is a count, and PREMISE-147 already says a count is an inverted health signal; the informative statistic is age. And the skip is not a pause, because delay-time modelling prices exactly this: skipping an inspection interval increases expected undetected-defect exposure by a computable amount, and the surveillance literature adds that a skipped interval produces no observation rather than a negative one. The estate's own PREMISE-169 states the mechanism in the register's 
+  Register pre-check:
+  Specific risk: The exposure is the precedent, as 14b says, and it has a specific shape. Because the hunt leaves no negative record, the coverage gap is invisible by construction (PREMISE-169), which means the cost of skipping is structurally unobservable while the benefit (a queue at zero) is structurally visible. That asymmetry does not decay — it licenses the same call on every subsequent day the reviewer is behind, and the reviewer has been behind for fourteen days. The failure mode is not one missing day;
+  Summary: The run made the right call on the reviewer ledger and the register supports it four times over. What the literature and the register jointly refute is the framing, not the decision. An empty queue is not an achievement — it is a count, and PREMISE-147 already says a count is an inverted health signal; the informative statistic is age. And the skip is not a pause, because delay-time modelling prices exactly this: skipping an inspection interval increases expected undetected-defect exposure by a computable amount, and the surveillance literature adds that a skipped interval produces no observation rather than a negative one. The estate's own PREMISE-169 states the mechanism in the register's
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-950_against.md
 
 RETURN-TO-14b:
@@ -44906,8 +44906,8 @@ RETURN-TO-14b:
   Strength: **Strong**.
   Key source: The administrative-silence doctrine in continental and EU administrative law — deemed refusal
   Register pre-check: - **PREMISE-133 (ACTIVE) — directly contrary.** "ABSTENTION IS A DECISION AND REQUIRES A WRITTEN DISCHARGE RULE. Declining to adopt is an action inside the decision problem with its own cost, not an exit from it, and suspension of judgement is a committal attitude requiring its own warrant." PRESUMPTION-951 is the estate acting as though abstention were a null state. PREMISE-133 says it is not, an
-  Specific risk: Four live registers carry a defect that has demonstrated it can corrupt an append. The defect is held open by a ruling that may not be coming, and the holding pattern is itself the reason no agent may repair them — so the mechanism that protects the registers from unauthorised change is the mechanism preventing their repair. Under PREMISE-102 this is not a pending state at all: repeated identical non-processing in a zero-throughput channel has already converted into an undecided standing policy 
-  Summary: Every domain that has had to formalise what silence means has refused to leave it unconstrued. Administrative law gives it a construction by statute and attaches a deadline; DLQ practice gives it a max-age and alerts on age; audit practice gives it a scheduled re-rating with a tri-state outcome. The common element is not the direction of the default but the existence of a stated threshold, and that is exactly what the estate lacks: nothing distinguishes an item awaiting a ruling from an item declined by silence, and `decisions.md` has not moved in fourteen days while nine rulings are owed. The register already holds the governing rule twice (PREMISE-133, PREMISE-154) and the second of those 
+  Specific risk: Four live registers carry a defect that has demonstrated it can corrupt an append. The defect is held open by a ruling that may not be coming, and the holding pattern is itself the reason no agent may repair them — so the mechanism that protects the registers from unauthorised change is the mechanism preventing their repair. Under PREMISE-102 this is not a pending state at all: repeated identical non-processing in a zero-throughput channel has already converted into an undecided standing policy
+  Summary: Every domain that has had to formalise what silence means has refused to leave it unconstrued. Administrative law gives it a construction by statute and attaches a deadline; DLQ practice gives it a max-age and alerts on age; audit practice gives it a scheduled re-rating with a tri-state outcome. The common element is not the direction of the default but the existence of a stated threshold, and that is exactly what the estate lacks: nothing distinguishes an item awaiting a ruling from an item declined by silence, and `decisions.md` has not moved in fourteen days while nine rulings are owed. The register already holds the governing rule twice (PREMISE-133, PREMISE-154) and the second of those
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-951_against.md
 
 RETURN-TO-14b:
@@ -44917,7 +44917,7 @@ RETURN-TO-14b:
   Strength: - Limb A, "the byte-copy is a fixed property of the task": **Strong** challenge. Refuted by documentation I read directly. `mode=ro` and snapshot-based reads both exist; neither requires copying 6 GB. PREMISE-146 independently forbids treating the requirement as a default. - Limb B, "therefore a `--no-copy` path is simply available": **Weak** challenge — and this is the limb where the honest answer runs against the critics. Whether `mode=ro` works depends entirely on whether the sandbox's mount supports POSIX advisory locking; the fallbacks that do not need locking (`immutable=1`, `nolock=1`) both carry documented corruption warnings against a live writer. So the presumption's critics do not get a free win either. - Limb C, "the question migrated to 'which host' and never migrated back to 'why a copy'": **Strong**, and it is the limb that matters. Two independent runs quoted the copying mechanism and neither asked about it, and the intake queue has carried "needs a `--no-copy` path or a retitle" unchanged for six days. The recommendation rests on Limbs A and C.
   Key source: SQLite documentation, "Uniform Resource Identifiers" (sqlite.org/uri.html), §3.3 Recognized Query
   Register pre-check: - PREMISE-146 (ACTIVE) — "A TASK SPECIFICATION'S SATISFIABILITY IS A PROPERTY TO BE ESTABLISHED, NOT A DEFAULT." Directly on point: nobody established that a 6 GB copy is required by the task. - PREMISE-115 (ACTIVE) — before an agent is called broken, check whether its specification ever instructed the behaviour; specification and design issues are the largest single category of multi-agent failur
-  Specific risk: `metabolism_data.json` is seven days cold and a downstream health check reads it as current — which is PREMISE-100's false-green and PRESUMPTION-955's cost, realised. Beyond the specific instance, the shape recurs for every future consumer of a database that outgrows the sandbox, and the databases are growing, so the failure rate is increasing. A second, quieter risk: if a `--no-copy` path is implemented as `immutable=1` because it is the obvious lock-free option, the estate trades a disk-space 
+  Specific risk: `metabolism_data.json` is seven days cold and a downstream health check reads it as current — which is PREMISE-100's false-green and PRESUMPTION-955's cost, realised. Beyond the specific instance, the shape recurs for every future consumer of a database that outgrows the sandbox, and the databases are growing, so the failure rate is increasing. A second, quieter risk: if a `--no-copy` path is implemented as `immutable=1` because it is the obvious lock-free option, the estate trades a disk-space
   Summary: The presumption is wrong in the form 14b states it — the copy is a choice in the code and SQLite documents at least two alternatives — but the naive remedy is also wrong, and I would be misreporting the source if I did not say so. `mode=ro` is the correct mechanism and involves no copy; it requires working file locking on the mount, which is precisely the invariant PREMISE-098 already requires scheduled scripts to assert. The two lock-free alternatives named in the presumption's own text — `immutable=1` and a bare WAL read — are documented by SQLite as producing incorrect results or SQLITE_CORRUPT if the file changes anyway, which against a live 6 GB database it will. The genuinely best opti
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-952_against.md
 
@@ -44927,9 +44927,9 @@ RETURN-TO-14b:
   Result: CHALLENGED
   Strength: **Strong**, and this is the item where I hold the bar highest because 14b rated it Critical and because the register's charter says a PRESUMPTION with a strong challenge leans REVISE at HIGH urgency. Limb split — and the limbs matter, because 14b's own framing is the precise one: - "Nobody reads": **No challenge, and not the claim.** The 36-card batch APPROVE on 2026-09-09 is direct positive evidence. I found nothing supporting this limb and 14b does not assert it. - "Read soon enough to matter": **Strong** challenge. Every measured analogue puts the correctly-surfaced-to-acted-upon conversion well below 1, often far below, in environments far better resourced than this one. The Cyentia figure is the cleanest: ~10% per month, capacity invariant to finding volume. - "A correctly surfaced finding is thereby on its way to being handled": **Strong** challenge, and it is the limb PREMISE-108 already refutes in the estate's own words — the state where the record shows a finding discharged and nobody holds it is *worse than not flagging*. The recommendation rests on the second and third limbs.
   Key source: Cyentia Institute / Kenna Security, "Prioritization to Prediction, Vol. 3: Winning the Remediation
-  Register pre-check: 
-  Specific risk: Every "flagged, not fixed" disposition in the estate banks on this, and that is most of them. Under PREMISE-108 the failure is not neutral: a finding recorded as flagged-and-pending is held by nobody while the record shows it discharged, which is worse than never having flagged it, because it consumes the attention budget that would have gone to an actual control. It is also the presumption that makes PRESUMPTION-949 tolerable — naming without owning is only safe if naming reaches an owner — so 
-  Summary: The challenge is strong and it is unusually well-evidenced, because "was the correctly surfaced finding acted on?" is one of the few questions in this batch that several industries have actually measured. The measured answers are consistently poor: ~10% of open vulnerabilities remediated per month with capacity invariant to volume; 6.8–62% of laboratory results not followed up; 49–96% alert override; a documented finding that electronic acknowledgement does not indicate reading or acting. All of those are from domains with staff, budget and regulatory pressure. C2A2's channel has one person, no acknowledgement signal, no follow-up schedule, and a Chat↔Cowork sync dark in both directions for 
+  Register pre-check:
+  Specific risk: Every "flagged, not fixed" disposition in the estate banks on this, and that is most of them. Under PREMISE-108 the failure is not neutral: a finding recorded as flagged-and-pending is held by nobody while the record shows it discharged, which is worse than never having flagged it, because it consumes the attention budget that would have gone to an actual control. It is also the presumption that makes PRESUMPTION-949 tolerable — naming without owning is only safe if naming reaches an owner — so
+  Summary: The challenge is strong and it is unusually well-evidenced, because "was the correctly surfaced finding acted on?" is one of the few questions in this batch that several industries have actually measured. The measured answers are consistently poor: ~10% of open vulnerabilities remediated per month with capacity invariant to volume; 6.8–62% of laboratory results not followed up; 49–96% alert override; a documented finding that electronic acknowledgement does not indicate reading or acting. All of those are from domains with staff, budget and regulatory pressure. C2A2's channel has one person, no acknowledgement signal, no follow-up schedule, and a Chat↔Cowork sync dark in both directions for
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-953_against.md
 
 RETURN-TO-14b:
@@ -44938,7 +44938,7 @@ RETURN-TO-14b:
   Result: CHALLENGED
   Strength: **Strong**.
   Key source: Greenberg, S.A. (2009), "How citation distortions create unfounded authority: analysis of a
-  Register pre-check: 
+  Register pre-check:
   Specific risk: A premise is the estate's strongest epistemic object and PREMISE-201 now carries a clause resting on a source that failed retrieval. Downstream consumers key on item type and status; the epistemic-weight table has no field for the defect, so the clause will be consumed at full premise weight by construction, not by oversight. REVISE-445 carries the same exposure with a relabelled "mid-teens to low twenties" estimate whose source, by 15b's own reading, does not publish it. And because PRESUMPTION
   Summary: The challenge is decisive and the estate wrote it itself. PREMISE-188 holds that an evidentiary qualifier travels with the claim or it does not travel, that a header-level caveat does not govern the body once quoted, and that the stripping is selective rather than careless. The measured bound is 5.4%: even a formal published retraction is acknowledged in one citation context in twenty. Against that, a caveat in a provenance field that downstream consumers are not required to read is not a control at all — PREMISE-099 already names the general form, that annotation without gating does not prevent emission, and that deferability is a property of the enforcement point rather than of the documen
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-954_against.md
@@ -44949,7 +44949,7 @@ RETURN-TO-14b:
   Result: CHALLENGED
   Strength: **Strong**. Limb split — and the split is the finding: - "Alarm precision matters and spurious firing is a real cost": **No challenge.** ISA-18.2 agrees; alarm fatigue is real and well-measured (the 49–96% override band, PREMISE-121). The run was right about this. - "Therefore the alarm's precision comes FIRST and the reader's protection SECOND": **Strong** challenge. Every standard family I searched refuses the ordering by refusing the binary. OPC's ternary quality, ISA-18.2's indication/event demotion target, and fail-safe watchdog design all provide a third channel so that neither duty is traded against the other. An ordering is only necessary if the vocabulary is impoverished, and ASSUMPTION-1314 says exactly that the vocabulary is binary — so the correct object of the finding is the vocabulary, not the priority. - "A qualifier on a PASS discharges the truthfulness duty": **Strong** challenge. PREMISE-099 holds that annotation without gating does not prevent emission, and the OPC pattern enforces at the consumer (value NULL on Bad quality) precisely because annotation was found insufficient. The same-day evidence is decisive: `Morning system health` read a seven-day-cold artefact and did not fire, which is the qualifier failing to travel exactly as PREMISE-188 predicts. The recommendation rests on the second and third limbs.
   Key source: OPC UA / OPC DA data-quality semantics — the ternary GOOD / UNCERTAIN / BAD quality code, with
-  Register pre-check: - **PREMISE-110 (ACTIVE) — the governing premise and it is verbatim.** "Detectors do not reliably degrade gracefully; they invert. A monitor whose failure presents as a nominal reading becomes MORE reassuring as the monitored condition worsens, and this is a catalogued fault class (stuck-at-nominal, one of five standard non-fail-stop sensor faults), not a novel or rare one." A PASS on a task that 
+  Register pre-check: - **PREMISE-110 (ACTIVE) — the governing premise and it is verbatim.** "Detectors do not reliably degrade gracefully; they invert. A monitor whose failure presents as a nominal reading becomes MORE reassuring as the monitored condition worsens, and this is a catalogued fault class (stuck-at-nominal, one of five standard non-fail-stop sensor faults), not a novel or rare one." A PASS on a task that
   Specific risk: The estate now has a precedent for a green status on a task that did not run, at the same moment a downstream health check is silently reading a week-old artefact — so the presumption's cost is not prospective, it is realised. The precedent generalises badly: every future task that cannot do its work but can verify that someone else's work is current has a template for reporting PASS. Because the qualifier lives in prose and the consumer keys on the status token, the qualified PASS and an unqual
   Summary: The literature does not say the telemetry run chose wrongly between two goods; it says the choice should not have been available. Industrial monitoring resolves "verified current but not produced by me" with a ternary quality vocabulary carried on the datum and orthogonal to the alarm layer, and it enforces at the consumer rather than annotating at the producer. ISA-18.2 supports the run's instinct that a no-response alarm should not fire, but its remedy is demotion to an *indication or event* — a distinct recorded object — never a report of normal. The cost of the estate's ordering is visible in the same day's record and the industry has a name for it: a Good-quality tag with a days-old tim
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-955_against.md
@@ -44960,8 +44960,8 @@ RETURN-TO-14b:
   Result: CHALLENGED
   Strength: **Strong**.
   Key source: Agency for Healthcare Research and Quality, TeamSTEPPS 3.0, "Tool: Handoff" (content last reviewed
-  Register pre-check: 
-  Specific risk: Two live defects with known one-line fixes will recur on every run until a human acts, and the estate's human-latency figure is fourteen days. One of them (PROP-2026-08-14-033, held against a retrieval target WATCH-002 retired on 09-08) will misfire on every future ingest. Compounding: under PREMISE-108 the record shows both findings discharged while nobody holds them, which is the state the premise calls worse than not flagging — so the estate's defect ledger systematically overstates how much 
+  Register pre-check:
+  Specific risk: Two live defects with known one-line fixes will recur on every run until a human acts, and the estate's human-latency figure is fourteen days. One of them (PROP-2026-08-14-033, held against a retrieval target WATCH-002 retired on 09-08) will misfire on every future ingest. Compounding: under PREMISE-108 the record shows both findings discharged while nobody holds them, which is the state the premise calls worse than not flagging — so the estate's defect ledger systematically overstates how much
   Summary: The challenge is strong and it is unusually clean, because the question C2A2 is asking has a published federal answer. AHRQ's handoff standard makes the transfer of responsibility a distinct act from the transfer of information, requires the receiver's acknowledgement before the sender may relinquish, and specifically warns against assuming an electronic recipient will read. On that standard, "`inbox/` and `approved/` are outside what this agent edits" describes a capability boundary correctly and says nothing about where the responsibility went — and the register already holds the same rule twice, as PREMISE-108 (transmission is not delivery; the flagged-and-unheld state is worse than not f
   Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-956_against.md
 
@@ -47310,3 +47310,580 @@ DISPOSITION-956:
     independence was in question. Neither device makes this footer a disinterested document. The four
     owed measurements in REVISE-459 remain owed as of this line; **REVISE-464 is the fifth cycle in which
     ownership has been recommended rather than assigned, and this run did not assign it either.**
+
+================================================================================
+RETURNS — 2026-09-14 (Agents 15a + 15b, six items, twelve searches)
+================================================================================
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-982 | Search direction: FOR (supportive)
+  Result: NO-SUPPORT-FOUND for the claim as written / SUPPORTED for the direction 14b assigned
+  Strength: None (claim as written) / Strong (assigned direction) | **POLARITY INVERTED — declared in file**
+  Key source: JCGM 200:2012 VIM3 entry 2.27, "definitional uncertainty" (VERIFIED, retrieved in full from
+    BIPM); Park et al., CMU/SEI-92-TR-20, 1992 (VERIFIED)
+  Summary: Formal metrology has a named category for exactly what the presumption denies — definitional
+    uncertainty, the irreducible floor from finite detail in a measurand's definition. Specifying the
+    operational definition bounds disagreement (Kampstra & Verhoef, 311 projects, no systematic
+    inter-counter difference) but VIM3 NOTE 2 and the many-analysts studies show it does not abolish it.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-982_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-982 | Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Yang, Chen, Eide & Regehr (2011), "Finding and Understanding Bugs in C Compilers," PLDI '11,
+    doi:10.1145/1993498.1993532 (VERIFIED) — 325 confirmed compiler bugs found on the inference that when
+    two implementations differ one must be faulty; no interesting split vote observed. Second:
+    Mahaffey et al. (2001), PURSUIT CEC review, doi:10.1186/cvm-2-4-187 (VERIFIED) — identical written MI
+    criteria, 20% disagreement (983/5005) nonetheless, traced to nameable misclassifications.
+  Specific risk: If "the quantity is under-defined" becomes the default reading of divergence, the estate
+    retires its cheapest defect detector behind a locally unfalsifiable excuse.
+  Summary: One of the item's three instances is a matter of record (15d ran 2026-09-13 03:38:22, three
+    backups 105 ms apart), a second was adjudicated by PREMISE-072 eighty-two days ago, and the third
+    overstates its divergence by including a figure PREMISE-114's exclusion clause strikes.
+  Register pre-check: **NOT CONFIRMED** — PREMISE-101, -114, -072, -117, -118 cover.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-982_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-983 | Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED — comparative limb SUPPORTED; determinative limb NO-SUPPORT-FOUND
+  Strength: Strong (comparative) / None (determinative)
+  Key source: Mehta, Torgersen, Small, Patel et al. (2022), "Effect of a Default Order vs an Alert in the
+    Electronic Health Record on Hepatitis C Virus Screening Among Hospitalized Patients," JAMA Network
+    Open 5(3):e222427 (VERIFIED in full text) — ordered 42.4% -> 80.5%, completed 38.1% -> 69.9%, adjusted
+    +31.8 pp (95% CI 29.7–33.8), P < .001.
+  Summary: The comparative claim is strongly supported (also Google's FindBugs->Tricorder sequence;
+    Kawamoto 2005 workflow integration OR 112.1), but the decisive trial confounds placement with opt-out
+    defaulting and click reduction, and Cochrane caps placement-alone at a ~4.2% median. The literature
+    endorses the bundle, not the location, and nowhere supports placement as *the* determinant.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-983_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-983 | Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: PREMISE-164 (ACTIVE, register-held, 2026-08-14) — durability "is a property of its
+    ADDRESSING, not of its medium or its prominence; 'declare it more prominently' is the WRONG REMEDY
+    SHAPE" — corroborated by Sadowski et al. (2018), CACM 61(4):58–66 (VERIFIED): Google's nightly
+    machine-readable findings database "saw little use because a bug dashboard was outside the developers'
+    usual workflow"; 16% of 3,954 warnings fixed even during a company-wide fixit. Also van der Sijs et
+    al. (2006), JAMIA 13(2):138–147 (VERIFIED) — 49–96% override, 48% of *true-positive* alerts overridden.
+  Specific risk: A schema rule relocating tests into status rows is a Weaker Action that leaves the
+    missing-runner fault in place and produces a producer-side green metric over an unchanged zero.
+  Summary: ASSUMPTION-1384's own Context line dissolves the counter-example — the agent that ran the test
+    was `Metabolism monitor weekly` reading a *metabolism* FAIL, i.e. the topical owner reading an
+    artefact its procedure already required it to read. Addressing and ownership, not placement.
+  Register pre-check: **NOT CONFIRMED** — the intake's reading of 026/086/100/141 is accurate, but
+    PREMISE-164 is covering for the negative limb and was missed; 102/107/108/119/121/123/124/135/168 bear
+    more closely; PREMISE-121 is already grounded on the alert-fatigue literature this search was assigned.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-983_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-988 | Search direction: FOR (supportive)
+  Result: SUPPORTED (assigned direction) / **REFUTED (presumption as written)** | Strength: Strong
+  Key source: Wu K, Wu E, … Ho D, Zou J (2025), "An automated framework for assessing how well LLMs cite
+    relevant medical references," Nature Communications 16:3615 (VERIFIED) — RAG models "do not suffer
+    from URL hallucination, but still fail to produce references that support all the statements in the
+    response nearly half of the time." Co-key: Baethge/Jergas (2025), Res Integr Peer Rev 10 — pooled
+    quotation error 16.9% [14.1–20.0], major 8.0% [6.4–10.0], 46 studies / 32,074 quotations, slope
+    p = 0.85 across forty years.
+  Summary: Citation integrity and claim-to-source fit are measurably separate checks, the second failing
+    at ~1 in 6 quotations overall and ~1 in 12 at major severity, in text that passed every gate. Both
+    C2A2 defects have named precedents (de Lacey's major error / Greenberg's "dead end citation" at 24%;
+    the paraphrase defect mirrors Greenberg's "citation transmutation").
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-988_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-988 | Search direction: AGAINST (disconfirmatory)
+  Result: NO-CHALLENGE-FOUND (one narrow PARTIAL) | Strength: Weak
+  Key source: Jergas, … Baethge (2025), "Systematic review and meta-analysis of quotation inaccuracy in
+    medicine," Research Integrity and Peer Review 10(1):13, doi:10.1186/s41073-025-00173-z (VERIFIED,
+    open-access full text). Cochrane MR000002.pub3 (VERIFIED) — 20% median quotation-error rate *inside*
+    journals that already check references; 3 RCTs in 32 studies; null in the relevant one.
+  Specific risk: If a Weak challenge is read as "outlier," the estate declines the 40-reference sample
+    REVISE-393 specified nineteen days ago at a cost of hours.
+  Summary: No source shows an existence-and-label citation gate catching claim error. The genuine partial
+    runs the other way: the omitted check is tractable — 89.1 F1 / 94.8 precision human agreement on
+    SciFact (Wadden et al. 2022, Table 5, VERIFIED), 88% GPT-4/medical-panel agreement (arXiv:2402.02008,
+    VERIFIED) — which locates C2A2's failure in an unenforced local gate, not a general limit.
+  Register pre-check: **NOT CONFIRMED** — PREMISE-178 (High, ACTIVE, 2026-08-18) states limb 1 almost
+    verbatim; PREMISE-132, -148(1), -172 also cover; the claim already sits open as REVISE-397 /
+    PRESUMPTION-877 (2026-08-26). Third arrival.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-988_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-989 | Search direction: FOR (supportive)
+  Result: **NO-SUPPORT-FOUND** for the claim as written / SUPPORTED for the assigned direction
+  Strength: None (claim as written) / Strong (assigned direction) | **POLARITY INVERTED — declared in file**
+  Key source: DeVito, Cunningham & Goldacre (2025), "Notifying Authors That They Have Cited a Retracted
+    Article and Future Citations of Retracted Articles: The RetractoBot Randomized Controlled Trial,"
+    10th International Congress on Peer Review and Scientific Publication (VERIFIED) — 15,921 retracted
+    articles randomised, 246,749 notification emails, **null effect** (mean citation rate -0.007;
+    95% CI -0.055 to 0.041); 80.6% of 15,667 responding authors had been unaware until notified.
+  Summary: The two randomised trials testing the claim most directly are null or negative. The mechanism
+    limb cuts against the obvious remedy: notification at the citing record failed at scale, while the one
+    strong positive — Dependabot security PRs, 65.42% merged often within a day (Alfadel et al. 2021,
+    VERIFIED) — delivers a **computed per-artefact diff rather than a notice**. The supported distinction
+    is "notice vs. patch," not "source vs. citing record."
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-989_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-989 | Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Wright, H., "Large-Scale Changes," ch. 22 of Winters, Manshreck & Wright (2020), *Software
+    Engineering at Google* (VERIFIED, read in full) — Google's break-even for building propagation tooling
+    rather than hand-editing is **500 edits**; this consumer set is **30**. Also Furman, Jensen & Murray
+    2012, Research Policy 41(2):276–290 (VERIFIED at abstract); Lu, Jin, Uzzi & Jones 2013, Sci Rep 3:3146
+    (VERIFIED); Wright et al. 2013, ClangMR, ICSM (VERIFIED in full).
+  Specific risk: Building a scheduled cross-tradition propagation mechanism for a 30-file semantic edit —
+    ~6% of the tooling threshold — consumes the remedial slot while the afternoon of work that would close
+    it stays unassigned. Symmetric risk if over-read as "no action needed": PREMISE-117's break-flag
+    obligation is unmet and thirty files stay unhedged.
+  Summary: Google states the precondition in its own voice — LSCs "really work only when the bulk of the
+    effort for them can be done by computers, not humans." A connexin hedge is a semantic judgment, so the
+    owned-corpus evidence supports the remedy for mechanical changes and is silent for this one.
+  **IN-HOUSE MEASUREMENT — the grep named on three consecutive days was run this cycle.** Under a stated
+    rule (vault/synthesis, nearest-preceding-thinker = levin, cancer/defection/coupling context window,
+    .bak excluded): **30 consumers, 0 carrying any connexin/non-monotonicity hedge, 3 rewritten
+    2026-09-14 02:00** (Day-199, Day-080, Day-079) gaining none. **All three of the item's figures
+    replicate exactly.** Two facts the item omits: the correction is `status: pending`, graded
+    **Speculative**, instructing "Ingest only after the full text is read"; and the 24-vs-30 gap is
+    **definitional, not instrumental** (PREMISE-114's exit, unexecuted).
+  Register pre-check: **NOT CONFIRMED** — PREMISE-116 and -123 state the claim as their entire Statement
+    line at High; -170(2–4) owns the extent-of-condition schema; -117 obliges the break flag. PREMISE-116
+    contains "Propagation" twice in the sentences the intake says it grepped `propagat` for.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-989_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-991 | Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Strong (limb B, the norm) / None (limb A, the claim as written)
+  Key source: Scheel, Schijen & Lakens (2021), AMPPS 4(2) (VERIFIED in full text) — positive-result rate
+    **43.66% in 71 Registered Reports vs 96.05% in 152 standard reports**, -52.39%, chi2(1)=77.96, p<.001;
+    survives removing the replication confound (-45.95%). Corroborated by Kaplan & Irvin (2015), PLoS ONE
+    10(8):e0132382 (57% positive pre-2000 vs 8% post-registration, p=0.0005).
+  Summary: Pre-specifying a defeat condition roughly halves the rate at which a programme reports itself
+    vindicated; Mayo's severity criterion and Leveson supply the mechanism, Tetlock the counterfactual —
+    absent a prior specification, disconfirming observations are reclassified as exogenous shocks, which
+    is the form the estate's channel-outage reading takes. **Two attached warnings:** pre-registration's
+    benefit is contingent on disclosure discipline the first generation largely failed (Claesen et al.
+    2021, VERIFIED: 89% with an undisclosed discrepancy, 7% clean); and **the GSN / Claims-Arguments-
+    Evidence limb of the assigned direction did not survive** — Leveson (read in full) argues it amplifies
+    confirmation bias, so the loss-condition entry must not be built as a structured assurance argument.
+  Instrument caveat, restated not resolved: snapshot frozen 2026-09-03, census 2026-07-28. A loss
+    condition stated in observables not being measured is unfalsifiable in practice. Fixing the census is
+    prior to, not parallel with, filing the condition.
+  Full results: wiki/architecture/lit_search_results/for/PRESUMPTION-991_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-991 | Search direction: AGAINST (disconfirmatory)
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate overall — Strong against the item's two load-bearing
+    clauses; Weak against pre-registration in principle; **NO-CHALLENGE-FOUND against the core presumption**
+  Key source: Solé, Ruffini, Castaldo, Tuccio, Seoane, de Domenico, Elena, Krakauer & Levin (2026),
+    "Large-Language Models as a Cognitive Virus," arXiv:2609.03344v1, 3 Sep 2026 (VERIFIED) — section III
+    verbatim: "The minimal model does not, however, determine how rapidly the transition unfolds in real
+    time."
+  Specific risk: Carrying the fourteen-day agent-stated streak forward scores the thesis on a datum
+    PREMISE-195 defines as indistinguishable between "nothing went wrong" and "detection is not working" —
+    and the same inadmissible datum can confirm the wager as easily as defeat it.
+  Summary: The rival model is an uncalibrated mean-field population model that explicitly declines to
+    predict a real-time rate and whose mechanism is social transmission a single estate does not have, so
+    it supplies no fourteen-day observable. Four ACTIVE premises (195, 194, 177, 142) independently bar an
+    agent-stated silence from counting as an observation. The supporting empirical family is weak where it
+    is loudest: the Google effect failed replication (Camerer et al. 2018, p=0.2647; p=0.4493 pooled), the
+    MIT "cognitive debt" withdrawal claim rests on n=18 in a preprint, and Gerlich 2025 carries a
+    published Correction for a duplicated results table.
+  Register pre-check: **NOT CONFIRMED** — PREMISE-078, -079, -034, -116 ACTIVE and covering; -078 and -034
+    are returned by the intake's own `falsifi` / `pre-regist` terms. The `dependence` limb stands.
+  Full results: wiki/architecture/lit_search_results/against/PRESUMPTION-991_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1369 | Search direction: FOR (supportive)
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (general proposition) / Weak (the rule as written)
+  **POLARITY INVERTED — declared in file**
+  Key source: Martínez García, L. et al. (2014), "The validity of recommendations from clinical
+    guidelines: a survival analysis," CMAJ 186(16):1211–1219 (VERIFIED) — validity of 113 recommendations
+    falls monotonically 92% (1 yr) -> 85.7% -> 81.3% -> 77.8% (4 yr); 22.1% required updating at median 4 yr.
+  Summary: Curated claims do decay with age, and a currency trigger can predict invalidity (Shekelle et
+    al. 2014, Systematic Reviews 3:13, kappa=0.74, VERIFIED) — but that validated trigger is **risk-based,
+    not time-based**, and age-replacement theory justifies a time rule only under an increasing hazard.
+    The one direct test in a machine-curated knowledge register found the opposite hazard shape (Weibull
+    kappa<1, Lindy; uniform decay 18x worse than none — arXiv:2604.26970, VERIFIED at abstract, preprint),
+    and Cochrane abandoned its fixed two-year interval for priority-based updating in 2016/2019 (SECONDARY).
+  Full results: wiki/architecture/lit_search_results/for/ASSUMPTION-1369_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1369 | Search direction: AGAINST (disconfirmatory)
+  Result: CHALLENGED | Strength: Strong
+  Key source: Jovanovic & Levy (1997), "A Look at the Rule of Three," The American Statistician
+    51(2):137–139 (VERIFIED, Table 1 read); Elwert & Winship (2014), Annu. Rev. Sociol. 40:31–53
+    (VERIFIED) on conditioning on a collider; Graves et al. (2000), IEEE TSE 26(7):653–661 (VERIFIED) —
+    older unchanged modules carry "roughly a third fewer faults."
+  Specific risk: The item's recommendation would suspend the only mechanism holding ~150 items off a lane
+    that drains 7 blocks per fortnight, on a number that is wrong.
+  Summary: **The item's decisive fact fails on the register's own record.** Five of the six went to
+    REVISE; the sixth — ASSUMPTION-071 / MONITOR-070, cycle 5, DISPOSITION-895 — was INCORPORATED as
+    PREMISE-198 on 2026-09-04 at High confidence. "None was confirmed" is false. With the count corrected
+    the result is statistically indistinguishable from the estate's own 14-day non-stale REVISE rate of
+    38/72 (Fisher exact p = 0.216).
+  **IN-HOUSE MEASUREMENT:** recounted DISPOSITION-890..895 (5 REVISE + 1 INCORPORATE); exact
+    Clopper–Pearson intervals 6/6 -> [0.541, 1.000], 5/6 -> [0.359, 0.996]; missing control arm built from
+    the same window (38 REVISE / 10 INCORPORATE / 24 MONITOR), denominator declared and labelled
+    UNCALIBRATED per PREMISE-124.
+  Register pre-check: **NOT CONFIRMED** — six ACTIVE covering premises on the inferential question, read
+    at source (PREMISE-174 clause 2 decisive: "a retraction or refutation rate is confounded with
+    SCRUTINY... measuring the auditor under the auditee's name"; also -096, -124, -135, -136, -143, -168).
+    None contains the word "stale," which is why a topic-keyword grep missed all six.
+  Full results: wiki/architecture/lit_search_results/against/ASSUMPTION-1369_against.md
+
+================================================================================
+DISPOSITIONS — 2026-09-14 (Agent 15c)
+================================================================================
+
+**CONSISTENCY-CHECK METHOD, STATED FIRST BECAUSE IT DETERMINES WHAT FOLLOWS.** Per the ASSUMPTION-1343
+correction, 15c read at source this run rather than accepting characterisations from the search reports:
+PREMISE-072, -078, -096, -101, -114, -116, -117, -123, -135, -136, -138, -164, -168, -174, -178, -194,
+-195, -198. **Six of six of tonight's intake pre-checks are NOT CONFIRMED.** 15c independently verified
+five of the six covering claims at source and verified the sixth item's decisive numeric at source. That
+finding, not any of the six items' literature, is the operative result of this cycle and is dispositioned
+separately below as DISPOSITION-963.
+
+DISPOSITION-957:
+  Date: 2026-09-14
+  Item: PRESUMPTION-982 | Item type: PRESUMPTION (unstated)
+  15a: NO-SUPPORT-FOUND as written / SUPPORTED (Strong) on the assigned direction — POLARITY INVERTED
+  15b: CHALLENGED (Strong)
+  Net assessment: The two directions do not disagree; they were pointed at opposite polarities by the
+    intake and both landed on the same place, which is that divergence is *sometimes* definitional and
+    *sometimes* error and that the discriminator is a written definition run over a frozen snapshot. That
+    is PREMISE-114's exit clause, verbatim, which 15c read at source. **Nothing in either search is new to
+    the register.** PREMISE-101, read at source, states the item's thesis in its own Statement line:
+    "absent a designated counting authority and a recorded method, independent agents will produce
+    divergent counts of the same object without either being wrong."
+  Disposition: **REVISE** (REVISE-468) | Urgency: Medium
+  Reasoning: This is an enforcement gap, not a research question. PREMISE-135 and PREMISE-138(1) bar
+    re-minting; PREMISE-114's exit has existed since it was validated and has not been executed, and
+    PREMISE-072 adjudicated the `connected` resolver eighty-two days ago with a PREMISE-118 retrospective
+    obligation still outstanding. What tips it to REVISE rather than MONITOR is 15b's in-house finding
+    that one of the three cited instances is a matter of filesystem record — 15d's run time is stamped and
+    triply backed up — so the item's own evidence set contains a case where adjudication is trivial and
+    was not attempted.
+  What is at risk: the six standing counting disputes named in PREMISE-114; the metabolism and census
+    figures; every downstream figure resting on `connected`.
+  Recommended action: run PREMISE-114's exit on `connected` — freeze the vault, write the definition
+    including collision handling, run both resolvers plus whichever third produced 65/75/82. Convergence
+    closes the item under PREMISE-114; a survivor is a bug. Then discharge PREMISE-118's retrospective
+    sweep for PREMISE-072, 82 days outstanding.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Transform: net evaluation; item reclassified
+    from research question to enforcement gap on a premise read at source · Current status: REVISION-FLAGGED
+
+DISPOSITION-958:
+  Date: 2026-09-14
+  Item: PRESUMPTION-983 | Item type: PRESUMPTION (unstated) | Intake priority: HIGH
+  15a: PARTIALLY-SUPPORTED — comparative limb Strong, determinative limb None
+  15b: CHALLENGED (Strong)
+  Net assessment: Both directions independently reject the determinative limb ("placement is what
+    determines"), and the convergence is discounted per PREMISE-111 — but what survives the discount is
+    not agreement, it is two separately-sourced structural facts. 15a's own strongest source confounds
+    placement with opt-out defaulting and click reduction, so it cannot isolate placement; and 15b's
+    dissolution of the counter-example is an in-house reading of ASSUMPTION-1384's own Context line, not a
+    literature claim at all. PREMISE-164, read at source, already holds the negative limb: durability is a
+    property of addressing, not prominence, and "declare it more prominently" is the wrong remedy shape.
+  Disposition: **REVISE on the determinative limb** (REVISE-469) **+ MONITOR on the comparative limb**
+    (MONITOR-609) | Urgency: Medium
+  Reasoning: The item was routed HIGH as "PRESUMPTION-974's Critical question with a cheap candidate
+    remedy attached." The remedy is the thing this run declines. Adopting a format rule now would spend
+    the estate's one remedial slot on a Weaker Action against a constraint the estate has itself twice
+    measured to be a missing-runner constraint. The comparative limb is genuinely open and genuinely
+    cheap, so it goes to MONITOR with a named test rather than being closed out with the determinative one.
+  What is at risk: the output format of 14a/14b (declared as a reflexive stake by the intake itself); the
+    remedial slot; PRESUMPTION-974's disposition.
+  Recommended action: before any format or schema change, run the four-way stratification — enumerate
+    every named in-house test of the last 30 days; code PLACEMENT (structured row / prose), ADDRESSING
+    (was the artefact a required read in some scheduled agent's task file), TOPIC-OWNERSHIP, COST; record
+    executed-within-48h. Report 2x2s with denominators per PREMISE-168, not percentages per PREMISE-109.
+    **15b's pre-registered prediction, recorded here so it can be wrong:** placement will not separate
+    outcomes once addressing and topic-ownership are held fixed, and cost will separate them at least as
+    strongly as placement. If placement survives, PREMISE-164 needs an amendment.
+  If MONITOR (comparative limb): what would change the disposition — the stratification above, or any
+    study measuring whether an autonomous agent executes a peer's machine-readable vs prose instruction at
+    different rates (15a's NOVELTY-FLAG: none found). Cadence: Weekly. Priority: Medium.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Transform: limb-split disposition; remedy
+    shape declined on a premise read at source · Current status: REVISION-FLAGGED (REVISE-469) +
+    MONITORING (MONITOR-609)
+
+DISPOSITION-959:
+  Date: 2026-09-14
+  Item: PRESUMPTION-988 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED (Strong) on the assigned direction — i.e. the presumption as written is REFUTED
+  15b: NO-CHALLENGE-FOUND (Weak), with one narrow PARTIAL running against its own assignment
+  Net assessment: This is the cycle's cleanest evidential picture and the register already holds it.
+    PREMISE-178, read at source, opens "AN EXISTENCE CHECK AND A LABEL CHECK DO NOT ESTABLISH THAT A CITED
+    SOURCE SUPPORTS THE..." — the item's first limb, almost verbatim, at High confidence since 2026-08-18.
+    The claim also sits open as REVISE-397 / PRESUMPTION-877. **This is its third arrival.**
+  **NUMERIC DISCREPANCY BETWEEN THE TWO SEARCHES, RECORDED RATHER THAN AVERAGED (PREMISE-101, and the
+    irony is noted).** Both directions reached the same 2025 quotation-inaccuracy meta-analysis and both
+    marked it VERIFIED, but they cite different article numbers in the same volume of Research Integrity
+    and Peer Review — 15a gives 10:1, 15b gives 10(1):13 — and give the author order differently. 15c has
+    **not** independently retrieved it. The 16.9% / 8.0% figures are therefore carried as **SECONDARY VIA
+    TWO AGENTS with an unresolved bibliographic discrepancy**, are not VERIFIED by 15c, and no disposition
+    below rests on them. Resolving the citation is a five-minute task and is named in REVISE-470.
+  Disposition: **REVISE** (REVISE-470) | Urgency: **High**
+  Reasoning: Not because the literature is strong — though it is — but because a High-confidence premise
+    has now failed to prevent the same item being routed three times, and because the one measurement that
+    would settle the in-house base rate was specified by the estate itself nineteen days ago at a cost of
+    hours and has not been run. 15b's assigned direction returned empty on the gate question but returned
+    something better against its own assignment: claim-fit checking is measurably tractable (89.1 F1 human
+    agreement on SciFact, VERIFIED), which means the failure is a gate C2A2 has not built, not a limit on
+    what gates can do. That converts the item from "is this true" to "why is it not enforced."
+  What is at risk: every cross-connection in the estate — the machinery paraphrases a tradition's claim
+    into a shared column before looking for tension, which is the exact step that failed at I-II Q.53.
+  Recommended action: (1) run REVISE-393 item (3) as specified — 40 random attributable references, two
+    independent readers on the same 40, substantiated / partial / not substantiated with major-minor
+    split and a binomial interval; the second reader also yields the capture-recapture estimate
+    PREMISE-162 requires. (2) Classify the eleven known in-house instances as pointer-correct-but-
+    (i) claim elsewhere in the work, (ii) claim absent entirely, (iii) work contradicts — this settles
+    whether the external rate transfers or whether the remedy is a cheaper citation-granularity rule.
+    (3) Resolve the Baethge/Jergas citation and record which is correct.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Transform: net evaluation; reclassified as
+    enforcement gap against PREMISE-178 on a source reading; key figure downgraded to SECONDARY VIA TWO
+    AGENTS on an internal bibliographic discrepancy · Current status: REVISION-FLAGGED
+
+DISPOSITION-960:
+  Date: 2026-09-14
+  Item: PRESUMPTION-989 | Item type: PRESUMPTION (unstated) | Intake priority: CRITICAL
+  15a: NO-SUPPORT-FOUND as written / SUPPORTED (Strong) on the assigned direction — POLARITY INVERTED
+  15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment: **The item's in-house limb was run this cycle, for the first time after being named on
+    three consecutive days, and all three of its figures replicate exactly: 30 consumers, 0 hedges, 3
+    rewritten at 2026-09-14 02:00 gaining none.** That is the single most valuable thing this cycle
+    produced and it is an in-house measurement, not a literature finding. The literature splits: the
+    general claim is disconfirmed (RetractoBot, 15,921 articles, null), but the item's *diagnosis* — that
+    what is missing is a propagation mechanism — is challenged by the owned-corpus evidence, since at
+    N=30 this sits at 6% of Google's own build-tooling-versus-hand-edit threshold and the change is a
+    semantic judgment, which is the case Google's rule explicitly excludes.
+  **Two facts the intake omitted and 15b surfaced, which change the action:** the correction is
+    `status: pending`, graded **Speculative**, and carries the instruction "Ingest only after the full
+    text is read"; and the 24-vs-30 gap is definitional rather than instrumental. A hedge asserted from a
+    pending Speculative correction would be the PRESUMPTION-988 defect committed in the act of repairing
+    PRESUMPTION-989. What PREMISE-117 obliges under an *unresolved* dispute is a **break flag**, not an
+    assertion — and that obligation is unmet on all thirty.
+  Disposition: **REVISE** (REVISE-471) | Urgency: **High**
+  Reasoning: PREMISE-116 and PREMISE-123, both read at source, state the claim as their entire Statement
+    lines at High confidence — so nothing is minted. What tips to REVISE at High urgency is not the
+    presumption but the measured state: thirty files carry an unhedged claim under an unresolved dispute,
+    three were rewritten through it in the hours before this run, and the register's own break-flag
+    premise is unenforced on every one of them. The remedy the item implies (a scheduled cross-tradition
+    propagation pass) is the wrong size by a factor of about sixteen.
+  What is at risk: thirty Levin PRS-02 consumer files; PREMISE-117's break-flag obligation; the QC
+    schedule, which is currently the mechanism rewriting *through* the claim.
+  Recommended action: **the assignment test, and it discriminates between the two live diagnoses where
+    nothing else does.** Assign the thirty-file break-flag edit to a named owner with a date. Completion
+    in one session means this was an ownership gap under PREMISE-026 and no propagation mechanism was
+    ever needed; non-completion despite assignment means the gap is structural and the item is right.
+    Flag, do not assert, pending the source correction's own promotion out of Speculative. Then run the
+    backsliding recount after one week of the QC schedule.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Transform: net evaluation; the item's in-house
+    limb executed and replicated; remedy resized; assertion downgraded to break-flag on the source
+    correction's own pending status · Current status: REVISION-FLAGGED
+
+DISPOSITION-961:
+  Date: 2026-09-14
+  Item: PRESUMPTION-991 | Item type: PRESUMPTION (unstated) | Intake priority: HIGH
+  15a: PARTIALLY-SUPPORTED — norm limb Strong, claim-as-written None
+  15b: PARTIALLY-CHALLENGED (Moderate) — Strong against the item's two load-bearing clauses,
+    NO-CHALLENGE-FOUND against the core presumption
+  Net assessment: The core presumption — that some observable could exist which C2A2 would accept as
+    defeating its wager — is not challenged by anything either direction retrieved, and the norm that
+    pre-specifying such a condition improves error-detection is strongly supported (Scheel 2021: 43.66%
+    vs 96.05%, VERIFIED in full text by 15a). But both of the item's supporting clauses fail. The rival
+    model was retrieved and read and **declines in its own words to predict a real-time rate**, so the
+    fourteen-day streak cannot instantiate its observable; and the register does hold falsifier doctrine
+    — PREMISE-078, read at source by 15c, is precisely a register-then-look premise with exhaustive
+    specification as its sufficiency condition.
+  **The finding worth more than the item: the admissibility bar is applied asymmetrically.** The
+    *dependence* reading of the fourteen-day silence was tested against PREMISE-194/195/177 and found
+    inadmissible. The *outage* reading of the same silence was never tested against anything. One datum,
+    two readings, one bar.
+  Disposition: **MONITOR on the core presumption** (MONITOR-610) **+ REVISE on the two load-bearing
+    clauses and the admissibility asymmetry** (REVISE-472) | Urgency: **High** for the asymmetry;
+    the loss condition itself is blocked on instruments
+  Reasoning: MONITOR rather than INCORPORATE on the core because the presumption is presently
+    **undischargeable rather than false** — the metabolism snapshot has been frozen since 2026-09-03 and
+    the census stale since 2026-07-28, so any threshold filed today would fire on a series nobody is
+    producing. Err toward MONITOR, per this agent's own standing instruction. REVISE on the clauses
+    because an inadmissible datum left in the record can confirm the wager as easily as defeat it, which
+    is the failure mode the item was filed to prevent.
+  **Recorded so it is not lost:** 15a's assigned direction included Goal Structuring Notation and
+    Claims-Arguments-Evidence as a candidate form for the loss-condition entry. **That limb did not
+    survive the search.** Leveson, read in full, argues structured assurance argumentation amplifies
+    confirmation bias and has no scientific evaluation behind it. The loss condition must not be built in
+    that form.
+  What would change the disposition (MONITOR): restoration of the metabolism snapshot and the census,
+    followed by one competence quantity with a denominator and a counting authority (PREMISE-101, -114),
+    and a value and duration stated **before looking**, with exclusions and analysis path pre-committed
+    per PREMISE-078. Cadence: Weekly. Priority: High.
+  Recommended action (REVISE): run the symmetry audit — it is free. Enumerate every artefact cited for
+    the outage reading and every artefact cited for the dependence reading of the fourteen-day streak and
+    mark each admissible or inadmissible under PREMISE-194/195/177. If the outage reading rests on the
+    same class of evidence it disqualifies, the estate does not lack a loss condition — it applies a
+    one-sided evidence bar, which is worse. Also: this item needs Tom regardless of what any search
+    returns (OPEN-208), and fixing the census is prior to filing the condition, not parallel with it.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Transform: limb-split disposition; rival
+    model retrieved and read; GSN/CAE form ruled out; admissibility asymmetry promoted above the item ·
+    Current status: MONITORING (MONITOR-610) + REVISION-FLAGGED (REVISE-472)
+
+DISPOSITION-962:
+  Date: 2026-09-14
+  Item: ASSUMPTION-1369 | Item type: ASSUMPTION (stated — quoted from a 15d run report)
+  15a: PARTIALLY-SUPPORTED — Moderate for the general proposition, Weak for the rule as written
+  15b: CHALLENGED (Strong)
+  Net assessment: **The item's decisive fact is false, and 15c verified the correction at source rather
+    than accepting it from the search report.** 15c read DISPOSITION-895 in `lit_search_returns.md` and
+    PREMISE-198 in `validated_premises.md`: ASSUMPTION-071 / MONITOR-070, monthly cycle 5, from the
+    2026-07-05 stale-downgraded cohort, was **INCORPORATED** on 2026-09-04 at High confidence for clauses
+    (a) and (b). The record is **5 REVISE + 1 INCORPORATE**, not 6/6, and "none was confirmed" is wrong.
+    With the count corrected, 5/6 is statistically indistinguishable from the estate's own 14-day
+    non-stale REVISE rate of 38/72 (Fisher exact p = 0.216) — the control arm 15b built, which nobody had
+    built before, and which is labelled UNCALIBRATED per PREMISE-124.
+  Disposition: **REVISE** (REVISE-473) | Urgency: **High**
+  Reasoning: This is a factual correction to a claim already standing in the record as a population-level
+    STALE-MONITOR-FLAG, and the flag is currently being used to argue against the only mechanism holding
+    ~150 items off a lane that drains 7 blocks a fortnight. The literature does not settle the underlying
+    question either way — guideline validity decays with age (Martínez García 2014, VERIFIED), but every
+    validated currency trigger in that literature is risk-based rather than time-based, and the one direct
+    test in a machine-curated register found the opposite hazard shape. **Do not mint.** PREMISE-096 and
+    PREMISE-174 are the terminators: 174 clause 2, quoted by 15b and consistent with the Statement line
+    15c read at source, holds that a refutation rate is confounded with scrutiny — it measures the auditor
+    under the auditee's name, which is exactly what a stale-cohort REVISE rate does.
+  What is at risk: the stale-downgrade rule; ~150 items' lane assignment; the credibility of 15d's
+    population-level flags, one of which now carries a verifiably wrong number.
+  Recommended action: (1) 15d to correct its own STALE-MONITOR-FLAG to 5/6 with PREMISE-198 named — this
+    is not optional, it is a correction to the record. (2) Run the vintage discriminator: cross-tabulate
+    disposition against **intake date** rather than time-since-downgrade for every item ever downgraded
+    under the rule and since re-searched. Tracking intake vintage means "the early pipeline was rough"
+    and the remedy is a one-time audit of the earliest cohort; tracking time-since-downgrade at constant
+    vintage means the rule is wrong. The predictions are opposite and the data already exist.
+    (3) Do not change the rule before (2) returns.
+  PROVENANCE: Origin 15d, extracted and routed by 14a · Chain [15d -> 14a -> 15a, 15b -> 15c] ·
+    Transform: net evaluation; the item's decisive numeric re-derived at source by 15c and found false;
+    missing control arm supplied · Current status: REVISION-FLAGGED
+
+DISPOSITION-963:
+  Date: 2026-09-14
+  Item: **the intake pre-check instrument itself** — raised by 15c from the aggregate of this cycle, not
+    routed by 14a/14b | Item type: measured in-house instrument property
+  15a: n/a (no item was queued on this) | 15b: SYSTEMIC-RISK-FLAG raised independently on five of six items
+  Net assessment: **Six of six of tonight's intake pre-checks reported "no covering premise found" when an
+    ACTIVE premise covered the item.** The cohort is a complete enumeration of the items routed on
+    2026-09-13 evening, which satisfies PREMISE-135's population requirement rather than accumulating
+    instances. Combined with the 2026-09-13 flag (three of five: 972, 974, 975), the measured rate is
+    **nine of eleven over two cycles**, and PREMISE-164's SCOPE LIMITS records a further instance on
+    08-13. 15c verified five of tonight's six covering claims at source (PREMISE-101 and -114 for 982;
+    PREMISE-178 for 988; PREMISE-116 and -123 for 989; PREMISE-078 for 991; PREMISE-164's Statement line
+    for 983) and verified the sixth item's decisive numeric at source.
+  **The sharpest single datum:** PREMISE-116 contains the word "Propagation" twice in the two sentences
+    the PRESUMPTION-989 intake states it grepped `propagat` for. The pre-check was contradicted by its own
+    stated command. Read with PREMISE-100, this is that premise's fault class applied to the pipeline's
+    own intake gate: an instrument that cannot execute in its runtime context reports as passing rather
+    than as absent.
+  Disposition: **INCORPORATE** as PREMISE-205 **+ REVISE** (REVISE-474) | Confidence: **Moderate**
+  Reasoning: Minting here is not re-minting. 15c grepped `pre-check` and `precheck` across
+    `validated_premises.md` and read the single hit: it concerns automated schema/dedup/scope gates on an
+    ingest backlog and says nothing about a self-reported register search. **No ACTIVE premise governs the
+    pre-check as an instrument.** Confidence is Moderate, not High, for a reason that must travel with the
+    premise: this finding is produced by the pipeline it indicts. Per PREMISE-096, no self-produced
+    artefact may certify itself; the 15b agents are a partially disjoint evidence source, not an
+    independent one, and 15c's own source reading is a third partial check on the same estate. The
+    remedy, however, does not depend on the rate being exactly 9/11 — it is a forcing function that makes
+    any future rate auditable at drafting time by anyone.
+  Consistency check: CONSISTENT with PREMISE-096 (no self-certification), PREMISE-100 (a check that
+    cannot execute reports as passing), PREMISE-135 (terminality by enumerating the domain — satisfied
+    here), PREMISE-138(1) (no re-minting — not triggered, nothing covers this), PREMISE-164 (whose SCOPE
+    LIMITS already records one instance of this fault), PREMISE-168 (denominator declared: 6 of 6 this
+    cycle, 9 of 11 over two). **No ACTIVE premise contradicts it.**
+  Recommended action (REVISE-474): the pre-check must record **the command run and the premise IDs it
+    returned**, not a conclusion. A negative finding then becomes auditable at drafting time. Second, and
+    this is the finding 15b named as generalisable: take the last N intake items claiming "no covering
+    premise," re-run each stated grep against `validated_premises.md`, and record the hit count. **If the
+    rate of pre-checks contradicted by their own stated command is materially above zero, every "no
+    covering premise" claim standing in the queue is uncalibrated.** That is one loop and it is
+    measurable today. Third, the deeper defect 15b diagnosed and 15c endorses: the pre-check searches the
+    register by **topic keyword** while the register indexes premises by **inference type**, so covering
+    premises are systematically invisible — six premises cover ASSUMPTION-1369 and not one contains the
+    word "stale." The remedy is a standing inference-type term list, not more topic terms.
+  PROVENANCE: Origin 15c (aggregate, this run) · Chain [15b x5 -> 15c] · Transform: aggregated five
+    independent NOT-CONFIRMED verdicts, verified five at source, enumerated the population, checked for a
+    covering premise and found none · Current status: INCORPORATED (PREMISE-205) + REVISION-FLAGGED
+    (REVISE-474)
+
+DISPOSITION-964:
+  Date: 2026-09-14
+  Item: **a fifth 15a/15b correlation channel, unnamed in PREMISE-111** — raised by a 15b run mid-search
+  Item type: measured in-house instrument property
+  Net assessment: The PRESUMPTION-988 15b run reported that the session-shared `web_fetch` cache refused
+    it a source page as "already fetched in this session" — a page an earlier 15a run in the same session
+    had retrieved. This is a channel that couples the two directions' evidence sets **and suppresses
+    retrieval**, and it is not among the four PREMISE-111 names (read channel, shared pre-training
+    corpora, shared alignment procedures, distillation). Unlike the three upstream channels, it is
+    **removable**. It also cuts the opposite way from the others: it does not make the two agents agree,
+    it silently denies the second agent a source, which degrades the AGAINST direction specifically,
+    since it ran second this cycle.
+  Disposition: **REVISE** (REVISE-475) | Urgency: Medium
+  Reasoning: Not minted. PREMISE-111 exists, is ACTIVE, is load-bearing, and per the provenance protocol's
+    versioning rule a block is appended rather than overwritten — so the correct action is to append the
+    fifth channel to PREMISE-111 and note that its removability makes it the second cheapest of the five
+    after the read channel. n=1 observation, self-reported by one agent, and 15c has not reproduced it:
+    stated as an observation to be confirmed, not as a measured property.
+  Recommended action: confirm the behaviour, then either isolate the fetch cache per sub-agent or record
+    that it is not isolated so that future runs can mark affected sources. Append to PREMISE-111 under
+    REVISE-475; do not open a new premise.
+  PROVENANCE: Origin 15b (PRESUMPTION-988 run, incidental) · Chain [15b -> 15c] · Transform: promoted from
+    an incidental note to a disposition because it bears on the pipeline's own independence claim ·
+    Current status: REVISION-FLAGGED
+
+### Run footer — 2026-09-14
+
+  Items dispositioned: 6 routed (PRESUMPTION-982, -983, -988, -989, -991; ASSUMPTION-1369) plus 2 raised
+    by 15c from the aggregate. DISPOSITION-957…964.
+  Outcomes: **1 INCORPORATE (on the pipeline's own instrument, not on any routed item) · 2 MONITOR (limbs
+    only) · 8 REVISE.**
+  Minted: **1 premise** (PREMISE-205), 2 monitors (MONITOR-609, -610), 8 revision flags (REVISE-468…475).
+  Why only one premise, and why it is not one of the six: **all six routed items were found to be
+    enforcement gaps against premises the estate already holds** — 101/114/072 (982), 164 (983), 178
+    (988), 116/123/117 (989), 078/079/034/116 (991), 096/124/135/136/143/168/174 (1369). PREMISE-135 and
+    PREMISE-138(1) bar re-minting them. The single premise minted is about the instrument that failed to
+    find them.
+  Consistency check: performed against PREMISE-072, -078, -096, -101, -114, -116, -117, -123, -135, -136,
+    -138, -164, -168, -174, -178, -194, -195, -198, **all read at source by 15c this run** rather than
+    accepted from the search reports. No contradiction found between this run's dispositions and any
+    ACTIVE premise.
+  Verification discipline: no disposition rests on a figure this run treats as VERIFIED when it is not.
+    **The 2025 quotation-inaccuracy meta-analysis is carried as SECONDARY VIA TWO AGENTS with an
+    unresolved bibliographic discrepancy** — the two directions give different article numbers in the same
+    volume — and DISPOSITION-959 is written so as not to depend on its figures. 15b's non-stale control
+    arm (38/72) is labelled UNCALIBRATED per PREMISE-124 and its Fisher p is carried as the direction of
+    an effect, not as a test. The item-level in-house measurements (30/0/3 for PRESUMPTION-989; the 5/6
+    recount for ASSUMPTION-1369) are the two findings this run treats as solid, and **15c re-derived the
+    second at source independently of the agent that reported it.**
+  **Execution deviation, declared not buried: FOURTH CONSECUTIVE CYCLE.** 15a and 15b ran in separate
+    isolated contexts with the read channel enforced and attested, but they were launched **sequentially,
+    not concurrently** — all six FOR searches completed before any AGAINST search began. The stated
+    intention this cycle was concurrent launch and it was not achieved. Consequence, and it is not
+    neutral: the AGAINST direction ran second into a warm shared fetch cache, which is the channel
+    DISPOSITION-964 flags, and the degradation falls on one direction only.
+  **What this cycle actually bought.** Two things, and neither is a literature finding. (1) The
+    PRESUMPTION-989 in-house grep, named on three consecutive days and unrun, was run: 30 consumers, 0
+    hedges, 3 rewritten through the claim at 02:00 this morning. (2) A population-level flag standing in
+    the record was found to rest on a false number, verified at source. Twelve literature searches
+    produced, between them, zero premises — because six of six items were already answered in a register
+    the intake could not search.
+  Backlog: 6 of the bare-[QUEUED] intake lane served; the lane is now empty of un-searched items. The
+    15d re-trigger lane (280 standing blocks, 7-block-per-fortnight observed drain) **was not attempted
+    and is not owned.** 15d last ran 2026-09-13. See OPEN-205.
+  Owed and still owed: REVISE-393 item (3), 19 days. PREMISE-118's retrospective sweep for PREMISE-072,
+    82 days. The four re-check dates 15c owes on PREMISE-166, -167, -168, -182. The 22 empty `Next check`
+    fields. **REVISE-464's ownership assignment is now six cycles recommended and never assigned, and
+    this run did not assign it either** — REVISE-471 recommends assignment for the thirty-file edit and is
+    the seventh instance of the same shape.
+  Reflexivity: DISPOSITION-963 mints a premise indicting the intake stage of the pipeline that produced
+    it, on evidence gathered by the search stage of the same pipeline, checked by this agent, in an estate
+    with no external arbiter. PREMISE-096 says that is not certification. It is recorded as Moderate for
+    that reason and the reader should discount it accordingly.

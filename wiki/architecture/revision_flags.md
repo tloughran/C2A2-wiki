@@ -15280,3 +15280,210 @@ REVISE-467:
 
 ---
 
+
+================================================================================
+REVISION FLAGS — 2026-09-14 (Agent 15c, DISPOSITION-957…964)
+================================================================================
+
+**READ THIS FIRST.** Eight flags are raised below and **six of them are enforcement gaps against premises
+the estate already holds.** No routed item of this cycle produced a new premise. The one premise minted
+(PREMISE-205) is about the instrument that failed to find the six. If this section is read as eight new
+problems it will be read wrongly; it is one problem with six instances and two separate instrument faults.
+
+REVISE-468:
+  Item: PRESUMPTION-982 | DISPOSITION-957 | Urgency: Medium
+  What is at risk: the six standing counting disputes named in PREMISE-114; the metabolism and census
+    figures; every downstream figure resting on `connected`.
+  Recommended action: run PREMISE-114's exit clause on `connected`. Freeze the vault; write the definition
+    explicitly including collision handling across the 419 duplicated filenames; run both resolvers and
+    whichever third method produced one of 65 / 75 / 82. Convergence closes the item under PREMISE-114; a
+    survivor is a bug and the presumption the item doubts is vindicated. Either outcome settles it and
+    neither needs an external adjudicator. **Then discharge PREMISE-118's retrospective sweep for
+    PREMISE-072 — 82 days outstanding.**
+  Why this is a flag and not a premise: PREMISE-101 states the item's thesis in its own Statement line.
+    PREMISE-135 and PREMISE-138(1) bar re-minting.
+  OWNER: **unassigned.**
+  Status: OPEN — awaiting human review.
+
+REVISE-469:
+  Item: PRESUMPTION-983, determinative limb | DISPOSITION-958 | Urgency: Medium
+  What is at risk: the output format of 14a/14b (a reflexive stake the intake declared itself); the
+    estate's single remedial slot; PRESUMPTION-974's disposition.
+  Recommended action: **do not adopt a format or schema remedy from this cluster yet.** First run the
+    four-way stratification: enumerate every named in-house test of the last 30 days and code each on
+    PLACEMENT (structured row / prose), ADDRESSING (was the artefact a required read in some scheduled
+    agent's task file), TOPIC-OWNERSHIP, and COST (runnable as written in one step / requires
+    construction); record executed-within-48h. Report the 2x2s with denominators per PREMISE-168, not
+    percentages per PREMISE-109. Cheaper second test, one pass: of the tests declined this month, how many
+    were written into an artefact any scheduled agent's task file names as a required read? Near zero
+    means addressing explains the whole pattern and placement is a spurious correlate.
+  **Pre-registered prediction, recorded so it can be wrong (15b's, adopted):** placement will not separate
+    outcomes once addressing and topic-ownership are held fixed, and cost will separate them at least as
+    strongly as placement. If placement survives, PREMISE-164 needs an amendment.
+  Why this is a flag and not a premise: PREMISE-164 holds the negative limb — durability is a property of
+    ADDRESSING, not of medium or prominence, and "declare it more prominently" is the wrong remedy shape.
+  OWNER: **unassigned.**
+  Status: OPEN — awaiting human review.
+
+REVISE-470:
+  Item: PRESUMPTION-988 | DISPOSITION-959 | Urgency: **High**
+  What is at risk: every cross-connection in the estate. The machinery paraphrases a tradition's claim
+    into a shared column before looking for tension, which is the exact step that failed at I-II Q.53.
+  Recommended action: (1) **Run REVISE-393 item (3) as already specified, nineteen days outstanding, cost
+    measured in hours**: 40 random attributable references, two independent readers on the same 40, each
+    cited record opened and scored substantiated / partial / not substantiated with the major-minor split
+    and a binomial interval. The second reader also yields the capture-recapture estimate PREMISE-162
+    requires and which no single-reader design can produce. (2) Classify the eleven known in-house
+    instances as pointer-correct-but- (i) claim present elsewhere in the cited work (granularity slip),
+    (ii) claim absent from the work entirely, (iii) the work contradicts the claim. Class (i) dominance
+    means the external rate does not transfer and the remedy is a cheap citation-granularity rule; any
+    (ii) or (iii) means a claim-fit gate is owed. (3) Resolve the bibliographic discrepancy between the
+    two search directions on the 2025 quotation-inaccuracy meta-analysis (15a: Res Integr Peer Rev 10:1;
+    15b: 10(1):13) and record which is correct — five minutes, and until then its figures are SECONDARY
+    VIA TWO AGENTS and not quotable as verified.
+  Why this is a flag and not a premise: PREMISE-178 (High, ACTIVE, 2026-08-18) states the first limb
+    almost verbatim, and the claim already stands open as REVISE-397 / PRESUMPTION-877. **Third arrival.**
+  **The finding that changes the shape of the problem:** 15b's assigned direction returned empty on the
+    gate question but returned something better against its own assignment — claim-fit checking is
+    measurably tractable (89.1 F1 / 94.8 precision human agreement on SciFact, VERIFIED). The failure is a
+    gate C2A2 has not built, not a limit on what gates can do.
+  OWNER: **unassigned.**
+  Status: OPEN — awaiting human review.
+
+REVISE-471:
+  Item: PRESUMPTION-989 | DISPOSITION-960 | Urgency: **High**
+  What is at risk: thirty Levin PRS-02 consumer files carrying an unhedged claim under an unresolved
+    dispute; PREMISE-117's break-flag obligation, unmet on every one of them; the QC schedule, which is
+    currently the mechanism rewriting *through* the claim.
+  **MEASURED STATE, not inferred.** The grep named on three consecutive days was run this cycle. Under a
+    stated rule (vault/synthesis, nearest-preceding-thinker = levin, cancer/defection/coupling context
+    window, .bak excluded): **30 consumers, 0 carrying any connexin or non-monotonicity hedge, 3 rewritten
+    at 2026-09-14 02:00 (Day-199, Day-080, Day-079) gaining none.** All three of the item's figures
+    replicate exactly.
+  Recommended action: **the assignment test, which discriminates between the two live diagnoses where
+    nothing else does.** Assign the thirty-file break-flag edit to a named owner with a date. Completion
+    in one session means this was an ownership gap under PREMISE-026 and no propagation mechanism was
+    ever needed. Non-completion despite assignment means the gap is structural and the item is right.
+    **Do not build a scheduled cross-tradition propagation pass first**: at N=30 this is ~6% of Google's
+    own 500-edit threshold for building tooling rather than hand-editing, and the change is a semantic
+    judgment, which is the case that rule explicitly excludes.
+  **Flag, do not assert.** Two facts the intake omitted: the source correction is `status: pending`,
+    graded **Speculative**, and instructs "Ingest only after the full text is read"; and the 24-vs-30 gap
+    is definitional rather than instrumental. Asserting a hedge from a pending Speculative correction
+    would be the PRESUMPTION-988 defect committed in the act of repairing PRESUMPTION-989. What
+    PREMISE-117 obliges under an unresolved dispute is a break flag, not an assertion.
+  Then: recount after one week of the QC schedule. Files still being rewritten through the claim *after*
+    a flag exists means the remedy must move up a tier.
+  Why this is a flag and not a premise: PREMISE-116 and PREMISE-123 state the claim as their entire
+    Statement lines at High confidence.
+  OWNER: **unassigned — and this is the seventh consecutive cycle in which ownership has been recommended
+    rather than assigned. REVISE-464's assignment is six cycles outstanding. This run did not assign it
+    either.**
+  Status: OPEN — awaiting human review.
+
+REVISE-472:
+  Item: PRESUMPTION-991, two load-bearing clauses + the admissibility asymmetry | DISPOSITION-961 |
+    Urgency: **High** for the asymmetry
+  What is at risk: the integrity of any future loss condition. An inadmissible datum left standing in the
+    record can confirm the wager as easily as defeat it, which is the failure mode the item was filed to
+    prevent.
+  **THE FINDING WORTH MORE THAN THE ITEM: the admissibility bar is applied asymmetrically.** The
+    *dependence* reading of the fourteen-day agent-stated streak was tested against PREMISE-194/195/177
+    and found inadmissible. The *outage* reading of the same silence was never tested against anything.
+    One datum, two readings, one bar.
+  Recommended action: **run the symmetry audit — it is free.** Enumerate every artefact cited in support
+    of the outage reading and every artefact cited in support of the dependence reading, and mark each
+    admissible or inadmissible under PREMISE-194/195/177. If the outage reading rests on the same class of
+    evidence it disqualifies, the estate does not lack a loss condition — it applies a one-sided evidence
+    bar, which is worse than lacking one. Second, the doctrine-application audit: count how many of
+    PREMISE-034, -077, -078, -079, -080 and -116 have ever been applied to a claim about C2A2's own
+    thesis rather than about its process. 15b's reading is zero.
+  Corrections to the item as filed, both verified: the rival model (arXiv:2609.03344v1, retrieved and
+    read) **declines in its own words to predict a real-time rate**, so the fourteen-day streak cannot
+    instantiate its observable; and the register does hold falsifier doctrine (PREMISE-078 read at source
+    by 15c is a register-then-look premise with exhaustive specification as its sufficiency condition).
+  **Prior dependency, and it is not parallel:** fixing the census is prior to filing any loss condition.
+    The snapshot has been frozen since 2026-09-03 and the census stale since 2026-07-28.
+  OWNER: **unassigned.** Needs Tom regardless of search outcome — OPEN-208.
+  Status: OPEN — awaiting human review.
+
+REVISE-473:
+  Item: ASSUMPTION-1369 | DISPOSITION-962 | Urgency: **High**
+  What is at risk: the stale-downgrade rule; the lane assignment of roughly 150 items; the credibility of
+    15d's population-level flags, one of which now carries a verifiably wrong number.
+  **FACTUAL CORRECTION TO A CLAIM STANDING IN THE RECORD, verified at source by 15c.** The item states
+    "all six went to REVISE — none was confirmed." The record is **five REVISE and one INCORPORATE**:
+    ASSUMPTION-071 / MONITOR-070, monthly cycle 5, DISPOSITION-895, from the 2026-07-05 stale-downgraded
+    cohort, was incorporated as PREMISE-198 on 2026-09-04 at High confidence for clauses (a) and (b).
+    15c read DISPOSITION-895 and PREMISE-198 directly rather than accepting the correction from the
+    search report.
+  Recommended action: (1) **15d to correct its own STALE-MONITOR-FLAG to 5/6 with PREMISE-198 named.**
+    This is not optional; it is a correction to the record. (2) Run the vintage discriminator before
+    changing anything: cross-tabulate disposition against **intake date** rather than time-since-downgrade
+    for every item ever downgraded under the rule and since re-searched. Tracking intake vintage means
+    "the early pipeline was rough" and the remedy is a one-time audit of the earliest cohort; tracking
+    time-since-downgrade at constant vintage means the rule is wrong. The predictions are opposite and
+    the data already exist. (3) **Do not change the rule before (2) returns.**
+  Statistical position, stated with its limits: with the count corrected, 5/6 is indistinguishable from
+    the estate's own 14-day non-stale REVISE rate of 38/72 (Fisher exact p = 0.216). That control arm was
+    built by 15b this cycle, had never been built before, and is labelled UNCALIBRATED per PREMISE-124;
+    the p-value is carried as the direction of an effect, not as a test.
+  Why this is a flag and not a premise: PREMISE-096 and PREMISE-174 are the terminators. PREMISE-174
+    clause 2 holds that a refutation rate is confounded with scrutiny — it measures the auditor under the
+    auditee's name, which is exactly what a stale-cohort REVISE rate does.
+  OWNER: **unassigned.**
+  Status: OPEN — awaiting human review.
+
+REVISE-474:
+  Item: **the intake pre-check instrument** | DISPOSITION-963 | Urgency: **High**
+  Companion to PREMISE-205, minted this run. **This is the operative finding of the cycle.**
+  What is at risk: every standing "no covering premise found" claim in the queue. All of them are
+    uncalibrated until re-run under the remedy below. Also the search budget: twelve literature searches
+    this cycle produced zero premises, because six of six items were already answered in a register the
+    intake could not search.
+  The measurement: **six of six** tonight (982: PREMISE-101/-114/-072; 983: -164; 988: -178; 989:
+    -116/-123; 991: -078/-079/-034; 1369: -174/-096/-124/-135/-136/-143/-168), **three of five** on
+    2026-09-13 (972, 974, 975), plus one recorded in PREMISE-164's SCOPE LIMITS on 08-13. **Nine of
+    eleven over two cycles**, both cohorts complete enumerations rather than samples. 15c verified five of
+    tonight's six covering claims at source.
+  The decisive datum: **PREMISE-116 contains the word "Propagation" twice in the two sentences the
+    PRESUMPTION-989 intake states it grepped `propagat` for.** The pre-check was contradicted by its own
+    stated command — which is only discoverable because the command happened to be stated.
+  Recommended action, three parts, first two cheap:
+    (1) **Schema forcing function.** The pre-check must record the command run AND the premise IDs it
+        returned, not a conclusion. A negative finding then becomes auditable at drafting time by any
+        reader, including the drafter. This was already recommended on 2026-09-13 and not adopted.
+    (2) **The calibration loop, one pass, measurable today.** Take the last N intake items claiming "no
+        covering premise," re-run each stated grep against `validated_premises.md`, record the hit count.
+        If the rate of pre-checks contradicted by their own stated command is materially above zero, every
+        standing claim in the queue is uncalibrated and the backlog's composition is unknown.
+    (3) **The structural fix.** The pre-check searches the register by TOPIC KEYWORD; the register indexes
+        premises by INFERENCE TYPE. Six ACTIVE premises cover ASSUMPTION-1369 and not one contains the
+        word "stale." More topic terms will not close this. A standing inference-type term list will.
+  Reflexive note, recorded because it limits the flag: this finding was produced by the pipeline it
+    indicts, checked by the agent that issues it, in an estate with no external arbiter. PREMISE-096 says
+    that is not certification. PREMISE-205 is filed at Moderate confidence for that reason.
+  OWNER: **unassigned**, on a flag whose second finding is that unassigned remedies are not remedies. The
+    2026-09-13 flag carried the same sentence.
+  Status: OPEN — awaiting human review.
+
+REVISE-475:
+  Item: **a fifth 15a/15b correlation channel, unnamed in PREMISE-111** | DISPOSITION-964 |
+    Urgency: Medium
+  What is at risk: the pipeline's own independence claim, and the AGAINST direction specifically.
+  Observation, n=1, self-reported by one agent and **not reproduced by 15c**: the PRESUMPTION-988 15b run
+    reported that the session-shared `web_fetch` cache refused it a source page as "already fetched in
+    this session" — a page an earlier 15a run in the same session had retrieved.
+  Why it matters and why it differs from the four PREMISE-111 names: it couples the two directions'
+    evidence sets AND suppresses retrieval, it is **removable** (unlike shared pre-training corpora,
+    shared alignment procedures and distillation), and it cuts asymmetrically — it does not make the two
+    agents agree, it silently denies the second agent a source. **This cycle the AGAINST direction ran
+    second, so the degradation fell entirely on one side.**
+  Recommended action: confirm the behaviour; then either isolate the fetch cache per sub-agent, or record
+    that it is not isolated so future runs can mark affected sources. **Append to PREMISE-111 rather than
+    opening a new premise** — the provenance protocol's versioning rule is append, never overwrite — and
+    note that removability makes this the second cheapest of the five channels after the read channel.
+  OWNER: **unassigned.**
+  Status: OPEN — awaiting human review.
+
+---

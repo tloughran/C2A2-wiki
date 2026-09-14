@@ -1274,3 +1274,31 @@ permanently broken by database growth (ASSUMPTION-1348, OPEN-197); and PREMISE-1
 narrowing, routed to Tom by name by today's lit pipeline.
 
 *(14a does not make decisions.)*
+
+---
+
+## Decision-index note - 2026-09-13 (14a evening pass)
+
+**No new DECISION id minted. DECISION-083 stands - fifth consecutive day.** Phase 0 of the daily run found
+no new decision emails; the only `[C2A2-review-decision]` thread (2026-09-09) was processed by the 09-10
+run and archived. The designer's last recorded speech act in this channel is now thirty-six days back.
+
+**Two genuine protocol changes were nevertheless made today, by an agent rather than by the designer, and
+they are recorded here without ids so that the distinction stays visible** (full text at
+ASSUMPTION-1365):
+
+1. **15a and 15b were run in separate isolated agent contexts**, with 15b's instructions authored from the
+   intake register alone and neither reading the other's directory. Still launched sequentially in
+   wall-clock - third consecutive cycle. Responds to PRESUMPTION-975 / OPEN-204, both filed 09-12.
+2. **PREMISE-111's standing discount on 15a/15b agreement was applied for the first time.** On
+   PRESUMPTION-975 the convergence between the two directions was **discarded outright** per 14b's routing
+   note, rather than counted as the pipeline's usual quality signal.
+
+Both are changes to how the estate's primary evidence-weighing mechanism works. Under the register's
+convention a DECISION id records a designer ruling arriving through the review channel, so none was minted;
+but the estate should not be able to alter its independence protocol without leaving a decision-shaped
+record. **OPEN-204 remains open and is now load-bearing on two cycles of results.**
+
+Also recorded, not minted: `C2a2 periodic monitor weekly` **withheld 76 of 89 overdue premise re-checks**
+rather than queue them into a starved lane (ASSUMPTION-1371) - "a judgment call, named, and yours to
+overturn." That is a scoping decision with the same status: real, agent-made, id-less.

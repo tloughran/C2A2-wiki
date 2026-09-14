@@ -300,6 +300,13 @@ A thirteenth, milder instance sits beside it: `pending/2026-09-12_levin_bacteria
 **Agent 16 has again opened no watch.** These are in `pending/`, Channel 1's predecessor state. The count now stands at **twelve leaked or leak-shaped cards**, one of which (PROP-2026-08-14-033) is four retrieval failures deep and holds the ledger's only OPEN slot.
 
 
+**UPDATE 2026-09-14 — the queue grew again (5 → 8) and, for the first time since 2026-09-02, a multi-card filing day added *zero* leak-shaped cards.** The three cards filed 2026-09-13 — `2026-09-13_rohr_center-and-edge-holy-ignorance.md`, `2026-09-13_rohr_faith-with-doubt-weekly-summary.md`, `2026-09-13_rohr_paul-knew-christ-within-panentheism.md` — were grepped for `verif` / `not read` / `transcript` / `retrieval` / `unverified` / `do not ingest` / `before ingest` / `content_verified`: **zero matches in all three.** They are ordinary extraction cards from published CAC daily meditations, sourced from text the agent read. Recorded because this flag has so far only ever counted instances, and a base rate is worth having: leak-shaped cards are not the norm, which is precisely why a batch APPROVE swallows them.
+
+**What has changed against the two that are leak-shaped: their cover got thicker.** `review/2026-09-13_review.html` (generated 2026-09-13 06:37) cards **all eight** pending items — PROP-2026-09-11-001, PROP-2026-09-12-001 through -004, PROP-2026-09-13-001 through -003. On 2026-09-12 the Carroll card sat 1-of-1; today it sits 1-of-8, beside the Wolfram SRI keynote card that declares *"nothing below is a finding."* FINDING-089's mechanism is not merely operative, it is operating on a queue large enough that "I did not read this one separately" is the likely reading of any en-bloc approval.
+
+**One collateral note, no action implied:** `2026-09-13_rohr_paul-knew-christ-within-panentheism.md` carries an inline cross-tradition message addressed `[→ McGilchrist agent]` (Rohr's sixteenth-century interiority/print claim against McGilchrist's own thesis on what the printed word did to attention — same cause, opposite valuation). This is a routing suggestion inside a proposal, not a `DEFERRED-HYPOTHESIS:` block, so it is **not** Channel 2 intake and Agent 16 has not treated it as such. It is noted only because Channel 2 has now been unexercised for 22 days while cross-tradition traffic is evidently happening — inside proposal bodies, where no tracker sees it. That is a smaller cousin of this flag and may bear on Tom's standing Channel 2 question.
+
+
 ---
 
 ## RESOLVED INDEX
@@ -5591,3 +5598,46 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-13.*
+
+
+## AGENT 16 RUN SUMMARY — 2026-09-14
+
+**No check was due and none was run. Two things are worth the ink: the review queue reached eight cards across three ungathered review pages with no pass in four days, and yesterday's filings were — for the first time in twelve days — clean.**
+
+**Intake (Step 2):**
+- `inbox/proposals/needs_review/`: **1 file, 0 new, 0 untracked.** `2026-04-21_carroll_singer-mindscape-351.md` — the WATCH-001 tombstone, `status: superseded`, `tracking_id: WATCH-001`, resolved 2026-05-12, `[TRACKED-16: 2026-05-05]` verified present. Nothing to tag.
+- **New disposition file for Channel 1 intake: none.** `review/archive/` stands at **19**, latest still `2026-09-10_decisions.md`. **Review-pass gap: 4 days.** `review/` root now holds **three** generated pages awaiting Tom: `2026-09-11_review.html` (1 card), `2026-09-12_review.html` (5), `2026-09-13_review.html` (**8** — it cards the entire current queue, so it supersedes the other two rather than adding to them).
+- **Channel 2 (agent-exchange deferrals): 0.** Vault-wide grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` across `*.md`, excluding `deferred/` and `agents/`, returns **zero** matches. Channel unexercised **22 days**. See the leakage-flag note on the `[→ McGilchrist agent]` message inside a Rohr proposal filed yesterday — cross-tradition traffic is occurring, but inside proposal bodies, not as deferrals.
+- **Channel 3 (human watch requests): 0 visible — channel deaf, eleventh consecutive day.** `2026-09-13_chat_summary.md` (08:52) is a failure notice: `tabs_context_mcp` "Claude in Chrome is not connected" on two attempts; the built-in browser pane refused `https://claude.ai` for want of a site grant no unattended run can give. Blind spot spans **09-03 through 09-13**. **Small correction to that file:** it directs today's session to use `2026-09-12_chat_summary.md` as "the most recent successful sync" — but 09-12 is *also* a failure notice, as is every file back to 09-03. There is no recent successful sync to fall back to. Flagged so no session treats a failure notice as context.
+
+**Condition checks (Step 3): 0 due, 0 run, 0 resolved.**
+- **WATCH-003 — not checked; not due.** Next on-cadence check remains **2026-09-15** (tomorrow); count stands at **10**. The off-cadence trigger is a decision file later than `2026-09-10_decisions.md`; `review/archive/` is unchanged at 19, so the trigger has **not** fired. Running the check a day early could only re-confirm the tenth answer.
+
+**Resolution routing (Step 3d): nothing to route.**
+
+**Stale items (Step 4): 1, unchanged.** WATCH-003, flagged 2026-08-25, 10 checks, sole occupant of ACTIVE ITEMS, still needing one line from Tom on the INTEGRITY FLAG. No counters moved. No item newly stale. Recommendation unchanged: **Escalate to Tom.**
+
+**Finding of the run — a base rate, at last.** Every prior entry in the DEFERRED-CONDITION LEAKAGE FLAG counted instances without a denominator. Yesterday supplies one: three Rohr cards filed 2026-09-13, all three grepped for the full verification-deferral vocabulary, **zero matches** — ordinary extraction from text the agent actually read. So leak-shaped cards are the exception, not the rule, which is exactly the condition under which a batch APPROVE is dangerous: the two that need individual attention are now hidden among six that do not. Full entry written into the flag above.
+
+**INGESTION-RISK FLAG: quiescent, seventh consecutive confirmation — but measured less directly than usual, and said so.** `inbox/PROCESSED_LOG.md` is unchanged at **1159** lines, mtime 2026-09-12 22:00 — **no ingest run on 09-13**, so nothing new reached the ledger and PROP-2026-08-14-033 cannot have moved. **Method caveat, per Rule 12:** `scripts/ingest_ledger.py` is **not present under the mounted `wiki/`** (only `tools/generate_review_page.py` is), so this run did **not** measure approved/ingested/OPEN — it asserts the 09-12 figures (approved=414, ingested=382, decided-zero=30, OPEN=1) from the log's own last entry. The 08-30 caveat applies unchanged. **Still no unverified Wright triplets in the wiki**; the card remains four retrieval failures deep with the ingest layer's escalating reject-or-hand-retrieve recommendation standing.
+
+**Census:** `pending/` **8** (5 → 8) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` **19**, latest `2026-09-10_decisions.md` · `review/` root **3** `*.html` (09-11: 1 card; 09-12: 5; 09-13: 8) · `PROCESSED_LOG.md` **1159** lines, unchanged. **Review-pass gap: 4 days. Ingest gap: 2 days.** Network totals unchanged — **867** PRS triplets, 108 CROSS entries, 91 distinct FINDING ids; nothing ingested since 09-12.
+
+**Agent 16 Status:** Operational. 0 checks due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: **1**. Next scheduled check: **WATCH-003, 2026-09-15 (tomorrow)**.
+
+**Open for Tom (re-ranked; item 1 has absorbed the whole queue, item 2 is inside ten days):**
+1. **One review page now carries the entire queue: `review/2026-09-13_review.html`, 8 cards.** Two of the eight are self-declared retrieval instructions — PROP-2026-09-11-001 (Carroll/Mindscape 367: transcript exists, unfetched) and the Wolfram SRI keynote (*"nothing below is a finding"*). The other six are ordinary extraction cards. An en-bloc APPROVE of this page is the twelfth and thirteenth leak; a DENY or one word on those two cards prevents both. The 09-11 and 09-12 pages are superseded by this one.
+2. **DEFERRED-CONDITION LEAKAGE ruling, deadline 2026-09-24 — 10 days.** PROP-2026-09-02-002's dated condition ("queue a retrieval check after 2026-09-24") falls due and nothing holds it. Option (b) — leave OPEN in the ledger any card whose text names a future condition — is one line, needs no new field, and the ingest step has done it voluntarily for six consecutive runs.
+3. **Decide PROP-2026-08-14-033.** Four failed retrievals; the recovered Apple Podcasts show notes at `resolved/2026-09-08_WATCH-002.md` make an informed denial possible unattended. Lead if retention is preferred: `ksbj.org/podcasts/between-beliefs`.
+4. **One-line INTEGRITY FLAG ruling closes WATCH-003** and empties ACTIVE ITEMS.
+5. **TOOLING FLAG is cleanup, not correctness** (settled 09-12): confirm every future proposal carries `proposal_id` in frontmatter so the position-based fallback never fires.
+6. **`status: pending`-in-`approved/`** on both copies of PROP-2026-08-14-033 — still untouched.
+7. **FINDING-089's upstream fix** — make a card carrying a retrieval condition un-APPROVE-able in one keystroke alongside others. Today's 8-card page is the argument.
+8. **Run-log archival** — this file is now ~650 KiB, RUN LOG ~95% of it. Splitting pre-2026-09-01 runs into `deferred/run_log_archive_2026H1.md` would leave ACTIVE ITEMS + FLAGS + RESOLVED INDEX here.
+9. **Channel 2 question**, standing since 08-23 (22 days unexercised) — and see today's note that cross-tradition messages are travelling inside proposal bodies instead.
+10. **Chat→Cowork sync broken eleven days running** — Channel 3 deaf until Chrome is reconnected or the browser pane is granted standing `claude.ai` access. Note there is no successful sync to fall back to, contrary to what the 09-13 notice says.
+11. **needs_review tombstone deletion** (sandbox cannot delete in the workspace).
+
+---
+
+*Run completed 2026-09-14.*

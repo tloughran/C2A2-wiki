@@ -21125,7 +21125,7 @@ serve it.
 [PRESUMPTION] PRESUMPTION-956
   Status: [QUEUED] [SEARCHED-15a: 2026-09-11 — NO-SUPPORT-FOUND. (Weak on Limb A (write-scope limits are legitimate) — and Limb A was never in dispute; None on Limb B (declining discharges the finding). The escalation sources are institutional procedure documents, not research; none of the six was read as full text. The MAST figures (system design 41.77%, inter-agent misalignment 36.94%, task verification 21.30%) are an independent re-encounter of the same source PREMISE-115 already holds, i.e. a corroboration of the register's citation rather than a new datum, and 15a says so.)] [SEARCHED-15b: 2026-09-11 — CHALLENGED. (**Strong.** Its primary source — AHRQ TeamSTEPPS 3.0 "Tool: Handoff" — is **VERIFIED, page retrieved and read in full**, and states the rule directly: a handoff transfers information "along with authority and responsibility"; "you are accountable until the other party is aware of the transfer of responsibility"; "until it is acknowledged that the handoff is understood and accepted, you cannot relinquish your responsibility… particularly crucial for handoffs that occur electronically"; and you "cannot assume that the person obtaining responsibility will read or understand the communication without confirmation.")] [DISPOSITIONED-15c: 2026-09-11 — REVISE — **the corrective is adopted, not the presumption.** The corrective is PREMISE-163 (name a successor owner) plus PREMISE-108 (writing it down is not delivery); both ACTIVE, neither re-minted. Write scopes are NOT widened.; DISPOSITION-947]
   Provenance: Origin=14b; Chain=[14b → 15a, 15b → 15c]; Item type=PRESUMPTION (unstated — surfaced by inference)
-  Register pre-check: **PREMISE-163 (ACTIVE, read in full)** — production-completion is not lifecycle-completion; a producer may be retired only through a HANDOVER GATE THAT NAMES A SUCCESSOR OWNER, and its Applicable-to field **already names "the deferred/ and inbox/ lanes"**, which is precisely the scope at issue. That matters for the disposition: 15b proposes scope-extending 163 from producer-retirement to scope-boundary transfer, but 163 already reaches the lane, so this is enforcement rather than extension and no mint is warranted. **PREMISE-108 (ACTIVE, read in full)** — transmission is not delivery; writing 
+  Register pre-check: **PREMISE-163 (ACTIVE, read in full)** — production-completion is not lifecycle-completion; a producer may be retired only through a HANDOVER GATE THAT NAMES A SUCCESSOR OWNER, and its Applicable-to field **already names "the deferred/ and inbox/ lanes"**, which is precisely the scope at issue. That matters for the disposition: 15b proposes scope-extending 163 from producer-retirement to scope-boundary transfer, but 163 already reaches the lane, so this is enforcement rather than extension and no mint is warranted. **PREMISE-108 (ACTIVE, read in full)** — transmission is not delivery; writing
 
 *Run completed 2026-09-11 ~02:30 EDT. Registers snapshotted as `*.bak.20260911-pre-15pipeline`.*
 
@@ -21659,3 +21659,215 @@ reads current and is not.
 interval: **7 blocks.** At that rate this lane clears in roughly 80 weeks. 15d is adding to a queue it
 can measure is not being served, because its definition forbids dropping items; **the remedy is a
 routing or staffing decision that only Tom can make, and it is escalated, not assumed.**
+
+================================================================================
+INTAKE — 2026-09-13 evening (Agents 14a + 14b)
+================================================================================
+
+**Yield vs routing, stated up front.** Thirty-seven assumptions (1357–1393) and thirteen presumptions
+(981–993) were produced tonight. **Six are routed below; forty-four are held in-house with named tests.**
+That ratio is itself the subject of one of the routed items.
+
+**Pre-check discipline, per the correction owed since 09-11.** Each item below names the premises it was
+checked against **and** declares whether that check was a grep or a reading. Tonight's cycle returned
+REVISE-464 against this register's own PRESUMPTION-974 on the ground that **PREMISE-026 already answered
+it** and the 09-12 intake routed it anyway — the second such finding in three days (ASSUMPTION-1343, 1362).
+Accordingly, **two candidate items were withdrawn before routing** on finding covering premises at source:
+a candidate on unowned-queue remediation (covered by PREMISE-026, read at source, not grepped) and a
+candidate on green-status-without-timestamp (covered by PREMISE-086/100/141, read at source).
+
+--------------------------------------------------------------------------------
+
+ITEM: PRESUMPTION-982 — is a numeric disagreement an error or an under-definition?
+  Claim: [inferred] that when two runs report different numbers for the same quantity, one is wrong —
+    rather than the quantity being operationally undefined. Tonight: three figures for `connected` in one
+    vault on one day (65 / 75 / 82), with a mechanism found by a third run that makes **both** plausible
+    (wikilink stems collide across 419 duplicated filenames); four figures for the literature queue
+    (163/151/137/371); and two runs asserting contradictory tenses about whether 15d had run.
+  Direction wanted: 15a — construct validity and operational definition in software/organisational
+    metrics; evidence that specifying the operational definition resolves inter-instrument disagreement.
+    15b — evidence that adjudicating between divergent metrics (picking a winner) is the right move, and
+    literature on when disagreement *does* indicate simple error.
+  Pre-check: grepped the premise register for `metric`, `definition`, `divergence`, `count`, `census` —
+    **no covering premise found** (grep, not reading; the register is 700 KB and the terms are generic,
+    so this pre-check is weaker than PRESUMPTION-989's below and is declared as such).
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — NO-SUPPORT-FOUND as written (None) / SUPPORTED
+    (Strong) on the assigned direction; POLARITY INVERTED] [SEARCHED-15b: 2026-09-14 — CHALLENGED (Strong);
+    register pre-check NOT CONFIRMED: PREMISE-101, -114, -072, -117, -118 cover]
+    [DISPOSITIONED-15c: 2026-09-14 — REVISE (REVISE-468), Medium; enforcement gap, run PREMISE-114's exit]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-982
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from two cross-run collisions visible only to an end-of-day pass over the whole estate.
+    Current status: [QUEUED]
+
+ITEM: PRESUMPTION-983 — does the *placement* of an in-house test determine whether it is run?
+  Claim: [inferred] that a named in-house test's location — inside a machine-readable failing row versus
+    in prose beneath a headline — is what determines whether any agent ever runs it. Tonight's
+    counter-example to PRESUMPTION-974: the scheduler check wrote a one-line SQL test **into its own FAIL
+    row**; six hours later a different agent found it there, ran it, and collapsed two standing FAILs into
+    one cause, clearing a six-day ambiguity (ASSUMPTION-1384). Every test declined this month was written
+    in prose.
+  Direction wanted: 15a — actionable-alert and checklist-placement literature; evidence that machine-
+    readable, co-located remediation raises execution rates. 15b — automation bias, alarm fatigue, and
+    evidence that placement is *not* the operative variable (that ownership or capacity dominates).
+  Pre-check: **read at source** — PREMISE-026 (unowned-queue remediation requires owner assignment,
+    validated 2026-05-18, High) and PREMISE-086/100/141 (a green line must carry the timestamp of its
+    evidence). **These bear adjacently and do not cover this claim**: 026 is about ownership, 086/100/141
+    about status-field honesty; neither addresses the placement of a *test*. Routed on that reading, not
+    on a grep.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — PARTIALLY-SUPPORTED: comparative limb Strong, determinative
+    limb None] [SEARCHED-15b: 2026-09-14 — CHALLENGED (Strong); register pre-check NOT CONFIRMED:
+    PREMISE-164 covering, missed] [DISPOSITIONED-15c: 2026-09-14 — REVISE on determinative limb
+    (REVISE-469) + MONITOR on comparative limb (MONITOR-609), Medium; format remedy declined pending the
+    four-way stratification]
+  Priority: **HIGH** — this is PRESUMPTION-974's Critical question with a cheap candidate remedy attached.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-983
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a single counter-example, by asking what distinguished it. **Reflexive stake
+        declared:** if this holds, the format of 14a/14b's own output is the fault and the fix is free.
+    Current status: [QUEUED]
+
+ITEM: PRESUMPTION-988 — does verifying a citation verify the claim?
+  Claim: [inferred] that citation-integrity checking is a check on the claim. Two defects today passed
+    every gate with every citation correct: a limb attached to an article that does not contain the claim
+    (I-II Q.53), and a file whose own correctly-graded High anchors defeat its reading — concealed by a
+    **charitable gradient paraphrase** standing where a categorical claim belonged, which left the
+    supersession criterion nothing to supersede.
+  Direction wanted: 15a — measured rates of quotation/attribution error that survive citation checking;
+    evidence that claim-to-source fit requires a separate check. 15b — evidence that structural citation
+    gates do catch claim error, i.e. that this is an outlier rather than a base rate.
+  Pre-check: grepped for `citation`, `attribution`, `paraphrase`, `anchor`, `gate` — **no covering premise
+    found** (grep). **C2A2 exposure stated explicitly:** the cross-connection machinery paraphrases a
+    tradition's claim into a shared column before looking for tension, which is the exact step that failed.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — SUPPORTED (Strong) on the assigned direction, i.e. the
+    presumption as written is REFUTED] [SEARCHED-15b: 2026-09-14 — NO-CHALLENGE-FOUND (Weak), one narrow
+    PARTIAL against its own assignment; register pre-check NOT CONFIRMED: PREMISE-178 states limb 1 almost
+    verbatim; third arrival of the claim] [DISPOSITIONED-15c: 2026-09-14 — REVISE (REVISE-470), HIGH;
+    enforcement gap against PREMISE-178; run REVISE-393 item (3)]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-988
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two cross-project defects with a common structure, then transferred to C2A2's own
+        gates — a transfer neither originating run made, since neither was working in this wiki.
+    Current status: [QUEUED]
+
+ITEM: PRESUMPTION-989 — does a correction written into prose propagate?
+  Claim: [inferred] that recording a correction is sufficient for it to reach the files that carry the
+    corrected claim. Third consecutive day: the connexin result's consumer set is **30, not 24**; **zero**
+    carry a hedge; **three were rewritten today without gaining one**; a separate known violation was
+    "rewritten *through*" by a pass that added ~1,300 words. A second project's agent independently asked
+    for "a scheduled cross-tradition pass, not a local edit."
+  Direction wanted: 15a — retraction/erratum propagation rates in citing works; correction half-life;
+    mechanisms that succeed (flagging at the citing record vs at the source). 15b — evidence that prose
+    notice suffices, or that measured non-propagation is confined to contexts unlike this one.
+  Pre-check: **read at source** — searched the premise register for `correction`, `retraction`,
+    `propagat`, `blast radius`, `erratum` and opened the three nearest hits; **no covering premise**.
+    OPEN-201 is the estate's own open question on this and is not a premise.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — NO-SUPPORT-FOUND as written (None) / SUPPORTED (Strong) on
+    the assigned direction; RetractoBot RCT null; POLARITY INVERTED] [SEARCHED-15b: 2026-09-14 —
+    PARTIALLY-CHALLENGED (Moderate); **the in-house grep was RUN: 30 consumers, 0 hedges, 3 rewritten
+    02:00 — all three figures replicate**; register pre-check NOT CONFIRMED: PREMISE-116, -123 state the
+    claim at High] [DISPOSITIONED-15c: 2026-09-14 — REVISE (REVISE-471), HIGH; assign the thirty-file
+    break flag to a named owner; flag, do not assert]
+  Priority: **CRITICAL** — the only defect shape this week that is actively adding words to files known to
+    carry a contradicted claim. The in-house limb is one grep and has now been named on three consecutive
+    days without being run, which is PRESUMPTION-983's point in a single instance.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-989
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three days of the same shape, escalating, across two projects and four runs.
+    Current status: [QUEUED]
+
+ITEM: PRESUMPTION-991 — does C2A2 have a loss condition?
+  Claim: [inferred] that there exists some observable which, if seen, the project would accept as evidence
+    against its own wager. The Solé/Krakauer/Levin *Cognitive Virus* model predicts persistent dependence
+    with abrupt competence loss under heavy AI mediation; C2A2 wagers the opposite about the same
+    apparatus. An agent asked the project to pre-register its loss condition "while it costs nothing." The
+    registers are exhaustively instrumented for process failure and hold **no entry for thesis failure** —
+    and the fourteen-day agent-stated streak the estate reports as a channel outage is, on its face, a
+    candidate instance of the rival prediction's observable.
+  Direction wanted: 15a — pre-registration and severe-testing practice; evidence that specifying defeat
+    conditions in advance improves a programme's error-detection. 15b — cognitive offloading, automation
+    complacency, and skill-decay literature bearing on the dependence reading itself; also the case that
+    pre-registration is inappropriate for a design programme of this kind.
+  Pre-check: grepped for `falsifi`, `loss condition`, `pre-regist`, `defeat`, `dependence` — **no covering
+    premise found** (grep). **Instrument caveat, stated:** the measurements the claim relies on are not
+    currently being taken — the metabolism snapshot has been frozen since 2026-09-03 and the last
+    successful census was 2026-07-28 (ASSUMPTION-1385).
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — PARTIALLY-SUPPORTED: norm limb Strong (Scheel 2021), claim as
+    written None; GSN/CAE form ruled out by Leveson] [SEARCHED-15b: 2026-09-14 — PARTIALLY-CHALLENGED
+    (Moderate); Strong against both load-bearing clauses, NO-CHALLENGE-FOUND against the core presumption;
+    register pre-check NOT CONFIRMED: PREMISE-078, -079, -034, -116 cover]
+    [DISPOSITIONED-15c: 2026-09-14 — MONITOR on the core (MONITOR-610) + REVISE on the clauses and the
+    admissibility asymmetry (REVISE-472), HIGH; undischargeable until the census is restored]
+  Priority: **HIGH** — the only routed item tonight about what C2A2 claims rather than how it runs.
+    Also OPEN-208, which needs Tom regardless of what the search returns.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-991
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from an agent's request for a pre-registration, by asking what the request presumes
+        rather than whether to grant it. Surfaced against the project's interest and this register's own.
+    Current status: [QUEUED]
+
+ITEM: ASSUMPTION-1369 — does staleness track truth, or only cadence?
+  Claim: "7 blocks drained in 14 days. Six were from the 07-05 stale-downgraded cohort, and **all six went
+    to REVISE — none was confirmed.** That's an argument against the stale-downgrade rule as written:
+    staleness measured cadence, not truth." Raised by 15d as a second population-level
+    STALE-MONITOR-FLAG.
+  Direction wanted: 15a — evidence that time-since-validation predicts claim invalidity in curated
+    registers (i.e. the rule is sound). 15b — evidence that the 6/6 result is a selection artefact of a
+    rule that simply picks old items, and that staleness is uninformative about correctness.
+  Pre-check: grepped for `stale`, `re_check`, `cadence`, `downgrade` — **PREMISE-051 and the 15d cadence
+    premises govern *scheduling* re-checks, not the inferential weight of staleness**; no covering premise
+    on the inferential question (grep plus one reading of PREMISE-051). n=6; the originating run said so.
+  Status: [QUEUED] [SEARCHED-15a: 2026-09-14 — PARTIALLY-SUPPORTED (Moderate general / Weak for the rule as
+    written); validated currency triggers are risk-based, not time-based; POLARITY INVERTED]
+    [SEARCHED-15b: 2026-09-14 — CHALLENGED (Strong); **the item's decisive fact is false — 5 REVISE + 1
+    INCORPORATE (PREMISE-198), not 6/6**; register pre-check NOT CONFIRMED: six covering premises, none
+    containing the word 'stale'] [DISPOSITIONED-15c: 2026-09-14 — REVISE (REVISE-473), HIGH; 15d to
+    correct its own flag; run the vintage discriminator before changing the rule]
+  PROVENANCE:
+    Origin: 15d, extracted and routed by 14a
+    Chain: [15d → 14a]
+    Original item: ASSUMPTION-1369
+    Item type: ASSUMPTION (stated — quoted from an agent run report)
+    Transform at each step:
+      14a: Extracted verbatim from the 15d weekly run and routed. The gloss ("cadence, not truth") is the
+        run's own and is not endorsed by this register.
+    Current status: [QUEUED]
+
+--------------------------------------------------------------------------------
+**HELD IN-HOUSE, DECLARED.** Fifty items were produced tonight; **six routed above, forty-four held**:
+ASSUMPTION-1357–1368 and 1370–1393 (thirty-six items, all settleable by opening a file, reading a field, or
+running a stated command), and PRESUMPTION-981, 984, 985, 986, 987, 990, 992, 993 (eight). **Every one
+names a test.** All eight held presumptions name a command that could be run tonight; per PRESUMPTION-983,
+they are named here, in prose, at the bottom of a 2 MB register — which is precisely the placement that
+item predicts will keep them unrun. **The two cheapest and highest-value, stated as commands rather than
+recommendations:**
+
+  (i)  `grep -L` for a connexin hedge across the 30 Levin PRS-02 consumers. Closes PRESUMPTION-989's
+       in-house limb. Named on three consecutive days; not yet run.
+  (ii) List every scheduled task with no self-dating `ARTIFACTS` row in `check_scheduler_health.py`.
+       Closes PRESUMPTION-984 / OPEN-209. The fix for one known instance was recommended 2026-08-09.
+
+**Lane arithmetic.** Tonight adds **6** items to a queue the 15d run measured at **280 standing unconsumed
+blocks** against an observed drain of **7 blocks per fortnight**. The intake lane is served in days; the
+re-trigger lane is not served at all. This addition is made with that on the record, per the same
+declaration 15d filed earlier today.

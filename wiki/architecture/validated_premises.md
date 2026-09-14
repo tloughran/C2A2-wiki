@@ -7579,3 +7579,46 @@ report; one of the five (141) was checked twice because a cross-reference elsewh
 different date (2026-11-13) and does not govern. 15d has not run since 2026-08-02.
 **This register is currently enforcing premises it has not re-checked.** Stated here rather than in a
 disposition file so it travels with the register (PREMISE-188).
+
+PREMISE-205:
+  Date validated: 2026-09-14
+  Source item: raised by 15c from the aggregate of the 2026-09-14 cycle (DISPOSITION-963); not routed by
+    14a/14b, because the instrument that would have routed it is the instrument in question
+  Statement: A SELF-REPORTED REGISTER PRE-CHECK THAT PUBLISHES A CONCLUSION RATHER THAN ITS COMMAND AND
+    ITS RETURN IS NOT A CHECK — IT IS AN ASSERTION OF ABSENCE, AND IT FAILS SILENTLY. Three clauses.
+    (1) THE MEASURED RATE. Over two consecutive cycles, nine of eleven intake pre-checks reported "no
+    covering premise found" when an ACTIVE premise covered the item — six of six on 2026-09-14 (982:
+    PREMISE-101, -114, -072; 983: -164; 988: -178; 989: -116, -123; 991: -078, -079, -034; 1369: -174,
+    -096, -124, -135, -136, -143, -168) and three of five on 2026-09-13 (972, 974, 975), with a further
+    instance recorded in PREMISE-164's SCOPE LIMITS on 08-13. The denominator is stated because the
+    cohorts are complete enumerations of what was routed on those dates, not a sample (PREMISE-168,
+    PREMISE-135(a)). (2) THE FAULT IS IN THE INSTRUMENT, NOT THE OPERATOR, AND IT IS OF PREMISE-100's
+    CLASS: a check that cannot execute in its runtime context reports as passing rather than as absent.
+    The decisive datum is that PREMISE-116 contains the word "Propagation" twice in the two sentences the
+    PRESUMPTION-989 intake states it grepped `propagat` for — the pre-check was contradicted by its own
+    stated command, which is only discoverable because the command was stated. (3) THE DEEPER MISMATCH,
+    which is why more topic terms will not fix it: the pre-check searches the register by TOPIC KEYWORD
+    while the register indexes premises by INFERENCE TYPE. Six ACTIVE premises cover ASSUMPTION-1369 and
+    not one contains the word "stale." THEREFORE: a pre-check must record the command run and the premise
+    IDs returned, so that a negative finding is auditable at drafting time by any reader including the
+    drafter; and a standing inference-type term list is required alongside topic terms.
+  Item type: measured in-house instrument property (not an ASSUMPTION or PRESUMPTION — no designer stated
+    or presumed it; it was measured)
+  Supporting evidence: In-house measurement, 9/11 over two cycles, five of the six 2026-09-14 covering
+    claims verified at source by 15c (PREMISE-101, -114, -178, -116, -123, -078, and -164's Statement
+    line) rather than accepted from the search reports. Externally grounded in PREMISE-100's fault class
+    (a check that cannot execute reports as passing) and in the RCA-square Action Hierarchy's ranking of
+    self-report and procedure in the Weaker Actions tier.
+  Challenges noted: **This premise is produced by the pipeline it indicts, and PREMISE-096 says no
+    self-produced artefact may certify itself.** The 15b agents are a partially disjoint evidence source,
+    not an independent one; 15c's source reading is a third partial check inside the same estate. No
+    external arbiter exists. The remedy in clause (3) does not depend on the rate being exactly 9/11 —
+    it is a forcing function that makes any future rate auditable — but the rate itself should be read as
+    an estate-internal measurement.
+  Confidence: Moderate
+  Applicable to: Agents 14a and 14b (intake schema); Agents 15a, 15b and 15c (every item received
+    carrying a pre-check claim); `for_lit_search.md`; every standing "no covering premise found" claim
+    in the queue, all of which are uncalibrated until re-run under clause (3).
+  Re-check due: 2026-10-14 (Monthly — the rate is expected to move quickly once the schema changes, and
+    a premise about an instrument should be re-checked as soon as the instrument is altered)
+  Status: ACTIVE

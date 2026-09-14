@@ -23964,3 +23964,57 @@ drain 7 blocks in 14 days.** **5 escalations: MONITOR-420 unactioned for a 9th r
 a 16th; starvation met again; the 09-08 auto-escalate FIRED with its test unrun as predicted; and a new
 one — the monthly lane has no catch-up rule and 89 premises are past re-check.** Queue state current as
 of 2026-09-13.
+
+================================================================================
+INTAKE — 2026-09-14 (Agent 15c, DISPOSITION-958 and -961)
+================================================================================
+
+MONITOR-609:
+  Date queued: 2026-09-14
+  Source item: PRESUMPTION-983 (comparative limb only) | DISPOSITION-958
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement under monitoring: that machine-readable, co-located remediation is executed at a higher rate
+    than the same remediation written in prose. **The determinative limb — that placement is what
+    DETERMINES execution — is not under monitoring; it went to REVISE-469.**
+  Why MONITOR rather than closed with the determinative limb: the comparative limb is supported in the
+    human literature (Mehta 2022, VERIFIED, +31.8 pp) but every strong source confounds placement with
+    opt-out defaulting and click reduction, and 15a's NOVELTY-FLAG stands: no study measures whether an
+    autonomous AGENT executes a peer's machine-readable versus prose instruction at different rates,
+    which is the readership C2A2 actually has.
+  What would change the disposition: the four-way stratification named in REVISE-469 (PLACEMENT /
+    ADDRESSING / TOPIC-OWNERSHIP / COST against executed-within-48h), reported with denominators per
+    PREMISE-168. If placement separates outcomes with addressing and topic-ownership held fixed, this
+    moves toward INCORPORATE and PREMISE-164 needs an amendment. If it does not, this closes as covered
+    by PREMISE-164 and the remedy shape moves to addressing.
+  Monitoring cadence: Weekly | Priority: Medium
+  Next check: 2026-09-21
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: MONITORING
+
+MONITOR-610:
+  Date queued: 2026-09-14
+  Source item: PRESUMPTION-991 (core presumption only) | DISPOSITION-961
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Statement under monitoring: that there exists some observable which, if seen, C2A2 would accept as
+    evidence against its own wager. **The item's two load-bearing clauses — that the fourteen-day streak
+    is a candidate instance of the rival prediction's observable, and that the register holds no falsifier
+    doctrine — both failed and went to REVISE-472.**
+  Why MONITOR rather than REVISE or INCORPORATE: nothing either direction retrieved argues the core
+    presumption is false, and the norm behind it is strongly supported (Scheel 2021, VERIFIED: positive-
+    result rate 43.66% under pre-registration vs 96.05% without). But the presumption is presently
+    **undischargeable rather than false**: the metabolism snapshot has been frozen since 2026-09-03 and
+    the census stale since 2026-07-28, so a threshold filed today would fire on a series nobody is
+    producing. 15a's NOVELTY-FLAG also stands and is High-priority: no literature exists on a programme
+    pre-registering a defeat condition for a thesis about its own operation where it is also the
+    measuring instrument.
+  What would change the disposition: (1) restoration of the metabolism snapshot and the census; then
+    (2) one competence quantity with a denominator and a counting authority (PREMISE-101, PREMISE-114);
+    then (3) a value and a duration stated BEFORE looking, with exclusions and analysis path pre-committed
+    per PREMISE-078. **The success criterion is not that the wager survives — it is that a dated threshold
+    exists over a series that is actually being produced.**
+  **Recorded so it does not have to be re-derived:** the loss-condition entry must NOT be built as a Goal
+    Structuring Notation / Claims-Arguments-Evidence assurance argument. Leveson (read in full by 15a)
+    argues that form amplifies confirmation bias and has no scientific evaluation behind it.
+  Monitoring cadence: Weekly | Priority: High
+  Next check: 2026-09-21
+  Note: this item needs Tom regardless of what any search returns (OPEN-208).
+  PROVENANCE: Origin 14b · Chain [14b -> 15a, 15b -> 15c] · Current status: MONITORING

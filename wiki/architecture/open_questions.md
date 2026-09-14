@@ -2652,3 +2652,103 @@ OPEN-204:
     Original item: OPEN-204
     Item type: OPEN QUESTION (raised from a presumption surfaced the same run)
     Current status: OPEN
+
+OPEN-205:
+  Date raised: 2026-09-13
+  Question: How many items are actually in the literature queue, and what is the parsing rule that
+    settles it?
+  Why it matters: four measurements, four figures - 163 (09-04), 151 (09-12), **137** block-parsed and
+    **371** line-scanned (09-13, of which 143 are prose commentary). ASSUMPTION-1344's discrepancy is now
+    two cycles old and widening. The figure governs whether the 15d re-trigger lane (132 unserved, oldest
+    70 days) is a backlog or an artefact, and REVISE-464's capacity argument is priced against it.
+  Status: OPEN - **raised by the lit-search pipeline itself**, recorded here by 14a. The run declined to
+    re-derive the earlier figures and said so; nobody owns that re-derivation.
+  Provenance:
+    Origin: 15-pipeline, recorded by 14a
+    Chain: [15c -> 14a]
+    Original item: OPEN-205
+    Item type: OPEN QUESTION (raised by a pipeline run; indexed by 14a)
+    Current status: OPEN
+
+OPEN-206:
+  Date raised: 2026-09-13
+  Question: Which census of the wiki is authoritative, and what counts as one page?
+  Why it matters: **three figures for `connected` in one vault on one day - 65 (bootstrap resolver), 75
+    (the CSV the resolver compared against), 82 (the weekly sewing agent's own run)**. The audit called the
+    65/75 gap "genuinely new and unexplained"; the weekly agent, hours apart and unable to see the audit,
+    supplied a candidate mechanism it did not know was wanted - **wikilinks resolve by filename stem, and
+    419 stems have more than one file (489 duplicates)**, which is why 12 pages left the orphan set for 10
+    sewn (ASSUMPTION-1374, 1375). So the live possibility is not that one census is wrong but that
+    **"a page" is undefined and both are right**. Every connectivity figure the estate has recorded - and
+    the Stage-1 determination that rests on them - inherits the ambiguity.
+  Status: OPEN - requires a definition, then one re-derivation. The test is cheap: run both resolvers on a
+    fixed snapshot and diff the page lists.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-206
+    Item type: OPEN QUESTION (raised from a cross-run collision only visible end-of-day)
+    Current status: OPEN
+
+OPEN-207:
+  Date raised: 2026-09-13
+  Question: What does the estate do when a flag has been filed N times without action - escalate it,
+    or withdraw it?
+  Why it matters: five counters ran up today with no rule attached to any of them. **Seventeen** asks for
+    who may run in-house measurements; **twelve** metric-inflation flags, with the filing agent itself
+    proposing "escalated or withdrawn rather than filed a thirteenth time"; **six** asks on
+    `length_ratio_to_target`; **six** statements that retrieval access throttles the network; **thirteen**
+    firings of a "one-time" bootstrap; **123** consecutive budget breaches in one lane. Repetition
+    currently costs the filer tokens and produces nothing. Either the count should trigger something, or
+    the recommendation should be retired and the register should stop paying for it.
+  Status: OPEN - requires Tom. This is a governance rule, not a measurement.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-207
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1372, 1377, 1393; generalised as PRESUMPTION-987)
+    Current status: OPEN
+
+OPEN-208:
+  Date raised: 2026-09-13
+  Question: What would count as C2A2 losing to the dependence reading, and will the project commit to it
+    now?
+  Why it matters: the sewing agent surfaced the Sole/Krakauer/Levin *LLMs as a Cognitive Virus* model as a
+    **rival prediction over measurements this instrument already takes** - persistent dependence with
+    abrupt competence loss, against C2A2's opposite wager on the same apparatus (ASSUMPTION-1373). The ask
+    is to pre-register the loss condition "while it costs nothing." Two things make this urgent rather than
+    philosophical. First, the instrument is dark: the metabolism snapshot has been frozen since 09-03 and
+    the last successful census was 2026-07-28 (ASSUMPTION-1385), so the claim that the measurements are
+    already being taken is **currently false**. Second, the estate has spent fourteen consecutive days
+    generating exclusively agent-stated items with the designer's sync channel down in both directions -
+    which is, on its face, one of the observables the dependence reading predicts. **A pre-registration
+    written after the instrument comes back on is worth less than one written tonight.**
+  Status: OPEN - requires Tom. This is the only question raised tonight that is about what C2A2 claims
+    rather than how it runs.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-208
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1373; generalised as PRESUMPTION-991, routed)
+    Current status: OPEN
+
+OPEN-209:
+  Date raised: 2026-09-13
+  Question: Does `check_scheduler_health.py` detect that a task did not fire, or only that a task it has a
+    hand-written row for did not fire?
+  Why it matters: today's headline was **88 OK / 1 WARN / 3 FAIL**, and four of the OKs were an agent that
+    had not run since 2026-08-09, because there is no `ARTIFACTS` row for `connector-health-*.md`
+    (ASSUMPTION-1382). Three further silent-non-fire mechanisms were recorded the same day: a commit job
+    whose failure artefact is an **absent line** in `held_paths.md` (1358), a 15d monthly cycle lost to a
+    missed 09-06 run and caught only because 15d audits its own cadence (1368), and a backup whose work
+    succeeded while its **log append** failed for a second consecutive week (1387). The fix for the first
+    was recommended on 2026-08-09 and never added.
+  Status: OPEN - the enumeration is cheap and unowned: list every scheduled task with no self-dating
+    ARTIFACTS row. Cf. OPEN-200, ASSUMPTION-1362 (PREMISE-026: an unowned undated test "was never
+    created").
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-209
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1382; generalised as PRESUMPTION-984)
+    Current status: OPEN
