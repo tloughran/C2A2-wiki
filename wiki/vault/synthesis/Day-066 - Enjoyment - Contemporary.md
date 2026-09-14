@@ -3,7 +3,7 @@ day: 66
 title: "Enjoyment (Contemporary)"
 pairs_with: "[[Day-066 - Enjoyment]]"
 length_target_words: 1500
-length_actual_words: 1599
+length_actual_words: 1986
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/fredrickson/prs_triplets.md (PRS-02 — positivity resonance as measurable neurophysiological coupling; enjoyment as relational rest)"
@@ -15,11 +15,11 @@ karpathy_wiki_sources:
   - "wiki/traditions/wright/prs_triplets.md (PRS-09 — already/not-yet first-fruits frame, High; PRS-35 — present work as anticipatory participation, High)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-09 — contemplative articulation of the central theme, High; PRS-65 — joy and grief on separate channels, High, guest voice)"
 evidence_strength_summary: "Friston on policy-necessity-under-perfect-good is mature formal (PRS-10 High; PRS-04 Implicit/Medium); Fredrickson on rest-in-the-good empirically robust; Stump on second-personal enjoyment theological-philosophical strong"
-length_ratio_to_target: 1.066
-length_note: "Recomputed body-only 2026-08-15 (YAML and the auto-link footer excluded) after two id-less bridge bullets were anchored: 1470 -> 1599, ratio 0.980 -> 1.066, still inside the +/-10% short-tier band. The growth is citation text — wiki file paths, PRS ids and the entry content they carry — in the McGilchrist and Hoffman bullets. No claim was added, removed or reweighted, and no argument was rewritten. RECOUNTED 2026-09-05 (reviewer pass): body-only 1848, ratio 1.23, after the two bare Wright/Rohr canonical-works bridge lines were anchored to register records (Wright PRS-09/35, Rohr PRS-09/65) and four Implicit/Medium grades were disclosed. Inside the +/-25% line; the growth is citation and grade text only."
+length_ratio_to_target: 1.324
+length_note: "Recomputed body-only 2026-08-15 (YAML and the auto-link footer excluded) after two id-less bridge bullets were anchored: 1470 -> 1599, ratio 0.980 -> 1.066, still inside the +/-10% short-tier band. The growth is citation text — wiki file paths, PRS ids and the entry content they carry — in the McGilchrist and Hoffman bullets. No claim was added, removed or reweighted, and no argument was rewritten. RECOUNTED 2026-09-05 (reviewer pass): body-only 1848, ratio 1.23, after the two bare Wright/Rohr canonical-works bridge lines were anchored to register records (Wright PRS-09/35, Rohr PRS-09/65) and four Implicit/Medium grades were disclosed. Inside the +/-25% line; the growth is citation and grade text only. RECOUNTED 2026-09-13 (reviewer pass): pre-edit body-only 1848 — the stored FIELD of 1599 was stale and understated by 249, while the 09-05 note above already carried the honest figure. This pass added the missing criterion-(b) supersession term (~138 words, Q.11 a.2's rational/irrational partition of enjoyment, anchored on Hoffman PRS-13). Post-edit body-only 1986, ratio 1.324, which crosses the +/-25% advisory line for the first time on this file. NOT trimmed and NOT re-tiered: the transcript's cleaned body is 885 words, so short tier is correct, and every word of the excess is reviewer apparatus rather than authorial prose. The pre-apparatus body sits inside the short tier. If Tom closes this on the merits it must be closed against the pre-apparatus body, not against 1.324."
 mind_first_reframe: "Necessity-toward-the-perfect-good plus latitude-among-partial-goods is exactly what active inference predicts under hierarchical priors with one fully-determining terminal; enjoyment is the alter's substrate-direct rest in the apprehended good — perfect in the eschatological state of full alignment with mind-at-large, imperfect-anticipatory through this-life contemplation, prayer, sacrament, and positivity-resonance."
 central_theme_thread: "The work of becoming-aligned with loving unity is itself shot through with anticipatory enjoyment; the alter's daily task is to receive present positivity-resonance and contemplative-rest as real partial substrate-presence rather than distraction from the eschatological completion."
-last_qc_at: "2026-09-05T12:59:28"
+last_qc_at: "2026-09-13T14:31:16"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/066, theme/enjoyment, theme/rest-in-the-good]
 ---
@@ -62,6 +62,8 @@ The contemporary mind-monist read of Q.11: enjoyment is the alter's substrate-di
 What this *shares with Aquinas*: the necessity-and-freedom structure; the perfect/imperfect distinction; enjoyment as rest-in-the-good; the substrate-direct character of perfect enjoyment.
 
 What it *reframes*: Aquinas's frame uses faculty-psychology and beatific-vision; the contemporary frame uses active-inference, positivity-resonance, hemispheric attention, and substrate-resonance.
+
+What is *superseded*: Q.11 a.2's partition of enjoyment at the rational/irrational line — that the rational creature enjoys in the perfect degree and the irrational animal only imperfectly, because only the rational apprehends the end *as* end. That boundary does not survive. PRS-13 in the Hoffman-tradition wiki makes the question of *which systems can co-instantiate a single unified experience* a constrained one answered by signal speed, exchange architecture and temporal window — parameters that vary continuously and do not coincide with the species line Aquinas draws. Enjoyment therefore grades down the scale rather than dividing once at the threshold of rationality. What survives is the *perfect/imperfect* distinction itself, re-indexed to degree of substrate-access rather than to kind of creature. *Speculative: PRS-13 is philosophical-mathematical, and the application to enjoyment is this commentary's extension.*
 
 What is *firm vs. speculative*: Friston's policy-necessity-under-perfect-good is mature formalism; Fredrickson's positivity-resonance and cardiac-vagal-coherence are empirically strong; the substrate-direct-mode resting reading is speculative-philosophical-theological.
 

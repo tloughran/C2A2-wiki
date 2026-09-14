@@ -16,7 +16,7 @@ fetch_path: yt-dlp (auto-captions)
 synthesis: "[[Day-081 - Hope - Contemporary]]"
 tags: [summa, day/081, pars/I-II, q/40, q/41]
 fidelity_checked: true
-last_qc_at: "2026-09-05T17:43:22"
+last_qc_at: "2026-09-13T18:33:26"
 last_qc_outcome: "pass"
 ---
 
