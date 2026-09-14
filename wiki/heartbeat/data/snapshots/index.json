@@ -1,7 +1,20 @@
 {
-  "generated": "2026-09-13",
+  "generated": "2026-09-14",
   "count": 61,
   "snapshots": [
+    {
+      "date": "2026-09-14",
+      "time": "16:39 UTC",
+      "sort_key": "20260914163954",
+      "generated_at": "2026-09-14T16:39:54Z",
+      "file": "digest-20260914-163954.json",
+      "window": "weekly",
+      "signals": 10,
+      "items_checked": 200,
+      "sources_reached": 19,
+      "high_relevance": 3,
+      "primary_themes": "Capability Jump + Market Platform"
+    },
     {
       "date": "2026-09-13",
       "time": "14:43 UTC",
@@ -767,19 +780,6 @@
       "items_checked": 210,
       "sources_reached": 19,
       "high_relevance": 5,
-      "primary_themes": "Capability Jump + Market Platform"
-    },
-    {
-      "date": "2026-07-14",
-      "time": "12:04 UTC",
-      "sort_key": "20260714120413",
-      "generated_at": "2026-07-14T12:04:13Z",
-      "file": "digest-20260714-120413.json",
-      "window": "weekly",
-      "signals": 10,
-      "items_checked": 210,
-      "sources_reached": 19,
-      "high_relevance": 3,
       "primary_themes": "Capability Jump + Market Platform"
     },
     {
