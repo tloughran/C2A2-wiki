@@ -3,7 +3,7 @@ day: 96
 title: Fruits and Vice (Contemporary)
 pairs_with: "[[Day-096 - Fruits and Vice]]"
 length_target_words: 2200
-length_actual_words: 2021
+length_actual_words: 2067
 length_tier: medium
 karpathy_wiki_sources:
   - "Wright, *Paul and the Faithfulness of God* + *Galatians* commentary (Gal 5:22-23, fruit-singular vs works-plural) — no register record; absence verified at 59 ids 2026-09-06"
@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md PRS-01 (Free Energy Principle, High) + PRS-06 (multi-agent coherence, Medium) — was PRS-04 (Implicit/Medium), which cannot carry a formal badge"
   - "master/cross_program_index.md (CROSS-005 love-as-ontological-coupling)"
 evidence_strength_summary: "Aquinas's Galatians taxonomy and the virtue/vice contrast are theological-philosophical (textual). Fredrickson on positivity resonance and Friston on active inference are empirical/formal. The fruits-as-policy mapping is speculative bridging."
-length_ratio_to_target: 0.919
-length_note: "Recorded 2356 / 1.071 was overstated; recount 2026-08-09 by the project method (body only, frontmatter and auto-linked footer excluded) gave 1880 / 0.855. RE-VERIFIED 2026-08-29 by an independent recount using the same method: 1880 EXACTLY, zero drift — a fourth counter-example to the one-directional understatement defect, and it again fits the rule that a stored count whose note documents its own recount method can be trusted. This pass's Friston PRS-01/PRS-06 anchor and Fredrickson PRS-02/PRS-05 grade-split added a measured 141 words -> 2021 / 0.919, now INSIDE +/-10%. NOT padded to tier — the growth is citation apparatus, not argument. Recount 2026-09-06 (same method): 2067 / 0.940, still in band after ~45 words of Wright absence declination and Stump PRS-09 grade disclosure."
+length_ratio_to_target: 0.940
+length_note: "Recorded 2356 / 1.071 was overstated; recount 2026-08-09 by the project method (body only, frontmatter and auto-linked footer excluded) gave 1880 / 0.855. RE-VERIFIED 2026-08-29 by an independent recount using the same method: 1880 EXACTLY, zero drift — a fourth counter-example to the one-directional understatement defect, and it again fits the rule that a stored count whose note documents its own recount method can be trusted. This pass's Friston PRS-01/PRS-06 anchor and Fredrickson PRS-02/PRS-05 grade-split added a measured 141 words -> 2021 / 0.919, now INSIDE +/-10%. NOT padded to tier — the growth is citation apparatus, not argument. Recount 2026-09-06 (same method): 2067 / 0.940, still in band after ~45 words of Wright absence declination and Stump PRS-09 grade disclosure. BATCH RECOMPUTE EXECUTED 2026-09-14 (reviewer pass, same method): true body 2067 / 0.940 confirmed exactly, and the arithmetic fields — which still carried the pre-09-06 2021 / 0.919 — now match. Comfortably INSIDE +/-10%; no escalation."
 mind_first_reframe: "Aquinas's question-pair (Q.70 fruits of the Spirit / Q.71 vice as contrary to nature) recovers as the experiential-and-structural signature of an agent's policy aligning with or departing from its constitutive goal-state: the fruits are the precision-weighted confirmation signal of policy success against a high-precision charity prior (Friston + Fredrickson), and vice is information loss — the agent decoupling from the wider conscious-agent network so that the positivity-resonance signal that would have measured successful coupling disappears."
 central_theme_thread: "Q.71 a.2's 'vice is contrary to nature' lands the central theme directly: vice is what happens when the limited rational agent optimizes for what looks-like-good from its perspective at the cost of what is-good for the wider whole it is part of; perspective-limitation alone is enough, absent the integrating signals. The fruits are the phenomenal signature of policy that does fit the wider whole — measurements, not rewards."
 tags: [synthesis, day/096, theme/virtue-vice-hinge, theme/perspective-coordination]
-last_qc_at: "2026-09-06T13:06:12"
+last_qc_at: "2026-09-14T14:28:02"
 last_qc_outcome: "rewrote"
 ---
 

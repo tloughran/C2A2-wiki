@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (sandbox)
 synthesis: "[[Day-090 - Moral Virtue - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/090, pars/I-II, q/58_59]
-last_qc_at: "2026-08-17T08:24:18"
+last_qc_at: "2026-09-14T00:25:49"
 last_qc_outcome: "pass"
 ---
 

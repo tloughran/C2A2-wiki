@@ -3,7 +3,7 @@ day: 98
 title: Sinful Causes (Contemporary)
 pairs_with: "[[Day-098 - Sinful Causes]]"
 length_target_words: 1500
-length_actual_words: 2060
+length_actual_words: 2079
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md PRS-01 (Free Energy Principle, High) + PRS-06 (multi-agent coherence, Medium) — PRS-04 (Implicit/Medium) retained as framing vocabulary only, not as a formal warrant"
@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control — bioelectric target states as the regulating signal)"
 evidence_strength_summary: "The reason-as-seat-of-mortality and morose-delectation analyses are philosophical (Aquinas + interpretive bridging). Friston/Hawkins on precision-attention as substrate of voluntary cognition are formal-empirical (high). The privation-with-positive-cause structure is metaphysical-medieval but converges with control-theoretic regulator-failure accounts (medium)."
-length_ratio_to_target: 1.373
-length_note: "RECOUNTED 2026-08-29 by the project method (split on the first horizontal-rule separator followed by YAML keys; auto-linked Related-records footer excluded). Stored 1849 / 1.233 understated a true pre-pass body of 1947 / 1.298; this pass's Friston PRS-01/PRS-06 anchor and McGilchrist PRS-05 grade added a measured 113 words -> 2060 / 1.373. CORRECTION 2026-09-06: 1.373 is OUTSIDE +/-25% (the 08-29 note's 'inside +/-25%' was wrong arithmetic); escalated on length per the constitution, not rewritten. Tier verified CORRECT (transcript 925 cleaned words, short tier is <2000); do not retier. Recount 2026-09-06 (constitution regex, body only, footer dropped): 2079 / 1.386; the +19 words are this pass's Stump PRS-09 grade disclosure. Arithmetic fields left for the batch recompute. Substantive case: covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 causes, 4 articles) including the privation-with-positive-cause keystone; the four-causal-modes re-description is substantive linkage, not padding."
+length_ratio_to_target: 1.386
+length_note: "RECOUNTED 2026-08-29 by the project method (split on the first horizontal-rule separator followed by YAML keys; auto-linked Related-records footer excluded). Stored 1849 / 1.233 understated a true pre-pass body of 1947 / 1.298; this pass's Friston PRS-01/PRS-06 anchor and McGilchrist PRS-05 grade added a measured 113 words -> 2060 / 1.373. CORRECTION 2026-09-06: 1.373 is OUTSIDE +/-25% (the 08-29 note's 'inside +/-25%' was wrong arithmetic); escalated on length per the constitution, not rewritten. Tier verified CORRECT (transcript 925 cleaned words, short tier is <2000); do not retier. Recount 2026-09-06 (constitution regex, body only, footer dropped): 2079 / 1.386; the +19 words are this pass's Stump PRS-09 grade disclosure. Arithmetic fields left for the batch recompute. BATCH RECOMPUTE EXECUTED 2026-09-14 (reviewer pass, same method): true body 2079 / 1.386, now written into the fields. Confirms the 2026-09-06 recount exactly. Day remains OUTSIDE +/-25%; the standing length escalation is unchanged. Substantive case: covers two dense Summa questions (Q.74 powers, 10 articles + Q.75 causes, 4 articles) including the privation-with-positive-cause keystone; the four-causal-modes re-description is substantive linkage, not padding."
 mind_first_reframe: "Aquinas's architecture-level question (Q.74 powers of the soul / Q.75 internal-and-external causes of sin) recovers cleanly in a hierarchical active-inference frame: mortal sin lives in the will-and-reason coupling because only top-level priors re-target the whole policy stack; morose delectation is precision-on-attention (what the agent attends to is what it becomes); the privation-with-positive-cause structure is regulator-failure (the act has full positive being while its disorder traces to the absence of the directing signal); and one sin causes another by removing the high-precision integrating prior that suppressed further failure."
 central_theme_thread: "Q.75 a.4's indirect-efficient mode — one sin causes another by removing the protective state — is the central theme's mechanism for cumulative decoupling: the protective state is the high-precision integrating prior (charity / loving unity), the prior that couples the agent's policy to the wider conscious-agent network. Once removed, further failures follow naturally because nothing now suppresses them; the agent that was one under reason / charity becomes plural under unintegrated appetites."
 tags: [synthesis, day/098, theme/will-and-faculty, theme/attention-as-action]
-last_qc_at: "2026-09-06T14:09:42"
+last_qc_at: "2026-09-14T14:28:03"
 last_qc_outcome: "rewrote"
 ---
 

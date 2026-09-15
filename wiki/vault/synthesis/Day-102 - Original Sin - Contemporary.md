@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category, Fredrickson × Stump × Kastrup; CROSS-068 Stump × Levin × C2A2-core, hylomorphic united-something-or-other ↔ Levin collective intelligence ↔ MacIntyrean tradition-as-entity)"
 evidence_strength_summary: "Empirical: epigenetic and developmental inheritance of stress-response and attachment priors (broadly supported, mechanism mid-strength). Formal: collective-substance hylomorphism (Stump 2025 Maritain lecture, mid evidence). Theological: Wright on Romans 5 Adam-typology (high). Speculative: original sin as a tilt in mind-at-large's developmental defaults rather than a juridical inheritance."
 tags: [synthesis, day/102, theme/inheritance, theme/corporate-substance]
-last_qc_at: "2026-09-07T11:24:10"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-14T18:29:26"
+last_qc_outcome: "pass"
 ---
 
 # Day 102 — Original Sin (Contemporary)

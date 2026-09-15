@@ -8,7 +8,7 @@ length_ratio_to_target: 0.959
 length_tier: short
 length_note: "Recounted 2026-08-31 before any edit: the stored 1422 was the count INCLUDING the auto-linked Related-records footer (1421 by that convention); the clean body count was 1392 / 0.928. Both figures sit inside ±10%, so nothing was ever mis-flagged here, but the two conventions differ by roughly the footer's length and the discrepancy is worth naming rather than re-deriving. The QC pass added a grade to the Rohr PRS-01 bullet (the record is Confidence High and the badge had stated kind with no grade), costing ~46 words. In band throughout."
 karpathy_wiki_sources:
-  - "traditions/hoffman/prs_triplets.md (PRS-01 conscious realism — consciousness primary; PRS-03 interface theory — perception tracks fitness, not the whole truth) [Hoffman/Kastrup lead on the epistemic locus per the guardrail]"
+  - "traditions/hoffman/prs_triplets.md (PRS-01 conscious realism — consciousness primary; PRS-03 interface theory — perception tracks fitness, not the whole truth)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 dissociation/individuation — a real but bounded point of view within mind-at-large)"
   - "traditions/wright/prs_triplets.md (PRS-01 critical realism — all knowing is perspectival yet tests against reality)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual/apophatic knowing — unity-in-distinction without collapse)"

@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "Wright, *Paul and the Faithfulness of God* / *Surprised by Hope* on Galatians 5:19–21 — cited to the published work and carrying NO PRS id: the Wright register contained no Galatians or works-of-the-flesh entry at 41 ids (2026-08-18) and still contains none at 61 ids (re-searched 2026-09-07; the only 'flesh'/'works of' hits are PRS-34 on works-of-the-law and the firstfruits records PRS-06/09), so the scriptural pedigree is asserted from the corpus, not from the wiki."
 evidence_strength_summary: "Empirical: broaden-and-build under positive emotion (Fredrickson, high); attention narrowing under stress and threat (well-supported across paradigms); metastability collapse as a dynamical signature of pathology (Friston PRS-13, register High; its extension to the vice taxonomy is mid). Formal: active-inference account of attractor capture under high precision on threat-priors (formal, mid). Speculative: the precise mapping of the medieval seven onto contemporary attractor basins (speculative but principled). Theological: Wright on the Pauline 'works of the flesh' (Gal 5:19-21) as the same family Aquinas inherits."
 tags: [synthesis, day/103, theme/attractor-collapse, theme/attention-narrowing]
-last_qc_at: "2026-09-07T11:24:10"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-14T18:29:41"
+last_qc_outcome: "pass"
 ---
 
 # Day 103 — Capital Vice (Contemporary)

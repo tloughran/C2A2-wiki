@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-005 love as fundamental category; CROSS-076 Levin × Friston — Vmem-organization loss as bioelectric metastability collapse, whose Notes name Friston PRS-13 directly)"
 evidence_strength_summary: "Empirical: continuous spectrum of attractor-depth in active-inference paradigms (well-supported); practically important thresholds in clinical metastability work (mid evidence). Formal: phase-transition mathematics from one attractor regime to another (mid evidence in neural dynamics; high in statistical mechanics generally). Speculative: identification of the medieval 'loss of charity' with a phase-transition crossing in the agent's affective-relational coupling capacity. Theological: Wright on the Pauline 'in Christ / not in Christ' polarity (high); Rohr on the false self / True Self distinction (PRS-05 Medium, PRS-15 High). Register grades checked 2026-09-07: Kastrup PRS-07 Medium; Stump PRS-05 removed as an unused source."
 tags: [synthesis, day/105, theme/threshold, theme/phase-transition]
-last_qc_at: "2026-09-07T11:25:26"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-14T18:29:42"
+last_qc_outcome: "pass"
 ---
 
 # Day 105 — Mortal and Venial Sin (Contemporary)
