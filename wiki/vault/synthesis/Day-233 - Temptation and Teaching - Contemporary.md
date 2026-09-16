@@ -5,20 +5,20 @@ pairs_with: "[[Day-233 - Temptation and Teaching]]"
 length_target_words: 2200
 length_actual_words: 1469
 length_ratio_to_target: 0.668
-length_note: "OUTSIDE the -25% floor (0.668), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's cleaned count (2064 words = medium, just over the 2000 boundary), so the tier is right and the shortfall is real. The file is a complete PRS synthesis covering two questions (Q.41 temptation, Q.42 teaching) as inverse operations on one structure, with four named Resources and five anchored bridges; it is dense rather than truncated. Reviewer pass 2026-08-31 added ~68 words dissolving a bundled McGilchrist/Stump badge. Flagged to Tom as part of the 223-235 boilerplate-note band."
+length_note: "OUTSIDE the -25% floor (0.668), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's cleaned count (2064 words = medium, just over the 2000 boundary), so the tier is right and the shortfall is real. The file is a complete PRS synthesis covering two questions (Q.41 temptation, Q.42 teaching) as inverse operations on one structure, with four named Resources and five anchored bridges; it is dense rather than truncated. Reviewer pass 2026-08-31 added ~68 words dissolving a bundled McGilchrist/Stump badge. Flagged to Tom as part of the 223-235 boilerplate-note band. SECOND REPAIR (reviewer pass 2026-09-15): footer/body citation mismatch, frontmatter only — karpathy_wiki_sources named Stump PRS-11 (Grains of Wheat), which the body never cites, while the body's Resource paragraph cites Stump PRS-10, which the footer never listed. The body's own gloss ('knowledge through narrative') matches the PRS-10 register label exactly, so the footer was corrected to the body rather than the reverse, and both Stump grades were added (PRS-07 High, PRS-10 Medium). Word count unchanged at 1469 / 0.668 — the edit is inside the frontmatter, which the counting rule excludes."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-11 cancer as dissociative identity disorder of the body; PRS-09 cognitive attribution across scales)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; PRS-17 ITP-internal redefinition of illusion)"
   - "traditions/mcgilchrist/prs_triplets.md (PRS-12 embodied tradition transmission; PRS-09 value and the sacred in attention)"
-  - "traditions/stump/prs_triplets.md (PRS-07 narrative cognition; PRS-11 Grains of Wheat — suffering and biblical narratives)"
+  - "traditions/stump/prs_triplets.md (PRS-07 narrative cognition and philosophical epistemology, Confidence High; PRS-10 Biblical Narratives and Human Flourishing — knowledge through narrative, Confidence Medium)"
   - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation, High; PRS-05 salvation as incorporation, High)"
 evidence_strength_summary: "The third temptation as defection-from-the-whole ~ Levin's cancer-as-defection (PRS-02/PRS-11) = empirical at the bioelectric level, speculative as moral theology; parables as truth dosed to receivable capacity ~ interface theory (Hoffman PRS-03) = formal-theoretic (FBT theorem-grade) with a speculative homiletic bridge; the living-page doctrine ~ embodied tradition transmission (McGilchrist PRS-12, Stump PRS-07) = neuropsychological/philosophical, medium; Jews-first as vocational order = Wright's historical scholarship on Israel's election (strong textually/historically); the wedge-order of temptation = phenomenological observation carried theologically."
 mind_first_reframe: "Temptation is read as the adversarial probe inviting a perspective to defect from the whole it belongs to; teaching is read as its constructive inverse — the calibrated disclosure of the whole to perspectives that can only receive it in doses."
 central_theme_thread: "Both questions are the central claim under stress-test: the devil's third offer is the refusal of perspective-limitation (seize the whole now, on the self's terms), while parables, Jews-first ordering, and the living page are limitation honored — the whole transmitted at the rate limited perspectives can compute."
 tags: [synthesis, day/233, theme/defection-and-calibrated-disclosure]
-last_qc_at: "2026-09-08T06:34:07"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-15T08:23:13"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 233 — Contemporary Parallel: Defection and the Dosed Whole

@@ -3,22 +3,22 @@ day: 251
 title: Accidents Remaining (Contemporary)
 pairs_with: "[[Day-251 - Accidents Remaining]]"
 length_target_words: 2200
-length_actual_words: 1053
+length_actual_words: 1162
 length_tier: medium
-length_ratio_to_target: 0.479
-length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+length_ratio_to_target: 0.528
+length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1053 reproduced EXACTLY pre-edit; the +109 to 1162 (ratio 0.528) decomposes as the Rohr PRS-03 to PRS-21 repoint plus the dating of the Stump absence claim at 38 records, both citation apparatus only."
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; substance-as-mental-reality)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism; PRS-52 longevity as pattern-persistence across substrate turnover)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium — repointed from PRS-03 on 2026-09-15; PRS-03 carries the Universal-Christ label but its Problem and Solution are a warrant for multi-tradition inquiry, so it cannot carry a claim about what the conserved appearances now veil)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
-  - "Stump, *Aquinas* (Routledge 2003), on the metaphysics of matter, form and accident — canonical-work anchor; the Stump register carries no Eucharistic-accidents entry"
+  - "Stump, *Aquinas* (Routledge 2003), on the metaphysics of matter, form and accident — canonical-work anchor; the Stump register carries no Eucharistic-accidents entry, re-searched in full at 38 records on 2026-09-15"
 evidence_strength_summary: "Accidents-without-substrate is metaphysical/contested (Kastrup, leading); appearance-decoupled-from-reality formal with argued evolutionary basis (Hoffman); form-without-fixed-matter empirical-in-domain (Levin); content theological (Rohr/Wright)."
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-09-08T12:24:01"
+last_qc_at: "2026-09-15T16:24:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -40,7 +40,7 @@ Hoffman supplies the parallel from the perceptual side. In Tom's PRS-form record
 
 Levin gives the empirical hinge from biology. In Tom's PRS-form record of Levin's program, PRS-03 (a formal language for basins of morphological attraction — the body's target states) supplies the formalism, and PRS-52 supplies the persistence claim it needs: longevity reframed as *pattern-persistence rather than substrate-preservation*, the informational structure holding across substrate turnover. Together they show, in living systems, a pattern that floats free of the specific matter realizing it. Appearance and organization need not be welded to a fixed substrate. (PRS-03 is recorded at Confidence: High, PRS-52 at Medium.)
 
-Rohr (PRS-03, the Universal Christ — the divine pattern present in all of creation) and Wright (PRS-06, resurrection as the firstfruits of new creation rather than a suspension of natural law) remain the theological ground truth for the *content*: the reality now present beneath the conserved appearances.
+Rohr (PRS-21, Universal-Christ-in-creation — "creation as the first incarnation", the divine pattern indwelling matter as such) and Wright (PRS-06, resurrection as the firstfruits of new creation rather than a suspension of natural law) remain the theological ground truth for the *content*: the reality now present beneath the conserved appearances.
 
 ## Solution (proposed, speculative)
 
@@ -55,9 +55,9 @@ The motif of the project surfaces precisely at the seam. A perspective-limited a
 - **Kastrup PRS-02 (substance-as-mental-reality)** — *metaphysical, contested.* Appearances are mental states; the material substrate was never required.
 - **Hoffman PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* The icon persists while its referent is converted.
 - **Levin PRS-03 + PRS-52 (morphological attractor formalism; pattern-persistence across substrate turnover)** — *empirical-in-domain.* Pattern floats free of fixed matter.
-- **Rohr PRS-03 (the Universal Christ)** — *theological / contemplative.* The reality veiled by conserved appearance.
+- **Rohr PRS-21 (Universal-Christ-in-creation, "creation as the first incarnation")**, `traditions/rohr/prs_triplets.md` — *theological / contemplative, Confidence Medium.* The reality veiled by conserved appearance. Repointed from PRS-03 on 2026-09-15: PRS-03 wears the "Universal Christ" label, but its Problem and Solution argue a warrant for multi-tradition inquiry, so it is a methodological record and cannot carry a claim about what the conserved appearances veil. PRS-21 is also Medium, so no evidence strength changed.
 - **Wright PRS-06 (resurrection as new creation, not law-violation)** — *theological, high within method.* The content beneath the conserved appearances; PRS-05 (salvation as incorporation) carries the reception half above.
-- **Stump, *Aquinas* (Routledge 2003), on matter, form and accident** — *canonical-work anchor.* Her reading of Aquinas's hylomorphism is what the monist account of "accidents without a subject" is answering to, in place of the divine-power-sustains-quantity solution. Anchored to the published work rather than to a numbered entry: the Stump register carries no Eucharistic-accidents triplet, and the nearest-numbered candidate (PRS-04, final causality and modern biology) is about the teleology ban, not about accidents.
+- **Stump, *Aquinas* (Routledge 2003), on matter, form and accident** — *canonical-work anchor.* Her reading of Aquinas's hylomorphism is what the monist account of "accidents without a subject" is answering to, in place of the divine-power-sustains-quantity solution. Anchored to the published work rather than to a numbered entry: the Stump register carries no Eucharistic-accidents triplet, and the nearest-numbered candidate (PRS-04, final causality and modern biology) is about the teleology ban, not about accidents. *Search boundary, stated because this is a claim of absence:* the register was re-searched in full on 2026-09-15 at **38 records** (running non-contiguously to PRS-41) for accident, eucharist, substance-conversion and species, and returns nothing — so the declination is re-tested, not inherited.
 
 ## Where this leaves us
 

@@ -3,9 +3,9 @@ day: 232
 title: Christ's Baptism (Contemporary)
 pairs_with: "[[Day-232 - Christ's Baptism]]"
 length_target_words: 2200
-length_actual_words: 1410
-length_ratio_to_target: 0.641
-length_note: "OUTSIDE the -25% floor (0.641), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's own cleaned count (2252 words = medium), so 'length out of bounds, tier may be wrong' would be false here. The file is a complete PRS synthesis — Frame, Problem, three named Resources, Solution with the shared/reframed/evidence split, central-theme thread, five bridges, closer — and is short because Q.39-40 is a fittingness question that resolves into one idea (exemplarity as coupling) rather than several; it is under-written, not truncated. Reviewer pass 2026-08-31 added ~86 words dissolving two evidence badges. Flagged to Tom as part of the 223-235 boilerplate-note band, where a single template sentence has been certifying a systematic 0.60-0.73 under-length."
+length_actual_words: 1485
+length_ratio_to_target: 0.675
+length_note: "OUTSIDE the -25% floor (0.675), with a length_note, and NOT escalated as a tier error: tier re-verified CORRECT from the paired transcript's own cleaned count (2252 words = medium), so 'length out of bounds, tier may be wrong' would be false here. The file is a complete PRS synthesis — Frame, Problem, three named Resources, Solution with the shared/reframed/evidence split, central-theme thread, five bridges, closer — and is short because Q.39-40 is a fittingness question that resolves into one idea (exemplarity as coupling) rather than several; it is under-written, not truncated. Reviewer pass 2026-08-31 added ~86 words dissolving two evidence badges. Flagged to Tom as part of the 223-235 boilerplate-note band, where a single template sentence has been certifying a systematic 0.60-0.73 under-length. THIRD REPAIR (reviewer pass 2026-09-15): the Friston PRS-06 bridge bullet carried no record grade, and PRS-06 is this day's leading resource — the register marks it (Implicit) / Confidence Medium because it extends free-energy minimization from the individual organism to multi-agent systems, which is the register's own extension. Selling the day's load-bearing record as mature is the exact shape recorded in summa_friston_prs04_sold_as_mature. Extension-mark added; citation apparatus only, no argument added, removed or reweighted. Recount 1485 / 0.675 (counting rule re-verified this run against all six cohort files, delta 0 on each before editing)."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation, High; PRS-03 inaugurated eschatology, High)"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Exemplarity as causation (do-first-thyself) ~ learni
 mind_first_reframe: "The baptism of the sinless one is read as the fullest perspective entering the practice-space built for limited perspectives — because limited agents learn by coupling with an exemplar present in their own medium, not by receiving propositions from outside it."
 central_theme_thread: "The descent into the Jordan inverts Day 231's ascent: where John (the limited perspective) reached toward the fuller one, here the fullest perspective submits to the pedagogy of the limited — and the voice from heaven names what the coupling produces: adopted sons, perspectives grafted into the unity without being erased."
 tags: [synthesis, day/232, theme/exemplarity-as-coupling]
-last_qc_at: "2026-09-08T06:33:53"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-15T08:23:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 232 — Contemporary Parallel: The Exemplar in the Water
@@ -55,7 +55,7 @@ Day 231 and Day 232 are a diptych of the central claim. Yesterday the limited pe
 
 ## Bridges
 
-- **PRS-06, Tom's PRS-form record of the Friston program** (mutual modeling) — "do first thyself" as the condition for coupling; the exemplar renders the goal-state modelable in the learner's medium. Evidence: formal-speculative.
+- **PRS-06, Tom's PRS-form record of the Friston program** (*Multi-agent coherence via mutual modeling*) — "do first thyself" as the condition for coupling; the exemplar renders the goal-state modelable in the learner's medium. Evidence, per record: PRS-06 is an **(Implicit) reading at Confidence Medium** — it extends free-energy minimization from the individual organism to multi-agent systems, which is the register's own extension rather than a result Friston states in that form. Since this record carries the whole day's leading claim, the grade is worth stating: the mechanism is formal-speculative twice over — once in the record, once again in the step from it to the Jordan.
 - **CROSS-018, master index** (positivity resonance ↔ Thomistic union) — presence-among as love's empirical form; Christ's table-sharing manner of life as the means union actually requires. Evidence: empirical at the psychophysiology level; speculative as the bridge to Christology.
 - **PRS-04, Rohr-tradition wiki** (embodied love as epistemology — the spiritual is always embodied, never purely abstract), **Confidence Medium** — the real dove, the real water: manifestation refuses abstraction. Evidence: theological, at the register's middle grade.
 - **PRS-05, Wright-tradition wiki** (salvation as incorporation), **Confidence High** — the Father's voice demonstrates adoption: grafting into the body, inclusion in the people. Evidence: strong textually (Pauline), theological in force.

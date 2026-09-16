@@ -3,21 +3,21 @@ day: 250
 title: Transubstantiation (Contemporary)
 pairs_with: "[[Day-250 - Transubstantiation]]"
 length_target_words: 2200
-length_actual_words: 1027
+length_actual_words: 1088
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem transformation; PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; PRS-09 participatory encounter)"
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-52 longevity as pattern-persistence across substrate turnover)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 The Universal Christ)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium — repointed from PRS-03 on 2026-09-15; PRS-03 carries the Universal-Christ label but its Problem and Solution are a warrant for multi-tradition inquiry, so it cannot carry a claim about what the converted reality is)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
 evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal-speculative (Hoffman, his core empirical-evolutionary claim); identity-through-turnover empirical (Levin); central-theme strongly engaged."
-length_ratio_to_target: 0.467
-length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here."
+length_ratio_to_target: 0.495
+length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1027 reproduced EXACTLY pre-edit; the +61 to 1088 (ratio 0.495) is this run's Rohr PRS-03 to PRS-21 repoint, citation apparatus only, no argument added or reweighted."
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-09-08T12:24:01"
+last_qc_at: "2026-09-15T16:24:30"
 last_qc_outcome: "rewrote"
 ---
 
@@ -39,7 +39,7 @@ Kastrup supplies the ontology of *what* the reality is. In Tom's PRS-form record
 
 Levin gives the empirical hinge. In Tom's PRS-form record of Levin's program, PRS-01 (morphogenetic control — bioelectric circuits encoding anatomical target states) establishes that the target pattern, not the current matter, is what the system is working toward; PRS-52 carries the turnover claim proper, reframing longevity as *pattern-persistence rather than substrate-preservation* — the informational structure holding across substrate turnover. Together they show, in biology, a thing remaining itself (or being re-specified) while its matter is wholly exchanged — a this-worldly demonstration that "what a thing is" floats free of "what stuff currently composes it." (PRS-52 is recorded at Confidence: Medium; the claim is in-domain and evidenced, not settled.)
 
-Rohr (PRS-03, the Universal Christ — the divine pattern present in all of creation, not confined to one expression) and Wright (PRS-06, resurrection as the firstfruits of new creation rather than a violation of natural law) remain the theological ground truth for the *content*: that the reality into which the bread is converted is Christ's body.
+Rohr (PRS-21, Universal-Christ-in-creation — "creation as the first incarnation", the divine pattern indwelling matter as such) and Wright (PRS-06, resurrection as the firstfruits of new creation rather than a violation of natural law) remain the theological ground truth for the *content*: that the reality into which the bread is converted is Christ's body.
 
 ## Solution (proposed, speculative)
 
@@ -54,7 +54,7 @@ This is the project's central motif at maximum intensity: the whole made present
 - **Hoffman PRS-01 + PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* Appearance systematically decoupled from reality — the sharpest resource for conserved-accidents.
 - **Kastrup PRS-02 + PRS-09 (substance-as-mental-reality; participatory encounter)** — `wiki/traditions/kastrup/prs_triplets.md` — *metaphysical, contested.* Conversion at the level of reality-in-mind; reception as participation. PRS-09 records a proposed refinement of the dashboard metaphor arising from McGilchrist rather than a settled claim of the program (Confidence: Medium).
 - **Levin PRS-01 + PRS-52 (morphogenetic control; longevity as pattern-persistence across substrate turnover)** — *empirical-in-domain.* "What a thing is" floats free of its current matter.
-- **Rohr PRS-03 (the Universal Christ)** — *theological / contemplative.* The latent universal presence focally realized.
+- **Rohr PRS-21 (Universal-Christ-in-creation, "creation as the first incarnation")**, `traditions/rohr/prs_triplets.md` — *theological / contemplative, Confidence Medium.* The latent universal presence focally realized. Repointed from PRS-03 on 2026-09-15: PRS-03 wears the "Universal Christ" label, but its Problem and Solution argue a warrant for multi-tradition inquiry, so it is a methodological record and cannot carry a claim about what the converted reality is. PRS-21 is also Medium, so no evidence strength changed.
 - **Wright PRS-06 (resurrection as new creation, not law-violation)** — *theological, high within method.* The content of the converted reality; PRS-05 (salvation as incorporation) carries the reception half in the central-theme thread above.
 
 ## Where this leaves us

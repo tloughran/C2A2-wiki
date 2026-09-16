@@ -16,8 +16,8 @@ length_ratio_to_target: 0.73
 mind_first_reframe: "Glorified sensation is the perceptual interface purified — receiving the *form* of its object without the disordering material passion; impassibility is the limit-case of the form's complete command of its matter, not the body's numbness."
 central_theme_thread: "A perfected perspective receives more of the whole with less distortion: the glorified senses take in the form of things without the self-obscuring passivity that limited perception imposes — perspective-limitation lifted at the level of perception itself."
 tags: [synthesis, day/298, theme/glorified-perception-as-the-interface-purified]
-last_qc_at: "2026-09-07T12:24:28"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-14T22:32:00"
+last_qc_outcome: "pass"
 ---
 
 # Day 298 — Heavenly Senses (Contemporary Parallel)

@@ -16,7 +16,7 @@ fetch_path: sandbox youtube-transcript-api (re-fetch; egress restored)
 synthesis: "[[Day-300 - Clarity and Invisibility - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/300, pars/suppl, q/85-86]
-last_qc_at: "2026-09-08T00:21:12"
+last_qc_at: "2026-09-15T02:30:54"
 last_qc_outcome: "pass"
 ---
 

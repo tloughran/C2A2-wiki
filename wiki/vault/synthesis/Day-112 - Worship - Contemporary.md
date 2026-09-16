@@ -4,9 +4,9 @@ title: Worship (Contemporary)
 pairs_with: "[[Day-112 - Worship]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1429
-length_ratio_to_target: 0.953
-length_note: "Short tier (cleaned transcript 961 words); 1429 actual vs 1500 target = ratio 0.953, within ±10%. Covers two dense questions — Q.102 (causes of ceremonial precepts) and Q.103 (duration/cessation) — without padding."
+length_actual_words: 1502
+length_ratio_to_target: 1.001
+length_note: "Short tier (cleaned transcript 961 words). Covers two dense questions, Q.102 on the causes of the ceremonial precepts and Q.103 on their duration and cessation, without padding. Recounted 2026-09-15 at 1502 body words, ratio 1.001 against the 1500 target. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. The stored figure was 1429, a 73-word understatement with no edit in this file's history to attribute it to; the file was pass-marked on 2026-09-07 without a recount, so the residual predates that mark. No prose was added or removed on 2026-09-15; the field is corrected, not grown. The earlier note's conclusion survives its premise: the ratio was stated as 0.953 and is in fact 1.001, and the file is comfortably within plus-or-minus 10 percent under both figures."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; sign-and-signified)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating via embodied practice)"
@@ -18,8 +18,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-09-07T18:29:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-15T20:22:49"
+last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
 

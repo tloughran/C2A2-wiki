@@ -3,10 +3,10 @@ day: 256
 title: Remitted Venial Sin (Contemporary)
 pairs_with: "[[Day-256 - Remitted Venial Sin]]"
 length_target_words: 1500
-length_actual_words: 736
+length_actual_words: 793
 length_tier: short
-length_ratio_to_target: 0.491
-length_note: "Runs ~51% under the short tier (736 vs 1500): held to the PRS argument for a single narrow question (III Q.87) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.529
+length_note: "Runs well under the short tier: held to the PRS argument for a single narrow question (III Q.87) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the stored 736 recounted EXACT on 2026-09-15 pre-edit; the 57 added that day are citation apparatus only, being the Rohr PRS-27 register grade and the dated search boundary on the Stump venial-remission absence claim. New total 793, ratio 0.529."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 the Free Energy Principle; free energy as a minimized magnitude, not an on/off flag)"
   - "traditions/hawkins/prs_triplets.md (PRS-06 hierarchical/heterarchical predictive memory; corrections propagate across levels)"
@@ -16,8 +16,8 @@ evidence_strength_summary: "Graded-rather-than-binary repair is formal (Friston 
 mind_first_reframe: "Remission of venial sin is graded because corrective repair is continuous free-energy reduction (Friston) with disorder unwound level by level across a layered predictive memory (Hawkins), not a binary switch."
 central_theme_thread: "A finite perspective reduces its divergence from the whole by degrees with the resources it perceives, lesser disorders dissolving continuously as the larger reordering toward loving unity proceeds."
 tags: [synthesis, day/256, theme/graded-repair]
-last_qc_at: "2026-09-08T14:31:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-15T20:23:14"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 256 — Remitted Venial Sin (Contemporary Parallel)
@@ -50,8 +50,8 @@ The motif appears as incremental computation under limited resources. A perspect
 
 - **Friston PRS-01 (the Free Energy Principle; free energy as a minimized magnitude)** — *formal, well-developed.* Repair as graded magnitude, not a switch; sharpest resource.
 - **Hawkins PRS-06 (hierarchical/heterarchical predictive memory)** — *empirical-in-domain (neuroscience).* Corrections propagate gradually across levels.
-- **Rohr PRS-27 (the finite/infinite asymmetry as generative; continued growth toward union)** — *theological / contemplative.* Why the work of reordering is continued rather than completed at a stroke.
-- **PRS-22 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / moral-psychological.* The vices as predictable failure modes of an intellect-will system, each misordering a good that is itself real in object, manner, or *measure* relative to the agent's final end. The measure axis is what makes graded disorder — and therefore graded repair — intelligible. The register has no entry specific to venial-sin remission, so this receives the continuous-repair reframe rather than grounding it.
+- **Rohr PRS-27 (the finite/infinite asymmetry as generative; continued growth toward union)** — *theological / contemplative; Confidence Medium in the register, drawn from a single daily meditation, so it is the lightest of the four anchors here.* Why the work of reordering is continued rather than completed at a stroke.
+- **PRS-22 in the Stump-tradition wiki** (`traditions/stump/prs_triplets.md`) — *theological / moral-psychological.* The vices as predictable failure modes of an intellect-will system, each misordering a good that is itself real in object, manner, or *measure* relative to the agent's final end. The measure axis is what makes graded disorder — and therefore graded repair — intelligible. *(Confidence Medium in the register.)* Searched 2026-09-15 across all 38 records in `traditions/stump/prs_triplets.md`: the register has no entry specific to venial-sin remission, so this receives the continuous-repair reframe rather than grounding it. The register size and search date are recorded so a later pass can re-test the absence rather than inherit it.
 
 ## Where this leaves us
 

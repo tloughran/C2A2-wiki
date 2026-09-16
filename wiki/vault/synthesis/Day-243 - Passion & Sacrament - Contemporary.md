@@ -3,16 +3,16 @@ day: 243
 title: Passion & Sacrament (Contemporary)
 pairs_with: "[[Day-243 - Passion & Sacrament]]"
 length_target_words: 1500
-length_actual_words: 904
+length_actual_words: 955
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-08 cells as cognitive agents in morphospace)"
   - "traditions/friston/prs_triplets.md (PRS-07 FEP substrate-independence)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-04 incarnational theology, the spiritual always embodied)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, creation as the first incarnation; PRS-04 incarnational theology, the spiritual always embodied)"
   - "traditions/wright/prs_triplets.md (PRS-33 hope warranted by a past event rather than a trend line)"
 evidence_strength_summary: "Instrumental causality from the Passion theological/metaphysical; information-carried-by-form an empirical-analogy (Levin); interface necessity of sensible signs formal (Hoffman); central-theme speculative."
-length_ratio_to_target: 0.603
+length_ratio_to_target: 0.637
 length_note: "Recounted 2026-08-31: stored 645 understated the pre-repair body by roughly 130 words; true post-repair count 904, ratio 0.603, still outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 1879 words, under the 2000 short/medium line). Repair was badge-only: Friston PRS-07 and Hoffman PRS-03 are both Confidence High and were badged as though provisional, while Wright PRS-33 was badged 'high within method' on a Medium record — the one over-badge found in this queue, against five under-badges. Replaced note was a template shared with Days 241-242 and 244-246."
 mind_first_reframe: "The Passion's efficacy reaches the present as form-borne causation — a determinate saving pattern propagated through sensible instruments that limited agents can engage because the interface is their only access."
 central_theme_thread: "Sacraments meet perspective-limited agents at the limit of their perception, giving a sensible foothold for the resource-bounded computation toward loving unity."
@@ -52,7 +52,7 @@ Why sensible signs? Because agents are individuated by perspective-limitation an
 - **Levin PRS-01 + PRS-08 (morphogenetic control; agents in morphospace)** — *empirical-in-domain, analogical transfer.* Form as real cause carried across substrate and time.
 - **Friston PRS-07 (FEP substrate-independence)** — *formal, **Confidence High** and recorded as formally established* — the strongest-graded record cited on this day, and the bare "formal" badge understated it. This is the one bullet here whose warrant is a settled result rather than a proposal.
 - **Hoffman PRS-03 (perception fitness-tracking)** — *the record is a **rigorous mathematical proof at Confidence High**, not a speculation.* What is speculative is the step taken off it — that because perception is a fitness-tuned interface rather than a truth-mirror, sensible signs are therefore the *only* available access to a deeper order. The theorem constrains what perception delivers; it does not by itself establish that a saving pattern must be met through matter. That inference is this commentary's, and is marked.
-- **Rohr PRS-03 (the Universal Christ) + PRS-04 (Franciscan incarnational theology), the Rohr-tradition wiki** — *theological / contemplative; **both Medium**, so the pairing is level and the badge does not average anything away.* PRS-03 gives the pattern present in all creation; PRS-04 is the sharper one for this locus — the insistence that the spiritual is *always* embodied and never purely abstract, with the body as a site of knowing, which is precisely why matter is natively able to bear the saving form rather than merely signify it.
+- **Rohr PRS-21 (Universal-Christ-in-creation) + PRS-04 (Franciscan incarnational theology), the Rohr-tradition wiki** — *theological / contemplative; **both Medium**, so the pairing is level and the badge does not average anything away.* PRS-21 gives the pattern present in all creation — creation as the first incarnation. [Repointed from PRS-03 on 2026-09-15: PRS-03's label names the book, but its Problem and Solution argue for multi-tradition inquiry rather than for what creation is; PRS-21 is the substantive record and carries the same Medium grade, so the level-pairing claim above still holds.] PRS-04 is the sharper one for this locus — the insistence that the spiritual is *always* embodied and never purely abstract, with the body as a site of knowing, which is precisely why matter is natively able to bear the saving form rather than merely signify it.
 - **Wright PRS-33 (kingdom-participation as gift, not extrapolation), the Wright-tradition wiki** — *theological; **the record is Confidence Medium**, and the earlier "high within method" badge overstated it.* Note the direction: this bullet claimed more warrant than the register grants, where the rest of this queue understated it. Guards the realism of the once-for-all event the signs transmit: PRS-33's whole distinction turns on warrant — *a past event* versus *a trend line* — so the Passion has to be a real historical happening for the sacramental channel to carry anything at all.
 
 ## Where this leaves us

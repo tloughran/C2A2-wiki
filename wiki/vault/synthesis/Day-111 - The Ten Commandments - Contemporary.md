@@ -3,7 +3,7 @@ day: 111
 title: The Ten Commandments (Contemporary)
 pairs_with: "[[Day-111 - The Ten Commandments]]"
 length_target_words: 1500
-length_actual_words: 1791
+length_actual_words: 1844
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; figurative-representational cognition)"
@@ -15,13 +15,13 @@ karpathy_wiki_sources:
   - "Wright, Paul and the Faithfulness of God (Decalogue in covenantal frame)"
   - "Rohr, The Universal Christ (cosmic Christ as fulfillment of the figurative)"
 evidence_strength_summary: "Empirical: cross-cultural moral-priors research, costly-signaling work in cultural evolution, ritual-effects on group cohesion. Formal: predictive-processing accounts of typological / figurative cognition. Theological: Wright's covenantal reading; classical Christology."
-length_ratio_to_target: 1.194
-length_note: "Over target: two dense questions (Q.100 moral precepts/Decalogue + Q.101 ceremonial precepts), with Q.100 a.10 (charity as precept) requiring extended contemporary engagement."
+length_ratio_to_target: 1.229
+length_note: "Over target: two dense questions (Q.100 moral precepts and the Decalogue, plus Q.101 ceremonial precepts), with Q.100 a.10 (charity as precept) requiring extended contemporary engagement. Recounted 2026-09-15 at 1844 body words, ratio 1.229 against the 1500 short-tier target. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. The stored figure was 1791, a 53-word understatement with no edit in this file's history to attribute it to; the file was pass-marked on 2026-09-07 without a recount, so the residual predates that mark rather than arising from it. No prose was added or removed on 2026-09-15; the field is corrected, not grown. Still outside plus-or-minus 10 percent and inside plus-or-minus 25 percent either way, so the note's conclusion is unchanged by the correction."
 mind_first_reframe: "The moral and ceremonial precepts together constitute a formation ecology aimed at producing agents capable of charity — moral precepts defining the rule-system (left-hemispheric floor), ceremonial precepts producing the embodied identification and pattern-recognition (right-hemispheric scaffold) that prepares agents to recognize the realized pattern; both necessary, neither sufficient without grace, with the Pelagian failure mode (rule-compliance suffices) ruled out by the active-inference and broaden-and-build mechanics."
 central_theme_thread: "Perspective-limitation requires graded revelation: the pattern is invariant but the interface by which agents access it is staged; the Pelagian failure is to think rule-compliance suffices, when in fact the loving-unity computational task cannot be solved using only the resources the agent perceives from its own perspective — it requires the import of new priors (grace, charity, the indwelling Spirit) from outside, and the law itself reveals love as what the law was always pointing at."
 tags: [synthesis, day/111, theme/figurative-cognition, theme/charity-as-precept]
-last_qc_at: "2026-09-07T18:29:24"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-15T20:22:48"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 111 — The Ten Commandments (Contemporary)

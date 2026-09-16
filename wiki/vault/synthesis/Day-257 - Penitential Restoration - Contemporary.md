@@ -3,10 +3,10 @@ day: 257
 title: Penitential Restoration (Contemporary)
 pairs_with: "[[Day-257 - Penitential Restoration]]"
 length_target_words: 1500
-length_actual_words: 846
+length_actual_words: 875
 length_tier: short
-length_ratio_to_target: 0.564
-length_note: "Runs ~44% under the short tier (846 vs 1500; the field read 727 before this run and was 38 words low on a canonical recount even then): held to the PRS argument for a single question (III Q.89) rather than padded — central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered+flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom."
+length_ratio_to_target: 0.583
+length_note: "Runs well under the short tier: held to the PRS argument for a single question (III Q.89) rather than padded. Central response, difference-from-Aquinas, evidence strength, and verified bridges all present per the tiered and flexible length policy; tier-fit for compact episodes is part of the calibration question already pending Tom, and this file sits inside the Tom-owned 241-265 compact frontier band. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. Decomposition: the field read 727 before the 2026-09-08 pass and was 38 words low on that pass's recount; the stored 846 then recounted EXACT on 2026-09-15 pre-edit; the 29 added that day are citation apparatus only, being the Friston PRS-04 register grade and scope disclosure in the Bridges bullet. New total 875, ratio 0.583."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-03 the morphological-attractor formalism — a formal language for target morphology; PRS-82 target morphology as pattern memory held in the cell collective rather than the hardware, which is where the empirical regeneration claim actually sits)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; goal-directedness. The path-dependence of the recovered prior is a general FEP point, not PRS-04's own content.)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Restoration-as-pattern-completion is empirical-in-do
 mind_first_reframe: "Penitential restoration is regenerative return to a persisting target form (Levin pattern-completion), and because the recovered prior is history-shaped (Friston) it need not equal the lost one — it may run deeper for having corrected through error."
 central_theme_thread: "Restoration is the whole drawing a deviated, perspective-limited part back into membership and, in the drawing, deepening its share — Wright's 'salvation as inclusion' enacted as restored covenant membership, Rohr's 'falling upward' naming why the return can surpass the start."
 tags: [synthesis, day/257, theme/regenerative-restoration]
-last_qc_at: "2026-09-08T14:32:00"
+last_qc_at: "2026-09-15T20:23:14"
 last_qc_outcome: "rewrote"
 ---
 
@@ -49,7 +49,7 @@ The motif appears as re-inclusion after deviation. The limited agent that has st
 ## Bridges
 
 - **Levin PRS-03 (the morphological-attractor formalism) + PRS-82 (target morphology as pattern memory held in the collective, not the hardware)** — *formal (PRS-03) and empirical-in-domain (PRS-82).* Restoration as active return to a persisting set-point; sharpest resource.
-- **Friston PRS-04 (organism as active modeler; goal-directedness)** — *formal.* The unequal measure as path-dependence — an extension of the general FEP point rather than a claim PRS-04 itself makes.
+- **Friston PRS-04 (organism as active modeler; goal-directedness)** — *formal, and the softest of the day's anchors: the register marks this entry (Implicit) at Confidence Medium, and it is about the individual organism rather than about recovery after loss.* The unequal measure as path-dependence — an extension of the general FEP point rather than a claim PRS-04 itself makes.
 - **Rohr PRS-05 (transformed, not reset)** — *theological / contemplative.* Why the recovered self is refined rather than reloaded.
 - **Rohr PRS-02 (order–disorder–reorder; *Falling Upward*)** — *theological / contemplative.* Why the reorder that follows genuine disorder can run deeper than the order it replaced.
 - **Wright PRS-05 (salvation as incorporation, not relocation) + PRS-13 (*God's Homecoming*)** — *scriptural.* The content of the recovered relation: membership re-established, not a private state reloaded.

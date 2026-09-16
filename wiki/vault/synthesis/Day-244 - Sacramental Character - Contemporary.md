@@ -3,16 +3,16 @@ day: 244
 title: Sacramental Character (Contemporary)
 pairs_with: "[[Day-244 - Sacramental Character]]"
 length_target_words: 2200
-length_actual_words: 965
+length_actual_words: 997
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-03 attractor formalism; bioelectric pattern-memory)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism; PRS-08 the Daimon as principle of individuation)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler)"
   - "traditions/stump/prs_triplets.md (PRS-04 formal and final causality; PRS-14 hylomorphic metaphysics of corporate substance)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ; PRS-15 liberation from the ego / false self)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, creation as the first incarnation; PRS-15 liberation from the ego / false self)"
 evidence_strength_summary: "Pattern-memory as durable configuration empirical-in-domain (Levin); individuation-as-stable-boundary metaphysical (Kastrup); the soul-imprint claim theological; central-theme claim moderately supported by the individuation analogy."
-length_ratio_to_target: 0.439
+length_ratio_to_target: 0.453
 length_note: "Recounted 2026-08-31: stored 726 understated the pre-repair body by roughly 120 words; true post-repair count 965, ratio 0.439 — the lowest in this queue and outside the -25% floor. Tier verified CORRECT (paired transcript cleans to 2240 words, medium band), so this is not a mistiering. Repair was badge-only: two bundles each spanning Medium and High (Stump PRS-04/PRS-14, Rohr PRS-03/PRS-15) were carrying a single kind-only badge, with the Medium record named first in both — the recorded downward-averaging signature. Replaced note was a template shared with Days 241-243 and 245-246. Of the six files in this queue this is the strongest candidate for genuine expansion rather than acceptance: Q.63 is the metaphysically richest article in the stretch and closest to the project's own individuation thesis, and it is running at 0.44."
 mind_first_reframe: "Sacramental character is a durable individuating configuration — a stable set-point fixing the agent's standing and orientation, persisting through loss of the grace it normally grounds, as a bioelectric target-pattern persists through cellular turnover."
 central_theme_thread: "Character is a theological instance of durable individuation: a permanent mark fixing which limited perspective this agent is within the whole, oriented toward loving unity regardless of its current dispositional state."
@@ -53,7 +53,7 @@ This article is unusually close to the project's core. The central claim is that
 - **Kastrup PRS-02 + PRS-08 (identity within monism; the Daimon)** — *metaphysical; **both records Confidence High**, so this is a level pairing and the shared badge averages nothing away.* What individuates a persisting standing within a single underlying mind. The speculation sits not in the records but in reading a *sacramental* mark as an instance of dissociative individuation, which is this commentary's step.
 - **Friston PRS-04 (active modeler)** — *formal; **Medium**, marked (Implicit).* The mark as a persisting prior deputing the agent to a role.
 - **Stump PRS-04 (formal and final causality recovered) + PRS-14 (hylomorphic metaphysics of corporate substance), the Stump-tradition wiki** — *theological-philosophical; **one grade per record**: PRS-04 is **Medium** and marked (Implicit), PRS-14 is **High**.* PRS-04 is the formal-causality register a "mark" claim needs to be more than metaphor — and it is the softer, proposal-grade record of the two, though it is named first and carries the heavier load here. PRS-14 supplies the whole the mark deputes the agent *into* — a church-as-body-of-Christ with a real form that organizes constituents without dissolving them, which is what a deputation to worship presupposes.
-- **Rohr PRS-03 (the Universal Christ) + PRS-15 (liberation from the ego / false self), the Rohr-tradition wiki** — *theological / contemplative; **one grade per record**: PRS-03 is **Medium**, PRS-15 is **High**.* PRS-15 is the firmer record and the one written for a mind-monist setting — it is a bridge text between the ego-as-constructed-interface reading and scriptural soteriology, which is exactly the joint this bullet works at. The orientation of the mark is toward the cosmic pattern (PRS-03), and PRS-15 names what the imprinted identity displaces — the constructed ego — which is the contemplative counterpart of a durable configuration replacing a self-assembled one.
+- **Rohr PRS-21 (Universal-Christ-in-creation) + PRS-15 (liberation from the ego / false self), the Rohr-tradition wiki** — *theological / contemplative; **one grade per record**: PRS-21 is **Medium**, PRS-15 is **High**.* PRS-15 is the firmer record and the one written for a mind-monist setting — it is a bridge text between the ego-as-constructed-interface reading and scriptural soteriology, which is exactly the joint this bullet works at. The orientation of the mark is toward the cosmic pattern (PRS-21, creation as the first incarnation; repointed from PRS-03 on 2026-09-15, whose Problem and Solution warrant multi-tradition inquiry rather than describing creation — same Medium grade, so the asymmetry stated here is unchanged), and PRS-15 names what the imprinted identity displaces — the constructed ego — which is the contemplative counterpart of a durable configuration replacing a self-assembled one.
 
 ## Where this leaves us
 

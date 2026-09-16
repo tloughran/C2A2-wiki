@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-201 - The Vice of Curiosity - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/201, pars/II, q/166, q/167]
-last_qc_at: "2026-08-30T20:25:24"
+last_qc_at: "2026-09-15T02:30:28"
 last_qc_outcome: "pass"
 ---
 

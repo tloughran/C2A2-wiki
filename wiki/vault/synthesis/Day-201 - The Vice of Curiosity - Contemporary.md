@@ -17,8 +17,8 @@ evidence_strength_summary: "Precision-weighting as the mechanism of regulated cu
 mind_first_reframe: "Knowledge is never neutral intake; it is precision allocated across a bounded inference system whose every query spends a finite resource. Studiousness is well-calibrated precision-control — pursuing the truth that matters, at the right intensity, in the right direction; curiosity is misallocated precision — attention spent for fitness-payoff, vanity, or salience rather than toward the truth that orders the whole. The 'sovereign truth' is the limit where all perspective-limitation is removed and the simple whole is seen."
 central_theme_thread: "If each agent is individuated by the limits of its perspective and the goal is loving union with the whole, then how an agent spends its scarce attention is already a moral act: curiosity is the perspective curving its knowing back on itself or on the merely salient, studiousness is the perspective directing its knowing toward the truth that contains all the others. Knowing rightly is a step in the computation toward unity."
 tags: [synthesis, day/201, theme/ordered-attention]
-last_qc_at: "2026-09-07T22:28:06"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-15T02:30:28"
+last_qc_outcome: "pass"
 ---
 
 # Day 201 — The Vice of Curiosity (Contemporary Parallel)
