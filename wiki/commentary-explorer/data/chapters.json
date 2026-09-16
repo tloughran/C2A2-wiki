@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source_pdf_offset_from_book": 5,
-    "comment": "PDF page = book page + 5. TOC verified by Tom 2026-05-07: Preface front matter + Introduction + 10 numbered Chapters. Annotated commentary file covers PDF pp. 5-178 only — Chapters IX and X have no annotations and are kept as structural placeholders."
+    "comment": "PDF page = book page + 5. TOC verified by Tom 2026-05-07: Preface front matter + Introduction + 10 numbered Chapters. Annotated commentary file covers PDF pp. 5-240, all ten chapters, 218 pages carrying 3015 annotations. Chapters IX and X were annotated 2026-09-15 and are no longer structural placeholders. Model split across the corpus: pp. 5-178 read by Sonnet, pp. 179-240 by claude-opus-5."
   },
   "chapters": [
     {"id": "preface", "number": -1, "title": "Preface (front matter)",                                                              "pdf_pages": [1, 5],     "title_confidence": "verified"},
