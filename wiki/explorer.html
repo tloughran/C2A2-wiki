@@ -264,7 +264,14 @@
 
 /* HELP MODAL */
 #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
-#help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 28px 32px; width: 520px; max-width: 92%; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6); }
+#help-card { background: #12121c; border: 1px solid #2a2a3a; border-radius: 10px; padding: 28px 32px; width: 520px; max-width: 92%; position: relative; box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    /* The card grew when the Education help gained the five-tools section: at a 700px
+       viewport it measured 941px tall with max-height:none, which pushed #help-title
+       and #help-close above the top of the screen with no way to scroll to them.
+       Cap it to the viewport and let the card scroll instead. */
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
 #help-title { color: #C9A84C; font-size: 17px; font-family: Georgia, serif; font-weight: 700; margin: 0 0 14px; }
 /* pre-line so a multi-paragraph body keeps its breaks; the existing single
    paragraph descriptions contain no newlines, so they are unaffected. */
@@ -414,7 +421,7 @@
     <button class="tab-btn" data-src="physics_explorer.html">Physics Explorer</button>
     <button class="tab-btn" data-src="commentary-explorer/commentary_explorer.html">TRV Commentary</button>
     <button class="tab-btn" data-src="heartbeat/index.html">AI Heartbeat</button>
-    <button class="btn-help-row" onclick="showHelp()" title="About this view">?</button>
+    <button class="btn-help-row" onclick="showHelp()" title="About this view, and the five tools">?</button>
   </div>
 
 </div>
@@ -974,6 +981,10 @@ function showHelp() {
     src = active ? active.getAttribute('data-src') : '';
   }
   var descriptions = {
+    '__section:education': {
+      title: 'Community Education \u2014 what these five tools are',
+      body: 'Five tools, one claim: that a community\'s own material \u2014 in whatever form it already exists \u2014 can be turned into something a newcomer can climb into, and that the same apparatus does it in every case. Each tool takes a different kind of source. A long text document (RC Document Explorer \u2014 the 471-page pilot tome). A spreadsheet (RC Sandbox \u2014 the TL Sandbox worksheet, 2,191 cells). A curriculum (Physics Explorer \u2014 an undergraduate physics sequence). Hand-written notes, including marginalia written over printed pages (TRV Commentary \u2014 annotations on MacIntyre\'s Three Rival Versions). And news, which never stops arriving (AI Heartbeat \u2014 fast-moving AI developments, compiled). The five examples here are all v.1: they are the Resurrecting Civility community\'s own documents, and they are here because this is the RC instance of the C2A2 Explorer. They are examples, not the point. What travels to another community is the capability set \u2014 the five source types and what each tool does with them. A different community swaps in its own: its founding documents, its working spreadsheets, its teaching sequence, the marginalia of whoever has read most closely, and whatever it must keep up with. It then gets these same five tools over its own material. That substitution is the test. If the tools only work on these documents, they are a private reading apparatus; if they work on yours, they are what C2A2 claims \u2014 a way for a community to become legible to itself, and then to a rival.'
+    },
     'community_interactions.html': {
       title: 'Community Interactions',
       body: 'A scaffold for the four levels of dialogue C2A2 cares about, and a live rendering of where the project is heading. It is the page that says what "interaction" is going to mean before the instruments exist to measure it.'
@@ -1000,7 +1011,7 @@ function showHelp() {
     },
     'rc_document_explorer.html': {
       title: 'RC Document Explorer',
-      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (679 hyperlinked sections), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically via the shared C2A2 broker (no key needed). First of three planned Education tools, alongside the Physics Explorer and the Three Rival Versions commentary.'
+      body: 'A pedagogical explorer for the 471-page "Resurrecting Civility" pilot tome — the founding research dialogue behind the C2A2 thinker network. Three coordinated views: Contents (a 650-link table of contents over seven parts, forty chapters and their apparatus), Thinkers (nine research programs, each with a 500-word summary and its Problem-Resource-Solution triplets), and Solved (the full PRS table with synergistic-coil detection — solutions that answer problems across traditions). Click any P, R, or S to jump to its source page; use Return to come back. The chat pane searches the document by keyword, or answers semantically via the shared C2A2 broker (no key needed). First of the five Education tools, and one half of the Resurrecting Civility corpus \u2014 the RC Sandbox reads the other half.'
     },
     'rc_sandbox_notebook.html': {
       title: 'RC Sandbox',
@@ -1012,7 +1023,7 @@ function showHelp() {
     },
     'commentary-explorer/commentary_explorer.html': {
       title: 'TRV Commentary',
-      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright.'
+      body: 'An annotated-reading explorer for Alasdair MacIntyre\'s Three Rival Versions of Moral Enquiry -- his 1988 Gifford Lectures, published by Notre Dame Press in 1990. The book is laid out as a graph: its structural divisions are chapter nodes, and satellites carry Tom Loughran\'s marginal commentary, PRS triplets, and companion views from Eleonore Stump and N. T. Wright. Annotation covers every page from pp. 5-240, all ten chapters, with 3,400 marks read from the scans. The page scans themselves are a local-only sidecar \u2014 the book is in copyright, so the tool shows a placeholder where a scan would be.'
     },
     'heartbeat/index.html': {
       title: 'AI Heartbeat',
@@ -1028,8 +1039,19 @@ function showHelp() {
     }
   };
   var info = descriptions[src] || { title: 'C2A2 Explorer', body: 'Community Dialogue Accelerator/Detector System — an integrated suite of visualization and analysis tools for the RC Wiki knowledge base.' };
+  var helpBody = info.body;
+  /* In the Education chapter the ROW's `?` is the only help control -- #btn-help
+     belongs to #row2 and is hidden here -- so one popup has to carry both: what this
+     tool is, and what the five of them are together. Appended, never substituted: an
+     earlier pass pointed the row button straight at the section entry and silently
+     lost every per-tool description. */
+  var eduChap = document.getElementById('chap-education');
+  if (eduChap && eduChap.classList.contains('active') && descriptions['__section:education']) {
+    helpBody = info.body + '\n\n\u2500\u2500\u2500\n\nABOUT THESE FIVE TOOLS\n\n'
+             + descriptions['__section:education'].body;
+  }
   document.getElementById('help-title').textContent = info.title;
-  document.getElementById('help-body').textContent = info.body;
+  document.getElementById('help-body').textContent = helpBody;
   document.getElementById('help-modal').style.display = 'flex';
 }
 function closeHelp() {
