@@ -196,12 +196,17 @@
   }
 
 
+  /* The tab never extends under the shell's command strip (#ccl-bar).
+     Before this, bottom-anchored tab controls -- the Sociogram's search row,
+     Community Explorer's search options -- were painted over and unclickable
+     (measured 2026-09-16 with elementFromPoint). */
+  :root { --ccl-h: 37px; }
   #content-frame {
     position: fixed;
-    top: 88px; left: 0; right: 0; bottom: 0;
+    top: 88px; left: 0; right: 0; bottom: var(--ccl-h);
     border: none;
     width: 100%;
-    height: calc(100% - 88px);
+    height: calc(100% - 88px - var(--ccl-h));
   }
 
 /* ── RECORDING (moved from wiki_narration.html) ── */
@@ -332,8 +337,14 @@
   }
   #content-frame {
     top: 96px;
-    height: calc(100% - 96px);
+    height: calc(100% - 96px - var(--ccl-h));
   }
+  /* The command strip must fit a phone: the voice launcher collapses to its
+     dot (title still says "Talk to the wiki by voice") and the input yields
+     a little width, or the bar overflows the right edge by ~95px at 375px. */
+  #vg-launch { padding: 4px 8px; }
+  #vg-launch #vg-label { display: none; }
+  #ccl-bar #ccl-input { max-width: 40vw; }  /* outranks the base rule below */
   /* Help modal: full-width on phone, easier dismiss */
   #help-card { width: 92%; padding: 20px 18px; }
   #help-title { font-size: 16px; }
@@ -356,6 +367,7 @@
    in a later increment (voice_guide_redesign.md). */
 #ccl-bar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 4000;
+  height: var(--ccl-h); box-sizing: border-box;
   display: flex; align-items: center; gap: 8px;
   padding: 6px 10px; background: rgba(10,10,15,0.92);
   border-top: 1px solid #2a2a3a; font-size: 12px;
@@ -449,6 +461,9 @@
   <input id="ccl-input" type="text" autocomplete="off" spellcheck="false"
          placeholder='command  e.g.  only levin friston   |   open mcgilchrist   |   fit'>
   <span id="ccl-result">CCL ready. Type a command and press Enter.</span>
+  <button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
+    <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
+  </button>
 </div>
 
 <script>
@@ -1015,7 +1030,7 @@ function showHelp() {
     },
     'rc_sandbox_notebook.html': {
       title: 'RC Sandbox',
-      body: 'The second document of the Resurrecting Civility corpus: the TL Sandbox worksheet of the master workbook, reordered into a readable notebook without editing a word. 2,191 spreadsheet cells sit under a 36-node outline drawn from the argument itself, and each cell keeps its provenance -- sheet row, position in the row (left to right is the order of accretion), word count, and the voice where it is not Loughran. Nothing is rewritten, merged or summarised, so the notebook is evidence as much as it is reading: the headings and cross-references are editorial, the cell text is not. Two toggles filter it -- quoted voice, and the cells still carrying a work-order flag. Companion to the RC Document Explorer, which reads the pilot tome; together they are one corpus in two documents.'
+      body: 'The second document of the Resurrecting Civility corpus: the TL Sandbox worksheet of the master workbook, reordered into a readable notebook without editing a word. 2,191 spreadsheet cells sit under a 36-node outline drawn from the argument itself, and each cell keeps its provenance -- sheet row, position in the row (left to right is the order of accretion), word count, and the voice where it is not Loughran. Nothing is rewritten, merged or summarised, so the notebook is evidence as much as it is reading: the headings and cross-references are editorial, the cell text is not. A toggle narrows it to the quoted voices; checkboxes in the outline cut whole sections; By row regroups the same cells as the sheet holds them, one block per row, columns in the order they were written; and Read-through shows whatever survives the cuts as plain prose with the margin apparatus hidden. Companion to the RC Document Explorer, which reads the pilot tome; together they are one corpus in two documents.'
     },
     'physics_explorer.html': {
       title: 'Physics Explorer',
@@ -1085,13 +1100,16 @@ function showReaderHelp() {
      via the switch_tab function tool.
      ═══════════════════════════════════════════════════════════════════ -->
 <style>
+  /* Lives in the right end of #ccl-bar (the shell's own strip), not floating
+     over the tab: as a fixed pill it covered Community Explorer's Search
+     button and the bottom-right corner of every tab. */
   #vg-launch {
-    position: fixed; right: 20px; bottom: 20px; z-index: 100001;
+    position: static; margin-left: auto; flex-shrink: 0;
     display: flex; align-items: center; gap: 8px;
     background: #12121c; border: 1px solid #C9A84C; color: #C9A84C;
-    font-family: -apple-system, sans-serif; font-size: 13px; font-weight: 600;
-    letter-spacing: 0.3px; padding: 10px 15px; border-radius: 24px;
-    cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.3px; padding: 4px 12px; border-radius: 24px;
+    cursor: pointer; box-shadow: none;
     transition: background 0.15s, color 0.15s, box-shadow 0.15s;
   }
   #vg-launch:hover { background: #1c1c28; box-shadow: 0 8px 26px rgba(201,168,76,0.25); }
@@ -1155,10 +1173,6 @@ function showReaderHelp() {
   #vg-transcript .who { font-weight: 700; opacity: 0.8; margin-right: 5px; }
   #vg-hint { margin-top: 10px; font-size: 11px; color: #6a6a7a; line-height: 1.5; }
 </style>
-
-<button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
-  <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
-</button>
 
 <div id="vg-panel">
   <div id="vg-head">
