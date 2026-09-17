@@ -3,8 +3,8 @@ day: 274
 title: Holy Orders (Contemporary)
 pairs_with: "[[Day-274 - Holy Orders]]"
 length_target_words: 1500
-length_actual_words: 1045
-length_ratio_to_target: 0.70
+length_actual_words: 1081
+length_ratio_to_target: 0.72
 length_note: "Short tier — the repetition/character question and the opening of Order (Q.33–34) are brief in Habash's treatment; the contemporary engagement on durable role-differentiation is complete, not padded."
 length_tier: short
 karpathy_wiki_sources:
@@ -12,11 +12,11 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling — role-differentiation within the collective agent for joint inference)"
   - "traditions/rohr/prs_triplets.md (PRS-07 perichoretic relation — differentiation as gift-and-receipt, not domination)"
   - "traditions/wright/prs_triplets.md (PRS-32 — roles individuated by call, gift, and commission; members differentiated by function within one composite agent, not ranked by category; 1 Cor 12)"
-evidence_strength_summary: "Role-differentiation within a collective agent is formal (Friston PRS-06); the indelible-character-as-stable-imprint analogy is empirical-by-analogy (Levin PRS-01, drawn carefully); the relational reading of order is theological (Rohr PRS-07, Wright); the sacramental conferral of an ontological character is theological."
+evidence_strength_summary: "Role-differentiation within a collective agent is formal-by-extension (Friston PRS-06, Label (Implicit), Confidence Medium); the indelible-character-as-stable-imprint analogy is empirical-by-analogy (Levin PRS-01, drawn carefully); the relational reading of order is theological (Rohr PRS-07, Wright); the sacramental conferral of an ontological character is theological."
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-09-08T22:27:59"
+last_qc_at: "2026-09-16T16:22:10"
 last_qc_outcome: "rewrote"
 ---
 
@@ -42,7 +42,7 @@ The Rohr-tradition wiki's PRS-07 keeps the differentiation from collapsing into 
 
 The contemporary-parallel reading: **Order is durable role-differentiation within a collective agent, imprinted as a stable functional target-state and structured as perichoretic gift.** What it *shares* with Aquinas: that the priesthood is genuinely differentiated, that the differentiation serves the one body, and that the imprint is meant to be stable rather than provisional. Where it *reframes*: it relocates the permanence of "character" from a free-standing metaphysical mark to a stably imprinted target-state in a cooperative system (Levin PRS-01), and it reads the grades of order functionally — as the role-structure a collective agent needs to coordinate one act (Friston PRS-06) — rather than primarily as a hierarchy of status. The perichoretic frame (Rohr PRS-07) and the Pauline body (Wright) then guard against reading hierarchy as domination.
 
-Where the evidence is *firm*: that collective agency requires durable role-differentiation is formally grounded (Friston PRS-06) and observable wherever cells, organisms, and groups cohere. Where it is *analogical*: the morphogenetic-memory reading of indelible character (Levin PRS-01) is an illuminating analogy, not a demonstration that sacramental character *is* a bioelectric target-state. Where it is *theological*: that ordination confers a real, God-given ontological character configuring the man to Christ the priest is a claim of faith, marked as such.
+Where the evidence is *firmest*: that collective agency requires durable role-differentiation is observable wherever cells, organisms, and groups cohere; its formal statement here (Friston PRS-06) is the register's (Implicit) extension of the free-energy principle to multi-agent systems, Confidence Medium — a reconstruction of the position, not a result established at that scale. Where it is *analogical*: the morphogenetic-memory reading of indelible character (Levin PRS-01) is an illuminating analogy, not a demonstration that sacramental character *is* a bioelectric target-state. Where it is *theological*: that ordination confers a real, God-given ontological character configuring the man to Christ the priest is a claim of faith, marked as such.
 
 ## The central-theme thread
 
@@ -51,7 +51,7 @@ The central claim holds that each agent perceives only in part, and that loving 
 ## Bridges
 
 - **Levin PRS-01** (empirical, by analogy): bioelectric target states as morphogenetic memory — a stable, persisting imprint that thereafter governs a member. Why this pairing: it gives "indelible character" an empirically intelligible image, offered as illumination.
-- **Friston PRS-06** (formal): multi-agent coherence via mutual modeling and role-differentiation — the collective agent acting as one through specialized members. Why: it reads the grades of Order functionally, as the structure coordinated agency requires.
+- **Friston PRS-06** (formal-by-extension; Label (Implicit), Confidence Medium in the register): multi-agent coherence via mutual modeling and role-differentiation — the collective agent acting as one through specialized members. Why: it reads the grades of Order functionally, as the structure coordinated agency requires.
 - **Rohr PRS-07** (theological): the perichoretic Trinity — relation as basal gift-and-receipt. Why: it prevents differentiation from being read as domination.
 - **PRS-32 in the Wright-tradition wiki / 1 Cor 12, body of Christ** (theological): members differentiated by function within one composite agent, not ranked by category. Why: it supplies the direct scriptural form for sacred order as functional diversity in unity.
 

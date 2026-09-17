@@ -3,15 +3,15 @@ day: 267
 title: Minister of the Keys (Contemporary)
 pairs_with: "[[Day-267 - Minister of the Keys]]"
 length_target_words: 1500
-length_actual_words: 1137
+length_actual_words: 1190
 length_tier: short
-length_ratio_to_target: 0.76
-length_note: "Compact by design: Suppl. Q.19-20 (minister and subjects of the keys) develops the order/jurisdiction distinction and the membership-bounded reach of authority completely; brief because the articles are short — padding would violate the no-padding rule. Substance complete per the five-question review."
+length_ratio_to_target: 0.793
+length_note: "Compact by design: Suppl. Q.19-20 (minister and subjects of the keys) develops the order/jurisdiction distinction and the membership-bounded reach of authority completely; brief because the articles are short — padding would violate the no-padding rule. Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1137, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 53 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1137 to 1190, ratio 0.758 to 0.793. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-22 the group-level Markov blanket as the collective's own inside/outside boundary; PRS-23 the degree-of-unity criterion; PRS-06 the coupled collective)"
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; bioelectric coherence as restoration of cells to the body's collective morphogenetic field)"
   - "traditions/wright/prs_triplets.md (PRS-34 justification as God's declaration of covenant membership; table fellowship as the operative test of belonging)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern not confined to any single institutional expression)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation — creation as the first incarnation, the divine pattern exceeding any single minister or institutional expression; repointed from PRS-03 on 2026-09-16, see Bridges note)"
 evidence_strength_summary: "The scope of corrective authority tracking the boundary of membership is formal (Friston PRS-22 group-level blanket, PRS-23 the degree criterion) + empirical-in-domain (Levin PRS-02, the field acts on its own coupled cells); validity-requires-ordination/jurisdiction and the limit to the living are sacramental-theological."
 mind_first_reframe: "Who can wield the keys, and over whom, is reframed as a fact about coupling: a collective agent's corrective power reaches exactly the members inside its own group-level Markov blanket (Friston PRS-22) — the morphogenetic field commands its own coupled cells and no others (Levin PRS-02) — so jurisdiction = the boundary of the perspective-sharing whole."
 central_theme_thread: "The reach of authority traces the reach of shared perspective: a member can be guided toward the whole only insofar as he is coupled into it; the keys bind the living subject, not the stranger or the dead."
@@ -53,7 +53,7 @@ The scope of the keys states the central claim's converse. If a perspective-limi
 - **PRS-06 in the Friston-tradition wiki (the coupled collective agent)** — *formal, medium confidence.* The whole acts on its coupled members, not on what lies across its boundary.
 - **PRS-02 in the Levin-tradition wiki (cancer as defection; bioelectric coherence restoring cells to the collective field)** — *empirical-in-domain.* The biological mirror of "only one's own subjects" — an uncoupled cell is not commanded.
 - **PRS-34 in the Wright-tradition wiki (justification as God's declaration of covenant membership; table fellowship, not badge-keeping, as the test of belonging)** — *theological / historical.* The church acts within its own covenanted body.
-- **PRS-03 in the Rohr-tradition wiki (the Universal Christ — the divine pattern not confined to any single institutional expression)** — *theological / contemplative.* Authority over subjects ministers a pattern that exceeds the minister; it is not ownership of persons.
+- **PRS-21 in the Rohr-tradition wiki (Universal-Christ-in-creation — creation as the first incarnation)** — *theological / contemplative; the record is **Confidence Medium**.* Authority over subjects ministers a pattern that exceeds the minister; it is not ownership of persons. [Repointed from PRS-03 on 2026-09-16: PRS-03's Problem and Solution argue a warrant for multi-tradition inquiry, whereas this bullet claims something about the ontological standing of what the minister ministers — that the pattern exceeds him. Object-type mismatch; PRS-21 is the substantive record and is also Medium, so no evidence strength changes.]
 
 ## Where this leaves us
 

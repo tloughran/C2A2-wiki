@@ -3,22 +3,22 @@ day: 277
 title: Vestments & Impediments (Contemporary)
 pairs_with: "[[Day-277 - Vestments & Impediments]]"
 length_target_words: 2200
-length_actual_words: 1487
+length_actual_words: 1502
 length_tier: medium
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-16 BEFORE editing: 1487 exactly as stored. This run's removal of an inert Rohr PRS-03 co-citation, with its dated note, then added 15 words net of citation apparatus: 1487 → 1502, ratio 0.676 → 0.683. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-18 ZBS band-width — widening a community so out-group evidence is assimilated rather than repelled, cited here as a constraint ON impediments rather than a warrant for them)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace, PRS-17 bioelectric interface to collective intelligence — role assignment by the field of the whole)"
-  - "wiki/traditions/rohr/prs_triplets.md (PRS-03 Universal Christ, PRS-01 dualistic vs non-dual knowing)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-01 dualistic vs non-dual knowing. PRS-03 removed 2026-09-16: it was co-cited but anchored no claim here; the validity/worthiness non-collapse is PRS-01's Solution, and PRS-03's Problem and Solution concern multi-tradition inquiry)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-13 salvation as participation in God's homecoming among the people being formed)"
 evidence_strength_summary: "Friston multi-agent coherence formal but its social-scale application speculative; Levin role-assignment empirical at tissue scale; Rohr/Kastrup/Wright claims theological/metaphysical, firm within tradition, not empirical."
-length_ratio_to_target: 0.676
+length_ratio_to_target: 0.683
 mind_first_reframe: "An impediment is best understood as a coherence-condition the collective imposes on candidates for a real role, not a private moral score — which dissolves the paradox that an unworthy minister still confers a valid sacrament."
 central_theme_thread: "The validity/worthiness split is the central theme's deepest consolation: the body's capacity to mediate the whole does not wait on any member's perfection; the limited, even unworthy, agent is still drawn into a unity whose competence is not his own."
 tags: [synthesis, day/277, theme/role-versus-agent]
-last_qc_at: "2026-09-08T18:29:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-16T14:30:29"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 277 — Vestments & Impediments (Contemporary Parallel)
@@ -37,7 +37,7 @@ The Friston-tradition program supplies the leading move. Tom's PRS-form record o
 
 The Levin-tradition program reinforces this one scale down. PRS-08 (*cells as cognitive agents in anatomical morphospace*, Confidence High) treats the cell as a goal-directed agent navigating morphospace, and PRS-17 (*the bioelectric interface to the collective intelligence of morphogenesis*) supplies the part that matters here: bioelectric pattern memory as "cognitive glue" constituting a collective knower above the level of individual cells, so that role-assignment is something the whole does to its members. A cell is licensed into a role by the field, and there exist real conditions — bioelectric, positional — under which a cell *cannot* take a given role. That gives "impediment" an empirical analogue: a genuine unfitness-for-this-function, distinct from any moral evaluation.
 
-Theologically, Rohr's program (PRS-03, *the Universal Christ*; PRS-01, *dualistic vs non-dual knowing*) warns against collapsing validity and worthiness into a single dualistic ledger: the office's grace is not the office-holder's merit, and to confuse them is exactly the dualism Rohr's contemplative tradition resists.
+Theologically, Rohr's program (PRS-01, *dualistic vs non-dual knowing*) warns against collapsing validity and worthiness into a single dualistic ledger: the office's grace is not the office-holder's merit, and to confuse them is exactly the dualism Rohr's contemplative tradition resists.
 
 ## Solution (proposed, speculative)
 
@@ -52,7 +52,7 @@ The project's wager is that loving unity is computed by agents who each see only
 - **Friston PRS-06 (formal; social application speculative):** role = node in a shared generative model; validity = function-insensitivity to occupant noise. The cleanest naturalistic statement of *ex opere operato*.
 - **Friston PRS-18 (`wiki/traditions/friston/prs_triplets.md`; Confidence Speculative):** ZBS band-width — *widening* a community's band so out-group-originating evidence is assimilated rather than repelled. Cited here as a **constraint on** impediments, not a warrant for them: it prices every exclusion in evidence forgone. The reading of canonical impediments as coherence-conditions is this synthesis's own extension, declared.
 - **Levin PRS-08 + PRS-17 (`wiki/traditions/levin/prs_triplets.md`; PRS-08 Confidence High, empirical at cell and tissue scale):** the cell as goal-directed agent in morphospace, and bioelectric pattern memory as the "cognitive glue" by which the whole licenses members into roles. Real unfitnesses exist, giving "impediment" a non-moral analogue.
-- **Rohr PRS-01 / PRS-03 (theological):** non-dual frame keeps validity and worthiness from collapsing; sacramental grace is the office's, not the man's.
+- **Rohr PRS-01 (theological; Confidence High):** non-dual frame keeps validity and worthiness from collapsing; sacramental grace is the office's, not the man's. [PRS-03 dropped from this bullet on 2026-09-16: it anchored no claim here — the non-collapse is PRS-01's Solution.]
 - **Wright PRS-13 (theological / scriptural):** salvation as participation in God's homecoming among a people being formed — the scriptural warrant for reading Phil 2:12 as membership rather than merit-tally, which is what makes the validity/worthiness split a consolation rather than a loophole.
 - **Kastrup PRS-02 (metaphysical, speculative):** identity within monism underwrites a real role borne by an imperfect occupant.
 

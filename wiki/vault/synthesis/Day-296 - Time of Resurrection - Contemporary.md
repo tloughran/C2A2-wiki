@@ -3,21 +3,21 @@ day: 296
 title: Time of Resurrection (Contemporary)
 pairs_with: "[[Day-296 - Time of Resurrection]]"
 length_target_words: 1500
-length_actual_words: 1230
+length_actual_words: 1265
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 target-state selects which matter realizes the form; PRS-03 morphological attractor; PRS-17 bioelectric pattern memory persisting across cell divisions)"
   - "wiki/traditions/carroll/prs_triplets.md (PRS-13 timeless universe / Wheeler-DeWitt; PRS-15 Past Hypothesis / arrow of time)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
-  - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; the unknown-day/watchfulness reading is carried canonically by declared absence from the register, not by id)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; the unknown-day/watchfulness reading is carried canonically by declared absence from the register, not by id — re-searched 2026-09-16 at 66 records, still absent)"
 evidence_strength_summary: "That identity is carried by an organizing principle and not by the specific matter is empirical at the biological scale (Levin); the time/arrow framing is physical (Carroll); persistence of the individuated perspective is philosophical (Kastrup); the deliberate hiddenness of the day is scriptural-theological (Wright); the two-tier divine/angelic causation stays theological."
-length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1034 -> 1070, +36 (3.5%), ratio 0.689 -> 0.713. Seventh independent confirmation that the field understates, same direction. Still ~29% under the short tier (tier verified correct: transcript word_count 1236): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated."
-length_ratio_to_target: 0.820
+length_note: "RECOUNTED 2026-08-16 (layout-aware, body-only) on an UNTOUCHED file — this pair passed on substance and no prose was moved: 1034 -> 1070, +36 (3.5%), ratio 0.689 -> 0.713. Seventh independent confirmation that the field understates, same direction. Still ~29% under the short tier (tier verified correct: transcript word_count 1236): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Sits inside the tail-Suppl length band already pending Tom; not re-escalated. RECOUNTED 2026-09-16 BEFORE editing: 1230 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's re-dating of the Wright absence declination then added 35 words of citation apparatus: 1230 to 1265, ratio 0.820 to 0.843. No argument altered."
+length_ratio_to_target: 0.843
 mind_first_reframe: "The matter has no claim on the soul; an extrinsic organizing principle selects which matter realizes the form — identity rides the pattern and its ordination, never the atoms. The day is hidden by design, to keep every perspective awake."
 central_theme_thread: "Aquinas says outright that the ashes have no natural inclination to the soul — identity is not in the matter but in the principle that orders it; and the hour is hidden precisely so that every limited perspective stays watchful: epistemic limitation deployed for the agent's good."
 tags: [synthesis, day/296, theme/identity-rides-the-organizing-principle-not-the-matter]
-last_qc_at: "2026-09-09T00:23:20"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-16T18:32:10"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 296 — Time of Resurrection (Contemporary Parallel)
@@ -49,7 +49,7 @@ Two project themes converge here. First, *identity is the pattern, not the atoms
 - **Levin PRS-03 (formal, high confidence — a modelling language, not a measured result):** the morphological-attractor formalism borrows free-energy/least-action machinery to describe basins of morphological attraction. It supplies the vocabulary in which the above is stated; it is not itself the empirical finding, and is not cited here as one.
 - **Carroll PRS-13 / PRS-15 (physical):** a layered time/atemporality picture in which "instantaneous at the end of time" connects to real questions of whether time is fundamental.
 - **Kastrup PRS-02 (philosophical):** the same individuated perspective is the one reunited.
-- **Wright PRS-03 (scriptural, high confidence):** inaugurated eschatology — the present as the space between a decisive event and its full elaboration. This carries the *already/not-yet* structure of the deferral. The further reading of the unknown hour as a *vocational* hiddenness ordered to watchfulness is carried canonically (*Surprised by Hope*), not by id: a term scan of the live Wright node for *watchful*, *unknown day*, *unknown hour*, *parousia*, *second coming*, *delay*, and *imminen-* returns no record, so this synthesis declares the extension as its own rather than attributing it to an entry that does not exist.
+- **Wright PRS-03 (scriptural, high confidence):** inaugurated eschatology — the present as the space between a decisive event and its full elaboration. This carries the *already/not-yet* structure of the deferral. The further reading of the unknown hour as a *vocational* hiddenness ordered to watchfulness is carried canonically (*Surprised by Hope*), not by id: a term scan of the live Wright node for *watchful*, *unknown day*, *unknown hour*, *parousia*, *second coming*, *delay*, and *imminen-* returns no record, so this synthesis declares the extension as its own rather than attributing it to an entry that does not exist. [Re-searched 2026-09-16 at 66 Wright records with the same terms plus *thief in the night* and *return of Christ*: still none. The declination is dated to that register size; re-run it when the register grows.]
 
 ## Where this leaves us
 

@@ -16,8 +16,8 @@ length_ratio_to_target: 0.712
 mind_first_reframe: "Subtlety and agility are the body's responsiveness to the soul taken toward its limit — the form's command of its matter so complete that location and motion answer to the will; the 'two bodies in one place' cases are flagged as miraculous, not as physics."
 central_theme_thread: "The glorified body's spatial freedom is the perfected perspective's agency: control overflowing from the higher (soul) to the lower (body), so the embodied viewpoint moves and is placed as love directs — without the resource-scarcity that limits agency now."
 tags: [synthesis, day/299, theme/subtlety-and-agility-as-the-forms-command-of-matter-at-its-limit]
-last_qc_at: "2026-09-09T02:30:39"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-16T20:23:35"
+last_qc_outcome: "pass"
 ---
 
 # Day 299 — Glorious Subtlety (Contemporary Parallel)

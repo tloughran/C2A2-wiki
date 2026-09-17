@@ -3,20 +3,20 @@ day: 268
 title: Excommunication (Contemporary)
 pairs_with: "[[Day-268 - Excommunication]]"
 length_target_words: 1500
-length_actual_words: 1204
+length_actual_words: 1252
 length_tier: short
-length_ratio_to_target: 0.803
-length_note: "Compact by design: Suppl. Q.21-22 (excommunication) develops the medicinal-decoupling and bounded-reversible-repulsion motifs completely; concision is faithful to the short Supplement articles, not an omission. Substance complete per the five-question review. RECOUNTED 2026-09-08 BEFORE editing: 1141 exactly as stored. This run's repair of the orphaned Wright PRS-34 citation then added 63 words of citation apparatus: 1141 → 1204, ratio 0.76 → 0.803. No argument altered."
+length_ratio_to_target: 0.835
+length_note: "Compact by design: Suppl. Q.21-22 (excommunication) develops the medicinal-decoupling and bounded-reversible-repulsion motifs completely; concision is faithful to the short Supplement articles, not an omission. Substance complete per the five-question review. RECOUNTED 2026-09-08 BEFORE editing: 1141 exactly as stored. This run's repair of the orphaned Wright PRS-34 citation then added 63 words of citation apparatus: 1141 → 1204, ratio 0.76 → 0.803. No argument altered. RECOUNTED 2026-09-16 BEFORE editing: 1204 exactly as stored. This run's Rohr PRS-03 to PRS-21 repoint then added 48 words of citation apparatus: 1204 → 1252, ratio 0.803 → 0.835. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-02 cancer as defection; PRS-11 cancer as dissociative identity disorder of the body)"
   - "traditions/friston/prs_triplets.md (PRS-18 ZBS band-width — exclusion vs. assimilation; PRS-22 the group-level Markov blanket — a statistical boundary maintained by the collective as a whole, distinct from its members')"
   - "traditions/wright/prs_triplets.md (PRS-34 justification as covenant membership — table fellowship, not badge-keeping, as the operative test of belonging); 1 Cor 5 — Pauline excommunication, 'that his spirit may be saved'"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern present in all of creation, not confined to any single institutional expression: discipline-within-belonging, not exclusion-from-Christ)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 creation as the first incarnation — the Universal Christ present in creation before and beyond any institution: discipline-within-belonging, not exclusion-from-Christ. Repointed from PRS-03 on 2026-09-16: PRS-03's Problem and Solution argue a warrant for multi-tradition inquiry, not the standing of the Christ-pattern in creation; same Confidence Medium)"
 evidence_strength_summary: "Excommunication-as-response-to-defection is empirical-in-domain (Levin PRS-02/11 cancer as a cell decoupling from the body's collective goals); the medicinal aim is formal (Friston) + scriptural (Wright, 1 Cor 5); the sacramental reality of being cut from the Body's suffrages is theological."
 mind_first_reframe: "Excommunication is reframed as a collective agent's response to a member that has decoupled from the whole's shared goals — the body's recognition and ratification of a defection (Levin PRS-02) or dissociation (PRS-11) — drawn, when medicinal, so that the cut prompts re-coupling rather than loss."
 central_theme_thread: "Perspective-limitation can harden into defection: a part pursuing its own goal against the whole. Excommunication is the whole's painful boundary-drawing around that part, ordered — when rightly done — to its return to loving unity, not its destruction."
 tags: [synthesis, day/268, theme/excommunication-as-medicinal-decoupling]
-last_qc_at: "2026-09-08T16:23:06"
+last_qc_at: "2026-09-16T14:30:27"
 last_qc_outcome: "rewrote"
 ---
 
@@ -36,7 +36,7 @@ Levin's program supplies the leading move — and it is unusually exact here. In
 
 Friston frames the medicinal/punitive distinction. In Tom's PRS-form record of Friston's work, PRS-18 (ZBS band-width) treats a community's standing options for out-of-model evidence as a tunable parameter: a whole can *assimilate* a deviation (update toward it) or *repel* it (act to exclude). Healthy excommunication is the bounded, reversible repulsion that holds the door open — a boundary drawn to provoke a belief-update in the member — as against a brittle expulsion that simply discards him. PRS-22 keeps the boundary real: a collective that sustains a group-level Markov blanket — a statistical boundary held by the whole, distinct from the blankets of its members — is one whose membership line is a real dividing surface, so severance genuinely alters the member's coupling to the whole rather than merely relabelling him.
 
-Wright grounds the medicinal aim in the founding text: 1 Corinthians 5 hands the offender over precisely "so that his spirit may be saved in the day of the Lord" — Pauline excommunication is corrective discipline within the covenant community, not erasure from it. Rohr guards the limit: in Tom's PRS-form record of Rohr's work, PRS-03 states the Universal Christ as the divine pattern present in all of creation and *not confined to any single institutional expression* — so no ecclesial act can sever a person from the Christ present in all reality; excommunication is discipline-within-belonging, a boundary inside love, never exclusion from it. That the cut removes the member from the Body's *suffrages and sacraments* — a real spiritual privation — is theological, as is the claim that an unjust excommunication does not bind the soul.
+Wright grounds the medicinal aim in the founding text: 1 Corinthians 5 hands the offender over precisely "so that his spirit may be saved in the day of the Lord" — Pauline excommunication is corrective discipline within the covenant community, not erasure from it. Rohr guards the limit: in Tom's PRS-form record of Rohr's work, PRS-21 states the Universal Christ as present in creation from the first — *creation as the first incarnation* — a pattern that precedes and exceeds any institution, so no ecclesial act can sever a person from the Christ present in all reality; excommunication is discipline-within-belonging, a boundary inside love, never exclusion from it. That the cut removes the member from the Body's *suffrages and sacraments* — a real spiritual privation — is theological, as is the claim that an unjust excommunication does not bind the soul.
 
 ## Solution (proposed, speculative)
 
@@ -52,7 +52,7 @@ Excommunication is the dark side of the central claim. Perspective-limitation in
 - **PRS-11 in the Levin-tradition wiki (cancer as dissociative identity disorder of the body)** — *empirical-in-domain.* The defecting member as a split-off sub-identity; resonant with Kastrup's dissociation.
 - **PRS-18 in the Friston-tradition wiki (ZBS band-width — assimilate vs. exclude)** — *formal, speculative.* Medicinal excommunication as bounded, reversible repulsion that holds the door open.
 - **PRS-34 in the Wright-tradition wiki (justification as God's declaration of covenant membership; table fellowship, not badge-keeping, as the operative test of belonging)**, with 1 Corinthians 5 ("that his spirit may be saved") as the founding text — *scriptural / theological; the record is Confidence High.* Because belonging is enacted at the shared table rather than certified by a badge, exclusion from the table is discipline *within* the covenant body rather than erasure from it, and the founding text makes the aim restorative.
-- **PRS-03 in the Rohr-tradition wiki (the Universal Christ — the divine pattern present in all creation, not confined to any single institutional expression)** — *theological / contemplative.* No ecclesial act severs the person from the Universal Christ; the boundary is inside love.
+- **PRS-21 in the Rohr-tradition wiki (creation as the first incarnation — the Universal Christ present in creation before and beyond any institution)** — *theological / contemplative; the record is Confidence Medium.* No ecclesial act severs the person from the Universal Christ; the boundary is inside love. [Repointed from PRS-03 on 2026-09-16: PRS-03's Problem and Solution argue a warrant for multi-tradition inquiry; the claim here is about what the Christ-pattern in creation *is*, which is PRS-21's record. Same Confidence Medium, so no evidence strength changed.]
 - **PRS-22 in the Friston-tradition wiki (the group-level Markov blanket)** — *formal.* The membership line of a collective is a real statistical boundary, so severance genuinely alters coupling.
 
 ## Where this leaves us

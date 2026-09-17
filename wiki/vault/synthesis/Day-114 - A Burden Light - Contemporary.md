@@ -4,12 +4,12 @@ title: A Burden Light (Contemporary)
 pairs_with: "[[Day-114 - A Burden Light]]"
 length_tier: short
 length_target_words: 1500
-length_actual_words: 1906
-length_ratio_to_target: 1.271
-length_note: "Over target: two questions (Q.106-107) at the pivot of the law treatise, and the entry is a central-theme keystone (new law as imported prior-update) doing substantive linkage across five traditions plus Wright/Rohr."
+length_actual_words: 2009
+length_ratio_to_target: 1.339
+length_note: "Over target: two questions (Q.106-107) at the pivot of the law treatise, and the entry is a central-theme keystone (new law as imported prior-update) doing substantive linkage across five traditions plus Wright/Rohr. RECOUNTED 2026-09-16 by QC sweep: the declared 1906 understated the body by 103 words, the standing arithmetic-staleness pattern. Counting boundary used, stated so the next pass can reproduce or refute it: the constitution's regex over everything after the frontmatter block, with the trailing auto-linked related-records footer excluded along with the bare separator line that introduces it. That gives 2009 and a true ratio of 1.339 against the short-tier 1500 target. ESCALATED rather than trimmed: 1.339 is outside the constitution's plus-or-minus-25-percent band, which the Step-4 rule reads as a possible tier misclassification. The paired transcript's cleaned word_count is 968, which is short-tier by the table, so the tier field is arithmetically correct and the overrun is substantive; but that transcript sits in the 106-115 fabricated-transcript band, so its word_count is not trustworthy evidence about tier either way. Tom's call."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (PRS-01 morphogenetic control; bioelectric target states as the cause of form. Repointed 2026-09-07 from PRS-04, whose record is substrate-independent cognition, not pattern-as-cause)"
-  - "wiki/traditions/kastrup/wiki.md (PRS-01 analytic idealism; inverted ontology, mind as primitive. Repointed 2026-09-07 from PRS-02, whose record is individuation by dissociation)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; bioelectric circuits encode anatomical target states, Confidence High. Repointed 2026-09-07 from PRS-04, whose record is substrate-independent cognition, not pattern-as-cause. Re-homed 2026-09-16 from wiki.md, which carries only a derived summary table of PRS-01 through 08; the register entry is in prs_triplets.md and was verified there this run, gloss exact)"
+  - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 analytic idealism; inverted ontology, consciousness primary and matter its expression, Confidence High. Repointed 2026-09-07 from PRS-02, whose record is individuation by dissociation. Re-homed 2026-09-16 from wiki.md for the same reason; verified in prs_triplets.md this run, gloss exact)"
   - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory)"
   - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model priors; grace as imported prior)"
   - "wiki/traditions/fredrickson/wiki.md (FLAG-11 broaden-and-build; intrinsic-motivation dynamics)"
@@ -19,7 +19,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "The new law is not text but indwelling pattern — the imported, recalibrating prior-update that rewrites the agent's generative model so the loving-unity end becomes the spontaneous, intrinsic prior rather than an externally enforced constraint."
 central_theme_thread: "The agent cannot bootstrap from perspective-limited resources into charity; the new law is the import of priors from outside the agent that makes loving-unity intrinsically motivating, dissolving the interior/exterior dichotomy under mind-monism."
 evidence_strength_summary: "Empirical: self-determination theory on intrinsic motivation, broaden-and-build, developmental moral psychology. Theological: Pauline pneumatology (Wright), sacramental ontology (Rohr). Speculative: full integration of mind-monism with Trinitarian pneumatology."
-last_qc_at: "2026-09-07T16:21:41"
+last_qc_at: "2026-09-16T00:20:50"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/114, theme/new-law-as-Spirit, theme/intrinsic-motivation]
 ---

@@ -15,7 +15,7 @@ fetched_at: 2026-06-18
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-269 - Absolution of Excommunication - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-14T04:21:33"
+last_qc_at: "2026-09-16T20:23:33"
 last_qc_outcome: "pass"
 tags: [summa, day/269, pars/supplement, q/23-24]
 ---

@@ -17,7 +17,7 @@ length_ratio_to_target: 0.544
 mind_first_reframe: "Marriage is the covenantal, sacramental case of a higher-order individual genuinely emerging from two; the bond Aquinas calls real is real in the way that an organism is more than its cells."
 central_theme_thread: "Two radically partial perspectives undertake to form a single life in which each sees through the other what neither sees alone — union without erasure, the project's eschatological picture rendered at the scale of two."
 tags: [synthesis, day/278, theme/one-flesh-as-higher-individual]
-last_qc_at: "2026-09-08T18:29:39"
+last_qc_at: "2026-09-16T14:30:31"
 last_qc_outcome: "pass"
 ---
 

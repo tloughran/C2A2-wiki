@@ -3,22 +3,22 @@ day: 270
 title: Indulgences (Contemporary)
 pairs_with: "[[Day-270 - Indulgences]]"
 length_target_words: 2200
-length_actual_words: 1602
+length_actual_words: 1668
 length_tier: medium
-length_ratio_to_target: 0.728
-length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review."
+length_ratio_to_target: 0.758
+length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review. RECOUNTED 2026-09-16 BEFORE editing: 1602 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's Rohr PRS-03 to PRS-21 repoint then added 66 words of citation apparatus: 1602 to 1668, ratio 0.728 to 0.758. No argument altered."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue — the target pattern held by the collective, not the cell; PRS-07 bioelectric reprogramming as the mechanism of application)"
   - "traditions/friston/prs_triplets.md (PRS-06 the collective agent; mutual modeling pools resources across members)"
   - "traditions/loughran/prs_triplets.md (PRS-09 Synergistic Coils as meta-tools — one abstract resource recurring across levels, solving more than one P-to-S transition)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — merit as participation in one pattern, not accounting)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation — merit as participation in one divine pattern present throughout reality, not accounting. Repointed from PRS-03 on 2026-09-16: PRS-03's Problem and Solution argue a warrant for multi-tradition inquiry, not what merit or the Christ-pattern is; same Confidence Medium)"
   - "traditions/wright/prs_triplets.md (PRS-8 the 'one new humanity' of Eph 2:11-22 — reconciliation-without-erasure; distinct agents forming a single corporate subject)"
 evidence_strength_summary: "The treasury-as-shared-field and one-resource-meeting-many-deficits are formal (Friston PRS-06) + empirical-in-domain (Levin collective field) and instance Tom's Synergistic Coil; the supernatural reality of the treasury of merit, its dispensation by the keys, and its efficacy before God are theological."
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-09-09T00:23:32"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-16T18:32:06"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 270 — Indulgences (Contemporary Parallel)
@@ -57,7 +57,7 @@ Indulgences bring the central claim to a quiet climax. The synthesis's governing
 - **PRS-07 in the Levin-tradition wiki (bioelectric reprogramming as therapeutic paradigm)** — *empirical, high confidence.* The mechanism of application: the stored pattern is re-imposed on a part that has departed from it.
 - **PRS-06 in the Friston-tradition wiki (mutual modeling pools a super-individual generative model)** — *formal, medium confidence.* The whole holds a shared resource no member built alone.
 - **PRS-09 in the Loughran-tradition wiki (Synergistic Coils as meta-tools — one resource solving many P-to-S transitions)** — *formal / structural.* Names the treasury's economy: one superabundant source meeting many members' needs.
-- **PRS-03 in the Rohr-tradition wiki (the Universal Christ)** — *theological / contemplative.* Merit as participation in one pattern, not accounting.
+- **PRS-21 in the Rohr-tradition wiki (Universal-Christ-in-creation — creation as the first incarnation, the divine pattern present in all reality)** — *theological / contemplative; the record is Confidence Medium.* Merit as participation in one pattern, not accounting. [Repointed from PRS-03 on 2026-09-16: PRS-03's Label reads "The Universal Christ" but its Problem and Solution argue a warrant for multi-tradition inquiry; the claim here is soteriological — what merit *is* under the Christ-pattern — which is PRS-21's record. Same Confidence Medium, so no evidence strength changed.]
 - **PRS-8 in the Wright-tradition wiki (the "one new humanity" of Eph 2:11-22)** — *scriptural / theological.* A single shared life in which one member's good is available to others, without erasure of difference.
 
 ## Where this leaves us

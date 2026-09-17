@@ -16,8 +16,8 @@ length_ratio_to_target: 0.567
 mind_first_reframe: "The three goods of marriage name the real telos of the marital higher-individual — its generativity (proles), integrity (fides), and self-transcending orientation (sacramentum) — grounded in the demonstrated reality of collective-level goal-directedness."
 central_theme_thread: "The goods of marriage specify the project's loving-unity telos for the dyad: cooperation (fides), overflow into new perspectives (proles), and participation in the whole that exceeds the pair (sacramentum)."
 tags: [synthesis, day/282, theme/telos-of-union]
-last_qc_at: "2026-09-08T22:27:59"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-16T16:22:12"
+last_qc_outcome: "pass"
 ---
 
 # Day 282 — Goods of Marriage (Contemporary Parallel)

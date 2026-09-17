@@ -16,8 +16,8 @@ evidence_strength_summary: "The 'place = state, not location' reading is concept
 mind_first_reframe: "For a non-spatial perspective, 'place' just is its state of relation to the whole; capacities lost with the body persist 'radically' as a pattern that can re-express, not as a ghost retaining organs."
 central_theme_thread: "Death strips a perspective to its barest individuation — the limit-case of the project's thesis that perspectives are individuated by what they cannot yet see; the limbo of the fathers (rest without vision, resolved by Christ) is inaugurated eschatology made vivid."
 tags: [synthesis, day/292, theme/place-as-state-and-identity-through-substrate-loss]
-last_qc_at: "2026-09-09T00:23:34"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-16T18:32:08"
+last_qc_outcome: "pass"
 ---
 
 # Day 292 — Limbo of Fathers (Contemporary Parallel)

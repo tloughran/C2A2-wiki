@@ -3,14 +3,14 @@ day: 266
 title: Keys of the Kingdom (Contemporary)
 pairs_with: "[[Day-266 - Keys of the Kingdom]]"
 length_target_words: 1500
-length_actual_words: 1203
+length_actual_words: 1282
 length_tier: short
-length_ratio_to_target: 0.8
-length_note: "Compact by design: Suppl. Q.17-18 develops the power-of-the-keys (jurisdiction, not order) and its grace-bearing effect completely; the nested-collective-agency reading is stated without padding, consistent with the surrounding satisfaction-treatise pairs (Days 264-265). Substance complete per the five-question review."
+length_ratio_to_target: 0.855
+length_note: "Compact by design: Suppl. Q.17-18 develops the power-of-the-keys (jurisdiction, not order) and its grace-bearing effect completely; the nested-collective-agency reading is stated without padding, consistent with the surrounding satisfaction-treatise pairs (Days 264-265). Substance complete per the five-question review. RECOUNTED 2026-09-16 PRE-EDIT AT EXACTLY 1203, reproducing the stored figure to the word, so nothing here is attributable to arithmetic staleness. This run then added 79 words of citation apparatus repointing the Rohr anchor from PRS-03 to PRS-21: 1203 to 1282, ratio 0.802 to 0.855 — the closest to target in this cohort. No argument added, removed or reweighted. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-07 FEP/Markov-blanket substrate-independence; PRS-22 the group-level Markov blanket)"
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents; cell collectives as problem-solving agents open to top-down control)"
-  - "traditions/rohr/prs_triplets.md (PRS-03 the Universal Christ — the divine pattern not confined to any single institutional expression)"
+  - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation — creation as the first incarnation, the divine pattern present in all reality; repointed from PRS-03 on 2026-09-16, see Bridges note)"
   - "traditions/wright/prs_triplets.md (PRS-02 faithful improvisation; the five-act drama hermeneutic)"
 evidence_strength_summary: "Church-as-collective-agent and the keys-as-delegated-power are formal (Friston PRS-22 for the group-level boundary, PRS-06 for the coupling that sustains it, PRS-07 for the substrate-agnostic licence) + empirical-in-domain (Levin PRS-08); the keys' grace-bearing efficacy and their institution by Christ are theological."
 mind_first_reframe: "The power of the keys is reframed as the real top-down causal authority a higher-order collective agent (the Church) holds over the members coupled into it — a delegated, ministerial power that opens or closes a member's standing in the whole, modeled formally as a collective sustaining its own group-level Markov blanket (Friston PRS-22, on the coupling of PRS-06) and biologically as the morphogenetic whole's command over its cells (Levin PRS-08)."
@@ -52,7 +52,7 @@ The keys state the project's nested-agency motif in the register of jurisdiction
 - **PRS-22 in the Friston-tradition wiki (the group-level Markov blanket, distinct from the blankets of its members)** — *formal, high confidence.* A community that sustains its own boundary is a genuine bounded agent; the keys act on its interior.
 - **PRS-07 in the Friston-tradition wiki (FEP substrate-independence)** — *formal, high confidence.* The licence for applying the framework to a social collective at all; it establishes substrate-agnosticism, not the collective's own boundary.
 - **PRS-08 in the Levin-tradition wiki (cells as cognitive agents; collectives as problem-solving agents open to top-down control)** — *empirical-in-domain.* Higher-level causal power over members is measurable biology, not metaphor.
-- **PRS-03 in the Rohr-tradition wiki (the Universal Christ — the divine pattern not confined to any single institutional expression)** — *theological / contemplative.* The keys minister a pattern present in all reality, not a private possession.
+- **PRS-21 in the Rohr-tradition wiki (Universal-Christ-in-creation — creation as the first incarnation)** — *theological / contemplative; the record is **Confidence Medium**, the softest-graded anchor on this day.* The keys minister a pattern present in all reality, not a private possession. [Repointed from PRS-03 on 2026-09-16: PRS-03's Resource line does say the pattern is not confined to any single institutional expression, which is close to this bullet's wording, but its Problem and Solution argue a warrant for multi-tradition inquiry. The claim here is about what the ministered authority *is* — a pattern present in all reality — so a methodological record cannot carry it. PRS-21 is also Medium, so no evidence strength changes.]
 - **PRS-02 in the Wright-tradition wiki (faithful improvisation; the five-act drama hermeneutic)** — *theological / historical.* The keys as handed-down authority extended faithfully into the unfinished act.
 
 ## Where this leaves us
