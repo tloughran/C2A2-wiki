@@ -413,6 +413,24 @@ every report is on disk, because a monitor that dies on the bad day deletes the 
 
 ---
 
+## CCL Shell Suite — scheduled (the suite that was red for five weeks)
+
+**Suite:** `scripts/test_voice_shell.cjs` (346 rows; drives real Chrome over CDP, so it can never run in a task sandbox). `CHROME=<path>` overrides the Mac default binary.
+**Job:** `scripts/check_voice_shell.sh`, launchd `com.c2a2.voice-shell-check`, daily **05:20** — after the daily run's writes, before the 05:45 health check reads the verdict.
+**Writes (gitignored):** `scheduler/voice_shell.json` (`checked_at` every fire; `ran_at`/rows/passed/failed/exit/verdict when it ran), `scheduler/voice_shell.md` (one line per fire), repo-root `voice_shell.FAILED` while the last real run was RED. Suite output: `/tmp/voice_shell_last.log`.
+**Gate:** runs only when a file the suite exercises (shell, engine, manifests, knowledge, every tab document, the harness itself) is newer than the last verdict and none was touched in the last 20 min; `--force` skips the gate, `--dry-run` writes nothing. Exit 3 = RED (a verdict, excused in `VERDICT_EXITS`); 2 = cannot run (no Chrome/node/harness); 1 = script error.
+**Read by:** `check_scheduler_health.py` — a freshness row on `checked_at` (liveness) and a marker row on `voice_shell.FAILED` (verdict). A quiet tree no-ops and stays green; do not "fix" that into an age alarm.
+
+**Why:** the suite was RED from at least 2026-08-12 to 2026-09-17 (23 failures: five undeclared controls, a `signal` edge type the family did not know, a Start Here link de-numbered on 08-12, and the Connectome's idle-drift flag declared as `autoSpin` when the page's global is `autoOrbit` — so `fit`/`spin off`/`stop` quieted a variable nothing read). Nobody saw it because nothing scheduled ran it. Green 346/346 on 2026-09-17.
+
+```bash
+bash scripts/check_voice_shell.sh --dry-run
+bash scripts/check_voice_shell.sh --force
+CHROME=/path/to/chrome node scripts/test_voice_shell.cjs
+```
+
+---
+
 ## Level-2 Cross-Tradition Signal Stream
 
 **Never hand-build `wiki/level2_signal_stream.html`. Always regenerate it:**

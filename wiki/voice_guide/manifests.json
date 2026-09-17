@@ -75,7 +75,7 @@
         },
         {
           "dim": "edges",
-          "match": "#chk-all-edges, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
+          "match": "#chk-all-edges, #chk-edge-signal, #chk-edge-wikilink, #chk-edge-mention, #chk-edge-reference, #chk-edge-cross, #chk-edge-same",
           "note": "edge-type family; show/hide/only/all/none edges <type>"
         },
         {
@@ -109,6 +109,10 @@
         {
           "match": ".popout-btn, [onclick*='popoutPage'], button.close[onclick*='window.close']",
           "reason": "opens/closes a separate window -- navigation chrome, not view state"
+        },
+        {
+          "match": "#lift-var, #lift-parallax, #lift-period, #lift-cues",
+          "reason": "the DEPTH probe (Z-lift, 2026-08-24): a selector, two continuous sliders and a cue toggle that exist to answer an open question about what the depth axis should encode. The markup marks them 'temporary; delete with the LiftProbe block' and they default to off, so the default view is unchanged. Not settled view state; excluded rather than deferred because a probe is not a north-star gap. Remove this entry with the block."
         }
       ],
       "controls_deferred": [
@@ -198,6 +202,17 @@
           "state": "showEdgeType",
           "label": "Edge types",
           "values": [
+            {
+              "v": "signal",
+              "aka": [
+                "signal",
+                "signals",
+                "asserted",
+                "level-2",
+                "level 2",
+                "cross-tradition signal"
+              ]
+            },
             {
               "v": "wikilink",
               "aka": [
@@ -1856,6 +1871,10 @@
           "reason": "continuous field, the same exclusion the Sociogram's #date-slider carries. The DISCRETE year filter beside it (the per-decade checkboxes) is the reachable form of the same idea and is deferred, not excluded"
         },
         {
+          "match": "#prs-month-slider",
+          "reason": "continuous field (month threshold over `date`, 2026-09-03) -- the same exclusion #prs-year-slider carries, one row up."
+        },
+        {
           "match": "#prs-help-btn, .prs-help-close, .prs-pop-btn",
           "reason": "help popovers -- 'How filters work', 'What is this view?', and their close buttons: chrome, no view state"
         }
@@ -1971,8 +1990,8 @@
             0.1,
             2.6704
           ],
-          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer.",
-          "idle": "autoSpin"
+          "_idle_note": "This view drifts on its own at load until the first drag or wheel. Declaring the flag lets the shell see a turning view it did not start, so `spin off` and `stop` act on what the user is actually watching instead of on our own timer. The flag is prs_3d's `autoOrbit` (8c1ab37, 2026-09-03); it was declared here as `autoSpin`, a name the page never had, so `fit`/`spin off`/`stop` quieted nothing -- the three L rows that stayed red.",
+          "idle": "autoOrbit"
         },
         "pan": {
           "camera": "camera",

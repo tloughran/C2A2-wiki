@@ -38,7 +38,9 @@ const os = require('os');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+// Override with CHROME=<path> (a Linux sandbox, a different Chrome build); the
+// Mac default stays the Mac default so the scheduled run needs no environment.
+const CHROME = process.env.CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 
 const argv = process.argv.slice(2);
 function arg(name, dflt) {
@@ -800,7 +802,7 @@ async function main() {
   };
   const edgesBefore = await edgesOf(page);
   await row(page, 'A12 hide edges mention -> a family the filters dim cannot name', 'hide edges mention',
-    { ok: true, spoken: /edges: wikilink, reference/ });
+    { ok: true, spoken: /edges: signal, wikilink, reference/ });
   await sleep(400);
   const edgesAfter = await edgesOf(page);
   record('A12a hiding an edge type actually removes edges',
@@ -1226,7 +1228,9 @@ async function main() {
 
   // ---- Phase G: a page reached by an IN-PAGE LINK, and the way back ---------
   //
-  // Start Here's "See all 15 framings" postMessages the shell to swap the frame
+  // Start Here's "What's it doing?" door (was "See all 15 framings" until the
+  // 2026-08-12 de-numbering; the harness expected the old text until 09-17 and
+  // the whole phase failed downstream) postMessages the shell to swap the frame
   // while the Start Here chapter button stays lit. Nothing in the shell watched
   // the frame, so: the guide could not see the new page, would not believe the
   // user who said they had opened it, and `read` read the OLD document's cursor
@@ -1243,9 +1247,9 @@ async function main() {
   // AFTER tabs and sub-views, so one can never shadow a real destination.
   const whatLinks = await runCmd(page, 'what');
   record('G0a what lists the page\'s links -- a link nobody mentions does not exist to a voice user',
-    /\d+ links: "See all 15 framings"/.test(whatLinks.spoken || ''), whatLinks.spoken);
-  await row(page, 'G0b go <link text> follows it', 'go see all 15 framings',
-    { ok: true, spoken: /go See all 15 framings/ });
+    /\d+ links: .*What's it doing\? Fifteen answers/.test(whatLinks.spoken || ''), whatLinks.spoken);
+  await row(page, 'G0b go <link text> follows it', 'go fifteen structures',
+    { ok: true, spoken: /go What's it doing\? Fifteen answers/ });
   await sleep(3000);
   await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
   // The two kinds that are NAMED but never followed. Silently omitting them
@@ -1262,19 +1266,23 @@ async function main() {
   const linkText = await page.eval(
     IFRAME_DOC + "var a = d.querySelector('a[data-target=\"fifteen\"]');" +
     "if (!a) { return '(link missing)'; } a.click(); return a.textContent.replace(/\\s+/g,' ').trim();");
-  record('G1 the framings link is where the user says it is', /15 framings/.test(linkText), 'clicked: ' + linkText);
+  record('G1 the framings link is where the user says it is', /Fifteen structures, fifteen functions/.test(linkText), 'clicked: ' + linkText);
   await sleep(3000);
   // The whole point: identity now follows the FRAME, so a page with no tab
   // button of its own still resolves to its own manifest.
   await assertManifest(page, 'what_is_c2a2', 'what_is_c2a2.html');
+  // G2-G5d are pinned to the page AS WRITTEN (title, first two headings, section
+  // count: 17 since 2303e8a, 2026-08-24). A content edit there moves these rows,
+  // and that is the intended cost: the claim under test is that the guide walks
+  // THIS document, so a stale expectation must fail rather than match anything.
   await row(page, 'G2 what -> names the page it is ACTUALLY on, not the lit chapter', 'what',
-    { ok: true, spoken: /view: What Is C2A2\?/ });
+    { ok: true, spoken: /view: What's it doing\?/ });
   const gWhat = await runCmd(page, 'what');
   record('G2a and it drops a row position that belongs to a different document',
     !/left to right/.test(gWhat.spoken || ''), gWhat.spoken);
   await row(page, 'G3 pick first -> walks THIS page, numbered by its own headings', 'pick first',
-    { ok: true, spoken: /1\.Fulfillment.*\|\s*1 of 16 sections/ });
-  await row(page, 'G4 next', 'next', { ok: true, spoken: /2 of 16 sections/ });
+    { ok: true, spoken: /1\.A Forum Where Communities.*\|\s*1 of 17 sections/ });
+  await row(page, 'G4 next', 'next', { ok: true, spoken: /2 of 17 sections/ });
   const gRead = await runCmd(page, 'read');
   record('G5 read reads THIS document, not the previous one',
     /reading 2\.Accelerator/.test(gRead.spoken || ''), gRead.spoken);
@@ -1292,7 +1300,7 @@ async function main() {
   // is exactly how this shipped, so the perception verbs are now held here.
   const vgWhere = await page.eval("return window.VGWhere();");
   record('G5b where_am_i names the page the user is on, not the lit chapter',
-    !!vgWhere && vgWhere.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgWhere.title || ''),
+    !!vgWhere && vgWhere.tab === 'what_is_c2a2' && /What's it doing/.test(vgWhere.title || ''),
     JSON.stringify(vgWhere));
   record('G5c and it never falls back to a chapter id while a frame document exists',
     !!vgWhere && vgWhere.tab !== 'intro' && !/Start here/i.test(vgWhere.title || ''),
@@ -1301,7 +1309,7 @@ async function main() {
   // expected. What must NOT happen is it identifying itself as somewhere else.
   const vgDesc = await page.eval("return window.VGDescribe().then(function (d) { return d; });");
   record('G5d describe_view carries the right identity even when the tab cannot answer',
-    !!vgDesc && vgDesc.tab === 'what_is_c2a2' && /What Is C2A2/.test(vgDesc.title || ''),
+    !!vgDesc && vgDesc.tab === 'what_is_c2a2' && /What's it doing/.test(vgDesc.title || ''),
     JSON.stringify(vgDesc));
 
   // The way back. setFrame uses location.replace on purpose, so there was no

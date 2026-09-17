@@ -88,6 +88,8 @@ MISSED_FIRES_ALLOWED = 2
 # itself could not run), 78 (EX_CONFIG, the macl-xattr trap) -- is still a FAIL.
 VERDICT_EXITS = {
     "com.c2a2.scheduled-commit-check": {"1"},
+    # 3 = the CCL shell suite is RED (a verdict about the shell, not about the job).
+    "com.c2a2.voice-shell-check": {"3"},
 }
 
 ARTIFACTS = [
@@ -118,6 +120,22 @@ ARTIFACTS = [
         ),
         "note": "48h chosen from 3150 sessions: p99.9 inter-session gap is 39.9h, and "
                 "the only two gaps over 48h since 2026-05-07 were both real outages",
+    },
+    {
+        # `checked_at` is stamped on EVERY fire, no-ops included, so this row asks
+        # only "is the job alive". Whether the suite is RED is the marker row
+        # voice_shell.FAILED below -- a gated job that correctly no-ops on a quiet
+        # tree must not read as stale here (the prs_3d lesson, LAG_ARTIFACTS).
+        "owner": "com.c2a2.voice-shell-check",
+        "path": "scheduler/voice_shell.json",
+        "field": "checked_at",
+        "max_age_hours": 25,
+        "failure_means": (
+            "the daily CCL shell check did not fire, or died before writing its state. "
+            "It is a launchd agent (needs real Chrome), so look at "
+            "~/Library/Logs/c2a2-voice-shell-check.log, then `launchctl print "
+            "gui/$(id -u)/com.c2a2.voice-shell-check`."
+        ),
     },
 ]
 
@@ -313,6 +331,13 @@ UNATTENDED_PERMISSION_TASKS = [
 ]
 
 FAILURE_MARKERS = [
+    {
+        "owner": "com.c2a2.voice-shell-check",
+        "path": "voice_shell.FAILED",
+        "note": "written by check_voice_shell.sh when test_voice_shell.cjs ends RED (or dies "
+                "without a summary); removed on the next GREEN run. The suite was red and "
+                "unread 2026-08-12..09-17 because nothing scheduled ran it.",
+    },
     {
         "owner": "com.tloughran.summa-vault-sync",
         "path": "sync_vault.FAILED",

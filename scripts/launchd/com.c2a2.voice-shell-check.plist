@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.c2a2.voice-shell-check</string>
+
+  <!--
+    The CCL shell suite (scripts/test_voice_shell.cjs) as a gated daily job, so a
+    red suite is seen the day it goes red. It ran red and unread from 2026-08-12
+    to 2026-09-17. Has to be launchd, not a scheduled task: it drives a real
+    Chrome over CDP, which the task sandbox cannot do.
+
+    /bin/bash + wrapper, never node directly: TCC grants ~/Documents per
+    executable and only the bash road is known to work under launchd (see
+    check_scheduled_commits.sh). The wrapper gates on "a tested surface is newer
+    than the last verdict" and holds a mkdir lock, so an idle fire costs nothing.
+  -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/scripts/check_voice_shell.sh</string>
+  </array>
+
+  <!--
+    05:20 local. After the daily run (04:30, done ~04:41, so its wiki/ writes
+    have cleared the 20-minute quiet period) and before the 05:45 commit-check
+    agent, whose check_scheduler_health.py reads the verdict this writes, so
+    the 06:00 morning report carries today's suite result, not yesterday's.
+    Shares the slot with nothing (openstory telemetry 06:05, metabolism 05:50).
+  -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>5</integer>
+    <key>Minute</key>
+    <integer>20</integer>
+  </dict>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project</string>
+
+  <key>StandardOutPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-voice-shell-check.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/tomloughran/Library/Logs/c2a2-voice-shell-check.log</string>
+</dict>
+</plist>
