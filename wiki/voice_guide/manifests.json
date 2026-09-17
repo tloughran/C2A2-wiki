@@ -95,20 +95,12 @@
           "reason": "continuous fields; excluded from the semantic tier by design (redesign section 14.4) -- not journaled, not fingerprinted"
         },
         {
-          "match": "#btn-settings, #btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
-          "reason": "help popovers and the settings gear: chrome, no view state"
+          "match": "#btn-edge-help, #btn-edges-help, #btn-tags-help, [onclick*='toggleEdgeHelp'], [onclick*='toggleEdgesHelp'], [onclick*='toggleTagsHelp']",
+          "reason": "help popovers: chrome, no view state"
         },
         {
-          "match": "#settings-modal button, #settings-content button, #settings-modal select, #settings-modal input, [onclick*='closeSettings']",
-          "reason": "settings dialog -- API keys, TTS voice and model choice; outside the view-state surface and never spoken by a guest"
-        },
-        {
-          "match": "#tts-provider, #tts-browser-voice, #tts-kokoro-voice, #tts-api-key, #tts-openai-voice, #ai-provider, #ai-api-key, #ai-model",
-          "reason": "same settings dialog, reached directly (they carry ids)"
-        },
-        {
-          "match": "#btn-voice, #btn-mute",
-          "reason": "the voice control surface's own chrome -- a session cannot be started or muted by voice"
+          "match": "#btn-voice",
+          "reason": "the voice-input control's own chrome -- a listening session cannot be started by voice"
         },
         {
           "match": "#search-ai-mode",
@@ -1229,8 +1221,8 @@
           "next": "agent map increment 2"
         },
         {
-          "match": "#btn-skip, #btn-mute",
-          "reason": "the narration strip's own voice controls; a second speaker inside a tab, which needs the one-reader question answered before it is wired",
+          "match": "#btn-skip",
+          "reason": "the narration strip's skip control -- steps the silent narrate walk to the next agent; the strip no longer speaks (one voice: the guide, 2026-09-16), so this is a playback control over the canvas timeline, same family as the transport above",
           "next": "agent map increment 2"
         },
         {

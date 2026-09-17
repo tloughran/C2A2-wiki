@@ -1342,7 +1342,10 @@ async function main() {
   await activateTab(page, 'agents_tab.html');
   await sleep(6000);
   await assertManifest(page, 'agents_tab', 'agents_tab.html');
-  await auditTab(page, 'agents_tab', 10, 1);
+  // 9, not 10, since 2026-09-17: the narration strip's #btn-mute was removed with
+  // the tab's Web Speech narration (one voice -- the guide -- speaks for every
+  // tab). The count is exact on purpose; lower it only when a control is gone.
+  await auditTab(page, 'agents_tab', 9, 1);
   await row(page, 'H1 what -> names the sub-view it booted into', 'what',
     { ok: true, spoken: /schedule view/ });
   await row(page, 'H2 go explorer -> a sub-view on a tab that never had one', 'go explorer',

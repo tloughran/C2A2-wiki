@@ -1105,7 +1105,6 @@ function buildLegend() {
 }
 
 // ── SEARCH ──
-var prsSearchTimer = null;
 function prsSearch(query) {
   var resultsEl = document.getElementById('prs-search-results');
   var clearBtn = document.getElementById('prs-search-clear');
@@ -1123,17 +1122,6 @@ function prsSearch(query) {
   }
   clearBtn.style.display = 'inline-block';
 
-  // Check for API key — if available and query is 4+ chars, do semantic search
-  var apiKey = '';
-  try { apiKey = localStorage.getItem('tts_api_key') || ''; } catch(e) {}
-  if (apiKey && query.length >= 4) {
-    // Debounce semantic search
-    if (prsSearchTimer) clearTimeout(prsSearchTimer);
-    prsSearchTimer = setTimeout(function() { prsSemanticSearch(query, apiKey); }, 600);
-    return;
-  }
-
-  // Fallback: text matching
   prsTextSearch(query);
 }
 
@@ -1158,58 +1146,6 @@ function prsTextSearch(query) {
     }
   });
   prsShowSearchResults(hits, query);
-}
-
-function prsSemanticSearch(query, apiKey) {
-  var resultsEl = document.getElementById('prs-search-results');
-  resultsEl.innerHTML = '<div style="color:#888;font-style:italic">Searching...</div>';
-
-  // Build compact PRS summary for the LLM
-  var prsText = PRS_TRIPLETS.map(function(t) {
-    return t.id + ': ' + t.label + ' | P: ' + t.problem.slice(0, 120) + ' | R: ' + t.resource.slice(0, 120) + ' | S: ' + t.solution.slice(0, 120);
-  }).join('\n');
-
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://api.openai.com/v1/chat/completions', true);
-  xhr.setRequestHeader('Authorization', 'Bearer ' + apiKey);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.timeout = 15000;
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      try {
-        var resp = JSON.parse(xhr.responseText);
-        var content = resp.choices[0].message.content;
-        // Parse out PRS IDs from the response
-        var matchedIds = content.match(/[a-z]+-PRS-\d+/gi) || [];
-        var hits = [];
-        matchedIds.forEach(function(id) {
-          var t = PRS_TRIPLETS.find(function(p) { return p.id.toLowerCase() === id.toLowerCase(); });
-          if (t && hits.indexOf(t) < 0) hits.push(t);
-        });
-        if (hits.length === 0) {
-          // Fallback to text search
-          prsTextSearch(query);
-        } else {
-          prsShowSearchResults(hits, query);
-        }
-      } catch(e) {
-        prsTextSearch(query);
-      }
-    } else {
-      prsTextSearch(query);
-    }
-  };
-  xhr.onerror = function() { prsTextSearch(query); };
-  xhr.ontimeout = function() { prsTextSearch(query); };
-  xhr.send(JSON.stringify({
-    model: 'gpt-4o-mini',
-    messages: [
-      { role: 'system', content: 'You are a search assistant. Given PRS triplets (Problem-Resource-Solution) from research traditions, return the IDs of triplets most relevant to the user query. Return ONLY a comma-separated list of IDs (e.g. levin-PRS-01, friston-PRS-03). No explanation.' },
-      { role: 'user', content: 'Query: ' + query + '\n\nPRS Triplets:\n' + prsText }
-    ],
-    max_tokens: 200,
-    temperature: 0.1
-  }));
 }
 
 function prsShowSearchResults(hits, query) {
