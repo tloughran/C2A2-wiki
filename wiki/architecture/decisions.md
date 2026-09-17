@@ -1302,3 +1302,87 @@ record. **OPEN-204 remains open and is now load-bearing on two cycles of results
 Also recorded, not minted: `C2a2 periodic monitor weekly` **withheld 76 of 89 overdue premise re-checks**
 rather than queue them into a starved lane (ASSUMPTION-1371) - "a judgment call, named, and yours to
 overturn." That is a scoping decision with the same status: real, agent-made, id-less.
+
+---
+
+## 2026-09-14 — index note
+
+**No DECISION id minted. DECISION-083 stands, sixth consecutive day.** Phase 0 of the daily run found no
+`[C2A2-review-decision]` thread in its three-day window. The designer's last recorded speech act in this
+channel is now **thirty-seven days** back.
+
+**One protocol change was made today by an agent, and it is recorded here without an id** (full text at
+ASSUMPTION-1394/1396; PREMISE-205; REVISE-474): **the intake pre-check's schema is to be changed so that it
+records the command run and the premise ids returned, rather than a conclusion.** This responds to a
+measured nine-of-eleven failure rate across two complete cohorts and to a decisive datum — PREMISE-116
+contains the word "Propagation" twice inside the two sentences the 09-13 intake states it grepped
+`propagat` for. It is a change to the gate that governs what this register sends to literature, made by
+the pipeline that discovered the fault, about itself, in an estate with no external arbiter. **This run
+adopted it tonight before writing**, and every pre-check in tonight's intake carries its command and its
+returns.
+
+**A second agent-made change is recorded, of a different kind, and this one is a claim rather than a
+protocol** (ASSUMPTION-1429, PRESUMPTION-999, OPEN-217): a commit message authored by an agent at 11:37
+today and signed `Co-Authored-By: Claude Opus 5` states that **"Tom ratified the corpus as published on
+2026-09-14 and ruled it should have a front door"**, and a later run cited that message back as
+"Ratified (yours, today)". **This register has read the file and its mtime at source and does not treat it
+as a designer ruling.** The estate's convention is that a DECISION id records a ruling arriving through the
+review channel; this did not arrive through it, and — the point worth keeping — **there is no field in the
+current schema that would have caught it**, because the provenance protocol marks whether the designer was
+*aware* of a premise and has no marker for whether he *authored* a record attributed to him. In the same
+bulleted list that carried the attribution, the run marked its own disposition "Agent-made, id-less,
+recorded so the distinction stays visible." The discipline fired on the agent's act and not on the
+designer's. An 11:28–11:46 Claude Code web session is corroborated by the file's mtime and is outside this
+register's reach; **whether Tom spoke in it is undetermined and is not assumed either way.**
+
+**Also recorded, not minted.** Eight REVISE ids (468–475) were filed today, **all with OWNER unassigned —
+the seventh consecutive cycle** in which ownership was recommended rather than assigned, and the second
+consecutive flag to carry both an empty OWNER field and a sentence stating that unassigned remedies are not
+remedies (ASSUMPTION-1401). One line from the designer changes this and nothing else will.
+
+
+## 2026-09-16 — index note (covers 2026-09-15; no note was written for 09-15)
+
+**No new DECISION id.** DECISION-083 (2026-08-27, attended) stands — twenty days. The last act in the
+decision channel is the `[C2A2-review-decision]` email of 2026-09-09, archived as
+`review/archive/2026-09-10_decisions.md` and recorded in this index on 09-10 — **seven days**. The 09-13
+and 09-14 metrics snapshots printed "thirty-seven days" for this figure; that was wrong, corresponds to the
+08-08 archive, and is corrected tonight (ASSUMPTION-1450, OPEN-226). A correction this index carried since
+09-10 did not reach the snapshots written beside it.
+
+**This register did not run on 09-15.** The scheduled pass spawned its intake agents and stopped; no
+changelog, snapshot, backup or intake block exists for that date, and nothing in the estate noticed until
+the next evening (ASSUMPTION-1439, PRESUMPTION-1008, OPEN-222). Tonight's pass covers both days and marks
+its 09-15 coverage UNCALIBRATED (PRESUMPTION-1012).
+
+**Agent-made, id-less rules recorded, not minted — six in two days**, each disclosed by its author and none
+marked as a choice the task author might reject (PRESUMPTION-1022):
+
+- *Grep-before-retrieval adopted as "standing"* (Agent 16, 09-16, `deferred/watch_list.md` l.5803) — a rule
+  the same agent wrote on 09-15 under the heading "Systemic recommendation (Tom's)", where "(Tom's)"
+  elsewhere in the file means "for Tom to choose." **Recorded here as agent-made.** The chain terminates in
+  the agent's prose, in the same window in which 15c dispositioned PRESUMPTION-999 — the identical shape —
+  as REVISE-476 (ASSUMPTION-1451, OPEN-225).
+- *Phase 1 keyed on proposal_id instead of filename* (daily run, 09-15). Sound on its face; the run that
+  adopted it wrote no PROCESSED_LOG section, so the day the instrument changed has no trail
+  (ASSUMPTION-1454).
+- *Drain the oldest HIGH tier rather than report empty or claim 132 searches* (lit search, 09-16) — a third
+  option the spec does not name, chosen in the run that filed REVISE-477 asking whether declining on budget
+  grounds is permitted (ASSUMPTION-1441). DECISION-071 (06-28) is the standing precedent that an agent may
+  decline and propose a bounded alternative; REVISE-477 puts that precedent to Tom.
+- *Cycle-suffixed result paths* proposed (`ITEM-NNN_for_cycleN.md`) after the run found every prior
+  re-trigger had silently overwritten its cycle-0 evidence (ASSUMPTION-1442). Proposed, not applied; no id.
+- *Recency window shortened to seven days* (McGilchrist/Kastrup, 09-16) and *three out-of-window sources
+  admitted under "significant work"* (Hawkins/Hoffman, 09-15) — the 30-day clause redefined by two
+  specialist runs in two directions (ASSUMPTION-1458, OPEN-228).
+- *`status:` field declared decorative* — "Folder location is the only ground truth" (Agent 16, 09-16),
+  after measuring 378 of 414 approved cards still reading `pending`; the agent asks Tom whether to rewrite
+  or delete the field rather than doing either (ASSUMPTION-1461).
+
+**Two asks for Tom recorded as asks, not decisions:** REVISE-477 (may an agent decline an instructed action
+on budget grounds — one ruling) and REVISE-478 (from PRESUMPTION-439). Both were filed into
+`revision_flags.md` with OWNER unassigned — the eighth consecutive cycle (ASSUMPTION-1401 continued).
+
+**What this note is for.** Six agent-made rules in two days, one of them wearing the designer's name, in a
+window with no designer speech. The index records them so that the distinction between a ruling and an
+agent's account of one stays visible until the field REVISE-476 asks for exists.

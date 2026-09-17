@@ -1,5 +1,5 @@
 # C2A2 Master Wiki
-*Maintained by the Master C2A2 Agent | Last updated: 2026-09-13 (full daily run - zero ingest for the third consecutive day, zero proposals written; the run's result is a correction to yesterday's own network numbers. Run Narrative entry written this run, verified present.)*
+*Maintained by the Master C2A2 Agent | Last updated: 2026-09-16 (full daily run - sixth consecutive zero-ingest day; zero orchestrator proposals, every candidate already captured; 20 pending, no decision email since 09-09)*
 *Network initialized: 2026-04-03 — within 24 hours of Karpathy's Wiki-agent methodology proposal*
 
 ---
@@ -8,7 +8,13 @@
 
 The C2A2 tradition-accelerator network consists of **13 agents** maintaining **11 research program Wikis** and **2 integration layers**. The network was initialized on 2026-04-03.
 
-**Current status:** Daily run complete (**2026-09-14, Monday** - Levin + Friston specialist day; 5 today-dated specialist cards already in `pending/`, so Phase 2 skipped both). **Fourth consecutive zero-ingest day and zero orchestrator proposals.** 13 proposals await review. Compile queue OPEN=1 (PROP-2026-08-14-033, Wright - fifth failed retrieval, and the KSBJ lead is now falsified; **recommend reject**). Network: 867 triplets / 108 cross-program connections / 90 findings.
+**Current status:** Daily run complete (**2026-09-16, Wednesday** - McGilchrist + Kastrup specialist day; 3 today-dated specialist cards already in `pending/` (McGilchrist x2, Kastrup x1), so Phase 2 skipped both). **Sixth consecutive zero-ingest day, and this one produced no proposal at all** - the orchestrator swept every other in-scope tradition and each hit was already in the vault: Levin's three September preprints are pending as PROP-2026-09-12-002/-003/-004, Carroll's September AMA is pending as PROP-2026-09-15-004, Stump's Cajetan paper was approved 07-23, and arXiv 2605.26856 (*The Sensation Modulating Network*) was rejected on authorship for the second time - Nagarjuna & Karnam, no Levin, already ASSUMPTION-1136. **0 orchestrator proposals is the correct outcome, not a quiet failure.** **20 proposals now await review**, spanning six days (09-11 through 09-16) with **no decision email since 09-09** - a `[C2A2-review-decision]` reply remains the single human-gated unblock, and it is now the longest such gap of the current stretch. The one OPEN compile-queue card is still Wright PROP-2026-08-14-033, **sixth consecutive retrieval failure** (the ntwrightpage post is a bare media embed; `web_fetch` returns an empty body); not ingested, not closed, nothing conjectural written. **Phase 5.5** Review Log rebuilt (6,317,900 bytes; cards 475, dates 124, responses 15; 17 addresses scrubbed; grep confirms address-clean). **Phase 5.6** Level-2 stream rebuilt and promoted: **1501 signals, 87 pairs, 2026-04-03 -> 2026-09-09, stale_days 7** - under the 21-day threshold, so no staleness WARN. **Phase 6 NOT committed or pushed** (no-blind-push rule; unattended run cannot obtain sign-off) - left for `commit_daily_run.sh` / the Mac. **Attention needed:** this run's `git add` left a stale `.git/index.lock`, which would have made `commit_daily_run.sh` refuse at 05:45; it was cleared by `mv` to `scheduler/_mount_junk/index.lock.stale-2026-09-16` and the index verified clean. Network unchanged: 867 triplets / **135** cross-program connections / 90 findings.
+
+*Superseded status line (2026-09-15), retained for the run trail:* Daily run complete (**2026-09-15, Tuesday** - Hawkins + Hoffman specialist day; 3 today-dated specialist cards already in `pending/`, so Phase 2 skipped both). **Fifth consecutive zero-ingest day**, but the orchestrator sweep found one genuinely new source and wrote it: PROP-2026-09-15-004, Carroll's *AMA | September 2026*, carrying a named forthcoming Carroll-Wilkins "saturation" rule for anthropic reasoning and his sharpest statement yet of what the Hilbert-space program assumes rather than derives. 17 proposals await review, spanning five days (09-11 through 09-15) with no decision email since 09-09. Network: 867 triplets / **135** cross-program connections / 90 findings.
+
+*Correction carried by this run:* the 09-13 and 09-14 status lines both reported **108** cross-program connections. Counting distinct `CROSS-nnn` ids in `master/cross_program_index.md` gives **135**, contiguous from CROSS-001 to CROSS-135 (min 001, max 135, count 135 — no gaps). 108 appears to have been carried forward rather than recounted. The corrected figure is 135; the earlier number is left standing in the superseded lines below so the drift is visible rather than erased.
+
+*Superseded status line (2026-09-14), retained for the run trail:* Daily run complete (**2026-09-14, Monday** - Levin + Friston specialist day; 5 today-dated specialist cards already in `pending/`, so Phase 2 skipped both). **Fourth consecutive zero-ingest day and zero orchestrator proposals.** 13 proposals await review. Compile queue OPEN=1 (PROP-2026-08-14-033, Wright - fifth failed retrieval, and the KSBJ lead is now falsified; **recommend reject**). Network: 867 triplets / 108 cross-program connections / 90 findings.
 
 *Superseded status line (2026-09-13), retained for the run trail:* Daily run complete (**2026-09-13, Sunday**). **Third consecutive zero-ingest day**, and the first run in this stretch to also write **zero proposals** - Rohr was covered by the 07:00 specialist (3 cards), and searches for the four longest capture gaps (Fredrickson 31d, Arkani-Hamed 28d, Stump 19d, Friston 6d) returned only background inside the 60-day window. `scripts/ingest_ledger.py`: approved OPEN **1**, unchanged - PROP-2026-08-14-033 (Wright/Admirato) failed retrieval a **fifth** time. `pending/` stands at **8**. **The substantive result is a correction, not an acquisition.** Yesterday's entry recorded **108** CROSS entries and **91** distinct FINDING ids. Neither file has changed since yesterday's own commit (`git diff --name-only c2f3e2b HEAD` returns empty for both), and at that commit the derived counts were already **135** and **90**. The correct figures are **867 PRS triplets** across 15 traditions (unchanged, and independently confirmed by the Review Log rebuild's own `triplets=867`), **135 distinct CROSS ids** (contiguous 001-135, every one defined at line start, none referenced-only), and **90 distinct FINDING ids** (contiguous 001-090). 108 was the highest id in the newest *narrative* block - the file has two eras of formatting, block-style `CROSS-NNN:` entries and later bolded `**CROSS-NNN - ...**` ones, and a line-anchored count sees only the first. This is the same failure mode the standing rule already names: **last id is not count**, and here a pattern that matched one era of the file was read as a census of the whole. Level-2 stream rebuilt: **1501 signals / 87 pairs / span to 2026-09-09**, byte-identical to the accepted build, no staleness WARN (4 days).
 
@@ -486,6 +492,65 @@ These are the meta-questions the entire network is organized to answer:
 *To update this document: run the Master C2A2 Agent after dispatches have been filed.*
 
 ## Run Narrative
+
+**2026-09-15** - Full daily run (Tue, Hawkins + Hoffman specialist day; both specialists filed, three
+cards, so Phase 2 correctly skipped those two). **Fifth consecutive zero-ingest day**, but the first run
+in this stretch in which the orchestrator sweep produced something: **one proposal**, PROP-2026-09-15-004.
+
+**Phase 0 is a no-op, and it is worth saying why rather than just saying "none found."** The 3-day query
+returns nothing. Widening to `is:unread` returns four `[C2A2-review-decision]` threads — 2026-07-23,
+two copies of 2026-04-27, and 2026-04-08 — all self-sent and never marked read. Every one is already
+processed: the 04-08 and 07-23 batches have archive entries under their own dates, the 04-27 batch is
+archived as `2026-04-28_decisions.md` with all 15 of its proposals sitting in `approved/`, and all four
+thread ids are already accounted for in `provenance/decision_emails.json` (two in `emails`, two in
+`_resend_threads` as known duplicates). Nothing was routed, nothing was appended, and **nothing was
+marked read** — leaving them unread keeps the widened query honest for the next run, at the cost of
+re-finding them. Flagged rather than quietly cleaned up.
+
+**Phase 1 is clear, checked the right way.** A filename grep against `PROCESSED_LOG.md` reports 288
+inbox files "unprocessed," and that instrument is wrong: the log carries batch summaries that never
+name their files individually. Keying instead on `proposal_id` — for each `inbox/*.md`, does its
+`proposal_id` appear anywhere under `traditions/` or `master/`? — gives **0 uningested files**. Five
+files carry no `proposal_id` at all and are all previously adjudicated: the RC Pilot HTML, `README.md`,
+the three 2026-04-14 Hoffman/Levin multiscale files (logged), and
+`2026-09-08_levin_virtue-as-external-setpoint.md` (ingested 09-09, confirmed again last run).
+
+**Phase 2: nine traditions swept, eight returned only material already in the vault.** Levin's four
+2026 items (`Cognitive Glue` memoir, `What Lives?`, `Cognitive glues are shared models of relative
+scarcities`, `Brains and where else?`) are all already carded. Stump's *Infused Virtues and the
+Indwelling Holy Spirit* is `2026-05-05_stump_infused-virtues-indwelling-holy-spirit.md`. Wolfram's
+newest post is still 2026-08-04 (`In Memory of My Wife`), carded. Friston, McGilchrist, Fredrickson,
+Kastrup and Arkani-Hamed returned nothing inside the 60-day window that is both from the thinker and
+new. The duplicate filter is doing real work, not idling.
+
+**The one card, and why it survived the filter.** Carroll published `AMA | September 2026` on 09-14
+with a full transcript. Two answers are load-bearing. (1) Asked how fully non-indexical conditioning
+can still support multiverse anthropics, he describes a **saturation** rule from a paper in progress
+with **Isaac Wilkins**: update on the probability a universe contains *at least one* observer like you,
+not on how many — which defuses the presumptuous philosopher's infinite preference for infinite
+universes while still preferring bigger universes over tiny ones. (2) Asked whether the Hilbert-space
+program smuggles classical structure into its choice of factorization, he says flatly that **no**
+classical structure is assumed there — and then relocates the assumption, conceding that something must
+be assumed about "the appropriateness of the form of the Hamiltonian," with the criterion still open.
+Neither `non-indexical`, `presumptuous philosopher`, `Wilkins`, nor that Hilbert-space formulation
+appears anywhere in `traditions/carroll/`. The second answer is the more valuable of the two for this
+network: it is a principal naming an unclosed criterion in his own program, which is the shape a
+research program has to have to be comparable to a rival one.
+
+**Cross-tradition signal proposed, not asserted.** PRS-CANDIDATE-02 poses a *selection criterion*
+problem — which Hamiltonians permit a classical world — that rhymes with Wolfram on which rulial slices
+an observer can occupy and Arkani-Hamed on which functions admit a positive geometry, and with Friston
+on which partition yields a Markov blanket. The card says to check this against the existing
+Wolfram x Arkani-Hamed convergence entries before opening a new CROSS, rather than opening one blind.
+
+**Pattern detector: nothing forwarded, nothing to evaluate.** No files ingested, so no new signals.
+
+**Network numbers, recounted rather than carried:** **867** PRS triplets across 15 tradition files
+(arkanihamed 31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123,
+loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66) — unchanged, correctly.
+**135** distinct CROSS ids, contiguous CROSS-001..CROSS-135. **90** distinct FINDING ids, contiguous
+FINDING-001..FINDING-090 — which also settles the 90-vs-91 discrepancy the 09-14 entry recorded, in
+favour of 90. The cross-program count is the correction described in the status block above.
 
 **2026-09-14** - Full daily run (Mon, Levin + Friston specialist day; both specialists ran and filed
 five cards, so Phase 2 correctly skipped those two). **Fourth consecutive zero-ingest day, and the

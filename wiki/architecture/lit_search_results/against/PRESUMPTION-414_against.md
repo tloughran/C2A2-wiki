@@ -1,39 +1,85 @@
+*** FILE-HANDLING DEFECT, DECLARED 2026-09-16 ***
+This cycle-1 result was written to the path the 15a/15b spec prescribes (one file per item), which
+OVERWROTE the cycle-0 file at the same path. The cycle-0 search text is LOST. Its findings survive only
+in lit_search_returns.md and in DISPOSITION-359 / -361 / -397. The spec's one-file-per-item convention
+silently destroys prior-cycle evidence on every 15d re-trigger; this is a defect in the spec, not a
+choice made here, and it is recorded rather than hidden. Recommended fix: path should carry the cycle.
+
 SEARCH-AGAINST-PRESUMPTION-414:
-  Date searched: 2026-06-29
+  Date searched: 2026-09-16
   Original item: PRESUMPTION-414
-  Original statement: "[inferred] That some connectivity measure is the right proxy for vault 'health for synthesis' at all (vs content depth/coverage), even while questioning which edge type to count."
+  Original statement: [inferred] That some connectivity measure is the right proxy for "vault health for
+    synthesis" at all.
+  Cycle: 15d re-trigger 2026-07-12, cycle 1. Prior 15b (2026-06-29): CHALLENGED (Moderate).
 
   PROVENANCE:
     Origin: 14b
-    Chain: [14b -> 15b]
+    Chain: [14b -> 15a, 15b -> 15c -> 15d -> 15b]
     Original item: PRESUMPTION-414
-    Item type: PRESUMPTION (unstated - surfaced by inference)
+    Item type: PRESUMPTION (unstated — surfaced by inference)
     Transform at each step:
-      14b: Surfaced by inference: connectivity presumed to proxy synthesis health
-      15b: Searched for challenging literature
+      14b: Inferred from the audit framing health entirely in connectivity terms (2026-06-28).
+      15b: Re-searched for challenging literature on the 2026-07-12 re-trigger; executed 2026-09-16.
     Current status: CHALLENGED
+    INDEPENDENCE CAVEAT (declared, per the standing defect): 15a and 15b ran in a SINGLE process this
+      cycle. The independence the design assumes is not instantiated. Per PREMISE-004 as sharpened by
+      DISPOSITION-409, agreement between these two halves is NOT independent corroboration.
 
-  Challenging evidence found: Yes
+  Challenging evidence found: Yes.
 
   Sources:
-    1. Multi-dimensional KG quality frameworks. - Quality decomposes into completeness, content/property quality, coverage, and linkability - connectivity is one axis among several, and optimizing it alone is not validated as "health."
-    2. Goodhart / proxy-metric risk. - When a structural metric becomes the target, it ceases to be a good measure; treating connectivity as THE proxy invites gaming (e.g., adding low-value edges that raise connectivity without raising synthesis value).
-    3. Content-quality primacy in retrieval. - For synthesis and retrieval, content depth and coverage often predict usefulness more directly than topology; a densely linked but shallow corpus does not synthesize well.
+    1. Manheim & Garrabrant, "Categorizing Variants of Goodhart's Law"; and the taxonomy as restated in
+       arXiv:2505.23445, "The Strong, Weak and Benign Goodhart's Law." — Gives four failure modes:
+       regressional (proxy-goal gap), extremal (relationship differs at extremes), causal (proxy is not
+       causally upstream of the goal), and adversarial (the proxy is gamed). Connectivity-as-health is
+       exposed to at least extremal and causal Goodhart.
+    2. Thomas & Uminsky, 2020. "The Problem with Metrics is a Fundamental Problem for AI."
+       arXiv:2002.08512. — Argues that any metric is a proxy for what is actually wanted, that
+       optimisation pressure reliably widens the proxy-goal gap, and that the remedy is multiple
+       independent metrics plus qualitative checks, not a better single proxy.
+    3. PROXIMA, 2026. "A Reliability Scoring Framework for Proxy Metrics in Online Controlled
+       Experiments." arXiv:2604.14352. — Supplies the instrument the challenge implies: proxy metrics must
+       be SCORED for reliability against the ground-truth outcome before being trusted, not assumed valid.
+       This is a named, runnable test, and it is the specific thing MONITOR-403 has been waiting for.
+    4. Structural Coherence Index literature (arXiv:2211.10011). — Reported as support by 15a, but read
+       against the presumption it says the field measures structural quality SEPARATELY from retrieval
+       accuracy. Separability is exactly the claim that structure does not stand in for outcome.
 
-  Strength of challenge: Moderate
-
-  Summary: The presumption that connectivity (any edge type) is the right proxy for synthesis health is challenged by the consensus that knowledge-base quality is multi-dimensional and that content depth/coverage may matter more for synthesis than topology. There is a real Goodhart risk: improving a connectivity metric can be decoupled from improving actual synthesis capacity. The presumption privileges a measurable structural signal over the harder-to-measure content dimension.
-
-  Specific risks: Optimizing connectivity could produce a well-linked but shallow vault; effort spent on edges rather than content; false sense of "health."
-
-  Mitigations available: Pair connectivity with content-coverage/depth measures; validate that connectivity changes track actual synthesis-task performance, not just topology.
+  Strength of challenge: Moderate-Strong (upgraded from Moderate at intake).
 
   STEELMAN:
     Item: PRESUMPTION-414
-    Strongest counterargument: Connectivity is attractive because it is measurable, but knowledge-base health for synthesis is multi-dimensional; making any single topology metric the proxy risks Goodharting it - raising the number while leaving synthesis capacity (which depends on content depth and coverage) untouched.
-    What would need to be true for C2A2 to be safe: Connectivity is validated as correlating with actual synthesis-task outcomes, and is used alongside content/coverage measures rather than as the sole proxy.
-    How to test: Correlate connectivity changes with performance on a real synthesis/retrieval task before trusting it as a health proxy.
+    Strongest counterargument: The connectivity census is produced by the sewing agent, whose founding
+      remit IS connectivity. So the health verdict is generated by the party that is optimised on the
+      measure, over a graph it edits, with no external criterion. Under the Goodhart taxonomy this is the
+      causal and adversarial cases simultaneously: the agent can raise the number by adding links without
+      adding anything synthesisable, and nothing in the audit would distinguish that from real
+      improvement. The GraphRAG evidence 15a retrieved does not rescue this, because that evidence was
+      obtained where connectivity was an OBSERVED property of a corpus, not a TARGET an agent was
+      rewarded for raising — which is the precise boundary at which the literature says proxies fail. A
+      well-linked but thin vault would pass the audit, and the audit as designed cannot see thinness.
+    What would need to be true for C2A2 to be safe: (a) connectivity is measured by something other than
+      the agent whose remit it is, or against an external baseline; AND (b) connectivity deltas are shown
+      to track a synthesis-outcome measure over the vault's actual operating range, not merely over the
+      range where the KG literature established it.
+    How to test: Run the PROXIMA-style check. Take the vault's synthesis outputs over a window, score
+      them on a content measure that is not link-derived, and correlate against the connectivity deltas
+      for the same window. Low or non-monotone correlation falsifies the proxy. This is one correlation
+      over data the vault already holds.
 
-  Search scope: KG quality dimensions; Goodhart's law; content vs topology for retrieval. Adequate.
+  Specific risks: A connectivity-clean verdict green-lights thinker-agent synthesis over a graph that is
+    well-linked and thin. Because the verdict is the audit's headline, the failure is silent: there is no
+    artefact in which a thin-but-connected vault looks different from a rich one.
+
+  Mitigations available: Yes, and cheap — the correlation above; dual-reporting connectivity alongside one
+    non-link content measure; or, failing both, an explicit UNCALIBRATED tag on the health verdict.
+
+  RELATED-PREMISE NOTE (stated as an ANALOGY, not as coverage — the pre-check discipline of REVISE-474
+    requires the distinction): `grep -in "self-measurement\|external baseline" validated_premises.md`
+    returns PREMISE-124, which requires that any self-measurement of THE PIPELINE'S OWN completeness or
+    accuracy cite an external baseline or be tagged UNCALIBRATED. PRESUMPTION-414 is NOT that case: it is
+    an agent measuring the VAULT, not the pipeline measuring itself. The structure is the same — a
+    favourable number produced from inside the thing being evaluated — but PREMISE-124 as written does
+    NOT cover it. NO COVERING PREMISE FOUND for optimiser-measures-its-own-target.
 
   Recommendation: CHALLENGED

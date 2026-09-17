@@ -1210,3 +1210,80 @@ since nothing was ingested. **108** CROSS entries. **90** distinct FINDING ids, 
 contiguous (min 001, max 090, count 90). **The 09-13 entry stated 91.** Recorded as a discrepancy rather
 than silently adopting either figure. A gap-check I ran first reported 89 phantom missing ids; that was my
 own instrument (zero-padded ids against unpadded loop indices), not the file.
+
+## 2026-09-16 — daily run (Wed, McGilchrist + Kastrup specialist day)
+
+**Nothing ingested. That is the correct outcome, and here is the instrument that says so.**
+`python3 scripts/ingest_ledger.py wiki` reports, for both queues:
+`total=414  ingested=382  decided-zero=30  OPEN=1`. The single OPEN card is the standing
+retrieval assignment, below. Two files carry no `proposal_id` and remain unjudgeable by the
+ledger, unchanged and correctly so: `inbox/proposals/approved/2026-05-12_repair_manifest.md`
+(a manifest, not a source) and `inbox/2026-09-08_levin_virtue-as-external-setpoint.md`
+(ingested 2026-09-09; levin PRS-116, macintyre PRS-06, stump PRS-41 all cite it).
+
+**Wright PROP-2026-08-14-033 — retrieval re-attempted 2026-09-16, FAILED AGAIN. Sixth
+consecutive failure.** `web_fetch` on `https://ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/`
+returned an **empty body** once more — the post is a bare media embed with no article text, exactly
+as the 08-29 card recorded. A fresh WebSearch surfaced only the ntwrightpage index entry, the
+Audio/Video archive and the *God's Homecoming* SPU interview; no Admirato / *Between Beliefs* /
+KSBJ audio, and no transcript. **Not ingested, not closed, not downgraded.** The card's own
+instruction stands: locate the audio or reject the card. Nothing conjectural was written.
+
+**Pattern detector: nothing forwarded, nothing to evaluate.** No files ingested, so no new signals.
+
+**Phase 2: 0 orchestrator proposals — every candidate already captured.** McGilchrist (2) and
+Kastrup (1) skipped, specialists filed today. Swept the other in-scope traditions; each hit
+checked against the vault before it was allowed to die:
+- **Levin** — the three September bioRxiv/arXiv preprints surfaced by search (decodable bacterial
+  patterns, LLMs-as-cognitive-virus, Vmem/connexin metastasis) are **already pending** as
+  PROP-2026-09-12-003/-002/-004. "From Development to Cognitive Glue" → already at
+  `inbox/2026-06-01_levin_cognitive-glue-journey.md`. "Who's the data?" → approved 2026-04-20.
+  Planarian habituation transcriptional profiling → approved 2026-08-25. Duplicate filter working.
+- **Levin, rejected on authorship** — arXiv 2605.26856 *The Sensation Modulating Network*
+  (Haltability) surfaced again. **Authors are Nagarjuna & Karnam; no Levin.** Already recorded as
+  ASSUMPTION-1136. The from-the-thinker filter caught it a second time; leaving this note so the
+  third sighting is cheap.
+- **Stump** — "The Coexistence of Time and Eternity: Cajetan's Solution" is **already approved**
+  (`2026-07-23_stump_cajetan-time-eternity-contingent-futures.md`). "What are we?" already captured.
+- **Carroll** — the September 2026 Mindscape AMA is **already pending** (PROP-2026-09-15-004).
+- **Fredrickson, Arkani-Hamed, Wolfram, Friston, Hawkins, Hoffman** — no primary material inside
+  the 60-day window that is not already in the vault. Wolfram's writings index stops at 2026-08-04.
+- **Wright** — the only September item is a 2026-09-12 Istanbul speaking engagement (itinerary, not
+  retrievable content). No card written, per the standing rule that a title-only card is the Wright
+  mistake.
+- **Rohr** — 2026 theme "Good News for a Fractured World" and the September meditations are covered
+  by the three cards pending since 09-13. Nothing new.
+
+**Network, derived by counting headers, and one figure corrected.** **867** PRS triplets across 15
+tradition files (`^PRS-[0-9]+:` in each `traditions/*/prs_triplets.md`): arkanihamed 31, carroll 85,
+fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9, macintyre 6,
+mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66 — unchanged, correctly, since nothing was
+ingested. **90** distinct FINDING ids, FINDING-001..090, contiguous — matches 09-14.
+
+**⚠ CROSS count discrepancy, named rather than averaged.** The 09-14 entry reports **108** CROSS
+entries. Counting **distinct ids** gives **135** (CROSS-001..CROSS-135, contiguous, no gaps).
+The two numbers come from two different instruments: 107 lines in `master/cross_program_index.md`
+begin with a bare `CROSS-NNN`, and 32 more carry the id as `**CROSS-NNN`, so a line-shape count
+lands near 108 while an id count lands on 135. **135 is the number of connections; 108 was a
+line-count artifact.** Recorded here rather than silently adopting either. A `^CROSS-[0-9]+:`
+pattern gives a third answer (54) because roughly half the entries lack the trailing colon —
+formatting drift in the file, not missing data.
+
+*Correction to the CROSS note above, found after writing it:* the **09-15 run already made this
+correction** — its status line carries 135 and an explicit note that 09-13 and 09-14 both reported
+108. So 135 is the established figure, not a new finding; what is new here is the third instrument
+(`^CROSS-[0-9]+:` → 54) and the reason for it, which is the missing-colon formatting drift. Leaving
+both notes so the trail shows the check was run independently and agreed.
+
+**Phase 5 cleanup and the mount.** `rm` is still blocked on the mount (`Operation not permitted`);
+`mv` still works. `review/2026-09-12_review.html` was retired to `review/_superseded/` rather than
+deleted, per the 2026-05-25 workaround. 09-13/14/15/16 retained.
+
+**⚠ Self-inflicted, caught and cleared: a stale `.git/index.lock`.** This run's `git add wiki/`
+failed with `Unable to create '.git/index.lock': File exists` and left a 0-byte lock behind, which
+`rm` could not remove. **A stale lock would have made `scripts/commit_daily_run.sh` refuse at
+05:45** — its guard refuses on any `.git` lock — and would have blocked Tom's own git commands.
+Cleared by `mv`-ing it to `scheduler/_mount_junk/index.lock.stale-2026-09-16`. Verified afterwards:
+`.git/index.lock` absent, `git diff --cached --name-only` empty (nothing was staged). Recording it
+because a lock created by a run and left for the next one is precisely the silent-failure shape the
+scheduler-health work exists to end.
