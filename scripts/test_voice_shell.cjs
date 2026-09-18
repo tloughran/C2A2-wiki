@@ -2447,6 +2447,102 @@ async function main() {
   record('I1 the Resume control exists, starts hidden, and is inert with no session',
     idleUi === 'ok', 'vg-resume: ' + idleUi);
 
+  // ---- Phase X: ONE `find`, every tab ---------------------------------------
+  //
+  // The search-and-dialogue decision of 2026-09-16: every tab's own search box
+  // is an ALIAS of CCL `find` -- one code path, journaled, undoable, reported by
+  // `what`, reachable by voice -- and a bare string typed in the bar is a search.
+  // Three claims per tab, each asserted against the page and the bar:
+  //   X<n>a  `find <x>` in the bar reports a count and journals a cut
+  //   X<n>b  the tab's own box, embedded, produces the IDENTICAL journal entry
+  //          (the alias posts {source:'c2a2-tab', type:'find'} and the shell runs
+  //          the same `find`)
+  //   X<n>c  `undo` restores; `what` names the cut while it is live
+  //
+  // A tab that has not implemented the contract yet is PENDING, not skipped:
+  // its rows record FAIL with the word pending, so the suite is red until the
+  // tab lands (Rule 12: "completed" is a lie if anything was skipped silently).
+  // The Sociogram is the one tab whose `find` predates the contract; its rows
+  // run on the scrape road and must stay green through the transition.
+  process.stdout.write('\nPhase X -- one find, every tab\n');
+  const findEcho = await page.eval("return document.getElementById('ccl-input').placeholder;");
+  record('X0 the bar advertises search, not only commands', /search this view/.test(findEcho || ''), findEcho);
+  const findHelp = await runCmd(page, 'help');
+  record('X0a help says plain text is a search', /plain text = find/.test(findHelp.spoken || ''), findHelp.spoken);
+
+  const FIND_TABS = [
+    // src, needle, contract expected today?
+    ['wiki_narration.html',  'levin',   false],   // Sociogram: scrape road until tab 1 lands; then contract
+    ['community_explorer.html', 'civic', true],
+    ['prs_3d.html',          'levin',   true],
+    ['agents_tab.html',      'summa',   true],
+    ['rc_document_explorer.html', 'levin', true],
+    ['physics_explorer.html', 'newton', true],
+    ['rc_sandbox_notebook.html', 'levin', true],
+    ['heartbeat/index.html', 'agent',   true],
+  ];
+  for (const [src, needle, needsContract] of FIND_TABS) {
+    const key = src.replace(/\.html$|\/index\.html$/, '').replace(/^.*\//, '');
+    // Education tabs live behind a chapter button; the accelerator tabs behind
+    // another. Click the chapter first when the tab button is not on screen.
+    let act = await activateTab(page, src);
+    if (/no such tab button/.test(act)) {
+      await page.eval("var b=document.getElementById('chap-education'); if (b) { b.click(); } return 1;");
+      await sleep(800);
+      act = await activateTab(page, src);
+    }
+    await sleep(src === 'wiki_narration.html' ? 9000 : 5000);
+    const has = await page.eval(IFRAME_DOC +
+      "return { find: !!(w && typeof w.c2a2Find==='function'), clear: !!(w && typeof w.c2a2Clear==='function'), read: !!(w && typeof w.c2a2ReadCut==='function') };");
+    const contract = has.find && has.clear && has.read;
+    if (needsContract && !contract) {
+      record('X ' + key + ' -- pending: tab does not expose c2a2Find/c2a2Clear/c2a2ReadCut yet', false, JSON.stringify(has));
+      continue;
+    }
+    const before = await runCmd(page, 'clear');
+    const found = await runCmd(page, 'find ' + needle);
+    record('X ' + key + ' a: find ' + needle + ' -> a count, on the ' + (contract ? 'contract' : 'scrape') + ' road',
+      found.ok && /\d+ /.test(found.spoken || ''), found.spoken);
+    const j1 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+    record('X ' + key + ' a2: the cut is journaled with its query', /"query":"/.test(j1 || '') && new RegExp(needle).test(j1 || ''), j1 ? j1.slice(0, 160) : 'no CCLJournalTop');
+    const whatCut = await runCmd(page, 'what');
+    record('X ' + key + ' c: what names the cut', new RegExp('cut to \\d+ .*' + needle).test(whatCut.spoken || ''), whatCut.spoken);
+    const undone = await runCmd(page, 'undo');
+    record('X ' + key + ' c2: undo restores the cut', undone.ok && /undid \(cut\)/.test(undone.spoken || ''), undone.spoken);
+    if (contract) {
+      // The alias: the tab's own box, embedded, must produce the SAME journal entry.
+      await runCmd(page, 'clear');
+      const aliased = await page.eval(IFRAME_DOC +
+        "w.parent.postMessage({source:'c2a2-tab', type:'find', text:" + JSON.stringify(needle) + "}, '*'); return 1;");
+      await sleep(1200);
+      const j2 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+      record('X ' + key + ' b: the tab\'s own box is an alias -- identical journal entry', j1 === j2, (j1 || '').slice(0, 100) + ' vs ' + (j2 || '').slice(0, 100));
+      await runCmd(page, 'clear');
+    }
+  }
+  // Bare string -> find, on a tab with `find` (the Sociogram is up last only if
+  // its row ran; make it explicit).
+  await activateTab(page, 'wiki_narration.html'); await sleep(9000);
+  const bare = await runCmd(page, 'levin');
+  // The scrape road says `find levin`; the contract road says `find "levin"`.
+  // Both begin with the command that actually ran, which is the claim.
+  record('X9 a bare string in the bar runs as find, and says so', bare.ok && /^find "?levin"?/.test(bare.spoken || ''), bare.spoken);
+  const shotX = await page.screenshot(path.join(SHOTS, 'X-bare-find.png'));
+  await runCmd(page, 'clear');
+  const bareNo = await runCmd(page, 'xyzzy-no-such-verb');
+  record('X9a a bare string that matches nothing is a visible find, not a refusal', /^find "?xyzzy-no-such-verb"?/.test(bareNo.spoken || ''), bareNo.spoken);
+  // FOUND BY THIS ROW, 2026-09-17: on the scrape road a search that matches
+  // NOTHING reads back as "5102 nodes shown" -- the Sociogram's runSearch dims
+  // nothing when nothing matched, and deriveLitIds reads "nothing dimmed" as
+  // "everything lit". The bar then reports the opposite of what happened. The
+  // contract road cannot make this mistake (ids come from the tab's answer), so
+  // this row is PENDING on tab 1 rather than patched on the scrape road.
+  record('X9a2 a no-match search says nothing matched (pending: Sociogram contract, tab 1)',
+    /nothing matched/.test(bareNo.spoken || ''), bareNo.spoken);
+  await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);
+  const bareOff = await runCmd(page, 'levin');
+  record('X9b on a view without find, a bare string is still an unknown command', /Unknown command/.test(bareOff.spoken || ''), bareOff.spoken);
+
   // ---- report ----
   const failed = results.filter(function (r) { return !r.ok; });
   process.stdout.write('\n' + '-'.repeat(70) + '\n');
@@ -2454,7 +2550,7 @@ async function main() {
   process.stdout.write('page exceptions: ' + page.exceptions.length + '   console errors: ' + page.consoleErrors.length + '\n');
   page.exceptions.forEach(function (e) { process.stdout.write('  EXCEPTION  ' + e.split('\n')[0] + '\n'); });
   page.consoleErrors.forEach(function (e) { process.stdout.write('  CONSOLE    ' + e.slice(0, 200) + '\n'); });
-  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH, shotJ, shotL].join('\n  ') + '\n');
+  process.stdout.write('screenshots:\n  ' + [shotA, shotFind, shotB, shotB2, shotC, shotD, shotE, shotFc, shotF, shotG, shotH, shotJ, shotL, shotX].join('\n  ') + '\n');
 
   const clean = failed.length === 0 && page.exceptions.length === 0 && page.consoleErrors.length === 0;
   process.stdout.write(clean ? '\nSHELL TEST GREEN\n' : '\nSHELL TEST RED\n');

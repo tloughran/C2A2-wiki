@@ -609,6 +609,9 @@
         undoOf(tab).push(e);
         return { dim: e.dim, value: e.after };
       },
+      // Read-only: the newest entry, for a harness that must assert the SAME
+      // journal entry arrived by two roads. Never mutates either stack.
+      peek: function (tab) { const u = undoOf(tab); return u.length ? { dim: u[u.length - 1].dim, before: u[u.length - 1].before, after: u[u.length - 1].after } : null; },
       canUndo: function (tab) { return undoOf(tab).length > 0; },
       canRedo: function (tab) { return redoOf(tab).length > 0; },
       depth: function (tab) { return undoOf(tab).length; },
