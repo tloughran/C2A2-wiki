@@ -1095,9 +1095,10 @@ function showReaderHelp() {
      Talk to the wiki: OpenAI Realtime API over WebRTC — voice-to-voice,
      native barge-in. Lives in the SHELL (top document, not iframe-loaded),
      so it is inlined here per the iframe-asset constitutional rule.
-     Reuses the OpenAI key the Sociogram TTS already stores in
-     localStorage['tts_api_key']. Can drive the shell's own tabs by voice
-     via the switch_tab function tool.
+     Keyless for visitors: the broker mints the session server-side
+     (Pathway 00 -- no key on a public page; the BYO-key fallback was retired
+     2026-09-18, the last client-key path on the site). Can drive the shell's
+     own tabs by voice via the switch_tab function tool.
      ═══════════════════════════════════════════════════════════════════ -->
 <style>
   /* Lives in the right end of #ccl-bar (the shell's own strip), not floating
@@ -1154,13 +1155,6 @@ function showReaderHelp() {
     margin-top: 8px; transition: background 0.15s;
   }
   #vg-resume:hover { background: rgba(201,168,76,0.12); }
-  #vg-keyrow { display: none; margin-bottom: 12px; }
-  #vg-keyrow.show { display: block; }
-  #vg-keyrow label { display: block; font-size: 11px; color: #8a8a98; margin-bottom: 5px; }
-  #vg-key {
-    width: 100%; padding: 8px 10px; border-radius: 6px; border: 1px solid #2a2a3a;
-    background: #0a0a0f; color: #ddd; font-size: 12px; font-family: monospace;
-  }
   #vg-transcript {
     margin-top: 12px; max-height: 180px; overflow-y: auto; font-size: 12.5px;
     line-height: 1.55; color: #c4c4d2; border-top: 1px solid #20202e; padding-top: 10px;
@@ -1181,12 +1175,6 @@ function showReaderHelp() {
   </div>
   <div id="vg-body">
     <div id="vg-status">Idle. Press Start and speak &mdash; ask about C2A2, the traditions, or say &ldquo;take me to the Sociogram.&rdquo;</div>
-    <div id="vg-keyrow">
-      <label>Fallback: your own OpenAI key (only if the free voice service is busy)</label>
-      <input type="password" id="vg-key" placeholder="sk-..." name="vg-openai-key"
-             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-             data-1p-ignore data-lpignore="true">
-    </div>
     <button id="vg-toggle" onclick="VoiceGuide.toggle()">Start conversation</button>
     <!-- Appears only once silence has switched listening off; the complement to
          End conversation, so coming back is one deliberate click rather than a
@@ -1204,7 +1192,6 @@ function showReaderHelp() {
 var VoiceGuide = (function() {
   var MODEL = 'gpt-realtime';           // GA realtime model; fallback: gpt-4o-realtime-preview
   var VOICE = 'cedar';                  // valid realtime voices: alloy ash ballad coral echo sage shimmer verse marin cedar
-  var KEY_STORE = 'tts_api_key';        // shared with the Sociogram OpenAI TTS
   // Pathway-00 broker: mints the Realtime ephemeral server-side so PUBLIC
   // visitors need no key. Same endpoint/device-id contract as c2a2-search.js.
   var BROKER_URL = 'https://akhcocmgfwybdovqeovd.supabase.co/functions/v1/cc-broker';
@@ -1942,7 +1929,6 @@ var VoiceGuide = (function() {
   // Only accept real OpenAI keys. Browser password managers autofill the
   // password field with junk (e.g. the page URL); never send or persist that,
   // and never let it clobber the shared TTS key.
-  function looksLikeKey(s) { return /^sk-\S{20,}$/.test(s); }
   // Stable per-browser id, shared with c2a2-search.js so broker rate-limits align.
   function guideDeviceId() {
     try {
@@ -1959,8 +1945,8 @@ var VoiceGuide = (function() {
     } catch (e) { return '00000000-0000-4000-8000-000000000000'; }
   }
 
-  // Keyless path: broker mints the ephemeral server-side. Throws 'broker-limit'
-  // on cap-hit, else an Error, so start() can decide whether to fall back to BYO.
+  // The only path: the broker mints the ephemeral server-side. Throws
+  // 'broker-limit' on cap-hit, else an Error; start() reports both in words.
   async function mintViaBroker() {
     var r = await fetch(BROKER_URL, {
       method: 'POST',
@@ -1974,36 +1960,6 @@ var VoiceGuide = (function() {
     return d.value;
   }
 
-  // Power-user fallback: mint directly with the visitor's own OpenAI key.
-  async function mintViaUserKey(key) {
-    var sess = await fetch('https://api.openai.com/v1/realtime/client_secrets', {
-      method: 'POST',
-      headers: { 'Authorization': 'Bearer ' + key, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ session: { type: 'realtime', model: MODEL, audio: { output: { voice: VOICE } } } })
-    });
-    if (!sess.ok) {
-      var errTxt = await sess.text();
-      throw new Error('session mint failed (' + sess.status + '): ' + errTxt.slice(0, 160));
-    }
-    var sessData = await sess.json();
-    var ephemeral = sessData.value || (sessData.client_secret && sessData.client_secret.value);
-    if (!ephemeral) throw new Error('no ephemeral token in session response');
-    return ephemeral;
-  }
-
-  function getKey() {
-    var typed = el('vg-key').value.trim();
-    if (typed && looksLikeKey(typed)) {
-      try { localStorage.setItem(KEY_STORE, typed); } catch(e) {}
-      return typed;
-    }
-    if (typed && !looksLikeKey(typed)) {
-      setStatus('That does not look like an OpenAI key (must start with sk-). Ignored.', 'err');
-    }
-    var stored = '';
-    try { stored = (localStorage.getItem(KEY_STORE) || '').trim(); } catch(e) {}
-    return looksLikeKey(stored) ? stored : '';
-  }
 
   // Load the agent-authored FAQ once; it becomes the guide's first-pass source.
   async function loadFaq() {
@@ -2659,29 +2615,18 @@ var VoiceGuide = (function() {
       return;
     }
 
-    // 1. Mint an ephemeral token. Prefer the broker (keyless for visitors);
-    //    fall back to a visitor-supplied key only if the broker is down/over-limit.
+    // 1. Mint an ephemeral token through the broker. No fallback: a public
+    //    page holds no key (Pathway 00). Over the cap or down, say which and stop.
     var ephemeral = null;
     try {
       ephemeral = await mintViaBroker();
     } catch (be) {
-      var key = getKey();
-      if (!key) {
-        el('vg-keyrow').classList.add('show');
-        setStatus(be && be.message === 'broker-limit'
-          ? 'Daily free voice limit reached. Enter your own OpenAI key to continue.'
-          : 'Voice service unavailable right now. Enter your own OpenAI key, or try later.', 'err');
-        if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
-        connecting = false; setBtn('Start conversation', false);
-        return;
-      }
-      try {
-        ephemeral = await mintViaUserKey(key);
-      } catch (ke) {
-        stop(true);
-        setStatus('Could not connect: ' + ke.message, 'err');
-        return;
-      }
+      setStatus(be && be.message === 'broker-limit'
+        ? 'Daily free voice limit reached. Try again tomorrow; typed commands still work in the bar below.'
+        : 'Voice service unavailable right now (' + ((be && be.message) || 'no reply') + '). Try later; typed commands still work in the bar below.', 'err');
+      if (micStream) { micStream.getTracks().forEach(function(t){ t.stop(); }); micStream = null; }
+      connecting = false; setBtn('Start conversation', false);
+      return;
     }
 
     try {
