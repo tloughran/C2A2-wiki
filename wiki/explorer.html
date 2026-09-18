@@ -4231,7 +4231,13 @@ var VoiceGuide = (function() {
   // a format template -- which nobody wants read aloud before the content. That
   // material is HELD BACK, counted, and offered: "say read details". Skipped
   // outright: code blocks and tables (unreadable aloud) and rule separators.
-  var META_RE = /^(maintained by|last updated|source|confidence|date added|tags?|status|authored[_ ]by|authored[_ ]at|id|path|file)\b\s*[:|]/i;
+  // Two shapes of provenance line. `Source: ...` carries its separator right
+  // after the keyword; `Maintained by the Karl Friston Agent | Last updated:
+  // 2026-08-28` -- the header on all 30 tradition files -- does not, and the
+  // old pattern read it aloud on every tradition wiki that lacked a Source:
+  // line (15 of 30). Found 2026-09-17 by a harness row that passed or failed
+  // on which node `pick random` chose. `[PROCESSED: ...]` is the same class.
+  var META_RE = /^(?:(?:maintained by|authored[_ ]by)\b|\[?processed\s*:|(?:last updated|source|confidence|date added|tags?|status|authored[_ ]at|id|path|file)\b\s*[:|])/i;
   var RULE_RE = /^[-\u2013\u2014_*=\s]{3,}$/;
   // Headings the PAGE needs and a listener does not. "Transcript." announced
   // between the title and the first sentence is furniture read aloud.
