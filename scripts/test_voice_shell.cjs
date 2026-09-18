@@ -2472,7 +2472,7 @@ async function main() {
 
   const FIND_TABS = [
     // src, needle, contract expected today?
-    ['wiki_narration.html',  'levin',   false],   // Sociogram: scrape road until tab 1 lands; then contract
+    ['wiki_narration.html',  'levin',   true],    // Sociogram: contract since tab 1 (2026-09-18)
     ['community_explorer.html', 'civic', true],
     ['prs_3d.html',          'levin',   true],
     ['agents_tab.html',      'summa',   true],
@@ -2512,8 +2512,15 @@ async function main() {
     if (contract) {
       // The alias: the tab's own box, embedded, must produce the SAME journal entry.
       await runCmd(page, 'clear');
+      // Drive the tab's OWN box, not a hand-made postMessage: the shell accepts
+      // the alias only from the window it is showing (e.source), and a message
+      // posted from a page.eval has no such source -- so a faked one is rejected,
+      // correctly, and would fail this row for the wrong reason (run 8, 09-18).
       const aliased = await page.eval(IFRAME_DOC +
-        "w.parent.postMessage({source:'c2a2-tab', type:'find', text:" + JSON.stringify(needle) + "}, '*'); return 1;");
+        "var box = d.getElementById('search-input') || d.getElementById('exp-search') || d.getElementById('prs-search-box') || d.getElementById('toc-filter') || d.getElementById('concept-search') || d.getElementById('q') || d.getElementById('signal-search');" +
+        "if (!box) { return 'no box'; } box.value = " + JSON.stringify(needle) + ";" +
+        "if (typeof w.runSearch === 'function') { w.runSearch(); return 'runSearch'; }" +
+        "box.dispatchEvent(new w.KeyboardEvent('keydown', {key:'Enter', bubbles:true})); box.dispatchEvent(new w.Event('input', {bubbles:true})); return 'events';");
       await sleep(1200);
       const j2 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
       record('X ' + key + ' b: the tab\'s own box is an alias -- identical journal entry', j1 === j2, (j1 || '').slice(0, 100) + ' vs ' + (j2 || '').slice(0, 100));

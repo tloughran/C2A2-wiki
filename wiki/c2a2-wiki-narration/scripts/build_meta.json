@@ -1,14 +1,14 @@
 {
   "agent_actor_nodes": 27,
   "agent_data": true,
-  "bytes": 61118359,
+  "bytes": 61348695,
   "flow": 53,
-  "links": 156015,
-  "nodes": 5129,
+  "links": 156967,
+  "nodes": 5133,
   "nodes_by_group": {
     "agent-activity": 27,
     "agents": 33,
-    "architecture": 3339,
+    "architecture": 3343,
     "deferred": 3,
     "flags": 7,
     "inbox": 907,

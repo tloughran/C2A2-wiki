@@ -1008,6 +1008,13 @@ var nodeSel = null;
 var playSpeed = 1;
 var brightness = 1;
 var IDLE_NARRATION = '';
+// THE CUT, AS DATA. Every path that lights a subset of the graph -- text search,
+// focus:, isolate, link -- records what it lit here, so the shell reads the
+// answer instead of scraping opacities (the c2a2Find contract, 2026-09-16).
+// null = nothing cut. Written only by noteCut()/clearCut(); read by c2a2ReadCut().
+var SEARCH_CUT = null;
+function noteCut(query, idMap) { var ids = Object.keys(idMap || {}); SEARCH_CUT = ids.length ? { query: String(query || ''), ids: ids } : null; }
+function clearCut() { SEARCH_CUT = null; }
 var simulation = null;
 var zoomBehavior = null;
 var nodeById = {};
@@ -3249,6 +3256,7 @@ function runFocus(rawAfterPrefix) {
       return (focus[ls] && focus[lt]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
     });
   var lbl = entityKeys.join(', ') + ' ~ ' + groupKeys.join(', ');
+  noteCut('focus: ' + lbl, focus);
   if (!focusCount) {
     setNarrationText('Focus "' + lbl + '": no linked pairs found (computed over the full graph). Check the group keys, or that both groups are enabled at left.');
   } else {
@@ -3344,10 +3352,11 @@ function isolateGroups(keys) {
   var inSet = {};
   keys.forEach(function(k) { inSet[k] = true; });
   var grp = nodeGroupMap();
-  var count = 0;
+  var count = 0, lit = {};
   for (var i = 0; i < NODES.length; i++) {
-    if (inSet[NODES[i].group] && groupVisibility[NODES[i].group]) count++;
+    if (inSet[NODES[i].group] && groupVisibility[NODES[i].group]) { count++; lit[NODES[i].id] = true; }
   }
+  noteCut(keys.join(' '), lit);
   d3.selectAll('.node-circle')
     .interrupt()
     .attr('opacity', function(d) {
@@ -3394,6 +3403,7 @@ function linkGroups(keys) {
       return (focus[s] && focus[t]) ? Math.min(0.5 * brightness, 1) : (brightness * 0.05);
     });
   var lbl = keys.join(' ↔ ');
+  noteCut(keys.join(' '), focus);
   if (!focusCount) {
     setNarrationText('Link "' + lbl + '": no direct links found across these groups (computed over the full graph). Are all of them enabled at left?');
   } else {
@@ -3505,27 +3515,54 @@ function onSearchKey(e) {
   if (e.key === 'Escape') { hideSuggest(); }
 }
 
+// Is this page the explorer shell's content frame? Same-origin, so the shell's
+// entry point is visible on the parent; a nested embedding (agents_tab.html,
+// summa_explorer.html) has a parent with no CCLRun and searches locally.
+function inShell() {
+  try { return window.parent !== window && typeof window.parent.CCLRun === 'function'; } catch (e) { return false; }
+}
+
+// THE SEARCH BOX IS AN ALIAS OF THE SHELL'S `find` (search-and-dialogue review,
+// 2026-09-16). Inside the explorer the box hands its text to the shell, which
+// runs the same journaled, undoable `find` a typed or spoken command would and
+// calls back into c2a2Find below. Standalone, or nested elsewhere, it searches
+// here and nothing is journaled. "Ask AI" keeps its own road until the `ask`
+// verb exists (Phase 3). One search implementation per tab, ever.
 function runSearch() {
   var raw = document.getElementById('search-input').value.trim();
+  // Deterministic relational focus command (navigation increment 1). Explicit
+  // prefix never collides with substring search, and overrides AI mode.
+  var aiBox = document.getElementById('search-ai-mode');
+  var wantAI = !!(aiBox && aiBox.checked) && raw && raw.toLowerCase().indexOf('focus:') !== 0;
+  if (!wantAI && inShell()) {
+    window.parent.postMessage({ source: 'c2a2-tab', type: raw ? 'find' : 'clear', text: raw }, '*');
+    return;
+  }
+  if (wantAI) {
+    // When "Ask AI" is on, route through the shared C2A2 broker pipeline
+    // (wiki/lib/c2a2-search.js, attached as window.C2A2Search). The external-
+    // search checkbox toggles 'enrich' vs 'web_enrich' inside the module.
+    runSearchAI(raw);
+    return;
+  }
+  runSearchLocal(raw);
+}
+
+// The deterministic core: no network, no checkbox. Everything the box could do
+// without AI -- reset, focus:, bare-guess, substring search -- and the road the
+// shell's `find` takes through c2a2Find.
+function runSearchLocal(raw) {
+  raw = String(raw || '').trim();
   if (!raw) {
+    clearCut();
     setNarrationText(IDLE_NARRATION);
     // Reset node + link highlights (restores a prior focus: fade too).
     d3.selectAll('.node-circle').attr('opacity', brightness);
     d3.selectAll('.link-line').attr('opacity', Math.min(0.5 * brightness, 1));
     return;
   }
-  // Deterministic relational focus command (navigation increment 1). Explicit
-  // prefix never collides with substring search, and overrides AI mode.
   if (raw.toLowerCase().indexOf('focus:') === 0) {
     runFocus(raw.slice(raw.indexOf(':') + 1));
-    return;
-  }
-  // When "Ask AI" is on, route through the shared C2A2 broker pipeline
-  // (wiki/lib/c2a2-search.js, attached as window.C2A2Search). The external-
-  // search checkbox toggles 'enrich' vs 'web_enrich' inside the module.
-  var aiBox = document.getElementById('search-ai-mode');
-  if (aiBox && aiBox.checked) {
-    runSearchAI(raw);
     return;
   }
   // Bare-guess relational navigation (increment 1.6, no "focus:" prefix, no LLM).
@@ -3598,8 +3635,30 @@ function runSearch() {
     parts.push('Top files: ' + matches.slice(0, 6).map(function(n) { return n.label; }).join(', ') + '...');
   }
 
+  noteCut(query, textMatch);
   setNarrationText(parts.join(' '));
 }
+
+// ── THE FIND CONTRACT (three functions the explorer shell calls) ──
+// c2a2Find(text)  -> { query, ids, count, label }   deterministic; this page's own search
+// c2a2Clear()     -> void                            restore; idempotent
+// c2a2ReadCut()   -> { query, ids } | null           what is cut right now, as data
+window.c2a2Find = function(text) {
+  var q = String(text || '').trim();
+  var el = document.getElementById('search-input');
+  if (el) el.value = q;
+  runSearchLocal(q);
+  var c = SEARCH_CUT;
+  return { query: q, ids: c ? c.ids.slice() : [], count: c ? c.ids.length : 0, label: 'nodes shown' };
+};
+window.c2a2Clear = function() {
+  var el = document.getElementById('search-input');
+  if (el) el.value = '';
+  runSearchLocal('');
+};
+window.c2a2ReadCut = function() {
+  return SEARCH_CUT ? { query: SEARCH_CUT.query, ids: SEARCH_CUT.ids.slice() } : null;
+};
 
 // ── CURRENT VIEW STATE ──
 // Reads the live D3 graph to describe which nodes are currently highlighted
