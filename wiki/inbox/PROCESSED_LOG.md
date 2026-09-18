@@ -1287,3 +1287,59 @@ Cleared by `mv`-ing it to `scheduler/_mount_junk/index.lock.stale-2026-09-16`. V
 `.git/index.lock` absent, `git diff --cached --name-only` empty (nothing was staged). Recording it
 because a lock created by a run and left for the next one is precisely the silent-failure shape the
 scheduler-health work exists to end.
+
+## 2026-09-17 — daily run (Thu, Stump + Fredrickson specialist day)
+
+**Nothing ingested — seventh consecutive zero-ingest day, and the instrument agrees.**
+`python3 scripts/ingest_ledger.py wiki`: both queues `total=414  ingested=382  decided-zero=30  OPEN=1`.
+The single OPEN card is still Wright PROP-2026-08-14-033 (standing retrieval assignment, six prior
+failures). **Not re-attempted this run** — recorded as such rather than as a seventh failure. The two
+no-`proposal_id` files (`approved/2026-05-12_repair_manifest.md`, `inbox/2026-09-08_levin_virtue-as-external-setpoint.md`)
+are unchanged and correctly unjudgeable.
+
+**Phase 0.** Gmail `[C2A2-review-decision]` newer_than:3d → empty. Four older threads (04-08, 04-27 ×2,
+07-23) remain UNREAD; all four are archived (`review/archive/2026-04-08|04-28|07-23_decisions.md`) and their
+proposals sit in `approved/`. The run tried to clear the UNREAD flag so they stop resurfacing; the
+`update_message_labels` call was **auto-declined** (no approver present). No-op otherwise.
+
+**Pattern detector:** nothing forwarded, nothing to evaluate — `for_pattern_detector.md` is evaluated
+through the 2026-09-10 batch (FINDING-086..090).
+
+**Phase 2: 0 orchestrator proposals.** Stump skipped (specialist filed PROP-2026-09-17-001 at 05:19).
+Fredrickson had no specialist card; the PEP Lab 2026 list holds exactly the two SCAN papers already
+carded 08-06. Swept the rest: Levin preprints page — the three September items are pending
+(PROP-2026-09-12-002/-003/-004), "Theories of Aging" approved 07-06; **one gap found**: bioRxiv
+10.64898/2026.08.13.744473 *A platform for automated training of mammalian cell physiology* (2026-08-13,
+Erickson … Levin) is not in the vault. `web_fetch` refused the URL (provenance restriction — it never
+appeared in a search result) and the browser pane request was auto-declined, so no card was written
+(a title-only card is the Wright mistake). Flagged in the digest for a manual look. Carroll — September
+AMA pending (PROP-2026-09-15-004), no Mindscape 368 yet. Wolfram — writings index stops at the 08-04
+memorial post. Hawkins — TBP blog unchanged since 2025-07. Friston / Arkani-Hamed / Hoffman — generic
+search surfaced nothing in-window not already captured; arXiv author listings could not be fetched
+(same provenance restriction). Rohr — the 09-14..09-17 Paul meditations follow the 09-13 cards; no new
+weekly summary yet (next one Saturday). Wright — Ask NTW show page lists no dated September episode.
+
+**Phase 3.** `review/2026-09-17_review.html` (230,043 bytes, 21 proposals). **Auto-open failed:**
+Claude-in-Chrome reported "not connected"; the sandbox has no macOS `open`. Path is in the digest.
+
+**Phase 4.** Digest draft `r8191906678905695603`. ⚠ Its Inbox row reads "7th failed attempt" for the
+Wright card — **wrong; not attempted today.** A corrective `update_draft` was auto-declined. Noting here
+so the draft's error does not propagate into the trail.
+
+**Phase 5.** `review/2026-09-13_review.html` moved to `review/_superseded/` (`rm` blocked on the mount, `mv`
+works). 09-14/15/16/17 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,339,517 bytes; cards 476, dates 125, responses 15; 17
+addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115.
+
+**Phase 5.6.** `regen_level2_signals.sh` OK — coverage gate PASS 379/379; 1501 signals, 87 pairs,
+2026-04-03 → 2026-09-09, stale_days 8 (no WARN); qc_trace.csv date-only change, not promoted.
+
+**Phase 6.** No git commands run (per 2026-09-16 SKILL change). `ls .git/*.lock` → none. Commit deferred
+to `scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network, derived by counting headers:** 867 PRS (`^PRS-[0-9]+:` across 15 tradition files: arkanihamed
+31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9,
+macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66) — unchanged. 135 distinct CROSS ids
+(CROSS-001..135). 90 distinct FINDING ids (FINDING-001..090). All three unchanged since 09-16, correctly.

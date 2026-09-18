@@ -5856,3 +5856,43 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-17.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-18
+
+**No check was due and none came due. No new leak-shaped card. Ingest ran again. Summary kept short per Rule 6.**
+
+  Items checked: 0 — WATCH-003 next on-cadence 2026-09-22 (count 11, last checked 09-15). Off-cadence trigger unfired: `review/archive/` still **19** files, latest `2026-09-10_decisions.md` (`find -newer` returns nothing). Review-pass gap: **8 days.**
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged — one retroactive line on the INTEGRITY FLAG closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — 2026-09-22
+
+**Intake (Step 2):** `needs_review/` 1 file, 0 new — the WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` at line 22. Channel 2 / Channel 3 vault grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and `agents/`: **0**. Chat→Cowork sync not attempted this run (scheduled run; Chrome and built-in pane both unavailable to a non-interactive session) — blind spot 09-03 → 09-17, **fifteenth day**.
+
+**Findings:**
+1. **Ingest ran 09-17** (`PROCESSED_LOG.md` 1289 → **1345** lines, section at line 1291; ledger `total=414 ingested=382 decided-zero=30 OPEN=1`). Nothing minted; correct.
+2. **Wright PROP-2026-08-14-033: not attempted 09-17** (log line 36: "not attempted today"). So no seventh publisher-only failure — but also no consultation of the Apple Podcasts episode page recorded in `resolved/2026-09-08_WATCH-002.md`. Open item 4 unchanged.
+3. **One new card, clean.** PROP-2026-09-17-001 (Stump, "Natural Law, Metaphysics, and the Creator", Atlantika 2025 reprint) — grep for `do not mint` / `re-open` / `UNRESOLVED` / `defer` / `await`: no deferred condition. The card's "watch item" phrase is the Stump agent's internal cross-tradition note, not a Channel 2 deferral. Leakage count stays at **fifteen**; the three true leak-shaped cards on the page remain PROP-2026-09-14-004, PROP-2026-09-11-001, PROP-2026-09-16-002.
+4. **Census:** `pending/` **21** (20 → 21) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/` root **4** pages (09-14/15/16/**17**; 09-17 page cards all 21; 09-13 page retired) · `PROCESSED_LOG.md` 1345 lines, mtime 09-17 22:00.
+
+**Resolution routing (Step 3d):** nothing to route. No file outside this one was created, moved, marked or edited by this run.
+
+**Open for Tom (carried forward; changes only):**
+1. `status:` frontmatter unmaintained vault-wide. *(unchanged)*
+2. **LEAKAGE ruling, deadline 2026-09-24 — 6 days.** Option (b) is one line. Three leak-shaped cards on the 21-card page. *(count unchanged)*
+3. Grep-before-retrieval rule — not exercised 09-17 (Wright card skipped), so neither adopted nor contradicted. *(unchanged)*
+4. Do not reject PROP-2026-08-14-033 on the false 09-14 grounds; the episode is live on Apple Podcasts. *(unchanged)*
+5. One-line INTEGRITY FLAG ruling closes WATCH-003; twelfth identical check falls 2026-09-22. *(unchanged)*
+6. Run-log archival split — thirteenth consecutive recommendation; this file is now ~700KB and 5,900 lines. Will act on one word. *(escalated: size)*
+7. Channel 2 unexercised 26 days. *(unchanged)*
+8. Chat→Cowork sync broken 15 days. *(unchanged)*
+9. TOOLING FLAG cleanup; FINDING-089 upstream fix; tombstone deletion. *(unchanged)*
+
+**Agent 16 Status:** Operational. 0 due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: 1. Next check: WATCH-003, 2026-09-22.
+
+---
+
+*Run completed 2026-09-18.*

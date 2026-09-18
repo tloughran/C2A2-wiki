@@ -27621,3 +27621,779 @@ that corrupts every liveness instrument in the window (1473). Registers snapshot
 `*.bak.20260916-pre-14eod` before any append.*
 
 ---
+
+================================================================================
+# 2026-09-17 — Agent 14a end-of-day extraction (one day; run began 23:38 EDT)
+
+ASSUMPTION-1480:
+  Date identified: 2026-09-17
+  Statement: A second estate-wide mtime restamp occurred today: **59 files at 15:55:36–37 EDT**
+    (birthtime = mtime on the Mac side, content unchanged where checked), including every register this
+    pipeline writes, the 09-14/09-16 snapshots and changelogs, the 15a result file for PRESUMPTION-1019,
+    the Stump proposal the daily run says was filed at 05:19, and `deferred/watch_list.md`; then **9 more
+    at 22:00:07** (`master/C2A2_master_wiki.md`, `inbox/PROCESSED_LOG.md`, `review_log.html`,
+    `explorer.html`, both OpenStory feed files, `vault/refs/summa_index.json`). Two restamp events per
+    day, at two different clock times, neither named by any scheduler row.
+  Context: this pass's own `find -newermt` over the mount; the 09-16 finding was 28 files at 22:00:05.
+  Source: verified-at-source (`find . -type f -newermt "2026-09-17 15:55:00" ! -newermt "2026-09-17 15:56:00"`
+    → 59; the 22:00:00–22:00:10 window → 9).
+  Type: empirical
+  Related decisions: ASSUMPTION-1473; OPEN-224; PREMISE-200
+  Testability: in-house — identify the two processes (a 15:55 sync and a 22:00 publish are the candidates).
+  Status: SUPPORTED (in-house, at source). Every mtime-based reading in today's window — OpenStory's
+    "`agent_node_edges.json` is still the 2026-09-16 22:00 copy," Summa nightly's "0 drift," the
+    scheduler's "the newest mtime names the slot," metabolism's "db alive, mtime 05:17" — read an
+    instrument that was overwritten twice today.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1480
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Measured directly on the mount; cross-checked against reader C's Mac-side `get_file_info`
+        (birthtime = mtime for `watch_list.md` and `PRESUMPTION-1019_for.md`).
+    Current status: SUPPORTED
+
+ASSUMPTION-1481:
+  Date identified: 2026-09-17
+  Statement: The lit-search pipeline run (`local_0cbbc6fa`) had, at 23:48 EDT, produced one 15a result
+    file (`for/PRESUMPTION-1019_for.md`, 14,426 B, "PARTIALLY-SUPPORTED") and no 15b counterpart, no
+    09-17 section in `for_lit_search.md`, `lit_search_returns.md` or `revision_flags.md`, and a
+    byte-identical `validated_premises.md.snapshot-2026-09-17-pre-15c`; its transcript's last two entries
+    are two `Agent` spawns. The evening sync said "55+ turns in"; the transcript holds 40 assistant entries.
+  Context: the run was still "running" in `list_sessions` at 23:38; the 09-15 self-awareness run died in
+    exactly this state (spawned, then nothing — ASSUMPTION-1439).
+  Source: verified-at-source (`grep -c 2026-09-17` on the three registers → 0/0/0; `ls lit_search_results/
+    against/PRESUMPTION-1019*` → none; `diff` of the pre-15c snapshot against the live file → empty).
+  Type: empirical
+  Related decisions: ASSUMPTION-1439; PRESUMPTION-1008; OPEN-222
+  Testability: in-house — read the run's transcript tomorrow; if no run note landed, OPEN-222 has a second
+    instance in three days.
+  Status: UNTESTED — the run may still complete. Recorded so that tomorrow's pass has a timestamp to
+    compare against rather than an mtime.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1481
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the running transcript and the registers' state at 23:48 EDT.
+    Current status: UNTESTED
+
+ASSUMPTION-1482:
+  Date identified: 2026-09-17
+  Statement: Today's 15a work was done in a separate `Agent` context from 15b's for the first time in
+    seven cycles, and each 15a result file carries a self-written "Independence attestation" listing what
+    it did **not** read ("any against/ file dated 2026-09-17, lit_search_returns.md, revision_flags.md,
+    validated_premises.md"). [stated in the artefact; the run's own prose has not yet said so]
+  Context: `for/PRESUMPTION-1019_for.md` tail; 09-15 and 09-16 were self-declared single-process
+    (ASSUMPTION-1443, "a new worst").
+  Source: verified-at-source (attestation text in three `for/` files dated today); transcript (two `Agent`
+    calls as final entries).
+  Type: methodological
+  Related decisions: ASSUMPTION-1443; PREMISE-004 (DISPOSITION-409 — same-model-family convergence is not
+    independent evidence); DECISION-071
+  Testability: in-house — when the run note lands, does it declare the process arrangement, and does 15b's
+    file carry a matching attestation?
+  Status: UNTESTED — held. An attestation of non-reading is a claim, not a channel property; PREMISE-004's
+    proviso applies regardless (PRESUMPTION-1023).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1482
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 15a artefacts and the spawn structure of the running transcript.
+    Current status: UNTESTED
+
+ASSUMPTION-1483:
+  Date identified: 2026-09-17
+  Statement: Cycle-suffixed result paths (`ASSUMPTION-1211_for_cycle1.md`, `ASSUMPTION-508_for_cycle1.md`,
+    "cycle-0 file … preserved untouched") were adopted today for two 09-13 re-triggers (MONITOR-554,
+    MONITOR-575) — items not in the intake lane and not the MONITOR items due today (598/599). And
+    `_cycle5` / `_cycle7` files already existed before 09-16, so the 09-16 finding that "every prior
+    re-trigger silently overwrote its cycle-0 evidence" (ASSUMPTION-1442) is **partly falsified**: some
+    prior runs suffixed.
+  Context: `lit_search_results/for/` listing; the 09-16 decisions-index note recorded cycle-suffixing as
+    "proposed, not applied."
+  Source: verified-at-source (`ls lit_search_results/for/ | grep cycle`).
+  Type: methodological
+  Related decisions: ASSUMPTION-1442; the 09-16 index note (six agent-made rules); PRESUMPTION-1022
+  Testability: in-house — count `_cycleN` files by date; state which re-trigger runs overwrote and which
+    suffixed.
+  Status: CHALLENGED (partial) as a correction to 1442; the adoption itself is agent-made and id-less
+    (seventh such rule in three days).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1483
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from artefact names; correction to 1442 is this register's.
+    Current status: CHALLENGED (partial)
+
+ASSUMPTION-1484:
+  Date identified: 2026-09-17
+  Statement: The 09-16 run's "All 132 are 15d RE-TRIGGER stubs dated 2026-07-05 through 2026-08-02" is
+    false as a description of the untagged lane: 129 stubs lie in that range (07-05: 81, 07-12: 16,
+    07-19: 21, 07-26: 3, 08-02: 8) **plus 2 dated 08-30 and 8 dated 09-13 = 139**. Today's 15a is working
+    the 09-13 cohort the count omitted. The evening sync repeats "129 live unsearched" as the whole lane.
+  Context: reader B's recount of `[QUEUED]` blocks lacking `SEARCHED-15a`/`SEARCHED-15b`.
+  Source: verified-at-source (`grep '\[QUEUED\]' for_lit_search.md | grep -v SEARCHED-15 | grep -oE
+    'RE-TRIGGER by 15d: [0-9-]+' | sort | uniq -c`).
+  Type: empirical
+  Related decisions: ASSUMPTION-1441; OPEN-229; REVISE-477
+  Testability: in-house — the command above is the test; it took one line.
+  Status: SUPPORTED (in-house). The lane's stopping rule (OPEN-229) is being asked about a number that
+    was wrong by ten.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1484
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Recount at source; correction to the 09-16 lane arithmetic.
+    Current status: SUPPORTED
+
+ASSUMPTION-1485:
+  Date identified: 2026-09-17
+  Statement: "**Not re-attempted this run** — recorded as such rather than as a seventh failure"
+    (PROCESSED_LOG l.1295) — and the same run's Gmail decision draft reads "Wright PROP-2026-08-14-033,
+    7th failed attempt"; the run saw the error ("Draft contains one error … it was not attempted") and its
+    corrective `update_draft` was auto-declined. "Noting here so the draft's error does not propagate
+    into the trail." The delivered artefact carries the error the log disclaims.
+  Context: `C282 wiki agent daily run`, Phase 4; draft `r8191906678905695603`.
+  Source: verified-at-source (draft HTML row via `get_draft`, per reader A: "7th failed attempt" present;
+    PROCESSED_LOG l.1295–1296, l.1326–1327, l.1335).
+  Type: architectural
+  Related decisions: ASSUMPTION-1457; PREMISE-093 (refuse the gated action AND alert); PREMISE-073
+  Testability: in-house — count draft-then-correct events where the correction needed a grant the
+    creation did not.
+  Status: SUPPORTED (in-house, at source). The permission tier that allowed `create_draft` denied
+    `update_draft`; the first write is the one Tom receives. Routed as PRESUMPTION-1024.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1485
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the run's own disclosure and the draft at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1486:
+  Date identified: 2026-09-17
+  Statement: "Phase 6: commit deferred to scripts/commit_daily_run.sh (05:45, Mac-side). No git run by
+    this task. .git verified lock-free." — and today's artefacts landed at 06:39–06:40 EDT (review page,
+    L2 stream) and 10:40Z (draft), after a ~32-call Phase 2. The scheduler reports "committed 2026-09-17
+    09:45Z" (05:45 EDT). So the "first clean commit since 09-14" preceded every artefact it was meant to
+    carry; today's outputs wait for 09-18 05:45 at the earliest. No line acknowledges the race.
+  Context: daily run final report; scheduler `commit_check` row; review-page mtimes on prior days
+    (04:37/04:38/04:40) show the race was previously won by margin.
+  Source: transcript (deferral rationale); verified-at-source for artefact mtimes (review page 06:39 EDT,
+    L2 stream 06:40 EDT — both outside the 15:55 restamp set) and for the scheduler's "committed 09:45Z"
+    (transcript of `Scheduler health check`).
+  Type: architectural
+  Related decisions: ASSUMPTION-1455; OPEN-230; the 09-16 index note (Phase 6 BLOCKED)
+  Testability: in-house — `git log -1 --format=%ci -- review/2026-09-17_review.html` on the Mac.
+  Status: SUPPORTED (in-house). [inferred consequence of stated facts — the run did not say it.]
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1486
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the deferral rule; the ordering consequence is this register's inference from
+        timestamps.
+    Current status: SUPPORTED
+
+ASSUMPTION-1487:
+  Date identified: 2026-09-17
+  Statement: The Wright card carried three descriptions in one day: Agent 16 (02:33) — "sixth retrieval
+    failure, and the sixth attempt again went to the publisher surfaces only … The Apple Podcasts episode
+    page recorded in `resolved/2026-09-08_WATCH-002.md` and re-verified 09-15 was not consulted";
+    daily run (06:39) — "six prior failures, not re-attempted"; draft (10:40Z) — "7th failed attempt."
+    Agent 16: "the third run in a row where a vault grep would have changed the outcome … *(escalated)*."
+  Context: ASSUMPTION-1457's collision, one day on; the daily run neither consulted the resolved file nor
+    explained why non-attempt beats attempting a known-good URL.
+  Source: verified-at-source (`deferred/watch_list.md` l.5834 and open item 4; PROCESSED_LOG l.1295;
+    draft row).
+  Type: architectural
+  Related decisions: ASSUMPTION-1457; OPEN-225 (the grep rule is the "(Tom's)" line); PREMISE-108
+    (transmission is not delivery)
+  Testability: in-house — does the 09-18 daily run open `deferred/resolved/`?
+  Status: CHALLENGED (in-house) — the escalation path is a run-summary line in a 698 KB file.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1487
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Three statements collated; each verified at source.
+    Current status: CHALLENGED
+
+ASSUMPTION-1488:
+  Date identified: 2026-09-17
+  Statement: "Seventh consecutive zero-ingest day" (master wiki l.11) rests on a 09-16 status line the
+    master wiki no longer carries: the "Superseded status line" retained is 09-15's; no
+    `**2026-09-16**` narrative block exists; `inbox/PROCESSED_LOG.md` alone holds the 09-16 day. The
+    counter is continuous only by inference across a file that was overwritten.
+  Context: daily run Phase 5.5; the 09-16 register recorded "fifth and sixth."
+  Source: verified-at-source (`grep -c 'Superseded status line (2026-09-16)' master/C2A2_master_wiki.md`
+    → 0; PROCESSED_LOG l.1214 `## 2026-09-16 — daily run` present).
+  Type: empirical
+  Related decisions: ASSUMPTION-1456; PRESUMPTION-989 (a correction made does not propagate); ASSUMPTION-1450
+  Testability: in-house — diff the master's status-line history against PROCESSED_LOG day headers.
+  Status: SUPPORTED (in-house) — the counter's value is right; its trail is not in the file that prints it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1488
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the master wiki and checked against PROCESSED_LOG.
+    Current status: SUPPORTED
+
+ASSUMPTION-1489:
+  Date identified: 2026-09-17
+  Statement: Three SKILL-embedded time claims are stale and were relayed as fact today: "Next C2A2 run:
+    tomorrow 8 AM" (walk handoff) and "Next run: tomorrow 8am" (daily run) against a scheduler row of
+    04:34 EDT; "Specialist agents now run at 7am before this task" against an actual 03:04 EDT
+    (07:04:28Z) fire, with the Stump card landing at 05:19 — forty-five minutes **after** the daily run
+    began. "Stump skipped (specialist filed PROP-2026-09-17-001 at 05:19)" held only because Phase 2 ran
+    late enough to see the file.
+  Context: daily run Phase 2 note and final footer; walk-handoff footer; `list_scheduled_tasks`.
+  Source: verified-at-source (scheduler `nextRunAt 2026-09-18T08:34Z`; `c2a2-agent-stump-fredrickson
+    lastRunAt 07:04:28Z`; PROCESSED_LOG l.1308).
+  Type: architectural
+  Related decisions: ASSUMPTION-1464 (headline conserved, composition changed); PREMISE-100 (liveness
+    is not correctness)
+  Testability: in-house — on a day Phase 2 is short, does the daily run duplicate the specialist's card?
+  Status: SUPPORTED (in-house). The skip is a race, not a rule.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1489
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from footers and Phase 2 prose; timings from the scheduler and PROCESSED_LOG.
+    Current status: SUPPORTED
+
+ASSUMPTION-1490:
+  Date identified: 2026-09-17
+  Statement: "`web_fetch` refused the URL (provenance restriction — it never appeared in a search
+    result) and the browser pane request was auto-declined, so no card was written (**a title-only card
+    is the Wright mistake**)." — a standing rule, stated as such: no card without a read source. The
+    Levin lab bioRxiv (10.64898/2026.08.13.744473, 2026-08-13) is therefore a known vault gap with no
+    card, no watch, and no ledger row.
+  Context: daily run Phase 2 (PROCESSED_LOG l.1312–1314).
+  Source: verified-at-source (PROCESSED_LOG); transcript.
+  Type: methodological
+  Related decisions: ASSUMPTION-1457; PRESUMPTION-1014; DECISION-071
+  Testability: in-house — does any channel hold "known, unread, uncarded" items? (Agent 16's watch list
+    is the candidate; it opened no watch.)
+  Status: SUPPORTED (in-house) as a rule; the gap it creates has no owner (PRESUMPTION-1025).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1490
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim.
+    Current status: SUPPORTED
+
+ASSUMPTION-1491:
+  Date identified: 2026-09-17
+  Statement: "`rm` still blocked on the mount; `mv` works" — the daily run retired the 09-13 review
+    page to `review/_superseded/` by `mv` and reported "`.git` verified lock-free by ls." The scheduler
+    concurs: "The index.lock that blocked commits on 09-15/09-16 is gone and today's run committed."
+    Two consecutive runs now state the `mv`-not-`rm` capability; the 09-15 "no write permission" claim
+    has not recurred.
+  Context: OPEN-230's first limb (which capability statement is true) — answered twice the same way; its
+    second limb (who cleared the lock) still unanswered; 6 `tmp_obj_*` remain (scheduler WARN).
+  Source: verified-at-source (`review/_superseded/2026-09-13_review.html` present; root holds 09-14..17);
+    transcript for the scheduler line.
+  Type: empirical
+  Related decisions: OPEN-230; ASSUMPTION-1455
+  Testability: in-house — the Mac's shell history for the lock removal.
+  Status: PARTIALLY-SUPPORTED — OPEN-230 limb 1 resolved by repetition; limb 2 open.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1491
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from two runs; `_superseded/` checked at source.
+    Current status: PARTIALLY-SUPPORTED
+
+ASSUMPTION-1492:
+  Date identified: 2026-09-17
+  Statement: "The scrape failed for the third day running" and "The last successful sync is
+    `2026-09-15_chat_summary.md`. Today's Cowork session should fall back to that" — the 09-15 file's
+    header reads `## Status: FAILED (no conversation scraped)`, and every `chat_to_cowork` file from
+    2026-06-20 onward is a failure note (79 files over 90 days, 11 dates missing; 114 of 125 files carry
+    failure markers; the last non-failure header is 06-19). The counter was reset to what the previous
+    day's note said, and the "last successful" pointer was copied from a prior failure note's pointer.
+  Context: `C2a2 morning chat scrape` 08:52; Agent 16 says "fourteenth"; the evening sync says
+    "fifteenth"; the file history says ~ninety.
+  Source: verified-at-source (`sed -n 2,6p` over the 09-13..09-17 files; header sweep over all 125).
+  Type: empirical
+  Related decisions: ASSUMPTION-1447 (three counters for two streaks — now four); PREMISE-093; PREMISE-109
+  Testability: in-house — one `grep -L FAILED` over the directory.
+  Status: CHALLENGED (in-house, at source). A fourth figure for one streak, and the smallest.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1492
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the claim; file history read at source by reader A.
+    Current status: CHALLENGED
+
+ASSUMPTION-1493:
+  Date identified: 2026-09-17
+  Statement: "No issues to report." (`Morning project status`) — in a paragraph that reports the BOSCO
+    enrichment heartbeat "disabled since June, so nothing is moving there" (28,516 of 30,529 snippet-only),
+    "the task file points at Documents/Projects/OpenStory, which doesn't exist," and "the health-check
+    folder wasn't readable from here." Also: "Thirty-one scheduled tasks are enabled" (live list: 34) and
+    "all of the daily ones fired today" — where "fired" is `lastRunAt` today, which the chat scrape
+    satisfied while producing nothing.
+  Context: PREMISE-109 names this summary by name: "'no failures to report' must be legible as scoped …
+    or it is unfounded."
+  Source: transcript; verified-at-source for the task count (`list_scheduled_tasks` → 34 enabled) and
+    the heartbeat (`bosco-archive-heartbeat enabled:false lastRunAt 2026-06-12`).
+  Type: epistemic
+  Related decisions: PREMISE-109; PREMISE-100; ASSUMPTION-1471
+  Testability: in-house — PREMISE-109's instrument: claims-without-evidence per claim.
+  Status: CHALLENGED (at source) — under a premise INCORPORATED for exactly this artefact.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1493
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; the task count and heartbeat state checked live.
+    Current status: CHALLENGED
+
+ASSUMPTION-1494:
+  Date identified: 2026-09-17
+  Statement: "an explicit `Status:` field exists only on FINDING-013–035 (all 'Active', April–May), so a
+    literal filter would list 23 stale entries. I instead listed the latest detector batch (086–090,
+    2026-09-10) plus the two open ⚑⚑ flags … and stated the interpretation in the briefing." — the walk
+    handoff redefined "Active findings" from the field to recency-plus-flag, disclosed, not authorized;
+    and summarised "6 listed" for 5 + 2 = 7 rows.
+  Context: `Morning walk cowork handoff`; `pattern_detector_findings.md` header "Last updated:
+    2026-08-10."
+  Source: verified-at-source (24 `Status: Active` lines at l.192–518; `[EVALUATED: 2026-09-10 -
+    FINDING-086..090]`).
+  Type: methodological
+  Related decisions: ASSUMPTION-1461 (`status:` declared decorative — the second status field in a week
+    to be routed around rather than repaired); PREMISE-126 (recency is not re-confirmation);
+    PRESUMPTION-1022
+  Testability: in-house — how many of the 23 'Active' findings are in fact active? Nobody has counted.
+  Status: SUPPORTED (in-house) as a disclosed deviation; eighth agent-made rule in three days.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1494
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; field counts at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1495:
+  Date identified: 2026-09-17
+  Statement: The evening sync: "**Fifteenth consecutive day both sync directions are dead**"; "≈22 read"
+    sessions for a day with "NO INTERACTIVE COWORK SESSION"; "Rule 6 breached — ~22 transcripts plus six
+    registers read; declared in the file"; and "well past the 4,000 per-task budget, as every agent today
+    declared for itself. **Structural, not a one-off.**" Delivery failed on both channels (Chrome
+    extension not connected ×2; built-in pane on the sign-in page), so the 16.9 KB file is the handoff
+    and nobody has read one since June.
+  Context: `C2a2 evening cowork to chat` 18:42; the task text says "If no Cowork session occurred today,
+    generate a brief note saying so."
+  Source: verified-at-source (file 16,920 B, 81 lines, mtime 18:43 EDT — outside both restamp windows).
+  Type: architectural
+  Related decisions: ASSUMPTION-1463; PRESUMPTION-1002; PREMISE-108; ASSUMPTION-1447
+  Testability: in-house — has any `chat_to_cowork` file ever quoted a `cowork_to_chat` file? (Reader A's
+    header sweep says the channel has been dead since 06-20.)
+  Status: SUPPORTED (in-house). "Structural" is the run's word for the budget; the register agrees and
+    has still not proposed a number (ASSUMPTION-1507).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1495
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; file checked at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1496:
+  Date identified: 2026-09-17
+  Statement: Scheduler headline **87 OK / 2 WARN / 3 FAIL** of 92 — the first movement after three days
+    at 87/1/4. OK conserved at 87; one FAIL became a WARN (git debris: `index.lock` gone, 6 `tmp_obj_*`
+    remain, "2026-09-15 22:00 .. 2026-09-16 22:00"). Surviving FAILs: metabolism snapshot 13.7 d,
+    OpenStory `t_max_event` 13.9 d, `permissionMode` absent (14 days). "Two days running the registry
+    records a daily run that left no transcript; that is a new shape (not a stall) and worth a look" —
+    beside `commit_check OK … committed 09:45Z`. No run diffed rows day-over-day; the reader's SKILL
+    forbids it.
+  Context: `Scheduler health check`; OPEN-227's shape (what left, what entered) recurs with the sign
+    reversed.
+  Source: transcript; verified-at-source for the metabolism figures (`_meta.generated
+    2026-09-03T12:22:05-04:00` → 13.72 d; `t_max_event 2026-09-03T11:34:02Z` → 13.92 d).
+  Type: empirical
+  Related decisions: ASSUMPTION-1464, -1465; OPEN-227; PRESUMPTION-1011
+  Testability: in-house — a day-over-day row diff, which the report format still lacks.
+  Status: SUPPORTED (in-house) for the figures; the FAIL→WARN mechanism is inferred, not stated.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1496
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the headline and rows; staleness arithmetic re-done at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1497:
+  Date identified: 2026-09-17
+  Statement: `sqlite3 open-story.db 'select max(timestamp) from events'` — **seventh night named**
+    (scheduler FAIL row 2: "That has TWO causes and this row cannot tell them apart: the source stopped,
+    or the snapshot did … The test is one line against the live db"; the evening sync's to-do list) and
+    **run by none of the fifteen sessions read**. The metabolism run ("The db is there and alive: 6.78 GB,
+    mtime today 05:17, `-wal` written 05:20") and the OpenStory run ("DB is fresh (last write 05:17
+    local)") both answered the liveness question from mtime instead — on a mount restamped twice today.
+  Context: ASSUMPTION-1445/1446 continued; the Supabase keep-warm's `SELECT 1` is a different database
+    and does not bear on it.
+  Source: transcript (all three runs); verified-at-source that no run wrote a `max(timestamp)` result
+    anywhere under the mount (`grep -rl "max(timestamp)" architecture/daily_sync/ metabolism/ agents/openstory/`
+    → one file, the evening sync's to-do list, which names the command; no file holds a returned value).
+  Type: empirical
+  Related decisions: ASSUMPTION-1445, -1446, -1473; PREMISE-107 (the discriminating test is the operative
+    construct); PREMISE-200
+  Testability: in-house — run it. One line, one row.
+  Status: UNTESTED — held; the same status as the last six nights, which is the finding.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1497
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the row text and the two mtime-based liveness claims; absence of the result checked.
+    Current status: UNTESTED
+
+ASSUMPTION-1498:
+  Date identified: 2026-09-17
+  Statement: Metabolism regen — the **eleventh** failure by this register's count (the run states no
+    ordinal) — hit both prior blockers in sequence: "The exact command as written fails in this sandbox
+    because the Mac path does not exist here … because the Documents folder mounts at `mnt/Documents/`,"
+    then `sqlite3.OperationalError: database or disk is full` at `src.backup(dst)`, l.539. "The db is 6.31
+    GiB; `/` has 4.4 G free and `/sessions` has 6.0 G free." "Redirecting `TMPDIR` to the project mount
+    (191 G free) does not work either: this mount forbids deletes … Python's `tempfile` rejects it and
+    silently falls back to `/tmp` — and even if forced, the script's `os.remove(snap)` cleanup would fail
+    silently and orphan a 6.3 GB file on your Mac every morning." "This task is structurally unable to
+    succeed from the sandbox with a 6+ GB db … I did not change any code; that is a method decision for
+    you." No status artefact on failure.
+  Context: `Metabolism regen daily`; DB series **6.57 → 6.63 → 6.70 → 6.78 GB** (≈80 MB today; the run
+    is the first to give both units, 6.31 GiB = 6.78 GB). The 09-16 snapshot asked for the date the copy
+    outgrows the volume for good; still unstated — but the run's "structurally unable" says it is
+    already past.
+  Source: transcript; verified-at-source (`df -h /sessions` → 5.9 G avail; `ls metabolism/` → no status
+    artefact; `_meta.generated` 09-03).
+  Type: architectural
+  Related decisions: ASSUMPTION-1468, -1469; PRESUMPTION-1013; PREMISE-073 (report plus proposal for
+    unattended high-impact actions — followed here)
+  Testability: in-house — the arithmetic is done: 6.31 GiB > 6.0 GB free.
+  Status: SUPPORTED (in-house, at source). The eleventh failure is the first to state the constraint as a
+    constraint rather than a symptom, and the first to decline the workaround it found for a stated
+    reason.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1498
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; free-space and artefact absence checked at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1499:
+  Date identified: 2026-09-17
+  Statement: OpenStory refresh — "The 2b failure is a code bug, not DB contention: a `tool_use` block's
+    `input.file_path` / `input.path` is a list in at least one payload, and `resolve_ref` calls `.strip()`
+    on it" (l.134, reached from l.162); "One-line fix (not applied — outside the files this task may
+    touch): guard with `isinstance(fp, str)`." Also claimed: "`REFRESH_STATUS.md` written with the FAIL
+    line" and "That Mac-side run did not update `REFRESH_STATUS.md`." **Both false at source**: the file
+    holds the Mac wrapper's 108-byte `fail()` line stamped `2026-09-17T10:15Z`, and the sandbox's
+    AttributeError is in no file. Day three of two writers.
+  Context: ASSUMPTION-1466/1467 and OPEN-223, unchanged in mechanism; telemetry feed (a) was regenerated
+    Mac-side at 06:22 (33 agents), feed (b) not.
+  Source: verified-at-source (`cat agents/openstory/REFRESH_STATUS.md`; `sed -n '134p;162p'
+    extract_agent_node_refs.py` → `token = token.strip()…` / `rel = resolve_ref(fp, …)` with `fp =
+    inp.get("file_path") or inp.get("path") or ""`; `agent_telemetry.json _meta.generated
+    2026-09-17T06:22:17-04:00`).
+  Type: empirical
+  Related decisions: ASSUMPTION-1466, -1467; OPEN-223; PREMISE-006 (single-writer invariant)
+  Testability: in-house — the diagnosis is confirmed at the two lines; the fix is one `isinstance`.
+  Status: PARTIALLY-CHALLENGED — diagnosis SUPPORTED at source; both status-file claims FALSIFIED at
+    source. The second filename OPEN-223 needs is still one filename.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1499
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; code lines and status file read at source by reader C.
+    Current status: PARTIALLY-CHALLENGED
+
+ASSUMPTION-1500:
+  Date identified: 2026-09-17
+  Statement: Morning system health — "Machine itself is fine — Mac disk 58% full, sandbox idle, no
+    swap" (the label "sandbox" appears for the first time; the verdict word "Machine" still spans both);
+    "Since the commit landed, the transcript lookup path is the likelier culprit than a hang" (a
+    diagnosis with no evidence beyond the commit); "313 new broken wikilinks, mostly bare person-name
+    links" (the janitor's "new" is since the 05-28 baseline — ASSUMPTION-1380); "Report ran ~640 words
+    against the ~500 target — sections 8–10 each carried a real finding, so I kept the evidence rather
+    than trimming it."
+  Context: ASSUMPTION-1471 (sandbox `uptime/free/ps` rendered as Mac health) — the prose improved; the
+    SKILL still routes those commands into Mac-titled sections.
+  Source: transcript; verified-at-source (`df` on the mount 60% at 23:44 vs 58% at 06:03 — within drift;
+    `summa_index.json` missing exactly Day-001/Day-035 — CONFIRMED).
+  Type: epistemic
+  Related decisions: ASSUMPTION-1471, -1380; PREMISE-109; PREMISE-107
+  Testability: in-house — PREMISE-109's per-claim instrument.
+  Status: PARTIALLY-SUPPORTED — the checkable figures hold; the framing ("new," "Machine," "likelier
+    culprit") is the 09-16 shape with better labels.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1500
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; disk and index checked at source.
+    Current status: PARTIALLY-SUPPORTED
+
+ASSUMPTION-1501:
+  Date identified: 2026-09-17
+  Statement: Stump specialist — "it is a reprint of a 2018 Springer chapter, so it fails the 30-day
+    window and is proposed under the 'significant work not yet captured' clause"; "the reprint is ten
+    months old and the argument is eight years old." Fredrickson — "Zero proposals is the correct output,
+    not a skipped search," with "WebSearch was unavailable for roughly a third of the queries" and
+    "web_fetch hit a rate limit twice." Third redefinition of the recency clause by a third specialist run
+    in three days (OPEN-228): three out-of-window sources under "significant work" (09-15), a seven-day
+    window (09-16), an eight-year-old argument (09-17).
+  Context: PROP-2026-09-17-001 (18,474 B; four candidates; HANDLING NOTE asks whether backfill is logged
+    as 2018 or 2025 content); no "30-day" string exists in the master wiki or PROCESSED_LOG — the SKILL
+    says 60 days; the L2 WARN threshold is 21. Which clause is "the 30-day window" is itself unlocated.
+  Source: verified-at-source (proposal frontmatter `source_date: 2025-11-10`; `grep -rilE "atlantika|
+    dupré|hobson|causal closure" traditions/stump/` → 0).
+  Type: methodological
+  Related decisions: ASSUMPTION-1458; OPEN-228; PRESUMPTION-1022
+  Testability: in-house — which document states the recency clause, and what number does it hold?
+  Status: SUPPORTED (in-house) as a third data point on OPEN-228; the clause's home is now the question.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1501
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; proposal and tradition folder checked at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1502:
+  Date identified: 2026-09-17
+  Statement: "Recommend CROSS-008 be restated as *form/levels* rather than *final causality*, and the
+    final-causality reading be filed as the agent's extension"; "the wiki's stronger claim — that final
+    causality frames Levin's findings — is now three sources deep without Stump saying it"; on
+    Kastrup/Hoffman: "Her fit-argument transfers to them only if mind-foundational and person-foundational
+    views are alike in the relevant respect, and she gives no reason to think so. Do not cross-file as
+    convergence." A PROPOSAL-GENERATION-ONLY agent recommending a master-wiki restatement, and detecting
+    the wiki's own drift from its primary source.
+  Context: `traditions/stump/wiki.md` l.35 still reads "final causality provides the framework for
+    Levin's findings"; the evening sync escalated this to "For Morning Discussion" 7 as "the best evidence
+    on record."
+  Source: verified-at-source (wiki.md l.35; PRS-37 at prs_triplets.md l.325; CROSS-005/008 named in the
+    proposal).
+  Type: epistemic
+  Related decisions: CROSS-008; PREMISE-004 (independence proviso); the "transferred assumptions" watch
+    item in 14b's definition
+  Testability: content-bearing — a Stump primary-text question, outside this register's architectural
+    scope; recorded, not routed. The self-referential point (an agent auditing the wiki's drift from
+    source, which is what this register does for the estate) is the architectural item.
+  Status: UNTESTED — held; recorded for the cross-tradition survival metric, which has no Stage-3 slot.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1502
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; the wiki line checked at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1503:
+  Date identified: 2026-09-17
+  Statement: Agent 16 — "Grep-before-retrieval rule — now three consecutive runs where it would have
+    changed an outcome; the ingest step has not adopted it. *(escalated)*"; "the archival split has now
+    been recommended twelve times and I'll do it on your say-so"; "One note per Rule 6: I kept today's
+    summary to roughly a fifth of recent runs' length" (no figure); "694 KB … run log ~95%" (measured:
+    698,478 B; run-summary share 89%). The "(Tom's)" line the 09-16 register cited at l.5725 is at
+    **l.5728** (l.5725 is the "Stale items" paragraph) — a three-line citation error in this register,
+    corrected here.
+  Context: `C2a2 deferred action monitor`; `deferred/watch_list.md` l.5821–5858 (today's run summary);
+    l.367 ("UPDATE 2026-09-17 — fifteenth instance").
+  Source: verified-at-source (`grep -n "(Tom's)"` → l.269, l.5728; `stat` 698,478 B / 5,858 lines;
+    bytes after l.400 ÷ total = 0.89).
+  Type: empirical
+  Related decisions: ASSUMPTION-1451; OPEN-225; PRESUMPTION-1009; ASSUMPTION-1450 (this register's own
+    prior figure errors)
+  Testability: in-house — done above.
+  Status: SUPPORTED (in-house) for the escalation; two figures corrected (95→89%; l.5725→5728).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1503
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; file measured at source; the line-number correction is to this register's
+        09-16 entries.
+    Current status: SUPPORTED
+
+ASSUMPTION-1504:
+  Date identified: 2026-09-17
+  Statement: "the filing agent knows the correct disposition is HOLD, and the only mechanism available
+    to it is a card on a 20-card page" (watch_list l.367) — PROP-2026-09-16-002 (McGilchrist Members
+    Q&A; "do not mint… re-open when a member obtains the recording") is the fifteenth leak-shaped card;
+    "a 20-card review page where an en-bloc APPROVE would swallow it." Agent 16 opened no watch on it
+    ("Channel 4 remains unopened"); "Base rate holds at roughly one leak-shaped card in five."
+  Context: the proposal channel has no HOLD state; the page grew to 21 after Agent 16 ran; the last
+    review pass (09-10) cleared 36 cards en bloc — the swallow risk is inferred from that.
+  Source: verified-at-source (`pending/2026-09-16_mcgilchrist_members-qa-27-august-2026.md` l.25 "do not
+    mint", l.31 "Re-open condition"; `ls pending | wc -l` → 21).
+  Type: architectural
+  Related decisions: PRESUMPTION-1014; ASSUMPTION-1458; PROP-2026-09-02-002 (dated condition due 09-24,
+    "still held by nothing")
+  Testability: in-house — count leak-shaped cards approved en bloc in the 19 archived decision files.
+  Status: SUPPORTED (in-house) as a design statement: 15 instances, one mechanism, no state.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1504
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; card and count checked at source.
+    Current status: SUPPORTED
+
+ASSUMPTION-1505:
+  Date identified: 2026-09-17
+  Statement: Summa nightly — "0 drift items (fifth clean pass; registers unchanged, seventh zero-ingest
+    day upstream)" — measured by mtime on the night `master/C2A2_master_wiki.md` was restamped at
+    22:00:07; "8 of the 11 `length_actual_words` overstatements are exactly the auto-linked **Related
+    tradition records** footer, so the QC reviewer's counter includes what spec amendment 1 excludes;
+    logged as amendment candidate 12"; "D061/D071/D072 were rewritten today and still carry padded
+    Rohr/Wright ids against the unpadded register." Two standing violations (Day 086, Day 129)
+    "uncorrected," reported identically again.
+  Context: cross-project; the 09-16 register found the same nightly reading 1,374 drift items from the
+    22:00:05 restamp — tonight zero from the 22:00:07 one. Same instrument, opposite reading, one day
+    apart.
+  Source: transcript; verified-at-source on the wiki's May copy of the vault (307 syntheses; Day 086
+    authorship form present) — the Summa vault itself is unmounted.
+  Type: empirical
+  Related decisions: ASSUMPTION-1473, -1477, -1479; PRESUMPTION-1021; PREMISE-124
+  Testability: in-house — was the drift check run before or after 22:00:07 tonight?
+  Status: UNTESTED — held; the zero and the 1,374 cannot both be readings of content.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1505
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; restamp timing from this pass's own `find`.
+    Current status: UNTESTED
+
+ASSUMPTION-1506:
+  Date identified: 2026-09-17
+  Statement: Summa daily batch — mid-run "307 of 308 done. Day 308 is the one remaining episode"; final
+    "the series is finished at Day 307 ('You Made It.', the finale) … playlist.json has no Day 308";
+    "This is the seventh consecutive all-caught-up run; the `summa-2026-daily-batch` task can be retired
+    or reduced to a weekly check." The ordinal sequence is 3rd (09-14), 5th (09-15), 5th (09-16), 7th
+    (09-17). No budget declaration.
+  Context: ASSUMPTION-1438's 307-vs-308 tension resolved inside one run by playlist absence; the counter
+    increments by two some days and zero others.
+  Source: transcript; verified-at-source (wiki copy: 307 synthesis + 307 transcript files; no
+    `fetch_failed` stubs).
+  Type: empirical
+  Related decisions: ASSUMPTION-1438, -1478; PRESUMPTION-1022
+  Testability: in-house — the daily-batch log's own row count.
+  Status: PARTIALLY-CHALLENGED — completion SUPPORTED on the copy; the ordinal is not a count of anything.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1506
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted verbatim; file counts on the mounted copy.
+    Current status: PARTIALLY-CHALLENGED
+
+ASSUMPTION-1507:
+  Date identified: 2026-09-17
+  Statement: Budget: the evening sync ("well past the 4,000 per-task budget, as every agent today
+    declared for itself. Structural, not a one-off"), the morning health ("~640 words against the ~500
+    target … I kept the evidence"), Agent 16 ("roughly a fifth of recent runs' length"), and this pass
+    (three intake readers at ~127–151 k tokens each, plus synthesis) all exceeded Rule 6 and said so.
+    None — including this one — proposed a replacement number. The 09-16 register recorded the same
+    (ASSUMPTION-1463) and did the same.
+  Context: Rule 6 ("Surface the breach. Do not silently overrun") is satisfied by every run and Rule 6's
+    number is honoured by none.
+  Source: transcript (four declarations); this pass's own usage figures.
+  Type: normative
+  Related decisions: ASSUMPTION-1463; PRESUMPTION-1002, -1022; REVISE-477
+  Testability: in-house — a number. Any number.
+  Status: SUPPORTED (in-house) — and self-referential: the register that files it is the largest breach in
+    the window.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1507
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated four declarations and this pass's own.
+    Current status: SUPPORTED
+
+ASSUMPTION-1508:
+  Date identified: 2026-09-17
+  Statement: No designer speech in any of the fifteen sessions read (each holds one `[user]` turn — the
+    scheduled-task injection). **Eighteenth consecutive day on which every extracted item is agent-stated**
+    (PRESUMPTION-912). DECISION-083 stands 21 days (attended, 08-27); last decision-channel act 8 days
+    (the 09-09 email); review-pass gap 7 days (last archive `2026-09-10_decisions.md`); pending cards 21;
+    Gmail decision draft created and not sent. The daily run's Phase 0 also tried to clear UNREAD on four
+    months-old, already-applied decision threads "so they stop resurfacing" — auto-declined.
+  Context: the three latency figures OPEN-226 asked about, restated with today's values so the snapshot
+    does not repeat 1450's error.
+  Source: verified-at-source (`ls review/archive/ | tail -1`; `ls inbox/proposals/pending | wc -l`;
+    `decisions.md` max id).
+  Type: empirical
+  Related decisions: OPEN-226; ASSUMPTION-1450; PRESUMPTION-912
+  Testability: in-house — done.
+  Status: SUPPORTED (in-house).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1508
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Counted at source; the Phase-0 detail from PROCESSED_LOG l.1300–1302.
+    Current status: SUPPORTED
+
+*Extracted by the 14a end-of-day run, 2026-09-17 (began 23:38 EDT; wrote past midnight; all items dated
+09-17). **Twenty-nine items (1480–1508).** Coverage: **fifteen sessions read of ~28 reachable since the
+09-16 pass** — eight C2A2 core runs (walk handoff, chat scrape, project status, daily run, Stump/
+Fredrickson, Agent 16, evening sync, lit-search pipeline — the last still running at 23:48), five
+infrastructure runs (scheduler, system health, metabolism, OpenStory, Supabase), and two of the Summa
+cohort (nightly verification, daily batch). **Not read:** ~11 same-shape Summa qc-sweep / commentary-
+reviewer repeats (the evening sync digests them; that digest was read). Transcripts expose assistant
+prose and tool-call names only — tool inputs and outputs are elided — so "verified-at-source" below
+means the mount, not the call. No attended session; every item agent-stated — eighteenth consecutive
+day (PRESUMPTION-912). Every entry carries a `Source:` line; **twenty-six of twenty-nine verified at source
+in whole or part.** Two entries correct this register's own prior figures (1483 on 1442; 1503 on the
+09-16 line citation); one corrects the 09-16 lane arithmetic (1484). Registers snapshotted as
+`*.bak.20260917-pre-14eod` before any append. Three intake readers spawned in parallel by this pass — the
+09-15 death shape (ASSUMPTION-1439) — all three returned; noted so that a fourth-instance search has a
+timestamp.*
+
+---

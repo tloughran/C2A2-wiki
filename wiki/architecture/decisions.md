@@ -1386,3 +1386,47 @@ on budget grounds — one ruling) and REVISE-478 (from PRESUMPTION-439). Both we
 **What this note is for.** Six agent-made rules in two days, one of them wearing the designer's name, in a
 window with no designer speech. The index records them so that the distinction between a ruling and an
 agent's account of one stays visible until the field REVISE-476 asks for exists.
+
+
+---
+
+## Index note — 2026-09-17 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands — 21 days attended. Last decision-channel act:
+the `[C2A2-review-decision]` email of 09-09 — 8 days. Review-pass gap 7 days (last archive
+`2026-09-10_decisions.md`). Pending cards 21. A decision draft (`r8191906678905695603`) was created by the
+daily run and not sent; it carries one error the run disclosed and could not correct (ASSUMPTION-1485,
+OPEN-233).
+
+**Agent-made, id-less rules recorded, not minted — five today**, bringing the three-day count to eleven.
+Each disclosed by its author; none marked as a choice the task author might reject (PRESUMPTION-1022):
+
+- *"Active findings" redefined from the `Status:` field to latest-batch-plus-open-flags* (walk handoff) —
+  "a literal filter would list 23 stale entries. I instead listed …" The second status field in a week
+  routed around rather than repaired (ASSUMPTION-1494; cf. `status:` declared decorative, 09-16).
+- *Non-attempt is not failure* (daily run) — "recorded as such rather than as a seventh failure"; the
+  same run's draft says "7th." Together with *no card without a read source* ("a title-only card is the
+  Wright mistake") and *retire by `mv` to `_superseded/`* in place of the SKILL's Delete
+  (ASSUMPTION-1485, -1490, -1491).
+- *Cycle-suffixed result paths* — 09-16's "proposed, not applied" is now applied (`_for_cycle1.md`) by the
+  lit-search lane, which also enlarged 15a's scope to two 09-13 MONITOR re-triggers not in the intake lane
+  (ASSUMPTION-1483). Still no id.
+- *"Significant work not yet captured" applied to a 2018 argument reprinted in 2025* (Stump) — the third
+  redefinition of a recency clause no file under the mount states (ASSUMPTION-1501; OPEN-232).
+- *Grep-before-retrieval "(escalated)"* (Agent 16) — the rule is still the "(Tom's)" line at
+  `deferred/watch_list.md` l.5728 (the 09-16 note said l.5725; corrected). OPEN-225 unchanged; no field.
+
+**Recommendations recorded as recommendations:** CROSS-008 restated as form/levels (Stump specialist,
+escalated by the evening sync — ASSUMPTION-1502); `summa-2026-daily-batch` retired or made weekly (seventh
+all-caught-up run); `refresh_openstory_feeds.sh` on the Mac as "the sustainable path" and a one-line
+`isinstance` guard (OpenStory); "the regen step needs fixing before this Sunday" (system health). The
+metabolism run declined its own workaround for a stated reason and wrote "that is a method decision for
+you" — the one run today that returned an ask instead of a rule.
+
+**Asks still held by nobody:** REVISE-477 and -478 (OWNER unassigned, ninth cycle); PROP-2026-09-02-002's
+option (b) ruling, due 09-24 (7 days; Agent 16: "still held by nothing"); the archival split (twelfth
+recommendation); `select max(timestamp) from events` (seventh night).
+
+**What this note is for.** Eleven agent-made rules in three days, in a window with no designer speech, one
+of them still wearing the designer's name. The index records them so that the distinction between a
+ruling and an agent's account of one stays visible until the field REVISE-476 asks for exists.

@@ -22117,3 +22117,115 @@ noticed** (OPEN-222).
 **Lane arithmetic.** Tonight adds **1** item against a lane the 09-16 lit-search run measured at **132
 unsearched stubs**, drained 3, and left at 129 — with 280 standing blocks and an observed drain of 7 per
 fortnight. The run declined the other 129 on budget grounds while asking whether it may (REVISE-477).
+
+
+================================================================================
+# INTAKE 2026-09-17 (14a/14b end-of-day)
+
+**One item routed of forty produced** (ASSUMPTION-1480–1508, PRESUMPTION-1023–1033). Every pre-check below
+records its command and its return per REVISE-474; every held item names its in-house test. The routed
+item is the one whose question is a design principle the estate inherited from its platform and has never
+argued — the asymmetry between permitted creation and unpermitted correction — which no in-house command
+can settle. **Lane note:** the 09-17 15abc run was still in flight when this block was written (23:48 EDT:
+one 15a file, no 15b file, no run note — ASSUMPTION-1481, OPEN-235); this block is appended after its
+pre-15c snapshot and may land before or after its run note.
+
+--------------------------------------------------------------------------------
+PRESUMPTION-1024:
+  Statement: [inferred] That a permission tier which allows an unattended run to *create* an artefact
+    (a Gmail draft) but not to *modify* one is safe because creation is the lower-risk act — without
+    noticing that the asymmetry makes the run's first draft its final draft and removes the run's only
+    means of correcting an error it has itself introduced.
+  Why routed: the daily run wrote "7th failed attempt" into the decision draft, saw the error, was
+    auto-declined on `update_draft`, and disclosed the error in a log the recipient does not read
+    (ASSUMPTION-1485). The tier is inherited; the run treats it as weather; OPEN-233 puts the policy
+    question to Tom. What literature can settle is whether the design pattern — gate modification, not
+    creation — is recognised, and what the recognised remedies are (validate-before-write on the creation
+    side; supersede-rather-than-edit; a self-correction allowance scoped to the run's own artefacts).
+  Evidence: draft `r8191906678905695603` HTML row (verified by `get_draft`); `inbox/PROCESSED_LOG.md`
+    l.1326–1327, l.1335.
+  Risk if wrong: Medium-High. Every unattended write that can err is delivered erring; the decision
+    channel is one such write, daily.
+  Suggested literatures: reversibility/undo as a design principle (Shneiderman's eight golden rules —
+    "easy reversal of actions"; Norman, *The Design of Everyday Things*, on error recovery and
+    forcing functions); least-privilege designs that separate create from modify (CRUD-tiered IAM;
+    append-only vs. mutable stores); human-approval gate design for agentic systems (which action classes
+    are gated; whether self-correction of the agent's own artefact is a new action or a continuation);
+    HITL workflow literature on "approval fatigue" and the cost of gating corrections; audit-log
+    integrity (append-only logs solve the same problem by *superseding* rather than editing). **15b:**
+    argue that gating modification of existing mail is correct regardless of who authored it, that the
+    remedy belongs on the creation side (validate before write), and that a self-correction allowance is
+    the first step to an agent editing what it should not.
+  PRE-CHECK (command and return, per REVISE-474):
+    `grep -inE "asymmetr|correction path|undo|reversib|auto-declin" validated_premises.md`
+    → 56 lines: PREMISE-073 (l.1926 — high-impact/irreversible unattended actions → report plus
+      proposal; scoped to *high-impact*); PREMISE-093 (l.2197 — refuse the gated action AND alert);
+      l.2010 (asymmetric usefulness test — a different asymmetry); nothing on an error the run introduced
+      *before* the gate and cannot reach *through* it.
+      **NO COVERING PREMISE FOUND.**
+  Status: [QUEUED]
+  Priority: MEDIUM-HIGH.
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-1024
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a disclosed error and a declined correction, against the tier neither
+        questioned; pre-checked with command and return recorded above.
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+--------------------------------------------------------------------------------
+**WITHDRAWN AT PRE-CHECK, with commands and returns** (each held in-house on a named covering premise):
+
+- **PRESUMPTION-1023** (a self-written independence attestation is channel isolation) —
+  `grep -inE "attest|independen" validated_premises.md` → 231 lines; **PREMISE-004 / DISPOSITION-409**
+  covers in terms (same-model-family convergence is not independent evidence). In-house test: does 15b's
+  file for 1019, when it lands, disagree with 15a's on anything?
+- **PRESUMPTION-1026** (the previous run's note is the ground truth for a streak) —
+  `grep -inE "report format|no slot|no field for|positivity|green|brevity" validated_premises.md` → 13
+  lines; **PREMISE-109** (l.2476) covers. In-house test: `grep -L FAILED daily_sync/chat_to_cowork/*.md |
+  tail -1` (OPEN-236).
+- **PRESUMPTION-1027** (finding density licenses length) — **PREMISE-107** (l.2425): "Delivering more
+  signal into a channel with demonstrated zero throughput is not throughput but inventory." Covers, and
+  names the sync channel's condition. In-house test: bytes delivered per channel per day against bytes
+  read.
+- **PRESUMPTION-1029** (a status file contains what the run wrote) — **PREMISE-006** (single-writer
+  invariant) and **OPEN-223** (open on this file). In-house test: `cat` after write, in the task file.
+- **PRESUMPTION-1031** (a restamp is content-preserving) — **PREMISE-124**; **then tested by this pass**:
+  five registers byte-identical to their 09-16 backups over the backup's length. SUPPORTED for the
+  registers; UNCALIBRATED for the other 54 restamped files.
+
+**HELD IN-HOUSE, no covering premise, test named** (not literature-bearing):
+
+- **PRESUMPTION-1025** (no state for "known, unreadable, uncarded") — pre-check → 2 lines, PREMISE-146
+  adjacent. Test: `grep -n "no card was written\|not carded" inbox/PROCESSED_LOG.md`, then count later
+  cards.
+- **PRESUMPTION-1028** (a completed daily task has no sentinel value) — pre-check → 19 lines, none on
+  point. Test: name what would detect a change to the 307 pairs if the task were retired.
+- **PRESUMPTION-1030** (the specialist lane runs before the daily run) — pre-check → 37 lines, none on
+  inter-task ordering by clock. Test: on the next short Phase-2 day, count Stump cards.
+- **PRESUMPTION-1032** (the proposal channel is the right channel for a correction) — pre-check → 16
+  lines, PREMISE-142 adjacent. Test: count restate/downgrade recommendations in the 19 decision archives
+  and how many reached the wiki.
+- **PRESUMPTION-1033** (the estate's counters are maintained) — pre-check → 53 lines; **PREMISE-140**
+  covers mtime-derived counts; these are prose-derived. Test: for each counter, name the file it is
+  read from.
+
+**From 14a: none routed.** All twenty-nine assumptions are in-house measurements (twenty-six verified at
+source tonight; the remaining three — 1481, 1482, 1505 — wait on artefacts that had not landed). One,
+ASSUMPTION-1502 (CROSS-008 restated as form/levels; Stump's bridge to Levin is not final causality), is
+content-bearing and belongs to the tradition lane, not this register; recorded, not routed.
+
+**Three named tests, still unrun, re-named for the seventh night:**
+  (i)   `sqlite3 open-story.db 'select max(timestamp) from events'` — ASSUMPTION-1497. One line.
+  (ii)  The scheduler ARTIFACTS enumeration (PRESUMPTION-994; OPEN-209/210).
+  (iii) `diff` the two connectivity resolvers' page lists (OPEN-206/214) — not re-measured for four days.
+  Plus one new: the two restamp processes at 15:55 and 22:00 (OPEN-231) — `launchctl list` and the Cowork
+  scheduler at those minutes.
+
+**Lane arithmetic.** Tonight adds **1** item. The untagged re-trigger lane is **139**, not 129
+(ASSUMPTION-1484): 129 dated 07-05..08-02, 2 dated 08-30, 8 dated 09-13 — today's 15a is working the
+09-13 cohort. Observed drain remains ~7 per fortnight.

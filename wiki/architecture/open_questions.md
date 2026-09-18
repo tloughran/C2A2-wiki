@@ -3042,3 +3042,114 @@ OPEN-230:
     Original item: OPEN-230
     Item type: OPEN QUESTION (raised from ASSUMPTION-1455)
     Current status: OPEN
+
+================================================================================
+# 2026-09-17 — Open questions raised by the 14a end-of-day run
+
+OPEN-231:
+  Date raised: 2026-09-17
+  Question: What process restamped **59 files at 15:55:36–37 EDT** on 09-17 — every register this
+    pipeline writes, the 15a result file, the day's proposal, the watch list — and is it distinct from the
+    22:00 process (9 files at 22:00:07 tonight; 28 at 22:00:05 on 09-16)? Two restamp events per day at
+    two clock times, neither named by any scheduler row.
+  Why it matters: OPEN-224 asked about one event. There are two, and the 15:55 one covers the files whose
+    mtimes this register, the lit-search lane and Agent 16 use to date each other's work. Until the
+    processes are named, no mtime under `architecture/` dates anything (ASSUMPTION-1480).
+  Status: OPEN — `find -newermt` gives the set; the Mac's launchd list and the Cowork scheduler at 15:55
+    and 22:00 give the candidates. **Needs the Mac.**
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-231
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1480)
+    Current status: OPEN
+
+OPEN-232:
+  Date raised: 2026-09-17
+  Question: Where is "the 30-day window" written? No file under the wiki mount states it (the daily-run
+    SKILL says 60 days; the L2 WARN threshold is 21); three specialist runs in three days have applied
+    it and redefined it (three sources admitted under "significant work," 09-15; seven days, 09-16; an
+    eight-year-old argument under "significant work," 09-17).
+  Why it matters: OPEN-228 asks whether the clause binds. It cannot bind if it has no home. Every card on
+    the 21-card page was admitted under a criterion whose text nobody can cite (ASSUMPTION-1501).
+  Status: OPEN — `grep -rn "30.day" agents/ inbox/ master/` and the specialist SKILL files on the Mac.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-232
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1501)
+    Current status: OPEN
+
+OPEN-233:
+  Date raised: 2026-09-17
+  Question: When a permitted write (`create_draft`) produces an artefact with a known error and the
+    correction (`update_draft`) is an unpermitted write, what should an unattended run do — leave the
+    error, discard the draft, or write a second artefact that supersedes it? Today it left it, disclosed
+    it in a log the recipient does not read, and the error is what Tom will open.
+  Why it matters: the permission tier is asymmetric by design (creation is low-risk, modification of
+    existing mail is not), and the asymmetry makes first drafts final. PREMISE-093 covers refusing a gated
+    action and alerting; nothing covers an error the run itself introduced before the gate
+    (ASSUMPTION-1485, PRESUMPTION-1024). **Needs Tom** — it is a policy, not a search.
+  Status: OPEN.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-233
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1485)
+    Current status: OPEN
+
+OPEN-234:
+  Date raised: 2026-09-17
+  Question: Is `scripts/commit_daily_run.sh` (05:45, Mac-side) ordered after the daily run's artefacts,
+    or does it race them? Today the commit landed at 05:45 EDT and the review page, L2 stream and draft
+    landed at 06:39–06:40 EDT; on prior days the page was done by 04:40. "First clean commit since 09-14"
+    committed nothing the run produced.
+  Why it matters: Phase 6 was BLOCKED for a week on a lock; unblocked, it commits the previous day's
+    files under today's date whenever Phase 2 runs long (ASSUMPTION-1486). A commit keyed on a
+    done-marker rather than a clock closes it.
+  Status: OPEN — `git log --format='%ci' -1 -- review/2026-09-17_review.html` on the Mac.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-234
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1486)
+    Current status: OPEN
+
+OPEN-235:
+  Date raised: 2026-09-17
+  Question: Did the 09-17 lit-search pipeline run (`local_0cbbc6fa`) complete? At 23:48 EDT it had
+    written one 15a file, no 15b file, no run note, and its transcript ended on two `Agent` spawns — the
+    state in which the 09-15 self-awareness run died (OPEN-222).
+  Why it matters: if it did not, OPEN-222 has its second instance in three days and the absence alarm
+    PREMISE-053 prescribes has a second data point; if it did, the 15a/15b independence pattern changed
+    tonight (ASSUMPTION-1481, -1482) and the 09-18 pass should say so.
+  Status: OPEN — tomorrow's pass reads the transcript; one `grep -c 2026-09-17 for_lit_search.md`.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-235
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1481)
+    Current status: OPEN
+
+OPEN-236:
+  Date raised: 2026-09-17
+  Question: Which figure is the Chat→Cowork failure streak — 3 (the scrape's own note), 14 (Agent 16's
+    09-03 window), 15 (the evening sync), or ~90 (every file since 06-20 is a failure note)? And what is
+    the counter supposed to count — consecutive failed runs, days since the last content, or days since
+    the last delivery?
+  Why it matters: ASSUMPTION-1447 recorded three counters for two streaks; today there are four, and the
+    smallest one was produced by reading the previous day's note instead of the directory
+    (ASSUMPTION-1492). A streak that resets to whatever yesterday said is not a streak.
+  Status: OPEN — `grep -L FAILED daily_sync/chat_to_cowork/*.md | tail -1` gives the answer to the third
+    definition in one line; the first two need the counter's owner to say which.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-236
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1492)
+    Current status: OPEN
+
+*Six raised 2026-09-17 (231–236). OPEN-233 needs Tom; OPEN-231 needs the Mac; the other four are one
+command each and are named so that a reader can run them.*
+
+---

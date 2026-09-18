@@ -21789,3 +21789,376 @@ per REVISE-474, and every one with a `Source:` line per PRESUMPTION-1007. Three 
 Registers snapshotted as `*.bak.20260916-pre-14eod`.*
 
 ---
+
+================================================================================
+# 2026-09-17 — Agent 14b end-of-day detection (after 14a; one day)
+
+PRESUMPTION-1023:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That a subagent's self-written "Independence attestation" — a list of files it
+    says it did not read — constitutes channel isolation between 15a and 15b.
+  Evidence it was operative: three `for/` files today end with "Independence attestation: Read — … NOT
+    read — any against/ file dated 2026-09-17, lit_search_returns.md, revision_flags.md,
+    validated_premises.md"; the run's own prose says nothing about process arrangement; the two `Agent`
+    spawns are the only structural evidence. The attestation is written by the party whose independence
+    is in question, from the same model, in the same session (ASSUMPTION-1482).
+  Why it was unstated: obvious to participants — spawning two agents feels like two channels.
+  Type: methodological
+  Related decisions: ASSUMPTION-1443, -1482; PREMISE-004 (DISPOSITION-409); DECISION-071
+  Testability: testable via literature (correlated errors across same-family model instances) — but
+    already answered.
+  Risk if wrong: **High.** Six cycles of degraded independence would be replaced by a seventh that
+    reports itself as restored.
+  Status: UNTESTED — **withdrawn at pre-check.** `grep -inE "attest|independen" validated_premises.md`
+    → 231 lines; **PREMISE-004 / DISPOSITION-409** ("correlated LLM errors mean same-model-family
+    convergence is NOT independent evidence; count same-mechanism/same-family lines as one") covers it
+    in terms. Held in-house: the test is whether 15b's file, when it lands, disagrees with 15a's on
+    anything — the 09-16 register found the 999 pair "rests on statutes none of which were opened."
+  Source: verified-at-source (three attestations read); transcript (spawn structure).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1023
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the attestation text against the absence of any run-level declaration;
+        pre-checked; covered.
+    Current status: UNTESTED
+
+PRESUMPTION-1024:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That a permission tier which allows an unattended run to *create* an artefact
+    (a Gmail draft) but not to *modify* one is safe because creation is the lower-risk act — without
+    noticing that the asymmetry makes the run's first draft its final draft and removes the run's only
+    means of correcting an error it has itself introduced.
+  Evidence it was operative: the daily run wrote "7th failed attempt" into the draft, discovered the
+    error, called `update_draft`, was auto-declined, and wrote "Noting here so the draft's error does not
+    propagate into the trail" — into a log the draft's recipient does not read. No line asks whether the
+    tier is right; the run treats the asymmetry as weather (ASSUMPTION-1485).
+  Why it was unstated: too foundational to notice — permission tiers are inherited from the platform,
+    and "creating is safer than editing" is true for the human's mail and false for the run's own
+    output.
+  Type: structural
+  Related decisions: ASSUMPTION-1485; OPEN-233; PREMISE-073 (report-plus-proposal for high-impact
+    unattended actions); PREMISE-093 (refuse the gated action AND alert)
+  Testability: **testable via literature** — reversibility/undo as a design principle (Shneiderman's
+    "easy reversal"; Norman on error recovery), least-privilege designs that separate create from
+    modify (CRUD-tier IAM), human-approval gate design for agentic systems (which actions are gated and
+    whether self-correction is treated as a new action or a continuation), and the HCI literature on
+    "irreversibility asymmetry" in automated workflows. 15b: argue that gating modification of existing
+    mail is correct regardless, and that the right remedy is on the creation side (validate before
+    write), not the permission side.
+  Risk if wrong: **Medium-High.** Every unattended write that can err is a write that will be delivered
+    erring; the estate's decision channel is one such write, daily.
+  Status: UNTESTED — **routed to 15a/15b.** PRE-CHECK: `grep -inE "asymmetr|correction path|undo|
+    reversib|auto-declin" validated_premises.md` → 56 lines; PREMISE-073 (l.1926) covers *high-impact*
+    unattended actions; PREMISE-093 (l.2197) covers refusing a gated action with escalation; nothing
+    covers an error the run introduced *before* the gate and cannot reach *through* it. **NO COVERING
+    PREMISE FOUND.**
+  Source: verified-at-source (draft HTML row; PROCESSED_LOG l.1326–1327, l.1335).
+  Provenance:
+    Origin: 14b
+    Chain: [14b → 15a, 15b]
+    Original item: PRESUMPTION-1024
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a disclosed error and a declined correction, against the tier neither questioned;
+        pre-checked with command and return recorded.
+      15a: [pending]
+      15b: [pending]
+    Current status: SENT-TO-15a, SENT-TO-15b
+
+PRESUMPTION-1025:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That "known, unreadable, uncarded" is not a state an item can be in — that every
+    item the estate knows about is either a card, a watch, or a ledger row.
+  Evidence it was operative: the daily run found the Levin lab bioRxiv (2026-08-13), could not read it
+    (`web_fetch` provenance refusal; browser auto-declined), and by its own rule wrote no card ("a
+    title-only card is the Wright mistake"); Agent 16 the same morning "opened no watch; Channel 4
+    remains unopened"; the ledger's OPEN=1 is Wright only. The item exists in one PROCESSED_LOG paragraph
+    and nowhere that any run reads on schedule (ASSUMPTION-1490).
+  Why it was unstated: each agent's brief defines its own channel; the space between channels is in
+    nobody's brief.
+  Type: structural
+  Related decisions: ASSUMPTION-1490, -1504; PRESUMPTION-1014; PREMISE-108; PREMISE-146 (adjacent — "no
+    channel existed by which a measurement … could reach the specification")
+  Testability: in-house — `grep -n "no card was written\|not carded" inbox/PROCESSED_LOG.md` and count
+    how many of those items later became cards.
+  Risk if wrong: **High.** The rule that prevents title-only cards is correct and, unpaired, converts
+    every fetch failure into a silent omission with a better conscience.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -inE "no channel|uncarded|orphan(ed)? (item|
+    finding)|known.but.un|nobody's" validated_premises.md` → 2 lines (l.3585 PREMISE-146, l.7350 — neither
+    on an item without a channel). No covering premise; the test above is one grep.
+  Source: verified-at-source (PROCESSED_LOG l.1312–1314; watch_list "Channel 4 remains unopened").
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1025
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a rule applied correctly and a gap it leaves; pre-checked; held.
+    Current status: UNTESTED
+
+PRESUMPTION-1026:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That the previous run's note is the ground truth for a streak — that "how many
+    days has this failed" is answered by reading yesterday's summary rather than the directory.
+  Evidence it was operative: the chat scrape read `2026-09-16_chat_summary.md`, found no count, read its
+    pointer to 09-15 as "last successful," and wrote "third day running"; the 09-15 file's header is
+    `FAILED`, and every file since 06-20 is a failure note (ASSUMPTION-1492). Agent 16's "fourteenth"
+    is a window it chose; the evening sync's "fifteenth" is Agent 16's plus one.
+  Why it was unstated: obvious to participants — the note is the run's memory, and memory is consulted
+    before the world.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1447, -1492; OPEN-236; PREMISE-109; PREMISE-140
+  Testability: in-house — `grep -L FAILED daily_sync/chat_to_cowork/*.md | tail -1`.
+  Risk if wrong: **Medium.** A streak that resets to yesterday's value cannot exceed yesterday's value
+    plus one, and cannot detect a three-month outage.
+  Status: UNTESTED — **withdrawn at pre-check.** `grep -inE "report format|no slot|no field for|
+    positivity|green|brevity" validated_premises.md` → 13 lines; **PREMISE-109** (l.2476: "A summarizing
+    agent is a view over its own read set, not a view over the system … 'no failures to report' must
+    be legible as scoped") covers it. Held in-house: the one-line test above.
+  Source: verified-at-source (headers of the 09-13..09-17 files; 17 of 125 files lack the FAILED string
+    and every one of those 17 is a differently-worded failure note).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1026
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the counter's derivation path; pre-checked; covered.
+    Current status: UNTESTED
+
+PRESUMPTION-1027:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That finding density licenses length — that a run which has found more than its
+    format allows should deliver the findings and declare the breach, rather than deliver the format.
+  Evidence it was operative: the evening sync wrote 81 lines / 16.9 KB on a day the task said to "generate
+    a brief note saying so," into a channel dead since June ("Rule 6 breached … declared in the file");
+    system health "~640 words against the ~500 target — sections 8–10 each carried a real finding, so I
+    kept the evidence rather than trimming it"; the Stump specialist filed four full-text-verified
+    candidates in an 18.5 KB card for a 30-day novelty search (ASSUMPTION-1495, -1500, -1501, -1507).
+    This register is the largest instance in the window.
+  Why it was unstated: culturally embedded — evidence is good; more evidence is better; the reader will
+    skim.
+  Type: normative
+  Related decisions: ASSUMPTION-1463, -1507; PRESUMPTION-1002, -1022; REVISE-477
+  Testability: in-house — bytes delivered per channel per day against bytes read from that channel per
+    day (the second figure is zero for two channels).
+  Risk if wrong: **Medium.** The channels fill and the reader does not; the breach declarations become
+    the most-repeated sentence in the estate.
+  Status: UNTESTED — **withdrawn at pre-check.** **PREMISE-107** (l.2425): "Delivering more signal into a
+    channel with demonstrated zero throughput is not throughput but inventory, and can degrade the
+    disposition of signals already working." Covers it in terms — and names the sync channel's condition
+    exactly. Held in-house; the register that files this is bound by it.
+  Source: transcript (three declarations); this pass's own size.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1027
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from three length-over-format choices and this pass's own; pre-checked; covered.
+    Current status: UNTESTED
+
+PRESUMPTION-1028:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That a daily task whose series is complete has no further function — that "the
+    seventh consecutive all-caught-up run" is evidence for retirement rather than for sentinel value.
+  Evidence it was operative: "the `summa-2026-daily-batch` task can be retired or reduced to a weekly
+    check if you'd prefer to stop the daily log entries" — the only argument is the log entries; the run
+    is also the only one that would notice a Day 308 appearing in `playlist.json` or a pair vanishing
+    (ASSUMPTION-1506).
+  Why it was unstated: obvious to participants — a no-op is waste.
+  Type: scaling
+  Related decisions: ASSUMPTION-1438, -1506; PREMISE-100 (liveness is not correctness — the converse
+    question: is a no-op a liveness signal for the corpus?)
+  Testability: in-house — what would detect a change to the 307 pairs if this task were retired?
+    Nightly verification would (it reads all 307) — so the presumption may be *right*; it was not argued.
+  Risk if wrong: **Low-Medium.** One corpus, one redundant reader.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -inE "sentinel|no-op|retire|canary"
+    validated_premises.md` → 19 lines, none on retiring a completed periodic task. No covering premise;
+    the in-house test is the sentence above.
+  Source: transcript.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1028
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a retirement proposal argued from log noise alone; pre-checked; held.
+    Current status: UNTESTED
+
+PRESUMPTION-1029:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That a status file contains what the run wrote to it — that a write call's return
+    is the write's persistence, so the run may reason about *other* writers from its belief about its own.
+  Evidence it was operative: OpenStory: "`REFRESH_STATUS.md` written with the FAIL line" and "That
+    Mac-side run did not update `REFRESH_STATUS.md`" — the file holds the Mac wrapper's line at 10:15Z and
+    none of the sandbox's; the run did not read the file back; day three (ASSUMPTION-1499). The
+    metabolism run's diagnosis likewise exists only in transcript prose; `wiki/metabolism/` carries no
+    status artefact (ASSUMPTION-1498).
+  Why it was unstated: too foundational to notice — a successful write is the end of the thought.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1466, -1467, -1499; OPEN-223; PREMISE-006; PREMISE-116 (instrumentation
+    constraint: a step that emits "propagated: yes" reproduces the defect)
+  Testability: in-house — `cat` after write, in the run that wrote.
+  Risk if wrong: **High.** `morning-system-health` has diagnosed the wrong failure every morning since
+    the sandbox task was added, from a file the sandbox believes it wrote.
+  Status: UNTESTED — **withdrawn at pre-check.** **PREMISE-006** (single-writer invariant, technically
+    enforced) and **OPEN-223** (already open on this file) cover the mechanism; the read-after-write
+    limb is the in-house test and costs one line in the task file.
+  Source: verified-at-source (`cat agents/openstory/REFRESH_STATUS.md` → 108 B, Mac `fail()` format,
+    `2026-09-17T10:15Z`).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1029
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from two false claims about one file, both made without reading it; pre-checked;
+        covered.
+    Current status: UNTESTED
+
+PRESUMPTION-1030:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That the specialist lane runs before the daily run — that "Stump skipped
+    (specialist filed PROP-2026-09-17-001 at 05:19)" is the product of an ordering guarantee rather than
+    of a race the daily run happened to lose slowly enough to notice.
+  Evidence it was operative: the daily run's Phase 2 note "Specialist agents now run at 7am before this
+    task"; the scheduler's 07:04Z (03:04 EDT) fire for the specialist and 08:34Z (04:34 EDT) for the daily
+    run; the card's 05:19 landing, forty-five minutes after the daily run began; a ~32-call Phase 2 that
+    reached Stump after 05:19 (ASSUMPTION-1489). On a short day the daily run reaches Stump first and
+    files a duplicate.
+  Why it was unstated: the SKILL text says "before," and the text is read, not the clock.
+  Type: structural
+  Related decisions: ASSUMPTION-1489, -1486 (the same shape at Phase 6: a clock-keyed commit racing the
+    run); OPEN-234
+  Testability: in-house — on the next day Phase 2 is short, count Stump cards.
+  Risk if wrong: **Medium.** Duplicate cards on a page whose reviewer approves en bloc.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -inE "race|ordering guarantee|runs? before|
+    precede" validated_premises.md` → 37 lines, none on inter-task ordering by clock. No covering
+    premise; the test is a count on a day that will come.
+  Source: verified-at-source (scheduler `lastRunAt` values; PROCESSED_LOG l.1308).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1030
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a SKILL claim against three timestamps; pre-checked; held.
+    Current status: UNTESTED
+
+PRESUMPTION-1031:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That a restamp is a content-preserving event — this register's "content unchanged
+    where checked" (ASSUMPTION-1473, -1480) has been read as "content unchanged," by this register and by
+    tonight's readers, for 87 files across two days, of which perhaps six were diffed.
+  Evidence it was operative: 1480 lists the 59 files and asserts the two processes are restamps; the
+    only diffs run were `validated_premises.md` against its pre-15c snapshot (identical) and the
+    register tails (last entries as expected). The 09-16 bak files exist for five registers and were not
+    diffed against the 15:55 versions. **Self-referential.**
+  Why it was unstated: obvious to participants — the files looked the same.
+  Type: methodological
+  Related decisions: ASSUMPTION-1473, -1480; OPEN-224, -231; PREMISE-124 (self-measurement calibration)
+  Testability: in-house — `for f in assumptions presumptions decisions open_questions for_lit_search;
+    do cmp $f.md.bak.20260916-pre-14eod <(head -c $(wc -c < $f.md.bak.20260916-pre-14eod) $f.md); done`
+    — five lines, run before tomorrow's append.
+  Risk if wrong: **Medium.** If the 15:55 process writes as well as touches, the registers this pipeline
+    appends to are being edited by a process nobody has named.
+  Status: **SUPPORTED (in-house) — the test was run by this pass after the item was drafted:** for all
+    five registers the current file's prefix is byte-identical to the `*.bak.20260916-pre-14eod`
+    snapshot (2,117,740 / 2,253,879 / 175,579 / 312,183 / 2,107,820 B). The 15:55 process touched and
+    did not write, for these five. Withdrawn at pre-check on PREMISE-124; the UNCALIBRATED mark is
+    lifted for the registers and remains for the other 54 files, which were not diffed.
+  Source: this register.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1031
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced against this register's own 1473/1480; pre-checked; then tested in-house on the
+        five registers (identical) — a presumption surfaced and discharged in one pass.
+    Current status: SUPPORTED (registers) / UNCALIBRATED (remaining 54 files)
+
+PRESUMPTION-1032:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That the proposal channel is the right channel for a *correction* to the master
+    wiki — that an agent which finds the wiki has drifted from its primary source ("three sources deep
+    without Stump saying it") should file the finding as a card, where the reviewer's only verbs are
+    APPROVE and DENY on new content.
+  Evidence it was operative: the Stump specialist wrote "Recommend CROSS-008 be restated as form/levels"
+    inside PROP-2026-09-17-001; the evening sync escalated it to "For Morning Discussion" 7 — a channel
+    with no reader since June; no run proposed a RESTATE action, and `traditions/stump/wiki.md` l.35 is
+    unchanged (ASSUMPTION-1502). Sibling of 1504 (no HOLD state): the channel has no RESTATE state
+    either.
+  Why it was unstated: the proposal channel is the only channel a specialist has.
+  Type: structural
+  Related decisions: ASSUMPTION-1502, -1504; PRESUMPTION-1014; PREMISE-108; PREMISE-142 (an instrument
+    with no outcome channel is a restatement of intent)
+  Testability: in-house — count recommendations to restate/downgrade master-wiki claims in the 19
+    archived decision files, and how many reached the wiki.
+  Risk if wrong: **Medium-High.** The estate's mechanism for correcting its own content is the same queue
+    as for adding content, behind 21 cards and a 7-day gap; corrections age at the rate of the backlog.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -inE "restate|correction to (the )?(master|
+    wiki)|content correction|edit channel" validated_premises.md` → 16 lines; l.3101 PREMISE-142 is
+    adjacent (no outcome channel), none on a correction path for master-wiki content. No covering
+    premise; the count above is the test.
+  Source: verified-at-source (proposal PRS-01 Solution; wiki.md l.35; cowork summary "For Morning
+    Discussion" 7).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1032
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a correction filed as a proposal; pre-checked; held.
+    Current status: UNTESTED
+
+PRESUMPTION-1033:
+  Date surfaced: 2026-09-17
+  Statement: [inferred] That the estate's counters are maintained — that "seventh consecutive
+    zero-ingest day," "seventh all-caught-up run," "third day running," the metabolism failure ordinal
+    (unstated today; eleventh by this register) and the scheduler headline are each read from somewhere
+    and incremented, when each is recomputed, copied from a prior note, or omitted by the run that prints
+    it, and no two runs read the same store.
+  Evidence it was operative: the zero-ingest counter rests on a master-wiki line that no longer exists
+    (ASSUMPTION-1488); the Summa ordinal went 3, 5, 5, 7 (1506); the sync streak is 3, 14, 15 or ~90
+    (1492); the metabolism run gave no ordinal (1498); this register supplies "eleventh" from its own
+    prior entries — one more counter with one more owner.
+  Why it was unstated: too foundational to notice — a number in a sentence reads as a measurement.
+  Type: scaling
+  Related decisions: ASSUMPTION-1447, -1488, -1492, -1506; OPEN-236; PREMISE-140 (the autonomy-day
+    counter and "any count over `wiki/` mtimes")
+  Testability: in-house — for each counter, name the file it is read from; if none, it is not a counter.
+  Risk if wrong: **Medium.** At N runs a streak is N opinions, and the systemic-risk flags that rest on
+    "Nth consecutive" rest on the opinion of whichever run was read last.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -inE "streak|counter|ordinal|monoton"
+    validated_premises.md` → 53 lines; **PREMISE-140** (l.3000, "the autonomy-day counter wherever it
+    appears … any count over `wiki/` mtimes") covers counters derived from mtimes; the counters here are
+    derived from prose. Partially covered; the naming test above is the remainder. OPEN-236 holds the
+    sync instance.
+  Source: verified-at-source (master wiki status lines; PROCESSED_LOG day headers).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1033
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from five counters with five derivations; pre-checked; partially covered; held.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-17, after 14a. **Eleven items (1023–1033)**: structural 4
+(1024, 1025, 1030, 1032), epistemic 2 (1026, 1029), methodological 2 (1023, 1031), normative 1 (1027),
+scaling 2 (1028, 1033). **No Critical-risk item tonight**; four High (1023, 1025, 1029, and 1024 at
+Medium-High with 1032); five Medium (1026, 1027, 1030, 1031, 1033); one Low-Medium (1028).
+Checked against tonight's ASSUMPTION-1480–1508; each names the assumptions it sits under. **One routed
+to 15a/15b (1024)**; ten held in-house — five withdrawn at pre-check on a named covering premise
+(1023 → PREMISE-004; 1026 → PREMISE-109; 1027 → PREMISE-107; 1029 → PREMISE-006/OPEN-223; 1031 →
+PREMISE-124, then tested in-house: registers identical) and five held with no covering premise and a named in-house test (1025, 1028,
+1030, 1032, 1033). Every pre-check records its command and return per REVISE-474; every entry carries a
+`Source:` line per PRESUMPTION-1007. Two are self-referential (1027, 1031). No designer speech —
+eighteenth consecutive day (PRESUMPTION-912).*
+
+---
