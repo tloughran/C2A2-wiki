@@ -16,8 +16,8 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-307 - You Made It - Contemporary]]"
 tags: [summa, day/307, pars/supplement, q/99, series/finale]
-last_qc_at: "2026-08-10T10:28:51"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-16T22:29:00"
+last_qc_outcome: "pass"
 ---
 
 # Day 307 — You Made It

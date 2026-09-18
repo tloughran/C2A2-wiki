@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-244 - Sacramental Character - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/244, pars/3, q/63]
-last_qc_at: "2026-09-08T08:23:07"
+last_qc_at: "2026-09-17T04:20:09"
 last_qc_outcome: "pass"
 ---
 

@@ -6,7 +6,7 @@ title: Kinds of Prudence
 summa_ref: II-II Q.50 + Q.51
 duration_seconds: 670
 word_count: 1789
-raw_asr_word_count: 1789
+raw_asr_word_count: 1801
 length_tier: short
 segment_count: 270
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: bash youtube-transcript-api (direct)
 synthesis: "[[Day-143 - Kinds of Prudence - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/143, pars/2, q/50-51]
-last_qc_at: "2026-08-15T00:23:37"
+last_qc_at: "2026-09-17T10:33:42"
 last_qc_outcome: "pass"
 ---
 

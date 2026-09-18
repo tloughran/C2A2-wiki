@@ -6,7 +6,7 @@ title: Volume 4
 summa_ref: Tertia Pars (III), Q.1-2
 duration_seconds: 1244
 word_count: 3649
-raw_asr_word_count: 3649
+raw_asr_word_count: 3639
 length_tier: long
 segment_count: 519
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-213 - Volume 4 - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/213, pars/III, q/1 q/2]
-last_qc_at: "2026-08-08T04:25:45"
+last_qc_at: "2026-09-17T02:31:34"
 last_qc_outcome: "pass"
 ---
 

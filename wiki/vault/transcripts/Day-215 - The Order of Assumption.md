@@ -6,7 +6,7 @@ title: The Order of Assumption
 summa_ref: Tertia Pars (III), Q.5-6
 duration_seconds: 549
 word_count: 1552
-raw_asr_word_count: 1552
+raw_asr_word_count: 1550
 length_tier: short
 segment_count: 217
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-215 - The Order of Assumption - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/215, pars/III, q/5 q/6]
-last_qc_at: "2026-08-08T04:26:08"
+last_qc_at: "2026-09-17T02:31:35"
 last_qc_outcome: "pass"
 ---
 

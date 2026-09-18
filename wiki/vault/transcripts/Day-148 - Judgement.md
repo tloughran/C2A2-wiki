@@ -6,7 +6,7 @@ title: Judgement
 summa_ref: II-II Q.60 + Q.61
 duration_seconds: 790
 word_count: 2133
-raw_asr_word_count: 2133
+raw_asr_word_count: 2122
 length_tier: medium
 segment_count: 322
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-148 - Judgement - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/148, pars/2, q/60-61]
-last_qc_at: "2026-09-09T12:22:11"
+last_qc_at: "2026-09-17T08:27:11"
 last_qc_outcome: "pass"
 ---
 

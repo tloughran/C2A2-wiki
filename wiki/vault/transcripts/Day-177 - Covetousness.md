@@ -6,7 +6,7 @@ title: Covetousness
 summa_ref: "Secunda Secundae, Q.118-119"
 duration_seconds: 634
 word_count: 1687
-raw_asr_word_count: 1687
+raw_asr_word_count: 1682
 length_tier: short
 segment_count: 255
 caption_kind: asr
@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-177 - Covetousness - Contemporary]]"
 tags: [summa, day/177, pars/II-II, q/118-119]
-last_qc_at: "2026-09-02T02:32:34"
+last_qc_at: "2026-09-17T20:26:59"
 last_qc_outcome: "pass"
 ---
 

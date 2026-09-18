@@ -3,10 +3,10 @@ day: 167
 title: Perjury and Sacrilege (Contemporary)
 pairs_with: "[[Day-167 - Perjury and Sacrilege]]"
 length_target_words: 1500
-length_actual_words: 1603
+length_actual_words: 1641
 length_tier: short
-length_ratio_to_target: 1.069
-length_note: "Recount 2026-09-01: pre-edit body was 1528 words, not the stored 1499 (understated by 29); true pre-edit ratio 1.019 — marginally OVER target, not under. The note previously certified compliance from a third figure (0.919) matching neither the stored count nor the recount: a stale hedge understating a file that is in fact slightly long. Both readings sit inside ±10%, so nothing breached. Q.98–99 share a single underlying structure (costly-signaling / symbolic-infrastructure violation); the prose is held to the load-bearing moves rather than padded with parallel restatement. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.98 a.1–a.4, Q.99 a.1–a.4), which the commentary had been treating at question level only — same repair as Day 166."
+length_ratio_to_target: 1.094
+length_note: "Recount 2026-09-17 (QC), body only: top frontmatter excluded, auto-link footer excluded, regex letters-and-apostrophes. Pre-edit body 1603 EXACT against the stored field; the 2026-09-17 apparatus (Rohr PRS-21 id in the body sentence; Wright no-record declination in the Bridges bullet) added 38 words, moving the file to 1641 / 1.094, still inside +-10%. No argument changed. Earlier: Recount 2026-09-01: pre-edit body was 1528 words, not the stored 1499 (understated by 29); true pre-edit ratio 1.019 — marginally OVER target, not under. The note previously certified compliance from a third figure (0.919) matching neither the stored count nor the recount: a stale hedge understating a file that is in fact slightly long. Both readings sit inside ±10%, so nothing breached. Q.98–99 share a single underlying structure (costly-signaling / symbolic-infrastructure violation); the prose is held to the load-bearing moves rather than padded with parallel restatement. QC 2026-08-12: article-level anchors added for all eight articles Habash walks (Q.98 a.1–a.4, Q.99 a.1–a.4), which the commentary had been treating at question level only — same repair as Day 166."
 mind_first_reframe: "Under mind-monism, oaths and sacred-symbolic infrastructure are the technologies by which perspective-limited agents bind themselves into higher-order computational coherence over time; perjury and sacrilege are local defections that extract trust-yield while degrading the substrate on which collective coherence runs."
 central_theme_thread: "The perspective-limited agents who would compute loving unity from within their limitations need binding mechanisms that constrain their own future deception of one another; sacrilege and perjury are the local defections that, multiplied, would render the cooperative computation impossible."
 karpathy_wiki_sources:
@@ -15,12 +15,12 @@ karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-03 scale-bridging in agent coupling — positivity resonance as a biophysiological coupling event that scales from dyad to group, High). CONSULTED, NOT LOAD-BEARING: this source was listed with a bare wiki.md path and no id, and appears nowhere in the body or in Bridges; nothing in the commentary rests on it. Retained as a record of what was read, with the id supplied, rather than deleted (QC 2026-09-01)."
   - "traditions/mcgilchrist/prs_triplets.md (PRS-06 embodied tradition formation; PRS-07 division and union)"
   - "traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in anatomical morphospace; PRS-02 cancer as defection from the cooperative morphogenetic field). Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium."
-  - "Wright canonical: 'Paul and the Faithfulness of God' on pistis as covenant fidelity; 'Jesus and the Victory of God' on Temple symbolics"
-  - "Rohr canonical: 'The Universal Christ' on the sacramental as bearing the divine presence"
+  - "traditions/wright/prs_triplets.md — NO EXACT RECORD (tested 2026-09-17 against the 67-record register, the first time this canonical-only line was checked): searched oath / vow / pistis / covenant fidelity / Temple / faithfulness. The nearest are PRS-34 (works of the law as covenant badge practices — membership, not fidelity-as-oath, High) and PRS-45 (corporate faith, Medium); no record carries the oath structure or the Temple-as-symbolic-infrastructure reading. Same absence Day 162 recorded for the same claim. The Wright claims stay on the canonical works with this radius named: 'Paul and the Faithfulness of God' on pistis as covenant fidelity; 'Jesus and the Victory of God' on Temple symbolics."
+  - "traditions/rohr/prs_triplets.md (PRS-21 creation as the first incarnation — the Universal Christ in matter as the contemplative articulation of mind-monism, Medium). Anchored 2026-09-17; this line had been canonical-only ('The Universal Christ' on the sacramental as bearing the divine presence), and PRS-21 is the record every prior repoint has settled on for the divine-pattern-in-matter claim. The canonical work is retained as underlying."
 evidence_strength_summary: "Costly-signaling theory (oath as binding commitment) is well-established game theory and behavioral biology. The neurobiology of trust-and-betrayal is empirical. The reading of sacrilege as violation of a community's symbolic infrastructure is interpretive but converges with research on ritual function in social cognition."
 tags: [synthesis, day/167, theme/costly-signal, theme/commitment, q/98, q/99]
-last_qc_at: "2026-09-09T12:22:41"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T08:27:14"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 167 — Perjury and Sacrilege (Contemporary)
@@ -47,7 +47,7 @@ McGilchrist's account of embodied tradition formation (McGilchrist PRS-06 in the
 
 Stump's work on narrative cognition (Stump PRS-07, PRS-08 in the Stump-tradition wiki) supplies the epistemological layer: oaths and sacred objects are not propositional artifacts. They are second-personal, narrative-bound, person-involving. The damage perjury does is not first to a true proposition but to a second-personal relation; the damage sacrilege does is not first to a physical object but to the community whose narrative the object carried.
 
-Wright reads the oath in *Paul and the Faithfulness of God* as the human participation in YHWH's own covenant-fidelity — *pistis* across the divine-human boundary takes the shape of binding-commitment honored over time. The Temple, for Wright, is the paradigmatic sacred-symbolic infrastructure; its violation in the late Second-Temple period is *the* civilizational shock that the Jesus-movement is responding to. Rohr in *The Universal Christ* reads the same structure: the sacramental is the created order bearing the divine presence; sacrilege treats the bearer as if it bore nothing.
+Wright reads the oath in *Paul and the Faithfulness of God* as the human participation in YHWH's own covenant-fidelity — *pistis* across the divine-human boundary takes the shape of binding-commitment honored over time. The Temple, for Wright, is the paradigmatic sacred-symbolic infrastructure; its violation in the late Second-Temple period is *the* civilizational shock that the Jesus-movement is responding to. Rohr in *The Universal Christ* reads the same structure: the sacramental is the created order bearing the divine presence (PRS-21 in the Rohr-tradition wiki, creation as the first incarnation, Medium); sacrilege treats the bearer as if it bore nothing.
 
 ## Solution (proposed, speculative)
 
@@ -67,7 +67,7 @@ The perspective-limited agents who would compute loving unity from within their 
 - **Levin PRS-08 + PRS-02** (cells as cognitive agents in anatomical morphospace; cancer as defection from the cooperative morphogenetic field) — cellular cooperation depends on within-field signaling honored against private incentive; cancer is the cellular analog of perjury and sacrilege. *Empirical (both entries recorded at high confidence).* (Repointed 2026-08-24 from PRS-04, the generalised basal-cognition entry at Confidence Medium, which was carrying an empirical label it cannot support.)
 - **McGilchrist PRS-07** (division and union as creative synthesis, **High**) **with PRS-06** (embodied tradition formation, `P6 (Implicit)`, **Medium**) — sacred objects and ritual gestures encode accumulated practical wisdom; sacrilege destroys the transmission medium, and Q.99 a.3's ranking of the species by the sacred thing violated tracks how much accumulated coherence each carries. *Interpretive; grades stated separately rather than averaged. The cognitive science of ritual stands behind PRS-06 but the record is the account built on it, at Medium.* (QC 2026-09-01: the two had been bundled under one *Empirical* badge spanning High and Medium.)
 - **Stump PRS-07, PRS-08** (narrative cognition; second-personal phenomenology) — oaths and sacred objects are narrative-bound and person-involving, not propositional; their violation damages second-personal relations, not just propositional truth. *Philosophical.*
-- **Wright (canonical, PFG, JVG)** — oath as participation in covenant-fidelity; Temple as paradigmatic sacred infrastructure. *Theological / scriptural.*
+- **Wright (canonical, PFG, JVG)** — oath as participation in covenant-fidelity; Temple as paradigmatic sacred infrastructure. *Theological / scriptural.* (No register id: the 67-record Wright register was searched 2026-09-17 and holds no oath or Temple-symbolics record; nearest PRS-34 and PRS-45, radius in `karpathy_wiki_sources`.)
 
 ## Where this leaves us
 

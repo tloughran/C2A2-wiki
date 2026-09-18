@@ -6,7 +6,7 @@ title: Accusation
 summa_ref: Secunda Secundae, Q.68-69
 duration_seconds: 405
 word_count: 1169
-raw_asr_word_count: 1169
+raw_asr_word_count: 1163
 segment_count: 175
 caption_kind: asr
 language: en
@@ -16,8 +16,8 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-152 - Accusation - Contemporary]]"
 tags: [summa, day/152, pars/2, q/68]
-last_qc_at: "2026-09-09T20:24:44"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T16:24:08"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 152 — Accusation

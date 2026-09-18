@@ -6,7 +6,7 @@ title: The Death Penalty
 summa_ref: II-II Q.64 + Q.65
 duration_seconds: 841
 word_count: 2468
-raw_asr_word_count: 2468
+raw_asr_word_count: 2464
 length_tier: medium
 segment_count: 360
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-150 - The Death Penalty - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/150, pars/2, q/64-65]
-last_qc_at: "2026-08-11T20:24:40"
+last_qc_at: "2026-09-17T06:51:41"
 last_qc_outcome: "pass"
 ---
 

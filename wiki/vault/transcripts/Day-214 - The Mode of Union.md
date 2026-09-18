@@ -6,7 +6,7 @@ title: The Mode of Union
 summa_ref: Tertia Pars (III), Q.3-4
 duration_seconds: 794
 word_count: 2153
-raw_asr_word_count: 2153
+raw_asr_word_count: 2152
 length_tier: medium
 segment_count: 310
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-214 - The Mode of Union - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/214, pars/III, q/3 q/4]
-last_qc_at: "2026-08-08T04:26:07"
+last_qc_at: "2026-09-17T02:31:35"
 last_qc_outcome: "pass"
 ---
 

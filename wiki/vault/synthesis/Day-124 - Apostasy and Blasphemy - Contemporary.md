@@ -12,12 +12,12 @@ karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface; PRS-04 agent-constructed reality)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 mind-at-large and the dissociated point of view; getting the ontological primitive wrong)"
   - "traditions/levin/prs_triplets.md (PRS-02 defection from cooperative whole; PRS-03 basins/set-point)"
-  - "traditions/wright/prs_triplets.md (PRS-01 critical realism); traditions/rohr/prs_triplets.md (PRS-03 Universal Christ)"
+  - "traditions/wright/prs_triplets.md (PRS-01 critical realism); traditions/rohr/prs_triplets.md (PRS-03 Universal Christ — read at the body 2026-09-17 and deliberately KEPT: the claim this file makes with it, that the one who has turned away remains a site where the pattern is at work and so warrants engagement rather than excision, rests on PRS-03's own Solution, a theological warrant for multi-tradition inquiry, the Day 123/206 disposition; it is not the cosmic-Christ-in-creation claim that PRS-21 carries, so no repoint is owed. Medium.)"
 evidence_strength_summary: "Will-as-orientation (the object of the will is a claim about the whole) — formal (Friston: the model encodes its valued target) + philosophical (high in field). Blasphemy as maximally-wrong model of the fundamental — formal/metaphysical (Hoffman/Kastrup, speculative). Apostasy as complete withdrawal of a perspective from its target — analogical (Levin). The apostate-prince forfeiture article named as a medieval departure, not endorsed."
 mind_first_reframe: "An agent's deepest valuation is a truth-apt commitment about what is fundamental, because under monism valuing and representing are one operation (Friston: the set-point is part of the generative model); so 'interior blasphemy of the heart' (Q.13 a.4) is a model whose highest-precision set-point is fixed on something that is not the ground — false as lived, not merely as spoken — and apostasy is the complete loss of the target set-point (Levin), distinct from local divergence within the basin."
 central_theme_thread: "This is the will-as-orientation face of the central theme: the deepest fact about a perspective is the target toward which it computes, so to set the will on something-other-than-the-whole is to render, in the only currency that finally counts, a false verdict about what the whole is; 'the damned blaspheme' is the central theme's shadow — a perspective so fixed away from the whole that even its silence testifies against the good — while the saints' praise is the computation toward loving unity completed."
 tags: [synthesis, day/124, theme/will-as-orientation]
-last_qc_at: "2026-09-09T16:24:23"
+last_qc_at: "2026-09-17T12:23:21"
 last_qc_outcome: "rewrote"
 ---
 

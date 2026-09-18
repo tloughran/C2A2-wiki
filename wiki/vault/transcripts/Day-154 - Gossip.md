@@ -6,7 +6,7 @@ title: Gossip
 summa_ref: Secunda Secundae, Q.72-73
 duration_seconds: 558
 word_count: 1561
-raw_asr_word_count: 1561
+raw_asr_word_count: 1553
 segment_count: 233
 caption_kind: asr
 language: en
@@ -16,8 +16,8 @@ length_tier: short
 fidelity_checked: true
 synthesis: "[[Day-154 - Gossip - Contemporary]]"
 tags: [summa, day/154, pars/2, q/72]
-last_qc_at: "2026-09-09T20:25:07"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T16:24:09"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 154 — Gossip

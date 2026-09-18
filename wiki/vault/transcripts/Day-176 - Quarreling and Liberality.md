@@ -6,7 +6,7 @@ title: Quarreling and Liberality
 summa_ref: "Secunda Secundae, Q.116-117"
 duration_seconds: 527
 word_count: 1444
-raw_asr_word_count: 1444
+raw_asr_word_count: 1436
 length_tier: short
 segment_count: 215
 caption_kind: asr
@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-176 - Quarreling and Liberality - Contemporary]]"
 tags: [summa, day/176, pars/II-II, q/116-117]
-last_qc_at: "2026-09-02T02:32:33"
+last_qc_at: "2026-09-17T18:34:25"
 last_qc_outcome: "pass"
 ---
 

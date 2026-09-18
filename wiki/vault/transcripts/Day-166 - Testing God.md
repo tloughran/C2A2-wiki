@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 fidelity_checked: true
 synthesis: "[[Day-166 - Testing God - Contemporary]]"
 tags: [summa, day/166, pars/II-II, q/96-97]
-last_qc_at: "2026-09-09T12:22:40"
+last_qc_at: "2026-09-17T08:27:13"
 last_qc_outcome: "pass"
 ---
 

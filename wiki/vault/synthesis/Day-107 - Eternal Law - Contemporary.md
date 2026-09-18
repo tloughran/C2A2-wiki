@@ -3,7 +3,7 @@ day: 107
 title: Eternal Law (Contemporary)
 pairs_with: "[[Day-107 - Eternal Law]]"
 length_target_words: 1500
-length_actual_words: 1692
+length_actual_words: 1789
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/levin/wiki.md (morphogenetic-field target morphology)"
@@ -12,16 +12,16 @@ karpathy_wiki_sources:
   - "wiki/traditions/friston/wiki.md (active inference, generative models). CITATION CONSTRAINT: NOT FLAG-05 — that token exists nowhere in the wiki."
   - "wiki/master/cross_program_index.md (cross-program convergence on form/pattern). CITATION CONSTRAINT: NOT CROSS-12/CROSS-012 — CROSS-012 is 'are Hoffman's conscious agents and Levin's basal cognition the same thing at different scales', i.e. substrate-independent agency, not form-as-causally-real. No correct target has been identified for this claim."
   - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology — (Implicit), Confidence Medium. STANDING CONSTRAINT: its Solution IS the C2A2 integration claim restated downward on 2026-08-10 as CROSS-008; cite it as a Medium reconstruction, never as empirical support.)"
-  - "Rohr, The Universal Christ (eternal Logos as cosmic pattern)"
-  - "Wright, Surprised by Hope (Christ as the telos of creation)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, Confidence Medium — the network's spirituality pairing for its metaphysical monism; anchored 2026-09-17 from the bare canonical-work citation. NOT PRS-03: that record's Problem and Solution are a warrant for multi-tradition inquiry, the wrong object type for a claim about what the pattern is.) Canonical work: Rohr, The Universal Christ (eternal Logos as cosmic pattern)"
+  - "wiki/traditions/wright/prs_triplets.md (PRS-06 resurrection as the firstfruits of new creation, High — the 'new creation as realization of the pattern' clause; PRS-05 God's homecoming / salvation as inclusion in a renewed-creation people, High — the covenantal clause; anchored 2026-09-17 from the bare canonical-work citation.) Canonical work: Wright, Surprised by Hope (Christ as the telos of creation)"
 evidence_strength_summary: "The form-as-real claim is empirically grounded in morphogenetic and developmental work; the identification with mind-stuff is metaphysical interpretation; the Christological reading is theological."
-length_ratio_to_target: 1.128
-length_note: "Short tier (1500). RECOUNTED 2026-09-01 after a citation-standing repair: body-only 1692 words, ratio 1.128 — outside +-10%, well inside +-25%, and all of the growth is evidence surfacing (the Stump PRS-04 standing note, the Kastrup PRS-01 repoint) rather than new argument. Prior note recorded 1532 words / 1.02x. Q.93's single ambitious claim (eternal pattern, a.4-a.6) developed in full; lean by design, no padding warranted (better short than padded). NOTE: re-tiered short during the 2026-06-07 cluster word_count de-inflation; prior note referenced the superseded medium-2200 target."
+length_ratio_to_target: 1.193
+length_note: "Short tier (1500). RECOUNTED 2026-09-17 after the Wright/Rohr id-anchoring repair (PRS-06/05 and PRS-21 replacing bare canonical-work citations; apparatus only): body 1789 words, ratio 1.193 — outside +-10%, inside +-25%; the +97 words are citation notes, not argument. Counting boundary: every word below the frontmatter block and above the auto-linked footer, headings included, letters-and-apostrophes; it reproduced the prior 1692 exactly pre-edit. Earlier: RECOUNTED 2026-09-01 after a citation-standing repair: body-only 1692 words, ratio 1.128 — outside +-10%, well inside +-25%, and all of the growth is evidence surfacing (the Stump PRS-04 standing note, the Kastrup PRS-01 repoint) rather than new argument. Prior note recorded 1532 words / 1.02x. Q.93's single ambitious claim (eternal pattern, a.4-a.6) developed in full; lean by design, no padding warranted (better short than padded). NOTE: re-tiered short during the 2026-06-07 cluster word_count de-inflation; prior note referenced the superseded medium-2200 target."
 mind_first_reframe: "The eternal law on a mind-monist reading is the structural pattern of mind-at-large that constrains what counts as flourishing for kinds of agents — Aquinas's type/exemplar in the divine mind cashed out as the deepest computational specification of well-functioning, real and prior to created things but internal to reality rather than a transcendent extra entity."
 central_theme_thread: "Q.93 a.6's distinction between the wicked and the good reads as differing degrees of generative-model alignment with the eternal pattern; agents are individuated by their perspective-limitations relative to that pattern, and the loving-unity telos is the pattern as fully accessed — the simple whole seen, containing every limited perspective."
 tags: [synthesis, day/107, theme/eternal-law-as-pattern]
-last_qc_at: "2026-09-09T06:33:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T00:23:56"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 107 — Eternal Law (Contemporary)
@@ -92,8 +92,8 @@ The Wright-shaped reading is that this is not an individual project. It is a *co
 - **PRS-01 in the Kastrup-tradition wiki** (`wiki/traditions/kastrup/prs_triplets.md`, High): analytic idealism's inverted ontology — consciousness primary, matter its expression — so the eternal pattern is a structure of mind-at-large. PRS-02 (dissociative individuation, High) carries only the *alters* clause above, not this one. *Metaphysical argument*.
 - **traditions/friston/wiki.md (active inference)**: agents minimize prediction-error under generative models. *Empirical/formal*.
 - **master/cross_program_index.md (cross-program convergence on form/pattern)**: multiple traditions independently arrive at form-as-causally-real. *Pattern of agreement*, not single proof; no single CROSS id certifies it.
-- **Wright, *Surprised by Hope* (chs. 7-12)**: Christ as the telos of creation; new creation as the realization of the pattern. *Exegetical/theological*.
-- **Rohr, *The Universal Christ***: eternal Logos as the cosmic pattern. *Contemplative-theological*.
+- **PRS-06 + PRS-05 in the Wright-tradition wiki** (`wiki/traditions/wright/prs_triplets.md`; both Confidence High), with *Surprised by Hope* (chs. 7-12) as the canonical work: Christ as the telos of creation; new creation as the realization of the pattern (PRS-06, resurrection as firstfruits of new creation), and salvation as inclusion in the renewed-creation people (PRS-05). *Exegetical/theological*. (Ids anchored 2026-09-17; the bullet had cited the work alone.)
+- **PRS-21 in the Rohr-tradition wiki** (`wiki/traditions/rohr/prs_triplets.md`; Confidence Medium), with *The Universal Christ* as the canonical work: eternal Logos as the cosmic pattern — the record's Solution names the cosmic-Christ frame as the spirituality pairing for a mind-monist metaphysics, which is exactly the use made here. *Contemplative-theological*. (Id anchored 2026-09-17; the bullet had cited the work alone.)
 
 ## Where this leaves us
 

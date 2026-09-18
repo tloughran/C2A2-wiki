@@ -6,7 +6,7 @@ title: Respect of Persons
 summa_ref: II-II Q.62 + Q.63
 duration_seconds: 806
 word_count: 2380
-raw_asr_word_count: 2380
+raw_asr_word_count: 2365
 length_tier: medium
 segment_count: 338
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-149 - Respect of Persons - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/149, pars/2, q/62-63]
-last_qc_at: "2026-09-09T12:22:13"
+last_qc_at: "2026-09-17T08:27:12"
 last_qc_outcome: "pass"
 ---
 

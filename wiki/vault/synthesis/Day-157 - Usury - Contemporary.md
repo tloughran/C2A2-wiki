@@ -3,10 +3,10 @@ day: 157
 title: Usury (Contemporary)
 pairs_with: "[[Day-157 - Usury]]"
 length_target_words: 2200
-length_actual_words: 1703
-length_ratio_to_target: 0.774
+length_actual_words: 1831
+length_ratio_to_target: 0.832
 length_tier: medium
-length_note: "0.77x medium-tier target — complete, not truncated: both questions covered, the productive-vs-extractive discrimination fully developed; short-and-substantive per length policy."
+length_note: "0.77x medium-tier target — complete, not truncated: both questions covered, the productive-vs-extractive discrimination fully developed; short-and-substantive per length policy. Recounted 2026-09-17 (prose after the top frontmatter, auto-linked Related-records footer excluded): 1785 pre-edit against the stored 1703, 1831 after the Carroll and Hoffman badges were dissolved to one grade per record; 0.83 of target."
 karpathy_wiki_sources:
   - "traditions/carroll/prs_triplets.md (PRS-01 poetic naturalism's legitimate levels of description — productive capital as a real higher-level pattern distinct from money-as-pure-measure; PRS-28 moral facts real at the agent-and-wellbeing level, applied to extractive vs productive transactions)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface theory — the gap between the medieval frame (money as pure measure) and the contemporary frame (money as participant in productive capital))"
@@ -17,8 +17,8 @@ evidence_strength_summary: "Carroll emergent realism on productive capital — f
 mind_first_reframe: "Aquinas's argument is internally tight: money in the medieval economy was treated as a pure measure (a *moneta* whose worth is its face value and whose use is its expenditure), so charging for the *use* of money was charging for something that didn't exist beyond the money itself — \"selling the same thing twice.\" The contemporary frame inherits the *test* (does the charge answer to a real underlying value?) and updates the answer: modern money participates in *productive capital* (the capacity to be deployed in enterprises that generate real goods), in *risk-bearing* (the lender forgoes alternative deployment and accepts default risk), and in *time-value* (the lender forgoes use over the loan period). Productive interest answers to these real underlying values. *Extractive* usury — rent-seeking on nothing, predatory lending to those whose need makes them price-takers (the Q.77 logic) — remains exactly the wrong Aquinas named, and the central claim sharpens it: it is the cheating-of-the-poor pattern Wright finds in the prophets."
 central_theme_thread: "Usury is the economic case where careful discrimination is the moral act. The medieval bright line condemns charging-for-money-as-such; the contemporary frame agrees on the principle (the charge must answer to real underlying value) and updates the application (some charges do answer, some don't). The central claim names the criterion: an extractive charge is the local-optimum-globally-defective move that exploits the asymmetry of need — the lender absolutizing their privileged position against the borrower who has no alternative. A productive charge is the apparatus working: real risk is shared, real time-value is paid for, the polity's distributed capital allocation tracks something real. The discrimination matters: the prophets target the first kind ferociously; the second kind is what enables the polity's coordination across time."
 tags: [synthesis, day/157, theme/usury-the-discrimination-between-productive-and-extractive]
-last_qc_at: "2026-09-09T18:31:04"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T14:32:59"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 157 — Contemporary Parallel: Usury, Productive Capital, and the Discrimination That Matters
@@ -55,8 +55,8 @@ Usury is the economic case where the central claim does its most careful discrim
 
 ## Bridges
 
-- *PRS-01 + PRS-28 in the Carroll-tradition wiki (poetic naturalism's legitimate levels of description; moral facts real at the agent-and-wellbeing level)* — productive capital as a real higher-level pattern that productive interest answers to; the discrimination between productive and extractive charges specified by what real pattern the charge tracks. (Formal; strong.)
-- *PRS-03 in the Hoffman-tradition wiki (interface theory)* — medieval *moneta* and modern money as interfaces to different underlying realities; Aquinas's argument was right for his interface, the contemporary argument is right for the interface money has become. (Formal; medium.)
+- *PRS-01 + PRS-28 in the Carroll-tradition wiki (poetic naturalism's legitimate levels of description; moral facts real at the agent-and-wellbeing level)* — productive capital as a real higher-level pattern that productive interest answers to; the discrimination between productive and extractive charges specified by what real pattern the charge tracks. (Formal. Graded per record rather than averaged: **PRS-01 High**, **PRS-28 Medium** — productive capital as a real higher-level pattern rests on PRS-01; the productive/extractive discrimination leans on PRS-28 at Medium.)
+- *PRS-03 in the Hoffman-tradition wiki (interface theory)* — medieval *moneta* and modern money as interfaces to different underlying realities; Aquinas's argument was right for his interface, the contemporary argument is right for the interface money has become. (Formal; the record, **PRS-03, is High**; the extension from perceptual to monetary interfaces is the commentary's own reach, medium.)
 - *PRS-17 + PRS-02 in the Levin-tradition wiki (bioelectric cognitive glue constituting a collective knower; cancer as defection)* — the polity's distributed capital allocation as a real apparatus; extractive rent-seeking as defection of capital-holders from the apparatus's allocation function. (Empirical at biological scale; analogy medium.)
 - *PRS-04 + PRS-28 in the Friston-tradition wiki (organism as active modeler; precision-weighting over selected channels)* — productive intention (joint return under shared risk) vs extractive intention (rent on asymmetric need); the lender's responsibility for accurate weighting of the borrower's actual position. (Formal, at the registers' own grades rather than a bundled badge: **PRS-04 is Medium and marked (Implicit)**; **PRS-28 is Medium with a caveat in its confidence line** — the abstract "represents Friston's stated intent rather than published derivation." The predatory-lending argument does not need this leg to stand, and does not lean on it as though it were settled.)
 - *PRS-02 in the Wright-tradition wiki (faithful improvisation) + Torah debt-law (Ex 22, Lev 25, Deut 23) + the prophets (Amos, Micah, Isaiah)* — the scriptural lineage Aquinas inherits; the covenant community must not allow capital to strangle its poorest; predatory lending as the contemporary form of the wrong the prophets condemn. (Theological; strong-in-field.)

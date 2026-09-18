@@ -6,7 +6,7 @@ title: General Justice
 summa_ref: II-II Q.58 + Q.59
 duration_seconds: 1102
 word_count: 3062
-raw_asr_word_count: 3062
+raw_asr_word_count: 3038
 length_tier: medium
 segment_count: 448
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-147 - General Justice - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/147, pars/2, q/58-59]
-last_qc_at: "2026-09-09T16:24:11"
+last_qc_at: "2026-09-17T12:23:20"
 last_qc_outcome: "pass"
 ---
 

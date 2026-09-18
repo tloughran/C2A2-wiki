@@ -3,23 +3,23 @@ day: 182
 title: Magnanimity (Contemporary)
 pairs_with: "[[Day-182 - Magnanimity]]"
 length_target_words: 1500
-length_actual_words: 1709
-length_ratio_to_target: 1.139
+length_actual_words: 1778
+length_ratio_to_target: 1.185
 length_tier: short
-length_note: "Overrun is the Friston PRS-58/59 evidence upgrade recorded at the 2026-09-02 review — the precision parameter this day's self-model reading rides on now has a measured neural mechanism rather than only PRS-28's Medium/forthcoming status. Argument unchanged; within +/-25pct."
+length_note: "Overrun is the Friston PRS-58/59 evidence upgrade recorded at the 2026-09-02 review — the precision parameter this day's self-model reading rides on now has a measured neural mechanism rather than only PRS-28's Medium/forthcoming status. Argument unchanged; within +/-25pct. UPDATED 2026-09-17 (top frontmatter stripped, no auto-linker trailer in this file, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): pre-edit body recounted to 1709, EXACTLY the stored figure. The +69 this pass is apparatus only: register Confidence added to five records that had been cited by kind only (Friston PRS-04 Medium/Implicit, McGilchrist PRS-05 Medium/Implicit, Stump PRS-09 Medium, Wright PRS-20 Medium-High, Rohr PRS-05 Medium), in sources and Bridges. 1778 = 1.185, inside +/-25pct."
 mind_first_reframe: "Magnanimity is the self-model calibrated to its real (large) capacity: an agent that accurately estimates high resources attempts correspondingly great policies, and relates to honor as a *signal* of worth rather than its source. It is not pride, because it is anchored in truth about the self; the vice would be mis-estimation in either direction."
 central_theme_thread: "A perspective that accurately knows its own large capacity, and stretches toward great goods within the whole, is not curved in on itself — it is most itself when most given over to the great thing. The great-souled agent computes toward loving unity at scale, undistracted by the small economy of honor."
 karpathy_wiki_sources:
-  - "traditions/friston/prs_triplets.md (PRS-09, Confidence High: the self-referential generative model — a system modelling itself under Markov-blanket conditions; PRS-28, Confidence Medium: neuromodulation encoding precision, the inverse variance of prediction error, so confidence is precision on that self-model; PRS-04: the organism as active modeler)"
+  - "traditions/friston/prs_triplets.md (PRS-09, Confidence High: the self-referential generative model — a system modelling itself under Markov-blanket conditions; PRS-28, Confidence Medium: neuromodulation encoding precision, the inverse variance of prediction error, so confidence is precision on that self-model; PRS-04, Confidence Medium, label Implicit: the organism as active modeler)"
   - "traditions/fredrickson/prs_triplets.md (PRS-01, Confidence High: micro-moments of resonance as what actually builds durable resource, against the isolated agent; PRS-28, Confidence Medium: positivity resonance read as a within-program extension of broaden-and-build)"
-  - "traditions/mcgilchrist/prs_triplets.md (PRS-05: attention as an ontological act, the mode of attending constituting the world that shows up — magnanimity as openness to the great rather than grasp at status)"
-  - "traditions/stump/prs_triplets.md (PRS-09: virtue as cooperative causality — magnanimity as a power of the soul transformed toward great ends, not a mere trait)"
-  - "traditions/wright/prs_triplets.md (PRS-20: call-and-vocation for a finite, situated agent, tied explicitly to perspective-limitation as the individuating condition)"
-  - "traditions/rohr/prs_triplets.md (PRS-05: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift)"
+  - "traditions/mcgilchrist/prs_triplets.md (PRS-05, Confidence Medium, label Implicit: attention as an ontological act, the mode of attending constituting the world that shows up — magnanimity as openness to the great rather than grasp at status)"
+  - "traditions/stump/prs_triplets.md (PRS-09, Confidence Medium: virtue as cooperative causality — magnanimity as a power of the soul transformed toward great ends, not a mere trait)"
+  - "traditions/wright/prs_triplets.md (PRS-20, Confidence Medium-High: call-and-vocation for a finite, situated agent, tied explicitly to perspective-limitation as the individuating condition)"
+  - "traditions/rohr/prs_triplets.md (PRS-05, Confidence Medium: the mechanism by which the false self becomes the true self — the limitation redemptively re-read as the gift. Grades on these four lines and on Friston PRS-04 were added 2026-09-17 from the register; the records were cited ungraded)"
 evidence_strength_summary: "The accurate-self-model and upward-spiral accounts are formal/empirical (Friston, Fredrickson); the claim that the highest greatness is vocational — a calling toward goods that refer beyond the self — is theological (Wright, Rohr)."
 tags: [synthesis, day/182, theme/magnanimity, theme/self-estimate, q/128, q/129]
-last_qc_at: "2026-09-10T02:30:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T20:27:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 182 — Magnanimity (Contemporary)
@@ -58,12 +58,12 @@ A perspective is individuated by its limits — but not every largeness of self 
 
 ## Bridges
 
-- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as the inverse variance of prediction error, Confidence Medium) and PRS-04 (the organism as active modeler): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal — the self-model claim published, the precision-encoding claim still forthcoming.* **Upgrade recorded 2026-09-02:** the Friston register has grown to 63 entries, and **PRS-58 / PRS-59** supply what PRS-28's Medium status was standing in for — pre-stimulus hippocampal ripple activity, raised under uncertainty, as a measured mechanism that tunes cortical precision ahead of the stimulus. The claim that confidence *is* precision on a self-model remains this commentary's extension; but the precision parameter it rides on is now empirically anchored rather than only formally posited.
+- **Friston** — `traditions/friston/prs_triplets.md`, PRS-09 (the self-referential generative model, Confidence High) with PRS-28 (precision as the inverse variance of prediction error, Confidence Medium) and PRS-04 (the organism as active modeler, Confidence Medium, label Implicit — a reconstruction of the program rather than a stated result): magnanimity as high, *fitting* precision on one's own capacity; pride as the over-estimate. *Formal — the self-model claim published, the precision-encoding claim still forthcoming; one grade per record, not averaged.* **Upgrade recorded 2026-09-02:** the Friston register has grown to 63 entries, and **PRS-58 / PRS-59** supply what PRS-28's Medium status was standing in for — pre-stimulus hippocampal ripple activity, raised under uncertainty, as a measured mechanism that tunes cortical precision ahead of the stimulus. The claim that confidence *is* precision on a self-model remains this commentary's extension; but the precision parameter it rides on is now empirically anchored rather than only formally posited.
 - **Fredrickson** — `traditions/fredrickson/prs_triplets.md`, PRS-01 (micro-moments of resonance as what builds durable resource, Confidence High) with PRS-28 (positivity resonance read as a within-program extension of broaden-and-build, Confidence Medium): the great attempt that flows from connection-built resource vs the brittle status-bid. *Empirical on PRS-01; PRS-28 is a program-historiographic reading, not an experimental result.*
-- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-05 (attention as ontological act; the mode of attending constitutes the world disclosed): true magnanimity as less self-occupied, drawn out by the great good. *Empirical / interpretive.*
-- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality): magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*
-- **Wright** — `traditions/wright/prs_triplets.md`, PRS-20 (call-and-vocation for a finite, situated agent): largeness received by call, honor referred beyond the self. *Theological.*
-- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-05 (false self to true self; the limitation redemptively re-read as the gift): great-souled because anchored in union rather than ego. *Theological.*
+- **McGilchrist** — `traditions/mcgilchrist/prs_triplets.md`, PRS-05 (attention as ontological act; the mode of attending constitutes the world disclosed; Confidence **Medium**, label Implicit): true magnanimity as less self-occupied, drawn out by the great good. *Interpretive at the record; the hemispheric neuroscience it rests on is empirical, the application to magnanimity is this commentary's.*
+- **Stump** — `traditions/stump/prs_triplets.md`, PRS-09 (virtue as cooperative causality; Confidence **Medium**): magnanimity as a soul-power enlarged, not a self-made trait. *Theological / metaphysical.*
+- **Wright** — `traditions/wright/prs_triplets.md`, PRS-20 (call-and-vocation for a finite, situated agent; Confidence **Medium-High**): largeness received by call, honor referred beyond the self. *Theological.*
+- **Rohr** — `traditions/rohr/prs_triplets.md`, PRS-05 (false self to true self; the limitation redemptively re-read as the gift; Confidence **Medium**): great-souled because anchored in union rather than ego. *Theological.* (Grades on these four bullets and on Friston PRS-04 were added 2026-09-17 from the register; each had been cited by kind only.)
 
 ## Where this leaves us
 

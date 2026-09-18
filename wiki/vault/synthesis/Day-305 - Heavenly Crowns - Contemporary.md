@@ -3,14 +3,14 @@ day: 305
 title: Heavenly Crowns (Contemporary)
 pairs_with: "[[Day-305 - Heavenly Crowns]]"
 length_target_words: 2200
-length_actual_words: 1614
-length_ratio_to_target: 0.734
+length_actual_words: 1619
+length_ratio_to_target: 0.736
 length_tier: medium
-length_note: "Body 1614 words vs ~2200 tier guideline (-27%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. (Recounted 2026-09-09: the note previously certified from 1440, a figure matching neither length_actual_words nor the true body count; length_ratio_to_target 0.721 was already correct. Body then grew to 1614 (ratio 0.734) in the same pass by the Kastrup PRS-08 badge repair; both figures recorded so this note cannot self-certify from the superseded one.)"
+length_note: "Body 1614 words vs ~2200 tier guideline (-27%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. (Recounted 2026-09-09: the note previously certified from 1440, a figure matching neither length_actual_words nor the true body count; length_ratio_to_target 0.721 was already correct. Body then grew to 1614 (ratio 0.734) in the same pass by the Kastrup PRS-08 badge repair; both figures recorded so this note cannot self-certify from the superseded one. Recounted 2026-09-16 at 1614 exact pre-edit, then 1619 (ratio 0.736) after the Rohr PRS-7 unpadding note; boundary: all body words below the frontmatter block, headers included, letters and apostrophes.)"
 karpathy_wiki_sources:
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love beyond sentiment; PRS-08 high-quality listening as resonance enabler; PRS-14 conducive conditions)"
   - "traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-18 widening a community to engage rival traditions)"
-  - "traditions/rohr/prs_triplets.md (PRS-07 perichoretic relation as basal)"
+  - "traditions/rohr/prs_triplets.md (PRS-7 perichoretic relation as basal; unpadded from PRS-07 on 2026-09-16 to the register's own id)"
   - "traditions/kastrup/prs_triplets.md (PRS-02 individuation; PRS-08 the Daimon as principle of individuation)"
   - "traditions/loughran/prs_triplets.md (PRS-08/09 tradition-crossing inquiry; Synergistic Coils)"
   - "master/cross_program_index.md (CROSS-005 love/union as fundamental)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Differentiated-reward-by-contribution read as formed
 mind_first_reframe: "The dowries and aureoles describe a community whose shared end (union with the whole) is reached through irreducibly differentiated contributions, with the highest — the doctor's crown — going to the agent who makes the truth modelable to other minds and so raises the coherence of the whole."
 central_theme_thread: "Individuation is not overcome in glory but crowned: each limited perspective is rewarded as the one it is, and the doctor's crown names the cooperative mechanism — informing one another — by which limited perspectives help each other toward the loving unity that is the telos."
 tags: [synthesis, day/305, theme/crown-for-informing-others]
-last_qc_at: "2026-09-09T04:23:25"
+last_qc_at: "2026-09-16T22:28:59"
 last_qc_outcome: "rewrote"
 ---
 
@@ -36,7 +36,7 @@ Two linked inquiry-problems. First, **the union telos**: Aquinas frames the whol
 
 ## Resource
 
-On the union telos, the lead resource is Rohr's perichoretic account (PRS-07 in the Rohr-tradition wiki): God as "perfect giving and perfect receiving," with relation as "the very source, pattern, and goal of reality," so that the unit of reality is the *exchange*, not the isolated substance. Read against Q.95's marriage figure, this says the dowry is not a payment to a separate party but the constitution of a belonging — the structure of giving-and-receiving made permanent. Fredrickson's program supplies the embodied science: Tom's PRS-form record of her work (PRS-02, love recovered from mere sentiment; PRS-14, the conditions for positivity resonance) treats love as a real, micro-temporal, between-persons event — the empirical counterpart of "fruition answering to charity," and CROSS-005 in the network index already names love/union as a convergent fundamental across Stump, Fredrickson, and Kastrup.
+On the union telos, the lead resource is Rohr's perichoretic account (PRS-7 in the Rohr-tradition wiki): God as "perfect giving and perfect receiving," with relation as "the very source, pattern, and goal of reality," so that the unit of reality is the *exchange*, not the isolated substance. Read against Q.95's marriage figure, this says the dowry is not a payment to a separate party but the constitution of a belonging — the structure of giving-and-receiving made permanent. Fredrickson's program supplies the embodied science: Tom's PRS-form record of her work (PRS-02, love recovered from mere sentiment; PRS-14, the conditions for positivity resonance) treats love as a real, micro-temporal, between-persons event — the empirical counterpart of "fruition answering to charity," and CROSS-005 in the network index already names love/union as a convergent fundamental across Stump, Fredrickson, and Kastrup.
 
 On the teacher, the leading move comes from Friston and from Tom's own methodological program. Tom's PRS-form record of Friston's work (PRS-06 in the Friston-tradition wiki, multi-agent coherence through *mutual modeling*; PRS-18, the formal problem of widening a community so it can engage rival traditions without threat) gives the "doctor's crown" a precise contemporary content: the agent who reduces others' uncertainty by making the truth *modelable* to them is the agent who raises the coherence of the whole. And the C2A2 network's own methodology — Tom's PRS-form records in the Loughran-tradition wiki (PRS-08, tradition-crossing inquiry; PRS-09, the Synergistic Coil, one resource resolving many problem-to-solution transitions) — is exactly a theory of *teaching as cross-perspectival repair*: expelling error from other minds by articulating a tradition well enough that others can inhabit it.
 
@@ -60,7 +60,7 @@ And the doctor's crown names the mechanism by which limited perspectives help on
 
 - **PRS-06 + PRS-18 in the Friston-tradition wiki** — *multi-agent coherence via mutual modeling; widening a community to engage rivals*. Formal in shape, but the two are not equally supported and the bullet should not bundle them: PRS-06 is recorded as an implicit reconstruction at *Confidence: Medium*, PRS-18 at *Confidence: Speculative*. The contemporary content of the doctor's crown — making truth modelable to others raises collective coherence — is therefore a well-posed model rather than a demonstrated result.
 - **PRS-08 + PRS-09 in the Loughran-tradition wiki** — *tradition-crossing inquiry; the Synergistic Coil* (methodological, Tom's own). Teaching as cross-perspectival repair; the project's instrument for exactly the act Aquinas crowns.
-- **PRS-7 in the Rohr-tradition wiki / CROSS-005** — *perichoretic relation as basal; love/union fundamental* (theological/convergent; the Rohr record is *Confidence: Medium*, and CROSS-005 is an active cross-program analogy joining Fredrickson, Stump and Kastrup rather than a settled result). Reads the dowry's marriage figure as constituted belonging, not payment. (The register writes this record `PRS-7`, unpadded; it is the same entry.)
+- **PRS-7 in the Rohr-tradition wiki / CROSS-005** — *perichoretic relation as basal; love/union fundamental* (theological/convergent; the Rohr record is *Confidence: Medium*, and CROSS-005 is an active cross-program analogy joining Fredrickson, Stump and Kastrup rather than a settled result). Reads the dowry's marriage figure as constituted belonging, not payment. (The register writes this record `PRS-7`, unpadded; body and sources were unpadded to match on 2026-09-16, same entry.)
 - **PRS-02 + PRS-08 in the Fredrickson-tradition wiki** — *love beyond sentiment; high-quality listening as resonance enabler* (empirical). The embodied counterpart of fruition-answering-to-charity, and of the teacher's receptive art.
 - **PRS-02 in the Kastrup-tradition wiki** — *individual identity within monism*: one undivided consciousness experiencing multiple dissociated points of view, with individuality preserved as a real construct of that dissociation (philosophical; *Confidence: High* as a record, though the ontology it belongs to remains contested).
 - **PRS-08 in the Kastrup-tradition wiki** — *the Daimon as principle of individuation*: each alter is specifically characterized rather than generic, which is what actually underwrites "crowned as the one it is" (philosophical; *Confidence: High*). It is named separately from PRS-02 not because it stands weaker — the register grades both **High** — but because it does a different job: PRS-02 accounts for why perspectives are *separate*, PRS-08 for why each is *specifically itself*, and only the second carries the load-bearing claim here.

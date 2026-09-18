@@ -6,7 +6,7 @@ title: Prophetic Causes
 summa_ref: Secunda Secundae (II-II), Q.172-173
 duration_seconds: 872
 word_count: 2543
-raw_asr_word_count: 2543
+raw_asr_word_count: 2527
 length_tier: medium
 segment_count: 376
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-204 - Prophetic Causes - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/204, pars/II, q/172, q/173]
-last_qc_at: "2026-09-14T10:31:24"
+last_qc_at: "2026-09-17T00:23:56"
 last_qc_outcome: "pass"
 ---
 

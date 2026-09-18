@@ -6,7 +6,7 @@ title: Virginity vs. Marriage
 summa_ref: Secunda Secundae, Q.152-153
 duration_seconds: 817
 word_count: 2191
-raw_asr_word_count: 2191
+raw_asr_word_count: 2182
 length_tier: medium
 segment_count: 327
 caption_kind: asr
@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-194 - Virginity vs Marriage - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/194, pars/II, q/152]
-last_qc_at: "2026-09-02T02:32:31"
+last_qc_at: "2026-09-17T18:34:26"
 last_qc_outcome: "pass"
 ---
 

@@ -3,10 +3,10 @@ day: 122
 title: Faith-Filled Gifts (Contemporary)
 pairs_with: "[[Day-122 - Faith-Filled Gifts]]"
 length_target_words: 2200
-length_actual_words: 1875
-length_ratio_to_target: 0.852
+length_actual_words: 2030
+length_ratio_to_target: 0.923
 length_tier: medium
-length_note: "Came in under the 2200 medium target (0.70). The episode's load is a single epistemological move — understanding-as-grasp-of-coherence (Hoffman/CROSS-062) plus the medium-principle and the will-gates-perception claim — which resolves tightly; expanding further would dilute rather than strengthen. Per the project length policy, substantive integrity over word count. QC 2026-06-10: added the Wright (1 Cor 13 now/then) + Rohr (apophatic knowing) paragraph and bridge that the topical priors call for; now 0.80 of target."
+length_note: "Came in under the 2200 medium target (0.70). The episode's load is a single epistemological move — understanding-as-grasp-of-coherence (Hoffman/CROSS-062) plus the medium-principle and the will-gates-perception claim — which resolves tightly; expanding further would dilute rather than strengthen. Per the project length policy, substantive integrity over word count. QC 2026-06-10: added the Wright (1 Cor 13 now/then) + Rohr (apophatic knowing) paragraph and bridge that the topical priors call for; now 0.80 of target. Recounted 2026-09-17 (prose after the top frontmatter, auto-linked Related-records footer excluded): 1957 pre-edit against the stored 1875, 2030 after three bundled evidence badges were dissolved to one grade per record (Hoffman, Friston, Kastrup bullets); 0.92 of target, inside the ±10% band. The 0.70 and 0.80 figures above are earlier counts under an unstated boundary."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-03 interface theory; PRS-04 agent-constructed reality)"
   - "traditions/stump/prs_triplets.md (PRS-07 narrative cognition; PRS-09 virtue as cooperative causality)"
@@ -16,12 +16,12 @@ karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (mind-at-large; knowing within the dissociative interface)"
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology, recorded from Surprised by Hope — the now/then structure of 1 Corinthians 13)"
   - "traditions/rohr/prs_triplets.md (PRS-01 non-dual awareness as contemplative epistemology, recorded from Everything Belongs / The Naked Now — apophatic knowing; NOT PRS-03 The Universal Christ, which is the multi-tradition warrant)"
-evidence_strength_summary: "Interface theory of perception (grasp of non-contradiction, not essence) — formal/evolutionary (Hoffman, medium-high). Perception/judgment split mapped to apprehension vs evaluation — formal + neuroscientific (Friston, McGilchrist). Second-personal/narrative knowledge — philosophical (Stump, high in field). The medium-principle as interface-relativity of sciences — philosophical/speculative. Tie of right cognition to rightly-ordered will — theological + speculative."
+evidence_strength_summary: "Interface theory of perception (grasp of non-contradiction, not essence) — formal/evolutionary (Hoffman PRS-03 High; PRS-04 Medium, Implicit). Perception/judgment split mapped to apprehension vs evaluation — formal + neuroscientific (Friston, McGilchrist). Second-personal/narrative knowledge — philosophical (Stump, high in field). The medium-principle as interface-relativity of sciences — philosophical/speculative. Tie of right cognition to rightly-ordered will — theological + speculative."
 mind_first_reframe: "The gift of understanding is the finite agent's capacity to grasp the coherence of its faith-model without grasping the essence of its objects; the 'mirror dimly' veil is generalized to the universal interface (Hoffman), Markov blanket (Friston), dissociative boundary (Kastrup), so grace adds a higher-precision prior that lets the agent trust the deeper model against the appearances, and right cognition is gated by the will's orientation because precision is allocated according to what the agent values."
 central_theme_thread: "This is where the project's epistemology becomes explicit: if every perspective is partial, the limited agent still knows the whole not by seeing the essence (which would require removing the limitation) but by grasping that the model given to it is coherent and trusting the higher-perceiving node that supplied it — 'we see in a mirror dimly' is the central theme's epistemic motto, held until the limitations are removed and 'then face to face.'"
 tags: [synthesis, day/122, theme/gifts-understanding-knowledge]
-last_qc_at: "2026-09-09T18:30:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-17T14:32:57"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 122 — Contemporary Parallel: Grasping Coherence Without Grasping Essence
@@ -64,11 +64,11 @@ This article is where the project's epistemology becomes explicit. Conscious age
 
 ## Bridges
 
-- *PRS-03 + PRS-04 in the Hoffman-tradition wiki, with CROSS-062 (Hoffman × Stump)* — interface theory licenses a real cognition that grasps coherence, not essence; the explicit Hoffman/Thomist pairing for intellect-over-sense. (Formal/evolutionary; medium-high.)
-- *PRS-04 + PRS-10 in the Friston-tradition wiki* — the perception/judgment two-fold act maps onto generative-model apprehension and active-reasoning evaluation. (Formal/neuroscientific; medium-high.)
+- *PRS-03 + PRS-04 in the Hoffman-tradition wiki, with CROSS-062 (Hoffman × Stump)* — interface theory licenses a real cognition that grasps coherence, not essence; the explicit Hoffman/Thomist pairing for intellect-over-sense. (Formal/evolutionary. Graded per record rather than averaged: **PRS-03 High**; **PRS-04 Medium and marked (Implicit)**; CROSS-062 is an index pairing, not a graded record.)
+- *PRS-04 + PRS-10 in the Friston-tradition wiki* — the perception/judgment two-fold act maps onto generative-model apprehension and active-reasoning evaluation. (Formal/neuroscientific. Graded per record rather than averaged: **PRS-10 High**, a published formal framework for reasoning as model selection; **PRS-04 Medium and marked (Implicit)**. The mapping onto Aquinas's two-fold act is the commentary's own step.)
 - *CROSS-052 in `master/cross_program_index.md` (Stump × McGilchrist; the Batch-3 note)* — the record asks whether Stump's second-personal narrative knowing is structurally identical to McGilchrist's right-hemisphere knowing, and Batch 3 identifies the structural identity; understanding-as-perception is participatory apprehension prior to analytic decomposition. (Philosophical + neuroscientific; medium.)
 - *PRS-07 in the Stump-tradition wiki (Tom's PRS-form record of Stump's narrative-cognition work)* — rigorous non-propositional, person-directed knowing, the register in which "understanding the articles" operates. (Philosophical; high in field.)
-- *PRS-02 in `traditions/kastrup/prs_triplets.md` — individual identity within monism* — the record states the universe as a single, undivided consciousness experiencing multiple dissociated points of view, individuality preserved as a construct of the dissociation process; the veil generalized, so finite knowing is always knowing-within-a-boundary inside the one mind. (Speculative metaphysics.)
+- *PRS-02 in `traditions/kastrup/prs_triplets.md` — individual identity within monism* — the record states the universe as a single, undivided consciousness experiencing multiple dissociated points of view, individuality preserved as a construct of the dissociation process; the veil generalized, so finite knowing is always knowing-within-a-boundary inside the one mind. (The record itself, **PRS-02, is Confidence High**; the generalisation of the religious veil to the dissociative boundary is the commentary's reach, speculative metaphysics.)
 - *PRS-03 in the Wright-tradition wiki (inaugurated eschatology, recorded from *Surprised by Hope*) + PRS-01 in the Rohr-tradition wiki (non-dual awareness as contemplative epistemology, recorded from *Everything Belongs* / *The Naked Now*)* — the scriptural and contemplative registers of grasping-coherence-without-essence. Wright's already/not-yet is the now/then structure of 1 Corinthians 13: the present is "the space between the decisive insight and its full elaboration," so love is what persists past the partial media. Rohr's entry gives contemplative epistemology as a complement to analytical reason — apophatic knowing as the practiced form of understanding-without-comprehension. (Theological; high in field. Note the work: the apophatic claim is registered at PRS-01, not at PRS-03 (*The Universal Christ*), which is the multi-tradition warrant rather than an epistemology.)
 
 ## Where this leaves us
