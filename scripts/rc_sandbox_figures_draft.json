@@ -1,0 +1,968 @@
+{
+ "_comment": "RC Sandbox figure bios — source of truth for the Figures index in wiki/rc_sandbox_notebook.html. First pass 2026-09-16: the 76 figures with 3+ mentions. 13 entries are copied from wiki/whos_who.json (source=whos_who) and are not to be edited here; 63 were drafted (source=drafted). 'links' is an ordered list of candidates; scripts/rc_sandbox_figures_check.py takes the first that returns 200 and carries one of the 'tokens' in its text, and writes the result into 'link'/'linkLabel'/'link_checked'. Link rule (Tom, 2026-09-16): living scholars get a personal or institutional page, never social media; the dead and the fictional get the Stanford Encyclopedia entry where one exists, else Wikipedia. 'note' carries anything the reviewer must see.",
+ "figures": [
+  {
+   "slug": "koch",
+   "name": "Koch",
+   "full": "Christof Koch",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Neuroscientist, long the chief scientist and then president of the Allen Institute for Brain Science, earlier Francis Crick's collaborator on the neural correlates of consciousness, and the most prominent advocate of Tononi's integrated information theory; author of The Feeling of Life Itself.",
+   "links": [
+    "https://christofkoch.com/",
+    "https://alleninstitute.org/person/christof-koch/",
+    "https://en.wikipedia.org/wiki/Christof_Koch"
+   ],
+   "tokens": [
+    "Koch"
+   ]
+  },
+  {
+   "slug": "tim-urban",
+   "name": "Tim Urban",
+   "full": "Tim Urban",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Writer and illustrator behind the long-form blog Wait But Why, whose stick-figure explainers on Neuralink, artificial intelligence, Elon Musk and (in What's Our Problem?) political tribalism turn technical and civic questions into essays read by millions.",
+   "links": [
+    "https://waitbutwhy.com/",
+    "https://en.wikipedia.org/wiki/Tim_Urban_(blogger)"
+   ],
+   "tokens": [
+    "Urban",
+    "Wait But Why"
+   ]
+  },
+  {
+   "slug": "pentland",
+   "name": "Pentland",
+   "full": "Alex (Sandy) Pentland",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "MIT Media Lab computational social scientist, a founder of wearable computing and of the field he named social physics: using the digital traces of human interaction to measure how ideas and behaviour flow through groups, and to redesign the incentives of organizations and cities.",
+   "links": [
+    "https://www.media.mit.edu/people/sandy/overview/",
+    "https://en.wikipedia.org/wiki/Alex_Pentland"
+   ],
+   "tokens": [
+    "Pentland"
+   ]
+  },
+  {
+   "slug": "tegmark",
+   "name": "Tegmark",
+   "full": "Max Tegmark",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "MIT physicist and cosmologist who argues in Our Mathematical Universe that physical reality is a mathematical structure; co-founder of the Future of Life Institute and author of Life 3.0 on the future of artificial intelligence.",
+   "links": [
+    "https://tegmark.org/",
+    "https://space.mit.edu/home/tegmark/",
+    "https://physics.mit.edu/faculty/max-tegmark/",
+    "https://en.wikipedia.org/wiki/Max_Tegmark"
+   ],
+   "tokens": [
+    "Tegmark"
+   ]
+  },
+  {
+   "slug": "tononi",
+   "name": "Tononi",
+   "full": "Giulio Tononi",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Psychiatrist and neuroscientist at the University of Wisconsin-Madison, originator of integrated information theory, which starts from the essential properties of experience itself and asks what physical systems could have them; also a leading researcher on sleep.",
+   "links": [
+    "https://www.psychiatry.wisc.edu/staff/tononi-giulio/",
+    "https://centerforsleepandconsciousness.psychiatry.wisc.edu/",
+    "https://en.wikipedia.org/wiki/Giulio_Tononi"
+   ],
+   "tokens": [
+    "Tononi"
+   ]
+  },
+  {
+   "slug": "plato",
+   "name": "Plato",
+   "full": "Plato",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Athenian philosopher (c. 428-347 BC), student of Socrates and teacher of Aristotle, whose dialogues stage rival positions against one another and whose Callicles, Thrasymachus and Socrates the sandbox draws on as types.",
+   "links": [
+    "https://plato.stanford.edu/entries/plato/"
+   ],
+   "tokens": [
+    "Plato"
+   ]
+  },
+  {
+   "slug": "dennett",
+   "name": "Dennett",
+   "full": "Daniel Dennett (1942-2024)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Philosopher of mind at Tufts who defended a thoroughly naturalistic, Darwinian account of consciousness and free will, treating the sense of an inner witness as a user illusion; the sandbox pairs him with LeDoux and with Dawkins on memes.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Daniel_Dennett"
+   ],
+   "tokens": [
+    "Dennett"
+   ]
+  },
+  {
+   "slug": "aristotle",
+   "name": "Aristotle",
+   "full": "Aristotle",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Greek philosopher (384-322 BC) whose ethics of virtue, practical reason and the human good is the tradition MacIntyre revives, and whose account of the inadequacy of bad acts Flannery elucidates in the Intractable Disputes volume.",
+   "links": [
+    "https://plato.stanford.edu/entries/aristotle/"
+   ],
+   "tokens": [
+    "Aristotle"
+   ]
+  },
+  {
+   "slug": "kuhn",
+   "name": "Kuhn",
+   "full": "Thomas Kuhn (1922-1996)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Historian and philosopher of science whose The Structure of Scientific Revolutions supplied paradigms, normal science, crisis and incommensurability, the vocabulary MacIntyre later turned on moral traditions.",
+   "links": [
+    "https://plato.stanford.edu/entries/thomas-kuhn/"
+   ],
+   "tokens": [
+    "Kuhn"
+   ]
+  },
+  {
+   "slug": "plomin",
+   "name": "Plomin",
+   "full": "Robert Plomin",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Behavioural geneticist at King's College London whose decades of twin and adoption studies, summarized in Blueprint, argue that inherited DNA differences are the major systematic force shaping who we become, with environments themselves partly chosen by heritable tendencies.",
+   "links": [
+    "https://www.kcl.ac.uk/people/robert-plomin",
+    "https://en.wikipedia.org/wiki/Robert_Plomin"
+   ],
+   "tokens": [
+    "Plomin"
+   ]
+  },
+  {
+   "slug": "graziano",
+   "name": "Graziano",
+   "full": "Michael Graziano",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Princeton neuroscientist and author of Rethinking Consciousness, whose attention schema theory holds that the brain builds a simplified model of its own attention, and that this model is what we report as awareness.",
+   "links": [
+    "https://grazianolab.princeton.edu/",
+    "https://pni.princeton.edu/people/michael-graziano",
+    "https://en.wikipedia.org/wiki/Michael_Graziano"
+   ],
+   "tokens": [
+    "Graziano"
+   ]
+  },
+  {
+   "slug": "jack-ma",
+   "name": "Jack Ma",
+   "full": "Jack Ma",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Chinese entrepreneur who founded Alibaba; his 2019 debate with Elon Musk at the World AI Conference in Shanghai, where he argued that AI should first help us understand ourselves, is the exchange the sandbox records.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Jack_Ma"
+   ],
+   "tokens": [
+    "Jack Ma"
+   ]
+  },
+  {
+   "slug": "kelly",
+   "name": "Kelly",
+   "full": "Kevin Kelly",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Founding executive editor of Wired and author of What Technology Wants and The Inevitable, who reads technology as an evolving system with its own long-term tendencies and sees humans and machines converging into one connected 'holos'.",
+   "links": [
+    "https://kk.org/",
+    "https://en.wikipedia.org/wiki/Kevin_Kelly_(editor)"
+   ],
+   "tokens": [
+    "Kevin Kelly"
+   ]
+  },
+  {
+   "slug": "perez",
+   "name": "Perez",
+   "full": "Carlos E. Perez",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "AI writer and founder of Intuition Machine, author of Artificial Intuition and a long-running column on deep learning; the sandbox quotes his claim that the alignment problem fails first between people, who are treated as replaceable parts, not between people and machines.",
+   "links": [
+    "https://intuitionmachine.com/",
+    "https://medium.com/intuitionmachine"
+   ],
+   "tokens": [
+    "Perez",
+    "Intuition Machine"
+   ],
+   "note": "Identified from cell r516c3 ('Carlos Perez'). Medium is the fallback only because he has no Wikipedia page; if neither passes, ship without a link."
+  },
+  {
+   "slug": "anil-seth",
+   "name": "Anil Seth",
+   "full": "Anil Seth",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Neuroscientist at the University of Sussex and author of Being You, who describes perception as controlled hallucination, the brain's best predictive guess held in check by the senses, and selfhood itself as a kind of perception.",
+   "links": [
+    "https://www.anilseth.com/",
+    "https://en.wikipedia.org/wiki/Anil_Seth"
+   ],
+   "tokens": [
+    "Seth"
+   ]
+  },
+  {
+   "slug": "putnam",
+   "name": "Putnam",
+   "full": "Robert D. Putnam",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Harvard political scientist whose Bowling Alone documented the collapse of American social capital and whose later work (Our Kids, The Upswing) asks how civic connection was rebuilt once and might be again. Not the philosopher Hilary Putnam.",
+   "links": [
+    "https://www.hks.harvard.edu/faculty/robert-d-putnam",
+    "https://www.hks.harvard.edu/faculty/robert-putnam",
+    "https://robertdputnam.com/",
+    "https://en.wikipedia.org/wiki/Robert_D._Putnam"
+   ],
+   "tokens": [
+    "Putnam"
+   ],
+   "note": "Cell r180c3 is 'Putmam bowling alone', so Robert, not Hilary."
+  },
+  {
+   "slug": "sara-walker",
+   "name": "Sara Walker",
+   "full": "Sara Imari Walker",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Astrobiologist and theoretical physicist at Arizona State University, co-developer with Lee Cronin of assembly theory, who argues that life is best understood through information and causation, and that biology may be prior to the physics we happen to have.",
+   "links": [
+    "https://search.asu.edu/profile/1936182",
+    "https://en.wikipedia.org/wiki/Sara_Imari_Walker"
+   ],
+   "tokens": [
+    "Walker"
+   ]
+  },
+  {
+   "slug": "musk",
+   "name": "Musk",
+   "full": "Elon Musk",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Engineer-entrepreneur behind Tesla, SpaceX, Neuralink and xAI; the sandbox meets him through Wait But Why's Neuralink explainer and the 2019 Shanghai debate with Jack Ma.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Elon_Musk"
+   ],
+   "tokens": [
+    "Musk"
+   ],
+   "note": "No personal page that is not a social-media account; Wikipedia by the rule."
+  },
+  {
+   "slug": "philip-ball",
+   "name": "Philip Ball",
+   "full": "Philip Ball",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "British science writer, for many years an editor at Nature, whose books and Quanta essays cover quantum reconstruction, pattern formation and (in How Life Works) the limits of the machine metaphor in biology.",
+   "links": [
+    "https://www.philipball.co.uk/",
+    "https://en.wikipedia.org/wiki/Philip_Ball"
+   ],
+   "tokens": [
+    "Ball"
+   ],
+   "note": "Cell r313c3 says 'John Ball's article'; the Quanta piece on quantum reconstruction (2017) is Philip Ball's."
+  },
+  {
+   "slug": "pope-francis",
+   "name": "Pope Francis",
+   "full": "Pope Francis (Jorge Mario Bergoglio, 1936-2025)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Argentine Jesuit who led the Catholic Church from 2013 until his death in 2025; his encyclicals, his emphasis on discernment, synodality and the peripheries, and his 2022 apology in Canada for the residential schools are what the sandbox cites.",
+   "links": [
+    "https://www.vatican.va/content/francesco/en.html",
+    "https://en.wikipedia.org/wiki/Pope_Francis"
+   ],
+   "tokens": [
+    "Francis",
+    "Francesco"
+   ]
+  },
+  {
+   "slug": "arthur-brooks",
+   "name": "Arthur Brooks",
+   "full": "Arthur C. Brooks",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Harvard professor, former president of the American Enterprise Institute, and author of Love Your Enemies and From Strength to Strength, whose work applies social science to happiness and to what he calls the culture of contempt.",
+   "links": [
+    "https://arthurbrooks.com/",
+    "https://en.wikipedia.org/wiki/Arthur_C._Brooks"
+   ],
+   "tokens": [
+    "Brooks"
+   ]
+  },
+  {
+   "slug": "chollet",
+   "name": "Chollet",
+   "full": "Francois Chollet",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Deep-learning researcher, creator of the Keras library, and author of On the Measure of Intelligence, which defines intelligence as skill-acquisition efficiency under constraints and gave rise to the ARC benchmark.",
+   "links": [
+    "https://fchollet.com/",
+    "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Chollet"
+   ],
+   "tokens": [
+    "Chollet"
+   ]
+  },
+  {
+   "slug": "deacon",
+   "name": "Deacon",
+   "full": "Terrence Deacon",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Biological anthropologist at UC Berkeley, author of The Symbolic Species and Incomplete Nature, who explains mind and meaning as arising from constraints and absences rather than from computation, and whom the sandbox pairs with Levin.",
+   "links": [
+    "https://anthropology.berkeley.edu/terrence-w-deacon",
+    "https://en.wikipedia.org/wiki/Terrence_Deacon"
+   ],
+   "tokens": [
+    "Deacon"
+   ]
+  },
+  {
+   "slug": "howard-bloom",
+   "name": "Howard Bloom",
+   "full": "Howard Bloom",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Author of The Lucifer Principle and Global Brain, which read biology, history and social life as one pattern of networked, competitive learning, the five-element 'complex adaptive system' the sandbox summarizes.",
+   "links": [
+    "https://howardbloom.net/",
+    "https://en.wikipedia.org/wiki/Howard_Bloom"
+   ],
+   "tokens": [
+    "Bloom"
+   ]
+  },
+  {
+   "slug": "charles-taylor",
+   "name": "Charles Taylor",
+   "full": "Charles Taylor",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Canadian philosopher (Sources of the Self, A Secular Age) whose accounts of modern identity, secularity, and overlapping consensus among rival traditions are close kin to MacIntyre's; the sandbox meets him through Philpott's essay.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Charles_Taylor_(philosopher)"
+   ],
+   "tokens": [
+    "Taylor"
+   ],
+   "note": "No Stanford Encyclopedia entry on Taylor himself; no maintained personal page found."
+  },
+  {
+   "slug": "dawkins",
+   "name": "Dawkins",
+   "full": "Richard Dawkins",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Evolutionary biologist whose The Selfish Gene introduced the gene's-eye view of evolution and coined the meme; the sandbox cites Dennett's use of memes as units of cultural selection.",
+   "links": [
+    "https://richarddawkins.net/",
+    "https://en.wikipedia.org/wiki/Richard_Dawkins"
+   ],
+   "tokens": [
+    "Dawkins"
+   ]
+  },
+  {
+   "slug": "friedman",
+   "name": "Friedman",
+   "full": "Thomas L. Friedman",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "New York Times columnist whose Thank You for Being Late frames the present as three simultaneous accelerations, the market, Mother Nature and Moore's law, outrunning the institutions meant to absorb them.",
+   "links": [
+    "https://www.thomaslfriedman.com/",
+    "https://en.wikipedia.org/wiki/Thomas_Friedman"
+   ],
+   "tokens": [
+    "Friedman"
+   ],
+   "note": "Identified from cell r264c3 ('friedman 3 accelerations'): Thomas, not Milton."
+  },
+  {
+   "slug": "godel",
+   "name": "Godel",
+   "full": "Kurt Godel (1906-1978)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Logician whose incompleteness theorems showed that any consistent formal system rich enough for arithmetic contains truths it cannot prove, the result Hoffman and Penrose both lean on in the sandbox.",
+   "links": [
+    "https://plato.stanford.edu/entries/goedel/"
+   ],
+   "tokens": [
+    "Gödel",
+    "Godel"
+   ]
+  },
+  {
+   "slug": "ledoux",
+   "name": "LeDoux",
+   "full": "Joseph LeDoux",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "NYU neuroscientist known for mapping the fear circuitry of the amygdala, and author of The Deep History of Ourselves, a four-billion-year account of how behaviour, and only very late consciousness, evolved.",
+   "links": [
+    "https://www.joseph-ledoux.com/",
+    "https://www.cns.nyu.edu/ledoux/",
+    "https://en.wikipedia.org/wiki/Joseph_E._LeDoux"
+   ],
+   "tokens": [
+    "LeDoux"
+   ]
+  },
+  {
+   "slug": "mcfadden",
+   "name": "McFadden",
+   "full": "Johnjoe McFadden",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Molecular geneticist at the University of Surrey whose conscious electromagnetic information (cemi) field theory locates consciousness in the brain's electromagnetic field rather than in its neurons.",
+   "links": [
+    "https://www.johnjoemcfadden.co.uk/",
+    "https://en.wikipedia.org/wiki/Johnjoe_McFadden"
+   ],
+   "tokens": [
+    "McFadden"
+   ]
+  },
+  {
+   "slug": "penrose",
+   "name": "Penrose",
+   "full": "Roger Penrose",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Mathematical physicist, Nobel laureate (2020) for the theory of black holes, who argues in The Emperor's New Mind that understanding is non-computational and, with Stuart Hameroff, that consciousness arises from orchestrated quantum reduction in microtubules.",
+   "links": [
+    "https://www.maths.ox.ac.uk/people/roger.penrose",
+    "https://en.wikipedia.org/wiki/Roger_Penrose"
+   ],
+   "tokens": [
+    "Penrose"
+   ]
+  },
+  {
+   "slug": "porter",
+   "name": "Porter",
+   "full": "Jean Porter",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Moral theologian at the University of Notre Dame (Nature as Reason) who grounds natural law in human inclinations toward a blended good rather than in self-evident first precepts, the reading the sandbox weighs against MacIntyre.",
+   "links": [
+    "https://theology.nd.edu/people/jean-porter/",
+    "https://en.wikipedia.org/wiki/Jean_Porter"
+   ],
+   "tokens": [
+    "Porter"
+   ],
+   "note": "Identified from r38c4-5 ('Porter, p. 81 IDM'): IDM = Intractable Disputes about the Natural Law (Notre Dame Press, 2009)."
+  },
+  {
+   "slug": "ratzinger",
+   "name": "Ratzinger",
+   "full": "Joseph Ratzinger, Pope Benedict XVI (1927-2022)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Theologian and pope (2005-2013) whose questions about why the Church's natural-law claims fail to win rational agreement in modern societies, as Gerald McKenny lists them in Intractable Disputes, are the ones the sandbox sets out to answer.",
+   "links": [
+    "https://www.vatican.va/content/benedict-xvi/en.html",
+    "https://en.wikipedia.org/wiki/Pope_Benedict_XVI"
+   ],
+   "tokens": [
+    "Benedict",
+    "Ratzinger"
+   ]
+  },
+  {
+   "slug": "rovelli",
+   "name": "Rovelli",
+   "full": "Carlo Rovelli",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Theoretical physicist, a founder of loop quantum gravity, whose The Order of Time argues that time as we experience it is an emergent, perspectival effect rather than a fundamental feature of the world, so that neither eternalism nor presentism is quite right.",
+   "links": [
+    "https://www.cpt.univ-mrs.fr/~rovelli/",
+    "https://en.wikipedia.org/wiki/Carlo_Rovelli"
+   ],
+   "tokens": [
+    "Rovelli"
+   ]
+  },
+  {
+   "slug": "susskind",
+   "name": "Susskind",
+   "full": "Leonard Susskind",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Stanford theoretical physicist, a father of string theory and of the holographic principle, whose ER=EPR conjecture with Maldacena ties entanglement to wormholes; the sandbox summarizes his Mindscape conversation on the meeting of quantum gravity and quantum computing.",
+   "links": [
+    "https://physics.stanford.edu/people/leonard-susskind",
+    "https://en.wikipedia.org/wiki/Leonard_Susskind"
+   ],
+   "tokens": [
+    "Susskind"
+   ]
+  },
+  {
+   "slug": "augustine",
+   "name": "Augustine",
+   "full": "Augustine of Hippo (354-430)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Bishop of Hippo whose 'love, and do what you will' and whose Sermon 169 ('God who made you without you will not save you without you', as the Catechism cites it) the sandbox quotes on freedom and grace.",
+   "links": [
+    "https://plato.stanford.edu/entries/augustine/"
+   ],
+   "tokens": [
+    "Augustine"
+   ]
+  },
+  {
+   "slug": "bloom",
+   "name": "Bloom",
+   "full": "Allan Bloom (1930-1992)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Political philosopher whose The Closing of the American Mind (1987) argued that relativism and popular culture had hollowed out liberal education; the sandbox quotes his chapter on music. Not Howard Bloom, who has his own entry.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Allan_Bloom"
+   ],
+   "tokens": [
+    "Bloom"
+   ]
+  },
+  {
+   "slug": "bostrom",
+   "name": "Bostrom",
+   "full": "Nick Bostrom",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Philosopher, founder of Oxford's Future of Humanity Institute, whose Superintelligence framed the AI control problem and the idea of value loading, solving alignment in advance, that the sandbox records from his 2015 TED talk.",
+   "links": [
+    "https://nickbostrom.com/",
+    "https://en.wikipedia.org/wiki/Nick_Bostrom"
+   ],
+   "tokens": [
+    "Bostrom"
+   ]
+  },
+  {
+   "slug": "chang",
+   "name": "Chang",
+   "full": "Acer Y. C. Chang",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Consciousness researcher, lead author of the information closure theory of consciousness (Frontiers in Psychology, 2020), which identifies conscious processes with information exchange that closes on itself at a given scale, and which the sandbox hopes might join IIT and global-workspace accounts.",
+   "links": [
+    "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01504/full"
+   ],
+   "tokens": [
+    "Chang"
+   ],
+   "note": "No personal or institutional page found; the link is the paper the cell cites. Affiliation not stated in the blurb because it could not be confirmed."
+  },
+  {
+   "slug": "crick",
+   "name": "Crick",
+   "full": "Francis Crick (1916-2004)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Co-discoverer of the structure of DNA who spent his later decades at the Salk Institute on the neural correlates of consciousness with Christof Koch; The Astonishing Hypothesis is the source of the 'nothing but a pack of neurons' line the sandbox quotes.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Francis_Crick"
+   ],
+   "tokens": [
+    "Crick"
+   ]
+  },
+  {
+   "slug": "fridman",
+   "name": "Fridman",
+   "full": "Lex Fridman",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "MIT-affiliated AI researcher whose long-form podcast interviews with scientists and technologists are one of the sandbox's recurring sources (Chollet, McCorduck).",
+   "links": [
+    "https://lexfridman.com/",
+    "https://en.wikipedia.org/wiki/Lex_Fridman"
+   ],
+   "tokens": [
+    "Fridman"
+   ]
+  },
+  {
+   "slug": "harris",
+   "name": "Harris",
+   "full": "Sam Harris",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Neuroscientist, author (Waking Up, Free Will) and host of the Making Sense podcast; a critic of religion and of what he calls woo who nonetheless defends contemplative practice on secular grounds. Annaka Harris, his spouse, has her own entry.",
+   "links": [
+    "https://www.samharris.org/",
+    "https://en.wikipedia.org/wiki/Sam_Harris"
+   ],
+   "tokens": [
+    "Harris"
+   ]
+  },
+  {
+   "slug": "julian-of-norwich",
+   "name": "Julian of Norwich",
+   "full": "Julian of Norwich (c. 1342-after 1416)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "English anchoress and mystic whose Revelations of Divine Love, with its 'love was his meaning', is the earliest surviving book in English known to be by a woman; the sandbox reads her through Richard Rohr and the Gutenberg text.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Julian_of_Norwich"
+   ],
+   "tokens": [
+    "Julian"
+   ],
+   "note": "Cell r416c3 gives her dates as 1342-1442?; the second is not right, she is last attested alive in 1416."
+  },
+  {
+   "slug": "mccorduck",
+   "name": "McCorduck",
+   "full": "Pamela McCorduck (1940-2021)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Writer whose Machines Who Think (1979) was the first history of artificial intelligence, told from inside the field; the sandbox notes her interview with Lex Fridman.",
+   "links": [
+    "https://www.pamelamccorduck.com/",
+    "https://en.wikipedia.org/wiki/Pamela_McCorduck"
+   ],
+   "tokens": [
+    "McCorduck"
+   ]
+  },
+  {
+   "slug": "nicolelis",
+   "name": "Nicolelis",
+   "full": "Miguel Nicolelis",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Brazilian neuroscientist, long at Duke, a pioneer of brain-machine interfaces and of brain-nets that link several brains to one task; a member of the Pontifical Academy of Sciences.",
+   "links": [
+    "https://www.nicolelislab.net/",
+    "https://en.wikipedia.org/wiki/Miguel_Nicolelis"
+   ],
+   "tokens": [
+    "Nicolelis"
+   ],
+   "note": "nicolelislab.net answers 200 but renders entirely by script (no text), so the checker cannot see his name there; Wikipedia used."
+  },
+  {
+   "slug": "thich-nhat-hanh",
+   "name": "Thich Nhat Hanh",
+   "full": "Thich Nhat Hanh (1926-2022)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Vietnamese Zen master, peace activist and founder of Plum Village, who brought mindfulness and engaged Buddhism to the West and whose friendship with Martin Luther King Jr. grew out of his work against the Vietnam War; the sandbox reads him through Richard Rohr.",
+   "links": [
+    "https://plumvillage.org/about/thich-nhat-hanh",
+    "https://en.wikipedia.org/wiki/Th%C3%ADch_Nh%E1%BA%A5t_H%E1%BA%A1nh"
+   ],
+   "tokens": [
+    "Nhat Hanh",
+    "Nhất Hạnh"
+   ]
+  },
+  {
+   "slug": "annaka-harris",
+   "name": "Annaka Harris",
+   "full": "Annaka Harris",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Author of Conscious: A Brief Guide to the Fundamental Mystery of the Mind, who treats the felt self and free will as illusions while taking the hard problem, and panpsychist answers to it, seriously.",
+   "links": [
+    "https://annakaharris.com/",
+    "https://en.wikipedia.org/wiki/Annaka_Harris"
+   ],
+   "tokens": [
+    "Annaka"
+   ]
+  },
+  {
+   "slug": "bohr",
+   "name": "Bohr",
+   "full": "Niels Bohr (1885-1962)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Danish physicist whose Copenhagen interpretation made the question asked part of what quantum mechanics describes, the lineage from Bohr through Wheeler to Feynman that the sandbox traces, and the target of the 'century of sloppiness' critique it also records.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Niels_Bohr"
+   ],
+   "tokens": [
+    "Bohr"
+   ]
+  },
+  {
+   "slug": "chalmers",
+   "name": "Chalmers",
+   "full": "David Chalmers",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Philosopher at NYU who named the hard problem of consciousness and defends taking experience as fundamental; Reality+ extends the argument to virtual worlds.",
+   "links": [
+    "https://consc.net/",
+    "https://en.wikipedia.org/wiki/David_Chalmers"
+   ],
+   "tokens": [
+    "Chalmers"
+   ]
+  },
+  {
+   "slug": "chopra",
+   "name": "Chopra",
+   "full": "Deepak Chopra",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Physician and author of many books on mind-body medicine and consciousness, whose vocabulary Sam Harris dismisses as woo and whom the sandbox, on reflection, finds 'not so incoherent after all'.",
+   "links": [
+    "https://www.deepakchopra.com/",
+    "https://en.wikipedia.org/wiki/Deepak_Chopra"
+   ],
+   "tokens": [
+    "Chopra"
+   ]
+  },
+  {
+   "slug": "flannery",
+   "name": "Flannery",
+   "full": "Kevin L. Flannery, S.J.",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Jesuit philosopher at the Pontifical Gregorian University, a scholar of Aristotle and Aquinas, whose essay in Intractable Disputes about the Natural Law argues that the inadequacy of bad acts need not be apparent to those who perform them; MacIntyre replies in the same volume.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Kevin_Flannery"
+   ],
+   "tokens": [
+    "Flannery"
+   ],
+   "note": "Identified from r50c4-5 (IDM p. 335). Wikipedia article confirmed to be the Jesuit at the Gregorian."
+  },
+  {
+   "slug": "francis",
+   "name": "Francis",
+   "full": "Pope Francis",
+   "kind": "historical",
+   "source": "drafted",
+   "same_as": "pope-francis",
+   "blurb": "The same man as the 'Pope Francis' entry: cells r514c4 and r514c10 name him bare. See that entry.",
+   "links": [
+    "https://www.vatican.va/content/francesco/en.html",
+    "https://en.wikipedia.org/wiki/Pope_Francis"
+   ],
+   "tokens": [
+    "Francis",
+    "Francesco"
+   ],
+   "note": "Duplicate of pope-francis in the index; the index itself keys on the surface name, so both rows get the entry."
+  },
+  {
+   "slug": "hinton",
+   "name": "Hinton",
+   "full": "Geoffrey Hinton",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Cognitive psychologist and computer scientist who with colleagues made backpropagation practical in 1986 and whose deep networks founded the current era of machine learning; Nobel laureate in Physics (2024) and, since leaving Google in 2023, a public voice on AI risk.",
+   "links": [
+    "https://www.cs.toronto.edu/~hinton/",
+    "https://en.wikipedia.org/wiki/Geoffrey_Hinton"
+   ],
+   "tokens": [
+    "Hinton"
+   ]
+  },
+  {
+   "slug": "maldacena",
+   "name": "Maldacena",
+   "full": "Juan Maldacena",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Theoretical physicist at the Institute for Advanced Study whose AdS/CFT correspondence (1997) made the holographic principle concrete, and who proposed ER=EPR with Susskind.",
+   "links": [
+    "https://www.ias.edu/scholars/juan-maldacena",
+    "https://www.ias.edu/sns/maldacena",
+    "https://www.sns.ias.edu/malda",
+    "https://en.wikipedia.org/wiki/Juan_Mart%C3%ADn_Maldacena"
+   ],
+   "tokens": [
+    "Maldacena"
+   ]
+  },
+  {
+   "slug": "philpott",
+   "name": "Philpott",
+   "full": "Daniel Philpott",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Political scientist at the University of Notre Dame working on religion, reconciliation and political forgiveness; his essay in Intractable Disputes about the Natural Law is the sandbox's source on Charles Taylor and overlapping consensus.",
+   "links": [
+    "https://politicalscience.nd.edu/people/daniel-philpott/",
+    "https://en.wikipedia.org/wiki/Daniel_Philpott"
+   ],
+   "tokens": [
+    "Philpott"
+   ]
+  },
+  {
+   "slug": "simard",
+   "name": "Simard",
+   "full": "Suzanne Simard",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Forest ecologist at the University of British Columbia whose experiments showed trees exchanging carbon and signals through mycorrhizal networks, the 'mother tree'; author of Finding the Mother Tree.",
+   "links": [
+    "https://suzannesimard.com/",
+    "https://mothertreeproject.org/",
+    "https://en.wikipedia.org/wiki/Suzanne_Simard"
+   ],
+   "tokens": [
+    "Simard"
+   ]
+  },
+  {
+   "slug": "socrates",
+   "name": "Socrates",
+   "full": "Socrates (c. 470-399 BC)",
+   "kind": "historical",
+   "source": "drafted",
+   "blurb": "Athenian philosopher known only through others' writing, above all Plato's; the sandbox invokes him as the standard of wisdom against which apparent wins are judged, and separately reuses the name as an acronym (S.O.C.R.A.T.E.S.) for a proposed engagement space.",
+   "links": [
+    "https://plato.stanford.edu/entries/socrates/"
+   ],
+   "tokens": [
+    "Socrates"
+   ],
+   "note": "Cells r489c13-14 are the acronym, not the man; the index counts them together."
+  },
+  {
+   "slug": "solms",
+   "name": "Solms",
+   "full": "Mark Solms",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "South African neuropsychologist and psychoanalyst whose The Hidden Spring locates the source of consciousness in the affective brainstem rather than the cortex, and who has formalized the claim with Karl Friston's free-energy framework.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Mark_Solms"
+   ],
+   "tokens": [
+    "Solms"
+   ],
+   "note": "No maintained personal page found; his University of Cape Town page moves."
+  },
+  {
+   "slug": "vopson",
+   "name": "Vopson",
+   "full": "Melvin Vopson",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Physicist at the University of Portsmouth who proposed the mass-energy-information equivalence principle, that information is a fifth state of matter with a measurable mass, and the two 'information conjectures' the sandbox summarizes.",
+   "links": [
+    "https://www.port.ac.uk/about-us/structure-and-governance/our-people/our-staff/melvin-vopson",
+    "https://en.wikipedia.org/wiki/Melvin_Vopson"
+   ],
+   "tokens": [
+    "Vopson"
+   ]
+  },
+  {
+   "slug": "wildcat",
+   "name": "Wildcat",
+   "full": "Daniel Wildcat",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Yuchi member of the Muscogee Nation and professor at Haskell Indian Nations University, author of Red Alert!, who defines indigenuity as solving present problems from Earth-based, place-specific Indigenous knowledge, the (3C/E)=T formula the sandbox records.",
+   "links": [
+    "https://en.wikipedia.org/wiki/Daniel_Wildcat"
+   ],
+   "tokens": [
+    "Wildcat"
+   ],
+   "note": "No passing link found: no Wikipedia article at either name form, and no stable Haskell faculty page located. Ships without a link unless Tom supplies one."
+  },
+  {
+   "slug": "wilkinson",
+   "name": "Wilkinson",
+   "full": "Will Wilkinson",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Political writer, formerly of the Niskanen Center, whose analysis of the density divide, partisan polarization as an urban-rural sorting, is the Mindscape conversation the sandbox summarizes.",
+   "links": [
+    "https://www.willwilkinson.net/",
+    "https://en.wikipedia.org/wiki/Will_Wilkinson"
+   ],
+   "tokens": [
+    "Wilkinson"
+   ],
+   "note": "willwilkinson.net is his own site (redirects to a WordPress host); Wikipedia has no article on him."
+  },
+  {
+   "slug": "william-miller",
+   "name": "William Miller",
+   "full": "William B. Miller Jr.",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Physician and evolutionary biologist, author of Bioverse and a proponent of cognition-based evolution, who argues that every cell is intelligent and aware and that organisms are collective intelligences built from them.",
+   "links": [
+    "https://www.williambmillerjr.com/",
+    "https://en.wikipedia.org/wiki/William_B._Miller_Jr."
+   ],
+   "tokens": [
+    "Miller"
+   ],
+   "note": "Cell r560c3 says 'William P Miller'; Bioverse (2023) is by William B. Miller Jr. No personal site reachable and no Wikipedia article; ships without a link unless Tom supplies one."
+  },
+  {
+   "slug": "harari",
+   "name": "Harari",
+   "full": "Yuval Noah Harari",
+   "kind": "living",
+   "source": "drafted",
+   "blurb": "Historian at the Hebrew University of Jerusalem whose Sapiens, Homo Deus and Nexus read human history as the history of shared fictions and, latterly, of information networks.",
+   "links": [
+    "https://www.ynharari.com/",
+    "https://en.wikipedia.org/wiki/Yuval_Noah_Harari"
+   ],
+   "tokens": [
+    "Harari"
+   ]
+  }
+ ]
+}
