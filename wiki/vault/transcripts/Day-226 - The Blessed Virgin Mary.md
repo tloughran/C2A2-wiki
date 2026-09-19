@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-226 - The Blessed Virgin Mary - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/226, pars/III, q/27 q/28]
-last_qc_at: "2026-09-10T04:24:17"
+last_qc_at: "2026-09-17T22:32:47"
 last_qc_outcome: "pass"
 ---
 

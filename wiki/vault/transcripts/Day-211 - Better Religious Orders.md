@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-211 - Better Religious Orders - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/211, pars/II, q/187 q/188]
-last_qc_at: "2026-08-04T12:27:11"
+last_qc_at: "2026-09-18T08:35:23"
 last_qc_outcome: "pass"
 ---
 

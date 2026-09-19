@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-165 - Idolatry and Divination - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-11T10:31:05"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T14:37:08"
+last_qc_outcome: "rewrote"
 tags: [summa, day/165, pars/II-II, q/94–95]
 ---
 
@@ -24,7 +24,7 @@ tags: [summa, day/165, pars/II-II, q/94–95]
 
 Austin Habash's Day 165 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.94–95.
 
-> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); theologia → Theologiae.
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); theologia → Theologiae. Audit lines added by QC 2026-09-18, fixes present but unlogged (all ASR mishearings with exact antecedents): auggury / augguries → augury / auguries; sordilage → sortilege; forno / fornowledge → foreknow / foreknowledge; barsabis → Barsabbas; matias → Matthias (×2); idoltor → idolater.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 

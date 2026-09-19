@@ -16,14 +16,15 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-218 - Christ's Infused Knowledge - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/218, pars/III, q/11 q/12]
-last_qc_at: "2026-09-11T04:24:50"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T08:36:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 218 — Christ's Infused Knowledge
 
 > Episode: <https://www.youtube.com/watch?v=wv99ETv9k3I>
 > Summa reference: *Tertia Pars (III), Q.11-12*
+> Typo cleanup (QC 2026-09-18): fantasms → phantasms (x4 in the transcript body; the ASR reads *phantasms* in all four places and the render had regressed them)
 
 Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul of Christ — whether by it He knew all things, whether He could use it without turning to phantasms, whether it was discursive, and whether it was distinguished by diverse habits) and III Q.12 (the acquired or empirical knowledge of Christ's soul — whether He knew all things by it, whether He advanced in it, and whether He learned from men or angels). Austin Habash contrasts God's single, sweeping self-knowledge (in knowing Himself He knows all else) with our 'broken up' knowledge of the world acquired piecemeal.
 
@@ -53,9 +54,9 @@ Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul
 
 [01:43] grace had the fullness of these gifts then through these divine gifts and the infused knowledge which comes through them we can say that Christ did know all
 
-[01:53] things. Article two whether Christ could use this knowledge by turning to fantasms. This is how we men and women are able to think in this life. We must
+[01:53] things. Article two whether Christ could use this knowledge by turning to phantasms. This is how we men and women are able to think in this life. We must
 
-[02:03] have recourse to the fantasms. Meaning even though one may already know what a dog is, still at any moment one would like to think about dogs about something
+[02:03] have recourse to the phantasms. Meaning even though one may already know what a dog is, still at any moment one would like to think about dogs about something
 
 [02:15] they already know. They will either have to imagine a mental picture of a dog or a mental word which represents dogs. Now Christ by knowing substances which are
 
@@ -63,7 +64,7 @@ Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul
 
 [02:38] which one could abstract their form from. Since Christ is able to think about angels as they are, he had to be able to use knowledge without having
 
-[02:48] recourse to the fantasms which is our response to this article. Article three, whether this knowledge is collative. Christ knowledge could be discursive or
+[02:48] recourse to the phantasms which is our response to this article. Article three, whether this knowledge is collative. Christ knowledge could be discursive or
 
 [02:58] collative by moving from one point to another, moving from a known effect to its cause or from premises to conclusions. He could do this because
 
@@ -137,7 +138,7 @@ Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul
 
 [08:34] discovering something he didn't already know. In Aquinas's words, it follows from this that in the soul of Christ, there was a habit of knowledge which
 
-[08:43] could increase by this abstraction of species in as much as the active intellect after abstracting the first intelligible species from fantasms could
+[08:43] could increase by this abstraction of species in as much as the active intellect after abstracting the first intelligible species from phantasms could
 
 [08:53] abstract others and others again. Article three, whether Christ learned anything from man. In a word from St. Thomas, it is written, "Behold, I have
 

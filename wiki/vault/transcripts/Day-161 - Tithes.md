@@ -15,8 +15,8 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-161 - Tithes - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-11T08:24:27"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T14:36:38"
+last_qc_outcome: "rewrote"
 tags: [summa, day/161, pars/II-II, q/86–87]
 ---
 
@@ -24,7 +24,7 @@ tags: [summa, day/161, pars/II-II, q/86–87]
 
 Austin Habash's Day 161 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.86–87.
 
-> Typo cleanup (QC 2026-06-11): Summa nira -> Summa in a Year (podcast name, both intro occurrences; ASR garble, fresh ASR reads "Sumanir"); theologia -> Theologiae.
+> Typo cleanup (QC 2026-06-11): Summa nira -> Summa in a Year (podcast name, both intro occurrences; ASR garble, fresh ASR reads "Sumanir"); theologia -> Theologiae. Audit line added by QC 2026-09-18, fix present but unlogged: corbin -> corban (Mark 7 term, ASR mishearing).
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 

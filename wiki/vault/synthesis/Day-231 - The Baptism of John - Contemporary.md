@@ -3,21 +3,21 @@ day: 231
 title: The Baptism of John (Contemporary)
 pairs_with: "[[Day-231 - The Baptism of John]]"
 length_target_words: 2200
-length_actual_words: 1349
-length_ratio_to_target: 0.613
-length_note: "Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated. VERIFIER ANSWER, 2026-09-11: read fresh and CONFIRMED complete, not truncated — Frame/Problem/Resource/Solution/central-theme/Bridges/closer all present, survives-reframes-evidence all explicit, every id verified at the register. Layout-aware recount 1366 against the declared 1349 (+17, heading-convention scale), so the note is NOT self-certifying from an understated count. No repair made; no words added. BUT the ratio is 0.621, outside +-25%, which is a Step-4 escalation trigger reading 'tier may be wrong'. Tier tested and it is NOT wrong: the paired transcript is 2082 cleaned words, which is medium (2000-3500) by the letter of the policy. It sits 82 words — 4.1 percent — above the short/medium boundary, and crossing that boundary raises the target from 1500 to 2200, a 46.7 percent step. Measured against the short target this file reads 0.911, comfortably in band. The tier function is a step, and this file is a boundary case; the gate is firing on the step, not on a defect. ESCALATED to Tom in the QC log as a gate-design question, not as a fault in this file."
+length_actual_words: 1401
+length_ratio_to_target: 0.637
+length_note: "RECOUNT 2026-09-18: 1401 / 0.637 after this pass (+52 words, all apparatus: register grades stated on the five Bridges bullets, which had carried kind words only). Counting boundary is the regex over letters and apostrophes applied to the body after the frontmatter block, with the auto-linked Related-records footer and bare horizontal-rule separator lines dropped. Still 0.934 against the short target; the 2026-09-11 tier-boundary escalation stands and is not re-raised. Length-light vs the 2200 medium-tier guideline but a COMPLETE PRS synthesis (full Frame/Problem/Resource/Solution/central-theme/Bridges/closer, no padding); accepted under the flexible length policy (substantive integrity > word count). Flag for verifier as length-light-but-complete, not truncated. VERIFIER ANSWER, 2026-09-11: read fresh and CONFIRMED complete, not truncated — Frame/Problem/Resource/Solution/central-theme/Bridges/closer all present, survives-reframes-evidence all explicit, every id verified at the register. Layout-aware recount 1366 against the declared 1349 (+17, heading-convention scale), so the note is NOT self-certifying from an understated count. No repair made; no words added. BUT the ratio is 0.621, outside +-25%, which is a Step-4 escalation trigger reading 'tier may be wrong'. Tier tested and it is NOT wrong: the paired transcript is 2082 cleaned words, which is medium (2000-3500) by the letter of the policy. It sits 82 words — 4.1 percent — above the short/medium boundary, and crossing that boundary raises the target from 1500 to 2200, a 46.7 percent step. Measured against the short target this file reads 0.911, comfortably in band. The tier function is a step, and this file is a boundary case; the gate is firing on the step, not on a defect. ESCALATED to Tom in the QC log as a gate-design question, not as a fault in this file."
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-03 inaugurated eschatology; PRS-05 salvation as incorporation; PRS-02 faithful improvisation)"
-  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder; PRS-03 the Universal Christ)"
+  - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder, High. PRS-03 withdrawn from this line 2026-09-18: it was listed with no body claim attached, and its record is a warrant for multi-tradition inquiry rather than the cosmic-scope claim its Label suggests)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-06 multi-agent coherence via mutual modeling)"
   - "master/cross_program_index.md (CROSS-004 second-first-language competence — Stump/McGilchrist/Fredrickson)"
 evidence_strength_summary: "John's baptism as readiness-formation ~ prior-updating under active inference (Friston PRS-04/PRS-06) = speculative-formal (the mapping is structural, not measured); the forerunner office at the hinge of the ages = Wright's historical-Jesus scholarship (strong historiographically) + inaugurated eschatology (theological); repentance-in-the-desert as the disorder phase = Rohr's contemplative pattern (theological/phenomenological); circumcision and the rites as effective-through-faith = Aquinas's own claim, carried theologically; 'He must increase, I must decrease' as the self-limiting perspective = central-theme structural fit (strong as fit, speculative as metaphysics)."
 mind_first_reframe: "Preparation is read as the installation of readiness in limited agents — updating the priors of agents who cannot yet see what they are being readied for — and the forerunner as the agent whose perfection consists in knowing his own limitation and ceding to the one who perceives more."
 central_theme_thread: "John the Baptist is the cleanest scriptural figure of the central claim: a perspective that knows itself partial ('I am not the Christ'), computes readiness in others with the resources of his desert, and decreases so the fuller perspective can increase — guidance from those who perceive more of the whole, enacted as an office."
 tags: [synthesis, day/231, theme/preparation-as-readiness-formation]
-last_qc_at: "2026-09-11T04:25:47"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T10:34:05"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 231 — Contemporary Parallel: The Forerunner and the Formation of Readiness
@@ -56,11 +56,11 @@ John the Baptist may be the cleanest scriptural figure of the central claim this
 
 ## Bridges
 
-- **PRS-03, Wright-tradition wiki** (inaugurated eschatology) — John at the hinge of the ages; the decisive thing arrives into a prepared-but-incomplete moment. Evidence: theological, resting on strong historical scholarship.
-- **PRS-04 + PRS-06, Tom's PRS-form record of the Friston program** (active modeler; mutual modeling) — "accustoming them to such a practice" as prior-installation; readiness as computational achievement. Evidence: formal-speculative.
-- **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the desert baptism of repentance as institutionalized disorder phase, load-bearing but not final. Evidence: theological/phenomenological.
-- **PRS-05, Wright-tradition wiki** (salvation as incorporation) — John gathers a people in order to hand them over; salvation-as-inclusion is enacted in the handoff. Evidence: theological.
-- **CROSS-004, master index** (second-first-language competence) — what John installs is receiving-competence: the capacities a perspective needs before a new tradition's content can land. Evidence: convergent-speculative across three programs.
+- **PRS-03, Wright-tradition wiki** (inaugurated eschatology) — John at the hinge of the ages; the decisive thing arrives into a prepared-but-incomplete moment. Evidence: theological, resting on strong historical scholarship; record graded **High**.
+- **PRS-04 + PRS-06, Tom's PRS-form record of the Friston program** (active modeler; mutual modeling) — "accustoming them to such a practice" as prior-installation; readiness as computational achievement. Evidence: formal-speculative; both records are Label-marked *(Implicit)* and graded **Medium** — the free-energy principle extended past the scale at which it was established, not a result at this scale.
+- **PRS-02, Rohr-tradition wiki** (order-disorder-reorder) — the desert baptism of repentance as institutionalized disorder phase, load-bearing but not final. Evidence: theological/phenomenological; record graded **High**.
+- **PRS-05, Wright-tradition wiki** (salvation as incorporation) — John gathers a people in order to hand them over; salvation-as-inclusion is enacted in the handoff. Evidence: theological; record graded **High**.
+- **CROSS-004, master index** (second-first-language competence) — what John installs is receiving-competence: the capacities a perspective needs before a new tradition's content can land. Evidence: convergent-speculative across three programs; the index entry's own nature of connection is "convergence," status Active, not a confirmed bridge.
 
 ## Where this leaves us
 

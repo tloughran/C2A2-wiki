@@ -3,23 +3,23 @@ day: 236
 title: Efficacy of the Passion (Contemporary)
 pairs_with: "[[Day-236 - Efficacy of the Passion]]"
 length_target_words: 1500
-length_actual_words: 1670
-length_ratio_to_target: 1.113
-length_note: "Over ±10% only because of reviewer citation repair (2026-08-25): the barrier-removal claim was split off PRS-03 onto its true home PRS-49 with its evidence grade stated, and a frontmatter-declared but body-uncited Rohr source was given a real bridge. Body-recount verified at 1670; no prose was added for its own sake."
+length_actual_words: 1736
+length_ratio_to_target: 1.157
+length_note: "Over ±10% only because of reviewer citation repair (2026-08-25): the barrier-removal claim was split off PRS-03 onto its true home PRS-49 with its evidence grade stated, and a frontmatter-declared but body-uncited Rohr source was given a real bridge. Body-recount verified at 1670; no prose was added for its own sake. QC 2026-09-18: the id-less Hoffman bullet and sources line anchored to PRS-01 (High) with PRS-42 (Speculative) named for the not-nothing-is-real clarification; body recount 1736, ratio 1.157, counted after the closing frontmatter line to end of file (no auto-link footer on this day), regex letters-and-apostrophes. Still inside +25%; the overshoot is apparatus."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 suffering and divine permission / union as final cause — the record actually cited in the body at Q.48 a.2. PRS-08, suffering reframed through narrative phenomenology, was consulted as the nearest neighbour and is NOT cited in the body; it is listed as read, not as used — disclosed 2026-09-03 rather than forced into a bridge.)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
   - "traditions/levin/prs_triplets.md (PRS-03 morphological attractor formalism, Conf High; PRS-49 HCN2 electroceutical repair despite persisting mutation, Conf High; PRS-09 principled framework for cognitive attribution across scales, Conf High)"
-  - "traditions/hoffman/wiki.md (interface theory — action rendered at the interface)"
+  - "traditions/hoffman/prs_triplets.md (PRS-01 conscious realism, matter as perceptual interface, High — action rendered at the interface; PRS-42 the interface is not 'nothing is real', Speculative, added 2026-09-10)"
   - "traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
   - "master/cross_program_index.md (Wright dispatch PROP-2026-05-31-002 — incorporation as the covenanted unity frame)"
 evidence_strength_summary: "Instrumental causality as nested agency = structural fit with multi-scale competency frameworks (Levin PRS-09, formal/empirical in-domain), speculative as theology; merit-from-conception with obstacles-removed = attractor (Levin PRS-03, formal) plus barrier-removal (Levin PRS-49, empirical in-domain), structural analogy only; atonement as union (Stump PRS-05) = serious philosophy, theological in force; the rulers' culpable partial knowledge = textual, with a perspective-limitation reading that is the project's own; the passion's historicity = maximally secure; satisfaction/merit machinery = theological throughout."
 mind_first_reframe: "The passion's efficiency is read as nested agency all the way down: the principal cause works through an instrument that is itself a full agent, and salvation operates not by adding something missing but by removing the obstacles that block limited perspectives from an attractor already established — union already merited, blockage locally cleared."
 central_theme_thread: "Q.47's agents — Judas, the rulers, Pilate, the Father, Christ's own two wills — are perspectives at different scales acting in one event without collapsing into each other; the deicide verdict turns on what each limited perspective could and could not see, and culpability tracks the limitation each agent chose to keep."
 tags: [synthesis, day/236, theme/nested-agency]
-last_qc_at: "2026-09-11T00:25:03"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T06:54:16"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 236 — Contemporary Parallel: How the One Act Works Through Many Agents
@@ -42,7 +42,7 @@ The analogy earns its keep at Q.48 a.1, the article the episode rightly flags as
 
 **Atonement as union.** PRS-05 in the Stump-tradition wiki (suffering permitted as a condition for the deepest union love seeks) supplies the contemporary philosophical reading of Q.48 a.2's definition — atonement as offering what the offended one loves *more* than he detested the offense. On the union account, the superabundance is not arithmetic overpayment but the disclosure of a love that exceeds the breach, which is what makes reunion rather than mere acquittal possible. The Wright-tradition record (PRS-05, salvation as incorporation; the PROP-2026-05-31-002 dispatch) holds the corporate frame ready: those saved are "all those incorporated in him" — Aquinas's own phrase in a.1 — and incorporation is what next day's mystical-body article will make explicit.
 
-**Action at the interface.** The interface program (Hoffman-tradition wiki) gives the reframe a way to say what "instrument of the Godhead" means without puppetry: what acts in spacetime is the rendering of an agent whose reality exceeds the interface. The instrumental humanity is not less real for being instrumental — the stick really moves the stone — but the act's full description lives at more than one level of the stack.
+**Action at the interface.** The interface program (Tom's PRS-form record of Hoffman, PRS-01, conscious realism — matter as perceptual interface, Confidence High) gives the reframe a way to say what "instrument of the Godhead" means without puppetry: what acts in spacetime is the rendering of an agent whose reality exceeds the interface. The instrumental humanity is not less real for being instrumental — the stick really moves the stone — but the act's full description lives at more than one level of the stack.
 
 ## Solution (proposed, speculative)
 
@@ -66,7 +66,7 @@ The central claim holds that conscious agents are individuated by the limitation
 - **PRS-04, Rohr-tradition wiki** (embodied love as epistemology — the body as a site of knowing, Franciscan incarnational theology) — why the passion's efficacy is transacted in a body at all rather than by decree; the obstacle is cleared bodily because bodily is how the love is known. Evidence: theological, Confidence Medium.
 - **PRS-05, Stump-tradition wiki** (suffering and divine permission; union as final cause) — Q.48 a.2 atonement as superabundant disclosure enabling reunion. Evidence: contemporary philosophy, theological in force.
 - **PRS-05, Wright-tradition wiki + PROP-2026-05-31-002 dispatch** (salvation as incorporation) — "all those incorporated in him" as the covenanted-unity frame the efficiency presupposes. Evidence: strong historical-exegetical scholarship.
-- **Hoffman-tradition wiki** (interface theory) — instrumental causality as multi-level act rendered at the interface; the stick really moves the stone. Evidence: speculative metaphysics, consistent with the program.
+- **PRS-01, Hoffman-tradition wiki** (conscious realism — consciousness ontologically primary, matter a perceptual interface; Confidence High) — instrumental causality as multi-level act rendered at the interface; the stick really moves the stone. PRS-42 (Speculative, added 2026-09-10) carries the clarification the stone-and-stick image needs — the interface theory is not the claim that nothing is real; spacetime is how the observer is equipped, not what there is. Evidence: speculative metaphysics, consistent with the program; anchored 2026-09-18, previously cited at the tradition file with no id.
 
 ## Where this leaves us
 

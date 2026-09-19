@@ -15,7 +15,7 @@ fetched_at: 2026-06-02
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-189 - Childish Vice - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-11T08:23:51"
+last_qc_at: "2026-09-18T12:29:27"
 last_qc_outcome: "pass"
 tags: [summa, day/189, pars/II, q/142]
 ---

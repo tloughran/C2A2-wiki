@@ -3,13 +3,13 @@ day: 187
 title: Softness (Contemporary)
 pairs_with: "[[Day-187 - Softness]]"
 length_target_words: 1500
-length_actual_words: 1466
-length_ratio_to_target: 0.977
+length_actual_words: 1533
+length_ratio_to_target: 1.022
 length_tier: short
-length_note: "RESTATED 2026-08-24 (the prior note asserted 0.85x, which this file is no longer at). Body-only recount after the bridge-anchoring pass: 1466 words, ratio 0.977 of short target — INSIDE +/-10pct, so no justification is required and none is claimed. Both vices (Q.138) and the gift of fortitude (Q.139) fully covered."
+length_note: "RESTATED 2026-08-24 (the prior note asserted 0.85x, which this file is no longer at). Body-only recount after the bridge-anchoring pass: 1466 words, ratio 0.977 of short target — INSIDE +/-10pct, so no justification is required and none is claimed. Both vices (Q.138) and the gift of fortitude (Q.139) fully covered. QC 2026-09-18: apparatus only (Friston PRS-04 to PRS-36/PRS-28 repoint with scope stated); recount 1533 body-only, boundary = H1 through the line before the auto-linked footer, frontmatter excluded, regex letters-and-apostrophes; inside ±10%."
 karpathy_wiki_sources:
   - "traditions/fredrickson/wiki.md + prs_triplets.md (PRS-01 isolation/decline; broaden-and-build track record on attentional gating)"
-  - "traditions/friston/wiki.md (PRS-04 organism as active modeler; precision-weighting)"
+  - "traditions/friston/prs_triplets.md (PRS-36 psychopathology as a failure of precision-weighting, High; PRS-28 aberrant precision-weighting, Medium — the precision claim, repointed from PRS-04 at QC 2026-09-18; PRS-04 organism as active modeler, Medium/Implicit, retained only as the general active-inference premise)"
   - "traditions/mcgilchrist/wiki.md (PRS-05 attention as ontological act)"
   - "traditions/stump/prs_triplets.md (PRS-22 seven deadly sins as typology of disordered will — esteem as the good vainglory misorders)"
   - "traditions/wright/prs_triplets.md (PRS-16 integrated pneumatology; PRS-02 faithful improvisation); traditions/rohr/prs_triplets.md (PRS-37 descent as the transition mechanism out of the first half of life, and the register's own claim that it is failing at scale in the modern West, Confidence **Medium**; PRS-16 the disordered loves treated without reducing to 'ego is bad', Confidence **Medium-High** — both are scope-setting for the central-theme paragraph and neither is load-bearing in the Bridges; repointed at QC 2026-09-04 from the stale canonical-works fallback, grades stated at QC 2026-09-11)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Habituation-to-pleasure as runaway precision = forma
 mind_first_reframe: "Softness and pertinacity are the two precision pathologies of a self-regulating agent — under-weighting the goal-prior (yielding to gentle pressure) and over-weighting the self-prior (clinging past reason) — and the gift of fortitude is firmness supplied from beyond the agent's own resources."
 central_theme_thread: "Softness is what it looks like when an individuated agent's perspective collapses to its immediate resources and loses the whole; the cure is not more grit but a gift from one who sees and wills more than the limited frame can — 'fear and trembling' read from the side of our insufficiency."
 tags: [synthesis, day/187, theme/regulatory-failure]
-last_qc_at: "2026-09-11T08:23:37"
+last_qc_at: "2026-09-18T12:29:26"
 last_qc_outcome: "rewrote"
 ---
 
@@ -54,7 +54,7 @@ Softness is what it looks like when an individuated agent's perspective collapse
 
 ## Bridges
 
-- **Habituation-to-pleasure ↔ runaway precision on appetitive priors** — the Friston-tradition wiki, PRS-04. *Why:* gives a mechanism for Aquinas's "custom makes the absence unbearable" without invoking weakness-of-will as a primitive. Evidence: **formal, speculative**.
+- **Habituation-to-pleasure ↔ runaway precision on appetitive priors** — *PRS-36 in `traditions/friston/prs_triplets.md`* (psychopathology as a failure to appropriately weight prediction errors; Confidence High) with *PRS-28* in the same file (aberrant precision-weighting on belief updates, mapped to neuromodulator profiles; Confidence Medium, the record's own line noting the derivation is stated intent rather than published). *Why:* gives a mechanism for Aquinas's "custom makes the absence unbearable" without invoking weakness-of-will as a primitive. *Scope stated:* both records are about precision pathology in general; the appetitive-baseline-drift reading (each indulgence raising the expected baseline) is this commentary's extension and no register entry carries it (searched at 71 Friston records, QC 2026-09-18). Repointed from PRS-04 at QC 2026-09-18 — PRS-04's record is predictive coding as such (organism as active modeler) and carries nothing about precision. Evidence: **formal, speculative**.
 - **Downward spiral ↔ softness** — the Fredrickson-tradition wiki, PRS-01 + broaden-and-build track record. *Why:* the affective mirror of broaden-and-build; narrowing attention erodes durable resources. Evidence: **empirical, medium-high**.
 - **Attention as ontological act ↔ softness as attentional failure** — the McGilchrist-tradition wiki, PRS-05; CROSS-003. *Why:* the soft agent lets the fragment fill the field and loses the whole. Evidence: **phenomenological, medium**.
 - **Vainglory as misvalued attestation ↔ pertinacity** — *PRS-22 in `traditions/stump/prs_triplets.md`* (the seven deadly sins as a structured typology of disordered will, each sin pivoting around a specific real good — *pleasure, esteem, possession* — misordered in object, manner, or measure relative to the agent's final end; Confidence Medium). *Why:* the entry names **esteem** as the real good vainglory misorders, which is precisely this bullet's claim — over-weighting the self-prior is a *relational* distortion of a genuine good, not just a stuck posterior. This is the same anchor Day 070 uses for willed evil, and it holds here for the same reason: the register treats vice as a predictable failure mode of an intellect-will system oriented toward goods that are themselves real. Evidence: **philosophical/theological**; the record carries it at Medium, and this bullet does not upgrade it.

@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-229 - Christ's Conception - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/229, pars/III, q/33 q/34]
-last_qc_at: "2026-09-10T04:25:15"
+last_qc_at: "2026-09-17T22:32:49"
 last_qc_outcome: "pass"
 ---
 

@@ -22,6 +22,8 @@ last_qc_outcome: "pass"
 
 # Day 137 — Schism
 
+> Typo cleanup (audit trail added 2026-09-18 QC; restorations were already present in the body but unlogged): *blamew worthy → blameworthy; vicor → vicar (of Christ)*.
+
 *Questions 38 and 39 of the Secunda Secundae — on contention and on schism. Q.38: contention is contrariety of speech (as discord is contrariety of wills); it is mortal (a.1) when waged against the truth or out of hatred, venial when only immoderate with good intent, praiseworthy when against falsehood out of charity; and it is a daughter of vainglory (a.2), defending one's own opinion by words for the sake of one's own glory. Q.39: schism is a special sin (a.1), distinct from heresy — Augustine: the schismatic holds the same faith and worship yet takes pleasure in disunion, while the heretic holds another faith (hence the Orthodox are reckoned schismatic, not heretical, their orders valid); schism is a *lesser* sin than unbelief (a.2), being opposed to ecclesiastical unity — a participated good, the secondary object of charity (the neighbor) — rather than to God himself, the object of faith; schismatic bishops keep valid orders but lose jurisdiction (a.3, per Pope Urban II); and the fitting punishment is excommunication (a.4).*
 
 ---

@@ -15,8 +15,8 @@ fetched_at: 2026-05-15
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com); cached at /tmp/day074_segments.json
 synthesis: "[[Day-074 - Love - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-11T06:27:54"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T12:29:24"
+last_qc_outcome: "rewrote"
 render_pass: qc-rewrote-2026-05-15
 tags: [summa, day/074, pars/I-II, q/26, q/27, central-theme-load-bearing]
 ---
@@ -27,7 +27,7 @@ tags: [summa, day/074, pars/I-II, q/26, q/27, central-theme-load-bearing]
 > Series: *Summa in a Year* by Austin Habash. Day 74 of 308.
 > Summa reference: *I-II Q.26 + Q.27*
 
-> Typo cleanup (auto from cached ASR): *Suma → Summa; aquinus/aquanus → Aquinas; habish → Habash; sumair/Summa near → Summa; suunde/suun day → Secundae; theologia → Theologiae; dut/dut's → doughnut; sirak → Sirach; rought → wrought; appable/editable → appetible*. The ASR also softens "irascible/concupiscible" to "erasable/concupiscible" — minor mishearings left in prose; central terms restored.
+> Typo cleanup (auto from cached ASR): *Suma → Summa; aquinus/aquanus → Aquinas; habish → Habash; sumair/Summa near → Summa; suunde/suun day → Secundae; theologia → Theologiae; dut/dut's → doughnut; sirak → Sirach; rought → wrought; appable/editable → appetible; Amore → amor; Delio/delion → dilectio; alexio → electio (Latin terms restored, Q.26 a.3; added to the audit trail at QC 2026-09-18)*. The ASR also softens "irascible/concupiscible" to "erasable/concupiscible" — minor mishearings left in prose; central terms restored.
 
 ## Transcript
 

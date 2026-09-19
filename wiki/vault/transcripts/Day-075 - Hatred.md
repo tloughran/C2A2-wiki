@@ -15,8 +15,8 @@ fetched_at: 2026-05-15
 fetch_path: youtube-transcript-api (egress allowlist permits youtube.com); cached at /tmp/day075_segments.json
 synthesis: "[[Day-075 - Hatred - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-11T08:22:46"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T12:29:25"
+last_qc_outcome: "rewrote"
 render_pass: qc-rewrote-2026-05-15
 tags: [summa, day/075, pars/I-II, q/28, q/29]
 ---
@@ -27,7 +27,7 @@ tags: [summa, day/075, pars/I-II, q/28, q/29]
 > Series: *Summa in a Year* by Austin Habash. Day 75 of 308.
 > Summa reference: *I-II Q.28 + Q.29*
 
-> Typo cleanup (auto from cached ASR): *Suma → Summa; aan/aquanus → Aquinas; habish → Habash; suun day → Secundae; theologia → Theologiae; dionisia → Dionysius; repetitive → appetitive (context-restored); ler/lerness → languor; alter suie → alter ipse*. Title-of-the-day note: the original frontmatter inferred Q.29 only; Habash actually covers Q.28 (effects of love) *and* Q.29 (hatred). The transcript is restored to match.
+> Typo cleanup (auto from cached ASR): *Suma → Summa; aan/aquanus → Aquinas; habish → Habash; suun day → Secundae; theologia → Theologiae; dionisia → Dionysius; repetitive → appetitive (context-restored); ler/lerness → languor; alter suie → alter ipse; Lance → glance (Q.29 a.3; added to the audit trail at QC 2026-09-18)*. Title-of-the-day note: the original frontmatter inferred Q.29 only; Habash actually covers Q.28 (effects of love) *and* Q.29 (hatred). The transcript is restored to match.
 
 ## Transcript
 
