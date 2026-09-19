@@ -22162,3 +22162,288 @@ PREMISE-124, then tested in-house: registers identical) and five held with no co
 eighteenth consecutive day (PRESUMPTION-912).*
 
 ---
+
+## 2026-09-18 — Agent 14b end-of-day pass (after 14a)
+
+PRESUMPTION-1034:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That a check's recorded verdict and a check's execution are the same event — so a
+    "no-op" line and a "passed" line can be read interchangeably from the history. The conversation
+    presumed that 09-17's green figure was a measurement. Is that warranted for any green in this
+    scheduler's history?
+  Evidence it was operative: Two runs reasoned "green on 09-17 → something newer broke it," while the
+    same transcript annotates the 09-17 figure "(no-op line)". Neither run treated the annotation as
+    defeating the inference; neither asked when the suite last actually ran.
+  Why it was unstated: too foundational to notice — a status board is built to be read as state.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1509, ASSUMPTION-1510; OPEN-237, OPEN-240.
+  Testability: **testable via literature** — CI/observability work on skipped-or-no-op checks reported in
+    the same field as passes, and on the "last known good" fallacy in regression attribution.
+  Risk if wrong: **High.** Every "unchanged since" and "as recently as" figure in this estate — and the
+    blast-radius estimate for any breakage — is dated from a verdict that may never have run.
+  Status: UNTESTED — **ROUTED to 15a/15b.** PRE-CHECK: `grep -icE "voice-shell|test suite|regression|CI "
+    validated_premises.md` → 14 lines; the nearest is **l.2169** (visual defects survive functional CI),
+    which distinguishes *kinds of passing check*, not *executed vs. not-executed*. **No covering premise.**
+  Source: verified-at-source (the scheduler transcript's own parenthetical; the pre-check command above).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1034
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a claim and its disqualifier standing in one paragraph; pre-checked; routed.
+    Current status: UNTESTED
+
+PRESUMPTION-1035:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That the estate is observable — that mtimes report writes and transcripts report
+    runs. Both instruments are known-broken tonight, and every count in tonight's registers still rests
+    on them.
+  Evidence it was operative: "rewritten this afternoon" is an mtime reading (ASSUMPTION-1511); the
+    daily run committed and left no transcript for a third day (ASSUMPTION-1521); two restamp windows
+    today touched the registers themselves (ASSUMPTION-1523). No run proposed a third instrument.
+  Why it was unstated: obvious to participants — the filesystem is the ground truth of last resort.
+  Type: structural
+  Related decisions: ASSUMPTION-1511, 1521, 1523; OPEN-224, OPEN-231, OPEN-239.
+  Testability: in-house — content hashing (a manifest of digests written beside each artefact) converts
+    "was it touched" into "was it changed" and does not depend on either broken instrument.
+  Risk if wrong: **High.** It is already wrong in the narrow sense; the open question is how much of the
+    register is dated by it.
+  Status: UNTESTED — **held in-house.** PRE-CHECK: `grep -icE "front-end|restamp|regenerat"` → 10 lines;
+    none covers instrument trust. The named test above is the remainder. **Self-referential:** this
+    register's own files sit in the 14:25 cluster.
+  Source: verified-at-source (both restamp windows re-measured by 14a tonight).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1035
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from three independent instrument failures treated separately by three runs.
+    Current status: UNTESTED
+
+PRESUMPTION-1036:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That a zero-with-a-reason is worth the same as a zero-after-full-retrieval — that
+    naming a retrieval gap converts an incomplete hunt into a complete one. The conversation presumed
+    "fully covered" where "fully covered by web search" was what obtained.
+  Evidence it was operative: Carroll/Arkani-Hamed declared the INSPIRE and arXiv author listings
+    unreachable, then recorded the window as covered and the day as a true zero. The evening sync and the
+    ledger inherit the zero; the caveat does not propagate into the eighth-consecutive-zero-day counter.
+  Why it was unstated: culturally embedded — fail-loud discipline makes disclosure feel like discharge.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1514, ASSUMPTION-1515, ASSUMPTION-1516.
+  Testability: empirical — one attended dispatch with the two pasted URLs tells you whether the zero was
+    real. Also **testable via literature** on incomplete-retrieval bias in systematic search (a database
+    omitted is not a null result).
+  Risk if wrong: **Medium-High.** Eight consecutive zero-ingest days are being read as a quiet field; if
+    the zeros are retrieval artefacts, the system is recording an absence it manufactured.
+  Status: UNTESTED — held pending the attended dispatch; the literature limb noted but not routed
+    (ASSUMPTION-1515 is the cheaper first test).
+  Source: verified-at-source in part (`pending/` → 21, `approved/` → 414).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1036
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a caveat that stopped propagating one hop downstream.
+    Current status: UNTESTED
+
+PRESUMPTION-1037:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That fail-loud is sufficient — that a fault correctly reported is a fault
+    handled. Nothing in today's runs distinguishes "reported" from "addressed," and no artefact ages a
+    finding.
+  Evidence it was operative: Metabolism frozen 15 days, reported daily. `permissionMode` absent 15 days,
+    reported daily. Sync dead 16 days both directions, reported daily. Run-log archival split: fourteenth
+    recommendation. Channel 2 unexercised 27 days. Every one of these is loud, dated, and unchanged.
+    The scheduler's own one-line disambiguating test is "nine nights unrun."
+  Why it was unstated: too foundational to notice — the pipeline was built to surface, and surfacing is
+    what it measures itself by.
+  Type: normative
+  Related decisions: ASSUMPTION-1516, 1518, 1520, 1522, 1526; OPEN-222, OPEN-233.
+  Testability: in-house — an age field on findings, and a count of findings that changed state after
+    being reported, would make the question answerable in one query. Also **testable via literature**:
+    alert fatigue and the escalation half-life of unactioned monitoring findings.
+  Risk if wrong: **High**, and it is the quiet one. A system whose self-awareness layer grows while its
+    remediation rate is zero is accumulating an ever more precise description of a stuck state.
+  Status: UNTESTED — **held in-house**, with the literature limb noted. PRE-CHECK:
+    `grep -icE "sandbox|disk|capacity|ENOSPC"` → 43 lines, all about specific faults, none about
+    reporting-vs-remediation. **No covering premise.** Not routed tonight only because PRESUMPTION-1034
+    and -1040 are the two the lane can absorb (drain ~7/fortnight).
+  Source: verified-at-source in part (the day counts are agent-stated and mutually consistent across
+    four runs; not independently re-measured).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1037
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from five standing findings whose only change across weeks is their day counter.
+    Current status: UNTESTED
+
+PRESUMPTION-1038:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That flat append-only markdown is the right long-run shape for the registers. No
+    run has asked what happens when a register stops fitting in a reader's context.
+  Evidence it was operative: `assumptions.md` 2.23 MB, `presumptions.md` 2.31 MB, `for_lit_search.md`
+    2.12 MB, `watch_list.md` ~700 KB / 5,900 lines. Tonight's pass could not read any register whole and
+    worked entirely by `grep`, `tail` and counters — a reading strategy no agent definition specifies.
+    The archival split has been recommended fourteen times.
+  Why it was unstated: oversight — the format was right at 50 items and nobody re-asked at 1,500.
+  Type: scaling
+  Related decisions: ASSUMPTION-1524; PRESUMPTION-1042.
+  Testability: in-house — measure what fraction of each register any single pass actually reads. Tonight:
+    a few hundred lines of ~2.2 MB, under 2%.
+  Risk if wrong: **Medium**, rising. The failure mode is not corruption but silent partial reading: the
+    register is consulted by grep, so anything not matching tonight's search terms is functionally absent.
+  Status: UNTESTED — held in-house with the named measurement above.
+  Source: verified-at-source (`wc -c` on all five registers).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1038
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from this pass's own inability to read its inputs whole.
+    Current status: UNTESTED
+
+PRESUMPTION-1039:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That an unattended run is a degraded-but-equivalent instance of an attended one —
+    that the same capability is present, merely slower. In fact every approval-gated act silently converts
+    to a non-act, and the system has not been in attended mode for nineteen days.
+  Evidence it was operative: Today alone, four capabilities converted to non-acts without any run
+    recording a capability loss: the mark-as-read call auto-declined (again), the INSPIRE site approval
+    ungranted, the Gmail draft uncorrectable (OPEN-233), the process-listing tool auto-declined in the
+    morning status run. Each was logged as a local obstacle; none as the same obstacle.
+  Why it was unstated: obvious to participants — "nobody was there to approve" reads as a scheduling
+    fact, not an architectural one.
+  Type: methodological
+  Related decisions: ASSUMPTION-1515, 1517, 1520; OPEN-233.
+  Testability: in-house — enumerate the approval-gated acts in the agent set and count how many have been
+    exercised in 19 days. The answer is plausibly zero, which would make "the system can do X" false for
+    every gated X.
+  Risk if wrong: **High.** The capability inventory in the master wiki describes an attended system; the
+    system that actually runs is a strict subset that has never been separately specified.
+  Status: UNTESTED — **held in-house** with the enumeration above. PRE-CHECK:
+    `grep -inE "approval|unattended" validated_premises.md` → **PREMISE-073 / l.1926** (unattended runs
+    must report-not-mutate for high-impact actions) — this is the *policy* that produces the conversion,
+    and it is validated. **Partially covered:** the premise settles that gating is right; it does not
+    address the unrecorded capability gap the gating creates. That remainder is what is held.
+  Source: verified-at-source (PREMISE-073 line read; the four conversions are agent-stated, each in its
+    own transcript).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1039
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from four same-shaped obstacles reported by four runs as unrelated; pre-checked
+        against PREMISE-073; partially covered; remainder held.
+    Current status: UNTESTED
+
+PRESUMPTION-1040:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That registry liveness tracks process liveness — that a task reporting "running"
+    is running. The conversation presumed the registry is a sensor; it may be a memory of a launch.
+  Evidence it was operative: The lit-search session has reported "running" with an identical turn count
+    and identical last line across three observations spanning ~27.5 hours (ASSUMPTION-1512). Both the
+    morning and evening runs described it as possibly hung *or* dead-but-reported-running and neither
+    could distinguish the two — because no instrument distinguishes them.
+  Why it was unstated: obvious to participants — a status field is assumed to be refreshed.
+  Type: structural
+  Related decisions: ASSUMPTION-1512, ASSUMPTION-1513; OPEN-222, OPEN-238.
+  Testability: **testable via literature** — liveness vs. heartbeat detection, failure detectors in
+    distributed systems (the impossibility of distinguishing a slow process from a dead one without a
+    timeout), and the standard remedy: a progress heartbeat, not a status flag.
+  Risk if wrong: **High.** Third instance of the silent-death shape. Downstream: no 15abc report in three
+    days, so the lit-search drain of ~7/fortnight is currently zero while the queue keeps growing.
+  Status: UNTESTED — **ROUTED to 15a/15b.** PRE-CHECK: `grep -icE "absence alarm|silent death"` → **0**.
+    **PREMISE-053** exists and is the fail-loud canary requirement, which covers *announcing* a failure,
+    not *detecting a non-announcement*. OPEN-222 prescribes an absence alarm; nobody has built it.
+    **No covering premise for the detection half.**
+  Source: verified-at-source (three timestamped observations, the third taken by this pass).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1040
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from a status field that has not changed across three probes; pre-checked; routed.
+    Current status: UNTESTED
+
+PRESUMPTION-1041:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That this pipeline's sources are independent — that reading the evening digest
+    and reading the day are the same act. Tonight they are not.
+  Evidence it was operative: Of tonight's eighteen assumptions, roughly half descend from a single
+    artefact (`2026-09-18_cowork_summary.md`) written by one run, which itself worked largely from the
+    mount rather than from the runs it summarises. The daily run — the estate's largest daily change
+    producer — left no transcript, so its entire contribution is one hop of hearsay. The coverage
+    declarations count *sessions read*, which makes a digest look like fifteen sources.
+  Why it was unstated: oversight — a digest is written to be relied on, and relying on it feels like
+    coverage rather than like a single point of failure.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1521, ASSUMPTION-1524; PRESUMPTION-1035.
+  Testability: in-house — tag each register entry with first-hand or second-hand provenance and report
+    the ratio in the snapshot. Tonight's would be roughly 11 first-hand of 18.
+  Risk if wrong: **Medium-High.** A single erroneous digest propagates into the register as a dozen
+    independent-looking findings — and tonight's pass already caught four errors in today's digest-layer
+    claims (ASSUMPTION-1510, 1511, 1522, 1523), which is evidence the risk is live rather than notional.
+  Status: UNTESTED — held in-house; the first-hand/second-hand ratio is added to tonight's snapshot as a
+    first measurement. **Self-referential.**
+  Source: verified-at-source (this pass's own source list).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1041
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced by auditing this pass's own inputs rather than the day's.
+    Current status: UNTESTED
+
+PRESUMPTION-1042:
+  Date surfaced: 2026-09-18
+  Statement: [inferred] That extraction volume is a good — that more assumptions surfaced is more
+    self-awareness. Nothing in the metric set penalises an item that is never tested, and no run has
+    asked what the registers are *for* at their current size.
+  Evidence it was operative: 1,525 assumption headers, 1,042 presumption headers, **2,594 QUEUED lines**
+    in `for_lit_search.md` against **170 validated premises** and an observed drain of ~7 per fortnight —
+    a drain that has been **zero for three days**. Tonight's pass adds 18 + 9 and routes 2. Every metric
+    reported in the snapshot counts production; none counts disposition latency.
+  Why it was unstated: normative smuggling — "the counter went up" reads as progress because the agent
+    definition asks for counts, not for throughput.
+  Type: normative
+  Related decisions: PRESUMPTION-1037, PRESUMPTION-1038; ASSUMPTION-1524.
+  Testability: in-house — add two figures to the snapshot: mean age of a QUEUED item, and items
+    dispositioned this week. Also **testable via literature**: queueing theory (arrival rate exceeding
+    service rate has no steady state) and backlog-management work on unbounded review queues.
+  Risk if wrong: **Medium.** If the queue is a landfill rather than a pipeline, the honest move is to
+    stop routing and say so, not to keep appending at a rate the drain cannot meet.
+  Status: UNTESTED — held in-house; the two figures are named for the next snapshot to carry.
+    **Self-referential** — this pass is the arrival process it is describing.
+  Source: verified-at-source (register header counts, QUEUED line count, PREMISE header count).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1042
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Surfaced from the arithmetic of the queue against its own drain.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-18, after 14a. **Nine items (1034–1042)**: structural 2
+(1035, 1040), epistemic 3 (1034, 1036, 1041), methodological 1 (1039), normative 2 (1037, 1042),
+scaling 1 (1038). **No Critical-risk item** — fourth consecutive night; four High (1034, 1035, 1037,
+1039, 1040 — five, counting 1040), two Medium-High (1036, 1041), two Medium (1038, 1042). Checked against
+tonight's ASSUMPTION-1509–1526; each names the assumptions it sits under. **Two routed to 15a/15b
+(1034, 1040)**; seven held in-house — one partially covered at pre-check on a named premise (1039 →
+PREMISE-073) and six held with no covering premise and a named in-house test (1035, 1036, 1037, 1038,
+1041, 1042). Every pre-check records its command and return per REVISE-474; every entry carries a
+`Source:` line per PRESUMPTION-1007. **Three are self-referential** (1035, 1041, 1042) — an unusual
+concentration, and itself the signature of a day whose main finding is that the instruments are
+unreliable. No designer speech — **nineteenth consecutive day** (PRESUMPTION-912).*
+
+---

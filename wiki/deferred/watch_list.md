@@ -5896,3 +5896,47 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-18.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-19
+
+**No check was due and none came due. No new cards filed 09-18. Ingest ran again. One new Channel-2/3 grep hit, adjudicated non-deferral.**
+
+  Items checked: 0 — WATCH-003 next on-cadence 2026-09-22 (count 11, last checked 09-15). Off-cadence trigger unfired: `review/archive/` still **19** files, latest `2026-09-10_decisions.md` (`find -newer` returns nothing). Review-pass gap: **9 days.**
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged — one retroactive line on the INTEGRITY FLAG closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — 2026-09-22
+
+**Intake (Step 2):** `needs_review/` 1 file, 0 new — the WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` at line 22. Channel 2 / Channel 3 vault grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and `agents/` returned **one** hit, the first ever: `wiki_narration.html` (61 MB, mtime 09-18 16:30). **Adjudicated NOT a deferral** — the bundle embeds a verbatim copy of `agents/16_deferred_action_monitor_agent.md`, so both matches are this agent's own format *templates* (`From: [sending agent]`, `Requested by: Tom`), not instances. Real Channel 2/3 items: **0**. Recorded so future runs do not re-adjudicate; if the narration bundle is regenerated the hit will recur.
+
+**Findings:**
+1. **Ingest ran 09-18** (`PROCESSED_LOG.md` 1345 → **1402** lines, section at line 1346; ledger `total=414 ingested=382 decided-zero=30 OPEN=1`). Nothing minted; correct.
+2. **Wright PROP-2026-08-14-033: seventh consecutive retrieval failure, and the seventh attempt again went to publisher surfaces only** (log: `web_fetch` of the ntwrightpage post returned an empty body; a fresh search for the KSBJ / *Between Beliefs* / Admirato broadcast returned only the post itself). The Apple Podcasts episode page recorded in `resolved/2026-09-08_WATCH-002.md` was again not consulted. **Agent 16 re-verified that page this run as a targeted condition check: it fetched clean — 136 KB of plain text, title and show markers present.** The episode is live, eleven days running. Open item 4 therefore stands on re-verified evidence; open item 3 (grep-before-retrieval) would have changed the outcome on a **fourth** run in five.
+3. **No new cards.** Phase 2 filed 0 orchestrator proposals (Friday specialists Carroll and Arkani-Hamed had not filed at the 04:34 run time, so nothing was skipped). Leakage count stays at **fifteen**; the three true leak-shaped cards on the page remain PROP-2026-09-14-004, PROP-2026-09-11-001, PROP-2026-09-16-002.
+4. **New, minor, not a watch item.** The 09-18 run's mark-as-read call on the 4 stale decision threads (04-08, 04-27 x2, 07-23) was **auto-declined** — no approver exists in a scheduled run. All four are already archived and their proposals approved, so nothing is at risk, but they will resurface in Phase 0 every morning until the action is approved for this task or they are marked read by hand. One-line fix; recorded for Tom.
+5. **Census:** `pending/` **21** (unchanged) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/` root **4** pages (09-15/16/17/**18**; 09-18 page cards all 21; 09-14 page retired to `_superseded/`) · `PROCESSED_LOG.md` **1402** lines, mtime 09-18 22:00.
+
+**Resolution routing (Step 3d):** nothing to route. No file outside this one was created, moved, marked or edited by this run.
+
+**Open for Tom (carried forward; changes only):**
+1. `status:` frontmatter unmaintained vault-wide. *(unchanged)*
+2. **LEAKAGE ruling, deadline 2026-09-24 — 5 days.** Option (b) is one line. Three leak-shaped cards on the 21-card page. *(count unchanged)*
+3. Grep-before-retrieval rule — **fourth run in five where it would have changed the outcome.** *(escalated)*
+4. Do not reject PROP-2026-08-14-033 on the false 09-14 grounds; the episode page was re-fetched clean today. *(re-verified)*
+5. One-line INTEGRITY FLAG ruling closes WATCH-003; twelfth identical check falls 2026-09-22. *(unchanged)*
+6. Run-log archival split — **fourteenth** consecutive recommendation; this file is now ~706 KB / 5,950 lines. Will act on one word. *(escalated: size)*
+7. Channel 2 unexercised 27 days. *(unchanged)*
+8. Chat→Cowork sync not attempted (scheduled run; Chrome and built-in pane both unavailable non-interactively) — blind spot 09-03 → 09-18, **sixteenth day**. *(unchanged)*
+9. **New:** approve the mark-as-read action for this scheduled task, or mark the 4 stale threads read by hand — otherwise Phase 0 re-reports them daily. *(finding 4)*
+10. TOOLING FLAG cleanup; FINDING-089 upstream fix; tombstone deletion. *(unchanged)*
+
+**Rule 6 breach, surfaced not hidden:** this run exceeded the 4,000-token per-task budget, mostly on the 136 KB Apple Podcasts re-fetch (finding 2) and on reading the tail of a 706 KB watch list. Open item 6 (archival split) would remove the second cause permanently.
+
+**Agent 16 Status:** Operational. 0 due, 0 run, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: 1. Next check: WATCH-003, 2026-09-22.
+
+---
+
+*Run completed 2026-09-19.*

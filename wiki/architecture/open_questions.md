@@ -3153,3 +3153,77 @@ OPEN-236:
 command each and are named so that a reader can run them.*
 
 ---
+
+## 2026-09-18 — raised by the 14a/14b end-of-day pass
+
+OPEN-237:
+  Date raised: 2026-09-18
+  Question: Were the 16:30–16:50 front-end changes (wiki_narration, explorer, community_explorer) writes
+    or restamps — and do they fix the eight RED voice-shell rows, cause them, or predate them?
+  Raised from: ASSUMPTION-1511, ASSUMPTION-1509.
+  Why it matters: This is the evening sync's own "first thing I'd want settled tomorrow," and it cannot
+    be settled from mtimes, because this estate restamps daily (ASSUMPTION-1523).
+  Status: OPEN — needs one byte-comparison against a pre-16:30 copy, then one rerun of the suite. The
+    comparison needs a copy that predates 16:30; if none exists, that absence is the answer to a
+    different question (PRESUMPTION-1035).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-237
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1511)
+    Current status: OPEN
+
+OPEN-238:
+  Date raised: 2026-09-18
+  Question: Is the lit-search pipeline session hung, or dead with the registry still reporting it
+    running — and did today's scheduled run fail to start, or correctly decline to start because the
+    09-17 session never exited?
+  Raised from: ASSUMPTION-1512, ASSUMPTION-1513; PRESUMPTION-1040.
+  Why it matters: Third instance of the silent-death shape. No 15abc report in three days; the
+    lit-search drain is currently zero while the queue grows (PRESUMPTION-1042).
+  Status: OPEN — the second limb is one registry field. The first limb is not answerable with the
+    instruments now in place, which is what OPEN-222 and PREMISE-053 already asked for and nobody built.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-238
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1512)
+    Current status: OPEN
+
+OPEN-239:
+  Date raised: 2026-09-18
+  Question: There were **two** restamp windows on 09-18 — ~14:25:11–12 and ~22:00 — not one. Which
+    process owns each, and why do `agents_tab.html` and `review_log.html` appear in the 22:00 window
+    while the registers appear in the 14:25 one?
+  Raised from: ASSUMPTION-1523. Extends OPEN-224 and OPEN-231 (which named 15:55 and 22:00).
+  Why it matters: The 14:25 cluster includes `assumptions.md`, `open_questions.md` and
+    `for_lit_search.md` — this register's own files. Its mtimes are among the corrupted instruments.
+  Status: OPEN — `launchctl list` plus the Cowork scheduler's task times at those two minutes. Third
+    consecutive day the process has gone unnamed.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-239
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1523)
+    Current status: OPEN
+
+OPEN-240:
+  Date raised: 2026-09-18
+  Question: Does the scheduler record a no-op check in the same field as a passing check — and if so,
+    how many of the estate's "unchanged since" and "green as recently as" figures are dated from a
+    verdict that never ran?
+  Raised from: ASSUMPTION-1510; PRESUMPTION-1034 (routed to 15a/15b).
+  Why it matters: This is an instrument question with estate-wide reach, not a voice-shell question.
+  Status: OPEN — read the check's status-file schema once; the answer is structural, not per-run.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-240
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1510)
+    Current status: OPEN
+
+*Four raised 2026-09-18 (237–240). **None needs Tom**; all four are one or two commands, and OPEN-237's
+first limb may be unanswerable if no pre-16:30 copy exists — which would itself be the finding. OPEN-238
+and OPEN-240 are instrument questions whose scope is the whole estate, not the artefact that surfaced them.*
+
+---

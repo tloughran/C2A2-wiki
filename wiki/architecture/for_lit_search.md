@@ -22229,3 +22229,50 @@ content-bearing and belongs to the tradition lane, not this register; recorded, 
 **Lane arithmetic.** Tonight adds **1** item. The untagged re-trigger lane is **139**, not 129
 (ASSUMPTION-1484): 129 dated 07-05..08-02, 2 dated 08-30, 8 dated 09-13 — today's 15a is working the
 09-13 cohort. Observed drain remains ~7 per fortnight.
+
+## Queued 2026-09-18 — from the 14a/14b end-of-day pass
+
+PRESUMPTION-1034 — [QUEUED]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Origin: 14b · Chain: [14b → 15a/15b]
+  Claim to test: A recorded check verdict and an executed check are distinguishable in principle but are
+    routinely conflated in status reporting; a no-op or skipped check reported in the same field as a
+    pass corrupts every downstream "last known good" attribution.
+  Search directions for 15a (support): CI/CD observability on skipped-vs-passed test reporting; flaky and
+    skipped test literature; "last known good build" attribution error; monitoring-system semantics for
+    stale vs. healthy (the "no data ≠ OK" rule in alerting practice).
+  Search directions for 15b (against): arguments that no-op recording is the correct default for
+    idempotent checks; that regression attribution from a green baseline is robust to occasional no-ops.
+  Why it is testable: This is a general property of status-reporting systems, widely written about, not a
+    C2A2-specific fact.
+  Risk if wrong: High (estate-wide dating).
+  Related: ASSUMPTION-1509, ASSUMPTION-1510, OPEN-237, OPEN-240.
+  Status: [QUEUED]
+
+PRESUMPTION-1040 — [QUEUED]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Origin: 14b · Chain: [14b → 15a/15b]
+  Claim to test: Registry liveness does not track process liveness. A status flag set at launch cannot
+    distinguish a slow process from a dead one; only a progress heartbeat with a timeout can, and that
+    distinction is provably not free.
+  Search directions for 15a (support): failure detectors in distributed systems (Chandra & Toueg's
+    unreliable failure detectors; the impossibility of perfect failure detection in asynchronous
+    systems); heartbeat and watchdog design; job-scheduler liveness (supervisor trees, liveness probes
+    vs. readiness probes); dead-man's-switch / absence alarms.
+  Search directions for 15b (against): arguments that timeout-based detection produces worse outcomes
+    than status flags under bursty workloads; that absence alarms on long-running analytical jobs
+    generate more false positives than the silent deaths they catch.
+  Why it is testable: Squarely a distributed-systems literature question.
+  Risk if wrong: High. Third observed instance; downstream drain currently zero.
+  Related: ASSUMPTION-1512, ASSUMPTION-1513, OPEN-222, OPEN-238; PREMISE-053 (partially adjacent).
+  Status: [QUEUED]
+
+**Lane arithmetic.** Tonight adds **2** items — both PRESUMPTIONs; no ASSUMPTION from tonight's eighteen
+was routed (eleven were settled in-house, four are corrections to today's own claims, and three await an
+attended action rather than a literature answer — ASSUMPTION-1515, 1517, 1525). Observed drain remains
+~7 per fortnight **and has been zero for three days** (no 15abc report since
+`2026-09-16_15abc_run_report.md`), which is PRESUMPTION-1042's arithmetic in one line: arrivals continue,
+service has stopped. If the lit-search session (OPEN-238) is dead, these two items are queued into a
+pipeline with no consumer, and that should be said plainly rather than counted as routing.
+
+---

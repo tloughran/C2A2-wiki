@@ -1343,3 +1343,157 @@ to `scripts/commit_daily_run.sh` (05:45, Mac-side).
 31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9,
 macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66) — unchanged. 135 distinct CROSS ids
 (CROSS-001..135). 90 distinct FINDING ids (FINDING-001..090). All three unchanged since 09-16, correctly.
+
+
+---
+
+## 2026-09-18 — daily run
+
+**Phase 0: no new decision emails.** `subject:"C2A2-review-decision" newer_than:3d` returned nothing. The
+`is:unread` query returns the same 4 stale threads as yesterday (04-08, 04-27 x2, 07-23) — every one already
+archived under `review/archive/` and stored in `provenance/decision_emails.json`; their proposals are in
+`approved/`. The mark-as-read call on all four was **auto-declined** (no approver in a scheduled run). They
+will resurface every morning until that action is approved for this task or they are marked read by hand.
+
+**Phase 1: files processed 0 — compile queue empty by the ledger.** `scripts/ingest_ledger.py wiki`:
+approved total=414, ingested=382, decided-zero=30, **OPEN=1**; staging identical. (Naive filename-vs-log scan
+reports 300+ "unprocessed" — the known slug/filename trap, phantom backlog; the ledger is the answer.)
+No-`proposal_id` files unchanged: `approved/2026-05-12_repair_manifest.md` (a manifest) and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` (ingested 2026-09-09, verified in prior runs).
+
+**Wright PROP-2026-08-14-033 — retrieval re-attempted 2026-09-18, FAILED. Seventh consecutive failure.**
+`web_fetch` of the ntwrightpage post returned an empty body (bare media embed, as before); a fresh search for
+the KSBJ / *Between Beliefs* / Admirato broadcast returned only the post itself and generic Wright pages.
+No triplets minted. The recommend-reject from 09-14 stands.
+
+**Phase 2: 0 orchestrator proposals.** Friday specialists (Carroll, Arkani-Hamed) had not filed at run
+time (04:34), so nothing was skipped. Swept 12 traditions (all but Rohr — weekly summary is Saturday;
+09-13 cards cover the week). Every candidate already held or filtered: the "Arkani-Hamed PRL Aug 2026" is
+*Correlators Are Simpler than Wave Functions* (PRL 137, 061601) = published PROP-2026-08-07-002; arXiv
+2512.17019 (gluon leading singularities / surfaceology) is Carrôlo & Figueiredo, not Nima — fails the
+from-the-thinker filter; Levin September preprints pending (PROP-2026-09-12-002/-003/-004); Wolfram writings
+stop at 08-04; TBP blog unchanged; McGilchrist's own articles page (modified 2026-04-29) has nothing after
+Sept 2025 — a "ChatGPT-5 and the Limits of Machine Intelligence" item a search attributed to him is not on
+his page and was not filed; Fredrickson, Friston, Hoffman, Hawkins, Kastrup, Stump, Wright returned only
+held or pre-window material (weak negatives).
+
+**Phase 3.** `review/2026-09-18_review.html` (230,043 bytes, 21 proposals). **Auto-open failed:**
+Claude-in-Chrome "not connected"; the sandbox has no macOS `open`. Path is in the digest.
+
+**Phase 4.** Digest draft `r3890959334762820161` (to thomas.loughran@gmail.com). Inbox row correctly reads
+"7th attempt" — the card WAS re-attempted this run.
+
+**Phase 5.** `review/2026-09-14_review.html` moved to `review/_superseded/` (`rm` blocked on the mount, `mv`
+works). 09-15/16/17/18 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,339,517 bytes; cards 476, dates 125, responses 15; 17
+addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115 (identical to 09-17).
+
+**Phase 5.6.** `regen_level2_signals.sh` OK — coverage gate PASS 379/379; 1501 signals, 87 pairs,
+2026-04-03 → 2026-09-09, stale_days 9 (no WARN); qc_trace.csv date-only change, not promoted.
+
+**Phase 6.** No git commands run (per 2026-09-16 SKILL change). Commit deferred to
+`scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network, derived by counting headers:** 867 PRS (`^PRS-[0-9]+:` across 15 tradition files: arkanihamed
+31, carroll 85, fredrickson 42, friston 71, hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9,
+macintyre 6, mcgilchrist 78, rohr 79, stump 38, wolfram 62, wright 66) — unchanged. 135 distinct CROSS ids.
+90 distinct FINDING ids (24 carry a `Status: Active` tag). All unchanged since 09-17, correctly.
+
+## 2026-09-19 — daily run
+
+**Phase 0: no new decision emails.** `subject:"C2A2-review-decision" newer_than:3d` returned nothing. The
+`is:unread` query returns the same 4 stale threads (04-08, 04-27 x2, 07-23); all four are already archived
+under `review/archive/` and stored in `provenance/decision_emails.json`, and their proposals are in
+`approved/`. **No mark-as-read was attempted this run** — the call has been auto-declined on each of the last
+several runs (no approver in a scheduled task), so re-issuing it just adds a declined action to the log. It
+needs a standing approval for this task or a manual mark-read; retrying is not the fix.
+
+**Phase 1: files processed 0 — compile queue empty by the ledger.** `scripts/ingest_ledger.py wiki`:
+approved total=414, ingested=382, decided-zero=30, **OPEN=1**; staging identical. No-`proposal_id` files
+unchanged: `approved/2026-05-12_repair_manifest.md` (a manifest) and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` (ingested 2026-09-09). Ninth consecutive zero-ingest
+day. (Reminder for anyone reading a naive filename-vs-log scan: it reports 300+ phantom "unprocessed" files.
+The ledger is the answer.)
+
+**Wright PROP-2026-08-14-033 — 8th attempt. The block moved from the source to the tool, and that is new
+information.** `web_fetch` refused the ntwrightpage URL outright as out-of-provenance: the tool only accepts
+URLs that appeared in a search result (or a user message) in the same session, and that URL had not. So the
+retry was never issued. A fresh search then surfaced a **different, newer** Wright item — *The Fresh Challenge
+of Romans*, ntwrightpage, 2026-09-13 — and fetching **that** returned an empty body: the same bare-media-embed
+signature as the August card. Two separate posts on the same site, same failure. That is evidence about how
+ntwrightpage publishes (audio/video embeds with no article text) rather than an eighth null retry, and it
+retires the hope that a different post would retrieve cleanly. **No Wright proposal filed today**; the
+recommend-reject on -033 stands, and should be read as a judgement about retrievability, not about Wright.
+
+**Phase 2: 2 orchestrator proposals — the first output since 09-15.** Wolfram skipped (specialist filed
+PROP-2026-09-19-001, *Personal Update & AMA* 09-18, at 04:33). Swept the other 12 traditions. Duplicate filter
+held on every hit: Levin's three September preprints are pending as PROP-2026-09-12-002/-003/-004 (the search
+surfaced exactly those three and nothing else); Carroll's September AMA is PROP-2026-09-15-004; Stump's
+*Infused Virtues* (New Blackfriars) and *What are we?* (Religious Studies) are both already captured;
+Arkani-Hamed, Fredrickson, Hawkins, Hoffman, Friston and Kastrup returned only held or pre-window material
+(weak negatives). McGilchrist has an UnHerd Live event in London on 24 Sept — a future in-person date, not a
+retrievable source, so not filed; the Ralston lecture and 27-Aug Q&A are already pending from 09-16.
+
+**Rohr was the yield, and the reason is a schedule gap, not luck.** The Rohr specialist files Saturday against
+the CAC week just closed. CAC week 37 (*Paul's Transforming Vision*, 09-13 to 09-19) ran five Rohr-bylined
+meditations on **09-14 through 09-18** — after the 09-13 specialist cards were written, before this Saturday's
+summary exists. Those five days are structurally invisible to the specialist and were caught only because the
+orchestrator reads the CAC archive index directly. **Worth fixing upstream:** either the Rohr specialist should
+sweep the current week's dailies as well as the closed week's summary, or the orchestrator should keep doing
+this. Two of the five were retrieved in full and filed; three were left (two substantive cards is the right
+density for one week, and the Saturday summary will cover the rest).
+
+- **PROP-2026-09-19-002 — *A Man Who Lived and Loved Paradox* (09-15, Rohr's own voice, adapted from *Soul
+  Brothers*, Orbis 2004).** Converts Active Question 1 from unanswerable to answerable. The corpus had
+  described non-duality as a *stance*, which gives a formalizer nothing to bite on. Rohr here gives a
+  procedure — paired opposites → a named template ("the language of the cross" as Paul's "philosopher's
+  stone") → a new order — plus a precondition that the reader must already have partly reconciled the
+  opposition in themselves. The template is statable; the precondition is what resists formalization, because
+  its satisfaction conditions live in the interpreter. Three candidate triplets (Medium, Medium, Medium). The
+  third records disorder as load-bearing rather than residual in order–disorder–reorder, which is flagged as a
+  **tension** with Friston's active inference, explicitly not as a convergence — they may be describing
+  different timescales, and saying so without checking would be averaging.
+- **PROP-2026-09-19-003 — *Changing the Paradigm of Power-Over* (09-17). Filed with an authorship caveat on
+  its face.** Bylined Rohr; body almost entirely quoted from Kat Armas (*Liturgies for Resisting Empire*,
+  Brazos 2025), citing Beth Allison Barr. Rohr's contribution is selection and framing. The card asks for
+  **Rohr-curated / Armas-authored** attribution — minting a triplet that reads as Rohr's own formulation would
+  put a claim in the tradition's mouth that the tradition only platformed. Two candidates (Medium,
+  Speculative). Bears on Question 7 (dyad→community scaling, via the household codes) and gives weak evidence
+  on Question 9 (the reading concedes 1 Cor 11:5–10 against its own direction — whether that is a structural
+  check or good manners is exactly what Q9 asks, and the card says so rather than resolving it).
+
+Both cards flag the **Rohr↔Wright** contrast (Question 8) and neither adjudicates it: both traditions were on
+Paul this week for the first time in 2026, so the question is workable with real parallel material — by the
+Wright agent, not by a Rohr card.
+
+**Phase 3.** `review/2026-09-19_review.html` (265,580 bytes, **24 proposals**: Levin 6, Rohr 5, McGilchrist 2,
+Hawkins 2, Friston 2, Carroll 2, Wolfram 2, Kastrup 1, Hoffman 1, Stump 1). **Auto-open failed** — sandbox has
+no macOS `open`, Claude-in-Chrome not connected. Path is in the digest.
+
+**Phase 4.** Digest draft `r8178578636913667992` (to thomas.loughran@gmail.com). Carries both new cards with
+their caveats and a corrected Wright note (8th attempt, blocked at the tool).
+
+**Phase 5.** `review/2026-09-15_review.html` and `2026-09-16_review.html` moved to `review/_superseded/`
+(`rm` blocked on the mount; `mv` works). 09-17/18/19 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,369,414 bytes; cards **479** (+3), dates 126, responses 15; 17
+addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115 (unchanged).
+
+**Phase 5.6.** `regen_level2_signals.sh` OK — coverage gate PASS 379/379; 1501 signals, 87 pairs,
+2026-04-03 → 2026-09-09, stale_days 10 (no WARN); qc_trace.csv date-only change, not promoted.
+
+**Phase 6.** No git commands run (per 2026-09-16 SKILL change). Commit deferred to
+`scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network:** 867 PRS across 15 tradition files (arkanihamed 31, carroll 85, fredrickson 42, friston 71,
+hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38,
+wolfram 62, wright 66) — unchanged. **135** distinct CROSS ids, **90** distinct FINDING ids (24 tagged
+`Status: Active`) — both files untouched since 09-11.
+
+**Counting trap, logged so it is not re-discovered.** `grep -o 'CROSS-[0-9]*'` returns 136 and
+`'FINDING-[0-9]*'` returns 91 — one too many each — because `*` matches *zero* digits, so the bare prefix
+`CROSS-` / `FINDING-` counts as its own distinct token under `sort -u`. Use `[0-9]\+`. The true counts are
+135 and 90 and have not moved.
