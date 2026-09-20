@@ -87,8 +87,8 @@ karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-01 — biological agency without vitalism, FEP, High; added 2026-09-05 as the graded anchor behind the PRS-04 'mature' claim)"
 mind_first_reframe: "Q.85 a.1's abstraction-from-phantasms is the cortical hierarchy's invariant-extraction operation under FEP (HTM-as-cortical-FEP, CROSS-011); the icons are not the underlying reality, but the structural priors the cortex extracts from them track real patterns in what-the-icons-are-icons-of. Q.85 a.2's that-by-which / that-which distinction is the structural-realism move: real reference to the substrate's structure through the alter's interface, adequate-for-action under FEP, neither naive veridicality nor constructivist anti-realism. The medieval adequatio rei et intellectus survives as critical realism (Wright) plus interface-theory structural-realism (Hoffman) plus FEP adequacy-tracking (Friston). Q.86's distinctions (singulars indirectly, universals directly; contingents through sense, necessities through intellect; future through causes) map onto the cortical architecture's bottom-up particularizing and top-down abstracting operations."
 central_theme_thread: "Each alter's knowing is real reference under perspective-limitation: the icons (phantasms) are not the underlying reality, but the structural priors the cortex extracts from them track real patterns in the substrate. Salvation in fear and trembling on the epistemological register is the disciplined cultivation of cognitive practice under awareness that one's icons are perspective-limited but not therefore disconnected from the substrate's pattern; the alter's progressive refinement of its generative model toward better fit is the cognitive form of working-out-salvation."
-last_qc_at: "2026-09-13T02:29:43"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T14:31:27"
+last_qc_outcome: "pass"
 tags: [synthesis, day/044, theme/abstraction, theme/epistemological-realism, theme/critical-realism, theme/interface-theory, theme/cortical-hierarchy, theme/adequacy-tracking]
 
 ---

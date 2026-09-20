@@ -3,23 +3,23 @@ day: 181
 title: Fearlessness (Contemporary)
 pairs_with: "[[Day-181 - Fearlessness]]"
 length_target_words: 1500
-length_actual_words: 1992
-length_ratio_to_target: 1.328
+length_actual_words: 1991
+length_ratio_to_target: 1.327
 length_tier: short
-length_note: "Overrun is citation apparatus added at the 2026-09-02 review, not argument expansion: the Rohr PRS-53 install retiring this day's canonical-works fallback for the contingency-denial claim, the Wright fear-of-the-Lord declination re-tested and dated at 59 register entries, the Fredrickson declination re-dated at 42, and the Friston PRS-58/59 upgrade with the PRS-49/50 qualification on the word error. The argument is unchanged from the in-band draft. Crossing +/-25pct is flagged informationally in the QC log for Tom, not silently absorbed."
+length_note: "Overrun is citation apparatus added at the 2026-09-02 review, not argument expansion: the Rohr PRS-53 install retiring this day's canonical-works fallback for the contingency-denial claim, the Wright fear-of-the-Lord declination re-tested and dated at 59 register entries, the Fredrickson declination re-dated at 42, and the Friston PRS-58/59 upgrade with the PRS-49/50 qualification on the word error. The argument is unchanged from the in-band draft. Crossing +/-25pct is flagged informationally in the QC log for Tom, not silently absorbed. QC sweep 2026-09-19: the Stump role-label was removed from the body sentence and from the sources line (guardrail apparatus, no claim moved), shortening the body by 1 word. Recounted at exit under the canonical boundary with the counter calibrated first against Day 027 at 3152 and Day 164 at 2464: 1992 to 1991, ratio 1.328 to 1.327. The Wright fear-of-the-Lord declination was re-tested this run at the register's current 66 entries, reading PRS-60 through PRS-66 individually rather than relying on the keyword scan: none is on-topic, so the declination HOLDS and the dated sentence at 59 is left as written, per the 2026-09-11 decision not to push a short-tier file further out of band to record a check that changed nothing."
 mind_first_reframe: "Fearlessness and foolhardiness are the two calibration errors that flank fortitude on the side opposite timidity: fearlessness under-weights the threat signal until real danger goes untracked; foolhardiness over-drives the approach response until the agent rushes a gradient it has not measured. Yesterday's vice over-weighted threat; today's pair gets the weighting wrong in the other two ways."
 central_theme_thread: "Rightly-calibrated fear is part of an agent's accurate perception of its own limits within the whole. To feel no fear of death, of God, of real loss is not freedom but mis-perception — a perspective that has under-counted its own finitude. The 'trembling' in 'fear and trembling' is, at the right amount, epistemically true."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (active inference: fear as precision-weighting on threat prediction-errors; fearlessness as under-weighted threat precision, foolhardiness as over-weighted approach/expected-value)"
   - "traditions/fredrickson/prs_triplets.md (broaden-and-build: the approach system and its calibrating brake; resilience as breadth held under, not without, accurate threat appraisal)"
   - "traditions/mcgilchrist/prs_triplets.md (left-hemisphere overconfidence that does not see the whole danger; right-hemisphere attention to the real situation)"
-  - "traditions/stump/prs_triplets.md (Thomistic interlocutor: fortitude as a mean calibrated by reason, fearlessness and daring as its two failures of measure)"
+  - "traditions/stump/prs_triplets.md (fortitude as a mean calibrated by reason, fearlessness and daring as its two failures of measure)"
   - "traditions/rohr/prs_triplets.md (PRS-53, Confidence High: the true/false-self confusion as structural rather than culpable, with triangulation across inner report, text and community as the tradition's own remedy — added 2026-09-01, retiring this day's canonical-works fallback)"
   - "Wright canonical: the fear of the Lord as accurate orientation to the One who holds life and death (Surprised by Hope). NOTE: declination re-tested 2026-09-02 against traditions/wright/prs_triplets.md at 59 entries (was 41) — no triplet treats the fear of the Lord, awe, or reverence. Cited canonically and the gap stated."
 evidence_strength_summary: "Precision-weighting of threat and the approach/avoidance balance are formal/empirical (Friston, Fredrickson, affective neuroscience); the claim that one *ought* to fear God and the loss of higher goods rests on a theological premise (Wright, Rohr) the formalism cannot supply."
 tags: [synthesis, day/181, theme/threat-calibration, theme/fearlessness, q/126, q/127]
-last_qc_at: "2026-09-11T16:22:39"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-19T04:29:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 181 — Fearlessness (Contemporary)
@@ -42,7 +42,7 @@ The threat-tracking that protects an agent can fail in three directions, not one
 
 **McGilchrist** locates the cognitive signature. In his key, fearlessness of the disordered kind often wears the left hemisphere's overconfidence — the mode that has reduced a situation to a manageable token and so cannot see the danger it has abstracted away. The right hemisphere's standing-open to the whole situation includes registering the parts of reality that *should* alarm. Courage is not the suppression of that registering; it is acting well in its full light.
 
-**Stump** enters as Thomistic interlocutor: fortitude as a mean set by reason between defect and excess, with fearlessness and daring as its two measurable failures — the metaphysical frame in which "the right amount of fear" is a real, normative quantity, not merely a feeling-state.
+**Stump**'s reading takes fortitude as a mean set by reason between defect and excess, with fearlessness and daring as its two measurable failures — the metaphysical frame in which "the right amount of fear" is a real, normative quantity, not merely a feeling-state.
 
 **Wright** grounds the premise the formalism cannot supply. The biblical "fear of the Lord" is not anxiety but accurate orientation: to stand before the One who holds life and death and *not* fear is, on this account, to mis-perceive one's actual situation in the deepest way. In *Surprised by Hope* the proper relativizing of death comes not from feeling no fear of it but from the resurrection that re-ranks it as penultimate — which leaves the fear of God, and of the loss of the highest good, exactly where Aquinas puts it. **Rohr** gives the contemplative form: false fearlessness is the False Self's denial of its own contingency, the bravado that cannot admit it is small; true freedom from fear comes only *through* admitting finitude, not around it. In Tom's PRS-form record of his work (PRS-53, Confidence High) the denial is given a structure the day needs: the confusion of the two selves is *structural rather than culpable*, since both are experienced from inside as one's own selfhood. The disordered fearless agent is therefore not primarily posturing — it cannot tell from within that the self doing the not-fearing is the constructed one, which is why the remedy is the triangulation Rohr's method insists on (inner report against text and community) rather than more introspection.
 

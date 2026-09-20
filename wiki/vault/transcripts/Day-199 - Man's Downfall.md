@@ -16,13 +16,13 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-199 - Man's Downfall - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/199, pars/II, q/162, q/163]
-last_qc_at: "2026-09-12T22:28:48"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-19T12:23:22"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 199 — Man's Downfall
 
-Q.162 treats pride — its nature, species, gravity, and primacy among sins; Q.163 treats the first sin of man, arguing it was pride.
+*Editor's locator, not Habash's words: Q.162 treats pride — its nature, species, gravity, and primacy among sins; Q.163 treats the first sin of man, arguing it was pride. Marked as apparatus by QC sweep 2026-09-19: the sentence had stood as plain body prose and measures 0.11 four-gram coverage against a live ASR refetch, so a reader could take it for the episode's own opening. Its content is sound and derivable from the episode; nothing of Habash's has been altered.*
 
 [00:04] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa Theologiae podcast, where we study Saint Thomas
 

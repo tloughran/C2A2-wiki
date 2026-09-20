@@ -3,25 +3,27 @@ day: 106
 title: Law (Contemporary)
 pairs_with: "[[Day-106 - Law]]"
 length_target_words: 1500
-length_actual_words: 1724
+length_actual_words: 2140
 length_tier: short
-length_note: "Over short-tier target (1500) at 1.13: Q.90-91 open the law treatise with the five-fold map, which the entry must lay out whole; linkage across four traditions plus Wright/Rohr justifies the modest over-run."
+length_note: "COUNTING BOUNDARY — the CANONICAL one recorded for this vault, not a new one: frontmatter block stripped (wherever it sits), the auto-linked Related-records trailer excluded, bare horizontal-rule separators dropped, tokens matched as [A-Za-z']+. This is the boundary that has reconciled seventeen of seventeen days across the 2026-09-15 runs. SELF-CORRECTION, filed rather than quietly fixed: this pass first recounted with a whitespace split, which is a THIRD convention and understates the canonical count by roughly four percent; the numbers below are the canonical ones. AMENDED 2026-09-18 by the pass that edited the body, per the standing rule that a body edit owes this note an amendment in the same edit. Pre-repair canonical recount 1755 against a declared 1724 (+31, the ordinary one-directional understatement). Post-repair 2140, ratio 1.427, OUTSIDE ±25%. Every one of the +385 words is citation apparatus, not argument: four Bridges bullets that named a tradition with no id at all (Hoffman, Friston, Wright, Rohr) were anchored or, in Wright's case, converted to a declination with its 66-record search radius written out, and the Stump bullet's id-less gesture at Levin was anchored to PRS-01/PRS-03. The original justification still holds on its own terms (Q.90-91 must lay out the five-fold map whole), but it is no longer what carries the overrun. Trimming to band would now mean deleting anchors to clear a threshold, which the constitution forbids. Recorded, NOT re-escalated: this is a further instance of the standing apparatus-vs-body length question raised with Tom from four directions on 2026-09-11 and open since — short-tier files are where it bites, because anchoring costs roughly the same words regardless of tier."
 karpathy_wiki_sources:
-  - "wiki/traditions/levin/wiki.md (morphogenetic field as eternal-form analog)"
-  - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology; Thomistic final cause framing Levin's morphogenetic teleology)"
-  - "wiki/traditions/hoffman/wiki.md (interface theory; species-specific access to a deeper reality)"
+  - "wiki/traditions/levin/prs_triplets.md (PRS-01 bioelectric circuits encoding anatomical target states, Confidence High; PRS-03 morphological attractor formalism — morphogenetic goal-seeking as free-energy minimization, Confidence High; anchored 2026-09-18, previously a bare wiki.md pointer with no id)"
+  - "wiki/traditions/stump/prs_triplets.md (PRS-04 final causality and modern biology, Label Implicit, Confidence Medium — its Solution is expressly a C2A2 integration claim of Tom's; Thomistic final cause framing Levin's morphogenetic teleology)"
+  - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 Interface Theory of Perception — perception as adaptive interface, not truth-mirror, Confidence High; anchored 2026-09-18, previously a bare wiki.md pointer with no id)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-01 consciousness primary, matter its expression — the mind-as-primitive resource this entry uses; PRS-02 individual identity within monism / dissociation, which anchors the perspective-limitation thread)"
-  - "wiki/traditions/friston/wiki.md (active inference; agents under generative models)"
+  - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler, Label Implicit, Confidence Medium — the premise only, carrying no precision or miscalibration claim; PRS-28 neuromodulatory precision-weighting, Confidence Medium with the register's lecture-forthcoming caveat — the nearest record on miscalibration, and a clinical one; anchored 2026-09-18, previously a bare wiki.md pointer with no id)"
   - "wiki/master/C2A2_master_wiki.md (cross-program convergence on form/pattern as causally real)"
-  - "Wright, Surprised by Hope (law in service of new-creation vocation)"
+  - "wiki/traditions/rohr/prs_triplets.md (PRS-21 the Universal-Christ-in-creation frame, Confidence Medium — anchored 2026-09-18, previously the canonical title only; the canonical-title fallback was licensed until the register existed and the register now carries 79 records)"
+  - "wiki/traditions/wright/prs_triplets.md (DECLINATION, radius named: no record covers the Old/New Law distinction or divine law — full 66-record scan 2026-09-18; PRS-20 call-and-vocation, Medium-High, is adjacent and NOT the anchor)"
+  - "Wright, Surprised by Hope (law in service of new-creation vocation — canonical-work strength, standing in for the declined register anchor above)"
   - "Rohr, The Universal Christ (eternal Logos as cosmic pattern)"
 evidence_strength_summary: "Aquinas's structural definition is conceptually clean; Levin's morphogenetic-field claims are empirically grounded; Hoffman's interface theory is formally precise but interpretively contested; Kastrup's idealism is metaphysical argument; the theological readings of law-as-pattern are interpretive."
-length_ratio_to_target: 1.149
+length_ratio_to_target: 1.427
 mind_first_reframe: "Aquinas's five-fold map of law (eternal, natural, human, divine, fomes) is preserved as a typology of how a single pattern is accessed, but the eternal pattern is reframed as internal to mind-at-large rather than transcendent — eternal law as the deep computational structure of mind-stuff, natural law as the species-specific interface, fomes as miscalibrated generative-model priors."
 central_theme_thread: "Natural law is the limited-perspective access to the eternal pattern; perspective-limitations are not bugs but the condition of agent individuation, and the fomes names the empirical fact that bringing limited perspectives into closer alignment with the deeper pattern is irreducibly developmental work — 'salvation worked out in fear and trembling.'"
 tags: [synthesis, day/106, theme/law-as-pattern, theme/perspective-limitation]
-last_qc_at: "2026-09-11T12:22:25"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-18T22:32:39"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 106 — Law (Contemporary)
@@ -96,12 +98,12 @@ The *fomes* (Q.91 a.6) is the empirical fact that this is hard. The Levin/Fristo
 
 ## Bridges
 
-- **PRS-04 (Stump-tradition wiki — Tom's re-description of Stump on final causality)**: Aquinas's eternal-law-as-exemplar maps to final-cause-as-real. *Speculative* metaphysically; *empirical* in Levin's morphogenetic instantiation.
-- **Hoffman (species-specific interface)**: Natural law as interface-real. *Formal* mathematically; *interpretive* metaphysically.
-- **Friston (active-inference dynamics)**: *Fomes* as miscalibrated generative-model priors. *Empirical* in formal models; *speculative* as full account of moral psychology.
+- **PRS-04 in the Stump-tradition `prs_triplets.md` (final causality and modern biology) + PRS-01 and PRS-03 in the Levin-tradition `prs_triplets.md`**: Aquinas's eternal-law-as-exemplar (Q.93 a.1) maps to final-cause-as-real, and the Levin records supply the instantiation the Stump record is *about* — PRS-01, bioelectric circuits encoding anatomical target states (**High**), and PRS-03, morphogenetic goal-seeking formalized as basins of morphological attraction (**High**), which is the "attractor in a real state-space" claimed above. (Grades separately, not averaged: Stump PRS-04 is **Medium**, Label *Implicit*, and its Solution is expressly a C2A2 integration claim of Tom's rather than a result — so *speculative* marks the Thomistic framing and *empirical* marks the two Levin records, not the bridge as a whole.)
+- **PRS-03 in the Hoffman-tradition `prs_triplets.md` (Interface Theory of Perception — perception as adaptive interface, not truth-mirror; **High**)**: natural law as interface-real — the eternal pattern *as accessible by natural light*, not the pattern itself. *Formal* (the fitness-beats-truth result); *interpretive* metaphysically, and the identification of natural law with the interface is this entry's own move.
+- **PRS-04 in the Friston-tradition `prs_triplets.md` (organism as active modeler; Label *Implicit*, **Medium**), with PRS-28 as the nearest record on miscalibration (neuromodulatory precision-weighting; **Medium**, under the register's own lecture-forthcoming caveat)**: the *fomes* (Q.91 a.6) as priors locally adapted to a corrupt distribution. Anchored at two Medium records rather than one strong one, deliberately: PRS-04 is the active-modeler premise and carries **no** precision or miscalibration claim, and PRS-28's miscalibration is a *clinical* result about symptom-formation, not about a corrupt training distribution. The step from either to Aquinas's wounded nature is **this entry's extension**. *Formal* in the models; *speculative* as moral psychology.
 - **PRS-01 (`wiki/traditions/kastrup/prs_triplets.md`, Kastrup — consciousness primary, matter its expression)**: the register supplies mind-as-primitive (Explicit, Confidence High); the further identification of the eternal law with the *structure* of that mind is this commentary's own extension, not a recorded claim. *Metaphysical resource empirically unforced; the eternal-law identification theological/interpretive*.
-- **Wright, *Surprised by Hope* (covenant theology of law)**: Old/New distinction as developmental stages of vocation. *Theological/exegetical*.
-- **Rohr, *Universal Christ***: Eternal Logos as cosmic pattern, eternal law non-dualistically. *Contemplative-theological*.
+- **Wright anchor withheld on divine law, radius named** — the divine-law reading (Q.91 a.4-5, Old and New Law as stages of one vocation) stands on *Surprised by Hope* and the Pauline corpus, not on a register id. The full **66-record** Wright register was scanned 2026-09-18 for *Torah*, *Mosaic*, *Old/New Law*, *divine law*, *Decalogue*, *commandment*, *nomos*, *moral law*, *vocation*: the only "law" hits are PRS-06 (resurrection as new creation, not law-violation), PRS-34 (works of the law as covenant *badge practices*, **High**) and PRS-45 (corporate faith) — covenant membership and the science/faith frame, none the Old/New sequence. PRS-20, call-and-vocation (**Medium-High**), is named as the nearest neighbour and expressly *not* the anchor. (Declination; *theological/exegetical*, canonical-work strength only.)
+- **PRS-21 in the Rohr-tradition `prs_triplets.md` ("creation as the first incarnation," the Universal-Christ-in-creation frame held inside the Franciscan tradition; **Medium**)**: the eternal Logos as cosmic pattern — the record is the contemplative-Christian articulation of mind-monism that this entry's first reframe appeals to in dissolving the pattern/creation gap. The step from that frame to *eternal law* as such is this entry's own. (*Contemplative-theological*.)
 
 ## Where this leaves us
 

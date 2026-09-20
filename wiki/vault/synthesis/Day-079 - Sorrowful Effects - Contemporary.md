@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-29 the cross-shaped vision of purpose — suffering inhabited cruciformly rather than explained; the entry names Rohr's contemplative reading of suffering as its pairing; PRS-60 the Spirit as the present operation of the future world, read off the goal of new creation and grounded in Romans 8's creation-groaning, Medium). DECLINATION CLOSED 2026-09-13: the 2026-09-05 stamp declined to anchor Romans 8 'creation groans', correctly, at 59 records — the only hit was PRS-15's Resource line naming it in passing as a text contradicting the souls-go-to-heaven story. The register now reads 66 and PRS-60, added 2026-09-10, treats the text directly. The declination went false by register growth exactly as the standing rule predicts; the anchor replaces the canonical-works fallback. Control: `Romans` returns 5 hits across the 66, so the file was reachable."
 evidence_strength_summary: "Q.37 a.4's claim that sorrow is most harmful to the body is empirically very well supported by modern psychoneuroimmunology — chronic stress/grief mediated through HPA axis, vagal tone, inflammatory markers, telomere shortening; Q.36 a.3's craving-for-unity is metaphysical but resonates with Levin's bioelectric coherence at cellular and tissue scales. Q.37 a.1 moderate-sorrow-as-impetus-to-learn maps onto optimal-precision findings in predictive processing."
 tags: [synthesis, day/079, theme/sorrow-effects, theme/somatic-cost]
-last_qc_at: "2026-09-13T16:25:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T18:28:47"
+last_qc_outcome: "pass"
 ---
 
 # Day 79 — Sorrowful Effects (Contemporary)

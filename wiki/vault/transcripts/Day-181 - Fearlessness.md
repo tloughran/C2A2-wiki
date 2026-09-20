@@ -16,15 +16,17 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-181 - Fearlessness - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/181, pars/II-II, q/126-127]
-last_qc_at: "2026-09-11T16:22:38"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-19T04:29:11"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 181 — Fearlessness
 
 > Typo cleanup (QC sweep 2026-07-30): foolheartiness -> foolhardiness; foolardiness -> foolhardiness; "sukunda sukun day" -> "Secunda Secundae"; themsself -> themself. All four are ASR mishearings of proper/technical terms; no wording of Habash's argument was altered.
 
-Day 181 takes up the two vices that flank fortitude on the side opposite timidity: fearlessness (the defect of too little fear) and foolhardiness (the excess of daring).
+> Apparatus marking (QC sweep 2026-09-19): the orienting sentence below stood as unmarked body prose in the editor's third-person voice ("Day 181 takes up...") and measured 0.04 four-gram coverage against a live ASR refetch — Habash does not say it. Its content is sound and is derivable from what he does say at [01:17]-[01:40], so it is marked as apparatus in the italic form used elsewhere in this vault rather than deleted. No word of Habash's speech was altered, added, or removed.
+
+*Secunda Secundae, Q.126-127. Editor's orientation: the two vices that flank fortitude on the side opposite timidity — fearlessness (the defect of too little fear) and foolhardiness (the excess of daring).*
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa podcast, where we study St. Thomas Aquinas's Summa
 

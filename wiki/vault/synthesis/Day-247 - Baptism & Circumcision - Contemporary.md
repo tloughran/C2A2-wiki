@@ -3,7 +3,7 @@ day: 247
 title: Baptism & Circumcision (Contemporary)
 pairs_with: "[[Day-247 - Baptism & Circumcision]]"
 length_target_words: 2200
-length_actual_words: 867
+length_actual_words: 1097
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 active modeler; PRS-10 active inference as framework for reasoning — selection among competing world models)"
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/loughran/prs_triplets.md (PRS-08 tradition-crossing inquiry; PRS-09 Synergistic Coils — the PRS lineage: Kuhn + MacIntyre + Levin via James)"
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder — the disorder necessary for growth)"
 evidence_strength_summary: "Covenant continuity-with-revision theological (Wright, high); generative-model revision formal (Friston); tradition-as-rational-progress is Tom's PRS lineage (Kuhn/MacIntyre), not a thinker's self-description; central-theme moderately engaged."
-length_ratio_to_target: 0.394
-length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened)."
+length_ratio_to_target: 0.499
+length_note: "Compact-by-design: III Q.70 (baptism/circumcision continuity) rendered in tight, complete PRS form; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). RECOUNTED 2026-09-19 PRE-EDIT AT EXACTLY 867, reproducing the stored field to the word, so nothing here is attributable to arithmetic staleness; the boundary was calibrated first against Day 027 (3152, reproducing its recorded +4 residual) and Day 164 (2464, exact) before being trusted. This run then added 230 words of citation apparatus to the two Friston bridge bullets — carrying PRS-04's (Implicit)/Medium grade, carrying PRS-10's High/paper-backed grade with its artificial-reasoning domain named as this commentary's extension, and naming PRS-22 as the collective-scale record the section's community-level claim actually wants: 867 to 1097, ratio 0.394 to 0.499. No argument was added, removed or reweighted, and no anchor was repointed. Boundary used: YAML frontmatter block stripped wherever it sits, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. Still far below the -25% floor and still inside the standing band; note also that this day is the sharpest instance of the 241-257 dropped-question escalation (Habash announces Q.69 and Q.70; summa_ref records Q.70; the commentary treats circumcision only), so part of the shortfall is that missing question, not compression."
 mind_first_reframe: "Baptism-replacing-circumcision is reframed as a faithful structural revision of a covenant community's generative model — the deep prior (membership through faith in Christ) is conserved while the tracking sign is reconfigured — so the earlier sign is fulfilled, not falsified."
 central_theme_thread: "A tradition that revises its signs while conserving its telos is the social-temporal form of perspective-limited guidance: no generation perceives the whole, so the community computes toward loving unity across acts of an unfinished drama, each revision a better-resourced approximation."
 tags: [synthesis, day/247, theme/sign-revision-across-covenants]
-last_qc_at: "2026-09-08T10:31:10"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-19T00:23:53"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 247 — Baptism & Circumcision (Contemporary Parallel)
@@ -48,8 +48,8 @@ The project holds that limited agents need guidance from those who perceive more
 
 ## Bridges
 
-- **Friston PRS-04 (active modeler)** — *formal.* Belief revision within a scheme.
-- **Friston PRS-10 (active inference as framework for reasoning)** — *formal.* Selection among competing world models — the structural revision that conserves the deep prior while changing surface signs.
+- **Friston PRS-04 (`traditions/friston/prs_triplets.md`; organism as active modeler)** — *formal in shape, but the record is Label "P4 (Implicit)" and **Confidence Medium** — Tom's reconstruction of what predictive coding implies, not a Friston publication in that form.* Belief revision within a scheme. The maturity of the wider free-energy literature belongs to that literature, not to this entry.
+- **Friston PRS-10 (`traditions/friston/prs_triplets.md`; active inference as a framework for artificial reasoning)** — *formal, **Confidence High**, paper-backed (Friston et al., "Active inference and artificial reasoning," arXiv:2512.21129).* Selection among competing world models via expected free energy and Bayesian Model Reduction — the structural revision that conserves the deep prior while changing surface signs. **Two limits stated so they can be refuted:** the record is written for *artificial* reasoning, so applying it to a covenant community is this commentary's extension (Day 263 declined the same record as an out-of-domain reach for a sacramental claim, and the disagreement is deliberate — here the record's own Solution, model selection under expected free energy, is what is being used, not a nearby gloss); and both records cited in this section are **individual-agent** records, while the claim this section makes is about a *community* revising its model. **Friston PRS-22** (group-level Markov blanket — a collective sustaining one satisfies the formal conditions to be modelled as a single active-inference agent; **Confidence High**, paper-backed, *As One and Many*) is the record that scale actually wants. It is named rather than substituted: repointing would change what this commentary is anchored to, so it is escalated for Tom's call, not applied here.
 - **Wright PRS-02 (`traditions/wright/prs_triplets.md`; faithful improvisation on the five-act drama)** — *scriptural, high within method.* Covenant continuity-with-revision: deep immersion in the preceding acts plus creative responsiveness to the present scene.
 - **Wright PRS-34 (`traditions/wright/prs_triplets.md`; "works of the law" as covenant badge practices)** — *scriptural, high within method.* Circumcision is named among the badges: justification is the declaration of membership, so the badge is the tracking sign, not the mechanism — exactly the conserved-prior-under-revised-sign structure.
 - **Loughran PRS-08 / PRS-09 (`traditions/loughran/prs_triplets.md`; tradition-crossing inquiry; Synergistic Coils)** — *methodological lens, authored by Tom.* Tradition as rational P/R/S progress, with MacIntyre's second-first-language criterion for tradition maturity — cited by direction-of-authorship.

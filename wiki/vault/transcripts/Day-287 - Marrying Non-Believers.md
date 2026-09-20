@@ -16,7 +16,7 @@ fetched_at: 2026-06-22
 fetch_path: sandbox youtube-transcript-api (innertube playlist id resolve)
 synthesis: "[[Day-287 - Marrying Non-Believers - Contemporary]]"
 tags: [summa, day/287, pars/suppl, q/59-60]
-last_qc_at: "2026-08-10T14:28:40"
+last_qc_at: "2026-09-19T04:29:12"
 last_qc_outcome: "pass"
 ---
 

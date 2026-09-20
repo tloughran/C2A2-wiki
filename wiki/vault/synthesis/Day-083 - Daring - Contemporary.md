@@ -86,8 +86,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-02 order-disorder-reorder)"
 evidence_strength_summary: "Dual-process theory, embodied cognition / somatic-marker, broaden-and-build, and active-inference precision-weighting are empirically robust. Hemispheric account is clinically supported. Conscious-realist-monist reading of antecedent vs. consequent passions as alter-level fast/slow is metaphysically speculative. Wright on Phil 2:12 and Rohr on order-disorder-reorder are theologically well-attested."
 tags: [synthesis, day/083, theme/daring, theme/fear-effects, theme/antecedent-consequent, theme/phil-2-12]
-last_qc_at: "2026-09-13T18:33:28"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T20:23:09"
+last_qc_outcome: "pass"
 
 ---
 **Related tradition records** (auto-linked 2026-06-11): [[traditions/friston/prs_triplets|Friston PRS]] · [[traditions/fredrickson/prs_triplets|Fredrickson PRS]] · [[traditions/rohr/prs_triplets|Rohr PRS]]

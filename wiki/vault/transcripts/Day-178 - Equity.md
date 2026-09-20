@@ -16,7 +16,7 @@ fetched_at: 2026-05-31
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-178 - Equity - Contemporary]]"
 tags: [summa, day/178, pars/II-II, q/120-121]
-last_qc_at: "2026-09-11T16:22:37"
+last_qc_at: "2026-09-19T04:29:09"
 last_qc_outcome: "pass"
 ---
 

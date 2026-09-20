@@ -87,8 +87,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, Medium — phantasm as icon-of-the-always-already-present pattern. Replaced 2026-09-04 a 'canonical fallback' line; the register carries 44 entries)"
 mind_first_reframe: "Q.83's libero arbitrio is preserved as compatibilist-formal: free choice is the agent's real computation under FEP with policy distribution under-determined within the means-space; God's universal causality survives as the substrate's pattern instantiating itself as the alter's structure rather than necessitating from outside. Q.84's phantasm is structurally Hoffman's icon — the alter's perspective-limited representation of what the icon is an icon of. Active-intellect-abstracting-essence-from-phantasm is the reference-frame-held model reused compositionally rather than compressed up a hierarchy (PRS-04, PRS-20), operating under predictive coding (HTM-as-cortical-FEP, CROSS-011). Q.84 a.5's participated-likeness-of-the-uncreated-light is the alter's cognitive priors as partial inheritance of the substrate's pattern."
 central_theme_thread: "Each alter's free choice is real internal computation, the substrate's pattern operating in-the-mode-of-being-this-alter; each alter's knowing operates on icons (phantasms) that are the structural form of perspective-limitation in cognition. Salvation in fear and trembling on the epistemological register is the progressive refinement of the alter's icons toward better fit with the substrate's pattern — without ever becoming the substrate itself in the natural state, which is reserved for the beatific limit case."
-last_qc_at: "2026-09-13T00:20:45"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T12:23:12"
+last_qc_outcome: "pass"
 tags: [synthesis, day/043, theme/free-will, theme/phantasm, theme/interface-theory, theme/abstraction, theme/active-inference, theme/agency-at-every-scale]
 
 ---

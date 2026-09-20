@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "traditions/stump/prs_triplets.md (PRS-05 union as the final cause of permitted suffering, from Wandering in Darkness; PRS-08 suffering through narrative phenomenology, from Grains of Wheat)"
 evidence_strength_summary: "Q.35 a.7 (inward pain exceeds outward) has strong empirical/mathematical support from hierarchical predictive coding — higher-level errors have larger downstream effects. Q.35 a.8 four species of sorrow maps closely onto modern affective taxonomies (compassion, envy, anxiety, anhedonic withdrawal) — empirically supported. Q.34 a.3 on enjoyment of God is the speculative/theological claim — reframed as substrate-recovery under Kastrup."
 tags: [synthesis, day/078, theme/sorrow, theme/inward-pain]
-last_qc_at: "2026-09-13T16:25:03"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T18:28:47"
+last_qc_outcome: "pass"
 ---
 
 # Day 78 — Sorrow and Pain (Contemporary)
