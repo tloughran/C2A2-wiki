@@ -34,3 +34,21 @@ The CAC weekly summary closes with a practice drawn from Tish Harrison Warren's 
 **Synthesis claim.** These are not necessarily rivals, and the resolution is worth stating precisely because the network's habit would be to record a tension and stop. Broaden-and-build is about the *availability* of alternatives in the repertoire; Norman's claim is about *releasing representational commitment to the incumbent arrangement*. An agent can have a wide repertoire and still be unable to act on it while the current arrangement is held as non-negotiable. If that reading holds, lament and broadening are complementary operations on different objects — one clears, one supplies — and the ordering claim is compatible with broaden-and-build rather than contradicting it.
 
 **Open question the wiki cannot yet answer.** Is there evidence either way? Norman offers two illustrations (Ezekiel's symbolic public actions; a contemporary Oakland housing case), and two illustrations are not a test — the proposal says so itself. Fredrickson's own literature has the instrumentation to settle it: does induced negative-affect processing about a status quo increase, decrease, or leave unchanged the generation of alternatives, controlling for broadened repertoire? Nobody appears to have asked. Note also the standing warning that broaden-and-build's home id is file-dependent in this vault; do not anchor this to an id without checking.
+
+
+---
+
+## Shame as the gate on resonance
+*Sewing Agent, 2026-09-20*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-20_rohr_preacher-of-love-temple-dignity.md` (PROP-2026-09-20-002, 0 backlinks).
+
+**Why it sits here:** Rohr's explanation of Paul's uptake speed is not theological but social-psychological: the message did not add a deity to a crowded pantheon, it **removed shame** from populations that had been systematically stripped of standing — enslaved people from Asia Minor, women held as property, the temple-prostituted, in a setting with no live concept of human rights. Fredrickson's positivity resonance requires conditions Rohr's setting negates: mutual attention, perceived safety, and behavioural synchrony between people who regard each other as present to one another.
+
+**Synthesis claim.** Shame is not merely unpleasant on Fredrickson's account; it is **structurally incompatible with the mechanism** — it withdraws gaze, suppresses the mutual-attention loop, and blocks the very co-experience through which resources are built. So a message whose content is "no evaluation can rank you" is, translated into her framework, an intervention on the gating variable of resonance at population scale. That gives Rohr's historical causal claim a mechanism rather than leaving it as a plausible reading, and it gives Fredrickson's dyadic model something it rarely has: a natural experiment with a stated intervention, a stated population, and a recorded outcome.
+
+The prediction that distinguishes this from a generic feel-good effect is available and should be written before anyone is tempted by the easy version: if the mechanism is shame-removal unblocking resonance, then uptake should be **fastest where baseline shame was highest and the social ranking most explicit**, and the effect should appear in *relational* measures — new cross-status bonds, shared practice — rather than in reports of individual mood. Rohr's own data point cuts the right way: the good news landed hardest among the lower classes, the enslaved, widows and women, with women serving as apostles, teachers and benefactors. That is a relational outcome, not an affective one.
+
+**Open question the wiki cannot yet answer:** Does dignity conferred *propositionally* — by being told one is the temple of God — actually unblock resonance, or does it require the co-experienced encounter Fredrickson says is the unit? Her whole framework insists that the dyadic moment, not the belief, is what builds resources. If so, Rohr's mechanism cannot work by the proposition alone and must run through the community that repeats it, which would make the corporate reading of the temple language (see `synthesis/wright_rohr_bridge.md`, same date) the one his own causal story needs.
+
+**Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_preacher-of-love-temple-dignity]]

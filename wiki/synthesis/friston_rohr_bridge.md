@@ -58,3 +58,19 @@
 **Open question the wiki cannot yet answer:** Does the contemplative literature actually report no-loss uniformly, or does it report a dark night — loss followed by no-loss? If the latter, the prediction is about the *endpoint* and the mapping needs a temporal index, which active inference could supply (transient prediction-error spike during model revision) and Rohr's statement as written does not.
 
 **Wikilinks (sewing, 2026-08-30):** [[2026-08-28_rohr_glory-of-god-point-of-nothingness]]
+
+
+---
+
+## An error term that is not to be minimized
+*Sewing Agent, 2026-09-20*
+
+**Orphaned page at the intersection:** `inbox/proposals/pending/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md` (PROP-2026-09-20-003, 0 backlinks).
+
+**Why it sits here:** Rohr's Week Thirty-Seven Practice denies that spiritual law has any causal power over divine regard — it cannot earn, increase or decrease it — and then says what law is *for*: sharpening awareness of who one actually is and who God is. Law is a measuring instrument. Deviation from it is informative rather than culpable, which is why Rohr can say God "uses our mistakes in our favour" without the sentence being mere leniency. In active-inference vocabulary the mapping is immediate: the norm is the generative model, deviation is prediction error, and error is the update term.
+
+**Synthesis claim.** The mapping holds for one step and then breaks in a way that is more interesting than the mapping. An active-inference agent is *trying to drive prediction error toward zero*; minimization is the whole dynamics. Rohr's diagnostic signal is not something the agent is trying to eliminate — accurate self-assessment is the **product** of the process, not its residual. An agent that successfully minimized this error would, on Rohr's account, have learned nothing, and would in fact be the Philippians 3 Pharisee: faultless observance, error near zero, and a hateful and violent man. **So the two frameworks agree that error is informative and disagree about whether its elimination is the goal.** That disagreement is sharp, it is stateable in each framework's own terms, and neither wiki currently records it.
+
+**Open question the wiki cannot yet answer:** Does the free energy principle have room for an error term that is not to be minimized — a channel whose informational value depends on its remaining nonzero? The obvious candidate answer is that the relevant quantity is *expected* free energy over policies, where epistemic value rewards keeping some uncertainty live in order to resolve it. If that is the right translation, then Rohr's law is an epistemic-affordance device rather than a prediction-error device, and the analogy should be restated at that level. If it is not, this is a genuine limit of the framework's reach and should be filed as one rather than smoothed over.
+
+**Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]]

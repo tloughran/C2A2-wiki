@@ -3227,3 +3227,84 @@ first limb may be unanswerable if no pre-16:30 copy exists — which would itsel
 and OPEN-240 are instrument questions whose scope is the whole estate, not the artefact that surfaced them.*
 
 ---
+
+## 2026-09-19
+
+OPEN-241:
+  Date raised: 2026-09-19
+  Question: Did the voice-shell suite degrade, or did the suite change? Failures moved 8 → 11 **and** the
+    row count moved 363 → 364 **and** the commit moved c0eda6e → f9e2f83, all in one night.
+  Raised from: ASSUMPTION-1527, ASSUMPTION-1528.
+  Why it matters: Three days of RED have been narrated as decay. If the added row is one of the eleven
+    failures, part of the "decay" is new coverage finding old breakage — which is the opposite
+    conclusion. OPEN-237 (how old is the breakage) cannot be answered until this is.
+  Status: OPEN — `git log --stat c0eda6e..f9e2f83` plus the two status files. One command, two minutes.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-241
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1528)
+    Current status: OPEN
+
+OPEN-242:
+  Date raised: 2026-09-19
+  Question: What writes 134 files in 2.6 seconds at 22:00, and why did the 14:25 window stop? Tonight the
+    two windows recorded on 09-18 became one, and the set grew from ~8 files to 134 — including a closed
+    day's changelog, a closed day's metrics snapshot, and ~70 Summa synthesis files.
+  Raised from: ASSUMPTION-1538, ASSUMPTION-1539; continues OPEN-224, OPEN-231, OPEN-239.
+  Why it matters: Fifth consecutive day observed, fifth consecutive day unnamed — and every "unchanged
+    since" and "modified today" figure in the estate is computed from mtimes this process rewrites. One
+    new datum tonight: the git-debris window (ASSUMPTION-1551) is also 22:00, on two successive nights,
+    which is the first evidence pointing at a git operation rather than an rsync.
+  Status: OPEN, **and now cheaply testable for the first time**: store `shasum` of the ~70 Summa
+    synthesis files tonight, re-run tomorrow after 22:05. Identical hashes prove restamp-without-change
+    and close five days of inference. This is the one-line test the window-watching has lacked.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-242
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1538)
+    Current status: OPEN
+
+OPEN-243:
+  Date raised: 2026-09-19
+  Question: Which specialists fire on a cadence slower than their source publishes, and how large is each
+    one's structurally invisible window? The Rohr gap (five CAC meditations per week, 09-14→09-18) is one
+    instance; the set has never been enumerated.
+  Raised from: ASSUMPTION-1540; PRESUMPTION-1048 (routed to 15a/15b).
+  Why it matters: The Rohr gap was found by accident, because the orchestrator happens to read the CAC
+    archive index directly. Any specialist without that accident has an unmeasured hole. This is a
+    sampling problem with a closed-form shape, not a per-agent bug.
+  Status: OPEN — in-house: tabulate each specialist's cron against its source's publication rate. One
+    table, one afternoon, answers it for all fifteen traditions at once.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-243
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1540)
+    Current status: OPEN
+
+OPEN-244:
+  Date raised: 2026-09-19
+  Question: Is the scheduled-task sandbox the right execution substrate for tasks whose inputs grow
+    without bound? Two tasks died today on one wall — a 6.94 GB database against a ≤5.9 GB scratch
+    ceiling — and the OpenStory run's own words are "the gap is widening, not closing."
+  Raised from: ASSUMPTION-1530, ASSUMPTION-1531; PRESUMPTION-1043, PRESUMPTION-1044.
+  Why it matters: Both runs proposed fixes, both fixes were scoped to their own task, and **neither run
+    named the other's failure**. The question is not which patch to apply but whether a per-task patch is
+    the right shape of answer at all. The estate has already made this move once — the daily-run commit
+    step was migrated to launchd on the Mac for exactly the "sandbox can't do this" reason, and the
+    metabolism run names that precedent itself.
+  Status: OPEN — needs Tom. It is an architectural call, not a command.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: OPEN-244
+    Item type: OPEN QUESTION (raised from ASSUMPTION-1531)
+    Current status: OPEN
+
+*Four raised 2026-09-19 (241–244). **Three are commands; OPEN-244 needs Tom** and is the first
+architectural question raised by this pass in some weeks. OPEN-242 is, for the first time in five days
+of observation, accompanied by a concrete one-line test rather than a further description of the window.*
+
+---

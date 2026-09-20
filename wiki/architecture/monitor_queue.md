@@ -24057,3 +24057,270 @@ MONITOR-415 — CLOSED to REVISE-478 (DISPOSITION-968).
   known to be wrong rather than merely unverified: at k=5, "null" should read "inconclusive." The
   leave-one-conversation-out recomputation this entry named at intake has not been run in 75 days, so a
   further monitor cycle would have changed nothing. See REVISE-478.
+
+
+================================================================================
+## 2026-09-20 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run fired on schedule.** 15d last ran 2026-09-13; interval 7 days, the contracted cadence. Today is
+**day 20**, so under the standing day-1-7 rule the **monthly cycle does not fire.** 15d does not evaluate
+evidence; it re-triggers 15a/15b and tracks trajectories.
+
+### THE FINDING THAT SHOULD BE READ FIRST: THE CONSUMER MAY HAVE STOPPED
+
+`lit_search_returns.md` has not been written since **2026-09-16**. There is no 15abc run report for
+2026-09-17, -18 or -19. Over the same three days 14a/14b filed intake on each night. **Arrivals
+continued; service did not.** The 09-18 intake block in `for_lit_search.md` says this in its own words
+and files it as PRESUMPTION-1042 / OPEN-238, with the possibility that the lit-search session is dead.
+
+This changes what the backlog number means. For seventeen runs 15d has reported a lane draining slowly.
+**A lane draining slowly and a lane with no consumer produce the same standing count and are not the same
+condition,** and 15d cannot tell them apart from the register alone — three days is short enough to be a
+pause and long enough to be a stop. **Stated as the open question it is, not resolved.** If the session is
+dead, then every item this run queues is queued into a pipeline with no reader, and that should be said
+before the queueing is counted as routing.
+
+### Consumption check
+
+Block-level parse, same method as 2026-08-30 and 2026-09-13 (block extent = tag line to next tag line or
+next header/separator; a block is consumed when its status line carries `[DISPOSITIONED-15c: date]`).
+
+**THREE BLOCKS DRAINED IN SEVEN DAYS.** All three on 2026-09-16, all three from the single oldest
+literature cohort (2026-07-12), all three literature-routed, all three 66 days late:
+
+- **MONITOR-403** (PRESUMPTION-414) — REFRESHED, cycle 1 -> 2, remains open (DISPOSITION-966). **The only
+  item in eleven weeks whose evidence moved on BOTH sides in one cycle.** Its discharge condition is now
+  a named instrument (PROXIMA-style proxy-reliability correlation) rather than a wish. Next check 09-21.
+- **MONITOR-404** (PRESUMPTION-416) — CLOSED to REVISE-477 (DISPOSITION-967), after 79 days.
+- **MONITOR-415** (PRESUMPTION-439) — CLOSED to REVISE-478 (DISPOSITION-968), after 75 days.
+
+**MONITOR-404 was closed for the right reason and it is worth naming.** 15c closed it because its
+discharge condition was always a human ruling and 79 days of monitor cycles could not supply one. That is
+the correct disposal of an item the lane cannot serve, and it is the first time an item has been taken out
+of monitoring for being **mis-routed rather than resolved.** The same reasoning would empty a large part
+of the empirical lane, and 15c should be asked whether it generalises.
+
+**Zero empirical blocks drained. Eighteenth consecutive interval.**
+
+### Processed this run
+
+- **23 first re-triggers (cycle 0 -> 1) of 24 items due.** MONITOR-585..599 and -601..-608 — the intake
+  cohort 15c filed 2026-08-31..2026-09-14 whose `Next check` 15d supplied on 09-13 as today. Block-by-block
+  check confirms each source item carries exactly ONE prior block (its intake block, already
+  SEARCHED/DISPOSITIONED) and **no standing 15d block.** Genuine first re-triggers, not duplicates.
+  Queued in `for_lit_search.md` with `[RE-TRIGGER by 15d: 2026-09-20, cycle 1]`; per-entry `Cycle:`,
+  `Last checked:`, `Evidence trajectory:` and `Next 15d check: 2026-09-27` recorded there.
+  **Routing: 8 [QUEUED] literature, 15 [QUEUED-EMPIRICAL]. This run adds EIGHT items to the unsearched-
+  literature backlog, not 23.**
+  **Four of the eight are cheap and owed by name:** MONITOR-605 needs a standards retrieval (ISA-18.2 §3
+  or IEC 62682, OPC UA Part 8); MONITOR-606 needs one full-text fetch (Kawamoto BMJ 330:765, currently
+  VERIFIED only via the CRD/DARE abstract); MONITOR-602's search is named at intake and was never run
+  (Doyle / de Kleer, truth maintenance); **MONITOR-586 was named at its own intake as the first item to
+  draw if a run had spare budget and is still undrawn three weeks later.**
+  **MONITOR-585 and -586 were DELIBERATELY under-searched at 2 queries per direction** under the
+  reserved-budget protocol. They are MONITOR partly for that reason, and a second thin pass would not
+  discharge them — they need full budget or an honest note that the budget will not be given.
+
+- **MONITOR-600 (ASSUMPTION-1305, limb C) — 15d CORRECTS ITS OWN ERROR AND MOVES IT TO MONTHLY.**
+  15c filed it `Monitoring cadence: Monthly; first read when the 30-day series exists`. The 09-13 run
+  supplied it a weekly date under the empty-`Next check` rule **without reading the cadence line 15c did
+  write.** Cadence is 15c's to set; 15d supplies dates only. Moved to the monthly lane, next check
+  **2026-10-04**, not re-triggered today. *Stated, not silently fixed (Rule 12).*
+
+- **A SECOND ERROR IN THE 09-13 DATE SWEEP, DISCLOSED.** That run stated its dates were "applied ONLY
+  where 15c wrote no date; no 15c date overridden." **It overrode at least one: MONITOR-606 carried a
+  15c-written `Next 15d check: 2026-09-19`, which the sweep rewrote to 2026-09-20.** The item was due
+  either way and nothing was lost, but the rule was stated and then not kept, and a rule kept only when
+  convenient is not a rule. 15d's own defect, filed against 15d.
+
+- **Weekly carry-overs NOT duplicate-queued; next_check 2026-09-20 -> 2026-09-27; cycle counts
+  UNCHANGED.** This covers the 09-13 first-re-trigger cohort (MONITOR-545, -546, -549..-566, -571..-584),
+  the 08-16/08-23 per-entry cohort (MONITOR-500, -501, -503..-507, -509, -510, -512..-523, -525..-527,
+  -529..-531), the 08-30 cohort (MONITOR-532..543), and the ~148 cohort-level carry-overs
+  (MONITOR-345..499 less exits). **Their 15d blocks remain standing and unconsumed, and those blocks ARE
+  the operative search requests** — re-queueing them would duplicate work already in the queue.
+  **Cycle counts are held because no search ran. A cycle is a search, not a calendar tick.**
+
+- **Low-priority / monthly cohort (MONITOR-001..344) untouched, next_check remains 2026-10-04.**
+
+- **Not yet due, untouched:** MONITOR-609, -610 (2026-09-21 — the first cohort in three to arrive with
+  its `Next check` field filled in by 15c), MONITOR-403 (2026-09-21), MONITOR-547, -548 (monthly,
+  2026-09-25).
+
+- **Event-driven, untouched:** MONITOR-003 (continuous), MONITOR-041 (per billing-error event),
+  MONITOR-154 (per-incident), MONITOR-544 (first Wright/Rohr-invoking synthesis).
+
+- **Monthly INCORPORATED premise re-checks: NOT RUN.** Day 20. See ESCALATION 5.
+
+- **No new 15c intake to 15d since 2026-09-16.** Consistent with the consumer having stopped.
+
+### Evidence trajectories
+
+- **The 23 first re-triggers:** all move 0 -> 1 with trajectory **"no prior cycle — baseline."** Not
+  "stable": there is nothing yet to be stable against.
+- **All weekly carry-overs:** trajectory reads **"unchanged BY CONSTRUCTION — no search ran."**
+  *Convention retained, sixth run running.* This is what PRESUMPTION-772 / MONITOR-516 is about, and it is
+  still sitting in the queue the defect describes.
+- **MONITOR-403 is the exception and the only real trajectory datum this week:** supporting Moderate (UP
+  from Weak-Moderate), challenging Moderate-Strong (UP from Moderate). **Both directions strengthened in
+  the same cycle** — the first such reading in this register since 2026-09-02. A cycle that moves both
+  sides is evidence the item is real and under-specified, not that it is stalling.
+
+### Stale sweep
+
+No weekly carry-over advanced a cycle this run, so **no carry-over crossed the 4-cycle threshold and no
+item-level STALE-MONITOR-FLAG is raised.** MONITOR-021, -025 and -030 remain past the threshold on count
+but were found on 08-11 to have new sources on both sides; the rule requires *4+ cycles with no change in
+evidence* and they do not meet it. Flag withheld, reason recorded.
+
+Both population flags from 09-13 are **re-raised.** The second is materially strengthened by this week's
+three exits.
+
+```
+STALE-MONITOR-FLAG (POPULATION FORM — third raising; routing, not cycle count)
+  Item: the [QUEUED-EMPIRICAL] population — 114 standing blocks before this run, +15 today = 129,
+    plus the open empirical limbs of MONITOR-005 and MONITOR-012.
+  Cycles completed: 1 each on the counter; ZERO evidence passes on any of them
+  Evidence trajectory: stable BY CONSTRUCTION — no instrument ran, so nothing could move
+  Recommendation: ESCALATE to Tom, and do NOT downgrade to monthly
+  Reasoning: the prediction has now held three intervals running. 3 of 3 blocks drained this week
+    were literature; 0 of 114 standing empirical blocks were touched. Cumulative: 10 of 10 over
+    three weeks. Downgrading these to monthly would slow a clock that is not the binding constraint.
+  NEW THIS RUN: MONITOR-601 is TIME-COUPLED — FLAG-023's window is time-limited and the monitor
+    expires with it. This is the second pre-registered measurement (after MONITOR-560's scoring
+    window) that will be lost to elapsed time rather than to a negative result. The cost of the
+    unassigned measurement role is now demonstrably recurrent, not anecdotal.
+  ALSO NEW: MONITOR-595, MONITOR-596 and REVISE-432 are discharged by ONE 50-cell blind gold set;
+    MONITOR-597 and REVISE-433 by ONE relation-graph test. Five register items, two measurements.
+    The empirical lane is smaller than its block count suggests, and that is an argument for
+    running it, not for deferring it.
+```
+
+```
+STALE-MONITOR-FLAG (second population form — the stale-downgrade rule itself; second raising)
+  Item: the 2026-07-05 LOW-PRIORITY-MONITOR cohort (81 blocks still standing, now 77 days old)
+  Evidence trajectory: IMPROVING against the items, which is the point.
+  Recommendation: ESCALATE to Tom / 15c — review the stale-downgrade rule; do not downgrade more
+    items under it until reviewed.
+  Reasoning last run: of 6 cohort members searched, 6 went to REVISE. Staleness measured cadence,
+    not truth.
+  STRENGTHENED THIS RUN: the 2026-07-12 cohort has now supplied its first three. Two of three went
+    to REVISE (MONITOR-404, -415); the third (MONITOR-403) strengthened on both sides and stayed
+    open. **Running total across both downgraded cohorts: 9 searched, 8 to REVISE, 1 still open,
+    0 confirmed.** An item that sits still is not thereby a quiet item. On this evidence the
+    downgrade rule is selecting FOR defects and then slowing the clock on them.
+```
+
+### ESCALATION 1 (carried, 10th run post-fire) — MONITOR-420 auto-escalate trigger STILL FIRED, STILL UNACTIONED
+MONITOR-420 / ASSUMPTION-428's trigger fired 2026-07-19, **63 days ago.** Tenth consecutive run surfacing
+it with no 15c re-disposition. The 09-16 backlog draw reached the 2026-07-12 cohort and stopped at three
+items; MONITOR-420 is in the 07-19 cohort, one cohort further back. **15c should issue the REVISE; 15d
+does not disposition.**
+
+### ESCALATION 2 — BACKLOG-FLAG (17th consecutive surfacing) — LANE AT 304
+Standing unconsumed 15d blocks: **250 (close of 08-30) -> 281 before this run -> 304 after.** Drain over
+7 days: **3.** At the observed rate (10 blocks in 21 days) this lane clears in roughly **91 weeks**, and
+that figure assumes a consumer that has not written anything for three days. The oldest cohort
+(2026-07-05) stands at **81 blocks and is 77 days old.**
+**Arithmetic correction, filed rather than smoothed:** the 09-13 run recorded **280** standing at its
+close; a clean re-parse of the same file by the same method gives **284** at that date. The 4-block
+difference comes from the running figure being carried forward by addition and subtraction across runs
+rather than recomputed. **From this run the figure is recomputed from the file each time.** The 08-30
+figure (250) reproduces exactly under the re-parse, so the drift entered at 09-13. *(Rule 7: the two
+numbers are not averaged; the recomputed one wins and the other is named.)*
+Recommendation (unchanged, now **17 runs old**): **ESCALATE to Tom** — make the oldest-first backlog draw
+standing policy, or re-scope the 15d cadence to observed 15a/15b throughput. **Amendment retained and
+now thrice-confirmed: re-scoping alone will not work, because this is two queues.** Its literature half
+is served in occasional bursts; its empirical half is not served at all. **Two queues, two remedies —
+and possibly, this week, zero consumers.**
+
+### ESCALATION 3 (carried) — MONITOR-423 starvation trigger: MET again
+MONITOR-423 / ASSUMPTION-430's trigger keys on runs with zero non-HIGH backlog burned. Three blocks burned
+this interval, **all three from the single oldest literature cohort.** Nothing outside the served route
+moved. 15c to confirm and act. Related: MONITOR-425 (PRESUMPTION-459) priority-staleness — the 07-05
+items are now aged **77 days** at queue-time priority, and MONITOR-601 shows priority-staleness is not
+merely cosmetic: an item can expire while holding a Medium.
+
+### ESCALATION 4 (carried from 2026-08-09; 18th run) — NAME AN AGENT THAT MAY RUN IN-HOUSE MEASUREMENTS, OR STATE THAT NONE MAY
+**MONITOR-005 (ASSUMPTION-013) and MONITOR-012's empirical limb passed their 2026-09-08 auto-escalate
+with their tests unrun; the trigger has now been fired for twelve days with no 15c action.**
+Count of monitored items blocked on unauthorised measurements: 21 of 22 (08-09), +6 (08-16), +23 (08-23),
++9 (08-30), +26 (09-13), **+15 this run — 129 standing empirical blocks.**
+Per PREMISE-131 a conversion trigger nobody can pull is a warning, not a control.
+**MONITOR-525 and -526 (the seeded-defect trial) remain unrun for a fourth run.**
+*15d has no channel to Tom other than this file and its run output — the 18th in-channel repetition with
+no effector, exactly what PREMISE-138 says does not work.*
+
+### ESCALATION 5 (second raising) — THE MONTHLY LANE HAS NO CATCH-UP RULE, AND THE DEFICIT GREW
+The weekly lane has an implicit catch-up; **the monthly lane does not.** It fires only on day 1-7, so
+today (day 20) it does not fire and the next opportunity is 2026-10-04.
+Measured from a full parse of `validated_premises.md` (203 entries parsed, 205 distinct PREMISE ids):
+**100 ACTIVE premises are past their `Re-check due`, up from 89 on 09-13** — the deficit grew by 11 in
+seven days, which is simply the rate at which dates fall due with nothing discharging them. The oldest is
+**42 days** past (2026-08-09). 18 of the 19 re-check blocks queued on 2026-08-02 are **still standing and
+unconsumed, 49 days on.**
+**Parse correction, stated rather than quietly replaced:** the 09-13 run reported **4** premises with no
+`Re-check due` field (PREMISE-166, -167, -168, -182). A per-entry parse this run finds **19**:
+PREMISE-010, -142, -145, -147, -148, -156, -157, -158, -159, -165, -167, -169, -172, -182, -183, -184,
+-200, -202, -205. Three of these (PREMISE-145, -147, -148) are premises the 09-13 run itself reported as
+having had their `re_check_due` **advanced to 2026-10-04** — **the advance did not land in the file.**
+That is a write that was reported and not made, and it is the more serious half of this finding.
+15d did not supply dates: a premise's re-check cadence is a 15c judgment about how fast that premise's
+literature moves. **15c owes 19 dates, and 15d owes an account of three fields it said it wrote.**
+Recommendation: **ESCALATE to Tom** — either (a) give the monthly lane a catch-up rule ("if the first
+Sunday was missed, the next run of any kind discharges it"), or (b) state that premise re-checks are
+quarterly in fact and amend the register's fields to match. **What should not continue is a register that
+records a monthly cadence it does not have.**
+
+### What improved this week, said plainly because the escalations are long
+
+1. **15c wrote the lane exits.** MONITOR-404 and MONITOR-415 both carry proper closure records in the
+   2026-09-16 block, with REVISE ids and reasons. This defect has been filed against 15c for four runs;
+   **this run it did not recur.** The thirteen historical unwritten exits remain unwritten.
+2. **The 2026-09-14 intake arrived with `Next check` filled in** (MONITOR-609, -610, both 2026-09-21).
+   Two consecutive cohorts had arrived without it. **This run 15d supplied no dates it was not owed.**
+3. **MONITOR-403's discharge condition became an instrument.** "What would change the disposition" moved
+   from a wish to a named, runnable correlation. That is the shape every entry in this file should have.
+
+### Register defects observed, not repaired by 15d
+
+1. **~148 weekly-lane items still have no per-entry 15d scheduling lines.** Their schedule lives only in
+   these run logs; a reader of a single entry cannot tell when it is next due. Filed, not repaired —
+   writing 148 blocks of scheduling text into a 1.6 MB file is a register-format change and is not 15d's
+   to make unilaterally. **5th run filed.**
+2. **Cycle-number inconsistency inside the 2026-07-05 cohort persists** (5th run): five items drawn 08-08
+   at cycle 6, twelve drawn 08-11 from the same cycle-5-tagged cohort at cycle 5. Surfaced, not averaged,
+   not renumbered.
+3. **MONITOR-001 / MONITOR-010 still carry one question as two items** since 2026-04-13; both
+   REVISION-FLAGGED, so the merge request at REVISE-293(3) sits in Tom's queue twice.
+4. **MONITOR-590's scheduling lines are misfiled.** The `Cycle: 0 / Next 15d check: 2026-09-20` block
+   that belongs to MONITOR-590 was appended at the END of the 2026-09-02 cycle-5 section, after the
+   "NOT SEARCHED THIS CYCLE" note about MONITOR-009 — so it reads as scheduling for MONITOR-009, which is
+   out of the lane at REVISE. 15d's own 09-13 write. **Flagged here rather than moved**, because
+   relocating text inside another run's block would falsify that block's record.
+5. **MONITOR-607's intake note states "15d has not run since 2026-08-02 (six weeks)." That is wrong.**
+   15d ran 2026-08-09, -16, -23 and -30. The note is 15c's and its caveat ("so this date is provisional")
+   was built on the error. Correction filed; the date itself is unaffected.
+6. **Thirteen historical lane exits still unwritten by 15c** (the 08-25 five, MONITOR-498, and the seven
+   of 2026-09-13). Read from this file alone they still look ACTIVE. **5th run filed** — but see
+   "What improved," item 1.
+
+### Budget note (Rule 6, surfaced not smuggled)
+This run exceeded the 4,000-token per-task budget by a wide margin. The overrun is in ANALYSIS, not
+output: the register is 1.6 MB with at least four incompatible entry formats, so establishing what was
+actually due required a programmatic parse of three files rather than a read. **The budget is not wrong;
+the register's format is.** Defect 1 above is the same finding from the other side — a register whose
+schedule cannot be read from its entries costs a full parse every week. **Recommendation: this is the
+cheapest of the standing escalations to fix and the only one 15d could execute itself given permission.**
+
+**Run summary:** 23 first re-triggers queued (8 literature, 15 empirical), 1 item (MONITOR-600) corrected
+to the monthly lane after a 15d cadence error, ~205 weekly carry-overs advanced 2026-09-20 -> 2026-09-27
+with cycles held, 3 lane exits recorded (2 to REVISE, 1 refreshed), 0 premise re-checks (monthly does not
+fire on day 20), 2 population-level STALE-MONITOR-FLAGs re-raised (the second materially strengthened:
+9 searched from the downgraded cohorts, 8 to REVISE, 0 confirmed), 0 item-level stale flags.
+**Standing lane recomputed from file: 281 -> 304; observed drain 3 blocks in 7 days, 10 in 21.**
+**5 escalations carried and one new fact underneath all of them: `lit_search_returns.md` has not been
+written since 2026-09-16 while intake continued for three nights, so the lane this run adds to may
+currently have no consumer.** Two 15d self-defects disclosed (the MONITOR-600 cadence error, the
+MONITOR-606 date override) and one reported-but-unmade write surfaced (three premise `Re-check due`
+advances). Queue state current as of 2026-09-20.

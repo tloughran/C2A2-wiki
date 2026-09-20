@@ -118,3 +118,21 @@ The genuinely exposed entry is **2026-07-26**, and not for the reason given: it 
 **Open question the wiki cannot yet answer:** Is Rohr's "vote for coherence and benevolence" a form of second-personal knowing at all, or is it a propositional trust claim about the universe with a person substituted as object after the fact? If the latter, PRS-07 is the wrong target too.
 
 **Wikilinks (sewing, 2026-09-06):** [[2026-09-06_rohr_faith-and-doubt-correlative]] · [[2026-09-06_rohr_cruciform-pattern-coincidence-of-opposites]]
+
+
+---
+
+## Insufficiency and fullness as one movement
+*Sewing Agent, 2026-09-20*
+
+**Orphaned pages at the intersection:** `inbox/proposals/pending/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md` and `inbox/proposals/pending/2026-09-20_rohr_preacher-of-love-temple-dignity.md` (PROP-2026-09-20-003 and -002, 0 backlinks each).
+
+**Why they sit here:** Rohr's account of what law does is that recognizing one's own insufficiency and encountering God's fullness are *one movement rather than two* — not failure followed by rescue. Stump's second-person account holds that knowledge of self and knowledge of the other are not separable stages of one act. The resemblance is close enough that the wiki will be tempted to file it as convergence.
+
+**Synthesis claim.** They are not the same claim and the difference is worth keeping. Stump's is **epistemic**: a mode of knowing that cannot be decomposed into propositional components without loss. Rohr's is about the **temporal structure of a single act**: two things that look sequential are one. One could be true without the other — a second-person mode of knowing could still unfold in stages, and a non-sequential act need not be second-personal. What makes the pair productive is that each supplies what the other lacks: Stump has the metaphysics of why the composite act is not reducible to its parts (form, level-specific causal power, the whole as the bearer), and Rohr has a concrete phenomenological case of it in a domain Stump writes about but does not describe from the inside.
+
+The second card sharpens this into a decidable question. Rohr grounds human dignity in indwelling — inherent, universal, indestructible by any evaluation — and PROP-2026-09-20-002 flags that if Wright's **corporate** reading of Paul's temple language is correct, the dignity inheres in a composite and distributes to its constituents. That is a hylomorphic structure, and Stump's machinery is the network's only equipment for distinguishing it from dignity inhering in each person independently. The distinction is not decorative: on the distributive reading, a person's dignity depends on membership in a whole and the whole's persistence conditions become the person's; on the independent reading it does not.
+
+**Open question the wiki cannot yet answer:** If dignity is a causal power of a composite — the body, the people, the church — vested in the configuration rather than in the constituents, what happens to the dignity of a constituent that leaves the composite? Rohr's three properties say the dignity is indestructible; a distributive account says it is inherited. Those are in tension and neither card notices. Stump's own extension of the dyad argument to "peoples and the church" in *What Are We?* is where the answer would have to come from.
+
+**Wikilinks (sewing, 2026-09-20):** [[2026-09-20_rohr_pauls-transforming-vision-weekly-summary]], [[2026-09-20_rohr_preacher-of-love-temple-dignity]]

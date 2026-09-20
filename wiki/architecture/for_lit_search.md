@@ -22276,3 +22276,241 @@ service has stopped. If the lit-search session (OPEN-238) is dead, these two ite
 pipeline with no consumer, and that should be said plainly rather than counted as routing.
 
 ---
+
+## 2026-09-19 — intake
+
+PRESUMPTION-1043 — [QUEUED]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Origin: 14b · Chain: [14b → 15a/15b]
+  Claim to test: A failure taxonomy organised per-component systematically hides causes shared across
+    components, and the independence it implicitly assumes inflates estimates of system reliability.
+  Search directions for 15a (support): common-cause and common-mode failure analysis (beta-factor and
+    alpha-factor models; NUREG/CR common-cause methodology); the treatment of independence assumptions
+    in fault-tree and PRA reliability estimation; shared-resource contention and correlated failure in
+    distributed systems; post-incident literature on multi-service outages traced to one substrate
+    (shared storage, shared quota, shared clock).
+  Search directions for 15b (against): arguments that per-component ownership produces faster mean time
+    to repair than cross-cutting analysis; that common-cause modelling is intractable or
+    over-parameterised outside safety-critical domains; that organisational per-team fault ownership is a
+    feature (clear accountability) whose costs are overstated.
+  Why it is testable: Reliability engineering has studied exactly this failure of decomposition for
+    forty years, with formal models and a large empirical incident literature.
+  Risk if wrong: High. Two C2A2 tasks have been carried as independent FAIL rows for over two weeks and
+    died tonight on one 5.9 GB ceiling; the estate is about to receive two separately-scoped patches.
+  Related: ASSUMPTION-1530, ASSUMPTION-1531, ASSUMPTION-1532; OPEN-244; PRESUMPTION-1044.
+  Status: [QUEUED]
+
+PRESUMPTION-1047 — [QUEUED]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Origin: 14b · Chain: [14b → 15a/15b]
+  Claim to test: Case-by-case restraint by individual agents is not a substitute for a stated policy on
+    the use of personal, biographical and grief-related material about identifiable living subjects whose
+    work a system tracks.
+  Search directions for 15a (support): research ethics on publicly available data about identifiable
+    living persons (the "public does not mean consented" line in internet-research ethics; AoIR ethics
+    guidelines); ethics of automated profiling and dossier-building on named individuals; bereavement and
+    grief-data research ethics; professional codes governing biographical treatment of living scholars;
+    the scholarly-attribution literature on curation, compilation and byline (for the Rohr/Armas limb).
+  Search directions for 15b (against): arguments that fully public statements by public intellectuals
+    carry no further consent obligation; that ex ante policy is worse than situated judgement for novel
+    cases; that attribution norms for curated devotional and editorial material already settle the
+    byline question without a new rule.
+  Why it is testable: Both limbs sit in mature, explicitly normative literatures with published codes.
+  Risk if wrong: Medium, in an unusual currency — the pipeline does not break; the project's standing
+    with the people it tracks and writes to does. Two unilateral rulings were made on this the same day
+    with no covering rule.
+  Related: ASSUMPTION-1541, ASSUMPTION-1546.
+  Status: [QUEUED]
+
+PRESUMPTION-1048 — [QUEUED]
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Origin: 14b · Chain: [14b → 15a/15b]
+  Claim to test: A monitoring agent sampling at a slower rate than its source publishes has a
+    structurally invisible coverage window whose size is determined by the two cadences, and whose
+    failure mode is a null report indistinguishable from a quiet period.
+  Search directions for 15a (support): sampling theory and aliasing (Nyquist–Shannon; the closed form for
+    what a periodic sampler misses in a continuously published signal); coverage error in periodic
+    sampling of continuously updated corpora; media-monitoring and news-alerting cadence design;
+    search-recall decay in systematic-review update intervals; the distinction between polling the stream
+    and polling the index.
+  Search directions for 15b (against): arguments that event-driven or index-driven retrieval makes
+    cadence irrelevant; that for low-rate, high-persistence sources (archives that do not expire) a slow
+    sampler loses nothing but latency; that the aliasing analogy misapplies a continuous-signal result to
+    a discrete, indexed, permanently retrievable corpus.
+  Why it is testable: The formal half is classical signal theory; the applied half has a substantial
+    information-retrieval literature.
+  Risk if wrong: High, and silently so — fifteen traditions, fifteen cadences, one window found by
+    accident because the orchestrator happened to read the source index directly.
+  Related: ASSUMPTION-1540; OPEN-243.
+  Status: [QUEUED]
+
+**Lane arithmetic.** Tonight adds **3** items — all PRESUMPTIONs, the highest routing count in a
+fortnight, and the first night on which every routed item names a mature literature rather than a
+plausible one. **No ASSUMPTION from tonight's twenty-eight was routed**, and the reason is unusually
+clean: three are corrections to claims made today (1528, 1532, 1536), one reconciles two instruments
+(1537), and the remainder are estate measurements whose test is a command — `git log`, a `shasum`
+comparison, an `ls -l`, a rerun — not a citation. Routing them would be routing chores to a literature
+agent.
+
+**Drain.** The pipeline was observed **running** tonight at 23:38 EDT (55 turns, a new working line on
+PRESUMPTION-1019), which refutes the 09-18 reading that it had not advanced in ~27.5 hours
+(ASSUMPTION-1536). It has still produced no report since `2026-09-16_15abc_run_report.md` — four days.
+So the honest statement tonight is narrower than yesterday's and no more comfortable: **the consumer is
+alive and has delivered nothing for four days**, while arrivals continue at ~2–3/night. That is
+PRESUMPTION-1042's arithmetic unchanged, with one fewer excuse available for it.
+
+**Counting caveat (PRESUMPTION-1050, applied to this file).** A `grep -c 'QUEUED'` over this register
+returns 2,598, but that is a substring count and cannot distinguish an item's `Status: [QUEUED]` line
+from its header line or from a mention in prose. It is reported here as a raw line count, not as an item
+count, and this register still carries no authoritative count of its own.
+
+---
+
+================================================================================
+## 2026-09-20 — 15d Periodic Monitor re-triggers (weekly cycle; 23 re-triggers of 24 items due)
+
+**Run context.** 15d last ran 2026-09-13. Today is **day 20**, so under the standing day-1-7 rule the
+**monthly cycle does not fire** — the September monthly remains undischarged beyond the bounded 6 queued
+on 09-13, and the next monthly fire is 2026-10-04. See ESCALATION 5 in monitor_queue.md.
+
+**23 first re-triggers (cycle 0 -> 1) of 24 items due: MONITOR-585..599 and -601..-608.** These are the intake cohort 15c
+filed between 2026-08-31 and 2026-09-14 whose `Next check` field 15d supplied on 09-13 as 2026-09-20.
+Block-by-block check against this file confirms each source item carries exactly ONE prior block — its
+intake block, already SEARCHED/DISPOSITIONED — and **no standing 15d block.** Genuine first re-triggers.
+
+**MONITOR-600 is NOT in this cohort and is NOT re-triggered.** 15c filed it `Monitoring cadence: Monthly;
+first read when the 30-day series exists`. The 09-13 run supplied it a weekly date (2026-09-20) under the
+empty-field rule without reading the cadence line 15c did write. **That was 15d's error and 15d corrects
+it here:** MONITOR-600 moves to the monthly lane, next check **2026-10-04**. Cadence is 15c's to set.
+
+**Routing, 15d alone, one reading not two (PREMISE-120): 8 [QUEUED] literature, 15 [QUEUED-EMPIRICAL],
+1 moved to monthly.** This run adds **EIGHT** items to the unsearched-literature backlog, not 24.
+
+--------------------------------------------------------------------------------
+### Literature-bearing (8) — the only items this run adds to the search backlog
+
+PRESUMPTION-896 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-585)
+  **Deliberately under-searched at 2 queries per direction under the reserved-budget protocol, and it is
+  MONITOR partly for that reason.** Owed on full budget: the remediation-rate literature (what fraction
+  of filed software defects are ever fixed) and a replication check on the moral-licensing source, which
+  is one on-point paper from a distant domain (board directors) in a literature with known replication
+  problems. Priority: Medium.
+
+PRESUMPTION-897 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-586)
+  **Named by its own intake as the first item to draw if a run has spare budget, and still undrawn.**
+  Also 2-query under-searched. Owed: wiki navigability at scale; IR index bloat; retrieval quality as a
+  function of corpus size. 15b found NO peer-reviewed source at all last pass, only trade material — the
+  adverse reading currently rests on the estate's own series rather than on published work. Priority:
+  Medium (intake rule: RAISE TO HIGH if the connected fraction falls below 15%; last reading ~16%).
+
+ASSUMPTION-1244 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-589)
+  **The only surviving novelty flag of four nominated in the 2026-08-30 intake, and the highest-value
+  literature item in this cohort.** Both directions returned empty on whether contemplative-tradition
+  stage frameworks encode normative ascent the way psychometric ones do; two contexts searching opposite
+  directions both empty is a stronger null than one. Owed: a targeted pass on Rohr's own sources (John of
+  the Cross, Teresa's mansions, the Cloud author). **15c's note that this may be better routed to Agent
+  19 than to 15a/15b is carried forward and not decided by 15d.** Priority: High.
+
+ASSUMPTION-1303 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-598)
+  *Derived question from 15b's DECLARED LITERATURE GAP; the source item itself went INCORPORATE as
+  PREMISE-201, limb-split.* Owed and narrow: any before/after measurement of alert-precision improvement in a channel following a
+  threshold amendment. 15b searched for this and did not find it; a second null from a second budget is
+  worth having, and if it is again null the item should be re-routed as an in-house series rather than
+  re-queued a third time. **15b's null is a SEARCHED-AND-NOT-FOUND, not an unsearched gap — a second
+  null should be read as a finding, not as a reason for a third pass.** Priority: Medium.
+
+ASSUMPTION-1315 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-602)
+  LIMB A only. **The search is named at intake and was not run:** the truth-maintenance-system literature
+  (Doyle; de Kleer) on whether an absence claim is invalidated by any later ingest into its scope. This
+  is a settled formal literature, not a novelty question. Priority: Medium-High.
+
+PRESUMPTION-955 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-605)
+  Corrective limb. **Cheap and specific: standards retrieval, not open search** — ISA-18.2 §3 (or IEC
+  62682) and OPC UA Part 8 on ternary status vocabularies (PASS / DEGRADED / FAIL). The realised harm is
+  already carved out to REVISE-457 and is NOT part of this item. Priority: Medium.
+
+ASSUMPTION-1321 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-606)
+  REMEDY limb (push vs pull) only. **Owed literature limb is one full-text fetch:** Kawamoto et al. 2005
+  (BMJ 330:765), currently VERIFIED only through the CRD/DARE critical abstract (NBK71623). **Do not
+  quote the 112.1 workflow-feature figure — its upper bound is infinity.** The cheaper path (a) is the
+  PREMISE-108 base-rate measurement and is empirical; it is noted here, not queued as a search.
+  Priority: Medium.
+
+PRESUMPTION-979 [QUEUED] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-608)
+  Comparative limb only, held at intake explicitly as **a literature gap** (15a NOVELTY-FLAG): the
+  relative uptake of a prose qualification against a structured status field. The determinative limb is
+  already released to REVISE-466 and is not re-queued. Priority: Medium.
+
+--------------------------------------------------------------------------------
+### Empirical / in-house measurement (15) — no literature search is owed on these
+
+*Queued, not skipped (15d does not drop items), and tagged so they cannot be mistaken for owed search
+work. Every one names a discriminating test that exists on paper and has no runner.*
+
+ASSUMPTION-1241 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-587)
+  15b's planted-bad-challenge test — **the only test proposed anywhere in this cohort that can FAIL
+  LOUDLY.** Blocked behind content-grading (REVISE-422). Priority: High.
+ASSUMPTION-1242 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-588)
+  Missing instrument: an intake-layer field recording what VARIED across co-arising proposals.
+  Priority: High.
+ASSUMPTION-1246 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-590)
+  One in-house question — does the two-mention promotion rule check independence? **Its literature limb
+  is CLOSED as not worth further budget** and is not re-queued. Priority: Low.
+ASSUMPTION-1251 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-591)
+  Two independent workers apply "authored structure"; agreement is the datum. Priority: Low.
+ASSUMPTION-1256 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-592)
+  **Action-blocked, not evidence-blocked:** discharges when REVISE-434 is acted on (criterion written).
+  Priority: Medium.
+ASSUMPTION-1258 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-593)
+  **Action-blocked:** discharges when III.2.0 is written. Priority: Medium.
+ASSUMPTION-1261 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-594)
+  **Action-blocked on data access:** needs transcripts for the window reachable (PRESUMPTION-911), then a
+  14a/14b re-run. Priority: Low.
+PRESUMPTION-904 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-595)
+  Sample the 70 `low` cells + the 50 longest for multi-topic content. Part of the SYSTEMIC-RISK-FLAG
+  (sandbox pipeline self-measurement; PREMISE-124). Priority: Medium.
+PRESUMPTION-908 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-596)
+  50-cell two-batch overlap, kappa >= 0.7. **15c's note stands: MONITOR-595, MONITOR-596 and REVISE-432
+  are answered by ONE 50-cell blind gold set. Three items, one measurement, none run.** Priority: Medium.
+PRESUMPTION-915 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-597)
+  Linear-extension test on the III.2 relation graph. **Literature closed; only the measurement is open**,
+  and it is shared with REVISE-433. Priority: High.
+ASSUMPTION-1310 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-599)
+  **Routed empirical on 15c's explicit instruction — "run limb (b) before re-queuing the literature."**
+  Limb (b) is a blind re-run; the AMENDMENT of 2026-09-11 re-founds the item at HIGH and re-scopes the
+  test to the full-corpus NO-CHALLENGE-FOUND count across all 54+ prior cycles, because the original
+  scoping was underpowered by construction. The adversarial-collaboration literature limb (Mellers et al.)
+  is held, not queued. **This item bears on the validity of the pipeline that produced every premise in
+  the register.** Priority: High.
+ASSUMPTION-1308 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-601)
+  MAGNITUDE limb. In-house substitute needs no paywall: re-code a CLOSED sample blind. **Time-coupled —
+  FLAG-023's window is time-limited and this monitor expires with it.** Priority: Medium, and the
+  coupling is the reason it should not wait.
+PRESUMPTION-947 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-603)
+  Limb A. 14b's n=3-per-thinker test. **15a raised a NOVELTY-FLAG and then said explicitly that this
+  should be closed in-house rather than pursued as research — roughly an hour's work.** Priority: High.
+PRESUMPTION-953 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-604)
+  Latency-distribution measurement. **"The measurement, which the estate can produce today and has not."
+  This is the Critical-risk item's number and the common dependency of several others.** Priority: High.
+PRESUMPTION-972 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MONITOR-607)
+  Limb B. REVISE-463 action (3): the in-house false-positive measurement with a denominator
+  (PREMISE-168). **Pure grep — the cheapest test in this cohort, and a favourable result converts the
+  item to REVISE with no external literature at all.** 15a NOVELTY-FLAG; the literature cannot supply
+  this. Priority: High.
+
+--------------------------------------------------------------------------------
+### Not re-triggered this run, recorded so the omissions are not read as oversights
+
+- **MONITOR-600** — moved to the monthly lane per 15c's cadence line; next check 2026-10-04 (above).
+- **MONITOR-609, -610** (next check 2026-09-21), **MONITOR-403** (next 15d check 2026-09-21),
+  **MONITOR-547, -548** (monthly, 2026-09-25) — **not yet due.** Not accelerated.
+- **The whole weekly carry-over population** (MONITOR-345..499 less exits; -500..-543; and the 34 first
+  re-triggers of 2026-09-13, MONITOR-545..584) — **their 15d blocks are still standing and unconsumed in
+  this file, and those blocks ARE the operative search requests.** Re-queueing them would duplicate work
+  already in the queue, not accelerate it. Dates advanced, cycles held; see monitor_queue.md.
+- **MONITOR-001..344** — low-priority/monthly, next check 2026-10-04.
+- **MONITOR-003** (continuous), **-041** (per billing-error event), **-154** (per-incident), **-544**
+  (first Wright/Rohr-invoking synthesis) — event-driven, untouched.
+- **Monthly INCORPORATED premise re-checks — NOT queued this run.** Day 20; the monthly does not fire.
+  100 ACTIVE premises are now past `Re-check due` and 19 carry no `Re-check due` at all. See ESCALATION 5.
+

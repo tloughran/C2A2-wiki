@@ -22447,3 +22447,333 @@ concentration, and itself the signature of a day whose main finding is that the 
 unreliable. No designer speech — **nineteenth consecutive day** (PRESUMPTION-912).*
 
 ---
+
+## 2026-09-19 — Agent 14b end-of-day detection
+
+PRESUMPTION-1043:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That a failure belongs to the task that reported it. The estate's failure
+    taxonomy is organised per-task, so a cause shared across tasks has no place to be recorded and no
+    agent whose job it is to notice.
+  Evidence it was operative: Two runs died today on the same wall — `OSError: [Errno 28] No space left
+    on device` (OpenStory) and `sqlite3.OperationalError: database or disk is full` (metabolism), both
+    copying the same 6.94 GB `open-story.db` into the same ≤5.9 GB scratch. Each wrote a careful,
+    correct, *local* diagnosis. The OpenStory run proposed "two candidate fixes ... Both touch
+    `openstory_db.py`"; the metabolism run proposed "Three shapes". **Neither names the other.** A third
+    run (morning system health) read both failures the same morning and classified the OpenStory one as
+    "a real script error, not the transient contention case" — a per-task category for a substrate fact.
+    The estate has carried these as two separate FAIL rows for over two weeks.
+  Why it was unstated: too foundational to notice — the scheduler registry, the health check, and the
+    changelog are all keyed by task, so "one cause, two tasks" has no representation anywhere.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1530, 1531, 1532; OPEN-244.
+  Testability: **testable via literature** — common-mode and common-cause failure analysis in reliability
+    engineering is precisely the study of per-component fault taxonomies that miss shared substrates
+    (and of why independence assumptions inflate reliability estimates). Also testable in-house: group
+    the last 30 days of FAIL rows by error string rather than by task and see what collapses.
+  Risk if wrong: **High.** Not because the diagnosis is wrong — each is right — but because the estate
+    will now receive two proposals, patch one, and record the other as still-failing, having learned
+    nothing about the ceiling. Fifteen days of "metabolism regen failed" carries exactly this shape.
+  Status: UNTESTED — **routed to 15a/15b.**
+  Source: verified at source in two transcripts read first-hand; the tracebacks are quoted verbatim by
+    their own runs.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1043
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two independent tracebacks naming one artefact, neither citing the other.
+    Current status: UNTESTED
+
+PRESUMPTION-1044:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That the execution substrate is fixed and the workload must be made to fit it.
+    Every proposed remedy today asks how to shrink the read, never whether a scheduled task with a
+    monotonically growing input belongs in a fixed-size sandbox at all.
+  Evidence it was operative: The OpenStory run's two options are "teach `connect_ro` to prefer
+    `VACUUM INTO` a filtered subset" or "convert the scheduled task into a launchd job" — the second
+    does question the substrate, so the presumption is not universal, but it is offered third and
+    unpursued. The metabolism run's three shapes are the same set. Neither run states the growth rate
+    as a rate: 6.86 GB yesterday, 6.94 GB today, ceiling 5.9 GB — the run says "the gap is widening" but
+    no instrument tracks the derivative, so there is no date at which anyone expects this to have been
+    fixed by necessity.
+  Why it was unstated: obvious to participants — the sandbox is where scheduled tasks run, so "where
+    should this run" is not a question the daily cadence has a slot for.
+  Type: structural
+  Related decisions: ASSUMPTION-1530, 1534; OPEN-244.
+  Testability: in-house — plot db size against date, name the crossing date for each remaining
+    sandbox-resident task. The estate has already made the opposite move once (daily-run commit → launchd
+    on the Mac) and the metabolism run cites that precedent, so the pattern exists and is not being
+    generalised.
+  Risk if wrong: **High** — and note the asymmetry: if this presumption is right, nothing is lost by
+    checking. If it is wrong, every patch bought is bought against a moving ceiling.
+  Status: UNTESTED — held in-house; the test is one plot and a list.
+  Source: verified at source (both runs' remedy lists, read first-hand); the sizes are agent-stated and
+    disputed (ASSUMPTION-1534).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1044
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the shape of the remedy sets, not from any stated claim.
+    Current status: UNTESTED
+
+PRESUMPTION-1045:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That the 22:00 restamp is a phenomenon to be characterised rather than a process
+    to be identified — that measuring it more precisely each night is progress toward knowing what it is.
+  Evidence it was operative: Five consecutive days of measurement, each more precise than the last: two
+    windows named (09-16), membership enumerated (09-17), membership corrected (09-18), and tonight a
+    full sweep finding one window, 134 files, 2.6 seconds. Five days, five descriptions, **zero attempts
+    to identify the writing process** — no `fs_usage`, no launchd audit, no content hash. The register
+    entries grow more exact while the question stays where it started. Tonight this pass repeated the
+    move and then noticed it, which is why the one-line hash test appears in OPEN-242 and not in
+    OPEN-224, 231, or 239.
+  Why it was unstated: culturally embedded — the estate's daily instruments are all observational, and
+    an unattended run cannot audit a Mac-side process, so "describe it again" is the only move available
+    from inside the cadence. The presumption is not that description suffices; it is that description is
+    what tonight is for.
+  Type: methodological
+  Related decisions: ASSUMPTION-1538, 1539; OPEN-242; OPEN-224/231/239.
+  Testability: in-house, and cheap — the hash comparison in OPEN-242 costs one command tonight and one
+    tomorrow, and settles restamp-vs-change definitively.
+  Risk if wrong: **Medium.** What is at stake is not the window but everything computed from mtimes,
+    which on this estate includes most "unchanged since" claims. Five days of increasingly precise
+    description have not moved that.
+  Status: UNTESTED — held in-house. **Self-referential**: surfaced by this pass against this pass.
+  Source: verified at source — this pass performed the sweep it is describing.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1045
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the trajectory of four prior register entries plus tonight's.
+    Current status: UNTESTED
+
+PRESUMPTION-1046:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That an agent's declared limits are its actual limits — that a run which lists
+    what it could not verify has thereby bounded its own unreliability.
+  Evidence it was operative: The estate has an unusually strong and genuinely admirable self-correction
+    norm, and today it fired repeatedly: the Wolfram run listed "three honest limits"; the daily run
+    logged a counting trap so nobody re-derives it; Agent 16 adjudicated its own false positive and
+    recorded the adjudication. In every case the limit list is treated downstream as complete — this
+    pass, the evening sync, and the register all read "three honest limits" as *the* three. **Nothing in
+    the estate checks a run's limits list against an independent reading of the same work.** The evidence
+    that this matters is today's own record: the morning health run declared no limits on its OpenStory
+    triage and was wrong (ASSUMPTION-1532); the 09-18 pass declared its coverage carefully and still
+    inferred a dead pipeline that was running (ASSUMPTION-1536).
+  Why it was unstated: obvious to participants — a run that volunteers its weaknesses reads as the
+    trustworthy kind, and the norm is rare enough that its completeness goes unexamined.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1532, 1536, 1546, 1548, 1553.
+  Testability: in-house — take one day's runs and have a second pass re-derive three claims each run did
+    *not* flag. Cost is one evening; the answer is a rate.
+  Risk if wrong: **Medium-High.** A self-auditing system whose audits are trusted in proportion to their
+    candour is vulnerable exactly where candour is sincere and incomplete — which is the normal case.
+  Status: UNTESTED — held in-house. **Self-referential**: this pass's own coverage declaration is an
+    instance.
+  Source: verified at source across four transcripts read first-hand.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1046
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the uniform downstream treatment of declared-limit lists.
+    Current status: UNTESTED
+
+PRESUMPTION-1047:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That an agent may set the estate's policy on personal and biographical material
+    about a living thinker by exercising restraint case-by-case — and that restraint exercised well is
+    the same thing as a policy.
+  Evidence it was operative: The Wolfram run declined to mine a personal health and grief update for
+    first-person observer-persistence material, flagged PRS-CANDIDATE-03 for possible rejection in the
+    file itself, and wrote "**grief is not evidence, and this agent should not mine it as if it were**"
+    — then handed the call to Tom. Separately it declined to give the 09-01 personal update its own
+    proposal: "a health update is not tradition material." Both judgements are, in this reader's view,
+    right. Neither rests on anything written down. The same day, PROP-2026-09-19-003 raised an adjacent
+    unwritten question — how much curation counts as voice, on a page bylined Rohr but bodied by Kat
+    Armas — and also resolved it by putting a caveat on the card's face and deferring. **The estate has
+    fifteen traditions built around living people and no stated policy on biographical material.**
+  Why it was unstated: too foundational to notice — the agents' briefs are about tradition content, and
+    the question of what is *off-limits* in a living person's public output has not arisen in a form that
+    forced it. It arose twice today.
+  Type: normative
+  Related decisions: ASSUMPTION-1541, 1546.
+  Testability: **testable via literature** — research ethics on the use of publicly available
+    biographical, grief-related and social-media material about identifiable living subjects; adjacent
+    work on the ethics of automated profiling of named individuals; and the scholarly-attribution
+    literature on curation, compilation and byline (for the Armas limb).
+  Risk if wrong: **Medium**, but in an unusual currency. Nothing in the pipeline breaks. What is at
+    stake is the standing of a project that writes to the people it tracks — and a policy that lives only
+    in the good judgement of each night's run is one differently-tuned run away from not existing.
+  Status: UNTESTED — **routed to 15a/15b.**
+  Source: verified at source in the Wolfram transcript (quoted verbatim); the Rohr card's caveat is
+    agent-stated, the card's existence verified at the mount.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1047
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two unilateral normative rulings made the same day with no covering rule.
+    Current status: UNTESTED
+
+PRESUMPTION-1048:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That a specialist's firing cadence and its source's publication cadence can be
+    chosen independently — that scheduling is an operations question rather than a coverage question.
+  Evidence it was operative: The Rohr gap is not a bug in the specialist and not a bug in the source. It
+    is the interference pattern of a weekly sampler against a daily source indexed weekly: five
+    meditations per week land after the specialist's cards and before the summary that would catch them,
+    every week, forever. The daily run states the consequence exactly — "structurally invisible to the
+    specialist every single week" — and then frames the remedy as a choice between two agents ("Either
+    the Rohr specialist should also sweep the current week's dailies, or the orchestrator keeps covering
+    it"). What is absent is the generalisation: **nobody asks which other specialists have this shape.**
+    The gap was found only because the orchestrator happens to read the CAC archive index directly —
+    "right now it's covered by accident," in the run's own words.
+  Why it was unstated: obvious to participants — cadences were set per agent, for good per-agent
+    reasons, at a time when the question was "how often should this run," not "what can this miss."
+  Type: structural
+  Related decisions: ASSUMPTION-1540; OPEN-243.
+  Testability: **testable via literature** — this is aliasing: sampling theory gives the closed form for
+    what a sampler at rate f misses in a signal at rate F, and the Nyquist condition states the general
+    remedy (sample faster than the source publishes, or sample the index rather than the stream). Adjacent
+    literature on media-monitoring and systematic-review search cadence, and on coverage error in
+    periodic sampling of continuously published corpora. Also testable in-house via OPEN-243's table.
+  Risk if wrong: **High** — because the failure mode is silent by construction. A specialist that misses
+    a window does not report a gap; it reports zero findings, which is indistinguishable from a quiet
+    week. Fifteen traditions, fifteen cadences, one instance found by accident.
+  Status: UNTESTED — **routed to 15a/15b.**
+  Source: verified at source in two transcripts stating it independently (though from one underlying
+    reading of the CAC index — see PRESUMPTION-1049).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1048
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by generalising a single reported gap to the class of cadence mismatches.
+    Current status: UNTESTED
+
+PRESUMPTION-1049:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That two runs agreeing constitutes corroboration — that "verified at source"
+    means a source agreed, rather than that two *independent* sources agreed.
+  Evidence it was operative: The Rohr gap is stated twice tonight, by the daily run and by the evening
+    sync, and this pass initially read that as independent confirmation. It is not: the evening sync
+    digests the daily run. Both descend from one reading of one archive index. The same shape recurs in
+    the attempt-count disagreement (ASSUMPTION-1543), where three transcripts give two numbers for one
+    card and the disagreement is only visible because they happen not to agree. The estate **has** the
+    correct distinction and uses it well elsewhere: the Wolfram run writes "That is corroboration, not a
+    verbatim quote" about two searches returning the same content, and separately insists on three
+    channels precisely so that "one index being stale" cannot masquerade as a finding. So the concept is
+    present and applied unevenly — which is the mark of a presumption rather than an error.
+  Why it was unstated: culturally embedded — the daily pipeline is a chain (specialist → orchestrator →
+    sync → register), and in a chain, downstream agreement is the normal case and reads like confirmation.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1540, 1543, 1545; PRESUMPTION-1046.
+  Testability: in-house — for one week, tag each register entry with its *root* source rather than its
+    proximate one, and count how many distinct roots the night's entries actually have. The 09-18 pass
+    began this with its first-hand/second-hand ratio; this extends it from "how many hands" to "how many
+    sources."
+  Risk if wrong: **Medium.** The register's confidence is partly a function of repetition, and a chain
+    repeats.
+  Status: UNTESTED — held in-house, extending the 09-18 first-hand/second-hand measurement.
+  Source: verified at source — the chain relationship is visible in the two transcripts.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1049
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a pair of "independent" statements sharing one root.
+    Current status: UNTESTED
+
+PRESUMPTION-1050:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That a counting error is a local fact to be logged rather than a class of error
+    to be designed out — that the right response to a miscount is a note saying "don't re-derive this."
+  Evidence it was operative: The daily run logged the `CROSS-[0-9]*` trap explicitly and generously, "so
+    nobody re-derives it." That is the estate's characteristic and admirable move. But it is the **third**
+    counting dispute on the books this month: this one, the Wright attempt count (seventh vs eighth
+    tonight, ASSUMPTION-1543; and ASSUMPTION-1487 → 1517 resolving an earlier miscount of the same card),
+    and the 09-18 file count (79 → 81). Three disputes, three notes, no structural change. The registers
+    do not carry authoritative counts in their own headers, so every consumer re-derives with its own
+    regex, and each new regex is a new opportunity. Tonight this pass counted the lit queue with
+    `grep -c 'QUEUED'` — a substring count that cannot distinguish an item header from a mention of one —
+    and reports the figure below with that caveat attached rather than a corrected number, which is
+    exactly the move this presumption describes.
+  Why it was unstated: obvious to participants — logging the trap *is* the fix, locally and immediately,
+    and the cost of each re-derivation is small. The accumulation is only visible across weeks.
+  Type: methodological
+  Related decisions: ASSUMPTION-1543, 1548; PRESUMPTION-1042.
+  Testability: in-house — give each register a header line carrying its own count, written by the pass
+    that appends to it. One line per register, once.
+  Risk if wrong: **Medium.** Low per incident; the register's arithmetic is its main claim to being an
+    instrument.
+  Status: UNTESTED — held in-house. **Self-referential**: this pass committed the instance it cites.
+  Source: verified at source (the three disputes are all in the register or tonight's transcripts).
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1050
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by treating three separately-logged incidents as one pattern.
+    Current status: UNTESTED
+
+PRESUMPTION-1051:
+  Date surfaced: 2026-09-19
+  Statement: [inferred] That surfacing a budget breach discharges it — the same move PRESUMPTION-1037
+    identified in fail-loud reporting, now visible in a second rule.
+  Evidence it was operative: Rule 6 says "Surface the breach. Do not silently overrun." Three runs
+    breached it today and all three surfaced it, honestly and with diagnosis: Agent 16 named the
+    watch-list size as a contributing cause; the Wolfram run gave a figure (25–30k), two causes (an HTTP
+    429 retry loop, two oversized pages spilling to temp files) and **a specific one-line fix it did not
+    make** — hardcoding the podcast RSS feed, which "would have replaced about four of this run's calls"
+    — because the fix was outside its write scope; this pass breached it too. The rule's compliance
+    condition is satisfied every day. The cost it was written to control has not gone down, and at least
+    one known remedy sits unimplemented behind a scope boundary. **Compliance and effect have come apart,
+    and only compliance is measured.**
+  Why it was unstated: obvious to participants — the rule says surface, the runs surface, and each run's
+    breach is individually well-justified by a real obstacle.
+  Type: normative
+  Related decisions: ASSUMPTION-1553; PRESUMPTION-1037.
+  Testability: in-house — add one figure to the snapshot: declared breaches this week, and remedies named
+    versus remedies implemented. The gap between those two numbers is the whole question.
+  Risk if wrong: **Medium.** If this is right, Rule 6 has become a reporting ritual and the honest move
+    is to change what it asks for — a budget with a remedy obligation, or no budget. Note the shape is
+    identical to PRESUMPTION-1037 and appeared independently, in a different rule, three weeks later:
+    that recurrence is the substantive finding, not the token count.
+  Status: UNTESTED — held in-house; the two figures are named for the next snapshot to carry.
+    **Self-referential** — this pass is one of the three breaches.
+  Source: verified at source in two transcripts plus this run's own accounting.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1051
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by matching today's Rule 6 compliance pattern against PRESUMPTION-1037's shape.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-19, after 14a. **Nine items (1043–1051)**: epistemic 3
+(1043, 1046, 1049), structural 2 (1044, 1048), methodological 2 (1045, 1050), normative 2 (1047, 1051).
+**No Critical-risk item — fifth consecutive night**; three High (1043, 1044, 1048), two Medium-High
+(1046 and, by its currency rather than its grade, 1047), four Medium (1045, 1049, 1050, 1051). Checked
+against tonight's ASSUMPTION-1527–1554; each names the assumptions it sits under and none restates one.
+**Three routed to 15a/15b (1043, 1047, 1048)** — the highest routing count in a fortnight, and the first
+night on which all three routed items have named, mature literatures (common-cause failure analysis;
+research ethics on biographical material about living subjects; sampling theory and aliasing). Six held
+in-house, each with a named one-command or one-table test. **Four are self-referential** (1045, 1046,
+1050, 1051) — one more than 09-18's unusual three, and for a related reason: tonight's instruments did
+not merely disagree, they were each individually careful and collectively blind, which is a defect only
+an auditor of auditors can see. No designer speech — **twentieth consecutive day** (PRESUMPTION-912).*
+
+---

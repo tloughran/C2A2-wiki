@@ -1389,3 +1389,90 @@ Each carries a `**Wikilinks (sewing, 2026-09-13):**` line; that is the mechanism
 ## Verification (fail-loud)
 
 All 10 pages assert-checked byte-for-byte on their pre-write prefix (SHA-1 of the original length), each carrying exactly one `## Agentic Calls` heading and exactly one `Sewing Agent on 2026-09-13` stamp; YAML frontmatter and existing `## Cross-Tradition Signals` sections intact. All 12 bridge files assert-checked the same way, one `Sewing Agent, 2026-09-13` stamp each. CSV: 1 occurrence of the new row, appended after an assert that no 2026-09-13 row existed. Post-run census re-run from scratch and diffed against the pre-run census; the 12 pages that changed backlink count are all accounted for above. **Nothing deleted, nothing overwritten, no files created in the vault, no probe files left behind. No JS, HTML or CSS touched.**
+
+---
+
+# Sewing Agent Run — 2026-09-20 (Sunday)
+
+*Scheduled run. Vault: 5,117 `.md` files. Connectivity snapshot appended to `architecture/metrics/connectivity_log.csv` as `2026-09-20,4287,744,86,5117` (post-run figures, matching the convention of prior rows).*
+
+## Connectivity
+
+| | pre-run | post-run | prior week |
+|---|---|---|---|
+| orphans (0 backlinks) | 4,297 | **4,287** | 4,231 |
+| sparse (1-2) | 738 | **744** | 738 |
+| connected (3+) | 82 | **86** | 82 |
+| total pages | 5,117 | 5,117 | 5,051 |
+
+The vault grew by 66 files this week and the orphan count grew by 66. Every new file arrived unlinked, which is the normal state for freshly retrieved proposals and is why this agent exists.
+
+## Pages processed: 10 (all orphans, all taken to 1+ backlinks)
+
+| page | backlinks before | after |
+|---|---|---|
+| `pending/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md` | 0 | 3 |
+| `pending/2026-09-20_rohr_preacher-of-love-temple-dignity.md` | 0 | 3 |
+| `pending/2026-09-19_wolfram_return-ama-pure-math-project.md` | 0 | 1 |
+| `pending/2026-09-17_stump_natural-law-metaphysics-creator-antireductionism.md` | 0 | 4 |
+| `pending/2026-09-16_mcgilchrist_members-qa-27-august-2026.md` | 0 | 1 |
+| `pending/2026-09-16_kastrup_headless-way-richard-lang.md` | 0 | 3 |
+| `pending/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md` | 0 | 2 |
+| `pending/2026-09-15_hawkins_visual-saliency-sparser-models.md` | 0 | 1 |
+| `pending/2026-09-15_carroll_ama-september-2026.md` | 0 | 1 |
+| `pending/2026-09-14_levin_microrna-bioelectric-regionalization.md` | 0 | 1 |
+
+**Selection.** `traditions/` again held exactly **one** orphan — `traditions/loughran/papers/README.md`, a directory index untouched since 2026-05-18 — skipped as a system page for the second consecutive week. All ten slots therefore went to `inbox/proposals/pending/`, which holds **20** orphaned proposals dated 2026-09-14 to 2026-09-20. Taken newest-first with traditions spread deliberately: two Rohr cards from the same CAC week were kept together because they pose one consolidated question (below), and `2026-09-19_rohr_power-with-not-power-over.md` was passed over to avoid a third. Ten pending cards remain unprocessed and are first in line next week.
+
+## Agentic calls injected: 61 across 10 pages, 14 thinkers addressed
+
+Loughran 9 · Friston 7 · Hoffman 6 · Stump 5 · Kastrup 5 · Levin 5 · McGilchrist 4 · Wolfram 4 · Carroll 4 · Arkani-Hamed 3 · Hawkins 3 · Rohr 2 · Wright 2 · Fredrickson 2
+
+Threshold 0.4. Four calls this run are **refusals to route**, carried forward from the proposals' own warnings: no PRS minting on the McGilchrist members' Q&A (nothing was heard, and the card correctly declines to write a venue triplet); a Carroll call on the Wolfram card that records CROSS-016 as *checked and not advanced* so nobody re-checks it; and explicit do-not-cross-file-as-convergence instructions to both Kastrup and Hoffman on the Stump paper, where person-foundational and mind-foundational metaphysics are being conflated.
+
+## Bridge notes written (16; two of them seeded previously-empty files)
+
+| file | claim |
+|---|---|
+| `levin_stump_bridge.md` | **Headline.** Restating CROSS-008 from final to formal causality made it weaker in scope and stronger in support — and the mechanism arrived the same week |
+| `carroll_stump_bridge.md` | Does "emergent levels are real" entail "the base level is not causally closed"? Both authors on record, opposite answers |
+| `fredrickson_stump_bridge.md` | First primary-text Stump passage asserting a love-bonded dyad is a causal whole — but is it the same dyad Fredrickson measures? |
+| `loughran_stump_bridge.md` | Accommodation-of-independent-results as an operational scoring rule that needs no shared premises |
+| `friston_hoffman_bridge.md` | Traces are constructed and always exist; blankets are discovered and usually do not. The identification needs a further condition nobody has named |
+| `hoffman_loughran_bridge.md` | **Seeded (was 0 bytes).** The event C2A2 exists to produce happened on someone else's podcast and took 223 days to detect |
+| `kastrup_loughran_bridge.md` | **Seeded (was 0 bytes).** An agent can be a fluent speaker of a tradition and a distorted observer of it, indistinguishably from outside |
+| `hoffman_kastrup_bridge.md` | Whose dashboard? Analytic idealism needs only the loose sense and may be committed against the strong one |
+| `carroll_friston_bridge.md` | Two coarse-graining selection problems; Carroll states his criterion is open and the blanket literature mostly does not |
+| `friston_hawkins_bridge.md` | Expected free energy with measured numbers — and a buildable experiment that could settle whether the reading is post-hoc |
+| `wright_rohr_bridge.md` | Week 37's three Wright-facing flags are one interpretive decision with three consequences |
+| `friston_rohr_bridge.md` | Both make error informative; they disagree about whether eliminating it is the goal |
+| `rohr_stump_bridge.md` | Insufficiency-and-fullness as one movement: epistemic claim vs temporal claim, and what a distributive dignity would cost |
+| `fredrickson_rohr_bridge.md` | Shame is structurally incompatible with resonance, so dignity-conferral is an intervention on the gating variable |
+| `arkanihamed_wolfram_bridge.md` | CROSS-024 stalled for a resourcing reason, not a conceptual one — and that diagnosis transfers to other stalled entries |
+| `loughran_mcgilchrist_bridge.md` | Gated sources are not costing coverage evenly; the bias runs toward the rehearsed |
+
+Each carries a `**Wikilinks (sewing, 2026-09-20):**` line; that is the mechanism by which the ten pages left the orphan set.
+
+## Worth Tom's attention
+
+**1. The run's best finding is a bridge that got weaker on purpose.** `PROP-2026-09-17-001` (Stump, *Natural Law, Metaphysics, and the Creator*) recommends restating CROSS-008: what she actually argues, in her own voice with protein-folding and chemistry cases, is **formal causation and level-specific causal power**, not final causality. The word "teleology" does not occur in the paper, and this is now the third source in which she does not say it. Three days earlier and entirely independently, `PROP-2026-09-14-001` (Egea-Carro, Mafe, Levin, Cervera) reported a bioelectric–transcriptional loop in which **neither layer is upstream**. The old strong claim was unfalsifiable; the restated weak one has a mechanism behind it. **The network's default instinct is to defend the strong version, and that instinct would have cost it the evidence.** Worth recording as a lesson about bridge maintenance, not just as one entry's correction.
+
+**2. A 223-day detection lag, and it is measurable.** `PROP-2026-09-15-003` is Hoffman and Friston, in one room for 2h40m on 2026-02-04, negotiating at the level of formalism — a homomorphism on the table — whether trace logic and the Free Energy Principle describe the same structure. That is precisely the event the accelerator exists to produce, it was produced by a podcast host, and the wiki noticed on 2026-09-15. The validating half (such interactions are real and the project's premise has an existence proof it did not construct) and the measuring half (the detection apparatus missed a public, high-salience, English-language event between two tracked thinkers for seven months) both belong on the record. **The test for whether this was bad luck is cheap and specific:** enumerate the pairs among the fourteen thinkers and sweep public long-form venues for the last 24 months for any session containing two of them. Retrieval currently watches each thinker's own channels, and a joint appearance lives on neither. Also note the narrower action item: `wiki/traditions/friston/` has no record of this source at all, and Friston is one of the two principals.
+
+**3. The pending queue has stopped draining, and nothing flagged it.** `inbox/proposals/pending/` holds **20** orphaned cards spanning 2026-09-14 to 2026-09-20. The newest file in `inbox/proposals/approved/` carries a card date of 2026-09-09 and an mtime of 2026-09-11 — so **nothing has been approved in nine days**, while retrieval kept producing at roughly three cards a day. Last week's run found 8 pending and took all 8. This agent only ever *sews* proposals, so a stalled approval step is invisible to it by design, and it appears to be invisible to everything else too. Worth checking whether Phase 0 of `c282-wiki-agent-daily-run` is actually processing decisions, because a retrieval pipeline running at full rate into a blocked review step is the shape of problem that looks healthy in every metric until the backlog is unmanageable.
+
+**4. Gated sources are biasing the sample, not just shrinking it — and this is the week to decide.** Two of this run's ten cards are member-gated and unheard. `PROP-2026-09-16-002` (Channel McGilchrist members' Q&A) honourably refuses to mint anything. `PROP-2026-09-16-003` (Kastrup × Richard Lang, €25/month, 1h54m unheard) writes three candidates from a **chapter list**, hedging every Solution line as a disjunction. Both are honest. But three of Kastrup's last five captures and two of McGilchrist's now carry gated caveats, and the material moving behind walls is disproportionately the **unrehearsed** material — members' Q&As, live sessions — where a thinker answers questions they did not frame. What stays free is the lecture and the broadcast interview. So the accelerator is sampling a **biased slice**, tilted toward the rehearsed, which is worse than a coverage gap and is not what a per-card caveat records. Three defensible options: budget for the memberships (a bounded and probably small sum), adopt a documented no-gated-sources policy, or set a hard confidence ceiling on gated material. The status quo is a fourth option nobody chose. Third consecutive flag.
+
+**5. The Wolfram retrieval path has failed three times in a row, and the cause is fixable.** `PROP-2026-09-19-001` is the third consecutive Wolfram source logged as "CANDIDATE SOURCE IDENTIFIED, UNVERIFIED" (after PROP-2026-08-08-001 and PROP-2026-09-12-001). The stated blocker is specific and not philosophical: YouTube renders descriptions via JavaScript, so `web_fetch` returns an empty body, and the browser pane needs a site approval an unattended scheduled run cannot obtain. Three misses is a pattern about infrastructure, not about the tradition — and it is now costing this tradition its primary feedstock at the exact moment Wolfram named a **new Institute-level research programme**, the first since the Physics Project. Credit where due: the retrieving agent verified the seven-week hiatus was real by checking three independent publication channels rather than assuming, correctly separating *a quiet channel* from *a quiet program*. That is the Level-2 signal-stream lesson recurring in a second place and it has now been rediscovered twice; it should be written into the retrieval guidance as a standing principle.
+
+**6. Duplicate stems: unchanged, and this week's run is the clean control case.** The vault still holds **419 stems with more than one file (908 files, 489 duplicates beyond the first)**, so wikilinks resolving by filename stem still credit every file sharing a stem. Last week 12 pages left the orphan set for 10 sewn because two existed in both `inbox/` and `inbox/proposals/approved/`. This week all ten targets were `pending/`-only, and exactly 10 pages changed backlink count with **zero collateral movement** — which confirms the duplication, not the sewing, produced last week's discrepancy. The janitor census recommended last week is still the right fix.
+
+**7. Metric inflation, thirteenth flag — and per last week's own recommendation, this is the escalation rather than a re-filing.** `architecture/` supplies **3,348 of 4,287 orphans (78%)**; `inbox/` supplies 796. Between them that is 96.6% of the headline number, and almost none of it is content a human will ever link — machine dumps, `lit_search_results`, `daily_sync`. The curated vault's real orphan population is roughly 143 pages and has been improving for weeks, invisibly, behind a number that rises every week no matter what this agent does. Twelve identical recommendations produced no action, so: **the recommendation is now to stop reporting a single orphan count at all.** Split the CSV into `curated_orphans` and `machine_orphans` columns, or exclude `architecture/` from the metric by rule and say so in the header. If neither is wanted, the honest move is to delete the orphan column rather than publish a figure whose movement carries no information. This agent will not file the original recommendation a fourteenth time.
+
+**8. Token budget breached, thirteenth consecutive run, disclosed.** Reading ten proposals (3.9-18.5 KB; the Stump paper card alone is 18,474 bytes), authoring 61 calls and 16 bridge notes, and running two full 5,117-file censuses exceeds Rule 6's 4,000-token per-task budget by a wide margin. Recommendation unchanged and also now thirteen weeks old: exempt scheduled agents from the per-task cap, or derive batch size from the budget rather than fixing it at 10.
+
+**9. Nothing committed, nothing pushed.** The sandbox cannot write `.git`. `scripts/commit_daily_run.sh` closes this from the Mac — and note that this run's writes are Sunday-morning `wiki/` edits, so its authorship check will **hold** them unless it runs after today's daily run. That is the script working as designed, not a fault; the held paths will be named in `scheduler/held_paths.md`.
+
+## Verification (fail-loud)
+
+All 10 pages assert-checked byte-for-byte against their pre-write content (prefix identity plus SHA-1 of the original), each carrying exactly one `## Agentic Calls` heading and exactly one `Sewing Agent on 2026-09-20` stamp; YAML frontmatter and existing `## Cross-Tradition Signals` sections intact. All 16 bridge files assert-checked the same way, one `Sewing Agent, 2026-09-20` stamp each, each append verified to contain at least one wikilink. The two zero-byte files (`hoffman_loughran`, `kastrup_loughran`) were seeded with a title header; the remaining three known zero-byte bridges (`arkanihamed_loughran`, `carroll_hawkins`, `mcgilchrist_wright`) are unchanged — this agent does not delete and does not invent content to fill a file. CSV: appended after asserting no `2026-09-20` row existed; verified as exactly one occurrence. Post-run census re-run from scratch and diffed against the pre-run census: **exactly 10 files changed backlink count, all 10 of them the processed pages, no collateral movement.** Nothing deleted, nothing overwritten, no files created in the vault beyond content appended to existing paths, no probe files left behind. No JS, HTML or CSS touched.

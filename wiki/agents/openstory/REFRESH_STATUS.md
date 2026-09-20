@@ -1,1 +1,1 @@
-2026-09-18T12:24Z  FAIL  step2b extract_agent_node_refs.py — sandbox cannot snapshot DB (ENOSPC: 6.86 GB copy > 6.3 GB local scratch); node_edges still 2026-09-17. telemetry=2026-09-18/33 agents (from Mac-local run 06:21 EDT, not this task). Fix: run refresh_openstory_feeds.sh on the Mac | DB age 1h
+2026-09-19T10:15Z  FAIL  step2b extract_agent_node_refs.py — non-zero exit (see stderr above) | DB age 1h

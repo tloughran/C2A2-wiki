@@ -1497,3 +1497,71 @@ wolfram 62, wright 66) — unchanged. **135** distinct CROSS ids, **90** distinc
 `'FINDING-[0-9]*'` returns 91 — one too many each — because `*` matches *zero* digits, so the bare prefix
 `CROSS-` / `FINDING-` counts as its own distinct token under `sort -u`. Use `[0-9]\+`. The true counts are
 135 and 90 and have not moved.
+
+## 2026-09-20 — daily run
+
+**Phase 0: no decision emails.** `subject:[C2A2-review-decision] newer_than:3d` returned nothing — eleventh
+day with no decision (last was 09-09). No mark-as-read attempted: the call has been auto-declined on every
+recent run, so re-issuing it only adds a declined action to the log. It needs a standing approval for this
+task or a manual mark-read.
+
+**Phase 1: files processed 0 — compile queue empty by the ledger.** `scripts/ingest_ledger.py wiki`:
+approved total=414, ingested=382, decided-zero=30, **OPEN=1** (Wright PROP-2026-08-14-033); staging
+identical. No-`proposal_id` files unchanged: `approved/2026-05-12_repair_manifest.md` (a manifest) and
+`inbox/2026-09-08_levin_virtue-as-external-setpoint.md` (ingested 2026-09-09). Tenth consecutive zero-ingest
+day. (The naive filename-vs-log scan reported **286** phantom "unprocessed" files again — the known
+slug/filename trap. The ledger is the answer.)
+
+**Wright PROP-2026-08-14-033 — 9th attempt. Recommend CLOSING the card rather than retrying it.**
+`web_fetch` first refused the ntwrightpage URL as out-of-provenance (same tool-level block as 09-19). A
+search then surfaced the canonical post — ntwrightpage 2026-07-17, *N.T. Wright: Who is This God?* — and
+fetching that returned an **empty body**, the same bare-media-embed signature as the August card and as
+*The Fresh Challenge of Romans* (fetched 09-19). Three distinct posts, three empty bodies: this is the
+site's rendering, not a transient failure, so a tenth attempt is guaranteed to produce the same null. The
+card is the only OPEN row in the ledger. Recommend a DENY with the reason recorded as
+**source-unretrievable**, not content-rejected.
+
+**Phase 2: 0 orchestrator proposals.** Rohr skipped — the specialist had already filed
+PROP-2026-09-20-001/-002/-003 at run time. Swept the other thirteen: Levin, Friston, Wolfram, Hoffman,
+Kastrup, McGilchrist, Carroll, Arkani-Hamed, Stump, Fredrickson, Hawkins, Wright, MacIntyre. Every candidate
+already held or out of window — Levin's three September preprints are pending (PROP-2026-09-12-002/-003/-004)
+and his 2026 *Bioelectricity* ("From Development to Cognitive Glue") and *Philosophies* ("Ingressing Minds")
+papers are captured; Wolfram's writings archive still stops at 2026-08-04 and his 09-18 AMA is
+PROP-2026-09-19-001; Stump's *Infused Virtues* (New Blackfriars) is held; McGilchrist's UnHerd Live (London,
+24 Sept) is a future in-person date, not a retrievable source, and is already carried as PROP-2026-09-02;
+Hoffman, Kastrup, Fredrickson, Hawkins, Friston, Arkani-Hamed returned only held or pre-window material.
+
+**Method note worth keeping: read the index, don't search it.** A search for "Mindscape 368" returned
+nothing, which is only a weak negative — absence from a search index is not absence in the world. Fetching
+`preposterousuniverse.com/podcast/` directly showed September 2026 holding **exactly two** items (367 Jared
+Diamond, 09-07; AMA, 09-14), both already pending. The direct read converts a weak negative into a strong
+one and is cheap for the traditions that publish on a fixed cadence (Carroll weekly, Wolfram's writings
+archive, the CAC dailies).
+
+**Phase 3.** `review/2026-09-20_review.html` (294,488 bytes, **27 proposals**: Rohr 8, Levin 6, Carroll 2,
+Wolfram 2, Friston 2, Hawkins 2, McGilchrist 2, Hoffman 1, Kastrup 1, Stump 1). **Auto-open failed** —
+sandbox has no macOS `open`, Claude-in-Chrome not connected. Path is in the digest.
+
+**Phase 4.** Digest draft `r-4874997738659688486` (to thomas.loughran@gmail.com), carrying the review-page
+path, the per-tradition breakdown, and the Wright 9th-failure note.
+
+**Phase 5.** `review/2026-09-17_review.html` moved to `review/_superseded/` (`rm` blocked on the mount; `mv`
+works). 09-18/19/20 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,395,563 bytes; cards **482** (+3), dates 127, responses 15;
+17 addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115 (unchanged).
+
+**Phase 5.6.** `regen_level2_signals.sh` OK — coverage gate PASS 379/379; 1501 signals, 87 pairs,
+2026-04-03 → 2026-09-09, stale_days 11 (no WARN); qc_trace.csv date-only change, not promoted.
+
+**Phase 6.** No git commands run (per 2026-09-16 SKILL change). Commit deferred to
+`scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network:** 867 PRS across 15 tradition files (arkanihamed 31, carroll 85, fredrickson 42, friston 71,
+hawkins 51, hoffman 44, kastrup 82, levin 123, loughran 9, macintyre 6, mcgilchrist 78, rohr 79, stump 38,
+wolfram 62, wright 66) — unchanged. **135** distinct CROSS ids, **90** distinct FINDING ids (24 tagged
+`Status: Active`). Frozen since 09-11, correctly: nothing can move until a decision email arrives.
+
+**The binding constraint is the review queue, not the sweep.** 27 proposals span 09-11 to 09-20 with no
+decision since 09-09 — eleven days. The agents are not short of material; they are short of decisions.
