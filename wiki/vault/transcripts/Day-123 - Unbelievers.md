@@ -15,7 +15,7 @@ fetched_at: 2026-05-20
 fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-123 - Unbelievers - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-14T04:21:32"
+last_qc_at: "2026-09-20T08:12:47"
 last_qc_outcome: "pass"
 tags: [summa, day/123, pars/2, q/10-11]
 ---

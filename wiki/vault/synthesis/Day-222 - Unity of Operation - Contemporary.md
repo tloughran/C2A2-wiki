@@ -3,8 +3,9 @@ day: 222
 title: Unity of Operation (Contemporary)
 pairs_with: "[[Day-222 - Unity of Operation]]"
 length_target_words: 1500
-length_actual_words: 1428
-length_ratio_to_target: 0.952
+length_actual_words: 1528
+length_ratio_to_target: 1.019
+length_note: "Recounted this run (2026-09-20) under the canonical boundary: frontmatter block stripped wherever it sits, the '**Related tradition records**' auto-linker trailer excluded, bare horizontal-rule separators dropped, tokens matched as [A-Za-z']+. Counter calibrated in BOTH layouts before and after use against Day 027 (3152, footer layout) and Day 164 (2464, top layout); both exact. Decomposition: 1428 stored and verified EXACT pre-edit (delta 0), plus 98 words added by this run's single repair (unbundling the CROSS-010 coupling badge so Fredrickson PRS-03 and Friston PRS-06 carry their own grades). A second, smaller repair added 4 more words: criterion-(a) anchoring, attaching the Frame's two already-present claims to the articles the paired transcript's own headers give them (Q.19 a.1 for the two-operations/touch-the-leper claim, Q.20 a.1 for the subjection claim). This is the Day-223 precedent of 2026-09-08 — anchors taken from the transcript's article headers, mapping existing claims one-to-one and inventing nothing. Day 222 remains selective by design: it anchors a.1 and a.4 of Q.19 and a.1 of Q.20, and passes over Q.19 a.2/a.3 and Q.20 a.2, which Summa.md permits ('not obligated to mirror every article; they pick'). Total 1428 -> 1528, ratio 0.952 -> 1.019; the file was inside +/-10% before and remains inside it after. The field is written rather than deferred because it was correct before this run and this run's own edit is what would have staled it."
 length_tier: short
 karpathy_wiki_sources:
   - "master/cross_program_index.md (CROSS-013 conscious-agent integration — agents integrate into higher-order unified agents, confirmed by McGilchrist split-brain data)"
@@ -15,15 +16,15 @@ evidence_strength_summary: "Two operations concurring in one work (instrumental 
 mind_first_reframe: "Christ as Head whose act reaches the members is read as a higher-order unified agent into which the limited perspectives are really integrated (CROSS-013, McGilchrist's split-brain leg), bound by measurable resonance-coupling (collective active inference), not mere association."
 central_theme_thread: "The one who aligns to the whole draws the many limited perspectives into one mystical person — the loving-unity telos as incorporation, the kenotic Head descending into the servant-form so the members can be raised."
 tags: [synthesis, day/222, theme/incorporation-into-one-mystical-person]
-last_qc_at: "2026-09-15T06:31:06"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-20T16:25:12"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 222 — Contemporary Parallel: The Head Whose Act Reaches the Members
 
 ## Frame
 
-Q.19 asks how the one person *acts* across two natures. Aquinas answers with the axe-and-lumberjack image: there is a two-fold operation, divine and human, but they "concur in one work in as much as one nature acts in union with the other" — "to touch the leper is the proper work of the human operation, but to heal is the proper work of the divine operation," and the one healing-by-touching is a single act of the one person working through his humanity as an instrument. The decisive article for the project is a.4: Christ's action is meritorious *for others* because "grace was in Christ not merely as an individual but also as the Head of the whole Church, to whom all are united as members to a head, who constitute one mystical person" — so his merit reaches others "as in a man the action of the head reaches in a manner to all his members," and that reaching is actualized by incorporation: "as many of you as have been baptized into Christ have put on Christ" (Gal 3:27). Q.20 then guards the grammar: the Son is equal to the Father in the divine nature and subject in the human nature ("the Father is greater than I," John 14:28; the *form of a servant*, Phil 2:7). The contemporary version: *how does the action of one agent become the action of a whole — how does a head's operation reach its members, so that many limited perspectives become one mystical person?*
+Q.19 a.1 asks how the one person *acts* across two natures. Aquinas answers with the axe-and-lumberjack image: there is a two-fold operation, divine and human, but they "concur in one work in as much as one nature acts in union with the other" — "to touch the leper is the proper work of the human operation, but to heal is the proper work of the divine operation," and the one healing-by-touching is a single act of the one person working through his humanity as an instrument. The decisive article for the project is a.4: Christ's action is meritorious *for others* because "grace was in Christ not merely as an individual but also as the Head of the whole Church, to whom all are united as members to a head, who constitute one mystical person" — so his merit reaches others "as in a man the action of the head reaches in a manner to all his members," and that reaching is actualized by incorporation: "as many of you as have been baptized into Christ have put on Christ" (Gal 3:27). Q.20 a.1 then guards the grammar: the Son is equal to the Father in the divine nature and subject in the human nature ("the Father is greater than I," John 14:28; the *form of a servant*, Phil 2:7). The contemporary version: *how does the action of one agent become the action of a whole — how does a head's operation reach its members, so that many limited perspectives become one mystical person?*
 
 ## Problem
 
@@ -50,7 +51,7 @@ The project holds that loving unity is the telos toward which limited perspectiv
 ## Bridges
 
 - **The Head whose merit reaches the members as one mystical person ↔ conscious agents integrate into a higher-order unified agent (confirmed by split-brain data)** — master CROSS-013 (Hoffman × McGilchrist). *Why:* many real agents can be genuinely one higher-order agent — and the claim has an empirical leg. Evidence: **speculative-formal with empirical leg (medium-strong)**.
-- **The coupling that binds members into the body ↔ positivity resonance as the implementation of collective active inference** — master CROSS-010; Tom's PRS-form record of Fredrickson (PRS-03) and Friston (PRS-06). *Why:* incorporation has a measurable physiological signature (vagal synchrony, oxytocin co-release). Evidence: **empirical as physiology, speculative as ecclesiology (medium)**.
+- **The coupling that binds members into the body ↔ positivity resonance as the implementation of collective active inference** — master CROSS-010; Tom's PRS-form record of Fredrickson (PRS-03) and Friston (PRS-06). *Why:* incorporation has a measurable physiological signature (vagal synchrony, oxytocin co-release). Evidence, **per record rather than bundled**: Fredrickson PRS-03 (*Scale-bridging in agent coupling*) is marked **(Text, pp.89–92), Confidence High** — the measured physiology is the firm half, and it is what CROSS-010 puts on the Fredrickson side. Friston PRS-06 (*Multi-agent coherence via mutual modeling*) is an **(Implicit) reading at Confidence Medium**: the register marks it implicit precisely because it extends free-energy minimization from the individual organism to multi-agent systems rather than restating an established multi-agent result — so the formal half of this bridge is the softer half, not the firmer one. **Speculative** is neither record but the step from either to *ecclesial incorporation*.
 - **The Head descending into the servant-form to incorporate ↔ the kenosis hymn + salvation as incorporation** — Pauline corpus (Phil 2:6-7), Tom's PRS-form record of Wright (PRS-05). *Why:* the head enters the members' limited condition so they can be included in the people united with God. Evidence: **scriptural (strong)**.
 
 ## Where this leaves us

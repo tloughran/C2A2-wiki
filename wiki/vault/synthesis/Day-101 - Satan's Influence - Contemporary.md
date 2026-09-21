@@ -21,7 +21,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-027 Kastrup × Friston dissociative boundary / Markov blanket; CROSS-042 Hawkins × Kastrup cortical columns as dissociated alters)"
 evidence_strength_summary: "Empirical: vagal-tone collapse under isolation (Fredrickson), hemispheric asymmetry under stress (McGilchrist), bioelectric coupling at non-neural scales (Levin). Formal: free-energy minimization under perturbed priors (Friston). Speculative: demonology-as-topology-of-mind-at-large (Kastrup-style alters); the cosmological claim that interfering sub-agents exist by structural necessity. Theological: Wright on second-temple cosmology of the powers; Rohr on the shadow."
 tags: [synthesis, day/101, theme/temptation, theme/perception-as-interface]
-last_qc_at: "2026-09-14T18:29:25"
+last_qc_at: "2026-09-20T02:32:47"
 last_qc_outcome: "pass"
 ---
 

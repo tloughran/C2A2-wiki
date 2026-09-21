@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-099 - Lusts of the World - Contemporary]]"
 tags: [summa, day/099, pars/I-II, q/76, q/77]
 fidelity_checked: true
-last_qc_at: "2026-09-14T16:23:13"
+last_qc_at: "2026-09-20T02:32:25"
 last_qc_outcome: "pass"
 ---
 

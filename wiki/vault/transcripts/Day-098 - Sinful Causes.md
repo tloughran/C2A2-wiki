@@ -16,7 +16,7 @@ fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-098 - Sinful Causes - Contemporary]]"
 tags: [summa, day/098, pars/I-II, q/74, q/75]
 fidelity_checked: true
-last_qc_at: "2026-09-06T14:09:42"
+last_qc_at: "2026-09-20T02:32:24"
 last_qc_outcome: "pass"
 ---
 

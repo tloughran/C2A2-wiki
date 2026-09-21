@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-191 - Fasting - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/191, pars/II, q/146]
-last_qc_at: "2026-09-08T02:32:30"
+last_qc_at: "2026-09-20T12:26:35"
 last_qc_outcome: "pass"
 ---
 

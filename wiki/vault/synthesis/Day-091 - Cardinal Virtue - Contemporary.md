@@ -17,8 +17,8 @@ karpathy_wiki_sources:
 mind_first_reframe: "Under mind/conscious-realist monism virtue is a stable computational invariant in a perspective-limited agent's generative model — a recurring pattern by which limited consciousness organizes its inference and action; Aquinas's formal-object individuation (Q.60 a.1, a.3) survives intact, the substantialist ontology of qualities-of-the-soul is reframed as scale-of-coupling within the agent's own optimization loop, and the power-axis individuation of Q.60 a.4 — temperance and fortitude as perfecting two really distinct appetitive faculties — is superseded by a single regulatory system differentiated by valence direction, with magnanimity and meekness absorbed as a marked remainder."
 central_theme_thread: "The cardinal virtues are exactly the minimum stable dispositions a perspective-limited agent needs so its computations toward loving unity remain coherent under finite affective and cognitive resources — cut any one and the others degrade (Gregory the Great's chiasmus reread as an active-inference network prediction)."
 evidence_strength_summary: "Theological claims at full traditional strength; psychological mechanism claims (Fredrickson broaden-and-build, McGilchrist hemispheric character) hold mixed empirical support — replicated for broaden-and-build, contested for some McGilchrist generalizations. Network-of-virtues claim formally analogous to coupled-trait psychometric models with moderate support. PRS/Synergistic-Coil framing is Tom Loughran's, not derived from the traditions."
-last_qc_at: "2026-09-14T02:36:41"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-19T22:29:47"
+last_qc_outcome: "pass"
 tags: [synthesis, day/091, theme/virtue-as-network, theme/cardinal-virtues]
 ---
 
