@@ -3308,3 +3308,35 @@ architectural question raised by this pass in some weeks. OPEN-242 is, for the f
 of observation, accompanied by a concrete one-line test rather than a further description of the window.*
 
 ---
+
+## 2026-09-20 — raised by the 14a/14b end-of-day pass
+
+OPEN-245:
+  Raised: 2026-09-20 by 14b (PRESUMPTION-1060)
+  Question: **Has the ASSUMPTION / PRESUMPTION distinction survived twenty-one days without a designer?**
+    The provenance protocol defines `Item type: ASSUMPTION (stated)` as "Original designers were aware of
+    this premise." For three weeks every extracted item has been sourced to an agent's self-report or to
+    a measurement this pass made. Either the marker's definition should be widened (and say so), a third
+    marker added for agent-stated claims, or the pass should file fewer items on designer-silent days.
+  Needs: **Tom.** This is a definition question about the estate's central epistemic-honesty marker, not
+    a command.
+  Status: OPEN
+
+OPEN-246:
+  Raised: 2026-09-20 by 14a (ASSUMPTION-1565, PRESUMPTION-1056)
+  Question: What is the estate's counting convention? Specifically: does a consecutive-day streak include
+    the day it is written on, and does an "attempt" count attempts or failures? Three same-day
+    off-by-one disagreements today trace to this being undefined.
+  Needs: one paragraph in a conventions file, then a single re-derivation of the disputed counts. This is
+    a command, not an architectural question.
+  Status: OPEN
+
+OPEN-247:
+  Raised: 2026-09-20 by 14a (ASSUMPTION-1568, PRESUMPTION-1054)
+  Question: Who owns a **liveness-versus-progress check** for scheduled sessions, and what is the
+    threshold? The lit-search pipeline has been alive and stationary since at least the 17th; no
+    register, no scheduler row and no agent reports it, and today 23 re-triggers were routed into it. A
+    wall-clock-since-last-register-write check would have fired three days ago.
+  Needs: an owner. The check itself is small; the question is whose remit it falls in, which is the same
+    shape as OPEN-244 and PRESUMPTION-1059.
+  Status: OPEN

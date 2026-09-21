@@ -22514,3 +22514,193 @@ PRESUMPTION-972 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-20, cycle 1] (MON
 - **Monthly INCORPORATED premise re-checks — NOT queued this run.** Day 20; the monthly does not fire.
   100 ACTIVE premises are now past `Re-check due` and 19 carry no `Re-check due` at all. See ESCALATION 5.
 
+
+## 2026-09-20 — intake from 14a / 14b end-of-day pass
+
+> **Routing note, stated before the items.** The pipeline these items enter is **alive and not
+> advancing** (ASSUMPTION-1568): three probes over ten minutes returned an identical turn count and
+> trailing message, and `lit_search_returns.md` has no run section since 2026-09-16. These items are
+> queued anyway, because the queue is append-only and a stalled reader is a reader that may resume — but
+> **they are queued into a known-stalled lane** and that is recorded here rather than discovered later.
+> 15d routed 23 re-triggers into the same lane earlier today without this information.
+
+---
+
+ITEM: ASSUMPTION-1560 [QUEUED]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1560
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-09-20 weekly sewing run.
+    Current status: UNTESTED
+  Claim to test: Eleonore Stump argues formal causation and level-specific causal power rather than
+    final causality; CROSS-008's attribution of *final* causality to her across three sources is a
+    misattribution.
+  For 15a: locate Stump's own statements of causal commitment in the natural-law and metaphysics corpus;
+    does she anywhere endorse final causality in her own voice?
+  For 15b: locate readings of Stump that do attribute teleology to her, and any text that would support
+    them.
+  Lane: literature.
+
+ITEM: ASSUMPTION-1561 [QUEUED]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1561
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-09-20 weekly sewing run; pair count and 223-day lag verified.
+    Current status: UNTESTED
+  Claim to test: Cross-tradition joint appearances are systematically missed by per-thinker retrieval,
+    and a 91-pair × 24-month sweep of public long-form venues would recover them.
+  For 15a / 15b: literature on citation- and collaboration-discovery — do pair-enumeration sweeps recover
+    known joint events at useful rates, or is discovery dominated by channel effects?
+  Empirical companion: **back-test** — run the sweep over the 24 months already elapsed and check whether
+    it recovers the 2026-02-04 Hoffman/Friston event it was designed around (see PRESUMPTION-1057).
+  Lane: literature + empirical.
+
+ITEM: ASSUMPTION-1571 [QUEUED]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1571
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the 2026-09-20 15d weekly cycle.
+    Current status: UNTESTED
+  Claim to test: Staleness-based downgrading selects for defective items — 8 of 9 searched items from the
+    downgraded cohorts went to REVISE, 1 stayed open, 0 confirmed — and therefore slows the clock on
+    exactly the items most in need of it.
+  For 15a / 15b: literature on triage and queue-discipline inversion; aging-based deprioritisation and
+    defect correlation.
+  Lane: literature + empirical (the cohort is enumerable in-house).
+
+ITEM: ASSUMPTION-1575 [QUEUED]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1575
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Re-derived three headline counts and compared to published ones.
+    Current status: UNTESTED
+  Claim to test: Headline counts in the estate's registers depend on unstated counting methods (tag
+    occurrences vs. lines vs. anchored headers), and publishing the derivation command alongside the
+    figure removes the class of defect.
+  Lane: empirical, in-house. **No literature needed** — flagged for the monitor lane rather than 15a/15b.
+
+ITEM: PRESUMPTION-1053 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1053
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Generalised three same-day, independently-reached instrument-contamination findings.
+    Current status: UNTESTED
+  Claim to test: Measurement instruments that are also members of the measured population systematically
+    distort their own series, and the estate has not enumerated which of its registers are both.
+  For 15a: literature on reflexive measurement, observer effects in self-instrumented systems, Goodhart
+    and reflexivity in metric design.
+  For 15b: cases where self-inclusion is negligible or corrects itself.
+  Lane: literature + empirical (in-house enumeration).
+
+ITEM: PRESUMPTION-1054 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1054
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 15d's stated inability plus this pass's three-probe measurement.
+    Current status: UNTESTED
+  Claim to test: Liveness is not progress; a monitoring regime that watches for dead processes is blind
+    to hung ones, and the blindness is silent by construction.
+  For 15a / 15b: literature on liveness vs. progress properties, watchdog and heartbeat design, silent
+    failure in distributed schedulers.
+  Lane: literature + empirical.
+
+ITEM: PRESUMPTION-1055 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1055
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Counted repeat-disclosure streaks across today's runs.
+    Current status: UNTESTED
+  Claim to test: Mandated disclosure without a resolution path converts into ritual — repeat-disclosure
+    counts rise while fix rates do not.
+  For 15a: literature on disclosure regimes, alert fatigue, and safety-reporting systems that
+    accumulate unactioned reports.
+  For 15b: evidence that sustained disclosure without immediate action still improves outcomes.
+  Lane: literature.
+
+ITEM: PRESUMPTION-1057 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1057
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Noted the gap between a channel-shaped diagnosis and a coverage-shaped remedy.
+    Current status: UNTESTED
+  Claim to test: The 223-day lag is a discovery-channel failure, not a coverage failure; pair enumeration
+    may not address it.
+  Empirical test, pre-registered here: the back-test named under ASSUMPTION-1561. **Pre-registration
+    note** — the success criterion is stated before the sweep is built: the sweep recovers the
+    2026-02-04 event.
+  Lane: empirical (primary) + literature.
+
+ITEM: PRESUMPTION-1058 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1058
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Distinguished a good outcome from the procedure being credited for it.
+    Current status: UNTESTED
+  Claim to test: Attribution drift in standing CROSS claims is unmeasured; CROSS-008's misattribution
+    persisted across three sources and was caught by accident.
+  Empirical test: sample n of the 135 CROSS ids, check each against its cited source for attribution
+    drift, report the rate.
+  Lane: empirical, in-house. **This is the highest-value item in tonight's intake** — it bears directly
+    on whether the accelerator's principal output count is interpretable.
+
+ITEM: PRESUMPTION-1059 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1059
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Noted that three proposed fixes share a scope that excludes the growth itself.
+    Current status: UNTESTED
+  Claim to test: `open-story.db`'s growth to 7.0 GB is unowned; substrate changes postpone rather than
+    fix the failure.
+  Empirical test: plot DB size over 90 days; identify whether any threshold or retention policy exists.
+  Lane: empirical, in-house. Ties to OPEN-244.
+
+ITEM: PRESUMPTION-1060 [QUEUED]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1060
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read the provenance protocol's ASSUMPTION definition against 21 days of this register's
+        sourcing.
+    Current status: UNTESTED
+  Claim to test: The `ASSUMPTION (stated)` marker has been applied to agent self-reports for twenty-one
+    consecutive days, collapsing the protocol's designer-aware / inferred distinction.
+  Empirical test, in-house: count how many of the last 21 days' ASSUMPTION items trace to designer
+    speech. The `Source:` lines already carry the data.
+  Lane: empirical, in-house. **Routed also to OPEN-245 — this one needs Tom, not a literature search.**
+
+*Eleven items queued by the 14a/14b pass of 2026-09-20 — four assumptions, seven presumptions. Four are
+in-house empirical only and need no literature (1575, 1058, 1059, 1060); one carries a pre-registered
+success criterion stated before the instrument is built (1057). All enter a **known-stalled lane**
+(see routing note above). Backup `for_lit_search.md.bak.20260920-pre-14eod` taken before this append.*

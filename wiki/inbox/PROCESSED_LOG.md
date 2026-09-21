@@ -1565,3 +1565,74 @@ wolfram 62, wright 66) — unchanged. **135** distinct CROSS ids, **90** distinc
 
 **The binding constraint is the review queue, not the sweep.** 27 proposals span 09-11 to 09-20 with no
 decision since 09-09 — eleven days. The agents are not short of material; they are short of decisions.
+
+---
+
+## C2A2 Daily Run — 2026-09-21
+
+**Phase 0: no decision emails.** Gmail searched at `subject:C2A2-review-decision newer_than:4d` and again
+bare at `newer_than:10d`; both returned empty. Twelve days since the last decision (2026-09-09).
+
+**Phase 1: 0 files processed.** `scripts/ingest_ledger.py wiki`: approved total=414, ingested=382,
+decided-zero=30, **OPEN=1** (Wright PROP-2026-08-14-033); staging identical. Eleventh consecutive
+zero-ingest day. The naive filename-vs-log scan again reported **286** phantom unprocessed files — the known
+slug/filename trap; the ledger is the answer.
+
+**Wright PROP-2026-08-14-033 — no tenth attempt made, deliberately.** Yesterday's entry established the
+site's failure mode as structural (three distinct ntwrightpage posts, three empty bodies). A tenth fetch is
+predicted to return the same null, so retrying it would be method theatre, not evidence. The recommendation
+stands unchanged and is repeated in today's digest: **DENY, reason `source-unretrievable`**, which clears
+the ledger to OPEN=0.
+
+**Phase 2: 1 proposal written.** Levin and Friston were left to their 7am Monday specialists — note that
+this task now fires at 04:35, *before* the specialists, inverting the ordering the SKILL's anti-duplication
+note assumes. Deferring rather than sweeping them preserves that note's intent under the new ordering.
+Swept the other thirteen. Two direct index reads did the real work:
+
+- `preposterousuniverse.com/podcast/` — September 2026 holds **exactly two** items (367 Jared Diamond 09-07;
+  AMA 09-14), both already pending. No Mindscape 368 exists yet.
+- `writings.stephenwolfram.com/recent-posts/` — newest post is still **2026-08-04**, unchanged for seven
+  weeks. His 09-18 AMA is PROP-2026-09-19-001.
+
+McGilchrist's Ralston Lecture 1 and 27-Aug Members' Q&A are both pending; UnHerd Live (London, 24 Sept) is
+still a future in-person date, not a retrievable source. Stump's two 2026 papers — *Infused Virtues* (New
+Blackfriars) and *What are we? Collective neuroscience* (Religious Studies) — are both already held
+(the latter approved and ingested 2026-04-27). Hoffman, Kastrup, Hawkins, Arkani-Hamed, Fredrickson, Wright
+returned only held or pre-window material. MacIntyre produces no new primary source.
+
+New card: **PROP-2026-09-21-001** — Richard Rohr, *Nonviolent Resistance* (CAC 2026-09-20), 3 candidate
+triplets, 3 cross-tradition signals. Opens the new theme week *Nonviolence: A Christian Calling*.
+
+**A filter call worth recording.** The CAC 2026-09-14 meditation, *A Worldly Apostle*, is uncovered and
+would have been an easy fourth Rohr card — but its body is Rachel Held Evans quoted throughout, with Rohr
+appearing only as the page's bylined curator. Phase 2's filter says *must be from the thinker themselves*,
+so it was skipped. This is a recurring shape in the CAC feed (the 09-11 Brian McLaren meditation is the same
+case and is likewise absent from pending), and it is worth being explicit that the skip is a rule being
+applied, not an oversight — otherwise a future sweep will "find" these and file them.
+
+**Phase 3.** `review/2026-09-21_review.html` (305,491 bytes, **28 proposals**: Rohr 9, Levin 6, Wolfram 2,
+Carroll 2, Friston 2, Hawkins 2, McGilchrist 2, Stump 1, Hoffman 1, Kastrup 1). Auto-open unavailable —
+the sandbox has no macOS `open`. Path is in the digest.
+
+**Phase 4.** Digest draft `r-3562920071465478496` to thomas.loughran@gmail.com, leading with the queue
+bottleneck and carrying the Wright DENY recommendation.
+
+**Phase 5.** `review/2026-09-18_review.html` moved to `review/_superseded/` (`rm` is blocked on the mount;
+`mv` works). 09-19/20/21 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,509,385 bytes; cards **483** (+1), dates 128, responses 15;
+17 addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115 (unchanged).
+
+**Phase 5.6.** `regen_level2_signals.sh` OK — coverage gate PASS 379/379; 1501 signals, 87 pairs,
+2026-04-03 -> 2026-09-09, stale_days **12** (under the 21-day threshold, so no WARN line to quote);
+qc_trace.csv date-only change, not promoted.
+
+**Phase 6.** No git commands run (per the 2026-09-16 SKILL change). Commit deferred to
+`scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network:** 867 PRS across 15 tradition files, **135** distinct CROSS ids, **90** distinct FINDING ids
+(24 `Status: Active`). Frozen since 09-11, correctly — nothing can move until a decision email arrives.
+
+**Twelve days without a decision.** 28 proposals now span 09-11 to 09-21. The sweep is healthy and
+self-limiting (one card today, because thirteen traditions genuinely had nothing new). The queue is not.

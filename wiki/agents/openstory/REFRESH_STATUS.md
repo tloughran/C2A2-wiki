@@ -1,1 +1,1 @@
-2026-09-19T10:15Z  FAIL  step2b extract_agent_node_refs.py — non-zero exit (see stderr above) | DB age 1h
+2026-09-20T12:20Z  FAIL  step2a extract_openstory_agent_data.py — OSError: [Errno 28] No space left on device (connect_ro byte-copy of 7.0GB DB; sandbox scratch has 2.5G on / and 0 on TMPDIR fs) — feeds NOT refreshed; telemetry=2026-09-20 (from 06:24 run, still current) node_edges=2026-09-17 (3d stale) | DB age 0h

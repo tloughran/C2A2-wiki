@@ -22777,3 +22777,287 @@ not merely disagree, they were each individually careful and collectively blind,
 an auditor of auditors can see. No designer speech — **twentieth consecutive day** (PRESUMPTION-912).*
 
 ---
+
+## 2026-09-20 — 14b end-of-day surfacing
+
+PRESUMPTION-1052:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] The estate presumes that **an agent disclosing its own error is the same event as
+    the error being corrected downstream** — that a correction, once written, propagates to documents
+    drafted from the superseded number.
+  Evidence it was operative: Agent 16 re-derived the leak-shaped card count this morning, wrote the
+    lesson against itself, and left it in `watch_list.md`. By 18:39 the evening sync had published both
+    "pending 27" and "the 24-card page" in one document (ASSUMPTION-1579). No run checked whether any
+    other document depended on the old figure; there is no mechanism by which one could. The same shape
+    appears in 15d's disclosure (ASSUMPTION-1569): the corrected MONITOR-600 cadence was fixed in the
+    register, but the 09-13 run report that stated the wrong rule still stands unannotated.
+  Why it was unstated: too foundational to notice — the estate's Rule 12 culture is strong enough that
+    disclosure *feels* like closure.
+  Type: methodological
+  Related decisions: ASSUMPTION-1578; ASSUMPTION-1579; ASSUMPTION-1570.
+  Testability: testable in-house — for each disclosed correction in the last month, count the documents
+    written afterwards that still carry the superseded figure.
+  Risk if wrong: Medium. If corrections do propagate, this is noise; the evidence today says they do not.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1052
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the same-day recurrence of a named-and-corrected error in the document
+        reporting the correction.
+    Current status: UNTESTED
+
+PRESUMPTION-1053:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] Every instrument in the estate presumes **it stands outside the thing it
+    measures**. Three agents found the opposite today, independently and without any of them naming the
+    general case.
+  Evidence it was operative: the sewing agent found 34% of broken links inside its own reports
+    (ASSUMPTION-1556) and backlink inflation from its own log (1559); the janitor found failed unlinks
+    counted as fixes and a delta computed against a baseline that re-presents chronic findings as new
+    (1573); Agent 16 found a figure restated from its own flag's text rather than re-derived (1578). All
+    three wrote the finding as a defect in *their* instrument. None asked which other registers are
+    sources for their own metrics. This pass asked (ASSUMPTION-1574) and found the mechanism present here
+    too, at ~1% magnitude.
+  Why it was unstated: obvious to participants — an agent auditing its own output is already doing the
+    hard thing; generalising to peers is not in any agent's remit.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1556; ASSUMPTION-1559; ASSUMPTION-1573; ASSUMPTION-1574.
+  Testability: testable in-house — enumerate every register that is both a metric source and a metric
+    subject. The list is short and nobody has written it.
+  Risk if wrong: High. Three confirmed instances in one day, with magnitudes from 1% to 34%, means the
+    estate does not currently know which of its published trends are partly self-generated.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1053
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Generalised three same-day, independently-reached findings into the class none of them named.
+    Current status: UNTESTED
+
+PRESUMPTION-1054:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] The estate presumes that **"running" means "working"** — that session liveness is
+    a usable proxy for progress.
+  Evidence it was operative: 15d could state only "pause or stop … I can't tell which from the register"
+    (ASSUMPTION-1567), because the only signals it consulted were register writes. Nothing in the estate
+    watches a session's *rate*. The pipeline has been alive and stationary — same turn count, same
+    trailing message across three probes ten minutes apart (ASSUMPTION-1568) — while the scheduler, the
+    evening sync and 15d all treat it as an ordinary in-flight run. A session that is dead gets noticed;
+    a session that is alive and hung is invisible to every check the estate has, and today 23 re-triggers
+    and 149 appended lines were routed into it.
+  Why it was unstated: culturally embedded — "the task is running" is the answer a scheduler gives, and
+    no one asked it a second question.
+  Type: structural
+  Related decisions: ASSUMPTION-1567; ASSUMPTION-1568; OPEN-238; OPEN-247.
+  Testability: testable in-house — a wall-clock-versus-last-register-write check is a few lines and
+    would have fired on the 17th.
+  Risk if wrong: High. The failure is silent by construction and routes work into a sink.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1054
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from 15d's stated inability plus this pass's probe result.
+    Current status: UNTESTED
+
+PRESUMPTION-1055:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] The estate presumes that **surfacing discharges the obligation** — that a defect
+    named honestly, repeatedly, and in the right register has been dealt with.
+  Evidence it was operative: the day's counts of consecutive, identical, unactioned disclosures — thirteen
+    consecutive declared token breaches (sewing), fifteen consecutive run-log archival recommendations,
+    thirteen orphan-metric filings, twelve identical WATCH-003 checks due for a twelfth, ten runs of an
+    unactioned MONITOR-420, a seventeenth backlog flag, an eighteenth measurement-authority flag. Every
+    one is correctly surfaced under Rules 6 and 12. None has a fix. The sewing agent is the first to break
+    the pattern, and it did so by *refusing to file again* (ASSUMPTION-1581) — which is a sign the loop is
+    understood locally but not structurally. No run anywhere measures the ratio of disclosed to fixed.
+  Why it was unstated: culturally embedded — Rule 12 makes disclosure virtuous, and nothing distinguishes
+    the first disclosure from the fifteenth.
+  Type: normative
+  Related decisions: ASSUMPTION-1569; ASSUMPTION-1581; ASSUMPTION-1582.
+  Testability: testable in-house — the counts are already in the registers; the ratio is one pass away.
+  Risk if wrong: Medium. If the backlog is genuinely human-gated (and much of it is — ASSUMPTION-1562),
+    the disclosure counts are a correct record of waiting, not of failure. The distinction is not
+    currently drawn anywhere.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1055
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Counted repeat-disclosure streaks across today's runs and inferred the shared norm.
+    Current status: UNTESTED
+
+PRESUMPTION-1056:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] Runs presume a **shared counting convention that does not exist** — specifically,
+    whether a consecutive-day streak includes the day it is written on, and whether an "attempt" count
+    counts attempts or failures.
+  Evidence it was operative: three same-day off-by-one disagreements, each between runs reading the same
+    artifacts, each differing by exactly one (ASSUMPTION-1565); plus a second consecutive night of the
+    Wright figure moving by one (1564); plus three headline counts that depend on an unstated
+    grep method (1575). No file in the estate defines the convention. Each run re-derives it silently,
+    and the disagreements are therefore not errors but the predictable output of an absent standard.
+  Why it was unstated: too foundational to notice — counting is the one operation nobody expects to need
+    a specification.
+  Type: methodological
+  Related decisions: ASSUMPTION-1564; ASSUMPTION-1565; ASSUMPTION-1575; OPEN-246.
+  Testability: testable in-house — write the convention down and re-derive the disputed counts once.
+  Risk if wrong: Low individually, Medium cumulatively. Each instance is trivial; the aggregate is that
+    no number in the estate can be compared across runs without re-derivation, which is exactly the
+    labour Agent 16 identified this morning as the thing nobody does.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1056
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred a missing specification from a same-day cluster of unit-sized disagreements.
+    Current status: UNTESTED
+
+PRESUMPTION-1057:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] The 91-pair sweep proposal presumes that **cross-tradition events are findable by
+    enumerating pairs** — that the reason the Hoffman/Friston meeting went unseen for 223 days is a gap
+    in coverage rather than a gap in the discovery channel.
+  Evidence it was operative: the sewing agent's own diagnosis is channel-shaped — "Retrieval watches each
+    thinker's *own* channels; a joint appearance lives on neither" — but the proposed remedy is
+    coverage-shaped: enumerate 91 pairs, sweep 24 months of long-form venues (ASSUMPTION-1561). The
+    unexamined step is between them. The February event was found in September by something other than a
+    sweep, and the report does not say by what. If the finder was a human noticing in passing, the sweep
+    is an untested substitute for a channel nobody has characterised.
+  Why it was unstated: obvious to participants — enumeration is the tractable move, and it is genuinely
+    cheap, so the prior question of *how the one known instance was actually found* did not arise.
+  Type: methodological
+  Related decisions: ASSUMPTION-1561.
+  Testability: testable empirically — run the sweep on the 24 months already elapsed and check whether it
+    recovers the 2026-02-04 event it was designed around. If it does not, the design is wrong in a way no
+    forward-looking deployment would reveal.
+  Risk if wrong: Medium. A back-test is cheap and would settle it before 91 pairs of effort are spent.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1057
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Noted the gap between a channel-shaped diagnosis and a coverage-shaped remedy.
+    Current status: UNTESTED
+
+PRESUMPTION-1058:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] The CROSS-008 restatement is being read as a **success of method**, when the
+    evidence is that it was a success of **arrival** — the paper happened to be read, and nothing in the
+    estate systematically audits standing CROSS claims against their sources.
+  Evidence it was operative: the finding is framed as the network resisting its own instinct ("The
+    network's instinct to defend the strong version would have cost it the evidence" —
+    ASSUMPTION-1560), which presumes a procedure that could have defended it. But CROSS-008 had
+    misattributed final causality "for three sources running," undetected, and was caught because a
+    weekly sewing run read the fourth. There is no over-attribution audit. The 135 CROSS ids have never
+    been swept against their cited sources, and no run today proposed one.
+  Why it was unstated: obvious to participants — the outcome was good, and a good outcome rarely prompts
+    the question of whether the process or the luck produced it.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1560; ASSUMPTION-1561 (same shape: a real finding arriving late by
+    chance).
+  Testability: testable in-house — sample n CROSS claims, check each against its cited source for
+    attribution drift, and report the rate. If the rate is non-trivial, one instance caught by accident
+    is not method.
+  Risk if wrong: High. CROSS ids are the accelerator's principal output; an unmeasured attribution-drift
+    rate makes the count of 135 uninterpretable.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1058
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Distinguished the outcome from the procedure that is being credited for it.
+    Current status: UNTESTED
+
+PRESUMPTION-1059:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] OPEN-244's framing presumes **the sandbox is the variable** — that the question is
+    which substrate to run tasks on, rather than why an input is allowed to grow without an owner.
+  Evidence it was operative: three failures on the same wall in two days, and every proposed fix is
+    substrate-scoped: prune the store, snapshot fewer tables, run natively on the Mac
+    (ASSUMPTION-1572). The un-asked question is who owns `open-story.db`'s retention policy. It reached
+    7.0 GB with no run reporting a size trend, no threshold, and no owner; the agent that hit the wall
+    noted it is "scoped to the two feed JSONs, `agents_tab.html`, and the status file" and correctly made
+    no code change. A substrate with more room postpones the same failure.
+  Why it was unstated: structurally embedded — every agent's remit is a set of files, and an unowned
+    growth curve falls between all of them.
+  Type: structural
+  Related decisions: OPEN-244; ASSUMPTION-1572.
+  Testability: testable in-house — plot the DB size over the last 90 days and ask whether any threshold
+    exists. The absence of such a plot is itself the answer.
+  Risk if wrong: Medium. If the store is genuinely bounded and 7 GB is its ceiling, moving substrate does
+    fix it. No one has checked.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1059
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Noted that three proposed fixes share a scope, and that the scope excludes the growth itself.
+    Current status: UNTESTED
+
+PRESUMPTION-1060:
+  Date surfaced: 2026-09-20
+  Statement: [inferred] **This pass presumes that a day without designer speech still warrants a full
+    extraction.** Twenty-one consecutive days (ASSUMPTION-1555) means the register has become, in
+    substance, a record of agents reporting on agents — and nothing anywhere defines a floor below which
+    extraction should decline rather than proceed.
+  Evidence it was operative: twenty-nine items filed tonight, every one sourced to an agent's own summary
+    or to a measurement this pass made of the estate's own files. Agent 14a's definition says it extracts
+    "stated assumptions … the things the designers *know* they are assuming and have articulated
+    explicitly." For three weeks there have been no designers in the transcript. The pass has silently
+    substituted agent speech for designer speech and kept the item type `ASSUMPTION (stated)`, which the
+    provenance protocol defines as "Original designers were aware of this premise." **For the last
+    twenty-one days that field has been, strictly, false** for most items — the *agent* was aware, not
+    the designer.
+  Why it was unstated: too foundational to notice, and self-serving to leave unexamined — the alternative
+    is for this pass to file less.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1555; PRESUMPTION-912; OPEN-245.
+  Testability: framework commitment as stated, but one part is testable in-house: count how many of the
+    last 21 days' ASSUMPTION items are traceable to designer speech versus agent self-report. The
+    `Source:` lines already carry it.
+  Risk if wrong: High, and the risk runs the direction that is easy to miss. If the type marker is
+    wrong, then the provenance protocol's central epistemic-honesty distinction — designer-aware
+    ASSUMPTION versus inferred PRESUMPTION — has been quietly collapsing for three weeks, and downstream
+    agents have been weighting agent self-reports as though a human had committed to them.
+  Status: UNTESTED. **Self-referential**: surfaced by the pass it indicts, which is the only reason it is
+    here and not a reason to discount it.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1060
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read the provenance protocol's definition of the ASSUMPTION marker against twenty-one days of
+        this register's actual sourcing.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-20, after 14a and against its output. **Nine items
+(1052–1060).** Types: epistemic 3 (1053, 1058, 1060) · methodological 3 (1052, 1056, 1057) · structural 2
+(1054, 1059) · normative 1 (1055). **No Critical-risk item — sixth consecutive night.** High 4 (1053,
+1054, 1058, 1060) — the highest High count in a week, and three of the four are about the estate's
+instruments rather than its subject matter. **One self-referential** (1060), and it is the night's
+principal item: it reads the provenance protocol's own definition against twenty-one days of this
+register's sourcing and finds the ASSUMPTION marker has been applied to agent speech. Checked against
+14a's twenty-nine items for duplication; 1053 and 1060 generalise findings 14a recorded as particulars
+(1556/1573/1574 and 1555 respectively) and are filed as presumptions because no run stated the general
+case.*
+
+---

@@ -379,6 +379,16 @@ and its body, at line 43: *"Do not ingest until the citation resolves. Suggested
 
 **Deadline: PROP-2026-09-02-002's dated condition — *"queue a retrieval check after 2026-09-24"* — falls due in 4 days and is still held by nothing.** Option (b) remains one line and would cover it, PROP-2026-09-19-001, PROP-2026-09-14-004, and every future instance. **Agent 16 has again opened no watch item; Channel 4 remains Tom's to open.**
 
+
+**UPDATE 2026-09-21 — no new instance; count holds at sixteen. One prior adjudication re-examined by name, because it was recorded in a single word.**
+
+Three cards filed 09-20 — `2026-09-20_rohr_preacher-of-grace-incongruity-social-leveling.md` (PROP-2026-09-20-001), `..._preacher-of-love-temple-dignity.md` (-002), `..._pauls-transforming-vision-weekly-summary.md` (-003). All three returned **zero matches** on the full verification-deferral vocabulary; all three are ordinary extractions from CAC dailies the specialist read. **Count unchanged: sixteen.** Page figure re-derived by machine across all **27** files in `pending/` (not restated from this flag's own text, per the 09-20 lesson): **five** leak-shaped cards, the same five — PROP-2026-09-11-001, -09-12-001, -09-14-004, -09-16-002, -09-19-001. Base rate holds: zero in three today, roughly one in five across 09-13 → 09-20.
+
+**Re-examined: PROP-2026-09-16-003 (Kastrup / Headless Way), which the 09-17 entry disposed of as "clean" in one word.** The re-derivation flagged it, and the flag is worth answering rather than dismissing. Against it: the recording is 1h58m behind a **€25/month** membership, was **not heard**, and every candidate is drawn from chapter titles — a condition no reviewer can discharge at the desk, which is this flag's own test. For it, and decisively: **the card specifies its own disposition and asks for nothing the audio would be needed to supply** — *"prefer minting candidate-01 alone"* in the reception-and-locatability sense, *"and filing 02 and 03 as Active Research Questions"* — and candidate-01's evidence (venue, date, duration, speaker, published chapter list) is fully public. That is the same ground on which -09-16-001 was held not to be an instance: an en-bloc APPROVE swallows no unverified finding, because the card has already made the call. **Verdict: not an instance. The 09-17 call stands, now on stated grounds.** Recorded because "clean" was doing too much work for one word, and because this card is the closest thing yet to the line: gated-and-unheard is a *source* problem this flag does not count, and only becomes leakage when the card leaves the disposition to a reviewer who cannot make it.
+
+**Deadline: PROP-2026-09-02-002's dated condition — *"queue a retrieval check after 2026-09-24"* — falls due in 3 days and is still held by nothing.** Option (b) remains one line. **Agent 16 has again opened no watch item; Channel 4 remains Tom's to open.**
+
+
 ---
 
 ## RESOLVED INDEX
@@ -6001,3 +6011,50 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-20.*
+
+---
+
+## AGENT 16 RUN SUMMARY — 2026-09-21
+
+**No check due; none came due. Three cards filed 09-20, none leak-shaped — the first zero-instance filing day since 09-13. One prior adjudication re-opened by name and upheld. The 09-20 ingest run has independently arrived at open item 4's recommendation, with one factual correction owed to it. Short per Rule 6.**
+
+  Items checked: 0 — WATCH-003 next on-cadence **2026-09-22, tomorrow** (count 11, last checked 09-15). Off-cadence trigger unfired: `review/archive/` still **19** files, latest `2026-09-10_decisions.md` (`find -newer` returns nothing). Review-pass gap: **11 days.**
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged — one retroactive line on the INTEGRITY FLAG closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — 2026-09-22
+
+**Intake (Step 2):** `needs_review/` **1** file, **0 new** — the WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present. Channel 2 / Channel 3 vault grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` outside `deferred/` and `agents/`: **five** files, the same five as 09-19 and 09-20 (`wiki_narration.html` + four `.bak` copies), each embedding a verbatim copy of `agents/16_deferred_action_monitor_agent.md` — this agent's own format template, not instances. Real Channel 2/3 items: **0.** Channel 2 unexercised **29** days.
+
+**Condition checks on WATCH-003's own terms (run because free, not counted as check 12):** `review/archive/` unchanged at 19; content grep for `2026-07-19-001` / `beatitudes-week-two` across the archive returns the single match it has returned since 08-27 — `2026-08-27_decisions.md`, the APPROVE of the re-filing PROP-2026-08-12-041. Vault-wide `find` for the two original slugs returns only the four re-filing copies (two in `approved/`, two in the `inbox/` staging mirror). The original file has not reappeared in any proposals/ subfolder. The counter advances on cadence or on the trigger event; neither applies today.
+
+**Findings:**
+1. **Zero leak-shaped cards among the three filed 09-20** (Rohr: *A Preacher of Grace*, *A Preacher of Love*, *Paul's Transforming Vision: Weekly Summary*). Count holds at **sixteen**; page figure re-derived by machine over all 27 `pending/` files rather than restated — **five**, the same five. First zero-instance filing day since 09-13.
+2. **PROP-2026-09-16-003 re-adjudicated and upheld as not-an-instance, on stated grounds.** The 09-17 entry called it "clean" in one word; today's machine sweep flagged it (1h58m behind €25/month, unheard, candidates from chapter titles). It survives the test because the card **specifies its own disposition** — mint candidate-01 in the locatability sense only, file 02 and 03 as Active Research Questions — and candidate-01 rests on public metadata. Same ground as -09-16-001. Full reasoning appended to the LEAKAGE FLAG. Recorded against this agent's own convenience: a one-word verdict is how a wrong count survives, which is the 09-20 lesson applied to adjudications instead of figures.
+3. **Open item 4 has been met from the other side, and it needs one correction.** The 09-20 ingest run (`PROCESSED_LOG.md` 1515) recommends **"a DENY with the reason recorded as source-unretrievable, not content-rejected"** for Wright PROP-2026-08-14-033 — which is exactly what open item 4 has asked for since 09-14, now reached independently and on sound grounds: three distinct ntwrightpage posts, three empty bodies, so the null is the site's rendering and not a transient failure. **The correction owed:** "source-unretrievable" is true of the **audio and any transcript**, and false of the source's **publisher show notes**, which WATCH-002 recovered on 2026-09-08 from the Apple Podcasts feed and which sit in `resolved/2026-09-08_WATCH-002.md`. The 09-20 attempt again did not consult them (ninth run running). If Tom denies the card, the reason line should read *audio and transcript unretrievable; publisher show notes recovered 2026-09-08 and judged insufficient* — otherwise the record will assert an absence that this agent's own archive contradicts. **Open item 4 accordingly narrows from "do not use the false grounds" to "rule, with the reason stated accurately."**
+4. **Ingest ran 09-20, zero yield, correctly** (`PROCESSED_LOG.md` 1499 → **1567** lines; ledger `total=414 ingested=382 decided-zero=30 OPEN=1` — **tenth consecutive zero-ingest day**). Wright -033 held OPEN for the ninth run and is the only OPEN row.
+5. **Review-page rotation, recorded so the census is not misread:** `review/2026-09-17_review.html` was moved to `review/_superseded/` by the 09-20 run (`rm` blocked on the mount; `mv` works). The `review/` root holds **3** pages — 09-18/19/**20** — which is the same count as yesterday over a different set.
+6. **Census:** `pending/` **27** (24 → 27) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` **19** · `review/` root **3** pages (09-18/19/20) · `PROCESSED_LOG.md` **1567** lines, mtime 09-20 22:00.
+7. **The binding constraint is unchanged and now measurable in one line:** 27 cards spanning 09-11 → 09-20, no disposition since 09-09, eleven days. The 09-20 ingest log reaches the same conclusion independently — *"The agents are not short of material; they are short of decisions."*
+
+**Resolution routing (Step 3d):** nothing to route. No file outside this one was created, moved, marked or edited by this run.
+
+**Open for Tom (carried forward; changes only):**
+1. `status:` frontmatter unmaintained vault-wide. *(unchanged)*
+2. **LEAKAGE ruling, deadline 2026-09-24 — 3 days.** Option (b) is one line. Cumulative count **sixteen**; **five** leak-shaped cards on the 27-card page — PROP-2026-09-11-001, -09-12-001, -09-14-004, -09-16-002, -09-19-001. An en-bloc APPROVE swallows all five. *(escalated: deadline)*
+3. Grep-before-retrieval rule — needs a search step to establish URL provenance. *(unchanged)*
+4. **PROP-2026-08-14-033: rule on it.** The ingest step now recommends DENY / source-unretrievable, which is the right disposition on the right grounds — but the reason line must say *audio and transcript* unretrievable, since the publisher show notes were recovered 09-08. *(revised, finding 3)*
+5. One-line INTEGRITY FLAG ruling closes WATCH-003; **twelfth identical check falls tomorrow, 2026-09-22.** *(unchanged in substance)*
+6. Run-log archival split — **sixteenth** consecutive recommendation; file now **730,591 bytes / 6,061 lines**. Will act on one word. *(escalated: size)*
+7. Channel 2 unexercised **29** days. *(unchanged)*
+8. Chat→Cowork sync not attempted (scheduled run; neither browser available non-interactively) — blind spot 09-03 → 09-20, **eighteenth day**. *(unchanged)*
+9. Approve the mark-as-read action, or mark the 4 stale threads read by hand. *(unchanged)*
+10. **One domain approval (`youtube.com`) unblocks two retrieval assignments** — `vshC_TxwrVo` (Wright) and `zF5enEPkoNA` (Wolfram). *(unchanged)*
+11. TOOLING FLAG cleanup; FINDING-089 upstream fix; tombstone deletion. *(unchanged)*
+
+**Agent 16 Status:** Operational. 0 due, 0 checks counted, 0 resolved, 0 added, 0 cancelled or re-cadenced. Active items: 1. Next check: WATCH-003, 2026-09-22.
+
+---
+
+*Run completed 2026-09-21.*
