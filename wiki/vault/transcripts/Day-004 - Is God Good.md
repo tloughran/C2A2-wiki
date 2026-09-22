@@ -15,7 +15,7 @@ fetched_at: 2026-05-01
 fetch_path: youtube-transcript-api (egress allowlist now permits youtube.com)
 synthesis: "[[Day-004 - Is God Good - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-10T16:23:52"
+last_qc_at: "2026-09-21T18:28:43"
 last_qc_outcome: "pass"
 tags: [summa, day/004, pars/I, q/5, q/6, theme/goodness, theme/being-and-good, theme/beauty, theme/analogy-of-being]
 ---

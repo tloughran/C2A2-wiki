@@ -3,10 +3,10 @@ day: 251
 title: Accidents Remaining (Contemporary)
 pairs_with: "[[Day-251 - Accidents Remaining]]"
 length_target_words: 2200
-length_actual_words: 1162
+length_actual_words: 1213
 length_tier: medium
-length_ratio_to_target: 0.528
-length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1053 reproduced EXACTLY pre-edit; the +109 to 1162 (ratio 0.528) decomposes as the Rohr PRS-03 to PRS-21 repoint plus the dating of the Stump absence claim at 38 records, both citation apparatus only."
+length_ratio_to_target: 0.551
+length_note: "Compact-by-design: III Q.77 (accidents remaining without a subject) rendered in tight, complete PRS form with Kastrup's idealism the decisive move; substance whole and all five reviewer questions pass — consistent with the accepted Days 247-265 compact frontier band (Tom-owned standing escalation, not re-opened). Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1053 reproduced EXACTLY pre-edit; the +109 to 1162 (ratio 0.528) decomposes as the Rohr PRS-03 to PRS-21 repoint plus the dating of the Stump absence claim at 38 records, both citation apparatus only. Recount 2026-09-21 under the same boundary (counter calibrated exact on Day 027=3152 and Day 164=2464 both before and after use): the stored 1162 reproduced EXACTLY pre-edit, delta 0; the +51 to 1213 (ratio 0.551) dissolves a single badge that had spanned Hoffman PRS-03 (High) and PRS-04 (Medium, marked Implicit), which had transferred PRS-03's argued evolutionary basis onto a Medium reconstruction. Day 249, reviewed in the same 2026-09-15 16:24 run, had already received exactly this split; it did not reach this file or Day 250. Citation apparatus only, no argument added or reweighted."
 karpathy_wiki_sources:
   - "traditions/kastrup/prs_triplets.md (PRS-02 identity within monism; substance-as-mental-reality)"
   - "traditions/hoffman/prs_triplets.md (PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
@@ -14,11 +14,11 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium — repointed from PRS-03 on 2026-09-15; PRS-03 carries the Universal-Christ label but its Problem and Solution are a warrant for multi-tradition inquiry, so it cannot carry a claim about what the conserved appearances now veil)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
   - "Stump, *Aquinas* (Routledge 2003), on the metaphysics of matter, form and accident — canonical-work anchor; the Stump register carries no Eucharistic-accidents entry, re-searched in full at 38 records on 2026-09-15"
-evidence_strength_summary: "Accidents-without-substrate is metaphysical/contested (Kastrup, leading); appearance-decoupled-from-reality formal with argued evolutionary basis (Hoffman); form-without-fixed-matter empirical-in-domain (Levin); content theological (Rohr/Wright)."
+evidence_strength_summary: "Accidents-without-substrate is metaphysical/contested (Kastrup, leading); appearance-decoupled-from-reality formal, and graded per record rather than bundled — Hoffman PRS-03 is High and carries the argued evolutionary basis (FBT), while PRS-04 is Medium and marked (Implicit) and does not; form-without-fixed-matter empirical-in-domain (Levin); content theological (Rohr/Wright)."
 mind_first_reframe: "The Eucharistic accidents remain without a subject because appearances were never grounded in matter — they are perceptual states in mind, so the material 'subject' the Aristotelian sought was a redundant posit that did no real work."
 central_theme_thread: "The persistence of the accidents is the persistence of the perceiver's finitude; the whole offers itself fully within, and not despite, the limited perspective that can see only the icon."
 tags: [synthesis, day/251, theme/appearance-without-substrate]
-last_qc_at: "2026-09-15T16:24:30"
+last_qc_at: "2026-09-21T02:29:03"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +53,8 @@ The motif of the project surfaces precisely at the seam. A perspective-limited a
 ## Bridges
 
 - **Kastrup PRS-02 (substance-as-mental-reality)** — *metaphysical, contested.* Appearances are mental states; the material substrate was never required.
-- **Hoffman PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* The icon persists while its referent is converted.
+- **Hoffman PRS-03 (perception as fitness-tracking; FBT)** — *formal; Confidence High — an argued evolutionary result that veridical perception is selected against.* The icon persists while its referent is converted.
+- **Hoffman PRS-04 (observer-dependent spacetime)** — *formal; Confidence Medium, and marked (Implicit) in the register — a reconstruction rather than a measured result.* Separated from PRS-03 rather than bundled under one badge: the argued evolutionary basis is PRS-03's and does not transfer to PRS-04.
 - **Levin PRS-03 + PRS-52 (morphological attractor formalism; pattern-persistence across substrate turnover)** — *empirical-in-domain.* Pattern floats free of fixed matter.
 - **Rohr PRS-21 (Universal-Christ-in-creation, "creation as the first incarnation")**, `traditions/rohr/prs_triplets.md` — *theological / contemplative, Confidence Medium.* The reality veiled by conserved appearance. Repointed from PRS-03 on 2026-09-15: PRS-03 wears the "Universal Christ" label, but its Problem and Solution argue a warrant for multi-tradition inquiry, so it is a methodological record and cannot carry a claim about what the conserved appearances veil. PRS-21 is also Medium, so no evidence strength changed.
 - **Wright PRS-06 (resurrection as new creation, not law-violation)** — *theological, high within method.* The content beneath the conserved appearances; PRS-05 (salvation as incorporation) carries the reception half above.

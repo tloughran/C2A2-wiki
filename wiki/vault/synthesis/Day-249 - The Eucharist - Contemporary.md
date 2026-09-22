@@ -17,8 +17,8 @@ length_note: "Compact-by-design: III Q.73-74 (Real Presence / matter of the sacr
 mind_first_reframe: "Under mind-monism, the Real Presence becomes the case where a thing's deep reality (substance, read as its reality in mind) is wholly other than its sensible appearance (accidents, read as interface) — so Christ's reality can be present while the bread's appearance persists."
 central_theme_thread: "The Eucharist is the maximal case of the whole present under a limited perspective's signs: agents perceive only the interface (bread) while the reality (Christ) is present precisely under the limitation of their perception, and communion is participative inclusion in that reality — 'salvation as inclusion in the people united with God.'"
 tags: [synthesis, day/249, theme/presence-and-substance]
-last_qc_at: "2026-09-15T16:24:29"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-21T02:29:05"
+last_qc_outcome: "pass"
 ---
 
 # Day 249 — The Eucharist (Contemporary Parallel)

@@ -3,7 +3,7 @@ day: 250
 title: Transubstantiation (Contemporary)
 pairs_with: "[[Day-250 - Transubstantiation]]"
 length_target_words: 2200
-length_actual_words: 1088
+length_actual_words: 1166
 length_tier: medium
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-01 hard-problem transformation; PRS-03 perception fitness-tracking; PRS-04 observer-dependent spacetime)"
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; PRS-52 longevity as pattern-persistence across substrate turnover)"
   - "traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, 'creation as the first incarnation', Confidence Medium — repointed from PRS-03 on 2026-09-15; PRS-03 carries the Universal-Christ label but its Problem and Solution are a warrant for multi-tradition inquiry, so it cannot carry a claim about what the converted reality is)"
   - "traditions/wright/prs_triplets.md (PRS-06 resurrection as new creation, not law-violation; PRS-05 salvation as incorporation)"
-evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal-speculative (Hoffman, his core empirical-evolutionary claim); identity-through-turnover empirical (Levin); central-theme strongly engaged."
-length_ratio_to_target: 0.495
-length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1027 reproduced EXACTLY pre-edit; the +61 to 1088 (ratio 0.495) is this run's Rohr PRS-03 to PRS-21 repoint, citation apparatus only, no argument added or reweighted."
+evidence_strength_summary: "Substance-conversion theological/metaphysical (Rohr/Wright + Kastrup); appearance-decoupled-from-reality formal, and graded per record rather than bundled — Hoffman PRS-01/PRS-03 are High and PRS-03 is his core argued evolutionary result (FBT), while PRS-04 is Medium and marked (Implicit), so the evolutionary basis belongs to PRS-03 and does not transfer; identity-through-turnover empirical (Levin); central-theme strongly engaged."
+length_ratio_to_target: 0.530
+length_note: "Compact-by-design: III Q.75 (transubstantiation) rendered in tight, complete PRS form with interface theory (Hoffman) the sharpest single resource; substance whole and all five reviewer questions pass. Recount 2026-09-08: 1027 words, not the stored 946 — understated by 81, so the real ratio is 0.467 rather than 0.430. That sits just ABOVE the accepted Days 247-265 compact frontier band (0.31-0.41), so this file is less compact than the band it was filed under; the band escalation remains Tom-owned and is not re-opened here. Recount 2026-09-15 under the stated boundary (top frontmatter stripped, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+): the stored 1027 reproduced EXACTLY pre-edit; the +61 to 1088 (ratio 0.495) is this run's Rohr PRS-03 to PRS-21 repoint, citation apparatus only, no argument added or reweighted. Recount 2026-09-21 under the same boundary (counter calibrated exact on Day 027=3152 and Day 164=2464 both before and after use): the stored 1088 reproduced EXACTLY pre-edit, delta 0; the +78 to 1166 (ratio 0.530) dissolves a single badge that had spanned Hoffman PRS-01, PRS-03 and PRS-04 — the first two are Confidence High, PRS-04 is Medium and marked (Implicit), so the one badge 'formal with an argued evolutionary basis' had levelled a Medium reconstruction up into PRS-03's FBT result. Day 249, reviewed in the same 2026-09-15 16:24 run, had already received exactly this split; it did not reach this file or Day 251. Citation apparatus only, no argument added or reweighted."
 mind_first_reframe: "Transubstantiation is reframed, under interface theory (Hoffman, with Kastrup on substance-as-mental-reality), as the case where a thing's reality is wholly converted while its perceptual icon is wholly conserved — coherent precisely because the icon never resembled the reality in the first place."
 central_theme_thread: "The project's central motif at maximum intensity: the whole is made present under, and only under, the signs available to a perspective-limited perceiver; the limitation (the remaining accidents) is not lifted, yet the whole is fully given, and reception is the limited perspective's inclusion in the whole it cannot see."
 tags: [synthesis, day/250, theme/conversion-of-reality-under-stable-appearance]
-last_qc_at: "2026-09-15T16:24:30"
+last_qc_at: "2026-09-21T02:29:03"
 last_qc_outcome: "rewrote"
 ---
 
@@ -51,7 +51,8 @@ This is the project's central motif at maximum intensity: the whole made present
 
 ## Bridges
 
-- **Hoffman PRS-01 + PRS-03 + PRS-04 (interface theory; FBT)** — *formal with an argued evolutionary basis.* Appearance systematically decoupled from reality — the sharpest resource for conserved-accidents.
+- **Hoffman PRS-01 (hard-problem transformation) + PRS-03 (perception as fitness-tracking; FBT)** — *formal; both Confidence High, and PRS-03 in particular is a rigorous mathematical result that veridical perception is selected against, not a speculation.* Appearance systematically decoupled from reality — the sharpest resource for conserved-accidents.
+- **Hoffman PRS-04 (observer-dependent spacetime)** — *formal; Confidence Medium, and marked (Implicit) in the register — a reconstruction rather than a measured result.* Separated from the two High records above rather than bundled under one badge: the "argued evolutionary basis" belongs to PRS-03's FBT result and does not transfer to PRS-04, which completes the picture without carrying its weight.
 - **Kastrup PRS-02 + PRS-09 (substance-as-mental-reality; participatory encounter)** — `wiki/traditions/kastrup/prs_triplets.md` — *metaphysical, contested.* Conversion at the level of reality-in-mind; reception as participation. PRS-09 records a proposed refinement of the dashboard metaphor arising from McGilchrist rather than a settled claim of the program (Confidence: Medium).
 - **Levin PRS-01 + PRS-52 (morphogenetic control; longevity as pattern-persistence across substrate turnover)** — *empirical-in-domain.* "What a thing is" floats free of its current matter.
 - **Rohr PRS-21 (Universal-Christ-in-creation, "creation as the first incarnation")**, `traditions/rohr/prs_triplets.md` — *theological / contemplative, Confidence Medium.* The latent universal presence focally realized. Repointed from PRS-03 on 2026-09-15: PRS-03 wears the "Universal Christ" label, but its Problem and Solution argue a warrant for multi-tradition inquiry, so it is a methodological record and cannot carry a claim about what the converted reality is. PRS-21 is also Medium, so no evidence strength changed.

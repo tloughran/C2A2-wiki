@@ -3,9 +3,9 @@ day: 276
 title: Distinction of Orders (Contemporary)
 pairs_with: "[[Day-276 - Distinction of Orders]]"
 length_target_words: 1500
-length_actual_words: 1038
+length_actual_words: 1207
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-16 BEFORE editing: 996 exactly as stored. This run's Rohr PRS-03 to PRS-21 repoint then added 42 words of citation apparatus: 996 → 1038, ratio 0.664 → 0.692. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-16 BEFORE editing: 996 exactly as stored. This run's Rohr PRS-03 to PRS-21 repoint then added 42 words of citation apparatus: 996 → 1038, ratio 0.664 → 0.692. No argument altered. RECOUNTED 2026-09-21 BEFORE editing: 1038 exactly as stored, delta 0. This run's badge repairs then added 169 words of citation apparatus — Kastrup PRS-02 corrected from a 'speculative' badge to the record's actual Confidence High with the speculation relocated to this commentary's sacramental-role extension, and the Friston PRS-05/PRS-06 bullet given the (Implicit)/Medium disclosure it had never carried on the leg that does the ex-opere-operato work. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. New total 1207, ratio 0.805."
 karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-21 creation as the first incarnation, repointed from PRS-03 on 2026-09-16 (see Bridges); PRS-04 embodied love as epistemology)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace, PRS-17 bioelectric interface to collective intelligence)"
@@ -13,11 +13,11 @@ karpathy_wiki_sources:
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "vault/refs/Karpathy wiki bridges.md (sacraments locus, III Q.60-90 topical-priors row)"
 evidence_strength_summary: "Theological (Rohr, sacramental presence) firm within its tradition; Levin morphogenetic/collective-intelligence claims empirical at cell scale, speculative when scaled to social bodies; Friston multi-agent active inference formal/speculative."
-length_ratio_to_target: 0.692
+length_ratio_to_target: 0.805
 mind_first_reframe: "The priestly character is the theological limit-case of durable, function-bearing form assigned to a member by the whole it serves — a real-but-immaterial role, which mind-monism accommodates more readily than physicalism."
 central_theme_thread: "An order is the institutional admission that no single member sees the whole; ordination is a confessed perspective-limitation made fruitful within a body that together perceives more than any of its members."
 tags: [synthesis, day/276, theme/order-as-form-in-a-body]
-last_qc_at: "2026-09-16T14:30:28"
+last_qc_at: "2026-09-21T20:33:54"
 last_qc_outcome: "rewrote"
 ---
 
@@ -46,10 +46,10 @@ The project's claim is that conscious agents are individuated by the limits of t
 ## Bridges
 
 - **Levin PRS-08 / PRS-17 (empirical at cell scale, speculative when scaled):** durable cell-role as bioelectric form-memory is the best naturalistic model we have for "character" as real-but-immaterial form. Pairing flagged because it gives the priestly-character problem an experimental analogue.
-- **Friston PRS-05 / PRS-06 (formal / speculative):** a role is a node in a shared generative model; the office persists because the body keeps modeling it. Explains *ex opere operato* without invoking the minister's psychology.
+- **Friston PRS-05 / PRS-06:** a role is a node in a shared generative model; the office persists because the body keeps modeling it. Explains *ex opere operato* without invoking the minister's psychology. *Grades disclosed, because this is the bullet that carries the ex-opere-operato claim: **both records are Confidence Medium and both are labelled `(Implicit)`** — PRS-05 *Distributed cognition across scales*, PRS-06 *Multi-agent coherence via mutual modeling*. Neither is an established result; each is an implied extension of the active-inference framework, so the formalism this bullet leans on is a proposal at Medium, not a mature framework. The earlier badge named the kind (formal/speculative) and stated no grade, which let the leg read as firmer than the register supports.*
 - **Rohr PRS-04 (theological):** incarnational theology — the spiritual is always embodied, the body a site of knowing — is the id that actually carries "sacramental matter genuinely bears grace."
 - **Rohr PRS-21 (theological; Confidence Medium):** creation as the first incarnation — the divine pattern present throughout creation, which makes form-in-matter the rule rather than the exception. [Repointed from PRS-03 on 2026-09-16: PRS-03's Problem and Solution argue a warrant for multi-tradition inquiry, not the pattern's presence in matter; PRS-21 is the record for that claim. Same Confidence Medium, so no evidence strength changed.]
-- **Kastrup PRS-02 (speculative, metaphysical):** individual identity within monism — the metaphysical permission slip for "real role without separate substance."
+- **Kastrup PRS-02:** individual identity within monism — the metaphysical permission slip for "real role without separate substance." *Metaphysical; the record is Confidence **High** at the register, and the earlier "speculative" badge was read off this commentary's reach rather than off the record. PRS-02's own claim — that a distinct individual identity is coherent within a monist ontology — is what licenses "real role without separate substance," and it is firmly held. What is speculative is the step this bullet takes beyond it: applying the alter-individuation account to a *sacramentally conferred* role in a social body, which no Kastrup record treats.*
 
 ## Where this leaves us
 

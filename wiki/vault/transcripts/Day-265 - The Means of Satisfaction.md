@@ -15,7 +15,7 @@ fetched_at: 2026-06-17
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-265 - The Means of Satisfaction - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-08T18:29:37"
+last_qc_at: "2026-09-21T20:33:52"
 last_qc_outcome: "pass"
 tags: [summa, day/265, pars/supplement, q/penance]
 ---

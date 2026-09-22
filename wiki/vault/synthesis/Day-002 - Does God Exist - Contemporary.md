@@ -80,8 +80,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-21 Universal-Christ-in-creation, Medium — 'creation as the first incarnation', cosmic-Christ frame as the spirituality pairing for a mind-monist metaphysics; repointed 2026-09-16 from PRS-03, a multi-tradition-inquiry warrant wearing a Universal-Christ label. PRS-9 contemplative practice as operational pathway from perspective-limitation to inhabited loving unity, High). Note unpadded ids above 05."
 mind_first_reframe: "Aquinas's Five Ways are not five proofs of an external entity but five facets of how a perspective-limited conscious agent finds the structure of its own experience implying an unconditioned ground; God-as-existence-itself becomes mind-at-large as ontological primitive, with each finite perspective dissociated from but contained within it."
 central_theme_thread: "Q.1 a.7 — 'we cannot know what God is in himself; we know him by his effects' — is the apophatic acknowledgment that conscious agents are individuated by the limitations of their perspective; loving unity (Aquinas's beatific vision; Wright's covenant inclusion; Rohr's Universal Christ; Kastrup's reintegration into mind-at-large) is the computational telos that finite agents work toward through limited resources."
-last_qc_at: "2026-09-16T04:22:35"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-21T18:28:42"
+last_qc_outcome: "pass"
 tags: [synthesis, day/002, theme/sacred-doctrine, theme/existence-of-god, theme/five-ways, theme/apophatic, theme/metaphysical-keystone]
 
 ---
