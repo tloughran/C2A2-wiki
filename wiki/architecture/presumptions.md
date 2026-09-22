@@ -23061,3 +23061,320 @@ register's sourcing and finds the ASSUMPTION marker has been applied to agent sp
 case.*
 
 ---
+PRESUMPTION-1061:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that the sandbox scratch failure is transient and
+    external — someone else's weather rather than a condition of the system.** Eight runs hit it today.
+    One prediction on the record: "Probably clears on its own when the sandbox is reclaimed."
+  Evidence it was operative: Each of eight runs diagnosed the fault from scratch, in its own words, and
+    none looked for a prior diagnosis. Exactly one — the OpenStory refresh — established the real cause
+    ("a block quota/reservation, not genuine fullness") and marked it "verified, not inferred." That
+    finding entered no register, was cited by no sibling, and would have saved the other seven their
+    diagnosis. Two runs independently reported it as fourth or third occurrence; nobody counted the whole
+    day. No incident record exists; no owner is named; the two proposed fixes ("real writable scratch,"
+    "run on the Mac") both require a decision nobody in the network can make.
+  Why it was unstated: obvious to participants. An environment fault reads as infrastructure, and
+    infrastructure is tacitly outside the estate's model of itself.
+  Type: structural
+  Related decisions: ASSUMPTION-1586; ASSUMPTION-1588; OPEN-244; OPEN-248 (new); PRESUMPTION-1059.
+  Testability: testable in-house — count recurrences over 90 days from the run reports; check whether any
+    register carries the verified diagnosis.
+  Risk if wrong: **High.** If this is a standing condition rather than weather, then the estate spends a
+    rediscovery cost every day, five to eight agents produce nothing on the days it bites, and the single
+    correct diagnosis decays because no register holds it. The failure is not the disk; it is that the
+    estate has no way to remember a diagnosis across agents.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1061
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Compared eight same-day diagnoses of one fault and noted that the one verified diagnosis
+        propagated nowhere.
+    Current status: UNTESTED
+
+PRESUMPTION-1062:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that a scheduled run reports.** Every downstream check —
+    the changelog, the metrics snapshot, the scheduler health rows, this register — takes a run's final
+    summary as the record of what it did, and there is no check anywhere that a summary exists.
+  Evidence it was operative: `local_0cbbc6fa`, a second lit-search pipeline session, created six tasks,
+    spawned two sub-agents, and went idle with no final message (ASSUMPTION-1619). Nothing noticed. The
+    scheduler health check enumerates registry rows and launchd agents, not session outcomes; PREMISE-208
+    (liveness ≠ progress, incorporated today at High) asserts on register writes, which a silent run may
+    still have produced via its sub-agents. The morning project status reported the overnight chain "all
+    fired on time" on exactly this basis — firing was observed, output was not (ASSUMPTION-1609). The
+    metabolism row states the trap in the estate's own words — "the task may report a run and write
+    nothing" — and the complementary case, *write something and report nothing*, has no row at all.
+  Why it was unstated: too foundational to notice. A report is how an agent exists to the rest of the
+    network, so the absence of one has no natural place to appear.
+  Type: methodological
+  Related decisions: ASSUMPTION-1619; ASSUMPTION-1609; ASSUMPTION-1587; PRESUMPTION-1054 → PREMISE-208;
+    OPEN-249 (new).
+  Testability: testable in-house — one assertion per scheduled session that a final message exists, run
+    against the last 30 days of transcripts.
+  Risk if wrong: **High**, and the risk is silent by construction. Every count this register publishes
+    about the day's activity is a count of runs that spoke. A run that finishes silently is not merely
+    unreported; it is subtracted from the estate's picture of itself without leaving a gap.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1062
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Found a silent scheduled session and traced which of the estate's checks could have caught it.
+    Current status: UNTESTED
+
+PRESUMPTION-1063:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that the right response to an empty queue is to substitute
+    oldest-day work.** Twenty-nine consecutive runs have found nothing eligible and every one has picked
+    six days anyway, or explained why it could not.
+  Evidence it was operative: Seven Summa runs today, each reporting the starvation streak and each
+    proceeding to a substitute cohort or to a blocked attempt at one. The scheduling question that would
+    settle it is described by three separate runs as "twenty-four runs old," "27 runs old," and standing —
+    it is restated daily and blocks nothing. No run has proposed the alternative: that a task with no
+    eligible work should not fire. One run came closest — "I deliberately didn't manufacture work on fresh
+    files" — and its stated reason was corpus damage, not schedule design: "reviewer apparatus is now the
+    largest source of corpus length drift — 104 of 307 files outside ±25%, 73 of them blaming reviewer
+    apparatus in their own `length_note`. Another pass on an already-fresh file makes that worse."
+  Why it was unstated: culturally embedded. A scheduled task that fires and does nothing feels like a
+    failure, so the substitute cohort reads as diligence rather than as a choice.
+  Type: normative
+  Related decisions: ASSUMPTION-1596; ASSUMPTION-1614 (an agent recommending its own retirement);
+    OPEN-246.
+  Testability: testable in-house — measure the corpus-drift contribution of reviewer apparatus against
+    the defect yield of substitute cohorts, which today ran at roughly five defects per six days.
+  Risk if wrong: **Medium**, and the sign is genuinely unclear. Substitution has produced real findings
+    today — the fabricated FLAG ids, the badge defects, the note-shape rule. It has also made the
+    reviewer the single largest source of the drift the reviewer measures. The estate has the numbers for
+    both sides and has never set them against each other.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1063
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Noted that twenty-nine runs chose one response to an empty queue and none named an alternative.
+    Current status: UNTESTED
+
+PRESUMPTION-1064:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that declaring a budget breach discharges it.** Rule 6 says
+    "Surface the breach. Do not silently overrun." Five runs surfaced breaches today at 1.5× to 8× the
+    guideline; the rule was satisfied five times and the number moved nowhere.
+  Evidence it was operative: 45k, 65k, 150k, 200k, 250k against a 30k guideline, plus the lit pipeline
+    "substantially" over a 4,000-token task budget. Four of the five name the identical cost centre —
+    contract reads plus six full commentary reads — and treat it as a fact about the day rather than
+    about the task. Only one run in the estate today asked what the cost implied about the design, and it
+    was the sixth: "The register's format, not the budget, is what is wrong" (ASSUMPTION-1594). No run
+    asked whether 30k is the right guideline for a task whose irreducible work is reading eight documents.
+    Two runs also disagree about the same earlier run's overrun — 45k in one report, ~65k in the run's own.
+  Why it was unstated: obvious to participants. Rule 6 is phrased as a disclosure duty, so complying with
+    it feels like completing the transaction.
+  Type: normative
+  Related decisions: ASSUMPTION-1595; ASSUMPTION-1594; ASSUMPTION-1582; OPEN-250 (new); OPEN-246.
+  Testability: testable in-house — the fixed read cost of a six-pair review is measurable in one run.
+  Risk if wrong: **Medium.** A guideline that every instance of a task class breaches, always for the
+    same reason, stops carrying information. The cost is not the tokens; it is that a real overrun — one
+    caused by thrash rather than by necessary reading — would now be indistinguishable from the baseline.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1064
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read five same-day compliant disclosures as a population and noted what compliance left undone.
+    Current status: UNTESTED
+
+PRESUMPTION-1065:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that a defect found in one instrument is a defect *of* that
+    instrument.** Each anchoring and pattern-matching failure is repaired locally, and nobody asks which
+    other instrument has the same defect — for the fourth consecutive night.
+  Evidence it was operative: Tonight: the nightly verifier retracted a dangling-CROSS finding as "a parser
+    artifact" (ASSUMPTION-1615); a reviewer found its criterion-(d) check misreading file scope, its grade
+    check blind to non-markdown-headed records, and its body window truncating before a record
+    (ASSUMPTION-1598); another found a control set that "can't detect blindness to a form they don't use"
+    (ASSUMPTION-1600); and **this pass over-anchored its own grep and reported a four-day gap that does not
+    exist** (ASSUMPTION-1617). That is five instances in one day, in five instruments, with five local
+    repairs. PRESUMPTION-1053 raised exactly this on 09-20 and was routed to the empirical lane; nothing
+    ran. The one run that did generalise stated the rule and applied it only to itself: "a measure
+    returning a *uniform* verdict across a whole population is usually broken rather than revealing."
+  Why it was unstated: too foundational to notice. An agent's remit is its own subject matter, and "which
+    of my siblings shares this bug" is nobody's subject matter.
+  Type: epistemic
+  Related decisions: PRESUMPTION-1053; ASSUMPTION-1548; ASSUMPTION-1575; ASSUMPTION-1584;
+    ASSUMPTION-1598; ASSUMPTION-1600; ASSUMPTION-1615; ASSUMPTION-1617; ASSUMPTION-1603.
+  Testability: testable in-house, and cheaply — grep every agent script and register-reading step for
+    id-matching patterns, and check each against the actual conventions of the file it reads.
+  Risk if wrong: **High.** Every count this estate publishes is produced by one of these patterns. Four
+    nights running, a published figure has proved method-dependent, and each time the correction came from
+    someone checking twice rather than from a check. **The defect is not rare and it is not being fixed;
+    it is being caught.**
+  Status: UNTESTED. **Self-referential**: this pass is one of tonight's five instances, which is why the
+    count is five and not four.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1065
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Counted five same-day instances of one defect class across five instruments, including this pass's.
+    Current status: UNTESTED
+
+PRESUMPTION-1066:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that "nothing found" means "nothing there" when the search
+    is its own.** Coverage is reported when a search fails and omitted when it succeeds at finding nothing.
+  Evidence it was operative: The daily run: "one new card today because thirteen traditions genuinely had
+    nothing new, not because the agents ran out of energy," with no per-tradition search count, no sources
+    queried, and no blocked routes named — and it draws a health conclusion from it ("The sweep is healthy
+    and self-limiting"). The Levin/Friston specialist, the same day, did the opposite: "Nine searches
+    (arXiv, PubMed, bioRxiv/PsyArXiv, VERSES, talks/podcasts, and five collaborator permutations)... Direct
+    arXiv author-listing fetches were blocked by the provenance restriction, and a browser-pane request for
+    arxiv.org was auto-declined — so this is **'nothing found by the available means,' not 'nothing
+    exists.'**" Both ran under the same retrieval restrictions; only one said so. Eleven consecutive
+    zero-ingest days rest on the unbounded version.
+  Why it was unstated: obvious to participants. A sweep that returns nothing feels like a completed
+    sweep, and the effort is invisible in the result.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1610; ASSUMPTION-1613; ASSUMPTION-1612; PRESUMPTION-1067 (new).
+  Testability: testable in-house — require a coverage line per tradition sweep, then compare eleven days
+    of zero-ingest against the retrieval-blocked routes named in the same period.
+  Risk if wrong: **Medium**, rising. If the zero-ingest streak is partly a retrieval artefact rather than
+    a fact about the field, then the estate's central input count has been reading a blocked pipe as a
+    quiet one — and the Levin card, closed today by changing route rather than retrying
+    (ASSUMPTION-1612), is direct evidence that at least one "nothing there" was "nothing reachable."
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1066
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Set two same-day negative results against each other and found only one bounded by its means.
+    Current status: UNTESTED
+
+PRESUMPTION-1067:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that auto-decline is an environment condition rather than a
+    design fact.** Capabilities that require a human to approve them are assigned to tasks scheduled to
+    run when no human is present, and the resulting refusals are reported as faults.
+  Evidence it was operative: Three distinct capabilities blocked today for this reason alone — Desktop
+    Commander file reads and the report-rotation move ("auto-declined... Nothing was deleted; the file is
+    just still in `Reports/`"), `request_cowork_directory`, and the browser-pane request for arxiv.org.
+    Each was reported as a failure of the run. One run came close to naming the design question: "If you
+    want rotation to survive a dead sandbox, `Desktop_Commander__move_file` would need standing approval
+    for this task — it moves, never deletes." No run asked the general form: which unattended tasks depend
+    on attended capabilities, and how many.
+  Why it was unstated: culturally embedded. The approval prompt is an interaction, and an interaction
+    that does not happen leaves no trace in the task's own model of its work.
+  Type: structural
+  Related decisions: ASSUMPTION-1612; ASSUMPTION-1613; ASSUMPTION-1618; ASSUMPTION-1607 (the absent
+    `permissionMode`, "an unattended run will HANG on the first prompt for an unapproved tool").
+  Testability: testable in-house — enumerate scheduled tasks against the tools they call, and mark which
+    tools require approval.
+  Risk if wrong: **Medium.** The `permissionMode` row has been FAIL for seventeen days on exactly this
+    mechanism, and the estate's history records "8 stalls in 30 days on 8 different tools." That is the
+    same presumption having already cost the estate a month, in a place where it was eventually noticed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1067
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Collected three same-day approval refusals and read them as one design condition.
+    Current status: UNTESTED
+
+PRESUMPTION-1068:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that its stores grow without bound and that each ceiling is
+    a local problem.** Four independent capacity limits were reached today and each was reported as its
+    own incident; no run treated growth-without-retention as a single property of the system.
+  Evidence it was operative: the reviewer memory file at 47.6K against a 49K cap; the QC log at 8.2 MB,
+    then 8.5 MB, "can no longer be read whole by the file tools. Rotation is worth a decision" and
+    "Rotation is overdue"; `/sessions` at 100% for three consecutive runs; `open-story.db` at 6.6–7.07 GB
+    against 2.4 GB of scratch; `for_lit_search.md` at 22,725 lines with four incompatible formats;
+    `watch_list.md` at 730,600 bytes. Six stores, four ceilings, zero retention policies, and the two
+    rotation recommendations on the board are both described by their own authors as overdue. No register
+    tracks any store's growth rate.
+  Why it was unstated: too foundational to notice. Append-only is the estate's default memory model —
+    every register here, including this one, is an append log — and a model that has always worked does
+    not present itself as a choice.
+  Type: scaling
+  Related decisions: OPEN-244; PRESUMPTION-1059; ASSUMPTION-1594; ASSUMPTION-1607; ASSUMPTION-1608.
+  Testability: testable in-house — plot size over 90 days for the six named stores and identify which
+    have any retention or rotation policy.
+  Risk if wrong: **High**, and it is the risk most likely to arrive as a cliff rather than a slope. Three
+    of today's failures were not degradations but hard stops: a file that cannot be read, a copy that
+    cannot complete, a write that returns ENOSPC. The self-awareness registers are on the same trajectory
+    — `assumptions.md` and `presumptions.md` are each past 2.3 MB and grow by roughly 25 KB a night.
+  Status: UNTESTED. **Self-referential**: this register is one of the six stores.
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1068
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Collected four same-day capacity ceilings across six stores and found no retention policy behind
+        any of them.
+    Current status: UNTESTED
+
+PRESUMPTION-1069:
+  Date surfaced: 2026-09-21
+  Statement: [inferred] **The estate presumes that running a named in-house measurement is somebody's
+    job.** The lit pipeline's Critical flag says the instruments are "specified, cheap, and unrun"; it does
+    not say who was supposed to run them, because no agent in the twenty-agent network has that assignment.
+  Evidence it was operative: The flag is a *recurrence* — the same pattern was raised on 2026-09-16 and
+    "those instruments weren't run either." Five days passed with the measurement named, costed at thirty
+    minutes, and untouched. 14a and 14b route items to `for_lit_search.md`; 15a and 15b search literature;
+    15c dispositions; 15d re-triggers; 16 monitors deferrals. Every one of these consumes or routes. None
+    measures. Four of tonight's queued items and four of last night's are in-house empirical, and the
+    empirical lane has an inbox and no worker — which is why the literature lane "wins because it's the
+    automatable one," in the flag's own words. The consequence stated plainly: "The honest reading of every
+    'SUPPORTED' above is *supported by the weaker of two available sources*."
+  Why it was unstated: oversight, of the structural kind. The network was designed around the traditions
+    it studies and the literature that tests them; the measurements it would need to test *itself* were
+    added to the workflow as a routing destination rather than as a role.
+  Type: structural
+  Related decisions: ASSUMPTION-1590; ASSUMPTION-1593; PREMISE-206, -207, -208; PRESUMPTION-1058;
+    PRESUMPTION-1060; OPEN-249 (new).
+  Testability: **not testable by literature search, and that is the point.** Testable only by assigning
+    the role, or by counting how many named in-house measurements have been run since the lane opened —
+    which is itself an in-house measurement, and so is subject to the same gap.
+  Risk if wrong: **Critical.** If no role runs the cheap measurements, then the estate's empirical lane is
+    a queue that only fills, every premise it incorporates rests on the weaker of two sources by
+    construction, and the self-awareness pipeline's principal output is a growing list of things it has
+    decided not to find out. This is the first Critical-risk item in seven nights, and it is not a new
+    fact — it is five days old and was filed by the pipeline against itself.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1069
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Read the pipeline's Critical flag against the network's twenty agent definitions and found no
+        role that runs a measurement.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-21, after 14a and against its output. **Nine items
+(1061–1069).** Types: structural 3 (1061, 1067, 1069) · normative 2 (1063, 1064) · epistemic 2
+(1065, 1066) · methodological 1 (1062) · scaling 1 (1068). **One
+Critical-risk item — the streak of six clear nights ends at seven** (1069): the estate has no role that
+runs an in-house measurement, which is the structural fact behind the lit pipeline's own Critical flag.
+High 4 (1061, 1062, 1065, 1068). **Two self-referential** (1065, 1068):
+this pass committed tonight's fifth instance of the anchoring defect, and these registers are two of the
+six stores growing without a retention policy. Checked against 14a's thirty-five items for duplication;
+1062 and 1065 generalise findings 14a recorded as particulars (1619 and 1617/1615/1600/1598 respectively)
+and are filed as presumptions because no run stated the general case. PRESUMPTION-1053, which raised the
+generalisation question on 09-20, was routed to the empirical lane and not run — PRESUMPTION-1069 is why.*
+
+---
+

@@ -15630,3 +15630,89 @@ REVISE-478:
   Urgency: Medium — but note (1) and (2) are free and (2) is an unexecuted 15c ruling, not a new ask.
   PROVENANCE: Origin 14b | Chain [14b -> 15a, 15b -> 15c -> 15d -> 15a, 15b -> 15c] |
     Current status: REVISION-FLAGGED (MONITOR-415 closed)
+
+
+================================================================================
+## 2026-09-21 — 15c REVISE batch (3 flags, from the 2026-09-20 intake)
+
+REVISE-479:
+  Date: 2026-09-21
+  Source item: ASSUMPTION-1560 (DISPOSITION-969)
+  What is at risk: CROSS-008 as published in three sources; any downstream cross-tradition claim keyed on
+    Stump's causal category.
+  The finding: Stump's own stated causal commitment is formal and level-indexed (PREMISE-206). A
+    *primary* final-causal attribution to her is not supported by anything located in her own voice.
+  The counter-finding, which is why this is a flag and not an edit: *Wandering in Darkness* argues from
+    an ultimate end, and Stump's expository work necessarily transmits Aquinas's teleology. Correcting
+    CROSS-008 to "formal, not final" would install a new error of the same class in the same three
+    places — and would be logged as an audit success, which makes it hard to reverse.
+  Recommended action (for Tom): before any edit, classify each of CROSS-008's three sources as (a) Stump's
+    own voice, (b) Stump reporting Aquinas, (c) a third party's summary. ~30 minutes. Then correct only
+    the (a) cases, and only to the narrow claim. If all three turn out to be (b), the defect belongs to
+    the estate's summarising step, not to the sources, and the fix is different.
+  Urgency: Medium — no new claims are being built on CROSS-008 this week, but it is cited as standing.
+
+REVISE-480:
+  Date: 2026-09-21
+  Source item: ASSUMPTION-1561 (DISPOSITION-970); binds MONITOR-612 / PRESUMPTION-1057
+  What is at risk: the 91-pair x 24-month sweep design; the claim that the 223-day cross-tradition
+    discovery lag has a known remedy.
+  The finding: pair enumeration is challenged as a remedy, not as a diagnosis. Where positives are
+    extremely rare and clustered, uniform enumeration is the worst allocation of a fixed budget
+    (arXiv:2010.05103) and is dominated by adaptive collection; the design is also O(n^2) in a roster the
+    estate intends to grow.
+  Recommended action (for Tom): run the pre-registered back-test BEFORE building the sweep — apply the
+    sweep design retrospectively to the 24 elapsed months and check whether it recovers the 2026-02-04
+    Hoffman/Friston event. The success criterion was stated on 2026-09-20, before the instrument exists,
+    and that ordering is auditable. Add one instruction: record the venue of each recovered event. If
+    events cluster in few venues, re-key the sweep to venues (O(n)) and close PRESUMPTION-1057 as
+    confirmed. If they scatter, build the grid.
+  Urgency: Medium — but the cost asymmetry is the point: the test is hours, the sweep is 2,184 queries.
+
+REVISE-481:
+  Date: 2026-09-21
+  Source item: ASSUMPTION-1571 (DISPOSITION-971)
+  What is at risk: 15d's staleness-based downgrading rule; the standing population-level
+    STALE-MONITOR-FLAG; any future citation of "staleness selects for defective items."
+  The finding: the 8-of-9 figure is selection on the dependent variable. It counts only items that were
+    *searched*, and in a stalled queue search targets are chosen because they look wrong. There is no
+    comparison class and no base rate. The underlying hypothesis has support in defect-aging and
+    maintenance-triage practice, but this evidence cannot carry it.
+  Recommended action (for Tom): compute the REVISE rate for non-downgraded searched items over the same
+    window from `lit_search_returns.md` — one query — and compare. Above base rate by a material margin:
+    re-disposition toward INCORPORATE. At or below: retire the flag. Either way, state the finding with
+    its n attached wherever it appears until the comparison exists.
+  Urgency: Medium
+  Escalation note: this item reached REVISE rather than another MONITOR cycle under the escalation rule
+    adopted in MONITOR-611 — a defect disclosed repeatedly without resolution goes to the human queue
+    rather than back to the watch list. It has now been re-raised on successive 15d runs and
+    strengthened in the telling without once being tested.
+
+REVISE-482:
+  Date: 2026-09-22
+  Source item: ASSUMPTION-1598 (DISPOSITION-977) — limb 2 only; limb 1 was INCORPORATED as PREMISE-209
+  The rule as written: "a lone anomaly in an otherwise clean sweep deserves one direct read before
+    write-up."
+  What is at risk: the QC write-up discipline this rule was about to become; any sweep whose exception
+    handling is "re-read the outlier." The rule was derived by an agent from three of its own false
+    positives — that provenance is a point in its favour and also the exact shape of the problem.
+  The finding: the rule selects the case to verify BY ITS RESULT. Verifying only the observation that
+    disagrees with the rest, and accepting the concordant majority unread, is a confirmation-bias
+    protocol: it can only ever remove disagreement from the record. Two failure directions follow, and
+    they are asymmetric. If the anomaly is real and the majority is wrong, the rule re-reads the one
+    case that was already right. If the instrument is broken in a way that produces near-uniform output
+    — which is the failure mode PREMISE-209 was just written about — the rule re-reads the single case
+    the breakage did not reach and clears the sweep. 15a found the disagreement-triggered-verification
+    limb only weakly supported and noted that base-rate reasoning cuts against over-trusting a lone
+    deviant signal; 15b, independently, named it a textbook confirmation-bias setup. Both directions
+    landed on the same limb. That convergence is why this is REVISE and not MONITOR.
+  Recommended action (for Tom): keep the impulse, fix the selection. Replace "read the anomaly" with
+    "read a fixed-size sample drawn WITHOUT REGARD TO VERDICT — including concordant cases — plus the
+    anomaly." The sample size can be small; what matters is that the concordant cases are exposed to
+    the same scrutiny, because they are the ones a broken instrument produces. One line in the sweep
+    procedure. If the rule is wanted as stated for cost reasons, state the cost: the sweep is then
+    verified against disagreement only and cannot detect uniform failure.
+  Urgency: Medium — no live decision turns on it today, but the rule was extracted precisely so it
+    could be reused, and it is cheaper to fix before it propagates than after.
+  Note: this REVISE and PREMISE-209 come from one item and are not in tension. Uniformity triggers an
+    instrument check (209); the check must not be aimed by the verdict (482).

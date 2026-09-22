@@ -3340,3 +3340,40 @@ OPEN-247:
   Needs: an owner. The check itself is small; the question is whose remit it falls in, which is the same
     shape as OPEN-244 and PRESUMPTION-1059.
   Status: OPEN
+
+OPEN-248:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1586, ASSUMPTION-1588, PRESUMPTION-1061)
+  Question: Who owns the sandbox scratch-space fault, and is the answer "move the heavy work to the
+    Mac"? Eight scheduled runs were blocked by it today. One of them established the real cause — a block
+    quota or reservation, not genuine fullness, verified by a 4-byte write test against `df` reporting
+    2.4 G free — and that diagnosis reached no register and no sibling. Three unrelated agents
+    independently concluded their work must move to the Mac; none can change a host or a schedule.
+  Needs: **an owner**, then one line in a register so the next eight runs do not rediagnose it. The
+    architectural half (Mac versus sandbox for DB-sized work) is the same shape as OPEN-244.
+  Status: OPEN
+
+OPEN-249:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1619) and 14b (PRESUMPTION-1062, PRESUMPTION-1069)
+  Question: Two parts, and they meet. (a) Does a scheduled session that produces no final report count as
+    having run? One did today — it created six tasks, spawned two sub-agents and went idle in silence, and
+    no instrument in the estate noticed, including PREMISE-208's liveness assertion, which fires on
+    register writes rather than session reports. (b) Which role runs the in-house measurements? The lit
+    pipeline raised a **Critical** SYSTEMIC-RISK-FLAG on recurrence today: the instruments it names are
+    "specified, cheap, and unrun," and were equally unrun when it said so on 09-16. The empirical lane has
+    an inbox and no worker, which is why every `SUPPORTED` it issues is, in its own words, "supported by
+    the weaker of two available sources."
+  Needs: **Tom for (b)** — it is a question about what the network is for, not a command. (a) is a
+    one-line assertion and wants an owner alongside OPEN-247's liveness check.
+  Status: OPEN
+
+OPEN-250:
+  Raised: 2026-09-21 by 14a (ASSUMPTION-1595, ASSUMPTION-1594) and 14b (PRESUMPTION-1064)
+  Question: Is 30k the right token guideline for a task whose irreducible work is reading eight
+    documents? Five runs declared breaches today, at 1.5× to 8×, four of them naming the identical cost
+    centre — contract reads plus six full commentary reads. Rule 6 was satisfied five times and nothing
+    changed. One run asked the design question instead and answered it: "The register's format, not the
+    budget, is what is wrong" — `for_lit_search.md` is 22,725 lines with four incompatible item formats.
+  Needs: **Tom**, for one sentence: either the guideline is per-task-class rather than flat, or the tasks
+    that cannot meet it are the wrong shape. A guideline breached by every instance of a class stops
+    distinguishing necessary reading from thrash.
+  Status: OPEN

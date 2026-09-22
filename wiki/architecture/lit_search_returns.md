@@ -48262,3 +48262,716 @@ items. The cycle-0 search text is lost; its findings survive only in this file a
 -361 and -397. Each of the six new files carries a header recording the loss. This is a defect in the
 spec — the path carries no cycle — and every prior re-trigger run that wrote results did the same thing
 silently. Recommended: `ITEM-NNN_for_cycleN.md`.
+
+
+================================================================================
+## 2026-09-21 — 15a / 15b / 15c pipeline run (scheduled task `c2a2-lit-search-pipeline`)
+
+**First run section written to this file since 2026-09-16.** The five-day gap is the stall
+ASSUMPTION-1568 and PRESUMPTION-1054 both describe, and it is recorded here at the top of the run
+rather than in a footnote. Intake continued on 09-17, 09-18, 09-19 and 09-20 while nothing consumed it.
+
+**Scope of this run, stated before results.** The 2026-09-20 intake cohort only: 11 items, of which 7
+are literature-bearing (ASSUMPTION-1560, -1561, -1571; PRESUMPTION-1053, -1054, -1055, -1057) and 4 are
+in-house empirical with no literature owed (ASSUMPTION-1575; PRESUMPTION-1058, -1059, -1060). The
+standing backlog was NOT worked — see the BACKLOG DECLARATION at the end of this section, which is
+larger than the one declared on 2026-09-16.
+
+**Independence defect, declared.** 15a and 15b ran in a single process. Query sets were framed
+separately and all seven FOR files were written and closed before the first AGAINST query was issued,
+but the two-process independence the spec assumes was not achieved. Every strength rating below should
+be read with that discount. This is a property of running the pipeline as one scheduled task and is not
+fixable inside a run; it is noted here so it is not rediscovered.
+
+--------------------------------------------------------------------------------
+### 15a returns (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1560 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: Stump, E. 2012. "Emergence, Causal Powers, and Aristotelianism in Metaphysics," in Groff &
+    Greco (eds.), *Powers and Capacities in Philosophy*, Routledge, 48-68.
+  Summary: Stump's own statement of causal commitment grounds systems-level causal power in substantial
+    form configuring a whole — formal causation, level-indexed. A critic's summary (Rooney 2015,
+    *New Blackfriars*) independently characterises her divine-causality position as "formal causality on
+    the will."
+  Full results: lit_search_results/for/ASSUMPTION-1560_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1561 | Search direction: FOR
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Hirt et al. 2023, "Citation tracking for systematic literature searching," *Research
+    Synthesis Methods*, DOI:10.1002/jrsm.1635.
+  Summary: Relational enumeration recovers records that per-entity retrieval misses, with large rather
+    than marginal recall gains. The direction is supported; the rate for spoken long-form corpora is not.
+  Full results: lit_search_results/for/ASSUMPTION-1561_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1571 | Search direction: FOR
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Defect-aging and maintenance-triage practice literature; under-triage systematic review
+    (PMC8463357).
+  Summary: Two practice literatures treat item age as a positive indicator of latent defect and escalate
+    on it. One validated clinical analogue exists for triage rules that deprioritise the higher-risk
+    group. Supporting sources are practitioner-grade, not primary research.
+  Full results: lit_search_results/for/ASSUMPTION-1571_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1053 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: Fire & Guestrin 2019, "Over-optimization of academic publishing metrics: observing
+    Goodhart's Law in action," *GigaScience* (PMC6541803).
+  Summary: Reflexive measurement is named, theorised and empirically documented, including in the
+    nearest domain — a knowledge-production system scored on its own output counts.
+  Full results: lit_search_results/for/PRESUMPTION-1053_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1054 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: "Ensuring liveness properties of distributed systems: Open problems," *JLAMP*
+    (ScienceDirect S2352220817302006 / arXiv:1912.05616).
+  Summary: The literature states the presumption almost verbatim: liveness properties assert *progress*,
+    heartbeat is a proxy for it, and a frozen process "still responding to pings" reports healthy. The
+    standard remedy is a progress witness, not an aliveness witness.
+  Full results: lit_search_results/for/PRESUMPTION-1054_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1055 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: AHRQ *Making Healthcare Safer III*, Alarm Fatigue chapter (NCBI NBK555522).
+  Summary: Across clinical alarms, security operations and infrastructure monitoring, signals with no
+    resolution path lose force with repetition; the decay is behavioural. Two of the three literatures
+    report the quantitative form 14b proposed.
+  Full results: lit_search_results/for/PRESUMPTION-1055_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1057 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong (channel half)
+  Key source: "Rethinking Literature Search Evaluation," arXiv:2605.29234 — humans cite direct
+    collaborators 2.5x more often than the strongest re-rankers; network bias is measurable and large.
+  Summary: Discovery in this class of problem is demonstrably channel-dominated, with effect sizes large
+    enough that a coverage-shaped remedy on the wrong channel would plausibly leave a lag intact.
+  Full results: lit_search_results/for/PRESUMPTION-1057_for.md
+
+--------------------------------------------------------------------------------
+### 15b returns (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1560 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Stump, E. 2010. *Wandering in Darkness: Narrative and the Problem of Suffering*, OUP.
+  Specific risk: Correcting CROSS-008 to "formal not final" would replace one misattribution with
+    another, in three places, and would be logged as an audit win.
+  Summary: Stump's best-known book argues from an ultimate end (union with God) ordering human
+    flourishing. "Formal *rather than* final" does not survive it; formal and final are complementary in
+    the Thomistic frame. The narrow claim — that her *stated metaphysical* commitment is formal — stands.
+  Full results: lit_search_results/against/ASSUMPTION-1560_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1561 | Search direction: AGAINST
+  Result: CHALLENGED | Strength: Strong
+  Key source: "On the Importance of Adaptive Data Collection for Extremely Imbalanced Pairwise Tasks,"
+    arXiv:2010.05103.
+  Specific risk: 2,184 queries spent on a grid that a venue-indexed search would have beaten, after
+    which the lag is unchanged but the sweep is recorded as the fix.
+  Summary: The diagnosis stands; the remedy is challenged. Where positives are extremely rare and
+    clustered, uniform pair enumeration is the worst allocation of a fixed budget and is dominated by
+    adaptive collection. The design is also O(n^2) in the roster and does not survive its growth.
+  Full results: lit_search_results/against/ASSUMPTION-1561_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1571 | Search direction: AGAINST
+  Result: CHALLENGED | Strength: Strong
+  Key source: Selection-bias literature; "Suspected bias in selection criteria of target subpopulation
+    and its validation" (PMC10339632).
+  Specific risk: Queue discipline inverted on an n=9 sample with no comparison class; the finding later
+    cited as established without its provenance.
+  Summary: The 8-of-9 figure counts only items that were searched, and in a stalled queue search targets
+    are chosen because they look wrong. Selection on the dependent variable. The missing denominator —
+    the REVISE base rate for non-downgraded searched items — is one grep away.
+  Full results: lit_search_results/against/ASSUMPTION-1571_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1053 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: "The Strong, Weak and Benign Goodhart's Law," arXiv:2505.23445.
+  Specific risk: Registers rebuilt to exclude self-reference at a cost far above the bias removed, while
+    the version that matters — drift in the self-inclusion *rate* over time — goes unmeasured.
+  Summary: The quantifier "systematically" is not established. A benign regime is formalised in the
+    recent literature, and every well-documented case involves an agent with an incentive under
+    evaluative pressure, which the estate's registers do not have.
+  Full results: lit_search_results/against/PRESUMPTION-1053_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1054 | Search direction: AGAINST
+  Result: NO-CHALLENGE-FOUND | Strength: Weak (against claim); Moderate (against naive remedy)
+  Key source: Linux kernel lockup-watchdog documentation; watchdog-tuning practice literature.
+  Specific risk: A progress watchdog fires on a legitimately long run, is degraded to warn-only, and the
+    estate ends with the original blindness plus an ignored warning — i.e. it causes PRESUMPTION-1055.
+  Summary: Nothing contradicts the claim. The literature adds a cost: progress monitoring needs a
+    defined unit of work, and the threshold is tuned rather than solved. Prefer a monotonic artefact
+    (the newest date-stamped section in this file) over a timer.
+  Full results: lit_search_results/against/PRESUMPTION-1054_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1055 | Search direction: AGAINST
+  Result: CHALLENGED | Strength: Strong
+  Key source: NASA/FAA Aviation Safety Reporting System (est. 1976); "The dynamics between voluntary
+    safety reporting and commercial aviation accidents," *Safety Science* S0925753521001958.
+  Specific risk: Repeat disclosure judged ritual and suppressed — deleting the aggregate signal that is
+    the whole value of repetition, including the streak that surfaced the current stall.
+  Summary: ASRS is fifty years of reports with no per-report resolution path and is the most-cited
+    success in safety reporting. The proposed metric (repeat count vs. fix rate) is exactly the metric
+    that would score it as ritual. C2A2's disclosures resemble ASRS reports, not ICU alarms.
+  Full results: lit_search_results/against/PRESUMPTION-1055_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1057 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Hirt et al. 2023, DOI:10.1002/jrsm.1635; seed-based retrieval comparison arXiv:2403.09295.
+  Specific risk: Read as "don't build the sweep," it declines a cheap recall gain on a framing
+    distinction. Read as "build it on the wrong key," it saves 2,184 queries. Opposite actions.
+  Summary: In the nearest studied domain, adding an enumerative channel *is* the standard correction for
+    channel bias, so channel and coverage are not alternatives. The defensible narrow claim is that 91
+    thinker-pairs may be the wrong enumeration key for a corpus whose channel is venues.
+  Full results: lit_search_results/against/PRESUMPTION-1057_against.md
+
+SYSTEMIC-RISK-FLAG raised this run (Critical, recurrence):
+  lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-21_named-instrument-never-run_RECURRENCE.md
+  All ten items in the 2026-09-20 intake resolve to an in-house measurement that is specified, cheap and
+  unrun. The same pattern was flagged on 2026-09-16 (items 414-439); the instruments named then were not
+  run in the five days since. Level raised to Critical on recurrence.
+
+--------------------------------------------------------------------------------
+### 15c dispositions
+
+DISPOSITION-969:
+  Date: 2026-09-21
+  Item: ASSUMPTION-1560 | Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: Strong first-person evidence that Stump's stated metaphysical commitment is formal and
+    level-indexed, against a moderate and well-aimed challenge to the word "rather" — her best-known
+    book argues from an ultimate end. The claim is right about emphasis and wrong about exclusivity.
+  Disposition: INCORPORATE (narrow form, as PREMISE-206) + REVISE-479 opened on the artefact
+  Reasoning: The narrow premise is as well sourced as attribution claims get: Stump's own 2012 essay
+    plus a critic's independent characterisation in the same terms. What tipped the split is that the
+    *artefact* defect and the *premise* are separable. The premise can be incorporated; the correction
+    to CROSS-008 cannot be made safely until someone classifies the three sources by whose voice the
+    attribution is in, because a careless correction would be a new error of the same class in the same
+    three places. That classification is ~30 minutes and is the whole gate.
+  If INCORPORATE:
+    Validated premise statement: Eleonore Stump's own stated account of causation is formal and
+      level-indexed — systems-level causal power is conferred by substantial form configuring a whole
+      (Stump 2012) — and her account of divine action on the will is characterised, by her and by her
+      critics, as formal causality. This does not make her a non-teleological thinker: her expository
+      and theological work transmits Aquinas's final causality, and in the Thomistic frame form and end
+      are complementary rather than exclusive. Attributions of a *primary* final-causal commitment to
+      Stump require a source in her own voice.
+    Confidence: Moderate
+    Applicable to: CROSS-008 and any cross-tradition claim keyed on Stump's causal category; the Stump
+      agent (07); the intertradition matrix wherever causal category is a join key.
+    Re-check cadence: Quarterly
+  PROVENANCE:
+    Origin: 14a | Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition; premise narrowed from the intake statement
+    Current status: INCORPORATED (narrow) / REVISION-FLAGGED (artefact)
+
+DISPOSITION-970:
+  Date: 2026-09-21
+  Item: ASSUMPTION-1561 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Moderate support for the diagnosis, strong challenge to the remedy. Uniform pair
+    enumeration is dominated by adaptive collection where positives are rare and clustered, and the
+    design is quadratic in a roster the estate intends to grow.
+  Disposition: REVISE (REVISE-480)
+  Reasoning: Moderate support against a strong, on-target challenge is the REVISE cell. The deciding
+    fact is cost asymmetry: the challenged remedy costs 2,184 queries and the test that would tell us
+    whether to build it is already specified, pre-registered, and runnable over data in hand. Spending
+    the larger sum before the smaller one is the error, and it is still avoidable today.
+  What is at risk: the 91-pair x 24-month sweep design and any schedule built on it; the claim that the
+    223-day lag has a known fix.
+  Recommended action: Run the back-test first — the sweep design applied retrospectively to the elapsed
+    24 months, scored against the pre-registered criterion (does it recover the 2026-02-04
+    Hoffman/Friston event?). Add one instruction: record the *venue* of each recovered event. If
+    recovered events cluster in few venues, re-key the sweep to venues, which is O(n) rather than
+    O(n^2). Do not build the 91-pair grid before the back-test returns.
+  Urgency: Medium
+  PROVENANCE:
+    Origin: 14a | Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition
+    Current status: REVISION-FLAGGED
+
+DISPOSITION-971:
+  Date: 2026-09-21
+  Item: ASSUMPTION-1571 | Item type: ASSUMPTION (stated)
+  15a result: PARTIALLY-SUPPORTED | 15a strength: Moderate
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: The hypothesis is plausible and the practice literature supports the age/defect
+    correlation, but the in-house evidence offered cannot establish it: 8-of-9 counts only items that
+    were searched, and in a stalled queue search targets are chosen because they look wrong.
+  Disposition: REVISE (REVISE-481)
+  Reasoning: Two things tipped this out of MONITOR. First, the challenge is methodological and
+    decisive — a selection-on-the-dependent-variable design does not become sound with another cycle of
+    watching. Second, this finding has been re-raised as a population-level STALE-MONITOR-FLAG on
+    successive 15d runs and materially strengthened in the telling; under the escalation principle this
+    run adopted for repeat disclosure (see MONITOR-611), a defect disclosed repeatedly without
+    resolution goes to the human queue rather than back to the watch list.
+  What is at risk: 15d's staleness-based downgrading rule; any future citation of "staleness selects for
+    defective items" as established; the STALE-MONITOR-FLAG's standing as evidence.
+  Recommended action: Compute the REVISE rate for *non*-downgraded searched items over the same window
+    from `lit_search_returns.md` and compare. One query. If the downgraded cohort's rate materially
+    exceeds the base rate, the claim survives its strongest objection and can be re-dispositioned; if it
+    does not, retire the flag. Until then, the finding should be stated with its n attached wherever it
+    appears.
+  Urgency: Medium
+  PROVENANCE:
+    Origin: 14a | Chain: [14a -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition
+    Current status: REVISION-FLAGGED
+
+DISPOSITION-972:
+  Date: 2026-09-21
+  Item: PRESUMPTION-1053 | Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The phenomenon is strongly established; the quantifier is not. Documented cases run on
+    incentive under evaluative pressure, which the estate's registers lack, so mechanical self-inclusion
+    is the operative risk and it is milder and more tractable than Goodhart collapse.
+  Disposition: INCORPORATE (weakened form, as PREMISE-207)
+  Reasoning: A PRESUMPTION with a moderate challenge would normally lean toward MONITOR, but the
+    challenge here does not contest the premise — it bounds it, and the bounded version is both true and
+    immediately useful. Incorporating the weak form now is better than watching the strong form, because
+    the strong form invites an expensive redesign and the weak form specifies a cheap measurement.
+    Consistency-checked against PREMISE-096 (no self-produced artefact may certify itself), which this
+    strengthens rather than contradicts.
+  If INCORPORATE:
+    Validated premise statement: An instrument that is also a member of the population it measures
+      biases its own series. Where no agent is rewarded for moving the number, the bias is mechanical
+      rather than strategic: it shifts the *level*, usually slightly, and is removable by a filter. It
+      shifts the *trend* — the consequential case — whenever the instrument's own activity rate changes
+      over the series, which is exactly what a pipeline stall does. Self-inclusion is therefore to be
+      measured as a share over time, not asserted or dismissed.
+    Confidence: Moderate
+    Applicable to: every register in `wiki/architecture/` whose rows can originate from the estate's own
+      agents; 15d's standing-lane counts; any headline count published from a register (ties to
+      ASSUMPTION-1575); PREMISE-096.
+    Re-check cadence: Quarterly
+  Note: the second clause of the presumption — that the estate has not enumerated which registers are
+    both instrument and member — remains unaddressed by either search and is an in-house task. It is
+    carried into the Critical systemic-risk flag raised this run rather than into a monitor cycle.
+  PROVENANCE:
+    Origin: 14b | Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition; quantifier weakened, trend clause added
+    Current status: INCORPORATED
+
+DISPOSITION-973:
+  Date: 2026-09-21
+  Item: PRESUMPTION-1054 | Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: NO-CHALLENGE-FOUND | 15b strength: Weak
+  Net assessment: Strong support, no challenge to the claim, a moderate and useful challenge to the
+    naive remedy. This is the cleanest cell in the heuristics and the item is demonstrated by the
+    estate's own present condition.
+  Disposition: INCORPORATE (PREMISE-208)
+  Reasoning: The literature states the presumption in its own terms and the remedy is one line. What
+    settles it beyond the citations is that the premise is currently being demonstrated: the pipeline
+    was alive and not advancing for five days, three probes returned an identical turn count, and no
+    monitor fired. Consistency-checked against PREMISE-100 (a check that cannot execute reports as
+    passing) — the same fault class, one level up, and the two should be read together.
+  If INCORPORATE:
+    Validated premise statement: Liveness is not progress. A monitor that observes whether a process is
+      alive cannot witness whether it is advancing, and the resulting blindness emits no signal — the
+      failure is silent by construction. Progress must be witnessed by a monotonic artefact that only
+      the completion of work can advance, and the witness must be read on a schedule. For C2A2 that
+      artefact exists: the newest date-stamped run section in `lit_search_returns.md`. Prefer an
+      artefact-staleness assertion over a timer, because timers on irregular workloads produce false
+      alarms, get degraded to warn-only, and reproduce the original blindness as an ignored warning.
+    Confidence: High
+    Applicable to: Agent 15d; the `c2a2-lit-search-pipeline` and `c2a2-self-awareness-pipeline`
+      scheduled tasks; the heartbeat subsystem; any future agent that reports its own health;
+      PREMISE-100.
+    Re-check cadence: Quarterly
+  PROVENANCE:
+    Origin: 14b | Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition; remedy specified as artefact-staleness
+    Current status: INCORPORATED
+
+DISPOSITION-974:
+  Date: 2026-09-21
+  Item: PRESUMPTION-1055 | Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong
+  15b result: CHALLENGED | 15b strength: Strong
+  Net assessment: Genuinely contested, and the two sides are describing different objects. The alarm
+    literature is about signals to an operator expected to act now; ASRS is about reports to a register
+    analysed later. C2A2's disclosures are the second kind, and the metric 14b proposed would have
+    scored ASRS — fifty years, most-cited success in the field — as ritual.
+  Disposition: MONITOR (MONITOR-611)
+  Reasoning: Strong support and strong challenge is the MONITOR cell, and here it is the honest one
+    rather than the evasive one: the disagreement is about the *metric*, and a better metric is
+    available and cheap. Note the reflexive hazard 15c is declining to ignore — parking an item about
+    unresolved disclosure in the watch list is the failure the item describes, which is why the
+    monitoring condition below is an auto-escalation rather than a re-read.
+  If MONITOR:
+    What would change the disposition: the distinct-defect count. Count defects disclosed three or more
+      times across runs without reaching a disposition, and their median age. A short, young list means
+      disclosure is working and the item retires. A long, old list means the failure is *aggregation*,
+      not ritual, and the item goes to REVISE with the remedy already written: keep the disclosure
+      obligation, count distinct unresolved defects rather than disclosure events, and escalate a defect
+      to the human queue on streak length rather than suppressing it.
+    Monitoring cadence: Weekly
+    Priority: High
+  PROVENANCE:
+    Origin: 14b | Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition; escalation-on-streak rule adopted from 15b's
+      steelman and applied immediately to ASSUMPTION-1571 (see DISPOSITION-971)
+    Current status: MONITORING
+
+DISPOSITION-975:
+  Date: 2026-09-21
+  Item: PRESUMPTION-1057 | Item type: PRESUMPTION (unstated)
+  15a result: SUPPORTED | 15a strength: Strong (channel half)
+  15b result: PARTIALLY-CHALLENGED | 15b strength: Moderate
+  Net assessment: The diagnosis is well supported — channel bias in discovery is real and large (2.5x
+    collaborator citation bias) — and the channel/coverage dichotomy is not, since adding an enumerative
+    channel is the standard correction for channel bias in the nearest studied domain.
+  Disposition: MONITOR (MONITOR-612), bound to REVISE-480
+  Reasoning: This item and ASSUMPTION-1561 are two halves of one question and a single experiment scores
+    both, so dispositioning them into different terminal states would be an artefact of processing them
+    as separate rows. 1561 carries the action (REVISE-480: run the back-test first); 1057 is held in
+    MONITOR against that experiment's result rather than given its own. It resolves when REVISE-480
+    resolves, and not on a weekly re-read.
+  If MONITOR:
+    What would change the disposition: the back-test result under REVISE-480. If recovered events
+      cluster in few venues, 1057's narrow reading is confirmed — the enumeration is keyed on the wrong
+      axis — and it goes to INCORPORATE. If they scatter across venues, 1057 is retired and 1561's
+      remedy is vindicated.
+    Monitoring cadence: Bound to REVISE-480, not weekly. Do not re-read this item on the weekly cycle;
+      re-read it when the back-test returns.
+    Priority: High
+  PROVENANCE:
+    Origin: 14b | Chain: [14b -> 15a, 15b -> 15c]
+    Transform at this step: Net evaluation and disposition; bound to REVISE-480 rather than given an
+      independent cadence
+    Current status: MONITORING (bound)
+
+--------------------------------------------------------------------------------
+### Run summary, 2026-09-21
+
+7 literature-bearing items searched by 15a and 15b and dispositioned by 15c. No item is left in a
+searched-but-undispositioned state. Dispositions: 3 INCORPORATE (PREMISE-206, -207, -208), 3 REVISE
+(REVISE-479, -480, -481), 2 MONITOR (MONITOR-611, -612) — eight outcomes over seven items because
+ASSUMPTION-1560 split into a premise and an artefact flag. 1 SYSTEMIC-RISK-FLAG raised at Critical.
+
+4 items carried no literature debt (ASSUMPTION-1575; PRESUMPTION-1058, -1059, -1060) and were routed to
+the empirical lane without a search; see the empirical routing note in `monitor_queue.md`.
+
+**BACKLOG DECLARATION — the backlog grew.** Approximately 63 literature-bearing items queued between
+2026-09-14 and 2026-09-19 have no 15a or 15b result file and were not worked this run. The 2026-09-16
+declaration put the live unsearched lane at 129; the 15d run of 2026-09-20 recomputed the standing lane
+at 304 blocks, up from 281 a week earlier, with an observed drain of 3 blocks in 7 days. This run drains
+7 and adds none, which does not change that arithmetic. At the observed rate the lane does not clear,
+and the five-day consumer outage (2026-09-16 to 2026-09-21) is the proximate cause of this week's growth.
+
+**Budget note (Rule 6, surfaced not smuggled).** This run exceeded the 4,000-token per-task budget
+substantially. The overrun is in intake analysis, not output: `for_lit_search.md` is 22,706 lines with at
+least four incompatible item formats, so establishing which items were actually due required a
+programmatic parse rather than a read. The same finding appears from the other side in 15d's 2026-09-20
+budget note. The register's format, not the budget, is what is wrong.
+
+================================================================================
+# 2026-09-22 — 15a / 15b / 15c run (scheduled task `c2a2-lit-search-pipeline`)
+
+Cohort: the 2026-09-21 14a/14b end-of-day intake, 12 items. 6 literature-bearing (searched and
+dispositioned below), 5 in-house empirical tagged [NO-LIT-OWED] and routed to `monitor_queue.md`,
+1 Critical item (PRESUMPTION-1069) not routed to any search lane and standing at OPEN-249(b).
+
+**Independence was achieved this run.** 15a and 15b ran as two separate agent processes with disjoint
+context. Neither read the other's directory, neither saw the other's findings, and the orchestrator did
+not relay between them. This closes declared defect (1) of the 2026-09-21 run, where both directions ran
+in one process and only file-ordering separated them. It is worth recording what independence bought:
+on ASSUMPTION-1598 and ASSUMPTION-1605 the two directions converged, unprompted, on the same weak limb
+of each claim, and on PRESUMPTION-1064 the AGAINST search reported that it had searched for challenge
+and found corroboration instead. None of those three signals is available from a single process.
+
+--------------------------------------------------------------------------------
+## 15a returns (FOR)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1595 | Search direction: FOR
+  Result: SUPPORTED | Strength: Moderate
+  Key source: Cvach, 2012. "Monitor Alarm Fatigue: An Integrative Review." *Biomedical Instrumentation
+    & Technology* 46(4).
+  Summary: Clinical alarm-fatigue literature treats a threshold crossed on nearly every instance as a
+    calibration failure rather than repeated genuine emergency; Goodhart's Law supplies the generic
+    form — a measure always exceeded the same way has stopped discriminating.
+  Caveat: both grounds are analogical (clinical monitoring, economics); neither is about agent budgets.
+  Full results: lit_search_results/for/ASSUMPTION-1595_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1598 | Search direction: FOR
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate (limb 1) / Weak (limb 2)
+  Key source: classifier output-QC practice on degenerate/constant classifiers, with base-rate-neglect
+    literature on the second limb.
+  Summary: Limb 1 (a uniform verdict impugns the measure) is well grounded in classifier QC and
+    statistical process control. Limb 2 (a lone anomaly deserves one direct read) is weakly supported
+    at best — base-rate work warns AGAINST over-trusting a single deviant signal, so the cited
+    literature arguably cuts against the limb it was searched for.
+  Caveat: the two limbs diverge sharply; the overall grade reflects the weaker.
+  Full results: lit_search_results/for/ASSUMPTION-1598_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1600 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: "Finding Blind Spots in Evaluator LLMs with Interpretable Checklists" (arXiv:2406.13439),
+    with the classical correlated-error principle from case-control methodology.
+  Summary: An evaluator sharing a generator's blind spot agrees with it and both are wrong; independent
+    of that, epidemiological methodology warns that a comparison method sharing the probe's measurement
+    mechanism introduces correlated error and undermines the validation. Best-supported item in cohort.
+  Caveat: LLM-judge sources are domain-analogical, not about the specific C2A2 probe.
+  Full results: lit_search_results/for/ASSUMPTION-1600_for.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1605 | Search direction: FOR
+  Result: PARTIALLY-SUPPORTED | Strength: Moderate
+  Key source: Infofile self-describing format, *Digital Discovery* 2023, DOI:10.1039/D2DD00131D.
+  Summary: Self-describing and provenance-carrying formats are documented to reduce staleness and to
+    make it detectable (limb 2); the bare-figure limb is supported only analogically, via cache
+    invalidation and data lineage.
+  Caveat: the literature says such formats "reduce and enable detection of" staleness — the item's word
+    "cannot" overstates it.
+  Full results: lit_search_results/for/ASSUMPTION-1605_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1063 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: Hsee, Yang & Wang, 2010. "Idleness Aversion and the Need for Justifiable Busyness."
+    *Psychological Science* 21(7).
+  Summary: Queueing theory treats idle-period policy as an explicit, cost-modelled design choice, which
+    settles that the substitution was not forced; idleness-aversion research explains how such a default
+    forms and then goes unexamined.
+  Caveat: the idleness-aversion evidence is human-psychological and transfers to agents only by analogy.
+  Full results: lit_search_results/for/PRESUMPTION-1063_for.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1064 | Search direction: FOR
+  Result: SUPPORTED | Strength: Strong
+  Key source: "Preventing Disclosure-Induced Moral Licensing," *Journal of Business Ethics* (2022),
+    with the disclosure-as-substitute-for-regulation literature.
+  Summary: Three converging literatures — financial-regulation scholarship on disclosure substituting
+    for substantive rules, moral licensing on disclosure psychologically discharging an obligation, and
+    safety science on reporting decoupled from resolution — all support the claim.
+  Caveat: moral licensing presupposes a decision-maker capable of feeling licensed; the anthropomorphic
+    step is larger for an agent pipeline than for a human board.
+  Full results: lit_search_results/for/PRESUMPTION-1064_for.md
+
+  NOVELTY-FLAGS: none. All six items had at least partial supporting literature.
+
+  **15a search-hygiene note, recorded because it may matter beyond this run.** Two GitHub-issue results
+  (`kstrat2001/darkmux` #2846, `strukto-ai/mirage` #1018) surfaced with titles matching the exact claims
+  being searched — too exactly. 15a judged them unreliable or possibly synthetic and excluded them from
+  every citation. That judgement was correct and is endorsed here. But the shape is worth naming: a
+  literature-search agent that queries the open web on claims phrased in this estate's own language is
+  an injection surface, and the failure mode is a fabricated source entering `validated_premises.md`
+  with a real-looking URL. No such source entered this run. Flagged to Tom in the run note.
+
+--------------------------------------------------------------------------------
+## 15b returns (AGAINST)
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1595 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: Vaughan, 1996. *The Challenger Launch Decision* — normalization of deviance.
+  Specific risk: relaxing a guideline on uniform-breach evidence alone recreates the O-ring inference.
+  Summary: Uniform, same-excuse breach is precisely the signature of a real limit being tolerated away,
+    not proof that the limit is stale. Alarm-fatigue literature adds a competing explanation
+    (deliberately over-sensitive thresholds). The inference is underdetermined on five instances.
+  STEELMAN: "stale guideline" and "normalized-away safety limit" produce identical evidence here; the
+    claim reads one of two equally-fitting stories off the same five data points.
+  Full results: lit_search_results/against/ASSUMPTION-1595_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1598 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate
+  Key source: ICU alarm-fatigue reviews; cherry-picking and confirmation-bias literature
+    (arXiv:2408.13667).
+  Specific risk: true batch-wide positives get discounted as noise, and a bias-prone manual override
+    path is introduced alongside.
+  Summary: A uniform signal is ambiguous between a real shared effect and a broken measure, not
+    "usually broken." Singling out the lone anomaly for manual re-check is a textbook confirmation-bias
+    setup; the asymmetric prior (trust the crowd, distrust the singleton) has no general literature
+    backing.
+  STEELMAN: the rule can only ever remove disagreement from the record.
+  Full results: lit_search_results/against/ASSUMPTION-1598_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1600 | Search direction: AGAINST
+  Result: NO-CHALLENGE-FOUND | Strength: Weak
+  Key source: criterion contamination (APA Dictionary); Podsakoff et al., 2022, on common-method bias.
+  Specific risk: over-discarding partially-informative probes instead of narrowing or triangulating.
+  Summary: The claim is close to orthodox measurement theory and the disconfirmatory search found no
+    contradiction. The only pushback is that validation practice treats validity as continuous and
+    triangulated, so the absolute "not validated" overstates practice.
+  STEELMAN: "not validated" should mean "does not extend to the blind-spot region," not "globally
+    invalid."
+  Full results: lit_search_results/against/ASSUMPTION-1600_against.md
+
+RETURN-TO-14a:
+  Original item: ASSUMPTION-1605 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Moderate-Strong (limb 2)
+  Key source: Sutton, 2017, "Comment Drift"; documentation-rot linting practice; data-lineage drift
+    reports.
+  Specific risk: records that merely LOOK self-policing get their active staleness checks
+    deprioritised.
+  Summary: Limb 1 is uncontested. Limb 2's "cannot" is overstated — self-documenting shape makes
+    staleness detectable in principle, not self-preventing; real-world comment drift and doc rot show
+    self-describing artefacts drifting anyway, and redundant encodings drift internally when one field
+    is updated and the other is not.
+  STEELMAN: "cannot go stale silently" must soften to "more auditable, not immune."
+  Full results: lit_search_results/against/ASSUMPTION-1605_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1063 | Search direction: AGAINST
+  Result: PARTIALLY-CHALLENGED | Strength: Weak
+  Key source: Parkinson's Law; featherbedding literature.
+  Specific risk: low. The ambiguity is whether the unnamed-alternative pattern reflects an unexamined
+    default or convergent good judgement.
+  Summary: Idle capacity tends to be filled regardless of design, which narrows the real choice space;
+    and the cost/yield comparison the claim calls missing is established methodology elsewhere, merely
+    unapplied here.
+  STEELMAN: "leave it idle" may not be a realistic or costless alternative at all.
+  Full results: lit_search_results/against/PRESUMPTION-1063_against.md
+
+RETURN-TO-14b:
+  Original item: PRESUMPTION-1064 | Search direction: AGAINST
+  Result: NO-CHALLENGE-FOUND | Strength: None
+  Key source: Cain, Loewenstein & Moore, 2005, "The Dirt on Coming Clean," and 2011, "When Sunlight
+    Fails to Disinfect"; the Cambridge "paradox of disclosure" literature.
+  Specific risk: none from the claim being false. The risk runs the other way — under-weighting a
+    well-replicated finding because it was inferred from a small local sample.
+  Summary: The disconfirmatory search came up empty. The disclosure-paradox and ethical-fading
+    literatures corroborate the claim rather than challenge it, and 15b reported this directly rather
+    than manufacturing a challenge to fill the assignment.
+  STEELMAN: the human-psychology licensing mechanism may not transfer to a mechanical, discretion-free
+    agentic disclosure log.
+  Full results: lit_search_results/against/PRESUMPTION-1064_against.md
+
+SYSTEMIC-RISK-FLAG:
+  Date: 2026-09-22
+  Affected items: ASSUMPTION-1598, ASSUMPTION-1600, ASSUMPTION-1605
+  Common vulnerability: each licenses a binary or absolute inference from a STRUCTURAL PROPERTY —
+    uniformity of verdict, control-set independence, self-documenting record shape — without requiring
+    an independent active check. The literature (Vaughan 1996; Podsakoff et al. 2022; comment-drift and
+    doc-rot practice) shows each of these properties is necessary but not sufficient: the structure
+    makes a fault detectable, and detectability is not detection.
+  Risk level: High
+  Recommendation: pair any structural-signature rule with a mandatory active verification step rather
+    than treating the signature as self-certifying.
+  15c action taken: accepted and applied. The constraint is written into PREMISE-209, PREMISE-210 and
+  PREMISE-211 rather than left as a standing flag, and PREMISE-211 says in terms that detectability
+  without a reader is not detection. Three of the five premises this run carry it.
+  Note: 15b raised this flag without access to 15a's files. It is a cross-item pattern found from the
+  challenge direction alone.
+
+--------------------------------------------------------------------------------
+## 15c dispositions
+
+DISPOSITION-976:
+  Date: 2026-09-22 | Item: ASSUMPTION-1595 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: support and challenge are of equal weight and, more to the point, are not rival
+    accounts of the same evidence — they are two DIFFERENT accounts that fit the evidence equally well
+    and prescribe opposite remedies.
+  Disposition: MONITOR (MONITOR-613, Priority High)
+  Reasoning: the literature cannot adjudicate a question about this estate's own costs. What breaks the
+    tie is the fixed-read-cost measurement 14a already named, and it is cheap. Incorporating the stale-
+    guideline reading on breach-rate evidence alone is exactly the inference Vaughan documents.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status MONITORING.
+
+DISPOSITION-977:
+  Date: 2026-09-22 | Item: ASSUMPTION-1598 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Moderate (limb 1), Weak (limb 2) | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: the item is two claims and they do not travel together. Limb 1 survives in narrowed
+    form; limb 2 is a confirmation-bias protocol that both search directions independently identified.
+  Disposition: SPLIT — INCORPORATE (PREMISE-209) + REVISE (REVISE-482)
+  Reasoning: what is validated is the ACTION limb (uniformity triggers an instrument check), not the
+    DIAGNOSTIC limb ("usually broken"), which 15b showed is ambiguous; the word "usually" is struck. The
+    lone-anomaly rule goes to REVISE rather than MONITOR because the convergence of two blind searches
+    on the same defect is as much evidence as another cycle would produce. Precedent for the split:
+    ASSUMPTION-1560 -> PREMISE-206 + REVISE-479 (2026-09-21).
+  Consistency check: PREMISE-209 vs PREMISE-207 (derivation-command practice) — compatible and mutually
+    reinforcing. No contradiction with any ACTIVE premise found.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status INCORPORATED (limb 1) /
+    REVISION-FLAGGED (limb 2).
+
+DISPOSITION-978:
+  Date: 2026-09-22 | Item: ASSUMPTION-1600 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED / Strong | 15b: NO-CHALLENGE-FOUND / Weak
+  Net assessment: strong support, no contradiction, and the one correction offered is a narrowing of
+    scope rather than a challenge to the principle.
+  Disposition: INCORPORATE (PREMISE-210, Confidence High)
+  Reasoning: this is the cohort's clearest case and close to orthodox measurement theory. 15b's
+    narrowing — "not validated" means "not validated in the blind-spot region," not globally invalid —
+    is written into the premise, because the unnarrowed form would license discarding probes that are
+    still informative elsewhere.
+  Consistency check: no contradiction with existing ACTIVE premises. Reinforces PREMISE-049
+    (verify-before-trust).
+  Caution recorded: the premise is validated; the MEASUREMENT it implies is not discharged. The 09-16
+    tail probe re-run is carried in `monitor_queue.md` and remains unrun, so the tail totals and region
+    map still rest on an instrument now formally unvalidated in the region at issue.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-979:
+  Date: 2026-09-22 | Item: ASSUMPTION-1605 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Moderate-Strong (limb 2)
+  Net assessment: both directions, independently, located the same defect — the word "cannot" — and both
+    endorsed the same softened statement. Agreement between a blind FOR search and a blind AGAINST
+    search on the corrected form is stronger evidence than either grade alone suggests.
+  Disposition: INCORPORATE, softened form (PREMISE-211, Confidence Moderate); the as-written form with
+    "cannot" is rejected on the record.
+  Reasoning: incorporating the softened statement is not splitting the difference. The claim's content —
+    record shape determines detectability — is supported; its modal strength is not. Softening "cannot"
+    to "auditable, not immune" is the correction both searches converged on, and it matters practically:
+    the unsoftened form would justify dropping active staleness checks on records that merely look
+    self-policing.
+  Consistency check: grounds and is consistent with PREMISE-207 and ASSUMPTION-1575's derivation-command
+    practice. No contradiction found.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status INCORPORATED (narrowed).
+
+DISPOSITION-980:
+  Date: 2026-09-22 | Item: PRESUMPTION-1063 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Strong | 15b: PARTIALLY-CHALLENGED / Weak
+  Net assessment: the "it was a choice" limb is strongly supported by queueing theory and weakly
+    challenged; the "costs and yields were never compared" limb is an in-house fact that literature
+    cannot settle and that 15b confirms is measurable by established method.
+  Disposition: SPLIT — INCORPORATE (PREMISE-212, Confidence Moderate) + MONITOR (MONITOR-614, Medium)
+  Reasoning: Parkinson's Law narrows the alternative set without restoring the claim that there was no
+    alternative, so the Weak challenge does not block incorporation. Extra care was taken because this
+    is a PRESUMPTION: the premise is written to rest on the queueing-theory limb alone, with the
+    idleness-aversion analogy retained only as an explanation of how the default formed and explicitly
+    not as load-bearing. The unrun comparison goes to MONITOR with both input numbers already named.
+  Consistency check: no contradiction. Bears on this pipeline's own idle-run behaviour.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED + MONITORING.
+
+DISPOSITION-981:
+  Date: 2026-09-22 | Item: PRESUMPTION-1064 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Strong | 15b: NO-CHALLENGE-FOUND / None
+  Net assessment: the strongest evidential position in the cohort — an assigned disconfirmatory search
+    that returned corroboration and said so plainly.
+  Disposition: INCORPORATE (PREMISE-213, Confidence Moderate)
+  Reasoning: Confidence is Moderate rather than High despite the evidence, for one reason: both agents
+    independently flagged the same transfer question — moral licensing presupposes an agent that can
+    feel licensed. The premise is therefore written in terms of what the REGIME does (duty discharged,
+    design question unasked), which the financial-regulation and safety-science limbs support without
+    the psychological mechanism. A PRESUMPTION with strong support and no challenge is exactly the case
+    the protocol says to weight heavily, and the epistemic-honesty marker applies: designers were not
+    aware they were treating disclosure as discharge, and they were.
+  Consistency check: supersedes nothing. It is the stronger, better-sourced form of PRESUMPTION-1055 /
+    MONITOR-611, which should be read under it; MONITOR-611 is NOT closed by this premise, since its
+    escalation rule is still doing work.
+  Self-application: this run declares a budget breach below and, under PREMISE-213, binds it to a
+    decision rather than leaving it in the disclosure.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+Running totals after this run: PREMISE-213, MONITOR-614, REVISE-482, DISPOSITION-981.

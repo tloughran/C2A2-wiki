@@ -30233,3 +30233,927 @@ retiring its own assignment on evidence), 1566 (an evidence standard upgraded mi
 append.*
 
 ---
+ASSUMPTION-1585:
+  Date identified: 2026-09-21
+  Statement: **No interactive Cowork session — twenty-second consecutive day.** The evening sync states
+    it plainly: "Today was all scheduled agents, no interactive session." Every item below is
+    agent-stated or measured by this pass; none is designer speech.
+  Context: Coverage declaration for this run.
+  Source: `C2a2 evening cowork to chat`, read first-hand; corroborated by a sweep of all twenty-four
+    sessions inspected tonight.
+  Type: methodological
+  Related decisions: ASSUMPTION-1555 (twenty-first day); PRESUMPTION-912; OPEN-245.
+  Testability: settled.
+  Status: SUPPORTED. **OPEN-245 is now twenty-two days old and unanswered**; the marker question it
+    raises is not decaying, it is accumulating.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1585
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from the evening sync and confirmed against the day's session inventory.
+    Current status: SUPPORTED
+
+ASSUMPTION-1586:
+  Date identified: 2026-09-21
+  Statement: **The sandbox scratch failure is a block quota or reservation, not genuine fullness — and
+    this was verified, not inferred.** The OpenStory refresh run marks the distinction itself: "Root
+    cause (verified, not inferred)... a 4-byte write to `/tmp`, `/var/tmp`, and `/sessions` all return
+    `OSError [Errno 28] ENOSPC` — despite `df` reporting 2.4 G free... so it's a **block
+    quota/reservation, not genuine fullness**." Every other run today read `df` and reported disk-full.
+  Context: The day's dominant environmental condition. At least eight scheduled runs were blocked by it,
+    in three distinct error surfaces: `useradd: No space left on device`, `FileNotFoundError: No usable
+    temporary directory found`, and `sqlite3.OperationalError: database or disk is full`.
+  Source: `Openstory agents telemetry refresh`, read first-hand; error strings corroborated in six other
+    transcripts.
+  Type: empirical
+  Related decisions: OPEN-244; ASSUMPTION-1572; PRESUMPTION-1059; PRESUMPTION-1061 (new).
+  Testability: settled by the run's own probe.
+  Status: SUPPORTED, and **the diagnosis did not propagate**. One run of eight established the real
+    cause; the other seven each rediscovered the symptom and one predicted "Probably clears on its own
+    when the sandbox is reclaimed." No register carries the finding.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1586
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the one verified diagnosis and compared it against the seven unverified ones.
+    Current status: SUPPORTED
+
+ASSUMPTION-1587:
+  Date identified: 2026-09-21
+  Statement: **"Any scheduled agent that shells out would have produced nothing today and said nothing
+    about why."** The weekly reviewer-review's prediction, made because its own pass "completed only
+    because the file tools reach the filesystem independently."
+  Context: Weekly meta-review of the reviewer agents, run under the same disk fault.
+  Source: `Reviewer review weekly`, read first-hand.
+  Type: empirical (a prediction, testable the same day)
+  Related decisions: ASSUMPTION-1586; PRESUMPTION-1062 (new).
+  Testability: settled within the day.
+  Status: **PARTIALLY CHALLENGED — first clause right, second clause wrong, and the exception is the
+    interesting part.** Five shell-dependent runs did produce nothing. All five said why, in detail, and
+    two produced their best finding of the week *because* they worked outside the blocked script. The
+    run that in fact said nothing about why (`C2a2 lit search pipeline`, second session) was not
+    shell-blocked at all — it delegated to sub-agents and went idle without a summary. The prediction
+    named the wrong failure mode for the right worry.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1587
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Tested a same-day prediction against the day's other seven transcripts.
+    Current status: PARTIALLY CHALLENGED
+
+ASSUMPTION-1588:
+  Date identified: 2026-09-21
+  Statement: **Three runs independently concluded that their work must move to the Mac.** Metabolism
+    regen: "**This must run on the Mac**, same class of constraint as the daily-run commit step."
+    OpenStory: "running the extractors on the Mac... is the reliable near-term option. Publishing remains
+    manual on the Mac regardless." The daily run already defers its commit step to a Mac-side script.
+  Context: Three unrelated agents reaching the same architectural conclusion on the same day.
+  Source: `Metabolism regen daily`, `Openstory agents telemetry refresh`, `C282 wiki agent daily run` —
+    all read first-hand.
+  Type: architectural
+  Related decisions: OPEN-244; ASSUMPTION-1586; OPEN-248 (new).
+  Testability: framework commitment — this is a question about where the estate's heavy work lives.
+  Status: UNTESTED, and **nobody has the remit to act on it**. Three converging recommendations from
+    three agents, none of whom can change a schedule or a host.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1588
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collected three independent same-day conclusions into one item.
+    Current status: UNTESTED
+
+ASSUMPTION-1589:
+  Date identified: 2026-09-21
+  Statement: **The lit-search pipeline ran, and its writes are real.** First consumer run since
+    2026-09-16. It worked the 2026-09-20 intake cohort in full — 7 literature-bearing items through
+    15a → 15b → 15c (3 INCORPORATE, 3 REVISE, 2 MONITOR; eight outcomes over seven items, ASSUMPTION-1560
+    having split), and 4 items tagged `[NO-LIT-OWED]` and routed to the empirical lane.
+  Context: The hang recorded last night as ASSUMPTION-1568 has cleared.
+  Source: `C2a2 lit search pipeline` read first-hand, **and verified at source by this pass**:
+    `lit_search_returns.md` line 48268 carries the 2026-09-21 section; `validated_premises.md` contains
+    PREMISE-206, -207, -208; `monitor_queue.md` contains MONITOR-611/-612; `revision_flags.md` contains
+    REVISE-479/-480/-481.
+  Type: empirical
+  Related decisions: ASSUMPTION-1568; ASSUMPTION-1570; PRESUMPTION-1054.
+  Testability: settled.
+  Status: SUPPORTED. **This is the first night in over a week on which a reported write was checked and
+    found present.** ASSUMPTION-1570 recorded the opposite case on 09-13; the check is cheap and should
+    be standing.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1589
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Verified four reported writes at source rather than transcribing the run's claim.
+    Current status: SUPPORTED
+
+ASSUMPTION-1590:
+  Date identified: 2026-09-21
+  Statement: **"The estate has a literature pipeline and no measurement pipeline, and the literature lane
+    wins because it's the automatable one. The honest reading of every 'SUPPORTED' above is *supported by
+    the weaker of two available sources*."** A Critical SYSTEMIC-RISK-FLAG, raised on recurrence of the
+    2026-09-16 `named-instrument-never-run` flag. All ten items in the intake resolve to an in-house
+    measurement that is "specified, cheap, and unrun — a 30-minute source classification, a one-line
+    staleness assertion, a single grep."
+  Context: The lit pipeline filing a Critical flag against itself, at the end of the run in which it
+    produced three new premises.
+  Source: `C2a2 lit search pipeline`, read first-hand; flag file
+    `lit_search_results/against/SYSTEMIC-RISK-FLAG_2026-09-21_named-instrument-never-run_RECURRENCE.md`
+    confirmed present at line 48440 of `lit_search_returns.md`.
+  Type: methodological
+  Related decisions: PREMISE-206, -207, -208; PRESUMPTION-1069 (new); OPEN-249 (new).
+  Testability: testable in-house — the named instruments are the test.
+  Status: **CHALLENGED against the estate, SUPPORTED as an observation.** The flag's own recurrence is
+    its strongest evidence: it was raised five days ago and the instruments it named were not run in the
+    interval. Tonight's three new premises inherit the caveat.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1590
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the run's self-indictment and checked the recurrence claim against the 09-16 flag.
+    Current status: SUPPORTED
+
+ASSUMPTION-1591:
+  Date identified: 2026-09-21
+  Statement: **"PRESUMPTION-1054 was validated during the failure it describes."** The pipeline's own
+    observation: the one-line fix it proposes — "assert on the newest date-stamped section in
+    `lit_search_returns.md`" — "would have fired on 2026-09-17," four days before anything noticed.
+  Context: The run that was hung is the run that discovered the check for hangs is missing.
+  Source: `C2a2 lit search pipeline`, read first-hand.
+  Type: epistemic
+  Related decisions: PRESUMPTION-1054 → PREMISE-208 (INCORPORATE, High); OPEN-247; ASSUMPTION-1568.
+  Testability: settled.
+  Status: SUPPORTED. **The pipeline round-tripped a presumption surfaced by 14b on 09-20 into a
+    High-confidence premise on 09-21, and the premise's first confirming instance was the pipeline
+    itself.** This is the self-awareness loop closing in one day, which it has not done before.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1591
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Traced PRESUMPTION-1054 through 15a/15b/15c to PREMISE-208 and back to the run that produced it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1592:
+  Date identified: 2026-09-21
+  Statement: **"BACKLOG DECLARATION — the backlog grew."** ~63 literature-bearing items queued between
+    2026-09-14 and 2026-09-19 have no 15a or 15b result file and were not worked. Against the standing
+    lane of 304 blocks (up from 281 a week earlier, observed drain 3 blocks in 7 days), "This run drains
+    7 and adds none, which does not change that arithmetic. At the observed rate the lane does not clear."
+  Context: Scope decision declared autonomously: the run took the 09-20 cohort only rather than the
+    standing backlog.
+  Source: `C2a2 lit search pipeline`, read first-hand; declaration verified in the tail of
+    `lit_search_returns.md`.
+  Type: empirical
+  Related decisions: ASSUMPTION-1568; OPEN-247.
+  Testability: settled arithmetic.
+  Status: SUPPORTED. **The run states plainly that its lane does not clear at the observed rate** — an
+    agent declaring its own assignment unachievable without being asked, which is the second such
+    declaration in a week (cf. ASSUMPTION-1563).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1592
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the backlog declaration and its arithmetic.
+    Current status: SUPPORTED
+
+ASSUMPTION-1593:
+  Date identified: 2026-09-21
+  Statement: **"15a/15b independence was not achieved"** — both ran in one process; FOR files were
+    written and closed before the first AGAINST query, which the run itself calls "a partial mitigation
+    only."
+  Context: Declared defect 1 of 3 in the pipeline's own run note.
+  Source: `C2a2 lit search pipeline`, read first-hand.
+  Type: methodological
+  Related decisions: PREMISE-206, -207, -208 (all produced under this condition).
+  Testability: testable in-house — run one cohort in two processes and compare dispositions.
+  Status: UNTESTED. **Three premises were incorporated tonight under a declared independence failure**,
+    and the declaration is the only thing marking them.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1593
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a declared methodological defect and attached it to the artefacts produced under it.
+    Current status: UNTESTED
+
+ASSUMPTION-1594:
+  Date identified: 2026-09-21
+  Statement: **"The register's format, not the budget, is what is wrong."** The lit pipeline's Rule 6
+    breach note: the overrun "is in intake analysis, not output: `for_lit_search.md` is 22,706 lines with
+    at least four incompatible item formats, so establishing which items were actually due required a
+    programmatic parse rather than a read." It notes the same finding reached 15d from the other side on
+    09-20.
+  Context: Budget breach declared per Rule 6.
+  Source: `C2a2 lit search pipeline`, read first-hand; line count 22,725 confirmed at source by this pass
+    (the run's 22,706 predates tonight's append note).
+  Type: architectural
+  Related decisions: ASSUMPTION-1582; PRESUMPTION-1064 (new); OPEN-250 (new).
+  Testability: testable in-house — normalise one format and re-measure the parse cost.
+  Status: SUPPORTED, and **this is the first breach note today that diagnoses a cause rather than naming
+    a cost centre.** Four other runs breached tonight and none did.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1594
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the diagnosis and contrasted it with the day's four other breach notes.
+    Current status: SUPPORTED
+
+ASSUMPTION-1595:
+  Date identified: 2026-09-21
+  Statement: **Five declared token-budget breaches in one day, at 1.5× to 8× the 30k guideline, all
+    naming the same cost centre and none proposing a remedy.** Quoted: "roughly 250k against the 30k
+    guideline"; "roughly 200k against the 30k guideline — the cost centres were the two contract reads,
+    six full commentary reads, and the reverted repair"; "Budget ran ~150k against the 30k guideline; the
+    cost was the two contract reads and six full commentary reads, not the scans"; "Token budget ~65k,
+    over the 30k guideline — surfacing it rather than hiding it"; "roughly 45k against the project's 30k
+    guideline — surfacing it per Rule 6."
+  Context: Rule 6 compliance across the Summa reviewer and sweep runs.
+  Source: five transcripts, read first-hand.
+  Type: methodological
+  Related decisions: ASSUMPTION-1582; ASSUMPTION-1594; PRESUMPTION-1064 (new); OPEN-250 (new).
+  Testability: testable in-house — the guideline is a number and the task shape is fixed.
+  Status: **CHALLENGED.** Rule 6 says "Surface the breach. Do not silently overrun," and every run
+    complied exactly. But a guideline breached by every instance of a task class, always for the same
+    stated reason, is not being breached — it is the wrong number for the task, or the task is the wrong
+    shape for the number. **Nobody asked which.**
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1595
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collected five same-day declared breaches and read them as a population rather than singly.
+    Current status: CHALLENGED
+
+ASSUMPTION-1596:
+  Date identified: 2026-09-21
+  Statement: **A same-day off-by-seven in a consecutive-run streak.** Seven Summa runs today reported the
+    starvation streak as, in order of run: "twenty-third consecutive run in that state," "the twenty-fourth
+    consecutive run with nothing takeable," "twenty-fifth run in a row," "26th consecutive run with no
+    eligible non-held work," "27th consecutive run," "28th consecutive run," "29th consecutive run with
+    no eligible non-held work."
+  Context: Each run incremented the count it inherited. The spread is an artefact of cadence, not of
+    disagreement — but two of the runs disagree outright: one calls itself the twenty-fourth and a
+    same-morning sibling calls itself the twenty-fifth.
+  Source: seven transcripts, read first-hand.
+  Type: methodological
+  Related decisions: OPEN-246 (raised 09-20, unanswered); ASSUMPTION-1564; ASSUMPTION-1565.
+  Testability: settled by writing the convention down.
+  Status: **CHALLENGED, second consecutive night.** OPEN-246 asked for one paragraph defining the
+    counting convention. It was not written, and tonight the same defect produced a seven-wide spread
+    plus one flat contradiction. This is the cheapest open item on the board and it is now costing
+    something every day.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1596
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated seven same-day streak claims and identified the one genuine contradiction among them.
+    Current status: CHALLENGED
+
+ASSUMPTION-1597:
+  Date identified: 2026-09-21
+  Statement: **Fabricated `FLAG-NN` identifiers across 11 syntheses.** Days 093–095 and 107–114 cite
+    `FLAG-02 / 05 / 09 / 11` attributed to `wiki/traditions/<thinker>/wiki.md`. A grep across all of
+    `wiki/traditions/` "returns no match for `FLAG-` at all." The real register is
+    `wiki/master/paradigm_flags.md`, which uses `FLAG-001`/`FLAG-002` and holds only those two — "none of
+    the four cited ids has a referent under either scheme."
+  Context: Report-only QC sweep, `qc_sweep.py` unrunnable; the finding was produced by working outside
+    the blocked script.
+  Source: `Summa qc sweep` (852a4ce4), read first-hand.
+  Type: empirical
+  Related decisions: ASSUMPTION-1548 (CROSS anchoring); PRESUMPTION-1058 (attribution drift, queued
+    09-20 as the highest-value empirical item).
+  Testability: settled by the run's grep; the *repair* is the open part.
+  Status: SUPPORTED, with a control: "As a control I checked `CROSS-009` the same way — it is real and
+    correctly described — so this is a specific defect, not a stale path." **The correct form exists**, at
+    Day 110's Hoffman PRS-03 bullet, "added by the 2026-09-07 pass and never generalized." Not repaired,
+    with a stated reason: remapping "is per-claim judgment across 11 files, spans days outside any 6-pair
+    cap, and could not have been logged this run." **The defect lives inside the governance-held 66–115
+    cluster** — the hold is protecting it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1597
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a verified corpus defect and its declined repair, with the control that bounds it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1598:
+  Date identified: 2026-09-21
+  Statement: **"A measure returning a *uniform* verdict across a whole population is usually broken
+    rather than revealing, and a lone anomaly in an otherwise clean sweep deserves one direct read before
+    write-up."** Written down as a general rule by a reviewer whose every defect candidate that run "turned
+    out to be a flaw in my own instrument": criterion (d) reported 6 unresolved ids (真 0, after correction
+    "104 id assertions, zero unresolved"); a grade check "first reported *all 33* records missing a
+    Confidence field" (cause: the registers aren't markdown-headed); and Rohr PRS-46 "nearly became a filed
+    defect" because "my 1600-char body window just cut off before reaching it."
+  Context: Three instrument failures in one run, generalised into a rule rather than three fixes.
+  Source: `Summa commentary reviewer` (65d2f651), read first-hand.
+  Type: methodological
+  Related decisions: PRESUMPTION-1053 (instruments inside their own measurements); PRESUMPTION-1065 (new).
+  Testability: testable via literature — this is a measurement-validity claim with a large literature.
+  Status: UNTESTED, and **it is the day's most valuable stated item**: the first time an agent has turned
+    a run of its own false positives into a stated, checkable rule rather than a set of repairs.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1598
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a generalised rule and the three instrument failures that produced it.
+    Current status: UNTESTED
+
+ASSUMPTION-1599:
+  Date identified: 2026-09-21
+  Statement: **A same-day escalation and its retraction, with the lesson stated.** The morning run
+    upgraded a seven-day YouTube block to "follows the egress path, not the instance — waiting will not
+    clear it," and recommended abandoning the sandbox for local `yt-dlp`. The afternoon run: "**It has
+    cleared.**... Don't act on that recommendation. The general lesson: a probe failing on a fresh
+    instance justifies 'not instance-local,' never 'will not clear.'"
+  Context: An over-generalisation from a single fresh-instance probe, refuted within hours by the next run.
+  Source: `Summa commentary reviewer` (fb54dc45) and `Summa qc sweep` (8816a6ba), both read first-hand.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1558 (a published false alarm withdrawn, 09-20); ASSUMPTION-1598.
+  Testability: settled.
+  Status: SUPPORTED, and **a positive**: the estate caught and reversed a standing recommendation inside
+    one day, and wrote down the inference rule that would have prevented it. Second such reversal in two
+    days.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1599
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Paired a morning escalation with its afternoon retraction and extracted the stated rule.
+    Current status: SUPPORTED
+
+ASSUMPTION-1600:
+  Date identified: 2026-09-21
+  Statement: **"Those controls can't detect blindness to a form they don't use."** A reviewer's
+    hypothesis that the 2026-09-16 tail region map undercounts: "the likely cause is that Habash numbers
+    articles in the cardinal-word form — 'Article one,' 'Article two' — while the 09-16 probe widened to
+    *ordinal* forms. Its validation against the 176/182/183 controls reproduced them exactly, but those
+    controls can't detect blindness to a form they don't use." Consequence stated: "the tail totals, the
+    region map, and especially the 'no control exists anywhere in the tail' claim — the thing currently
+    defusing 26 days of arithmetic convictions — all rest on an undercount and want re-measuring."
+  Context: Six-pair review; measured article enumerations at 7, 13, 8, 6, 7, 8 against a map that says
+    zero.
+  Source: `Summa commentary reviewer` (fa2074c5), read first-hand.
+  Type: methodological
+  Related decisions: ASSUMPTION-1598; ASSUMPTION-1601; PRESUMPTION-1065 (new).
+  Testability: testable via literature (construct coverage / control validity) **and** in-house (re-run
+    the probe with cardinal forms).
+  Status: UNTESTED, **escalated not acted on**, which is correct. Note the direct conflict with
+    ASSUMPTION-1599's sibling run, which the same day called criterion (a) "exonerated again by the
+    transcript-supply test." One of the two is measuring the wrong thing, and the estate now knows which
+    to check.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1600
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a hypothesis that invalidates a validated instrument, and its same-day counterpart.
+    Current status: UNTESTED
+
+ASSUMPTION-1601:
+  Date identified: 2026-09-21
+  Statement: **A governance disposition was breached, caught, and fully reverted, in the run's own
+    words.** "I repaired criterion (a) on all six — adding article anchors drawn from the transcripts —
+    and pass-marked them, *before* reading the memory file that governs criterion (a). That file's
+    standing disposition is escalate-not-rewrite... All twelve edits are reverted." And: "I also filed an
+    escalation claiming the recorded test was under-specified, which was itself wrong, and retracted it. A
+    CORRECTION row in the QC log carries both."
+  Context: Order-of-operations failure — acting before reading the contract that governs the action.
+  Source: `Summa commentary reviewer` (fa2074c5), read first-hand.
+  Type: methodological
+  Related decisions: ASSUMPTION-1569 (errors disclosed rather than fixed quietly); ASSUMPTION-1606.
+  Testability: settled.
+  Status: SUPPORTED, and **a positive with a caveat**. The disclosure and full revert are the behaviour
+    the contract is aiming at. The caveat is that other runs today reported the contract's memory files as
+    *unreachable* — so the file this run read late is the file three siblings could not read at all.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1601
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a self-disclosed breach and connected it to the same day's contract-reachability reports.
+    Current status: SUPPORTED
+
+ASSUMPTION-1602:
+  Date identified: 2026-09-21
+  Statement: **The reviewer contract names files the reviewer cannot open — and the estate cannot agree
+    how many.** One run: "the six memory files the contract tells me to read at the start of every run
+    aren't reachable — that path is outside this session's connected folders... the contract currently
+    names files the reviewer can't open." A sibling reports five. A third cites a 09-19 budget row
+    itemising "eight memory files ~14k." Dated evidence and a prediction: "the 2026-09-19 runs read those
+    memory files successfully... so something about the mount or space binding changed in the last two
+    days. **This will now fail on every run until it's fixed**, independent of the sandbox."
+  Context: Step 1 of the reviewer contract, across three runs.
+  Source: three transcripts (0c05b7ed, 852a4ce4, fb54dc45), read first-hand.
+  Type: architectural
+  Related decisions: OPEN-246 (counting convention); ASSUMPTION-1601.
+  Testability: testable in-house — count the files the contract names.
+  Status: UNTESTED. **A latent defect was self-reported alongside it**: "make the reviewer fail loud when
+    a Step 1 contract file can't be read rather than proceeding on the three it can reach (this run only
+    caught it because the reads errored visibly)." Both proposed fixes — mirroring into `vault/memory/`
+    and failing loud — were named and neither was made; no agent has the remit.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1602
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Collated three same-day reports of one contract fault, including their disagreement on its size.
+    Current status: UNTESTED
+
+ASSUMPTION-1603:
+  Date identified: 2026-09-21
+  Statement: **"A stated rationale is a checkable rule; it got treated as prose."** Day 038's 09-16 pass
+    unbundled its Rohr trio and wrote down why — "an ungraded trio among them reads as parity with the
+    High Wright and Levin anchors" — "then didn't apply that test to the Wright bullet four lines above,
+    which was exactly that." The run calls it "the tightest same-file sibling miss on record."
+  Context: QC sweep finding five evidence-badge defects across three files, "an evidence badge read off
+    the commentary's felt confidence rather than off the record, in both directions."
+  Source: `Summa qc sweep` (15e32c41), read first-hand.
+  Type: methodological
+  Related decisions: ASSUMPTION-1598; PRESUMPTION-1065 (new).
+  Testability: testable in-house — grep stated rationales in QC notes and check each against its own file.
+  Status: SUPPORTED. **This is the sharpest formulation the estate has produced of its own failure
+    pattern**: agents write down general reasons and then apply them locally. It is the same shape as
+    PRESUMPTION-1053 (nobody generalises a found defect) at one file's scale rather than the network's.
+    Three days (046/265/268) "passed clean and are positive controls — same lineage, handling the same
+    shape correctly," which bounds it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1603
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the run's own formulation and the controls that bound it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1604:
+  Date identified: 2026-09-21
+  Statement: **"A stale figure misleads; a stale *deferral claim* tells the next reviewer not to trust
+    fields that are correct."** Day 042's `length_note` asserted the length fields were "deliberately NOT
+    recomputed" when the 09-16 pass had recomputed both.
+  Context: Same QC sweep; a second defect class alongside the badge defect.
+  Source: `Summa qc sweep` (15e32c41), read first-hand.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1605; ASSUMPTION-1570 (a report of a write is not a write).
+  Testability: testable in-house — grep `length_note` for deferral language and check against the fields.
+  Status: UNTESTED. **A distinct and worse failure mode than staleness**: a wrong claim about the
+    provenance of correct data propagates distrust forward, whereas a stale number is merely wrong once.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1604
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a second-order staleness class the run named but did not generalise.
+    Current status: UNTESTED
+
+ASSUMPTION-1605:
+  Date identified: 2026-09-21
+  Statement: **"This defect is a property of note *shape*, not writer or band. A headline with a bare
+    figure goes stale silently; a note ending `New total N, ratio R` cannot."** Found after Days 253/254
+    `length_note` headline figures (1588, 1210) were contradicted by each note's own last sentence
+    (1799, 1234); the larger figures were confirmed and the notes repaired with history preserved.
+  Context: QC sweep; a design finding about self-invalidating documentation.
+  Source: `Summa qc sweep` (8816a6ba), read first-hand.
+  Type: architectural
+  Related decisions: ASSUMPTION-1604; ASSUMPTION-1594.
+  Testability: testable via literature — self-documenting / self-invalidating record formats.
+  Status: UNTESTED, and **actionable**: it names a format change, not a repair. The estate's registers,
+    including this one, mostly write bare headline figures.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1605
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a format-level finding and noted that it applies to this register too.
+    Current status: UNTESTED
+
+ASSUMPTION-1606:
+  Date identified: 2026-09-21
+  Statement: **Three published bridge files are zero bytes, and no instrument names them.** The weekly
+    reviewer-review: `synthesis/arkanihamed_loughran`, `synthesis/carroll_hawkins`,
+    `synthesis/mcgilchrist_wright` are empty; "`janitor.py` has a duplicate-H1 check and no empty-file
+    check, so nothing names them."
+  Context: Weekly meta-review of the reviewer agents.
+  Source: `Reviewer review weekly`, read first-hand; **verified at source by this pass** —
+    `find synthesis -size 0 -name '*.md'` returns exactly those three files.
+  Type: empirical
+  Related decisions: ASSUMPTION-1573 (janitor counting failed unlinks as fixes); PRESUMPTION-1053.
+  Testability: settled.
+  Status: SUPPORTED. **The audit was sampled and does not state its sample size**, so three is a floor,
+    not a count — but the zero-length check itself is exhaustive and confirms three across the whole
+    directory. Note what this is: the accelerator's *output* layer publishing empty files while every
+    instrument reports the layer healthy.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1606
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Verified a sampled finding exhaustively at source and corrected its epistemic status upward.
+    Current status: SUPPORTED
+
+ASSUMPTION-1607:
+  Date identified: 2026-09-21
+  Statement: **Scheduler health: 86 OK, 3 WARN, 6 FAIL**, against a task-file baseline of 78 OK / 4 WARN
+    / 0 FAIL as of 2026-08-05. The six: `c2a2-lit-search-pipeline` 101h / 2 missed fires (cleared later
+    today); `com.c2a2.metabolism-publish` exit 1; `metabolism-regen-daily` generated 17.7 days ago —
+    "the task may report a run and write nothing"; `openstory-ingest` t_max_event 17.9 days ago;
+    `c282-wiki-agent-daily-run` "permissionMode is absent, so an unattended run will HANG on the first
+    prompt for an unapproved tool"; `com.c2a2.voice-shell-check` RED, "rows: 364 passed: 357 failed: 7."
+  Context: Daily scheduler health check, the one instrument in the estate that enumerates from the
+    registry rather than from `list_scheduled_tasks`.
+  Source: `Scheduler health check`, read first-hand.
+  Type: empirical
+  Related decisions: ASSUMPTION-1608; PRESUMPTION-1068 (new); OPEN-248 (new).
+  Testability: settled.
+  Status: SUPPORTED. **The FAIL count has gone 0 → 6 in seven weeks and the WARN count has not moved**,
+    which says the check is finding real failures, not drifting. Note the internal conflict for the
+    record: this run counts 71 registry tasks across 3 files and 15 launchd agents; the morning project
+    status says "34 scheduled agents enabled." Neither states its method (OPEN-246 again).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1607
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the health roll-up and cross-checked its enumeration against the morning report's.
+    Current status: SUPPORTED
+
+ASSUMPTION-1608:
+  Date identified: 2026-09-21
+  Statement: **The metabolism artifact has been frozen at 2026-09-03 for eighteen days and every
+    downstream consumer has been reading it.** `_meta.generated = 2026-09-03T12:22:05-04:00`;
+    `metabolism-monitor/state.json` `last_run: 2026-07-28`. The run's hypothesis: "2026-09-03... is exactly
+    the start date of the silent-death window the `_snapshot_db` docstring describes (WAL-mode snapshot
+    unopenable read-only). The comment says that window ran 09-03 to 09-10; **the artifact says it never
+    actually recovered**." And: "Every freshness consumer downstream... has been reading a 09-03 snapshot.
+    Worth checking whether those rows are **RED-and-unread, the failure mode CLAUDE.md already names**."
+  Context: Metabolism regen failed again — `sqlite3.OperationalError: database or disk is full`, exit 1.
+  Source: `Metabolism regen daily`, read first-hand.
+  Type: empirical
+  Related decisions: ASSUMPTION-1607; OPEN-244; PRESUMPTION-1062 (new); PRESUMPTION-1068 (new).
+  Testability: settled as to the freeze; the "RED-and-unread" question is testable in-house.
+  Status: SUPPORTED. **A monitoring system whose own staleness monitor went unread for eighteen days.**
+    The scheduler check has been reporting this FAIL daily, correctly, and the reviewer-review notes both
+    this and the absent `permissionMode` "FAIL daily, both read daily" — so the rows are read and not
+    acted on, which is a different and worse condition than unread.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1608
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the freeze and tested the run's "RED-and-unread" hypothesis against the reviewer-review.
+    Current status: SUPPORTED
+
+ASSUMPTION-1609:
+  Date identified: 2026-09-21
+  Statement: **"All fired on time" was reported of a chain that was frozen.** The morning project status:
+    the overnight C2A2 run — "Levin and Friston hunters, self-awareness pipeline, Summa batch and
+    verification, metabolism and OpenStory telemetry refreshes — all fired on time," no issues to report.
+    The same morning, the system-health run reported OpenStory feeds FAILED and the scheduler check
+    reported metabolism 17.7 days stale and OpenStory ingest 17.9 days stale.
+  Context: Three scheduled runs, same morning, same subject, opposite verdicts.
+  Source: `Morning project status`, `Morning system health`, `Scheduler health check` — all read first-hand.
+  Type: methodological
+  Related decisions: PRESUMPTION-1054 → PREMISE-208 (liveness ≠ progress, INCORPORATE High, 09-21);
+    ASSUMPTION-1591; PRESUMPTION-1062 (new).
+  Testability: settled.
+  Status: **CHALLENGED, and this is the day's cleanest confirming instance of PREMISE-208.** Firing was
+    treated as equivalent to producing output; freshness was not checked. The scheduler check's own row
+    states the trap in one line — "the task may report a run and write nothing" — and the morning status
+    run fell into it the same morning, in the other direction: it reported a run and read nothing.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1609
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Set three same-morning reports against each other and matched the result to PREMISE-208.
+    Current status: CHALLENGED
+
+ASSUMPTION-1610:
+  Date identified: 2026-09-21
+  Statement: **"The queue is the only thing that's stuck."** The daily run: twelve days without a
+    decision email (none since 2026-09-09); 28 proposals on the review page spanning 09-11 to 09-21;
+    "every network number above has been frozen since 09-11 — correctly, since nothing can move until you
+    decide. The sweep is healthy and self-limiting: one new card today because thirteen traditions
+    genuinely had nothing new, not because the agents ran out of energy."
+  Context: Phase-by-phase daily run report. Network: 867 triplets · 135 connections · 90 findings (24
+    Active). Review log 483 cards / 128 dates / 15 responses. L2: 1,501 signals, 87 pairs, stale_days 12,
+    no WARN emitted (threshold 21).
+  Source: `C282 wiki agent daily run`, read first-hand; **verified at source by this pass**: PRS 867,
+    CROSS 135, `inbox/proposals/pending/` **29** (+2 since last night), `approved/` 414, review page
+    `review/2026-09-21_review.html` **305,491 bytes**.
+  Type: empirical
+  Related decisions: ASSUMPTION-1562 (the queue as binding constraint); ASSUMPTION-1579;
+    PRESUMPTION-1066 (new).
+  Testability: the count is settled; the claim "thirteen traditions genuinely had nothing new" is not.
+  Status: **PARTIALLY SUPPORTED.** The freeze is real and correctly attributed. The "healthy and
+    self-limiting" reading rests on an unreported number — no per-tradition coverage is given, unlike the
+    Levin/Friston specialist run the same day, which reported "nine searches" and bounded its negative
+    result explicitly. Two cards were added today (Levin, Rohr), not one; the daily run counted its own
+    Rohr card and the specialists' Levin card landed separately.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1610
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Verified the queue figures at source and separated the measured claim from the asserted one.
+    Current status: PARTIALLY SUPPORTED
+
+ASSUMPTION-1611:
+  Date identified: 2026-09-21
+  Statement: **"A tenth fetch is predicted to return the same null, so retrying would be method
+    theatre."** Wright PROP-2026-08-14-033, not retried for the first time. "Yesterday established that
+    ntwrightpage returns an empty body on three separate posts, which is the site's rendering rather than
+    a transient fault... Recommendation unchanged and repeated in the digest: **DENY, reason
+    `source-unretrievable`** — that clears the ledger to zero."
+  Context: Phase 1, eleventh consecutive zero-ingest day, ledger OPEN=1.
+  Source: `C282 wiki agent daily run`, read first-hand.
+  Type: empirical
+  Related decisions: ASSUMPTION-1563; ASSUMPTION-1564 (the disputed attempt count).
+  Testability: settled.
+  Status: SUPPORTED, and **a positive**: an agent stopped repeating a failing action, named why in a
+    falsifiable form, and did not restate the attempt count that has been disputed for two nights. Third
+    consecutive night the same DENY recommendation has gone unanswered.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1611
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a declined retry and its stated justification.
+    Current status: SUPPORTED
+
+ASSUMPTION-1612:
+  Date identified: 2026-09-21
+  Statement: **A known gap closed by changing the retrieval route, and the method written down.** The
+    Levin specialist carded PROP-2026-09-21-002, the automated cell-training platform paper (bioRxiv
+    2026-08-13, doi 10.64898/2026.08.13.744473) — "the **known gap** flagged in the 2026-09-17 daily run,
+    which found the citation but could not card it: `web_fetch` refused the bioRxiv URL under the
+    provenance restriction and the browser request was auto-declined. **Surfacing the URL through a
+    WebSearch first cleared the restriction**, so the full text was read before writing."
+  Context: Levin/Friston 7am specialist run. Four candidate PRS triplets (two High, one Medium, one
+    Speculative); the authors' own restraint preserved verbatim — their metrics "alone are insufficient
+    to declare the presence of learning."
+  Source: `C2a2 agent levin friston`, read first-hand; card confirmed present in `inbox/proposals/pending/`.
+  Type: methodological
+  Related decisions: ASSUMPTION-1610; PRESUMPTION-1067 (new).
+  Testability: settled.
+  Status: SUPPORTED. **A four-day-old retrieval failure was closed by a route change rather than a
+    retry**, and the route was recorded so the next run does not rediscover it — the opposite of the
+    pattern in ASSUMPTION-1586, where a verified diagnosis was found once and never propagated.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1612
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a closed gap and the reusable method that closed it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1613:
+  Date identified: 2026-09-21
+  Statement: **A negative result bounded, and a provenance error corrected without a card.** The Friston
+    sweep: "Nine searches (arXiv, PubMed, bioRxiv/PsyArXiv, VERSES, talks/podcasts, and five collaborator
+    permutations) surfaced nothing by Friston himself inside the 30-day window that is not already in the
+    vault... Direct arXiv author-listing fetches were blocked by the provenance restriction, and a
+    browser-pane request for arxiv.org was auto-declined — so this is **'nothing found by the available
+    means,' not 'nothing exists.'**" Separately: the Rosetta Stone neurophenomenology paper, carded
+    2026-08-25 as PROP-2026-08-25-015, "was in fact peer-reviewed and published in *Neuroscience of
+    Consciousness* on **2026-01-17** — doi 10.1093/nc/niag026, PMID 42482982, lead author Sandved-Smith.
+    The vault's Friston triplets describe it as a preprint."
+  Context: Same specialist run; zero Friston proposals.
+  Source: `C2a2 agent levin friston`, read first-hand.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1610 (the unbounded "thirteen traditions had nothing new");
+    PRESUMPTION-1066 (new).
+  Testability: the provenance correction is settled; the negative result is bounded by construction.
+  Status: SUPPORTED, and **the day's best-disciplined negative**: search count stated, blocked routes
+    named, conclusion scoped to the means. It is the direct contrast case for ASSUMPTION-1610. The
+    preprint-versus-published error in the vault's Friston triplets is now on the record and uncorrected.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1613
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a bounded negative result and an unrepaired provenance error found beside it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1614:
+  Date identified: 2026-09-21
+  Statement: **An agent recommending its own retirement, sixth consecutive no-op.** The Summa daily
+    batch: 0 transcripts, 0 syntheses; "Today's date has no row in Pace.csv"; "The Pace schedule ends
+    **2026-06-30**; today is nearly three months past it." Verified: "**307** transcripts and **307**
+    syntheses, day numbers **1–307 contiguous with no gaps**... and **zero** `fetch_failed` stubs."
+    Recommendation: "`summa-2026-daily-batch` has no remaining work and is firing daily to confirm a
+    finished series. Retiring it would be appropriate... **I have not changed the schedule — that is your
+    call.**"
+  Context: The series finished at Day 307, "You Made It."
+  Source: `Summa 2026 daily batch`, read first-hand; 307/307 corroborated by four other Summa runs.
+  Type: architectural
+  Related decisions: ASSUMPTION-1563 (an agent retiring its own assignment on evidence); ASSUMPTION-1592.
+  Testability: settled.
+  Status: SUPPORTED, with **one unreconciled discrepancy the run did not flag**: its own spec states the
+    target as "308 episodes by 2026-06-30," and the run asserts "there is no Day 308" without addressing
+    the gap between spec and corpus. Second agent in two days to declare itself done or undoable; neither
+    can act on it.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1614
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a self-retirement recommendation and checked it against the task's own spec.
+    Current status: SUPPORTED
+
+ASSUMPTION-1615:
+  Date identified: 2026-09-21
+  Statement: **A retraction from the nightly verifier: the dangling-CROSS finding was a parser
+    artifact.** "The headline result is a **retraction**: last night's 'dangling CROSS-104/107/135' was a
+    parser artifact — `cross_program_index.md` does define all 135 ids, in a bold-prose form the 09-20
+    matcher didn't know about, so the index is not behind the detector and no human decision is needed
+    there." The verification otherwise found "**No citation drift**... zero staleness under both the mtime
+    check and the content-anchor check" across 307 files, 9 FLAGs, 54 CROSSes, every PRS id across 15
+    tradition registers, and 29 wiki paths.
+  Context: Nightly verification, 2026-09-21.
+  Source: `Summa 2026 nightly verification`, read first-hand; the 135 total independently confirmed at
+    source by this pass.
+  Type: empirical
+  Related decisions: ASSUMPTION-1548; ASSUMPTION-1575; ASSUMPTION-1617 (new).
+  Testability: settled.
+  Status: SUPPORTED. **Third anchoring/parser artifact retracted in four nights** — 1548 (CROSS
+    anchoring), 1575/1584 (unanchored id counts), now this. The estate keeps finding the same defect in
+    new instruments and has never fixed it in general (PRESUMPTION-1053, PRESUMPTION-1065).
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1615
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a retraction and placed it in the four-night series of the same defect class.
+    Current status: SUPPORTED
+
+ASSUMPTION-1616:
+  Date identified: 2026-09-21
+  Statement: **"And it cost two weeks."** The reviewer-review, correcting its own diagnosis: "Last week's
+    brief recorded `Documents/Claude/Scheduled/` as 'Permission denied,' which read as a flaky grant. It
+    isn't — it's refused as a protected Claude-internal location. No retry reaches it." Decision: "Step 4
+    of this task's own spec needs re-sourcing against the registry JSON."
+  Context: Weekly meta-review; a misclassified error type that generated two weeks of futile retries.
+  Source: `Reviewer review weekly`, read first-hand.
+  Type: epistemic
+  Related decisions: ASSUMPTION-1599 ("a probe failing on a fresh instance justifies 'not instance-local,'
+    never 'will not clear'"); ASSUMPTION-1611.
+  Testability: settled.
+  Status: SUPPORTED. **Three items today are the same lesson from three directions**: a transient-looking
+    error that is structural (this), a structural-looking error that was transient (1599), and a
+    structural error correctly identified and not retried (1611). The estate is learning to classify
+    failures by kind, unevenly and expensively.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1616
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a self-corrected diagnosis and grouped it with the day's two counterpart cases.
+    Current status: SUPPORTED
+
+ASSUMPTION-1617:
+  Date identified: 2026-09-21
+  Statement: **This pass committed the anchoring defect again, in its own verification step, for the
+    second consecutive night.** Checking whether the lit-search pipeline's reported writes were real, this
+    pass grepped `lit_search_returns.md` for `^## 2026-.* RUN` and concluded the last run section was
+    `## 2026-09-16` — a four-day gap that does not exist. The 2026-09-21 section is at line 48268 and is
+    titled `## 2026-09-21 — 15a / 15b / 15c pipeline run`, lower-case. Re-derived without the trailing
+    anchor, the section is present, and PREMISE-206/-207/-208, MONITOR-611/-612 and REVISE-479/-480/-481
+    are all present in their registers.
+  Context: Verification step of this pass.
+  Source: **measured by this pass**, corrected in place before any figure was published.
+  Type: methodological
+  Related decisions: ASSUMPTION-1548; ASSUMPTION-1575; ASSUMPTION-1584; ASSUMPTION-1615;
+    PRESUMPTION-1065 (new).
+  Testability: settled.
+  Status: **CHALLENGED — against this pass.** Last night's entry (1584) recorded this pass committing the
+    unanchored-count version of the defect and observed that "knowing the failure mode by name did not
+    prevent it." Twenty-four hours later it recurred in the over-anchored direction, on the first check
+    of the night. The defect is not a lapse; it is the default behaviour of writing a grep pattern from
+    memory of a file's conventions. **The only thing that caught it both nights was checking twice.**
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1617
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Caught its own over-anchored grep, re-derived the result, and reports it against interest.
+    Current status: CHALLENGED
+
+ASSUMPTION-1618:
+  Date identified: 2026-09-21
+  Statement: **Both bridge directions dead, nineteenth day.** Morning: "The scrape failed — no Chat
+    content was captured today," Claude in Chrome not connected, "two attempts, both refused," and the
+    built-in browser pane "landed on the signed-out claude.ai page and I can't sign in." Evening:
+    "**Summary written; Chat delivery failed** — Claude in Chrome is not connected (two attempts), same
+    condition that broke this morning's Chat→Cowork scrape."
+  Context: The estate's only channel to designer speech.
+  Source: `C2a2 morning chat scrape` and `C2a2 evening cowork to chat`, both read first-hand.
+  Type: architectural
+  Related decisions: ASSUMPTION-1585; ASSUMPTION-1565; OPEN-245; PRESUMPTION-912.
+  Testability: settled.
+  Status: SUPPORTED. **The morning run did one thing worth keeping**: it wrote the dated file anyway with
+    the failure logged in place of the summary sections, "so Cowork sessions today know they have no
+    Chat-side context." A failure recorded where the content would have been is a better artefact than a
+    missing file, and no other broken path in the estate does this.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1618
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted both halves of the nineteen-day bridge outage and the one mitigation in it.
+    Current status: SUPPORTED
+
+ASSUMPTION-1619:
+  Date identified: 2026-09-21
+  Statement: **One scheduled session produced no report at all.** A second `C2a2 lit search pipeline`
+    session (`local_0cbbc6fa`) read the queue file, noted "The queue file is large (22k lines) with a lot
+    of run history," created six tasks, spawned two sub-agents, and went idle without a summary, a
+    disposition, or any statement of outcome. Whether its sub-agents' work landed cannot be established
+    from its own record.
+  Context: Discovered by this pass while reading the day's transcripts; no other agent or register
+    mentions it.
+  Source: **read first-hand by this pass**; absent from every other report today.
+  Type: methodological
+  Related decisions: PRESUMPTION-1054 → PREMISE-208; ASSUMPTION-1587; PRESUMPTION-1062 (new);
+    OPEN-249 (new).
+  Testability: testable in-house — assert that every scheduled session emits a final message.
+  Status: UNTESTED. **This is the failure mode ASSUMPTION-1587 predicted for shell-blocked agents,
+    occurring instead in an agent that was not blocked** — and it is invisible to every check the estate
+    runs, including PREMISE-208's liveness assertion, which fires on register writes rather than on
+    session reports. A run that reports nothing is not stalled; it is finished and silent.
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1619
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Found an unreported scheduled session and established that no register records it.
+    Current status: UNTESTED
+
+*Extracted by the 14a end-of-day run, 2026-09-21 (began ~23:45 EDT). **Thirty-five items (1585–1619).**
+Coverage: **no interactive Cowork session — twenty-second consecutive day** (ASSUMPTION-1585); every item
+agent-stated or measured by this pass. **Twenty-four sessions read first-hand** across three parallel
+readers — the evening cowork-to-chat sync, the C282 daily run, both lit-search pipeline sessions, the
+Levin/Friston specialist, the Summa daily batch and nightly verification, four Summa commentary-reviewer
+runs, four Summa qc sweeps, the weekly reviewer-review, the Supabase keep-warm, OpenStory telemetry,
+metabolism regen, morning project status, morning walk handoff, morning chat scrape, morning system
+health, and the scheduler health check. **Not read:** fifteen sessions at list positions 26–40 whose date
+could not be established without reading them. **Eight entries verified or measured at source** by this
+pass (PRS 867, CROSS 135, pending 29, approved 414, review page 305,491 B, the three zero-byte bridge
+files, the lit-pipeline's four reported writes, `for_lit_search.md` at 22,725 lines). **One entry tests a
+same-day prediction and partially falsifies it** (1587, against the reviewer-review). **One entry records
+a defect this pass committed in its own verification step for the second consecutive night** (1617).
+**One entry records a scheduled session that reported nothing and that no other instrument noticed**
+(1619). **Eight entries record positives**: 1589 (a reported write checked and found present), 1591 (the
+14b → 15c → premise loop closing in one day), 1599 (a standing recommendation reversed within hours, with
+the inference rule written down), 1601 (a governance breach disclosed and fully reverted), 1611 (a failing
+action stopped rather than repeated), 1612 (a four-day gap closed by a route change, recorded for reuse),
+1613 (a negative result bounded by its means), 1614 (an agent recommending its own retirement). Registers
+snapshotted as `*.bak.20260921-pre-14eod` before any append.*
+
+---
+

@@ -7622,3 +7622,242 @@ PREMISE-205:
   Re-check due: 2026-10-14 (Monthly — the rate is expected to move quickly once the schema changes, and
     a premise about an instrument should be re-checked as soon as the instrument is altered)
   Status: ACTIVE
+
+
+================================================================================
+## 2026-09-21 — 15c INCORPORATE batch (3 premises, from the 2026-09-20 intake)
+
+*Caveat applying to all three: the 15a and 15b searches that produced them ran in a single process. The
+independence the spec assumes was not achieved (FOR files were written and closed before the first
+AGAINST query, which is a partial mitigation, not the thing itself). Read the confidences accordingly.*
+
+PREMISE-206:
+  Date validated: 2026-09-21
+  Source item: ASSUMPTION-1560
+  Statement: Eleonore Stump's own stated account of causation is formal and level-indexed — systems-level
+    causal power is conferred by substantial form configuring a whole (Stump 2012) — and her account of
+    divine action on the will is characterised, by her and by her critics, as formal causality. This does
+    not make her a non-teleological thinker: her expository and theological work transmits Aquinas's
+    final causality, and in the Thomistic frame form and end are complementary rather than exclusive.
+    Attributions of a *primary* final-causal commitment to Stump require a source in her own voice.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Stump, E. 2012, "Emergence, Causal Powers, and Aristotelianism in Metaphysics,"
+    in Groff & Greco (eds.), *Powers and Capacities in Philosophy*, Routledge, 48-68 (her own voice);
+    Rooney, J. D. 2015, "Stumping Freedom: Divine Causality and the Will," *New Blackfriars*,
+    DOI:10.1111/nbfr.12135 (a critic's independent characterisation in the same terms).
+  Challenges noted: *Wandering in Darkness* (2010) argues from an ultimate end — union with God ordering
+    human integration — which is teleological in structure whatever the label. The intake's contrastive
+    form ("formal rather than final") is therefore NOT incorporated; only the narrow attribution claim
+    is. Corpus reading was not performed; the supporting search was open-web.
+  Confidence: Moderate
+  Applicable to: CROSS-008 and any cross-tradition claim keyed on Stump's causal category; agent 07
+    (Stump); the intertradition matrix wherever causal category is a join key.
+  Re-check due: 2026-12-21 (Quarterly)
+  Status: ACTIVE
+  Open dependency: REVISE-479. This premise licenses no edit to CROSS-008 until the three cited sources
+    are classified by whose voice the attribution is in.
+
+PREMISE-207:
+  Date validated: 2026-09-21
+  Source item: PRESUMPTION-1053
+  Statement: An instrument that is also a member of the population it measures biases its own series.
+    Where no agent is rewarded for moving the number, the bias is mechanical rather than strategic: it
+    shifts the *level*, usually slightly, and is removable by a filter. It shifts the *trend* — the
+    consequential case — whenever the instrument's own activity rate changes over the series, which is
+    exactly what a pipeline stall does. Self-inclusion is therefore to be measured as a share over time,
+    not asserted or dismissed.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: designers were unaware)
+  Supporting evidence: Michelson, "Reflexive Measurement" (measurement-as-intervention); Goodhart 1975;
+    Fire & Guestrin 2019, "Over-optimization of academic publishing metrics," *GigaScience* (PMC6541803)
+    — a knowledge-production system scored on its own output counts, the nearest available analogue;
+    Thomas & Uminsky 2020, arXiv:2002.08512.
+  Challenges noted: "The Strong, Weak and Benign Goodhart's Law," arXiv:2505.23445, formalises a benign
+    regime in which proxy optimisation does not degrade the target — so the intake's quantifier
+    ("systematically distort") is not established and was weakened before incorporation. Bibliometrics
+    critique locates the damage in evaluative use under incentive, which the estate's registers lack.
+  Confidence: Moderate
+  Applicable to: every register under `wiki/architecture/` whose rows can originate from the estate's own
+    agents; 15d's standing-lane counts; any headline count published from a register (ties to
+    ASSUMPTION-1575); strengthens and does not contradict PREMISE-096.
+  Re-check due: 2026-12-21 (Quarterly)
+  Status: ACTIVE
+  Open dependency: the enumeration — which registers are both instrument and member — is unrun. It is
+    carried in the 2026-09-21 Critical systemic-risk flag, not in a monitor cycle.
+
+PREMISE-208:
+  Date validated: 2026-09-21
+  Source item: PRESUMPTION-1054
+  Statement: Liveness is not progress. A monitor that observes whether a process is alive cannot witness
+    whether it is advancing, and the resulting blindness emits no signal — the failure is silent by
+    construction. Progress must be witnessed by a monotonic artefact that only the completion of work can
+    advance, and the witness must be read on a schedule. For C2A2 that artefact exists: the newest
+    date-stamped run section in `lit_search_returns.md`. Prefer an artefact-staleness assertion over a
+    timer, because timers on irregular workloads produce false alarms, get degraded to warn-only, and
+    reproduce the original blindness as an ignored warning.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: designers were unaware)
+  Supporting evidence: "Ensuring liveness properties of distributed systems: Open problems," *JLAMP*
+    (ScienceDirect S2352220817302006 / arXiv:1912.05616) — liveness asserts progress, and no meaningful
+    liveness property is establishable without a progress assumption; heartbeat/failure-detector practice
+    literature on the frozen process that answers pings; hierarchical watchdog literature.
+  Challenges noted: None against the claim. Against the remedy: Linux lockup-watchdog documentation and
+    watchdog-tuning practice show progress detectors need a defined unit of work and are routinely
+    degraded to warn-only after false alarms — which would reproduce PRESUMPTION-1055's failure. The
+    artefact-staleness form specified in the Statement is the mitigation.
+  Confidence: High
+  Applicable to: Agent 15d; the `c2a2-lit-search-pipeline` and `c2a2-self-awareness-pipeline` scheduled
+    tasks; the heartbeat subsystem; any agent that reports its own health; same fault class as
+    PREMISE-100 one level up, and the two should be read together.
+  Re-check due: 2026-12-21 (Quarterly)
+  Status: ACTIVE
+  Demonstration at time of validation: this premise was validated during the failure it describes. The
+    pipeline was alive and not advancing from 2026-09-16 to 2026-09-21; three probes on 2026-09-20 returned an
+    identical turn count; no monitor fired. The assertion named above would have fired on 2026-09-17.
+
+PREMISE-209:
+  Date validated: 2026-09-22
+  Source item: ASSUMPTION-1598 (DISPOSITION-977) — limb 1 only; limb 2 went to REVISE-482
+  Statement: A measure that returns the SAME verdict for every member of a population has reported a
+    property of the instrument as readily as a property of the population, and the two are not
+    distinguishable from the output alone. Uniformity is therefore a TRIGGER TO VERIFY THE INSTRUMENT
+    before the result is written up — never, by itself, a finding about the population. The verification
+    must be an independent read that does not route through the same measure. Note the narrowing: the
+    item as stated said uniform verdicts are "usually broken." That stronger diagnostic claim is NOT
+    validated — 15b established that a uniform signal is genuinely ambiguous between a broken measure
+    and a real population-wide effect. What is validated is the action, not the diagnosis.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: degenerate- and constant-classifier detection practice in ML output QC (a
+    classifier emitting one class for all inputs is standard evidence of collapse, not of a uniform
+    world); statistical process control, where zero variance in a monitored series is treated as an
+    instrumentation check before a process conclusion.
+  Challenges noted: 15b, Moderate. Uniform output is ambiguous, not presumptively broken — well-
+    controlled processes and genuine shared effects also produce it; alarm-fatigue literature supplies
+    a second competing explanation. The word "usually" is not carried by the literature and has been
+    struck from the premise above.
+  Confidence: Moderate
+  Applicable to: Agent 13 (pattern detector); the QC sweeps behind the 09-16 tail probe; any agent that
+    reports a population-level verdict; the counting practice covered by PREMISE-207 and ASSUMPTION-1575.
+  Re-check due: 2026-12-22 (Quarterly)
+  Status: ACTIVE
+  Cross-constraint: this premise falls under the 2026-09-22 High systemic-risk flag (structural
+    signatures are not self-certifying). Uniformity licenses a check; it does not license a conclusion.
+
+PREMISE-210:
+  Date validated: 2026-09-22
+  Source item: ASSUMPTION-1600 (DISPOSITION-978)
+  Statement: A probe validated only against controls that share its blind spot is not validated FOR THE
+    REGION OF THE BLIND SPOT. Agreement between a probe and a control set drawn from the same
+    construction is evidence of shared method, not of accuracy: where the error is correlated, the
+    control confirms the probe and both are wrong together. A control set must be shown to exercise the
+    forms the probe might miss, and that showing is a separate act from running the probe.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: evaluator/LLM-judge blind-spot work (arXiv:2406.13439, interpretable checklists
+    for finding blind spots in evaluator LLMs) — an evaluator sharing a generator's blind spot agrees
+    with it and both fail; criterion contamination and common-method bias (Podsakoff et al., 2022);
+    classical case-control methodology on correlated measurement error.
+  Challenges noted: 15b found NO CHALLENGE to the principle — this is close to orthodox measurement
+    theory. Its one correction is carried in the Statement above: validation practice treats validity as
+    continuous and region-specific, so "not validated" must be read as "not validated in the blind-spot
+    region," not as "globally invalid." Discarding a partially-informative probe outright over-corrects;
+    the remedy is to narrow the claim or triangulate with a differently-constructed control.
+  Confidence: High
+  Applicable to: the 2026-09-16 tail probe and every total derived from it; the region map; the standing
+    "no control exists anywhere in the tail" claim; Agents 15a/15b when either validates its own search
+    coverage; the reviewer apparatus named in PRESUMPTION-1063.
+  Re-check due: 2026-12-22 (Quarterly)
+  Consequence carried forward: ASSUMPTION-1600's in-house test — re-run the 09-16 tail probe with
+    cardinal-word article forms against the same controls — is NOT discharged by this premise. It is
+    routed to the empirical lane below. Until it is run, the tail totals and the region map stand as
+    measured by an instrument this premise says is unvalidated in exactly the region at issue.
+  Status: ACTIVE
+
+PREMISE-211:
+  Date validated: 2026-09-22
+  Source item: ASSUMPTION-1605 (DISPOSITION-979) — softened form; the as-written form is rejected
+  Statement: Record SHAPE, not author or band, determines whether staleness is DETECTABLE. A headline
+    carrying a bare figure gives a reader nothing to check it against and goes stale silently; a note
+    that ends by carrying its own derivation — `New total N, ratio R`, or the command that produced the
+    figure — can be checked against the source and the discrepancy surfaces. The softening is load-
+    bearing: such a record is more AUDITABLE, not immune. Both search directions independently found
+    that the item's word "cannot" is unsupported. A self-describing record still goes stale; what
+    changes is that someone, or some check, CAN now notice. Detectability without a reader is not
+    detection.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: self-describing / provenance-carrying data formats (Infofile, *Digital
+    Discovery* 2023, DOI:10.1039/D2DD00131D) documented to reduce staleness and enable its detection;
+    cache-invalidation and data-lineage practice as the analogical ground for the bare-figure limb.
+  Challenges noted: 15b, Moderate-Strong against limb 2. Comment drift (Sutton, 2017) and documentation-
+    rot linting practice show self-documenting artefacts drift anyway, and redundant encodings can drift
+    internally when one field is updated and the other is not. The literature supports "reduces and
+    enables detection of," never "prevents."
+  Confidence: Moderate
+  Applicable to: `for_lit_search.md` and `lit_search_returns.md`, which write bare headline figures and
+    are the immediate subject of the claim; the derivation-command practice of ASSUMPTION-1575 and
+    PREMISE-207, which this premise now grounds; every run note in this estate.
+  Re-check due: 2026-12-22 (Quarterly)
+  Status: ACTIVE
+  Applied in this run: the backlog figures in the 2026-09-22 run note are published with the derivation
+    command beside them. This is the premise being used on the same day it was validated, in the file
+    that prompted it.
+
+PREMISE-212:
+  Date validated: 2026-09-22
+  Source item: PRESUMPTION-1063 (DISPOSITION-980)
+  Statement: The response to an empty work queue is a POLICY DECISION with costs and yields, not a
+    forced move. Queueing theory treats idle-period policy — stop, slow, switch to alternative work,
+    hold capacity in reserve — as an explicit design parameter that is modelled and chosen. C2A2's
+    standing default of substituting oldest-day work was never named as a choice across twenty-nine
+    runs, and an unnamed default is not a justified one. Substitution in particular is not cost-free:
+    repeated inspection by the reviewer apparatus is itself a source of corpus drift, so the substitute
+    work can manufacture the defects it then finds.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: designers were unaware)
+  Supporting evidence: queueing-theory treatment of idle-period and vacation policies as modelled design
+    parameters; Hsee, Yang & Wang (2010), "Idleness Aversion and the Need for Justifiable Busyness,"
+    *Psychological Science* 21(7) — explains why a busy-by-default policy arises and then goes
+    unexamined.
+  Challenges noted: 15b, Weak. Parkinson's Law and featherbedding literature suggest idle capacity gets
+    filled regardless, so "leave it idle" may not be a real costless alternative — which narrows the
+    choice set but does not restore the claim that there was no choice. 15b also notes the cost/yield
+    comparison methodology is well established elsewhere and simply unapplied here; that gap is carried
+    as MONITOR-614, not as a challenge to this premise.
+  Confidence: Moderate
+  Applicable to: every scheduled agent that can find its queue empty — 15a, 15b, 15c, 15d, 16, and the
+    reviewer apparatus; the substitute-cohort practice; the idle-run policy of this pipeline.
+  Re-check due: 2026-12-22 (Quarterly)
+  Status: ACTIVE
+  Note on the anthropomorphic step: the idleness-aversion evidence is about human psychology and is
+    applied to agent behaviour by analogy. The queueing-theory limb carries the premise on its own and
+    does not need the analogy; the analogy is retained only as an explanation of how the default formed.
+
+PREMISE-213:
+  Date validated: 2026-09-22
+  Source item: PRESUMPTION-1064 (DISPOSITION-981)
+  Statement: Disclosure discharges a DISCLOSURE duty and no other. Where a reporting obligation exists
+    without a resolution path, the act of declaring a breach reliably comes to stand in for fixing it:
+    repeat-disclosure counts rise, the underlying design question goes unasked, and the record of
+    candour is mistaken for a record of correction. A disclosure regime is therefore incomplete unless
+    each disclosure is bound to an owner and a decision — even a decision to accept the cost — and the
+    binding is what makes the candour load-bearing rather than ritual.
+  Item type: PRESUMPTION (unstated — surfaced by inference; extra weight: designers were unaware)
+  Supporting evidence: Cain, Loewenstein & Moore (2005), "The Dirt on Coming Clean: Perverse Effects of
+    Disclosing Conflicts of Interest," *Journal of Legal Studies*, and (2011) "When Sunlight Fails to
+    Disinfect," *Journal of Consumer Research* — disclosure can worsen the behaviour it discloses;
+    moral-licensing research on disclosure-induced licensing (*Journal of Business Ethics*, 2022);
+    disclosure-as-substitute-for-substantive-regulation in financial-regulation scholarship; safety-
+    science findings on reporting systems that accumulate unactioned reports.
+  Challenges noted: 15b's disconfirmatory search returned EMPTY — it found corroboration where it was
+    assigned to find challenge, and said so. Its only reservation, which 15a raised independently as a
+    caveat, is the transfer question: moral licensing presupposes an agent that can feel licensed, and a
+    mechanical disclosure log may not instantiate the mechanism. The premise above is therefore written
+    in terms of what the regime DOES (duty discharged, question unasked) rather than what any agent
+    feels, which does not depend on the psychological mechanism transferring.
+  Confidence: Moderate
+  Applicable to: the budget-breach disclosure practice of every agent in this estate, this run included;
+    PRESUMPTION-1055 and MONITOR-611 (disclosure-without-resolution as ritual), of which this is the
+    stronger and better-sourced statement; the standing declared-defect sections of these run notes;
+    OPEN-250; ASSUMPTION-1595 / MONITOR-613.
+  Re-check due: 2026-12-22 (Quarterly)
+  Status: ACTIVE
+  Self-application, stated because the premise requires it: this run declares a budget breach below.
+    Under PREMISE-213 that declaration discharges nothing. The breach is bound to a decision in the run
+    note — the fixed cost is named, the reducible part is named, and the design question is put to Tom
+    rather than left in the disclosure.

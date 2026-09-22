@@ -978,3 +978,50 @@ fails the from-the-thinker-themselves filter. Review page: 28 proposals. Review 
 15 responses, address-clean. Level-2 stream 1501 signals / 87 pairs / span to 2026-09-09, stale_days 12 (no
 WARN). Network unchanged: 867 PRS across 15 traditions, 135 CROSS, 90 FINDING (24 Active) — and it cannot
 change until a decision email arrives.
+
+### 2026-09-22 — Daily Run
+No decision emails (day 13 since 2026-09-09). Ledger OPEN=1, unchanged: the Wright card
+PROP-2026-08-14-033 ("Who is This God?"). **Retrieval was re-attempted this run and failed again** —
+`ntwrightpage.com/2026/07/17/...` still returns an empty body (the post is a bare media embed), and the
+Admirato / *Between Beliefs* / KSBJ trail still dead-ends. The card's own instruction ("do not ingest the
+conjectures") therefore holds, and it stays OPEN rather than being ingested or quietly closed. **0 files
+ingested — twelfth consecutive zero-ingest day.**
+
+Phase 2 swept 13 traditions (Hawkins + Hoffman deferred to their 7am Tuesday specialists, who deposited
+PROP-2026-09-22-001/-002/-003). One new proposal: **PROP-2026-09-22-004**, Sean Carroll, Mindscape 368,
+Elizabeth Alexander on *Why Democracy Needs Imagination* (2026-09-21). It is carded because Alexander's
+thesis — humanistic study produces imaginative extension to another person, and democracy depends on that
+capacity — is Carroll's own earn-its-keep question (Active 3 / 9 / 12) posed in the humanities register,
+which the wiki does not yet hold in his voice. **The card is written from the episode blurb only; no audio
+or transcript was obtained, and it says so.** The Fredrickson pairing is the reason to keep it: she
+measures the mechanism Alexander asserts.
+
+**Two Rohr meditations were found and deliberately skipped** — 09-21 "Nonviolence: An Excess of Love"
+(body is Emmanuel Katongole throughout) and 09-22 "Loyalty to Christ's Peace" (body is Jean Zaru
+throughout). Both fail the from-the-thinker-themselves filter, exactly as the 09-14 Rachel Held Evans
+meditation did. This is now three consecutive guest-authored CAC items skipped in nine days; the rule is
+being applied, not overlooked, and a future sweep should not "find" them.
+
+Strong negatives (index read, not search inference): `writings.stephenwolfram.com/recent-posts` still stops
+at 2026-08-04; `preposterousuniverse.com/podcast` September holds exactly three items, two already pending.
+The four Levin 2026 papers surfaced by search are all already held. Stump's *What are we?* was ingested
+2026-04-27. Weak negatives — McGilchrist, Kastrup, Arkani-Hamed, Fredrickson, Wright, Friston — surfaced
+only pre-window material, which is a query failing rather than a program being quiet.
+
+Review page: 33 proposals. Review Log 488 cards / 129 dates / 15 responses, address-clean. Level-2 stream
+1501 signals / 87 pairs / span to 2026-09-09, stale_days 13 (no WARN).
+
+**⚠ Infrastructure:** `regen_level2_signals.sh` failed on its first invocation — `/sessions` is at **100%
+full**, so `mktemp -d` could not create its work directory. It succeeded under `TMPDIR=/tmp`. The wrapper's
+guards behaved correctly (nothing was promoted on the failure), but a full sandbox disk will silently take
+out any phase that needs scratch space, and the workaround is a run-time flag nobody would think to set.
+
+**⚠ Count discrepancy, recorded rather than smoothed:** a raw `grep -c '^PRS-' traditions/*/prs_triplets.md`
+returns **882** (+7 in `master/C2A2_prs_triplets.md` = 889), while the provenance join in
+`refresh_review_log.sh` reports **867**, unchanged from yesterday. Both numbers are stable, so this is a
+definitional gap between the two counters, not drift — but the narrative figure carried forward since at
+least 09-11 is the provenance one, and the two have been quoted as if interchangeable. Network figures
+below use the provenance count for continuity.
+
+Network unchanged: 867 PRS (provenance) across 15 traditions, 135 CROSS, 90 FINDING (24 Active). Nothing
+can move until a decision email arrives; pending is now **33 proposals spanning 09-11 to 09-22**.

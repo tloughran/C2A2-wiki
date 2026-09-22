@@ -24324,3 +24324,157 @@ written since 2026-09-16 while intake continued for three nights, so the lane th
 currently have no consumer.** Two 15d self-defects disclosed (the MONITOR-600 cadence error, the
 MONITOR-606 date override) and one reported-but-unmade write surfaced (three premise `Re-check due`
 advances). Queue state current as of 2026-09-20.
+
+
+================================================================================
+## 2026-09-21 — 15c MONITOR batch (2 items) + empirical-lane routing (4 items)
+
+MONITOR-611:
+  Date entered: 2026-09-21
+  Source item: PRESUMPTION-1055 (DISPOSITION-974) | Item type: PRESUMPTION (unstated)
+  Statement under watch: Mandated disclosure without a resolution path converts into ritual —
+    repeat-disclosure counts rise while fix rates do not.
+  Why contested: strong support from alarm-fatigue literature (signals to an operator expected to act
+    now) against a strong counterexample from ASRS (reports to a register analysed later — fifty years,
+    mostly unactioned per report, the most-cited success in safety reporting). C2A2's disclosures are the
+    second kind, and the metric the item proposes would have scored ASRS as ritual.
+  What would change the disposition: the distinct-defect count. Count defects disclosed three or more
+    times across runs without reaching a disposition, and their median age. Short and young -> retire.
+    Long and old -> REVISE, with the remedy already written: keep the disclosure obligation, count
+    distinct unresolved defects rather than disclosure events, and escalate on streak length rather than
+    suppressing.
+  Cadence: Weekly | Priority: High
+  Standing rule adopted from this item's 15b steelman, effective immediately: **a defect disclosed
+  repeatedly without resolution is escalated to the human queue on streak length, not returned to the
+  watch list.** Applied this run to ASSUMPTION-1571 (-> REVISE-481).
+
+MONITOR-612:
+  Date entered: 2026-09-21
+  Source item: PRESUMPTION-1057 (DISPOSITION-975) | Item type: PRESUMPTION (unstated)
+  Statement under watch: The 223-day lag is a discovery-channel failure, not a coverage failure; pair
+    enumeration may not address it.
+  Why held rather than dispositioned: this item and ASSUMPTION-1561 are two halves of one question and a
+    single experiment scores both. The channel diagnosis is strongly supported (2.5x collaborator
+    citation bias, arXiv:2605.29234); the channel/coverage dichotomy is challenged, since adding an
+    enumerative channel is the standard correction for channel bias.
+  What would change the disposition: the back-test under REVISE-480, with venues recorded. Events
+    clustering in few venues -> INCORPORATE (the enumeration is keyed on the wrong axis). Events
+    scattering -> retire.
+  Cadence: **BOUND TO REVISE-480. Not weekly.** Do not re-read this item on the weekly cycle; re-read it
+    when the back-test returns. Recorded this way deliberately: a weekly re-read of an item waiting on a
+    named experiment is the disclosure-without-resolution pattern MONITOR-611 is about.
+  Priority: High
+
+--------------------------------------------------------------------------------
+### Empirical-lane routing, 2026-09-21 — 4 items, no literature owed
+
+14a/14b flagged these at intake as in-house measurement with no literature debt. 15a and 15b did not
+search them and no search is owed. They are recorded here so that they are not left in an ambiguous
+state, and so the lane they are in is visible — but note that this lane has no consumer agent, which is
+the substance of the Critical systemic-risk flag raised this run.
+
+  ASSUMPTION-1575 — headline counts depend on unstated counting methods; publishing the derivation
+    command alongside the figure removes the class of defect. Test: re-derive three headline counts by
+    each candidate method and compare. Ties to PREMISE-207.
+  PRESUMPTION-1058 — attribution drift in standing CROSS claims is unmeasured; CROSS-008's
+    misattribution persisted across three sources and was caught by accident. Test: sample n of the 135
+    CROSS ids, check each against its cited source, report the rate. **14b marked this the highest-value
+    item in the intake and 15c concurs** — it bears on whether the accelerator's principal output count
+    is interpretable, and it is the population-level version of the single case now flagged as REVISE-479.
+  PRESUMPTION-1059 — `open-story.db` growth to 7.0 GB is unowned. Test: plot DB size over 90 days;
+    identify whether any threshold or retention policy exists. Ties to OPEN-244.
+  PRESUMPTION-1060 — the `ASSUMPTION (stated)` marker has been applied to agent self-reports for
+    twenty-one consecutive days, collapsing the protocol's designer-aware / inferred distinction. Test:
+    count how many of the last 21 days' ASSUMPTION items trace to designer speech; the `Source:` lines
+    carry the data. **Routed also to OPEN-245 — needs Tom, not a search.** 15c note: if this is right,
+    the item-type field in every provenance header for three weeks is unreliable, which would weaken the
+    epistemic-weighting distinction the protocol is built on, including in this run's own dispositions.
+
+--------------------------------------------------------------------------------
+## 2026-09-22 — intake from the 15a/15b/15c run (2026-09-21 EOD cohort)
+
+MONITOR-613:
+  Date: 2026-09-22
+  Source item: ASSUMPTION-1595 (DISPOSITION-976)
+  Item type: ASSUMPTION (stated)
+  Claim: A guideline breached by every instance of a task class, always for the same stated reason, no
+    longer distinguishes necessary cost from thrash.
+  15a: SUPPORTED (Moderate) — alarm-fatigue and threshold-calibration literature (Cvach 2012, *Biomed
+    Instrum Technol* 46(4)) treats a threshold crossed on nearly every instance as a calibration
+    failure; Goodhart's Law gives the generic form.
+  15b: PARTIALLY-CHALLENGED (Moderate) — Vaughan (1996) on normalization of deviance. Uniform, same-
+    excuse breach is ALSO the signature of a real limit being tolerated away. Both explanations fit the
+    same five instances exactly.
+  Why MONITOR and not INCORPORATE: the two readings are observationally equivalent on the evidence
+    available, and they recommend opposite actions — relax the guideline, or enforce it harder. The
+    literature cannot break the tie because the tie is about this estate's particular costs. Acting on
+    the stale-guideline reading alone, on breach-rate evidence alone, is the O-ring inference.
+  What would change the disposition: the in-house measurement 14a already named — measure the FIXED read
+    cost of a six-pair review in one run, then decompose today's breaches into that floor plus the
+    remainder. If the floor is at or above the guideline, the guideline is miscalibrated and this goes
+    to INCORPORATE. If the floor is well below and the overage is re-reads, re-derivations and
+    corrections, it is thrash and this goes to REVISE with the guideline intact. One instrumented run.
+  Monitoring cadence: Weekly
+  Priority: High — five instances in one day, and it is the live question behind OPEN-250.
+  Bound to: PREMISE-213 and PRESUMPTION-1064 (the disclosure half of the same problem); OPEN-250.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status MONITORING.
+
+MONITOR-614:
+  Date: 2026-09-22
+  Source item: PRESUMPTION-1063 (DISPOSITION-980) — the second limb; limb 1 is PREMISE-212
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Claim: the costs and yields of substituting oldest-day work for an empty queue have never been set
+    against each other.
+  Why MONITOR: PREMISE-212 settles that the substitution is a choice. Whether it is the RIGHT choice is
+    an in-house comparison that has not been run, and 15b's contribution was to note that the
+    methodology for running it is well established and simply unapplied here. That is a measurement
+    gap, not a literature gap, so no further search is owed.
+  The comparison, specified: reviewer-apparatus contribution to corpus drift (104 of 307 files outside
+    +/-25%, 73 of them self-attributing to the reviewer apparatus) set against substitute-cohort defect
+    yield (~5 defects per 6 days at the currently observed rate). Both numbers already exist. This is
+    an arithmetic comparison, not a new study.
+  What would change the disposition: if substitute work yields fewer defects than the drift it
+    introduces, REVISE the idle-run policy. If more, INCORPORATE the substitution as justified rather
+    than merely habitual.
+  Monitoring cadence: Weekly
+  Priority: Medium
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status MONITORING.
+
+--------------------------------------------------------------------------------
+### Empirical-lane routing, 2026-09-22 — 5 items, no literature owed
+
+14b flagged these at intake as in-house measurement with no literature debt. 15a and 15b did not search
+them and none is owed; they are tagged [NO-LIT-OWED: 2026-09-22] in `for_lit_search.md`. They are
+recorded here so they are not left ambiguous. **This lane still has no consumer agent** — PRESUMPTION-1069
+of the same cohort says so in as many words, and the Critical flag of 2026-09-16 and 2026-09-21 is about
+exactly this. Adding five more items to an inbox with no worker is what this run is doing, and it is
+recorded rather than left to be discovered.
+
+  PRESUMPTION-1061 — the sandbox scratch failure is a standing condition, not weather, and no mechanism
+    exists for remembering a diagnosis across agents. Test: count recurrences over 90 days from run
+    reports; grep every register for the verified block-quota diagnosis. Ties OPEN-244, OPEN-248.
+  PRESUMPTION-1062 — no check asserts that a scheduled session produced a final report. A run that
+    writes nothing is caught by PREMISE-208; a run that REPORTS nothing is caught by nothing. Test: one
+    assertion per scheduled session that a final message exists, over 30 days of transcripts. **One
+    line.** Ties OPEN-247, OPEN-249(a). 15c note: this is the cheapest item in the cohort by a wide
+    margin and it closes a gap in a premise validated yesterday.
+  PRESUMPTION-1065 — id-matching patterns in agent scripts are not checked against the conventions of
+    the files they read. Test: one grep pair. Restates PRESUMPTION-1053, queued 09-20 and not run.
+  PRESUMPTION-1066 — eleven consecutive zero-ingest days rest on unbounded negative results; at least
+    one "nothing there" was "nothing reachable." Test: require a coverage line per tradition sweep and
+    compare eleven days of zero-ingest against the retrieval-blocked routes named in the same period.
+  PRESUMPTION-1068 — growth-without-retention is one property of the estate, not six local problems;
+    four ceilings hit in one day, three of them hard stops. Test: plot 90-day size for the six named
+    stores and identify which have any rotation or retention policy. Ties OPEN-244, PRESUMPTION-1059.
+
+  **Carried alongside, not routed here:** ASSUMPTION-1600's in-house test — re-run the 2026-09-16 tail
+  probe with cardinal-word article forms against the same controls. PREMISE-210 validated the principle
+  and does NOT discharge the measurement. Until it runs, the tail totals, the region map and the "no
+  control exists anywhere in the tail" claim stand on an instrument that PREMISE-210 says is unvalidated
+  in precisely the region at issue.
+
+  **Not routed to any search lane:** PRESUMPTION-1069 (Critical) — no agent in the twenty-agent network
+  is assigned to run an in-house measurement; 14a/14b route, 15a/15b search, 15c dispositions, 15d
+  re-triggers, 16 monitors deferrals, and none measures. 14b routed it to OPEN-249(b) as needing Tom.
+  15c concurs and adds only this: it is the structural explanation for every item in the paragraphs
+  above, and it cannot be closed by the network that surfaced it.

@@ -1636,3 +1636,76 @@ qc_trace.csv date-only change, not promoted.
 
 **Twelve days without a decision.** 28 proposals now span 09-11 to 09-21. The sweep is healthy and
 self-limiting (one card today, because thirteen traditions genuinely had nothing new). The queue is not.
+
+---
+
+## 2026-09-22 — C2A2 daily run
+
+**Phase 0: no decision emails.** Gmail `subject:[C2A2-review-decision] newer_than:3d` returned `{}`.
+Day 13 since the 2026-09-09 batch.
+
+**Phase 1: 0 files processed.** `scripts/ingest_ledger.py wiki`: approved total=414, ingested=382,
+decided-zero=30, **OPEN=1** — `PROP-2026-08-14-033` (Wright, "Who is This God?"). Retrieval was
+re-attempted this run and failed again: `ntwrightpage.com/2026/07/17/n-t-wright-who-is-this-god/` returns
+an empty body (bare media embed), and the Admirato / *Between Beliefs* / KSBJ trail dead-ends exactly as
+the card's own caveat records. The card instructs "do not ingest the conjectures," so it stays OPEN rather
+than being ingested or quietly closed. Twelfth consecutive zero-ingest day.
+
+**Phase 2: 1 proposal written.** Hawkins + Hoffman skipped — the Tuesday 7am specialists had already
+deposited PROP-2026-09-22-001/-002/-003. Thirteen other traditions swept.
+
+New card: **PROP-2026-09-22-004** — Sean Carroll, Mindscape 368, *Elizabeth Alexander on Why Democracy
+Needs Imagination* (2026-09-21). Carded because Alexander's thesis (humanistic study produces imaginative
+extension to another person; democratic functioning depends on that capacity) is Carroll's own
+earn-its-keep question — Active 3 / 9 / 12 — posed in the humanities register, which the wiki does not yet
+hold in his voice. **Written from the published blurb only; no audio or transcript obtained, stated
+fail-loud in the file.** Primary cross-tradition target is Fredrickson, who measures the mechanism
+Alexander asserts.
+
+**Two Rohr meditations found and deliberately skipped.** 09-21 "Nonviolence: An Excess of Love" (body is
+Emmanuel Katongole throughout) and 09-22 "Loyalty to Christ's Peace" (body is Jean Zaru throughout). Both
+fail Phase 2's *must be from the thinker themselves* filter, the same call made on the 09-14 Rachel Held
+Evans meditation. Three guest-authored CAC items skipped in nine days — recording this explicitly so a
+future sweep does not "find" them.
+
+**Negatives, graded.** Strong (index read, not search inference): `writings.stephenwolfram.com/recent-posts`
+still stops at 2026-08-04; `preposterousuniverse.com/podcast` September holds exactly three items, two
+already pending; the four Levin 2026 papers surfaced by search are all already held (FLIM long-distance
+patterns, top-down membrane potential, bioelectrical interfaces, artificial experimentalist); Stump's
+*What are we?* was ingested 2026-04-27. Weak (query surfaced only pre-window material, which is a query
+failing, not a quiet program): McGilchrist, Kastrup, Arkani-Hamed, Fredrickson, Wright, Friston.
+
+**Phase 3.** `review/2026-09-22_review.html` (363,072 bytes, **33 proposals**). Auto-open unavailable —
+no macOS `open` in the sandbox. Path is in the digest.
+
+**Phase 4.** Digest draft `r7852166629139066116` to thomas.loughran@gmail.com, leading with the 13-day
+review gap and carrying both infrastructure flags.
+
+**Phase 5.** `review/2026-09-19_review.html` moved to `review/_superseded/` (`rm` blocked on the mount).
+09-20/21/22 retained.
+
+**Phase 5.5.** `refresh_review_log.sh` OK — 6,550,651 bytes; cards **488** (+5), dates 129, responses 15;
+17 addresses scrubbed; grep confirms address-clean. Provenance: triplets=867 A=761 B=17 C=75 D=14,
+approved_files=356, reverse_gap=115 (unchanged).
+
+**Phase 5.6.** `regen_level2_signals.sh` — **failed on first invocation**, then OK under `TMPDIR=/tmp`.
+Coverage gate PASS 379/379; 1501 signals, 87 pairs, 2026-04-03 -> 2026-09-09, stale_days **13** (under the
+21-day threshold, no WARN line to quote); qc_trace.csv date-only change, not promoted.
+
+**⚠ `/sessions` is at 100% disk.** That is why `mktemp -d` failed — the wrapper could not create its work
+directory. Its guards behaved correctly (nothing promoted on the failure), but a full sandbox disk will
+take out any phase needing scratch space, and `TMPDIR=/tmp` is a run-time flag nobody would think to set.
+Worth a standing fix rather than a daily workaround.
+
+**⚠ Count discrepancy, recorded rather than smoothed.** `grep -c '^PRS-' traditions/*/prs_triplets.md`
+returns **882** (+7 in `master/C2A2_prs_triplets.md` = 889); the provenance join in `refresh_review_log.sh`
+returns **867**, unchanged from yesterday. Both are stable across runs, so this is a definitional gap
+between two counters, not drift — but the narrative figure carried since at least 09-11 is the provenance
+one and the two have been quoted interchangeably. Reports continue to use 867 for continuity.
+
+**Phase 6.** No git commands run (per the 2026-09-16 SKILL change). Commit deferred to
+`scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network:** 867 PRS (provenance) across 15 tradition files, **135** distinct CROSS ids, **90** distinct
+FINDING ids (24 `Status: Active`). Frozen since 09-11, correctly. Pending now **33 proposals spanning
+09-11 to 09-22**.
