@@ -152,6 +152,33 @@
       "mode": "find"
     },
     {
+      "verb": "also",
+      "dim": "cut",
+      "op": "union",
+      "args": "text",
+      "kind": "value",
+      "inverse": "@journal",
+      "_note": "composes with the standing cut: find X, then also Y. See parseCutExpr in c2a2-commandline.js."
+    },
+    {
+      "verb": "except",
+      "dim": "cut",
+      "op": "diff",
+      "args": "text",
+      "kind": "value",
+      "inverse": "@journal",
+      "_note": "composes with the standing cut: find X, then except Y. See parseCutExpr in c2a2-commandline.js."
+    },
+    {
+      "verb": "within",
+      "dim": "cut",
+      "op": "intersect",
+      "args": "text",
+      "kind": "value",
+      "inverse": "@journal",
+      "_note": "composes with the standing cut: find X, then within Y. See parseCutExpr in c2a2-commandline.js."
+    },
+    {
       "verb": "clear",
       "dim": "cut",
       "op": "null",

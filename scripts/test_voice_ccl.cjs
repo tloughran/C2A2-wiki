@@ -569,7 +569,7 @@ check('plan: every SOCIOGRAM_CAPS verb yields a plan, never unsupported_here', f
     summarize: 'summarize',
     show: 'show levin', hide: 'hide levin', only: 'only levin',
     all: 'all', none: 'none', open: 'open ' + DEST.nodes[0].id.replace(/\.md$/, ''), close: 'close',
-    find: 'find x', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
+    find: 'find x', also: 'also y', except: 'except z', within: 'within w', clear: 'clear', focus: 'focus levin ~ friston', fit: 'fit',
     undo: 'undo', redo: 'redo', reset: 'reset', restore: 'restore', what: 'what', where: 'where', help: 'help',
   };
   for (const verb of CCL.SOCIOGRAM_CAPS) {
@@ -964,6 +964,62 @@ check('guess: the plan carries the assumption up to the speaker', function () {
   assert.strictEqual(p.guesses.length, 1);
   assert.strictEqual(p.guesses[0].chose, 'summa');
   assert.strictEqual(p.guesses[0].term, 'su');
+});
+
+// ---- composable cuts + verify (2026-09-22, Tom: "cannot retain one cut on
+// data and add or subtract another, nor notice that it failed") -------------
+// WHY these rows matter: before this, every `find` REPLACED the last, so the
+// only way to say "keep X, add Y" was to lose X. Each row below fails if the
+// cut stops composing, or if a step that did nothing can pass in silence.
+const IDX = { levin: ['a', 'b', 'c'], friston: ['c', 'd'], summa: ['b', 'x'], nothing: [] };
+const fakeFind = function (t) { return IDX[t] || []; };
+check('cut: "X also Y except Z" is union then difference, left to right', function () {
+  const terms = CCL.parseCutExpr('levin also friston except summa');
+  assert.deepStrictEqual(terms.map(function (t) { return t.op; }), ['set', 'union', 'diff']);
+  const r = CCL.composeCut(terms, fakeFind);
+  assert.deepStrictEqual(r.ids.sort(), ['a', 'c', 'd']);
+});
+check('cut: "within" intersects -- narrowing never adds', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('levin within friston'), fakeFind);
+  assert.deepStrictEqual(r.ids, ['c']);
+});
+check('cut: a plain search is ONE term, unchanged from before', function () {
+  const terms = CCL.parseCutExpr('free energy principle');
+  assert.strictEqual(terms.length, 1);
+  assert.strictEqual(terms[0].text, 'free energy principle');
+});
+check('cut: a step that changed nothing is REPORTED, not passed over', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('friston except summa also nothing'), fakeFind);
+  const probs = CCL.cutStepProblems(r.steps);
+  assert.ok(probs.some(function (p) { return /except "summa" removed nothing/.test(p); }), probs.join(' | '));
+  assert.ok(probs.some(function (p) { return /"nothing" matched nothing/.test(p); }), probs.join(' | '));
+});
+check('cut: a composition where every step acted reports no problems', function () {
+  const r = CCL.composeCut(CCL.parseCutExpr('levin also friston except summa'), fakeFind);
+  assert.deepStrictEqual(CCL.cutStepProblems(r.steps), []);
+});
+check('plan: also/except/within are relative verbs routed to the shell as compose', function () {
+  const p = planCmd('except summa');
+  assert.strictEqual(p.ok, true);
+  assert.strictEqual(p.action, 'compose');
+  assert.strictEqual(p.op, 'diff');
+  assert.strictEqual(p.text, 'summa');
+});
+check('verify: drawn == intended passes; an extra or a missing node fails loudly', function () {
+  assert.strictEqual(CCL.verifyDrawn(['a', 'b'], ['a', 'b'], ['a', 'b', 'c']).ok, true);
+  const v = CCL.verifyDrawn(['a', 'b'], ['a', 'c'], ['a', 'b', 'c']);
+  assert.strictEqual(v.ok, false);
+  assert.strictEqual(v.extra, 1);
+  assert.strictEqual(v.missing, 1);
+  // a node the page never rendered is not "missing" -- it was never drawable
+  assert.strictEqual(CCL.verifyDrawn(['a', 'z'], ['a'], ['a', 'b']).ok, true);
+});
+check('verify: a filter read-back that disagrees with what was written is named', function () {
+  assert.strictEqual(CCL.verifyFilters({ levin: true, friston: false }, { levin: true, friston: false }).ok, true);
+  const v = CCL.verifyFilters({ levin: true }, { levin: false });
+  assert.strictEqual(v.ok, false);
+  assert.ok(/levin should be on but is off/.test(v.problems[0]));
+  assert.strictEqual(CCL.verifyFilters({ levin: true }, null).ok, false);
 });
 
 // ---- report -----------------------------------------------------------------

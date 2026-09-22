@@ -305,6 +305,7 @@ function runCmd(page, cmd) {
     // inView is the CAMERA count -- the only field a claim about visibility may
     // rest on. Carried separately from `shown` precisely because they disagree.
     "         inView: (r && typeof r.inView === 'number') ? r.inView : null," +
+    "         verify: (r && r.verify) || null," +
     "         total: (r && typeof r.total === 'number') ? r.total : null, bar: el ? el.textContent : null, cls: el ? el.className : null };"
   );
 }
@@ -2550,6 +2551,37 @@ async function main() {
   // this row is PENDING on tab 1 rather than patched on the scrape road.
   record('X9a2 a no-match search says nothing matched (pending: Sociogram contract, tab 1)',
     /nothing matched/.test(bareNo.spoken || ''), bareNo.spoken);
+  // ---- Phase Y: composable cuts + verify-after-action (2026-09-22) ---------
+  // WHY: Tom's 15-minute test -- the guide "cannot retain one cut on data and
+  // add or subtract another, nor notice that it failed". Each row fails if a
+  // second search REPLACES the first, if a no-op step passes silently, or if
+  // the count spoken disagrees with what the page actually draws.
+  process.stdout.write('\nPhase Y -- composable cuts, verified\n');
+  const undone_ok = function (r) { return !!(r && r.ok && /undid \(cut\)/.test(r.spoken || '')); };
+  const nOf = function (r) { const m = /\|\s+(\d+) nodes shown/.exec((r && r.spoken) || ''); return m ? +m[1] : -1; };
+  const drawnN = async function () { return await page.eval(IFRAME_DOC + "var n=0, cs=d.querySelectorAll('.node-circle'); for (var i=0;i<cs.length;i++){ if(!cs[i].classList.contains('ccl-cut')) n++; } return n;"); };
+  await runCmd(page, 'clear');
+  const y1 = await runCmd(page, 'find levin');
+  const y2 = await runCmd(page, 'also friston');
+  record('Y1 also ADDS to the standing cut instead of replacing it', nOf(y2) > nOf(y1) && nOf(y1) > 0 && /levin also friston/.test(y2.spoken || ''), nOf(y1) + ' -> ' + nOf(y2) + ' | ' + y2.spoken);
+  record('Y1a the spoken count is what the page draws (read off the DOM)', (await drawnN()) === nOf(y2), 'drawn ' + (await drawnN()) + ' vs said ' + nOf(y2));
+  const y3 = await runCmd(page, 'except levin');
+  record('Y2 except SUBTRACTS from the standing cut', nOf(y3) > 0 && nOf(y3) < nOf(y2) && !/CHECK/.test(y3.spoken || ''), y3.spoken);
+  const y4 = await runCmd(page, 'undo');
+  const j4 = await page.eval("return JSON.stringify(window.CCLJournalTop ? window.CCLJournalTop() : null);");
+  record('Y3 undo steps back one composition, not to nothing', undone_ok(y4) && (await drawnN()) === nOf(y2), 'drawn ' + (await drawnN()) + ' | ' + (j4 || '').slice(0, 120));
+  const y5 = await runCmd(page, 'except xyzzy-nothing');
+  record('Y4 a step that did nothing is SAID, with the reason', /CHECK: .*"xyzzy-nothing" matched nothing/.test(y5.spoken || '') && y5.verify && y5.verify.ok === false, y5.spoken);
+  await runCmd(page, 'undo');
+  const y6 = await runCmd(page, 'hide levin');
+  const w6 = await runCmd(page, 'what');
+  record('Y5 hiding a group KEEPS the search cut and says so', /kept/.test(y6.spoken || '') && /cut to \d+/.test(w6.spoken || ''), y6.spoken + ' || ' + w6.spoken);
+  await runCmd(page, 'all');
+  await runCmd(page, 'clear');
+  const y7 = await runCmd(page, 'within friston');
+  record('Y6 with nothing cut, within/except refuse plainly instead of cutting to empty', !y7.ok && /no search cut is standing/.test(y7.spoken || ''), y7.spoken);
+  await runCmd(page, 'clear');
+
   await activateTab(page, 'metabolism/metabolism_view.html'); await sleep(4000);
   const bareOff = await runCmd(page, 'levin');
   record('X9b on a view without find, a bare string is still an unknown command', /Unknown command/.test(bareOff.spoken || ''), bareOff.spoken);

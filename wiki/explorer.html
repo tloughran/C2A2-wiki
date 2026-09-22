@@ -2543,6 +2543,12 @@ var VoiceGuide = (function() {
             // model keying off `ok` alone would confirm success over an empty
             // graph (2026-07-25: it did, twice, and was believed).
             var out = { ok: r.ok, command: cmd, did: r.spoken };
+            // VERIFY-AFTER-ACTION rides out as data: the shell read the view
+            // back and it does not match the request. The model must say so.
+            if (r.verify && !r.verify.ok) {
+              out.verify_failed = r.verify.problems;
+              out.warning = 'THE VIEW DOES NOT FULLY MATCH THE REQUEST: ' + r.verify.problems.join('; ') + '. Say this plainly, then fix it or ask.';
+            }
             if (typeof r.shown === 'number') {
               out.shown = r.shown;
               out.total = r.total;
@@ -2812,7 +2818,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=69c4c63e43"></script>
+<script src="lib/c2a2-commandline.js?v=be299f61c7"></script>
 <script>
 (function () {
   'use strict';
@@ -3373,6 +3379,30 @@ var VoiceGuide = (function() {
     return null;
   }
   function readCut() { return cutIds ? { ids: cutIds.slice(), query: cutQuery } : null; }
+  // A cut query may be an EXPRESSION ("levin also friston except summa"); the
+  // engine splits and composes it, the tab answers each term. With more than
+  // one term the tab has lit only its LAST term, so its own lighting is reset
+  // and the shell's cut (hide + frame) is the single truth on screen.
+  function evalCutExpr(api, expr) {
+    var terms = CL.parseCutExpr(expr);
+    var res = CL.composeCut(terms, function (t) { var r = api.c2a2Find(t); return (r && r.ids) ? r.ids : []; });
+    if (terms.length > 1) { try { api.c2a2Clear(); } catch (e) { /* the cut still holds */ } }
+    return res;
+  }
+  // VERIFY AFTER THE ACTION: read what the page actually draws back off the
+  // DOM and compare it with the cut we meant. Returns the engine's verdict.
+  function verifyCutNow() {
+    var d = ifDoc(), w = ifWin();
+    if (!d || !w) { return { ok: false, problems: ['the view could not be read back'] }; }
+    var cs = d.querySelectorAll('.node-circle'), drawn = [], dom = [], i;
+    for (i = 0; i < cs.length; i++) {
+      var dat = datumOf(w, cs[i]);
+      if (!dat || !dat.id) { continue; }
+      dom.push(dat.id);
+      if (!cs[i].classList.contains('ccl-cut')) { drawn.push(dat.id); }
+    }
+    return CL.verifyDrawn(cutIds || dom, drawn, dom);
+  }
   // The cut the shell ENFORCES (hide + frame) is the same on both roads; what
   // differs is where the id set comes from. Contract road: a query is REPLAYED
   // through the tab and the ids are taken from its fresh answer -- if the tab's
@@ -3385,8 +3415,8 @@ var VoiceGuide = (function() {
     if (api) {
       try {
         if (value && value.query) {
-          var rr = api.c2a2Find(value.query);
-          value = { ids: (rr && rr.ids) ? rr.ids : [], query: value.query };
+          var rr = evalCutExpr(api, value.query);
+          value = { ids: rr.ids, query: value.query };
         } else if (!value || !value.ids) { api.c2a2Clear(); value = null; }
       } catch (e) { value = null; }
     }
@@ -5016,21 +5046,47 @@ var VoiceGuide = (function() {
         journal.record(TAB, { dim: 'cut', before: before, after: null });
         return show('clear', 'ok');
       }
-      var r = null;
-      try { r = api.c2a2Find(p.text); } catch (e) { return show('find failed here: ' + (e && e.message || e), 'err'); }
-      var rids = (r && r.ids) ? r.ids.slice() : [];
+      // `also / except / within` extend the STANDING cut's expression. With no
+      // cut standing, `also` is just a find; the other two have nothing to act
+      // on, and saying so beats silently cutting to an empty graph.
+      var expr = p.text;
+      if (p.action === 'compose') {
+        if (before && before.query) { expr = before.query + ' ' + p.verb + ' ' + p.text; }
+        else if (p.op !== 'union') {
+          return show(p.verb + ' "' + p.text + '"  |  no search cut is standing, so there is nothing to ' +
+                      (p.op === 'diff' ? 'subtract from' : 'narrow') + '. Start with find.', 'err');
+        }
+      }
+      var ev = null;
+      try { ev = evalCutExpr(api, expr); } catch (e) { return show('find failed here: ' + (e && e.message || e), 'err'); }
+      var rids = ev.ids.slice();
+      var stepProbs = CL.cutStepProblems(ev.steps);
+      var trail = CL.describeCutSteps(ev.steps);
       if (!rids.length) {
         writeCut(null);
         journal.record(TAB, { dim: 'cut', before: before, after: null });
-        return show('find "' + p.text + '"  |  nothing matched -- nothing cut', 'err');
+        var none = show('find "' + expr + '"  |  nothing matched -- nothing cut' + (trail ? '  (' + trail + ')' : '') +
+                        (stepProbs.length ? '  |  ' + stepProbs.join('; ') : ''), 'err');
+        none.verify = { ok: false, problems: stepProbs.length ? stepProbs : ['nothing matched'] };
+        return none;
       }
-      var rval = { ids: rids, query: p.text };
+      var rval = { ids: rids, query: expr };
       // Enforce without a second round trip: the ids are already in hand.
-      cutIds = rids.slice(); cutQuery = p.text; applyCut();
+      cutIds = rids.slice(); cutQuery = expr; setSearch(ev.steps.length > 1 ? expr : cutQuery); applyCut();
       [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); });
       journal.record(TAB, { dim: 'cut', before: before, after: rval });
-      var rcount = (typeof r.count === 'number') ? r.count : rids.length;
-      return show('find "' + p.text + '"  |  ' + rcount + ' ' + (r.label || 'nodes shown') + frameSuffix(), 'ok');
+      var vr = verifyCutNow();
+      var probs = stepProbs.concat(vr.problems || []);
+      var res = show('find "' + expr + '"  |  ' + rids.length + ' nodes shown' + (trail ? '  (' + trail + ')' : '') + frameSuffix() +
+                     (probs.length ? '  |  CHECK: ' + probs.join('; ') : ''), 'ok');
+      res.verify = { ok: !probs.length, problems: probs };
+      res.shown = rids.length;
+      return res;
+    }
+    // Composition needs the tab to answer ONE term at a time; the scrape road
+    // can only read the whole page's lighting. Say so rather than fake it.
+    if (p.action === 'compose' || CL.parseCutExpr(p.text || '').length > 1) {
+      return show('combining searches (also / except / within) is not available on this view yet -- it needs the tab\'s find contract', 'err');
     }
     if (p.action === 'clear') {
       writeCut(null);
@@ -5071,7 +5127,13 @@ var VoiceGuide = (function() {
     // gets its OWN journal entry: undo steps back through cut-then-filter
     // exactly, instead of silently dropping the cut along the way.
     var priorCut = readCut();
-    if (priorCut) {
+    // SUBTRACTING a group keeps the cut: hiding can only remove nodes, so the
+    // cut cannot hide anything the user now means to see (2026-09-22 -- "keep
+    // my search, drop Levin" used to lose the search). Adding groups still
+    // releases it, and the result line says so.
+    var keepCut = !!priorCut && (p.action === 'diff' || p.action === 'none');
+    var releasedCut = !!priorCut && !keepCut;
+    if (priorCut && !keepCut) {
       writeCut(null);
       journal.record(TAB, { dim: 'cut', before: priorCut, after: null });
     }
@@ -5103,7 +5165,11 @@ var VoiceGuide = (function() {
       else { target = Object.assign({}, before); for (x = 0; x < p.keys.length; x++) { target[p.keys[x]] = (p.action === 'union'); } }
       writeDim('filters', target);
     }
-    journal.record(TAB, { dim: 'filters', before: before, after: readDim('filters') });
+    var afterF = readDim('filters');
+    journal.record(TAB, { dim: 'filters', before: before, after: afterF });
+    // VERIFY: the page's own filter state, read back, must equal what we wrote.
+    var vf = target ? CL.verifyFilters(target, afterF) : { ok: true, problems: [] };
+    if (keepCut) { applyCut(); [120, 400, RESETTLE_MS, 1800].forEach(function (ms) { setTimeout(function () { if (cutIds) { applyCut(); } }, ms); }); }
     var on = onGroups(), extra = (p.unresolved && p.unresolved.length) ? ('  (unresolved: ' + p.unresolved.join(', ') + ')') : '';
     // Lead with what the graph SHOWS. An empty result is stated plainly rather
     // than dressed as a successful filter change -- the user asked to see
@@ -5131,7 +5197,10 @@ var VoiceGuide = (function() {
     var fSumF = filterSummary();
     var body = fSumF ? (fSumF + '  |  ' + itemsPhrase(n ? n.shown : activeItems().length))
                      : (on.length + ' groups on: ' + on.join(', '));
-    var res = show(hedge + head + p.action + ' -> ' + body + viewSuffix() + framed + extra, 'ok');
+    var cutNote = keepCut ? '  (search cut "' + (priorCut.query || 'focus') + '" kept)' : (releasedCut ? '  (search cut released: adding groups)' : '');
+    var res = show(hedge + head + p.action + ' -> ' + body + viewSuffix() + framed + extra + cutNote +
+                   (vf.ok ? '' : '  |  CHECK: ' + vf.problems.join('; ')), 'ok');
+    res.verify = vf;
     // The counts ride on the RESULT OBJECT too, not only inside the prose, so
     // the voice tool output can carry them as data the model must relay. A
     // spoken confirmation should never be able to outrun the render.
@@ -5861,8 +5930,11 @@ var VoiceGuide = (function() {
     var findLine = '';
     // 1. Light matches on this page -- the journaled, undoable CCL `find`.
     try {
-      var r = (typeof window.CCLRun === 'function') ? window.CCLRun('find ' + q) : null;
-      if (r && r.ok && r.spoken) { findLine = r.spoken; }
+      // A box entry that opens with a connective extends the standing cut.
+      var fcmd = /^(also|except|within)\s+\S/i.test(q) ? q : 'find ' + q;
+      var r = (typeof window.CCLRun === 'function') ? window.CCLRun(fcmd) : null;
+      // Failures are shown too: "nothing matched" is an answer the user needs.
+      if (r && r.spoken) { findLine = r.spoken; }
     } catch (e) { /* the answer still comes */ }
     var findHtml = findLine ? '<span class="ask-find">On this page: ' + esc(findLine) + '</span>' : '';
     var file = pageFile(), key = KNOWLEDGE.hasOwnProperty(file) ? KNOWLEDGE[file] : null;

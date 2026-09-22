@@ -649,7 +649,7 @@
     'go', 'back',
     'show', 'hide', 'only', 'all', 'none',
     'open', 'close',
-    'find', 'clear', 'focus',
+    'find', 'also', 'except', 'within', 'clear', 'focus',
     'fit', 'zoom', 'pan',
     'pick', 'next', 'previous',
     'read', 'stop', 'summarize',
@@ -775,6 +775,10 @@
 
       case 'find':
         return { ok: true, kind: 'highlight', action: 'find', text: op.args[0], journal: { dim: 'highlight' } };
+      // Relative to the cut already standing: the shell joins the current
+      // expression with this connective and re-evaluates the whole thing.
+      case 'also': case 'except': case 'within':
+        return { ok: true, kind: 'highlight', action: 'compose', verb: op.verb, op: CUT_OPS[op.verb], text: op.args[0], journal: { dim: 'highlight' } };
       case 'clear':
         return { ok: true, kind: 'highlight', action: 'clear', journal: { dim: 'highlight' } };
       case 'focus': {
@@ -871,6 +875,97 @@
     }
   }
 
+  // ---- COMPOSABLE CUTS (2026-09-22) ----------------------------------------
+  //
+  // Tom, after fifteen minutes with the guide: it "cannot retain one cut on data
+  // and add or subtract another, nor notice that it failed". The first half was
+  // the GRAMMAR: `show/hide/only` compose over groups, but every `find` replaced
+  // the last, so "keep X, add Y, drop Z" had no correct expression at all. A cut
+  // is now an EXPRESSION -- `X also Y except Z within W`, read left to right as
+  // union / difference / intersection -- and the expression string is what the
+  // journal stores as the cut's query. Undo and replay re-evaluate it through
+  // the tab, so the tab still owns what each term matches.
+  //
+  // The connectives are whole words between spaces. A search that genuinely
+  // contains "also", "except" or "within" as a word is therefore read as a
+  // composition; that trade is accepted and named here rather than hidden.
+  const CUT_OPS = { also: 'union', except: 'diff', within: 'intersect' };
+  const CUT_SPLIT = /\s+(also|except|within)\s+/i;
+  function parseCutExpr(text) {
+    const s = String(text || '').trim();
+    if (!s) { return []; }
+    const parts = s.split(CUT_SPLIT);
+    const terms = [{ op: 'set', text: parts[0].trim() }];
+    for (let i = 1; i + 1 < parts.length; i += 2) {
+      terms.push({ op: CUT_OPS[parts[i].toLowerCase()], text: parts[i + 1].trim() });
+    }
+    return terms.filter(function (t) { return t.text; });
+  }
+  // `find(text) -> id[]` is the tab's own deterministic search. Each step
+  // records what it CHANGED, because a step that changed nothing is the most
+  // common silent failure ("except summa" when nothing under that name was in
+  // the cut) and the user must hear about it.
+  function composeCut(terms, find) {
+    let acc = null;
+    const steps = [];
+    for (const t of terms) {
+      const ids = (find(t.text) || []).slice();
+      const has = new Set(ids);
+      const before = acc ? acc.length : 0;
+      if (acc === null || t.op === 'set') { acc = ids.slice(); }
+      else if (t.op === 'union') { const cur = new Set(acc); for (const id of ids) { if (!cur.has(id)) { acc.push(id); cur.add(id); } } }
+      else if (t.op === 'diff') { acc = acc.filter(function (id) { return !has.has(id); }); }
+      else if (t.op === 'intersect') { acc = acc.filter(function (id) { return has.has(id); }); }
+      steps.push({ op: t.op, text: t.text, matched: ids.length, before: before, after: acc.length });
+    }
+    return { ids: acc || [], steps: steps };
+  }
+  // Plain-language problems with a composition, one per step that did not do
+  // what its connective promises. Empty list = every step had an effect.
+  function cutStepProblems(steps) {
+    const out = [];
+    for (let i = 0; i < steps.length; i++) {
+      const st = steps[i];
+      if (!st.matched) { out.push('"' + st.text + '" matched nothing'); continue; }
+      if (i === 0) { continue; }
+      if (st.op === 'union' && st.after === st.before) { out.push('also "' + st.text + '" added nothing new (all ' + st.matched + ' were already in)'); }
+      if (st.op === 'diff' && st.after === st.before) { out.push('except "' + st.text + '" removed nothing (none of its ' + st.matched + ' were in the cut)'); }
+      if (st.op === 'intersect' && st.after === 0) { out.push('within "' + st.text + '" left nothing (no overlap)'); }
+    }
+    return out;
+  }
+  function describeCutSteps(steps) {
+    if (steps.length < 2) { return ''; }
+    return steps.map(function (st, i) {
+      if (i === 0) { return '"' + st.text + '" ' + st.after; }
+      const sign = st.op === 'union' ? '+' : (st.op === 'diff' ? '-' : 'within ');
+      return sign + '"' + st.text + '" -> ' + st.after;
+    }).join('; ');
+  }
+  // VERIFY AFTER THE ACTION: compare what the page DRAWS with what was meant.
+  // `domIds` is every id the page has an element for, so a node the tab never
+  // rendered (filtered out upstream) is not counted as missing.
+  function verifyDrawn(intended, drawn, domIds) {
+    const want = new Set(intended), dom = new Set(domIds), got = new Set(drawn);
+    let extra = 0, missing = 0;
+    for (const id of got) { if (!want.has(id)) { extra++; } }
+    for (const id of want) { if (dom.has(id) && !got.has(id)) { missing++; } }
+    const problems = [];
+    if (extra) { problems.push(extra + ' node(s) drawn that the cut excludes'); }
+    if (missing) { problems.push(missing + ' node(s) in the cut not drawn'); }
+    return { ok: !problems.length, extra: extra, missing: missing, problems: problems };
+  }
+  // Same question for a filter write: does the page's own state, read back,
+  // equal the state we wrote? Lists the keys that disagree.
+  function verifyFilters(target, after) {
+    const problems = [];
+    if (!after) { return { ok: false, problems: ['the view reported no filter state after the change'] }; }
+    for (const k of Object.keys(target || {})) {
+      if (!!target[k] !== !!after[k]) { problems.push(k + ' should be ' + (target[k] ? 'on' : 'off') + ' but is ' + (after[k] ? 'on' : 'off')); }
+    }
+    return { ok: !problems.length, problems: problems };
+  }
+
   return {
     VERSION: VERSION,
     compileGrammar: compileGrammar,
@@ -887,6 +982,12 @@
     auditGestures: auditGestures,
     createJournal: createJournal,
     plan: plan,
+    parseCutExpr: parseCutExpr,
+    composeCut: composeCut,
+    cutStepProblems: cutStepProblems,
+    describeCutSteps: describeCutSteps,
+    verifyDrawn: verifyDrawn,
+    verifyFilters: verifyFilters,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
     SHELL_CAPS: SHELL_CAPS,
   };
