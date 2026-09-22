@@ -30,6 +30,15 @@
 // `supabase functions download cc-broker` and merged back in here, keeping this
 // file's rationale comments. Verified: every other line is functionally
 // identical; all rate/cap constants match exactly.
+//
+// v16 (2026-09-22): model ALLOWLIST + per-model metering. Until v15 any
+// body.model string was forwarded to OpenRouter and every call was priced as
+// gpt-4o-mini, so a frontier model would have been under-metered 20-60x and the
+// $5/day cap would not have held. Now: unknown model -> 400 model_not_allowed;
+// cost = the higher of (our price table) and (OpenRouter's reported usage.cost);
+// output is bounded per call. Default stays the cheap model because the ranking
+// callers (Community Explorer, c2a2-search.js) send no model; answer-writing
+// callers ask for model:"answer".
 // ============================================================================
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
@@ -38,6 +47,26 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.45.0";
 // Tunables. All cheap to change; bump these as usage data justifies.
 // ----------------------------------------------------------------------------
 const DEFAULT_MODEL          = "openai/gpt-4o-mini";  // cheap, fast, capable enough for ranking
+const ANSWER_MODEL           = "anthropic/claude-sonnet-5"; // grounded answers + CCL planning (v16)
+const MAX_OUTPUT_TOKENS      = 1500;                  // per-call output bound; ~1.5c at ANSWER_MODEL out-rate
+
+// Allowlist AND price table in one place: a model is callable only if we know
+// what it costs. Cents per 1M tokens [input, output], OpenRouter list prices
+// read from openrouter.ai/api/v1/models on 2026-09-22. Re-read before adding.
+const MODEL_PRICES: Record<string, [number, number]> = {
+  "openai/gpt-4o-mini":          [ 15,   60],
+  "openai/gpt-4.1-mini":         [ 40,  160],
+  "openai/gpt-5-mini":           [ 25,  200],
+  "google/gemini-2.5-flash":     [ 30,  250],
+  "anthropic/claude-haiku-4.5":  [100,  500],
+  "anthropic/claude-sonnet-5":   [200, 1000],
+  "openai/gpt-5.6-sol":          [200, 1000],
+};
+// Role names so clients never hard-code a vendor id.
+const MODEL_ALIASES: Record<string, string> = {
+  "default": DEFAULT_MODEL,
+  "answer":  ANSWER_MODEL,
+};
 const DEVICE_DAILY_LIMIT     = 50;                    // free-pool asks per device per day — research-tier (was 10; raised 2026-05-27 to support real work, not just PoC demos)
 const GLOBAL_DAILY_CENTS_CAP = 500;                   // circuit-breaker: $5/day → ~$150/mo ceiling — research-tier (was 40)
 const IP_DAILY_CAP           = 500;                   // backstop against device-UUID cycling — scaled with DEVICE_DAILY_LIMIT (was 100)
@@ -96,12 +125,26 @@ const ALLOWED_ORIGINS = new Set([
 // Penny-rounded cost estimate per ask. OpenRouter returns exact token counts
 // in the response; we bump cents based on that, with a 1-cent floor so the
 // global meter never undercounts even on tiny calls.
-function estimateCostCents(usage: { prompt_tokens?: number; completion_tokens?: number } | null | undefined): number {
+type Usage = { prompt_tokens?: number; completion_tokens?: number; cost?: number };
+
+// Resolve a client's model request against the allowlist. undefined/"" -> default.
+function resolveModel(requested: unknown): { model: string } | { error: string } {
+  if (requested === undefined || requested === null || requested === "") return { model: DEFAULT_MODEL };
+  if (typeof requested !== "string") return { error: "model_not_allowed" };
+  const m = MODEL_ALIASES[requested] ?? requested;
+  return MODEL_PRICES[m] ? { model: m } : { error: "model_not_allowed" };
+}
+
+// Priced by the model that was CALLED (always in the table). If OpenRouter
+// reports its own charge (usage.cost, USD) and it is higher, that wins: the
+// meter must never undercount. 1-cent floor as before.
+function estimateCostCents(usage: Usage | null | undefined, model: string): number {
   if (!usage) return 1;
-  // gpt-4o-mini: $0.15/M input, $0.60/M output. Convert to cents.
-  const inCents  = ((usage.prompt_tokens     ?? 0) / 1_000_000) * 15;
-  const outCents = ((usage.completion_tokens ?? 0) / 1_000_000) * 60;
-  return Math.max(1, Math.ceil(inCents + outCents));
+  const [inRate, outRate] = MODEL_PRICES[model] ?? MODEL_PRICES[DEFAULT_MODEL];
+  const inCents  = ((usage.prompt_tokens     ?? 0) / 1_000_000) * inRate;
+  const outCents = ((usage.completion_tokens ?? 0) / 1_000_000) * outRate;
+  const reported = typeof usage.cost === "number" ? usage.cost * 100 : 0;
+  return Math.max(1, Math.ceil(Math.max(inCents + outCents, reported)));
 }
 
 // ----------------------------------------------------------------------------
@@ -150,9 +193,9 @@ async function callOpenRouter(opts: {
   apiKey: string;
   system: string;
   user: string;
-  model?: string;
-}): Promise<{ text: string; model: string; usage: { prompt_tokens?: number; completion_tokens?: number } | null; error?: string }> {
-  const model = opts.model ?? DEFAULT_MODEL;
+  model: string;   // already resolved against the allowlist
+}): Promise<{ text: string; model: string; usage: Usage | null; error?: string }> {
+  const model = opts.model;
   const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -168,6 +211,8 @@ async function callOpenRouter(opts: {
         { role: "system", content: opts.system },
         { role: "user",   content: opts.user },
       ],
+      max_tokens: MAX_OUTPUT_TOKENS,
+      usage: { include: true },   // ask OpenRouter to report its actual charge
     }),
   });
 
@@ -180,7 +225,9 @@ async function callOpenRouter(opts: {
   const data = await resp.json();
   const text  = data?.choices?.[0]?.message?.content ?? "";
   const usage = data?.usage ?? null;
-  return { text, model, usage };
+  // Report the model that actually served (OpenRouter may name a dated variant);
+  // pricing still uses the requested, allowlisted id.
+  return { text, model: typeof data?.model === "string" ? data.model : model, usage };
 }
 
 // ----------------------------------------------------------------------------
@@ -295,7 +342,7 @@ Deno.serve(async (req) => {
   }
 
   // Parse body
-  let body: { action?: string; system?: string; user?: string; api_key?: string; model?: string; tab?: string };
+  let body: { action?: string; system?: string; user?: string; api_key?: string; model?: unknown; tab?: string };
   try {
     body = await req.json();
   } catch {
@@ -341,6 +388,8 @@ Deno.serve(async (req) => {
     if (body.system.length + body.user.length > MAX_BODY_BYTES) {
       return json(413, { error: "prompt_too_large" }, origin);
     }
+    const rm = resolveModel(body.model);
+    if ("error" in rm) return json(400, { error: rm.error, allowed: [...Object.keys(MODEL_ALIASES), ...Object.keys(MODEL_PRICES)] }, origin);
 
     // Read today's usage
     const { data: usage, error: useErr } = await sb.rpc("get_usage", { p_device_id: deviceId });
@@ -378,7 +427,7 @@ Deno.serve(async (req) => {
     // Call OpenRouter
     let result;
     try {
-      result = await callOpenRouter({ apiKey, system: body.system, user: body.user, model: body.model });
+      result = await callOpenRouter({ apiKey, system: body.system, user: body.user, model: rm.model });
     } catch (e) {
       return json(502, { error: "upstream_unreachable" }, origin);
     }
@@ -389,7 +438,7 @@ Deno.serve(async (req) => {
     // Only meter free-pool calls; BYO spends on the user's own key
     let freeRemaining = DEVICE_DAILY_LIMIT - deviceAsks;
     if (source === "free") {
-      const costCents = estimateCostCents(result.usage);
+      const costCents = estimateCostCents(result.usage, rm.model);
       const { data: post, error: incErr } = await sb.rpc("increment_usage", {
         p_device_id: deviceId,
         p_cost_cents: costCents,
@@ -425,6 +474,8 @@ Deno.serve(async (req) => {
     if (body.system.length + body.user.length > MAX_BODY_BYTES) {
       return json(413, { error: "prompt_too_large" }, origin);
     }
+    const rm = resolveModel(body.model);
+    if ("error" in rm) return json(400, { error: rm.error, allowed: [...Object.keys(MODEL_ALIASES), ...Object.keys(MODEL_PRICES)] }, origin);
 
     // Read today's web usage
     const { data: webUsage, error: webUseErr } = await sb.rpc("get_web_usage", { p_device_id: deviceId });
@@ -492,7 +543,7 @@ Deno.serve(async (req) => {
 
     let result;
     try {
-      result = await callOpenRouter({ apiKey, system: augmentedSystem, user: body.user, model: body.model });
+      result = await callOpenRouter({ apiKey, system: augmentedSystem, user: body.user, model: rm.model });
     } catch (_e) {
       return json(502, { error: "upstream_unreachable" }, origin);
     }
@@ -503,7 +554,7 @@ Deno.serve(async (req) => {
     // Meter on free-pool calls only. Total cost = flat Tavily fee + LLM tokens.
     let webRemaining = WEB_DEVICE_DAILY_LIMIT - deviceWebAsks;
     if (source === "free") {
-      const llmCents   = estimateCostCents(result.usage);
+      const llmCents   = estimateCostCents(result.usage, rm.model);
       const totalCents = WEB_SEARCH_CENTS_PER_CALL + llmCents;
       const { data: post, error: incErr } = await sb.rpc("increment_web_usage", {
         p_device_id: deviceId,
