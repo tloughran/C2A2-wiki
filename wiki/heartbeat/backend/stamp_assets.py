@@ -42,7 +42,7 @@ from pathlib import Path
 # source.)
 TARGETS = {
     "heartbeat": ("heartbeat/index.html", ("styles.css", "heartbeat-config.js", "app.js", "auth.js")),
-    "explorer": ("explorer.html", ("lib/c2a2-commandline.js",)),
+    "explorer": ("explorer.html", ("lib/c2a2-commandline.js", "lib/c2a2-search.js")),
 }
 
 

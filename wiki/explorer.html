@@ -28,7 +28,7 @@
   #row1 {
     height: 48px;
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
     align-items: center;
     column-gap: 10px;
     padding: 0 16px;
@@ -200,7 +200,7 @@
      Before this, bottom-anchored tab controls -- the Sociogram's search row,
      Community Explorer's search options -- were painted over and unclickable
      (measured 2026-09-16 with elementFromPoint). */
-  :root { --ccl-h: 37px; }
+  :root { --ccl-h: 0px; }  /* 2026-09-22: strip retired; search + voice live in row 1 */
   #content-frame {
     position: fixed;
     top: 88px; left: 0; right: 0; bottom: var(--ccl-h);
@@ -300,7 +300,7 @@
      the chapter tabs scroll horizontally like row2 does. */
   #row1 {
     height: 48px;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) auto;
     column-gap: 0;
     padding: 0 8px;
   }
@@ -365,7 +365,8 @@
 /* CCL command bar (increment 1: typed C2A2 Command Line over the Sociogram).
    Slim fixed bar; press "/" to focus. Voice reuses this same parse->plan path
    in a later increment (voice_guide_redesign.md). */
-#ccl-bar {
+#ccl-bar { display: none !important; }
+#ccl-bar-retired {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 4000;
   height: var(--ccl-h); box-sizing: border-box;
   display: flex; align-items: center; gap: 8px;
@@ -408,6 +409,22 @@
       <button class="chap-btn active" id="chap-tools"><span class="kick">Community</span><span class="main">Accelerator Tools</span></button>
       <button class="chap-btn" id="chap-interaction" data-src="community_interactions.html"><span class="kick">Community</span><span class="main">Interactions</span></button>
     </div>
+    <div id="row1-tools">
+      <button id="nav-back" class="nav-btn" title="Back to the previous page in this frame" disabled>&#8592;</button>
+      <button id="nav-fwd" class="nav-btn" title="Forward" disabled>&#8594;</button>
+      <div id="ask-wrap">
+        <button id="ask-open" title="Search or ask">&#128269;</button>
+        <input id="ask-input" type="text" autocomplete="off" spellcheck="false"
+               placeholder="Search or ask anything about this page or C2A2" aria-label="Search or ask">
+        <button id="ask-go" title="Search and ask (Enter)">Ask</button>
+        <button id="ask-clear" title="Clear the search">&#215;</button>
+      </div>
+      <button id="ccl-stop" style="display:none">&#9632; Stop reading</button>
+      <button id="ccl-readhelp" title="How reading aloud works">?</button>
+      <button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
+        <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
+      </button>
+    </div>
     <button id="btn-record" onclick="toggleRecord()">&#9679; Record</button>
   </div>
 
@@ -447,23 +464,16 @@
 
 <!-- CCL command bar: type a command (e.g. "only levin friston"); press "/" to focus. -->
 <div id="ccl-bar">
-  <!-- Frame history. Deliberately in the shell's own strip rather than floating
-       over the iframe: an overlay would sit on top of whatever the tab puts in
-       that corner (the Sociogram's filter panel, for one). -->
-  <button id="nav-back" class="nav-btn" title="Back to the previous page in this frame" disabled>&#8592;</button>
-  <button id="nav-fwd" class="nav-btn" title="Forward" disabled>&#8594;</button>
-  <button id="ccl-stop" style="display:none">&#9632; Stop reading</button>
-  <!-- Always visible, not only while reading: the thing people most need to
-       know (the guide goes deaf during a read) has to be learnable BEFORE
-       they start one. -->
-  <button id="ccl-readhelp" title="How reading aloud works">?</button>
-  <span class="ccl-sigil">/</span>
-  <input id="ccl-input" type="text" autocomplete="off" spellcheck="false"
-         placeholder='search this view, or a command:  levin   |   only levin friston   |   open mcgilchrist   |   fit'>
-  <span id="ccl-result">CCL ready. Type a command and press Enter.</span>
-  <button id="vg-launch" onclick="VoiceGuide.togglePanel()" title="Talk to the wiki by voice">
-    <span id="vg-dot"></span><span id="vg-label">Talk to the Wiki</span>
-  </button>
+  <!-- 2026-09-22: RETIRED as a visible surface (Tom: one search, the Sociogram kind,
+       in row 1). The CCL engine still reads/writes these two elements, and the voice
+       guide's run_command still drives it; nobody types here any more. -->
+  <input id="ccl-input" type="text" autocomplete="off" spellcheck="false" tabindex="-1" aria-hidden="true">
+  <span id="ccl-result"></span>
+</div>
+<div id="ask-drawer" role="region" aria-live="polite">
+  <div id="ask-head"><span id="ask-q"></span><button id="ask-close" title="Close">&#215;</button></div>
+  <div id="ask-body"></div>
+  <div id="ask-meta"></div>
 </div>
 
 <script>
@@ -1105,7 +1115,7 @@ function showReaderHelp() {
      over the tab: as a fixed pill it covered Community Explorer's Search
      button and the bottom-right corner of every tab. */
   #vg-launch {
-    position: static; margin-left: auto; flex-shrink: 0;
+    position: static; flex-shrink: 0;
     display: flex; align-items: center; gap: 8px;
     background: #12121c; border: 1px solid #C9A84C; color: #C9A84C;
     font-family: -apple-system, sans-serif; font-size: 12px; font-weight: 600;
@@ -1120,7 +1130,7 @@ function showReaderHelp() {
   @keyframes vgPulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
 
   #vg-panel {
-    display: none; position: fixed; right: 20px; bottom: 74px; z-index: 100001;
+    display: none; position: fixed; right: 20px; top: 96px; z-index: 100001;
     width: 340px; max-width: calc(100vw - 40px);
     background: #12121c; border: 1px solid #2a2a3a; border-radius: 12px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.6); overflow: hidden;
@@ -1889,6 +1899,7 @@ var VoiceGuide = (function() {
   }
 
   var faqText = '';   // first-pass FAQ authored by the weekly voice-faq agent
+  var introText = '';  // the site's short introduction (knowledge/00_project.md), 2026-09-22
 
   // Tabs the guide can drive by voice. Each maps to the shell's own buttons,
   // so we reuse the existing click handlers rather than duplicating navigation.
@@ -1963,6 +1974,7 @@ var VoiceGuide = (function() {
 
   // Load the agent-authored FAQ once; it becomes the guide's first-pass source.
   async function loadFaq() {
+    if (!introText && typeof window.C2A2Intro === 'function') { try { introText = await window.C2A2Intro(); } catch (e) { introText = ''; } }
     if (faqText) return;
     try {
       var r = await fetch('voice_guide_faq.json?v=' + Date.now());
@@ -2017,6 +2029,9 @@ var VoiceGuide = (function() {
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
       "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
     ].join("\n");
+    if (introText) {
+      base += "\n\nGENERAL INTRODUCTION: when anyone asks for an introduction or overview of the site, or where to start, say this, close to word for word:\n" + introText;
+    }
     if (faqText) {
       base += "\n\nFIRST-PASS FAQ (curated answers to GENERAL / EXPLANATORY questions -- what a feature IS and how it works, e.g. 'what is the Sociogram', 'how do I filter'. These do NOT describe the current live state. For anything about what is on screen RIGHT NOW -- selection, filters, counts, the dominant cluster -- IGNORE the FAQ and run the command 'what' instead):\n" + faqText;
     }
@@ -5722,11 +5737,185 @@ var VoiceGuide = (function() {
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input) {
       var tag = (document.activeElement && document.activeElement.tagName) || '';
-      if (tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); input.focus(); }
+      if (tag !== 'INPUT' && tag !== 'TEXTAREA') { e.preventDefault(); (document.getElementById('ask-input') || input).focus(); }
     }
   });
 })();
 </script>
 
+
+<style>
+/* ── ONE SEARCH (2026-09-22) ─────────────────────────────────────────────
+   The Sociogram-style box, lifted into row 1 so it is the same on every page.
+   Enter = light matches on this page (CCL `find`, journaled/undoable) AND ask
+   the guide (broker) for a grounded answer, shown in #ask-drawer. */
+#row1-tools { display: flex; align-items: center; gap: 6px; min-width: 0; }
+#row1-tools .nav-btn { margin-right: 0; }
+#ask-wrap { display: flex; align-items: center; gap: 4px; }
+#ask-input {
+  width: 300px; background: #14141f; border: 1px solid #3a3a4a; color: #e6e6ee;
+  padding: 6px 10px; border-radius: 16px; font-size: 13px; font-family: -apple-system, sans-serif;
+}
+#ask-input:focus { outline: none; border-color: #C9A84C; }
+#ask-input::placeholder { color: #6a6a7a; }
+#ask-go, #ask-clear, #ask-open {
+  background: #1a1a2a; border: 1px solid #3a3a4a; color: #e0e0e0; border-radius: 14px;
+  padding: 5px 10px; cursor: pointer; font-size: 12px; flex-shrink: 0;
+}
+#ask-go:hover, #ask-clear:hover, #ask-open:hover { border-color: #C9A84C; color: #C9A84C; }
+#ask-open { display: none; }
+#row1-tools #ccl-stop { margin-right: 0; }
+#row1-tools #ccl-readhelp { margin-right: 0; }
+#ask-drawer {
+  display: none; position: fixed; top: 96px; right: 16px; z-index: 99990;
+  width: 460px; max-width: calc(100vw - 32px); max-height: 55vh; overflow-y: auto;
+  background: rgba(14,14,22,0.97); border: 1px solid #3a3a4a; border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); padding: 10px 14px 12px;
+  font-family: -apple-system, sans-serif; color: #dcdce6; font-size: 13px; line-height: 1.5;
+}
+#ask-drawer.open { display: block; }
+#ask-head { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+#ask-q { flex: 1; color: #C9A84C; font-weight: 600; }
+#ask-close { background: transparent; border: none; color: #8a8a98; font-size: 18px; cursor: pointer; line-height: 1; }
+#ask-body { white-space: pre-wrap; }
+#ask-body.pending { color: #8a8a98; font-style: italic; }
+#ask-meta { margin-top: 8px; font-size: 11px; color: #7a7a8a; }
+#ask-meta .ask-find { color: #4E8A5E; }
+/* Narrow screens: the box collapses to a magnifier that opens it. */
+@media (max-width: 1180px) {
+  #ask-input { width: 200px; }
+  #vg-launch #vg-label { display: none; }
+}
+@media (max-width: 900px) {
+  #ask-open { display: inline-block; }
+  #ask-input, #ask-go, #ask-clear { display: none; }
+  #ask-wrap.open { position: fixed; top: 52px; left: 8px; right: 8px; z-index: 99991;
+    background: #0e0e16; border: 1px solid #3a3a4a; border-radius: 10px; padding: 6px; }
+  #ask-wrap.open #ask-input { display: block; flex: 1; width: auto; }
+  #ask-wrap.open #ask-go, #ask-wrap.open #ask-clear { display: inline-block; }
+  #ask-wrap.open #ask-open { display: none; }
+  #row1-tools .nav-btn, #row1-tools #ccl-readhelp { display: none; }
+}
+</style>
+<script src="lib/c2a2-search.js?v=fff774bcf9"></script>
+<script>
+(function () {
+  'use strict';
+  var input = document.getElementById('ask-input');
+  if (!input) { return; }
+  var wrap = document.getElementById('ask-wrap');
+  var drawer = document.getElementById('ask-drawer');
+  var qEl = document.getElementById('ask-q'), body = document.getElementById('ask-body'), meta = document.getElementById('ask-meta');
+  var frame = document.getElementById('content-frame');
+
+  // Which knowledge file speaks for which page (voice_guide/knowledge/*.md).
+  var KNOWLEDGE = {
+    'wiki_narration.html': 'sociogram.graph.default', 'prs_3d.html': 'narrative_connectome.default',
+    'agents_tab.html': 'agent_map.default', 'metabolism_view.html': 'metabolism.default',
+    'summa_explorer.html': 'curriculum_tools.default', 'interT_study.html': 'inter_tradition_study.default',
+    'community_explorer.html': 'community_explorer.default', 'community_interactions.html': 'community_interactions.default',
+    'rc_document_explorer.html': 'rc_document_explorer.default', 'physics_explorer.html': 'physics_explorer.default',
+    'commentary_explorer.html': 'trv_commentary.default', 'index.html': 'ai_heartbeat.default',
+    'start_here.html': 'start_here.default', 'what_is_c2a2.html': 'what_is_c2a2.default',
+    'what_is_saying.html': 'what_is_saying.default', 'rc_sandbox_notebook.html': null
+  };
+  var cache = {};
+  function getText(url) {
+    if (cache[url] !== undefined) { return Promise.resolve(cache[url]); }
+    return fetch(url + '?v=' + Date.now()).then(function (r) { return r.ok ? r.text() : ''; })
+      .catch(function () { return ''; }).then(function (t) { cache[url] = t; return t; });
+  }
+  function stripFront(md) { return String(md || '').replace(/^---[\s\S]*?\n---\s*\n/, ''); }
+  function pageFile() {
+    var src = (typeof window.CCLFrameSrc === 'function') ? window.CCLFrameSrc() : (frame.getAttribute('src') || '');
+    return String(src).split('?')[0].split('#')[0].split('/').pop();
+  }
+  // The short introduction lives in 00_project.md; asked for, it is given as written.
+  function introText(projectMd) {
+    var m = stripFront(projectMd).match(/## Short introduction[^\n]*\n([\s\S]*?)(\n## |$)/);
+    return m ? m[1].trim() : '';
+  }
+  var INTRO_RE = /\b(introduc\w*|intro|overview|orient me|get started|where (do|should) i (start|begin)|what is (this|c2a2|this site)|what'?s (this|c2a2)|tell me about (this|c2a2|the site))\b/i;
+  window.C2A2Intro = function () {
+    return getText('voice_guide/knowledge/00_project.md').then(introText);
+  };
+
+  var SYSTEM = 'You are the guide to C2A2 (Community Context for AI Alignment), answering questions typed into the search box of the C2A2 Explorer. ' +
+    'Answer ONLY from the SITE KNOWLEDGE and PAGE KNOWLEDGE given. Write plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words. ' +
+    'Do not state any count or total as a current fact. If the knowledge does not answer the question, say so plainly and name the page on the site most likely to help. ' +
+    'Reply with the answer text only.';
+
+  function open(q) { qEl.textContent = q; drawer.classList.add('open'); }
+  function close() { drawer.classList.remove('open'); }
+  function render(text, pending, metaHtml) {
+    body.textContent = text; body.className = pending ? 'pending' : ''; meta.innerHTML = metaHtml || '';
+  }
+  function esc(t) { return String(t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
+
+  var seq = 0;
+  function ask() {
+    var q = input.value.trim();
+    if (!q) { clearAll(); return; }
+    var my = ++seq;
+    open(q);
+    var findLine = '';
+    // 1. Light matches on this page -- the journaled, undoable CCL `find`.
+    try {
+      var r = (typeof window.CCLRun === 'function') ? window.CCLRun('find ' + q) : null;
+      if (r && r.ok && r.spoken) { findLine = r.spoken; }
+    } catch (e) { /* the answer still comes */ }
+    var findHtml = findLine ? '<span class="ask-find">On this page: ' + esc(findLine) + '</span>' : '';
+    var file = pageFile(), key = KNOWLEDGE.hasOwnProperty(file) ? KNOWLEDGE[file] : null;
+    Promise.all([
+      getText('voice_guide/knowledge/00_project.md'),
+      key ? getText('voice_guide/knowledge/' + key + '.md') : Promise.resolve('')
+    ]).then(function (k) {
+      if (my !== seq) { return; }
+      // 2a. A request for an introduction gets the introduction, as written. No model call.
+      var intro = introText(k[0]);
+      if (intro && INTRO_RE.test(q)) { render(intro, false, findHtml); return; }
+      render('Thinking…', true, findHtml);
+      var knowledge = 'SITE KNOWLEDGE:\n' + stripFront(k[0]) + (k[1] ? '\n\nPAGE KNOWLEDGE (' + file + '):\n' + stripFront(k[1]) : '');
+      // 2b. A page that knows its own contents answers first (c2a2Ask); else the guide answers from knowledge.
+      var w = null; try { w = frame.contentWindow; } catch (e) { w = null; }
+      var tabAsk = (w && typeof w.c2a2Ask === 'function') ? w.c2a2Ask(q, { knowledge: knowledge }) : Promise.resolve(null);
+      return Promise.resolve(tabAsk).catch(function (e) { return { error: (e && e.message) || String(e) }; }).then(function (res) {
+        if (my !== seq) { return; }
+        if (res && res.answer) {
+          render(res.answer, false, findHtml + (res.label ? ' &middot; ' + esc(res.label) : '') +
+            (res.sources && res.sources.length ? '<br>Sources: ' + res.sources.map(esc).join(' | ') : ''));
+          return;
+        }
+        if (!window.C2A2Search) { render('The answer service did not load. Matches on this page are lit.', false, findHtml); return; }
+        return window.C2A2Search.callBroker({ action: 'enrich', system: SYSTEM, user: knowledge + '\n\nQUESTION: ' + q })
+          .then(function (p) {
+            if (my !== seq) { return; }
+            var text = (p && typeof p.text === 'string') ? p.text.trim() : '';
+            render(text || '(no answer came back)', false, findHtml + ' &middot; answered from the site guide' + (p && p.model ? ' (' + esc(p.model) + ')' : ''));
+          });
+      });
+    }).catch(function (e) {
+      if (my !== seq) { return; }
+      var code = (e && e.message) || 'unknown';
+      var why = (code === 'free-limit' || code === 'rate-limited') ? 'The free question allowance for today is used up.' : 'The answer service failed (' + code + ').';
+      render(why + (findLine ? ' Matches on this page are still lit.' : ''), false, findHtml);
+    });
+  }
+  function clearAll() {
+    seq++; input.value = ''; close();
+    try { if (typeof window.CCLRun === 'function') { window.CCLRun('clear'); } } catch (e) { /* nothing lit */ }
+  }
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') { e.preventDefault(); ask(); }
+    else if (e.key === 'Escape') { close(); }
+  });
+  document.getElementById('ask-go').addEventListener('click', ask);
+  document.getElementById('ask-clear').addEventListener('click', clearAll);
+  document.getElementById('ask-close').addEventListener('click', close);
+  document.getElementById('ask-open').addEventListener('click', function () { wrap.classList.add('open'); input.focus(); });
+  // A tab's own box (Sociogram standalone road) and the guide both reach this one box.
+  window.C2A2AskBox = { ask: function (q) { input.value = q; ask(); }, clear: clearAll };
+})();
+</script>
 </body>
 </html>

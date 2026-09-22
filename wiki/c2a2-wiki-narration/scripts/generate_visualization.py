@@ -940,7 +940,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
   <!-- FOOTER -->
   <div id="footer">
     <div style="flex:1;display:flex;flex-direction:column;gap:4px;min-width:0;height:100%;">
-      <div id="narration-text">This is a knowledge graph inside the C2A2 Explorer (v1.0). The Community Context for AI Alignment (C2A2) project seeks to empower consensus-sized communities with AI acceleration tools, thus rendering a meaningful and measurable context for AI alignment with common community goals. This first instance brings together a range of thinkers &mdash; 15 or more &mdash; whose research touches up against, in one way or another, an emerging conscious realist paradigm for cross-disciplinary integration. In this knowledge graph, each node is a wiki file and each edge a link or shared reference. Filter by thinker or structure on the left, click on nodes or edges in the graph to pull up associated files, or ask a question below. User input will either filter the graph immediately (if a simple search query) or produce a meaningful LLM-driven response. Each user has a limited number of free semantic queries; when they run out, the search box still works as a local search.</div>
+      <div id="narration-text"></div>
       <div id="footer-search-row" style="display:flex;gap:4px;align-items:center;flex-wrap:wrap;">
         <div id="search-wrap" style="position:relative;flex:1;min-width:200px;">
           <input type="text" id="search-input" autocomplete="off" placeholder="Search, or type focus: to isolate links between groups" style="width:100%;background:#1a1a2a;border:1px solid #3a3a4a;color:#e0e0e0;padding:3px 8px;border-radius:4px;font-size:12px;" oninput="onSearchInput()" onkeydown="onSearchKey(event)" onblur="setTimeout(hideSuggest,150)">
@@ -3728,18 +3728,21 @@ function applyAIResult(content, parseFailMsg) {
   return parsed;
 }
 
-function runSearchAI(rawQuery) {
+// askSociogram: the grounded-answer core. Resolves {answer, label, sources, ids}
+// or null when no node on the graph bears on the query (the caller then answers
+// another way); rejects with Error(code) from the broker. Used by the standalone
+// box (runSearchAI) and by the shell's one search box (window.c2a2Ask).
+function askSociogram(rawQuery, extra) {
   if (!window.C2A2Search || typeof window.C2A2Search.enrich !== 'function') {
-    setNarrationText('Search module not loaded.');
-    return;
+    return Promise.reject(new Error('search-module-missing'));
   }
   var query = String(rawQuery || '').trim();
-  if (!query) return;
+  if (!query) return Promise.resolve(null);
   var extBox = document.getElementById('search-external');
-  var useWeb = !!(extBox && extBox.checked);
+  var useWeb = !!(extBox && extBox.checked) && !(extra && extra.noWeb);
 
   // Pre-rank visible nodes by term overlap; trim to 30 for the prompt budget.
-  var qTerms = query.toLowerCase().split(/\\s+/).filter(Boolean);
+  var qTerms = query.toLowerCase().split(/\\s+/).filter(function(t) { return t.length > 2; });
   var scored = [];
   for (var i = 0; i < NODES.length; i++) {
     var n = NODES[i];
@@ -3751,10 +3754,7 @@ function runSearchAI(rawQuery) {
   }
   scored.sort(function(a, b) { return b.s - a.s; });
   scored = scored.slice(0, 30);
-  if (!scored.length) {
-    setNarrationText('No visible nodes match "' + query + '". Try a different query or expand the filters at left.');
-    return;
-  }
+  if (!scored.length) return Promise.resolve(null);
   var summary = scored.map(function(x) {
     var n = x.n;
     var snip = String(n.content || '').replace(/\\s+/g, ' ').slice(0, 200);
@@ -3763,47 +3763,49 @@ function runSearchAI(rawQuery) {
   var viewCtx = getCurrentViewState();
   var userBlock = 'Query: ' + query +
     (viewCtx ? '\\n\\nCURRENT_VIEW:\\n' + viewCtx : '') +
+    (extra && extra.knowledge ? '\\n\\nSITE_KNOWLEDGE (background; ground the answer in the candidates):\\n' + String(extra.knowledge).slice(0, 6000) : '') +
     '\\n\\nCandidates:\\n' + summary;
 
-  setNarrationText('Asking C2A2 (' + (useWeb ? 'database + web' : 'database') + ') ...');
-
-  window.C2A2Search.enrich({
+  return window.C2A2Search.enrich({
     useWeb: useWeb,
     dataset: {system: C2A2_SOC_SYSTEM_DATASET, user: userBlock},
     web: useWeb ? {system: C2A2_SOC_SYSTEM_WEB, user: userBlock} : null,
   }).then(function(res) {
     var content = (res.payload && typeof res.payload.text === 'string') ? res.payload.text : '';
     var parsed = applyAIResult(content);
-    if (!parsed) return;
+    if (!parsed) throw new Error('unparseable-answer');
+    var label = res.mode === 'database-plus-web-cited' ? 'web + database'
+      : res.mode === 'database-only-after-cap' ? 'database (web cap reached)'
+      : res.mode === 'external-search-unavailable' ? 'database (web unavailable)'
+      : 'answered from the Sociogram';
+    if (res.payload && res.payload.model) label += ' (' + res.payload.model + ')';
+    if (res.warning) label += ' -- ' + res.warning;
+    var sources = Array.isArray(res.payload && res.payload.sources)
+      ? res.payload.sources.map(function(s) { return s.title || s.url || ''; }) : [];
+    return { answer: parsed.answer || '', label: label, sources: sources,
+             ids: Array.isArray(parsed.ids) ? parsed.ids : [] };
+  });
+}
+window.c2a2Ask = function(q, extra) { return askSociogram(q, extra); };
 
-    var modeLabel = res.mode === 'database-plus-web-cited' ? ' [web + database]'
-      : res.mode === 'database-only-after-cap' ? ' [database -- web cap reached]'
-      : res.mode === 'external-search-unavailable' ? ' [database -- web unavailable]'
-      : ' [database]';
-    var warning = res.warning ? (' ' + res.warning) : '';
-    // Name the model that answered, when the broker echoes it in the payload.
-    // (cc-broker must include payload.model for this to show; absent that it
-    // stays blank rather than echoing a redundant transport label.)
-    var modelLabel = (res.payload && res.payload.model) ? (' (model: ' + res.payload.model + ')') : '';
-    var sourcesLine = '';
-    if (Array.isArray(res.payload && res.payload.sources) && res.payload.sources.length) {
-      sourcesLine = ' Sources: ' + res.payload.sources.map(function(s, i) {
-        return '[' + (i + 1) + '] ' + (s.title || s.url || '');
-      }).join(' | ');
-    }
-    var answer = parsed.answer || '(no answer text)';
-    setNarrationText('Ask "' + query + '"' + modeLabel + modelLabel + ':' + warning + ' ' + answer + sourcesLine);
+// Standalone road only (in the shell the footer is hidden and the shell's box asks).
+function runSearchAI(rawQuery) {
+  var query = String(rawQuery || '').trim();
+  if (!query) return;
+  setNarrationText('Asking C2A2 ...');
+  askSociogram(query).then(function(r) {
+    if (!r) { setNarrationText('No visible nodes match "' + query + '". Try a different query or expand the filters at left.'); return; }
+    setNarrationText('Ask "' + query + '" [' + r.label + ']: ' + (r.answer || '(no answer text)') +
+      (r.sources.length ? ' Sources: ' + r.sources.join(' | ') : ''));
   }).catch(function(err) {
     var code = (err && err.message) || 'unknown';
-    var isLimit = (code === 'free-limit' || code === 'rate-limited');
-    if (isLimit) {
-      // Quota exhausted — silently fall back to local text search and uncheck AI mode
+    if (code === 'free-limit' || code === 'rate-limited') {
       var aiBox = document.getElementById('search-ai-mode');
       if (aiBox) aiBox.checked = false;
       document.getElementById('search-input').value = query;
       setNarrationText('Free-tier AI limit reached — switching to local search for "' + query + '". Re-enable Ask AI later.');
       runSearch();
-    } else {
+    } else if (code !== 'unparseable-answer') {
       setNarrationText('AI request failed (' + code + '). Uncheck "Ask AI" to fall back to local search.');
     }
   });
@@ -4021,6 +4023,9 @@ window.addEventListener('resize', clampFooterHeight);
 
 // ── INIT ──
 document.addEventListener('DOMContentLoaded', function() {
+  if (inShell()) {
+    ['footer', 'footer-resize'].forEach(function(id) { var el = document.getElementById(id); if (el) el.style.display = 'none'; });
+  }
   var _nt0 = document.getElementById('narration-text');
   IDLE_NARRATION = _nt0 ? _nt0.textContent : '';
   buildFilters();

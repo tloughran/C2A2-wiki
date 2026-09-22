@@ -2465,8 +2465,12 @@ async function main() {
   // The Sociogram is the one tab whose `find` predates the contract; its rows
   // run on the scrape road and must stay green through the transition.
   process.stdout.write('\nPhase X -- one find, every tab\n');
-  const findEcho = await page.eval("return document.getElementById('ccl-input').placeholder;");
-  record('X0 the bar advertises search, not only commands', /search this view/.test(findEcho || ''), findEcho);
+  // 2026-09-22 (Tom): ONE visible search, the Sociogram kind, in row 1 of the shell.
+  // The CCL strip is retired as a surface -- if it ever shows again, a visitor has
+  // two search boxes, which is the exact confusion this change removed.
+  const findEcho = await page.eval("var a=document.getElementById('ask-input'), b=document.getElementById('ccl-bar'); return JSON.stringify({ph: a ? a.placeholder : null, row1: !!(a && a.closest('#row1')), stripShown: !!(b && b.getBoundingClientRect().height > 0)});");
+  const fe = JSON.parse(findEcho || '{}');
+  record('X0 one search box, in row 1, that says it searches AND answers; the old strip is gone', fe.row1 && /search/i.test(fe.ph || '') && /ask/i.test(fe.ph || '') && !fe.stripShown, findEcho);
   const findHelp = await runCmd(page, 'help');
   record('X0a help says plain text is a search', /plain text = find/.test(findHelp.spoken || ''), findHelp.spoken);
 

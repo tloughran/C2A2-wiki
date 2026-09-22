@@ -15,6 +15,9 @@ concrete response to Alasdair MacIntyre's Gifford-Lectures vision of a universit
 traditions of enquiry are made answerable to one another. The **accelerator** half brings
 traditions into contact; the **detector** half instruments what happens when they meet.
 
+## Short introduction (give this, as written, when asked for a general introduction)
+The C2A2 Explorer is the working window onto the Community Context for AI Alignment (C2A2) project, which seeks to empower consensus-sized communities with AI acceleration tools, thus rendering a meaningful and measurable context for AI alignment with common community goals. This first instance brings together a range of thinkers -- 15 or more -- whose research touches up against, in one way or another, an emerging conscious realist paradigm for cross-disciplinary integration. In the Sociogram, the knowledge graph, each node is a wiki file and each edge a link or shared reference: filter by thinker or structure on the left, and click nodes or edges to pull up associated files. On any page, type into the search box at the top: pressing Enter lights up matches on the page and produces a meaningful LLM-driven answer. Each user has a limited number of free semantic questions; when they run out, the search box still lights up matches on the page.
+
 ## The thinker traditions
 Levin, Friston, Hoffman, Kastrup, McGilchrist, Hawkins, Wolfram, Carroll, Arkani-Hamed,
 Fredrickson, Stump, Rohr, Wright, Loughran.
