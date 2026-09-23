@@ -6107,3 +6107,39 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-22.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-23
+
+**No item due. Four cards filed 09-22; two carry deferred conditions that no tracker holds. LEAKAGE ruling deadline and the unheld 09-24 condition are both tomorrow. Short per Rule 6.**
+
+  Items checked: **0** — WATCH-003 not due (next on-cadence 2026-09-29). Off-cadence trigger unfired: `review/archive/` still **19** files, latest `2026-09-10_decisions.md`. Check count stays **12**.
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — **2026-09-29** (or earlier, on a new file in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` **1** file, **0 new** — WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present. Channel 2 / 3 grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` in `*.md` outside `deferred/` and `agents/`: **zero** hits (the five prior false positives were HTML/`.bak`, excluded by the `*.md` filter this run). Real Channel 2/3 items: **0.** Channel 2 unexercised **31** days.
+
+**Findings:**
+1. **Two of the four 09-22 cards state a deferred condition** (read, not keyword-screened):
+   - **PROP-2026-09-22-004** (Carroll, Mindscape 368, Elizabeth Alexander) — card says *"I did not listen … no transcript in hand"* and asks that the transcript be pulled or the card downgraded to a retrieval assignment. Leak-shaped by the LEAKAGE FLAG's definition.
+   - **PROP-2026-09-22-003** (Hoffman, Trace Institute Hopewell talk, **3 Oct 2026**) — candidate 2 is "worth checking … once the talk is delivered." A dated future verification condition, same shape as PROP-2026-09-02-002's.
+   - PROP-2026-09-22-001 / -002 (Hawkins, Thousand Brains forum) rest on video chapter markers and session descriptions; no stated future condition. Not counted.
+   Cumulative leak-shaped count **16 → 18**; on the current queue **7 of 33** cards (the prior five by id plus these two). An en-bloc APPROVE swallows all seven.
+2. **09-24 is tomorrow.** PROP-2026-09-02-002's "retrieval check after 2026-09-24" is still held by nothing, and the LEAKAGE ruling deadline is the same day. A **second** dated condition (Hoffman, after 2026-10-03) now joins it. Neither will fire without Channel 4 or a Channel 3 request.
+3. **Ingest ran 09-22** (`PROCESSED_LOG.md` 1638 → **1711** lines, mtime 09-22 04:41); ledger still `decided-zero=30, OPEN=1` (Wright PROP-2026-08-14-033). No new decision file, so nothing new to ingest — consistent.
+4. Census: `pending/` **33** (29 → 33) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 19 · `review/` root 3 pages (09-20/21/**22**). Review-pass gap **14 days** since the 09-09 disposition — now the longest since the 08-08 → 08-27 stall, and still growing.
+
+**Resolution routing (Step 3d):** nothing to route. No file outside `deferred/watch_list.md` was created, moved, tagged or edited.
+
+**Open for Tom (changes only; items 1, 3, 4, 5, 7–11, 13 carried unchanged from 09-22):**
+2. **LEAKAGE ruling — deadline tomorrow, 2026-09-24.** Seven leak-shaped cards on the 33-card queue.
+6. Run-log archival split — **eighteenth** consecutive recommendation; file now **6,145 lines / 744,649 bytes** after this entry. Will act on one word.
+12. **Dated conditions unheld: now two** — PROP-2026-09-02-002 (after 09-24) and PROP-2026-09-22-003 (after 10-03). One line opens Channel 4 or hands them to Agent 16 as Channel 3 requests.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1. Next check: WATCH-003, 2026-09-29.
+
+---
+
+*Run completed 2026-09-23.*

@@ -48975,3 +48975,107 @@ DISPOSITION-981:
   PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
 
 Running totals after this run: PREMISE-213, MONITOR-614, REVISE-482, DISPOSITION-981.
+
+
+## 2026-09-23 — 15a / 15b returns and 15c dispositions (scheduled task `c2a2-lit-search-pipeline`)
+
+PROVENANCE (run): Origin 14a/14b intake of 2026-09-22 | Chain [14a/14b -> 15a, 15b -> 15c] |
+15a and 15b ran as two separate agent processes with disjoint context; neither read the other's files.
+
+RETURN-15a (summary): 1622 SUPPORTED/Strong · 1624 PARTIALLY-SUPPORTED/Weak + NOVELTY · 1627
+  PARTIALLY-SUPPORTED/Moderate · P-1070 PARTIALLY-SUPPORTED/Moderate (mechanism), Weak ("predictable
+  rates") · P-1072 SUPPORTED/Moderate-Strong · P-1076 SUPPORTED/Strong (clause 1), Moderate (clause 2).
+  Files: lit_search_results/for/<ITEM>_for.md.
+RETURN-15b (summary): 1622 PARTIALLY-CHALLENGED/Moderate · 1624 CHALLENGED/Strong · 1627
+  PARTIALLY-CHALLENGED/Moderate · P-1070 PARTIALLY-CHALLENGED/Weak · P-1072 PARTIALLY-CHALLENGED/Weak
+  (mostly corroborated) · P-1076 PARTIALLY-CHALLENGED/Moderate. SYSTEMIC-RISK (High):
+  against/SYSTEMIC-RISK-FLAG_2026-09-23_same-model-independence.md. Files: lit_search_results/against/.
+
+DISPOSITION-982:
+  Date: 2026-09-23 | Item: ASSUMPTION-1622 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED / Strong | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: the propagation mechanism is well precedented (1993 AIDS case-definition expansion);
+    15b's boundary condition is real — a ratio whose numerator and denominator share one definition and
+    one bias direction can survive.
+  Disposition: INCORPORATE (PREMISE-214, Confidence Moderate), narrowed.
+  Reasoning: the claim as written ("every downstream ratio") is too strong; the narrowed form keeps what
+    both directions agree on. The operative risk in this estate is MIXED definitions across sessions,
+    which is exactly what 14a observed (four PRS totals, three sessions).
+  Consistency check: compatible with PREMISE-211 / PREMISE-207 (publish the derivation with the figure).
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-983:
+  Date: 2026-09-23 | Item: ASSUMPTION-1624 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Weak (+NOVELTY) | 15b: CHALLENGED / Strong
+  Net assessment: weak support against a strong challenge (Kim et al., ICML 2025, correlated errors
+    across and within LLMs). The heuristic is lean REVISE, and the item is the pipeline's own
+    independence premise, so the stakes are structural.
+  Disposition: REVISE (REVISE-483, Urgency High).
+  Reasoning: 15a's own best support shows only partial independence on single-answer tasks and it flagged
+    the FOR/AGAINST setup itself as untested. 15b's steelman — opposite search goals change the queries —
+    is worth keeping, but it is an argument for DIVERSITY of retrieval, not for independence of
+    evidence. See the in-run observation in the run note: both agents cited the same core sources.
+  Consistency check: TENSION with PREMISE-004 (convergence of *independent* lines is confirmatory).
+    PREMISE-004 is not contradicted; its antecedent may not be met by this pipeline. Both flagged for
+    Tom; nothing overwritten. Pairs with PREMISE-216 (below) and the 15b SYSTEMIC-RISK flag.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status REVISION-FLAGGED.
+
+DISPOSITION-984:
+  Date: 2026-09-23 | Item: ASSUMPTION-1627 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: the threat is documented (data voids, Golebiewski & boyd 2018; PoisonedRAG, USENIX Sec
+    2025) but no study measures the base rate behind "disproportionately", and 15b notes phrase echo is
+    also the ordinary signature of genuine relevance.
+  Disposition: MONITOR (MONITOR-615, Priority High).
+  Reasoning: evenly matched and consequential. Operational interim reading: phrase echo is a trigger for
+    venue/DOI/author verification, not a ground for exclusion. Both agents followed that reading this
+    run (15a kept one close-echo arXiv preprint only after fetch-confirming author and posting).
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status MONITORING.
+
+DISPOSITION-985:
+  Date: 2026-09-23 | Item: PRESUMPTION-1070 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Weak
+  Net assessment: both agree on the mechanism (Google SRE Workbook; Prometheus staleness handling); both
+    independently reject "predictable rates" as stochastic language — under fixed schedules staleness is
+    deterministic by phase offset.
+  Disposition: INCORPORATE (PREMISE-215, Confidence Moderate), narrowed.
+  Reasoning: the correction strengthens the item for this estate: a fixed-schedule offset (06:03 vs 06:15)
+    produces the stale read every run, not at a rate, which is why the in-house fix (age check, FAIL if
+    > cadence) is sufficient.
+  Consistency check: compatible with PREMISE-208 (a run that writes nothing is caught); this is its
+    complement for a run that reads something old.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-986:
+  Date: 2026-09-23 | Item: PRESUMPTION-1072 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Moderate-Strong | 15b: PARTIALLY-CHALLENGED / Weak (mostly corroborated)
+  Net assessment: the assigned disconfirmatory search mostly corroborated. The only surviving challenge
+    is that resampling one model does yield SOME decorrelation (self-consistency, Wang et al. ICLR 2023).
+  Disposition: INCORPORATE (PREMISE-216, Confidence Moderate), narrowed from "comparable to a single
+    agent" to "substantially correlated; decorrelation partial".
+  Reasoning: a PRESUMPTION with strong support and weak challenge; the designers did not know they were
+    presuming it. Moderate, not High: several supporting sources are 2026 preprints, one of which (Ji
+    2026, arXiv 2608.00243) is close to the claim's phrasing and was kept by 15a only after fetch
+    confirmation — under MONITOR-615 that is a verify-don't-exclude case, recorded here.
+  Consistency check: supports REVISE-483; stands in tension with the independence reading of PREMISE-004
+    as applied to 15a/15b. Flagged with REVISE-483 for Tom.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-987:
+  Date: 2026-09-23 | Item: PRESUMPTION-1076 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Strong (clause 1), Moderate (clause 2) | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: both agents converged unprompted on the same limb: clause 1 (a non-discriminating
+    control cannot separate causes) is textbook (fault signatures; de Kleer & Williams 1987; Platt 1964);
+    clause 2 ("a control per cause") is sufficient but not necessary — ~log2(k) well-chosen tests suffice.
+  Disposition: INCORPORATE (PREMISE-217, Confidence High for the narrowed statement).
+  Reasoning: the narrowed premise is what the 09-22 diagnosis needed: the Day-001 control fails the same
+    way under both "egress blocked" and "stale /var/tmp/qcseg", so it discriminates nothing. The fresh-
+    TMPDIR re-run is a discriminating test and is sufficient on its own for two causes.
+  Consistency check: compatible with PREMISE-209 / REVISE-482 (verify the instrument; sample controls
+    without regard to verdict).
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+In-house (16 items, no literature owed; routed to monitor_queue.md): ASSUMPTION-1629, -1631, -1632,
+  -1634, -1635, -1636, -1637, -1646, -1647, -1648, -1652, -1654; PRESUMPTION-1071, -1073, -1075, -1077.
+
+Running totals after this run: PREMISE-217, MONITOR-615, REVISE-483, DISPOSITION-987.

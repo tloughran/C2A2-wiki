@@ -23378,3 +23378,204 @@ generalisation question on 09-20, was routed to the empirical lane and not run �
 
 ---
 
+
+
+## 2026-09-22 — 14b end-of-day surfacing
+
+PRESUMPTION-1070:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] Status readers presume the status artifact they read is current. The health check
+    read the newest line of `REFRESH_STATUS.md` as today's result; it was yesterday's line, written before
+    today's 06:15 refresh.
+  Evidence it was operative: ASSUMPTION-1636: "failed today" plus a diagnosis the refresh session
+    contradicted hours later.
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1636; PRESUMPTION-1062
+  Testability: testable in-house (require a timestamp compare in every status read)
+  Risk if wrong: High — a health report can be a day stale and still say "today"; every downstream
+    escalation inherits the lag.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1070
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the health run's timing (≈06:03) against the refresh (06:15) and the line it
+        quoted.
+    Current status: UNTESTED
+
+PRESUMPTION-1071:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] A task that fired on time is presumed healthy. The morning project status reported
+    "No failures to report" on a 5-FAIL day and counted 34 tasks against a registry of 71.
+  Evidence it was operative: ASSUMPTION-1637.
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: ASSUMPTION-1637; OPEN-246
+  Testability: testable in-house
+  Risk if wrong: Medium — the most-read status summary is the least informed.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1071
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from what the status script checks (firing) against what it omits (outputs).
+    Current status: UNTESTED
+
+PRESUMPTION-1072:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] Context separation is presumed to yield independence. The pipeline declared 15a/15b
+    independence "fixed" by running two concurrent agents — same model, same tools, same claim wording —
+    against its own incorporated PREMISE-004 ("correlated LLM errors mean same-model-family…").
+  Evidence it was operative: ASSUMPTION-1624; `presumptions.md` l.21804–21813.
+  Why it was unstated: culturally embedded
+  Type: methodological
+  Related decisions: ASSUMPTION-1624; ASSUMPTION-1593; PREMISE-004; DISPOSITION-409
+  Testability: testable via literature and in-house
+  Risk if wrong: High — PREMISE-209–213 were incorporated under an independence claim the estate's own
+    premise register disputes.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1072
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by checking the fix claim against the premise register.
+    Current status: UNTESTED
+
+PRESUMPTION-1073:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] The intake quality floor is presumed fixed while it is being relaxed without
+    decision. Recency waived for "significant but uncaptured" work (fourth instance), a Carroll card from an
+    episode blurb only, and an announcement card with candidate triplets — all on a zero-ingest day.
+  Evidence it was operative: ASSUMPTION-1628, -1629; daily run PROP-2026-09-22-004.
+  Why it was unstated: normative smuggling (a card per day reads as health)
+  Type: normative
+  Related decisions: ASSUMPTION-1501; OPEN-232; ASSUMPTION-1611
+  Testability: testable in-house (grade cards against the SKILL rules)
+  Risk if wrong: Medium — when the gate reopens, Tom reviews a queue whose admission rule drifted while he
+    was away.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1073
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three admissions that each cite an exception.
+    Current status: UNTESTED
+
+PRESUMPTION-1074:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] Task files are presumed to have a writer. Agents find and restate task-file defects
+    but treat the files as Tom's alone; with no designer speech for 23 days, five known defects accumulate,
+    one (the hold check) causing a governance breach today.
+  Evidence it was operative: ASSUMPTION-1651, -1648, -1631.
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: PRESUMPTION-1067; PRESUMPTION-1069; OPEN-251
+  Testability: framework commitment (who may amend a task file)
+  Risk if wrong: High — every known contract defect persists for the duration of the designer's absence, and
+    absence is now the norm.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1074
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from five defects carrying one identical non-repair reason.
+    Current status: UNTESTED
+
+PRESUMPTION-1075:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] The CLAUDE.md crash-proofing limits (2,000 nodes / 3,000 edges) are presumed either
+    still governing or harmlessly stale; nobody checks which, while the graph is reported at 5,189 / ~159k.
+  Evidence it was operative: ASSUMPTION-1652.
+  Why it was unstated: oversight
+  Type: scaling
+  Related decisions: PRESUMPTION-1068
+  Testability: testable empirically
+  Risk if wrong: Medium — either the visualization runs well past its safety envelope, or the documented
+    limits mislead contributors.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1075
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a reported size with no reference to its governing limit.
+    Current status: UNTESTED
+
+PRESUMPTION-1076:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] A single control probe is presumed to discriminate "environmental" from "per-item"
+    failure. Day 001 failing "identically" was read as egress; a local-write fault (`/var/tmp/qcseg`,
+    foreign uid) produces the same symptom and was found by the first run.
+  Evidence it was operative: ASSUMPTION-1647.
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1599; PREMISE-209
+  Testability: testable in-house
+  Risk if wrong: Medium — runs certify on the synthesis frame alone for a cause that may be a stale
+    directory.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1076
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two diagnoses resting on one control that does not separate them.
+    Current status: UNTESTED
+
+PRESUMPTION-1077:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] Designer holds are presumed enforced. They are enforced only by each run's reading
+    of the convention: Step 2 has no hold check, and one run marked the held Day 076 pass/pass today.
+  Evidence it was operative: ASSUMPTION-1648, -1633.
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: ASSUMPTION-1601; OPEN-253
+  Testability: testable in-house
+  Risk if wrong: High — a hold is Tom's only instrument for pausing work in his absence; today it held four
+    runs out of five.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1077
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from opposite rulings on one hold on one day.
+    Current status: UNTESTED
+
+PRESUMPTION-1078:
+  Date surfaced: 2026-09-22
+  Statement: [inferred] Self-referential: this pass presumes list position relative to last night's 14a
+    session delimits "today." `list_sessions` returns no timestamps; one session could not be dated.
+  Evidence it was operative: ASSUMPTION-1654.
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: ASSUMPTION-1654
+  Testability: testable in-house
+  Risk if wrong: Low — misdates at most the boundary sessions; noted so the method is visible.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1078
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from this pass's own coverage step.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-22, after 14a and against its output. **9 items (1070–1078).** Types: epistemic 3 · methodological 2 · normative 1 · scaling 1 · structural 2. Risk: High 4 · Low 1 · Medium 4. No Critical item tonight; PRESUMPTION-1069 (Critical, 09-21) stands unaddressed. Checked against 14a's items and against PRESUMPTION-1061–1069: budget commensurability (OPEN-250 / 1064) and empty-queue substitution (1063) recurred today and were not re-filed. 1072 contradicts an incorporated premise (PREMISE-004).*
+
+---

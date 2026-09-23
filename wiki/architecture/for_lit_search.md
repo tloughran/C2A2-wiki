@@ -23032,3 +23032,353 @@ appeared in past run notes.
 
 Backups taken before this run: `for_lit_search.md.bak.20260922-pre-15pipeline` and the same suffix on
 `lit_search_returns.md`, `monitor_queue.md`, `validated_premises.md`, `revision_flags.md`.
+
+
+## 2026-09-22 — 14a / 14b end-of-day intake
+
+**Routing note.** 22 items queued: 6 literature-bearing, 16 in-house. True unsearched backlog before this intake: 147 (`queue_scan.py`, lit pipeline 09-22). Per PRESUMPTION-1069 the in-house items enter a lane with no assigned worker; stated here rather than discovered downstream.
+
+ITEM: ASSUMPTION-1622 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1622
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Compared four PRS totals from three sessions against a source count.
+    Current status: UNTESTED
+  Claim to test: A count reported "for continuity" under an unresolved definitional gap propagates the gap
+    into every downstream ratio.
+  Literature lane: measurement validity; operational definitions; metric governance
+  In-house test: Adopt one pattern in a shared script; diff all counters against it (OPEN-246).
+
+ITEM: ASSUMPTION-1624 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1624
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the fix claim; verified the reported writes; flagged the tension with PREMISE-004 to
+        14b.
+    Current status: UNTESTED
+  Claim to test: Two same-model agents with separate contexts but identical tools and claim wording produce
+    searches independent enough to count as FOR and AGAINST evidence.
+  Literature lane: correlated errors in same-family LLM ensembles; adversarial collaboration; independence
+    of replications
+  In-house test: Diff the two agents' query sets and result URLs for overlap on the 09-22 cohort.
+
+ITEM: ASSUMPTION-1627 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1627
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the candidate the pipeline addressed to 14a/14b.
+    Current status: UNTESTED
+  Claim to test: Search results that echo a query's idiosyncratic phrasing are disproportionately synthetic,
+    adversarial or self-citing.
+  Literature lane: SEO/LLM-generated content contamination; prompt injection via retrieved documents;
+    citation verification
+  In-house test: Require a DOI/venue resolution check for every premise citation; count failures.
+
+ITEM: ASSUMPTION-1629 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1629
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted the rule; checked where the card landed. The review gate has no "monitor-only"
+        disposition, so an approval would promote exactly what the note forbids.
+    Current status: UNTESTED
+  Claim to test: "filed explicitly as a monitoring node with a note that no triplet should be promoted on an
+    announcement alone." The Hoffman card nevertheless sits in `pending/` and carries candidate triplets
+    (verified at source).
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1631 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1631
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Placed two same-day schedule claims side by side; neither run reads the other.
+    Current status: UNTESTED
+  Claim to test: Schedule conflict. Agent 16: "the daily run now fires at 04:35, *before* the Monday
+    specialists, so PROP-2026-09-21-002 landed after page generation and sits on no review page" —
+    "recurring by construction." The daily run's own report still says "Next run: tomorrow 8am", after the
+    7am specialists.
+  In-house test: See register entry; testable empirically (registry cron fields).
+
+ITEM: ASSUMPTION-1632 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1632
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted a dated risk with no owner.
+    Current status: UNTESTED
+  Claim to test: PROP-2026-09-02-002's 09-24 retrieval condition "has nothing watching it", and 09-24 is
+    also the LEAKAGE ruling deadline — two days out.
+  In-house test: See register entry; testable empirically.
+
+ITEM: ASSUMPTION-1634 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1634
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; a hypothesis in its twentieth day, never tested.
+    Current status: UNTESTED
+  Claim to test: "The likely root cause is that Chrome isn't running when this task fires overnight." /
+    signing into the app's browser pane "would make the fallback path viable."
+  In-house test: See register entry; testable empirically.
+
+ITEM: ASSUMPTION-1635 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1635
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Compared a stated recomputation against source.
+    Current status: UNTESTED
+  Claim to test: "Counts were recomputed, not copied." Yet the same session reports pending **34** (source:
+    33), PRS **871** (source: 867), active findings **11** (daily run: 24), zero-ingest days **10** (daily
+    run: 12). Pending was reported as 29, 32, 33 and 34 by four sessions today.
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1636 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1636
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Checked a diagnosis against a sibling that ran the failing step.
+    Current status: UNTESTED
+  Claim to test: "Not the usual transient stale-DB case: the runtime is healthy, the script itself is
+    erroring." The OpenStory run the same morning established disk exhaustion, not a script fault; the
+    health check read the 09-21 FAIL line as today's.
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1637 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1637
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Compared status claim with same-day scheduler FAILs.
+    Current status: UNTESTED
+  Claim to test: "No failures to report." — morning project status, on a day the scheduler check recorded
+    **5 FAIL**, metabolism frozen 18.7 days, OpenStory failing a third day. Its task count (34) differs from
+    the registry's 71.
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1646 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1646
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Recorded so that today's clean count is not read as a refutation of 1597 — different cohort.
+    Current status: UNTESTED
+  Claim to test: Zero unresolved citation ids across ~200 checked by reviewers and QC today (15, 47+3, 93,
+    38). The runs did not examine the 66–115 cluster where ASSUMPTION-1597 found fabricated `FLAG-NN` ids.
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1647 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1647
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Placed two incompatible diagnoses side by side; the local-write cause did not propagate.
+    Current status: UNTESTED
+  Claim to test: QC 04:25 fetched all six transcripts and found a leftover `/var/tmp/qcseg` owned by another
+    uid makes the write fail *after* the fetch, which "reads as a network outage." Later runs: "the Day 001
+    control fails identically, so it is environmental, not per-video" — "YouTube egress blocked."
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1648 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1648
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted opposite rulings on one designer hold; the Step-2 gap predicted this the evening
+        before.
+    Current status: UNTESTED
+  Claim to test: "I left all three unmarked, because marking a held pair would stop the queue from flagging
+    it again." Four runs held Day 076; one run (e02f71c9) **marked it pass/pass**, arguing selection is on
+    `fidelity_checked: false`.
+  In-house test: See register entry; testable in-house.
+
+ITEM: ASSUMPTION-1652 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1652
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; not verified at source.
+    Current status: UNTESTED
+  Claim to test: Wiki graph **5,189 nodes, ~159,000 links, 62 MB**, against the CLAUDE.md crash-proofing
+    limits of 2,000 nodes / 3,000 edges.
+  In-house test: See register entry; testable empirically.
+
+ITEM: ASSUMPTION-1654 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1654
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Declared coverage method, its uncertainty and the budget breach.
+    Current status: UNTESTED
+  Claim to test: Self-referential. This pass bounded "today" as the 27 sessions listed above last night's
+    14a/14b session (9c5ddd40), because `list_sessions` gives no timestamps; one session (4a0e60f3) could
+    not be dated from its text. Readers cost ~290k subagent tokens; this pass exceeds the 4k/30k guideline
+    by …
+  In-house test: See register entry; testable in-house.
+
+ITEM: PRESUMPTION-1070 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1070
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the health run's timing (≈06:03) against the refresh (06:15) and the line it
+        quoted.
+    Current status: UNTESTED
+  Claim to test: Monitoring systems that report status without checking the age of the status datum produce
+    stale-alarm errors at predictable rates.
+  Literature lane: observability; staleness of monitoring data; SRE alerting practice
+  In-house test: Add `age = now - line_ts` to the health script; FAIL if > cadence.
+
+ITEM: PRESUMPTION-1071 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1071
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from what the status script checks (firing) against what it omits (outputs).
+    Current status: UNTESTED
+  Claim to test: A task that fired on time is presumed healthy. The morning project status reported "No
+    failures to report" on a 5-FAIL day and counted 34 tasks against a registry of 71.
+  In-house test: See register entry; testable in-house.
+
+ITEM: PRESUMPTION-1072 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1072
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by checking the fix claim against the premise register.
+    Current status: UNTESTED
+  Claim to test: Parallel same-model agents with separate contexts show error correlation comparable to a
+    single agent when prompt wording and tools are shared.
+  Literature lane: LLM ensemble diversity; self-consistency limits; adversarial collaboration
+  In-house test: Overlap of FOR/AGAINST query strings and top-10 URLs on the 09-22 cohort.
+
+ITEM: PRESUMPTION-1073 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1073
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three admissions that each cite an exception.
+    Current status: UNTESTED
+  Claim to test: The intake quality floor is presumed fixed while it is being relaxed without decision.
+    Recency waived for "significant but uncaptured" work (fourth instance), a Carroll card from an episode
+    blurb only, and an announcement card with candidate triplets — all on a zero-ingest day.
+  In-house test: See register entry; testable in-house (grade cards against the SKILL rules).
+
+ITEM: PRESUMPTION-1075 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1075
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a reported size with no reference to its governing limit.
+    Current status: UNTESTED
+  Claim to test: The CLAUDE.md crash-proofing limits (2,000 nodes / 3,000 edges) are presumed either still
+    governing or harmlessly stale; nobody checks which, while the graph is reported at 5,189 / ~159k.
+  In-house test: See register entry; testable empirically.
+
+ITEM: PRESUMPTION-1076 [QUEUED] [SEARCHED-15a: 2026-09-23] [SEARCHED-15b: 2026-09-23] [DISPOSITIONED-15c: 2026-09-23]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1076
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two diagnoses resting on one control that does not separate them.
+    Current status: UNTESTED
+  Claim to test: A single positive control cannot discriminate between failure causes that share a symptom;
+    differential diagnosis needs a control per candidate cause.
+  Literature lane: diagnostic reasoning; fault isolation; controls in experimental design
+  In-house test: Re-run the fetch with a fresh TMPDIR; if it succeeds, egress is exonerated.
+
+ITEM: PRESUMPTION-1077 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-23 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1077
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from opposite rulings on one hold on one day.
+    Current status: UNTESTED
+  Claim to test: Designer holds are presumed enforced. They are enforced only by each run's reading of the
+    convention: Step 2 has no hold check, and one run marked the held Day 076 pass/pass today.
+  In-house test: See register entry; testable in-house.
+
+
+## 2026-09-23 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Cohort worked in full.** The 2026-09-22 14a/14b end-of-day intake, 22 items: 6 literature-bearing,
+searched by 15a and 15b as two separate agent processes (disjoint context; neither read the other's
+directory) and dispositioned by 15c; 16 in-house items tagged [NO-LIT-OWED: 2026-09-23] and routed to
+`monitor_queue.md`. None of this cohort is left searched-but-undispositioned.
+
+Outcomes: **PREMISE-214, -215, -216, -217** (all four narrowed from the item as written), **REVISE-483**
+(High), **MONITOR-615** (High). Records DISPOSITION-982..987 in `lit_search_returns.md`. 15b raised
+`against/SYSTEMIC-RISK-FLAG_2026-09-23_same-model-independence.md` (High).
+
+**Headline for Tom.** The pipeline tested its own independence premise and it failed: ASSUMPTION-1624
+-> REVISE-483; PRESUMPTION-1072 -> PREMISE-216. Same-model FOR/AGAINST agents are not independent
+lines of evidence in PREMISE-004's sense. The "both directions converged unprompted" argument used in
+the 09-22 note (and in DISPOSITION-987 today) should be read as retrieval diversity, not confirmation,
+until the overlap test runs.
+
+**Declared defects and open items**
+1. **Backlog not reduced.** `queue_scan.py` before this run: 169 bare literature-lane items. That figure
+   includes this cohort's 22, because the scanner does not recognise the tag `[IN-HOUSE — no literature
+   owed]` used by the 09-22 intake. After re-tagging, the true backlog is back to ~147 (re-scan after this run: 147, 0 searched-but-undispositioned).
+   The 15d re-trigger lane was again not entered. Fifth consecutive new-intake-only cycle.
+2. **Tag-vocabulary drift** between 14a/14b intake (`[IN-HOUSE — no literature owed]`) and
+   queue_scan.py (`[NO-LIT-OWED]` / `[QUEUED-EMPIRICAL]`). Under PREMISE-214 this is a definition gap in a
+   count. Candidate for the next 14a/14b pass; not written into their registers from here.
+3. **Budget breach.** Subagent searches ~189k tokens; the run exceeds the 4k/30k guideline. Under
+   PREMISE-213 this is bound to the MONITOR-613 / ASSUMPTION-1595 design question already with Tom.
+4. **ASSUMPTION-1632 is due tomorrow (09-24)** and has no worker (PRESUMPTION-1069 / OPEN-249(b)).
+5. **Citation hygiene held.** Excluded: several GitHub issues/repos mirroring claims, aggregator pages,
+   vendor blogs. One close-echo preprint (Ji 2026, arXiv 2608.00243) kept after fetch confirmation and
+   marked. One arXiv fetch (2603.06612) was refused by the fetch tool; its authors are unconfirmed.
+
+Backups: `*.bak.20260923-pre-15pipeline` on for_lit_search, lit_search_returns, monitor_queue,
+validated_premises, revision_flags.

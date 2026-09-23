@@ -24478,3 +24478,30 @@ recorded rather than left to be discovered.
   re-triggers, 16 monitors deferrals, and none measures. 14b routed it to OPEN-249(b) as needing Tom.
   15c concurs and adds only this: it is the structural explanation for every item in the paragraphs
   above, and it cannot be closed by the network that surfaced it.
+
+
+---
+## Added 2026-09-23 by 15c
+
+### MONITOR-615:
+  Source item: ASSUMPTION-1627 | DISPOSITION-984 | Priority: High | Cadence: Weekly
+  Claim: search results that echo a query's idiosyncratic phrasing are disproportionately synthetic,
+    adversarial or self-citing.
+  Interim rule: echo triggers verification (venue, DOI, named author, fetch), not exclusion.
+  What would change the disposition: any measured base rate of synthetic/injected results among
+    close-echo vs. non-echo results (-> INCORPORATE or REVISE); the in-house test (DOI/venue resolution
+    check on every premise citation, count failures) run over PREMISE-200..217.
+
+**In-house lane, 2026-09-22 intake (16 items, no literature owed).** Tests as stated in the register
+entries; no worker is assigned (PRESUMPTION-1069 / OPEN-249(b) still stands):
+  ASSUMPTION-1629 (Hoffman monitoring card in `pending/` with candidate triplets), -1631 (daily-run vs.
+  specialists schedule conflict; check registry cron fields), -1632 (PROP-2026-09-02-002 09-24 retrieval
+  condition unwatched — **due tomorrow**), -1634 (Chrome-not-running hypothesis, day 20 untested),
+  -1635 ("recomputed, not copied" vs. four divergent counts; read under PREMISE-214), -1636 (health check
+  read the 09-21 FAIL as today's; read under PREMISE-215), -1637 ("No failures" on a 5-FAIL day),
+  -1646 (clean citation-id count did not cover the 66–115 cluster), -1647 (QC fetch: egress vs. stale
+  `/var/tmp/qcseg`; read under PREMISE-217 — the fresh-TMPDIR re-run discriminates), -1648 (Day 076 hold
+  marked pass/pass by one run), -1652 (graph 5,189 nodes / ~159k links vs. CLAUDE.md 2,000 / 3,000 limits),
+  -1654 (coverage bound of the 09-22 14a/14b pass); PRESUMPTION-1071 (fired-on-time presumed healthy),
+  -1073 (intake quality floor relaxed without decision), -1075 (crash-proofing limits stale or governing —
+  same fact as 1652), -1077 (designer holds enforced only by convention; same fact as 1648).

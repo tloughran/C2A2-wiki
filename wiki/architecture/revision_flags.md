@@ -15716,3 +15716,27 @@ REVISE-482:
     could be reused, and it is cheaper to fix before it propagates than after.
   Note: this REVISE and PREMISE-209 come from one item and are not in tension. Uniformity triggers an
     instrument check (209); the check must not be aimed by the verdict (482).
+
+
+---
+## Added 2026-09-23 by 15c
+
+REVISE-483:
+  Date: 2026-09-23 | Source item: ASSUMPTION-1624 | DISPOSITION-983 | Urgency: High
+  Premise challenged: that 15a and 15b, as same-model agents with separate contexts but shared tools and
+    shared claim wording, produce searches independent enough to count as separate FOR and AGAINST
+    evidence.
+  Evidence: 15b CHALLENGED/Strong (Kim et al. ICML 2025; Zhang et al. arXiv:2502.08788); 15a found only
+    weak partial support and flagged NOVELTY. PREMISE-216, validated in this run, states the same
+    finding from the other direction. 15b raised a SYSTEMIC-RISK flag (High) on the same point.
+  In-run observation: on 1624 and P-1072 the two "independent" agents cited overlapping core sources
+    (Kim 2025, Wang 2023, Du 2024). A thin literature explains part of that; it is still one informal
+    instance of the item's own in-house test.
+  What is at risk: every INCORPORATE that rests on "FOR and AGAINST converged" (e.g. DISPOSITION-981,
+    -987 reasoning); PREMISE-004's applicability to this pipeline; the 15c heuristic table.
+  Recommended action (for Tom): (1) reclassify FOR/AGAINST as a retrieval-diversity device, not two
+    independent lines of evidence, and drop "converged unprompted" as a confidence-raising argument in
+    15c reasoning until measured; (2) run the stated in-house test — query-string and top-10 URL overlap
+    for the 09-22 and 09-23 cohorts; (3) if overlap is high, consider putting one side on a different
+    model family or a different search backend.
+  Consistency: flagged together with PREMISE-004 and PREMISE-216; nothing overwritten.

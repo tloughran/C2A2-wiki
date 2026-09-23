@@ -1993,7 +1993,7 @@ var VoiceGuide = (function() {
     var base = [
       "You are the spoken guide to C2A2 (the Community Dialogue Accelerator/Detector System) -- a particle accelerator for traditions of thought: infrastructure that lets intellectual and spiritual lineages become visible, interact, and reveal themselves to each other. It is a concrete response to MacIntyre's vision of a place where rival traditions of enquiry are made answerable to one another.",
       "LANGUAGE: Speak ENGLISH by default -- greeting and every reply -- unless the user speaks another language to you first, in which case match theirs. Do not open in any language but English.",
-      "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY by calling run_command with ONE command string in the command language (CCL) below. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
+      "HOW YOU ACT AND PERCEIVE: You control the explorer ONLY through two tools: run_command runs ONE command string in the command language (CCL) below; plan_and_run hands a multi-step or analytic request to the planner, which runs and checks the steps and returns an answer for you to speak. You cannot see the screen; to learn the current state, run the command 'what'. NEVER state a filter, selection, tab, or count you have not just gotten back from a run_command or plan_and_run result -- answering a live-state question without running 'what' first is fabrication, the worst thing you can do here.",
       "CCL grammar (exactly one command per call; names lowercase):",
       "  only <groups...> | show <groups...> | hide <groups...> | all | none   -- filter the graph by tradition/structure name",
       "  ...the same five verbs take a FAMILY qualifier: hide edges mention | only edges wikilink | all tags | none layers",
@@ -2027,7 +2027,7 @@ var VoiceGuide = (function() {
       "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
       "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
-      "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'how do Kastrup and Hoffman connect?' -> focus kastrup ~ hoffman; 'reset the whole view' -> all; 'what am I seeing?' -> what."
+      "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'reset the whole view' -> all; 'what am I seeing?' -> what. SEVERAL STEPS OR A QUESTION ABOUT HOW THINGS CONNECT -> plan_and_run with the request in the user's words, e.g. 'keep Levin, add Friston, drop the Summa', 'how do Kastrup and Hoffman connect?'. Speak its answer; if it reports not_as_asked, say which steps did not work."
     ].join("\n");
     if (introText) {
       base += "\n\nGENERAL INTRODUCTION: when anyone asks for an introduction or overview of the site, or where to start, say this, close to word for word:\n" + introText;
@@ -2048,13 +2048,24 @@ var VoiceGuide = (function() {
         tools: [{
           type: 'function',
           name: 'run_command',
-          description: 'Execute exactly one CCL command string against the explorer (this is your ONLY way to act on or perceive the view). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), spin left|right|off (THE SAME TURN, LEFT RUNNING -- a slow turntable, about one revolution every 22 seconds. It is the only command that is still happening after you have finished speaking, so SAY THAT IT IS RUNNING and that "stop" ends it. Offer it when someone wants to take the shape of a 3D view in without steering, or asks to "look around" it; `stop` halts it and names what it halted, and leaving the tab stops it too), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
+          description: 'Execute exactly one CCL command string against the explorer (your way to run ONE command; for anything needing several steps or an analytic answer, use plan_and_run). CCL verbs: only/show/hide/all/none (CUT THE DATA by group name. A tab may have SEVERAL INDEPENDENT AXES -- the Narrative Connectome has traditions, disciplines and years -- and they compose: a point must pass every axis at once. `only levin` narrows the axis levin belongs to and LEAVES THE OTHERS ALONE, so cuts stack: `only levin` then `only 1990s` gives Levin in the nineties. Name a whole axis to move all of it at once (`hide disciplines`, `only traditions`). `all` restores everything; the result always names each axis and the count that survived, so relay THAT rather than what you asked for), open/close (a node article -- and on a tab drawn in three dimensions, opening something also CENTRES the view on it, so "centre on X" / "take me to X" is `open X`, not a camera command), find/clear (highlight-SEARCH of the graph by text -- NOT the mouse selection the user made on the page, which belongs to `read`), focus <a> ~ <b> (links between groups), go/back (switch tab, FOLLOW A PAGE LINK by its text, ADDRESS A PLACE INSIDE A STRUCTURED TEXT by naming its coordinates where the tab has them -- e.g. `go prima pars question 18 article 1`, `go to question 4, article 2` -- REACH A RENDERING of what is open by name (`go commentary`, `go transcript`), FIND A SECTION BY WHAT IT IS ABOUT where the tab indexes its own titles (`go a question on angelic knowledge` lands on The medium of angelic knowledge; several matches come back named so you can ask which) -- or go next|previous|first|last to walk the tab row in its on-screen order), pick random|first|last and next|previous (walk the revealed nodes), read|stop (read aloud: bare `read` reads THE HIGHLIGHT THE USER MADE when they have text selected on the page, otherwise the open article -- `read all` forces the whole article, `read details` the held-back provenance, and on a tab that declares renderings `read <rendering>` turns to it first, e.g. `read the commentary` / `read the transcript`), summarize (returns the TEXT of the highlight or the open article for YOU to compress into about 50 spoken words -- never read it out), fit (zoom to fit -- on a 3D tab this is the way back to the whole thing), zoom in|out (step the zoom), pan left|right|up|down (move the view -- pan left shows what is to the left), rotate left|right|up|down (ON A TAB DRAWN IN THREE DIMENSIONS, swing the camera AROUND what it is looking at: left/right go round it, up/down raise and lower your eye. Say it whenever the user wants to see something from another side, or says a node is hidden behind another -- turning is the answer to occlusion, zooming is not. Flat tabs say so plainly), spin left|right|off (THE SAME TURN, LEFT RUNNING -- a slow turntable, about one revolution every 22 seconds. It is the only command that is still happening after you have finished speaking, so SAY THAT IT IS RUNNING and that "stop" ends it. Offer it when someone wants to take the shape of a 3D view in without steering, or asks to "look around" it; `stop` halts it and names what it halted, and leaving the tab stops it too), undo/redo/reset/restore, what/where/help (read the current view). One command per call, names lowercase. Returns { ok, did } on success, or an error: ambiguous (with candidates), unresolved, or unsupported_here (with the supported list). Run "what" whenever you need the live selection, filters, or counts.',
           parameters: {
             type: 'object',
             properties: {
               text: { type: 'string', description: 'One CCL command, e.g. "only levin friston", "go metabolism", "what".' }
             },
             required: ['text']
+          }
+        }, {
+          type: 'function',
+          name: 'plan_and_run',
+          description: 'Hand a MULTI-STEP or ANALYTIC request to the planner, a stronger model that runs the CCL steps itself, reads the view back after each one, corrects once if a step failed, and returns a finished answer. Use it whenever the request needs more than one command ("keep Levin, add Friston, drop the Summa"), or asks how things connect, compare, or why. Pass the request in the user\'s own words. SPEAK the returned `answer` close to as written. If `not_as_asked` is present, say plainly which steps did not come out as asked. Use run_command only for a single simple command.',
+          parameters: {
+            type: 'object',
+            properties: {
+              request: { type: 'string', description: 'The user request, in their words.' }
+            },
+            required: ['request']
           }
         }],
         tool_choice: 'auto'
@@ -2568,6 +2579,18 @@ var VoiceGuide = (function() {
           } else {
             pending = Promise.resolve({ ok: false, error: 'command engine not ready' });
           }
+        } else if (m.name === 'plan_and_run') {
+          pending = (typeof window.C2A2Plan === 'function')
+            ? window.C2A2Plan(String(args.request || '')).then(function (res) {
+                var o = { ok: !!res.ok, answer: res.answer || '', steps: (res.trace || []).map(function (t) { return t.cmd + ' -> ' + t.spoken; }) };
+                if (!res.ok) { o.error = res.error; }
+                if (res.failed && res.failed.length) {
+                  o.not_as_asked = res.failed.map(function (t) { return t.cmd + ': ' + (t.problems.join('; ') || t.spoken); });
+                  o.warning = 'SOME STEPS DID NOT COME OUT AS ASKED. Say so plainly.';
+                }
+                return o;
+              }, function (e) { return { ok: false, error: (e && e.message) || String(e) }; })
+            : Promise.resolve({ ok: false, error: 'planner not loaded' });
         } else {
           pending = Promise.resolve({ ok: false, error: 'unknown tool: ' + m.name });
         }
@@ -2818,7 +2841,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=be299f61c7"></script>
+<script src="lib/c2a2-commandline.js?v=cad9ab966b"></script>
 <script>
 (function () {
   'use strict';
@@ -5888,6 +5911,10 @@ var VoiceGuide = (function() {
     'start_here.html': 'start_here.default', 'what_is_c2a2.html': 'what_is_c2a2.default',
     'what_is_saying.html': 'what_is_saying.default', 'rc_sandbox_notebook.html': null
   };
+  var routeGrammar = null;
+  fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); })
+    .then(function (j) { if (window.CommandLine) { routeGrammar = window.CommandLine.compileGrammar(j); } }).catch(function () { /* routes to planner */ });
+  function grammarForRoute() { return routeGrammar; }
   var cache = {};
   function getText(url) {
     if (cache[url] !== undefined) { return Promise.resolve(cache[url]); }
@@ -5909,11 +5936,6 @@ var VoiceGuide = (function() {
     return getText('voice_guide/knowledge/00_project.md').then(introText);
   };
 
-  var SYSTEM = 'You are the guide to C2A2 (Community Context for AI Alignment), answering questions typed into the search box of the C2A2 Explorer. ' +
-    'Answer ONLY from the SITE KNOWLEDGE and PAGE KNOWLEDGE given. Write plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words. ' +
-    'Do not state any count or total as a current fact. If the knowledge does not answer the question, say so plainly and name the page on the site most likely to help. ' +
-    'Reply with the answer text only.';
-
   function open(q) { qEl.textContent = q; drawer.classList.add('open'); }
   function close() { drawer.classList.remove('open'); }
   function render(text, pending, metaHtml) {
@@ -5921,57 +5943,85 @@ var VoiceGuide = (function() {
   }
   function esc(t) { return String(t).replace(/[&<>]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]; }); }
 
+  // ── PLANNER (item 4, approved 2026-09-22) ──────────────────────────────
+  // Multi-step or analytic requests go to the strong model (broker alias
+  // "answer"); CODE runs its CCL steps through CCLRun, reads each back
+  // (res.verify), and returns the results for one correction pass and the
+  // answer. The loop itself lives in the engine (CommandLine.runPlan, tested
+  // in scripts/test_voice_ccl.cjs). The row-1 box and the voice guide's
+  // plan_and_run tool both come here: one planner, two mouths.
+  var verbsText = null;
+  function getVerbs() {
+    if (verbsText !== null) { return Promise.resolve(verbsText); }
+    return fetch('voice_guide/verbs.json?v=' + Date.now()).then(function (r) { return r.json(); })
+      .then(function (j) { verbsText = window.CommandLine.verbLines(j); return verbsText; })
+      .catch(function () { return ''; });
+  }
+  function pageKnowledge() {
+    var file = pageFile(), key = KNOWLEDGE.hasOwnProperty(file) ? KNOWLEDGE[file] : null;
+    return Promise.all([
+      getText('voice_guide/knowledge/00_project.md'),
+      key ? getText('voice_guide/knowledge/' + key + '.md') : Promise.resolve('')
+    ]).then(function (k) {
+      return { project: k[0], text: 'SITE KNOWLEDGE:\n' + stripFront(k[0]) + (k[1] ? '\n\nPAGE KNOWLEDGE (' + file + '):\n' + stripFront(k[1]) : '') };
+    });
+  }
+  window.C2A2Plan = function (request) {
+    if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
+    if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
+    return Promise.all([getVerbs(), pageKnowledge()]).then(function (v) {
+      return window.CommandLine.runPlan(request, {
+        verbs: v[0], knowledge: v[1].text,
+        state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
+        run: function (cmd) { return window.CCLRun(cmd); },
+        ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user }); }
+      });
+    });
+  };
+  function planMeta(res) {
+    var h = '';
+    if (res.trace && res.trace.length) {
+      h += 'Steps: ' + res.trace.map(function (t) { return esc(t.cmd) + (t.ok && !t.problems.length ? '' : ' <b style="color:#C45B5B">(!)</b>'); }).join(' &rarr; ');
+    }
+    if (res.failed && res.failed.length) {
+      h += '<br><span style="color:#C45B5B">Not as asked: ' + res.failed.map(function (t) { return esc(t.cmd + ': ' + (t.problems.join('; ') || t.spoken)); }).join(' | ') + '</span>';
+    }
+    return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '');
+  }
+
   var seq = 0;
   function ask() {
     var q = input.value.trim();
     if (!q) { clearAll(); return; }
     var my = ++seq;
     open(q);
-    var findLine = '';
-    // 1. Light matches on this page -- the journaled, undoable CCL `find`.
-    try {
-      // A box entry that opens with a connective extends the standing cut.
-      var fcmd = /^(also|except|within)\s+\S/i.test(q) ? q : 'find ' + q;
-      var r = (typeof window.CCLRun === 'function') ? window.CCLRun(fcmd) : null;
-      // Failures are shown too: "nothing matched" is an answer the user needs.
-      if (r && r.spoken) { findLine = r.spoken; }
-    } catch (e) { /* the answer still comes */ }
-    var findHtml = findLine ? '<span class="ask-find">On this page: ' + esc(findLine) + '</span>' : '';
-    var file = pageFile(), key = KNOWLEDGE.hasOwnProperty(file) ? KNOWLEDGE[file] : null;
-    Promise.all([
-      getText('voice_guide/knowledge/00_project.md'),
-      key ? getText('voice_guide/knowledge/' + key + '.md') : Promise.resolve('')
-    ]).then(function (k) {
-      if (my !== seq) { return; }
-      // 2a. A request for an introduction gets the introduction, as written. No model call.
-      var intro = introText(k[0]);
-      if (intro && INTRO_RE.test(q)) { render(intro, false, findHtml); return; }
-      render('Thinking…', true, findHtml);
-      var knowledge = 'SITE KNOWLEDGE:\n' + stripFront(k[0]) + (k[1] ? '\n\nPAGE KNOWLEDGE (' + file + '):\n' + stripFront(k[1]) : '');
-      // 2b. A page that knows its own contents answers first (c2a2Ask); else the guide answers from knowledge.
-      var w = null; try { w = frame.contentWindow; } catch (e) { w = null; }
-      var tabAsk = (w && typeof w.c2a2Ask === 'function') ? w.c2a2Ask(q, { knowledge: knowledge }) : Promise.resolve(null);
-      return Promise.resolve(tabAsk).catch(function (e) { return { error: (e && e.message) || String(e) }; }).then(function (res) {
+    // ROUTER (deterministic): one command or a short search runs here, free.
+    var route = (window.CommandLine && grammarForRoute()) ? window.CommandLine.routeRequest(q, grammarForRoute()).route : 'plan';
+    if (route === 'plan') {
+      pageKnowledge().then(function (k) {
+        var intro = introText(k.project);
+        if (intro && INTRO_RE.test(q)) { if (my === seq) { render(intro, false, ''); } return; }
         if (my !== seq) { return; }
-        if (res && res.answer) {
-          render(res.answer, false, findHtml + (res.label ? ' &middot; ' + esc(res.label) : '') +
-            (res.sources && res.sources.length ? '<br>Sources: ' + res.sources.map(esc).join(' | ') : ''));
-          return;
-        }
-        if (!window.C2A2Search) { render('The answer service did not load. Matches on this page are lit.', false, findHtml); return; }
-        return window.C2A2Search.callBroker({ action: 'enrich', system: SYSTEM, user: knowledge + '\n\nQUESTION: ' + q })
-          .then(function (p) {
-            if (my !== seq) { return; }
-            var text = (p && typeof p.text === 'string') ? p.text.trim() : '';
-            render(text || '(no answer came back)', false, findHtml + ' &middot; answered from the site guide' + (p && p.model ? ' (' + esc(p.model) + ')' : ''));
-          });
+        render('Working it out…', true, '');
+        return window.C2A2Plan(q).then(function (res) {
+          if (my !== seq) { return; }
+          if (!res.ok) { render('The planner could not be read (' + res.error + '). Nothing further was changed.', false, planMeta(res)); return; }
+          render(res.answer || '(no answer came back)', false, planMeta(res));
+        });
+      }).catch(function (e) {
+        if (my !== seq) { return; }
+        var code = (e && e.message) || 'unknown';
+        render((code === 'free-limit' || code === 'rate-limited') ? 'The free question allowance for today is used up.' : 'The answer service failed (' + code + ').', false, '');
       });
-    }).catch(function (e) {
-      if (my !== seq) { return; }
-      var code = (e && e.message) || 'unknown';
-      var why = (code === 'free-limit' || code === 'rate-limited') ? 'The free question allowance for today is used up.' : 'The answer service failed (' + code + ').';
-      render(why + (findLine ? ' Matches on this page are still lit.' : ''), false, findHtml);
-    });
+      return;
+    }
+    if (route === 'direct') {
+      var cmd = q;
+      var rr = null;
+      try { rr = window.CCLRun ? window.CCLRun(cmd) : null; } catch (e) { rr = null; }
+      render((rr && rr.spoken) || '(no result)', false, 'ran directly on this page &middot; no model call');
+      return;
+    }
   }
   function clearAll() {
     seq++; input.value = ''; close();

@@ -7861,3 +7861,75 @@ PREMISE-213:
     Under PREMISE-213 that declaration discharges nothing. The breach is bound to a decision in the run
     note — the fixed cost is named, the reducible part is named, and the design question is put to Tom
     rather than left in the disclosure.
+
+
+---
+## Added 2026-09-23 by 15c (scheduled task `c2a2-lit-search-pipeline`)
+
+PREMISE-214:
+  Date validated: 2026-09-23
+  Source item: ASSUMPTION-1622
+  Statement: A count reported under an unresolved or inconsistently applied definition carries that gap
+    into every ratio built from it, unless numerator and denominator are demonstrably drawn under one
+    definition with one bias direction. Counts merged across sessions or definitions must declare the
+    definition used, or the downstream ratio is not interpretable.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: CDC MMWR (1994) on the 1993 AIDS surveillance case-definition expansion; measurement-
+    validity / operational-definition literature (see for/ASSUMPTION-1622_for.md).
+  Challenges noted: ConcePTION (Am J Epidemiol) and misclassification-direction work — consistent,
+    one-directional error can leave ratios valid (against/ASSUMPTION-1622_against.md).
+  Confidence: Moderate
+  Applicable to: every counter in the estate (PRS, pending, active findings, zero-ingest days); OPEN-246;
+    queue_scan.py; ASSUMPTION-1635.
+  Re-check due: 2026-12-23 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-215:
+  Date validated: 2026-09-23
+  Source item: PRESUMPTION-1070
+  Statement: A status report that does not check the age of the datum it reports will report stale state
+    as current. Under fixed schedules the error is deterministic by phase offset between writer and
+    reader, not a stochastic rate; an age check (FAIL if age > cadence) closes it.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Google SRE Workbook, Monitoring chapter; Prometheus staleness handling (Brazil 2017).
+  Challenges noted: 15b — rate language does not fit fixed schedules (incorporated into the statement);
+    "Update or Wait" (INFOCOM 2016) age-of-information work.
+  Confidence: Moderate
+  Applicable to: scheduler health check; morning project status; any agent that quotes a log line as today's.
+  Re-check due: 2026-12-23 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-216:
+  Date validated: 2026-09-23
+  Source item: PRESUMPTION-1072
+  Statement: Parallel agents on the same model, sharing prompt wording and tools, have substantially
+    correlated errors even with separate contexts; resampling decorrelates them only partially. Their
+    agreement is weaker evidence than agreement between genuinely independent methods.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Kim et al., "Correlated Errors in Large Language Models," ICML 2025; Ji 2026, arXiv
+    2608.00243 (preprint; close-echo, fetch-confirmed); see for/PRESUMPTION-1072_for.md.
+  Challenges noted: Wang et al. ICLR 2023 (self-consistency) and Du et al. ICML 2024 (multiagent debate)
+    show some gain from resampling — partial decorrelation.
+  Confidence: Moderate
+  Applicable to: 15a/15b design; REVISE-483; PREMISE-004 as applied to this pipeline; any same-model
+    reviewer/QC pair.
+  Re-check due: 2026-10-23 (Monthly — structural to the pipeline)
+  Status: ACTIVE
+  Consistency flag: in tension with PREMISE-004's use for 15a/15b convergence. Not overwritten; flagged
+    with REVISE-483 for Tom.
+
+PREMISE-217:
+  Date validated: 2026-09-23
+  Source item: PRESUMPTION-1076
+  Statement: A control whose outcome is the same under every candidate cause cannot discriminate among
+    them. Differential diagnosis needs tests whose outcomes differ by cause — for k causes, at least
+    ~log2(k) such binary tests; one per cause is sufficient but not necessary.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: fault-signature / fault-isolation literature (Varga, FDITOOLS); Platt 1964 "Strong
+    Inference"; de Kleer & Williams 1987.
+  Challenges noted: group-testing results (clause 2 over-states the number of controls needed) — adopted.
+  Confidence: High
+  Applicable to: QC transcript-fetch diagnosis (ASSUMPTION-1647); OpenStory / health-check diagnoses
+    (ASSUMPTION-1636); every "control fails identically" argument.
+  Re-check due: 2026-12-23 (Quarterly)
+  Status: ACTIVE

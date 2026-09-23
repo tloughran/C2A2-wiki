@@ -966,6 +966,129 @@
     return { ok: !problems.length, problems: problems };
   }
 
+  // ---- planner (item 4, approved 2026-09-22) ------------------------------
+  // A strong text model plans CCL steps; CODE runs them, reads the view back,
+  // and hands the verified results to the model for one correction pass and
+  // the final answer. The model never touches the page; it only writes
+  // command strings and prose (Rule 5: routing, running, checking are code).
+
+  // ROUTER. Deterministic. `direct` = run as one CCL command (a bare short
+  // string becomes `find` inside the shell's run, as before). `plan` = send to
+  // the planner. Question marks, question words, sequencing words and long
+  // entries are plans even when the first word happens to be a verb: "show me
+  // how levin connects to friston" parses as `show`, and running it would try
+  // to light groups named "me", "how"... -- the stubborn-child failure.
+  const PLAN_START_RE = /^(how|why|what|which|who|whom|whose|when|where|does|do|did|is|are|was|were|can|could|should|would|will|compare|contrast|explain|describe|tell|list|give|walk|help me|i want|i'd like|let's|lets|please)\b/i;
+  const PLAN_SEQ_RE = /\b(then|keep|but|and also|after that|as well as|instead)\b|[;?]/i;
+  const DIRECT_BARE = new Set(['what', 'where', 'help', 'undo', 'redo', 'reset', 'restore', 'all', 'none', 'clear', 'fit', 'stop', 'back']);
+  function routeRequest(text, grammar) {
+    const s = String(text || '').trim();
+    if (!s) { return { route: 'empty' }; }
+    const words = s.split(/\s+/);
+    if (words.length === 1 && DIRECT_BARE.has(words[0].toLowerCase())) { return { route: 'direct', why: 'single verb' }; }
+    if (PLAN_START_RE.test(s)) { return { route: 'plan', why: 'question or request' }; }
+    if (PLAN_SEQ_RE.test(s)) { return { route: 'plan', why: 'several steps' }; }
+    // A verb followed by how/why/whether is a question wearing a verb.
+    if (/\b(how|why|whether)\b/i.test(words.slice(1).join(' '))) { return { route: 'plan', why: 'question after a verb' }; }
+    const p = parse(s, grammar);
+    if (p.ok) { return { route: 'direct', why: 'one command' }; }
+    if (p.error === 'unknown_verb' && words.length <= 4) { return { route: 'direct', why: 'short search' }; }
+    return { route: 'plan', why: p.error || 'not one command' };
+  }
+
+  // Verbs the planner may NOT emit: they start something that keeps running
+  // after the answer (speech, a turntable) and would fight the voice guide.
+  const PLAN_DENY = new Set(['read', 'spin']);
+  const PLAN_MAX_COMMANDS = 6;
+
+  function verbLines(verbsJson) {
+    const list = (verbsJson && verbsJson.verbs) || [];
+    return list.map(function (v) { return v.verb + ' (' + v.dim + '/' + v.op + ', args: ' + v.args + ')'; }).join('\n');
+  }
+
+  function buildPlanPrompt(o) {
+    const system = [
+      'You operate the C2A2 Explorer, a website of interlinked research traditions, through its command language (CCL).',
+      'You never see the page. You see: the request, the VERIFIED STATE (read back from the page by code), page knowledge, and the results of commands you asked for.',
+      'Reply with ONE JSON object and nothing else:',
+      '{"goal": "<what the view should show when done>", "commands": ["<one CCL command per string>"], "answer": "<text, or empty>"}',
+      'Rules:',
+      '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
+      '- A text cut is an expression: `find X`, then `also Y` (add), `except Z` (remove), `within W` (keep only overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
+      '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
+      '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
+      '- When the view already serves the goal, or the request is only a question, return "commands": [] and write the answer.',
+      '- The answer: plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words, spoken aloud as written. Use only the verified state, command results and knowledge given. Say plainly when they do not answer the question. Do not state counts as current facts unless a result in this exchange gave them.'
+    ].join('\n');
+    const parts = [];
+    parts.push('REQUEST: ' + o.request);
+    parts.push('VERIFIED STATE (before this round): ' + (o.state || '(unknown)'));
+    if (o.knowledge) { parts.push('KNOWLEDGE:\n' + o.knowledge); }
+    parts.push('CCL VERBS:\n' + (o.verbs || ''));
+    if (o.results && o.results.length) {
+      parts.push('RESULTS OF YOUR COMMANDS SO FAR (round ' + o.round + '):\n' + o.results.map(function (r, i) {
+        return (i + 1) + '. ' + r.cmd + ' -> ' + (r.ok ? '' : 'FAILED: ') + (r.spoken || '') +
+          (r.problems && r.problems.length ? '  VERIFY PROBLEMS: ' + r.problems.join('; ') : '');
+      }).join('\n'));
+      parts.push(o.lastRound ? 'This is the LAST round: return "commands": [] and the answer.' : 'Correct with new commands only if something failed or the goal is not met; otherwise return "commands": [] and the answer.');
+    }
+    return { system: system, user: parts.join('\n\n') };
+  }
+
+  // The model's reply -> {ok, goal, commands, dropped, answer} or {ok:false, error}.
+  // Tolerates code fences and prose around the object; nothing else.
+  function parsePlan(text) {
+    const s = String(text || '');
+    const a = s.indexOf('{'), b = s.lastIndexOf('}');
+    if (a < 0 || b <= a) { return { ok: false, error: 'no JSON object in the planner reply' }; }
+    let o;
+    try { o = JSON.parse(s.slice(a, b + 1)); } catch (e) { return { ok: false, error: 'planner reply is not valid JSON' }; }
+    const raw = Array.isArray(o.commands) ? o.commands : [];
+    const commands = [], dropped = [];
+    for (const c of raw) {
+      const cmd = String(c || '').replace(/\s+/g, ' ').trim();
+      if (!cmd) { continue; }
+      const v = cmd.split(' ')[0].toLowerCase();
+      if (PLAN_DENY.has(v) || commands.length >= PLAN_MAX_COMMANDS) { dropped.push(cmd); continue; }
+      commands.push(cmd);
+    }
+    return { ok: true, goal: String(o.goal || ''), commands: commands, dropped: dropped, answer: String(o.answer || '').trim() };
+  }
+
+  // THE LOOP. deps: state() -> string; run(cmd) -> {ok, spoken, verify?};
+  // ask({system,user}) -> Promise<{text, model?}>; verbs, knowledge strings.
+  // Round 1 plans; later rounds see every result and either correct or answer.
+  // The last round may only answer. Failures of the final executed round are
+  // returned as `failed`, so the caller shows them whatever the model writes.
+  async function runPlan(request, deps) {
+    const maxRounds = deps.maxRounds || 3;
+    const trace = [];
+    let results = [], model = '', answer = '', calls = 0;
+    for (let round = 1; round <= maxRounds; round++) {
+      const lastRound = round === maxRounds;
+      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, verbs: deps.verbs,
+                                       results: results, round: round - 1, lastRound: lastRound && round > 1 });
+      const reply = await deps.ask(prompt);
+      calls++;
+      if (reply && reply.model) { model = reply.model; }
+      const plan = parsePlan(reply && reply.text);
+      if (!plan.ok) { return { ok: false, error: plan.error, trace: trace, calls: calls, model: model, failed: [] }; }
+      for (const d of plan.dropped) { trace.push({ round: round, cmd: d, ok: false, spoken: 'not run (not allowed from the planner)', problems: [] }); }
+      if (!plan.commands.length || lastRound) { answer = plan.answer; break; }
+      results = [];
+      for (const cmd of plan.commands) {
+        let r;
+        try { r = deps.run(cmd) || {}; } catch (e) { r = { ok: false, spoken: 'error: ' + ((e && e.message) || e) }; }
+        const problems = (r.verify && !r.verify.ok) ? (r.verify.problems || []) : [];
+        const row = { round: round, cmd: cmd, ok: r.ok !== false, spoken: r.spoken || '', problems: problems };
+        trace.push(row); results.push(row);
+      }
+    }
+    const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
+    const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
+    return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed };
+  }
+
   return {
     VERSION: VERSION,
     compileGrammar: compileGrammar,
@@ -988,6 +1111,11 @@
     describeCutSteps: describeCutSteps,
     verifyDrawn: verifyDrawn,
     verifyFilters: verifyFilters,
+    routeRequest: routeRequest,
+    verbLines: verbLines,
+    buildPlanPrompt: buildPlanPrompt,
+    parsePlan: parsePlan,
+    runPlan: runPlan,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
     SHELL_CAPS: SHELL_CAPS,
   };

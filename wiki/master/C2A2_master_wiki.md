@@ -1025,3 +1025,22 @@ below use the provenance count for continuity.
 
 Network unchanged: 867 PRS (provenance) across 15 traditions, 135 CROSS, 90 FINDING (24 Active). Nothing
 can move until a decision email arrives; pending is now **33 proposals spanning 09-11 to 09-22**.
+
+### 2026-09-23 — Daily Run
+No new decision emails (day 14 since 2026-09-09). The Gmail query surfaced only four old UNREAD threads
+(2026-04-08, 04-27 x2, 07-23) whose decisions are already archived in `review/archive/`; not re-processed.
+Ledger OPEN=1, unchanged (Wright PROP-2026-08-14-033). **0 files ingested — thirteenth consecutive
+zero-ingest day.**
+
+Phase 2: Wednesday specialist deposited Kastrup PROP-2026-09-23-001 (*With Reality in Mind*, simulation
+hypothesis); McGilchrist had no specialist card and was swept (only the already-carded 09-24 UnHerd event
+surfaced). One orchestrator proposal: **PROP-2026-09-23-002**, Rohr, "Corporate Violence Met by Corporate
+Good" (CAC, 2026-09-23) — Rohr-authored, unlike the two guest meditations skipped 09-21/22, though both
+passages are adapted from earlier books (2002, 2021), which the card states. Negatives: Wolfram
+recent-posts still ends 2026-08-04; Arkani-Hamed's Cornell talk is 2026-09-25 (future, not carded); Levin
+search surfaced only held papers; Wright, Friston, Fredrickson weak (pre-window results only).
+
+Review page: 35 proposals. Review Log 490 cards / 130 dates / 15 responses, address-clean. Level-2 stream
+1501 signals / 87 pairs / span to 2026-09-09, stale_days 14 (no WARN). `/sessions` still 100% full; all
+scratch phases run under `TMPDIR=/tmp`. Network unchanged: 867 PRS (provenance count), 135 CROSS, 90
+FINDING (24 Active).

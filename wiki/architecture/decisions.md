@@ -1430,3 +1430,22 @@ recommendation); `select max(timestamp) from events` (seventh night).
 **What this note is for.** Eleven agent-made rules in three days, in a window with no designer speech, one
 of them still wearing the designer's name. The index records them so that the distinction between a
 ruling and an agent's account of one stays visible until the field REVISE-476 asks for exists.
+
+## Index note — 2026-09-22 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands. Last decision-channel act: the
+`[C2A2-review-decision]` email of 09-09 — 13 days. Pending cards **33** (verified), approved 414.
+
+**Agent-made, id-less rules and actions recorded, not minted — seven today:**
+
+- *15a/15b run as concurrent agents* to fix the declared independence defect (lit pipeline;
+  ASSUMPTION-1624) — contested by PREMISE-004 (PRESUMPTION-1072).
+- *Block parser `queue_scan.py` replaces line grep for queue state* (lit pipeline; ASSUMPTION-1625).
+- *"Uniform/clean sweep ⇒ check the instrument first"* written into PREMISE-209 (ASSUMPTION-1626).
+- *Held Day 076 marked pass/pass* by one QC run against four that held it (ASSUMPTION-1648; OPEN-253).
+- *Scope cut to 2 pairs on budget grounds* by two runs; others ran 6 at ~90k (ASSUMPTION-1649).
+- *Reviewer memory split 48.9K → 12.4K* with history moved to a sibling (ASSUMPTION-1645).
+- *Metabolism declined a mount-path TMPDIR* to avoid an undeletable 6.7 GB orphan (ASSUMPTION-1638).
+
+**Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24**
+(ASSUMPTION-1632); `summa-2026-daily-batch` retirement (second day); OPEN-249, -250, -251, -252, -253.

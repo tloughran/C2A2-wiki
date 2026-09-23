@@ -1709,3 +1709,22 @@ one and the two have been quoted interchangeably. Reports continue to use 867 fo
 **Network:** 867 PRS (provenance) across 15 tradition files, **135** distinct CROSS ids, **90** distinct
 FINDING ids (24 `Status: Active`). Frozen since 09-11, correctly. Pending now **33 proposals spanning
 09-11 to 09-22**.
+
+## 2026-09-23 — C2A2 daily run
+
+**Phase 0: no new decision emails.** Query `subject:C2A2-review-decision (is:unread OR newer_than:2d)` returned
+only four stale UNREAD threads (04-08, 04-27 x2, 07-23), all already archived in `review/archive/`. Not
+re-processed, not re-labelled. Day 14 since the 2026-09-09 batch.
+
+**Phase 1: 0 files processed.** `scripts/ingest_ledger.py wiki`: approved total=414, ingested=382,
+decided-zero=30, OPEN=1 (PROP-2026-08-14-033, Wright). Thirteenth consecutive zero-ingest day.
+
+**Phase 2: 1 proposal written** — PROP-2026-09-23-002, Rohr, "Corporate Violence Met by Corporate Good"
+(adapted from 2002/2021 books; stated in the card). Kastrup covered by specialist (PROP-2026-09-23-001).
+Arkani-Hamed Cornell lecture is 2026-09-25 — future, not carded.
+
+**Phase 3.** `review/2026-09-23_review.html` (387,775 bytes, 35 proposals). No macOS `open` in sandbox.
+**Phase 5.** `review/2026-09-20_review.html` moved to `review/_superseded/`.
+**Phase 5.5.** OK — 6,569,330 bytes; cards 490, dates 130, responses 15; address-clean.
+**Phase 5.6.** OK (TMPDIR=/tmp) — 1501 signals, 87 pairs, span to 2026-09-09, stale_days 14, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.

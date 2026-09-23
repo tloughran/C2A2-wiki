@@ -3377,3 +3377,33 @@ OPEN-250:
     that cannot meet it are the wrong shape. A guideline breached by every instance of a class stops
     distinguishing necessary reading from thrash.
   Status: OPEN
+
+## 2026-09-22 — raised by the 14a/14b end-of-day pass
+
+OPEN-251:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1651, -1631) and 14b (PRESUMPTION-1074)
+  Question: Who may amend a scheduled task file when the designer is absent? Five known defects were
+    restated today and left alone "because the file is the user's to change": unresolvable memory path,
+    wrong Step 2 command, no hold check in Step 2 (open since 09-20; caused a breach today, OPEN-253),
+    `permissionMode` absent on the daily run (18 days), and stale schedule text (04:35 vs "8am").
+  Needs: **Tom** — either a standing delegation (which agent, which class of edit, logged where) or a
+    confirmation that task files stay frozen until he returns.
+  Status: OPEN
+
+OPEN-252:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1638, -1640)
+  Question: Where do the two large-database jobs run? OpenStory (7.14 GB, +~70 MB/day) and metabolism
+    regen (6.7 GB snapshot) are each "structurally unable to run in a sandbox" with 4.1 GB free on `/` and
+    0 on `/sessions`. Options put to Tom: OpenStory (a) read live db `immutable=1`, (b) copy needed pages
+    only, (c) snapshot on the Mac, (d) prune/archive; metabolism → launchd agent, plus FAIL at 26h on
+    `_meta.generated`. Narrows OPEN-248.
+  Needs: **Tom**, one choice per job.
+  Status: OPEN
+
+OPEN-253:
+  Raised: 2026-09-22 by 14a (ASSUMPTION-1648) and 14b (PRESUMPTION-1077)
+  Question: Day 076 is under a designer hold (transcript fidelity). Four QC runs left it unmarked; run
+    e02f71c9 marked it pass/pass. Does the mark stand, and should holds be enforced by the sweep script
+    rather than by each run's reading of convention?
+  Needs: **Tom** (ruling on the mark); the enforcement half is a one-line check once OPEN-251 is answered.
+  Status: OPEN
