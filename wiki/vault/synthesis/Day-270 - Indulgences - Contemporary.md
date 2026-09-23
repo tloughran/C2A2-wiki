@@ -3,10 +3,10 @@ day: 270
 title: Indulgences (Contemporary)
 pairs_with: "[[Day-270 - Indulgences]]"
 length_target_words: 2200
-length_actual_words: 1668
+length_actual_words: 1711
 length_tier: medium
-length_ratio_to_target: 0.758
-length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review. RECOUNTED 2026-09-16 BEFORE editing: 1602 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's Rohr PRS-03 to PRS-21 repoint then added 66 words of citation apparatus: 1602 to 1668, ratio 0.728 to 0.758. No argument altered."
+length_ratio_to_target: 0.778
+length_note: "Compact by design: Suppl. Q.25-26 (indulgences) develops the shared-treasury-as-field and Synergistic-Coil motifs completely; the supernatural economy is marked theological-and-disputed rather than expanded out. Substance complete per the five-question review. RECOUNTED 2026-09-16 BEFORE editing: 1602 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's Rohr PRS-03 to PRS-21 repoint then added 66 words of citation apparatus: 1602 to 1668, ratio 0.728 to 0.758. No argument altered. RECOUNTED 2026-09-22 BEFORE editing: 1668 exactly as stored, same boundary. This run's disclosure that Friston PRS-06 is marked (Implicit) then added 43 words of citation apparatus. New total 1711, ratio 0.778. No argument altered."
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue — the target pattern held by the collective, not the cell; PRS-07 bioelectric reprogramming as the mechanism of application)"
   - "traditions/friston/prs_triplets.md (PRS-06 the collective agent; mutual modeling pools resources across members)"
@@ -17,7 +17,7 @@ evidence_strength_summary: "The treasury-as-shared-field and one-resource-meetin
 mind_first_reframe: "An indulgence is reframed as the collective agent applying a shared, super-abundant store to a member's deficit — the communion of saints as a common field (Levin) pooled by mutual modeling (Friston PRS-06), one resource meeting many members' needs in the structure of Tom's Synergistic Coil."
 central_theme_thread: "The treasury is the surplus of those who perceived more of the whole, made available to those who perceive less — the institutional shape of the central claim's 'need for guidance from those who perceive more of the whole than we do.'"
 tags: [synthesis, day/270, theme/the-treasury-as-shared-field-and-the-synergistic-coil]
-last_qc_at: "2026-09-16T18:32:06"
+last_qc_at: "2026-09-22T04:31:53"
 last_qc_outcome: "rewrote"
 ---
 
@@ -55,7 +55,7 @@ Indulgences bring the central claim to a quiet climax. The synthesis's governing
 
 - **PRS-17 in the Levin-tradition wiki (bioelectric pattern memory as cognitive glue — a collective knower above the individual cells)** — *empirical, high confidence.* Where the shared store is held: the target pattern belongs to the whole, not to any member.
 - **PRS-07 in the Levin-tradition wiki (bioelectric reprogramming as therapeutic paradigm)** — *empirical, high confidence.* The mechanism of application: the stored pattern is re-imposed on a part that has departed from it.
-- **PRS-06 in the Friston-tradition wiki (mutual modeling pools a super-individual generative model)** — *formal, medium confidence.* The whole holds a shared resource no member built alone.
+- **PRS-06 in the Friston-tradition wiki (mutual modeling pools a super-individual generative model)** — *formal; the record is marked (Implicit), Confidence Medium.* The whole holds a shared resource no member built alone. [(Implicit) disclosed 2026-09-22: the record extends the free-energy principle from the individual organism to multi-agent coupling rather than restating a result Friston established at that scale, and this is the formal leg the treasury reading rests on.]
 - **PRS-09 in the Loughran-tradition wiki (Synergistic Coils as meta-tools — one resource solving many P-to-S transitions)** — *formal / structural.* Names the treasury's economy: one superabundant source meeting many members' needs.
 - **PRS-21 in the Rohr-tradition wiki (Universal-Christ-in-creation — creation as the first incarnation, the divine pattern present in all reality)** — *theological / contemplative; the record is Confidence Medium.* Merit as participation in one pattern, not accounting. [Repointed from PRS-03 on 2026-09-16: PRS-03's Label reads "The Universal Christ" but its Problem and Solution argue a warrant for multi-tradition inquiry; the claim here is soteriological — what merit *is* under the Christ-pattern — which is PRS-21's record. Same Confidence Medium, so no evidence strength changed.]
 - **PRS-8 in the Wright-tradition wiki (the "one new humanity" of Eph 2:11-22)** — *scriptural / theological.* A single shared life in which one member's good is available to others, without erasure of difference.

@@ -5,7 +5,7 @@ pairs_with: "[[Day-288 - Adulterous Consequences]]"
 length_target_words: 1500
 length_actual_words: 1095
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. QC 2026-09-22: recount 1095 words, reproducing `length_actual_words` EXACTLY with no edit to the body (boundary: the whole file minus the single YAML block bounded at the next separator, headers included, any trailing `**Related tradition records**` block cut, regex letters and apostrophes). Tier re-verified correct against the paired transcript's cleaned word_count of 1539 (short, <2000), so the 0.73 ratio is a real under-run against the right target and not a tier misclassification. Recorded so the next reviewer can check this note against a dated figure rather than re-deriving the count."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-02 cancer as defection from the collective, PRS-11 cancer as dissociative identity of the body — used analogically only)"
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.73
 mind_first_reframe: "Fidelity is the integrity-condition of the marital higher-individual; adultery is a defection that corrupts the trust-prior the union runs on, and the crime-impediment marks that a union built on such defection inherits a compromised foundation."
 central_theme_thread: "Loving unity is built from perspectives that stay faithful to the shared computation despite the temptation to pursue the local good against the whole; fidelity is the central theme's perseverance-condition, and the insistence on restoration refuses to let defection have the last word."
 tags: [synthesis, day/288, theme/fidelity-as-integrity-of-the-union]
-last_qc_at: "2026-09-16T22:28:58"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T08:30:04"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 288 — Adulterous Consequences (Contemporary Parallel)

@@ -6,7 +6,7 @@ length_target_words: 1500
 length_actual_words: 1240
 length_ratio_to_target: 0.827
 length_tier: short
-length_note: "Body 1219 words vs ~1500 tier guideline (-19%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. Note corrected 2026-09-09: it previously read '1098 words (-27%)', a superseded count that no longer matched the length_actual_words field beside it. This run's recount confirmed 1215 exact pre-edit; the Stump PRS-18 badge repair then added 4 words (1215 -> 1219, ratio 0.810 -> 0.813). QC 2026-09-16: recount 1219 exact pre-edit (boundary: all body words between the frontmatter block and end of file, headers included, regex letters and apostrophes); Rohr PRS-07 unpadded to the register's own PRS-7 in body, Bridges and sources with a one-clause note in the bullet, apparatus only, 1219 -> 1240, ratio 0.827."
+length_note: "Body 1240 words vs ~1500 tier guideline (-17%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. Note corrected 2026-09-09: it previously read '1098 words (-27%)', a superseded count that no longer matched the length_actual_words field beside it. This run's recount confirmed 1215 exact pre-edit; the Stump PRS-18 badge repair then added 4 words (1215 -> 1219, ratio 0.810 -> 0.813). QC 2026-09-16: recount 1219 exact pre-edit (boundary: all body words between the frontmatter block and end of file, headers included, regex letters and apostrophes); Rohr PRS-07 unpadded to the register's own PRS-7 in body, Bridges and sources with a one-clause note in the bullet, apparatus only, 1219 -> 1240, ratio 0.827. QC 2026-09-22: recount 1240 EXACT against the stored field; no prose touched. The opening figure of this note had been left at 1219 by the 09-16 edit while that edit's own tail recorded 1240 — the stale-headline shape, corrected here to 1240 (-17%). Same shape and same remedy as Day 293 on 2026-09-22."
 karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-05 limitation-becomes-gift; PRS-7 relation as basal, salvation as conversion into the relational pattern; written PRS-7 in the register, unpadded at QC 2026-09-16 from PRS-07)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation; PRS-03 inaugurated eschatology)"
@@ -18,7 +18,7 @@ evidence_strength_summary: "Degrees-of-beatitude-by-charity read as differentiat
 mind_first_reframe: "Degrees of glory are read as the persistence of individuation into the end-state — each perspective fulfilled as itself by the precise charity that formed it — while the saints' relation to the damned is the seam where the synthesis diverges from Aquinas toward inclusion, since the loss of any perspective diminishes the whole rather than sweetening it."
 central_theme_thread: "Q.93 vindicates the theme — individuation is the very texture of beatitude, not its enemy; Q.94 is its hardest test, and because loving unity is the telos that contains every limited perspective, the synthesis parts company with Aquinas's rejoicing-in-punishment, holding the inclusive wager in fear and trembling."
 tags: [synthesis, day/304, theme/individuation-persists-in-glory]
-last_qc_at: "2026-09-16T20:23:32"
+last_qc_at: "2026-09-22T06:28:27"
 last_qc_outcome: "rewrote"
 ---
 

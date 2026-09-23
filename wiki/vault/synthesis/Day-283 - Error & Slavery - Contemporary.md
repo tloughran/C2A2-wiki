@@ -3,21 +3,21 @@ day: 283
 title: Error & Slavery (Contemporary)
 pairs_with: "[[Day-283 - Error & Slavery]]"
 length_target_words: 1500
-length_actual_words: 943
+length_actual_words: 1037
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-22 BEFORE editing: 943 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's per-record grading of the Hoffman, Kastrup and Friston bridge bullets then added 94 words of citation apparatus. New total 1037, ratio 0.691. No argument altered."
 karpathy_wiki_sources:
   - "wiki/traditions/hoffman/prs_triplets.md (PRS-03 perception as fitness-tracking interface, PRS-10 trace blankets subsume Markov blankets)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-24 the indexical problem)"
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales)"
 evidence_strength_summary: "Hoffman interface formal/speculative; Kastrup identity metaphysical; the error-of-person-voids-consent claim is conceptual; the servile-condition material is treated historically, not endorsed."
-length_ratio_to_target: 0.629
+length_ratio_to_target: 0.691
 mind_first_reframe: "Error voids marital consent exactly when it is a referent failure — when the agent one actually couples with is not the agent one's consent addressed — while mis-valued attributes of the right referent are tolerable error."
 central_theme_thread: "Marriage is undertaken across an irreducible epistemic gap — we consent to icons, never to the person seen whole — which is the central theme's 'fear and trembling' at the scale of the marrying pair."
 tags: [synthesis, day/283, theme/identity-tracking-and-consent]
-last_qc_at: "2026-09-16T16:22:13"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T04:31:51"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 283 — Error & Slavery (Contemporary Parallel)
@@ -44,9 +44,9 @@ This article is a sharp lesson in the project's founding limitation: we never se
 
 ## Bridges
 
-- **Hoffman PRS-03 / PRS-10 (formal / speculative):** consent addresses an iconic model; quality-error = wrong attribute, person-error = referent failure (voids).
-- **Kastrup PRS-02 / PRS-24 (metaphysical, speculative):** personal identity as a real dissociative boundary — what "the person" in "error of person" picks out.
-- **Friston PRS-06 (formal):** referent failure prevents a shared blanket from forming — why it voids the unit.
+- **Hoffman PRS-03 (Confidence High) / PRS-10 (Confidence Medium-High):** consent addresses an iconic model; quality-error = wrong attribute, person-error = referent failure (voids). Formal on both records; the trace-blanket generalisation is the softer of the two.
+- **Kastrup PRS-02 (Confidence High) / PRS-24 (Confidence Speculative):** personal identity as a real dissociative boundary — what "the person" in "error of person" picks out. Graded separately rather than levelled under one badge (2026-09-22): PRS-02, identity within monism, is the firm record; PRS-24 is the register's own agenda-setting entry on the indexical problem, and it is the softer leg that this bullet's metaphysical reach actually rests on.
+- **Friston PRS-06 (formal; the record is marked (Implicit), Confidence Medium):** referent failure prevents a shared blanket from forming — why it voids the unit. Grade disclosed 2026-09-22 — the record extends the free-energy principle from the individual organism to multi-agent coupling rather than restating a result established at that scale.
 - **Levin PRS-09 (conceptual/empirical):** a principled, testable basis for attributing agency at a scale — makes "which agent" well-posed apart from that agent's current attributes; supports the person/quality line indirectly.
 
 ## Where this leaves us

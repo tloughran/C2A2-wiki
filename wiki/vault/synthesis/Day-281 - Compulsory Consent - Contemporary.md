@@ -5,7 +5,7 @@ pairs_with: "[[Day-281 - Compulsory Consent]]"
 length_target_words: 1500
 length_actual_words: 1265
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-21: 1265, exactly as stored, and unchanged by that run — a criterion-(a) article-anchoring edit was made and then REVERTED in the same run once the standing disposition was re-read (article attribution in the 241-307 tail is escalate-not-rewrite pending Tom's open ruling; see the QC log CORRECTION row of 2026-09-21). File is byte-identical to its 2026-09-16 state. New total 1265, ratio 0.843."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-04 organism as active modeler, PRS-16 expected free energy as unified objective)"
   - "wiki/traditions/stump/prs_triplets.md (PRS-29 will-quiescence as genuinely the agent's own act; PRS-23 quiescence as a non-meritorious threshold condition grace converts)"
@@ -16,7 +16,7 @@ length_ratio_to_target: 0.843
 mind_first_reframe: "Coerced consent fails to constitute a marriage because a clamped state is not an act of the agent's own model; only freely selected policies couple agents into a real shared unit, so a forced configuration couples nothing."
 central_theme_thread: "The reverent self-determination of 'fear and trembling' is the opposite of coercive fear: loving unity must be chosen from within a perspective, never imposed on it from without."
 tags: [synthesis, day/281, theme/freedom-as-condition-of-union]
-last_qc_at: "2026-09-16T16:22:12"
+last_qc_at: "2026-09-21T22:25:47"
 last_qc_outcome: "rewrote"
 ---
 

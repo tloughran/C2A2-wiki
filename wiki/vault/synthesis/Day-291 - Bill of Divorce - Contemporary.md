@@ -3,7 +3,7 @@ day: 291
 title: Bill of Divorce (Contemporary)
 pairs_with: "[[Day-291 - Bill of Divorce]]"
 length_target_words: 1500
-length_actual_words: 1320
+length_actual_words: 1371
 length_tier: short
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-16 expected free energy as unified objective)"
@@ -11,13 +11,13 @@ karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-01 morphogenetic control; offspring as continuation of an anatomical target-state across generations)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology)"
 evidence_strength_summary: "The long-horizon-objective reading of indissolubility is formal/structural (Friston) and conceptual; the covenant-membership reading of legitimacy is scriptural-scholarly (Wright); Aquinas's tolerated-by-dispensation reading is historical-theological; the cross-generational form claim is empirical at the biological scale (Levin)."
-length_note: "Runs ~12% under the short tier (1320 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after a citation repair (Wright PRS-02/03 repointed to PRS-13; Levin PRS-01 extension declared) added ~229 words to the stored 1091."
-length_ratio_to_target: 0.88
+length_note: "Runs ~9% under the short tier (1371 vs 1500): written for substantive completeness over word count per the tiered+flexible length policy and the user's concision preference; not padded, not a silent breach. Recounted 2026-08-31 after a citation repair (Wright PRS-02/03 repointed to PRS-13; Levin PRS-01 extension declared) added ~229 words to the stored 1091. RECOUNTED 2026-09-22 BEFORE editing: 1320 exactly as stored (boundary: body after the closing frontmatter delimiter, headings included, auto-linker trailer excluded, bare horizontal-rule separator lines dropped, alphabetic-plus-apostrophe tokens). This run's per-record grading of the Friston bullet (PRS-06 marked (Implicit)/Medium, PRS-16 High) then added 51 words. New total 1371, ratio 0.914 — now inside the plus-or-minus-10% band."
+length_ratio_to_target: 0.914
 mind_first_reframe: "Indissolubility is the natural signature of a bond constituted by an objective whose horizon is the whole life of the offspring; legitimacy is conferred standing within a community, not an intrinsic property of the child."
 central_theme_thread: "Standing-in-the-people — Wright's 'salvation as inclusion' — gets its first explicit run here: legitimacy is membership conferred by relation to a covenanted body, the small-scale rehearsal of the larger inclusion the project's loving unity consummates."
 tags: [synthesis, day/291, theme/bonds-as-long-horizon-objectives-and-conferred-standing]
-last_qc_at: "2026-09-16T16:22:14"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T04:31:52"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 291 — Bill of Divorce (Contemporary Parallel)
@@ -44,7 +44,7 @@ The project's loving unity is *inclusion* — every limited perspective held wit
 
 ## Bridges
 
-- **Friston PRS-06 / PRS-16 (formal; load-bearing):** indissolubility as a long-horizon shared objective underwriting a long-horizon coupling — the structural reading of "ordered to the lifelong good of the offspring."
+- **Friston PRS-06 (marked (Implicit), Confidence Medium) / PRS-16 (Confidence High):** indissolubility as a long-horizon shared objective underwriting a long-horizon coupling — the structural reading of "ordered to the lifelong good of the offspring." Graded per record rather than bundled (2026-09-22): PRS-16 is the firm record but is single-agent; PRS-06 — the leg that carries the *shared* objective, and so the load-bearing one here — extends the free-energy principle to multi-agent coupling rather than restating a result established at that scale.
 - **Wright PRS-13 (scriptural/theological; load-bearing):** salvation as participation in God's homecoming among the people the Spirit is forming — the register's own record for this project's salvation-as-inclusion claim. Legitimacy is conferred covenant-membership standing at the civic scale, not an intrinsic mark. **Wright PRS-03 (scriptural, Confidence High):** inaugurated eschatology — the already/not-yet frame in which such standing is conferred and still being worked out. (Repointed 2026-08-31 from PRS-02, *faithful improvisation*, which is about extending a tradition into circumstances its founders never anticipated and does not carry the covenant-membership content this bullet needs.)
 - **Levin PRS-01 (empirical *within the organism*, Confidence High; the cross-generational reading is this file's declared extension):** bioelectric circuits encode anatomical target states as morphogenetic memory. The record establishes form as a real, memory-bearing organizing pattern in a single organism; the register carries no entry on transmission across the parent–offspring boundary (searched: generation, inherit, offspring, germline).
 - **Rohr PRS-04 (theological):** the bond and the child are known from within the practice of embodied love, not from an external ledger of worth.

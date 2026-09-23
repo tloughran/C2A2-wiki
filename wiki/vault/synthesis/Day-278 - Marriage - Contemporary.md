@@ -3,9 +3,9 @@ day: 278
 title: Marriage (Contemporary)
 pairs_with: "[[Day-278 - Marriage]]"
 length_target_words: 2200
-length_actual_words: 1197
+length_actual_words: 1253
 length_tier: medium
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-21 BEFORE editing: 1197, exactly as stored. That run's ONLY surviving edit is the unbundling of the Kastrup PRS-02/PRS-25 badge, where one 'speculative' badge had covered a Confidence High and a Confidence Medium record (+56 words of citation apparatus). A criterion-(a) article-anchoring edit was also made and then REVERTED in the same run once the standing disposition was re-read — article attribution in the 241-307 tail is escalate-not-rewrite pending Tom's open ruling; see the QC log CORRECTION row of 2026-09-21. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. New total 1253, ratio 0.570."
 karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 is relationship ontologically prior?, PRS-04 embodied love as epistemology)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-09 cognitive attribution across scales, PRS-32 goal-directed cognition scaling cell->organism, PRS-10 continuity of goal-directedness)"
@@ -13,12 +13,12 @@ karpathy_wiki_sources:
   - "wiki/traditions/wright/prs_triplets.md (PRS-8 one-new-humanity: unity-in-distinction as reconciliation-without-erasure; canonical: Paul and the Faithfulness of God on Eph 5)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-25 dissociative constructs both real and not-ultimate)"
 evidence_strength_summary: "Levin multiscale-individuality empirical at biological scales, speculative for human dyads; Friston dyadic mutual modeling formal/speculative; Rohr/Wright theological-scriptural, firm within tradition."
-length_ratio_to_target: 0.544
+length_ratio_to_target: 0.570
 mind_first_reframe: "Marriage is the covenantal, sacramental case of a higher-order individual genuinely emerging from two; the bond Aquinas calls real is real in the way that an organism is more than its cells."
 central_theme_thread: "Two radically partial perspectives undertake to form a single life in which each sees through the other what neither sees alone — union without erasure, the project's eschatological picture rendered at the scale of two."
 tags: [synthesis, day/278, theme/one-flesh-as-higher-individual]
-last_qc_at: "2026-09-16T14:30:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-21T22:25:44"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 278 — Marriage (Contemporary Parallel)
@@ -49,7 +49,7 @@ This article sits at the heart of the project's claim. Conscious agents are indi
 - **Friston PRS-06 / PRS-05 (formal / speculative):** the couple as two generative models sharing a Markov blanket, minimizing free energy as a unit — the dynamics of union.
 - **Rohr PRS-7 (theological):** relationship is ontologically prior to the related individuals — the direct answer to substance-bias.
 - **Wright PRS-8 (`wiki/traditions/wright/prs_triplets.md`; scriptural, Confidence High):** the "one new humanity" of Eph 2:11–22 as reconciliation-without-erasure — the record written to supply a scriptural account of how perspective-limited agents become one body without dissolving difference, which is the one-flesh question in its scriptural form. Eph 5 then places the union inside covenant and the Christ–Church mystery, not contract.
-- **Kastrup PRS-02 / PRS-25 (metaphysical, speculative):** individuation and the joining of dissociated alters within one mind — a monist substrate in which union of perspectives is natural.
+- **Kastrup PRS-02 (`wiki/traditions/kastrup/prs_triplets.md`; metaphysical, Confidence High — a textual reading, pp.102–103) with PRS-25 (same file; Confidence Medium):** individuation within monism (PRS-02), and the sharpened two-level account of which features of selfhood are dashboard artifacts and which are ontologically real (PRS-25) — a monist substrate in which union of perspectives is natural. The two carry different grades and are badged separately; the *application* to a marital dyad is this synthesis's own extension and is speculative on either record.
 
 ## Where this leaves us
 

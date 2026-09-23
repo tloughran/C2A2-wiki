@@ -5,7 +5,7 @@ pairs_with: "[[Day-282 - Goods of Marriage]]"
 length_target_words: 1500
 length_actual_words: 850
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. (Recounted 2026-09-22: body 850 words EXACT against the stored field, ratio 0.567, so the -43% is measured and not asserted; this is the deepest under-run in the 276-289 band and is flagged as such rather than smoothed over. Counting boundary: every word outside the YAML block and above any auto-linked trailer, section headings included, regex letters-and-apostrophes. Tier re-verified: paired transcript cleaned word_count 1695 is under 2000, so short/1500 is correct. This note previously carried no figure of its own and so could not be checked — the same boilerplate repaired on Days 284/285/288/289.)"
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism, PRS-01 morphogenetic control / target morphology)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-21 cosmic-Christ frame as the spirituality pairing for metaphysical monism)"
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.567
 mind_first_reframe: "The three goods of marriage name the real telos of the marital higher-individual — its generativity (proles), integrity (fides), and self-transcending orientation (sacramentum) — grounded in the demonstrated reality of collective-level goal-directedness."
 central_theme_thread: "The goods of marriage specify the project's loving-unity telos for the dyad: cooperation (fides), overflow into new perspectives (proles), and participation in the whole that exceeds the pair (sacramentum)."
 tags: [synthesis, day/282, theme/telos-of-union]
-last_qc_at: "2026-09-16T16:22:12"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T10:26:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 282 — Goods of Marriage (Contemporary Parallel)

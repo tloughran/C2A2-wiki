@@ -15,7 +15,7 @@ fetched_at: 2026-06-19
 fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-275 - Ordaining the Unworthy - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-16T18:32:07"
+last_qc_at: "2026-09-22T04:31:54"
 last_qc_outcome: "pass"
 tags: [summa, day/275, pars/suppl, q/35-36]
 ---

@@ -5,7 +5,7 @@ pairs_with: "[[Day-274 - Holy Orders]]"
 length_target_words: 1500
 length_actual_words: 1081
 length_ratio_to_target: 0.72
-length_note: "Short tier — the repetition/character question and the opening of Order (Q.33–34) are brief in Habash's treatment; the contemporary engagement on durable role-differentiation is complete, not padded."
+length_note: "Short tier — the repetition/character question and the opening of Order (Q.33–34) are brief in Habash's treatment; the contemporary engagement on durable role-differentiation is complete, not padded. RECOUNTED 2026-09-21: 1081, exactly as stored, and unchanged by that run — a criterion-(a) article-anchoring edit was made and then REVERTED in the same run once the standing disposition was re-read (article attribution in the 241-307 tail is escalate-not-rewrite pending Tom's open ruling; see the QC log CORRECTION row of 2026-09-21). File is byte-identical to its 2026-09-16 state. New total 1081, ratio 0.720."
 length_tier: short
 karpathy_wiki_sources:
   - "traditions/levin/prs_triplets.md (PRS-01 bioelectric anatomical target states as morphogenetic memory — a stable imprinted target)"
@@ -16,7 +16,7 @@ evidence_strength_summary: "Role-differentiation within a collective agent is fo
 mind_first_reframe: "Order is read as durable role-differentiation within a collective agent: ordination imprints a stable functional target-state (Levin PRS-01) that gives the body of Christ differentiated members coordinating one act of inference (Friston PRS-06), structured as perichoretic gift rather than hierarchy-of-domination (Rohr PRS-07)."
 central_theme_thread: "No single limited perspective can hold the whole; differentiated, durable roles are how a community distributes the labor of perceiving and serving the whole across many partial agents."
 tags: [synthesis, day/274, theme/durable-role-differentiation]
-last_qc_at: "2026-09-16T16:22:10"
+last_qc_at: "2026-09-21T22:25:46"
 last_qc_outcome: "rewrote"
 ---
 

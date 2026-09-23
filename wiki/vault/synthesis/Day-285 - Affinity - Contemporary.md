@@ -5,7 +5,7 @@ pairs_with: "[[Day-285 - Affinity]]"
 length_target_words: 1500
 length_actual_words: 1027
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. QC 2026-09-22: recount 1027 words, reproducing `length_actual_words` EXACTLY with no edit to the body (boundary: the whole file minus the single YAML block bounded at the next separator, headers included, any trailing `**Related tradition records**` block cut, regex letters and apostrophes). Tier re-verified correct against the paired transcript's cleaned word_count of 1744 (short, <2000), so the 0.685 ratio is a real under-run against the right target and not a tier misclassification. Recorded so the next reviewer can check this note against a dated figure rather than re-deriving the count."
 karpathy_wiki_sources:
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric pattern memory as cognitive glue, Confidence High, the measured case; PRS-32 the cognitive-glue thesis, Confidence High but programmatic)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism — dissociation as what makes perspectives separate, Confidence High. NOT PRS-23, which is the origin-of-mental-contents record and defers the separation account to PRS-02.)"
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.685
 mind_first_reframe: "Affinity is real because a one-flesh union genuinely redraws the boundary of the related individual — the spouse's connections become the union's — just as integrating into a higher biological individual reconfigures the system's boundary."
 central_theme_thread: "Each marriage knits two webs of relation into one, a concrete down-payment on the project's final unity in which every perspective is related to every other — loving unity made contagious through structure."
 tags: [synthesis, day/285, theme/union-redraws-the-boundary-of-kin]
-last_qc_at: "2026-09-16T22:28:57"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T08:30:03"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 285 — Affinity (Contemporary Parallel)

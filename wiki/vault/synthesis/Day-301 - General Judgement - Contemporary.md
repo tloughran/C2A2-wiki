@@ -3,21 +3,21 @@ day: 301
 title: General Judgement (Contemporary)
 pairs_with: "[[Day-301 - General Judgement]]"
 length_target_words: 1500
-length_actual_words: 1014
-length_ratio_to_target: 0.676
+length_actual_words: 1112
+length_ratio_to_target: 0.741
 length_tier: short
-length_note: "Body 1014 words vs ~1500 tier guideline (-32%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. RECOUNTED 2026-09-17 after the Rohr PRS-7 unpadding (citation apparatus only, +23 words of note). Counting boundary: every word below the frontmatter block, section headings included, regex letters-and-apostrophes; the prior field (991) was the same text under a headings-excluded convention (1000 headings-in pre-edit), not a stale count."
+length_note: "Body 1112 words vs ~1500 tier guideline (-26%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. RECOUNTED 2026-09-17 after the Rohr PRS-7 unpadding (citation apparatus only, +23 words of note). Counting boundary: every word below the frontmatter block, section headings included, regex letters-and-apostrophes; the prior field (991) was the same text under a headings-excluded convention (1000 headings-in pre-edit), not a stale count. RECOUNTED AGAIN 2026-09-22: 1014 EXACT pre-edit, then 1112 (ratio 0.676 -> 0.741) after this run's citation-apparatus repair, which split a single kind-only badge over Friston PRS-07 (High) and Hoffman PRS-10 (Medium-High) into one grade per record; +98 words, all apparatus, no prose added for length and no argument changed. Same boundary as above."
 karpathy_wiki_sources:
   - "traditions/hoffman/prs_triplets.md (PRS-10 — trace blankets subsume Markov blankets)"
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-07 Markov-blanket substrate-independence; PRS-06 multi-agent coherence)"
   - "master/cross_program_index.md (CROSS-027 Kastrup × Friston Markov blanket)"
   - "traditions/wright/prs_triplets.md (PRS-05 salvation as incorporation)"
   - "traditions/rohr/prs_triplets.md (PRS-7 relation as basal — the register's own unpadded id, Confidence Medium; unpadded from PRS-07 on 2026-09-17, no content change)"
-evidence_strength_summary: "Markov/trace-blanket formalism is formal/empirical; total mutual legibility at judgment is theological/speculative; the corporate (race-wide) framing of salvation is theological (Wright, High)."
+evidence_strength_summary: "The blanket formalism is formal, and the two records carrying it are graded separately rather than levelled: Friston PRS-07 (substrate-independence formally established) is Confidence High and PROP-derived, while Hoffman PRS-10 (trace blankets subsuming Markov blankets) is Medium-High and rests on a talk rather than a published derivation. Friston PRS-04, named in the body only as the general active-modeler premise, is marked (Implicit) at Confidence Medium and carries none of the maturity claim, which belongs to PRS-07. Total mutual legibility at judgment is theological/speculative; the corporate (race-wide) framing of salvation is theological (Wright PRS-05, High)."
 mind_first_reframe: "The general judgment is read as the limit case of mutual legibility — every Markov/trace blanket made transparent at once, so each agent's individuating interior becomes contained in and visible to every other perspective."
 central_theme_thread: "Bandwidth tracks union: the agent nearest the simple whole sees all limited perspectives at once because it sees them in the whole, while the agent still bound to its limitation reads them only serially on borrowed power — judgment is where perspective-containment becomes manifest."
 tags: [synthesis, day/301, theme/legibility-of-perspective]
-last_qc_at: "2026-09-17T00:23:33"
+last_qc_at: "2026-09-22T10:26:00"
 last_qc_outcome: "rewrote"
 ---
 
@@ -53,7 +53,8 @@ That is precisely the project's central claim. Conscious agents are individuated
 
 ## Bridges
 
-- **PRS-07 in the Friston-tradition wiki + PRS-10 in the Hoffman-tradition wiki** — *the blanket as the unit of individuation* (formal/empirical). The mechanism by which a perspective conceals its interior; "reading the conscience" is dissolving it.
+- **PRS-07 in the Friston-tradition wiki** — *FEP substrate-independence formally established* (formal; **Confidence High**, PROP-derived). The mechanism by which a perspective conceals its interior: the blanket is what makes the interior inferable only indirectly, and "reading the conscience" is dissolving it. This is the load-bearing leg and it is the firmest record in this commentary.
+- **PRS-10 in the Hoffman-tradition wiki** — *trace blankets subsume Markov blankets; FEP as a special case of trace logic* (formal; **Confidence Medium-High**, from a talk rather than a published derivation). Graded separately from PRS-07 rather than bundled with it: the generalization from acyclic Markov blankets to cyclic trace blankets is what lets the screening structure run from cell to community, and it is the *extension* claim, recorded a step below the substrate-independence result it extends.
 - **CROSS-027 (Kastrup × Friston, cross-program index)** — *one mind appearing as many along blanket-seams* (formal/speculative). Makes the "everyone reads everyone" article a claim about porous boundaries, not magic.
 - **PRS-05 in the Wright-tradition wiki** — *salvation as incorporation into a people, not relocation of souls* (theological, High). Underwrites Q.88's point that man is judged "as a member of the race," not only as an individual.
 - **PRS-7 in the Rohr-tradition wiki** — *relation as ontologically basal* (theological, Medium; the register writes this id unpadded, and the citation was unpadded from PRS-07 on 2026-09-17). If the unit of reality is the exchange, mutual legibility is the natural end-state, not an intrusion.

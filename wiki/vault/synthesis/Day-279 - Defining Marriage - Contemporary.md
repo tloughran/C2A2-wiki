@@ -3,21 +3,21 @@ day: 279
 title: Defining Marriage (Contemporary)
 pairs_with: "[[Day-279 - Defining Marriage]]"
 length_target_words: 1500
-length_actual_words: 818
+length_actual_words: 861
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-21 BEFORE editing: 818, exactly as stored. That run's ONLY surviving edit is the unbundling of the Kastrup PRS-02/PRS-25 badge, where one 'speculative' badge had covered a Confidence High and a Confidence Medium record (+43 words of citation apparatus). A criterion-(a) article-anchoring edit was also made and then REVERTED in the same run once the standing disposition was re-read — article attribution in the 241-307 tail is escalate-not-rewrite pending Tom's open ruling; see the QC log CORRECTION row of 2026-09-21. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. New total 861, ratio 0.574."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling)"
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism, PRS-25 dissociative constructs both real and not-ultimate)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-7 relationship ontologically prior)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-32 goal-directed cognition scaling cell->organism)"
 evidence_strength_summary: "Friston dyadic-coupling formal/speculative; Kastrup metaphysical (firm within idealism, not empirical); Levin empirical at biological scale; the consent-as-constitution claim is conceptual."
-length_ratio_to_target: 0.545
+length_ratio_to_target: 0.574
 mind_first_reframe: "The marriage bond is constituted by an act of mutual intentional adoption — two generative models electing to be one — which is why consent, not consummation, makes the marriage."
 central_theme_thread: "Marriage begins not with achieved union but with a vow to pursue it: two perspectives that cannot see the whole elect a shared whole and bind themselves to compute their lives from it together."
 tags: [synthesis, day/279, theme/consent-as-constitutive-act]
-last_qc_at: "2026-09-16T14:30:31"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-21T22:25:45"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 279 — Defining Marriage (Contemporary Parallel)
@@ -45,7 +45,7 @@ Consent is the central theme's defining act in miniature. Two perspectives, each
 ## Bridges
 
 - **Friston PRS-06 (formal / speculative):** the dyadic unit is born when two models mutually adopt each other — a naturalistic reading of consent-makes-marriage.
-- **Kastrup PRS-02 / PRS-25 (metaphysical, speculative):** union as relaxed dissociative boundary, not merged substances — two remain distinct while constituting one.
+- **Kastrup PRS-02 (`wiki/traditions/kastrup/prs_triplets.md`; metaphysical, Confidence High — a textual reading, pp.102–103) with PRS-25 (same file; Confidence Medium):** union as relaxed dissociative boundary, not merged substances — two remain distinct while constituting one. Badged separately because the grades differ; the reading of a marital "we" as a relaxed boundary is this synthesis's own extension and is speculative on either record.
 - **Rohr PRS-7 (theological):** relation is prior, so a constituting act produces something real, not a fiction.
 - **Levin PRS-32 (empirical at biological scale):** higher individuals are constituted by committed shared targets before characteristic behavior — the precedent for consent-before-consummation.
 

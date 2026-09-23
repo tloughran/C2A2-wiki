@@ -3,22 +3,22 @@ day: 302
 title: General Judges (Contemporary)
 pairs_with: "[[Day-302 - General Judges]]"
 length_target_words: 2200
-length_actual_words: 1402
-length_ratio_to_target: 0.64
+length_actual_words: 1546
+length_ratio_to_target: 0.703
 length_tier: medium
-length_note: "Body 1402 words vs ~2200 tier guideline (-36%); held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy."
+length_note: "Held tight to the PRS argument rather than padded — substantive elements (central response, difference-from-Aquinas, evidence strength, bridges) all present per length policy. RECOUNTED 2026-09-22: 1402 EXACT pre-edit against the stored field, then 1546 (ratio 0.640 -> 0.703, i.e. -30% against the ~2200 medium guideline) after this run's citation-apparatus repair, which split a single kind-only badge over Carroll PRS-04 ((Implicit)/Medium) and Carroll PRS-18 (High) into one grade per record; +144 words, all apparatus, no prose added for length and no argument changed. Counting boundary: every word outside the YAML block and above any auto-linked trailer, section headings included, regex letters-and-apostrophes. Tier re-verified: paired transcript cleaned word_count 2434 falls in 2000-3500, so medium/2200 is correct."
 karpathy_wiki_sources:
   - "traditions/friston/prs_triplets.md (PRS-04 organism as active modeler; PRS-15 OODA full loop; PRS-16 expected free energy)"
   - "traditions/carroll/prs_triplets.md (PRS-04 agency without dualism; PRS-18 metaphysics of levels)"
   - "traditions/wright/prs_triplets.md (PRS-01 critical realism; PRS-05 salvation as incorporation)"
   - "traditions/fredrickson/prs_triplets.md (PRS-02 love reduced to sentiment; PRS-14 conducive conditions)"
   - "master/cross_program_index.md (CROSS-005 love/union as fundamental)"
-evidence_strength_summary: "End-directedness under free-energy (active inference) is formal; 'correct habitual end' as orientation-to-telos is philosophical/theological; 'Godhead not seen without joy' read as truth-seeking intrinsically rewarding is speculative bridging formal reward-modeling to theology."
+evidence_strength_summary: "End-directedness under free-energy (active inference) is formal and rests on Friston PRS-15/PRS-16, both Confidence High; Friston PRS-04 is (Implicit)/Medium and supports rather than carries them. The deflationary counterpoint is graded per record and not levelled: Carroll PRS-04 (agency without dualism) is (Implicit)/Medium, while Carroll PRS-18 (the demand for a metaphysics of levels) is High and is a record about PRS-04's deficiency. 'Correct habitual end' as orientation-to-telos is philosophical/theological; 'Godhead not seen without joy' read as truth-seeking intrinsically rewarding is speculative bridging formal reward-modeling to theology."
 mind_first_reframe: "To have an end is to carry a preference structure (a generative model's priors) that makes some outcomes count as success; rightly judging an agent is reading it against the true end — loving union — it actually computes toward, and fitness to judge is alignment of preference structures across a shared interface."
 central_theme_thread: "No finite agent yet holds the true end completely; each computes toward loving unity from its own limited perspective, and legible judgment is possible only between agents who share enough nature/interface to make the verdict intelligible."
 tags: [synthesis, day/302, theme/right-end-of-agency]
-last_qc_at: "2026-09-17T00:23:34"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T10:26:01"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 302 — General Judges (Contemporary Parallel)
@@ -57,7 +57,8 @@ Salvation, in N.T. Wright's frame (PRS-05 in the Wright-tradition wiki), is inco
 
 - **PRS-15 + PRS-16 in the Friston-tradition wiki** — *agency as end-relative free-energy minimization* (formal; both Confidence High). Gives "the correct habitual end" a mechanism: the preference distribution that makes outcomes count as success.
 - **PRS-04 in the Friston-tradition wiki** — *the organism as active modeler* (marked (Implicit), Confidence Medium — a reconstruction of the predictive-coding picture rather than a measured finding, so it supports the two entries above rather than carrying them).
-- **PRS-04 + PRS-18 in the Carroll-tradition wiki** — *agency as real-but-high-level, awaiting a metaphysics of levels* (formal/philosophical). The honest counterpoint: is "the true end" anything more than a useful description? Aquinas says more; Carroll demands the warrant.
+- **PRS-04 in the Carroll-tradition wiki** — *agency without dualism*, the deflationary compatibilism on which agency is a real but high-level description (philosophical; marked **(Implicit)**, **Confidence Medium** — a reconstruction, not a Carroll publication in that form). Graded here in its own right: this file already discloses *Friston's* PRS-04 as (Implicit)/Medium in the bullet above, and the disclosure does not travel with the number — the two registers share an id and nothing else.
+- **PRS-18 in the Carroll-tradition wiki** — *the demand for a metaphysics of levels* (philosophical; **Confidence High**, sourced to Christian List's levels-of-reality account). Named apart from PRS-04 rather than bundled with it because the record is *about* PRS-04's deficiency: its own Solution describes an upgrade path that would move PRS-04 from Medium toward High. Bundling the two under one badge would have let the higher grade of the critique launder the lower grade of the position being criticized. The honest counterpoint stands: is "the true end" anything more than a useful description? Aquinas says more; Carroll demands the warrant — and PRS-18 records that the warrant is owed, not paid.
 - **PRS-02 + PRS-14 in the Fredrickson-tradition wiki / CROSS-005** — *love as the felt, relational highest good* (empirical/speculative). The embodied reading of "no Godhead seen without joy."
 - **PRS-01 + PRS-05 in the Wright-tradition wiki** — *critical realism + salvation as incorporation* (theological/epistemological, High). The judge sees truly but perspectivally; the judged are included in a people, not merely sentenced.
 

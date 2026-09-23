@@ -3,9 +3,9 @@ day: 277
 title: Vestments & Impediments (Contemporary)
 pairs_with: "[[Day-277 - Vestments & Impediments]]"
 length_target_words: 2200
-length_actual_words: 1502
+length_actual_words: 1537
 length_tier: medium
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-16 BEFORE editing: 1487 exactly as stored. This run's removal of an inert Rohr PRS-03 co-citation, with its dated note, then added 15 words net of citation apparatus: 1487 → 1502, ratio 0.676 → 0.683. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. RECOUNTED 2026-09-16 BEFORE editing: 1487 exactly as stored. This run's removal of an inert Rohr PRS-03 co-citation, with its dated note, then added 15 words net of citation apparatus: 1487 → 1502, ratio 0.676 → 0.683. No argument altered. Boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex of ASCII letters plus apostrophe. RECOUNTED AGAIN 2026-09-21 BEFORE editing: 1502, exactly as stored. That run's ONLY surviving edit is the unbundling of the Kastrup PRS-02 badge, which was understated as 'speculative' over a Confidence High record (+35 words of citation apparatus). A criterion-(a) article-anchoring edit was also made and then REVERTED in the same run once the standing disposition was re-read — article attribution in the 241-307 tail is escalate-not-rewrite pending Tom's open ruling; see the QC log CORRECTION row of 2026-09-21. No argument altered. New total 1537, ratio 0.699."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-06 multi-agent coherence via mutual modeling; PRS-18 ZBS band-width — widening a community so out-group evidence is assimilated rather than repelled, cited here as a constraint ON impediments rather than a warrant for them)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-08 cells as cognitive agents in morphospace, PRS-17 bioelectric interface to collective intelligence — role assignment by the field of the whole)"
@@ -13,11 +13,11 @@ karpathy_wiki_sources:
   - "wiki/traditions/kastrup/prs_triplets.md (PRS-02 individual identity within monism)"
   - "wiki/traditions/wright/prs_triplets.md (PRS-13 salvation as participation in God's homecoming among the people being formed)"
 evidence_strength_summary: "Friston multi-agent coherence formal but its social-scale application speculative; Levin role-assignment empirical at tissue scale; Rohr/Kastrup/Wright claims theological/metaphysical, firm within tradition, not empirical."
-length_ratio_to_target: 0.683
+length_ratio_to_target: 0.699
 mind_first_reframe: "An impediment is best understood as a coherence-condition the collective imposes on candidates for a real role, not a private moral score — which dissolves the paradox that an unworthy minister still confers a valid sacrament."
 central_theme_thread: "The validity/worthiness split is the central theme's deepest consolation: the body's capacity to mediate the whole does not wait on any member's perfection; the limited, even unworthy, agent is still drawn into a unity whose competence is not his own."
 tags: [synthesis, day/277, theme/role-versus-agent]
-last_qc_at: "2026-09-16T14:30:29"
+last_qc_at: "2026-09-21T22:25:44"
 last_qc_outcome: "rewrote"
 ---
 
@@ -54,7 +54,7 @@ The project's wager is that loving unity is computed by agents who each see only
 - **Levin PRS-08 + PRS-17 (`wiki/traditions/levin/prs_triplets.md`; PRS-08 Confidence High, empirical at cell and tissue scale):** the cell as goal-directed agent in morphospace, and bioelectric pattern memory as the "cognitive glue" by which the whole licenses members into roles. Real unfitnesses exist, giving "impediment" a non-moral analogue.
 - **Rohr PRS-01 (theological; Confidence High):** non-dual frame keeps validity and worthiness from collapsing; sacramental grace is the office's, not the man's. [PRS-03 dropped from this bullet on 2026-09-16: it anchored no claim here — the non-collapse is PRS-01's Solution.]
 - **Wright PRS-13 (theological / scriptural):** salvation as participation in God's homecoming among a people being formed — the scriptural warrant for reading Phil 2:12 as membership rather than merit-tally, which is what makes the validity/worthiness split a consolation rather than a loophole.
-- **Kastrup PRS-02 (metaphysical, speculative):** identity within monism underwrites a real role borne by an imperfect occupant.
+- **Kastrup PRS-02 (`wiki/traditions/kastrup/prs_triplets.md`; metaphysical, Confidence High — a textual reading, pp.102–103):** identity within monism underwrites a real role borne by an imperfect occupant. The record itself is firm within analytic idealism; what is speculative is the application to an ecclesial office, which is this synthesis's own extension.
 
 ## Where this leaves us
 

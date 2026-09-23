@@ -5,7 +5,7 @@ pairs_with: "[[Day-289 - The Marriage Debt]]"
 length_target_words: 1500
 length_actual_words: 1306
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. (Recounted 2026-09-22: body 1306 words EXACT against the stored field, ratio 0.871, so the -13% is measured and not asserted. Counting boundary: every word outside the YAML block and above any auto-linked trailer, section headings included, regex letters-and-apostrophes. Tier re-verified: paired transcript cleaned word_count 1355 is under 2000, so short/1500 is correct. This note previously carried no figure of its own and so could not be checked — the same boilerplate repaired on Days 284/285/288 on 2026-09-22.)"
 karpathy_wiki_sources:
   - "wiki/traditions/wright/prs_triplets.md (PRS-05 salvation as covenant inclusion; canonical: 1 Cor 7 mutual conjugal obligation)"
   - "wiki/traditions/rohr/prs_triplets.md (PRS-04 embodied love as epistemology, PRS-7 relationship ontologically prior)"
@@ -16,7 +16,7 @@ length_ratio_to_target: 0.871
 mind_first_reframe: "The marriage debt is the formalization of symmetric mutual self-gift — each agent ceding sole self-authority to the other equally — and this symmetry is what makes the union a real 'we' rather than a possession of one by the other."
 central_theme_thread: "Loving unity is achieved when each limited perspective gives itself wholly to the other without being erased; the symmetric mutual self-gift of the marriage debt is that claim in its most concrete human form."
 tags: [synthesis, day/289, theme/symmetric-self-giving-as-paradigm-of-unity]
-last_qc_at: "2026-09-16T22:28:58"
+last_qc_at: "2026-09-22T10:25:59"
 last_qc_outcome: "rewrote"
 ---
 

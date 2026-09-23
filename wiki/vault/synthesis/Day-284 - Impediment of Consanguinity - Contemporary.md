@@ -5,7 +5,7 @@ pairs_with: "[[Day-284 - Impediment of Consanguinity]]"
 length_target_words: 1500
 length_actual_words: 981
 length_tier: short
-length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach."
+length_note: "Runs under tier target by design — written for substantive completeness over word count (per tiered+flexible length policy and concision preference); not padded. Not a silent breach. QC 2026-09-22: recount 981 words, reproducing `length_actual_words` EXACTLY with no edit to the body (boundary: the whole file minus the single YAML block bounded at the next separator, headers included, any trailing `**Related tradition records**` block cut, regex letters and apostrophes). Tier re-verified correct against the paired transcript's cleaned word_count of 1497 (short, <2000), so the 0.654 ratio is a real under-run against the right target and not a tier misclassification. Recorded so the next reviewer can check this note against a dated figure rather than re-deriving the count."
 karpathy_wiki_sources:
   - "wiki/traditions/friston/prs_triplets.md (PRS-18 widening a community to engage rival traditions, PRS-06 multi-agent coherence)"
   - "wiki/traditions/levin/prs_triplets.md (PRS-17 bioelectric interface to collective intelligence, PRS-09 cognitive attribution across scales)"
@@ -16,8 +16,8 @@ length_ratio_to_target: 0.654
 mind_first_reframe: "The consanguinity impediment is a community-widening mechanism — suppressing the easy near coupling to compel the bond-extending distant one — mirroring how collective intelligences stay open and coherent at larger scales."
 central_theme_thread: "The kin-rule is loving unity's missionary edge: love is forbidden to curl up among the already-near so that it must reach the stranger, moving the circle of union from clan toward universal communion."
 tags: [synthesis, day/284, theme/widening-the-circle-of-union]
-last_qc_at: "2026-09-16T22:28:56"
-last_qc_outcome: "pass"
+last_qc_at: "2026-09-22T08:30:02"
+last_qc_outcome: "rewrote"
 ---
 
 # Day 284 — Impediment of Consanguinity (Contemporary Parallel)
