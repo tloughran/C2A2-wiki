@@ -1000,6 +1000,7 @@
   // after the answer (speech, a turntable) and would fight the voice guide.
   const PLAN_DENY = new Set(['read', 'spin']);
   const PLAN_MAX_COMMANDS = 6;
+  const PLAN_TEXT_MAX = 6000;   // chars of summarize text passed back per command
 
   function verbLines(verbsJson) {
     const list = (verbsJson && verbsJson.verbs) || [];
@@ -1028,7 +1029,8 @@
     if (o.results && o.results.length) {
       parts.push('RESULTS OF YOUR COMMANDS SO FAR (round ' + o.round + '):\n' + o.results.map(function (r, i) {
         return (i + 1) + '. ' + r.cmd + ' -> ' + (r.ok ? '' : 'FAILED: ') + (r.spoken || '') +
-          (r.problems && r.problems.length ? '  VERIFY PROBLEMS: ' + r.problems.join('; ') : '');
+          (r.problems && r.problems.length ? '  VERIFY PROBLEMS: ' + r.problems.join('; ') : '') +
+          (r.text ? '\n   TEXT RETURNED:\n' + r.text : '');
       }).join('\n'));
       parts.push(o.lastRound ? 'This is the LAST round: return "commands": [] and the answer.' : 'Correct with new commands only if something failed or the goal is not met; otherwise return "commands": [] and the answer.');
     }
@@ -1081,6 +1083,8 @@
         try { r = deps.run(cmd) || {}; } catch (e) { r = { ok: false, spoken: 'error: ' + ((e && e.message) || e) }; }
         const problems = (r.verify && !r.verify.ok) ? (r.verify.problems || []) : [];
         const row = { round: round, cmd: cmd, ok: r.ok !== false, spoken: r.spoken || '', problems: problems };
+        // `summarize` hands back TEXT; without it the model answers "I was not given the article".
+        if (typeof r.text === 'string' && r.text) { row.text = r.text.slice(0, PLAN_TEXT_MAX); }
         trace.push(row); results.push(row);
       }
     }

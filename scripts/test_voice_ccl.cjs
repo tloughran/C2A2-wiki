@@ -1022,11 +1022,101 @@ check('verify: a filter read-back that disagrees with what was written is named'
   assert.strictEqual(CCL.verifyFilters({ levin: true }, null).ok, false);
 });
 
+// ---- planner (item 4) ---------------------------------------------------------
+// WHY: Tom's 15-minute test (2026-09-22) -- the guide "cannot retain one cut and
+// add or subtract another, nor notice that it failed". These rows fail if the
+// router lets a question run as a command, if a free search starts costing a
+// model call, if verify problems stop reaching the model, or if a failure the
+// model does not fix can vanish from what the user is shown.
+check('route: a question that starts with a verb goes to the planner, not run as that verb', function () {
+  assert.strictEqual(CCL.routeRequest('show me how levin connects to friston', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('How does Levin connect to Friston?', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('keep levin and add friston', grammar).route, 'plan');
+  assert.strictEqual(CCL.routeRequest('only levin then hide agents', grammar).route, 'plan');
+});
+check('route: one command and a short bare search stay direct (free, no model call)', function () {
+  assert.strictEqual(CCL.routeRequest('only levin friston', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('levin', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('bioelectric memory', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('what', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('also friston', grammar).route, 'direct');
+  assert.strictEqual(CCL.routeRequest('   ', grammar).route, 'empty');
+});
+check('parsePlan: fenced JSON is read; read/spin are refused; the list is capped', function () {
+  const p = CCL.parsePlan('Sure:\n```json\n{"goal":"g","commands":["find levin","read","spin left","also friston","a","b","c","d","e"],"answer":""}\n```');
+  assert.strictEqual(p.ok, true);
+  assert.deepStrictEqual(p.commands, ['find levin', 'also friston', 'a', 'b', 'c', 'd']);
+  assert.deepStrictEqual(p.dropped, ['read', 'spin left', 'e']);
+  assert.strictEqual(CCL.parsePlan('I think you should find levin').ok, false);
+  assert.strictEqual(CCL.parsePlan('{"commands": [').ok, false);
+});
+check('prompt: the cut grammar is taught (a new find REPLACES; also ADDS)', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: CCL.verbLines(VERBS), results: [] });
+  assert.ok(/new `find` REPLACES/.test(pr.system));
+  assert.ok(/also friston|`also Y` \(add\)/.test(pr.system));
+  assert.ok(/\nalso \(/.test(pr.user), 'verb list must carry also/except/within from verbs.json');
+});
+
+const asyncChecks = [];
+function acheck(name, fn) { asyncChecks.push([name, fn]); }
+function fakeModel(replies) {
+  const seen = [];
+  return { seen: seen, ask: function (p) { seen.push(p); const r = replies[Math.min(seen.length - 1, replies.length - 1)]; return Promise.resolve({ text: JSON.stringify(r), model: 'fake' }); } };
+}
+acheck('loop: a verify problem reaches the model, its correction runs, and a fixed run reports no failure', async function () {
+  const m = fakeModel([
+    { goal: 'levin plus friston', commands: ['find levin', 'find friston'], answer: '' },
+    { goal: 'levin plus friston', commands: ['find levin', 'also friston'], answer: '' },
+    { goal: 'x', commands: [], answer: 'Levin and Friston are both lit.' }
+  ]);
+  const ran = [];
+  const run = function (c) {
+    ran.push(c);
+    if (c === 'find friston') { return { ok: true, spoken: 'find friston: 2', verify: { ok: false, problems: ['levin cut was replaced'] } }; }
+    return { ok: true, spoken: c + ': ok', verify: { ok: true, problems: [] } };
+  };
+  const res = await CCL.runPlan('keep levin, add friston', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(ran, ['find levin', 'find friston', 'find levin', 'also friston']);
+  assert.ok(/VERIFY PROBLEMS: levin cut was replaced/.test(m.seen[1].user));
+  assert.strictEqual(res.calls, 3);
+  assert.strictEqual(res.failed.length, 0);
+  assert.strictEqual(res.answer, 'Levin and Friston are both lit.');
+});
+acheck('loop: an unfixed failure is returned as `failed` whatever the model claims; the last round never runs commands', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['except summa'], answer: 'Done, summa removed.' }]);
+  const ran = [];
+  const run = function (c) { ran.push(c); return { ok: true, spoken: c, verify: { ok: false, problems: ['removed nothing'] } }; };
+  const res = await CCL.runPlan('drop summa', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.calls, 3);
+  assert.deepStrictEqual(ran, ['except summa', 'except summa']);
+  assert.strictEqual(res.failed.length, 1);
+  assert.ok(/LAST round/.test(m.seen[2].user));
+});
+acheck('loop: text a command returns (summarize) reaches the model in the next round', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['summarize'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  const run = function () { return { ok: true, spoken: 'summarizing', text: 'BIOELECTRIC-BODY-TEXT' }; };
+  await CCL.runPlan('what does this article say?', { state: function () { return 'S'; }, run: run, ask: m.ask, verbs: '', knowledge: '' });
+  assert.ok(/TEXT RETURNED:\n\s*BIOELECTRIC-BODY-TEXT/.test(m.seen[1].user), 'the article text must be in the round-2 prompt');
+});
+acheck('loop: a plain question costs one call and runs nothing', async function () {
+  const m = fakeModel([{ goal: '', commands: [], answer: 'A.' }]);
+  const res = await CCL.runPlan('what is a bridge essay?', { state: function () { return 'S'; }, run: function () { throw new Error('ran'); }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.calls, 1);
+  assert.strictEqual(res.trace.length, 0);
+  assert.strictEqual(res.answer, 'A.');
+});
+
 // ---- report -----------------------------------------------------------------
 
-if (failures.length) {
-  console.error('FAIL: ' + failures.length + ' failed, ' + passed + ' passed\n');
-  for (const f of failures) { console.error('  x ' + f); }
-  process.exit(1);
-}
-console.log('ok: ' + passed + ' passed');
+(async function () {
+  for (const [name, fn] of asyncChecks) {
+    try { await fn(); passed++; }
+    catch (e) { failures.push(name + ' -- ' + (e && e.message ? e.message : e)); }
+  }
+  if (failures.length) {
+    console.error('FAIL: ' + failures.length + ' failed, ' + passed + ' passed\n');
+    for (const f of failures) { console.error('  x ' + f); }
+    process.exit(1);
+  }
+  console.log('ok: ' + passed + ' passed');
+})();

@@ -2841,7 +2841,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=cad9ab966b"></script>
+<script src="lib/c2a2-commandline.js?v=506b0b6bd3"></script>
 <script>
 (function () {
   'use strict';
@@ -5889,7 +5889,7 @@ var VoiceGuide = (function() {
   #row1-tools .nav-btn, #row1-tools #ccl-readhelp { display: none; }
 }
 </style>
-<script src="lib/c2a2-search.js?v=fff774bcf9"></script>
+<script src="lib/c2a2-search.js?v=5447353e16"></script>
 <script>
 (function () {
   'use strict';
@@ -5974,7 +5974,7 @@ var VoiceGuide = (function() {
         verbs: v[0], knowledge: v[1].text,
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
         run: function (cmd) { return window.CCLRun(cmd); },
-        ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user }); }
+        ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
       });
     });
   };
