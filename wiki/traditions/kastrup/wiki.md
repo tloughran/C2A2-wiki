@@ -164,3 +164,12 @@ Processed 4 source file(s); minted PRS-64 - PRS-69.
 - `PROP-2026-09-09-003` — God, soul & the problem of evil — dialogue with guest Jamey Hecht (With Reality in Mind, 15 Sept 2026) (talk, https://www.withrealityinmind.com/god-soul-the-problem-of-evil/) → PRS-80, PRS-81, PRS-82
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+8 triplets added from 2 approved proposals (decision email 2026-09-23): PRS-83, PRS-84, PRS-85, PRS-86, PRS-87, PRS-88, PRS-89, PRS-90.
+
+- `PROP-2026-09-16-003` — The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way (talk, https://www.withrealityinmind.com/headless-way/) → PRS-83, PRS-84, PRS-85
+- `PROP-2026-09-23-001` — The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis (talk, https://www.withrealityinmind.com/not-a-simulation/) → PRS-86, PRS-87, PRS-88, PRS-89, PRS-90
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

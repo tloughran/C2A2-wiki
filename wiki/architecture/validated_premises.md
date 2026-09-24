@@ -7933,3 +7933,61 @@ PREMISE-217:
     (ASSUMPTION-1636); every "control fails identically" argument.
   Re-check due: 2026-12-23 (Quarterly)
   Status: ACTIVE
+
+
+---
+## Added 2026-09-24 by 15c
+
+PREMISE-218:
+  Date validated: 2026-09-24
+  Source item: ASSUMPTION-1675
+  Statement: An unattended agent must not discover a higher-privilege fallback at failure time. The
+    default on failure is fail-closed (stop the action and record it). Where a fallback is genuinely
+    needed, it is declared in the task AND enforced outside the agent (scoped, just-in-time), because a
+    fallback declared only in the task text is a standing grant that injected content can trigger.
+  Item type: ASSUMPTION (stated)
+  Supporting evidence: Yang et al. 2026, TOOLPRIVBENCH (arXiv 2606.20023); Saltzer & Schroeder 1975;
+    Parasuraman, Sheridan & Wickens 2000; Uppala 2026 (arXiv 2605.18414).
+  Challenges noted: 15b (Moderate) — OWASP LLM06 Excessive Agency; Anthropic "How we contain Claude":
+    declared-in-task fallback is itself an attack surface. Adopted into the statement. Conflict of
+    interest: Anthropic sources.
+  Confidence: Moderate
+  Applicable to: all scheduled/unattended runs; host-escalation paths (Desktop Commander, computer-use,
+    Chrome); task-file authoring. Complements PREMISE-093. See REVISE-487.
+  Re-check due: 2026-12-24 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-219:
+  Date validated: 2026-09-24
+  Source item: PRESUMPTION-1081
+  Statement: A copy-whole-then-read pattern over a growing database fails within a forecastable WINDOW
+    set by growth rate against scratch capacity — intermittently at first (free pages, WAL state and other
+    scratch use vary), then reliably. Alarm on the window's leading edge, not on a single forecast date.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Google SRE (Beyer et al. 2016) capacity planning; Prometheus predict_linear
+    practice; sqlite.org backup / VACUUM INTO documentation (copy is database-sized).
+  Challenges noted: 15b (Weak-Moderate): failure is a band, not a date; step changes in growth break
+    linear forecasts. Adopted.
+  Confidence: Moderate
+  Applicable to: OpenStory db readers (7+ GB WAL-mode); any snapshot-based ETL in scheduled sandboxes.
+    Pairs with REVISE-485; consistent with PREMISE-086, PREMISE-092.
+  Re-check due: 2026-12-24 (Quarterly)
+  Status: ACTIVE
+
+PREMISE-220:
+  Date validated: 2026-09-24
+  Source item: PRESUMPTION-1083
+  Statement: For a quantity that can legitimately stay flat, an unchanged reading cannot by itself
+    distinguish a stable system from a frozen input; a freshness signal from the source is required. For
+    a quantity expected to vary, exact repetition is itself evidence of a frozen input and should be
+    tested for (a CONSTANT-fault check) rather than read as stability.
+  Item type: PRESUMPTION (unstated — extra weight: designers were unaware)
+  Supporting evidence: Chandra & Toueg 1996 (JACM, by analogy); stuck-at sensor-fault literature;
+    Vaughan 1996 (normalisation of deviance).
+  Challenges noted: 15b (Moderate): Sharma, Golubchik & Govindan 2010 (ACM TOSN) detect CONSTANT faults
+    from output alone — adopted as the second clause.
+  Confidence: Moderate
+  Applicable to: health checks, heartbeat and pending-count instruments, OpenStory status readers
+    (ASSUMPTION-1662). Extends PREMISE-086 and PREMISE-100.
+  Re-check due: 2026-12-24 (Quarterly)
+  Status: ACTIVE

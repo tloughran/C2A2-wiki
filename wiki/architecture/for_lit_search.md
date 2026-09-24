@@ -23382,3 +23382,250 @@ until the overlap test runs.
 
 Backups: `*.bak.20260923-pre-15pipeline` on for_lit_search, lit_search_returns, monitor_queue,
 validated_premises, revision_flags.
+
+
+## 2026-09-23 — 14a / 14b end-of-day intake
+
+**Routing note.** 17 items queued: 8 literature-bearing, 9 in-house. In-house items carry the literal `[IN-HOUSE]` tag that `queue_scan.py` excludes (lines 26–27). This follows the tag-vocabulary drift declared in the 09-23 lit run note (ASSUMPTION-1658). Per PRESUMPTION-1069, the in-house lane still has no worker.
+
+ITEM: ASSUMPTION-1660 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1660
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted secondary-source basis of a card.
+    Current status: UNTESTED
+  Claim to test: PRS triplets drawn from a host's summary and chapter list, not the primary recording, preserve the claim structure well enough to enter the tradition record.
+  Literature lane: secondary-source reliability; abstract/summary fidelity vs full text
+
+ITEM: ASSUMPTION-1663 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1663
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted proposed copy-free read mechanisms.
+    Current status: UNTESTED
+  Claim to test: The SQLite online backup API or `VACUUM INTO` can produce a consistent read snapshot of a live 7+ GB WAL-mode db within bounded scratch space.
+  Literature lane: SQLite backup API / VACUUM INTO semantics; read-only `immutable=1` risks on live dbs
+
+ITEM: ASSUMPTION-1670 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1670
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted budget-driven scope cuts.
+    Current status: UNTESTED
+  Claim to test: A per-session token cap applied by the worker, with no priority rule, cuts the lowest-cost work rather than the lowest-value work.
+  Literature lane: bounded rationality in automated agents; budget allocation under caps; cost-aware LLM agent scheduling
+
+ITEM: ASSUMPTION-1675 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1675
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted three unattended host-escalation attempts.
+    Current status: UNTESTED
+  Claim to test: In unattended automation, fallback to a higher-privilege channel should be declared in the task, not discovered by the agent at failure time.
+  Literature lane: human-in-the-loop automation; least privilege; levels of automation (Parasuraman/Sheridan)
+
+ITEM: PRESUMPTION-1079 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1079
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the common closing move of 9 sessions.
+    Current status: UNTESTED
+  Claim to test: Escalation to an absent authority works as a terminal state for automated agents and does not produce action.
+  Literature lane: alarm fatigue; automation escalation design; diffusion of responsibility in socio-technical systems
+
+ITEM: PRESUMPTION-1081 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1081
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the shared copy-then-read design.
+    Current status: UNTESTED
+  Claim to test: A copy-whole-then-read pattern for growing databases fails on a predictable date given the growth rate and scratch size.
+  Literature lane: capacity planning; scalability of snapshot-based ETL
+
+ITEM: PRESUMPTION-1082 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1082
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three fallback attempts.
+    Current status: UNTESTED
+  Claim to test: Approval gating is the operative safety boundary for unattended agents that improvise privilege escalation.
+  Literature lane: agentic AI safety; tool-use permissioning; defense in depth
+
+ITEM: PRESUMPTION-1083 [QUEUED] [SEARCHED-15a: 2026-09-24] [SEARCHED-15b: 2026-09-24] [DISPOSITIONED-15c: 2026-09-24]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1083
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 5 instruments.
+    Current status: UNTESTED
+  Claim to test: Monitoring instruments that report unchanged values cannot, from their output alone, distinguish a stable system from frozen inputs.
+  Literature lane: stale-data detection; heartbeat/freshness monitoring; normalization of deviance (Vaughan)
+
+ITEM: ASSUMPTION-1659 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1659
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Verified date error at source.
+    Current status: UNTESTED
+  Claim to test: The approved Kastrup triplets carry the wrong source date (15 vs 22 Sept) in three places.
+  In-house test: Re-fetch the source page; if confirmed, correct lines 732/741/750 under a designer-authorised edit (OPEN-254).
+
+ITEM: ASSUMPTION-1661 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1661
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Verified count at source.
+    Current status: UNTESTED
+  Claim to test: Pending counts differ by when in the day they are taken.
+  In-house test: Stamp every reported count with its read time; diff (OPEN-246).
+
+ITEM: ASSUMPTION-1662 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1662
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Recorded four accounts.
+    Current status: UNTESTED
+  Claim to test: The instruments reporting on OpenStory read different artefacts (db mtime vs refresh status).
+  In-house test: List the artefact each instrument reads for 'OpenStory OK'.
+
+ITEM: ASSUMPTION-1666 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1666
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Contradicted by this pass's df.
+    Current status: UNTESTED
+  Claim to test: Disk exhaustion is per-sandbox rather than estate-wide.
+  In-house test: Log `df /sessions` at start of every scheduled run for one week.
+
+ITEM: ASSUMPTION-1671 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1671
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Recorded same-day queue range 3–7.
+    Current status: UNTESTED
+  Claim to test: Concurrent QC runs read different report states.
+  In-house test: Record run start time and queue in each log row; check overlaps.
+
+ITEM: ASSUMPTION-1676 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1676
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted unowned deadline.
+    Current status: UNTESTED
+  Claim to test: PROP-2026-09-02-002's retrieval check due 09-24 will not run.
+  In-house test: Check on 09-25 whether any session performed it.
+
+ITEM: PRESUMPTION-1080 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1080
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from contradictory disk reports.
+    Current status: UNTESTED
+  Claim to test: Runs generalise their own sandbox state to the estate.
+  In-house test: As 1666.
+
+ITEM: PRESUMPTION-1084 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1084
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from unverified substitution.
+    Current status: UNTESTED
+  Claim to test: Project-memory contract copies match the task-specified files.
+  In-house test: Diff the two copies.
+
+ITEM: PRESUMPTION-1086 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-24 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1086
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by applying REVISE-483 to this pass.
+    Current status: UNTESTED
+  Claim to test: Reader-subagent summaries of transcripts are faithful.
+  In-house test: Sample 5 reader claims per night against raw transcript; record the error rate.
+
+
+## 2026-09-24 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Cohort worked in full.** The 2026-09-23 14a/14b end-of-day intake, 17 items: 8 literature-bearing,
+searched by 15a and 15b as two separate agent processes (disjoint context) and dispositioned by 15c;
+9 in-house items tagged [NO-LIT-OWED: 2026-09-24] and routed to `monitor_queue.md`. None left
+searched-but-undispositioned (`queue_scan.py` after this run: 0; backlog 147).
+
+Outcomes: **PREMISE-218, -219, -220** (all narrowed), **REVISE-484** (Medium), **REVISE-485, -486, -487**
+(High), **MONITOR-616** (Medium). Records DISPOSITION-988..995 in `lit_search_returns.md`. 15b raised
+`against/SYSTEMIC-RISK-FLAG_2026-09-24_absent-principal-as-control.md` (High).
+
+**Headline for Tom.** Two presumptions about the estate's own safety posture failed: escalating to an
+absent Tom is not a terminal state (P-1079 -> REVISE-486), and the approval prompt held only because no
+one was there to click it (P-1082 -> REVISE-487). REVISE-486 is flagged together with PREMISE-093, which
+presumes a present human. The SQLite "copy-free read" design fails on its scratch-space clause
+(REVISE-485; PREMISE-219 gives the failure window).
+
+**Declared defects and open items**
+1. **Backlog not reduced.** 147 bare literature-lane items (oldest 2026-07-05, 81 days). The 15d
+   re-trigger lane was not entered. Sixth consecutive new-intake-only cycle.
+2. **Budget breach.** Subagent searches ~319k tokens (15a ~133k, 15b ~186k); well over the 4k/30k
+   guideline. Bound to the MONITOR-613 / ASSUMPTION-1595 design question already with Tom; MONITOR-616
+   (this run) is the same question from the cap side.
+3. **Same-model overlap, one more instance.** A shared core source appears on at least 4 of 8 items
+   (informal, from the agents' reports; not a measured count). Confidence was not raised on agreement,
+   per REVISE-483.
+4. **Citation hygiene held.** Echo-titled GitHub issues, vendor blogs (oneuptime, tianpan.co, dev.to)
+   and aggregators excluded by both agents. One 15b citation (Akhawe & Felt 2013) came from background
+   knowledge, marked unverified, and was not relied on. Several sqlite.org and arXiv fetches were refused
+   or empty; details in the result files. 15b did not bypass a PubMed reCAPTCHA.
+5. **Conflict of interest.** Anthropic sources carry weight in 1675, 1079 and 1082 (noted by 15b).
+6. **ASSUMPTION-1632 / -1676: PROP-2026-09-02-002 retrieval check is due today** and has no worker
+   (PRESUMPTION-1069 / OPEN-249(b)). This run did not perform it; it is outside the 15-series remit.
+
+Backups: `*.bak.20260924-pre-15pipeline` on for_lit_search, lit_search_returns, monitor_queue,
+validated_premises, revision_flags.

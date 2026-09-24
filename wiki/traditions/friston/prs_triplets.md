@@ -655,7 +655,43 @@ PRS-71:
   Confidence: Speculative (the link from the paper's "complexity of the generative model" to the KL complexity term in variational free energy is this agent's inference, not confirmed from the text)
   Evidence: Abstract: phenomenology "might also align with the complexity, or 'length', of the generative model, while entropy reflects variability around that underlying structure."
 
-*Total PRS triplets: 71*
+PRS-72:
+  Problem: Is the autonomic dysregulation observed in depression a peripheral comorbidity, or is it structurally coupled to the brain's interoceptive machinery?
+  Resource: MRI gray-matter volumetry across cardiovascular-regulatory regions plus resting-state heart-rate-variability metrics from photoplethysmography, in MDD patients versus controls.
+  Solution: The two are coupled — cardiac dysregulation is linked to reduced insula volume, indicating a disrupted heart–brain relationship rather than two independent findings.
+  Date Added: 2026-09-24
+  Source: Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression; PROP-2026-09-14-005
+  Confidence: High
+  Evidence: Reported finding of "a disrupted heart-brain relationship in major depressive disorder (MDD), notably a link between cardiac dysregulation and reduced insula volume."
+
+PRS-73:
+  Problem: What would count as physical evidence for the interoceptive-inference account of depression, as opposed to a reinterpretation of existing findings?
+  Resource: Structural insula volume as a proxy for the capacity to carry interoceptive priors with adequate precision.
+  Solution: A structural lesion-like correlate of degraded interoceptive precision, paired with the predicted autonomic consequence, is the account's most direct available evidence — though correlational, and silent on direction.
+  Date Added: 2026-09-24
+  Source: Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression; PROP-2026-09-14-005
+  Confidence: Speculative
+  Evidence: This is the Friston agent's reading of the finding against the interoceptive-inference framework; the paper reports the association, not the inferential interpretation. The study is cross-sectional, so cause is not established.
+
+PRS-74:
+  Problem: Is the Gaia hypothesis — a self-regulating biosphere — formalizable as something other than an analogy, and if so, what exactly is doing the regulating?
+  Resource: A simple biosphere–climate system model cast in active-inference form: internal states (biosphere), boundary states (surface temperature), action (greenhouse forcing).
+  Solution: A minimal planetary agency is exhibited: the biosphere infers external solar-radiation shifts through its boundary and acts on greenhouse forcing to maintain habitability. Gaia becomes a claim about inference and action, not about purpose.
+  Date Added: 2026-09-24
+  Source: Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note); PROP-2026-09-14-004 [citation resolved 2026-09-24: Rubin, Heins, Mitsui, Da Costa, Friston, "An elementary form of agency at planetary-scale", Sci Rep (2026), doi:10.1038/s41598-026-61878-9, published 2026-08-03]
+  Confidence: Medium
+  Evidence: Reported as a "proof of concept suggesting a minimal form of planetary agency"; internal states infer shifts in net incoming solar radiation by integrating past and current surface temperatures, and actively change greenhouse forcing to keep climate trajectories within geophysiological bounds.
+
+PRS-75:
+  Problem: Active inference is usually posed for systems that hold a state; what formalism covers systems whose preferred outcome is a *path*?
+  Resource: Climate homeorhesis — non-equilibrium steady-state dynamics — as the quantity being defended.
+  Solution: The preferred distribution is over trajectories rather than states, which aligns this treatment with Friston's path-integral formulation of the FEP and makes the planetary case a test bed for it.
+  Date Added: 2026-09-24
+  Source: Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note); PROP-2026-09-14-004 [citation resolved 2026-09-24: Rubin, Heins, Mitsui, Da Costa, Friston, "An elementary form of agency at planetary-scale", Sci Rep (2026), doi:10.1038/s41598-026-61878-9, published 2026-08-03]
+  Confidence: Speculative
+  Evidence: The framing of homeorhesis as "non-equilibrium steady-state dynamics that underlie Earth's long-term habitability." The connection to the path-integral FEP is this agent's inference, not a stated claim of the paper.
+
+*Total PRS triplets: 75*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

@@ -203,3 +203,17 @@ Processed 8 source file(s); minted PRS-96 - PRS-115.
 - `PROP-2026-09-07-001` — Conversation #1 with Steven Strogatz (podcast, https://thoughtforms-life.aipodcast.ing/conversation-1-with-steven-strogatz) → PRS-121, PRS-122, PRS-123
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+17 triplets added from 7 approved proposals (decision email 2026-09-23): PRS-124, PRS-125, PRS-126, PRS-127, PRS-128, PRS-129, PRS-130, PRS-131, PRS-132, PRS-133, PRS-134, PRS-135, PRS-136, PRS-137, PRS-138, PRS-139, PRS-140.
+
+- `PROP-2026-09-12-003` — Living multicellular systems induce decodable spatial patterns in bacterial collectives (paper, https://www.biorxiv.org/content/10.64898/2026.09.02.748853v1) → PRS-124, PRS-125
+- `PROP-2026-09-12-002` — Large-Language Models as a Cognitive Virus (paper, https://arxiv.org/abs/2609.03344) → PRS-126, PRS-127
+- `PROP-2026-09-12-004` — Membrane voltage and connexin expression work together to enhance tumor growth and metastasis in cancer (paper, https://www.biorxiv.org/content/10.64898/2026.09.02.748840v1) → PRS-128, PRS-129
+- `PROP-2026-09-14-003` — Agnosiophobia in a virtual agent: behavioral and dynamical architecture in Lenia (paper, https://arxiv.org/abs/2605.30708) → PRS-130, PRS-131
+- `PROP-2026-09-14-002` — The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning (paper, https://arxiv.org/abs/2608.26116) → PRS-132, PRS-133, PRS-134
+- `PROP-2026-09-14-001` — Bioelectrical regionalization of multicellular aggregates by microRNAs (paper, https://pubs.aip.org/aip/jcp/article/165/5/055102/3400410/Bioelectrical-regionalization-of-multicellular) → PRS-135, PRS-136
+- `PROP-2026-09-21-002` — A platform for automated training of mammalian cell physiology (paper, https://www.biorxiv.org/content/10.64898/2026.08.13.744473v1) → PRS-137, PRS-138, PRS-139, PRS-140
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

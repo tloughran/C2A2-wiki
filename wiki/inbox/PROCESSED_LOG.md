@@ -1728,3 +1728,65 @@ Arkani-Hamed Cornell lecture is 2026-09-25 — future, not carded.
 **Phase 5.5.** OK — 6,569,330 bytes; cards 490, dates 130, responses 15; address-clean.
 **Phase 5.6.** OK (TMPDIR=/tmp) — 1501 signals, 87 pairs, span to 2026-09-09, stale_days 14, no WARN.
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+---
+
+## 2026-09-24 — daily run (Thu, Stump + Fredrickson specialist day): the 35-card clearance
+
+**Phase 0: one decision email, 35 APPROVE.** `[C2A2-review-decision] 2026-09-23` (thread 1a0ceeda8b2ac226) approved
+every card from PROP-2026-09-11-001 through PROP-2026-09-23-002. All 35 resolved by `proposal_id` match to exactly one
+file; no fallback, no no-ops. Archive: `review/archive/2026-09-24_decisions.md`. Email appended to
+`provenance/decision_emails.json` (16 emails). `review/2026-09-23_review.html` retired to `review/_superseded/`.
+**Move method:** `cp` then `rm` failed on the mount (`Operation not permitted`, as logged 09-16); `mv -f` over the
+byte-identical copy worked. `pending/` now holds only today's card. **Mark-as-read FAILED**: the Gmail connector
+returned "requires additional permissions". The email is still UNREAD; it is archived, so a re-run is idempotent.
+
+**Phase 1: 34 files ingested, 89 triplets, 10 traditions.** Network 867 -> **956** (provenance join and
+`grep -c '^PRS-[0-9]'` now agree at 956).
+
+| tradition | added | new ids | total |
+|---|---|---|---|
+| carroll | 6 | PRS-86..91 | 91 |
+| friston | 4 | PRS-72..75 | 75 |
+| hawkins | 15 | PRS-52..66 | 66 |
+| hoffman | 7 | PRS-45..51 | 51 |
+| kastrup | 8 | PRS-83..90 | 90 |
+| levin | 17 | PRS-124..140 | 140 |
+| mcgilchrist | 2 | PRS-79..80 | 80 |
+| rohr | 23 | PRS-80..102 | 102 |
+| stump | 4 | PRS-42..45 | closing total 42 (numbering gaps, pre-existing) |
+| wolfram | 3 | PRS-63..65 | 65 |
+
+Same deterministic transform as 09-10: each card's candidate blocks carried verbatim (plus `Label:` where the
+Rohr cards use lettered candidates with labels), `Date Added: 2026-09-24`, `Source: <title>; <proposal_id>`.
+Insert anchored on the **last** `*Total PRS triplets:*` line, so the hoffman/stump double-total trap did not fire.
+Post-check: no duplicate ids in any touched file; max id = closing total everywhere except stump (gaps, not defect).
+
+**Three deliberate deviations, named:**
+- PROP-2026-09-16-002 (McGilchrist members' Q&A): +0, NO-OP by card design (source-capture only; no candidate
+  offered). Source and quarterly cadence recorded in `traditions/mcgilchrist/wiki.md`.
+- PROP-2026-09-19-001 (Wolfram) CANDIDATE-03 HELD: no Evidence field, and the proposer wrote that it "may deserve
+  rejection" and rests on a health-related personal update it said should not be mined. CANDIDATE-01/-02 ingested.
+- PROP-2026-09-14-004 (Friston planetary agency) carried "Do not ingest until the citation resolves." Resolved
+  in-run from nature.com: Rubin, Heins, Mitsui, Da Costa, Friston, *An elementary form of agency at planetary-scale*,
+  Sci Rep, published 2026-08-03, doi:10.1038/s41598-026-61878-9. The card listed four authors; there are five.
+  Citation written into both triplets' Source line, then ingested (FINDING-093).
+
+**Tradition `wiki.md` files:** dated `### Ingest 2026-09-24` sections added to all ten. Open/solved question lists
+NOT re-adjudicated (same standing note as 09-10).
+
+**Master / Pattern Detector:** CROSS-136..140 minted (135 -> 140). 11 signals forwarded; FINDING-091..094 written;
+none escalated, reason stated under FINDING-094.
+
+**Still open:** PROP-2026-08-14-033 (Wright), unchanged. **Not ingested, on purpose:** today's
+PROP-2026-09-24-001 (Fredrickson) is pending review.
+
+**Phase 2.** 0 proposals. Fredrickson covered by specialist (PROP-2026-09-24-001). Limited orchestrator sweep
+(Stump, Carroll, Wolfram) found nothing new and uncaptured; the other ten traditions were not searched this run.
+**Phase 3.** `review/2026-09-24_review.html` (15,643 bytes, 1 proposal). No macOS `open` in sandbox.
+**Phase 4.** Gmail draft `r4112561701176027461`.
+**Phase 5.** No review page older than 3 days remained (09-21, 09-22, 09-24 retained).
+**Phase 5.5.** OK (TMPDIR=/tmp) — 6,746,797 bytes; triplets 956; cards 491, dates 131, responses 16; address-clean.
+**Phase 5.6.** OK (TMPDIR=/tmp) — 1611 signals (+110), 87 pairs, span to 2026-09-23, stale_days 1, no WARN;
+qc_trace.csv promoted (harvest content changed).
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.

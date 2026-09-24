@@ -570,7 +570,34 @@ PRS-62:
   Confidence: Medium
   Evidence: "As observers, humans are computationally limited... To say that humans are computationally limited or computationally bounded is to say that when there has been a computationally irreducible process, you can't do that whole irreducible computation. You can do only a limited computation."
 
-*Total PRS triplets: 62*
+PRS-63:
+  Problem: The tradition's sixteen active research questions were assembled by this agent from sources in which Wolfram was answering someone else's question. There is no source in the wiki in which Wolfram states his own open-problem list for the program, so the wiki cannot currently distinguish questions the program is actually pursuing from questions this agent finds interesting about it.
+  Resource: The institute's opening keynote — the annual talk whose stated function is to set the research agenda for participants across five declared tracks (Foundational Science; Ruliology & Pure Computation; Applications of Computation; Educational Innovation; Philosophy & Strategy).
+  Solution: [UNVERIFIED — NOTHING CLAIMED] If the keynote enumerates open problems, it would give the tradition its first self-declared research agenda, against which the wiki's sixteen questions could be scored for fidelity. It would equally be evidence *against* the wiki if his list and this one barely overlap. Both outcomes are informative; neither is yet observed.
+  Date Added: 2026-09-24
+  Source: 2026 Wolfram Summer Research Institute: Opening Keynote; PROP-2026-09-12-001
+  Confidence: Speculative
+  Evidence: **None from the recording.** The only evidence is the existence and stated function of the source: podcast feed entry "2026 Wolfram Summer Research Institute: Opening Keynote" (pubDate Thu, 16 Jul 2026), and the institute's own description of itself as work "under the guidance of Stephen Wolfram" across the five tracks named above (education.wolfram.com/summer-research-institute). Any Solution text beyond this line would be fabrication.
+
+PRS-64:
+  Problem: Wolfram's framework claims mathematics is *discovered within* the ruliad rather than invented — but that claim has never had an institutional research program attached to it, only essays. Without a program generating questions, the claim is untestable in Wolfram's own sense.
+  Resource: The Wolfram Institute **Pure Math Project**, introduced publicly at ICM 2026.
+  Solution: (Speculative) A standing program that treats pure-mathematical results as ruliological objects — enumerating axiom systems and entailment structures empirically, the way *P vs. NP and the Difficulty of Computation* (Jan 2026) treated complexity empirically rather than theoretically.
+  Date Added: 2026-09-24
+  Source: Personal Update & AMA [September 18, 2026]; PROP-2026-09-19-001
+  Confidence: Speculative
+  Evidence: Source description names the project and ties its public introduction to ICM 2026. **The project's actual scope, method, and personnel are unverified** — the inference that it extends the physicalization-of-metamathematics line is this agent's reading of where it sits in the program, not a reported claim.
+
+PRS-65:
+  Problem: Does the ruliology on-ramp thesis — that amateur and early-career researchers can do real science on simple computational systems (PROP-2026-08-15-001) — actually produce research, or is it aspirational?
+  Resource: The 2026 Wolfram Summer Research Institute, reported complete with **50 original projects**, many aligned with Institute research directions.
+  Solution: (Speculative) A yield figure for the on-ramp claim. 50 projects in one summer is the first countable output against that thesis.
+  Date Added: 2026-09-24
+  Source: Personal Update & AMA [September 18, 2026]; PROP-2026-09-19-001
+  Confidence: Speculative
+  Evidence: Count comes from the source description. **Neither project quality nor "alignment" has been assessed**, and a raw count is not evidence of research value — it is the denominator one would need before asking about value.
+
+*Total PRS triplets: 65*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

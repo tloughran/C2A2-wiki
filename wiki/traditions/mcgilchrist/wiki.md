@@ -207,3 +207,13 @@ Processed 3 source file(s); minted +0 (verification and correction only).
 - `PROP-2026-09-09-002` — What Modern Life Forced Your Brain to Ignore — Dr Iain McGilchrist with 'Rewind Yourself' (interview, https://channelmcgilchrist.com/what-modern-life-forced-your-brain-to-ignore-dr-iain-mcgilchrist-with-rewind-yourself/) → PRS-78
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+2 triplets added from 2 approved proposals (decision email 2026-09-23): PRS-79, PRS-80.
+
+- `PROP-2026-09-16-002` — Members' Q&A 27th August 2026 (Channel McGilchrist, live Zoom, members only) (interview, https://channelmcgilchrist.com/members-qa-27th-august-2026/) → no triplet minted (see PROCESSED_LOG 2026-09-24)
+- `PROP-2026-09-16-001` — Ralston College — AI and the Battle for the Soul with Iain McGilchrist — Lecture 1: Information is Not Understanding (talk, https://channelmcgilchrist.com/ralston-college-ai-and-the-battle-for-the-soul-with-iain-mcgilchrist-lecture-1-information-is-not-understanding/) → PRS-79, PRS-80
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+- McGilchrist source capture (PROP-2026-09-16-002): members' Q&A 2026-08-27 recorded as a source only; quarterly cadence per card (next expected late November 2026). Re-open if a recording or transcript surfaces.

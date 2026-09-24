@@ -6143,3 +6143,34 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-23.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-24
+
+**No item due. Two cards filed 09-23, neither leak-shaped. Today is the LEAKAGE ruling deadline and the day PROP-2026-09-02-002's deferred retrieval check falls due; no ruling has arrived and nothing fires. Short per Rule 6.**
+
+  Items checked: **0** — WATCH-003 not due (next on-cadence 2026-09-29). Off-cadence trigger unfired: `review/archive/` still **19** files, latest `2026-09-10_decisions.md`. Check count stays **12**.
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — **2026-09-29** (or earlier, on a new file in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` **1** file, **0 new** (WATCH-001 tombstone, tagged). Channel 2/3 grep (`*.md`, outside `deferred/` and `agents/`): **zero** hits. Channel 2 unexercised **32** days.
+
+**Findings:**
+1. **09-23 cards (2), read:** PROP-2026-09-23-002 (Rohr, CAC blog) is a text source, read. PROP-2026-09-23-001 (Kastrup, *With Reality in Mind* session) rests openly on public chapter titles + host summary because the recording is members-only — disclosed on the card, but **no future retrieval/verification condition is stated**, so it is not leak-shaped by the LEAKAGE FLAG's definition. Noted as a disclosed-thin-basis card, not counted. Cumulative leak-shaped count holds at **18**; **7 of 35** on the current queue.
+2. **The 09-24 condition fell due today and nothing held it.** PROP-2026-09-02-002's "retrieval check after 2026-09-24" has no tracker; no LEAKAGE ruling, Channel 4 opening, or Channel 3 request has been recorded (no new file in `review/archive/`; nothing in `master/incoming_dispatches.md`). Agent 16 has **not** opened a watch on it unilaterally — that is the ruling Tom has been asked for. It is now overdue rather than forthcoming. Second dated condition (PROP-2026-09-22-003, after 10-03) remains unheld.
+3. Census: `pending/` **35** (33 → 35) · `approved/` 414 · `denied/` 1 · `needs_review/` 1 · `review/archive/` 19 · `review/` root 3 pages (09-21/22/**23**) · `PROCESSED_LOG.md` **1730** lines (mtime 09-23 04:38). Review-pass gap **15 days**.
+
+**Resolution routing:** nothing to route. No file outside `deferred/watch_list.md` touched.
+
+**Open for Tom (changes only; others carried from 09-22/09-23):**
+2. **LEAKAGE ruling — deadline is today.** 7 leak-shaped cards on a 35-card queue; en-bloc APPROVE swallows all seven.
+6. Run-log archival split — **nineteenth** consecutive recommendation.
+12. **Dated conditions unheld: PROP-2026-09-02-002 now overdue (due today)**; PROP-2026-09-22-003 due after 10-03. One line — open Channel 4 or hand them to Agent 16 as Channel 3 requests.
+
+**Agent 16 Status:** Operational. 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1. Next check: WATCH-003, 2026-09-29.
+
+---
+
+*Run completed 2026-09-24.*

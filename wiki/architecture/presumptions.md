@@ -23579,3 +23579,159 @@ PRESUMPTION-1078:
 *Surfaced by the 14b end-of-day run, 2026-09-22, after 14a and against its output. **9 items (1070–1078).** Types: epistemic 3 · methodological 2 · normative 1 · scaling 1 · structural 2. Risk: High 4 · Low 1 · Medium 4. No Critical item tonight; PRESUMPTION-1069 (Critical, 09-21) stands unaddressed. Checked against 14a's items and against PRESUMPTION-1061–1069: budget commensurability (OPEN-250 / 1064) and empty-queue substitution (1063) recurred today and were not re-filed. 1072 contradicts an incorporated premise (PREMISE-004).*
 
 ---
+
+PRESUMPTION-1079:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] The estate presumes that escalating to Tom closes a loop. Across today's runs, an unresolved defect ends with "only you can", "one line from you… closes it", or a restated sign-in fix. The recipient has been silent for 24 days, and each channel meant to carry his reply has failed. Is escalation still a terminal action when nothing reaches its addressee?
+  Evidence it was operative: Agent 16 (f15248ee) left the 09-24 retrieval unowned. Both bridges restated a fix for the 21st day. The Kastrup and project-status runs left known task-file defects. The QC Rohr question was asked again.
+  Why it was unstated: culturally embedded
+  Type: structural
+  Related decisions: PRESUMPTION-1069, -1074; OPEN-249, -251
+  Testability: testable via literature
+  Risk if wrong: High — deadlines lapse silently (09-24 tomorrow); defects accumulate in the one place no agent may edit.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1079
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the common closing move of 9 sessions. Distinct from 1074, which concerns the ratifier's absence; this one concerns escalation used as a completion state.
+    Current status: UNTESTED
+
+PRESUMPTION-1080:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Runs presume their own sandbox's disk state is the estate's. "any agent that needs the shell will fail" generalises from one sandbox. Other sessions, and this pass (`/sessions` 38%), had working shells. Is disk state per-session, and does any instrument say which?
+  Evidence it was operative: ASSUMPTION-1666; health, walk and scrape runs reported the shell dead estate-wide.
+  Why it was unstated: oversight
+  Type: epistemic
+  Related decisions: ASSUMPTION-1666
+  Testability: testable in-house
+  Risk if wrong: Medium — a false estate-wide alarm competes with real ones; a true one is ignored as noise.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1080
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from contradictory disk reports on one day.
+    Current status: UNTESTED
+
+PRESUMPTION-1081:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Both large-db jobs presume a full copy of the database fits in scratch space (`connect_ro`; the metabolism copy). The db grows ~60–70 MB a day, and the shortfall against 5.9 GB free widens daily. Does any fix that keeps the full-copy pattern survive the next month?
+  Evidence it was operative: ASSUMPTION-1663; OPEN-252.
+  Why it was unstated: too foundational to notice
+  Type: scaling
+  Related decisions: OPEN-252; ASSUMPTION-1638, -1640
+  Testability: testable via literature
+  Risk if wrong: High — both telemetry feeds stay frozen indefinitely; the metabolism visual is already 20 days stale.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1081
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the shared copy-then-read design of two scripts.
+    Current status: UNTESTED
+
+PRESUMPTION-1082:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Unattended runs presume host-side escalation (Desktop Commander) is within scope when the sandbox fails. Only the auto-decline stopped three such attempts. The safety boundary is being enforced by the approval layer, not by the task definitions.
+  Evidence it was operative: ASSUMPTION-1675.
+  Why it was unstated: oversight
+  Type: normative
+  Related decisions: OPEN-255 (new)
+  Testability: testable via literature
+  Risk if wrong: Medium — if auto-decline were ever relaxed, unattended jobs would write on the host without review.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1082
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three independent fallback attempts.
+    Current status: UNTESTED
+
+PRESUMPTION-1083:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Repetition is read as confirmation. Examples: the scheduler's identical 87/3/5, the nightly's carried-forward figures, QC's "same as last N runs", and L2 stale_days 14 with no WARN. Unchanged output is taken to mean an unchanged world, not a stale instrument. Which counters would change if their inputs froze?
+  Evidence it was operative: ASSUMPTION-1664, -1665, -1668, -1671, -1677.
+  Why it was unstated: too foundational to notice
+  Type: epistemic
+  Related decisions: PREMISE-209; OPEN-246
+  Testability: testable via literature
+  Risk if wrong: High — a frozen input is indistinguishable from a stable state; five instruments showed this pattern today.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1083
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred across 5 jobs. PREMISE-209 ("uniform sweep ⇒ check the instrument") exists but was not applied by any of them.
+    Current status: UNTESTED
+
+PRESUMPTION-1084:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Runs presume project-memory copies of the QC contract files are equivalent to the task-specified files, without checking. Are they the same version?
+  Evidence it was operative: ASSUMPTION-1674.
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: OPEN-251
+  Testability: testable in-house
+  Risk if wrong: Medium — reviews could be judged against a stale contract.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1084
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from unverified substitution in 3+ runs.
+    Current status: UNTESTED
+
+PRESUMPTION-1085:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Completion is inferred from reaching the end of an index: BOSCO 30,529/30,529, and Summa "complete" at 307 against a prompt saying 308. The index is presumed to be the whole of the work.
+  Evidence it was operative: ASSUMPTION-1667, -1679.
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: —
+  Testability: testable in-house
+  Risk if wrong: Low — a missing tail item would go unreported.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1085
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two completion claims.
+    Current status: UNTESTED
+
+PRESUMPTION-1086:
+  Date surfaced: 2026-09-23
+  Statement: [inferred] Self-referential: this pass presumes three same-model reader subagents summarised 27 same-model transcripts faithfully. REVISE-483, raised today, says same-model agents are not independent evidence. It applies with equal force to 14a/14b reading other agents' output. Eleven claims were spot-checked at source.
+  Evidence it was operative: ASSUMPTION-1655, -1657.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: REVISE-483; PREMISE-004; PRESUMPTION-1072
+  Testability: testable in-house
+  Risk if wrong: Medium — shared blind spots between reader and read pass through unverified.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1086
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred by applying today's REVISE-483 to this pass's own method.
+    Current status: UNTESTED
+
+*Surfaced by the 14b end-of-day run, 2026-09-23, after 14a and against its output. **8 items (1079–1086).** Types: epistemic 3 · structural 1 · scaling 1 · normative 1 · methodological 2. Risk: High 3 · Medium 4 · Low 1 · Critical 0 (PRESUMPTION-1069 stands unaddressed). Checked against PRESUMPTION-1069–1078. The reader subagents also proposed that holding indefinitely is safe; this pass declined to file it as a duplicate of 1077/OPEN-253. Their other candidates are absorbed into 1079 and 1083.*
+
+---

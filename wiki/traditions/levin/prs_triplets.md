@@ -1118,7 +1118,160 @@ PRS-123:
   Confidence: Speculative
   Evidence: 36:33-46:55 (constants on the number line; Littlewood's number; "tells us more about psychology than about math"; the multiscale stratification aside).
 
-*Total PRS triplets: 123*
+PRS-124:
+  Problem: Whether the presence of a multicellular system can be encoded into a separate living collective's emergent spatial organisation in a distributed, decodable way was an open question — the existing bioelectric work is all within a single collective.
+  Resource: A two-collective assay — motile *B. subtilis* in liquid culture next to *Xenopus* embryos or Xenobots — plus manipulation of extracellular potassium as the candidate channel.
+  Solution: The bacterial collective forms attraction halos that track target position at a distance, and potassium amplifies attraction and couples target presence to global pattern complexity. Presence is encoded distributedly and can be read back out.
+  Date Added: 2026-09-24
+  Source: Living multicellular systems induce decodable spatial patterns in bacterial collectives; PROP-2026-09-12-003
+  Confidence: Medium
+  Evidence: Abstract — bacteria "reorganize their spatial and ionic collective states in response to nearby Xenopus embryos and Xenobots"; the autonomous motility-dependent patterns "were redirected by living targets into attraction halos which tracked target position at a distance"; extracellular potassium "amplified attraction, altered local potassium dynamics, and coupled target presence to global pattern complexity."
+
+PRS-125:
+  Problem: Levin's "cognitive light cone" is defined for a single agent or collective; it says nothing about what one collective can represent about another.
+  Resource: A distributed, decodable representation of an external living system held in a bacterial population's pattern statistics rather than in any member.
+  Solution: A candidate operationalisation of representation-without-representer at the inter-collective scale — the pattern is about the target, no cell is.
+  Date Added: 2026-09-24
+  Source: Living multicellular systems induce decodable spatial patterns in bacterial collectives; PROP-2026-09-12-003
+  Confidence: Speculative
+  Evidence: Inference from the abstract's "distributed and decodable" framing. The paper is not claimed to make this conceptual move; it is the wiki's extension, and should be checked against the full text before ingest.
+
+PRS-126:
+  Problem: There is no quantitative account of how a cognitive tool's adoption becomes irreversible dependence at the population scale, or of where the threshold sits.
+  Resource: A three-compartment epidemiological model of LLM use (uncoupled / coupled / persistently dependent) with social transmission, recovery, and collective reinforcement terms.
+  Solution: Dependence is a phase transition, not a gradient: the model exhibits tipping points and technological lock-in, so the policy-relevant quantity is the critical adoption threshold rather than average usage.
+  Date Added: 2026-09-24
+  Source: Large-Language Models as a Cognitive Virus; PROP-2026-09-12-002
+  Confidence: Medium
+  Evidence: Abstract — "the interplay between social transmission, recovery, and collective reinforcement can generate tipping points and technological lock-in."
+
+PRS-127:
+  Problem: If cognitive dependence is self-reinforcing, is there any intervention that is not simply a ban?
+  Resource: The reversibility side of the same model — parameters governing transmission rate and recovery rate.
+  Solution: "Cognitive immunization": the transition is defeatable by reducing transmission and by keeping recovery available, which is a claim about the shape of the intervention rather than its content.
+  Date Added: 2026-09-24
+  Source: Large-Language Models as a Cognitive Virus; PROP-2026-09-12-002
+  Confidence: Speculative
+  Evidence: Abstract — "the same framework identifies conditions for cognitive immunization, based on reducing transmission and facilitating reversibility." The mechanism by which reversibility is maintained is not stated in the abstract and was not retrieved.
+
+PRS-128:
+  Problem: Two unexplained reversals in tumour progression — depolarised tumours that hyperpolarise on becoming invasive, and connexin underexpression in solid tumours followed by overexpression in invasive ones.
+  Resource: Treating Vmem and connexin expression as a single coupled control variable rather than two independent markers, staged across tumour progression.
+  Solution: The reversals are the same switch seen twice; proliferation and invasion are distinct bioelectric regimes with different optimal settings, so the "anomaly" is a stage transition.
+  Date Added: 2026-09-24
+  Source: Membrane voltage and connexin expression work together to enhance tumor growth and metastasis in cancer; PROP-2026-09-12-004
+  Confidence: Medium
+  Evidence: Abstract — tumour Vmem approximately -30 mV versus approximately -70 mV in differentiated cells; "when the tumor becomes invasive, its cells sometimes revert to a hyperpolarized Vmem with no obvious reason why"; non-invasive solid tumours "greatly underexpress connexins" while invasive tumours "overexpress connexins." The unifying mechanism is asserted by the title; it was not retrieved and is not quoted here.
+
+PRS-129:
+  Problem: The wiki's standing gloss that cancer is loss of gap-junctional coupling and hence a shrunken cognitive light cone treats coupling as monotonic with multicellular cooperation.
+  Resource: The observed non-monotonicity — coupling falls, then rises, as malignancy advances.
+  Solution: Coupling is necessary but not sufficient for the larger light cone; what matters is what the coupled collective's setpoint *is*. An invasive tumour may be a well-coupled collective pursuing the wrong target, which is a different failure mode from decoupling. Flag PRS-02's downstream citations for review.
+  Date Added: 2026-09-24
+  Source: Membrane voltage and connexin expression work together to enhance tumor growth and metastasis in cancer; PROP-2026-09-12-004
+  Confidence: Speculative
+  Evidence: The non-monotonicity is in the abstract; the interpretation is the wiki's and must not be attributed to the authors. Ingest only after the full text is read.
+
+PRS-130:
+  Problem: Can a system exhibit an apparently epistemic preference — avoiding the unknowable — without any mechanism designed for that task?
+  Resource: Lenia creatures plus experimentally introduced regions from which no sensory information is available.
+  Solution: Yes. Creatures reliably avoid occluded regions despite having no explicit mechanism for the task; the behavior is emergent rather than engineered.
+  Date Added: 2026-09-24
+  Source: Agnosiophobia in a virtual agent: behavioral and dynamical architecture in Lenia; PROP-2026-09-14-003
+  Confidence: High
+  Evidence: The authors introduce regions from which no sensory information is available and report that creatures tend to avoid them, terming this "agnosiophobia."
+
+PRS-131:
+  Problem: When a system displays a behavior, at what level does its actual goal sit?
+  Resource: Dynamical analysis of the creature's heading changes and attractor structure under occlusion.
+  Solution: The apparent goal (avoid the unknown) is subordinate to a deeper one (preserve morphology). Attributed goals should be read at the level where the attractor lives, not at the level of the observed behavior — a methodological result for the whole diverse-intelligence program.
+  Date Added: 2026-09-24
+  Source: Agnosiophobia in a virtual agent: behavioral and dynamical architecture in Lenia; PROP-2026-09-14-003
+  Confidence: Medium
+  Evidence: The authors argue creatures take advantage of their freedom to change heading in order to achieve "a more fundamental goal: the preservation of their morphology."
+
+PRS-132:
+  Problem: Exploration of complex self-organizing systems is open-loop — set initial conditions, run, observe — which cannot discover interventions that only work mid-trajectory.
+  Resource: CARL, a closed-loop autotelic reinforcement-learning agent that samples its own diverse goals and learns a goal-conditioned policy of minimal local perturbations.
+  Solution: Closed-loop autotelic search discovers stable Lenia solitons at a higher rate than heuristic baselines, showing that an agent that chooses its own goals is a better instrument for mapping a morphospace than a designed sweep.
+  Date Added: 2026-09-24
+  Source: The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning; PROP-2026-09-14-002
+  Confidence: High
+  Evidence: Reported result that CARL discovers stable solitons across a wide range of Lenia update rules at a higher rate than heuristic baselines.
+
+PRS-133:
+  Problem: Can an emergent, self-organized pattern be steered after it exists, or only selected at the moment of creation?
+  Resource: Goal-conditioned policy over minimal local perturbations applied to an already-running soliton.
+  Solution: CARL learns to change a soliton's heading with few interventions — self-organizing patterns are controllable, not merely generatable. This is the computational analogue of re-specifying a bioelectric target morphology in an intact organism.
+  Date Added: 2026-09-24
+  Source: The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning; PROP-2026-09-14-002
+  Confidence: High
+  Evidence: The authors report CARL learns to steer the movement direction of existing solitons with few interventions, "showing that CARL can control self-organizing patterns, not only create them."
+
+PRS-134:
+  Problem: What is the right interface to a system whose behavior is not decomposable into the behavior of its parts?
+  Resource: The minimal-local-perturbation action space — the agent is forbidden from rewriting the system, only from nudging it.
+  Solution: A constrained, low-bandwidth action channel is sufficient for control, which supports the "cognitive glue / competency" reading over the "rewrite the parts" reading of how such systems are steered.
+  Date Added: 2026-09-24
+  Source: The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Autotelic Reinforcement Learning; PROP-2026-09-14-002
+  Confidence: Speculative
+  Evidence: Framing of the action space as minimal and local; the generalization to biological control is the Levin program's claim, not this paper's.
+
+PRS-135:
+  Problem: How does a uniform aggregate of identical cells acquire stable spatial regions with distinct identities, without an externally imposed chemical gradient?
+  Resource: A coupled bioelectric–transcriptional model in which gap-junction-transmitted microRNAs regulate ion-channel expression, and membrane potential in turn gates intercellular transfer.
+  Solution: Intercellular connectivity alone is sufficient to generate stable spatiotemporal patterns of coupled voltage and transcriptional state — regionalization emerges from the feedback, not from a pre-existing morphogen map.
+  Date Added: 2026-09-24
+  Source: Bioelectrical regionalization of multicellular aggregates by microRNAs; PROP-2026-09-14-001
+  Confidence: Medium
+  Evidence: The paper reports that intercellular connectivity establishes spatiotemporal patterns of coupled bioelectrical and transcriptional states, with the resulting distributed control exerting significant influence on protein expression, establishing instructive maps for development and regeneration. (Theoretical/computational, not yet experimental — hence Medium.)
+
+PRS-136:
+  Problem: Is the bioelectric layer causally upstream of gene expression, or merely correlated with it?
+  Resource: Explicit bidirectional coupling: microRNA abundance sets channel density sets Vmem; Vmem and junctional state set microRNA distribution.
+  Solution: Neither layer is upstream. Control is distributed across the loop, which reframes "the genome instructs the pattern" as one half of a circuit rather than the whole causal story.
+  Date Added: 2026-09-24
+  Source: Bioelectrical regionalization of multicellular aggregates by microRNAs; PROP-2026-09-14-001
+  Confidence: Speculative
+  Evidence: Author framing of "distributed control" over protein expression in the aggregate. The causal direction is a property of the model as constructed; the empirical test is not in this paper.
+
+PRS-137:
+  Problem: Claims that non-neural cells learn have been made from a scattering of one-off systems and hand-run protocols, with no shared instrument — so results cannot be compared across labs, cell types, or stimulus regimes, and the field cannot accumulate a track record.
+  Resource: The Cell Trainer — a fluidic cell-culture platform with computer-timed drug perfusion, a mobile fluorescence microscope, open-loop and closed-loop modes, and openly released schematics and software.
+  Solution: Cell training becomes a repeatable, transferable experimental protocol rather than a bespoke demonstration, which is the precondition for the diverse-intelligence claim to be tested (and falsified) outside Levin's own lab.
+  Date Added: 2026-09-24
+  Source: A platform for automated training of mammalian cell physiology; PROP-2026-09-21-002
+  Confidence: High
+  Evidence: "we present a device, the Cell Trainer, capable of performing a wide variety of automated training experiments on non-neural mammalian cells... To accelerate research in the field of cell training, learning, and memory, we are openly sharing the Cell Trainer schematics and software with the research community." High confidence is about the *instrument and its release*, not about any learning claim.
+
+PRS-138:
+  Problem: Population-averaged readouts cannot tell a uniformly modest change across all cells from a strong change in a competent subpopulation — so "did these cells learn?" is unanswerable at the level the question is actually asked.
+  Resource: A single-cell segmentation, tracking and normalisation pipeline (Cellpose-based) that traces every cell's fluorescence across the whole experiment, plus per-cell metrics for habituation, sensitization, and anticipation tested against order-shuffled null distributions by permutation test.
+  Solution: Behavioural heterogeneity within an isogenic culture becomes a measurable quantity — responders vs. non-responders, spatial correlation structure, per-cell learning scores — moving the unit of analysis from "the culture" to "the cell."
+  Date Added: 2026-09-24
+  Source: A platform for automated training of mammalian cell physiology; PROP-2026-09-21-002
+  Confidence: High
+  Evidence: Habituation and sensitization score distributions differ significantly from shuffled-order nulls by permutation test; pairwise response correlation falls significantly with inter-cell distance among responders (slope −1.12e-04 Δr/μm, fit r = −0.168, 1047 cell pairs, replicate-level Mantel p = 0.013).
+
+PRS-139:
+  Problem: Controlling cell physiology by rewiring pathways is defeated by the cells' own adaptive competence — chemoresistance, transgene silencing — because the intervention is static and the cell is not.
+  Resource: Real-time closed-loop control: the device computes mean cell fluorescence from each image and chooses the next perfusion within a second, holding an ArcLight reporter below a user-set setpoint with acid pulses, in two chambers at once.
+  Solution: A demonstration that cell physiological state can be *steered* by feedback, which is the substrate on which reinforcement-learning-style training of cells (reward/punishment schedules, later model-predictive or learned controllers) could be built.
+  Date Added: 2026-09-24
+  Source: A platform for automated training of mammalian cell physiology; PROP-2026-09-21-002
+  Confidence: Medium
+  Evidence: The controller reliably fires a pulse whenever the setpoint is crossed (Fig 9). Medium because the demonstration is control of a reporter, not of a *learned* state, n = 1 chamber per trace, and acid exposure killed cells during the runs — the authors note the population sometimes could not return to setpoint as a result.
+
+PRS-140:
+  Problem: Is the response change observed across repeated stimulation actually learning, or an artefact (accumulating membrane damage, photodamage, morphological change)?
+  Resource: Two discriminating observations — resting fluorescence after train 1 ≈ after train 2 despite clearly rising peaks; and cell-line-dependent response *shape* (C2C12 peaks are biphasic/"notched", PC-3 peaks rounded) under an identical pulse schedule.
+  Solution: The rise is not simply accumulating damage, and the underlying calcium release/sequestration dynamics differ by cell type — so the effect has structure a pure-artefact account does not predict.
+  Date Added: 2026-09-24
+  Source: A platform for automated training of mammalian cell physiology; PROP-2026-09-21-002
+  Confidence: Speculative
+  Evidence: The authors are explicit that this is not settled: additional defining features of sensitization "were not tested or quantified," the anticipation results after trains 1 and 2 point in *opposite* directions and require "additional interpretation," and simpler explanations such as membrane damage accumulation have yet to be ruled out. Treat as an open experimental question, not a finding.
+
+*Total PRS triplets: 140*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-05-18*
 

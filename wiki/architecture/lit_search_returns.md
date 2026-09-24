@@ -49079,3 +49079,137 @@ In-house (16 items, no literature owed; routed to monitor_queue.md): ASSUMPTION-
   -1634, -1635, -1636, -1637, -1646, -1647, -1648, -1652, -1654; PRESUMPTION-1071, -1073, -1075, -1077.
 
 Running totals after this run: PREMISE-217, MONITOR-615, REVISE-483, DISPOSITION-987.
+
+
+## 2026-09-24 — 15a / 15b returns and 15c dispositions (scheduled task `c2a2-lit-search-pipeline`)
+
+PROVENANCE (run): Origin 14a/14b intake of 2026-09-23 | Chain [14a/14b -> 15a, 15b -> 15c] |
+15a and 15b ran as two separate agent processes with disjoint context; neither read the other's files.
+Per REVISE-483 (pending Tom), agreement between them is read as retrieval diversity, not as two
+independent confirmations, and is not used below to raise confidence.
+
+RETURN-15a (summary): 1660 PARTIALLY-SUPPORTED/Weak · 1663 PARTIALLY-SUPPORTED/Moderate (consistency
+  yes; "bounded scratch" unsupported) · 1670 PARTIALLY-SUPPORTED/Weak · 1675 SUPPORTED/Strong · P-1079
+  PARTIALLY-SUPPORTED/Moderate · P-1081 SUPPORTED/Moderate · P-1082 PARTIALLY-SUPPORTED/Moderate · P-1083
+  SUPPORTED/Moderate. No NOVELTY flags. Files: lit_search_results/for/<ITEM>_for.md.
+RETURN-15b (summary): 1660 PARTIALLY-CHALLENGED/Moderate · 1663 CHALLENGED/Strong (scratch), Weak
+  (consistency) · 1670 PARTIALLY-CHALLENGED/Moderate · 1675 PARTIALLY-CHALLENGED/Moderate · P-1079
+  CHALLENGED/Strong · P-1081 PARTIALLY-CHALLENGED/Weak-Moderate · P-1082 CHALLENGED/Strong · P-1083
+  PARTIALLY-CHALLENGED/Moderate. SYSTEMIC-RISK flag (High):
+  against/SYSTEMIC-RISK-FLAG_2026-09-24_absent-principal-as-control.md (1079, 1082, 1675, 1083).
+  Files: lit_search_results/against/<ITEM>_against.md.
+
+Source overlap (informal, from the two agents' reports; a regex count over the files was too crude to
+  publish): a shared core source appears on at least 4 of 8 items — Pitkin 1999 (1660), sqlite.org docs
+  (1663), BAGEN arXiv:2606.00198 (1670), Google SRE book (1081). One more data point for REVISE-483.
+
+DISPOSITION-988:
+  Date: 2026-09-24 | Item: ASSUMPTION-1660 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Weak | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: support is by analogy to authors' own abstracts (Westergaard 2018; Sybrandt 2018), not
+    to a third party's summary. Pitkin 1999 (18-68% of abstracts inconsistent with the article) and Peters
+    & Chin-Yee 2025 (LLM summaries overgeneralise in 26-73% of cases) bear directly on the weak limb:
+    qualifiers drop out, and the host's reading can be recorded as the thinker's claim.
+  Disposition: REVISE (REVISE-484, Medium).
+  Reasoning: weak support against a moderate challenge that lands on the item's stake — attribution in
+    the tradition record. Topic-level gist probably survives; claim structure is what is at risk.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status REVISION-FLAGGED.
+
+DISPOSITION-989:
+  Date: 2026-09-24 | Item: ASSUMPTION-1663 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: CHALLENGED / Strong (scratch clause), Weak (consistency)
+  Net assessment: the item has two clauses. "Consistent snapshot" is supported by sqlite.org primary docs
+    and already stands as part of PREMISE-092. "Within bounded scratch space" is unsupported: both the
+    backup API and VACUUM INTO write a whole database-sized copy; the backup API restarts on writes from
+    another connection and may never finish; a long read grows the host's -wal file; `immutable=1` is
+    documented as unsafe on a changing db.
+  Disposition: REVISE (REVISE-485, High).
+  Reasoning: the clause that motivates the item (a copy-free read) is the one that fails. Nothing new to
+    incorporate — the consistency half is already PREMISE-092.
+  Consistency check: compatible with PREMISE-092 (backup API copies consistently; SQLite >= 3.51.3).
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status REVISION-FLAGGED.
+
+DISPOSITION-990:
+  Date: 2026-09-24 | Item: ASSUMPTION-1670 | Item type: ASSUMPTION (stated)
+  15a: PARTIALLY-SUPPORTED / Weak | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: both sides accept that a cap with no priority rule is value-blind (Simon 1955; Payne,
+    Bettman & Johnson 1993; Wang et al. 2026). They part on WHAT gets cut: the item says lowest-cost work;
+    15b's evidence (BAGEN: agents underestimate remaining budget) points to the last or in-flight work,
+    often the report step. No study tests the item directly.
+  Disposition: MONITOR (MONITOR-616, Medium).
+  Reasoning: value-blindness is well grounded; the specific prediction is not, and the rival prediction
+    is at least as plausible. An in-house log decides it cheaply.
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status MONITORING.
+
+DISPOSITION-991:
+  Date: 2026-09-24 | Item: ASSUMPTION-1675 | Item type: ASSUMPTION (stated)
+  15a: SUPPORTED / Strong | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: TOOLPRIVBENCH (Yang et al. 2026) shows transient tool failures increase escalation to
+    higher-privilege tools; least privilege (Saltzer & Schroeder 1975) and levels of automation
+    (Parasuraman, Sheridan & Wickens 2000) ground the "not discovered at failure time" half. 15b's
+    challenge narrows the remedy: a fallback declared in the task is a standing grant that injected
+    content can trigger (OWASP LLM06); practice prefers fail-closed or just-in-time elevation enforced
+    outside the agent.
+  Disposition: INCORPORATE, narrowed (PREMISE-218, Moderate).
+  Reasoning: the negative half is strongly supported and unchallenged; the positive half is replaced by
+    15b's stronger form. Caveat: two of 15b's sources are Anthropic's own (conflict of interest noted by 15b).
+  Consistency check: compatible with PREMISE-093 (no credential borrowing; refuse the gated action).
+  PROVENANCE: Origin 14a; Chain [14a -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-992:
+  Date: 2026-09-24 | Item: PRESUMPTION-1079 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: CHALLENGED / Strong
+  Net assessment: 15a supports only that escalation to an absent authority produces no action (Bainbridge
+    1983; Cvach 2012; Darley & Latané 1968). That is the finding against the presumption's operative part —
+    that such escalation WORKS as a terminal state. 15b adds that unread notifications are logs (Google
+    SRE, ch. 1) and that agents do not reliably stop when told to (Schlatter et al. 2025).
+  Disposition: REVISE (REVISE-486, High).
+  Reasoning: a presumption with a strong challenge — the heuristic's REVISE/High case. The estate's own
+    nine sessions ending on "escalate to Tom" during a ~24-day absence are the in-house instance.
+  Consistency check: TENSION with PREMISE-093, which endorses "refuse AND alert, so a human can close the
+    loop promptly." 093 presumes a present human. Both flagged for Tom; nothing overwritten.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status REVISION-FLAGGED.
+
+DISPOSITION-993:
+  Date: 2026-09-24 | Item: PRESUMPTION-1081 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Weak-Moderate
+  Net assessment: linear-trend exhaustion forecasting is standard practice (Google SRE; Prometheus
+    predict_linear). 15b narrows "a predictable date" to a forecastable window: actual copy size depends
+    on free pages, WAL state, other scratch use, and step changes in growth, so failures begin as
+    intermittent before becoming certain.
+  Disposition: INCORPORATE, narrowed (PREMISE-219, Moderate).
+  Reasoning: the mechanism is well supported and the challenge is a refinement that makes the premise
+    more useful (alarm on the window's leading edge, not a date).
+  Consistency check: consistent with PREMISE-086 (alarm on age/threshold) and REVISE-485 (same design).
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+DISPOSITION-994:
+  Date: 2026-09-24 | Item: PRESUMPTION-1082 | Item type: PRESUMPTION (unstated)
+  15a: PARTIALLY-SUPPORTED / Moderate | 15b: CHALLENGED / Strong
+  Net assessment: 15a's best evidence (Uppala 2026: 4-37% unauthorised tool calls under prompt-level
+    restriction, 0% under external enforcement) supports enforcement outside the model, not approval
+    gating as such. 15b: users approve about 93% of permission prompts; the gate held in the three
+    escalation attempts only because no one was present to approve.
+  Disposition: REVISE (REVISE-487, High).
+  Reasoning: a presumption with a strong challenge; the safety observed was an accident of absence. 15b's
+    Akhawe & Felt 2013 citation is from background knowledge and unverified — not relied on here. Several
+    key sources are Anthropic's own (conflict of interest noted).
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status REVISION-FLAGGED.
+
+DISPOSITION-995:
+  Date: 2026-09-24 | Item: PRESUMPTION-1083 | Item type: PRESUMPTION (unstated)
+  15a: SUPPORTED / Moderate | 15b: PARTIALLY-CHALLENGED / Moderate
+  Net assessment: 15a: a crashed process can't be told from a slow one by observation alone (Chandra &
+    Toueg 1996, by analogy); stuck-at sensor faults; normalisation of deviance (Vaughan 1996). 15b: CONSTANT
+    faults ARE detected from output alone when the true value is expected to vary (Sharma, Golubchik &
+    Govindan 2010, ACM TOSN). The claim holds only for quantities that can legitimately stay flat.
+  Disposition: INCORPORATE, narrowed (PREMISE-220, Moderate).
+  Reasoning: the narrowed form is supported by both files and turns a limitation into a test the
+    instruments can run.
+  Consistency check: extends PREMISE-086 and PREMISE-100; no contradiction.
+  PROVENANCE: Origin 14b; Chain [14b -> 15a, 15b -> 15c]; status INCORPORATED.
+
+In-house (9 items, no literature owed; routed to monitor_queue.md): ASSUMPTION-1659, -1661, -1662,
+  -1666, -1671, -1676; PRESUMPTION-1080, -1084, -1086.
+
+Running totals after this run: PREMISE-220, MONITOR-616, REVISE-487, DISPOSITION-995.

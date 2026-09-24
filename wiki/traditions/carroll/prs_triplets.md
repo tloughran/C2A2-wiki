@@ -776,4 +776,58 @@ PRS-85:
   Confidence: Speculative
   Evidence: Trilogy framing on Carroll's site. This candidate is about the *epistemic standing* of the tradition's exposition, not about a physical result; it should be dropped if the book turns out to be lighter on mathematics than Volumes 1 and 2. **Unverified.**
 
-*Total PRS triplets: 85*
+PRS-86:
+  Problem: Whether an individual leader is a genuine causal node in history or a label placed on the outcome of structural forces. Diamond's own earlier program (geography, domesticable species, disease ecology) is the strongest available case for the structural reading, which makes his turn to leadership a test of his own framework rather than an extension of it.
+  Resource: A comparative case set spanning four institution types — states, corporations, religions, sports teams — chosen so that the leadership variable can be examined where the structural constraints differ sharply.
+  Solution: (to be confirmed from the transcript) a conditional answer — leaders matter under specifiable circumstances rather than always or never — which converts "do leaders matter?" from a yes/no dispute into a question about which conditions license the higher-level causal description.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: Episode description: the conversation covers "when presidents and generals, but also CEOs and religious leaders, and sports leaders like coaches, matter, how much they matter, and how much is luck versus design." The conditional structure is in the framing; the content of the conditions is not.
+
+PRS-87:
+  Problem: Poetic naturalism licenses higher-level descriptions that "earn their keep," but the criterion has been operationalized in this wiki only where a quantitative handle exists — urban scaling with a derived exponent (PRS-63), causal emergence with an intervention (Active Question 12). History supplies neither: no derivable exponent, no rerunnable counterfactual.
+  Resource: The luck-versus-design distinction as applied to leadership outcomes — separating a leader who produced an effect from a leader who was present when an effect occurred.
+  Solution: (to be confirmed) a non-quantitative criterion for when a higher-level causal attribution is doing work, of the form "the attribution earns its keep when the outcome is sensitive to the individual's counterfactual absence" — which, if Carroll accepts it, extends the earns-its-keep test into a domain with no intervention and no fitted parameter.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: The luck/design axis is named in the episode description. Whether Carroll takes it as a criterion, or treats it as a historian's heuristic he would not generalize, is exactly what the transcript would settle. **This is the single highest-value check in this card.**
+
+PRS-88:
+  Problem: Carroll's captured position treats the Core Theory as complete and everything above it as supervenient description. A domain in which reduction is not merely impractical but not even a coherent aspiration tests whether "supervenient but real" is a substantive claim or a placeholder.
+  Resource: Human history as a limiting case — the coarse-graining is many orders of magnitude removed from the substrate, and the number of realizations is one.
+  Solution: (to be confirmed) a statement from Carroll of what poetic naturalism commits him to about historical causation, and whether the single-realization problem is a difficulty for the position or is answered by it.
+  Date Added: 2026-09-24
+  Source: 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape); PROP-2026-09-11-001
+  Confidence: Speculative
+  Evidence: Inferred from Carroll's captured commitments plus the episode's subject matter; no statement of his is verified. Flagged explicitly so this is not promoted on the strength of the inference.
+
+PRS-89:
+  Problem: Fully non-indexical conditioning (FNC) refuses the assumption that you are a typical observer — but then traditional anthropic arguments for a multiverse appear to lose their force, and naive observer-counting produces the presumptuous philosopher problem, an infinite preference for infinitely large universes.
+  Resource: A saturation rule, in a paper in progress with Isaac Wilkins: update priors on the probability that a universe contains *at least one* observer like you, not on how many such observers it contains. Paired with ordinary Bayesian priors over the theories themselves.
+  Solution: Anthropic reasoning survives FNC without the presumptuous conclusion. A larger universe is still preferred over a tiny one, because it has a higher probability of producing at least one observer like you; but the preference saturates, so an infinite universe gains no unbounded advantage. Fine-tuning arguments then do their work through the *priors* on theories — a theory that simply stipulates a small cosmological constant carries a low prior, while a multiverse with a scanned constant carries no fine-tuning penalty at all.
+  Date Added: 2026-09-24
+  Source: AMA | September 2026 (Mindscape Ask Me Anything); PROP-2026-09-15-004
+  Confidence: High
+  Evidence: Verbatim — "we don't update your priors by how many observers are like you. We update our priors by the probability there would be at least one observer like you in this universe," attributed to "the paper that Isaac Wilkins and I are working on ourselves," and explicitly contrasted with "the presumptuous philosopher problem." Transcript at 0:26:32.
+
+PRS-90:
+  Problem: If space, locality, particles and the classical world are to *emerge* from a bare quantum state vector evolving in Hilbert space under a Hamiltonian, does the choice of how to factorize Hilbert space quietly presuppose the classical structure it is meant to produce?
+  Resource: The bare-bones formulation (state vector + Hilbert space + Hamiltonian, nothing else) together with a search over all factorizations, each tested for whether it yields a recognizable emergent classical description.
+  Solution: No classical structure is assumed in the factorization itself — the circularity charge is answered. But the assumption is not eliminated, only moved: something must be assumed about "the appropriateness of the form of the Hamiltonian," since on Carroll's own estimate most Hamiltonians yield no classical description at all. The criterion that picks out classicality-permitting Hamiltonians is named as an open problem.
+  Date Added: 2026-09-24
+  Source: AMA | September 2026 (Mindscape Ask Me Anything); PROP-2026-09-15-004
+  Confidence: High
+  Evidence: Verbatim — "no features of classical structure are assumed in choosing how Hilbert space is divided," followed by "there's some assumption about the appropriateness of the form of the Hamiltonian. There has to be the possibility of a classical world emerging before you go looking for what classical world does emerge. And we're still trying to figure out what is the best way of pinpointing what that criterion actually says." Transcript at 0:47:23.
+
+PRS-91:
+  Problem: Carroll Active Question 3 / 9 / 12 — when does a higher-level description earn its keep? Applied here to the humanities, whose vocabulary (empathy, imagination, humanity) is the hardest case for a deflationary emergence story.
+  Resource: Alexander's claim, from *Signals Across Vast Distances*, that humanistic study produces imaginative extension to other persons, and that democratic functioning depends on that capacity.
+  Solution: Not determined. The card records that the episode is the right genre to put the question to Carroll in the humanities register; it does not claim he answers it.
+  Date Added: 2026-09-24
+  Source: 368 | Elizabeth Alexander on Why Democracy Needs Imagination; PROP-2026-09-22-004
+  Confidence: Speculative
+  Evidence: None heard. Episode page, date 2026-09-21, category Literature, and the published blurb ("how literature and other humanistic studies can help us build empathy ... why that task is crucial to a flourishing democratic society"). No transcript retrieved.
+
+*Total PRS triplets: 91*

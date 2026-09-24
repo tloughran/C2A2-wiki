@@ -141,3 +141,14 @@ Forwarded to the Loughran agent and the master node as an architectural challeng
 - `PROP-2026-09-08-002` — 2026/07 - Open-Ended Discussion on Open Theory Questions (talk, https://forum.thousandbrains.org/t/2026-07-open-ended-discussion-on-open-theory-questions/1171) → PRS-49, PRS-50, PRS-51
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+15 triplets added from 4 approved proposals (decision email 2026-09-23): PRS-52, PRS-53, PRS-54, PRS-55, PRS-56, PRS-57, PRS-58, PRS-59, PRS-60, PRS-61, PRS-62, PRS-63, PRS-64, PRS-65, PRS-66.
+
+- `PROP-2026-09-15-001` — 2026/06 - Attention and Model-Free Segmentation (talk, https://forum.thousandbrains.org/t/2026-06-attention-and-model-free-segmentation/1170) → PRS-52, PRS-53, PRS-54, PRS-55
+- `PROP-2026-09-15-002` — 2026/06 - Visual Saliency for Efficient Learning and Exploration (talk, https://forum.thousandbrains.org/t/2026-06-visual-saliency-for-efficient-learning-and-exploration/1162) → PRS-56, PRS-57, PRS-58
+- `PROP-2026-09-22-001` — 2026/06 - Attentional Regions, Policies, and Prediction Error (talk, https://forum.thousandbrains.org/t/2026-06-attentional-regions-policies-and-prediction-error/1155) → PRS-59, PRS-60, PRS-61, PRS-62
+- `PROP-2026-09-22-002` — 2026/07 - Q3 Roadmap and Q2 Review (talk, https://forum.thousandbrains.org/t/2026-07-q3-roadmap-and-q2-review/1159) → PRS-63, PRS-64, PRS-65, PRS-66
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

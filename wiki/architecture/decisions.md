@@ -1449,3 +1449,24 @@ ruling and an agent's account of one stays visible until the field REVISE-476 as
 
 **Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24**
 (ASSUMPTION-1632); `summa-2026-daily-batch` retirement (second day); OPEN-249, -250, -251, -252, -253.
+
+
+## Index note — 2026-09-23 (14a end-of-day)
+
+**No DECISION minted.** DECISION-083 (2026-08-27) stands. The last decision-channel act was the
+`[C2A2-review-decision]` email of 09-09, 14 days ago. Pending cards **35** (verified), approved 414.
+
+**Agent-made, id-less rules and actions recorded, not minted (six today):**
+
+- *For/against split reframed as retrieval diversity, not confirmation* (lit pipeline; REVISE-483;
+  ASSUMPTION-1657).
+- *Held pairs are never marked passed* restated by 11 QC and reviewer runs and held all day
+  (ASSUMPTION-1669). This is the convention OPEN-253 asks Tom to ratify.
+- *Pairs skipped under "your 30k token budget"* against the task's cap of 6 (ASSUMPTION-1670).
+- *Contracts read from project memory instead of the task path* (ASSUMPTION-1674).
+- *Kastrup date error noted in a new card; the approved record was left unedited* (ASSUMPTION-1659;
+  OPEN-254).
+- *This pass tags in-house queue items `[IN-HOUSE]`* to match `queue_scan.py` (ASSUMPTION-1658).
+
+**Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24 (tomorrow)**
+(ASSUMPTION-1632, -1676). Also unheld: `summa-2026-daily-batch` retirement (third day), and OPEN-249–255.

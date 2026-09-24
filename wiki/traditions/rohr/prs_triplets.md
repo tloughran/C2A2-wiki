@@ -731,4 +731,224 @@ PRS-79:
   Confidence: Medium
   Evidence: Rohr's claim that we are either baptized into Christ's death and resurrection or Christianity is largely a mere belonging system rather than a transformational one that will change the world, alongside his insistence that none of this is done to make God love us.
 
-*Total PRS triplets: 79*
+PRS-80:
+  Label: centre-and-edge-as-a-required-pair
+  Problem: Rohr's developmental account reads the move past certainty as growth, which implies the people who stay at the centre are simply behind, and gives no account of what the centre is *for*.
+  Resource: Brown Taylor's centre/edge map — the centre keeping the map from blowing away, the edge keeping it from becoming redundant — presented as two biblically necessary positions on one map rather than two stages of one life.
+  Solution: Certainty-holding and mystery-seeking are complementary functions distributed across a community: the centre supplies persistence and transmission, the edge supplies contact with what the map does not yet cover, and a tradition with only one of them either drifts or ossifies.
+  Date Added: 2026-09-24
+  Source: The Center and the Edge; PROP-2026-09-13-002
+  Confidence: High
+  Evidence: Stated directly in the quoted passage, including the claim that both belong on the same map and that each keeps the other from a named failure mode.
+
+PRS-81:
+  Label: vocation-survives-the-loss-of-office
+  Problem: If a calling is constituted by an institutional role, leaving the role should terminate the calling — yet the contemplative tradition keeps producing figures whose work continues outside the institution.
+  Resource: Brown Taylor's relocation of vocation from function to identity ("not what I did but who I was"), with the vocation to love God and neighbour named as exercisable anywhere, with anyone.
+  Solution: Vocation is an identity-level property rather than a role-level one, so departure from the institution is continuity rather than loss; nothing prior is wasted, and the institution becomes one venue for the calling rather than its condition.
+  Date Added: 2026-09-24
+  Source: The Center and the Edge; PROP-2026-09-13-002
+  Confidence: Medium
+  Evidence: The closing paragraph, stated in the first person about her own case; the generalization to a rule is the proposal's inference, not hers.
+
+PRS-82:
+  Label: non-hostility-not-belief-as-the-membership-condition
+  Problem: Rohr's inclusivism ("Christ is in everything") is asserted cosmologically, so it has no criterion: it cannot say who counts as inside without making the question vacuous.
+  Resource: Willse's reading of Mark 9:39-40 — the disciples' exclusion of an outsider whose ancestry and motives they distrust is overruled, and the stated test is "whoever is not against us is for us."
+  Solution: The boundary condition is orientation rather than assent: doubt is not disqualifying and belief is not required, but hostility of hand and heart is what falls outside. This gives the inclusivist claim a criterion that can actually exclude something, which cosmological inclusivism alone cannot.
+  Date Added: 2026-09-24
+  Source: Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12); PROP-2026-09-13-003
+  Confidence: Medium
+  Evidence: Directly argued from the Mark text in the Week 36 practice; the generalization from one pericope to a standing criterion is Willse's move, and rests on that single passage.
+
+PRS-83:
+  Label: parabolic-under-specification-as-pedagogy
+  Problem: The obscurity of Jesus's teaching is usually explained as concealment from outsiders or as accommodation to hearers, both of which make the difficulty incidental to the content.
+  Resource: Willse's claim that the parables' resistance to interpretation is deliberate and pedagogical — refusing to supply the answer forces the hearer to reason to principles rather than receive them from authority.
+  Solution: Difficulty is a feature of the transmission, not a defect in it: understanding that has been worked out is a different and more durable state than understanding that has been told, so under-specification is the method by which the second is produced.
+  Date Added: 2026-09-24
+  Source: Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12); PROP-2026-09-13-003
+  Confidence: Speculative
+  Evidence: Offered as the author's own reading ("I think this is another, more subtle form"), without argument against the concealment reading; flagged Speculative on that ground.
+
+PRS-84:
+  Label: panentheism-not-pantheism-as-the-universal-christ-metaphysic
+  Problem: The Universal-Christ claim ("Christ is everything and in everything") is read either as pantheism, which collapses the God/world distinction, or as pious metaphor, which empties it; the tradition has lacked an explicit statement of which it is.
+  Resource: Rohr's own self-classification as panentheist rather than pantheist — God lies within all things but also transcends them — asserted as the position of Jesus and Paul, with Colossians 3:11 as the text.
+  Solution: The Universal Christ is a real metaphysical claim with a transcendence clause, so immanence-only readings (whether idealist or naturalizing) misstate it; cross-tradition mappings must preserve the transcendence term or record that they are dropping it.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: High
+  Evidence: Stated in Rohr's own words in the closing paragraph, with the pantheist misreading anticipated by name.
+
+PRS-85:
+  Label: revelation-in-before-revelation-to
+  Problem: If divine self-disclosure is modelled as testimony delivered to an observer, it is unclear why anyone who receives the same testimony fails to recognize it.
+  Resource: Rohr's reading of the Galatians 1:16 preposition, paired with 2 Corinthians 13:5 as a criterion, and the claim that God must reveal God's self *in* a subject before revealing God's self *to* that subject.
+  Solution: Recognition is gated by prior interior participation rather than by evidential access: the capacity to perceive the pattern is itself constituted by the pattern's presence in the perceiver, which explains non-recognition without appeal to bad will.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: Medium
+  Evidence: The Galatians and 2 Corinthians paragraphs; the "in you / to you" line is stated as a general principle, not as exegesis of a single verse.
+
+PRS-86:
+  Label: interiority-required-literacy
+  Problem: Rohr's developmental claims are usually psychological; he has not accounted for why an interior Christianity arrives historically when it does.
+  Resource: The claim that Paul's interior register was unusual in an extroverted and literal culture, and that it took widespread literacy and the printed word in the sixteenth century to move believers toward interiority — "both for good and for ill."
+  Solution: Contemplative interiority is treated as partly media-conditioned rather than purely graced or purely developmental, which makes it a historically contingent capacity with identifiable enabling technology.
+  Date Added: 2026-09-24
+  Source: Paul Knew Christ Within; PROP-2026-09-13-001
+  Confidence: Speculative
+  Evidence: Asserted as opinion ("in my opinion") in one paragraph, without historical argument; flagged Speculative on that ground.
+
+PRS-87:
+  Problem: Active Question 1 / Question 6 — the tradition asserts that contradictions can be held without premature resolution, but has not said what the *operation* is, so it cannot be tested or ported to cross-program use.
+  Resource: The "language of the cross" as template (Rohr's phrase: Paul's "philosopher's stone") — a named, repeatable operation applied to a paired opposition, plus an explicit list of eight such pairs Rohr says Paul works with.
+  Solution: Non-dual reading is recast from a disposition into a three-part procedure (paired terms → template applied → new order disclosed). This makes Question 6 answerable: one can now ask whether the procedure transfers to a pair of *research programs* rather than a pair of theological terms.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "The 'language of the cross' (1 Corinthians 1:18) became Paul's 'philosopher's stone,' his own template by which to evaluate and critique the meaning of reality. It allowed him to break through what seemed like order and logic to discover a new order, which he called 'the hidden wisdom of God' (1 Corinthians 2:7)."
+
+PRS-88:
+  Problem: Active Question 1 — whether formalizing the non-dual epistemology distorts it. Prior discussion has been about whether a model exists at all, not about what would break.
+  Resource: Rohr's stated precondition that the interpreter must have already partly reconciled the opposition within themselves before the reading is available.
+  Solution: Identifies the specific component that resists formalization — not the template (part ii, which is statable) but the reader-state precondition (part iii). This sharpens Question 1 from "can it be formalized?" to "can a criterion whose satisfaction conditions live in the interpreter be formalized?", which is a question the network can actually work on.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "If one has not consciously struggled, and partly reconciled, these patterns inside of oneself, I think it is almost impossible to understand Paul." And: "It could never be arrived at by mere study or intelligence, but only by surrender to communion, which he called faith."
+
+PRS-89:
+  Problem: Whether Rohr's developmental/transformational frame treats disorder as noise to be minimized or as the working material.
+  Resource: Rohr's claim that neither Jesus nor Paul is "especially concerned about order, niceness, or social control," and that transformation uses "the very disorder of people's lives."
+  Solution: Records disorder as *load-bearing* rather than residual in Rohr's order–disorder–reorder frame. Bears on Active Question 2 (the Friston comparison): a free-energy reading makes surprise something the system works to reduce, whereas Rohr here makes the disorder the means. Whether that is a genuine disagreement or a level-of-description difference is not settled by this source and should not be recorded as settled.
+  Date Added: 2026-09-24
+  Source: A Man Who Lived and Loved Paradox; PROP-2026-09-19-002
+  Confidence: Medium
+  Evidence: "They are concerned about transformation of persons and history and about using the very disorder of people's lives to bring them to God."
+
+PRS-90:
+  Problem: Active Question 7 — whether second-personal relation scales from dyad to community without changing kind.
+  Resource: The power-with / power-over distinction applied to the New Testament household codes, with mutual submission (Eph 5:21) read as governing the member-specific instructions that follow.
+  Solution: Supplies a test case where the same relation is claimed at two scales, and names what would have to hold for the scaling to work — that each member retains agency and "the right to hear and act for themselves," rather than being represented by a head. Does not settle Question 7; makes it concrete.
+  Date Added: 2026-09-24
+  Source: Changing the Paradigm of Power-Over; PROP-2026-09-19-003
+  Confidence: Medium
+  Evidence: "Mutual submission was a radical shift from the Roman household codes that demanded strict hierarchy, with only one—the father—having ultimate authority. Ephesians 5 disrupts this by speaking to *every* member of the household." (Armas, quoted by Rohr; interior quotation from Barr, *The Making of Biblical Womanhood*, 34.)
+
+PRS-91:
+  Problem: Active Question 9 — whether the effects-of-the-reading criterion can be constrained by anything textual once adjudication has moved off philology.
+  Resource: A reading that holds 1 Cor 7:4 and 1 Cor 11:5–10 together without harmonizing them, conceding the verse that runs against its own direction.
+  Solution: Weak evidence that the criterion is not unconstrained in practice: the reading declines an available harmonization and records the counter-text. Whether that is a structural check or a stylistic virtue is exactly what Question 9 asks, and this source does not answer it.
+  Date Added: 2026-09-24
+  Source: Changing the Paradigm of Power-Over; PROP-2026-09-19-003
+  Confidence: Speculative
+  Evidence: "And yet, in 1 Corinthians 11:5–10, it seems Paul is upholding gendered practices by instructing women to cover their heads while praying, grounding his reasoning in creation order."
+
+PRS-92:
+  Label: law-as-diagnostic-not-acquisitive
+  Problem: If a norm cannot alter how one is regarded by the ground of one's being, what work is the norm doing? The available answers — it earns favour, or it is arbitrary residue — are both unsatisfying, and the first is the one Rohr reads Paul as demolishing.
+  Resource: Rohr's reframing in the Week Thirty-Seven Practice: the purpose of spiritual law is to sharpen awareness of who one really is and who God is (Things Hidden, 85-88).
+  Solution: Law functions as a measuring instrument rather than a currency. Its output is accurate self-assessment, and the recognition of insufficiency and the encounter with fullness are a single movement rather than a sequence of failure followed by rescue. On this reading, error is not waste but signal — Rohr's claim that God "uses our mistakes in our favour" becomes a statement about information rather than about leniency.
+  Date Added: 2026-09-24
+  Source: Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to 2026-09-19); PROP-2026-09-20-003
+  Confidence: Medium
+  Evidence: Rohr states the purpose claim directly and anchors it in Paul's self-description as a faultless Pharisee whose observance did not prevent violence. Medium rather than High because the "uses mistakes" step is asserted rather than argued.
+
+PRS-93:
+  Label: paradox-pedagogy-and-the-limitation-clause
+  Problem: How should a tradition read a founding figure who is both genuinely liberating and demonstrably bounded by his own setting, without either flattening him into a hero or discarding him as compromised?
+  Resource: Two of the week's moves taken together — Rohr on Paul teaching through contrast and overcome contradiction rather than through resolved propositions, and Kat Armas on Paul as shaped by revelation and limitation at once.
+  Solution: The limitation is not noise to be filtered out of the revelation; reading the two together is the interpretive method the material itself calls for. Taking one pole of a Pauline contrast as simply good and the other as simply bad is named as the characteristic misreading, and the same error applied to Paul's own person produces the revolutionary/enforcer dichotomy that Armas rejects.
+  Date Added: 2026-09-24
+  Source: Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to 2026-09-19); PROP-2026-09-20-003
+  Confidence: Speculative
+  Evidence: Both claims are in the summary, but joining them into a single interpretive principle is this proposal's synthesis, not the source's. Flagged Speculative on that ground.
+
+PRS-94:
+  Label: incongruity-as-perfection
+  Problem: On what grounds can a gift given to an unworthy recipient be called a better gift rather than a wasted one? The ancient gift economy had a coherent answer (it cannot), and contemporary accounts of grace usually assume the reversal without arguing for it.
+  Resource: Beck's reconstruction of the ancient merited-gift norm, against which Paul's unmerited gift reads as deliberate inversion rather than as the obvious default (The Book of Love, 210-213).
+  Solution: The incongruity between gift and recipient is the gift's perfecting feature, because a gift conditioned on worth is a transaction within a ranking system, while a gift indifferent to worth is what abolishes the ranking system. Grace is not generosity within the economy; it is the suspension of the economy.
+  Date Added: 2026-09-24
+  Source: A Preacher of Grace; PROP-2026-09-20-001
+  Confidence: High
+  Evidence: Beck states the reversal explicitly and dates it to Paul ("grace was once merited; today it is unmerited"), and grounds it in Paul's own provocative framing of the gift as given to enemies.
+
+PRS-95:
+  Label: grace-as-social-leveling
+  Problem: What makes a maximally heterogeneous assembly cohere without a shared rank ordering, a shared ethnicity, or a shared class interest? Ordinary accounts of group formation require at least one of these.
+  Resource: Beck's reading of the Pauline ekklesia as an assembly whose membership function has had the worth-ranking term deleted, so that no honour hierarchy is available inside it.
+  Solution: Removing the ranking function is not merely permissive but constitutive: the diversity of the early assemblies is a consequence of grace-as-incongruous, not an accident tolerated by it. Unconditional reception, once received, becomes a transitive obligation ("welcome each other as Christ has welcomed you"), which supplies the maintenance rule the group needs to persist.
+  Date Added: 2026-09-24
+  Source: A Preacher of Grace; PROP-2026-09-20-001
+  Confidence: Medium
+  Evidence: Beck's claim that grace "became a tool of social leveling, creating capacities for egalitarian and democratic forms of social life," tied to the observed class and ethnic composition of the Pauline churches. The causal direction (grace enabling diversity rather than diversity being rationalized by grace) is Beck's argument, not a demonstrated result, hence Medium.
+
+PRS-96:
+  Label: indwelling-as-dignity-ground
+  Problem: Any dignity grounded in an attribute (rationality, capacity, contribution, status) is revocable by re-evaluating that attribute, and is therefore exactly as secure as the evaluator is benign. What grounding survives a hostile evaluator?
+  Resource: Paul's indwelling formula read as a dignity-conferring proposition — "you are the very temple of God" — which Rohr reports as scholarship's candidate for Paul's supreme and organizing idea.
+  Solution: Grounding dignity in indwelling rather than in any attribute makes it inherent, universal and indestructible by evaluation, because no evaluative predicate is in the grounding chain at all. Rohr treats this as the causal explanation of Paul's uptake speed: it answered a felt condition (social shame) that no additional deity could have answered.
+  Date Added: 2026-09-24
+  Source: A Preacher of Love; PROP-2026-09-20-002
+  Confidence: Medium
+  Evidence: Rohr states the three properties explicitly and names the historical conditions (Asia Minor slavery, women as property, absence of a human-rights concept) that make the uptake claim non-trivial. The historical causal claim is Rohr's reading rather than a demonstrated result, hence Medium rather than High.
+
+PRS-97:
+  Label: pentecost-many-tongues-one-content
+  Problem: How can a universal message be genuinely universal without erasing the particularity of its hearers? Universality usually purchases its scope by abstracting away from the local.
+  Resource: Rohr's reading of Acts 2:1-11, where the hearers receive in their own individual languages rather than in a single restored common tongue.
+  Solution: Universality is realized as simultaneous reception in many particular idioms, not as translation into one. The particularity of the receiver is preserved as a feature of the delivery, which is why Rohr can call the love "totally democratic" without calling it uniform.
+  Date Added: 2026-09-24
+  Source: A Preacher of Love; PROP-2026-09-20-002
+  Confidence: Speculative
+  Evidence: The text supports the many-tongues reading; the inference that this constitutes a general model of particularity-preserving universality is an extension Rohr gestures at rather than argues. Flagged Speculative deliberately — it is attractive to the Summa project and should therefore be held at arm's length until Wright's exegesis is consulted.
+
+PRS-98:
+  Problem: Christians across nearly all traditions fail to receive Jesus's explicit teaching of nonviolence, and the Sermon on the Mount remains his least-quoted major teaching — a failure of reception that ordinary exhortation and exegesis have not repaired.
+  Resource: The contemplative stance as a *prerequisite cognitive mode*: nondual attention capable of holding "the burden of evil and the weight of glory" simultaneously, as against the calculative and dualistic mind.
+  Solution: Reframes the failure as cognitive rather than moral or hermeneutic. The teaching is not resisted because it is unclear or too demanding, but because the dominant mode of mind is structurally incapable of inhabiting a participatory mystery. Moral formation therefore runs through contemplative practice, not through argument.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: High
+  Evidence: "I've come to believe that understanding Jesus's nonviolent teaching is almost impossible apart from a contemplative stance. The calculative and dualistic mind is incapable of living inside of the participatory mystery of our life in this world and in God."
+
+PRS-99:
+  Problem: Nonviolence is routinely collapsed into absolute pacifism and thereby dismissed as impractical, while "military solutions are accepted routinely as a matter of necessity."
+  Resource: The category of nonviolent resistance, or "gentle firmness" — a third term between passivity and force, which preserves legitimate self-defense while demanding "creative and constant firmness in opposition to evil."
+  Solution: Dissolves the pacifism/necessity dilemma by denying that its two horns exhaust the space, and relocates the cost: rather than asking who else must die, the gospel directs the demand inward ("First of all, it's you!" — dying to self, Luke 9:24), so that resistance is financed by the resister's own willingness to carry a share of the world's sin and pain.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: High
+  Evidence: "It does not imply absolute pacifism or deny the right to legitimate self-defense, but it requires creative and constant firmness in opposition to evil."
+
+PRS-100:
+  Problem: National and religious identity have fused ("the flag is often right there by the tabernacle"), making the boundaries of the political community the effective boundaries of moral concern.
+  Resource: Isaiah 40:17 — all nations as "less than nothing and emptiness" before God — read together with the claim that "boundaries are not engraved in the earth."
+  Solution: Grounds a universality of first allegiance that is not cosmopolitan sentiment but a consequence of the doctrine of God: because God is God of all the earth, contemplative prayer terminates in bearing the burden of, and resisting the violence of, the whole world rather than one's own country.
+  Date Added: 2026-09-24
+  Source: Nonviolent Resistance; PROP-2026-09-21-001
+  Confidence: Medium
+  Evidence: "Because God is the God of all the earth, our first allegiance is to that universality—beyond nations and boundaries."
+
+PRS-101:
+  Problem: Individuals who oppose injustice still feel helpless against large systemic evils; the result looks like apathy.
+  Resource: The distinction between the individual ego and the "corporate ego" (collective self-protection that is more disguised, protected, and denied), plus a diagnosis of psychic numbing as paralysis, not bad will.
+  Solution: Systemic evil is met only by collective ("corporate") good — the gospel lived institutionally and socially, not just individually. Contemplative practice that does not issue in collective servanthood has failed its own test.
+  Date Added: 2026-09-24
+  Source: Corporate Violence Met by Corporate Good; PROP-2026-09-23-002
+  Confidence: Medium (stated directly; adapted from a 2002 text)
+  Evidence: "corporate evil can only be opposed by corporate good"; the German bishops' appeasement of Hitler used as the case of an institution protecting itself instead of living the gospel.
+
+PRS-102:
+  Problem: Why does Christian culture tolerate, and sometimes sanctify, violence?
+  Resource: Critique of retributive (penal) atonement theory; Walter Wink's "myth of redemptive violence" (named as what "some call" it); Pauline "powers and principalities" (Eph 3:9–10, 6:12).
+  Solution: A retributive notion of God's justice legitimates "good and necessary violence all the way down." Dropping it removes the theological cover for violence and restores a redemptive alternative to history.
+  Date Added: 2026-09-24
+  Source: Corporate Violence Met by Corporate Good; PROP-2026-09-23-002
+  Confidence: Medium (restatement of an established Rohr position from *The Universal Christ*)
+  Evidence: Second adapted passage, *The Universal Christ* pp. 140–142.
+
+*Total PRS triplets: 102*

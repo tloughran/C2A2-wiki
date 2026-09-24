@@ -182,3 +182,13 @@ Processed 3 source file(s); minted PRS-68 - PRS-78.
 - `PROP-2026-09-04-001` — The Biggest Ideas in the Universe 3: Complexity and Emergence (book, https://www.booktopia.com.au/the-biggest-ideas-in-the-universe-3-sean-carroll/book/9780861549177.html) → PRS-83, PRS-84, PRS-85
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+6 triplets added from 3 approved proposals (decision email 2026-09-23): PRS-86, PRS-87, PRS-88, PRS-89, PRS-90, PRS-91.
+
+- `PROP-2026-09-11-001` — 367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Mindscape) (podcast, https://preposterousuniverse.com/podcast/2026/09/07/367-jared-diamond-on-the-course-of-history-and-the-role-of-leaders/) → PRS-86, PRS-87, PRS-88
+- `PROP-2026-09-15-004` — AMA | September 2026 (Mindscape Ask Me Anything) (podcast, https://preposterousuniverse.com/podcast/2026/09/14/ama-september-2026/) → PRS-89, PRS-90
+- `PROP-2026-09-22-004` — 368 | Elizabeth Alexander on Why Democracy Needs Imagination (podcast, https://preposterousuniverse.com/podcast/2026/09/21/368-elizabeth-alexander-on-why-democracy-needs-imagination/) → PRS-91
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

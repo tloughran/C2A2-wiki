@@ -181,3 +181,12 @@ Processed 1 source file(s); minted PRS-40.
 - `PROP-2026-09-08-004` — Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus (talk, https://traceinstitute.org/events/traces-of-the-other) → PRS-43, PRS-44
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+7 triplets added from 2 approved proposals (decision email 2026-09-23): PRS-45, PRS-46, PRS-47, PRS-48, PRS-49, PRS-50, PRS-51.
+
+- `PROP-2026-09-15-003` — What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston (podcast, https://share.snipd.com/episode/07f99d8b-32c8-4dca-ac6e-b830395929fa) → PRS-45, PRS-46, PRS-47, PRS-48, PRS-49
+- `PROP-2026-09-22-003` — Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ) (talk, https://traceinstitute.org/events/) → PRS-50, PRS-51
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

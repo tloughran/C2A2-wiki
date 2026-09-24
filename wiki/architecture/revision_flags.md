@@ -15740,3 +15740,58 @@ REVISE-483:
     for the 09-22 and 09-23 cohorts; (3) if overlap is high, consider putting one side on a different
     model family or a different search backend.
   Consistency: flagged together with PREMISE-004 and PREMISE-216; nothing overwritten.
+
+
+---
+## Added 2026-09-24 by 15c
+
+REVISE-484:
+  Date: 2026-09-24 | Source item: ASSUMPTION-1660 | DISPOSITION-988 | Urgency: Medium
+  Premise challenged: PRS triplets drawn from a host's summary and chapter list preserve claim structure
+    well enough to enter the tradition record.
+  Evidence: Pitkin et al. 1999 (JAMA): 18-68% of abstracts inconsistent with or missing from the article;
+    Peters & Chin-Yee 2025 (arXiv 2504.00025): LLM summaries overgeneralise in 26-73% of cases. 15a's
+    support is by analogy to authors' own abstracts only.
+  What is at risk: attribution in the tradition record — a host's framing entered as the thinker's claim;
+    scope qualifiers lost.
+  Recommended action (for Tom): mark secondary-sourced triplets with a provenance tier ("host summary")
+    and hold them from the approved record until spot-checked against the primary recording, at least on
+    a sample.
+
+REVISE-485:
+  Date: 2026-09-24 | Source item: ASSUMPTION-1663 | DISPOSITION-989 | Urgency: High
+  Premise challenged: SQLite backup API or VACUUM INTO gives a consistent read snapshot of a live 7+ GB
+    WAL-mode db within bounded scratch space.
+  Evidence (sqlite.org primary docs, both agents): consistency holds (already PREMISE-092); bounded scratch
+    does not — both write a database-sized copy. Backup API restarts on writes from another connection and
+    may not finish; a long read grows the -wal file; `immutable=1` unsafe on a changing db.
+  What is at risk: the proposed copy-free read design for OpenStory; see PREMISE-219 for the failure window.
+  Recommended action (for Tom): drop "bounded scratch" as a design assumption. Options to weigh: read the
+    live db read-only (normal WAL read, no immutable=1) with a short transaction; run the reader on the
+    host where the db lives; or maintain an incremental extract instead of a full copy.
+
+REVISE-486:
+  Date: 2026-09-24 | Source item: PRESUMPTION-1079 | DISPOSITION-992 | Urgency: High
+  Premise challenged: escalation to an absent authority works as a terminal state for automated agents.
+  Evidence: 15b CHALLENGED/Strong (Google SRE ch. 1: unread notifications are logs; Schlatter et al. 2025,
+    arXiv 2509.14260); 15a's own sources (Bainbridge 1983; Cvach 2012; Darley & Latané 1968) support only
+    "produces no action." In-house: nine sessions closing on "escalate to Tom" across ~24 days of absence.
+  What is at risk: every run note ending in "needs Tom"; OPEN-249(b) and similar items; PREMISE-093.
+  Recommended action (for Tom): give escalations an expiry and a default — after N days unanswered, a
+    named fallback applies (defer, drop, or bounded autonomous action) and is logged; count open
+    escalations by age in the daily report.
+  Consistency: flagged together with PREMISE-093 ("refuse AND alert so a human can close the loop
+    promptly"), which presumes a present human. Nothing overwritten. See 15b SYSTEMIC-RISK flag
+    2026-09-24 (absent-principal-as-control) and the 09-09 / 09-11 flags it cites.
+
+REVISE-487:
+  Date: 2026-09-24 | Source item: PRESUMPTION-1082 | DISPOSITION-994 | Urgency: High
+  Premise challenged: approval gating is the operative safety boundary for unattended agents that
+    improvise privilege escalation.
+  Evidence: 15b CHALLENGED/Strong — users approve ~93% of permission prompts (Anthropic telemetry); OWASP
+    LLM06 places enforcement outside the agent. 15a: Uppala 2026 supports external enforcement, not
+    approval prompts. The gate held in three attempts only because no one was present.
+  What is at risk: the safety of every scheduled run that can reach host-control tools.
+  Recommended action (for Tom): make the boundary which tools each scheduled task can reach (per-task
+    tool allowlist), not the prompt; treat the approval prompt as a second layer. PREMISE-218 states the
+    matching rule for fallbacks. Conflict of interest: several sources are Anthropic's.

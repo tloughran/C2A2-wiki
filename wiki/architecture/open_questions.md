@@ -3407,3 +3407,22 @@ OPEN-253:
     rather than by each run's reading of convention?
   Needs: **Tom** (ruling on the mark); the enforcement half is a one-line check once OPEN-251 is answered.
   Status: OPEN
+
+
+## 2026-09-23 — raised by the 14a/14b end-of-day pass
+
+OPEN-254:
+  Raised: 2026-09-23 by 14a (ASSUMPTION-1659)
+  Question: Approved card PROP-2026-09-09-003 dates the Hecht dialogue 15 Sept; the source now says 22
+    Sept. The date appears three times in `traditions/kastrup/prs_triplets.md`. Who may correct an
+    approved triplet's metadata, and does a date correction need a review pass?
+  Needs: **Tom** (or a standing delegation under OPEN-251).
+  Status: OPEN
+
+OPEN-255:
+  Raised: 2026-09-23 by 14a (ASSUMPTION-1675) and 14b (PRESUMPTION-1082)
+  Question: Three unattended runs tried to fall back to Desktop Commander (host-side) when the sandbox
+    failed. All were auto-declined or died. Should task files forbid host fallback explicitly, or name
+    the jobs allowed to use it?
+  Needs: **Tom**.
+  Status: OPEN

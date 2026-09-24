@@ -328,6 +328,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-17-001",
+  "tradition": "stump",
+  "source_date": "2025-11-10",
+  "title": "Natural Law, Metaphysics, and the Creator",
+  "file": "inbox/proposals/approved/2026-09-17_stump_natural-law-metaphysics-creator-antireductionism.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-05-05-016",
   "tradition": "wolfram",
   "source_date": "2025-11-11",
@@ -653,6 +661,14 @@
   "source_date": "2026-02-02",
   "title": "Interview: Richard Rohr and the Universal Christ",
   "file": "inbox/proposals/approved/2026-05-10_rohr_america-magazine-universal-christ-interview.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-15-003",
+  "tradition": "hoffman",
+  "source_date": "2026-02-04",
+  "title": "What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Fr",
+  "file": "inbox/proposals/approved/2026-09-15_hoffman_friston-colloquium-trace-logic-free-energy.md",
   "processed": false
  },
  {
@@ -1632,6 +1648,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-14-003",
+  "tradition": "levin",
+  "source_date": "2026-05-29",
+  "title": "Agnosiophobia in a virtual agent: behavioral and dynamical architecture in Lenia",
+  "file": "inbox/proposals/approved/2026-09-14_levin_agnosiophobia-lenia.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-08-001",
   "tradition": "wolfram",
   "source_date": "2026-05-30",
@@ -1992,6 +2016,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-12-001",
+  "tradition": "wolfram",
+  "source_date": "2026-06-28",
+  "title": "2026 Wolfram Summer Research Institute: Opening Keynote",
+  "file": "inbox/proposals/approved/2026-09-12_wolfram_summer-research-institute-2026-keynote.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-06-28-002",
   "tradition": "rohr",
   "source_date": "2026-06-28",
@@ -2168,6 +2200,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-22-001",
+  "tradition": "hawkins",
+  "source_date": "2026-07-07",
+  "title": "2026/06 - Attentional Regions, Policies, and Prediction Error",
+  "file": "inbox/proposals/approved/2026-09-22_hawkins_attentional-regions-policies-prediction-error.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-07-14-001",
   "tradition": "kastrup",
   "source_date": "2026-07-07",
@@ -2269,6 +2309,22 @@
   "source_date": "2026-07-14",
   "title": "The freedom to transform suffering to joy \u2014 Sthaneshwar Timalsina & Bernardo Kastrup on th",
   "file": "inbox/proposals/approved/2026-07-22_kastrup_timalsina-suffering-joy.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-22-002",
+  "tradition": "hawkins",
+  "source_date": "2026-07-14",
+  "title": "2026/07 - Q3 Roadmap and Q2 Review",
+  "file": "inbox/proposals/approved/2026-09-22_hawkins_q3-roadmap-q2-review.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-15-002",
+  "tradition": "hawkins",
+  "source_date": "2026-07-16",
+  "title": "2026/06 - Visual Saliency for Efficient Learning and Exploration",
+  "file": "inbox/proposals/approved/2026-09-15_hawkins_visual-saliency-sparser-models.md",
   "processed": false
  },
  {
@@ -2480,6 +2536,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-15-001",
+  "tradition": "hawkins",
+  "source_date": "2026-07-28",
+  "title": "2026/06 - Attention and Model-Free Segmentation",
+  "file": "inbox/proposals/approved/2026-09-15_hawkins_attention-model-free-segmentation.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-06-001",
   "tradition": "stump",
   "source_date": "2026-07-28",
@@ -2533,6 +2597,14 @@
   "source_date": "2026-07-30",
   "title": "2026/07 - Open-Ended Discussion on Open Theory Questions",
   "file": "inbox/proposals/approved/2026-09-08_hawkins_open-theory-questions-taxonomy.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-14-004",
+  "tradition": "friston",
+  "source_date": "2026-08",
+  "title": "Climate homeorhesis / planetary agency via active inference in a biosphere-climate system ",
+  "file": "inbox/proposals/approved/2026-09-14_friston_planetary-agency-climate-homeorhesis.md",
   "processed": false
  },
  {
@@ -2597,6 +2669,14 @@
   "source_date": "2026-08-06",
   "title": "07/2026 - FENS Conference Recap",
   "file": "inbox/proposals/approved/2026-09-08_hawkins_fens-2026-conference-recap.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-14-001",
+  "tradition": "levin",
+  "source_date": "2026-08-07",
+  "title": "Bioelectrical regionalization of multicellular aggregates by microRNAs",
+  "file": "inbox/proposals/approved/2026-09-14_levin_microrna-bioelectric-regionalization.md",
   "processed": false
  },
  {
@@ -2704,6 +2784,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-21-002",
+  "tradition": "levin",
+  "source_date": "2026-08-13",
+  "title": "A platform for automated training of mammalian cell physiology",
+  "file": "inbox/proposals/approved/2026-09-21_levin_cell-trainer-automated-training-platform.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-14-032",
   "tradition": "rohr",
   "source_date": "2026-08-13",
@@ -2768,6 +2856,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-16-001",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-08-18",
+  "title": "Ralston College \u2014 AI and the Battle for the Soul with Iain McGilchrist \u2014 Lecture 1: Inform",
+  "file": "inbox/proposals/approved/2026-09-16_mcgilchrist_ralston-lecture1-title-discrepancy.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-01-002",
   "tradition": "hawkins",
   "source_date": "2026-08-19",
@@ -2781,6 +2877,14 @@
   "source_date": "2026-08-20",
   "title": "The Thousand Brains Theory 2.0: An Extension for the Long-Range Connections of the Neocort",
   "file": "inbox/proposals/approved/2026-08-25_hawkins_tbt-2-0-arxiv-v2.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-14-002",
+  "tradition": "levin",
+  "source_date": "2026-08-20",
+  "title": "The Artificial Experimentalist: Discovery and Control of Self-Organizing Phenomena with Au",
+  "file": "inbox/proposals/approved/2026-09-14_levin_artificial-experimentalist-autotelic-rl.md",
   "processed": false
  },
  {
@@ -2904,6 +3008,14 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-16-002",
+  "tradition": "mcgilchrist",
+  "source_date": "2026-08-27",
+  "title": "Members' Q&A 27th August 2026 (Channel McGilchrist, live Zoom, members only)",
+  "file": "inbox/proposals/approved/2026-09-16_mcgilchrist_members-qa-27-august-2026.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-08-28-062",
   "tradition": "wright",
   "source_date": "2026-08-27",
@@ -2968,6 +3080,38 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-14-005",
+  "tradition": "friston",
+  "source_date": "2026-09-01",
+  "title": "Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression",
+  "file": "inbox/proposals/approved/2026-09-14_friston_insula-cardiac-dysregulation-depression.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-12-004",
+  "tradition": "levin",
+  "source_date": "2026-09-02",
+  "title": "Membrane voltage and connexin expression work together to enhance tumor growth and metasta",
+  "file": "inbox/proposals/approved/2026-09-12_levin_vmem-connexin-metastasis-paradox.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-12-003",
+  "tradition": "levin",
+  "source_date": "2026-09-02",
+  "title": "Living multicellular systems induce decodable spatial patterns in bacterial collectives",
+  "file": "inbox/proposals/approved/2026-09-12_levin_bacterial-collectives-decodable-patterns.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-12-002",
+  "tradition": "levin",
+  "source_date": "2026-09-03",
+  "title": "Large-Language Models as a Cognitive Virus",
+  "file": "inbox/proposals/approved/2026-09-12_levin_llms-as-cognitive-virus.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-06-003",
   "tradition": "rohr",
   "source_date": "2026-09-03",
@@ -3000,11 +3144,35 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-11-001",
+  "tradition": "carroll",
+  "source_date": "2026-09-07",
+  "title": "367 | Jared Diamond on the Course of History and the Role of Leaders (Sean Carroll's Minds",
+  "file": "inbox/proposals/approved/2026-09-11_carroll_mindscape-367-diamond-leaders.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-16-003",
+  "tradition": "kastrup",
+  "source_date": "2026-09-08",
+  "title": "The Science of the First Person with Richard Lang \u2014 Clues to ultimate reality hiding in pl",
+  "file": "inbox/proposals/approved/2026-09-16_kastrup_headless-way-richard-lang.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-09-001",
   "tradition": "mcgilchrist",
   "source_date": "2026-09-08",
   "title": "BBC Sounds 'Sideways' \u2014 'Know It All', with Iain McGilchrist and Matthew Syed",
   "file": "inbox/proposals/approved/2026-09-09_mcgilchrist_bbc-sideways-know-it-all.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-13-002",
+  "tradition": "rohr",
+  "source_date": "2026-09-08",
+  "title": "The Center and the Edge",
+  "file": "inbox/proposals/approved/2026-09-13_rohr_center-and-edge-holy-ignorance.md",
   "processed": false
  },
  {
@@ -3016,6 +3184,46 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-13-003",
+  "tradition": "rohr",
+  "source_date": "2026-09-12",
+  "title": "Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12",
+  "file": "inbox/proposals/approved/2026-09-13_rohr_faith-with-doubt-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-13-001",
+  "tradition": "rohr",
+  "source_date": "2026-09-13",
+  "title": "Paul Knew Christ Within",
+  "file": "inbox/proposals/approved/2026-09-13_rohr_paul-knew-christ-within-panentheism.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-15-004",
+  "tradition": "carroll",
+  "source_date": "2026-09-14",
+  "title": "AMA | September 2026 (Mindscape Ask Me Anything)",
+  "file": "inbox/proposals/approved/2026-09-15_carroll_ama-september-2026.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-23-001",
+  "tradition": "kastrup",
+  "source_date": "2026-09-15",
+  "title": "The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypot",
+  "file": "inbox/proposals/approved/2026-09-23_kastrup_freefall-rejects-simulation-hypothesis.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-19-002",
+  "tradition": "rohr",
+  "source_date": "2026-09-15",
+  "title": "A Man Who Lived and Loved Paradox",
+  "file": "inbox/proposals/approved/2026-09-19_rohr_paul-paradox-nondual-template.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-09-003",
   "tradition": "kastrup",
   "source_date": "2026-09-15",
@@ -3024,11 +3232,83 @@
   "processed": false
  },
  {
+  "card": "PROP-2026-09-20-001",
+  "tradition": "rohr",
+  "source_date": "2026-09-16",
+  "title": "A Preacher of Grace",
+  "file": "inbox/proposals/approved/2026-09-20_rohr_preacher-of-grace-incongruity-social-leveling.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-19-003",
+  "tradition": "rohr",
+  "source_date": "2026-09-17",
+  "title": "Changing the Paradigm of Power-Over",
+  "file": "inbox/proposals/approved/2026-09-19_rohr_power-with-not-power-over.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-20-002",
+  "tradition": "rohr",
+  "source_date": "2026-09-18",
+  "title": "A Preacher of Love",
+  "file": "inbox/proposals/approved/2026-09-20_rohr_preacher-of-love-temple-dignity.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-19-001",
+  "tradition": "wolfram",
+  "source_date": "2026-09-18",
+  "title": "Personal Update & AMA [September 18, 2026]",
+  "file": "inbox/proposals/approved/2026-09-19_wolfram_return-ama-pure-math-project.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-20-003",
+  "tradition": "rohr",
+  "source_date": "2026-09-19",
+  "title": "Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to ",
+  "file": "inbox/proposals/approved/2026-09-20_rohr_pauls-transforming-vision-weekly-summary.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-21-001",
+  "tradition": "rohr",
+  "source_date": "2026-09-20",
+  "title": "Nonviolent Resistance",
+  "file": "inbox/proposals/approved/2026-09-21_rohr_nonviolent-resistance-contemplative-stance.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-22-004",
+  "tradition": "carroll",
+  "source_date": "2026-09-21",
+  "title": "368 | Elizabeth Alexander on Why Democracy Needs Imagination",
+  "file": "inbox/proposals/approved/2026-09-22_carroll_alexander-imagination-democracy.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-23-002",
+  "tradition": "rohr",
+  "source_date": "2026-09-23",
+  "title": "Corporate Violence Met by Corporate Good",
+  "file": "inbox/proposals/approved/2026-09-23_rohr_corporate-violence-corporate-good.md",
+  "processed": false
+ },
+ {
   "card": "PROP-2026-09-02-002",
   "tradition": "mcgilchrist",
   "source_date": "2026-09-24",
   "title": "UnHerd Live \u2014 Can AI rival the human soul? with Iain McGilchrist (in conversation with Fre",
   "file": "inbox/proposals/approved/2026-09-02_mcgilchrist_unherd-live-can-ai-rival-human-soul.md",
+  "processed": false
+ },
+ {
+  "card": "PROP-2026-09-22-003",
+  "tradition": "hoffman",
+  "source_date": "2026-10-03",
+  "title": "Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ)",
+  "file": "inbox/proposals/approved/2026-09-22_hoffman_hopewell-interface-we-call-reality.md",
   "processed": false
  }
 ]

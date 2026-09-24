@@ -429,5 +429,68 @@ PRS-44:
   Source: Traces of the Other — Hoffman and Gallimore on stage at The Lighthouse Campus; PROP-2026-09-08-004
   Confidence: Speculative
   Evidence: The three artifacts named (event page, press release title, Nautilus headline) are listed on traceinstitute.org/media. The inference that the framing is deliberate is this agent's, not a stated Institute position. Included because C2A2 is itself a research program managing its own public reception, so how another program does it is instrumentally relevant — a reviewer who thinks that is out of scope for a tradition wiki should say so.
-*Total PRS triplets: 44*
+PRS-45:
+  Problem: Conscious agent theory needs a logic of observation that is not classical Boolean logic, or it inherits the observer-independent ontology it set out to replace.
+  Resource: A non-Boolean propositional logic on probability measures ("Lebesgue logic") in which entailment is normalized restriction.
+  Solution: Bayes' rule appears as the meet (logical "and") within that structure, grounding Bayesian inference in a logic of probabilities rather than treating it as an update rule imposed from outside.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: High
+  Evidence: Episode insight card: "Hoffman and collaborators found a non-Boolean propositional logic on probability measures (Lebesgue logic) where entailment is normalized restriction. Bayes' rule appears as the meet (and) in that logical structure." Chapter 5, "A Logic for Probability and Bayesian Inference" (18:26).
+
+PRS-46:
+  Problem: How one observer is related to another when neither is embedded in spacetime.
+  Resource: A trace logic on Markov chains — chain A entails chain B when B is the trace of A onto a subset of A's states; non-Boolean but locally Boolean.
+  Solution: The trace logic maps homomorphically onto the stationary-probability (Lebesgue) logic, so observation-as-restriction and inference-as-Bayes are two faces of one algebraic structure; Markov chains can then be read as conscious observers.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: High
+  Evidence: Insight card: "a trace logic on Markov chains: one Markov chain entails another if it's the trace onto a subset of states. This trace logic is non-Boolean but locally Boolean, and maps to stationary probability logic via a homomorphism." Chapters 6 ("Trace Logic on Markov Chains," 22:38) and 7 ("Markov Chains as Conscious Observers," 28:36).
+
+PRS-47:
+  Problem: Whether interface theory and active inference are rival accounts or one account in two vocabularies.
+  Resource: Friston's reading of Markov partitions/blankets — a separable subset behaves *as if* inferring the rest of the system, via free-energy gradient flow; perception and action are self-evidencing that minimizes surprisal.
+  Solution: The two frameworks are put side by side directly, with the trace operation (restriction onto a subset of states) and the Markov blanket (statistical separation of a subset from the rest) identified as candidate descriptions of the same partition. The episode frames this as convergence, closing on a "joint manifesto."
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Medium
+  Evidence: Insight card on Markov blankets and self-evidencing; chapter 12, "Relating Interface Theory and Active Inference" (56:01); chapter 13, "Free Energy as Gradient Flow of Surprise" (1:02:20); closing timestamp "(2:40:01) - Closing Thoughts: Joint Manifesto." Whether the identification is exact or merely structural is not settled in the episode — flagged as the open question.
+
+PRS-48:
+  Problem: Deriving spacetime, rather than assuming it, from observer dynamics.
+  Resource: Traces over Markov chains as the generative substrate; positive geometries embedded in Markov polytopes; data-compression parsimony arguments drawn from simplifications in scattering amplitudes.
+  Solution: Claimed route from trace structure to time dilation and distance, then to bootstrapping Minkowski and curved spacetime, with CPT symmetry appearing as dual projections; quantum mechanics claimed to arise from Markov harmonics.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Speculative
+  Evidence: Chapters 9 ("From Traces to Time Dilation and Distance," 41:24), 10 ("Bootstrapping Minkowski and Curved Spacetime," 50:59), 11 ("CPT Symmetry and Dual Projections," 54:47), 14 ("Embedding Positive Geometries in Markov Polytopes," 1:08:38), 18 ("Quantum Mechanics from Markov Harmonics," 1:44:49). These are presentation claims in a long-form conversation; the derivations are not verifiable from the episode metadata and should be checked against the Trace Chain Theorem preprint before being relied on.
+
+PRS-49:
+  Problem: The standing charge that conscious realism is unfalsifiable.
+  Resource: A 17-minute segment on falsifiability, principles, and testable proofs, followed by discussion of AI/AGI as a proof of principle and trace logic as a basis for modular AI composition with non-unique bounds.
+  Solution: Hoffman offers construction of working systems — spacetime physics recovered from the formalism, and modular AI composed under trace logic — as the falsification surface, rather than a single decisive experiment.
+  Date Added: 2026-09-24
+  Source: What is Ultimately Real? Consciousness, Free Energy & Spacetime | Donald Hoffman & Karl Friston; PROP-2026-09-15-003
+  Confidence: Medium
+  Evidence: Chapters 15 ("Falsifiability, Principles and Testable Proofs," 1:14:50, 17 min), 16 ("AI, AGI and Proofs of Principle," 1:31:53), 17 ("Trace Logic for Modular AI Composition," 1:36:55); timestamp "(1:41:30) - Non-Unique Bounds in AI Design Using Trace Logic."
+
+PRS-50:
+  Problem: A newly incorporated research institute pursuing a heterodox program must build a constituency that is not already inside academic physics or cognitive science, since those audiences are where the program's resistance is concentrated.
+  Resource: A general-audience public event series, with the second instance staged at a regional community venue and framed as an introduction to both the person and the institution's mission.
+  Solution: Public outreach adopted as an explicit institutional channel alongside preprints and collaborations — consistent with the Institute's published intention to produce "original films and explainers."
+  Date Added: 2026-09-24
+  Source: Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ); PROP-2026-09-22-003
+  Confidence: Speculative
+  Evidence: Events page, 3 October 2026 listing; Media page, "Forthcoming original films and explainers produced by the Institute."
+
+PRS-51:
+  Problem: The program's public framing has cycled through metaphors — desktop icons, then the spacetime headset — each of which invites a different objection.
+  Resource: The event title "The Interface We Call Reality," which names the interface directly rather than through a device metaphor.
+  Solution: A third framing that drops the prosthesis analogy altogether; worth checking against the headset framing recorded in PROP-2026-09-08-003 once the talk is delivered.
+  Date Added: 2026-09-24
+  Source: Donald Hoffman: The Interface We Call Reality (Hopewell Valley Stage, Hopewell, NJ); PROP-2026-09-22-003
+  Confidence: Speculative
+  Evidence: Event title and description as published on the Events page.
+
+*Total PRS triplets: 51*
 *(Note: an earlier run left the running total at 26 while PRS-27 was already present, and PRS-27 sits out of sequence higher in this file alongside a stale "Total PRS triplets: 16" line. Neither existing entry has been renumbered or edited; only the closing total is corrected here.)*

@@ -1270,3 +1270,33 @@ where the agents ask each time and the pipeline answers by saying nothing.
 **Note on yield.** PROP-2026-09-08-002 was also 39 days old at proposal time — outside the 30-day window,
 submitted under the "significant work not yet captured" clause. That clause is being used often enough now
 that its own rate is worth counting.
+
+## FINDING-091 — The network now carries the strongest prediction *against* its own thesis, and it is testable with the same instrument
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-12-002 (levin PRS-126..127), PROP-2026-09-12-004
+**Confidence:** Medium · **Recommended action:** record the rival prediction next to the detector's thesis (FLAG-022) so the instrument is built to register either outcome
+
+FLAG-022 states the detector's thesis: rich cross-tradition exposure improves judgement. The Levin-lab "cognitive virus" paper predicts the opposite under heavy AI mediation — a population can slide into a lock-in state with reduced competence. The C2A2 network is itself heavily AI-mediated. The two predictions disagree about the *same observable* (revision events vs. dependence transitions), so this is not a rhetorical objection; it is the null hypothesis the instrument should be able to detect. The metastasis card sharpens it: a well-coupled system faithfully following its setpoint can be the failure. Coupling is not health. Not escalated: FLAG-022 is the right home, and it should gain a line rather than a sibling flag.
+
+## FINDING-092 — The Hawkins authorship rule has been settled by default a fourth time; the tradition is now de facto institution-scoped
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-15-001/-002, PROP-2026-09-22-001/-002
+**Confidence:** High · **Recommended action:** Tom states the rule in one line (institution-scoped or voice-scoped) — see FINDING-090
+
+All four Hawkins-tradition cards in this batch are Thousand Brains Project team output. None is Hawkins speaking. Fifteen triplets (hawkins PRS-52..66) were ingested on them. Counting FINDING-090's sixteen, 31 of the file's 66 triplets now rest on an unstated rule. At this ratio the rule has been decided in practice: the tradition is tracking the TBP programme. If that is the intent, write it into the Hawkins agent's instructions and the caveat paragraphs can stop. If not, the repair is getting larger every week.
+
+## FINDING-093 — A proposer's hold condition was satisfiable by one lookup, and the lookup found an error in the card
+
+**Date:** 2026-09-24 · **Source signals:** PROP-2026-09-14-004
+**Confidence:** High · **Recommended action:** when a card says "do not ingest until X resolves" and X is a citation, the orchestrator should try to resolve it before ingest, not only hold
+
+The card said "do not ingest until the citation resolves" (no title, no DOI, conflicting venue). One search plus the nature.com landing page resolved it: *An elementary form of agency at planetary-scale*, Sci Rep, published 2026-08-03, doi:10.1038/s41598-026-61878-9. It also showed the card's author list was incomplete: five authors, not four (Lancelot Da Costa was missing). The resolved citation is written into both friston triplets' Source line. Contrast the Wright hold (PROP-2026-08-14-033), which is a real retrieval gap and still open. Not every hold is retrieval debt; some are one lookup.
+
+## FINDING-094 — Pauline material is arriving from one side of the Rohr–Wright axis only
+
+**Date:** 2026-09-24 · **Source signals:** nine Rohr cards 09-13..09-23; CROSS-140
+**Confidence:** Medium · **Recommended action:** a Wright-side search specifically on Paul for September 2026, before a tenth Rohr-side flag is filed
+
+The Rohr agent has flagged Wright on five cards in two weeks, each time as "the Wright agent should check." No Wright proposals exist for these weeks. The comparison the Rohr agent keeps setting up (interior vs. corporate Paul) cannot be made from the index as it stands, because only one reading is in it. This is the same shape as FINDING-075 (Wright retrieval failures capping confidence). Not escalated: it is a gap in collection, not a result.
+
+**Not escalated this run, with reason.** CROSS-136 (Hoffman and Friston in one room) is the most interesting item in the batch, but the source is from February, it is ingested from one side only, and FINDING-064 already warns that "restriction" is a homonym across these two programs. Flagging it before the Friston side exists would repeat the pattern of flagging an unanswered question.

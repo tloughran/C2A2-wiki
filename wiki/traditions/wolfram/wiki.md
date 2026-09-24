@@ -174,3 +174,12 @@ Processed 2 source file(s); minted PRS-55 - PRS-58.
 - `PROP-2026-08-28-040` — Does time come from the entire universe running computations? (interview, https://www.newscientist.com/article/2532871-does-time-come-from-the-entire-universe-running-computations/) → PRS-59, PRS-60, PRS-61, PRS-62
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+3 triplets added from 2 approved proposals (decision email 2026-09-23): PRS-63, PRS-64, PRS-65.
+
+- `PROP-2026-09-12-001` — 2026 Wolfram Summer Research Institute: Opening Keynote (talk, https://podcasters.spotify.com/pod/show/stephenwolfram/episodes/2026-Wolfram-Summer-Research-Institute-Opening-Keynote-e3m4r25) → PRS-63
+- `PROP-2026-09-19-001` — Personal Update & AMA [September 18, 2026] (talk, https://www.youtube.com/watch?v=zF5enEPkoNA) → PRS-64, PRS-65
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

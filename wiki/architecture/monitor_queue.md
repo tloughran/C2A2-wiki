@@ -24505,3 +24505,26 @@ entries; no worker is assigned (PRESUMPTION-1069 / OPEN-249(b) still stands):
   -1654 (coverage bound of the 09-22 14a/14b pass); PRESUMPTION-1071 (fired-on-time presumed healthy),
   -1073 (intake quality floor relaxed without decision), -1075 (crash-proofing limits stale or governing —
   same fact as 1652), -1077 (designer holds enforced only by convention; same fact as 1648).
+
+
+---
+## Added 2026-09-24 by 15c
+
+### MONITOR-616:
+  Source item: ASSUMPTION-1670 | DISPOSITION-990 | Priority: Medium | Cadence: Weekly
+  Claim: a per-session token cap applied by the worker, with no priority rule, cuts the lowest-cost work
+    rather than the lowest-value work.
+  Standing: value-blindness supported; "lowest-cost" contested — 15b's evidence predicts the LAST or
+    in-flight work is cut (often the report step).
+  What would change the disposition: an in-house log of which steps were dropped in capped runs (first
+    vs. last vs. cheapest) -> INCORPORATE the prediction that matches, REVISE the item if neither does.
+
+**In-house lane, 2026-09-23 intake (9 items, no literature owed).** Tests as stated in the register
+entries; no worker is assigned (PRESUMPTION-1069 / OPEN-249(b) still stands):
+  ASSUMPTION-1659 (Kastrup triplets carry wrong source date, 15 vs 22 Sept; designer-authorised fix,
+  OPEN-254), -1661 (pending counts vary by time of day; stamp read time — read under PREMISE-214),
+  -1662 (OpenStory instruments read different artefacts — read under PREMISE-220), -1666 (disk
+  exhaustion per-sandbox vs estate; log `df /sessions` per run — this run read 38% used, 5.8 G free),
+  -1671 (concurrent QC runs read different states), -1676 (PROP-2026-09-02-002 retrieval check due today,
+  09-24; check on 09-25 — same fact as ASSUMPTION-1632); PRESUMPTION-1080 (as 1666), -1084 (diff the
+  project-memory contract copies), -1086 (reader-subagent summary fidelity; sample 5 claims/night).

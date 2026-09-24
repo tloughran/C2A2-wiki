@@ -204,3 +204,20 @@ Ingested 22 triplets, PRS-45 through PRS-66, from 16 approved proposals carrying
 - `PROP-2026-09-08-031` — Standing in Solidarity (blog, https://cac.org/daily-meditations/standing-in-solidarity/) → PRS-77, PRS-78, PRS-79
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+23 triplets added from 10 approved proposals (decision email 2026-09-23): PRS-80, PRS-81, PRS-82, PRS-83, PRS-84, PRS-85, PRS-86, PRS-87, PRS-88, PRS-89, PRS-90, PRS-91, PRS-92, PRS-93, PRS-94, PRS-95, PRS-96, PRS-97, PRS-98, PRS-99, PRS-100, PRS-101, PRS-102.
+
+- `PROP-2026-09-13-002` — The Center and the Edge (blog, https://cac.org/daily-meditations/the-center-and-the-edge/) → PRS-80, PRS-81
+- `PROP-2026-09-13-003` — Faith with Doubt: Weekly Summary (CAC Daily Meditations, Week 36, 2026-09-06 to 2026-09-12) (blog, https://cac.org/daily-meditations/faith-with-doubt-weekly-summary/) → PRS-82, PRS-83
+- `PROP-2026-09-13-001` — Paul Knew Christ Within (blog, https://cac.org/daily-meditations/paul-knew-christ-within/) → PRS-84, PRS-85, PRS-86
+- `PROP-2026-09-19-002` — A Man Who Lived and Loved Paradox (blog, https://cac.org/daily-meditations/a-man-who-lived-and-loved-paradox/) → PRS-87, PRS-88, PRS-89
+- `PROP-2026-09-19-003` — Changing the Paradigm of Power-Over (blog, https://cac.org/daily-meditations/changing-the-paradigm-of-power-over/) → PRS-90, PRS-91
+- `PROP-2026-09-20-003` — Paul's Transforming Vision: Weekly Summary (CAC Daily Meditations, Week 37, 2026-09-13 to 2026-09-19) (blog, https://cac.org/daily-meditations/pauls-transforming-vision-weekly-summary/) → PRS-92, PRS-93
+- `PROP-2026-09-20-001` — A Preacher of Grace (blog, https://cac.org/daily-meditations/a-preacher-of-grace/) → PRS-94, PRS-95
+- `PROP-2026-09-20-002` — A Preacher of Love (blog, https://cac.org/daily-meditations/a-preacher-of-love/) → PRS-96, PRS-97
+- `PROP-2026-09-21-001` — Nonviolent Resistance (blog, https://cac.org/daily-meditations/nonviolent-resistance/) → PRS-98, PRS-99, PRS-100
+- `PROP-2026-09-23-002` — Corporate Violence Met by Corporate Good (blog, https://cac.org/daily-meditations/corporate-violence-met-by-corporate-good/) → PRS-101, PRS-102
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

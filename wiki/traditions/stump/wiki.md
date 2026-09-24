@@ -151,3 +151,11 @@ Processed 1 source file(s); minted PRS-39, PRS-40.
 | Source file | Proposal | PRS range | Note |
 |---|---|---|---|
 | `2026-08-25_stump_good-of-forgiveness-oup-chapter.md` | PROP-2026-08-25-050 | PRS-39, PRS-40 | The standard account of forgiveness challenged on what it actually restores; PRS-40 (forgiveness as therapy for the forgiver) at Speculative, because it is the chapter's target rather than its thesis. |
+
+### Ingest 2026-09-24
+
+4 triplets added from 1 approved proposals (decision email 2026-09-23): PRS-42, PRS-43, PRS-44, PRS-45.
+
+- `PROP-2026-09-17-001` — Natural Law, Metaphysics, and the Creator (paper, https://revistaatlantika.com.br/ra/article/view/42) → PRS-42, PRS-43, PRS-44, PRS-45
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

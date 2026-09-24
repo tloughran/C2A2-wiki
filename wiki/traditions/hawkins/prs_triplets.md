@@ -509,7 +509,142 @@ PRS-51:
   Confidence: Speculative
   Evidence: Chapter markers 1:15:12, 1:16:30, 1:17:19. These are listed under "Nice to Have," which is the team's own signal that they are not being worked on. The link drawn here between displacement-communication and abstraction is this agent's reading, not a claim in the source.
 
-*Total PRS triplets: 51*
+PRS-52:
+  Problem: A sensorimotor system with no notion of an attended region has no principled way to decide where one compositional object ends and its parts begin — a logo on a mug is simultaneously "a logo," "a mug," and "a mug with a logo."
+  Resource: Attention modeled as a constraint-*area* — a spatial region, structurally different from a target pose and different again from a salience map — that multiple learning modules can each contribute to and refine.
+  Solution: Attention up-scales or down-scales candidate target poses according to whether they fall inside the attended region, giving segmentation a model-based influence without requiring a pre-committed object boundary.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: High
+  Evidence: Chapter markers state "Attention Is a Constraint-Area, a Different Structure than Target Poses" (1:08), "Salience Is Different Than Attention" (2:30), "Multiple Learning Modules Can Each Define Their Own Locations to Refine the Attentional Area" (25:57), and "Attention Upscales and Downscales Target Poses Based on If the Target Pose Falls within the Region" (35:28).
+
+PRS-53:
+  Problem: Model-free segmentation (flood-fill, salience) is fast but object-blind; model-based recognition is object-aware but expensive and presupposes what is to be recognized. Neither alone segments a novel compositional scene.
+  Resource: A hybrid pipeline in which model-free algorithms propose regions of interest from salience maps, while model-based policies supply the initial seed location without requiring sensor movement; Gestalt grouping principles are canvassed as candidate grouping priors.
+  Solution: Early empirical results on the TBP compositional dataset comparing several segmentation algorithms live in-meeting, establishing a concrete baseline for the hybrid approach.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Medium
+  Evidence: Post states Knudstrup "presented some early results on using model-free segmentation algorithms on our compositional dataset"; chapters "Live Demo: Comparing Different Algorithms" (6:33), "Gestalt Psychology Principles and Other Ideas on How to Group Things Together as One" (19:04), "Initial Seed Location Can Be Defined Without Moving Sensors in Model-Based Policies" (22:35). Results were described as early; no published numbers.
+
+PRS-54:
+  Problem: What should make a location *interesting* enough to attend to, in a system with no external reward signal?
+  Resource: Prediction error repurposed as a curiosity signal driving attentional allocation.
+  Solution: Proposed — unexplained sensory input pulls attention, which is also how a narrowing attentional region would be triggered when a model fails to account for what is sensed.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Speculative
+  Evidence: Chapters "What Makes Something Interesting" (44:01) and "Prediction Error as a Curiosity Signal" (49:49). Post notes "discussion around the difficulty of how model-based signals might influence attention, particularly when unexpected sensory input occurs" — i.e. the mechanism was flagged as unresolved, not settled.
+
+PRS-55:
+  Problem: If attentional regions can themselves bias which movements happen, the target pose may be a redundant intermediate representation.
+  Resource: The "radical idea" that target poses could be dropped entirely, tested against the neuroanatomical constraint of corticospinal monosynaptic connections.
+  Solution: No resolution reached; the neuroanatomical question ("what are the corticospinal monosynaptic neurons doing if there is no target pose?") is posed as the discriminating test.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attention and Model-Free Segmentation; PROP-2026-09-15-001
+  Confidence: Speculative
+  Evidence: Chapters "A Radical Idea: Are Target Poses Still Needed?" (51:59) and "Question and Discussion - What are the Corticospinal Monosynaptic Neurons Doing if There Is No Target Pose?" (1:04:23). This is an open brainstorm; TBP explicitly does not human-correct transcripts for brainstorming videos because the ideas "could be incorrect or rapidly outdated."
+
+PRS-56:
+  Problem: A sensorimotor learner that samples an object without guidance stores far more points than it needs, and needs many movements before it can recognize anything.
+  Resource: A model-free visual-saliency exploration policy (`SalienceSM`, built on VOCUS2) that steers the sensor toward salient regions.
+  Solution: Models learned under the saliency policy are measurably sparser at no cost in accuracy, and inference requires fewer movements to reach recognition.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: High
+  Evidence: Announcement states the policy "allows for learning models with greater sparsity without sacrificing accuracy" and "makes inference more efficient, allowing for recognition with fewer movements." Chapters: "Goal: Sparser Models" (5:07), "Results in Learning Models with Extra Sparsity" (20:12), "Inference Ability" (23:56). Documented at docs.thousandbrains.org/docs/salience-sm. Magnitudes were not extracted — the video was not transcribed.
+
+PRS-57:
+  Problem: Model-based policies cannot guide a sensor until a learning module has enough evidence to form a hypothesis — a bootstrap gap at the start of every encounter with a new object.
+  Resource: A model-free saliency policy operating at the sensory-module level, upstream of any learned model.
+  Solution: The saliency policy runs in tandem with model-based policies, with the stated goal of having sensory modules "quickly gather relevant information to bring the learning modules in as soon as possible" — model-free perception buys time for model-based perception.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: High
+  Evidence: Announcement states the model-free saliency policy "can work in tandem with model-based policies, with the goal of having the sensory modules quickly gather relevant information to bring the learning modules in as soon as possible."
+
+PRS-58:
+  Problem: Whether saliency-driven movement and burst sampling are redundant or complementary mechanisms for efficient evidence-gathering.
+  Resource: Burst sampling, contributed to Monty by community/team member Ramy Mounir.
+  Solution: Reported as synergistic with the saliency policy rather than overlapping — the two compose.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Visual Saliency for Efficient Learning and Exploration; PROP-2026-09-15-002
+  Confidence: Medium
+  Evidence: Announcement states the new policy "has some nice synergies with the burst sampling that was recently added to Monty by @rmounir." The nature of the synergy is asserted, not quantified, in the post.
+
+PRS-59:
+  Problem: Monty attends to discrete sensed points, but biological attention selects extended regions of space — and the theory has no account of what fixes an attentional area's shape or extent.
+  Resource: The proposal that attentional areas are defined by a *set of cortical columns*, considered against the rival proposal that they are initially amorphous and then narrowed to a location.
+  Solution: Two competing, distinguishable structural hypotheses about the substrate of an attended region, either of which would make "attention area" a derived rather than stipulated quantity.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Medium
+  Evidence: Video chapters at 23:42 ("Are Attentional Areas Defined by a Set of Cortical Columns?") and 34:37 ("Are Attentional Areas Amorphous Followed by Narrowing Down Location?").
+
+PRS-60:
+  Problem: Model-free policies must be specified before a model exists, so they cannot be justified by reference to what the model predicts — a bootstrapping problem at the base of the sensorimotor loop.
+  Resource: Prediction error, taken at both short and long timescales, proposed as the single general framing from which model-free policies could be derived.
+  Solution: A candidate unification in which the same quantity that drives model-based hypothesis testing also grounds the pre-model policies, removing the need for a separate hand-specified policy vocabulary.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Speculative
+  Evidence: Session description: "There are high-level questions about how model-free policies are defined in the first place, and whether prediction error (both in the long and short term) could be used as a general framing."
+
+PRS-61:
+  Problem: Monty leaves objects before recognizing them, which degrades object recognition.
+  Resource: A "stay on object until recognized" policy, combined with gating of sensory input to attended regions.
+  Solution: Attention reframed as an operational recognition aid rather than a phenomenological add-on — a policy whose success is measured directly in recognition accuracy.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: High
+  Evidence: Chapter at 40:03, "'Stay on Object until Recognized' Policies"; described in the session summary as a way "to help with object recognition."
+
+PRS-62:
+  Problem: Voting across columns requires that the voting columns share a location reference, but columns anchor their grid cells independently.
+  Resource: The session's treatment of voting and grid-cell anchoring together (1:20:05), and the question of whether modeling with multiple columns rather than one makes attention *easier* rather than harder (52:29).
+  Solution: An argument that the multi-column case may be the tractable one — that shared anchoring is what supplies the reference an attentional region needs, rather than an extra cost to be paid.
+  Date Added: 2026-09-24
+  Source: 2026/06 - Attentional Regions, Policies, and Prediction Error; PROP-2026-09-22-001
+  Confidence: Medium
+  Evidence: Chapter structure at 52:29 and 1:20:05.
+
+PRS-63:
+  Problem: A research program's claim to progress is unfalsifiable if its goals are restated after the fact.
+  Resource: A published quarterly review that scores the prior quarter against pre-stated open theory questions and records an unmet item explicitly — top-down connections / parent-to-child orientation "Not Started, Remains on the List for Next Quarter."
+  Solution: The program supplies its own progress ledger, with failures carried forward under their original names rather than absorbed into the next quarter's framing.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Video chapter at 3:23; Q3 priorities list re-enters the same item at 11:43 ("Adding Top-Down Connections into Monty").
+
+PRS-64:
+  Problem: Compositional objects — objects made of other objects — were a standing gap in Monty's modeling capability.
+  Resource: Compositional modeling fixes, a new compositional-object and sticker dataset integrated into the benchmark suite, and hypothesis-channel combination.
+  Solution: Compositional modeling reported as "working well," with Q3 committing to V1 of compositionality-benefits figures — i.e., a quantitative claim about *what compositionality buys*, not only that it runs.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 2:49, 3:00, 3:09, 3:30; Q3 priority at 11:23.
+
+PRS-65:
+  Problem: Attention had been an open theory question without a scheduled home in the roadmap.
+  Resource: Q3 open-theory priorities naming attention first, with three research items attached: model-free segmentation for focus-until-recognized, model-based policies and attention for compositionality, and symmetry representations with child-parent relative orientations.
+  Solution: Attention is promoted from brainstorm topic to scheduled research with defined deliverables — converting the 2026/06 sessions' open questions into dated commitments.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 9:55, 10:15, 10:57, 11:15, 10:50.
+
+PRS-66:
+  Problem: An open research program that is hard to enter cannot recruit the outside contributors its progress depends on.
+  Resource: Documentation brought current, future-work sections rewritten with beginner-friendly tasks explicitly labeled, `tbp.teleop` and `lazyconfigs` published, a new Developer Advocate hired, and 180 PRs merged across 17 repositories.
+  Solution: Onramp construction treated as a first-class quarterly deliverable alongside theory — the program's reproduction mechanism made an explicit object of planning.
+  Date Added: 2026-09-24
+  Source: 2026/07 - Q3 Roadmap and Q2 Review; PROP-2026-09-22-002
+  Confidence: High
+  Evidence: Chapters at 5:47, 6:30, 8:20, 8:34, 9:01, 9:09, 9:32.
+
+*Total PRS triplets: 66*
 ## Agentic Calls
 *Added by Sewing Agent on 2026-06-07*
 

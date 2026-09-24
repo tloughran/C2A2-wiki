@@ -206,3 +206,12 @@ Processed 7 source file(s); minted PRS-45 - PRS-63.
 - `PROP-2026-09-07-002` — The Complex Brain Hypothesis: Resolving the Entropy-Content Conundrum in Minimal Phenomenal Experience (paper, https://arxiv.org/abs/2605.16146) → PRS-70, PRS-71
 
 Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.
+
+### Ingest 2026-09-24
+
+4 triplets added from 2 approved proposals (decision email 2026-09-23): PRS-72, PRS-73, PRS-74, PRS-75.
+
+- `PROP-2026-09-14-005` — Insula Structure Is Linked to Autonomic Cardiac Dysregulation in Depression (paper, https://pubmed.ncbi.nlm.nih.gov/41921889/) → PRS-72, PRS-73
+- `PROP-2026-09-14-004` — Climate homeorhesis / planetary agency via active inference in a biosphere-climate system (exact title UNRESOLVED — see Provenance Note) (paper, UNRESOLVED) → PRS-74, PRS-75
+
+Open/solved question lists were NOT re-adjudicated in this run; see `inbox/PROCESSED_LOG.md` for the standing note on that.

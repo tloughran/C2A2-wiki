@@ -735,7 +735,25 @@ PRS-78:
   Confidence: Speculative
   Evidence: channelmcgilchrist.com post published 2026-09-08T13:07:46Z, listing "Running Time: 01:09:16" and embedding https://www.youtube.com/embed/U87oh4ahzi4. **The video has not been watched and no transcript was retrieved.** The page carries a title and a runtime and nothing else. Confidence is High only for *the interview existing, being 69 minutes, and being freely reachable*; the Problem/Solution above are inferred from the title and must be checked against the recording before ingest.
 
-*Total PRS triplets: 78*
+PRS-79:
+  Problem: PRS-61 through PRS-63 record a lecture title taken from the host institution's promotional page; the author's own publisher gives a different title for a recording of identical length, so the tradition does not currently know what this lecture is called or which title states its thesis.
+  Resource: `channelmcgilchrist.com` posting of 2026-08-18 — title "Information is Not Understanding", running time 00:53:56, YouTube ID QNAC_QVY9BU, author-of-record Jay Livingstone (site editor, not McGilchrist).
+  Solution: Append a dated CORRECTION block recording both titles, the shared runtime, and the resolvable video ID; carry the self-published title as canonical and the `ralston.ac` title as the host's variant, flagged as unresolved until the audio is heard. Add the video ID to PRS-61/62/63's Evidence lines so the scheduled verification has something to point at.
+  Date Added: 2026-09-24
+  Source: Ralston College — AI and the Battle for the Soul with Iain McGilchrist — Lecture 1: Information is Not Understanding; PROP-2026-09-16-001
+  Confidence: High (for the metadata; the identity of the two recordings is inferred from the matching runtime, which is strong but not proof)
+  Evidence: Page `meta-article:published_time: 2026-08-18T07:07:36+00:00`; "Running Time: 00:53:56"; embed `https://www.youtube.com/embed/QNAC_QVY9BU`. The 00:53:56 figure is the same one recorded in this wiki's 2026-09-02 ingestion log for PROP-2026-08-26-001.
+
+PRS-80:
+  Problem: PROP-2026-08-26-002 left Lecture 2's URL and title unverified because the video page returned HTTP 429 and was not retried; the citation rests on search results.
+  Resource: The Lecture 1 page demonstrates that `channelmcgilchrist.com` carries the Ralston recordings itself, with runtime and embed ID on the page.
+  Solution: Re-fetch Lecture 2 from `channelmcgilchrist.com` rather than from search results or `ralston.ac`, and apply the same correction treatment if its title also diverges.
+  Date Added: 2026-09-24
+  Source: Ralston College — AI and the Battle for the Soul with Iain McGilchrist — Lecture 1: Information is Not Understanding; PROP-2026-09-16-001
+  Confidence: High (as a procedural instruction; it asserts nothing about content)
+  Evidence: This page resolved cleanly on 2026-09-16 with full metadata; the "Recent Posts" sidebar lists the Ralston series as current site content.
+
+*Total PRS triplets: 80*
 ---
 
 ## CORRECTION — 2026-09-02: Ralston symposium delivery date

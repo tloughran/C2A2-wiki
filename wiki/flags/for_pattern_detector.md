@@ -708,3 +708,29 @@ has not already recorded, plus the two that are about the pipeline rather than a
   it stops being re-litigated every run. Approval-as-is has now settled it by default, three times.
 
 [EVALUATED: 2026-09-10 - FINDING-086..090; see pattern_detector_findings.md]
+
+## Forwarded 2026-09-24 — 35-card ingest batch (decision email 2026-09-23)
+
+- [BRIDGE, ONE-SIDED] **Hoffman and Friston negotiate formal identity in person** (PROP-2026-09-15-003). Ingested Hoffman-side only; the proposer asked for a Friston-side ingestion. See CROSS-136.
+
+- [CONVERGENCE] **TBP attention work and active inference converge on prediction error as the policy quantity** (four Hawkins-tradition cards). See CROSS-137.
+
+- [SCALING] **Non-neural active inference at planetary, collective and cellular scale in one batch** (PROP-2026-09-14-004, -09-14-001, -09-21-002). See CROSS-138.
+
+- [ADVERSARIAL CASE FOR C2A2] **LLMs as cognitive virus** (PROP-2026-09-12-002): heavy AI mediation may drive a population toward a lock-in state with reduced competence. That is the opposite prediction from C2A2's thesis that rich exposure improves judgement, using the same measurement apparatus.
+
+- [NORMATIVITY] **Vmem/connexin metastasis paradox** (PROP-2026-09-12-004): a well-coupled collective following its stored setpoint produces metastasis. Bioelectric description alone cannot mark this as failure.
+
+- [ONTOLOGY] **Stump on the love-bonded dyad as causal whole** (PROP-2026-09-17-001). See CROSS-139.
+
+- [NEW CONTACT] **Rohr × MacIntyre — epistemological crisis** (PROP-2026-09-20-003): faultless observance of a tradition's norms producing a hateful man is a tradition-internal failure detected by the tradition's own standards. Not yet indexed as CROSS; MacIntyre file holds 6 triplets.
+
+- [ONE-SIDED AXIS] **Rohr × Wright on Paul, fourth consecutive flag with no Wright-side material.** See CROSS-140.
+
+- [PIPELINE, AUTHORSHIP] **All four Hawkins-tradition cards in this batch are TBP team work** (Leadholm, Knudstrup, Clay), 15 triplets. Fourth time approved as-is.
+
+- [PIPELINE, RESOLVED] **A "do not ingest until citation resolves" card was resolved in-run** (PROP-2026-09-14-004): nature.com landing page confirms title, venue, DOI, 5 authors (card listed 4; Da Costa was missing), published 2026-08-03.
+
+- [PIPELINE, HELD] **Wolfram PROP-2026-09-19-001 CANDIDATE-03 held**: no Evidence field; the proposer's own note says it "may deserve rejection" and rests on a health-related personal update it said should not be mined.
+
+[EVALUATED: 2026-09-24 - FINDING-091..094; see pattern_detector_findings.md]

@@ -751,4 +751,76 @@ PRS-82:
   Confidence: Speculative
   Evidence: The Theodicy section. Speculative because the extension of the demand from theism to idealism is an inference this agent is drawing, not a sentence in the source.
 
-*Total PRS triplets: 82*
+PRS-83:
+  Problem: Analytic idealism's decomposition problem — if reality is one universal consciousness, why is experience partitioned into separate minds? — is argued in this tradition through the DID/dissociation model (PRS-52, PRS-55, PRS-62) and that model's sufficiency was left open at PRS-63 (Speculative, one-way entailment untested).
+  Resource: Harding's "Science of the First Person" via Richard Lang, 8 September 2026 — a first-person experimental method claiming direct verification, presented inside Kastrup's own series; chapter "If we are one, why do we have separate minds?" at 38:26, and "Integrated Information Theory and the experience of self" at 46:36.
+  Solution: The question is put to a tradition that answers it by *demonstration* rather than *argument* — the first such confrontation recorded in this wiki. What the session settles is which of two things Kastrup takes the Headless Way to be: independent first-person corroboration of the dissociation model, or a practice whose deliverances are phenomenal and therefore cannot bear on the metaphysical question at all.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Medium — High for the locatability claim (topic, venue, date, duration, speaker all confirmed from the page); the framing of what is at stake is this agent's, not Kastrup's.
+  Evidence: Page `meta-article:published_time: 2026-09-10T12:25:01.000Z`, recording date 8 September 2026, duration 1h 58m; chapter list as published. Free 4:03 preview ("Galileo: Look for yourself") is public; the remaining ~1h54m is behind €25/month membership and was **not** heard.
+
+PRS-84:
+  Problem: Can analytic idealism be investigated empirically from the first-person side, or is it reachable only by argument? The tradition has no recorded position on whether introspective method counts as evidence.
+  Resource: Harding's claim, quoted on the page, that the approach "proceeds in an unusually down-to-earth fashion" and that one is "more likely to see who you really are in a few minutes of experimentation than years of reading, meditation or traditional spiritual practice"; six named in-session experiments; Mach's *Innenperspektive* as the historical anchor.
+  Solution: UNKNOWN — the session will show whether Kastrup treats first-person experiment as evidence bearing on metaphysics or as phenomenology that leaves the metaphysical question untouched. Both are live given his record: he is unusual among idealists for technical rigour, which cuts toward caution, and he hosts the series, which cuts toward sympathy.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Speculative
+  Evidence: NONE EXTRACTED as to Kastrup's position. The quoted Harding line is from the page's own description, not from the session. **Do not promote past Speculative without the audio.**
+
+PRS-85:
+  Problem: What is the relationship between Kastrup's analytic idealism and Hoffman's conscious realism — convergence, or two rival accounts using overlapping vocabulary? Agent 11's brief names this as needing careful tracking; the wiki has no entry resolving it.
+  Resource: Chapter 1:56:46, "Bernardo's dashboard of perception" — Hoffman's own central figure appearing as Kastrup's closing frame; alongside 25:48 ("The body as object and the body as subject") and 51:12 ("The void as mirror and projector").
+  Solution: UNKNOWN. The chapter title attests the metaphor's use and nothing more. The question the audio settles is whether Kastrup uses "dashboard" in Hoffman's technical sense (perception as a fitness-tuned interface that systematically hides reality) or as a loose illustration of appearance-versus-ground — and those have different consequences for whether the two programmes are allies or rivals.
+  Date Added: 2026-09-24
+  Source: The Science of the First Person with Richard Lang — Clues to ultimate reality hiding in plain sight: Exploring the Headless Way; PROP-2026-09-16-003
+  Confidence: Speculative
+  Evidence: Chapter title only. **A chapter title is not a claim.** This candidate exists to schedule a listen, not to record a position.
+
+PRS-86:
+  Problem: If Mind-at-Large is not metaconscious and not agentic, how does analytic idealism explain the apparent fine-tuning of physical constants, which is often read as evidence of a plan?
+  Resource: Named "exits from the fine-tuning problem": fine-tuning re-read as an artefact of the **first-person perspective**; cosmological natural selection via **black holes**; the "birth of the first universe"; and "fine-tuning the dashboard". That last item links the argument to Kastrup's dashboard metaphor for perception.
+  Solution: Fine-tuning is dissolved rather than explained by design. It comes out as a feature of the observer's standpoint and/or of a selection process, so the non-metaconscious ground is kept.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the four routes are named in the chapters; how he weights them, and which he endorses, is not public)
+  Evidence: Chapters 0:12:00–0:29:09; host summary: "How black holes could explain our fine-tuned universe."
+
+PRS-87:
+  Problem: Does the statistical simulation argument (future simulations are possible, so we are probably in one) threaten analytic idealism, or is it compatible with it?
+  Resource: An argument that a designed or simulated world would **invalidate empiricism**. If nature were a deliberately built artefact, regularities would report the designer's choices, not the nature of reality, and science would lose its object. This is set against Chalmers's position that a simulated world "need not be deceptive" (*The Matrix as Metaphysics*), and against Kingsley on deception.
+  Solution: Kastrup rejects the simulation hypothesis. He holds that "a plan implies we're in a simulation", and that science only keeps its meaning if nature is spontaneous. The host puts it this way: "whilst we might be deceived about the nature of reality, it needn't mean that nature is deceptive."
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: High that he rejects it and ties the rejection to empiricism (stated on the page); Medium on the detailed structure of the argument
+  Evidence: Chapters 0:51:36–1:25:07 ("Why a simulation would invalidate empiricism"); description subtitle "why Bernardo rejects the simulation hypothesis."
+
+PRS-88:
+  Problem: Near-death life reviews, and "seeing without eyes" reports, are offered as evidence of a deliberate plan and as a challenge to Kastrup's own naturalism. How does he take them in?
+  Resource: **Nested dissociation**, meaning dissociation within dissociation, used as the frame for NDE life reviews. This is paired with a treatment of why veridical "seeing without eyes" would challenge naturalism, which continues the 18 Feb 2026 session "The biggest challenge to Bernardo's Naturalism".
+  Solution: NDE phenomenology is read as a shift in dissociative structure, not as evidence of an external planner.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Speculative (the chapter titles give the frame; the argument itself is not public)
+  Evidence: Chapters 1:30:47 and 1:35:01.
+
+PRS-89:
+  Problem: If individual minds are compared to dream characters within one mind, does analytic idealism collapse into solipsism? And what fixes the boundaries between minds?
+  Resource: What dreams "prove"; why dreams contain a **subject–object split**; archetypal dreams and **semi-autonomous daimons**, which ties in to his new book *The Daimon and the Soul of the West*; a parsimony argument.
+  Solution: Solipsism is rejected as **not parsimonious**. Dream characters that behave semi-autonomously show that one mind can host many centres of experience. That supports the dissociation model and does not undercut it.
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the conclusion "Solipsism is not parsimonious" is a chapter title; the route to it is inferred from the chapter sequence)
+  Evidence: Chapters 1:41:26–2:04:14.
+
+PRS-90:
+  Problem: Where do analytic idealism's conceptual maps stop, and what is the status of whatever lies past them?
+  Resource: A segment on "metacognition outside time", "the limits of language and logic", "letting go of our last safety line", and "silent teaching and the power of presence". It is quoted on the page: "what is really going on is beyond thought, beyond logic, beyond language, beyond space, beyond time."
+  Solution: Kastrup presents the analytic framework as useful in practice but not final, and the tradition openly allows an apophatic limit (knowledge by negation). The host is careful to say the conceptual maps "still have purpose in their immediate applicability to life."
+  Date Added: 2026-09-24
+  Source: The liberating freefall beyond space-time... and why Bernardo rejects the simulation hypothesis; PROP-2026-09-23-001
+  Confidence: Medium (the quotation is on the page but is not clearly attributed; it could be Kastrup or a participant. Treat it as session content, not as a signed Kastrup claim)
+  Evidence: Chapters 0:32:38–0:48:25; free-preview clip "The liberating freefall beyond space-time" (9m 51s).
+
+*Total PRS triplets: 90*
