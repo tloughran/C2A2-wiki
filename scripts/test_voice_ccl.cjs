@@ -1053,7 +1053,7 @@ check('parsePlan: fenced JSON is read; read/spin are refused; the list is capped
 check('prompt: the cut grammar is taught (a new find REPLACES; also ADDS)', function () {
   const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: CCL.verbLines(VERBS), results: [] });
   assert.ok(/new `find` REPLACES/.test(pr.system));
-  assert.ok(/also friston|`also Y` \(add\)/.test(pr.system));
+  assert.ok(/`also Y` \(add: the UNION/.test(pr.system), 'also must be taught as a union -- the 09-24 eval answer called it an overlap');
   assert.ok(/\nalso \(/.test(pr.user), 'verb list must carry also/except/within from verbs.json');
 });
 
@@ -1104,6 +1104,73 @@ acheck('loop: a plain question costs one call and runs nothing', async function 
   assert.strictEqual(res.calls, 1);
   assert.strictEqual(res.trace.length, 0);
   assert.strictEqual(res.answer, 'A.');
+});
+
+// ---- grounding (2026-09-24) ---------------------------------------------------
+// WHY: Tom's standing requirement -- answers "richly informed by our model, not
+// general knowledge". The 09-24 live eval reached neither the Friston-Levin
+// bridge essay nor the signals; these rows fail if retrieval stops handing the
+// model its own material, or starts inventing it.
+const GIDX = {
+  traditions: {
+    levin: { name: 'Levin', full: 'Michael Levin', aliases: ['levin', 'michael levin'], prs: [
+      { id: 'PRS-01', label: 'Morphogenetic control', p: 'body-plan repair', r: 'bioelectric circuits', s: 'regenerative medicine', c: 'High' },
+      { id: 'PRS-03', label: 'Attractor formalism', p: 'no language for morphological attractors', r: 'free energy frameworks', s: 'goal-seeking as free energy minimization', c: 'High' },
+      { id: 'PRS-09', label: 'Cancer', p: 'cancer as defection', r: 'bioelectric coherence', s: 'field therapeutics', c: 'Medium' } ] },
+    friston: { name: 'Friston', full: 'Karl Friston', aliases: ['friston', 'karl friston'], prs: [
+      { id: 'PRS-01', label: 'FEP', p: 'order without vitalism', r: 'variational inference', s: 'free energy principle', c: 'High' } ] },
+    kastrup: { name: 'Kastrup', full: 'Bernardo Kastrup', aliases: ['kastrup', 'bernardo kastrup'], prs: [] }
+  },
+  bridges: { 'friston|levin': 'synthesis/friston_levin_bridge.md' },
+  signals: [
+    { a: 'friston', b: 'levin', d: '2026-05-01', st: 'Moderate', w: 2, t: 'SIG-MOD', n: '' },
+    { a: 'friston', b: 'levin', d: '2026-06-01', st: 'Strong', w: 3, t: 'SIG-STRONG', n: '' },
+    { a: 'kastrup', b: 'levin', d: '2026-07-01', st: 'Speculative', w: 1, t: 'SIG-KL', n: '' } ]
+};
+const BRIDGE = '# Friston x Levin\n- `traditions/levin/prs_triplets.md` PRS-09 (cited by the essay)\nBRIDGE-BODY';
+check('grounding: a named pair pulls its bridge essay, its own signals (strongest first) and exact counts', function () {
+  const g = CCL.buildGrounding('How does Levin connect to Friston?', GIDX, { 'synthesis/friston_levin_bridge.md': BRIDGE });
+  assert.deepStrictEqual(g.entities, ['levin', 'friston']);
+  assert.ok(/BRIDGE-BODY/.test(g.text), 'the bridge essay text must reach the model');
+  assert.ok(g.text.indexOf('SIG-STRONG') < g.text.indexOf('SIG-MOD'), 'strongest signal first');
+  assert.ok(!/SIG-KL/.test(g.text), 'a Kastrup-Levin signal is not evidence about Friston-Levin');
+  assert.ok(/signals between Friston and Levin: 2 \(/.test(g.text), 'computed count is exact');
+  assert.ok(g.sources.indexOf('synthesis/friston_levin_bridge.md') >= 0);
+});
+check('grounding: a PRS triplet the bridge essay cites outranks term matches', function () {
+  const g = CCL.buildGrounding('How does Levin connect to Friston on free energy?', GIDX, { 'synthesis/friston_levin_bridge.md': BRIDGE });
+  const lev = g.text.slice(g.text.indexOf('PRS TRIPLETS -- Levin'));
+  assert.ok(lev.indexOf('PRS-09') < lev.indexOf('PRS-03'), 'essay-cited PRS-09 first');
+  assert.ok(lev.indexOf('PRS-03') < lev.indexOf('PRS-01'), 'then the free-energy term match');
+});
+check('grounding: nothing named -> nothing retrieved, and the prompt says so (no surmise)', function () {
+  const g = CCL.buildGrounding('what is a bridge essay?', GIDX, {});
+  assert.deepStrictEqual(g.entities, []);
+  assert.ok(/retrieved nothing/.test(g.text));
+  assert.ok(/did not load/.test(CCL.buildGrounding('levin', null, {}).text), 'a missing index is said, not hidden');
+});
+check('grounding: a missing bridge is reported as missing, not silently skipped; a pair with no essay says none exists', function () {
+  assert.ok(/could not be fetched/.test(CCL.buildGrounding('levin and friston', GIDX, {}).text));
+  assert.ok(/Kastrup and Levin: none exists|Levin and Kastrup: none exists/.test(CCL.buildGrounding('levin and kastrup', GIDX, {}).text));
+});
+check('grounding: word boundaries -- "levinson" is not Levin; possessives are', function () {
+  assert.deepStrictEqual(CCL.groundEntities('the levinson study', GIDX).entities, []);
+  assert.deepStrictEqual(CCL.groundEntities("Friston's view of Levin's work", GIDX).entities, ['friston', 'levin']);
+});
+check('prompt: grounding is carried and the no-surmise rule is taught', function () {
+  const pr = CCL.buildPlanPrompt({ request: 'r', state: 's', verbs: '', grounding: 'GROUNDING-MARK', results: [] });
+  assert.ok(/GROUNDING-MARK/.test(pr.user));
+  assert.ok(/Do not add connections the grounding does not contain/.test(pr.system));
+});
+acheck('loop: grounding reaches EVERY round, not only the first', async function () {
+  const m = fakeModel([{ goal: 'g', commands: ['find levin'], answer: '' }, { goal: 'g', commands: [], answer: 'A.' }]);
+  await CCL.runPlan('levin?', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c }; }, ask: m.ask, verbs: '', knowledge: '', grounding: 'GMARK' });
+  assert.strictEqual(m.seen.length, 2);
+  assert.ok(m.seen.every(function (p) { return /GMARK/.test(p.user); }));
+});
+check('index: the committed grounding.json is current with its sources', function () {
+  const r = require('child_process').spawnSync('python3', [path.join(ROOT, 'scripts/build_grounding_index.py'), '--check'], { encoding: 'utf8' });
+  assert.strictEqual(r.status, 0, (r.stderr || r.stdout).trim());
 });
 
 // ---- report -----------------------------------------------------------------

@@ -2841,7 +2841,7 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=506b0b6bd3"></script>
+<script src="lib/c2a2-commandline.js?v=c140ad95db"></script>
 <script>
 (function () {
   'use strict';
@@ -5966,16 +5966,36 @@ var VoiceGuide = (function() {
       return { project: k[0], text: 'SITE KNOWLEDGE:\n' + stripFront(k[0]) + (k[1] ? '\n\nPAGE KNOWLEDGE (' + file + '):\n' + stripFront(k[1]) : '') };
     });
   }
+  // GROUNDING (2026-09-24): code retrieves the model's own material for the
+  // traditions the request names (voice_guide/grounding.json, built by
+  // scripts/build_grounding_index.py; bridge essays fetched live) and hands it
+  // to the planner up front. CommandLine.buildGrounding does the picking.
+  var groundIndex = null;
+  function getGroundIndex() {
+    if (groundIndex) { return Promise.resolve(groundIndex); }
+    return fetch('voice_guide/grounding.json?v=' + Date.now()).then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; }).then(function (j) { if (j) { groundIndex = j; } return j; });
+  }
+  function grounding(request) {
+    return getGroundIndex().then(function (idx) {
+      if (!idx) { return window.CommandLine.buildGrounding(request, null, {}); }
+      var paths = window.CommandLine.groundEntities(request, idx).bridges;
+      return Promise.all(paths.map(getText)).then(function (texts) {
+        var bt = {}; paths.forEach(function (p, i) { bt[p] = texts[i]; });
+        return window.CommandLine.buildGrounding(request, idx, bt);
+      });
+    });
+  }
   window.C2A2Plan = function (request) {
     if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
     if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
-    return Promise.all([getVerbs(), pageKnowledge()]).then(function (v) {
+    return Promise.all([getVerbs(), pageKnowledge(), grounding(request)]).then(function (v) {
       return window.CommandLine.runPlan(request, {
-        verbs: v[0], knowledge: v[1].text,
+        verbs: v[0], knowledge: v[1].text, grounding: v[2].text,
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
         run: function (cmd) { return window.CCLRun(cmd); },
         ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
-      });
+      }).then(function (res) { res.sources = v[2].sources; return res; });
     });
   };
   function planMeta(res) {
@@ -5986,6 +6006,7 @@ var VoiceGuide = (function() {
     if (res.failed && res.failed.length) {
       h += '<br><span style="color:#C45B5B">Not as asked: ' + res.failed.map(function (t) { return esc(t.cmd + ': ' + (t.problems.join('; ') || t.spoken)); }).join(' | ') + '</span>';
     }
+    if (res.sources && res.sources.length) { h += (h ? '<br>' : '') + 'Grounded in: ' + res.sources.map(esc).join(', '); }
     return h + '<br>planned and answered' + (res.model ? ' (' + esc(res.model) + ', ' + res.calls + ' call' + (res.calls === 1 ? '' : 's') + ')' : '');
   }
 

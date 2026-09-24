@@ -1015,16 +1015,19 @@
       '{"goal": "<what the view should show when done>", "commands": ["<one CCL command per string>"], "answer": "<text, or empty>"}',
       'Rules:',
       '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
-      '- A text cut is an expression: `find X`, then `also Y` (add), `except Z` (remove), `within W` (keep only overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
+      '- A text cut is an expression: `find X`, then `also Y` (add: the UNION of both, never an overlap), `except Z` (remove), `within W` (keep only the overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
       '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
       '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
       '- When the view already serves the goal, or the request is only a question, return "commands": [] and write the answer.',
-      '- The answer: plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words, spoken aloud as written. Use only the verified state, command results and knowledge given. Say plainly when they do not answer the question. Do not state counts as current facts unless a result in this exchange gave them.'
+      '- GROUNDING, when given, is the C2A2 model\'s own material (bridge essays, PRS triplets, Level-2 signals), retrieved by code. Build the answer on it first. Name what you drew on in plain words ("the Friston-Levin bridge essay", "Levin\'s PRS-03"). State COMPUTED FACTS exactly as given. Do not add connections the grounding does not contain; if it does not answer the question, say so plainly.',
+      '- For a question the grounding answers, you may add view commands that let the user SEE what you describe (for a pair: `find a`, then `also b`); otherwise return "commands": [] and answer in this round.',
+      '- The answer: plain, warm, precise prose for a thoughtful non-specialist, at most about 150 words, spoken aloud as written. Use only the verified state, command results, grounding and knowledge given. Say plainly when they do not answer the question. Do not state counts as current facts unless a result or COMPUTED FACTS in this exchange gave them.'
     ].join('\n');
     const parts = [];
     parts.push('REQUEST: ' + o.request);
     parts.push('VERIFIED STATE (before this round): ' + (o.state || '(unknown)'));
     if (o.knowledge) { parts.push('KNOWLEDGE:\n' + o.knowledge); }
+    if (o.grounding) { parts.push(o.grounding); }
     parts.push('CCL VERBS:\n' + (o.verbs || ''));
     if (o.results && o.results.length) {
       parts.push('RESULTS OF YOUR COMMANDS SO FAR (round ' + o.round + '):\n' + o.results.map(function (r, i) {
@@ -1057,6 +1060,148 @@
     return { ok: true, goal: String(o.goal || ''), commands: commands, dropped: dropped, answer: String(o.answer || '').trim() };
   }
 
+  // GROUNDING (grounding increment, 2026-09-24). Deterministic retrieval from
+  // the model's own structure -- wiki/voice_guide/grounding.json, built by
+  // scripts/build_grounding_index.py -- handed to the planner up front, so the
+  // answer rests on bridge essays, PRS triplets and Level-2 signals instead of
+  // general knowledge. Code picks; the model only writes (Rule 5).
+  const GROUND_STOP = new Set(('a an the and or of to in on for with by from at as is are was were be been does do did how why what which who whom when where ' +
+    'that this these those it its into about between connect connects connected connection link links relate relates related relation ' +
+    'me my i you your we our us tell show explain describe compare contrast say says said think thinks their them they his her there ' +
+    'can could should would will please give walk help also then keep but not no than more most much very both each other any some').split(' '));
+  const STRENGTH_RANK = { strong: 3, high: 3, moderate: 2, speculative: 1, unlabeled: 0 };
+  const GROUND_BRIDGE_MAX = 6000, GROUND_BRIDGES = 3, GROUND_SIGNALS = 8, GROUND_ENTITIES = 3;
+
+  function escRe(t) { return String(t).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  // Traditions named in the request, in order of first mention, max 3.
+  function groundEntities(request, index) {
+    const s = ' ' + String(request || '').toLowerCase().replace(/[’']s\b/g, '') + ' ';
+    const hits = [];
+    const trads = (index && index.traditions) || {};
+    for (const slug of Object.keys(trads)) {
+      let at = -1;
+      for (const al of trads[slug].aliases || [slug]) {
+        const m = new RegExp('[^a-z]' + escRe(al) + '[^a-z]').exec(s);
+        if (m && (at < 0 || m.index < at)) { at = m.index; }
+      }
+      if (at >= 0) { hits.push([at, slug]); }
+    }
+    hits.sort(function (x, y) { return x[0] - y[0]; });
+    const entities = hits.slice(0, GROUND_ENTITIES).map(function (h) { return h[1]; });
+    const pairs = [], bridges = [];
+    for (let i = 0; i < entities.length; i++) {
+      for (let j = i + 1; j < entities.length; j++) {
+        const key = [entities[i], entities[j]].sort().join('|');
+        pairs.push(key);
+        if (index.bridges && index.bridges[key] && bridges.length < GROUND_BRIDGES) { bridges.push(index.bridges[key]); }
+      }
+    }
+    return { entities: entities, pairs: pairs, bridges: bridges };
+  }
+  function queryTerms(request, index, entities) {
+    const drop = new Set();
+    for (const e of entities) { for (const al of index.traditions[e].aliases) { al.split(/[^a-z]+/).forEach(function (w) { drop.add(w); }); } }
+    return String(request || '').toLowerCase().split(/[^a-z]+/).filter(function (w) { return w.length > 2 && !GROUND_STOP.has(w) && !drop.has(w); })
+      .map(function (w) { return w.replace(/(ies|es|s)$/, ''); });
+  }
+  function signalRank(x) { return (STRENGTH_RANK[String(x.st || '').toLowerCase()] || 0) * 10 + (Number(x.w) || 0); }
+  function strengthTally(list) {
+    const t = {};
+    for (const x of list) { const k = x.st || 'Unlabeled'; t[k] = (t[k] || 0) + 1; }
+    return Object.keys(t).sort(function (a, b) { return t[b] - t[a]; }).map(function (k) { return k + ' ' + t[k]; }).join(', ');
+  }
+  function dateRange(list) {
+    const d = list.map(function (x) { return x.d; }).filter(Boolean).sort();
+    return d.length ? d[0] + ' to ' + d[d.length - 1] : 'undated';
+  }
+  // PRS ids a bridge essay cites for a tradition: lines naming traditions/<slug>/.
+  function citedPrs(bridgeTexts, slug) {
+    const ids = new Set();
+    for (const t of bridgeTexts || []) {
+      for (const line of String(t).split('\n')) {
+        if (line.indexOf('traditions/' + slug + '/') < 0) { continue; }
+        (line.match(/PRS-\d+[a-z]?/g) || []).forEach(function (id) { ids.add(id); });
+      }
+    }
+    return ids;
+  }
+
+  // -> {entities, sources:[file], facts:[string], text}. bridgeTexts: {path: text}.
+  function buildGrounding(request, index, bridgeTexts) {
+    bridgeTexts = bridgeTexts || {};
+    if (!index || !index.traditions) {
+      return { entities: [], sources: [], facts: [], text: 'GROUNDING: the grounding index did not load; nothing was retrieved from the C2A2 model. Say so if the question needs it.' };
+    }
+    const g = groundEntities(request, index);
+    if (!g.entities.length) {
+      return { entities: [], sources: [], facts: [], text: 'GROUNDING: no tradition was named in the request, so code retrieved nothing from the C2A2 model beyond the site knowledge. If the question needs the model\'s material, say that plainly and suggest naming a thinker.' };
+    }
+    const T = index.traditions, name = function (s) { return T[s].name; };
+    const out = [], facts = [], sources = [];
+    const terms = queryTerms(request, index, g.entities);
+    // Signals.
+    const sig = index.signals || [];
+    if (g.pairs.length) {
+      for (const key of g.pairs) {
+        const ab = key.split('|');
+        const list = sig.filter(function (x) { return x.a === ab[0] && x.b === ab[1]; });
+        facts.push('Level-2 signals between ' + name(ab[0]) + ' and ' + name(ab[1]) + ': ' + list.length +
+          (list.length ? ' (' + strengthTally(list) + '; ' + dateRange(list) + ')' : ''));
+        facts.push('Bridge essay for ' + name(ab[0]) + ' and ' + name(ab[1]) + ': ' + (index.bridges[key] ? index.bridges[key] : 'none exists'));
+      }
+    } else {
+      const e = g.entities[0], partners = {};
+      for (const x of sig) { if (x.a === e || x.b === e) { const o = x.a === e ? x.b : x.a; partners[o] = (partners[o] || 0) + 1; } }
+      const top = Object.keys(partners).sort(function (p, q) { return partners[q] - partners[p]; }).slice(0, 5);
+      facts.push('Level-2 signals involving ' + name(e) + ': ' + Object.values(partners).reduce(function (a, b) { return a + b; }, 0) +
+        (top.length ? '; most with ' + top.map(function (o) { return name(o) + ' (' + partners[o] + ')'; }).join(', ') : ''));
+      const bl = Object.keys(index.bridges).filter(function (k) { return k.split('|').indexOf(e) >= 0; });
+      facts.push('Bridge essays involving ' + name(e) + ': ' + bl.length);
+    }
+    for (const e of g.entities) { facts.push('PRS triplets for ' + name(e) + ': ' + T[e].prs.length + ' (traditions/' + e + '/prs_triplets.md)'); }
+    out.push('GROUNDING -- retrieved by code from the C2A2 model itself. Cite the files you use.');
+    out.push('COMPUTED FACTS (exact; state them as given):\n' + facts.map(function (f) { return '- ' + f; }).join('\n'));
+    // Bridge essays.
+    const btexts = [];
+    for (const path of g.bridges) {
+      const t = bridgeTexts[path];
+      if (!t) { out.push('BRIDGE ESSAY ' + path + ': could not be fetched.'); continue; }
+      btexts.push(t); sources.push(path);
+      out.push('BRIDGE ESSAY ' + path + (t.length > GROUND_BRIDGE_MAX ? ' (first ' + GROUND_BRIDGE_MAX + ' of ' + t.length + ' chars)' : '') + ':\n' + t.slice(0, GROUND_BRIDGE_MAX));
+    }
+    // Signals text.
+    for (const key of g.pairs) {
+      const ab = key.split('|');
+      const list = sig.filter(function (x) { return x.a === ab[0] && x.b === ab[1]; })
+        .sort(function (x, y) { return signalRank(y) - signalRank(x) || (y.d > x.d ? 1 : y.d < x.d ? -1 : 0); }).slice(0, GROUND_SIGNALS);
+      if (!list.length) { continue; }
+      sources.push('prototypes/signals_grown.json');
+      out.push('LEVEL-2 SIGNALS ' + name(ab[0]) + ' x ' + name(ab[1]) + ' (strongest ' + list.length + '):\n' + list.map(function (x) {
+        return '- ' + (x.d || 'undated') + ' [' + (x.st || 'Unlabeled') + '] ' + x.t + (x.n ? ' (' + x.n + ')' : '');
+      }).join('\n'));
+    }
+    // PRS triplets, ranked: cited by a fetched bridge essay, then query-term overlap, then mentions of the other entity.
+    const per = g.entities.length === 1 ? 8 : 5;
+    for (const e of g.entities) {
+      const cited = citedPrs(btexts, e);
+      const others = g.entities.filter(function (o) { return o !== e; }).map(name).map(function (n) { return n.toLowerCase(); });
+      const scored = T[e].prs.map(function (x, i) {
+        const hay = (x.label + ' ' + x.p + ' ' + x.r + ' ' + x.s).toLowerCase();
+        let sc = cited.has(x.id) ? 100 : 0;
+        for (const w of terms) { if (hay.indexOf(w) >= 0) { sc += 3; } }
+        for (const o of others) { if (hay.indexOf(o) >= 0) { sc += 5; } }
+        return { x: x, sc: sc, i: i };
+      }).sort(function (p, q) { return q.sc - p.sc || p.i - q.i; }).slice(0, per);
+      sources.push('traditions/' + e + '/prs_triplets.md');
+      out.push('PRS TRIPLETS -- ' + name(e) + ' (traditions/' + e + '/prs_triplets.md; ' + scored.length + ' of ' + T[e].prs.length +
+        (scored[0] && scored[0].sc ? ', most relevant first' : ', no term match -- first in file') + '):\n' + scored.map(function (o) {
+        const x = o.x;
+        return '- ' + x.id + (x.label ? ' ' + x.label : '') + ' | Problem: ' + x.p + ' | Resource: ' + x.r + ' | Solution: ' + x.s + (x.c ? ' (' + x.c + ')' : '');
+      }).join('\n'));
+    }
+    return { entities: g.entities, sources: Array.from(new Set(sources)), facts: facts, text: out.join('\n\n') };
+  }
+
   // THE LOOP. deps: state() -> string; run(cmd) -> {ok, spoken, verify?};
   // ask({system,user}) -> Promise<{text, model?}>; verbs, knowledge strings.
   // Round 1 plans; later rounds see every result and either correct or answer.
@@ -1068,7 +1213,7 @@
     let results = [], model = '', answer = '', calls = 0;
     for (let round = 1; round <= maxRounds; round++) {
       const lastRound = round === maxRounds;
-      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, verbs: deps.verbs,
+      const prompt = buildPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, verbs: deps.verbs,
                                        results: results, round: round - 1, lastRound: lastRound && round > 1 });
       const reply = await deps.ask(prompt);
       calls++;
@@ -1120,6 +1265,8 @@
     buildPlanPrompt: buildPlanPrompt,
     parsePlan: parsePlan,
     runPlan: runPlan,
+    groundEntities: groundEntities,
+    buildGrounding: buildGrounding,
     SOCIOGRAM_CAPS: SOCIOGRAM_CAPS,
     SHELL_CAPS: SHELL_CAPS,
   };
