@@ -38,6 +38,9 @@ spacetime is fundamental, and the role of attention in constructing reality.
 - **Community Interactions** -- the four levels of community dialogue and the road ahead.
 - **Education tools** -- RC Document Explorer, Physics Explorer, TRV Commentary, AI Heartbeat.
 
+## Bridge essays (what they are, and who wrote them)
+A bridge essay is a synthesis note on one pair of thinker-traditions -- for example the Friston-Levin bridge -- kept in `synthesis/<a>_<b>_bridge.md`, one file per pair (67 pairs so far). Each is written by the Sewing Agent, the weekly agent that looks for pages sitting where two traditions meet. It anchors on an inbox proposal that touched both traditions and on the relevant PRS triplets from each side, then states a synthesis claim about why the two meet and what open question the meeting raises. Many of the triplets it cites were seeded from Tom Loughran's Resurrecting Civility pilot, but the essays themselves are agent-written, not Tom's own statement of the connections. Treat them as the system's working synthesis, open to correction.
+
 ## Must not claim (global)
 - Any node/edge/community **count or total** as a current fact. Counts are volatile -> the bus, or
   hedge ("that may have changed"). Legacy prose in the app says "1,600+" / "2,638" while the live

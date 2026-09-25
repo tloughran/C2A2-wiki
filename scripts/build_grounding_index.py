@@ -20,6 +20,9 @@ Sources:
 
 Fails loud (exit 1) when a source is missing or a count collapses to zero.
 
+Runs daily at the end of scripts/regen_level2_signals.sh (daily run Phase 5.6).
+Rewrites the file only when content moved, so a quiet day commits nothing.
+
 Usage: python3 scripts/build_grounding_index.py [--check]
   --check  rebuild in memory and exit 1 if the committed file differs in content
            (ignores _meta.generated)
@@ -121,6 +124,12 @@ def main():
             die('grounding.json is stale -- run scripts/build_grounding_index.py')
         print('grounding.json current')
         return
+    try:
+        if body(json.load(open(OUT))) == body(idx):
+            print('grounding.json unchanged apart from _meta.generated -- not rewritten')
+            return
+    except Exception:
+        pass
     with open(OUT + '.tmp', 'w', encoding='utf-8') as f:
         json.dump(idx, f, ensure_ascii=False, separators=(',', ':'))
     os.replace(OUT + '.tmp', OUT)
