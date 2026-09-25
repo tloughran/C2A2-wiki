@@ -8,9 +8,9 @@ length_actual_words: 1502
 length_ratio_to_target: 1.001
 length_note: "Short tier (cleaned transcript 961 words). Covers two dense questions, Q.102 on the causes of the ceremonial precepts and Q.103 on their duration and cessation, without padding. Recounted 2026-09-15 at 1502 body words, ratio 1.001 against the 1500 target. Counting boundary used: top frontmatter stripped, the Related-tradition-records auto-linker trailer excluded, bare horizontal-rule separator lines dropped, regex [A-Za-z']+. The stored figure was 1429, a 73-word understatement with no edit in this file's history to attribute it to; the file was pass-marked on 2026-09-07 without a recount, so the residual predates that mark. No prose was added or removed on 2026-09-15; the field is corrected, not grown. The earlier note's conclusion survives its premise: the ratio was stated as 0.953 and is in fact 1.001, and the file is comfortably within plus-or-minus 10 percent under both figures."
 karpathy_wiki_sources:
-  - "wiki/traditions/hoffman/wiki.md (FLAG-02 interface theory; sign-and-signified)"
-  - "wiki/traditions/friston/wiki.md (FLAG-05 generative-model updating via embodied practice)"
-  - "wiki/traditions/mcgilchrist/wiki.md (FLAG-09 ritual and embodied right-hemispheric formation)"
+  - "wiki/traditions/hoffman/wiki.md -- claimed as FLAG-02, but no FLAG-02 exists; the wiki's only two paradigm flags are FLAG-001 and FLAG-002 in master/paradigm_flags.md, neither on interface theory. Hoffman's interface theory itself is real and carried elsewhere in this vault under PRS-ids; this specific citation is unanchored. (Found and corrected 2026-09-24 by QC sweep.)"
+  - "wiki/traditions/friston/wiki.md -- claimed as FLAG-05, but no FLAG-05 exists (same defect as above). The embodied-practice-updates-priors claim is this commentary's own extension, unanchored in the wiki. (Found and corrected 2026-09-24 by QC sweep.)"
+  - "wiki/traditions/mcgilchrist/wiki.md -- claimed as FLAG-09, but no FLAG-09 exists (same defect). This commentary's own extension, unanchored in the wiki. (Found and corrected 2026-09-24 by QC sweep.)"
   - "wiki/master/cross_program_index.md (CROSS-009 Friston x McGilchrist — precision-weighted attention as evidence weighting)"
   - "Cultural-evolution literature on costly ritual signaling and markedness (Henrich; Whitehouse) — cited to the literature directly; the C2A2 wiki carries no node on either"
   - "Wright, Paul and the Faithfulness of God (cessation of ceremonial precepts in Pauline frame)"
@@ -18,7 +18,7 @@ karpathy_wiki_sources:
 mind_first_reframe: "Worship is the embodied practice through which limited-perspective agents re-cognize the deeper pattern their interface obscures; sign and signified are layered access to one underlying mind."
 central_theme_thread: "Perspective-limited agents cannot directly see the eternal pattern, so worship trains the recognition; ceremonial precepts scaffold formation, sacraments enact participation, and both progressively bring the agent into the loving-unity end."
 evidence_strength_summary: "Empirical: anthropological work on sacrifice and worship cross-culturally; costly-signaling theory; ritual-effects on group cohesion and individual self-regulation. Formal: predictive-processing accounts of embodied practice. Theological: Wright on supersession and Rohr's sacramental ontology."
-last_qc_at: "2026-09-15T20:22:49"
+last_qc_at: "2026-09-24T22:21:17"
 last_qc_outcome: "rewrote"
 tags: [synthesis, day/112, theme/sacrifice, theme/sign-and-signified]
 ---
@@ -37,11 +37,11 @@ The shared problem: worship is *neither* arbitrary cultural decoration *nor* pur
 
 ## Resource: sign-signified, embodied formation, costly-signaling, sacramental ontology
 
-**Hoffman's interface theory** (FLAG-02): signs operate at the interface level; they point at realities the agent does not directly see. Q.102 a.2's "ceremonial precepts had also literal besides their figurative causes" is precisely the multi-layer interface logic: a sign can have an immediate referent (the historical Passover) and a deeper referent (the paschal Christ) at the same time. The same sign-token operates at multiple levels of the agent's representational system.
+**Hoffman's interface theory** (no wiki record at this citation -- FLAG-02 does not exist; the interface theory itself is real and carried elsewhere in this vault under PRS-ids, but this specific citation is unanchored): signs operate at the interface level; they point at realities the agent does not directly see. Q.102 a.2's "ceremonial precepts had also literal besides their figurative causes" is precisely the multi-layer interface logic: a sign can have an immediate referent (the historical Passover) and a deeper referent (the paschal Christ) at the same time. The same sign-token operates at multiple levels of the agent's representational system.
 
-**Friston's active inference** (FLAG-05): embodied practice updates generative-model priors more durably than propositional learning. Q.102 a.3's account of sacrifice as *recognition that what one has is from God and is directed back to God* is precisely the kind of cognitive-affective update that embodied practice can produce. The act of *giving back* re-installs the prior that *what is given came from elsewhere*. This is upstream of any propositional belief; it is a generative-model-level recognition.
+**Friston's active inference** (no wiki record -- FLAG-05 does not exist; this commentary's own extension, unanchored): embodied practice updates generative-model priors more durably than propositional learning. Q.102 a.3's account of sacrifice as *recognition that what one has is from God and is directed back to God* is precisely the kind of cognitive-affective update that embodied practice can produce. The act of *giving back* re-installs the prior that *what is given came from elsewhere*. This is upstream of any propositional belief; it is a generative-model-level recognition.
 
-**McGilchrist's hemispheric asymmetry** (FLAG-09): ritual is right-hemispheric — embodied, contextual, relational. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct" is precisely the attention-economics McGilchrist describes. Markedness is what right-hemispheric attention tracks; setting things apart *for* God is what makes them visible *as* sacred.
+**McGilchrist's hemispheric asymmetry** (no wiki record -- FLAG-09 does not exist; this commentary's own extension, unanchored): ritual is right-hemispheric — embodied, contextual, relational. Q.102 a.4's "man's tendency is to reverence less those things which are common… whereas he admires and reveres those things which are distinct" is precisely the attention-economics McGilchrist describes. Markedness is what right-hemispheric attention tracks; setting things apart *for* God is what makes them visible *as* sacred.
 
 **Costly signaling and markedness (cited to the cultural-evolution literature — Henrich, Whitehouse — not to a wiki node; the C2A2 network has no entry on either)**: cross-cultural anthropology has converged on the function of costly ritual: it produces in-group commitment, distinguishes the committed from the merely-claiming, and trains specific cognitive-affective dispositions. The Old-Law ceremonial precepts on food, dress, time, and bodily practice are paradigm cases. They are not arbitrary tribal markers; they are structured to train particular generative-model dispositions in the worshipping community.
 
@@ -87,9 +87,9 @@ This entry attaches the central theme through the *sign-signified* relation. The
 
 ## Bridges
 
-- **FLAG-02 (Hoffman interface theory, multi-layer signs)**: literal/figurative double reading as multi-layer interface. *Formal/interpretive*.
-- **FLAG-05 (Friston embodied generative-model updating)**: ritual installs durable priors. *Empirical/formal*.
-- **FLAG-09 (McGilchrist right-hemispheric ritual)**: embodied, contextual practice as right-hemispheric formation. *Empirical*.
+- **Hoffman, interface theory -- UNANCHORED AT THIS ID**: cited as FLAG-02 through 2026-09-24, but no FLAG-02 exists (only FLAG-001/FLAG-002 do, neither on this topic); literal/figurative double reading as multi-layer interface. *Formal/interpretive (the underlying theory is real elsewhere in Hoffman's register; this specific citation is not).*
+- **Friston, embodied generative-model updating -- UNANCHORED**: cited as FLAG-05 through 2026-09-24, but no FLAG-05 exists; ritual installs durable priors is this commentary's own extension. *Empirical/formal claim, but uncited.*
+- **McGilchrist, right-hemispheric ritual -- UNANCHORED**: cited as FLAG-09 through 2026-09-24, but no FLAG-09 exists; embodied, contextual practice as right-hemispheric formation is this commentary's own extension. *Empirical claim, but uncited.*
 - **Costly signaling and markedness (Henrich; Whitehouse — cultural-evolution literature, no C2A2 wiki node)**: ceremonial practices as in-group commitment with measurable cohesion effects; setting things apart as the attention-economic foundation of sacredness. *Empirical/anthropological*.
 - **CROSS-009 (`wiki/master/cross_program_index.md`, Friston x McGilchrist)**: attentional selection as evidence weighting — the mechanism under Q.102 a.4's "man reveres what is set apart". *Structural analogy*.
 - **Wright, *Paul and the Faithfulness of God***: cessation of ceremonial precepts in covenant-fulfillment frame, with careful attention to ongoing Israel covenant. *Exegetical/theological*.
