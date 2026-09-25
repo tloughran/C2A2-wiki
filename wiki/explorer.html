@@ -266,6 +266,24 @@
   flex-shrink: 0;
 }
 #btn-help:hover, .btn-help-row:hover { color: #C9A84C; border-color: #4a4a5a; }
+/* PLOTS BUTTON (row 2) -- opens the live C2A2 Plots panel over the Sociogram */
+#btn-plots {
+  margin-left: auto;
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  color: #888;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: -apple-system, sans-serif;
+  border-radius: 4px;
+  height: 26px;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+#btn-plots:hover, #btn-plots.on { color: #C9A84C; border-color: #4a4a5a; }
+#btn-plots + #btn-help { margin-left: 6px; }
 
 /* HELP MODAL */
 #help-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1200; justify-content: center; align-items: center; }
@@ -437,6 +455,7 @@
     <button class="tab-btn" data-src="metabolism/metabolism_view.html">Metabolism</button>
     <button class="tab-btn" data-src="summa_explorer.html">Curriculum Tools</button>
     <button class="tab-btn" data-src="interT_study.html">Inter-Tradition Study</button>
+    <button id="btn-plots" title="Live plots of the edges in the current Sociogram view (drag the edges or corners to resize)">Plots</button>
     <button id="btn-help" onclick="showHelp()" title="About this view">?</button>
   </div>
 
@@ -2842,6 +2861,46 @@ var VoiceGuide = (function() {
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
 <script src="lib/c2a2-commandline.js?v=c140ad95db"></script>
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=27ce83a351">
+<script>
+/* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
+   panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
+   Sociogram (and Agent Map, same document) carry that state today. The href
+   above is content-hash stamped by stamp_assets.py --target explorer. */
+(function () {
+  var b = document.getElementById('btn-plots');
+  if (!b) return;
+  function tabWin() {
+    var f = document.getElementById('content-frame');
+    try {
+      var w = f.contentWindow;
+      return (w.eval('typeof LINKS') !== 'undefined' && w.eval('typeof edgePassesCuts') === 'function') ? w : null;
+    } catch (e) { return null; }
+  }
+  /* a tab (re)load discards any panel, so the button's lit state must go too */
+  document.getElementById('content-frame').addEventListener('load', function () { b.classList.remove('on'); });
+  b.addEventListener('click', function () {
+    var w = tabWin();
+    if (!w) {
+      b.textContent = 'Plots: Sociogram only';
+      setTimeout(function () { b.textContent = 'Plots'; }, 2200);
+      return;
+    }
+    var P = w.C2A2Plot;
+    if (P && P.panel) {
+      var show = P.panel.style.display === 'none';
+      P.panel.style.display = show ? 'flex' : 'none';
+      if (show) P.refresh();
+      b.classList.toggle('on', show);
+      return;
+    }
+    var sc = w.document.createElement('script');
+    sc.src = new URL(document.getElementById('c2a2-plots-src').getAttribute('href'), location.href).href;
+    w.document.head.appendChild(sc);
+    b.classList.add('on');
+  });
+})();
+</script>
 <script>
 (function () {
   'use strict';
