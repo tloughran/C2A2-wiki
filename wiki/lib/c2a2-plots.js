@@ -122,17 +122,20 @@
       nw:'top:-3px;left:-3px;width:'+C+'px;height:'+C+'px;cursor:nwse-resize',se:'bottom:-3px;right:-3px;width:'+C+'px;height:'+C+'px;cursor:nwse-resize'};
     Object.keys(H).forEach(function(d){ var g=document.createElement('div'); g.className='cp-grip'; g.dataset.dir=d;
       g.style.cssText='position:absolute;z-index:5;touch-action:none;'+H[d]+(d==='se'?';background:linear-gradient(135deg,transparent 55%,#6b7080 55%,#6b7080 65%,transparent 65%,transparent 75%,#6b7080 75%,#6b7080 85%,transparent 85%)':'');
-      g.onpointerdown=function(e){ e.preventDefault(); e.stopPropagation(); g.setPointerCapture(e.pointerId);
+      g.onpointerdown=function(e){ e.preventDefault(); e.stopPropagation();
+        try{ g.setPointerCapture(e.pointerId); }catch(_){}
         var r=panel.getBoundingClientRect(), sx=e.clientX, sy=e.clientY, vw=window.innerWidth, vh=window.innerHeight;
         panel.style.left=r.left+'px'; panel.style.top=r.top+'px'; panel.style.right='auto'; panel.style.bottom='auto';
-        var cover=document.createElement('div'); cover.style.cssText='position:absolute;inset:0;z-index:4'; panel.appendChild(cover);
-        g.onpointermove=function(ev){ var dx=ev.clientX-sx, dy=ev.clientY-sy, L=r.left, T=r.top, W=r.width, Hh=r.height;
+        function move(ev){ if(ev.buttons===0){ end(); return; } var dx=ev.clientX-sx, dy=ev.clientY-sy, L=r.left, T=r.top, W=r.width, Hh=r.height;
           if(d.indexOf('e')>=0) W=Math.min(Math.max(MINW,r.width+dx),vw-r.left);
           if(d.indexOf('s')>=0) Hh=Math.min(Math.max(MINH,r.height+dy),vh-r.top);
           if(d.indexOf('w')>=0){ W=Math.min(Math.max(MINW,r.width-dx),r.right); L=r.right-W; }
           if(d.indexOf('n')>=0){ Hh=Math.min(Math.max(MINH,r.height-dy),r.bottom); T=r.bottom-Hh; }
-          panel.style.left=L+'px'; panel.style.top=T+'px'; panel.style.width=W+'px'; panel.style.height=Hh+'px'; };
-        g.onpointerup=g.onpointercancel=function(){ g.onpointermove=null; g.onpointerup=null; g.onpointercancel=null; cover.remove(); }; };
+          panel.style.left=L+'px'; panel.style.top=T+'px'; panel.style.width=W+'px'; panel.style.height=Hh+'px'; ev.preventDefault(); }
+        function end(){ document.removeEventListener('pointermove',move,true); document.removeEventListener('pointerup',end,true);
+          document.removeEventListener('pointercancel',end,true); g.removeEventListener('lostpointercapture',end); window.removeEventListener('blur',end); }
+        document.addEventListener('pointermove',move,true); document.addEventListener('pointerup',end,true);
+        document.addEventListener('pointercancel',end,true); g.addEventListener('lostpointercapture',end); window.addEventListener('blur',end); };
       panel.appendChild(g); });
     var pend=0; if(window.ResizeObserver) new ResizeObserver(function(){ if(pend) return; pend=requestAnimationFrame(function(){ pend=0; var el=$('cp-p'); if(window.Plotly&&el&&el.data) Plotly.Plots.resize(el); }); }).observe($('cp-p'));
   })();
