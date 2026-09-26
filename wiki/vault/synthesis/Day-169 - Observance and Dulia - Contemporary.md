@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/wright/prs_triplets.md (PRS-52 'Son of God' from the Israelite and Davidic-royal sense to the claim of eternal divine identity — the base sense as the platform for an escalation, legible only once the base is in place; Medium, added 2026-09-01, with the record's own caveat that the episode audio was not retrieved. Anchored 2026-09-17 for the christological half of the claim only — that the early ascription of worship to Jesus built on the Israelite base rather than replacing it. DECLINATION for the other half: the 66-record register holds no worship-monotheism or worship-due-only-to-God record (radius worship / monotheism / christology / honour / latria / reverence / veneration returns PRS-17, PRS-25, PRS-31 and PRS-52 only), so the Second-Temple constraint stays on the canonical work: 'Surprised by Hope' and the Second-Temple scholarship on the worship-due-only-to-God constraint within a relational-honor culture.)"
 evidence_strength_summary: "The graded moral ontology Hoffman defends and the agency-scaling Levin defends are empirically tractable. The neurological grounding for relational mode (McGilchrist) is empirical. The reading of the latria-dulia distinction as a precision-tuning of warranted response within a graded ontology is interpretive but converges with the mind-monist frame."
 tags: [synthesis, day/169, theme/graded-ontology, theme/warranted-honor, q/102, q/103]
-last_qc_at: "2026-09-17T10:33:44"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T20:22:03"
+last_qc_outcome: "pass"
 ---
 
 # Day 169 — Observance and Dulia (Contemporary)

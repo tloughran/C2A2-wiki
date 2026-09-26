@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "Wright canonical: the glory that comes from God vs the glory sought from men, John 5:44 (Jesus and the Victory of God). NOTE: no numbered triplet in traditions/wright/prs_triplets.md covers glory-from-God-versus-glory-from-men; the nearest entries are PRS-20 (call-and-vocation) and PRS-8 (many perspective-limited agents as one body), neither of which is this claim. Cited canonically and the gap stated rather than anchored to an approximate id. Declination dated at 41, re-tested at 59 on 2026-09-02, and re-tested at 66 on 2026-09-17 (PRS-60 to PRS-66 added 2026-09-10): zero hits on glory/honour/shame/praise/approval, holds."
 evidence_strength_summary: "The over-precise self-model and the social-signal accounts are formal/empirical (Friston, Fredrickson, social neuroscience); the claim that honor should be referred to God rather than sought from men is theological (Wright, Rohr)."
 tags: [synthesis, day/183, theme/ambition, theme/reputation-signal, q/130, q/131]
-last_qc_at: "2026-09-17T20:27:02"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-26T00:24:02"
+last_qc_outcome: "pass"
 ---
 
 # Day 183 — Ambition (Contemporary)

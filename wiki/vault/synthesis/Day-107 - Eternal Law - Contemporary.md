@@ -20,8 +20,8 @@ length_note: "Short tier (1500). RECOUNTED 2026-09-17 after the Wright/Rohr id-a
 mind_first_reframe: "The eternal law on a mind-monist reading is the structural pattern of mind-at-large that constrains what counts as flourishing for kinds of agents — Aquinas's type/exemplar in the divine mind cashed out as the deepest computational specification of well-functioning, real and prior to created things but internal to reality rather than a transcendent extra entity."
 central_theme_thread: "Q.93 a.6's distinction between the wicked and the good reads as differing degrees of generative-model alignment with the eternal pattern; agents are individuated by their perspective-limitations relative to that pattern, and the loving-unity telos is the pattern as fully accessed — the simple whole seen, containing every limited perspective."
 tags: [synthesis, day/107, theme/eternal-law-as-pattern]
-last_qc_at: "2026-09-17T00:23:56"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T02:19:49"
+last_qc_outcome: "pass"
 ---
 
 # Day 107 — Eternal Law (Contemporary)

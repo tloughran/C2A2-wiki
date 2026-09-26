@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-43, guidance not extractable by lookup — underdetermination of specifics as a feature of the mode of knowing, Medium; GUEST-VOICE CAVEAT stated in the record: rests on Barbara Brown Taylor under Rohr's CAC curation, sourced to a Daily Meditations week, not to 'The Universal Christ'. PRS-40, revelation as second-personal self-disclosure rather than information transfer, Medium, is the record it increments.) Anchored 2026-09-17; this line had been canonical-only ('The Universal Christ' on grasping vs. receiving), which is retained as the underlying work."
 evidence_strength_summary: "Active-inference framing is mathematically formal; the prudential 'no-cheap-tests' rule for agents under uncertainty is empirical (decision theory, control theory); the theological framing of why an agent should refuse to commodify guidance is interpretive — speculative bridge work."
 tags: [synthesis, day/166, theme/epistemic-humility, theme/active-inference, q/96, q/97]
-last_qc_at: "2026-09-17T08:27:13"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T10:19:22"
+last_qc_outcome: "pass"
 ---
 
 # Day 166 — Testing God (Contemporary)

@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md — NO CROSS ENTRY, and none is claimed. This line had named 'CROSS entries on commitment and identity-over-time' with no id, and no CROSS id appears anywhere in the body or Bridges. The index was searched 2026-09-09 across BOTH of its formats (colon-blocks 001–054 and dash-blocks 051–103, per the recorded two-format trap) on commitment / identity-over-time / precision-weighting / canalization / vow / oath / policy-stickiness. The nearest is CROSS-012 (Friston × McGilchrist, precision-weighted prediction as the formalism for hemispheric attention asymmetry), which is about attention, not about commitment over time, and this day's McGilchrist bullet does not rest on it. The unanchored topical claim is withdrawn with its search radius named rather than repointed. Re-searched 2026-09-17 through CROSS-135 (the index grew past CROSS-103 after 2026-09-09): CROSS-104 to CROSS-135 hold no commitment, identity-over-time, precision, canalization, vow or oath entry; the declination stands."
 evidence_strength_summary: "Empirical-formal on precision-weighting and commitment devices in decision neuroscience (Friston-adjacent literature on policy stickiness). Empirical on developmental canalization (Levin lineage). Theological-strong on Pauline pistis (Wright) and on faith as second-personal commitment (Stump). The reframe of vow-as-precision-fixing is speculative-integrative."
 tags: [synthesis, day/162, theme/commitment-device, theme/identity-over-time, pars/II-II, q/88-89]
-last_qc_at: "2026-09-17T08:27:12"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T10:19:19"
+last_qc_outcome: "pass"
 ---
 
 # Day 162 — Vows & Oaths (Contemporary Parallel)

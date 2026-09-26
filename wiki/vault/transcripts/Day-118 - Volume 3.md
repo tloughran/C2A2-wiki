@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api via bash sandbox
 synthesis: "[[Day-118 - Volume 3 - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/118, pars/I-II, pars/II-II, q/114, q/1]
-last_qc_at: "2026-09-17T06:51:13"
+last_qc_at: "2026-09-25T08:22:12"
 last_qc_outcome: "pass"
 ---
 

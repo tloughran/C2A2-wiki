@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "Wright canonical: 'love of money the root of all evils' (1 Tim 6:10; Col 3:5), treasure in heaven (Matt 6:19-21) — declined anchor, tested 2026-08-24 at 41 entries, re-tested 2026-09-02 at 59, and re-tested 2026-09-17 at 66 (PRS-60 to PRS-66 added 2026-09-10, zero hits) on money/wealth/possession/treasure/mammon/riches/generosity/economic/property plus covetousness/avarice/greed, nothing on topic"
 evidence_strength_summary: "Defection-from-the-whole is empirical-analogical (Levin); over-provisioning is formal (Friston); value-not-in-accumulation is formal (Carroll); covetousness-as-idolatry is theological (Wright, Rohr)."
 tags: [synthesis, day/177, theme/defection, theme/resource-estimate, q/118, q/119]
-last_qc_at: "2026-09-17T20:26:59"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T22:23:37"
+last_qc_outcome: "pass"
 ---
 
 # Day 177 — Covetousness (Contemporary)

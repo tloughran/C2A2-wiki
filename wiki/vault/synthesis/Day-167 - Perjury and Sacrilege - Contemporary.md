@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-21 creation as the first incarnation — the Universal Christ in matter as the contemplative articulation of mind-monism, Medium). Anchored 2026-09-17; this line had been canonical-only ('The Universal Christ' on the sacramental as bearing the divine presence), and PRS-21 is the record every prior repoint has settled on for the divine-pattern-in-matter claim. The canonical work is retained as underlying."
 evidence_strength_summary: "Costly-signaling theory (oath as binding commitment) is well-established game theory and behavioral biology. The neurobiology of trust-and-betrayal is empirical. The reading of sacrilege as violation of a community's symbolic infrastructure is interpretive but converges with research on ritual function in social cognition."
 tags: [synthesis, day/167, theme/costly-signal, theme/commitment, q/98, q/99]
-last_qc_at: "2026-09-17T08:27:14"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T10:19:25"
+last_qc_outcome: "pass"
 ---
 
 # Day 167 — Perjury and Sacrilege (Contemporary)

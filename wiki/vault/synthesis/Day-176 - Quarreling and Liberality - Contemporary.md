@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "Wright canonical: koinonia / the grace of giving (2 Cor 8-9) — no numbered Wright triplet covers this; anchor declined on a tested radius, see Bridges"
 evidence_strength_summary: "Self-boundary scaling and bond-building are empirical/formal (Levin, Fredrickson); generosity-as-real-pattern is formal (Carroll); giving-as-grace is theological (Wright, Rohr)."
 tags: [synthesis, day/176, theme/self-boundary, theme/generosity, q/116, q/117]
-last_qc_at: "2026-09-17T18:34:25"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T22:21:13"
+last_qc_outcome: "pass"
 ---
 
 # Day 176 — Quarreling and Liberality (Contemporary)

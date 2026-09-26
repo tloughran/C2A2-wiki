@@ -18,8 +18,8 @@ evidence_strength_summary: "CORRECTED DOWNWARD 2026-08-24. The register supports
 mind_first_reframe: "Speech is the channel through which perspective-limited agents pool what only they can see, so a lie is the deliberate corruption of that shared signaling channel — and its gravity scales with the harm that corruption does to the cooperative model."
 central_theme_thread: "If loving unity is computed by agents pooling what each can see, truthful speech is the medium of the computation and the lie its sabotage; the hypocrite is a corrupted node whose every output must be discounted and who risks losing the self-knowledge needed to receive correction."
 tags: [synthesis, day/173, theme/deception-gradient, theme/hypocrisy, q/110, q/111]
-last_qc_at: "2026-09-17T20:26:59"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-25T22:21:12"
+last_qc_outcome: "pass"
 ---
 
 # Day 173 — Kinds of Lies (Contemporary)

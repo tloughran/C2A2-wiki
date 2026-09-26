@@ -18,7 +18,7 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-005 is love/positivity resonance/union a fundamental category, Fredrickson × Stump × Kastrup; CROSS-068 Stump × Levin × C2A2-core, collective-substance hylomorphism with mirror-neuron coupling where Levin's bioelectric coupling sits)"
 evidence_strength_summary: "Empirical: persistence of predictive-model bias after the precipitating event (well-supported in clinical work on trauma and habit); vagal-tone recovery through positivity-resonance practices (Fredrickson, high). Formal: Stump's collective-substance hylomorphism (mid evidence). Speculative: the analog of indulgence-economy in the network's framework -- 'merit transferability' as broaden-and-build amplification within a real corporate substance. Theological: Wright on the Pauline 'in Christ' as the locus of corporate restoration (high); Rohr PRS-02 on order-disorder-reorder (register High; its application here mid). Register grades split 2026-09-07: Stump PRS-14 High / PRS-15 Medium / PRS-16 Speculative."
 tags: [synthesis, day/104, theme/persistence-of-disorder, theme/restoration]
-last_qc_at: "2026-09-14T18:29:41"
+last_qc_at: "2026-09-25T02:19:48"
 last_qc_outcome: "pass"
 ---
 
