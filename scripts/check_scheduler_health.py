@@ -494,6 +494,16 @@ def verdict_task(task, now_local):
     """Did this registry task fire when its cron said it should?"""
     tid = task.get("id", "<no id>")
 
+    # 2026-09-24 the desktop app moved 31 tasks to cloud scheduled tasks ("via
+    # sweep"), leaving each a frozen, disabled local entry. For three days this
+    # line called all 31 "OK: disabled", so none was watched. Moved is not off:
+    # say so, and say where the truth now lives.
+    mig = task.get("migratedToRemote")
+    if mig:
+        return WARN, (f"{tid}: moved to a cloud scheduled task "
+                      f"({mig.get('triggerId', '?')}, {task.get('migratedToRemoteAt', '?')[:10]}); "
+                      f"the Mac registry can no longer tell whether it fires -- check it there, "
+                      f"or by the artifact it produces")
     if not task.get("enabled", False):
         return OK, f"{tid}: disabled"
 

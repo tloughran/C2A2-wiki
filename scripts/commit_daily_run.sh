@@ -159,10 +159,11 @@ branch=$(git -C "$REPO" symbolic-ref --short HEAD 2>/dev/null)
 # Without this, a dirty tree from any source would get committed under a
 # "C2A2 daily run" message, which is a lie in the log and hides the real author.
 if [ "$SKIP_RUN_CHECK" -eq 0 ]; then
-  age=$(REGISTRY_GLOB="$REGISTRY_GLOB" TASK_ID="$TASK_ID" python3 - <<'PY'
+  age=$(REGISTRY_GLOB="$REGISTRY_GLOB" TASK_ID="$TASK_ID" REPO="$REPO" python3 - <<'PY'
 import glob, json, os, sys
 from datetime import datetime, timezone
 newest = None
+migrated = False
 for path in glob.glob(os.environ["REGISTRY_GLOB"]):
     try:
         tasks = json.load(open(path)).get("scheduledTasks", [])
@@ -171,9 +172,19 @@ for path in glob.glob(os.environ["REGISTRY_GLOB"]):
     for task in tasks:
         if task.get("id") != os.environ["TASK_ID"]:
             continue
+        migrated = migrated or bool(task.get("migratedToRemote"))
         stamp = task.get("lastRunAt")
         if stamp and (newest is None or stamp > newest):
             newest = stamp
+# Moved to a cloud scheduled task (2026-09-24): the local lastRunAt is frozen.
+# The cloud run's first act writes scheduler/run_stamps/<id>.json; trust that.
+if migrated:
+    newest = None
+    try:
+        newest = json.load(open(os.path.join(os.environ["REPO"], "scheduler", "run_stamps",
+                                             os.environ["TASK_ID"] + ".json")))["started_at"]
+    except (OSError, ValueError, KeyError, TypeError):
+        print("NOSTAMP"); sys.exit(0)
 if newest is None:
     print("NONE"); sys.exit(0)
 ran = datetime.fromisoformat(newest.replace("Z", "+00:00"))
@@ -181,6 +192,7 @@ print(f"{(datetime.now(timezone.utc) - ran).total_seconds() / 3600:.1f} {ran.tim
 PY
 ) || fail "could not read the task registry"
   [ "$age" = "NONE" ] && fail "$TASK_ID is not in any registry -- cannot confirm a run"
+  [ "$age" = "NOSTAMP" ] && fail "$TASK_ID moved to a cloud scheduled task and wrote no run stamp (scheduler/run_stamps/$TASK_ID.json) -- cannot confirm a run"
   # The block prints "<hours> <epoch>"; the authorship guard below needs the epoch.
   RUN_START_EPOCH="${age##* }"
   age="${age%% *}"

@@ -165,6 +165,12 @@ def main():
            mod.verdict_task(task(enabled=False, lastRunAt=iso(
                NOW_UTC - timedelta(days=900))), NOW_LOCAL)[0],
            mod.OK)
+    # 2026-09-27: 31 tasks moved to the cloud read as "OK: disabled" for three days.
+    expect("a task moved to the cloud is not silently OK",
+           mod.verdict_task(task(enabled=False, lastRunAt=iso(NOW_UTC - timedelta(days=3)),
+                                 migratedToRemote={"triggerId": "trig_x"},
+                                 migratedToRemoteAt="2026-09-24T18:35:05Z"), NOW_LOCAL)[0],
+           mod.WARN)
     expect("one-time task that already fired warns, does not fail",
            mod.verdict_task({"id": "t", "enabled": True,
                              "lastRunAt": iso(NOW_UTC - timedelta(days=90))},
