@@ -32343,3 +32343,31 @@ ASSUMPTION-1680:
 *Extracted by the 14a end-of-day run, 2026-09-23. **26 items (1655–1680).** Coverage: no designer speech, twenty-fourth day. Twenty-seven sessions were read by three parallel readers (list positions 1–27, above 7316a3f7). Verified at source by this pass: PRS 867, CROSS 135, pending 35 (two 09-23 cards), review page 387,775 B, PREMISE-217, REVISE-483, the lit run note present, three bridge files 0 B, Hecht "15 Sept" ×3, and `/sessions` 38% in this sandbox. Status tally: CHALLENGED 4 · SUPPORTED 4 · UNTESTED 18. Registers were snapshotted as `*.bak.20260923-pre-14eod` before append.*
 
 ---
+
+*2026-09-25 (14a end-of-day slot): zero items. The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) that have supplied transcript access since 2026-04-13 (OPEN-003) are absent from this
+run's tool set — confirmed absent from loaded tools, deferred tools, and MCP servers still connecting.
+No transcript was available, so nothing was extracted; nothing was invented to fill the gap. See
+`changelog/2026-09-25_changes.md` and `OPEN-256`. This also covers 2026-09-24, which has no 14a/14b
+changelog or snapshot at all.*
+
+---
+
+*2026-09-26 (14a end-of-day slot): zero items. Same blocker as 2026-09-25 — the `session_info` MCP tools
+(`list_sessions`, `read_transcript`) are still absent from this run's tool set, confirmed independently
+this run rather than assumed from yesterday's finding. No transcript was available, so nothing was
+extracted; nothing was invented to fill the gap. See `changelog/2026-09-26_changes.md` and `OPEN-256`,
+which remains open and unanswered. This is the third consecutive day without a 14a/14b transcript pass
+(09-24 unexplained, 09-25 and 09-26 confirmed-blocked).*
+
+---
+
+*2026-09-27 (14a end-of-day slot): zero items. Same blocker as 2026-09-25 and 2026-09-26 — the
+`session_info` MCP tools (`list_sessions`, `read_transcript`) are still absent from this run's tool set,
+confirmed independently this run rather than assumed from prior findings. No transcript was available, so
+nothing was extracted; nothing was invented to fill the gap. See `changelog/2026-09-27_changes.md` and
+`OPEN-256`, which remains open and unanswered. This is the fourth consecutive day without a 14a/14b
+transcript pass (09-24 unexplained, 09-25, 09-26, and 09-27 confirmed-blocked). This run also fired at an
+unusual time (20:02 UTC) — see the changelog for the observation.*
+
+---

@@ -23735,3 +23735,24 @@ PRESUMPTION-1086:
 *Surfaced by the 14b end-of-day run, 2026-09-23, after 14a and against its output. **8 items (1079–1086).** Types: epistemic 3 · structural 1 · scaling 1 · normative 1 · methodological 2. Risk: High 3 · Medium 4 · Low 1 · Critical 0 (PRESUMPTION-1069 stands unaddressed). Checked against PRESUMPTION-1069–1078. The reader subagents also proposed that holding indefinitely is safe; this pass declined to file it as a duplicate of 1077/OPEN-253. Their other candidates are absorbed into 1079 and 1083.*
 
 ---
+
+*2026-09-25 (14b end-of-day slot): zero items. Same blocker as 14a — no transcript was available to read
+for unstated presumptions (the `session_info` MCP tools are absent from this run's tool set; see
+`OPEN-256`). Nothing was inferred in place of a transcript. This also covers 2026-09-24, which has no
+14a/14b changelog or snapshot at all.*
+
+---
+
+*2026-09-26 (14b end-of-day slot): zero items. Same blocker as 14a — no transcript was available to read
+for unstated presumptions (the `session_info` MCP tools remain absent from this run's tool set; see
+`OPEN-256`). Nothing was inferred in place of a transcript. Third consecutive day without a pass (09-24
+unexplained, 09-25 and 09-26 confirmed-blocked).*
+
+---
+
+*2026-09-27 (14b end-of-day slot): zero items. Same blocker as 14a — no transcript was available to read
+for unstated presumptions (the `session_info` MCP tools remain absent from this run's tool set; see
+`OPEN-256`). Nothing was inferred in place of a transcript. Fourth consecutive day without a pass (09-24
+unexplained, 09-25, 09-26, and 09-27 confirmed-blocked).*
+
+---

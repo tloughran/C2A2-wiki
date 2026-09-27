@@ -23629,3 +23629,208 @@ presumes a present human. The SQLite "copy-free read" design fails on its scratc
 
 Backups: `*.bak.20260924-pre-15pipeline` on for_lit_search, lit_search_returns, monitor_queue,
 validated_premises, revision_flags.
+
+
+## 2026-09-25 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Queue check: no new cohort. No search or disposition action taken.**
+
+Read the 15a, 15b, 15c agent definitions and `provenance_protocol.md` (Step 1). Ran `queue_scan.py` on
+this file (Step 2): 0 items `SEARCHED-15a`+`SEARCHED-15b` awaiting 15c, 0 items half-searched, 147 bare
+`[QUEUED]` literature-lane items unchanged — that is the standing 15d re-trigger backlog (oldest
+2026-07-05, now 82 days), untouched again, consistent with every daily run since at least 2026-09-19
+(seventh consecutive new-intake-only cycle; see the 2026-09-24 note above for the declared-defect
+history, DEFECT-I).
+
+**Why there is no cohort:** per `changelog/2026-09-25_changes.md`, the 14a/14b end-of-day pass that
+normally seeds this queue did not run today — the `session_info` MCP tools it needs
+(`list_sessions`, `read_transcript`) were absent from that run's tool set. It extracted nothing and
+queued nothing, and said so explicitly ("No items were queued to `for_lit_search.md` — there was
+nothing testable to route"). The same changelog also surfaces that 2026-09-24 has no 14a/14b changelog
+or snapshot at all, a second, earlier gap this pass did not create and cannot explain. `OPEN-256` was
+raised there and needs Tom.
+
+**This run's scope, stated plainly:** the task brief asks this pipeline to process newly queued items.
+There were none to process. This run did not start draining the 147-item backlog on its own initiative —
+that would be a large, expensive deviation (yesterday's 8-item literature cohort alone cost ~319k
+tokens) from a policy this file has declared and re-declared for weeks, and the fix for it (the 15d
+re-trigger lane starvation, DEFECT-I) has already been written up and left for Tom's decision rather than
+taken unilaterally by any run to date.
+
+No files other than this one were touched. Backup: `for_lit_search.md.bak.20260925-pre-15pipeline`.
+
+
+## 2026-09-26 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Queue check: no new cohort. No search or disposition action taken.**
+
+Read the 15a, 15b, 15c agent definitions and `provenance_protocol.md` (Step 1). Ran `queue_scan.py` on
+this file (Step 2): 0 items `SEARCHED-15a`+`SEARCHED-15b` awaiting 15c, 0 items half-searched, 147 bare
+`[QUEUED]` literature-lane items unchanged — that is the standing 15d re-trigger backlog (oldest
+2026-07-05, now 83 days), untouched again, consistent with every daily run since at least 2026-09-19
+(eighth consecutive new-intake-only cycle; see the 2026-09-24 note above for the declared-defect
+history, DEFECT-I).
+
+**Why there is no cohort:** per `changelog/2026-09-26_changes.md`, the 14a/14b end-of-day pass could not
+run again today — the `session_info` MCP tools it needs (`list_sessions`, `read_transcript`) are still
+absent from the tool set, with no change from 09-25. This is the third consecutive day the
+transcript-extraction layer has produced nothing (09-24 unexplained; 09-25 and 09-26 both
+confirmed-blocked). No items were queued to `for_lit_search.md` today. `OPEN-256` (raised 2026-09-25,
+asking whether the `session_info` integration is monitored anywhere and whether it is being deprecated
+or replaced) remains open and unanswered as of this run.
+
+**This run's scope, stated plainly:** unchanged from 09-25 — the task brief asks this pipeline to
+process newly queued items; there were none. This run did not start draining the 147-item backlog on its
+own initiative — that remains a decision left for Tom (the 15d re-trigger lane starvation, DEFECT-I,
+raised 2026-09-24) rather than one taken unilaterally by any run to date.
+
+No files other than this one were touched. Backup: `for_lit_search.md.bak.20260926-pre-15pipeline`.
+
+
+## 2026-09-27 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Queue check: no new cohort. No search or disposition action taken.**
+
+Read the 15a, 15b, 15c agent definitions and `provenance_protocol.md` (Step 1). Could not run
+`queue_scan.py` this cycle — the `device_bash` tool needed to execute it on Tom's machine failed on
+every attempt this run (3 consecutive failures, generic "device_bash failed in the device workspace,"
+no command-specific detail), so this run has its own tool-availability gap, mirroring the one already
+declared against 14a/14b. In its place: read the tail of this file directly and confirmed no content
+has been appended since the 2026-09-26 run note (23,687 lines total; last entry unchanged); listed
+`wiki/architecture/changelog/` and confirmed no `2026-09-27_changes.md` exists. Both checks agree: no
+14a/14b end-of-day pass has landed today as of this run (fired 2026-09-27 20:02 UTC), so there is no new
+cohort to search or disposition. The 147-item bare-`[QUEUED]` backlog (oldest 2026-07-05, now 84 days)
+is carried forward from the last confirmed count (2026-09-26) rather than re-verified, since the scanner
+could not be run.
+
+**Why there is (probably) no cohort, again.** Per the 2026-09-25 and 2026-09-26 notes, the 14a/14b
+end-of-day pass has been blocked for at least two prior consecutive days by the absence of the
+`session_info` MCP tools (`list_sessions`, `read_transcript`) it needs to extract anything from session
+transcripts. This run cannot confirm today's cause directly (no 09-27 changelog exists to read), but the
+absence of any changelog at all — not even a "ran and found nothing" one — is consistent with the same
+block continuing, now a fourth consecutive day if so (09-24 unexplained, 09-25 and 09-26 confirmed-blocked,
+09-27 unconfirmed-but-silent). `OPEN-256` (raised 2026-09-25, asking whether the `session_info`
+integration is monitored or being deprecated/replaced) appears to remain open and unanswered.
+
+**This run's scope, stated plainly.** Unchanged from 09-25/09-26: the task brief asks this pipeline to
+process newly queued items; there were none available to find. This run did not start draining the
+147-item backlog on its own initiative — that remains a decision left for Tom (the 15d re-trigger lane
+starvation, DEFECT-I, raised 2026-09-24) — and, separately, did not attempt to work around the
+`device_bash` failure by re-deriving `queue_scan.py`'s logic from a full manual read of a 23,687-line
+file, which would be a large, unbudgeted deviation for a check whose answer (no new cohort) was already
+available from the two lighter checks above.
+
+**New this run:** the pipeline's own tool access failed for the first time in this note's run history
+(`device_bash` unavailable all 3 attempts). Flagging this as worth Tom's attention alongside OPEN-256,
+since both are now "this run couldn't reach the tool it needed" failures on either side of the pipeline
+boundary (14a/14b missing `session_info`; this run missing working `device_bash`).
+
+No files other than this one were touched (no backup taken this run — the `device_bash`-based `cp` used
+for prior `*.bak.YYYYMMDD-pre-15pipeline` snapshots was unavailable; nothing was overwritten so none was
+needed).
+
+## 2026-09-27 — 15d Periodic Monitor re-triggers (weekly cycle; 10 re-triggers of 10 items due)
+
+**Run context.** 15d last ran 2026-09-20 (7 days ago, on cadence). Today is **day 27**, so under the
+standing day-1-7 rule the **monthly premise-recheck cycle does not fire**; next monthly fire 2026-10-04
+(see ESCALATION 5 in monitor_queue.md).
+
+**Tooling note.** `device_bash` (the shell bridge to this machine) failed on every attempt this run (3
+consecutive generic failures, no command-specific detail), matching the identical failure the concurrent
+2026-09-27 `c2a2-lit-search-pipeline` run records above. Worked around via `device_stage_files` (to pull
+read-only copies of `monitor_queue.md`, `for_lit_search.md`, `validated_premises.md` and `queue_scan.py`
+into a scratch container for analysis) and the Desktop Commander local MCP server's
+`start_process`/`interact_with_process` (a working shell on this machine), which is what wrote this file.
+`queue_scan.py` WAS run successfully against the staged copy.
+
+**Scope this run, stated plainly (Rule 6 / Rule 12).** Given the budget concern the 09-13 and 09-20 runs
+already raised (a full reparse of a >24,000-line, four-format register is expensive), this run did NOT
+redo a full fresh backlog reparse or advance the ~205+148 standing carry-over population. It processed
+only the items independently verified as due by direct read: MONITOR-609, -610, -403 (next check
+2026-09-21), MONITOR-547, -548 (monthly, next check 2026-09-25), and five undated items from 15c's
+2026-09-21..24 intake (MONITOR-611, -613, -614, -615, -616 — Cadence: Weekly, no `Next 15d check` field,
+treated as due-now under the standing empty-field rule). MONITOR-612 is explicitly excluded (`Cadence:
+BOUND TO REVISE-480. Not weekly` — 15c's own instruction). The large standing carry-over population
+(MONITOR-345..608 less exits, and MONITOR-001..344) is NOT re-verified this run and is carried forward
+unchanged from the 09-20 count; a full recompute is recommended for the next run once device_bash access
+is restored.
+
+**`queue_scan.py` result (staged copy, current as of this run):** 147 bare `[QUEUED]` literature-lane
+blocks (120 from 2026-07, 10 from 2026-08, 17 from 2026-09); 0 items searched-by-both-not-dispositioned;
+0 half-searched. Matches the 09-26 pipeline note's count exactly — no drain since 09-26.
+
+--------------------------------------------------------------------------------
+### Literature-bearing (5) — re-triggers, added to the search backlog
+
+PRESUMPTION-983 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-609)
+  Comparative limb (machine-readable vs. prose remediation execution rate). First 15d re-trigger; intake
+  search only so far (2026-09-14). Owed: the four-way stratification named in REVISE-469 (PLACEMENT /
+  ADDRESSING / TOPIC-OWNERSHIP / COST). Priority: Medium.
+
+PRESUMPTION-991 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-610)
+  Core presumption (a falsifying observable exists for C2A2's own wager). First 15d re-trigger. Needs
+  Tom regardless of what any search returns (OPEN-208); queued per standing policy anyway. Priority: High.
+
+PRESUMPTION-414 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 3] (MONITOR-403)
+  Connectivity-as-health-proxy question. Second re-trigger (cycle 1->2 search ran 2026-09-16, both sides
+  strengthened — the only item to move on both sides since 2026-09-02). Owed: the PROXIMA-style
+  proxy-reliability correlation named at the 09-16 disposition. Priority: HIGH.
+
+ASSUMPTION-1175 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-547)
+  Context-isolation-reduces-correlated-error question (bears on MONITOR-001). First 15d re-trigger since
+  08-25 intake (15a Moderate-support / 15b Strong-challenge already on record). Owed: full-text
+  verification of Denisov-Blanch et al. and of arXiv:2606.26583. Priority: HIGH — NOVELTY-FLAG.
+
+ASSUMPTION-1178 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-548)
+  Hawkins/Hoffman non-veridicality conflation question. First 15d re-trigger since 08-25 intake. Owed:
+  the vault entry count and the Hawkins x Hoffman classification test named at intake. Priority:
+  HIGH — NOVELTY-FLAG.
+
+--------------------------------------------------------------------------------
+### Empirical / in-house measurement (5) — no literature search is owed on these
+
+*Queued, not skipped. Each names an in-house test with no runner assigned (PRESUMPTION-1069 /
+OPEN-249(b) still stands).*
+
+PRESUMPTION-1055 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-611)
+  Distinct-defect count: count defects disclosed 3+ times across runs without disposition, and their
+  median age. Priority: High.
+
+ASSUMPTION-1595 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-613)
+  Fixed-read-cost measurement: instrument one six-pair review run, decompose breaches into floor +
+  remainder. Priority: High.
+
+PRESUMPTION-1063 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-614)
+  Arithmetic comparison (already-existing numbers): reviewer-apparatus drift contribution vs.
+  substitute-cohort defect yield. Priority: Medium.
+
+ASSUMPTION-1627 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-615)
+  DOI/venue resolution check on every premise citation over PREMISE-200..217; count failures.
+  Priority: High.
+
+ASSUMPTION-1670 [QUEUED-EMPIRICAL] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-616)
+  In-house log of which steps are dropped in capped runs (first vs. last vs. cheapest). Priority: Medium.
+
+--------------------------------------------------------------------------------
+### Not re-triggered this run
+
+- **MONITOR-612** — excluded per 15c's explicit instruction (bound to REVISE-480's back-test result, not
+  date-driven).
+- **The standing weekly/monthly carry-over population** (MONITOR-345..608 less exits; MONITOR-001..344)
+  — not re-verified this run; last confirmed state 2026-09-20. Their 15d blocks remain standing and
+  unconsumed in this file; re-queueing them without confirming would risk duplicate work already queued.
+- **Event-driven, untouched:** MONITOR-003 (continuous), -041 (per billing-error event), -154
+  (per-incident), -544 (first Wright/Rohr-invoking synthesis).
+- **Monthly INCORPORATED premise re-checks — NOT queued.** Day 27; the monthly cycle does not fire
+  (next 2026-10-04). See ESCALATION 5 in monitor_queue.md (09-20 count: 100 ACTIVE premises past
+  `Re-check due`, growing).
+
+**Standing concerns carried forward, not independently re-verified this run:** the 147-item literature
+backlog's consumer (`lit_search_returns.md`, last written 2026-09-16) appears still unconsumed as of the
+09-27 pipeline note above; the `session_info` MCP-tool gap has blocked 14a/14b intake for at least 3-4
+consecutive days; DEFECT-I (15d re-trigger lane starvation — whether 15d should keep queueing into an
+undrained backlog) remains an open decision for Tom, unchanged by this run. This run added only the 10
+items independently verified as due, not the full standing population, to avoid worsening DEFECT-I while
+that decision is pending.
+
+Backup: `for_lit_search.md.bak.20260927-pre-15d`.

@@ -1790,3 +1790,92 @@ PROP-2026-09-24-001 (Fredrickson) is pending review.
 **Phase 5.6.** OK (TMPDIR=/tmp) — 1611 signals (+110), 87 pairs, span to 2026-09-23, stale_days 1, no WARN;
 qc_trace.csv promoted (harvest content changed).
 **Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+## 2026-09-25 — daily run (Fri, Carroll + Arkani-Hamed specialist day)
+
+**Phase 0.** Gmail `[C2A2-review-decision]` newer_than:3d returned only the 2026-09-23 thread (already fully
+processed in the 09-24 run: 35/35 approved, archived to `review/archive/2026-09-24_decisions.md`, all resolved
+by `proposal_id`). No new decision email — nothing to act on. Mark-as-read not re-attempted (standing note since
+09-16/09-20: auto-declined every recent run, needs a human or standing approval).
+
+**Phase 1.** `ingest_ledger.py` (run from `wiki/`, vault root `.`): approved/staging total=449 ingested=418
+decided-zero=29 **OPEN=1**, unchanged — PROP-2026-08-14-033 (Wright). Inbox clear — no files copied in via Phase 0.
+*(Naive filename/slug-vs-log scans reported 81-286 "unprocessed" phantom files depending on match strictness —
+same known trap named in the 09-20 entry. `ingest_ledger.py` is authoritative; not re-litigated this run.)*
+
+**Phase 2.** Single-pass web search on Levin, Friston, Hoffman, Hawkins, McGilchrist, Fredrickson, Stump, Carroll,
+Arkani-Hamed, Wolfram, Kastrup (no today-dated specialist cards were in `pending/` at run time, so none were
+skipped). Nothing cleared the quality bar (from-the-thinker, substantively new, not already captured) — every
+hit was either evergreen/reference material or already-captured content (e.g. Carroll's September AMA, already
+PROP-2026-09-15-004; Wolfram's Feb 2026 ruliad-metaphysics piece, already 2026-04-07 card). **0 proposals.**
+
+**Phase 3.** `review/2026-09-25_review.html` (15,643 bytes, 1 proposal — standing PROP-2026-09-24-001 Fredrickson).
+No browser binary in the sandbox shell to auto-open it (consistent with every recent run).
+
+**Phase 4.** Gmail draft created (`r-6675141655128696547`), carrying the review-page path, the pending Fredrickson
+card, and a flag on the stalled Wright card.
+
+**Phase 5.** `review/2026-09-21_review.html` past the 3-day window; `find -delete` still `Operation not permitted`
+on the mount, so `mv -f` to `review/_superseded/` was used instead (same workaround as 09-16 onward). 09-22/09-24/
+09-25 retained. `master/C2A2_master_wiki.md` status line updated for today; prior line archived as a superseded
+block in place.
+
+**Phase 5.5.** OK — `wiki/review_log.html` refreshed (6,746,797 bytes; cards 491, dates 131, responses 16;
+18 addresses scrubbed; grep confirms address-clean).
+
+**Phase 5.6.** OK — Level-2 stream rebuilt: 1611 signals (+0), 87 pairs, span 2026-04-03 -> 2026-09-23,
+stale_days 2, no WARN; qc_trace.csv unchanged apart from date_processed, not promoted.
+
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network unchanged: 956 PRS triplets / 140 cross-program connections / 94 findings.** Approved OPEN = 1
+(Wright PROP-2026-08-14-033 — now failed retrieval on essentially every run since mid-August; recommend closing
+rather than another retry, but that is Tom's call, not this run's). Pending = 1 (Fredrickson PROP-2026-09-24-001).
+
+## 2026-09-26 — daily run (Sat, Wolfram specialist day)
+
+**Phase 0.** Gmail search `[C2A2-review-decision]` newer_than:3d returned the 2026-09-23 thread only; already
+fully processed on 09-24 (35/35 approved, archived, ingested) — confirmed by spot-checking `approved/` for
+several of the ids. No new decision to act on. Mark-as-read attempted, failed: `insufficient scope` on the
+Gmail connector (same standing block noted 09-16/09-20/09-24; needs human re-auth, not another attempt).
+
+**Phase 1.** `ingest_ledger.py wiki`: approved/staging total=449 ingested=418 decided-zero=29 **OPEN=1**
+(PROP-2026-08-14-033, Wright, unchanged). One more retrieval attempt made via direct search + fetch on the
+canonical ntwrightpage URL: search surfaced nothing beyond what's already documented on the card; the fetch
+itself now fails with "too many redirects" — a third distinct failure signature (empty body -> out-of-provenance
+refusal -> redirect loop) across recent runs. Standing recommendation to close rather than retry again stands;
+Tom's call. Two known no-`proposal_id` files unchanged and left alone: `approved/2026-05-12_repair_manifest.md`
+(a manifest, not a proposal) and `inbox/2026-09-08_levin_virtue-as-external-setpoint.md` (paper-response
+artifact, explicitly marked "proposed triplets NOT written in" — distinct provenance from the daily pipeline).
+*(Naive filename-vs-PROCESSED_LOG scan again flags ~320 phantom "unprocessed" files spanning April-September;
+this is the known trap documented 09-20/09-25 — `ingest_ledger.py` is authoritative and was used, not the scan.)*
+Inbox otherwise clear. **0 files ingested, 0 triplets.**
+
+**Phase 2.** Single-pass web search on all 11 traditions (no today-dated specialist card in `pending/` at run
+time, so none were skipped). Wolfram (today's specialist) and Arkani-Hamed (41-day capture gap, the longest of
+any tradition) got closer attention. Nothing cleared the quality bar (from-the-thinker, substantively new, not
+already captured): the one near-miss was a September 2026 Sean Carroll Mindscape AMA on YouTube, already
+captured as PROP-2026-09-15-004. **0 proposals.**
+
+**Phase 3.** `review/2026-09-26_review.html` generated (1 proposal — standing PROP-2026-09-24-001 Fredrickson).
+No browser binary in the sandbox shell to auto-open it (consistent with every recent run).
+
+**Phase 4.** Gmail draft created, carrying the review-page path, the pending Fredrickson card, and the Wright
+retrieval note (third failure signature).
+
+**Phase 5.** `review/2026-09-22_review.html` past the 3-day window; `find -delete` still `Operation not permitted`
+on the mount, so `mv -f` to `review/_superseded/` was used instead. 09-24/09-25/09-26 retained.
+`master/C2A2_master_wiki.md` status line updated for today; prior line archived as a superseded block in place.
+
+**Phase 5.5.** OK — `wiki/review_log.html` refreshed (6,746,797 bytes; cards 491, dates 131, responses 16;
+18 addresses scrubbed; grep confirms address-clean).
+
+**Phase 5.6.** OK — Level-2 stream rebuilt: 1611 signals (+0), 87 pairs, span 2026-04-03 -> 2026-09-23,
+stale_days 3, no WARN; qc_trace.csv unchanged apart from date_processed, not promoted.
+
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network unchanged: 956 PRS triplets / 140 cross-program connections / 94 findings.** Approved OPEN = 1
+(Wright PROP-2026-08-14-033 — third distinct failure signature now on record; recommend closing rather than
+another retry, but that is Tom's call, not this run's). Pending = 1 (Fredrickson PROP-2026-09-24-001, now 2
+days in the queue with no decision email yet).

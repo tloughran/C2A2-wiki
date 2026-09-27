@@ -1476,3 +1476,31 @@ Each carries a `**Wikilinks (sewing, 2026-09-20):**` line; that is the mechanism
 ## Verification (fail-loud)
 
 All 10 pages assert-checked byte-for-byte against their pre-write content (prefix identity plus SHA-1 of the original), each carrying exactly one `## Agentic Calls` heading and exactly one `Sewing Agent on 2026-09-20` stamp; YAML frontmatter and existing `## Cross-Tradition Signals` sections intact. All 16 bridge files assert-checked the same way, one `Sewing Agent, 2026-09-20` stamp each, each append verified to contain at least one wikilink. The two zero-byte files (`hoffman_loughran`, `kastrup_loughran`) were seeded with a title header; the remaining three known zero-byte bridges (`arkanihamed_loughran`, `carroll_hawkins`, `mcgilchrist_wright`) are unchanged — this agent does not delete and does not invent content to fill a file. CSV: appended after asserting no `2026-09-20` row existed; verified as exactly one occurrence. Post-run census re-run from scratch and diffed against the pre-run census: **exactly 10 files changed backlink count, all 10 of them the processed pages, no collateral movement.** Nothing deleted, nothing overwritten, no files created in the vault beyond content appended to existing paths, no probe files left behind. No JS, HTML or CSS touched.
+
+
+---
+
+## Run: 2026-09-27 — ABORTED (device_bash wedged, no census performed)
+
+**Time of run:** 2026-09-27 20:02 UTC (scheduled task `C2a2 sewing agent weekly`, trig_015ixKseBJZdGaUexnxbVPNo)
+**Agent:** Sewing Agent v0 — orphan integration + agentic call injection
+**Vault:** `/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/`
+
+### What happened
+
+This run's cloud session had the connected folder (`RC Karpathy Wiki Project`) reachable via `device_list_dir` / `device_stage_files` / `device_commit_files`, but **`device_bash` (the local shell on Tom's machine) failed identically five times in a row** — including on a bare `true` and `echo hello && date` — and returned an explicit wedged-workspace error instructing not to retry further. `get_device_info` reported the local MCP server `Desktop Commander` as `announced` alongside the usual set; whether that's related to the wedge is a guess, not a finding.
+
+Every prior logged run of this agent performed Step 1 (the full-vault backlink census, currently ~5,117 pages per the 2026-09-20 CSV row) via shell scripting on the device. Without `device_bash`, that census is not tractable by directory-listing/file-staging alone within any reasonable budget — Rule 6's per-task token budget was already reported broken by ~10x on ordinary runs *with* shell access (run of 2026-09-20, item 8); reproducing a 5,000+ file scan one `device_list_dir`/`Read` call at a time would be orders of magnitude worse, and would still not produce a trustworthy backlink count (partial scans undercount both backlinks and orphans in ways that are silently wrong, not visibly incomplete).
+
+### Decision — fail loud, do not fabricate
+
+Rather than write a guessed or partial connectivity count into `architecture/metrics/connectivity_log.csv` (an append-only trend file other tooling reads), or select "orphans" without actually knowing their backlink count, this run stopped after diagnosing the blocker. **No pages were read for scoring. No `## Agentic Calls` sections were written. No bridge notes were written. No CSV row was appended this week.** Nothing in the vault was touched beyond this log entry.
+
+### For Tom
+
+- The blocker is local to this session's device-bridge shell, not to the vault or the schedule. `device_list_dir`, `device_stage_files`, `device_commit_files` all worked fine throughout — only `device_bash` was wedged.
+- Likely fix: restarting the Claude desktop app (or the device-bridge connection) before the next scheduled firing. If it recurs, worth checking whether `Desktop Commander`'s local MCP process is contending for the same shell.
+- No connectivity data point exists for 2026-09-27. The next successful run should note the gap rather than treat 2026-09-20 → next-run-date as a normal one-week delta.
+- Nothing here needs urgent action beyond a restart before next Sunday's run; the vault itself is untouched and no worse off than last week.
+
+*Logged by Sewing Agent (aborted run) on 2026-09-27.*

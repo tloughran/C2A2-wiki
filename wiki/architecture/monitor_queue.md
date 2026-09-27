@@ -24528,3 +24528,106 @@ entries; no worker is assigned (PRESUMPTION-1069 / OPEN-249(b) still stands):
   -1671 (concurrent QC runs read different states), -1676 (PROP-2026-09-02-002 retrieval check due today,
   09-24; check on 09-25 — same fact as ASSUMPTION-1632); PRESUMPTION-1080 (as 1666), -1084 (diff the
   project-memory contract copies), -1086 (reader-subagent summary fidelity; sample 5 claims/night).
+
+
+================================================================================
+## 2026-09-27 RUN — 15d Periodic Monitor (weekly cycle only; scheduled c2a2-periodic-monitor-weekly)
+
+**Run fired on schedule.** 15d last ran 2026-09-20; interval 7 days, the contracted cadence. Today is
+**day 27**, so under the standing day-1-7 rule the **monthly cycle does not fire** (next 2026-10-04). 15d
+does not evaluate evidence; it re-triggers 15a/15b and tracks trajectories.
+
+**Tooling note.** `device_bash` failed on all 3 attempts this run (generic failure, no command-specific
+detail) — the same failure the concurrent `c2a2-lit-search-pipeline` run hit today (2026-09-27, fired
+20:02 UTC, same as this run). Worked around via `device_stage_files` (staged read-only copies for
+analysis) and Desktop Commander's `start_process` (a working local shell on this machine, used for the
+backup and both file writes this run). `queue_scan.py` ran successfully against the staged copy.
+
+**Scope this run, stated plainly (Rule 6 / Rule 12).** This run verified and processed 10 items by direct
+read: MONITOR-609, -610, -403, -547, -548 (all independently confirmed overdue), plus MONITOR-611, -613,
+-614, -615, -616 (15c's 09-21..09-24 intake, Cadence: Weekly, no `Next 15d check` field — treated as
+due-now per the standing empty-field rule). MONITOR-612 excluded per 15c's explicit non-weekly
+instruction. It did **NOT** re-verify or advance the large standing carry-over population (~205 weekly +
+~148 monthly/low-priority items last confirmed 2026-09-20) — that needs a full register reparse, which
+this run's tooling gap made expensive to redo safely in the time available, so those items' cycle counts
+and next_check dates are left **untouched rather than guessed at.** Recommend the next run (with
+device_bash restored) do a full recompute.
+
+### Processed this run
+
+- **MONITOR-609** (PRESUMPTION-983, comparative limb): cycle 0 -> 1. Re-queued in `for_lit_search.md`
+  `[RE-TRIGGER by 15d: 2026-09-27, cycle 1]`. Evidence trajectory: no prior cycle — baseline. Next 15d
+  check: 2026-10-04.
+- **MONITOR-610** (PRESUMPTION-991, core presumption): cycle 0 -> 1. Re-queued, same tag. Baseline
+  trajectory. Next 15d check: 2026-10-04.
+- **MONITOR-403** (PRESUMPTION-414): cycle 2, queued for cycle 3. Re-queued `[RE-TRIGGER by 15d:
+  2026-09-27, cycle 3]`. Trajectory unchanged since 09-16 (both sides strengthened then; no search ran
+  since). Next 15d check: 2026-10-04.
+- **MONITOR-547** (ASSUMPTION-1175): cycle 0 -> 1 (first 15d-triggered search since 08-25 intake).
+  Re-queued. Next 15d check: 2026-10-25 (monthly).
+- **MONITOR-548** (ASSUMPTION-1178): cycle 0 -> 1. Re-queued. Next 15d check: 2026-10-25 (monthly).
+- **MONITOR-611, -613, -614, -615, -616**: first-ever 15d cycle (0 -> 1), routed `[QUEUED-EMPIRICAL]`
+  (each item's own "what would change the disposition" names an in-house measurement, not a literature
+  search — routing rationale recorded in `for_lit_search.md`). Next 15d check: 2026-10-04 (weekly), each.
+- **MONITOR-612**: NOT re-triggered. `Cadence: BOUND TO REVISE-480. Not weekly` per 15c. No next_check
+  date assigned; re-read when the back-test named in REVISE-480 returns.
+
+**Routing: 5 [QUEUED] literature, 5 [QUEUED-EMPIRICAL]. This run adds FIVE items to the unsearched-
+literature backlog (147 -> 152 once queued), and FIVE to the empirical lane.**
+
+### Not touched this run (carried forward, not re-verified)
+
+- **Weekly carry-over population** (MONITOR-345..499 less exits, -500..-543, -545..-608 less this run's
+  5): 15d blocks presumed still standing and unconsumed per the 09-20 count; **not re-verified. Do not
+  treat next_check dates on these entries as current** until a full reparse confirms them.
+- **Monthly/low-priority cohort** (MONITOR-001..344, less MONITOR-547/548 processed above): next_check
+  presumed 2026-10-04 per 09-20 count; not re-verified.
+- **Event-driven, untouched:** MONITOR-003, -041, -154, -544.
+- **Monthly INCORPORATED premise re-checks: NOT RUN.** Day 27. See ESCALATION 5 below.
+
+### Stale sweep
+
+None of the 10 items processed this run reaches the 4-cycle no-change threshold (MONITOR-403 is at cycle
+3 but moved on both sides at cycle 2, so it does not qualify as "no change"). No new item-level
+STALE-MONITOR-FLAG raised. The population-level flags raised 09-13/09-20 (queued-empirical backlog; the
+2026-07-05 stale-downgrade cohort) are carried forward unchanged — see the 09-20 entry above; not
+independently re-measured this run.
+
+### ESCALATIONS carried forward (status as of 2026-09-20 unless noted; not re-verified in detail this run)
+
+1. **ESCALATION 1 (11th run post-fire)** — MONITOR-420 / ASSUMPTION-428 auto-escalate trigger, fired
+   2026-07-19 (now ~70 days), still unactioned by 15c. 15d does not disposition; re-surfaced.
+2. **ESCALATION 2 (18th consecutive surfacing)** — literature/empirical backlog lane starvation
+   (DEFECT-I). 147 literature-lane blocks confirmed this run (`queue_scan.py`); empirical-lane count not
+   re-verified (129 at 09-20, growing weekly with no consumer per PRESUMPTION-1069/OPEN-249(b)). Still
+   ESCALATED to Tom, unresolved.
+3. **ESCALATION 3 (carried)** — MONITOR-423 starvation trigger; not re-verified this run.
+4. **ESCALATION 4 (19th run, if still unresolved)** — MONITOR-005/-012 empirical limbs passed their
+   2026-09-08 auto-escalate with tests unrun as of 09-20 (12 days unactioned then); not independently
+   re-verified this run — recommend 15c confirm current status.
+5. **ESCALATION 5 (third raising)** — the monthly premise-recheck lane has no catch-up rule; 100 ACTIVE
+   premises past `Re-check due` as of 09-20 (growing ~11/week), oldest 42 days as of 09-20. Today (day 27)
+   again does not fire; next opportunity 2026-10-04. Still ESCALATED to Tom: either give the monthly lane
+   a catch-up rule, or state the true cadence and amend the register.
+6. **NEW — tooling gap.** `device_bash` failed on all 3 attempts this run, mirroring the concurrent
+   2026-09-27 `c2a2-lit-search-pipeline` run's identical failure at the same fire time. Both runs worked
+   around it independently. Two runs hitting the identical tool failure on the same day, at the same
+   scheduled fire time, is worth Tom's attention as a possible real infrastructure issue rather than
+   session-specific noise.
+
+### Budget note (Rule 6)
+
+This run's investigation exceeded a lightweight weekly-bookkeeping budget, for the reason the 09-20 run
+already named: a 24,530-line, four-format register cannot be scanned without a programmatic parse. This
+run's own first parse (built fresh, without yet having found the 09-20 run's log) initially over-scoped
+the problem before that prior log was located and used to bound today's actual action to 10 verified
+items. Recommendation unchanged from 09-20: fixing the register's format (so a single entry states its
+own schedule) is the cheapest of the standing escalations and would let a 15d run scan its own file
+instead of the whole run history each week.
+
+**Run summary:** 10 items processed (5 literature re-triggers, 5 first empirical entries), 1 item
+(MONITOR-612) confirmed excluded, 0 new stale flags, 0 premise re-checks (day 27), ~353 items (weekly +
+monthly carry-over population) left untouched and unverified pending a full reparse. Queue state for the
+10 processed items current as of 2026-09-27; queue state for everything else last confirmed 2026-09-20.
+
+Backup: `monitor_queue.md.bak.20260927-pre-15d`.

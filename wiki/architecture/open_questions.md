@@ -3426,3 +3426,22 @@ OPEN-255:
     the jobs allowed to use it?
   Needs: **Tom**.
   Status: OPEN
+
+## 2026-09-25 — raised by the 14a/14b end-of-day pass (blocked run)
+
+OPEN-256:
+  Raised: 2026-09-25 by 14a/14b (blocked run)
+  Question: Regression of OPEN-003 (resolved 2026-04-13). The session_info MCP tools (list_sessions,
+    read_transcript) that have supplied 14a/14b's transcript access since that date are absent from this
+    run's tool set entirely — not among loaded tools, not among deferred tools, not among MCP servers
+    still connecting. Nothing appears to have detected the loss before this run tried to use it. Is that
+    integration monitored anywhere, or does its failure surface only as an empty registry update that
+    looks identical to "no C2A2 session occurred today"?
+  Context: This also covers 2026-09-24, which has no 14a/14b changelog or snapshot at all, even though
+    the 15-series lit-search pipeline ran that night against the 09-23 intake — so the gap is at least
+    two consecutive days in the 14a/14b layer specifically, not one.
+  Related decisions: OPEN-003 (resolved 2026-04-13)
+  Needs: **Tom** — confirm whether session_info is still meant to be wired into the 14a/14b scheduled
+    task, and if so, what changed. If it is being deprecated or replaced, 14a/14b's "Daily Cowork session
+    transcripts (provided as input on each run)" input assumption needs updating too.
+  Status: OPEN

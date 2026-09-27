@@ -1470,3 +1470,32 @@ ruling and an agent's account of one stays visible until the field REVISE-476 as
 
 **Asks held by nobody:** LEAKAGE ruling and PROP-2026-09-02-002 retrieval, both due **09-24 (tomorrow)**
 (ASSUMPTION-1632, -1676). Also unheld: `summa-2026-daily-batch` retirement (third day), and OPEN-249–255.
+
+
+## Index note — 2026-09-25 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are absent from this run's tool set, so no session transcript could be read and no
+decision activity for 2026-09-25 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker recorded in `changelog/2026-09-25_changes.md`, `assumptions.md`, `presumptions.md`,
+and `OPEN-256`. Also affects 2026-09-24, which has no 14a/14b changelog or snapshot at all.
+
+
+## Index note — 2026-09-26 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-26 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25, now on its second consecutive confirmed day (third counting the
+unexplained 09-24 gap). Recorded in `changelog/2026-09-26_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered.
+
+## Index note — 2026-09-27 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-27 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25 and 2026-09-26, now on its third consecutive confirmed day (fourth
+counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-27_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered. This run also fired at 20:02 UTC,
+outside the ~02:00–04:49 UTC slot every prior 14a/14b pass has used — see the changelog.
