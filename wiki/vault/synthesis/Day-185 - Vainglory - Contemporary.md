@@ -18,8 +18,8 @@ karpathy_wiki_sources:
   - "traditions/rohr/prs_triplets.md (PRS-16, Confidence Medium-High: the disordered loves — humility, vainglory, pride, self-love — without reducing to 'ego is bad'; PRS-54, Confidence High, added 2026-09-01: the false self as a set of temporary costumes — body image, job, money, success — that poses and substitutes for the real; PRS-73, Confidence High, added 2026-09-10: the false self as a scope-and-substitution failure, not a moral one — a partial good mistaken for the whole; PRS-52, Confidence High, added 2026-09-01: the true self as an absolute reference point both within and beyond the person, from Immortal Diamond. Anchored 2026-09-18 — the earlier 'Rohr canonical' line predates all three records)"
 evidence_strength_summary: "Graded per record rather than averaged per tradition (corrected 2026-09-02). Empirical and firm: the relational leg — Fredrickson PRS-01, Confidence High, vagal tone and upward spirals. Medium and partly interpretive: the self-estimate and appearance legs — Friston PRS-04 and McGilchrist PRS-05 are both labelled (Implicit) and both Confidence Medium, so the predictive-coding formalism is mature in the literature but the C2A2 records carrying it are reconstructions. Analytic-philosophical/theological: the vainglory-as-misordered-esteem typology, Stump PRS-22, Confidence Medium. Theological: the claim that worth should be sourced in God's verdict rather than self-display or self-diminishment — Rohr PRS-16 (Confidence Medium-High), with the false-self economy and the given largeness now anchored to Rohr PRS-54, PRS-73 and PRS-52 (all Confidence High, added 2026-09-01 to 09-10), and Wright, whose half of that bullet is a canonical-work citation carrying no id (declination re-tested at 66 records, 2026-09-18, holds)."
 tags: [synthesis, day/185, theme/vainglory, theme/self-image, q/132, q/133]
-last_qc_at: "2026-09-18T00:29:18"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-26T10:21:31"
+last_qc_outcome: "pass"
 ---
 
 # Day 185 — Vainglory (Contemporary)

@@ -5,7 +5,8 @@ url: https://www.youtube.com/watch?v=yNObomt4fpU
 title: Idolatry and Divination
 summa_ref: "Secunda Secundae, Q.94–95"
 duration_seconds: 967
-word_count: 2862
+word_count: 2775
+word_count_note: "Corrected 2026-09-26 by QC sweep from a declared 2862, recomputed with the constitution regex over the rendered transcript body (post the Acts 1:23 Justus restoration). 2862 was stale and did not match the actual rendered text; the corrected figure sits close to raw_asr_word_count, consistent with light typo cleanup producing minimal word-count change."
 raw_asr_word_count: 2775
 length_tier: medium
 segment_count: 404
@@ -15,7 +16,7 @@ fetched_at: 2026-05-28
 fetch_path: chrome-mcp via tactiq.io
 synthesis: "[[Day-165 - Idolatry and Divination - Contemporary]]"
 fidelity_checked: true
-last_qc_at: "2026-09-18T14:37:08"
+last_qc_at: "2026-09-26T16:26:40"
 last_qc_outcome: "rewrote"
 tags: [summa, day/165, pars/II-II, q/94–95]
 ---
@@ -24,7 +25,7 @@ tags: [summa, day/165, pars/II-II, q/94–95]
 
 Austin Habash's Day 165 episode of the *Summa* podcast covers Aquinas's Secunda Secundae, Q.94–95.
 
-> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); theologia → Theologiae. Audit lines added by QC 2026-09-18, fixes present but unlogged (all ASR mishearings with exact antecedents): auggury / augguries → augury / auguries; sordilage → sortilege; forno / fornowledge → foreknow / foreknowledge; barsabis → Barsabbas; matias → Matthias (×2); idoltor → idolater.
+> Typo cleanup: Summa nira → Summa in a Year (×2, ASR intro-name garble); theologia → Theologiae. Audit lines added by QC 2026-09-18, fixes present but unlogged (all ASR mishearings with exact antecedents): auggury / augguries → augury / auguries; sordilage → sortilege; forno / fornowledge → foreknow / foreknowledge; barsabis → Barsabbas; matias → Matthias (×2); idoltor → idolater. Audit lines added by QC 2026-09-26: apostilhip → apostleship (ASR mishearing, Acts 1:25). Quote restoration (Acts 1:23): raw ASR reads "...who was surnamed and Matthias," dropping "Justus" (confirmed against /tmp/day165_segments.json — the word is absent from the raw ASR itself, not lost in rendering); restored to "...who was surnamed Justus, and Matthias" per the canonical RSV text.
 
 [00:05] Hello, my name is Austin Habash, the founder of Think Catholic, and you're listening to the Summa in a Year podcast, where we study St. Thomas Aquinas's Summa
 
@@ -210,9 +211,9 @@ because there is practically no other way to make a decision in some circumstanc
 
 necessarily unlawful. Think about Matthias, how he was chosen in the book of Acts where it is written. And they put forward two Joseph called Barsabbas who
 
-was surnamed and Matthias. And they prayed [14:45] and said, Lord, who knowest the hearts of all men, show which one of these two thou hast chosen to take the place in
+was surnamed Justus, and Matthias. And they prayed [14:45] and said, Lord, who knowest the hearts of all men, show which one of these two thou hast chosen to take the place in
 
-this ministry and apostilhip from which Judas turned aside to go to his own place. And they cast lots for them, and the lot fell on Matthias, and he was
+this ministry and apostleship from which Judas turned aside to go to his own place. And they cast lots for them, and the lot fell on Matthias, and he was
 
 enrolled with the 11 apostles. Also according to Augustine, when persecution hits a city, for example, and some of the bishops ought to rightly flee for
 

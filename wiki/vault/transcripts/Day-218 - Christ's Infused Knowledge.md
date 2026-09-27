@@ -16,7 +16,7 @@ fetch_path: youtube-transcript-api (bash sandbox)
 synthesis: "[[Day-218 - Christ's Infused Knowledge - Contemporary]]"
 fidelity_checked: true
 tags: [summa, day/218, pars/III, q/11 q/12]
-last_qc_at: "2026-09-18T08:36:04"
+last_qc_at: "2026-09-26T16:26:41"
 last_qc_outcome: "rewrote"
 ---
 
@@ -24,7 +24,7 @@ last_qc_outcome: "rewrote"
 
 > Episode: <https://www.youtube.com/watch?v=wv99ETv9k3I>
 > Summa reference: *Tertia Pars (III), Q.11-12*
-> Typo cleanup (QC 2026-09-18): fantasms → phantasms (x4 in the transcript body; the ASR reads *phantasms* in all four places and the render had regressed them)
+> Typo cleanup (QC 2026-09-18): fantasms → phantasms (x4 in the transcript body; the ASR reads *phantasms* in all four places and the render had regressed them) Editorial note added by QC 2026-09-26: Habash cites “Matthew 19” for the half-shekel-tax pericope (Peter and the temple tax); raw ASR confirms he says “19”, but the passage is Matthew 17:24-27. Flagged in the body with a bracketed correction rather than altered in his mouth, since this is Habash’s own misspoken reference, not an ASR mishearing.
 
 Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul of Christ — whether by it He knew all things, whether He could use it without turning to phantasms, whether it was discursive, and whether it was distinguished by diverse habits) and III Q.12 (the acquired or empirical knowledge of Christ's soul — whether He knew all things by it, whether He advanced in it, and whether He learned from men or angels). Austin Habash contrasts God's single, sweeping self-knowledge (in knowing Himself He knows all else) with our 'broken up' knowledge of the world acquired piecemeal.
 
@@ -74,7 +74,7 @@ Context: Day 218 covers III Q.11 (the knowledge imprinted or infused in the soul
 
 [03:28] according to his human faculties his knowledge could work discursively as we see in scripture where Jesus reasons with Peter as it's written in Matthew
 
-[03:38] 19. When they came to Capernaum the collectors of the half shekele tax went up to Peter and said does not your teacher pay the tax? He said yes. And
+[03:38] 19 [Matthew 17:24-27 — Habash says “19”]. When they came to Capernaum the collectors of the half shekele tax went up to Peter and said does not your teacher pay the tax? He said yes. And
 
 [03:46] when he came home, Jesus spoke to him first, saying, "What do you think, Simon? From whom do kings of the earth take toil or tribute? From their sons or
 

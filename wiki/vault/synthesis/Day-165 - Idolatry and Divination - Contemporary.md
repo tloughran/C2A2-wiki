@@ -21,8 +21,8 @@ karpathy_wiki_sources:
   - "wiki/traditions/rohr/prs_triplets.md (PRS-59 idolatry as the term with no operational definition outside a confessional frame; PRS-21 the Universal Christ in creation, the pattern any legitimate image participates in; PRS-48 the ontological premise without which the Universal Christ reads as pious re-description; repointed at QC 2026-09-04 from the stale canonical-works fallback, which named the tradition's wiki node rather than its PRS register. Disclosure, QC 2026-09-18: the pattern-in-creation claim had been anchored to PRS-03, whose Label reads Universal Christ but whose record is a warrant for multi-tradition inquiry; PRS-21 carries the claim in its own Resource line at the same Medium grade. PRS-48's Problem line names PRS-03 as the tradition's anchor claim, which is how the id was reached; the claim this file makes is PRS-21's)"
 evidence_strength_summary: "Formal-strong on computational irreducibility of generic systems (Wolfram) and on active-inference forecasting (Friston). On community memory anchoring the register supports two separable steps at different strengths: PRS-03 in the Fredrickson-tradition wiki (positivity resonance as coupling that scales from dyad to communal worship, Confidence High) and PRS-26 (tradition-internal high-resonance dyads transmitting a tradition's emotional grammar across generations, Confidence Medium). Both concern living participants; the extension to veneration of the dead is this commentary's own extrapolation and is suggestive, not empirical-strong. Theological in grade on the Pauline idolatry diagnosis (Wright) and on contemplative apophasis (Rohr). The integrative claim — that pre-modern 'demonic divination' maps onto contemporary disinformation channels — is suggestive, not proven."
 tags: [synthesis, day/165, theme/legitimate-information-source, theme/icon-vs-terminus, theme/contingent-future, pars/II-II, q/94-95]
-last_qc_at: "2026-09-18T14:37:08"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-26T16:26:40"
+last_qc_outcome: "pass"
 ---
 
 # Day 165 — Idolatry & Divination (Contemporary Parallel)

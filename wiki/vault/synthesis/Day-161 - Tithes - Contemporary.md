@@ -19,8 +19,8 @@ karpathy_wiki_sources:
   - "wiki/master/cross_program_index.md (CROSS-069 Stump x Friston x Fredrickson — corporate substance as the ontological status of collective free-energy minimization / positivity resonance)"
 evidence_strength_summary: "Empirical on cooperation-and-defection in the morphogenetic field (Levin PRS-02/07, both High) and on prosocial neurobiology (Fredrickson PRS-03). Formal on the conditions for collective agency (Friston PRS-22 High, PRS-06 Medium); the narrower reading of the tithe-fraction as precision released upward is this synthesis's own extension of the formalism and is marked speculative rather than carried by the register. Theological on Pauline koinōnia and cosmic-body sharing (Wright, Rohr). The PRS solution itself is speculative-integrative — a proposal about what religious giving *is* under a monist ontology, not a settled finding."
 tags: [synthesis, day/161, theme/resource-flow, theme/collective-agency, pars/II-II, q/86-87]
-last_qc_at: "2026-09-18T14:36:38"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-26T16:26:40"
+last_qc_outcome: "pass"
 ---
 
 # Day 161 — Tithes & Oblations (Contemporary Parallel)

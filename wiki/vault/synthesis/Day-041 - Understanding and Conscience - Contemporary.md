@@ -90,8 +90,8 @@ karpathy_wiki_sources:
   - "wright: Romans 2:14–15 cited as canonical work. wiki/traditions/wright/prs_triplets.md searched by Problem text at 41 records (2026-09-04) and re-tested at 66 (2026-09-18): holds no conscience / natural-law record — no register target exists for this claim; PRS-59 adjacent only"
 mind_first_reframe: "Q.79's intellectual powers and Q.80's appetitive powers are not separate metaphysical organs but modes of one inferential system, individuated by the generative model each runs and the object that model targets. Agent and passive intellect are the cortex's generative and inference pathways (HTM as cortical FEP, CROSS-011); understanding-reason-intelligence is the gradient between fast gestalt-recognition and slow propositional inference; speculative-vs-practical intellect is epistemic-vs-pragmatic free energy minimization. Synderesis is the natural attractor-toward-the-good constitutive of being an agent under FEP; conscience is the McGilchristian act of bringing right-mode value-perception into left-mode articulate judgment on the particular case. Sensitive vs. intellectual appetite is the timescale and abstraction-level split inside one perception-action loop, not a substance-stacking hierarchy."
 central_theme_thread: "Each alter's cognitive powers are individuated by the limits of its generative model — what its agent intellect can reach, what its passive intellect retains, what its synderesis carries by natural orientation, what its conscience can articulate. Salvation in fear and trembling on the cognitive register is the disciplined cultivation of these powers — speculative intellect oriented toward truth, practical intellect toward the good, conscience refined by hemispheric balance — under the loving-unity attractor that synderesis already carries as constitutive of being-an-agent."
-last_qc_at: "2026-09-18T06:54:13"
-last_qc_outcome: "rewrote"
+last_qc_at: "2026-09-26T08:20:22"
+last_qc_outcome: "pass"
 tags: [synthesis, day/041, theme/intellect, theme/active-inference, theme/synderesis, theme/conscience, theme/cortical-architecture, theme/appetite]
 
 ---
