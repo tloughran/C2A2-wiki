@@ -117,7 +117,7 @@ This does **not** relax the standing gates, which exist for blast radius rather 
 **Vault path:** `/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/`
 
 ### Key Files (paths relative to the repo root)
-- `wiki/wiki_narration.html` — the generated visualization (self-contained, 60.27MB as of 2026-09-28)
+- `wiki/wiki_narration.html` — the generated visualization (self-contained, 60.32MB as of 2026-09-28 — over GitHub's 50MB warning threshold)
 - Source scripts live in the repo, NOT in a Cowork session:
   - `wiki/c2a2-wiki-narration/regen_sociogram.sh` — the supported wrapper; run this
   - `wiki/c2a2-wiki-narration/scripts/generate_visualization.py` — HTML generator
