@@ -1,1 +1,1 @@
-2026-09-27T20:23Z  FAIL  step2b extract_agent_node_refs.py — AttributeError: 'list' object has no attribute 'strip' (resolve_ref/iter_refs_from_payload, extract_agent_node_refs.py:134) | telemetry OK: 33 agents/agents_tab.html refreshed | node_edges NOT refreshed (stale since 2026-09-17) | DB age 0h
+2026-09-28T10:15Z  FAIL  step2b extract_agent_node_refs.py — non-zero exit (see stderr above) | DB age 0h

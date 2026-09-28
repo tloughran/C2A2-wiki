@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "generated": "2026-09-27T16:08:26.730555-04:00",
+    "generated": "2026-09-28T06:18:40.804503-04:00",
     "source": "openstory-db",
     "db_path": "/Users/tomloughran/Documents/Non-Claude Projects/OpenStory/data/open-story.db",
-    "db_mtime": "2026-09-27T15:39:19.103727",
+    "db_mtime": "2026-09-27T22:43:48.144315",
     "join": "sessions.label name=\"...\" -> roster taskId (exact/unique-prefix); clean non-roster scheduled names self-attribute as discovered agents; no-name sessions -> (interactive)",
     "caveats": {
       "avg_duration_min": "session run-span (last_event - first_event); reliable for single-run agents, inflated for long-lived/append sessions",
@@ -17,7 +17,7 @@
       "bosco"
     ],
     "total_sessions": 4459,
-    "total_events": 2026883,
+    "total_events": 2027302,
     "discovered_agents": {
       "rc-wiki-morning-backup": 1,
       "1pm-apr27-caching-architectu": 1,
@@ -3244,9 +3244,9 @@
     },
     "metabolism-monitor-weekly": {
       "sessions": 14,
-      "events": 1358,
-      "eval": 184,
-      "apply": 153,
+      "events": 1359,
+      "eval": 188,
+      "apply": 155,
       "scope_open": 0,
       "scope_close": 0,
       "errors": 0,
@@ -3257,7 +3257,7 @@
       "prompts": 13,
       "duration_sessions": 14,
       "first_seen": "2026-06-28T10:15:42.100Z",
-      "last_seen": "2026-09-27T19:30:55.460Z",
+      "last_seen": "2026-09-27T21:31:34.501Z",
       "by_dow": [
         3,
         0,
@@ -3280,10 +3280,10 @@
         "claude-opus-5-5": 8,
         "claude-fable-5-1": 2
       },
-      "eval_apply_ratio": 1.203,
-      "eval_apply_total": 337,
-      "avg_duration_min": 181.6,
-      "avg_events_per_session": 97.0,
+      "eval_apply_ratio": 1.213,
+      "eval_apply_total": 343,
+      "avg_duration_min": 190.2,
+      "avg_events_per_session": 97.1,
       "tool_coverage": 0.97,
       "taskId": "metabolism-monitor-weekly",
       "category": "discovered",
@@ -3417,23 +3417,23 @@
     },
     "rc-wiki-morning-backup": {
       "sessions": 1,
-      "events": 446177,
-      "eval": 549728,
-      "apply": 526251,
+      "events": 446457,
+      "eval": 550661,
+      "apply": 527159,
       "scope_open": 0,
       "scope_close": 0,
       "errors": 0,
       "delegations": 0,
-      "tool_use": 3664,
-      "tool_use_named": 3528,
-      "thinking": 1242,
+      "tool_use": 3666,
+      "tool_use_named": 3530,
+      "thinking": 1245,
       "prompts": 1306,
       "duration_sessions": 1,
-      "first_seen": "2026-03-31T18:50:42.093Z",
-      "last_seen": "2026-09-27T19:34:48.946Z",
+      "first_seen": "2026-03-30T20:16:12.480Z",
+      "last_seen": "2026-09-28T02:42:45.688Z",
       "by_dow": [
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -3441,7 +3441,7 @@
         0
       ],
       "tools": {
-        "mcp__workspace__bash": 851,
+        "mcp__workspace__bash": 853,
         "Read": 415,
         "Edit": 405,
         "Bash": 306,
@@ -3520,13 +3520,13 @@
         "claude-haiku-4-5-20251001": 212,
         "claude-opus-4-7": 35,
         "claude-sonnet-5": 7,
-        "claude-fable-5": 4,
-        "claude-opus-5-5": 3
+        "claude-opus-5-5": 5,
+        "claude-fable-5": 4
       },
       "eval_apply_ratio": 1.045,
-      "eval_apply_total": 1075979,
-      "avg_duration_min": 259244.1,
-      "avg_events_per_session": 446177.0,
+      "eval_apply_total": 1077820,
+      "avg_duration_min": 261026.6,
+      "avg_events_per_session": 446457.0,
       "tool_coverage": 0.96,
       "taskId": "rc-wiki-morning-backup",
       "category": "discovered",
@@ -3590,7 +3590,7 @@
   "buckets": {
     "(interactive)": {
       "sessions": 1046,
-      "events": 1176499,
+      "events": 1176637,
       "eval": 61509,
       "apply": 45926,
       "scope_open": 6096,
@@ -3600,10 +3600,10 @@
       "tool_use": 44610,
       "tool_use_named": 37417,
       "thinking": 20664,
-      "prompts": 3643,
+      "prompts": 3644,
       "duration_sessions": 1045,
       "first_seen": "2026-03-30T19:09:19.612Z",
-      "last_seen": "2026-09-24T12:10:20.065Z",
+      "last_seen": "2026-09-28T02:42:44.863Z",
       "by_dow": [
         188,
         182,
@@ -3797,8 +3797,8 @@
       },
       "eval_apply_ratio": 1.339,
       "eval_apply_total": 107435,
-      "avg_duration_min": 865.7,
-      "avg_events_per_session": 1124.8,
+      "avg_duration_min": 870.7,
+      "avg_events_per_session": 1124.9,
       "tool_coverage": 0.84
     },
     "(excluded)": {
