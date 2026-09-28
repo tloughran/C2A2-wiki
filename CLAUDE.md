@@ -116,14 +116,16 @@ This does **not** relax the standing gates, which exist for blast radius rather 
 
 **Vault path:** `/Users/tomloughran/Documents/Claude/Projects/RC Karpathy Wiki Project/wiki/`
 
-### Key Files (relative to vault root)
-- `wiki_narration.html` — the generated visualization (self-contained, ~38.5MB as of 2026-08-04)
-- Source scripts are in the Cowork session at:
-  - `wiki-narration/scripts/generate_visualization.py` — HTML generator
-  - `wiki-narration/scripts/extract_vault_data.py` — vault data extractor
-  - `validate-html/scripts/validate_html.py` — HTML validation (JS syntax, brace balance, data integrity)
-  - `wiki-narration/SKILL.md` — skill definition
-  - `validate-html/SKILL.md` — validation skill definition
+### Key Files (paths relative to the repo root)
+- `wiki/wiki_narration.html` — the generated visualization (self-contained, 60.27MB as of 2026-09-28)
+- Source scripts live in the repo, NOT in a Cowork session:
+  - `wiki/c2a2-wiki-narration/regen_sociogram.sh` — the supported wrapper; run this
+  - `wiki/c2a2-wiki-narration/scripts/generate_visualization.py` — HTML generator
+  - `wiki/c2a2-wiki-narration/scripts/extract_vault_data.py` — vault data extractor
+  - `wiki/c2a2-wiki-narration/scripts/validate_html.py` — HTML validation (JS syntax, brace balance, data integrity)
+  - `wiki/c2a2-wiki-narration/scripts/build_meta.json` — the SHIPPED build's health numbers
+  - `scripts/regen_summa_sociogram.sh` — argv-parameterized variant, for the sandboxed
+    summa-2026-daily-batch task only; lacks the substrate-skip delta guard
 
 ### Regeneration Workflow
 
