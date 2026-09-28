@@ -158,8 +158,12 @@ def iter_refs_from_payload(subtype, payload_json, canon, stem_to_rel):
             name = blk.get("name", "")
             inp = blk.get("input", {}) or {}
             fp = inp.get("file_path") or inp.get("path") or ""
-            if fp:
-                rel = resolve_ref(fp, canon, stem_to_rel)
+            # `path` is not always a string: mcp__memory__memory_read accepts up to
+            # 20 paths as a list in one call. Each is its own reference.
+            for one in (fp if isinstance(fp, list) else [fp]):
+                if not isinstance(one, str) or not one:
+                    continue
+                rel = resolve_ref(one, canon, stem_to_rel)
                 if rel:
                     op = "w" if name in FILE_TOOLS_WRITE else ("r" if name in FILE_TOOLS_READ else None)
                     yield rel, op
