@@ -345,6 +345,16 @@ def build_graph_data(data, agent_data=None):
                 alt = 'summa/' + t[len('vault/'):]
                 if alt in _existing_ids:
                     return alt
+            # A proposal card an agent touched while pending is later MOVED by
+            # review to approved/ (or needs_review/, denied/). Same card, new
+            # path. 2026-09-25: 27 substrate edges orphaned this way tripped the
+            # regen skip guard (6 -> 33).
+            if t.startswith('inbox/proposals/pending/'):
+                base = t[len('inbox/proposals/pending/'):]
+                for sub in ('approved/', 'needs_review/', 'denied/'):
+                    alt = 'inbox/proposals/' + sub + base
+                    if alt in _existing_ids:
+                        return alt
             return None
 
         skipped_substrate = 0
@@ -754,7 +764,7 @@ html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI
       <!-- Date threshold slider (Pass G). Show only files added on or after the
            selected date. Default leftmost = no threshold (all files). -->
       <div class="date-control" style="display:flex;align-items:center;gap:6px;font-size:11px;">
-        <label title="Hide files added before this date" style="cursor:pointer;">Since:
+        <label title="Hide files added before this week (one step per week, starting Mondays)" style="cursor:pointer;">Since:
           <input type="range" id="date-slider" min="0" max="0" value="0" step="1" style="width:90px;vertical-align:middle;" oninput="setDateThreshold(this.value)">
         </label>
         <span id="date-slider-label" style="color:#888;font-size:10px;min-width:80px;">all dates</span>
@@ -1880,9 +1890,9 @@ function setDateThreshold(idx) {
     var lbl0 = document.getElementById('date-slider-label');
     if (lbl0) lbl0.textContent = 'all dates';
   } else {
-    dateThreshold = ALL_DATES[Math.min(idx, ALL_DATES.length - 1)];
+    dateThreshold = ALL_DATES[Math.min(idx - 1, ALL_DATES.length - 1)];
     var lbl = document.getElementById('date-slider-label');
-    if (lbl) lbl.textContent = '≥ ' + dateThreshold;
+    if (lbl) lbl.textContent = 'week of ' + dateThreshold;
   }
   rebuildGraph();
 }
@@ -4030,14 +4040,31 @@ document.addEventListener('DOMContentLoaded', function() {
   IDLE_NARRATION = _nt0 ? _nt0.textContent : '';
   buildFilters();
   initSummaries();
-  // Pass G — populate the date slider from NODES' distinct date set.
-  var dateSet = new Set();
-  NODES.forEach(function(n) { if (n.date) dateSet.add(n.date); });
-  ALL_DATES = Array.from(dateSet).sort();
+  // Pass G — populate the date slider with WEEKLY steps (2026-09-25, Tom's
+  // ask): one stop per Monday after the corpus's earliest date, through its
+  // latest date. Was one stop per distinct day (154 stops, too fine to aim).
+  // Weeks with no new files still get a stop, so the slider is linear in time.
+  // Index 0 = no cut; index k = files dated on/after the k-th Monday.
+  var _dMin = '', _dMax = '';
+  NODES.forEach(function(n) {
+    var d = n.date || '';
+    if (d.length !== 10) return;
+    if (!_dMin || d < _dMin) _dMin = d;
+    if (!_dMax || d > _dMax) _dMax = d;
+  });
+  ALL_DATES = [];
+  if (_dMin) {
+    var _wk = new Date(_dMin + 'T00:00:00Z');
+    _wk.setUTCDate(_wk.getUTCDate() + (((8 - _wk.getUTCDay()) % 7) || 7));   // first Monday strictly after _dMin
+    while (_wk.toISOString().slice(0, 10) <= _dMax) {
+      ALL_DATES.push(_wk.toISOString().slice(0, 10));
+      _wk.setUTCDate(_wk.getUTCDate() + 7);
+    }
+  }
   var slider = document.getElementById('date-slider');
   if (slider) {
     slider.min = 0;
-    slider.max = ALL_DATES.length;   // index N = "latest" (= showing only newest day)
+    slider.max = ALL_DATES.length;   // index N = the newest week
     slider.value = 0;                // default: no threshold
   }
   initGraph();
