@@ -49213,3 +49213,101 @@ In-house (9 items, no literature owed; routed to monitor_queue.md): ASSUMPTION-1
   -1666, -1671, -1676; PRESUMPTION-1080, -1084, -1086.
 
 Running totals after this run: PREMISE-220, MONITOR-616, REVISE-487, DISPOSITION-995.
+
+================================================================================
+## 2026-09-28 — c2a2-lit-search-pipeline (15a/15b/15c) — five 15d re-trigger items
+
+RETURN-TO-14b: PRESUMPTION-983
+  Search direction: FOR + AGAINST (refresh cycle)
+  Result: PARTIALLY-SUPPORTED (unchanged) / no new challenge
+  Summary: no new AI-agent-specific literature found; NOVELTY-FLAG stands; in-house stratification (REVISE-469) still owed.
+  Full results: lit_search_results/for/PRESUMPTION-983_for.md, lit_search_results/against/PRESUMPTION-983_against.md
+
+DISPOSITION-996:
+  Date: 2026-09-28 | Item: PRESUMPTION-983 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED (Moderate, unchanged) | 15b result: NO-CHALLENGE-FOUND (unchanged)
+  Net assessment: no movement this cycle; the determinative limb already routed to REVISE-469, and the
+    comparative limb's discharge condition (in-house stratification) was not produced.
+  Disposition: MONITOR (unchanged)
+  Reasoning: nothing in this cycle's verification changes the 2026-09-14 position.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c] · Current status: MONITORING
+
+RETURN-TO-14b: PRESUMPTION-991
+  Search direction: FOR + AGAINST (refresh cycle)
+  Result: PARTIALLY-SUPPORTED (general pre-reg norm, unchanged) / no new challenge
+  Summary: one tangential source found (Iscan 2026, arXiv:2606.31511) and assessed as off-point; NOVELTY-FLAG stands; needs Tom per OPEN-208 regardless.
+  Full results: lit_search_results/for/PRESUMPTION-991_for.md, lit_search_results/against/PRESUMPTION-991_against.md
+
+DISPOSITION-997:
+  Date: 2026-09-28 | Item: PRESUMPTION-991 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED (unchanged) | 15b result: NO-CHALLENGE-FOUND (unchanged)
+  Net assessment: undischargeable rather than false, per standing finding; a tangential new source does
+    not change that. Blocked on restoration of frozen metabolism snapshot / stale census.
+  Disposition: MONITOR (unchanged)
+  Reasoning: no evidence this cycle moves either direction; the blocking condition is data freshness, not literature.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c] · Current status: MONITORING
+
+RETURN-TO-14b: PRESUMPTION-414
+  Search direction: FOR + AGAINST (refresh cycle, citation verification)
+  Result: PARTIALLY-SUPPORTED (Weak-Mod, unchanged) / CHALLENGED (Mod-Strong, unchanged)
+  Summary: PROXIMA citation (arXiv:2604.14352) independently confirmed real and on-topic; the correlation
+    it would be used for was not run this cycle (in-house).
+  Full results: lit_search_results/for/PRESUMPTION-414_for.md, lit_search_results/against/PRESUMPTION-414_against.md
+
+DISPOSITION-998:
+  Date: 2026-09-28 | Item: PRESUMPTION-414 | Item type: PRESUMPTION (unstated)
+  15a result: PARTIALLY-SUPPORTED (Weak-Mod, unchanged) | 15b result: CHALLENGED (Mod-Strong, unchanged)
+  Net assessment: named instrument now confirmed real; measurement itself still outstanding.
+  Disposition: MONITOR (unchanged)
+  Reasoning: citation verification alone does not discharge the item; the correlation test is the
+    discharge condition and remains unrun.
+  PROVENANCE: Origin 14b · Chain [14b -> 15a,15b -> 15c -> 15d(x3) -> 15a,15b -> 15c] · Current status: MONITORING
+
+RETURN-TO-14a: ASSUMPTION-1175
+  Search direction: FOR + AGAINST (refresh cycle, primary-source verification of pre-registered triggers)
+  Result: NO-SUPPORT-FOUND (this cycle) / CHALLENGED (Strong, confirmed)
+  Key sources: Denisov-Blanch et al. 2026 (arXiv:2603.06612); Begin et al. 2026 (arXiv:2606.26583, authorship now confirmed)
+  Summary: both of the item's own pre-registered verification triggers confirmed via primary source, both
+    pointing toward REVISE per the item's own decision rule.
+  Full results: lit_search_results/for/ASSUMPTION-1175_for.md, lit_search_results/against/ASSUMPTION-1175_against.md
+
+DISPOSITION-999:
+  Date: 2026-09-28 | Item: ASSUMPTION-1175 | Item type: ASSUMPTION (stated)
+  15a result: NO-SUPPORT-FOUND (this cycle) / Strength: None (this cycle)
+  15b result: CHALLENGED / Strength: Strong (confirmed via primary source)
+  Net assessment: the item pre-registered two specific verification triggers at its 2026-08-25 disposition
+    to avoid a post-hoc judgment call; both fired and both confirmed this cycle via direct fetch of the
+    named primary sources (not secondary summaries). Per PREMISE-078-style pre-commitment discipline, the
+    disposition follows the rule set in advance rather than being re-litigated now that the result is in.
+  Disposition: REVISE
+  Reasoning: the confirmed correlation figures (rho ~0.68 same-model vs ~0.40 cross-model; persistence
+    under OOD conditioning) mean context isolation alone is not the remedy for correlated 15a/15b error
+    that ASSUMPTION-1175 assumed, if 15a and 15b share a base model family (REVISE-350, still open).
+  If REVISE:
+    What is at risk: MONITOR-001 (open since 2026-04-13); the pipeline's structural independence guard.
+    Recommended action: see REVISE-488.
+    Urgency: High
+  PROVENANCE: Origin 14a · Chain [14a -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c] · Current status: REVISION-FLAGGED
+
+RETURN-TO-14a: ASSUMPTION-1178
+  Search direction: FOR + AGAINST (refresh cycle, citation verification)
+  Result: SUPPORTED (Strong, unchanged) / PARTIALLY-CHALLENGED (Moderate, unchanged)
+  Summary: both named citations (Entropy 22(5):514; Acta Biotheoretica 69(3):319-341) independently
+    re-verified letter-for-letter accurate; vault entry count still outstanding.
+  Full results: lit_search_results/for/ASSUMPTION-1178_for.md, lit_search_results/against/ASSUMPTION-1178_against.md
+
+DISPOSITION-1000:
+  Date: 2026-09-28 | Item: ASSUMPTION-1178 | Item type: ASSUMPTION (stated)
+  15a result: SUPPORTED (Strong, unchanged) | 15b result: PARTIALLY-CHALLENGED (Moderate, unchanged)
+  Net assessment: citation-accuracy risk closed; disposition-gating vault entry count still not produced.
+  Disposition: MONITOR (unchanged)
+  Reasoning: verification alone does not satisfy the item's own stated INCORPORATE condition.
+  PROVENANCE: Origin 14a · Chain [14a -> 15a,15b -> 15c -> 15d -> 15a,15b -> 15c] · Current status: MONITORING
+
+Running totals after this run: PREMISE-220 (unchanged), MONITOR-616 (unchanged; 5 existing entries
+refreshed, 1 closed to REVISE), REVISE-488, DISPOSITION-1000.
+
+**Backlog, unchanged and declared.** 147 bare `[QUEUED]` literature-lane items remain unsearched in the
+15d re-trigger lane, oldest from 2026-07-05 (85 days). This run's five items were drawn from the newest
+slice of that lane (2026-09-27 re-triggers) per standing scheduler scope, not from the backlog itself.
+DEFECT-I (15d re-trigger lane starvation, open since ~2026-08-08) remains undecided by Tom.

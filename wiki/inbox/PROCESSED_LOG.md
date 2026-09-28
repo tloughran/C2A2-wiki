@@ -1879,3 +1879,52 @@ stale_days 3, no WARN; qc_trace.csv unchanged apart from date_processed, not pro
 (Wright PROP-2026-08-14-033 — third distinct failure signature now on record; recommend closing rather than
 another retry, but that is Tom's call, not this run's). Pending = 1 (Fredrickson PROP-2026-09-24-001, now 2
 days in the queue with no decision email yet).
+
+## 2026-09-28 — C2A2 daily run (Mon, Levin + Friston specialist day)
+
+**Infrastructure note.** This run executed as a cloud scheduled task. The sandboxed `device_bash` VM tool
+failed identically on every attempt (no error detail, just failure) for the whole run, so every step below
+ran instead through the Desktop Commander local shell on physmini02. Everything depending on that shell —
+scripts, file writes, `open` — worked normally there.
+
+**Phase 0.** Gmail is unauthenticated this run — `search_threads` and `create_draft` both returned "needs
+you to sign in again." No decision emails could be checked; Phase 4's digest draft also could not be
+created. **Needs Tom to re-authenticate the Gmail connector.**
+
+**Phase 1.** `scripts/ingest_ledger.py wiki` (authoritative — naive filename-vs-log scan again threw ~320
+then ~82 phantom "unprocessed" hits on two different matching heuristics; same known trap documented
+09-20/09-25/09-26, confirmed again by spot-checking traditions/*/wiki.md for several "phantom" titles).
+Ledger: approved=449 ingested=418 decided-zero=29, **OPEN=1** (unchanged: Wright PROP-2026-08-14-033).
+Two no-`proposal_id` files unchanged and left alone. **Inbox otherwise clear — 0 files ingested.**
+
+**Gap noted:** no 2026-09-27 entry exists in this log, and `review/2026-09-27_review.html` was never
+written — Sunday's scheduled run appears to have not completed. Flagging rather than guessing why.
+
+**Phase 2.** Single-pass web search across the 10 traditions with no today-dated proposal in `pending/`
+(Levin's 7am specialist already deposited PROP-2026-09-28, "Machines all the way up... final version").
+Searched Friston, Hoffman, Hawkins, McGilchrist, Fredrickson, Stump, Carroll, Arkani-Hamed, Wolfram,
+Kastrup. Nothing cleared the quality bar — results were older/generic material already captured. **0
+proposals written.**
+
+**Phase 3.** `review/2026-09-28_review.html` generated (5 proposals: Fredrickson PROP-2026-09-24-001, Rohr
+PROP-2026-09-27-002/003, Wright PROP-2026-09-27-001, Levin PROP-2026-09-28-001). Opened successfully via
+`open` in the Desktop Commander shell.
+
+**Phase 4.** Skipped — Gmail unavailable.
+
+**Phase 5.** `review/2026-09-24_review.html` (4 days old) moved to `review/_superseded/`. 09-25/09-26/09-28
+retained.
+
+**Phase 5.5.** OK — `wiki/review_log.html` refreshed (6,770,485 bytes; cards 495, dates 133, responses 16;
+18 addresses scrubbed; grep confirms address-clean).
+
+**Phase 5.6.** OK — Level-2 stream rebuilt: 1611 signals, 87 pairs, span 2026-04-03 -> 2026-09-23,
+stale_days 5, no WARN.
+
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh` (05:45, Mac-side).
+
+**Network unchanged: 956 PRS triplets / 140 cross-program connections / 94 findings.** Approved OPEN = 1
+(Wright PROP-2026-08-14-033 — recommend closing; Tom's call). **Pending = 5** (Fredrickson
+PROP-2026-09-24-001, now 4 days queued; Rohr x2 and Wright PROP-2026-09-27-*, 1 day queued; Levin
+PROP-2026-09-28-001, same-day) — all awaiting a decision email, which cannot be processed until Gmail is
+re-authenticated.

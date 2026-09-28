@@ -15795,3 +15795,28 @@ REVISE-487:
   Recommended action (for Tom): make the boundary which tools each scheduled task can reach (per-task
     tool allowlist), not the prompt; treat the approval prompt as a second layer. PREMISE-218 states the
     matching rule for fallbacks. Conflict of interest: several sources are Anthropic's.
+
+REVISE-488:
+  Date: 2026-09-28 | Source item: ASSUMPTION-1175 | DISPOSITION-999 | Urgency: High
+  Premise challenged: that context isolation between the 15a/15b adversarial searchers meaningfully
+    remedies correlated error, given they may share a base model family (REVISE-350, still open).
+  Evidence: this item's own 2026-08-25 disposition (MONITOR-547) pre-registered two verification triggers
+    that would move it to REVISE if confirmed. Both were independently confirmed this run by fetching the
+    primary sources: (1) Denisov-Blanch, Kazdan, Chudnovsky, Schaeffer, Guan, Adeshina & Koyejo (2026,
+    arXiv:2603.06612) — different LLMs produce correlated outputs even conditioned on out-of-distribution
+    random strings; (2) Begin, Gho, Muppavarapu, Tsay, Mohan, Shaik, Li, Sharma & Vaidheeswaran (2026,
+    arXiv:2606.26583, authorship now confirmed) — same-model pairwise error correlation 0.679+/-0.023 vs.
+    cross-model 0.396+/-0.011; ten same-model agents = ~1.38 effective independent forecasters vs. ~2.2
+    for mixed-model teams; DPO alignment increases correlation +0.24 to +0.46 over SFT.
+  What is at risk: MONITOR-001 (open since 2026-04-13) and the pipeline's structural guard against
+    confirmation bias — 15a/15b disagreement is weaker evidence of independent review than the design
+    assumed, if 15a and 15b share a base model family.
+  Recommended action (for Tom): (1) confirm whether 15a and 15b in this deployment in fact share a base
+    model family; if so, (2) consider cross-model assignment for 15a/15b (genuinely different base model
+    families, not just separate context windows) — Begin et al.'s own data suggests this would move
+    measured correlation from ~0.68 toward ~0.40, a real but partial reduction, not elimination; (3)
+    MONITOR-001 should be amended to carry the FLOOR figure (rho approx. 0.40, ~2.2 effective independent
+    reviewers per pair) rather than an assumed-larger reduction from isolation alone.
+  Consistency: closes MONITOR-547 (this file supersedes it). Member of the independence-accounting defect
+    class carried under the 2026-08-25 SYSTEMIC-RISK-FLAG with ASSUMPTION-1176 and PRESUMPTION-859 — not
+    independently re-verified this run.

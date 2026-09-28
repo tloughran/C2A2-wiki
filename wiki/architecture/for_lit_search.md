@@ -23762,26 +23762,26 @@ blocks (120 from 2026-07, 10 from 2026-08, 17 from 2026-09); 0 items searched-by
 --------------------------------------------------------------------------------
 ### Literature-bearing (5) — re-triggers, added to the search backlog
 
-PRESUMPTION-983 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-609)
+PRESUMPTION-983 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-609) [SEARCHED-15a: 2026-09-28] [SEARCHED-15b: 2026-09-28] [DISPOSITIONED-15c: 2026-09-28 -> MONITOR (unchanged) -> MONITOR-609; DISPOSITION-996; no new literature found this cycle, owed item remains in-house (REVISE-469 stratification)]
   Comparative limb (machine-readable vs. prose remediation execution rate). First 15d re-trigger; intake
   search only so far (2026-09-14). Owed: the four-way stratification named in REVISE-469 (PLACEMENT /
   ADDRESSING / TOPIC-OWNERSHIP / COST). Priority: Medium.
 
-PRESUMPTION-991 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-610)
+PRESUMPTION-991 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-610) [SEARCHED-15a: 2026-09-28] [SEARCHED-15b: 2026-09-28] [DISPOSITIONED-15c: 2026-09-28 -> MONITOR (unchanged) -> MONITOR-610; DISPOSITION-997; one tangential new source (Iscan 2026, arXiv:2606.31511) found and assessed as not on-point; NOVELTY-FLAG stands; needs Tom per OPEN-208 regardless]
   Core presumption (a falsifying observable exists for C2A2's own wager). First 15d re-trigger. Needs
   Tom regardless of what any search returns (OPEN-208); queued per standing policy anyway. Priority: High.
 
-PRESUMPTION-414 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 3] (MONITOR-403)
+PRESUMPTION-414 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 3] (MONITOR-403) [SEARCHED-15a: 2026-09-28] [SEARCHED-15b: 2026-09-28] [DISPOSITIONED-15c: 2026-09-28 -> MONITOR (unchanged) -> MONITOR-403; DISPOSITION-998; PROXIMA citation (arXiv:2604.14352) independently re-verified real and on-topic; in-house correlation still not run]
   Connectivity-as-health-proxy question. Second re-trigger (cycle 1->2 search ran 2026-09-16, both sides
   strengthened — the only item to move on both sides since 2026-09-02). Owed: the PROXIMA-style
   proxy-reliability correlation named at the 09-16 disposition. Priority: HIGH.
 
-ASSUMPTION-1175 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-547)
+ASSUMPTION-1175 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-547) [SEARCHED-15a: 2026-09-28] [SEARCHED-15b: 2026-09-28] [DISPOSITIONED-15c: 2026-09-28 -> REVISE -> REVISE-488; DISPOSITION-999; both of the item's own pre-committed verification triggers (Denisov-Blanch et al. 2603.06612; arXiv:2606.26583) independently confirmed via primary source, both pointing toward REVISE]
   Context-isolation-reduces-correlated-error question (bears on MONITOR-001). First 15d re-trigger since
   08-25 intake (15a Moderate-support / 15b Strong-challenge already on record). Owed: full-text
   verification of Denisov-Blanch et al. and of arXiv:2606.26583. Priority: HIGH — NOVELTY-FLAG.
 
-ASSUMPTION-1178 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-548)
+ASSUMPTION-1178 [QUEUED] [RE-TRIGGER by 15d: 2026-09-27, cycle 1] (MONITOR-548) [SEARCHED-15a: 2026-09-28] [SEARCHED-15b: 2026-09-28] [DISPOSITIONED-15c: 2026-09-28 -> MONITOR (unchanged) -> MONITOR-548; DISPOSITION-1000; both citations (Entropy 22(5):514; Acta Biotheoretica 69(3):319-341) independently re-verified accurate; vault entry count still outstanding]
   Hawkins/Hoffman non-veridicality conflation question. First 15d re-trigger since 08-25 intake. Owed:
   the vault entry count and the Hawkins x Hoffman classification test named at intake. Priority:
   HIGH — NOVELTY-FLAG.
@@ -23834,3 +23834,63 @@ items independently verified as due, not the full standing population, to avoid 
 that decision is pending.
 
 Backup: `for_lit_search.md.bak.20260927-pre-15d`.
+
+================================================================================
+## 2026-09-28 — c2a2-lit-search-pipeline (15a/15b/15c) RUN NOTE
+
+**Scope of this run.** Fired 1h after the 14a/14b self-awareness pipeline, scoped per standing practice to
+newly-queued items (this run: the five literature-bearing 2026-09-27 15d re-triggers) rather than the
+standing backlog. The 147-item literature-lane backlog (oldest: 2026-07-05, 85 days) was NOT touched —
+per the same 09-27 reasoning: adding to or draining the backlog unilaterally is not this run's call while
+DEFECT-I (15d re-trigger lane starvation, open since ~08-08) awaits Tom's decision.
+
+**What ran, with a difference from most refresh cycles: this run did primary-source verification, not
+just a fresh keyword search**, because three of the five items had a specific citation named as "owed"
+rather than an open-ended search:
+
+- **ASSUMPTION-1175 (MONITOR-547) -> REVISE-488.** Both of the item's own pre-registered verification
+  triggers were independently confirmed by fetching the primary sources: Denisov-Blanch, Kazdan,
+  Chudnovsky, Schaeffer, Guan, Adeshina & Koyejo (2026, arXiv:2603.06612, "Consensus is Not Verification")
+  confirms that different LLMs produce correlated outputs even when conditioned on out-of-distribution
+  random strings — the condition the item said would make isolation's decorrelation contribution "near
+  nil rather than partial." Separately, arXiv:2606.26583 ("Preference Optimization Drives Monoculture in
+  LLM Prediction Markets," Begin et al. — authorship was flagged unverified at intake, now confirmed)
+  reports exactly the cited statistics: same-model pairwise error correlation 0.679+/-0.023 vs cross-model
+  0.396+/-0.011, ten same-model agents = 1.38 effective independent forecasters. Both triggers point the
+  same direction. Per the item's own pre-committed rule this is REVISE, not a judgment call made after
+  the fact — see REVISE-488 for what is at risk (MONITOR-001's independence accounting).
+- **ASSUMPTION-1178 (MONITOR-548) — MONITOR, unchanged.** Both citations named as owed were fetched and
+  verified letter-for-letter accurate: Prakash, Fields, Hoffman, Prentner & Singh (2020, Entropy
+  22(5):514) and Prakash, Stephens, Hoffman, Singh & Fields (2021, Acta Biotheoretica 69(3):319-341).
+  This closes the citation-accuracy risk but not the disposition gate itself — the vault entry count
+  (Hawkins x Hoffman tagged pairs) that the item names as the actual blocker for INCORPORATE was not
+  produced this run (in-house grep, not a literature task).
+- **PRESUMPTION-414 (MONITOR-403) — MONITOR, unchanged.** The PROXIMA citation (arXiv:2604.14352) was
+  fetched and confirmed real and on-topic (proxy-metric reliability scoring for online controlled
+  experiments); note the paper's own title differs slightly between its abstract page and HTML rendering
+  ("Reliability Scoring Framework" vs. "Proxy Metric Validation with Segment-Level Fragility Detection") —
+  flagged, not resolved. Running the correlation itself (connectivity deltas vs. PROXIMA-scored synthesis
+  output) remains an in-house measurement, not performed.
+- **PRESUMPTION-983 (MONITOR-609) — MONITOR, unchanged.** Fresh search for AI-agent-specific evidence on
+  machine-readable vs. prose instruction execution rates found nothing; the 15a NOVELTY-FLAG from intake
+  stands. The stratification named in REVISE-469 is an in-house measurement, not performed.
+- **PRESUMPTION-991 (MONITOR-610) — MONITOR, unchanged.** Fresh search surfaced one tangentially related
+  paper (Iscan 2026, arXiv:2606.31511, reflexive preregistration in a code-repair evaluation methodology)
+  — read in full and assessed as not on-point: it applies falsification discipline to a researcher's own
+  methodology, not to a system pre-registering a defeat condition for a thesis about its own operation
+  using itself as the instrument. NOVELTY-FLAG stands. Per OPEN-208, this item needs Tom regardless of
+  what any search returns; that has not changed.
+
+**Disposition count this run:** DISPOSITION-996..1000 (5). 1 REVISE (REVISE-488), 4 MONITOR (unchanged).
+0 INCORPORATE. Running totals: PREMISE -> 220 (unchanged) | MONITOR-numbered entries -> 616 (unchanged;
+no new MONITOR- items minted, five existing ones refreshed) | REVISE -> 488 | DISPOSITION -> 1000.
+
+**Backlog, unchanged and declared, per standing practice.** 147 bare `[QUEUED]` literature-lane blocks
+remain unsearched in the 15d re-trigger lane (120 from 2026-07, 10 from 2026-08, 17 from 2026-09 — count
+inherited from the 09-27 `queue_scan.py` run, not re-measured tonight). Oldest is 2026-07-05, eighty-five
+days. This run did not add to that count (its five items were already counted within the "17 from
+2026-09" bucket) and did not drain it. DEFECT-I (15d re-trigger lane starvation) remains open and
+undecided by Tom since it was first named (~08-08, as ASSUMPTION-428/MONITOR-420); nothing in this run
+changes that.
+
+Backup: `for_lit_search.md.bak.20260928-pre-15pipeline`.

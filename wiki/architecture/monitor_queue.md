@@ -24631,3 +24631,56 @@ monthly carry-over population) left untouched and unverified pending a full repa
 10 processed items current as of 2026-09-27; queue state for everything else last confirmed 2026-09-20.
 
 Backup: `monitor_queue.md.bak.20260927-pre-15d`.
+
+================================================================================
+## 2026-09-28 — 15c updates from the c2a2-lit-search-pipeline (15a/15b/15c) run
+
+**Context.** Five literature-bearing items re-triggered by 15d on 2026-09-27 were processed by 15a/15b as
+a verification cycle (primary-source checks on citations each item had already named as "owed," rather
+than open-ended fresh search). See for_lit_search.md 2026-09-28 RUN NOTE and lit_search_returns.md
+DISPOSITION-996..1000 for full detail.
+
+MONITOR-547 — CLOSED to REVISE-488 (DISPOSITION-999).
+  Item: ASSUMPTION-1175 (context isolation as a remedy for 15a/15b correlated error)
+  Closed because both of the item's own pre-registered verification triggers were independently confirmed
+  via primary source this cycle, and both point toward REVISE per the item's own decision rule. See
+  REVISE-488 for the recommended action (for Tom).
+
+MONITOR-548 — REFRESHED (cycle 1 -> 2), remains open.
+  Item: ASSUMPTION-1178 (Hawkins/Hoffman non-veridicality conflation)
+  Disposition date: 2026-09-28 | Source: DISPOSITION-1000 | Priority: HIGH (unchanged)
+  15a/15b this cycle: citation-verification only — both named citations (Entropy 22(5):514; Acta
+    Biotheoretica 69(3):319-341) confirmed letter-for-letter accurate. No change to the standing
+    SUPPORTED(Strong)/PARTIALLY-CHALLENGED(Moderate) split from 2026-08-24/25.
+  What would change the disposition: unchanged from 2026-08-25 — the vault entry count (Hawkins x Hoffman
+    tagged pairs) still needs to be produced (in-house grep, not literature).
+  Cadence: MONTHLY until the count exists, then quarterly | Next 15d check: 2026-10-28
+
+MONITOR-403 — REFRESHED (cycle 3 -> 4), remains open.
+  Item: PRESUMPTION-414 (connectivity as proxy for vault "health for synthesis")
+  Disposition date: 2026-09-28 | Source: DISPOSITION-998 | Priority: HIGH (unchanged)
+  15a/15b this cycle: citation-verification only — PROXIMA (arXiv:2604.14352) confirmed real and on-
+    topic; a minor title inconsistency between its abstract and HTML pages is flagged, not resolved. No
+    new correlation measurement was run (in-house task, not performed).
+  What would change the disposition: unchanged from 2026-09-16 — run the named correlation (connectivity
+    deltas vs. PROXIMA-scored synthesis output over the same window).
+  Cadence: Weekly | Next 15d check: 2026-10-05
+
+MONITOR-609 — REFRESHED (cycle 1 -> 2), remains open.
+  Item: PRESUMPTION-983 (comparative limb: machine-readable vs. prose remediation execution rate)
+  Disposition date: 2026-09-28 | Source: DISPOSITION-996 | Priority: Medium (unchanged)
+  15a/15b this cycle: fresh search for AI-agent-specific evidence found nothing new. NOVELTY-FLAG stands.
+  What would change the disposition: unchanged — the four-way stratification named in REVISE-469.
+  Cadence: Weekly | Next 15d check: 2026-10-05
+
+MONITOR-610 — REFRESHED (cycle 1 -> 2), remains open.
+  Item: PRESUMPTION-991 (core presumption: a falsifying observable exists for C2A2's own wager)
+  Disposition date: 2026-09-28 | Source: DISPOSITION-997 | Priority: High (unchanged)
+  15a/15b this cycle: one tangential new source found (Iscan 2026, arXiv:2606.31511) and assessed as not
+    on-point (reflexive preregistration in a code-repair evaluation methodology, not a system
+    pre-registering a defeat condition for a thesis about its own operation using itself as instrument).
+    NOVELTY-FLAG stands.
+  What would change the disposition: unchanged — restoration of the metabolism snapshot (frozen since
+    2026-09-03) and the census (stale since 2026-07-28).
+  Note: this item needs Tom regardless of what any search returns (OPEN-208) — unchanged.
+  Cadence: Weekly | Next 15d check: 2026-10-05

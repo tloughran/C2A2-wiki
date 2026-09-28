@@ -6305,3 +6305,50 @@ WATCH-002's recorded on-resolution action was "re-queue a proposal to `pending/`
 ---
 
 *Run completed 2026-09-27.*
+
+## AGENT 16 RUN SUMMARY — 2026-09-28
+
+**No item due, no condition met. Two things worth surfacing instead: three new proposals landed in `pending/` (0 leak-shaped), and the main daily pipeline appears not to have run or logged at all for 2026-09-27 — no `PROCESSED_LOG.md` section, no review page, no master-wiki status line — while `device_bash` remains down for a second consecutive run. Fail-loud on both, per Rule 12.**
+
+  Items checked: **0** — WATCH-003 not due (next on-cadence 2026-09-29). Off-cadence trigger unfired: `review/archive/` still **20** files, latest `2026-09-24_decisions.md`. Check count stays **13**.
+  Items resolved: 0
+  Items still watching: 1 (WATCH-003)
+  Items stale: 1 (WATCH-003, flagged 08-25; recommendation unchanged — one retroactive line on the INTEGRITY FLAG closes it)
+  New items added: 0
+  Next scheduled checks: WATCH-003 — **2026-09-29** (or earlier, on a new file in `review/archive/`)
+
+**Intake (Step 2):** `needs_review/` **1** file, **0 new** — WATCH-001 tombstone, `[TRACKED-16: 2026-05-05]` present, unchanged. Channel 2/3 vault grep for `DEFERRED-HYPOTHESIS:` / `WATCH-REQUEST:` **could not be run this cycle either** — `device_bash` failed on 3 consecutive attempts again this run (same opaque, identical-each-time failure as 09-27), while `device_list_dir` and file staging continued to work normally. This is now the **second consecutive run** the outage has held. No claim is made about Channel 2/3 content this run. Partial substitute: `master/incoming_dispatches.md` (mtime unchanged since 2026-04-05, confirmed via `device_list_dir`) still shows no new dispatch — consistent with, though not a full substitute for, a clean grep.
+
+**Condition check (Step 3):** not due, not triggered. `review/archive/` file count and latest filename confirmed via `device_list_dir` (unaffected by the shell outage): unchanged since 09-24/25.
+
+**Findings:**
+1. **Three new proposals since 09-27, all read, none leak-shaped.** `pending/` grew **1 → 4**: PROP-2026-09-27-001 (Wright, "Ascension political theology," via Michael Bird's Substack cross-post of a subscriber-only ANTWA episode), PROP-2026-09-27-002 (Rohr, "Myth of Redemptive Violence" — a plain CAC-daily extraction), and PROP-2026-09-27-003 (Rohr, "An Influential Teacher," on Thérèse of Lisieux). Grepped for the full verification-deferral vocabulary: the Wright card's only hit is its own "Filter note for reviewer," which discloses that the main episode audio/transcript was unreachable and states the specialist **deliberately did not** reconstruct the unretrieved segments — the triplet offered is built only from directly-quoted, retrievable material. That is the disclosure pattern this flag has repeatedly held is *not* leakage (same call as the 09-14/09-15 abstract-only Levin cards and the 09-21 Kastrup re-examination): the card has already made its own disposition and asks nothing of a reviewer that the audio would be needed to supply. The Thérèse card's only hit is a routine `Confidence: Speculative` tag on genealogical/autobiographical material, not a future condition. Neither is counted. **Cumulative leak-shaped count holds at 18; 0 of 4 on the current queue** (down from 7 of 35 before the 09-25 en-bloc clear).
+2. **The main daily pipeline has no record for 2026-09-27.** `inbox/PROCESSED_LOG.md` is unchanged at **1881 lines**, still ending at the "2026-09-26 — daily run" section — no "2026-09-27" section exists. `master/C2A2_master_wiki.md`'s "Current status" line (checked directly) is likewise still the 2026-09-26 entry, with no 09-27 line above or below it. No `review/2026-09-27_review.html` exists in `review/` root or in `_superseded/`. Every prior day since at least 2026-09-24 produced all three (a `PROCESSED_LOG.md` section, a status line, a review page); 09-27 produced none of them. **Yet three proposals dated 2026-09-27 exist**, and they, `master/C2A2_master_wiki.md`, `inbox/PROCESSED_LOG.md` itself (mtime, not content), and `wiki/deferred/watch_list.md` (mtime, not content — this file's own content was last actually written 09-27) all carry the identical mtime **2026-09-28 02:00:05 UTC**, suggesting a single batch touch at that moment rather than three separate phase writes. Reading: the tradition specialists (Rohr, Wright — consistent with a Sunday specialist slot) filed their cards, but the Phase 0–6 main run (ingest, review-page generation, Gmail digest, housekeeping, status-line update, `PROCESSED_LOG.md` entry) did not execute or did not complete for 09-27. **Agent 16 cannot determine why from the artifacts available to it, and does not assert a cause** — but notes the coincidence with `device_bash`'s second down-day without asserting a link. This means: Wright PROP-2026-08-14-033's status is **not re-confirmed** this run (last known: OPEN, third failure signature, per the 09-26 log entry); no fresh census of ingested/decided-zero/OPEN counts exists past 09-26; and the pending queue has gone uncarded for at least one full day, which is routine in isolation (as this tracker has noted before) but is here compounded by the missing pipeline run around it.
+3. **Census (via `device_list_dir`, unaffected by the shell outage):** `pending/` **4** (1 carried + 3 new) · `approved/` **449** (unchanged) · `denied/` **1** (unchanged) · `needs_review/` **1** (unchanged) · `review/archive/` **20** files, latest still `2026-09-24_decisions.md` · `review/` root **3** pages (09-24/25/26, unchanged — no 09-27 page) · `inbox/PROCESSED_LOG.md` **1881** lines (unchanged from 09-27's read).
+4. **Both carried dated conditions remain unheld.** PROP-2026-09-02-002 ("retrieval check after 2026-09-24") is now **4 days overdue**. PROP-2026-09-22-003 (Hoffman, Hopewell talk, due after 2026-10-03) not yet due. Neither has a Channel 3/4 tracker.
+5. **Run-log size:** `deferred/watch_list.md` was **6,307 lines / 766,429 bytes** before this entry — **twenty-third** consecutive run recommending the archival split, still not acted on.
+
+**Resolution routing (Step 3d):** nothing to route — no condition met, no `needs_review/` intake. No file outside `deferred/watch_list.md` was created, moved, tagged, or edited by this run.
+
+**Open for Tom (carried forward; changes only):**
+1. `status:` frontmatter unmaintained vault-wide. *(unchanged)*
+2. LEAKAGE FLAG: deadline passed 2026-09-24 with no distinguishable ruling; still unconfirmed whether the en-bloc APPROVE was intended as the ruling. *(unchanged)*
+3. Grep-before-retrieval rule — needs a search step to establish URL provenance. *(unchanged)*
+4. **PROP-2026-08-14-033: rule on it.** Last known: OPEN, third failure signature (redirect loop); **not re-confirmed this run** because no 09-27 ingest log exists to check. *(status change: unconfirmed rather than restated)*
+5. One-line INTEGRITY FLAG ruling closes WATCH-003; 13 checks since 2026-08-25 (~5 weeks). *(unchanged)*
+6. Run-log archival split — **twenty-third** consecutive recommendation; file **6,307 lines**. *(escalated: count)*
+7. Channel 2 exercise status **unverifiable for a second consecutive run** (grep tool down both times) — last confirmed clean 2026-09-26; by that date the streak stood at 34 days, now 36 if it held, still unconfirmed. *(escalated: second run)*
+8. Chat→Cowork sync not attempted (scheduled run; neither browser available non-interactively) — blind spot 09-03 → 09-28, **26th** day. *(escalated: count)*
+9. Approve the mark-as-read action, or mark the 4 stale threads read by hand. *(unchanged)*
+10. One domain approval (`youtube.com`) unblocks two retrieval assignments — `vshC_TxwrVo` (Wright) and `zF5enEPkoNA` (Wolfram). *(unchanged)*
+11. TOOLING FLAG cleanup; FINDING-089 upstream fix; tombstone deletion. *(unchanged)*
+12. Dated conditions unheld: PROP-2026-09-02-002 now **4 days overdue** (due 09-24); PROP-2026-09-22-003 due after 10-03. *(escalated: overdue count)*
+13. Daily-run ordering inverted (04:35 daily task before 7am Monday specialists) — not this agent's fix; recorded for provenance on the PROP-2026-07-19-001 gap. *(unchanged)*
+14. `device_bash` (on-device shell) unavailable **for a second consecutive run** (09-27, 09-28), same opaque failure both times. `device_list_dir`/staging/reads unaffected both times. *(escalated: recurring — worth a look regardless of whether it clears tomorrow)*
+15. **NEW — the main daily pipeline (Phase 0–6: ingest, review-page generation, Gmail digest, housekeeping, status line, `PROCESSED_LOG.md` entry) has no record at all for 2026-09-27**, even though the Rohr/Wright specialist filings for that date exist and are timestamped alongside other master-file touches. No `PROCESSED_LOG.md` section, no status line, no review page. If this recurs, the daily pipeline itself — not just this agent's Channel 2/3 check — is the thing to look at. *(new)*
+
+**Agent 16 Status:** Operational, one capability degraded (`device_bash` unavailable this run, second consecutive). 0 due, 0 checked, 0 resolved, 0 added, 0 cancelled. Active items: 1. Next check: WATCH-003, 2026-09-29.
+
+---
+
+*Run completed 2026-09-28.*

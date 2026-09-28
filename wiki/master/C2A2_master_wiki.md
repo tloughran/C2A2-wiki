@@ -1051,3 +1051,16 @@ Review page: 35 proposals. Review Log 490 cards / 130 dates / 15 responses, addr
 1501 signals / 87 pairs / span to 2026-09-09, stale_days 14 (no WARN). `/sessions` still 100% full; all
 scratch phases run under `TMPDIR=/tmp`. Network unchanged: 867 PRS (provenance count), 135 CROSS, 90
 FINDING (24 Active).
+
+### 2026-09-28 — Daily Run
+Ran via the cloud scheduled task; sandboxed `device_bash` failed identically all run, so this run's shell
+work went through Desktop Commander on physmini02 instead. Gmail is unauthenticated (needs Tom to
+re-auth) — no decision emails processed, no digest draft sent. Ledger OPEN=1 unchanged (Wright
+PROP-2026-08-14-033). No 2026-09-27 run is on record (log entry and review page both missing) — flagging,
+not diagnosing. Phase 2 single-pass search across 10 traditions (Levin covered by specialist) found nothing
+passing the quality bar. **0 files ingested.**
+
+Review page: 5 proposals (Fredrickson, Rohr x2, Wright, Levin) — opened in browser. Review Log 495 cards /
+133 dates / 16 responses, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23,
+stale_days 5 (no WARN). Network unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending now 5 proposals,
+oldest (Fredrickson) 4 days queued — none can move until Gmail is reconnected and a decision email arrives.

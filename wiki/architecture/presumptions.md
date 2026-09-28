@@ -23756,3 +23756,10 @@ for unstated presumptions (the `session_info` MCP tools remain absent from this 
 unexplained, 09-25, 09-26, and 09-27 confirmed-blocked).*
 
 ---
+
+*2026-09-28 (14b end-of-day slot): zero items. Same blocker as 14a — no transcript was available to read
+for unstated presumptions (the `session_info` MCP tools remain absent from this run's tool set; see
+`OPEN-256`). Nothing was inferred in place of a transcript. Fifth consecutive day without a pass (09-24
+unexplained, 09-25 through 09-28 confirmed-blocked).*
+
+---

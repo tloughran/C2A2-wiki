@@ -1499,3 +1499,16 @@ stands. Same blocker as 2026-09-25 and 2026-09-26, now on its third consecutive 
 counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-27_changes.md`, `assumptions.md`,
 `presumptions.md`, and `OPEN-256`, which remains open and unanswered. This run also fired at 20:02 UTC,
 outside the ~02:00–04:49 UTC slot every prior 14a/14b pass has used — see the changelog.
+
+
+## Index note — 2026-09-28 (14a end-of-day)
+
+**No DECISION minted; no assessment possible.** The `session_info` MCP tools (`list_sessions`,
+`read_transcript`) are still absent from this run's tool set, so no session transcript could be read and
+no decision activity for 2026-09-28 could be identified either way. `DECISION-083` (2026-08-27) still
+stands. Same blocker as 2026-09-25 through 2026-09-27, now on its fourth consecutive confirmed day (fifth
+counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-28_changes.md`, `assumptions.md`,
+`presumptions.md`, and `OPEN-256`, which remains open and unanswered. This run fired at 2026-09-28T03:33
+UTC, back within the ~02:00–04:49 UTC slot every 14a/14b pass used before 09-27's anomalous 20:02 UTC
+firing — no second firing landed on 09-28 before this one (checked: no `changelog/2026-09-28_changes.md`
+or `metrics/2026-09-28_snapshot.md` existed prior to this run).

@@ -32371,3 +32371,14 @@ transcript pass (09-24 unexplained, 09-25, 09-26, and 09-27 confirmed-blocked). 
 unusual time (20:02 UTC) — see the changelog for the observation.*
 
 ---
+
+*2026-09-28 (14a end-of-day slot): zero items. Same blocker as 2026-09-25 through 2026-09-27 — the
+`session_info` MCP tools (`list_sessions`, `read_transcript`) are still absent from this run's tool set,
+confirmed independently this run rather than assumed from prior findings. No transcript was available, so
+nothing was extracted; nothing was invented to fill the gap. See `changelog/2026-09-28_changes.md` and
+`OPEN-256`, which remains open and unanswered. This is the fifth consecutive day without a 14a/14b
+transcript pass (09-24 unexplained, 09-25 through 09-28 confirmed-blocked). This run fired at
+2026-09-28T03:33 UTC, back within the usual ~02:00–04:49 UTC slot after 09-27's anomalous 20:02 UTC
+firing.*
+
+---
