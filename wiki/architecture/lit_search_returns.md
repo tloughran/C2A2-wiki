@@ -49311,3 +49311,48 @@ refreshed, 1 closed to REVISE), REVISE-488, DISPOSITION-1000.
 15d re-trigger lane, oldest from 2026-07-05 (85 days). This run's five items were drawn from the newest
 slice of that lane (2026-09-27 re-triggers) per standing scheduler scope, not from the backlog itself.
 DEFECT-I (15d re-trigger lane starvation, open since ~2026-08-08) remains undecided by Tom.
+
+
+## 2026-09-29 — scheduled 15a/15b/15c run (7 literature items)
+
+### ASSUMPTION-1682 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Item type: ASSUMPTION (stated) | Transform: Extracted from wiki daily run bc6bea9e (FINDING-091 rationale). → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: SUPPORTED (Moderate) — Literature-lane: falsifiability; severe testing; null-hypothesis design. File: lit_search_results/for/ASSUMPTION-1682_for.md
+  15b return: PARTIALLY-CHALLENGED (Moderate). File: lit_search_results/against/ASSUMPTION-1682_against.md
+  DISPOSITION-1001: MONITOR (priority Medium) → MONITOR-617
+
+### ASSUMPTION-1684 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Item type: ASSUMPTION (stated) | Transform: Extracted from Summa QC 8c58d8ca. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: NO-SUPPORT-FOUND (None) — Literature-lane: audit re-review intervals; checklist vs holistic review efficacy. File: lit_search_results/for/ASSUMPTION-1684_for.md
+  15b return: NO-CHALLENGE-FOUND (Weak). File: lit_search_results/against/ASSUMPTION-1684_against.md
+  DISPOSITION-1002: MONITOR (priority Medium) → MONITOR-618
+
+### ASSUMPTION-1690 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Item type: ASSUMPTION (stated) | Transform: Extracted from ecosystem report eab829c8. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: SUPPORTED (Strong) — Literature-lane: vendor documentation (time-sensitive; check before 2026-10-01). File: lit_search_results/for/ASSUMPTION-1690_for.md
+  15b return: PARTIALLY-CHALLENGED (Weak). File: lit_search_results/against/ASSUMPTION-1690_against.md
+  DISPOSITION-1003: MONITOR (priority High) → MONITOR-619
+
+### ASSUMPTION-1692 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Item type: ASSUMPTION (stated) | Transform: Extracted from lit pipeline 253a8f8e. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: PARTIALLY-SUPPORTED (Moderate) — Literature-lane: ensemble diversity; retrieval overlap; correlated-evidence discounting (cf. REVISE-483, -488). File: lit_search_results/for/ASSUMPTION-1692_for.md
+  15b return: PARTIALLY-CHALLENGED (Moderate). File: lit_search_results/against/ASSUMPTION-1692_against.md
+  DISPOSITION-1004: MONITOR (priority Medium) → MONITOR-620
+
+### ASSUMPTION-1693 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Item type: ASSUMPTION (stated) | Transform: Extracted from Stump/Fredrickson 2598543c. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: SUPPORTED (Moderate) — Literature-lane: preregistration and replicability; small-sample effect inflation. File: lit_search_results/for/ASSUMPTION-1693_for.md
+  15b return: PARTIALLY-CHALLENGED (Weak). File: lit_search_results/against/ASSUMPTION-1693_against.md
+  DISPOSITION-1005: MONITOR (priority Low) → MONITOR-621
+
+### PRESUMPTION-1088 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: Inferred from QC runs marking pass on mechanical checks. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: PARTIALLY-SUPPORTED (Weak) — Literature-lane: proxy-measure validity; automated vs human content QA. File: lit_search_results/for/PRESUMPTION-1088_for.md
+  15b return: CHALLENGED (Moderate). File: lit_search_results/against/PRESUMPTION-1088_against.md
+  DISPOSITION-1006: MONITOR (priority High) → MONITOR-622
+
+### PRESUMPTION-1089 — 2026-09-29 (scheduled 15a/15b/15c run)
+PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Item type: PRESUMPTION (unstated — surfaced by inference) | Transform: Inferred from deference to earlier runs on Day 76 while the log held an error. → 15a searched FOR → 15b searched AGAINST → 15c net evaluation | Current status: MONITORING
+  15a return: NO-SUPPORT-FOUND (Weak) — Literature-lane: anchoring / path dependence in sequential review; error propagation in audit trails. File: lit_search_results/for/PRESUMPTION-1089_for.md
+  15b return: CHALLENGED (Moderate). File: lit_search_results/against/PRESUMPTION-1089_against.md
+  DISPOSITION-1007: MONITOR (priority High) → MONITOR-623

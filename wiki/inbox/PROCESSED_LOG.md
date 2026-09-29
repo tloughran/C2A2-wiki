@@ -1928,3 +1928,36 @@ stale_days 5, no WARN.
 PROP-2026-09-24-001, now 4 days queued; Rohr x2 and Wright PROP-2026-09-27-*, 1 day queued; Levin
 PROP-2026-09-28-001, same-day) — all awaiting a decision email, which cannot be processed until Gmail is
 re-authenticated.
+
+## 2026-09-29 — C2A2 daily run (Tue, Hawkins + Hoffman specialist day)
+
+**Infrastructure note.** Sandbox shell failed on both attempts with `useradd: ... No space left on device`
+(the `/sessions` disk-full condition noted 09-23 has become fatal to the shell itself). Every step ran through
+the Desktop Commander shell on the Mac instead.
+
+**Phase 0.** Gmail connector invalidated ("needs to reconnect it from connector settings"). No decision emails
+checked. **Needs Tom to reconnect Gmail** — second consecutive run.
+
+**Phase 1.** `scripts/ingest_ledger.py wiki`: approved=449 ingested=418 decided-zero=29, **OPEN=1** (Wright
+PROP-2026-08-14-033, unchanged). The naive filename-vs-log scan flagged ~330 phantom files again; this is the
+known trap, and the ledger is authoritative. **0 files ingested.**
+
+**Phase 2: 2 proposals written.** Hawkins was covered by the specialist (PROP-2026-09-29-001, TBP two-year report).
+Searched Hoffman, Friston, Arkani-Hamed, Kastrup, McGilchrist and Wolfram.
+- PROP-2026-09-29-002, McGilchrist, UnHerd Live "AI versus the human soul" edited transcript (event 2026-09-24,
+  posted 09-26). Retrieved in full. Closes watch card PROP-2026-09-02-002. 3 candidates; the possession and
+  self-harm asides are deliberately not mined.
+- PROP-2026-09-29-003, Wolfram, "What's the Future for Pure Math Research in the Age of AI?" (2026-09-28).
+  Retrieved in full. Supersedes the speculative pure-math item on PROP-2026-09-19-001. 3 candidates; the
+  bereavement note is deliberately not mined.
+Negatives: Hoffman, Friston, Arkani-Hamed and Kastrup had nothing new in the window.
+
+**Phase 3.** `review/2026-09-29_review.html` (81,093 bytes, 8 proposals), opened via `open`.
+**Phase 4.** Skipped: Gmail unavailable.
+**Phase 5.** `review/2026-09-25_review.html` moved to `review/_superseded/`. 09-26, 09-28 and 09-29 retained.
+**Phase 5.5.** OK: 6,795,619 bytes; cards 498, dates 134, responses 16; 18 addresses scrubbed; address-clean.
+**Phase 5.6.** OK: 1611 signals, 87 pairs, span to 2026-09-23, stale_days 6, no WARN.
+**Phase 6.** No git run; commit deferred to `scripts/commit_daily_run.sh`.
+
+**Network unchanged: 956 PRS / 140 CROSS / 94 FINDING.** Pending = 8 (oldest Fredrickson PROP-2026-09-24-001,
+5 days).

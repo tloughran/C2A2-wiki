@@ -23894,3 +23894,197 @@ undecided by Tom since it was first named (~08-08, as ASSUMPTION-428/MONITOR-420
 changes that.
 
 Backup: `for_lit_search.md.bak.20260928-pre-15pipeline`.
+
+
+## 2026-09-28 — 14a / 14b end-of-day intake (second pass; catch-up window 09-24 → 09-28)
+
+**Routing note.** 12 items queued: 7 literature-bearing, 5 `[IN-HOUSE]`. Other items in this batch (ASSUMPTION-1681, 1683, 1685–1688, 1694–1697; PRESUMPTION-1090, 1092) are in-house bookkeeping and are left in the registers without queuing. No `.bak` was taken (the shell is unavailable, disk full); this is an append only.
+
+ITEM: ASSUMPTION-1682 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1682
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from wiki daily run bc6bea9e (FINDING-091 rationale).
+    Current status: UNTESTED
+  Claim to test: A finding counts as a proper null hypothesis when the same instrument could observe either outcome.
+  Literature lane: falsifiability; severe testing; null-hypothesis design
+
+ITEM: ASSUMPTION-1684 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1684
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Summa QC 8c58d8ca.
+    Current status: UNTESTED
+  Claim to test: After one full review, later structural (mechanical) checks are enough to keep a text's pass status.
+  Literature lane: audit re-review intervals; checklist vs holistic review efficacy
+
+ITEM: ASSUMPTION-1690 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1690
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from ecosystem report eab829c8.
+    Current status: UNTESTED
+  Claim to test: Supabase free-tier projects pause after ~7 days of inactivity (the C2A2 DB could pause ~10-01; keep-warm last ran 09-24).
+  Literature lane: vendor documentation (time-sensitive; check before 2026-10-01)
+
+ITEM: ASSUMPTION-1692 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1692
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from lit pipeline 253a8f8e.
+    Current status: UNTESTED
+  Claim to test: For/against search agents that share a core source on half of items still add retrieval diversity worth their cost.
+  Literature lane: ensemble diversity; retrieval overlap; correlated-evidence discounting (cf. REVISE-483, -488)
+
+ITEM: ASSUMPTION-1693 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1693
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from Stump/Fredrickson 2598543c.
+    Current status: UNTESTED
+  Claim to test: A small, non-preregistered study warrants a "Speculative" confidence grade.
+  Literature lane: preregistration and replicability; small-sample effect inflation
+
+ITEM: PRESUMPTION-1088 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1088
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from QC runs marking pass on mechanical checks.
+    Current status: UNTESTED
+  Claim to test: Surface-structural checks are a valid proxy for semantic review of interpretive prose.
+  Literature lane: proxy-measure validity; automated vs human content QA
+
+ITEM: PRESUMPTION-1089 [QUEUED] [SEARCHED-15a: 2026-09-29] [SEARCHED-15b: 2026-09-29] [DISPOSITIONED-15c: 2026-09-29]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1089
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from deference to earlier runs on Day 76 while the log held an error.
+    Current status: UNTESTED
+  Claim to test: Deferring to prior reviewers' dispositions is reliable when the prior record can contain errors.
+  Literature lane: anchoring / path dependence in sequential review; error propagation in audit trails
+
+ITEM: PRESUMPTION-1087 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-29 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1087
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from a 4-day local scheduler gap reported only weekly.
+    Current status: UNTESTED
+  Claim to test (in-house): Does any daily job report that other daily jobs failed to run? Measure: days between the 09-24 pause and first daily alarm.
+
+ITEM: PRESUMPTION-1091 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-29 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1091
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two same-date outputs with different tool sets.
+    Current status: UNTESTED
+  Claim to test (in-house): Enumerate the execution surfaces that write to wiki/architecture/ and whether each output names its surface.
+
+ITEM: PRESUMPTION-1093 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-29 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1093
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from this pass's own corrected error.
+    Current status: UNTESTED
+  Claim to test (in-house): For 09-25–09-28, compare local scheduler lastRunAt against dated artifacts per job; count jobs that "didn't run" per scheduler but did write outputs.
+
+ITEM: PRESUMPTION-1094 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-29 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1094
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from repeated disk-full workarounds.
+    Current status: UNTESTED
+  Claim to test (in-house): Plot open-story.db size against sandbox free space; find the date the DB-dependent feeds stopped fitting.
+
+ITEM: ASSUMPTION-1691 [QUEUED] [IN-HOUSE] [NO-LIT-OWED: 2026-09-29 — empirical lane, routed by 15c to monitor_queue.md; no 15a/15b search owed]
+  PROVENANCE:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1691
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from ecosystem report; the local gap was verified in the scheduler.
+    Current status: UNTESTED
+  Claim to test (in-house): Was the 09-24 pause of ~30 local jobs intentional? Who re-enabled them, and when? (OPEN-258)
+
+## 2026-09-29 — 15a / 15b / 15c run note (scheduled task `c2a2-lit-search-pipeline`)
+
+**Scope.** 7 literature-bearing items queued in the 09-28 intake (ASSUMPTION-1682, 1684, 1690, 1692, 1693; PRESUMPTION-1088, 1089) searched FOR and AGAINST and dispositioned. 5 [IN-HOUSE] items (PRESUMPTION-1087, 1091, 1093, 1094; ASSUMPTION-1691) tagged [NO-LIT-OWED] and routed to monitor_queue.md per precedent (assumption: same treatment as 09-22..24).
+**Dispositions:** DISPOSITION-1001..1007 — 0 INCORPORATE, 7 MONITOR (MONITOR-617..623), 0 REVISE. In-house routings: MONITOR-624..628 (no DISPOSITION numbers minted). Running totals: PREMISE 220 | MONITOR 628 | REVISE 488 | DISPOSITION 1007.
+**Depth caveat (fail loud):** searches were one-to-two queries per item with selective full fetches (Supabase docs, Ross et al. arXiv:2608.13956). Most other sources are search-result or background-knowledge level and are labeled so in each result file. Because of that, 15c held PRESUMPTION-1088 and -1089 at MONITOR/High although the heuristics lean REVISE; both are REVISE candidates next cycle once primary papers are read.
+**Independence:** 15b sections were composed from separate queries; the same agent/model ran both halves, so independence is limited (cf. REVISE-483, -488).
+**SYSTEMIC-RISK:** ASSUMPTION-1684, PRESUMPTION-1088 and PRESUMPTION-1089 share a vulnerability — the QC pipeline treats prior pass status / mechanical checks as evidence of semantic soundness. Flag for 15d and Tom.
+**Time-sensitive:** ASSUMPTION-1690 — Supabase docs (fetched today) confirm pause after ~7 days of low activity; keep-warm last ran 09-24, so pause could occur ~10-01. Verify the DB is being hit. Related: ASSUMPTION-434 and the prior keep-warm REVISE flag.
+**Backlog:** the 147-item 15d re-trigger lane backlog was not touched (DEFECT-I still open). Backup: `for_lit_search.md.bak.20260929-pre-15pipeline`.
+
+### 2026-09-29 — ADDENDUM: duplicate concurrent run of `c2a2-lit-search-pipeline` (collision, fail-loud)
+
+**What happened.** A second instance of this scheduled task ran on the same cohort at the same time as the
+run above. It launched 15a and 15b as two separate subagents (disjoint context). By the time it reached 15c,
+the run above had already dispositioned all 7 items (DISPOSITION-1001..1007, MONITOR-617..628). **This second
+run minted no DISPOSITION, PREMISE, MONITOR or REVISE numbers and edited no register**, to avoid duplicate or
+conflicting records (Rule 7: not averaged). It appended this note, two supplements, and one flag file only.
+
+**File state after the collision.**
+- `for/`: all 7 files on disk are the first run's (shallow, one query). The second 15a pass's files were
+  overwritten; its results are reconstructed from its report in `for/SUPPLEMENT_2026-09-29_second-15a-pass.md`.
+- `against/`: 1682, 1684, 1690, 1088, 1089 hold the first run's block followed by a `SUPPLEMENT` block from
+  the second 15b pass. **1692 and 1693 hold only the second 15b pass — the first run's AGAINST content for
+  those two was overwritten and is lost** (its backup, if taken, does not cover lit_search_results/).
+- New: `against/SYSTEMIC-RISK-FLAG_2026-09-29_inherited-pass-status_1684-1088-1089.md` (second 15b pass;
+  independently reached the same shared vulnerability the run above named).
+- Independence note: the first run's 1682 AGAINST block calls Lakens "same source as 15a used" — i.e. its
+  15b saw 15a's work. The second pass's 15a/15b were context-separated.
+
+**Where the deeper second pass disagrees with the dispositions above (for 15c/Tom, not re-dispositioned here):**
+- **ASSUMPTION-1684:** 15a PARTIALLY-SUPPORTED/Moderate (PCAOB AS 2201 B29, fetched) vs first run's
+  NO-SUPPORT-FOUND; 15b CHALLENGED/Moderate vs first run's NO-CHALLENGE-FOUND/Weak. Precedent permits
+  carrying a pass forward only with verified no-change AND a periodic fresh full review.
+- **PRESUMPTION-1088:** 15a Weak partial / 15b CHALLENGED/Moderate (Ramprasad & Wallace 2024,
+  arXiv:2411.16638, fetched). Presumption + strong-ish challenge → heuristic leans REVISE.
+- **PRESUMPTION-1089:** 15a NO-SUPPORT-FOUND / 15b CHALLENGED/Moderate (Wright 1988 fetched; Stelmakh et al.
+  arXiv:2011.15083 fetched as boundary case — no herding when reviewers form a view first; Teplitskiy et al.
+  not fetched). Heuristic leans REVISE.
+  The run above held 1088/1089 at MONITOR/High pending primary reads; that condition is now partly met.
+  **Recommendation: 15c re-disposition 1684, 1088, 1089 next cycle (likely REVISE, with 1684 bound to the
+  same flag).**
+- **ASSUMPTION-1690 (time-sensitive, before 2026-10-01):** both passes confirm the 7-day rule, and both find
+  the criterion is "sufficient" activity (a few requests/day), so one ping on 09-24 may not count — the pause
+  could come before 10-01. Check the project's status directly.
+
+**New defect.** Two instances of one scheduled task ran concurrently against one register with no lock. Cost
+of the duplicate: ~272k subagent tokens (15a ~96k, 15b ~176k), far over the 4k/30k guideline. Candidate item
+for 14a/14b: the pipeline has no run lock or "already-running" check. No backup taken by this pass (shell
+unavailable: disk full); edits were append-only.

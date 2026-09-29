@@ -1512,3 +1512,11 @@ counting the unexplained 09-24 gap). Recorded in `changelog/2026-09-28_changes.m
 UTC, back within the ~02:00–04:49 UTC slot every 14a/14b pass used before 09-27's anomalous 20:02 UTC
 firing — no second firing landed on 09-28 before this one (checked: no `changelog/2026-09-28_changes.md`
 or `metrics/2026-09-28_snapshot.md` existed prior to this run).
+
+## Index note — 2026-09-28 (second 14a pass, session_info restored)
+
+**No DECISION minted.** 29 transcripts covering 09-24 → 09-28 were read. None contains designer speech,
+and no run made an architectural decision; they applied existing rules (the held-pair rule, the length
+policy, REVISE-483). `DECISION-083` (2026-08-27) still stands. The pass raised OPEN-257 (execution
+surfaces) and OPEN-258 (the 09-24 scheduler pause), and partially answered OPEN-256. See
+`changelog/2026-09-28_changes.md` (second-pass section).

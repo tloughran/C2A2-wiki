@@ -32382,3 +32382,315 @@ transcript pass (09-24 unexplained, 09-25 through 09-28 confirmed-blocked). This
 firing.*
 
 ---
+
+## 2026-09-28 — second 14a pass (session_info restored; catch-up window 09-24 → 09-28)
+
+ASSUMPTION-1681:
+  Date identified: 2026-09-28
+  Statement: Coverage rule for this pass. `list_sessions` gives no timestamps, so "today" is taken as every session listed above the last local 14a/14b session, ee9647b3 (the 09-23 pass). That is 29 sessions read (plus the running nightly verification 751601c0, excluded). The scheduler (checked this run) shows most daily jobs last ran 2026-09-24, so the window is 09-24 daily jobs + 4-hourly Summa runs + Sunday weeklies + the 09-28 evening sync. No designer speech in any of them.
+  Context: This pass; scheduler `list_scheduled_tasks`.
+  Source: first-hand
+  Type: methodological
+  Related decisions: ASSUMPTION-1655; OPEN-256; PRESUMPTION-1092 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1681
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Stated as this pass's own method; window dating inferred from scheduler lastRunAt.
+    Current status: UNTESTED
+
+ASSUMPTION-1682:
+  Date identified: 2026-09-28
+  Statement: Wiki daily run ingested 34/35 approved cards: PRS 867 → 956, CROSS-136–140, FINDING-091–094. FINDING-091 rationale: "The same instrument could observe either outcome, so it works as a proper null hypothesis."
+  Context: bc6bea9e (daily run, 09-24 by scheduler).
+  Source: first-hand
+  Type: epistemic
+  Related decisions: FLAG-022
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1682
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. PRS 956 verified at source (15 prs_triplets.md files). The null-hypothesis rationale is not verified.
+    Current status: UNTESTED (count SUPPORTED; rationale untested)
+
+ASSUMPTION-1683:
+  Date identified: 2026-09-28
+  Statement: The daily run corrected a Friston card's author list before ingest: "I put the corrected citation in the triplets and then ingested them." It also used `mv -f` over identical files because deletion was not permitted.
+  Context: bc6bea9e.
+  Source: first-hand
+  Type: architectural
+  Related decisions: OPEN-254; PRESUMPTION-1090 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1683
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader summary; not checked at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1684:
+  Date identified: 2026-09-28
+  Statement: A QC sweep reported "the review was lighter than a full read" and checked commentaries mechanically (sections, PRS phrasing, leaked labels). The stated reason was that each had had a full review on 09-19 or 09-20.
+  Context: 8c58d8ca (Summa QC).
+  Source: first-hand
+  Type: methodological
+  Related decisions: PRESUMPTION-1088 (new)
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1684
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; quote confirmed in transcript read directly by this pass.
+    Current status: UNTESTED
+
+ASSUMPTION-1685:
+  Date identified: 2026-09-28
+  Statement: Length policy, applied two ways. 32e3720a: "your length policy allows running long when the Aquinas-to-contemporary linkage is doing real work", and it still raised escalations for Days 153, 163 and 164 (1.45–1.66×). 14eddadf treated overages on Days 231–233 as informational because each has a `length_note`. 8c58d8ca deferred Days 197–201 to the open 09-20 escalation.
+  Context: Summa QC and reviewer runs.
+  Source: first-hand
+  Type: normative
+  Related decisions: length-policy escalation (09-20, open)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1685
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; recorded as rationale drift across three runs.
+    Current status: UNTESTED
+
+ASSUMPTION-1686:
+  Date identified: 2026-09-28
+  Statement: Three reviewer runs (1156f1de, 1970ec1e, a381abaa) were fully blocked: the sandbox disk was full and the Desktop Commander fallback was auto-declined. 1156f1de declined to hand-simulate: "picking and marking pairs belongs to the script (Rule 5)." Other runs did use the Desktop Commander fallback successfully (8c58d8ca, 32e3720a, bd41156a, 14eddadf).
+  Context: Summa reviewer/QC.
+  Source: first-hand
+  Type: architectural
+  Related decisions: OPEN-255; PRESUMPTION-1082
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1686
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. Host fallback is now approved in some runs and declined in others; OPEN-255 is still unanswered.
+    Current status: UNTESTED
+
+ASSUMPTION-1687:
+  Date identified: 2026-09-28
+  Statement: "The standing rule says never pass-mark a held pair." At least 8 runs held the same 8-pair queue (Days 76, 104–114) and marked nothing. One run noted the queue "grows by about one day per run".
+  Context: 2ad8afd9, b1150e8e, c133a688, 0549956a, d82f4aab, 38e3d088, f9bb7520, 3333889f.
+  Source: first-hand
+  Type: architectural
+  Related decisions: PRESUMPTION-1077; OPEN-253
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1687
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. The hold convention held through the whole window.
+    Current status: UNTESTED
+
+ASSUMPTION-1688:
+  Date identified: 2026-09-28
+  Statement: Task-file defects persist. (1) The `qc_sweep.py --max 6` command is stale; the working form is `report --max 6` (≥3 runs). (2) The Stump/Fredrickson wiki path is missing "Projects/". (3) The memory-file path was unreachable in 4 runs, while 3333889f reached it through the memory tools.
+  Context: 8c58d8ca, 2ad8afd9, 2598543c, 38e3d088, f9bb7520, 3333889f.
+  Source: first-hand
+  Type: architectural
+  Related decisions: OPEN-251
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1688
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. Memory access differs by run for the same task (drift).
+    Current status: UNTESTED
+
+ASSUMPTION-1689:
+  Date identified: 2026-09-28
+  Statement: Metabolism monitor: "move this task to a launchd job, since the sandbox can't hold a 7 GB snapshot" (SQLite disk full; last good run 2026-07-28). OpenStory refresh failed: DB 7.2 GB vs 5.8 GB free, with ~13 GB of orphan `.corrupt`/`PRE-RECOVER` backups next to the live DB. This pass's own shell also failed ("useradd: No space left on device").
+  Context: 9c40b304, 7033b535, this pass.
+  Source: first-hand
+  Type: architectural
+  Related decisions: ASSUMPTION-1666; PRESUMPTION-1094 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1689
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. The disk failure in this pass is first-hand; ASSUMPTION-1666 ("per-sandbox") is weakened.
+    Current status: UNTESTED
+
+ASSUMPTION-1690:
+  Date identified: 2026-09-28
+  Statement: "Supabase's free tier pauses a project after about 7 days of inactivity, so the C2A2 database could pause around October 1." Keep-warm last ran 2026-09-24.
+  Context: eab829c8 (weekly ecosystem report); scheduler.
+  Source: first-hand
+  Type: empirical
+  Related decisions: —
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1690
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. lastRunAt 2026-09-24T10:37Z and nextRunAt 09-29 verified in the scheduler; the vendor rule is not verified.
+    Current status: UNTESTED
+
+ASSUMPTION-1691:
+  Date identified: 2026-09-28
+  Statement: The weekly ecosystem report found "~30 recurring agents disabled Sept 24 2:20–4:15pm ET". The local scheduler, checked this run, shows those jobs are now enabled, with lastRunAt 2026-09-24 and nextRunAt 2026-09-29. On the local surface the daily layer was dark 09-25 to 09-28. Some of the same jobs did write outputs on those dates (lit pipeline run notes 09-25 through 09-28, 15d re-triggers 09-27, and the blocked 14a/14b notes), so they ran somewhere else. No record says who paused the local jobs, who re-enabled them, or why.
+  Context: eab829c8; scheduler.
+  Source: first-hand
+  Type: architectural
+  Related decisions: OPEN-258 (new); PRESUMPTION-1087 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1691
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; the four-day gap was verified against scheduler lastRunAt for 12 daily jobs.
+    Current status: UNTESTED (gap SUPPORTED at source)
+
+ASSUMPTION-1692:
+  Date identified: 2026-09-28
+  Statement: Lit pipeline: PREMISE-218–220 and REVISE-484–487 (486/487 High: escalations fail while Tom is absent). "Because REVISE-483, their agreement was not used to raise confidence"; 15a and 15b "shared a core source on at least 4 of 8 items". The 09-28 evening sync (first run) says the pipeline ran "today" and reached DISPOSITION-1000. That is correct: the 09-28 run note in `for_lit_search.md` records DISPOSITION-996–1000 and REVISE-488, even though the local scheduler's lastRunAt is 2026-09-24.
+  Context: 253a8f8e (09-24 run); 12501539; `for_lit_search.md` 09-28 run note; scheduler.
+  Source: first-hand
+  Type: epistemic
+  Related decisions: REVISE-483; PRESUMPTION-1093 (new)
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1692
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted. This pass first read the "ran today" claim as contradicted by scheduler lastRunAt, then checked the run note at source: the claim holds. The run was on a surface the local scheduler does not record (OPEN-257).
+    Current status: UNTESTED
+
+ASSUMPTION-1693:
+  Date identified: 2026-09-28
+  Statement: PROP-2026-09-24-001 (Fredrickson) was rated Speculative "because the study was too small to detect small biases and was not preregistered." Stump: 0 proposals.
+  Context: 2598543c.
+  Source: first-hand
+  Type: epistemic
+  Related decisions: —
+  Testability: testable via literature
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1693
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted.
+    Current status: UNTESTED
+
+ASSUMPTION-1694:
+  Date identified: 2026-09-28
+  Statement: Scheduler health: 88 OK · 3 WARN · 5 FAIL. run_stall has failed daily since 09-20. The task's own file says it was once "blind three ways for months". Morning health found 337 broken wikilinks and a community-count mismatch (156 vs 155).
+  Context: 2253601c, 4071f6dd.
+  Source: first-hand
+  Type: methodological
+  Related decisions: PRESUMPTION-1087 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1694
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted from reader summary; not checked at source.
+    Current status: UNTESTED
+
+ASSUMPTION-1695:
+  Date identified: 2026-09-28
+  Statement: BOSCO is reported as 30,529/30,529 "archived", but ~28,500 are snippet-only and 430 attachments are pending.
+  Context: e34030f3.
+  Source: first-hand
+  Type: epistemic
+  Related decisions: PRESUMPTION-1085; ASSUMPTION-1679
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1695
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; the run itself separates count completeness from content completeness (bears on PRESUMPTION-1085).
+    Current status: UNTESTED
+
+ASSUMPTION-1696:
+  Date identified: 2026-09-28
+  Statement: session_info is intermittent, not gone. It was absent in the 03:33 UTC pass, present in the evening sync's second run and in this pass. A separate file, `changelog/2026-09-29_changes.md`, was written by a "scheduled cloud session" in which session_info and device_bash were both unavailable. Scheduler lastRunAt for this task (2026-09-29T03:42Z) matches this pass, so that cloud run was a different execution surface.
+  Context: 12501539; this pass; `changelog/2026-09-29_changes.md`.
+  Source: first-hand
+  Type: architectural
+  Related decisions: OPEN-256; OPEN-257 (new); PRESUMPTION-1091 (new)
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1696
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; the "different surface" reading is inferred from the tool sets and dates.
+    Current status: UNTESTED
+
+ASSUMPTION-1697:
+  Date identified: 2026-09-28
+  Statement: Agent 16: nothing due and nothing resolved. WATCH-003 has had 12 checks awaiting Tom's INTEGRITY ruling. The retrieval checks for PROP-2026-09-02-002 and -09-22-003 are overdue or unscheduled, so the 09-24 deadline in ASSUMPTION-1676 lapsed unowned. `watch_list.md` is 6,176 lines, with the 19th recommendation to split it.
+  Context: f139cc12.
+  Source: first-hand
+  Type: architectural
+  Related decisions: ASSUMPTION-1676; PRESUMPTION-1069, -1079
+  Testability: testable in-house
+  Status: UNTESTED
+  Provenance:
+    Origin: 14a
+    Chain: [14a]
+    Original item: ASSUMPTION-1697
+    Item type: ASSUMPTION (stated)
+    Transform at each step:
+      14a: Extracted; closes the loop on 1676's prediction.
+    Current status: UNTESTED
+
+*Extracted by the second 14a run of 2026-09-28 (fired 2026-09-29T03:42Z per scheduler). **17 items (1681–1697).** Coverage: no designer speech. 29 sessions were read by three parallel reader subagents (list positions 2–31, above ee9647b3; this pass's own session is excluded), covering the unprocessed window 09-24 → 09-28. Verified at source: PRS 956 across 15 files; the scheduler state (12 daily jobs last ran 09-24; this task's lastRunAt); the `changelog/2026-09-29_changes.md` contents; the 8c58d8ca and 12501539 quotes (read directly). Not verified: other reader claims marked in the Transform lines. The shell was unavailable (disk full), so no `.bak` snapshot was taken before this append; edits are append-only.*
+
+---

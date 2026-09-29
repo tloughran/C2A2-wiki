@@ -23763,3 +23763,161 @@ for unstated presumptions (the `session_info` MCP tools remain absent from this 
 unexplained, 09-25 through 09-28 confirmed-blocked).*
 
 ---
+
+## 2026-09-28 — second 14b pass (session_info restored; catch-up window 09-24 → 09-28)
+
+PRESUMPTION-1087:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] The watchers are presumed to outlive what they watch. About 30 local jobs, the daily watchdogs included (scheduler health, morning system health), stopped on 09-24. The four-day local gap surfaced only in a Sunday weekly report. Whether the watchdogs ran on another surface is unknown. Is it warranted to presume that a paused job would be reported by some other daily job?
+  Evidence it was operative: ASSUMPTION-1691, -1694. No daily artifact from 09-25 to 09-28 reports missing daily artifacts.
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: OPEN-258 (new); OPEN-256
+  Testability: testable in-house
+  Risk if wrong: High — a pause of the whole layer looks like silence.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1087
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the scheduler gap plus the absence of any daily alarm.
+    Current status: UNTESTED
+
+PRESUMPTION-1088:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Structural checks (section presence, PRS phrasing, label leaks) are presumed an adequate proxy for a semantic re-read of commentary, provided a full review happened earlier.
+  Evidence it was operative: ASSUMPTION-1684; held-queue runs read commentaries "informationally only".
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: —
+  Testability: testable via literature
+  Risk if wrong: Medium — drift introduced after the full review would pass unseen.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1088
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from the "lighter than a full read" disposition marked as pass.
+    Current status: UNTESTED
+
+PRESUMPTION-1089:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Earlier runs' dispositions and the QC log are presumed reliable precedent ("earlier runs traced this"). In the same window, 32e3720a corrected a factual error in an earlier same-day log entry (Day 76 tier: short vs medium).
+  Evidence it was operative: bd41156a, 14eddadf, 32e3720a defer on Day 76.
+  Why it was unstated: obvious to participants
+  Type: methodological
+  Related decisions: PRESUMPTION-1083
+  Testability: testable via literature
+  Risk if wrong: Medium — an early error propagates as settled precedent.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1089
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from deference plus the same-window log correction.
+    Current status: UNTESTED
+
+PRESUMPTION-1090:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Unattended agents are presumed to hold correction and cleanup authority not named in their task files: they correct a citation in an approved card before ingest, overwrite files with `mv -f`, and zero a 5 GB file in place of deleting it.
+  Evidence it was operative: ASSUMPTION-1683, -1689.
+  Why it was unstated: oversight
+  Type: normative
+  Related decisions: OPEN-254; OPEN-255
+  Testability: testable in-house
+  Risk if wrong: Medium — the record changes without review.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1090
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from three unflagged scope choices.
+    Current status: UNTESTED
+
+PRESUMPTION-1091:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] A scheduled task is presumed to run on one surface with one tool set. The evidence points to at least two surfaces: a local one with session_info, and a cloud one without session_info or bash (the 09-29 changelog). Both write to the same registers, and nothing marks which surface produced an entry. Registers therefore mix "blocked" and "ran" records for the same date.
+  Evidence it was operative: ASSUMPTION-1696; the 09-25–09-28 blocked runs are not in the local session list.
+  Why it was unstated: too foundational to notice
+  Type: structural
+  Related decisions: OPEN-256; OPEN-257 (new)
+  Testability: testable in-house
+  Risk if wrong: High — the provenance chain cannot tell a blocked surface from an empty day.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1091
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from two same-date outputs with different tool sets.
+    Current status: UNTESTED
+
+PRESUMPTION-1092:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Self-referential. This pass presumes list order is time order, and that the ee9647b3 boundary cleanly separates processed from unprocessed sessions. It also repeats PRESUMPTION-1086 (same-model readers). Items from 09-24 are filed with "Date identified 2026-09-28".
+  Evidence it was operative: ASSUMPTION-1681.
+  Why it was unstated: too foundational to notice
+  Type: methodological
+  Related decisions: PRESUMPTION-1086
+  Testability: testable in-house
+  Risk if wrong: Low — misdated items, not lost ones.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1092
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from this pass's own coverage rule.
+    Current status: UNTESTED
+
+PRESUMPTION-1093:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Self-referential. This pass presumed the local scheduler's lastRunAt is a complete record of whether a job ran. On that basis it first judged the evening sync's "lit pipeline ran today" to be misdated. At source the sync was right: the run note exists. Any monitor that reads scheduler state (scheduler health, ecosystem report, this pass) would under-count runs made on other surfaces.
+  Evidence it was operative: ASSUMPTION-1691, -1692 (first draft and correction).
+  Why it was unstated: obvious to participants
+  Type: epistemic
+  Related decisions: PRESUMPTION-1091; OPEN-257
+  Testability: testable in-house
+  Risk if wrong: Medium — false "didn't run" verdicts, and real gaps hidden among them.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1093
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from this pass's own error, caught by checking the source.
+    Current status: UNTESTED
+
+PRESUMPTION-1094:
+  Date surfaced: 2026-09-28
+  Statement: [inferred] Scaling: tasks presume the live data (open-story.db, 7.2–7.3 GB and growing) fits the sandbox. Each failing run re-derives the same local workaround instead of treating this as a fixed ceiling.
+  Evidence it was operative: ASSUMPTION-1689; metabolism stale since 07-28; OpenStory refresh failing since ~09-20.
+  Why it was unstated: scale blindness
+  Type: scaling
+  Related decisions: ASSUMPTION-1666
+  Testability: testable in-house
+  Risk if wrong: High — every DB-dependent feed goes stale together.
+  Status: UNTESTED
+  Provenance:
+    Origin: 14b
+    Chain: [14b]
+    Original item: PRESUMPTION-1094
+    Item type: PRESUMPTION (unstated — surfaced by inference)
+    Transform at each step:
+      14b: Inferred from repeated independent workarounds.
+    Current status: UNTESTED
+
+*Surfaced by the second 14b run of 2026-09-28, after 14a and against its output. **8 items (1087–1094).** Types: structural 2 · epistemic 2 · methodological 2 · normative 1 · scaling 1. Risk: High 3 · Medium 4 · Low 1 · Critical 0. Checked against PRESUMPTION-1069–1086. Absorbed rather than filed: "holding indefinitely is safe" (= 1077/OPEN-253); "Tom reads escalations asynchronously" (= 1079; lit pipeline REVISE-486/487 now names it too).*
+
+---

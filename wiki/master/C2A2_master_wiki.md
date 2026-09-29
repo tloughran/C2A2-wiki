@@ -1064,3 +1064,16 @@ Review page: 5 proposals (Fredrickson, Rohr x2, Wright, Levin) — opened in bro
 133 dates / 16 responses, address-clean. Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23,
 stale_days 5 (no WARN). Network unchanged: 956 PRS / 140 CROSS / 94 FINDING. Pending now 5 proposals,
 oldest (Fredrickson) 4 days queued — none can move until Gmail is reconnected and a decision email arrives.
+
+### 2026-09-29 — Daily Run
+Sandbox shell failed again (`No space left on device` on user creation), so shell work ran through Desktop
+Commander on the Mac. Gmail connector still invalidated: no decision emails checked, no digest draft. Ledger
+OPEN=1 unchanged (Wright PROP-2026-08-14-033). **0 files ingested.** Tuesday specialist deposited Hawkins
+PROP-2026-09-29-001 (TBP two-year report). Orchestrator added **PROP-2026-09-29-002** (McGilchrist, UnHerd Live
+edited transcript; this closes the 09-02 watch card) and **PROP-2026-09-29-003** (Wolfram, "What's the Future for
+Pure Math Research in the Age of AI?", 2026-09-28). The two share a candidate bridge: both argue that AI cannot
+supply goals or meaning, one from hemispheric phenomenology and one from computational irreducibility.
+
+Review page: 8 proposals, opened in browser. Review Log 498 cards / 134 dates / 16 responses, address-clean.
+Level-2 stream 1611 signals / 87 pairs / span to 2026-09-23, stale_days 6 (no WARN). Network unchanged: 956
+PRS / 140 CROSS / 94 FINDING. Pending 8; oldest (Fredrickson) 5 days queued.

@@ -3445,3 +3445,28 @@ OPEN-256:
     task, and if so, what changed. If it is being deprecated or replaced, 14a/14b's "Daily Cowork session
     transcripts (provided as input on each run)" input assumption needs updating too.
   Status: OPEN
+  Update 2026-09-28 (second 14a/14b pass): PARTIALLY ANSWERED. session_info was present in the 09-28
+    evening sync's second run and in this pass (scheduler lastRunAt 2026-09-29T03:42Z), and a real batch
+    ran (ASSUMPTION-1681–1697, PRESUMPTION-1087–1094). It is intermittent, not deprecated. The
+    monitoring half of the question stands; see OPEN-257 on execution surfaces.
+
+## 2026-09-28 — raised by the second 14a/14b end-of-day pass
+
+OPEN-257:
+  Raised: 2026-09-28 by 14a (ASSUMPTION-1696) and 14b (PRESUMPTION-1091, -1093)
+  Question: The same scheduled tasks appear to run on more than one surface. One is local, with
+    session_info and scheduler records. The other lacks session_info and bash (the 09-25–09-28 blocked
+    14a/14b notes; the "scheduled cloud session" that wrote `changelog/2026-09-29_changes.md` on local
+    date 09-28; the 09-25–09-28 lit run notes, while local lastRunAt stays at 09-24). Is the second
+    surface intended? Should every output name the surface it ran on, so a blocked surface is not read
+    as an empty day?
+  Needs: **Tom**.
+  Status: OPEN
+
+OPEN-258:
+  Raised: 2026-09-28 by 14a (ASSUMPTION-1691) and 14b (PRESUMPTION-1087)
+  Question: ~30 local scheduled jobs were disabled 2026-09-24 between 2:20 and 4:15 pm ET, per the weekly
+    ecosystem report. They are enabled again now (nextRunAt 09-29), and no record says why. Was the pause
+    intentional? Should a daily job alarm when other daily jobs miss their slot?
+  Needs: **Tom**.
+  Status: OPEN

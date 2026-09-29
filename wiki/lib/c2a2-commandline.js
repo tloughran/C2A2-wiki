@@ -1175,7 +1175,7 @@
       const list = sig.filter(function (x) { return x.a === ab[0] && x.b === ab[1]; })
         .sort(function (x, y) { return signalRank(y) - signalRank(x) || (y.d > x.d ? 1 : y.d < x.d ? -1 : 0); }).slice(0, GROUND_SIGNALS);
       if (!list.length) { continue; }
-      sources.push('prototypes/signals_grown.json');
+      sources.push('../prototypes/signals_grown.json');
       out.push('LEVEL-2 SIGNALS ' + name(ab[0]) + ' x ' + name(ab[1]) + ' (strongest ' + list.length + '):\n' + list.map(function (x) {
         return '- ' + (x.d || 'undated') + ' [' + (x.st || 'Unlabeled') + '] ' + x.t + (x.n ? ' (' + x.n + ')' : '');
       }).join('\n'));

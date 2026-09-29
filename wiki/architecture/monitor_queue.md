@@ -24684,3 +24684,104 @@ MONITOR-610 — REFRESHED (cycle 1 -> 2), remains open.
     2026-09-03) and the census (stale since 2026-07-28).
   Note: this item needs Tom regardless of what any search returns (OPEN-208) — unchanged.
   Cadence: Weekly | Next 15d check: 2026-10-05
+
+
+## 2026-09-29 — 15c intake
+
+MONITOR-617 — NEW (2026-09-29)
+  Item: ASSUMPTION-1682 (A finding counts as a proper null hypothesis when the same instrument could observe either outcome.)
+  Item type: ASSUMPTION (stated)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1001 | Priority: Medium
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment / what would change the disposition: Supported as a necessary condition; challenged as a sufficient one. Wording should carry a power/sensitivity clause. Would tip to INCORPORATE if restated as necessary-not-sufficient with a sensitivity requirement; no REVISE pressure.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-618 — NEW (2026-09-29)
+  Item: ASSUMPTION-1684 (After one full review, later structural (mechanical) checks are enough to keep a text's pass status.)
+  Item type: ASSUMPTION (stated)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1002 | Priority: Medium
+  15a: NO-SUPPORT-FOUND (None) | 15b: NO-CHALLENGE-FOUND (Weak)
+  Net assessment / what would change the disposition: Neither direction has primary evidence; this is an untested premise, not a refuted one. Would change with a primary source on checklist-vs-holistic re-review efficacy, or an in-house measure: of texts that passed on mechanical checks alone after a full review, how many later failed a full re-review.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-619 — NEW (2026-09-29)
+  Item: ASSUMPTION-1690 (Supabase free-tier projects pause after ~7 days of inactivity (the C2A2 DB could pause ~10-01; keep-warm last ran 09-24).)
+  Item type: ASSUMPTION (stated)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1003 | Priority: High
+  15a: SUPPORTED (Strong) | 15b: PARTIALLY-CHALLENGED (Weak)
+  Net assessment / what would change the disposition: Fact is well supported by today's vendor documentation, but the item's operational conclusion is time-sensitive and depends on in-house state (whether keep-warm/synthetic queries count and ran after 09-24). Not INCORPORATED because ASSUMPTION-434 is already open in the monitor queue and a prior REVISE flag on keep-warm reliability exists; duplicating a premise on a vendor-controlled policy would be premature. Would change: confirmation that keep-warm executed after 09-24 and DB reachable on/after 10-01, or a pause email received.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-620 — NEW (2026-09-29)
+  Item: ASSUMPTION-1692 (For/against search agents that share a core source on half of items still add retrieval diversity worth their cost.)
+  Item type: ASSUMPTION (stated)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1004 | Priority: Medium
+  15a: PARTIALLY-SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Moderate)
+  Net assessment / what would change the disposition: Diversity of retrieved material demonstrably helps and pure redundancy does not, so the claim is plausible for the unshared half and doubtful for the shared half. Cost side is unmeasured. Would tip to REVISE if in-house overlap measurement shows the shared-core items produce no differing conclusions; to INCORPORATE if stratified benefit is shown.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-621 — NEW (2026-09-29)
+  Item: ASSUMPTION-1693 (A small, non-preregistered study warrants a 'Speculative' confidence grade.)
+  Item type: ASSUMPTION (stated)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1005 | Priority: Low
+  15a: SUPPORTED (Moderate) | 15b: PARTIALLY-CHALLENGED (Weak)
+  Net assessment / what would change the disposition: Support is good but this run read search snippets and titles, not the papers; the 15c rule prefers MONITOR to a premature INCORPORATE. A grading heuristic of this kind is low stakes and recoverable. Would move to INCORPORATE after the Button 2013 and Nosek 2018 texts are confirmed in a later cycle and the wording reflects 'default, not verdict'.
+  PROVENANCE: Origin: 14a | Chain: [14a → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-622 — NEW (2026-09-29)
+  Item: PRESUMPTION-1088 (Surface-structural checks are a valid proxy for semantic review of interpretive prose.)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1006 | Priority: High
+  15a: PARTIALLY-SUPPORTED (Weak) | 15b: CHALLENGED (Moderate)
+  Net assessment / what would change the disposition: Presumption with Moderate challenge and only Weak support: the heuristics point toward REVISE, but the challenging sources were seen at search-result level only. Held at MONITOR/High so the next cycle can read the primary papers; if the challenge is confirmed, this becomes a REVISE candidate (pair with ASSUMPTION-1684). Would change with: read confirmation of the two arXiv papers, or an in-house measure of semantic failures that passed mechanical checks.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-623 — NEW (2026-09-29)
+  Item: PRESUMPTION-1089 (Deferring to prior reviewers' dispositions is reliable when the prior record can contain errors.)
+  Item type: PRESUMPTION (unstated — surfaced by inference)
+  Disposition date: 2026-09-29 | Source: DISPOSITION-1007 | Priority: High
+  15a: NO-SUPPORT-FOUND (Weak) | 15b: CHALLENGED (Moderate)
+  Net assessment / what would change the disposition: Presumption; Moderate challenge from anchoring literature, no support. Heuristics lean REVISE, but the sources were not read in full and the claim's stated condition ('when the prior record can contain errors') is already the condition under which anchoring literature bites. Held at MONITOR/High for one cycle to read the primary anchoring-in-audit study; likely REVISE candidate (recommend: deference plus sampled independent re-check). Would change with: confirmation of the primary study, or an in-house count of errors propagated from prior dispositions.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15a, 15b → 15c] | Transform at this step: Net evaluation and disposition | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-624 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search owed
+  Item: PRESUMPTION-1087
+  Disposition date: 2026-09-29 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..24 [NO-LIT-OWED] items)
+  In-house measure owed: Does any daily job report that other daily jobs failed to run? Measure: days between the 09-24 pause and first daily alarm.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-625 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search owed
+  Item: PRESUMPTION-1091
+  Disposition date: 2026-09-29 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..24 [NO-LIT-OWED] items)
+  In-house measure owed: Enumerate the execution surfaces that write to wiki/architecture/ and whether each output names its surface.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-626 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search owed
+  Item: PRESUMPTION-1093
+  Disposition date: 2026-09-29 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..24 [NO-LIT-OWED] items)
+  In-house measure owed: For 09-25 to 09-28, compare local scheduler lastRunAt against dated artifacts per job; count jobs that 'didn't run' per scheduler but did write outputs.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-627 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search owed
+  Item: PRESUMPTION-1094
+  Disposition date: 2026-09-29 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..24 [NO-LIT-OWED] items)
+  In-house measure owed: Plot open-story.db size against sandbox free space; find the date the DB-dependent feeds stopped fitting.
+  PROVENANCE: Origin: 14b | Chain: [14b → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
+
+MONITOR-628 — NEW, IN-HOUSE EMPIRICAL LANE (2026-09-29) — no 15a/15b search owed
+  Item: ASSUMPTION-1691
+  Disposition date: 2026-09-29 | Source: 15c routing (no DISPOSITION number minted; precedent: 2026-09-22..24 [NO-LIT-OWED] items)
+  In-house measure owed: Was the 09-24 pause of ~30 local jobs intentional? Who re-enabled them, and when? (OPEN-258)
+  PROVENANCE: Origin: 14a | Chain: [14a → 15c] | Transform: routed to monitor_queue without literature search | Current status: MONITORING
+  Cadence: Weekly | Next 15d check: 2026-10-06
