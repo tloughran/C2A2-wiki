@@ -29,7 +29,16 @@ to doubt the measure, not a finding.
 - **Search / typeahead** in the footer box to isolate a node or friendly-label.
 - **Edge controls** -- show/hide link types (wikilink, mention, reference) and adjust force
   attraction (Hold, Mode, Score, Brightness, Since).
-- **Fit All** re-frames the current selection; **Names** toggles hover labels.
+- **Fit All** re-frames the current selection; **Names** toggles hover labels. Every change to what is shown
+  (a search, a cut, a filter) re-fits the view automatically, unless the **Hold** box is ticked: Hold means
+  "leave my view alone" and stops that re-fitting (and freezes the layout forces).
+- **Plots** (button in the tab bar; or say "plot ...") -- a live panel that charts the edges of what is in view:
+  lego (3D), heatmap, totals, timeline, signal-strength mix, or a flow (Sankey) diagram, by thinker or by node group.
+  It follows the current cut, filters and Since slider; choose edge kinds, node groups and signal strengths in the
+  panel. Clicking a chart cell or bar cuts the graph to it (shift adds, alt removes, ctrl keeps the overlap). The
+  panel can be dragged from any edge or corner to resize. It is a separate panel over the graph, not the graph itself.
+- **Cuts** -- "find thinker:levin" (everything the model attributes to Levin), "neighbors:thinker:levin" (everything
+  linked to it), "between levin and friston" (the ends of edges joining them), combined with also / except / within.
 - **Depth axis (the DEPTH / probe strip)** -- lift the graph into 2.5D by choosing what the
   Z height should encode, with **Depth** scaling the lift, **Period** the oscillation, and
   **cues** toggling the depth cues. The **edge-signal** checkbox filters to judged edges.

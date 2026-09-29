@@ -165,6 +165,15 @@
     for(var q=0;q<SL.length;q++){ var e=SL[q], s=nodeOf(e.source), t=nodeOf(e.target); if(!s||!t) continue; if(test(e,s,t)){ ne++; add(s); add(t); } }
     return {ids:ids,edges:ne,label:label};
   }
+  // NEIGHBOURS: nodes with an edge to any seed node (any edge kind, whole corpus,
+  // one hop). A seed appears only when another seed links to it. Returns
+  // {ids, edges} -- edges = how many edges touch a seed node.
+  function neighborIds(seedIds){
+    var seed={}, ids=[], seen={}, ne=0; [].concat(seedIds||[]).forEach(function(i){ seed[i]=1; });
+    function add(n){ if(n&&n.id&&!seen[n.id]){ seen[n.id]=1; ids.push(n.id); } }
+    for(var q=0;q<SL.length;q++){ var e=SL[q], s=nodeOf(e.source), t=nodeOf(e.target); if(!s||!t||s===t) continue;
+      var hs=!!seed[s.id], ht=!!seed[t.id]; if(!hs&&!ht) continue; ne++; if(hs) add(t); if(ht) add(s); }
+    return {ids:ids, edges:ne}; }
   // A '+' conjunction (thinker:levin+month:2026-08) is ONE term: the AND of its facets.
   function facetIds(fs){ fs=[].concat(fs); var acc=null, parts=[], edgesN=null;
     for(var i=0;i<fs.length;i++){ var r=facetOne(fs[i]); if(r.error) return r; parts.push(r.label); if(r.edges!=null) edgesN=r.edges;
@@ -285,7 +294,7 @@
     setCut:function(c){ shellSpoke=true; var nc=(c&&c.ids&&c.ids.length)?{ids:c.ids.slice(),query:c.query||''}:null;
       if(JSON.stringify(nc&&[nc.query,nc.ids.length])!==JSON.stringify(shellCut&&[shellCut.query,shellCut.ids.length])){ shellCut=nc; } },
     thinkers:O.slice(), thinkerNames:TN.slice(),
-    facetIds:facetIds, onPick:function(f){ pickHook=f; },
+    facetIds:facetIds, neighborIds:neighborIds, onPick:function(f){ pickHook=f; },
     // One cell of the current chart's matrix, by axis label (tests and answers).
     count:function(a,b){ var L=labels(), i=L.indexOf(a), j=L.indexOf(b); if(i<0||j<0) return null; return matrix(edges()).M[i][j]; } };
   var plotlyState=window.Plotly?'ready':'none';

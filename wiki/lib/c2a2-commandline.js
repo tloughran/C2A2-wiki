@@ -1017,11 +1017,16 @@
       'You operate the C2A2 Explorer, a website of interlinked research traditions, through its command language (CCL).',
       'You never see the page. You see: the request, the VERIFIED STATE (read back from the page by code), page knowledge, and the results of commands you asked for.',
       'Reply with ONE JSON object and nothing else:',
-      '{"goal": "<what the view should show when done>", "commands": ["<one CCL command per string>"], "answer": "<text, or empty>"}',
+      '{"goal": "<what the view should show when done>", "commands": ["<one CCL command per string>"], "answer": "<text, or empty>", "assumed": "<how you read the request, or empty>", "ask": "<one clarifying question, or empty>"}',
       'Rules:',
+      '- READ GENEROUSLY. The user is often a researcher who wants control of the data but does not know the command words. Map their words onto the verbs, facets and plots below even when the wording is unfamiliar ("all Levin" -> `thinker:levin`; "connected to" / "linked to" / "next to" -> `neighbors:`; "chart", "graph", "picture of" -> `plot`). Act on the most likely reading.',
+      '- When you act on a reading that could reasonably have meant something else, say the reading in "assumed" in one plain sentence ("I took \'all Levin\' to mean every Levin node plus every edge from Levin to anything else") and put the alternative as ONE short question in "ask" ("If you meant only edges inside Levin, say so and I will redraw"). Do not ask when there is only one sensible reading. Never ask instead of acting when a reasonable action exists.',
+      '- When the request cannot be expressed with these verbs at all, do not invent a command: return "commands": [], say plainly in "answer" what is not possible and why, and put the nearest thing you CAN do in "ask" as a question.',
       '- commands run in order, max ' + PLAN_MAX_COMMANDS + '. Names lowercase. One verb per string. Never use: ' + Array.from(PLAN_DENY).join(', ') + '.',
       '- A text cut is an expression: `find X`, then `also Y` (add: the UNION of both, never an overlap), `except Z` (remove), `within W` (keep only the overlap). A new `find` REPLACES the cut; to keep a cut and add to it, use `also`.',
       '- A cut term may be a FACET of the model instead of a search word (Sociogram): `thinker:levin` (every node the model attributes to Levin -- use this, not `find levin`, which only matches titles), `group:synthesis`, `kind:signal`, `strength:strong`, `month:2026-08`, `since:2026-08`, `until:2026-07`, `between levin and friston` (the ends of edges joining the two). `+` joins facets in ONE term: `find thinker:levin+strength:strong`. Facets compose with also/except/within like any term.',
+      '- NEIGHBOURS: `neighbors:<term>` = every node with an edge to any node the inner term selects (one hop, any edge kind). The inner term is a search word or a facet: `neighbors:thinker:levin`. "Every Levin node and everything Levin links to" = `find thinker:levin` then `also neighbors:thinker:levin`. "The Summa nodes Levin connects to" = `find neighbors:thinker:levin within group:summa`.',
+      '- A word the grammar does not know is not an error to report: look for the nearest verb or facet first. `find` alone matches only titles and ids, so for a person or tradition prefer `thinker:<name>`.',
       '- Group filters: `only`, `show`, `hide`, `all`. `what` reads the view. `summarize` returns the open article text to you.',
       '- `plot` draws the edges of the current view (Sociogram) as a chart, in ONE command with order-free words: a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` (whole corpus) or `page` (follow the view and its cut), `inside`/`touching` (edges inside the cut, or touching it), `since <month>`, `until <month>`, and lists after `edges` (signal, wikilink, mention, reference...), `nodes` (groups), `strength` (strong, high, moderate, speculative). Example: `plot heatmap by thinker edges signal strength strong high since august`. `plot off` hides it. Its result reports the edge count and the top pairs -- use those numbers, they are computed.',
       '- If results say a step failed or did nothing (CHECK / verify problems / matched nothing), either correct it with new commands or say so in the answer. Never claim a view you were not shown.',
@@ -1032,6 +1037,7 @@
     ].join('\n');
     const parts = [];
     parts.push('REQUEST: ' + o.request);
+    if (o.hint) { parts.push('NOTE: ' + o.hint); }
     parts.push('VERIFIED STATE (before this round): ' + (o.state || '(unknown)'));
     if (o.knowledge) { parts.push('KNOWLEDGE:\n' + o.knowledge); }
     if (o.grounding) { parts.push(o.grounding); }
@@ -1092,7 +1098,8 @@
       if (PLAN_DENY.has(v) || commands.length >= PLAN_MAX_COMMANDS) { dropped.push(cmd); continue; }
       commands.push(cmd);
     }
-    return { ok: true, goal: String(o.goal || ''), commands: commands, dropped: dropped, answer: String(o.answer || '').trim() };
+    return { ok: true, goal: String(o.goal || ''), commands: commands, dropped: dropped, answer: String(o.answer || '').trim(),
+             assumed: String(o.assumed || '').trim(), ask: String(o.ask || '').trim() };
   }
 
   // GROUNDING (grounding increment, 2026-09-24). Deterministic retrieval from
@@ -1245,10 +1252,10 @@
   async function runPlan(request, deps) {
     const maxRounds = deps.maxRounds || 3;
     const trace = [], trimmed = [];
-    let results = [], model = '', answer = '', calls = 0;
+    let results = [], model = '', answer = '', calls = 0, assumed = '', ask = '';
     for (let round = 1; round <= maxRounds; round++) {
       const lastRound = round === maxRounds;
-      const prompt = fitPlanPrompt({ request: request, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
+      const prompt = fitPlanPrompt({ request: request, hint: deps.hint, state: deps.state(), knowledge: deps.knowledge, grounding: deps.grounding, examples: deps.examples, verbs: deps.verbs,
                                      results: results, round: round - 1, lastRound: lastRound && round > 1 }, deps.maxPromptChars || PLAN_PROMPT_MAX, trimmed);
       if (!prompt) { return { ok: false, error: 'the request is too large to send even after trimming', trace: trace, calls: calls, model: model, failed: [], trimmed: trimmed }; }
       const reply = await deps.ask(prompt);
@@ -1256,6 +1263,9 @@
       if (reply && reply.model) { model = reply.model; }
       const plan = parsePlan(reply && reply.text);
       if (!plan.ok) { return { ok: false, error: plan.error, trace: trace, calls: calls, model: model, failed: [] }; }
+      // The latest round's reading and question win: the last round saw the results.
+      if (plan.assumed) { assumed = plan.assumed; }
+      if (plan.ask) { ask = plan.ask; }
       for (const d of plan.dropped) { trace.push({ round: round, cmd: d, ok: false, spoken: 'not run (not allowed from the planner)', problems: [] }); }
       if (!plan.commands.length || lastRound) { answer = plan.answer; break; }
       results = [];
@@ -1274,7 +1284,7 @@
     }
     const lastRoundNo = trace.length ? trace[trace.length - 1].round : 0;
     const failed = trace.filter(function (t) { return t.round === lastRoundNo && (!t.ok || t.problems.length); });
-    return { ok: true, answer: answer, trace: trace, calls: calls, model: model, failed: failed, trimmed: trimmed };
+    return { ok: true, answer: answer, assumed: assumed, ask: ask, trace: trace, calls: calls, model: model, failed: failed, trimmed: trimmed };
   }
 
   // ---- PLAN MEMORY (step 4, 2026-09-29): learn from verified runs ----------
@@ -1306,6 +1316,8 @@
   function storablePlan(res) {
     if (!res || !res.ok || !Array.isArray(res.trace) || !res.trace.length) { return null; }
     if (res.failed && res.failed.length) { return null; }
+    // A run that ended in a question rested on an unconfirmed reading: do not teach it.
+    if (res.ask) { return null; }
     const ran = res.trace.filter(function (t) { return !/^not run/.test(t.spoken || ''); });
     if (!ran.length || ran.length > 12) { return null; }
     const last = ran[ran.length - 1].round;
@@ -1343,6 +1355,17 @@
   // attribution rule its charts draw with (C2A2Plot.facetIds).
   const FACET_KEYS = { thinker: 'thinker', t: 'thinker', group: 'group', g: 'group', kind: 'kind', edge: 'kind', edges: 'kind',
     strength: 'strength', month: 'month', since: 'since', from: 'since', until: 'until', to: 'until', pair: 'pair' };
+  // NEIGHBOURS (2026-09-29): `neighbors:<term>` = every node with an edge to any
+  // node the inner term selects (one hop, any edge kind; a seed node appears only
+  // if another seed node is linked to it). The inner term is anything a cut term
+  // can be -- a search word, a facet, `between a and b`. It composes like any
+  // term: `neighbors:thinker:levin within group:summa` = the Summa nodes Levin's
+  // nodes link to. Returns the inner term text, or null when this is not one.
+  const NEIGHBOR_RE = /^neighbou?rs?\s*:\s*(.+)$/i;
+  function parseNeighbors(text) {
+    const m = NEIGHBOR_RE.exec(String(text || '').trim());
+    return m ? m[1].trim() : null;
+  }
   function parseFacet(text) {
     const s = String(text || '').trim().toLowerCase();
     const btw = /^between\s+(\S+(?:\s+\S+)?)\s+and\s+(\S+(?:\s+\S+)?)$/.exec(s);
@@ -1512,6 +1535,7 @@
     compileGrammar: compileGrammar,
     parsePlotSpec: parsePlotSpec,
     parseFacet: parseFacet,
+    parseNeighbors: parseNeighbors,
     normRequest: normRequest,
     storablePlan: storablePlan,
     replayPlan: replayPlan,

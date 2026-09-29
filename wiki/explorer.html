@@ -2045,6 +2045,8 @@ var VoiceGuide = (function() {
       "THE USER'S OWN HIGHLIGHT IS SOMETHING YOU CAN SEE. When they have text selected on the page, `what` reports it (\"you have N words selected\") and a bare `read` reads THAT rather than the whole article. So when they say anything about what they highlighted, selected, marked or 'this bit here' -- READ IT. Do not say you cannot see their selection; do not reach for `find`, which is a text SEARCH of the graph and a different thing entirely. `read all` is how they get the whole article back. This was invisible to you until 2026-07-27 and the honest-sounding refusal it produced is exactly what it is here to stop.",
       "THE READER HOLDS BACK PROVENANCE. These files open with maintainer, last-updated and source lines, and often a format template; none of that is read aloud. If the result says metadata was held back, mention it in a few words ONCE -- 'there is some source metadata if you want it' -- and only read it if the user asks, which is `read details`. Never read it unprompted.",
       "READING IS A HANDOVER, AND THE READER IS A DIFFERENT VOICE ON PURPOSE. On a successful `read`, say ONE short handover line and nothing more -- \'Here it is.\' or \'Reading it to you.\' -- then be silent until the user speaks again. No word count, no offer, no summary. The page begins reading the moment you stop, in its own voice: that difference is deliberate, so the user can always hear whether they are being TALKED TO or READ TO. If they remark on it, say plainly that the page is reading it back, not you.",
+      "YOU CAN DRAW PLOTS. On the Sociogram the Plots panel charts the edges of what is in view: run_command `plot <words>` -- a type (lego, heatmap, totals, timeline, strength, sankey), `by thinker` or `by group`, `corpus` or `page`, `since <month>`, and `edges` / `nodes` / `strength` lists -- or `plot off`. 'Chart', 'graph', 'heatmap', 'lego', 'picture of the connections' all mean `plot`; never say the page is already a plot, and never claim a plot is showing unless `what` reports a plot line. The plot follows the current cut, so to plot one thinker cut first. Its result carries computed edge counts and top pairs: quote those, do not estimate. Clicking a chart cell or bar cuts the graph to it.",
+      "WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN, DO NOT APOLOGISE AND STOP: call plan_and_run with the user's own words. It reads generously ('every Summa node Levin is connected to', 'all Levin', 'linked to') and may return how_i_read_it and question_for_user -- SAY the reading in one sentence, then ASK the question aloud and wait. A cut can also take `neighbors:<term>` (every node linked to the term's nodes), `thinker:<name>` and `group:<name>`; use plan_and_run when the request needs them.",
       "BREVITY IS A HARD RULE: you are speaking ALOUD. Default to ONE or TWO short sentences; never exceed three, and only then if the user explicitly asks for more. No preamble, no restating the question, no lists, no wind-up. Answer directly. Be warm and concrete, never a lecture.",
       "Examples (NOT a script): 'show only Levin and Friston' -> only levin friston; 'also bring in the physics people' -> show wolfram carroll; 'drop the architecture layer' -> hide architecture; 'take me to the metabolism view' -> go metabolism; 'reset the whole view' -> all; 'what am I seeing?' -> what. SEVERAL STEPS OR A QUESTION ABOUT HOW THINGS CONNECT -> plan_and_run with the request in the user's words, e.g. 'keep Levin, add Friston, drop the Summa', 'how do Kastrup and Hoffman connect?'. Speak its answer; if it reports not_as_asked, say which steps did not work."
     ].join("\n");
@@ -2607,6 +2609,8 @@ var VoiceGuide = (function() {
           pending = (typeof window.C2A2Plan === 'function')
             ? window.C2A2Plan(String(args.request || '')).then(function (res) {
                 var o = { ok: !!res.ok, answer: res.answer || '', steps: (res.trace || []).map(function (t) { return t.cmd + ' -> ' + t.spoken; }) };
+                if (res.assumed) { o.how_i_read_it = res.assumed; }
+                if (res.ask) { o.question_for_user = res.ask; o.note = 'SAY how you read the request, then ASK the question aloud and wait for the answer.'; }
                 if (!res.ok) { o.error = res.error; }
                 if (res.failed && res.failed.length) {
                   o.not_as_asked = res.failed.map(function (t) { return t.cmd + ': ' + (t.problems.join('; ') || t.spoken); });
@@ -2865,8 +2869,8 @@ var VoiceGuide = (function() {
      (--target all --check is the pre-push gate; scripts/test_voice_shell.cjs
      runs it as its last row). A hand-bumped version is a version someone will
      forget: this include shipped stale once already. -->
-<script src="lib/c2a2-commandline.js?v=d5c894cb61"></script>
-<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=931d9e6360">
+<script src="lib/c2a2-commandline.js?v=6b171ecd65"></script>
+<link rel="prefetch" id="c2a2-plots-src" href="lib/c2a2-plots.js?v=06cd124b75">
 <script>
 /* PLOTS button: injects lib/c2a2-plots.js into the tab document, where the
    panel reads the page's own graph state (LINKS, activeNodes, cuts). Only the
@@ -3277,7 +3281,13 @@ var VoiceGuide = (function() {
   // (Tom, 2026-07-25: "kept at a minimum size and centered ... that's what any
   // user would want on any search result"). `fit` is the deliberate escape
   // hatch and is never floored: it means "show everything, however small".
-  var MIN_SCALE = 1.5, MAX_SCALE = 2, FRAME_MS = 400, RESETTLE_MS = 900;
+  // 2026-09-29 (Tom, after a Levin cut framed at the floor and showed two dots):
+  // every change now FITS the lit set, unfloored -- "fit all" on every change --
+  // unless the Sociogram's Hold box is ticked, which means "leave my view alone"
+  // and skips framing entirely. This retires the legibility floor above for
+  // reveals; a small dense result is still fit, a huge one shows small and whole.
+  var MAX_SCALE = 2, FRAME_MS = 400, RESETTLE_MS = 900;
+  function holdOn() { var d = ifDoc(), c = d && d.getElementById('chk-hold-forces'); return !!(c && c.checked); }
   var frameToken = 0;
   // A rebuilt circle has NO cx/cy yet -- the force simulation writes them on
   // tick, so reading the DOM straight after a filter change races the sim and
@@ -3312,6 +3322,7 @@ var VoiceGuide = (function() {
   function frameNodes() {
     var w = ifWin(), d = ifDoc();
     if (!w || !d || !w.zoomBehavior || !w.d3) { return null; }
+    if (holdOn()) { return null; }
     var svgEl = d.getElementById('graph-svg');
     if (!svgEl) { return null; }
     armCameraGuard(svgEl);
@@ -3338,12 +3349,11 @@ var VoiceGuide = (function() {
 
     var dx = xMax - xMin + 40, dy = yMax - yMin + 40;
     var fitScale = Math.min(W / dx, H / dy, MAX_SCALE) * 0.9;
-    var floored = fitScale < MIN_SCALE;
-    var scale = floored ? MIN_SCALE : fitScale;
+    var scale = fitScale;
     var cx = (xMin + xMax) / 2, cy = (yMin + yMax) / 2;
     var t = w.d3.zoomIdentity.translate(W / 2 - cx * scale, H / 2 - cy * scale).scale(scale);
     w.d3.select(svgEl).transition().duration(FRAME_MS).call(w.zoomBehavior.transform, t);
-    return { framed: n, scale: scale, floored: floored };
+    return { framed: n, scale: scale };
   }
   // Every reveal path funnels through here so none can forget.
   function frameSuffix() {
@@ -3354,7 +3364,7 @@ var VoiceGuide = (function() {
     // unless a newer command has taken the camera, which must always win.
     var mine = ++frameToken;
     setTimeout(function () { if (mine === frameToken) { if (cutIds) { applyCut(); } frameNodes(); } }, RESETTLE_MS);
-    return f.floored ? '  |  centred at minimum zoom (say "fit" to see them all)' : '  |  centred';
+    return '  |  centred, fit to the ' + f.framed + ' shown';
   }
 
   // ---- cut, don't dim (INTERIM -- see the note) ---------------------------
@@ -3487,7 +3497,16 @@ var VoiceGuide = (function() {
   // is the single truth on screen.
   function evalCutExpr(api, expr) {
     var terms = CL.parseCutExpr(expr), notes = [], facetUsed = false;
-    var res = CL.composeCut(terms, function (t) {
+    function termIds(t) {
+      var inner = CL.parseNeighbors(t);
+      if (inner !== null) {
+        facetUsed = true;
+        var seed = termIds(inner), P0 = plotModel();
+        if (!P0 || !P0.neighborIds) { notes.push('"' + t + '": the graph model is still loading -- try again in a moment'); return []; }
+        var nr = P0.neighborIds(seed);
+        notes.push('~neighbors of ' + inner + ': ' + seed.length + ' nodes, ' + nr.edges + ' edges leave them, ' + nr.ids.length + ' nodes at the other ends');
+        return nr.ids;
+      }
       var fx = CL.parseFacet(t);
       if (!fx) { var r = api.c2a2Find(t); return (r && r.ids) ? r.ids : []; }
       facetUsed = true;
@@ -3498,7 +3517,8 @@ var VoiceGuide = (function() {
       if (fr.error) { notes.push(fr.error); return []; }
       if (fr.edges != null) { notes.push('~' + fr.label + ': ' + fr.edges + ' edges, ' + fr.ids.length + ' nodes at their ends'); }
       return fr.ids;
-    });
+    }
+    var res = CL.composeCut(terms, termIds);
     if (terms.length > 1 || facetUsed) { try { api.c2a2Clear(); } catch (e) { /* the cut still holds */ } }
     // '~' marks a NOTE (what an edge facet counted), not a problem
     res.notes = notes.filter(function (n) { return n.charAt(0) === '~'; }).map(function (n) { return n.slice(1); });
@@ -6221,12 +6241,12 @@ var VoiceGuide = (function() {
       .catch(function () { /* memory is best-effort */ });
   }
   window.C2A2PlanMemory = { recall: planRecall, store: planStore };
-  window.C2A2Plan = function (request, recalled) {
+  window.C2A2Plan = function (request, recalled, hint) {
     if (!window.CommandLine || typeof window.CommandLine.runPlan !== 'function') { return Promise.reject(new Error('planner not loaded')); }
     if (!window.C2A2Search) { return Promise.reject(new Error('answer service not loaded')); }
     return Promise.all([getVerbs(), pageKnowledge(), grounding(request), recalled !== undefined ? Promise.resolve(recalled) : planRecall(request)]).then(function (v) {
       return window.CommandLine.runPlan(request, {
-        verbs: v[0], knowledge: v[1].text, grounding: v[2].text, examples: window.CommandLine.planExamplesText(v[3]),
+        hint: hint || '', verbs: v[0], knowledge: v[1].text, grounding: v[2].text, examples: window.CommandLine.planExamplesText(v[3]),
         state: function () { var r = window.CCLRun ? window.CCLRun('what') : null; return (r && r.spoken) || '(no reading)'; },
         run: function (cmd) { var r = window.CCLRun(cmd); return (r && r.pending) ? r.pending : r; },
         ask: function (pr) { return window.C2A2Search.callBroker({ action: 'enrich', model: 'answer', system: pr.system, user: pr.user, timeoutMs: 60000 }); }
@@ -6271,6 +6291,12 @@ var VoiceGuide = (function() {
       '<br><span style="opacity:.7">Requests are kept without anything that identifies you (emails, links and long numbers removed) so verified plans can help the next person. Answers are not kept.</span>';
   }
 
+  function planText(res) {
+    var t = res.answer || '';
+    if (res.assumed) { t = 'How I read it: ' + res.assumed + (t ? '\n\n' + t : ''); }
+    if (res.ask) { t += (t ? '\n\n' : '') + 'Question: ' + res.ask; }
+    return t || '(no answer came back)';
+  }
   var seq = 0;
   function ask() {
     var q = input.value.trim();
@@ -6279,7 +6305,7 @@ var VoiceGuide = (function() {
     open(q);
     // ROUTER (deterministic): one command or a short search runs here, free.
     var route = (window.CommandLine && grammarForRoute()) ? window.CommandLine.routeRequest(q, grammarForRoute()).route : 'plan';
-    if (route === 'plan') {
+    function planned(hint) {
       pageKnowledge().then(function (k) {
         var intro = introText(k.project);
         if (intro && INTRO_RE.test(q)) { if (my === seq) { render(intro, false, ''); } return; }
@@ -6287,7 +6313,7 @@ var VoiceGuide = (function() {
         render('Working it out…', true, '');
         return planRecall(q).then(function (rec) {
           if (my !== seq) { return; }
-          var rp = window.CommandLine.replayPlan(q, rec);
+          var rp = hint ? null : window.CommandLine.replayPlan(q, rec);
           if (!rp) { return rec; }
           return replayRemembered(rp).then(function (rr) {
             if (my !== seq) { return 'done'; }
@@ -6300,10 +6326,10 @@ var VoiceGuide = (function() {
           });
         }).then(function (rec) {
           if (rec === 'done' || my !== seq) { return; }
-          return window.C2A2Plan(q, rec || null).then(function (res) {
+          return window.C2A2Plan(q, rec || null, hint).then(function (res) {
           if (my !== seq) { return; }
           if (!res.ok) { render('The planner could not be read (' + res.error + '). Nothing further was changed.', false, planMeta(res)); return; }
-          render(res.answer || '(no answer came back)', false, planMeta(res));
+          render(planText(res), false, planMeta(res));
           });
         });
       }).catch(function (e) {
@@ -6311,12 +6337,20 @@ var VoiceGuide = (function() {
         var code = (e && e.message) || 'unknown';
         render((code === 'free-limit' || code === 'rate-limited') ? 'The free question allowance for today is used up.' : 'The answer service failed (' + code + ').', false, '');
       });
-      return;
     }
+    if (route === 'plan') { planned(''); return; }
     if (route === 'direct') {
       var cmd = q;
       var rr = null;
       try { rr = window.CCLRun ? window.CCLRun(cmd) : null; } catch (e) { rr = null; }
+      // GENEROUS READING (2026-09-29): input the engine could not act on is not
+      // left as "nothing matched"; the planner is asked what it most likely meant.
+      if (rr && rr.ok === false && !rr.pending && typeof window.C2A2Plan === 'function' &&
+          /matched nothing|unknown command|not understood|did not understand/i.test(rr.spoken || '')) {
+        render('Not a command I know -- working out what you meant…', true, '');
+        planned('The user typed this and the command engine could not act on it (' + (rr.spoken || 'no result') + '). Read it generously: work out what they most likely meant and do it with the verbs and facets available, or ask.');
+        return;
+      }
       render((rr && rr.spoken) || '(no result)', false, 'ran directly on this page &middot; no model call');
       if (rr && rr.pending) {
         rr.pending.then(function (fin) { if (my === seq && fin) { render(fin.spoken || '(no result)', false, 'ran directly on this page &middot; no model call'); } });

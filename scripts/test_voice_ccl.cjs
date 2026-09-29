@@ -1362,6 +1362,79 @@ check('budget: what cannot be made to fit returns null (the caller says so), nev
 
 // ---- report -----------------------------------------------------------------
 
+
+// ---- 2026-09-29 (review of Tom's recording): neighbours, questions, guide knows plots ----
+// WHY: "every Summa node Levin is connected to" is a NEIGHBOURS question. `also` gave a union (788)
+// and `within` an intersection (0); nothing could say "linked to". If `neighbors:` stops composing
+// like a term, that question has no expression again and the guide can only apologise.
+check('neighbors: is recognised, nested, and is not a facet or a plain search', function () {
+  assert.strictEqual(CCL.parseNeighbors('neighbors:thinker:levin'), 'thinker:levin');
+  assert.strictEqual(CCL.parseNeighbors('Neighbours: levin'), 'levin');
+  assert.strictEqual(CCL.parseNeighbors('neighbors:between levin and friston'), 'between levin and friston');
+  assert.strictEqual(CCL.parseNeighbors('thinker:levin'), null);
+  assert.strictEqual(CCL.parseNeighbors('neighbors of levin'), null, 'plain words stay a search');
+  assert.strictEqual(CCL.parseFacet('neighbors:thinker:levin'), null, 'the facet parser must leave it to the neighbour road');
+});
+check('neighbors: composes -- Summa nodes linked to Levin = neighbors:X within group:summa', function () {
+  const edges = [['l1', 's1'], ['l1', 's2'], ['l2', 'f1'], ['l2', 'l1'], ['s3', 'f1']];
+  const sets = { 'thinker:levin': ['l1', 'l2'], 'group:summa': ['s1', 's2', 's3'] };
+  const find = function (t) {
+    const inner = CCL.parseNeighbors(t);
+    if (inner !== null) {
+      const seed = new Set(find(inner)), out = [];
+      edges.forEach(function (e) { if (seed.has(e[0]) && out.indexOf(e[1]) < 0) { out.push(e[1]); } if (seed.has(e[1]) && out.indexOf(e[0]) < 0) { out.push(e[0]); } });
+      return out;
+    }
+    return sets[t] || [];
+  };
+  const r = CCL.composeCut(CCL.parseCutExpr('neighbors:thinker:levin within group:summa'), find);
+  assert.deepStrictEqual(r.ids.sort(), ['s1', 's2']);
+  const u = CCL.composeCut(CCL.parseCutExpr('thinker:levin also neighbors:thinker:levin'), find);
+  assert.deepStrictEqual(u.ids.sort(), ['f1', 'l1', 'l2', 's1', 's2']);
+});
+// WHY: Tom wants a data scientist's control: a vague request should be ACTED on with its reading stated,
+// and the alternative offered as a question -- not refused, and not asked about first.
+check('planner reply keeps "assumed" and "ask"; empty when absent', function () {
+  const p = CCL.parsePlan(JSON.stringify({ goal: 'g', commands: ['find thinker:levin'], answer: '', assumed: 'all Levin = every Levin node', ask: 'Did you mean only edges inside Levin?' }));
+  assert.strictEqual(p.assumed, 'all Levin = every Levin node');
+  assert.strictEqual(p.ask, 'Did you mean only edges inside Levin?');
+  const q = CCL.parsePlan('{"goal":"g","commands":[],"answer":"a"}');
+  assert.strictEqual(q.ask, ''); assert.strictEqual(q.assumed, '');
+});
+acheck('a question raised in round 1 survives to the result and the plan is NOT remembered', async function () {
+  const m = fakeModel([
+    { goal: 'levin', commands: ['find thinker:levin'], answer: '', assumed: 'all Levin = Levin nodes', ask: 'Include edges out of Levin?' },
+    { goal: 'x', commands: [], answer: 'Showing Levin.' }
+  ]);
+  const res = await CCL.runPlan('show all levin', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c, verify: { ok: true, problems: [] } }; }, ask: m.ask, verbs: '', knowledge: '' });
+  assert.strictEqual(res.ask, 'Include edges out of Levin?');
+  assert.strictEqual(res.assumed, 'all Levin = Levin nodes');
+  assert.strictEqual(CCL.storablePlan(res), null, 'an unconfirmed reading must not be taught to the next visitor');
+  const plain = await CCL.runPlan('show levin', { state: function () { return 'S'; }, run: function (c) { return { ok: true, spoken: c, verify: { ok: true, problems: [] } }; }, ask: fakeModel([{ goal: 'l', commands: ['find thinker:levin'], answer: '' }, { goal: 'l', commands: [], answer: 'ok' }]).ask, verbs: '', knowledge: '' });
+  assert.deepStrictEqual(CCL.storablePlan(plain), ['find thinker:levin'], 'a run with no question is still remembered');
+});
+acheck('the planner is told to read generously, knows neighbors:, and gets the failed-input hint', async function () {
+  const m = fakeModel([{ goal: 'x', commands: [], answer: 'a' }]);
+  await CCL.runPlan('linked to levin', { hint: 'HINTMARK the engine could not act on it', state: function () { return 'S'; }, run: function () { return { ok: true, spoken: '' }; }, ask: m.ask, verbs: '', knowledge: '' });
+  const sys = m.seen[0].system, usr = m.seen[0].user;
+  assert.ok(/READ GENEROUSLY/.test(sys) && /neighbors:/.test(sys) && /"ask"/.test(sys));
+  assert.ok(/NOTE: HINTMARK/.test(usr));
+});
+// WHY: the guide answered "the Sociogram is already a 3D plot" because nothing told it plots exist.
+check('the voice guide is told plots exist, and the knowledge file documents Plots and Hold', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/YOU CAN DRAW PLOTS/.test(html) && /never say the page is already a plot/.test(html));
+  assert.ok(/WHEN A COMMAND DOES NOT WORK OR IS UNKNOWN/.test(html) && /question_for_user/.test(html));
+  const k = fs.readFileSync(path.join(ROOT, 'wiki/voice_guide/knowledge/sociogram.graph.default.md'), 'utf8');
+  assert.ok(/\*\*Plots\*\*/.test(k) && /Hold[^.]*leave my view alone/.test(k));
+});
+check('framing: Hold skips it, and nothing floors a reveal any more', function () {
+  const html = fs.readFileSync(path.join(ROOT, 'wiki/explorer.html'), 'utf8');
+  assert.ok(/if \(holdOn\(\)\) \{ return null; \}/.test(html), 'Hold ticked must leave the view alone');
+  assert.ok(!/MIN_SCALE/.test(html.replace(/\/\/[^\n]*/g, '')), 'a floor would bring back the two-dots view');
+  assert.ok(/chk-hold-forces/.test(html));
+});
+
 (async function () {
   for (const [name, fn] of asyncChecks) {
     try { await fn(); passed++; }
