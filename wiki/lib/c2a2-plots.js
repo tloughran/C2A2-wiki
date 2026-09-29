@@ -21,6 +21,7 @@
     passes:function(e){ return edgePassesCuts(e); },
     searchCut:function(){ return (typeof SEARCH_CUT!=='undefined'&&SEARCH_CUT&&SEARCH_CUT.ids)?{ids:SEARCH_CUT.ids,query:SEARCH_CUT.query}:null; },
     since:function(){ return (typeof dateThreshold!=='undefined'&&dateThreshold)||''; },
+    hiddenThinkers:function(){ return (typeof groupVisibility==='undefined')?[]:O.filter(function(t){ return groupVisibility['traditions/'+t]===false; }); },
     stamp:function(){ return typeof _lastEdgePass!=='undefined'?_lastEdgePass:''; } }; }
   var SRC = (typeof LINKS !== 'undefined' && typeof edgePassesCuts === 'function') ? sociogramSource()
           : (typeof window.c2a2PlotSource === 'function' ? window.c2a2PlotSource() : null);
@@ -57,7 +58,13 @@
   // Standalone, the tab's own SEARCH_CUT is all there is.
   var shellCut=null, shellSpoke=false;
   function curCut(){ if(shellSpoke) return shellCut; return SRC.searchCut ? SRC.searchCut() : null; }
+  // A tradition ticked OFF in the left panel hides only that tradition's own files, but a thinker is
+  // attributed by NAME wherever it appears (agents, flags, synthesis...). Without this, unticking Levin
+  // left ~166 Levin-named files and the Levin towers barely moved. Ticked-off = out of the thinker axis.
+  var HID={};
+  function hiddenNames(){ return (spec.scope==='page'&&SRC.hiddenThinkers)?SRC.hiddenThinkers():[]; }
   function edges(){
+    HID={}; hiddenNames().forEach(function(t){ HID[O.indexOf(t)]=1; });
     var cc=curCut(), out=[], cutIds=(spec.scope==='page'&&cc)?new Set(cc.ids):null;
     var src, live=null;
     var A=spec.scope==='page'?act():null;
@@ -73,7 +80,7 @@
   function keysOf(n,e,side){
     if(spec.axis==='group') return [GROUPS.indexOf(n.group||'-')];
     var k=thN(n).slice(); if(e && e.type==='signal' && side==='s' && e.home){ thOf(String(e.home)).forEach(function(i){ if(k.indexOf(i)<0) k.push(i); }); }
-    return k;
+    return k.filter(function(i){ return !HID[i]; });
   }
   function labels(){ return spec.axis==='group' ? GROUPS : TN; }
   // ONE EDGE, ONE COUNT PER CELL. An edge whose two ends are each attributed to
@@ -269,13 +276,14 @@
 
   var last='';
   function refresh(){ last=''; tick(); }
+  document.addEventListener('change',function(ev){ var t=ev&&ev.target; if(t&&t.type==='checkbox'&&!panel.contains(t)){ setTimeout(tick,300); setTimeout(tick,1500); } },true);
   function draw(){ syncUI(); var E=edges(), out=PLOTS[spec.plot](E);
     Plotly.react($('cp-p'),out.data,out.layout,{displaylogo:false,responsive:true});
     var el=$('cp-p'); if(!el._c2a2Click && el.on){ el.on('plotly_click',onClick); el._c2a2Click=true; }
     var cc=curCut(), cut=(spec.scope==='page'&&cc)?('cut "'+cc.query+'" ('+spec.cut+') · '):'';
-    var tw=[]; if(spec.scope==='page'&&sinceOf()) tw.push('page since '+sinceOf()); if(spec.from||spec.to) tw.push('edges '+(spec.from||'start')+' to '+(spec.to||'now')); var tws=tw.length?tw.join(', ')+' · ':'';
+    var tw=[]; if(spec.scope==='page'&&sinceOf()) tw.push('page since '+sinceOf()); if(spec.from||spec.to) tw.push('edges '+(spec.from||'start')+' to '+(spec.to||'now')); var hn=hiddenNames(); if(hn.length) tw.push('unticked: '+hn.join(', ')); var tws=tw.length?tw.join(', ')+' · ':'';
     $('cp-s').textContent=cut+tws+((spec.scope==='page'&&act())?act().nodes.length+' nodes in view · ':'whole corpus · ')+out.n.toLocaleString()+(spec.plot==='strength'?' signals':spec.plot==='timeline'?' edges':' edges between '+(spec.axis==='group'?'groups':'thinkers'))+' · click to cut the graph (shift add, alt remove, ctrl overlap) · '+new Date().toLocaleTimeString(); }
-  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[(act()?act().nodes.length:SN.length),(SRC.stamp?SRC.stamp():''),(function(){ var cc=curCut(); return cc?cc.query+':'+cc.ids.length:''; })(),sinceOf()].join('|'):''); }
+  function sig(){ return JSON.stringify(spec)+'|'+(spec.scope==='page'?[(act()?act().nodes.length:SN.length),(SRC.stamp?SRC.stamp():''),(function(){ var cc=curCut(); return cc?cc.query+':'+cc.ids.length:''; })(),sinceOf(),hiddenNames().join('+')].join('|'):''); }
   function tick(){ if(panel.style.display==='none'||!window.Plotly) return; var s=sig(); if(s===last) return; last=s; try{ draw(); }catch(err){ $('cp-s').textContent='plot error: '+err.message; } }
 
   window.C2A2Plot={ panel:panel, refresh:refresh, plots:Object.keys(PLOTS), kinds:KINDS, groups:GROUPS, strengths:STRS, months:MONTHS,

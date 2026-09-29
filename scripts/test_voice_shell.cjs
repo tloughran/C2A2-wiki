@@ -2696,6 +2696,20 @@ async function main() {
     q5.plot && q5.plot.edges > 0 && /between levin and friston/.test(await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent;")),
     (q5.plot && q5.plot.edges) + ' | ' + (await page.eval(IFRAME_DOC + "return d.getElementById('cp-s').textContent.slice(0,90);")));
   await runCmd(page, 'clear');
+  // WHY: Tom, 2026-09-29 -- the Lego plot "did not follow check-box cuts, repeatedly". Unticking Levin hides only
+  // Levin's own 2 group nodes; the thinker axis counts by NAME, so ~166 Levin-named files kept the towers up.
+  // A ticked-off tradition must leave the thinker axis, and the plot must redraw without waiting on the poll.
+  await page.eval(IFRAME_DOC + "w.C2A2Plot.set({from:'', to:''}); return true;");
+  const lvBefore = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');");
+  await page.eval(IFRAME_DOC + "var c = [].slice.call(d.querySelectorAll('input[type=checkbox]')).filter(function (x) { return (x.id || x.name || x.getAttribute('data-group') || x.value) === 'traditions/levin'; })[0]; if (c && c.checked) { c.click(); } return !!c;");
+  let lvOff = null, frOff = null;
+  for (let i = 0; i < 20; i++) { await sleep(250); lvOff = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');"); if (lvOff === 0) { break; } }
+  frOff = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Friston','Friston');");
+  await page.eval(IFRAME_DOC + "var c = [].slice.call(d.querySelectorAll('input[type=checkbox]')).filter(function (x) { return (x.id || x.name || x.getAttribute('data-group') || x.value) === 'traditions/levin'; })[0]; if (c && !c.checked) { c.click(); } return !!c;");
+  await sleep(1500);
+  const lvBack = await page.eval(IFRAME_DOC + "return w.C2A2Plot.count('Levin','Levin');");
+  record('Q5b the plot follows a tradition checkbox: unticked Levin leaves the thinker axis, others stay, ticking back restores',
+    lvBefore > 0 && lvOff === 0 && frOff > 0 && lvBack === lvBefore, 'before ' + lvBefore + ' | off ' + lvOff + ' | friston ' + frOff + ' | back ' + lvBack);
   const clickCmd = function (x, y, ev) {
     return page.eval(IFRAME_DOC + "var el = d.getElementById('cp-p'); el.emit('plotly_click', { points: [{ x: " + JSON.stringify(x) + ", y: " + JSON.stringify(y) + " }], event: " + JSON.stringify(ev || {}) + " }); return true;");
   };
