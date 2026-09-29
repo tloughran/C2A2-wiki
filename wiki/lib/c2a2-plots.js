@@ -198,7 +198,7 @@
     sh(cmd); }
 
   var panel=document.createElement('div');
-  panel.style.cssText='position:fixed;right:16px;bottom:16px;width:640px;height:560px;z-index:2147483000;background:#11131a;border:1px solid #3a3f4b;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);font:12px system-ui,sans-serif;color:#ddd;display:none;flex-direction:column;overflow:visible';
+  panel.style.cssText='position:fixed;right:12px;bottom:12px;width:min(640px, calc(100vw - 24px));height:min(560px, calc(100vh - 24px));z-index:2147483000;background:#11131a;border:1px solid #3a3f4b;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,.6);font:12px system-ui,sans-serif;color:#ddd;display:none;flex-direction:column;overflow:visible';
   function sel(id,opts){ return '<select id="'+id+'" style="background:#1b1e27;color:#ddd;border:1px solid #3a3f4b;border-radius:4px">'+opts.map(function(o){return '<option value="'+o[0]+'">'+o[1]+'</option>';}).join('')+'</select>'; }
   function multi(id,title,vals){ return '<details style="position:relative"><summary style="cursor:pointer">'+title+' <span id="'+id+'-n"></span></summary><div id="'+id+'" style="position:absolute;z-index:3;background:#1b1e27;border:1px solid #3a3f4b;padding:6px;max-height:260px;overflow:auto;white-space:nowrap">'+
     '<a href="#" data-all="1" style="color:#fe9f6d">all</a> · <a href="#" data-none="1" style="color:#fe9f6d">none</a><br>'+vals.map(function(v){return '<label><input type="checkbox" value="'+v+'" checked> '+v+'</label><br>';}).join('')+'</div></details>'; }
@@ -232,7 +232,8 @@
     document.onmousemove=function(ev){ panel.style.left=(ox+ev.clientX-sx)+'px'; panel.style.top=(oy+ev.clientY-sy)+'px'; panel.style.right='auto'; panel.style.bottom='auto'; };
     document.onmouseup=function(){ document.onmousemove=null; document.onmouseup=null; }; }; })();
 
-  (function(){ var MINW=460,MINH=400,G=6,C=14;
+  // A narrow window (a phone, the app's side pane) must still hold the whole panel.
+  (function(){ var MINW=Math.min(460,window.innerWidth-24),MINH=Math.min(400,window.innerHeight-24),G=6,C=14;
     var H={n:'top:-3px;left:'+C+'px;right:'+C+'px;height:'+G+'px;cursor:ns-resize',s:'bottom:-3px;left:'+C+'px;right:'+C+'px;height:'+G+'px;cursor:ns-resize',
       e:'right:-3px;top:'+C+'px;bottom:'+C+'px;width:'+G+'px;cursor:ew-resize',w:'left:-3px;top:'+C+'px;bottom:'+C+'px;width:'+G+'px;cursor:ew-resize',
       ne:'top:-3px;right:-3px;width:'+C+'px;height:'+C+'px;cursor:nesw-resize',sw:'bottom:-3px;left:-3px;width:'+C+'px;height:'+C+'px;cursor:nesw-resize',
